@@ -1,33 +1,42 @@
-# __The 21 AXF Matrices of the Bosons in Detail: One Matrix per Boson, Its Entries, Its Spectrum and Its Fate__
+# __The 21 AXF Matrices of the Bosons in Detail: Every Matrix, Every Boson, Its Entries, Its Spectrum and Its Fate__
 
 ## Introduction
 
-**This article takes the twenty-one arrays one at a time, eighteen sections, with the three colour pairs sharing one each.** [Construction of the AXF Matrices of the Twenty-One Generators](construction-of-the-axf-matrices-of-the-twenty-one-generators.html) builds them: six raw arrays halved, sixteen words minus the trace, six pairs summed and differenced. It states their properties in families. **Here each array gets its display, the entries it carries, the spectrum it has, the plane it turns or the phase it imposes, and the boson it is**; where a colour plane and its imaginary partner turn the same plane, the two share a section and a table, because the difference between them is one word and the reader who sees them side by side sees it.
+**This article takes the twenty-one arrays one at a time, in twenty-one sections, one per array.** [Construction of the AXF Matrices of the Twenty-One Generators](construction-of-the-axf-matrices-of-the-twenty-one-generators.html) builds them: six raw arrays halved, sixteen words minus the trace, six pairs summed and differenced. It states their properties in families. **Here each array gets its display, the entries it carries, the spectrum it has, the plane it turns or the phase it imposes, and the boson it is**.
 
 **The frame is the same frame and is not restated.** The quartet is ordered $(t,x,y,z)$, the array of an operator is read by columns, $E_{jk}$ is the matrix unit in that order, and the multiplication is $\vec e_x\vec e_y=\vec e_z$ cyclically. [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html) owns the frame and [Construction of the AXF Matrices of the Twenty-One Generators](construction-of-the-axf-matrices-of-the-twenty-one-generators.html) owns the derivations. **No array below is a Pauli array, a gamma array or a Gell-Mann array**, and none is chosen: each is one of the three operations applied to the six.
 
 **The naming rule, and the one convention in it.** The $4\times4$ grid of the quartet carries one name per cell, printed in [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). **The array $A_{jk}$ carries the boson named in the cell $(j,k)$, and the array $iS_{jk}$ of the same plane carries the other amplitude of that pair.** So the real array of the plane $\{t,x\}$ carries $\bar X^{r}$, the name of the cell $(t,x)$, and the imaginary array carries $X^{r}$. **Which of the two amplitudes takes which of the two names is a convention and no number depends on it**; the corpus states that once and this article uses it once.
 
+**Every section is titled with the boson first and the array second**, so the table of contents reads as the boson content of the model: the two charged bosons and the neutral boson of each weak triple, the fifteenth gauge boson, the six leptoquarks with their charges, and the eight gluons.
+
 **Why an array and not a name.** An array is a matrix; a boson is a particle. **The passage from one to the other is the article's subject, and it is short**: the entries say which cells the generator moves, the spectrum says what its exponential does to the quartet, and the mass says what the vacuum does to it. **Each subsection makes those three statements and stops.**
 
 **The twenty-one, indexed.**
 
-| boson | array | cells moved | mass |
-| --- | --- | --- | --- |
-| $W^{+}_{L}$ | $T^{L}_{x}$ | $\{t,x\}$ and $\{y,z\}$, four cells | light eigenvalue of the charged block |
-| $W^{-}_{L}$ | $T^{L}_{y}$ | $\{t,y\}$ and $\{x,z\}$, four cells | light eigenvalue of the charged block |
-| $W^{3}_{L}$ | $T^{L}_{z}$ | $\{t,z\}$ and $\{x,y\}$, four cells | mixes into $\gamma$ and $Z$ |
-| $W^{+}_{R}$ | $T^{R}_{x}$ | $\{t,x\}$ and $\{y,z\}$, four cells | the other eigenvalue of that block |
-| $W^{-}_{R}$ | $T^{R}_{y}$ | $\{t,y\}$ and $\{x,z\}$, four cells | the other eigenvalue of that block |
-| $W^{3}_{R}$ | $T^{R}_{z}$ | $\{t,z\}$ and $\{x,y\}$, four cells | mixes into $\gamma$, $Z$, $Z_R$ |
-| $B'$ | $iD$ | the four diagonal cells | $0$ at the first breaking |
-| $\bar X^{r}$, $X^{r}$ | $A_{tx}$, $iS_{tx}$ | $(t,x)$ and $(x,t)$ | $32v^{2}$ each |
-| $\bar X^{g}$, $X^{g}$ | $A_{ty}$, $iS_{ty}$ | $(t,y)$ and $(y,t)$ | $32v^{2}$ each |
-| $\bar X^{b}$, $X^{b}$ | $A_{tz}$, $iS_{tz}$ | $(t,z)$ and $(z,t)$ | $32v^{2}$ each |
-| $g_{1}$, $g_{2}$ | $A_{xy}$, $iS_{xy}$ | $(x,y)$ and $(y,x)$ | $0$ |
-| $g_{4}$, $g_{5}$ | $A_{xz}$, $iS_{xz}$ | $(x,z)$ and $(z,x)$ | $0$ |
-| $g_{6}$, $g_{7}$ | $A_{yz}$, $iS_{yz}$ | $(y,z)$ and $(z,y)$ | $0$ |
-| $T^{c}_{3}$, $T^{c}_{8}$ | $d_{2}$, $d_{3}$ | two colour diagonal cells each | $0$ |
+| boson | kind | array | cells moved | mass |
+| --- | --- | --- | --- | --- |
+| $W^{+}_{L}$ | the left charged boson, first array | $T^{L}_{x}$ | $\{t,x\}$ and $\{y,z\}$, four cells | light eigenvalue of the charged block |
+| $W^{-}_{L}$ | the left charged boson, second array | $T^{L}_{y}$ | $\{t,y\}$ and $\{x,z\}$, four cells | light eigenvalue of the charged block |
+| $W^{3}_{L}$ | the left neutral boson | $T^{L}_{z}$ | $\{t,z\}$ and $\{x,y\}$, four cells | mixes into $\gamma$ and $Z$ |
+| $W^{+}_{R}$ | the right charged boson, first array | $T^{R}_{x}$ | $\{t,x\}$ and $\{y,z\}$, four cells | the other eigenvalue of that block |
+| $W^{-}_{R}$ | the right charged boson, second array | $T^{R}_{y}$ | $\{t,y\}$ and $\{x,z\}$, four cells | the other eigenvalue of that block |
+| $W^{3}_{R}$ | the right neutral boson | $T^{R}_{z}$ | $\{t,z\}$ and $\{x,y\}$, four cells | mixes into $\gamma$, $Z$, $Z_R$ |
+| $B'$ | the fifteenth gauge boson, the corner | $iD$ | the four diagonal cells | $0$ at the first breaking |
+| $\bar X^{r}$ | the red leptoquark, charge $-\tfrac23$ | $A_{tx}$ | $(t,x)$ and $(x,t)$ | $32v^{2}$ |
+| $X^{r}$ | the red leptoquark, charge $+\tfrac23$ | $iS_{tx}$ | $(t,x)$ and $(x,t)$ | $32v^{2}$ |
+| $\bar X^{g}$ | the green leptoquark, charge $-\tfrac23$ | $A_{ty}$ | $(t,y)$ and $(y,t)$ | $32v^{2}$ |
+| $X^{g}$ | the green leptoquark, charge $+\tfrac23$ | $iS_{ty}$ | $(t,y)$ and $(y,t)$ | $32v^{2}$ |
+| $\bar X^{b}$ | the blue leptoquark, charge $-\tfrac23$ | $A_{tz}$ | $(t,z)$ and $(z,t)$ | $32v^{2}$ |
+| $X^{b}$ | the blue leptoquark, charge $+\tfrac23$ | $iS_{tz}$ | $(t,z)$ and $(z,t)$ | $32v^{2}$ |
+| $g_{1}$ | a gluon of the red–green plane, real array | $A_{xy}$ | $(x,y)$ and $(y,x)$ | $0$ |
+| $g_{2}$ | a gluon of the red–green plane, imaginary array | $iS_{xy}$ | $(x,y)$ and $(y,x)$ | $0$ |
+| $g_{4}$ | a gluon of the red–blue plane, real array | $A_{xz}$ | $(x,z)$ and $(z,x)$ | $0$ |
+| $g_{5}$ | a gluon of the red–blue plane, imaginary array | $iS_{xz}$ | $(x,z)$ and $(z,x)$ | $0$ |
+| $g_{6}$ | a gluon of the green–blue plane, real array | $A_{yz}$ | $(y,z)$ and $(z,y)$ | $0$ |
+| $g_{7}$ | a gluon of the green–blue plane, imaginary array | $iS_{yz}$ | $(y,z)$ and $(z,y)$ | $0$ |
+| $T^{c}_{3}$ | a colour gluon, the red–green phase | $d_{2}$ | two colour diagonal cells | $0$ |
+| $T^{c}_{8}$ | a colour gluon, the green–blue phase | $d_{3}$ | two colour diagonal cells | $0$ |
 
 **One array per boson, twenty-one arrays, fifteen directions.** The six weak arrays are two-term sums of the fifteen, $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-\epsilon_{abc}(T^{L}_{a}-T^{R}_{a})$, so the twenty-one print twenty-one distinct matrices over fifteen independent ones. **That is why the ledger has twenty-one names and the algebra has fifteen dimensions**, and it is the reason the same boson can be met twice, once as a weak array and once as a pair of plane arrays.
 
@@ -45,7 +54,7 @@ which is the diagonal entry $M^{2}_{XX}$ of [The Adjoint Mass Matrix of the Fift
 
 ## Part I. The Three of $\mathfrak{su}(2)_L$
 
-### $W^{+}_{L}$: $T^{L}_{x}$, the Plane $\{t,x\}$ and the Plane $\{y,z\}$ Turned Together
+### $W^{+}_{L}$, the left charged boson: $T^{L}_{x}$, the first of its two arrays, the planes $\{t,x\}$ and $\{y,z\}$ turned together
 
 $$
 T^{L}_{x}=\tfrac12\ell_x=\begin{pmatrix}0 & -\tfrac12 & 0 & 0 \\ \tfrac12 & 0 & 0 & 0 \\ 0 & 0 & 0 & -\tfrac12 \\ 0 & 0 & \tfrac12 & 0\end{pmatrix}
@@ -62,7 +71,7 @@ At $\theta=0.4$ the first gives $(0.9801,\,0.1987,\,0,\,0)$. **The array is self
 
 **The boson.** $W^{+}_{L}$ is charged and it couples to the left doublet. **The array is the real part of a complex generator**: the physical charged field is $W^{\pm}_{L}=(T^{L}_{x}\mp iT^{L}_{y})/\sqrt2$, so neither of the two arrays is charged by itself and the pair is one complex boson. **The two planes are why the generator is four cells wide.** A weak generator is not a plane of the quartet but a pair of planes, one leptoquark and one colour, and that is the structural fact the whole construction rests on. **Its mass is not its own.** $T^{L}_{x}$ and $T^{R}_{x}$ of the same label form one $2\times2$ charged block, and the block's two eigenvalues at equal couplings are $M^{2}_{\pm}=\tfrac14g^{2}v^{2}(1\mp\sin2\beta)$ with $v^{2}=\kappa^{2}+\kappa'^{2}$ and $\tan\beta=\kappa'/\kappa$. **The light eigenvalue is the Standard Model's $W$ and the heavy one is its right-handed partner**, and at $\beta=\tfrac\pi4$ the light one is exactly zero, which is a bound on the scalar sector and not a curiosity. The block is in [The Mass Matrix of the Twenty-One Gauge Bosons](the-mass-matrix-of-the-twenty-one-gauge-bosons-four-blocks-one-mixing-and-the-nine-zeros.html).
 
-### $W^{-}_{L}$: $T^{L}_{y}$, the Same Two Planes in the Cyclic Order
+### $W^{-}_{L}$, the left charged boson: $T^{L}_{y}$, the second of the same two arrays, the same planes in the cyclic order
 
 $$
 T^{L}_{y}=\tfrac12\ell_y=\begin{pmatrix}0 & 0 & -\tfrac12 & 0 \\ 0 & 0 & 0 & \tfrac12 \\ \tfrac12 & 0 & 0 & 0 \\ 0 & -\tfrac12 & 0 & 0\end{pmatrix}
@@ -78,7 +87,7 @@ and the colour plane $\{x,z\}$ turns in the same sense. **Self-dual, norm $1$, s
 
 **The boson.** $W^{-}_{L}$ is the other real component of the same complex field. **The two arrays have a bracket that is the third one**, $[T^{L}_{x},T^{L}_{y}]=T^{L}_{z}$, so the triple closes with $\epsilon_{abc}$ and the three labels are one algebra and not three unrelated matrices. **Nothing in the array distinguishes $+$ from $-$**: the sign of the charge is the sign of $i$ in the complex combination, which is a convention of the doublet and not a property of the quartet.
 
-### $W^{3}_{L}$: $T^{L}_{z}$, the Third of the Triple and the One That Mixes
+### $W^{3}_{L}$, the left neutral boson: $T^{L}_{z}$, the third of the triple and the one that mixes
 
 $$
 T^{L}_{z}=\tfrac12\ell_z=\begin{pmatrix}0 & 0 & 0 & -\tfrac12 \\ 0 & 0 & -\tfrac12 & 0 \\ 0 & \tfrac12 & 0 & 0 \\ \tfrac12 & 0 & 0 & 0\end{pmatrix}
@@ -92,7 +101,7 @@ $$
 
 ## Part II. The Three of $\mathfrak{su}(2)_R$
 
-### $W^{+}_{R}$: $T^{R}_{x}$, the Same Two Planes Turned Oppositely
+### $W^{+}_{R}$, the right charged boson: $T^{R}_{x}$, the first of its two arrays, the same planes turned oppositely
 
 $$
 T^{R}_{x}=\tfrac12 r_x=\begin{pmatrix}0 & -\tfrac12 & 0 & 0 \\ \tfrac12 & 0 & 0 & 0 \\ 0 & 0 & 0 & \tfrac12 \\ 0 & 0 & -\tfrac12 & 0\end{pmatrix}
@@ -109,7 +118,7 @@ At $\theta=0.4$ the image of $e_y$ is $(0,\,0,\,0.9801,\,-0.1987)$. **The array 
 
 **The boson.** $W^{+}_{R}$ is the right-handed charged boson, and it is the reason the model is left–right symmetric rather than the Standard Model with a relabelled index. **Its mass is the second eigenvalue of the block it shares with $T^{L}_{x}$**, so the right-handed charged boson takes its mass from the mixing and not from a separate scale. **The weak masses are absent from the fifteen for that reason**: they come from the bidoublet, and the bidoublet is a different carrier from the quartet. **The anti-self-duality is what makes the two triples commute**: a self-dual and an anti-self-dual two-form are orthogonal, and $[T^{L}_{a},T^{R}_{b}]=0$ is that orthogonality read as an algebra.
 
-### $W^{-}_{R}$: $T^{R}_{y}$, the Anti-Self-Dual Partner
+### $W^{-}_{R}$, the right charged boson: $T^{R}_{y}$, the second of the same two arrays, the anti-self-dual partner
 
 $$
 T^{R}_{y}=\tfrac12 r_y=\begin{pmatrix}0 & 0 & -\tfrac12 & 0 \\ 0 & 0 & 0 & -\tfrac12 \\ \tfrac12 & 0 & 0 & 0 \\ 0 & \tfrac12 & 0 & 0\end{pmatrix}
@@ -121,7 +130,7 @@ $$
 
 **The boson.** $W^{-}_{R}$ completes the right-handed charged pair. **The bracket in the right triple carries a minus**, $[T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}T^{R}_{c}$, and that minus is the anti-homomorphism of right multiplication and not a different algebra: the set $\{-T^{R}_{a}\}$ closes with $+\epsilon_{abc}$. **A reader who compares the two triples sees one sign**, and should read it as the plane $\{y,z\}$ being turned backwards, which is also what the anti-self-dual star says.
 
-### $W^{3}_{R}$: $T^{R}_{z}$, the Neutral of the Right Triple
+### $W^{3}_{R}$, the right neutral boson: $T^{R}_{z}$, the neutral of the right triple
 
 $$
 T^{R}_{z}=\tfrac12 r_z=\begin{pmatrix}0 & 0 & 0 & -\tfrac12 \\ 0 & 0 & \tfrac12 & 0 \\ 0 & -\tfrac12 & 0 & 0 \\ \tfrac12 & 0 & 0 & 0\end{pmatrix}
@@ -135,13 +144,13 @@ $$
 
 ## Part III. The Fifteen of $\mathfrak{su}(4)$
 
-### $B'$: $iD$, the One Array with an Entry of Modulus Three
+### $B'$, the fifteenth gauge boson: $iD$, the corner, the one array with an entry of modulus three
 
 $$
 iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr)=\begin{pmatrix}-3i & 0 & 0 & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & 0 & 0 & i\end{pmatrix}
 $$
 
-**The entries.** Four diagonal cells, and the only entry of modulus $\ne1$ in the whole twenty-one: $-3i$ at the corner. **Trace zero because $-3+1+1+1=0$**, norm $12$ because $9+1+1+1=12$, spectrum $-3i,i,i,i$. **The $-3$ is the trace removed, written as a number**: the corner cell carries minus the sum of the other three.
+**The entries.** Four diagonal cells, and the only entry of modulus $\ne1$ in the whole twenty-one: $-3i$ at the corner. **Trace zero because $-3+1+1+1=0$**, norm $12$ because $9+1+1+1=12$, spectrum $-3i,i,i,i$. **The corner cell carries minus the sum of the other three**, and that is the only way a diagonal with three equal entries can be traceless. **The same equation read as charges is $3\cdot(+1)+(-3)=0$**, which is [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html) — and the $-3$ is the count of colour lines, the same number that appears as $N-1$ in the charge quantum $e/(N-1)$. **The number is not "the trace removed"**: removing the trace is deleting the word $W_{tt}$ from the sixteen to reach fifteen, which is a count of arrays, while $-3$ is an eigenvalue of one of the fifteen.
 
 **The exponential.** Four phases and no rotation,
 $$
@@ -149,9 +158,15 @@ $$
 $$
 At $\theta=0.4$ the lepton phase is $0.3624-0.9320i$ and each colour phase is $0.9211+0.3894i$. **The array moves no index and turns no plane**; it multiplies the four lines by four phases.
 
-**The boson.** $B'$ is the $B-L$ boson, and **the array is the one the vacuum is built from**. With the $i$ removed, $D=\operatorname{diag}(-3,1,1,1)$ is the Hermitian direction of the breaking, $\Phi_0=vD$, and $B-L=\tfrac13D$ on the $\mathbf4$. **So this array is the only one of the twenty-one the vacuum does not see**: $[iD,\Phi_0]=0$, its mass is zero at the first breaking, and it stays massless until the weak breaking gives it a term. **After that term it is one of the three ingredients of $\gamma$, $Z$ and $Z_R$**, and it supplies the hypercharge coupling $g_{\mathrm Y}$. [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html) has the stabilisers and [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html) has the ledger.
+**The boson.** $B'$ is the $B-L$ boson, and **the array is the one the vacuum is built from**. With the $i$ removed, $D=\operatorname{diag}(-3,1,1,1)$ is the Hermitian direction of the breaking, $\Phi_0=vD$, and $B-L=\tfrac13D$ on the $\mathbf4$: the charge is this array divided by three, which in charges reads $(-1,\tfrac13,\tfrac13,\tfrac13)$ with the lepton first.
 
-### $\bar X^{r}$: $A_{tx}$, the Leptoquark Plane of the Red Colour
+**What the vacuum does not see.** $[iD,\Phi_0]=0$, so this array is invisible to the first breaking — and it is not alone: nine of the twenty-one commute with $D$, the eight gluons and $B'$ itself. **The unique statement is narrower and it is the one that matters here**: of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place.
+
+**Its mass depends on which vacuum is assumed, and the two descriptions differ.** If the first breaking is by a direction that commutes with it — an adjoint-type vev along the lepton line — $B'$ stays massless down to $v$. On the minimal content of the corpus, one breaking at $v_R$ carrying the line and a right doublet, it does not: [The Neutral Sector](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html) gives it a diagonal entry $\tfrac38g^2v_R^2$ and a share $\tfrac35$ of the $Z_R$, whose mass is $\tfrac58g^2v_R^2$. **So "massless until the weak breaking" is true in the first description and false in the second, and the corpus uses the second.**
+
+**After the mixing it is one of the three ingredients of $\gamma$, $Z$ and $Z_R$**, with the share $\tfrac16$ that $Q$ gives it in the basis where $Q=T_3+\tfrac16D$, and it supplies the hypercharge coupling $g_{\mathrm Y}$. [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html) has the stabilisers and [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html) has the ledger.
+
+### $\bar X^{r}$, the red leptoquark of charge $-\tfrac23$: $A_{tx}$, the real plane through the lepton line
 
 $$
 A_{tx}=E_{tx}-E_{xt}=\begin{pmatrix}0 & 1 & 0 & 0 \\ -1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix}
@@ -167,7 +182,7 @@ and at $\theta=0.4$ the image of $e_t$ is $(0.9211,\,-0.3894,\,0,\,0)$. **Real a
 
 **The boson.** $\bar X^{r}$ is a leptoquark: **the array moves the lepton line into the red line and back**, which is the definition of a leptoquark and the reason the cell $(t,x)$ sits in the mixed band. Charge $-\tfrac23$, $B-L=-\tfrac43$, colour $\bar{\mathbf3}$. **Mass $32v^{2}=2v^{2}(1-(-3))^{2}$**, twice the square of the difference between the lepton eigenvalue and the colour eigenvalue of the vacuum: colour is unbroken because $D$ is a multiple of the identity on the colour triple, and the leptoquark is massive because the lepton line is not. **The bracket with its partner is exact**, $[A_{tx},iS_{tx}]=2i(E_{tt}-E_{xx})=-\tfrac23(iD+2d_{2}+d_{3})$, so the plane's two arrays and one diagonal close into an $\mathfrak{su}(2)$. [The Leptoquarks of the Four Colours Left–Right Model](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html) owns the sector.
 
-### $X^{r}$: $iS_{tx}$, the Amplitude That Leaves the Real Quartet
+### $X^{r}$, the red leptoquark of charge $+\tfrac23$: $iS_{tx}$, the imaginary amplitude on the same plane
 
 $$
 iS_{tx}=i\bigl(E_{tx}+E_{xt}\bigr)=\begin{pmatrix}0 & i & 0 & 0 \\ i & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix}
@@ -183,7 +198,7 @@ giving $(0.9211,\,0.3894i,\,0,\,0)$ at $\theta=0.4$. **Unitary and not orthogona
 
 **The boson.** $X^{r}$ is the other amplitude of the same complex leptoquark field as $\bar X^{r}$. **Charge $+\tfrac23$, $B-L=+\tfrac43$, mass $32v^{2}$** from the same plane and the same difference of eigenvalues. **The pair is one complex field and the two arrays are its real and imaginary parts**, which the corpus states as a convention: calling the real array the particle and the imaginary one the antiparticle is the $i$ convention and not a physical distinction. **What is not a convention is that both arrays are supported on the same two cells**, and therefore that the particle and the antiparticle of a plane come in one pair of mirrored cells.
 
-### $\bar X^{g}$: $A_{ty}$, the Green Leptoquark Plane
+### $\bar X^{g}$, the green leptoquark of charge $-\tfrac23$: $A_{ty}$, the real plane through the lepton line
 
 $$
 A_{ty}=E_{ty}-E_{yt}=\begin{pmatrix}0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 \\ -1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix}
@@ -195,7 +210,7 @@ $$
 
 **The boson.** $\bar X^{g}$, charge $-\tfrac23$, $B-L=-\tfrac43$, colour $\bar{\mathbf3}$ in the green line. **Mass $32v^{2}$ and the same bracket structure**: $[A_{ty},iS_{ty}]=2i(E_{tt}-E_{yy})=-\tfrac23(iD-d_{2}+d_{3})$. **The three leptoquark planes are three copies of one computation**, and the sign differences between them are the $\epsilon$ of the pair resolution, not three physics.
 
-### $X^{g}$: $iS_{ty}$, the Green Amplitude
+### $X^{g}$, the green leptoquark of charge $+\tfrac23$: $iS_{ty}$, the imaginary amplitude on the same plane
 
 $$
 iS_{ty}=i\bigl(E_{ty}+E_{yt}\bigr)=\begin{pmatrix}0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix}
@@ -207,7 +222,7 @@ $$
 
 **The boson.** $X^{g}$, charge $+\tfrac23$, the particle of the green plane, mass $32v^{2}$. **The mass is the same for all six leptoquark arrays because $D$ is blind to which colour line the plane uses**: all three colour eigenvalues are $+1$ and the lepton eigenvalue is $-3$, so every mixed plane gets the same difference and colour never splits the sextet.
 
-### $\bar X^{b}$: $A_{tz}$, the Blue Leptoquark Plane
+### $\bar X^{b}$, the blue leptoquark of charge $-\tfrac23$: $A_{tz}$, the real plane through the lepton line
 
 $$
 A_{tz}=E_{tz}-E_{zt}=\begin{pmatrix}0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ -1 & 0 & 0 & 0\end{pmatrix}
@@ -219,7 +234,7 @@ $$
 
 **The boson.** $\bar X^{b}$, charge $-\tfrac23$, colour $\bar{\mathbf3}$ in the blue line, mass $32v^{2}$. **The bracket is $[A_{tz},iS_{tz}]=2i(E_{tt}-E_{zz})=-\tfrac23 iD+\tfrac23 d_{2}+\tfrac43 d_{3}$**, the third of the three ways a leptoquark plane closes with the diagonal sector.
 
-### $X^{b}$: $iS_{tz}$, the Blue Amplitude
+### $X^{b}$, the blue leptoquark of charge $+\tfrac23$: $iS_{tz}$, the imaginary amplitude on the same plane
 
 $$
 iS_{tz}=i\bigl(E_{tz}+E_{zt}\bigr)=\begin{pmatrix}0 & 0 & 0 & i \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & 0\end{pmatrix}
@@ -231,67 +246,89 @@ $$
 
 **The boson.** $X^{b}$, charge $+\tfrac23$, the particle of the blue plane, mass $32v^{2}$. **With it the sextet is complete**: six arrays, six bosons, one mass, three colours, and the six charges sum to zero. **The sextet is the only coloured massive set of the model**, and it fixes the scale $M_C$ at which colour stops being the whole story: [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html).
 
-### $g_{1}$ and $g_{2}$: $A_{xy}$ and $iS_{xy}$, One Colour Plane and Its Complex Partner
+### $g_{1}$, a gluon of the red–green plane: $A_{xy}$, the real rotation
 
 $$
-A_{xy}=E_{xy}-E_{yx}=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix},
-\qquad
+A_{xy}=E_{xy}-E_{yx}=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix}
+$$
+
+**The entries.** Two cells inside the colour block, $+1$ at $(x,y)$ and $-1$ at $(y,x)$, and nothing on the lepton line or the blue line. **Real antisymmetric, trace zero, norm $2$, spectrum $0,0,\pm i$.**
+
+**The exponential.** A rotation of the red–green plane that fixes the other two lines,
+$$
+\exp(\theta A_{xy})e_x=\cos\theta\,e_x-\sin\theta\,e_y,\qquad \exp(\theta A_{xy})e_t=e_t,\qquad \exp(\theta A_{xy})e_z=e_z .
+$$
+At $\theta=0.4$ the image of $e_x$ is $(0,\,0.9211,\,-0.3894,\,0)$. **The array is a rotation of the quartet that leaves the lepton line alone**, which is the geometric content of "colour is a stabiliser", and it is the reason [The Rotors of the Twenty-One Generators](the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) counts it among the three that turn space.
+
+**The boson.** $g_{1}$ is a gluon. **Its mass is zero at every step of the chain, exactly**, because $D$ is a multiple of the identity on the colour triple: the plane's two eigenvalues of $D$ are equal, the difference is zero, and the mass form above vanishes. **The same computation in the array language is one line**, $[A_{xy},D]=0$.
+
+**The star.** $\star A_{xy}=+A_{tz}$: the red–green colour plane and the blue leptoquark plane are one pair under the star, and that pairing is why the six planes split into three colour and three mixed.
+
+### $g_{2}$, a gluon of the red–green plane: $iS_{xy}$, the complex rotation
+
+$$
 iS_{xy}=i\bigl(E_{xy}+E_{yx}\bigr)=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix}
 $$
 
-**The entries.** Two cells each, inside the colour block and nowhere else: $\pm1$ at $(x,y)$ and $(y,x)$ for $A_{xy}$, $+i$ at both for $iS_{xy}$. **Norm $2$ each, spectrum $0,0,\pm i$ each**, and the two differ only in the type of the entries.
+**The entries.** The same two cells, both $+i$, and nothing else. **Imaginary symmetric, anti-Hermitian, trace zero, norm $2$, spectrum $0,0,\pm i$** — the spectrum of its real partner, entry for entry.
 
-**The two exponentials.**
-$$
-\exp(\theta A_{xy})e_x=\cos\theta\,e_x-\sin\theta\,e_y,
-\qquad
-\exp(\theta\, iS_{xy})e_x=\cos\theta\,e_x+i\sin\theta\,e_y,
-$$
-with $e_t$ and $e_z$ fixed by both. At $\theta=0.4$ the first sends $e_x$ to $(0,\,0.9211,\,-0.3894,\,0)$, and the second to $(0,\,0.9211,\,0.3894i,\,0)$. **One is a rotation of the quartet and the other is not**, and that difference is the whole content of the real-imaginary split in the colour block: the first stays inside the real space, the second leaves it and comes back with a phase.
+**The exponential.** $\exp(\theta\, iS_{xy})e_x=\cos\theta\,e_x+i\sin\theta\,e_y$, giving $(0,\,0.9211,\,0.3894i,\,0)$ at $\theta=0.4$, with $e_t$ and $e_z$ fixed. **Unitary and not orthogonal**: the image of a real unit vector has an imaginary part, so this exponential does not act on the real quartet.
 
-**The bosons.** $g_{1}$ and $g_{2}$ are the two gluons of the red–green plane, and both are massless at every step of the chain, exactly, because $D$ is a multiple of the identity on the colour triple: $[A_{xy},D]=[iS_{xy},D]=0$, so the mass form above vanishes for both. **The pair is one complex colour field**: the two arrays are conjugates under transpose-and-$i$, so a colour plane contributes one real colour field and not two independent phases, and that is why the octet is real.
+**The boson.** $g_{2}$ is the second gluon of the red–green plane, and its mass is zero for the same reason as $g_{1}$'s, $[iS_{xy},D]=0$. **The pair $\{g_{1},g_{2}\}$ is one complex colour field**, because the two arrays are conjugates under transpose-and-$i$: a colour plane contributes one real colour field and not two independent phases, and that is why the octet is real.
 
-### $g_{4}$ and $g_{5}$: $A_{xz}$ and $iS_{xz}$, the Red–Blue Plane and Its Amplitude
+### $g_{4}$, a gluon of the red–blue plane: $A_{xz}$, the real rotation
 
 $$
-A_{xz}=E_{xz}-E_{zx}=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0\end{pmatrix},
-\qquad
+A_{xz}=E_{xz}-E_{zx}=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0\end{pmatrix}
+$$
+
+**The entries.** $+1$ at $(x,z)$ and $-1$ at $(z,x)$, and nothing on the other cells. **Real antisymmetric, trace zero, norm $2$, spectrum $0,0,\pm i$.**
+
+**The exponential.** $\exp(\theta A_{xz})e_x=\cos\theta\,e_x-\sin\theta\,e_z$, fixing $e_t$ and $e_y$; at $\theta=0.4$ the image of $e_x$ is $(0,\,0.9211,\,0,\,-0.3894)$.
+
+**The boson.** $g_{4}$, a gluon of the red–blue plane, massless by the same equality of colour eigenvalues. **Its bracket with its own imaginary partner is the one that ties the octet to its Cartan**, $[A_{xz},iS_{xz}]=2i(E_{xx}-E_{zz})=2(d_{2}+d_{3})$, and it is the middle of the three colour brackets.
+
+**The star.** $\star A_{xz}=-A_{ty}$. One of the three colour planes carries a minus in this pairing and the other two do not, because the sign is the orientation of the plane and not a choice of naming.
+
+### $g_{5}$, a gluon of the red–blue plane: $iS_{xz}$, the complex rotation
+
+$$
 iS_{xz}=i\bigl(E_{xz}+E_{zx}\bigr)=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0\end{pmatrix}
 $$
 
-**The entries.** Two cells each, $\pm1$ and $+i,\,+i$ at $(x,z)$ and $(z,x)$. **Norm $2$ each, spectrum $0,0,\pm i$ each.**
+**The entries.** Both cells $+i$. **Anti-Hermitian, trace zero, norm $2$, spectrum $0,0,\pm i$.**
 
-**The two exponentials.**
-$$
-\exp(\theta A_{xz})e_x=\cos\theta\,e_x-\sin\theta\,e_z,
-\qquad
-\exp(\theta\, iS_{xz})e_x=\cos\theta\,e_x+i\sin\theta\,e_z,
-$$
-fixing $e_t$ and $e_y$. **The star pairs this plane with the green leptoquark plane**, $\star A_{xz}=-A_{ty}$, and the sign is the one the red and green planes take oppositely.
+**The exponential.** $\exp(\theta\, iS_{xz})e_x=\cos\theta\,e_x+i\sin\theta\,e_z$, complex and not orthogonal, as in the red–green plane.
 
-**The bosons.** $g_{4}$ and $g_{5}$, massless by the same equality of colour eigenvalues. **The bracket of the pair is the one that ties the octet to its Cartan**, $[A_{xz},iS_{xz}]=2i(E_{xx}-E_{zz})=2(d_{2}+d_{3})$, and the three such brackets give $2d_{2}$, $2(d_{2}+d_{3})$ and $2d_{3}$: any two of them generate the third, which is the algebra's statement that the two colour phases are a choice of basis and not two independent directions.
+**The boson.** $g_{5}$, the second gluon of the red–blue plane, massless. **A reader who expects eight rotation angles in the octet finds three rotations, three complex rotations and two diagonal phases instead**: three real planes, three imaginary planes and two colour phases, and only the first three are rotations of the quartet.
 
-### $g_{6}$ and $g_{7}$: $A_{yz}$ and $iS_{yz}$, the Green–Blue Plane and Its Amplitude
+### $g_{6}$, a gluon of the green–blue plane: $A_{yz}$, the real rotation
 
 $$
-A_{yz}=E_{yz}-E_{zy}=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0\end{pmatrix},
-\qquad
+A_{yz}=E_{yz}-E_{zy}=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0\end{pmatrix}
+$$
+
+**The entries.** $+1$ at $(y,z)$ and $-1$ at $(z,y)$. **Real antisymmetric, trace zero, norm $2$, spectrum $0,0,\pm i$.**
+
+**The exponential.** $\exp(\theta A_{yz})e_y=\cos\theta\,e_y-\sin\theta\,e_z$, fixing $e_t$ and $e_x$; at $\theta=0.4$ the image of $e_y$ is $(0,\,0,\,0.9211,\,-0.3894)$.
+
+**The boson.** $g_{6}$, a gluon of the green–blue plane, massless. **The bracket is $[A_{yz},iS_{yz}]=2i(E_{yy}-E_{zz})=2d_{3}$**, the third of the three, and the three together are the whole diagonal content of the octet.
+
+**The star.** $\star A_{yz}=+A_{tx}$, the inverse of the assignment on the red–green plane.
+
+### $g_{7}$, a gluon of the green–blue plane: $iS_{yz}$, the complex rotation
+
+$$
 iS_{yz}=i\bigl(E_{yz}+E_{zy}\bigr)=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & i \\ 0 & 0 & i & 0\end{pmatrix}
 $$
 
-**The entries.** Two cells each, at $(y,z)$ and $(z,y)$. **Norm $2$ each, spectrum $0,0,\pm i$ each.**
+**The entries.** Both cells $+i$. **Anti-Hermitian, trace zero, norm $2$, spectrum $0,0,\pm i$.**
 
-**The two exponentials.**
-$$
-\exp(\theta A_{yz})e_y=\cos\theta\,e_y-\sin\theta\,e_z,
-\qquad
-\exp(\theta\, iS_{yz})e_y=\cos\theta\,e_y+i\sin\theta\,e_z,
-$$
-fixing $e_t$ and $e_x$. **The star gives $\star A_{yz}=+A_{tx}$**, the inverse of the assignment on the red plane.
+**The exponential.** $\exp(\theta\, iS_{yz})e_y=\cos\theta\,e_y+i\sin\theta\,e_z$, complex and not orthogonal.
 
-**The bosons.** $g_{6}$ and $g_{7}$, massless, and $[A_{yz},iS_{yz}]=2i(E_{yy}-E_{zz})=2d_{3}$ completes the three colour brackets. **The six off-diagonal arrays $g_{1},g_{2},g_{4},g_{5},g_{6},g_{7}$ plus the two diagonals are the octet**: the grid's $3\times3$ block has nine cells, the trace is removed, and eight traceless directions remain.
+**The boson.** $g_{7}$, the second gluon of the green–blue plane, massless. **The six off-diagonal arrays $g_{1},g_{2},g_{4},g_{5},g_{6},g_{7}$ plus the two diagonals are the octet**: the grid's $3\times3$ block has nine cells, the trace is removed, and eight traceless directions remain.
 
-### $T^{c}_{3}$: $d_{2}$, a Colour Phase and Not a Rotation
+### $T^{c}_{3}$, the gluon of the red–green phase: $d_{2}$, a colour phase and not a rotation
 
 $$
 d_{2}=\tfrac i2\bigl(W_{yy}-W_{xx}\bigr)=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & -i & 0 \\ 0 & 0 & 0 & 0\end{pmatrix}
@@ -307,7 +344,7 @@ giving $0.9211+0.3894i$ on red and $0.9211-0.3894i$ on green at $\theta=0.4$. **
 
 **The boson.** $T^{c}_{3}$ is one of the two Cartan directions of the octet. **It is massless by the same accident**, $D$ being a multiple of the identity on the colour triple, and it is unbroken at every scale. **Its entries are the ones paired with the corner's trace**: the three colour phases together with $iD$ exhaust the diagonal sector, which is why four diagonal cells give three diagonal directions plus the trace.
 
-### $T^{c}_{8}$: $d_{3}$, the Second Colour Phase
+### $T^{c}_{8}$, the gluon of the green–blue phase: $d_{3}$, the second colour phase
 
 $$
 d_{3}=\tfrac i2\bigl(W_{zz}-W_{yy}\bigr)=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & 0 & 0 & -i\end{pmatrix}
@@ -390,4 +427,6 @@ Twenty-three recomputations, at $\operatorname{tr}$ in the fundamental, the quar
 - [The Mass Matrix of the Twenty-One Gauge Bosons](the-mass-matrix-of-the-twenty-one-gauge-bosons-four-blocks-one-mixing-and-the-nine-zeros.html), for the charged block and the mixing the two weak triples undergo.
 - [The Unbroken Subgroup](the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html), for the nine and the twelve.
 - [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html), for the grid that names the cells and the ledger.
+- [Where the Twenty-One Generators Go](where-the-twenty-one-generators-go-one-ledger-three-readings-and-the-one-abelian-factor.html), which joins this article's twenty-one subsections to the classification's cells in one ledger, names every array printed here, and reads the ledger three ways.
+- [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html), which reads the corner entry of $iD$ as the quark–lepton relation: $-3+1+1+1=0$.
 - [The Leptoquarks of the Four Colours Left–Right Model](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html) and [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$](quantum-chromodynamics-as-the-residual-of-su4.html), for the two sectors the third part supplies.

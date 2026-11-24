@@ -172,7 +172,7 @@ $$
 
 - [The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass](the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html). The same criterion read as a mass spectrum.
 - [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The $B-L$ of the leptoquarks and the absent diquark channel.
-- [Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). Where the charge lattice comes from.
+- [Charge Quantisation from the Fourth Colour: One Trace, One Third](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). Where the charge lattice comes from.
 - [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html). The anomalous combination and its consequences.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). Colour exact and confined.
 - [The Fermions After the Breaking: Three Colours and a Lepton Line, Two Weak Doublets, the Electric Charges](the-fermions-after-the-breaking-three-colours-and-a-lepton-line-two-weak-doublets-the-electric-charges.html). The charges carried by each state.

@@ -313,16 +313,22 @@ $$
 r_z=R_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}
 $$
 
-**The six are $G_1$ to $G_6$.** The first six of the fifteen generators are these six arrays, taken whole:
+**The six are $G_1$ to $G_6$.** The first six of the fifteen generators are these six arrays, taken whole. The fourth column names each of them again in the Peirce frame of the $M_2(\mathbb{C})$ article, through the identity of the next paragraph.
 
-| generator | array | symmetry | square |
-|---|---|---|---|
-| $G_1$ | $\ell_x=L_{\mathrm{axf},\vec e_x}$ | real antisymmetric | $-\mathrm{I}_4$ |
-| $G_2$ | $\ell_y=L_{\mathrm{axf},\vec e_y}$ | real antisymmetric | $-\mathrm{I}_4$ |
-| $G_3$ | $\ell_z=L_{\mathrm{axf},\vec e_z}$ | real antisymmetric | $-\mathrm{I}_4$ |
-| $G_4$ | $r_x=R_{\mathrm{axf},\vec e_x}$ | real antisymmetric | $-\mathrm{I}_4$ |
-| $G_5$ | $r_y=R_{\mathrm{axf},\vec e_y}$ | real antisymmetric | $-\mathrm{I}_4$ |
-| $G_6$ | $r_z=R_{\mathrm{axf},\vec e_z}$ | real antisymmetric | $-\mathrm{I}_4$ |
+| generator | axis-free array $L$, $R$ | the half, in the Peirce frame | symmetry | square |
+|---|---|---|---|---|
+| $G_1$ | $\ell_x=L_{\mathrm{axf},\vec e_x}$ | $\mathrm{I}_2\otimes g_x$ | real antisymmetric | $-\mathrm{I}_4$ |
+| $G_2$ | $\ell_y=L_{\mathrm{axf},\vec e_y}$ | $\mathrm{I}_2\otimes g_y$ | real antisymmetric | $-\mathrm{I}_4$ |
+| $G_3$ | $\ell_z=L_{\mathrm{axf},\vec e_z}$ | $\mathrm{I}_2\otimes g_z$ | real antisymmetric | $-\mathrm{I}_4$ |
+| $G_4$ | $r_x=R_{\mathrm{axf},\vec e_x}$ | $g_x^{\mathsf T}\otimes\mathrm{I}_2$ | real antisymmetric | $-\mathrm{I}_4$ |
+| $G_5$ | $r_y=R_{\mathrm{axf},\vec e_y}$ | $g_y^{\mathsf T}\otimes\mathrm{I}_2$ | real antisymmetric | $-\mathrm{I}_4$ |
+| $G_6$ | $r_z=R_{\mathrm{axf},\vec e_z}$ | $g_z^{\mathsf T}\otimes\mathrm{I}_2$ | real antisymmetric | $-\mathrm{I}_4$ |
+
+**The same six in the Peirce frame.** Write $g_k:=\tfrac12\mathsf{M}_2(\vec e_k)$ for the three generators that the $M_2(\mathbb{C})$ article names $G_k$, and let $S$ be the matrix whose columns are the four preimages of the matrix units in the coefficient basis. Then
+$$
+\tfrac12S^{-1}\ell_kS=\mathrm{I}_2\otimes g_k,\qquad \tfrac12S^{-1}r_kS=g_k^{\mathsf T}\otimes\mathrm{I}_2,
+$$
+so the half of each axis-free array is one block in the Peirce frame: $\mathrm{I}_2\otimes g_k$ for the left family and $g_k^{\mathsf T}\otimes\mathrm{I}_2$ for the right one. The transposition in the second is the reversal of the order of a product. The two families are the two commuting copies of $\mathfrak{su}(2)$ inside $\mathfrak{so}(4)$.
 
 **The two families against each other.** Each of the six is a quarter turn of two coordinate planes. They agree wherever the two laws agree, and they differ exactly where right multiplication carries a unit to the negative of where left multiplication carries it: the difference $\ell_k-r_k$ has exactly two nonzero entries, $+2$ and $-2$.
 
@@ -337,7 +343,7 @@ $$
 
 **The six are a basis of $\mathfrak{so}(4)$.** Each is real and antisymmetric, so each lies in $\mathfrak{so}(4)$, and the six are linearly independent, so they span it: rank six in the sixteen-dimensional space. The halves $\tfrac12(\ell_k-r_k)$ and $\tfrac12(\ell_k+r_k)$ split that six as $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$.
 
-**The half belongs to the other article.** The article on $M_2(\mathbb{C})$ takes its three generators to be $\tfrac12\ell_k$ and its three derivations to be $\tfrac12(\ell_k-r_k)$, the six halved arrays satisfying the same brackets with the structure constant $1$ instead of $2$. This article keeps the six whole and undifferenced: each of them is one of the fifteen generators at order four, and each acts here as the generator of a derivation of the operator space, whose array of order sixteen is the Kronecker difference of the next section.
+**The generator there is the half, here the whole.** The article on $M_2(\mathbb{C})$ takes its three generators to be $\tfrac12\ell_k$ and its three derivations to be $\tfrac12(\ell_k-r_k)$, the six halved arrays satisfying the same brackets with the structure constant $1$ instead of $2$. This article keeps the six whole and undifferenced: each of them is one of the fifteen generators at order four, and each acts here as the generator of a derivation of the operator space, whose array of order sixteen is the Kronecker difference of the next section.
 
 **The nine products.** The nine remaining generators are $i$ times a product of one left array with one right one. Write $N_{jk}:=\ell_jr_k$; each row of $\ell_j$ carries a single entry, so each row of the product is $\pm$ one row of $r_k$.
 
@@ -575,6 +581,7 @@ The ladder is $512\to256\to30\to15$. Every operator on the operator space is a s
 | $\mathcal{A}$ | the space of operators on operators, $\operatorname{End}_{\mathbb{C}}(V)$, of complex dimension two hundred and fifty-six |
 | $L_\mu$, $R_\nu$ | the axis-free matrices $L_{\mathrm{axf},e_\mu}$ and $R_{\mathrm{axf},e_\nu}$ of left and right multiplication |
 | $\ell_k$, $r_k$ | the axis-free matrices $L_{\mathrm{axf},\vec e_k}$ and $R_{\mathrm{axf},\vec e_k}$, the first six generators, printed whole |
+| $g_k$ | the generator $\tfrac12\mathsf{M}_2(\vec e_k)$ of the $M_2(\mathbb{C})$ article, which names it $G_k$ |
 | $N_{jk}$ | the product $\ell_jr_k$, a real symmetric signed permutation |
 | $W_{\mu\nu}$ | the word $L_\mu R_\nu=T_{e_\mu,e_\nu}$ |
 | $E_{ij}$ | the matrix unit of order four, $i,j$ standing for $t,x,y,z$ |

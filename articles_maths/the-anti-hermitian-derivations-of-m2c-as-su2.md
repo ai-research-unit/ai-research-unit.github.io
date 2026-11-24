@@ -190,32 +190,32 @@ $$
 
 **What this frame is.** The regular matrices of left and right multiplication in the coefficient basis, columns equal to products. No frame of $\mathbb{C}^2$ is chosen and no sign of $\sigma_k$ is fixed, so this is where the article's own frame is read.
 
-**The three left matrices.** Left multiplication by the three vector units, printed whole:
+**The three left matrices.** Left multiplication by the three vector units, printed whole and each named with its axis-free matrix, $\ell_k=L_{\mathrm{axf},\vec e_k}$.
 
 $$
-\ell_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}
-$$
-
-$$
-\ell_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix}
+\ell_x=L_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}
 $$
 
 $$
-\ell_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
-$$
-
-**The three right matrices.** Right multiplication by the same three units, the same construction with the order of the factors exchanged:
-
-$$
-r_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}
+\ell_y=L_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix}
 $$
 
 $$
-r_y=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix}
+\ell_z=L_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+$$
+
+**The three right matrices.** Right multiplication by the same three units, the same construction with the order of the factors exchanged, each named with its axis-free matrix, $r_k=R_{\mathrm{axf},\vec e_k}$.
+
+$$
+r_x=R_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}
 $$
 
 $$
-r_z=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+r_y=R_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix}
+$$
+
+$$
+r_z=R_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 
 **The generator of each is its half.** The six are printed whole, as the sibling article prints them, and the generator of this article is half of each: $\tfrac12\ell_k$ and $\tfrac12 r_k$, the six halved matrices satisfying the same brackets with the structure constant $1$ instead of $2$.
