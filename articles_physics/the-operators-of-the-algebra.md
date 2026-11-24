@@ -284,7 +284,7 @@ There is no multiplicative sign. **A function $\chi$ on the operator space with 
 
 ## The Associator and the Jordan Derivations
 
-**Two brackets, and a third.** A pair of elements combines in two ways, and the section above used the second. On the Hermitian sector the anticommutator is a product, and its failure to be associative is a three-term bracket. That bracket generates the symmetries of the sector, and it does so without a module: it acts on the sector itself.
+**Two brackets, and a third.** A pair of elements combines in two ways, and the section above used both: the anticommutator splits the operator space into a Jordan part and a Lie part. On the Hermitian sector the anticommutator is a product, and its failure to be associative is a three-term bracket. That bracket generates the symmetries of the sector, and it does so without a module: it acts on the sector itself.
 
 **The sector's product is a spin-factor product.** Writing a sector element by its real weight and its direction,
 
@@ -332,7 +332,7 @@ nonzero, which is the sector's failure of associativity in one line, and tracele
 | Jordan algebra | real dimension | span of the associators | the Lie algebra |
 | --- | --- | --- | --- |
 | $J_2(\mathbb C)=S_3=\mathbb{B}_\Psi$ | $4$ | $3$ | $\mathfrak{so}(3)=\mathfrak{su}(2)$ |
-| $S_2$ | $3$ | $1$ | $\mathfrak{so}(2)$ |
+| $S_2=J_2(\mathbb{R})$ | $3$ | $1$ | $\mathfrak{so}(2)$ |
 | $J_3(\mathbb C)$ | $9$ | $8$ | $\mathfrak{su}(3)$ |
 | $J_4(\mathbb C)$ | $16$ | $15$ | $\mathfrak{su}(4)$ |
 | $\mathbb{R}$ | $1$ | $0$ | — |

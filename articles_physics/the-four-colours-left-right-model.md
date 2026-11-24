@@ -437,6 +437,7 @@ Every number in this article, run again.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). The same ceiling read as a statement about unification, in both readings.
 - [Charge Quantisation from the Fourth Colour: One Trace, One Third](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The trace that fixes the $B-L$ eigenvalues, and the ledger of where each of the twenty-one generators goes.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). What the larger group moves of the colour obstruction and what it leaves standing.
+- [The Feynman Rules of the Four Colours Left–Right Model](the-feynman-rules-of-the-four-colours-left-right-model-the-vertices-of-the-twenty-one-and-the-sixteen.html). The one covariant derivative of this article turned into a vertex list, with the normalisation and the sign conventions that a rule needs and an algebra statement does not.
 
 **The traps.** Each one is a place where a reader can be misled by a true sentence.
 
