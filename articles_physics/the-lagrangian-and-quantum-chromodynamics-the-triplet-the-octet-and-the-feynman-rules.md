@@ -203,7 +203,7 @@ The boundary term. Both variations are second order in derivatives and their sur
 
 ### Gauge Fixing and the Ghost
 
-The gauge-fixing term. The corpus writes the parameter $\zeta$, as in article 7, and the Feynman gauge is $\zeta=1$. The term
+The gauge-fixing term. The corpus writes the parameter $\zeta$, as in [Gauge Fixing in the Electroweak Theory](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html), and the Feynman gauge is $\zeta=1$. The term
 
 $$
 -\frac{1}{2\zeta}\sum_{a,\imath}\left(\frac{\partial G_{a,\imath}}{\partial R_{\imath}}\right)^2
@@ -426,8 +426,8 @@ The ledger.
 | The Feynman rules and their signs | **Derived from the Lagrangian above**, in this article |
 | The colour factors $4/3$, $3$, $1/2$ | **Derived** from $N_c=3$ and the trace normalisation, once those are granted |
 | The Ward identity of the three-gluon vertex | **Imported** (it is the tree-level shadow of the Slavnov–Taylor identity), and verified |
-| The sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ | **Derived in the algebra**, in article 2 |
-| Transversality of the gluon propagator | **Derived in the algebra**, from article 7's projector |
+| The sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ | **Derived in the algebra** |
+| Transversality of the gluon propagator | **Derived in the algebra**, from the same gauge-fixing article's projector |
 
 What the algebra can host, stated precisely. The projector structure of the propagator, the sign rule and the reality conditions are biquaternionic objects; the octet is not. The route the corpus takes is the one [the gluon article](the-gluon-an-octet-outside-the-biquaternion-algebra.html) sets out: the octet is not in $\mathbb{B}$, but it is in $M_2(\mathbb{B})\cong M_4(\mathbb{C})$, where a $3\times3$ scalar-free block can be written and the $\mathrm{SU}(3)$ elements have explicit biquaternion closed forms. That enlargement is a carrier, not a derivation: it hosts the octet at the price of a larger module, and it does not produce the triplet or the number three.
 

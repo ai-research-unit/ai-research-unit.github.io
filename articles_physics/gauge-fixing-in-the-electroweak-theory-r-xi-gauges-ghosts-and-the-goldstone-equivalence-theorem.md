@@ -377,7 +377,7 @@ The framework realises the gauge-fixing procedure itself, not the selection of a
 |---|---|
 | $\zeta$ | The gauge parameter; $\xi$ of the literature |
 | $\zeta_A$ | The gauge parameter of the photon's functional |
-| $\xi_{a}$, $\xi^\pm$, $\xi^0$ | The would-be Goldstone fields of article 4, which writes the index down |
+| $\xi_{a}$, $\xi^\pm$, $\xi^0$ | The would-be Goldstone fields, written as the four real components of the doublet in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) |
 | $W_{a,\imath}$, $Z_{\imath}$, $A_{\imath}$ | The gauge fields in the broken basis: the charged pair, the neutral massive one and the photon |
 | $\omicron_{\mathrm{pot}}$, $h$ | The scalar doublet and the physical scalar left after the Goldstones are eaten |
 | $v$ | $4.3893\times10^{-25}\ \mathrm{kg}$, the vacuum expectation value, entering $M_W=gv/2$ |

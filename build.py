@@ -20,17 +20,19 @@ LEGACY_COPIES = [
     ("articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-generators.html",
      "articles_physics/the-axf-matrices-of-the-twenty-one-generators.html"),
     # The chain-and-spectrum and scalar-and-leptoquark articles were split in two.
-    ("articles_physics/the-breaking-chain-one-flag-three-stabilisers-three-scales.html",
+    # Sources follow the two-section rename: an alias whose source was itself
+    # renamed stops copying and serves the pre-rename text forever.
+    ("articles_physics/the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html",
      "articles_physics/the-breaking-chain-and-the-boson-spectrum.html"),
-    ("articles_physics/the-scalar-sector-twenty-four-real-components-twelve-eaten.html",
+    ("articles_physics/the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html",
      "articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html"),
     # The classification article was split in two, bosons and fermions; the old
     # URL serves the boson article, which carries the group, the ledger and grids.
-    ("articles_physics/classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html",
+    ("articles_physics/classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html",
      "articles_physics/particle-classification-three-grids-one-name-in-every-cell.html"),
     # The boson-spectrum article was merged into the classification article; the
     # old URL serves the merged page, which now carries the fates and the mixing.
-    ("articles_physics/classification-of-the-bosons-twenty-four-cells-twenty-one-generators-one-name-in-every-cell.html",
+    ("articles_physics/classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html",
      "articles_physics/the-twenty-one-gauge-bosons-nine-massless-twelve-massive.html"),
     ("articles_maths/the-spin-half-bispinors-and-n-norm-regularity-in-m2c.html",
      "articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html"),

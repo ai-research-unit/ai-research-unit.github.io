@@ -2,18 +2,24 @@
 
 ## Introduction
 
-The claim. The Standard Model is one Lagrangian, and it is the sum of four sectors. This article writes the four, then the sum. It writes them in the corpus's coordinates, with the unit metric and the derivative $\partial/\partial R_{\imath}$, and it fixes once the one rule by which a display in this bookkeeping equals a display in the standard bookkeeping.
+**The claim.** The Standard Model is one Lagrangian, and it is the sum of four sectors. This article writes the four, then the sum. It writes them in the corpus's coordinates, with the unit metric and the derivative $\partial/\partial R_{\imath}$, and it fixes once the one rule by which a display in this bookkeeping equals a display in the standard bookkeeping.
 
-The standing. The expression is standard theory. It is transcribed, not derived, and no term in it follows from the biquaternion algebra. What the article adds to a textbook display is three things: one notation, one sign rule stated and proved, and one audit of gauge invariance carried out term by term.
+**The answer.**
 
-Why assembling is not a transcription exercise. A reader may object that the sum of four published pieces proves nothing, and the objection is correct as stated. The value of the assembly is what it makes possible. Gauge invariance is a property of the sum and not of the pieces: the fermion kinetic term is invariant only if the covariant derivative is built from the same three connections that the gauge kinetic terms carry, and the Yukawa sector is invariant only if the conjugate doublet is used with the right hypercharge. Those are statements about the assembly, and they are checked below, term by term, in one notation.
+$$
+\boxed{\;\mathcal L_{\mathrm{SM}}=\mathcal L_{\text{gauge}}+\mathcal L_{\text{fermion}}+\mathcal L_{\text{scalar}}+\mathcal L_{\text{Yukawa}},\qquad 60\to19\;}
+$$
 
-Two results, stated now. The assembly yields two quantitative results that no single-sector article states.
+**The standing.** The expression is standard theory. It is transcribed, not derived, and no term in it follows from the biquaternion algebra. What the article adds to a textbook display is three things: one notation, one sign rule stated and proved, and one audit of gauge invariance carried out term by term.
+
+**Why assembling is not a transcription exercise.** A reader may object that the sum of four published pieces proves nothing, and the objection is correct as stated. The value of the assembly is what it makes possible. Gauge invariance is a property of the sum and not of the pieces: the fermion kinetic term is invariant only if the covariant derivative is built from the same three connections that the gauge kinetic terms carry, and the Yukawa sector is invariant only if the conjugate doublet is used with the right hypercharge. Those are statements about the assembly, and they are checked below, term by term, in one notation.
+
+**Two results, stated now.** The assembly yields two quantitative results that no single-sector article states.
 
 - The sign rule. The corpus's bookkeeping and the standard one differ by one identity, $\sum_{\imath} X_{\imath} Y_{\imath} = -X\cdot Y$, and with it every display below is the standard display. The dot is the text's contraction, written without an index placement; the series never prints it as a raised index. The scalar kinetic term carries a minus sign in the corpus and a plus sign in a standard text, and both are the same term.
 - The redundancy. Written out, the four sectors and the vacuum-angle term carry sixty real parameters. Physical content is nineteen. Forty-one parameters are removed by field redefinitions that change no physics, and the removal is graded: twenty-six in the quark sector, fifteen in the lepton sector.
 
-The order. The four sectors and why there are four, then the dictionary, then the sectors one at a time, then the sum, then the audit, then the count, then what the expression omits, then the corpus's own action beside the standard one.
+**The order.** The four sectors and why there are four, then the dictionary, then the sectors one at a time, then the sum, then the audit, then the count, then what the expression omits, then the corpus's own action beside the standard one.
 
 ## Why Four Sectors
 
@@ -99,7 +105,7 @@ with $T_{a,Ξ_{\mathrm{wfn}}}$ the colour generators in the representation of $�
 
 Why the term is one term and not fifteen. The fifteen Weyl fields of a generation carry fifteen different connections and fifteen different hypercharges, so the display above is fifteen terms in one line. That is the whole of the fermion sector: a kinetic term per field, and no mass term.
 
-**No mass term.** The reason is recorded in article 1 and repeated here because it is the hinge of the assembly. A term $m\bar{\tilde\Xi}\tilde\Xi$ couples a left-handed field to a right-handed one, and the two carry different $SU(2)_L$ representations and different hypercharges, so no invariant contraction exists. The mass must wait for the scalar, and it arrives through the Yukawa sector.
+**No mass term.** The reason is recorded in [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html) and repeated here because it is the hinge of the assembly. A term $m\bar{\tilde\Xi}\tilde\Xi$ couples a left-handed field to a right-handed one, and the two carry different $SU(2)_L$ representations and different hypercharges, so no invariant contraction exists. The mass must wait for the scalar, and it arrives through the Yukawa sector.
 
 ## The Scalar Sector
 
@@ -133,7 +139,7 @@ v^2=\frac{\mu^2}{\varpi_{\mathrm{cpl}}} ,
 v=3.9449\times10^{-8}\ \mathrm{J} .
 $$
 
-The value of $v$ is not computed here; it is the entry 18 of the parameter table of article 1, fixed by the Fermi constant.
+The value of $v$ is not computed here; it is entry 18 of the parameter table of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html), fixed by the Fermi constant.
 
 What the sector supplies. Three things, and they are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) rather than here: the masses $M_W=\tfrac12gv$ and $M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v$, the massless photon, and the scalar mass $M_H=\sqrt{2\varpi_{\mathrm{cpl}}}\,v$. Recomputed from the table, $\varpi_{\mathrm{cpl}}=M_H^2/(2v^2)=0.1291$ for $M_H=2.2303\times10^{-25}$ kg, and the three masses then follow from $g$, $g_{\mathrm Y}$, $v$ and $\varpi_{\mathrm{cpl}}$.
 
@@ -233,11 +239,11 @@ The three places where the audit could fail and does not.
 
 **The one term that is not invariant, and must not be there.** A bare mass $m\bar{\tilde\Xi}\tilde\Xi$ fails the audit: the left factor transforms as a doublet and the right as a singlet, so the product carries an $SU(2)_L$ index that nothing contracts. A bare mass for the neutrino fails for the same reason. Their absence is a result of the audit and not an omission from it.
 
-The audit is complete. Every term of the sum has been checked, and no term of dimension four compatible with the symmetries has been left out. The last claim is the one that needs the count of the next section, and the count is of operators and not of terms: the renormalisable operators are the ones built from at most four fields and at most one derivative each, and the list above exhausts them once the field content of article 1 is fixed.
+The audit is complete. Every term of the sum has been checked, and no term of dimension four compatible with the symmetries has been left out. The last claim is the one that needs the count of the next section, and the count is of operators and not of terms: the renormalisable operators are the ones built from at most four fields and at most one derivative each, and the list above exhausts them once the field content of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html) is fixed.
 
 ## Sixty Parameters Written, Nineteen Physical
 
-Why the count matters. The Lagrangian above is written with more numbers than the model has. Every field can be redefined, and a redefinition changes the coupling matrices without changing any observable. The count of what survives is the count of article 1, and the difference is the redundancy.
+Why the count matters. The Lagrangian above is written with more numbers than the model has. Every field can be redefined, and a redefinition changes the coupling matrices without changing any observable. The count of what survives is the count of that article, and the difference is the redundancy.
 
 What is written. Counting real numbers,
 
@@ -261,11 +267,11 @@ What removes them. A field redefinition is a change of basis in flavour space, a
 
 The rule of the count. The physical number is the written number less the dimension of the group that acts, plus the dimension of the subgroup that leaves the couplings in their diagonal form. The last term is not a fudge: after diagonalisation a residual abelian group remains, and it acts on nothing.
 
-The quark result. Ten is six masses plus three angles plus one phase. Rephasing absorbs the five relative phases of three quark fields, $2N-1=5$ for $N=3$, and the ten that remain are the entries of article 1.
+The quark result. Ten is six masses plus three angles plus one phase. Rephasing absorbs the five relative phases of three quark fields, $2N-1=5$ for $N=3$, and the ten that remain are the entries of that article.
 
 The lepton result. Three is three masses and no mixing, because the minimal model has no right-handed neutrino and the lepton mixing matrix is then unobservable: it can be rotated away into the charged-lepton fields.
 
-**The total.** The two flavour blocks give thirteen, and with the six of the gauge, scalar and vacuum sectors the count is nineteen, which is the table of article 1. The reduction is $60\to19$, and the forty-one removed numbers are not small corrections: they are the entire freedom of choice of flavour basis.
+**The total.** The two flavour blocks give thirteen, and with the six of the gauge, scalar and vacuum sectors the count is nineteen, which is the table of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The reduction is $60\to19$, and the forty-one removed numbers are not small corrections: they are the entire freedom of choice of flavour basis.
 
 What the count does not do. It does not say that the nineteen are independent in nature; it says that the Lagrangian has nineteen degrees of freedom once the field basis is fixed. Relations among the nineteen — a mass ratio, a mixing angle predicted from masses — would be physics beyond the count, and the model supplies none.
 
@@ -275,7 +281,7 @@ A second redundancy, inside the mass sector. The pair $(\mu^2,\varpi_{\mathrm{cp
 
 **Three omissions, and each is a measurement.** The expression above is the renormalisable Standard Model with massless neutrinos and no dark sector. Each omission has an experimental warrant and a price.
 
-- Neutrino masses. The dimension-five operator $\frac{c_{ab}}{\Lambda}\left(L_{L,a}^T\,i\tau_2\,\omicron_{\mathrm{hgs}}\right)\left(L_{L,b}^T\,i\tau_2\,\omicron_{\mathrm{hgs}}\right)$ is invariant under all three factors and gives a Majorana mass after breaking. The two insertions are $\omicron_{\mathrm{hgs}}$ and not $\tilde\omicron_{\mathrm{hgs}}$, because the hypercharge has to close: $-\tfrac12-\tfrac12+\tfrac12+\tfrac12=0$, whereas two conjugate doublets of hypercharge $-\tfrac12$ would give $-2$. The $i\tau_2$ contracts the two weak doublets into a singlet, and the transpose pairs the two left-handed spinors into a Lorentz scalar, so the operator is a singlet under every factor. It is the unique dimension-five operator the field content allows, and it is absent because it is not renormalisable. Adding it, or adding right-handed neutrinos, costs the seven or eight parameters that article 1 counts.
+- Neutrino masses. The dimension-five operator $\frac{c_{ab}}{\Lambda}\left(L_{L,a}^T\,i\tau_2\,\omicron_{\mathrm{hgs}}\right)\left(L_{L,b}^T\,i\tau_2\,\omicron_{\mathrm{hgs}}\right)$ is invariant under all three factors and gives a Majorana mass after breaking. The two insertions are $\omicron_{\mathrm{hgs}}$ and not $\tilde\omicron_{\mathrm{hgs}}$, because the hypercharge has to close: $-\tfrac12-\tfrac12+\tfrac12+\tfrac12=0$, whereas two conjugate doublets of hypercharge $-\tfrac12$ would give $-2$. The $i\tau_2$ contracts the two weak doublets into a singlet, and the transpose pairs the two left-handed spinors into a Lorentz scalar, so the operator is a singlet under every factor. It is the unique dimension-five operator the field content allows, and it is absent because it is not renormalisable. Adding it, or adding right-handed neutrinos, costs the seven or eight parameters that that article counts.
 - Gravity. No term of the sum couples to the metric. The framework's own gravitational sector is a separate construction, and the Standard Model is written on a fixed background.
 - Dark matter and the matter excess. No field in the content is a dark-matter candidate, and the $\theta$ term's $B+L$ violation is the only source of baryon-number violation in the expression. Both gaps are the subject of [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html).
 
@@ -309,7 +315,7 @@ The sign rule is $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$, proved in one 
 
 The audit is term by term and it passes. The three kinetic terms are invariant because each curvature transforms in the adjoint; the fermion and scalar kinetic terms because each covariant derivative transforms with the same unitary that acts on its field; the potential because it depends only on the singlet $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$; the Yukawa terms because the total hypercharge vanishes in each of the three, $-1/6+1/2-1/3$, $-1/6-1/2+2/3$ and $+1/2+1/2-1$; and the vacuum-angle term because it is a colour singlet. A bare fermion mass fails the audit, and its absence is a result and not an omission.
 
-Written out, the four sectors and the vacuum-angle term carry sixty real parameters: three couplings, two scalar parameters, one vacuum angle, eighteen for $Y_{e}$ and thirty-six for the pair $Y^u,Y_{d}$. Field redefinitions remove forty-one of them — twenty-six in the quark sector through $U(3)_Q\times U(3)_u\times U(3)_d$ leaving ten, which is six masses and four mixing parameters, and fifteen in the lepton sector through $U(3)_L\times U(3)_e$ leaving three masses — so nineteen survive, which is the table of article 1. The redundancy is a freedom of flavour basis and not a small correction.
+Written out, the four sectors and the vacuum-angle term carry sixty real parameters: three couplings, two scalar parameters, one vacuum angle, eighteen for $Y_{e}$ and thirty-six for the pair $Y^u,Y_{d}$. Field redefinitions remove forty-one of them — twenty-six in the quark sector through $U(3)_Q\times U(3)_u\times U(3)_d$ leaving ten, which is six masses and four mixing parameters, and fifteen in the lepton sector through $U(3)_L\times U(3)_e$ leaving three masses — so nineteen survive, which is the table of that article. The redundancy is a freedom of flavour basis and not a small correction.
 
 The expression omits neutrino masses, gravity and a dark sector, and each omission is a measurement rather than an oversight. The unique dimension-five operator the content allows is the neutrino mass, and it is absent only because the theory is written renormalisable. Three of the four sectors have corpus counterparts term for term, through the dictionary of this article; the colour sector has none, because the algebra's ceiling is $SU(2)$. The assembly therefore closes the ledger the parameter table opened: the arena is the algebra's, and all sixty coefficients written here are imported.
 

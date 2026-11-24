@@ -24,13 +24,13 @@ The nine are the eight gluons and the photon. The twelve are six leptoquarks, $W
 
 **What the article does not establish.** No mass value. Every mass below is a coupling squared times a vacuum squared, with the coupling symbolic. The coefficients — $\tfrac14$, $\tfrac12$, $\tfrac58$ — come from the vacuum and are the group's; the couplings are not. Which values the couplings take is [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html).
 
-**Where the spectrum is.** The cells, the names in the cells and the neutral mixing are [Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). The chain that produces the vacuum is [The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). This article owns only the stabiliser and its dimension.
+**Where the spectrum is.** The cells, the names in the cells and the neutral mixing are [Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). The chain that produces the vacuum is [The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). This article owns the identity $\ker M^2=\mathfrak h$ and the counts that follow from it, at every stage of the chain. The neutral mixing and the two heavy eigenvalues are the second breaking's, and are treated there; the stage table below is the same identity applied at each threshold, not a second derivation of them.
 
 ## The Stabiliser, Which Is the Answer
 
 **One subgroup decides everything.** The vacuum is a set of scalar values; the gauge group acts on them; the subgroup that leaves them fixed is the unbroken group.
 
-**1.1 The definition.** Let $\Phi_0$ be the vacuum value of the scalar content, and let $G_{4LR}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$. Then
+**1.1 The definition.** The subgroup is the stabiliser of the vacuum *vector* and not of the line it spans, and the difference is what the last two steps of the chain cost: no Cartan annihilates the vacuum, because $T_{3R}$ and $B-L$ both act non-trivially on a vev and only their combination $Y$ does not. Let $\Phi_0$ be the vacuum value of the scalar content, and let $G_{4LR}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$. Then
 
 $$
 H=\mathrm{Stab}_{G_{4LR}}(\Phi_0)=\{g\in G_{4LR}:\ g\cdot\Phi_0=\Phi_0\},
@@ -122,10 +122,10 @@ so it is a prediction only once the two couplings are matched, which is why §*T
 $$
 M_{Z_R}^{2}=\tfrac14\,g_R^{2}v_R^{2}+\tfrac38\,g_4^{2}v_R^{2},
 \qquad
-M_{Z_R}^{2}=\tfrac58\,g^{2}v_R^{2}\ \text{when}\ g_4=g_R=g .
+M_{Z_R}^{2}=\tfrac58\,g^{2}v_R^{2}\ \text{only when}\ g_4=g_R=g .
 $$
 
-The first term is the $T_{3R}$ quarter and the second the $B-L$ three eighths. This is also the sense in which the neutral at $M_R$ is not a $\mathrm{U}(1)_R$ boson: it is the mixture that consumes the $B-L$ direction, and the paragraph on the differences in §*The Count at Every Stage* is the accounting for that consumption.
+The first term is the $T_{3R}$ quarter and the second the $B-L$ three eighths. The equal-coupling line is a hypothesis and not a result: it is the boundary condition whose failure [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html) records, and the two-coupling form above it stands without it. This is also the sense in which the neutral at $M_R$ is not a $\mathrm{U}(1)_R$ boson: it is the mixture that consumes the $B-L$ direction, and the paragraph on the differences in §*The Count at Every Stage* is the accounting for that consumption.
 
 ## The Count at Every Stage
 
@@ -172,7 +172,7 @@ a_2=\bigl(\tfrac12,-\tfrac12,0\bigr)v,
 \mathcal M^{2}=a_1a_1^{\mathsf T}+a_2a_2^{\mathsf T},
 $$
 
-the vectors carrying their own vacuum values. Then $\mathcal M^{2}$ is a sum of two rank-one matrices, so rank $\le2$ and at least one null direction; and $a_1\cdot a_2=-\tfrac14v_Rv\ne0$, so the two are independent and the rank is exactly two. Three neutral generators, one massless and two massive: $3=1+2$. The same vectors, with the same normalisation, are in [Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html), §*The Neutral Sector*.
+the vectors carrying their own vacuum values. Then $\mathcal M^{2}$ is a sum of two rank-one matrices, so rank $\le2$ and at least one null direction; and $a_1\cdot a_2=-\tfrac14v_Rv\ne0$, so the two are independent and the rank is exactly two. Three neutral generators, one massless and two massive: $3=1+2$. The same vectors, with the same normalisation, are in [The Neutral Sector of the Four Colours Left–Right Model: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html), §*The Neutral Sector: Three Fields, Rank Two, One Null Direction*.
 
 **5.4 The independence of content.** The identity $\#\{\text{massless}\}=\dim\mathrm{Stab}(\Phi_0)$ holds for any vacuum, any scalar content and any ordering of scales. What the content changes is *which* subgroup is the stabiliser, not whether the count is the stabiliser's dimension. A different multiplet list therefore moves the number only by moving the vacuum.
 

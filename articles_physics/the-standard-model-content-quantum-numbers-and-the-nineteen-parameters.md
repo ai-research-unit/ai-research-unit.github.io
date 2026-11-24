@@ -4,6 +4,16 @@
 
 **The claim.** The Standard Model is a short list of objects and a short list of numbers. This article prints both. It prints the gauge group, the fifteen Weyl fields of one generation with their quantum numbers, the twelve gauge bosons, the scalar doublet, and the nineteen parameters with the value and the scheme of each. It derives nothing, and it decides nothing on behalf of the model.
 
+**The answer.**
+
+$$
+\boxed{\;SU(3)_c\times SU(2)_L\times\mathrm{U}(1)_Y,\qquad
+15\ \text{Weyl fields per generation},\qquad
+12\ \text{gauge bosons},\qquad
+1\ \text{scalar doublet},\qquad
+19\ \text{parameters}\;}
+$$
+
 **The standing.** Every object below is standard theory, recorded in the corpus's symbols and displayed in the corpus's tables. Nothing here is a framework result. No object in this section follows from the biquaternion algebra, and the article says so again in the last section, where the count is read against the algebra.
 
 **Why a table is needed.** The three articles — [The Standard Model under the Biquaternion Framework](the-standard-model-as-the-low-energy-phase.html), [Electroweak Theory under the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and [Quantum Chromodynamics under the Biquaternion Framework](quantum-chromodynamics-as-the-residual-of-su4.html) — sort the model into objects the framework reaches and objects it does not. Each sorts item by item, and each says what is absent. None of the three prints the content in one place, because none of them is an exposition. This article is that place. It is the table the other articles of the series quote when they name a field, a charge or a parameter.

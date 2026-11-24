@@ -262,7 +262,7 @@ The ledger.
 | The solution of the running equation | **Derived here**, by separation of variables |
 | $\Lambda$ and dimensional transmutation | **Imported** in concept, **evaluated** here |
 | The measured $\alpha_s(M_Z)$ | **Imported.** A measurement, not a computation |
-| The sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ | **Derived in the algebra**, in article 2; it affects no number here |
+| The sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ | **Derived in the algebra**; it affects no number here |
 | A gauge-invariant regulator | **Not supplied.** The algebra's natural regulator breaks gauge invariance |
 | The value of $\Lambda$ | **Not supplied by anything.** The theory's one scale is an input |
 

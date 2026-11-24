@@ -60,7 +60,7 @@ V(\omicron_{\mathrm{pot}})=-\mu^2\,\omicron_{\mathrm{pot}}^{\dagger}\omicron_{\m
 \digamma_{\mathrm{qtc}}>0 ,
 $$
 
-with the two parameters of the table of article 1. Only $\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}$ can appear: any other invariant would need more than one power of the doublet in a way the group does not allow, and the audit of [The Standard Model Lagrangian Assembled](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) checks that.
+with the two parameters of the table of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). Only $\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}$ can appear: any other invariant would need more than one power of the doublet in a way the group does not allow, and the audit of [The Standard Model Lagrangian Assembled](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) checks that.
 
 Why the sign of $\mu^2$ is written this way. A positive $\mu^2$ makes the origin a maximum and pushes the minimum away from it. A negative $\mu^2$ would make the origin the minimum, the vacuum would be $\langle\omicron_{\mathrm{pot}}\rangle=0$, and the group would be unbroken. The sign is the difference between a theory with masses and a theory without.
 
@@ -128,11 +128,11 @@ $$
 
 so the quadratic term is the scalar mass and the two higher terms are the scalar's self-couplings. There is no linear term; the vanishing of the linear term is the stationarity condition, and it is the statement that the expansion is around a minimum and not around an arbitrary point.
 
-The three parameters are two. The pair $(\mu^2,\digamma_{\mathrm{qtc}})$ and the pair $(v,M_H)$ carry the same information, through $v^2=\mu^2/\digamma_{\mathrm{qtc}}$ and $M_H^2=2\digamma_{\mathrm{qtc}} v^2$. The model's parameters are counted once, and the count is in article 1.
+The three parameters are two. The pair $(\mu^2,\digamma_{\mathrm{qtc}})$ and the pair $(v,M_H)$ carry the same information, through $v^2=\mu^2/\digamma_{\mathrm{qtc}}$ and $M_H^2=2\digamma_{\mathrm{qtc}} v^2$. The model's parameters are counted once, and the count is in [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html).
 
 ## The Covariant Derivative at the Vacuum
 
-The derivative. With the normalisation of article 2,
+**The derivative.** With the normalisation of the doublet's representation, $\tau_a=\tfrac12\sigma_a$, and the hypercharge assigned as in [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html),
 
 $$
 D_{\imath}\omicron_{\mathrm{pot}}=\frac{\partial\omicron_{\mathrm{pot}}}{\partial R_{\imath}}+i\,g\sum_a\tau_aW_{a,\imath}\omicron_{\mathrm{pot}}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath}\omicron_{\mathrm{pot}} ,

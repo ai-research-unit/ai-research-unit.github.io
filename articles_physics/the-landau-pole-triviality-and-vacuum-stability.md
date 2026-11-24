@@ -2,11 +2,19 @@
 
 ## Introduction
 
-The claim. Three questions about the Standard Model's validity at high energy have one common source: the running of $\varpi_{\mathrm{cpl}}$ and of $g_{\mathrm Y}$. Asked separately they look like three separate worries. Asked together they are one calculation, and the three answers have the same shape — a scale, a bound, and a lifetime.
+**The claim.** Three questions about the Standard Model's validity at high energy have one common source: the running of $\varpi_{\mathrm{cpl}}$ and of $g_{\mathrm Y}$. Asked separately they look like three separate worries. Asked together they are one calculation, and the three answers have the same shape — a scale, a bound, and a lifetime.
+
+**The answer.**
+
+$$
+\boxed{\;M_{\text{pole}}=2.884\times10^{31}\ \mathrm{J},\qquad
+m_H\le2.567\times10^{-25}\ \text{kg},\qquad
+\tau_{\text{vac}}=10^{649}\,t_{U}\;}
+$$
 
 **Units.** A mass in this article is written in kilograms. A cutoff, a running scale and a decay rate stay in joules, because those quantities are energies and the joule is their unit. The two are never mixed: a mass is a mass and a joule value is an energy.
 
-The three questions.
+**The three questions.**
 
 | Question | Quantity | Answer's form | This article's value |
 |---|---|---|---|
@@ -14,9 +22,9 @@ The three questions.
 | Can a fundamental scalar be both weakly coupled and UV-complete? | $\varpi_{\mathrm{cpl}}(\mu)$ | An upper bound on $m_H$ | $2.567\times10^{-25}$ kg at the Planck scale |
 | What is the fate of the vacuum we live in? | $\varpi_{\mathrm{cpl}}(\mu)$ | A lifetime | Metastable, $10^{649}$ times the age of the universe |
 
-The standing. Every equation below is standard. The framework's contribution is confined to one section and consists of two structural statements and one gap, and the gap is the more informative of the three.
+**The standing.** Every equation below is standard. The framework's contribution is confined to one section and consists of two structural statements and one gap, and the gap is the more informative of the three.
 
-The four results.
+**The four results.**
 
 - The hypercharge Landau pole is at $2.884\times10^{31}\ \mathrm{J}$, which is $1.5\times10^{22}$ Planck masses. So it is not a problem for the Standard Model alone: gravity intervenes $22$ orders of magnitude first. But it is a statement about the *kind* of group $\mathrm{U}(1)_Y$ is, and that statement is structural.
 - Triviality bounds the Higgs mass from above at every cutoff, and at the Planck scale the bound is $m_H=2.567\times10^{-25}$ kg. The measured $m_H=2.230\times10^{-25}$ kg is $86.8\%$ of it. That is a striking saturation and this article refuses to call it a hint.
@@ -25,7 +33,7 @@ The four results.
 
 One methodological warning, given early because it governs the whole article. The fate of $\varpi_{\mathrm{cpl}}$ is decided by a difference of terms of order one, so the answer is a *precision* statement: it needs two- and three-loop running and a careful conversion between the pole and $\overline{\mathrm{MS}}$ top mass. A one-loop estimate gets the *sign* right and the *scale* wrong, sometimes by many orders of magnitude. The corpus's rule — never print a number without its order and its scheme — is not a formality here; it is the difference between a correct and an incorrect answer.
 
-The order. The three questions, then the hypercharge pole, then why abelian is different, then triviality, then the near miss of the three couplings, then the fate of $\varpi_{\mathrm{cpl}}$, then what "unstable" means, then the metastability window, then the renormalisation group input, then the two-sector question, then what the algebra says, then what would change the answer, then the ledger.
+**The order.** The three questions, then the hypercharge pole, then why abelian is different, then triviality, then the near miss of the three couplings, then the fate of $\varpi_{\mathrm{cpl}}$, then what "unstable" means, then the metastability window, then the renormalisation group input, then the two-sector question, then what the algebra says, then what would change the answer, then the ledger.
 
 ## Three Questions, One Calculation
 

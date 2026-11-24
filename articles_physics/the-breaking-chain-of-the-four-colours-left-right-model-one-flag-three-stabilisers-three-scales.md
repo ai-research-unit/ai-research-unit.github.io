@@ -41,21 +41,37 @@ The chain is driven by one point of $\mathbb{CP}^{3}\times\mathbb{CP}^{1}\times\
 
 **Three lines.** In three spaces, and the chain is the sequence of their stabilisers.
 
-**1.1 The first line.** It is the unit line, and it lives in the carrier. $\mathbb C e_t\subset\mathbb C^4$ is the line singled out by the $B-L$ charge: it is the eigenvector on which $B-L$ takes its extremal value, and it is the one line fixed by the whole stabiliser $\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}$. It is not fixed by $\mathrm{SU}(4)$ — an automorphism that moves it into the colour part does not fix it — which is exactly why fixing it breaks the group. Its stabiliser in $\mathrm{SU}(4)$ is $\mathrm{SU}(3)$, and its stabiliser in the whole frame is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$:
+**1.1 The first line.** It is the unit line, and it lives in the carrier. $\mathbb C e_t\subset\mathbb C^4$ is the line singled out by the $B-L$ charge: it is the eigenvector on which $B-L$ takes its extremal value, and it is the one line fixed by the whole stabiliser $\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}$. It is not fixed by $\mathrm{SU}(4)$ — an automorphism that moves it into the colour part does not fix it — which is exactly why fixing it breaks the group. Its stabiliser in $\mathrm{SU}(4)$ is $\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}$, and its stabiliser in the whole frame is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$:
 
 $$
 \mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_t)=\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L},
 \qquad
-15\to 8+1 .
+15=8+1+6,
+\qquad
+\mathbf{15}\to\mathbf8\oplus\mathbf3\oplus\bar{\mathbf3}\oplus\mathbf1 .
 $$
 
-**1.2 The second line.** It lives in the $SU(2)_R$ doublet. The vacuum that breaks $\mathrm{SU}(4)$ does it with a field in the $(\mathbf 4,\mathbf 1,\mathbf 2)$: one $SU(2)_R$ doublet, and the breaking of $SU(2)_R$ is the choice of one of its two components. A doublet has a $\mathbb{CP}^1$ of lines and not one, but every line has a $\mathrm{U}(1)$ stabiliser, and all of those are conjugate in $\mathrm{SU}(2)_R$. So the unbroken group is $\mathrm{U}(1)_R$ whichever line is chosen, and the choice of line moves no group theory:
+The nine unbroken directions are the eight of $\mathfrak{su}(3)$ and the one Cartan, $9=8+1$, and the six that leave are the off-diagonal $\mathfrak m$ of §*Why the First Step Is Different*. A $\mathbf{15}$ of matter branches into the same four pieces with the $6$ written $\mathbf3\oplus\bar{\mathbf3}$, so the algebra and the multiplet carry the same four labels. The count is a count of generators, and the threshold the minimal content actually has is the one *The Budget and the Thresholds* states; the difference between them is the field that takes the vev.
+
+**1.2 The second line.** It lives in the $SU(2)_R$ doublet. The vacuum that breaks $\mathrm{SU}(4)$ does it with a field in the $(\mathbf 4,\mathbf 1,\mathbf 2)$: one $SU(2)_R$ doublet, and the breaking of $SU(2)_R$ is the choice of one of its two components. A doublet has a $\mathbb{CP}^1$ of lines and not one, but every line has a $\mathrm{U}(1)$ stabiliser, and all of those are conjugate in $\mathrm{SU}(2)_R$. So the *line's* stabiliser is $\mathrm{U}(1)_R$ whichever line is chosen, and the choice of line moves no group theory:
 
 $$
 \mathrm{Stab}_{\mathrm{SU}(2)_R}(\text{a line})=\mathrm{U}(1)_R,
 \qquad
-3\to 1 .
+3\to 1\ \text{on lines} .
 $$
+
+**What the lines do and what the generators do.** A line stabiliser and the kernel of a mass matrix are different objects, and the difference is the whole of what the second step costs. No generator annihilates $v_R\,e_t\otimes e_\uparrow$: $T_{3R}$ gives $+\tfrac12$ on it and $B-L$ gives $-1$, so both are broken. The one combination that annihilates it is hypercharge,
+
+$$
+Y=T_{3R}+\tfrac12(B-L),
+\qquad
+\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}\to\mathfrak u(1)_Y,
+\qquad
+(3+1)\to 1\ \text{on generators} .
+$$
+
+So the step consumes the whole $T_{3R}$ triplet and the $B-L$ boson and leaves one direction: a drop of four, not of two. Both counts are right and they count different things. [The Unbroken Subgroup of the Four Colours Left–Right Model](the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html) owns the kernel statement, and its §*The Differences, and Why the Second Step Costs Three* is the arithmetic that reconciles the two.
 
 **1.3 The third line.** It lives in the $SU(2)_L$ doublet, and it is the electroweak one. Its stabiliser is $\mathrm{U}(1)_{\mathrm{em}}$:
 
@@ -127,7 +143,7 @@ The $\pm\tfrac23$ is the charge of the *gauge boson* $X^{a}$, not of a fermion: 
 
 **3.2 No rank.** A Cartan generator is diagonal, and a generator with $B-L=\pm\tfrac43$ is off-diagonal by construction — it moves the unit line into the vector part. So the first step is the only step that breaks a group without breaking a Cartan direction, and that is why rank is untouched while six bosons get mass.
 
-**3.3 The neutral sector survives untouched.** After the first step there are still three neutral gauge bosons in play — $W_L^3$, $W_R^3$, and the surviving $B-L$ field — and two of them must eventually become $Z$ and $Z_R$. The three neutral states are a consequence of the first step not touching the Cartan. The mixing that produces the photon from them is [Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html), §*The Neutral Sector: Three Fields, Rank Two, One Null Direction*.
+**3.3 The neutral sector survives untouched.** After the first step there are still three neutral gauge bosons in play — $W_L^3$, $W_R^3$, and the surviving $B-L$ field — and two of them must eventually become $Z$ and $Z_R$. The three neutral states are a consequence of the first step not touching the Cartan. The mixing that produces the photon from them is [The Neutral Sector of the Four Colours Left–Right Model: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html), which is the second breaking's neutral block.
 
 ## What the Chain Fixes
 
@@ -157,7 +173,7 @@ The scalar content. Which fields do the breaking is a choice, and [The Scalar Se
 
 **Why they are not restated here.** Each of the four carries a value that moves with a choice: the scale of the first breaking, the ratio $g_4/g_R$, the coefficient of the running. A moving value printed in a geometric article reads as though the geometry produced it, and the geometry does not. The chain fixes the count, the stabilisers, the dimension budget and the rank budget. It fixes no number that a scale can change.
 
-**The failure.** The equal-coupling condition implies two numbers at once, $\sin^2\theta_W=\tfrac38$ and $g_4=g_L$, and they are met four decades apart — $1.6\times10^{-3}$ J and $1.6\times10^{1}$ J — so no single threshold satisfies both. That is the failure; *The Twenty-One, Classified* of the coupling article gives the arithmetic, and it is neither weakened here nor repeated.
+**The failure.** The equal-coupling condition implies two numbers at once, $\sin^2\theta_W=\tfrac38$ and $g_4=g_L$, and they are met four decades apart — $1.63\times10^{3}$ J and $1.57\times10^{7}$ J — so no single threshold satisfies both. That is the failure; §*The Boundary Condition, and Why It Fails* of the coupling article gives the arithmetic, and it is neither weakened here nor repeated.
 
 ## The Checks
 
@@ -199,7 +215,7 @@ The chain does not predict the twelve masses; it predicts which twelve states ex
 
 **The scales.** $M_{C}$ and $M_{R}$ are parameters. They are bounded, they are not fixed here, and they are not tied to each other by the geometry.
 
-**The failure.** Recorded in the coupling article, in *The Twenty-One, Classified*.
+**The failure.** Recorded in the coupling article, in §*The Boundary Condition, and Why It Fails*.
 
 **The strength.** The count, the stabilisers and the two budgets are exact and independent of any coupling. Everything numerical is in the coupling article.
 

@@ -56,7 +56,7 @@ It is the only article here that names a particular group. The eighteen that fol
 
 The article establishes that the twenty-one dimensions split as $15+3+3$ and the fifteen as $8+1+6$; that the two $\mathrm{SU}(2)$ factors arise from the algebra's own two-sided action and not from an import; that the fermion content is the sixteen of $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$; that one covariant derivative with one coupling covers all twenty-one; and that the group acts on a formal copy of the carrier's quartet, for the reason computed under *The Carrier Is a Copy*.
 
-It does not establish that the algebra derives the group. It derives two of the three factors and the split of the third. The identification of that split with the quark–lepton quartet is a declaration, called (A) throughout and stated in *The Sixteen* and *Where Each Factor Comes From*. Nor that the group makes the theory chiral: it does not, and *The Chiral Wall, Restated for This Group* says why.
+It does not establish that the algebra derives the group. It derives two of the three factors and the split of the third. The identification of that split with the quark–lepton quartet is a declaration, called (A) throughout and stated in *The Sixteen* and *Where Each Factor Comes From*. Nor that the group makes the theory chiral: it does not, and *The Chiral Wall, Restated for This Group* says why. An external result is recorded separately and with its premise: *The Uniqueness Result, and What It Assumes* states the Jordan-geometry theorem that forces this group in an $8\times8$ representation the algebra does not use, and the derivation count $3+3+15$ that agrees with the twenty-one.
 
 ## Why the Corpus Adopts This Group, and Where the Equal-Coupling Case Departs From It
 
@@ -284,6 +284,28 @@ What the criterion does not buy is chirality. It grades the group's address in t
 
 The membership claim is set out once, because it is easy to get wrong. Six of the twenty-one generators are not elements of the algebra: the six sides are endomorphisms of length one, and their parameters are the imaginary units. Only the central phase is in $\mathbb B$, as the ladder shows.
 
+## The Uniqueness Result, and What It Assumes
+
+**The result.** Boyle and Farnsworth ask which finite algebra carries the Standard-Model group as its inner automorphisms, in an $8\times8$ Hermitian block-diagonal representation that commutes with the chirality. The answer is unique up to isomorphism:
+
+$$
+\mathcal A_F=J_3(\mathbb C)\oplus J_2(\mathbb C)\oplus S_2\oplus\mathbb{R}\ \ (\text{Standard Model}),
+\qquad
+\mathcal A_F=J_2^{L}(\mathbb C)\oplus J_2^{R}(\mathbb C)\oplus J_4(\mathbb C)\ \ (\text{Pati–Salam}),
+$$
+
+of real dimensions $9+4+3+1=17$ and $4+4+16=24$, in blocks of size $2,2,3,1$ and $2,2,4$.
+
+**What it settles, and what it does not.** It settles one question — whether Pati–Salam is one case among several in that scheme or the only case — in favour of the second. It does not touch declaration (A). Which of the four directions is the lepton is fixed by neither algebra, and the source recovers the observed charges only after adjoining an outer $\mathrm{U}(1)_{B-L}$: the inner group's abelian factor is not hypercharge but a linear combination of hypercharge and $B-L$, written there as $X=Y+\tfrac12(B-L)$, and the six irreps it produces are the Standard Model's six in a different basis for the two abelian charges. **The labelling remains a choice; what the theorem removes is the freedom to choose another group.**
+
+**The premise, which has to be stated before the conclusion.** The first premise is an $8\times8$ Hermitian block-diagonal representation, and that representation is Barrett's. Barrett's construction is the non-commutative geometry the paper replaces. The theorem is therefore conditional on the scheme it argues against, and it cannot license the four-dimensional carrier this article uses. Its value is comparative. It says that inside that scheme the sixteen and the group are not a coincidence, and it states externally the shape this article asserts, one level up and with the group forced rather than declared.
+
+**The same shape one level down.** The Hermitian part of the corpus's operator layer is the single Jordan algebra $J_4(\mathbb C)$ of dimension sixteen, whose derivation algebra is $\mathfrak{su}(4)$ of dimension fifteen. The theorem's Standard-Model algebra is four Jordan algebras of total dimension seventeen. The objects are of one kind and one dimension apart, and the difference that matters is the number of simple ideals — one here, four there — which is the count that decides the metric question in [The Spectral Triple of the Biquaternion Algebra](the-spectral-triple-of-the-biquaternion-algebra.html).
+
+**The count that agrees.** The associators of $J_n(\mathbb C)$ span $\mathfrak{su}(n)$, of dimensions $3$, $8$ and $15$ for $n=2,3,4$, with $S_2$ contributing one and $\mathbb{R}$ none. On the Pati–Salam algebra the total is $3+3+15=21$, which is this model's own $21=15+3+3$. The two constructions reach the same three numbers by different routes. This article gets $\mathfrak{su}(4)$ from the carrier and the two $\mathfrak{su}(2)$'s from the two-sided action; the source gets all three as associators of the three blocks, acting on the algebra itself rather than on a declared copy of the carrier. [The Operators of the Algebra](the-operators-of-the-algebra.html) carries the computation.
+
+**A row this article has been missing.** The source's minimal model is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y\times\mathrm{U}(1)_{B-L}$, with three right-handed neutrinos and one complex scalar of $B-L$ charge $+2$ carrying no colour and no weak charge. It is smaller than this frame's group and larger than the Standard Model, and *Why This Group and Not a Larger One* compares this frame with $\mathrm{SU}(5)$ and $\mathrm{SO}(10)$ only. The comparison with that intermediate group is short. The extra $\mathrm{U}(1)$ is invisible below its breaking scale, because the scalar that breaks it is the only field charged under it; and the price of the smaller group is that the six leptoquark states are gone. It is the trade the left–right model makes, carried one $\mathrm{U}(1)$ further.
+
 ## Why This Group and Not a Larger One
 
 Three competitors, and the corpus's reason for each refusal, in one line apiece.
@@ -360,6 +382,9 @@ Every number in this article, run again.
 | the lengths of the ladder | the six rows of §*Where Each Factor Comes From, and How Firmly* | $1$ on the central phase and the two sides, $2$ on seven of colour, $3$ on $B-L$ and on the eighth colour direction |
 | the bound is attained | $300$ random $\mathfrak{su}(4)$ elements | $\ell=4$ on every draw |
 | the six single words of $\mathfrak{su}(4)$ | $L_{e_t}R_{\vec e_a}$ and $L_{\vec e_a}R_{e_t}$, $a=x,y,z$ | $6$, and no other word qualifies |
+| the theorem's dimensions | $9+4+3+1$ and $4+4+16$ | $17$ and $24$ |
+| the derivation count, this group | $3+3+15$ on $J_2^{L}(\mathbb C)\oplus J_2^{R}(\mathbb C)\oplus J_4(\mathbb C)$ | $21$ |
+| the derivation count, Standard Model | $8+3+1+0$ on $J_3(\mathbb C)\oplus J_2(\mathbb C)\oplus S_2\oplus\mathbb R$ | $12$ |
 
 ## Summary
 
@@ -376,6 +401,8 @@ Every number in this article, run again.
 **The ceiling.** $\mathfrak{su}(4)$ commutes with the Lorentz action only in $\mathfrak{su}(2)$; so the carrier is a formal copy, permitted by the split and by nothing else.
 
 **The wall.** The frame does not make the theory chiral; the chirality is in the representation, and the representation is declared.
+
+**The external result, and its premise.** In Jordan geometry the algebra carrying the Standard-Model group as inner automorphisms in an $8\times8$ Hermitian block-diagonal representation is unique, and the Pati–Salam case of the same question is $J_2^{L}(\mathbb C)\oplus J_2^{R}(\mathbb C)\oplus J_4(\mathbb C)$. The premise is a representation this article does not use, so the theorem does not license the carrier here, and it leaves the declaration (A) untouched; what it adds is that the identification of the group is forced in that scheme, and it brings a second derivation of the twenty-one, $3+3+15$ from the associators of the three blocks.
 
 **What grows.** $21$ generators against $12$; twenty-four real scalars against four, of which twelve are eaten and twelve survive; one Yukawa matrix where two sectors need two, so the down-type and charged-lepton spectra come out proportional, and the repair needs a second bidoublet or a $(\mathbf{15},\mathbf2,\mathbf2)$; and a second scale, whose lower bound is a leptoquark bound and whose value the frame does not fix.
 
@@ -422,3 +449,5 @@ Every number in this article, run again.
 **Generators in $\mathbb B$.** The two-sided action does not put them there. The action is an endomorphism; its parameter is the element. This is the Layer A / Layer B distinction again: the algebra acts on its own carrier in Layer A, and the group acts on a formal copy in Layer B, and in neither layer is a generator of $\mathrm{SU}(2)$ an element of the algebra.
 
 **The sixteen as evidence.** It is not evidence that the group is right. It is evidence that the sixteen is the natural multiplet, and a natural multiplet is not a measurement. The same multiplet appears in $\mathrm{SO}(10)$, which is how we know that a natural multiplet does not pick out a group.
+
+**The external comparison.** L. D. Boyle and S. Farnsworth, "The standard model, the Pati–Salam model, and Jordan geometry," arXiv:1910.11888, for the uniqueness of $J_2^{L}(\mathbb C)\oplus J_2^{R}(\mathbb C)\oplus J_4(\mathbb C)$ given an $8\times8$ Hermitian representation, the outer $\mathrm{U}(1)_{B-L}$ that completes the inner group, and the derivation count $3+3+15=21$; §*The Uniqueness Result, and What It Assumes* states the premise of that theorem and what it leaves open.

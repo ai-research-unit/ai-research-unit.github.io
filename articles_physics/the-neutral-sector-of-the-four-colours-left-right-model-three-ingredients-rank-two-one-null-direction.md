@@ -4,7 +4,7 @@
 
 **The question.** Three neutral gauge directions exist before any breaking. Two vacua act on them. How many neutral bosons survive, how heavy are they, and why is exactly one of them massless?
 
-**The answer.** Three fields, $W^3_L$, $W^3_R$ and $B'$, a $3\times3$ mass matrix built from two vacuum vectors, rank two because two rank-one terms are all there is, therefore one null direction. The null direction is $\bigl(1,1,\sqrt{\tfrac23}\bigr)$ and it is the photon. The two massive eigenvalues are $\tfrac25g^2v^2$ and $\tfrac58g^2v_R^2$, and both coefficients are norms of the vacuum vectors and not free parameters.
+**The answer.** Three fields, $W^3_L$, $W^3_R$ and $B'$, a $3\times3$ mass matrix built from two vacuum vectors, rank two because two rank-one terms are all there is, therefore one null direction. The null direction is $\bigl(1,1,\sqrt{\tfrac23}\bigr)$ and it is the photon. The two massive eigenvalues are $\tfrac25g^2v^2$ and $\tfrac58g^2v_R^2$ at equal couplings, and both coefficients are fixed by the vacuum vectors: the heavy one is the norm $\lvert a_1\rvert^2=\tfrac58$, and the light one is the Schur complement $\lvert a_2\rvert^2-(a_1\cdot a_2)^2/\lvert a_1\rvert^2=\tfrac12-\tfrac1{10}=\tfrac25$, which is why it is not the $\tfrac12$ that $\lvert a_2\rvert^2$ alone would give.
 
 **What this article is.** It is the neutral half of [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html), cut out so that the grid article stays about the grid. The cells, the ledger and the fate of every charged and coloured boson stay there; the mixing of the three neutral directions is here.
 

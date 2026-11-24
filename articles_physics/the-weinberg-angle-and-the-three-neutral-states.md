@@ -2,29 +2,37 @@
 
 ## Introduction
 
-The claim. The angle $\theta_W$ is not a third coupling. It is the one angle by which the two neutral gauge fields must be rotated to make the photon couple as pure electric charge, and once it is so defined the $Z$ coupling follows with no further freedom:
+**The claim.** The angle $\theta_W$ is not a third coupling. It is the one angle by which the two neutral gauge fields must be rotated to make the photon couple as pure electric charge, and once it is so defined the $Z$ coupling follows with no further freedom:
 
 $$
 \mathcal{L}_Z=\frac{g}{\cos\theta_W}\sum_{f,\imath}\varepsilon_{\imath} Z_{\imath}\bar f\gamma_{\imath}\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_W\,P_R\Big]f .
 $$
 
+**The answer.**
+
+$$
+\boxed{\;\tan\theta_W=\frac{g_{\mathrm Y}}{g},\qquad
+\sin^2\theta_W=\frac{g_{\mathrm Y}^{2}}{g^{2}+g_{\mathrm Y}^{2}},\qquad
+g_{Z}^{2}=g^{2}+g_{\mathrm Y}^{2}\;}
+$$
+
 The appearance of $\sin^2\theta_W$ in that bracket is therefore not a second convention. It is the residue of the rotation, and §*The Rotation, and Why the Angle Appears Squared* proves it in three lines.
 
-The standing. Standard theory, transcribed. The framework supplies two free couplings and no embedding, so neither the angle nor the electric-charge relation follows, and the corpus's own ledger classifies the row *no route yet*. This article does not soften that; it states what would settle it.
+**The standing.** Standard theory, transcribed. The framework supplies two free couplings and no embedding, so neither the angle nor the electric-charge relation follows, and the corpus's own ledger classifies the row *no route yet*. This article does not soften that; it states what would settle it.
 
-Three results that the companion articles quote and do not derive.
+**Three results that the companion articles quote and do not derive.**
 
 - The angle is defined by one condition, and it explains the square. Demanding that the photon coupling contain no $T_3$ fixes $\tan\theta_W=g_{\mathrm Y}/g$; the $Z$ coupling then comes out as $T_3-\sin^2\theta_WQ$ automatically, with the square arising because $\sin^2\theta_W=g_{\mathrm Y}^2/(g^2+g_{\mathrm Y}^2)$ is the hypercharge share of the two couplings' strength.
 - The neutrino's $Z$ coupling is free of the angle. Its vector and axial couplings are both $\tfrac12$, whatever the mixing, so the invisible width counts neutrinos without knowing $\sin^2\theta_W$. That is why the three-neutrino result is the sharpest fact of the $Z$ pole.
 - The three angles, and their ratios. The on-shell value is $0.22305$, the $\overline{\mathrm{MS}}$ value $0.23122$ and the effective leptonic value $0.23148$; the ratios are $\kappa_{\mathrm{OS}}=0.9647$ and $\kappa_{\mathrm{eff}}=1.0011$. The first ratio is a *cancellation*, not a single effect: the running of $\alpha$ alone would make the on-shell angle nine per cent the smaller, and the scheme corrections give most of that back, so the measured deficit is three and a half.
 
-The order. The two neutral currents before mixing; the rotation and the one condition it yields; the couplings of every fermion, tabulated; the low-energy neutral current and its two historic measurements; the three angles and why they differ; the $Z$ pole, its widths and its asymmetries; what the neutral current measures that the charged current cannot; and what the framework supplies.
+**The order.** The two neutral currents before mixing; the rotation and the one condition it yields; the couplings of every fermion, tabulated; the low-energy neutral current and its two historic measurements; the three angles and why they differ; the $Z$ pole, its widths and its asymmetries; what the neutral current measures that the charged current cannot; and what the framework supplies.
 
-Status in the migration. The angle is a relation between two couplings, not a number that the group supplies: the three neutral generators fix the *form* $\sin^2\theta_W=g_Y^2/(g_L^2+g_Y^2)$, with $g_Y$ the harmonic combination of the two abelian factors above it, and they fix nothing else. This article stands inside the flagged section for that reason: it is the one place in the category where the Standard Model's own coupling is written, together with [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). Every other article in the category carries the same symbols with no values, and no boundary condition at any scale.
+**Where it stands.** The angle is a relation between two couplings, not a number that the group supplies: the three neutral generators fix the *form* $\sin^2\theta_W=g_Y^2/(g_L^2+g_Y^2)$, with $g_Y$ the harmonic combination of the two abelian factors above it, and they fix nothing else. It is the one place in the category where the Standard Model's own coupling is written, together with [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). Every other article in the category carries the same symbols with no values, and no boundary condition at any scale.
 
 ## The Two Neutral Currents
 
-Before mixing there are two. The electroweak sector carries four gauge fields, and two of them are neutral: $W_{3,\imath}$ of $SU(2)_L$ and $B_{\imath}$ of $\mathrm{U}(1)_Y$. Their couplings to matter are fixed by the quantum numbers of article 1 and by nothing else,
+Before mixing there are two. The electroweak sector carries four gauge fields, and two of them are neutral: $W_{3,\imath}$ of $SU(2)_L$ and $B_{\imath}$ of $\mathrm{U}(1)_Y$. Their couplings to matter are fixed by the quantum numbers of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html) and by nothing else,
 
 $$
 \mathcal{L}_{\mathrm{neutral}}=g\,W_{3,\imath} J_{3,\imath}+g_{\mathrm Y}B_{\imath} J_{Y,\imath} ,
@@ -36,7 +44,7 @@ $$
 
 with $T_{3f}$ the weak isospin of the left part and $Y_f$ the hypercharge. Both currents are neutral — $T_3$ and $Y$ both commute with $Q$, so neither can change a fermion's charge. That alone would not make them diagonal in flavour, since the up-type and down-type mass matrices are diagonalised by different unitary rotations; what removes the mixing is universality, the $Z$ coupling to all three generations being one set of numbers, so the vertex is proportional to the unit in flavour space and the rotations cancel as $X^\dagger X=1$. The charged current fails exactly there: $W$ joins a $u$-type field to a $d$-type one and leaves $X_u^\dagger X_d=V_{\mathrm{CKM}}$ behind, the object of [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). That asymmetry is why the neutral sector needs no mixing matrix and the charged sector does.
 
-Two currents, one measured combination. Neither $J_3$ nor $J_Y$ is separately observable: a $W_3$ or a $B$ boson does not propagate as a mass eigenstate, since the mass matrix of article 4 mixes them. What is observable is the coupling of the fields that do propagate, and there are two of them: the massless one and the massive one.
+Two currents, one measured combination. Neither $J_3$ nor $J_Y$ is separately observable: a $W_3$ or a $B$ boson does not propagate as a mass eigenstate, since the neutral mass matrix of [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) mixes them. What is observable is the coupling of the fields that do propagate, and there are two of them: the massless one and the massive one.
 
 **The counting already fixes part of the answer.** Two neutral fields, two mass eigenstates, one of them massless. The massless one couples to a conserved current with no axial part, because a massless vector has two polarisations and a non-conserved current would require the third. So the massless combination must be the one whose axial coupling cancels, and that is a condition on the rotation angle. The next section turns it into an equation.
 
@@ -155,7 +163,7 @@ The table. At $\sin^2\theta_W=0.23122$, with $T_3$ the isospin of the left part:
 | $u,c,t$ | $+1/2$ | $+2/3$ | $0.3459$ | $-0.1541$ | $0.1917$ | $0.5000$ | $0.6686$ |
 | $d,s,b$ | $-1/2$ | $-1/3$ | $-0.4229$ | $0.0771$ | $-0.3459$ | $-0.5000$ | $0.9357$ |
 
-Four rows cover twelve fermions. The couplings depend on $T_3$ and $Q$ only, and those are the same within each row, so the fifteen fields of article 1 collapse to four patterns. The mass does not enter: the $Z$ couples to all three generations identically in the gauge sector, and the differences between generations appear only through the fermion masses in the loop corrections and through the mixing in the charged current.
+Four rows cover twelve fermions. The couplings depend on $T_3$ and $Q$ only, and those are the same within each row, so the fifteen fields of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html) collapse to four patterns. The mass does not enter: the $Z$ couples to all three generations identically in the gauge sector, and the differences between generations appear only through the fermion masses in the loop corrections and through the mixing in the charged current.
 
 **The right-handed neutrino. It is absent from the table because it is a singlet of all three groups and couples to nothing.** A reader who adds it for neutrino masses finds that it does not change one line of this section.
 
@@ -259,7 +267,7 @@ $$
 \sin^2\theta_{\mathrm{OS}}\cos^2\theta_{\mathrm{OS}}=\frac{\pi\,\alpha(0)}{\sqrt2\,G_F\,M_Z^2}\cdot\frac{1}{1-\delta r} ,
 $$
 
-with $\delta r=0.0355$ of article 4. This is not an independent prediction: $\delta r$ was defined through the same three quantities, so the equation is the definition rearranged. Its value is that it shows how the angle's value and $\delta r$ are two views of one number, and it shows which input carries the difference. Solving it gives $0.22305$, which is the on-shell value by construction.
+with $\delta r=0.0355$ of [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). This is not an independent prediction: $\delta r$ was defined through the same three quantities, so the equation is the definition rearranged. Its value is that it shows how the angle's value and $\delta r$ are two views of one number, and it shows which input carries the difference. Solving it gives $0.22305$, which is the on-shell value by construction.
 
 Why the effective one is the largest, and by very little. The effective leptonic angle is extracted from asymmetries at the $Z$ pole, and the extraction folds in the vertex corrections and the photon–$Z$ mixing that the asymmetries actually contain. Its ratio to the $\overline{\mathrm{MS}}$ value is
 
@@ -273,7 +281,7 @@ The pattern in one sentence. The on-shell angle differs from the $\overline{\mat
 
 What each is good for. The on-shell angle is the one a tree-level calculation wants, because it is built from the masses that enter the tree Lagrangian. The $\overline{\mathrm{MS}}$ angle is the one a running coupling wants, because it is defined at a scale. The effective angle is the one an asymmetry wants, because it is what the asymmetry measures. Quoting one and comparing it with a measurement of another is a comparison of two different objects, and it is the commonest error in the literature of this sector.
 
-**The lesson for the corpus.** Every number of this sector must carry its scheme, which is why the parameter table of article 1 has a scheme column and why article 4's $\delta r$ could not be stated without naming which $\alpha$ it used. A bare $\sin^2\theta_W=0.23$ is not a value; it is a rounding of three values.
+**The lesson for the corpus.** Every number of this sector must carry its scheme, which is why the parameter table of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html) has a scheme column and why $\delta r$ of [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) could not be stated without naming which $\alpha$ it used. A bare $\sin^2\theta_W=0.23$ is not a value; it is a rounding of three values.
 
 ## The $Z$ Pole
 

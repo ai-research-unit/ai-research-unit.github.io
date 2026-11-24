@@ -22,7 +22,7 @@ So the minimal sector breaks the symmetry correctly, leaves twelve real scalars,
 
 **Not established.** The third field's potential is not under control. The corpus cannot derive the scalar content: the scalar sector is the one place in the frame with no algebraic guidance at all.
 
-**Where the rest is.** The six coloured states this sector creates are [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html), which owns their mass relation, the $K_L\to\mu e$ bound and the diquark fork. The mass each eaten component produces is [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html), §*The Two Massive Neutrals*, and the chain itself is [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html).
+**Where the rest is.** The six coloured states this sector creates are [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html), which owns their mass relation, the $K_L\to\mu e$ bound and the diquark fork. The mass each eaten component produces is [The Neutral Sector of the Four Colours Left–Right Model](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html), §*The Two Massive Neutrals*, and the chain itself is [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html).
 
 ## The Scalar and the Centre
 
@@ -46,7 +46,7 @@ So the minimal sector breaks the symmetry correctly, leaves twelve real scalars,
 
 **The factor of two.** It is the reality of a complex scalar: a complex field carries two real degrees of freedom. The $(\mathbf4,\mathbf1,\mathbf2)$ is complex in the $\mathrm{SU}(4)$ index and complex in the $\mathrm{SU}(2)_R$ index, so it holds eight complex components and sixteen real numbers, and that sixteen is the number *The Eaten Count, Which Is Exact* spends.
 
-**The expensive one.** That is why it is the expensive one. Fifteen is the adjoint of $\mathrm{SU}(4)$, so $\Sigma$ carries a coloured octet, a coloured triplet and antitriplet, and a singlet — and the coloured pieces can mediate proton decay, which is the fork of [the leptoquark article](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html), §*The Diquark Fork: Dimension Six*.
+**The expensive one.** That is why it is the expensive one. Fifteen is the adjoint of $\mathrm{SU}(4)$, so $\Sigma$ carries a coloured octet, a coloured triplet and antitriplet, and a singlet. The coloured pieces do **not** carry a diquark coupling: their $B-L$ is $\pm\tfrac43$ and a $qq$ pair's is $+\tfrac23$, so $qq\Sigma$ violates the gauged $\mathrm{U}(1)_{B-L}$. The dimension-six proton-decay operator needs a $(\mathbf6,\mathbf1,\mathbf1)$, which this list does not contain — [the leptoquark article](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html), §*The Diquark Fork: Which Field Would Supply It*.
 
 ## The Eaten Count, Which Is Exact
 
@@ -64,7 +64,7 @@ So the minimal sector breaks the symmetry correctly, leaves twelve real scalars,
 
 **3.1 The first field's eight.** Six are the leptoquarks of [the leptoquark article](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The other two are the $W_R^{\pm}$: the $\Phi$ vacuum has a direction in its $R$-doublet, and rotating that direction is two real flat directions.
 
-**3.2 The second field's four.** The bidoublet's vacuum is $2\times2$ and its flat directions are the four broken generators of the electroweak pair — the $W^{\pm}$, the $Z$, and the $Z_R$. That the $Z_R$ is among them is the point most often missed: in the minimal model the $Z_R$ mass comes from the bidoublet through the mixing, not from a separate field, and the spectrum's $\tfrac58g^2v_R^2$ is the eigenvalue, not a separate breaking.
+**3.2 The second field's four.** The bidoublet's vacuum is $2\times2$ and its flat directions are the four broken generators of the electroweak pair — the $W^{\pm}$, the $Z$, and the $Z_R$. That the $Z_R$ is among them is the point most often missed, and the point needs care: the $Z_R$ is one eigenvalue of the neutral block, $\tfrac58g^2v_R^2$ at equal couplings, and it is not a separate breaking. Which multiplet's component supplies its Goldstone is the ledger's convention and not a statement about provenance — the chain says why, since in the minimal content one vev does both breakings — while the size is $v_R$'s and belongs to the $M_R$ row of the spectrum.
 
 ## What Survives, and the Two Neutrals
 
@@ -118,7 +118,7 @@ because the up-type and down-type masses are read off the two vevs of the same $
 
 **What follows for the sector.** The measured spectra are not proportional, so one matrix is one too few. The repair is a second matrix, and there are two ways to supply it.
 
-**Two repairs, two consequences.** A second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$ gives the down-type quarks and the charged leptons independent matrices, and it brings a second set of vevs and one more alignment to fix. The $(\mathbf{15},\mathbf2,\mathbf2)$ does the same job from the other side: its colour-singlet component is a bidoublet, and its colour-octet components generate the mass splittings that make the fermion spectrum non-degenerate — and it brings [the diquark fork](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html).
+**Two repairs, two consequences.** A second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$ gives the down-type quarks and the charged leptons independent matrices, and it brings a second set of vevs and one more alignment to fix. The $(\mathbf{15},\mathbf2,\mathbf2)$ does the same job from the other side: its colour-singlet component is a bidoublet, and its colour-octet components generate the mass splittings that make the fermion spectrum non-degenerate — and it brings no diquark coupling, because a diquark is a sextet and not a fifteen ([the fork](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html)).
 
 **The classical statement.** The literature states the proportionality as a per-generation triple of equalities at a unification scale. That phrasing is a boundary condition at a scale, and it is not repeated here. What this article takes from it is the part that survives without a scale: the triple is two-thirds successful, so the mismatch is not a flat contradiction but a near miss with one member failing outright, and a relation that nearly holds is a relation worth explaining. The values, and the running that reconciles one of the three, are in the coupling article.
 
@@ -130,7 +130,7 @@ because the up-type and down-type masses are read off the two vevs of the same $
 
 ## The Bidoublet and the $\rho$ Parameter
 
-**A measurable scalar.**
+**A measurable scalar.** The bidoublet is the first section's field but this section's physics: the four conditions below and the $\rho$ parameter are the second breaking's, and the two neutral survivors are specified there, in [The Neutral Sector of the Four Colours Left–Right Model](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html) and [The Mass Matrix of the Twenty-One](the-mass-matrix-of-the-twenty-one-gauge-bosons-four-blocks-one-mixing-and-the-nine-zeros.html).
 
 **12.1 Two vevs.** Write
 
@@ -150,7 +150,7 @@ Two vevs in one field is one too many for the electroweak sector: the Standard M
 |---|---|
 | alignment, $\kappa'\to0$ | a tuning, not a symmetry; radiative corrections re-introduce the deviation |
 | a triplet $(\mathbf1,\mathbf3,\mathbf1)$ and its mirror | restores custodial symmetry exactly, adds two fields and a hierarchy problem |
-| the $(\mathbf{15},\mathbf2,\mathbf2)$ taking a suitable vacuum | does the job, but its coloured components bring the diquark fork |
+| the $(\mathbf{15},\mathbf2,\mathbf2)$ taking a suitable vacuum | does the job; its coloured components do not bring the diquark fork, and a $(\mathbf6,\mathbf1,\mathbf1)$ would |
 
 **12.4 What the frame says.** It predicts $\rho=1$ only in the alignment limit, and the measured $\rho$ is $1.00038\pm0.00020$, so the alignment is a real constraint on the scalar sector: $\kappa\kappa'$ is bounded to be small. [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter.html) owns the details; this article records that the frame inherits the problem rather than solving it.
 

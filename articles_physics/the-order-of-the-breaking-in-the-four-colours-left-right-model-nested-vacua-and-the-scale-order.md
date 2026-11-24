@@ -48,7 +48,7 @@ $$
 \mathrm{Stab}_{\mathrm{SU}(2)_R}(\mathbb C\,e_{\uparrow})=\mathrm{U}(1)_R .
 $$
 
-A doublet has one line up to phase, so there is nothing to choose: any non-zero vacuum in the doublet breaks the factor to the same $\mathrm{U}(1)$.
+A doublet has one line up to phase, so there is nothing to choose: any non-zero vacuum in the doublet has the same $\mathrm{U}(1)_R$ as its *line* stabiliser. What no generator does is annihilate it. $T_{3R}$ gives $+\tfrac12$ on $v_R\,e_\uparrow$ and $B-L$ gives $-1$, so the kernel is the single combination $Y=T_{3R}+\tfrac12(B-L)$ and the step is $4\to1$ on generators, not $3\to1$. The line count and the generator count are both right and they count different objects; [The Breaking Chain of the Four Colours Left–Right Model](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html), §*The Flag, Which Is the Chain*, carries the reconciliation.
 
 **1.3 The left-doublet line.** The third vacuum is a line in the $\mathrm{SU}(2)_L$ doublet carried by the bidoublet $H=(\mathbf1,\mathbf2,\mathbf2)$:
 

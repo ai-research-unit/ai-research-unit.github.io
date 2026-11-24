@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as an algebra, to the algebra $M_2(\mathbb{C})$ of $2 \times 2$ complex matrices (article 5). This is a structural fact: two algebras that are isomorphic have the same abstract structure, and any statement about one translates into a statement about the other.
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as an algebra, to the algebra $M_2(\mathbb{C})$ of $2 \times 2$ complex matrices ([Matrix Representations Conventions](matrix-representations-conventions.html)). This is a structural fact: two algebras that are isomorphic have the same abstract structure, and any statement about one translates into a statement about the other.
 
 $M_2(\mathbb{C})$ is also, mathematically, the algebra of observables of a two-state quantum system. Its Hermitian elements are the observables of a spin-1/2 particle, and the state space on which it acts is the two-dimensional complex vector space $\mathbb{C}^2$.
 
@@ -81,7 +81,7 @@ The group of spin rotations is $SU(2)$, which acts on the spinor space $\mathbb{
 
 ### The Isomorphism
 
-The biquaternion algebra is isomorphic to $M_2(\mathbb{C})$ (article 5):
+The biquaternion algebra is isomorphic to $M_2(\mathbb{C})$, as [Matrix Representations Conventions](matrix-representations-conventions.html) sets out:
 
 $$
 \boxed{\;\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})\;}.
@@ -170,7 +170,7 @@ Properties. Each such $\tilde\Pi_{\mathrm{id},1,2}$ satisfies:
 3. Normalised: $\langle\tilde\Pi_{\mathrm{id},1,2},e_t\rangle_{*} = \tfrac12\langle e_t\rangle$ (the reduction reads this as $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},1,2}) = 1$).
 4. Rank one: in the matrix representation, $\tilde\Pi_{\mathrm{id},1,2}$ maps to a rank-1 projection matrix.
 
-Proof. The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_t \pm \tilde{Ζ} i)$ with $\tilde{Ζ}$ a root of $-1$. The idempotents in $\mathbb{B}_{\Psi}$ correspond to the "real roots" $\tilde{Ζ} = \pm \vec u$ with $\vec u$ a unit pure real quaternion. The Hermitian, idempotent and normalisation properties are direct computations (article 3).
+Proof. The idempotent form follows from the standard classification of the algebra's idempotents: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_t \pm \tilde{Ζ} i)$ with $\tilde{Ζ}$ a root of $-1$. The idempotents in $\mathbb{B}_{\Psi}$ correspond to the "real roots" $\tilde{Ζ} = \pm \vec u$ with $\vec u$ a unit pure real quaternion. The Hermitian, idempotent and normalisation properties are direct computations.
 
 Identification with spin projectors. Under the isomorphism, $\tilde\Pi_{\mathrm{id},1,2}$ maps to
 

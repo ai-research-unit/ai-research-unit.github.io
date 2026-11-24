@@ -149,6 +149,8 @@ The settling object is a single functional, and it has four requirements, each o
 3. **Its matter part produces a source that is not traceless.** The carrier for such a source is the frame exhibited above; what the functional must still supply is the dynamics that fixes it.
 4. **It carries a boundary term** that makes the variational principle well posed on a region with a boundary.
 
+**A third route, recorded and not taken.** The diagnosis above is that the algebra has no derivative. The one external programme that attacks the diagnosis directly is the calculus of Jordan differential forms. It keeps the five relations of the exterior algebra — linearity, the Leibniz rule, commutativity with the elements, and antisymmetry of the product of forms — and replaces the sixth, which is implicit in the commutative case and is associativity, by the Jordan relation. The construction is stated and its properties derived in the source cited here, and it has not been carried to a bosonic action; its authors defer the field theory. It therefore settles nothing, and it is recorded for one reason. It locates the missing derivative in the same place this article does, and it says the derivative can be had by changing the algebra of forms rather than the algebra of coordinates.
+
 A no-go would be equally valuable and is easier to state: a proof that no functional of the frame alone, built from $\mathrm{Sc}$ and the Gram determinant, can produce a source with a traceless part would close the second half of the problem in the negative. The trace collapse of the natural packaging is a strong enough constraint that such a proof may be within reach, and searching for it is cheaper than searching for the action.
 
 ## Summary

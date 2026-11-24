@@ -122,7 +122,7 @@ The factor of $c$ is the corpus's rule for a rate against a length, the same rul
 
 ### On the mass shell, and off it
 
-The Wigner element is defined off the mass shell, and the physical states populate a shell whose width is the quantum potential. The transform of article 4 integrates over all $\vec p$, so $\tilde W_\Xi$ has support wherever the overlap of the two field values has support — in general a neighbourhood of the shell and not the shell itself. The shell is not the classical one: the polar-form article's modification is
+The Wigner element is defined off the mass shell, and the physical states populate a shell whose width is the quantum potential. The transform of [The Wigner Function in Biquaternionic Form](the-wigner-function-in-biquaternionic-form.html) integrates over all $\vec p$, so $\tilde W_\Xi$ has support wherever the overlap of the two field values has support — in general a neighbourhood of the shell and not the shell itself. The shell is not the classical one: the polar-form article's modification is
 
 $$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2m\,Q_{\mathrm{qnt}},

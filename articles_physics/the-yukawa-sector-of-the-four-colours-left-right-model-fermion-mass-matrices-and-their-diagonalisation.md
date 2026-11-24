@@ -32,7 +32,7 @@ The reason, in one line. A Dirac mass couples a left-handed field to a right-han
 
 The same obstruction in the rotor's own terms, and what a mass term would have to be. A mass term is the scalar part of a bilinear, $m\,\mathrm{Sc}(\bar\Xi_1\Xi_2)$, and it is invariant under the rotor — $\mathrm{SU}(2)=\mathrm{Spin}(3)$ — only when the bilinear it takes the scalar part of is central. The rotors act by left multiplication, so a bilinear of two fields moves as $\mathrm{Sc}(\tilde U\Xi_1\Xi_2\tilde U^{-1})$ only if the two slots are tied the way the Hermitian pair $\mathrm{Sd}$ ties them; left multiplication alone carries one slot and leaves the other free, and the scalar part of a product with one free slot is not invariant. That is why the mass term is forbidden by the algebra and not merely by the accounting of charges: the object that would make it invariant is a pair of slots with a declared relation, and the corpus's fermion carries one slot. The charges then do the bookkeeping: a term of this kind can only be written between two fields whose quantum numbers already cancel, and in the model none of the pairs does, so the absence is visible twice over — once as an algebra statement and once as a table.
 
-Written out. A term $m\,\bar Q_Ld_R$ is not a singlet, and the arithmetic shows it. $\bar Q_L$ carries the negative of the doublet's hypercharge, $-1/6$, and $d_R$ carries $-1/3$; the product carries $-1/6-1/3=-1/2\neq0$, which is exactly the scalar's hypercharge with the sign reversed. The same computation fails for every pair of fields in article 1's table.
+Written out. A term $m\,\bar Q_Ld_R$ is not a singlet, and the arithmetic shows it. $\bar Q_L$ carries the negative of the doublet's hypercharge, $-1/6$, and $d_R$ carries $-1/3$; the product carries $-1/6-1/3=-1/2\neq0$, which is exactly the scalar's hypercharge with the sign reversed. The same computation fails for every pair of fields in the table of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html).
 
 **The count of failures is the count of successes.** There is one forbidden mass term per fermion type, and one Yukawa matrix per term — three of each in the minimal model, the fourth pair only if a right-handed neutrino exists. The correspondence is one to one:
 
@@ -199,7 +199,7 @@ $$
 9-5=4 :
 $$
 
-three angles and one phase. The subtraction is the same $2N-1=5$ that article 1 records, and it is a property of the field content rather than of the values.
+three angles and one phase. The subtraction is the same $2N-1=5$ recorded there, and it is a property of the field content rather than of the values.
 
 The standard parametrisation. The four are conventionally written as
 
@@ -293,7 +293,7 @@ The arithmetic. Each Yukawa matrix is $3\times3$ complex, hence eighteen real pa
 
 The trivial parts, named. For the quarks, the simultaneous phase rotation of $Q_L$, $u_R$ and $d_R$ leaves both matrices unchanged: one parameter, so the orbit is $27-1=26$ and $36-26=10$. For the leptons, $Y_{e}$ alone leaves $U(1)^{3}$ of the $U(3)_L\times U(3)_e$ — the three diagonal phase rotations in the basis where $Y_{e}$ is diagonal, which fix it — so the orbit is $18-3=15$ and $18-15=3$. The asymmetry with the quark row is the whole content of the two rows: with one matrix the residual symmetry of the matrix itself is what is left over, and with two matrices only the common phase survives, because the diagonal-phase freedom that fixes $Y_{u}$ does not fix $Y_{d}$.
 
-The ten and the three. The ten are six quark masses, three angles and one phase. The three are the charged-lepton masses. The sum is $10+3=13$, which is the flavour block of article 1's nineteen.
+The ten and the three. The ten are six quark masses, three angles and one phase. The three are the charged-lepton masses. The sum is $10+3=13$, which is the flavour block of that table's nineteen.
 
 The count as a function of $N_g$, because the $3$ is an input. The table's $3\times3$ is not derived here. For general $N_g$ the quark sector gives $N_g^{2}+1$ — $4N_g^{2}$ real parameters in two matrices against $3N_g^{2}-1$ removable ones — and the lepton sector $N_g$, in one matrix against $2N_g^{2}-N_g$ removable. So the flavour block is
 
@@ -385,7 +385,7 @@ What a deviation would mean. A measured $g_{hf\bar f}$ different from $m_f/v$ wo
 
 ## Neutrinos: the Same Sector with Two New Questions
 
-The two questions. A neutrino mass requires either a right-handed singlet, and then the same Yukawa structure applies, or a Majorana mass term for the left doublet. The second is forbidden twice over: the symmetric pair $\xi_{\mathrm{neu},L}^{T}C\xi_{\mathrm{neu},L}$ carries hypercharge $-1$ — each $\xi_{\mathrm{neu},L}$ has $-\tfrac12$ in the convention $Y=Ϙ-T_3$ that article 1 uses — where a mass term needs $0$, so no gauge-invariant contraction exists, and it has dimension three, so it is not renormalisable either. A scalar triplet of hypercharge $+1$ would supply the missing charge — that is the type-II route — and the dimension-five operator below is the general low-energy statement, with the singlet and the fermion triplet integrated out.
+The two questions. A neutrino mass requires either a right-handed singlet, and then the same Yukawa structure applies, or a Majorana mass term for the left doublet. The second is forbidden twice over: the symmetric pair $\xi_{\mathrm{neu},L}^{T}C\xi_{\mathrm{neu},L}$ carries hypercharge $-1$ — each $\xi_{\mathrm{neu},L}$ has $-\tfrac12$ in the convention $Y=Ϙ-T_3$ that the content table uses — where a mass term needs $0$, so no gauge-invariant contraction exists, and it has dimension three, so it is not renormalisable either. A scalar triplet of hypercharge $+1$ would supply the missing charge — that is the type-II route — and the dimension-five operator below is the general low-energy statement, with the singlet and the fermion triplet integrated out.
 
 The Dirac route. Add $\xi_{\mathrm{neu},R}$, a singlet of all three groups. Then $Y_{\jmath}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
 
@@ -463,7 +463,7 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 | $M_H$ | $2.2300\times10^{-25}$ kg, the Higgs mass |
 | $\beta$, $N_c$ | $\sqrt{1-4m_f^{2}/M_H^{2}}$ and the colour multiplicity, in the width |
 | $g_{hf\bar f}$ | $m_f/v$, the Higgs coupling to the fermion |
-| $Q_L$, $u_R$, $d_R$, $L_L$, $e_R$, $\xi_{\mathrm{neu},R}$ | The quark and lepton multiplets, with the quantum numbers of article 1 |
+| $Q_L$, $u_R$, $d_R$, $L_L$, $e_R$, $\xi_{\mathrm{neu},R}$ | The quark and lepton multiplets, with the quantum numbers of that table |
 | $Ξ_{\mathrm{wfn}}$ | A generic fermion field, standing for any of the six |
 | $\mathcal{S}_{\mathrm{rep}}$, $\mathbb{C}^{N_g}$, $\mathcal F$ | The module and the multiplicity factor of the framework |
 | $N_g$ | The number of generations, three in the observed world |

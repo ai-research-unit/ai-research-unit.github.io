@@ -25,9 +25,9 @@ $$
 
 So the states are forced, unseen, and bounded from below by one flavour-changing decay.
 
-**What the article establishes.** That the six are forced by the gauged fourth colour and are the only coloured massive states in the theory; that $M_X\gtrsim4.0\times10^{-5}$ J from $K_L\to\mu e$; that proton decay does not bound the gauge sector, because the leading operator is dimension nine; and that the scalar sector's diquark coupling would bound them ten orders of magnitude harder, at the price of making them unreachable.
+**What the article establishes.** That the six are forced by the gauged fourth colour and are the only coloured massive states in the theory; that $M_X\gtrsim4.0\times10^{-5}$ J from $K_L\to\mu e$; that proton decay does not bound the gauge sector at the leptoquark scale, because three leptoquark vertices make the leading operator dimension nine; and that no field in the frame supplies a diquark coupling, because the fifteen's colour triplet carries the wrong $B-L$ — a $(\mathbf6,\mathbf1,\mathbf1)$ scalar would supply it, and the frame has none.
 
-**Not established.** The numerical bound is a coupling statement, and its coefficient is uncertain by a factor of a few. The states have not been seen. Which branch of the diquark fork the frame takes is not decided by the frame.
+**Not established.** The numerical bound is a coupling statement, and its coefficient is uncertain by a factor of a few. The states have not been seen. Whether the frame adds a $(\mathbf6,\mathbf1,\mathbf1)$ scalar is a choice and not a derivation; without one the dimension-six operator does not exist at all.
 
 **Where the rest is.** The fields that produce the six are [The Scalar Sector](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). The step that gives them their mass is [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). Their place in the full list is [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html), §*The Spectrum*.
 
@@ -93,7 +93,7 @@ Because it is a tree-level flavour-changing process in a neutral meson with no l
 
 **The mass relation.** It is written so that it stays a structure.
 
-**7.1 From the vacuum.** The breaking at the first threshold is done by the $(\mathbf 4,\mathbf 1,\mathbf 2)$ acquiring a value along its unit-line component. The six leptoquarks eat six of that field's eight real components and get
+**7.1 From the vacuum.** The breaking at the first threshold is done by the $(\mathbf 4,\mathbf 1,\mathbf 2)$ acquiring a value along its unit-line component. The six leptoquarks eat six of that field's sixteen real components and get
 
 $$
 M_X^2=\tfrac12\,g_4^2\,v_R^2 ,
@@ -119,50 +119,62 @@ The $\sqrt2$ is the prediction, and it is the group's: half against a quarter, a
 
 **8.1 A third per vertex.** A leptoquark converts one quark into one lepton, so $\Delta B=\pm\tfrac13$. A proton has $B=1$ and a positron and a pion together have $B=0$, so destroying the proton needs three leptoquark vertices.
 
-**8.2 Dimension nine.** With three fermion bilinears and three leptoquark propagators the operator is
+**8.2 Dimension nine.** Each vertex converts one quark into one lepton, so the proton's three quarks need three vertices — and because no diquark coupling exists, the final state cannot be a lepton pair plus two quarks. It is three leptons. Six external fermions make dimension nine,
 
 $$
-\mathcal O_9\sim\frac{1}{M_X^{6}}\,(qqq)(q\ell),
+\mathcal O_9\sim\frac{1}{M_X^{5}}\,q^{3}\ell^{3},
 \qquad
-\Gamma\propto\frac{m_p^{11}}{M_X^{12}} .
+\Gamma\propto\frac{m_p^{11}}{M_X^{10}} .
 $$
 
-The suppression is $M_X^{-6}$ and not $M_X^{-2}$, and that is six powers of a scale that is already above $1.60\times10^{-5}$ J. The rate is unobservably small, and proton decay does not constrain the gauge sector.
+The suppression is $M_X^{-10}$ against the dimension-six $M_X^{-4}$: six extra powers, and the six are counted on the rate and not on the amplitude.
 
-**8.3 The scalar sector.** The statement above holds for the gauge sector alone. If the scalar sector contains a colour triplet that couples to two quarks — a diquark coupling — then a single scalar exchange gives a dimension-six operator and the bound is ten orders of magnitude stronger; *The Diquark Fork: Dimension Six* is that fork.
+**What that does and does not settle.** It settles the channel: the two-body mode $p\to e^{+}\pi^{0}$ has no gauge contribution at any order, because its final state is two quarks and a lepton and nothing but a diquark can close it. It does not settle the size against experiment. Where the three-lepton mode lands against the limit on $p\to e^{+}e^{+}e^{-}$ depends on the operator's dimensionless coefficient and on that limit, and this article computes neither: the coefficient is a loop matching and the limit is a data entry, so the comparison belongs to [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html) and to the data register. The claim here is the narrow one, that the gauge sector is not bounded by the channel usually quoted.
 
-**8.4 Which bound is stronger.** On $M_X$ the proton-decay bound, where it applies, beats $K_L\to\mu e$ by about ten orders of magnitude — $1.60\times10^{5}$ J against $4.0\times10^{-5}\ \mathrm{J}$. So the ordering is never in doubt; what is in doubt is whether the stronger bound applies at all, and that is a question about the scalar content rather than about the gauge sector. Quoting the proton bound as the leptoquark bound assumes diquark couplings, which is exactly the assumption *The Diquark Fork: Dimension Six* shows to be expensive.
+**8.3 The scalar sector.** The statement above holds for the gauge sector alone. A colour antitriplet that couples to two quarks — a diquark — gives a dimension-six operator from a single exchange, and the bound is then ten orders of magnitude stronger. The fifteen's triplets are not that field: they carry $B-L=\pm\tfrac43$ and a $qq$ pair carries $+\tfrac23$. *The Diquark Fork: Which Field Would Supply It* states what would be.
 
-## The Diquark Fork: Dimension Six
+**8.4 Which bound is stronger.** On $M_X$ the proton-decay bound, where it applies, beats $K_L\to\mu e$ by about ten orders of magnitude — $1.60\times10^{5}$ J against $4.0\times10^{-5}\ \mathrm{J}$. So the ordering is never in doubt; what is in doubt is whether the stronger bound applies at all, and that is a question about the scalar content rather than about the gauge sector. Quoting the proton bound as the leptoquark bound assumes a diquark coupling, which is exactly the assumption *The Diquark Fork: Which Field Would Supply It* shows to require a field the frame does not have.
 
-**The fork.** The gauge sector's safety depends on it, and this section gives its mechanism.
+## The Diquark Fork: Which Field Would Supply It
 
-**11.1 The coloured components.** $\Sigma$ in the $(\mathbf{15},\mathbf2,\mathbf2)$ decomposes under $\mathrm{SU}(3)$ as
+**The fork, and the field it turns on.** A diquark coupling would give a dimension-six proton-decay operator and a bound ten orders of magnitude above the leptoquark one. Whether the frame has one is a question about the multiplet list, and the answer is no.
+
+**11.1 The fifteen's colour branching.** $\Sigma$ in the $(\mathbf{15},\mathbf2,\mathbf2)$ decomposes under $\mathrm{SU}(3)$ as
 
 $$
 \mathbf{15}\to\mathbf8\oplus\mathbf3\oplus\bar{\mathbf3}\oplus\mathbf1 .
 $$
 
-The $\mathbf3$ and $\bar{\mathbf3}$ are colour triplets with lepton number, so they can couple to $qq$ and to $q\ell$ at once — a diquark and a leptoquark coupling in the same field.
+The triplet and the antitriplet carry $B-L=\pm\tfrac43$ — the same values the gauge leptoquarks carry, because they are the same six directions of the fifteen, read as a scalar rather than as a generator.
 
-**11.2 What that does.** A single $\Sigma$ exchange then gives a dimension-six operator $(qq)(q\ell)$:
+**11.2 Why that forbids the coupling.** A $qq$ pair carries $B-L=+\tfrac23$ in all three charge combinations, $uu$, $ud$ and $dd$, because $\tfrac13+\tfrac13=\tfrac23$ whatever the flavours. The fifteen's antitriplet carries $-\tfrac43$. A coupling $qq\,\Sigma$ would then carry $\tfrac23-\tfrac43=-\tfrac23\ne0$ and violate the gauged $\mathrm{U}(1)_{B-L}$, so the operator is forbidden by the algebra and not by a missing rule.
+
+The tensor product says the same thing without a charge argument. A $qq$ bilinear lives in
 
 $$
-\mathcal O_6\sim\frac{\digamma_{\mathrm{yuk}}^2}{M_\Sigma^{2}}\,(qq)(q\ell),
-\qquad
-\tau(p\to e^{+}\pi^{0})\ \propto\ \frac{M_\Sigma^{4}}{\digamma_{\mathrm{yuk}}^{2}} .
+\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10},
 $$
 
-The measured limit $\tau>2.4\times10^{34}$ yr then requires $M_\Sigma\gtrsim1.60\times10^{5}$ J for order-one couplings — four extra powers of the scale, and ten orders of magnitude above the leptoquark bound.
+and the fifteen is not in that product: $\mathbf4\otimes\bar{\mathbf4}=\mathbf1\oplus\mathbf{15}$ is the channel that produces the fifteen, and it is the $q\bar q$ channel. So a diquark scalar is a **sextet** or a decuplet and never an adjoint.
 
-**11.3 The two branches.** The choice is stated, and the model cannot make it.
+**11.3 What would supply it.** A $(\mathbf6,\mathbf1,\mathbf1)$ scalar carries
 
-| branch | consequence |
-|---|---|
-| **no diquark coupling** (a discrete symmetry forbids $qq\Sigma$) | proton is stable, $M_\Sigma$ can be at the leptoquark scale, and the symmetry is unexplained |
-| **diquark coupling allowed** | $M_\Sigma\gtrsim1.60\times10^{5}$ J, the coloured scalars are unreachable, and the leptoquark prediction of *The Mass, and the $\sqrt2$ That a Coupling Ratio Multiplies* becomes empty |
+$$
+\mathbf6\to\bar{\mathbf3}_{\,2/3}\oplus\mathbf3_{-2/3},
+$$
 
-**11.4 The open question.** The first branch needs a symmetry nobody derives; the second makes the model's one sharp prediction unobservable. A frame that needs an unexplained discrete symmetry to survive, and loses its predictions when it does not have one, is a frame whose status rests on that symmetry.
+with the subscript now $B-L$. The antitriplet's $+\tfrac23$ is the $qq$ coupling and the triplet's $-\tfrac23$ is the $q\ell$ coupling, so one field supplies both and the dimension-six operator appears the moment it is added. That field, and not $\Sigma$, is the fork.
+
+**11.4 The two branches.**
+
+| branch | content | consequence |
+|---|---|---|
+| **no sextet** — the frame as written | $(\mathbf4,\mathbf1,\mathbf2)$, $(\mathbf1,\mathbf2,\mathbf2)$, $(\mathbf{15},\mathbf2,\mathbf2)$ | no dimension-six operator at all; $p\to e^{+}\pi^{0}$ absent; $M_X$ at the leptoquark scale; the dimension-nine three-lepton mode the only baryon violation |
+| **sextet added** | a $(\mathbf6,\mathbf1,\mathbf1)$, or the $(\mathbf6,\mathbf1,\mathbf1)$ component of a larger multiplet | $M_\Sigma\gtrsim1.60\times10^{5}$ J from $p\to e^{+}\pi^{0}$, and the coloured scalars unreachable |
+
+**11.5 What the earlier form of this section got wrong.** It read the fifteen's triplets as carrying the diquark coupling and concluded that the frame needed an unexplained discrete symmetry to forbid $qq\Sigma$. The algebra does not support that reading: the triplet's $B-L$ is $\pm\tfrac43$, the $qq$ pair's is $\tfrac23$, and the product $\mathbf4\otimes\mathbf4$ does not contain a fifteen. So the frame is safe from the dimension-six operator without a symmetry, and what it needs is the absence of one field rather than the presence of one rule.
+
+**11.6 What the correction costs.** It removes the model's sharpest tension and it removes its cheapest escape. The tension was that a frame with a diquark triplet needed a symmetry nobody derived; it is gone, because there is no triplet. The escape was that the fork could be closed by forbidding a coupling; it is gone too, because the fork is now a statement about content, and content is chosen. Two things survive: the dimension-nine mode is the frame's only baryon violation from the gauge sector, and a sextet would end the leptoquark prediction. The second is a prediction about a field nobody has proposed adding, which is a weaker statement than the one this section used to make.
 
 ## How Firm the Bound Is
 
@@ -194,10 +206,12 @@ The measured limit $\tau>2.4\times10^{34}$ yr then requires $M_\Sigma\gtrsim1.60
 | the only coloured massive states | colour is a stabiliser, so only $\mathfrak m$ | six |
 | the vertex quantum numbers | $B-L$ on the legs against the $X$'s own $B-L$ | $\pm\tfrac43$ both, conserved |
 | the mass relation | $\tfrac12g_4^2v_R^2$ against $\tfrac14g_R^2v_R^2$ | $M_X/M_{W_R}=\sqrt2\,g_4/g_R$ |
-| proton decay | three vertices per unit $B$ | dimension $9$, $M^{-6}$ |
-| diquark exchange | one vertex | dimension $6$, $M^{-2}$ |
-| the proton bound | $\tau\propto M_\Sigma^{4}$ | $M_\Sigma\gtrsim1.60\times10^{5}$ J |
-| the two bounds compared | $1.60\times10^{5}$ J against $4.0\times10^{-5}\ \mathrm{J}$ | about ten orders; the stronger one applies only with diquarks |
+| proton decay | three vertices per unit $B$ | dimension $9$, $M^{-10}$ on the rate |
+| diquark exchange | one vertex | dimension $6$, $M^{-4}$ on the rate |
+| the fifteen's antitriplet | $B-L=-\tfrac43$ against a $qq$ pair's $+\tfrac23$ | no diquark coupling |
+| the tensor product | $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ | a diquark is a sextet, never a fifteen |
+| the proton bound | $\tau\propto M_\Sigma^{4}$ | $M_\Sigma\gtrsim1.60\times10^{5}$ J, with a sextet |
+| the two bounds compared | $1.60\times10^{5}$ J against $4.0\times10^{-5}\ \mathrm{J}$ | about ten orders; the stronger one needs a field the frame lacks |
 
 ## Distinctions That Are Easy to Lose
 
@@ -205,11 +219,11 @@ A leptoquark vertex does not violate $B-L$: the $X$ carries $\pm\tfrac43$ and th
 
 The leptoquark bound is not a measurement; it is a floor, and its coefficient is uncertain by a factor of a few (*How Firm the Bound Is*).
 
-"Proton decay does not bind" does not mean "proton decay does not happen": $B$ is violated in thirds and the operators are there, they are simply dimension nine (*Proton Decay, and Why It Does Not Bite*).
+"Proton decay does not bind" does not mean "proton decay does not happen": $B$ is violated in thirds, the operators are there, and they are dimension nine — the channel to look for is $p\to e^{+}e^{+}e^{-}$ and not $p\to e^{+}\pi^{0}$ (*Proton Decay, and Why It Does Not Bite*).
 
 $M_X=\sqrt2M_{W_R}$ is not a group relation; it is the minimal vacuum's, and the $(\mathbf{15},\mathbf2,\mathbf2)$ moves it (*The Mass, and the $\sqrt2$ That a Coupling Ratio Multiplies*).
 
-The diquark fork is not a technicality: it decides whether the model is testable (*The Diquark Fork: Dimension Six*).
+The diquark fork is not a technicality: it decides whether the model is testable, and it is decided by the multiplet list and not by a symmetry (*The Diquark Fork: Which Field Would Supply It*).
 
 The six are not adjustable: their charge, their colour and their mass ratio are fixed, and only $v_R$ is free (*What the Bound Leaves Open*).
 
@@ -223,7 +237,7 @@ The six are not adjustable: their charge, their colour and their mass ratio are 
 
 **The mass relation.** $M_X=\sqrt2\,(g_4/g_R)\,M_{W_R}$; the $\sqrt2$ is the group's, and the coupling ratio multiplies it.
 
-**Proton decay.** Dimension nine from gauge exchange, therefore no proton-decay bound on the gauge sector; dimension six if the scalar sector has diquark couplings, therefore a bound of $1.60\times10^{5}$ J that would make the leptoquarks unseeable.
+**Proton decay.** Dimension nine from gauge exchange, therefore no sharp proton-decay bound on the gauge sector; dimension six only if a sextet scalar supplies a diquark coupling, therefore a bound of $1.60\times10^{5}$ J that would make the leptoquarks unseeable.
 
 **The verdict.** Forced, unseen, and evadable only by making the prediction empty.
 
@@ -233,16 +247,17 @@ The six are not adjustable: their charge, their colour and their mass ratio are 
 |---|---|
 | $\mathfrak m$ | the six generators mixing $\mathbb C e_t$ with the vector part, the leptoquark directions |
 | $X$ | a leptoquark, one of the six, $Q=\pm\tfrac23$, colour $\mathbf3$ or $\bar{\mathbf3}$ |
-| $\Sigma$ | the $(\mathbf{15},\mathbf2,\mathbf2)$, whose colour triplets carry the diquark coupling |
+| $\Sigma$ | the $(\mathbf{15},\mathbf2,\mathbf2)$, whose colour triplets carry $B-L=\pm\tfrac43$ and no diquark coupling |
 | $v_R$ | the colour-breaking vacuum expectation value |
 | $g_4,g_R$ | the $\mathrm{SU}(4)$ and $\mathrm{SU}(2)_R$ couplings |
-| $\mathcal O_9,\mathcal O_6$ | the dimension-nine and dimension-six $B$-violating operators |
+| $\mathcal O_9,\mathcal O_6$ | the dimension-nine gauge operator, and the dimension-six operator a sextet would give |
+| $(\mathbf6,\mathbf1,\mathbf1)$ | the scalar that would carry the diquark coupling, and that the frame does not have |
 | $\mathcal B(K_L\to\mu e)$ | the branching ratio whose null measurement supplies the bound |
 | $\digamma_{\mathrm{yuk}}$ | the Yukawa matrix of the scalar sector |
 
 ## Further Reading
 
-- [The Scalar Sector of the Four Colours Left–Right Model: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). The field whose eight real components produce the six, and the twelve scalars that survive.
+- [The Scalar Sector of the Four Colours Left–Right Model: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). The field whose sixteen real components produce the six, and the twelve scalars that survive.
 - [The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). The first step, which is the only step where a coloured boson gets a mass.
 - [Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). The six in the full list, and the neutral sector they do not touch.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The number the bound takes, its inputs and its spread.

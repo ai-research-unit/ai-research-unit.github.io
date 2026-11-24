@@ -59,7 +59,7 @@ $$
 
 The corpus writes its metric as $\delta_{\imath\jmath}$ with every coefficient $+1$, and a horizon is not a coefficient of that metric: it is a surface on which the imported geometry's lapse vanishes. So the lapse enters this article as an imported scalar — a number attached to each event by the geometry that the corpus imports — and the algebra carries only the local tangent structure at each point, which is the zero-divisor cone. [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html) states that division of labour and this article adopts it.
 
-Why the lapse and not the light speed. In a medium the local complex structure supplies the scale $c$ and Tolman's law ties the temperature to it. On a horizon the light speed is the vacuum's and it is constant; the scale that varies is the lapse, and Tolman's law ties the temperature to that instead. The two cases are the same law with different varying scales, which is why a reader who has understood article 11 can read this one directly.
+Why the lapse and not the light speed. In a medium the local complex structure supplies the scale $c$ and Tolman's law ties the temperature to it. On a horizon the light speed is the vacuum's and it is constant; the scale that varies is the lapse, and Tolman's law ties the temperature to that instead. The two cases are the same law with different varying scales, which is why a reader who has understood [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) can read this one directly.
 
 ## The Modular Flow on a Horizon
 
