@@ -1,4 +1,4 @@
-# __The AXF Matrices of the Twenty-One Generators: Fifteen for $\mathfrak{su}(4)$, Three for $\mathfrak{su}(2)_L$, Three for $\mathfrak{su}(2)_R$__
+# __Construction of the AXF Matrices of the Twenty-One Generators: Fifteen for $\mathfrak{su}(4)$, Three for $\mathfrak{su}(2)_L$, Three for $\mathfrak{su}(2)_R$__
 
 ## Introduction
 
@@ -492,6 +492,7 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 - [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [$M_2(\mathbb{C})$ Defining Representation](../articles_maths/m2c-defining-representation.html). The four-row and two-row frames.
 - [The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$](../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html). The fifteen in the operator basis, numbered $G_1$ to $G_{15}$.
 - [The Rotors of the Twenty-One Generators](the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). What each array does when exponentiated, and why no boost is in the group.
+- [The Commutation Table of the Twenty-One Generators](the-commutation-table-of-the-twenty-one-generators-441-entries-164-nonzero-and-six-rules.html). Every bracket of every array with every other, printed block by block, with the six rules that produce the table.
 - [Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). The grid, the neutral sector and the ledger of the spectrum.
 - [The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). The three breakings that turn the array labels into masses.
 - [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The declaration, the carrier, and why $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R=\exp L(\mathfrak k)\times\exp R(\mathfrak k)$.

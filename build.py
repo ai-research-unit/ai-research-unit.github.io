@@ -15,6 +15,10 @@ DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-uni
 # Old URLs kept alive after a rename: (deployed page, alias that copies it).
 # The pruner spares the aliases, and no sitemap lists them.
 LEGACY_COPIES = [
+    # The AXF construction article was retitled "Construction of ..."; the old URL
+    # serves the same page, whose content did not change.
+    ("articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-generators.html",
+     "articles_physics/the-axf-matrices-of-the-twenty-one-generators.html"),
     # The chain-and-spectrum and scalar-and-leptoquark articles were split in two.
     ("articles_physics/the-breaking-chain-one-flag-three-stabilisers-three-scales.html",
      "articles_physics/the-breaking-chain-and-the-boson-spectrum.html"),

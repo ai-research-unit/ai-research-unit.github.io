@@ -14,7 +14,7 @@
 
 **The result in one line.** Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.
 
-**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*. The same operators in another frame are *$M_4(\mathbb{C})$ Pauli Representation : Operators*. The abstract family is *Operators Acting on Two Sides*. The ambient endomorphisms are *The Endomorphisms of the Biquaternion Algebra*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian pair is Part V and is not treated here.
+**Boundaries.** The level above is *Matrix Representation of Operators on the Operators of the Biquaternion Algebra*, where the same sixteen products are used as the basis of the operator space and every operator on that space is a $16\times16$ array. The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*. The same operators in another frame are *$M_4(\mathbb{C})$ Pauli Representation : Operators*. The abstract family is *Operators Acting on Two Sides*. The ambient endomorphisms are *The Endomorphisms of the Biquaternion Algebra*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian pair is Part V and is not treated here.
 
 **Conventions.** The basis is
 $$

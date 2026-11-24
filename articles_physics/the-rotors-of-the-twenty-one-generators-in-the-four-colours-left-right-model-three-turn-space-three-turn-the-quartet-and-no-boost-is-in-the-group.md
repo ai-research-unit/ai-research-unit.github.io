@@ -66,7 +66,9 @@ $$
 $$
 a direct sum of real vector spaces of dimensions $\tfrac{n(n-1)}{2}$ and $\tfrac{n(n+1)}{2}-1$. At $n=4$ that is $6+9=15$.
 
-**The consequence for exponentials.** The six in $\mathfrak{so}(4)$ are real matrices. Their exponentials are real orthogonal matrices, so they act on the real quartet as rotations. The nine in $i\,\mathrm{Sym}_0$ are not real: their exponentials are complex, and a complex matrix carries the real quartet off itself.
+**Lemma.** Of the fifteen generators, exactly six have a real exponential, and they are the six of $\mathfrak{so}(4)$.
+
+**Proof.** A real matrix has a real exponential: the exponential series then has real terms. Conversely, if $\exp(\theta X)$ is real for every $\theta$, differentiating at $\theta=0$ gives $X=\frac{d}{d\theta}\exp(\theta X)\big|_{\theta=0}$ real. **So the real exponentials are exactly the real generators, six of them, and no generator outside $\mathfrak{so}(4)$ contributes one.** The other nine have complex exponentials, and a complex matrix carries the real quartet off itself.
 
 **The split is a grading and not a sum of algebras.** The bracket takes $\mathfrak{so}(4)$ to itself, $i\,\mathrm{Sym}_0$ to $\mathfrak{so}(4)$, and mixes them in pairs. The pair is a symmetric pair, and the symmetric space is $\mathrm{SU}(4)/\mathrm{SO}(4)$. The reader who reads the sum as two ideals has asserted that $i\,\mathrm{Sym}_0$ is closed under the bracket, which it is not.
 
@@ -108,11 +110,13 @@ The mixed band of the grid — six cells, three planes, one plane for each colou
 
 **The real generator of a mixed plane.** $A_{tx}=E_{tx}-E_{xt}$ is anti-Hermitian, real and traceless, so it is in $\mathfrak{su}(4)$. Its exponential is a rotation of the $t$–$x$ plane:
 $$
-\exp(\theta A_{tx})\,e_t=\cos\theta\,e_t+\sin\theta\,e_x,\qquad
+\exp(\theta A_{tx})\,e_t=\cos\theta\,e_t-\sin\theta\,e_x,\qquad
 \exp(\theta A_{tx})\,e_y=e_y,\qquad
 \exp(\theta A_{tx})\,e_z=e_z .
 $$
-It is real and orthogonal, so it is a rotor of the quartet. It is not a boost: it preserves the Euclidean form and not the Minkowski form.
+The sign is the one of $A_{xy}$ and not a second convention: $A_{tx}$ carries the index $t$ into the index $x$ with the same orientation that $A_{xy}$ carries $x$ into $y$, so both give the minus on the second vector. At $\theta=0.4$ the image of $e_t$ is $(0.9211,-0.3894,0,0)$.
+
+It is real and orthogonal, so it is a rotor of the quartet. It is not a boost: it preserves the Euclidean form and not the Minkowski form, and the boost of the same plane is the matrix with the plus, which is outside the algebra (*The Other Generator of the Same Plane*, below).
 
 **The other generator of the same plane.** The second cell of the plane is $iS_{tx}$ with $S_{tx}=E_{tx}+E_{xt}$, and it is in the algebra because $i$ times a real symmetric matrix is anti-Hermitian. The boost is the same matrix read with the other sign of the $i$:
 $$
@@ -141,7 +145,7 @@ $$
 $$
 For the boost, $\operatorname{tr}K_{tx}^{2}=+2$. The trace of the square is invariant under conjugation, $X\mapsto UXU^{-1}$, so no conjugate of a boost lands in the algebra either. This is the Killing-form argument in the smallest possible form: $\mathfrak{su}(4)$ has Killing inertia $(0,15)$ and $\mathfrak{so}(3,1)$ has $(3,3)$, and a subalgebra's form is the restriction of the ambient one.
 
-**Third, compactness.** $\mathrm{SU}(4)$ is compact, a closed subgroup of a compact group is compact, and $\mathrm{SO}^{+}(3,1)$ is not compact. A non-compact group cannot sit inside a compact one at any level: not as a subgroup, not as a subalgebra, not as the image of an exponential.
+**Third, compactness.** $\mathrm{SU}(4)$ is compact, a closed subgroup of a compact group is compact, and $\mathrm{SO}^{+}(3,1)$ is not compact. A non-compact group cannot sit inside a compact one at any level: not as a closed subgroup, not as a subalgebra, not as the image of an exponential.
 
 **What the algebra of the Lorentz group does do.** The six matrices
 $$
@@ -155,7 +159,7 @@ That is the sharpest available form of the answer. **The Lorentz algebra is pres
 
 The question names the roots, so the roots get a section. The count is the first correction and the exponential is the second.
 
-**The count.** $\mathfrak{su}(4)$ has rank three and twelve roots, not fifteen. Fifteen is the dimension, and $12+3=15$. The check computes the twelve as the nonzero eigenvalues of $\operatorname{ad}_{H}$ at a regular $H=i\operatorname{diag}(3,1,-1,-3)$: they are $\pm i,\pm2i,\pm3i$, each twice.
+**The count.** $\mathfrak{su}(4)$ has rank three and twelve roots, not fifteen. Fifteen is the dimension, and $12+3=15$. The check computes the twelve as the nonzero eigenvalues of $\operatorname{ad}_{H}$ at a regular $H=\tfrac i2\operatorname{diag}(3,1,-1,-3)$: they are $\pm i,\pm2i,\pm3i$, each twice. The half is what puts the roots at unit spacing: $\operatorname{ad}_{H}$ multiplies $E_{jk}$ by $\tfrac i2(\lambda_j-\lambda_k)$, and the differences of $(3,1,-1,-3)$ are $2,4,6$ and their negatives.
 
 **The roots are not in the algebra.** A root vector is $E_{jk}$ with $j\neq k$. It is traceless and it is not anti-Hermitian, so it is not in $\mathfrak{su}(4)$. It is in $\mathfrak{sl}(4,\mathbb{C})$, and in the split form $\mathfrak{sl}(4,\mathbb{R})$. The compact generators of the same plane are the two combinations $E_{jk}-E_{kj}$ and $i(E_{jk}+E_{kj})$, and those are the cells of the grid.
 
@@ -195,7 +199,7 @@ Six matrices, anti-Hermitian and traceless, independent, spanning the six-dimens
 $$
 \exp(\theta L_{e_x})\,e_t=\cos\theta\,e_t+\sin\theta\,e_x .
 $$
-At $\theta=0.7$ the coefficients are $0.7648$ and $0.6442$, that is $\cos0.7$ and $\sin0.7$. The time direction has moved into a colour direction. A rotor that does this is a rotation of the four-space and not of three-space, and the right factor alone does the same with the opposite sign.
+At $\theta=0.7$ the coefficients are $0.7648$ and $0.6442$, that is $\cos0.7$ and $\sin0.7$. The time direction has moved into a colour direction. A rotor that does this is a rotation of the four-space and not of three-space. The right factor alone does the same to $e_t$; the two differ only on the second plane each of them turns, $\{y,z\}$, where the right factor's angle carries the opposite sign.
 
 **The spatial rotors are the paired ones.** The two-sided action of the algebra is $X\mapsto uXu^{-1}$, which is left multiplication by $u$ and right multiplication by $u^{-1}$ together. That pairing fixes the time direction and turns the colour triple:
 $$
@@ -204,7 +208,7 @@ e_t\mapsto e_t,\qquad
 e_x\mapsto e_x,\qquad
 e_y\mapsto\cos2\theta\,e_y+\sin2\theta\,e_z .
 $$
-At $\theta=0.5$ the coefficients are $0.5403$ and $0.8415$, that is $\cos1$ and $\sin1$: the rotor turns space by twice its own angle, which is the corpus's half-angle statement read on the carrier. The spatial rotors are the pairs $(L_{u},R_{u^{-1}})$. That is the diagonal of $\mathrm{Spin}(4)$ in the convention $x\mapsto u_{1}xu_{2}^{-1}$, and it is not either factor and not their naive diagonal: the pair $(L_{u},R_{u})$, with equal parameters, sends $e_t$ to $u^{2}e_t=-e_t$ and does not fix the lepton line.
+At $\theta=0.5$ the coefficients are $0.5403$ and $0.8415$, that is $\cos1$ and $\sin1$: the rotor turns space by twice its own angle, which is the corpus's half-angle statement read on the carrier. The spatial rotors are the pairs $(L_{u},R_{u^{-1}})$. That is the diagonal of $\mathrm{Spin}(4)$ in the convention $x\mapsto u_{1}xu_{2}^{-1}$, and it is not either factor and not their naive diagonal: the pair $(L_{u},R_{u})$, with equal parameters, sends $e_t$ to $u^{2}e_t=\cos2\theta\,e_t+\sin2\theta\,e_x$, which leaves the lepton line only at $\theta=\pi/2$, and then reverses it rather than fixing it.
 
 **So the second claim has a true form and a false form.** True: $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$ are the left and right rotors, each a group of rotors of the carrier's four-space, and together they generate the spatial rotors through the paired action. False: either factor alone is a group of spatial rotors. The pair is what turns space.
 
@@ -244,7 +248,7 @@ Twenty-one entries and one row that is not a generator. The last row is the arti
 
 ## The Checks
 
-Fourteen recomputations on the coefficient frame, the quartet ordered $(t,x,y,z)$.
+Fifteen recomputations on the coefficient frame, the quartet ordered $(t,x,y,z)$.
 
 | check | result |
 |---|---|
@@ -255,11 +259,12 @@ Fourteen recomputations on the coefficient frame, the quartet ordered $(t,x,y,z)
 | the boost's exponential: preserves $\eta_{\mathrm{M}}$, unitary | yes, no |
 | boost eigenvalue moduli at rapidity $0.75$ | $0.4724$, $1$, $1$, $2.1170$ |
 | the rotation $\exp(\theta A_{xy})$: fixes $e_t$ and $e_z$, image of $e_x$ at $\theta=0.4$ | yes, $(0,0.9211,-0.3894,0)$ |
+| the rotation $\exp(\theta A_{tx})$: image of $e_t$ at $\theta=0.4$ | $(0.9211,-0.3894,0,0)$ |
 | the rotation is real, orthogonal, unitary; a generic unitary is not orthogonal | yes; largest imaginary entry $0.717$ |
 | the six matrices $\{A_{xy},A_{yz},A_{zx},S_{tx},S_{ty},S_{tz}\}$ close | $15/15$ brackets inside |
 | their traces of squares | $-2,-2,-2,+2,+2,+2$ |
 | root exponentials are shears: norm of $\exp(\theta E_{tx})e_x$ | $1.118$ at $\theta=0.5$, $2.236$ at $\theta=2$ |
-| roots of $\mathfrak{su}(4)$ at a regular $H$ | twelve, values $\pm i,\pm2i,\pm3i$ twice each |
+| roots of $\mathfrak{su}(4)$ at $H=\tfrac i2\operatorname{diag}(3,1,-1,-3)$ | twelve, values $\pm i,\pm2i,\pm3i$ twice each |
 | $\{L_{e_a}\}\cup\{R_{e_a}\}$: anti-Hermitian, traceless, independent, spanning $\mathfrak{so}(4)$ | $6/6$, rank $6$ |
 | all nine cross-commutators $[L_{e_a},R_{e_b}]$; the paired rotor's action on $e_y$ | zero; $\cos2\theta$, $\sin2\theta$ |
 
@@ -302,4 +307,4 @@ The roots are twelve, not fifteen, they are outside $\mathfrak{su}(4)$, and thei
 - R. Gilmore, *Lie Groups, Lie Algebras, and Some of Their Applications*, Wiley, 1974 — the exponential map, the compact and split real forms, and the inertia that separates them.
 - H. Georgi, *Lie Algebras in Particle Physics*, Benjamin Cummings, 1982 — the physicists' Hermitian generators, the $i$ in the exponential, and the $\mathrm{SU}(n)$ conventions.
 - J. F. Cornwell, *Group Theory in Physics*, Academic Press, 1984 — $\mathrm{SU}(4)$ and its identification with $\mathrm{Spin}(6)$.
-- The corpus: [The Two Casimirs of the Lorentz Algebra](the-two-casimirs-of-the-lorentz-algebra.html) for the two generator conventions and the signs each carries; [The Lorentz Group as Biquaternion Norm Automorphisms](the-lorentz-group-as-biquaternion-norm-automorphisms.html) for the Lorentz group as the automorphism group of the norm; [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html) for the cells and the planes used here; [The Four Colours Left–Right Model](the-four-colours-left-right-model.html) for the frame, the ladder and the copy theorem. [The AXF Matrices of the Twenty-One Generators](the-axf-matrices-of-the-twenty-one-generators.html) for the twenty-one arrays printed one apiece and separated by algebra, the fifteen of $\mathfrak{su}(4)$ and the three plus three of the weak factors.
+- The corpus: [The Two Casimirs of the Lorentz Algebra](the-two-casimirs-of-the-lorentz-algebra.html) for the two generator conventions and the signs each carries; [The Lorentz Group as Biquaternion Norm Automorphisms](the-lorentz-group-as-biquaternion-norm-automorphisms.html) for the Lorentz group as the automorphism group of the norm; [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html) for the cells and the planes used here; [The Four Colours Left–Right Model](the-four-colours-left-right-model.html) for the frame, the ladder and the copy theorem. [Construction of the AXF Matrices of the Twenty-One Generators](construction-of-the-axf-matrices-of-the-twenty-one-generators.html) for the twenty-one arrays printed one apiece and separated by algebra, the fifteen of $\mathfrak{su}(4)$ and the three plus three of the weak factors.

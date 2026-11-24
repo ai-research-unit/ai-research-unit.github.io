@@ -565,7 +565,7 @@ As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger co
 
 ## Further Reading
 
-- [Worked Examples of Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-polar-decomposition-with-eigenbasis-of-split-complex-numbers.md), for the eigenbasis, the idempotents and the spinors of the same eight cases.
+- [Worked Examples of Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-polar-decomposition-with-eigenbasis-of-split-complex-numbers.html), for the eigenbasis, the idempotents and the spinors of the same eight cases.
 - [Polar Decomposition of Split-Complex Numbers](polar-decomposition-of-split-complex-numbers.html), for the decomposition, existence, uniqueness and the component sign.
 - [Split-Complex Elementary Functions](split-complex-elementary-functions.html), for the exponential, the logarithm and the future cone.
 - [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), for the algebraic modulus–unit form.

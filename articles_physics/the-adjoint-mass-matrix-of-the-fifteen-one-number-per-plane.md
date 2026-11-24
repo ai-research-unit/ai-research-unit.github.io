@@ -15,7 +15,7 @@ $$
 M^{2}=\operatorname{diag}\bigl(\underbrace{32v^{2},\dots,32v^{2}}_{6},\underbrace{0,\dots,0}_{9}\bigr).
 $$
 
-**The six are the leptoquark planes and the nine are colour plus the corner.** The nine are not "small": they are exactly zero, they are closed under the bracket, and they are the algebra that the first breaking leaves standing. **The article computes the matrix entry by entry, says why six and not nine, checks that the corpus's two bases give the same masses, and separates one artefact that a recomputation is likely to produce.** It does not compute the second breaking's mixing and it does not fix a coupling.
+**The six are the leptoquark planes and the nine are colour plus the corner.** A plane here is one array: the three geometric pairs $\{t,a\}$ each carry a real array $A_{ta}$ and an imaginary one $iS_{ta}$, so three pairs make the six. The nine are not "small": they are exactly zero, they are closed under the bracket, and they are the algebra that the first breaking leaves standing. **The article computes the matrix entry by entry, says why six and not nine, checks that the corpus's two bases give the same masses, and separates one artefact that a recomputation is likely to produce.** It does not compute the second breaking's mixing and it does not fix a coupling.
 
 **The whole content is one lemma.** The commutator of a plane array with a diagonal is the other plane array of the same pair, times the difference of two eigenvalues. **Everything below is that sentence applied six times.**
 
@@ -167,7 +167,7 @@ Sixteen recomputations, at $\operatorname{tr}$ in the fundamental, quartet order
 
 ## Further Reading
 
-- [The AXF Matrices of the Twenty-One Generators](the-axf-matrices-of-the-twenty-one-generators.html). The twenty-one arrays, the three-step construction, and the property table this article's basis is taken from.
+- [Construction of the AXF Matrices of the Twenty-One Generators](construction-of-the-axf-matrices-of-the-twenty-one-generators.html). The twenty-one arrays, the three-step construction, and the property table this article's basis is taken from.
 - [Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices](../articles_internal/structures/structure-SU4-basis-construction.html). The pair lemma, the rank-one blocks, the maths-base display, and the theorem that one plane, eigenline and diagonal are one condition.
 - [The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). What happens after this matrix: the second and third breaking, the mixing, and the scales.
 - [Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). Which boson sits on each array, and the full spectrum with colour and charge.

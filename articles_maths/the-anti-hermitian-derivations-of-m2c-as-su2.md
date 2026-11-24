@@ -454,8 +454,8 @@ The three rotors are the phase mixing $e^{\theta G_1}$, the real rotation $e^{\t
 
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $\mathfrak{su}(2)$, the adjoint representation and the inner automorphisms.
 - Roger A. Horn and Charles R. Johnson, *Topics in Matrix Analysis* (Cambridge University Press, 1991), for the Kronecker product and its eigenvalues.
-- [Automorphisms and Derivations of Algebras](automorphisms-and-derivations-of-algebras.md), for the normalization $D_\mu=\tfrac12\mathrm{ad}_{\vec e_\mu}$ and the bracket $[D_1,D_2]=D_3$.
-- [Matrix Representations and Conventions](matrix-representations-conventions.md), for the axis-free matrices $\ell_k$ and $r_k$ and the rule on the Pauli matrices.
+- [Automorphisms and Derivations of Algebras](automorphisms-and-derivations-of-algebras.html), for the normalization $D_\mu=\tfrac12\mathrm{ad}_{\vec e_\mu}$ and the bracket $[D_1,D_2]=D_3$.
+- [Matrix Representations and Conventions](matrix-representations-conventions.html), for the axis-free matrices $\ell_k$ and $r_k$ and the rule on the Pauli matrices.
 - [The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$](the-anti-hermitian-derivations-of-the-biquaternion-algebra-as-su2.html), for the same three arrays in the coefficient frame.
 - [The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$](the-anti-hermitian-derivations-of-m4c-as-su4.html), for the fifteen at the next order, built from the same images.
 - [The Exponential and the Lie Group Structure of $\mathrm{GL}_2(\mathbb{C})$](the-exponential-and-the-lie-group-structure-of-gl2c.html), for the exponential of the matrix algebra.

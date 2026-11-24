@@ -671,10 +671,11 @@ Each generator gives the derivation $[K,\cdot]$, of array $K\otimes\mathrm{I}_4-
 
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $\mathfrak{su}(n)$, the Cartan and the adjoint representation.
 - Roger A. Horn and Charles R. Johnson, *Topics in Matrix Analysis* (Cambridge University Press, 1991), for the Kronecker product, its eigenvalues and the commutator equation.
-- [Matrix Representations and Conventions](matrix-representations-conventions.md), for the axis-free matrices the generators are built from, and *Why AXF Matrices instead of Pauli and Gamma Matrices* for the rule the article follows.
-- [Automorphisms and Derivations of Algebras](automorphisms-and-derivations-of-algebras.md), for the normalization $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$ and the bracket $[D_1,D_2]=D_3$.
+- [Matrix Representations and Conventions](matrix-representations-conventions.html), for the axis-free matrices the generators are built from, and *Why AXF Matrices instead of Pauli and Gamma Matrices* for the rule the article follows.
+- [Automorphisms and Derivations of Algebras](automorphisms-and-derivations-of-algebras.html), for the normalization $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$ and the bracket $[D_1,D_2]=D_3$.
 - [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the same six in the Peirce frame.
 - [The Anti-Hermitian Derivations of $M_2(\mathbb{C})$ as $\mathfrak{su}(2)$](the-anti-hermitian-derivations-of-m2c-as-su2.html), for the same construction at order two, with three generators.
 - [The Anti-Hermitian Derivations of the Operators of the Biquaternion Algebra as $\mathfrak{su}(4)$](the-anti-hermitian-derivations-of-the-operators-of-the-biquaternion-algebra-as-su4.html), for the same fifteen generators in the operator basis of the algebra.
+- [Matrix Representation of Operators on the Operators of the Biquaternion Algebra](matrix-representation-of-operators-on-the-operators-of-the-biquaternion-algebra.html), for the fifteen as arrays of order sixteen, with the Kronecker form of the derivation and the re-reading of every proposition of this article one level up.
 - [The Exponential and the Lie Group of $M_4(\mathbb{C})$](the-exponential-and-the-lie-group-of-m4c.html), for the group behind the rotors.
-- [The AXF Matrices of the Twenty-One Generators](../articles_physics/the-axf-matrices-of-the-twenty-one-generators.html), for the plane basis of the same fifteen, printed there beside the twenty-one generators.
+- [Construction of the AXF Matrices of the Twenty-One Generators](../articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-generators.html), for the plane basis of the same fifteen, printed there beside the twenty-one generators.
