@@ -52,11 +52,17 @@ $$
 T_k:=\mathsf{M}_2(\vec e_k),\qquad G_k:=\tfrac12 T_k,\qquad k=1,2,3,
 $$
 
-with $1,2,3$ standing for $x,y,z$. The three generators are
+with $1,2,3$ standing for $x,y,z$. The three generators are, one to a display,
 
 $$
-G_1=\begin{pmatrix}0&-\tfrac{i}{2}\\-\tfrac{i}{2}&0\end{pmatrix},\qquad
-G_2=\begin{pmatrix}0&-\tfrac12\\ \tfrac12&0\end{pmatrix},\qquad
+G_1=\begin{pmatrix}0&-\tfrac{i}{2}\\-\tfrac{i}{2}&0\end{pmatrix}
+$$
+
+$$
+G_2=\begin{pmatrix}0&-\tfrac12\\ \tfrac12&0\end{pmatrix}
+$$
+
+$$
 G_3=\begin{pmatrix}-\tfrac{i}{2}&0\\0&\tfrac{i}{2}\end{pmatrix}.
 $$
 
