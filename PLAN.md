@@ -287,3 +287,34 @@ Usually you will prepare the instruction, containing the general rules and the r
 Make sure the sub agents read the introduction and conventions (maths or physics depending the subject), and perhaps a few related articles to understand the template.
 
 After that the author will launch the sub agents, because the setup seems to limit some memory capacities when sub agents are launched automatically by an agent. In any case, 15 sub agents is the maximum the setup can do.
+
+
+
+
+
+
+
+
+
+
+
+**Result: yes, there is one real contradiction, and the "21 common matrices" claim is half false.** The 15 are standard; the 6 are not.
+
+**What the external papers print.** None prints 21 matrices. Chamseddine (1304.8050) writes the connection with $\sigma^m$ on the doublet index and $(\lambda^m)^J_I$ on the quartet index, two separate factors, and says the fifteen $\lambda^m$ are traceless and generate $SU(4)$. Chamseddine (1507.08161) prints $\lambda_{15}=\mathrm{diag}(3,-1,-1,-1)/\sqrt6$. Barbieri, Feldmann and Elias print $T_{15}=\mathrm{diag}(1,1,1,-3)/\sqrt{24}$. Dent prints only vacuum directions. Nobody prints the fifteen, because they are textbook.
+
+**What the corpus prints.** I checked the arrays numerically.
+
+- The 15 are the standard $\mathfrak{su}(4)$ basis in anti-Hermitian form. The six real planes are $A_{jk}=-\mathrm i\lambda_{2}$-type, the six imaginary planes are $\mathrm i\lambda_{1}$-type, and the corner is $\mathrm iD=\mathrm i\,\mathrm{diag}(-3,1,1,1)=-\mathrm i\sqrt6\,\lambda_{15}$. The corpus's own $T^{15}=\mathrm{diag}(-3,1,1,1)/\sqrt{24}$ matches Barbieri exactly, index order reversed. So the sentence "no array is a Gell-Mann array" is false for the twelve off-diagonal arrays.
+- The 6 weak arrays are not standard. Each is $-\tfrac12(A_{ta}\pm A_{bc})$: half a leptoquark plane plus half a gluon plane. The rank of the 21 is 15. Each fails to commute with $\mathrm iD$ ($[\,\mathrm iD,T\,]$ has norm $2$), so each carries $B$–$L$ and a colour piece.
+
+**The contradiction, in three parts.**
+
+1. Externally the 21 generators are independent. The corpus's printed set spans 15, as its own article says. A set of 21 independent generators needs $n^2-1\ge21$, so $n\ge5$. No $4\times4$ set can do it.
+2. Externally the $W$ is a colour singlet and $B$–$L$ neutral. The corpus's printed weak arrays carry colour and $B$–$L$. Taken as $W$ matrices they would be leptoquark-gluon mixtures.
+3. Externally the weak generators are $2\times2$ Pauli matrices on a separate index. The corpus knows this: it says the doublet reading "is not printed here", and declares a "formal copy" where the group is 21-dimensional.
+
+So the printed matrices generate $\mathfrak{su}(4)$, not $\mathfrak{su}(4)\oplus\mathfrak{su}(2)\oplus\mathfrak{su}(2)$. The title "the 21 matrices of the bosons" is therefore wrong: they are 15 boson matrices plus 6 carrier readings of the weak generators.
+
+**Where there is no contradiction.** The content of the fifteen matches: $8+1+6$, the sextet at charge $\pm\tfrac23$ (Barbieri's $\hat V(3,1)_{2/3}$), nine massless and twelve massive, $Y=T_{3R}+(B-L)/2$, and the sixteen $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$ (Hartmann prints it).
+
+**On "common".** Absence from the external papers proves nothing: they omit the fifteen because every physicist knows them. The right sentence is: *the fifteen are the standard $\mathfrak{su}(4)$ matrices in a multiplication-derived basis; the six weak arrays are the corpus's own, dependent, and are readings on the carrier, not the weak generators.* The corpus says this in its five-counts article. Its titles do not.   
