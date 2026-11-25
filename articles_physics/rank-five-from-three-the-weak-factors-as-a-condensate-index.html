@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rank Five From Three: The Weak Factors as a Condensate Index, and Two Theorems Against the Composite Route — Biquaternion Universe</title>
+  <meta name="description" content="The layer. The transition is a breaking of on a formal copy of the carrier, and everything this article proves is either linear algebra on or a count on…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="rank-five-from-three-the-weak-factors-as-a-condensate-index-and-two-theorems-against-the-composite-route"><strong>Rank Five From Three: The Weak Factors as a Condensate Index, and Two Theorems Against the Composite Route</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The layer.</strong> The transition is a breaking of $\mathrm{SU}(4)$ on a formal copy of the carrier, and everything this article proves is either linear algebra on $\mathfrak{su}(4)$ or a count on the endpoint. <strong>The one postulate in it is a choice of representation, and the article names that choice in the section where it is spent.</strong></p>
+<p><strong>The question.</strong> Can the weak force be <em>created</em> by the transition that breaks the primordial force — not carried into the transition as a fragment, not assembled from the debris, but born with it? And if it can, what exactly plays the role of creator?</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;
+\text{the primordial force breaks; the object that breaks it carries a doublet index;}
+\;}
+$$</p>
+<p>$$
+\boxed{\;
+\text{the doublet index is the weak force: it arrives with the breaking, not out of it.}
+\;}
+$$</p>
+<p><strong>Three statements carry the construction, and they have three different statuses.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>status</th>
+<th>where it is proved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a subalgebra never has larger rank than its algebra</td>
+<td><strong>theorem</strong></td>
+<td>§<em>The Lemma</em></td>
+</tr>
+<tr>
+<td>the sextet cannot make the weak pair</td>
+<td><strong>theorem</strong>, twice over</td>
+<td>§<em>Two Theorems That Close the Other Route</em></td>
+</tr>
+<tr>
+<td>the transition's scalar carries a doublet index</td>
+<td><strong>postulate</strong></td>
+<td>§<em>The Price</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What this article establishes.</strong> That rank five is unreachable from rank three inside $\mathfrak{su}(4)$, hence that the weak factors must arrive beside the primordial force rather than emerge from it; that the object doing the breaking carries an index, and that an index is exactly the kind of object that can arrive beside; that the resulting ledger is $3+1+1=5$ with one sense of rank and no composite spectrum; and that the weak bosons' masses come from later vacua, so no mass hierarchy problem is created.</p>
+<p><strong>Not established.</strong> Why the condensate carries a doublet index at all. <strong>That is a postulate, and it is the only one.</strong> Why the index splits into two chiral factors rather than a single one. <strong>That is a second assumption, inherited from the corpus rather than invented here.</strong> And the dynamics of the condensation itself, which the corpus does not derive for any sector.</p>
+<p><strong>What this article is not.</strong> It is not a derivation of the weak force from $\mathrm{SU}(4)$. <strong>It is a proof that the weak force cannot come from inside $\mathrm{SU}(4)$, together with a construction in which it comes from the outside at the transition.</strong> The difference between those two sentences is the whole content of the migration.</p>
+<p><strong>Where the rest is.</strong> The breaking that this article interprets is <a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">The Breaking of the Primordial Force</a>. The sextet whose closures are proved here is <a href="six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html">Six Leptoquarks Above $M_C$</a> and <a href="the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html">The Charge Theorem</a>. The grammar of <em>survives</em>, <em>breaks</em> and <em>arrives</em> is <a href="the-centraliser-the-complement-and-the-index-dimension-and-rank.html">The Centraliser, the Complement, and the Index</a>. The scales are <a href="matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html">The Matching at $M_C$</a>. The internal working note with the full arithmetic is <a href="../articles_internal/structures/structure-weak-force-as-side-effect.html">Rank Five From Three</a>.</p>
+<h2 id="what-a-transition-must-deliver">What a Transition Must Deliver</h2>
+<p><strong>Three things, and they are separate deliverables with separate status.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>deliverable</th>
+<th>status</th>
+<th>where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(4)\to\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$</td>
+<td><strong>theorem, already in the corpus</strong></td>
+<td>the adjoint mass matrix</td>
+</tr>
+<tr>
+<td>the sextet is exactly what is eaten</td>
+<td><strong>theorem, already in the corpus</strong></td>
+<td>$\operatorname{ad}(iD)$ on the fifteen</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ appears</td>
+<td><strong>postulate, new</strong> — one postulate, the doublet index</td>
+<td>not derivable inside $\mathrm{SU}(4)$, and it does not have to be</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first two are free.</strong> The corpus's mass matrix article already states them: $M^{2}=2v^{2}[D,[D,\cdot\,]]$ is diagonal in the plane basis with $32v^{2}$ on the six planes through the lepton line and $0$ on the nine that avoid it. Equivalently, on the vacuum $\operatorname{diag}(-3,1,1,1)$,</p>
+<p>$$
+\operatorname{ad}(iD):\quad 0^{9}\ \oplus\ (-4i)^{3}\ \oplus\ (+4i)^{3},
+$$</p>
+<p><strong>so the kernel is the nine-dimensional $\mathfrak{u}(3)$ and the sextet is precisely the $\pm4i$ eigenspace.</strong></p>
+<p><strong>The third is the invention, and the rest of this article is about what it costs and what it does not.</strong></p>
+<h2 id="the-rank-ledger-three-is-all-there-is">The Rank Ledger: Three Is All There Is</h2>
+<p><strong>The account, with nothing in it but the corpus's own numbers.</strong></p>
+<p>$$
+\dim\mathfrak{su}(4)=15,\qquad \operatorname{rank}\mathfrak{su}(4)=3 .
+$$</p>
+<p><strong>The endpoint costs more than the opening balance.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>rank cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colour $\mathrm{SU}(3)_c$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>the abelian factor $\mathrm{U}(1)_{B-L}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)_L$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)_R$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><strong>endpoint</strong></td>
+<td>$2+1+1+1=\mathbf 5$</td>
+</tr>
+<tr>
+<td><strong>opening balance</strong></td>
+<td>$\mathbf 3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two integers, and the second is smaller. That is the whole of the difficulty.</strong></p>
+<p><strong>The two maximal-rank readings spend the same three, which is why they exist.</strong> They are the two subgroup rows of the branching table:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subgroup</th>
+<th>structure</th>
+<th>rank</th>
+<th>branching of the $\mathbf{15}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{U}(3)$</td>
+<td>$\mathrm{SU}(3)\times\mathrm{U}(1)$</td>
+<td>$2+1=3$</td>
+<td>$\mathbf 8_0\oplus\mathbf 1_0\oplus\mathbf 3_{+4}\oplus\bar{\mathbf 3}_{-4}$</td>
+</tr>
+<tr>
+<td>$\mathrm{S}(\mathrm{U}(2)\times\mathrm{U}(2))$</td>
+<td>$\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{U}(1)$</td>
+<td>$1+1+1=3$</td>
+<td>$(\mathbf3,\mathbf1)_0\oplus(\mathbf1,\mathbf3)_0\oplus(\mathbf1,\mathbf1)_0\oplus(\mathbf2,\mathbf2)_{\pm2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Row one buys colour plus one abelian factor. Row two buys weak-times-weak plus one abelian factor. Neither buys colour <em>and</em> weak</strong>, because colour needs two ranks and weak needs two, and four exceeds three. <strong>Two ways to spend three ranks, not two halves of five.</strong></p>
+<p><strong>And the two rows cannot both be exact.</strong> Their Lie bracket generates all fifteen generators of $\mathfrak{su}(4)$, which is simple, so a vacuum annihilated by both would break nothing. <strong>The model must choose, and the corpus chooses the first row — that is what the transition is.</strong></p>
+<h2 id="the-lemma-a-subalgebra-never-outranks-its-algebra">The Lemma: A Subalgebra Never Outranks Its Algebra</h2>
+<p><strong>The statement is one line and it is why the whole article exists.</strong></p>
+<blockquote>
+<p><strong>Lemma.</strong> If $\mathfrak h\subseteq\mathfrak g$ then $\operatorname{rank}\mathfrak h\le\operatorname{rank}\mathfrak g$.</p>
+</blockquote>
+<p><strong>Proof.</strong> A maximal torus of $\mathfrak h$ is an abelian subalgebra of $\mathfrak g$ consisting of semisimple elements, so it lies in a maximal torus of $\mathfrak g$. Its dimension is therefore at most the dimension of $\mathfrak g$'s maximal torus. $\square$</p>
+<p><strong>The consequence, applied to the model.</strong></p>
+<p>$$
+\operatorname{rank}\mathfrak{su}(4)=3
+\quad\Longrightarrow\quad
+\text{every subalgebra of }\mathfrak{su}(4)\text{ has rank at most }3 .
+$$</p>
+<p><strong>Rank is not a dynamical quantity.</strong> It is the dimension of a torus, and a torus does not grow when a vacuum chooses a direction inside it. <strong>So no chain of breakings, in any order, with any dynamics, at any temperature, reaches rank five from rank three.</strong></p>
+<p><strong>And colour times weak needs five.</strong> The endpoint's dimension is a sum of four positive ranks; the sum is five; the opening balance is three. <strong>Therefore $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ is not a subgroup of $\mathrm{SU}(4)$, and no condensation will make it one.</strong></p>
+<p><strong>This is a different statement from the usual "the algebra is too small", and it is stronger.</strong> The usual objection says there is not enough <em>dimension</em>; but dimension is not the obstacle — $15\ge 8+1+3+3=15$ exactly, so dimension is in fact sufficient. <strong>What is insufficient is rank, and rank is conserved downwards.</strong> That is why the obstruction survives every clever rearrangement of the breaking.</p>
+<h2 id="two-readings-of-one-barrier-and-which-one-the-corpus-uses">Two Readings of One Barrier, and Which One the Corpus Uses</h2>
+<p><strong>The barrier has two readings, and the migration takes the second.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reading</th>
+<th>sentence</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the wall</td>
+<td>the weak force is not inside $\mathrm{SU}(4)$</td>
+<td>true, and it is a dead end</td>
+</tr>
+<tr>
+<td>the door</td>
+<td>therefore the weak force must arrive from beside $\mathrm{SU}(4)$</td>
+<td>true, and it is a construction</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read as a wall, the lemma refutes one sentence.</strong> Read as a door, it <em>proves that any successful story must have the weak force arriving at the transition</em>, because arriving is the only thing left. <strong>The word for a factor that arrives beside rather than emerging from within is "arrival", and it is the right word.</strong></p>
+<p><strong>This inversion changes the direction of the argument and it is worth stating slowly.</strong></p>
+<p><strong>A defensive article says:</strong> the algebra forbids the naive reading, so we retreat to a postulate.
+<strong>The correct article says:</strong> the algebra forbids the naive reading, therefore the weak force must be born at the transition, and here is the object that bears it.</p>
+<p><strong>The second is not rhetoric.</strong> The first sentence of the second version is a theorem, and it constrains the construction: whatever bears the weak force must be an object that can arrive, which is to say <strong>not a subalgebra and not a subset of the fifteen.</strong> Among the objects a transition possesses — a vacuum, a condensate, a scalar multiplet, a set of couplings — only the scalar multiplet has indices, and <strong>only an index can bring in a factor.</strong> That is why the mechanism is the index and not the debris.</p>
+<h2 id="the-mechanism-the-condensate-that-carries-a-doublet">The Mechanism: The Condensate That Carries a Doublet</h2>
+<p><strong>The object that does the breaking, and the corpus already has it.</strong></p>
+<p>$$
+\Phi\in(\mathbf 4,\mathbf 1,\mathbf 2),\qquad 4\cdot1\cdot2=8\ \text{complex},\qquad 16\ \text{real components}.
+$$</p>
+<p><strong>It has two kinds of index, and each does one job.</strong></p>
+<p><strong>The $\mathrm{SU}(4)$ index breaks.</strong> A vacuum along the lepton line, $\Phi\propto(1,0,0,0)$, breaks</p>
+<p>$$
+\mathrm{SU}(4)\ \longrightarrow\ \mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L},\qquad 15\to9,
+$$</p>
+<p><strong>and the six generators that leave are eaten.</strong> They are the sextet, and the corpus proves it twice over: the adjoint mass matrix puts $32v^{2}$ on the six planes through the lepton line and $0$ on the nine that avoid it, and $\operatorname{ad}(iD)$ has the sextet as its $\pm4i$ eigenspace.</p>
+<p><strong>The copy index births.</strong> A scalar that must be a doublet to do its job is a scalar whose condensation simultaneously announces a two-dimensional internal space. <strong>That space is the weak factor</strong>: it is not a fragment of the primordial force, it is a property of the object that killed it.</p>
+<p><strong>The whole story in one table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what happens</th>
+<th>where it lives</th>
+<th>rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(4)$ condenses along the lepton line</td>
+<td>the $\mathrm{SU}(4)$ index of $\Phi$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>six leptoquarks eaten, colour and $B-L$ survive</td>
+<td>the stabiliser of that line</td>
+<td>$2+1$</td>
+</tr>
+<tr>
+<td>a two-dimensional internal space appears</td>
+<td>the $\mathbf 2$ index of $\Phi$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>its chiral half is the second weak factor</td>
+<td>the copy structure of the condensate</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><strong>endpoint</strong></td>
+<td>$\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td>$\mathbf{3+1+1=5}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Note what the table does not say.</strong> It does not say the sextet becomes anything. <strong>The sextet is eaten and its mass goes up, not down</strong> — the charge theorem and the confinement-scale theorem below are two independent reasons nothing else was possible.</p>
+<p><strong>Note also the ordering of the two events.</strong> The breaking is done by the $\mathrm{SU}(4)$ index, which is a dynamical statement; the birth is done by the copy index, which is a representational one. <strong>The breaking and the birth are one event with two aspects, and the aspects are ranked</strong>: the breaking is the physics, the birth is the bookkeeping of a representation that the physics required.</p>
+<h2 id="the-ranks-add-because-the-factors-are-independent">The Ranks Add Because the Factors Are Independent</h2>
+<p><strong>This is the positive content of the construction, and it is the sentence the article should be remembered by.</strong></p>
+<p><strong>Ranks add across independent factors and never across a subgroup relation.</strong></p>
+<p>$$
+\operatorname{rank}\bigl(\mathrm{SU}(3)\times\mathrm{U}(1)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\bigr)=2+1+1+1=5 ,
+$$</p>
+<p><strong>whereas for any $\mathfrak h\subseteq\mathfrak{su}(4)$ the same sum is capped at three by the lemma.</strong></p>
+<p><strong>So the arithmetic $3+1+1=5$ is a certificate and not a loophole.</strong> If the weak factors were pieces of the primordial force, five would be unreachable. <strong>That the endpoint reaches five is therefore evidence that the weak factors sit beside — that they are separate factors, born with the transition.</strong></p>
+<p><strong>"Arrives with the index" and "rank five from rank three" are the same statement in two vocabularies.</strong> The first says where the group comes from; the second says what its rank must be; and the lemma says the two are only compatible if the group is not a subalgebra. <strong>No construction satisfies the second without the first</strong>, which is why the arrival reading is forced rather than chosen.</p>
+<p><strong>One check that the endpoint is a group and not a list.</strong> The four factors are pairwise commuting and each is closed under brackets, so the product is a group of dimension $8+1+3+3=15$ and rank $5$. <strong>Its dimension equals $\mathfrak{su}(4)$'s dimension and its rank exceeds $\mathfrak{su}(4)$'s rank.</strong> Equal dimension with greater rank is possible exactly because the two are not related by inclusion — <strong>which is the whole point in one arithmetic comparison.</strong></p>
+<h2 id="the-price-one-postulate-in-the-corpuss-own-currency">The Price: One Postulate, in the Corpus's Own Currency</h2>
+<p><strong>What is postulated.</strong> That the transition's condensate is a $(\mathbf 4,\mathbf 1,\mathbf 2)$. Nothing in the fifteen forces that representation.</p>
+<p><strong>Why it is cheap in this corpus specifically.</strong> The scalar sector article says it without hedging: <em>the corpus cannot derive the scalar content: the scalar sector is the one place in the frame with no algebraic guidance at all.</em> <strong>So the postulate spends a currency the corpus already spends.</strong> The transition does not open a new debt; it names an existing one as the birth certificate of the weak force.</p>
+<p><strong>What is not postulated, and this list is the reason the construction is worth having.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>needed?</th>
+<th>why not</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a new gauge group</td>
+<td><strong>no</strong></td>
+<td>the endpoint is $\mathrm{SU}(3)\times\mathrm{U}(1)\times\mathrm{SU}(2)\times\mathrm{SU}(2)$</td>
+</tr>
+<tr>
+<td>a new scale $\Lambda$</td>
+<td><strong>no</strong></td>
+<td>the scales are $M_C$, $M_R$, $v$, all of them the corpus's</td>
+</tr>
+<tr>
+<td>a new confining dynamics</td>
+<td><strong>no</strong></td>
+<td>no bound state is built</td>
+</tr>
+<tr>
+<td>a matching rule for $W^{3}_L,W^{3}_R$</td>
+<td><strong>no</strong></td>
+<td>they are the Cartans of factors that exist from the transition on</td>
+</tr>
+<tr>
+<td>a new vacuum</td>
+<td><strong>no</strong></td>
+<td>$iD=\operatorname{diag}(-3,1,1,1)$ is the corpus's</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the construction adds one line to the ledger and removes a question the corpus could not answer</strong>: why the weak force exists at all.</p>
+<p><strong>The honest size of the postulate.</strong> It is a choice of representation in a sector where the corpus has no guidance. <strong>It is not a small choice</strong> — a $(\mathbf 4,\mathbf 1,\mathbf 1)$ would break $\mathrm{SU}(4)$ and produce no index at all — <strong>but it is the smallest choice available</strong>, and it is the only one that both breaks the primordial force and carries a two-dimensional internal space.</p>
+<h2 id="the-mass-ledger-where-the-weak-masses-actually-come-from">The Mass Ledger: Where the Weak Masses Actually Come From</h2>
+<p><strong>This section exists because the natural objection to a "born" group is that it has no scale.</strong> It has one, and the corpus supplies it.</p>
+<p><strong>The weak bosons do not get their masses at $M_C$.</strong> They get them downstream:</p>
+<p>$$
+m_{W_R}\sim g_R\,v_R,\qquad m_{W}\sim g\,v,\qquad v=246\ \mathrm{GeV},
+$$</p>
+<p><strong>with $v_R$ the second vacuum and $v$ the electroweak one.</strong> The chain therefore reads</p>
+<p>$$
+M_C\ \ge\ M_R\ \ge\ M_W ,
+$$</p>
+<p><strong>the corpus's own ordering, untouched.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>scale</th>
+<th>what happens</th>
+<th>who gets mass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_C\gtrsim250\ \mathrm{TeV}$</td>
+<td>$\mathrm{SU}(4)$ breaks, sextet eaten, weak factors born</td>
+<td>the six leptoquarks</td>
+</tr>
+<tr>
+<td>$M_R$</td>
+<td>$\mathrm{SU}(2)_R$ breaks</td>
+<td>$W_R$, $Z_R$</td>
+</tr>
+<tr>
+<td>$v=246\ \mathrm{GeV}$</td>
+<td>electroweak breaking</td>
+<td>$W$, $Z$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The arrival brings in the group; the group's masses are supplied downstream.</strong> No object is built from parts a thousand times heavier than itself, and there is no hierarchy to explain beyond the one the corpus already has.</p>
+<p><strong>The corpus states the same thing in the mass-matrix article, and it is worth quoting because it is the strongest textual support the construction has:</strong> the six weak generators are not in the fifteen; on the carrier they are sums of colour and leptoquark planes, and <strong>their masses come from the second breaking through the doublet vacuum, not from this one.</strong> <strong>That is precisely the mass ledger of this section, written before the construction existed.</strong></p>
+<h2 id="two-theorems-that-close-the-other-route">Two Theorems That Close the Other Route</h2>
+<p><strong>The temptation, stated in its strongest form.</strong> The sextet is six generators and the weak pair is six generators, so perhaps the six recompose into the pair. <strong>Six for six. The dimension matches and nothing else does.</strong></p>
+<p><strong>First theorem: charge.</strong> Every member of the sextet has $Q=\pm\tfrac23$, so</p>
+<p>$$
+\mathbf3_{+4/3}\otimes\bar{\mathbf3}_{-4/3}=\mathbf1_0\oplus\mathbf8_0 ,
+$$</p>
+<p><strong>and the colour singlet is neutral identically.</strong> A bound state of two sextet members therefore has $Q\in\{0,\pm\tfrac43\}$ and never $\pm1$; the $J=1$ singlet has three spin states, <strong>all of them $Q=0$.</strong> Two chiralities give six neutral vectors and no charged one — <strong>the exact opposite of four charged plus two neutral.</strong></p>
+<p><strong>Second theorem: confinement scale.</strong> A bound state weighs at least its confinement scale,</p>
+<p>$$
+m_{\text{composite}}\ \gtrsim\ \Lambda_{\text{confine}} ,
+$$</p>
+<p><strong>and in this model the confinement scale is the transition scale, $M_C\gtrsim250$ TeV</strong> — bounded by $K_L\to\mu e$, not by proton decay. So any $\mathrm{SU}(4)$-bound object weighs hundreds of teraelectronvolts. <strong>An $80\ \mathrm{GeV}$ composite would need a confinement scale of order $80\ \mathrm{GeV}$, and $\mathrm{SU}(4)$'s scale is already spoken for.</strong></p>
+<p><strong>Why two theorems rather than one.</strong> They are independent: a repair of the charge problem would leave the mass problem, and a repair of the mass problem would leave the charge problem. <strong>A route closed twice is closed in a way that a better calculation cannot reopen</strong> — which is what distinguishes this from an objection.</p>
+<p><strong>And the third piece of evidence, which is not a theorem but is arithmetic.</strong> The six exact identities</p>
+<p>$$
+T^{L}_{x}=-\tfrac12\bigl(A_{tx}+A_{yz}\bigr),\qquad
+T^{R}_{x}=-\tfrac12\bigl(A_{tx}-A_{yz}\bigr),
+$$</p>
+<p><strong>show that each weak array is half a leptoquark plane and half a colour plane.</strong> They are true, they are exact, and they are a statement about a <em>basis</em>: $32v^{2}$ sits on $A_{tx}$ and $0$ sits on $A_{yz}$, so <strong>a sum of the two is a coherence and not a particle.</strong> Read as the mixing itself they would fix $\sin^{2}\theta=\tfrac12$ against the observed $0.23122$. <strong>Their home is <a href="the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html">The Charge Theorem</a>, where they are printed beside the mass table that shows why an identity is not a particle.</strong></p>
+<h2 id="what-this-does-not-say">What This Does Not Say</h2>
+<p><strong>Four boundaries, each one line, because a construction that overstates itself is worth less than one that does not.</strong></p>
+<p><strong>It does not derive the weak force.</strong> It derives its <em>rank</em> — five, which is a theorem — and postulates its <em>birth</em> — the doublet index.</p>
+<p><strong>It does not explain the weak coupling.</strong> $g$ and $g_R$ are free parameters, as they are in the corpus.</p>
+<p><strong>It does not explain chirality.</strong> That the copy index splits into two factors rather than one is inherited from the corpus, which has the split as a fact and not as a derivation.</p>
+<p><strong>It does not fix the order of the two events.</strong> Whether the index appears <em>with</em> the condensation or is <em>required by</em> it is a phrasing the articles must choose once and keep; the two are different claims and mixing them is how a characterisation becomes a pretended derivation.</p>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the opening rank</td>
+<td>$\operatorname{rank}\mathfrak{su}(4)$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>the endpoint rank</td>
+<td>$2+1+1+1$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>the lemma</td>
+<td>a torus of $\mathfrak h$ lies in a torus of $\mathfrak g$</td>
+<td>$\operatorname{rank}\mathfrak h\le\operatorname{rank}\mathfrak g$</td>
+</tr>
+<tr>
+<td>the endpoint's dimension</td>
+<td>$8+1+3+3$</td>
+<td>$15$, equal to $\mathfrak{su}(4)$'s</td>
+</tr>
+<tr>
+<td>dimension versus rank</td>
+<td>equal dimension, rank $5$ against $3$</td>
+<td>only possible without inclusion</td>
+</tr>
+<tr>
+<td>the two maximal-rank rows</td>
+<td>$\mathrm{U}(3)$ and $\mathrm{S}(\mathrm{U}(2)\times\mathrm{U}(2))$</td>
+<td>both rank $3$</td>
+</tr>
+<tr>
+<td>their joint closure</td>
+<td>brackets generate all fifteen</td>
+<td>simple, so both cannot be exact</td>
+</tr>
+<tr>
+<td>the sextet's charges</td>
+<td>$Q=\pm\frac23$</td>
+<td>sums give $\{0,\pm\frac43\}$, never $\pm1$</td>
+</tr>
+<tr>
+<td>the singlet channel</td>
+<td>$\mathbf3\otimes\bar{\mathbf3}=\mathbf1_0\oplus\mathbf8_0$</td>
+<td>neutral identically</td>
+</tr>
+<tr>
+<td>the confinement scale</td>
+<td>$M_C\gtrsim250$ TeV</td>
+<td>$\gg80$ GeV</td>
+</tr>
+<tr>
+<td>the mass ledger</td>
+<td>$m_W\sim gv$, $v=246$ GeV</td>
+<td>from $v$, not from $M_C$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="distinctions-that-are-easy-to-lose">Distinctions That Are Easy to Lose</h2>
+<p>Rank is not dimension. The endpoint has $\mathrm{SU}(4)$'s dimension and a larger rank; that combination is only possible without inclusion, and it is the proof, not a paradox (<em>The Lemma</em>).</p>
+<p>An arrival is not a metaphor. It is the name for a factor that enters beside the algebra rather than inside it, and entering beside is the only option once the lemma is granted (<em>Two Readings of One Barrier</em>).</p>
+<p>The index is not the debris. The weak force is born from a representation the condensate carries, not from what the condensate ate (<em>The Mechanism</em>).</p>
+<p>Postulating an index is not postulating a sector. The corpus already declares its scalar content underivable; the construction spends that same debt and no other (<em>The Price</em>).</p>
+<p>The weak masses are not at $M_C$. They are at $M_R$ and $v$; the corpus already says so, and the construction only has to not contradict it (<em>The Mass Ledger</em>).</p>
+<p>Two theorems are not one theorem twice. Charge closes the composite by quantum numbers, the confinement scale closes it by size (<em>Two Theorems</em>).</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The weak force can be born at the transition, and the birth certificate is the doublet index of the object that breaks the primordial force.</strong></p>
+<p><strong>The rank lemma is why it must be so.</strong> $\operatorname{rank}\mathfrak{su}(4)=3$, the endpoint costs $5$, and a subalgebra never outranks its algebra. <strong>So the weak factors are not pieces of $\mathrm{SU}(4)$; they arrive beside it — which is what "arrival" means here, and what $3+1+1=5$ certifies.</strong></p>
+<p><strong>The mechanism is one object with two indices.</strong> $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$: the $\mathrm{SU}(4)$ index breaks and eats the sextet, the $\mathbf 2$ index is the weak force. <strong>The breaking and the birth are one event with two aspects.</strong></p>
+<p><strong>The sextet cannot do it, twice over.</strong> Charge: $Q=\pm\tfrac23$ sums to $\{0,\pm\tfrac43\}$ and never to $\pm1$, and the colour singlet is neutral identically. Mass: a bound state weighs at least its confinement scale, and that scale is $250$ TeV. <strong>Neither closure can be repaired by dynamics.</strong></p>
+<p><strong>The price is one postulate, paid in a currency the corpus already spends</strong>, and the mass ledger stays the corpus's: $M_C\ge M_R\ge M_W$ with the weak masses from $v_R$ and $v$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(4)$</td>
+<td>the primordial force, dimension $15$, rank $3$</td>
+</tr>
+<tr>
+<td>$\mathfrak m$</td>
+<td>the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, $Q=\pm\frac23$</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>the condensate $\operatorname{diag}(-3,1,1,1)$; $\operatorname{ad}(iD)$ has spectrum $0^{9},(\pm4i)^{3}$</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>the transition's scalar, $(\mathbf4,\mathbf1,\mathbf2)$, $16$ real components</td>
+</tr>
+<tr>
+<td>$M_C$</td>
+<td>the first breaking scale, $\gtrsim250$ TeV from $K_L\to\mu e$</td>
+</tr>
+<tr>
+<td>$M_R$</td>
+<td>the second breaking scale</td>
+</tr>
+<tr>
+<td>$v_R,v$</td>
+<td>the right-handed and electroweak vacuum values, $v=246$ GeV</td>
+</tr>
+<tr>
+<td>$\Lambda_{\text{confine}}$</td>
+<td>the scale a bound state weighs at least, $=M_C$ here</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">The Breaking of the Primordial Force: $\mathrm{SU}(4)\to\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ and the Mass of the Six Leptoquarks</a>. The theorem half of the transition.</li>
+<li><a href="six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html">Six Leptoquarks Above $M_C$: Quantum Numbers, the Mass Ratio, and the Bound From $K_L\to\mu e$</a>. The six states, their mass, and the bound that fixes $M_C$.</li>
+<li><a href="the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html">The Charge Theorem: The Sextet Cannot Be Recomposed Into the Weak Pair</a>. The identities, the mass table, and the two closures in full.</li>
+<li><a href="the-centraliser-the-complement-and-the-index-dimension-and-rank.html">The Centraliser, the Complement, and the Index: Dimension Falls at a Breaking, Rank Rises at an Arrival</a>. The grammar this article uses.</li>
+<li><a href="matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html">The Matching at $M_C$</a>. The scale ledger and the interface with the left–right corpus.</li>
+<li><a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">The Breaking of the Primordial Force</a>. The multiplet, and the sentence about the corpus having no algebraic guidance for it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
