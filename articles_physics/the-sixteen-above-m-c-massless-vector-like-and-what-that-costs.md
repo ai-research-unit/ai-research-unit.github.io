@@ -82,6 +82,7 @@ the cubic index $+1$ on the $\mathbf4$ and $-1$ on the $\bar{\mathbf4}$, so the 
 **What the count buys, item by item.**
 
 - *No anomaly condition on the spectrum.* The content is fixed by the group and not by a cancellation requirement. **Compare the Standard Model**, where $\operatorname{tr}Y=0$, $\operatorname{tr}Y^{3}=0$ and the even doublet count are conditions on the hypercharges and a wrong assignment would break the theory. Here there is nothing to satisfy.
+- *No global anomaly, and the reason is the group and not the count.* $\pi_{4}(\mathrm{SU}(4))=0$, so the Witten $\mathbb{Z}_{2}$ obstruction that an $\mathrm{SU}(2)$ with an odd number of doublets carries has nothing to attach to above $M_C$; below it the weak factor carries the Standard Model's even doublet count. **The sixteen is what cancels the triangle, and the group is what removes the global obstruction** — two different facts that a single word, anomaly-free, would run together.
 - *No Green–Schwarz mechanism.* No axion, no Wess–Zumino term, no anomaly inflow. **The question does not arise**, and its absence is not a gap.
 - *No constraint on the number of generations.* Three generations give $6(+1)+6(-1)=0$; so does any number. **The generation count is therefore unexplained by the anomaly**, which is the honest statement and the one the corpus makes about flavour generally.
 
@@ -152,6 +153,7 @@ $$
 | the cubic index on the $\mathbf4$ and the $\bar{\mathbf4}$ | $+1$, $-1$ |
 | the $\mathrm{SU}(4)^{3}$ coefficient | $2(+1)+2(-1)=0$ |
 | the mixed coefficients | none, one factor |
+| the global anomaly | $\pi_{4}(\mathrm{SU}(4))=0$ | absent, and not by the count |
 | the states as eight massive Dirac fields | $8\times4=32$ |
 | $g_{*}$ of the phase, gauge $30\times2$ and fermion $32\times\tfrac78$ | $60+28=88$ |
 | the mass channel | the singlet of $\mathbf4\otimes\bar{\mathbf4}=\mathbf{15}\oplus\mathbf1$ |

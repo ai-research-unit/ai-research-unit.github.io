@@ -246,7 +246,7 @@ $$
 
 **The exponential.** $\exp(\theta\, iS_{yz})e_y=\cos\theta\,e_y+i\sin\theta\,e_z$, complex and not orthogonal.
 
-**The boson.** $g_{7}$, the second gluon of the green–blue plane, massless. **The six off-diagonal arrays $g_{1},g_{2},g_{4},g_{5},g_{6},g_{7}$ plus the two diagonals are the octet**: the grid's $3\times3$ block has nine cells, the trace is removed, and eight traceless directions remain.
+**The boson.** $g_{7}$, the second gluon of the green–blue plane, massless. **The six off-diagonal arrays $g_{1},g_{2},g_{4},g_{5},g_{6},g_{7}$ plus the two diagonals are the octet**: the grid's $3\times3$ block has nine cells, the trace is removed, and eight derived directions remain.
 
 ### $T^{c}_{3}$, the gluon of the red–green phase: $d_{2}$, a colour phase and not a rotation
 

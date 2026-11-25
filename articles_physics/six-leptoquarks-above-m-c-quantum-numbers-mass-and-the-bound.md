@@ -220,7 +220,7 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 | --- | --- |
 | $\mathfrak m$ | the sextet, the off-diagonal block of the fifteen |
 | $X,\bar X$ | a leptoquark and its conjugate, $Q=\pm\tfrac23$ |
-| $M_X$ | the leptoquark mass, $\tfrac12 g_4 v_C$ |
+| $M_X$ | the leptoquark mass, $g_4 v_C/\sqrt2$ |
 | $M_{W_R}$ | the right-handed weak boson mass, $\tfrac12 g_R v_C$ |
 | $v_C$ | the magnitude of the transition's condensate |
 | $g_4,g_R$ | the primordial and right-weak couplings |

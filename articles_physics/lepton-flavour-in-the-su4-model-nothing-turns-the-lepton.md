@@ -25,9 +25,9 @@ $$
 
 **The colour factor is one.** The quark legs sit on one colour line, the leptoquark propagator is diagonal in colour, and there is no sum over colours to make. **A colour factor of three would need the two vertices on different colour lines**, which is a different diagram.
 
-**The mass of the exchanged boson is not free.** The sextet's mass is $M_X^{2}=8g_4^{2}v^{2}$ from the adjoint mass matrix, so **the operator's coefficient is $g_4^{2}/2M_X^{2}=1/(16v^{2})$: the coupling cancels and only the condensate survives.** A reader who wants a heavy leptoquark has to want a large $v$.
+**The mass of the exchanged boson is not free.** The sextet's mass is $M_X^{2}=32v^{2}$ from the adjoint mass matrix, that is $\tfrac12g_4^{2}v_C^{2}$ in the physical normalisation, so **the operator's coefficient is $g_4^{2}/(2M_X^{2})=1/v_C^{2}$: the coupling cancels and only the condensate survives.** A reader who wants a heavy leptoquark has to want a large $v$.
 
-**The $\Delta F=0$ term exists and is unobservable.** The diagonal part of the operator shifts the short-distance $d$–$e$ and $s$–$\mu$ couplings by a relative amount of order $(v/M_X)^{2}=1/(8g_4^{2})$, **and no measurement reaches it**, because the same operator's off-diagonal part is what the experiments are built to see and the diagonal part is a renormalisation of a coupling.
+**The $\Delta F=0$ term exists and is unobservable.** The diagonal part of the operator shifts the short-distance $d$–$e$ and $s$–$\mu$ couplings by a relative amount of order $(v/M_X)^{2}=1/32$, **and no measurement reaches it**, because the same operator's off-diagonal part is what the experiments are built to see and the diagonal part is a renormalisation of a coupling.
 
 ## Why Nothing Turns the Lepton
 
@@ -113,8 +113,8 @@ $$
 | copy-index-changing generators | entries joining $\alpha=1$ to $\alpha=2$ | $0$ |
 | chirality coefficients | one coupling, quartet and conjugate | equal |
 | colour factor | one line, diagonal propagator | $1$ |
-| $M_X^{2}$ | adjoint mass matrix, normalised | $8g_4^{2}v^{2}$ (array-level $32v^{2}$) |
-| $\Delta F=0$ shift | $(v/M_X)^{2}$ | $1/(8g_4^{2})$ |
+| $M_X^{2}$ | adjoint mass matrix, then the physical normalisation | $32v^{2}=\tfrac12g_4^{2}v_C^{2}$ |
+| $\Delta F=0$ shift | $(v/M_X)^{2}$, $v$ the array value | $1/32$ |
 | $K_L\to\mu e$ at $|U|=1$ | $g_4^{4}f_K^{2}m_\mu^{2}m_K/128\pi M_X^{4}$ | $3.5\times10^{-12}$ |
 | the measured limit | experiment | $4.7\times10^{-12}$ |
 | $K_S$ suppression | $|\epsilon_K|^{2}$ | $\sim10^{-20}$ |
@@ -135,7 +135,7 @@ $$
 | --- | --- |
 | $\mathbb C e_{t}$ | the lepton line of the quartet |
 | $B_V$ | the colour triple, $\operatorname{span}\{e_{x},e_{y},e_{z}\}$ |
-| $M_X$ | the sextet's mass, $M_X^{2}=8g_4^{2}v^{2}$ |
+| $M_X$ | the sextet's mass, $M_X^{2}=32v^{2}=\tfrac12g_4^{2}v_C^{2}$ |
 | $g_4$ | the model's single gauge coupling |
 | $U_{de}$, $U_{s\mu}$ | mixing entries below $M_C$, not computed in the corpus |
 | $P_{L}$, $P_{R}$ | the chiral projectors of the two halves |

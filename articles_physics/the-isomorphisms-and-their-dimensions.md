@@ -203,7 +203,7 @@ Why the complexification doubles: the traceless part is already a complex vector
 
 ### What the Summands Are
 
-Every traceless element splits into a self-dual and an anti-self-dual part under the Hodge star on bivectors. On the algebra side the split is written by the two triples
+Every scalar-free element splits into a self-dual and an anti-self-dual part under the Hodge star on bivectors. On the algebra side the split is written by the two triples
 
 $$
 \vec J_{\pm}=\tfrac12\bigl(\vec J\pm i\vec K\bigr),

@@ -191,7 +191,7 @@ B(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\,\sin
 \vec u\in S^2 .
 $$
 
-It is Hermitian, $B^{*} = B$, of unit norm, and positive. The pair $(\theta_{\mathrm{rpd}},\vec u)$ is not unique: $\theta_{\mathrm{rpd}} = 0$ is the identity for every direction, and $(\theta_{\mathrm{rpd}},\vec u)$ and $(-\theta_{\mathrm{rpd}},-\vec u)$ describe the same boost. The boost manifold is therefore the space of traceless Hermitian generators,
+It is Hermitian, $B^{*} = B$, of unit norm, and positive. The pair $(\theta_{\mathrm{rpd}},\vec u)$ is not unique: $\theta_{\mathrm{rpd}} = 0$ is the identity for every direction, and $(\theta_{\mathrm{rpd}},\vec u)$ and $(-\theta_{\mathrm{rpd}},-\vec u)$ describe the same boost. The boost manifold is therefore the space of scalar-free Hermitian generators,
 
 $$
 \mathcal{B} = \left\{\, \tfrac{\theta_{\mathrm{rpd}}}{2}\,i\vec u : \theta_{\mathrm{rpd}}\in\mathbb{R},\ \vec u\in S^2 \,\right\} = i\,\mathbb{R}^3 ,

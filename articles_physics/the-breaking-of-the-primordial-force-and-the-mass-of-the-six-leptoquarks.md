@@ -179,7 +179,13 @@ $$
 M_X^{2}=\tfrac12\,g_4^{2}\,v_C^{2},
 $$
 
-**one half, one coupling squared, one vacuum squared, and no free number.** The $32v^{2}$ above differs from this by factors common to every entry — the coupling, the half, the field normalisation — **which cancel in every ratio, so the two statements are one statement in two normalisations.**
+**one half, one coupling squared, one vacuum squared, and no free number.** The $32v^{2}$ above is the array-level reading of the same mass, and the two are one statement once the array's vacuum is written in the physical one:
+
+$$
+v_{C}=\frac{8v}{g_4},\qquad M_X^{2}=\tfrac12g_4^{2}v_C^{2}=32v^{2} .
+$$
+
+**The $8$ is $\sqrt{2\cdot32}$: the $2$ of the mass matrix's double commutator and the $4^{2}$ of $1-(-3)$ are in the mass squared, and the coupling and the half are absorbed into the physical condensate.** Every article that quotes the sextet's mass uses this conversion, and none of them restates it.
 
 **What is *not* claimed.** $32v^{2}$ is not a mass in kilograms. **All couplings here are symbolic**, and the conversion of $v_C$ into a number is an experimental question, treated in the article on the sextet and in the coupling article.
 
@@ -315,7 +321,7 @@ The rank is not reduced. Six dimensions leave and the torus stays; that is why t
 | $\mathfrak m$ | the sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, the $\pm4i$ eigenspace |
 | $X,\bar X$ | a leptoquark and its conjugate, $Q=\pm\tfrac23$, colour $\mathbf3$ or $\bar{\mathbf3}$ |
 | $v$ | the magnitude of the condensate, the unit of the adjoint mass matrix |
-| $v_C$ | the same magnitude in the normalisation where $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$ |
+| $v_C$ | the same condensate in the normalisation where $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$, that is $v_C=8v/g_4$ |
 | $\mathfrak{u}(3)$ | $\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L}$, the kernel, dimension $9$ |
 | $B'$ | the surviving abelian vector, the $iD$ direction |
 

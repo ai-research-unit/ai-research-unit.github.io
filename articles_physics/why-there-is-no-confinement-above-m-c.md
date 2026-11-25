@@ -4,13 +4,13 @@
 
 **The question.** $\mathrm{SU}(4)$ is asymptotically free. Asymptotic freedom is usually paired with confinement in the infrared. **So why does the primordial force not confine?**
 
-**The short answer.** Because confinement needs the coupling to reach order one *inside a phase that exists*, and the primordial phase ends long before its coupling gets there. **At $M_C$ the coupling is $0.058$; it would reach order one only at about $54\ \mathrm{MeV}$, which is six and a half decades below the transition and in a theory where $\mathrm{SU}(4)$ is not a symmetry at all.**
+**The short answer.** Because confinement needs the coupling to reach order one *inside a phase that exists*, and the primordial phase ends long before its coupling gets there. **At $M_C$ the coupling is $0.058$; it would reach order one only at about $686\ \mathrm{MeV}$, which is five and a half decades below the transition and in a theory where $\mathrm{SU}(4)$ is not a symmetry at all.**
 
 **The two conditions, stated separately, because the literature usually runs them together.**
 
 | condition | statement | holds here? |
 | --- | --- | --- |
-| the coupling reaches order one | $1/\alpha_4(\mu)\sim1$ for some $\mu$ in the phase | **no**: it needs $\mu\approx54\ \mathrm{MeV}$ |
+| the coupling reaches order one | $1/\alpha_4(\mu)\sim1$ for some $\mu$ in the phase | **no**: it needs $\mu\approx686\ \mathrm{MeV}$ |
 | the phase exists at that scale | $\mu>M_C$ | **no**: $M_C\gtrsim250\ \mathrm{TeV}$ |
 
 **Either failure alone is enough, and both fail.** This article computes the first and cites the leptoquark bound for the second.
@@ -101,8 +101,8 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 | --- | --- | --- |
 | $b_0$ positive | $\tfrac{44}{3}-\tfrac{16}{3}-\tfrac43$ | $+8$ |
 | the direction | positive coefficient | $\alpha_4$ grows downward |
-| $\alpha_4(M_C)$ at $250\ \mathrm{TeV}$ | $17.21+1.061\ln(2.5/2.33)$ | $0.058$ |
-| the strong-coupling scale | $M_Xe^{-16.21/1.273}$ | $686\ \mathrm{MeV}$ |
+| $\alpha_4(M_C)$ at $250\ \mathrm{TeV}$ | $17.21+1.273\ln(2.5/2.33)$ | $0.058$ |
+| the strong-coupling scale | $M_Xe^{-(17.21-1)/1.273}$ | $686\ \mathrm{MeV}$ |
 | the e-folds from $M_C$ | $16.30/1.273$ | $12.8$ |
 | the scale ratio | $2.5\times10^{5}/0.686$ | $3.6\times10^{5}$ |
 | QCD's e-folds | $(8.48-1)/1.114$ | $6.7$ |
@@ -125,7 +125,7 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 | --- | --- |
 | $\alpha_4$ | $g_4^{2}/4\pi$, the primordial coupling |
 | $b_0$ | $8$, the one-loop coefficient with the model's content |
-| $\mu_{1}$ | the scale at which $\alpha_4=1$, computed as $54\ \mathrm{MeV}$ |
+| $\mu_{1}$ | the scale at which $\alpha_4=1$, computed as $686\ \mathrm{MeV}$ |
 | $\Lambda$ | the would-be confinement scale; used only for comparison |
 | $M_C$ | the transition, $\gtrsim250\ \mathrm{TeV}$ |
 | $M_X$ | the matching scale, $2.33\times10^{5}\ \mathrm{GeV}$ |

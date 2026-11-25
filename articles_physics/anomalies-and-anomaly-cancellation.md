@@ -207,7 +207,7 @@ T_a\{T_b,T_c\}=\tfrac12\delta_{bc}\,T_a ,
 \mathrm{Tr}_R\,\big[T_a\{T_b,T_c\}\big]=\tfrac12\delta_{bc}\,\mathrm{Tr}_R\,T_a = 0 ,
 $$
 
-the last step because every generator of $SU(2)$ is traceless. No array enters the argument.
+the last step because $T_a$ lies in the derived algebra, so $\mathrm{Tr}_R\,T_a=0$ in every representation. No array enters the argument.
 
 The same conclusion in the rotor's own terms. $SU(2)$ is $\mathrm{SU}(2)=\mathrm{Spin}(3)$, and its carriers are the three the algebra has: the trivial one, the minimal left ideal, and the adjoint. Left multiplication keeps the letter of its operand, so the spinor carrier and its conjugate are the same module, $2\cong\bar 2$; every carrier is therefore real or pseudoreal, the symmetric square contains no invariant third-rank object, and no symmetrised trace of three generators can be non-zero. The vanishing is a consequence of the carrier census, not of an index computation.
 

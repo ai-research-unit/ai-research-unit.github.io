@@ -1,9 +1,9 @@
-# __The Mass Matrix of the Fifteen Gauge Bosons: The $\mathfrak{u}(3)$ Kernel, the Sextet at $32v_C^{2}$, and No Mixing__
+# __The Mass Matrix of the Fifteen Gauge Bosons: The $\mathfrak{u}(3)$ Kernel, the Sextet at $32v^{2}$, and No Mixing__
 
 ## Introduction
 
 **The model gauges fifteen directions, and the matrix that gives them mass has two blocks.** Eight colour directions and one $B-L$ direction stay massless;
-six leptoquark directions take $32v_C^{2}$ at the transition. $8+1+6=15$.
+six leptoquark directions take $32v^{2}$ at the transition. $8+1+6=15$.
 
 **The model.** One model: the $\mathrm{SU}(4)$ model, set out in [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One
 Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). **Its gauge content is the fifteen generators of $\mathfrak{su}(4)$ and
@@ -31,7 +31,7 @@ $$
 |---|---|---|---|---|
 | colour | $8$ | $\mathbf8$ | $0$ | $0$ |
 | $B-L$ | $1$ | $\mathbf1$ | $0$ | $0$ at $M_C$ |
-| leptoquark | $6$ | $\mathbf3$ and $\bar{\mathbf3}$ | $\pm\tfrac23$ | $32v_C^{2}$ |
+| leptoquark | $6$ | $\mathbf3$ and $\bar{\mathbf3}$ | $\pm\tfrac23$ | $32v^{2}$ |
 
 $8+1+6=15$. **Two blocks, three rows**: the two massless rows are the kernel and they are counted separately because they are zero for two different reasons.
 
@@ -64,20 +64,20 @@ corpus's claim that colour is a stabiliser at every scale.
 ## The $B-L$ Direction: The Ninth Zero
 
 **The corner is the vacuum's own direction, and its mass term vanishes identically.** $D=\operatorname{diag}(-3,1,1,1)$ is the $B-L$ generator up to
-normalisation, so the mass functional $2v_C^{2}\langle[D,[D,A]],A\rangle$ at $A=D$ is $2v_C^{2}\langle[D,[D,D]],D\rangle=0$. **The ninth zero is not a
+normalisation, so the mass functional $2v^{2}\langle[D,[D,A]],A\rangle$ at $A=D$ is $2v^{2}\langle[D,[D,D]],D\rangle=0$. **The ninth zero is not a
 stabiliser accident but the statement that $B'$ is the direction the vacuum points along.**
 
 **What happens to it later.** $B'$ is massless at $M_C$ and it acquires a mass only through the mixing that forms the photon, which is below the transition and
 is [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html)'s computation. **Its masslessness here is not a claim about the
 low-energy spectrum**; it is the statement that the fifteen have nine zeros at the transition.
 
-## The Leptoquark Block: Six at $32v_C^{2}$
+## The Leptoquark Block: Six at $32v^{2}$
 
 **The six leptoquark directions are the six planes through the lepton line, and they all take the same mass at the first breaking.** In the physics basis the
-block is $32v_C^{2}$ times the identity of dimension six:
+block is $32v^{2}$ times the identity of dimension six:
 
 $$
-M^{2}_{\text{lepto}}=32v_C^{2}\,\mathrm I_{6},\qquad 32=2\cdot4^{2},\qquad 4=1-(-3).
+M^{2}_{\text{lepto}}=32v^{2}\,\mathrm I_{6},\qquad 32=2\cdot4^{2},\qquad 4=1-(-3).
 $$
 
 The leakage is the entry-by-entry computation of [The Breaking of the Primordial
@@ -87,7 +87,7 @@ eigenvalue difference across it. **The six are equal because the vacuum has one 
 number.
 
 **The later breaking adds nothing here.** $H$ is colour-blind, and the leptoquarks have already left the unbroken algebra at $M_C$. The block stays
-$32v_C^{2}$ at tree level; the one-loop shift is the effective-potential article's.
+$32v^{2}$ at tree level; the one-loop shift is the effective-potential article's.
 
 ## The Count
 
@@ -128,7 +128,7 @@ Eight recomputations, at tree level.
 | the colour block | $\lvert[g,D]\rvert$ for the eight | $0$ for all eight |
 | the colour block, second reason | $H$ and $\Phi$ are colour singlets | $0$ |
 | the $B-L$ row | $\langle[D,[D,D]],D\rangle$ | $0$ exactly |
-| the leptoquark block | six planes through the lepton line | $32v_C^{2}$ six times |
+| the leptoquark block | six planes through the lepton line | $32v^{2}$ six times |
 | the sextet's reason | $2\bigl(\lambda_{\text{lep}}-\lambda_{\text{col}}\bigr)^{2}$ | $2\cdot4^{2}=32$ |
 | the kernel | $8+1$ | $9=\dim\mathfrak{u}(3)$ |
 | the eigenvalues of $\operatorname{ad}(iD)$ | $\operatorname{diag}(-3,1,1,1)$ | $0^{9}\oplus(-4i)^{3}\oplus(+4i)^{3}$ |
@@ -136,7 +136,7 @@ Eight recomputations, at tree level.
 
 ## Summary
 
-**Two blocks.** Colour $8$ and $B-L$ $1$ massless, leptoquark $6$ at $32v_C^{2}$; $8+1+6=15$, one scale, one list of fields.
+**Two blocks.** Colour $8$ and $B-L$ $1$ massless, leptoquark $6$ at $32v^{2}$; $8+1+6=15$, one scale, one list of fields.
 
 **Nine zeros, two reasons.** The eight colour directions are a stabiliser of the vacuum; the $B-L$ direction is the vacuum itself. **The rank at the
 transition is six**, and the kernel is the nine-dimensional $\mathfrak{u}(3)$.
@@ -153,9 +153,9 @@ with the doublet index of the condensate, and their masses are the weak sector's
 | $D=\operatorname{diag}(-3,1,1,1)$ | the vacuum's generator, traceless |
 | $B'$, $C$ | the $(t,t)$ field, the $B-L$ vector |
 | $X^{\alpha}$, $\bar X^{\alpha}$ | the leptoquark and its reverse amplitude, $\alpha=r,g,b$ |
-| $M^{2}_{\text{lepto}}$ | the $6\times6$ leptoquark block, $32v_C^{2}\mathrm I_6$ |
+| $M^{2}_{\text{lepto}}$ | the $6\times6$ leptoquark block, $32v^{2}\mathrm I_6$ |
 | $\operatorname{ad}(iD)$ | the adjoint action whose eigenspaces are the blocks |
-| $v_C$ | the transition condensate |
+| $v$ | the transition condensate in the array normalisation, the unit of $M^{2}=32v^{2}$; the physical value is $v_C=8v/g_4$, so that $M_X^{2}=32v^{2}=\tfrac12g_4^{2}v_C^{2}$ |
 
 ## Further Reading
 

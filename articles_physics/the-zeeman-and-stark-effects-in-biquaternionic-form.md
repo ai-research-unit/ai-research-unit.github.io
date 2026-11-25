@@ -105,7 +105,7 @@ $$
 \tilde{H}_{\Psi,S} = -\vec d\cdot\vec E = -E\,d\,i\vec e_x
 $$
 
-when the dipole operator is taken along the field direction and truncated to its off-diagonal matrix element $d$ between two levels. The choice $i\vec e_x$ is a choice of basis in the two-level space; a general dipole coupling is $-E(d_1\,i\vec e_x + d_2\,i\vec e_y)$, and the two components correspond to the two independent dipole matrix elements. In the two-level truncation the coupling is a traceless Hermitian element of $\mathbb{B}_{\Psi}$ with $\vec h_\Psi = (-d_1E, -d_2E, 0)$.
+when the dipole operator is taken along the field direction and truncated to its off-diagonal matrix element $d$ between two levels. The choice $i\vec e_x$ is a choice of basis in the two-level space; a general dipole coupling is $-E(d_1\,i\vec e_x + d_2\,i\vec e_y)$, and the two components correspond to the two independent dipole matrix elements. In the two-level truncation the coupling is a scalar-free Hermitian element of $\mathbb{B}_{\Psi}$ with $\vec h_\Psi = (-d_1E, -d_2E, 0)$.
 
 A physical dipole operator has a definite parity: $\vec d$ is odd under spatial inversion, so its diagonal matrix elements between states of definite parity vanish. For a pair of levels of opposite parity the only non-zero matrix element is the off-diagonal one, and the coupling therefore has no diagonal part. A spin-1/2 with no orbital structure — a bare magnetic moment — has no electric dipole coupling at this order at all; the electric field couples to the orbital motion, and the two-level truncation above represents a pair of opposite-parity orbital states dressed by the spin. The electron electric dipole moment, which would give a diagonal coupling, is a beyond-Standard-Model quantity and is not part of this framework.
 
@@ -135,7 +135,7 @@ $$
 \tilde H_\Psi(\digamma_{\mathrm{prm}}) = -\frac{hf_{\mathrm{frq},0}}{2}\,i\vec e_z - E\,d\,i\vec e_x .
 $$
 
-The two eigenvalues are the spectral endpoints of a traceless Hermitian element with $\vec h_\Psi = (-Ed,0,-\frac{hf_{\mathrm{frq},0}}{2})$:
+The two eigenvalues are the spectral endpoints of a scalar-free Hermitian element with $\vec h_\Psi = (-Ed,0,-\frac{hf_{\mathrm{frq},0}}{2})$:
 
 $$
 \boxed{\;E_\pm(E) = \pm\sqrt{\left(\frac{hf_{\mathrm{frq},0}}{2}\right)^2 + (Ed)^2}\;}.
@@ -182,7 +182,7 @@ For the hydrogen ground state the sum gives the standard result $\alpha_{\mathrm
 
 ### The Avoided Crossing
 
-The two-level Stark Hamiltonian is the standard avoided-crossing problem. As the field is swept, the levels repel rather than cross; in the absence of the coupling they would cross at zero detuning, and the coupling $Ed$ opens a gap $2|Ed|$ at that point. In the algebra the repulsion is the statement that the two eigenvalues of a traceless Hermitian element are $\pm|\vec h_\Psi|$, and $|\vec h_\Psi| = \sqrt{(Ed)^2 + (\frac{hf_{\mathrm{frq},0}}{2})^2}$ never vanishes when both components are present. The situation is exactly the effective Hamiltonian of the Rabi problem with the roles of detuning and drive exchanged: there the longitudinal component was $(\omega_0-\omega)$ and the transverse was $\omega_1$; here the longitudinal component is the detuning divided by two and the transverse component is the dipole coupling. The two problems are the same algebraic object, read in different physical variables.
+The two-level Stark Hamiltonian is the standard avoided-crossing problem. As the field is swept, the levels repel rather than cross; in the absence of the coupling they would cross at zero detuning, and the coupling $Ed$ opens a gap $2|Ed|$ at that point. In the algebra the repulsion is the statement that the two eigenvalues of a scalar-free Hermitian element are $\pm|\vec h_\Psi|$, and $|\vec h_\Psi| = \sqrt{(Ed)^2 + (\frac{hf_{\mathrm{frq},0}}{2})^2}$ never vanishes when both components are present. The situation is exactly the effective Hamiltonian of the Rabi problem with the roles of detuning and drive exchanged: there the longitudinal component was $(\omega_0-\omega)$ and the transverse was $\omega_1$; here the longitudinal component is the detuning divided by two and the transverse component is the dipole coupling. The two problems are the same algebraic object, read in different physical variables.
 
 ## The Two Couplings Compared
 
@@ -225,9 +225,9 @@ The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec
 **What the algebra organises.**
 
 - **A common home.** Both field couplings are Hermitian elements of $\mathbb{B}_{\Psi}$, and both effects are read off by the two mechanisms of that subspace: the spectral decomposition for the eigenvalues and the normalised Hermitian form for the expectation values.
-- **Isotropy of the Zeeman splitting as a spectral statement.** The eigenvalues $\pm|\vec h_\Psi|$ of a traceless Hermitian element depend on the magnitude of the vector part only, which is why the Zeeman splitting is independent of the field direction.
+- **Isotropy of the Zeeman splitting as a spectral statement.** The eigenvalues $\pm|\vec h_\Psi|$ of a scalar-free Hermitian element depend on the magnitude of the vector part only, which is why the Zeeman splitting is independent of the field direction.
 - **The diagonal/off-diagonal dichotomy.** The distinction between the linear Zeeman effect and the quadratic Stark effect is the distinction between a diagonal and an off-diagonal coupling, and in the algebra this is the distinction between a coupling proportional to $i\vec e_z$ and one proportional to $i\vec e_x$.
-- **A unified avoided crossing.** The Stark two-level problem and the Rabi effective Hamiltonian are the same traceless Hermitian element read in different variables; the framework makes the identity of the two problems explicit.
+- **A unified avoided crossing.** The Stark two-level problem and the Rabi effective Hamiltonian are the same scalar-free Hermitian element read in different variables; the framework makes the identity of the two problems explicit.
 
 **What the algebra does not supply.** The gyromagnetic ratio $\gamma$, the electric dipole matrix element $d$, and the level spacing $hf_{\mathrm{frq},0}$ are external data of the specific system. The algebra supplies the two-dimensional structure and the way the parameters enter it; it does not supply their values. The relativistic corrections that give the electron $g\approx2$ are outside the scope of this subcategory.
 
@@ -254,7 +254,7 @@ $$
 
 with the spectral decomposition $\tilde{H}_{\Psi,Z} = -\frac{hf_{\mathrm{frq},L}}{2}\tilde\Pi_{\mathrm{id},1}(\vec u) +\frac{hf_{\mathrm{frq},L}}{2}\tilde\Pi_{\mathrm{id},2}(\vec u)$ and linear, isotropic splitting $\delta E =\frac{h}{2\pi}|\omega_L| =\frac{h}{2\pi}|\gamma|B$. The field direction selects the eigenbasis $\tilde\Pi_{\mathrm{id},1,2}(\vec u)$ and not the eigenvalues.
 
-The **Stark coupling** is off-diagonal in the energy basis, $\tilde{H}_{\Psi,S} = -E\,d\,i\vec e_x$ in a two-level truncation, and its effect depends on the degeneracy. For a degenerate pair it gives the linear Stark splitting $E_\pm = \pm Ed$, the exact spectrum of a traceless Hermitian element with the vector part along the field. For a non-degenerate pair with splitting $hf_{\mathrm{frq},0}$ it gives $E_\pm = \pm\sqrt{(\frac{hf_{\mathrm{frq},0}}{2})^2+(Ed)^2}$, whose expansion is the quadratic Stark shift
+The **Stark coupling** is off-diagonal in the energy basis, $\tilde{H}_{\Psi,S} = -E\,d\,i\vec e_x$ in a two-level truncation, and its effect depends on the degeneracy. For a degenerate pair it gives the linear Stark splitting $E_\pm = \pm Ed$, the exact spectrum of a scalar-free Hermitian element with the vector part along the field. For a non-degenerate pair with splitting $hf_{\mathrm{frq},0}$ it gives $E_\pm = \pm\sqrt{(\frac{hf_{\mathrm{frq},0}}{2})^2+(Ed)^2}$, whose expansion is the quadratic Stark shift
 
 $$
 \delta E_0 = -\frac{E^{2}\,d^{2}}{hf_{\mathrm{frq},0}} = -\frac{1}{2}\alpha E^2,

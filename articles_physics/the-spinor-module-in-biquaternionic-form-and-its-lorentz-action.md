@@ -141,7 +141,7 @@ The two displays are the two signs of the square, and neither needs an array. A 
 
 ### The Generators
 
-The Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ consists of the traceless elements, and in the units of the algebra it is
+The Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ consists of the scalar-free elements, and in the units of the algebra it is
 
 $$
 \mathfrak{sl}(2,\mathbb{C})=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\;\oplus\;\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}.

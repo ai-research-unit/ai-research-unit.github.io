@@ -142,7 +142,7 @@ $$
 
 **They do not establish that the fourth colour exists.** Every number above is computed from a field content that was declared, and the kaon rate's normalisation is an assumption about a matrix. **A reader who wants evidence has to go to the $K_L\to\mu e$ measurement and to the leptoquark searches, and the corpus's position is that the measurement is the decisive one**: the model fixes the operator and not the mixing, so only a measurement can decide.
 
-**They do not establish a mass.** $M_X$ enters every formula as a free parameter, and the model supplies one value for it: $M_X^{2}=8g_4^{2}v^{2}$ from the adjoint mass matrix, **the only mass scale the model has** (the array-level value, before normalisation, is $32v^{2}$). A reader who wants $v$ has to take it from outside, and the kaon number uses the corner of parameter space as well.
+**They do not establish a mass.** $M_X$ enters every formula as a free parameter, and the model supplies one value for it: $M_X^{2}=32v^{2}=\tfrac12g_4^{2}v_C^{2}$ from the adjoint mass matrix, **the only mass scale the model has**. A reader who wants $v$ has to take it from outside, and the kaon number uses the corner of parameter space as well.
 
 **They do not establish a hierarchy, because there is none to establish.** The three diagrams have three different colour behaviours and one coupling, and **a single coupling cannot produce a ratio of couplings**: $g_4$, $g_s$ and $g_L$ are one symbol here, and the mismatch they would carry belongs to the spectrum below $M_C$.
 
@@ -182,7 +182,7 @@ $$
 
 | Symbol | Meaning |
 | --- | --- |
-| $M_X$ | The leptoquark mass, $M_X^{2}=8g_4^{2}v^{2}$ from the adjoint mass matrix |
+| $M_X$ | The leptoquark mass, $M_X^{2}=32v^{2}=\tfrac12g_4^{2}v_C^{2}$ from the adjoint mass matrix |
 | $U_{qe}$ | The generation matrix entries, not written by the frame |
 | $f_K$ | The kaon decay constant, an imported hadronic number |
 | $P_{L}$, $P_{R}$ | The chiral projectors of the two halves, quartet and conjugate |

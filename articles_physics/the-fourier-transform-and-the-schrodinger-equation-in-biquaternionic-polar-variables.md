@@ -87,7 +87,7 @@ $$
 \partial_{t'}\tilde\Xi=\tilde\Xi\Big[\tfrac12\partial_{t'}\ln \varrho^{2}+i\partial_{t'}\theta_{\mathrm{pha}}+\tilde u_{\mathrm r}^{-1}\big(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{t'}\tilde U_{\Psi,\mathrm b}\big)\tilde u_{\mathrm r}+\tilde u_{\mathrm r}^{-1}\partial_{t'}\tilde u_{\mathrm r}\Big],
 $$
 
-and the four terms are, in order, a real central number, an imaginary central number, a Hermitian scalar-free element and an anti-Hermitian traceless element. **The bracket is not four equations; it is one element read in its four types.**
+and the four terms are, in order, a real central number, an imaginary central number, a Hermitian scalar-free element and an anti-Hermitian scalar-free element. **The bracket is not four equations; it is one element read in its four types.**
 
 The symbol occupies two of the four. In the constant setting the symbol is $hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$, whose imaginary central part vanishes and whose anti-Hermitian scalar-free part vanishes. What remains is the real central part $hf_{\mathrm{frq}}-h_t$ and the imaginary-vector part $i\vec h_\Psi$. The phase type and the rotor type are empty in frequency space, and the emptiness is the statement that a plane wave has a constant phase rate and a constant rotor.
 

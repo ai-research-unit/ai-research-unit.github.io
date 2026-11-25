@@ -14,11 +14,11 @@ and then uses the value to turn the $K_L\to\mu e$ rate into a mass bound. **Noth
 
 **What this article supplies.**
 
-- *The coefficient.* $b_0=\tfrac{20}{3}=6.667$ for $\mathrm{SU}(4)$ with this content, in the same convention in which QCD's is $11-\tfrac23N_f$.
+- *The coefficient.* $b_0=8$ for $\mathrm{SU}(4)$ with this content, in the same convention in which QCD's is $11-\tfrac23N_f$.
 - *The direction.* $b_0>0$, so the coupling falls as the scale rises: the primordial phase is asymptotically free, and it is weakest where the corpus needs it, at the transition.
-- *The numbers.* $\alpha_4(M_X)=0.058$, $\alpha_4(M_{P})=0.020$, and a Landau pole at $21\ \mathrm{MeV}$ that lies far below the transition and therefore outside the theory's claim.
+- *The numbers.* $\alpha_4(M_X)=0.058$, $\alpha_4(M_{P})=0.017$, and the pole at $313\ \mathrm{MeV}$ that lies far below the transition and therefore outside the theory's claim.
 - *The ledger.* The value is imported; the coefficient is computed; the running is computed; the pole is a boundary of the description and not a prediction.
-- *The diagnostic.* The scalar term depends on which scalar the model has, so $b_0$ reads the scalar content: the matrix-doublet gives $\tfrac{20}{3}$, a solitary quartet would give $8$, and the two differ by more than the two-loop term the article omits.
+- *The diagnostic.* The scalar term depends on which scalar the model has, so $b_0$ reads the scalar content: the Hermitian matrix gives $8$, a complex one would give $\tfrac{20}{3}$, a doubled label would give $4$, and each difference is larger than the two-loop term the article omits.
 
 **What the article does not do.** It does not compute the two-loop coefficient, the matching beyond leading order, or the anomalous dimensions of the matter fields. Each is named where it would enter and none is attempted.
 
@@ -36,9 +36,9 @@ $$
 \mu\frac{d\alpha_4}{d\mu}=-\frac{b_0}{2\pi}\alpha_4^{2} ,
 $$
 
-**the same convention QCD's article uses**, so that the number $\tfrac{20}{3}$ below can be set beside $11-\tfrac23N_f$ without a conversion.
+**the same convention QCD's article uses**, so that the number $8$ below can be set beside $11-\tfrac23N_f$ without a conversion.
 
-**The mass scale.** $M_X=\tfrac12g_4^{2}v_C^{2}$ up to the corpus's normalisation of $v_C$, and $M_X\gtrsim3.7\times10^{-5}\ \mathrm{J}$, which is $2.3\times10^{5}\ \mathrm{GeV}$ or $230\ \mathrm{TeV}$. **Every number below uses $M_X=3.73\times10^{-5}\ \mathrm{J}$**, the row of the coupling article's table that sits at the $K_L\to\mu e$ limit, and the choice is the conservative one: a larger $M_X$ gives a smaller $\alpha_4$ and a weaker phase.
+**The mass scale.** $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$ up to the corpus's normalisation of $v_C$, and $M_X\gtrsim3.7\times10^{-5}\ \mathrm{J}$, which is $2.3\times10^{5}\ \mathrm{GeV}$ or $230\ \mathrm{TeV}$. **Every number below uses $M_X=3.73\times10^{-5}\ \mathrm{J}$**, the row of the coupling article's table that sits at the $K_L\to\mu e$ limit, and the choice is the conservative one: a larger $M_X$ gives a smaller $\alpha_4$ and a weaker phase.
 
 **The scale above.** $M_{P}=1.22\times10^{19}\ \mathrm{GeV}$ is used only as a far end at which to evaluate the solution. **No claim is made that the primordial phase survives to it**, and §*The Pole Below the Transition* says what would end it.
 
@@ -52,13 +52,13 @@ $$
 
 **The value is imported, and the import is not a derivation.** $\alpha_s(M_X)$ is obtained by running the measured $\alpha_s(M_Z)=0.1179$ up through the Standard Model's content. **That running uses the strong sector's own coefficient and not $\mathrm{SU}(4)$'s**, so the identification $g_4^{2}=4\pi\alpha_s(M_X)$ is a matching statement: it says the two theories are the same theory at $M_X$. **The corpus imposes it at $M_X$ while a strict matching is at $M_C$**, and the two differ by one interval of running.
 
-**How large the difference is.** Between $M_C$ and $M_X$ the strong coupling runs with $b_0=7$ at six flavours and the primordial coupling with $b_0=\tfrac{20}{3}$, so the two inverse couplings separate by
+**How large the difference is.** Between $M_C$ and $M_X$ the strong coupling runs with $b_0=7$ at six flavours and the primordial coupling with $b_0=8$, so the two inverse couplings separate by
 
 $$
-\Delta\Bigl(\frac{1}{\alpha}\Bigr)=\frac{\tfrac{20}{3}-7}{2\pi}\ln\frac{M_X}{M_C}=-0.053\,\ln\frac{M_X}{M_C} .
+\Delta\Bigl(\frac{1}{\alpha}\Bigr)=\frac{8-7}{2\pi}\ln\frac{M_X}{M_C}=+0.159\,\ln\frac{M_X}{M_C} .
 $$
 
-**For $M_X$ within a factor of two of $M_C$ that is $-0.037$ against $1/\alpha_4\approx17.2$, a shift of $0.2$ per cent** — smaller than the two-loop term the article already omits. The corpus's choice of scale is therefore consistent with its own truncation, and it is stated here so that no later article has to guess which scale the identification uses.
+**For $M_X$ within a factor of two of $M_C$ that is $+0.11$ against $1/\alpha_4\approx17.2$, a shift of $0.6$ per cent** — smaller than the two-loop term the article already omits. The corpus's choice of scale is therefore consistent with its own truncation, and it is stated here so that no later article has to guess which scale the identification uses.
 
 ## The Coefficient Above $M_C$
 
@@ -209,9 +209,9 @@ The model has one coupling and this article computes what it does above $M_C$. *
 
 **The running faces up.** $b_0>0$, so $\alpha_4$ falls from $0.0581$ at $M_X$ to $0.0174$ at the Planck scale, and the primordial phase is asymptotically free and weakly coupled everywhere it exists. **That is what makes the tree-level rates of the block legitimate and what forbids a confining primordial phase.**
 
-**The coefficient is a diagnostic of the scalar sector.** Sixteen real components give $8$; a complex matrix doubles the term and gives $\tfrac{20}{3}$; a further label doubles it again and gives $\tfrac43$. **Each doubling costs $\tfrac43$**, which is larger than the two-loop term the article omits, so the scalar count is not decoration in this section.
+**The coefficient is a diagnostic of the scalar sector.** Sixteen real components give $8$; a complex matrix doubles the term and gives $\tfrac{20}{3}$; a further label doubles it again and gives $4$. **Each doubling costs $\tfrac43$**, which is larger than the two-loop term the article omits, so the scalar count is not decoration in this section.
 
-**The value is imported and the running is computed.** $g_4^{2}=4\pi\alpha_s(M_X)$ is a matching to measured data; the coefficient, the solution and the numbers are not. **The import is exact at $M_X$ and approximate as a matching at $M_C$**, by $0.2$ per cent for $M_X$ within a factor of two of $M_C$, which is far inside the truncation the article already declares.
+**The value is imported and the running is computed.** $g_4^{2}=4\pi\alpha_s(M_X)$ is a matching to measured data; the coefficient, the solution and the numbers are not. **The import is exact at $M_X$ and approximate as a matching at $M_C$**, by $0.6$ per cent for $M_X$ within a factor of two of $M_C$, which is far inside the truncation the article already declares.
 
 **The Landau pole at $313\ \mathrm{MeV}$ is arithmetic and not physics.** It lies more than five decades below $M_C$, where the coefficient is the Standard Model's and the line of this article is not the line the theory follows.
 
@@ -238,7 +238,7 @@ The model has one coupling and this article computes what it does above $M_C$. *
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The boundary condition, the $\tfrac38$ arithmetic, and the $K_L\to\mu e$ bound that fixes $M_X$.
 - [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The content whose Dynkin indices the coefficient counts.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The action the coupling multiplies, and the normalisation $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ this article assumes.
-- [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). The same line for $\mathrm{SU}(3)$, whose coefficient $11-\tfrac23N_f$ this article's $b_0=\tfrac{20}{3}$ is set beside.
+- [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). The same line for $\mathrm{SU}(3)$, whose coefficient $11-\tfrac23N_f$ this article's $b_0=8$ is set beside.
 - [Why There Is No Confinement Above $M_C$](why-there-is-no-confinement-above-m-c.html). The mechanism, which cites this article for the number.
 - [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html). The census that fixes the scalar content the coefficient counts.
 - [The Threshold Scales: $M_C$, $M_W$ and What Would Fix Them](the-threshold-scales-mc-mw-and-what-would-fix-them.html). The free scale this article takes from the leptoquark bound.

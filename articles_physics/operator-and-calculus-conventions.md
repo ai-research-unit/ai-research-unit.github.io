@@ -10,6 +10,8 @@ The article assumes the base of *Algebra and Element Conventions*, the products 
 
 An operator acting by multiplication is the element it multiplies by. Every element acts on the algebra, on the left $L_{\tilde Q}$ or on the right $R_{\tilde Q}$, and an operator whose letter is the letter of an element is that element. The glyph of the operator is therefore the glyph of its element, and the marks are read on it as on the element: the tilde marks the quaternionic element read with its scalar part, the arrow the pure element read on its vector part alone. Neither mark says that a glyph is an operator, and no mark is added to say it.
 
+An operator is never called traceless. The trace belongs to a matrix, and no matrix is attached to $L_{\tilde Q}$, to $R_{\tilde Q}$, to $L_{\tilde Q}R_{\tilde P}$ or to $\operatorname{ad}_X$ by the object itself, so the word is not used on an operator. The replacement is *derived*: an operator's value lies in the derived algebra $[\mathfrak g,\mathfrak g]=\operatorname{im}\operatorname{ad}$, which for $M_n(\mathbb C)$ is $\ker\operatorname{tr}\cong\mathfrak{sl}_n$ of dimension $n^2-1$. A statement about the trace of an operator names the matrix in the same sentence, $\operatorname{tr}L_{\tilde Q}$, and the rule with both replacements is *Algebra and Element Conventions*, §*The Elements and their Coefficients*.
+
 The named operators. The structural operators take an upright capital letter and carry the element in the subscript, where it keeps its own mark:
 
 | Operator | Glyph |

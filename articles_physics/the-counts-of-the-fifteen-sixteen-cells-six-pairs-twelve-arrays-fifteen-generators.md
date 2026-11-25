@@ -36,7 +36,7 @@ $$
 | mixed band | $6$ | the $t$ row and the $t$ column, off the corner |
 | colour block | $9$ | the $3\times3$ grid on $x,y,z$ |
 
-$1+6+9=16$. **The generator count of the same three blocks is $1+6+8=15$**, because the colour block has nine cells and eight traceless generators.
+$1+6+9=16$. **The generator count of the same three blocks is $1+6+8=15$**, because the colour block has nine cells and eight derived generators.
 
 **Why the cells are counted at all.** The cell count says how many amplitudes a generator moves: two for an off-diagonal array, none for a diagonal one. **The mass articles say "one entry per plane" and the classification says "one name in every cell"**, and both are statements about cells.
 

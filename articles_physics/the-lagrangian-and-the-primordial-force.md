@@ -4,7 +4,7 @@
 
 This article writes the $\mathrm{SU}(4)$ action in one display, derives the equations of motion and the constraints the display implies, and states what the display is: a matrix transcription of the Yang–Mills action onto fifteen generators, and not an action built from the algebra's own elements.
 
-The pieces of the action exist in the corpus as fragments. *The Feynman Rules of the Model* writes one covariant derivative and four pieces and then reads rules off them; the scalar census counts sixty-four real components and says in as many words that it establishes no potential; the Yukawa sector diagonalises one matrix. **No article writes the four pieces in one display and derives from them.** This one does, and it is the article the block exists for: every other force block of the corpus carries its Lagrangian article, and the primordial force carried none.
+The pieces of the action exist in the corpus as fragments. *The Feynman Rules of the Model* writes one covariant derivative and four pieces and then reads rules off them; the scalar census counts sixteen real components and says in as many words that it establishes no potential; the Yukawa sector diagonalises one matrix. **No article writes the four pieces in one display and derives from them.** This one does, and it is the article the block exists for: every other force block of the corpus carries its Lagrangian article, and the primordial force carried none.
 
 The parent is *The Lagrangian and the Non-Abelian Gauge Fields*, which writes $-\tfrac12\operatorname{tr}(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath})$ for $\mathrm{SU}(2)$ and proves that the trace which makes the density gauge invariant is the matrix trace and not the corpus's informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. **That step does not change here.** What changes is the size of the matrix and the status of the result, and the status is the harder half.
 
@@ -40,7 +40,7 @@ The conventions are restated so that every sign below is checkable from this pag
 
 **The traces.** $\operatorname{tr}$ is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ enlarged to the $4\times4$ matrices that represent $\mathfrak{su}(4)$; $\mathrm{Sc}$ is the coefficient of $e_t$ in an element of $\mathbb{B}$. **The two are different functionals and only the first is used in the action**, for the reason §*The Trace and Not the Reduction* gives.
 
-**The fields.** $A_{a,\imath}$ is the gauge field of generator $a$, real; $F_{a,\imath\jmath}$ its field strength; $\xi_{f}$, $f=1,\dots,16$, the Weyl fields of $2\cdot\mathbf{4}\oplus2\cdot\bar{\mathbf{4}}$; $\Phi$ the scalar, a $4\times4$ matrix in the colour indices carrying the same two-valued copy index as the sixteen, so sixteen complex entries per copy value, thirty-two complex and sixty-four real in all; $\gamma_{\imath}$ the Dirac matrices, written low.
+**The fields.** $A_{a,\imath}$ is the gauge field of generator $a$, real; $F_{a,\imath\jmath}$ its field strength; $\xi_{f}$, $f=1,\dots,16$, the Weyl fields of $2\cdot\mathbf{4}\oplus2\cdot\bar{\mathbf{4}}$; $\Phi$ the scalar, a $4\times4$ Hermitian matrix in the colour indices and carrying no copy index, so $15+1=16$ real parameters; $\gamma_{\imath}$ the Dirac matrices, written low.
 
 ## The Display
 
@@ -272,7 +272,7 @@ The $\mathrm{SU}(4)$ Lagrangian is one coupling on fifteen generators and four p
 
 The normalisation is one rotation and two rescalings. The printed fifteen fail to be orthogonal in exactly one place, $\operatorname{tr}(d_{2}d_{3})=+1$; the rotation $c_{2}=d_{2}+d_{3}$, $c_{3}=d_{2}-d_{3}$ repairs it, with norms $2$ and $6$; and $t_{a}=iG_{a}/2$, $t_{15}=iG_{15}/\sqrt{24}$ then give $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ for all fifteen. The corner is longer than a plane by $\sqrt6$, so every vertex that touches $B'$ carries the factor $1/\sqrt6$, and that factor comes from the trace and not from the group.
 
-The variation gives one equation and fifteen constraints. $D_{\imath}F_{a,\imath\jmath}=j_{a,\jmath}$ with a fermion current and a scalar current that vanishes at $\langle\Phi\rangle=0$; the temporal component is a Gauss law per generator; thirty degrees of freedom survive for the gauge fields, thirty-two states for the fermions and sixty-four real for the scalar, with the ghosts subtracting their own.
+The variation gives one equation and fifteen constraints. $D_{\imath}F_{a,\imath\jmath}=j_{a,\jmath}$ with a fermion current and a scalar current that vanishes at $\langle\Phi\rangle=0$; the temporal component is a Gauss law per generator; thirty degrees of freedom survive for the gauge fields, thirty-two states for the fermions and sixteen real for the scalar, with the ghosts subtracting their own.
 
 The trace is the matrix trace and not the informational reduction. Only cyclicity makes the density invariant, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is not cyclic, and the two agree only where one factor is a scalar. **This is the sharpest technical point of the article**: the one pairing the algebra owns is the one the action cannot use.
 

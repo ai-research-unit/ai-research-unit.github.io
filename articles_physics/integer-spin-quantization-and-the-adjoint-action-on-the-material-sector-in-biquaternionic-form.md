@@ -262,7 +262,7 @@ The massive integer-spin case is the case in which the little group is $\mathrm{
 
 ## Open Questions
 
-1. **The internal action for higher spin.** For $s\ge2$ the internal angular momentum is the sum of adjoint actions on the tensor factors, and the trace removal uses the bilinear form. Is there an irreducible algebraic object — a rank-$s$ symmetric traceless element built from a single biquaternion rather than a tensor power — that carries the spin-$s$ representation, and does such an object exist for every $s$?
+1. **The internal action for higher spin.** For $s\ge2$ the internal angular momentum is the sum of adjoint actions on the tensor factors, and the trace removal uses the bilinear form. Is there an irreducible algebraic object — a rank-$s$ symmetric scalar-free element built from a single biquaternion rather than a tensor power — that carries the spin-$s$ representation, and does such an object exist for every $s$?
 
 2. **Spin and sector.** The adjoint action on $\mathbb{B}_{\Phi}$ gives the triplet and on $\mathbb{B}_{\Psi}$ gives another triplet; the two sectors are exchanged by multiplication by $i$. Does the physical spin-one field select one sector, and is the selection the same one that the Proca Lagrangian makes by placing the potential in $\mathbb{B}_{\Phi}$?
 

@@ -83,7 +83,7 @@ a genuinely non-abelian curvature, nonzero and non-central. The reduction to a s
 $$
 F_{\mathrm g,\imath\jmath} = \tilde U\,F_{\imath\jmath}\,\tilde U^{-1},
 $$
-which was verified both for an infinitesimal local $\tilde U = e_t + \varepsilon g$ with $g\in\mathrm{SU}(2)$ and for a finite constant $SU(2)$ element; in each case the residual vanished exactly. The trace $\mathrm{Tr}(F_{\imath\jmath})$ is invariant — here it vanishes identically, since $\mathrm{SL}(2,\mathbb{C})$ elements are traceless — but the component is not: it is rotated by the group, and only gauge-invariant polynomials in $F$ are observables. Here and below $\mathrm{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ factor, not the informational pairing formula.
+which was verified both for an infinitesimal local $\tilde U = e_t + \varepsilon g$ with $g\in\mathrm{SU}(2)$ and for a finite constant $SU(2)$ element; in each case the residual vanished exactly. The trace $\mathrm{Tr}(F_{\imath\jmath})$ is invariant — here it vanishes identically, since the curvature is valued in the derived algebra — but the component is not: it is rotated by the group, and only gauge-invariant polynomials in $F$ are observables. Here and below $\mathrm{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ factor, not the informational pairing formula.
 
 ## The Covariant Derivative on the Curvature: Two-Sided, Not One-Sided
 

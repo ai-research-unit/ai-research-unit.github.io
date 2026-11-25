@@ -238,7 +238,7 @@ The field is quantized with anticommutators, not commutators, and the reason is 
 
 ## The Propagator and Its Gauge Fixing
 
-The momentum-space propagator is the inverse of the quadratic form that the field equation and the constraint define on the traceless subspace. It is of the general form
+The momentum-space propagator is the inverse of the quadratic form that the field equation and the constraint define on the constrained subspace. It is of the general form
 
 $$
 G_{\imath\jmath}(p) = \frac{i}{N+h^{2}\nu_m^{2}}\Bigl[\bigl(\mathcal{D}_p+ mc\bigr)\Pi_{\imath\jmath} + \text{(lower-spin terms)}\Bigr] ,
@@ -429,7 +429,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\zeta_{\imath,r},v_{\imath,r}$, $r=1,\dots,4$ | Polarization spinors; helicities $\pm\tfrac32,\pm\tfrac12$ |
 | $\Pi_{\imath\jmath}$ | Transverse traceless (Rarita–Schwinger) projector; rank $8$, and $4$ on positive-energy solutions |
 | $\sum_r \zeta_{\imath,r}\bar\zeta_{\jmath,r}=(\mathcal{D}_p+mc)\Pi_{\imath\jmath}$ | Completeness relation, carried by the transverse projector |
-| $G_{\imath\jmath}(p)$ | Propagator; inverse of the quadratic form on the traceless subspace |
+| $G_{\imath\jmath}(p)$ | Propagator; inverse of the quadratic form on the constrained subspace |
 | $\varepsilon=(1,-1,-1,-1)$ | sign vector of the generators; the material interval is its negative |
 
 ## Further Reading

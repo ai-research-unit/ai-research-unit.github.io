@@ -217,7 +217,7 @@ $$
 2\,\mathrm{Sc}L_{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad 2\,\mathrm{Sc}M=0\iff\tilde Q\in\mathbb{B}_{V} .
 $$
 
-**The split is exact and it is the scalar–vector split in the image.** The trace is additive, bilinear and blind to everything except $Q_t$; the traceless remainder carries the three directions. In this basis the traceless image is also the antisymmetric one, $M^{\mathsf T}=-M$, so inside the image the trace condition and the antisymmetry are one condition.
+**The split is exact and it is the scalar–vector split in the image.** The trace is additive, bilinear and blind to everything except $Q_t$; the scalar-free remainder carries the three directions. In this basis the scalar-free image is also the antisymmetric one, $M^{\mathsf T}=-M$, so inside the image the trace condition and the antisymmetry are one condition.
 
 **The physical reading is the scalar–vector reading in matrix form.** The scalar part is the complex time, so the trace is the clock; the vector part is the three directions, so the traceless part is the motion. A matrix statement about a biquaternion that uses only the trace is a statement about time, and it cannot see a direction.
 
