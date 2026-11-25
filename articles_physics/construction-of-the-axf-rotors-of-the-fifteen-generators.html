@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Construction of the AXF Matrices of the Twenty-One Rotors: Fifteen for $\mathfrak{su}(4)$, Three for $\mathfrak{su}(2)_L$, Three for $\mathfrak{su}(2)_R$ — Biquaternion Universe</title>
-  <meta name="description" content="This article exponentiates the twenty-one arrays that the construction article builds, and prints the twenty-one answers. The construction article…">
+  <title>Construction of the AXF Rotors of the Fifteen Generators: One Closed Form per Array, and Where the Half Angle Comes From — Biquaternion Universe</title>
+  <meta name="description" content="This article exponentiates the fifteen arrays that the construction article builds, and prints the fifteen answers. The construction article supplies the…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -69,12 +69,12 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="construction-of-the-axf-matrices-of-the-twenty-one-rotors-fifteen-for-math0-three-for-math1-three-for-math2"><strong>Construction of the AXF Matrices of the Twenty-One Rotors: Fifteen for $\mathfrak{su}(4)$, Three for $\mathfrak{su}(2)_L$, Three for $\mathfrak{su}(2)_R$</strong></h1>
+        <h1 id="construction-of-the-axf-rotors-of-the-fifteen-generators-one-closed-form-per-array-and-where-the-half-angle-comes-from"><strong>Construction of the AXF Rotors of the Fifteen Generators: One Closed Form per Array, and Where the Half Angle Comes From</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>This article exponentiates the twenty-one arrays that <a href="construction-of-the-axf-matrices-of-the-twenty-one-generators.html">the construction article</a> builds, and prints the twenty-one answers.</strong> The construction article supplies the directions; this article supplies the motion along them, one closed form per array, in the same axis-free frame and with the same names. <strong>The order is not the construction article's</strong>, and it is explained in the next paragraph.</p>
-<p><strong>Three articles, three questions, and the division is deliberate.</strong> <a href="construction-of-the-axf-matrices-of-the-twenty-one-generators.html">The construction article</a> answers <em>what is the array</em>. <a href="the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The rotors article</a> answers <em>which space does it turn, and why is none of them a boost</em>. <strong>This article answers only <em>what is the turned thing, written out</em></strong> — and it does so for all twenty-one rather than for the few the theorem needs.</p>
-<p><strong>One structural fact makes all of this elementary, and it is worth stating before anything is computed: every one of the twenty-one arrays squares to a diagonal matrix.</strong> Twenty of them square to a scalar multiple of a rank-two projector, and the corner squares to a diagonal with two distinct values. <strong>Because the square is diagonal, the exponential is a two-term formula, and no eigen-decomposition is ever needed.</strong></p>
-<p><strong>What this article establishes that the two companions do not state.</strong> Six of the twenty-one rotors are <strong>products of the other fifteen's rotors</strong>, exactly and not approximately, because the real planes and the weak arrays are related by $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-(T^{L}_{a}-T^{R}_{a})$ and the two weak triples commute. <strong>So the count of twenty-one is a count of arrays, and the count of independent one-parameter circles is fifteen</strong> — the names-against-directions distinction of <a href="the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions.html">the five counts</a>, read on the rotor side.</p>
+<p><strong>This article exponentiates the fifteen arrays that <a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">the construction article</a> builds, and prints the fifteen answers.</strong> The construction article supplies the directions; this article supplies the motion along them, one closed form per array, in the same axis-free frame and with the same names. <strong>The order is not the construction article's</strong>, and it is explained in the next paragraph.</p>
+<p><strong>Three articles, three questions, and the division is deliberate.</strong> <a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">The construction article</a> answers <em>what is the array</em>. <a href="the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The rotors article</a> answers <em>which space does it turn, and why is none of them a boost</em>. <strong>This article answers only <em>what is the turned thing, written out</em></strong> — and it does so for all fifteen rather than for the few the theorem needs.</p>
+<p><strong>One structural fact makes all of this elementary, and it is worth stating before anything is computed: every one of the fifteen arrays squares to a diagonal matrix.</strong> Fourteen of them square to a scalar multiple of a rank-two projector, and the corner squares to a diagonal with two distinct values. <strong>Because the square is diagonal, the exponential is a two-term formula, and no eigen-decomposition is ever needed.</strong></p>
+<p><strong>What this article establishes that the two companions do not state.</strong> The fifteen rotors are fifteen one-parameter circles, and <strong>the six arrays $T^{L}_{a}$, $T^{R}_{a}$ are not a sixteenth family</strong>: each of them is a half-sum of two of these circles, and its rotor is a product of two of the rotors printed here, exactly and not approximately. <strong>So the half angle is not a feature of this model's bosons.</strong> It is what a rotation looks like when it is read in a basis half way between two rotors, and §<em>Where the Half Angle Comes From</em> shows the composition in both directions.</p>
 <h2 id="conventions">Conventions</h2>
 <p><strong>The names and the basis are the construction article's, and nothing is renamed here.</strong> The order is not the construction article's. <strong>The twelve real arrays come first and the nine complex ones second, because that split is the eigenspace decomposition of one involution of $\mathfrak{su}(4)$ and not a choice of presentation</strong>: complex conjugation on $\mathfrak{su}(4)$ is minus transpose, its fixed set is $\mathfrak{so}(4)$, the six-dimensional algebra of the real quartet, and its other eigenspace is nine-dimensional. <a href="../articles_internal/structures/structure-SU4-SO4-relations.html">The Relation between $\mathfrak{su}(4)$ and $\mathfrak{so}(4)$</a> proves the decomposition, counts it, and answers the objection that the construction article's pairing $\{A_{jk},iS_{jk}\}$ is more economical. <strong>That pairing is more economical by one sentence and weaker by one argument</strong>, since it puts one leg in each eigenspace.</p>
 <p>$$
@@ -84,7 +84,7 @@ $$</p>
 <p>$$
 T^{L}_{a}=\tfrac12 L_{\vec e_{a}},\qquad T^{R}_{a}=\tfrac12 R_{\vec e_{a}} ,
 $$</p>
-<p><strong>with $L$ and $R$ the left and right multiplication by the unit $\vec e_{a}$.</strong> The matrices are printed in <a href="the-21-axf-matrices-of-the-bosons-in-detail.html">the detail article</a> and are not reprinted except where a rotor needs one.</p>
+<p><strong>with $L$ and $R$ the left and right multiplication by the unit $\vec e_{a}$.</strong> The matrices are printed in <a href="the-15-axf-matrices-of-the-bosons-in-detail.html">the detail article</a> and are not reprinted except where a rotor needs one.</p>
 <p><strong>One rotor per array, one parameter per rotor.</strong></p>
 <p>$$
 R_{a}(\theta)=\exp\bigl(\theta\,G_{a}\bigr),
@@ -92,9 +92,9 @@ R_{a}(\theta)=\exp\bigl(\theta\,G_{a}\bigr),
 G_{a}\ \text{anti-hermitian},
 $$</p>
 <p><strong>and the hermitian reading is the same rotor with the sign of the parameter flipped.</strong> With $T_{a}=iG_{a}$ hermitian, $\exp(i\theta T_{a})=\exp(-\theta G_{a})=R_{a}(-\theta)$, <strong>so nothing is lost and nothing is gained by the change of convention.</strong> The article uses the anti-hermitian $G$ because that is what the construction article prints.</p>
-<p><strong>Every rotor has determinant one, and the reason is one line.</strong> Since $\operatorname{tr}G_{a}=0$ for all twenty-one — the planes are off-diagonal, the diagonals are traceless, and $T^{L}_{a}$ and $T^{R}_{a}$ are antisymmetric — we have $\det R_{a}(\theta)=\exp(\theta\operatorname{tr}G_{a})=1$. <strong>So all twenty-one rotors sit in $\mathrm{SU}(4)$, and the twelve whose arrays are real sit in $\mathrm{SO}(4)$.</strong></p>
-<h2 id="the-one-formula-and-the-twenty-arrays-it-covers">The One Formula, and the Twenty Arrays It Covers</h2>
-<p><strong>Twenty of the twenty-one arrays obey $G^{2}=-\omega^{2}P$ with $P$ a projector, and then the exponential is three terms.</strong></p>
+<p><strong>Every rotor has determinant one, and the reason is one line.</strong> Since $\operatorname{tr}G_{a}=0$ for all fifteen — the planes are off-diagonal and the diagonals are traceless — we have $\det R_{a}(\theta)=\exp(\theta\operatorname{tr}G_{a})=1$. <strong>So all fifteen rotors sit in $\mathrm{SU}(4)$, and the six whose arrays are real sit in $\mathrm{SO}(4)$.</strong></p>
+<h2 id="the-one-formula-and-the-fourteen-arrays-it-covers">The One Formula, and the Fourteen Arrays It Covers</h2>
+<p><strong>Fourteen of the fifteen arrays obey $G^{2}=-\omega^{2}P$ with $P$ a projector, and then the exponential is three terms.</strong></p>
 <p>$$
 G^{2}=-\omega^{2}P,\quad P^{2}=P
 \qquad\Longrightarrow\qquad
@@ -150,8 +150,8 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The corner is the one array whose square is not a scalar multiple of a projector, and it is handled as two blocks of the same formula</strong>: $\omega=3$ on the lepton line and $\omega=1$ on the colour triple. <strong>That is the whole of its exceptional treatment</strong>, and the two-block reading is what produces the four phases rather than two.</p>
-<p><strong>The half in $T^{L}_{a}=\tfrac12L_{\vec e_{a}}$ is exactly the half angle in its rotor.</strong> This is the only place in the twenty-one where the parameter and the turned angle differ, and it is the source of every half-angle statement in the corpus. <strong>A reader who expects $\theta$ and finds $\theta/2$ has found the $\tfrac12$ of the generator's definition, not an error.</strong></p>
-<p><strong>The formula was checked against a Taylor series at $\theta=0.37$ for all twenty-one arrays, maximum deviation $9.3\times10^{-16}$.</strong> The check is one line of arithmetic per family and it is in the table at the end.</p>
+<p><strong>The half in $T^{L}_{a}=\tfrac12L_{\vec e_{a}}$ is exactly the half angle in its rotor.</strong> It is the only place where the parameter and the turned angle differ, <strong>and it belongs to a composite and not to a generator</strong>: the model's fifteen have no half angle, because none of them is half of another. <strong>A reader who expects $\theta$ and finds $\theta/2$ has found the $\tfrac12$ of a basis that is not this model's.</strong></p>
+<p><strong>The formula was checked against a Taylor series at $\theta=0.37$ for all fifteen arrays, maximum deviation $9.3\times10^{-16}$.</strong> The check is one line of arithmetic per family and it is in the table at the end.</p>
 <h2 id="the-six-real-planes-rotors-of-the-quartet">The Six Real Planes: Rotors of the Quartet</h2>
 <p><strong>A real plane gives a real orthogonal rotor, so these six turn the quartet itself.</strong></p>
 <p>$$
@@ -215,7 +215,7 @@ $$</p>
 \exp\Bigl(k\tfrac{\pi}{2}\,iD\Bigr)=i^{k}\,\mathbb{1},
 \qquad k=0,1,2,3,
 $$</p>
-<p><strong>so $iD$ generates a circle whose image contains the centre four times, and it is the only array of the twenty-one that reaches the centre inside a single turn.</strong> The six planes and the two colour diagonals are central only at $\theta\in2\pi\mathbb{Z}$, with value $+1$; the six weak arrays are central at $\theta\in2k\pi$, with value $(-1)^{k}$. <strong>Only the corner reaches $i\mathbb{1}$ and $-i\mathbb{1}$, and only it reaches the centre four times in one period.</strong> This is the rotor-side reading of the corpus's "central four times a turn".</p>
+<p><strong>so $iD$ generates a circle whose image contains the centre four times, and it is the only array of the fifteen that reaches the centre inside a single turn.</strong> The six planes and the two colour diagonals are central only at $\theta\in2\pi\mathbb{Z}$, with value $+1$; <strong>the six composites at $\theta\in2k\pi$, with value $(-1)^{k}$, and that factor is the half angle again.</strong> <strong>Only the corner reaches $i\mathbb{1}$ and $-i\mathbb{1}$, and only it reaches the centre four times in one period.</strong> This is the rotor-side reading of the corpus's "central four times a turn".</p>
 <p><strong>The two colour diagonals give two opposite phases each, and no mixing.</strong></p>
 <p>$$
 \exp\bigl(\theta d_{2}\bigr)=\operatorname{diag}\bigl(1,\,e^{i\theta},\,e^{-i\theta},\,1\bigr),
@@ -229,8 +229,8 @@ $$</p>
 =\operatorname{diag}\Bigl(e^{-3i\alpha},\,e^{i(\alpha+\beta)},\,e^{i(\alpha-\beta+\gamma)},\,e^{i(\alpha-\gamma)}\Bigr),
 $$</p>
 <p><strong>four phases with one relation among them, which is rank three.</strong> No Baker–Campbell–Hausdorff correction appears because no bracket is nonzero — <strong>this is the one place in the twenty-one where a multi-parameter rotor is written in closed form</strong>, and it is closed for the reason the Cartan is abelian.</p>
-<h2 id="the-six-weak-rotors-half-angle-and-two-planes-at-once">The Six Weak Rotors: Half Angle, and Two Planes at Once</h2>
-<p><strong>A weak array squares to $-\tfrac14\mathbb{1}$, so its rotor is a half-angle rotation and it turns two planes simultaneously.</strong></p>
+<h2 id="where-the-half-angle-comes-from">Where the Half Angle Comes From</h2>
+<p><strong>The composite $T^{L}_{x}$ squares to $-\tfrac14\mathbb{1}$, so its rotor is a half-angle rotation of two planes at once. It is printed here to show that nothing in it is new.</strong></p>
 <p>$$
 \exp\bigl(\theta T^{L}_{x}\bigr)=\mathbb{1}\cos\frac{\theta}{2}+2\,T^{L}_{x}\sin\frac{\theta}{2}
 =
@@ -268,8 +268,8 @@ T^{L}_{x}+T^{R}_{x}=\begin{pmatrix}0&amp;-1&amp;0&amp;0\\1&amp;0&amp;0&amp;0\\0&
 T^{L}_{x}-T^{R}_{x}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;-1\\0&amp;0&amp;1&amp;0\end{pmatrix}=-A_{yz}.
 $$</p>
 <p><strong>The sum turns the leptoquark plane and the difference turns the colour plane</strong>, and that is the whole content of the vector-and-axial split in this basis. <strong>One bracket then turns these two displays into a statement about rotors, which is the next section.</strong></p>
-<h2 id="the-six-real-planes-are-products-of-two-weak-rotors">The Six Real Planes Are Products of Two Weak Rotors</h2>
-<p><strong>The real planes are sums and differences of the weak arrays, and the two triples commute.</strong></p>
+<h2 id="the-real-plane-rotor-and-the-two-half-angle-rotors-behind-it">The Real Plane Rotor, and the Two Half-Angle Rotors Behind It</h2>
+<p><strong>A real plane is a sum of two composites, and the two commutation classes of $\mathfrak{so}(4)$ commute.</strong> The identity below is what makes the half angle disappear when it is added to itself.</p>
 <p>$$
 A_{ta}=-\bigl(T^{L}_{a}+T^{R}_{a}\bigr),
 \qquad
@@ -338,13 +338,13 @@ $$</p>
 <p>$$
 21\ \text{arrays}\ =\ 15\ \text{independent directions}\ +\ 6\ \text{products of two of them},
 $$</p>
-<p><strong>because the twenty-one arrays span fifteen dimensions as $4\times4$ matrices.</strong> The rank was computed from the twenty-one flattened arrays and is $15$; the six real planes are linear combinations of the six weak arrays, and no other relation exists among the twenty-one. <strong>So the twenty-one rotors are fifteen independent circles and six composites</strong>, which is exactly the shape the five-counts article describes when it separates names from directions.</p>
-<p><strong>One qualification, because the count is carrier-dependent.</strong> The identity above is a statement about the action on the quartet. <strong>On the sixteen fermions the weak arrays act as $\mathbb{1}_{4}\otimes\tau_{i}$ and the fifteen as $t_{a}\otimes\mathbb{1}_{2}$</strong>, so the two families are different operators there and the twenty-one are not reducible to fifteen. <strong>The rotor identity is a quartet-basis statement and the article does not carry it to the fermion module.</strong></p>
-<h2 id="what-the-twenty-one-rotors-are-not">What the Twenty-One Rotors Are Not</h2>
-<p><strong>They are not the group.</strong> Twenty-one rotors are twenty-one one-parameter curves, and the group is twenty-one-dimensional. <strong>A general element is $\exp\bigl(\sum_{a}\theta_{a}G_{a}\bigr)$, which for non-commuting generators is not the product $\prod_{a}\exp(\theta_{a}G_{a})$ and is not in general any one of the twenty-one.</strong> The three diagonal generators are the exception and the previous section used it: for the Cartan the product and the exponential of the sum coincide.</p>
-<p><strong>They are not rotations of space.</strong> The quartet's three spatial indices $x,y,z$ are the carrier's, and <a href="the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">the rotors article</a> states the caveat in full: the group of the carrier is not the Lorentz group, and the identification of the carrier's triple with laboratory space is an extra input and not a result. <strong>$R_{A_{xy}}(\theta)$ rotates the carrier's triple; whether the apparatus turns with it is a question this article does not touch.</strong></p>
-<p><strong>None of them is a boost.</strong> $G_{a}$ is anti-hermitian for all twenty-one, so $R_{a}(\theta)$ is unitary with unit-modulus eigenvalues and $\operatorname{tr}G_{a}^{2}$ is negative: <strong>it takes the value $-2$ on the fifteen planes and diagonals, $-12$ on the corner, and $-1$ on the six weak arrays, and never a positive number.</strong> A boost in the $tx$ plane has $K^{2}=E_{tt}+E_{xx}$, so $\operatorname{tr}K^{2}=+2$; <strong>the sign alone separates the twenty-one from every boost, and the smallest gap is the corner's $-12$ against the boost's $+2$.</strong> The rotors article proves this three ways and this article does not re-prove it; the closed forms above are the strongest single illustration, since every one of them is a rotation or a phase and <strong>no hyperbolic function appears in any of the twenty-one.</strong></p>
-<p><strong>Nine of them are not rotors of a real plane.</strong> The six imaginary planes and the three diagonals are complex arrays, so their rotors leave the real quartet at every $\theta$ except the half-turns. <strong>Twelve rotors of $\mathbb{R}^{4}$ and nine of $\mathbb{C}^{4}$ is the honest split</strong>, and the title's "twenty-one rotors" counts the twenty-one curves and not twenty-one real rotations.</p>
+<p><strong>because the fifteen arrays span fifteen dimensions as $4\times4$ matrices.</strong> The rank was computed from the fifteen flattened arrays and is $15$; the six real planes are linear combinations of the six composites, and no relation exists among the fifteen. <strong>So the fifteen rotors are fifteen independent circles, and the six composites are exactly what a redundant basis adds</strong> — the shape the counts article describes when it separates names from directions.</p>
+<p><strong>One qualification, and it is now the whole point.</strong> The identity above is a statement about the quartet. <strong>On the model's sixteen fermions only the fifteen act</strong>, each as $t_{a}\otimes\mathbb{1}_{2}$ on the copy index, and the six composites are not operators of that representation at all. <strong>The rotor identity is a quartet-basis statement, and the quartet basis is the one place where a composite has an exponential.</strong> It is not carried to the fermion module, where it has no meaning.</p>
+<h2 id="what-the-fifteen-rotors-are-not">What the Fifteen Rotors Are Not</h2>
+<p><strong>They are not the group.</strong> Fifteen rotors are fifteen one-parameter curves, and the group is fifteen-dimensional. <strong>A general element is $\exp\bigl(\sum_{a}\theta_{a}G_{a}\bigr)$, which for non-commuting generators is not the product $\prod_{a}\exp(\theta_{a}G_{a})$ and is not in general any one of the fifteen.</strong> The three diagonal generators are the exception and the previous section used it: for the Cartan the product and the exponential of the sum coincide.</p>
+<p><strong>They are not rotations of space.</strong> The quartet's three spatial indices $x,y,z$ are the carrier's, and <a href="the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">the rotors article</a> states the caveat in full: the group of the carrier is not the Lorentz group, and the identification of the carrier's triple with laboratory space is an extra input and not a result. <strong>$R_{A_{xy}}(\theta)$ rotates the carrier's triple; whether the apparatus turns with it is a question this article does not touch.</strong></p>
+<p><strong>None of them is a boost.</strong> $G_{a}$ is anti-hermitian for all fifteen, so $R_{a}(\theta)$ is unitary with unit-modulus eigenvalues and $\operatorname{tr}G_{a}^{2}$ is negative: <strong>it takes the value $-2$ on the twelve planes and two colour diagonals, $-12$ on the corner, and never a positive number.</strong> A boost in the $tx$ plane has $K^{2}=E_{tt}+E_{xx}$, so $\operatorname{tr}K^{2}=+2$; <strong>the sign alone separates the fifteen from every boost, and the smallest gap is the corner's $-12$ against the boost's $+2$.</strong> The rotors article proves this three ways and this article does not re-prove it; the closed forms above are the strongest single illustration, since every one of them is a rotation or a phase and <strong>no hyperbolic function appears in any of the fifteen.</strong></p>
+<p><strong>Nine of them are not rotors of a real plane.</strong> The six imaginary planes and the three diagonals are complex arrays, so their rotors leave the real quartet at every $\theta$ except the half-turns. <strong>Six rotors of $\mathbb{R}^{4}$ and nine of $\mathbb{C}^{4}$ is the honest split</strong>, and the title's fifteen counts the curves and not fifteen real rotations.</p>
 <h2 id="the-checks">The Checks</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -357,7 +357,7 @@ $$</p>
 <tbody>
 <tr>
 <td>every array squares to a diagonal</td>
-<td>$G^{2}$ for all $21$</td>
+<td>$G^{2}$ for all $15$</td>
 <td>no off-diagonal entry</td>
 </tr>
 <tr>
@@ -367,13 +367,13 @@ $$</p>
 </tr>
 <tr>
 <td>the determinant</td>
-<td>$\exp(\operatorname{tr}G)$, all twenty-one traceless</td>
+<td>$\exp(\operatorname{tr}G)$, all fifteen traceless</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>the real-array count</td>
 <td>arrays with real entries</td>
-<td>$12$ real, $9$ complex</td>
+<td>$6$ real, $9$ complex</td>
 </tr>
 <tr>
 <td>$R_{A}$ at the half-turn</td>
@@ -442,16 +442,16 @@ $$</p>
 </tr>
 <tr>
 <td>the rank</td>
-<td>the twenty-one as $4\times4$ arrays</td>
+<td>the fifteen as $4\times4$ arrays</td>
 <td>$15$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p><strong>The twenty-one rotors are the exponentials of the twenty-one arrays, and all of them are elementary because all twenty-one arrays square to diagonal matrices.</strong> Twenty obey one two-term formula with a single frequency, and the corner obeys the same formula twice with two frequencies, $3$ on the lepton line and $1$ on the colour triple.</p>
-<p><strong>The rotors fall into a $12+9$ split that the arrays' entries decide.</strong> Twelve have real entries and give rotations of the quartet with period $2\pi$; nine have complex entries and give unitary rotors of the complexified carrier, real only at the half-turns, where the imaginary planes coincide with the real ones.</p>
+<p><strong>The fifteen rotors are the exponentials of the fifteen arrays, and all of them are elementary because all fifteen arrays square to diagonal matrices.</strong> Fourteen obey one two-term formula with a single frequency, and the corner obeys the same formula twice with two frequencies, $3$ on the lepton line and $1$ on the colour triple.</p>
+<p><strong>The rotors fall into a $6+9$ split that the arrays' entries decide.</strong> Six have real entries and give rotations of the quartet with period $2\pi$; nine have complex entries and give unitary rotors of the complexified carrier, real only at the half-turns, where the imaginary planes coincide with the real ones.</p>
 <p><strong>The corner is the only rotor that is ever central, and it is central four times a turn with values $i^{k}$.</strong> That is the rotor-side reading of the corpus's "$B-L$ exact at every scale", and the display reproduces the charge-quantisation article's relative phase $N\theta$ without being copied from it.</p>
-<p><strong>The article's one new result is that six of the twenty-one rotors are products of the other fifteen.</strong> $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-(T^{L}_{a}-T^{R}_{a})$, the two triples commute, so the exponentials factorise exactly and the half angles of two weak rotors add to the full angle of a real plane. <strong>Fifteen independent circles, six composites, twenty-one printed arrays</strong> — and that is why a weak rotor takes two turns of its parameter to return while a real plane takes one.</p>
+<p><strong>The article's one new result is the direction of the half angle.</strong> $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-(T^{L}_{a}-T^{R}_{a})$, the two triples commute, so the exponentials factorise exactly and the half angles of two composites add to the full angle of a real plane. <strong>Fifteen circles, and six composites that are not circles of the model</strong> — which is why a composite takes two turns of its parameter to return while a real plane takes one, and why the model's bosons have no half angle at all.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -467,7 +467,7 @@ $$</p>
 </tr>
 <tr>
 <td>$G_{a}$</td>
-<td>One of the twenty-one printed arrays, anti-hermitian</td>
+<td>One of the fifteen arrays, anti-hermitian</td>
 </tr>
 <tr>
 <td>$\omega$</td>
@@ -503,18 +503,18 @@ $$</p>
 </tr>
 <tr>
 <td>$15$</td>
-<td>The rank of the twenty-one as $4\times4$ arrays</td>
+<td>The rank of the fifteen as $4\times4$ arrays</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="construction-of-the-axf-matrices-of-the-twenty-one-generators.html">Construction of the AXF Matrices of the Twenty-One Generators</a>. The arrays this article exponentiates, in the same order and the same basis.</li>
-<li><a href="the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Twenty-One Generators in the Four Colours Left–Right Model</a>. Which space each rotor turns, and the three proofs that none of them is a boost.</li>
+<li><a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">Construction of the AXF Matrices of the Fifteen Generators</a>. The arrays this article exponentiates, in the same order and the same basis.</li>
+<li><a href="the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Fifteen Generators</a>. Which space each rotor turns, and the three proofs that none of them is a boost.</li>
 <li><a href="../articles_internal/structures/structure-SU4-SO4-relations.html">The Relation between $\mathfrak{su}(4)$ and $\mathfrak{so}(4)$: the Twelve Real Arrays and the Nine Complex Ones</a>. Why the order of this article is the split it is, and why the pairing $\{A_{jk},iS_{jk}\}$ is not a substitute.</li>
-<li><a href="the-21-axf-matrices-of-the-bosons-in-detail.html">The 21 AXF Matrices of the Bosons in Detail</a>. One subsection per array, with the printed matrix and the spectrum.</li>
+<li><a href="the-15-axf-matrices-of-the-bosons-in-detail.html">The Fifteen AXF Matrices of the Bosons in Detail</a>. One subsection per array, with the printed matrix and the spectrum.</li>
 <li><a href="charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour</a>. The corner's exponential and the relative phase $N\theta$ that this article's display reproduces.</li>
-<li><a href="the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions.html">The Five Counts of the Twenty-One</a>. Names against directions, which is the count this article's rank computation confirms.</li>
+<li><a href="the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html">The Counts of the Fifteen</a>. Names against directions, which is the count this article's rank computation confirms.</li>
 </ul>
       </div>
     </main>

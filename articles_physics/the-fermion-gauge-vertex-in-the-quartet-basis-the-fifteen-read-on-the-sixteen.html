@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Fermion–Gauge Vertex in the Quartet Basis: The Fifteen Read on the Sixteen — Biquaternion Universe</title>
-  <meta name="description" content="This article prints the fermion side of the model&#x27;s gauge interaction: the fifteen arrays of acting on the sixteen fields, entry by entry, with the…">
+  <meta name="description" content="This article prints the fermion side of the gauge interaction: the fifteen arrays of acting on the sixteen fields, entry by entry, with the quantum…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,38 +71,78 @@
       <div class="article-body">
         <h1 id="the-fermiongauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen"><strong>The Fermion–Gauge Vertex in the Quartet Basis: The Fifteen Read on the Sixteen</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>This article prints the fermion side of the model's gauge interaction: the fifteen arrays of $\mathfrak{su}(4)$ acting on the sixteen fields, entry by entry, with the quantum numbers of every entry.</strong> It is the companion of <a href="the-feynman-rules-of-the-four-colours-left-right-model-the-vertices-of-the-twenty-one-and-the-sixteen.html">The Feynman Rules of the Four Colours Left–Right Model</a>, which states the rule $\Gamma^{a}_{\imath}=-ig_{4}\gamma_{\imath}(t_{a}\otimes\mathbb{1}_{2})$ and hands the matrices to this article.</p>
+<p><strong>This article prints the fermion side of the gauge interaction: the fifteen arrays of $\mathfrak{su}(4)$ acting on the sixteen fields, entry by entry, with the quantum numbers of every entry.</strong> It is the companion of <a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">The Feynman Rules</a>, which states the rule $\Gamma^{a}_{\imath}=-ig_{4}\gamma_{\imath}(t_{a}\otimes\mathbb{1}_{2})$ and hands the matrices to this article.</p>
 <p><strong>Three questions it answers, and one it does not.</strong></p>
 <ul>
-<li><strong>Where does each entry go?</strong> Every one of the $88$ nonzero fermion–gauge entries per chirality is a coefficient joining one quartet line to one quartet line, or one doublet slot to one doublet slot. The article names the four families, prints their matrices, and lists the pairs.</li>
-<li><strong>What charges does each entry carry?</strong> $B-L$ and $Q$ are read off the entry, and the two are computed for both chiral blocks. <strong>The fifteen carry $B-L$ and do not carry $Q$</strong>, and the article says exactly where the failure sits.</li>
-<li><strong>What does the algebra forbid?</strong> No generator turns a lepton into a lepton, no generator turns an up slot into a down slot, and the six mixed planes are the only entries that change $B-L$ per line. <strong>Each of the three is a statement with a proof, not a remark.</strong></li>
-<li><strong>It does not derive the fermion Lagrangian.</strong> The matrices are the corpus's; the dynamics is the transcription. That is <a href="../articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.html">the spin note</a>'s ledger and this article inherits it without softening it.</li>
+<li><strong>Where does each entry go?</strong> Every one of the $128$ nonzero fermion–gauge entries is a coefficient joining one quartet line to one quartet line. <strong>There are $64$ on the quartet half and $64$ on the conjugate half</strong>, and the article names the four families, prints their matrices, and lists the pairs.</li>
+<li><strong>What does each entry carry?</strong> $B-L$ is read off the entry and computed for every family. <strong>The fifteen carry $B-L$ and do not carry $T_{3}$</strong>, and the article says exactly where that split sits and why the missing half is a wall and not an oversight.</li>
+<li><strong>What does the algebra forbid?</strong> No generator moves a fermion along the lepton line into another lepton line, no generator changes the copy index, and the six mixed planes are the only entries that change a line at all. <strong>Each of the three is a statement with a proof, not a remark.</strong></li>
+<li><strong>It does not derive the fermion Lagrangian.</strong> The matrices are the corpus's; the dynamics is the transcription. <strong>The dynamics is <a href="../articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.html">the spin note</a>'s ledger</strong>, and this article inherits it without softening it.</li>
 </ul>
-<h2 id="conventions-and-the-order-of-the-eight">Conventions, and the Order of the Eight</h2>
-<p><strong>The eight left-handed states, in the order used by every matrix below.</strong></p>
+<h2 id="conventions-and-the-order-of-the-sixteen">Conventions, and the Order of the Sixteen</h2>
+<p><strong>The sixteen fields, and the two indices they carry.</strong></p>
 <p>$$
-\bigl(\,\nu_{L},\ e_{L},\ u^{r},\ d^{r},\ u^{g},\ d^{g},\ u^{b},\ d^{b}\,\bigr),
-\qquad
-\bigl(\,t/u,\ t/d,\ x/u,\ x/d,\ y/u,\ y/d,\ z/u,\ z/d\,\bigr).
+\xi_{i}^{\alpha},\qquad \bar\xi^{i}_{\alpha},\qquad i\in\{t,r,g,b\},\quad \alpha\in\{1,2\}.
 $$</p>
-<p><strong>The left column is the physics name and the right column is the index pair</strong>, and the two lines name the same eight objects. <strong>The order is the quartet index slow and the doublet index fast</strong>, which is the order that makes every array act as a block structure rather than a scrambled pattern.</p>
-<p><strong>The convention of the whole article.</strong>
-$$
-X\ \text{on the eight} = X\otimes\mathbb{1}_{2},
+<p><strong>The quartet index $i$ is slow and the copy index $\alpha$ is fast</strong>, and every matrix below is printed in that order. <strong>The sixteen are two quartets and two antiquartets</strong>: eight fields in $\mathbf 4$ and eight in $\bar{\mathbf4}$.</p>
+<p><strong>The copy index is the weak-doublet slot, and the model does not gauge it.</strong> $\alpha$ distinguishes the two members of a cell — for the lepton line the neutrino from the electron, for a colour line the up from the down — and <strong>no generator of the fifteen carries an $\alpha$</strong>: every array is $\mathbb 1$ on it. The consequence is the whole of §<em>What the Algebra Forbids</em>.</p>
+<p><strong>The convention of the whole article.</strong></p>
+<p>$$
+X\ \text{on the sixteen} = X\otimes\mathbb{1}_{2},
 \qquad
-\tau_{i}\ \text{on the eight} = \mathbb{1}_{4}\otimes\tau_{i},
-\qquad
-\bigl[X\otimes\mathbb{1}_{2},\ \mathbb{1}_{4}\otimes\tau_{i}\bigr]=0 .
-$$
-<strong>Every matrix printed below is $8\times8$ and block-diagonal in the doublet</strong>: two identical $4\times4$ blocks on the diagonal, one for the up slot and one for the down slot. <strong>A reader who wants the four-colour content can read the top-left block and stop.</strong></p>
-<p><strong>The charges.</strong> With $D=\operatorname{diag}(-3,1,1,1)$ and $T_{3}$ on the slot,
-$$
+\bigl[X\otimes\mathbb{1}_{2},\ \mathbb{1}_{4}\otimes M\bigr]=0\ \ \text{for every }M .
+$$</p>
+<p><strong>Each $4\times4$ array is printed twice on the diagonal and never off it.</strong> A reader who wants the quartet content can read the top-left $8\times8$ block and stop.</p>
+<p><strong>The charges, and which of them the group owns.</strong></p>
+<p>$$
 B-L=\tfrac13 D=\operatorname{diag}\bigl(-1,\tfrac13,\tfrac13,\tfrac13\bigr),
 \qquad
-Q=T_{3}+\tfrac12(B-L).
-$$
-<strong>$B-L$ is $\tfrac13D$ and not $\tfrac16D$</strong>, and the factor is the reason the electric charge is $T_{3}+\tfrac16D$ and the corner's eigenvalues are $(-3,1,1,1)$ rather than $(-\tfrac12,\tfrac16,\tfrac16,\tfrac16)$.</p>
+Q=\tau_{3}+\tfrac12(B-L),
+$$</p>
+<p>with $\tau_{3}=\pm\tfrac12$ on the copy index. <strong>$B-L$ is a generator and $Q$ is not</strong>: $B-L=\tfrac13D$ is one of the fifteen up to normalisation, while $Q$ mixes a diagonal of the fifteen with $\tau_{3}$, <strong>and $\tau_{3}$ is not in the algebra.</strong> A quantum number built from a generator and a non-generator is not a gauge charge, and that is the sentence the electroweak wall is made of.</p>
+<p><strong>The four cells and their two charges each.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>cell</th>
+<th>$B-L$</th>
+<th>$Q$ on copy $1$</th>
+<th>$Q$ on copy $2$</th>
+<th>the particles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(t,t)$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$\nu$, $e$</td>
+</tr>
+<tr>
+<td>$(x,x)$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac23$</td>
+<td>$-\tfrac13$</td>
+<td>$u^{r}$, $d^{r}$</td>
+</tr>
+<tr>
+<td>$(y,y)$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac23$</td>
+<td>$-\tfrac13$</td>
+<td>$u^{g}$, $d^{g}$</td>
+</tr>
+<tr>
+<td>$(z,z)$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac23$</td>
+<td>$-\tfrac13$</td>
+<td>$u^{b}$, $d^{b}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two sums, and both are zero.</strong> $B-L$ over one generation: $2(-1)+6(\tfrac13)=0$. Electric charge over one generation: $0-1+3(\tfrac23)-3(\tfrac13)=0$. <strong>The second sum is what makes the generation neutral, and it holds because $D$ is traceless</strong> — the trace of the diagonal is $-3+1+1+1=0$, and one generation is one full pass over the quartet.</p>
 <h2 id="the-fifteen-in-four-families">The Fifteen, in Four Families</h2>
 <p><strong>The fifteen are four families and the classification is the whole of the matrix content.</strong></p>
 <div class="table-scroll"><table>
@@ -112,7 +152,7 @@ $$
 <th>count</th>
 <th>matrix</th>
 <th>what an entry does</th>
-<th>$B-L$</th>
+<th>boson's $B-L$</th>
 </tr>
 </thead>
 <tbody>
@@ -135,7 +175,7 @@ $$
 <td>$1$</td>
 <td>$iD$</td>
 <td>phases, $-3i$ on $t$ and $+i$ on each $a$; no entry moves a line</td>
-<td>$0$ per entry; the $-3i$ against $+i$ is where the $\pm\tfrac43$ sits</td>
+<td>$0$</td>
 </tr>
 <tr>
 <td>mixed planes</td>
@@ -146,39 +186,35 @@ $$
 </tr>
 </tbody>
 </table></div>
-<p><strong>The $B-L$ column is the charge the <em>entry</em> transfers and not the charge of the field</strong>, and the distinction is the reason the leptoquarks carry $\pm\tfrac43$: an entry that joins $t$ to $a$ moves a state from $B-L=-1$ to $B-L=+\tfrac13$, so the boson that carries the entry must take $\mp\tfrac43$ with it.</p>
-<p><strong>The four families, as $4\times4$ blocks.</strong> The colour planes and the colour Cartan are block-diagonal, with the $3\times3$ colour block acting and the $t$ entry untouched:
-$$
+<p><strong>The last column is the charge the <em>boson</em> carries and not the charge of a field.</strong> An entry that joins $t$ to $a$ moves a state from $B-L=-1$ to $B-L=+\tfrac13$, so the boson that carries the entry must take $-\tfrac43$ with it: <strong>$-1=\tfrac13-\tfrac43$, and the vertex conserves $B-L$ exactly.</strong></p>
+<p><strong>The families as $4\times4$ blocks.</strong> The colour planes and the colour Cartan are block-diagonal, with the $3\times3$ colour block acting and the $t$ entry untouched:</p>
+<p>$$
 A_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
 \qquad
 iS_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
 \qquad
 d_{2}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;-i&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}.
-$$
-<strong>The corner and the mixed planes are the ones that touch the lepton line.</strong>
-$$
+$$</p>
+<p><strong>The corner and the mixed planes are the ones that touch the lepton line.</strong></p>
+<p>$$
 iD=\begin{pmatrix}-3i&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;i\end{pmatrix},
 \qquad
 A_{tx}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
 \qquad
 iS_{tx}=\begin{pmatrix}0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix}.
 $$</p>
-<p><strong>The eight-by-eight form of one of them, printed once.</strong> With $A_{tx}\otimes\mathbb{1}_{2}$ in the order above,</p>
+<p><strong>The eight-by-eight form of one of them, printed once.</strong> With $A_{tx}\otimes\mathbb{1}_{2}$ in the order $(t_{1},t_{2},x_{1},x_{2})$, the acting block is</p>
 <p>$$
 A_{tx}\otimes\mathbb{1}_{2}=
 \begin{pmatrix}
-0&amp;0&amp;1&amp;0&amp;0&amp;0&amp;0&amp;0\\
-0&amp;0&amp;0&amp;1&amp;0&amp;0&amp;0&amp;0\\
--1&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\
-0&amp;-1&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\
-0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\
-0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\
-0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\
-0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0
+0&amp;0&amp;1&amp;0\\
+0&amp;0&amp;0&amp;1\\
+-1&amp;0&amp;0&amp;0\\
+0&amp;-1&amp;0&amp;0
 \end{pmatrix},
 $$</p>
-<p><strong>and the shape is the whole two-index rule.</strong> Four rows act and four are zero: the array moves $\nu_{L}\leftrightarrow u^{r}$ and $e_{L}\leftrightarrow d^{r}$, and it annihilates every colour state that is not red. <strong>No entry mixes a $u$ row with a $d$ row</strong>, because the two $4\times4$ blocks are identical and diagonal in the slot.</p>
-<h2 id="the-selection-rule-and-the-count-math66">The Selection Rule, and the Count $8+1+6$</h2>
+<p><strong>and the shape is the whole two-index rule.</strong> The array moves $t_{1}\leftrightarrow x_{1}$ and $t_{2}\leftrightarrow x_{2}$ and annihilates every other pair. <strong>No entry mixes $\alpha=1$ with $\alpha=2$</strong>, because the copy index is acted on by the identity.</p>
+<h2 id="the-selection-rule-and-the-count-math103">The Selection Rule, and the Count $48+8+8$</h2>
 <p><strong>Dividing the fifteen by what each does to $e_{t}$ is the one classification that matters for physics.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -211,366 +247,246 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The count is exhaustive and each row is a computation.</strong> A colour plane $A_{ab}$ has its two nonzero entries in rows and columns $a,b$, both inside the triple, so its $t$ column is zero. <strong>The corner is diagonal, so it cannot move a line, and its $t$ entry is $-3i$.</strong> The six mixed planes have their entries in the $t$ row and the $a$ column, so each sends $e_{t}$ to a multiple of $e_{a}$ and nothing else.</p>
-<p><strong>What the first row forbids is lepton flavour.</strong> If no generator has an entry joining $e_{t}$ to $e_{t}$ other than a multiple of the identity on that line, then no gauge vertex can turn one lepton into another, and a flavour label on the lepton has no gauge channel to act on. <strong>That is <a href="lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html">the lepton-flavour article</a>'s structural result, and here it is a count of matrix entries: eight zero, one diagonal, six into the triple.</strong></p>
-<p><strong>What the second row forbids is an electric charge.</strong> The corner gives the same phase $-3i$ to $\nu_{L}$ and to $e_{L}$, and the same phase $+i$ to $u^{r}$ and to $d^{r}$. <strong>A quantum number that separates the members of a doublet cannot be a matrix on the quartet alone</strong>, and the statement is exact: the two rows of the display are identical, so no property of the array distinguishes them.</p>
-<p><strong>What the third row allows is the whole of the model's new physics.</strong> Six entries join the lepton line to a colour line, each carries $B-L=\pm\tfrac43$, and each conserves $B-L$ at the vertex because the boson carries it away. <strong>Six generators, three colours and the two plane types, and that is the leptoquark sector.</strong></p>
+<p><strong>The count of entries, family by family.</strong></p>
+<p>$$
+\underbrace{48}_{\text{twelve planes}\times2\times2}
++\underbrace{8}_{\text{two diagonals}\times2\times2}
++\underbrace{8}_{\text{corner}\times4\times2}
+=\underbrace{64}_{\text{one half}},
+\qquad
+64+64=\mathbf{128}.
+$$</p>
+<p><strong>The second $64$ is the conjugate half</strong>, where the vertex is $-t_{a}^{T}\otimes\mathbb{1}_{2}$ and every entry is reversed with a minus. <strong>The two halves have the same count and the opposite sign</strong>, which is the statement §<em>The Conjugate Half</em> makes precise.</p>
+<p><strong>What the first row forbids is lepton flavour.</strong> No generator has an entry joining the lepton line to itself except the corner's phase, so no gauge vertex can turn one lepton into another. <strong>That is <a href="lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html">the lepton-flavour article</a>'s structural result</strong>, and here it is one row of a table.</p>
+<p><strong>What the second row forbids is a gauge origin for $Q$.</strong> The corner gives the same phase $-3i$ to both copies in the lepton cell and the same phase $+i$ to both copies in a colour cell. <strong>A matrix that is $\mathbb 1$ on the copy index cannot separate $\nu$ from $e$</strong>, and the statement is exact: the two copy entries of every array are equal.</p>
+<p><strong>What the third row allows is the whole of the model's new physics.</strong> Six entries join the lepton line to a colour line, each carries $B-L=\mp\tfrac43$, and each conserves $B-L$ at the vertex because the boson carries it away. <strong>Six generators, three colours and the two plane types, and that is the leptoquark sector.</strong></p>
 <h2 id="the-charges-of-every-entry">The Charges of Every Entry</h2>
-<p><strong>The eight left-handed fields, with the two charges and the two label values.</strong> This is the table every vertex is read from.</p>
+<p><strong>The charge an entry transfers is the difference of the diagonals it joins.</strong> An entry at row $\imath$, column $\jmath$ sends a fermion on line $\jmath$ to line $\imath$, so the fermion's $B-L$ changes by $\tfrac13(D_{\imath}-D_{\jmath})$ and the boson carries the opposite. <strong>Three families, five rows, and two of them are nonzero.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>field</th>
-<th>line</th>
-<th>slot</th>
-<th>$T_{3}$</th>
-<th>$B-L$</th>
-<th>$Q$</th>
+<th>family</th>
+<th>entry</th>
+<th>$\Delta(B-L)$ of the fermion</th>
+<th>boson's $B-L$</th>
+<th>boson's $Q$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\nu_{L}$</td>
-<td>$t$</td>
-<td>$u$</td>
-<td>$+\tfrac12$</td>
-<td>$-1$</td>
+<td>colour plane</td>
+<td>$(\imath,\jmath)$ both colour</td>
+<td>$0$</td>
+<td>$0$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$e_{L}$</td>
-<td>$t$</td>
-<td>$d$</td>
-<td>$-\tfrac12$</td>
-<td>$-1$</td>
-<td>$-1$</td>
+<td>colour Cartan</td>
+<td>diagonal</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
 </tr>
 <tr>
-<td>$u^{r}$</td>
-<td>$x$</td>
-<td>$u$</td>
-<td>$+\tfrac12$</td>
-<td>$+\tfrac13$</td>
+<td>corner</td>
+<td>diagonal</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>mixed plane</td>
+<td>$(t,a)$: colour $\to$ lepton</td>
+<td>$\tfrac13(-3-1)=-\tfrac43$</td>
+<td>$+\tfrac43$</td>
 <td>$+\tfrac23$</td>
 </tr>
 <tr>
-<td>$d^{r}$</td>
-<td>$x$</td>
-<td>$d$</td>
-<td>$-\tfrac12$</td>
-<td>$+\tfrac13$</td>
-<td>$-\tfrac13$</td>
-</tr>
-<tr>
-<td>$u^{g}$</td>
-<td>$y$</td>
-<td>$u$</td>
-<td>$+\tfrac12$</td>
-<td>$+\tfrac13$</td>
-<td>$+\tfrac23$</td>
-</tr>
-<tr>
-<td>$d^{g}$</td>
-<td>$y$</td>
-<td>$d$</td>
-<td>$-\tfrac12$</td>
-<td>$+\tfrac13$</td>
-<td>$-\tfrac13$</td>
-</tr>
-<tr>
-<td>$u^{b}$</td>
-<td>$z$</td>
-<td>$u$</td>
-<td>$+\tfrac12$</td>
-<td>$+\tfrac13$</td>
-<td>$+\tfrac23$</td>
-</tr>
-<tr>
-<td>$d^{b}$</td>
-<td>$z$</td>
-<td>$d$</td>
-<td>$-\tfrac12$</td>
-<td>$+\tfrac13$</td>
-<td>$-\tfrac13$</td>
+<td>mixed plane</td>
+<td>$(a,t)$: lepton $\to$ colour</td>
+<td>$\tfrac13(1+3)=+\tfrac43$</td>
+<td>$-\tfrac43$</td>
+<td>$-\tfrac23$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>And the eight right-handed fields, whose charges are the left octet's own.</strong></p>
+<p><strong>The $Q$ column is half the $B-L$ column, and that is not a coincidence.</strong> Every gauge vertex is diagonal in the copy index, so $\tau_{3}$ is the same before and after: <strong>$\Delta Q=\Delta(B-L)/2$ for the fermion, which is why the boson's $Q$ is $\mp\tfrac23$ where its $B-L$ is $\mp\tfrac43$.</strong> The two charges agree on the gauge sector because the gauge sector cannot see $\tau_{3}$.</p>
+<p><strong>The six mixed planes in the naming of particles.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>field</th>
-<th>line</th>
-<th>slot</th>
-<th>$T^{R}_{3}$</th>
-<th>$B-L$</th>
-<th>$Q$</th>
+<th>entry</th>
+<th>line changed</th>
+<th>the vertex</th>
+<th>boson's $Q$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\nu_{eR}$</td>
-<td>$t$</td>
-<td>$u$</td>
-<td>$+\tfrac12$</td>
-<td>$-1$</td>
-<td>$0$</td>
+<td>$A_{tr}$, $iS_{tr}$</td>
+<td>$t\leftrightarrow r$</td>
+<td>$\nu\to u^{r}$, $e\to d^{r}$</td>
+<td>$\mp\tfrac23$</td>
 </tr>
 <tr>
-<td>$e_{R}$</td>
-<td>$t$</td>
-<td>$d$</td>
-<td>$-\tfrac12$</td>
-<td>$-1$</td>
-<td>$-1$</td>
+<td>$A_{tg}$, $iS_{tg}$</td>
+<td>$t\leftrightarrow g$</td>
+<td>$\nu\to u^{g}$, $e\to d^{g}$</td>
+<td>$\mp\tfrac23$</td>
 </tr>
 <tr>
-<td>$u^{r}_{R}$</td>
-<td>$x$</td>
-<td>$u$</td>
-<td>$+\tfrac12$</td>
-<td>$+\tfrac13$</td>
-<td>$+\tfrac23$</td>
-</tr>
-<tr>
-<td>$d^{r}_{R}$</td>
-<td>$x$</td>
-<td>$d$</td>
-<td>$-\tfrac12$</td>
-<td>$+\tfrac13$</td>
-<td>$-\tfrac13$</td>
-</tr>
-<tr>
-<td>$u^{g}_{R}$</td>
-<td>$y$</td>
-<td>$u$</td>
-<td>$+\tfrac12$</td>
-<td>$+\tfrac13$</td>
-<td>$+\tfrac23$</td>
-</tr>
-<tr>
-<td>$d^{g}_{R}$</td>
-<td>$y$</td>
-<td>$d$</td>
-<td>$-\tfrac12$</td>
-<td>$+\tfrac13$</td>
-<td>$-\tfrac13$</td>
-</tr>
-<tr>
-<td>$u^{b}_{R}$</td>
-<td>$z$</td>
-<td>$u$</td>
-<td>$+\tfrac12$</td>
-<td>$+\tfrac13$</td>
-<td>$+\tfrac23$</td>
-</tr>
-<tr>
-<td>$d^{b}_{R}$</td>
-<td>$z$</td>
-<td>$d$</td>
-<td>$-\tfrac12$</td>
-<td>$+\tfrac13$</td>
-<td>$-\tfrac13$</td>
+<td>$A_{tb}$, $iS_{tb}$</td>
+<td>$t\leftrightarrow b$</td>
+<td>$\nu\to u^{b}$, $e\to d^{b}$</td>
+<td>$\mp\tfrac23$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The right-handed table is the left-handed table with an $R$ on the name, and that is the naming rule and not an accident.</strong> A name denotes a particle, so $e_{R}$ carries the electron's $Q=-1$ and the electron's $B-L=-1$; only the <em>representation</em> carries the conjugate. <a href="classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html">The classification article</a> states the rule in one sentence and uses it to compute the anomaly on $(\mathbf4,\mathbf2,\mathbf1)$ and $(\bar{\mathbf4},\mathbf1,\mathbf2)$, where the second block's entries are the conjugates of the named right-handed fields.</p>
-<p><strong>The formula holds in the same form on both octets.</strong> $Q=T^{R}_{3}+\tfrac12(B-L)$ gives $-1$ for $e_{R}$ from $-\tfrac12-\tfrac12$, and $+\tfrac23$ for $u^{r}_{R}$ from $\tfrac12+\tfrac16$. <strong>No sign is flipped between the two tables, and the reason is that the slot keeps its meaning</strong>: the up slot is $+\tfrac12$ on both sides.</p>
-<h2 id="the-right-handed-block-and-where-the-minus-actually-sits">The Right-Handed Block, and Where the Minus Actually Sits</h2>
-<p><strong>The generator on the $\bar{\mathbf{4}}$ is $-t^{\mathsf{T}}$, and the minus belongs to the representation and not to the table.</strong>
-$$
-\bigl(t_{a}\bigr)_{ij}\ \text{on}\ (\mathbf{4},\mathbf{2},\mathbf{1}),
-\qquad
--\bigl(t_{a}\bigr)_{ji}\ \text{on}\ (\bar{\mathbf{4}},\mathbf{1},\mathbf{2}).
-$$
-<strong>The two displays are one vertex written two ways</strong>, because a field in the $\bar{\mathbf{4}}$ and its conjugate in the $\mathbf{4}$ carry the same physical state read twice: the vertex reads $\bar\xi\,t\,\xi$ on the field in the $\mathbf{4}$ and reads with $t^{\mathsf{T}}$ and a minus when the same leg is written as the conjugate. <strong>A diagonal generator therefore differs by a sign and a plane by a transposition, and neither changes a charge</strong>, since a charge is read from the commuting generator and a transposition does not touch a diagonal.</p>
-<p><strong>Worked on the leptoquark plane, both readings of the same vertex.</strong>
-$$
-\text{on the fields: } u^{r}\to\nu_{L}\ \text{with } +1,
-\qquad
-\text{on the conjugates: } \bar u^{r}\to\bar\nu_{L}\ \text{with } -1,
-$$
-<strong>and the charge transfer is $-\tfrac23$ in both lines.</strong> The sign is opposite between a line and its conjugate, which is the statement that the boson carries $B-L=\pm\tfrac43$: the vertex and its conjugate use opposite signs of the boson's charge, and the two are the same physical process.</p>
-<p><strong>What is not a sign flip, and the one table that is wrong.</strong> The $B-L$ of a state and the $B-L$ carried by an entry are different objects; the conjugate reading reverses the first and not the second. <strong>A table that gives a particle name the conjugate's charges — $e_{R}$ with $Q=+1$, $u^{r}_{R}$ with $Q=-\tfrac23$ — is wrong, and it is wrong in the direction that reverses seven of the eight electric charges and all eight $B-L$ values while leaving the shape of the table looking plausible.</strong></p>
-<h2 id="the-weak-side-in-the-same-basis">The Weak Side, in the Same Basis</h2>
-<p><strong>The weak generators are not among the fifteen and this article prints them because a reader will otherwise look for them.</strong>
-$$
-\tau_{3}\otimes\mathbb{1}_{4}\ \text{on the eight}:
-\qquad
-u^{a}\to+\tfrac12 u^{a},
-\qquad
-d^{a}\to-\tfrac12 d^{a},
-\qquad
-\text{for every }a\in\{t,x,y,z\}.
-$$
-<strong>Eight entries, four up and four down, and none of them knows a colour.</strong> The matrix is $\mathrm{diag}(+\tfrac12,-\tfrac12,+\tfrac12,-\tfrac12,\dots)$ on the order above, which is the statement that <strong>the weak charge is uniform on each colour line and the colour charge is uniform on each slot</strong> — the two facts that between them make the electric charge a sum of one entry from each display.</p>
-<p><strong>The ladder is the one object that changes a slot.</strong>
-$$
-\tau_{1}+i\tau_{2}=\begin{pmatrix}0&amp;2\\0&amp;0\end{pmatrix},
-\qquad
-d^{a}\to u^{a},
-$$
-<strong>in the convention where the upper component is the up slot.</strong> It is $2\times2$, it is not one of the twenty-one, and it is the only matrix in the model that turns a down quark into an up quark. <strong>Everything else in this article preserves the slot</strong>, which is why the fifteen are described as the colour and $B-L$ algebra and not as the whole gauge algebra.</p>
-<p><strong>The count, one last time, and it is the article's only arithmetic.</strong>
-$$
-\underbrace{48}_{\text{twelve planes}\times2\times2}+\underbrace{16}_{\text{corner }8,\ \text{two diagonals }4+4}+\underbrace{24}_{\text{three weak arrays}\times8}=88 .
-$$
-<strong>Eighty-eight entries in one chirality and $176$ in both, and each is a number in a printed array.</strong> The article has named all of them by family, by pair of lines and by the charge they transfer, and no entry has been computed that the corpus did not already print.</p>
-<p><strong>The sparsity is worth one remark, because a reader expects more.</strong> A plane such as $A_{tx}$ has two nonzero entries on the quartet and four on the eight: it moves one line into one other line and does nothing else. <strong>Only the corner touches all four lines, and it does so diagonally.</strong> So the gauge sector of this model is sparse in the fermion basis, and a vertex table written out is short.</p>
+<p><strong>Each of the six is one entry in the quartet and two in the sixteen</strong>, because the copy index doubles it. <strong>So the leptoquark couples to both members of the doublet with the same strength</strong>, and that equality is again the absence of $\tau_{3}$ from the algebra. <strong>The pairing is fixed and not chosen</strong>: $\nu$ goes to $u$ and $e$ to $d$, never $e$ to $u$, because the vertex cannot change $\alpha$.</p>
+<h2 id="the-conjugate-half-and-where-the-minus-actually-sits">The Conjugate Half, and Where the Minus Actually Sits</h2>
+<p><strong>The conjugate fields carry the transposed matrix with a minus, and the minus is not a convention.</strong></p>
+<p>$$
+\Gamma^{a}_{\imath}\bigl(\bar\xi\bigr)=-ig_{4}\gamma_{\imath}\bigl(t_{a}^{T}\otimes\mathbb{1}_{2}\bigr),
+$$</p>
+<p><strong>because $C^{-1}t_{a}C=-t_{a}^{T}$ for the generators of a real form.</strong> A vertex read off the quartet half and copied to the conjugate half with the same sign is wrong on every entry, and the error is invisible in a square.</p>
+<p><strong>What the minus does to the charges.</strong> The transfer is computed the same way with the row and column exchanged, so <strong>every entry of the conjugate half carries the opposite $B-L$</strong>: $+\tfrac43$ where the quartet half had $-\tfrac43$. That is the statement that the sextet's six fields come in conjugate pairs, three at $+\tfrac43$ and three at $-\tfrac43$.</p>
+<p><strong>The equality of the two halves' counts is a check on the transpose.</strong> Transposing a matrix moves nonzero entries and does not create or destroy them, so $64=64$ is automatic — <strong>and the per-family count is a check that no family is diagonal-heavy</strong>: the corner has four entries and transposes to four.</p>
+<h2 id="what-the-algebra-forbids">What the Algebra Forbids</h2>
+<p><strong>Three prohibitions, and each is one line of matrix arithmetic.</strong></p>
+<ol>
+<li><strong>No generator changes the copy index.</strong> Every array is $\mathbb 1_{2}$ on $\alpha$, so $(X\otimes\mathbb 1_{2})$ has no entry between $\alpha=1$ and $\alpha=2$. <strong>The consequence is that no gauge vertex converts a $\nu$ into an $e$ or a $u$ into a $d$</strong>, and there is no $W$ in the model for the same reason. The copy index carries a global $\mathrm{U}(2)$ that the gauge sector cannot see; <strong>whether the Yukawa sector breaks it is <a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">the Yukawa article</a>'s question.</strong></li>
+<li><strong>No generator has two entries on the lepton line.</strong> The corner has one, the six mixed planes have one each in the $t$ row, and the colour block has none. <strong>So a lepton can be turned into a quark or given a phase, and not into another lepton.</strong></li>
+<li><strong>No generator carries $T_{3}$.</strong> The fifteen are $\mathbb 1$ on the copy index, so no combination of them can produce $\tau_{3}$: <strong>$[\mathbb 1_{4}\otimes\tau_{3},X\otimes\mathbb 1_{2}]=0$ for every $X$ in the fifteen, so $\tau_{3}$ commutes with the whole gauge algebra and is not in it.</strong> That is the wall, and it is a commutation statement.</li>
+</ol>
 <h2 id="what-the-article-does-not-do">What the Article Does Not Do</h2>
-<p><strong>It does not choose a normalisation.</strong> The entries printed are the arrays' own, and <a href="the-feynman-rules-of-the-four-colours-left-right-model-the-vertices-of-the-twenty-one-and-the-sixteen.html">the rules article</a>'s rescaling sits between these matrices and a rule. <strong>A reader who compares an entry here with an amplitude has one $i$, one rescaling and possibly one mixing to apply.</strong></p>
-<p><strong>It does not derive the fermion kinetic term.</strong> The matrices are exact as algebra and the coupling is transcribed, and the reason is the chiral wall: no chiral non-abelian matter representation is built, so no covariant derivative on the fermion's own carrier exists in $\mathbb{B}$.</p>
-<p><strong>It does not fix the family index.</strong> Every entry above carries an implicit $\delta^{ij}$ in the family, and the Yukawa matrices are what break that. <strong>A leptoquark that changed a generation would need an entry in the family factor, and the minimal sector makes that matrix the identity</strong> — which is why the $K_L\to\mu e$ channel closes in the minimal model and opens in the next one.</p>
+<p><strong>No weak matrices, because there are none.</strong> The old frame printed $\mathbb 1_{4}\otimes\tau_{i}$ beside the fifteen and counted $88$ vertices per chirality. <strong>Those three matrices are not generators of this model</strong>, and a table that lists them as gauge vertices is a table of a different Lagrangian. <strong>The successor's weak sector is treated downstream</strong>, where the second factor exists.</p>
+<p><strong>No derivation of the fermion action and no loop.</strong> The matrices are exact; the statement that a fermion propagates with them is imported. <strong>No anomalous magnetic moment, no running coupling, no vertex correction</strong>: all three need the loop expansion the corpus does not attempt here.</p>
 <h2 id="the-checks">The Checks</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>check</th>
-<th>computation</th>
+<th>statement</th>
 <th>result</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>the four families sum to fifteen</td>
-<td>$6+2+1+6$</td>
-<td>$15$</td>
+<td>entries per half</td>
+<td>$48+8+8$</td>
+<td>$64$</td>
 </tr>
 <tr>
-<td>the selection rule</td>
-<td>$8$ annihilate $e_{t}$, $1$ multiplies, $6$ move</td>
-<td>$15$</td>
+<td>entries in all</td>
+<td>$64+64$</td>
+<td>$128$</td>
 </tr>
 <tr>
-<td>the corner on $e_{t}$</td>
-<td>$iD$ entry</td>
-<td>$-3i$</td>
+<td>quartet entries of the fifteen</td>
+<td>$12\cdot2+2\cdot2+4$</td>
+<td>$32$</td>
 </tr>
 <tr>
-<td>the corner on $e_{x}$</td>
-<td>$iD$ entry</td>
-<td>$+i$</td>
+<td>nonzero brackets</td>
+<td>of the $105$ pairs</td>
+<td>$80$</td>
 </tr>
 <tr>
-<td>the $B-L$ of the corner</td>
-<td>$\tfrac13\operatorname{eig}D$</td>
-<td>$(-1,\tfrac13,\tfrac13,\tfrac13)$</td>
+<td>mixed planes</td>
+<td>three colours, two plane types</td>
+<td>$6$</td>
 </tr>
 <tr>
-<td>the two-index bracket</td>
-<td>$[A_{tx}\otimes\mathbb{1}_{2},\mathbb{1}_{4}\otimes\tau_{3}]$</td>
-<td>$0$</td>
+<td>corner entries</td>
+<td>one per line, diagonal</td>
+<td>$4$</td>
 </tr>
 <tr>
-<td>the charge formula on $e_{R}$</td>
-<td>$-\tfrac12+\tfrac12(-1)$</td>
+<td>$B-L$ transfer, mixed plane</td>
+<td>$-1=\tfrac13-\tfrac43$</td>
 <td>$-1$</td>
 </tr>
 <tr>
-<td>the charge formula on $u^{r}_{R}$</td>
-<td>$+\tfrac12+\tfrac16$</td>
-<td>$+\tfrac23$</td>
-</tr>
-<tr>
-<td>the leptoquark transfer, up row</td>
-<td>$0-(+\tfrac23)$</td>
-<td>$-\tfrac23$</td>
-</tr>
-<tr>
-<td>the leptoquark transfer, down row</td>
-<td>$-1-(-\tfrac13)$</td>
-<td>$-\tfrac23$</td>
-</tr>
-<tr>
-<td>the gluon transfer</td>
-<td>$+\tfrac23-(+\tfrac23)$</td>
+<td>$B-L$ per generation</td>
+<td>$2(-1)+6(\tfrac13)$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>the entries, one chirality</td>
-<td>$48+16+24$</td>
-<td>$88$</td>
+<td>$Q$ per generation</td>
+<td>$0-1+3(\tfrac23)-3(\tfrac13)$</td>
+<td>$0$</td>
 </tr>
 <tr>
-<td>the eight-by-eight block structure</td>
-<td>the two $4\times4$ blocks</td>
-<td>identical</td>
+<td>copy-index mixing</td>
+<td>$[X\otimes\mathbb 1_{2},\mathbb 1_{4}\otimes\tau_{3}]=0$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>trace of $D$</td>
+<td>$-3+1+1+1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>transposed count</td>
+<td>nonzero entries of $t_{a}^{T}$</td>
+<td>$64$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p><strong>The fermion side of the gauge interaction is a set of fifteen printed matrices and a multiplication by $\mathbb{1}_{2}$, and nothing else.</strong> The article prints them in four families, in both a $4\times4$ and an $8\times8$ form, and names every entry by the pair of lines it joins and the charge it transfers.</p>
-<p><strong>The three structural statements are counts.</strong> Eight of the fifteen annihilate the lepton line, one multiplies it, six move it into the colour triple; the sum is fifteen and no case is missing. <strong>The first eight are why lepton flavour has no gauge channel, the middle one is why the corner is $B-L$ and not $Q$, and the last six are the leptoquark sector.</strong></p>
-<p><strong>Two mistakes are forbidden by the tables and both are easy to make.</strong> The first is to give a particle name the conjugate's charges, which reverses seven of the eight electric charges and every $B-L$. The second is to look for the weak charge among the fifteen, which is where it is not: $\tau_{3}$ is uniform on colour and the colour arrays are uniform on the slot, and the electric charge is the sum of one entry from each.</p>
-<p><strong>What remains outside the article is the dynamics</strong>: one $i$ and one rescaling per gauge leg, the coupling symbolic, and the fermion action transcribed rather than derived. <strong>The matrices are the corpus's and they were already complete; the article's work is to read them in the order that makes the physics visible.</strong></p>
+<p><strong>The fifteen act on the sixteen as $X\otimes\mathbb 1_{2}$, and the shadow they cast has $128$ nonzero entries.</strong> Four families, one selection rule: the colour block does not see the lepton, the corner gives it a phase, and the six mixed planes move it to a colour line and carry $\mp\tfrac43$ away with them.</p>
+<p><strong>The copy index is where the model stops.</strong> Every array is the identity on it, so no gauge vertex can change it, and $Q$ therefore has a global half and a gauge half that never meet. <strong>That is the chiral wall, stated as a matrix fact.</strong></p>
+<p><strong>The conjugate half is the same table with the sign flipped on every entry</strong>, and the sextet's three-plus-three is that sign, read at the level of charges.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Symbol</th>
-<th>Meaning</th>
+<th>symbol</th>
+<th>meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$X\otimes\mathbb{1}_{2}$</td>
-<td>An array on the eight, identical in both doublet slots</td>
+<td>$\xi^{\alpha}_{i}$, $\bar\xi^{i}_{\alpha}$</td>
+<td>the sixteen Weyl fields, quartet index slow, copy index fast</td>
 </tr>
 <tr>
-<td>$\mathbb{1}_{4}\otimes\tau_{i}$</td>
-<td>A weak generator, uniform on the quartet</td>
+<td>$\alpha$</td>
+<td>the copy index, the weak-doublet slot, not gauged</td>
 </tr>
 <tr>
-<td>$T_{3}$</td>
-<td>$\tau_{3}$, the diagonal weak charge</td>
+<td>$X\otimes\mathbb 1_{2}$</td>
+<td>an array on the quartet, uniform in the copy index</td>
 </tr>
 <tr>
-<td>$B-L$</td>
-<td>$\tfrac13D$, with eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$</td>
+<td>$D=\operatorname{diag}(-3,1,1,1)$</td>
+<td>the condensate direction, and $B-L=\tfrac13D$</td>
 </tr>
 <tr>
-<td>$Q$</td>
-<td>$T_{3}+\tfrac12(B-L)$</td>
+<td>$\tau_{3}$</td>
+<td>the global isospin on the copy index, not a generator</td>
 </tr>
 <tr>
-<td>$t/u,\ t/d,\dots$</td>
-<td>The eight left-handed states, line over slot</td>
+<td>$Q=\tau_{3}+\tfrac12(B-L)$</td>
+<td>the electric charge, half global and half gauge</td>
 </tr>
 <tr>
-<td>$u,d$</td>
-<td>The two doublet slots, $\uparrow$ and $\downarrow$</td>
+<td>$t_{a}$</td>
+<td>the normalised generator, $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$</td>
 </tr>
 <tr>
-<td>$r,g,b$</td>
-<td>The colour lines $x,y,z$</td>
-</tr>
-<tr>
-<td>$\mathbf{4}$, $\bar{\mathbf{4}}$</td>
-<td>The two chiral blocks</td>
-</tr>
-<tr>
-<td>$-t^{\mathsf{T}}$</td>
-<td>The generator on the conjugate block</td>
-</tr>
-<tr>
-<td>$A_{ta}$, $iS_{ta}$</td>
-<td>The six mixed planes, the leptoquark entries</td>
-</tr>
-<tr>
-<td>$88$</td>
-<td>The number of nonzero fermion–gauge entries in one chirality</td>
+<td>$\mp\tfrac43$</td>
+<td>the $B-L$ a mixed plane's boson carries</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-feynman-rules-of-the-four-colours-left-right-model-the-vertices-of-the-twenty-one-and-the-sixteen.html">The Feynman Rules of the Four Colours Left–Right Model</a>. The rule these matrices instantiate, and the normalisation that sits between matrix and amplitude.</li>
-<li><a href="classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html">Classification of the Fermions in the Four Colours Left–Right Model</a>. The sixteen fields, the two readings of the sixteen rows, and the conjugation.</li>
-<li><a href="the-commutation-table-of-the-twenty-one-generators-441-entries-164-nonzero-and-six-rules.html">The Commutation Table of the Twenty-One Generators</a>. Which of these entries close into which under the bracket.</li>
-<li><a href="lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html">Lepton Flavour in the Four-Colours Model</a>. The $8+1+6$ count in its physics setting, and the reason no gauge vertex turns a lepton.</li>
-<li><a href="the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html">The Leptoquarks of the Four Colours Left–Right Model</a>. The six states the six mixed planes become, and the $B-L=\pm\tfrac43$.</li>
-<li><a href="the-21-axf-matrices-of-the-bosons-in-detail.html">The Twenty-One AXF Matrices of the Bosons in Detail</a>. Every array printed with its entries and spectrum.</li>
-<li><a href="chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a>. The one-sided pair $\xi_{L},\xi_{R}$ and the chiral wall the transcribed action lives behind.</li>
-<li><a href="the-excitation-ladder-theory-of-flavour.html">The Excitation Ladder Theory of Flavour</a>. What the family factor would have to be for the Yukawa matrix to be more than the identity.</li>
+<li><a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">The Feynman Rules of the $\mathrm{SU}(4)$ Model</a>. The rule this article expands, and the normalisation that precedes it.</li>
+<li><a href="classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html">The Classification of the Fermions</a>. The sixteen, the $B-L$ column, and the two copies.</li>
+<li><a href="charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour</a>. Why the corner is $-3$ and the three are $+1$.</li>
+<li><a href="lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html">Lepton Flavour in the Four Colours Model</a>. The same prohibition, from the flavour side.</li>
+<li><a href="the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html">The Commutation Table of the Fifteen Generators</a>. The $80$ nonzero brackets this article quotes.</li>
 </ul>
       </div>
     </main>

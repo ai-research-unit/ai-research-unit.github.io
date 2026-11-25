@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ai-research-unit.github.io/index.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/disclaimer.html</loc>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/introduction-to-the-biquaternion-universe.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/ai-physics-review.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/why-biquaternions.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/why-complexify-spacetime.html</loc>
@@ -338,7 +338,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-so4-route-to-the-euclidean-frame-an-alternative-to-the-imaginary-time-coordinate.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/paravectors-and-the-geometry-of-spacetime.html</loc>
@@ -982,7 +982,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-lagrangian-and-the-topologically-massive-gauge-field.html</loc>
@@ -1018,7 +1018,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-multi-qubit-boundary-what-b-tensor-b-would-require.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/composite-systems-and-the-multi-qubit-extension.html</loc>
@@ -1593,63 +1593,63 @@
     <lastmod>2026-11-23</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-four-colours-left-right-model.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-su4-model-four-colours-fifteen-generators-one-declaration.html</loc>
     <lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html</loc>
     <lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html</loc>
     <lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-generators.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/construction-of-the-axf-matrices-of-the-fifteen-generators.html</loc>
     <lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-commutation-table-of-the-twenty-one-generators-441-entries-164-nonzero-and-six-rules.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html</loc>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-21-axf-matrices-of-the-bosons-in-detail.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-15-axf-matrices-of-the-bosons-in-detail.html</loc>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.html</loc>
-    <lastmod>2026-11-24</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html</loc>
-    <lastmod>2026-11-24</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-rotors.html</loc>
     <lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html</loc>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <loc>https://ai-research-unit.github.io/articles_physics/construction-of-the-axf-rotors-of-the-fifteen-generators.html</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html</loc>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/an-introduction-to-flavour.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-excitation-ladder-theory-of-flavour.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <loc>https://ai-research-unit.github.io/articles_physics/lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html</loc>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-feynman-rules-of-the-four-colours-left-right-model-the-vertices-of-the-twenty-one-and-the-sixteen.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html</loc>
     <lastmod>2026-11-25</lastmod>
   </url>
   <url>
@@ -1657,7 +1657,7 @@
     <lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/three-diagrams-of-the-four-colours-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html</loc>
     <lastmod>2026-11-25</lastmod>
   </url>
   <url>
@@ -1726,7 +1726,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-path-integral-anomaly-and-the-fujikawa-measure-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-stueckelberg-mechanism-for-a-massive-abelian-vector-in-biquaternionic-form.html</loc>
@@ -1758,95 +1758,95 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/where-the-twenty-one-generators-go-one-ledger-three-readings-and-the-one-abelian-factor.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <loc>https://ai-research-unit.github.io/articles_physics/where-the-fifteen-generators-go-one-ledger-three-readings-and-the-one-abelian-factor.html</loc>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-adjoint-mass-matrix-as-the-square-of-the-roots-two-v-squared-double-commutator-six-planes-and-nine-zeros.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-fermions-after-the-breaking-three-colours-and-a-lepton-line-two-weak-doublets-the-electric-charges.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-mass-matrix-of-the-twenty-one-gauge-bosons-four-blocks-one-mixing-and-the-nine-zeros.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-one-coupling-that-returns-the-standard-model.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-weinberg-angle-and-the-three-neutral-states.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-standard-model-as-the-low-energy-phase.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-hierarchy-problem-and-naturalness.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-landau-pole-triviality-and-vacuum-stability.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html</loc>
@@ -1858,15 +1858,15 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/instantons-and-solitons-in-biquaternionic-form.html</loc>
@@ -1886,11 +1886,11 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/quantum-chromodynamics-as-the-residual-of-su4.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html</loc>
@@ -1966,7 +1966,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-electroweak-gauge-group-and-the-hypercharge-assignment.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html</loc>
@@ -1974,11 +1974,11 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/su2l-times-su2r-two-sides-six-generators-one-group.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html</loc>
@@ -2014,11 +2014,11 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/electroweak-precision-observables-the-oblique-parameters-s-t-u.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/chiral-fermions-in-the-biquaternion-framework.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html</loc>
@@ -2050,11 +2050,11 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-pmns-matrix-and-lepton-mixing.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html</loc>
@@ -2074,7 +2074,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-lagrangian-and-the-weak-interaction.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html</loc>
@@ -2090,7 +2090,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-photon-as-the-unbroken-mixture.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/maxwells-equations-in-the-biquaternionic-formulation.html</loc>
@@ -2462,7 +2462,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-functional-determinant-in-biquaternionic-form.html</loc>
@@ -2510,7 +2510,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-conformal-anomaly-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-theta-vacuum-in-biquaternionic-form.html</loc>
@@ -2778,15 +2778,15 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-gram-matrix-as-the-only-metric.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-two-sided-derivative-and-the-star-eigenvalue.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-curved-dirac-operator-and-its-square.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.html</loc>
@@ -10810,7 +10810,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/m4c-axis-free-representation-operators.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/m4c-pauli-representation-operators.html</loc>
@@ -10986,7 +10986,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-anti-hermitian-derivations-of-the-operators-of-the-biquaternion-algebra-as-su4.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-spin-group-the-principal-copy-and-the-kernel.html</loc>
@@ -12894,7 +12894,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-length-and-the-two-ranks-at-n-4.html</loc>
@@ -12950,7 +12950,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-spin-decomposition-of-m4c.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-truncated-rule-the-product-of-two-carriers-at-n-4.html</loc>
@@ -12966,11 +12966,11 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-intersection-table-of-the-carriers-with-the-two-halves-at-n-4.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/where-the-half-integers-go-in-m4c.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-slot-and-the-summand-at-n-4.html</loc>
@@ -13006,7 +13006,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-spin-zero-carrier-of-m4c.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-spin-zero-carrier-and-the-determinant-at-n-4.html</loc>
@@ -13022,7 +13022,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/introduction-to-the-spin-three-halves-bispinor-spaces-at-n-4.html</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/spinors-and-dirac-spinors-at-n-4.html</loc>
@@ -13046,7 +13046,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-spin-one-carrier-of-m4c.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-spin-one-carrier-and-the-trace-form-at-n-4.html</loc>
@@ -13090,7 +13090,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-three-rows-biquaternion-m2c-and-m4c.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-law-of-the-module-and-the-chain-of-carriers.html</loc>
