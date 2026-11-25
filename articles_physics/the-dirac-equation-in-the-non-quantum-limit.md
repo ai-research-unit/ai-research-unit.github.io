@@ -130,7 +130,7 @@ $$
 \vec\pi=\gamma m\vec v ,
 $$
 
-which is the coupled companion's subject and which the corpus verifies in *Relativistic Mechanics from the Dirac Wave* and in *The Non-Quantum Limit of the Coupled Dirac Equation*. The spin enters nowhere in it, and that absence is exact: a boost does not rotate a transverse direction.
+which is the coupled companion's subject and which the corpus verifies in *Relativistic Mechanics from the Dirac Wave* and in *The Coupled Dirac Equation in the Non-Quantum Limit*. The spin enters nowhere in it, and that absence is exact: a boost does not rotate a transverse direction.
 
 The spin's law. The rotor's connection transports $\hat s$, and the statement is the precession of a unit vector along the ray:
 

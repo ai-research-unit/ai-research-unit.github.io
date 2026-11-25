@@ -36,7 +36,7 @@ The companion articles supply the pieces:
 - Companion article *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form*, for the Wigner angle, its momentum dependence, and its holonomy.
 - Companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone*, for the geometry of the state space.
 - Companion article *Quantum Physics in Biquaternionic Form*, for the idempotents, the Born pairing, and the conjugation action.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the plain form and its scalar reading, and the Hermitian sector.
+- Companion article *States, Observables and the Born Weight*, for the plain form and its scalar reading, and the Hermitian sector.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the little group and the Casimir invariants.
 
 ## The Spin Entropy of a State

@@ -17,8 +17,8 @@ We use the conventions of the companion articles. The biquaternion algebra is $\
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the abelian gauge structure from the central phase.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the massless abelian field and its gauge invariance.
 - Companion article *The Photon in Biquaternionic Form*, for the massless neutral vector field.
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material-sector carrier of the connection.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the sector structure and the trace.
+- Companion article *Four-Vectors and the Interval*, for the material-sector carrier of the connection.
+- Companion article *States, Observables and the Born Weight*, for the sector structure and the trace.
 
 ## The Proca Obstruction
 

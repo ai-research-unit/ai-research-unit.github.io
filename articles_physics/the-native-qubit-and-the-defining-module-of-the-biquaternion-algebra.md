@@ -235,7 +235,7 @@ the three pairs of outcome probabilities determine $\vec s_{\Psi}$ and hence the
 - **The dimension of composite systems.** The defining module is the single-qubit carrier. The two-qubit arena is the tensor product $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose module $\mathbb{C}^4$ is *not* the defining module of $\mathbb{B}$; it is the defining module of the larger algebra. That the tensor product is the correct composition rule is an additional structure, identified as an open question in *Entangled Subsystems in the Biquaternion Framework* and analysed in the section *The Composition Rule and the Rank-One Condition* above.
 - **Systems of other dimension.** A qutrit would require $M_3(\mathbb{C})$, which is not isomorphic to $\mathbb{B}$. The framework as developed here describes two-level systems; whether it can be extended is a separate question.
 - **A dynamics.** The module fixes the kinematics — carriers, states, observables, probabilities — and says nothing about which Hamiltonian acts.
-- **An interpretation.** That the module is the algebra's own carrier is a structural fact; that it is a physical informational sector is the interpretive hypothesis of *The Informational Sector: States, Observables and Probability*, and it is not required by anything in this article.
+- **An interpretation.** That the module is the algebra's own carrier is a structural fact; that it is a physical informational sector is the interpretive hypothesis of *Introduction to the Biquaternion Universe*, and it is not required by anything in this article.
 
 ## The Composition Rule and the Rank-One Condition
 

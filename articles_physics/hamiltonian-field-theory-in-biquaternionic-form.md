@@ -19,7 +19,7 @@ and the equation of motion is $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde{Ξ
 The companion articles are:
 
 - Companion article *The Lagrangian and Hamiltonian Mechanics*, for the finite-dimensional Legendre transform, the phase-space biquaternion and the Poisson bracket that this article extends to a density.
-- Companion article *The Lagrangian and the Non-Quantum Limit: The Action Principle*, for the action and its first variation, and for the boundary term that the field case reproduces as a flux.
+- Companion article *The Non-Quantum Limit of the Action Principle and the Lagrangian*, for the action and its first variation, and for the boundary term that the field case reproduces as a flux.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the Lagrangian density, the conserved currents, and the canonical energy–momentum tensor.
 - Companion article *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*, for the energy–momentum biquaternion and the electromagnetic packaging that the scalar field's density and flux repeat.
 - Companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field*, for the quantum theory that takes this classical canonical structure over without modification, and for the constraint analysis of the Dirac and Maxwell fields that this article contrasts with.

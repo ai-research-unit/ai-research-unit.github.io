@@ -285,7 +285,7 @@ The leading corrections cancel because the mass shell is an exact relation: the 
 
 **Transcribed from standard physics.** The proper-time definition, the Lorentz factor, the velocity-addition law, the Lagrangian $\mathrm{Lag} = -mc^2/\gamma$, the canonical momentum, the dispersion relation and the non-relativistic expansion are standard relativistic mechanics, and the biquaternion formulation reproduces them rather than replacing them. The parameter $c$ and the mass $m$ are inputs; the algebra supplies the home of each object but not its value.
 
-**Interpretation.** The interpretation of $\mathbb{B}_{\Phi}$ as the material sector, and of a timelike worldline in it as a physical particle, is the framework's structural hypothesis, stated in the foundational articles *Introduction to the Biquaternion Universe* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The kinematic statements above are exact and standard; the hypothesis is what gives them their sector interpretation.
+**Interpretation.** The interpretation of $\mathbb{B}_{\Phi}$ as the material sector, and of a timelike worldline in it as a physical particle, is the framework's structural hypothesis, stated in the foundational articles *Introduction to the Biquaternion Universe* and *Four-Vectors and the Interval*. The kinematic statements above are exact and standard; the hypothesis is what gives them their sector interpretation.
 
 ## Open Questions
 
@@ -297,7 +297,7 @@ The leading corrections cancel because the mass shell is an exact relation: the 
 
 4. **Rest mass as a norm.** The identity $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$ makes the rest mass the biquaternion norm of the momentum. Does the framework constrain the possible mass spectrum in any way, or is $m$ an arbitrary parameter of the same kind as in the standard theory?
 
-5. **Coupling to the informational sector.** The particle is described entirely in $\mathbb{B}_{\Phi}$. Whether there is a kinematical coupling between a worldline and the informational sector $\mathbb{B}_{\Psi}$ — beyond the Lorentz action of the rotor — is not addressed here; it is the central open question of the foundational article *The Informational Sector: States, Observables and Probability*, and it is outside the scope of a classical kinematic account.
+5. **Coupling to the informational sector.** The particle is described entirely in $\mathbb{B}_{\Phi}$. Whether there is a kinematical coupling between a worldline and the informational sector $\mathbb{B}_{\Psi}$ — beyond the Lorentz action of the rotor — is not addressed here; it is the central open question of the foundational article *Introduction to the Biquaternion Universe*, and it is outside the scope of a classical kinematic account.
 
 The conventions of the construction are those of the following companion articles:
 

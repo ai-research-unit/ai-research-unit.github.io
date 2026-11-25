@@ -25,8 +25,8 @@ The conventions are those of the series: the algebra and the element glyphs of *
 - Companion article *The Schrödinger Equation in Biquaternionic Form*, for the state and the central Hamiltonian.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the carrier, the two halves, the Lorentz action, and the invariant forms.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the Dirac field and its scalar bilinears.
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material sector, the four-vectors, and the biquaternion norm.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector, the pure states, and the pairing formula.
+- Companion article *Four-Vectors and the Interval*, for the material sector, the four-vectors, and the biquaternion norm.
+- Companion article *States, Observables and the Born Weight*, for the Hermitian sector, the pure states, and the pairing formula.
 
 ## The Carrier of States and the Spin It Carries
 

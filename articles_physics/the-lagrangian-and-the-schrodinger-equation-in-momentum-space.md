@@ -264,4 +264,4 @@ Parseval is the Noether charge's transform, $Q_N=\sum_j\lvert c_j\rvert^{2}$, ex
 - *The Fourier Transform and the Schrödinger Equation in Biquaternionic Polar Variables*, for the same identity read in the word.
 - *The Lagrangian and the Schrödinger Equation in Polar Variables*, for the unconstrained variation and the vanishing multipliers.
 - *The Lagrangian and the Coupled Schrödinger Equation in Momentum Space*, for the same structure with a connection.
-- *The Lagrangian and the Non-Quantum Limit: The Action Principle*, for the principle this article applies.
+- *The Non-Quantum Limit of the Action Principle and the Lagrangian*, for the principle this article applies.

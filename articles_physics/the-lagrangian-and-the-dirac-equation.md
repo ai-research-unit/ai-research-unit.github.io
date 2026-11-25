@@ -20,7 +20,7 @@ This is the element-form variational principle. The polar-form one is the compan
 
 The equation is the parent's. Nothing here is a new prediction and nothing here is a new solution. What is added is the action, the currents, and the reason the split is forced.
 
-The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Dirac equation in its element form.
+The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Non-Quantum Limit of the Action Principle and the Lagrangian*; this article applies the principle to the Dirac equation in its element form.
 
 Every symbol is defined where it first appears, and §*Summary of Notation* collects them.
 

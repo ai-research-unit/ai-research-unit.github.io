@@ -23,7 +23,7 @@ $$
 
 **What it does not establish.** That the algebra derives the group — it derives the group *given* the carrier. That the lepton line is the fourth colour — that is declaration (A). That the model is chiral where it gauges — **it is not, and §*The Chiral Wall* shows that this is now a theorem about the model rather than a caveat about a representation.**
 
-**What is absent here.** No $\mathrm{SU}(2)_L$, no $\mathrm{SU}(2)_R$, no hypercharge, no photon, no $W$, no $Z$, no rank five. **Those arrive at $M_C$, where colour, one abelian factor and two weak factors describe what the vacuum leaves**, and that is the subject of the next section of the corpus. This article is the model above that scale, and it is complete on its own terms.
+**What is absent here.** No weak pair, no hypercharge, no photon, no $W$, no $Z$, no rank five. **Those arrive at $M_C$, where colour, one abelian factor and two weak factors describe what the vacuum leaves**, and that is the subject of the next section of the corpus. This article is the model above that scale, and it is complete on its own terms.
 
 **Where the rest is.** The counts and the arrays are [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html) and [The Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The transition is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the weak force is, and why it is not a piece of the fifteen, is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The couplings are [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html).
 
@@ -232,7 +232,7 @@ $$
 
 **$\mathrm{SO}(10)$.** Rank five, and it contains $\mathrm{SU}(4)$ — **but its spinor is a $\mathbf{16}$ obtained by a Clifford algebra the corpus does not otherwise use**, and containment is not a derivation. It is recorded and refused.
 
-**The left–right group is the group at $M_C$.** $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ is what the vacuum of the primordial force leaves, and the two weak factors arrive at that scale. **It is a step of the transition, not a rival candidate**: an alternative would be a group chosen instead, and this one is arrived at.
+**The four-factor group is the group at $M_C$.** Colour, one abelian factor and the two weak factors are what the vacuum of the primordial force leaves, and the weak factors arrive at that scale. **It is a step of the transition, not a rival candidate**: an alternative would be a group chosen instead, and this one is arrived at.
 
 **The one-line reason the group is $\mathrm{SU}(4)$.** The carrier is four-dimensional and its stabiliser is $\mathrm{SU}(3)$; three colours inside a four-dimensional carrier with one line removed is $\mathrm{SU}(4)$, not $\mathrm{SU}(3)\times\mathrm{U}(1)$. **Whether the fourth direction is gauged is the physics question, and this model answers that it is.**
 

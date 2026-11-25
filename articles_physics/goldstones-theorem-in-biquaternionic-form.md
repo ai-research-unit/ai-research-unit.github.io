@@ -20,7 +20,7 @@ The article is organised as follows. The next section states the symmetry and it
 - Companion article *Scalar Pair Creation in Biquaternionic Form*, for the external-background process and the mode equation with a time-dependent mass.
 - Companion article *The Scalar Field Path Integral in Biquaternionic Form*, for the vacuum functional and the effective action.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the construction of the current from the central scalar action.
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-wavevector and the biquaternion norm.
+- Companion article *Four-Vectors and the Interval*, for the material four-wavevector and the biquaternion norm.
 
 $$
 \xi=\frac{1}{\sqrt2}\left(\xi_1+i\xi_2\right),

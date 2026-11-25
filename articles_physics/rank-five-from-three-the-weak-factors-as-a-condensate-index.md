@@ -286,7 +286,7 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 
 **The rank lemma is why it must be so.** $\operatorname{rank}\mathfrak{su}(4)=3$, the endpoint costs $5$, and a subalgebra never outranks its algebra. **So the weak factors are not pieces of $\mathrm{SU}(4)$; they arrive beside it — which is what "arrival" means here, and what $3+1+1=5$ certifies.**
 
-**The mechanism is one object with two indices.** $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$: the $\mathrm{SU}(4)$ index breaks and eats the sextet, the $\mathbf 2$ index is the weak force. **The breaking and the birth are one event with two aspects.**
+**The mechanism is one object with three indices.** $\Phi\in(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$: the colour pair breaks $\mathrm{SU}(4)$ and eats the sextet, the $\mathbf 2$ index is the weak force. **The breaking and the birth are one event with two aspects.**
 
 **The sextet cannot do it, twice over.** Charge: $Q=\pm\tfrac23$ sums to $\{0,\pm\tfrac43\}$ and never to $\pm1$, and the colour singlet is neutral identically. Mass: a bound state weighs at least its confinement scale, and that scale is $250$ TeV. Both proofs are [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html)'s. **Neither closure can be repaired by dynamics.**
 
@@ -299,7 +299,7 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 | $\mathfrak{su}(4)$ | the primordial force, dimension $15$, rank $3$ |
 | $\mathfrak m$ | the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, $Q=\pm\frac23$ |
 | $iD$ | the condensate $\operatorname{diag}(-3,1,1,1)$; $\operatorname{ad}(iD)$ has spectrum $0^{9},(\pm4i)^{3}$ |
-| $\Phi$ | the transition's scalar, $(\mathbf4,\mathbf1,\mathbf2)$, $16$ real components |
+| $\Phi$ | the transition's scalar, $(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$, $64$ real components |
 | $M_C$ | the first breaking scale, $\gtrsim250$ TeV from $K_L\to\mu e$ |
 | $v_C,v$ | the transition and electroweak vacuum values, $v=246$ GeV |
 | $\Lambda_{\text{confine}}$ | the scale a bound state weighs at least, $=M_C$ here |

@@ -73,7 +73,7 @@ where $\mathsf{M}_2$ is the isomorphism onto $M_2(\mathbb{C})$ and $\langle\cdot
 
 **Proof.** Both sides are polynomial functions of the four coefficients of $\tilde Q$, so it suffices to check on a basis. On $\mathsf{M}_2(e_t)=I_2$ both sides are $1$; on $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\det(-i\sigma_{\imath})=1$ while $\langle \vec e_{\imath}\rangle_{\natural}=\vec e_{\imath} \vec e_{\imath}^{\natural}=-\vec e_{\imath}^2=e_t$, giving $1$; and both sides are multiplicative, $\det(\mathsf{M}_2(\tilde Q_3)\mathsf{M}_2(\tilde Q_1))=\det\mathsf{M}_2(\tilde Q_3)\det\mathsf{M}_2(\tilde Q_1)$ and $\langle\tilde Q_3\tilde Q_1\rangle_{\natural}=\tilde Q_3\tilde Q_1(\tilde Q_3\tilde Q_1)^{\natural}=\tilde Q_3\,\langle\tilde Q_1\rangle_{\natural}\,\tilde Q_3^{\natural}=\tilde Q_3\tilde Q_3^{\natural}\,\langle\tilde Q_1\rangle_{\natural}=\langle\tilde Q_3\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural}$ using the centrality of $\langle\tilde Q_1\rangle_{\natural}$. A basis check plus multiplicativity on a generating set establishes the identity on the whole algebra.
 
-The determinant of its $2\times2$ image is thus the **biquaternion norm**, the same object that supplies the Minkowski interval of *The Material Sector: Four-Vectors, Interval and Lorentz Action*.
+The determinant of its $2\times2$ image is thus the **biquaternion norm**, the same object that supplies the Minkowski interval of *Four-Vectors and the Interval*.
 
 **Proposition (regular representation).** Left multiplication $L_{\tilde Q}:\tilde Q_2\mapsto\tilde Q\tilde Q_2$ and right multiplication $R_{\tilde Q}:\tilde Q_2\mapsto \tilde Q_2\tilde Q$ on $\mathbb{B}$ regarded as a four-complex-dimensional space both have determinant
 $$
@@ -92,7 +92,7 @@ $$
 $$
 confirming the second. The eigenvalues of $\mathsf{M}_2(\tilde Q)$ are $1.520333+0.407233i$ and $-0.120333-0.007233i$, whose product is $-0.18-0.06i$, as required.
 
-**Interpretation of the result.** The determinant of an element of the framework's algebra is the biquaternion norm, so a vanishing determinant — a zero divisor — is a vanishing norm, i.e. an element of the zero-divisor cone. This is the algebraic reason the cone of *The Material Sector: Four-Vectors, Interval and Lorentz Action* is the light cone and the singular locus of the algebra at once. The regular-representation determinant being the square is the algebraic statement that the left and right actions see the same norm; there is no separate "left determinant" and "right determinant".
+**Interpretation of the result.** The determinant of an element of the framework's algebra is the biquaternion norm, so a vanishing determinant — a zero divisor — is a vanishing norm, i.e. an element of the zero-divisor cone. This is the algebraic reason the cone that *Four-Vectors and the Interval* treats is the light cone and the singular locus of the algebra at once. The regular-representation determinant being the square is the algebraic statement that the left and right actions see the same norm; there is no separate "left determinant" and "right determinant".
 
 ## The Determinant in the Gaussian Integral
 

@@ -26,7 +26,7 @@ Three results are established, and each is a computation.
 
 **Scope.** The coefficient is the constant mass wave number $\nu_m$ throughout, as in the parent's §*The Equation in Polar Variables*, and §*The Potential Term* states the generalisation to a Hermitian coefficient in one line. The operator case, in which the coefficient varies in space and time, is the standard Madelung problem of the parent's non-relativistic limit and is not re-derived here.
 
-The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Klein–Gordon equation in its polar form.
+The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Non-Quantum Limit of the Action Principle and the Lagrangian*; this article applies the principle to the Klein–Gordon equation in its polar form.
 
 ## Conventions
 

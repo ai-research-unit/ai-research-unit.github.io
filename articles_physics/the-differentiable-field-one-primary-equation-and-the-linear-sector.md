@@ -21,9 +21,9 @@ The corpus is not uniform about what it postulates, and the distinction between 
 | Item | Status in the corpus | Owner |
 |---|---|---|
 | The algebra $\mathbb{B}$, its product and its conjugations | postulated | *Introduction to the Algebra of Biquaternions* |
-| The interval and the four-vectors of relativity | derived from $\mathbb{B}_{\Phi}$ | *The Material Sector: Four-Vectors, Interval and Lorentz Action* |
+| The interval and the four-vectors of relativity | derived from $\mathbb{B}_{\Phi}$ | *Four-Vectors and the Interval* |
 | The Lorentz group and its action | derived as the norm-one group | *The Lorentz Group as Biquaternion Norm Automorphisms* |
-| The state space and the Born form | derived from $\mathbb{B}_{\Psi}$ | *The Informational Sector: States, Observables and Probability* |
+| The state space and the Born form | derived from $\mathbb{B}_{\Psi}$ | *States, Observables and the Born Weight* |
 | The Dirac equation | transcribed into the algebra | *The Dirac Equation in Biquaternionic Form* |
 | The Maxwell equations | transcribed, or obtained from a biquaternion wave equation | *Nonlinear Maxwell Equations in Biquaternionic Form* |
 | The gauge principle | postulated, with a ceiling on the group | *The Gauge Principle in Biquaternionic Form* |
@@ -51,7 +51,7 @@ Everything else is a consequence, and the chain is short: a null gradient, hence
 
 ### The Eikonal as Primary, and the Inversion of the WKB Relation
 
-The corpus contains the eikonal twice already, in two different roles. *The Non-Quantum Limit of the Free Schrödinger Equation* derives it as the short-wavelength limit of the linear wave equation: the phase of a rapidly oscillating solution obeys it approximately, and the approximation improves as the wavelength shrinks.
+The corpus contains the eikonal twice already, in two different roles. *The Schrödinger Equation in the Non-Quantum Limit* derives it as the short-wavelength limit of the linear wave equation: the phase of a rapidly oscillating solution obeys it approximately, and the approximation improves as the wavelength shrinks.
 
 *Null Electromagnetic Fields and the Shear-Free Congruence* carries the eikonal in its **exact complex** form, and it is the closer comparison. Bateman's representation writes a null Maxwell field as $C=d\alpha\wedge d\beta$ from two complex functions that are **required**, as a hypothesis, to obey $\partial\alpha\cdot\partial\alpha=\partial\beta\cdot\partial\beta=\partial\alpha\cdot\partial\beta=0$ in the complexified metric — which is the companion article's eikonal, written for two functions instead of one. Nothing forces it there: it is an assumption on the data, made so that the field built from them is null and duality-pure.
 
@@ -75,7 +75,7 @@ A null element of the algebra is not a new object in this corpus, and the three 
 
 ### The Zero-Divisor Cone
 
-The gradient is null in the sense of the biquaternion norm, so it lies on the zero-divisor cone, which is the light cone of the material sector and the locus of the pure states of the informational sector, a pure state being a rank-one projector and a rank-one matrix having vanishing determinant (*The Topology of the Zero-Divisor Cone*, *The Light Cone as the Biquaternion Zero-Divisor Cone*, *The Informational Sector: States, Observables and Probability*). The corpus treats that coincidence of three descriptions as a structural fact about the algebra. The derivation route makes it a fact about fields: every differentiable function has a gradient on the cone, so any field theory built this way lives on the cone by construction.
+The gradient is null in the sense of the biquaternion norm, so it lies on the zero-divisor cone, which is the light cone of the material sector and the locus of the pure states of the informational sector, a pure state being a rank-one projector and a rank-one matrix having vanishing determinant (*The Topology of the Zero-Divisor Cone*, *The Light Cone as the Biquaternion Zero-Divisor Cone*, *States, Observables and the Born Weight*). The corpus treats that coincidence of three descriptions as a structural fact about the algebra. The derivation route makes it a fact about fields: every differentiable function has a gradient on the cone, so any field theory built this way lives on the cone by construction.
 
 ### The Celestial Sphere
 

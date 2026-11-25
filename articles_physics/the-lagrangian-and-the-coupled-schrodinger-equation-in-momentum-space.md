@@ -240,4 +240,4 @@ The symbol is gauge invariant in the invariant coordinates: the four shifts canc
 - *The Lagrangian and the Schrödinger Equation in Momentum Space*, for the free version of this article's identity.
 - *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the same symbol read in the chart.
 - *The Coupled Schrödinger Equation in Biquaternionic Form*, for the signs of the two covariant slots.
-- *The Lagrangian and the Non-Quantum Limit: The Action Principle*, for the principle and its Legendre structure.
+- *The Non-Quantum Limit of the Action Principle and the Lagrangian*, for the principle and its Legendre structure.

@@ -400,7 +400,7 @@ This last estimate is printed with the *opposite* dependence on $\digamma_{\math
 
 4. **What does the Born approximation give for the quaternionic potential?** The corpus's Born approximation is in *Coulomb Scattering and Rutherford's Formula in Biquaternionic Form*, and the source's optical motivation uses the first-order Born term with the scattering potential $4\pi^{2}\nu_{\Phi}^2[m^2-1]$. Is the first iteration of (8.5) — the integral with $u$ replaced by $u_{\mathrm{inc}}$ — the same object as the corpus's Born term, and does the quaternionic potential add a polarisation structure the scalar optical formula lacks?
 
-5. **Is the vector-field restriction removable by the material/informational split?** A general quaternion-valued field splits into a scalar part and a vector part, and the corpus reads those two parts as the informational and the material sectors (*The Informational Sector: States, Observables and Probability*, *The Material Sector: Four-Vectors, Interval and Lorentz Action*). The source discards one half; the corpus's interpretation would keep both. Does the scattering theory of the full field split into two coupled problems along the same line?
+5. **Is the vector-field restriction removable by the material/informational split?** A general quaternion-valued field splits into a scalar part and a vector part, and the corpus reads those two parts as the informational and the material sectors (*States, Observables and the Born Weight*, *Four-Vectors and the Interval*). The source discards one half; the corpus's interpretation would keep both. Does the scattering theory of the full field split into two coupled problems along the same line?
 
 ## Summary
 

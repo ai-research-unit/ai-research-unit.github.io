@@ -147,7 +147,7 @@ $$
 
 so every future (or past) null point of the real material slice is a real multiple of an idempotent: the material cone is the non-pure family, realized over the reals. The apex $\tilde R_\Phi = 0$ is excluded from $\mathcal{Z}$ by the definition, since it is not a zero divisor. The real pure case would require $\langle r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} =r_x^2+r_y^2+r_z^2 = 0$ with $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\neq 0$ and real, which is impossible; the nilpotent family on the material cone therefore needs complex spatial components, and the real cone is entirely of the idempotent type.
 
-**The informational cone.** On $\mathbb{B}_{\Psi}$ the general element is $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with $h_t, \vec h_\Psi$ real, and $\langle\tilde H_\Psi\rangle_{\natural} = h_t^2 - \vec h_\Psi^{2}$. Its vanishing set is a cone with the real scalar $q_t$ as the distinguished coordinate — the future and past cones of the informational sector. It is a genuine cone of the same type, but its **physical interpretation** is the informational one and belongs to the companion article *The Informational Sector: States, Observables and Probability*; here it is recorded only to make the point that both Hermitian-type subspaces, and only those, carry the zero-divisor cone.
+**The informational cone.** On $\mathbb{B}_{\Psi}$ the general element is $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with $h_t, \vec h_\Psi$ real, and $\langle\tilde H_\Psi\rangle_{\natural} = h_t^2 - \vec h_\Psi^{2}$. Its vanishing set is a cone with the real scalar $q_t$ as the distinguished coordinate — the future and past cones of the informational sector. It is a genuine cone of the same type, but its **physical interpretation** is the informational one and belongs to the companion article *States, Observables and the Born Weight*; here it is recorded only to make the point that both Hermitian-type subspaces, and only those, carry the zero-divisor cone.
 
 The distribution is therefore forced by the topology of the four real slices: the two division slices $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ are anisotropic, and the two slices on which $i$ appears with a relative sign — $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ — carry the cone. The physical light cone is the branch of $\mathcal{Z}$ that lies in the material sector.
 
@@ -281,7 +281,7 @@ The conventions of the construction are those of the following companion article
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the causal trichotomy.
 - Companion article *Algebra and Element Conventions*, for the algebra and basis, the conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*).
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the real quaternion slice and the four-vector representation.
+- Companion article *Four-Vectors and the Interval*, for the real quaternion slice and the four-vector representation.
 - Companion article *The Relativistic Particle in Biquaternionic Form*, for the particle's four-momentum, mass shell and causal classification.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field strength on the null cone and its invariants.
 - Companion article *Exercise: The Electromagnetic Energy–Momentum Tensor*, for the null field's energy–momentum and its rank-one form.

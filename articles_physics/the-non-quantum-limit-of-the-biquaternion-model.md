@@ -52,7 +52,7 @@ Every internal ratio is already one number. The three wave numbers form a right 
 
 The last row is not independent: $\frac{\Omega}{2\pi\nu_m}=\gamma-1=\frac{\beta^{2}}{2}$. Two parameters remain, one internal and one external.
 
-The third row is not a limit. A small $1/(\nu_mL)$ says the region is large against the mass length, the validity of the one-particle description: a precondition of quantum mechanics, not its removal. *The Non-Quantum Limit of the Free Klein–Gordon Equation* derives the same verdict from the mass shell's sensitivity and states the nesting: $\delta=\epsilon\lvert\vec p\rvert/(mc)<\epsilon$, so the limit implies the window and the window does not imply the limit. The two criteria differ by $\frac{2\pi\nu_m}{2\pi\nu_{\Phi}}=\frac{1}{\gamma\beta}=99.995$, so a reader who took $1/\nu_m$ as the classicality length would put the boundary at $3.86\times10^{-13}\ \mathrm{m}$ where it lies at $3.86\times10^{-11}\ \mathrm{m}$.
+The third row is not a limit. A small $1/(\nu_mL)$ says the region is large against the mass length, the validity of the one-particle description: a precondition of quantum mechanics, not its removal. *The Klein–Gordon Equation in the Non-Quantum Limit* derives the same verdict from the mass shell's sensitivity and states the nesting: $\delta=\epsilon\lvert\vec p\rvert/(mc)<\epsilon$, so the limit implies the window and the window does not imply the limit. The two criteria differ by $\frac{2\pi\nu_m}{2\pi\nu_{\Phi}}=\frac{1}{\gamma\beta}=99.995$, so a reader who took $1/\nu_m$ as the classicality length would put the boundary at $3.86\times10^{-13}\ \mathrm{m}$ where it lies at $3.86\times10^{-11}\ \mathrm{m}$.
 
 The mass is not the quantum either. Setting $\nu_m=0$ gives $\nu_t^{\prime}=\nu_{\Phi}$, the photon: linear dispersion, exact interference, no particle scale, and more wave-like than the massive case. A plane wave is semiclassical already, so the limit acts only where $A$ varies.
 
@@ -147,8 +147,8 @@ Four sectors, and the free Proca field is the one that refuses. The limit needs 
 
 | sector | free | coupled |
 |---|---|---|
-| Schrödinger | yes, in *The Non-Quantum Limit of the Free Schrödinger Equation* | yes, with the kinetic momentum |
-| Klein–Gordon | yes, in *The Non-Quantum Limit of the Free Klein–Gordon Equation* | yes, in *The Non-Quantum Limit of the Coupled Klein–Gordon Equation*, with the circulation quantum $h n+ϙ\Phi_B$ |
+| Schrödinger | yes, in *The Schrödinger Equation in the Non-Quantum Limit* | yes, with the kinetic momentum |
+| Klein–Gordon | yes, in *The Klein–Gordon Equation in the Non-Quantum Limit* | yes, in *The Coupled Klein–Gordon Equation in the Non-Quantum Limit*, with the circulation quantum $h n-q\Phi_B$, $q$ the electric charge |
 | Dirac | yes, on the square | yes, on the square, with the spin transport |
 | Proca | no: the word is a scale and a boost | yes: the phase comes from the connection |
 

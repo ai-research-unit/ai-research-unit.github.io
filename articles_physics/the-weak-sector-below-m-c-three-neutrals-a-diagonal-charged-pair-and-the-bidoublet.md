@@ -144,9 +144,9 @@ $$
 \mathcal M^{2}_{\pm}=\frac14\begin{pmatrix}g_L^{2}v^{2}&0\\0&g_R^{2}v_C^{2}\end{pmatrix}.
 $$
 
-**The diagonality is not an assumption about the numbers; it is the statement that no scalar in the content carries both indices.** The two doublets,
-their eight survivors and the reason no field carries both weak indices are [The Scalar
-Content](the-scalar-content-one-quartet-one-doublet-and-eight-survivors.html)'s.
+**The diagonality is not an assumption about the numbers; it is the statement that no scalar in the content carries both indices.** The two
+fields, the ten survivors and the reason no field carries both weak indices are [The Scalar
+Content](the-scalar-content-one-matrix-and-ten-survivors.html)'s.
 
 ## What the Two Halves Say Together
 
@@ -325,7 +325,7 @@ ways.
 - [The Mass Matrix of the Fifteen Gauge Bosons](the-mass-matrix-of-the-fifteen-gauge-bosons-the-u3-kernel-and-the-sextet.html). What the model itself
 gauges, and why the weak directions have no row there.
 - [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-and-the-three-neutral-states.html). The angle that the null direction leaves free.
-- [The Scalar Content: One Quartet, One Doublet, Eight Survivors](the-scalar-content-one-quartet-one-doublet-and-eight-survivors.html). Why no field in
+- [The Scalar Content: One Quartet, One Doublet, Eight Survivors](the-scalar-content-one-matrix-and-ten-survivors.html). Why no field in
 the minimal content carries both weak indices.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Why the weak factors arrive rather than emerge.
 - S. Weinberg, *The Quantum Theory of Fields, Vol. II*, Cambridge University Press, 1996 — the neutral mass matrix, the rank argument, and the photon as

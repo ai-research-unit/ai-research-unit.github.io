@@ -24,7 +24,7 @@ $$
 \tilde{Q}_- = i r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}, \qquad \tilde{Q}_+ = h_t\,e_t + i\bigl(h'_{x}\vec e_x + h'_{y}\vec e_y + h'_{z}\vec e_z\bigr) \in \mathbb{B}_{\Psi},
 $$
 
-with $r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, h_t, h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z$ real. The verification of the two inclusions is the pair of computations in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, and the interpretation of the coefficients is the $i r'_t$ dictionary of *Algebra and Element Conventions*.
+with $r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, h_t, h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z$ real. The verification of the two inclusions is the pair of computations in *Four-Vectors and the Interval* and *States, Observables and the Born Weight*, and the interpretation of the coefficients is the $i r'_t$ dictionary of *Algebra and Element Conventions*.
 
 The centre of the algebra is $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and it is the complex time sector of *The Biquaternion Space, the Group of Involutions and the Six Subspaces*. The two times are its two real coordinates: writing
 

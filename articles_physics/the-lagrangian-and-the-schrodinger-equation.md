@@ -24,7 +24,7 @@ Two boundaries are stated first, because both are ways of overclaiming.
 
 **The two settings are distinguished from the first line.** The parent has a constant-element setting, $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t$ and $\vec h_\Psi$ fixed numbers, and an operator setting, $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/2m+V$. The action below is written in both, but every result about a solution is a result of the constant setting, and no result is transferred from one setting to the other.
 
-The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Schrödinger equation in its element form.
+The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Non-Quantum Limit of the Action Principle and the Lagrangian*; this article applies the principle to the Schrödinger equation in its element form.
 
 ## Conventions
 

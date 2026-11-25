@@ -16,9 +16,9 @@ The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C
 
 The companion articles are:
 - Companion article *The Lagrangian and Hamiltonian Mechanics*, for the phase-space biquaternion and the Poisson bracket.
-- Companion article *The Lagrangian and the Non-Quantum Limit: The Action Principle*, for the symplectic potential as the boundary term of the action.
+- Companion article *The Non-Quantum Limit of the Action Principle and the Lagrangian*, for the symplectic potential as the boundary term of the action.
 - Companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*, for the coadjoint orbit and the Souriau form.
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the biquaternion norm, the four-vector, and the light cone.
+- Companion article *Four-Vectors and the Interval*, for the biquaternion norm, the four-vector, and the light cone.
 
 ## The Standard Symplectic Structure
 

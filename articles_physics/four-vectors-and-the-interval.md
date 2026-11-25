@@ -50,7 +50,7 @@ The readings are readings. Every physical name below is attached to an algebraic
 | the K norm and the coincidence of the two null sets on this sector | [Kr-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | the rank of the one-sided multiplications and the polar decomposition | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 
-Three physics companions are quoted and not rebuilt. The dictionary of the seven four-vectors, the interval and the Lorentz action are *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The reading of the eigenpair is *The Spectral Reading of a Four-Vector*. The indefinite form and the two null sets are *The K Norm and the Indefinite Structure*, the previous section of this series. What this entry adds to those three is the position of the sector in the category: which of its properties are inherited from the algebra, which are inherited from the involution that defines it, and which are the sector's alone.
+Two physics companions are quoted and not rebuilt. The reading of the eigenpair is *The Spectral Reading of a Four-Vector*. The indefinite form and the two null sets are *The K Norm and the Indefinite Structure*, the previous section of this series. The dictionary of the seven four-vectors, the interval and the Lorentz action is this entry's own. What this entry adds to those two is the position of the sector in the category: which of its properties are inherited from the algebra, which are inherited from the involution that defines it, and which are the sector's alone.
 
 ## The Results in Brief
 
@@ -108,7 +108,7 @@ $$
 \tilde Q^{*}=(\bar Q_t,-\bar Q_x,-\bar Q_y,-\bar Q_z),
 $$
 
-so the fixed space of $-{}^{*}$ is the set of vectors with $Q_t$ purely imaginary and $Q_x,Q_y,Q_z$ real. That is the four real parameters $r'_t,r_x,r_y,r_z$ of the display in the introduction. The prime on the temporal coordinate marks the convention that the temporal component carries the imaginary unit explicitly, and it is the same prime that *The Material Sector: Four-Vectors, Interval and Lorentz Action* uses.
+so the fixed space of $-{}^{*}$ is the set of vectors with $Q_t$ purely imaginary and $Q_x,Q_y,Q_z$ real. That is the four real parameters $r'_t,r_x,r_y,r_z$ of the display in the introduction. The prime on the temporal coordinate marks the convention that the temporal component carries the imaginary unit explicitly, and it is the same prime that this entry uses throughout.
 
 The temporal block and the spatial block are different objects. The first is $\mathbb{R}(ie_t)$, a line, and the second is $k=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, a three-space. Every table in this entry separates them, because every claim about the sector either holds for both blocks or distinguishes them, and the distinction is never the one that a reader expects. The norm is negative on the first block and positive on the second. The bracket vanishes on the first block and is the cross product on the second. The K norm has the opposite signs. The central imaginary exchanges the signs of the two blocks.
 

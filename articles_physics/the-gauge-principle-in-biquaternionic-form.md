@@ -190,7 +190,7 @@ $$
 
 the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ is the divergence $\sum_{\imath} \partial/\partial R_{\imath} A_{\imath}$ and sees only the symmetric part of $\partial/\partial R_{\imath} A_{\jmath}$, while the vector part is antisymmetric in ${\imath},\jmath$ and sees only $F_{\imath\jmath}$. Replacing $\partial/\partial R_{\imath} A_{\jmath}$ by $\tfrac{1}{2}(\partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath})$ in the vector part gives the boxed identity. The interpretation is direct: **the right-hand side is the curvature 2-form $F = \tfrac{1}{2}\sum_{\imath,\jmath}F_{\imath\jmath}\,dx_{\imath}\wedge dx_{\jmath}$, with the basis 1-forms replaced by the algebra elements $\bar{e}_{\imath}$ and $e_{\jmath}$.** The field strength is the curvature.
 
-This also explains, structurally, why the field strength is not a four-vector. The vector part of $\mathbb{B}$ has six real dimensions, the number of independent components of a 2-form, and the field strength has a vanishing scalar part, so its six real components sit in the vector part. It is a bivector of the algebra, not a four-vector, exactly as *The Material Sector: Four-Vectors, Interval and Lorentz Action* states when it notes that the field strength is not in $\mathbb{B}_{\Phi}$.
+This also explains, structurally, why the field strength is not a four-vector. The vector part of $\mathbb{B}$ has six real dimensions, the number of independent components of a 2-form, and the field strength has a vanishing scalar part, so its six real components sit in the vector part. It is a bivector of the algebra, not a four-vector, and so it is not an element of $\mathbb{B}_{\Phi}$.
 
 ### The field strength as a commutator
 

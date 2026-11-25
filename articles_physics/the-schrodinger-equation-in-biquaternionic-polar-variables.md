@@ -313,7 +313,7 @@ A second-order equation carries a mass shell: its four-momentum obeys $\langle\t
 
 **3. The relativistic limit.** Whether this equation, with its frozen rapidity and its absent mass shell, is the non-relativistic limit of the biquaternion Dirac equation is not checked here. The companions' mass shells are the natural comparison.
 
-**4. The relation to the WKB series.** The pair of this article is the first term of the series of *The Non-Quantum Limit of the Free Schrödinger Equation*. Whether the word's exact coordinates simplify the higher orders is not examined.
+**4. The relation to the WKB series.** The pair of this article is the first term of the series of *The Schrödinger Equation in the Non-Quantum Limit*. Whether the word's exact coordinates simplify the higher orders is not examined.
 
 ## Summary
 

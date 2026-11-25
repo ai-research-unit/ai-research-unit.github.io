@@ -10,7 +10,7 @@ The framework's role here is specific, and it is worth stating before the detail
 
 The biquaternion conventions are those of the companion articles:
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vectors and the vector part.
+- Companion article *Four-Vectors and the Interval*, for the four-vectors and the vector part.
 - Companion article *Algebra and Element Conventions*, for the trace, the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*), and the conventions of presentation.
 - Companion article *The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form*, for the multipole series, the dipole as a vector element, and the quadrupole as a symmetric traceless tensor.
 

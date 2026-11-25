@@ -20,7 +20,7 @@ The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{h}{4\
 The companion articles supply the pieces:
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the adiabatic connection, the curvature and the two-route check.
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators and the pure-state idempotents.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the plain form and its scalar reading, and the Hermitian sector.
+- Companion article *States, Observables and the Born Weight*, for the plain form and its scalar reading, and the Hermitian sector.
 - Companion article *Exercise: Spin Precession in a Magnetic Field*, for the Larmor precession used for the cyclic evolution.
 
 ## The Two Phases
@@ -241,7 +241,7 @@ The rotating field exhibits the interpolation between the adiabatic Berry phase 
 
 1. **Non-abelian geometric phases.** The AA and Berry phases here are abelian ($\mathrm{U}(1)$) because the spin-1/2 level is non-degenerate. For a degenerate level the holonomy is non-abelian. The framework of a single spin-1/2 cannot host the non-abelian case; the question is whether the algebra's idempotent structure extends to it, and it is left open by the Berry article as well.
 
-2. **The geometric phase of a mixed state.** A mixed state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $|\vec s_{\Psi}|<1$, can also be transported around a loop, and a geometric phase can be defined for it (the Uhlmann phase). Does the algebra's null cone of zero divisors, which the companion article *The Informational Sector: States, Observables and Probability* identifies with a mirror light cone, support a natural phase for the boundary and the interior?
+2. **The geometric phase of a mixed state.** A mixed state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $|\vec s_{\Psi}|<1$, can also be transported around a loop, and a geometric phase can be defined for it (the Uhlmann phase). Does the algebra's null cone of zero divisors, which the companion article *States, Observables and the Born Weight* places as the second slice of one cone with the material light cone, support a natural phase for the boundary and the interior?
 
 3. **The local complex structure.** The spinor phase uses the central $i$, while the rotor uses the real units $\vec e_{\imath}$. The series allows the complex structure to be local; the geometric phase, however, seems to require a globally defined spinor phase. Whether a local complex structure would modify the phase is unresolved, as it is in the companion articles *The Schrödinger Equation in Biquaternionic Form* and *The Path Integral in Biquaternionic Form*.
 

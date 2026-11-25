@@ -29,7 +29,7 @@ The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the path integral in the algebra and its classical limit.
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin algebra and the two-state space.
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the geometric phase that the Wess–Zumino term reproduces.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the plain form used in the coherent-state overlap.
+- Companion article *States, Observables and the Born Weight*, for the plain form used in the coherent-state overlap.
 
 ## The Propagator and Its Path Integral
 

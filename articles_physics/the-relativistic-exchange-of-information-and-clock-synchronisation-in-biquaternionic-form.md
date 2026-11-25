@@ -16,7 +16,7 @@ The article develops the following.
 - **A transported clock runs slow.** The interpretation of a clock carried along a worldline is the proper time of that worldline, $\delta\tau = \int\sqrt{1-\vec v^2/c^2}\,dr'_t \le r'_{t,B}-r'_{t,A}$, so a clock carried away and back reads less than one that stayed, and the inertial worldline between two events maximizes the proper time.
 - **Synchronisation is not transitive on a rotating platform.** The Sagnac effect makes the round trip directional, $\delta r'_t \simeq 4\vec\Omega\cdot\vec A/c^2$, so synchronising around a closed loop in the two directions gives two different results.
 
-The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{B}_{\Psi}$ treated in the companion article *The Informational Sector: States, Observables and Probability*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{B}_{\Phi}$.
+The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{B}_{\Psi}$ treated in the companion article *States, Observables and the Born Weight*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{B}_{\Phi}$.
 
 ## Signals as Null Displacements
 
@@ -112,7 +112,7 @@ $$
 = \int_{r'_{t,A}}^{r'_{t,B}}\sqrt{1-\frac{\vec v(r'_t)^2}{c^2}}\;dr'_t .
 $$
 
-The biquaternion form has one structural advantage over the component form: the integrand is the biquaternion norm of the displacement, so the invariance of $\delta\tau$ under a change of frame is the invariance of $\langle\cdot\rangle_{\natural}$ under the rotor conjugation, established in the companion articles *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *Relativistic Mechanics in Biquaternionic Form*. No separate transformation law for the clock is needed; the clock is an integral of the algebra's own quadratic form.
+The biquaternion form has one structural advantage over the component form: the integrand is the biquaternion norm of the displacement, so the invariance of $\delta\tau$ under a change of frame is the invariance of $\langle\cdot\rangle_{\natural}$ under the rotor conjugation, established in the companion articles *Four-Vectors and the Interval* and *Relativistic Mechanics in Biquaternionic Form*. No separate transformation law for the clock is needed; the clock is an integral of the algebra's own quadratic form.
 
 ### The Clock Four-Velocity
 
@@ -328,8 +328,8 @@ The conventions and the results taken over from the relativity series are those 
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the causal trichotomy.
 - Companion article *Algebra and Element Conventions*, for the algebra and basis, the four conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*).
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-vector, the interval and the proper-time parametrization.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector and its distinct informational interpretation.
+- Companion article *Four-Vectors and the Interval*, for the material four-vector, the interval and the proper-time parametrization.
+- Companion article *States, Observables and the Born Weight*, for the Hermitian sector and its distinct informational interpretation.
 - Companion article *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*, for the causal order, the relative-velocity bound and the cone as the characteristic cone of the wave operator.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the zero-divisor criterion and the idempotent form of the null displacements.
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor and the transformation of the scalar component.

@@ -256,7 +256,7 @@ $$P^{2}=\frac{\big|\det\nolimits\delta^2S\big|}{2\,\pi\,i\,\frac{h}{2\pi}},
 P=\frac{1}{\text{length}} ,
 $$
 
-so the semiclassical prefactor is a single amplitude $P$ whose square is the WKB determinant over $2\,\pi\,i\,\frac{h}{2\pi}$; the two roots of the older writing are one root of a squared reciprocal length, and no half power is printed. This is the amplitude that the companion article *The Non-Quantum Limit of the Free Schrödinger Equation* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation.
+so the semiclassical prefactor is a single amplitude $P$ whose square is the WKB determinant over $2\,\pi\,i\,\frac{h}{2\pi}$; the two roots of the older writing are one root of a squared reciprocal length, and no half power is printed. This is the amplitude that the companion article *The Schrödinger Equation in the Non-Quantum Limit* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation.
 
 Both factors are central — the phase is central, and the square of the prefactor is central — so the semiclassical kernel is central:
 

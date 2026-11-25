@@ -115,7 +115,7 @@ with $n_f$ and $n_s$ the number of Dirac fermions and real scalars in the repres
 
 **One statement, no numbers.** The numbers are elsewhere by design.
 
-**6.1 The failure.** With the minimal content — one $(\mathbf4,\mathbf1,\mathbf2)$, one right doublet and one left doublet — the running from $M_C$ down to $M_W$ does not reproduce the measured $\sin^{2}\theta_W$ and the measured $\alpha_s$ simultaneously. The size and the sign are computed in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html).
+**6.1 The failure.** With the minimal content — one $(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$, one right doublet and one left doublet — the running from $M_C$ down to $M_W$ does not reproduce the measured $\sin^{2}\theta_W$ and the measured $\alpha_s$ simultaneously. The size and the sign are computed in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html).
 
 **6.2 Why the minimal content is the hardest case.** It has the fewest fields above $M_W$ and the fewest thresholds, so it has the least freedom to bend the slopes. Adding content adds freedom and also adds constraints, because every new field changes both $\alpha_s$ and $\sin^{2}\theta_W$.
 

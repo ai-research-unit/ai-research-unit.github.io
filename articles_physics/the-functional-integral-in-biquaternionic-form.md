@@ -69,7 +69,7 @@ $$
 \qquad
 \tilde{Ξ}_\pm = \tfrac12\big(\tilde{Ξ} \mp \tilde{Ξ}^{\flat}\big)\in \mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} ,
 $$
-where $\flat=-{}^{*}$ is the anti-Hermitian conjugation; this is the field-level use of the sector split that *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability* establish.
+where $\flat=-{}^{*}$ is the anti-Hermitian conjugation; this is the field-level use of the sector split that *Four-Vectors and the Interval* and *States, Observables and the Born Weight* establish.
 
 **The action must be a scalar, and the algebra supplies the extraction.** A biquaternion is not a number, so a Lagrangian built from $\tilde{Ξ}$ is not automatically an action. The framework's scalar extraction is the trace, whose $e_t$ coefficient,
 $$

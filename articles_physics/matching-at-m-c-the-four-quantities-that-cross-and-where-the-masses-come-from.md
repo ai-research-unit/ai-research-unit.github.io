@@ -170,9 +170,9 @@ $$
 | the ledger of three readings | [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) |
 | $32v^{2}$ on six planes, $0$ on nine, and the general vacuum | [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) |
 | the mass, the bound and the diquark fork | [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) |
-| the scalar that does the breaking | [The Scalar Content](the-scalar-content-one-quartet-one-doublet-and-eight-survivors.html) |
+| the scalar that does the breaking | [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) |
 
-**The two counts that are easy to confuse.** The scalar content is a quartet-doublet and a left doublet, $16+4=20$ real, with the quartet's own doublet index breaking the right factor; nine components are eaten at $M_C$ and three at $v$, $12$ in all, leaving $8$. **The fifteen of the grid are the model's whole gauge content**, and the six that arrive with the doublet index are not vectors of the group above $M_C$: they are the weak sector's, counted below it. The census is [The Scalar Content](the-scalar-content-one-quartet-one-doublet-and-eight-survivors.html)'s, counted once and cited here. **The vacuum $\operatorname{diag}(-3,1,1,1)$, the fifteen arrays, the eigenvalues, the counts and the bounds are the same throughout.**
+**The two counts that are easy to confuse.** The scalar content is a quartet-doublet and a left doublet, $16+4=20$ real, with the quartet's own doublet index breaking the right factor; nine components are eaten at $M_C$ and three at $v$, $12$ in all, leaving $8$. **The fifteen of the grid are the model's whole gauge content**, and the six that arrive with the doublet index are not vectors of the group above $M_C$: they are the weak sector's, counted below it. The census is [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html)'s, counted once and cited here. **The vacuum $\operatorname{diag}(-3,1,1,1)$, the fifteen arrays, the eigenvalues, the counts and the bounds are the same throughout.**
 
 ## The Checks
 
@@ -222,7 +222,7 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 | $M_C$ | the transition scale, $\gtrsim250$ TeV |
 | $v$ | the electroweak vacuum, $246$ GeV |
 | $v_C$ | the magnitude of the $\mathrm{SU}(4)$-breaking condensate |
-| $\Phi$ | the scalar $(\mathbf4,\mathbf1,\mathbf2)$ that does the first breaking |
+| $\Phi$ | the scalar $(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$ that does the first breaking |
 | $H$ | the electroweak doublet that does the second |
 | $g_4,g_3,g_{B-L}$ | the mega coupling and the two it becomes at $M_C$ |
 | $g_L,g_R$ | the weak couplings, born at $M_C$ |

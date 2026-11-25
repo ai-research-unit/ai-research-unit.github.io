@@ -32,7 +32,7 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd
 
 The angle is $\theta_{\mathrm{evo}}=\frac{2\pi h_t t'}{h}$, the scalar part of the Hamiltonian times the interval over $\frac{h}{2\pi}$. The exponent $-\frac{2\pi i\tilde H_\Psi t'}{h}$ is anti-Hermitian, not the Hamiltonian, and that is what makes it unitary: a purely imaginary scalar part makes the phase a real angle, and a real vector part makes the rotor a unit rotor.
 
-The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Schrödinger equation in its polar form.
+The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Non-Quantum Limit of the Action Principle and the Lagrangian*; this article applies the principle to the Schrödinger equation in its polar form.
 
 **Two notational choices, made once.** First, the rotor's angular velocity is the real vector $\vec\Omega$ defined by
 

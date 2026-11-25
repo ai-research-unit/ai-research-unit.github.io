@@ -30,7 +30,7 @@ $$
 \qquad i,j\in\{t,x,y,z\},\quad \alpha,\beta\in\{1,2\}.
 $$
 
-**It is invariant and the invariance is one line of representation arithmetic.** $\xi$ is a $\mathbf 4$, $\bar\xi$ a $\bar{\mathbf4}$, and $\Phi$ a Hermitean $4\times4$, which is $\mathbf{15}\oplus\mathbf1$. **$\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$ contains the identity, so the product contracts to a singlet**, and the contraction is the matrix trace read in the quartet index.
+**It is invariant and the invariance is one line of representation arithmetic.** $\xi$ is a $\mathbf 4$, $\bar\xi$ a $\bar{\mathbf4}$, and $\Phi$ a Hermitian $4\times4$, which is $\mathbf{15}\oplus\mathbf1$. **$\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$ contains the identity, so the product contracts to a singlet**, and the contraction is the matrix trace read in the quartet index.
 
 **The matrix $y$ is on the copy index and on nothing else.** It cannot carry a colour index (invariance), it cannot carry a momentum (locality), and it cannot carry a generation label (there is none). **So the sector's whole freedom is a $2\times2$ complex matrix**, and the next paragraph counts what of it is physical.
 
@@ -156,7 +156,7 @@ $$
 | --- | --- |
 | $y_{\alpha\beta}$ | the Yukawa matrix on the copy index, $2\times2$ complex |
 | $\xi^{\alpha}_{i}$, $\bar\xi^{\alpha}_{i}$ | the sixteen Weyl fields, quartet index $i$, copy index $\alpha$ |
-| $\Phi$ | the Hermitean $4\times4$ scalar, $\mathbf{15}\oplus\mathbf1$ |
+| $\Phi$ | the Hermitian $4\times4$ scalar, $\mathbf{15}\oplus\mathbf1$, $16$ real components |
 | $D=\operatorname{diag}(-3,1,1,1)$ | the condensate direction |
 | $v$ | the condensate's scale, $v^{2}=-\mu^{2}/2\lambda$ |
 | $y_{1}$, $y_{2}$ | the two eigenvalues, real and positive |

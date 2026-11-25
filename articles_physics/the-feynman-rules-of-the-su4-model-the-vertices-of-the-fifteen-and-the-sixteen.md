@@ -53,7 +53,7 @@ $$
 
 **The gauge block is where the corpus is strongest and the fermion block is where it is thinnest**, and the rules inherit the asymmetry. **The three-gauge vertices are exact**, computed from the bracket table; **the fermion–gauge vertex is exact as a matrix and imported as a dynamical statement.**
 
-**The scalar is the hermitean $4\times4$, and its size is forced by the coset.** $\Phi$ has sixteen real components, the condensate is $\langle\Phi\rangle=v\operatorname{diag}(-3,1,1,1)$, and $15-9=6$ of its components are eaten by the sextet. **A scalar in the fundamental would eat seven and leave no $B'$**, so the representation is not a choice: it is what the unbroken group demands. The count is [the classification](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html).
+**The scalar is the Hermitian $4\times4$, and its size is the algebra's.** $\mathbf{15}\oplus\mathbf1$ is a traceless part of fifteen real entries plus a real trace: $15+1=16$ real components, and $\dim\mathrm{SU}(4)=15$ is where the fifteen comes from. The condensate is $\langle\Phi\rangle=v\operatorname{diag}(-3,1,1,1)$, and $15-9=6$ of its components are eaten by the sextet. **The matrix index is not a choice**: $\bar\xi\Phi\xi$ is a singlet only for $\Phi\in\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$, while $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ has no $\bar{\mathbf4}$. The count is [the classification](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html)'s, and [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) is the census behind it.
 
 ## The Normalisation, Before Any Rule
 
@@ -96,7 +96,7 @@ so the corner's coupling is weaker than the planes' by $\sqrt{2/24}=0.2887$. **T
 | the sextet $X^{\alpha}$, $\bar X^{\alpha}$ | $6$ | $32v^{2}$ | $i\delta_{ab}(-g_{\imath\jmath}+k_{\imath}k_{\jmath}/m^{2})/(k^{2}-m^{2}+i\epsilon)$ |
 | the fifteen ghosts | $15$ | $0$ on nine, $\xi\,32v^{2}$ on six | $i\delta_{ab}/(k^{2}-\xi m^{2}+i\epsilon)$ |
 | the sixteen fermions | $16$ | $0$ | $i\bar\sigma^{\imath}k_{\imath}/k^{2}$ per Weyl field |
-| $\Phi$'s ten surviving components | $10$ | $2\lambda v^{2}$ on the radial mode | $i/(k^{2}-m^{2}+i\epsilon)$ |
+| $\Phi$'s ten surviving components | $10$ | $2\lambda_{1}v^{2}$ on the radial mode at $\lambda_{2}=0$ | $i/(k^{2}-m^{2}+i\epsilon)$ |
 
 **There is no mixing matrix to invert.** A four-factor propagator section would have to rotate four neutral fields and produce a photon and a $Z$; **here the mass matrix is already diagonal in the basis of planes, and the rotation is the identity.** The mixing below $M_C$ is downstream, and it is not in this Lagrangian.
 
@@ -165,7 +165,7 @@ $$
 
 **The ghost–gauge vertex is $g_{4}f_{abc}k_{\imath}$**, with the momentum on the outgoing ghost. **The count of nonzero vertices is again $29$ triples**, and the vanishing ones vanish for the same reason.
 
-**The scalar vertices come from the kinetic term and the potential, and the model fixes neither coupling.** The gauge–scalar two-point vertex is the mass matrix restricted to the six eaten directions; the three-point vertex is $g_{4}$ times the generator acting on $\Phi$. **The potential $V(\Phi)$ is written with two parameters, $\mu^{2}$ and $\lambda$, and the model predicts neither**: $v^{2}=-\mu^{2}/2\lambda$ is the condensate, and the radial mass is $2\lambda v^{2}$.
+**The scalar vertices come from the kinetic term and the potential, and the model fixes neither coupling.** The gauge–scalar two-point vertex is the mass matrix restricted to the six eaten directions; the three-point vertex is $g_{4}$ times the commutator acting on $\Phi$. **The potential $V(\Phi)$ is written with a mass and two quartics, and the model predicts none of them**: $v$ is a ratio of the three, and the radial mass is the second derivative of $V$ along the condensate (*The Primordial Potential*).
 
 **The eaten six and the surviving ten.** Six components of $\Phi$ become the longitudinal polarisations of the sextet; **the remaining ten are physical here**, one radial mode and nine orthogonal to the vacuum. **An eaten component has no propagator of its own**, and a table that lists sixteen scalar propagators is listing six that do not exist.
 
@@ -200,7 +200,7 @@ $$
 
 ## Summary
 
-**One covariant derivative, one coupling, fifteen fields, sixteen fermions.** The fermion–gauge vertex is $X\otimes\mathbb 1_{2}$ and has $128$ nonzero entries; the three-gauge vertex is $f_{abc}$ with $29$ nonzero triples; the spectrum is nine massless and six at $32v^{2}$; and the scalar is a hermitean $4\times4$ with six eaten components.
+**One covariant derivative, one coupling, fifteen fields, sixteen fermions.** The fermion–gauge vertex is $X\otimes\mathbb 1_{2}$ and has $128$ nonzero entries; the three-gauge vertex is $f_{abc}$ with $29$ nonzero triples; the spectrum is nine massless and six at $32v^{2}$; and the scalar is a $4\times4$ matrix with sixty-four real components, six of them eaten by the sextet and three more by the copy index.
 
 **The normalisation is the only place a convention can go wrong**, and it is fixed by one number: the corner is $\sqrt6$ longer than the planes, so its coupling is $0.2887$ of theirs after a canonical kinetic term.
 
@@ -215,7 +215,7 @@ $$
 | $t_{a}$ | the generator rescaled to $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ |
 | $A_{a,\imath}$ | the fifteen gauge fields |
 | $\xi_{i}$, $\bar\xi^{i}$ | the quartet and conjugate-quartet Weyl fields, two copies each |
-| $\Phi$ | the hermitean $4\times4$ scalar, sixteen real components |
+| $\Phi$ | the Hermitian $4\times4$ scalar, sixteen real components |
 | $D=\operatorname{diag}(-3,1,1,1)$ | the condensate direction |
 | $d_{2}$, $d_{3}$, $c_{2}$, $c_{3}$ | the two colour diagonals and their orthogonal combinations |
 | $f_{abc}$ | the structure constants of the fifteen |

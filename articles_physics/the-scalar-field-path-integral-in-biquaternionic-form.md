@@ -21,7 +21,7 @@ The article is organised as follows. The next section derives the functional int
 - Companion article *The Scalar Fock Space in Biquaternionic Form*, for the state space on which the functional integral's correlators are defined.
 - Companion article *Scalar Pair Creation in Biquaternionic Form*, for the external-background process whose probability is the modulus squared of the vacuum functional.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the central scalar action and the current.
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-wavevector and the biquaternion norm.
+- Companion article *Four-Vectors and the Interval*, for the material four-wavevector and the biquaternion norm.
 
 ## From the Operator Formalism to the Functional Integral
 

@@ -20,7 +20,7 @@ The article is organised as follows. The next section sets up the background and
 - Companion article *Bogoliubov Transformations in Biquaternionic Form*, for the general theory of the mixing, its canonical normalization, and its realization as a squeezing of the Fock space.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the field equation and its frequency branches.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the conserved $\mathrm{U}(1)$ current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ and the charge.
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-wavevector and the biquaternion norm.
+- Companion article *Four-Vectors and the Interval*, for the material four-wavevector and the biquaternion norm.
 
 ## The Background and the Mode Equation
 

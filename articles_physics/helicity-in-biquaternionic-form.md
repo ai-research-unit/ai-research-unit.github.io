@@ -153,7 +153,7 @@ $$
 \langle\tilde P_{\Phi}\rangle_{\natural}=-\frac{E^2}{c^2}+\vec p^{\,2}=-m^2c^2 .
 $$
 
-**At $m=0$ it is a zero divisor.** Then $E=c\lvert\vec p\rvert$, the norm vanishes, and $\tilde P_{\Phi}\neq0$ whenever $E\neq0$. The light cone of $\mathbb{B}_{\Phi}$ *is* the zero-divisor cone (*The Material Sector: Four-Vectors, Interval and Lorentz Action*). The divisor is of the **non-pure** kind, its scalar part $iE/c$ being nonzero, so it obeys $\tilde P_{\Phi}^2=2P_t\tilde P_{\Phi}$, the square relation of the non-pure family.
+**At $m=0$ it is a zero divisor.** Then $E=c\lvert\vec p\rvert$, the norm vanishes, and $\tilde P_{\Phi}\neq0$ whenever $E\neq0$. The light cone of $\mathbb{B}_{\Phi}$ *is* the zero-divisor cone (*Four-Vectors and the Interval*). The divisor is of the **non-pure** kind, its scalar part $iE/c$ being nonzero, so it obeys $\tilde P_{\Phi}^2=2P_t\tilde P_{\Phi}$, the square relation of the non-pure family.
 
 **At $m\neq0$ it is not.** Then $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^2c^2\neq0$, the element is invertible, and the matrix has rank two. That asymmetry is the whole of the singular limit treated below.
 

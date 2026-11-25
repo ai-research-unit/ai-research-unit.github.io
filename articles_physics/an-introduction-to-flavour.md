@@ -58,7 +58,7 @@ $$
 
 **What the lemma does not give, and the honest sentence.** The measured flavour data are a *three*-column table, and **this model has a two-valued index and no generation label**: the three columns describe the weak sector, and every number below is data. **The lemma is quoted because it is the reason no gauge measurement can ever explain them**, not because it produces them.
 
-**The symbols to avoid, and why.** Writing $\mathbf{16}\otimes\mathbb C^{3}$ and $T_{3L}\otimes\mathbb 1_{3}$ imports the weak sector: **the $\mathbf{16}$ is not a representation of $\mathfrak{su}(4)$, and $T_{3L}$ is not one of the fifteen.** **The theorem survives the translation, and the symbols do not.**
+**The symbols to avoid, and why.** Writing $\mathbf{16}\otimes\mathbb C^{3}$ and multiplying a weak-isospin generator into the family space imports the weak sector: **the $\mathbf{16}$ is not a representation of $\mathfrak{su}(4)$, and no weak-isospin generator is one of the fifteen.** **The theorem survives the translation, and the symbols do not.**
 
 ## The Sixteen Rows
 

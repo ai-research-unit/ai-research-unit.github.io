@@ -22,7 +22,7 @@ Why this differs from the Schrödinger companion. The two kinetic terms have the
 
 The constant setting throughout. As in the polar parent, the Hamiltonian is a constant element and the equation is an ordinary differential equation in $t'$. The spatial derivatives are set to zero: the field is homogeneous, which is the setting in which the polar flow is the parent's flow. The operator setting is not treated; it is the Madelung case of the scalar theory and its variational principle is in the classical literature.
 
-The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Dirac equation in its polar form.
+The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Non-Quantum Limit of the Action Principle and the Lagrangian*; this article applies the principle to the Dirac equation in its polar form.
 
 The parameters and their ranges. $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$; $\theta_{\mathrm{axr}}\in[0,2\pi]$ with $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ unit real vectors. The density is $\rho_{\mathrm{num}}=\varrho^{2}$ and the Lorentz factor is $\gamma=\cosh\theta_{\mathrm{rpd}}$, so $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 

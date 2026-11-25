@@ -26,7 +26,7 @@ Two boundaries are stated first, because both are ways of overclaiming.
 
 **What survives, and at what size.** One ordinary differential equation does exist for every $\vec\nu_\Phi$: on a Fourier mode of fixed wave vector the conjugate pair of §*Aside: The Conjugate Pair* obeys a $2\times2$ system with constant coefficients and a closed-form block. What does not exist is an ODE for the field, because a general field is a superposition of modes with different $\nu'_t$ and no single exponential propagates all of them. The distinction is the one the Schrödinger article draws, moved from the field to the mode.
 
-The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Klein–Gordon equation in its element form.
+The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Non-Quantum Limit of the Action Principle and the Lagrangian*; this article applies the principle to the Klein–Gordon equation in its element form.
 
 ## Conventions
 

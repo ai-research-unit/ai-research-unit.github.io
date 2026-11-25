@@ -16,7 +16,7 @@ The article is organised as follows. The next section fixes the one-particle spa
 - Companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field*, for the mode algebra, the Hamiltonian and the charge whose spectrum the Fock space diagonalizes.
 - Companion article *The Quantized Scalar Field in Biquaternionic Form*, for the field operator that acts on the Fock space.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the one-particle solutions and their two branches.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector, the states, and the pairing formula of the Born rule.
+- Companion article *States, Observables and the Born Weight*, for the Hermitian sector, the states, and the pairing formula of the Born rule.
 - Companion article *The Vacuum State and the Casimir Effect in Biquaternionic Form*, for the vacuum energy and its regularization.
 
 ## The One-Particle Space and Its Module Structure
@@ -223,7 +223,7 @@ $$
 
 so the diagonal of the truncated density matrix is the occupation distribution. The vacuum of the truncation is $\rho_0=|0\rangle\langle0|$, with $\langle N\rangle=0$, and the one-particle state is $\rho_1=|1\rangle\langle1|$, with $\langle N\rangle=1$; the pairing formula is exact for these finite matrices and is the only sense in which the Born rule applies to the scalar number operator.
 
-The structural statement is the same one the whole article turns on, seen in the simplest object. The informational sector $\mathbb{B}_{\Psi}$ is the space of states of the framework's finite-dimensional quantum physics; the scalar Fock space is not a subspace of it, and the scalar vacuum is not a density operator in it. The finite-mode truncations are the overlap of the two constructions, and the overlap shrinks to nothing as the truncation is removed. The companion article *The Informational Sector: States, Observables and Probability* states the finite-dimensional side; the present article states that the scalar sector lies outside it.
+The structural statement is the same one the whole article turns on, seen in the simplest object. The informational sector $\mathbb{B}_{\Psi}$ is the space of states of the framework's finite-dimensional quantum physics; the scalar Fock space is not a subspace of it, and the scalar vacuum is not a density operator in it. The finite-mode truncations are the overlap of the two constructions, and the overlap shrinks to nothing as the truncation is removed. The companion article *States, Observables and the Born Weight* states the finite-dimensional side; the present article states that the scalar sector lies outside it.
 
 ## Coherent States and the Central Phase
 

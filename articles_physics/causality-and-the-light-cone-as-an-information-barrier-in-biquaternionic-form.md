@@ -17,7 +17,7 @@ The interval $\langle\tilde{Q}_{qp}\rangle_{\natural}$ classifies each pair of e
 
 The cone is also the characteristic cone of the algebra's wave operator. The standard finite-speed-of-propagation theorem for hyperbolic operators then makes the barrier analytic as well as geometric: a signal generated in a compact region cannot reach a point outside the region's causal future, however the signal is shaped. These results are collected as eight numbered items in the Summary below.
 
-The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{B}_{\Psi}$ treated in the companion article *The Informational Sector: States, Observables and Probability*; the two interpretations share the algebra and nothing else.
+The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{B}_{\Psi}$ treated in the companion article *States, Observables and the Born Weight*; the two interpretations share the algebra and nothing else.
 
 ## Events, Displacements and the Causal Order
 
@@ -59,7 +59,7 @@ The interval has one of three signs, and these signs define the three causal cla
 - **null** ($\langle\tilde{Q}_{qp}\rangle_{\natural} = 0$): the events can be joined by a light signal;
 - **timelike** ($\langle\tilde{Q}_{qp}\rangle_{\natural} < 0$): the events can be joined by a signal travelling more slowly than light.
 
-The null displacements are the light cone. The companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action* records the same classification, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* gives the algebraic characterization of the null set, which the next section recalls.
+The null displacements are the light cone. The companion article *Four-Vectors and the Interval* records the same classification, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* gives the algebraic characterization of the null set, which the next section recalls.
 
 ### The Causal Order
 
@@ -369,8 +369,8 @@ The conventions and the results taken over from the relativity series are those 
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the causal trichotomy.
 - Companion article *Algebra and Element Conventions*, for the algebra and basis, the four conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*).
-- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-vector, the interval and the causal classification.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector and its distinct informational interpretation.
+- Companion article *Four-Vectors and the Interval*, for the material four-vector, the interval and the causal classification.
+- Companion article *States, Observables and the Born Weight*, for the Hermitian sector and its distinct informational interpretation.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the zero-divisor criterion, the idempotent form of the real cone and the dispersionless propagation locus.
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the rotor conjugation and its component action.
 - Companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, for the orbit structure of the causal classes.

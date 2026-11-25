@@ -185,7 +185,7 @@ and the concurrence of the pure path state is $\left|\sin(\delta/2)\right|$.
 
 ### Unverified Framework Claims: the Entropy Functional
 
-**The candidate.** The corpus floats a small number of framework-specific proposals that are not yet verified. The clearest is an entropy functional on the states of $\mathbb{B}_{\Psi}$, written $S(\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ and recorded in the companion article as *needing verification*.
+**The candidate.** The corpus floats a small number of framework-specific proposals that are not yet verified. The clearest is an entropy functional on the states of $\mathbb{B}_{\Psi}$, written $S(\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ and recorded in the corpus as *needing verification*.
 
 **The framework-specific quantity.** The functional $S(\tilde{Ϛ}_{\Psi})$, if it were well defined.
 

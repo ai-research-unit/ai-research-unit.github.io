@@ -113,7 +113,7 @@ $$
 \vec\pi=\gamma m\vec v ,
 $$
 
-the Lorentz force with the relativistic momentum. The corpus verifies it twice, in *Relativistic Mechanics from the Dirac Wave* and in *The Non-Quantum Limit of the Coupled Dirac Equation*, and both verifications are of the same identity: the gradient of the mechanical shell is the force.
+the Lorentz force with the relativistic momentum. The corpus verifies it twice, in *Relativistic Mechanics from the Dirac Wave* and in this article, and both verifications are of the same identity: the gradient of the mechanical shell is the force.
 
 The spin's law, and the limitation the chart imposes. The rotor's bracket is a real vector part; the potential's contribution to the phase bracket is central imaginary and its contribution to the boost's is Hermitian. So the coupling cannot appear in the rotor's bracket, and the spin's own transport is the free one:
 

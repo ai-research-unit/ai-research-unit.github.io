@@ -159,6 +159,6 @@ Where the symbol fails the amplitude equation carries $\Box_\Phi \varrho/\varrho
 - *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form*, for the symbol whose failure this article locates.
 - *The Lagrangian and the Klein–Gordon Equation in Momentum Space*, for the spectrum of a non-central potential.
 - *The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables*, for the first-order case, where the polar form stops at the eikonal and has no second derivative of the amplitude to carry.
-- *The Non-Quantum Limit of the Free Schrödinger Equation*, for the quantum potential and its size.
+- *The Schrödinger Equation in the Non-Quantum Limit*, for the quantum potential and its size.
 - *Derivatives, Fields and Transforms*, for the transform, its kernel and the shift rule.
 - *Biquaternion Continuous Harmonic Analysis*, for the convolution theorem.
