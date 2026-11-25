@@ -106,13 +106,13 @@ $$</p>
 <p>$$
 \mathcal M^2=\sum_{i=1,2}v_i^{2}\,a_ia_i^{\mathsf T},
 \qquad
-a_1=\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr)v_R,
+a_1=\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr)v_C,
 \qquad
-a_2=\bigl(\tfrac12,-\tfrac12,0\bigr)v ,
+a_2=\bigl(-\tfrac12,0,\sqrt{\tfrac38}\bigr)v ,
 $$</p>
 <p>where the entries are the eigenvalues of $(T_{3L},T_{3R},T^{15})$ on the field that takes the vev, with $T^{15}$ normalised by $\operatorname{tr}(T^{15})^2=\tfrac12$ and hence $B-L=\sqrt{8/3}\,T^{15}$. The null vector is the cross product,</p>
 <p>$$
-a_1\times a_2\propto-\bigl(\sqrt{\tfrac38},\,\sqrt{\tfrac38},\,\tfrac12\bigr),
+a_1\times a_2\propto\bigl(\sqrt{\tfrac38},\,\sqrt{\tfrac38},\,\tfrac12\bigr),
 $$</p>
 <p>whose ratios, with the first entry normalised to one, are</p>
 <p>$$
@@ -127,20 +127,20 @@ $$</p>
 <p>$$
 a_1\cdot d=0+\tfrac12-\sqrt{\tfrac38}\cdot\sqrt{\tfrac23}=\tfrac12-\tfrac12=0,
 \qquad
-a_2\cdot d=\tfrac12-\tfrac12+0=0 .
+a_2\cdot d=-\tfrac12+0+\sqrt{\tfrac38}\cdot\sqrt{\tfrac23}=-\tfrac12+\tfrac12=0 .
 $$</p>
 <p><strong>So $\mathcal M^2d=\sum_i v_i^2a_i(a_i\cdot d)=0$ identically, for every pair of vevs, at every ratio.</strong> The photon is massless, and the reason is not a cancellation among numbers. <strong>A null direction of the neutral mass matrix is a direction on which no vacuum carries charge, and $d$ is the vector whose dot product with a state's eigenvalues is that state's charge.</strong> The mixture is unbroken because it is the charge.</p>
-<p><strong>2.3 From the two neutral lepton lines.</strong> Take the two states the frame declares neutral before it declares any charge: the right-handed neutrino of the $(\mathbf4,\mathbf1,\mathbf2)$, and the upper component of the bidoublet. In the basis $(T_{3L},T_{3R},T^{15})$ their eigenvalues are</p>
+<p><strong>2.3 From the two neutral lines that take vevs.</strong> Take the two states the frame declares neutral before it declares any charge: the right-handed neutrino of the $(\mathbf4,\mathbf1,\mathbf2)$, and the lower component of the electroweak doublet $H$. In the basis $(T_{3L},T_{3R},T^{15})$ their eigenvalues are</p>
 <p>$$
 \text{right-handed: }\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr),
 \qquad
-\text{left-handed: }\bigl(\tfrac12,-\tfrac12,0\bigr).
+\text{left doublet: }\bigl(-\tfrac12,0,\sqrt{\tfrac38}\bigr).
 $$</p>
 <p><strong>A direction that annihilates both is orthogonal to both</strong>, so it is the cross product of the two rows, which is again the vector of <em>The Direction, Derived Three Ways</em>. Writing the two conditions as equations on $(a,b,c)$,</p>
 <p>$$
 \tfrac12 b-\sqrt{\tfrac38}\,c=0,
 \qquad
-\tfrac12 a-\tfrac12 b=0,
+-\tfrac12 a+\sqrt{\tfrac38}\,c=0,
 $$</p>
 <p>gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.</p>
 <p><strong>2.4 Why three routes and not one claim.</strong> Routes 2.1 and 2.3 use the same two vectors, because <strong>the vacuum vector of a scalar line is the charge vector of the fermion line it corresponds to</strong> — the two neutral scalars that take the vevs are the partners of the two neutral leptons. So 2.1 is the scalar side of an identity and 2.3 is the fermion side. <strong>The agreement is a consistency check on the embedding, not a coincidence</strong>, and route 2.2 is why the identity holds at all: $d$ is $Q$'s coefficient vector, and both routes test the neutrality of the same two lines.</p>
@@ -210,7 +210,7 @@ $$</p>
 <tr>
 <td>the null vector</td>
 <td>$a_1\times a_2$</td>
-<td>$\propto-(\sqrt{3/8},\sqrt{3/8},\tfrac12)$</td>
+<td>$\propto(\sqrt{3/8},\sqrt{3/8},\tfrac12)$</td>
 </tr>
 <tr>
 <td>the ratios</td>
@@ -234,7 +234,7 @@ $$</p>
 </tr>
 <tr>
 <td>neutrality on the second vacuum</td>
-<td>$a_2\cdot d=\tfrac12-\tfrac12+0$</td>
+<td>$a_2\cdot d=-\tfrac12+0+\sqrt{3/8}\sqrt{2/3}$</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -323,8 +323,8 @@ $$</p>
 <td>$T_{3L}+T_{3R}+\tfrac12(B-L)=T_{3L}+T_{3R}+\sqrt{2/3}\,T^{15}$</td>
 </tr>
 <tr>
-<td>$B$</td>
-<td>the surviving $\mathrm{SU}(4)$ Cartan field, $A^{15}$, the $B-L$ boson</td>
+<td>$B'$</td>
+<td>the surviving $\mathrm{SU}(4)$ Cartan field, $A^{15}$, the $B-L$ direction</td>
 </tr>
 <tr>
 <td>$T^{15}$</td>
@@ -335,11 +335,11 @@ $$</p>
 <td>the $3\times3$ neutral mass matrix, a sum of two rank-one terms</td>
 </tr>
 <tr>
-<td>$\ell_1,\ell_2,\ell_3$</td>
-<td>the three vacuum lines of the chain</td>
+<td>$\ell_1,\ell_2$</td>
+<td>the two vacuum lines, the lepton line of $\Phi$ and the doublet line of $H$</td>
 </tr>
 <tr>
-<td>$v,v_R$</td>
+<td>$v,v_C$</td>
 <td>the electroweak and colour-breaking vacuum expectation values</td>
 </tr>
 </tbody>
