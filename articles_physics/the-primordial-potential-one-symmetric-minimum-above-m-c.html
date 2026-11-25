@@ -72,8 +72,8 @@
         <h1 id="the-primordial-potential-one-symmetric-minimum-above-math0"><strong>The Primordial Potential: One Symmetric Minimum Above $M_C$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The question.</strong> What must the potential of the unbroken phase look like for the group to be exact, and what does the same potential do when the sign of its quadratic term flips?</p>
-<p><strong>The answer.</strong> With $\mu_{\Phi}^{2}&gt;0$ and a bounded quartic, the minimum is at $\Phi=0$; every one of the sixteen real components is massive with the same mass $\mu_{\Phi}$; no direction is eaten; and the group is exact. <strong>The symmetric phase is not a fine-tuned point but a region of parameter space</strong>, and the article states its boundaries.</p>
-<p><strong>One result of this article is negative and it is stated first.</strong> The corpus's declared vacuum, $D=\operatorname{diag}(-3,1,1,1)$ up to scale, <strong>is not the minimum of the two-quartic potential the model otherwise writes.</strong> The identity direction is always deeper. Reaching the declared vacuum needs a cubic term, and §<em>The Declared Vacuum Is Not the Minimum</em> computes the gap and the coefficient that closes it.</p>
+<p><strong>The answer.</strong> With $\mu_{\Phi}^{2}&gt;0$ and a bounded quartic, the minimum is at $\Phi=0$; every one of the sixteen real components is massive with the common mass $\sqrt2\,\mu_{\Phi}$; no direction is eaten; and the group is exact. <strong>The symmetric phase is not a fine-tuned point but a region of parameter space</strong>, and the article states its boundaries.</p>
+<p><strong>One result of this article is a condition and it is stated first.</strong> The corpus's declared vacuum, $D=\operatorname{diag}(-3,1,1,1)$ up to scale, <strong>is the minimum of the two-quartic potential in the branch $\lambda_{1}&lt;0$, once $\operatorname{tr}\Phi=0$ is imposed, and it is not the minimum in the branch $\lambda_{1}&gt;0$.</strong> No cubic is needed; a sign and a trace declaration are, and §<em>The Declared Vacuum, and the Branch Where It Is the Minimum</em> states bothat closes it.</p>
 <p><strong>What this article does.</strong> It writes the potential, derives the condition for the symmetric minimum, computes the mass spectrum there, derives the boundedness cone, and then confronts the potential with the vacuum the transition assumes.</p>
 <p><strong>What it does not do.</strong> It does not run the potential, does not compute the one-loop correction — <a href="the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html">The One-Loop Effective Potential</a> does — and does not fix any coefficient. <strong>Three coefficients and the group fixes none of them.</strong></p>
 <h2 id="the-potential">The Potential</h2>
@@ -83,9 +83,9 @@ V(\Phi)=\mu_{\Phi}^{2}\operatorname{tr}\Phi^{\dagger}\Phi
 +\lambda_{1}\operatorname{tr}\bigl(\Phi^{\dagger}\Phi\bigr)^{2}
 +\lambda_{2}\bigl(\operatorname{tr}\Phi^{\dagger}\Phi\bigr)^{2},
 $$</p>
-<p>with $\Phi$ the Hermitian $4\times4$ matrix of <a href="the-scalars-two-colour-indices-and-the-count-sixteen.html">The Scalar's Two Indices</a>, the trace taken over colour, and the copy index summed.</p>
+<p>with $\Phi$ the Hermitian $4\times4$ matrix of <a href="the-scalars-two-colour-indices-and-the-count-sixteen.html">The Scalar's Two Indices</a>, the trace taken over colour, and no copy index on $\Phi$: one Hermitian matrix, sixteen real parameters.</p>
 <p><strong>Why two quartics and not one.</strong> $\operatorname{tr}(\Phi^{\dagger}\Phi)^{2}$ and $(\operatorname{tr}\Phi^{\dagger}\Phi)^{2}$ are different contractions of four matrix indices. <strong>Neither is a function of the other</strong>, and a vector-valued scalar would admit only one of them. <a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-two-quartics.html">The Lagrangian and the Scalar Matrix</a> tabulates the count.</p>
-<p><strong>Why no cubic, yet.</strong> $\operatorname{tr}\Phi^{3}$ is invariant when $\Phi\to U\Phi U^{\dagger}$, so the group does not forbid it. <strong>It is omitted here because the symmetric phase does not need it</strong> and because it is not real for a complex $\Phi$ unless written with its conjugate. §<em>The Declared Vacuum Is Not the Minimum</em> shows what its absence costs.</p>
+<p><strong>Why no cubic, yet.</strong> $\operatorname{tr}\Phi^{3}$ is invariant when $\Phi\to U\Phi U^{\dagger}$ and real for Hermitian $\Phi$, so the group allows it and the term is legitimate. <strong>It is omitted because neither phase needs it</strong>: the symmetric minimum is at $\Phi=0$ without it, and the declared vacuum is selected by $\lambda_{1}&lt;0$ without it. §<em>The Declared Vacuum, and the Branch Where It Is the Minimum</em> shows what its absence costs.</p>
 <p><strong>Why no term of degree six.</strong> It is irrelevant for the questions this article asks, and its omission is a truncation of the potential stated as one.</p>
 <h2 id="the-symmetric-minimum">The Symmetric Minimum</h2>
 <p><strong>The condition is one sign, and it is not a tuning.</strong></p>
@@ -97,9 +97,9 @@ $$</p>
 <p>which is a minimum and not a saddle when $\mu_{\Phi}^{2}&gt;0$. <strong>Every direction is equivalent at the origin</strong>, so the statement is one-dimensional: the quadratic form is $\mu_{\Phi}^{2}\operatorname{tr}\Phi^{\dagger}\Phi=\mu_{\Phi}^{2}\sum_{i,j}\lvert\Phi_{ij}\rvert^{2}$.</p>
 <p><strong>The mass spectrum at the origin, and its degeneracy.</strong></p>
 <p>$$
-m^{2}_{ij}=\mu_{\Phi}^{2}\quad\text{for all }16\text{ real components},
+m^{2}_{ij}=2\mu_{\Phi}^{2}\quad\text{for all }16\text{ real components},
 \qquad
-m_{\Phi}=\mu_{\Phi} .
+m_{\Phi}=\sqrt2\,\mu_{\Phi} .
 $$</p>
 <p><strong>The degeneracy is not an accident of the group; it is larger than the group.</strong> At $\Phi=0$ the quadratic part is invariant under all of $\mathrm{O}(16)$, because every component enters through the same sum of squares, $\operatorname{tr}\Phi^{2}$. <strong>The unbroken phase therefore has an accidental symmetry that the quartic terms break</strong>, and the breaking of that accidental symmetry by $\lambda_{1}$ and $\lambda_{2}$ is what will make the transition's direction a dynamical choice rather than a symmetric one.</p>
 <p><strong>Consequences, stated as counts.</strong></p>
@@ -141,60 +141,76 @@ $$</p>
 <p>$$
 V_{4}=\lambda_{1}s_{2}+\lambda_{2}x^{2} .
 $$</p>
-<p><strong>At fixed $x$ the smallest $s_{2}$ is $x^{2}/4$</strong>, attained when all four eigenvalues are equal, because $\sum a_{i}^{2}\ge\frac{1}{4}\bigl(\sum a_{i}\bigr)^{2}$ with equality at $a_{1}=\dots=a_{4}$.</p>
+<p><strong>Both ends of the ratio bind, one for each sign.</strong> For $a_{i}\ge0$ with $\sum a_{i}=x$ the ratio $s_{2}/x^{2}$ runs over $[\tfrac14,1]$, the lower end at four equal eigenvalues and the upper at a single nonzero one, because $\frac14x^{2}\le\sum a_{i}^{2}\le x^{2}$.</p>
 <ul>
-<li><em>If $\lambda_{1}\ge0$</em>, then $V_{4}\ge x^{2}\bigl(\lambda_{1}/4+\lambda_{2}\bigr)$, so boundedness needs $\lambda_{1}+4\lambda_{2}\ge0$.</li>
-<li><em>If $\lambda_{1}&lt;0$</em>, then $s_{2}$ can grow at fixed $x$, and $V_{4}\to-\infty$; so $\lambda_{1}&lt;0$ is excluded.</li>
+<li><em>If $\lambda_{1}\ge0$</em>, $V_{4}$ is smallest at the four equal eigenvalues, so boundedness needs $\lambda_{1}+4\lambda_{2}\ge0$.</li>
+<li><em>If $\lambda_{1}&lt;0$</em>, $V_{4}$ is smallest at the single nonzero eigenvalue, where $s_{2}=x^{2}$, so boundedness needs $\lambda_{1}+\lambda_{2}\ge0$.</li>
 </ul>
 <p>$$
-\boxed{\;\lambda_{1}\ge0\quad\text{and}\quad\lambda_{1}+4\lambda_{2}\ge0 .\;}
+\boxed{\;\lambda_{1}+\lambda_{2}\ge0\quad\text{and}\quad\lambda_{1}+4\lambda_{2}\ge0 .\;}
 $$</p>
-<p><strong>The condition is weaker than the naive one and the factor is the group's.</strong> The frequently quoted bound $\lambda_{1}+\lambda_{2}&gt;0$ comes from the rank-one direction $A=rE_{11}$, where $s_{2}=x^{2}$. <strong>The binding direction is the identity</strong>, where $s_{2}=x^{2}/4$, and the ratio $4$ is $\operatorname{tr}\mathbb{1}$ for $\mathrm{SU}(4)$. <strong>A potential bounded on the rank-one directions alone can still be unbounded</strong>, and the gap between the two conditions is a factor of four.</p>
-<h2 id="the-declared-vacuum-is-not-the-minimum">The Declared Vacuum Is Not the Minimum</h2>
-<p><strong>Flip the sign and compare three directions at fixed $\operatorname{tr}\Phi^{2}=X$.</strong></p>
+<p><strong>The two conditions are one cone, and neither half suffices.</strong> The rank-one direction $A=rE_{11}$ gives $s_{2}=x^{2}$ and binds when $\lambda_{1}&lt;0$; the identity gives $s_{2}=x^{2}/4$ and binds when $\lambda_{1}&gt;0$, the ratio $4$ being $\operatorname{tr}\mathbb{1}$ for $\mathrm{SU}(4)$. <strong>A quartic bounded on the rank-one directions alone still sinks along the identity when $\lambda_{1}&gt;0$, and one bounded on the identity alone still sinks along a single entry when $\lambda_{1}&lt;0$.</strong> The frequently quoted bound $\lambda_{1}+\lambda_{2}&gt;0$ is one half of the cone; $\lambda_{1}\ge0$ is neither half, and it excludes a region the cone allows.</p>
+<h2 id="the-declared-vacuum-and-the-branch-where-it-is-the-minimum">The Declared Vacuum, and the Branch Where It Is the Minimum</h2>
+<p><strong>Flip the sign and compare the directions at fixed $\operatorname{tr}\Phi^{2}=X$.</strong> The comparison is drawn on the hyperplane $\operatorname{tr}\Phi=0$, because that is the corpus's declaration: the $\mathbf1$ part of $\Phi$ does not take a vacuum.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>direction</th>
 <th>$\Phi$</th>
-<th>$\operatorname{tr}\Phi^{4}/X^{2}$</th>
-<th>$V_{\min}$ at $\lambda_{2}=0$</th>
+<th>$R=\operatorname{tr}\Phi^{4}/X^{2}$</th>
+<th>quartic coefficient $c$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>the identity</td>
-<td>$\frac{\sqrt X}{2}\mathbb{1}$</td>
-<td>$\tfrac14$</td>
-<td>$-\mu^{4}/\lambda_{1}$</td>
-</tr>
-<tr>
 <td>the declared vacuum</td>
 <td>$r\operatorname{diag}(-3,1,1,1)$, $r^{2}=X/12$</td>
 <td>$\tfrac{7}{12}$</td>
-<td>$-\tfrac{3}{7}\,\mu^{4}/\lambda_{1}$</td>
+<td>$\tfrac{7}{12}\lambda_{1}+\lambda_{2}$</td>
 </tr>
 <tr>
-<td>a single entry</td>
-<td>$rE_{11}$, $r^{2}=X$</td>
-<td>$1$</td>
-<td>$-\tfrac14\,\mu^{4}/\lambda_{1}$</td>
+<td>the even split</td>
+<td>$\tfrac{\sqrt X}{2}\operatorname{diag}(1,1,-1,-1)$</td>
+<td>$\tfrac14$</td>
+<td>$\tfrac14\lambda_{1}+\lambda_{2}$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The identity is the deepest, by a factor $\tfrac73$ over the declared vacuum and by $4$ over a single entry.</strong> The column is computed from $V_{\min}=-\mu^{4}/(4c)$ where $c$ is the quartic coefficient at fixed $X$: $\tfrac14\lambda_{1}$, $\tfrac{7}{12}\lambda_{1}$ and $\lambda_{1}$.</p>
-<p><strong>So the two-quartic potential breaks $\mathrm{SU}(4)$ to nothing at all.</strong> The identity direction preserves the group entirely — it is the statement that $\Phi\propto\mathbb{1}$ commutes with every generator — and the other two are not distinguished in the right order. <strong>A potential whose deepest direction is the identity has no transition in it.</strong></p>
-<p><strong>What the declared vacuum needs.</strong> The cubic, taken with its conjugate,</p>
+<p><strong>The ratio is bounded by $\tfrac14$ and $\tfrac{7}{12}$ on the hyperplane $\operatorname{tr}\Phi=0$, and both ends are attained.</strong> The lower end is $\operatorname{diag}(1,1,-1,-1)$ by Cauchy–Schwarz, the upper is $\operatorname{diag}(-3,1,1,1)$ and its permutations. <strong>The declared shape is the maximum of $\operatorname{tr}\Phi^{4}$ at fixed $\operatorname{tr}\Phi^{2}$</strong>, which is exactly the direction a negative $\lambda_{1}$ selects.</p>
+<p><strong>So the sign of $\lambda_{1}$ decides between two vacua, and the corpus's is the one the negative sign gives.</strong> With $V=-\mu^{2}X+\lambda_{1}\operatorname{tr}\Phi^{4}+\lambda_{2}X^{2}$ and $\mu^{2}&gt;0$:</p>
+<ul>
+<li><em>If $\lambda_{1}&lt;0$</em>, the minimum at fixed $X$ is $D$, its depth is $-\mu^{4}/(4c)$ with $c=\tfrac{7}{12}\lambda_{1}+\lambda_{2}&gt;0$ on the cone, and <strong>no cubic is needed</strong>.</li>
+<li><em>If $\lambda_{1}&gt;0$</em>, the minimum is the even split, of depth $-\mu^{4}/(4c)$ with $c=\tfrac14\lambda_{1}+\lambda_{2}$.</li>
+</ul>
+<p><strong>The even split breaks $\mathrm{SU}(4)$ to $\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{U}(1)$.</strong> Its stabiliser is $S(\mathrm{U}(2)\times\mathrm{U}(2))$, eight generators broken and rank three: not $\mathrm{U}(3)$, and not nothing.</p>
+<p><strong>The trace is a declaration, and the potential does not enforce it.</strong> Nothing in $V$ singles out $\operatorname{tr}\Phi=0$; the identity direction is a competing minimum of its own, with $R=\tfrac14$ and no breaking at all. <strong>Read without the declaration, the two branches give four different vacua.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\lambda_{1}$</th>
+<th>with $\operatorname{tr}\Phi=0$ imposed</th>
+<th>without it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$&lt;0$</td>
+<td>$D$, stabiliser $\mathrm{U}(3)$, six eaten</td>
+<td>a single entry, $\mathrm{SU}(3)\times\mathrm{U}(1)$</td>
+</tr>
+<tr>
+<td>$&gt;0$</td>
+<td>the even split, $\mathrm{SU}(2)^{2}\times\mathrm{U}(1)$</td>
+<td>the identity, $\mathrm{SU}(4)$ exact</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The corpus's vacuum is the top-left entry, and it needs the sign $\lambda_{1}&lt;0$ and the declaration $\operatorname{tr}\Phi=0$.</strong> Neither is written where the vacuum is declared, and both are consistent with the shape the lepton line, the trace condition and the Yukawa ratio fix.</p>
+<p><strong>The cubic is neither needed nor forbidden.</strong> $\operatorname{tr}\Phi^{3}$ is real for Hermitian $\Phi$, so $c_{3}(\operatorname{tr}\Phi^{3}+\text{h.c.})=2c_{3}\operatorname{tr}\Phi^{3}$; the group allows it, and it lowers $D$ against the even split because $\operatorname{tr}D^{3}&lt;0$. <strong>In the $\lambda_{1}&lt;0$ branch $D$ already wins, so the cubic adds nothing.</strong> In the $\lambda_{1}&gt;0$ branch the quartic gap is $\tfrac13\lambda_{1}X^{2}$; the even split's cubic vanishes, so the cubic must supply the whole of it and $c_{3}\sqrt X\gtrsim0.577\,\lambda_{1}$, while against the identity the threshold is</p>
 <p>$$
-V\supset c_{3}\bigl(\operatorname{tr}\Phi^{3}+\text{h.c.}\bigr),
+c_{3}\sqrt X\gtrsim 0.31\,\lambda_{1},
 $$</p>
-<p>whose value on the three directions at fixed $X$ is $+\tfrac12 c_{3}X^{3/2}$ for the identity, $-\tfrac{1}{\sqrt3}c_{3}X^{3/2}$ for the declared vacuum, and $+c_{3}X^{3/2}$ for a single entry. <strong>The cubic lowers the declared direction and raises the other two</strong>, and with $\lambda_{2}=0$ the declared direction wins once</p>
-<p>$$
-c_{3}\sqrt X\gtrsim 0.31\,\lambda_{1} ,
-$$</p>
-<p>which is the difference $\tfrac{7}{12}-\tfrac14=\tfrac13$ of $\lambda_{1}$ divided by the cubic's advantage $0.577+0.5$.</p>
-<p><strong>That is the honest status of the corpus's vacuum.</strong> $D=\operatorname{diag}(-3,1,1,1)$ is declared, and the lepton-line argument and the trace condition fix its <em>shape</em>. <strong>What the corpus has not done is write the term that makes the shape the minimum</strong>, and this article states the gap rather than closing it by silence: the two-quartic potential prefers the identity, and the cubic is the term that prefers $D$.</p>
-<p><strong>Why the corpus's $D$ is still the right shape to declare.</strong> Three facts about the declared direction survive the correction and are independent of the potential: its trace is zero, so the $\mathbf1$ part of $\Phi$ does not take a vacuum; its eigenvalues are integers in the ratio $(-3,1,1,1)$, so the stabiliser is $\mathrm{U}(3)$ and the eaten count is six; and its entries give the $3:1$ ratio the Yukawa sector needs. <strong>The shape is fixed by those three requirements; only its status as a minimum is unfinished business</strong>, and it is named here.</p>
+<p>the difference $\tfrac{7}{12}-\tfrac14=\tfrac13$ divided by the cubic's advantage $0.577+0.5$. <strong>That is the branch the cubic would matter in, and it is not the branch the mass matrix uses.</strong></p>
 <h2 id="the-transition-read-from-the-same-potential">The Transition, Read From the Same Potential</h2>
 <p><strong>One sign, and the phase changes.</strong></p>
 <div class="table-scroll"><table>
@@ -217,13 +233,14 @@ $$</p>
 </tr>
 <tr>
 <td>$&lt;0$</td>
-<td>$\lvert\Phi\rvert=v_C$</td>
+<td>$\lvert\Phi\rvert=v_C$, $\lambda_{1}&lt;0$</td>
 <td>$\mathrm{U}(3)$, nine massless vectors</td>
 <td>$6$ massive</td>
 <td>$10$ massive plus $6$ eaten</td>
 </tr>
 </tbody>
 </table></div>
+<p><strong>Whether $M_C$ is a temperature is not settled here, and the article says which reading it uses.</strong> The potential fixes a sign and a direction and carries no scale: the symmetric phase has no $M_C$ in it, and the broken phase's $v_C$ is a ratio of parameters. <strong>A thermal reading would need the finite-temperature effective potential, with a critical temperature of order $\mu_{\Phi}$ and a barrier or none depending on the cubic; a zero-temperature reading takes $M_C$ from the matching.</strong> The block uses the second, which is where its numbers come from, and the first is the question the transition leaves open.</p>
 <p><strong>The boundary is $\mu_{\Phi}^{2}=0$, where the mass vanishes and the one-loop correction decides.</strong> That is <a href="the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html">The One-Loop Effective Potential</a>'s question, and it is the reason the classical statement "the symmetric phase is a region" has an edge that is not classical.</p>
 <p><strong>Nothing in the potential fixes $v_C$.</strong> It is $\sqrt{-\mu_{\Phi}^{2}/(2c)}$ with $c$ the quartic coefficient of the chosen direction, so $v_C$ is a ratio of parameters and no more. <strong>The corpus's values of $M_C$ and $v_C$ come from the leptoquark bound and from the matching, not from here</strong>, and this article does not pretend otherwise.</p>
 <h2 id="the-checks">The Checks</h2>
@@ -244,7 +261,7 @@ $$</p>
 <tr>
 <td>the mass at the origin</td>
 <td>$\partial^{2}V/\partial\Phi^{2}$ at $0$</td>
-<td>$\mu_{\Phi}^{2}$ on all $16$</td>
+<td>$2\mu_{\Phi}^{2}$ on all $16$</td>
 </tr>
 <tr>
 <td>the degeneracy group at the origin</td>
@@ -258,23 +275,23 @@ $$</p>
 </tr>
 <tr>
 <td>the boundedness cone</td>
-<td>$\lambda_{1}\ge0$, $\lambda_{1}+4\lambda_{2}\ge0$</td>
-<td>from $s_{2}\ge x^{2}/4$</td>
+<td>$\frac14x^{2}\le s_{2}\le x^{2}$</td>
+<td>$\lambda_{1}+\lambda_{2}\ge0$, $\lambda_{1}+4\lambda_{2}\ge0$</td>
 </tr>
 <tr>
 <td>the binding direction</td>
-<td>all four eigenvalues equal</td>
-<td>the identity</td>
+<td>one end per sign of $\lambda_{1}$</td>
+<td>a single entry, then the identity</td>
 </tr>
 <tr>
-<td>the depth ratio, identity over declared</td>
-<td>$\tfrac{7}{12}\div\tfrac14$</td>
-<td>$\tfrac73$</td>
+<td>the range of $\operatorname{tr}\Phi^{4}/X^{2}$, $\operatorname{tr}\Phi=0$</td>
+<td>$[\tfrac14,\tfrac{7}{12}]$</td>
+<td>the maximum at $D$</td>
 </tr>
 <tr>
-<td>the depth ratio, identity over single entry</td>
-<td>$1\div\tfrac14$</td>
-<td>$4$</td>
+<td>the depth ratio, declared over even split</td>
+<td>$\tfrac14\div\tfrac{7}{12}$</td>
+<td>$\tfrac37$</td>
 </tr>
 <tr>
 <td>the cubic's value on the declared direction</td>
@@ -283,20 +300,20 @@ $$</p>
 </tr>
 <tr>
 <td>the threshold for the declared vacuum</td>
-<td>$\tfrac13\lambda_{1}/(0.577+0.5)$</td>
-<td>$c_{3}\sqrt X\gtrsim0.31\lambda_{1}$</td>
+<td>only in the $\lambda_{1}&gt;0$ branch</td>
+<td>$0.577\lambda_{1}$, or $0.31\lambda_{1}$ against the identity</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The boundedness row and the depth rows are the two computations that could have come out otherwise</strong>, and both are decided by the same fact: the identity direction minimises $\operatorname{tr}A^{2}$ at fixed $\operatorname{tr}A$. <strong>One inequality, two consequences</strong>, and the factor $4$ appears in both.</p>
+<p><strong>The cone and the range are the two computations that could have come out otherwise</strong>, and both follow from one inequality, $\frac14x^{2}\le\operatorname{tr}A^{2}\le x^{2}$ at fixed $\operatorname{tr}A=x$. <strong>Its two ends are two different directions</strong> — the identity at the lower end, a single entry at the upper — and each one decides the sign of $\lambda_{1}$ it belongs to.</p>
 <h2 id="distinctions-that-are-easy-to-lose">Distinctions That Are Easy to Lose</h2>
 <p>A symmetric minimum is not a fine tuning. $\mu_{\Phi}^{2}&gt;0$ is a region, and the phase exists for every value in it; the tuning question belongs to the boundary at $\mu_{\Phi}^{2}=0$ and to the one-loop correction there.</p>
-<p>A declared vacuum is not a derived one. $D$'s shape follows from the lepton line, the trace condition and the Yukawa ratio; its status as the minimum needs a term the corpus has not written. <strong>The two statements are different and this article keeps them apart.</strong></p>
+<p>A declared vacuum is a chosen branch. $D$'s shape follows from the lepton line, the trace condition and the Yukawa ratio; its status as the minimum needs the sign $\lambda_{1}&lt;0$ and the declaration $\operatorname{tr}\Phi=0$, and neither is written where the vacuum is declared. <strong>The two statements are different and this article keeps them apart.</strong></p>
 <p>A bounded potential is not a stable one. Boundedness is a statement about $V_{4}$ at large field; stability is a statement about the minimum, and the one-loop correction can move it.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>Two quartics and one quadratic, with three free coefficients and no odd term at the order the group requires.</strong> The symmetric minimum is $\mu_{\Phi}^{2}&gt;0$, the mass is $\mu_{\Phi}$ on all sixteen real components, and the degeneracy at the origin is $\mathrm{O}(16)$ rather than $\mathrm{SU}(4)$.</p>
-<p><strong>The boundedness cone is $\lambda_{1}\ge0$ and $\lambda_{1}+4\lambda_{2}\ge0$</strong>, and the binding direction is the identity because $\operatorname{tr}A^{2}\ge\frac14(\operatorname{tr}A)^{2}$. The naive rank-one bound is weaker by a factor of four and is not sufficient.</p>
-<p><strong>The declared vacuum is not the minimum of this potential.</strong> At fixed $\operatorname{tr}\Phi^{2}$ the identity direction is deeper than $D$ by $\tfrac73$ and deeper than a single entry by $4$. Reaching $D$ needs $c_{3}(\operatorname{tr}\Phi^{3}+\text{h.c.})$ with $c_{3}\sqrt X\gtrsim0.31\lambda_{1}$, and writing that term is left as the model's open item rather than assumed away.</p>
+<p><strong>Two quartics and one quadratic, with three free coefficients and no odd term at the order the group requires.</strong> The symmetric minimum is $\mu_{\Phi}^{2}&gt;0$, the mass is $\sqrt2\,\mu_{\Phi}$ on all sixteen real components, and the degeneracy at the origin is $\mathrm{O}(16)$ rather than $\mathrm{SU}(4)$.</p>
+<p><strong>The boundedness cone is $\lambda_{1}+\lambda_{2}\ge0$ and $\lambda_{1}+4\lambda_{2}\ge0$</strong>, the rank-one end binding for $\lambda_{1}&lt;0$ and the identity end for $\lambda_{1}&gt;0$; the factor four is $\operatorname{tr}\mathbb{1}$. <strong>Neither half is sufficient alone</strong>, and $\lambda_{1}\ge0$ is stronger than the cone.</p>
+<p><strong>The declared vacuum is the minimum in one branch of this potential.</strong> On the hyperplane $\operatorname{tr}\Phi=0$ the ratio $\operatorname{tr}\Phi^{4}/\operatorname{tr}\Phi^{2}$ ranges over $[\tfrac14,\tfrac{7}{12}]$ with the maximum at $D$, so $\lambda_{1}&lt;0$ selects $D$ and $\lambda_{1}&gt;0$ selects the even split $\tfrac12\operatorname{diag}(1,1,-1,-1)$. <strong>The sign and the trace declaration are the two conditions</strong>, and no cubic is needed.</p>
 <p><strong>And the phase itself needs none of this.</strong> Above $M_C$ the statement is one sign and one degeneracy: no vacuum, no Goldstone, fifteen massless vectors, sixteen degenerate scalars, and a group that is exact.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -317,7 +334,7 @@ $$</p>
 </tr>
 <tr>
 <td>$c_{3}$</td>
-<td>the cubic coefficient, absent in the minimal potential and needed for $D$</td>
+<td>the cubic coefficient; absent in the minimal potential, and needed for $D$ only in the $\lambda_{1}&gt;0$ branch</td>
 </tr>
 <tr>
 <td>$A$</td>
