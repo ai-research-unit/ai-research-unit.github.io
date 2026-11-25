@@ -124,5 +124,5 @@ The right ideals are obtained by fixing the first factor, and the intersection o
 - [Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$](introduction-to-the-spin-three-halves-bispinor-spaces-at-n-4.html), for the space.
 - [The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$](the-minimal-left-ideals-of-m4c.html), for the idempotent construction.
 - [The Spin-$\tfrac32$ Bispinors and the Rank Strata at $n=4$](the-spin-three-halves-bispinors-and-the-rank-strata-at-n-4.html), for the higher ranks.
-- [The Spin-$\tfrac12$ Bispinors and the Minimal Left Ideals](the-spin-half-bispinors-and-the-minimal-left-ideals.html), for the row at order two.
+- The Spin-$\tfrac12$ Bispinors and the Minimal Left Ideals, for the row at order two.
 - [The Left Ideals and the Image of a Left Multiplication at $n=4$](the-left-ideals-and-the-image-of-a-left-multiplication-at-n-4.html), for the general left ideals.

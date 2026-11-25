@@ -115,6 +115,6 @@ The half-integer label is therefore present inside the algebra, and only in the 
 
 - [The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$](the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html), for the generators and the two kernels.
 - [The Four Weights of the Module and the Half Angle at $n=4$](the-four-weights-of-the-module-and-the-half-angle-at-n-4.html), for the weights of the abstract module.
-- [The Exterior Cube Isomorphism $\Lambda^3V\cong V$ and $M_4(\mathbb{C})$ as $V\otimes V$](the-exterior-cube-isomorphism-lambda-3-v-v-and-m4c-as-v-tensor-v.html), for the second model.
+- The Exterior Cube Isomorphism $\Lambda^3V\cong V$ and $M_4(\mathbb{C})$ as $V\otimes V$, for the second model.
 - [The Minimal Left Ideals of the Biquaternion Algebra](the-minimal-left-ideals-of-the-biquaternion-algebra.html), for the row at order two.
-- [The Minimal One-Sided Ideals, Conjugation and the Missing Label](the-minimal-one-sided-ideals-conjugation-and-the-missing-label.html), for the proof that no ideal is a summand.
+- The Minimal One-Sided Ideals, Conjugation and the Missing Label, for the proof that no ideal is a summand.

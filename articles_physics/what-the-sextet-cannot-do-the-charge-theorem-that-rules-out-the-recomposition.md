@@ -109,9 +109,9 @@ $$
 
 **Three things follow, and all three are worth having.**
 
-**First, the weak arrays are in $\mathfrak{su}(4)$.** Each is a sum of two plane generators of the fifteen, so $\mathfrak{so}(4)$, spanned by the six arrays, is a real subalgebra of $\mathfrak{su}(4)$. **This is true and it is not the obstruction** — a reader who thinks the six identities prove the weak pair is a fragment of the mega force has confused *the arrays are in the algebra* with *the pairs are the sextet*.
+**First, the weak arrays are in $\mathfrak{su}(4)$.** Each is a sum of two plane generators of the fifteen, so $\mathfrak{so}(4)$, spanned by the six arrays, is a real subalgebra of $\mathfrak{su}(4)$. **This is true and it is not the obstruction** — a reader who thinks the six identities prove the weak pair is a fragment of the primordial force has confused *the arrays are in the algebra* with *the pairs are the sextet*.
 
-**Second, every identity is one leptoquark plane and one colour plane, in equal halves.** That is the striking content: **in this basis each weak array is half mega-strong and half strong.** A weak boson, in this basis, is a coherence between a leptoquark direction and a colour direction.
+**Second, every identity is one leptoquark plane and one colour plane, in equal halves.** That is the striking content: **in this basis each weak array is half primordial and half strong.** A weak boson, in this basis, is a coherence between a leptoquark direction and a colour direction.
 
 **Third, the identities are the pair resolution.** They are a canonical rotation inside each $2\times2$ block, they hold in every basis with no reference to any dynamics, and **that is exactly why they cannot encode the mixing.** A statement that is true whatever happens cannot say what happens.
 

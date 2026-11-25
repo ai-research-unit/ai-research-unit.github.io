@@ -130,5 +130,5 @@ The classification of bispinors by rank has five types, and by Jordan type the f
 - [Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$](introduction-to-the-spin-three-halves-bispinor-spaces-at-n-4.html), for the space.
 - [Spinors and Dirac Spinors in $M_4(\mathbb{C})$](spinors-and-dirac-spinors-at-n-4.html), for the vocabulary.
 - [The Spin-$\tfrac32$ Bispinors and the Rank Strata at $n=4$](the-spin-three-halves-bispinors-and-the-rank-strata-at-n-4.html), for the ranks.
-- [The Fierz–Kofink Identities](the-fierz-kofink-identities.html), for the row at order two.
+- [The Fierz–Kofink Identities](the-fierz-kofink-identities-and-the-classification-of-spinors.html), for the row at order two.
 - [The Ten Ranks of the Two-Sided Operators at $n=4$](the-ten-ranks-of-the-two-sided-operators-at-n-4.html), for the rank law.

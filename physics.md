@@ -1301,7 +1301,7 @@
 
 ## Biquaternion Particle Physics
 
-### The SU(4) Model: The Mega Strong Force
+### The SU(4) Model: The Primordial Force
 
 #### The Model
 
@@ -1424,7 +1424,7 @@
 
 #### The Death
 
-<a href="articles_physics/the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html">The Death of the Mega Strong Force: The $\langle iD\rangle$ Condensate and the Six Carriers It Eats</a>
+<a href="articles_physics/the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html">The Death of the Primordial Force: The $\langle iD\rangle$ Condensate and the Six Carriers It Eats</a>
 <!-- the transition as one line of spectral theory: the vacuum $iD=\operatorname{diag}(-3,1,1,1)$ forced by the lepton-line declaration and the trace condition up to scale; $\operatorname{ad}(iD)$ with spectrum $0^9\oplus(\pm4i)^3$ and therefore $15=9+3+3$; the kernel $\mathfrak{u}(3)=\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L}$, dimension nine; the $\pm4i$ eigenspace as the leptoquark sextet $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$ with $Q=\pm\frac23$; six real components eaten and two to spare, which are the two the second breaking eats; the mass matrix $M^2=2v^2[D,[D,\cdot]]=\operatorname{diag}(32v^2\,\text{six},\ 0\,\text{nine})$ and why $32=2(1-(-3))^2$; six planes heavy, nine directions massless, no cross terms, $M_X^2=\frac12g_4^2v_R^2$ as the physical normalisation; the nine as the centraliser, eight gluons and $B'$; the rank $3\to2+1=3$ and what that single line forbids; four rows of what dies, what survives, what becomes heavy and what does not move; twelve checks. -->
 
 <a href="articles_physics/the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html">The Sextet Put Aside: Six Leptoquarks Above $M_C$ and Why They Are Not Seen</a>

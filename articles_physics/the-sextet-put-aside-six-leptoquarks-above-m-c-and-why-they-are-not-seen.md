@@ -4,7 +4,7 @@
 
 **The layer.** The sextet is the off-diagonal block of the fifteen, so this article is a statement about the complement of a stabiliser in $\mathfrak{su}(4)$ — and about what a heavy coloured vector does to the experiments that could see it.
 
-**The question.** What becomes of the six when the mega strong force dies, how heavy are they, and what forbids them from being the weak bosons?
+**The question.** What becomes of the six when the primordial force dies, how heavy are they, and what forbids them from being the weak bosons?
 
 **The answer.**
 
@@ -31,7 +31,7 @@ $$
 
 **Not established.** The bound is a coupling statement and its coefficient is uncertain by a factor of a few. The states have not been seen, which is the weakest kind of failure and the most persistent. **And — the point of the article — nothing here produces a weak boson.** The six cannot: the charge theorem of [the companion article](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html) rules it out, and this article records that the sextet's role is to die and to be heavy, not to give birth.
 
-**Where the rest is.** The transition that eats them is [The Death of the Mega Strong Force](the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html). Their mass relation and their bound in full are [The Leptoquarks: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition hands down instead of them is [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html).**
+**Where the rest is.** The transition that eats them is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). Their mass relation and their bound in full are [The Leptoquarks: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition hands down instead of them is [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html).**
 
 ## What "Put Aside" Means, in Three Registers
 
@@ -119,7 +119,7 @@ $$
 | in gigaelectronvolts | $2.5\times10^{5}$ GeV |
 | in teraelectronvolts | $2.5\times10^{2}$ TeV |
 
-**So the transition scale is not free and not low.** Whatever else the model does, **the mega strong force cannot die below two hundred and fifty teraelectronvolts**, because a lighter sextet would have been seen in a kaon decay.
+**So the transition scale is not free and not low.** Whatever else the model does, **the primordial force cannot die below two hundred and fifty teraelectronvolts**, because a lighter sextet would have been seen in a kaon decay.
 
 **Why the bound is a statement about a coupling as much as about a mass.** The rate scales as $g_{\text{eff}}^{4}/M_X^{4}$, where $g_{\text{eff}}$ collects the four external mixings. **A smaller mixing buys a smaller mass**, and the corpus is explicit that the coefficient is uncertain by a factor of a few. **The honest reading is $M_X\gtrsim g_{\text{eff}}\times250$ TeV**, with $g_{\text{eff}}$ of order one for a generic generation structure.
 
@@ -223,14 +223,14 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 | $M_X$ | the leptoquark mass, $\tfrac12 g_4 v_R$ |
 | $M_{W_R}$ | the right-handed weak boson mass, $\tfrac12 g_R v_R$ |
 | $v_R$ | the magnitude of the transition's condensate |
-| $g_4,g_R$ | the mega-force and right-weak couplings |
+| $g_4,g_R$ | the primordial and right-weak couplings |
 | $\mathcal O^{(6)}$ | a dimension-six local operator produced by integrating the sextet out |
 | $M_\Sigma$ | the mass of a hypothetical $(\mathbf6,\mathbf1,\mathbf1)$ diquark scalar |
 
 ## Further Reading
 
 - [The Leptoquarks: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The article this one condenses, with the derivation of the bound and the diquark fork.
-- [The Death of the Mega Strong Force](the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html). The transition that eats the six.
+- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The transition that eats the six.
 - [The Scalar Sector: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). The multiplet that supplies the six Goldstones and the two that remain.
 - [What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The theorem behind *What the Sextet Does Not Do*.
 - [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html). What the transition gives the left–right model instead of a recombination.

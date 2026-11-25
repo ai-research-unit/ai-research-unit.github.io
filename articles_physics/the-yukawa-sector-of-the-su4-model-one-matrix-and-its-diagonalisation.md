@@ -170,4 +170,4 @@ $$
 - [The Fermion–Gauge Vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The proof that no vertex carries the copy index, which is the reason no phase survives.
 - [The Feynman Rules](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The Lagrangian this sector is one line of.
 - [An Introduction to Flavour](an-introduction-to-flavour.html). What a generation index would have to supply, and why this model has none.
-- [The Death of the Mega Strong Force](the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html). The same condensate, read on the gauge side.
+- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The same condensate, read on the gauge side.

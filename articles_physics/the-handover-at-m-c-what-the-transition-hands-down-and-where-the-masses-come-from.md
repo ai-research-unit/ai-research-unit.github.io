@@ -29,7 +29,7 @@ $$
 
 **Not established.** The numerical values of $M_R$ and of the mega coupling. **The first is free and the second is fixed by a boundary condition the corpus already says fails.** Neither is a defect introduced here: both are the corpus's, and the migration is about origins rather than about unification.
 
-**Where the rest is.** The construction that produces the group at $M_C$ is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The death that produces the colour factor is [The Death of the Mega Strong Force](the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html). The sextet's mass and bound are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). **Everything below the handover is the existing corpus**, beginning with [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html).
+**Where the rest is.** The construction that produces the group at $M_C$ is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The death that produces the colour factor is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The sextet's mass and bound are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). **Everything below the handover is the existing corpus**, beginning with [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html).
 
 ## The Interface: Four Quantities Cross, and One Number Is Matched
 
@@ -44,7 +44,7 @@ $$
 
 **The group is the item that matters, and it is exact.** It is not an approximation and not a limit: **below $M_C$ the four factors are the gauge group of the theory, and above $M_C$ they are not a group at all** — above it there is one simple factor, and the four are a decomposition of the adjoint.
 
-**The nine massless vectors are exact in the same sense.** They are the centraliser of the vacuum, computed once in [The Death of the Mega Strong Force](the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html), and nothing downstream moves them.
+**The nine massless vectors are exact in the same sense.** They are the centraliser of the vacuum, computed once in [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html), and nothing downstream moves them.
 
 **The six are a bound and not a value**, because $v_R$ is not fixed by the model; the bound is $250$ TeV and it is what makes the transition scale a measured quantity rather than a parameter.
 
@@ -68,7 +68,7 @@ $$
 M_C\ \ge\ M_R\ \ge\ M_W .
 $$
 
-**What each inequality protects.** $M_C\ge M_R$ protects the first transition: the mega force must die before the right sector does, or the right sector's vacuum would be a direction the mega force had not yet released. $M_R\ge M_W$ protects the second: hypercharge must be broken after it is formed.
+**What each inequality protects.** $M_C\ge M_R$ protects the first transition: the primordial force must die before the right sector does, or the right sector's vacuum would be a direction the primordial force had not yet released. $M_R\ge M_W$ protects the second: hypercharge must be broken after it is formed.
 
 **And the values, in the two-unit convention the corpus uses.** The sextet's bound is $4.0\times10^{-5}$ J, which is $2.5\times10^{2}$ TeV; the weak scale is $80.4$ GeV; **the ratio is $3.1\times10^{3}$, three and a half decades, and that is the whole of the hierarchy the first step is allowed to create.**
 
@@ -208,7 +208,7 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 ## Further Reading
 
 - [The Weak Force Born as a Side Effect: A Condensate Index, Five Ranks From Three](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The construction that makes the group appear at $M_C$.
-- [The Death of the Mega Strong Force](the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html). The colour factor and the nine vectors that cross the boundary.
+- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The colour factor and the nine vectors that cross the boundary.
 - [The Breaking Chain: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). The downstream chain, unchanged.
 - [The Order of the Breaking: Nested Vacua and the Scale Order](the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html). Why $M_C\ge M_R\ge M_W$.
 - [The Neutral Sector: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html). The photon and the mixing angle, both formed after the handover.

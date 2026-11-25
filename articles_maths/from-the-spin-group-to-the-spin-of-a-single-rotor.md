@@ -379,7 +379,7 @@ What the $A$-generators do not give is the rest of the spectrum. They act on one
 
 ## Further Reading
 
-- [The Left Regular Action of the Spin Group](the-left-regular-action-of-the-spin-group.html), for the action $X\mapsto\tilde qX$, its generators, its exponential and the proof that no element of the algebra marks an axis.
+- The Left Regular Action of the Spin Group, for the action $X\mapsto\tilde qX$, its generators, its exponential and the proof that no element of the algebra marks an axis.
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table, the quadratic element and the identity $2s+1=\dim_\mathbb{R}$.
 - [Quaternion Rotations and Reflections](quaternion-rotations-and-reflections.html), for the group of unit quaternions and the double cover $Sp(1)\to SO(3)$.
 - [The Two-Sided Operators and the Spin Group](the-two-sided-operators-and-the-spin-group.html), for the two-sided operators of the algebra and their relation to the spin group.

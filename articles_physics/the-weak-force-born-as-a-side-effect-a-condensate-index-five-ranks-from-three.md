@@ -4,13 +4,13 @@
 
 **The layer.** The transition is a breaking of $\mathrm{SU}(4)$ on a formal copy of the carrier, and everything this article proves is either linear algebra on $\mathfrak{su}(4)$ or a count on the endpoint. **The one postulate in it is a choice of representation, and the article names that choice in the section where it is spent.**
 
-**The question.** Can the weak force be *created* by the transition that kills the mega strong force — not carried into the transition as a fragment, not assembled from the debris, but born with it? And if it can, what exactly plays the role of creator?
+**The question.** Can the weak force be *created* by the transition that kills the primordial force — not carried into the transition as a fragment, not assembled from the debris, but born with it? And if it can, what exactly plays the role of creator?
 
 **The answer.**
 
 $$
 \boxed{\;
-\text{the mega strong force dies; the object that kills it carries a doublet index;}
+\text{the primordial force dies; the object that kills it carries a doublet index;}
 \;}
 $$
 
@@ -28,13 +28,13 @@ $$
 | the sextet cannot make the weak pair | **theorem**, twice over | §*Two Theorems That Close the Other Route* |
 | the transition's scalar carries a doublet index | **postulate** | §*The Price* |
 
-**What this article establishes.** That rank five is unreachable from rank three inside $\mathfrak{su}(4)$, hence that the weak factors must arrive beside the mega force rather than emerge from it; that the object doing the killing carries an index, and that an index is exactly the kind of object that can arrive beside; that the resulting ledger is $3+1+1=5$ with one sense of rank and no composite spectrum; and that the weak bosons' masses come from later vacua, so no mass hierarchy problem is created.
+**What this article establishes.** That rank five is unreachable from rank three inside $\mathfrak{su}(4)$, hence that the weak factors must arrive beside the primordial force rather than emerge from it; that the object doing the killing carries an index, and that an index is exactly the kind of object that can arrive beside; that the resulting ledger is $3+1+1=5$ with one sense of rank and no composite spectrum; and that the weak bosons' masses come from later vacua, so no mass hierarchy problem is created.
 
 **Not established.** Why the condensate carries a doublet index at all. **That is a postulate, and it is the only one.** Why the index splits into two chiral factors rather than a single one. **That is a second assumption, inherited from the corpus rather than invented here.** And the dynamics of the condensation itself, which the corpus does not derive for any sector.
 
 **What this article is not.** It is not a derivation of the weak force from $\mathrm{SU}(4)$. **It is a proof that the weak force cannot come from inside $\mathrm{SU}(4)$, together with a construction in which it comes from the outside at the transition.** The difference between those two sentences is the whole content of the migration.
 
-**Where the rest is.** The death that this article interprets is [The Death of the Mega Strong Force](the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html). The sextet whose closures are proved here is [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html) and [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The grammar of *dies*, *survives* and *arrives* is [The Two Kinds of Death](the-two-kinds-of-death-a-subgroup-that-leaves-and-an-index-that-arrives.html). The scales are [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html). The internal working note with the full arithmetic is [The Weak Force Born as a Side Effect](../articles_internal/structures/structure-weak-force-as-side-effect.html).
+**Where the rest is.** The death that this article interprets is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The sextet whose closures are proved here is [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html) and [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The grammar of *dies*, *survives* and *arrives* is [The Two Kinds of Death](the-two-kinds-of-death-a-subgroup-that-leaves-and-an-index-that-arrives.html). The scales are [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html). The internal working note with the full arithmetic is [The Weak Force Born as a Side Effect](../articles_internal/structures/structure-weak-force-as-side-effect.html).
 
 ## What a Transition Must Deliver
 
@@ -146,7 +146,7 @@ $$
 
 **and the six generators that leave are eaten.** They are the sextet, and the corpus proves it twice over: the adjoint mass matrix puts $32v^{2}$ on the six planes through the lepton line and $0$ on the nine that avoid it, and $\operatorname{ad}(iD)$ has the sextet as its $\pm4i$ eigenspace.
 
-**The copy index births.** A scalar that must be a doublet to do its job is a scalar whose condensation simultaneously announces a two-dimensional internal space. **That space is the weak factor**: it is not a fragment of the mega force, it is a property of the object that killed it.
+**The copy index births.** A scalar that must be a doublet to do its job is a scalar whose condensation simultaneously announces a two-dimensional internal space. **That space is the weak factor**: it is not a fragment of the primordial force, it is a property of the object that killed it.
 
 **The whole story in one table.**
 
@@ -174,7 +174,7 @@ $$
 
 **whereas for any $\mathfrak h\subseteq\mathfrak{su}(4)$ the same sum is capped at three by the lemma.**
 
-**So the arithmetic $3+1+1=5$ is a certificate and not a loophole.** If the weak factors were pieces of the mega force, five would be unreachable. **That the endpoint reaches five is therefore evidence that the weak factors sit beside — that they are separate factors, born with the transition.**
+**So the arithmetic $3+1+1=5$ is a certificate and not a loophole.** If the weak factors were pieces of the primordial force, five would be unreachable. **That the endpoint reaches five is therefore evidence that the weak factors sit beside — that they are separate factors, born with the transition.**
 
 **"Born as a side effect" and "rank five from rank three" are the same statement in two vocabularies.** The first says where the group comes from; the second says what its rank must be; and the lemma says the two are only compatible if the group is not a subalgebra. **A story that satisfies the second without the first does not exist**, which is why the side-effect reading is forced rather than chosen.
 
@@ -198,7 +198,7 @@ $$
 
 **So the construction adds one line to the ledger and removes a question the corpus could not answer**: why the weak force exists at all.
 
-**The honest size of the postulate.** It is a choice of representation in a sector where the corpus has no guidance. **It is not a small choice** — a $(\mathbf 4,\mathbf 1,\mathbf 1)$ would break $\mathrm{SU}(4)$ and produce no index at all — **but it is the smallest choice available**, and it is the only one that both breaks the mega force and carries a two-dimensional internal space.
+**The honest size of the postulate.** It is a choice of representation in a sector where the corpus has no guidance. **It is not a small choice** — a $(\mathbf 4,\mathbf 1,\mathbf 1)$ would break $\mathrm{SU}(4)$ and produce no index at all — **but it is the smallest choice available**, and it is the only one that both breaks the primordial force and carries a two-dimensional internal space.
 
 ## The Mass Ledger: Where the Weak Masses Actually Come From
 
@@ -303,7 +303,7 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 
 ## Summary
 
-**The weak force can be born at the transition, and the birth certificate is the doublet index of the object that kills the mega strong force.**
+**The weak force can be born at the transition, and the birth certificate is the doublet index of the object that kills the primordial force.**
 
 **The rank lemma is why it must be so.** $\operatorname{rank}\mathfrak{su}(4)=3$, the endpoint costs $5$, and a subalgebra never outranks its algebra. **So the weak factors are not pieces of $\mathrm{SU}(4)$; they arrive beside it — which is what "side effect" means, and what $3+1+1=5$ certifies.**
 
@@ -317,7 +317,7 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 
 | symbol | meaning |
 | --- | --- |
-| $\mathfrak{su}(4)$ | the mega strong force, dimension $15$, rank $3$ |
+| $\mathfrak{su}(4)$ | the primordial force, dimension $15$, rank $3$ |
 | $\mathfrak m$ | the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, $Q=\pm\frac23$ |
 | $iD$ | the condensate $\operatorname{diag}(-3,1,1,1)$; $\operatorname{ad}(iD)$ has spectrum $0^{9},(\pm4i)^{3}$ |
 | $\Phi$ | the transition's scalar, $(\mathbf4,\mathbf1,\mathbf2)$, $16$ real components |
@@ -328,7 +328,7 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 
 ## Further Reading
 
-- [The Death of the Mega Strong Force: The $\langle iD\rangle$ Condensate and the Six Carriers It Eats](the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html). The theorem half of the transition.
+- [The Death of the Primordial Force: The $\langle iD\rangle$ Condensate and the Six Carriers It Eats](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The theorem half of the transition.
 - [The Sextet Put Aside: Six Leptoquarks Above $M_C$ and Why They Are Not Seen](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The six states, their mass, and the bound that fixes $M_C$.
 - [What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The identities, the mass table, and the two closures in full.
 - [The Two Kinds of Death: A Subgroup That Leaves and an Index That Arrives](the-two-kinds-of-death-a-subgroup-that-leaves-and-an-index-that-arrives.html). The grammar this article uses.

@@ -134,5 +134,5 @@ The multiplicity patterns are the five partitions of four, and they stratify the
 - [The Fierz–Kofink Identities and the Classification of Spinors at $n=4$](the-fierz-kofink-identities-at-n-4.html), for the Fierz identity.
 - [The Spin-$\tfrac32$ Bispinors and the Rank Strata at $n=4$](the-spin-three-halves-bispinors-and-the-rank-strata-at-n-4.html), for the rank.
 - [The Spin-Zero Carrier and the Spectral Strata at $n=4$](the-spin-zero-carrier-and-the-spectral-strata-at-n-4.html), for the symmetric spectra.
-- [The Spin-$\tfrac12$ Bispinors and the Spectral Strata](the-spin-half-bispinors-and-the-spectral-strata.html), for the row at order two.
+- The Spin-$\tfrac12$ Bispinors and the Spectral Strata, for the row at order two.
 - [The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals](the-spin-three-halves-bispinors-and-the-minimal-left-ideals-at-n-4.html), for the ideals.

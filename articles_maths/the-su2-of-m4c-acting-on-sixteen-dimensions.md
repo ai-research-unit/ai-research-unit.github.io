@@ -126,5 +126,5 @@ The biquaternion algebra is four-real-dimensional, and its conjugation action gi
 - [The Four Carrier Lists of One Algebra at $n=4$](the-four-carrier-lists-of-one-algebra-at-n-4.html), for the other groups.
 - [The Ten Ranks of the Two-Sided Operators at $n=4$](the-ten-ranks-of-the-two-sided-operators-at-n-4.html), for $T_{A,B}$.
 - [The Spin Content of $M_4(\mathbb{C})$](the-spin-content-of-m4c.html), for the content.
-- [The $\mathrm{SU}(2)$ of the Biquaternion Algebra Acting on Four Dimensions](the-su2-of-the-biquaternion-algebra-acting-on-four-dimensions.html), for the row at order two.
+- [The $\mathrm{SU}(2)$ of the Biquaternion Algebra Acting on Four Dimensions](the-su2-of-mnc-acting-on-n-squared-dimensions.html), for the row at order two.
 - [The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$](the-clebsch-gordan-decomposition-of-m4c.html), for the carriers.

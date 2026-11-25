@@ -4,7 +4,7 @@
 
 **The layer.** This article is about the vocabulary of the transition, and its Layer-A content is the two ways a symmetry can appear or disappear when a vacuum is chosen. **It proves one theorem, computes four dimensions, and settles a word.**
 
-**The question.** When the mega strong force dies and two forces are left, in what sense does anything *survive*, in what sense does anything *die*, and in what sense is a force *created*? The three verbs are used loosely everywhere in physics writing; here they are used exactly.
+**The question.** When the primordial force dies and two forces are left, in what sense does anything *survive*, in what sense does anything *die*, and in what sense is a force *created*? The three verbs are used loosely everywhere in physics writing; here they are used exactly.
 
 **The answer.**
 
@@ -25,7 +25,7 @@ $$
 
 **Not established.** Anything about dynamics. Whether the index *arrives with* the condensation or is *required by* it is a question this article states and does not answer. **It distinguishes the two readings and refuses to blur them**, which is the most a structural article can do.
 
-**Where the rest is.** The transition is [The Death of the Mega Strong Force](the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html). The mechanism is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The theorem that forecloses the other route is [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The scales are [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html).
+**Where the rest is.** The transition is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The mechanism is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The theorem that forecloses the other route is [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The scales are [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html).
 
 ## Three Verbs, and What Each One Requires
 
@@ -258,7 +258,7 @@ An index is not a sector. The whole economy of the construction is that the weak
 ## Further Reading
 
 - [The Weak Force Born as a Side Effect: A Condensate Index, Five Ranks From Three](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The construction this article supplies the grammar for.
-- [The Death of the Mega Strong Force](the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html). The surviving and dying pieces, computed.
+- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The surviving and dying pieces, computed.
 - [What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The second and third closures.
 - [The Commutation Table of the Fifteen Generators: 441 Entries, 164 Nonzero](the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html). The brackets that the closure dimensions are read from.
 - [$\mathfrak{su}(4)$ as $\mathfrak{so}(4)$ and Nine More](../articles_internal/structures/structure-SU4-SO4-relations.html). The involution behind the twelve-and-nine split.

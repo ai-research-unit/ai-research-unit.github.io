@@ -121,4 +121,4 @@ The integer label gives the carrier a real structure and an invariant symmetric 
 - [The Spin-Three Carrier and the Rank Strata at $n=4$](the-spin-three-carrier-and-the-rank-strata-at-n-4.html), for the ranks.
 - [The Spin-Three Carrier and the Spectral Strata at $n=4$](the-spin-three-carrier-and-the-spectral-strata-at-n-4.html), for the spectra.
 - [The Spin-Two Carrier and the Trace Form at $n=4$](the-spin-two-carrier-and-the-trace-form-at-n-4.html), for the comparison.
-- [The Frobenius–Schur Indicator of the Module at $n=4$](the-frobenius-schur-indicator-of-the-module-at-n-4.html), for the indicator.
+- The Frobenius–Schur Indicator of the Module at $n=4$, for the indicator.

@@ -132,5 +132,5 @@ The minimal left ideals consist of rank-one bispinors and lie in the closure of 
 - [The Fierz–Kofink Identities and the Classification of Spinors at $n=4$](the-fierz-kofink-identities-at-n-4.html), for the classification.
 - [The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals](the-spin-three-halves-bispinors-and-the-minimal-left-ideals-at-n-4.html), for the ideals.
 - [The Spin-$\tfrac32$ Bispinors and the Spectral Strata at $n=4$](the-spin-three-halves-bispinors-and-the-spectral-strata-at-n-4.html), for the spectrum.
-- [The Spin-$\tfrac12$ Bispinors and the Rank Strata](the-spin-half-bispinors-and-the-rank-strata.html), for the row at order two.
+- The Spin-$\tfrac12$ Bispinors and the Rank Strata, for the row at order two.
 - [The Left Ideals and the Image of a Left Multiplication at $n=4$](the-left-ideals-and-the-image-of-a-left-multiplication-at-n-4.html), for the rank law.

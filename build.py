@@ -111,6 +111,11 @@ LEGACY_COPIES = [
      "articles_internal/the-coupling-sector-of-the-fourth-colour-model.html"),
     ("articles_internal/internal-note-the-four-colours-left-right-model.html",
      "articles_internal/internal-note-the-fourth-colour-left-right-model.html"),
+    # The force was renamed: "mega strong" claimed a magnitude the corpus never
+    # computes, "primordial" claims an order the breaking chain does show. The
+    # old address copies the renamed page.
+    ("articles_physics/the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html",
+     "articles_physics/the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html"),
     # Charged lepton flavour: the article states the open question, and the
     # retired addresses stay alive.
     ("articles_physics/lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html",

@@ -133,5 +133,5 @@ The carrier is the space of alternating forms modulo the invariant one, and its 
 - [The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$](the-parity-rule-the-two-squares-of-the-module-at-n-4.html), for the splitting.
 - [The Spin-Two Carrier and the Trace Form at $n=4$](the-spin-two-carrier-and-the-trace-form-at-n-4.html), for the form.
 - [The Spin-Two Carrier and the Rank Strata at $n=4$](the-spin-two-carrier-and-the-rank-strata-at-n-4.html), for the ranks.
-- [Introduction to the Spin-One Carrier of the Biquaternion Algebra](introduction-to-the-spin-one-carrier-of-the-biquaternion-algebra.html), for the row at order two.
+- [Introduction to the Spin-One Carrier of the Biquaternion Algebra](the-spin-one-carrier-of-m4c.html), for the row at order two.
 - [The Spin Decomposition of $M_4(\mathbb{C})$](the-spin-decomposition-of-m4c.html), for the weights.

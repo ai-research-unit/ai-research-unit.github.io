@@ -1,8 +1,8 @@
-# __The Death of the Mega Strong Force: The $\langle iD\rangle$ Condensate and the Six Carriers It Eats__
+# __The Death of the Primordial Force: The $\langle iD\rangle$ Condensate and the Six Carriers It Eats__
 
 ## Introduction
 
-**The layer.** The transition is a statement about a formal copy of the carrier, and its Layer-A content is one diagonal element and its adjoint action. Nothing here needs a potential, a temperature, or a cosmological history: **the death of the mega strong force is the adjoint action of one direction on fifteen arrays, and everything else is arithmetic on its spectrum.**
+**The layer.** The transition is a statement about a formal copy of the carrier, and its Layer-A content is one diagonal element and its adjoint action. Nothing here needs a potential, a temperature, or a cosmological history: **the death of the primordial force is the adjoint action of one direction on fifteen arrays, and everything else is arithmetic on its spectrum.**
 
 **The question.** What exactly does the condensation do to $\mathrm{SU}(4)$, which generators does it remove from the spectrum, and what do those generators weigh once they are gone?
 
@@ -171,7 +171,7 @@ $$
 
 **Six planes heavy, nine directions massless, and no cross terms.** The matrix is already diagonal in the basis the algebra hands over, which is why no diagonalisation step appears — **and why the number $32$ can be read off a spectrum rather than solved for.**
 
-**The physical normalisation, so that the number can be compared with an experiment.** With $g_4$ the mega-force coupling,
+**The physical normalisation, so that the number can be compared with an experiment.** With $g_4$ the primordial-force coupling,
 
 $$
 M_X^{2}=\tfrac12\,g_4^{2}\,v_R^{2},
@@ -212,7 +212,7 @@ $$
 | the rank | $3$ | $3$ | it does not move |
 | the colour | inside the fifteen | a stabiliser factor | it survives, and survives exactly |
 
-**The sentence to keep.** **The mega strong force dies into colour and one abelian factor, and the price of the death is six vectors at $32v^{2}$ and six real scalars absorbed.** Everything else — the rank, the colour, the abelian direction, the vacuum — is unchanged.
+**The sentence to keep.** **The primordial force dies into colour and one abelian factor, and the price of the death is six vectors at $32v^{2}$ and six real scalars absorbed.** Everything else — the rank, the colour, the abelian direction, the vacuum — is unchanged.
 
 **And the sentence that must not be written.** *The leptoquarks are destroyed and their debris becomes the weak force.* The charge theorem of [the companion article](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html) closes that reading: every member of the sextet has $Q=\pm\tfrac23$, so no combination of them reaches $Q=\pm1$. **The death produces colour, one abelian factor, and six heavy vectors. It does not produce a weak doublet.**
 

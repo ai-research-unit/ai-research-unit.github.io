@@ -123,5 +123,5 @@ $V_0$ is the only carrier closed under multiplication; $V_1$ fails because $J_+^
 - [The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$](the-clebsch-gordan-decomposition-of-m4c.html), for the four summands.
 - [The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$](the-parity-rule-the-two-squares-of-the-module-at-n-4.html), for the squares of the module.
 - [The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$](the-minimal-left-ideals-of-m4c.html), for the ideals.
-- [The Truncated Rule: the Product of Two Carriers](the-truncated-rule-the-product-of-two-carriers.html), for the row at order two.
+- [The Truncated Rule: the Product of Two Carriers](the-truncated-rule-the-product-of-two-carriers-is-not-a-carrier.html), for the row at order two.
 - [The Spin-Zero Carrier of $M_4(\mathbb{C})$: the Scalars](the-spin-zero-carrier-of-m4c.html), for the carrier that is a subalgebra.
