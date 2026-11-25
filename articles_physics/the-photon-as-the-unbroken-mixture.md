@@ -92,7 +92,7 @@ $$
 
 **So $\mathcal M^2d=\sum_i v_i^2a_i(a_i\cdot d)=0$ identically, for every pair of vevs, at every ratio.** The photon is massless, and the reason is not a cancellation among numbers. **A null direction of the neutral mass matrix is a direction on which no vacuum carries charge, and $d$ is the vector whose dot product with a state's eigenvalues is that state's charge.** The mixture is unbroken because it is the charge.
 
-**2.3 From the two neutral lines that take vevs.** Take the two states the frame declares neutral before it declares any charge: the right-handed neutrino of the $(\mathbf4,\mathbf1,\mathbf2)$, and the lower component of the electroweak doublet $H$. In the basis $(T_{3L},T_{3R},T^{15})$ their eigenvalues are
+**2.3 From the two neutral lines that take vevs.** Take the two states the frame declares neutral before it declares any charge: the right-handed neutrino of the $\bar{\mathbf4}$, and the lower component of the electroweak doublet $H$. In the basis $(T_{3L},T_{3R},T^{15})$ their eigenvalues are
 
 $$
 \text{right-handed: }\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr),

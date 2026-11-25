@@ -65,41 +65,23 @@ $$
 
 **3.5 The stronger bound that may or may not apply.** If the scalar sector contains a colour triplet coupling to two quarks, a diquark, then proton decay bounds that scalar at $M_\Sigma\gtrsim1.60\times10^{5}$ J — about ten orders above the leptoquark bound. The minimal content has no such scalar, so in the minimal content the weaker bound stands alone.
 
-## $W_R$: Bounded Through $M_C$, and Not Separately
-
-**No process of its own, and one inherited bound.**
-
-**4.1 The inherited bound.** $M_X$ and $M_{W_R}$ differ by $\sqrt2$ times a coupling ratio, because both come from the same vacuum value: $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$ and $M_{W_R}^{2}=\tfrac14g_R^{2}v_C^{2}$. So a bound on one is a bound on the other up to $\sqrt2\,g_4/g_R$, and the factor is a coupling ratio the group does not fix.
-
-**4.2 The direct searches.** A $W_R$ would show as a resonance in a dilepton or dijet channel, and its absence bounds it. The bound is weaker than the leptoquark's, because a resonance needs the machine to reach it while a rare decay only needs the coupling.
-
-**4.3 Neutrinoless double beta decay.** If the neutrino is Majorana, the $W_R$–$W_R$ diagram contributes at order $M_{W_R}^{-4}$ in the amplitude, which is the strongest lever available for a heavy right-handed boson. Its size depends on the $W_L$–$W_R$ mixing, so the bound it gives is a bound on a combination and not on $M_{W_R}$ alone.
-
-**4.4 The honest summary.** $W_R$ is bounded because $M_C$ is bounded, and it has no bound of its own. **It is not a separate scale at all**: the same vacuum gives it its mass and gives the sextet its own.
-
 ## Why There Is One Transition and Not Two
 
-**One vacuum, one breaking, four factors at once.** Argued in full in [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html); restated here because it changes what "the scales" means.
+**One vacuum, one breaking, two factors at once.** Argued in full in [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html); restated here because it changes what "the scales" means.
 
-**5.1 The rank-one vacuum.** $Ξ$'s vacuum is a line in the carrier times a line in the right doublet, and the model breaks once, at one
-scale. Above $M_C$ there is one factor, $\mathrm{SU}(4)$, of rank three and dimension fifteen; **the two weak factors are not there to be broken,
-they arrive with the doublet index** ([Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html)) and are counted
-from $M_C$ down. So the group at the transition is the four factors of dimension fifteen and rank five,
-$\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, and it has no width: **the same vacuum that assembles it
-begins to break it.** Immediately below, the right line and the mixing it induces leave
-$\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, of dimension twelve and rank four.
+**5.1 The rank-one vacuum.** $Ξ$'s vacuum is a line in the carrier, and the model breaks once, at one scale. Above $M_C$ there is one factor, $\mathrm{SU}(4)$, of rank three and dimension fifteen; below it there are two, $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$, of dimension twelve and the same rank.
 
-**5.2 The consequence for counting.** One threshold, three groups: $\mathrm{SU}(4)$ above, the four factors at $M_C$, the Standard Model below. A reader who counts factors and expects a stage between the four-factor group and the Standard Model will look for a scale that is not there; **the stage between them is a truncation, not a threshold.** The massless vectors read $15\to12\to9$: fifteen above the transition, before the vacuum forms; twelve between $M_C$ and $v$, the nine of the kernel and the three of the weak left factor; nine below $v$, when $H$ eats that triple. The first arrow is $15-6+3$: six of the fifteen become heavy at $32v_C^{2}$ and three weak-left vectors arrive massless. **The six that arrive with the doublet index are not directions of the group above $M_C$**, and three of them are heavy the moment they appear.
+**5.2 The consequence for counting.** One threshold, two groups: $\mathrm{SU}(4)$ above, colour times $B-L$ below. The massless vectors read $15\to9$: fifteen above the transition, before the vacuum forms; nine below, the kernel of $\operatorname{ad}(iD)$. **The arrow is $15-6$**: six of the fifteen become heavy at $32v_C^{2}$, and no vector arrives.
 
-**5.3 The consequence for the bounds.** The bound on $M_C$ is a bound on $M_X$ and on $M_{W_R}$ at once. Nothing in the minimal content bounds the right sector separately, because there is no separate right sector to bound.
+**5.3 The consequence for the bounds.** The bound on $M_C$ is a bound on $M_X$, and the minimal content has no second heavy vector to bound.
 
 ## What Would Fix a Scale Rather Than Bound It
 
 **Four routes, in order of strength.**
 
-**6.1 A discovery.** A measured leptoquark mass fixes $M_C$, and with it $M_{W_R}$. This is the strongest route and the least likely in the near term, because the bound already puts both above the reach of the machines that would produce them at a measurable rate.
+**6.1 A discovery.** A measured leptoquark mass fixes $M_C$. This is the strongest route and the least likely in the near term, because the bound already puts the sextet above the reach of the machines that would produce it at a measurable rate.
 
-**6.2 The unification condition.** $g_4=g_L=g_R$ at one scale, combined with the measured low-energy couplings, is an equation for that scale. It is the model's only internal prediction of a scale, and it is the one the minimal content fails: the running does not reproduce the measured couplings for any $M_C$ in the allowed range.
+**6.2 The unification condition.** $g_3=g_{B-L}=g_4$ at one scale, combined with the measured low-energy couplings, is an equation for that scale. It is the model's only internal prediction of a scale, and it is the one the minimal content fails: the running does not reproduce the measured couplings for any $M_C$ in the allowed range.
 
 **6.3 The seesaw inversion.** If the neutrino mass is generated at $M_C$, then $m_\nu\sim y_\nu^{2}v^{2}/M_C$ inverts to $M_C\sim y_\nu^{2}v^{2}/m_\nu$. With the measured neutrino mass scale and an order-one Yukawa this gives a number, and the number is the one the corpus quotes for the seesaw scale. The weakness is the Yukawa: a factor of three in $y_\nu$ is a factor of nine in $M_C$.
 
@@ -127,9 +109,9 @@ $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, of dimension twelve
 |---|---|---|
 | the measured scale | $v=(\sqrt2G_F)^{-1/2}$ | one number, one error bar |
 | the bound on $M_C$ | $K_L\to\mu e$ at tree level, $1/M_X^{2}$ | a floor, no loop suppression |
-| the relation of the two heavy masses | $M_X^{2}/M_{W_R}^{2}=2g_4^{2}/g_R^{2}$ | one vacuum, one scale |
+| the sextet's mass | $M_X^{2}=16g_4^{2}v_C^{2}$ | one vacuum, one scale |
 | the thresholds | one rank-one vacuum, stabiliser of dimension $12$ | massless vectors $15\to12\to9$: one threshold |
-| the prediction | $g_4=g_L=g_R$ at $M_C$ | fails for the minimal content |
+| the prediction | $g_3=g_{B-L}=g_4$ at $M_C$ | fails for the minimal content |
 
 ## Distinctions That Are Easy to Lose
 
@@ -147,7 +129,7 @@ $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, of dimension twelve
 
 **$M_C$.** Bounded below by $K_L\to\mu e$ at tree level, $M_X\gtrsim4.0\times10^{-5}$ J for order-one couplings, with a band of a factor of a few.
 
-**$W_R$.** Bounded by the same number up to $\sqrt2\,g_4/g_R$, and by direct searches and double beta decay more weakly; not a separate scale in the minimal content.
+**No second heavy vector.** The minimal content has the sextet and nothing else, so there is no second mass to bound.
 
 **One threshold.** One rank-one vacuum is one breaking, so the four-factor group lives at $M_C$ with no width and the Standard Model below it is the same theory with the right sector integrated out.
 
@@ -161,8 +143,8 @@ $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, of dimension twelve
 |---|---|
 | $M_C$, $M_W$ | the colour and electroweak scales |
 | $v$, $v_C$ | the electroweak and the $\mathrm{SU}(4)$-breaking vacuum values |
-| $M_X$, $M_{W_R}$ | the leptoquark and right-handed boson masses, both at $M_C$ |
-| $g_4$, $g_L$, $g_R$ | the couplings the relation between the two heavy masses involves |
+| $M_X$ | the leptoquark mass, at $M_C$ |
+| $g_4$, $g_3$, $g_{B-L}$ | the primordial coupling and the two it becomes at $M_C$ |
 | $G_F$ | the Fermi constant, the source of $v$ |
 | $y_\nu$ | the Dirac Yukawa of the neutrino, the uncertainty in the seesaw inversion |
 

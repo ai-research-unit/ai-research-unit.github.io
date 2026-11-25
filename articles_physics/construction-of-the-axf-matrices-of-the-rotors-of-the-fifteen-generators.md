@@ -34,7 +34,7 @@ R_{a}(\theta)=\exp\bigl(\theta\,G_{a}\bigr),
 G_{a}\ \text{anti-hermitian},
 $$
 
-**and the hermitian reading is the same rotor with the sign of the parameter flipped.** With $T_{a}=iG_{a}$ hermitian, $\exp(i\theta T_{a})=\exp(-\theta G_{a})=R_{a}(-\theta)$, **so nothing is lost and nothing is gained by the change of convention.** The article uses the anti-hermitian $G$ because that is what the construction article prints.
+**and the hermitian reading is the same rotor with the sign of the parameter flipped.** With the hermitian generator $iG_{a}$ — the printed array times $i$, unnormalised — $\exp(i\theta\,iG_{a})=\exp(-\theta G_{a})=R_{a}(-\theta)$, **so nothing is lost and nothing is gained by the change of convention.** The article uses the anti-hermitian $G$ because that is what the construction article prints; the action of [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) uses $t_{a}=iG_{a}/\sqrt{2\operatorname{tr}(G_{a}^{\dagger}G_{a})}$, and the rescaling only changes what the parameter $\theta$ is called.
 
 **Every rotor has determinant one, and the reason is one line.** Since $\operatorname{tr}G_{a}=0$ for all fifteen — the planes are off-diagonal and the diagonals are traceless — we have $\det R_{a}(\theta)=\exp(\theta\operatorname{tr}G_{a})=1$. **So all fifteen rotors sit in $\mathrm{SU}(4)$, and the six whose arrays are real sit in $\mathrm{SO}(4)$.**
 

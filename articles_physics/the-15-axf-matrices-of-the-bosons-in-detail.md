@@ -326,7 +326,7 @@ Sixteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet o
 | $\star$ | the Hodge star of $\mathbb{R}^4$ with the Euclidean metric, $\star^2=+1$ |
 | $m^{2}(X)$ | $\operatorname{tr}([X,Ξ_0]^{\dagger}[X,Ξ_0])$, the diagonal entry of the mass matrix |
 | $X^{a}$, $\bar X^{a}$ | the two leptoquark amplitudes of colour $a$ |
-| $g_{1}\dots g_{7}$ | the six off-diagonal gluons, named by the cell they occupy |
+| $g_{1}\dots g_{7}$ | the six off-diagonal colour arrays: the gluons below $M_C$, named by the cell they occupy |
 | $T^{c}_{3}$, $T^{c}_{8}$ | the two colour diagonals, read as $d_{2}$ and $d_{3}$ |
 | $v$ | the $\mathrm{SU}(4)$-breaking value, the only breaking value of this model |
 

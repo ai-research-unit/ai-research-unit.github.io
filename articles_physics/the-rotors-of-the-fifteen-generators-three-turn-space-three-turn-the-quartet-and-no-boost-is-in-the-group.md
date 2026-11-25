@@ -223,10 +223,9 @@ At $\theta=0.5$ the coefficients are $0.5403$ and $0.8415$, that is $\cos1$ and 
 | mixed planes, real generator | $3$ | a rotation of a plane through the lepton line | the carrier's four-space | no |
 | mixed planes, imaginary generator | $3$ | a complex rotation, the boost's partner | a plane of the six | no |
 | diagonal, four cells less the trace | $3$ | a phase on a colour or the lepton line | no real plane | no |
-| the six $\mathfrak{so}(4)$ arrays | not generators: rank $6$ of $15$ | left and right rotors of the quartet | the carrier's four-space | no |
 | boost directions, a second reading of the mixed imaginary cells | — | not in the group: the Hermitian generator, $-i$ times the cell | — | — |
 
-Fifteen entries, one row of six arrays that are a second basis, and one row that is not a generator. The last row is the article: the boost directions are named by cells of the grid and the boosts themselves are outside the algebra.
+Fifteen entries, and one row that is not a generator. The last row is the article: the boost directions are named by cells of the grid and the boosts themselves are outside the algebra.
 
 **The four statements the ledger supports.**
 

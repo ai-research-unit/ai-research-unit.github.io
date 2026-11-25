@@ -113,14 +113,14 @@ $$
 **Two numbers tie the pieces together, and both are computed from the matching.**
 
 $$
-v_{C}=\frac{\sqrt2\,M_X}{g_4}=\frac{1.4142\times2.33\times10^{5}}{0.8544}=3.85\times10^{5}\ \mathrm{GeV},
+v_{C}=\frac{M_X}{4g_4}=\frac{2.33\times10^{5}}{4\times0.8544}=6.82\times10^{4}\ \mathrm{GeV},
 \qquad
-M_X=\tfrac12 g_4^{2}v_{C}^{2} .
+M_X^{2}=16\,g_4^{2}v_{C}^{2} .
 $$
 
-**So the condensate is three hundred and eighty-five TeV**, and a fermion with $y=1$ has a mass of order $v_{C}$. **Every fermion in the model that is not protected is therefore at the transition scale**, and the corpus's light fermions are light because their Yukawa entries are small and not because their scale is.
+**So the condensate is sixty-eight TeV**, and a fermion with $y=1$ has a mass of order $v_{C}$. **Every fermion in the model that is not protected is therefore at the transition scale**, and the corpus's light fermions are light because their Yukawa entries are small and not because their scale is.
 
-**The check is the inverse.** $\tfrac12(0.730)(3.853\times10^{5})^{2}=5.42\times10^{10}\ \mathrm{GeV}^{2}$, whose square root is $2.33\times10^{5}\ \mathrm{GeV}$ — the matching scale the coupling article uses. **The two numbers are the same number twice**, and that is what a matching relation is.
+**The check is the inverse.** $16(0.730)(6.818\times10^{4})^{2}=5.43\times10^{10}\ \mathrm{GeV}^{2}$, whose square root is $2.33\times10^{5}\ \mathrm{GeV}$ — the matching scale the coupling article uses. **The two numbers are the same number twice**, and that is what a matching relation is.
 
 **What the Yukawa sector does not fix.** $v_{C}$ is fixed by the matching and not by the Yukawa; $y$'s four numbers are free; and the light fermion masses come from small entries and not from a hierarchy mechanism. **The model has a hierarchy problem and this article does not solve it**: it states that the ratio $m_e/m_d$ is a group prediction and that the smallness of all the masses is not.
 
@@ -137,7 +137,7 @@ $$
 | the Yukawa parameters | $8$ real minus $3$ rephasings minus $1$ overall | $4$ |
 | the mass ratio from the condensate | $\lvert-3\rvert:\lvert+1\rvert$ | $3:1$ |
 | the predicted ratio against the measured | $3m_{d}/m_{e}$ | $27.4$ $\Rightarrow$ falsified |
-| $v_{C}$ from the matching | $\sqrt2M_X/g_4$ | $3.85\times10^{5}\ \mathrm{GeV}$ |
+| $v_{C}$ from the matching | $M_X/(4g_4)$ | $6.82\times10^{4}\ \mathrm{GeV}$ |
 
 ## Summary
 
@@ -147,7 +147,7 @@ $$
 
 **The condensate's entries $(-3,1,1,1)$ give a $3:1$ mass ratio**, and identifying the two copy entries gives $m_{e}=3m_{d}$, which is wrong by a factor $27.4$. **That number is the sector's whole output and it is a refutation**, not a fit.
 
-**And the scale is not a prediction.** $v_{C}=385\ \mathrm{TeV}$ comes from the matching, the four Yukawa numbers are free, and the lightness of the observed fermions is an input the model reproduces by small entries and does not explain.
+**And the scale is not a prediction.** $v_{C}=68\ \mathrm{TeV}$ comes from the matching, the four Yukawa numbers are free, and the lightness of the observed fermions is an input the model reproduces by small entries and does not explain.
 
 ## Summary of Notation
 
@@ -157,8 +157,8 @@ $$
 | $t_{a}$ | the fifteen generators in the $\mathbf4$; $-t_{a}^{T}$ in the $\bar{\mathbf4}$ |
 | $y_{\alpha\beta}$ | the $2\times2$ Yukawa matrix on the copy index, four real parameters |
 | $D$ | $\operatorname{diag}(-3,1,1,1)$, the condensate's shape |
-| $v_{C}$ | the condensate's magnitude, $3.85\times10^{5}\ \mathrm{GeV}$ |
-| $M_X$ | $\tfrac12g_4^{2}v_{C}^{2}=2.33\times10^{5}\ \mathrm{GeV}$ |
+| $v_{C}$ | the condensate's magnitude, $6.82\times10^{4}\ \mathrm{GeV}$ |
+| $M_X$ | $\sqrt{16g_4^{2}v_{C}^{2}}=2.33\times10^{5}\ \mathrm{GeV}$ |
 
 ## Further Reading
 

@@ -18,8 +18,8 @@ $$
 
 $$
 \boxed{\;
-\text{at }M_C:\ \mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R,
-\text{ rank }5,\ \text{twelve massless vectors} ;
+\text{at }M_C:\ \mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L},
+\text{ rank }3,\ \text{nine massless vectors} ;
 \;}
 $$
 
@@ -37,23 +37,22 @@ $$
 
 | item | value at the matching | status |
 | --- | --- | --- |
-| the group | $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | **exact at $M_C$**, rank $5$, dimension $15$ |
-| the massless vectors | twelve: the nine of $\ker\operatorname{ad}(iD)$ and the three of the weak left factor | **exact** |
-| the six leptoquark vectors | $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$ | a bound, not a number |
-| the three right vectors | $W_R^{\pm}$, $Z_R$, at the same scale | **exact in their scale**, free in their value |
-| the couplings | $g_3$, $g_{B-L}$, $g_L$, $g_R$ | matched at $M_C$; the matching is a separate ledger |
+| the group | $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ | **exact at $M_C$**, rank $3$, dimension $12$ |
+| the massless vectors | nine, the kernel $\ker\operatorname{ad}(iD)$: eight gluons and $B'$ | **exact** |
+| the six leptoquark vectors | $M_X^{2}=16g_4^{2}v_C^{2}$ | a bound, not a number |
+| the couplings | $g_3$, $g_{B-L}$ | matched at $M_C$; the matching is a separate ledger |
 
-**The group is the item that matters, and it is exact at the scale.** It is not an approximation and not a limit: **at $M_C$ the four factors are the gauge group of the theory, and above $M_C$ they are not a group at all** — above it there is one simple factor, and the four are a decomposition of the adjoint.
+**The group is the item that matters, and it is exact at the scale.** It is not an approximation and not a limit: **at $M_C$ the two factors are the gauge group of the theory, and above $M_C$ they are not a group at all** — above it there is one simple factor, and the two are a decomposition of the adjoint.
 
-**The group has no width, and that is the article's one structural claim.** The vacuum that produces the four factors is a line in the carrier times a line in the right doublet. **The second line is what makes the right factor's bosons heavy**, so the four-factor group and the mass of $W_R$ and $Z_R$ are the same event. **A stage of zero width is a description and not a threshold**: below $M_C$ the effective theory is the Standard Model's, and the three right vectors are integrated out at the scale that produced them.
+**The group has no width, and that is the article's one structural claim.** The vacuum that produces the two factors is a line in the carrier, $\operatorname{diag}(-3,1,1,1)$. **That one line is what makes the sextet heavy**, so the two-factor group and the mass of the six are the same event. **A stage of zero width is a description and not a threshold**: below $M_C$ the effective theory is colour and $B-L$, and the six are integrated out at the scale that produced them.
 
-**The twelve massless vectors are exact in the same sense, and the count falls at $M_C$.** Above the transition the fifteen directions of $\mathfrak{su}(4)$ are all massless, no vacuum having formed. At $M_C$ the kernel is nine — eight gluons and $B'$, computed once in [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) — while the other six, the sextet, take $32v_C^{2}$. **Three further vectors arrive massless with the doublet index: the weak left directions, and they survive because the vacuum is inert on them.** The right triple is heavy on the same $v_C$, and the sextet is heavy with it, so the massless ledger is
+**The nine massless vectors are exact in the same sense, and the count falls at $M_C$.** Above the transition the fifteen directions of $\mathfrak{su}(4)$ are all massless, no vacuum having formed. At $M_C$ the kernel is nine — eight gluons and $B'$, computed once in [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) — while the other six, the sextet, take $32v_C^{2}$. **No further vectors arrive: the nine are the whole massless ledger at $M_C$.** The sextet is heavy on $v_C$, so the massless ledger is
 
 $$
-15\ \longrightarrow\ 12\ \longrightarrow\ 9 ,
+15\ \longrightarrow\ 9 ,
 $$
 
-**fifteen above the transition, twelve at $M_C$ and nine at the bottom**, and the three at the bottom being the photon's parents.
+**fifteen above the transition and nine at $M_C$**, and the nine are the kernel.
 
 **The sextet is a bound and not a value**, because $v_C$ is not fixed by the model; the bound is $250$ TeV and it is what makes the transition scale a measured quantity rather than a parameter.
 
@@ -68,15 +67,15 @@ $$
 | $M_C$ | **bounded below** by $K_L\to\mu e$ | $\gtrsim250$ TeV |
 | $v$ | **measured** | $246$ GeV |
 
-**The ordering is forced, and the reason is nesting.** The two vacua are nested — the second line lies in a module of the group the first leaves unbroken — so a breaking that used the second before the first would have already used a direction the first was supposed to preserve. **Two conditions fix the order, and only one of them is about being untouched.**
+**The ordering is forced, and the reason is separation of sectors.** The two vacua act on disjoint factors — $Ξ$ on colour, $H$ on the electroweak group — so neither can undo the other, and the order is fixed by the scales alone. **One condition fixes the order: the field of each step must carry that step's index.**
 
-**(a) A field breaks a factor only if it transforms under it.** With no index on the factor there is no generator to act on the vacuum, so nothing can be broken. $Ξ$ is a colour quartet, an $R$ doublet and an $L$ singlet: it can break colour and the right factor, and it cannot break the left one. $H$ is colour-blind and an $L$ doublet: it can break the left factor and the derived hypercharge, and nothing else. This is a statement about the multiplet list, and it is what assigns each step its field.
+**(a) A field breaks a factor only if it transforms under it.** With no index on the factor there is no generator to act on the vacuum, so nothing can be broken. $Ξ$ is a colour quartet and a singlet under everything else: it can break colour, and nothing more. $H$ is colour-blind: it breaks the electroweak group, and that step is the Standard Model's rather than this model's. This is a statement about the multiplet list, and it is what assigns each step its field.
 
-**(b) A field must be neutral under the factors broken earlier.** Otherwise its vacuum tilts the previously fixed line and undoes the earlier step. $Ξ$ is inert on $\mathrm{SU}(2)_L$, so the vacuum that fixes the colour and right lines leaves the left line free for $H$.
+**(b) A field must be neutral under the factors broken earlier.** Otherwise its vacuum tilts the previously fixed line and undoes the earlier step. $Ξ$ carries no electroweak index, so the vacuum that fixes the colour line leaves the electroweak sector untouched.
 
 **The order of the steps is a statement about the multiplets and not about the group.** A different scalar content would permit a different chain, and then the group at $M_C$, the charge assignments and the massless count would all differ. **What is group-theoretic is the stabiliser the lines cut out, and that does not move.**
 
-**The scale order is a condition on the description, not a theorem about the group.** $v>M_C$ does not contradict the group theory; it contradicts the sentence "between $M_C$ and $v$ the theory is $\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$", which says which effective theory is used where. **The breaking pattern is ordering-independent; only its factorization into stages is not.**
+**The scale order is a condition on the description, not a theorem about the group.** $v>M_C$ does not contradict the group theory; it contradicts the sentence "between $M_C$ and $v$ the theory is $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$", which says which effective theory is used where. **The breaking pattern is ordering-independent; only its factorization into stages is not.**
 
 **The ordering in one line.**
 
@@ -93,11 +92,11 @@ $$
 3\to5\to4\to3\ \text{rank}.
 $$
 
-**The first arrow is the whole of $M_C$, and it is three events at one scale.** Nine of the fifteen directions are the kernel and stay massless; the other six, the sextet, take $32v_C^{2}$ and eat six of $Ξ$'s Goldstones. At the same scale six weak vectors arrive with the doublet index, and only three of them are light: the left triple, whose mass is the $v$ of a later step. **The right triple is heavy the moment it appears**, on the same $v_C$ as the sextet, which is why the four-factor group has no width. **So the massless count falls by three and not by six**: $15-6+3=12$, and the twelve are the nine of the kernel plus the three of the weak left factor. The algebra changes from $\mathfrak{su}(4)$ to $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}\oplus\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R$ — dimension fifteen as well, for a different reason, $8+1+3+3$ — and then to $\mathfrak{su}(3)\oplus\mathfrak{su}(2)_L\oplus\mathfrak{u}(1)_Y$, of dimension twelve, at the same scale.
+**The first arrow is the whole of $M_C$, and it is one event.** Nine of the fifteen directions are the kernel and stay massless; the other six, the sextet, take $32v_C^{2}$ and eat six of $Ξ$'s Goldstones. **So the massless count falls by six**: $15-6=9$, and the nine are the kernel. The algebra changes from $\mathfrak{su}(4)$ to $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, dimension twelve.
 
-**The rank, in the same reading.** It rises by two because two new Cartan directions arrive with the two weak factors, and it falls by one at $M_C$ because the broken $\mathrm{SU}(2)_R$ leaves a single abelian direction; at $v$ a broken $\mathrm{SU}(2)_L$ leaves another. **So the rank is five at $M_C$ and four immediately below it**, and the two are the same scale described twice.
+**The rank, in the same reading.** It falls by one at $M_C$: the broken direction leaves a single abelian one, so three becomes three only in count and not in kind, $\mathfrak{su}(4)$'s three Cartans becoming colour's two plus $B-L$'s one. **The rank is three on both sides of the transition**, and the group is simple above it.
 
-**The second arrow is $v$.** Three of the twelve massless vectors — $W^{\pm}$ and $Z$ — acquire mass from $H$, and nine remain: eight gluons and the photon.
+**The second arrow is $v$, and it is the Standard Model's.** The weak bosons acquire mass from $H$, and the nine of the kernel remain: eight gluons and the $B-L$ vector.
 
 **And the values, in the two-unit convention the corpus uses.** The sextet's bound is $4.0\times10^{-5}$ J, which is $2.5\times10^{2}$ TeV; the weak scale is $80.4$ GeV; **the ratio is $3.1\times10^{3}$, three and a half decades, and that is the whole of the hierarchy the first step is allowed to create.**
 
@@ -111,11 +110,11 @@ $$
 
 **which fixes one relation among the two and leaves the other as a prediction of the matching.**
 
-**The corpus's condition, and its failure, stated once.** The natural boundary condition is equal couplings at the transition, $g_4=g_L=g_R$. **That condition implies two numbers at once** — the normalisation $\sin^{2}\theta_W=\tfrac38$ and the equality $g_4=g_L$ — **and the corpus computes that they are met four decades apart:** $1.63\times10^{3}$ J and $1.57\times10^{7}$ J, that is $1.0\times10^{13}$ GeV and $9.8\times10^{16}$ GeV. **No single threshold satisfies both.**
+**The corpus's condition, and its failure, stated once.** The natural boundary condition is equal couplings at the transition, $g_3=g_{B-L}=g_4$. **That condition fixes one number, the normalisation $\sin^{2}\theta_W=\tfrac38$ at $M_C$, and the corpus computes that the measured couplings are met four decades apart:** $1.63\times10^{3}$ J and $1.57\times10^{7}$ J, that is $1.0\times10^{13}$ GeV and $9.8\times10^{16}$ GeV. **No single threshold satisfies it.**
 
 **What the migration does about it: nothing, and that is the correct amount.** The failure is a statement about unification — about whether one coupling at one scale can reproduce three measured ones — and the migration is a statement about origins. **A construction that births a group does not have to unify its couplings**, and pretending otherwise would be the kind of overreach that makes a reframing look like a solution.
 
-**What the migration does change, and it is worth being precise.** Before, the coupling failure was a failure of the model's *premise* — the premise being that $\mathrm{SU}(4)$ is the whole gauge structure. **After, the premise is that $\mathrm{SU}(4)$ is the structure above $M_C$ only, and the weak couplings are born at $M_C$ rather than inherited from it.** The failure remains exactly as computed; **what changes is what it is a failure of.**
+**What the migration does change, and it is worth being precise.** Before, the coupling failure was a failure of the model's *premise* — the premise being that $\mathrm{SU}(4)$ is the whole gauge structure. **After, the premise is that $\mathrm{SU}(4)$ is the whole gauge structure, and the electroweak couplings below $M_C$ are the Standard Model's.** The failure remains exactly as computed; **what changes is what it is a failure of.**
 
 ## Where the Masses Come From
 
@@ -123,13 +122,12 @@ $$
 
 | mass | formula | scale | who supplies it |
 | --- | --- | --- | --- |
-| the six leptoquarks | $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$ | $M_C$ | the quartet index of $Ξ$ |
-| $W_R,Z_R$ | $\sim g_R v_C$ | $M_C$ | the right-doublet index of $Ξ$ |
+| the six leptoquarks | $M_X^{2}=16g_4^{2}v_C^{2}$ | $M_C$ | the quartet index of $Ξ$ |
 | $W,Z$ | $\sim g\,v$ | $v$ | the electroweak vacuum |
 | the photon | $0$ | — | the null direction of a rank-two matrix |
 | the gluons | $0$ | — | colour is a stabiliser |
 
-**Read the column of scales.** Every mass is at the scale of the vacuum that produced it, and no mass is at a scale it did not come from. **Two of the five rows are at $M_C$, and they are the two indices of one field**: the quartet index makes the sextet heavy, the doublet index makes the right triple heavy.
+**Read the column of scales.** Every mass is at the scale of the vacuum that produced it, and no mass is at a scale it did not come from. **The one row at $M_C$ is the quartet index of $Ξ$**: it makes the sextet heavy.
 
 **Read the two zeros.** They are not accidents and they are not fine tuning: the photon is the null direction of a sum of two rank-one matrices, and the gluons are the directions the first vacuum annihilates. **Both are structural, both are computed, and both survive the migration untouched.**
 
@@ -165,7 +163,7 @@ $$
 | statement | where it is proved |
 | --- | --- |
 | the chain, the dimensions and the ranks | §*The Scale Ledger*, above: $15\to12\to9$ and $3\to5\to4\to3$ |
-| the nesting, and $M_C>v$ | §*The Scale Ledger*, above, conditions (a) and (b) |
+| the sector separation, and $M_C>v$ | §*The Scale Ledger*, above, conditions (a) and (b) |
 | the nine that survive and the six that are eaten | [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) |
 | the ledger of three readings | [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) |
 | $32v^{2}$ on six planes, $0$ on nine, and the general vacuum | [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) |
@@ -179,13 +177,12 @@ $$
 | claim | check | result |
 | --- | --- | --- |
 | the group at $M_C$ | dimension $8+1+3+3$ | $15$, rank $5$ |
-| the massless count at $M_C$ | $8+1+3$ | $12$ |
-| the vector ledger | $15-6+3$ | $12$ |
-| the sextet's mass | $\frac12g_4^{2}v_C^{2}$ | bounded by $250$ TeV |
-| the right triple's mass | $\sim g_Rv_C$ | at $M_C$, not at a second scale |
-| the ordering | nesting of the two vacua | $M_C>v$ |
+| the massless count at $M_C$ | $8+1$ | $9$ |
+| the vector ledger | $15-6$ | $9$ |
+| the sextet's mass | $16g_4^{2}v_C^{2}$ with $Ξ_0=v_CD$ | bounded by $250$ TeV |
+| the ordering | one breaking, then the Standard Model's | $M_C>v$ |
 | the hierarchy created by step one | $M_C/M_W$ at the floor | $3.1\times10^{3}$ |
-| the coupling condition | $\sin^{2}\theta_W=\frac38$ and $g_4=g_L$ | met four decades apart |
+| the coupling condition | $\sin^{2}\theta_W=\frac38$ and $g_3=g_{B-L}$ | met four decades apart |
 | the two large scales | flavour floor against unification preference | $250$ TeV against $10^{13}$ GeV |
 | the confinement argument at the floor | $M_C/M_W$ | $3.5$ decades |
 | the confinement argument at $10^{13}$ GeV | $10^{13}/80.4$ | $11$ decades |
@@ -197,7 +194,7 @@ A matching is not a unification. The group and the spectrum cross the scale; the
 
 A floor is not a prediction. $M_C\gtrsim250$ TeV says where the transition cannot be, not where it is (*Two Numbers That Must Not Be Confused*).
 
-Created at $M_C$ is not passed down at $M_C$. The weak factors arrive and the right one dies; the colour factor and the twelve vectors stand (*What Is Not Passed Down*).
+Created at $M_C$ is not passed down at $M_C$. The colour factor and the nine vectors stand (*What Is Not Passed Down*).
 
 The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's scale, and no mass is a difference of large numbers (*Where the Masses Come From*).
 
@@ -205,13 +202,13 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 
 **The matching is at $M_C\gtrsim250$ TeV, bounded by $K_L\to\mu e$ and not by proton decay.**
 
-**Four quantities cross.** The group $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, exact at $M_C$, rank five; the twelve massless vectors, nine of them the kernel of $\operatorname{ad}(iD)$ and three of them the weak left directions; the nine heavy vectors at $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$ and $\sim g_Rv_C$; and the couplings, to be matched.
+**Four quantities cross.** The group $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$, exact at $M_C$, rank three; the nine massless vectors, the kernel of $\operatorname{ad}(iD)$; the six heavy vectors at $M_X^{2}=16g_4^{2}v_C^{2}$; and the couplings, to be matched.
 
-**The ordering is forced by nesting**, $M_C>v$, and the only hierarchy the first step creates is three and a half decades at the floor. **The left–right group has no width**: it is the group at $M_C$, and the vacuum that produces it makes the right triple heavy.
+**The ordering follows from separate sectors**, $M_C>v$, and the only hierarchy the first step creates is three and a half decades at the floor. **The two-factor group has no width**: it is the group at $M_C$, and the vacuum that produces it makes the sextet heavy.
 
-**Every mass comes from the vacuum that made it.** The sextet from the quartet index of $Ξ$ at $M_C$, the right bosons from its doublet index at the same scale, $W$ and $Z$ from $v=246$ GeV, and the photon and the gluons from structure — a null direction and a stabiliser. **No composite, no binding energy, no difference of large numbers.**
+**Every mass comes from the vacuum that made it.** The sextet from the quartet index of $Ξ$ at $M_C$, $W$ and $Z$ from $v=246$ GeV, and the photon and the gluons from structure — a null direction and a stabiliser. **No composite, no binding energy, no difference of large numbers.**
 
-**Three things are not passed down.** The weak factors are born at the matching; the photon is a mixture formed after it; the mixing angle is computed after it. **And that is why the $45^\circ$ of the identities cannot be the electroweak mixing: the mass matrix it would have to be an angle of does not exist yet.**
+**Two things are not passed down.** The photon is a mixture formed after the matching; the mixing angle is computed after it. **And that is why the $45^\circ$ of the identities cannot be the electroweak mixing: the mass matrix it would have to be an angle of does not exist yet.**
 
 **The corpus below $M_C$ stands.** It is the second and third sections of this part, and none of its numbers moves at the matching: the transition changes where the weak factors come from, not a single eigenvalue.
 
@@ -222,10 +219,9 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 | $M_C$ | the transition scale, $\gtrsim250$ TeV |
 | $v$ | the electroweak vacuum, $246$ GeV |
 | $v_C$ | the magnitude of the $\mathrm{SU}(4)$-breaking condensate |
-| $Ξ$ | the scalar $(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$ that does the first breaking |
+| $Ξ$ | the scalar $(\mathbf{15}\oplus\mathbf1)$ that does the first breaking |
 | $H$ | the electroweak doublet that does the second |
 | $g_4,g_3,g_{B-L}$ | the mega coupling and the two it becomes at $M_C$ |
-| $g_L,g_R$ | the weak couplings, born at $M_C$ |
 | $B'$ | the abelian vector of the fifteen |
 
 ## Further Reading

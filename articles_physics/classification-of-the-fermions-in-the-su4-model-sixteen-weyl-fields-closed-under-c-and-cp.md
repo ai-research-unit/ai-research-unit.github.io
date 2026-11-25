@@ -12,7 +12,7 @@ $$
 C:\ \mathbf4_{\imath}\mapsto\bar{\mathbf4}_{\imath},
 $$
 
-sixteen fields, thirty-two states, **closed under $C$ and therefore under $CP$.** The two copies of each quartet are an index, not a gauge doublet: **the model gauges one group and this is its fermion content.**
+sixteen fields, thirty-two states, **closed under $C$ and, since $P$ maps the list to itself, under $CP$.** The two copies of each quartet are an index, not a gauge doublet: **the model gauges one group and this is its fermion content.**
 
 **Why the count is a product and still a product.** A fermion carries one quartet value and one copy value, so the count is $4\times2$ per quartet type and $4\times2\times2$ with the conjugate type included. **The arithmetic is the old article's arithmetic and the meaning is not**: the second $2$ used to be a gauged weak doublet, and here it is an index the group does not act on.
 

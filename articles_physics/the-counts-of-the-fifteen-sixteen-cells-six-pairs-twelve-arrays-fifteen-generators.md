@@ -75,40 +75,6 @@ of them: **three mixed**, $\{t,x\}$, $\{t,y\}$, $\{t,z\}$, and **three colour**,
 
 **A normalisation that will matter later.** Every plane array has norm two and every diagonal except $iD$ has norm two; $iD$ has norm twelve. **A mass quoted per generator is basis-independent; a mass quoted per array carries the array's normalisation.** The adjoint mass matrix is written per generator for that reason.
 
-## The Six $\mathfrak{so}(4)$ Arrays Are Not Six More Directions
-
-**Six names against fifteen generators, and the slide is the whole of the distinction.**
-
-**The object.** The algebra's two-sided action gives $\mathfrak k_L\oplus\mathfrak k_R$, six real dimensions, and the six arrays
-
-$$
-T^{L}_{x}=-\tfrac12\bigl(A_{tx}+A_{yz}\bigr),\qquad
-T^{R}_{x}=-\tfrac12\bigl(A_{tx}-A_{yz}\bigr),
-$$
-
-and cyclic in $(x,y,z)$. **These are six printed matrices and they span six dimensions — but not six new ones.**
-
-**The rank, computed and not asserted.**
-
-$$
-\operatorname{rank}\bigl\{A_{jk},\,iS_{jk},\,d_2,\,d_3\bigr\}=15,
-\qquad
-\operatorname{rank}\bigl\{A_{jk},\,iS_{jk},\,d_2,\,d_3,\,T^{L}_{a},\,T^{R}_{a}\bigr\}=15 .
-$$
-
-**Adding the six arrays adds no dimension**, because each is a real combination of two of the plane arrays:
-
-$$
-A_{ta}=-\bigl(T^{L}_{a}+T^{R}_{a}\bigr),\qquad
-A_{bc}=-\bigl(T^{L}_{a}-T^{R}_{a}\bigr),
-$$
-
-with $(a,b,c)$ cyclic in $(x,y,z)$. **Six names, no new generator, and the bracket of the six closes on the six.**
-
-**The count, stated once.** **The model has fifteen generators, and the six extra names are a rotated basis of a six-dimensional subspace of those fifteen.** The correct sentence names what the six are — *the six planes of $\mathfrak{so}(4)$* — and points to the section of the corpus where they are given a physical reading.
-
-**What the six are for.** They are the object the four-factor phase will name. **They are not a factor, they do not commute with the colour block, and three of them are heavy after the transition** — so they are not even a well-defined set of particles. That is the whole content of [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html), and it is why the count of *names* must never be read as a count of *generators*.
-
 ## The Direction: Fifteen, and Two Bases
 
 **A generator is an element of the fifteen-dimensional real space $\mathfrak{su}(4)$.** A basis is a choice of fifteen arrays that span it, and the corpus uses two.
@@ -134,11 +100,10 @@ $$
 16=1+15,\qquad 6\ \text{pairs}\times2+3\ \text{diagonals}=12+3=15 .
 $$
 
-**The three slides that the table prevents.**
+**The two slides that the table prevents.**
 
 1. **Sixteen cells are not fifteen generators**: the cells include the four diagonal positions and both halves of every off-diagonal one, and the trace is removed.
 2. **Six pairs are twelve arrays, not six generators**: each geometric pair carries a real and an imaginary array.
-3. **Six more names are not six more generators**: the six $\mathfrak{so}(4)$ arrays are combinations of the twelve plane arrays, and the rank stays fifteen.
 
 ## The Checks
 
@@ -150,9 +115,6 @@ Recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\v
 | the pair count | $\binom42$, mixed plus colour | $6=3+3$ |
 | the arrays on the pairs and the diagonals | $12+3$ | $15$ |
 | the rank of the fifteen arrays | real rank of the $15\times32$ matrix | $15$ |
-| the rank after adding the six $\mathfrak{so}(4)$ arrays | the $21\times32$ matrix | $15$ |
-| the recombination identities | $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$, $A_{bc}=-(T^{L}_{a}-T^{R}_{a})$, $(a,b,c)$ cyclic | $6/6$ |
-| the six $\mathfrak{so}(4)$ arrays close on themselves | brackets of all fifteen pairs | closed, $\dim6$ |
 | the grid in blocks | $1+6+9$ | $16$ |
 | the generators in the same blocks | $1+6+8$ | $15$ |
 | the trace norms | $\operatorname{tr}(G^{\dagger}G)$ for $A_{jk}$, $iD$, $iS_{jk}$ | $2$, $12$, $2$ |
@@ -165,7 +127,7 @@ Recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\v
 
 **The map is two identities.** $16=1+15$; and six pairs times two plus three diagonals is fifteen.
 
-**The three slides.** Cells are not generators; pairs are twice as many arrays; and six extra names are not six extra generators.
+**The two slides.** Cells are not generators; and pairs are twice as many arrays.
 
 **Why it matters.** Every count in the boson block is right in its own register, and every error in that block is a sentence that changes register without saying so. **The cure is to name the object: a cell, a pair, an array, or a generator.**
 
@@ -181,7 +143,6 @@ Recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\v
 | $D=\operatorname{diag}(-3,1,1,1)$ | the vacuum direction, traceless, $B-L=\tfrac13D$ |
 | $iD$, $d_2$, $d_3$ | the three diagonal generators |
 | $W_{\mu\nu}=L(e_\mu)R(e_\nu)$ | a word, one of the sixteen products |
-| $T^{L}_{a},T^{R}_{a}$ | the six arrays of $\mathfrak{so}(4)$, combinations of the plane arrays |
 | cell, pair, array, generator | the four counts, in the sense of this article |
 
 ## Further Reading
@@ -189,5 +150,4 @@ Recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\v
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). The fifteen arrays printed one to a display, and the three-step construction of the physics basis from the words.
 - [Classification of the Bosons: Sixteen Cells, Fifteen Generators, Nine Massless and Six Massive](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid, the block picture and the ledger of the spectrum.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The count of generators read as a mass spectrum.
-- [The Real $\mathfrak{so}(4)$ Inside the Fifteen](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The section that gives the six arrays their reading.
-- [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Why six names are not six generators, and what the weak force actually is.
+- [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Why the rank of the unbroken group is three above the transition and three below.

@@ -4,13 +4,13 @@
 
 **The question.** $\mathrm{SU}(4)$ is asymptotically free. Asymptotic freedom is usually paired with confinement in the infrared. **So why does the primordial force not confine?**
 
-**The short answer.** Because confinement needs the coupling to reach order one *inside a phase that exists*, and the primordial phase ends long before its coupling gets there. **At $M_C$ the coupling is $0.058$; it would reach order one only at about $686\ \mathrm{MeV}$, which is five and a half decades below the transition and in a theory where $\mathrm{SU}(4)$ is not a symmetry at all.**
+**The short answer.** Because confinement needs the coupling to reach order one *inside a phase that exists*, and the primordial phase ends long before its coupling gets there. **At $M_C$ the coupling is $0.058$; it would reach order one only at about $1.8\ \mathrm{GeV}$, which is five decades below the transition and in a theory where $\mathrm{SU}(4)$ is not a symmetry at all.**
 
 **The two conditions, stated separately, because the literature usually runs them together.**
 
 | condition | statement | holds here? |
 | --- | --- | --- |
-| the coupling reaches order one | $1/\alpha_4(\mu)\sim1$ for some $\mu$ in the phase | **no**: it needs $\mu\approx686\ \mathrm{MeV}$ |
+| the coupling reaches order one | $1/\alpha_4(\mu)\sim1$ for some $\mu$ in the phase | **no**: it needs $\mu\approx1.8\ \mathrm{GeV}$ |
 | the phase exists at that scale | $\mu>M_C$ | **no**: $M_C\gtrsim250\ \mathrm{TeV}$ |
 
 **Either failure alone is enough, and both fail.** This article computes the first and cites the leptoquark bound for the second.
@@ -24,9 +24,9 @@
 $$
 \frac{1}{\alpha_4(\mu)}=\frac{1}{\alpha_4(M_X)}+\frac{b_0}{2\pi}\ln\frac{\mu}{M_X},
 \qquad
-b_0=8,
+b_0=\frac{26}{3},
 \qquad
-\frac{b_0}{2\pi}=1.273 .
+\frac{b_0}{2\pi}=1.379 .
 $$
 
 **Because $b_0>0$, $\alpha_4$ increases as $\mu$ decreases**, exactly as $\alpha_s$ does in QCD. **So asymptotic freedom is not an argument against confinement; it is the premise of confinement.** The argument must be quantitative, and it is the next section.
@@ -40,20 +40,20 @@ $$
 | scale | $1/\alpha_4$ | $\alpha_4$ |
 | --- | --- | --- |
 | $M_X=2.33\times10^{5}\ \mathrm{GeV}$ | $17.21$ | $0.058$ |
-| $M_C=2.5\times10^{5}\ \mathrm{GeV}$ | $17.30$ | $0.058$ |
-| $686\ \mathrm{MeV}$, where $\alpha_4=1$ | $1.00$ | $1.00$ |
-| $313\ \mathrm{MeV}$, the one-loop pole | $0$ | $\infty$ |
+| $M_C=2.5\times10^{5}\ \mathrm{GeV}$ | $17.31$ | $0.058$ |
+| $1.83\ \mathrm{GeV}$, where $\alpha_4=1$ | $1.00$ | $1.00$ |
+| $885\ \mathrm{MeV}$, the one-loop pole | $0$ | $\infty$ |
 
 **The third row is computed and not fitted.**
 
 $$
 \ln\frac{\mu_{1}}{\mu_{0}}=-\frac{1/\alpha_4(\mu_{0})-1}{b_0/2\pi}
-=-\frac{17.21-1}{1.273}=-12.73 ,
+=-\frac{17.21-1}{1.379}=-11.76 ,
 \qquad
-\mu_{1}=2.33\times10^{5}\times e^{-12.73}=686\ \mathrm{MeV} .
+\mu_{1}=2.33\times10^{5}\times e^{-11.76}=1.8\ \mathrm{GeV} .
 $$
 
-**Nearly thirteen e-folds, or a factor $3.6\times10^{5}$ in scale, separate the transition from the scale at which the coupling would be strong.** The transition is at $250\ \mathrm{TeV}$ and the strong-coupling scale is at $686\ \mathrm{MeV}$; the ratio is $3.6\times10^{5}$.
+**Nearly twelve e-folds, or a factor $1.4\times10^{5}$ in scale, separate the transition from the scale at which the coupling would be strong.** The transition is at $250\ \mathrm{TeV}$ and the strong-coupling scale is at $1.8\ \mathrm{GeV}$; the ratio is $1.4\times10^{5}$.
 
 **And below the transition the line is not the theory's line.** The coefficient becomes the Standard Model's, the group becomes $\mathrm{SU}(3)\times\mathrm{U}(1)$, and the running that would produce a strong $\mathrm{SU}(4)$ coupling is not the running the world follows. **Inside the phase, $\alpha_4$ never exceeds $0.058$.**
 
@@ -67,14 +67,14 @@ $$
 \ln\frac{M_Z}{\Lambda}= -\frac{8.48-1}{1.114}=-6.71 ,
 $$
 
-so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}$, **which is the familiar order of $\Lambda_{\mathrm{QCD}}$ and is seven e-folds from the $Z$ mass.** The primordial coupling starts weaker ($1/\alpha=17.2$ against $8.5$), and that head start is what buys the extra e-folds: it needs $12.8$ against $6.7$. **The factor is $1.9$, and the whole of it is the starting value**, since the two coefficients are within fifteen per cent of each other.
+so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}$, **which is the familiar order of $\Lambda_{\mathrm{QCD}}$ and is seven e-folds from the $Z$ mass.** The primordial coupling starts weaker ($1/\alpha=17.2$ against $8.5$), and that head start is what buys the extra e-folds: it needs $11.8$ against $6.7$. **The factor is $1.8$, and most of it is the starting value**, since the two coefficients differ by about a quarter.
 
 ## What Confinement Would Require
 
 **Three statements, and each is a requirement rather than a description.**
 
-- *A string tension.* Confinement is the statement that the potential between two static charges rises linearly, $\sigma r$, with $\sigma$ of order $\Lambda^{2}$. **That needs $\Lambda$ inside the phase**, and here $\Lambda$ would be $686\ \mathrm{MeV}$.
-- *A spectrum of bound states.* Glueballs and colour-singlet composites need the theory to exist at the scale where they form. **At $686\ \mathrm{MeV}$ the relevant theory is the Standard Model's strong sector**, whose own bound states are the hadrons.
+- *A string tension.* Confinement is the statement that the potential between two static charges rises linearly, $\sigma r$, with $\sigma$ of order $\Lambda^{2}$. **That needs $\Lambda$ inside the phase**, and here $\Lambda$ would be $1.8\ \mathrm{GeV}$.
+- *A spectrum of bound states.* Glueballs and colour-singlet composites need the theory to exist at the scale where they form. **At $1.8\ \mathrm{GeV}$ the relevant theory is the Standard Model's strong sector**, whose own bound states are the hadrons.
 - *A phase transition, or none.* QCD confines without a transition; the primordial theory would have to confine across one, and it does not reach the scale.
 
 **What replaces confinement above $M_C$ is a weakly coupled plasma of the model's own content.** Fifteen massless vectors, thirty-two fermion states, sixteen scalars, all perturbative, with $\alpha_4/\pi=0.018$ at the transition. **The tree-level rates of the block are legitimate for exactly this reason**, and [The Primordial Coupling](the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html) supplies the number.
@@ -91,7 +91,7 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 
 **Three boundaries, stated so the claim stays narrow.**
 
-- *It is a one-loop statement.* $\alpha_4(M_C)=0.058$ is a one-loop value; a two-loop coefficient would move it by a few per cent and would not move the strong-coupling scale by six decades. **The conclusion is robust to the truncation in a way the numbers are not.**
+- *It is a one-loop statement.* $\alpha_4(M_C)=0.058$ is a one-loop value; a two-loop coefficient would move it by a few per cent and would not move the strong-coupling scale by five decades. **The conclusion is robust to the truncation in a way the numbers are not.**
 - *It says nothing about a different content.* A model with twice as many scalars would have a smaller $b_0$ and a nearer strong-coupling scale; **the count of scalars is what decides the margin**, and [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) is where that count is fixed.
 - *It says nothing about non-perturbative effects at $M_C$.* Instantons and monopoles can be important without confinement; **the instanton action is computed in [The $\mathrm{SU}(4)$ Instanton](the-su4-instanton-a-matrix-transcription-outside-the-algebra.html) and is enormous**, which is a separate statement.
 
@@ -99,15 +99,15 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 
 | claim | check | result |
 | --- | --- | --- |
-| $b_0$ positive | $\tfrac{44}{3}-\tfrac{16}{3}-\tfrac43$ | $+8$ |
+| $b_0$ positive | $\tfrac{44}{3}-\tfrac{16}{3}-\tfrac23$ | $+\tfrac{26}{3}$ |
 | the direction | positive coefficient | $\alpha_4$ grows downward |
-| $\alpha_4(M_C)$ at $250\ \mathrm{TeV}$ | $17.21+1.273\ln(2.5/2.33)$ | $0.058$ |
-| the strong-coupling scale | $M_Xe^{-(17.21-1)/1.273}$ | $686\ \mathrm{MeV}$ |
-| the e-folds from $M_C$ | $16.30/1.273$ | $12.8$ |
-| the scale ratio | $2.5\times10^{5}/0.686$ | $3.6\times10^{5}$ |
+| $\alpha_4(M_C)$ at $250\ \mathrm{TeV}$ | $17.21+1.379\ln(2.5/2.33)$ | $0.058$ |
+| the strong-coupling scale | $M_Xe^{-(17.21-1)/1.379}$ | $1.8\ \mathrm{GeV}$ |
+| the e-folds from $M_C$ | $16.31/1.379$ | $11.8$ |
+| the scale ratio | $2.5\times10^{5}/1.8$ | $1.4\times10^{5}$ |
 | QCD's e-folds | $(8.48-1)/1.114$ | $6.7$ |
 | QCD's strong scale | $91.2\,e^{-6.71}$ | $0.111\ \mathrm{GeV}$ |
-| the ratio of e-folds | $12.8/6.7$ | $1.9$ |
+| the ratio of e-folds | $11.8/6.7$ | $1.8$ |
 
 **The last two rows are the comparison and not a proof.** They show that the same calculation gives the familiar answer in the familiar theory, which is what makes the primordial answer credible.
 
@@ -115,7 +115,7 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 
 **The primordial force does not confine, and asymptotic freedom is not the reason.** $b_0>0$ means the coupling grows downward, exactly as in QCD; what differs is the distance it has to travel.
 
-**$12.8$ e-folds separate the transition from the scale where $\alpha_4$ would be one, and QCD needs $6.7$ from the $Z$ mass.** The primordial coupling starts weaker and holds that advantage all the way down, which puts its strong-coupling scale at $686\ \mathrm{MeV}$ — five and a half decades below $M_C$, where $\mathrm{SU}(4)$ is no longer the symmetry.
+**$11.8$ e-folds separate the transition from the scale where $\alpha_4$ would be one, and QCD needs $6.7$ from the $Z$ mass.** The primordial coupling starts weaker and holds that advantage all the way down, which puts its strong-coupling scale at $1.8\ \mathrm{GeV}$ — five decades below $M_C$, where $\mathrm{SU}(4)$ is no longer the symmetry.
 
 **So the phase is perturbative throughout its existence**, with $\alpha_4/\pi=0.018$ at its lower end, and the tree-level rates of the block are legitimate. **What replaces confinement is not freedom but a different theory**: at $M_C$ the group breaks and the coupling is matched, and the primordial coupling has no infrared limit to speak of.
 
@@ -124,8 +124,8 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 | symbol | meaning |
 | --- | --- |
 | $\alpha_4$ | $g_4^{2}/4\pi$, the primordial coupling |
-| $b_0$ | $8$, the one-loop coefficient with the model's content |
-| $\mu_{1}$ | the scale at which $\alpha_4=1$, computed as $686\ \mathrm{MeV}$ |
+| $b_0$ | $\tfrac{26}{3}$, the one-loop coefficient with the model's content |
+| $\mu_{1}$ | the scale at which $\alpha_4=1$, computed as $1.8\ \mathrm{GeV}$ |
 | $\Lambda$ | the would-be confinement scale; used only for comparison |
 | $M_C$ | the transition, $\gtrsim250\ \mathrm{TeV}$ |
 | $M_X$ | the matching scale, $2.33\times10^{5}\ \mathrm{GeV}$ |

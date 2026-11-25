@@ -155,7 +155,7 @@ with the doublet index of the condensate, and their masses are the weak sector's
 | $X^{\alpha}$, $\bar X^{\alpha}$ | the leptoquark and its reverse amplitude, $\alpha=r,g,b$ |
 | $M^{2}_{\text{lepto}}$ | the $6\times6$ leptoquark block, $32v^{2}\mathrm I_6$ |
 | $\operatorname{ad}(iD)$ | the adjoint action whose eigenspaces are the blocks |
-| $v$ | the transition condensate in the array normalisation, the unit of $M^{2}=32v^{2}$; the physical value is $v_C=8v/g_4$, so that $M_X^{2}=32v^{2}=\tfrac12g_4^{2}v_C^{2}$ |
+| $v$ | the transition condensate in the array normalisation, the unit of $M^{2}=32v^{2}$; the physical value is $v_C=\sqrt2v/g_4$, so that $M_X^{2}=32v^{2}=16g_4^{2}v_C^{2}$ |
 
 ## Further Reading
 

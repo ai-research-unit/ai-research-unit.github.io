@@ -13,7 +13,9 @@ $$
 \;}
 $$
 
-**The count starts at fifteen and stops at sixteen.** $\dim\mathrm{SU}(4)=4^{2}-1=15$, and the traceless Hermitian $4\times4$ is exactly that algebra: fifteen real entries. The trace is one more real number, and the scalar may carry it, so the content is $\mathbf{15}\oplus\mathbf1$ and the count is $15+1=16$. **No further doubling is available**: the matrix is Hermitian, so its off-diagonal entries are not independent complex numbers, and no index is gauged that would multiply them.
+**The count starts at fifteen and stops at sixteen.** $\dim\mathrm{SU}(4)=4^{2}-1=15$, and the traceless Hermitian $4\times4$ has exactly that many real entries. **The dimension is the algebra's and the space is not**: $\mathfrak{su}(4)$ is the traceless *anti-Hermitian* matrices — the generators $K$ of the corpus carry $K^{\dagger}=-K$ — and the traceless Hermitian matrices are $i\mathfrak{su}(4)$, reached by multiplying by $i$. **The scalar is what sits in the second space**, because $U\Xi U^{\dagger}$ is Hermitian whenever $\Xi$ is, and the derivation $[K,\cdot]$ of an anti-Hermitian $K$ is what keeps it there. The trace is one more real number, and the scalar may carry it, so the content is $\mathbf{15}\oplus\mathbf1$ and the count is $15+1=16$. **No further doubling is available**: the matrix is Hermitian, so its off-diagonal entries are not independent complex numbers, and no index is gauged that would multiply them.
+
+**The trace is a mode and not a constraint.** No condition is imposed on $Ξ$, and the count below is taken at the field's sixteen and not at the vacuum's fifteen. **Tracelessness belongs to the vacuum and not to the field**: $UΞ U^{\dagger}$ leaves $\operatorname{tr}Ξ$ alone, so the trace is a gauge singlet and a dynamical degree of freedom, and *The Primordial Potential* puts the minimum at $\operatorname{tr}Ξ=0$ by giving that mode a positive quadratic coefficient. **The tempting wrong count is "fifteen generators, so fifteen scalar directions"**, and it confuses the algebra with the field: a generator is traceless because $\mathfrak{su}(4)$ removes the trace, and that removal says nothing about a boson that is not a generator.
 
 **What this article establishes.** That the multiplet is one Hermitian matrix; why the matrix index is forced by the Yukawa operator; the decomposition of the sixteen into blocks under the residual $\mathrm{U}(3)$; the count of eaten and surviving components; and the price that count carries.
 
@@ -68,10 +70,10 @@ $$
 **The stabiliser of $D$ is $\mathrm{U}(3)$ on the last three lines**, and the sixteen decompose under it by where the entries sit in the matrix.
 
 $$
-\mathbf{15}\oplus\mathbf1\;\longrightarrow\;\mathbf8_0\oplus\mathbf3_{-\frac43}\oplus\bar{\mathbf3}_{+\frac43}\oplus\mathbf1_0\oplus\mathbf1_0 .
+\mathbf{15}\oplus\mathbf1\;\longrightarrow\;\mathbf8_0\oplus\mathbf3_{+\frac43}\oplus\bar{\mathbf3}_{-\frac43}\oplus\mathbf1_0\oplus\mathbf1_0 .
 $$
 
-**Count the real components block by block, not by multiplying complex entries.**
+**The triplet's charge is positive**, $+\tfrac43$, because moving the lepton into a colour slot raises $B-L$ by $\tfrac13-(-1)$; the antitriplet carries the minus. **Count the real components block by block, not by multiplying complex entries.**
 
 | block | where it sits | real components | eaten | survivors |
 | --- | --- | --- | --- | --- |
@@ -126,7 +128,7 @@ $$
 | the survivors | $16-6$ | $10$ |
 | the block sum | $8+1+1$ | $10$ |
 | the Yukawa | $\bar{\mathbf4}\otimes(\mathbf{15}\oplus\mathbf1)\otimes\mathbf4\supset\mathbf1$ | one contraction per block, so two operators |
-| the scalar's effect on $b_0$ | $N_s=16$ real | scalar term $-\tfrac43$ |
+| the scalar's effect on $b_0$ | $N_s=16$ real, weight $\tfrac16$ | scalar term $-\tfrac23$ |
 
 **The two routes to six agreeing is the check that matters**, because one counts generators and the other counts real components. **They agree because the Goldstone theorem is the statement that the two counts are the same count**, and a census that has them disagree has multiplied something.
 
@@ -146,7 +148,7 @@ A count of components is not a count of particles. Sixteen real components are t
 
 **Six eaten, ten surviving.** The six are the $\mathbf3\oplus\bar{\mathbf3}$ block, one real component per broken generator; the ten are an octet, a singlet and the radial mode.
 
-**The sixteen is also the number the running uses.** A scalar multiplet of sixteen components contributes $-\tfrac43$ to $b_0$, and that is the term [The Primordial Coupling](the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html) subtracts. **Each doubling of the count costs another $\tfrac43$**: thirty-two real components would give $b_0=\tfrac{20}{3}$ and sixty-four would give $4$. **The census and the running are therefore one statement and not two**, and the coupling article tabulates the three side by side.
+**The sixteen is also the number the running uses.** A scalar multiplet of sixteen real components contributes $-\tfrac23$ to $b_0$ — the real-scalar weight $\tfrac16$ on the adjoint Dynkin index $4$ — and that is the term [The Primordial Coupling](the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html) subtracts. **Each doubling of the count doubles that term**: thirty-two real components would give $-\tfrac43$ and $b_0=8$, and sixty-four would give $-\tfrac83$ and $b_0=\tfrac{20}{3}$. **The census and the running are therefore one statement and not two**, and the coupling article tabulates the three side by side.
 
 ## Summary of Notation
 

@@ -88,7 +88,7 @@ $$
 
 **And the two rows cannot both be exact.** Their Lie bracket generates all fifteen generators of $\mathfrak{su}(4)$, which is simple, so a vacuum annihilated by both would break nothing. **The model must choose, and the corpus chooses the first row — that is what the transition is.**
 
-**The endpoint is the group at $M_C$, and not a group below it.** The same vacuum that produces the four factors kills the right one: the second line of $Ξ$'s vacuum makes $W_R$ and $Z_R$ heavy at the scale that makes them. **Rank five is therefore exact at the transition and has no width**, and the effective theory below it has three factors and rank four.
+**The endpoint is the group at $M_C$, and it is the same group below.** The vacuum that produces the two factors is the lepton line $\operatorname{diag}(-3,1,1,1)$, and it is exact at the transition. **The rank is three above and three below**, and the effective theory below is the same group with the sextet removed.
 
 ## The Lemma: A Subalgebra Never Outranks Its Algebra
 
@@ -209,7 +209,7 @@ $$
 **The weak bosons get their masses from the two indices of one field, and the two are given at different scales.**
 
 $$
-m_{W_R}\sim g_R\,v_C,\qquad m_{W}\sim g\,v,\qquad v=246\ \mathrm{GeV},
+M_X\sim g_4\,v_C,\qquad m_{W}\sim g\,v,\qquad v=246\ \mathrm{GeV},
 $$
 
 **with $v_C$ the condensate that does the transition and $v$ the electroweak value.** The chain therefore reads
@@ -220,7 +220,7 @@ $$
 
 | scale | what happens | who gets mass |
 | --- | --- | --- |
-| $M_C\gtrsim250\ \mathrm{TeV}$ | $\mathrm{SU}(4)$ breaks, sextet eaten, weak factors born; the right doublet breaks $\mathrm{SU}(2)_R$ | the six leptoquarks, $W_R$, $Z_R$ |
+| $M_C\gtrsim250\ \mathrm{TeV}$ | $\mathrm{SU}(4)$ breaks, sextet eaten, colour and $B-L$ survive | the six leptoquarks |
 | $v=246\ \mathrm{GeV}$ | electroweak breaking | $W$, $Z$ |
 
 **The arrival brings in the group and the colour vacuum kills the right half of it.** No object is built from parts a thousand times heavier than itself, and the left half waits for its own vacuum.
@@ -244,7 +244,7 @@ $$
 
 **It does not derive the weak force.** It derives its *rank* — five, which is a theorem — and postulates its *birth* — the doublet index.
 
-**It does not explain the weak coupling.** $g$ and $g_R$ are free parameters, as they are in the corpus.
+**It does not touch the electroweak couplings.** $g$ is the Standard Model's, and this model does not derive it.
 
 **It does not explain chirality.** That the copy index splits into two factors rather than one is inherited from the corpus, which has the split as a fact and not as a derivation.
 
@@ -286,11 +286,11 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 
 **The rank lemma is why it must be so.** $\operatorname{rank}\mathfrak{su}(4)=3$, the endpoint costs $5$, and a subalgebra never outranks its algebra. **So the weak factors are not pieces of $\mathrm{SU}(4)$; they arrive beside it — which is what "arrival" means here, and what $3+1+1=5$ certifies.**
 
-**The mechanism is one object with three indices.** $Ξ\in(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$: the colour pair breaks $\mathrm{SU}(4)$ and eats the sextet, the $\mathbf 2$ index is the weak force. **The breaking and the birth are one event with two aspects.**
+**The mechanism is one object with three indices.** $Ξ\in(\mathbf{15}\oplus\mathbf1)$: the colour pair breaks $\mathrm{SU}(4)$ and eats the sextet, the $\mathbf 2$ index is the weak force. **The breaking and the birth are one event with two aspects.**
 
 **The sextet cannot do it, twice over.** Charge: $Q=\pm\tfrac23$ sums to $\{0,\pm\tfrac43\}$ and never to $\pm1$, and the colour singlet is neutral identically. Mass: a bound state weighs at least its confinement scale, and that scale is $250$ TeV. Both proofs are [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html)'s. **Neither closure can be repaired by dynamics.**
 
-**The price is one postulate, paid in a currency the corpus already spends**, and the mass ledger stays the corpus's: $M_C>v$, with $W_R$ at $M_C$ and $W$ at $v$.
+**The price is one postulate, paid in a currency the corpus already spends**, and the mass ledger stays the corpus's: $M_C>v$, with the sextet at $M_C$ and $W$ at $v$.
 
 ## Summary of Notation
 
@@ -299,7 +299,7 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 | $\mathfrak{su}(4)$ | the primordial force, dimension $15$, rank $3$ |
 | $\mathfrak m$ | the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, $Q=\pm\frac23$ |
 | $iD$ | the condensate $\operatorname{diag}(-3,1,1,1)$; $\operatorname{ad}(iD)$ has spectrum $0^{9},(\pm4i)^{3}$ |
-| $Ξ$ | the transition's scalar, $(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$, $64$ real components |
+| $Ξ$ | the transition's scalar, $(\mathbf{15}\oplus\mathbf1)$, $16$ real components |
 | $M_C$ | the first breaking scale, $\gtrsim250$ TeV from $K_L\to\mu e$ |
 | $v_C,v$ | the transition and electroweak vacuum values, $v=246$ GeV |
 | $\Lambda_{\text{confine}}$ | the scale a bound state weighs at least, $=M_C$ here |

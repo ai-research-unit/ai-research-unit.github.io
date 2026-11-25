@@ -1,4 +1,4 @@
-# __The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration__
+# __The $\mathrm{SU}(4)$ Model: One Group, Fifteen Generators, One Declaration__
 
 ## Introduction
 
@@ -13,13 +13,13 @@ G=\mathrm{SU}(4),\qquad
 \;}
 $$
 
-**Four colours, fifteen generators, one declaration.** The lepton is read as a fourth colour; the fifteen split as colour, one abelian direction and six leptoquarks; and the only statement the algebra does not make is which of the four directions is the lepton.
+**One group, fifteen generators, one declaration.** The fifteen split, *below the transition*, as eight of colour, one abelian direction and six leptoquarks. **Above the transition there is no colour group and no colour label**: there are four lines of one quartet, and the only statement the algebra does not make is which of the four lines is the lepton. **The labels themselves are coordinates, and [The Colours in $\mathrm{SU}(4)$](the-colours-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html) prints all fifteen and shows why none of them is a charge.**
 
 **Why the group is one and not three.** The fifteen contains a real $\mathfrak{so}(4)$, spanned by the six real antisymmetric planes, and those six directions look like two weak triples. **They are not.** A factor is a group; a subalgebra is a subspace of the algebra, and reading a subalgebra as a factor is what names three groups where the algebra has one. **The six arrays are $\mathfrak{so}(4)$ in a rotated basis.** §*The Real $\mathfrak{so}(4)$ Inside the Fifteen* computes which one this is, and the next section of the corpus says what the weak force actually is.
 
 **The two layers, and the one that matters here.** Layer A is what the algebra does on its own carrier. Layer B is $\mathrm{SU}(4)$ acting on a formal copy of that carrier. **The distinction is load-bearing**: the algebra's commutant forces the copy, and §*The Carrier Is a Copy* proves it with a count.
 
-**What this article establishes.** That the group is $\mathrm{SU}(4)$ and the count is fifteen; that the fifteen split as $8+1+6$; that the matter content is the sixteen and that it is vector-like under the group, so its anomaly cancels by counting; that one coupling multiplies all fifteen generators; that the fifteen already contains a real $\mathfrak{so}(4)$ of six dimensions and rank two; that the sixteen is closed under $C$ and therefore under $CP$; and that the ceiling on any group commuting with the Lorentz action is $\mathrm{SU}(2)$, which is why the carrier is a copy.
+**What this article establishes.** That the group is $\mathrm{SU}(4)$ and the count is fifteen; that the fifteen split as $8+1+6$; that the matter content is the sixteen and that it is vector-like under the group, so its anomaly cancels by counting; that one coupling multiplies all fifteen generators; that the fifteen already contains a real $\mathfrak{so}(4)$ of six dimensions and rank two; that the sixteen is closed under $C$ and, since $P$ maps it to itself as well, under $CP$, so the content is real under both while the Lagrangian's phases remain free; and that the ceiling on any group commuting with the Lorentz action is $\mathrm{SU}(2)$, which is why the carrier is a copy.
 
 **What it does not establish.** That the algebra derives the group — it derives the group *given* the carrier. That the lepton line is the fourth colour — that is declaration (A). That the model is chiral where it gauges — **it is not, and §*The Chiral Wall* shows that this is now a theorem about the model rather than a caveat about a representation.**
 
@@ -64,7 +64,7 @@ $$
 
 **The eight is colour. The one is the abelian direction $iD$. The six is the leptoquark sextet**, carrying one colour and one lepton index at once, with $B-L=\pm\tfrac43$ and $Q=\pm\tfrac23$ once charge is defined.
 
-**Read the split as a fate list.** The eight survive every breaking of the model as gluons. The one survives as the $B-L$ vector and later mixes. **The six are the only coloured massive vectors in the theory**, and they are what a leptoquark search looks for.
+**Read the split as a fate list.** The eight survive every breaking of the model as gluons. The one survives as the $B-L$ vector and later mixes. **The six are the only coloured massive vectors in the theory — massive below $M_C$, and massless above it, like every other vector of the fifteen**, and they are what a leptoquark search looks for.
 
 **The rank.** A maximal torus of $\mathfrak{su}(4)$ has dimension three. It is spanned by $iD=\operatorname{diag}(-3i,i,i,i)$ and the two trace-free colour diagonals. **Rank three, and no breaking of this group reaches rank five** — not because of dynamics, but because a subalgebra never outranks its algebra. **That single line is why two weak factors cannot be pieces of this one.**
 
@@ -119,22 +119,26 @@ and its conjugate gave $+\tfrac29$ with the signs reversed, so the sum vanished.
 **The whole gauge content is one line, and it is shorter than it used to be.**
 
 $$
-D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}T_{a} .
+D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}t_{a} .
 $$
 
-**One sum, fifteen fields, one coupling.** Three factors would bring three sums and three couplings; here there is one of each, and no ratio to fix.
+**One sum, fifteen fields, one coupling.** Three factors would bring three sums and three couplings; here there is one of each, and no ratio to fix. **The $t_{a}$ are Hermitian and normalised by $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$**, the same fifteen the Lagrangian uses; the anti-Hermitian printed arrays $G_{a}$ differ from them by a factor $i$ and a rescaling, and [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) fixes that once in §*The Normalisation*.
 
-**Every index is low**, because the metric is $\delta_{\imath\jmath}=(1,1,1,1)$: a raised index names the same index. **The label $a$ is a name and not a frame slot**; it counts the fifteen generators.
+**Every index is low**, because the colour index's metric is $\delta_{\imath\jmath}=(1,1,1,1)$: a raised index names the same index. **The label $a$ is a name and not a frame slot**; it counts the fifteen generators. **The spacetime index is the exception and the two never mix**: a Dirac operator contracts it with the Minkowski weight $\varepsilon_{\imath}=(1,-1,-1,-1)$, as [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) states, while every index of this article's $4\times4$ matrices is colour and carries no weight.
 
 **What the fifteen fields are.**
 
-| block | count | $\mathrm{SU}(3)_c$ | fate |
-| --- | --- | --- | --- |
-| $a$ in the $\mathfrak{su}(3)$ corner | $8$ | $\mathbf 8$ | the gluons, massless |
-| $A_{15}$ | $1$ | $\mathbf 1$ | the $B-L$ vector, massless until it mixes downstream |
-| $a$ in $\mathfrak m$ | $6$ | $\mathbf 3+\bar{\mathbf3}$ | the leptoquarks, heavy at $M_C$ |
+| block | count | $\mathrm{SU}(3)_c$ below $M_C$ | fate: above $M_C$ | fate: below $M_C$ |
+| --- | --- | --- | --- | --- |
+| $a$ in the $\mathfrak{su}(3)$ corner | $8$ | $\mathbf 8$ | **the eight colour directions, massless** | the gluon octet, massless |
+| $A_{15}$ | $1$ | $\mathbf 1$ | the $B-L$ vector, massless | massless until it mixes downstream |
+| $a$ in $\mathfrak m$ | $6$ | $\mathbf 3+\bar{\mathbf3}$ | **the sextet, massless** | **heavy at $M_C$** |
 
-**Nine massless and six massive, and that is the whole gauge-boson spectrum of this model.** No $W$, no $Z$, no photon: **those arrive at $M_C$**, where the vacuum that breaks the primordial force also gives the right-handed pair its mass. **The scalar sector is not in this table**: it is sixteen real components in *The Scalar Content*, six of them eaten by these six vectors.
+**Below $M_C$ there are nine massless and six massive, and that is the whole gauge-boson spectrum at that scale.** Above $M_C$ all fifteen are massless, no vacuum having formed — **and that includes the six leptoquarks, whose mass exists only once the condensate does.** The two columns are the point: **the sextet's column changes and the other two do not**, and a reader who reads "heavy" in the third row without the column heading has read the broken phase into the unbroken one.
+
+**And the middle column says *eight*, not *the gluons*, on purpose.** Above $M_C$ the group is one factor and **no $\mathrm{SU}(3)$ is gauged**, so *gluon* is a name the broken phase supplies: the eight are the six colour–colour off-diagonals plus the two colour diagonals, defined by the lines they move and not by a subgroup. **The $\mathrm{SU}(3)_c$ column is therefore a branching and not a pre-breaking content**, and §*The Names, and Which Phase They Belong To* of [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) states what changes at the transition and what does not — **the count $6+2=8$ never changes; only which group the two diagonals belong to does.**
+
+**No $W$, no $Z$ and no photon in this list**: those need the weak factors, which arrive at $M_C$ in the same condensation that gives the right-handed pair its mass, and they become massive at $M_W$. **The scalar sector is not in this table**: it is sixteen real components in *The Scalar Content*, six of them eaten by these six vectors.
 
 **What the model does not tie.** One gauge coupling above $M_C$, so there is no ratio between gauge couplings to fix. **That is not the absence of a matching problem; it turns the matching into a prediction**: the three couplings below $M_C$, and the four decades between the strong and the electroweak scales, are what one $g_4$ runs into, and they are treated in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). **The scalar and Yukawa couplings are separate parameters and this article fixes none of them.**
 
@@ -275,7 +279,7 @@ $$
 
 **Third, the trace.** $\operatorname{tr}R_i=4i\ne0$, so $R_i$ is excluded by the tracelessness of $\mathfrak{su}(4)$ read on the array in the coefficient basis. **What remains is $\{R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\}$: three real dimensions, and that is $\mathfrak{su}(2)$.**
 
-**So the ceiling is $\mathrm{SU}(2)$, and it is attained by $\mathfrak k_R$.** This is exactly the $\mathfrak k_R$ of the earlier section — **the commutant theorem and the real $\mathfrak{so}(4)$ are the same structure seen from two sides.** The ceiling of three forces the tensor product:
+**So the ceiling is $\mathrm{SU}(2)$, and it is attained by $\mathfrak k_R$.** This is exactly the $\mathfrak k_R$ of the earlier section — **the commutant theorem and the real $\mathfrak{so}(4)$ are the same structure seen from two sides.** A ceiling of dimension three forces the tensor product:
 
 $$
 (\text{internal }\mathbf 4)\otimes(\text{spinor}),

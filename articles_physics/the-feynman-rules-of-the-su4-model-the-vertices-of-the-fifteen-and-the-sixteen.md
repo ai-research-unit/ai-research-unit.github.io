@@ -19,7 +19,7 @@
 
 **The quartet index runs over $(t,x,y,z)$**, and the three colour lines are $x,y,z$ under the names $r,g,b$ used in [the fermion classification](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). **The two namings are one convention**, and this article writes $x,y,z$ when it reads an array and $r,g,b$ when it names a particle.
 
-**The generators are anti-Hermitian and traceless, and the arrays are read by columns.** The printed matrices are the $G_{a}$ of [the construction article](construction-of-the-axf-matrices-of-the-fifteen-generators.html); a matrix unit $E_{\imath\jmath}$ has a $1$ in row $\imath$, column $\jmath$. **The physics generator is $T_{a}=iG_{a}$ up to normalisation**, because the anti-Hermitian convention puts the $i$ on the generator and not on the coupling.
+**The generators are anti-Hermitian and traceless, and the arrays are read by columns.** The printed matrices are the $G_{a}$ of [the construction article](construction-of-the-axf-matrices-of-the-fifteen-generators.html); a matrix unit $E_{\imath\jmath}$ has a $1$ in row $\imath$, column $\jmath$. **The generators the rules are written in are Hermitian**, $t_{a}=iG_{a}/\sqrt{2n_{a}}$ with $n_{a}=\operatorname{tr}(G_{a}^{\dagger}G_{a})$ equal to $2$ for the thirteen planes and diagonals and $12$ for the corner, the colour diagonal $c_{3}=d_{2}-d_{3}$ being taken at its own norm $6$, so that $t_{a}^{\dagger}=t_{a}$ and $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$; [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) fixes that passage once. **The printed arrays carry the anti-Hermitian convention and the $i$ that makes them Hermitian is one step, the trace-norm rescaling the other, and a vertex read off a printed array without both is wrong by the product.**
 
 **The bookkeeping of the sixteen.** The four Weyl fields of the quartet are $\xi_{i}$ with $i\in\{t,r,g,b\}$, the four of the conjugate quartet are $\bar\xi^{i}$, and each comes in two copies labelled by an index the model does not gauge. **Sixteen fields, thirty-two states, and the copy index is a degeneracy and not a charge.**
 
@@ -28,7 +28,7 @@
 **One covariant derivative covers all fifteen fields.**
 
 $$
-D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}T_{a} .
+D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}t_{a} .
 $$
 
 **One sum, fifteen fields, one coupling.** The index $a$ is a name and not a frame slot. **The three sums and three couplings of the left–right frame are gone, and nothing is missing**: the factors they multiplied are not in this group.
@@ -143,7 +143,7 @@ $$
 \Gamma_{abc}^{\imath\jmath\ell}(k_{1},k_{2},k_{3})=g_{4}f_{abc}\bigl[(k_{1}-k_{2})^{\ell}g^{\imath\jmath}+(k_{2}-k_{3})^{\imath}g^{\jmath\ell}+(k_{3}-k_{1})^{\jmath}g^{\ell\imath}\bigr].
 $$
 
-**The count is exact.** Of the $\binom{15}{2}=105$ pairs, **$80$ have a nonzero bracket**, and of these brackets **$29$ distinct ordered triples are nonzero**. So the three-gauge vertex has $29$ nonzero $f_{abc}$ up to permutation, and the rest vanish identically.
+**The count is exact, and the number of triples depends on the basis the brackets are read in.** Of the $\binom{15}{2}=105$ pairs, **$80$ have a nonzero bracket in either basis**. The number of distinct index triples is **$31$ in the printed basis and $29$ once $d_{2},d_{3}$ are rotated to $c_{2},c_{3}$**, because the rotation mixes the two colour diagonals and lets two triples that were separate stand on one. **The rules are written in the orthonormal basis, so the vertex runs over $29$ triples**; the six brackets tabulated below are printed-basis values, and that is why $31$ is the number to expect from them.
 
 **Six brackets, computed and printed.**
 
@@ -166,7 +166,7 @@ $$
 
 **The ghost–gauge vertex is $g_{4}f_{abc}k_{\imath}$**, with the momentum on the outgoing ghost. **The count of nonzero vertices is again $29$ triples**, and the vanishing ones vanish for the same reason.
 
-**The scalar vertices come from the kinetic term and the potential, and the model fixes neither coupling.** The gauge–scalar two-point vertex is the mass matrix restricted to the six eaten directions; the three-point vertex is $-2ig_{4}$ times $\operatorname{tr}(\partial_{\imath}Ξ[t_{a},Ξ])$, **with the $2$ from the commutator's two orderings and the $i$ from the covariant derivative** — a vertex quoted as $g_4$ times the commutator is off by that factor. **The potential $V(Ξ)$ is written with a mass and two quartics, and the model predicts none of them**: $v$ is a ratio of the three, and the radial mass is the second derivative of $V$ along the condensate (*The Primordial Potential*).
+**The scalar vertices come from the kinetic term and the potential, and the model fixes neither coupling.** The gauge–scalar two-point vertex is the mass matrix restricted to the six eaten directions; the three-point vertex is $-2ig_{4}$ times $\operatorname{tr}(\partial_{\imath}Ξ[t_{a},Ξ])$, **with the $2$ from the commutator's two orderings and the $i$ from the covariant derivative** — a vertex quoted as $g_4$ times the commutator is off by that factor. **The potential $V(Ξ)$ is written with two quadratics and four quartics, and the model predicts none of them**: $v$ is a ratio of coefficients, and the radial mass is the second derivative of $V$ along the condensate (*The Primordial Potential*). **The two quadratics that carry the trace shift no vector mass**, because the identity commutes with all fifteen generators.
 
 **The eaten six and the surviving ten.** Six components of $Ξ$ become the longitudinal polarisations of the sextet; **the remaining ten are physical here**, one radial mode and nine orthogonal to the vacuum. **An eaten component has no propagator of its own**, and a table that lists sixteen scalar propagators is listing six that do not exist.
 
@@ -193,9 +193,9 @@ $$
 | orthogonal basis | $c_{2}=d_{2}+d_{3}$, $c_{3}=d_{2}-d_{3}$ | norms $2$, $6$ |
 | corner rescaling | $2/\sqrt{24}=1/\sqrt6$ | $0.408$ |
 | spectrum | $15=9+6$ | nine at $0$, six at $32v^{2}$ |
-| stabiliser | $[D,T_{a}]=0$ on the nine | $9$ |
+| stabiliser | $[D,t_{a}]=0$ on the nine | $9$ |
 | nonzero brackets | of $105$ pairs | $80$ |
-| nonzero three-gauge triples | antisymmetric $f_{abc}$ | $29$ |
+| nonzero three-gauge triples | antisymmetric $f_{abc}$, orthonormal basis | $29$ ($31$ printed) |
 | ghost count | one per generator | $15$ |
 | eaten scalars | $\dim$ coset $=15-9$ | $6$ |
 
@@ -212,8 +212,7 @@ $$
 | symbol | meaning |
 | --- | --- |
 | $G_{a}$, $a=1\dots15$ | the printed anti-Hermitian arrays |
-| $T_{a}=iG_{a}$ up to normalisation | the physics generator |
-| $t_{a}$ | the generator rescaled to $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ |
+| $t_{a}$ | the generator made Hermitian and rescaled, $t_{a}=iG_{a}/\sqrt{2\operatorname{tr}(G_{a}^{\dagger}G_{a})}$, so $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ |
 | $A_{a,\imath}$ | the fifteen gauge fields |
 | $\xi_{i}$, $\bar\xi^{i}$ | the quartet and conjugate-quartet Weyl fields, two copies each |
 | $Ξ$ | the Hermitian $4\times4$ scalar, sixteen real components |

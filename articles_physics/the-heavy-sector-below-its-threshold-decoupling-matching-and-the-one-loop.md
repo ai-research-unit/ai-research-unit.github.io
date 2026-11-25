@@ -30,7 +30,7 @@ $$
 
 **1.2 The truncation.** At energies far below $M$, a field of mass $M$ cannot be produced, so it is removed from the list of dynamical fields. This is approximate: the removal changes the predictions by terms of order $E^{2}/M^{2}$, and the expansion in those terms is the effective Lagrangian.
 
-**1.3 The confusion.** "Below $M_C$ the group is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$" is exact. "Below $M_C$ the $W_R$ does not exist" is shorthand for "the $W_R$ is not a dynamical field of the truncated description". The first is a statement about the vacuum; the second about the description. Merging them produces the false claim that the breaking is approximate.
+**1.3 The confusion.** "Below $M_C$ the group is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$" is exact. "Below $M_C$ a leptoquark does not exist" is shorthand for "the leptoquark is not a dynamical field of the truncated description". The first is a statement about the vacuum; the second about the description. Merging them produces the false claim that the breaking is approximate.
 
 **1.4 Why the distinction has teeth.** If breaking were an approximation, the low-energy theory would be a fit with the breaking scale as a parameter. It is not: the low-energy group is fixed by the vacuum, and the only free parameters are the two scales and the couplings.
 
@@ -40,7 +40,7 @@ $$
 
 **2.1 The statement.** Take a renormalisable theory with a heavy field of mass $M$ and a light sector. At energies $E\ll M$ every Green's function of light fields is reproduced, to any fixed order in $E/M$, by a local Lagrangian built from light fields only, with coefficients that depend on $M$ and on the heavy couplings.
 
-**2.2 The form.** The coefficients are $c_n/M^{n-4}$ for an operator of dimension $n$. Dimension six gives $1/M^{2}$: the four-fermion terms left by the leptoquarks, and the $W_R$ exchange. Dimension five gives $1/M$: the Majorana mass of the neutrino, from the right doublet's vacuum at $M_C$.
+**2.2 The form.** The coefficients are $c_n/M^{n-4}$ for an operator of dimension $n$. Dimension six gives $1/M^{2}$: the four-fermion terms left by the leptoquarks. Dimension five gives $1/M$: the Majorana mass of the neutrino, from the right doublet's vacuum at $M_C$.
 
 **2.3 The caveat.** Decoupling as stated requires that the heavy mass comes from a vacuum and not from a hierarchy of couplings. Here it does: every heavy mass is a coupling times a vacuum value. A theory whose heavy mass came from a small coupling at a high scale would not decouple in this form, and that is the trap the phrase "the heavy fields decouple" hides.
 
@@ -52,12 +52,12 @@ $$
 
 | threshold | what leaves | what remains of it | status of the removal |
 |---|---|---|---|
-| $M_C$ | six leptoquarks, the coloured components of $Ξ$; $W^{\pm}_{R}$, $Z_R$, the right doublet's surviving scalar, $\nu_R$'s Majorana mass | four-fermion operators with $\Delta B=\Delta L=\pm1$; the dimension-five operator for neutrino mass; the $1/M_C^{2}$ corrections to $W$ couplings | one breaking at one scale, truncated effects |
+| $M_C$ | six leptoquarks, the coloured components of $Ξ$; $\nu_R$'s Majorana mass | four-fermion operators with $\Delta B=\Delta L=\pm1$; the dimension-five operator for neutrino mass; the $1/M_C^{2}$ corrections to $W$ couplings | one breaking at one scale, truncated effects |
 | $M_W$ | $W^{\pm}$, $Z$, the top, the Higgses | the four-fermion charged-current and neutral-current operators of the Fermi theory | exact breaking, slowly converging truncation |
 
-**3.1 The transition.** The leptoquarks leave and their exchange becomes contact interactions. The same vacuum removes $W_R$ and $Z_R$, and the neutrino's Majorana mass becomes a dimension-five operator — the seesaw. The bound on $M_C$ is the bound on those coefficients, and the diquark channel is the one that would give proton decay — with a suppression that makes it harmless, as [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) shows.
+**3.1 The transition.** The leptoquarks leave and their exchange becomes contact interactions. The same vacuum removes the six leptoquarks, and the neutrino's Majorana mass becomes a dimension-five operator — the seesaw. The bound on $M_C$ is the bound on those coefficients, and the diquark channel is the one that would give proton decay — with a suppression that makes it harmless, as [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) shows.
 
-**3.2 Why one removal and not two.** The right-handed bosons and the Majorana mass leave at $M_C$ and not at a scale of their own, because the field that gives them their mass is the field that breaks the colour. **A reader who expects two removals will look for a second threshold that the content does not have.**
+**3.2 Why one removal and not two.** The leptoquarks and the Majorana mass leave at $M_C$ and not at a scale of their own, because the vacuum that gives them their mass is the vacuum that breaks the colour. **A reader who expects two removals will look for a second threshold that the content does not have.**
 
 **3.3 The electroweak threshold.** The bosons leave and the theory becomes Fermi's. The removal is the most familiar and the least clean, because the top is close in mass.
 
@@ -115,7 +115,7 @@ with $n_f$ and $n_s$ the number of Dirac fermions and real scalars in the repres
 
 **One statement, no numbers.** The numbers are elsewhere by design.
 
-**6.1 The failure.** With the minimal content — one $(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$, one right doublet and one left doublet — the running from $M_C$ down to $M_W$ does not reproduce the measured $\sin^{2}\theta_W$ and the measured $\alpha_s$ simultaneously. The size and the sign are computed in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html).
+**6.1 The failure.** With the minimal content — one $(\mathbf{15}\oplus\mathbf1)$ and the Standard Model fermions — the running from $M_C$ down to $M_W$ does not reproduce the measured $\sin^{2}\theta_W$ and the measured $\alpha_s$ simultaneously. The size and the sign are computed in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html).
 
 **6.2 Why the minimal content is the hardest case.** It has the fewest fields above $M_W$ and the fewest thresholds, so it has the least freedom to bend the slopes. Adding content adds freedom and also adds constraints, because every new field changes both $\alpha_s$ and $\sin^{2}\theta_W$.
 
@@ -151,7 +151,7 @@ with $n_f$ and $n_s$ the number of Dirac fermions and real scalars in the repres
 
 **Decoupling.** Removed fields become local operators of dimension five (the right vacuum) and six (the sextet), both at $M_C$.
 
-**Two thresholds.** $M_C$: the leptoquarks, $W_R$, $Z_R$, the Majorana mass. $M_W$: $W$, $Z$, the top.
+**Two thresholds.** $M_C$: the leptoquarks, the Majorana mass. $M_W$: $W$, $Z$, the top.
 
 **Matching.** Tree level equalities; one-loop finite shifts; logarithms cancel.
 

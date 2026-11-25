@@ -12,8 +12,7 @@ $$
 \boxed{\;
 \mathfrak m=\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3},\qquad
 Q=\pm\tfrac23,\qquad
-M_X^{2}=\tfrac12\,g_4^{2}\,v_C^{2},\qquad
-\frac{M_X}{M_{W_R}}=\sqrt2\,\frac{g_4}{g_R} ;
+M_X^{2}=16\,g_4^{2}\,v_C^{2} ;
 \;}
 $$
 
@@ -26,6 +25,8 @@ M_X\gtrsim4.0\times10^{-5}\ \mathrm{J}=2.5\times10^{2}\ \mathrm{TeV}
 $$
 
 **So the six are not destroyed by the transition — they are made heavy by it, and heavy in a way that a flavour-changing decay forbids them to escape.** The phrase *integrated out* is precise: **absent from the asymptotic spectrum, present in the theory, and bounded from below.**
+
+**And before the transition the six are massless.** This is stated in the introduction because it is the fact a reader is most likely to get wrong, and it is not a convention or an approximation: above $M_C$ there is no condensate, so the sextet's mass is exactly zero, and an unbroken gauge symmetry keeps it zero to every order in perturbation theory. **The mass $M_X$ below is created by the breaking and does not exist before it**, so "the leptoquarks are heavy" is a statement about the phase this article is about, not about $\mathrm{SU}(4)$.
 
 **What this article establishes.** The sextet's quantum numbers and its fate; its mass as a function of the one vacuum it eats; the bound that fixes the scale of the transition at two hundred and fifty teraelectronvolts; why proton decay does not bite although $B$ is violated in thirds; and the precise sense in which a state can be integrated out without being removed.
 
@@ -91,18 +92,10 @@ $$
 **From the vacuum.** The transition is done by a scalar acquiring a value along its unit-line component, and the six eat six real components of it. The mass is one half, one coupling squared, one vacuum squared:
 
 $$
-M_X^{2}=\tfrac12\,g_4^{2}\,v_C^{2}.
+M_X^{2}=16\,g_4^{2}\,v_C^{2}.
 $$
 
-**Compare with the right-handed weak boson.** The same vacuum breaks the right sector through a doublet, and a doublet gives a quarter:
-
-$$
-M_{W_R}^{2}=\tfrac14\,g_R^{2}\,v_C^{2}
-\qquad\Longrightarrow\qquad
-\frac{M_X}{M_{W_R}}=\sqrt2\;\frac{g_4}{g_R}.
-$$
-
-**The $\sqrt2$ is the group's and not a fit.** Half against a quarter: the quarter from the $\mathrm{SU}(2)$ normalisation of a doublet, the half from the leptoquark generator's own normalisation. **A bound on one mass is a bound on the other, up to one coupling ratio.**
+**One mass, one vacuum, one coupling.** No second particle sits between the condensate and the sextet: **the bound on $M_X$ is a bound on $M_C$, and nothing else enters.**
 
 **Three things the relation is not.** It is not a group identity — a $(\mathbf{15},\mathbf2,\mathbf2)$ with a vacuum expectation value splits the six among themselves. It is not exact — $g_4/g_R$ is a free ratio. And it is not a prediction of a number: **it converts one unknown into another and then hands the pair to experiment.**
 
@@ -182,7 +175,8 @@ $$
 | the decomposition | $\mathbf4\to\mathbf3\oplus\mathbf1$ | $\mathfrak m=\mathbf3\oplus\bar{\mathbf3}$, $\dim 6$ |
 | the $B-L$ value | $(-1)-(+\tfrac13)$ | $\pm\tfrac43$ |
 | the charge | $\tfrac12(\pm\tfrac43)$ | $\pm\tfrac23$ |
-| the mass | half against a doublet's quarter | $M_X/M_{W_R}=\sqrt2\,g_4/g_R$ |
+| the mass | $(\Delta d)^{2}=(1-(-3))^{2}$, times the $\tfrac12M^{2}A^{2}$ factor | $M_X^{2}=16g_4^{2}v_C^{2}$ |
+| the mass above $M_C$ | no vacuum, unbroken symmetry | $0$, exact to every order |
 | the flavour bound | $3.69\times10^{-5}$ J, rounded | $2.5\times10^{2}$ TeV |
 | the proton's dimension | three vertices, $\Delta B=\tfrac13$ each | $9$, rate $\propto M^{-10}$ |
 | the diquark's absence | $\pm\tfrac43$ against a $qq$ pair's $+\tfrac23$ | no coupling in the fifteen |
@@ -204,11 +198,11 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 
 ## Summary
 
-**Identity.** $\mathfrak m=\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$: six states, $Q=\pm\tfrac23$, colour triplet or antitriplet, $B-L=\pm\tfrac43$. Forced by the gauged fourth colour, and the only coloured massive vectors in the theory.
+**Identity.** $\mathfrak m=\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$: six states, $Q=\pm\tfrac23$, colour triplet or antitriplet, $B-L=\pm\tfrac43$. Forced by the gauged fourth colour, and the only coloured massive vectors in the theory — massive below $M_C$.
 
-**Fate.** Eaten at the transition, heavy above it. Two registers of one event, not two claims.
+**Fate.** Massless above $M_C$, eaten at the transition, heavy below it. Two registers of one event, not two claims.
 
-**Mass.** $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$, hence $M_X/M_{W_R}=\sqrt2\,g_4/g_R$; the $\sqrt2$ is the group's, the ratio is free, and a $(\mathbf{15},\mathbf2,\mathbf2)$ would split the six among themselves.
+**Mass.** $M_X^{2}=16g_4^{2}v_C^{2}$ with $Ξ_0=v_CD$; the $16$ is $(\Delta d)^{2}=(1-(-3))^{2}$ and not a fit, and there is no second heavy mass in the minimal content to compare it with.
 
 **Bound.** $K_L\to\mu e$ at tree level gives $M_X\gtrsim250$ TeV; proton decay is dimension nine and does not bite, unless a $(\mathbf6,\mathbf1,\mathbf1)$ is added, which would push the bound to $10^{12}$ TeV and make the sextet unseeable.
 
@@ -220,10 +214,9 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 | --- | --- |
 | $\mathfrak m$ | the sextet, the off-diagonal block of the fifteen |
 | $X,\bar X$ | a leptoquark and its conjugate, $Q=\pm\tfrac23$ |
-| $M_X$ | the leptoquark mass, $g_4 v_C/\sqrt2$ |
-| $M_{W_R}$ | the right-handed weak boson mass, $\tfrac12 g_R v_C$ |
+| $M_X$ | the leptoquark mass, $4g_4 v_C$ |
 | $v_C$ | the magnitude of the transition's condensate |
-| $g_4,g_R$ | the primordial and right-weak couplings |
+| $g_4$ | the primordial coupling |
 | $\mathcal O^{(6)}$ | a dimension-six local operator produced by integrating the sextet out |
 | $M_\Sigma$ | the mass of a hypothetical $(\mathbf6,\mathbf1,\mathbf1)$ diquark scalar |
 

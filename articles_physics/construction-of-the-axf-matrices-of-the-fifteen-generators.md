@@ -10,11 +10,9 @@
 $$
 \underbrace{16}_{4\times4}-\underbrace{1}_{\text{the trace}}=15,
 \qquad
-\underbrace{6}_{\text{pairs}}\times2+\underbrace{3}_{\text{diagonals}}=15,
-\qquad
-\underbrace{21}_{\text{printed arrays}}-\underbrace{6}_{\text{the six of }\mathfrak{so}(4)}=15\ \text{directions}.
+\underbrace{6}_{\text{pairs}}\times2+\underbrace{3}_{\text{diagonals}}=15 .
 $$
-**Six composites beside fifteen generators is not a contradiction**, and it is why the article prints the six $\mathfrak{so}(4)$ arrays beside them: **the six extra are a second basis of a six-dimensional subspace, and §*The Fifteen, Counted* proves it with a rank.**
+**Six composites beside fifteen generators is not a contradiction**, and it is why the article prints the six half-arrays beside them: **the six are a second basis of a six-dimensional subspace, and §*The Fifteen, Counted* proves it with a rank.**
 
 **The frame.** The axis-free frame of [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html). The array of an operator is read by columns, the $j$-th column being the product with the $j$-th unit:
 $$
@@ -355,7 +353,7 @@ with $\operatorname{tr}(T^{L}_{a}T^{L}_{b})=-\delta_{ab}$ and $\operatorname{tr}
 | block | cells | arrays | bosons |
 | --- | --- | --- | --- |
 | the $t$ row and column, off the corner | $6$ | $A_{ta}$, $iS_{ta}$ | the leptoquark sextet $X^{a}$, $\bar X^{a}$ |
-| the $3\times3$ colour block, off the diagonal | $6$ | $A_{bc}$, $iS_{bc}$ | six gluons, two per plane |
+| the $3\times3$ colour block, off the diagonal | $6$ | $A_{bc}$, $iS_{bc}$ | six colour–colour arrays: the off-diagonal gluons below $M_C$ |
 | the colour diagonal | $3$ cells, $2$ generators | $d_2,d_3$ | $T^{c}_{3}$, $T^{c}_{8}$ |
 | the corner | $1$ | $iD$ | $B'$, the $B-L$ boson |
 | not on the grid | — | $T^{L}_{a}$ | no particle: half heavy, half massless |
@@ -368,7 +366,7 @@ $$
 \underbrace{6}_{\text{mixed cells}}+\underbrace{9}_{3\times3}+\underbrace{1}_{(t,t)}=16 .
 $$
 
-**One array per generator, one boson per array.** The identification, with the cells each array moves and the mass each boson gets at tree level.
+**One array per generator, one boson per array.** The identification, with the cells each array moves and the mass each boson gets at tree level. **The names *gluon* and *leptoquark* in the last column are the broken phase's**, and [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html)'s §*The Names, and Which Phase They Belong To* says exactly what each is on deposit for: above $M_C$ no $\mathrm{SU}(3)$ is gauged, and the eight are named by the lines they connect.
 
 | array | the cells it moves | the boson | mass |
 | --- | --- | --- | --- |

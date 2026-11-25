@@ -25,6 +25,18 @@ $$
 \;}
 $$
 
+**That box is the spectrum *below* $M_C$, and the article states the phase above it before using either.** In the unbroken phase every one of the fifteen vectors is massless, the six leptoquarks among them; the six are not born heavy, they are made heavy. In one line, and this is the sentence a reader should carry away:
+
+$$
+\boxed{\;
+\text{above }M_C:\ 15\ \text{massless vectors, the sextet included};
+\qquad
+\text{below }M_C:\ 9\ \text{massless}+6\ \text{at }32v^{2} .
+\;}
+$$
+
+**The zero above $M_C$ is exact and not a truncation.** With no condensate there is no direction for the mass form $M^{2}=2v^{2}\bigl[D,[D,\cdot\,]\bigr]$ to act on, so it is the zero operator on all fifteen; and an unbroken gauge symmetry forbids a vector mass at every order, so no loop restores one. **A reader who quotes "nine massless" for the $\mathrm{SU}(4)$ phase has quoted the broken phase's number**, and §*The Sextet, Which Is the Six Cells of the Mixed Band* gives the transition that changes it.
+
 **The model.** One model: **the $\mathrm{SU}(4)$ model**, set out in [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). **The name is stated first because every name here belongs to that model and to nothing else.** It is not the Standard Model's particle list and not a general classification of everything the algebra could describe: **it is the boson content of one group, on one grid, with one declaration.**
 
 **What is not in this model.** There is no $2\times2$ grid because there is no weak factor, and the neutral mixing that produces the photon needs two more neutral directions and a second vacuum. **The photon, the $Z$, the $W$'s and the $Z_R$ arrive at $M_C$**, and their classification is in the next section of the corpus. **This article classifies fifteen fields and it is complete when it has done so.**
@@ -64,11 +76,11 @@ $$
 \underbrace{6}_{\text{leptoquarks}}+\underbrace{8}_{\text{gluons}}+\underbrace{1}_{B-L}=15 .
 $$
 
-**That display is the whole of the model's decomposition, and it is a picture of $15=8+1+6$.** The three colour planes $\{r,g\},\{r,b\},\{g,b\}$ hold the six off-diagonal gluons, two per plane. **The three mixed planes $\{t,r\},\{t,g\},\{t,b\}$ hold the six leptoquarks, two per plane.** The $3\times3$ colour block's diagonal holds the two Cartan directions of colour, and the $(t,t)$ corner holds the one generator that makes the trace vanish.
+**That display is the whole of the model's decomposition, and it is a picture of $15=8+1+6$.** The three colour planes $\{r,g\},\{r,b\},\{g,b\}$ hold the six off-diagonal gluons, two per plane. **The three mixed planes $\{t,r\},\{t,g\},\{t,b\}$ hold the six leptoquarks, two per plane.** The $3\times3$ colour block's diagonal holds the two Cartan directions of colour, and the $(t,t)$ corner holds the one generator that makes the trace vanish. **Those two names are the broken phase's, and §*The Names, and Which Phase They Belong To* below says exactly what they are on deposit for.**
 
 ## How to Read a Cell
 
-**Rows are *from*, columns are *to*; cell $(i,j)$ moves index $j$ into index $i$.** Each cell carries the symbol of its boson and, beneath it, the name of the particle. **The diagonal cells are special**: they do not move an index, they weight it, and the four of them hold three generators because the trace is removed.
+**Rows are *targets*, columns are *sources*; cell $(i,j)$ moves index $j$ into index $i$.** Each cell carries the symbol of its boson and, beneath it, the name of the particle. **The diagonal cells are special**: they do not move an index, they weight it, and the four of them hold three generators because the trace is removed.
 
 **A cell is a position, not a generator, and not a particle.** The off-diagonal cell $(i,j)$ is half of an array: two cells make one array, and one array makes one particle direction. **The diagonal cells hold no particle of their own**: they hold the basis in which the Cartan is written.
 
@@ -117,11 +129,41 @@ and the vanishing of the trace is the same statement as the four diagonal entrie
 
 **Four diagonal cells, three generators, and the removed one is the definition.** The fourth combination — all four entries equal — is the trace direction $i\mathrm I$, and it is not a generator of $\mathrm{SU}(4)$: it is the direction $\det=1$ removes. **So the grid holds sixteen cells and fifteen generators, and the missing one is not a hole in the picture but the definition of the group.**
 
+## The Names, and Which Phase They Belong To
+
+**Every word in this grid is a name held on deposit, and the article says what each is on deposit for.** The cells are labelled *gluon* and *leptoquark* from the first display onward, and **no $\mathrm{SU}(3)$ is gauged above $M_C$**: the group is one simple factor, $\mathrm{SU}(4)$, and a subalgebra of a simple group is not a factor of the theory. **So above $M_C$ the fifteen have no group to be the gauge bosons of except $\mathrm{SU}(4)$ itself**, and "this gluon carries $r\bar g$" is not yet a statement about a charge.
+
+**What is true above $M_C$, stated only in $\mathrm{SU}(4)$ terms.**
+
+$$
+15=\underbrace{12}_{\text{off-diagonal: each connects two distinct lines}}+\underbrace{3}_{\text{diagonal: each weights the four lines}} ,
+$$
+
+**and the only charge any of the fifteen carries is the adjoint's, the $\mathbf{15}$.** An off-diagonal direction moves one line into another, so it moves two line numbers by $\pm1$ and is charged under the Cartan; **the three diagonal directions commute with one another and therefore carry zero Cartan charge.** That is the whole pre-breaking charge statement, and it is complete: no boson above $M_C$ is a colour triplet, a colour octet, or anything else with an $\mathrm{SU}(3)$ label.
+
+**The eight are nevertheless well defined above $M_C$, and it is by their action rather than by a group.** The eight directions that annihilate the lepton line — the six colour–colour off-diagonals and the two colour diagonals — are a set the algebra hands over before any vacuum forms, **because the lepton line is declared and not chosen by the breaking**. [The Rotors in Detail](the-15-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role.html) takes exactly that set as its definition of colour, and it is available at every scale. **What the breaking adds is the group factor, not the set.**
+
+**What the breaking changes is a partition of a fixed fifteen.**
+
+$$
+15=\underbrace{\mathbf 8_{0}}_{\text{six off-diagonal}+\text{two Cartan}}
+\;\oplus\;
+\underbrace{\mathbf 3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}}_{\text{six off-diagonal}}
+\;\oplus\;
+\underbrace{\mathbf1_{0}}_{(t,t)} .
+$$
+
+**Read the branching together with the grid and the arithmetic is the one worth stating carefully.** Six of the twelve off-diagonal directions are colour–colour and six are mixed; the octet takes the first six plus the two colour diagonals, and the sextet takes the last six. **Nothing is created and nothing is destroyed**: it is the same fifteen, and the transition moves six of them from massless to $32v^{2}$.
+
+**So "six are lost and two are gained" is a true count and a false picture.** True: the octet is $6+2$ rather than eight off-diagonal, and the six mixed directions lie outside it. False in three ways: **the six mixed directions were never in the octet** — they are the mixed band, and they remain directions of the same algebra; **the two diagonals were always two of the fifteen**, and no direction joins anything; **and the count of vectors does not move at all**, fifteen massless above $M_C$ against nine and six below. What does change for the two diagonals is their status: below $M_C$ they are two of the eight gauge bosons of an unbroken factor, and above it they are two Cartan directions of a simple group. **That is a change of what a boson belongs to, and not a change in what exists.**
+
+**And this is why the grid's $r\bar g$ is a cell label and not a charge label.** Cell $(x,y)$ means *moves the $y$ line into the $x$ line*: the entry names two lines, not two charges. **Below $M_C$ the same entry reads as the colour–anticolour of a gluon, and that reading is available only there.**
+
 ## The Sextet, Which Is the Six Cells of the Mixed Band
 
 **Three planes, two cells each, two particles each.**
 
-| plane | the two cells | the two particles | $Q$ | $B-L$ | mass |
+| plane | the two cells | the two particles | $Q$ | $B-L$ | mass below $M_C$ |
 | --- | --- | --- | --- | --- | --- |
 | $\{t,r\}$ | $(t,r)$ and $(r,t)$ | $\bar X^{r}$ and $X^{r}$ | $-\tfrac23$, $+\tfrac23$ | $-\tfrac43$, $+\tfrac43$ | $32v^{2}$ |
 | $\{t,g\}$ | $(t,g)$ and $(g,t)$ | $\bar X^{g}$ and $X^{g}$ | $-\tfrac23$, $+\tfrac23$ | $-\tfrac43$, $+\tfrac43$ | $32v^{2}$ |
@@ -131,7 +173,7 @@ and the vanishing of the trace is the same statement as the four diagonal entrie
 
 **And $\bar X$ is not a different kind of object.** It is the reverse amplitude of the same plane, which is why its mass is the same and its charge is the opposite. **A reader who takes $X$ and $\bar X$ for two species has read a factor of two into the sextet that is not there**: there are six particles because there are three colour planes and two directions each.
 
-**The mass, and where it comes from.** The sextet is massless in the symmetric phase and takes $32v^{2}$ from the transition's condensate, with
+**The mass, and where it comes from.** **In the unbroken phase the mass of the sextet is exactly zero**, and that zero is a property of the phase and not of the particle: with $Ξ=0$ there is no vacuum direction, the mass form is the zero operator, and the gauge symmetry is unbroken, so the zero survives to every order. **The transition is what gives the six a mass**, and it gives all of them the same one:
 
 $$
 32=2\cdot4^{2},
@@ -299,6 +341,8 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 | the gluons | $6$ off-diagonal $+\,2$ Cartan | $8$ |
 | the mass eigenvalue | $2\bigl(-3-1\bigr)^{2}$ | $32$ |
 | the massless count | $8+1$ | $9$ |
+| the sextet's mass above $M_C$ | no vacuum, unbroken symmetry | $0$ |
+| the massless count above $M_C$ | all fifteen | $15$ |
 | the heavy count | $3+3$ | $6$ |
 | the spectrum by particle | $8+1+3+3$ | $15$ |
 | the spectrum by fate | $9+6$ | $15$ |
@@ -309,6 +353,11 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 | the surviving algebra after the transition | $\mathfrak{su}(3)\oplus\mathfrak u(1)$, $8+1$ | $9=\dim$ |
 | the heavy count as the complement | $15-9$ | $6$ |
 | the six $\mathfrak{so}(4)$ arrays on the grid | each half mixed, half colour | no cells |
+| the off-diagonal and diagonal split | $12+3$ | $15$, the same in both phases |
+| the branching below $M_C$ | $\mathbf 8_0\oplus\mathbf 3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}\oplus\mathbf1_0$ | $8+3+3+1=15$ |
+| the octet's composition | six colour–colour $+$ two Cartan | $8$ |
+| the vector count across the transition | $15$ massless, then $9+6$ | $15$, unchanged |
+| the Cartan charge of a diagonal direction | $[H,H']=0$ | $0$ |
 
 **The neutral sector's checks are not here, because the neutral sector is not here.** The mixing of three neutral directions, its rank two and its null direction belong to [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html), which is a statement about the four-factor phase.
 
@@ -320,6 +369,8 @@ A plane is not an array. Three geometric pairs carry six arrays; the sextet is t
 
 A name is not a direction. The six $\mathfrak{so}(4)$ arrays are names on a rotated basis of a six-dimensional subspace, and they have no cells.
 
+A name is not a charge. *Gluon* names a boson of the $\mathrm{SU}(3)$ factor, and that factor is gauged only below $M_C$; above it the same eight are directions of $\mathfrak{su}(4)$, named by the lines they move. **The label $r\bar g$ on a cell is an index statement in both phases and a colour–anticolour statement in one.**
+
 Massless is not unbroken forever. The nine are massless in this model; **$B'$ acquires a mass downstream, and the gluons never do.**
 
 Fifteen, and not twenty-one at this scale. **The four particles $W^{\pm}$, $Z$ and $Z_R$ are not in this model**, and their masslessness here is not a claim of this article.
@@ -330,7 +381,9 @@ Fifteen, and not twenty-one at this scale. **The four particles $W^{\pm}$, $Z$ a
 
 **The corner is forced and that is charge quantisation.** $B-L=\tfrac13\operatorname{diag}(-3,1,1,1)$, with $-3$ equal to minus the colour trace, and the vanishing trace is the same statement.
 
-**The spectrum is nine and six.** Eight gluons and $B'$ massless, six leptoquarks at $32v^{2}$. **Two zeros with one reason**: the symmetric phase has fifteen massless fields and the transition gives mass to exactly six.
+**The spectrum is nine and six below $M_C$, and fifteen and zero above it.** Eight gluons and $B'$ massless, six leptoquarks at $32v^{2}$, once the condensate exists. **Before it, the count is fifteen massless and not nine**, the six leptoquarks included, and **two zeros with one reason**: the symmetric phase has fifteen massless fields and the transition gives mass to exactly six.
+
+**And the names belong to the second phase.** *Gluon* names a boson of an unbroken $\mathrm{SU}(3)$ factor, which exists only below $M_C$; above it the eight are the six colour–colour off-diagonals and the two colour diagonals, named by what they connect and not by a group. **The octet is $6+2$, nothing is created at the transition, and the one thing that changes for the two diagonals is which group they belong to.**
 
 **The photon, the $Z$, the $W$'s and the $Z_R$ are absent, and their absence is the frame.** They need two weak factors, three neutral directions, a second vacuum and a mixing angle — **all of them born at the transition, none of them a cell of this grid.**
 
@@ -347,7 +400,7 @@ Fifteen, and not twenty-one at this scale. **The four particles $W^{\pm}$, $Z$ a
 | $T^{c}_{3}$, $T^{c}_{8}$ | the two colour Cartans |
 | $\mathfrak m$ | the sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$ |
 | $Ξ$ | the fourth-colour scalar, $16$ real components |
-| $32v^{2}$ | the sextet's mass eigenvalue |
+| $32v^{2}$ | the sextet's mass eigenvalue below $M_C$; above $M_C$ the sextet's mass is $0$ |
 
 ## Further Reading
 

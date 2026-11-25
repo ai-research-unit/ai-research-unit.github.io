@@ -12,7 +12,7 @@ V_{1}\supset\frac{9}{4\pi^{2}}\,\lambda_{1}^{2}\,\rho^{4}\ln\frac{\rho^{2}}{\mu^
 \frac{3\lambda^{2}}{16\pi^{2}}\,\rho^{4}\ln\frac{\rho^{2}}{\mu^{2}},
 $$
 
-so the matrix's coefficient is $0.2280\,\lambda_{1}^{2}$ and is **twelve** times a doublet's at equal coupling. **The number comes from a Hessian that is computed here and diagonalised exactly**, because the identity background has enough symmetry for the blocks to separate.
+so the matrix's coefficient is $0.0570\,\lambda_{1}^{2}$ and is **three** times a doublet's at equal coupling. **The number comes from a Hessian that is computed here and diagonalised exactly**, because the identity background has enough symmetry for the blocks to separate.
 
 **Why the coefficient and not the whole potential.** The constant and the $-\tfrac32$ are scheme-dependent; the coefficient of $\rho^{4}\ln\rho^{2}$ is not. **It is the one number in a one-loop effective potential that survives a change of renormalisation scheme**, and it is the number the corpus's other effective-potential articles report.
 
@@ -59,13 +59,13 @@ $$
 
 | block | degeneracy | $m^{2}/\rho^{2}$ at large $\rho$ | at $\lambda_{2}=0$ |
 | --- | --- | --- | --- |
-| the traceless Hermitian $h$ | $15$ | $3\lambda_{1}+4\lambda_{2}$ | $3\lambda_{1}$ |
-| the trace direction | $1$ | $3\lambda_{1}+12\lambda_{2}$ | $3\lambda_{1}$ |
+| the traceless Hermitian $h$ | $15$ | $\tfrac32\lambda_{1}+2\lambda_{2}$ | $\tfrac32\lambda_{1}$ |
+| the trace direction | $1$ | $\tfrac32\lambda_{1}+6\lambda_{2}$ | $\tfrac32\lambda_{1}$ |
 | **total** | $\mathbf{16}$ | | |
 
-**The $15+1=16$ is the check on the decomposition**, and it is the same $15+1$ the representation gives: the traceless block is the adjoint and the trace block is the singlet.
+**The $15+1=16$ is the check on the decomposition**, and it is the same $15+1$ the representation gives: the traceless block is the adjoint and the trace block is the singlet. **The whole calculation below is on the two-quartic slice, $\mu_{2}^{2}=\lambda_{3}=\lambda_{4}=0$**, and the restriction is not cosmetic. **The trace terms make the identity a non-stationary point.** With $Ξ_{0}=\frac{\rho}{2}\mathbb 1$ and $Ξ=\Xi_{0}+\eta$, the trace-channel pieces contribute a linear term in $t=\operatorname{tr}\eta$, $\bigl(4\mu_{2}^{2}\rho+8\lambda_{3}\rho^{3}+32\lambda_{4}\rho^{3}\bigr)t$, which vanishes only for a tuned $\rho$. **So the identity background is the right one exactly when the trace channel is switched off**, which is the slice the table computes; on that slice the $36$ below is exact, and with the trace terms present the coefficient is the same $36$ plus a $t$-dependent piece that this article does not quote. **That gap is named and not hidden**: the trace mode's own contribution to the effective potential is a separate computation, and $\mu_{2}^{2}>0$ makes the true background traceless rather than proportional to $\mathbb 1$.
 
-**Why the trace block and the traceless block differ by $8\lambda_{2}\rho^{2}$.** $\operatorname{tr}Ξ^{2}$ contains $t$ linearly, so the $\lambda_{2}$ term contributes to the trace direction twice over — once through $t^{2}$ and once through the cross term — while the traceless part contributes to it not at all. **A block-diagonal Hessian with unequal blocks is what a two-quartic potential looks like.**
+**Why the trace block and the traceless block differ by $4\lambda_{2}\rho^{2}$.** $\operatorname{tr}Ξ^{2}$ contains $t$ linearly, so the $\lambda_{2}$ term contributes to the trace direction twice over — once through $t^{2}$ and once through the cross term — while the traceless part contributes to it not at all. **A block-diagonal Hessian with unequal blocks is what a two-quartic potential looks like.**
 
 **The phase direction is not among these eigenvalues, and that is correct.** $V$ depends on $Ξ$ only through $\operatorname{tr}Ξ^{2}$, so the curve $\rho\mapsto\frac{\rho}{2}e^{i\theta}\mathbb{1}$ is not a direction in the Hermitian space at all — a Hermitian matrix has no such phase. **The sixteen is closed under the Hessian**, which is the statement that the potential's fluctuations are sixteen and not more.
 
@@ -74,18 +74,18 @@ $$
 **The coefficient of $\rho^{4}\ln(\rho^{2}/\mu^{2})$ is the trace of the squared Hessian over $64\pi^{2}$.**
 
 $$
-\mathcal{C}=\frac{1}{64\pi^{2}}\Bigl[15(3\lambda_{1}+4\lambda_{2})^{2}+(3\lambda_{1}+12\lambda_{2})^{2}\Bigr].
+\mathcal{C}=\frac{1}{64\pi^{2}}\Bigl[15(\tfrac32\lambda_{1}+2\lambda_{2})^{2}+(\tfrac32\lambda_{1}+6\lambda_{2})^{2}\Bigr].
 $$
 
 **Evaluate it.** At $\lambda_{2}=0$ the bracket is
 
 $$
-15\cdot9\lambda_{1}^{2}+9\lambda_{1}^{2}=144\,\lambda_{1}^{2},
+15\cdot\tfrac94\lambda_{1}^{2}+\tfrac94\lambda_{1}^{2}=36\,\lambda_{1}^{2},
 \qquad
-\mathcal{C}=\frac{144\lambda_{1}^{2}}{64\pi^{2}}=\frac{9\lambda_{1}^{2}}{4\pi^{2}}=0.2280\,\lambda_{1}^{2} .
+\mathcal{C}=\frac{36\lambda_{1}^{2}}{64\pi^{2}}=\frac{9\lambda_{1}^{2}}{16\pi^{2}}=0.0570\,\lambda_{1}^{2} .
 $$
 
-**Two checks on $144$.** It is $15\cdot9+1\cdot9$, that is fifteen traceless modes and one trace mode, **all at the same mass** $3\lambda_{1}\rho^{2}$ when $\lambda_{2}=0$. And $144=16\cdot9$, so the coefficient is $9/(4\pi^{2})$ per the canonical $\frac{1}{64\pi^{2}}\times 144$.
+**Two checks on $36$.** It is $15\cdot\tfrac94+1\cdot\tfrac94$, that is fifteen traceless modes and one trace mode, **all at the same mass** $\tfrac32\lambda_{1}\rho^{2}$ when $\lambda_{2}=0$. And $36=16\cdot\tfrac94$, so the coefficient is $9/(16\pi^{2})$ per the canonical $\frac{1}{64\pi^{2}}\times 36$.
 
 **The sign is positive and the sign is a conclusion.** $\mathcal{C}>0$ for $\lambda_{1}>0$, so the one-loop term raises the potential at large field and cannot destabilise it from above; the only place it can act against the tree term is where $\ln(\rho^{2}/\mu^{2})<0$, that is $\rho<\mu$.
 
@@ -98,11 +98,11 @@ $$
 | real components | $4$ | $16$ |
 | the background | $\frac{1}{\sqrt2}(0,\rho)$ | $\frac{\rho}{2}\mathbb{1}$ |
 | the tree quartic | $\tfrac{\lambda}{4}\rho^{4}$ | $\tfrac{\lambda_{1}}{4}\rho^{4}$ |
-| $\sum m^{4}/\rho^{4}$ | $12\lambda^{2}$ | $144\lambda_{1}^{2}$ |
-| the coefficient | $\dfrac{3\lambda^{2}}{16\pi^{2}}=0.0190\lambda^{2}$ | $\dfrac{9\lambda_{1}^{2}}{4\pi^{2}}=0.2280\lambda_{1}^{2}$ |
-| the ratio | $1$ | $\mathbf{12}$ |
+| $\sum m^{4}/\rho^{4}$ | $12\lambda^{2}$ | $36\lambda_{1}^{2}$ |
+| the coefficient | $\dfrac{3\lambda^{2}}{16\pi^{2}}=0.0190\lambda^{2}$ | $\dfrac{9\lambda_{1}^{2}}{16\pi^{2}}=0.0570\lambda_{1}^{2}$ |
+| the ratio | $1$ | $\mathbf{3}$ |
 
-**The ratio is twelve, not sixteen, and the difference is worth one sentence.** Sixteen components against four would give a factor of four if all masses were equal; the matrix's masses are all equal to $3\lambda_{1}\rho^{2}$ at $\lambda_{2}=0$ while the doublet's are $3\lambda\rho^{2}$ once and $\lambda\rho^{2}$ three times, so the ratio is $144/12=12$. **The factor is the product of the count and the group's arithmetic**, and neither alone gives it.
+**The ratio is three, not four, and the difference is worth one sentence.** Sixteen components against four would give a factor of four if all masses were equal; the matrix's masses are all equal to $\tfrac32\lambda_{1}\rho^{2}$ at $\lambda_{2}=0$ while the doublet's are $3\lambda\rho^{2}$ once and $\lambda\rho^{2}$ three times, so the ratio is $36/12=3$. **The matrix has four times the components and each is half as heavy in $m^{2}$, and the two effects do not cancel**: the doublet's heavier radial mode carries most of its $\sum m^{4}$.
 
 **The doublet's row is a check and not an import.** Its Hessian at $\frac{1}{\sqrt2}(0,\rho)$ has one eigenvalue $3\lambda\rho^{2}$ and three at $\lambda\rho^{2}$, so $\sum m^{4}=12\lambda^{2}\rho^{4}$ and the coefficient is $\frac{12}{64\pi^{2}}=\frac{3}{16\pi^{2}}$. **The method is the same method**, which is what makes the comparison a comparison.
 
@@ -113,20 +113,20 @@ $$
 $$
 V_{0}\simeq\frac{\lambda_{1}}{4}\rho^{4},
 \qquad
-V_{1}\simeq\frac{9\lambda_{1}^{2}}{4\pi^{2}}\rho^{4}\ln\frac{\rho^{2}}{\mu^{2}},
+V_{1}\simeq\frac{9\lambda_{1}^{2}}{16\pi^{2}}\rho^{4}\ln\frac{\rho^{2}}{\mu^{2}},
 \qquad
-\frac{V_{1}}{V_{0}}=\frac{9\lambda_{1}}{\pi^{2}}\ln\frac{\rho^{2}}{\mu^{2}} .
+\frac{V_{1}}{V_{0}}=\frac{9\lambda_{1}}{4\pi^{2}}\ln\frac{\rho^{2}}{\mu^{2}} .
 $$
 
 **Setting the ratio to one at $\lambda_{1}=1$**,
 
 $$
-\ln\frac{\rho^{2}}{\mu^{2}}=\frac{\pi^{2}}{9}=1.097 ,
+\ln\frac{\rho^{2}}{\mu^{2}}=\frac{4\pi^{2}}{9}=4.386 ,
 \qquad
-\rho=1.73\,\mu .
+\rho=8.96\,\mu .
 $$
 
-**So the one-loop term is smaller than the tree term only for $\rho\lesssim1.7\mu$, and larger beyond it.** That is not a failure of the potential; it is the statement that a one-loop calculation about a background far from the renormalisation scale is not a calculation. **The symmetric phase's neighbourhood, $\rho\ll\mu$, is exactly where the expansion is good.**
+**So the one-loop term is smaller than the tree term only for $\rho\lesssim9\mu$, and larger beyond it.** That is not a failure of the potential; it is the statement that a one-loop calculation about a background far from the renormalisation scale is not a calculation. **The symmetric phase's neighbourhood, $\rho\ll\mu$, is exactly where the expansion is good.**
 
 **The corollary is the article's honesty.** The coefficient is a number; using it to decide the fate of the symmetric minimum at $\rho\sim v_C$ would be an extrapolation of a one-loop result by many orders of magnitude in field. **What the coefficient legitimately does is establish the sign and the size**, and what it does not do is predict $v_C$.
 
@@ -145,21 +145,21 @@ $$
 | --- | --- | --- |
 | the block dimensions | $15+1$ | $16$ |
 | the total modes | the components of a Hermitian $4\times4$ | $16$ |
-| the trace block's mass | differentiating $\bigl(\operatorname{tr}Ξ^{2}\bigr)^{2}$ twice | $3\lambda_{1}+12\lambda_{2}$ |
-| the traceless block's mass | the same, with $t=0$ | $3\lambda_{1}+4\lambda_{2}$ |
-| $\sum m^{4}/\rho^{4}$ at $\lambda_{2}=0$ | $15\cdot9+1\cdot9$ | $144$ |
-| the coefficient at $\lambda_{2}=0$ | $\frac{144}{64\pi^{2}}$ | $\frac{9}{4\pi^{2}}=0.2280$ |
+| the trace block's mass | differentiating $\bigl(\operatorname{tr}Ξ^{2}\bigr)^{2}$ twice | $\tfrac32\lambda_{1}+6\lambda_{2}$ |
+| the traceless block's mass | the same, with $t=0$ | $\tfrac32\lambda_{1}+2\lambda_{2}$ |
+| $\sum m^{4}/\rho^{4}$ at $\lambda_{2}=0$ | $15\cdot\tfrac94+1\cdot\tfrac94$ | $36$ |
+| the coefficient at $\lambda_{2}=0$ | $\frac{36}{64\pi^{2}}$ | $\frac{9}{16\pi^{2}}=0.0570$ |
 | the doublet's coefficient | $\frac{12}{64\pi^{2}}$ | $\frac{3}{16\pi^{2}}=0.0190$ |
-| the ratio | $144\div12$ | $12$ |
-| the crossover field | $\frac{\pi^{2}}{9}=1.097$ in $\ln(\rho^{2}/\mu^{2})$ | $\rho=1.73\mu$ |
+| the ratio | $36\div12$ | $3$ |
+| the crossover field | $\frac{4\pi^{2}}{9}=4.386$ in $\ln(\rho^{2}/\mu^{2})$ | $\rho=8.96\mu$ |
 
 ## Summary
 
-**The coefficient of $\rho^{4}\ln(\rho^{2}/\mu^{2})$ for the Hermitian scalar matrix at $\lambda_{2}=0$ is $\frac{9\lambda_{1}^{2}}{4\pi^{2}}=0.2280\lambda_{1}^{2}$, which is twelve times a doublet's at equal coupling.** It comes from an exactly diagonalised Hessian: fifteen traceless Hermitian modes and one trace mode, all at $3\lambda_{1}\rho^{2}$ when the second quartic vanishes.
+**The coefficient of $\rho^{4}\ln(\rho^{2}/\mu^{2})$ for the Hermitian scalar matrix at $\lambda_{2}=0$ is $\frac{9\lambda_{1}^{2}}{16\pi^{2}}=0.0570\lambda_{1}^{2}$, which is three times a doublet's at equal coupling.** It comes from an exactly diagonalised Hessian: fifteen traceless Hermitian modes and one trace mode, all at $\tfrac32\lambda_{1}\rho^{2}$ when the second quartic vanishes.
 
 **The sign is positive**, so the correction cannot destabilise the symmetric minimum from above, and the only region where it competes with the tree term is $\rho\lesssim1.7\mu$ at $\lambda_{1}=1$ — which is the region where a one-loop calculation is legitimate anyway.
 
-**The comparison with the doublet is the article's useful output.** A claim that the matrix sector is "much bigger" becomes a number: twelve, from sixteen components instead of four and group factors of three and one.
+**The comparison with the doublet is the article's useful output.** A claim that the matrix sector is "bigger" becomes a number: three, from sixteen components instead of four and mass ratios of three halves against three and one.
 
 **And the boundary is stated rather than crossed.** The coefficient is computed at one background direction, at one loop, without resummation, and the phase's actual transition is many orders of magnitude away in field. **The number is a coefficient and not a prediction of $M_C$.**
 
@@ -177,6 +177,6 @@ $$
 ## Further Reading
 
 - [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html). The tree potential this article corrects, and the boundedness cone.
-- [The Lagrangian and the Scalar Matrix](the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-two-quartics.html). The kinetic term whose normalisation makes the sixteen components canonical.
+- [The Lagrangian and the Scalar Matrix](the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html). The kinetic term whose normalisation makes the sixteen components canonical.
 - [The Effective Potential and the One-Loop Correction](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html). The doublet's coefficient, computed by the same method.
 - [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html). Where the count of sixteen comes from.

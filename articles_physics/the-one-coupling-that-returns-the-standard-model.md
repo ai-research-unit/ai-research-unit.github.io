@@ -84,16 +84,10 @@ The number $\tfrac38$ is not a measurement and not a guess. It is the trace norm
 **3.1 Bounded below, unbounded above.** $K_L\to\mu e$ limits the leptoquark mass, and the leptoquark mass is set by the same vacuum that sets $M_X$:
 
 $$
-M_X^2=\tfrac12\,g_4^2\,v_C^2,\qquad M_{W_R}^2=\tfrac14\,g_R^2\,v_C^2,
+M_X^2=16\,g_4^2\,v_C^2 ,
 $$
 
-so that
-
-$$
-\frac{M_X}{M_{W_R}}=\sqrt2\,\frac{g_4}{g_R} .
-$$
-
-The $\sqrt2$ is structural and survives every scale. The factor $g_4/g_R$ is not one in general, and that is where the limitation shows: a ratio that the group fixes at $\sqrt2$ is multiplied by a ratio the vacuum does not fix.
+**one mass and one vacuum, and no second ratio to fix.** The $K_L\to\mu e$ bound is a bound on $M_X$, and $M_X$ is the sextet's mass: **no intermediate particle enters the translation of the bound, and none has to.**
 
 **3.2 The output moves.** Solving the matching equation at a chosen pair of scales gives
 
@@ -276,7 +270,7 @@ The Yukawa sector answers the same question by counting. The one-bidoublet condi
 | $M_{U}$ | the extra scale of the variant, above $M_C$ |
 | $c_2$, $c_4$ | the one-loop coefficients of the two factors, $\tfrac{19}{6}$ and $\tfrac{32}{3}$ |
 | $T^{15}$ | the fifteenth $\mathrm{SU}(4)$ Cartan, the $B-L$ generator |
-| $M_X$ | the leptoquark mass, $\sqrt2\,(g_4/g_R)M_{W_R}$ |
+| $M_X$ | the leptoquark mass, $4g_4v_C$ |
 
 ## Further Reading
 
