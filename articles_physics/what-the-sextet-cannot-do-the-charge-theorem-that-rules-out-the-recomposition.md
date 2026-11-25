@@ -28,7 +28,7 @@ $$
 
 **Not established.** Nothing positive. **This article is the negative half of the migration and it contains no construction**; the construction is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html), and its whole point is that it does not need the sextet.
 
-**Where the rest is.** The sextet's identity and mass are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The rank argument that runs alongside these two closures is [The Two Kinds of Death](the-two-kinds-of-death-a-subgroup-that-leaves-and-an-index-that-arrives.html). The positive construction is the article named above.
+**Where the rest is.** The sextet's identity and mass are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The rank argument that runs alongside these two closures is [The Three Verbs of the Transition](the-three-verbs-of-the-transition-a-subgroup-that-survives-a-complement-that-breaks-and-an-index-that-arrives.html). The positive construction is the article named above.
 
 ## The Charge Theorem
 
@@ -137,7 +137,7 @@ $$
 
 **with the heavy eigenvector $T^{L}_{x}+T^{R}_{x}$ — which is $-A_{tx}$, a leptoquark plane — and the massless one $T^{L}_{x}-T^{R}_{x}$, which is $-A_{yz}$, a colour plane.** **The physical states are the leptoquark and the colour direction; the weak arrays are the $45^\circ$ rotated basis.**
 
-**What a mixing angle needs, and what is missing.** Mass mixing requires degeneracy: $W^{3}$ and $B$ mix into $Z$ and $\gamma$ because both are massless before the breaking. **Here the two halves are split $32v^{2}$ against $0$ — maximally non-degenerate — so there is nothing for them to mix with.** The condensate destroys degeneracy by design, and that is what makes the identities bookkeeping rather than dynamics. **This is the honest sense in which the transition is a death: it removes the degeneracy that a mixing would need.**
+**What a mixing angle needs, and what is missing.** Mass mixing requires degeneracy: $W^{3}$ and $B$ mix into $Z$ and $\gamma$ because both are massless before the breaking. **Here the two halves are split $32v^{2}$ against $0$ — maximally non-degenerate — so there is nothing for them to mix with.** The condensate destroys degeneracy by design, and that is what makes the identities bookkeeping rather than dynamics. **This is the honest sense in which the transition is a breaking: it removes the degeneracy that a mixing would need.**
 
 ## The $45^\circ$, and the Factor $2.16$
 
@@ -264,6 +264,6 @@ Six for six is a coincidence of dimension. It says nothing about charge, spin, c
 
 - [The Sextet Put Aside: Six Leptoquarks Above $M_C$ and Why They Are Not Seen](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The sextet's identity, mass and bound.
 - [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The construction that does not need the sextet.
-- [The Two Kinds of Death: A Subgroup That Leaves and an Index That Arrives](the-two-kinds-of-death-a-subgroup-that-leaves-and-an-index-that-arrives.html). The closure argument that runs beside the charge argument.
-- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). Where $32v^{2}$ and $0$ come from, and the warning about the half in $T^{L}_{x}$.
+- [The Three Verbs of the Transition: A Subgroup That Survives, a Complement That Breaks, and an Index That Arrives](the-three-verbs-of-the-transition-a-subgroup-that-survives-a-complement-that-breaks-and-an-index-that-arrives.html). The closure argument that runs beside the charge argument.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). Where $32v^{2}$ and $0$ come from, and the warning about the half in $T^{L}_{x}$.
 - [The Neutral Sector: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html). Where the electroweak mixing is actually computed.

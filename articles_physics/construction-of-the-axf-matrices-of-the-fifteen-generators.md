@@ -403,7 +403,7 @@ $$
 
 **Read $32$ off the eigenvalues.** $32=2\times4^{2}$, and $4=1-(-3)$ is a colour eigenvalue minus the lepton eigenvalue. **Colour is unbroken because $D$ is a multiple of the identity on the colour triple**, and the corner is untouched because $[iD,D]=0$; the nine zeros are those two facts and nothing else.
 
-**The matrix has its own article.** [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html) derives the matrix from the double commutator, states the commutator lemma that produces it, names the nine-dimensional kernel as $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, and gives the spectrum at a general vacuum.
+**The matrix has its own article.** [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html) derives the matrix from the double commutator, states the commutator lemma that produces it, names the nine-dimensional kernel as $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, and gives the spectrum at a general vacuum.
 
 ### Three Things the Arrays Do Not Do
 
@@ -479,7 +479,7 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 
 - [Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices](../articles_internal/structures/structure-SU4-basis-construction.html). The three steps of Part II in full, with the word table and the theorem on why the physics base is the one a diagonal mass matrix forces.
 - [Two Bases of $\mathfrak{su}(4)$](../articles_internal/structures/structure-SU4-basis-comparison.html). The change of basis between the maths fifteen and the physics fifteen, in both directions, with the composition checked to the identity.
-- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The mass matrix of Part III: the operator, the commutator lemma, the nine-dimensional kernel and the general vacuumma, the nine-dimensional kernel, both bases, and the $8v^{2}$ artefact.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The mass matrix of Part III: the operator, the commutator lemma, the nine-dimensional kernel and the general vacuumma, the nine-dimensional kernel, both bases, and the $8v^{2}$ artefact.
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html). The frame, the signed permutations and the ten properties.
 - [The Twenty-One Generators in the Axis-Free Frame](../articles_internal/the-twenty-one-generators-in-the-axis-free-frame.html). The arrays of $L_{\vec e_a}$ and $R_{\vec e_a}$, their word support and the six relations.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [$M_2(\mathbb{C})$ Defining Representation](../articles_maths/m2c-defining-representation.html). The four-row and two-row frames.

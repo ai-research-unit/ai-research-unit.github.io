@@ -4,7 +4,7 @@
 
 **The layer.** The sextet is the off-diagonal block of the fifteen, so this article is a statement about the complement of a stabiliser in $\mathfrak{su}(4)$ — and about what a heavy coloured vector does to the experiments that could see it.
 
-**The question.** What becomes of the six when the primordial force dies, how heavy are they, and what forbids them from being the weak bosons?
+**The question.** What becomes of the six when the primordial force breaks, how heavy are they, and what forbids them from being the weak bosons?
 
 **The answer.**
 
@@ -29,9 +29,9 @@ $$
 
 **What this article establishes.** The sextet's quantum numbers and its fate; its mass as a function of the one vacuum it eats; the bound that fixes the scale of the transition at two hundred and fifty teraelectronvolts; why proton decay does not bite although $B$ is violated in thirds; and the precise sense in which a state can be *put aside* without being removed.
 
-**Not established.** The bound is a coupling statement and its coefficient is uncertain by a factor of a few. The states have not been seen, which is the weakest kind of failure and the most persistent. **And — the point of the article — nothing here produces a weak boson.** The six cannot: the charge theorem of [the companion article](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html) rules it out, and this article records that the sextet's role is to die and to be heavy, not to give birth.
+**Not established.** The bound is a coupling statement and its coefficient is uncertain by a factor of a few. The states have not been seen, which is the weakest kind of failure and the most persistent. **And — the point of the article — nothing here produces a weak boson.** The six cannot: the charge theorem of [the companion article](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html) rules it out, and this article records that the sextet's role is to break and to be heavy, not to give birth.
 
-**Where the rest is.** The transition that eats them is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). Their mass relation and their bound in full are §*The Mass, and the Ratio That Comes With It* and §*The Bound: Two Hundred and Fifty Teraelectronvolts* below. Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition hands down instead of them is [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html).**
+**Where the rest is.** The transition that eats them is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). Their mass relation and their bound in full are §*The Mass, and the Ratio That Comes With It* and §*The Bound: Two Hundred and Fifty Teraelectronvolts* below. Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition hands down instead of them is [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html).**
 
 ## What "Put Aside" Means, in Three Registers
 
@@ -119,7 +119,7 @@ $$
 | in gigaelectronvolts | $2.5\times10^{5}$ GeV |
 | in teraelectronvolts | $2.5\times10^{2}$ TeV |
 
-**So the transition scale is not free and not low.** Whatever else the model does, **the primordial force cannot die below two hundred and fifty teraelectronvolts**, because a lighter sextet would have been seen in a kaon decay.
+**So the transition scale is not free and not low.** Whatever else the model does, **the primordial force cannot break below two hundred and fifty teraelectronvolts**, because a lighter sextet would have been seen in a kaon decay.
 
 **Why the bound is a statement about a coupling as much as about a mass.** The rate scales as $g_{\text{eff}}^{4}/M_X^{4}$, where $g_{\text{eff}}$ collects the four external mixings. **A smaller mixing buys a smaller mass**, and the corpus is explicit that the coefficient is uncertain by a factor of a few. **The honest reading is $M_X\gtrsim g_{\text{eff}}\times250$ TeV**, with $g_{\text{eff}}$ of order one for a generic generation structure.
 
@@ -161,7 +161,7 @@ $$
 
 **This section exists because the natural next thought is wrong, and it is worth closing before it is opened.**
 
-**The temptation.** Six gauge directions die; the weak pair is six gauge directions; **perhaps the death is a recombination.** The dimensions match, and nothing else does.
+**The temptation.** Six gauge directions break; the weak pair is six gauge directions; **perhaps the breaking is a recombination.** The dimensions match, and nothing else does.
 
 **The charge.** Every member has $Q=\pm\tfrac23$, so any pair sums to $\{0,\pm\tfrac43\}$ and never to $\pm1$. **The explicit channel confirms it**,
 
@@ -229,6 +229,6 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 
 ## Further Reading
 
-- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The transition that eats the six.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The transition that eats the six.
 - [What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The theorem behind *What the Sextet Does Not Do*.
 - [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html). What the transition gives the left–right model instead of a recombination.

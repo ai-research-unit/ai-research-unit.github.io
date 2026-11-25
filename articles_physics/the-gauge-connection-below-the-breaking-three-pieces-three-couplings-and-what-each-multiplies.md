@@ -91,7 +91,7 @@ $$
 
 with $Q=T_{3L}+Y$ and $A$ the photon. The angle here is $\theta_W$.
 
-**2.4 The observation.** In all three lines the heavy field is written in the same bracket as the light one, because both come from the same derivative. The difference between them is not their origin but whether they annihilate the vacuum, and that is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html).
+**2.4 The observation.** In all three lines the heavy field is written in the same bracket as the light one, because both come from the same derivative. The difference between them is not their origin but whether they annihilate the vacuum, and that is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html).
 
 ## What Each Piece Multiplies
 

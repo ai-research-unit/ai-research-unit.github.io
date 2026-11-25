@@ -137,7 +137,7 @@ $$
 32=2\cdot4^{2},
 $$
 
-where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which colour they carry. **The full matrix, its diagonal form and the eigenvalue count are [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html).
+where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which colour they carry. **The full matrix, its diagonal form and the eigenvalue count are [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html).
 
 ## The Spectrum: Fifteen Generators, Fifteen Particles
 
@@ -252,7 +252,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 
 **Six of $\Phi$'s sixteen components are eaten by the sextet.** The condensate is $\langle\Phi\rangle=v\operatorname{diag}(-3,1,1,1)$ in the hermitean matrix, and the six leptoquarks that acquire $32v^{2}$ acquire it by eating the six components that point along their own planes. **The count is forced by the coset**: $15-9=6$, and a condensate in the fundamental would eat seven and leave no $B'$. **An eaten component has no name of its own: it is the third polarisation of the boson that ate it**, which is why the eaten six reappear on the gauge grid and not in the scalar list.
 
-**The other ten components of $\Phi$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the hermitean matrix, and they are the ones the successor's Higgs sector is built from. **[The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html) belongs to the old frame and counts its bidoublets, not this field.** **The corpus's one caveat about this sector is quoted there and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
+**The other ten components of $\Phi$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the hermitean matrix, and they are the ones the successor's Higgs sector is built from. **[The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html) belongs to the old frame and counts its bidoublets, not this field.** **The corpus's one caveat about this sector is quoted there and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
 
 **The word to avoid is "the Higgs coupling".** This model leaves the gauge coupling symbolic and predicts none of it, fixes no scalar multiplet, and has no coupling claim in this sector to patch. **A sentence such as "the minimal sector gives $m_d=m_e$" imports the Pati–Salam literature's condition into a model whose ledger refuses it.**
 
@@ -354,6 +354,6 @@ Fifteen is not twenty-one. **The four extra particles of the old classification 
 - [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The group, the declaration, and the real $\mathfrak{so}(4)$ inside the fifteen.
 - [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html). The vocabulary: cell, pair, array, direction.
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). Every generator printed.
-- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). Where $32v^{2}$ on six planes comes from.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). Where $32v^{2}$ on six planes comes from.
 - [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The six, their bound, and why they are heavy rather than gone.
 - [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). Where the four absent particles come from.

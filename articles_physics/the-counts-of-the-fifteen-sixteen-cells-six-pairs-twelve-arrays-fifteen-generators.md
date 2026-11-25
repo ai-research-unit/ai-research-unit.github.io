@@ -10,7 +10,7 @@
 
 **What is not here.** The old version of this article carried five counts and two of them were $24$ cells and $21$ arrays — the grids of three factors and the names on a declared copy. **With one group there is one grid and one copy of the fifteen**, so those two counts are gone and the article is shorter. **The subtraction is the model's:** it lost two factors and gained a shorter ledger.
 
-**The articles it leans on** are [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html) for the group and the declaration, [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the arrays, [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the grid, and [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html) for the count the mass spectrum uses.
+**The articles it leans on** are [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html) for the group and the declaration, [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the arrays, [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the grid, and [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html) for the count the mass spectrum uses.
 
 ## The Cell: Sixteen Positions
 
@@ -188,6 +188,6 @@ Recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\v
 
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). The fifteen arrays printed one to a display, and the three-step construction of the physics basis from the words.
 - [Classification of the Bosons: Sixteen Cells, Fifteen Generators, Nine Massless and Six Massive](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid, the block picture and the ledger of the spectrum.
-- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The count of generators read as a mass spectrum.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The count of generators read as a mass spectrum.
 - [The Real $\mathfrak{so}(4)$ Inside the Fifteen](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The section that gives the six arrays their reading.
 - [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). Why six names are not six generators, and what the weak force actually is.

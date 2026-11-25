@@ -29,7 +29,7 @@ $$
 
 **Not established.** The numerical values of $M_R$ and of the mega coupling. **The first is free and the second is fixed by a boundary condition the corpus already says fails.** Neither is a defect introduced here: both are the corpus's, and the migration is about origins rather than about unification.
 
-**Where the rest is.** The construction that produces the group at $M_C$ is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The death that produces the colour factor is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The sextet's mass and bound are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). **Everything below the handover is the existing corpus**, beginning with §*The Scale Ledger* below and continuing with [The Mass Matrix of the Twenty-One Gauge Bosons](the-mass-matrix-of-the-twenty-one-gauge-bosons-four-blocks-one-mixing-and-the-nine-zeros.html).
+**Where the rest is.** The construction that produces the group at $M_C$ is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The breaking that produces the colour factor is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The sextet's mass and bound are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). **Everything below the handover is the existing corpus**, beginning with §*The Scale Ledger* below and continuing with [The Mass Matrix of the Twenty-One Gauge Bosons](the-mass-matrix-of-the-twenty-one-gauge-bosons-four-blocks-one-mixing-and-the-nine-zeros.html).
 
 ## The Interface: Four Quantities Cross, and One Number Is Matched
 
@@ -44,7 +44,7 @@ $$
 
 **The group is the item that matters, and it is exact.** It is not an approximation and not a limit: **below $M_C$ the four factors are the gauge group of the theory, and above $M_C$ they are not a group at all** — above it there is one simple factor, and the four are a decomposition of the adjoint.
 
-**The fifteen massless vectors are exact in the same sense, and the fifteen is a sum of two kinds.** Nine are the centraliser of the vacuum, computed once in [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html): eight gluons and $B'$. Six are the weak directions, and they are massless because they are born unbroken at the transition: a generator that no vacuum has yet selected has no mass to acquire. **So the count does not fall at $M_C$; it is the dimension of the unbroken group on each side, $15$ and $8+1+3+3=15$.**
+**The fifteen massless vectors are exact in the same sense, and the fifteen is a sum of two kinds.** Nine are the centraliser of the vacuum, computed once in [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html): eight gluons and $B'$. Six are the weak directions, and they are massless because they are born unbroken at the transition: a generator that no vacuum has yet selected has no mass to acquire. **So the count does not fall at $M_C$; it is the dimension of the unbroken group on each side, $15$ and $8+1+3+3=15$.**
 
 **The six are a bound and not a value**, because $v_R$ is not fixed by the model; the bound is $250$ TeV and it is what makes the transition scale a measured quantity rather than a parameter.
 
@@ -76,7 +76,7 @@ $$
 M_C\ \ge\ M_R\ \ge\ M_W .
 $$
 
-**What each inequality protects.** $M_C\ge M_R$ protects the first transition: the primordial force must die before the right sector does, or the right sector's vacuum would be a direction the primordial force had not yet released. $M_R\ge M_W$ protects the second: hypercharge must be broken after it is formed.
+**What each inequality protects.** $M_C\ge M_R$ protects the first transition: the primordial force must break before the right sector does, or the right sector's vacuum would be a direction the primordial force had not yet released. $M_R\ge M_W$ protects the second: hypercharge must be broken after it is formed.
 
 **The budget, in the one-group frame.** The weak pair arrives with the index at $M_C$ rather than sitting above it, so the dimension does not drop at the first step and the rank does not stay put:
 
@@ -156,9 +156,9 @@ $$
 | --- | --- |
 | the chain, the dimensions and the ranks | §*The Scale Ledger*, above: $15\to15\to12\to9$ and $3\to5\to4\to3$ |
 | the nesting, and $M_C\ge M_R\ge M_W$ | §*The Scale Ledger*, above, conditions (a) and (b) |
-| the nine that survive and the six that are eaten | [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html) |
+| the nine that survive and the six that are eaten | [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html) |
 | the ledger of three readings | [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) |
-| $32v^{2}$ on six planes, $0$ on nine, and the general vacuum | [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html) |
+| $32v^{2}$ on six planes, $0$ on nine, and the general vacuum | [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html) |
 | the mass, the bound and the diquark fork | [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html) |
 | the scalar that does the breaking | [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html) |
 
@@ -223,6 +223,6 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 ## Further Reading
 
 - [The Weak Force Born as a Side Effect: A Condensate Index, Five Ranks From Three](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The construction that makes the group appear at $M_C$.
-- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The colour factor and the nine vectors that cross the boundary.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The colour factor and the nine vectors that cross the boundary.
 - [The Neutral Sector: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html). The photon and the mixing angle, both formed after the handover.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The boundary condition and its four-decade failure.

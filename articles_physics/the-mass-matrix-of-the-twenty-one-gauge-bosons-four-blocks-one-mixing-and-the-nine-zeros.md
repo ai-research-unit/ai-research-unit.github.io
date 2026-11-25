@@ -6,7 +6,7 @@
 
 **The four blocks are exact and not an approximation.** Each vacuum of the chain is a colour singlet with a definite electric charge, so every mass term carries the colour representation and the charge of both of its generators. Two generators of different colour or different charge therefore never mix, at any order of perturbation theory. The block structure is a statement about the quantum numbers the vacua carry, and it survives every correction that does not break colour or charge.
 
-**What the article computes, and what it borrows.** It derives the charged block from the bidoublet's kinetic term, states its determinant and its two eigenvalues, shows that a massless charged boson needs alignment $\kappa=\kappa'$, and shows that at equal couplings the mixing is maximal. That last result is the reason the Standard Model's $W$ is a mixture of $W_L$ and $W_R$ and not either of them. The colour, leptoquark and neutral blocks are quoted with a pointer to the article that owns each: [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html) for the first two and [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the third.
+**What the article computes, and what it borrows.** It derives the charged block from the bidoublet's kinetic term, states its determinant and its two eigenvalues, shows that a massless charged boson needs alignment $\kappa=\kappa'$, and shows that at equal couplings the mixing is maximal. That last result is the reason the Standard Model's $W$ is a mixture of $W_L$ and $W_R$ and not either of them. The colour, leptoquark and neutral blocks are quoted with a pointer to the article that owns each: [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html) for the first two and [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the third.
 
 **The one sentence worth carrying away.** The neutral block is blind to the ratio $\kappa'/\kappa$ and the charged block is not, so the departure from $\rho=1$ is entirely a charged-block effect:
 
@@ -37,7 +37,7 @@ $8+6+3+4=21$. The charged block counts four real generators because the two comp
 
 **The eight colour directions are massless at every scale, exactly.** Two reasons, and both are exact.
 
-**The first vacuum.** $D=\operatorname{diag}(-3,1,1,1)$ is a multiple of the identity on the colour triple, so every colour generator commutes with it: the colour planes have $\lambda_j=\lambda_k$ and the two colour diagonals commute with it. A generator that commutes with the vacuum has zero mass, which is the kernel statement of [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html).
+**The first vacuum.** $D=\operatorname{diag}(-3,1,1,1)$ is a multiple of the identity on the colour triple, so every colour generator commutes with it: the colour planes have $\lambda_j=\lambda_k$ and the two colour diagonals commute with it. A generator that commutes with the vacuum has zero mass, which is the kernel statement of [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html).
 
 **The second and third vacua.** The bidoublet is a colour singlet, so its vacuum expectation value does not couple to a colour generator at all. The same holds for the $(\mathbf4,\mathbf1,\mathbf2)$ scalar, whose vacuum lies along the lepton line, and the lepton line is a colour singlet.
 
@@ -51,7 +51,7 @@ $$
 M^{2}_{\text{lepto}}=32v^{2}\,\mathrm I_{6},\qquad 32=2\cdot4^{2},\qquad 4=1-(-3).
 $$
 
-The leakage is the entry-by-entry computation of [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html); the reason is the identity of [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html), which says that the mass on a plane is twice the square of the vacuum's eigenvalue difference across it. **The six are equal because the vacuum has one lepton line and three equal colour lines**, so all six differences are the same number.
+The leakage is the entry-by-entry computation of [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html); the reason is the identity of [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html), which says that the mass on a plane is twice the square of the vacuum's eigenvalue difference across it. **The six are equal because the vacuum has one lepton line and three equal colour lines**, so all six differences are the same number.
 
 **The later breakings add nothing here.** The bidoublet is colour-blind, and the leptoquarks have already left the unbroken algebra at $M_C$. The block stays $32v^{2}$ at tree level; the one-loop shift is the effective-potential article's.
 
@@ -79,7 +79,7 @@ $$
 \langle H\rangle=\begin{pmatrix}\kappa&0\\0&\kappa'\end{pmatrix},\qquad v^{2}=\kappa^{2}+\kappa'^{2},
 $$
 
-with the two diagonal entries neutral and the two off-diagonal entries charged, and with the convention that fixes the charge assignments of [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html).
+with the two diagonal entries neutral and the two off-diagonal entries charged, and with the convention that fixes the charge assignments of [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html).
 
 **The covariant derivative.** With the right factor acting by $\Phi\mapsto\Phi\,\sigma_a^{\mathsf T}/2$, which is the convention in which both diagonal entries are neutral,
 
@@ -253,7 +253,7 @@ Fourteen recomputations, at tree level, with $v^{2}=\kappa^{2}+\kappa'^{2}$ and 
 
 ## Further Reading
 
-- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The colour and leptoquark blocks in full, computed entry by entry.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The colour and leptoquark blocks in full, computed entry by entry.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The neutral block's entries and eigenvalues, and the ledger of the spectrum.
 - [The Photon as the Unbroken Mixture: One Null Direction, Three Parents](the-photon-as-the-unbroken-mixture.html). The null vector of the neutral block, derived three ways.
 - [Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter.html). The relation $\rho=1$ and its radiative corrections.

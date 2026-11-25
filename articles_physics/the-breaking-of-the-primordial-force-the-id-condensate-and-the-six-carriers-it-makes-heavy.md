@@ -1,8 +1,8 @@
-# __The Death of the Primordial Force: The $\langle iD\rangle$ Condensate and the Six Carriers It Eats__
+# __The Breaking of the Primordial Force: The $\langle iD\rangle$ Condensate and the Six Carriers It Makes Heavy__
 
 ## Introduction
 
-**The layer.** The transition is a statement about a formal copy of the carrier, and its Layer-A content is one diagonal element and its adjoint action. Nothing here needs a potential, a temperature, or a cosmological history: **the death of the primordial force is the adjoint action of one direction on fifteen arrays, and everything else is arithmetic on its spectrum.**
+**The layer.** The transition is a statement about a formal copy of the carrier, and its Layer-A content is one diagonal element and its adjoint action. Nothing here needs a potential, a temperature, or a cosmological history: **the breaking of the primordial force is the adjoint action of one direction on fifteen arrays, and everything else is arithmetic on its spectrum.**
 
 **The question.** What exactly does the condensation do to $\mathrm{SU}(4)$, which generators does it remove from the spectrum, and what do those generators weigh once they are gone?
 
@@ -29,13 +29,13 @@ M^{2}=2v^{2}\bigl[D,[D,\cdot\,]\bigr]=\operatorname{diag}\bigl(\underbrace{32v^{
 \;}
 $$
 
-**So the death is one line of spectral theory.** A single diagonal direction, with eigenvalue pattern $(-3,1,1,1)$, commutes with nine arrays and moves six; the six it moves are the six that acquire mass, and the nine it fixes are the nine that stay massless.
+**So the breaking is one line of spectral theory.** A single diagonal direction, with eigenvalue pattern $(-3,1,1,1)$, commutes with nine arrays and moves six; the six it moves are the six that acquire mass, and the nine it fixes are the nine that stay massless.
 
-**What this article establishes.** That the stabiliser of the lepton line is exactly the nine-dimensional $\mathfrak{u}(3)$; that the six generators it breaks are exactly the leptoquark sextet, with $Q=\pm\tfrac23$ and $B-L=\pm\tfrac43$; that their mass is one number per plane, $32v^{2}$; and that the rank does not move, $3\to2+1$, so **the death is a death of dimension and not of rank.**
+**What this article establishes.** That the stabiliser of the lepton line is exactly the nine-dimensional $\mathfrak{u}(3)$; that the six generators it breaks are exactly the leptoquark sextet, with $Q=\pm\tfrac23$ and $B-L=\pm\tfrac43$; that their mass is one number per plane, $32v^{2}$; and that the rank does not move, $3\to2+1$, so **the breaking costs dimension and keeps the rank.**
 
 **Not established.** Nothing here says *why* the condensate forms. The scalar potential is not derived anywhere in the corpus, and this article does not pretend to derive it. **What is established is what follows once the condensate exists** — and that is a great deal, because the entire mass spectrum of the first breaking follows from one direction.
 
-**What "death" means here, stated before it is used.** Two things happen to the six generators at once, and they are the same event seen twice: **they are eaten** (each becomes the longitudinal mode of a now-massive vector) and **they become heavy** ($32v^{2}$ each). Neither is a destruction. **The six are absent from the spectrum below the transition and present in it above; that is what a condensate does to a gauge direction.**
+**What "breaking" means here, stated before it is used.** Two things happen to the six generators at once, and they are the same event seen twice: **they are eaten** (each becomes the longitudinal mode of a now-massive vector) and **they become heavy** ($32v^{2}$ each). Neither is a destruction. **The six are absent from the spectrum below the transition and present in it above; that is what a condensate does to a gauge direction.**
 
 **Where the rest is.** The mass matrix is derived in §*The Mass the Six Acquire*, together with the basis question. The six states are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html), which owns their mass relation and their experimental bound. The scalar that condenses is the line in the centre, fixed in §*The Condensate*. **What the six cannot do — become the weak bosons — is [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html)**, and it is the reason the next article is about an index rather than about debris.
 
@@ -232,22 +232,32 @@ $$
 \operatorname{rank}\mathfrak{su}(4)=3\ \longrightarrow\ \operatorname{rank}\bigl(\mathfrak{su}(3)\oplus\mathfrak{u}(1)\bigr)=2+1=3 .
 $$
 
-**The breaking costs dimension and not rank.** A condensate chooses a direction inside the maximal torus, so the torus survives; **that is why colour plus one abelian factor is available as an endpoint and colour plus two weak factors is not.** The second is a rank-five statement, and rank five is not reachable from rank three by any breaking at all — **which is the content of the next two articles, and the reason the weak force cannot be a fragment of what dies here.**
+**The breaking costs dimension and not rank.** A condensate chooses a direction inside the maximal torus, so the torus survives; **that is why colour plus one abelian factor is available as an endpoint and colour plus two weak factors is not.** The second is a rank-five statement, and rank five is not reachable from rank three by any breaking at all — **which is the content of the next two articles, and the reason the weak force cannot be a fragment of what breaks here.**
 
-## What Dies and What Does Not
+## What Breaks and What Does Not
 
 **Four rows, because four different things are true at once.**
 
 | object | before | after | in what sense |
 | --- | --- | --- | --- |
-| the group | $\mathrm{SU}(4)$, dimension $15$ | $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$, dimension $9$ | it dies |
+| the group | $\mathrm{SU}(4)$, dimension $15$ | $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$, dimension $9$ | it breaks |
 | the six leptoquarks | massless gauge directions | massive vectors, $M_X^{2}=\tfrac12g_4^{2}v_R^{2}$ | heavy, not absent from the theory |
 | the rank | $3$ | $3$ | it does not move |
 | the colour | inside the fifteen | a stabiliser factor | it survives, and survives exactly |
 
-**The sentence to keep.** **The primordial force dies into colour and one abelian factor, and the price of the death is six vectors at $32v^{2}$ and six real scalars absorbed.** Everything else — the rank, the colour, the abelian direction, the vacuum — is unchanged.
+**The sentence to keep.** **The primordial force breaks into colour and one abelian factor, and the price of the breaking is six vectors at $32v^{2}$ and six real scalars absorbed.** Everything else — the rank, the colour, the abelian direction, the vacuum — is unchanged.
 
-**And the sentence that must not be written.** *The leptoquarks are destroyed and their debris becomes the weak force.* The charge theorem of [the companion article](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html) closes that reading: every member of the sextet has $Q=\pm\tfrac23$, so no combination of them reaches $Q=\pm1$. **The death produces colour, one abelian factor, and six heavy vectors. It does not produce a weak doublet.**
+**And the sentence that must not be written.** *The leptoquarks are destroyed and their debris becomes the weak force.* The charge theorem of [the companion article](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html) closes that reading: every member of the sextet has $Q=\pm\tfrac23$, so no combination of them reaches $Q=\pm1$. **The breaking produces colour, one abelian factor, and six heavy vectors. It does not produce a weak doublet.**
+
+## The Breaking Is a Statement About the Vacuum, Not About the Theory
+
+**Nothing in this article removes a generator from the model.** The fifteen arrays are the same fifteen above and below the transition; what changes is which of them the ground state commutes with. **A condensate is a property of the vacuum, so the breaking is a property of one phase of the theory and not of its Lagrangian**, and the Lagrangian is one $\mathrm{SU}(4)$ theory at every scale.
+
+**So the primordial force is not gone, and the word for what happens to it is breaking.** Above $M_C$ the condensate is absent, the fifteen directions are all massless gauge directions, and the group is one simple factor. Below $M_C$ the same fifteen are read through a vacuum that commutes with nine of them and not with six. **The two descriptions are one theory in two phases**, and the passage between them is the vanishing of one scalar expectation value.
+
+**What would restore it, stated as a reading and not as a result.** A condensate that vanishes restores the symmetry. Three routes do that: a temperature of order $M_C$; a field excursion that carries the scalar to the origin; or a region in which the scalar never condensed. **The corpus derives none of the three**, because the scalar potential is not in it. What the corpus establishes is the spectrum on either side of the transition, and that is enough to say what restoration would look like and what it would cost.
+
+**The observable is the sextet.** No generator of $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ carries a quark into a lepton: colour triality and $B-L$ are both conserved by the residual group, and the sextet is the only place in the fifteen where the two are traded. **So a leptoquark seen is not a particle added to the model; it is one of the fifteen acting**, and its rate is set by the coupling the model already has. The null searches at [the threshold article](the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html) bound $M_C$ from below, and **that bound is the statement that the unbroken phase has not yet been reached.**
 
 ## The Checks
 
@@ -276,9 +286,9 @@ $32v^{2}$ is not a mass. It is the coefficient of $v^{2}$; the conversion is a c
 
 The nine are not "the rest". They are exactly the centraliser of the vacuum, and there is a theorem behind the word exactly (*The Nine That Survive*).
 
-The rank is not reduced. Six dimensions leave and the torus stays; that is why the endpoint is $\mathrm{SU}(3)\times\mathrm{U}(1)$ and not something with fewer abelian directions (*What Dies and What Does Not*).
+The rank is not reduced. Six dimensions leave and the torus stays; that is why the endpoint is $\mathrm{SU}(3)\times\mathrm{U}(1)$ and not something with fewer abelian directions (*What Breaks and What Does Not*).
 
-**The six weak generators are not among the fifteen.** The corpus states it in the mass-matrix article and it is worth repeating: on the carrier they are sums of colour and leptoquark planes, and **their masses come from a later breaking through a different vacuum**. **That sentence is the seed of the whole migration**: what dies here is the parent of colour, and the parent of the weak force is a different object.
+**The six weak generators are not among the fifteen.** The corpus states it in the mass-matrix article and it is worth repeating: on the carrier they are sums of colour and leptoquark planes, and **their masses come from a later breaking through a different vacuum**. **That sentence is the seed of the whole migration**: what breaks here is the parent of colour, and the parent of the weak force is a different object.
 
 ## Summary
 
