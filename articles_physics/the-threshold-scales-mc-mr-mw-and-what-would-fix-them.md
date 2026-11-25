@@ -28,9 +28,9 @@ $$
 
 **What the article establishes.** The status of each scale; the one process that bounds $M_C$ and the reason it is a tree-level flavour-changing decay rather than a precision observable; why $M_R$ inherits the bound and has none of its own; why the minimal content has two thresholds and not three; the four routes from a bound to a value; and the circularity that keeps the model unfalsified but also unpredicted.
 
-**What the article does not establish.** No numerical value for $M_C$ or $M_R$. The number attached to the bound, its inputs and its spread are in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html), and the process itself in [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html).
+**What the article does not establish.** No numerical value for $M_C$ or $M_R$. The number attached to the bound, its inputs and its spread are in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html), and the process itself in [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html).
 
-**Where the order comes from.** [The Order of the Breaking in the Four Colours Left–Right Model: Nested Vacua and the Scale Order $M_C\ge M_R\ge M_W$](the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html) owns the statement that the chain requires this ordering. This article owns the status of each number.
+**Where the order comes from.** [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html) owns the statement that the chain requires this ordering. This article owns the status of each number.
 
 ## Three Scales, Three Statuses
 
@@ -82,11 +82,11 @@ $$
 
 ## Why the Minimal Content Has Two Scales and Not Three
 
-**One vacuum, one breaking, two factors.** Argued in full in [The Order of the Breaking in the Four Colours Left–Right Model: Nested Vacua and the Scale Order $M_C\ge M_R\ge M_W$](the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html); restated here because it changes what "the three scales" means.
+**One vacuum, one breaking, two factors.** Argued in full in [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html); restated here because it changes what "the three scales" means.
 
 **5.1 The rank-one vacuum.** $\Phi$'s vacuum is a line in the carrier times a line in the right doublet, so it breaks $\mathrm{SU}(4)$ and $\mathrm{SU}(2)_R$ together, in one step and at one scale. The stabiliser is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ of dimension $12$, not the $15$-dimensional group that the two breakings would leave if they happened separately. $M_C=M_R$ because there is one breaking, not because two coincide.
 
-**5.2 The consequence for counting.** Two thresholds, three factors. A reader who counts factors and expects three thresholds will look for a stage that is not there; a reader who counts thresholds and expects the budget $21\to15\to12\to9$ will miss that the middle number is not a scale.
+**5.2 The consequence for counting.** Two thresholds, three factors. A reader who counts factors and expects three thresholds will look for a stage that is not there; a reader who counts thresholds and expects the budget $15\to15\to12\to9$ will miss that the unchanged number is not a scale: six leptoquarks leave as six weak generators arrive.
 
 **5.3 The consequence for the bounds.** The bound on $M_C$ is a bound on both scales. Nothing in the minimal content bounds $M_R$ separately, because there is no separate $M_R$.
 
@@ -166,8 +166,8 @@ $$
 ## Further Reading
 
 - [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html). The numbers attached to the bounds, and the failure of the running.
-- [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The process that sets $M_C$.
-- [The Order of the Breaking in the Four Colours Left–Right Model: Nested Vacua and the Scale Order $M_C\ge M_R\ge M_W$](the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html). Why the chain requires this ordering and why two of the scales coincide.
+- [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The process that sets $M_C$.
+- [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html). Why the chain requires this ordering and why two of the scales coincide.
 - [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html). The running that turns a scale into a prediction.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The inversion of §*What Would Fix a Scale Rather Than Bound It*, read as a mass mechanism.
 - [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html). The ratio the chain does not explain.

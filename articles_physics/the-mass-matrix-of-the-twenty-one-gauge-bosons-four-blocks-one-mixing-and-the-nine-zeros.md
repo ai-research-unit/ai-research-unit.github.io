@@ -6,7 +6,7 @@
 
 **The four blocks are exact and not an approximation.** Each vacuum of the chain is a colour singlet with a definite electric charge, so every mass term carries the colour representation and the charge of both of its generators. Two generators of different colour or different charge therefore never mix, at any order of perturbation theory. The block structure is a statement about the quantum numbers the vacua carry, and it survives every correction that does not break colour or charge.
 
-**What the article computes, and what it borrows.** It derives the charged block from the bidoublet's kinetic term, states its determinant and its two eigenvalues, shows that a massless charged boson needs alignment $\kappa=\kappa'$, and shows that at equal couplings the mixing is maximal. That last result is the reason the Standard Model's $W$ is a mixture of $W_L$ and $W_R$ and not either of them. The colour, leptoquark and neutral blocks are quoted with a pointer to the article that owns each: [The Adjoint Mass Matrix of the Fifteen](the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html) for the first two and [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the third.
+**What the article computes, and what it borrows.** It derives the charged block from the bidoublet's kinetic term, states its determinant and its two eigenvalues, shows that a massless charged boson needs alignment $\kappa=\kappa'$, and shows that at equal couplings the mixing is maximal. That last result is the reason the Standard Model's $W$ is a mixture of $W_L$ and $W_R$ and not either of them. The colour, leptoquark and neutral blocks are quoted with a pointer to the article that owns each: [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html) for the first two and [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the third.
 
 **The one sentence worth carrying away.** The neutral block is blind to the ratio $\kappa'/\kappa$ and the charged block is not, so the departure from $\rho=1$ is entirely a charged-block effect:
 
@@ -14,7 +14,7 @@ $$
 \rho=\frac{M_{W}^{2}}{M_{Z}^{2}\cos^{2}\theta_W}=1-\sin2\beta,\qquad \tan\beta=\frac{\kappa'}{\kappa},
 $$
 
-below $M_R$, at equal couplings, at tree level. That is $\rho-1=-2\kappa\kappa'/(\kappa^{2}+\kappa'^{2})$, which is the form [The Scalar Sector](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html) states as "proportional to $\kappa\kappa'$", with its coefficient.
+below $M_R$, at equal couplings, at tree level. That is $\rho-1=-2\kappa\kappa'/(\kappa^{2}+\kappa'^{2})$, which is the form the bidoublet's two vevs give: $\rho-1$ is proportional to $\kappa\kappa'$, with its coefficient.
 
 ## The Four Blocks
 
@@ -37,7 +37,7 @@ $8+6+3+4=21$. The charged block counts four real generators because the two comp
 
 **The eight colour directions are massless at every scale, exactly.** Two reasons, and both are exact.
 
-**The first vacuum.** $D=\operatorname{diag}(-3,1,1,1)$ is a multiple of the identity on the colour triple, so every colour generator commutes with it: the colour planes have $\lambda_j=\lambda_k$ and the two colour diagonals commute with it. A generator that commutes with the vacuum has zero mass, which is the kernel statement of [The Adjoint Mass Matrix as the Square of the Roots](the-adjoint-mass-matrix-as-the-square-of-the-roots-two-v-squared-double-commutator-six-planes-and-nine-zeros.html).
+**The first vacuum.** $D=\operatorname{diag}(-3,1,1,1)$ is a multiple of the identity on the colour triple, so every colour generator commutes with it: the colour planes have $\lambda_j=\lambda_k$ and the two colour diagonals commute with it. A generator that commutes with the vacuum has zero mass, which is the kernel statement of [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html).
 
 **The second and third vacua.** The bidoublet is a colour singlet, so its vacuum expectation value does not couple to a colour generator at all. The same holds for the $(\mathbf4,\mathbf1,\mathbf2)$ scalar, whose vacuum lies along the lepton line, and the lepton line is a colour singlet.
 
@@ -51,7 +51,7 @@ $$
 M^{2}_{\text{lepto}}=32v^{2}\,\mathrm I_{6},\qquad 32=2\cdot4^{2},\qquad 4=1-(-3).
 $$
 
-The leakage is the entry-by-entry computation of [The Adjoint Mass Matrix of the Fifteen](the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html); the reason is the identity of [The Adjoint Mass Matrix as the Square of the Roots](the-adjoint-mass-matrix-as-the-square-of-the-roots-two-v-squared-double-commutator-six-planes-and-nine-zeros.html), which says that the mass on a plane is twice the square of the vacuum's eigenvalue difference across it. **The six are equal because the vacuum has one lepton line and three equal colour lines**, so all six differences are the same number.
+The leakage is the entry-by-entry computation of [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html); the reason is the identity of [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html), which says that the mass on a plane is twice the square of the vacuum's eigenvalue difference across it. **The six are equal because the vacuum has one lepton line and three equal colour lines**, so all six differences are the same number.
 
 **The later breakings add nothing here.** The bidoublet is colour-blind, and the leptoquarks have already left the unbroken algebra at $M_C$. The block stays $32v^{2}$ at tree level; the one-loop shift is the effective-potential article's.
 
@@ -79,7 +79,7 @@ $$
 \langle H\rangle=\begin{pmatrix}\kappa&0\\0&\kappa'\end{pmatrix},\qquad v^{2}=\kappa^{2}+\kappa'^{2},
 $$
 
-with the two diagonal entries neutral and the two off-diagonal entries charged, and with the convention that fixes the charge assignments of [The Scalar Sector](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html).
+with the two diagonal entries neutral and the two off-diagonal entries charged, and with the convention that fixes the charge assignments of [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html).
 
 **The covariant derivative.** With the right factor acting by $\Phi\mapsto\Phi\,\sigma_a^{\mathsf T}/2$, which is the convention in which both diagonal entries are neutral,
 
@@ -178,7 +178,7 @@ $$
 
 **Why the departure sits entirely in the charged block.** The neutral block is blind to $\beta$ (§*The Neutral Block: Rank Two and One Null Direction*), so $M_Z$ is the Standard Model's; the charged block is not, so $M_W$ is smaller by $(1-\sin2\beta)$. **The custodial violation of this model is a charged-block phenomenon**, which is the matrix form of the statement that the two diagonal vevs give the same neutral vector and different charged ones.
 
-**The numbers.** At $\beta=0.1$ the ratio at $v/v_R=10^{-1}$ is $0.8026$, and in the limit $v/v_R\to0$ it is $0.8013=1-\sin0.2$. At $\beta=0.3$ it is $0.436$. The measured value is $1.00038\pm0.00020$, and $\rho-1=-\sin2\beta$ reads it as $\tan\beta=\kappa'/\kappa=-(1.9\pm1.0)\times10^{-4}$: the two alignments must agree to four orders, and must agree in sign. That is the same bound [The Scalar Sector](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html) states as "$\kappa\kappa'$ small", now with its coefficient and with its price.
+**The numbers.** At $\beta=0.1$ the ratio at $v/v_R=10^{-1}$ is $0.8026$, and in the limit $v/v_R\to0$ it is $0.8013=1-\sin0.2$. At $\beta=0.3$ it is $0.436$. The measured value is $1.00038\pm0.00020$, and $\rho-1=-\sin2\beta$ reads it as $\tan\beta=\kappa'/\kappa=-(1.9\pm1.0)\times10^{-4}$: the two alignments must agree to four orders, and must agree in sign. That is the same bound as "$\kappa\kappa'$ small", now with its coefficient and with its price.
 
 **What this $\rho$ is not.** It is not the loop-level $\rho$. The tree-level relation above is the one the custodial symmetry of [Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter.html) protects; the radiative corrections are that article's, and the comparison with the measured number needs the top mass and the hypercharge running, which the framework does not supply here.
 
@@ -251,9 +251,7 @@ Fourteen recomputations, at tree level, with $v^{2}=\kappa^{2}+\kappa'^{2}$ and 
 
 ## Further Reading
 
-- [The Adjoint Mass Matrix of the Fifteen: One Number per Plane, $32v^2$ on Six and Zero on Nine](the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html). The colour and leptoquark blocks in full, computed entry by entry.
-- [The Adjoint Mass Matrix as the Square of the Roots](the-adjoint-mass-matrix-as-the-square-of-the-roots-two-v-squared-double-commutator-six-planes-and-nine-zeros.html). Why the leptoquark block is a multiple of the identity, and why the colour block is exactly zero.
-- [Classification of the Bosons in the Four Colours Left–Right Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The neutral block's entries and eigenvalues, and the ledger of the spectrum.
+- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The colour and leptoquark blocks in full, computed entry by entry.
+- [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The neutral block's entries and eigenvalues, and the ledger of the spectrum.
 - [The Photon as the Unbroken Mixture: One Null Direction, Three Parents](the-photon-as-the-unbroken-mixture.html). The null vector of the neutral block, derived three ways.
-- [The Scalar Sector of the Four Colours Left–Right Model](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). The bidoublet, its two diagonal vevs, and the statement that $\rho-1\propto\kappa\kappa'$.
 - [Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter.html). The relation $\rho=1$ and its radiative corrections.

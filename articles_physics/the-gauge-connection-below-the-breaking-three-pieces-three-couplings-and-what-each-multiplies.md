@@ -92,7 +92,7 @@ $$
 
 with $Q=T_{3L}+Y$ and $A$ the photon. The angle here is $\theta_W$.
 
-**2.4 The observation.** In all three lines the heavy field is written in the same bracket as the light one, because both come from the same derivative. The difference between them is not their origin but whether they annihilate the vacuum, and that is [The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass](the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html).
+**2.4 The observation.** In all three lines the heavy field is written in the same bracket as the light one, because both come from the same derivative. The difference between them is not their origin but whether they annihilate the vacuum, and that is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html).
 
 ## What Each Piece Multiplies
 
@@ -177,7 +177,7 @@ The count rises at $M_C$ and falls twice, and the rise is the point: one factor 
 
 **6.1 The removal.** Below $M_C$ the leptoquark piece is absent from the derivative. Fields coupled by it are no longer coupled: the lepton and the quark do not share a connection, and the gauge symmetry that would have related them is gone.
 
-**6.2 What remains of it.** The removal leaves operators: four-fermion terms with coefficients $\sim g_4^{2}/M_X^{2}$, which is why the leptoquarks can be bounded without being produced. That is the effective-Lagrangian statement, and the bound is in [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html).
+**6.2 What remains of it.** The removal leaves operators: four-fermion terms with coefficients $\sim g_4^{2}/M_X^{2}$, which is why the leptoquarks can be bounded without being produced. That is the effective-Lagrangian statement, and the bound is in [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html).
 
 **6.3 The correction to the light couplings.** The removal also shifts the light couplings by finite amounts, which is the matching computation of [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html). At tree level the shifts are zero; at one loop they are not.
 

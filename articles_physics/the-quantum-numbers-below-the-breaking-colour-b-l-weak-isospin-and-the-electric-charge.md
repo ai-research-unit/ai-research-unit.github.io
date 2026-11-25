@@ -27,9 +27,9 @@ $$
 
 **What the article establishes.** The criterion and its proof; the table of charges with the scale at which each is lost; the two charges that survive — colour and the electric charge — with the different senses in which they survive; the exact status of $B-L$; the reason $B$ and $L$ separately are not symmetries and why the proton is stable anyway; the charges that are accidents of the field content; and the anomalous combination.
 
-**What the article does not establish.** No dynamics and no decay rate. The proton's stability is treated in [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html), and the sphaleron statement in [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html).
+**What the article does not establish.** No dynamics and no decay rate. The proton's stability is treated in [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html), and the sphaleron statement in [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html).
 
-**Where the masses are.** [The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass](the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html) lists the bosons. This article is the same list read as charges.
+**Where the masses are.** [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html) lists the bosons. This article is the same list read as charges.
 
 ## The Criterion
 
@@ -62,7 +62,7 @@ $$
 
 **2.2 The apparent exception of $Q$.** $Q$ is written as a combination of $T_{3L}$ and $Y$, both of which are broken at $M_W$, and yet $Q$ survives. That is not a contradiction: the combination is the one direction that annihilates the vacuum, and the two ingredients annihilate it only in that combination. A sum of two broken generators can be unbroken; a single one cannot be.
 
-**2.3 The rank statement.** At each step the rank of the conserved charge lattice is the rank of $\mathfrak h$: $5\to5\to4\to3$. The number of independent conserved Cartan charges is that rank, and it is why there are three at the bottom and not more.
+**2.3 The rank statement.** At each step the rank of the conserved charge lattice is the rank of $\mathfrak h$: $3\to5\to4\to3$. The number of independent conserved Cartan charges is that rank, and it is why there are three at the bottom and not more. **The rank rises at the first step**, because the two weak $\mathrm{SU}(2)$ factors arrive with the doublet index at $M_C$ and bring their Cartans; it falls by one at each of the two later steps, each time because a broken $\mathrm{SU}(2)$ leaves a single abelian direction.
 
 ## Colour: Exact and Confined
 
@@ -98,7 +98,7 @@ $$
 
 **5.3 Why there is no proton decay.** A proton decay operator needs a mediator that couples two quarks: a diquark. The gauge leptoquarks carry $B-L=\pm\tfrac43$, and a diquark coupling would need $B-L=\pm\tfrac23$, because two quarks have $B-L=\tfrac23$. The charge forbids the vertex, and the model contains no scalar with the right $B-L$ to supply it. The proton's stability is therefore a consequence of the charge of the leptoquarks, not of a baryon-number symmetry.
 
-**5.4 The honest qualification.** "No proton decay" means no dimension-six gauge-mediated decay in the minimal content. Operators of higher dimension, or new scalars, could change it, and the bound on $M_C$ from the operators that do exist is in [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html).
+**5.4 The honest qualification.** "No proton decay" means no dimension-six gauge-mediated decay in the minimal content. Operators of higher dimension, or new scalars, could change it, and the bound on $M_C$ from the operators that do exist is in [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html).
 
 ## The Charges That Are Merely Accidental
 
@@ -118,7 +118,7 @@ $$
 
 **7.1 The statement.** In the Standard Model the combination $B+L$ is violated by sphalerons while $B-L$ is not. The same holds here below $M_C$, because the field content and the gauge group restricted to the Standard-Model factors are the same.
 
-**7.2 Why $B-L$ escapes.** Its current has vanishing anomaly coefficients. The triangle coefficient of $B-L$ cancels inside a generation for the same reason every other anomaly does, the trace $\operatorname{tr}_{\mathbf4}(B-L)=0$ of [The Fermions After the Breaking: Three Colours and a Lepton Line, Two Weak Doublets, the Electric Charges](the-fermions-after-the-breaking-three-colours-and-a-lepton-line-two-weak-doublets-the-electric-charges.html). So the current is conserved even where it is only global, and the sphaleron has nothing to act on. Above $M_C$ the direction is inside a simple group and there is no separate current to discuss.
+**7.2 Why $B-L$ escapes.** Its current has vanishing anomaly coefficients. The triangle coefficient of $B-L$ cancels inside a generation for the same reason every other anomaly does, the trace $\operatorname{tr}_{\mathbf4}(B-L)=0$ over the four entries of the carrier. So the current is conserved even where it is only global, and the sphaleron has nothing to act on. Above $M_C$ the direction is inside a simple group and there is no separate current to discuss.
 
 **7.3 Why it matters.** Sphaleron violation of $B+L$ with $B-L$ conserved is the mechanism that makes leptogenesis possible and that erases a $B+L$ asymmetry. Its absence for $B-L$ is what leaves an asymmetry to survive. The details are [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html).
 
@@ -129,7 +129,7 @@ $$
 | check | computation | result |
 |---|---|---|
 | the criterion | $Q\Phi_0=0$ | equivalent to a zero row of $M^{2}$ |
-| the rank | $5\to5\to4\to3$ | one conserved Cartan charge lost at $M_R$, one at $M_W$ |
+| the rank | $3\to5\to4\to3$ | two gained at $M_C$ with the weak factors, one lost at $M_R$, one at $M_W$ |
 | the two steps at $M_W$ | $T_{3L}$ and $Y$ broken, $Q$ conserved | a sum of two broken generators can be unbroken |
 | the $B-L$ of the leptoquarks | $\pm\tfrac43$ against $\pm\tfrac23$ for a diquark | the diquark vertex is forbidden |
 | the $B-L$ status | gauged above $M_R$, global below | the quantum number never changes |
@@ -170,9 +170,8 @@ $$
 
 ## Further Reading
 
-- [The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass](the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html). The same criterion read as a mass spectrum.
-- [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The $B-L$ of the leptoquarks and the absent diquark channel.
+- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The same criterion read as a mass spectrum.
+- [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The $B-L$ of the leptoquarks and the absent diquark channel.
 - [Charge Quantisation from the Fourth Colour: One Trace, One Third](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). Where the charge lattice comes from.
 - [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html). The anomalous combination and its consequences.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). Colour exact and confined.
-- [The Fermions After the Breaking: Three Colours and a Lepton Line, Two Weak Doublets, the Electric Charges](the-fermions-after-the-breaking-three-colours-and-a-lepton-line-two-weak-doublets-the-electric-charges.html). The charges carried by each state.

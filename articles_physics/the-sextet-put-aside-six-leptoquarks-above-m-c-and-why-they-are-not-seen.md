@@ -31,7 +31,7 @@ $$
 
 **Not established.** The bound is a coupling statement and its coefficient is uncertain by a factor of a few. The states have not been seen, which is the weakest kind of failure and the most persistent. **And — the point of the article — nothing here produces a weak boson.** The six cannot: the charge theorem of [the companion article](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html) rules it out, and this article records that the sextet's role is to die and to be heavy, not to give birth.
 
-**Where the rest is.** The transition that eats them is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). Their mass relation and their bound in full are [The Leptoquarks: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition hands down instead of them is [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html).**
+**Where the rest is.** The transition that eats them is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). Their mass relation and their bound in full are §*The Mass, and the Ratio That Comes With It* and §*The Bound: Two Hundred and Fifty Teraelectronvolts* below. Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition hands down instead of them is [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html).**
 
 ## What "Put Aside" Means, in Three Registers
 
@@ -229,8 +229,6 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 
 ## Further Reading
 
-- [The Leptoquarks: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The article this one condenses, with the derivation of the bound and the diquark fork.
 - [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The transition that eats the six.
-- [The Scalar Sector: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). The multiplet that supplies the six Goldstones and the two that remain.
 - [What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The theorem behind *What the Sextet Does Not Do*.
 - [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html). What the transition gives the left–right model instead of a recombination.

@@ -29,7 +29,7 @@ $$
 
 **Not established.** The numerical values of $M_R$ and of the mega coupling. **The first is free and the second is fixed by a boundary condition the corpus already says fails.** Neither is a defect introduced here: both are the corpus's, and the migration is about origins rather than about unification.
 
-**Where the rest is.** The construction that produces the group at $M_C$ is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The death that produces the colour factor is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The sextet's mass and bound are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). **Everything below the handover is the existing corpus**, beginning with [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html).
+**Where the rest is.** The construction that produces the group at $M_C$ is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The death that produces the colour factor is [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The sextet's mass and bound are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). **Everything below the handover is the existing corpus**, beginning with §*The Scale Ledger* below and continuing with [The Mass Matrix of the Twenty-One Gauge Bosons](the-mass-matrix-of-the-twenty-one-gauge-bosons-four-blocks-one-mixing-and-the-nine-zeros.html).
 
 ## The Interface: Four Quantities Cross, and One Number Is Matched
 
@@ -60,7 +60,15 @@ $$
 | $M_R$ | **free**, bounded below by $M_W$ and above by $M_C$ | not predicted |
 | $v$ | **measured** | $246$ GeV |
 
-**The ordering is forced, and the reason is nesting.** The two vacua are nested — the second lies in the direction the first leaves unbroken — so a breaking that used the second before the first would have already used a direction the first was supposed to preserve. **The corpus states this in [The Order of the Breaking](the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html), and the migration does not touch it.**
+**The ordering is forced, and the reason is nesting.** The two vacua are nested — the second line lies in a module of the group the first leaves unbroken — so a breaking that used the second before the first would have already used a direction the first was supposed to preserve. **Two conditions fix the order, and only one of them is about being untouched.**
+
+**(a) A field breaks a factor only if it transforms under it.** With no index on the factor there is no generator to act on the vacuum, so nothing can be broken. $\Phi$ is a colour quartet, an $R$ doublet and an $L$ singlet: it can break colour and the right factor, and it cannot break the left one. $H$ is colour-blind and an $L$ doublet: it can break the left factor and nothing else. This is a statement about the multiplet list, and it is what assigns each step its field.
+
+**(b) A field must be neutral under the factors broken earlier.** Otherwise its vacuum tilts the previously fixed line and undoes the earlier step. $\Phi$ is inert on $\mathrm{SU}(2)_L$, so the vacuum that fixes the colour and right lines leaves the left line free for $H$.
+
+**The order of the steps is a statement about the multiplets and not about the group.** A different scalar content would permit a different chain, and then the intermediate group, the charge assignments and the massless count would all differ. **What is group-theoretic is the stabiliser the lines cut out, and that does not move.**
+
+**The scale order is a condition on the description, not a theorem about the group.** $M_R>M_C$ does not contradict the group theory; it contradicts the sentence "between $M_R$ and $M_C$ the theory is $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$", which says which effective theory is used where. **The breaking pattern is ordering-independent; only its factorization into stages is not.**
 
 **The ordering in one line.**
 
@@ -69,6 +77,15 @@ M_C\ \ge\ M_R\ \ge\ M_W .
 $$
 
 **What each inequality protects.** $M_C\ge M_R$ protects the first transition: the primordial force must die before the right sector does, or the right sector's vacuum would be a direction the primordial force had not yet released. $M_R\ge M_W$ protects the second: hypercharge must be broken after it is formed.
+
+**The budget, in the one-group frame.** The weak pair arrives with the index at $M_C$ rather than sitting above it, so the dimension does not drop at the first step and the rank does not stay put:
+
+$$
+15\to15\to12\to9\ \text{massless vectors},\qquad
+3\to5\to4\to3\ \text{rank}.
+$$
+
+Six leptoquarks become massive at $M_C$ in the same step in which six weak generators arrive massless: **the count of massless vectors is unchanged across the handover, while the algebra changes from $\mathfrak{su}(4)$ to $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}\oplus\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R$.** The rank rises by two because two new Cartan directions arrive with the two weak factors; it falls by one at $M_R$ and by one at $M_W$, each time because a broken $\mathrm{SU}(2)$ leaves a single abelian direction.
 
 **And the values, in the two-unit convention the corpus uses.** The sextet's bound is $4.0\times10^{-5}$ J, which is $2.5\times10^{2}$ TeV; the weak scale is $80.4$ GeV; **the ratio is $3.1\times10^{3}$, three and a half decades, and that is the whole of the hierarchy the first step is allowed to create.**
 
@@ -131,25 +148,23 @@ $$
 
 **The rule that follows.** When a statement depends on the scale, **say which scale it uses.** The confinement-scale argument of [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html) quoted three and a half decades, which is the *most favourable* case: at the floor. At the unification-preferred scale it is eleven decades. **Either way the composite route is closed, and the article says both numbers rather than the flattering one.**
 
-## What the Left–Right Corpus Does Next
+## What the Retired Section Leaves Behind
 
-**Nothing in the nine surviving articles changes**, and this section is the receipt.
+**The first symmetry-breaking section is retired, and nothing it established is lost.** Its statements are now carried here and in the neighbouring articles, and the receipt is short.
 
-| article | what it computes | touched by the migration? |
-| --- | --- | --- |
-| The Breaking Chain | the chain, the dimensions, the ranks | one paragraph: where the weak factors come from |
-| The Order of the Breaking | the nesting and $M_C\ge M_R\ge M_W$ | no |
-| The Unbroken Subgroup | the nine and the twelve | one paragraph, the same one |
-| Where the Fifteen Generators Go | the ledger of three readings | no |
-| The Adjoint Mass Matrix of the Fifteen | $32v^{2}$ and $0$ | no |
-| The Adjoint Mass Matrix as the Square of the Roots | the same, as a double commutator | no |
-| The Leptoquarks | the mass, the bound, the diquark fork | no |
-| The Scalar Sector | $24$ real, $12$ eaten, $12$ surviving | no |
-| The Fermions After the Breaking | the content below the chain | no |
+| statement | where it now lives |
+| --- | --- |
+| the chain, the dimensions and the ranks | §*The Scale Ledger*, above: $15\to15\to12\to9$ and $3\to5\to4\to3$ |
+| the nesting, and $M_C\ge M_R\ge M_W$ | §*The Scale Ledger*, above, conditions (a) and (b) |
+| the nine that survive and the six that are eaten | [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html) |
+| the ledger of three readings | [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) |
+| $32v^{2}$ on six planes, $0$ on nine, and the general vacuum | [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html) |
+| the mass, the bound and the diquark fork | [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html) |
+| the scalar that does the breaking | [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html) |
 
-**Why seven of the nine need nothing.** They are statements about the vacuum $\operatorname{diag}(-3,1,1,1)$ and about the fifteen arrays, **and neither the vacuum nor the arrays move.** The migration changes where two factors come from; it does not change a single eigenvalue, a single count, or a single bound. **That is the test of whether a migration is a reframing or a rewrite, and here it is a reframing.**
+**What was dropped, and it is dropped rather than carried.** The retired section described the transition as a flag of three lines in $\mathbb{CP}^{3}\times\mathbb{CP}^{1}\times\mathbb{CP}^{1}$, with a scalar census of $24$ real components, $12$ eaten and $12$ surviving, and with the dimension budget $21=9+12$. **All three belong to the frame in which both weak factors sat above $M_C$.** Here they are not approximations; they are statements about a group the theory does not have. The breaking object is a $(\mathbf4,\mathbf1,\mathbf2)$ with $16$ real components, six of which the sextet eats, and the budget is the one printed above.
 
-**Why the other two need one paragraph.** Their opening sentences say the group has three factors, and after the migration that sentence needs its origin stated. **The paragraph is a cross-reference and not a correction**: the three factors are the endpoint of the transition, the weak ones arrive at it, and nothing after $M_C$ changes.
+**What did not move.** The vacuum $\operatorname{diag}(-3,1,1,1)$, the fifteen arrays, the eigenvalues, the counts and the bounds. **The migration changed where the weak factors come from; it changed no number.**
 
 ## The Checks
 
@@ -209,7 +224,5 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 
 - [The Weak Force Born as a Side Effect: A Condensate Index, Five Ranks From Three](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The construction that makes the group appear at $M_C$.
 - [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The colour factor and the nine vectors that cross the boundary.
-- [The Breaking Chain: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). The downstream chain, unchanged.
-- [The Order of the Breaking: Nested Vacua and the Scale Order](the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html). Why $M_C\ge M_R\ge M_W$.
 - [The Neutral Sector: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html). The photon and the mixing angle, both formed after the handover.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The boundary condition and its four-decade failure.

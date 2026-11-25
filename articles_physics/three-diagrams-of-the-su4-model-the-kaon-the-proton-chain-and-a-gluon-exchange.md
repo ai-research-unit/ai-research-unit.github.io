@@ -200,7 +200,7 @@ $$
 - [The Feynman Rules of the $\mathrm{SU}(4)$ Model](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The vertices these three diagrams use, and the normalisation that produced $C_F$.
 - [The Fermion–Gauge Vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The matrices behind the two leptoquark vertices, with their charges.
 - [Lepton Flavour in the $\mathrm{SU}(4)$ Model: Nothing Turns the Lepton](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The operator, the rate, the $K_L$–$K_S$ selection and the assumption about $U$ in full.
-- [The Leptoquarks of the Four Colours Left–Right Model](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The six states, the $B-L=\pm\tfrac43$, and the dimension-nine argument.
+- [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The six states, the $B-L=\pm\tfrac43$, and the dimension-nine argument.
 - [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The $C_F$, $T_R$, $N_c$ bookkeeping in its own setting.
 - [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html). The contraction that turns a vertex into an amplitude.
 - [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html). The heavy limit used at every leptoquark line.

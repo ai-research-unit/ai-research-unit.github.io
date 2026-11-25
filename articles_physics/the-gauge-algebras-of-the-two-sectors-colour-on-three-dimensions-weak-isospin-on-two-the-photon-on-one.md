@@ -30,7 +30,7 @@ $$
 
 **What the article establishes.** The list of residual algebras with their dimensions; the module each acts on; the two derived abelian factors with their derivations; the sense in which the photon's algebra is one-dimensional; the three reductions of dimension and what each costs; and the boundary between what the algebra reaches and what the model posits.
 
-**What the article does not establish.** No coupling, no dynamics, no spectrum. The couplings are [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The states are [The Fermions After the Breaking: Three Colours and a Lepton Line, Two Weak Doublets, the Electric Charges](the-fermions-after-the-breaking-three-colours-and-a-lepton-line-two-weak-doublets-the-electric-charges.html).
+**What the article does not establish.** No coupling, no dynamics, no spectrum. The couplings are [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The states are [The Quantum Numbers Below the Breaking](the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html).
 
 **Where the ceiling is.** The reason $\mathrm{SU}(3)$ is posited and not derived is [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). That article is the boundary statement this one uses and does not repeat.
 
@@ -89,13 +89,24 @@ $$
 
 and it becomes a factor only after the first breaking.
 
-**4.2 $Y$, which is a combination.** Hypercharge is the span of
+**4.2 $Y$, which is a diagonal subgroup of two factors.** Hypercharge is the span of
 
 $$
 T_{3R}+\tfrac12(B-L),
 $$
 
-so $\mathfrak u(1)_Y$ is a one-dimensional subspace of $\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$ and not a factor of anything. That is why the coupling $g_Y$ is not independent at the breaking scale: it is fixed by $g_R$ and $g_{B-L}$ through the normalisation of the combination, and the relation is in [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html).
+so $\mathfrak u(1)_Y$ is a one-dimensional subspace of $\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$ and not a factor of anything. **Geometrically it is the diagonal subgroup along which the two phases turn together, with the $B-L$ parameter at half the rate of the $T_{3R}$ one**, and the weight $\tfrac12$ is not a second parameter: it is one number written on two normalisations of one direction. That is why the coupling $g_Y$ is not independent at the breaking scale: it is fixed by $g_R$ and $g_{B-L}$ through the normalisation of the combination, and the relation is in [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html).
+
+**The counting, which is the sharp form of the same statement.** Four generators survive to the Standard Model, and they draw on five raw directions.
+
+| Standard Model generator | count | drawn from |
+|---|---|---|
+| $W^{1}_L,W^{2}_L,W^{3}_L$ | $3$ | $\mathrm{SU}(2)_L$, as a factor |
+| $Y$ | $1$ | one direction of $\mathrm{SU}(2)_R$ and one of $\mathrm{SU}(4)$, mixed |
+
+The surplus is not an error in the count. The two neutral raw directions span a plane; $Y$ is one direction in it; **the orthogonal direction is a physical state, the $Z_R$, which becomes massive at $M_R$.** The step $5\to4$ is therefore the step in which one gauge boson acquires a mass, and it happens entirely inside that plane.
+
+**And the vacuum is a vector, not a line.** $T_{3R}$ gives $+\tfrac12$ on $v_R e_\uparrow$ and $B-L$ gives $-1$, so neither annihilates it; the kernel is the single combination $Y$. **The line count and the generator count disagree and both are right**: a doublet has one line up to phase, so the line stabiliser is $\mathrm{U}(1)_R$ and the step reads $3\to1$; the generator that survives is one of the four directions of $\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$, so the step reads $4\to1$. A stabiliser of a vector is smaller than the stabiliser of its line, and a scalar vacuum is a vector.
 
 **4.3 $Q$, which is a combination of a combination.** The electric charge is the span of
 
@@ -105,7 +116,7 @@ $$
 
 It is the unique direction annihilated by both vacuum lines, which is why it survives: the two conditions $Q\Phi_0=0$ and $QH_0=0$ leave exactly one dimension among the five Cartan directions of $B-L$, $T_{3L}$ and $T_{3R}$.
 
-**4.4 The rank budget, read as an algebra statement.** $5\to5\to4\to3$: the Cartan rank of the residual algebra, computed as the dimension of the maximal torus that survives. The first step removes no torus direction because the sextet is off-diagonal; the second removes $T_{3R}$; the third removes $T_{3L}$ and $Y$ and keeps their sum.
+**4.4 The rank budget, read as an algebra statement.** $3\to5\to4\to3$: the Cartan rank of the residual algebra, computed as the dimension of the maximal torus that survives. **The first step adds two directions**, because the two weak $\mathrm{SU}(2)$ factors arrive with the doublet index at $M_C$ and bring their Cartans with them, while the sextet that leaves is off-diagonal and removes no torus direction. The second removes $T_{3R}$; the third removes $T_{3L}$ and $Y$ and keeps their sum.
 
 ## The Photon on One Dimension
 
@@ -138,7 +149,7 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 | the dimensions | $8+1+3+3$ | $15$ |
 | the second step | $15-3$ | $12$ |
 | the third step | $12-3$ | $9$ |
-| the rank | $\dim$ maximal torus | $5\to5\to4\to3$ |
+| the rank | $\dim$ maximal torus | $3\to5\to4\to3$ |
 | the annihilation | $Xe_t=0$ for $X\in\mathfrak{su}(3)$ | holds for all eight |
 | the surviving direction | $Q\Phi_0=QH_0=0$ | one dimension among five |
 
@@ -148,7 +159,7 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 
 **7.1 The algebra and the module.** $\mathfrak{su}(2)_L$ and $\mathfrak{su}(2)_R$ are isomorphic; the sectors are not. Every statement that treats the two as interchangeable is a statement about the algebra alone and is silent about the physics.
 
-**7.2 Posited and derived.** Colour is posited, the weak factors are read off the rotors, hypercharge and charge are derived from the two. Mixing these three provenances is the commonest error in reading the model, and the corpus's own summary of it is [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html).
+**7.2 Posited and derived.** Colour is posited, the weak factors are read off the rotors, hypercharge and charge are derived from the two. Mixing these three provenances is the commonest error in reading the model, and the corpus's own summary of it is [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html).
 
 **7.3 $\mathfrak u(1)$ as a factor and $\mathfrak u(1)$ as a direction.** $B-L$ is a factor between $M_C$ and $M_R$. $Y$ and $Q$ are never factors: they are directions in a product. A coupling can be assigned to a factor; a direction's coupling is a combination of the factors'.
 
@@ -156,7 +167,7 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 
 **The algebras.** $\mathfrak{su}(3)$ on $\mathbb C^3$, two $\mathfrak{su}(2)$ on the two doublets, and three $\mathfrak u(1)$ of which one is a factor and two are directions.
 
-**The dimensions.** $8+1+3+3=15$, then $12$, then $9$, with the rank $5\to5\to4\to3$.
+**The dimensions.** $15$ before and after the first step, then $12$, then $9$, with the rank $3\to5\to4\to3$: six leptoquarks leave as six weak generators arrive.
 
 **The two derived charges.** $Y=T_{3R}+\tfrac12(B-L)$ and $Q=T_{3L}+Y$, each a one-dimensional subspace of the algebra above it.
 
@@ -184,4 +195,4 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 - [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Hypercharge as an anomaly problem rather than a combination.
 - [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The couplings these algebras carry.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). The strong sector as the stabiliser's algebra.
-- [The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass](the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html). The dimension of the last residual algebra, counted as the massless spectrum.
+- [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The dimension of the last residual algebra, counted as the massless spectrum.

@@ -37,7 +37,7 @@ $$
 
 **What "death" means here, stated before it is used.** Two things happen to the six generators at once, and they are the same event seen twice: **they are eaten** (each becomes the longitudinal mode of a now-massive vector) and **they become heavy** ($32v^{2}$ each). Neither is a destruction. **The six are absent from the spectrum below the transition and present in it above; that is what a condensate does to a gauge direction.**
 
-**Where the rest is.** The mass matrix is [The Adjoint Mass Matrix of the Fifteen: One Number per Plane](the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html), which owns the derivation and the basis question. The six states are [The Leptoquarks: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html), which owns their mass relation and their experimental bound. The scalar that condenses is [The Scalar Sector](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). **What the six cannot do — become the weak bosons — is [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html)**, and it is the reason the next article is about an index rather than about debris.
+**Where the rest is.** The mass matrix is derived in §*The Mass the Six Acquire*, together with the basis question. The six states are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html), which owns their mass relation and their experimental bound. The scalar that condenses is the line in the centre, fixed in §*The Condensate*. **What the six cannot do — become the weak bosons — is [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html)**, and it is the reason the next article is about an index rather than about debris.
 
 ## The Condensate: One Direction, Chosen From the Carrier
 
@@ -181,6 +181,39 @@ $$
 
 **What is *not* claimed.** $32v^{2}$ is not a mass in kilograms. **All couplings here are symbolic**, and the conversion of $v_R$ into a number is an experimental question, treated in the article on the sextet and in the coupling article.
 
+## The General Vacuum, and Why the Kernel Is an Algebra
+
+**One number per plane, at any vacuum.** The corner is one point; the identity behind it is not.
+
+**The general diagonal vacuum.** Let $\Phi_0=\operatorname{diag}(d_1,d_2,d_3,d_4)$ with $\sum_j d_j=0$. The same computation gives
+
+$$
+M^{2}=2\,(d_j-d_k)^{2}\,v^{2}\ \text{on the plane }\{j,k\},\qquad
+0\ \text{on the three Cartan directions},
+$$
+
+so a squared mass is twice the square of a root of the vacuum and a massless generator is one the vacuum does not see.
+
+**The operator form, and why there are two commutators.** With $\mathcal E(X)=[D,[D,X]]$,
+
+$$
+M^{2}_{XY}=v^{2}\operatorname{tr}\bigl(X^{\dagger}\,\mathcal E(Y)\bigr),
+$$
+
+and in the basis with $\operatorname{tr}(X_a^{\dagger}X_b)=2\delta_{ab}$ the matrix is $2v^{2}$ times the matrix of $\mathcal E$. **One commutator does not preserve the fifteen**: $[A_{jk},D]=(\lambda_k-\lambda_j)S_{jk}$ is real symmetric, outside $\mathfrak{su}(4)$, and the second commutator returns $(\lambda_j-\lambda_k)^{2}A_{jk}$. The mass operator is defined on the fifteen; its square root is not.
+
+**The corner is the degenerate case.** At $D=\operatorname{diag}(-3,1,1,1)$ the three colour entries are equal, so the six roots inside the colour triple vanish. The twelve differences become $\pm4$ three times each and $0$ six times; the square sends the two signs to the single number $32v^{2}$. **The nine-and-six display is a statement about how degenerate the vacuum is**, which is the same statement as "colour is unbroken".
+
+**A regular vacuum, as the check.** At $d=(3,1,-1,-3)v$ the pairwise differences are $2,4,6$, so
+
+$$
+M^{2}=2v^{2}\cdot\{\underbrace{4,\dots,4}_{6},\underbrace{16,\dots,16}_{4},\underbrace{36,36}_{2}\},\qquad 0,0,0,
+$$
+
+that is $8v^{2}$ six times, $32v^{2}$ four times, $72v^{2}$ twice and three zeros. $6+6+3=15$: twelve roots and three Cartan directions.
+
+**The kernel is a centraliser, hence an algebra.** $\ker M^{2}=\{X:[D,X]=0\}$, and if $[D,X]=[D,Y]=0$ then $[D,[X,Y]]=0$ by the Jacobi identity. **The nine massless generators are therefore closed under the bracket by construction, not by a check of every bracket among them.** A mass matrix whose kernel is a subalgebra is the matrix statement that the breaking leaves a group standing.
+
 ## The Nine That Survive, and Why They Are Exactly Nine
 
 **The list.**
@@ -274,9 +307,5 @@ The rank is not reduced. Six dimensions leave and the torus stays; that is why t
 
 ## Further Reading
 
-- [The Adjoint Mass Matrix of the Fifteen: One Number per Plane](the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html). The derivation, the two bases, and why $32$ and $64$ are one number.
-- [The Adjoint Mass Matrix as the Square of the Roots](the-adjoint-mass-matrix-as-the-square-of-the-roots-two-v-squared-double-commutator-six-planes-and-nine-zeros.html). The same matrix read as a double commutator.
-- [The Leptoquarks: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The mass relation, the $K_L\to\mu e$ bound, and the diquark fork.
-- [The Scalar Sector: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). The multiplet that supplies the six Goldstones.
-- [The Unbroken Subgroup: Nine Massless Generators, Twelve That Acquire Mass](the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html). The same ledger as a whole.
+- [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The mass relation, the $K_L\to\mu e$ bound, and the diquark fork.
 - [What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). Why the six cannot become the weak pair.

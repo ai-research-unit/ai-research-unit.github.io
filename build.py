@@ -20,12 +20,13 @@ LEGACY_COPIES = [
     # address cannot outlive the model it described.
     ("articles_physics/construction-of-the-axf-matrices-of-the-fifteen-generators.html",
      "articles_physics/the-axf-matrices-of-the-twenty-one-generators.html"),
-    # The chain-and-spectrum and scalar-and-leptoquark articles were split in two.
-    # Sources follow the two-section rename: an alias whose source was itself
-    # renamed stops copying and serves the pre-rename text forever.
-    ("articles_physics/the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html",
+    # The chain-and-spectrum and scalar-and-leptoquark articles were split, then
+    # retired with the first symmetry-breaking section. Their old addresses now
+    # serve the articles that carry the surviving content: the handover page for
+    # the chain and its scales, the death page for the scalar and its sextet.
+    ("articles_physics/the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html",
      "articles_physics/the-breaking-chain-and-the-boson-spectrum.html"),
-    ("articles_physics/the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html",
+    ("articles_physics/the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html",
      "articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html"),
     # The classification article was split in two, bosons and fermions; the old
     # URL serves the boson article, which carries the group, the ledger and grids.
