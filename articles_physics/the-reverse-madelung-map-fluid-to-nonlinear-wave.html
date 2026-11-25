@@ -80,12 +80,12 @@
 <h2 id="the-forward-map-in-one-display">The Forward Map in One Display</h2>
 <p>The forward map writes the complex amplitude as a modulus and a phase. With</p>
 <p>$$
-Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}\,e^{i\Phi/\sigma_{\mathrm{dsp}}},
+Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}\,e^{i\digamma_{\mathrm{vel}}/\sigma_{\mathrm{dsp}}},
 \qquad
-\vec v=\vec\nabla_\Phi\Phi ,
+\vec v=\vec\nabla_\Phi\digamma_{\mathrm{vel}} ,
 $$</p>
 <p><strong>The density amplitude.</strong> The modulus of the field is the amplitude $n_{\mathrm{num}}$, defined by its square, $n_{\mathrm{num}}^{2}=\rho_{\mathrm{num}}$, and $n_0$ likewise with $n_0^{2}=\rho_0$: a root of a density is a half power of the base units and is never printed.</p>
-<p>where $\Phi$ is the velocity potential and $\sigma_{\mathrm{dsp}}$ the dispersion constant of the wave equation, the linear equation</p>
+<p>where $\digamma_{\mathrm{vel}}$ is the velocity potential and $\sigma_{\mathrm{dsp}}$ the dispersion constant of the wave equation, the linear equation</p>
 <p>$$
 i\sigma_{\mathrm{dsp}}\,\partial_{t'}Ξ_{\mathrm{wfn}}=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta_\PhiΞ_{\mathrm{wfn}}+V_{\mathrm{ext}}\,Ξ_{\mathrm{wfn}}
 $$</p>
@@ -95,7 +95,7 @@ $$</p>
 $$</p>
 <p>and the real part is the Hamilton–Jacobi equation with a second-gradient term,</p>
 <p>$$
-\partial_{t'}\Phi+\frac{\lvert\nabla\Phi\rvert^{2}}{2}+V_{\mathrm{ext}}+Q_{\mathrm{kor}}=0,
+\partial_{t'}\digamma_{\mathrm{vel}}+\frac{\lvert\nabla\digamma_{\mathrm{vel}}\rvert^{2}}{2}+V_{\mathrm{ext}}+Q_{\mathrm{kor}}=0,
 \qquad
 Q_{\mathrm{kor}}=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\frac{\Delta_\Phin_{\mathrm{num}}}{n_{\mathrm{num}}} .
 $$</p>
@@ -106,9 +106,9 @@ $$</p>
 Q_{\mathrm{kor}}=\frac{\sigma_{\mathrm{dsp}}^{2}}{2\ell^{2}}\left(1-\frac{x^{2}}{\ell^{2}}\right),
 $$</p>
 <p>which is checked by differentiating twice. Two density profiles that agree at a point and differ in curvature give different values of $Q_{\mathrm{kor}}$ at that point. <strong>So no function of the density's <em>value</em> reproduces it</strong>, and that is what the next section turns into the theorem that the pressure cannot stand in for it.</p>
-<p>The phase is not an action, and the velocity potential is the right variable. A marker's action is its velocity potential times its mass, so writing the map on $\Phi$ rather than on an action keeps the article free of a mass. Every display below is in velocities, densities and specific energies, which are the fluid's own dimensions.</p>
+<p>The phase is not an action, and the velocity potential is the right variable. A marker's action is its velocity potential times its mass, so writing the map on $\digamma_{\mathrm{vel}}$ rather than on an action keeps the article free of a mass. Every display below is in velocities, densities and specific energies, which are the fluid's own dimensions.</p>
 <h2 id="the-reverse-map">The Reverse Map</h2>
-<p>The inverse is written on the same two variables, and its output is fixed by one derivative. Given a barotropic irrotational inviscid flow, define $Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}\exp(i\Phi/\sigma_{\mathrm{dsp}})$ with $\vec v=\vec\nabla_\Phi\Phi$. The continuity equation is already the imaginary part. The Euler equation becomes the real part if and only if the pressure force is the gradient of a function of the density, and the function is fixed by</p>
+<p>The inverse is written on the same two variables, and its output is fixed by one derivative. Given a barotropic irrotational inviscid flow, define $Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}\exp(i\digamma_{\mathrm{vel}}/\sigma_{\mathrm{dsp}})$ with $\vec v=\vec\nabla_\Phi\digamma_{\mathrm{vel}}$. The continuity equation is already the imaginary part. The Euler equation becomes the real part if and only if the pressure force is the gradient of a function of the density, and the function is fixed by</p>
 <p>$$
 \frac{\mathrm{d}V}{\mathrm{d}\rho_{\mathrm{num}}}=\frac{1}{\rho_{\mathrm{mass}}}\frac{\mathrm{d}p_{\mathrm{th}}}{\mathrm{d}\rho_{\mathrm{num}}},
 \qquad\text{that is}\qquad
@@ -122,7 +122,7 @@ i\sigma_{\mathrm{dsp}}\,\partial_{t'}Ξ_{\mathrm{wfn}}=-\frac{\sigma_{\mathrm{ds
 $$</p>
 <p>The relation $\mathrm{d}p_{\mathrm{th}}=\rho_{\mathrm{mass}}\mathrm{d}V$ is the Gibbs–Duhem relation in the map's variables. It states that $V$ is the specific enthalpy, $\mathrm{d}h=\mathrm{d}p_{\mathrm{th}}/\rho_{\mathrm{mass}}$, and the identification is $V=h$. The check is one differentiation: the pressure force per unit mass is $-\vec\nabla_\Phi p_{\mathrm{th}}/\rho_{\mathrm{mass}}=-\vec\nabla_\Phi V$, and that is the acceleration the real part of the wave equation produces. $V$ is fixed up to an additive constant, and a constant shifts the frequency of the phase and nothing else.</p>
 <p>So the pressure law and the nonlinear term are the same function, written twice. That is the article's content in one sentence, and it is the reason the output of the map cannot be linear while the fluid has a pressure: a non-constant $V$ is a non-constant coefficient multiplying $Ξ_{\mathrm{wfn}}$, and a coefficient that depends on $\lvertΞ_{\mathrm{wfn}}\rvert^{2}$ is a nonlinearity.</p>
-<p>The formula and the equivalence are two different objects, and the distinction carries the article. The formula $Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}\,e^{i\Phi/\sigma_{\mathrm{dsp}}}$ is defined on every barotropic irrotational inviscid flow: it is three lines and no hypothesis beyond the existence of the two variables. What is <em>not</em> available on every such flow is the equivalence — the statement that $Ξ_{\mathrm{wfn}}$ obeys a local wave equation. That holds on the image of the forward map and nowhere else, and the next section characterises the image.</p>
+<p>The formula and the equivalence are two different objects, and the distinction carries the article. The formula $Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}\,e^{i\digamma_{\mathrm{vel}}/\sigma_{\mathrm{dsp}}}$ is defined on every barotropic irrotational inviscid flow: it is three lines and no hypothesis beyond the existence of the two variables. What is <em>not</em> available on every such flow is the equivalence — the statement that $Ξ_{\mathrm{wfn}}$ obeys a local wave equation. That holds on the image of the forward map and nowhere else, and the next section characterises the image.</p>
 <h2 id="what-class-the-map-is-defined-on">What Class the Map Is Defined On</h2>
 <p>The equivalence holds on the image of the forward map, and the image is characterised by the second-gradient term. A fluid is in the image when its Euler equation reads</p>
 <p>$$
@@ -143,7 +143,7 @@ $$</p>
 \qquad
 \rho_{\mathrm{num}}=\rho_0\ \text{constant} .
 $$</p>
-<p>It passes the velocity test, the inviscid test and the force test. Its curl vanishes by symmetry, so $\Phi=-Q_{\mathrm{src}}/(4\pi r)$ and $\vec v=\vec\nabla_\Phi\Phi$. It is inviscid. And because the density is uniform, $\rho_{\mathrm{mass}}$ is a constant and the pressure force is a gradient by inspection, $(1/\rho_{\mathrm{mass}})\vec\nabla_\Phi p_{\mathrm{th}}=\vec\nabla_\Phi(p_{\mathrm{th}}/\rho_{\mathrm{mass}})$. Euler's equation fixes the pressure field that drives the flow, $p_{\mathrm{th}}=p_\infty-\rho_{\mathrm{mass}}Q_{\mathrm{src}}^{2}/(32\pi^{2}r^{4})$, so the flow is a genuine solution and not a kinematic guess.</p>
+<p>It passes the velocity test, the inviscid test and the force test. Its curl vanishes by symmetry, so $\digamma_{\mathrm{vel}}=-Q_{\mathrm{src}}/(4\pi r)$ and $\vec v=\vec\nabla_\Phi\digamma_{\mathrm{vel}}$. It is inviscid. And because the density is uniform, $\rho_{\mathrm{mass}}$ is a constant and the pressure force is a gradient by inspection, $(1/\rho_{\mathrm{mass}})\vec\nabla_\Phi p_{\mathrm{th}}=\vec\nabla_\Phi(p_{\mathrm{th}}/\rho_{\mathrm{mass}})$. Euler's equation fixes the pressure field that drives the flow, $p_{\mathrm{th}}=p_\infty-\rho_{\mathrm{mass}}Q_{\mathrm{src}}^{2}/(32\pi^{2}r^{4})$, so the flow is a genuine solution and not a kinematic guess.</p>
 <p>So the flow is irrotational, inviscid, and its pressure force is a gradient, and it is still not barotropic in the constitutive sense. The density does not vary and the pressure does, so no law $p_{\mathrm{th}}(\rho_{\mathrm{num}})$ reproduces that field, and the map's $V(\rho_{\mathrm{num}})$ does not exist for it.</p>
 <p>The inversion can nevertheless be performed, and its output is one residual. With $\alpha_{\mathrm{src}}=Q_{\mathrm{src}}/(4\pi\sigma_{\mathrm{dsp}})$ the amplitude is $Ξ_{\mathrm{wfn}}=n_0\,e^{-i\alpha_{\mathrm{src}}/r}$. Since $-\alpha_{\mathrm{src}}/r$ is harmonic and $\lvert\nabla(-\alpha_{\mathrm{src}}/r)\rvert^{2}=\alpha_{\mathrm{src}}^{2}/r^{4}$,</p>
 <p>$$
@@ -282,7 +282,7 @@ $$</p>
 <p>Interpretation. That the equivalence on the image rather than the formula on all fluids is the right reading of the one-way correspondence. That the second-gradient term is the term the wave equation contributes and the fluid does not is exact as an identity; that this identity <em>explains</em> the direction of the correspondence is the programme's step. That the free equation is the pressureless member is a theorem on the map's family, and calling its fluid "the pressureless second-gradient fluid" is a reading of that theorem.</p>
 <p>Not claimed. It is not claimed that no other map exists between a fluid and a wave equation. The heat equation of <a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a> is a linear equation reached from a fluid, and it is not a wave equation. It is not claimed that the constant is arbitrary: it is fixed by the medium whose wave equation is being read, and the map is silent on which medium that is.</p>
 <h2 id="summary">Summary</h2>
-<p>The forward map writes $Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}e^{i\Phi/\sigma_{\mathrm{dsp}}}$ and splits a linear wave equation into the continuity equation and a Hamilton–Jacobi equation carrying the second-gradient term $Q_{\mathrm{kor}}$. It is exact away from the surfaces on which the density vanishes.</p>
+<p>The forward map writes $Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}e^{i\digamma_{\mathrm{vel}}/\sigma_{\mathrm{dsp}}}$ and splits a linear wave equation into the continuity equation and a Hamilton–Jacobi equation carrying the second-gradient term $Q_{\mathrm{kor}}$. It is exact away from the surfaces on which the density vanishes.</p>
 <p>The reverse map builds $Ξ_{\mathrm{wfn}}$ from a barotropic irrotational inviscid flow, and its nonlinear term is fixed by $\mathrm{d}p_{\mathrm{th}}=\rho_{\mathrm{mass}}\mathrm{d}V$. The pressure law and the nonlinearity are one function.</p>
 <p>The formula of the map is defined on every barotropic irrotational inviscid flow; the equivalence holds on the image of the forward map, and the image carries the second-gradient term. So the correspondence is a recognition and not an inversion.</p>
 <p>A flow can pass every one of the three tests and still fail. The incompressible point source is irrotational, inviscid and gradient-forced, and its inversion obeys the free equation plus the term $-\sigma_{\mathrm{dsp}}^{2}\alpha_{\mathrm{src}}^{2}Ξ_{\mathrm{wfn}}/(2r^{4})$: a wave equation with an external potential, which is not a law of state.</p>
@@ -301,7 +301,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}e^{i\Phi/\sigma_{\mathrm{dsp}}}$</td>
+<td>$Ξ_{\mathrm{wfn}}=n_{\mathrm{num}}e^{i\digamma_{\mathrm{vel}}/\sigma_{\mathrm{dsp}}}$</td>
 <td>Complex amplitude of the map</td>
 </tr>
 <tr>
@@ -309,8 +309,8 @@ $$</p>
 <td>Number density</td>
 </tr>
 <tr>
-<td>$\Phi$</td>
-<td>Velocity potential; $\vec v=\vec\nabla_\Phi\Phi$</td>
+<td>$\digamma_{\mathrm{vel}}$</td>
+<td>Velocity potential; $\vec v=\vec\nabla_\Phi\digamma_{\mathrm{vel}}$</td>
 </tr>
 <tr>
 <td>$\sigma_{\mathrm{dsp}}$</td>

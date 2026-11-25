@@ -85,9 +85,9 @@ $$</p>
 <h2 id="the-reduction">The Reduction</h2>
 <p><strong>A constant background turns the determinant into a mass matrix.</strong></p>
 <p>$$
-V_{\mathrm{eff}}(\Phi_{0})=V(\Phi_{0})+\frac{1}{64\pi^{2}}\operatorname{STr}\Bigl[M^{4}\Bigl(\ln\frac{M^{2}}{\mu^{2}}-\frac{3}{2}\Bigr)\Bigr],
+V_{\mathrm{eff}}(Ξ_{0})=V(Ξ_{0})+\frac{1}{64\pi^{2}}\operatorname{STr}\Bigl[M^{4}\Bigl(\ln\frac{M^{2}}{\mu^{2}}-\frac{3}{2}\Bigr)\Bigr],
 \qquad
-M^{2}_{ij}=\frac{\partial^{2}V}{\partial\chi_{i}\partial\chi_{j}}\bigg\rvert_{\Phi_{0}},
+M^{2}_{ij}=\frac{\partial^{2}V}{\partial\chi_{i}\partial\chi_{j}}\bigg\rvert_{Ξ_{0}},
 $$</p>
 <p>with $\chi_{i}$ the sixteen real components of the Hermitian matrix, $\mu$ the renormalisation scale, and $M^{2}$ the Hessian. <strong>The $\tfrac{1}{64\pi^{2}}$ is per real scalar degree of freedom</strong>, and sixteen components mean sixteen modes and no more.</p>
 <p><strong>Three things are being assumed and each is named.</strong></p>
@@ -96,13 +96,13 @@ $$</p>
 <li><em>The tree potential is the whole of the tree level.</em> No other field has a background, so the gauge and fermion determinants are field-independent and drop out.</li>
 <li><em>The expansion is one loop.</em> Every statement below is first order in $\hbar$.</li>
 </ul>
-<p><strong>The Hessian is evaluated along one direction only, and the direction is chosen for a reason.</strong> The identity, $\Phi_{0}=\frac{\rho}{2}\mathbb{1}$, is the phase's most symmetric point; <strong>its little group is all of $\mathrm{SU}(4)$, so the Hessian's blocks are fixed by symmetry and no numerical diagonalisation is needed.</strong></p>
+<p><strong>The Hessian is evaluated along one direction only, and the direction is chosen for a reason.</strong> The identity, $Ξ_{0}=\frac{\rho}{2}\mathbb{1}$, is the phase's most symmetric point; <strong>its little group is all of $\mathrm{SU}(4)$, so the Hessian's blocks are fixed by symmetry and no numerical diagonalisation is needed.</strong></p>
 <h2 id="the-hessian-block-by-block">The Hessian, Block by Block</h2>
-<p><strong>Write $\Phi=\frac{\rho}{2}\mathbb{1}+\eta$ with $\eta$ Hermitian, and split $\eta=h+\frac{t}{4}\mathbb{1}$ where $h$ is traceless and $t=\operatorname{tr}\eta$.</strong> Then</p>
+<p><strong>Write $Ξ=\frac{\rho}{2}\mathbb{1}+\eta$ with $\eta$ Hermitian, and split $\eta=h+\frac{t}{4}\mathbb{1}$ where $h$ is traceless and $t=\operatorname{tr}\eta$.</strong> Then</p>
 <p>$$
-\operatorname{tr}\Phi^{2}=\rho^{2}+\rho t+\operatorname{tr}h^{2}+\tfrac14t^{2},
+\operatorname{tr}Ξ^{2}=\rho^{2}+\rho t+\operatorname{tr}h^{2}+\tfrac14t^{2},
 $$</p>
-<p>and expanding $V=\mu^{2}\operatorname{tr}\Phi^{2}+\lambda_{1}\operatorname{tr}\Phi^{4}+\lambda_{2}\bigl(\operatorname{tr}\Phi^{2}\bigr)^{2}$ to second order gives</p>
+<p>and expanding $V=\mu^{2}\operatorname{tr}Ξ^{2}+\lambda_{1}\operatorname{tr}Ξ^{4}+\lambda_{2}\bigl(\operatorname{tr}Ξ^{2}\bigr)^{2}$ to second order gives</p>
 <p>$$
 V_{2}=\Bigl(\mu^{2}+\tfrac32\lambda_{1}\rho^{2}+2\lambda_{2}\rho^{2}\Bigr)\operatorname{tr}h^{2}
 +\Bigl(\mu^{2}+\tfrac32\lambda_{1}\rho^{2}+6\lambda_{2}\rho^{2}\Bigr)\frac{t^{2}}{4}.
@@ -139,8 +139,8 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The $15+1=16$ is the check on the decomposition</strong>, and it is the same $15+1$ the representation gives: the traceless block is the adjoint and the trace block is the singlet.</p>
-<p><strong>Why the trace block and the traceless block differ by $8\lambda_{2}\rho^{2}$.</strong> $\operatorname{tr}\Phi^{2}$ contains $t$ linearly, so the $\lambda_{2}$ term contributes to the trace direction twice over — once through $t^{2}$ and once through the cross term — while the traceless part contributes to it not at all. <strong>A block-diagonal Hessian with unequal blocks is what a two-quartic potential looks like.</strong></p>
-<p><strong>The phase direction is not among these eigenvalues, and that is correct.</strong> $V$ depends on $\Phi$ only through $\operatorname{tr}\Phi^{2}$, so the curve $\rho\mapsto\frac{\rho}{2}e^{i\theta}\mathbb{1}$ is not a direction in the Hermitian space at all — a Hermitian matrix has no such phase. <strong>The sixteen is closed under the Hessian</strong>, which is the statement that the potential's fluctuations are sixteen and not more.</p>
+<p><strong>Why the trace block and the traceless block differ by $8\lambda_{2}\rho^{2}$.</strong> $\operatorname{tr}Ξ^{2}$ contains $t$ linearly, so the $\lambda_{2}$ term contributes to the trace direction twice over — once through $t^{2}$ and once through the cross term — while the traceless part contributes to it not at all. <strong>A block-diagonal Hessian with unequal blocks is what a two-quartic potential looks like.</strong></p>
+<p><strong>The phase direction is not among these eigenvalues, and that is correct.</strong> $V$ depends on $Ξ$ only through $\operatorname{tr}Ξ^{2}$, so the curve $\rho\mapsto\frac{\rho}{2}e^{i\theta}\mathbb{1}$ is not a direction in the Hermitian space at all — a Hermitian matrix has no such phase. <strong>The sixteen is closed under the Hessian</strong>, which is the statement that the potential's fluctuations are sixteen and not more.</p>
 <h2 id="the-coefficient">The Coefficient</h2>
 <p><strong>The coefficient of $\rho^{4}\ln(\rho^{2}/\mu^{2})$ is the trace of the squared Hessian over $64\pi^{2}$.</strong></p>
 <p>$$
@@ -219,9 +219,9 @@ $$</p>
 <h2 id="what-is-not-computed">What Is Not Computed</h2>
 <p><strong>Four omissions, each with its consequence.</strong></p>
 <ul>
-<li><em>Other directions of the background.</em> At a background $\Phi_{0}\propto D$ the little group is $\mathrm{U}(3)$ and the Hessian's blocks are larger; <strong>the coefficient there is a different number and this article does not compute it.</strong> The identity was chosen because its blocks separate exactly.</li>
+<li><em>Other directions of the background.</em> At a background $Ξ_{0}\propto D$ the little group is $\mathrm{U}(3)$ and the Hessian's blocks are larger; <strong>the coefficient there is a different number and this article does not compute it.</strong> The identity was chosen because its blocks separate exactly.</li>
 <li><em>The two-loop term.</em> It is of order $\lambda^{3}$ and would shift the coefficient's logarithm; <strong>it is omitted and the omission is declared rather than estimated.</strong></li>
-<li><em>The gauge and fermion determinants.</em> They are field-independent at a scalar background with no other condensate, so they drop out — <strong>but only above $M_C$, where no vector has a mass depending on $\Phi$.</strong></li>
+<li><em>The gauge and fermion determinants.</em> They are field-independent at a scalar background with no other condensate, so they drop out — <strong>but only above $M_C$, where no vector has a mass depending on $Ξ$.</strong></li>
 <li><em>Resummation.</em> At $\rho\gg\mu$ the logarithm is large and the one-loop term must be resummed; <strong>the corpus's other effective-potential articles say the same thing</strong>, and none of them resums.</li>
 </ul>
 <h2 id="the-checks">The Checks</h2>
@@ -246,7 +246,7 @@ $$</p>
 </tr>
 <tr>
 <td>the trace block's mass</td>
-<td>differentiating $\bigl(\operatorname{tr}\Phi^{2}\bigr)^{2}$ twice</td>
+<td>differentiating $\bigl(\operatorname{tr}Ξ^{2}\bigr)^{2}$ twice</td>
 <td>$3\lambda_{1}+12\lambda_{2}$</td>
 </tr>
 <tr>
@@ -296,7 +296,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\Phi_{0}$</td>
+<td>$Ξ_{0}$</td>
 <td>$\frac{\rho}{2}\mathbb{1}$, the identity background</td>
 </tr>
 <tr>

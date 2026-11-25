@@ -74,32 +74,33 @@
 <p><strong>The question.</strong> What is the scalar piece of the $\mathrm{SU}(4)$ action, written once, and what does it imply?</p>
 <p><strong>The answer.</strong></p>
 <p>$$
-\boxed{\;\mathcal{L}_{\Phi}=\operatorname{tr}\bigl(D_{\imath}\Phi\bigr)^{\dagger}\bigl(D_{\imath}\Phi\bigr)-V(\Phi),
+\boxed{\;\mathcal{L}_{\Phi}=\operatorname{tr}\bigl(D_{\imath}Ξ\bigr)^{\dagger}\bigl(D_{\imath}Ξ\bigr)-V(Ξ),
 \qquad
-D_{\imath}\Phi=\partial_{\imath}\Phi-ig_4\sum_{a=1}^{15}A_{a,\imath}\bigl[T_{a},\Phi\bigr].\;}
+D_{\imath}Ξ=\partial_{\imath}Ξ-ig_4\sum_{a=1}^{15}A_{a,\imath}\bigl[t_{a},Ξ\bigr].\;}
 $$</p>
 <p><strong>One field, one commutator, two quartics.</strong> The commutator is what a matrix index forces; the two quartics are what a matrix admits; and the one coupling is the same $g_4$ that multiplies the curvature.</p>
 <p><strong>What this article does.</strong> It writes the piece, expands it, derives the field equation and the constraint, counts the equations against the components, and computes the four numbers the piece implies: fifteen trilinear vertices, one hundred and twenty quadrilinear ones, a rank-six vector mass matrix, and a kinetic normalisation of one.</p>
 <p><strong>What it does not do.</strong> It does not discuss the potential's minima — <a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a> does — and it does not derive the Yukawa piece, which is <a href="the-lagrangian-and-the-sixteen-kinetic-term-and-yukawa-coupling.html">The Lagrangian and the Sixteen</a>'s. <strong>The full display, with all four pieces at once, is <a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a>'s</strong>, and this article is the scalar piece of it at working size.</p>
 <h2 id="the-piece-and-why-each-symbol-is-there">The Piece, and Why Each Symbol Is There</h2>
-<p><strong>The covariant derivative acts by commutation because $\Phi$ carries one colour index of each kind.</strong></p>
+<p><strong>The covariant derivative acts by commutation because $Ξ$ carries one colour index of each kind.</strong></p>
 <p>$$
-\Phi\mapsto U\Phi U^{\dagger}
+Ξ\mapsto UΞ U^{\dagger}
 \qquad\Longrightarrow\qquad
-D_{\imath}\Phi=\partial_{\imath}\Phi-ig_4A_{a,\imath}\bigl(T_{a}\Phi-\Phi T_{a}\bigr).
+D_{\imath}Ξ=\partial_{\imath}Ξ-ig_4A_{a,\imath}\bigl(t_{a}Ξ-Ξ t_{a}\bigr).
 $$</p>
-<p><strong>A field in the fundamental would have $T_{a}\Phi$ and no second term.</strong> The second term is the price of the matrix index, and the matrix index is what the mass operator needs: $\bar\xi\Phi\xi$ is a singlet only for $\Phi\in\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$, while $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ has no $\bar{\mathbf4}$.</p>
-<p><strong>The trace is the only invariant of degree two.</strong> $\operatorname{tr}\Phi^{\dagger}\Phi$ is invariant under $\Phi\to U\Phi U^{\dagger}$ by cyclicity, and it is the sum of the absolute squares of the sixteen entries. <strong>There is no second one</strong>: $\operatorname{tr}\Phi^{2}$ vanishes for the traceless part only in special bases and is not real in general, and $\operatorname{tr}\Phi^{\dagger}\Phi^{\dagger}$ is not invariant.</p>
-<p><strong>No factor of $\tfrac12$ appears, unlike the curvature's $\tfrac14$.</strong> The reason is the normalisation $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$: the curvature is built from an anti-Hermitian object whose square has a factor $2$ to absorb, and the scalar bilinear has none. <strong>The two normalisations are checked in <a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a> against the printed arrays</strong>, where the corner direction carries trace norm $12$ and sets the coefficient.</p>
-<p><strong>Nothing is summed but the colour indices.</strong> $\Phi$ carries one lower and one upper colour index and no other label, so the trace over colour is the whole of the contraction, and the sixteen real components are the algebra's $15+1$.</p>
+<p><strong>The $t_{a}$ are the normalised Hermitian generators of <a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a>'s §<em>The Normalisation</em>, $t_{a}=iG_{a}/2$ for the thirteen arrays of trace norm $2$, $t_{c_{3}}=i(d_{2}-d_{3})/\sqrt{12}$ and $t_{15}=iG_{15}/\sqrt{24}$, with $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$.</strong> The printed arrays $G_{a}$ are anti-Hermitian, and the pair (Hermitian $t_{a}$, coupling $-ig_4$) is the one that keeps the three-point vertex nonzero: <strong>with an anti-Hermitian generator and the same $i$, the two orderings of the cross term have equal trace and cancel, and the cubic term vanishes identically.</strong> That is the one place where a change of basis silently deletes an interaction, and it is why this article and the parent article use the same pair.</p>
+<p><strong>A field in the fundamental would have $t_{a}Ξ$ and no second term.</strong> The second term is the price of the matrix index, and the matrix index is what the mass operator needs: $\bar\xiΞ\xi$ is a singlet only for $Ξ\in\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$, while $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ has no $\bar{\mathbf4}$.</p>
+<p><strong>The trace is the only invariant of degree two.</strong> $\operatorname{tr}Ξ^{\dagger}Ξ$ is invariant under $Ξ\to UΞ U^{\dagger}$ by cyclicity, and it is the sum of the absolute squares of the sixteen entries. <strong>There is no second one.</strong> For a Hermitian $Ξ$ the two candidates coincide, $\operatorname{tr}Ξ^{\dagger}Ξ=\operatorname{tr}Ξ^{2}$, both real, so a count of degree-two invariants gives one and not two; <strong>a second would need $Ξ$ complex, and the field is not</strong>.</p>
+<p><strong>No factor of $\tfrac12$ appears, unlike the curvature's $\tfrac14$.</strong> The reason is the normalisation $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$: the curvature is an algebra element squared and its trace supplies a $\tfrac12$, and the scalar bilinear is a trace of two fields and supplies none. <strong>The two normalisations are checked in <a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a> against the printed arrays</strong>, where the corner direction carries trace norm $12$ and sets the coefficient.</p>
+<p><strong>Nothing is summed but the colour indices.</strong> $Ξ$ carries one lower and one upper colour index and no other label, so the trace over colour is the whole of the contraction, and the sixteen real components are the algebra's $15+1$.</p>
 <h2 id="the-expansion">The Expansion</h2>
 <p><strong>Four kinds of term, counted.</strong></p>
 <p>$$
-\operatorname{tr}\bigl(D_{\imath}\Phi\bigr)^{\dagger}\bigl(D_{\imath}\Phi\bigr)
+\operatorname{tr}\bigl(D_{\imath}Ξ\bigr)^{\dagger}\bigl(D_{\imath}Ξ\bigr)
 =
-\underbrace{\operatorname{tr}\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi}_{\text{kinetic}}
-\underbrace{-ig_4A_{a,\imath}\operatorname{tr}\bigl(\partial_{\imath}\Phi^{\dagger}[T_{a},\Phi]-[T_{a},\Phi]^{\dagger}\partial_{\imath}\Phi\bigr)}_{\text{one gauge field}}
-\underbrace{+g_4^{2}A_{a,\imath}A_{b,\imath}\operatorname{tr}\bigl([T_{a},\Phi]^{\dagger}[T_{b},\Phi]\bigr)}_{\text{two gauge fields}} .
+\underbrace{\operatorname{tr}\partial_{\imath}Ξ^{\dagger}\partial_{\imath}Ξ}_{\text{kinetic}}
+\underbrace{-2ig_4A_{a,\imath}\operatorname{tr}\bigl(\partial_{\imath}Ξ\,[t_{a},Ξ]\bigr)}_{\text{one gauge field}}
+\underbrace{+g_4^{2}A_{a,\imath}A_{b,\imath}\operatorname{tr}\bigl([t_{a},Ξ]^{\dagger}[t_{b},Ξ]\bigr)}_{\text{two gauge fields}} .
 $$</p>
 <p><strong>The counts follow from the indices and not from a diagram.</strong></p>
 <div class="table-scroll"><table>
@@ -112,22 +113,22 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\Phi^{\dagger}\Phi\,\partial\partial$</td>
+<td>$Ξ^{\dagger}Ξ\,\partial\partial$</td>
 <td>the propagator</td>
 <td>$1$</td>
 </tr>
 <tr>
-<td>$A\,\Phi^{\dagger}\partial\Phi$</td>
+<td>$A\,Ξ^{\dagger}\partialΞ$</td>
 <td>one generator per vertex</td>
 <td>$15$</td>
 </tr>
 <tr>
-<td>$A A\,\Phi^{\dagger}\Phi$</td>
+<td>$A A\,Ξ^{\dagger}Ξ$</td>
 <td>a symmetric pair $(a,b)$ per vertex</td>
 <td>$\tfrac{15\cdot16}{2}=120$</td>
 </tr>
 <tr>
-<td>$V(\Phi)$</td>
+<td>$V(Ξ)$</td>
 <td>three coefficients</td>
 <td>$3$</td>
 </tr>
@@ -135,23 +136,25 @@ $$</p>
 </table></div>
 <p><strong>One hundred and twenty is the number that a quartet reading would have got wrong in the other direction</strong>: a quartet couples to all fifteen generators too, so the trilinear count is the same, but the quadrilinear count differs because the commutator's structure constants enter. <strong>The count of pairs, $15\cdot16/2=120$, is the count of symmetric $15\times15$ matrices and is fixed by the group alone.</strong></p>
 <h2 id="the-field-equation">The Field Equation</h2>
-<p><strong>Vary $\Phi^{\dagger}$ and the commutator appears twice.</strong></p>
+<p><strong>Vary $Ξ^{\dagger}$ and the commutator appears twice.</strong></p>
 <p>$$
-D_{\imath}D_{\imath}\Phi+\frac{\partial V}{\partial\Phi^{\dagger}}=0,
+D_{\imath}D_{\imath}Ξ+\frac{\partial V}{\partialΞ^{\dagger}}=0,
 \qquad
-\frac{\partial V}{\partial\Phi^{\dagger}}=\mu_{\Phi}^{2}\Phi+2\lambda_{1}\Phi\Phi^{\dagger}\Phi+2\lambda_{2}\bigl(\operatorname{tr}\Phi^{\dagger}\Phi\bigr)\Phi .
+\frac{\partial V}{\partialΞ^{\dagger}}=\mu_{\Phi}^{2}Ξ+2\lambda_{1}ΞΞ^{\dagger}Ξ+2\lambda_{2}\bigl(\operatorname{tr}Ξ^{\dagger}Ξ\bigr)Ξ .
 $$</p>
-<p><strong>The derivative of the potential is a matrix and not a number</strong>, and that is the difference between this field and a quartet: $\partial V/\partial\Phi^{\dagger}$ carries the same two indices as $\Phi$, so the equation is an equation between matrices and holds entry by entry.</p>
-<p><strong>The two quartics produce two different cubic terms in the equation of motion.</strong> $\Phi\Phi^{\dagger}\Phi$ is a matrix product of three factors; $(\operatorname{tr}\Phi^{\dagger}\Phi)\Phi$ is a number times the field. <strong>A potential with one quartic would have only the second kind</strong>, and the difference is what makes the model's vacuum shape a dynamical question.</p>
+<p><strong>The derivative of the potential is a matrix and not a number</strong>, and that is the difference between this field and a quartet: $\partial V/\partialΞ^{\dagger}$ carries the same two indices as $Ξ$, so the equation is an equation between matrices and holds entry by entry.</p>
+<p><strong>The two quartics produce two different cubic terms in the equation of motion.</strong> $ΞΞ^{\dagger}Ξ$ is a matrix product of three factors; $(\operatorname{tr}Ξ^{\dagger}Ξ)Ξ$ is a number times the field. <strong>A potential with one quartic would have only the second kind</strong>, and the difference is what makes the model's vacuum shape a dynamical question.</p>
 <p><strong>The covariant derivative is the commutator, so the equation is a matrix equation with a connection.</strong> Its flat-space limit is not a wave equation with a potential but a wave equation with a connection, and the difference is the whole of the gauge–scalar coupling.</p>
 <h2 id="the-constraint">The Constraint</h2>
 <p><strong>The temporal component of the gauge equation is a Gauss law, and the scalar contributes to its charge.</strong></p>
 <p>$$
-D_{\imath}F_{a,0\imath}=j_{a,0},
+D_{\imath}F_{a,0\imath}=j^{Ξ}_{a,0},
 \qquad
-j^{\Phi}_{a,0}=ig_4\sum_{\alpha=1}^{2}\operatorname{tr}\Bigl(\bigl(D_{0}\Phi\bigr)^{\dagger}\bigl[T_{a},\Phi\bigr]\Bigr).
+j^{Ξ}_{a,0}=-2ig_4\operatorname{tr}\Bigl(\bigl(D_{0}Ξ\bigr)\bigl[t_{a},Ξ\bigr]\Bigr).
 $$</p>
-<p><strong>The scalar current is quadratic in $\Phi$ above $M_C$ and linear below it</strong>, because only below the transition is there a $\langle\Phi\rangle$ to split off. <strong>That shift is the whole mechanism of the vector masses</strong>: with $\Phi=\Phi_{0}+\varphi$ the quadratic term produces a piece linear in $\varphi$, and a piece linear in the fluctuation is what a mass term is.</p>
+<p><strong>The current here carries its own power of $g_4$, so the equation has none on the left</strong>; <a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a> factors the same $g_4$ out and writes $D_{\imath}F_{a,0\imath}=-g_4j^{Ξ}_{a,0}$ with the $g_4$ removed from $j$. <strong>One convention or the other, and never both.</strong></p>
+<p><strong>The factor $2$ is the commutator's two orderings and the $i$ is the one in the covariant derivative.</strong> The derivative of the kinetic term with respect to $A_{a,0}$ is $-2ig_4\operatorname{tr}((D_{0}Ξ)[t_{a},Ξ])$: the two cross terms have the same sign because the dagger flips one of them, and they add rather than cancel. <strong>The product is purely imaginary, since $(D_{0}Ξ)$ is Hermitian and $[t_{a},Ξ]$ is anti-Hermitian, so the current is real and the $i$ is not a sign error.</strong> A current written with one $i$, one power of $g_4$ and no $2$ is off by a factor two on every emission.</p>
+<p><strong>The scalar current is quadratic in $Ξ$ above $M_C$ and linear below it</strong>, because only below the transition is there a $\langleΞ\rangle$ to split off. <strong>That shift is the whole mechanism of the vector masses</strong>: with $Ξ=Ξ_{0}+\delta Ξ$ the quadratic term produces a piece linear in $\delta Ξ$, and a piece linear in the fluctuation is what a mass term is.</p>
 <p><strong>The current is conserved covariantly and not ordinarily.</strong> $D_{\imath}j_{\imath}=0$ follows from the invariance of the action; $\partial_{\imath}j_{\imath}=0$ does not, because of the $[A_{\imath},j_{\imath}]$ term. <strong>So no gauge charge exists above $M_C$</strong>, exactly as in the strong sector, and the corpus's charge theorem below $M_C$ is a statement about the residual group and not about this one.</p>
 <h2 id="the-count-of-components-against-the-count-of-equations">The Count of Components Against the Count of Equations</h2>
 <p><strong>Sixteen real components and sixteen real equations, and the counting is one to one.</strong></p>
@@ -164,7 +167,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>real components of $\Phi$</td>
+<td>real components of $Ξ$</td>
 <td>$16$</td>
 </tr>
 <tr>
@@ -177,15 +180,15 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The reason there is nothing to halve is Hermiticity.</strong> The field is Hermitian, so varying with respect to $\Phi$ and varying with respect to $\Phi^{\dagger}$ give the <em>same</em> equation and not a conjugate pair; the sixteen equations are sixteen and not half of thirty-two. <strong>A complex matrix would have needed the dagger to be tracked separately</strong>, and that is one more reason the physical field is the Hermitian one.</p>
+<p><strong>The reason there is nothing to halve is Hermiticity.</strong> The field is Hermitian, so varying with respect to $Ξ$ and varying with respect to $Ξ^{\dagger}$ give the <em>same</em> equation and not a conjugate pair; the sixteen equations are sixteen and not half of thirty-two. <strong>A complex matrix would have needed the dagger to be tracked separately</strong>, and that is one more reason the physical field is the Hermitian one.</p>
 <p><strong>Below $M_C$ the count changes and the arithmetic is the census's.</strong> Six components become the longitudinal modes of six vectors, and the count of physical scalars falls to ten. <strong>The two numbers, sixteen and ten, are the same field counted in two phases</strong>, and <a href="the-scalar-content-one-matrix-and-ten-survivors.html">The Scalar Content</a> does the second count.</p>
 <h2 id="the-vector-mass-matrix-read-as-a-gram-matrix">The Vector Mass Matrix, Read as a Gram Matrix</h2>
-<p><strong>At a vacuum $\Phi_{0}=v_C D$ the quadrilinear term is the only one that survives, and it is a Gram matrix.</strong></p>
+<p><strong>At a vacuum $Ξ_{0}=v_C D$ the quadrilinear term is the only one that survives, and it is a Gram matrix.</strong></p>
 <p>$$
-M^{2}_{ab}=g_4^{2}\operatorname{tr}\Bigl(\bigl[T_{a},v_CD\bigr]^{\dagger}\bigl[T_{b},v_CD\bigr]\Bigr)
-=g_4^{2}v_C^{2}\,\bigl\langle[T_{a},D],[T_{b},D]\bigr\rangle .
+M^{2}_{ab}=g_4^{2}\operatorname{tr}\Bigl(\bigl[t_{a},v_CD\bigr]^{\dagger}\bigl[t_{b},v_CD\bigr]\Bigr)
+=g_4^{2}v_C^{2}\,\bigl\langle[t_{a},D],[t_{b},D]\bigr\rangle .
 $$</p>
-<p><strong>The matrix is the Gram matrix of fifteen vectors in a fifteen-dimensional space</strong>, so its rank is the dimension of the span of $\{[T_{a},D]\}$ — which is the number of generators that do not commute with $D$.</p>
+<p><strong>The matrix is the Gram matrix of fifteen vectors in a fifteen-dimensional space</strong>, so its rank is the dimension of the span of $\{[t_{a},D]\}$ — which is the number of generators that do not commute with $D$.</p>
 <p><strong>Fifteen generators, nine commuting with $D$, so six vectors span.</strong> Therefore $\operatorname{rank}M^{2}=6$ and $\ker M^{2}$ has dimension $15-6=9$. <strong>The nine zero eigenvalues are the nine massless vectors</strong>, and the six nonzero ones are the leptoquarks. <strong>This is the vector mass spectrum derived from the scalar kinetic term and from nothing else</strong>, and it agrees with the breaking article's generator-by-generator computation.</p>
 <p><strong>The kernel is a subalgebra.</strong> If $[D,X]=[D,Y]=0$ then $[D,[X,Y]]=0$ by Jacobi, so $\ker\operatorname{ad}(D)$ is closed under commutation. <strong>That is why the nine massless vectors form the group they do</strong>, and it is the reason the residual group is $\mathrm{U}(3)$ rather than an arbitrary nine-dimensional subspace.</p>
 <p><strong>One number the Gram matrix fixes.</strong> With the corpus's normalisation the nonzero eigenvalues are equal, $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$, and the ratio to the right-handed vector's mass is $\sqrt2$ times a coupling ratio. <strong>The Gram matrix gives equality; the $\sqrt2$ is the group's</strong>, and <a href="six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html">The Six Leptoquarks</a> carries it.</p>
@@ -194,7 +197,7 @@ $$</p>
 <ul>
 <li><em>No mass term.</em> $\mu_{\Phi}^{2}$ is a coefficient of the potential, and a mass for the fifteen is forbidden by gauge invariance.</li>
 <li><em>No second scale.</em> The piece has $g_4$ and no other coupling; $v_C$ is the potential's.</li>
-<li><em>No Yukawa.</em> The fermion–scalar vertex $y\bar\xi\Phi\xi$ is a separate piece and a separate matrix.</li>
+<li><em>No Yukawa.</em> The fermion–scalar vertex $y\bar\xiΞ\xi$ is a separate piece and a separate matrix.</li>
 <li><em>No second colour contraction.</em> The trace is the only invariant of degree two, so no second kinetic structure is available.</li>
 <li><em>No loop.</em> The piece is classical, and the one-loop correction is <a href="the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html">The One-Loop Effective Potential</a>'s.</li>
 </ul>
@@ -220,7 +223,7 @@ $$</p>
 </tr>
 <tr>
 <td>the derivative of the potential</td>
-<td>a matrix with $\Phi$'s indices</td>
+<td>a matrix with $Ξ$'s indices</td>
 <td>entry by entry</td>
 </tr>
 <tr>
@@ -235,7 +238,7 @@ $$</p>
 </tr>
 <tr>
 <td>the vector mass matrix</td>
-<td>a Gram matrix of $[T_{a},D]$</td>
+<td>a Gram matrix of $[t_{a},D]$</td>
 <td>rank $6$</td>
 </tr>
 <tr>
@@ -269,24 +272,24 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\Phi$</td>
+<td>$Ξ$</td>
 <td>the Hermitian scalar matrix, $16$ real components</td>
 </tr>
 <tr>
-<td>$D_{\imath}\Phi$</td>
-<td>$\partial_{\imath}\Phi-ig_4[A_{a,\imath}T_{a},\Phi]$, the commutator form</td>
+<td>$D_{\imath}Ξ$</td>
+<td>$\partial_{\imath}Ξ-ig_4[A_{a,\imath}t_{a},Ξ]$, the commutator form</td>
 </tr>
 <tr>
-<td>$V(\Phi)$</td>
-<td>$\mu_{\Phi}^{2}\operatorname{tr}\Phi^{2}+\lambda_{1}\operatorname{tr}\Phi^{4}+\lambda_{2}(\operatorname{tr}\Phi^{2})^{2}$</td>
+<td>$V(Ξ)$</td>
+<td>$\mu_{\Phi}^{2}\operatorname{tr}Ξ^{2}+\lambda_{1}\operatorname{tr}Ξ^{4}+\lambda_{2}(\operatorname{tr}Ξ^{2})^{2}$</td>
 </tr>
 <tr>
-<td>$j^{\Phi}_{a,\imath}$</td>
-<td>the scalar current, $ig_4\operatorname{tr}((D_{\imath}\Phi)^{\dagger}[T_{a},\Phi])$</td>
+<td>$j^{Ξ}_{a,\imath}$</td>
+<td>the scalar current, $-2ig_4\operatorname{tr}((D_{\imath}Ξ)[t_{a},Ξ])$</td>
 </tr>
 <tr>
 <td>$M^{2}_{ab}$</td>
-<td>the vector mass matrix, a Gram matrix of $[T_{a},D]$</td>
+<td>the vector mass matrix, a Gram matrix of $[t_{a},D]$</td>
 </tr>
 <tr>
 <td>$D$</td>
@@ -297,7 +300,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a>. The same piece inside the full display, with the four pieces and the ceiling.</li>
-<li><a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a>. $V(\Phi)$'s minima, its boundedness cone and the declared vacuum's status.</li>
+<li><a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a>. $V(Ξ)$'s minima, its boundedness cone and the declared vacuum's status.</li>
 <li><a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">The Breaking of the Primordial Force</a>. The Gram matrix computed generator by generator.</li>
 <li><a href="the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html">The One-Loop Effective Potential</a>. The correction to this classical piece.</li>
 </ul>
