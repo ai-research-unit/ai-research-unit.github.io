@@ -36,7 +36,7 @@ No other convention enters, and no generator is rescaled.
 $$
 \pm\tfrac23,\quad \pm1,\quad \pm\tfrac43,\quad \pm2,\quad \pm4 .
 $$
-**Five magnitudes, each a rational with denominator $1$ or $3$**, and no other number appears anywhere in the table. **The half and the third of the old table came from the weak arrays**, whose normalisation is the half and whose planes are the sums.
+**Five magnitudes, each a rational with denominator $1$ or $3$**, and no other number appears anywhere in the table. **The half and the third of the old table came from the six halves**, whose normalisation is the half and whose planes are the sums.
 
 **Most entries are short, and shorter than they were.** Seventy-six of the $80$ nonzero brackets carry one term, one carries two, and three carry three. **The three are the $\{t,k\}$ planes paired with their own imaginary partner**, whose answer needs all three diagonal directions; **the single two-term entry is $[A_{xz},iS_{xz}]=2\,d_2+2\,d_3$**, the one diagonal that needs two of the three to be named.
 
@@ -242,7 +242,7 @@ T^{L}_{a}=-\tfrac12\bigl(A_{ta}+A_{bc}\bigr),\qquad
 T^{R}_{a}=-\tfrac12\bigl(A_{ta}-A_{bc}\bigr),
 $$
 
-with $(a,b,c)$ cyclic in $(x,y,z)$. **They are not generators of this model.** They are a rotated basis of the six-dimensional real subspace $\operatorname{span}\{A_{ab}\}=\mathfrak{so}(4)\subset\mathfrak{su}(4)$, and the rank of the twenty-one printed arrays is fifteen. **So a bracket of two of them is a bracket of two plane arrays, and every entry is already in Part I or Part II.**
+with $(a,b,c)$ cyclic in $(x,y,z)$. **They are not generators of this model.** They are a rotated basis of the six-dimensional real subspace $\operatorname{span}\{A_{ab}\}=\mathfrak{so}(4)\subset\mathfrak{su}(4)$, and they add no direction: the printed arrays span fifteen dimensions. **So a bracket of two of them is a bracket of two plane arrays, and every entry is already in Part I or Part II.**
 
 **Their brackets, from the five rules and nothing more.** Because each is half a sum or difference of two planes,
 

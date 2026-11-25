@@ -98,7 +98,7 @@ so the corner's coupling is weaker than the planes' by $\sqrt{2/24}=0.2887$. **T
 | the sixteen fermions | $16$ | $0$ | $i\bar\sigma^{\imath}k_{\imath}/k^{2}$ per Weyl field |
 | $\Phi$'s ten surviving components | $10$ | $2\lambda v^{2}$ on the radial mode | $i/(k^{2}-m^{2}+i\epsilon)$ |
 
-**There is no mixing matrix to invert.** In the left–right frame the propagator section had to rotate four neutral fields and produce a photon and a $Z$; **here the mass matrix is already diagonal in the basis of planes, and the rotation is the identity.** The mixing that the successor needs is downstream, and it is not in this Lagrangian.
+**There is no mixing matrix to invert.** A four-factor propagator section would have to rotate four neutral fields and produce a photon and a $Z$; **here the mass matrix is already diagonal in the basis of planes, and the rotation is the identity.** The mixing below $M_C$ is downstream, and it is not in this Lagrangian.
 
 **Two of the nine are massless for two different reasons, and the difference is not cosmetic.** The eight gluons are massless because their generators commute with $D$, which is an exact statement about the stabiliser. **The corner is massless because it is $D$ itself**: $[D,[D,iD]]=0$ for any diagonal, so the direction of the condensate cannot be lifted by the condensate. **A ninth massless field that is massless for a different reason is the one place where a counting argument can go wrong.**
 
@@ -171,7 +171,7 @@ $$
 
 ## What the Rules Do Not Contain
 
-**No $W$, no $Z$, no photon.** The model has one unbroken $\mathrm{U}(1)$ and eight gluons; **the electroweak gauge fields are the successor's, and so are their vertices.** A rule set that printed a $Wff$ vertex would be printing a vertex of a different Lagrangian.
+**No $W$, no $Z$, no photon.** The model has one unbroken $\mathrm{U}(1)$ and eight gluons; **the electroweak gauge fields arrive at $M_C$, and so do their vertices.** A rule set that printed a $Wff$ vertex would be printing a vertex of a different Lagrangian.
 
 **No fermion masses and no mixing angles.** The sixteen Weyl fields are massless until the condensate gives them a Yukawa matrix, and that matrix is [the Yukawa article](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). **No CKM matrix and no PMNS matrix**: both need two factors and a second condensate.
 
@@ -204,7 +204,7 @@ $$
 
 **The normalisation is the only place a convention can go wrong**, and it is fixed by one number: the corner is $\sqrt6$ longer than the planes, so its coupling is $0.2887$ of theirs after a canonical kinetic term.
 
-**What the rules do not contain is the successor's list**, and the list is short because the group is one group: no $W$, no $Z$, no photon, no mixing matrix, no coupling ratio, and no fermion mass without the condensate.
+**What the rules do not contain is the low-energy list**, and it is short because the group is one group: no $W$, no $Z$, no photon, no mixing matrix, no coupling ratio, and no fermion mass without the condensate.
 
 ## Summary of Notation
 

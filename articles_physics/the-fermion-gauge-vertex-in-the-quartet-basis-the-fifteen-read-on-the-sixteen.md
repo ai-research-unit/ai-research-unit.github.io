@@ -180,7 +180,7 @@ $$
 
 ## What the Article Does Not Do
 
-**No weak matrices, because there are none.** The old frame printed $\mathbb 1_{4}\otimes\tau_{i}$ beside the fifteen and counted $88$ vertices per chirality. **Those three matrices are not generators of this model**, and a table that lists them as gauge vertices is a table of a different Lagrangian. **The successor's weak sector is treated downstream**, where the second factor exists.
+**No weak matrices, because there are none.** Three matrices $\mathbb 1_{4}\otimes\tau_{i}$ would sit beside the fifteen and make $88$ vertices per chirality. **They are not generators of this model**, and a table that lists them as gauge vertices is a table of a different Lagrangian. **The weak sector is treated downstream**, where the second factor exists.
 
 **No derivation of the fermion action and no loop.** The matrices are exact; the statement that a fermion propagates with them is imported. **No anomalous magnetic moment, no running coupling, no vertex correction**: all three need the loop expansion the corpus does not attempt here.
 

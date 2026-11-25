@@ -6,7 +6,7 @@
 
 The classification of one generation is a closed list. Sixteen cells, one name per cell, one charge per row, and no room left for a question. The question arrives the moment a second copy is written beside the first, because the copy is identical in every column but one: the mass.
 
-**A warning before the reader starts, because the vocabulary is the successor's.** This model has a two-valued copy index and no generation label: **its sixteen fields are eight, counted twice, and the copy index is the weak-doublet slot.** The three-column table below is measured data and belongs to the successor; **what this article establishes is why no gauge measurement could ever explain the columns, which is a statement about the group and holds in either frame.**
+**A warning before the reader starts, because the vocabulary is the weak sector's.** This model has a two-valued copy index and no generation label: **its sixteen fields are eight, counted twice, and the copy index is the weak-doublet slot.** The three-column table below is measured data and describes the weak sector below $M_C$; **what this article establishes is why no gauge measurement could ever explain the columns, which is a statement about the group.**
 
 This article is about that second copy and the third. It asks what distinguishes a generation from its neighbours, and it gets exactly three answers. Charge, colour, weak isospin and $B-L$ are the same in all three columns, so they cannot distinguish anything. Mass differs, lifetime differs, and the decay pattern differs. Those three differences are the whole of flavour, and the first task is to show that they are not three independent things.
 
@@ -52,13 +52,13 @@ $$
 
 **No gauge measurement distinguishes the two copies.** A charge measurement returns $q$ twice, and the copies are distinguished only by mass. **That is the structural fact the whole of flavour rests on**, and here it is visible in a $2\times2$ matrix.
 
-**No gauge boson changes the index at tree level.** A gauge vertex is $\mathbb 1_{n}$ on the index, so a vertex that joins two different sectors is the product of two different rotations, $X^{\dagger}Y$, and only a vertex that changes the sector can leave a misalignment. **In this model there is no such vertex at all**, because no generator carries $\alpha$; the misalignment exists only in the successor, where a charged current joins two doublet slots.
+**No gauge boson changes the index at tree level.** A gauge vertex is $\mathbb 1_{n}$ on the index, so a vertex that joins two different sectors is the product of two different rotations, $X^{\dagger}Y$, and only a vertex that changes the sector can leave a misalignment. **In this model there is no such vertex at all**, because no generator carries $\alpha$; the misalignment exists only below $M_C$, where a charged current joins two doublet slots.
 
 **The only free object in the sector is the Yukawa matrix.** Since no generator can distinguish the copies, the difference between them must sit where the algebra does not constrain — [the Yukawa article](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html) is that place, and it holds two numbers.
 
-**What the lemma does not give, and the honest sentence.** The measured flavour data are a *three*-column table, and **this model has a two-valued index and no generation label**: the three columns are the successor's, and every number below is data. **The lemma is quoted because it is the reason no gauge measurement can ever explain them**, not because it produces them.
+**What the lemma does not give, and the honest sentence.** The measured flavour data are a *three*-column table, and **this model has a two-valued index and no generation label**: the three columns describe the weak sector, and every number below is data. **The lemma is quoted because it is the reason no gauge measurement can ever explain them**, not because it produces them.
 
-**The old form of this section, and why it was wrong here.** It wrote $\mathbf{16}\otimes\mathbb C^{3}$ and $T_{3L}\otimes\mathbb 1_{3}$. **Both belong to the successor**: the $\mathbf{16}$ is not a representation of $\mathfrak{su}(4)$, and $T_{3L}$ is not one of the fifteen. **The theorem survives the rewriting, and the symbols do not.**
+**The symbols to avoid, and why.** Writing $\mathbf{16}\otimes\mathbb C^{3}$ and $T_{3L}\otimes\mathbb 1_{3}$ imports the weak sector: **the $\mathbf{16}$ is not a representation of $\mathfrak{su}(4)$, and $T_{3L}$ is not one of the fifteen.** **The theorem survives the translation, and the symbols do not.**
 
 ## The Sixteen Rows
 
@@ -103,7 +103,7 @@ Read the table by column instead of by row and the tripling appears as three dif
 
 | handle | what it is | is it independent? |
 |---|---|---|
-| mass | the eigenvalues of the Yukawa matrix (successor: $3\times3$; this model: $2\times2$) | yes, one arbitrary matrix |
+| mass | the eigenvalues of the Yukawa matrix ($3\times3$ below $M_C$; $2\times2$ here) | yes, one arbitrary matrix |
 | lifetime | the inverse width | no, a function of the mass |
 | decay pattern | which channels are open | no, a function of the mass |
 
@@ -256,7 +256,7 @@ No mixing angle and no phase is derived. Nine of the eighteen real parameters of
 
 Flavour-changing neutral currents of the neutral gauge bosons are absent at tree level. That is a prediction rather than a gap, and its test is the LEP table of *The One Sharp Prediction: Sameness*. A leptoquark exchange is not one of them: it carries colour and charge, and the tree-level kaon channel is its business.
 
-One thing the model does not settle, kept separate from the four. The leptoquarks carry one coupling for every generation, so in the gauge basis their vertex has no generation index. Whether that survives diagonalisation is a question about the Yukawa sector and not about the gauge sector: this model has one Yukawa matrix, so its two sectors are aligned and no generation change exists at all, while a successor with a second matrix would leave a mixing matrix the corpus does not write. **The model therefore cannot say whether charged-lepton flavour is violated, and it says so in [Lepton Flavour in the $\mathrm{SU}(4)$ Model](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html).** That is the opposite of the mass problem: the model cannot say why the masses differ, and it can say that the bosons do not care that they do.
+One thing the model does not settle, kept separate from the four. The leptoquarks carry one coupling for every generation, so in the gauge basis their vertex has no generation index. Whether that survives diagonalisation is a question about the Yukawa sector and not about the gauge sector: this model has one Yukawa matrix, so its two sectors are aligned and no generation change exists at all, while a second matrix below $M_C$ would leave a mixing matrix the corpus does not write. **The model therefore cannot say whether charged-lepton flavour is violated, and it says so in [Lepton Flavour in the $\mathrm{SU}(4)$ Model](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html).** That is the opposite of the mass problem: the model cannot say why the masses differ, and it can say that the bosons do not care that they do.
 
 ## Checks
 

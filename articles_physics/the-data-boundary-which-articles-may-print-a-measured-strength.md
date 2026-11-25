@@ -58,7 +58,7 @@ Each row names the quantity and does not give its value. The value is in the art
 | [Grand Unification in the Biquaternion Framework](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html) | the measured strengths, to test the meeting | the meeting of measured strengths is the test, and it fails on data |
 | [The Petiau System and the Quantisation of Mass](the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html) | the fine-structure value, inside an empirical leptonic formula | the formula is empirical, and the article says so |
 
-The category holds one hundred and fifty-two articles: two claims, sixteen data, and the remaining one hundred and thirty-four structural. They state a group, a carrier, a multiplet list, a charge, an anomaly identity, a boson count, a dimension budget or a diagram, with every strength a symbol and no value attached. They are not listed here because the list would be the category.
+The category holds one hundred and fifty-five articles: two claims, sixteen data, and the remaining one hundred and thirty-seven structural. They state a group, a carrier, a multiplet list, a charge, an anomaly identity, a boson count, a dimension budget or a diagram, with every strength a symbol and no value attached. They are not listed here because the list would be the category.
 
 ## The Five Tests a New Article Must Pass
 
@@ -86,7 +86,7 @@ An article may print a strength value only if all five hold. If one fails, the v
 
 | claim | check | result |
 |---|---|---|
-| the register is complete | every menu entry in the category tested for a strength value | two claims, sixteen data, one hundred and thirty-four structural |
+| the register is complete | every menu entry in the category tested for a strength value | two claims, sixteen data, one hundred and thirty-seven structural |
 | the register obeys its own rule | the article searched for a numeric strength | none |
 | the claim articles are in the coupling section | menu position | both, and only they |
 | the definition is distinguished from a value | the charge–angle relation read three ways | definition structural, value data, prediction a claim |

@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This article classifies nothing. It states one hypothesis about why the fermions come in three copies, and what that hypothesis does and does not explain. The classification of one generation is finished elsewhere, in [The Fermions of One Generation](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). That article names the sixteen cells, the twenty-one bosons and the twelve surviving scalars, and it says nothing about flavour. The separation is deliberate: the classification states a structure, flavour states a spectrum, and a nomenclature that absorbs both stops being a nomenclature.
+This article classifies nothing. It states one hypothesis about why the fermions come in three copies, and what that hypothesis does and does not explain. The classification of one generation is finished elsewhere, in [The Fermions of One Generation](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). That article names the sixteen cells, the fifteen bosons and the twelve surviving scalars, and it says nothing about flavour. The separation is deliberate: the classification states a structure, flavour states a spectrum, and a nomenclature that absorbs both stops being a nomenclature.
 
 The hypothesis is that there are no elementary particles, only fields and their levels of combined excitation. Flavour 1 is the ground level, flavour 2 the first combined level, and flavour 3 the second. The ladder has three rungs: the three copies are the whole of it, and there is no fourth.
 
@@ -22,7 +22,7 @@ S\;\longrightarrow\;S\otimes\mathbb C^{n},
 \tilde Q\cdot(\Xi\otimes f)=(\tilde Q\cdot\Xi)\otimes f .
 $$
 
-Every operator the model builds from the group is therefore the same operator on every rung, $O\otimes\mathbb 1_{n}$. **In this model $S$ is the sixteen and $n=2$; the ladder's $n=3$ is the successor's, and the hypothesis below is about the successor.** No measurement of charge, colour, weak isospin or $B-L$ can distinguish one rung from another. Flavour cannot be a charge, and it must therefore be a quantity a spectrum produces: an energy, a mass, a level spacing.
+Every operator the model builds from the group is therefore the same operator on every rung, $O\otimes\mathbb 1_{n}$. **In this model $S$ is the sixteen and $n=2$; the ladder's $n=3$ lies below $M_C$, and the hypothesis below is about that phase.** No measurement of charge, colour, weak isospin or $B-L$ can distinguish one rung from another. Flavour cannot be a charge, and it must therefore be a quantity a spectrum produces: an energy, a mass, a level spacing.
 
 There is a second reason to expect the rungs of a tower to be ordered rather than equivalent. A level decays only if a lower level exists with the same quantum numbers and enough phase space. Rung 1 is the bottom of its tower, so there is no lower rung to fall to, and it is stable by conservation rather than by accident. This is why $e$, $u$, $d$ and $\xi_{\mathrm{neu},e}$ sit at the top of their rows in the classification article: they are the ground states, and nothing beneath them carries their charges. No new dynamics is needed to stabilise rung 1, and none is claimed.
 

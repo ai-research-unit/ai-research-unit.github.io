@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The question.** The chain removes twelve gauge fields and a scalar sector at three scales. Is the removal exact, or is it an approximation? What happens to the effects of the fields that are removed, and what is computed when one says "the couplings are matched at one loop"?
+**The question.** The chain removes twelve gauge fields and a scalar sector at two thresholds. Is the removal exact, or is it an approximation? What happens to the effects of the fields that are removed, and what is computed when one says "the couplings are matched at one loop"?
 
 **The answer.**
 
@@ -20,7 +20,7 @@ $$
 
 **What the article does not establish.** No numerical result of the running. The failure of the minimal content is stated here and computed in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html), which owns every number.
 
-**Where the neighbours are.** The derivative that is matched is [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The scales are [The Threshold Scales: One Transition at $M_C$, One Measured Weak Scale, and What Would Fix $M_C$](the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html). The one-loop machinery in the algebra is [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html).
+**Where the neighbours are.** The derivative that is matched is [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The scales are [The Threshold Scales: One Transition at $M_C$, One Measured Weak Scale, and What Would Fix $M_C$](the-threshold-scales-mc-mw-and-what-would-fix-them.html). The one-loop machinery in the algebra is [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html).
 
 ## Two Operations That Are Often Confused
 
@@ -32,7 +32,7 @@ $$
 
 **1.3 The confusion.** "Below $M_C$ the group is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$" is exact. "Below $M_C$ the $W_R$ does not exist" is shorthand for "the $W_R$ is not a dynamical field of the truncated description". The first is a statement about the vacuum; the second about the description. Merging them produces the false claim that the breaking is approximate.
 
-**1.4 Why the distinction has teeth.** If breaking were an approximation, the low-energy theory would be a fit with the breaking scale as a parameter. It is not: the low-energy group is fixed by the vacuum, and the only free parameters are the three scales and the couplings.
+**1.4 Why the distinction has teeth.** If breaking were an approximation, the low-energy theory would be a fit with the breaking scale as a parameter. It is not: the low-energy group is fixed by the vacuum, and the only free parameters are the two scales and the couplings.
 
 ## What Decoupling Says, Exactly
 
@@ -172,7 +172,7 @@ with $n_f$ and $n_s$ the number of Dirac fermions and real scalars in the repres
 ## Further Reading
 
 - [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html). The running, the failure and its size.
-- [The Threshold Scales: One Transition at $M_C$, One Measured Weak Scale, and What Would Fix $M_C$](the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html). The scales this article matches at.
+- [The Threshold Scales: One Transition at $M_C$, One Measured Weak Scale, and What Would Fix $M_C$](the-threshold-scales-mc-mw-and-what-would-fix-them.html). The scales this article matches at.
 - [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The couplings that are matched.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The dimension-six operators of the first threshold.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The dimension-five operator made at $M_C$.

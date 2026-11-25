@@ -82,7 +82,7 @@ At $\theta=0.4$ the lepton phase is $0.3624-0.9320i$ and each colour phase is $0
 
 **What the vacuum does not see.** $[iD,\Phi_0]=0$, so this array is invisible to the first breaking — and it is not alone: nine of the fifteen commute with $D$, the eight gluons and $B'$ itself. **The unique statement is narrower and it is the one that matters here**: of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place.
 
-**Its mass depends on which vacuum is assumed, and the two descriptions differ.** If the first breaking is by a direction that commutes with it — an adjoint-type vev along the lepton line — $B'$ stays massless down to $v$. On the minimal content of the corpus, one breaking at $v_C$ carrying the line and a right doublet, it does not: [The Neutral Sector](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html) gives it a diagonal entry $\tfrac38g^2v_C^2$ and a share $\tfrac35$ of the $Z_R$, whose mass is $\tfrac58g^2v_C^2$. **So "massless until the weak breaking" is true in the first description and false in the second, and the corpus uses the second.**
+**Its mass depends on which vacuum is assumed, and the two descriptions differ.** If the first breaking is by a direction that commutes with it — an adjoint-type vev along the lepton line — $B'$ stays massless down to $v$. On the minimal content of the corpus, one breaking at $v_C$ carrying the line and a right doublet, it does not: [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html) gives it a diagonal entry $\tfrac38g^2v_C^2$ and a share $\tfrac35$ of the $Z_R$, whose mass is $\tfrac58g^2v_C^2$. **So "massless until the weak breaking" is true in the first description and false in the second, and the corpus uses the second.**
 
 **Downstream, after a mixing this model does not contain, it is one of the three ingredients of $\gamma$, $Z$ and $Z_R$**, with the share $\tfrac16$ that $Q$ gives it in the basis where $Q=T_3+\tfrac16D$, and it supplies the hypercharge coupling $g_{\mathrm Y}$. [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) has the stabilisers and [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) has the ledger.
 
@@ -98,7 +98,7 @@ $$
 $$
 \exp(\theta A_{tx})e_t=\cos\theta\,e_t-\sin\theta\,e_x,\qquad \exp(\theta A_{tx})e_y=e_y,\qquad \exp(\theta A_{tx})e_z=e_z ,
 $$
-and at $\theta=0.4$ the image of $e_t$ is $(0.9211,\,-0.3894,\,0,\,0)$. **Real and orthogonal, so it is a rotation of the quartet** and not a boost: [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) proves that no exponential of the twenty-one is a boost. **The star carries it to the colour plane**, $\star A_{tx}=+A_{yz}$, and that is why the self-dual combination $A_{tx}+A_{yz}=-2T^{L}_{x}$ is a weak array.
+and at $\theta=0.4$ the image of $e_t$ is $(0.9211,\,-0.3894,\,0,\,0)$. **Real and orthogonal, so it is a rotation of the quartet** and not a boost: [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) proves that no exponential of the fifteen arrays is a boost. **The star carries it to the colour plane**, $\star A_{tx}=+A_{yz}$, and that is why the self-dual combination $A_{tx}+A_{yz}=-2T^{L}_{x}$ is a half.
 
 **The boson.** $\bar X^{r}$ is a leptoquark: **the array moves the lepton line into the red line and back**, which is the definition of a leptoquark and the reason the cell $(t,x)$ sits in the mixed band. Charge $-\tfrac23$, $B-L=-\tfrac43$, colour $\bar{\mathbf3}$. **Mass $32v^{2}=2v^{2}(1-(-3))^{2}$**, twice the square of the difference between the lepton eigenvalue and the colour eigenvalue of the vacuum: colour is unbroken because $D$ is a multiple of the identity on the colour triple, and the leptoquark is massive because the lepton line is not. **The bracket with its partner is exact**, $[A_{tx},iS_{tx}]=2i(E_{tt}-E_{xx})=-\tfrac23(iD+2d_{2}+d_{3})$, so the plane's two arrays and one diagonal close into an $\mathfrak{su}(2)$. [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) owns the sector.
 
@@ -150,7 +150,7 @@ $$
 
 **The entries.** Two cells, $+1$ at $(t,z)$ and $-1$ at $(z,t)$. **Real antisymmetric, norm $2$, spectrum $0,0,\pm i$.**
 
-**The exponential.** $\exp(\theta A_{tz})e_t=\cos\theta\,e_t-\sin\theta\,e_z$, with $e_x$ and $e_y$ fixed. **The star gives $\star A_{tz}=+A_{xy}$**, so the self-dual completion of this plane is the weak array $-2T^{L}_{z}$.
+**The exponential.** $\exp(\theta A_{tz})e_t=\cos\theta\,e_t-\sin\theta\,e_z$, with $e_x$ and $e_y$ fixed. **The star gives $\star A_{tz}=+A_{xy}$**, so the self-dual completion of this plane is the half $-2T^{L}_{z}$.
 
 **The boson.** $\bar X^{b}$, charge $-\tfrac23$, colour $\bar{\mathbf3}$ in the blue line, mass $32v^{2}$. **The bracket is $[A_{tz},iS_{tz}]=2i(E_{tt}-E_{zz})=-\tfrac23 iD+\tfrac23 d_{2}+\tfrac43 d_{3}$**, the third of the three ways a leptoquark plane closes with the diagonal sector.
 
@@ -278,7 +278,7 @@ $$
 
 ## The Checks
 
-Twenty recomputations, at $\operatorname{tr}$ in the fundamental, the quartet ordered $(t,x,y,z)$, $i$ the imaginary unit and $\star$ the Euclidean star.
+Sixteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet ordered $(t,x,y,z)$, $i$ the imaginary unit and $\star$ the Euclidean star.
 
 | check | computation | result |
 | --- | --- | --- |
@@ -338,8 +338,8 @@ Twenty recomputations, at $\operatorname{tr}$ in the fundamental, the quartet or
 - [The Fifteen AXF Matrices of the Boson Rotors in Detail](the-15-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role.html). The same closed forms read one boson at a time: the entries, the fixed lines, and the role of each matrix.
 - [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). Every bracket of every array with every other, which is where each fate in the last column of the family table comes from.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), for the operator behind the $32v^{2}$, the nine zeros, and the general vacuum.
-- [The Mass Matrix of the Twenty-One Gauge Bosons](the-mass-matrix-of-the-twenty-one-gauge-bosons-four-blocks-one-mixing-and-the-nine-zeros.html), for the charged block and the mixing the two weak triples undergo.
+- [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html), for the charged block and the mixing the two weak triples undergo.
 - [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), for the grid that names the cells and the ledger.
-- [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), which joins this article's twenty-one subsections to the classification's cells in one ledger, names every array printed here, and reads the ledger three ways.
+- [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), which joins this article's fifteen subsections to the classification's cells in one ledger, names every array printed here, and reads the ledger three ways.
 - [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html), which reads the corner entry of $iD$ as the quark–lepton relation: $-3+1+1+1=0$.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) and [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$](quantum-chromodynamics-as-the-residual-of-su4.html), for the two sectors the third part supplies.

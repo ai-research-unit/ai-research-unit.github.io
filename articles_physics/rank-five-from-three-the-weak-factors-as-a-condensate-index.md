@@ -25,7 +25,7 @@ $$
 | statement | status | where it is proved |
 | --- | --- | --- |
 | a subalgebra never has larger rank than its algebra | **theorem** | §*The Lemma* |
-| the sextet cannot make the weak pair | **theorem**, twice over | §*Two Theorems That Close the Other Route* |
+| the sextet cannot make the weak pair | **theorem**, twice over | [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html); §*The Other Route, Closed Elsewhere* |
 | the transition's scalar carries a doublet index | **postulate** | §*The Price* |
 
 **What this article establishes.** That rank five is unreachable from rank three inside $\mathfrak{su}(4)$, hence that the weak factors must arrive beside the primordial force rather than emerge from it; that the object doing the breaking carries an index, and that an index is exactly the kind of object that can arrive beside; that the resulting ledger is $3+1+1=5$ with one sense of rank and no composite spectrum; and that the weak bosons' masses come from later vacua, so no mass hierarchy problem is created.
@@ -225,7 +225,7 @@ $$
 
 **The arrival brings in the group and the colour vacuum kills the right half of it.** No object is built from parts a thousand times heavier than itself, and the left half waits for its own vacuum.
 
-**The corpus states the same thing in the mass-matrix article, and it is worth quoting because it is the strongest textual support the construction has:** the six weak generators are not in the fifteen; on the carrier they are sums of colour and leptoquark planes, and **the right half of them gets its mass from the doublet index of the same vacuum, not from the colour index.** **That is precisely the mass ledger of this section, written before the construction existed.**
+**The corpus states the same thing in the mass-matrix article, and it is worth repeating because it is the strongest textual support the construction has:** each of the six halves is one colour plane plus or minus one leptoquark plane, so no one of them is a particle; and **the weak vectors arrive with the doublet index, taking their masses from the vacuum of that index and not from the colour one.** **That is precisely the mass ledger of this section, written before the construction existed.**
 
 ## The Other Route, Closed Elsewhere
 

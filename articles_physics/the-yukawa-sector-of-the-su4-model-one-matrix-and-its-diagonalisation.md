@@ -9,9 +9,9 @@
 - **It fixes the fermion masses up to two numbers.** $y$ has eight real parameters, six of them are rotations that nothing in the model can see, and **two survive: the eigenvalues.**
 - **It ties the lepton mass to the quark mass, with a ratio of three.** The condensate is $v\operatorname{diag}(-3,1,1,1)$, so a fermion on the lepton line is three times heavier than a fermion on a colour line with the same eigenvalue. **$m_{\ell}=3m_{q}$ within a copy**, and that is the sector's one quantitative statement.
 - **It cannot produce a mixing angle or a phase.** One matrix, one mass basis, and no gauge vertex that changes the copy index. **The sector conserves $CP$ exactly**, and the reason is a count.
-- **It cannot produce a hierarchy among the three generations, because the model has no generation index.** The copy index is a two-valued degeneracy, not a family label; **the three generations are the successor's.**
+- **It cannot produce a hierarchy among the three generations, because the model has no generation index.** The copy index is a two-valued degeneracy, not a family label; **the three generations are not in this model.**
 
-**The honest verdict, stated first.** $m_{e}=3m_{d}$ is wrong by a factor $27$, so **the model's Yukawa sector is its sharpest falsifiable statement and it is falsified.** That is not an arithmetic error and it is not patched below: it is the boundary of the model, and it is the reason the successor carries a second condensate and a second matrix.
+**The honest verdict, stated first.** $m_{e}=3m_{d}$ is wrong by a factor $27$, so **the model's Yukawa sector is its sharpest falsifiable statement and it is falsified.** That is not an arithmetic error and it is not patched below: it is the boundary of the model, and it is the reason a second condensate and a second matrix are needed below $M_C$.
 
 ## Why There Is No Mass Term Before the Breaking
 
@@ -85,7 +85,7 @@ $$
 
 **So the mixing matrix is unobservable, and with it the phase.** In the quark sector of the Standard Model the product $W_{u}^{\dagger}W_{d}$ survives as the CKM matrix because the up and the down masses come from two different matrices. **Here they come from one matrix**, so the product is $W^{\dagger}W=\mathbb 1$ after diagonalisation, **and the phase that a second matrix would have left behind has nothing to multiply.**
 
-**The $CP$ statement, exactly.** The gauge sector is real in this basis (the structure constants are integers and the generators are real or $i$ times real), and the Yukawa sector is one matrix diagonalisable to real positive entries. **So the model conserves $CP$ exactly, in both sectors, and the reason is a count: one matrix, not two.** That is a statement about this model and not about the world; **the observed $CP$ violation is a property of the successor**, where a second matrix exists.
+**The $CP$ statement, exactly.** The gauge sector is real in this basis (the structure constants are integers and the generators are real or $i$ times real), and the Yukawa sector is one matrix diagonalisable to real positive entries. **So the model conserves $CP$ exactly, in both sectors, and the reason is a count: one matrix, not two.** That is a statement about this model and not about the world; **the observed $CP$ violation belongs below $M_C$**, where a second matrix exists.
 
 **The Jarlskog invariant is zero and the computation is one line.** $J=\operatorname{Im}\det[y_{u}y_{u}^{\dagger},y_{d}y_{d}^{\dagger}]$; with $y_{u}=y_{d}=y$ the commutator vanishes, so $J=0$. **Two sectors, one matrix, no invariant.**
 
@@ -106,7 +106,7 @@ $$
 
 **The reason is structural and cannot be repaired inside the model.** The factor three is the ratio of the condensate's entries, $-3$ against $+1$, and it is the same number that makes the leptoquark heavy. **A model whose lepton and quark masses differ by a fixed factor has no freedom left to fix them**, and that is the definition of the boundary this sector hits.
 
-**What the successor must add, stated as a requirement and not as a promise.** A second condensate, so that the lepton line and the colour lines can receive different factors; a second Yukawa matrix, so that a phase can survive; and a generation index, so that a hierarchy can exist. **None of the three is in this model, and the article's claim is only that the three are necessary.**
+**What the transition must add, stated as a requirement and not as a promise.** A second condensate, so that the lepton line and the colour lines can receive different factors; a second Yukawa matrix, so that a phase can survive; and a generation index, so that a hierarchy can exist. **None of the three is in this model, and the article's claim is only that the three are necessary.**
 
 ## Neutrinos
 
@@ -114,11 +114,11 @@ $$
 
 **There is no see-saw and no light neutrino.** $m_{\nu}=3m_{u}$ is the sector's statement, and the measurement makes it the sector's worst failure. **The corpus's position is that the fault is in the number of condensates and not in the group**, which is the same diagnosis the lepton–quark ratio receives.
 
-**What is not claimed.** No PMNS matrix, no mass ordering, no absolute scale: **all three need the successor's structure**, and the model has no mechanism that could produce any of them.
+**What is not claimed.** No PMNS matrix, no mass ordering, no absolute scale: **all three need structure below $M_C$**, and the model has no mechanism that could produce any of them.
 
 ## What the Sector Does Not Do
 
-**No three generations.** The model has a two-valued copy index and no family label. **The three generations are the successor's**, and a sentence about $m_{\mu}/m_{e}$ has no referent here.
+**No three generations.** The model has a two-valued copy index and no family label. **The three generations are not in this model**, and a sentence about $m_{\mu}/m_{e}$ has no referent here.
 
 **No loop and no running.** The masses above are tree-level and defined at the scale of the condensate. **A comparison with $m_{d}(2\,\text{GeV})$ imports a renormalisation-group evolution the model does not contain**, and the factor $27$ survives it: the evolution moves $m_d$ by tens of per cent, not by a factor of thirty.
 
@@ -148,7 +148,7 @@ $$
 
 **The factor three is the sector's only prediction, and $m_{e}=3m_{d}$ is wrong by $27$.** That failure is structural: it comes from the same ratio that makes the leptoquark heavy, and no choice of $y$ can repair it.
 
-**$CP$ is conserved exactly, because one matrix cannot disagree with itself.** A phase needs two matrices, the model has one, and the observed $CP$ violation therefore belongs to the successor.
+**$CP$ is conserved exactly, because one matrix cannot disagree with itself.** A phase needs two matrices, the model has one, and the observed $CP$ violation therefore belongs below $M_C$.
 
 ## Summary of Notation
 

@@ -56,7 +56,7 @@ $$
 | imaginary planes $iS_{jk}$ | $6$ | $-\bigl(E_{jj}+E_{kk}\bigr)$ | $1$ | $-2$ |
 | colour diagonals $d_{2},d_{3}$ | $2$ | $-\bigl(E_{jj}+E_{kk}\bigr)$ | $1$ | $-2$ |
 | corner $iD$ | $1$ | $-\operatorname{diag}(9,1,1,1)$ | $3$ on $e_{t}$, $1$ on the triple | $-12$ |
-| weak arrays $T^{L}_{a},T^{R}_{a}$ | $6$ | $-\tfrac14\mathbb{1}$ | $\tfrac12$ | $-1$ |
+| the halves $T^{L}_{a},T^{R}_{a}$ | $6$ | $-\tfrac14\mathbb{1}$ | $\tfrac12$ | $-1$ |
 
 **The corner is the one array whose square is not a scalar multiple of a projector, and it is handled as two blocks of the same formula**: $\omega=3$ on the lepton line and $\omega=1$ on the colour triple. **That is the whole of its exceptional treatment**, and the two-block reading is what produces the four phases rather than two.
 
@@ -172,7 +172,7 @@ $$
 =\operatorname{diag}\Bigl(e^{-3i\alpha},\,e^{i(\alpha+\beta)},\,e^{i(\alpha-\beta+\gamma)},\,e^{i(\alpha-\gamma)}\Bigr),
 $$
 
-**four phases with one relation among them, which is rank three.** No Baker–Campbell–Hausdorff correction appears because no bracket is nonzero — **this is the one place in the twenty-one where a multi-parameter rotor is written in closed form**, and it is closed for the reason the Cartan is abelian.
+**four phases with one relation among them, which is rank three.** No Baker–Campbell–Hausdorff correction appears because no bracket is nonzero — **this is the one place among the arrays where a multi-parameter rotor is written in closed form**, and it is closed for the reason the Cartan is abelian.
 
 ## Where the Half Angle Comes From
 
@@ -211,7 +211,7 @@ $$
 \exp\bigl(4\pi T^{L}_{a}\bigr)=+\mathbb{1}.
 $$
 
-**This is the one structural difference between the two kinds of rotor in the model.** A real plane returns to the identity after one turn of its parameter; a weak array takes two. **The reason is the factor $\tfrac12$ in $T^{L}_{a}=\tfrac12L_{\vec e_{a}}$, and the consequence is that the weak rotor's image circle is traversed twice by its parameter** — a statement about the map and not about the subgroup, which is a circle either way.
+**This is the one structural difference between the two kinds of rotor in the model.** A real plane returns to the identity after one turn of its parameter; a half takes two. **The reason is the factor $\tfrac12$ in $T^{L}_{a}=\tfrac12L_{\vec e_{a}}$, and the consequence is that the half's image circle is traversed twice by its parameter** — a statement about the map and not about the subgroup, which is a circle either way.
 
 **Two combinations of the triples are worth naming, because they are the real planes in disguise.**
 
@@ -243,7 +243,7 @@ $$
 \exp\bigl(\theta A_{bc}\bigr)=\exp\bigl(-\theta T^{L}_{a}\bigr)\exp\bigl(+\theta T^{R}_{a}\bigr)
 $$
 
-**and the arithmetic that makes this a real rotation is the arithmetic of half angles.** Each factor turns its plane by $\theta/2$; the two factors turn the same plane when they are summed and opposite planes when they are subtracted; **so the sum turns one plane by $\theta/2+\theta/2=\theta$ and leaves the other alone, and the difference does the reverse.** That is why a weak rotor has period $4\pi$ and a real plane has period $2\pi$: the real plane is two half-turns added.
+**and the arithmetic that makes this a real rotation is the arithmetic of half angles.** Each factor turns its plane by $\theta/2$; the two factors turn the same plane when they are summed and opposite planes when they are subtracted; **so the sum turns one plane by $\theta/2+\theta/2=\theta$ and leaves the other alone, and the difference does the reverse.** That is why a half has period $4\pi$ and a real plane has period $2\pi$: the real plane is two half-turns added.
 
 **The six identities, with the coefficients, checked by direct multiplication.** The sign pattern reverses for $A_{xz}$ because the cyclic order $(a,b,c)$ runs $(x,y,z)$ and $A_{xz}$ is the reversed orientation of $A_{zx}$; **that one reversal is the only place in the six where a plus sign appears outside the bracket.**
 
@@ -261,7 +261,7 @@ $$
 **The consequence is a count, and it is the article's main claim.**
 
 $$
-21\ \text{arrays}\ =\ 15\ \text{independent directions}\ +\ 6\ \text{products of two of them},
+15\ \text{independent directions, and}\ 6\ \text{halves that are sums of them},
 $$
 
 **because the fifteen arrays span fifteen dimensions as $4\times4$ matrices.** The rank was computed from the fifteen flattened arrays and is $15$; the six real planes are linear combinations of the six composites, and no relation exists among the fifteen. **So the fifteen rotors are fifteen independent circles, and the six composites are exactly what a redundant basis adds** — the shape the counts article describes when it separates names from directions.
@@ -294,9 +294,9 @@ $$
 | the centrality ladder | the parameter at which each family is central | $2\pi$ for the fourteen, $k\tfrac{\pi}{2}$ for the corner, $2k\pi$ for the six |
 | the colour diagonals | $\exp(\theta d_{2})$, $\exp(\theta d_{3})$ | $(1,e^{i\theta},e^{-i\theta},1)$, $(1,1,e^{i\theta},e^{-i\theta})$ |
 | the torus | $\exp(\alpha iD+\beta d_{2}+\gamma d_{3})$ | four phases, one relation |
-| the weak square | $G^{2}$ for $T^{L}_{a},T^{R}_{a}$ | $-\tfrac14\mathbb{1}$ |
-| the weak period | $\exp(2\pi T)$, $\exp(4\pi T)$ | $-\mathbb{1}$, $+\mathbb{1}$ |
-| the weak bracket | $[T^{L}_{x},T^{R}_{x}]$ | $0$ |
+| the halves' square | $G^{2}$ for $T^{L}_{a},T^{R}_{a}$ | $-\tfrac14\mathbb{1}$ |
+| the halves' period | $\exp(2\pi T)$, $\exp(4\pi T)$ | $-\mathbb{1}$, $+\mathbb{1}$ |
+| the halves' bracket | $[T^{L}_{x},T^{R}_{x}]$ | $0$ |
 | the sum and the difference | $T^{L}_{x}\pm T^{R}_{x}$ | $-A_{tx}$, $-A_{yz}$ |
 | the rotor identity | $\exp(\theta A_{ta})$ against the product | exact at $\theta=0.37$ and $1.1$ |
 | the rank | the fifteen as $4\times4$ arrays | $15$ |
@@ -307,7 +307,7 @@ $$
 
 **The rotors fall into a $6+9$ split that the arrays' entries decide.** Six have real entries and give rotations of the quartet with period $2\pi$; nine have complex entries and give unitary rotors of the complexified carrier, real only at the half-turns, where the imaginary planes coincide with the real ones.
 
-**The corner is the only rotor that is ever central, and it is central four times a turn with values $i^{k}$.** That is the rotor-side reading of the corpus's "$B-L$ exact at every scale", and the display reproduces the charge-quantisation article's relative phase $N\theta$ without being copied from it.
+**The corner is the only rotor that is ever central, and it is central four times a turn with values $i^{k}$.** That is the rotor-side reading of the corpus's "$B-L$'s eigenvalue is fixed at every scale" — the array is untouched, while the charge it names is broken at the transition — and the display reproduces the charge-quantisation article's relative phase $N\theta$ without being copied from it.
 
 **The article's one new result is the direction of the half angle.** $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-(T^{L}_{a}-T^{R}_{a})$, the two triples commute, so the exponentials factorise exactly and the half angles of two composites add to the full angle of a real plane. **Fifteen circles, and six composites that are not circles of the model** — which is why a composite takes two turns of its parameter to return while a real plane takes one, and why the model's bosons have no half angle at all.
 
@@ -320,7 +320,7 @@ $$
 | $\omega$ | The frequency in $G^{2}=-\omega^{2}P$; $1$ or $\tfrac12$ or, for the corner, $3$ and $1$ |
 | $P$ | The projector in $G^{2}=-\omega^{2}P$ |
 | $T^{L}_{a},T^{R}_{a}$ | $\tfrac12L_{\vec e_{a}}$ and $\tfrac12R_{\vec e_{a}}$ |
-| $A_{ta},A_{bc}$ | The real planes, which are minus the sum and minus the difference of weak pairs |
+| $A_{ta},A_{bc}$ | The real planes, which are minus the sum and minus the difference of the two halves |
 | $iS_{jk}$ | The imaginary plane |
 | $iD$, $d_{2}$, $d_{3}$ | The corner and the two colour diagonals |
 | $12$, $9$ | Rotors of $\mathbb{R}^{4}$ and of $\mathbb{C}^{4}$ |

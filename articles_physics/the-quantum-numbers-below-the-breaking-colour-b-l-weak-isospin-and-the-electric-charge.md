@@ -88,7 +88,7 @@ $$
 
 **4.4 The eigenvalue is what does not move, and it is a different statement.** $B-L$ takes the same values at every scale — $-1$ on the lepton line, $\tfrac13$ on the three colour lines — because an eigenvalue is a property of an array and not of the vacuum, and no mixing between $W^{3}_{L}$, $W^{3}_{R}$ and $B'$ changes a diagonal entry of $B'$. **"The chain never renormalises $B-L$" is true; "$B-L$ is conserved below $M_C$" is false**, and the two are easy to run together because both are sentences about a number that stays put.
 
-**4.5 The breaking is wanted twice over, and it costs no Goldstone.** A Majorana mass for the right-handed neutrino carries $B-L=-2$, so it needs a vacuum that breaks the charge — and the transition supplies one. **That is the seesaw's licence, and it is the same vev that breaks $\mathrm{SU}(2)_R$** ([The Seesaw Mechanism](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html)). And because the broken direction was a direction of a *gauge* group above $M_C$, the would-be Goldstone is eaten: it is the longitudinal mode of the $Z_R$, whose mass $\tfrac58g^2v_C^2$ is the neutral sector's ([The Neutral Sector](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html)).
+**4.5 The breaking is wanted twice over, and it costs no Goldstone.** A Majorana mass for the right-handed neutrino carries $B-L=-2$, so it needs a vacuum that breaks the charge — and the transition supplies one. **That is the seesaw's licence, and it is the same vev that breaks $\mathrm{SU}(2)_R$** ([The Seesaw Mechanism](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html)). And because the broken direction was a direction of a *gauge* group above $M_C$, the would-be Goldstone is eaten: it is the longitudinal mode of the $Z_R$, whose mass $\tfrac58g^2v_C^2$ is the neutral sector's ([The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html)).
 
 **4.6 Compared with the Standard Model.** There $B-L$ is an accidental global symmetry from the start and is never gauged, and it is broken only by the Weinberg operator at dimension five. **Here it is a gauge direction above $M_C$, broken at $M_C$, and accidental below it** — the exact opposite order of statuses, with the same low-energy consequence, because the residual violation below $M_C$ is again of dimension five and suppressed by the same scale.
 
@@ -128,7 +128,7 @@ $$
 
 ## The Checks
 
-**Five checks.**
+**Six checks.**
 
 | check | computation | result |
 |---|---|---|

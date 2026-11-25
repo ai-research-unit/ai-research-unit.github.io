@@ -144,7 +144,7 @@ $$
 
 **They do not establish a mass.** $M_X$ enters every formula as a free parameter, and the model supplies one value for it: $M_X^{2}=8g_4^{2}v^{2}$ from the adjoint mass matrix, **the only mass scale the model has** (the array-level value, before normalisation, is $32v^{2}$). A reader who wants $v$ has to take it from outside, and the kaon number uses the corner of parameter space as well.
 
-**They do not establish a hierarchy, because there is none to establish.** The three diagrams have three different colour behaviours and one coupling, and **a single coupling cannot produce a ratio of couplings**: the old frame's $g_4$, $g_s$ and $g_L$ are one symbol here, and the mismatch they used to carry is a property of the successor.
+**They do not establish a hierarchy, because there is none to establish.** The three diagrams have three different colour behaviours and one coupling, and **a single coupling cannot produce a ratio of couplings**: $g_4$, $g_s$ and $g_L$ are one symbol here, and the mismatch they would carry belongs to the spectrum below $M_C$.
 
 **And they do not close the loop.** Every one is tree level. **The muon channels need a loop, a chirality flip and a GIM sum, and the corpus states the result without computing the coefficient**, which is the honest ceiling of the sector at present.
 

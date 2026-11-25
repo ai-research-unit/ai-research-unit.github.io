@@ -456,7 +456,7 @@ Sixteen recomputations, with the quartet ordered $(t,x,y,z)$ and $\theta$ one re
 
 **The role of a boson is read off its rotor in two comparisons.** Eight rotors fix the lepton line and are the octet; seven do not, and they are the corner, which phases it, and the six leptoquarks, which move it into colour. **Nine rotors leave the vacuum exactly where it was and are massless; six move it and are the $32v^{2}$.**
 
-**The corner is the only rotor that reaches the centre**, four times a turn with values $i^{k}$, and it is the only one that can be central because it is the only one with no fixed line. **That is the rotor form of "$B-L$ is exact at every scale", and it is one line: the array the vacuum is made of is the array whose rotor can be a multiple of the identity.**
+**The corner is the only rotor that reaches the centre**, four times a turn with values $i^{k}$, and it is the only one that can be central because it is the only one with no fixed line. **That is the rotor form of "$B-L$'s eigenvalue is fixed at every scale", and it is one line: the array the vacuum is made of is the array whose rotor can be a multiple of the identity.** The charge itself is a different statement, and it goes at the transition ([The Quantum Numbers Below the Breaking](the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html)).
 
 ## Summary of Notation
 

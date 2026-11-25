@@ -18,7 +18,7 @@ The strongest objection, named at the start. A computation that reproduces a kno
 
 The order. The group and its two couplings; the three labels and the charge; the anomaly system derived rather than quoted; its linear part solved; the cubic and the three rays; what the conditions leave free; the Witten condition; the scalar's hypercharge and the chain that follows from it; and the framework's position.
 
-This article is written in the successor frame. Above $M_C$ the group is $\mathrm{SU}(4)$ alone, of rank three and dimension fifteen; below the first breaking it is $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, of rank five, and the hypercharge is derived rather than imported: $Y=T_{3R}+\tfrac12(B-L)$, a combination of two of that group's Cartans, the quartet charge $B-L$ being the traceless corner direction. Every hypercharge value in the tables below is unchanged, and none of them is a free input. The tier is T3 — the numbers are the same, their origin is not.
+This article is written in the four-factor frame. Above $M_C$ the group is $\mathrm{SU}(4)$ alone, of rank three and dimension fifteen; below the first breaking it is $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, of rank five, and the hypercharge is derived rather than imported: $Y=T_{3R}+\tfrac12(B-L)$, a combination of two of that group's Cartans, the quartet charge $B-L$ being the traceless corner direction. Every hypercharge value in the tables below is unchanged, and none of them is a free input. The tier is T3 — the numbers are the same, their origin is not.
 
 ## The Group and Its Two Couplings
 

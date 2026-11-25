@@ -81,9 +81,15 @@ $$
 
 **One vacuum, one breaking, four factors at once.** Argued in full in [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html); restated here because it changes what "the scales" means.
 
-**5.1 The rank-one vacuum.** $\Phi$'s vacuum is a line in the carrier times a line in the right doublet, so it breaks $\mathrm{SU}(4)$ and $\mathrm{SU}(2)_R$ together, in one step and at one scale. The stabiliser is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ of dimension $12$, not the $15$-dimensional group that the two breakings would leave if they happened separately. **The four-factor group exists at $M_C$ and has no width.**
+**5.1 The rank-one vacuum.** $\Phi$'s vacuum is a line in the carrier times a line in the right doublet, and the model breaks once, at one
+scale. Above $M_C$ there is one factor, $\mathrm{SU}(4)$, of rank three and dimension fifteen; **the two weak factors are not there to be broken,
+they arrive with the doublet index** ([Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html)) and are counted
+from $M_C$ down. So the group at the transition is the four factors of dimension fifteen and rank five,
+$\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, and it has no width: **the same vacuum that assembles it
+begins to break it.** Immediately below, the right line and the mixing it induces leave
+$\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, of dimension twelve and rank four.
 
-**5.2 The consequence for counting.** One threshold, three groups: $\mathrm{SU}(4)$ above, the four factors at $M_C$, the Standard Model below. A reader who counts factors and expects a stage between the four-factor group and the Standard Model will look for a scale that is not there; **the stage between them is a truncation, not a threshold.** The budget is $21\to12\to9$, and the twenty-one is fifteen of the grid plus six that arrive with the doublet index.
+**5.2 The consequence for counting.** One threshold, three groups: $\mathrm{SU}(4)$ above, the four factors at $M_C$, the Standard Model below. A reader who counts factors and expects a stage between the four-factor group and the Standard Model will look for a scale that is not there; **the stage between them is a truncation, not a threshold.** The massless vectors read $15\to12\to9$: fifteen above the transition, before the vacuum forms; twelve between $M_C$ and $v$, the nine of the kernel and the three of the weak left factor; nine below $v$, when $H$ eats that triple. The first arrow is $15-6+3$: six of the fifteen become heavy at $32v_C^{2}$ and three weak-left vectors arrive massless. **The six that arrive with the doublet index are not directions of the group above $M_C$**, and three of them are heavy the moment they appear.
 
 **5.3 The consequence for the bounds.** The bound on $M_C$ is a bound on $M_X$ and on $M_{W_R}$ at once. Nothing in the minimal content bounds the right sector separately, because there is no separate right sector to bound.
 
@@ -122,7 +128,7 @@ $$
 | the measured scale | $v=(\sqrt2G_F)^{-1/2}$ | one number, one error bar |
 | the bound on $M_C$ | $K_L\to\mu e$ at tree level, $1/M_X^{2}$ | a floor, no loop suppression |
 | the relation of the two heavy masses | $M_X^{2}/M_{W_R}^{2}=2g_4^{2}/g_R^{2}$ | one vacuum, one scale |
-| the thresholds | one rank-one vacuum, stabiliser of dimension $12$ | massless vectors $21\to12\to9$: one threshold |
+| the thresholds | one rank-one vacuum, stabiliser of dimension $12$ | massless vectors $15\to12\to9$: one threshold |
 | the prediction | $g_4=g_L=g_R$ at $M_C$ | fails for the minimal content |
 
 ## Distinctions That Are Easy to Lose

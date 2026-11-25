@@ -7,11 +7,11 @@
 **Two sentences that are easy to confuse, and the article keeps them apart.**
 
 - **In this model, nothing turns the lepton.** The statement is exact, it is a computation on the fifteen, and it does not depend on any coupling.
-- **In the successor, a matrix decides.** The channel $K_L\to\mu e$ needs a vertex that carries a generation index, and this model has no generation index at all: **it has one generation, counted twice.**
+- **Below $M_C$, a matrix decides.** The channel $K_L\to\mu e$ needs a vertex that carries a generation index, and this model has no generation index at all: **it has one generation, counted twice.**
 
 **What the model does fix.** The six leptoquarks, their charges, their mass, the equality of the two chiralities' coefficients, the colour factor of one, the $\Delta F=0$ contact term that certainly exists, the selection rule that picks $K_L$ over $K_S$, and the fourth-power shape of the rate. **What it does not fix is whether a lepton can change generation, because it has no generation to change.**
 
-**Why the distinction matters.** The bound $M_X\gtrsim3.7\times10^{-5}$ J is quoted in the literature as the model's strongest statement. **It is not a prediction and not a bound of this model**: it is the successor's two-generation channel with the mixing matrix set to one, and it should be quoted as an assumption.
+**Why the distinction matters.** The bound $M_X\gtrsim3.7\times10^{-5}$ J is quoted in the literature as the model's strongest statement. **It is not a prediction and not a bound of this model**: it is a two-generation channel with the mixing matrix set to one, and it should be quoted as an assumption.
 
 ## What the Model Fixes
 
@@ -59,7 +59,7 @@ $$
 
 **The Yukawa sector is one matrix $y$ on the copy index**, and after diagonalisation the mass matrix is $y_{\alpha\beta}vD_{\imath}\delta_{\imath\jmath}$ — **proportional to one matrix in the copy index and diagonal in the quartet index.** Two sectors would need two different matrices; one matrix is aligned with itself by construction, **so the mixing is the identity and the phase is absent** ([the Yukawa article](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html)).
 
-**The prediction that follows is falsified, and that is the honest end of the argument.** $m_{\ell}=3m_{q}$ within a copy, against a measured $m_{e}/m_{d}=0.109$: **wrong by a factor $27$.** So the model's one matrix is not the successor's, and the successor must carry a second one. **The corpus does not write that second matrix**, and an article that pretends otherwise is inventing a coefficient.
+**The prediction that follows is falsified, and that is the honest end of the argument.** $m_{\ell}=3m_{q}$ within a copy, against a measured $m_{e}/m_{d}=0.109$: **wrong by a factor $27$.** So the model's one matrix cannot be the whole story, and a second one is needed below $M_C$. **The corpus does not write that second matrix**, and an article that pretends otherwise is inventing a coefficient.
 
 **What can be said without inventing anything.**
 
@@ -125,9 +125,9 @@ $$
 
 **Nothing turns the lepton in this model, and the proof is a count of entries.** One generator acts inside the lepton line, six send it into the colour triple, eight annihilate it, and none joins the two copies.
 
-**The channel $K_L\to\mu e$ needs a matrix the model does not have**, because the model has one Yukawa matrix and one generation. **The bound on $M_X$ that the literature quotes is the successor's channel with that matrix set to one**, and the model's own contribution is the operator's shape: two chiralities with equal coefficients, colour factor one, and $M_X^{-4}$.
+**The channel $K_L\to\mu e$ needs a matrix the model does not have**, because the model has one Yukawa matrix and one generation. **The bound on $M_X$ that the literature quotes is a two-generation channel with that matrix set to one**, and the model's own contribution is the operator's shape: two chiralities with equal coefficients, colour factor one, and $M_X^{-4}$.
 
-**What the successor must supply is named and not invented**: a second matrix, a generation index, and a condensate that does not tie the lepton mass to the quark mass by three.
+**What the transition must supply is named and not invented**: a second matrix, a generation index, and a condensate that does not tie the lepton mass to the quark mass by three.
 
 ## Summary of Notation
 
@@ -137,7 +137,7 @@ $$
 | $B_V$ | the colour triple, $\operatorname{span}\{e_{x},e_{y},e_{z}\}$ |
 | $M_X$ | the sextet's mass, $M_X^{2}=8g_4^{2}v^{2}$ |
 | $g_4$ | the model's single gauge coupling |
-| $U_{de}$, $U_{s\mu}$ | successor mixing entries, not computed in the corpus |
+| $U_{de}$, $U_{s\mu}$ | mixing entries below $M_C$, not computed in the corpus |
 | $P_{L}$, $P_{R}$ | the chiral projectors of the two halves |
 | $f_K$ | the kaon decay constant, an imported hadronic number |
 | $\Delta F=0$ | the diagonal part of the operator, invisible here |
@@ -149,4 +149,4 @@ $$
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The sixteen, and the copy index that is not a generation.
 - [An Introduction to Flavour](an-introduction-to-flavour.html). Why an index the algebra cannot see is invisible to every gauge measurement.
 - [Three Diagrams of the $\mathrm{SU}(4)$ Model](three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html). The same operator, drawn, with the kaon rate and the colour factor.
-- [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The sextet in full, from the old frame's side.
+- [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The sextet in full, with its quantum numbers and the bound.

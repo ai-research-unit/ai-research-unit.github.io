@@ -109,9 +109,9 @@ $$
 
 **Three things follow, and all three are worth having.**
 
-**First, the weak arrays are in $\mathfrak{su}(4)$.** Each is a sum of two plane generators of the fifteen, so $\mathfrak{so}(4)$, spanned by the six arrays, is a real subalgebra of $\mathfrak{su}(4)$. **This is true and it is not the obstruction** — a reader who thinks the six identities prove the weak pair is a fragment of the primordial force has confused *the arrays are in the algebra* with *the pairs are the sextet*.
+**First, the six halves are in $\mathfrak{su}(4)$.** Each is a sum of two plane generators of the fifteen, so $\mathfrak{so}(4)$, spanned by the six arrays, is a real subalgebra of $\mathfrak{su}(4)$. **This is true and it is not the obstruction** — a reader who thinks the six identities prove the weak pair is a fragment of the primordial force has confused *the arrays are in the algebra* with *the pairs are the sextet*.
 
-**Second, every identity is one leptoquark plane and one colour plane, in equal halves.** That is the striking content: **in this basis each weak array is half primordial and half strong.** A weak boson, in this basis, is a coherence between a leptoquark direction and a colour direction.
+**Second, every identity is one leptoquark plane and one colour plane, in equal halves.** That is the striking content: **in this basis each half is half primordial and half strong.** A vector built on it would be a coherence between a leptoquark direction and a colour direction.
 
 **Third, the identities are the pair resolution.** They are a canonical rotation inside each $2\times2$ block, they hold in every basis with no reference to any dynamics, and **that is exactly why they cannot encode the mixing.** A statement that is true whatever happens cannot say what happens.
 
@@ -126,16 +126,16 @@ $$
 | $T^{L}_{y},T^{R}_{y}$ | $A_{ty}$ and $A_{xz}$ | $32v^{2}$ and $0$ | **no** |
 | $T^{L}_{z},T^{R}_{z}$ | $A_{tz}$ and $A_{xy}$ | $32v^{2}$ and $0$ | **no** |
 
-**Every weak array is a sum of a state at $32v^{2}$ and a state at $0$.** A sum of a heavy and a massless state is a coherence; it has no mass of its own, and it is not a particle.
+**Every half is a sum of a state at $32v^{2}$ and a state at $0$.** A sum of a heavy and a massless state is a coherence; it has no mass of its own, and it is not a particle.
 
-**In the weak basis, the mass matrix is visible.** Since $A_{tx}=-(T^{L}_{x}+T^{R}_{x})$ and $A_{yz}=-(T^{L}_{x}-T^{R}_{x})$, the block reads
+**In the pair basis, the mass matrix is visible.** Since $A_{tx}=-(T^{L}_{x}+T^{R}_{x})$ and $A_{yz}=-(T^{L}_{x}-T^{R}_{x})$, the block reads
 
 $$
 M^{2}=32v^{2}\begin{pmatrix}1&1\\[2pt]1&1\end{pmatrix},
 \qquad\text{eigenvalues }64v^{2},0,
 $$
 
-**with the heavy eigenvector $T^{L}_{x}+T^{R}_{x}$ — which is $-A_{tx}$, a leptoquark plane — and the massless one $T^{L}_{x}-T^{R}_{x}$, which is $-A_{yz}$, a colour plane.** **The physical states are the leptoquark and the colour direction; the weak arrays are the $45^\circ$ rotated basis.**
+**with the heavy eigenvector $T^{L}_{x}+T^{R}_{x}$ — which is $-A_{tx}$, a leptoquark plane — and the massless one $T^{L}_{x}-T^{R}_{x}$, which is $-A_{yz}$, a colour plane.** **The physical states are the leptoquark and the colour direction; the halves are the $45^\circ$ rotated basis.**
 
 **What a mixing angle needs, and what is missing.** Mass mixing requires degeneracy: $W^{3}$ and $B$ mix into $Z$ and $\gamma$ because both are massless before the breaking. **Here the two halves are split $32v^{2}$ against $0$ — maximally non-degenerate — so there is nothing for them to mix with.** The condensate destroys degeneracy by design, and that is what makes the identities bookkeeping rather than dynamics. **This is the honest sense in which the transition is a breaking: it removes the degeneracy that a mixing would need.**
 
@@ -143,7 +143,7 @@ $$
 
 **If the identities were the mixing, the angle would be fixed, and it is wrong by a factor of two.**
 
-**The coefficients are $\pm\tfrac12$ with equal magnitudes**, so the rotation between the plane basis and the weak basis is exactly $45^\circ$:
+**The coefficients are $\pm\tfrac12$ with equal magnitudes**, so the rotation between the plane basis and the pair basis is exactly $45^\circ$:
 
 $$
 \cos\theta=\sin\theta=\tfrac1{\sqrt2},
@@ -159,7 +159,7 @@ $$
 \frac{0.5}{0.23122}=2.16 .
 $$
 
-**A factor of $2.16$, and it cannot be adjusted.** The $45^\circ$ comes from the $\tfrac12$ in the identities, which comes from the normalisation of the weak generators, which comes from the algebra. **There is no free parameter**: any change that moves the angle also breaks the algebra.
+**A factor of $2.16$, and it cannot be adjusted.** The $45^\circ$ comes from the $\tfrac12$ in the identities, which comes from the normalisation of the six halves, which comes from the algebra. **There is no free parameter**: any change that moves the angle also breaks the algebra.
 
 **What this falsifies and what it does not.** It falsifies the reading *the six identities are the electroweak mixing*. It does not falsify the identities, which remain exact; and it does not falsify the construction of the companion article, which never uses the identities as a mixing. **The correct mixing is the corpus's: three neutral fields, two vacua, rank two, one null direction — computed where the $Z$ and the photon actually are.**
 
@@ -196,7 +196,7 @@ $$
 
 **Two things, and both belong in the corpus.**
 
-**A bookkeeping identity.** They give the weak arrays in the basis the mass matrix is diagonal in, which is exactly what a reader needs in order to compute what the weak arrays weigh in that basis. **The answer is the mass table**, and the mass table is what shows that the weak arrays are not mass eigenstates.
+**A bookkeeping identity.** They give the six halves in the basis the mass matrix is diagonal in, which is exactly what a reader needs in order to compute what each half weighs in that basis. **The answer is the mass table**, and the mass table is what shows that the halves are not mass eigenstates.
 
 **A structural identity.** They show that $\mathfrak{so}(4)$ sits inside $\mathfrak{su}(4)$ as a real subalgebra, and they show *how*: by pairing each leptoquark plane with a colour plane. **That pairing is the reason the two readings of the fifteen are so close** — the span of the two maximal-rank subgroups is twelve of fifteen, the intersection is four, and the missing three are exactly the directions that the identities cannot reach. **The identities are the visible tip of that closeness, and the closeness is what makes the wrong story attractive.**
 
@@ -213,8 +213,8 @@ $$
 | the singlet's charge | $\frac43-\frac43$ | $0$ |
 | the singlet's spin content | $J=1$ | three states, all $Q=0$ |
 | two chiralities | $2\times3$ | six neutral, zero charged |
-| the weak arrays' halves | one $A_{ta}$, one $A_{jk}$ | $32v^{2}$ and $0$ |
-| the block in the weak basis | $32v^{2}[[1,1],[1,1]]$ | eigenvalues $64v^{2},0$ |
+| each half's two terms | one $A_{ta}$, one $A_{jk}$ | $32v^{2}$ and $0$ |
+| the block in the pair basis | $32v^{2}[[1,1],[1,1]]$ | eigenvalues $64v^{2},0$ |
 | the identity's angle | equal coefficients | $45^\circ$, $\sin^{2}=0.5$ |
 | the measured angle | $\sin^{2}\theta_W$ | $0.23122$ |
 | the discrepancy | $0.5/0.23122$ | $2.16$ |
@@ -239,7 +239,7 @@ Six for six is a coincidence of dimension. It says nothing about charge, spin, c
 
 **The channel.** $\mathbf3_{+4/3}\otimes\bar{\mathbf3}_{-4/3}=\mathbf1_0\oplus\mathbf8_0$; the singlet is neutral identically; $J=1$ gives three neutral states per chirality, six in all, and no charged state. **The count matches and the charge is inverted.**
 
-**The identities.** Exact, and they show that the weak arrays are half leptoquark and half colour. **The mass table shows why they are not particles**: $32v^{2}$ against $0$, a coherence and not an eigenstate.
+**The identities.** Exact, and they show that the six halves are half leptoquark and half colour. **The mass table shows why they are not particles**: $32v^{2}$ against $0$, a coherence and not an eigenstate.
 
 **The angle.** Read as a mixing the identities impose $45^\circ$, against the measured $28.7^\circ$; **a factor $2.16$ that no adjustment can remove.**
 
@@ -254,7 +254,7 @@ Six for six is a coincidence of dimension. It says nothing about charge, spin, c
 | $\mathfrak m$ | the sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$ |
 | $A_{ta},iS_{ta}$ | leptoquark planes, mass $32v^{2}$ |
 | $A_{jk},iS_{jk}$ | colour planes, mass $0$ |
-| $T^{L}_{a},T^{R}_{a}$ | the six weak arrays, half leptoquark and half colour |
+| $T^{L}_{a},T^{R}_{a}$ | the six halves, half leptoquark and half colour |
 | $n,m$ | numbers of sextet and anti-sextet constituents |
 | $k$ | half the triality count, $n-m=3k$ |
 | $M_C$ | the transition scale, $\gtrsim250$ TeV |
@@ -266,4 +266,4 @@ Six for six is a coincidence of dimension. It says nothing about charge, spin, c
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The construction that does not need the sextet.
 - [The Centraliser, the Complement, and the Index: Dimension Falls at a Breaking, Rank Rises at an Arrival](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The closure argument that runs beside the charge argument.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Where $32v^{2}$ and $0$ come from, and the warning about the half in $T^{L}_{x}$.
-- [The Neutral Sector: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html). Where the electroweak mixing is actually computed.
+- [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). Where the electroweak mixing is actually computed.

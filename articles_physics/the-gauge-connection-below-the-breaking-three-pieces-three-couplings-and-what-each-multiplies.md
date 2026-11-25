@@ -199,11 +199,11 @@ The count jumps at $M_C$ and falls twice, and the jump is the point: one factor 
 
 **Three pairs.**
 
-**7.1 A coupling and a connection.** Fifteen connections, one coupling. Counting connections and calling the result the number of couplings is the commonest error in the subject, and it is the error the old frame made when it counted twenty-one.
+**7.1 A coupling and a connection.** Fifteen connections, one coupling. Counting connections and calling the result the number of couplings is the commonest error in the subject, and it is the error the count of fifteen connections invites.
 
 **7.2 The mixing angle and a coupling.** $\theta_W$ is a rotation of the neutral basis, fixed by the ratio of two couplings. It is not a third coupling and it does not run independently.
 
-**7.3 The intermediate stage and the bottom.** At the intermediate stage there are four couplings because $B-L$ is a factor; at the bottom there are three because $Y$ is a direction. A counting that ignores this will report four at every stage above $M_W$.
+**7.3 The threshold and the bottom.** Four couplings exist *at* $M_C$ and nowhere else: they are the boundary values the matching reads, and the residual algebra that carries them has no width. Below $M_C$ three remain, because $Y$ is a direction and not a factor. **A counting that keeps four over a range is counting a stage the model does not have.**
 
 ## Summary
 

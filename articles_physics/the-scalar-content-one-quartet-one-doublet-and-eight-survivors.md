@@ -20,7 +20,7 @@ $$
 
 **What it does not establish.** A potential, a mass for the surviving scalars, or a Yukawa sector. It is a census, and every other article in the section cites it rather than recounting it.
 
-**Where the neighbours are.** The breaking that eats the nine is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The transition these fields make is [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The neutral mixing of the two vacua is [The Neutral Sector](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html).
+**Where the neighbours are.** The breaking that eats the nine is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The transition these fields make is [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The neutral mixing of the two vacua is [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html).
 
 ## The Multiplet List
 
@@ -94,14 +94,14 @@ $$
 
 **The eight are one radial mode, six colour-triplet states, and the Higgs.** No other scalar exists in the minimal content, and any count that reports more has added a field.
 
-**Three articles depend on this census and none of them repeats it.** The charged block is diagonal because no field carries both weak indices (*The Mass Matrix of the Twenty-One Gauge Bosons*). The neutral block has two independent vectors because there are two vacua and two fields (*The Neutral Sector*). The vector count falls from twenty-one to twelve at $M_C$ because nine generators are eaten there (*The Matching at $M_C$*).
+**Three articles depend on this census and none of them repeats it.** The charged block is diagonal because no field carries both weak indices (*The Mass Matrix of the Fifteen Gauge Bosons*). The neutral block has two independent vectors because there are two vacua and two fields (*The Weak Sector Below $M_C$*). The fifteen of the model fall to nine at $M_C$ because the sextet is eaten there (*The Matching at $M_C$*).
 
 ## The Checks
 
 | claim | check | result |
 | --- | --- | --- |
 | the total | $16+4$ | $20$ real components |
-| the eaten count at $M_C$ | $21-12$ massless vectors | $9$ |
+| the eaten count at $M_C$ | six of the grid and three that arrive | $9$ |
 | the eaten count, from $\Phi$ | $6+2+1$ | $9$ |
 | the survivors of $\Phi$ | $16-9$ | $7$ |
 | the survivors of $H$ | $4-3$ | $1$ |
@@ -112,7 +112,7 @@ $$
 
 ## Distinctions That Are Easy to Lose
 
-A breaking is not a deletion. The nine generators eaten at $M_C$ are rotations of the condensate; the vectors that swallow them are what the rotations become (*The Breaking of the Primordial Force*).
+A breaking is not a deletion. The nine vectors eaten at $M_C$ are rotations of the condensate; the vectors that swallow them are what the rotations become (*The Breaking of the Primordial Force*).
 
 A survivor is not a light field. The seven that survive $\Phi$ are heavy at $M_C$, because their mass is the condensate's scale; only the one survivor of $H$ is light, and that is the Higgs.
 
@@ -124,7 +124,8 @@ Two vacua are not three. A second right doublet would add a vector to the neutra
 
 **One field breaks twice.** $\Phi$'s carrier index breaks $\mathrm{SU}(4)$ and its doublet index breaks $\mathrm{SU}(2)_R$, in one vacuum at one scale, eating nine.
 
-**Nine at $M_C$, three at $v$.** The vector count $21\to12\to9$ is the Goldstone count, read backwards.
+**Nine at $M_C$, three at $v$.** Six of the model's fifteen and three of the six that arrive are eaten at $M_C$, leaving twelve massless there; three of
+those twelve are eaten at $v$, leaving nine. The Goldstone count is $9+3=12$, read backwards from the vector ledger.
 
 **Eight survivors.** One radial mode, six colour-triplet states heavy at $M_C$, and the Higgs. **No other scalar exists in the minimal content.**
 
@@ -145,5 +146,5 @@ Two vacua are not three. A second right doublet would add a vector to the neutra
 
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The six of the colour breaking, computed generator by generator.
 - [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The vector count and the two scales this census produces.
-- [The Neutral Sector](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html). The two vacua as two vectors, and the photon they leave massless.
+- [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). The two vacua as two vectors, and the photon they leave massless.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Why the right index exists at all.

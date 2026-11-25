@@ -259,7 +259,7 @@ $$
 
 **What would restore it, stated as a reading and not as a result.** A condensate that vanishes restores the symmetry. Three routes do that: a temperature of order $M_C$; a field excursion that carries the scalar to the origin; or a region in which the scalar never condensed. **The corpus derives none of the three**, because the scalar potential is not in it. What the corpus establishes is the spectrum on either side of the transition, and that is enough to say what restoration would look like and what it would cost.
 
-**The observable is the sextet.** No generator of $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ carries a quark into a lepton: colour triality and $B-L$ are both conserved by the residual group, and the sextet is the only place in the fifteen where the two are traded. **So a leptoquark seen is not a particle added to the model; it is one of the fifteen acting**, and its rate is set by the coupling the model already has. The null searches at [the threshold article](the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html) bound $M_C$ from below, and **that bound is the statement that the unbroken phase has not yet been reached.**
+**The observable is the sextet.** No generator of $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ carries a quark into a lepton: colour triality and $B-L$ are both conserved by the residual group, and the sextet is the only place in the fifteen where the two are traded. **So a leptoquark seen is not a particle added to the model; it is one of the fifteen acting**, and its rate is set by the coupling the model already has. The null searches at [the threshold article](the-threshold-scales-mc-mw-and-what-would-fix-them.html) bound $M_C$ from below, and **that bound is the statement that the unbroken phase has not yet been reached.**
 
 ## The Checks
 
@@ -292,7 +292,7 @@ The nine are not "the rest". They are exactly the centraliser of the vacuum, and
 
 The rank is not reduced. Six dimensions leave and the torus stays; that is why the endpoint is $\mathrm{SU}(3)\times\mathrm{U}(1)$ and not something with fewer abelian directions (*What Breaks and What Does Not*).
 
-**The six weak generators are not among the fifteen.** The corpus states it in the mass-matrix article and it is worth repeating: on the carrier they are sums of colour and leptoquark planes, and **their masses come from a later breaking through a different vacuum**. **That sentence is the seed of the whole migration**: what breaks here is the parent of colour, and the parent of the weak force is a different object.
+**The six halves are not bosons of the model.** The corpus states it in the mass-matrix article and it is worth repeating: on the carrier each is one colour plane plus or minus one leptoquark plane, so it is a coherence of a massless direction and a heavy one, not a particle. **That sentence is the seed of the whole migration**: what breaks here is the parent of colour, the weak vectors arrive with the doublet index, and their masses come from a later breaking through a different vacuum.
 
 ## Summary
 

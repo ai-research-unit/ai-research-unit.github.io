@@ -47,7 +47,7 @@ $$
 | electroweak, hypercharge | $\mathfrak u(1)_Y$ | $1$ | the whole generation | derived: $T_{3R}+\tfrac12(B-L)$ |
 | electromagnetic | $\mathfrak u(1)_{\mathrm{em}}$ | $1$ | one dimension per charge | derived: $T_{3L}+Y$ |
 
-**The reading of the table.** The strong sector is $\mathfrak{su}(3)\oplus\mathfrak u(1)_{B-L}$ at the intermediate stage and $\mathfrak{su}(3)$ alone at the bottom, because $B-L$ is absorbed into hypercharge. The electroweak sector is $\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$ at the intermediate stage and $\mathfrak{su}(2)_L\oplus\mathfrak u(1)_Y$ at the bottom. The electromagnetic sector is one $\mathfrak u(1)$.
+**The reading of the table.** The strong sector is $\mathfrak{su}(3)\oplus\mathfrak u(1)_{B-L}$ at $M_C$ and $\mathfrak{su}(3)$ alone at the bottom, because $B-L$ is absorbed into hypercharge by the same transition that broke it. The electroweak sector is $\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$ at $M_C$ and $\mathfrak{su}(2)_L\oplus\mathfrak u(1)_Y$ at the bottom. The electromagnetic sector is one $\mathfrak u(1)$.
 
 ## Colour: $\mathfrak{su}(3)$ on Three Dimensions
 
@@ -138,7 +138,7 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 
 **6.3 The third loss: the left-handed charged pair and the neutral mixing.** $\left(\mathfrak{su}(2)_L\oplus\mathfrak u(1)_Y\right)/\mathfrak u(1)_{\mathrm{em}}$ is four-dimensional: the two $W^{\pm}$ and the two directions that become $Z$ and the photon. The one that survives is the combination annihilating both vevs.
 
-**6.4 What is not lost.** $\mathfrak{su}(3)$ and $\mathfrak u(1)_{\mathrm{em}}$ are subalgebras at every stage, and $B-L$ survives the first two steps. The corpus's claim that colour is a stabiliser at every scale is exactly the statement that $\mathfrak{su}(3)\subset\mathfrak h_i$ for all three $\mathfrak h_i$.
+**6.4 What is not lost.** $\mathfrak{su}(3)$ and $\mathfrak u(1)_{\mathrm{em}}$ are subalgebras at every stage, and $B-L$ is a factor at $M_C$ — absorbed into hypercharge by the same vacuum, so it survives no interval of its own. The corpus's claim that colour is a stabiliser at every scale is exactly the statement that $\mathfrak{su}(3)\subset\mathfrak h_i$ for all three $\mathfrak h_i$.
 
 ## The Checks
 

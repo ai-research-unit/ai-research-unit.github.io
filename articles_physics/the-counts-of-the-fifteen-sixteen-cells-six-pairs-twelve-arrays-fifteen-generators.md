@@ -8,7 +8,7 @@
 
 **This article fixes the four words**, defines each, states the maps between them, and names the article where each is the operative one. **It is a vocabulary article: it proves counts and identities and adds no physics.**
 
-**What is not here.** The old version of this article carried five counts and two of them were $24$ cells and $21$ arrays — the grids of three factors and the names on a declared copy. **With one group there is one grid and one copy of the fifteen**, so those two counts are gone and the article is shorter. **The subtraction is the model's:** it lost two factors and gained a shorter ledger.
+**What is not here.** Three factors would need three grids and $24=4^2+2^2+2^2$ cells. **With one group there is one grid and one copy of the fifteen**, so the ledger is four counts and not six.
 
 **The articles it leans on** are [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html) for the group and the declaration, [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the arrays, [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the grid, and [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) for the count the mass spectrum uses.
 
@@ -77,7 +77,7 @@ of them: **three mixed**, $\{t,x\}$, $\{t,y\}$, $\{t,z\}$, and **three colour**,
 
 ## The Six $\mathfrak{so}(4)$ Arrays Are Not Six More Directions
 
-**This is the slide that the old version of this article called "twenty-one names against fifteen".**
+**Six names against fifteen generators, and the slide is the whole of the distinction.**
 
 **The object.** The algebra's two-sided action gives $\mathfrak k_L\oplus\mathfrak k_R$, six real dimensions, and the six arrays
 
@@ -105,9 +105,9 @@ $$
 
 with $(a,b,c)$ cyclic in $(x,y,z)$. **Six names, no new generator, and the bracket of the six closes on the six.**
 
-**So the sentence to avoid.** "The model has twenty-one generators" is false twice: **it has fifteen generators, and the six extra names are a rotated basis of a six-dimensional subspace of those fifteen.** The correct sentence names what the six are — *the six planes of $\mathfrak{so}(4)$* — and points to the section of the corpus where they are given a physical reading.
+**The count, stated once.** **The model has fifteen generators, and the six extra names are a rotated basis of a six-dimensional subspace of those fifteen.** The correct sentence names what the six are — *the six planes of $\mathfrak{so}(4)$* — and points to the section of the corpus where they are given a physical reading.
 
-**What the six are for.** They are the object the successor model will name. **They are not a factor, they do not commute with the colour block, and three of them are heavy after the transition** — so they are not even a well-defined set of particles. That is the whole content of [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html), and it is why the count of *names* must never be read as a count of *generators*.
+**What the six are for.** They are the object the four-factor phase will name. **They are not a factor, they do not commute with the colour block, and three of them are heavy after the transition** — so they are not even a well-defined set of particles. That is the whole content of [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html), and it is why the count of *names* must never be read as a count of *generators*.
 
 ## The Direction: Fifteen, and Two Bases
 

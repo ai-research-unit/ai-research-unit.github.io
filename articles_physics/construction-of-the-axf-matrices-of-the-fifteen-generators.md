@@ -24,7 +24,7 @@ R_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=\bigl[e_{\jmath}\,\tilde Q\bigr]_{\ima
 $$
 **The order is $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the product is $\vec e_x\vec e_y=\vec e_z$ cyclically, and $E_{jk}$ is the matrix unit in that order.** The scalar unit $e_t$ is the identity of the algebra, so $e_t\vec X=\vec Xe_t=\vec X$: the temporal line is the lepton line of the model, and that is the whole of the identification.
 
-**Two words that name a side and not a chirality.** $L$ and $R$ name the side of the multiplication in the algebra, left or right. **They do not name gauge factors of this model**: the six arrays they index are a real basis of $\mathfrak{so}(4)\subset\mathfrak{su}(4)$, and no fermion chirality is assigned to a side here. **The chirality assignment is a declaration of the successor model**, made in the next section of the corpus.
+**Two words that name a side and not a chirality.** $L$ and $R$ name the side of the multiplication in the algebra, left or right. **They do not name gauge factors of this model**: the six arrays they index are a real basis of $\mathfrak{so}(4)\subset\mathfrak{su}(4)$, and no fermion chirality is assigned to a side here. **The chirality assignment is a declaration made below $M_C$**, in the next section of the corpus.
 
 ## Part I. The Six Arrays of $\mathfrak{so}(4)$ from the Axis-Free Arrays
 
@@ -33,7 +33,7 @@ $$
 T^{L}_{a}:=\tfrac12\,L_{\mathrm{axf}}(\vec e_a),\qquad
 T^{R}_{a}:=\tfrac12\,R_{\mathrm{axf}}(\vec e_a),\qquad a=x,y,z .
 $$
-**These six are not generators of the model.** They are the six planes of $\mathfrak{so}(4)$, a real six-dimensional subalgebra of the fifteen with rank two, and the rank of the twenty-one printed arrays is fifteen. **They are printed first because they are the input of Part II**: the raw arrays $\ell_a,r_a$ are twice them, and the pair resolution of §*Step 3* is written in terms of them. **What they are, and what they are not, is settled in §*The Fifteen, Counted*.**
+**These six are not generators of the model.** They are the six planes of $\mathfrak{so}(4)$, a real six-dimensional subalgebra of the fifteen with rank two, and they add no direction to it. **They are printed first because they are the input of Part II**: the raw arrays $\ell_a,r_a$ are twice them, and the pair resolution of §*Step 3* is written in terms of them. **What they are, and what they are not, is settled in §*The Fifteen, Counted*.**
 
 **The three left arrays.** Each is a signed permutation, read by columns: the $j$-th column is $\vec e_a e_j$.
 
@@ -103,9 +103,9 @@ $$
 [T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}T^{R}_{c},\qquad
 [T^{L}_{a},T^{R}_{b}]=0 .
 $$
-**The minus in the second is the anti-homomorphism of the properties display above**, and it is a sign inside the triple, not a different algebra: $\{-T^{R}_{a}\}$ closes with $+\epsilon_{abc}$. **The third line is the one that matters for the model.** Two triples that commute span $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, and that is the weak pair of the group, sitting inside $\mathfrak{su}(4)$.
+**The minus in the second is the anti-homomorphism of the properties display above**, and it is a sign inside the triple, not a different algebra: $\{-T^{R}_{a}\}$ closes with $+\epsilon_{abc}$. **The third line is the one that matters for the model.** Two triples that commute span $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, a six-dimensional real subalgebra of $\mathfrak{su}(4)$. **It is not the model's weak pair.** The weak factors arrive with the doublet index at the transition, and no generator of them is among the fifteen.
 
-**The six weak arrays are the two halves of $\mathfrak{so}(4)$, and the star says which is which.** Read an array as the two-form $\omega=\tfrac12\omega_{jk}\,dx^j\wedge dx^k$ with $\omega_{jk}=M_{jk}$, and fix the star by
+**The six halves split $\mathfrak{so}(4)$ into its self-dual and anti-self-dual parts, and the star says which is which.** Read an array as the two-form $\omega=\tfrac12\omega_{jk}\,dx^j\wedge dx^k$ with $\omega_{jk}=M_{jk}$, and fix the star by
 $$
 \star(dt\wedge dx)=dy\wedge dz,\qquad \star(dt\wedge dy)=dz\wedge dx,\qquad \star(dt\wedge dz)=dx\wedge dy .
 $$
@@ -287,7 +287,7 @@ $$
 
 ### The Fifteen, Counted
 
-**The six weak arrays are sums and differences of the fifteen, and the coefficients are integers after the halving.**
+**The six halves are sums and differences of the fifteen, and the coefficients are integers after the halving.**
 $$
 A_{ta}=-\bigl(T^{L}_{a}+T^{R}_{a}\bigr),\qquad
 A_{bc}=-\epsilon_{abc}\bigl(T^{L}_{a}-T^{R}_{a}\bigr),
@@ -299,9 +299,9 @@ T^{R}_{a}=-\tfrac12\bigl(A_{ta}-\epsilon_{abc}A_{bc}\bigr).
 $$
 **The $\epsilon$ is a convention and not a sign of the algebra.** $A_{bc}$ is written with $b<c$ throughout, and $\epsilon_{abc}=+1$ when $(a,b,c)$ is a cyclic order of $(x,y,z)$. For $a=x$ and $a=z$ the cyclic pair is already ascending, so the second line reads with a minus; for $a=y$ the cyclic pair is $(z,x)$ and the ascending one is $(x,z)$, so the same array carries the opposite sign. **Write the pairs in cyclic order and $\epsilon=+1$ everywhere; write them with $b<c$ and $\epsilon$ is the price.**
 
-**Check one, in four cells.** The two weak arrays agree on the $\{t,a\}$ block, so their sum keeps it doubled and its half is the leptoquark plane; they differ on the $\{b,c\}$ block, so their difference keeps it doubled and its half is the colour plane. **The half in the definition of $T$ is exactly what makes those two lines integral.**
+**Check one, in four cells.** The two halves agree on the $\{t,a\}$ block, so their sum keeps it doubled and its half is the leptoquark plane; they differ on the $\{b,c\}$ block, so their difference keeps it doubled and its half is the colour plane. **The half in the definition of $T$ is exactly what makes those two lines integral.**
 
-**Twenty-one arrays, fifteen generators.** The six relations are independent, so the rank of the twenty-one columns over $\mathbb{Q}(i)$ — equivalently over $\mathbb{R}$, the entries being Gaussian integers — is fifteen, and the twenty-one arrays are distinct. **Both statements are needed and neither is a defect**: one array per generator, and six of the arrays two-term sums of the other fifteen.
+**Fifteen generators, six halves.** The six relations are independent, so the six add no direction: the rank over $\mathbb{Q}(i)$ — equivalently over $\mathbb{R}$, the entries being Gaussian integers — is fifteen with them and fifteen without them, and each of the six is distinct from the fifteen. **Both statements are needed and neither is a defect**: one array per generator, and six arrays that are two-term sums of the other fifteen.
 
 **The normalisation, said once.** The fifteen are Gaussian-integer arrays, every entry in $\{0,\pm1,\pm i,\pm3i\}$ — the only entry of modulus $\ne1$ is the $-3i$ of the corner — with $\operatorname{tr}(X^{\dagger}X)=2$, except the corner, which has $12$. The six are real half-integer arrays, entries in $\{0,\pm\tfrac12\}$, with $1$. **No display mixes them**, and every relation above holds with the halves as written.
 
@@ -333,7 +333,7 @@ $$
 $$
 \operatorname{tr}(d_2d_3)=+1,
 $$
-**which is the array form of the statement that a colour basis is a choice and the algebra is not.** The six weak arrays are not orthogonal to the fifteen, and cannot be: they are sums of them. Their overlap is exactly the two planes they are made of,
+**which is the array form of the statement that a colour basis is a choice and the algebra is not.** The six halves are not orthogonal to the fifteen, and cannot be: they are sums of them. Their overlap is exactly the two planes they are made of,
 $$
 \operatorname{tr}\bigl(T^{L}_{a}A_{ta}\bigr)=1,\qquad \operatorname{tr}\bigl(T^{L}_{a}A_{bc}\bigr)=\epsilon_{abc},
 $$
@@ -411,7 +411,7 @@ $$
 
 **They do not identify the carrier with spacetime.** The quartet is a formal copy of the carrier, and a rotor of its three-space is a rotor of that three-space. The theorem and its consequence are in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html), §*The Carrier Is a Copy*.
 
-**They do not fix a coupling.** The model's one coupling is symbolic, so the numbers in the mass column are coefficients of $v^{2}$ and not predictions in kilograms. [The Coupling Sector](../articles_internal/the-coupling-sector-of-the-four-colours-model.html) records what the model does and does not supply.
+**They do not fix a coupling.** The model's one coupling is symbolic, so the numbers in the mass column are coefficients of $v^{2}$ and not predictions in kilograms. [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html) records what the model does and does not supply.
 
 ## The Checks
 
@@ -419,10 +419,10 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 
 | check | result |
 | --- | --- |
-| arrays displayed | $21$, all four-row: the fifteen and the six of $\mathfrak{so}(4)$ |
-| anti-Hermitian, traceless | $21/21$, $21/21$ |
-| distinct arrays | $21$ |
-| rank over $\mathbb{Q}(i)$ of the twenty-one / of the fifteen | $15$ / $15$ |
+| arrays displayed | the fifteen and the six halves of $\mathfrak{so}(4)$, all four-row |
+| anti-Hermitian, traceless | $15/15$ and $6/6$ |
+| distinct arrays | $15$ and $6$ |
+| rank over $\mathbb{Q}(i)$ of the fifteen / of the fifteen with the six | $15$ / $15$ |
 | $\ell_a^{2}=r_a^{2}=-\mathrm I_4$ | $6/6$ |
 | $\ell_x\ell_y=\ell_z$ / $r_xr_y=-r_z$ | $3/3$ / $3/3$ |
 | $[\ell_a,\ell_b]=2\epsilon_{abc}\ell_c$ | $3/3$ exact |
@@ -430,7 +430,7 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 | $[T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}T^{R}_{c}$ | $3/3$ exact |
 | $[T^{L}_{a},T^{R}_{b}]=0$ | $9/9$ exact |
 | $\operatorname{tr}(T^{L})^{2}=\operatorname{tr}(T^{R})^{2}=-1$ | $6/6$ |
-| spectrum of each weak array | $\pm\tfrac i2$, twice |
+| spectrum of each half | $\pm\tfrac i2$, twice |
 | $T^{L}_{a}-T^{R}_{a}$ supported on $2$ cells | $3/3$ |
 | star eigenvalue $+1$ (left) / $-1$ (right) | $3/3$ / $3/3$ |
 | $\operatorname{tr}(W^{\mathsf T}W')=4\delta$ | $256/256$ |
@@ -447,15 +447,15 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 | eight colour generators closed under the bracket | $64/64$ |
 | $M^{2}$ of the fifteen | $32v^{2}$ on the six mixed planes, $0$ on the nine, off-diagonals $0$ |
 | $\exp(\theta A_{tx})$: rotation, $e_t\mapsto(\cos\theta,-\sin\theta,0,0)$ | exact; $0.4$ gives $(0.921061,-0.389418,0,0)$ |
-| $\det\exp(0.7X)=1$ and unitary | $21/21$ |
+| $\det\exp(0.7X)=1$ and unitary | $15/15$ and $6/6$ |
 
 ## Summary
 
-**The fifteen generators are printed as twenty-one four-row axis-free arrays, and the article gives them in the order they are made.** The six arrays of $\mathfrak{so}(4)$ are half the raw arrays $\ell_a$, $r_a$; the fifteen are the sixteen words minus the trace word, with $i$ on the nine symmetric ones, and then the six pairs replaced by half-sum and half-difference.
+**The fifteen generators are printed as fifteen four-row axis-free arrays, and the six halves follow them in the order they are made.** The six arrays of $\mathfrak{so}(4)$ are half the raw arrays $\ell_a$, $r_a$; the fifteen are the sixteen words minus the trace word, with $i$ on the nine symmetric ones, and then the six pairs replaced by half-sum and half-difference.
 
 **The left and right triples differ by one sign on two entries per array**, they commute because the algebra is associative, and their brackets carry opposite signs because right multiplication is an anti-homomorphism. **As two-forms they are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$**, and the six real planes of $\mathfrak{su}(4)$ are their sums and differences: $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-\epsilon_{abc}(T^{L}_{a}-T^{R}_{a})$. Twenty-one arrays, fifteen generators.
 
-**Every property in Part III is one number.** Two cells or four; $2$, $12$ or $1$ under $\operatorname{tr}(X^{\dagger}X)$; spectrum $0,0,\pm i$ or $\pm\tfrac i2$ twice; a real rotation or a complex one. **And every array of the fifteen is one boson**: six leptoquarks, eight gluons and $B'$. **The six $\mathfrak{so}(4)$ arrays are not bosons**: each is half heavy and half massless, and the successor model is what names them. **The mass is $2v^{2}$ times the square of the difference of two eigenvalues of $D$**, which is $32v^{2}$ across the lepton line and zero across anything colour, and that single difference is the whole of the nine-and-six split.
+**Every property in Part III is one number.** Two cells or four; $2$, $12$ or $1$ under $\operatorname{tr}(X^{\dagger}X)$; spectrum $0,0,\pm i$ or $\pm\tfrac i2$ twice; a real rotation or a complex one. **And every array of the fifteen is one boson**: six leptoquarks, eight gluons and $B'$. **The six $\mathfrak{so}(4)$ arrays are not bosons**: each is half heavy and half massless, and the four-factor phase is what names them. **The mass is $2v^{2}$ times the square of the difference of two eigenvalues of $D$**, which is $32v^{2}$ across the lepton line and zero across anything colour, and that single difference is the whole of the nine-and-six split.
 
 ## Summary of Notation
 
@@ -471,8 +471,8 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 | $N_{jk}=\ell_jr_k$ | the nine vector-vector words |
 | $D=\operatorname{diag}(-3,1,1,1)$ | the corner's diagonal, with $B-L=\tfrac13D$ |
 | $iD,d_2,d_3$ | the three diagonal generators |
-| $T^{L}_{a}=\tfrac12\ell_a$ | the three planes of the left $\mathfrak{su}(2)\subset\mathfrak{so}(4)$ |
-| $T^{R}_{a}=\tfrac12r_a$ | the three planes of the right $\mathfrak{su}(2)\subset\mathfrak{so}(4)$ |
+| $T^{L}_{a}=\tfrac12\ell_a$ | one of the three left halves, a plane of $\mathfrak{so}(4)$ |
+| $T^{R}_{a}=\tfrac12r_a$ | one of the three right halves, a plane of $\mathfrak{so}(4)$ |
 | $P^{\pm}_{\mu\nu}$ | half-sum and half-difference of a pair of words |
 
 ## Further Reading
@@ -481,7 +481,7 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 - [Two Bases of $\mathfrak{su}(4)$](../articles_internal/structures/structure-SU4-basis-comparison.html). The change of basis between the maths fifteen and the physics fifteen, in both directions, with the composition checked to the identity.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The mass matrix of Part III: the operator, the commutator lemma, the nine-dimensional kernel and the general vacuum, both bases, and the $8v^{2}$ artefact.
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html). The frame, the signed permutations and the ten properties.
-- [The Twenty-One Generators in the Axis-Free Frame](../articles_internal/the-twenty-one-generators-in-the-axis-free-frame.html). The arrays of $L_{\vec e_a}$ and $R_{\vec e_a}$, their word support and the six relations.
+- [The Axis-Free Arrays of the Fifteen and the Six Halves](../articles_internal/the-axis-free-arrays-fifteen-generators-six-halves-and-a-cartan.html). The arrays of $L_{\vec e_a}$ and $R_{\vec e_a}$, their word support and the six relations.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [$M_2(\mathbb{C})$ Defining Representation](../articles_maths/m2c-defining-representation.html). The four-row and two-row frames.
 - [The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$](../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html). The fifteen in the operator basis, numbered $G_1$ to $G_{15}$.
 - [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). What each array does when exponentiated, and why no boost is in the group.

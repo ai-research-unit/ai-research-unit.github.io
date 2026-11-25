@@ -18,7 +18,7 @@ sixteen fields, thirty-two states, **closed under $C$ and therefore under $CP$.*
 
 **What this article is.** The fermion side of the classification and its conjugation: the count, the two octets, the $B-L$ assignment read off the grid, the anomaly cancellation as a count, and the conjugation as a permutation of the field set.
 
-**What this article is not.** It is not a flavour article and it says nothing about why there are three generations. Nor does it assign electric charge: **$Q$ needs the splitting of the copy index, which is a statement of the successor model**, and §*The Charge the Model Does Not Fix* says so explicitly.
+**What this article is not.** It is not a flavour article and it says nothing about why there are three generations. Nor does it assign electric charge: **$Q$ needs the splitting of the copy index, which needs a weak factor and is therefore a statement about $M_C$**, and §*The Charge the Model Does Not Fix* says so explicitly.
 
 ## The Count Is a Product, Not a Sum of Squares
 
@@ -60,13 +60,13 @@ $$
 
 **Three remarks about the pairing.**
 
-- **The two copies carry the same $B-L$ and the same colour.** That is the definition of an index: $\imath=1,2$ is a label the group does not see, so it cannot change an eigenvalue. **The splitting of the two copies is the successor's business**, and it is where the up/down and the neutrino/electron distinction is made.
+- **The two copies carry the same $B-L$ and the same colour.** That is the definition of an index: $\imath=1,2$ is a label the group does not see, so it cannot change an eigenvalue. **The splitting of the two copies happens below $M_C$**, and it is where the up/down and the neutrino/electron distinction is made.
 - **A massive fermion needs both halves.** $\mathbf4$ and $\bar{\mathbf4}$ are one Dirac field read twice; the electron is the pair, not either row alone. **So a count of fields is sixteen and a count of particles is fewer.**
 - **Three generations multiply the table by three**: forty-eight Weyl fields and ninety-six states. **The number of generations is not fixed by the grid.**
 
 ## The Charge the Model Does Not Fix
 
-**One statement, made once, because the old frame made it and this one cannot.**
+**One statement, made once, because the model's tables cannot carry it.**
 
 **The model fixes $B-L$ and it does not fix $Q$.** $B-L$ is a generator of the algebra, so every entry of every quartet has a definite value of it. **$Q$ is not a generator of $\mathrm{SU}(4)$, and no combination of the fifteen is the electric charge of a fermion**, because the two copies of a quartet carry the same $B-L$ and the same colour and differ in nothing the group acts on.
 
@@ -76,9 +76,9 @@ $$
 Q=T_3+\tfrac12\bigl(B-L\bigr),
 $$
 
-and the familiar charges come back — $0$ and $-1$ on the lepton line, $+\tfrac23$ and $-\tfrac13$ on each colour line. **That is the successor's equation and not this model's**: it is written where the weak force is born as a side effect, and it is not used in this article's tables.
+and the familiar charges come back — $0$ and $-1$ on the lepton line, $+\tfrac23$ and $-\tfrac13$ on each colour line. **That equation belongs below $M_C$ and not here**: it is written where the weak factor is born as a side effect, and it is not used in this article's tables.
 
-**Why the distinction is worth a section.** A table of $Q$ values in an $\mathrm{SU}(4)$-only article would be a table of the successor's charges printed under this model's name. **The honest column is the one above, and its fourth entry reads "not fixed".**
+**Why the distinction is worth a section.** A table of $Q$ values in an $\mathrm{SU}(4)$-only article would be a table of charges that this model does not carry. **The honest column is the one above, and its fourth entry reads "not fixed".**
 
 ## The Conjugate Grid
 
@@ -93,7 +93,7 @@ $$
 
 **On the algebra it sends a generator to the corresponding generator of the conjugate group**, which is the same fifteen read oppositely, and the boson articles already use it: the antiparticle of a boson is the same array with the opposite $i$. **For the fermions the statement is shorter**: $C$ acts on the representation label and it is a permutation of the sixteen fields, because for every $\mathbf4_{\imath}$ the list contains a $\bar{\mathbf4}_{\imath}$.
 
-**That is the change from the old frame, and it is a gain.** The old content was $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$, so $C$ sent $(\mathbf4,\mathbf2,\mathbf1)$ to a representation **not** in the content: the model was closed under $CP$ and not under $C$, and the article said so. **A vector-like content is closed under both**, and the reason is a count: two copies on each side.
+**A chiral content would fail here, and the contrast is the point.** Content of the form $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$ would send $(\mathbf4,\mathbf2,\mathbf1)$ under $C$ to a representation **not** in the list: such a model is closed under $CP$ and not under $C$. **This content is vector-like and closed under both**, and the reason is a count: two copies on each side.
 
 ### The Antiparticle $B-L$
 
@@ -158,17 +158,17 @@ An index is not a factor. The copy index $\imath=1,2$ is invisible to the group;
 
 A label is not a representation. The three colour labels are the same on both sides of the conjugate pair; the representation is $\mathbf3$ on one side and $\bar{\mathbf3}$ on the other.
 
-$B-L$ is not $Q$. The model fixes the first and the successor fixes the second.
+$B-L$ is not $Q$. The model fixes the first, and the second needs the weak factor.
 
-Closed under $C$ is not the same as closed under $CP$. **This model has both, and it had only the second when the content was chiral.**
+Closed under $C$ is not the same as closed under $CP$. **This model has both, because the content is vector-like; a chiral content would have only the second.**
 
 ## Summary
 
 **Sixteen Weyl fields per generation, as two quartets and two antiquartets, and the count is a product over the quartet index and the copy index.** The sum of $B-L$ vanishes and the $\mathrm{SU}(4)^{3}$ anomaly cancels by counting: $2(+1)+2(-1)=0$.
 
-**Charge conjugation is a permutation of the sixteen, not an enlargement of them**, and $C^{2}=\mathbb 1$. **The content is vector-like, so the model is closed under $C$ and under $CP$** — where the old frame, with one chiral pair, was closed under $CP$ only.
+**Charge conjugation is a permutation of the sixteen, not an enlargement of them**, and $C^{2}=\mathbb 1$. **The content is vector-like, so the model is closed under $C$ and under $CP$** — a chiral pair would be closed under $CP$ only.
 
-**The model fixes $B-L$ and does not fix $Q$.** The Standard Model's charge table needs the splitting of the copy index, which the successor's weak factor supplies — and printing it here would be printing the successor's numbers under this model's name.
+**The model fixes $B-L$ and does not fix $Q$.** The Standard Model's charge table needs the splitting of the copy index, which the weak factor at $M_C$ supplies — and printing it here would be printing numbers this model does not carry.
 
 **Three generations multiply the table by three, and the grid does not fix the number.**
 

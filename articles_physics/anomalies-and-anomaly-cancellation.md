@@ -57,7 +57,7 @@ The framework results used here are those of the companion articles:
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the chiral classification, the Dirac pair, and the gauge quantum numbers of the left- and right-handed fields.
 - Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the multiplet structure whose charge sums are the cancellation conditions.
 
-**Status in the migration.** The conditions this article cancels are now vacuous: with $Y=T_{3R}+\tfrac12(B-L)$ there are **four rows and no free charge to adjust**, and the cubic one cancels between the quartet and its conjugate as $-\tfrac29+\tfrac29=0$. The row that mixed the two factors, $\operatorname{tr}(T_{3L}^2Y)$, reduces to $\tfrac12\operatorname{tr}_{\mathbf4}(B-L)$, which vanishes because the quartet's eigenvalues sum to $3\cdot\tfrac13-1=0$. **The triangle coefficients computed below are unchanged; what changes is that no choice remains to be made.** The tier is T3.
+**The conditions this article cancels are vacuous:** with $Y=T_{3R}+\tfrac12(B-L)$ there are **four rows and no free charge to adjust**, and the cubic one cancels between the quartet and its conjugate as $-\tfrac29+\tfrac29=0$. The row that mixed the two factors, $\operatorname{tr}(T_{3L}^2Y)$, reduces to $\tfrac12\operatorname{tr}_{\mathbf4}(B-L)$, which vanishes because the quartet's eigenvalues sum to $3\cdot\tfrac13-1=0$. **The triangle coefficients computed below stand, and no choice remains to be made.** The tier is T3.
 
 ## The Classical Symmetry and its Quantum Failure
 

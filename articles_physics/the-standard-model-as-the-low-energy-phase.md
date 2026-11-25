@@ -22,9 +22,9 @@ The spine of the article is the three gauge factors. Each is stated with its sou
 
 Three temptations are refused. (a) The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, whose commutator algebra contains $\mathrm{SU}(2)$, is not a derivation of $SU(2)_L$: weak isospin is a chiral structure, and the chirality problem must be resolved first. (b) The factors are not assembled into a product group and called the Standard Model's gauge group, because no hypercharge assignment is derived and one of the three factors is absent altogether. (c) Where the article counts what the framework supplies, it counts framework objects and not Standard Model parameters. Each refusal is argued where it arises.
 
-The Standard Model is the low-energy phase of $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, which [the frame article](the-su4-model-four-colours-fifteen-generators-one-declaration.html) builds on a formal copy of the carrier and whose weak pair [the group article](su2l-times-su2r-two-sides-six-generators-one-group.html) builds at the element level. The ceiling below is a statement about what the algebra's own action carries, and the larger group does not remove it.
+The Standard Model is the low-energy phase of the four-factor group $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, which is what the transition at $M_C$ reaches: [the frame article](the-su4-model-four-colours-fifteen-generators-one-declaration.html) builds the carrier and the module, and [the group article](su2l-times-su2r-two-sides-six-generators-one-group.html) builds the weak pair at the element level. The ceiling below is a statement about what the algebra's own action carries, and the four factors do not remove it.
 
-**The scope of the finding.** The group whose generators are elements of $\mathbb B$ is $\mathrm{U}(2)$, and none of the Standard Model's four structures is derived there. That is not the test the frame article applies. Its test asks two things: whether a generator lives in $\operatorname{End}_{\mathbb C}(\mathbb B)$, and which module its group acts on. $G_{4LR}$ passes both, acting on a formal copy of the carrier; the test is stated in the frame article, §*Where Each Factor Comes From, and How Firmly*. Both statements therefore hold: the algebra's own action stops at $\mathrm{U}(2)$, and the frame admits $G_{4LR}$, because the Standard Model is what $G_{4LR}$ breaks to and the address belongs to $G_{4LR}$ rather than to the broken group.
+**The scope of the finding.** The group whose generators are elements of $\mathbb B$ is $\mathrm{U}(2)$, and none of the Standard Model's four structures is derived there. That is not the test the frame article applies. Its test asks two things: whether a generator lives in $\operatorname{End}_{\mathbb C}(\mathbb B)$, and which module its group acts on. The group passes both, acting on a formal copy of the carrier; the test is stated in the frame article, §*What Is Derived and What Is Declared*. Both statements therefore hold: the algebra's own action stops at $\mathrm{U}(2)$, and the frame admits the four factors, because the Standard Model is what they break to and the address belongs to them rather than to the broken group.
 
 **What the larger test does not reach.** Two of the four unbuilt sectors survive it. $\mathrm{SU}(3)$ and hypercharge are admitted — the first by the split, the second by $T_{3R}+\tfrac12(B-L)$ — but $\mathrm{SU}(2)_L$ as a *chiral* group is not, because the test is about where the generators live and the chirality is about the module. The chiral sector is therefore the permanent obstacle, and the scalar sector is unbuilt on either reading.
 
@@ -265,13 +265,15 @@ $$
 $$
 \mathrm{SU}(4)\ \xrightarrow[\ M_C\ ]{\ \langle\Phi\rangle\ }\
 \mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R
-\ \xrightarrow[\ \text{truncation}\ ]{}\
+\ \xrightarrow[\ M_C\ ]{\ \langle\Phi\rangle\ }\
 \mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_{Y}
 \ \xrightarrow[\ v\ ]{\ \langle H\rangle\ }\
-\mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}} .
+\mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}} ,
 $$
 
-**One breaking, one truncation, one breaking.** The four-factor group is the group at $M_C$ and has no width: the same vacuum that makes it makes the right-handed bosons heavy. **So the Standard Model is not a theory that declined the pair; it is the description of a theory whose pair is heavy**, and hypercharge is the left-over of the right factor. **The scale of that breaking is bounded from below only**, so nothing forbids the pair and nothing requires it — which is why the fourth role of the group article is a hypothesis and not a fact, and why this article's ceiling survives the framing: a larger group does not build the objects the ceiling counts.
+**The middle arrow is the same arrow read on the other factor, not a second event.**
+
+**One transition at $M_C$ — breaking and decoupling in the same step — and one breaking at $v$.** The four-factor group is the group at $M_C$ and has no width: the same vacuum that makes it makes the right-handed bosons heavy. **So the Standard Model is not a theory that declined the pair; it is the description of a theory whose pair is heavy**, and hypercharge is the left-over of the right factor. **The scale of that breaking is bounded from below only**, so nothing forbids the pair and nothing requires it — which is why the fourth role of the group article is a hypothesis and not a fact, and why this article's ceiling survives the framing: a larger group does not build the objects the ceiling counts.
 
 **What this section adds to the audit's checks.**
 
