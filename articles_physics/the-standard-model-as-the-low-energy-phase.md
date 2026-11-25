@@ -223,7 +223,7 @@ $$
 Q=T_{3L}+T_{3R}+\tfrac12(B-L),
 $$
 
-so $B-L$ must itself be a gauge symmetry, because $Q$ is a combination of gauge generators. And the abelian factor is anomaly-free exactly when the right-handed neutrino is included, since the two conditions
+so $B-L$ must itself be a generator of the gauge group, because $Q$ is a combination of them — a direction of the simple group above $M_C$, which the transition then breaks. And the abelian factor is anomaly-free exactly when the right-handed neutrino is included, since the two conditions
 
 $$
 \textstyle\sum(B-L)=0,\qquad \sum(B-L)^{3}=0
@@ -260,17 +260,18 @@ $$
 
 **The chiral wall closes the argument, and this is where it differs from the reasons above.** From the group article: non-abelian chiral one-sided multiplication does not exist. The observed $SU(2)_L$ couples only to left-handed fields, so it is chiral non-abelian, so the algebra cannot supply it as a one-sided action. **That is the ceiling of this article restated at the pair**, and it is the reason the parity question cannot be settled by choosing a bigger group: the missing object is the tie between an operator side and a spinor letter, not a generator.
 
-**The chain, written once.**
+**The chain, in the form [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) owns.**
 
 $$
-\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}
-\ \xrightarrow{\ \langle\Delta_R\rangle\ }\
+\mathrm{SU}(4)\ \xrightarrow[\ M_C\ ]{\ \langle\Phi\rangle\ }\
+\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R
+\ \xrightarrow[\ \text{truncation}\ ]{}\
 \mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_{Y}
-\ \xrightarrow{\ \langle\Phi\rangle\ }\
+\ \xrightarrow[\ v\ ]{\ \langle H\rangle\ }\
 \mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}} .
 $$
 
-**The middle term is the observed group, and this is the exact sense in which it is a phase.** It is not a theory that declined the pair; it is the low-energy description of a theory that broke one factor of it, and hypercharge is the left-over. **The scale of that breaking is bounded from below only**, so nothing forbids the pair and nothing requires it — which is why the fourth role of the group article is a hypothesis and not a fact, and why this article's ceiling survives the framing: a larger group does not build the objects the ceiling counts.
+**One breaking, one truncation, one breaking.** The four-factor group is the group at $M_C$ and has no width: the same vacuum that makes it makes the right-handed bosons heavy. **So the Standard Model is not a theory that declined the pair; it is the description of a theory whose pair is heavy**, and hypercharge is the left-over of the right factor. **The scale of that breaking is bounded from below only**, so nothing forbids the pair and nothing requires it — which is why the fourth role of the group article is a hypothesis and not a fact, and why this article's ceiling survives the framing: a larger group does not build the objects the ceiling counts.
 
 **What this section adds to the audit's checks.**
 

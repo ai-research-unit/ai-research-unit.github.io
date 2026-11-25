@@ -5,18 +5,18 @@
 **One coupling.** The coupling that returns the Standard Model is a single equation. It is the matching of hypercharge to the two abelian factors above it:
 
 $$
-\boxed{\;\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}\quad\text{at }M_R\;}
+\boxed{\;\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}\quad\text{at }M_C\;}
 $$
 
-**One equation.** It is enough to recover the Standard Model's three measured couplings. That is the claim of this article, and it is arithmetic rather than a hope.
+**One equation.** It is enough to recover the Standard Model's three measured couplings. That is the claim of this article, and it is arithmetic on the group's own normalisations rather than a hope.
 
-**Three declarations.** The equation is the first. The second is a scale, $M_R$, at which the equation is imposed. The third is a content statement: below $M_R$ the matter is exactly the Standard Model's, three generations with one doublet. An equation without a scale is not a statement, and a scale without content is not a prediction. The three are listed together because two of them alone prove nothing.
+**Three declarations.** The equation is the first. The second is a scale, $M_C$, at which the equation is imposed. The third is a content statement: below $M_C$ the matter is exactly the Standard Model's, three generations with one doublet. An equation without a scale is not a statement, and a scale without content is not a prediction. The three are listed together because two of them alone prove nothing.
 
 ## What "Returns the Standard Model" Means
 
 **One thing.** It is worth separating from two things it does not mean.
 
-**1.1 A recovery, not a derivation.** Below $M_R$ the group is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, the fields are the Standard Model's, and the couplings are the measured ones. The recovery says: given the group above, the measured numbers below are mutually consistent at one scale, through one relation. It does not say why the numbers have the values they have.
+**1.1 A recovery, not a derivation.** Below $M_C$ the group is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, the fields are the Standard Model's, and the couplings are the measured ones. The recovery says: given the group above, the measured numbers below are mutually consistent at one scale, through one relation. It does not say why the numbers have the values they have.
 
 **1.2 It fixes no number by itself.** The equation has two unknowns, $g_R$ and $g_{B-L}$, against one measured $g_Y$, and one further relation above supplies the second: the normalisation
 
@@ -32,13 +32,13 @@ which is a trace identity, $\operatorname{tr}(T^{15})^2=\tfrac12$, and not a dyn
 
 **Three steps.** The third is the number every article on the electroweak sector quotes.
 
-**2.1 At the first threshold.** The $\mathrm{SU}(4)$ coupling is one, and the $B-L$ field is the fifteenth Cartan:
+**2.1 At the threshold.** The $\mathrm{SU}(4)$ coupling is one, and the $B-L$ field is the fifteenth Cartan:
 
 $$
 g_3=g_4,\qquad g_{B-L}^2=\tfrac38g_4^2 .
 $$
 
-**2.2 At the second threshold.** Hypercharge is the combination $Y=T_{3R}+\tfrac12(B-L)$, so its field is a mixture and its coupling is the harmonic sum, with the coefficient $\tfrac12$ squared:
+**2.2 At the same threshold, the second step.** Hypercharge is the combination $Y=T_{3R}+\tfrac12(B-L)$, so its field is a mixture and its coupling is the harmonic sum, with the coefficient $\tfrac12$ squared:
 
 $$
 \frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2} .
@@ -84,7 +84,7 @@ The number $\tfrac38$ is not a measurement and not a guess. It is the trace norm
 **3.1 Bounded below, unbounded above.** $K_L\to\mu e$ limits the leptoquark mass, and the leptoquark mass is set by the same vacuum that sets $M_X$:
 
 $$
-M_X^2=\tfrac12\,g_4^2\,v_R^2,\qquad M_{W_R}^2=\tfrac14\,g_R^2\,v_R^2,
+M_X^2=\tfrac12\,g_4^2\,v_C^2,\qquad M_{W_R}^2=\tfrac14\,g_R^2\,v_C^2,
 $$
 
 so that
@@ -98,7 +98,7 @@ The $\sqrt2$ is structural and survives every scale. The factor $g_4/g_R$ is not
 **3.2 The output moves.** Solving the matching equation at a chosen pair of scales gives
 
 $$
-\frac{1}{g_R^2}=\frac{1}{g_Y^2(M_R)}-\frac{1}{4\,g_{B-L}^2(M_R)},
+\frac{1}{g_R^2}=\frac{1}{g_Y^2(M_C)}-\frac{1}{4\,g_{B-L}^2(M_C)},
 $$
 
 and the solution exists only while the bracket is positive. Two consequences follow at once:
@@ -144,29 +144,29 @@ The two scales are four decades apart, and no single scale is both. That is the 
 
 **4.3 What the failure does not touch.** It destroys the prediction $\tfrac38$ and it does not touch the group, the sixteen, the charges, the anomalies, the boson count or the leptoquark content. Those are algebraic and they do not depend on any coupling value.
 
-## The Three-Scale Variant, and Why It Does Not Rescue It
+## The Extra-Scale Variant, and Why It Does Not Rescue It
 
 **One repair.** It does not work.
 
-**5.1 The proposal.** Add a scale: impose $g_4=g_L=g_R$ at $M_{U}>M_C>M_R$ and change nothing below. Two conditions on three scales is a curve, not a point, so the variant is not empty. What it does not do is close the gap.
+**5.1 The proposal.** Add a scale above the transition: impose $g_4=g_L=g_R$ at $M_{U}>M_C$ and change nothing below. Two conditions on two scales is a curve, not a point, so the variant is not empty. What it does not do is close the gap.
 
-**5.2 The obstruction.** Above $M_R$ the content is parity-symmetric, so every $\mathrm{SU}(2)_L$ multiplet has an $\mathrm{SU}(2)_R$ partner of the same dimension:
+**5.2 The obstruction.** Above $M_C$ the content is parity-symmetric, so every $\mathrm{SU}(2)_L$ multiplet has an $\mathrm{SU}(2)_R$ partner of the same dimension:
 
 $$
 c_{2L}=c_{2R}\quad\Longrightarrow\quad
 \frac{1}{\alpha_L(M_{U})}-\frac{1}{\alpha_R(M_{U})}
-=\frac{1}{\alpha_L(M_R)}-\frac{1}{\alpha_R(M_R)} .
+=\frac{1}{\alpha_L(M_C)}-\frac{1}{\alpha_R(M_C)} .
 $$
 
-Equal coefficients transport the gap unchanged, so the condition at $M_{U}$ is a condition at $M_R$.
+Equal coefficients transport the gap unchanged, so the condition at $M_{U}$ is a condition at $M_C$.
 
 $$
-g_L(M_{U})=g_R(M_{U})\iff g_L(M_R)=g_R(M_R) .
+g_L(M_{U})=g_R(M_{U})\iff g_L(M_C)=g_R(M_C) .
 $$
 
-**5.3 What that means in words.** The third scale moves the meeting of $g_4$ with $g_L$, because $c_4\ne c_2$. It does nothing to the meeting of $g_R$ with $g_L$, because parity makes their running identical. The extra running fixes exactly the half that was not the problem.
+**5.3 What that means in words.** The extra scale moves the meeting of $g_4$ with $g_L$, because $c_4\ne c_2$. It does nothing to the meeting of $g_R$ with $g_L$, because parity makes their running identical. The extra running fixes exactly the half that was not the problem.
 
-**5.4 What closing the gap would take.** Only breaking parity above $M_R$ lets the gap run, and the gap is $44.6$ in inverse-coupling units against $27$ e-folds to the colour meeting:
+**5.4 What closing the gap would take.** Only breaking parity above $M_C$ lets the gap run, and the gap is $44.6$ in inverse-coupling units against $27$ e-folds to the colour meeting:
 
 $$
 \Delta c_2\simeq2\pi\frac{44.6}{27}\simeq10 .
@@ -213,7 +213,7 @@ The last column is where the scale enters, and it enters twice: once in the rati
 
 ## What the Relation Does and Does Not Fix
 
-**What it is.** A single relation, derived twice, that ties the hypercharge coupling at $M_R$ to the $\mathrm{SU}(4)$ coupling at $M_C$; a scale at which the relation is imposed; a content statement below the scale; and a statement of what the relation does not fix.
+**What it is.** A single relation, derived twice, that ties the hypercharge coupling at $M_C$ to the $\mathrm{SU}(4)$ coupling at the same scale; a scale at which the relation is imposed; a content statement below the scale; and a statement of what the relation does not fix.
 
 **What it is not.** It is not a unification. The three couplings are not required to be equal anywhere, and the model's own position is that they are not. It is not a prediction of $\alpha_{\mathrm{em}}$, $\alpha_s$ or $\sin^2\theta_W$: those are measured at $M_Z$ and the relation is imposed on top of them. And it is not a claim that the model is confirmed by the agreement it manufactures.
 
@@ -230,7 +230,7 @@ The last column is where the scale enters, and it enters twice: once in the rati
 | the $\tfrac38$ scale | running the measured pair up | $1.63\times10^{3}$ J |
 | the $g_4=g_L$ scale | running the measured pair up | $1.57\times10^{7}$ J |
 | the separation | the two scales | four decades, so no single scale is both |
-| the parity freeze | $c_{2L}$ against $c_{2R}$ above $M_R$ | equal, so the gap does not run |
+| the parity freeze | $c_{2L}$ against $c_{2R}$ above $M_C$ | equal, so the gap does not run |
 | the required asymmetry | $2\pi\times44.6/27$ | about $10$, or thirty doublets |
 | the ratio of masses | $\sqrt2\,g_4/g_R$ | $2.2$ to $3.1$ |
 
@@ -242,15 +242,15 @@ The output is not a prediction: $g_R$ moves with the chosen scales, between $0.6
 
 $\tfrac38$ is not a prediction of the unified case: it holds at $1.63\times10^{3}$ J, where colour is $13\%$ short (*The Boundary Condition, and Why It Fails*).
 
-The failure of the unified case is not arithmetic: the equality is not preserved by the matter content between the thresholds (*The Boundary Condition, and Why It Fails*).
+The failure of the unified case is not arithmetic: the equality is not preserved by the matter content between $M_Z$ and $M_C$ (*The Boundary Condition, and Why It Fails*).
 
-The three-scale variant is not a repair: parity makes the two $\mathrm{SU}(2)$ coefficients equal, so the extra scale cannot move the gap (*The Three-Scale Variant, and Why It Does Not Rescue It*).
+The extra-scale variant is not a repair: parity makes the two $\mathrm{SU}(2)$ coefficients equal, so the extra scale cannot move the gap (*The Extra-Scale Variant, and Why It Does Not Rescue It*).
 
 The scalar sector's defect is not a numerical mismatch: it is one matrix serving two sectors, which is counting and needs no scale (*The Yukawa Sector: The Same Question*).
 
 ## Summary
 
-The Standard Model is recovered from the fourth colour by one equation, $\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}$ at $M_R$, together with one scale and one statement of content below it.
+The Standard Model is recovered from the fourth colour by one equation, $\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}$ at $M_C$, together with one scale and one statement of content below it.
 
 The arithmetic is exact and short. The denominators are $1$, $1$ and $\tfrac23$; they sum to $\tfrac83$; the angle at the threshold is $\tfrac38$; and the same sum read from the generator algebra gives the identical result.
 
@@ -266,15 +266,14 @@ The Yukawa sector answers the same question by counting. The one-bidoublet condi
 
 | symbol | meaning |
 |---|---|
-| $g_4$ | the $\mathrm{SU}(4)$ coupling, tied to $g_3$ at the first threshold |
+| $g_4$ | the $\mathrm{SU}(4)$ coupling, tied to $g_3$ at the transition |
 | $g_L$, $g_R$ | the $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$ couplings |
 | $g_{B-L}$ | the abelian coupling of the fifteenth Cartan, $g_{B-L}^2=\tfrac38g_4^2$ |
-| $g_Y$ | the hypercharge coupling below $M_R$ |
+| $g_Y$ | the hypercharge coupling below $M_C$ |
 | $e$ | the electromagnetic coupling, the mixture of the three neutral fields |
 | $\sin^2\theta_W$ | $e^2/g_L^2$, the mixing angle written as a ratio |
-| $M_C$ | the scale of the first threshold |
-| $M_R$ | the scale where the equation of this article is imposed |
-| $M_{U}$ | the single scale of the unified case, $M_C=M_R=M_{U}$ |
+| $M_C$ | the transition scale |
+| $M_{U}$ | the extra scale of the variant, above $M_C$ |
 | $c_2$, $c_4$ | the one-loop coefficients of the two factors, $\tfrac{19}{6}$ and $\tfrac{32}{3}$ |
 | $T^{15}$ | the fifteenth $\mathrm{SU}(4)$ Cartan, the $B-L$ generator |
 | $M_X$ | the leptoquark mass, $\sqrt2\,(g_4/g_R)M_{W_R}$ |

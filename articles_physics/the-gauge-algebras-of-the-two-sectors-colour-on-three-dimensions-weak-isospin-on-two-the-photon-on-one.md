@@ -104,9 +104,9 @@ so $\mathfrak u(1)_Y$ is a one-dimensional subspace of $\mathfrak{su}(2)_R\oplus
 | $W^{1}_L,W^{2}_L,W^{3}_L$ | $3$ | $\mathrm{SU}(2)_L$, as a factor |
 | $Y$ | $1$ | one direction of $\mathrm{SU}(2)_R$ and one of $\mathrm{SU}(4)$, mixed |
 
-The surplus is not an error in the count. The two neutral raw directions span a plane; $Y$ is one direction in it; **the orthogonal direction is a physical state, the $Z_R$, which becomes massive at $M_R$.** The step $5\to4$ is therefore the step in which one gauge boson acquires a mass, and it happens entirely inside that plane.
+The surplus is not an error in the count. The two neutral raw directions span a plane; $Y$ is one direction in it; **the orthogonal direction is a physical state, the $Z_R$, which becomes massive at $M_C$.** The step $5\to4$ is therefore the step in which one gauge boson acquires a mass, and it happens entirely inside that plane.
 
-**And the vacuum is a vector, not a line.** $T_{3R}$ gives $+\tfrac12$ on $v_R e_\uparrow$ and $B-L$ gives $-1$, so neither annihilates it; the kernel is the single combination $Y$. **The line count and the generator count disagree and both are right**: a doublet has one line up to phase, so the line stabiliser is $\mathrm{U}(1)_R$ and the step reads $3\to1$; the generator that survives is one of the four directions of $\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$, so the step reads $4\to1$. A stabiliser of a vector is smaller than the stabiliser of its line, and a scalar vacuum is a vector.
+**And the vacuum is a vector, not a line.** $T_{3R}$ gives $+\tfrac12$ on $v_C e_\uparrow$ and $B-L$ gives $-1$, so neither annihilates it; the kernel is the single combination $Y$. **The line count and the generator count disagree and both are right**: a doublet has one line up to phase, so the line stabiliser is $\mathrm{U}(1)_R$ and the step reads $3\to1$; the generator that survives is one of the four directions of $\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$, so the step reads $4\to1$. A stabiliser of a vector is smaller than the stabiliser of its line, and a scalar vacuum is a vector.
 
 **4.3 $Q$, which is a combination of a combination.** The electric charge is the span of
 
@@ -116,7 +116,7 @@ $$
 
 It is the unique direction annihilated by both vacuum lines, which is why it survives: the two conditions $Q\Phi_0=0$ and $QH_0=0$ leave exactly one dimension among the five Cartan directions of $B-L$, $T_{3L}$ and $T_{3R}$.
 
-**4.4 The rank budget, read as an algebra statement.** $3\to5\to4\to3$: the Cartan rank of the residual algebra, computed as the dimension of the maximal torus that survives. **The first step adds two directions**, because the two weak $\mathrm{SU}(2)$ factors arrive with the doublet index at $M_C$ and bring their Cartans with them, while the sextet that leaves is off-diagonal and removes no torus direction. The second removes $T_{3R}$; the third removes $T_{3L}$ and $Y$ and keeps their sum.
+**4.4 The rank budget, read as an algebra statement.** $3\to5\to4\to3$: the Cartan rank of the residual algebra, computed as the dimension of the maximal torus that survives. **The first step adds two directions**, because the two weak $\mathrm{SU}(2)$ factors arrive with the doublet index at $M_C$ and bring their Cartans with them, while the sextet that leaves is off-diagonal and removes no torus direction. **The second removal is in the same vacuum as the first**: the right factor is broken by the doublet index of the same field, so the rank is five at $M_C$ and four immediately below it. The third removes $T_{3L}$ and $Y$ and keeps their sum, at $v$.
 
 ## The Photon on One Dimension
 
@@ -134,7 +134,7 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 
 **6.1 The first loss: colour-lepton mixing.** The six leptoquark directions of $\mathfrak{su}(4)/\left(\mathfrak{su}(3)\oplus\mathfrak u(1)\right)$ are the endomorphisms that map the lepton line to the triplet and back. They carry colour, they carry $B-L=\pm\tfrac43$, and no residual algebra contains them. Their module structure under the residual group is a coloured pair, which is why they can be integrated out covariantly rather than dropped: they form a module, not a set.
 
-**6.2 The second loss: the right-handed charged pair.** $\mathfrak{su}(2)_R/\mathfrak u(1)_R$ is two-dimensional and carries $T_{3R}=\pm1$ in the adjoint. Below $M_R$ there is no operator that rotates the members of a right doublet into each other, so no mass term can be forbidden by that symmetry, and the observed splitting of the members is allowed.
+**6.2 The second loss: the right-handed charged pair.** $\mathfrak{su}(2)_R/\mathfrak u(1)_R$ is two-dimensional and carries $T_{3R}=\pm1$ in the adjoint. Below $M_C$ there is no operator that rotates the members of a right doublet into each other, so no mass term can be forbidden by that symmetry, and the observed splitting of the members is allowed.
 
 **6.3 The third loss: the left-handed charged pair and the neutral mixing.** $\left(\mathfrak{su}(2)_L\oplus\mathfrak u(1)_Y\right)/\mathfrak u(1)_{\mathrm{em}}$ is four-dimensional: the two $W^{\pm}$ and the two directions that become $Z$ and the photon. The one that survives is the combination annihilating both vevs.
 
@@ -161,7 +161,7 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 
 **7.2 Posited and derived.** Colour is posited, the weak factors are read off the rotors, hypercharge and charge are derived from the two. Mixing these three provenances is the commonest error in reading the model, and the corpus's own summary of it is [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html).
 
-**7.3 $\mathfrak u(1)$ as a factor and $\mathfrak u(1)$ as a direction.** $B-L$ is a factor between $M_C$ and $M_R$. $Y$ and $Q$ are never factors: they are directions in a product. A coupling can be assigned to a factor; a direction's coupling is a combination of the factors'.
+**7.3 $\mathfrak u(1)$ as a factor and $\mathfrak u(1)$ as a direction.** $B-L$ is a factor at $M_C$, where it is formed; below $M_C$ it is a global charge. $Y$ and $Q$ are never factors: they are directions in a product. A coupling can be assigned to a factor; a direction's coupling is a combination of the factors'.
 
 ## Summary
 

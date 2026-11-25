@@ -266,7 +266,7 @@ The right-handed singlet that the mechanism needs is a gauge singlet and contrib
 | $\mathcal{C}:\tilde{Ξ}\mapsto K\tilde{Ξ}^*$, $KK^{*}=I_4$ | Module real structure; charge conjugation |
 | $\tilde{Ξ}_c=\tilde{Ξ}$ | Majorana condition (fixed space, real dimension four) |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=\lambda_{m_D}^{-1}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=\lambda_{m_D}^{-1}\tilde{Ξ}_{R}$ | Linear Dirac mass pair |
-| $m_D$, $M_R$ | Dirac mass and heavy Majorana mass |
+| $m_D$, $M_R$ | Dirac mass and the singlet's Majorana mass; **$M_R$ here is a mass, not a breaking scale** |
 | $\begin{pmatrix}0&m_D\ m_D&M_R\end{pmatrix}$ | Type-I mass matrix in $(\xi_{\mathrm{neu},L},\xi_{\mathrm{neu},R,c})$ |
 | $\eta_{\pm}=\tfrac12(M_R\pm\sqrt{M_R^2+4m_D^2})$ | Exact eigenvalues |
 | $m_{\xi_{\mathrm{neu}}}=\eta_{-}\simeq-m_D^2/M_R$ | Light mass (type-I, one generation) |

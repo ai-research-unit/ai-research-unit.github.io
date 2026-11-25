@@ -12,7 +12,7 @@ $$
 \boxed{\;
 \mathfrak m=\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3},\qquad
 Q=\pm\tfrac23,\qquad
-M_X^{2}=\tfrac12\,g_4^{2}\,v_R^{2},\qquad
+M_X^{2}=\tfrac12\,g_4^{2}\,v_C^{2},\qquad
 \frac{M_X}{M_{W_R}}=\sqrt2\,\frac{g_4}{g_R} ;
 \;}
 $$
@@ -91,13 +91,13 @@ $$
 **From the vacuum.** The transition is done by a scalar acquiring a value along its unit-line component, and the six eat six real components of it. The mass is one half, one coupling squared, one vacuum squared:
 
 $$
-M_X^{2}=\tfrac12\,g_4^{2}\,v_R^{2}.
+M_X^{2}=\tfrac12\,g_4^{2}\,v_C^{2}.
 $$
 
 **Compare with the right-handed weak boson.** The same vacuum breaks the right sector through a doublet, and a doublet gives a quarter:
 
 $$
-M_{W_R}^{2}=\tfrac14\,g_R^{2}\,v_R^{2}
+M_{W_R}^{2}=\tfrac14\,g_R^{2}\,v_C^{2}
 \qquad\Longrightarrow\qquad
 \frac{M_X}{M_{W_R}}=\sqrt2\;\frac{g_4}{g_R}.
 $$
@@ -208,7 +208,7 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 
 **Fate.** Eaten at the transition, heavy above it. Two registers of one event, not two claims.
 
-**Mass.** $M_X^{2}=\tfrac12g_4^{2}v_R^{2}$, hence $M_X/M_{W_R}=\sqrt2\,g_4/g_R$; the $\sqrt2$ is the group's, the ratio is free, and a $(\mathbf{15},\mathbf2,\mathbf2)$ would split the six among themselves.
+**Mass.** $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$, hence $M_X/M_{W_R}=\sqrt2\,g_4/g_R$; the $\sqrt2$ is the group's, the ratio is free, and a $(\mathbf{15},\mathbf2,\mathbf2)$ would split the six among themselves.
 
 **Bound.** $K_L\to\mu e$ at tree level gives $M_X\gtrsim250$ TeV; proton decay is dimension nine and does not bite, unless a $(\mathbf6,\mathbf1,\mathbf1)$ is added, which would push the bound to $10^{12}$ TeV and make the sextet unseeable.
 
@@ -220,9 +220,9 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 | --- | --- |
 | $\mathfrak m$ | the sextet, the off-diagonal block of the fifteen |
 | $X,\bar X$ | a leptoquark and its conjugate, $Q=\pm\tfrac23$ |
-| $M_X$ | the leptoquark mass, $\tfrac12 g_4 v_R$ |
-| $M_{W_R}$ | the right-handed weak boson mass, $\tfrac12 g_R v_R$ |
-| $v_R$ | the magnitude of the transition's condensate |
+| $M_X$ | the leptoquark mass, $\tfrac12 g_4 v_C$ |
+| $M_{W_R}$ | the right-handed weak boson mass, $\tfrac12 g_R v_C$ |
+| $v_C$ | the magnitude of the transition's condensate |
 | $g_4,g_R$ | the primordial and right-weak couplings |
 | $\mathcal O^{(6)}$ | a dimension-six local operator produced by integrating the sextet out |
 | $M_\Sigma$ | the mass of a hypothetical $(\mathbf6,\mathbf1,\mathbf1)$ diquark scalar |

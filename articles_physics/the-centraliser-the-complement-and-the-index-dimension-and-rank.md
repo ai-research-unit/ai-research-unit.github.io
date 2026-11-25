@@ -99,7 +99,7 @@ $$
 \dim[\mathfrak{so}(4),\mathfrak{so}(4)]=6\ \ (\text{it is all of }\mathfrak{so}(4)).
 $$
 
-**Nine is not six, so the two subspaces lie on different orbits.** $\square$
+**Nine is not six, so the two subspaces lie on different orbits.** 
 
 **Why the number nine matters.** The sextet's brackets close on the *strong* force and on nothing else: $[\mathfrak m,\mathfrak m]=\mathfrak u(3)$, dimension $9$, which is the dimension of the surviving gauge sector. **So the sextet is not a reservoir of weak directions — it is a reservoir of colour directions.** Its own algebra regenerates what colour already is.
 

@@ -91,7 +91,7 @@ $$
 \qquad k=0,1,2,3,
 $$
 
-**so the statement "$B-L$ is exact at every scale" has a rotor form: the one rotor that can be a multiple of the identity is the one whose array the vacuum is made of.** No other rotor of the fifteen is ever central inside a turn: the twelve plane rotors and the two colour diagonals are central only at $\theta\in2\pi\mathbb{Z}$, and the value there is $+1$.
+**so the statement that the corner is the one generator the colour breaking leaves alone has a rotor form: the one rotor that can be a multiple of the identity is the one whose array the colour vacuum is made of.** The lepton line is a different matter — there the corner acts as the phase $-3i$ and not as a multiple of the identity, which is why the doublet vev on that line breaks the charge the colour vev preserves (*The Quantum Numbers Below the Breaking*). No other rotor of the fifteen is ever central inside a turn: the twelve plane rotors and the two colour diagonals are central only at $\theta\in2\pi\mathbb{Z}$, and the value there is $+1$.
 
 ## The Six Leptoquarks: The Rotors That Move the Lepton Line
 

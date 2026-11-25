@@ -141,7 +141,7 @@ with the upper sign for helicity $+1$ and the lower for helicity $-1$: the left 
 **The negative-frequency branch.** The same construction with $m$ replaced by $-m$:
 
 $$
-\boxed{\;\tilde v_L=-\frac1m\,\tilde\nabla_\Phi\tilde v_R=-\frac{i}{m}\,\tilde P_{\Phi}\,\tilde v_R\;}
+\boxed{\;\tilde v_L=-\frac1m\,\tilde\nabla_\Phi\tilde v_C=-\frac{i}{m}\,\tilde P_{\Phi}\,\tilde v_C\;}
 $$
 
 so that the pair holds with the sign of the mass reversed. The two branches together give the two frequency signs, and the two helicity values within each branch give the four-dimensional complex solution space of the parent.

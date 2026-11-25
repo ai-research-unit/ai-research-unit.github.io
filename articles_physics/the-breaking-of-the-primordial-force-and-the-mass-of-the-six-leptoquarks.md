@@ -141,7 +141,9 @@ $$
 15-9=6\ \text{broken}\quad\Longrightarrow\quad 6\ \text{real components eaten}.
 $$
 
-**The scalar supplies them and has two to spare.** A scalar with one $\mathrm{SU}(4)$ index is a complex four, hence eight real components; six are eaten and two survive. **Those two are not a loose end: in the fuller organisation they are exactly the two that the second breaking eats when the copy index is gauged**, which is why the corpus's count for this multiplet is eight eaten of sixteen real components, $6+2$, drawn from a doubled index. **The count of six for the $\mathrm{SU}(4)$ step does not depend on whether the copy index is gauged.**
+**The scalar supplies them and has room to spare.** The scalar of this model is the Hermitian $4\times4$, with sixteen real components, and the representation is forced rather than chosen: **a scalar in the fundamental would eat seven and leave no $B'$**, because the stabiliser of a line in $\mathbb{C}^{4}$ is $\mathfrak{su}(3)$ and not $\mathfrak{u}(3)$. In the Hermitian matrix the vacuum moves exactly six of the sixteen and fixes ten, so **the ledger at this scale is $16=6+10$, and it closes on the matrix rather than on a doubled index.**
+
+**The ten are not this article's business, but they are not a loose end either.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum, which are the ones the weak sector is built from (*Classification of the Bosons*). **When the weak factors are broken in turn they eat six more — four charged and two neutral — and those six come from the bidoublet, not from this matrix**, which is why the corpus's downstream count is $8=6+2$ for a bidoublet and not $6+2$ for a quartet. **The count of six for the $\mathrm{SU}(4)$ step does not depend on any of that.**
 
 **The eaten six are not destroyed, and the distinction matters for everything that follows.** A Goldstone mode is a rotation of the condensate, and the condensate can be rotated back. **What is absent below the transition is the six as *asymptotic* states; what is present is the six as longitudinal modes of the six massive vectors.** An article that says "the leptoquarks are destroyed" has thrown away the only ingredient the later articles need.
 
@@ -174,12 +176,12 @@ $$
 **The physical normalisation, so that the number can be compared with an experiment.** With $g_4$ the primordial-force coupling,
 
 $$
-M_X^{2}=\tfrac12\,g_4^{2}\,v_R^{2},
+M_X^{2}=\tfrac12\,g_4^{2}\,v_C^{2},
 $$
 
 **one half, one coupling squared, one vacuum squared, and no free number.** The $32v^{2}$ above differs from this by factors common to every entry — the coupling, the half, the field normalisation — **which cancel in every ratio, so the two statements are one statement in two normalisations.**
 
-**What is *not* claimed.** $32v^{2}$ is not a mass in kilograms. **All couplings here are symbolic**, and the conversion of $v_R$ into a number is an experimental question, treated in the article on the sextet and in the coupling article.
+**What is *not* claimed.** $32v^{2}$ is not a mass in kilograms. **All couplings here are symbolic**, and the conversion of $v_C$ into a number is an experimental question, treated in the article on the sextet and in the coupling article.
 
 ## The General Vacuum, and Why the Kernel Is an Algebra
 
@@ -241,7 +243,7 @@ $$
 | object | before | after | in what sense |
 | --- | --- | --- | --- |
 | the group | $\mathrm{SU}(4)$, dimension $15$ | $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$, dimension $9$ | it breaks |
-| the six leptoquarks | massless gauge directions | massive vectors, $M_X^{2}=\tfrac12g_4^{2}v_R^{2}$ | heavy, not absent from the theory |
+| the six leptoquarks | massless gauge directions | massive vectors, $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$ | heavy, not absent from the theory |
 | the rank | $3$ | $3$ | it does not move |
 | the colour | inside the fifteen | a stabiliser factor | it survives, and survives exactly |
 
@@ -271,10 +273,12 @@ $$
 | the sextet's charges | $B-L=\pm\frac43$, $Q=\frac12(B-L)$ | $\pm\frac23$ |
 | the sextet's shape | one colour index, one lepton index | $\mathbf3\oplus\bar{\mathbf3}$, $\dim 6$ |
 | the eaten count | $15-9$ | $6$ real components |
+| the scalar ledger | $16$ Hermitian components minus the $6$ the vacuum moves | $16=6+10$ |
+| the representation | stabiliser of a line against stabiliser of the matrix | $15-8=7$ against $15-9=6$ |
 | the mass | $2(1-(-3))^{2}$ | $32v^{2}$ |
 | the massless count | $8$ gluons $+$ $1$ abelian | $9=\dim\mathfrak{u}(3)$ |
 | the rank | $2+1$ | $3$, unchanged |
-| the physical mass | $\tfrac12g_4^{2}v_R^{2}$ | the same number in another normalisation |
+| the physical mass | $\tfrac12g_4^{2}v_C^{2}$ | the same number in another normalisation |
 
 ## Distinctions That Are Easy to Lose
 
@@ -296,7 +300,7 @@ The rank is not reduced. Six dimensions leave and the torus stays; that is why t
 
 **Its adjoint action is the whole theorem.** $\operatorname{ad}(iD)$ has spectrum $0^{9}\oplus(\pm4i)^{3}$; the kernel is $\mathfrak{u}(3)=\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L}$, dimension nine; the $\pm4i$ eigenspace is the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, $Q=\pm\tfrac23$.
 
-**The six are eaten and heavy at once.** Six real scalar components become longitudinal modes, and the six vectors acquire $M^{2}=32v^{2}=2(1-(-3))^{2}v^{2}$ each, equivalently $M_X^{2}=\tfrac12g_4^{2}v_R^{2}$.
+**The six are eaten and heavy at once.** Six real scalar components become longitudinal modes, and the six vectors acquire $M^{2}=32v^{2}=2(1-(-3))^{2}v^{2}$ each, equivalently $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$.
 
 **The nine survive exactly.** Eight gluons and $B'$, the centraliser of the vacuum, massless and untouched.
 
@@ -311,7 +315,7 @@ The rank is not reduced. Six dimensions leave and the torus stays; that is why t
 | $\mathfrak m$ | the sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, the $\pm4i$ eigenspace |
 | $X,\bar X$ | a leptoquark and its conjugate, $Q=\pm\tfrac23$, colour $\mathbf3$ or $\bar{\mathbf3}$ |
 | $v$ | the magnitude of the condensate, the unit of the adjoint mass matrix |
-| $v_R$ | the same magnitude in the normalisation where $M_X^{2}=\tfrac12g_4^{2}v_R^{2}$ |
+| $v_C$ | the same magnitude in the normalisation where $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$ |
 | $\mathfrak{u}(3)$ | $\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L}$, the kernel, dimension $9$ |
 | $B'$ | the surviving abelian vector, the $iD$ direction |
 

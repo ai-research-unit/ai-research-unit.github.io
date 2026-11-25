@@ -31,7 +31,7 @@ g=g_L,
 \;}
 $$
 
-**The single idea.** The covariant derivative is not rewritten; it is *restricted*. Above $M_C$ it carries fifteen connections and one coupling, because there is one group. Below $M_R$ it carries twelve connections and three couplings, because the factors the chain leaves carry one each; below $M_W$, nine of those connections are massless and two couplings act on them. **The couplings belong to the factors, and the factors change exactly once: at $M_C$, where one group becomes four.** Hypercharge's coupling is then not a fourth coupling but a combination of two of them, and the factor of two in that combination is the same $\tfrac12$ that appears in $Y=T_{3R}+\tfrac12(B-L)$.
+**The single idea.** The covariant derivative is not rewritten; it is *restricted*. Above $M_C$ it carries fifteen connections and one coupling, because there is one group. Between $M_C$ and $M_W$ it carries twelve connections and three couplings, because the factors the transition leaves carry one each; below $M_W$, nine of those connections are massless and two couplings act on them. **The couplings belong to the factors, and the factors change exactly once: at $M_C$, where one group becomes four.** Hypercharge's coupling is then not a fourth coupling but a combination of two of them, and the factor of two in that combination is the same $\tfrac12$ that appears in $Y=T_{3R}+\tfrac12(B-L)$.
 
 **What the article establishes.** The derivative at the top; its restriction at each step; the table of what each surviving piece multiplies; the two matching relations with their factors of two; the reason there are three couplings and not four; and where the heavy pieces go when they are removed.
 
@@ -73,7 +73,7 @@ where $T^{a}_{t}$ are the six mixed generators. The colour piece and the $B-L$ p
 
 **The weak pieces are not a split of the fifteen.** They are new connections, and they appear because the two copies of $\mathrm{SU}(2)$ arrive at $M_C$ with the index that the breaking object carries — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). **So the derivative below $M_C$ is the restriction of the one above it plus six connections whose couplings are not inherited:** $g_L$ and $g_R$ are free parameters, matched to $g_4$ only by the threshold assumption. The six mixed generators $T^{a}_{t}$ are a different object: they are inside the fifteen, they are the ones that became heavy, and their coupling is $g_4$ like the rest.
 
-**2.2 After $M_R$.** The right triplet splits into the surviving $\mathrm{U}(1)_R$ and two heavy directions, and the neutral fields mix:
+**2.2 At $M_C$.** The right triplet splits into a surviving $\mathrm{U}(1)_R$ and two heavy directions, and the surviving piece combines with $B-L$ into hypercharge:
 
 $$
 g_4\,B\,T^{15}+g_R\,V^{3}\frac{\sigma^{3}}{2}\ \longrightarrow\
@@ -107,7 +107,7 @@ with $Q=T_{3L}+Y$ and $A$ the photon. The angle here is $\theta_W$.
 
 **3.2 The left piece.** The weak piece multiplies the doublet index and is absent on right-handed fields, because the right block has no $L$ index. That absence is what "the weak interaction is chiral" means at the level of the derivative: a right-handed singlet has no $\tau^{a}$ to multiply.
 
-**3.3 The hypercharge piece.** It multiplies a number, not an index, and it acts on every field of the generation. That is why $Y$ can distinguish $u_R$ from $d_R$ while colour cannot, and why the two right-handed states that were degenerate above $M_R$ split below it.
+**3.3 The hypercharge piece.** It multiplies a number, not an index, and it acts on every field of the generation. That is why $Y$ can distinguish $u_R$ from $d_R$ while colour cannot, and why the two right-handed states that were degenerate above $M_C$ split below it.
 
 **3.4 The three heavy pieces, for contrast.** The leptoquark piece multiplies a colour index and a lepton index at once; the $W_R$ piece multiplies only the $R$ index; the heavy neutral pieces multiply the two combinations orthogonal to $Y$ and to $Q$. None appears in the table because none survives.
 
@@ -155,15 +155,15 @@ and the angle is a rotation of the basis, not a coupling. The corpus's statement
 
 **One relation, one counting argument.** Both say the same thing.
 
-**5.1 The relation.** $g_Y$ is determined by $g_R$ and $g_{B-L}$ at the matching scale, so one coupling is not carried below $M_R$: the low-energy theory has three where the intermediate theory had four.
+**5.1 The relation.** $g_Y$ is determined by $g_R$ and $g_{B-L}$ at the matching scale, so the coupling is not carried below $M_C$: the low-energy theory has three where the group at the transition had four.
 
 **5.2 The counting statement.** The count of independent couplings runs $1\to4\to3\to2$:
 
 | stage | factors | independent couplings |
 |---|---|---|
 | above $M_C$ | $\mathrm{SU}(4)$ | $g_4$ |
-| between $M_C$ and $M_R$ | $\mathrm{SU}(3)$, $\mathrm{U}(1)_{B-L}$, $\mathrm{SU}(2)_L$, $\mathrm{SU}(2)_R$ | $g_s$, $g_{B-L}$, $g_L$, $g_R$ |
-| between $M_R$ and $M_W$ | $\mathrm{SU}(3)$, $\mathrm{SU}(2)_L$, $\mathrm{U}(1)_Y$ | $g_s$, $g$, $g_Y$ |
+| at $M_C$ | $\mathrm{SU}(3)$, $\mathrm{U}(1)_{B-L}$, $\mathrm{SU}(2)_L$, $\mathrm{SU}(2)_R$ | $g_s$, $g_{B-L}$, $g_L$, $g_R$ |
+| between $M_C$ and $M_W$ | $\mathrm{SU}(3)$, $\mathrm{SU}(2)_L$, $\mathrm{U}(1)_Y$ | $g_s$, $g$, $g_Y$ |
 | below $M_W$ | $\mathrm{SU}(3)$, $\mathrm{U}(1)_{\mathrm{em}}$ | $g_s$, $e$ |
 
 The count jumps at $M_C$ and falls twice, and the jump is the point: one factor becoming four leaves four couplings where there was one. **They are four values at the threshold, not four independent inputs**, and two of them — $g_s$ and $g_{B-L}$ — are fixed by inheritance rather than assumed. A counting that reads the four factors back above $M_C$ gets the first step wrong, and gets it wrong in the direction of more parameters than the model has.
@@ -189,7 +189,7 @@ The count jumps at $M_C$ and falls twice, and the jump is the point: one factor 
 | check | computation | result |
 |---|---|---|
 | the connections | $15$ above, $8+1+3+3$ after $M_C$ | $15$, then $15$ |
-| the couplings | one per simple factor | $1$ above; $4$ below $M_C$; $3$ below $M_R$; $2$ below $M_W$ |
+| the couplings | one per simple factor | $1$ above; $4$ at $M_C$; $3$ between $M_C$ and $M_W$; $2$ below $M_W$ |
 | the orthogonality | $A_R^{2}+A_{B-L}^{2}=B'^{2}$ | gives $g_Y^{-2}=g_R^{-2}+(2g_{B-L})^{-2}$ |
 | the electromagnetic limit | $1/e^{2}=1/g^{2}+1/g_Y^{2}$ | reproduces $\tan\theta_W=g_Y/g$ |
 | the chirality | $L$ piece absent on right singlets | the $R$ block has no $L$ index |
@@ -207,7 +207,7 @@ The count jumps at $M_C$ and falls twice, and the jump is the point: one factor 
 
 ## Summary
 
-**One derivative.** Fifteen connections and one coupling at the top; twelve connections, three pieces and three couplings below $M_R$; nine massless connections and two couplings below $M_W$.
+**One derivative.** Fifteen connections and one coupling at the top; twelve connections, three pieces and three couplings between $M_C$ and $M_W$; nine massless connections and two couplings below $M_W$.
 
 **The three pieces.** Colour on the triplet, weak isospin on the left doublet, hypercharge on the number $Y$.
 
@@ -225,7 +225,7 @@ The count jumps at $M_C$ and falls twice, and the jump is the point: one factor 
 |---|---|
 | $D_\mu$ | the covariant derivative |
 | $g_4$, $g_L$, $g_R$ | the couplings of the three simple factors |
-| $g_{B-L}$ | the coupling of the $B-L$ factor between $M_C$ and $M_R$ |
+| $g_{B-L}$ | the coupling of the $B-L$ factor at $M_C$ |
 | $g_s$, $g$, $g_Y$, $e$ | the low-energy couplings of colour, isospin, hypercharge, electromagnetism |
 | $T^{A}$, $T^{a}$ | the fifteen $\mathrm{SU}(4)$ generators and the eight colour ones |
 | $\tau^{a}$, $\sigma^{a}$ | the left and right isospin generators |

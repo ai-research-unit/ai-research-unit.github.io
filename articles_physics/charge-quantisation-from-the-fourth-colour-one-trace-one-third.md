@@ -19,7 +19,7 @@ $$
 | $\ell+3q=0$, so $q=-\tfrac13\ell$ | the trace is zero |
 | the charge quantum is $e/3$ | the corner entry is $-3$, the count of colour lines |
 | the seven charges of a generation | $B-L=\tfrac13D$ |
-| $B-L$ is exact at every scale | $[iD,\Phi_0]=0$ |
+| the lepton's $B-L$ is $-1$ at every scale | $B'$ acts on the lepton line as $-3i$, so $B-L=-1$ |
 | the relative phase of lepton and colour is $4\theta$ | four phases and no rotation |
 
 **What the chain needs beyond the quotations, stated once so that it is not smuggled in.** Two things, and neither is a free parameter of the argument. The first is the identification (A): the corner eigenvalue belongs to the lepton and the three equal eigenvalues belong to the three colours. The trace alone says "one against three"; (A) says which is which. The second is the combination $Y=T_{3R}+\tfrac12(B-L)$, by which hypercharge is built from the right-handed neutral direction and the corner. Both belong to the model and both are fixed elsewhere: (A) in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html), the combination in [The Neutral Sector](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html). **Everything else in this article follows from the five quotations.**
@@ -116,15 +116,16 @@ the factor $\tfrac12$ being $\operatorname{tr}(T_{3L}^{2})$ over the doublet and
 
 > **The unique statement is narrower and it is the one that matters here**: of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place.
 
-**What follows: $B-L$ is exact at every scale.** A generator that commutes with the vacuum value is unbroken by the step that imposes that value; the quotation says it of the first breaking. Because that step is the one that could have destroyed the corner — it is the step that removes six of the fifteen — **$B-L$ survives every step of the chain**, and the quantum number it measures is the same at $M_C$, at $M_R$, at $M_W$ and below.
+**What follows: the corner survives the colour half of the transition, and the doublet half is where it goes.** A generator that commutes with the vacuum value is unbroken by the step that imposes that value, and the quotation says it of the colour breaking. Because that step is the one that could have destroyed the corner — it is the step that removes six of the fifteen — **$B-L$ comes through it intact**. **Then the same transition's doublet vev lands on the lepton line, where $B-L=-1$, and breaks it.** Reading the two facts in the right order is the whole of the section: the corner is *not removed by the six*, and it *is* removed by the one.
 
-**That is a physical result and not a bookkeeping remark.** Three statements follow from it at once.
+**The eigenvalue is what survives, and it is worth separating from the charge.** Two statements, and only the first is true.
 
-- **The charge lattice does not move.** Because $B-L$ is exact and takes the values $(-1,\tfrac13,\tfrac13,\tfrac13)$ on a quartet, the unit $\tfrac13$ is the same at every scale. What runs is a coupling, not the charge it multiplies.
-- **No mixing renormalises it.** The neutral sector mixes $W^{3}_{L}$, $W^{3}_{R}$ and $B'$ into $\gamma$, $Z$ and $Z_R$, and the mixing is a change of basis, not a change of the corner's eigenvalue. The lepton's $B-L$ is $-1$ before the mixing and $-1$ after it.
-- **The other two neutral directions are not so lucky.** $T_{3R}$ is broken at $M_R$ and $T_{3L}$ at $M_W$. Of the three ingredients of the neutral sector only the corner survives untouched, and the quotation's second sentence gives the sharpest form of why: **of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place.** The six that touch it move it out to a colour line, so they are not in the stabiliser, and only the corner acts on the lepton line as a phase.
+- **The charge lattice does not move.** $B-L$ takes the values $(-1,\tfrac13,\tfrac13,\tfrac13)$ on a quartet, and those four numbers are the same at every scale: an eigenvalue belongs to the array, and no mixing between $W^{3}_{L}$, $W^{3}_{R}$ and $B'$ touches a diagonal entry. The unit $\tfrac13$ is therefore the same everywhere. What runs is a coupling, not the charge it multiplies.
+- **The charge is nevertheless broken at $M_C$, by the vacuum that carries it.** $[B-L,\Phi_0]=-\Phi_0\neq0$ on the lepton line, so by the criterion every article in this block uses, $B-L$ is not conserved below $M_C$; what annihilates the vacuum is $Y=T_{3R}+\tfrac12(B-L)$. **"The chain never renormalises the corner" and "the chain never breaks the corner" are different sentences**, and this article keeps the first without the second ([The Quantum Numbers Below the Breaking](the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html) has the full ledger).
 
-**What this buys, in one sentence.** The lepton line is an eigenline of the unbroken corner, with a fixed eigenvalue, at every scale; therefore the lepton's share of $B-L$ is exactly $-1$ and no dynamics below $M_C$ can change it.
+**And the other two neutral directions are not so lucky in either sense.** $T_{3R}$ is broken at $M_C$ and $T_{3L}$ at $M_W$. Of the three ingredients of the neutral sector, the corner is the only one the six leptoquark generators leave alone — **of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place** — and that is a statement about the colour part of the vacuum, not about the doublet part.
+
+**What this buys, in one sentence.** The lepton line is an eigenline of the corner with a fixed eigenvalue at every scale, so the lepton's share of $B-L$ is exactly $-1$ everywhere — **and the vev that sits on that line is exactly why the charge it labels is not conserved below $M_C$.**
 
 ## Quotation Five: the Exponential, and the Relative Phase
 
@@ -219,10 +220,11 @@ Fifteen recomputations, all on the quoted array, at $\operatorname{tr}$ in the f
 | the factorisation | $\exp(\theta iD)$ against $e^{i\theta}\operatorname{diag}(e^{-4i\theta},1,1,1)$ | equal |
 | the central values | $\exp(\tfrac{\pi}{2}iD)$ | $i\,\mathrm I_4$ |
 | the exactness | $[iD,\Phi_0]$, and the nine that commute with $D$ | $0$, and the eight gluons plus $B'$ |
+| the corner's fate at the transition | the colour vev commutes with it, the doublet vev does not | kept by the six, broken by the one |
 
 ## Summary
 
-**Five quotations, five results.** The trace is zero, so $\ell=-3q$, so the down quark's charge is a third of the electron's, so proton and electron cancel. The corner entry is $-3$, so the quantum is $e/(N-1)=e/3$ and it is attained. The array is $B-L$ times three, so the seven charges of a generation are one addition each and the mixed anomaly row vanishes. The array commutes with the vacuum, so $B-L$ is exact at every scale and the lattice does not move. The exponential is one global phase times a phase at four times the rate, so the lepton and the colours differ by $N$ units of the corner's charge and agree after a quarter turn.
+**Five quotations, five results.** The trace is zero, so $\ell=-3q$, so the down quark's charge is a third of the electron's, so proton and electron cancel. The corner entry is $-3$, so the quantum is $e/(N-1)=e/3$ and it is attained. The array is $B-L$ times three, so the seven charges of a generation are one addition each and the mixed anomaly row vanishes. The array commutes with the colour part of the vacuum, so the lattice does not move and the lepton's $B-L$ stays $-1$ at every scale; the doublet part of the same vacuum sits on that line, so the charge itself is broken at $M_C$. The exponential is one global phase times a phase at four times the rate, so the lepton and the colours differ by $N$ units of the corner's charge and agree after a quarter turn.
 
 **The one input that is not in the quotations** is the identification (A), which says that the corner is the lepton and the three equal entries are the colours. Without it the trace is arithmetic about a matrix; with it the arithmetic is a statement about nature.
 

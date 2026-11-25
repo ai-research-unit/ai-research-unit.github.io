@@ -16,11 +16,11 @@ $$
 
 **The single idea.** Two operations are at work and only one of them is an approximation. The breaking is exact: the vacuum is a fact, and the group below a scale is the stabiliser, not an approximation to the group above it. The truncation is approximate: removing a field of mass $M$ costs powers of $E/M$. Matching is where the two descriptions are made to agree, and it is exact order by order in the loop expansion — the approximation is in the truncation, never in the matching.
 
-**What the article establishes.** The distinction between breaking and truncation; the form of the decoupling expansion; the inventory of what leaves at each of the three thresholds; the structure of tree-level and one-loop matching; the way the truncation's error is estimated; and the reason the minimal content's running fails.
+**What the article establishes.** The distinction between breaking and truncation; the form of the decoupling expansion; the inventory of what leaves at each threshold; the structure of tree-level and one-loop matching; the way the truncation's error is estimated; and the reason the minimal content's running fails.
 
 **What the article does not establish.** No numerical result of the running. The failure of the minimal content is stated here and computed in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html), which owns every number.
 
-**Where the neighbours are.** The derivative that is matched is [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The scales are [The Threshold Scales: $M_C$, $M_R$, $M_W$, and What Would Fix Them](the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html). The one-loop machinery in the algebra is [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html).
+**Where the neighbours are.** The derivative that is matched is [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The scales are [The Threshold Scales: One Transition at $M_C$, One Measured Weak Scale, and What Would Fix $M_C$](the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html). The one-loop machinery in the algebra is [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html).
 
 ## Two Operations That Are Often Confused
 
@@ -30,7 +30,7 @@ $$
 
 **1.2 The truncation.** At energies far below $M$, a field of mass $M$ cannot be produced, so it is removed from the list of dynamical fields. This is approximate: the removal changes the predictions by terms of order $E^{2}/M^{2}$, and the expansion in those terms is the effective Lagrangian.
 
-**1.3 The confusion.** "Below $M_R$ the group is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$" is exact. "Below $M_R$ the $W_R$ does not exist" is shorthand for "the $W_R$ is not a dynamical field of the truncated description". The first is a statement about the vacuum; the second about the description. Merging them produces the false claim that the breaking is approximate.
+**1.3 The confusion.** "Below $M_C$ the group is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$" is exact. "Below $M_C$ the $W_R$ does not exist" is shorthand for "the $W_R$ is not a dynamical field of the truncated description". The first is a statement about the vacuum; the second about the description. Merging them produces the false claim that the breaking is approximate.
 
 **1.4 Why the distinction has teeth.** If breaking were an approximation, the low-energy theory would be a fit with the breaking scale as a parameter. It is not: the low-energy group is fixed by the vacuum, and the only free parameters are the three scales and the couplings.
 
@@ -40,7 +40,7 @@ $$
 
 **2.1 The statement.** Take a renormalisable theory with a heavy field of mass $M$ and a light sector. At energies $E\ll M$ every Green's function of light fields is reproduced, to any fixed order in $E/M$, by a local Lagrangian built from light fields only, with coefficients that depend on $M$ and on the heavy couplings.
 
-**2.2 The form.** The coefficients are $c_n/M^{n-4}$ for an operator of dimension $n$. Dimension six gives $1/M^{2}$: the four-fermion terms left by the leptoquarks, and the $W_R$ exchange. Dimension five gives $1/M$: the Majorana mass of the neutrino from $M_R$.
+**2.2 The form.** The coefficients are $c_n/M^{n-4}$ for an operator of dimension $n$. Dimension six gives $1/M^{2}$: the four-fermion terms left by the leptoquarks, and the $W_R$ exchange. Dimension five gives $1/M$: the Majorana mass of the neutrino, from the right doublet's vacuum at $M_C$.
 
 **2.3 The caveat.** Decoupling as stated requires that the heavy mass comes from a vacuum and not from a hierarchy of couplings. Here it does: every heavy mass is a coupling times a vacuum value. A theory whose heavy mass came from a small coupling at a high scale would not decouple in this form, and that is the trap the phrase "the heavy fields decouple" hides.
 
@@ -52,17 +52,16 @@ $$
 
 | threshold | what leaves | what remains of it | status of the removal |
 |---|---|---|---|
-| $M_C$ | six leptoquarks, the coloured components of $\Phi$ | four-fermion operators, $\Delta B=\Delta L=\pm1$ | exact breaking, truncated effects |
-| $M_R$ | $W^{\pm}_{R}$, $Z_R$, the $R$ doublet's surviving scalar, $\nu_R$'s Majorana mass | the dimension-five operator for neutrino mass, and the $1/M_R^{2}$ corrections to $W$ couplings | exact breaking, truncated effects |
+| $M_C$ | six leptoquarks, the coloured components of $\Phi$; $W^{\pm}_{R}$, $Z_R$, the right doublet's surviving scalar, $\nu_R$'s Majorana mass | four-fermion operators with $\Delta B=\Delta L=\pm1$; the dimension-five operator for neutrino mass; the $1/M_C^{2}$ corrections to $W$ couplings | one breaking at one scale, truncated effects |
 | $M_W$ | $W^{\pm}$, $Z$, the top, the Higgses | the four-fermion charged-current and neutral-current operators of the Fermi theory | exact breaking, slowly converging truncation |
 
-**3.1 The first threshold.** The leptoquarks leave and their exchange becomes contact interactions. The bound on $M_C$ is the bound on those coefficients, and the diquark channel is the one that would give proton decay — with a suppression that makes it harmless, as [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) shows.
+**3.1 The transition.** The leptoquarks leave and their exchange becomes contact interactions. The same vacuum removes $W_R$ and $Z_R$, and the neutrino's Majorana mass becomes a dimension-five operator — the seesaw. The bound on $M_C$ is the bound on those coefficients, and the diquark channel is the one that would give proton decay — with a suppression that makes it harmless, as [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) shows.
 
-**3.2 The second threshold.** The right-handed bosons leave and the neutrino's Majorana mass becomes a dimension-five operator: the seesaw. That operator is the reason the second threshold is not invisible at low energy even though its gauge bosons are.
+**3.2 Why one removal and not two.** The right-handed bosons and the Majorana mass leave at $M_C$ and not at a scale of their own, because the field that gives them their mass is the field that breaks the colour. **A reader who expects two removals will look for a second threshold that the content does not have.**
 
-**3.3 The third threshold.** The electroweak bosons leave and the theory becomes Fermi's. The removal is the most familiar and the least clean, because the top is close in mass.
+**3.3 The electroweak threshold.** The bosons leave and the theory becomes Fermi's. The removal is the most familiar and the least clean, because the top is close in mass.
 
-**3.4 The order of the thresholds is the order of the chain.** The removals are nested: what leaves at $M_C$ is gone at $M_R$ too, and the description at $M_R$ is built from what survived the first removal. This nesting is why the chain reads as a descent and not as three parallel truncations.
+**3.4 The order of the thresholds is the order of the chain.** The removals are nested: what leaves at $M_C$ is gone at $v$ too, and the description at $v$ is built from what survived the first removal. This nesting is why the chain reads as a descent and not as two parallel truncations.
 
 ## Matching: Tree Level and One Loop
 
@@ -78,7 +77,7 @@ g_{B-L}(M_C)=g_4(M_C),
 g(M_C)=g_L(M_C).
 $$
 
-At $M_R$ the two neutral couplings combine into hypercharge by the orthogonality relation of [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). No correction, no logarithm: at tree level a coupling passes through a threshold unchanged.
+At the same scale the two neutral couplings combine into hypercharge by the orthogonality relation of [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). **Both steps are at $M_C$: the colour factor and the hypercharge factor are made by the same vacuum.** No correction, no logarithm: at tree level a coupling passes through a threshold unchanged.
 
 **4.2 One loop.** The equality acquires a finite shift,
 
@@ -96,7 +95,7 @@ $$
 
 with $n_f$ and $n_s$ the number of Dirac fermions and real scalars in the representation, and $C_2(G)$ the Casimir of the group.
 
-**4.4 The composition.** Running from $M_W$ to $M_R$ with one coefficient, matching at $M_R$, running to $M_C$ with another, matching again: the composition is the prediction. Each of the three steps is exact at its order, and the prediction's accuracy is limited by the order kept, not by the truncations.
+**4.4 The composition.** Running from $M_W$ to $M_C$ with the Standard Model's coefficients, matching at $M_C$, running above it with the $\mathrm{SU}(4)$ content: the composition is the prediction. Each of the three steps is exact at its order, and the prediction's accuracy is limited by the order kept, not by the truncations.
 
 **4.5 The assumption that is not a computation.** $g_4=g_L=g_R$ at one scale is an assumption of the model, not a result of the matching. It is what turns three independent couplings into one, and it is the statement the running then tests.
 
@@ -116,7 +115,7 @@ with $n_f$ and $n_s$ the number of Dirac fermions and real scalars in the repres
 
 **One statement, no numbers.** The numbers are elsewhere by design.
 
-**6.1 The failure.** With the minimal content — one $(\mathbf4,\mathbf1,\mathbf2)$ and one $(\mathbf1,\mathbf2,\mathbf2)$ — and with $M_C=M_R$, the running from $M_C$ down to $M_W$ does not reproduce the measured $\sin^{2}\theta_W$ and the measured $\alpha_s$ simultaneously. The size and the sign are computed in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html).
+**6.1 The failure.** With the minimal content — one $(\mathbf4,\mathbf1,\mathbf2)$, one right doublet and one left doublet — the running from $M_C$ down to $M_W$ does not reproduce the measured $\sin^{2}\theta_W$ and the measured $\alpha_s$ simultaneously. The size and the sign are computed in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html).
 
 **6.2 Why the minimal content is the hardest case.** It has the fewest fields above $M_W$ and the fewest thresholds, so it has the least freedom to bend the slopes. Adding content adds freedom and also adds constraints, because every new field changes both $\alpha_s$ and $\sin^{2}\theta_W$.
 
@@ -133,7 +132,7 @@ with $n_f$ and $n_s$ the number of Dirac fermions and real scalars in the repres
 | the tree matching | a coupling through a threshold | unchanged |
 | the one-loop shift | finite, no logarithm | the logarithm cancels across the threshold |
 | the beta coefficient | $b$ changes at each threshold | one value per stage |
-| the operator dimensions | $1/M$ from $M_R$, $1/M^{2}$ from $M_C$ | dimension five and six |
+| the operator dimensions | $1/M$ from the right vacuum, $1/M^{2}$ from the sextet, both at $M_C$ | dimension five and six |
 | the error estimate | $E/M$ at each threshold | small at $M_C$, of order one at $M_W$ |
 
 ## Distinctions That Are Easy to Lose
@@ -150,9 +149,9 @@ with $n_f$ and $n_s$ the number of Dirac fermions and real scalars in the repres
 
 **Two operations.** Breaking, exact, a fact about the vacuum; truncation, approximate, a statement about the field list.
 
-**Decoupling.** Removed fields become local operators of dimension five ($M_R$) and six ($M_C$).
+**Decoupling.** Removed fields become local operators of dimension five (the right vacuum) and six (the sextet), both at $M_C$.
 
-**Three thresholds.** $M_C$: leptoquarks. $M_R$: $W_R$, $Z_R$, the Majorana mass. $M_W$: $W$, $Z$, the top.
+**Two thresholds.** $M_C$: the leptoquarks, $W_R$, $Z_R$, the Majorana mass. $M_W$: $W$, $Z$, the top.
 
 **Matching.** Tree level equalities; one-loop finite shifts; logarithms cancel.
 
@@ -168,13 +167,13 @@ with $n_f$ and $n_s$ the number of Dirac fermions and real scalars in the repres
 | $b$ | the one-loop beta coefficient |
 | $n_f$, $n_s$ | the numbers of Dirac fermions and real scalars |
 | $C_2(G)$, $T_F$, $T_S$ | the Casimir and the index factors |
-| $M_C$, $M_R$, $M_W$ | the three thresholds |
+| $M_C$, $M_W$ | the two thresholds |
 
 ## Further Reading
 
 - [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html). The running, the failure and its size.
-- [The Threshold Scales: $M_C$, $M_R$, $M_W$, and What Would Fix Them](the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html). The scales this article matches at.
+- [The Threshold Scales: One Transition at $M_C$, One Measured Weak Scale, and What Would Fix $M_C$](the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html). The scales this article matches at.
 - [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The couplings that are matched.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The dimension-six operators of the first threshold.
-- [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The dimension-five operator of the second threshold.
+- [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The dimension-five operator made at $M_C$.
 - [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html). The loop machinery used here, in the algebra.

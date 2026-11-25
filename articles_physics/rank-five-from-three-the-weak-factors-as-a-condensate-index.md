@@ -88,13 +88,15 @@ $$
 
 **And the two rows cannot both be exact.** Their Lie bracket generates all fifteen generators of $\mathfrak{su}(4)$, which is simple, so a vacuum annihilated by both would break nothing. **The model must choose, and the corpus chooses the first row — that is what the transition is.**
 
+**The endpoint is the group at $M_C$, and not a group below it.** The same vacuum that produces the four factors kills the right one: the second line of $\Phi$'s vacuum makes $W_R$ and $Z_R$ heavy at the scale that makes them. **Rank five is therefore exact at the transition and has no width**, and the effective theory below it has three factors and rank four.
+
 ## The Lemma: A Subalgebra Never Outranks Its Algebra
 
 **The statement is one line and it is why the whole article exists.**
 
 > **Lemma.** If $\mathfrak h\subseteq\mathfrak g$ then $\operatorname{rank}\mathfrak h\le\operatorname{rank}\mathfrak g$.
 
-**Proof.** A maximal torus of $\mathfrak h$ is an abelian subalgebra of $\mathfrak g$ consisting of semisimple elements, so it lies in a maximal torus of $\mathfrak g$. Its dimension is therefore at most the dimension of $\mathfrak g$'s maximal torus. $\square$
+**Proof.** A maximal torus of $\mathfrak h$ is an abelian subalgebra of $\mathfrak g$ consisting of semisimple elements, so it lies in a maximal torus of $\mathfrak g$. Its dimension is therefore at most the dimension of $\mathfrak g$'s maximal torus. 
 
 **The consequence, applied to the model.**
 
@@ -191,7 +193,7 @@ $$
 | object | needed? | why not |
 | --- | --- | --- |
 | a new gauge group | **no** | the endpoint is $\mathrm{SU}(3)\times\mathrm{U}(1)\times\mathrm{SU}(2)\times\mathrm{SU}(2)$ |
-| a new scale $\Lambda$ | **no** | the scales are $M_C$, $M_R$, $v$, all of them the corpus's |
+| a new scale $\Lambda$ | **no** | the scales are $M_C$ and $v$, both of them the corpus's |
 | a new confining dynamics | **no** | no bound state is built |
 | a matching rule for $W^{3}_L,W^{3}_R$ | **no** | they are the Cartans of factors that exist from the transition on |
 | a new vacuum | **no** | $iD=\operatorname{diag}(-3,1,1,1)$ is the corpus's |
@@ -204,60 +206,37 @@ $$
 
 **This section exists because the natural objection to a "born" group is that it has no scale.** It has one, and the corpus supplies it.
 
-**The weak bosons do not get their masses at $M_C$.** They get them downstream:
+**The weak bosons get their masses from the two indices of one field, and the two are given at different scales.**
 
 $$
-m_{W_R}\sim g_R\,v_R,\qquad m_{W}\sim g\,v,\qquad v=246\ \mathrm{GeV},
+m_{W_R}\sim g_R\,v_C,\qquad m_{W}\sim g\,v,\qquad v=246\ \mathrm{GeV},
 $$
 
-**with $v_R$ the second vacuum and $v$ the electroweak one.** The chain therefore reads
+**with $v_C$ the condensate that does the transition and $v$ the electroweak value.** The chain therefore reads
 
 $$
-M_C\ \ge\ M_R\ \ge\ M_W ,
+M_C\ >\ v .
 $$
-
-**the corpus's own ordering, untouched.**
 
 | scale | what happens | who gets mass |
 | --- | --- | --- |
-| $M_C\gtrsim250\ \mathrm{TeV}$ | $\mathrm{SU}(4)$ breaks, sextet eaten, weak factors born | the six leptoquarks |
-| $M_R$ | $\mathrm{SU}(2)_R$ breaks | $W_R$, $Z_R$ |
+| $M_C\gtrsim250\ \mathrm{TeV}$ | $\mathrm{SU}(4)$ breaks, sextet eaten, weak factors born; the right doublet breaks $\mathrm{SU}(2)_R$ | the six leptoquarks, $W_R$, $Z_R$ |
 | $v=246\ \mathrm{GeV}$ | electroweak breaking | $W$, $Z$ |
 
-**The arrival brings in the group; the group's masses are supplied downstream.** No object is built from parts a thousand times heavier than itself, and there is no hierarchy to explain beyond the one the corpus already has.
+**The arrival brings in the group and the colour vacuum kills the right half of it.** No object is built from parts a thousand times heavier than itself, and the left half waits for its own vacuum.
 
-**The corpus states the same thing in the mass-matrix article, and it is worth quoting because it is the strongest textual support the construction has:** the six weak generators are not in the fifteen; on the carrier they are sums of colour and leptoquark planes, and **their masses come from the second breaking through the doublet vacuum, not from this one.** **That is precisely the mass ledger of this section, written before the construction existed.**
+**The corpus states the same thing in the mass-matrix article, and it is worth quoting because it is the strongest textual support the construction has:** the six weak generators are not in the fifteen; on the carrier they are sums of colour and leptoquark planes, and **the right half of them gets its mass from the doublet index of the same vacuum, not from the colour index.** **That is precisely the mass ledger of this section, written before the construction existed.**
 
-## Two Theorems That Close the Other Route
+## The Other Route, Closed Elsewhere
 
 **The temptation, stated in its strongest form.** The sextet is six generators and the weak pair is six generators, so perhaps the six recompose into the pair. **Six for six. The dimension matches and nothing else does.**
 
-**First theorem: charge.** Every member of the sextet has $Q=\pm\tfrac23$, so
+**Both theorems that close it are proved in [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html)**, with the mass table and the six bracket identities beside them, and repeating the proofs here would be repeating them for the third time in the corpus. In one line each:
 
-$$
-\mathbf3_{+4/3}\otimes\bar{\mathbf3}_{-4/3}=\mathbf1_0\oplus\mathbf8_0 ,
-$$
+- **Charge.** Every sextet member has $Q=\pm\tfrac23$, so two of them bind to $Q\in\{0,\pm\tfrac43\}$ and never to $\pm1$; the $\mathrm{SU}(4)$ singlet is neutral identically. **Six neutral vectors and no charged one, against the observed four charged and two neutral.**
+- **Size.** A bound state weighs at least its confinement scale, and here that scale is $M_C\gtrsim250$ TeV, so an $80$ GeV composite is out by more than three orders of magnitude.
 
-**and the colour singlet is neutral identically.** A bound state of two sextet members therefore has $Q\in\{0,\pm\tfrac43\}$ and never $\pm1$; the $J=1$ singlet has three spin states, **all of them $Q=0$.** Two chiralities give six neutral vectors and no charged one — **the exact opposite of four charged plus two neutral.**
-
-**Second theorem: confinement scale.** A bound state weighs at least its confinement scale,
-
-$$
-m_{\text{composite}}\ \gtrsim\ \Lambda_{\text{confine}} ,
-$$
-
-**and in this model the confinement scale is the transition scale, $M_C\gtrsim250$ TeV** — bounded by $K_L\to\mu e$, not by proton decay. So any $\mathrm{SU}(4)$-bound object weighs hundreds of teraelectronvolts. **An $80\ \mathrm{GeV}$ composite would need a confinement scale of order $80\ \mathrm{GeV}$, and $\mathrm{SU}(4)$'s scale is already spoken for.**
-
-**Why two theorems rather than one.** They are independent: a repair of the charge problem would leave the mass problem, and a repair of the mass problem would leave the charge problem. **A route closed twice is closed in a way that a better calculation cannot reopen** — which is what distinguishes this from an objection.
-
-**And the third piece of evidence, which is not a theorem but is arithmetic.** The six exact identities
-
-$$
-T^{L}_{x}=-\tfrac12\bigl(A_{tx}+A_{yz}\bigr),\qquad
-T^{R}_{x}=-\tfrac12\bigl(A_{tx}-A_{yz}\bigr),
-$$
-
-**show that each weak array is half a leptoquark plane and half a colour plane.** They are true, they are exact, and they are a statement about a *basis*: $32v^{2}$ sits on $A_{tx}$ and $0$ sits on $A_{yz}$, so **a sum of the two is a coherence and not a particle.** Read as the mixing itself they would fix $\sin^{2}\theta=\tfrac12$ against the observed $0.23122$. **Their home is [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html), where they are printed beside the mass table that shows why an identity is not a particle.**
+**Two theorems and not one, because they are independent.** A repair of the charge problem leaves the mass problem, and the other way round. **A route closed twice is closed in a way that a better calculation cannot reopen**, which is what makes this a closure rather than an objection — and the point that matters *here* is only that the route is closed before the arrival is spent on it.
 
 ## What This Does Not Say
 
@@ -297,9 +276,9 @@ The index is not the debris. The weak force is born from a representation the co
 
 Postulating an index is not postulating a sector. The corpus already declares its scalar content underivable; the construction spends that same debt and no other (*The Price*).
 
-The weak masses are not at $M_C$. They are at $M_R$ and $v$; the corpus already says so, and the construction only has to not contradict it (*The Mass Ledger*).
+The weak masses are not all at $M_C$. The right half is at $M_C$ and the left at $v$; the corpus already says so, and the construction only has to not contradict it (*The Mass Ledger*).
 
-Two theorems are not one theorem twice. Charge closes the composite by quantum numbers, the confinement scale closes it by size (*Two Theorems*).
+Two theorems are not one theorem twice. Charge closes the composite by quantum numbers, the confinement scale closes it by size; both are proved in *The Charge Theorem*, and this article only spends the conclusion (*The Other Route*).
 
 ## Summary
 
@@ -309,9 +288,9 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 
 **The mechanism is one object with two indices.** $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$: the $\mathrm{SU}(4)$ index breaks and eats the sextet, the $\mathbf 2$ index is the weak force. **The breaking and the birth are one event with two aspects.**
 
-**The sextet cannot do it, twice over.** Charge: $Q=\pm\tfrac23$ sums to $\{0,\pm\tfrac43\}$ and never to $\pm1$, and the colour singlet is neutral identically. Mass: a bound state weighs at least its confinement scale, and that scale is $250$ TeV. **Neither closure can be repaired by dynamics.**
+**The sextet cannot do it, twice over.** Charge: $Q=\pm\tfrac23$ sums to $\{0,\pm\tfrac43\}$ and never to $\pm1$, and the colour singlet is neutral identically. Mass: a bound state weighs at least its confinement scale, and that scale is $250$ TeV. Both proofs are [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html)'s. **Neither closure can be repaired by dynamics.**
 
-**The price is one postulate, paid in a currency the corpus already spends**, and the mass ledger stays the corpus's: $M_C\ge M_R\ge M_W$ with the weak masses from $v_R$ and $v$.
+**The price is one postulate, paid in a currency the corpus already spends**, and the mass ledger stays the corpus's: $M_C>v$, with $W_R$ at $M_C$ and $W$ at $v$.
 
 ## Summary of Notation
 
@@ -322,8 +301,7 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 | $iD$ | the condensate $\operatorname{diag}(-3,1,1,1)$; $\operatorname{ad}(iD)$ has spectrum $0^{9},(\pm4i)^{3}$ |
 | $\Phi$ | the transition's scalar, $(\mathbf4,\mathbf1,\mathbf2)$, $16$ real components |
 | $M_C$ | the first breaking scale, $\gtrsim250$ TeV from $K_L\to\mu e$ |
-| $M_R$ | the second breaking scale |
-| $v_R,v$ | the right-handed and electroweak vacuum values, $v=246$ GeV |
+| $v_C,v$ | the transition and electroweak vacuum values, $v=246$ GeV |
 | $\Lambda_{\text{confine}}$ | the scale a bound state weighs at least, $=M_C$ here |
 
 ## Further Reading

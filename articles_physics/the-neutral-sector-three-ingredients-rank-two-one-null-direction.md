@@ -4,7 +4,7 @@
 
 **The question.** Three neutral gauge directions exist before any breaking. Two vacua act on them. How many neutral bosons survive, how heavy are they, and why is exactly one of them massless?
 
-**The answer.** Three fields, $W^3_L$, $W^3_R$ and $B'$, a $3\times3$ mass matrix built from two vacuum vectors, rank two because two rank-one terms are all there is, therefore one null direction. The null direction is $\bigl(1,1,\sqrt{\tfrac23}\bigr)$ and it is the photon. The two massive eigenvalues are $\tfrac25g^2v^2$ and $\tfrac58g^2v_R^2$ at equal couplings, and both coefficients are fixed by the vacuum vectors: the heavy one is the norm $\lvert a_1\rvert^2=\tfrac58$, and the light one is the Schur complement $\lvert a_2\rvert^2-(a_1\cdot a_2)^2/\lvert a_1\rvert^2=\tfrac12-\tfrac1{10}=\tfrac25$, which is why it is not the $\tfrac12$ that $\lvert a_2\rvert^2$ alone would give.
+**The answer.** Three fields, $W^3_L$, $W^3_R$ and $B'$, a $3\times3$ mass matrix built from two vacuum vectors, rank two because two rank-one terms are all there is, therefore one null direction. The null direction is $\bigl(1,1,\sqrt{\tfrac23}\bigr)$ and it is the photon. The two massive eigenvalues are $\tfrac25g^2v^2$ and $\tfrac58g^2v_C^2$ at equal couplings, and both coefficients are fixed by the vacuum vectors: the heavy one is the norm $\lvert a_1\rvert^2=\tfrac58$, and the light one is the Schur complement $\lvert a_2\rvert^2-(a_1\cdot a_2)^2/\lvert a_1\rvert^2=\tfrac58-\tfrac9{40}=\tfrac25$, which is why it is not the $\tfrac58$ that $\lvert a_2\rvert^2$ alone would give.
 
 **What this article is.** It is the neutral half of [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), cut out so that the grid article stays about the grid. The cells, the ledger and the fate of every charged and coloured boson stay there; the mixing of the three neutral directions is here.
 
@@ -25,16 +25,16 @@ All three are gauge fields, and none of them is one of the scalar sector's neutr
 **The matrix.** With the two vacuum vectors $a_1,a_2\in\mathbb R^3$ written in the basis of couplings,
 
 $$
-\mathcal M^2=\sum_{i=1,2}v_i^2\,a_ia_i^{\mathsf T},
+\mathcal M^2=v_C^2\,a_1a_1^{\mathsf T}+v^2\,a_2a_2^{\mathsf T},
 \qquad
-a_1=\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr)v_R,
+a_1=\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr),
 \qquad
-a_2=\bigl(\tfrac12,-\tfrac12,0\bigr)v ,
+a_2=\bigl(-\tfrac12,0,\sqrt{\tfrac38}\bigr),
 $$
 
-where the entries are the eigenvalues of $(T_{3L},\,T_{3R},\,T^{15})$ on the field that takes the vev, with $T^{15}$ the Cartan normalised by $\operatorname{tr}(T^{15})^{2}=\tfrac12$ and hence $B-L=\sqrt{8/3}\,T^{15}$. So $a_1$ is the lepton line of the $(\mathbf4,\mathbf1,\mathbf2)$ — $T_{3R}=+\tfrac12$, $B-L=-1$, hence $T^{15}=-\sqrt{3/8}$ — and $a_2$ is the upper component of the bidoublet. Two annihilations fix the relative signs. Hypercharge is unbroken on the first vacuum, $Y=T_{3R}+\tfrac12(B-L)=0$, and both vacua must leave the photon massless, $Q=T_{3L}+T_{3R}+\tfrac12(B-L)$, which in this normalisation is the vector $(1,1,\sqrt{2/3})$: it gives $0+\tfrac12+\sqrt{2/3}\cdot(-\sqrt{3/8})=0$ on $a_1$ and $\tfrac12-\tfrac12+0=0$ on $a_2$. Only the products $a_ia_i^{\mathsf T}$ enter $\mathcal M^2$, so the overall sign of each $a_i$ is free; the relative signs are not, and the two tests above are what fixes them.
+where the entries are the eigenvalues of $(T_{3L},\,T_{3R},\,T^{15})$ on the field that takes the vev, with $T^{15}$ the Cartan normalised by $\operatorname{tr}(T^{15})^{2}=\tfrac12$ and hence $B-L=\sqrt{8/3}\,T^{15}$. So $a_1$ is the lepton line of the $(\mathbf4,\mathbf1,\mathbf2)$ — $T_{3R}=+\tfrac12$, $B-L=-1$, hence $T^{15}=-\sqrt{3/8}$ — and $a_2$ is the lower component of the electroweak doublet $H$ — $T_{3L}=-\tfrac12$, $T_{3R}=0$, $B-L=+1$, hence $T^{15}=+\sqrt{3/8}$. Two annihilations fix the relative signs. Hypercharge is unbroken on the first vacuum, $Y=T_{3R}+\tfrac12(B-L)=0$, and both vacua must leave the photon massless, $Q=T_{3L}+T_{3R}+\tfrac12(B-L)$, which in this normalisation is the vector $(1,1,\sqrt{2/3})$: it gives $0+\tfrac12+\sqrt{2/3}\cdot(-\sqrt{3/8})=0$ on $a_1$ and $-\tfrac12+0+\sqrt{2/3}\cdot\sqrt{3/8}=0$ on $a_2$. **The two vectors are antiparallel in their $B-L$ components and parallel in nothing else, which is why they stay independent and the rank stays two.** Only the products $a_ia_i^{\mathsf T}$ enter $\mathcal M^2$, so the overall sign of each $a_i$ is free; the relative signs are not, and the two tests above are what fixes them.
 
-**The rank.** $\mathcal M^2$ is a sum of two rank-one matrices, so its rank is at most two, so it has at least one zero eigenvalue. It has exactly one, because $a_1$ and $a_2$ are independent: $a_1\cdot a_2=-\tfrac14v_Rv\ne0$ and they are not parallel. So there is one massless neutral and two massive, always, for any two independent neutral vacua. **A frame with two neutral vacua and no massless neutral would violate this, and that is the structural reason the photon is not optional.**
+**The rank.** $\mathcal M^2$ is a sum of two rank-one matrices, so its rank is at most two, so it has at least one zero eigenvalue. It has exactly one, because $a_1$ and $a_2$ are independent: $a_1\cdot a_2=-\tfrac38v_Cv\ne0$ and they are not parallel. So there is one massless neutral and two massive, always, for any two independent neutral vacua. **A frame with two neutral vacua and no massless neutral would violate this, and that is the structural reason the photon is not optional.**
 
 ## The Photon, Which Is a Mixture and Not a Factor
 
@@ -62,15 +62,15 @@ $$
 M_Z^2=\tfrac14\bigl(g_L^2+g_Y^2\bigr)v^2 .
 $$
 
-At equal couplings, with $g_Y^2=\tfrac35g^2$ from the matching relation, the predicted value is $\tfrac14(g_L^2+g_Y^2)v^2=\tfrac25g^2v^2$, and the light eigenvalue of $\mathcal M^2$ is $0.4\,g^2v^2$. The two are the same number, and that is the check: the normalisations entering $a_1$ and $a_2$ reproduce the Standard Model's relation $M_Z^2=\tfrac14(g_L^2+g_Y^2)v^2$ and not merely its group. The agreement is the leading term in $v/v_R$ — the eigenvalue is $0.3994\,g^2v^2$ at $v/v_R=10^{-1}$ — which is the sense in which the Standard Model is recovered below $M_{R}$, at tree level.
+At equal couplings, with $g_Y^2=\tfrac35g^2$ from the matching relation, the predicted value is $\tfrac14(g_L^2+g_Y^2)v^2=\tfrac25g^2v^2$, and the light eigenvalue of $\mathcal M^2$ is $0.4\,g^2v^2$. The two are the same number, and that is the check: the normalisations entering $a_1$ and $a_2$ reproduce the Standard Model's relation $M_Z^2=\tfrac14(g_L^2+g_Y^2)v^2$ and not merely its group. The agreement is the leading term in $v/v_C$ — the eigenvalue is $0.3986\,g^2v^2$ at $v/v_C=10^{-1}$ — which is the sense in which the Standard Model is recovered below $M_C$, at tree level.
 
 **The heavy neutral.** Its coefficient is $\tfrac58$.
 
 $$
-M_{Z_R}^2=\tfrac58\,g^2v_R^2 .
+M_{Z_R}^2=\tfrac58\,g^2v_C^2 .
 $$
 
-The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$, and the $\tfrac58$ is nothing but $|a_1|^2=\tfrac14+\tfrac38$: one quarter from $T_{3R}$ and three eighths from the $B-L$ normalisation. At $v=0$ the matrix is rank one, so the other two eigenvalues vanish there: the $Z_R$ mass is entirely $M_{R}$'s, and the light neutral's comes entirely from $v$. The $Z_R$ is therefore heavier than the $W_R$ by the ratio of the two coefficients, $\sqrt{(5/8)/(1/4)}=\sqrt{5/2}\simeq1.58$ at equal couplings; with the couplings split the squared ratio is $1+\tfrac32(g_4/g_R)^2$, which carries $g_4/g_R$ and is the coupling article's business.
+The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_C^2=\tfrac58g^2v_C^2$, and the $\tfrac58$ is nothing but $|a_1|^2=\tfrac14+\tfrac38$: one quarter from $T_{3R}$ and three eighths from the $B-L$ normalisation. At $v=0$ the matrix is rank one, so the other two eigenvalues vanish there: the $Z_R$ mass is entirely $M_C$'s, and the light neutral's comes entirely from $v$. The $Z_R$ is therefore heavier than the $W_R$ by the ratio of the two coefficients, $\sqrt{(5/8)/(1/4)}=\sqrt{5/2}\simeq1.58$ at equal couplings; with the couplings split the squared ratio is $1+\tfrac32(g_4/g_R)^2$, which carries $g_4/g_R$ and is the coupling article's business.
 
 **What these two numbers are.** They are the vacuum's and not the couplings'. The coefficient is fixed by which component of which multiplet takes the vev, the normalisation of that vev is the scalar sector's business, and the overall size is the coupling article's.
 
@@ -79,20 +79,20 @@ The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$, and the $
 
 | what | result |
 | --- | --- |
-| the two vacuum vectors | $\lvert a_1\rvert^2=\tfrac58$, $\lvert a_2\rvert^2=\tfrac12$, $a_1\cdot a_2=-\tfrac14$ |
+| the two vacuum vectors | $\lvert a_1\rvert^2=\tfrac58$, $\lvert a_2\rvert^2=\tfrac58$, $a_1\cdot a_2=-\tfrac38$ |
 | independence | $a_1\cdot a_2\ne0$, so the two rank-one terms are independent and the rank is exactly two |
-| the determinant | $0$ for every $v$ and $v_R$: one null direction and no more |
-| the null direction | $a_1\times a_2=-\tfrac{\sqrt6}{8}\bigl(1,1,\sqrt{\tfrac23}\bigr)$, so the photon is $\bigl(1,1,\sqrt{\tfrac23}\bigr)$ |
+| the determinant | $0$ for every $v$ and $v_C$: one null direction and no more |
+| the null direction | $a_1\times a_2=\tfrac{\sqrt6}{8}\bigl(1,1,\sqrt{\tfrac23}\bigr)$, so the photon is $\bigl(1,1,\sqrt{\tfrac23}\bigr)$ |
 | the heavy coefficient | $\lvert a_1\rvert^2=\tfrac14+\tfrac38=\tfrac58$, the $T_{3R}$ quarter plus the $B-L$ three eighths |
 | $Q$ on the two vacua | $(1,1,\sqrt{2/3})\cdot a_1=0$ and $(1,1,\sqrt{2/3})\cdot a_2=0$ | the photon couples to neither vacuum |
 | the mass ratio | $\sqrt{(5/8)/(1/4)}$ | $1.5811$, the $Z_R/Z$ ratio at leading order |
-| the light coefficient | $\lvert a_2\rvert^2-\dfrac{(a_1\cdot a_2)^2}{\lvert a_1\rvert^2}=\tfrac12-\tfrac1{10}=\tfrac25$ at $v_R\gg v$ |
+| the light coefficient | $\lvert a_2\rvert^2-\dfrac{(a_1\cdot a_2)^2}{\lvert a_1\rvert^2}=\tfrac58-\tfrac9{40}=\tfrac25$ at $v_C\gg v$ |
 
-**The last row is the Schur complement and it is exact**, not an expansion: the light eigenvalue of a rank-one-plus-rank-one matrix is the norm of the second vector minus the square of the overlap divided by the norm of the first. **At $v=0.3$ and $v_R=1$ the two eigenvalues are $0.03546$ and $0.63454$, against $\tfrac25v^2=0.036$ and $\tfrac58v_R^2=0.625$**, and the difference is the $v^2$ correction that the $\tfrac58$ ignores.
+**The last row is the Schur complement and it is exact**, not an expansion: the light eigenvalue of a rank-one-plus-rank-one matrix is the norm of the second vector minus the square of the overlap divided by the norm of the first. **At $v=0.3$ and $v_C=1$ the two eigenvalues are $0.03481$ and $0.64644$, against $\tfrac25v^2=0.036$ and $\tfrac58v_C^2=0.625$**, and the difference is the $v^2$ correction that the $\tfrac58$ ignores.
 
 ## Summary
 
-**Three ingredients, one matrix of rank two, one null direction, two masses.** The rank is two because there are two vacua and each contributes one rank-one term. The null direction is the cross product of the two vacuum vectors, so its coefficients are fixed by the normalisation of the fifteenth Cartan and by nothing dynamical. The two masses are norms and overlaps of the same two vectors, $\tfrac25g^2v^2$ light and $\tfrac58g^2v_R^2$ heavy. **No coupling is predicted here and no scalar multiplet is assumed**: the sector's content is the geometry of two vectors in $\mathbb{R}^3$.
+**Three ingredients, one matrix of rank two, one null direction, two masses.** The rank is two because there are two vacua and each contributes one rank-one term. The null direction is the cross product of the two vacuum vectors, so its coefficients are fixed by the normalisation of the fifteenth Cartan and by nothing dynamical. The two masses are norms and overlaps of the same two vectors, $\tfrac25g^2v^2$ light and $\tfrac58g^2v_C^2$ heavy. **No coupling is predicted here and no scalar multiplet is assumed**: the sector's content is the geometry of two vectors in $\mathbb{R}^3$.
 
 ## Summary of Notation
 
@@ -103,9 +103,9 @@ The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$, and the $
 | $T^{c}_{3}$, $T^{c}_{8}$ | the two colour Cartans, removed by the first breaking |
 | $T^{15}$ | the corner generator, normalised by $\operatorname{tr}(T^{15})^{2}=\tfrac12$ |
 | $B-L$ | $\sqrt{8/3}\,T^{15}$, the charge of the corner |
-| $a_1$, $a_2$ | the two vacuum vectors in $\mathbb{R}^3$, of lengths $\sqrt{5/8}\,v_R$ and $v/\sqrt2$ |
-| $\mathcal M^2$ | the $3\times3$ neutral mass matrix, $v_R^2a_1a_1^{\mathsf T}+v^2a_2a_2^{\mathsf T}$ |
-| $v$, $v_R$ | the electroweak and the right-handed breaking values |
+| $a_1$, $a_2$ | the two vacuum vectors in $\mathbb{R}^3$, both of length $\sqrt{5/8}$ |
+| $\mathcal M^2$ | the $3\times3$ neutral mass matrix, $v_C^2a_1a_1^{\mathsf T}+v^2a_2a_2^{\mathsf T}$ |
+| $v$, $v_C$ | the electroweak and the transition vacuum values |
 
 ## Further Reading
 

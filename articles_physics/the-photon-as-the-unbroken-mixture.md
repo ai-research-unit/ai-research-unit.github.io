@@ -57,15 +57,15 @@ $$
 $$
 \mathcal M^2=\sum_{i=1,2}v_i^{2}\,a_ia_i^{\mathsf T},
 \qquad
-a_1=\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr)v_R,
+a_1=\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr)v_C,
 \qquad
-a_2=\bigl(\tfrac12,-\tfrac12,0\bigr)v ,
+a_2=\bigl(-\tfrac12,0,\sqrt{\tfrac38}\bigr)v ,
 $$
 
 where the entries are the eigenvalues of $(T_{3L},T_{3R},T^{15})$ on the field that takes the vev, with $T^{15}$ normalised by $\operatorname{tr}(T^{15})^2=\tfrac12$ and hence $B-L=\sqrt{8/3}\,T^{15}$. The null vector is the cross product,
 
 $$
-a_1\times a_2\propto-\bigl(\sqrt{\tfrac38},\,\sqrt{\tfrac38},\,\tfrac12\bigr),
+a_1\times a_2\propto\bigl(\sqrt{\tfrac38},\,\sqrt{\tfrac38},\,\tfrac12\bigr),
 $$
 
 whose ratios, with the first entry normalised to one, are
@@ -87,17 +87,17 @@ and read the coefficients: they are $d=(1,1,\sqrt{2/3})$. Now evaluate $Q$ on ea
 $$
 a_1\cdot d=0+\tfrac12-\sqrt{\tfrac38}\cdot\sqrt{\tfrac23}=\tfrac12-\tfrac12=0,
 \qquad
-a_2\cdot d=\tfrac12-\tfrac12+0=0 .
+a_2\cdot d=-\tfrac12+0+\sqrt{\tfrac38}\cdot\sqrt{\tfrac23}=-\tfrac12+\tfrac12=0 .
 $$
 
 **So $\mathcal M^2d=\sum_i v_i^2a_i(a_i\cdot d)=0$ identically, for every pair of vevs, at every ratio.** The photon is massless, and the reason is not a cancellation among numbers. **A null direction of the neutral mass matrix is a direction on which no vacuum carries charge, and $d$ is the vector whose dot product with a state's eigenvalues is that state's charge.** The mixture is unbroken because it is the charge.
 
-**2.3 From the two neutral lepton lines.** Take the two states the frame declares neutral before it declares any charge: the right-handed neutrino of the $(\mathbf4,\mathbf1,\mathbf2)$, and the upper component of the bidoublet. In the basis $(T_{3L},T_{3R},T^{15})$ their eigenvalues are
+**2.3 From the two neutral lines that take vevs.** Take the two states the frame declares neutral before it declares any charge: the right-handed neutrino of the $(\mathbf4,\mathbf1,\mathbf2)$, and the lower component of the electroweak doublet $H$. In the basis $(T_{3L},T_{3R},T^{15})$ their eigenvalues are
 
 $$
 \text{right-handed: }\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr),
 \qquad
-\text{left-handed: }\bigl(\tfrac12,-\tfrac12,0\bigr).
+\text{left doublet: }\bigl(-\tfrac12,0,\sqrt{\tfrac38}\bigr).
 $$
 
 **A direction that annihilates both is orthogonal to both**, so it is the cross product of the two rows, which is again the vector of *The Direction, Derived Three Ways*. Writing the two conditions as equations on $(a,b,c)$,
@@ -105,7 +105,7 @@ $$
 $$
 \tfrac12 b-\sqrt{\tfrac38}\,c=0,
 \qquad
-\tfrac12 a-\tfrac12 b=0,
+-\tfrac12 a+\sqrt{\tfrac38}\,c=0,
 $$
 
 gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
@@ -184,12 +184,12 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 | claim | check | result |
 |---|---|---|
-| the null vector | $a_1\times a_2$ | $\propto-(\sqrt{3/8},\sqrt{3/8},\tfrac12)$ |
+| the null vector | $a_1\times a_2$ | $\propto(\sqrt{3/8},\sqrt{3/8},\tfrac12)$ |
 | the ratios | normalise the first entry to one | $(1,1,0.816497)$ |
 | $\sqrt{2/3}$ | numeric | $0.816497$ |
 | the direction against $Q$ | the coefficient vector of $Q$ in $(T_{3L},T_{3R},T^{15})$ | the same triple |
 | neutrality on the first vacuum | $a_1\cdot d=0+\tfrac12-\sqrt{3/8}\sqrt{2/3}$ | $0$ |
-| neutrality on the second vacuum | $a_2\cdot d=\tfrac12-\tfrac12+0$ | $0$ |
+| neutrality on the second vacuum | $a_2\cdot d=-\tfrac12+0+\sqrt{3/8}\sqrt{2/3}$ | $0$ |
 | the cancellation | $\sqrt{3/8}\cdot\sqrt{2/3}$ | exactly $\tfrac12$ |
 | the right-handed neutrino | $(0,\tfrac12,-\sqrt{3/8})\cdot d$ | $0$ |
 | the left-handed neutrino | $(\tfrac12,-\tfrac12,0)\cdot d$ | $0$ |
@@ -241,11 +241,11 @@ Three neutral gauge bosons are not three scalars. All three are gauge fields, an
 | $d$ | the photon's direction in $(T_{3L},T_{3R},T^{15})$, equal to the coefficient vector of $Q$ |
 | $a_1,a_2$ | the two vacuum vectors: the eigenvalues of $(T_{3L},T_{3R},T^{15})$ on the two lines that take vevs |
 | $Q$ | $T_{3L}+T_{3R}+\tfrac12(B-L)=T_{3L}+T_{3R}+\sqrt{2/3}\,T^{15}$ |
-| $B$ | the surviving $\mathrm{SU}(4)$ Cartan field, $A^{15}$, the $B-L$ boson |
+| $B'$ | the surviving $\mathrm{SU}(4)$ Cartan field, $A^{15}$, the $B-L$ direction |
 | $T^{15}$ | the fifteenth Cartan, $\operatorname{tr}(T^{15})^{2}=\tfrac12$, $B-L=\sqrt{8/3}\,T^{15}$ |
 | $\mathcal M^{2}$ | the $3\times3$ neutral mass matrix, a sum of two rank-one terms |
-| $\ell_1,\ell_2,\ell_3$ | the three vacuum lines of the chain |
-| $v,v_R$ | the electroweak and colour-breaking vacuum expectation values |
+| $\ell_1,\ell_2$ | the two vacuum lines, the lepton line of $\Phi$ and the doublet line of $H$ |
+| $v,v_C$ | the electroweak and colour-breaking vacuum expectation values |
 
 ## Further Reading
 
