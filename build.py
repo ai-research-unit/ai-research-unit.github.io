@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# DO NOT MODIFY THIS FILE WITHOUT EXPLICIT USER APPROVAL.
+# The build files -- build.py, build_diff.py, build_external.py, sync_index.py --
+# are the only route from the .md sources to the deploy folder. A change here
+# rewrites pages wholesale and can delete deployed files, so it is made only on
+# the user's explicit request, never as a side effect of another task.
 import re
 import shutil
 import subprocess
@@ -12,159 +17,6 @@ from urllib.parse import quote
 SRC        = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit")
 DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit-deploy")
 
-# Old URLs kept alive after a rename: (deployed page, alias that copies it).
-# The pruner spares the aliases, and no sitemap lists them.
-LEGACY_COPIES = [
-    # The weak sector was renamed from "interaction" to "force" with its section.
-    # The old addresses serve the renamed pages rather than 404.
-    ("articles_physics/the-weak-force-in-biquaternionic-form.html",
-     "articles_physics/the-weak-interaction-in-biquaternionic-form.html"),
-    ("articles_physics/the-lagrangian-and-the-weak-force.html",
-     "articles_physics/the-lagrangian-and-the-weak-interaction.html"),
-    # The chain-and-spectrum and scalar-and-leptoquark articles were split, then
-    # retired with the first symmetry-breaking section. Their old addresses now
-    # serve the articles that carry the surviving content: the matching page for
-    # the chain and its scales, the breaking page for the scalar and its sextet.
-    ("articles_physics/matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html",
-     "articles_physics/the-breaking-chain-and-the-boson-spectrum.html"),
-    ("articles_physics/the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html",
-     "articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html"),
-    # The chain's titles were rewritten twice: first out of "death", then out of
-    # the metaphor ("verbs", "put aside", "handover", "born as a side effect") so
-    # that each title states the result. Every retired address keeps serving its
-    # article.
-    ("articles_physics/the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html",
-     "articles_physics/the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html"),
-    ("articles_physics/the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html",
-     "articles_physics/the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html"),
-    ("articles_physics/the-centraliser-the-complement-and-the-index-dimension-and-rank.html",
-     "articles_physics/the-two-kinds-of-death-a-subgroup-that-leaves-and-an-index-that-arrives.html"),
-    ("articles_physics/the-centraliser-the-complement-and-the-index-dimension-and-rank.html",
-     "articles_physics/the-three-verbs-of-the-transition-a-subgroup-that-survives-a-complement-that-breaks-and-an-index-that-arrives.html"),
-    ("articles_physics/rank-five-from-three-the-weak-factors-as-a-condensate-index.html",
-     "articles_physics/the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html"),
-    ("articles_physics/the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html",
-     "articles_physics/what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html"),
-    ("articles_physics/six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html",
-     "articles_physics/the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html"),
-    ("articles_physics/matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html",
-     "articles_physics/the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html"),
-    # The threshold article lost the "$M_R$" of the two-scale chain: the model has
-    # one transition, so the old address serves the renamed page.
-    ("articles_physics/the-threshold-scales-mc-mw-and-what-would-fix-them.html",
-     "articles_physics/the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html"),
-    # The classification article was split in two, bosons and fermions; the old
-    # URL serves the boson article, which carries the group, the ledger and grids.
-    ("articles_physics/classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html",
-     "articles_physics/particle-classification-three-grids-one-name-in-every-cell.html"),
-    # The boson-spectrum article was merged into the classification article; the
-    # old URL serves the merged page, which now carries the fates and the mixing.
-    ("articles_maths/the-spin-half-bispinors-and-n-norm-regularity-in-m2c.html",
-     "articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html"),
-    ("articles_maths/the-spin-half-bispinors-and-n-norm-regularity.html",
-     "articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity.html"),
-    ("articles_maths/the-spin-half-bispinors-and-spectral-regularity-in-m2c.html",
-     "articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity-in-m2c.html"),
-    ("articles_maths/the-spin-half-bispinors-and-spectral-regularity.html",
-     "articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity.html"),
-    ("articles_maths/the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html",
-     "articles_maths/the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html"),
-    ("articles_maths/the-spin-half-bispinors-and-the-sectors-of-n-and-spectral-regularity.html",
-     "articles_maths/the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity.html"),
-    ("articles_maths/the-two-halves-symmetric-and-antisymmetric.html",
-     "articles_maths/the-two-halves-symmetric-and-antisymmetric-over-r.html"),
-    ("articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts.html",
-     "articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html"),
-    ("articles_maths/from-the-spin-to-the-carriers-and-the-closures-in-m2c.html",
-     "articles_maths/the-carriers-the-representation-the-spin-and-the-closure-in-m2c.html"),
-    ("articles_maths/utn-as-the-complement-of-the-antisymmetric-part.html",
-     "articles_maths/utn-as-the-complement-of-the-antisymmetric-part-over-r.html"),
-    ("articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.html",
-     "articles_physics/cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.html"),
-    ("articles_maths/introduction-to-the-spin-three-carrier-of-m4c.html",
-     "articles_maths/the-spin-three-carrier-of-m4c.html"),
-    ("articles_maths/introduction-to-the-spin-two-carrier-of-m4c.html",
-     "articles_maths/the-spin-two-carrier-of-m4c.html"),
-    ("articles_physics/wigners-classification-two-casimirs-three-orbits.html",
-     "articles_physics/wigers-classification-two-casimirs-three-orbits.html"),
-    ("articles_physics/the-multi-qubit-boundary-what-b-tensor-b-would-require.html",
-     "articles_physics/beyond-one-qubit-what-b-tensor-b-would-require.html"),
-    ("articles_physics/the-weinberg-angle-and-the-three-neutral-states.html",
-     "articles_physics/the-weinberg-angle-the-neutral-current-and-the-z-coupling.html"),
-    ("articles_physics/custodial-symmetry-and-the-rho-parameter.html",
-     "articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html"),
-    ("articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-bivector-plane.html",
-     "articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html"),
-    ("articles_maths/m4r-h-l-axis-free-representation-operators.html",
-     "articles_maths/m4r-h-l-regular-representation-operators.html"),
-    ("articles_maths/m4r-h-l-axis-free-representation.html",
-     "articles_maths/m4r-h-l-regular-representation.html"),
-    ("articles_physics/cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.html",
-     "articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html"),
-    ("articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html",
-     "articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html"),
-    ("articles_physics/quantum-chromodynamics-as-the-residual-of-su4.html",
-     "articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html"),
-    ("articles_physics/the-standard-model-as-the-low-energy-phase.html",
-     "articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html"),
-    ("articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.html",
-     "articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html"),
-    ("articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.html",
-     "articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html"),
-    ("articles_physics/introduction-to-the-lorentz-group-in-biquaternionic-form.html",
-     "articles_physics/ai-describes-the-lorentz-group.html"),
-    ("articles_physics/introduction-to-the-lorentz-group-in-biquaternionic-form.html",
-     "articles_physics/biquaternions-and-the-lorentz-group.html"),
-    ("articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html",
-     "articles_physics/quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html"),
-    ("articles_maths/the-spin-group-via-4x4-real-matrices.html",
-     "articles_maths/the-rotor-group-via-4x4-real-matrices.html"),
-    ("articles_maths/from-the-spin-group-to-the-spin-of-a-single-rotor.html",
-     "articles_maths/from-the-rotor-to-the-spin-of-the-rotor.html"),
-    ("articles_maths/the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html",
-     "articles_maths/from-the-spin-of-a-single-rotor-to-the-spin-of-a-pair.html"),
-    ("articles_maths/the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html",
-     "articles_maths/from-the-spin-of-the-rotor-to-the-spin-of-a-pair.html"),
-    # The force was renamed twice: "mega strong" claimed a magnitude the corpus
-    # never computes, then "death" named an event the model does not contain.
-    # Both old addresses copy the page that now carries the breaking.
-    ("articles_physics/the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html",
-     "articles_physics/the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html"),
-    # Charged lepton flavour: the article states the open question, and the
-    # retired addresses stay alive.
-    ("articles_physics/lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html",
-     "articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html"),
-    ("articles_physics/lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html",
-     "articles_physics/the-fourth-colour-lepton-one-operator-one-unknown-and-the-channels-that-cannot-see-it.html"),
-    ("articles_maths/the-trace-form-and-its-indefinite-inertia.html",
-     "articles_maths/the-trace-form-and-its-indefinite-signature.html"),
-    ("articles_maths/the-trace-form-and-its-inertia-on-the-two-halves.html",
-     "articles_maths/the-trace-form-and-its-signature-on-the-two-halves.html"),
-    ("articles_maths/the-trace-form-and-its-inertia-on-the-two-halves-of-m2r.html",
-     "articles_maths/the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html"),
-    ("articles_maths/the-trace-form-and-its-inertia-on-the-two-halves-of-m4c.html",
-     "articles_maths/the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html"),
-    ("articles_maths/the-killing-form-of-sl-2-and-its-three-inertias.html",
-     "articles_maths/the-killing-form-of-sl-2-and-its-three-signatures.html"),
-    ("articles_maths/m2c-h-pauli-representation-operators.html",
-     "articles_maths/m2c-h-standard-representation-operators.html"),
-    ("articles_maths/m2c-h-pauli-representation.html",
-     "articles_maths/m2c-h-standard-representation.html"),
-    ("articles_physics/quantum-chromodynamics-as-the-residual-of-su4.html",
-     "articles_physics/quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html"),
-    ("articles_physics/the-standard-model-as-the-low-energy-phase.html",
-     "articles_physics/the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html"),
-    ("articles_physics/anomalies-and-anomaly-cancellation.html",
-     "articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html"),
-    # Three titles in the sections below the breaking named the retired model in
-    # their title. The pages were renamed; the old addresses serve the new pages.
-    ("articles_physics/the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html",
-     "articles_physics/the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html"),
-    # The rotors article was renamed to name the matrices it prints. The old
-    # address serves the renamed page.
-    ("articles_physics/construction-of-the-axf-matrices-of-the-rotors-of-the-fifteen-generators.html",
-     "articles_physics/construction-of-the-axf-rotors-of-the-fifteen-generators.html"),
-]
 
 # One date for the whole site: the moment the last build started. build_diff.py
 # reads it to decide which pages to rebuild. It lives in the source folder,
@@ -730,18 +582,15 @@ def prune_orphans():
     # indexable, and silently diverging from the current article. Drop any
     # deployed article page that no longer has a matching source. This also
     # removes pages left in a collection by a file that moved to the other one.
-    # The legacy aliases are the exception: they have no source by design.
-    #
     # The collection may hold subfolders, which mirror the source tree, so the
     # comparison is on the path relative to the collection and not on the stem:
     # two drafts of the same name in different subfolders are two pages.
-    keep = {(DEPLOY / alias).resolve() for _, alias in LEGACY_COPIES}
     for coll in COLLECTIONS:
         built = {str(f.relative_to(coll["src"]).with_suffix(".html")) for f in coll["articles"]}
         emptied = set()
         for stale in coll["deploy"].rglob("*.html"):
             rel = str(stale.relative_to(coll["deploy"]))
-            if rel not in built and stale.resolve() not in keep:
+            if rel not in built:
                 stale.unlink()
                 print(f"Removed orphan: {coll['src'].name}/{rel}")
                 emptied.add(stale.parent)
@@ -767,25 +616,6 @@ def prune_legacy():
     if legacy_art.is_dir():
         shutil.rmtree(legacy_art)
         print("Removed legacy deploy directory: articles/")
-    # ──────────────────────────────────────────────────────────────────────
-
-
-def copy_legacy_pages():
-    # ── serve the pre-rename URL ──────────────────────────────────────────
-    # A bookmark or an outside link to the old name must not 404. The alias is a
-    # byte copy, so it follows every later rebuild of the article with no second
-    # template pass. It runs after prune_orphans(), which would otherwise delete
-    # a deployed page that has no source .md behind it.
-    for src_rel, alias_rel in LEGACY_COPIES:
-        src = DEPLOY / src_rel
-        if not src.exists():
-            continue
-        data = src.read_bytes()
-        alias = DEPLOY / alias_rel
-        if alias.exists() and alias.read_bytes() == data:
-            continue
-        alias.write_bytes(data)
-        print(f"Alias written: {alias_rel}")
     # ──────────────────────────────────────────────────────────────────────
 
 
@@ -837,7 +667,6 @@ def main():
     prune_legacy()
     write_sitemaps()
     run_convention_check()
-    copy_legacy_pages()
     write_state(started)
 
     print("Done.")

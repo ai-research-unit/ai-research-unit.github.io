@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# DO NOT MODIFY THIS FILE WITHOUT EXPLICIT USER APPROVAL.
+# The build files -- build.py, build_diff.py, build_external.py, sync_index.py --
+# are the only route from the .md sources to the deploy folder. A change here
+# rewrites pages wholesale and can delete deployed files, so it is made only on
+# the user's explicit request, never as a side effect of another task.
 """Regenerate index.md from the introduction article.
 
 `index.md` is generated, not written: it is a copy of

@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# DO NOT MODIFY THIS FILE WITHOUT EXPLICIT USER APPROVAL.
+# The build files -- build.py, build_diff.py, build_external.py, sync_index.py --
+# are the only route from the .md sources to the deploy folder. A change here
+# rewrites pages wholesale and can delete deployed files, so it is made only on
+# the user's explicit request, never as a side effect of another task.
 """Incremental build: redeploy only what changed since the last build.
 
 build.py is the sweep. It rebuilds the whole site and, before it starts, stamps
@@ -97,8 +102,6 @@ def main():
     # new article must never be missing from them.
     build.write_sitemaps()
     build.run_convention_check()
-    # The article was renamed, so the old address must keep serving it.
-    build.copy_legacy_pages()
     build.write_state(started)
 
     print("Done.")
