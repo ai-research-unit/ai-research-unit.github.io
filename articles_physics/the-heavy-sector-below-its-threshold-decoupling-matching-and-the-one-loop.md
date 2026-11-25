@@ -56,7 +56,7 @@ $$
 | $M_R$ | $W^{\pm}_{R}$, $Z_R$, the $R$ doublet's surviving scalar, $\nu_R$'s Majorana mass | the dimension-five operator for neutrino mass, and the $1/M_R^{2}$ corrections to $W$ couplings | exact breaking, truncated effects |
 | $M_W$ | $W^{\pm}$, $Z$, the top, the Higgses | the four-fermion charged-current and neutral-current operators of the Fermi theory | exact breaking, slowly converging truncation |
 
-**3.1 The first threshold.** The leptoquarks leave and their exchange becomes contact interactions. The bound on $M_C$ is the bound on those coefficients, and the diquark channel is the one that would give proton decay — with a suppression that makes it harmless, as [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html) shows.
+**3.1 The first threshold.** The leptoquarks leave and their exchange becomes contact interactions. The bound on $M_C$ is the bound on those coefficients, and the diquark channel is the one that would give proton decay — with a suppression that makes it harmless, as [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) shows.
 
 **3.2 The second threshold.** The right-handed bosons leave and the neutrino's Majorana mass becomes a dimension-five operator: the seesaw. That operator is the reason the second threshold is not invisible at low energy even though its gauge bosons are.
 
@@ -175,6 +175,6 @@ with $n_f$ and $n_s$ the number of Dirac fermions and real scalars in the repres
 - [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html). The running, the failure and its size.
 - [The Threshold Scales: $M_C$, $M_R$, $M_W$, and What Would Fix Them](the-threshold-scales-mc-mr-mw-and-what-would-fix-them.html). The scales this article matches at.
 - [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The couplings that are matched.
-- [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The dimension-six operators of the first threshold.
+- [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The dimension-six operators of the first threshold.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The dimension-five operator of the second threshold.
 - [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html). The loop machinery used here, in the algebra.

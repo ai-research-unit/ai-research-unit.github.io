@@ -1,4 +1,4 @@
-# __What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition__
+# __The Charge Theorem: The Sextet Cannot Be Recomposed Into the Weak Pair__
 
 ## Introduction
 
@@ -26,9 +26,9 @@ $$
 
 **What this article establishes.** That the charge sum of any colour-singlet state built from sextets is an even integer, hence never $\pm1$; that the specific channel $\mathbf3\otimes\bar{\mathbf3}$ gives $\mathbf1_0\oplus\mathbf8_0$ with the singlet neutral identically, hence six neutral vectors and no charged one; what the six exact additive identities do and do not show, with the mass table that separates an identity from a particle; the $45^\circ$ that a naive reading of the identities would impose, against the measured $28.7^\circ$; and the confinement-scale bound that closes the composite route a second time.
 
-**Not established.** Nothing positive. **This article is the negative half of the migration and it contains no construction**; the construction is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html), and its whole point is that it does not need the sextet.
+**Not established.** Nothing positive. **This article is the negative half of the migration and it contains no construction**; the construction is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html), and its whole point is that it does not need the sextet.
 
-**Where the rest is.** The sextet's identity and mass are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The rank argument that runs alongside these two closures is [The Three Verbs of the Transition](the-three-verbs-of-the-transition-a-subgroup-that-survives-a-complement-that-breaks-and-an-index-that-arrives.html). The positive construction is the article named above.
+**Where the rest is.** The sextet's identity and mass are [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The rank argument that runs alongside these two closures is [The Centraliser, the Complement, and the Index](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The positive construction is the article named above.
 
 ## The Charge Theorem
 
@@ -68,7 +68,7 @@ $$
 
 **Why this is a theorem of the model and not of the notation.** The charges are fixed by the index structure — one lepton index at $B-L=-1$, one colour index at $+\tfrac13$ — and the triality condition is colour neutrality, which any state that could be mistaken for a weak boson must satisfy. **Nothing here depends on a coupling, a scale, a basis, or a vacuum.**
 
-## The Channel That Looks Best, Computed
+## The Best Channel, Computed
 
 **The most favourable configuration.** A sextet member and an anti-member, since that pair can be a colour singlet:
 
@@ -192,7 +192,7 @@ $$
 
 **Both close the route, and the floor is the number quoted above**, because the floor holds whatever one believes about unification. **Twenty-two was an earlier draft's error**: it came from a $10^{15}$ GeV proton-decay bound that this sector does not carry.
 
-## What the Identities Are Good For
+## What the Identities Establish
 
 **Two things, and both belong in the corpus.**
 
@@ -262,8 +262,8 @@ Six for six is a coincidence of dimension. It says nothing about charge, spin, c
 
 ## Further Reading
 
-- [The Sextet Put Aside: Six Leptoquarks Above $M_C$ and Why They Are Not Seen](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The sextet's identity, mass and bound.
-- [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The construction that does not need the sextet.
-- [The Three Verbs of the Transition: A Subgroup That Survives, a Complement That Breaks, and an Index That Arrives](the-three-verbs-of-the-transition-a-subgroup-that-survives-a-complement-that-breaks-and-an-index-that-arrives.html). The closure argument that runs beside the charge argument.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). Where $32v^{2}$ and $0$ come from, and the warning about the half in $T^{L}_{x}$.
+- [Six Leptoquarks Above $M_C$: Quantum Numbers, the Mass Ratio, and the Bound From $K_L\to\mu e$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The sextet's identity, mass and bound.
+- [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The construction that does not need the sextet.
+- [The Centraliser, the Complement, and the Index: Dimension Falls at a Breaking, Rank Rises at an Arrival](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The closure argument that runs beside the charge argument.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Where $32v^{2}$ and $0$ come from, and the warning about the half in $T^{L}_{x}$.
 - [The Neutral Sector: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html). Where the electroweak mixing is actually computed.

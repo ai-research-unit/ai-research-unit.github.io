@@ -28,9 +28,9 @@ $$
 
 **What the article establishes.** The status of each scale; the one process that bounds $M_C$ and the reason it is a tree-level flavour-changing decay rather than a precision observable; why $M_R$ inherits the bound and has none of its own; why the minimal content has two thresholds and not three; the four routes from a bound to a value; and the circularity that keeps the model unfalsified but also unpredicted.
 
-**What the article does not establish.** No numerical value for $M_C$ or $M_R$. The number attached to the bound, its inputs and its spread are in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html), and the process itself in [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html).
+**What the article does not establish.** No numerical value for $M_C$ or $M_R$. The number attached to the bound, its inputs and its spread are in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html), and the process itself in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
-**Where the order comes from.** [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html) owns the statement that the chain requires this ordering. This article owns the status of each number.
+**Where the order comes from.** [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) owns the statement that the chain requires this ordering. This article owns the status of each number.
 
 ## Three Scales, Three Statuses
 
@@ -82,7 +82,7 @@ $$
 
 ## Why the Minimal Content Has Two Scales and Not Three
 
-**One vacuum, one breaking, two factors.** Argued in full in [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html); restated here because it changes what "the three scales" means.
+**One vacuum, one breaking, two factors.** Argued in full in [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html); restated here because it changes what "the three scales" means.
 
 **5.1 The rank-one vacuum.** $\Phi$'s vacuum is a line in the carrier times a line in the right doublet, so it breaks $\mathrm{SU}(4)$ and $\mathrm{SU}(2)_R$ together, in one step and at one scale. The stabiliser is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ of dimension $12$, not the $15$-dimensional group that the two breakings would leave if they happened separately. $M_C=M_R$ because there is one breaking, not because two coincide.
 
@@ -166,8 +166,8 @@ $$
 ## Further Reading
 
 - [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html). The numbers attached to the bounds, and the failure of the running.
-- [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The process that sets $M_C$.
-- [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html). Why the chain requires this ordering and why two of the scales coincide.
+- [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The process that sets $M_C$.
+- [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). Why the chain requires this ordering and why two of the scales coincide.
 - [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html). The running that turns a scale into a prediction.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The inversion of §*What Would Fix a Scale Rather Than Bound It*, read as a mass mechanism.
 - [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html). The ratio the chain does not explain.

@@ -54,7 +54,7 @@ with $T^{A}$ the fifteen anti-Hermitian generators of $\mathfrak{su}(4)$. **No $
 
 **1.2 Fifteen and one.** Fifteen connections, because there are fifteen generators. One coupling, because there is one simple factor. A simple group has one coupling by definition — the generators of $\mathrm{SU}(4)$ cannot carry different couplings without breaking the invariance that makes them a basis of one algebra.
 
-**1.3 Why "fifteen and one" matters.** Any statement that separates couplings above $M_C$ — "the leptoquark coupling is different from the gluon coupling", "the weak coupling is a second parameter" — is false, because there is one parameter. **Below $M_C$ the four factors are not equal in status.** Colour and $B-L$ are subalgebras of the algebra that carried $g_4$, so their couplings are $g_4$ by inheritance, exactly. The weak pair is not a subalgebra: it is born at $M_C$ with the index, and its two couplings are free parameters whose equality to $g_4$ is the corpus's threshold assumption and not a derivation — [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html) says where that assumption fails.
+**1.3 Why "fifteen and one" matters.** Any statement that separates couplings above $M_C$ — "the leptoquark coupling is different from the gluon coupling", "the weak coupling is a second parameter" — is false, because there is one parameter. **Below $M_C$ the four factors are not equal in status.** Colour and $B-L$ are subalgebras of the algebra that carried $g_4$, so their couplings are $g_4$ by inheritance, exactly. The weak pair is not a subalgebra: it is born at $M_C$ with the index, and its two couplings are free parameters whose equality to $g_4$ is the corpus's threshold assumption and not a derivation — [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) says where that assumption fails.
 
 **1.4 The reality condition.** Each connection is real, each generator anti-Hermitian in the physicists' convention or Hermitian with the $i$ absorbed, and the whole expression is anti-Hermitian: $D^\dagger=-D$. That is what makes $D_\mu$ a derivative rather than a field, and it is the reason the algebra's anti-Hermitian subspace is the one that carries the connection.
 
@@ -71,7 +71,7 @@ $$
 
 where $T^{a}_{t}$ are the six mixed generators. The colour piece and the $B-L$ piece are the residual ones; the mixed piece is heavy. Note that all three carry the same $g_4$: the split is a split of generators, not of couplings.
 
-**The weak pieces are not a split of the fifteen.** They are new connections, and they appear because the two copies of $\mathrm{SU}(2)$ arrive at $M_C$ with the index that the breaking object carries — [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). **So the derivative below $M_C$ is the restriction of the one above it plus six connections whose couplings are not inherited:** $g_L$ and $g_R$ are free parameters, matched to $g_4$ only by the threshold assumption. The six mixed generators $T^{a}_{t}$ are a different object: they are inside the fifteen, they are the ones that became heavy, and their coupling is $g_4$ like the rest.
+**The weak pieces are not a split of the fifteen.** They are new connections, and they appear because the two copies of $\mathrm{SU}(2)$ arrive at $M_C$ with the index that the breaking object carries — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). **So the derivative below $M_C$ is the restriction of the one above it plus six connections whose couplings are not inherited:** $g_L$ and $g_R$ are free parameters, matched to $g_4$ only by the threshold assumption. The six mixed generators $T^{a}_{t}$ are a different object: they are inside the fifteen, they are the ones that became heavy, and their coupling is $g_4$ like the rest.
 
 **2.2 After $M_R$.** The right triplet splits into the surviving $\mathrm{U}(1)_R$ and two heavy directions, and the neutral fields mix:
 
@@ -91,7 +91,7 @@ $$
 
 with $Q=T_{3L}+Y$ and $A$ the photon. The angle here is $\theta_W$.
 
-**2.4 The observation.** In all three lines the heavy field is written in the same bracket as the light one, because both come from the same derivative. The difference between them is not their origin but whether they annihilate the vacuum, and that is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html).
+**2.4 The observation.** In all three lines the heavy field is written in the same bracket as the light one, because both come from the same derivative. The difference between them is not their origin but whether they annihilate the vacuum, and that is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html).
 
 ## What Each Piece Multiplies
 
@@ -176,7 +176,7 @@ The count jumps at $M_C$ and falls twice, and the jump is the point: one factor 
 
 **6.1 The removal.** Below $M_C$ the leptoquark piece is absent from the derivative. Fields coupled by it are no longer coupled: the lepton and the quark do not share a connection, and the gauge symmetry that would have related them is gone.
 
-**6.2 What remains of it.** The removal leaves operators: four-fermion terms with coefficients $\sim g_4^{2}/M_X^{2}$, which is why the leptoquarks can be bounded without being produced. That is the effective-Lagrangian statement, and the bound is in [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html).
+**6.2 What remains of it.** The removal leaves operators: four-fermion terms with coefficients $\sim g_4^{2}/M_X^{2}$, which is why the leptoquarks can be bounded without being produced. That is the effective-Lagrangian statement, and the bound is in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
 **6.3 The correction to the light couplings.** The removal also shifts the light couplings by finite amounts, which is the matching computation of [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html). At tree level the shifts are zero; at one loop they are not.
 

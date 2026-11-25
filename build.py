@@ -28,18 +28,32 @@ LEGACY_COPIES = [
      "articles_physics/the-axf-matrices-of-the-twenty-one-generators.html"),
     # The chain-and-spectrum and scalar-and-leptoquark articles were split, then
     # retired with the first symmetry-breaking section. Their old addresses now
-    # serve the articles that carry the surviving content: the handover page for
+    # serve the articles that carry the surviving content: the matching page for
     # the chain and its scales, the breaking page for the scalar and its sextet.
-    ("articles_physics/the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html",
+    ("articles_physics/matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html",
      "articles_physics/the-breaking-chain-and-the-boson-spectrum.html"),
-    ("articles_physics/the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html",
+    ("articles_physics/the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html",
      "articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html"),
-    # The transition vocabulary was rewritten: a vacuum breaks a force, it does not
-    # kill one. Both retired addresses serve the articles that replaced them.
-    ("articles_physics/the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html",
+    # The chain's titles were rewritten twice: first out of "death", then out of
+    # the metaphor ("verbs", "put aside", "handover", "born as a side effect") so
+    # that each title states the result. Every retired address keeps serving its
+    # article.
+    ("articles_physics/the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html",
      "articles_physics/the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html"),
-    ("articles_physics/the-three-verbs-of-the-transition-a-subgroup-that-survives-a-complement-that-breaks-and-an-index-that-arrives.html",
+    ("articles_physics/the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html",
+     "articles_physics/the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html"),
+    ("articles_physics/the-centraliser-the-complement-and-the-index-dimension-and-rank.html",
      "articles_physics/the-two-kinds-of-death-a-subgroup-that-leaves-and-an-index-that-arrives.html"),
+    ("articles_physics/the-centraliser-the-complement-and-the-index-dimension-and-rank.html",
+     "articles_physics/the-three-verbs-of-the-transition-a-subgroup-that-survives-a-complement-that-breaks-and-an-index-that-arrives.html"),
+    ("articles_physics/rank-five-from-three-the-weak-factors-as-a-condensate-index.html",
+     "articles_physics/the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html"),
+    ("articles_physics/the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html",
+     "articles_physics/what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html"),
+    ("articles_physics/six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html",
+     "articles_physics/the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html"),
+    ("articles_physics/matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html",
+     "articles_physics/the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html"),
     # The classification article was split in two, bosons and fermions; the old
     # URL serves the boson article, which carries the group, the ledger and grids.
     ("articles_physics/classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html",
@@ -127,7 +141,7 @@ LEGACY_COPIES = [
     # The force was renamed twice: "mega strong" claimed a magnitude the corpus
     # never computes, then "death" named an event the model does not contain.
     # Both old addresses copy the page that now carries the breaking.
-    ("articles_physics/the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html",
+    ("articles_physics/the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html",
      "articles_physics/the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html"),
     # Charged lepton flavour: the article states the open question, and the
     # retired addresses stay alive.

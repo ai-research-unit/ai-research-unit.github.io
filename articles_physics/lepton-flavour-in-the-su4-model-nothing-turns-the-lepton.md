@@ -149,4 +149,4 @@ $$
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The sixteen, and the copy index that is not a generation.
 - [An Introduction to Flavour](an-introduction-to-flavour.html). Why an index the algebra cannot see is invisible to every gauge measurement.
 - [Three Diagrams of the $\mathrm{SU}(4)$ Model](three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html). The same operator, drawn, with the kaon rate and the colour factor.
-- [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The sextet in full, from the old frame's side.
+- [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The sextet in full, from the old frame's side.

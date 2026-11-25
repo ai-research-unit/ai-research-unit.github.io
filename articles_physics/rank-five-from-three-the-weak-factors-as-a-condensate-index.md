@@ -1,4 +1,4 @@
-# __The Weak Force Born as a Side Effect: A Condensate Index, Five Ranks From Three, and Two Theorems That Close the Other Route__
+# __Rank Five From Three: The Weak Factors as a Condensate Index, and Two Theorems Against the Composite Route__
 
 ## Introduction
 
@@ -16,7 +16,7 @@ $$
 
 $$
 \boxed{\;
-\text{the doublet index is the weak force, born as a side effect of the breaking.}
+\text{the doublet index is the weak force: it arrives with the breaking, not out of it.}
 \;}
 $$
 
@@ -34,7 +34,7 @@ $$
 
 **What this article is not.** It is not a derivation of the weak force from $\mathrm{SU}(4)$. **It is a proof that the weak force cannot come from inside $\mathrm{SU}(4)$, together with a construction in which it comes from the outside at the transition.** The difference between those two sentences is the whole content of the migration.
 
-**Where the rest is.** The breaking that this article interprets is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The sextet whose closures are proved here is [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html) and [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The grammar of *survives*, *breaks* and *arrives* is [The Three Verbs of the Transition](the-three-verbs-of-the-transition-a-subgroup-that-survives-a-complement-that-breaks-and-an-index-that-arrives.html). The scales are [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html). The internal working note with the full arithmetic is [The Weak Force Born as a Side Effect](../articles_internal/structures/structure-weak-force-as-side-effect.html).
+**Where the rest is.** The breaking that this article interprets is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The sextet whose closures are proved here is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) and [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The grammar of *survives*, *breaks* and *arrives* is [The Centraliser, the Complement, and the Index](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The scales are [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The internal working note with the full arithmetic is [Rank Five From Three](../articles_internal/structures/structure-weak-force-as-side-effect.html).
 
 ## What a Transition Must Deliver
 
@@ -110,7 +110,7 @@ $$
 
 **This is a different statement from the usual "the algebra is too small", and it is stronger.** The usual objection says there is not enough *dimension*; but dimension is not the obstacle — $15\ge 8+1+3+3=15$ exactly, so dimension is in fact sufficient. **What is insufficient is rank, and rank is conserved downwards.** That is why the obstruction survives every clever rearrangement of the breaking.
 
-## Two Readings of One Barrier, and Why the Second Is the Story
+## Two Readings of One Barrier, and Which One the Corpus Uses
 
 **The barrier has two readings, and the migration takes the second.**
 
@@ -119,7 +119,7 @@ $$
 | the wall | the weak force is not inside $\mathrm{SU}(4)$ | true, and it is a dead end |
 | the door | therefore the weak force must arrive from beside $\mathrm{SU}(4)$ | true, and it is a construction |
 
-**Read as a wall, the lemma refutes one sentence.** Read as a door, it *proves that any successful story must have the weak force arriving at the transition*, because arriving is the only thing left. **The word for a factor that arrives beside rather than emerging from within is "side effect", and it is the right word.**
+**Read as a wall, the lemma refutes one sentence.** Read as a door, it *proves that any successful story must have the weak force arriving at the transition*, because arriving is the only thing left. **The word for a factor that arrives beside rather than emerging from within is "arrival", and it is the right word.**
 
 **This inversion changes the direction of the argument and it is worth stating slowly.**
 
@@ -176,7 +176,7 @@ $$
 
 **So the arithmetic $3+1+1=5$ is a certificate and not a loophole.** If the weak factors were pieces of the primordial force, five would be unreachable. **That the endpoint reaches five is therefore evidence that the weak factors sit beside — that they are separate factors, born with the transition.**
 
-**"Born as a side effect" and "rank five from rank three" are the same statement in two vocabularies.** The first says where the group comes from; the second says what its rank must be; and the lemma says the two are only compatible if the group is not a subalgebra. **A story that satisfies the second without the first does not exist**, which is why the side-effect reading is forced rather than chosen.
+**"Arrives with the index" and "rank five from rank three" are the same statement in two vocabularies.** The first says where the group comes from; the second says what its rank must be; and the lemma says the two are only compatible if the group is not a subalgebra. **No construction satisfies the second without the first**, which is why the arrival reading is forced rather than chosen.
 
 **One check that the endpoint is a group and not a list.** The four factors are pairwise commuting and each is closed under brackets, so the product is a group of dimension $8+1+3+3=15$ and rank $5$. **Its dimension equals $\mathfrak{su}(4)$'s dimension and its rank exceeds $\mathfrak{su}(4)$'s rank.** Equal dimension with greater rank is possible exactly because the two are not related by inclusion — **which is the whole point in one arithmetic comparison.**
 
@@ -224,7 +224,7 @@ $$
 | $M_R$ | $\mathrm{SU}(2)_R$ breaks | $W_R$, $Z_R$ |
 | $v=246\ \mathrm{GeV}$ | electroweak breaking | $W$, $Z$ |
 
-**The side effect births the group; the group's masses are supplied downstream.** No object is built from parts a thousand times heavier than itself, and there is no hierarchy to explain beyond the one the corpus already has.
+**The arrival brings in the group; the group's masses are supplied downstream.** No object is built from parts a thousand times heavier than itself, and there is no hierarchy to explain beyond the one the corpus already has.
 
 **The corpus states the same thing in the mass-matrix article, and it is worth quoting because it is the strongest textual support the construction has:** the six weak generators are not in the fifteen; on the carrier they are sums of colour and leptoquark planes, and **their masses come from the second breaking through the doublet vacuum, not from this one.** **That is precisely the mass ledger of this section, written before the construction existed.**
 
@@ -257,7 +257,7 @@ T^{L}_{x}=-\tfrac12\bigl(A_{tx}+A_{yz}\bigr),\qquad
 T^{R}_{x}=-\tfrac12\bigl(A_{tx}-A_{yz}\bigr),
 $$
 
-**show that each weak array is half a leptoquark plane and half a colour plane.** They are true, they are exact, and they are a statement about a *basis*: $32v^{2}$ sits on $A_{tx}$ and $0$ sits on $A_{yz}$, so **a sum of the two is a coherence and not a particle.** Read as the mixing itself they would fix $\sin^{2}\theta=\tfrac12$ against the observed $0.23122$. **Their home is [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html), where they are printed beside the mass table that shows why an identity is not a particle.**
+**show that each weak array is half a leptoquark plane and half a colour plane.** They are true, they are exact, and they are a statement about a *basis*: $32v^{2}$ sits on $A_{tx}$ and $0$ sits on $A_{yz}$, so **a sum of the two is a coherence and not a particle.** Read as the mixing itself they would fix $\sin^{2}\theta=\tfrac12$ against the observed $0.23122$. **Their home is [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html), where they are printed beside the mass table that shows why an identity is not a particle.**
 
 ## What This Does Not Say
 
@@ -291,7 +291,7 @@ $$
 
 Rank is not dimension. The endpoint has $\mathrm{SU}(4)$'s dimension and a larger rank; that combination is only possible without inclusion, and it is the proof, not a paradox (*The Lemma*).
 
-A side effect is not a metaphor. It is the name for a factor that arrives beside, and arriving is the only option once the lemma is granted (*Two Readings of One Barrier*).
+An arrival is not a metaphor. It is the name for a factor that enters beside the algebra rather than inside it, and entering beside is the only option once the lemma is granted (*Two Readings of One Barrier*).
 
 The index is not the debris. The weak force is born from a representation the condensate carries, not from what the condensate ate (*The Mechanism*).
 
@@ -305,7 +305,7 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 
 **The weak force can be born at the transition, and the birth certificate is the doublet index of the object that breaks the primordial force.**
 
-**The rank lemma is why it must be so.** $\operatorname{rank}\mathfrak{su}(4)=3$, the endpoint costs $5$, and a subalgebra never outranks its algebra. **So the weak factors are not pieces of $\mathrm{SU}(4)$; they arrive beside it — which is what "side effect" means, and what $3+1+1=5$ certifies.**
+**The rank lemma is why it must be so.** $\operatorname{rank}\mathfrak{su}(4)=3$, the endpoint costs $5$, and a subalgebra never outranks its algebra. **So the weak factors are not pieces of $\mathrm{SU}(4)$; they arrive beside it — which is what "arrival" means here, and what $3+1+1=5$ certifies.**
 
 **The mechanism is one object with two indices.** $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$: the $\mathrm{SU}(4)$ index breaks and eats the sextet, the $\mathbf 2$ index is the weak force. **The breaking and the birth are one event with two aspects.**
 
@@ -328,9 +328,9 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 
 ## Further Reading
 
-- [The Breaking of the Primordial Force: The $\langle iD\rangle$ Condensate and the Six Carriers It Makes Heavy](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The theorem half of the transition.
-- [The Sextet Put Aside: Six Leptoquarks Above $M_C$ and Why They Are Not Seen](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The six states, their mass, and the bound that fixes $M_C$.
-- [What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The identities, the mass table, and the two closures in full.
-- [The Three Verbs of the Transition: A Subgroup That Survives, a Complement That Breaks, and an Index That Arrives](the-three-verbs-of-the-transition-a-subgroup-that-survives-a-complement-that-breaks-and-an-index-that-arrives.html). The grammar this article uses.
-- [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html). The scale ledger and the interface with the left–right corpus.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The multiplet, and the sentence about the corpus having no algebraic guidance for it.
+- [The Breaking of the Primordial Force: $\mathrm{SU}(4)\to\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ and the Mass of the Six Leptoquarks](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The theorem half of the transition.
+- [Six Leptoquarks Above $M_C$: Quantum Numbers, the Mass Ratio, and the Bound From $K_L\to\mu e$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The six states, their mass, and the bound that fixes $M_C$.
+- [The Charge Theorem: The Sextet Cannot Be Recomposed Into the Weak Pair](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The identities, the mass table, and the two closures in full.
+- [The Centraliser, the Complement, and the Index: Dimension Falls at a Breaking, Rank Rises at an Arrival](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The grammar this article uses.
+- [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The scale ledger and the interface with the left–right corpus.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The multiplet, and the sentence about the corpus having no algebraic guidance for it.

@@ -188,5 +188,5 @@ Closed under $C$ is not the same as closed under $CP$. **This model has both, an
 - [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The cell picture the fermion labels use.
 - [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The declaration, the group, and the fermion content stated as a principle.
 - [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). The masses of these states.
-- [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). Where $T_3$ comes from.
+- [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Where $T_3$ comes from.
 - [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). Why the lepton line is minus the colour trace.

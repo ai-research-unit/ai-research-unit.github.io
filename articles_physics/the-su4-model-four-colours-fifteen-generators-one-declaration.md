@@ -25,7 +25,7 @@ $$
 
 **What is absent, and where it went.** No $\mathrm{SU}(2)_L$, no $\mathrm{SU}(2)_R$, no hypercharge, no photon, no $W$, no $Z$, no rank five, no twenty-one, no twenty-four cells. **The successor model — colour, one abelian factor and two weak factors — is reached by a transition at a scale $M_C$, and it is the subject of the next section of the corpus.** This article is the model before that transition, and it is complete on its own terms.
 
-**Where the rest is.** The counts and the arrays are [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html) and [The Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The transition is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). What the weak force is, and why it is not a piece of the fifteen, is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The couplings are [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html).
+**Where the rest is.** The counts and the arrays are [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html) and [The Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The transition is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the weak force is, and why it is not a piece of the fifteen, is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The couplings are [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html).
 
 ## One Group, and the Count of Fifteen
 
@@ -181,7 +181,7 @@ $$
 | $iS_{xy},iS_{xz},iS_{yz}$ | $0$ |
 | the three diagonals | $0$ |
 
-**So the real $\mathfrak{so}(4)$ straddles the transition**: three of its six planes are heavy and three are massless. **A weak array, being half of one and half of the other, is a sum of a heavy and a massless vector** — a coherence, not a particle. That single fact is why the six arrays could never be the weak bosons, and [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html) makes it a theorem.
+**So the real $\mathfrak{so}(4)$ straddles the transition**: three of its six planes are heavy and three are massless. **A weak array, being half of one and half of the other, is a sum of a heavy and a massless vector** — a coherence, not a particle. That single fact is why the six arrays could never be the weak bosons, and [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) makes it a theorem.
 
 **Why the old frame looked right.** Six arrays, six weak generators, six leptoquarks, all inside fifteen alongside nine. **Everything matched except closure, charge and mass**, and the mismatch is the subject of the next section of the corpus.
 
@@ -371,5 +371,5 @@ A theorem about another group is not evidence about this one. The Boyle–Farnsw
 - [The Classification of the Bosons: Nine Massless and Six Massive](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). One name in every cell of the $4\times4$ grid.
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). Every generator printed, and the six $\mathfrak{so}(4)$ planes beside them.
 - [Charge Quantisation From the Fourth Colour: One Trace, One Third](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). Why the corner is forced and the charges are in thirds.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). What the transition does to the fifteen.
-- [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). Why the six arrays are not a factor, and what is.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the transition does to the fifteen.
+- [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Why the six arrays are not a factor, and what is.

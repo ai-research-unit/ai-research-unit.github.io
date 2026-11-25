@@ -1,4 +1,4 @@
-# __The Sextet Put Aside: Six Leptoquarks Above $M_C$ and Why They Are Not Seen__
+# __Six Leptoquarks Above $M_C$: Quantum Numbers, the Mass Ratio, and the Bound From $K_L\to\mu e$__
 
 ## Introduction
 
@@ -25,15 +25,15 @@ M_X\gtrsim4.0\times10^{-5}\ \mathrm{J}=2.5\times10^{2}\ \mathrm{TeV}
 \;}
 $$
 
-**So the six are not destroyed by the transition — they are made heavy by it, and heavy in a way that a flavour-changing decay forbids them to escape.** The word *put aside* is precise: **absent from the asymptotic spectrum, present in the theory, and bounded from below.**
+**So the six are not destroyed by the transition — they are made heavy by it, and heavy in a way that a flavour-changing decay forbids them to escape.** The phrase *integrated out* is precise: **absent from the asymptotic spectrum, present in the theory, and bounded from below.**
 
-**What this article establishes.** The sextet's quantum numbers and its fate; its mass as a function of the one vacuum it eats; the bound that fixes the scale of the transition at two hundred and fifty teraelectronvolts; why proton decay does not bite although $B$ is violated in thirds; and the precise sense in which a state can be *put aside* without being removed.
+**What this article establishes.** The sextet's quantum numbers and its fate; its mass as a function of the one vacuum it eats; the bound that fixes the scale of the transition at two hundred and fifty teraelectronvolts; why proton decay does not bite although $B$ is violated in thirds; and the precise sense in which a state can be integrated out without being removed.
 
-**Not established.** The bound is a coupling statement and its coefficient is uncertain by a factor of a few. The states have not been seen, which is the weakest kind of failure and the most persistent. **And — the point of the article — nothing here produces a weak boson.** The six cannot: the charge theorem of [the companion article](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html) rules it out, and this article records that the sextet's role is to break and to be heavy, not to give birth.
+**Not established.** The bound is a coupling statement and its coefficient is uncertain by a factor of a few. The states have not been seen, which is the weakest kind of failure and the most persistent. **And — the point of the article — nothing here produces a weak boson.** The six cannot: the charge theorem of [the companion article](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) rules it out, and this article records that the sextet's role is to break and to be heavy, not to give birth.
 
-**Where the rest is.** The transition that eats them is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). Their mass relation and their bound in full are §*The Mass, and the Ratio That Comes With It* and §*The Bound: Two Hundred and Fifty Teraelectronvolts* below. Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition hands down instead of them is [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html).**
+**Where the rest is.** The transition that eats them is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Their mass relation and their bound in full are §*The Mass, and the Ratio That Comes With It* and §*The Bound: Two Hundred and Fifty Teraelectronvolts* below. Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition passes down instead of them is [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html).**
 
-## What "Put Aside" Means, in Three Registers
+## What "Integrated Out" Means, in Three Registers
 
 **The phrase is not a metaphor, and it is worth separating what it rules out from what it asserts.**
 
@@ -43,7 +43,7 @@ $$
 | dynamical | the six are longitudinal modes of six massive vectors | they are absorbed and gone |
 | effective | the six can return as virtual quanta in propagators | they are unphysical and can be dropped from every calculation |
 
-**The three are one statement.** A field with mass $M_X$ is absent from the spectrum at energies far below $M_X$ and present in every Green's function; its exchange produces local operators of dimension six and higher, suppressed by powers of $M_X$. **That is what "put aside" means, and it is why the sextet can be heavy without being forgotten.**
+**The three are one statement.** A field with mass $M_X$ is absent from the spectrum at energies far below $M_X$ and present in every Green's function; its exchange produces local operators of dimension six and higher, suppressed by powers of $M_X$. **That is what "integrated out" means, and it is why the sextet can be heavy without being forgotten.**
 
 **The technical name is integrating out**, and it is worth stating the formula once so the later articles can refer to it:
 
@@ -192,7 +192,7 @@ $$
 
 ## Distinctions That Are Easy to Lose
 
-"Put aside" is not "destroyed". The six are absent from the spectrum and present in the propagators; a state that is dropped from every calculation is a different claim and a false one (*What "Put Aside" Means*).
+"Integrated out" is not "destroyed". The six are absent from the spectrum and present in the propagators; a state that is dropped from every calculation is a different claim and a false one (*What "Integrated Out" Means*).
 
 Heavy is not gone. The transition converts six massless directions into six vectors at $32v^{2}$; nothing leaves the theory (*The Mass*).
 
@@ -229,6 +229,6 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 
 ## Further Reading
 
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The transition that eats the six.
-- [What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The theorem behind *What the Sextet Does Not Do*.
-- [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html). What the transition gives the left–right model instead of a recombination.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The transition that eats the six.
+- [The Charge Theorem: The Sextet Cannot Be Recomposed Into the Weak Pair](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The theorem behind *What the Sextet Does Not Do*.
+- [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). What the transition gives the left–right model instead of a recombination.

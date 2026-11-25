@@ -1,4 +1,4 @@
-# __The Breaking of the Primordial Force: The $\langle iD\rangle$ Condensate and the Six Carriers It Makes Heavy__
+# __The Breaking of the Primordial Force: $\mathrm{SU}(4)\to\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ and the Mass of the Six Leptoquarks__
 
 ## Introduction
 
@@ -37,7 +37,7 @@ $$
 
 **What "breaking" means here, stated before it is used.** Two things happen to the six generators at once, and they are the same event seen twice: **they are eaten** (each becomes the longitudinal mode of a now-massive vector) and **they become heavy** ($32v^{2}$ each). Neither is a destruction. **The six are absent from the spectrum below the transition and present in it above; that is what a condensate does to a gauge direction.**
 
-**Where the rest is.** The mass matrix is derived in §*The Mass the Six Acquire*, together with the basis question. The six states are [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html), which owns their mass relation and their experimental bound. The scalar that condenses is the line in the centre, fixed in §*The Condensate*. **What the six cannot do — become the weak bosons — is [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html)**, and it is the reason the next article is about an index rather than about debris.
+**Where the rest is.** The mass matrix is derived in §*The Mass the Six Acquire*, together with the basis question. The six states are [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html), which owns their mass relation and their experimental bound. The scalar that condenses is the line in the centre, fixed in §*The Condensate*. **What the six cannot do — become the weak bosons — is [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html)**, and it is the reason the next article is about an index rather than about debris.
 
 ## The Condensate: One Direction, Chosen From the Carrier
 
@@ -247,7 +247,7 @@ $$
 
 **The sentence to keep.** **The primordial force breaks into colour and one abelian factor, and the price of the breaking is six vectors at $32v^{2}$ and six real scalars absorbed.** Everything else — the rank, the colour, the abelian direction, the vacuum — is unchanged.
 
-**And the sentence that must not be written.** *The leptoquarks are destroyed and their debris becomes the weak force.* The charge theorem of [the companion article](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html) closes that reading: every member of the sextet has $Q=\pm\tfrac23$, so no combination of them reaches $Q=\pm1$. **The breaking produces colour, one abelian factor, and six heavy vectors. It does not produce a weak doublet.**
+**And the sentence that must not be written.** *The leptoquarks are destroyed and their debris becomes the weak force.* The charge theorem of [the companion article](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) closes that reading: every member of the sextet has $Q=\pm\tfrac23$, so no combination of them reaches $Q=\pm1$. **The breaking produces colour, one abelian factor, and six heavy vectors. It does not produce a weak doublet.**
 
 ## The Breaking Is a Statement About the Vacuum, Not About the Theory
 
@@ -317,5 +317,5 @@ The rank is not reduced. Six dimensions leave and the torus stays; that is why t
 
 ## Further Reading
 
-- [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The mass relation, the $K_L\to\mu e$ bound, and the diquark fork.
-- [What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). Why the six cannot become the weak pair.
+- [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The mass relation, the $K_L\to\mu e$ bound, and the diquark fork.
+- [The Charge Theorem: The Sextet Cannot Be Recomposed Into the Weak Pair](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). Why the six cannot become the weak pair.

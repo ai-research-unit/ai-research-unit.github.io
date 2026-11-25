@@ -137,7 +137,7 @@ $$
 32=2\cdot4^{2},
 $$
 
-where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which colour they carry. **The full matrix, its diagonal form and the eigenvalue count are [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html).
+where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which colour they carry. **The full matrix, its diagonal form and the eigenvalue count are [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
 ## The Spectrum: Fifteen Generators, Fifteen Particles
 
@@ -195,7 +195,7 @@ so with the normalisation $\operatorname{tr}(X^{\dagger}Y)=2\delta$, **exactly h
 - $T^{L}_{a}$ and $T^{R}_{a}$ have the **same** mixed half, so $T^{L}_{a}-T^{R}_{a}$ is pure colour and no band direction is owed to either of them;
 - the six composites therefore span only **three** of the six band directions. **A redundant basis reads the six twice; it adds nothing to the fifteen.**
 
-**The qualifier matters, and it is where the corpus changes register.** Inside $\mathfrak{su}(4)$ the composites are not new directions, and the algebra stays fifteen-dimensional. **At $M_C$ they are new fields all the same**, six gauge directions born with the copy index while the six leptoquarks acquire mass — [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). So the count of massless vectors does not fall at the transition: six leave the kernel of $\operatorname{ad}(iD)$ and six arrive beside it.
+**The qualifier matters, and it is where the corpus changes register.** Inside $\mathfrak{su}(4)$ the composites are not new directions, and the algebra stays fifteen-dimensional. **At $M_C$ they are new fields all the same**, six gauge directions born with the copy index while the six leptoquarks acquire mass — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). So the count of massless vectors does not fall at the transition: six leave the kernel of $\operatorname{ad}(iD)$ and six arrive beside it.
 
 **What is left of the sentence, and it is the useful part.** Three of the six are the weak isospin the Standard Model keeps, and three belong to a factor the Standard Model does not keep, one direction of which is the raw material of hypercharge. **That sentence is about the successor, not about the fifteen**, and it is stated in [The Gauge Algebras of the Two Sectors](the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html).
 
@@ -222,7 +222,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 | $T^{R}_{x}$ | $A_{tx}$, $A_{yz}$ | $32v^{2}$, $0$ | no |
 | the other four | the same pattern | $32v^{2}$, $0$ | no |
 
-**A sum of a heavy and a massless state is a coherence, not a particle**, and that is why these six are absent from the spectrum table. **They are the six that the successor will name, and they are not six particles here.** The theorem is [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html); the reading is [The Real $\mathfrak{so}(4)$ Inside the Fifteen](the-su4-model-four-colours-fifteen-generators-one-declaration.html).
+**A sum of a heavy and a massless state is a coherence, not a particle**, and that is why these six are absent from the spectrum table. **They are the six that the successor will name, and they are not six particles here.** The theorem is [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html); the reading is [The Real $\mathfrak{so}(4)$ Inside the Fifteen](the-su4-model-four-colours-fifteen-generators-one-declaration.html).
 
 ## Where the Five Names of the Corner Come From
 
@@ -252,7 +252,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 
 **Six of $\Phi$'s sixteen components are eaten by the sextet.** The condensate is $\langle\Phi\rangle=v\operatorname{diag}(-3,1,1,1)$ in the hermitean matrix, and the six leptoquarks that acquire $32v^{2}$ acquire it by eating the six components that point along their own planes. **The count is forced by the coset**: $15-9=6$, and a condensate in the fundamental would eat seven and leave no $B'$. **An eaten component has no name of its own: it is the third polarisation of the boson that ate it**, which is why the eaten six reappear on the gauge grid and not in the scalar list.
 
-**The other ten components of $\Phi$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the hermitean matrix, and they are the ones the successor's Higgs sector is built from. **[The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html) belongs to the old frame and counts its bidoublets, not this field.** **The corpus's one caveat about this sector is quoted there and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
+**The other ten components of $\Phi$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the hermitean matrix, and they are the ones the successor's Higgs sector is built from. **[The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) belongs to the old frame and counts its bidoublets, not this field.** **The corpus's one caveat about this sector is quoted there and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
 
 **The word to avoid is "the Higgs coupling".** This model leaves the gauge coupling symbolic and predicts none of it, fixes no scalar multiplet, and has no coupling claim in this sector to patch. **A sentence such as "the minimal sector gives $m_d=m_e$" imports the Pati–Salam literature's condition into a model whose ledger refuses it.**
 
@@ -354,6 +354,6 @@ Fifteen is not twenty-one. **The four extra particles of the old classification 
 - [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The group, the declaration, and the real $\mathfrak{so}(4)$ inside the fifteen.
 - [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html). The vocabulary: cell, pair, array, direction.
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). Every generator printed.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). Where $32v^{2}$ on six planes comes from.
-- [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The six, their bound, and why they are heavy rather than gone.
-- [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). Where the four absent particles come from.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Where $32v^{2}$ on six planes comes from.
+- [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The six, their bound, and why they are heavy rather than gone.
+- [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Where the four absent particles come from.

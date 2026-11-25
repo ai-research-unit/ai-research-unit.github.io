@@ -1,10 +1,10 @@
-# __The Three Verbs of the Transition: A Subgroup That Survives, a Complement That Breaks, and an Index That Arrives__
+# __The Centraliser, the Complement, and the Index: Dimension Falls at a Breaking, Rank Rises at an Arrival__
 
 ## Introduction
 
 **The layer.** This article is about the vocabulary of the transition, and its Layer-A content is the two ways a symmetry can appear or disappear when a vacuum is chosen. **It proves one theorem, computes four dimensions, and settles a word.**
 
-**The question.** When the primordial force breaks and two forces are left, in what sense does anything *survive*, in what sense does anything *break*, and in what sense is a force *created*? The three verbs are used loosely everywhere in physics writing; here they are used exactly.
+**The question.** When the primordial force breaks and two forces are left, in what sense does anything *survive*, in what sense does anything *break*, and in what sense is a force *created*? The three words are used loosely everywhere in physics writing; here they are used exactly.
 
 **The answer.**
 
@@ -21,17 +21,17 @@ $$
 
 **So a transition can do two opposite things at once, and they are not two mechanisms.** The same vacuum that removes six directions can announce a two-dimensional space; the first is a breaking by dimension, the second a birth by rank. **The two are compatible because they act on different objects: the first on the algebra, the second on the representation the condensate carries.**
 
-**What this article establishes.** The three-verb grammar and the table of which verb applies where; the obstruction theorem in its sharpest form, with the dimension that makes it irreversible; the reason the same number six appears in both stories and why that coincidence is the trap; and the resolution of the word *emergent*, which the earlier plan used and which this article replaces.
+**What this article establishes.** The three-operation grammar and the table of which operation applies where; the obstruction theorem in its sharpest form, with the dimension that makes it irreversible; the reason the same number six appears in both stories and why that coincidence is the trap; and the resolution of the word *emergent*, which the earlier plan used and which this article replaces.
 
 **Not established.** Anything about dynamics. Whether the index *arrives with* the condensation or is *required by* it is a question this article states and does not answer. **It distinguishes the two readings and refuses to blur them**, which is the most a structural article can do.
 
-**Where the rest is.** The transition is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The mechanism is [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The theorem that forecloses the other route is [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The scales are [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html).
+**Where the rest is.** The transition is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The mechanism is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The theorem that forecloses the other route is [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The scales are [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html).
 
-## Three Verbs, and What Each One Requires
+## The Three Operations, and What Each Requires
 
-**The vocabulary, with the object each verb acts on.**
+**The vocabulary, with the object each operation acts on.**
 
-| verb | object it acts on | what must be true | example in this model |
+| operation | object it acts on | what must be true | example in this model |
 | --- | --- | --- | --- |
 | **survives** | a subalgebra | the vacuum is annihilated by it | colour, $\mathrm{SU}(3)_c$ |
 | **breaks** | a complement | the vacuum does not commute with it | the sextet, $\mathfrak m$ |
@@ -41,7 +41,7 @@ $$
 
 **Arrives is a statement of a different kind.** It does not say which piece of the algebra survives; **it says that the list of factors has grown.** No computation on $\mathfrak{su}(4)$ alone can produce it, because the list of factors before the transition has no weak entries to preserve or destroy.
 
-**The confusion this article removes.** A reader who has only the first two verbs will try to express the third in their terms — "the weak force survives as a subalgebra" or "the weak force emerges from the debris" or "the weak force is the complement of colour". **All three are phrased in a vocabulary that cannot express arrival, and all three are false for that reason before any calculation is done.**
+**The confusion this article removes.** A reader who has only the first two operations will try to express the third in their terms — "the weak force survives as a subalgebra" or "the weak force emerges from the debris" or "the weak force is the complement of colour". **All three are phrased in a vocabulary that cannot express arrival, and all three are false for that reason before any calculation is done.**
 
 ## The Rank Account: Downward Inside, Free Across
 
@@ -162,7 +162,7 @@ $$
 
 **A scalar multiplet can, and only a multiplet can.** A multiplet is specified by its indices, and an index names a space on which a group acts. **When a multiplet appears in the spectrum carrying an index, a factor exists whether or not anyone has written it down**; the transition does not create the group, it makes the index dynamical by making its scalar condense.
 
-**This is the precise content of the phrase "born as a side effect".** The weak force is not manufactured; it was never absent from the *representation theory*, only from the *gauge algebra*. **The transition is the moment the difference stops mattering, because the object carrying the index is the object doing the breaking.**
+**This is the precise content of the phrase "arrives with the index".** The weak force is not manufactured; it was never absent from the *representation theory*, only from the *gauge algebra*. **The transition is the moment the difference stops mattering, because the object carrying the index is the object doing the breaking.**
 
 **And it is why the word is "index" and not "sector".** A new sector would be new fields with new couplings — a new group, a new scale, a new dynamics. An index is a property of a field the model already has. **The whole economy of the construction is in that distinction**, and it is the distinction the earlier version of this work lost when it proposed a confining sector.
 
@@ -219,7 +219,7 @@ $$
 
 ## Distinctions That Are Easy to Lose
 
-Breaking is not shrinking. The group loses six directions and keeps its rank; a breaking that reduced the rank would be a different event (*Three Verbs*).
+Breaking is not shrinking. The group loses six directions and keeps its rank; a breaking that reduced the rank would be a different event (*The Three Operations*).
 
 Arriving is not emerging. Arrival is a property of an index; emergence is a property of a composite spectrum, and this model has no composites (*Where the Word "Emergent" Went Wrong*).
 
@@ -231,7 +231,7 @@ An index is not a sector. The whole economy of the construction is that the weak
 
 ## Summary
 
-**Three verbs, three objects.** A subalgebra *survives* when the vacuum annihilates it, a complement *breaks* when the vacuum does not commute with it, and a factor *arrives* when the transition carries an index naming it. **Only the third raises the rank, and only the third is needed for the weak force.**
+**Three operations, three objects.** A subalgebra *survives* when the vacuum annihilates it, a complement *breaks* when the vacuum does not commute with it, and a factor *arrives* when the transition carries an index naming it. **Only the third raises the rank, and only the third is needed for the weak force.**
 
 **Rank is monotone downwards inside an algebra and additive across factors.** That asymmetry is the entire account: $3\to3$ at the breaking, $3\to5$ at the birth, no step violating the lemma.
 
@@ -257,8 +257,8 @@ An index is not a sector. The whole economy of the construction is that the weak
 
 ## Further Reading
 
-- [The Weak Force Born as a Side Effect: A Condensate Index, Five Ranks From Three](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The construction this article supplies the grammar for.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The surviving and the broken pieces, computed.
-- [What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The second and third closures.
+- [Rank Five From Three: A Condensate Index, Five Ranks From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The construction this article supplies the grammar for.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The surviving and the broken pieces, computed.
+- [The Charge Theorem: The Sextet Cannot Be Recomposed Into the Weak Pair](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The second and third closures.
 - [The Commutation Table of the Fifteen Generators: 441 Entries, 164 Nonzero](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). The brackets that the closure dimensions are read from.
 - [$\mathfrak{su}(4)$ as $\mathfrak{so}(4)$ and Nine More](../articles_internal/structures/structure-SU4-SO4-relations.html). The involution behind the twelve-and-nine split.

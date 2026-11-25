@@ -27,9 +27,9 @@ $$
 
 **What the article establishes.** The criterion and its proof; the table of charges with the scale at which each is lost; the two charges that survive — colour and the electric charge — with the different senses in which they survive; the exact status of $B-L$; the reason $B$ and $L$ separately are not symmetries and why the proton is stable anyway; the charges that are accidents of the field content; and the anomalous combination.
 
-**What the article does not establish.** No dynamics and no decay rate. The proton's stability is treated in [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html), and the sphaleron statement in [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html).
+**What the article does not establish.** No dynamics and no decay rate. The proton's stability is treated in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html), and the sphaleron statement in [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html).
 
-**Where the masses are.** [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html) lists the bosons. This article is the same list read as charges.
+**Where the masses are.** [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) lists the bosons. This article is the same list read as charges.
 
 ## The Criterion
 
@@ -98,7 +98,7 @@ $$
 
 **5.3 Why there is no proton decay.** A proton decay operator needs a mediator that couples two quarks: a diquark. The gauge leptoquarks carry $B-L=\pm\tfrac43$, and a diquark coupling would need $B-L=\pm\tfrac23$, because two quarks have $B-L=\tfrac23$. The charge forbids the vertex, and the model contains no scalar with the right $B-L$ to supply it. The proton's stability is therefore a consequence of the charge of the leptoquarks, not of a baryon-number symmetry.
 
-**5.4 The honest qualification.** "No proton decay" means no dimension-six gauge-mediated decay in the minimal content. Operators of higher dimension, or new scalars, could change it, and the bound on $M_C$ from the operators that do exist is in [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html).
+**5.4 The honest qualification.** "No proton decay" means no dimension-six gauge-mediated decay in the minimal content. Operators of higher dimension, or new scalars, could change it, and the bound on $M_C$ from the operators that do exist is in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
 ## The Charges That Are Merely Accidental
 
@@ -170,8 +170,8 @@ $$
 
 ## Further Reading
 
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The same criterion read as a mass spectrum.
-- [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The $B-L$ of the leptoquarks and the absent diquark channel.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The same criterion read as a mass spectrum.
+- [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The $B-L$ of the leptoquarks and the absent diquark channel.
 - [Charge Quantisation from the Fourth Colour: One Trace, One Third](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). Where the charge lattice comes from.
 - [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html). The anomalous combination and its consequences.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). Colour exact and confined.

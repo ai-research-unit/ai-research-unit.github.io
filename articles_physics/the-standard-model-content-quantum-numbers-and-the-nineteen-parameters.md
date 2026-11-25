@@ -63,7 +63,7 @@ The three couplings are written $g_s$, $g$ and $g_{\mathrm Y}$ throughout the co
 
 - the left-handed quark doublet $Q_L$, a colour triplet, a weak doublet, hypercharge $\tfrac16$;
 - the right-handed up-type quark $u_R$, a colour triplet, a weak singlet, hypercharge $\tfrac23$;
-- the right-handed down-type quark $d_R$, a colour triplet, a weak singlet, hypercharge $-\tfrac13$;
+- the right-passed down-type quark $d_R$, a colour triplet, a weak singlet, hypercharge $-\tfrac13$;
 - the left-handed lepton doublet $L_L$, a colour singlet, a weak doublet, hypercharge $-\tfrac12$;
 - the right-handed charged lepton $e_R$, a colour singlet, a weak singlet, hypercharge $-1$.
 

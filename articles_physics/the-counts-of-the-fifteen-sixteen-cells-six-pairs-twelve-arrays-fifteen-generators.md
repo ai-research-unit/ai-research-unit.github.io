@@ -10,7 +10,7 @@
 
 **What is not here.** The old version of this article carried five counts and two of them were $24$ cells and $21$ arrays — the grids of three factors and the names on a declared copy. **With one group there is one grid and one copy of the fifteen**, so those two counts are gone and the article is shorter. **The subtraction is the model's:** it lost two factors and gained a shorter ledger.
 
-**The articles it leans on** are [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html) for the group and the declaration, [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the arrays, [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the grid, and [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html) for the count the mass spectrum uses.
+**The articles it leans on** are [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html) for the group and the declaration, [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the arrays, [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the grid, and [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) for the count the mass spectrum uses.
 
 ## The Cell: Sixteen Positions
 
@@ -107,7 +107,7 @@ with $(a,b,c)$ cyclic in $(x,y,z)$. **Six names, no new generator, and the brack
 
 **So the sentence to avoid.** "The model has twenty-one generators" is false twice: **it has fifteen generators, and the six extra names are a rotated basis of a six-dimensional subspace of those fifteen.** The correct sentence names what the six are — *the six planes of $\mathfrak{so}(4)$* — and points to the section of the corpus where they are given a physical reading.
 
-**What the six are for.** They are the object the successor model will name. **They are not a factor, they do not commute with the colour block, and three of them are heavy after the transition** — so they are not even a well-defined set of particles. That is the whole content of [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html), and it is why the count of *names* must never be read as a count of *generators*.
+**What the six are for.** They are the object the successor model will name. **They are not a factor, they do not commute with the colour block, and three of them are heavy after the transition** — so they are not even a well-defined set of particles. That is the whole content of [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html), and it is why the count of *names* must never be read as a count of *generators*.
 
 ## The Direction: Fifteen, and Two Bases
 
@@ -188,6 +188,6 @@ Recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\v
 
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). The fifteen arrays printed one to a display, and the three-step construction of the physics basis from the words.
 - [Classification of the Bosons: Sixteen Cells, Fifteen Generators, Nine Massless and Six Massive](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid, the block picture and the ledger of the spectrum.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-makes-heavy.html). The count of generators read as a mass spectrum.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The count of generators read as a mass spectrum.
 - [The Real $\mathfrak{so}(4)$ Inside the Fifteen](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The section that gives the six arrays their reading.
-- [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). Why six names are not six generators, and what the weak force actually is.
+- [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Why six names are not six generators, and what the weak force actually is.
