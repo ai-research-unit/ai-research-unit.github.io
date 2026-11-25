@@ -409,7 +409,7 @@ $$
 
 **They do not boost.** No exponential of the fifteen is a Lorentz boost. The generator of the boost in a plane is the Hermitian $-i$ times the cell, and it is not in the algebra; [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) proves it three ways.
 
-**They do not identify the carrier with spacetime.** The quartet is a formal copy of the carrier, and a rotor of its three-space is a rotor of that three-space. The theorem and its consequence are in [The Four Colours Left–Right Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html), §*The Carrier Is a Copy*.
+**They do not identify the carrier with spacetime.** The quartet is a formal copy of the carrier, and a rotor of its three-space is a rotor of that three-space. The theorem and its consequence are in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html), §*The Carrier Is a Copy*.
 
 **They do not fix a coupling.** The model's one coupling is symbolic, so the numbers in the mass column are coefficients of $v^{2}$ and not predictions in kilograms. [The Coupling Sector](../articles_internal/the-coupling-sector-of-the-four-colours-model.html) records what the model does and does not supply.
 
@@ -485,7 +485,7 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 - [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [$M_2(\mathbb{C})$ Defining Representation](../articles_maths/m2c-defining-representation.html). The four-row and two-row frames.
 - [The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$](../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html). The fifteen in the operator basis, numbered $G_1$ to $G_{15}$.
 - [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). What each array does when exponentiated, and why no boost is in the group.
-- [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html). Every bracket of every array with every other, printed block by block, with the six rules that produce the table.
+- [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). Every bracket of every array with every other, printed block by block, with the six rules that produce the table.
 - [Classification of the Bosons: Sixteen Cells, Fifteen Generators](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid and the ledger of the spectrum.
 - [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). Where the four absent particles come from.
 - [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The declaration, the carrier, and the real $\mathfrak{so}(4)$ inside the fifteen.

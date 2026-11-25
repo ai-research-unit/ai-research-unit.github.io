@@ -235,7 +235,7 @@ $$
 \text{gauge }\mathrm{SU}(2)_R\ \Longrightarrow\ \text{gauge }B-L\ \Longrightarrow\ \xi_{\mathrm{neu},R}\ \text{required}\ \Longrightarrow\ \text{matter is sixteen}.
 $$
 
-**A theory with half the group is free to be odd, and the observed one is odd.** The arithmetic is in [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html), and the count is in the content section below.
+**A theory with half the group is free to be odd, and the observed one is odd.** The arithmetic is in [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation.html), and the count is in the content section below.
 
 **The fourth reason is that the factor is broken, not absent, and hypercharge is its remnant.** The neutral generator of the broken factor survives as a circle and mixes with $B-L$:
 

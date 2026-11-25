@@ -18,7 +18,7 @@ below $M_R$, at equal couplings, at tree level. That is $\rho-1=-2\kappa\kappa'/
 
 ## The Four Blocks
 
-**The split.** The twenty-one generator names of the declared copy are sorted by what the three vacua do to them:
+**The split.** The twenty-one field names of the ledger are sorted by what the three vacua do to them:
 
 | block | generators | colour | charge | scale at which it fills |
 |---|---|---|---|---|
@@ -229,6 +229,8 @@ Fourteen recomputations, at tree level, with $v^{2}=\kappa^{2}+\kappa'^{2}$ and 
 ## Summary
 
 **Four blocks.** Colour $8$, leptoquark $6$, neutral $3$, charged $4$; $8+6+3+4=21$. The split is exact because every vacuum is a colour singlet of definite charge.
+
+**Nine zeros.** Twelve of the twenty-one directions acquire mass — six leptoquarks, four charged, two neutral — so the matrix has rank $12$ and kernel $9$ at the bottom: the eight gluons and the photon. **That is the $9$ of the ledger $15\to15\to12\to9$.**
 
 **One mixing.** The charged block is $\tfrac14\begin{pmatrix}g_L^{2}v^{2}&\pm2g_Lg_R\kappa\kappa'\\ \pm2g_Lg_R\kappa\kappa'&g_R^{2}v^{2}\end{pmatrix}$; its determinant is $(\tfrac14g_Lg_R)^{2}(\kappa^{2}-\kappa'^{2})^{2}$, so a massless charged boson needs $\kappa=\kappa'$ and alignment is a bound.
 

@@ -125,7 +125,7 @@ $$
 | the measured scale | $v=(\sqrt2G_F)^{-1/2}$ | one number, one error bar |
 | the bound on $M_C$ | $K_L\to\mu e$ at tree level, $1/M_X^{2}$ | a floor, no loop suppression |
 | the relation of the two heavy scales | $M_X^{2}/M_{W_R}^{2}=2g_4^{2}/g_R^{2}$ | one bound, two scales |
-| the thresholds | one rank-one vacuum, stabiliser of dimension $12$ | one breaking, $21\to12\to9$: two thresholds |
+| the thresholds | one rank-one vacuum, stabiliser of dimension $12$ | massless vectors $15\to15\to12\to9$: two thresholds |
 | the prediction | $g_4=g_L=g_R$ at $M_C$ | fails for the minimal content |
 
 ## Distinctions That Are Easy to Lose

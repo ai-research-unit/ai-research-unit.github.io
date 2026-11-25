@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The question.** The electromagnetism section of this category is a set of articles whose equations are exact and whose field is one field. The Four Colours Left–Right Model adds a group with three neutral gauge bosons instead of two. What does that addition change in the section, given that Maxwell's equations are not touched?
+**The question.** The electromagnetism section of this category is a set of articles whose equations are exact and whose field is one field. The $\mathrm{SU}(4)$ model adds a group with three neutral gauge bosons instead of two. What does that addition change in the section, given that Maxwell's equations are not touched?
 
 **The answer in one line.**
 

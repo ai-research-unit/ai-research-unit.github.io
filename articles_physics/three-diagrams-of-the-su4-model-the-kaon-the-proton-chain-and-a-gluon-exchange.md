@@ -204,4 +204,4 @@ $$
 - [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The $C_F$, $T_R$, $N_c$ bookkeeping in its own setting.
 - [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html). The contraction that turns a vertex into an amplitude.
 - [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html). The heavy limit used at every leptoquark line.
-- [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html). The closure of the colour block that the gluon diagram relies on.
+- [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). The closure of the colour block that the gluon diagram relies on.

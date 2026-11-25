@@ -147,8 +147,20 @@ LEGACY_COPIES = [
      "articles_physics/quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html"),
     ("articles_physics/the-standard-model-as-the-low-energy-phase.html",
      "articles_physics/the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html"),
-    ("articles_physics/anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html",
+    ("articles_physics/anomalies-and-anomaly-cancellation.html",
      "articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html"),
+    # Three titles in the sections below the breaking named the retired model in
+    # their title. The pages were renamed; the old addresses serve the new pages.
+    ("articles_physics/anomalies-and-anomaly-cancellation.html",
+     "articles_physics/anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html"),
+    ("articles_physics/the-neutral-sector-three-ingredients-rank-two-one-null-direction.html",
+     "articles_physics/the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html"),
+    ("articles_physics/the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html",
+     "articles_physics/the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html"),
+    # The rotors article was renamed to name the matrices it prints. The old
+    # address serves the renamed page.
+    ("articles_physics/construction-of-the-axf-matrices-of-the-rotors-of-the-fifteen-generators.html",
+     "articles_physics/construction-of-the-axf-rotors-of-the-fifteen-generators.html"),
 ]
 
 # One date for the whole site: the moment the last build started. build_diff.py

@@ -1,4 +1,4 @@
-# __Construction of the AXF Rotors of the Fifteen Generators: One Closed Form per Array, and Where the Half Angle Comes From__
+# __Construction of the AXF Matrices of the Rotors of the Fifteen Generators: One Closed Form per Array, and Where the Half Angle Comes From__
 
 ## Introduction
 
@@ -182,13 +182,11 @@ $$
 \exp\bigl(\theta T^{L}_{x}\bigr)=\mathbb{1}\cos\frac{\theta}{2}+2\,T^{L}_{x}\sin\frac{\theta}{2}
 =
 \begin{pmatrix}
-c&-s&0&0\\
-s&c&0&0\\
-0&0&c&-s\\
-0&0&s&c
-\end{pmatrix},
-\qquad
-c=\cos\frac{\theta}{2},\ s=\sin\frac{\theta}{2},
+\cos\frac{\theta}{2}&-\sin\frac{\theta}{2}&0&0\\
+\sin\frac{\theta}{2}&\cos\frac{\theta}{2}&0&0\\
+0&0&\cos\frac{\theta}{2}&-\sin\frac{\theta}{2}\\
+0&0&\sin\frac{\theta}{2}&\cos\frac{\theta}{2}
+\end{pmatrix}.
 $$
 
 **and the two $2\times2$ blocks are identical**, which is the matrix form of "one generator, two planes, the same angle". The $tx$ plane and the $yz$ plane are turned together. **The right-handed partner turns the same $tx$ plane and the opposite $yz$ plane**,
@@ -196,10 +194,10 @@ $$
 $$
 \exp\bigl(\theta T^{R}_{x}\bigr)=
 \begin{pmatrix}
-c&-s&0&0\\
-s&c&0&0\\
-0&0&c&s\\
-0&0&-s&c
+\cos\frac{\theta}{2}&-\sin\frac{\theta}{2}&0&0\\
+\sin\frac{\theta}{2}&\cos\frac{\theta}{2}&0&0\\
+0&0&\cos\frac{\theta}{2}&\sin\frac{\theta}{2}\\
+0&0&-\sin\frac{\theta}{2}&\cos\frac{\theta}{2}
 \end{pmatrix},
 $$
 
@@ -321,7 +319,6 @@ $$
 | $G_{a}$ | One of the fifteen arrays, anti-hermitian |
 | $\omega$ | The frequency in $G^{2}=-\omega^{2}P$; $1$ or $\tfrac12$ or, for the corner, $3$ and $1$ |
 | $P$ | The projector in $G^{2}=-\omega^{2}P$ |
-| $c,s$ | $\cos\frac{\theta}{2}$ and $\sin\frac{\theta}{2}$ in the weak rotors |
 | $T^{L}_{a},T^{R}_{a}$ | $\tfrac12L_{\vec e_{a}}$ and $\tfrac12R_{\vec e_{a}}$ |
 | $A_{ta},A_{bc}$ | The real planes, which are minus the sum and minus the difference of weak pairs |
 | $iS_{jk}$ | The imaginary plane |
@@ -334,6 +331,7 @@ $$
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). The arrays this article exponentiates, in the same order and the same basis.
 - [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). Which space each rotor turns, and the three proofs that none of them is a boost.
 - [The Relation between $\mathfrak{su}(4)$ and $\mathfrak{so}(4)$: the Twelve Real Arrays and the Nine Complex Ones](../articles_internal/structures/structure-SU4-SO4-relations.html). Why the order of this article is the split it is, and why the pairing $\{A_{jk},iS_{jk}\}$ is not a substitute.
+- [The Fifteen AXF Matrices of the Boson Rotors in Detail](the-15-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role.html). The same closed forms read one boson at a time: the entries, the fixed lines, and the role of each matrix.
 - [The Fifteen AXF Matrices of the Bosons in Detail](the-15-axf-matrices-of-the-bosons-in-detail.html). One subsection per array, with the printed matrix and the spectrum.
 - [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The corner's exponential and the relative phase $N\theta$ that this article's display reproduces.
 - [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html). Names against directions, which is the count this article's rank computation confirms.

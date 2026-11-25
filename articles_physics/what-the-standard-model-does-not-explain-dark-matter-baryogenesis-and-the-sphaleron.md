@@ -212,7 +212,7 @@ Baryogenesis in the Standard Model therefore requires new physics that violates 
 | Leptogenesis | Yes, via Majorana neutrino masses | $1.6\times10^{-1}$–$1.6\times10^{2}$ J |
 | Affleck–Dine | Yes, via a flat direction | $\gtrsim1.6\times10^{-7}$ J |
 
-The framework's contribution is the identity itself. [The anomalies article](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html) derives the anomalous divergence from the biquaternionic path integral, and [the Fujikawa article](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) constructs it by the measure's non-invariance under the anomalous transformation. So the framework supplies the *mechanism of the anomaly* — the reason a classical conservation law fails — and therefore supplies the only ingredient of baryogenesis that the model has. What it does not supply is any reason for $B-L$ to be violated, since it has no leptoquark and no Majorana mass of its own.
+The framework's contribution is the identity itself. [The anomalies article](anomalies-and-anomaly-cancellation.html) derives the anomalous divergence from the biquaternionic path integral, and [the Fujikawa article](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) constructs it by the measure's non-invariance under the anomalous transformation. So the framework supplies the *mechanism of the anomaly* — the reason a classical conservation law fails — and therefore supplies the only ingredient of baryogenesis that the model has. What it does not supply is any reason for $B-L$ to be violated, since it has no leptoquark and no Majorana mass of its own.
 
 The link to [the Majorana article](the-majorana-equation-in-biquaternionic-form.html) is direct: the Majorana mass term violates $L$ by two units, hence $B-L$ by two, and is the only $B-L$ violation the corpus can build. So the framework's one available baryogenesis route is leptogenesis, and it is available because a different article needed the Majorana condition for a different reason. That is the same pattern as the axion.
 
@@ -324,7 +324,7 @@ GUT baryogenesis needs a leptoquark, which the ceiling forbids. Affleck–Dine n
 
 The framework supplies four items.
 
-- The anomaly identity. The reason $B$ and $L$ are not conserved — [the anomalies](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html) and [Fujikawa](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) articles derive the non-invariance of the measure, which is the whole content of $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} j_{B,\imath}\propto F\tilde F$.
+- The anomaly identity. The reason $B$ and $L$ are not conserved — [the anomalies](anomalies-and-anomaly-cancellation.html) and [Fujikawa](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) articles derive the non-invariance of the measure, which is the whole content of $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath} j_{B,\imath}\propto F\tilde F$.
 - The quantisation. [The $\theta$-vacuum article](the-theta-vacuum-in-biquaternionic-form.html) supplies the integer winding number from the biquaternion index, which is what makes $\delta B=3$ discrete.
 - The instanton gas. [The semiclassical article](the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html) supplies the Euclidean sum over sectors, which gives the $\theta$ dependence of the vacuum energy.
 - The Majorana condition, which is the only $B-L$ violation available here, and therefore the only route to leptogenesis.
@@ -392,7 +392,7 @@ The one route it can build is leptogenesis, with $B=28L/79$, and that route exis
 - [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html). The integer winding number, the central phase, and why $\delta B$ is quantised.
 - [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html). The self-dual object the framework does host, and the reason the sphaleron is not one.
 - [The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form](the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html). The Euclidean sum that gives the $\theta$ dependence of the vacuum energy.
-- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html). The anomalous divergence, which is the only Sakharov ingredient the model has.
+- [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html). The anomalous divergence, which is the only Sakharov ingredient the model has.
 - [The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html). The measure's non-invariance, derived.
 - [The ADHM Construction and Biquaternion Instanton Data](the-adhm-construction-and-biquaternion-instanton-data.html). Why the topological data is quaternionic linear data, and why a non-self-dual saddle point has none.
 - [The Majorana Equation in Biquaternionic Form](the-majorana-equation-in-biquaternionic-form.html). The only $B-L$ violation the corpus can build, and hence the only route to leptogenesis.

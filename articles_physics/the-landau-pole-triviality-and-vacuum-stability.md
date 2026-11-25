@@ -417,4 +417,4 @@ The framework supplies one structural result — the sign of $b_1$ — one regul
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Why neither a GUT nor a composite Higgs can be built here.
 - [The Path Integral in Biquaternionic Form](the-path-integral-in-biquaternionic-form.html). Why a bounce cannot be computed inside the algebra.
 - [The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form](the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html). The object whose quartic changes sign, in the framework's language.
-- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html). The conditions on the matter content that the $\beta$ coefficients inherit.
+- [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html). The conditions on the matter content that the $\beta$ coefficients inherit.

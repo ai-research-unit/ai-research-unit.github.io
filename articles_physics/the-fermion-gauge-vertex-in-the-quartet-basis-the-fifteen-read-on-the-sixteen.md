@@ -228,4 +228,4 @@ $$
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The sixteen, the $B-L$ column, and the two copies.
 - [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). Why the corner is $-3$ and the three are $+1$.
 - [Lepton Flavour in the Four Colours Model](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The same prohibition, from the flavour side.
-- [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html). The $80$ nonzero brackets this article quotes.
+- [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). The $80$ nonzero brackets this article quotes.

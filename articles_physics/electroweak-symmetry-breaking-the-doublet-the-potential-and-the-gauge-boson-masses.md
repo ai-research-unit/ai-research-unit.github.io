@@ -44,7 +44,7 @@ $$
 Y_{\mathrm{hch}}=\tfrac12 ,
 $$
 
-which is four real fields. The hypercharge is not free here: it is fixed by the invariance of the Yukawa couplings, and [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) derives it from $-Y_{L_L}+Y_{\mathrm{hch}}+Y_{e_R}=0$, that is $Y_{\mathrm{hch}}=Y_{L_L}-Y_{e_R}=+\tfrac12$.
+which is four real fields. The hypercharge is not free here: it is fixed by the invariance of the Yukawa couplings, and [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) derives it from $-Y_{L_L}+Y_{\mathrm{hch}}+Y_{e_R}=0$, that is $Y_{\mathrm{hch}}=Y_{L_L}-Y_{e_R}=+\tfrac12$.
 
 The same object in the companion articles. [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) writes this doublet as $\xi_{\mathrm{scl}}$ with components ${\xi_{\mathrm{scl}}}^\pm$ and ${\xi_{\mathrm{scl}}}^0$, and [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) writes the abelian scalar as $\tilde\Xi=\xi\,e_t$. The three names denote the same object at three levels of generality, and this article uses $\omicron_{\mathrm{pot}}$ throughout.
 
@@ -472,7 +472,7 @@ The distance to the electroweak case is exactly three items. Stated as a list, b
 
 **The singlet cannot break the group, and this is the sharpest statement.** A field in the centre commutes with every element of the algebra, so it is annihilated by the $SU(2)$ action. A vacuum invariant under a group does not break it. The framework's scalar gives a mass to the abelian factor and to nothing else, and no amount of rewriting changes that: the obstruction is the representation, not the mechanism.
 
-What the algebra does supply. A two-dimensional module, since $\mathbb{B}\cong M_2(\mathbb{C})$ acts on $\mathbb{C}^2$. A doublet-shaped object is therefore available. What is missing is the assignment of the two factors' actions on it, which is the content of [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) and which that article shows is imported.
+What the algebra does supply. A two-dimensional module, since $\mathbb{B}\cong M_2(\mathbb{C})$ acts on $\mathbb{C}^2$. A doublet-shaped object is therefore available. What is missing is the assignment of the two factors' actions on it, which is the content of [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) and which that article shows is imported.
 
 The one place the framework's formula matches. The abelian mass formula $M_A=\kappa v$ and the standard $M_W=gv/2$ are the same formula with $\kappa=g/2$. The factor of one half is the isospin of the scalar and not a property of the vector, and [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) records the identification. It is a genuine match of structure, and it is a match of one number with a reinterpreted charge, not a derivation.
 
@@ -517,7 +517,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 
 ## Further Reading
 
-- [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Why $Y_{\mathrm{hch}}=\tfrac12$, which this article takes as given.
+- [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Why $Y_{\mathrm{hch}}=\tfrac12$, which this article takes as given.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The scalar sector in the assembled sum, and the sign rule that fixes the kinetic term.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html). The abelian case in full, whose gap this article fills for the electroweak group.
 - [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The mixing and the masses, here derived from the mass matrix.

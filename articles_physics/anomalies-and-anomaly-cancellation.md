@@ -1,4 +1,4 @@
-# __Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None__
+# __Anomalies and Anomaly Cancellation: Four Conditions Become None__
 
 ## Introduction
 

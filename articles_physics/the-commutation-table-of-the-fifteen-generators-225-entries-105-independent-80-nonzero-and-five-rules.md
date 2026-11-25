@@ -1,10 +1,10 @@
-# __The Commutation Table of the Fifteen Generators: 225 Entries, 120 Independent, 80 Nonzero, and Five Rules That Produce Them All__
+# __The Commutation Table of the Fifteen Generators: 225 Entries, 105 Independent, 80 Nonzero, and Five Rules That Produce Them All__
 
 ## Introduction
 
 **The question.** The group block of the corpus quotes one bracket where it needs one bracket. That is enough to prove a point about a sector, and it is not enough to see the object every sector sits on: the bracket of every generator with every other generator.
 
-**The answer, in numbers.** The fifteen arrays give $15\times15=225$ ordered brackets. Antisymmetry leaves $120$ independent ones. Of those, $80$ are nonzero and $40$ vanish. **Every right-hand side is a combination of the same fifteen arrays**, so the table closes on itself and needs no symbol the algebra does not already have.
+**The answer, in numbers.** The fifteen arrays give $15\times15=225$ ordered brackets. The fifteen brackets of an array with itself vanish, and antisymmetry pairs the remaining $210$, leaving $105$ independent brackets. Of those, $80$ are nonzero and $25$ vanish. **Counting the fifteen self-brackets as well, $120$ entries are distinct up to sign and $40$ of the $225$ entries are zero.** **Every right-hand side is a combination of the same fifteen arrays**, so the table closes on itself and needs no symbol the algebra does not already have.
 
 **The answer, in structure.** Five rules produce all $80$ nonzero entries. Each is one line of matrix algebra. Together they are a presentation of the algebra in the fifteen arrays.
 
@@ -30,7 +30,7 @@ No other convention enters, and no generator is rescaled.
 
 **The three diagonals are one family.** They are the diagonal generators of $\mathfrak{su}(4)$, and their eigenvalues are all that a bracket with a diagonal reads.
 
-**Only one order is printed.** Since $[Y,X]=-[X,Y]$, the $225$ entries are $120$ entries and their negatives, and every table below lists a pair once, with the two arrays in the order of the block list above.
+**Only one order is printed.** Since $[Y,X]=-[X,Y]$, the $210$ off-diagonal brackets are $105$ brackets and their negatives, and every table below lists a pair once, with the two arrays in the order of the block list above. The fifteen self-brackets are not printed at all: they are zero by antisymmetry, and they are counted in §*The Forty Zeros*.
 
 **The coefficients are few.** In the $225$ entries exactly ten signed values occur:
 $$
@@ -292,8 +292,8 @@ $$
 | the five rules, against the $225$ entries | $105$ independent pairs, $0$ disagreements |
 | antisymmetry | holds on all $225$ |
 | the Jacobi identity | holds identically: the bracket is a commutator of matrices |
-| nonzero entries | $80$ of $120$ |
-| zero entries | $40$, in the seven families above |
+| nonzero entries | $80$ of the $105$ independent brackets |
+| zero entries | $25$ off-diagonal, plus the $15$ self-brackets: $40$ of the $225$ entries, in the seven families above |
 | coefficient set | ten signed values, five magnitudes |
 | term count | $76$ one-term, $1$ two-term, $3$ three-term |
 | nonzero per block | $12+12+30+3+5+5+3+5+5+0+0+0=80$ |
@@ -305,7 +305,7 @@ $$
 
 ## Summary
 
-**Fifteen arrays, $225$ ordered brackets, $120$ independent, $80$ nonzero, $40$ zero.** Five rules produce all of them:
+**Fifteen arrays, $225$ ordered brackets, $105$ independent, $80$ nonzero, $25$ of the zeros off the diagonal and $40$ in all.** Five rules produce all of them:
 $$
 [A_{jk},A_{kl}]=A_{jl},
 \qquad

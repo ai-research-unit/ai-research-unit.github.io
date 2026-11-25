@@ -193,7 +193,9 @@ $$
 so with the normalisation $\operatorname{tr}(X^{\dagger}Y)=2\delta$, **exactly half of its norm sits in $\mathfrak{su}(3)$ and half in the mixed band**. Two consequences follow, and both are exact:
 
 - $T^{L}_{a}$ and $T^{R}_{a}$ have the **same** mixed half, so $T^{L}_{a}-T^{R}_{a}$ is pure colour and no band direction is owed to either of them;
-- the six composites therefore span only **three** of the six band directions. **A redundant basis reads the six twice; it does not add six generators.**
+- the six composites therefore span only **three** of the six band directions. **A redundant basis reads the six twice; it adds nothing to the fifteen.**
+
+**The qualifier matters, and it is where the corpus changes register.** Inside $\mathfrak{su}(4)$ the composites are not new directions, and the algebra stays fifteen-dimensional. **At $M_C$ they are new fields all the same**, six gauge directions born with the copy index while the six leptoquarks acquire mass — [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). So the count of massless vectors does not fall at the transition: six leave the kernel of $\operatorname{ad}(iD)$ and six arrive beside it.
 
 **What is left of the sentence, and it is the useful part.** Three of the six are the weak isospin the Standard Model keeps, and three belong to a factor the Standard Model does not keep, one direction of which is the raw material of hypercharge. **That sentence is about the successor, not about the fifteen**, and it is stated in [The Gauge Algebras of the Two Sectors](the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html).
 
@@ -308,7 +310,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 | the heavy count as the complement | $15-9$ | $6$ |
 | the six $\mathfrak{so}(4)$ arrays on the grid | each half mixed, half colour | no cells |
 
-**The neutral sector's checks are not here, because the neutral sector is not here.** The mixing of three neutral directions, its rank two and its null direction belong to [The Neutral Sector](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html), which is a statement about the successor.
+**The neutral sector's checks are not here, because the neutral sector is not here.** The mixing of three neutral directions, its rank two and its null direction belong to [The Neutral Sector](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html), which is a statement about the successor.
 
 ## Distinctions That Are Easy to Lose
 

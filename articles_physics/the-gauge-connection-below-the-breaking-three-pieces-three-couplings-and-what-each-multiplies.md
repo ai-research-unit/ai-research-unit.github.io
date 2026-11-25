@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The question.** The model has one covariant derivative at the top and three couplings. After the chain, how many pieces does that derivative have, what does each piece multiply, and are the three low-energy couplings independent?
+**The question.** The model has one covariant derivative at the top and one coupling. After the chain, how many pieces does that derivative have, what does each piece multiply, and are the three low-energy couplings independent?
 
 **The answer.**
 
@@ -31,7 +31,7 @@ g=g_L,
 \;}
 $$
 
-**The single idea.** The covariant derivative is not rewritten; it is *restricted*. Above the breaking it carries twenty-one connections and three couplings, one per factor. Below the breaking it carries twelve connections and the same three couplings, because the couplings belong to the factors and the factors do not change — only the basis in which the connections are counted does. Hypercharge's coupling is then not a fourth coupling but a combination of two of them, and the factor of two in that combination is the same $\tfrac12$ that appears in $Y=T_{3R}+\tfrac12(B-L)$.
+**The single idea.** The covariant derivative is not rewritten; it is *restricted*. Above $M_C$ it carries fifteen connections and one coupling, because there is one group. Below $M_R$ it carries twelve connections and three couplings, because the factors the chain leaves carry one each; below $M_W$, nine of those connections are massless and two couplings act on them. **The couplings belong to the factors, and the factors change exactly once: at $M_C$, where one group becomes four.** Hypercharge's coupling is then not a fourth coupling but a combination of two of them, and the factor of two in that combination is the same $\tfrac12$ that appears in $Y=T_{3R}+\tfrac12(B-L)$.
 
 **What the article establishes.** The derivative at the top; its restriction at each step; the table of what each surviving piece multiplies; the two matching relations with their factors of two; the reason there are three couplings and not four; and where the heavy pieces go when they are removed.
 
@@ -41,23 +41,20 @@ $$
 
 ## One Derivative at the Top
 
-**Twenty-one connections, three couplings.** The count is the first thing to get right.
+**Fifteen connections, one coupling.** The count is the first thing to get right.
 
-**1.1 The object.** Above every scale,
+**1.1 The object.** Above $M_C$ there is one group and one derivative,
 
 $$
-D_\mu=\partial_\mu
--i g_4\,A^{A}_{\mu}T^{A}
--i g_L\,W^{a}_{\mu}\frac{\tau^{a}}{2}
--i g_R\,V^{a}_{\mu}\frac{\sigma^{a}}{2},
-\qquad A=1,\dots,15,\quad a=1,2,3,
+D_\mu=\partial_\mu-i g_4\,A^{A}_{\mu}T^{A},
+\qquad A=1,\dots,15,
 $$
 
-with $T^{A}$ the fifteen $\mathrm{SU}(4)$ generators, $\tau^{a}$ the three left and $\sigma^{a}$ the three right.
+with $T^{A}$ the fifteen anti-Hermitian generators of $\mathfrak{su}(4)$. **No $W$, no $V$, no $\tau^{a}$, no $\sigma^{a}$: none of those exists above the transition.**
 
-**1.2 Twenty-one and three.** Twenty-one connections, because there are twenty-one generators. Three couplings, because there are three simple factors: $\mathrm{SU}(4)$ carries one, and the two $\mathrm{SU}(2)$s carry one each. A simple group has one coupling by definition — the generators of $\mathrm{SU}(4)$ cannot carry different couplings without breaking the invariance that makes them a basis of one algebra.
+**1.2 Fifteen and one.** Fifteen connections, because there are fifteen generators. One coupling, because there is one simple factor. A simple group has one coupling by definition — the generators of $\mathrm{SU}(4)$ cannot carry different couplings without breaking the invariance that makes them a basis of one algebra.
 
-**1.3 Why the split into "twenty-one and three" matters.** Any statement of the form "the leptoquark coupling is different from the gluon coupling above $M_C$" is false, because both are $g_4$. The two couplings separate only below $M_C$, and only because $\mathrm{SU}(4)$ is no longer a symmetry.
+**1.3 Why "fifteen and one" matters.** Any statement that separates couplings above $M_C$ — "the leptoquark coupling is different from the gluon coupling", "the weak coupling is a second parameter" — is false, because there is one parameter. **Below $M_C$ the four factors are not equal in status.** Colour and $B-L$ are subalgebras of the algebra that carried $g_4$, so their couplings are $g_4$ by inheritance, exactly. The weak pair is not a subalgebra: it is born at $M_C$ with the index, and its two couplings are free parameters whose equality to $g_4$ is the corpus's threshold assumption and not a derivation — [The Handover at $M_C$](the-handover-at-m-c-what-the-transition-hands-down-and-where-the-masses-come-from.html) says where that assumption fails.
 
 **1.4 The reality condition.** Each connection is real, each generator anti-Hermitian in the physicists' convention or Hermitian with the $i$ absorbed, and the whole expression is anti-Hermitian: $D^\dagger=-D$. That is what makes $D_\mu$ a derivative rather than a field, and it is the reason the algebra's anti-Hermitian subspace is the one that carries the connection.
 
@@ -73,6 +70,8 @@ g_4\,G^{a}T^{a}+g_4\,B\,T^{15}+g_4\left(X^{a}_{\mu}\,T^{a}_{t}+\text{h.c.}\right
 $$
 
 where $T^{a}_{t}$ are the six mixed generators. The colour piece and the $B-L$ piece are the residual ones; the mixed piece is heavy. Note that all three carry the same $g_4$: the split is a split of generators, not of couplings.
+
+**The weak pieces are not a split of the fifteen.** They are new connections, and they appear because the two copies of $\mathrm{SU}(2)$ arrive at $M_C$ with the index that the breaking object carries — [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). **So the derivative below $M_C$ is the restriction of the one above it plus six connections whose couplings are not inherited:** $g_L$ and $g_R$ are free parameters, matched to $g_4$ only by the threshold assumption. The six mixed generators $T^{a}_{t}$ are a different object: they are inside the fifteen, they are the ones that became heavy, and their coupling is $g_4$ like the rest.
 
 **2.2 After $M_R$.** The right triplet splits into the surviving $\mathrm{U}(1)_R$ and two heavy directions, and the neutral fields mix:
 
@@ -116,7 +115,7 @@ with $Q=T_{3L}+Y$ and $A$ the photon. The angle here is $\theta_W$.
 
 **Where the factors of two come from.** This is the section that most often goes wrong, and the factor has a visible origin.
 
-**4.1 The first relation is an equality.** $g_s=g_4$ and $g=g_L$ at the matching scale, because the residual $\mathfrak{su}(3)$ and $\mathfrak{su}(2)_L$ are subalgebras of the factors that carried the couplings. No normalisation enters: the generators are the same generators.
+**4.1 The one relation that is an equality.** $g_s=g_{B-L}=g_4$ at the matching scale, because $\mathfrak{su}(3)$ and the $B-L$ direction are subalgebras of $\mathfrak{su}(4)$: the generators are literally the same generators, so no normalisation enters. **The weak pair is not in this class.** $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$ are not subalgebras of $\mathrm{SU}(4)$ — they arrive with the index — so $g=g_L$ below $M_C$ names a free parameter, and its equality to $g_4$ is the threshold assumption of §4.5.
 
 **4.2 The second relation is a combination.** Hypercharge is $Y=T_{3R}+\tfrac12(B-L)$, so the field $B'$ is a unit vector in the plane of the two neutral fields, and its component along each is fixed by the coupling:
 
@@ -158,16 +157,16 @@ and the angle is a rotation of the basis, not a coupling. The corpus's statement
 
 **5.1 The relation.** $g_Y$ is determined by $g_R$ and $g_{B-L}$ at the matching scale, so one coupling is not carried below $M_R$: the low-energy theory has three where the intermediate theory had four.
 
-**5.2 The counting statement.** The count of independent couplings runs $3\to4\to3\to2$:
+**5.2 The counting statement.** The count of independent couplings runs $1\to4\to3\to2$:
 
 | stage | factors | independent couplings |
 |---|---|---|
-| above $M_C$ | $\mathrm{SU}(4)$, $\mathrm{SU}(2)_L$, $\mathrm{SU}(2)_R$ | $g_4$, $g_L$, $g_R$ |
+| above $M_C$ | $\mathrm{SU}(4)$ | $g_4$ |
 | between $M_C$ and $M_R$ | $\mathrm{SU}(3)$, $\mathrm{U}(1)_{B-L}$, $\mathrm{SU}(2)_L$, $\mathrm{SU}(2)_R$ | $g_s$, $g_{B-L}$, $g_L$, $g_R$ |
 | between $M_R$ and $M_W$ | $\mathrm{SU}(3)$, $\mathrm{SU}(2)_L$, $\mathrm{U}(1)_Y$ | $g_s$, $g$, $g_Y$ |
 | below $M_W$ | $\mathrm{SU}(3)$, $\mathrm{U}(1)_{\mathrm{em}}$ | $g_s$, $e$ |
 
-The count rises at $M_C$ and falls twice, and the rise is the point: one factor splitting into two leaves two couplings where there was one, even though they are equal at the threshold. A counting that assumes one fewer coupling per step gets the first step wrong, not the last.
+The count jumps at $M_C$ and falls twice, and the jump is the point: one factor becoming four leaves four couplings where there was one. **They are four values at the threshold, not four independent inputs**, and two of them — $g_s$ and $g_{B-L}$ — are fixed by inheritance rather than assumed. A counting that reads the four factors back above $M_C$ gets the first step wrong, and gets it wrong in the direction of more parameters than the model has.
 
 **5.3 The consequence for a fit.** A fit to the low-energy data determines $g$ and $g_Y$; the model then predicts $g_R$ and $g_{B-L}$ through the relation, given the scale. That prediction is the model's content, and it is the one the running tests.
 
@@ -189,8 +188,8 @@ The count rises at $M_C$ and falls twice, and the rise is the point: one factor 
 
 | check | computation | result |
 |---|---|---|
-| the connections | $15+3+3$ above, $8+1+3+3$ after $M_C$ | $21$, then $15$ |
-| the couplings | one per simple factor | $3$ above, $4$ at the intermediate stage counting $B-L$ |
+| the connections | $15$ above, $8+1+3+3$ after $M_C$ | $15$, then $15$ |
+| the couplings | one per simple factor | $1$ above; $4$ below $M_C$; $3$ below $M_R$; $2$ below $M_W$ |
 | the orthogonality | $A_R^{2}+A_{B-L}^{2}=B'^{2}$ | gives $g_Y^{-2}=g_R^{-2}+(2g_{B-L})^{-2}$ |
 | the electromagnetic limit | $1/e^{2}=1/g^{2}+1/g_Y^{2}$ | reproduces $\tan\theta_W=g_Y/g$ |
 | the chirality | $L$ piece absent on right singlets | the $R$ block has no $L$ index |
@@ -200,7 +199,7 @@ The count rises at $M_C$ and falls twice, and the rise is the point: one factor 
 
 **Three pairs.**
 
-**7.1 A coupling and a connection.** Twenty-one connections, three couplings. Counting connections and calling the result the number of couplings is the commonest error in the subject.
+**7.1 A coupling and a connection.** Fifteen connections, one coupling. Counting connections and calling the result the number of couplings is the commonest error in the subject, and it is the error the old frame made when it counted twenty-one.
 
 **7.2 The mixing angle and a coupling.** $\theta_W$ is a rotation of the neutral basis, fixed by the ratio of two couplings. It is not a third coupling and it does not run independently.
 
@@ -208,11 +207,11 @@ The count rises at $M_C$ and falls twice, and the rise is the point: one factor 
 
 ## Summary
 
-**One derivative.** Twenty-one connections, three couplings at the top; three pieces and three couplings at the bottom.
+**One derivative.** Fifteen connections and one coupling at the top; twelve connections, three pieces and three couplings below $M_R$; nine massless connections and two couplings below $M_W$.
 
 **The three pieces.** Colour on the triplet, weak isospin on the left doublet, hypercharge on the number $Y$.
 
-**The two relations.** $g_s=g_4$, $g=g_L$ by identity of generators; $g_Y^{-2}=g_R^{-2}+(2g_{B-L})^{-2}$ by orthogonality of fields.
+**The two relations.** $g_s=g_{B-L}=g_4$ by identity of generators; $g_Y^{-2}=g_R^{-2}+(2g_{B-L})^{-2}$ by orthogonality of fields. **And one assumption:** $g_4=g_L=g_R$ at $M_C$, which the running tests.
 
 **The angle.** $\tan\theta_W=g_Y/g$, a rotation and not a coupling.
 

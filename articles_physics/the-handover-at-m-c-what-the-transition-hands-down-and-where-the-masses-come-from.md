@@ -18,8 +18,8 @@ $$
 
 $$
 \boxed{\;
-\text{handed down: }\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R
-\text{ and nine massless vectors} ;
+\text{handed down: }\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R,
+\text{ rank }5,\text{ and fifteen massless vectors} ;
 \;}
 $$
 
@@ -38,13 +38,13 @@ $$
 | item | value at the handover | status |
 | --- | --- | --- |
 | the group | $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | **exact**, rank $5$, dimension $15$ |
-| the massless vectors | eight gluons, $B'$ — nine in all | **exact**, the kernel of $\operatorname{ad}(iD)$ |
+| the massless vectors | fifteen: the nine of $\ker\operatorname{ad}(iD)$, and the six weak directions born massless | **exact** |
 | the six heavy vectors | $M_X^{2}=\tfrac12g_4^{2}v_R^{2}$ | a bound, not a number |
 | the couplings | $g_3$, $g_{B-L}$, $g_L$, $g_R$ | matched at $M_C$; the matching is a separate ledger |
 
 **The group is the item that matters, and it is exact.** It is not an approximation and not a limit: **below $M_C$ the four factors are the gauge group of the theory, and above $M_C$ they are not a group at all** — above it there is one simple factor, and the four are a decomposition of the adjoint.
 
-**The nine massless vectors are exact in the same sense.** They are the centraliser of the vacuum, computed once in [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html), and nothing downstream moves them.
+**The fifteen massless vectors are exact in the same sense, and the fifteen is a sum of two kinds.** Nine are the centraliser of the vacuum, computed once in [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html): eight gluons and $B'$. Six are the weak directions, and they are massless because they are born unbroken at the transition: a generator that no vacuum has yet selected has no mass to acquire. **So the count does not fall at $M_C$; it is the dimension of the unbroken group on each side, $15$ and $8+1+3+3=15$.**
 
 **The six are a bound and not a value**, because $v_R$ is not fixed by the model; the bound is $250$ TeV and it is what makes the transition scale a measured quantity rather than a parameter.
 
@@ -129,7 +129,7 @@ $$
 
 **The weak group is not handed down; it is born at the handover.** Below $M_C$ it exists; above $M_C$ it does not. **So the handover is the moment of birth and not a moment of transfer**, and the word *handover* is used for the spectrum and the colour factor, which are transferred, and not for the weak factors, which arrive.
 
-**The photon is not handed down; it is a mixture formed later.** At $M_C$ there is a $B'$ and two weak Cartans; **the photon is the null direction of a $3\times3$ matrix built from two later vacua**, and it does not exist as a separate factor at any point. The corpus computes it in [The Neutral Sector](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html), and the migration does not touch that calculation.
+**The photon is not handed down; it is a mixture formed later.** At $M_C$ there is a $B'$ and two weak Cartans; **the photon is the null direction of a $3\times3$ matrix built from two later vacua**, and it does not exist as a separate factor at any point. The corpus computes it in [The Neutral Sector](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html), and the migration does not touch that calculation.
 
 **The mixing angle is not handed down; it is computed downstream.** This is why the $45^\circ$ of the additive identities cannot be the mixing: **the mixing is a property of a mass matrix that does not exist at $M_C$.** The identities are a statement about a basis; the angle is a statement about a vacuum, and the vacuum is later.
 
@@ -198,7 +198,7 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 
 **The handover is at $M_C\gtrsim250$ TeV, bounded by $K_L\to\mu e$ and not by proton decay.**
 
-**Four quantities cross.** The group $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, exact, rank five; the nine massless vectors, the kernel of $\operatorname{ad}(iD)$; the six heavy vectors at $M_X^{2}=\tfrac12g_4^{2}v_R^{2}$; and the couplings, to be matched.
+**Four quantities cross.** The group $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, exact, rank five; the fifteen massless vectors, nine of them the kernel of $\operatorname{ad}(iD)$ and six of them the weak directions born with the index; the six heavy vectors at $M_X^{2}=\tfrac12g_4^{2}v_R^{2}$; and the couplings, to be matched.
 
 **The ordering is forced by nesting**, $M_C\ge M_R\ge M_W$, and the only hierarchy the first step creates is three and a half decades at the floor.
 
@@ -206,7 +206,7 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 
 **Three things are not handed down.** The weak factors are born at the handover; the photon is a mixture formed after it; the mixing angle is computed after it. **And that is why the $45^\circ$ of the identities cannot be the electroweak mixing: the mass matrix it would have to be an angle of does not exist yet.**
 
-**The corpus below $M_C$ stands.** Nine articles, seven untouched, two with one paragraph each.
+**The corpus below $M_C$ stands.** It is the second and third sections of this part, and none of its numbers moves at the handover: the transition changes where the weak factors come from, not a single eigenvalue.
 
 ## Summary of Notation
 
@@ -224,5 +224,5 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 
 - [The Weak Force Born as a Side Effect: A Condensate Index, Five Ranks From Three](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The construction that makes the group appear at $M_C$.
 - [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). The colour factor and the nine vectors that cross the boundary.
-- [The Neutral Sector: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html). The photon and the mixing angle, both formed after the handover.
+- [The Neutral Sector: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html). The photon and the mixing angle, both formed after the handover.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The boundary condition and its four-decade failure.

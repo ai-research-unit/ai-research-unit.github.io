@@ -1,4 +1,4 @@
-# __The Neutral Sector of the Four Colours Left–Right Model: Three Ingredients, Rank Two, One Null Direction__
+# __The Neutral Sector: Three Ingredients, Rank Two, One Null Direction__
 
 ## Introduction
 
@@ -10,7 +10,7 @@
 
 ## The Neutral Sector: Three Fields, Rank Two, One Null Direction
 
-**The dimension of the sector.** The neutral sector is three-dimensional before the first breaking, and it stays three-dimensional until the last.
+**The dimension of the sector.** The neutral sector is three-dimensional from the first breaking onward, and it stays three-dimensional until the last. **Before that breaking it is one-dimensional**: the only neutral direction among the surviving Cartans is the corner $B'$, and the weak Cartans do not exist yet.
 
 **Three fields, and why exactly three.** Neutral gauge bosons are those with $Q=0$: $W^3_L$, $W^3_R$, and the $\mathrm{SU}(4)$ Cartan direction that survives the first breaking. The other two $\mathrm{SU}(4)$ Cartans are $T^{c}_{3}$ and $T^{c}_{8}$, which are neutral but are colour and never mix with anything, because colour is unbroken. So the mixing sector is exactly three fields:
 

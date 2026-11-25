@@ -95,7 +95,7 @@ The neutrino is the upper component of $L_L$ and has no right-handed partner in 
 
 ## Why the Assignment Is Not Free: The Anomaly Conditions
 
-**The conditions.** A chiral gauge theory is consistent only if four conditions hold on the matter spectrum: the coefficients of the $SU(3)_c^2\,\mathrm{U}(1)_Y$, $SU(2)_L^2\,\mathrm{U}(1)_Y$, $\mathrm{U}(1)_Y^3$ and mixed gravitational anomalies must vanish. [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html) derives the conditions and states them; this article records only their solution, because the solution is what the charge table is.
+**The conditions.** A chiral gauge theory is consistent only if four conditions hold on the matter spectrum: the coefficients of the $SU(3)_c^2\,\mathrm{U}(1)_Y$, $SU(2)_L^2\,\mathrm{U}(1)_Y$, $\mathrm{U}(1)_Y^3$ and mixed gravitational anomalies must vanish. [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html) derives the conditions and states them; this article records only their solution, because the solution is what the charge table is.
 
 **The four equations.** With the five hypercharges of one generation written $Y_Q,Y_u,Y_d,Y_L,Y_e$ as the table lists them, the conditions read
 
@@ -113,7 +113,7 @@ $$
 
 The first is the colour condition, the second the weak condition, the third the gravitational condition and the fourth the cubic condition. The fifth condition, $SU(3)_c^3$, vanishes identically: the colour content of the quarks is vector-like, and $2A(3)-A(3)-A(3)=0$ for the cubic colour coefficient $A(3)$.
 
-**The sign of the right-handed terms.** The three minus signs in front of $Y_u$, $Y_d$ and $Y_e$ are the table's values. A right-handed field written as a left-handed conjugate reverses its hypercharge, so the same four conditions in the conjugate variables $Y^{\mathrm c}_u=-Y_u$, $Y^{\mathrm c}_d=-Y_d$, $Y^{\mathrm c}_e=-Y_e$ carry plus signs throughout, and mixing the two writings gives a sum that does not vanish. [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) states both forms and the arithmetic of the mixture.
+**The sign of the right-handed terms.** The three minus signs in front of $Y_u$, $Y_d$ and $Y_e$ are the table's values. A right-handed field written as a left-handed conjugate reverses its hypercharge, so the same four conditions in the conjugate variables $Y^{\mathrm c}_u=-Y_u$, $Y^{\mathrm c}_d=-Y_d$, $Y^{\mathrm c}_e=-Y_e$ carry plus signs throughout, and mixing the two writings gives a sum that does not vanish. [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) states both forms and the arithmetic of the mixture.
 
 **The reduction.** The three linear equations solve for three of the five hypercharges in terms of the two quark hypercharges. With $a=Y_u$ and $b=Y_d$ they give
 
@@ -139,7 +139,7 @@ $$
 | $t=-1$ | the same with $u$ and $d$ exchanged | the same assignment, mislabelled |
 | $s=0$ | $k(0,1,-1,0,0)$ | excluded: it gives quark charges $\pm\tfrac12$ and lepton charges $\pm\tfrac12$ |
 
-**What the solution says.** The conditions fix the assignment up to one overall scale on each branch, and the observed charges select the branch and the scale. The derivation is carried out in full, with the matrix of the linear system and a factorisation of the cubic into its three factors, in [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html); the two routes are the same equation and the check is recorded there. Setting $k=\tfrac13$ gives $Y_Q=\tfrac16$, $Y_u=\tfrac23$, $Y_d=-\tfrac13$, $Y_L=-\tfrac12$ and $Y_e=-1$, which is the table. The scale is the normalisation, and the normalisation is fixed by the measured electron charge and not by the algebra.
+**What the solution says.** The conditions fix the assignment up to one overall scale on each branch, and the observed charges select the branch and the scale. The derivation is carried out in full, with the matrix of the linear system and a factorisation of the cubic into its three factors, in [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html); the two routes are the same equation and the check is recorded there. Setting $k=\tfrac13$ gives $Y_Q=\tfrac16$, $Y_u=\tfrac23$, $Y_d=-\tfrac13$, $Y_L=-\tfrac12$ and $Y_e=-1$, which is the table. The scale is the normalisation, and the normalisation is fixed by the measured electron charge and not by the algebra.
 
 **The verification.** The five conditions were recomputed in exact rational arithmetic on the assignment above, one generation at a time, in the left-handed convention:
 
@@ -282,7 +282,7 @@ The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$
 ## Further Reading
 
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). The boundary in item-by-item form, and the three refusals this article respects.
-- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html). The derivation of the four conditions.
+- [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html). The derivation of the four conditions.
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). Why the three is accommodated and not derived.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The seven or eight parameters that a neutrino mass costs.
 - [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html). The vacuum angle and the mechanism that sets it to zero.

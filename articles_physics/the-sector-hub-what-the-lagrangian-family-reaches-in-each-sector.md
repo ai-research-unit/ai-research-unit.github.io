@@ -28,7 +28,7 @@
 **What exists.** One action, both of its phases, and the masses computed from it.
 
 - [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html) — the $SU(2)\times U(1)$ action, the unbroken and unitary displays, four Gauss constraints, and $m_W=gv/2$ as a product of one coupling and one vacuum value.
-- [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) — the conventions the action uses.
+- [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) — the conventions the action uses.
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) — the breaking as a statement about a potential's minimum.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html) — where the algebra stops.
 

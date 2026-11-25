@@ -266,4 +266,4 @@ Six for six is a coincidence of dimension. It says nothing about charge, spin, c
 - [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The construction that does not need the sextet.
 - [The Two Kinds of Death: A Subgroup That Leaves and an Index That Arrives](the-two-kinds-of-death-a-subgroup-that-leaves-and-an-index-that-arrives.html). The closure argument that runs beside the charge argument.
 - [The Death of the Primordial Force](the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html). Where $32v^{2}$ and $0$ come from, and the warning about the half in $T^{L}_{x}$.
-- [The Neutral Sector: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html). Where the electroweak mixing is actually computed.
+- [The Neutral Sector: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-three-ingredients-rank-two-one-null-direction.html). Where the electroweak mixing is actually computed.
