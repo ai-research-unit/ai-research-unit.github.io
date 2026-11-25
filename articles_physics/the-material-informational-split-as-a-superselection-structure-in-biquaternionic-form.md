@@ -242,7 +242,7 @@ $$
 [i\vec e_{\imath}, i\vec e_{\jmath}] = -2\epsilon_{\imath\jmath k}\,\vec e_{\imath}, \qquad
 [\vec e_{\imath}, i\vec e_{\jmath}] = 2\epsilon_{\imath\jmath k}\,i\vec e_{\imath} .
 $$
-The first line says that the **material** traceless sector is closed under commutation: it is the compact subalgebra $\mathrm{SU}(2)$ of rotations. The second says that the **informational** traceless sector is a symmetric complement: the bracket of two boosts is a rotation, and the bracket of a rotation with a boost is a boost. The split is therefore a $\mathbb{Z}_2$ grading of the Lorentz Lie algebra,
+The first line says that the **material** sector — traceless, that is with vanishing scalar part — is closed under commutation: it is the compact subalgebra $\mathrm{SU}(2)$ of rotations. The second says that the **informational** traceless sector is a symmetric complement: the bracket of two boosts is a rotation, and the bracket of a rotation with a boost is a boost. The split is therefore a $\mathbb{Z}_2$ grading of the Lorentz Lie algebra,
 $$
 [\text{even},\text{even}]\subseteq\text{even}, \qquad
 [\text{even},\text{odd}]\subseteq\text{odd}, \qquad

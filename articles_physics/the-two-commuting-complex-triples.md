@@ -188,7 +188,7 @@ where the two $(0,0)$ are the central directions $e_t$ and $ie_t$.
 
 ### The Weights
 
-That the traceless part is $(1,0)\oplus(0,1)$ and not, say, $(\tfrac12,\tfrac12)$ is read from the Casimirs, and the numbers are these. On the eight-dimensional adjoint:
+That the traceless part — the elements of vanishing scalar part — is $(1,0)\oplus(0,1)$ and not, say, $(\tfrac12,\tfrac12)$ is read from the Casimirs, and the numbers are these. On the eight-dimensional adjoint:
 
 - the first Casimir takes the value $0$ on the two central directions and $\pm2$ on the traceless part, in the two summands with opposite signs of the second Casimir;
 - the second Casimir takes the values $+2$ on the self-dual triple and $-2$ on the anti-self-dual one;

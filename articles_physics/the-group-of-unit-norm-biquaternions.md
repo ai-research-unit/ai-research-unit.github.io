@@ -130,7 +130,7 @@ The two parametrisations are therefore coordinates and not just labels. Every el
 This is the one count that readers get wrong, and the two answers are different for two different reasons.
 
 - The **associative algebra** $\mathbb{B}$ has real dimension eight. The group is cut out of it by the norm condition, which is one complex equation, so the group has six. The two directions lost are the scale $r$ and the central phase $\theta_{\mathrm{pha}}$: a unit-norm element has neither, and every element of the group of invertibles is a positive scale times a central phase times an element of $G$.
-- The **Lie algebra** of $G$ has real dimension six, and it is the traceless part. It is *not* the associative algebra under the commutator, which has eight; the two extra directions are the centre, and the centre exponentiates to the scale and to the phase, neither of which lies in $G$.
+- The **Lie algebra** of $G$ has real dimension six, and it is the traceless part — traceless in the $2\times2$ image, which for an element means a vanishing scalar part ($\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$). It is *not* the associative algebra under the commutator, which has eight; the two extra directions are the centre, and the centre exponentiates to the scale and to the phase, neither of which lies in $G$.
 
 So "the group is six-dimensional while the algebra is eight" is true of the associative algebra and false of the Lie algebra, and a sentence that does not say which is meant cannot be checked.
 

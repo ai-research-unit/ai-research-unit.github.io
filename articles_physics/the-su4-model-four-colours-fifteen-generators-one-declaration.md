@@ -273,7 +273,7 @@ $$
 
 **Second, the anti-Hermitian part.** Of those eight real dimensions, four are anti-Hermitian: $R_{\vec e_a}$ together with $R_i=i\,\mathrm I_4$.
 
-**Third, the trace.** $\operatorname{tr}R_i=4i\ne0$, so $R_i$ is excluded by the tracelessness of $\mathfrak{su}(4)$. **What remains is $\{R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\}$: three real dimensions, and that is $\mathfrak{su}(2)$.**
+**Third, the trace.** $\operatorname{tr}R_i=4i\ne0$, so $R_i$ is excluded by the tracelessness of $\mathfrak{su}(4)$ read on the array in the coefficient basis. **What remains is $\{R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\}$: three real dimensions, and that is $\mathfrak{su}(2)$.**
 
 **So the ceiling is $\mathrm{SU}(2)$, and it is attained by $\mathfrak k_R$.** This is exactly the $\mathfrak k_R$ of the earlier section — **the commutant theorem and the real $\mathfrak{so}(4)$ are the same structure seen from two sides.** The ceiling of three forces the tensor product:
 

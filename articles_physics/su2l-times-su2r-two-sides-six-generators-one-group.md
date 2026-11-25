@@ -209,7 +209,7 @@ The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g
 |---|---|---|---|---|
 | $\mathrm{SU}(2)\times\mathrm{SU}(2)$ | $6$ | $2$ | $L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4)$, element level | **free** |
 | $\mathrm{SU}(2)^2\times\mathrm{U}(1)$ | $7$ | $3$ | the above, plus the central circle | **free** |
-| $\mathrm{SU}(4)$ | $15$ | $3$ | the traceless part of the operator algebra, one layer up | one layer |
+| $\mathrm{SU}(4)$ | $15$ | $3$ | the anti-Hermitian derivations of the operator algebra's Hermitian part, one layer up | one layer |
 | $\mathrm{SU}(3)$ | $8$ | $2$ | inside $\mathfrak{su}(4)$, operator level only | one layer, and only inside |
 | $\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ | $12$ | $4$ | $A_2\oplus A_1$ does not sit in $A_3$ | **over budget** |
 | $\mathrm{SO}(10)$ | $45$ | $5$ | exceeds $\mathfrak{u}(4)\oplus\mathfrak{u}(4)$, of dimension $32$ | **not available** |
