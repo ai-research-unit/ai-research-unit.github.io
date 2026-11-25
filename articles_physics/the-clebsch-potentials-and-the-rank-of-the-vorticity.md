@@ -71,7 +71,7 @@ The hierarchy is a table, and the last column is the number of functions the vel
 | $2$ | $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}=0$ | $\xi_{\mathrm{pot},\mathrm{clb}}$, $\alpha_{\mathrm{clb}}$, $\beta_{\mathrm{clb}}$ | three functions |
 | $4$ | $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}\ne0$ | two pairs | five functions |
 
-A potential flow is the first row and nothing else is. Its velocity is $\partial_{\imath}\Phi$, a closed one-form, so it is rank zero exactly and its vorticity vanishes identically — the statement [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) proves. A rotational flow is the second row, and a flow whose vorticity is not simple is the third.
+A potential flow is the first row and nothing else is. Its velocity is $\partial_{\imath}\digamma_{\mathrm{vel}}$, a closed one-form, so it is rank zero exactly and its vorticity vanishes identically — the statement [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) proves. A rotational flow is the second row, and a flow whose vorticity is not simple is the third.
 
 In three spatial dimensions the third row does not occur, and this is why a Galilean fluid cannot show the effect. A two-form on a three-dimensional space has three independent components and its four-form vanishes identically, so every Galilean vorticity is simple: $\vec\omega_{\mathrm{vrt}}$ is always the curl of something and a Clebsch pair always exists. A Galilean fluid therefore cannot exhibit the rank-four case, and the whole hierarchy collapses to its first two rows.
 
@@ -147,7 +147,7 @@ $$
 
 conserved for a barotropic inviscid flow and not for a general one.
 
-For a medium with an orientation the invariant is built from the spin and the vorticity together. The helicity of the spinning fluid is conserved when the spin current's divergence vanishes, and in the relativistic case the corresponding charge is the one the axial current carries. The spin-hydrodynamics literature states the identification, and it is quoted here as the classical counterpart and not derived, because the derivation needs the spin current's equation, which is [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html).
+For a medium with an orientation the invariant is built from the spin and the vorticity together. The helicity of the spinning fluid is conserved when the spin current's divergence vanishes, and in the relativistic case the corresponding charge is the one the axial current carries. The spin-fluid-mechanics literature states the identification, and it is quoted here as the classical counterpart and not derived, because the derivation needs the spin current's equation, which is [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html).
 
 **The change from a topological invariant to a differential one is the right expectation and not a loss.** A rank-zero flow has a topological invariant because its velocity is one function with a period; a rank-two flow has a differential invariant because its velocity is three functions with none. The potential flow is special in having a topological charge, and that specialness is why its circulation is a conserved quantity of the flow and not of the medium.
 

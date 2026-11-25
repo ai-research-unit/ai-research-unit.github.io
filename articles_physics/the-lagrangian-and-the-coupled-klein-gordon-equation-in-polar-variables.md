@@ -118,7 +118,7 @@ S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{\bigl(\partial_{r'_t}\varrho\bi
 +\frac{(2\pi)^{2} \rho_{\mathrm{num}}}{h^{2}}\Bigl[\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-q\vec A\bigr\rvert^{2}\Bigr]-4\pi^{2}\nu_m^{2}\rho_{\mathrm{num}}\Bigr\},
 $$
 
-which is Madelung's action with the mechanical four-momentum. The free polar article cites Madelung (1927) and Takabayasi (1952) for the $\vec A=0$ case; the coupled case is the standard Madelung action of a charged scalar, and the article does not claim it as new. What the biquaternionic form supplies is the *derivation*: the action is not postulated as a hydrodynamic functional but obtained by substituting the word into the element action, so the two functions are the field's scale and the field's phase and not auxiliary variables.
+which is Madelung's action with the mechanical four-momentum. The free polar article cites Madelung (1927) and Takabayasi (1952) for the $\vec A=0$ case; the coupled case is the standard Madelung action of a charged scalar, and the article does not claim it as new. What the biquaternionic form supplies is the *derivation*: the action is not postulated as a fluid functional but obtained by substituting the word into the element action, so the two functions are the field's scale and the field's phase and not auxiliary variables.
 
 The equations. Varying $\theta_{\mathrm{pha}}$ — equivalently $S_{\tilde\Xi}$ — gives
 
@@ -237,10 +237,10 @@ $$
 The circulation. Integrating along a closed loop,
 
 $$
-\oint\bigl(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A\bigr)\cdot\mathrm{d}\vec l=h\,n+ϙ\Phi_B ,
+\oint\bigl(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A\bigr)\cdot\mathrm{d}\vec l=h\,n+ϙ\digamma_{\mathrm{flx}} ,
 $$
 
-with $n$ the winding of the phase and $\Phi_B$ the flux enclosed. So the mechanical circulation is quantized up to the flux, and the chart's exact statement of the Aharonov–Bohm structure is that the flux enters the phase's bookkeeping and not the field's.
+with $n$ the winding of the phase and $\digamma_{\mathrm{flx}}$ the flux enclosed. So the mechanical circulation is quantized up to the flux, and the chart's exact statement of the Aharonov–Bohm structure is that the flux enters the phase's bookkeeping and not the field's.
 
 Why the action does not see it. A circulation is a property of a closed loop and the action is a functional of functions; the loop's statement is a consequence of the phase's being single valued, which the action's variations do not test. The article states the consequence and records that it is not an equation of motion: it is a boundary condition on the phase's winding, and the free article's nodal-set structure is where it is analysed.
 
@@ -266,7 +266,7 @@ The honest ledger. For the central field the polar variational principle is Made
 
 ## Open Questions
 
-The $\rho_{\mathrm{chg}}^{2}A^{2}$ term's role in the chart's reading. The quadratic term is a potential and the chart's $V$ in the free article is a function of the frame; with the connection the potential acquires a term that depends on the frame only through $\varrho^{2}$. Whether that term has a reading as an effective mass or as a refractive index in the hydrodynamic picture is not attempted.
+The $\rho_{\mathrm{chg}}^{2}A^{2}$ term's role in the chart's reading. The quadratic term is a potential and the chart's $V$ in the free article is a function of the frame; with the connection the potential acquires a term that depends on the frame only through $\varrho^{2}$. Whether that term has a reading as an effective mass or as a refractive index in the fluid picture is not attempted.
 
 ## Summary
 
@@ -285,7 +285,7 @@ S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{-(\partial_{r'_t}\varrho)^{2}+\
 +\frac{(2\pi)^{2} \rho_{\mathrm{num}}}{h^{2}}\bigl[(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)^{2}-\lvert\nabla S_{\tilde\Xi}-q\vec A\rvert^{2}\bigr]-4\pi^{2}\nu_m^{2}\rho_{\mathrm{num}}\Bigr\},
 $$
 
-and its two equations are the transport equation and the amplitude equation of the polar companion. The interaction is a linear term in the potential times the free phase rate plus a quadratic term with no phase, and the quadratic term is what gauge invariance requires. The kinetic matrix's rank is unchanged, so no constraint appears and no multiplier is needed; the eight-parameter chart's exactness by the invertible Jacobian is the free article's and survives. The vorticity of the mechanical current is $ϙ\vec B$ and its circulation is $h n+ϙ\Phi_B$.
+and its two equations are the transport equation and the amplitude equation of the polar companion. The interaction is a linear term in the potential times the free phase rate plus a quadratic term with no phase, and the quadratic term is what gauge invariance requires. The kinetic matrix's rank is unchanged, so no constraint appears and no multiplier is needed; the eight-parameter chart's exactness by the invertible Jacobian is the free article's and survives. The vorticity of the mechanical current is $ϙ\vec B$ and its circulation is $h n+ϙ\digamma_{\mathrm{flx}}$.
 
 ## Summary of Notation
 
@@ -303,7 +303,7 @@ and its two equations are the transport equation and the amplitude equation of t
 | $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$, $\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A$ | The mechanical four-momentum |
 | $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\Box_\Phi \varrho/\varrho$ | The quantum potential; unchanged |
 | $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A)$ | The mechanical current; $\vec\nabla_\Phi\times=\rho_{\mathrm{chg}}\vec B$ |
-| $h n+ϙ\Phi_B$ | The mechanical circulation |
+| $h n+ϙ\digamma_{\mathrm{flx}}$ | The mechanical circulation |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 
 ## Further Reading
@@ -315,7 +315,7 @@ and its two equations are the transport equation and the amplitude equation of t
 - [The Lagrangian and the Klein–Gordon Equation](the-lagrangian-and-the-klein-gordon-equation.html), for the element action.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the covariant bracket and the curvature.
-- [The Spin-Zero Fluid](the-spin-zero-fluid.html), for the hydrodynamic reading.
+- [The Spin-Zero Fluid](the-spin-zero-fluid.html), for the fluid reading.
 - [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html), for the free flow's irrotationality.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the winding and the circulation.
 - [The Lagrangian and the Coupled Proca Equation in Polar Variables](the-lagrangian-and-the-coupled-proca-equation-in-polar-variables.html), for the vector case's chart.

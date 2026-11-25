@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**One operator, one matrix, two masses, and no phase.** The Yukawa sector of this model is $\mathcal{L}_{Y}=y_{\alpha\beta}\,\bar\xi^{\alpha\dagger}\Phi\,\xi^{\beta}+\text{h.c.}$, with $y$ a $2\times2$ complex matrix on the copy index. **That is the whole sector**: no second Higgs, no second condensate, and no matrix whose diagonalisation could disagree with the first one's.
+**One operator, one matrix, two masses, and no phase.** The Yukawa sector of this model is $\mathcal{L}_{Y}=y_{\alpha\beta}\,\bar\xi^{\alpha\dagger}Ξ\,\xi^{\beta}+\text{h.c.}$, with $y$ a $2\times2$ complex matrix on the copy index. **That is the whole sector**: no second Higgs, no second condensate, and no matrix whose diagonalisation could disagree with the first one's.
 
 **What it fixes and what it cannot.**
 
@@ -15,7 +15,7 @@
 
 ## Why There Is No Mass Term Before the Breaking
 
-**A Dirac mass needs a left-handed and a right-handed field of the same charge, and the sixteen supply them in pairs.** So a mass term $\bar\xi\xi$ is allowed by the gauge symmetry — **and it is not written.** The reason is a choice of the model's ledger and not a theorem: **$\Phi$ is what gives the sixteen their masses, and a bare mass would be a second source that the ledger does not carry.**
+**A Dirac mass needs a left-handed and a right-handed field of the same charge, and the sixteen supply them in pairs.** So a mass term $\bar\xi\xi$ is allowed by the gauge symmetry — **and it is not written.** The reason is a choice of the model's ledger and not a theorem: **$Ξ$ is what gives the sixteen their masses, and a bare mass would be a second source that the ledger does not carry.**
 
 **The consequence is the one that matters downstream.** Every fermion is massless in the symmetric phase, the electroweak-scale ratios are set by $y$ alone, and **there is no see-saw, because there is no gauge-singlet mass to give a right-handed neutrino.**
 
@@ -26,11 +26,11 @@
 **The operator, written with the indices visible.**
 
 $$
-\mathcal{L}_{Y}=y_{\alpha\beta}\,\bar\xi^{\alpha\dagger}_{\,i}\,\Phi_{ij}\,\xi^{\beta}_{j}+\text{h.c.},
+\mathcal{L}_{Y}=y_{\alpha\beta}\,\bar\xi^{\alpha\dagger}_{\,i}\,Ξ_{ij}\,\xi^{\beta}_{j}+\text{h.c.},
 \qquad i,j\in\{t,x,y,z\},\quad \alpha,\beta\in\{1,2\}.
 $$
 
-**It is invariant and the invariance is one line of representation arithmetic.** $\xi$ is a $\mathbf 4$, $\bar\xi$ a $\bar{\mathbf4}$, and $\Phi$ a Hermitian $4\times4$, which is $\mathbf{15}\oplus\mathbf1$. **$\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$ contains the identity, so the product contracts to a singlet**, and the contraction is the matrix trace read in the quartet index.
+**It is invariant and the invariance is one line of representation arithmetic.** $\xi$ is a $\mathbf 4$, $\bar\xi$ a $\bar{\mathbf4}$, and $Ξ$ a Hermitian $4\times4$, which is $\mathbf{15}\oplus\mathbf1$. **$\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$ contains the identity, so the product contracts to a singlet**, and the contraction is the matrix trace read in the quartet index.
 
 **The matrix $y$ is on the copy index and on nothing else.** It cannot carry a colour index (invariance), it cannot carry a momentum (locality), and it cannot carry a generation label (there is none). **So the sector's whole freedom is a $2\times2$ complex matrix**, and the next paragraph counts what of it is physical.
 
@@ -110,7 +110,7 @@ $$
 
 ## Neutrinos
 
-**The neutrino is a Dirac fermion here and its mass is tied to the up quark's.** The lepton line of the conjugate quartet at $B-L=-1$ is the right-handed neutrino's slot, so **the neutrino gets a Dirac mass $3v|y_{1}|$ and no Majorana mass**: a Majorana term would need $\xi\xi$, which is not invariant, because $\mathbf4\otimes\mathbf4$ does not contain a singlet.
+**The neutrino is a Dirac fermion here and its mass is tied to the up quark's.** The lepton line of the conjugate quartet at $B-L=+1$ is the right-handed neutrino's slot, so **the neutrino gets a Dirac mass $3v|y_{1}|$ and no Majorana mass**: a Majorana term would need $\xi\xi$, which is not invariant, because $\mathbf4\otimes\mathbf4$ does not contain a singlet.
 
 **There is no see-saw and no light neutrino.** $m_{\nu}=3m_{u}$ is the sector's statement, and the measurement makes it the sector's worst failure. **The corpus's position is that the fault is in the number of condensates and not in the group**, which is the same diagnosis the lepton–quark ratio receives.
 
@@ -156,7 +156,7 @@ $$
 | --- | --- |
 | $y_{\alpha\beta}$ | the Yukawa matrix on the copy index, $2\times2$ complex |
 | $\xi^{\alpha}_{i}$, $\bar\xi^{\alpha}_{i}$ | the sixteen Weyl fields, quartet index $i$, copy index $\alpha$ |
-| $\Phi$ | the Hermitian $4\times4$ scalar, $\mathbf{15}\oplus\mathbf1$, $16$ real components |
+| $Ξ$ | the Hermitian $4\times4$ scalar, $\mathbf{15}\oplus\mathbf1$, $16$ real components |
 | $D=\operatorname{diag}(-3,1,1,1)$ | the condensate direction |
 | $v$ | the condensate's scale, $v^{2}=-\mu^{2}/2\lambda$ |
 | $y_{1}$, $y_{2}$ | the two eigenvalues, real and positive |

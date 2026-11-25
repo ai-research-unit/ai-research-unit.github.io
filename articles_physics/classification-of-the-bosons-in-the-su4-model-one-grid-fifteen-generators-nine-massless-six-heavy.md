@@ -246,13 +246,13 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 
 | field | representation | real components | belongs to |
 | --- | --- | --- | --- |
-| $\Phi$ | the Hermitian $4\times4$, $\mathbf{15}\oplus\mathbf1$ | $16$ | **this model**: it is what breaks $\mathrm{SU}(4)$ |
+| $Ξ$ | the Hermitian $4\times4$, $\mathbf{15}\oplus\mathbf1$ | $16$ | **this model**: it is what breaks $\mathrm{SU}(4)$ |
 | $H$ | the electroweak bidoublet | $8$ | the four-factor phase |
 | $\Sigma$ | the adjoint scalar, $(\mathbf{15},\mathbf2,\mathbf2)$ | $120$ | the four-factor phase, and not minimal |
 
-**Six of $\Phi$'s sixteen components are eaten by the sextet.** The condensate is $\langle\Phi\rangle=v\operatorname{diag}(-3,1,1,1)$ in the Hermitian matrix, and the six leptoquarks that acquire $32v^{2}$ acquire it by eating the six components that point along their own planes. **The count is forced by the coset**: $15-9=6$, one real component per broken generator. **An eaten component has no name of its own: it is the third polarisation of the boson that ate it**, which is why the eaten six reappear on the gauge grid and not in the scalar list.
+**Six of $Ξ$'s sixteen components are eaten by the sextet.** The condensate is $\langleΞ\rangle=v\operatorname{diag}(-3,1,1,1)$ in the Hermitian matrix, and the six leptoquarks that acquire $32v^{2}$ acquire it by eating the six components that point along their own planes. **The count is forced by the coset**: $15-9=6$, one real component per broken generator. **An eaten component has no name of its own: it is the third polarisation of the boson that ate it**, which is why the eaten six reappear on the gauge grid and not in the scalar list.
 
-**The other ten components of $\Phi$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the Hermitian matrix, and they are the ones the Higgs sector below $M_C$ is built from. **[The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) is the census of that ledger.** **The corpus's one caveat stands and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
+**The other ten components of $Ξ$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the Hermitian matrix, and they are the ones the Higgs sector below $M_C$ is built from. **[The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) is the census of that ledger.** **The corpus's one caveat stands and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
 
 **The word to avoid is "the Higgs coupling".** This model leaves the gauge coupling symbolic and predicts none of it, fixes no scalar multiplet, and has no coupling claim in this sector to patch. **A sentence such as "the minimal sector gives $m_d=m_e$" imports the Pati–Salam literature's condition into a model whose ledger refuses it.**
 
@@ -304,7 +304,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 | the spectrum by fate | $9+6$ | $15$ |
 | the cells touching $t$ | $1+3+3$ | $7$ |
 | the block that does not | $8$ | $8$ |
-| the eaten components of $\Phi$ | one per heavy generator | $6$ |
+| the eaten components of $Ξ$ | one per heavy generator | $6$ |
 | the rank | maximal torus | $3$ |
 | the surviving algebra after the transition | $\mathfrak{su}(3)\oplus\mathfrak u(1)$, $8+1$ | $9=\dim$ |
 | the heavy count as the complement | $15-9$ | $6$ |
@@ -346,7 +346,7 @@ Fifteen, and not twenty-one at this scale. **The four particles $W^{\pm}$, $Z$ a
 | $g_{1}\dots g_{8}$ | the gluon octet |
 | $T^{c}_{3}$, $T^{c}_{8}$ | the two colour Cartans |
 | $\mathfrak m$ | the sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$ |
-| $\Phi$ | the fourth-colour scalar, $16$ real components |
+| $Ξ$ | the fourth-colour scalar, $16$ real components |
 | $32v^{2}$ | the sextet's mass eigenvalue |
 
 ## Further Reading

@@ -55,7 +55,7 @@ are one scale and one list.
 colour planes have $\lambda_j=\lambda_k$ and the two colour diagonals commute with it. A generator that commutes with the vacuum has zero mass, which is the
 kernel statement of [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html).
 
-**The second vacuum.** $H$ is a colour singlet, so its vacuum expectation value does not couple to a colour generator at all. The same holds for $\Phi$, whose
+**The second vacuum.** $H$ is a colour singlet, so its vacuum expectation value does not couple to a colour generator at all. The same holds for $Ξ$, whose
 vacuum lies along the lepton line, and the lepton line is a colour singlet.
 
 **The consequence.** The $8\times8$ colour block is zero, not small, and colour is unbroken at every step of the chain. This is the matrix statement of the
@@ -126,7 +126,7 @@ Eight recomputations, at tree level.
 | check | computation | result |
 |---|---|---|
 | the colour block | $\lvert[g,D]\rvert$ for the eight | $0$ for all eight |
-| the colour block, second reason | $H$ and $\Phi$ are colour singlets | $0$ |
+| the colour block, second reason | $H$ and $Ξ$ are colour singlets | $0$ |
 | the $B-L$ row | $\langle[D,[D,D]],D\rangle$ | $0$ exactly |
 | the leptoquark block | six planes through the lepton line | $32v^{2}$ six times |
 | the sextet's reason | $2\bigl(\lambda_{\text{lep}}-\lambda_{\text{col}}\bigr)^{2}$ | $2\cdot4^{2}=32$ |

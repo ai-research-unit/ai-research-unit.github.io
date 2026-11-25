@@ -70,9 +70,9 @@ $$
 
 **The ordering is forced, and the reason is nesting.** The two vacua are nested — the second line lies in a module of the group the first leaves unbroken — so a breaking that used the second before the first would have already used a direction the first was supposed to preserve. **Two conditions fix the order, and only one of them is about being untouched.**
 
-**(a) A field breaks a factor only if it transforms under it.** With no index on the factor there is no generator to act on the vacuum, so nothing can be broken. $\Phi$ is a colour quartet, an $R$ doublet and an $L$ singlet: it can break colour and the right factor, and it cannot break the left one. $H$ is colour-blind and an $L$ doublet: it can break the left factor and the derived hypercharge, and nothing else. This is a statement about the multiplet list, and it is what assigns each step its field.
+**(a) A field breaks a factor only if it transforms under it.** With no index on the factor there is no generator to act on the vacuum, so nothing can be broken. $Ξ$ is a colour quartet, an $R$ doublet and an $L$ singlet: it can break colour and the right factor, and it cannot break the left one. $H$ is colour-blind and an $L$ doublet: it can break the left factor and the derived hypercharge, and nothing else. This is a statement about the multiplet list, and it is what assigns each step its field.
 
-**(b) A field must be neutral under the factors broken earlier.** Otherwise its vacuum tilts the previously fixed line and undoes the earlier step. $\Phi$ is inert on $\mathrm{SU}(2)_L$, so the vacuum that fixes the colour and right lines leaves the left line free for $H$.
+**(b) A field must be neutral under the factors broken earlier.** Otherwise its vacuum tilts the previously fixed line and undoes the earlier step. $Ξ$ is inert on $\mathrm{SU}(2)_L$, so the vacuum that fixes the colour and right lines leaves the left line free for $H$.
 
 **The order of the steps is a statement about the multiplets and not about the group.** A different scalar content would permit a different chain, and then the group at $M_C$, the charge assignments and the massless count would all differ. **What is group-theoretic is the stabiliser the lines cut out, and that does not move.**
 
@@ -93,7 +93,7 @@ $$
 3\to5\to4\to3\ \text{rank}.
 $$
 
-**The first arrow is the whole of $M_C$, and it is three events at one scale.** Nine of the fifteen directions are the kernel and stay massless; the other six, the sextet, take $32v_C^{2}$ and eat six of $\Phi$'s Goldstones. At the same scale six weak vectors arrive with the doublet index, and only three of them are light: the left triple, whose mass is the $v$ of a later step. **The right triple is heavy the moment it appears**, on the same $v_C$ as the sextet, which is why the four-factor group has no width. **So the massless count falls by three and not by six**: $15-6+3=12$, and the twelve are the nine of the kernel plus the three of the weak left factor. The algebra changes from $\mathfrak{su}(4)$ to $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}\oplus\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R$ — dimension fifteen as well, for a different reason, $8+1+3+3$ — and then to $\mathfrak{su}(3)\oplus\mathfrak{su}(2)_L\oplus\mathfrak{u}(1)_Y$, of dimension twelve, at the same scale.
+**The first arrow is the whole of $M_C$, and it is three events at one scale.** Nine of the fifteen directions are the kernel and stay massless; the other six, the sextet, take $32v_C^{2}$ and eat six of $Ξ$'s Goldstones. At the same scale six weak vectors arrive with the doublet index, and only three of them are light: the left triple, whose mass is the $v$ of a later step. **The right triple is heavy the moment it appears**, on the same $v_C$ as the sextet, which is why the four-factor group has no width. **So the massless count falls by three and not by six**: $15-6+3=12$, and the twelve are the nine of the kernel plus the three of the weak left factor. The algebra changes from $\mathfrak{su}(4)$ to $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}\oplus\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R$ — dimension fifteen as well, for a different reason, $8+1+3+3$ — and then to $\mathfrak{su}(3)\oplus\mathfrak{su}(2)_L\oplus\mathfrak{u}(1)_Y$, of dimension twelve, at the same scale.
 
 **The rank, in the same reading.** It rises by two because two new Cartan directions arrive with the two weak factors, and it falls by one at $M_C$ because the broken $\mathrm{SU}(2)_R$ leaves a single abelian direction; at $v$ a broken $\mathrm{SU}(2)_L$ leaves another. **So the rank is five at $M_C$ and four immediately below it**, and the two are the same scale described twice.
 
@@ -123,8 +123,8 @@ $$
 
 | mass | formula | scale | who supplies it |
 | --- | --- | --- | --- |
-| the six leptoquarks | $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$ | $M_C$ | the quartet index of $\Phi$ |
-| $W_R,Z_R$ | $\sim g_R v_C$ | $M_C$ | the right-doublet index of $\Phi$ |
+| the six leptoquarks | $M_X^{2}=\tfrac12g_4^{2}v_C^{2}$ | $M_C$ | the quartet index of $Ξ$ |
+| $W_R,Z_R$ | $\sim g_R v_C$ | $M_C$ | the right-doublet index of $Ξ$ |
 | $W,Z$ | $\sim g\,v$ | $v$ | the electroweak vacuum |
 | the photon | $0$ | — | the null direction of a rank-two matrix |
 | the gluons | $0$ | — | colour is a stabiliser |
@@ -209,7 +209,7 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 
 **The ordering is forced by nesting**, $M_C>v$, and the only hierarchy the first step creates is three and a half decades at the floor. **The left–right group has no width**: it is the group at $M_C$, and the vacuum that produces it makes the right triple heavy.
 
-**Every mass comes from the vacuum that made it.** The sextet from the quartet index of $\Phi$ at $M_C$, the right bosons from its doublet index at the same scale, $W$ and $Z$ from $v=246$ GeV, and the photon and the gluons from structure — a null direction and a stabiliser. **No composite, no binding energy, no difference of large numbers.**
+**Every mass comes from the vacuum that made it.** The sextet from the quartet index of $Ξ$ at $M_C$, the right bosons from its doublet index at the same scale, $W$ and $Z$ from $v=246$ GeV, and the photon and the gluons from structure — a null direction and a stabiliser. **No composite, no binding energy, no difference of large numbers.**
 
 **Three things are not passed down.** The weak factors are born at the matching; the photon is a mixture formed after it; the mixing angle is computed after it. **And that is why the $45^\circ$ of the identities cannot be the electroweak mixing: the mass matrix it would have to be an angle of does not exist yet.**
 
@@ -222,7 +222,7 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 | $M_C$ | the transition scale, $\gtrsim250$ TeV |
 | $v$ | the electroweak vacuum, $246$ GeV |
 | $v_C$ | the magnitude of the $\mathrm{SU}(4)$-breaking condensate |
-| $\Phi$ | the scalar $(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$ that does the first breaking |
+| $Ξ$ | the scalar $(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$ that does the first breaking |
 | $H$ | the electroweak doublet that does the second |
 | $g_4,g_3,g_{B-L}$ | the mega coupling and the two it becomes at $M_C$ |
 | $g_L,g_R$ | the weak couplings, born at $M_C$ |

@@ -21,7 +21,7 @@ $$
 \frac{g_4^{2}}{2M_X^{2}}\Bigl[(\bar q\,\gamma^{\imath}P_L\ell)(\bar q'\,\gamma_{\imath}P_L\ell')+(L\to R)\Bigr].
 $$
 
-**One coupling, so the two chiralities come with equal coefficients**, and that equality is exact here: the quartet and the conjugate quartet are gauged by the same $g_4$. **There is no $LR$ term**, because an $LR$ term would need a scalar that carries both chiralities, and $\Phi$ couples $\bar\xi\xi$ and not $\bar\xi\xi$ of the same chirality.
+**One coupling, so the two chiralities come with equal coefficients**, and that equality is exact here: the quartet and the conjugate quartet are gauged by the same $g_4$. **There is no $LR$ term**, because an $LR$ term would need a scalar that carries both chiralities, and $Ξ$ couples $\bar\xi\xi$ and not $\bar\xi\xi$ of the same chirality.
 
 **The colour factor is one.** The quark legs sit on one colour line, the leptoquark propagator is diagonal in colour, and there is no sum over colours to make. **A colour factor of three would need the two vertices on different colour lines**, which is a different diagram.
 

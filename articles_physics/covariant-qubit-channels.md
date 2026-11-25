@@ -62,7 +62,7 @@ $$
 
 which is the mixture with the centre at weight $\digamma_{\mathrm{mix}}$. It is covariant, and covariance holds to $3.3\times10^{-16}$ over three hundred random unitaries and states. It is trace-preserving, it fixes the centre, and it is the channel the companion *The Gibbs Path Is Not a Group Orbit* already uses.
 
-Three boundaries cut the real line, and they are not the same boundary. With $c=1-\digamma_{\mathrm{mix}}$ the family is $\Phi_c(\tilde{Ϛ})=c\,\tilde{Ϛ}+(1-c)\mathrm{Sc}(\tilde{Ϛ})e_t$, whose Choi eigenvalues are
+Three boundaries cut the real line, and they are not the same boundary. With $c=1-\digamma_{\mathrm{mix}}$ the family is $\digamma_{\mathrm{map},c}(\tilde{Ϛ})=c\,\tilde{Ϛ}+(1-c)\mathrm{Sc}(\tilde{Ϛ})e_t$, whose Choi eigenvalues are
 
 $$
 \frac{1+3c}{2}\ \text{once},\qquad \frac{1-c}{2}\ \text{three times}.
@@ -157,8 +157,8 @@ The Choi rank is the price: $1$ for a conjugation and $8$ real dimensions, $2$ f
 | $\sum_l\tilde\Upsilon_l^{*}\tilde\Upsilon_l=e_t$ | Trace preservation |
 | $\sum_l\tilde\Upsilon_l\tilde\Upsilon_l^{*}=e_t$ | Unitality: the centre is fixed |
 | $\mathcal E_{\imath}(\tilde Q)=(1-\digamma_{\mathrm{mix}})\tilde Q+\digamma_{\mathrm{mix}}\,\mathrm{Sc}(\tilde Q)e_t$ | The covariant family; $\vec s_{\Psi}\mapsto(1-\digamma_{\mathrm{mix}})\vec s_{\Psi}$ |
-| $\Phi_c$ with $c=1-\digamma_{\mathrm{mix}}$ | The same family in depolarising form |
-| $\tfrac12(1+3c)$, $\tfrac12(1-c)$ | Choi eigenvalues of $\Phi_c$, once and three times |
+| $\digamma_{\mathrm{map},c}$ with $c=1-\digamma_{\mathrm{mix}}$ | The same family in depolarising form |
+| $\tfrac12(1+3c)$, $\tfrac12(1-c)$ | Choi eigenvalues of $\digamma_{\mathrm{map},c}$, once and three times |
 | $c\ge-\tfrac13$ | Complete positivity |
 | $\lvert c\rvert\le1$ | Positivity: states map to states |
 | $0\le\digamma_{\mathrm{mix}}\le1$ | The mixture reading |

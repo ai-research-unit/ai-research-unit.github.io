@@ -136,7 +136,7 @@ The table of types is the content of the display. Four terms, four types, and no
 
 This is the precise sense in which the four brackets are underdetermined. The equation constrains the four brackets jointly. No bilinear of the field returns one bracket in isolation, so no bilinear can be used to eliminate one in favour of the others. The underdetermination is the spin-half fluid's, not the algebra's: it is the same freedom that the tensor formulations close by adding a subsidiary condition, and [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html) records how Takabayasi closes it.
 
-The scalar case has two brackets and closes. With the boost at $e_t$ and the rotor at $\varepsilon e_t$ the third and fourth brackets vanish, and what remains is the scale and the phase. The one complex equation separates into two real equations, a continuity equation and an energy equation, and the separation is exact because two real equations for two real functions is a determined system. That is why the scalar fluid of this block is a closed hydrodynamics and the spinor fluid is not.
+The scalar case has two brackets and closes. With the boost at $e_t$ and the rotor at $\varepsilon e_t$ the third and fourth brackets vanish, and what remains is the scale and the phase. The one complex equation separates into two real equations, a continuity equation and an energy equation, and the separation is exact because two real equations for two real functions is a determined system. That is why the scalar fluid of this block is a closed fluid mechanics and the spinor fluid is not.
 
 ## What the Bilinears Signify
 

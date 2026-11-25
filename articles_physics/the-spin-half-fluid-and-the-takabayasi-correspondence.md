@@ -178,7 +178,7 @@ The sign of the mass density is the particle content, and charge conjugation fli
 
 ### The velocity and the heat flow
 
-His velocity is the current's direction, and the standard name for that choice is the Eckart frame. Relativistic hydrodynamics fixes the fluid's velocity in one of two ways. The Eckart frame takes the particle flux, and that is his, by definition: $S_{\imath}=\rho v_{\imath}$. The Landau frame takes the energy flux, the timelike eigenvector of the stress. The two coincide exactly when the energy flux vanishes in the Eckart frame, and that flux is the heat flow,
+His velocity is the current's direction, and the standard name for that choice is the Eckart frame. Relativistic fluid mechanics fixes the fluid's velocity in one of two ways. The Eckart frame takes the particle flux, and that is his, by definition: $S_{\imath}=\rho v_{\imath}$. The Landau frame takes the energy flux, the timelike eigenvector of the stress. The two coincide exactly when the energy flux vanishes in the Eckart frame, and that flux is the heat flow,
 
 $$
 q_{\imath}=\sum_{\imath}\varepsilon_{\imath} T_{\imath k}u_{\imath}-\epsilon\,u_{\imath},
@@ -256,7 +256,7 @@ The two formulations make the same predictions, and there is no experiment that 
 
 A plane wave is a plane wave in both. The word reads each mode and does not solve the equation.
 
-The closing condition is still a choice. Takabayasi makes one, the spin-hydrodynamics literature makes others, and the corpus records the choice without making it.
+The closing condition is still a choice. Takabayasi makes one, the spin-fluid-mechanics literature makes others, and the corpus records the choice without making it.
 
 Where the spin-half fluid stands among the three. The block now has a fluid per spin, and they are compared side by side in [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html)'s §*The Three Fluids* and in [The Spin-One Fluid](the-spin-one-fluid.html)'s: the scalar field is a gradient flow with a Korteweg stress and no orientation, the Proca field is a charged flow with a London response and no orientation, and this one is a flow with an orientation — a Cosserat medium but not the constrained one. Takabayasi's own subsidiary condition is the constraint that would make it the constrained case, and that is the sharpest way to say what his tensor fluid is and what the word's is.
 
@@ -316,7 +316,7 @@ No experiment separates the two formulations. What separates them is the origin 
 ## Further Reading
 
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter, Part I. General theory," *Progress of Theoretical Physics Supplement* 4 (1957) 1–80, the formulation compared here.
-- Takehiko Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* 8 (1952) 143–182, for the non-relativistic hydrodynamical formulation.
+- Takehiko Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* 8 (1952) 143–182, for the non-relativistic fluid formulation.
 - David Hestenes, *Space–Time Algebra* (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the geometric reading of the Dirac field as a density, an angle and a rotor.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), §9, for the relativistic spin fluid and the spin-transport equation it must carry.
 - Luca Fabbri, *Dirac Theory in Hydrodynamic Form* (2023), for the enumeration of minimal spin-fluid systems and the non-uniqueness of the closing condition.

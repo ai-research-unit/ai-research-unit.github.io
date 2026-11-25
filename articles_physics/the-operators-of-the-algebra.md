@@ -88,8 +88,8 @@ so each operator returns a single matrix unit and reads one index from each of t
 The structure isomorphism. The assignment
 
 $$
-\Phi:\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
-\Phi(\tilde Q\otimes\tilde P)=L_{\tilde Q}R_{\tilde P}
+\digamma_{\mathrm{map}}:\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
+\digamma_{\mathrm{map}}(\tilde Q\otimes\tilde P)=L_{\tilde Q}R_{\tilde P}
 $$
 
 is an isomorphism of algebras. It is the coordinate in which the two sides of the multiplication become the two tensor factors, and in which the overlap of the two sides becomes the tensor of the two units. The tensor product has complex dimension sixteen, the operator space has complex dimension sixteen, and the sixteen products of invertibles are the images of the sixteen pure tensors of a basis.
@@ -571,7 +571,7 @@ The reading. A transformation of the algebra that is not a single product is a s
 
 The object. The cone of two-sided operators as a set of coefficient matrices of rank one inside the sixteen-dimensional space of all coefficient matrices.
 
-The warrant. The structure isomorphism $\Phi(\tilde Q\otimes\tilde P)=L_{\tilde Q}R_{\tilde P}$ makes the coefficient matrix the coordinate of the operator in the tensor square of the algebra, and the rank of that matrix is the Schmidt rank of the operator across the two slots. Rank one is a pure tensor and rank above one is not.
+The warrant. The structure isomorphism $\digamma_{\mathrm{map}}(\tilde Q\otimes\tilde P)=L_{\tilde Q}R_{\tilde P}$ makes the coefficient matrix the coordinate of the operator in the tensor square of the algebra, and the rank of that matrix is the Schmidt rank of the operator across the two slots. Rank one is a pure tensor and rank above one is not.
 
 The reading. An operation is a single product exactly when it is not entangled across the two slots, and the length is the Schmidt rank. So the mixedness of an operation is the same quantity as the mixedness of a state, read on a different space: a state is mixed when its radius is below one, and an operation is mixed when its coefficient matrix has rank above one. Both are departures from a rank-one condition, and the algebra supplies both without a second definition.
 
@@ -652,7 +652,7 @@ One operator, three tasks. A change of frame when the second slot holds the inve
 | the one-sided images | $\operatorname{End}_L,\operatorname{End}_R$ | the left and right families, dimension $4$ each |
 | the two-sided cone | $\operatorname{End}_{LR}$ | dimension $7$, closed under composition |
 | the commutant | $\mathcal{S}'$ | $\{F:FS=SF\ \text{for every}\ S\in\mathcal{S}\}$ |
-| the structure isomorphism | $\Phi$ | $\tilde Q\otimes\tilde P\mapsto L_{\tilde Q}R_{\tilde P}$ |
+| the structure isomorphism | $\digamma_{\mathrm{map}}$ | $\tilde Q\otimes\tilde P\mapsto L_{\tilde Q}R_{\tilde P}$ |
 | the swap | $\sigma$ | $T_{\tilde Q,\tilde P}\mapsto T_{\tilde P,\tilde Q}$, antimultiplicative |
 | the quaternion conjugation | $\natural$ | the reversal, $\natural L_{\tilde Q}\natural=R_{\natural\tilde Q}$ |
 | the Hermitian conjugation | $*$ | $\tilde X^{*}=\overline{\tilde X^{\natural}}$ |

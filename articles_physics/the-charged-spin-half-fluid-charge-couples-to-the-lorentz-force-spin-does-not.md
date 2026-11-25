@@ -133,7 +133,7 @@ The contrast with the scalar fluid is exact and it is worth a table.
 | is $\mathrm{d}V$ the field strength? | yes, identically | no, for any field |
 | rank | $0$, $2$ or $4$ | $2$ for the proper part; the raw derivative reaches $4$ |
 | closed? | yes, $\mathrm{d}F=0$ | yes, by the Maurer–Cartan flatness of $\Gamma$ |
-| exact? | no, unless $\Phi_B=0$ on the loop | no, unless the holonomy is trivial |
+| exact? | no, unless $\digamma_{\mathrm{flx}}=0$ on the loop | no, unless the holonomy is trivial |
 
 The fourth row is the sharpest one, and it is exact. The vorticity proper — the part that annihilates the velocity — is rank two for every solution, because it is a two-form on the three dimensions of the rest space and every two-form on three dimensions is simple. The check was run twice: on a shear frame the four-dimensional singular values came out $0.150342$, $0.150342$, $0$, $0$; on a boost field whose rapidity varies in two directions and whose axis rotates, $0.19442$, $0.19442$, $0$, $0$, with the projected invariant $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}$ at $2.3\times10^{-19}$. The raw derivative of that same field is rank four — $0.20582$, $0.20582$, $0.02742$, $0.02742$ — and the difference between the two displays is the acceleration, which is the free article's point and not the coupling's.
 
@@ -160,7 +160,7 @@ The mechanical momentum adds the flux, and the sum has two factors. The canonica
 
 $$
 \oint\tilde P^{\mathrm{mech}}\cdot\mathrm{d}\vec l
-=\oint\tilde P^{\mathrm{can}}\cdot\mathrm{d}\vec l+ϙ\Phi_B,
+=\oint\tilde P^{\mathrm{can}}\cdot\mathrm{d}\vec l+ϙ\digamma_{\mathrm{flx}},
 $$
 
 and the canonical loop integral is the holonomy's. **The loop's invariant is therefore a Lorentz transformation multiplied by a phase**:
@@ -169,14 +169,14 @@ $$
 \text{the loop's transport}
 =\underbrace{\text{holonomy of }\tilde U_{\Psi,\mathrm b}}_{\text{a Lorentz transformation}}
 \times
-\underbrace{\exp\Bigl(\frac{2\pi iϙ\Phi_B}{h}\Bigr)}_{\text{a phase}},
+\underbrace{\exp\Bigl(\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h}\Bigr)}_{\text{a phase}},
 $$
 
 and the two factors commute because the second is central. The object is an element of $\mathbb{C}^{\ast}\times SL(2,\mathbb{C})$, and that is the honest description of a charged spin fluid's circulation: a rotation of the frame and a phase, and neither of them quantised.
 
 Why the scalar case is the special one. There the velocity was a gradient plus a potential, so the loop integral split into an integer and a flux and both terms were numbers. Here the velocity is a frame, so the loop integral is a group element before the potential is added and remains one after. The charge adds a phase to a Lorentz transformation; it does not turn the transformation into a number.
 
-What survives of the free article's statement. The free article records that the spin-half fluid's circulation is the holonomy and is therefore not quantised, and that the frozen-frame sector is where the circulation vanishes. Both survive, the first with the phase attached and the second with a qualification: a constant frame has a trivial holonomy and a constant flux still gives a phase, so the frozen-frame sector's circulation becomes $e^{\frac{2\pi iϙ\Phi_B}{h}}$ rather than unity. That is the smallest exact statement the article can make about the charge, and it is a statement about a loop and not about an event.
+What survives of the free article's statement. The free article records that the spin-half fluid's circulation is the holonomy and is therefore not quantised, and that the frozen-frame sector is where the circulation vanishes. Both survive, the first with the phase attached and the second with a qualification: a constant frame has a trivial holonomy and a constant flux still gives a phase, so the frozen-frame sector's circulation becomes $e^{\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h}}$ rather than unity. That is the smallest exact statement the article can make about the charge, and it is a statement about a loop and not about an event.
 
 ## The Gordon Split
 
@@ -259,7 +259,7 @@ The three relativistic charged articles can be put side by side, and the table i
 | is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |
 | the vorticity's rank | $0$, $2$ or $4$ | $2$ for the proper part | the free case's is $2$ |
-| the loop invariant | $h n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
+| the loop invariant | $h n/m+ϙ\digamma_{\mathrm{flx}}/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
 | the force | the Lorentz force, plus a quantum potential | the Lorentz force, and no torque | the covariant divergence, self-acting |
 | the stress | the quantum potential is in it; no EOS | the antisymmetric part is in it; no EOS | its own field strength is in it; stiff on $F=0$ |
 | the degenerate set | $\varrho=0$, codimension two | $\varrho=0$, codimension two | $\varrho=0$; the free case's lightlike wall is gone |
@@ -326,7 +326,7 @@ The spin direction is gauge invariant and coupling-blind, and the Larmor precess
 | $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ | The covariant wavevector |
 | $\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{ϙ}{h}\tilde A_\Phi$ | The canonical wavevector |
 | $\omega_{\imath\jmath}$ | The vorticity; the frame's gradient, proper part rank two |
-| $\Phi_B$ | The flux through a loop |
+| $\digamma_{\mathrm{flx}}$ | The flux through a loop |
 | $ϙ$ | The coupling |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 

@@ -4,7 +4,7 @@
 
 Irrotationality is not an assumption about how fluids behave; it is the statement that three components of the velocity are one datum. A flow whose curl vanishes is the gradient of a scalar, so its three velocity components are the three derivatives of one function. A flow whose curl does not vanish carries two further numbers at each point, and those two numbers have no place in a description that carries only a density and a potential. This article states the obstruction, states the exception, and says which curl is meant.ne case the algebra was built for.
 
-The obstruction is a lemma, not a physical law. If $\vec v=\vec\nabla_\Phi\Phi$ then $\vec\nabla_\Phi\times\vec v=0$ identically; conversely, if $\vec\nabla_\Phi\times\vec v=0$ on a simply connected domain then $\Phi$ exists. The converse is the Poincaré lemma, and its hypothesis is topological: the domain, not the flow. A flow with vanishing curl on a domain with a hole has a potential that is defined only up to a period around the hole. That period is the circulation, and it is the second subject of this article.
+The obstruction is a lemma, not a physical law. If $\vec v=\vec\nabla_\Phi\digamma_{\mathrm{vel}}$ then $\vec\nabla_\Phi\times\vec v=0$ identically; conversely, if $\vec\nabla_\Phi\times\vec v=0$ on a simply connected domain then $\digamma_{\mathrm{vel}}$ exists. The converse is the Poincaré lemma, and its hypothesis is topological: the domain, not the flow. A flow with vanishing curl on a domain with a hole has a potential that is defined only up to a period around the hole. That period is the circulation, and it is the second subject of this article.
 
 The exception is topological, and it is a hole in the domain. On a domain that is not simply connected the potential exists and is not single-valued: a loop that encircles the hole returns the potential to itself plus a constant, and that constant is the circulation. The point of the present article is that this exception is not a repair of the obstruction: it is the case in which the velocity *is* a gradient and the obstruction is the domain's, not the flow's.
 
@@ -51,15 +51,15 @@ A reader who takes the 2-form as the fluid's vorticity will call a flow irrotati
 **The vanishing of the curl is exactly the existence of a potential on a simply connected domain.** If $\vec\omega_{\mathrm{vrt}}=0$ everywhere on a domain that can be contracted to a point, there is a scalar $S$ with
 
 $$
-\vec v=\vec\nabla_\Phi\Phi ,
+\vec v=\vec\nabla_\Phi\digamma_{\mathrm{vel}} ,
 $$
 
-and $\Phi$ is unique up to an additive constant. The potential carries the dimension of a velocity times a length, which is the dimension its gradient must have.
+and $\digamma_{\mathrm{vel}}$ is unique up to an additive constant. The potential carries the dimension of a velocity times a length, which is the dimension its gradient must have.
 
 A velocity with vanishing curl is fixed by one scalar; a velocity with non-vanishing curl needs the scalar and two more functions. The Helmholtz decomposition states the split exactly,
 
 $$
-\vec v=\vec\nabla_\Phi\Phi+\vec\nabla_\Phi\times\vec A ,
+\vec v=\vec\nabla_\Phi\digamma_{\mathrm{vel}}+\vec\nabla_\Phi\times\vec A ,
 $$
 
 with $\vec A$ a vector potential defined up to a gradient. In three dimensions the curl of a vector has three components but only two are independent, because $\vec\nabla_\Phi\cdot(\vec\nabla_\Phi\times\vec A)=0$; those two are the data the potential cannot carry.
@@ -68,10 +68,10 @@ So the obstruction is a count and not a dynamical statement. A rotational flow i
 
 ## The Domain and the Winding
 
-On a domain with a hole the potential exists and is not single-valued. Take an annulus around an obstacle. The curl vanishes on the annulus, so $\Phi$ exists locally; a loop that encircles the hole returns $\Phi$ to itself plus a constant, and the constant is the circulation
+On a domain with a hole the potential exists and is not single-valued. Take an annulus around an obstacle. The curl vanishes on the annulus, so $\digamma_{\mathrm{vel}}$ exists locally; a loop that encircles the hole returns $\digamma_{\mathrm{vel}}$ to itself plus a constant, and the constant is the circulation
 
 $$
-\Gamma_{\mathrm{cir}}=\oint\vec v\cdot\mathrm{d}\vec r=\oint\nabla\Phi\cdot\mathrm{d}\vec r=\Delta_\Phi\Phi .
+\Gamma_{\mathrm{cir}}=\oint\vec v\cdot\mathrm{d}\vec r=\oint\nabla\digamma_{\mathrm{vel}}\cdot\mathrm{d}\vec r=\Delta_\Phi\digamma_{\mathrm{vel}} .
 $$
 
 The circulation is the period of the potential, and it is not fixed by the local equations.
@@ -118,7 +118,7 @@ Not claimed. It is not claimed that irrotational flows are the only flows a flui
 
 ## Summary
 
-A flow is irrotational when its curl vanishes, and on a simply connected domain that is exactly the condition for the velocity to be the gradient of a potential, $\vec v=\vec\nabla_\Phi\Phi$.
+A flow is irrotational when its curl vanishes, and on a simply connected domain that is exactly the condition for the velocity to be the gradient of a potential, $\vec v=\vec\nabla_\Phi\digamma_{\mathrm{vel}}$.
 
 The relativistic vorticity is the 2-form $\omega_{\imath\jmath}$ of the normalised four-velocity; the Galilean vorticity is the curl of $\vec v$. They differ by $\vec\nabla_\Phi\gamma\times\vec v$, so a flow can be irrotational in one reading and not in the other. The fluid of this section uses the Galilean one.
 
@@ -139,7 +139,7 @@ A rotational flow is the generic case, and its vorticity is conserved in two dim
 | $\omega_{\imath\jmath}=\partial_{\imath} u_{\jmath}-\partial_{\jmath} u_{\imath}$ | Relativistic vorticity 2-form |
 | $u_{\imath}$ | Components of the normalised four-velocity |
 | $\gamma=1/\sqrt{1-\lvert\vec v\rvert^{2}/c^{2}}$ | Lorentz factor |
-| $\Phi$ | Velocity potential; $\vec v=\vec\nabla_\Phi\Phi$ |
+| $\digamma_{\mathrm{vel}}$ | Velocity potential; $\vec v=\vec\nabla_\Phi\digamma_{\mathrm{vel}}$ |
 | $\vec A$ | Vector potential of the rotational part |
 | $\Gamma_{\mathrm{cir}}=\oint\vec v\cdot\mathrm{d}\vec r$ | Circulation around a loop |
 | $\rho_{\mathrm{num}}$ | Number density of markers |

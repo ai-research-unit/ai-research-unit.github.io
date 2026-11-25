@@ -127,15 +127,15 @@ the normalisation of that vev is the scalar sector's business, and the overall s
 ## The Charged Block: Two Fields, Two Vacua, No Off-Diagonal
 
 **The fields and the vacua.** The charged block is spanned by $W^{+}_{L}$ and $W^{+}_{R}$. It is fed by two fields, each with one weak index: $H$ is a left
-doublet and a right singlet, and $\Phi$ is the reverse. **So each field gives a mass to its own pair and to nothing else**, and no operator connects $W_L$
+doublet and a right singlet, and $Ξ$ is the reverse. **So each field gives a mass to its own pair and to nothing else**, and no operator connects $W_L$
 to $W_R$ at tree level.
 
-**The two masses.** With $\langle H\rangle$ along the lower component and $\langle\Phi\rangle$ along the lepton line of the right doublet,
+**The two masses.** With $\langle H\rangle$ along the lower component and $\langleΞ\rangle$ along the lepton line of the right doublet,
 
 $$
 (D_\mu H)^{\dagger}(D_\mu H)\supset\tfrac14g_L^{2}v^{2}\,W^{+}_{L}W^{-}_{L},
 \qquad
-(D_\mu\Phi)^{\dagger}(D_\mu\Phi)\supset\tfrac14g_R^{2}v_C^{2}\,W^{+}_{R}W^{-}_{R},
+(D_\muΞ)^{\dagger}(D_\muΞ)\supset\tfrac14g_R^{2}v_C^{2}\,W^{+}_{R}W^{-}_{R},
 $$
 
 and the block is diagonal:

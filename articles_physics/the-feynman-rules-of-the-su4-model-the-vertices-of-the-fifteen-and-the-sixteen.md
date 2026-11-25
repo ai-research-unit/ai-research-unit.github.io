@@ -2,12 +2,12 @@
 
 ## Introduction
 
-**The group is one group, the coupling is one coupling, and the rules follow from three lines.** The fifteen are the generators of $\mathfrak{su}(4)$; the sixteen are two quartets and two antiquartets of Weyl fields; one covariant derivative couples them. **Everything below is transcription plus one rescaling**, and the rescaling is the only place a convention can go wrong.
+**The group is one group, the coupling is one coupling, and the rules follow from three lines.** The fifteen are the generators of $\mathfrak{su}(4)$; the sixteen are two quartets and two antiquartets of Weyl fields; one covariant derivative couples them. **Everything below is transcription plus one rotation and three rescalings**, and the rescaling is the only place a convention can go wrong.
 
 **Four things carry the weight.**
 
 - **The vertex list.** The fifteen fields against the sixteen fermions, read entry by entry off the printed arrays. **There are $64$ nonzero entries on the quartet half and $64$ on the conjugate half, so $128$ in all**, and the split is $48+8+8$ per half: twelve planes, two colour diagonals, and the corner, each counted with its two copies.
-- **The normalisation.** The printed arrays are not orthonormal in the trace. **Fourteen of them have $\operatorname{tr}(G^{\dagger}G)=2$ and the corner has $12$**, and one pair is not even orthogonal. A canonical kinetic term therefore forces a family-dependent rescaling, and that rescaling is the whole of §*The Normalisation, Before Any Rule*.
+- **The normalisation.** The printed arrays are not orthonormal in the trace. **Thirteen have $\operatorname{tr}(G^{\dagger}G)=2$, the rotated colour diagonal has $6$ and the corner has $12$**, and one pair is not even orthogonal. A canonical kinetic term therefore forces a family-dependent rescaling, and that rescaling is the whole of §*The Normalisation, Before Any Rule*.
 - **The two-index rule.** Every fermion–gauge vertex is $X\otimes\mathbb 1_{2}$: an array on the quartet times the identity on the copy index. **A gauge rotation cannot tell the two copies apart**, and that one bracket decides the shape of the whole table.
 - **One coupling, and no ratio.** $g_4$ stays symbolic. **The model has no second coupling, so it has no coupling ratio to fix and no matching problem to inherit.**
 
@@ -38,7 +38,7 @@ $$
 $$
 \mathcal{L}=-\tfrac14\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath}
 +\sum_{f}\bar\xi_{f}\Bigl(-i\sum_{\imath}\gamma_{\imath}D_{\imath}\Bigr)\xi_{f}
-+\operatorname{tr}\bigl(D_{\imath}\Phi\bigr)^{\dagger}\bigl(D_{\imath}\Phi\bigr)-V(\Phi)
++\operatorname{tr}\bigl(D_{\imath}Ξ\bigr)^{\dagger}\bigl(D_{\imath}Ξ\bigr)-V(Ξ)
 +\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}+\mathcal{L}_{\mathrm{Yuk}} .
 $$
 
@@ -46,14 +46,14 @@ $$
 | --- | --- | --- |
 | $-\tfrac14\sum FF$ | the fifteen | three-gauge and four-gauge |
 | fermion kinetic | the sixteen | fermion–gauge, one matrix per generator |
-| scalar kinetic | $\Phi$, sixteen real components | gauge–scalar, two- and three-point |
-| $V(\Phi)$ | $\Phi$ | scalar self-couplings, four-point and lower |
+| scalar kinetic | $Ξ$, sixteen real components | gauge–scalar, two- and three-point |
+| $V(Ξ)$ | $Ξ$ | scalar self-couplings, four-point and lower |
 | $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{\mathrm{gh}}$ | fifteen ghosts | ghost–gauge |
-| $\mathcal{L}_{\mathrm{Yuk}}$ | fermions and $\Phi$ | Yukawa, one matrix in the family index |
+| $\mathcal{L}_{\mathrm{Yuk}}$ | fermions and $Ξ$ | Yukawa, one matrix in the family index |
 
 **The gauge block is where the corpus is strongest and the fermion block is where it is thinnest**, and the rules inherit the asymmetry. **The three-gauge vertices are exact**, computed from the bracket table; **the fermion–gauge vertex is exact as a matrix and imported as a dynamical statement.**
 
-**The scalar is the Hermitian $4\times4$, and its size is the algebra's.** $\mathbf{15}\oplus\mathbf1$ is a traceless part of fifteen real entries plus a real trace: $15+1=16$ real components, and $\dim\mathrm{SU}(4)=15$ is where the fifteen comes from. The condensate is $\langle\Phi\rangle=v\operatorname{diag}(-3,1,1,1)$, and $15-9=6$ of its components are eaten by the sextet. **The matrix index is not a choice**: $\bar\xi\Phi\xi$ is a singlet only for $\Phi\in\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$, while $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ has no $\bar{\mathbf4}$. The count is [the classification](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html)'s, and [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) is the census behind it.
+**The scalar is the Hermitian $4\times4$, and its size is the algebra's.** $\mathbf{15}\oplus\mathbf1$ is a traceless part of fifteen real entries plus a real trace: $15+1=16$ real components, and $\dim\mathrm{SU}(4)=15$ is where the fifteen comes from. The condensate is $\langleΞ\rangle=v\operatorname{diag}(-3,1,1,1)$, and $15-9=6$ of its components are eaten by the sextet. **The matrix index is not a choice**: $\bar\xiΞ\xi$ is a singlet only for $Ξ\in\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$, while $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ has no $\bar{\mathbf4}$. The count is [the classification](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html)'s, and [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) is the census behind it.
 
 ## The Normalisation, Before Any Rule
 
@@ -67,23 +67,24 @@ $$
 
 **One pair is not orthogonal, and it is the only one.** The Gram matrix of the fifteen has exactly one nonzero off-diagonal entry, $\langle d_{2},d_{3}\rangle=-1$; every other pair is orthogonal. **So the printed fifteen are a basis and not an orthonormal frame**, and the Gram is positive definite with eigenvalues $1$, twelve copies of $2$, $3$ and $12$.
 
-**The repair is one rotation and then one rescaling.**
+**The repair is one rotation and then three rescalings.**
 
 $$
 c_{2}=d_{2}+d_{3},\qquad c_{3}=d_{2}-d_{3},\qquad
 \langle c_{2},c_{2}\rangle=2,\quad \langle c_{3},c_{3}\rangle=6,\quad \langle c_{2},c_{3}\rangle=0 .
 $$
 
-**After the rotation the fifteen are orthogonal, and the norms are $2$ for fourteen arrays and $12$ for the corner.** A canonical kinetic term $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ then fixes
+**After the rotation the fifteen are orthogonal, with norm $2$ for thirteen of them, $6$ for $c_{3}$ and $12$ for the corner.** A canonical kinetic term $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ then fixes
 
 $$
-t_{a}=\frac{iG_{a}}{2}\ \ (14\ \text{arrays}),\qquad
+t_{a}=\frac{iG_{a}}{2}\ \ (13\ \text{arrays}),\qquad
+t_{c_{3}}=\frac{i(d_{2}-d_{3})}{\sqrt{12}}\ \ (c_{3}),\qquad
 t_{15}=\frac{iG_{15}}{\sqrt{24}}\ \ (\text{the corner}),
 $$
 
-so the corner's coupling is weaker than the planes' by $\sqrt{2/24}=0.2887$. **That number is a consequence of the trace, not of the group**: the corner is the one diagonal removed from the fundamental, and it is longer by $\sqrt6$.
+so the corner's coupling is weaker than a plane's by $2/\sqrt{24}=1/\sqrt6=0.4082$, and $c_{3}$'s by $1/\sqrt3$. **Those numbers are consequences of the trace, not of the group**: the corner is the one diagonal removed from the fundamental and is longer than a plane by $\sqrt6$, and $c_{3}$ by $\sqrt3$.
 
-**Why this matters for every rule below.** A vertex read off the printed array is off by this factor, and a cross section read off a vertex is off by its square. **The factor is $1/2$ against the corner and $1$ against the planes**, and it is stated once here so that no table has to repeat it.
+**Why this matters for every rule below.** A vertex read off the printed array is off by this factor, and a cross section read off a vertex is off by its square. **Relative to the printed arrays the coefficient is $1/2$ for the planes, $1/\sqrt{12}$ for $c_{3}$ and $1/\sqrt{24}$ for the corner**; relative to one another the three families stand as $1:\tfrac{1}{\sqrt3}:\tfrac{1}{\sqrt6}$ for the plane, $c_{3}$ and the corner. **The table below states the corner's ratio once, so that no other table has to repeat it.**
 
 ## Propagators
 
@@ -96,7 +97,7 @@ so the corner's coupling is weaker than the planes' by $\sqrt{2/24}=0.2887$. **T
 | the sextet $X^{\alpha}$, $\bar X^{\alpha}$ | $6$ | $32v^{2}$ | $i\delta_{ab}(-g_{\imath\jmath}+k_{\imath}k_{\jmath}/m^{2})/(k^{2}-m^{2}+i\epsilon)$ |
 | the fifteen ghosts | $15$ | $0$ on nine, $\xi\,32v^{2}$ on six | $i\delta_{ab}/(k^{2}-\xi m^{2}+i\epsilon)$ |
 | the sixteen fermions | $16$ | $0$ | $i\bar\sigma^{\imath}k_{\imath}/k^{2}$ per Weyl field |
-| $\Phi$'s ten surviving components | $10$ | $2\lambda_{1}v^{2}$ on the radial mode at $\lambda_{2}=0$ | $i/(k^{2}-m^{2}+i\epsilon)$ |
+| $Ξ$'s ten surviving components | $10$ | $2\lambda_{1}v^{2}$ on the radial mode at $\lambda_{2}=0$ | $i/(k^{2}-m^{2}+i\epsilon)$ |
 
 **There is no mixing matrix to invert.** A four-factor propagator section would have to rotate four neutral fields and produce a photon and a $Z$; **here the mass matrix is already diagonal in the basis of planes, and the rotation is the identity.** The mixing below $M_C$ is downstream, and it is not in this Lagrangian.
 
@@ -165,9 +166,9 @@ $$
 
 **The ghost–gauge vertex is $g_{4}f_{abc}k_{\imath}$**, with the momentum on the outgoing ghost. **The count of nonzero vertices is again $29$ triples**, and the vanishing ones vanish for the same reason.
 
-**The scalar vertices come from the kinetic term and the potential, and the model fixes neither coupling.** The gauge–scalar two-point vertex is the mass matrix restricted to the six eaten directions; the three-point vertex is $g_{4}$ times the commutator acting on $\Phi$. **The potential $V(\Phi)$ is written with a mass and two quartics, and the model predicts none of them**: $v$ is a ratio of the three, and the radial mass is the second derivative of $V$ along the condensate (*The Primordial Potential*).
+**The scalar vertices come from the kinetic term and the potential, and the model fixes neither coupling.** The gauge–scalar two-point vertex is the mass matrix restricted to the six eaten directions; the three-point vertex is $-2ig_{4}$ times $\operatorname{tr}(\partial_{\imath}Ξ[t_{a},Ξ])$, **with the $2$ from the commutator's two orderings and the $i$ from the covariant derivative** — a vertex quoted as $g_4$ times the commutator is off by that factor. **The potential $V(Ξ)$ is written with a mass and two quartics, and the model predicts none of them**: $v$ is a ratio of the three, and the radial mass is the second derivative of $V$ along the condensate (*The Primordial Potential*).
 
-**The eaten six and the surviving ten.** Six components of $\Phi$ become the longitudinal polarisations of the sextet; **the remaining ten are physical here**, one radial mode and nine orthogonal to the vacuum. **An eaten component has no propagator of its own**, and a table that lists sixteen scalar propagators is listing six that do not exist.
+**The eaten six and the surviving ten.** Six components of $Ξ$ become the longitudinal polarisations of the sextet; **the remaining ten are physical here**, one radial mode and nine orthogonal to the vacuum. **An eaten component has no propagator of its own**, and a table that lists sixteen scalar propagators is listing six that do not exist.
 
 ## What the Rules Do Not Contain
 
@@ -187,10 +188,10 @@ $$
 | nonzero array entries | twelve planes $2$ each, two diagonals $2$ each, corner $4$ | $32$ |
 | fermion–gauge entries per half | $32\times2$ copies | $64$ |
 | fermion–gauge entries in all | $64+64$ | $128$ |
-| trace norms | fourteen at $2$, the corner at $12$ | $2$, $2$, $12$ |
+| trace norms | thirteen at $2$, $c_{3}$ at $6$, the corner at $12$ | $2$, $6$, $12$ |
 | off-diagonal Gram | one pair, $\langle d_{2},d_{3}\rangle=-1$ | $-1$ |
 | orthogonal basis | $c_{2}=d_{2}+d_{3}$, $c_{3}=d_{2}-d_{3}$ | norms $2$, $6$ |
-| corner rescaling | $\sqrt{2/24}$ | $0.289$ |
+| corner rescaling | $2/\sqrt{24}=1/\sqrt6$ | $0.408$ |
 | spectrum | $15=9+6$ | nine at $0$, six at $32v^{2}$ |
 | stabiliser | $[D,T_{a}]=0$ on the nine | $9$ |
 | nonzero brackets | of $105$ pairs | $80$ |
@@ -200,9 +201,9 @@ $$
 
 ## Summary
 
-**One covariant derivative, one coupling, fifteen fields, sixteen fermions.** The fermion–gauge vertex is $X\otimes\mathbb 1_{2}$ and has $128$ nonzero entries; the three-gauge vertex is $f_{abc}$ with $29$ nonzero triples; the spectrum is nine massless and six at $32v^{2}$; and the scalar is a $4\times4$ matrix with sixty-four real components, six of them eaten by the sextet and three more by the copy index.
+**One covariant derivative, one coupling, fifteen fields, sixteen fermions.** The fermion–gauge vertex is $X\otimes\mathbb 1_{2}$ and has $128$ nonzero entries; the three-gauge vertex is $f_{abc}$ with $29$ nonzero triples; the spectrum is nine massless and six at $32v^{2}$; and the scalar is a $4\times4$ Hermitian matrix with sixteen real components, six of them eaten by the sextet. **No copy index acts on the scalar**: the copy index is a fermion label, so it eats nothing.
 
-**The normalisation is the only place a convention can go wrong**, and it is fixed by one number: the corner is $\sqrt6$ longer than the planes, so its coupling is $0.2887$ of theirs after a canonical kinetic term.
+**The normalisation is the only place a convention can go wrong**, and it is fixed by two lengths: the corner is $\sqrt6$ longer than a plane and $c_{3}$ is $\sqrt3$ longer, so their couplings are $0.4082$ and $0.5774$ of a plane's after a canonical kinetic term.
 
 **What the rules do not contain is the low-energy list**, and it is short because the group is one group: no $W$, no $Z$, no photon, no mixing matrix, no coupling ratio, and no fermion mass without the condensate.
 
@@ -215,7 +216,7 @@ $$
 | $t_{a}$ | the generator rescaled to $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ |
 | $A_{a,\imath}$ | the fifteen gauge fields |
 | $\xi_{i}$, $\bar\xi^{i}$ | the quartet and conjugate-quartet Weyl fields, two copies each |
-| $\Phi$ | the Hermitian $4\times4$ scalar, sixteen real components |
+| $Ξ$ | the Hermitian $4\times4$ scalar, sixteen real components |
 | $D=\operatorname{diag}(-3,1,1,1)$ | the condensate direction |
 | $d_{2}$, $d_{3}$, $c_{2}$, $c_{3}$ | the two colour diagonals and their orthogonal combinations |
 | $f_{abc}$ | the structure constants of the fifteen |

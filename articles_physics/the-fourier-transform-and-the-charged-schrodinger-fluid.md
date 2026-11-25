@@ -78,22 +78,22 @@ The first two rows are the theorem and the last two are the illustration. The th
 **A mode carries the flux quantum and not the winding quantum.** The charged companion's circulation is
 
 $$
-\oint\vec\pi\cdot\mathrm{d}\vec l=h\,n+\varkappa\Phi_B ,
+\oint\vec\pi\cdot\mathrm{d}\vec l=h\,n+\varkappa\digamma_{\mathrm{flx}} ,
 \qquad
-\Phi_B=\int_S\vec B\cdot\mathrm{d}\vec S ,
+\digamma_{\mathrm{flx}}=\int_S\vec B\cdot\mathrm{d}\vec S ,
 $$
 
 around a loop that links a nodal line of winding $n$. A mode has no node, as the free companion's §*The Mode, and the One Bracket It Occupies* shows, so $n=0$ and what remains is
 
 $$
-\oint\vec\pi\cdot\mathrm{d}\vec l=\varkappa\Phi_B .
+\oint\vec\pi\cdot\mathrm{d}\vec l=\varkappa\digamma_{\mathrm{flx}} .
 $$
 
 That is exact and it is the only circulation a single mode has. The quantum of winding is inter-mode and the quantum of flux is not; the first needs a pair of waves and the second needs only a field. In the free rung both terms were absent at a mode; here one of the two survives, and the one that survives is the one the connection supplies.
 
-The statement is the Aharonov–Bohm phase, read on a loop. The flux term is the phase $\exp(\frac{2\pi i\varkappa\Phi_B}{h})$ that a mode acquires on going round, and it is there whether or not the field strength vanishes on the loop. A mode's loop datum is therefore a phase and not the integer, and the integer appears only when a second mode is added and a node exists.
+The statement is the Aharonov–Bohm phase, read on a loop. The flux term is the phase $\exp(\frac{2\pi i\varkappa\digamma_{\mathrm{flx}}}{h})$ that a mode acquires on going round, and it is there whether or not the field strength vanishes on the loop. A mode's loop datum is therefore a phase and not the integer, and the integer appears only when a second mode is added and a node exists.
 
-The objection, and the answer. The objection is that the flux term is a gauge artefact in a simply connected region with vanishing curvature, so a mode's circulation is removable. The answer is that it is removable iff $\Phi_B$ is a multiple of $h/\varkappa$ on the loops at issue, and that on a loop that links a flux the integral is not removable in any single-valued gauge. The quantum of flux is a statement about the topology of the region and the quantum of winding is a statement about the topology of the field, and a mode has only the first.
+The objection, and the answer. The objection is that the flux term is a gauge artefact in a simply connected region with vanishing curvature, so a mode's circulation is removable. The answer is that it is removable iff $\digamma_{\mathrm{flx}}$ is a multiple of $h/\varkappa$ on the loops at issue, and that on a loop that links a flux the integral is not removable in any single-valued gauge. The quantum of flux is a statement about the topology of the region and the quantum of winding is a statement about the topology of the field, and a mode has only the first.
 
 ## Two Supports, One Field
 
@@ -117,7 +117,7 @@ The denial. Every object is an element of $\mathbb{B}$ or a coefficient of one, 
 
 2. A mode in a uniform field. A uniform $\vec B$ admits no mode, so the fluid's rotation in a uniform field is not analysable mode by mode at all. Whether the Landau levels of the standard theory are the right image of that statement in this chart, and whether the fluid's velocity is the drift or the gyration, is not established here and the article claims nothing about it.
 
-3. The flux quantum without a node. §*The Circulation of a Mode* finds $\varkappa\Phi_B$ for a mode with no node. Whether a single mode on a topologically non-trivial region is a legitimate solution of the equation in this chart, given that the chart needs the field nowhere zero and the region has a hole, is a question about the domain and not about the transform.
+3. The flux quantum without a node. §*The Circulation of a Mode* finds $\varkappa\digamma_{\mathrm{flx}}$ for a mode with no node. Whether a single mode on a topologically non-trivial region is a legitimate solution of the equation in this chart, given that the chart needs the field nowhere zero and the region has a hole, is a question about the domain and not about the transform.
 
 ## Summary
 
@@ -129,7 +129,7 @@ A connection with curvature is not a multiplier. Its transform is a derivative o
 
 **So the mode basis is the mode basis of the flat connections, and the vorticity is exactly what it cannot carry.** The fluid's rotation is invisible to the Fourier decomposition by construction, and the one gauge-invariant object of the momentum-space reading is the curvature.
 
-A mode carries the flux quantum and not the winding quantum: its circulation is $\varkappa\Phi_B$ and not $h n+\varkappa\Phi_B$, because a mode has no node. The winding quantum is inter-mode and the flux quantum is not.
+A mode carries the flux quantum and not the winding quantum: its circulation is $\varkappa\digamma_{\mathrm{flx}}$ and not $h n+\varkappa\digamma_{\mathrm{flx}}$, because a mode has no node. The winding quantum is inter-mode and the flux quantum is not.
 
 The field has two supports, the free shell in the canonical variable and the translated shell in the kinetic one, and they are the same states in two charts. The velocity is read from the kinetic label, so the chart in which the fluid's velocity is the label is the chart in which the support is translated.
 
@@ -144,7 +144,7 @@ The field has two supports, the free shell in the canonical variable and the tra
 | $\vec v=\vec\pi/m$ | The velocity |
 | $\vec B=\vec\nabla_\Phi\times\vec A$, $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$ | The field strength |
 | $\vec\omega=\varkappa\vec B/m$ | The vorticity; the curvature |
-| $\Phi_B$ | The flux through a loop's spanning surface |
+| $\digamma_{\mathrm{flx}}$ | The flux through a loop's spanning surface |
 | $\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{\varkappa\tilde A_\Phi}{h}$ | The canonical label less the potential |
 | $n$ | The winding of a loop around a nodal line; zero at a mode |
 | $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | The gauge element; central |

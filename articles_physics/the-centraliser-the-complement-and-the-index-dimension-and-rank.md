@@ -190,7 +190,7 @@ $$
 
 | | the breaking | the birth |
 | --- | --- | --- |
-| object acted on | the algebra $\mathfrak{su}(4)$ | the representation of $\Phi$ |
+| object acted on | the algebra $\mathfrak{su}(4)$ | the representation of $Ξ$ |
 | operation | centraliser of $iD$ | the $\mathbf 2$ index |
 | rank change | $3\to3$ | $3\to5$ |
 | dimension change | $15\to9$ | $9\to15$ |
@@ -252,7 +252,7 @@ An index is not a sector. The whole economy of the construction is that the weak
 | $\mathfrak s(\mathfrak u(2)\oplus\mathfrak u(2))$ | the weak pair plus $B-L$, dimension $7$ |
 | $\operatorname{Ad}_g$ | conjugation by $g$, which preserves brackets and closure dimensions |
 | $[\mathfrak a,\mathfrak a]$ | the span of all brackets of elements of $\mathfrak a$ |
-| $\Phi$ | the transition's scalar, whose $\mathbf 2$ index is the arriving factor |
+| $Ξ$ | the transition's scalar, whose $\mathbf 2$ index is the arriving factor |
 | $\lambda$ | the index of a multiplet, the object that can carry a factor |
 
 ## Further Reading

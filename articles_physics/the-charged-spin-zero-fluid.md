@@ -141,16 +141,16 @@ The circulation is the canonical winding plus the flux, and the two terms have d
 $$
 \oint\tilde P^{\mathrm{mech}}\cdot\mathrm{d}\vec l
 =\oint\vec p\cdot\mathrm{d}\vec l+ϙ\oint\vec A\cdot\mathrm{d}\vec l
-=h\,n+ϙ\,\Phi_B,
+=h\,n+ϙ\,\digamma_{\mathrm{flx}},
 $$
 
 the first term because $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ is a gradient and the phase's single valuedness makes its circulation an integer multiple of $h$, the second because the circulation of the vector potential is the magnetic flux through any surface the loop bounds.
 
-The canonical quantisation is untouched and the mechanical one is shifted. [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) proves that a loop linking a nodal line carries $\oint\vec p\cdot\mathrm{d}\vec l=h n$, and that the circulation of $\vec p/m$ is $hn/m$. That statement is unchanged, because it is a statement about the angle and the nodes and neither the coupling nor the connection enters it. What the coupling changes is the fluid's circulation, and it changes it by the flux: $\omega=ϙF/m$, so the loop integral of the velocity is $h n/m+ϙ\Phi_B/m$.
+The canonical quantisation is untouched and the mechanical one is shifted. [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) proves that a loop linking a nodal line carries $\oint\vec p\cdot\mathrm{d}\vec l=h n$, and that the circulation of $\vec p/m$ is $hn/m$. That statement is unchanged, because it is a statement about the angle and the nodes and neither the coupling nor the connection enters it. What the coupling changes is the fluid's circulation, and it changes it by the flux: $\omega=ϙF/m$, so the loop integral of the velocity is $h n/m+ϙ\digamma_{\mathrm{flx}}/m$.
 
-The flux term survives where the field strength vanishes on the loop. A loop encircling a solenoid has $\vec B=0$ on itself and $\Phi_B\ne0$ through it, so its mechanical circulation is shifted while its vorticity is zero at every point it passes. **The fluid's circulation is therefore not determined by the vorticity it carries**, because the potential is not determined by the field. The free article's identification of circulation with the winding of one function is exactly what the coupling breaks, and the break is topological and not dynamical.
+The flux term survives where the field strength vanishes on the loop. A loop encircling a solenoid has $\vec B=0$ on itself and $\digamma_{\mathrm{flx}}\ne0$ through it, so its mechanical circulation is shifted while its vorticity is zero at every point it passes. **The fluid's circulation is therefore not determined by the vorticity it carries**, because the potential is not determined by the field. The free article's identification of circulation with the winding of one function is exactly what the coupling breaks, and the break is topological and not dynamical.
 
-What that earns and what it does not. The relation $h n+ϙ\Phi_B$ is the flux-quantisation condition of a charged condensate, and the free article refuses the superfluid identification on the ground that the object is one element and not a condensate. **The charged fluid earns the kinematic half of that identification and not the dynamical half**: its vorticity is locked to the flux and its circulation is quantised up to the flux, and it still has no order parameter, no condensate and no second sound. The analogy is with a charged fluid carrying its own field, which is the same conclusion the Proca article of the block reaches from the other end.
+What that earns and what it does not. The relation $h n+ϙ\digamma_{\mathrm{flx}}$ is the flux-quantisation condition of a charged condensate, and the free article refuses the superfluid identification on the ground that the object is one element and not a condensate. **The charged fluid earns the kinematic half of that identification and not the dynamical half**: its vorticity is locked to the flux and its circulation is quantised up to the flux, and it still has no order parameter, no condensate and no second sound. The analogy is with a charged fluid carrying its own field, which is the same conclusion the Proca article of the block reaches from the other end.
 
 ## The Force
 
@@ -220,7 +220,7 @@ Twelve statements, each one line, and each with its reason. This is what the cha
 3. The velocity is the mechanical momentum over the mass, and it is the only velocity the fluid has. It is invertible exactly where $Q_{\mathrm{qnt}}$ vanishes, as before.
 4. The flow is irrotational exactly where the field strength vanishes. $\omega=ϙF/m$, exact, with no quantum correction.
 5. The vorticity's rank is the field strength's: $0$, $2$ or $4$, and $4$ exactly where $\vec E\cdot\vec B\ne0$. No free fluid of the block reaches rank four with its vorticity proper.
-6. The circulation is $h n+ϙ\Phi_B$, and the flux term survives on a loop where the field strength vanishes.
+6. The circulation is $h n+ϙ\digamma_{\mathrm{flx}}$, and the flux term survives on a loop where the field strength vanishes.
 7. The canonical circulation is untouched. $\oint\vec p\cdot\mathrm{d}\vec l=h n$ still comes from the nodes and the coupling does not enter it.
 8. The force is the Lorentz force plus the free quantum gradient, and the free acceleration law is the $ϙ=0$ case of the coupled one, term for term.
 9. There is no new stress. The quantum stress is the free article's Korteweg stress, unchanged, and the field's stress is the field's.
@@ -240,7 +240,7 @@ The three relativistic charged articles can be put side by side, and the table i
 | is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |
 | the vorticity's rank | $0$, $2$ or $4$ | $2$ for the proper part | the free case's is $2$ |
-| the loop invariant | $h n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
+| the loop invariant | $h n/m+ϙ\digamma_{\mathrm{flx}}/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
 | the force | the Lorentz force, plus a quantum potential | the Lorentz force, and no torque | the covariant divergence, self-acting |
 | the stress | the quantum potential is in it; no EOS | the antisymmetric part is in it; no EOS | its own field strength is in it; stiff on $F=0$ |
 | the degenerate set | $\varrho=0$, codimension two | $\varrho=0$, codimension two | $\varrho=0$; the free case's lightlike wall is gone |
@@ -272,7 +272,7 @@ What the correspondence supports and what it does not. It supports the claim tha
 
 ## What Is Established and What Is Interpretation
 
-Established. The type table, and with it the statement that the coupling can reach the scale and the phase brackets and no others. The mechanical momentum as the canonical one plus the potential, and the velocity as that over the mass. The gauge invariance of the velocity, the charge density and the current, from a cancellation inside one bracket. The vorticity as $ϙF/m$, exactly, with the rank statement and the three-row singular-value table. The circulation as $h n+ϙ\Phi_B$, and the survival of the flux term where the field strength vanishes on the loop. The acceleration law as the free one plus the Lorentz term, with the identity verified symbolically in both slots. The invariance of the quantum potential, the Korteweg class of the stress, and the absence of an equation of state. The movement of the charge-sign boundary with the potential, and its gauge invariance. The reverse map's domain as a set of triples, well defined on gauge orbits.
+Established. The type table, and with it the statement that the coupling can reach the scale and the phase brackets and no others. The mechanical momentum as the canonical one plus the potential, and the velocity as that over the mass. The gauge invariance of the velocity, the charge density and the current, from a cancellation inside one bracket. The vorticity as $ϙF/m$, exactly, with the rank statement and the three-row singular-value table. The circulation as $h n+ϙ\digamma_{\mathrm{flx}}$, and the survival of the flux term where the field strength vanishes on the loop. The acceleration law as the free one plus the Lorentz term, with the identity verified symbolically in both slots. The invariance of the quantum potential, the Korteweg class of the stress, and the absence of an equation of state. The movement of the charge-sign boundary with the potential, and its gauge invariance. The reverse map's domain as a set of triples, well defined on gauge orbits.
 
 The comparison is established as a table and not as a claim. Every entry of §*The Three Charged Fluids* is a statement proved in one of the three charged articles, and the entries are what make the comparison systematic: the word's count, the density, the velocity, the vorticity's form and rank, the circulation, where the charge lands, the stress, the equation of state, the compressibility, the degenerate set, and what closes the system.
 
@@ -288,7 +288,7 @@ The connection is central per component, so it merges with the scale and the pha
 
 The density is $\varrho^{2}$ and the conserved density is the mechanical phase rate times it, gauge invariant where the free one was not. The velocity is $\tilde P^{\mathrm{mech}}/m$, an invertible element exactly where the quantum potential vanishes and no longer a gradient.
 
-The vorticity is $ϙF/m$ exactly, so the fluid is irrotational exactly where the field strength vanishes. Its rank is $0$, $2$ or $4$, and four exactly where $\vec E\cdot\vec B\ne0$, which is the rank no free fluid of the block reaches with its vorticity proper. The circulation is $h n+ϙ\Phi_B$, and the flux term survives where the field strength vanishes on the loop.
+The vorticity is $ϙF/m$ exactly, so the fluid is irrotational exactly where the field strength vanishes. Its rank is $0$, $2$ or $4$, and four exactly where $\vec E\cdot\vec B\ne0$, which is the rank no free fluid of the block reaches with its vorticity proper. The circulation is $h n+ϙ\digamma_{\mathrm{flx}}$, and the flux term survives where the field strength vanishes on the loop.
 
 The force is the Lorentz force plus the free quantum gradient, $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and it comes from the one gradient of the coupled mass shell. The quantum potential, the Korteweg stress and the absence of an equation of state are untouched, because the field is external and the amplitude is untouched.
 
@@ -312,7 +312,7 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gaug
 | $\rho_{\mathrm{chg}}$ | The conserved density; $c\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}(E+ϙca'_t)/m$ |
 | $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$ | The field strength; $\det F$ is $(\vec E\cdot\vec B)^{2}$ up to a factor |
 | $\omega_{\imath\jmath}$ | The vorticity; $\omega=ϙF/m$ |
-| $\Phi_B$ | The flux through a loop; $\oint\vec A\cdot\mathrm{d}\vec l$ |
+| $\digamma_{\mathrm{flx}}$ | The flux through a loop; $\oint\vec A\cdot\mathrm{d}\vec l$ |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; untouched by the coupling |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 

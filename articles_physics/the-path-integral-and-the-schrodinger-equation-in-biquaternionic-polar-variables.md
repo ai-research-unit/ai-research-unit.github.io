@@ -167,7 +167,7 @@ The kernel's word is scale = van Vleck, angle = classical action over $\frac{h}{
 - *The Path Integral and the Dirac Equation in Biquaternionic Polar Variables*, for a kernel whose word is degenerate in no factor.
 - E. Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* 40 (1927) 322–326, for the density–phase pair.
 - D. Bohm, "A Suggested Interpretation of the Quantum Theory in Terms of Hidden Variables I," *Physical Review* 85 (1952) 166–179, for the quantum potential.
-- T. Takabayasi, "Remarks on the Formulation of Quantum Mechanics with Classical Pictures," *Progress of Theoretical Physics* 9 (1953) 187–222, for the hydrodynamic reading of the action.
+- T. Takabayasi, "Remarks on the Formulation of Quantum Mechanics with Classical Pictures," *Progress of Theoretical Physics* 9 (1953) 187–222, for the fluid reading of the action.
 - R. P. Feynman and A. R. Hibbs, *Quantum Mechanics and Path Integrals* (McGraw-Hill, 1965), for the Fresnel measure and the free kernel.
 - H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 2009), for the Jacobian of the polar chart and the Duru–Kleinert transformation.
 - V. P. Maslov and M. V. Fedoriuk, *Semi-Classical Approximation in Quantum Mechanics* (Reidel, 1981), for the phase constant at a caustic.

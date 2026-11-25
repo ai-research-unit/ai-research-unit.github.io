@@ -28,12 +28,12 @@ $$
 
 **Why $\theta$ and never a half angle.** None of the fifteen is half of another array, so none of the fifteen has a half angle in its rotor. **The $\tfrac12$ appears only when a composite is exponentiated**, and §*What the Rotor Entries Say That the Array Entries Do Not* says where the composites sit.
 
-**One comparison decides the third reading of a role, and it is the vacuum.** With $\Phi_{0}=vD$ the breaking direction, the rotor is a symmetry of the vacuum exactly when the array commutes with $D$:
+**One comparison decides the third reading of a role, and it is the vacuum.** With $Ξ_{0}=vD$ the breaking direction, the rotor is a symmetry of the vacuum exactly when the array commutes with $D$:
 
 $$
 [A,D]=0
 \quad\Longleftrightarrow\quad
-R_{A}(\theta)\,\Phi_{0}\,R_{A}(\theta)^{-1}=\Phi_{0}.
+R_{A}(\theta)\,Ξ_{0}\,R_{A}(\theta)^{-1}=Ξ_{0}.
 $$
 
 **Nine arrays commute with $D$ and six do not**, and the count is the count of the massless and heavy vectors. **A massless boson of this model is a rotor that leaves the vacuum exactly where it was; a heavy one is a rotor that moves it.** That is the Higgs mechanism in the language of this article, and it is checked in the table at the end.
@@ -84,7 +84,7 @@ $$
 
 **The reading.** The rotor multiplies the lepton line by a phase that runs three times as fast and backwards, and each colour line by a phase that runs forwards. **In the frame where the colour phase is removed the lepton runs at four times the rate**, $\exp(\theta iD)=e^{i\theta}\operatorname{diag}(e^{-4i\theta},1,1,1)$, which is the display [the charge-quantisation article](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html) prints from a different starting point.
 
-**The role.** This is the array the vacuum is built from: $\Phi_{0}=vD$ with $D$ the same diagonal and $i$ removed, and $B-L=\tfrac13D$ on the quartet. **Its rotor is the only one of the fifteen that reaches the centre, and it reaches it four times a turn**:
+**The role.** This is the array the vacuum is built from: $Ξ_{0}=vD$ with $D$ the same diagonal and $i$ removed, and $B-L=\tfrac13D$ on the quartet. **Its rotor is the only one of the fifteen that reaches the centre, and it reaches it four times a turn**:
 
 $$
 \exp\Bigl(k\tfrac{\pi}{2}\,iD\Bigr)=i^{k}\,\mathbb{1},
@@ -241,7 +241,7 @@ $$
 
 **The reading.** $\exp(\theta A_{xy})e_{x}=\cos\theta\,e_{x}-\sin\theta\,e_{y}$ with $e_{t}=e_{t}$ and $e_{z}=e_{z}$: **a rotation of the colour triple read inside the quartet.** At $\theta=\pi$ the rotor is the sign flip on the red–green plane, $\operatorname{diag}(1,-1,-1,1)$, **which is an involution of the group and not only a rotation of a plane: applied twice it gives the identity, and it is the element of order two a reader meets again at the centre.**
 
-**The role.** $g_{1}$ is a gluon, and its rotor is a symmetry of the vacuum in the exact sense of the comparison above: $[A_{xy},D]=0$, so $R_{A_{xy}}(\theta)\Phi_{0}R_{A_{xy}}(\theta)^{-1}=\Phi_{0}$ for every $\theta$. **The rotor is the gauge transformation of the unbroken colour group**, and the zero mass is that sentence and not a separate computation.
+**The role.** $g_{1}$ is a gluon, and its rotor is a symmetry of the vacuum in the exact sense of the comparison above: $[A_{xy},D]=0$, so $R_{A_{xy}}(\theta)Ξ_{0}R_{A_{xy}}(\theta)^{-1}=Ξ_{0}$ for every $\theta$. **The rotor is the gauge transformation of the unbroken colour group**, and the zero mass is that sentence and not a separate computation.
 
 ### $g_{2}$: $iS_{xy}$, the same plane with the phase
 
@@ -405,10 +405,10 @@ $$
 
 **First, a vertex is not an amplitude.** The array's entry is $1$ or $i$ and says which two lines the boson can join; **the rotor's entry is $\sin\theta$ and says how much of one line has become the other after a finite parameter.** For a massless boson the two agree in the only way they can — the vertex is unsuppressed and the amplitude is a circle — while for a heavy one the circle is no longer free: **$\theta$ is then a field and not a symmetry parameter, the vacuum sits at one value of it, and the oscillation about that value is the $32v^{2}$.**
 
-**Second, the mass is a statement about the vacuum and the rotor makes it visible.** Nine rotors leave $\Phi_{0}$ fixed and six move it, and the six are exactly the six with $32v^{2}$:
+**Second, the mass is a statement about the vacuum and the rotor makes it visible.** Nine rotors leave $Ξ_{0}$ fixed and six move it, and the six are exactly the six with $32v^{2}$:
 
 $$
-[A,D]=0\ \text{for the nine}\ \Longleftrightarrow\ R_{A}(\theta)\Phi_{0}R_{A}(\theta)^{-1}=\Phi_{0},
+[A,D]=0\ \text{for the nine}\ \Longleftrightarrow\ R_{A}(\theta)Ξ_{0}R_{A}(\theta)^{-1}=Ξ_{0},
 $$
 
 **so "massless" and "the rotor is a symmetry of the vacuum" are one statement and not two.** **The corner is in the nine and fixes no line; the octet is in the nine and fixes the lepton line** — which is why the ledger of the mass and the ledger of what the rotors do are two different partitions of the same fifteen.
@@ -442,8 +442,8 @@ Sixteen recomputations, with the quartet ordered $(t,x,y,z)$ and $\theta$ one re
 | the fixed lines | $\dim\ker(R-\mathbb{1})$ | $2$ for fourteen rotors, $0$ for $iD$ |
 | the lepton line | arrays with $G e_{t}=0$ | $8$: the six colour planes and the two diagonals |
 | the moved lepton line | arrays with $G e_{t}\ne0$ | $7$: the corner and the six leptoquarks |
-| the vacuum comparison | $R_{A}\Phi_{0}R_{A}^{-1}$ against $\Phi_{0}$ | equal for the nine, displaced by $1.13$ at $\theta=0.3$ for the six |
-| the masses | $\operatorname{tr}([G,\Phi_{0}]^{\dagger}[G,\Phi_{0}])$ with $v=1$ | $32$ six times, $0$ nine times |
+| the vacuum comparison | $R_{A}Ξ_{0}R_{A}^{-1}$ against $Ξ_{0}$ | equal for the nine, displaced by $1.13$ at $\theta=0.3$ for the six |
+| the masses | $\operatorname{tr}([G,Ξ_{0}]^{\dagger}[G,Ξ_{0}])$ with $v=1$ | $32$ six times, $0$ nine times |
 | the plane brackets | $[A_{jk},iS_{jk}]$ | $2d_{2}$, $2(d_{2}+d_{3})$, $2d_{3}$, and one diagonal combination per leptoquark plane |
 | the Gram of the diagonals | $\operatorname{tr}(d_{2}d_{3})$ | $+1$, the only nonzero off-diagonal entry of the fifteen |
 | the torus | $\exp(\alpha iD+\beta d_{2}+\gamma d_{3})$ | four phases, one relation, no correction term |
@@ -467,7 +467,7 @@ Sixteen recomputations, with the quartet ordered $(t,x,y,z)$ and $\theta$ one re
 | $iS_{jk}$ | the imaginary plane $i(E_{jk}+E_{kj})$ |
 | $iD$ | the corner $i\operatorname{diag}(-3,1,1,1)$ |
 | $d_{2}$, $d_{3}$ | the two colour diagonals |
-| $\Phi_{0}=vD$ | the breaking direction, with $D=\operatorname{diag}(-3,1,1,1)$ |
+| $Ξ_{0}=vD$ | the breaking direction, with $D=\operatorname{diag}(-3,1,1,1)$ |
 | fixed line | a line whose column in the rotor is that line itself, a $1$ on the diagonal |
 | role | what the rotor does to the four lines: which it fixes, which it moves, and whether it leaves the vacuum alone |
 | $8+7$ | rotors that fix the lepton line, and rotors that do not |

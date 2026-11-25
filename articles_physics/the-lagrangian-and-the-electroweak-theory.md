@@ -10,13 +10,13 @@ Why both phases in one article. Because the breaking is a classical statement ab
 
 ## Conventions
 
-The conventions are the corpus's, and they are the ones the menu's convention articles fix. The gauge group is $SU(2)_L\times U(1)_Y$ with couplings $g$ and $g_{\mathrm Y}$; the gauge fields are $W_{\imath,a}$ for $a=1,2,3$ and $B_{\imath}$; the field strengths are $W_{a,\imath\jmath}=\partial_{\imath} W_{a,\jmath}-\partial_{\jmath} W_{a,\imath}+g\epsilon_{abc}W_{b,\imath} W_{c,\jmath}$ and $B_{\imath\jmath}=\partial_{\imath} B_{\jmath}-\partial_{\jmath} B_{\imath}$. The doublet is $\Phi$, a complex two-component column with hypercharge $Y_{\mathrm{hch}}=+\tfrac12$; its covariant derivative is
+The conventions are the corpus's, and they are the ones the menu's convention articles fix. The gauge group is $SU(2)_L\times U(1)_Y$ with couplings $g$ and $g_{\mathrm Y}$; the gauge fields are $W_{\imath,a}$ for $a=1,2,3$ and $B_{\imath}$; the field strengths are $W_{a,\imath\jmath}=\partial_{\imath} W_{a,\jmath}-\partial_{\jmath} W_{a,\imath}+g\epsilon_{abc}W_{b,\imath} W_{c,\jmath}$ and $B_{\imath\jmath}=\partial_{\imath} B_{\jmath}-\partial_{\jmath} B_{\imath}$. The doublet is $\omicron_{\mathrm{hgs}}$, a complex two-component column with hypercharge $Y_{\mathrm{hch}}=+\tfrac12$; its covariant derivative is
 
 $$
-D_{\imath}\Phi=\Bigl(\partial_{\imath}+i\,g\,\tau_{a}W_{a,\imath}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath}\Bigr)\Phi ,
+D_{\imath}\omicron_{\mathrm{hgs}}=\Bigl(\partial_{\imath}+i\,g\,\tau_{a}W_{a,\imath}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath}\Bigr)\omicron_{\mathrm{hgs}} ,
 $$
 
-with $\tau_{a}=\sigma_{a}/2$ the generators in the doublet, so that $T_3$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T_3+Y$. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\digamma_{\mathrm{qtc}}(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\digamma_{\mathrm{qtc}}>0$. The measure is $\mathrm{d}^{4}x$; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi=\sum_{\imath}\varepsilon_{\imath}(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi$ carries the sign the mostly-minus literature carries; and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
+with $\tau_{a}=\sigma_{a}/2$ the generators in the doublet, so that $T_3$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T_3+Y$. The potential is $V(\omicron_{\mathrm{hgs}})=-\mu^{2}\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}+\digamma_{\mathrm{qtc}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2}$ with $\mu^{2}>0$ and $\digamma_{\mathrm{qtc}}>0$. The measure is $\mathrm{d}^{4}x$; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $(D_{\imath}\omicron_{\mathrm{hgs}})^{\dagger}D_{\imath}\omicron_{\mathrm{hgs}}=\sum_{\imath}\varepsilon_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^{\dagger}D_{\imath}\omicron_{\mathrm{hgs}}$ carries the sign the mostly-minus literature carries; and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
 
 Two conventions, both settled by the corpus. The hypercharge here is $Y$, not the reference tables' $Y_W=2Y$: the corpus writes $Q=T_3+Y$ with $Y_{\mathrm{hch}}=+\tfrac12$, as [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) fixes it and as [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) uses it. Only the product $g_{\mathrm Y}Y$ enters any display, so a reader who arrives with $Y_W$ must halve every hypercharge and change no physical statement. The sign of the coupling in $D_{\imath}$ is likewise the corpus's, $+ig$; the opposite choice, $-ig$, is the same theory with $g\mapsto-g$, and every mass below is quadratic in $g$ and unchanged.
 
@@ -27,19 +27,19 @@ Two conventions, both settled by the corpus. The hypercharge here is $Y$, not th
 The unbroken action, in four terms.
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14 W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14 B_{\imath\jmath}B_{\imath\jmath}+(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi-V(\Phi)+\mathcal{L}_{\mathrm{matter}}\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14 W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14 B_{\imath\jmath}B_{\imath\jmath}+(D_{\imath}\omicron_{\mathrm{hgs}})^{\dagger}D_{\imath}\omicron_{\mathrm{hgs}}-V(\omicron_{\mathrm{hgs}})+\mathcal{L}_{\mathrm{matter}}\Bigr\},
 $$
 
 with $\mathcal{L}_{\mathrm{matter}}$ the fermion kinetic terms with their covariant derivatives and the Yukawa couplings, which this article names and does not expand.
 
 Why each term is what it is. The two gauge terms are the Yang–Mills and Maxwell terms: quadratic in the field strengths, gauge invariant, and fixed in normalisation by the same requirement that fixes the Maxwell term — the charge that appears in the covariant derivative must be the charge that appears in the current. The scalar term is the Klein–Gordon kinetic term with the derivative covariantised, which is the same minimal-coupling step the coupled scalar article performs, applied twice because the group has two factors. The potential is the only term with a negative mass squared, and it is the term that decides the phase.
 
-The two phases, and why the same action has them. The potential's minimum is at $\Phi^{\dagger}\Phi=\mu^{2}/2\digamma_{\mathrm{qtc}}\equiv v^{2}/2$, a circle of minima and not a point. If $\mu^{2}<0$ the minimum is at $\Phi=0$ and the action's ground state is symmetric; if $\mu^{2}>0$ it is not. The action does not change between the phases; the vacuum does. That is the classical content of "spontaneous breaking", and the corpus can state it exactly.
+The two phases, and why the same action has them. The potential's minimum is at $\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}=\mu^{2}/2\digamma_{\mathrm{qtc}}\equiv v^{2}/2$, a circle of minima and not a point. If $\mu^{2}<0$ the minimum is at $\omicron_{\mathrm{hgs}}=0$ and the action's ground state is symmetric; if $\mu^{2}>0$ it is not. The action does not change between the phases; the vacuum does. That is the classical content of "spontaneous breaking", and the corpus can state it exactly.
 
-The broken phase, written in the unitary chart. Choose the vacuum $\Phi=\frac{1}{\sqrt{2}}\binom{0}{v+h}$ with $h$ the physical scalar. Then the scalar's gradient term becomes
+The broken phase, written in the unitary chart. Choose the vacuum $\omicron_{\mathrm{hgs}}=\frac{1}{\sqrt{2}}\binom{0}{v+h}$ with $h$ the physical scalar. Then the scalar's gradient term becomes
 
 $$
-(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi\supset\frac{v^{2}}{8}\Bigl[g^{2}\bigl((W_{1,\imath})^{2}+(W_{2,\imath})^{2}\bigr)+(gW_{3,\imath}-g_{\mathrm Y}B_{\imath})^{2}\Bigr]+\frac{g^{2}v}{2}h\,W^{+}W^{-}+\cdots ,
+(D_{\imath}\omicron_{\mathrm{hgs}})^{\dagger}D_{\imath}\omicron_{\mathrm{hgs}}\supset\frac{v^{2}}{8}\Bigl[g^{2}\bigl((W_{1,\imath})^{2}+(W_{2,\imath})^{2}\bigr)+(gW_{3,\imath}-g_{\mathrm Y}B_{\imath})^{2}\Bigr]+\frac{g^{2}v}{2}h\,W^{+}W^{-}+\cdots ,
 $$
 
 which is a mass term for the combinations $W^{\pm}=(W_1\mp iW_2)/\sqrt2$ and $Z=(gW_3-g_{\mathrm Y}B)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, and none for $A=(g_{\mathrm Y}B+gW_3)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$. The masses are $m_W=gv/2$, $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}\,v/2$ and $m_A=0$.
@@ -56,10 +56,10 @@ D_{\imath} W_{a,\imath\jmath}=J_{a,\jmath},
 \partial_{\imath} B_{\imath\jmath}=J^{Y}_{\jmath},
 $$
 
-with the covariant divergence on the left because the field strength is non-Abelian. Varying $\Phi^{\dagger}$ gives the covariant Klein–Gordon equation with the potential's derivative,
+with the covariant divergence on the left because the field strength is non-Abelian. Varying $\omicron_{\mathrm{hgs}}^{\dagger}$ gives the covariant Klein–Gordon equation with the potential's derivative,
 
 $$
-D_{\imath} D_{\imath}\Phi=-\frac{\partial V}{\partial\Phi^{\dagger}} ,
+D_{\imath} D_{\imath}\omicron_{\mathrm{hgs}}=-\frac{\partial V}{\partial\omicron_{\mathrm{hgs}}^{\dagger}} ,
 $$
 
 and varying the fermions gives their covariant Dirac equations.
@@ -84,7 +84,7 @@ Why the constraint is not the gauge choice. As in the Maxwell article, the const
 
 The claim. $m_W=gv/2$ and $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}\,v/2$ are not free parameters of the broken action. They are the coefficients that the scalar's gradient term produces when the doublet is expanded about its minimum, and each is a product of one coupling and one number.
 
-The hand check. Expand $\Phi=\frac{1}{\sqrt2}\binom{0}{v}$ in the gradient term. The term is $(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi$, with the $1/\sqrt2$ already inside $\Phi$; the $W$ parts give $\frac{g^{2}v^{2}}{8}[(W_1)^{2}+(W_2)^{2}]$, which is $\frac12 m_W^{2}(W_1W_1+W_2W_2)$ with $m_W=gv/2$; the neutral part gives $\frac{v^{2}}{8}(gW_3-g_{\mathrm Y}B)^{2}=\frac12 m_Z^{2}Z^{2}$ with $m_Z^{2}=(g^{2}+g_{\mathrm Y}^{2})v^{2}/4$. The massless combination is orthogonal to $Z$ and reads $A=(g_{\mathrm Y}B+gW_3)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, the photon.
+The hand check. Expand $\omicron_{\mathrm{hgs}}=\frac{1}{\sqrt2}\binom{0}{v}$ in the gradient term. The term is $(D_{\imath}\omicron_{\mathrm{hgs}})^{\dagger}D_{\imath}\omicron_{\mathrm{hgs}}$, with the $1/\sqrt2$ already inside $\omicron_{\mathrm{hgs}}$; the $W$ parts give $\frac{g^{2}v^{2}}{8}[(W_1)^{2}+(W_2)^{2}]$, which is $\frac12 m_W^{2}(W_1W_1+W_2W_2)$ with $m_W=gv/2$; the neutral part gives $\frac{v^{2}}{8}(gW_3-g_{\mathrm Y}B)^{2}=\frac12 m_Z^{2}Z^{2}$ with $m_Z^{2}=(g^{2}+g_{\mathrm Y}^{2})v^{2}/4$. The massless combination is orthogonal to $Z$ and reads $A=(g_{\mathrm Y}B+gW_3)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, the photon.
 
 What follows without a further assumption. The ratio $m_W/m_Z=\cos\theta_W$ with $\tan\theta_W=g_{\mathrm Y}/g$; the photon's masslessness, because $A$ is the direction the doublet does not see; and the $W$'s and $Z$'s coupling to the scalar, $\frac{g^{2}v}{2}hW^{+}W^{-}=2M_W^{2}hW^{+}W^{-}/v$, which is the same $v$ and therefore the same $g$.
 
@@ -121,9 +121,9 @@ The honest sentence. This family's electroweak content is a classical gauge theo
 The electroweak Lagrangian is the $SU(2)\times U(1)$ gauge action with one complex doublet and its potential. Its variation gives the Yang–Mills equations with the doublet's currents, the covariant scalar equation and four Gauss constraints. At the potential's minimum the doublet's gradient term gives $m_W=gv/2$, $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}v/2$ and $m_A=0$, and the count eight-plus-four becomes nine-plus-two-plus-one without loss. The surviving current is the electric one, $Q=T_3+Y$. Nothing is quantised, and the article says so.
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14B_{\imath\jmath}B_{\imath\jmath}+(D_{\imath}\Phi)^{\dagger}D_{\imath}\Phi-V(\Phi)\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14B_{\imath\jmath}B_{\imath\jmath}+(D_{\imath}\omicron_{\mathrm{hgs}})^{\dagger}D_{\imath}\omicron_{\mathrm{hgs}}-V(\omicron_{\mathrm{hgs}})\Bigr\},
 \qquad
-V=-\mu^{2}\Phi^{\dagger}\Phi+\digamma_{\mathrm{qtc}}(\Phi^{\dagger}\Phi)^{2}.
+V=-\mu^{2}\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}+\digamma_{\mathrm{qtc}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2}.
 $$
 
 ## Summary of Notation
@@ -133,9 +133,9 @@ $$
 | $g,\ g_{\mathrm Y}$ | $SU(2)_L$ and $U(1)_Y$ couplings |
 | $W_{a,\imath},\ B_{\imath}$ | Gauge fields of the two factors |
 | $W_{a,\imath\jmath},\ B_{\imath\jmath}$ | Field strengths, the first non-Abelian |
-| $\Phi$ | Complex doublet, hypercharge $Y_{\mathrm{hch}}=+\tfrac12$ |
-| $D_{\imath}\Phi$ | Covariant derivative with both connections |
-| $V(\Phi)$ | $-\mu^{2}\Phi^{\dagger}\Phi+\digamma_{\mathrm{qtc}}(\Phi^{\dagger}\Phi)^{2}$ |
+| $\omicron_{\mathrm{hgs}}$ | Complex doublet, hypercharge $Y_{\mathrm{hch}}=+\tfrac12$ |
+| $D_{\imath}\omicron_{\mathrm{hgs}}$ | Covariant derivative with both connections |
+| $V(\omicron_{\mathrm{hgs}})$ | $-\mu^{2}\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}+\digamma_{\mathrm{qtc}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2}$ |
 | $v=\sqrt{\mu^{2}/\digamma_{\mathrm{qtc}}}$ | Vacuum expectation value |
 | $W^{\pm},\ Z,\ A$ | Mass eigenstates of the neutral and charged sectors |
 | $m_W=gv/2,\ m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}v/2$ | Vector masses |

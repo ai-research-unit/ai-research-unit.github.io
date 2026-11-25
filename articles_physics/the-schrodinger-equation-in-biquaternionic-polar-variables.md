@@ -256,7 +256,7 @@ $$
 Q=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Delta_\Phi \varrho}{\varrho}.
 $$
 
-The first is a Hamilton–Jacobi equation with one extra term, and the second is a continuity equation for the density $\rho_{\mathrm{num}}=\varrho^{2}$. Together they are the standard Madelung fluid: the first is the guidance equation of the de Broglie–Bohm reading, with $Q$ the term that separates it from classical Hamilton–Jacobi, and the second is the conservation of the density along the guidance flow. Takabayasi read the same pair as a hydrodynamical formulation and Bohm as a trajectory theory; the polar word is the biquaternionic reading of it.
+The first is a Hamilton–Jacobi equation with one extra term, and the second is a continuity equation for the density $\rho_{\mathrm{num}}=\varrho^{2}$. Together they are the standard Madelung fluid: the first is the guidance equation of the de Broglie–Bohm reading, with $Q$ the term that separates it from classical Hamilton–Jacobi, and the second is the conservation of the density along the guidance flow. Takabayasi read the same pair as a fluid formulation and Bohm as a trajectory theory; the polar word is the biquaternionic reading of it.
 
 The operator in the quantum potential is the Laplacian and not the d'Alembertian: the equation is first order in time and second order in space, so the second derivative in $Q$ is the spatial one and the temporal derivative never enters it.
 
@@ -365,6 +365,6 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 - [The Schrödinger Equation in the Non-Quantum Limit](the-schrodinger-equation-in-the-non-quantum-limit.html), for the pair read as the first term of a series.
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for why the body of the equation carries elements and not arrays.
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1927) 322–326, for the continuity equation and the Hamilton–Jacobi equation of a scalar wave.
-- Takehiko Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8** (1952) 143–182, for the same pair read as a hydrodynamical formulation.
+- Takehiko Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8** (1952) 143–182, for the same pair read as a fluid formulation.
 - David Bohm, "A suggested interpretation of the quantum theory in terms of hidden variables," *Physical Review* **85** (1952) 166–193, for the quantum potential and the guidance equation it defines.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the exception at a nodal line, where the action is multivalued and the circulation is quantised.

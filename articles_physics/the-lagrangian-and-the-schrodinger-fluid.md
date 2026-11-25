@@ -140,7 +140,7 @@ Three things follow, and they are the article's reason for existing.
 
 *The quantum stress is the same object read as a pressure.* The block's identity $\partial_j\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_iQ$ is, in this language, the statement that a gradient energy has a stress and that the force is its divergence. The action makes the identity a definition: $\mathcal E_{\mathrm{grad}}$ is a functional of $\rho_{\mathrm{num}}$ and its gradients, so it has a functional derivative $Q$ and a stress tensor $\sigma^{Q}_{ij}$, and the two are related because the energy is a scalar. The block computes the identity directly from the wave equation; here it is the Euler–Lagrange structure's.
 
-*The fluid is of Korteweg type and not of Euler type.* A Korteweg fluid is one whose stress depends on the gradients of the density, and that is exactly what the third term supplies. The literature on quantum hydrodynamics says this, and the action says why: the gradient energy is the only term the algebra permits at that order.
+*The fluid is of Korteweg type and not of Euler type.* A Korteweg fluid is one whose stress depends on the gradients of the density, and that is exactly what the third term supplies. The literature on quantum fluid mechanics says this, and the action says why: the gradient energy is the only term the algebra permits at that order.
 
 The sign is the sign of a pressure. $Q$ is positive at the centre of a localised packet and falls as the density falls, so $\vec\nabla_\Phi Q$ points inward there and the force $-\vec\nabla_\Phi Q$ points outward. The packet spreads. Nothing in the action chooses this; it is the sign of the $\frac{h^{2}}{4\pi^{2}}$ term, which is the sign that makes the energy positive.
 

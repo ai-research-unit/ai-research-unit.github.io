@@ -183,7 +183,7 @@ $$
 
 The second term is nonzero. Its size runs from $0.7$ to $12$ over a hundred random draws of a material connection and a general element, and its structure is a product of two potentials, linear in each.
 
-What the extra term is. It is the algebra's form of the term that distinguishes a non-abelian field strength from an abelian one. In components the commutator of two covariant derivatives on a charged field is $[D_{\imath},D_{\jmath}]=-iϙF^{(\Phi)}_{\imath\jmath}$, and the field strength built from the covariant curl is not the ordinary curl. The algebra produces the same structure from the non-commutativity of the units alone: since the connection multiplies the field as one element and the gradient's units multiply it as units, the two orders differ, and the difference is $\frac{2\pi i\,ϙ}{h}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$.
+What the extra term is. It is the algebra's form of the term that distinguishes a non-abelian field strength from an abelian one. In components the commutator of two covariant derivatives on a charged field is $[D_{\imath},D_{\jmath}]=-iϙF_{\Phi,\imath\jmath}$, and the field strength built from the covariant curl is not the ordinary curl. The algebra produces the same structure from the non-commutativity of the units alone: since the connection multiplies the field as one element and the gradient's units multiply it as units, the two orders differ, and the difference is $\frac{2\pi i\,ϙ}{h}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$.
 
 The Bianchi identity is not available in the same form. For a neutral field strength the antisymmetric part of the gradient of the field strength vanishes identically, because partial derivatives commute. With the connection the corresponding statement carries the curvature, and this article does not need it: the Proca equation is first order in $\tilde F$ and does not use a Bianchi identity.
 
@@ -195,10 +195,10 @@ The operator identity. The covariant d'Alembertian splits into a scalar part and
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
-=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F^{(\Phi)},
+=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F_{\Phi},
 $$
 
-with $\tilde F^{(\Phi)}$ the curvature of the connection. The first term is scalar — each $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ is central, so the four squares are central operators and their sum multiplies every element uniformly. The second term is a pure vector, and a pure vector has no scalar part.
+with $\tilde F_{\Phi}$ the curvature of the connection. The first term is scalar — each $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ is central, so the four squares are central operators and their sum multiplies every element uniformly. The second term is a pure vector, and a pure vector has no scalar part.
 
 The scalar part of the equation therefore forces the constraint. Applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the equation and taking the scalar part,
 
@@ -323,7 +323,7 @@ The equation is standard. The algebra's contribution is the closure argument, th
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial/\partial R_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | Its central per-component form |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | Material time derivative |
 | $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; covariant with $\digamma_{\mathrm{gau}}$ |
-| $\tilde F^{(\Phi)}$ | Curvature of the connection |
+| $\tilde F_{\Phi}$ | Curvature of the connection |
 | $\tilde C=\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The coupling element of a constant background |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter of the framework |

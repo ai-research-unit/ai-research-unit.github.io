@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The corpus writes the same equation five ways — element, polar word, momentum symbol, non-quantum limit, fluid — and then couples it, integrates it, transforms it and quantises it. The fluid belongs to this object and does not carry its name: the spin-zero fluids are the Klein–Gordon equation in the hydrodynamical chart.
+The corpus writes the same equation five ways — element, polar word, momentum symbol, non-quantum limit, fluid — and then couples it, integrates it, transforms it and quantises it. The fluid belongs to this object and does not carry its name: the spin-zero fluids are the Klein–Gordon equation in the fluid chart.
 
 **The count.** 34 articles. The count is a fact of the menu, not a target. The family contributes ten: four readings of the free action, four of the coupled one, and the two spin-zero fluids. The other articles are the equation's own, its propagator, its path integrals, its transform and its quantisation, and the reader who wants only the family should take the ten and leave the rest.
 

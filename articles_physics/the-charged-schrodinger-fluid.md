@@ -130,14 +130,14 @@ The rank is two, and the electric field never enters. $\vec\omega$ is a three-ve
 **The canonical circulation is quantised always and the kinetic circulation only where the flux vanishes.** Around a loop that links a nodal line,
 
 $$
-\oint\vec v\cdot\mathrm{d}\vec l=\frac{h\,n+\varkappa\,\Phi_{B}}{m},
+\oint\vec v\cdot\mathrm{d}\vec l=\frac{h\,n+\varkappa\,\digamma_{\mathrm{flx}}}{m},
 \qquad
-\Phi_{B}=\oint\vec A\cdot\mathrm{d}\vec l=\int_{\Sigma}\vec B\cdot\mathrm{d}\vec S,
+\digamma_{\mathrm{flx}}=\oint\vec A\cdot\mathrm{d}\vec l=\int_{\Sigma}\vec B\cdot\mathrm{d}\vec S,
 $$
 
-with $n$ the winding of the phase. The derivation is one line: $\vec v=(\vec\nabla_\Phi S-q\vec A)/m$, the phase is single valued on the field so its gradient integrates to $h n$, and the potential integrates to the flux. With $\varkappa$ the negative of the electric charge this is $(h n-q\Phi_{B})/m$, the standard statement that a magnetic flux shifts every circulation quantum.
+with $n$ the winding of the phase. The derivation is one line: $\vec v=(\vec\nabla_\Phi S-q\vec A)/m$, the phase is single valued on the field so its gradient integrates to $h n$, and the potential integrates to the flux. With $\varkappa$ the negative of the electric charge this is $(h n-q\digamma_{\mathrm{flx}})/m$, the standard statement that a magnetic flux shifts every circulation quantum.
 
-So the flux shifts the circulation and does not quantise it. The kinetic circulation is a multiple of $c/\nu_m$ exactly when $\varkappa\Phi_{B}$ is one too — in particular where $\vec B$ vanishes on a spanning surface — and otherwise it takes the flux's value and is not a multiple of anything. The canonical circulation, being $\vec\nabla_\Phi S$'s, is a multiple always.
+So the flux shifts the circulation and does not quantise it. The kinetic circulation is a multiple of $c/\nu_m$ exactly when $\varkappa\digamma_{\mathrm{flx}}$ is one too — in particular where $\vec B$ vanishes on a spanning surface — and otherwise it takes the flux's value and is not a multiple of anything. The canonical circulation, being $\vec\nabla_\Phi S$'s, is a multiple always.
 
 What the loop statement needs is only one phase, single valued on the loop. It does not need the connection to be weak, the flow to be slow, or the region to be free of the field's effects; and it does not need a condensate. The single-particle fluid's circulation is quantised for the same reason a superfluid's is, and the reason is the single-valuedness of one phase, not the presence of a macroscopic occupation.
 
@@ -165,7 +165,7 @@ The vorticity is the quantity the ladder orders, and the ordering is by the orde
 
 | rung | velocity | vorticity | rank |
 | --- | --- | --- | --- |
-| Euler, $h\to0$ | $\vec\nabla_\Phi\Phi$, a gradient | $0$ | $0$ |
+| Euler, $h\to0$ | $\vec\nabla_\Phi\digamma_{\mathrm{vel}}$, a gradient | $0$ | $0$ |
 | Schrödinger | $\vec\nabla_\Phi S/m$, a gradient | $0$ | $0$ |
 | charged Schrödinger | $\vec\pi/m$, a gradient plus a potential | $\varkappa\vec B/m$ | $2$ |
 | Klein–Gordon | $\tilde P_{\Phi}/m$, a gradient | $0$ | $0$ |
@@ -177,7 +177,7 @@ The rank is the count of what the flow can hold. Rank zero is one function's wor
 
 ## What Is Established and What Is Interpretation
 
-Established. That the connection is central imaginary in every slot and joins the phase bracket only, by its type. That the density, the quantum potential and the quantum stress are therefore invariant under the coupling. The covariant pair, with the kinetic momentum in the continuity equation and in the kinetic term, and $-\varkappa\omicron_{\mathrm{pot}}$ in the potential. The gauge invariance of $\vec\pi$ and $\mathcal E$, term by term. That the velocity is $\vec\pi/m$ and is not a gradient. That the Lorentz force appears as $-\varkappa(\vec E+\vec v\times\vec B)$ in the acceleration law, verified component by component, with the quantum force charge-blind and additive. The vorticity identity $\vec\omega=\varkappa\vec B/m$, exact and unconditional, with the canonical flow irrotational. That $\vec\nabla_\Phi\cdot\vec\omega=0$ combined with the identity gives $\vec\nabla_\Phi\cdot\vec B=0$. That the vorticity's rate is Faraday's law, with no velocity in it. That the kinetic circulation is $(h n+\varkappa\Phi_{B})/m$ and the canonical one is $h n/m$. That the stress identity and the absence of a state law survive the coupling unchanged. That the vorticity's rank is at most two, and that $\vec E\cdot\vec B$ therefore has no non-relativistic image.
+Established. That the connection is central imaginary in every slot and joins the phase bracket only, by its type. That the density, the quantum potential and the quantum stress are therefore invariant under the coupling. The covariant pair, with the kinetic momentum in the continuity equation and in the kinetic term, and $-\varkappa\omicron_{\mathrm{pot}}$ in the potential. The gauge invariance of $\vec\pi$ and $\mathcal E$, term by term. That the velocity is $\vec\pi/m$ and is not a gradient. That the Lorentz force appears as $-\varkappa(\vec E+\vec v\times\vec B)$ in the acceleration law, verified component by component, with the quantum force charge-blind and additive. The vorticity identity $\vec\omega=\varkappa\vec B/m$, exact and unconditional, with the canonical flow irrotational. That $\vec\nabla_\Phi\cdot\vec\omega=0$ combined with the identity gives $\vec\nabla_\Phi\cdot\vec B=0$. That the vorticity's rate is Faraday's law, with no velocity in it. That the kinetic circulation is $(h n+\varkappa\digamma_{\mathrm{flx}})/m$ and the canonical one is $h n/m$. That the stress identity and the absence of a state law survive the coupling unchanged. That the vorticity's rank is at most two, and that $\vec E\cdot\vec B$ therefore has no non-relativistic image.
 
 Interpretation. That the vorticity's being the field is best read as the statement that the fluid's rotation is a response and not a degree of freedom: the warrant is that $\vec\omega$ is a function of $\vec B$ alone, and the reading is the programme's step. That the rank table orders the block by the equation's order rather than by the field's spin is an observation about the table and not a theorem; the spin-one and spinor fluids of the block are not in it. That the identity's unconditional form at this rung is a *gain* is a judgement; the companion's qualified statement is not refuted by it.
 
@@ -197,7 +197,7 @@ The vorticity is the field: $\vec\omega=\varkappa\vec B/m$, exactly and at every
 
 The rank is two, and the electric field never enters the vorticity. The charged spin-zero fluid's rank four when $\vec E\cdot\vec B\ne0$ has no non-relativistic image, because a boost mixes the two halves of the field and there is no boost here.
 
-The kinetic circulation is $(h n+\varkappa\Phi_{B})/m$ around a loop that links a node, and the canonical circulation is $h n/m$ unconditionally; the kinetic one is a multiple of $c/\nu_m$ only where the flux is. The flux term is the same statement as the Aharonov–Bohm phase.
+The kinetic circulation is $(h n+\varkappa\digamma_{\mathrm{flx}})/m$ around a loop that links a node, and the canonical circulation is $h n/m$ unconditionally; the kinetic one is a multiple of $c/\nu_m$ only where the flux is. The flux term is the same statement as the Aharonov–Bohm phase.
 
 The density is a norm with one sign, so the charge density $\varkappa\rho_{\mathrm{num}}$ has one sign too, and there is no second sheet.
 
@@ -221,7 +221,7 @@ The stress identity, the absence of an equation of state and the non-dissipativi
 | $\sigma^{Q}_{ij}=\frac{hc}{16\pi^{2}\nu_m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | Quantum stress; unchanged by the coupling |
 | $\vec\omega=\vec\nabla_\Phi\times\vec v$ | Vorticity; $\varkappa\vec B/m$ |
 | $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths |
-| $\Phi_{B}=\oint\vec A\cdot\mathrm{d}\vec l$ | Magnetic flux through a spanning surface |
+| $\digamma_{\mathrm{flx}}=\oint\vec A\cdot\mathrm{d}\vec l$ | Magnetic flux through a spanning surface |
 | $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | Gauge transformation |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
@@ -230,7 +230,7 @@ The stress identity, the absence of an equation of state and the non-dissipativi
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1926) 322–326, for the free pair that the coupling is added to.
 - Fritz London and Heinz London, "Supraleitung und Diamagnetismus," *Physica* **2** (1935) 341–354, for the response of a charged quantum fluid to a vector potential, and hence for the loop statement of §*Circulation, Flux and the Loop*.
 - Yakir Aharonov and David Bohm, "Significance of electromagnetic potentials in the quantum theory," *Physical Review* **115** (1959) 485–491, for the phase on a loop.
-- Giovanni Manfredi, "How to model quantum plasmas," *Fields Institute Communications* **46** (2005) 263–287, for the quantum hydrodynamic model with a self-consistent field, whose spinless non-relativistic form is this article's fluid.
+- Giovanni Manfredi, "How to model quantum plasmas," *Fields Institute Communications* **46** (2005) 263–287, for the quantum fluid-mechanics model with a self-consistent field, whose spinless non-relativistic form is this article's fluid.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), §5, for the charged fluid's Lorentz force and its quantum force.
 - Lars Onsager, "Statistical hydrodynamics," *Il Nuovo Cimento* **6** (1949) 279–287, and Richard Feynman, "Application of quantum mechanics to liquid helium," in *Progress in Low Temperature Physics* I (1955), for the circulation quantum that §*Circulation, Flux and the Loop* carries over to a single particle's fluid.
 - The companion articles: [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), [The Schrödinger Fluid](the-schrodinger-fluid.html), [The Charged Spin-Zero Fluid: Vorticity Is the Field Strength](the-charged-spin-zero-fluid.html), [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), [Superfluids and BECs: The Gross–Pitaevskii Equation as the Nonlinear Reverse Map](superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map.html), [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html), and [The Fluid–Wave Correspondence: Which Constant Each Field Carries](the-fluid-wave-correspondence-which-constant-each-field-carries.html).

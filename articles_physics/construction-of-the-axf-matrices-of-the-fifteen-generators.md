@@ -388,9 +388,9 @@ $$
 
 ### The Mass, and the One Difference That Decides It
 
-**The scalar that breaks $\mathrm{SU}(4)$ takes its value along the lepton line**, $\Phi_0=vD$ with $D=\operatorname{diag}(-3,1,1,1)$, and the adjoint mass matrix of the fifteen is
+**The scalar that breaks $\mathrm{SU}(4)$ takes its value along the lepton line**, $Ξ_0=vD$ with $D=\operatorname{diag}(-3,1,1,1)$, and the adjoint mass matrix of the fifteen is
 $$
-M^{2}_{XY}=\operatorname{tr}\bigl([X,\Phi_0]^{\dagger}[Y,\Phi_0]\bigr).
+M^{2}_{XY}=\operatorname{tr}\bigl([X,Ξ_0]^{\dagger}[Y,Ξ_0]\bigr).
 $$
 **In the physics basis it is diagonal, with one number per plane.**
 $$
@@ -479,7 +479,7 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 
 - [Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices](../articles_internal/structures/structure-SU4-basis-construction.html). The three steps of Part II in full, with the word table and the theorem on why the physics base is the one a diagonal mass matrix forces.
 - [Two Bases of $\mathfrak{su}(4)$](../articles_internal/structures/structure-SU4-basis-comparison.html). The change of basis between the maths fifteen and the physics fifteen, in both directions, with the composition checked to the identity.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The mass matrix of Part III: the operator, the commutator lemma, the nine-dimensional kernel and the general vacuum, both bases, and the $8v^{2}$ artefact.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The mass matrix of Part III: the operator, the commutator lemma, the nine-dimensional kernel and the general vacuum, both bases, and the $8v^{2}$ artefact of the coherent arrays — which is $16v^{2}$ once the array's norm is divided out.
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html). The frame, the signed permutations and the ten properties.
 - [The Axis-Free Arrays of the Fifteen and the Six Halves](../articles_internal/the-axis-free-arrays-fifteen-generators-six-halves-and-a-cartan.html). The arrays of $L_{\vec e_a}$ and $R_{\vec e_a}$, their word support and the six relations.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [$M_2(\mathbb{C})$ Defining Representation](../articles_maths/m2c-defining-representation.html). The four-row and two-row frames.

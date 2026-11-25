@@ -157,7 +157,7 @@ The word is a statement about single elements, not about operators. The polar de
 
 A density and a velocity are not a thermal state. The block has no temperature, no entropy, no partition function and no equation of state at a point. A fluid needs
 a state as well as a kinematics, and the state is the subject of *Biquaternion Relativistic Quantum Thermodynamics*, which puts a density operator on the same field —
-the construction is [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) — and takes the hydrodynamic limit of the result.
+the construction is [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) — and takes the fluid limit of the result.
 
 The two blocks meet at one object and nowhere else. The stress tensor of the scalar field is an article of this block and it is also the object the thermal block's equation of state is built on. The meeting is recorded in both articles and is not a dependency of this one.
 
@@ -229,7 +229,7 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter, Part I. General theory," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the tensor formulation of the spin-half fluid that the spinor case of this block corresponds to.
 - David Hestenes, *Space–Time Algebra* (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the reading of the Dirac field as a density, an angle and a rotor.
-- Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the hydrodynamical formulation and its relativistic extension.
+- Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the fluid formulation and its relativistic extension.
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1926) 322–326, for the non-relativistic pair that the scalar case reduces to.
 - Luca Fabbri, *Dirac Theory in Hydrodynamic Form* (2023), for the non-uniqueness of the spin-half-fluid system.
 - The companion articles: [The Spin-Zero Fluid](the-spin-zero-fluid.html), [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html), [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html).

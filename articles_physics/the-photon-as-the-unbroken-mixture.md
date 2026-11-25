@@ -244,7 +244,7 @@ Three neutral gauge bosons are not three scalars. All three are gauge fields, an
 | $B'$ | the surviving $\mathrm{SU}(4)$ Cartan field, $A^{15}$, the $B-L$ direction |
 | $T^{15}$ | the fifteenth Cartan, $\operatorname{tr}(T^{15})^{2}=\tfrac12$, $B-L=\sqrt{8/3}\,T^{15}$ |
 | $\mathcal M^{2}$ | the $3\times3$ neutral mass matrix, a sum of two rank-one terms |
-| $\ell_1,\ell_2$ | the two vacuum lines, the lepton line of $\Phi$ and the doublet line of $H$ |
+| $\ell_1,\ell_2$ | the two vacuum lines, the lepton line of $Ξ$ and the doublet line of $H$ |
 | $v,v_C$ | the electroweak and colour-breaking vacuum expectation values |
 
 ## Further Reading

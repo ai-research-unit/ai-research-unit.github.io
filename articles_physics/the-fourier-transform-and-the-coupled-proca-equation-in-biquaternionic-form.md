@@ -8,14 +8,14 @@ In the coupled theory the operator's symbol is the free symbol at a shifted four
 
 $$
 \sigma_{\mathrm{gco}}\bigl(\pi\bigr)=\underbrace{\bigl(-\pi^{2}\delta_{\imath\jmath}-\pi_{\imath}\pi_{\jmath}\bigr)}_{\text{the free symbol at }\pi}
-\;+\;\underbrace{\frac{i\varkappa}{h}\,F^{(\Phi)\imath}{}_{\jmath}}_{\text{the obstruction}} ,
+\;+\;\underbrace{\frac{i\varkappa}{h}\,F_{\Phi}{}^{\imath}{}_{\jmath}}_{\text{the obstruction}} ,
 \qquad
 \pi_{\imath}=h\nu_{\imath}-q A_{\imath} .
 $$
 
 The first bracket is the free Proca symbol with $\pi$ in place of $k$ — translation and rank-one projector together — and the second is the commutator of two covariant derivatives. The first term is what the transform says and the second is what the transform cannot say, and the article is the separation of the two.
 
-The translation is exact and it is the corpus's own identity. The parent proves $(\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\Phi,\mathrm{gco},\imath}^{2}+\frac{2\pi i\varkappa}{h}\tilde F^{(\Phi)}$, a decomposition of the covariant d'Alembertian into a symmetric sum of squares and a curvature. In frequency space the first piece is $-\pi^{2}$ and the second is the curvature term, so the identity is exactly the symbol's two terms and the article's first finding is that no third term exists.
+The translation is exact and it is the corpus's own identity. The parent proves $(\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\Phi,\mathrm{gco},\imath}^{2}+\frac{2\pi i\varkappa}{h}\tilde F_{\Phi}$, a decomposition of the covariant d'Alembertian into a symmetric sum of squares and a curvature. In frequency space the first piece is $-\pi^{2}$ and the second is the curvature term, so the identity is exactly the symbol's two terms and the article's first finding is that no third term exists.
 
 Two connections can agree in $\pi$ at a point and disagree in $F$ there, and the symbol's difference is $\frac{2\pi i\varkappa}{h}$ times the difference of the curvatures: for two connections used below, $\lvert F_{21}\rvert$ is $0$ and $0.9$ while $\pi$ agrees at the point of evaluation. **So the symbol is not a function of the momentum alone**, and that is the exact statement of what a Fourier description of a gauge theory loses.
 
@@ -51,16 +51,16 @@ $$
 
 whose second term is the parent's extra piece, measured between $0.7$ and $12$ over one hundred random draws. That term is a product of two fields and not a derivative, and §*The Field Strength's Extra Term* is about what the transform does with it.
 
-The square-splitting identity is the parent's and it is the article's spine. For a connection with curvature $F^{(\Phi)}$,
+The square-splitting identity is the parent's and it is the article's spine. For a connection with curvature $F_{\Phi}$,
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
-=\sum_{\imath}\tilde\nabla_{\Phi,\mathrm{gco},\imath}^{2}+\frac{2\pi i\varkappa}{h}\tilde F^{(\Phi)} ,
+=\sum_{\imath}\tilde\nabla_{\Phi,\mathrm{gco},\imath}^{2}+\frac{2\pi i\varkappa}{h}\tilde F_{\Phi} ,
 \qquad
-\bigl[D_{\mathrm{gco},\imath},D_{\mathrm{gco},\jmath}\bigr]=\frac{2\pi i\varkappa}{h}F^{(\Phi)}_{\imath\jmath} ,
+\bigl[D_{\mathrm{gco},\imath},D_{\mathrm{gco},\jmath}\bigr]=\frac{2\pi i\varkappa}{h}F_{\Phi,\imath\jmath} ,
 $$
 
-the commutator checked on a test function to $1.1\times10^{-5}$. The first display is the symbol's decomposition before the transform is applied, and the transform turns the two terms into $-\pi^{2}$ and $\frac{2\pi i\varkappa}{h}F^{(\Phi)}$.
+the commutator checked on a test function to $1.1\times10^{-5}$. The first display is the symbol's decomposition before the transform is applied, and the transform turns the two terms into $-\pi^{2}$ and $\frac{2\pi i\varkappa}{h}F_{\Phi}$.
 
 The constant-connection licence. The symbol below is the symbol of a differential operator with constant coefficients, which requires a constant background. **A linear background is not constant and its symbol is not defined**; §*The Obstruction: Same Momentum, Different Curvature* handles that case by evaluating at a point and saying so.
 
@@ -68,11 +68,11 @@ The denial of the Legendre reading, once. The transform's variable is not a cano
 
 ## The Symbol in Two Terms
 
-The transform acts on the identity and gives the decomposition, term by term. Applying the symbol rule to the square splitting, the symmetric sum of squares becomes $-\pi^{2}$ — the four-momentum's interval with a sign — and the curvature term becomes $\frac{2\pi i\varkappa}{h}F^{(\Phi)}$. **There is no third term because the identity has two**, and the article's first claim is only that the identity survives the transform unchanged.
+The transform acts on the identity and gives the decomposition, term by term. Applying the symbol rule to the square splitting, the symmetric sum of squares becomes $-\pi^{2}$ — the four-momentum's interval with a sign — and the curvature term becomes $\frac{2\pi i\varkappa}{h}F_{\Phi}$. **There is no third term because the identity has two**, and the article's first claim is only that the identity survives the transform unchanged.
 
 The identity is the d'Alembertian's and the Proca symbol adds two pieces of its own. The square splitting decomposes $(\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}$, which is the covariant d'Alembertian; the Proca operator is that d'Alembertian less the projector onto the Lorenz form and less $\nu_m^{2}$. So the symbol's three pieces are the interval, the projector and the curvature, and the first two together are the free symbol at $\pi$. The curvature is the only piece the free article has no counterpart for, and every statement below about the obstruction is a statement about that piece alone.
 
-$-\pi^{2}$ is one number times the identity in the amplitude space; $\frac{2\pi i\varkappa}{h}F^{(\Phi)}$ is a two-form's matrix, antisymmetric and traceless in the four-vector reading. So the symbol is a scalar plus a traceless part, and any statement about a trace is a statement about the translation alone.
+$-\pi^{2}$ is one number times the identity in the amplitude space; $\frac{2\pi i\varkappa}{h}F_{\Phi}$ is a two-form's matrix, antisymmetric and traceless in the four-vector reading. So the symbol is a scalar plus a traceless part, and any statement about a trace is a statement about the translation alone.
 
 The curvature term's trace vanishes, which is the parent's Lorenz argument in frequency space. The parent shows that taking the trace of the covariant equation removes the commutator, so the curvature does not enter the covariant Lorenz condition. In the symbol's language: the trace of $\sigma_{\mathrm{gco}}$ is $-\pi^{2}\cdot4$ and has no curvature in it, so the constraint's symbol is the free one at $\pi$. That single sentence is the whole of the parent's §*The Lorenz Condition in Covariant Form*, and the article states it as a trace.
 
@@ -85,7 +85,7 @@ With $F=0$ the second term vanishes identically, so
 $$
 \sigma_{\mathrm{gco}}\bigl(\pi\bigr)=-\pi^{2}\mathbb{1}
 \qquad\text{when}\qquad
-F^{(\Phi)}_{\imath\jmath}=0 ,
+F_{\Phi,\imath\jmath}=0 ,
 $$
 
 and the symbol's dependence on the coupling is entirely through $\pi_{\imath}=h\nu_{\imath}-q A_{\imath}$. **The mass shell then reads $\pi^{2}=4\pi^{2}\nu_m^{2}$**, which is the parent's constant-background dispersion with the coupling in the momentum and nowhere else.
@@ -125,7 +125,7 @@ A two-form in four dimensions has rank four unless its invariants vanish, so the
 The coupled equation's symbol in the four-component reading is
 
 $$
-\sigma_{\mathrm{gco}}=\bigl(-\pi^{2}-4\pi^{2}\nu_m^{2}\bigr)\delta_{\imath\jmath}+\frac{i\varkappa}{h}F^{(\Phi)\imath}{}_{\jmath}
+\sigma_{\mathrm{gco}}=\bigl(-\pi^{2}-4\pi^{2}\nu_m^{2}\bigr)\delta_{\imath\jmath}+\frac{i\varkappa}{h}F_{\Phi}{}^{\imath}{}_{\jmath}
 -\pi_{\imath}\pi_{\jmath} ,
 $$
 
@@ -185,7 +185,7 @@ The covariant Lorenz condition's exactness is the parent's and it is quoted, not
 
 ## Summary
 
-The coupled Proca operator's symbol is two terms. The first is the free symbol at the shifted four-momentum $\pi_{\imath}=h\nu_{\imath}-q A_{\imath}$, which is the translation; the second is $\frac{2\pi i\varkappa}{h}F^{(\Phi)}$, which is the commutator of two covariant derivatives and is the obstruction. The decomposition is the parent's square-splitting identity, transformed term by term, and there is no third term because the identity has two.
+The coupled Proca operator's symbol is two terms. The first is the free symbol at the shifted four-momentum $\pi_{\imath}=h\nu_{\imath}-q A_{\imath}$, which is the translation; the second is $\frac{2\pi i\varkappa}{h}F_{\Phi}$, which is the commutator of two covariant derivatives and is the obstruction. The decomposition is the parent's square-splitting identity, transformed term by term, and there is no third term because the identity has two.
 
 At a constant connection the obstruction vanishes identically and the symbol is $-\pi^{2}$ times the identity: the translation is exact, the dispersion is $\pi^{2}=4\pi^{2}\nu_m^{2}$, and a constant potential moves the axis of the symbol's parity to $\omega=-\frac{2\pi \varkappa c\omicron_{\mathrm{pot}}}{h}$.
 
@@ -202,8 +202,8 @@ The mass does not enter the obstruction: the mass term is $-\nu_m^{2}\delta$, wh
 | $\pi_{\imath}=h\nu_{\imath}-q A_{\imath}$ | The shifted four-momentum; the symbol's argument |
 | $2\pi\nu_t'=\omega/c$, $k^{2}=4\pi^{2}\nu_t'{}^{2}-4\pi^{2}\nu_{\Phi}^{2}$ | The free four-wave-number and its interval |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
-| $\sigma_{\mathrm{gco}}=-\pi^{2}+\frac{2\pi i\varkappa}{h}F^{(\Phi)}$ | The coupled symbol; translation plus obstruction |
-| $F^{(\Phi)}_{\imath\jmath}$ | The curvature; $\lvert F_{21}\rvert=0.9$ in the example |
+| $\sigma_{\mathrm{gco}}=-\pi^{2}+\frac{2\pi i\varkappa}{h}F_{\Phi}$ | The coupled symbol; translation plus obstruction |
+| $F_{\Phi,\imath\jmath}$ | The curvature; $\lvert F_{21}\rvert=0.9$ in the example |
 | $\frac{2\pi i\varkappa}{h}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$ | The field strength's extra term; $0.7$ to $12$ over $100$ draws |
 | $-\pi^{2}$ | The trace part; the constraint's symbol |
 | $256$ | The mode count of the companions' bench; one, a few, all |

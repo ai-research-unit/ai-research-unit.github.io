@@ -85,7 +85,7 @@ $$
 
 with the last term read from the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass. The middle piece is not a gauge-fixing term added by hand: it is what the projection removes, and it is present in the element form already, hidden inside $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$. In the chart it is displayed, and displayed is where its rôle can be read: its variation is what produces the Lorenz condition as an equation.
 
-The parameters. On the timelike branch the field is $\tilde A_\Phi(q)$ with $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ and the two angles parametrizing $\hat u_{\mathrm b}$; the discrete $\varepsilon$ is not varied, because it is a label and not a coordinate. On the spacelike branch $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ with the angles those of $\hat u$. In both cases four.
+The parameters. On the timelike branch the field is $\tilde A_{\Phi}(q)$ with $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ and the two angles parametrizing $\hat u_{\mathrm b}$; the discrete $\varepsilon$ is not varied, because it is a label and not a coordinate. On the spacelike branch $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ with the angles those of $\hat u$. In both cases four.
 
 The pairing. Inherited, and the substitution cannot disturb it. The parent pairs with $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ — the field term's reality is the explicit $\mathrm{Re}$ — and with $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ for the mass. The chart writes $\tilde A_\Phi=\varrho\,u$ with $u$ a unit element, and the mass term becomes $\tfrac12\nu_m^{2}\varrho^{2}$, real. The field term's $\mathrm{Re}$ still does its work: the chart's $\varrho$ is real, so the term is the real part of a product of real multiples of $\tilde F(u)\tilde F(u)$.
 
@@ -97,13 +97,13 @@ The selection rule. Declared, and there is nothing to select. The Proca action h
 
 ## The Variation: The Euler–Lagrange Equations
 
-The change-of-variables argument. **The word is a bijection from the parameter set onto the branch**, and both are open subsets of four-dimensional spaces; it is smooth with smooth inverse away from the coordinate singularity at the pure scalar-potential line. A diffeomorphism carries a variational problem to a variational problem: if $\tilde A_\Phi=\Phi(q)$ and $S=\int\mathcal{L}(\Phi(q),\partial\Phi(q))$, then
+The change-of-variables argument. **The word is a bijection from the parameter set onto the branch**, and both are open subsets of four-dimensional spaces; it is smooth with smooth inverse away from the coordinate singularity at the pure scalar-potential line. A diffeomorphism carries a variational problem to a variational problem: if $\tilde A_\Phi=\digamma_{\mathrm{pot}}(q)$ and $S=\int\mathcal{L}(\digamma_{\mathrm{pot}}(q),\partial\digamma_{\mathrm{pot}}(q))$, then
 
 $$
-\frac{\delta S}{\delta q^i}=\Bigl(\frac{\delta S}{\delta\tilde A_\Phi}\Bigr)\Big|_{\tilde A_\Phi=\Phi(q)}\cdot\frac{\partial\Phi}{\partial q^i},
+\frac{\delta S}{\delta q^i}=\Bigl(\frac{\delta S}{\delta\tilde A_\Phi}\Bigr)\Big|_{\tilde A_\Phi=\digamma_{\mathrm{pot}}(q)}\cdot\frac{\partial\digamma_{\mathrm{pot}}}{\partial q^i},
 $$
 
-and the Jacobian $\partial\Phi/\partial q^i$ is invertible on the branch. So the Euler–Lagrange equations in the chart vanish if and only if the element-form equation holds, and their content is the field equation and nothing else. This is an identity of the calculus, not a claim about the algebra, and it is what makes the polar variational principle exact.
+and the Jacobian $\partial\digamma_{\mathrm{pot}}/\partial q^i$ is invertible on the branch. So the Euler–Lagrange equations in the chart vanish if and only if the element-form equation holds, and their content is the field equation and nothing else. This is an identity of the calculus, not a claim about the algebra, and it is what makes the polar variational principle exact.
 
 The singularity bounds the argument, and it is the chart's. On the timelike branch $\varrho=\sqrt{-\langle\tilde A_\Phi\rangle_\natural}$ and $\varepsilon=\mathrm{sign}\,a'_t$ are single-valued, but $\hat u_{\mathrm b}$ is not: it is $\vec A$ divided by its length, and at $\vec A=0$ — the pure scalar-potential line — the axis is undefined and the Jacobian degenerates. The field is perfectly regular there; the coordinates are not. So the change-of-variables identity holds on the branch minus that line, and a solution that crosses it needs a patching of the frame rather than a continuation of the chart. On the spacelike branch there is no such line, because a spacelike four-vector has $\vec A\neq0$, and the chart's only failure there is the light cone of field values, where the branch itself ends.
 

@@ -38,11 +38,11 @@
 
 **The properties are in the family table of the construction article, and they are not printed a second time.** [The Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) gives, for each of the six families, the entries, the number of cells, the norm $\operatorname{tr}(X^{\dagger}X)$ and the spectrum. **This article uses those numbers and adds the two things the family table does not carry**: the mass form of a single array, and the Hodge star.
 
-**The mass form.** With $\Phi_0=vD$, $D=\operatorname{diag}(-3,1,1,1)$ and $X$ one array,
+**The mass form.** With $Ξ_0=vD$, $D=\operatorname{diag}(-3,1,1,1)$ and $X$ one array,
 $$
-m^{2}(X)=\operatorname{tr}\bigl([X,\Phi_0]^{\dagger}[X,\Phi_0]\bigr)=v^{2}\operatorname{tr}\bigl(X^{\dagger}[D,[D,X]]\bigr),
+m^{2}(X)=\operatorname{tr}\bigl([X,Ξ_0]^{\dagger}[X,Ξ_0]\bigr)=v^{2}\operatorname{tr}\bigl(X^{\dagger}[D,[D,X]]\bigr),
 $$
-which is the diagonal entry $M^{2}_{XX}$ of [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). **It gives $32v^{2}$ on the six leptoquark arrays and $0$ on the nine colour and corner arrays, and that is the whole of the mass spectrum of this model.** **On the six $\mathfrak{so}(4)$ arrays it gives $8v^{2}$, and $8v^{2}$ is not a mass**: it is the off-diagonal artefact of a basis that is not the mass basis, since those arrays are the half-sum of a $32v^{2}$ direction and a $0$ direction. **The $v$ here is the $\mathrm{SU}(4)$-breaking value**, and it is the only breaking value this model has.
+which is the diagonal entry $M^{2}_{XX}$ of [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) **on an array of trace norm $2$, and $2|m^{2}|/\operatorname{tr}(X^{\dagger}X)$ on any other**. **It gives $32v^{2}$ on the six leptoquark arrays and $0$ on the nine colour and corner arrays, and that is the whole of the mass spectrum of this model.** **On the six $\mathfrak{so}(4)$ arrays it gives $8v^{2}$, and $8v^{2}$ is not a mass.** Those arrays are coherent sums of a $32v^{2}$ direction and a $0$ direction, and they are normalised to trace norm $1$ where a plane is normalised to $2$; dividing that out gives a mass-matrix entry of $16v^{2}$, the mean of $32v^{2}$ and $0$. **Neither number is an eigenvalue**: a coherent sum of a heavy and a massless direction is not a mass eigenstate, so neither reading is the mass of anything. **The $v$ here is the $\mathrm{SU}(4)$-breaking value**, and it is the only breaking value this model has.
 
 **The star.** On the real antisymmetric arrays the Hodge star of $\mathbb{R}^4$ acts, $\star(dt\wedge dx)=dy\wedge dz$ and cyclically, with $\star^{2}=+1$. **It gives $\star T^{L}_{a}=+T^{L}_{a}$ and $\star T^{R}_{a}=-T^{R}_{a}$** on the six $\mathfrak{so}(4)$ arrays, and on the six real planes $\star A_{tx}=+A_{yz}$, $\star A_{ty}=-A_{xz}$, $\star A_{tz}=+A_{xy}$. **The star is not defined on the nine imaginary arrays**, which are not two-forms.
 
@@ -78,9 +78,9 @@ $$
 $$
 At $\theta=0.4$ the lepton phase is $0.3624-0.9320i$ and each colour phase is $0.9211+0.3894i$. **The array moves no index and turns no plane**; it multiplies the four lines by four phases.
 
-**The boson.** $B'$ is the $B-L$ boson, and **the array is the one the vacuum is built from**. With the $i$ removed, $D=\operatorname{diag}(-3,1,1,1)$ is the Hermitian direction of the breaking, $\Phi_0=vD$, and $B-L=\tfrac13D$ on the $\mathbf4$: the charge is this array divided by three, which in charges reads $(-1,\tfrac13,\tfrac13,\tfrac13)$ with the lepton first.
+**The boson.** $B'$ is the $B-L$ boson, and **the array is the one the vacuum is built from**. With the $i$ removed, $D=\operatorname{diag}(-3,1,1,1)$ is the Hermitian direction of the breaking, $Ξ_0=vD$, and $B-L=\tfrac13D$ on the $\mathbf4$: the charge is this array divided by three, which in charges reads $(-1,\tfrac13,\tfrac13,\tfrac13)$ with the lepton first.
 
-**What the vacuum does not see.** $[iD,\Phi_0]=0$, so this array is invisible to the first breaking — and it is not alone: nine of the fifteen commute with $D$, the eight gluons and $B'$ itself. **The unique statement is narrower and it is the one that matters here**: of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place.
+**What the vacuum does not see.** $[iD,Ξ_0]=0$, so this array is invisible to the first breaking — and it is not alone: nine of the fifteen commute with $D$, the eight gluons and $B'$ itself. **The unique statement is narrower and it is the one that matters here**: of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place.
 
 **Its mass depends on which vacuum is assumed, and the two descriptions differ.** If the first breaking is by a direction that commutes with it — an adjoint-type vev along the lepton line — $B'$ stays massless down to $v$. On the minimal content of the corpus, one breaking at $v_C$ carrying the line and a right doublet, it does not: [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html) gives it a diagonal entry $\tfrac38g^2v_C^2$ and a share $\tfrac35$ of the $Z_R$, whose mass is $\tfrac58g^2v_C^2$. **So "massless until the weak breaking" is true in the first description and false in the second, and the corpus uses the second.**
 
@@ -294,7 +294,7 @@ Sixteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet o
 | the colour rotation | $\exp(0.4A_{xy})e_x$ | $(0,0.9211,-0.3894,0)$ |
 | the star on the real planes | $\star A_{tx}$, $\star A_{ty}$, $\star A_{tz}$ | $+A_{yz}$, $-A_{xz}$, $+A_{xy}$ |
 | the plane bracket | $[A_{jk},iS_{jk}]$ against $2i(E_{jj}-E_{kk})$ | $6/6$ exact |
-| the masses | $\operatorname{tr}([X,\Phi_0]^{\dagger}[X,\Phi_0])$ | $32v^{2}$ six times, $0$ nine times |
+| the masses | $\operatorname{tr}([X,Ξ_0]^{\dagger}[X,Ξ_0])$ | $32v^{2}$ six times, $0$ nine times |
 | the six $\mathfrak{so}(4)$ arrays | $m^{2}$ in their own basis | $16v^{2}$ each, off-diagonal, not a mass |
 | the six arrays in the fifteen | their coordinates | $0$ entries outside the span |
 | the Gram of the fifteen | $105$ pairs | one nonzero, $\operatorname{tr}(d_{2}d_{3})=+1$ |
@@ -307,7 +307,7 @@ Sixteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet o
 
 **Two spectra.** $0,0,\pm i$ on the fourteen plane and diagonal arrays, $-3i,i,i,i$ on the corner. **Nothing else appears**, and that is why every exponential in the article has a closed form.
 
-**One mass and one artefact.** $32v^{2}$ on the six leptoquark arrays, zero on the nine colour and corner arrays; **and $8v^{2}$ on the six $\mathfrak{so}(4)$ arrays, which is not a mass.** **The $32$ is twice the square of the vacuum's lepton-minus-colour difference**, and the zeros are the two facts that $D$ is a multiple of the identity on colour and that it commutes with itself.
+**One mass and one artefact.** $32v^{2}$ on the six leptoquark arrays, zero on the nine colour and corner arrays; **and $8v^{2}$ from the un-normalised form on the six $\mathfrak{so}(4)$ arrays — $16v^{2}$ as a mass-matrix entry, the mean of $32v^{2}$ and $0$ — which is not a mass at all.** **The $32$ is twice the square of the vacuum's lepton-minus-colour difference**, and the zeros are the two facts that $D$ is a multiple of the identity on colour and that it commutes with itself.
 
 **Every plane closes with its partner.** $[A_{jk},iS_{jk}]=2i(E_{jj}-E_{kk})$ holds on all six planes and gives $2d_{2}$, $2(d_{2}+d_{3})$ and $2d_{3}$ in the colour block, one diagonal combination per leptoquark plane, and nothing at the corner.
 
@@ -324,7 +324,7 @@ Sixteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet o
 | $d_{2}$, $d_{3}$ | the two colour diagonals, $\tfrac i2(W_{yy}-W_{xx})$ and $\tfrac i2(W_{zz}-W_{yy})$ |
 | $T^{L}_{a}$, $T^{R}_{a}$ | $\tfrac12L_{\mathrm{axf}}(\vec e_a)$ and $\tfrac12R_{\mathrm{axf}}(\vec e_a)$; the six $\mathfrak{so}(4)$ arrays, not bosons here |
 | $\star$ | the Hodge star of $\mathbb{R}^4$ with the Euclidean metric, $\star^2=+1$ |
-| $m^{2}(X)$ | $\operatorname{tr}([X,\Phi_0]^{\dagger}[X,\Phi_0])$, the diagonal entry of the mass matrix |
+| $m^{2}(X)$ | $\operatorname{tr}([X,Ξ_0]^{\dagger}[X,Ξ_0])$, the diagonal entry of the mass matrix |
 | $X^{a}$, $\bar X^{a}$ | the two leptoquark amplitudes of colour $a$ |
 | $g_{1}\dots g_{7}$ | the six off-diagonal gluons, named by the cell they occupy |
 | $T^{c}_{3}$, $T^{c}_{8}$ | the two colour diagonals, read as $d_{2}$ and $d_{3}$ |

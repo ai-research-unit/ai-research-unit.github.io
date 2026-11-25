@@ -30,7 +30,7 @@ with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and $V$ the pot
 
 *Third, the honest limit.* Whether the constrained system's solutions are the coupled pair's solutions is not established here. The equivalence is formal — the word is a bijection, so the variation of the action in the eight parameters and the variation in the element are the same variation — but the *flow* that the constrained system generates has not been shown to be the pair's flow. That is the article's open question and it is stated as such, not concealed.
 
-The two settings. The connection is taken constant, with constant coefficients, because that is the setting in which the parameters are coordinates on a fixed frame. In the operator setting the word's rapidity and rotor angle become fields and the action acquires gradient terms for them; the structure is the standard one of the quantum hydrodynamics of a spin fluid, and the article states it in §*The Two Settings: The Operator Setting* without deriving it.
+The two settings. The connection is taken constant, with constant coefficients, because that is the setting in which the parameters are coordinates on a fixed frame. In the operator setting the word's rapidity and rotor angle become fields and the action acquires gradient terms for them; the structure is the standard one of the quantum fluid mechanics of a spin fluid, and the article states it in §*The Two Settings: The Operator Setting* without deriving it.
 
 ## Conventions
 
@@ -110,7 +110,7 @@ $$
 
 and the gradient terms are the quantum potential's, in the spin-half-fluid form.
 
-The standard counterpart. The scalar case of this structure is Madelung's variational principle, and the spin case is the Takabayasi–Bohm–Holland hydrodynamics with the spin's own transport law. Both are established in the literature and this article does not derive them: the scalar case is the central-field limit of the parent polar article, and the spin case is the subject of *Spin Hydrodynamics in Biquaternionic Form*.
+The standard counterpart. The scalar case of this structure is Madelung's variational principle, and the spin case is the Takabayasi–Bohm–Holland fluid mechanics with the spin's own transport law. Both are established in the literature and this article does not derive them: the scalar case is the central-field limit of the parent polar article, and the spin case is the subject of *Spin Fluid Mechanics in Biquaternionic Form*.
 
 The one thing this article adds to the standard account. The standard derivations impose the unit conditions with Lagrange multipliers and then impose the spin-transport law as an additional equation, chosen from a family. Here the parameterisation imposes the unit conditions exactly, so the multipliers are absent, and the spin-transport law is the rotor bracket's equation and not an addition. That is a genuine simplification of the *presentation* and not of the *physics*: the family of admissible spin-transport laws is still there, in the choice of which parameter is taken as the spin's phase.
 
@@ -339,7 +339,7 @@ The polar variational principle's genuine gain is therefore structural and not d
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the mass-term proposition.
 - [The Lagrangian and the Dirac Equation](the-lagrangian-and-the-dirac-equation.html), for the free action's structure and the count of the pair.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization that produces the coupling.
-- [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html), for the four brackets as the spin-half fluid's transport laws.
+- [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html), for the four brackets as the spin-half fluid's transport laws.
 - [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html), for the scalar limit in which the brackets collapse to two.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the spin's transport in a background.
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the pairing's two frame units.

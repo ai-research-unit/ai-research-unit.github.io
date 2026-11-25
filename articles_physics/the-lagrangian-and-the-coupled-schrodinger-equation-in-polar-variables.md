@@ -348,8 +348,8 @@ The gauge group translates $\theta_{\mathrm{pha}}$ and nothing else, so the coup
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator's two slots.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation that becomes the chart's gauge direction.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the same chart in the spinor case, where the connection reaches all four brackets.
-- [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html), for the hydrodynamical reading of the central-field action.
+- [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html), for the fluid reading of the central-field action.
 - [Landau Levels in Biquaternionic Form](landau-levels-in-biquaternionic-form.html), for the operator setting in a constant magnetic field, where the diamagnetic term is the whole spectrum.
 - E. Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* 40, 322 (1927).
-- T. Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* 8, 143 (1952), for the hydrodynamical formulation and its constraint analysis.
+- T. Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* 8, 143 (1952), for the fluid formulation and its constraint analysis.
 - P. A. M. Dirac, *Lectures on Quantum Mechanics* (Yeshiva University, 1964), for the constraint analysis that §*Open Questions* invokes.

@@ -69,7 +69,7 @@ A curl of a vector field is exactly what a chart carrying a density and a phase 
 
 The chart shows $\tilde F$ because $\tilde F$ is a derivative; the chart cannot show the fork because the fork is an antisymmetrisation. A coordinate system can be good at one and bad at the other, and this one is.
 
-$\oint(\vec p-q\vec A)\cdot\mathrm{d}\vec l=h n+ϙ\Phi_B$ is the curl's integral form, and it is exact for the same reason. The chart's best statements are all of this shape, which is why the parent's §*The Current, the Vorticity and the Flux* is the section where the chart is strongest.
+$\oint(\vec p-q\vec A)\cdot\mathrm{d}\vec l=h n+ϙ\digamma_{\mathrm{flx}}$ is the curl's integral form, and it is exact for the same reason. The chart's best statements are all of this shape, which is why the parent's §*The Current, the Vorticity and the Flux* is the section where the chart is strongest.
 
 ## The Polar Variable Is the Mechanical One
 

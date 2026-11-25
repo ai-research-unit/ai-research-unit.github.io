@@ -9,7 +9,7 @@
 $$
 \boxed{\;\mathcal{L}_{\xi}=\sum_{f=1}^{16}\bar\xi_{f}\,i\gamma_{\imath}D_{\imath}\,\xi_{f},
 \qquad
-\mathcal{L}_{\mathrm{Yuk}}=y_{\alpha\beta}\,\bar\xi^{\alpha}\Phi\,\xi^{\beta}+\text{h.c.}\;}
+\mathcal{L}_{\mathrm{Yuk}}=y_{\alpha\beta}\,\bar\xi^{\alpha}Ξ\,\xi^{\beta}+\text{h.c.}\;}
 $$
 
 **One covariant derivative with fifteen matrices of each kind, and one Yukawa matrix on the copy index.** The kinetic term is fixed by the representation and carries no free number; the Yukawa term is one $2\times2$ complex matrix and carries four real numbers.
@@ -65,12 +65,12 @@ $$
 **The operator is forced to be a trace, and the trace is what needs the matrix index.**
 
 $$
-\bar\xi^{\alpha}\,\Phi\,\xi^{\beta}\to\mathbf1
+\bar\xi^{\alpha}\,Ξ\,\xi^{\beta}\to\mathbf1
 \quad\Longleftrightarrow\quad
 \bar{\mathbf4}\otimes\bigl(\mathbf{15}\oplus\mathbf1\bigr)\otimes\mathbf4\supset\mathbf1 .
 $$
 
-**The product contains exactly one singlet, and it comes from the $\mathbf1$ in $\Phi$.** The $\mathbf{15}$ part contributes nothing: $\bar{\mathbf4}\otimes\mathbf{15}\otimes\mathbf4$ has no invariant with one $\bar\xi$ and one $\xi$. **So the operator is unique and the Yukawa matrix is $2\times2$, not a matrix per block.**
+**The product contains exactly one singlet, and it comes from the $\mathbf1$ in $Ξ$.** The $\mathbf{15}$ part contributes nothing: $\bar{\mathbf4}\otimes\mathbf{15}\otimes\mathbf4$ has no invariant with one $\bar\xi$ and one $\xi$. **So the operator is unique and the Yukawa matrix is $2\times2$, not a matrix per block.**
 
 **The quartet would have given nothing at all.** $\bar{\mathbf4}\otimes\mathbf4\otimes\mathbf4$ has no singlet because $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$, and neither summand is $\bar{\mathbf4}$. **A scalar in the fundamental has no Yukawa coupling to these sixteen fermions**, so the operator's existence is an argument for the matrix index and not a convention about it.
 
@@ -80,7 +80,7 @@ $$
 
 ## The Mass Matrix After the Condensate
 
-**Substitute $\Phi=\Phi_{0}+\varphi$ with $\Phi_{0}=v_{C}D$ and the Yukawa term becomes a mass term plus a coupling.**
+**Substitute $Ξ=Ξ_{0}+\delta Ξ$ with $Ξ_{0}=v_{C}D$ and the Yukawa term becomes a mass term plus a coupling.**
 
 $$
 \mathcal{L}_{\mathrm{Yuk}}\supset y_{\alpha\beta}\,\bar\xi^{\alpha}\bigl(v_{C}D\bigr)\xi^{\beta}+\text{h.c.}

@@ -132,7 +132,7 @@ The two arenas, kept apart. Position space and momentum space say different thin
 
 ## Two Histories and the Flux
 
-Interference is a phase and never a modulus. Take two histories with the same endpoints. Their weights differ by the central factor $e^{-\frac{2\pi iϙ\Phi}{h}}$, with $\Phi$ the flux through the loop they enclose. In the word that factor is an angle shift with the branch's residue, exactly as in §*The Word of the Kernel in a Field-Free Potential*. The sum of the two weights therefore has the modulus of the free sum and the phase of the free sum plus the flux's contribution.
+Interference is a phase and never a modulus. Take two histories with the same endpoints. Their weights differ by the central factor $e^{-\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h}}$, with $\digamma_{\mathrm{flx}}$ the flux through the loop they enclose. In the word that factor is an angle shift with the branch's residue, exactly as in §*The Word of the Kernel in a Field-Free Potential*. The sum of the two weights therefore has the modulus of the free sum and the phase of the free sum plus the flux's contribution.
 
 The check is exact for polygons. For a constant field strength in a two-dimensional model the gauge term of a polygonal loop is the field strength times the enclosed area to $2\times10^{-16}$ over five random hexagons, and the two-path model of the companion gives a relative phase of $-0.480$ against a field-times-area of $-0.480$. Green's theorem on a linear potential is an identity, so what the numbers check is the orientation and the arithmetic.
 
@@ -218,7 +218,7 @@ The division of labour is the polar form's contribution: the charge enters the a
 | $\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ | The real one-form of the potential along the worldline |
 | $S_{\mathrm{gco}}[x]=-ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ | The gauge term of the worldline action |
 | $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; the one that names the boost |
-| $\Phi$ | Flux through the loop two histories enclose |
+| $\digamma_{\mathrm{flx}}$ | Flux through the loop two histories enclose |
 | $\mathcal S^{A}$, $\mathcal S^{0}$ | Kernel in a constant potential, and free kernel |
 | $\mathcal{F}[x]$ | Spin factor, the path-ordered algebra-valued weight |
 | $e^{-\frac{2\pi iϙ\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi}{h}}$ | The central phase of a field-free potential; the whole of its effect |

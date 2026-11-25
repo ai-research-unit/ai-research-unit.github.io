@@ -70,7 +70,7 @@ So a Wigner rotation applied to one spin, or to both with the same angle, does n
 
 ### The pair that does change
 
-Distribute the rotation over a label and discard the label. The state is $\bigl(\lvert\Phi\rangle\lvert p_a\rangle+\lvert\Phi\rangle\lvert p_b\rangle\bigr)/\sqrt2$ with $\lvert\Phi\rangle=(\lvert\uparrow\uparrow\rangle+\lvert\downarrow\downarrow\rangle)/\sqrt2$; branch $a$ gets the identity on both spins and branch $b$ gets $\mathrm{SU}(2)_{\hat z}(\omicron_{\mathrm{ang}})$ on both; the label is traced out.
+Distribute the rotation over a label and discard the label. The state is $\bigl(\lvert\digamma_{\mathrm{st}}\rangle\lvert p_a\rangle+\lvert\digamma_{\mathrm{st}}\rangle\lvert p_b\rangle\bigr)/\sqrt2$ with $\lvert\digamma_{\mathrm{st}}\rangle=(\lvert\uparrow\uparrow\rangle+\lvert\downarrow\downarrow\rangle)/\sqrt2$; branch $a$ gets the identity on both spins and branch $b$ gets $\mathrm{SU}(2)_{\hat z}(\omicron_{\mathrm{ang}})$ on both; the label is traced out.
 
 | $\omicron_{\mathrm{ang}}$ | concurrence | purity |
 | --- | --- | --- |
@@ -83,7 +83,7 @@ Distribute the rotation over a label and discard the label. The state is $\bigl(
 
 Both closed forms are exact: the concurrence is $\lvert\cos\omicron_{\mathrm{ang}}\rvert$ and the purity is $(1+\cos^{2}\omicron_{\mathrm{ang}})/2$, matched to twelve digits. The state is a mixture of two Bell states related by a relative rotation, and the mixture of two orthogonal Bell states at $\omicron_{\mathrm{ang}}=\pi/2$ is the maximally mixed state, which has neither entanglement nor purity.
 
-The recovery at $\omicron_{\mathrm{ang}}=\pi$ is not an error. A rotation by $\pi$ on a spin is $-i\sigma_{z}$, so on both factors it is $-\sigma_{z}\otimes\sigma_{z}$, and $\sigma_{z}\otimes\sigma_{z}$ acts as $+1$ on $\lvert\Phi\rangle$; the two branches are then the same ray and the state is pure again. The concurrence is therefore not monotone in the frame's rotation, and a reader who expects monotonicity will misread the table.
+The recovery at $\omicron_{\mathrm{ang}}=\pi$ is not an error. A rotation by $\pi$ on a spin is $-i\sigma_{z}$, so on both factors it is $-\sigma_{z}\otimes\sigma_{z}$, and $\sigma_{z}\otimes\sigma_{z}$ acts as $+1$ on $\lvert\digamma_{\mathrm{st}}\rangle$; the two branches are then the same ray and the state is pure again. The concurrence is therefore not monotone in the frame's rotation, and a reader who expects monotonicity will misread the table.
 
 ### The corrected statement about frames
 

@@ -26,7 +26,7 @@ $$
 
 **The coupling.** One $g_4$, in the covariant derivative $D_{\imath}=\partial_{\imath}-ig_4\sum_{a}A_{a,\imath}T_{a}$, with the normalisation of *The Lagrangian and the Primordial Force*.
 
-**The phase.** Above $M_C$ the scalar's expectation value vanishes, $\langle\Phi\rangle=0$, so no Yukawa vertex can dress a fermion line and no gauge-invariant mass is generated dynamically. **The phase is defined by that vanishing and by nothing else.**
+**The phase.** Above $M_C$ the scalar's expectation value vanishes, $\langleΞ\rangle=0$, so no Yukawa vertex can dress a fermion line and no gauge-invariant mass is generated dynamically. **The phase is defined by that vanishing and by nothing else.**
 
 **The indices.** All low, all sums weighted, as everywhere in the series. **The copy index $i$ is a label and not a frame slot**: it counts two and it never contracts with a spacetime index.
 
@@ -36,7 +36,7 @@ $$
 
 | statement | why it holds above $M_C$ |
 |---|---|
-| every fermion is massless | $\langle\Phi\rangle=0$, so the Yukawa contributes nothing |
+| every fermion is massless | $\langleΞ\rangle=0$, so the Yukawa contributes nothing |
 | every fermion is in a definite chirality | a Weyl field is, by construction, at every scale |
 | no fermion mixes with its conjugate | no mass term is written |
 | the gauge action is the same on both copies | the generators are $X\otimes\mathbb{1}_{2}$ |
@@ -65,7 +65,7 @@ with $m$ a $2\times2$ matrix in the copy index and the contraction over $\alpha$
 |---|---|---|---|
 | the fifteen | $\tfrac12m^{2}\sum_{a,\imath}A_{a,\imath}A_{a,\imath}$ | no | protected |
 | the sixteen | $m_{ij}\bar\xi_{i}\xi_{j}$ | **yes** | assumed |
-| the scalar | $m^{2}\operatorname{tr}\Phi^{2}$ | yes | assumed |
+| the scalar | $m^{2}\operatorname{tr}Ξ^{2}$ | yes | assumed |
 
 **Two of the three sectors have an assumed masslessness and only one has a protected one.** The boson sector is the exception because a gauge field's mass term breaks the symmetry that defines it, and that is the only structural protection in the model. **A reader who takes "all fifteen directions are massless above $M_C$" as a theorem should take "the sixteen are massless" as an assumption**, and the two sentences sit in the same paragraph of the declaration article without that distinction being drawn.
 

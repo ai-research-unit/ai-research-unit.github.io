@@ -1,8 +1,8 @@
-# __Spin Hydrodynamics in Biquaternionic Form__
+# __Spin Fluid Mechanics in Biquaternionic Form__
 
 ## Introduction
 
-A fluid whose elements carry spin has a second conserved quantity, and its hydrodynamics is the hydrodynamics of a fluid with two currents: the energy-momentum element and the spin element. The new thermodynamic variable is the spin polarization, whose conjugate intensive quantity is the spin potential $\mu_{\mathrm{spn}}$:
+A fluid whose elements carry spin has a second conserved quantity, and its fluid mechanics is that of a fluid with two currents: the energy-momentum element and the spin element. The new thermodynamic variable is the spin polarization, whose conjugate intensive quantity is the spin potential $\mu_{\mathrm{spn}}$:
 
 
 $$
@@ -17,7 +17,7 @@ $$
 \frac{\partial p_{\mathrm{th}}}{\partial \omega_{k\jmath}}\neq S_{\Psi,k\jmath}\ \text{in general},
 $$
 
-so the differential relations cannot close the equations. The equality holds only in global thermal equilibrium, where the polarization is the one the temperature fixes; off equilibrium the pressure is not a function of the polarization alone, and a closure that assumes it is has assumed away the physics. That is the article's most useful content and its warning against the most common shortcut in the spin-hydrodynamics literature.
+so the differential relations cannot close the equations. The equality holds only in global thermal equilibrium, where the polarization is the one the temperature fixes; off equilibrium the pressure is not a function of the polarization alone, and a closure that assumes it is has assumed away the physics. That is the article's most useful content and its warning against the most common shortcut in the spin-fluid-mechanics literature.
 
 The fluid's stress is [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html)'s, the entropy current and its Hermiticity declaration are [The Local Entropy Current](the-local-entropy-current.html)'s, the spin element is the rotor's, which is [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html)'s, and the conservation law the spin obeys is [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html)'s. The article adds the polarization as a thermodynamic variable, its diffusion and its relaxation, and the closure caution.
 
@@ -43,7 +43,7 @@ $$
 
 so that $S_{\Psi,k\jmath}$ is the angular momentum in the $\upsilon\jmath$ plane per unit proper volume, the $\upsilon_{\mathrm{tme}}=t$ component of the current. Every thermodynamic relation below uses the two-index density and every conservation or transport equation uses the three-index current, and the distinction is not bookkeeping: $\omega_{k\jmath}$ has two indices, so only the two-index object can be contracted with it.
 
-The rotor is an element of norm one, and the spin element it builds is regular as long as the rotor is; on the zero-divisor cone the quaternionic norm of the spin element vanishes and the polarization has no inverse. The corpus states the restriction because the algebra's degenerate elements are where its structure changes, and a hydrodynamic expansion around a degenerate polarization is not the same expansion.
+The rotor is an element of norm one, and the spin element it builds is regular as long as the rotor is; on the zero-divisor cone the quaternionic norm of the spin element vanishes and the polarization has no inverse. The corpus states the restriction because the algebra's degenerate elements are where its structure changes, and a fluid expansion around a degenerate polarization is not the same expansion.
 
 ### The two chemical potentials
 
@@ -111,7 +111,7 @@ $$
 
 whose divergence is the force that a polarization gradient exerts on the flow. The display is schematic in its indices — the spin element is antisymmetric and contracts with the gradient in the $\upsilon$ slot — and the article states the structure and does not write the index algebra in full, because the full algebra is bookkeeping without physics.
 
-A fluid with a polarization gradient is a fluid whose momentum balance feels the spin, so the flow and the spin cannot be solved separately; the two are one system, and that is the sense in which spin hydrodynamics is not ordinary hydrodynamics with an extra field.
+A fluid with a polarization gradient is a fluid whose momentum balance feels the spin, so the flow and the spin cannot be solved separately; the two are one system, and that is the sense in which spin fluid mechanics is not ordinary fluid mechanics with an extra field.
 
 The spin contributes a term to the production of [The Local Entropy Current](the-local-entropy-current.html),
 
@@ -151,17 +151,17 @@ $$
 
 the relaxation-time approximation, which is the standard closure and is quoted as such. Its solution is exponential, and its content is one number: how long a polarized element remembers its polarization.
 
-With $\tau_{\mathrm{spn}}=1.6678\times10^{-24}\,\mathrm{s}=1.667\,820\,476\times10^{-24}\,\mathrm{s}$, the surviving fraction after $1.6678\times10^{-24}\,\mathrm{s}$ is $e^{-1}=0.367\,879$, after $3.3356\times10^{-24}\,\mathrm{s}$ it is $0.135\,335$, after $6.6713\times10^{-24}\,\mathrm{s}$ it is $0.018\,316$, and after $1.6678\times10^{-23}\,\mathrm{s}$ it is $4.540\times10^{-5}$. The polarization is gone after a few relaxation times, which is why spin hydrodynamics is a description of the early stage of a collision and not of its late stage.
+With $\tau_{\mathrm{spn}}=1.6678\times10^{-24}\,\mathrm{s}=1.667\,820\,476\times10^{-24}\,\mathrm{s}$, the surviving fraction after $1.6678\times10^{-24}\,\mathrm{s}$ is $e^{-1}=0.367\,879$, after $3.3356\times10^{-24}\,\mathrm{s}$ it is $0.135\,335$, after $6.6713\times10^{-24}\,\mathrm{s}$ it is $0.018\,316$, and after $1.6678\times10^{-23}\,\mathrm{s}$ it is $4.540\times10^{-5}$. The polarization is gone after a few relaxation times, which is why spin fluid mechanics is a description of the early stage of a collision and not of its late stage.
 
 The relaxation term contributes to $\sigma_{\mathrm{ent}}$ a piece proportional to the departure squared over $\tau_{\mathrm{spn}}T$, so the decay of the polarization heats the fluid, exactly as the decay of a shear does. The two channels — spin relaxation and shear — are separate squares of the same second law, and the article counts them separately.
 
-A first-order theory with a diffusive spin current and no relaxation is parabolic and therefore acausal, exactly as the first-order heat conduction is; the relaxation time is what makes the spin channel hyperbolic, and [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html) is where that structure is written for the fluid as a whole.
+A first-order theory with a diffusive spin current and no relaxation is parabolic and therefore acausal, exactly as the first-order heat conduction is; the relaxation time is what makes the spin channel hyperbolic, and [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html) is where that structure is written for the fluid as a whole.
 
 ## The Caution: Why the Differential Relations Do Not Close
 
 ### The identity and its domain
 
-**The relation $\partial p_{\mathrm{th}}/\partial\omega_{k\jmath}=S_{\Psi,k\jmath}$ is a thermodynamic identity of the equilibrium state, and it is not an identity of the hydrodynamic equations.** In equilibrium the pressure is a function of the complete set of state variables, the polarization among them, and the derivative is a genuine partial derivative of a function. Off equilibrium the pressure is not a function of those variables at all — it is a functional of the state's history through the relaxation — so the derivative on the left is not defined as a partial derivative, and the equality has no content.
+**The relation $\partial p_{\mathrm{th}}/\partial\omega_{k\jmath}=S_{\Psi,k\jmath}$ is a thermodynamic identity of the equilibrium state, and it is not an identity of the fluid equations.** In equilibrium the pressure is a function of the complete set of state variables, the polarization among them, and the derivative is a genuine partial derivative of a function. Off equilibrium the pressure is not a function of those variables at all — it is a functional of the state's history through the relaxation — so the derivative on the left is not defined as a partial derivative, and the equality has no content.
 
 Written with the corpus's letters, the caution is
 
@@ -198,7 +198,7 @@ It is a *diagnostic*: on the equilibrium surface it relates the equation of stat
 
 ### What the spin sector needs instead
 
-The law is $J_{\Psi,\mathrm{spn},k}=-\kappa_{\mathrm{spn}}\partial_{\imath}\mu_{\mathrm{spn}}+\cdots$, and it introduces the current itself as a new field while removing the polarization from among the determined quantities, so the balance of the table is not restored by one line. The standard resolution is the Israel–Stewart one, applied to the spin channel exactly as [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html) applies it to the heat channel: the current becomes an independent variable, its relaxation equation $\tau_{\mathrm{spn}}\dot J_{\Psi,\mathrm{spn},k}+J_{\Psi,\mathrm{spn},k}=-\kappa_{\mathrm{spn}}\partial_{\imath}\mu_{\mathrm{spn}}$ supplies the missing relation, and the count closes because each equation brought in comes with its own unknown.
+The law is $J_{\Psi,\mathrm{spn},k}=-\kappa_{\mathrm{spn}}\partial_{\imath}\mu_{\mathrm{spn}}+\cdots$, and it introduces the current itself as a new field while removing the polarization from among the determined quantities, so the balance of the table is not restored by one line. The standard resolution is the Israel–Stewart one, applied to the spin channel exactly as [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html) applies it to the heat channel: the current becomes an independent variable, its relaxation equation $\tau_{\mathrm{spn}}\dot J_{\Psi,\mathrm{spn},k}+J_{\Psi,\mathrm{spn},k}=-\kappa_{\mathrm{spn}}\partial_{\imath}\mu_{\mathrm{spn}}$ supplies the missing relation, and the count closes because each equation brought in comes with its own unknown.
 
 : every field the relaxation equation introduces arrives with the equation that determines it, so the deficit of the equilibrium count is carried along rather than closed. What finally removes it is a modelling choice and not a dynamical equation — the spin equation of state, or equivalently the pseudo-gauge that fixes which of the two spin tensors is the physical one — and the article says so rather than presenting a closed system it has not got. The transport coefficients $\kappa_{\mathrm{spn}}$, $\tau_{\mathrm{spn}}$ and the spin-rotation coupling remain parameters, constrained in sign by the second law's inequality and in no other way here. That is the standard Israel–Stewart counting applied to the spin sector, and the article's contribution is to say so in the corpus's letters rather than to re-derive the counting.
 
@@ -210,7 +210,7 @@ The spin element is the rotor's generator conjugated into the fluid's frame, so 
 
 Interpretation, and marked as such. That the spin element is $\tfrac{h}{4\pi}$ times the conjugated generator with the components read as angular momenta is the corpus's normalisation and not a derivation. That the relaxation is exponential is the relaxation-time approximation and is quoted, not derived.
 
-**Not claimed.** That the transport coefficients have been computed — they have not. That the full index algebra of the spin stress has been written — it has not, and the article says so where the display is schematic. That the spin conservation law has been derived from the rotor's equation of motion — that is [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html)'s subject, and this article cites it. That the theory is causal — that is [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html)'s, and the spin channel's hyperbolicity is asserted here on the strength of its relaxation equation rather than proved.
+**Not claimed.** That the transport coefficients have been computed — they have not. That the full index algebra of the spin stress has been written — it has not, and the article says so where the display is schematic. That the spin conservation law has been derived from the rotor's equation of motion — that is [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html)'s subject, and this article cites it. That the theory is causal — that is [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html)'s, and the spin channel's hyperbolicity is asserted here on the strength of its relaxation equation rather than proved.
 
 ## Summary
 
@@ -260,8 +260,8 @@ The caution is the article's centre: $\partial p_{\mathrm{th}}/\partial\omega_{k
 
 - F. Becattini, "Covariant statistical mechanics and the stress-energy tensor," *Physical Review Letters* **108** (2012) 244502, for the spin potential and the equilibrium density operator with angular momentum.
 - F. Becattini and L. Tinti, "The ideal relativistic rotating gas as a perfect fluid with spin," *Annals of Physics* **325** (2010) 1566–1594, for the thermodynamics of a rotating spin fluid.
-- W. Florkowski, B. Friman, A. Jaiswal and E. Speranza, "Relativistic fluid dynamics with spin," *Physical Review C* **97** (2018) 041901, for the spin hydrodynamics equations used here as the standard reference.
+- W. Florkowski, B. Friman, A. Jaiswal and E. Speranza, "Relativistic fluid dynamics with spin," *Physical Review C* **97** (2018) 041901, for the spin fluid mechanics equations used here as the standard reference.
 - W. Israel and J. M. Stewart, "Transient relativistic thermodynamics and kinetic theory," *Annals of Physics* **118** (1979) 341–372, for the relaxation-time closure and the counting argument.
 - L. D. Landau and E. M. Lifshitz, *Statistical Physics, Part 1* (Pergamon, 1980), for the thermodynamics of a system in rotation.
 - F. Becattini, L. Bucciantini, E. Grossi and L. Tinti, "Local thermodynamical equilibrium and the $\beta$ frame for a quantum relativistic fluid," *European Physical Journal C* **75** (2015) 191, for the local-equilibrium density operator and the frame dependence.
-- The companion articles: [The Local Entropy Current](the-local-entropy-current.html), [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html), and [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html).
+- The companion articles: [The Local Entropy Current](the-local-entropy-current.html), [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html), and [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html).

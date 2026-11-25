@@ -118,7 +118,7 @@ S_{\mathrm{gco}}[\gamma_1]-S_{\mathrm{gco}}[\gamma_2]
 =-ϙ\int_{\Sigma}F ,
 $$
 
-with $\Sigma$ any surface the loop bounds. The relative weight of the two histories is therefore $e^{-\frac{2\pi iϙ\Phi}{h}}$ with $\Phi$ the flux. The connection is invisible to a single history and visible only between two, and the flux is the only channel by which the one-form reaches an amplitude.
+with $\Sigma$ any surface the loop bounds. The relative weight of the two histories is therefore $e^{-\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h}}$ with $\digamma_{\mathrm{flx}}$ the flux. The connection is invisible to a single history and visible only between two, and the flux is the only channel by which the one-form reaches an amplitude.
 
 The check is exact for polygons. For a constant field strength in a two-dimensional model the gauge term of a polygonal loop equals the field strength times the enclosed area to $2\times10^{-16}$ over five random hexagons, and a two-path model with endpoints $(0,0)$ and $(2,0)$ gives a difference of $-0.480$ against a field-times-area of $-0.480$. Green's theorem is exact for a linear potential on a polygon, so the identity is algebraic and the number is a check on the arithmetic and the orientation.
 
@@ -245,7 +245,7 @@ Adds.
 
 The sum over worldlines for the coupled pair is the free sum with one term added to the exponent, and the added term is the integral of the connection one-form along the history. Because that term is a real number, it multiplies the weight and never enters the algebra: the scale, the boost and the rotor of a history are those of the free history, and only the phase moves.
 
-The one-form's behaviour is decided by cohomology. When the potential is exact its integral depends on the endpoints alone, so it factors out and the coupled kernel is the free kernel times two endpoint phases — exactly, for every field-free potential, and the modulus, the poles and the spin transport are untouched. When the potential is not exact, two histories with the same endpoints differ by the flux through the loop they enclose, and the relative phase $e^{-\frac{2\pi iϙ\Phi}{h}}$ is the only way the one-form reaches an amplitude.
+The one-form's behaviour is decided by cohomology. When the potential is exact its integral depends on the endpoints alone, so it factors out and the coupled kernel is the free kernel times two endpoint phases — exactly, for every field-free potential, and the modulus, the poles and the spin transport are untouched. When the potential is not exact, two histories with the same endpoints differ by the flux through the loop they enclose, and the relative phase $e^{-\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h}}$ is the only way the one-form reaches an amplitude.
 
 The curvature reaches the spin, and the semiclassical evaluation places it there: the stationary path is the Lorentz path, the phase is the classical action with the flux, the van Vleck determinant has no term linear in the field strength because the linear term is an antisymmetric trace against a symmetric kernel, and the rotor is the parallel transport along the bent path. The connection's one-form and its curvature therefore have separate homes, and the polar companion reads them as the angle and the rotor.
 
@@ -262,7 +262,7 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 | $\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi=A_t\mathrm{d}r'_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\mathrm{d}r_{\imath}$ | The real one-form; the algebra product is not used |
 | $S_{\mathrm{gco}}[x]=-ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ | The gauge term of the worldline action; its sign follows the covariant derivative's |
 | $F_{\imath\jmath}=\partial A_{\jmath}/\partial R_{\imath}-\partial A_{\imath}/\partial R_{\jmath}$ | Field strength; the curvature, and the only object that reaches the spin factor |
-| $\Phi$ | Flux through the loop two histories enclose |
+| $\digamma_{\mathrm{flx}}$ | Flux through the loop two histories enclose |
 | $\mathcal S_L,\mathcal S_R$ | The two components of the coupled propagator, elements of $\mathbb{B}$ |
 | $\mathcal S^{A},\mathcal S^{0}$ | The kernels in a constant potential and in no potential |
 | $\mathcal{F}[x]$ | Spin factor, the path-ordered algebra-valued weight |

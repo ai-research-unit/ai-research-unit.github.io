@@ -64,13 +64,13 @@ The companion's loop invariant is a Lorentz transformation times a phase, and th
 $$
 \mathcal H=\mathrm{P}\exp\oint\Bigl(\Gamma_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}\Bigr)\mathrm{d}x_{\imath}
 =\underbrace{\mathcal H_{SL(2,\mathbb{C})}}_{\text{the frame's}}\cdot
-\underbrace{\exp\Bigl(\frac{2\pi iϙ\Phi_B}{h}\Bigr)}_{\text{the phase's}} .
+\underbrace{\exp\Bigl(\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h}\Bigr)}_{\text{the phase's}} .
 $$
 
 At a mode the frame is constant, so $\Gamma_{\imath}=0$ and the first factor is the identity.
 
 $$
-\mathcal H_{\text{mode}}=\exp\Bigl(\frac{2\pi iϙ\Phi_B}{h}\Bigr),
+\mathcal H_{\text{mode}}=\exp\Bigl(\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h}\Bigr),
 \qquad
 \mathcal H_{SL(2,\mathbb{C})}=1 .
 $$
@@ -138,7 +138,7 @@ A mode is a point of the momentum space and a constant element of the spinor car
 
 The label has room for the momentum and the frame and no room for the rotor. The gauge acts on the label and on nothing else, so at a constant connection the whole effect of the coupling on a mode is a translation of four numbers, and a translation cannot reach the rotor. That is the counting form of the companion's type argument, and it holds for every profile and not only for the constant one.
 
-The loop invariant is a Lorentz transformation times a phase. At a mode the frame is constant, so the Lorentz factor is the identity and the invariant is the phase $\exp(\frac{2\pi iϙ\Phi_B}{h})$ alone. The frozen-frame sector is exactly the set of modes, so the product $\mathbb{C}^{*}\times SL(2,\mathbb{C})$ is an inter-mode object with one factor on the diagonal.
+The loop invariant is a Lorentz transformation times a phase. At a mode the frame is constant, so the Lorentz factor is the identity and the invariant is the phase $\exp(\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h})$ alone. The frozen-frame sector is exactly the set of modes, so the product $\mathbb{C}^{*}\times SL(2,\mathbb{C})$ is an inter-mode object with one factor on the diagonal.
 
 Both slots of the connection are translations at a mode, so a mode's velocity is constant, its acceleration is zero and the Lorentz force vanishes identically. The force is inter-mode, and the phrase "the force takes the charge and the spin does not" is a dynamical statement about the label followed by a bookkeeping statement about the carrier.
 
@@ -157,8 +157,8 @@ The vorticity is $ϙF/m$ and a constant connection has no curvature, so a mode i
 | $\theta_{\mathrm{pwp}}=2\pi\nu_t'r_t'-2\pi\vec\nu_\Phi\cdot\vec r$ | The phase of a mode |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ | The rapidity and the rotor's angle |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction |
-| $\mathcal H=\mathcal H_{SL(2,\mathbb{C})}\exp(\frac{2\pi iϙ\Phi_B}{h})$ | The loop invariant |
-| $\Phi_B$ | The flux through the loop's spanning surface |
+| $\mathcal H=\mathcal H_{SL(2,\mathbb{C})}\exp(\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h})$ | The loop invariant |
+| $\digamma_{\mathrm{flx}}$ | The flux through the loop's spanning surface |
 | $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The gauge element; central |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 

@@ -35,11 +35,11 @@ $$
 
 **One condition, four equivalent statements, one proof.**
 
-**1.1 The statement.** Let $Q$ be a gauge generator and $\Phi_0$ the vacuum. Then $Q$ generates a symmetry of the vacuum if and only if $Q\Phi_0=0$.
+**1.1 The statement.** Let $Q$ be a gauge generator and $Ξ_0$ the vacuum. Then $Q$ generates a symmetry of the vacuum if and only if $QΞ_0=0$.
 
-**1.2 The proof.** A symmetry of the vacuum means $e^{i\theta Q}\Phi_0=\Phi_0$ for all $\theta$, which for infinitesimal $\theta$ is $Q\Phi_0=0$. Conversely $Q\Phi_0=0$ integrates to the finite statement.
+**1.2 The proof.** A symmetry of the vacuum means $e^{i\theta Q}Ξ_0=Ξ_0$ for all $\theta$, which for infinitesimal $\theta$ is $QΞ_0=0$. Conversely $QΞ_0=0$ integrates to the finite statement.
 
-**1.3 The equivalence with masslessness.** The mass matrix is $M^{2}_{XY}=\operatorname{tr}([X,\Phi_0]^\dagger[Y,\Phi_0])$, so $Q\Phi_0=0$ is exactly the vanishing of the row and column of $Q$. Same equation, two readings: a conserved charge and a massless boson.
+**1.3 The equivalence with masslessness.** The mass matrix is $M^{2}_{XY}=\operatorname{tr}([X,Ξ_0]^\dagger[Y,Ξ_0])$, so $QΞ_0=0$ is exactly the vanishing of the row and column of $Q$. Same equation, two readings: a conserved charge and a massless boson.
 
 **1.4 The converse, and its warning.** A charge that does not annihilate the vacuum is not conserved. That is a strong statement: it says the corresponding current has a divergence proportional to the Goldstone field, and the charge is not a well-defined operator on the physical Hilbert space. The charge is not "approximately conserved"; it is not defined.
 
@@ -53,7 +53,7 @@ $$
 |---|---|---|---|---|---|
 | electric, $Q$ | $T_{3L}+Y$ | below $M_W$ only | at every scale below $M_W$ | never below $M_W$ | it annihilates both vevs |
 | colour | $\mathfrak{su}(3)$ | at every scale | at every scale | never | $X e_t=0$ |
-| $B-L$ | the surviving $\mathrm{SU}(4)$ Cartan | as a direction of $\mathrm{SU}(4)$ above $M_C$ | no | $M_C$ | the lepton line carries $B-L=-1$, so $[B-L,\Phi_0]\neq0$ |
+| $B-L$ | the surviving $\mathrm{SU}(4)$ Cartan | as a direction of $\mathrm{SU}(4)$ above $M_C$ | no | $M_C$ | the lepton line carries $B-L=-1$, so $[B-L,Ξ_0]\neq0$ |
 | $T_{3R}$ | $\sigma^{3}/2$ | above $M_C$ | no | $M_C$ | the right line is a $T_{3R}$ eigenstate, not an eigenstate of the other two |
 | $Y$ | $T_{3R}+\tfrac12(B-L)$ | above $M_W$ | no | $M_W$ | the left line breaks it |
 | $T_{3L}$ | $\tau^{3}/2$ | above $M_W$ | no | $M_W$ | the left line is a $T_{3L}$ eigenstate |
@@ -82,7 +82,7 @@ $$
 
 **4.1 Inside $\mathrm{SU}(4)$ it is a direction; the colour step promotes it to a factor with no interval attached.** $B-L$ is a Cartan generator of the simple group and carries no coupling of its own, so there is no scale above $M_C$ at which it is a separate gauge symmetry. The colour half of the transition leaves it in the residual group, $\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ at rank five and dimension fifteen ([Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html)). **That group has no interval of scales**: the doublet half of the same vacuum breaks it at once (§4.2), so the factor is a statement about the residual algebra and never about a range of energies.
 
-**4.2 The transition does two things to it, and they must be told apart.** The colour part of the vacuum, $iD$, commutes with $B-L$: the corner is in the stabiliser, so the six generators that become heavy do not include it, and the sextet's $\pm\tfrac43$ are eigenvalues of a generator the colour step leaves alone. **The doublet part of the same vacuum does not commute with it.** That vacuum lies on the lepton line, where $B-L=-1$ and $T_{3R}=+\tfrac12$, so $[B-L,\Phi_0]=-\Phi_0\neq0$. **By the criterion of §*The Criterion*, $B-L$ is not conserved below $M_C$** — and by §1.4 it is not approximately conserved either: it is not defined.
+**4.2 The transition does two things to it, and they must be told apart.** The colour part of the vacuum, $iD$, commutes with $B-L$: the corner is in the stabiliser, so the six generators that become heavy do not include it, and the sextet's $\pm\tfrac43$ are eigenvalues of a generator the colour step leaves alone. **The doublet part of the same vacuum does not commute with it.** That vacuum lies on the lepton line, where $B-L=-1$ and $T_{3R}=+\tfrac12$, so $[B-L,Ξ_0]=-Ξ_0\neq0$. **By the criterion of §*The Criterion*, $B-L$ is not conserved below $M_C$** — and by §1.4 it is not approximately conserved either: it is not defined.
 
 **4.3 What does annihilate the vacuum is hypercharge.** $Y=T_{3R}+\tfrac12(B-L)$ gives $\tfrac12-\tfrac12=0$ on that line, so $Y$ is the unbroken direction and $B-L$ alone is not. Below $M_C$ the exact gauge charges are colour, $Y$, and — below $v$ — $Q$. **The charge that survives in $B-L$'s place does so by accident**: $B$, because the renormalisable Lagrangian contains no operator that violates it once the leptoquarks are gone (§*The Charges That Are Merely Accidental*).
 
@@ -132,7 +132,7 @@ $$
 
 | check | computation | result |
 |---|---|---|
-| the criterion | $Q\Phi_0=0$ | equivalent to a zero row of $M^{2}$ |
+| the criterion | $QΞ_0=0$ | equivalent to a zero row of $M^{2}$ |
 | the rank | $3\to5\to4\to3$ | two gained and one lost at $M_C$, one lost at $M_W$ |
 | the two steps at $M_W$ | $T_{3L}$ and $Y$ broken, $Q$ conserved | a sum of two broken generators can be unbroken |
 | the $B-L$ of the leptoquarks | $\pm\tfrac43$ against $\pm\tfrac23$ for a diquark | the diquark vertex is forbidden |

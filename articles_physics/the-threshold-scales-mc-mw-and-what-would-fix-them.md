@@ -81,7 +81,7 @@ $$
 
 **One vacuum, one breaking, four factors at once.** Argued in full in [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html); restated here because it changes what "the scales" means.
 
-**5.1 The rank-one vacuum.** $\Phi$'s vacuum is a line in the carrier times a line in the right doublet, and the model breaks once, at one
+**5.1 The rank-one vacuum.** $Ξ$'s vacuum is a line in the carrier times a line in the right doublet, and the model breaks once, at one
 scale. Above $M_C$ there is one factor, $\mathrm{SU}(4)$, of rank three and dimension fifteen; **the two weak factors are not there to be broken,
 they arrive with the doublet index** ([Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html)) and are counted
 from $M_C$ down. So the group at the transition is the four factors of dimension fifteen and rank five,

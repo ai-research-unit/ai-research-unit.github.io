@@ -88,7 +88,7 @@ $$
 
 **And the two rows cannot both be exact.** Their Lie bracket generates all fifteen generators of $\mathfrak{su}(4)$, which is simple, so a vacuum annihilated by both would break nothing. **The model must choose, and the corpus chooses the first row — that is what the transition is.**
 
-**The endpoint is the group at $M_C$, and not a group below it.** The same vacuum that produces the four factors kills the right one: the second line of $\Phi$'s vacuum makes $W_R$ and $Z_R$ heavy at the scale that makes them. **Rank five is therefore exact at the transition and has no width**, and the effective theory below it has three factors and rank four.
+**The endpoint is the group at $M_C$, and not a group below it.** The same vacuum that produces the four factors kills the right one: the second line of $Ξ$'s vacuum makes $W_R$ and $Z_R$ heavy at the scale that makes them. **Rank five is therefore exact at the transition and has no width**, and the effective theory below it has three factors and rank four.
 
 ## The Lemma: A Subalgebra Never Outranks Its Algebra
 
@@ -135,12 +135,12 @@ $$
 **The object that does the breaking, and the corpus already has it.**
 
 $$
-\Phi\in(\mathbf 4,\mathbf 1,\mathbf 2),\qquad 4\cdot1\cdot2=8\ \text{complex},\qquad 16\ \text{real components}.
+Ξ\in(\mathbf 4,\mathbf 1,\mathbf 2),\qquad 4\cdot1\cdot2=8\ \text{complex},\qquad 16\ \text{real components}.
 $$
 
 **It has two kinds of index, and each does one job.**
 
-**The $\mathrm{SU}(4)$ index breaks.** A vacuum along the lepton line, $\Phi\propto(1,0,0,0)$, breaks
+**The $\mathrm{SU}(4)$ index breaks.** A vacuum along the lepton line, $Ξ\propto(1,0,0,0)$, breaks
 
 $$
 \mathrm{SU}(4)\ \longrightarrow\ \mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L},\qquad 15\to9,
@@ -154,9 +154,9 @@ $$
 
 | what happens | where it lives | rank |
 | --- | --- | --- |
-| $\mathrm{SU}(4)$ condenses along the lepton line | the $\mathrm{SU}(4)$ index of $\Phi$ | $3$ |
+| $\mathrm{SU}(4)$ condenses along the lepton line | the $\mathrm{SU}(4)$ index of $Ξ$ | $3$ |
 | six leptoquarks eaten, colour and $B-L$ survive | the stabiliser of that line | $2+1$ |
-| a two-dimensional internal space appears | the $\mathbf 2$ index of $\Phi$ | $1$ |
+| a two-dimensional internal space appears | the $\mathbf 2$ index of $Ξ$ | $1$ |
 | its chiral half is the second weak factor | the copy structure of the condensate | $1$ |
 | **endpoint** | $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | $\mathbf{3+1+1=5}$ |
 
@@ -196,7 +196,7 @@ $$
 | a new scale $\Lambda$ | **no** | the scales are $M_C$ and $v$, both of them the corpus's |
 | a new confining dynamics | **no** | no bound state is built |
 | a matching rule for $W^{3}_L,W^{3}_R$ | **no** | they are the Cartans of factors that exist from the transition on |
-| a new vacuum | **no** | $iD=\operatorname{diag}(-3,1,1,1)$ is the corpus's |
+| a new vacuum | **no** | $iD=\operatorname{diag}(-3i,i,i,i)$ is the corpus's |
 
 **So the construction adds one line to the ledger and removes a question the corpus could not answer**: why the weak force exists at all.
 
@@ -286,7 +286,7 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 
 **The rank lemma is why it must be so.** $\operatorname{rank}\mathfrak{su}(4)=3$, the endpoint costs $5$, and a subalgebra never outranks its algebra. **So the weak factors are not pieces of $\mathrm{SU}(4)$; they arrive beside it — which is what "arrival" means here, and what $3+1+1=5$ certifies.**
 
-**The mechanism is one object with three indices.** $\Phi\in(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$: the colour pair breaks $\mathrm{SU}(4)$ and eats the sextet, the $\mathbf 2$ index is the weak force. **The breaking and the birth are one event with two aspects.**
+**The mechanism is one object with three indices.** $Ξ\in(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$: the colour pair breaks $\mathrm{SU}(4)$ and eats the sextet, the $\mathbf 2$ index is the weak force. **The breaking and the birth are one event with two aspects.**
 
 **The sextet cannot do it, twice over.** Charge: $Q=\pm\tfrac23$ sums to $\{0,\pm\tfrac43\}$ and never to $\pm1$, and the colour singlet is neutral identically. Mass: a bound state weighs at least its confinement scale, and that scale is $250$ TeV. Both proofs are [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html)'s. **Neither closure can be repaired by dynamics.**
 
@@ -299,7 +299,7 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 | $\mathfrak{su}(4)$ | the primordial force, dimension $15$, rank $3$ |
 | $\mathfrak m$ | the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, $Q=\pm\frac23$ |
 | $iD$ | the condensate $\operatorname{diag}(-3,1,1,1)$; $\operatorname{ad}(iD)$ has spectrum $0^{9},(\pm4i)^{3}$ |
-| $\Phi$ | the transition's scalar, $(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$, $64$ real components |
+| $Ξ$ | the transition's scalar, $(\mathbf{15}\oplus\mathbf1,\mathbf1,\mathbf2)$, $64$ real components |
 | $M_C$ | the first breaking scale, $\gtrsim250$ TeV from $K_L\to\mu e$ |
 | $v_C,v$ | the transition and electroweak vacuum values, $v=246$ GeV |
 | $\Lambda_{\text{confine}}$ | the scale a bound state weighs at least, $=M_C$ here |

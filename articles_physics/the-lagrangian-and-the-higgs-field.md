@@ -4,7 +4,7 @@
 
 The question. The electroweak sector's scalar is the one field in the corpus whose action is written twice in two places and never as a family article. *The Lagrangian and the Electroweak Theory* writes the full gauge action with the doublet inside it, and *Electroweak Symmetry Breaking* reads the masses and the couplings off the mass matrix. Neither asks the spin-zero question on its own: what is the action of the scalar field, what does its variation give, and what does the potential fix that the masses do not. This article asks it.
 
-The answer in five sentences. The scalar action is the Klein–Gordon action for a complex doublet with a potential $V=-\mu^{2}\Phi^{\dagger}\Phi+\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}$, and the potential is a function of one variable, $r^{2}=2\Phi^{\dagger}\Phi$, so the four real components split into one radial direction that is curved and three angular directions that are flat. The variation gives $\Box\Phi=\mu^{2}\Phi-2\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)\Phi$, whose radial reading is the anharmonic oscillator and whose unitary reading is $\Box h+m_h^{2}h+3\varpi_{\mathrm{cpl}} vh^{2}+\varpi_{\mathrm{cpl}} h^{3}=0$. The mass is the curvature of the potential at its minimum, $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$, and the same $\varpi_{\mathrm{cpl}}$ fixes the cubic and quartic self-couplings at $6\varpi_{\mathrm{cpl}} v$ and $6\varpi_{\mathrm{cpl}}$, so one number is measured three times. The three flat directions are the would-be Goldstone modes, and that is the whole of what the scalar sector contributes to the breaking.
+The answer in five sentences. The scalar action is the Klein–Gordon action for a complex doublet with a potential $V=-\mu^{2}\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}+\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2}$, and the potential is a function of one variable, $r^{2}=2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}$, so the four real components split into one radial direction that is curved and three angular directions that are flat. The variation gives $\Box\omicron_{\mathrm{hgs}}=\mu^{2}\omicron_{\mathrm{hgs}}-2\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})\omicron_{\mathrm{hgs}}$, whose radial reading is the anharmonic oscillator and whose unitary reading is $\Box h+m_h^{2}h+3\varpi_{\mathrm{cpl}} vh^{2}+\varpi_{\mathrm{cpl}} h^{3}=0$. The mass is the curvature of the potential at its minimum, $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$, and the same $\varpi_{\mathrm{cpl}}$ fixes the cubic and quartic self-couplings at $6\varpi_{\mathrm{cpl}} v$ and $6\varpi_{\mathrm{cpl}}$, so one number is measured three times. The three flat directions are the would-be Goldstone modes, and that is the whole of what the scalar sector contributes to the breaking.
 
 Why this article exists apart from the sector article. Because the sector article's subject is the gauge action and its two phases, and the scalar's own structure is a different claim. Here the gauge fields are spectators: the covariant derivative is replaced by the ordinary one, and the difference between the two actions is exactly the vector mass term, which the companion derives. What is left is a potential and its derivatives, and those are exact.
 
@@ -12,33 +12,33 @@ What is not done. No loop, no renormalisation, no running, no unitarity computat
 
 ## Conventions
 
-The measure is $\mathrm{d}^{4}x$, with $c$ and $h$ carried; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi=\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi$ carries the sign the mostly-minus literature carries. The doublet is a complex two-component column,
+The measure is $\mathrm{d}^{4}x$, with $c$ and $h$ carried; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $\partial_{\imath}\omicron_{\mathrm{hgs}}^{\dagger}\partial_{\imath}\omicron_{\mathrm{hgs}}=\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}\omicron_{\mathrm{hgs}}^{\dagger}\partial_{\imath}\omicron_{\mathrm{hgs}}$ carries the sign the mostly-minus literature carries. The doublet is a complex two-component column,
 
 $$
-\Phi=\frac{1}{\sqrt2}\begin{pmatrix}\xi_{\mathrm{pot},1}+i\xi_{\mathrm{pot},2}\\ \xi_{\mathrm{pot},3}+i\xi_{\mathrm{pot},4}\end{pmatrix},
+\omicron_{\mathrm{hgs}}=\frac{1}{\sqrt2}\begin{pmatrix}\xi_{\mathrm{pot},1}+i\xi_{\mathrm{pot},2}\\ \xi_{\mathrm{pot},3}+i\xi_{\mathrm{pot},4}\end{pmatrix},
 $$
 
-so that $\Phi$ carries four real components $\xi_{\mathrm{pot},A}$ and $\Phi^{\dagger}\Phi=\frac12\sum_A\xi_{\mathrm{pot},A}^{2}$. The potential is
+so that $\omicron_{\mathrm{hgs}}$ carries four real components $\xi_{\mathrm{pot},A}$ and $\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}=\frac12\sum_A\xi_{\mathrm{pot},A}^{2}$. The potential is
 
 $$
-V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2},
+V(\omicron_{\mathrm{hgs}})=-\mu^{2}\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}+\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2},
 \qquad \mu^{2}>0,\quad \varpi_{\mathrm{cpl}}>0,
 $$
 
-and its minimum sits at $\Phi^{\dagger}\Phi=\mu^{2}/2\varpi_{\mathrm{cpl}}\equiv v^{2}/2$, so that $v^{2}=\mu^{2}/\varpi_{\mathrm{cpl}}$ and $v\simeq3.9449\times10^{-8}\ \mathrm{J}$.
+and its minimum sits at $\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}=\mu^{2}/2\varpi_{\mathrm{cpl}}\equiv v^{2}/2$, so that $v^{2}=\mu^{2}/\varpi_{\mathrm{cpl}}$ and $v\simeq3.9449\times10^{-8}\ \mathrm{J}$.
 
-**The radial variable, named once.** Write $r=\sqrt{2\Phi^{\dagger}\Phi}$, a real non-negative field with $\dim r=1$. Every statement in this article that is not about the phase is a statement about $V$ as a function of $r$, and the notation is used to make that visible.
+**The radial variable, named once.** Write $r=\sqrt{2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}}$, a real non-negative field with $\dim r=1$. Every statement in this article that is not about the phase is a statement about $V$ as a function of $r$, and the notation is used to make that visible.
 
-The unitary chart. Where a component reading is needed the chart is $\Phi=\frac{1}{\sqrt2}\binom{0}{v+h}$ with $h$ real. It is a chart on the same action and not a different theory; the companion article states what it costs and what it buys.
+The unitary chart. Where a component reading is needed the chart is $\omicron_{\mathrm{hgs}}=\frac{1}{\sqrt2}\binom{0}{v+h}$ with $h$ real. It is a chart on the same action and not a different theory; the companion article states what it costs and what it buys.
 
-Two conventions are warnings. The first: $\mu^{2}$ has the dimensions of a mass squared and is not a mass. The curvature at the minimum is $2\mu^{2}$, and the difference matters — the free Klein–Gordon article's $\nu_m^{2}$ is the coefficient of $-\tilde\Xi^{*}\tilde\Xi$ with a fixed sign, whereas here the sign is negative and the coefficient is not the mass. The second: $\varpi_{\mathrm{cpl}}$ in this normalisation is the coefficient of $(\Phi^{\dagger}\Phi)^{2}$, so the quartic term in the unitary chart is $\frac{\varpi_{\mathrm{cpl}}}{4}h^{4}$. A reader who imports $\frac{\varpi_{\mathrm{cpl}}}{4!}\xi_{\mathrm{pot}}^{4}$ from the scalar-field literature will find the self-couplings wrong by a factor of six.
+Two conventions are warnings. The first: $\mu^{2}$ has the dimensions of a mass squared and is not a mass. The curvature at the minimum is $2\mu^{2}$, and the difference matters — the free Klein–Gordon article's $\nu_m^{2}$ is the coefficient of $-\tilde\Xi^{*}\tilde\Xi$ with a fixed sign, whereas here the sign is negative and the coefficient is not the mass. The second: $\varpi_{\mathrm{cpl}}$ in this normalisation is the coefficient of $(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2}$, so the quartic term in the unitary chart is $\frac{\varpi_{\mathrm{cpl}}}{4}h^{4}$. A reader who imports $\frac{\varpi_{\mathrm{cpl}}}{4!}\xi_{\mathrm{pot}}^{4}$ from the scalar-field literature will find the self-couplings wrong by a factor of six.
 
 ## The Action in Element Form
 
 The scalar block of the electroweak action, with the connection removed.
 
 $$
-S[\Phi,\Phi^{\dagger}]=\int\mathrm{d}^{4}x\;\Bigl\{\partial_{\imath}\Phi^{\dagger}\,\partial_{\imath}\Phi-V(\Phi)\Bigr\}
+S[\omicron_{\mathrm{hgs}},\omicron_{\mathrm{hgs}}^{\dagger}]=\int\mathrm{d}^{4}x\;\Bigl\{\partial_{\imath}\omicron_{\mathrm{hgs}}^{\dagger}\,\partial_{\imath}\omicron_{\mathrm{hgs}}-V(\omicron_{\mathrm{hgs}})\Bigr\}
 =\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\partial_{\imath} r\,\partial_{\imath}r+\tfrac{r^{2}}{2}\partial_{\imath}\theta_A\partial_{\imath}\theta_A+\tfrac{\mu^{2}}{2}r^{2}-\tfrac{\varpi_{\mathrm{cpl}}}{4}r^{4}\Bigr\},
 $$
 
@@ -53,9 +53,9 @@ $$
 
 The chart is the expansion about one point of the circle of minima, and the three terms after the mass term are the same $\varpi_{\mathrm{cpl}}$ read at third and fourth order.
 
-It is real, term by term. The kinetic term is $\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi=\sum_A(\partial_{\imath}\xi_{\mathrm{pot},A})^{2}/2$, a sum of squares with a fixed sign. The mass term is $-\mu^{2}\Phi^{\dagger}\Phi=-\mu^{2}\sum_A\xi_{\mathrm{pot},A}^{2}/2$, real and negative. The quartic is $\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}=\varpi_{\mathrm{cpl}}(\sum_A\xi_{\mathrm{pot},A}^{2})^{2}/4$, real and positive for $\varpi_{\mathrm{cpl}}>0$. The potential is therefore bounded below, and the bound is what makes a minimum exist at all.
+It is real, term by term. The kinetic term is $\partial_{\imath}\omicron_{\mathrm{hgs}}^{\dagger}\partial_{\imath}\omicron_{\mathrm{hgs}}=\sum_A(\partial_{\imath}\xi_{\mathrm{pot},A})^{2}/2$, a sum of squares with a fixed sign. The mass term is $-\mu^{2}\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}=-\mu^{2}\sum_A\xi_{\mathrm{pot},A}^{2}/2$, real and negative. The quartic is $\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2}=\varpi_{\mathrm{cpl}}(\sum_A\xi_{\mathrm{pot},A}^{2})^{2}/4$, real and positive for $\varpi_{\mathrm{cpl}}>0$. The potential is therefore bounded below, and the bound is what makes a minimum exist at all.
 
-**Why the sign of $\mu^{2}$ is the whole content.** With $\mu^{2}<0$ the potential has a single stationary point, at $\Phi=0$, and it is a minimum; the four components are degenerate and each has mass $\sqrt{-\mu^{2}}$. With $\mu^{2}>0$ the origin is a maximum and the minimum is the three-sphere $\Phi^{\dagger}\Phi=v^{2}/2$. Nothing else in the action changes. The article's subject is the second case, and the first is named here only because the same display covers both.
+**Why the sign of $\mu^{2}$ is the whole content.** With $\mu^{2}<0$ the potential has a single stationary point, at $\omicron_{\mathrm{hgs}}=0$, and it is a minimum; the four components are degenerate and each has mass $\sqrt{-\mu^{2}}$. With $\mu^{2}>0$ the origin is a maximum and the minimum is the three-sphere $\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}=v^{2}/2$. Nothing else in the action changes. The article's subject is the second case, and the first is named here only because the same display covers both.
 
 What the display is not. It is not the electroweak action: three of the four derivatives are not there, and putting them back turns the three flat directions into the longitudinal polarisations of $W^{\pm}$ and $Z$. It is not a quantised action: there is no gauge fixing, no ghost and no loop. And it is not a claim that the scalar is elementary — the potential is a renormalisable truncation, and the corpus's effective-potential article treats what the truncation costs.
 
@@ -64,16 +64,16 @@ What the display is not. It is not the electroweak action: three of the four der
 Varying the conjugate.
 
 $$
-\delta S=\int\mathrm{d}^{4}x\;\Bigl\{-\partial_{\imath}\partial_{\imath}\Phi^{\dagger}\,\delta\Phi-\frac{\partial V}{\partial\Phi^{\dagger}}\delta\Phi^{\dagger}\Bigr\}+\text{(boundary)},
+\delta S=\int\mathrm{d}^{4}x\;\Bigl\{-\partial_{\imath}\partial_{\imath}\omicron_{\mathrm{hgs}}^{\dagger}\,\delta\omicron_{\mathrm{hgs}}-\frac{\partial V}{\partial\omicron_{\mathrm{hgs}}^{\dagger}}\delta\omicron_{\mathrm{hgs}}^{\dagger}\Bigr\}+\text{(boundary)},
 $$
 
-and holding $\delta\Phi^{\dagger}$ arbitrary gives
+and holding $\delta\omicron_{\mathrm{hgs}}^{\dagger}$ arbitrary gives
 
 $$
-\Box\Phi=-\frac{\partial V}{\partial\Phi^{\dagger}}=\mu^{2}\Phi-2\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)\Phi .
+\Box\omicron_{\mathrm{hgs}}=-\frac{\partial V}{\partial\omicron_{\mathrm{hgs}}^{\dagger}}=\mu^{2}\omicron_{\mathrm{hgs}}-2\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})\omicron_{\mathrm{hgs}} .
 $$
 
-The same equation in the radial variable. Since $\Phi^{\dagger}\Phi=r^{2}/2$ and $V(r)=-\frac{\mu^{2}}{2}r^{2}+\frac{\varpi_{\mathrm{cpl}}}{4}r^{4}$,
+The same equation in the radial variable. Since $\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}=r^{2}/2$ and $V(r)=-\frac{\mu^{2}}{2}r^{2}+\frac{\varpi_{\mathrm{cpl}}}{4}r^{4}$,
 
 $$
 \Box r=-V'(r)=\mu^{2}r-\varpi_{\mathrm{cpl}} r^{3},
@@ -89,13 +89,13 @@ $$
 
 which is the radial equation expanded about $r=v+h$ with the linear term removed by the minimum condition. The three terms after the mass term are the nonlinearity, and their coefficients are fixed: there is no freedom left in them once $\varpi_{\mathrm{cpl}}$ and $v$ are chosen.
 
-The boundary term, and why it is not an obstacle. The equation is second order in time, so the variation needs $\Phi$ and its normal derivative fixed on the boundary — the same condition the Klein–Gordon article imposes, and the surface term vanishes under it. The scalar's variation is the simplest in the family for this reason: no gauge parameter, no constraint, no identity.
+The boundary term, and why it is not an obstacle. The equation is second order in time, so the variation needs $\omicron_{\mathrm{hgs}}$ and its normal derivative fixed on the boundary — the same condition the Klein–Gordon article imposes, and the surface term vanishes under it. The scalar's variation is the simplest in the family for this reason: no gauge parameter, no constraint, no identity.
 
 **What the variation does not give.** It does not give the masses of the vectors, the Goldstone modes, or the count. Those come from the same action with the covariant derivative restored and the vacuum chosen, and they are the companion article's subject. What the variation gives here is the scalar's equation and, through it, the statement that the potential's derivatives are the couplings.
 
 ## The Constraints the Action Imposes: The Stationary Point Is Not a Constraint
 
-The count. One real function in the radial chart, $r$ with $\Phi^{\dagger}\Phi=r^{2}/2$, one second-order equation, and a momentum that is the velocity. The map is invertible wherever $r\neq0$, so there is no primary constraint, no Gauss law and no constraint surface.
+The count. One real function in the radial chart, $r$ with $\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}=r^{2}/2$, one second-order equation, and a momentum that is the velocity. The map is invertible wherever $r\neq0$, so there is no primary constraint, no Gauss law and no constraint surface.
 
 **The potential fixes a value and does not restrict the data.** The stationary points of $V(r)=-\tfrac{\mu^{2}}{2}r^{2}+\tfrac{\varpi_{\mathrm{cpl}}}{4}r^{4}$ are $r=0$ and $r^{2}=\mu^{2}/\varpi_{\mathrm{cpl}}$, and the sign of $\mu^{2}$ decides whether the second lies on the real branch. That is a statement about which configuration has stationary energy; a configuration away from it is a solution with a different energy, and the action admits it.
 
@@ -135,15 +135,15 @@ The consequence the article does not resolve. The same display gives a vacuum en
 
 ## The Noether Currents and the Sign of the Charge
 
-The doublet's hypercharge current, and what becomes of it. The action is invariant under the global phase $\Phi\mapsto e^{i\theta}\Phi$, whose current is
+The doublet's hypercharge current, and what becomes of it. The action is invariant under the global phase $\omicron_{\mathrm{hgs}}\mapsto e^{i\theta}\omicron_{\mathrm{hgs}}$, whose current is
 
 $$
-J_{Y,\imath}=i\bigl(\Phi^{\dagger}\partial_{\imath}\Phi-\partial_{\imath}\Phi^{\dagger}\,\Phi\bigr),
+J_{Y,\imath}=i\bigl(\omicron_{\mathrm{hgs}}^{\dagger}\partial_{\imath}\omicron_{\mathrm{hgs}}-\partial_{\imath}\omicron_{\mathrm{hgs}}^{\dagger}\,\omicron_{\mathrm{hgs}}\bigr),
 $$
 
-conserved by the equation of motion. In the unitary chart the doublet has one real non-zero component, and $J_{Y,\imath}$ vanishes identically there: $\Phi^{\dagger}\partial_{\imath}\Phi$ is real when $\Phi$ is real, so the two terms cancel. **The physical Higgs field carries no hypercharge.**
+conserved by the equation of motion. In the unitary chart the doublet has one real non-zero component, and $J_{Y,\imath}$ vanishes identically there: $\omicron_{\mathrm{hgs}}^{\dagger}\partial_{\imath}\omicron_{\mathrm{hgs}}$ is real when $\omicron_{\mathrm{hgs}}$ is real, so the two terms cancel. **The physical Higgs field carries no hypercharge.**
 
-Where the current went. Into the three angular directions. A general chart writes $\Phi=\frac{1}{\sqrt2}\binom{0}{r}e^{i\theta_{a}\tau_{a}/2}$-style, and the phase directions carry $J_{Y,\imath}$ in proportion to their gradients. Those directions are the would-be Goldstones, and the gauge field that eats them inherits the coupling: the statement that the $Z$ has a hypercharge current is the same statement as the statement that the eaten Goldstones carried one. This is the mechanism read from the current side, and it agrees with the companion's count, which reads it from the degrees of freedom.
+Where the current went. Into the three angular directions. A general chart writes $\omicron_{\mathrm{hgs}}=\frac{1}{\sqrt2}\binom{0}{r}e^{i\theta_{a}\tau_{a}/2}$-style, and the phase directions carry $J_{Y,\imath}$ in proportion to their gradients. Those directions are the would-be Goldstones, and the gauge field that eats them inherits the coupling: the statement that the $Z$ has a hypercharge current is the same statement as the statement that the eaten Goldstones carried one. This is the mechanism read from the current side, and it agrees with the companion's count, which reads it from the degrees of freedom.
 
 The count of currents, from the potential alone. The potential's symmetry is $O(4)$; the minimum breaks it to $O(3)$; the number of generators that do not annihilate the vacuum is $6-3=3$. So three currents are broken and one linear combination of the four electroweak generators survives — the electromagnetic one, whose charge is $Q=T_3+Y/2$, with the sign of the electron's charge fixed by the hypercharge assignment and not by anything in this article. The count of currents and the count of Goldstones are the same number for the same reason.
 
@@ -169,10 +169,10 @@ The honest sentence. The corpus can write this action exactly, vary it exactly, 
 
 ## Summary
 
-The scalar action is the Klein–Gordon action for a complex doublet with $V=-\mu^{2}\Phi^{\dagger}\Phi+\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}$, whose potential depends on one variable and whose minimum is a three-sphere. The variation gives $\Box\Phi=\mu^{2}\Phi-2\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)\Phi$, the radial anharmonic equation and, in the unitary chart, $\Box h+m_h^{2}h+3\varpi_{\mathrm{cpl}} vh^{2}+\varpi_{\mathrm{cpl}} h^{3}=0$. The curvature at the minimum is $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$, the third and fourth derivatives give $g_{hhh}=3m_h^{2}/v$ and $g_{hhhh}=3m_h^{2}/v^{2}$, so one number is measured three times. Three directions are flat, they carry the hypercharge current, and the vectors that eat them inherit it. Nothing is quantised, and the value of $\varpi_{\mathrm{cpl}}$ is not derived.
+The scalar action is the Klein–Gordon action for a complex doublet with $V=-\mu^{2}\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}+\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2}$, whose potential depends on one variable and whose minimum is a three-sphere. The variation gives $\Box\omicron_{\mathrm{hgs}}=\mu^{2}\omicron_{\mathrm{hgs}}-2\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})\omicron_{\mathrm{hgs}}$, the radial anharmonic equation and, in the unitary chart, $\Box h+m_h^{2}h+3\varpi_{\mathrm{cpl}} vh^{2}+\varpi_{\mathrm{cpl}} h^{3}=0$. The curvature at the minimum is $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$, the third and fourth derivatives give $g_{hhh}=3m_h^{2}/v$ and $g_{hhhh}=3m_h^{2}/v^{2}$, so one number is measured three times. Three directions are flat, they carry the hypercharge current, and the vectors that eat them inherit it. Nothing is quantised, and the value of $\varpi_{\mathrm{cpl}}$ is not derived.
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{\partial_{\imath}\Phi^{\dagger}\partial_{\imath}\Phi+\mu^{2}\Phi^{\dagger}\Phi-\varpi_{\mathrm{cpl}}(\Phi^{\dagger}\Phi)^{2}\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{\partial_{\imath}\omicron_{\mathrm{hgs}}^{\dagger}\partial_{\imath}\omicron_{\mathrm{hgs}}+\mu^{2}\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}-\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2}\Bigr\},
 \qquad
 m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2},\quad v^{2}=\frac{\mu^{2}}{\varpi_{\mathrm{cpl}}}.
 $$
@@ -181,10 +181,10 @@ $$
 
 | Symbol | Meaning |
 |---|---|
-| $\Phi$ | Complex doublet, four real components $\xi_{\mathrm{pot},A}$ |
+| $\omicron_{\mathrm{hgs}}$ | Complex doublet, four real components $\xi_{\mathrm{pot},A}$ |
 | $\mu^{2},\ \varpi_{\mathrm{cpl}}$ | Mass-squared parameter and quartic coupling, both positive |
 | $v=\sqrt{\mu^{2}/\varpi_{\mathrm{cpl}}}$ | Magnitude of the vacuum expectation value, $\simeq3.9449\times10^{-8}\ \mathrm{J}$ |
-| $r=\sqrt{2\Phi^{\dagger}\Phi}$ | Radial field, the potential's only argument |
+| $r=\sqrt{2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}}$ | Radial field, the potential's only argument |
 | $h=r-v$ | Physical scalar fluctuation in the unitary chart |
 | $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$ | Curvature of the potential at the minimum |
 | $g_{hhh}=3m_h^{2}/v$ | Cubic self-coupling, $=6\varpi_{\mathrm{cpl}} v$ |

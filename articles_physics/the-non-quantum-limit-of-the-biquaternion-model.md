@@ -148,7 +148,7 @@ Four sectors, and the free Proca field is the one that refuses. The limit needs 
 | sector | free | coupled |
 |---|---|---|
 | Schrödinger | yes, in *The Schrödinger Equation in the Non-Quantum Limit* | yes, with the kinetic momentum |
-| Klein–Gordon | yes, in *The Klein–Gordon Equation in the Non-Quantum Limit* | yes, in *The Coupled Klein–Gordon Equation in the Non-Quantum Limit*, with the circulation quantum $h n-q\Phi_B$, $q$ the electric charge |
+| Klein–Gordon | yes, in *The Klein–Gordon Equation in the Non-Quantum Limit* | yes, in *The Coupled Klein–Gordon Equation in the Non-Quantum Limit*, with the circulation quantum $h n-q\digamma_{\mathrm{flx}}$, $q$ the electric charge |
 | Dirac | yes, on the square | yes, on the square, with the spin transport |
 | Proca | no: the word is a scale and a boost | yes: the phase comes from the connection |
 

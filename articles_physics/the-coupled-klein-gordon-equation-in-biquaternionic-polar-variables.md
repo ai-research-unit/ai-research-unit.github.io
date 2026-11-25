@@ -206,10 +206,10 @@ exactly, with no approximation and no quantum correction. So the mechanical flow
 $$
 \oint\bigl(\vec p-q\vec A\bigr)\cdot\mathrm{d}\vec l
 =\oint\vec p\cdot\mathrm{d}\vec l+ϙ\oint\vec A\cdot\mathrm{d}\vec l
-=h\,n+ϙ\,\Phi_B ,
+=h\,n+ϙ\,\digamma_{\mathrm{flx}} ,
 $$
 
-the first term because $\vec p=\frac{h}{2\pi}\nabla\theta$ is a gradient and its circulation is quantized in units of $h$, the second because the circulation of the vector potential is the magnetic flux through the loop. The mechanical circulation is therefore quantized *up to the flux*, which is the chart's exact statement of the flux-quantization and Aharonov–Bohm structure: a loop that encloses flux $\Phi_B$ has a mechanical circulation shifted by $ϙ\Phi_B$, and the shift is visible to the phase even where the field strength vanishes on the loop.
+the first term because $\vec p=\frac{h}{2\pi}\nabla\theta$ is a gradient and its circulation is quantized in units of $h$, the second because the circulation of the vector potential is the magnetic flux through the loop. The mechanical circulation is therefore quantized *up to the flux*, which is the chart's exact statement of the flux-quantization and Aharonov–Bohm structure: a loop that encloses flux $\digamma_{\mathrm{flx}}$ has a mechanical circulation shifted by $ϙ\digamma_{\mathrm{flx}}$, and the shift is visible to the phase even where the field strength vanishes on the loop.
 
 **What the chart shows here that the element form does not.** The element form's current is a bilinear and its gauge invariance is a cancellation between two terms. The chart's current is the density times a four-vector, its gauge invariance is a cancellation inside one component, and its vorticity is one curl. The three statements are the same statement, and the chart is the one that exhibits the vorticity, because the vorticity is a statement about a vector field and the chart is where the vector field is written.
 
@@ -239,7 +239,7 @@ and the second term is the field strength conjugated by the field.
 - The one substitution: $\frac{h}{2\pi} cP_t=E+ϙca'_t$ and $\frac{h}{2\pi}\vec P=\vec p-q\vec A$, the two classical replacements in one element, with the bracket's temporal coefficient equal to $-iP_t$.
 - The gauge transformation as the translation of one coordinate, exact infinitesimally.
 - The pair of equations as the parent's pair with the mechanical momentum and the same quantum potential.
-- The vorticity, $ϙ\vec B$, and the circulation, $h n+ϙ\Phi_B$: the two statements that the coupling changes the qualitative character of the flow rather than only its numbers.
+- The vorticity, $ϙ\vec B$, and the circulation, $h n+ϙ\digamma_{\mathrm{flx}}$: the two statements that the coupling changes the qualitative character of the flow rather than only its numbers.
 
 **Hides.**
 
@@ -255,7 +255,7 @@ and the second term is the field strength conjugated by the field.
 
 **Whether the constant-polarization case is the whole of the chart's reach.** The article uses the fact that a constant polarization factors through the central connection, and it uses the central field as the two-function case. Whether an intermediate case exists — a polarization that varies on a scale slow compared with the phase, so that its derivatives enter at a different order — is the chart's version of a WKB question and is not attempted.
 
-**The operator setting.** The article treats the connection as an external field with a varying profile but keeps the amplitude and the action as the primary objects; the operator setting, in which the equation is a PDE for a field, is the standard quantum-hydrodynamics problem with a magnetic field. Whether the chart's vorticity statement survives there with $\vec B$ a function, and whether the flux quantization becomes a statement about the field's nodal lines, is not answered here.
+**The operator setting.** The article treats the connection as an external field with a varying profile but keeps the amplitude and the action as the primary objects; the operator setting, in which the equation is a PDE for a field, is the standard quantum-fluid-mechanics problem with a magnetic field. Whether the chart's vorticity statement survives there with $\vec B$ a function, and whether the flux quantization becomes a statement about the field's nodal lines, is not answered here.
 
 ## Summary
 
@@ -273,7 +273,7 @@ $$
 \vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A)\bigr)-\frac{\partial}{\partial r'_t}\bigl(\rho_{\mathrm{num}}(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)\bigr)=0 .
 $$
 
-The quantum potential and the density are unchanged; the momentum is not, the current is gauge invariant, the vorticity is $ϙ\vec B$, and the circulation is $h n+ϙ\Phi_B$. The chart carries the component equation and cannot carry the algebra's equation, whose curvature term is a general element after conjugation by the field; that is the polar face of the element companion's prohibition on central fields in a nonzero field strength.
+The quantum potential and the density are unchanged; the momentum is not, the current is gauge invariant, the vorticity is $ϙ\vec B$, and the circulation is $h n+ϙ\digamma_{\mathrm{flx}}$. The chart carries the component equation and cannot carry the algebra's equation, whose curvature term is a general element after conjugation by the field; that is the polar face of the element companion's prohibition on central fields in a nonzero field strength.
 
 ## Summary of Notation
 
@@ -307,7 +307,7 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and its parameter count.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
-- [The Spin-Zero Fluid](the-spin-zero-fluid.html), for the hydrodynamic reading of the pair.
+- [The Spin-Zero Fluid](the-spin-zero-fluid.html), for the fluid reading of the pair.
 - [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html), for the free flow's irrotationality that the coupling breaks.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the quantization of the circulation in units of $h$.
 - [Landau Levels in Biquaternionic Form](landau-levels-in-biquaternionic-form.html), for the magnetic spectrum that the vorticity statement presupposes.

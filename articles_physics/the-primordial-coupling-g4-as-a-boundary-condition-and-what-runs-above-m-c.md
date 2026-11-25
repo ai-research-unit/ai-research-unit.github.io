@@ -48,7 +48,7 @@ $$
 
 - *No ratio to fix.* With one coupling there is no $\alpha_1/\alpha_2$ to match and no unification condition to impose; the matching at $M_C$ is a set of equalities among derived couplings and not a constraint on $g_4$.
 - *No free parameter in the gauge sector.* The value enters every vertex and every rate, so a measurement of any one of them fixes it. The corpus uses $K_L\to\mu e$, because it is the one channel the model predicts at tree level with no unknown matrix beyond the generation entries.
-- *No custodial relation.* $\rho=1$ at tree level comes from the two-index structure of $\Phi$ and not from a coupling ratio, and it is unaffected by the value of $g_4$.
+- *No custodial relation.* $\rho=1$ at tree level comes from the two-index structure of $Ξ$ and not from a coupling ratio, and it is unaffected by the value of $g_4$.
 
 **The value is imported, and the import is not a derivation.** $\alpha_s(M_X)$ is obtained by running the measured $\alpha_s(M_Z)=0.1179$ up through the Standard Model's content. **That running uses the strong sector's own coefficient and not $\mathrm{SU}(4)$'s**, so the identification $g_4^{2}=4\pi\alpha_s(M_X)$ is a matching statement: it says the two theories are the same theory at $M_X$. **The corpus imposes it at $M_X$ while a strict matching is at $M_C$**, and the two differ by one interval of running.
 
@@ -85,7 +85,7 @@ $$
 \tfrac13 T_{S}N_{s}=\tfrac13\times\bigl(\underbrace{4}_{\mathbf{15}}+\underbrace{0}_{\mathbf1}\bigr)=\tfrac{4}{3} .
 $$
 
-**There is no second index to multiply by.** $\Phi$ is a Hermitian matrix with a lower and an upper colour index and nothing else: sixteen real components, fifteen of them the adjoint and one the trace. **A count that doubles this — a complex matrix, or a matrix with a label no generator acts on — is counting components the algebra does not have**, and the row below shows what that does to $b_0$.
+**There is no second index to multiply by.** $Ξ$ is a Hermitian matrix with a lower and an upper colour index and nothing else: sixteen real components, fifteen of them the adjoint and one the trace. **A count that doubles this — a complex matrix, or a matrix with a label no generator acts on — is counting components the algebra does not have**, and the row below shows what that does to $b_0$.
 
 **The scalar term is the one term that reads the model's content, and it reads it sharply.** The three candidate scalar sectors give three coefficients:
 
@@ -103,7 +103,7 @@ $$
 
 **Three quantities the representation decides and $b_0$ does not see.**
 
-- *How the gauge field acts on $\Phi$*: the commutator $[T_{a},\Phi]$, fixed by the matrix index, and not a multiplication.
+- *How the gauge field acts on $Ξ$*: the commutator $[T_{a},Ξ]$, fixed by the matrix index, and not a multiplication.
 - *How many directions are eaten at $M_C$*: six, one per broken generator of $\mathrm{SU}(4)$.
 - *How many components survive*: ten, of which eight are a colour octet.
 

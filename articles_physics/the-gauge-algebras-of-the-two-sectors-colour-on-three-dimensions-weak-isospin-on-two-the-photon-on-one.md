@@ -114,7 +114,7 @@ $$
 T_{3L}+Y=T_{3L}+T_{3R}+\tfrac12(B-L).
 $$
 
-It is the unique direction annihilated by both vacuum lines, which is why it survives: the two conditions $Q\Phi_0=0$ and $QH_0=0$ leave exactly one dimension among the five Cartan directions of $B-L$, $T_{3L}$ and $T_{3R}$.
+It is the unique direction annihilated by both vacuum lines, which is why it survives: the two conditions $QΞ_0=0$ and $QH_0=0$ leave exactly one dimension among the five Cartan directions of $B-L$, $T_{3L}$ and $T_{3R}$.
 
 **4.4 The rank budget, read as an algebra statement.** $3\to5\to4\to3$: the Cartan rank of the residual algebra, computed as the dimension of the maximal torus that survives. **The first step adds two directions**, because the two weak $\mathrm{SU}(2)$ factors arrive with the doublet index at $M_C$ and bring their Cartans with them, while the sextet that leaves is off-diagonal and removes no torus direction. **The second removal is in the same vacuum as the first**: the right factor is broken by the doublet index of the same field, so the rank is five at $M_C$ and four immediately below it. The third removes $T_{3L}$ and $Y$ and keeps their sum, at $v$.
 
@@ -151,7 +151,7 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 | the third step | $12-3$ | $9$ |
 | the rank | $\dim$ maximal torus | $3\to5\to4\to3$ |
 | the annihilation | $Xe_t=0$ for $X\in\mathfrak{su}(3)$ | holds for all eight |
-| the surviving direction | $Q\Phi_0=QH_0=0$ | one dimension among five |
+| the surviving direction | $QΞ_0=QH_0=0$ | one dimension among five |
 
 ## Distinctions That Are Easy to Lose
 

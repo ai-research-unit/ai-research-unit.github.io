@@ -165,7 +165,7 @@ and cyclic in $(x,y,z)$. **Those six combinations span the same six dimensions a
 
 **What it is, and what it is not.** It is a **real subalgebra of the fifteen**, with $\dim_{\mathbb R}=6$ and rank $2$. It is **not** a second factor: a factor is a group multiplying the algebra's fields, and this is a subspace of the algebra itself. **The difference is not bookkeeping** — it is the difference between rank three and rank five.
 
-**What the condensate does to it.** The transition's vacuum is $iD=\operatorname{diag}(-3,1,1,1)$, and the mass matrix of the fifteen is
+**What the condensate does to it.** The transition's vacuum is $iD=\operatorname{diag}(-3i,i,i,i)$, that is $D=\operatorname{diag}(-3,1,1,1)$ multiplied by $i$, and the mass matrix of the fifteen is
 
 $$
 M^{2}=2v^{2}\bigl[D,[D,\cdot\,]\bigr],
@@ -240,7 +240,7 @@ $$
 
 **A theorem that used to be quoted in support, now recorded and set aside.**
 
-**The result.** Boyle and Farnsworth ask which finite algebra carries the Standard-Model group as its inner automorphisms, in an $8\times8$ Hermitian block-diagonal representation commuting with the chirality. **The answer is unique**, and the Pati–Salam algebra is the relevant one:
+**The result.** Boyle and Farnsworth ask which finite algebra carries the Standard-Model group as its inner automorphisms, in an $8\times8$ Hermitian block-diagonal representation commuting with the chirality. **The answer is unique**, and it is a sum of three simple Jordan algebras:
 
 $$
 \mathcal A_F=J_2^{L}(\mathbb C)\oplus J_2^{R}(\mathbb C)\oplus J_4(\mathbb C),

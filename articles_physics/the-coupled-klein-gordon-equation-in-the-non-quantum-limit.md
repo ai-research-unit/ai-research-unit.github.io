@@ -159,7 +159,7 @@ The second term is the energy's gradient and it is absent from the non-relativis
 The circulation inherits the quantisation with the flux. For a loop bounding a surface that no node crosses,
 
 $$
-\oint\vec\pi\cdot\mathrm{d}\vec l=h\,n-q\Phi_{B},
+\oint\vec\pi\cdot\mathrm{d}\vec l=h\,n-q\digamma_{\mathrm{flx}},
 $$
 
 the same statement as the non-relativistic companion's, and here it is the relativistic circulation of the mechanical momentum. The limit neither produces it nor modifies it.
@@ -213,7 +213,7 @@ The parent's covariant derivative factors exactly on the central field, with the
 
 Order zero is the mass shell in the mechanical energy and momentum, and its gradient is the Lorentz force with $\vec v=c^{2}\vec\pi/\mathcal E$. The force is the same bracket as the non-relativistic family's and the kinematics is not: $\vec\pi=\gamma m\vec v$ here and $\vec\pi=m\vec v$ there.
 
-Order one is the transport equation in the mechanical current, gauge invariant and exact, and it carries two exact companions the limit inherits: the current velocity's vorticity is $-(q/m)\vec B$, and the circulation is $h n-q\Phi_{B}$. The kinematic velocity's vorticity differs from the current velocity's by the energy's gradient, a relativistic effect that the non-relativistic family cannot have.
+Order one is the transport equation in the mechanical current, gauge invariant and exact, and it carries two exact companions the limit inherits: the current velocity's vorticity is $-(q/m)\vec B$, and the circulation is $h n-q\digamma_{\mathrm{flx}}$. The kinematic velocity's vorticity differs from the current velocity's by the energy's gradient, a relativistic effect that the non-relativistic family cannot have.
 
 Order two is the free quantum potential, with the free size in both denominators. The coupling changes the value of every leading term and the accuracy of none, and it costs one unstated hypothesis: the potential must be slowly varying on the scale $L$.
 
@@ -233,7 +233,7 @@ Order two is the free quantum potential, with the free size in both denominators
 | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}\mathcal E/(mc^{2})$ | Charge density |
 | $\epsilon=1/(\pi_{\Phi}L)$, $\delta=1/(2\pi\nu_mL)$ | The semiclassical and one-particle parameters |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; the free one |
-| $\Phi_{B}$ | Magnetic flux through a surface the loop bounds |
+| $\digamma_{\mathrm{flx}}$ | Magnetic flux through a surface the loop bounds |
 
 ## Further Reading
 

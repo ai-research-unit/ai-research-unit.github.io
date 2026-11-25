@@ -194,7 +194,7 @@ So the vorticity is real, it is produced by the frame's gradient alone, and the 
 
 ### What the vorticity is not
 
-It is not the spin. The spin direction is the rotor's image of the axis, and the vorticity is the curl of the velocity. The two are independent parameters of the word, and the field equation is what ties them; this article does not solve that tie, and the articles on spin hydrodynamics and on the Frenkel condition take it up. What can be said without solving it is that a fluid whose vorticity and whose spin direction are unrelated at each event is a legitimate solution of the kinematics, and that a hydrodynamic closure has to add the relation.
+It is not the spin. The spin direction is the rotor's image of the axis, and the vorticity is the curl of the velocity. The two are independent parameters of the word, and the field equation is what ties them; this article does not solve that tie, and the articles on spin fluid mechanics and on the Frenkel condition take it up. What can be said without solving it is that a fluid whose vorticity and whose spin direction are unrelated at each event is a legitimate solution of the kinematics, and that a fluid closure has to add the relation.
 
 It is not the magnetic field. The Gordon spin term is a magnetisation current and the vorticity is a flow property. The two meet in the antisymmetric part of the stress, which is where a spin fluid differs from a dust; the stress element of [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) is symmetric by construction, so the antisymmetric part is a genuinely new ingredient of the Dirac case, and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) is where it is identified.
 
@@ -258,7 +258,7 @@ $$
 
 with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ and $\vec s^{2}=-e_t$. The frame element is an element of $\mathbb{B}_\Phi$ and is written with its indices low, as the frame conventions require; the spin direction is a real unit vector and the spin element is $\rho_{\mathrm{num}}^{1/2}(\frac{h}{2\pi 2})i\vec s$ in $\mathbb{B}_\Psi$.
 
-The triple is not a set of independent fields. The Dirac equation ties the three, and the tie is what the polar article leaves open in its §*What the general field leaves open*: the equation relates the two parts' words, and the algebra supplies no canonical rule fixing one from the other. A hydrodynamic reading of the Dirac field has therefore to impose the tie as a closure, exactly as the non-relativistic spin-fluid literature does, and the articles on spin hydrodynamics do that.
+The triple is not a set of independent fields. The Dirac equation ties the three, and the tie is what the polar article leaves open in its §*What the general field leaves open*: the equation relates the two parts' words, and the algebra supplies no canonical rule fixing one from the other. A fluid reading of the Dirac field has therefore to impose the tie as a closure, exactly as the non-relativistic spin-fluid literature does, and the articles on spin fluid mechanics do that.
 
 ### What the triple closes
 
@@ -345,7 +345,7 @@ Established. The polar data of the Dirac field — the frame element, its square
 
 The comparison is established as a table and not as a claim. Every entry of §*The Three Fluids* is a statement already proved here or in the companion fluid articles, and the entry that matters is the seventh: the Dirac word is the only one of the three that carries an orientation. The correspondence of §*The Correspondence, Compared with the Other Two* rests on that entry and on the non-closure of the four brackets.
 
-Interpretation. That the spin-half fluid belongs to the class the non-relativistic spin-hydrodynamics literature calls a spin fluid. The correspondence is by structure — a density, a velocity and an independent spin direction, with the spin entering the current as a bound current — and not by derivation: nothing here shows that the corpus's spin direction obeys the literature's transport equation. What the corpus supplies is the exact kinematic triple and its algebra; the transport equation is a closure that the later articles add.
+Interpretation. That the spin-half fluid belongs to the class the non-relativistic spin fluid mechanics literature calls a spin fluid. The correspondence is by structure — a density, a velocity and an independent spin direction, with the spin entering the current as a bound current — and not by derivation: nothing here shows that the corpus's spin direction obeys the literature's transport equation. What the corpus supplies is the exact kinematic triple and its algebra; the transport equation is a closure that the later articles add.
 
 Not claimed. It is not claimed that the vorticity and the spin direction are tied at each event. They are independent parameters of the word, and the tie is the field equation's, not the kinematics'. It is not claimed that the frozen-frame sector is the non-relativistic limit: the non-relativistic limit of the polar article is a different reduction, in which the frame loses its boost and the rotor precesses, and a reader who wants that limit should read it there.
 

@@ -32,7 +32,7 @@ with $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ the material connect
 
 *Second, in the constant setting the coupling is a shift of the two eigenvalues and of the axis.* The free flow's numbers are the mean $h_t$ and the vector $\vec h_\Psi$; the coupled flow's are $h_t-ϙ\omicron_{\mathrm{pot}}$ and $\vec h_\Psi-q\vec A$. The scale and the rapidity are still frozen, the phase still advances at minus the mean of the shifted pair, and the carried directions still precess at the gap of the shifted pair. The kinetic momentum is the shifted vector, the canonical momentum the unshifted one, and the difference between them is the vector potential (§*The General Element in the Constant Setting*).
 
-*Third, in the operator setting the word reproduces the covariant Madelung pair, and the connection enters only where the pair can carry it.* The continuity equation gets the kinetic momentum in place of the gradient, the Hamilton–Jacobi equation gets the kinetic energy in place of the kinetic term and $-ϙ\omicron_{\mathrm{pot}}$ in place of nothing, and the quantum potential is written with the ordinary gradient of the scale because the connection cannot touch it. The plate is standard quantum hydrodynamics; the biquaternionic form of it is what the article supplies (§*The Central Field in the Operator Setting*).
+*Third, in the operator setting the word reproduces the covariant Madelung pair, and the connection enters only where the pair can carry it.* The continuity equation gets the kinetic momentum in place of the gradient, the Hamilton–Jacobi equation gets the kinetic energy in place of the kinetic term and $-ϙ\omicron_{\mathrm{pot}}$ in place of nothing, and the quantum potential is written with the ordinary gradient of the scale because the connection cannot touch it. The plate is standard quantum fluid mechanics; the biquaternionic form of it is what the article supplies (§*The Central Field in the Operator Setting*).
 
 **What is not claimed.** No new prediction and no new solution: the equation is the element form's and the flow is its consequence. The polar chart does not decouple the four brackets from the parameters, does not simplify the equation, and does not supply a second constant of motion. What it supplies is the reading: which bracket the connection joins, which coordinate the gauge group translates, and which invariants the coupling leaves alone.
 
@@ -179,12 +179,12 @@ $$
 **The loop.** Let $\vec B=0$ in a region that is not simply connected and let the field be central there. The phase is single valued on the field, so its gradient integrates to $h n$ around a loop, with $n$ the winding; and the kinetic circulation is
 
 $$
-\oint\vec v\cdot d\vec l=\frac{h\,n+ϙ\,\Phi_B}{m},
+\oint\vec v\cdot d\vec l=\frac{h\,n+ϙ\,\digamma_{\mathrm{flx}}}{m},
 \qquad
-\Phi_B=\oint\vec A\cdot d\vec l=\int_{\Sigma}\vec B\cdot d\vec S,
+\digamma_{\mathrm{flx}}=\oint\vec A\cdot d\vec l=\int_{\Sigma}\vec B\cdot d\vec S,
 $$
 
-with $\Sigma$ any surface bounded by the loop. With $ϙ$ the negative of the electric charge this is $\big(h n-q\Phi_B\big)/m$, the standard statement that a magnetic flux shifts every circulation quantum. The derivation is one line from the vorticity of the preceding section, and the physical content — that the vector potential is invisible locally and visible on a loop — is the Aharonov–Bohm statement in the polar chart's letters.
+with $\Sigma$ any surface bounded by the loop. With $ϙ$ the negative of the electric charge this is $\big(h n-q\digamma_{\mathrm{flx}}\big)/m$, the standard statement that a magnetic flux shifts every circulation quantum. The derivation is one line from the vorticity of the preceding section, and the physical content — that the vector potential is invisible locally and visible on a loop — is the Aharonov–Bohm statement in the polar chart's letters.
 
 **Where the loop statement lives.** It is a statement about the phase gradient, so it belongs to the operator setting, where a gradient exists. In the constant setting there is no loop and the vector potential acts as the shift of the rotor's axis; the two statements agree on a plane wave, where the rotor's axis and the phase gradient are the same momentum.
 
@@ -228,7 +228,7 @@ $$
 \partial_{t'}S+\frac{|\vec\nabla_\Phi S-q\vec A|^{2}}{2m}-ϙ\omicron_{\mathrm{pot}}+Q=0,
 $$
 
-the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/2m\varrho$ unchanged. The kinetic momentum is invariant, the kinetic energy $-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}}$ is invariant, the vorticity is $ϙ\vec B/m$, and the circulation around a loop is $\big(h n+ϙ\Phi_B\big)/m$.
+the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/2m\varrho$ unchanged. The kinetic momentum is invariant, the kinetic energy $-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}}$ is invariant, the vorticity is $ϙ\vec B/m$, and the circulation around a loop is $\big(h n+ϙ\digamma_{\mathrm{flx}}\big)/m$.
 
 ## Summary of Notation
 
@@ -250,7 +250,7 @@ the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2
 | $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density; $\rho_{\mathrm{num}}=2n$ |
 | $h_t$, $\vec h_\Psi$ | The canonical energy and momentum of the constant setting |
 | $h_t-ϙ\omicron_{\mathrm{pot}}$, $\vec h_\Psi-q\vec A$ | The kinetic energy and momentum |
-| $\Phi_B$ | The magnetic flux through a loop |
+| $\digamma_{\mathrm{flx}}$ | The magnetic flux through a loop |
 | $\Gamma$, $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge function and factor |
 
 ## Further Reading
@@ -266,7 +266,7 @@ the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its bijection.
 - [The N-Regular Sector](../articles_maths/the-n-regular-sector.html) and [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the domain the chart covers.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the free-case loop statements that §*Flux and Circulation* couples.
-- [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html) and [Superfluids and BECs: The Gross–Pitaevskii Equation as the Nonlinear Reverse Map](superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map.html), for the hydrodynamical reading of the pair.
+- [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html) and [Superfluids and BECs: The Gross–Pitaevskii Equation as the Nonlinear Reverse Map](superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map.html), for the fluid reading of the pair.
 - [Landau Levels in Biquaternionic Form](landau-levels-in-biquaternionic-form.html), for the operator setting with a constant magnetic field.
 - E. Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40**, 322 (1927), for the pair in its original form.
-- T. Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8**, 143 (1952), for the hydrodynamical formulation with the quantum potential.
+- T. Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8**, 143 (1952), for the fluid formulation with the quantum potential.

@@ -26,7 +26,7 @@ The parent's coupling is $ϙ$, with $ϙ=-q$ where $q$ is the electric charge. Ev
 
 The coupling changes no order: both of the parent's equations have the same three orders as the free pair, and the quantum potential is the same function of the scale. Order zero is a Hamilton–Jacobi equation in the kinetic momentum, and its gradient is the Lorentz force with $\vec\pi=m\vec v$, so the non-relativistic limit produces Newton's law with the magnetic force and nothing else. Order one is the covariant continuity equation, whose current is the kinetic momentum over the mass, and which is not an expansion. The vorticity is the field's: the canonical flow is irrotational and the kinetic flow is rotational exactly where $\vec B$ is, and the circulation is quantised with the flux subtracted, an exact statement the limit inherits and does not derive.
 
-The covariant Madelung pair, the kinetic momentum in the transport current, the vorticity of the velocity field and the flux-corrected circulation are standard results of the hydrodynamical formulation of a charged scalar field, and the Lorentz force from a Hamilton–Jacobi equation is textbook. Added here: the ordering of the parent's own terms against a gauge-invariant parameter, the statement that the coupling costs no accuracy, and the reading of the gauge group as the translation of one polar coordinate.
+The covariant Madelung pair, the kinetic momentum in the transport current, the vorticity of the velocity field and the flux-corrected circulation are standard results of the fluid formulation of a charged scalar field, and the Lorentz force from a Hamilton–Jacobi equation is textbook. Added here: the ordering of the parent's own terms against a gauge-invariant parameter, the statement that the coupling costs no accuracy, and the reading of the gauge group as the translation of one polar coordinate.
 
 The restriction is the free one, and the coupling does not remove it. The parent's pair is the central field's, $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_{t}$, and that class is invariant only under a central Hamiltonian. The limit is therefore defined on the central class here as it is in the free companion, and for the same reason.
 
@@ -147,9 +147,9 @@ The canonical flow is irrotational — that is the free article's exact statemen
 The circulation is quantised with the flux subtracted, and the limit adds nothing to it.
 
 $$
-\oint\vec\pi\cdot\mathrm{d}\vec l=h\,n-q\Phi_{B},
+\oint\vec\pi\cdot\mathrm{d}\vec l=h\,n-q\digamma_{\mathrm{flx}},
 \qquad
-\Phi_{B}=\int_{\Sigma}\vec B\cdot\mathrm{d}\vec\Sigma ,
+\digamma_{\mathrm{flx}}=\int_{\Sigma}\vec B\cdot\mathrm{d}\vec\Sigma ,
 $$
 
 for a loop bounding a surface that no node crosses. The equation is exact and it is inherited: the limit neither produces it nor modifies it, and its job there is to leave it alone.
@@ -200,7 +200,7 @@ The vorticity was checked by direct differentiation. $\vec\nabla_\Phi\times(\vec
 
 The quantum potential was checked for invariance. $Q$ contains $\varrho$ and $\Delta_\Phi \varrho$ only; under the gauge transformation the word's factors transform as the parent states, the scale is unchanged, and $Q$ is unchanged term for term.
 
-The circulation was checked against the parent's letters. The parent writes $\oint\vec\pi\cdot\mathrm{d}\vec l=h n+ϙ\Phi_{B}$ with $ϙ=-q$; the display here is the same statement in the article's letters.
+The circulation was checked against the parent's letters. The parent writes $\oint\vec\pi\cdot\mathrm{d}\vec l=h n+ϙ\digamma_{\mathrm{flx}}$ with $ϙ=-q$; the display here is the same statement in the article's letters.
 
 **What was not checked.** No numerical solution of the coupled time-dependent problem was run and no flux was computed on a closed form. The claims are about terms and identities, and both were verified as algebra.
 
@@ -210,7 +210,7 @@ The parent's pair carries the connection in exactly three places: the transport 
 
 The criterion must be written on the mechanical momentum, $\epsilon=1/(\pi_{\Phi}L)$, because the canonical gradient is not gauge invariant. With that substitution the order table is the free table and the coupling contributes no parameter.
 
-Order zero is the Hamilton–Jacobi equation in the kinetic momentum, and its gradient is the Lorentz force with $\vec\pi=m\vec v$: Newton's law with the magnetic force, from order zero alone, by two named cancellations. Order one is the covariant continuity equation, exact and untouched by the limit, and it carries two exact companions — the vorticity $-(q/m)\vec B$ and the circulation $h n-q\Phi_{B}$.
+Order zero is the Hamilton–Jacobi equation in the kinetic momentum, and its gradient is the Lorentz force with $\vec\pi=m\vec v$: Newton's law with the magnetic force, from order zero alone, by two named cancellations. Order one is the covariant continuity equation, exact and untouched by the limit, and it carries two exact companions — the vorticity $-(q/m)\vec B$ and the circulation $h n-q\digamma_{\mathrm{flx}}$.
 
 Order two is the free quantum potential, with the free size and the free non-uniformity. The coupling therefore changes the value of every leading term and the accuracy of none.
 
@@ -228,7 +228,7 @@ Order two is the free quantum potential, with the free size and the free non-uni
 | $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}-q\omicron_{\mathrm{pot}}$ | Kinetic energy |
 | $\epsilon=1/(\pi_{\Phi}L)$, $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$ | The parameter |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; the free one |
-| $\Phi_{B}$ | Magnetic flux through a surface the loop bounds |
+| $\digamma_{\mathrm{flx}}$ | Magnetic flux through a surface the loop bounds |
 
 ## Further Reading
 

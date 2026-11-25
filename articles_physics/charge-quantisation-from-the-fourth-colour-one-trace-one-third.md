@@ -80,7 +80,7 @@ $$
 
 **The detail article, §$B'$:**
 
-> **The boson.** $B'$ is the $B-L$ boson, and **the array is the one the vacuum is built from**. With the $i$ removed, $D=\operatorname{diag}(-3,1,1,1)$ is the Hermitian direction of the breaking, $\Phi_0=vD$, and $B-L=\tfrac13D$ on the $\mathbf4$: the charge is this array divided by three, which in charges reads $(-1,\tfrac13,\tfrac13,\tfrac13)$ with the lepton first.
+> **The boson.** $B'$ is the $B-L$ boson, and **the array is the one the vacuum is built from**. With the $i$ removed, $D=\operatorname{diag}(-3,1,1,1)$ is the Hermitian direction of the breaking, $Ξ_0=vD$, and $B-L=\tfrac13D$ on the $\mathbf4$: the charge is this array divided by three, which in charges reads $(-1,\tfrac13,\tfrac13,\tfrac13)$ with the lepton first.
 
 **What follows: the charge of every state of one generation.** Substituting the quoted $B-L$ into the quoted combination $Y=T_{3R}+\tfrac12(B-L)$ and adding the left isospin gives $Q=T_{3L}+T_{3R}+\tfrac16D$. The seven states then read:
 
@@ -112,7 +112,7 @@ the factor $\tfrac12$ being $\operatorname{tr}(T_{3L}^{2})$ over the doublet and
 
 **The detail article, §$B'$:**
 
-> **What the vacuum does not see.** $[iD,\Phi_0]=0$, so this array is invisible to the first breaking
+> **What the vacuum does not see.** $[iD,Ξ_0]=0$, so this array is invisible to the first breaking
 
 > **The unique statement is narrower and it is the one that matters here**: of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place.
 
@@ -121,7 +121,7 @@ the factor $\tfrac12$ being $\operatorname{tr}(T_{3L}^{2})$ over the doublet and
 **The eigenvalue is what survives, and it is worth separating from the charge.** Two statements, and only the first is true.
 
 - **The charge lattice does not move.** $B-L$ takes the values $(-1,\tfrac13,\tfrac13,\tfrac13)$ on a quartet, and those four numbers are the same at every scale: an eigenvalue belongs to the array, and no mixing between $W^{3}_{L}$, $W^{3}_{R}$ and $B'$ touches a diagonal entry. The unit $\tfrac13$ is therefore the same everywhere. What runs is a coupling, not the charge it multiplies.
-- **The charge is nevertheless broken at $M_C$, by the vacuum that carries it.** $[B-L,\Phi_0]=-\Phi_0\neq0$ on the lepton line, so by the criterion every article in this block uses, $B-L$ is not conserved below $M_C$; what annihilates the vacuum is $Y=T_{3R}+\tfrac12(B-L)$. **"The chain never renormalises the corner" and "the chain never breaks the corner" are different sentences**, and this article keeps the first without the second ([The Quantum Numbers Below the Breaking](the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html) has the full ledger).
+- **The charge is nevertheless broken at $M_C$, by the vacuum that carries it.** $[B-L,Ξ_0]=-Ξ_0\neq0$ on the lepton line, so by the criterion every article in this block uses, $B-L$ is not conserved below $M_C$; what annihilates the vacuum is $Y=T_{3R}+\tfrac12(B-L)$. **"The chain never renormalises the corner" and "the chain never breaks the corner" are different sentences**, and this article keeps the first without the second ([The Quantum Numbers Below the Breaking](the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html) has the full ledger).
 
 **And the other two neutral directions are not so lucky in either sense.** $T_{3R}$ is broken at $M_C$ and $T_{3L}$ at $M_W$. Of the three ingredients of the neutral sector, the corner is the only one the six leptoquark generators leave alone — **of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place** — and that is a statement about the colour part of the vacuum, not about the doublet part.
 
@@ -219,7 +219,7 @@ Fifteen recomputations, all on the quoted array, at $\operatorname{tr}$ in the f
 | the dictionary | $B-L$ against $\sqrt{\tfrac83}\,T^{15}$ | equal |
 | the factorisation | $\exp(\theta iD)$ against $e^{i\theta}\operatorname{diag}(e^{-4i\theta},1,1,1)$ | equal |
 | the central values | $\exp(\tfrac{\pi}{2}iD)$ | $i\,\mathrm I_4$ |
-| the exactness | $[iD,\Phi_0]$, and the nine that commute with $D$ | $0$, and the eight gluons plus $B'$ |
+| the exactness | $[iD,Ξ_0]$, and the nine that commute with $D$ | $0$, and the eight gluons plus $B'$ |
 | the corner's fate at the transition | the colour vev commutes with it, the doublet vev does not | kept by the six, broken by the one |
 
 ## Summary

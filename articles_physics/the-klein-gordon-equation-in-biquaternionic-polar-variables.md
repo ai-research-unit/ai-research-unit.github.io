@@ -47,7 +47,7 @@ with $\varrho$ the amplitude and $\rho_{\mathrm{num}}=\varrho^{2}$ the proper de
 
 Substituting this word into $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\Xi_t=0$ and separating real from imaginary parts replaces one complex equation by two real equations. That is the whole of the construction, and the two equations are exact: no term is dropped and no order is taken.
 
-**The pair is known, and the article's work is to read it in the algebra's letters.** The two equations are Takabayasi's relativistic hydrodynamics of a spin-$0$ quantum fluid, and their non-relativistic limit is Madelung's pair as the WKB article writes it. Three statements about them are established below.
+**The pair is known, and the article's work is to read it in the algebra's letters.** The two equations are Takabayasi's relativistic fluid mechanics of a spin-$0$ quantum fluid, and their non-relativistic limit is Madelung's pair as the WKB article writes it. Three statements about them are established below.
 
 **The mass shell carries a quantum term.** The amplitude equation is the mass shell with the mass term shifted by the curvature of the amplitude, and the shift is the term that the companion's boxed dispersion relation leaves implicit.
 
@@ -266,7 +266,7 @@ Since $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$, the translation preserves th
 
 ### The pair is Takabayasi's system
 
-**The identification.** The two equations are the relativistic hydrodynamics of a spin-$0$ quantum fluid, which Takabayasi wrote in the same programme as his treatment of Dirac matter: the transport equation is his continuity equation and the amplitude equation is his relativistic Hamilton–Jacobi equation with the quantum potential. Nothing in the pair is added here.
+**The identification.** The two equations are the relativistic fluid mechanics of a spin-$0$ quantum fluid, which Takabayasi wrote in the same programme as his treatment of Dirac matter: the transport equation is his continuity equation and the amplitude equation is his relativistic Hamilton–Jacobi equation with the quantum potential. Nothing in the pair is added here.
 
 **The same pair is the fluid of a light scalar field.** In cosmology the relativistic Madelung fluid is the non-relativistic reading of a light scalar field: the density is the field's energy density, the phase gradient is its bulk momentum, and the quantum potential is the pressure that suppresses structure below the de Broglie wavelength. That is the wave (fuzzy) dark matter picture, and it is the pair derived here with $m$ the mass of the light boson. Nothing in this article depends on that application; it is the same two equations under another name.
 
@@ -442,7 +442,7 @@ Both coefficients are nonzero, and $\langle\tilde\Xi\rangle_{\natural}=\Xi_t^{2}
 
 ## What the Polar Word Does and Does Not Add
 
-The objection is stated first. For a scalar field the word is a change of coordinates, two real functions for one complex one, and the two equations are Madelung's pair in its relativistic form, which is the spin-$0$ case of Takabayasi's hydrodynamics. No prediction is added and the equation is not new.
+The objection is stated first. For a scalar field the word is a change of coordinates, two real functions for one complex one, and the two equations are Madelung's pair in its relativistic form, which is the spin-$0$ case of Takabayasi's fluid mechanics. No prediction is added and the equation is not new.
 
 Three things are nevertheless not a relabelling.
 
@@ -478,7 +478,7 @@ $$
 \vec\nabla_\Phi\cdot\!\left(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)=0,
 $$
 
-which together are equivalent to the one complex equation. The pair is Takabayasi's relativistic hydrodynamics of a spin-$0$ fluid, written in the one length unit of the material sector. In the momentum variables $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ the first reads $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, and the second is the exact relativistic analogue of the WKB transport equation. The pair reduces to the WKB pair when the action is dominated by its rest term $-mc\,r'_t$ and $\Box_\Phi \varrho$ is replaced by $\Delta_\Phi \varrho$. The quantum potential is the logarithmic curvature of the density, so it is a functional of $\rho_{\mathrm{num}}$ alone.
+which together are equivalent to the one complex equation. The pair is Takabayasi's relativistic fluid mechanics of a spin-$0$ fluid, written in the one length unit of the material sector. In the momentum variables $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ the first reads $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, and the second is the exact relativistic analogue of the WKB transport equation. The pair reduces to the WKB pair when the action is dominated by its rest term $-mc\,r'_t$ and $\Box_\Phi \varrho$ is replaced by $\Delta_\Phi \varrho$. The quantum potential is the logarithmic curvature of the density, so it is a functional of $\rho_{\mathrm{num}}$ alone.
 
 The phase gradient is the four-momentum, $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$, and in polar variables the quaternionic norm of a gradient reads $\langle\tilde\Upsilon_{\Phi}\rangle_{\natural}=-4\pi^{2}\nu_m^{2}+\Box_\Phi \varrho/\varrho$. The boxed dispersion relation of the companion is the case $\Box_\Phi \varrho=0$, which a plane wave satisfies and a general wave does not.
 
@@ -537,7 +537,7 @@ The algebra's polar word degenerates on a central field: the scale is the amplit
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1927) 322–326, for the transformation of the Schrödinger equation into a continuity equation and a Hamilton–Jacobi equation, which is the non-relativistic case of the pair derived here.
 - Louis de Broglie, *La mécanique ondulatoire* (Gauthier-Villars, 1930), and *Une tentative d'interprétation causale et non linéaire de la mécanique ondulatoire* (Gauthier-Villars, 1956), for the phase as the action and the trajectory reading of the phase gradient.
 - David Bohm, "A suggested interpretation of the quantum theory in terms of hidden variables," *Physical Review* **85** (1952) 166–193, for the quantum potential and the trajectories it defines.
-- Takehiko Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8** (1952) 143–182, for the hydrodynamical formulation in the non-relativistic case, which is Madelung's pair read as a fluid.
+- Takehiko Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8** (1952) 143–182, for the fluid formulation in the non-relativistic case, which is Madelung's pair read as a fluid.
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the relativistic polar variables. The spin-$\tfrac12$ field carries an eight-parameter word that is degenerate for a spin-$0$ wave, and the spin-$0$ case of the same programme is the pair derived here.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the relativistic quantum potential, its non-locality, and the difficulty with the speed of light recorded in §*Open Questions*.
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the Klein–Gordon equation, its current and its two defects.

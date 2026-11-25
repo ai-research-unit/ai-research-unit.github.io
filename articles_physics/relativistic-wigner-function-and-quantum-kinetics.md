@@ -96,7 +96,7 @@ Why incompressible, in one line. The phase-space velocity is $(\vec p/m,-\vec\na
 
 ### The characteristics, and the corpus's flow
 
-The characteristics of the drift equation are the flow's worldlines, and this is where the hydrodynamic and the kinetic descriptions meet. The characteristic equations are
+The characteristics of the drift equation are the flow's worldlines, and this is where the fluid and the kinetic descriptions meet. The characteristic equations are
 
 $$
 \frac{d r_{\imath}}{d t}=\frac{p_{\imath}}{m},
@@ -187,7 +187,7 @@ $$
 \int d^{3}p\;p_{\imath}^{3}\,\frac{\partial^{3}W}{\partial p_{\imath}^{3}}=-6\int d^{3}p\;W=-6\rho_{\mathrm{num}},
 $$
 
-so the third moment of the equation acquires the correction $+\tfrac{h^{2}}{16\pi^{2}}V'''\rho_{\mathrm{num}}$. **This is where the quantum correction enters the hydrodynamic hierarchy**: not in the density, not in the velocity, not in the pressure, but in the heat-flow-type moment — the third moment, the first one the ideal fluid does not carry. A fluid description truncated at the pressure is therefore blind to the $\frac{h^{2}}{4\pi^{2}}$ correction of this order, and a description that keeps the heat flow is not.
+so the third moment of the equation acquires the correction $+\tfrac{h^{2}}{16\pi^{2}}V'''\rho_{\mathrm{num}}$. **This is where the quantum correction enters the fluid hierarchy**: not in the density, not in the velocity, not in the pressure, but in the heat-flow-type moment — the third moment, the first one the ideal fluid does not carry. A fluid description truncated at the pressure is therefore blind to the $\frac{h^{2}}{4\pi^{2}}$ correction of this order, and a description that keeps the heat flow is not.
 
 ### Exactness for a quadratic potential
 
@@ -285,7 +285,7 @@ One thing this article should not be read as claiming. It does not claim that th
 
 Established. The Moyal-bracket equation for the Wigner element, and the exact identity $\Lambda^{3}(H,W)=V'''\partial_{p}^{3}W$ for a Hamiltonian at most quadratic in momentum, verified in a computer algebra system. The expansion $\frac{2\pi 2}{h}\sin(\frac{h}{2\pi}\Lambda/2)=\Lambda-\tfrac{h^{2}}{96\pi^{2}}\Lambda^{3}+\cdots$ and the resulting kinetic equation with its order-$\frac{h^{2}}{4\pi^{2}}$ term. The vanishing of the zeroth, first and second moments of that term, hence the exactness of the continuity equation, and the value $-6\rho_{\mathrm{num}}$ of its third moment. The exactness of the classical drift equation for a quadratic potential, checked analytically on the oscillator ground state with the numbers $\sigma^{2}=\sigma_{p}^{2}=1/2$, $1/(m\sigma^{2})=2$, $m\omega^{2}/\sigma_{p}^{2}=2$. The relativistic drift as a contraction with the flow element, and the shell relation $p_{\Phi,\jmath}p_{\Phi,\jmath}+m^{2}c^{2}+2mQ_{\mathrm{qnt}}=0$ with every index low.
 
-Interpretation. That the $\frac{h^{2}}{4\pi^{2}}$ term is the phase-space form of the quantum force. The term is a fact of the expansion; its identification with $-\vec\nabla_\Phi Q_{\mathrm{qnt}}$ is a reading of it in the hydrodynamic variables, and the two are related by the moments — precisely, by the third moment and beyond, since the lower ones vanish. The article states the reading and marks it as one.
+Interpretation. That the $\frac{h^{2}}{4\pi^{2}}$ term is the phase-space form of the quantum force. The term is a fact of the expansion; its identification with $-\vec\nabla_\Phi Q_{\mathrm{qnt}}$ is a reading of it in the fluid variables, and the two are related by the moments — precisely, by the third moment and beyond, since the lower ones vanish. The article states the reading and marks it as one.
 
 Not claimed. That the correction term is enough for a quantum kinetic theory of an interacting system. That the gradient expansion is the correct expansion at all densities and all coupling strengths. That the entropy production of a collisionless quantum fluid is nonzero — it is zero at this order, because there is no collision integral, and the entropy production of the interacting theory lives in the Schwinger–Keldysh article's collision term. That the Bohm force has been derived here from the kinetic equation.
 
@@ -295,7 +295,7 @@ The Wigner element of the scalar field satisfies an exact equation whose generat
 
 The drift equation, $\partial_t W+(p_{\imath}/m)\partial_{r_k}W-V'\partial_{p_k}W=0$, has the worldlines as its characteristics and is the statement that the phase-space flow is incompressible; its velocity field is divergenceless identically, which is Liouville's theorem rather than an assumption. With $r'_t$ a length, the temporal derivative carries a factor $c$, the same factor that gives $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$.
 
-The correction is $-\tfrac{h^{2}}{96\pi^{2}}V'''\partial_{p}^{3}W$. It is a total momentum derivative, so its zeroth, first and second moments vanish identically and the continuity equation is exact; its third moment is $-6\rho_{\mathrm{num}}$, which is why the correction's hydrodynamic mark is in the heat flow and not in the pressure. It vanishes for a quadratic potential, where the classical drift equation is therefore exact — checked on the oscillator ground state, where the drift terms cancel because $1/(m\sigma^{2})$ and $m\omega^{2}/\sigma_{p}^{2}$ are both $\frac{2\pi 2\omega}{h}$.
+The correction is $-\tfrac{h^{2}}{96\pi^{2}}V'''\partial_{p}^{3}W$. It is a total momentum derivative, so its zeroth, first and second moments vanish identically and the continuity equation is exact; its third moment is $-6\rho_{\mathrm{num}}$, which is why the correction's fluid mark is in the heat flow and not in the pressure. It vanishes for a quadratic potential, where the classical drift equation is therefore exact — checked on the oscillator ground state, where the drift terms cancel because $1/(m\sigma^{2})$ and $m\omega^{2}/\sigma_{p}^{2}$ are both $\frac{2\pi 2\omega}{h}$.
 
 Relativistically the drift is a contraction with the flow element and the shell is a constraint in the corpus's divided form, $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$. The two $\frac{h^{2}}{4\pi^{2}}$'s of the article — the shell's broadening and the kinetic correction — are one $\frac{h^{2}}{4\pi^{2}}$, read on the shell and off it. Temperature enters only through the state, and the equilibrium solution annihilates the correction's odd moments, so there is no spurious equilibrium heat flow. The collision integral, its self-energy and the entropy production it carries are [The Schwinger–Keldysh Formalism in Biquaternionic Form](the-schwinger-keldysh-formalism-in-biquaternionic-form.html)'s, and are cited rather than repeated.
 

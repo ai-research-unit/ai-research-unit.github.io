@@ -35,12 +35,12 @@ which is linear exactly when the pressure is constant. Both statements are in [T
 $$
 \vec v=\frac{1}{m}\vec\nabla_\Phi S ,
 \qquad
-\mathrm{D}_{\mathrm{mat}}\vec v=-\vec\nabla_\Phi\Phi_{\mathrm{acc}} ,
+\mathrm{D}_{\mathrm{mat}}\vec v=-\vec\nabla_\Phi\digamma_{\mathrm{acc}} ,
 $$
 
-with $\Phi_{\mathrm{acc}}$ an acceleration potential, a scalar of dimension velocity squared.
+with $\digamma_{\mathrm{acc}}$ an acceleration potential, a scalar of dimension velocity squared.
 
-Given the two, the Hamilton–Jacobi equation is a definition and not an assumption. Take the gradient of $\partial_{t'}S+\lvert\nabla S\rvert^{2}/2m+\Phi_{\mathrm{acc}}$ with $\vec v=\vec\nabla_\Phi S/m$: the first term contributes $\vec\nabla_\Phi\partial_{t'}S$, the second contributes $(\vec\nabla_\Phi S\cdot\nabla)\vec\nabla_\Phi S/m$ — the curl term of $\vec\nabla_\Phi(\lvert\vec v\rvert^{2}/2)$ vanishes because $\vec v$ is a gradient — and the third contributes $-\mathrm{D}_{\mathrm{mat}}\vec v$. The sum is zero by the second property, so the bracket is a function of time alone, and a function of time is absorbed into $S$. So $S$ exists and satisfies the equation, and nothing beyond the two properties is assumed.
+Given the two, the Hamilton–Jacobi equation is a definition and not an assumption. Take the gradient of $\partial_{t'}S+\lvert\nabla S\rvert^{2}/2m+\digamma_{\mathrm{acc}}$ with $\vec v=\vec\nabla_\Phi S/m$: the first term contributes $\vec\nabla_\Phi\partial_{t'}S$, the second contributes $(\vec\nabla_\Phi S\cdot\nabla)\vec\nabla_\Phi S/m$ — the curl term of $\vec\nabla_\Phi(\lvert\vec v\rvert^{2}/2)$ vanishes because $\vec v$ is a gradient — and the third contributes $-\mathrm{D}_{\mathrm{mat}}\vec v$. The sum is zero by the second property, so the bracket is a function of time alone, and a function of time is absorbed into $S$. So $S$ exists and satisfies the equation, and nothing beyond the two properties is assumed.
 
 A gradient has no curl, so $\vec\nabla_\Phi\times\vec v=\vec 0$ is necessary, and on a simply connected domain it is sufficient. On a domain with a hole it is sufficient up to the period, which is the winding of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html).
 
@@ -50,10 +50,10 @@ The force has three parts and each can fail to be a gradient on its own. The pre
 
 So the folk statement is one condition on the velocity and two on the force, and every one of them is necessary. None is sufficient, and the insufficiency is the part the folk statement loses.
 
-With $\Phi_{\mathrm{acc}}$ arbitrary, the $Ξ_{\mathrm{wfn}}$ built from the flow obeys a Schrödinger equation whose potential is whatever $\Phi_{\mathrm{acc}}$ happens to be. For the fluid to be the reading of a wave equation of the theory's form, the potential must be
+With $\digamma_{\mathrm{acc}}$ arbitrary, the $Ξ_{\mathrm{wfn}}$ built from the flow obeys a Schrödinger equation whose potential is whatever $\digamma_{\mathrm{acc}}$ happens to be. For the fluid to be the reading of a wave equation of the theory's form, the potential must be
 
 $$
-\Phi_{\mathrm{acc}}=\frac{V(\rho_{\mathrm{num}})}{m}+\frac{Q_{\mathrm{qnt}}}{m} ,
+\digamma_{\mathrm{acc}}=\frac{V(\rho_{\mathrm{num}})}{m}+\frac{Q_{\mathrm{qnt}}}{m} ,
 $$
 
 a function of the density plus the quantum term. Miss the first and the fluid is the reading of an equation with an external potential, which is linear and is not a law of the fluid; miss the second and the equation is nonlocal. [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html) exhibits the first failure with a number.
@@ -66,10 +66,10 @@ Each row names a field, the status of a wave equivalent in it, and the reason th
 
 | Field | Wave equivalent | Reason |
 |---|---|---|
-| Irrotational inviscid barotropic hydrodynamics | yes, nonlinear | the reverse map; $V$ from $p_{\mathrm{th}}$ |
+| Irrotational inviscid barotropic fluid mechanics | yes, nonlinear | the reverse map; $V$ from $p_{\mathrm{th}}$ |
 | The same, pressureless | yes, linear | the free wave equation; no pressure to hold |
 | Irrotational inviscid, pressure not a function of the density | a linear equation with an external potential | the potential is of position, not of the density |
-| Rotational hydrodynamics | no | vorticity, two data with no target |
+| rotational fluid mechanics | no | vorticity, two data with no target |
 | Viscous flow, Navier–Stokes | no wave; a diffusion equation in $1$D | dissipation has no action |
 | Baroclinic flow | no | the state needs two variables |
 | Geophysical flows, shallow water | no; KdV in a limit | rotational, baroclinic, weakly nonlinear |
@@ -84,7 +84,7 @@ The first ten rows are fluids that carry a fluid equation as their fundamental l
 
 ## The Reasons
 
-**Rotational hydrodynamics has no wave equivalent because the vorticity has no target.** The Helmholtz decomposition splits the velocity into a gradient and a curl, and the curl's two independent components are data that a scalar wave function cannot hold. A fluid with vorticity conserves and amplifies a quantity that the field does not contain.
+**rotational fluid mechanics has no wave equivalent because the vorticity has no target.** The Helmholtz decomposition splits the velocity into a gradient and a curl, and the curl's two independent components are data that a scalar wave function cannot hold. A fluid with vorticity conserves and amplifies a quantity that the field does not contain.
 
 The Clebsch pair supplies the two missing functions, and the wave function has exactly two and spends them on the modulus and the phase of the same flow. A rotational flow is therefore representable and unassignable at once: the pair exists and there is nowhere to put it. The same count is what makes the spin-half fluid possible, because a bispinor carries four factors and the velocity's frame is one of them; the three functions are then carried by a factor rather than by two potentials, and whether that leaves the vorticity of rank two is the question the Clebsch article states and does not answer. That is the content of [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html), and it is why the rotational row of the table is a row about scalars.
 
@@ -124,7 +124,7 @@ A fluid equation can be linearised, and when it is, the linear equation is eithe
 
 ## What This Means for the Block
 
-**The fluid layer is a reading of the field, not a model of a fluid.** The block's title says hydrodynamics because its variables are a fluid's, and the previous five articles have measured how far that vocabulary reaches. It reaches exactly as far as the field's data reach, and it stops where the pressure, the vorticity and the viscosity begin.
+**The fluid layer is a reading of the field, not a model of a fluid.** The block's title says fluid mechanics because its variables are a fluid's, and the previous five articles have measured how far that vocabulary reaches. It reaches exactly as far as the field's data reach, and it stops where the pressure, the vorticity and the viscosity begin.
 
 [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html) denies that the reading is a superfluid and denies that it is a linear wave equivalent. The two denials are the two halves of this article's conclusion: the reading is not a superfluid because a superfluid's fluid is derived from an order parameter, and it is not a wave equivalent because the wave equation comes first. The block's order is the reverse of the order that would make either denial a problem.
 
@@ -177,7 +177,7 @@ The block's two denials are one statement: the reading is a re-coordinatisation 
 ## Further Reading
 
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* 40 (1926) 322–326, for the forward direction.
-- Edward A. Spiegel, "Fluid dynamical form of the linear and nonlinear Schrödinger equations," *Physica D* 1 (1980) 236–240, for the hydrodynamic reading of the nonlinear equation and its linear limit.
+- Edward A. Spiegel, "Fluid dynamical form of the linear and nonlinear Schrödinger equations," *Physica D* 1 (1980) 236–240, for the fluid reading of the nonlinear equation and its linear limit.
 - Gérald B. Whitham, *Linear and Nonlinear Waves* (Wiley, 1974), ch. 12–13 and 17, for the shallow-water limit and for the KdV equation as its weakly nonlinear reduction.
 - Vladimir E. Zakharov, "Collapse of Langmuir waves," *Soviet Physics JETP* 35 (1972) 908–914, for the nonlinear plasma model whose wave description is a nonlinear Schrödinger equation.
 - Rémi Hakim, *Introduction to Relativistic Statistical Mechanics: Classical and Quantum* (World Scientific, 2011), ch. 9, for the fluid description derived from the Dirac equation in a relativistic plasma.

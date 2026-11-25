@@ -52,7 +52,7 @@ $$
 
 | threshold | what leaves | what remains of it | status of the removal |
 |---|---|---|---|
-| $M_C$ | six leptoquarks, the coloured components of $\Phi$; $W^{\pm}_{R}$, $Z_R$, the right doublet's surviving scalar, $\nu_R$'s Majorana mass | four-fermion operators with $\Delta B=\Delta L=\pm1$; the dimension-five operator for neutrino mass; the $1/M_C^{2}$ corrections to $W$ couplings | one breaking at one scale, truncated effects |
+| $M_C$ | six leptoquarks, the coloured components of $Ξ$; $W^{\pm}_{R}$, $Z_R$, the right doublet's surviving scalar, $\nu_R$'s Majorana mass | four-fermion operators with $\Delta B=\Delta L=\pm1$; the dimension-five operator for neutrino mass; the $1/M_C^{2}$ corrections to $W$ couplings | one breaking at one scale, truncated effects |
 | $M_W$ | $W^{\pm}$, $Z$, the top, the Higgses | the four-fermion charged-current and neutral-current operators of the Fermi theory | exact breaking, slowly converging truncation |
 
 **3.1 The transition.** The leptoquarks leave and their exchange becomes contact interactions. The same vacuum removes $W_R$ and $Z_R$, and the neutrino's Majorana mass becomes a dimension-five operator — the seesaw. The bound on $M_C$ is the bound on those coefficients, and the diquark channel is the one that would give proton decay — with a suppression that makes it harmless, as [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) shows.

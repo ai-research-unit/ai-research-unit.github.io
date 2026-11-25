@@ -12,7 +12,7 @@ the division the brief's instructions fixed, and the division this article audit
 
 It can state, article by article, which claims are established within the category, which are quoted from the standard theory, and which are interpretations that the category offers and does not prove. **It cannot state that the framework is right**, because no article in the category makes that claim either.
 
-The entropy inequalities are real. [The Local Entropy Current](the-local-entropy-current.html) declares the entropy current Hermitian once, and every later inequality — the spin diffusion of [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html), the positivity form of [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html) — inherits that declaration and writes no fresh $\mathrm{Re}$. One declaration, twenty-two articles. The ledger records that as the category's single most load-bearing convention, because a reader who misses it will read every inequality as unproven.
+The entropy inequalities are real. [The Local Entropy Current](the-local-entropy-current.html) declares the entropy current Hermitian once, and every later inequality — the spin diffusion of [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html), the positivity form of [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html) — inherits that declaration and writes no fresh $\mathrm{Re}$. One declaration, twenty-two articles. The ledger records that as the category's single most load-bearing convention, because a reader who misses it will read every inequality as unproven.
 
 ## The Category's Three Layers
 
@@ -46,7 +46,7 @@ What the layer establishes. That a local temperature is available, and that what
 
 Seven articles turn the triple into a fluid with an equation of state, an entropy current, two components, spin and dissipation.
 
-[The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) assembles $(\rho_{\mathrm{num}},p_{\mathrm{th}},\tilde V_\Phi)$ at $\beta(x)$ and states what a local equation of state requires. [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html) writes $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$. [The Local Entropy Current](the-local-entropy-current.html) declares the current Hermitian and writes the second law as one divergence. [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html) splits the density into a condensate and a normal part with mutual friction. [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html) adds $\mu_{\mathrm{spn}}$ and states the closure failure. [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) reads the spin's conservation off the rotor. [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html) is the transcription that makes the layer's equations hyperbolic.
+[The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) assembles $(\rho_{\mathrm{num}},p_{\mathrm{th}},\tilde V_\Phi)$ at $\beta(x)$ and states what a local equation of state requires. [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html) writes $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$. [The Local Entropy Current](the-local-entropy-current.html) declares the current Hermitian and writes the second law as one divergence. [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html) splits the density into a condensate and a normal part with mutual friction. [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html) adds $\mu_{\mathrm{spn}}$ and states the closure failure. [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) reads the spin's conservation off the rotor. [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html) is the transcription that makes the layer's equations hyperbolic.
 
 What the layer establishes. That the field's thermodynamics is a fluid thermodynamics with one new thermodynamic variable — the spin potential — and one non-thermal pressure — the quantum potential. That the second law is one divergence and its positivity one declaration. That the pure state has zero entropy production, so entropy in this framework is friction between components and never a property of the condensate.
 
@@ -100,7 +100,7 @@ Added: the check that the corpus's pointwise temperature satisfies it, and the q
 
 Not added: a framework interpretation. The article carries the sentence; this is standard relativistic thermodynamics in the corpus's letters, with no framework interpretation.
 
-### Article 21: causal dissipative hydrodynamics
+### Article 21: causal dissipative fluid mechanics
 
 Transcribed: Israel–Stewart theory. Three relaxation equations, six transport coefficients, the dispersion relation $\omega^{2}+(i/\tau_q)\omega-(D_{\mathrm{th}}/\tau_q)k^{2}=0$, the front speed $v_{\mathrm{frt}}=\sqrt{D_{\mathrm{th}}/\tau_q}$, the causality condition $D_{\mathrm{th}}\le\tau_qc^{2}$, and the quadratic form for stability.
 
@@ -146,12 +146,12 @@ The framework's modular operator is finite-dimensional, of type I$_2$, and **a t
 | 16 | The Equation of State in Biquaternion Form | framework | $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ |
 | 17 | The Local Entropy Current | framework | Hermiticity declared; the second law as one divergence |
 | 18 | The Two-Fluid Model in Biquaternionic Form | framework | two flows, one entropy, mutual friction, the $T\to0$ limit |
-| 19 | Spin Hydrodynamics in Biquaternionic Form | framework | $\mu_{\mathrm{spn}}$, spin diffusion, the closure failure |
+| 19 | Spin Fluid Mechanics in Biquaternionic Form | framework | $\mu_{\mathrm{spn}}$, spin diffusion, the closure failure |
 | 20 | Spin Conservation and the Frenkel Condition | framework | the rotor's equation is the spin's conservation; $\mathcal{F}$ is automatic |
-| 21 | Causal Dissipative Hydrodynamics in Biquaternionic Form | **transcription** | Israel–Stewart; causality and stability |
+| 21 | Causal Dissipative Fluid Mechanics in Biquaternionic Form | **transcription** | Israel–Stewart; causality and stability |
 | 22 | The Thermodynamics of a Quantum Fluid: Status of the Derivation | ledger | this article |
 
-The transcriptions are 6, 13, 14 and 21 — one in the state layer and three in the locality and fluid layers. The three articles no standard treatment contains are now the whole of the hydrodynamics category, and they are the articles with the largest claim-to-length ratio in the pair of categories.
+The transcriptions are 6, 13, 14 and 21 — one in the state layer and three in the locality and fluid layers. The three articles no standard treatment contains are now the whole of the fluid-mechanics category, and they are the articles with the largest claim-to-length ratio in the pair of categories.
 
 ## Open Questions
 
@@ -161,7 +161,7 @@ The transcriptions are 6, 13, 14 and 21 — one in the state layer and three in 
 
 3. The averaged Frenkel condition. Whether a fluid's averaged polarization satisfies $\mathcal{F}$ in every frame, and not only in the frame in which the average was taken, is open. The algebra's single-element statement is automatic; the many-element statement is not.
 
-4. The relaxation times and $\beta$. Whether $\tau_q$, $\tau_\pi$ and $\tau_\Pi$ are functions of the imaginary-time circumference, and in what combination, is not established. [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html) declines to speculate and says so.
+4. The relaxation times and $\beta$. Whether $\tau_q$, $\tau_\pi$ and $\tau_\Pi$ are functions of the imaginary-time circumference, and in what combination, is not established. [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html) declines to speculate and says so.
 
 5. The transport coefficients from the field. $\zeta$, $\digamma_{\mathrm{vis}}$ and $\kappa_{\mathrm{th}}$ are not computed from the field in the category. The two-fluid and spin articles name the mechanisms — friction, shear, spin diffusion — and not the values.
 
@@ -177,7 +177,7 @@ The transcriptions are 6, 13, 14 and 21 — one in the state layer and three in 
 
 ## What Is Established and What Is Interpretation
 
-Established, and checkable from the category's own displays. That the Wigner element's first two moments are the density and the current; that $Z$ is a scalar, $\beta$ a length and the thermal element a vector; that a local temperature exists as a pointwise period; that the rigidity condition is the vanishing of the symmetric part of the velocity's gradient and that the corpus's pointwise temperature satisfies it; that the entropy current is Hermitian and the second law one divergence; that the pure state produces no entropy; that the two-fluid model's $T\to0$ limit is the single fluid; that the Frenkel condition is automatic; that Israel–Stewart restores causality and stability. The four field-level claims that this ledger used to carry — the complete polar decomposition's factors, the quantum potential's minus sign and its identity as the quantum stress's divergence, the Dirac flow's non-gradient character against the scalar flow's closure, and the quantisation of circulation — are established in the hydrodynamics category and are not re-audited here.
+Established, and checkable from the category's own displays. That the Wigner element's first two moments are the density and the current; that $Z$ is a scalar, $\beta$ a length and the thermal element a vector; that a local temperature exists as a pointwise period; that the rigidity condition is the vanishing of the symmetric part of the velocity's gradient and that the corpus's pointwise temperature satisfies it; that the entropy current is Hermitian and the second law one divergence; that the pure state produces no entropy; that the two-fluid model's $T\to0$ limit is the single fluid; that the Frenkel condition is automatic; that Israel–Stewart restores causality and stability. The four field-level claims that this ledger used to carry — the complete polar decomposition's factors, the quantum potential's minus sign and its identity as the quantum stress's divergence, the Dirac flow's non-gradient character against the scalar flow's closure, and the quantisation of circulation — are established in the fluid-mechanics category and are not re-audited here.
 
 Interpretation, and marked as such in the articles that offer it. That the corpus has no Belinfante ambiguity; that the thermal structure's belonging to the state and not to the manifold is a *reading* of $k_B$'s role rather than a theorem; that the algebra, and not the phase, carries the charge because the nodal set is the zero-divisor cone. Each of these is a reading the framework supports and none is proved.
 
@@ -245,5 +245,5 @@ Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument 
 - R. C. Tolman, *Relativity, Thermodynamics and Cosmology* (Oxford, 1934), for the law that the corpus quotes from it.
 - L. D. Landau and E. M. Lifshitz, *Fluid Mechanics* (Pergamon, 1987), for the two-fluid model's non-relativistic form and the mutual friction.
 - S. Weinberg, *Gravitation and Cosmology* (Wiley, 1972), for the perfect fluid's stress and the entropy current in a background geometry.
-- The category's four transcriptions, which a reader new to it should read first: [Equilibrium Partition Function in a Moving Frame](equilibrium-partition-function-in-a-moving-frame.html), [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html), and [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html).
+- The category's four transcriptions, which a reader new to it should read first: [Equilibrium Partition Function in a Moving Frame](equilibrium-partition-function-in-a-moving-frame.html), [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html), and [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html).
 - The physics they stand on, in the corpus: [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), [The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html), and [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html).

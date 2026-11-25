@@ -52,7 +52,7 @@ $$
 
 where $[\,\pi A\,]=\pi_t a_t'+\vec\pi\cdot\vec a$ is the shifted Lorenz form and $A^{\dagger}A=\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the positive amplitude norm of the complex carrier. **$\mathcal{F}$ is bilinear in $A$ and $\mathcal{M}$ is sesquilinear**, and every asymmetry in the article descends from that one fact.
 
-The stationarity is the coupled symbol. $\partial S/\partial A^{\dagger}=-\sigma_{\mathrm{gco}}A$ with $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F^{(\Phi)}-\sum_{\imath}\pi_{\imath}\pi_{\jmath}$, so the momentum-space variational principle is the coupled Proca equation. The form companion's machinery applies with $\pi$ in place of $k$, and the article uses it without repeating it.
+The stationarity is the coupled symbol. $\partial S/\partial A^{\dagger}=-\sigma_{\mathrm{gco}}A$ with $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F_{\Phi}-\sum_{\imath}\pi_{\imath}\pi_{\jmath}$, so the momentum-space variational principle is the coupled Proca equation. The form companion's machinery applies with $\pi$ in place of $k$, and the article uses it without repeating it.
 
 The pairing is the parent's and the article's, and they agree. The parent varies $\tilde A$ and $\tilde A^{*}$ independently with $\delta\tilde A^{*}$ on the left, which is the pairing the field term's reality dictates; at a mode that is the derivative with respect to $A^{\dagger}$. The modulus pairing would give the energy and not the equation, and the parent states the distinction and the article inherits it.
 

@@ -4,7 +4,7 @@
 
 *The Proca Equation in Biquaternionic Polar Variables* tabulates four brackets and finds the phase identically zero on both branches; *The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables* reads that emptiness as the reality of the symbol. *The Coupled Proca Equation in Biquaternionic Polar Variables* then shows that on the complex carrier the phase returns and its motion is the gauge transformation. This article's first finding is where the returned phase sits in frequency space: not in the momentum, and in the curvature.
 
-The free symbol $\sigma=(k^{2}-4\pi^{2}\nu_m^{2})\delta-2\pi\nu_{\imath} 2\pi\nu_{\jmath}$ is a real symmetric matrix, so it commutes with complex conjugation and cannot generate a phase. The coupled symbol is $-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F^{(\Phi)}-\pi_{\imath}\pi_{\jmath}$: Hermitian with an imaginary part, and the imaginary part is the curvature. The phase slot is therefore open in the coupled theory — but only at second order and only through the field strength, never through the potential.
+The free symbol $\sigma=(k^{2}-4\pi^{2}\nu_m^{2})\delta-2\pi\nu_{\imath} 2\pi\nu_{\jmath}$ is a real symmetric matrix, so it commutes with complex conjugation and cannot generate a phase. The coupled symbol is $-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F_{\Phi}-\pi_{\imath}\pi_{\jmath}$: Hermitian with an imaginary part, and the imaginary part is the curvature. The phase slot is therefore open in the coupled theory — but only at second order and only through the field strength, never through the potential.
 
 The second finding is that the branch label disappears and the cone with it. The free chart's two branches are the two signs of a real indefinite invariant; the coupled field's norm is a complex number of modulus $\varrho^{2}$ and a complex number has no sign, so there is nothing to label. In frequency space the free amplitude cone — codimension one, three-dimensional — collapses to the origin of the chart, which is codimension eight. One degenerate variety becomes one point, and the article states the collapse as a transfer of codimension and not as a loss of structure.
 
@@ -51,7 +51,7 @@ the first being the reduction to be evaluated and the second the exact value on 
 In the four-component reading
 
 $$
-\sigma_{\mathrm{gco}}=-\pi^{2}\delta_{\imath\jmath}+\frac{2\pi i\varkappa}{h}F^{(\Phi)\imath}{}_{\jmath}-\pi_{\imath}\pi_{\jmath} ,
+\sigma_{\mathrm{gco}}=-\pi^{2}\delta_{\imath\jmath}+\frac{2\pi i\varkappa}{h}F_{\Phi}{}^{\imath}{}_{\jmath}-\pi_{\imath}\pi_{\jmath} ,
 $$
 
 which is a Hermitian matrix with a real symmetric part and an imaginary antisymmetric part. The real part is the free symbol at $\pi$; the imaginary part is the curvature; and the article's sections are the three statements that follow from that splitting.
@@ -152,7 +152,7 @@ The symbol remains even in $\pi$ at every constant connection, so the parity ent
 
 ## Summary
 
-The coupled Proca symbol is $-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F^{(\Phi)}-\pi_{\imath}\pi_{\jmath}$, Hermitian with a real symmetric part and an imaginary antisymmetric part. The real part is the free symbol at the shifted momentum and the imaginary part is the curvature. So the free chart's empty phase slot is filled by the coupling, and it is filled at second order and through the field strength: the symbol sees $\mathrm{d}A$ and not $A$. The symbol remains even in $\pi$ — the free article's parity table is unchanged — because both the translation and the rank-one part are quadratic.
+The coupled Proca symbol is $-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F_{\Phi}-\pi_{\imath}\pi_{\jmath}$, Hermitian with a real symmetric part and an imaginary antisymmetric part. The real part is the free symbol at the shifted momentum and the imaginary part is the curvature. So the free chart's empty phase slot is filled by the coupling, and it is filled at second order and through the field strength: the symbol sees $\mathrm{d}A$ and not $A$. The symbol remains even in $\pi$ — the free article's parity table is unchanged — because both the translation and the rank-one part are quadratic.
 
 The branch label disappears and the cone with it. The free chart's two branches are the two signs of a real indefinite norm; the coupled norm is a complex number of modulus $\varrho^{2}$ and has no sign. In frequency space the free amplitude cone, codimension one, becomes the origin of an eight-parameter chart, codimension eight: one degenerate variety becomes one point, and the parent's N-regular set $\varrho>0$ is the collapse read backwards.
 
@@ -168,7 +168,7 @@ The gauge transformation is the phase coordinate's motion, and on the symbol it 
 | $\varkappa$ | The coupling |
 | $\varrho,\ \theta_{\mathrm{pha}},\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \digamma_{\mathrm{ang}},\ \hat n_{\mathrm{ax}}$ | Scale, phase, rapidity, boost axis, rotor angle, rotor axis |
 | $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F-\pi_{\imath}\pi_{\jmath}$ | The coupled symbol; Hermitian, complex |
-| $\frac{2\pi i\varkappa}{h}F^{(\Phi)}$ | The imaginary part; the obstruction |
+| $\frac{2\pi i\varkappa}{h}F_{\Phi}$ | The imaginary part; the obstruction |
 | $-4\pi^{2}$ | The trace; the constraint's symbol, free of curvature |
 | $\digamma_{\mathrm{gau}}=e^{i\vartheta_{\mathrm{gau}}}$ | The constant central unit; the gauge parameter |
 | $\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ | The mass term's frame factor; $\varrho^{2}$ on the trivial-rotor slice |

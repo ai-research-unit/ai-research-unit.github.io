@@ -174,7 +174,7 @@ The criterion being met here in full is what makes this fluid the lowest member 
 | --- | --- | --- |
 | the velocity is a gradient | yes, for $\tilde V_\Phi$; for $\vec v$ only up to $\gamma$ | §*The Vorticity* |
 | the flow is irrotational | yes, identically off the nodes | §*The Vorticity* |
-| every force is a gradient | yes, covariantly, with $\Phi_{\mathrm{acc}}=Q_{\mathrm{qnt}}/m$ | §*The Euler Equation* |
+| every force is a gradient | yes, covariantly, with $\digamma_{\mathrm{acc}}=Q_{\mathrm{qnt}}/m$ | §*The Euler Equation* |
 | the potential is a function of the density | yes, degenerately: $V=0$ | §*No Equation of State* |
 | no viscous term | yes, and stronger: no first-order time derivative can exist | below |
 
@@ -190,7 +190,7 @@ $$
 
 The normalisation is invertible only where the quantum potential vanishes, and the display says so. The mass shell fixes the norm of $\tilde V_\Phi=\tilde P_\Phi/m$ at $-c^{2}-2Q_{\mathrm{qnt}}/m$, so the four-velocity is invertible on the free shell and on nothing else; the flow is bounded by $\lvert\vec v\rvert<c$ exactly while the shell stays timelike, that is while $Q_{\mathrm{qnt}}>-mc^{2}/2$. That is the qualification the first-order rung removes, and it is the reason the non-relativistic fluid's acceleration law carries no $\gamma$: with no norm there is no bound, and a velocity that nothing bounds has no Lorentz factor to carry.
 
-The four-acceleration is minus the gradient of one scalar per unit mass, with no remainder. That is the criterion's third item verbatim, and the potential it names is $\Phi_{\mathrm{acc}}=Q_{\mathrm{qnt}}/m$: the quantum term alone, with $V=0$. The scalar fluid is therefore the pressureless member of the reverse map's family, and the family's nonlinear term is absent rather than small.
+The four-acceleration is minus the gradient of one scalar per unit mass, with no remainder. That is the criterion's third item verbatim, and the potential it names is $\digamma_{\mathrm{acc}}=Q_{\mathrm{qnt}}/m$: the quantum term alone, with $V=0$. The scalar fluid is therefore the pressureless member of the reverse map's family, and the family's nonlinear term is absent rather than small.
 
 The two frame failures carry $\gamma$ for one reason, and the reason is already in §The Vorticity. $\vec v$ is not the spatial part of a four-vector, $\gamma\vec v$ is, so a criterion written in $\vec v$ is a criterion written in a frame, and a projection costs a factor of $\gamma$ at each step. The four-velocity is $\tilde V_\Phi=\gamma\vec v+i\gamma c\,e_t$, so $\sum_{\jmath} V_{\jmath}\partial_{\jmath}=\gamma c\,\partial_{r'_t}+\gamma\vec v\cdot\nabla=\gamma\,\mathrm{D}$: the covariant derivative and the frame's differ by the single factor $\gamma$. Applying it to $p_j$ and then to $v_j=p_j/(m\gamma)$ gives
 
@@ -204,7 +204,7 @@ $$
 
 The right side of the first line is a gradient multiplied by the scalar $\gamma^{-1}$, and a scalar multiple of a gradient is not a gradient. So the third item survives the projection as a statement of *direction* and not of integrability: the force is longitudinal and has no transverse part, but it is not the gradient of a potential unless $\gamma$ is constant along the flow. The second line adds a further term, and that term is not a gradient either. Both failures are the same $\gamma$, and they are the same $\gamma$ that makes $\vec\nabla_\Phi\times\vec v$ non-zero while $\omega_{\imath\jmath}$ vanishes.
 
-Where $\gamma$ is constant along the flow the frame form closes, and there the potential is $\Phi_{\mathrm{acc}}=Q_{\mathrm{qnt}}/(m\gamma^{2})$. The non-relativistic limit is such a case, and so is any flow of uniform rapidity. The criterion is a statement about four-vectors; read in a frame it is exact only where the frame and the flow agree, and the agreement is $\mathrm{D}\gamma=0$.
+Where $\gamma$ is constant along the flow the frame form closes, and there the potential is $\digamma_{\mathrm{acc}}=Q_{\mathrm{qnt}}/(m\gamma^{2})$. The non-relativistic limit is such a case, and so is any flow of uniform rapidity. The criterion is a statement about four-vectors; read in a frame it is exact only where the frame and the flow agree, and the agreement is $\mathrm{D}\gamma=0$.
 
 The fourth item is met degenerately, and the degeneracy is worth naming. A barotropic fluid has $p_{\mathrm{th}}=p_{\mathrm{th}}(\rho_{\mathrm{mass}})$; here $p_{\mathrm{th}}=0$, and the constant function is a function of the density. The barotropic condition is satisfied vacuously rather than by a law of state, and the criterion is met as a statement about a *potential* and not as a statement about a *law*.
 
@@ -391,7 +391,7 @@ With $V=0$ the reverse map's output is linear, and it is $(\Box_\Phi-4\pi^{2}\nu
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential |
 | $\omega_{\imath\jmath}=\partial_{\imath} v_{\Phi,\jmath}-\partial_{\jmath} v_{\Phi,\imath}$ | Vorticity 2-form |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
-| $\Phi_{\mathrm{acc}}=Q_{\mathrm{qnt}}/m$ | Acceleration potential of the criterion |
+| $\digamma_{\mathrm{acc}}=Q_{\mathrm{qnt}}/m$ | Acceleration potential of the criterion |
 | $\langle\tilde Q\rangle_{\natural}$ | Quaternionic norm |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 | $c$ | Speed of light in the medium |

@@ -402,12 +402,12 @@ The three pairings are three notions of magnitude and they are not interchangeab
 The regular case is a group and the decomposition is a coordinate on it.
 
 $$
-\Phi:\mathbb B^{\times}\longrightarrow\mathcal H\times SL_2(\mathbb C),
+\digamma_{\mathrm{map}}:\mathbb B^{\times}\longrightarrow\mathcal H\times SL_2(\mathbb C),
 \qquad
-\Phi(\tilde Q)=(\varrho\,e^{i\theta_{\mathrm{pha}}},\tilde U),
+\digamma_{\mathrm{map}}(\tilde Q)=(\varrho\,e^{i\theta_{\mathrm{pha}}},\tilde U),
 $$
 
-and $\Phi$ is a bijection. Injectivity is uniqueness of the pair; surjectivity is that $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ has norm $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ with principal root $\varrho\,e^{i\theta_{\mathrm{pha}}}$. In the matrix model it is the factorisation of an invertible matrix into a scalar and a matrix of determinant one.
+and $\digamma_{\mathrm{map}}$ is a bijection. Injectivity is uniqueness of the pair; surjectivity is that $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ has norm $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ with principal root $\varrho\,e^{i\theta_{\mathrm{pha}}}$. In the matrix model it is the factorisation of an invertible matrix into a scalar and a matrix of determinant one.
 
 The norm-one part is the special linear group, and the compact part of it is a sphere and a circle.
 

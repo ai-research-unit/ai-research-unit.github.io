@@ -12,7 +12,7 @@ Four fields with values in the material sector, their Gram matrix under the alge
 
 The claim of the article is that the equation is a statement about **quadratic spaces** and nothing more. The frame field is a linear map from the coordinate four-space into $\mathbb{B}_{\Phi}$, the metric is the form pulled back along it, and everything the framework can say about a curved metric follows from the pullback and from Sylvester's law of inertia. Three consequences organise the discussion, and two of them are usually stated loosely.
 
-**First, the equation is a congruence, not a construction.** In components it reads $g = E^{\mathsf T}\Phi E$, where $\Phi$ is the matrix of the algebra's form and $E$ is the matrix of frame components. A congruence is a change of basis, and a change of basis neither adds nor removes anything.
+**First, the equation is a congruence, not a construction.** In components it reads $g = E^{\mathsf T}\digamma_{\mathrm{met}} E$, where $\digamma_{\mathrm{met}}$ is the matrix of the algebra's form and $E$ is the matrix of frame components. A congruence is a change of basis, and a change of basis neither adds nor removes anything.
 
 **Second, Sylvester's law preserves an inertia, and does not create one.** The Lorentzian signature of every metric the framework can write is inherited from the form on $\mathbb{B}_{\Phi}$, which has inertia $(3,1)$ before any frame is chosen. The frame cannot change it, and it cannot produce a metric of any other signature.
 
@@ -77,19 +77,19 @@ because two conjugate factors carry two powers each. Over five hundred random ma
 
 ## Sylvester Preserves an Inertia, It Does Not Create One
 
-Write the frame components in the material basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$ as the columns of a $4\times4$ real matrix $E$, and the form's matrix in that basis as $\Phi=\mathrm{diag}(-1,+1,+1,+1)$. Then the equation is the congruence
+Write the frame components in the material basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$ as the columns of a $4\times4$ real matrix $E$, and the form's matrix in that basis as $\digamma_{\mathrm{met}}=\mathrm{diag}(-1,+1,+1,+1)$. Then the equation is the congruence
 
 $$
-g = E^{\mathsf T}\,\Phi\,E .
+g = E^{\mathsf T}\,\digamma_{\mathrm{met}}\,E .
 $$
 
 Two exact statements follow, and they are one line each.
 
-**Nondegeneracy is the linear independence of the legs.** $\det g=(\det E)^{2}\det\Phi$, so $g$ is nondegenerate exactly when $E$ is invertible, that is, exactly when the four frame fields are linearly independent at the point. A frame that degenerates at a point produces a degenerate metric there and no metric at all beyond it. This is the only failure mode the equation has, and it is a statement about the frame and not about the algebra.
+**Nondegeneracy is the linear independence of the legs.** $\det g=(\det E)^{2}\det\digamma_{\mathrm{met}}$, so $g$ is nondegenerate exactly when $E$ is invertible, that is, exactly when the four frame fields are linearly independent at the point. A frame that degenerates at a point produces a degenerate metric there and no metric at all beyond it. This is the only failure mode the equation has, and it is a statement about the frame and not about the algebra.
 
-**The inertia is the algebra's, and the frame transports it.** By Sylvester's law of inertia, two matrices related by a congruence with an invertible $E$ have the same inertia. Since $\Phi$ has inertia $(3,1)$, every nondegenerate Gram matrix of this form has inertia $(3,1)$, for every frame. The metric is therefore Lorentzian automatically, and the reason is not that the frame is restricted in some special way but that a congruence cannot move an inertia.
+**The inertia is the algebra's, and the frame transports it.** By Sylvester's law of inertia, two matrices related by a congruence with an invertible $E$ have the same inertia. Since $\digamma_{\mathrm{met}}$ has inertia $(3,1)$, every nondegenerate Gram matrix of this form has inertia $(3,1)$, for every frame. The metric is therefore Lorentzian automatically, and the reason is not that the frame is restricted in some special way but that a congruence cannot move an inertia.
 
-The precision that the loose summaries lose is the direction of this implication. **Sylvester's law does not make the metric Lorentzian.** It says that the Lorentzian character, once present in the form, is preserved by every change of basis. The character is in $\Phi$ before any frame exists. Saying that Sylvester creates the signature is like saying that a change of coordinates creates the dimension.
+The precision that the loose summaries lose is the direction of this implication. **Sylvester's law does not make the metric Lorentzian.** It says that the Lorentzian character, once present in the form, is preserved by every change of basis. The character is in $\digamma_{\mathrm{met}}$ before any frame exists. Saying that Sylvester creates the signature is like saying that a change of coordinates creates the dimension.
 
 Two corollaries are worth naming, because they are usually left implicit.
 
@@ -147,7 +147,7 @@ The equation is exact, and it is narrow. Three limits belong in the same article
 
 A curved metric enters the framework through one equation, $g_{\imath\jmath}=\langle\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}$, and everything the framework says about that metric follows from it plus Sylvester's law of inertia.
 
-In components the equation is a congruence, $g=E^{\mathsf T}\Phi E$, with $\Phi=\mathrm{diag}(-1,+1,+1,+1)$ the algebra's form. A congruence preserves an inertia, so the metric is nondegenerate exactly when the four legs are independent, and its inertia is $(3,1)$ for every such frame. The Lorentzian signature is therefore the algebra's, carried by the frame and not created by it; and no other signature is reachable along this route, because the sector fixes the form.
+In components the equation is a congruence, $g=E^{\mathsf T}\digamma_{\mathrm{met}} E$, with $\digamma_{\mathrm{met}}=\mathrm{diag}(-1,+1,+1,+1)$ the algebra's form. A congruence preserves an inertia, so the metric is nondegenerate exactly when the four legs are independent, and its inertia is $(3,1)$ for every such frame. The Lorentzian signature is therefore the algebra's, carried by the frame and not created by it; and no other signature is reachable along this route, because the sector fixes the form.
 
 The count reconciles: sixteen frame functions, six local rotor parameters, ten metric components. The converse holds locally for every Lorentzian metric, which is what makes the construction a kinematics: it admits every spacetime and selects none. The equation determines no frame, supplies no measure, and does not make the complex structure local.
 
@@ -162,8 +162,8 @@ The count reconciles: sixteen frame functions, six local rotor parameters, ten m
 | $\delta_{\imath\jmath}=(1,1,1,1)$ | the unit metric on the four $Q_{\imath}$; the interval's minus is the $i$ in $Q_t=i q'_t$ |
 | $\tilde{E}_{\Phi,\imath}(x)\in\mathbb{B}_{\Phi}$ | frame field (tetrad); $d\tilde R_{\Phi}=\sum_{\imath}\tilde E_{\Phi,\imath}dx_{\imath}$ |
 | $g_{\imath\jmath}=\langle\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}$ | the metric, the Gram matrix of the frame |
-| $E$ | $4\times4$ matrix of frame components in the basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$; $g=E^{\mathsf T}\Phi E$ |
-| $\Phi=\mathrm{diag}(-1,+1,+1,+1)$ | matrix of the form on $\mathbb{B}_{\Phi}$ in that basis; its inertia is the metric's |
+| $E$ | $4\times4$ matrix of frame components in the basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$; $g=E^{\mathsf T}\digamma_{\mathrm{met}} E$ |
+| $\digamma_{\mathrm{met}}=\mathrm{diag}(-1,+1,+1,+1)$ | matrix of the form on $\mathbb{B}_{\Phi}$ in that basis; its inertia is the metric's |
 | $\tilde U\in SL(2,\mathbb{C})$ | unit-norm biquaternion, the local Lorentz parameter |
 | $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ | rotor conjugation; leaves $g_{\imath\jmath}$ unchanged |
 | $16-6=10$ | frame functions, rotor parameters, metric components |

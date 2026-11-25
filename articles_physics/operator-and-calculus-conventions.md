@@ -329,7 +329,7 @@ $$
 a scalar, the contraction of the derivative with the conjugated field, all four signs plus because the conjugation and the derivative together supply the sign vector. Taken on the scalar field it gives the **kinetic density**, the scalar part of the product of the two conjugated gradients,
 
 $$
-\mathrm{Sc}\bigl[((\tilde\nabla_\Phi)^{\natural}\tilde\Phi^{*})(\tilde\nabla_\Phi\tilde\Phi)\bigr]=-\frac{\partial\Phi^{*}}{\partial r'_t}\frac{\partial\Phi}{\partial r'_t}+\sum_{\imath\in\{x,y,z\}}\frac{\partial\Phi^{*}}{\partial r_{\imath}}\frac{\partial\Phi}{\partial r_{\imath}}
+\mathrm{Sc}\bigl[((\tilde\nabla_\Phi)^{\natural}\tildeΞ^{*})(\tilde\nabla_\Phi\tildeΞ)\bigr]=-\frac{\partial\xi_{\mathrm{scl}}^{*}}{\partial r'_t}\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}+\sum_{\imath\in\{x,y,z\}}\frac{\partial\xi_{\mathrm{scl}}^{*}}{\partial r_{\imath}}\frac{\partial\xi_{\mathrm{scl}}}{\partial r_{\imath}}
 $$
 
 in which the conjugate stands on the first factor and no absolute value is taken; the two time derivatives are imaginary on the material part, so that scalar part is $-\lvert\partial\xi_{\mathrm{scl}}/\partial r'_t\rvert^2+\lvert\vec\nabla_\Phi\xi_{\mathrm{scl}}\rvert^2$, and the kinetic term the series writes is

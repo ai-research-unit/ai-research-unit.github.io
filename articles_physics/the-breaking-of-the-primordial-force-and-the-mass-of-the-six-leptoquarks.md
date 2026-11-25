@@ -10,7 +10,7 @@
 
 $$
 \boxed{\;
-iD=\operatorname{diag}(-3,1,1,1),\qquad
+iD=\operatorname{diag}(-3i,i,i,i),\qquad
 \operatorname{ad}(iD):\quad 0^{9}\oplus(-4i)^{3}\oplus(+4i)^{3},\qquad
 15=9+3+3 ;
 \;}
@@ -141,7 +141,7 @@ $$
 15-9=6\ \text{broken}\quad\Longrightarrow\quad 6\ \text{real components eaten}.
 $$
 
-**The scalar supplies them and has room to spare.** The scalar of this model is the Hermitian $4\times4$, sixteen real components — fifteen from the algebra and one from the trace, $15+1=16$ — and the representation is forced rather than chosen: **$\bar\xi\Phi\xi$ is a singlet only for $\Phi\in\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$**, since $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ contains no $\bar{\mathbf4}$ and a scalar in the fundamental would form no mass operator at all. The vacuum moves exactly six of the sixteen, so **the ledger at this scale is $16=6+10$**, and the six are the ones this article names.
+**The scalar supplies them and has room to spare.** The scalar of this model is the Hermitian $4\times4$, sixteen real components — fifteen from the algebra and one from the trace, $15+1=16$ — and the representation is forced rather than chosen: **$\bar\xiΞ\xi$ is a singlet only for $Ξ\in\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$**, since $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ contains no $\bar{\mathbf4}$ and a scalar in the fundamental would form no mass operator at all. The vacuum moves exactly six of the sixteen, so **the ledger at this scale is $16=6+10$**, and the six are the ones this article names.
 
 **The ten are not this article's business, but they are not a loose end either.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum, which are the ones the weak sector is built from (*Classification of the Bosons*). **The count of six for the $\mathrm{SU}(4)$ step does not depend on any of that**, and it is the only count this article uses.
 
@@ -193,7 +193,7 @@ $$
 
 **One number per plane, at any vacuum.** The corner is one point; the identity behind it is not.
 
-**The general diagonal vacuum.** Let $\Phi_0=\operatorname{diag}(d_1,d_2,d_3,d_4)$ with $\sum_j d_j=0$. The same computation gives
+**The general diagonal vacuum.** Let $Ξ_0=\operatorname{diag}(d_1,d_2,d_3,d_4)$ with $\sum_j d_j=0$. The same computation gives
 
 $$
 M^{2}=2\,(d_j-d_k)^{2}\,v^{2}\ \text{on the plane }\{j,k\},\qquad
@@ -302,7 +302,7 @@ The rank is not reduced. Six dimensions leave and the torus stays; that is why t
 
 ## Summary
 
-**The transition is one direction.** $iD=\operatorname{diag}(-3,1,1,1)$, forced by the lepton-line declaration and by the trace condition up to scale.
+**The transition is one direction.** $iD=\operatorname{diag}(-3i,i,i,i)$, that is $D=\operatorname{diag}(-3,1,1,1)$ times $i$, forced by the lepton-line declaration and by the trace condition up to scale. **The $i$ is what puts $\pm4i$ in the adjoint's spectrum**: on the real matrix $\operatorname{diag}(-3,1,1,1)$ the eigenvalues are the real $\pm4$.
 
 **Its adjoint action is the whole theorem.** $\operatorname{ad}(iD)$ has spectrum $0^{9}\oplus(\pm4i)^{3}$; the kernel is $\mathfrak{u}(3)=\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L}$, dimension nine; the $\pm4i$ eigenspace is the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, $Q=\pm\tfrac23$.
 

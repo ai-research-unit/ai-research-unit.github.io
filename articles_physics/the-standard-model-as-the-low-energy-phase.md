@@ -263,9 +263,9 @@ $$
 **The chain, in the form [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) owns.**
 
 $$
-\mathrm{SU}(4)\ \xrightarrow[\ M_C\ ]{\ \langle\Phi\rangle\ }\
+\mathrm{SU}(4)\ \xrightarrow[\ M_C\ ]{\ \langleΞ\rangle\ }\
 \mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R
-\ \xrightarrow[\ M_C\ ]{\ \langle\Phi\rangle\ }\
+\ \xrightarrow[\ M_C\ ]{\ \langleΞ\rangle\ }\
 \mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_{Y}
 \ \xrightarrow[\ v\ ]{\ \langle H\rangle\ }\
 \mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}} ,

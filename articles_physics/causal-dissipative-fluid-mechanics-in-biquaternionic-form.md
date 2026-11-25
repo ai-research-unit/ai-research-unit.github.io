@@ -1,4 +1,4 @@
-# __Causal Dissipative Hydrodynamics in Biquaternionic Form__
+# __Causal Dissipative Fluid Mechanics in Biquaternionic Form__
 
 ## Introduction
 
@@ -17,7 +17,7 @@ the three relaxation equations for the bulk stress, the shear and the heat flux,
 
 Why the replacement is necessary, in one sentence. The first-order relations make the shear stress respond instantaneously to the shear, which makes the shear's equation parabolic, which makes a signal travel at infinite speed; the relaxation time gives the response an inertia and the equation a wave character, and the wave's speed is finite.
 
-This article is a transcription: it is standard Israel–Stewart-type causal hydrodynamics in the corpus's letters, with no framework interpretation. The equations are Israel's and Israel–Stewart's; the entropy current and its Hermiticity declaration are the category's own, inherited and not rewritten; the algebra's contribution is the notation, and the article says so rather than dressing a transcription as a derivation.
+This article is a transcription: it is standard Israel–Stewart-type causal fluid mechanics in the corpus's letters, with no framework interpretation. The equations are Israel's and Israel–Stewart's; the entropy current and its Hermiticity declaration are the category's own, inherited and not rewritten; the algebra's contribution is the notation, and the article says so rather than dressing a transcription as a derivation.
 
 What the article inherits and does not rewrite. The entropy inequality of [The Local Entropy Current](the-local-entropy-current.html) is written once, with the current declared Hermitian; this article's positivity section inherits that declaration and writes no fresh $\mathrm{Re}$, because a second declaration would be a second convention and the corpus keeps one.
 
@@ -77,9 +77,9 @@ Does not change: the equation of state. [The Equation of State in Biquaternion F
 
 Does not change: the entropy current's form. [The Local Entropy Current](the-local-entropy-current.html)'s $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$ stands, with the production gaining the relaxation terms. The current is Hermitian before and after, which is why the positivity section writes no new declaration.
 
-### The relaxation time against the hydrodynamic scale
+### The relaxation time against the fluid scale
 
-A relaxation time is a microscopic time, and the theory is a hydrodynamic one only while it is short against the macroscopic time.
+A relaxation time is a microscopic time, and the theory is a fluid-mechanical one only while it is short against the macroscopic time.
 
 $$
 \mathrm{Kn}_{\tau}=\frac{\tau_{q}}{L/c},
@@ -212,7 +212,7 @@ The dispersion relation $\omega^{2}+(i/\tau_q)\omega-(D_{\mathrm{th}}/\tau_q)k^{
 
 The equilibrium is stable when the energy's second variation, $\delta^{2}w_{\mathrm{fl}}=\Pi^{2}/(2\zeta\tau_{\Pi})+\pi_{k\jmath}\pi_{k\jmath}/(4\digamma_{\mathrm{vis}}\tau_{\pi})+q_{\imath}q_{\imath}/(2\kappa_{\mathrm{th}}\tau_{q})$, is positive definite — evaluated once at $\Pi=0.05$, $\pi=0.1$, $q=0.02$ with $\zeta=0.1$, $\digamma_{\mathrm{vis}}=0.2$, $\kappa_{\mathrm{th}}=0.05$ and all three relaxation times $1$, $1$ and $0.5$, the three terms are $0.012\,500$, $0.012\,500$ and $0.008\,000$ for a total of $0.033\,000$. The form is real by the Hermiticity declaration of [The Local Entropy Current](the-local-entropy-current.html), which this article inherits and does not repeat.
 
-**This is standard Israel–Stewart-type causal hydrodynamics in the corpus's letters, with no framework interpretation.**
+**This is standard Israel–Stewart-type causal fluid mechanics in the corpus's letters, with no framework interpretation.**
 
 ## Summary of Notation
 
@@ -257,4 +257,4 @@ The equilibrium is stable when the energy's second variation, $\delta^{2}w_{\mat
 - W. A. Hiscock and L. Lindblom, "Stability and causality in dissipative relativistic fluids," *Annals of Physics* **151** (1983) 466–496, for the instability proof in the first-order theory and the stability conditions in the second.
 - R. P. Geroch and L. Lindblom, "Dissipative relativistic fluid theories of divergence type," *Physical Review D* **41** (1990) 1855–1861, for the general classification of causal dissipative theories.
 - P. Romatschke, "New developments in relativistic viscous hydrodynamics," *International Journal of Modern Physics E* **19** (2010) 1–53, for the modern uses and the coefficient counting.
-- The companion articles: [The Local Entropy Current](the-local-entropy-current.html), [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html), [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html), and [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html).
+- The companion articles: [The Local Entropy Current](the-local-entropy-current.html), [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html), [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html), and [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html).
