@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $\mathrm{SU}(4)$ Instanton: A Matrix Transcription Outside the Algebra — Biquaternion Universe</title>
+  <meta name="description" content="The question. Does the primordial phase have non-perturbative structure, and can that structure be written in the algebra the corpus derives from?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-instanton-a-matrix-transcription-outside-the-algebra"><strong>The $\mathrm{SU}(4)$ Instanton: A Matrix Transcription Outside the Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Does the primordial phase have non-perturbative structure, and can that structure be written in the algebra the corpus derives $\mathrm{SU}(2)$ from?</p>
+<p><strong>The answer.</strong> It has one, and it cannot.</p>
+<p>$$
+\boxed{\;S_{\mathrm{inst}}=\frac{8\pi^{2}}{g_4^{2}}=\frac{2\pi}{\alpha_4(M_X)}=108.2,
+\qquad
+e^{-S}=1.1\times10^{-47},\qquad
+\theta_{4}\ \text{periodic with period }2\pi .\;}
+$$</p>
+<p><strong>The instanton exists, is enormous, and is transcribed rather than derived.</strong> Its action is fixed by the same coupling that runs in <a href="the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html">The Primordial Coupling</a>, and the $\theta_4$ that weights it is a free parameter of the model.</p>
+<p><strong>Why "outside the algebra" and not merely "hard".</strong> The instanton is a configuration of a gauge field on a four-dimensional space whose second Chern number is one. <strong>Its existence is a statement about a $4\times4$ matrix field and about $\pi_3(\mathrm{SU}(4))=\mathbb{Z}$</strong>, and the algebra $\mathbb{B}$ has compact group $\mathrm{U}(2)$ of real dimension four — far too small to contain fifteen generators, let alone a winding sector of them. <strong>The instanton therefore stands exactly where the action stands: on the transcribed side of the ceiling</strong>, and this article is where that placement is made explicit.</p>
+<p><strong>What this article does.</strong> It writes the topological term, computes the action and the suppression, counts the moduli, states the size-modulus cutoff, and locates the whole construction relative to the algebra.</p>
+<p><strong>What it does not do.</strong> It does not compute the $\theta_4$ dependence of any observable, does not build a dilute-gas model, and does not discuss the strong-$CP$ problem except to say why it does not arise here in the same form.</p>
+<h2 id="the-topological-term">The Topological Term</h2>
+<p><strong>One term, one coefficient, one periodicity.</strong></p>
+<p>$$
+\mathcal{L}_{\theta}=\theta_{4}\,\frac{g_4^{2}}{32\pi^{2}}\operatorname{tr}\bigl(\mathbb{F}_{\imath\jmath}\tilde{\mathbb{F}}_{\imath\jmath}\bigr),
+\qquad
+\tilde{\mathbb{F}}_{\imath\jmath}=\tfrac12\varepsilon_{\imath\jmath\kappa\lambda}\mathbb{F}_{\kappa\lambda},
+$$</p>
+<p>with $\mathbb{F}=\sum_{a}F_{a}T_{a}$ the matrix-valued curvature and the trace over colour, which for a Hermitian matrix is the whole of the contraction.</p>
+<p><strong>The normalisation is the one that makes the integral an integer.</strong></p>
+<p>$$
+\frac{g_4^{2}}{32\pi^{2}}\int\operatorname{tr}\bigl(\mathbb{F}\tilde{\mathbb{F}}\bigr)\in\mathbb{Z}
+\quad\text{equivalently}\quad
+\frac{1}{16\pi^{2}}\int\operatorname{tr}\bigl(F_{\imath\jmath}\tilde F_{\imath\jmath}\bigr)\in\mathbb{Z}
+$$</p>
+<p>with $\operatorname{tr}(T_{a}T_{b})=\tfrac12\delta_{ab}$ in the second form — <strong>the normalisation the whole block uses</strong>, established from the printed arrays in <a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a>. <strong>Two conventions and one integer</strong>: the factor of two between them is the trace's, not the group's.</p>
+<p><strong>The coefficient $\theta_4$ is free and the group does not fix it.</strong> A total derivative does not affect the equations of motion, but it does affect the action of a configuration with nonzero winding, <strong>so $\theta_4$ is a parameter of the phase and not a redundancy of the description.</strong> The $2\pi$ periodicity follows from the integrality above: shifting $\theta_4$ by $2\pi$ multiplies the weight of every winding sector by $e^{2\pi i}=1$.</p>
+<p><strong>Why the trace is the matrix trace and not a sum over generators.</strong> $\operatorname{tr}(\mathbb{F}\tilde{\mathbb{F}})=\frac12F_{a}\tilde F_{a}$ by the normalisation, so the two agree as densities; <strong>but the integrality statement is about the matrix trace of a bundle, and the sum over generators carries no bundle.</strong> The distinction is the same one the parent article makes about the action's density, and it is sharper here: <strong>a sum over fifteen generators of fifteen numbers is not a Chern class.</strong></p>
+<h2 id="the-action-and-its-size">The Action and Its Size</h2>
+<p><strong>One number, and it is the largest number in the block.</strong></p>
+<p>$$
+S_{\mathrm{inst}}=\frac{8\pi^{2}}{g_4^{2}}=\frac{2\pi}{\alpha_4},
+\qquad
+\alpha_4(M_X)=0.0581
+\quad\Longrightarrow\quad
+S=108.2 ,
+\qquad
+e^{-S}=1.1\times10^{-47} .
+$$</p>
+<p><strong>The action is independent of the instanton's size at tree level</strong>, because the classical $\mathrm{SU}(4)$ theory with massless content is scale invariant. <strong>The size dependence enters only through the running coupling</strong>, evaluated at the inverse size:</p>
+<p>$$
+S(\rho)=\frac{2\pi}{\alpha_4(1/\rho)},
+\qquad
+\alpha_4(1/\rho)\ \text{decreasing as}\ \rho\ \text{decreases} .
+$$</p>
+<p><strong>So smaller instantons have larger action and are more suppressed</strong>, and the density $dn\sim d\rho\,\rho^{-5}e^{-S(\rho)}$ is dominated by the largest allowed size. <strong>The largest allowed size is set by the phase's own end:</strong></p>
+<p>$$
+\rho_{\mathrm{inst}}\lesssim\frac{1}{M_C},
+$$</p>
+<p><strong>because an instanton larger than the transition scale would have to live in a phase that does not exist there.</strong> That is the cutoff, and it is a statement about the model and not about the integral.</p>
+<p><strong>What the number means, stated without inflation.</strong> $1.1\times10^{-47}$ per unit four-volume in units of $M_C$ is not zero, and in a cosmological setting it would matter; <strong>inside the phase, no observable of the block depends on it at any accuracy the block claims.</strong> The article's point is not that the effect is negligible but that it is computable and large, <strong>which is the opposite of the usual situation in a strongly coupled theory where the semi-classical expansion fails.</strong></p>
+<p><strong>The value at the transition, for completeness.</strong> $S(M_C)=2\pi/\alpha_4(M_C)=108.6$, <strong>half a unit larger than at $M_X$</strong>, because the coupling has barely moved over the interval between them. <strong>The suppression is the same to two significant figures everywhere in the phase</strong>, which is why the article quotes one number.</p>
+<h2 id="the-moduli">The Moduli</h2>
+<p><strong>A single instanton has $4N=16$ parameters, and the split is exact for $\mathrm{SU}(N)$.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>modulus</th>
+<th>count</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>translations</td>
+<td>$4$</td>
+<td>where the instanton sits</td>
+</tr>
+<tr>
+<td>dilatation</td>
+<td>$1$</td>
+<td>its size $\rho$</td>
+</tr>
+<tr>
+<td>orientation</td>
+<td>$11$</td>
+<td>how its $\mathrm{SU}(2)$ sits inside $\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td>$\mathbf{16}$</td>
+<td>$4N$ with $N=4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The orientation count is $11$ and not $15$, and the difference is what the instanton does not use.</strong> The solution is built by embedding an $\mathrm{SU}(2)$ in $\mathrm{SU}(4)$, so the orientation space is a coset and not the group; <strong>eleven parameters are left after the stabiliser is quotiented out.</strong> The arithmetic: $4N-5=11$.</p>
+<p><strong>The instanton does not use all fifteen generators.</strong> Its field strength lies in an $\mathrm{su}(2)$ subalgebra, so at any point in space the configuration excites three of the fifteen directions. <strong>That is not a defect of the solution but its construction</strong>, and it is worth stating because it bears on the article's main point: <strong>the object that requires fifteen generators to be written at all uses three of them at a time.</strong></p>
+<p><strong>The embedding is a choice, and the choice is not unique.</strong> $\mathrm{SU}(4)$ has more than one conjugacy class of $\mathrm{SU}(2)$ subgroups, so there is more than one family of instanton-like solutions; <strong>the standard one is the maximal embedding, and the others are not computed here.</strong> The article's claim does not depend on which is chosen, because the action is the same for all of them.</p>
+<h2 id="why-the-algebra-cannot-hold-it">Why the Algebra Cannot Hold It</h2>
+<p><strong>Three statements, in order of strength.</strong></p>
+<ul>
+<li><em>Dimension.</em> The compact group of $\mathbb{B}$ is $\mathrm{U}(2)$, of real dimension four. <strong>Fifteen generators do not fit</strong>, so the field the instanton is built from is not an algebra element.</li>
+<li><em>Topology.</em> The instanton exists because $\pi_{3}(\mathrm{SU}(4))=\mathbb{Z}$. <strong>A winding number is a property of a map from the three-sphere into a group</strong>, and the algebra has no three-sphere to map.</li>
+<li><em>The bundle.</em> The integrality of the topological charge is a statement about a principal bundle over compactified four-space. <strong>The algebra's elements are matrices, and a matrix is not a bundle.</strong></li>
+</ul>
+<p><strong>So the instanton sits with the action, the fifteen generators and the $\mathrm{SU}(4)$ group itself on the transcribed side of the ceiling</strong>, and the corpus's derived side — $\mathrm{SU}(2)$ and its abelian factor — is untouched by it. <strong>That placement is the article's contribution</strong>: the non-perturbative sector of the primordial force is a transcribed object, and no argument in the corpus derives it.</p>
+<p><strong>What would be needed to derive it.</strong> A four-dimensional algebra whose compact group had a nontrivial third homotopy group and enough dimension for the content. <strong>The corpus's theorem is that no four-dimensional algebra reaches $\mathrm{SU}(3)$</strong>, so such an algebra does not exist among the ones the corpus considers, and the instanton inherits the ceiling rather than escaping it.</p>
+<h2 id="math55-and-the-questions-it-raises">$\theta_4$ and the Questions It Raises</h2>
+<p><strong>Three statements about the parameter, and a fourth about what is absent.</strong></p>
+<ul>
+<li><em>It is free.</em> No argument in the corpus fixes $\theta_4$; the group admits the term and nothing selects its coefficient.</li>
+<li><em>It is unobservable in this phase.</em> The phase does not extend to any scale at which it is measured, and its effects are weighted by $10^{-47}$.</li>
+<li><em>It is not the strong-$CP$ parameter.</em> QCD's $\bar\theta$ is measured to be smaller than $10^{-10}$ by the neutron's electric dipole moment; <strong>$\theta_4$ has no such measurement because the phase is not the one we live in</strong>, and the two parameters are unrelated.</li>
+<li><em>There is no axion in the model.</em> A Peccei–Quinn field would be a new scalar with a new scale, and the content is fixed at two fields. <strong>The $\theta_4$ question is therefore not solved, it is relocated</strong> to a phase where it does not matter.</li>
+</ul>
+<p><strong>And the anomaly does not remove it.</strong> A rotation of the fermions by a chiral phase shifts $\theta_4$ by an amount fixed by the anomaly coefficient, and the corpus's sixteen are paired so that the anomaly cancels — <strong>which is why the shift is zero and $\theta_4$ is physical rather than removable.</strong> A content with a nonzero anomaly would have let $\theta_4$ be rotated away, and this one does not.</p>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the normalisation</td>
+<td>$\operatorname{tr}(T_{a}T_{b})=\tfrac12\delta_{ab}$</td>
+<td>$\frac{g^{2}}{32\pi^{2}}\int\operatorname{tr}F\tilde F\in\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>the action</td>
+<td>$8\pi^{2}/g_4^{2}$</td>
+<td>$108.2$</td>
+</tr>
+<tr>
+<td>the same from $\alpha_4$</td>
+<td>$2\pi/\alpha_4(M_X)$</td>
+<td>$108.2$</td>
+</tr>
+<tr>
+<td>the suppression</td>
+<td>$e^{-108.2}$</td>
+<td>$1.1\times10^{-47}$</td>
+</tr>
+<tr>
+<td>the action at $M_C$</td>
+<td>$2\pi/0.0578$</td>
+<td>$108.6$</td>
+</tr>
+<tr>
+<td>the moduli</td>
+<td>$4N$ with $N=4$</td>
+<td>$16=4+1+11$</td>
+</tr>
+<tr>
+<td>the orientation count</td>
+<td>$4N-5$</td>
+<td>$11$</td>
+</tr>
+<tr>
+<td>the excited generators</td>
+<td>an $\mathrm{su}(2)$ inside $\mathrm{su}(4)$</td>
+<td>$3$ of $15$</td>
+</tr>
+<tr>
+<td>the size cutoff</td>
+<td>the phase's end</td>
+<td>$\rho\lesssim1/M_C$</td>
+</tr>
+<tr>
+<td>the $\theta_4$ period</td>
+<td>integrality of the charge</td>
+<td>$2\pi$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The primordial phase has instantons with action $108.2$, and the exponential is $1.1\times10^{-47}$.</strong> The number is fixed by the same coupling that runs in the rest of the block, and it is the largest number the block contains.</p>
+<p><strong>Sixteen moduli, eleven of them orientation</strong>, because the solution is an $\mathrm{SU}(2)$ inside $\mathrm{SU}(4)$ and excites three generators at a time. <strong>The size modulus is cut off at $1/M_C$</strong>, by the phase ending and not by the integral.</p>
+<p><strong>$\theta_4$ is a free parameter with a $2\pi$ period, physical because the content is anomaly-free, and unobservable because the phase is not ours.</strong> The strong-$CP$ problem is not solved; it is placed where it cannot be measured.</p>
+<p><strong>And the whole construction is transcribed.</strong> Winding numbers need a group with a three-sphere's worth of topology; $\mathrm{U}(2)$ has dimension four and fifteen generators do not fit in it. <strong>The instanton is the clearest case in the corpus of a transcribed object with no derived counterpart</strong>, and stating that is more useful than deriving a number that the algebra cannot hold.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{F}_{\imath\jmath}$</td>
+<td>$\sum_{a}F_{a,\imath\jmath}T_{a}$, the matrix-valued curvature</td>
+</tr>
+<tr>
+<td>$\tilde{\mathbb{F}}$</td>
+<td>its dual, $\tfrac12\varepsilon\,\mathbb{F}$</td>
+</tr>
+<tr>
+<td>$\theta_{4}$</td>
+<td>the coefficient of the topological term, free, period $2\pi$</td>
+</tr>
+<tr>
+<td>$S_{\mathrm{inst}}$</td>
+<td>$8\pi^{2}/g_4^{2}$, the instanton action</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>the instanton's size modulus</td>
+</tr>
+<tr>
+<td>$\pi_{3}(\mathrm{SU}(4))$</td>
+<td>$\mathbb{Z}$, the reason a winding number exists</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a>. The term $\theta_4$ multiplies, and the trace-versus-pairing argument this article inherits.</li>
+<li><a href="the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html">The Primordial Coupling</a>. The $\alpha_4$ from which the action is computed.</li>
+<li><a href="why-there-is-no-confinement-above-m-c.html">Why There Is No Confinement Above $M_C$</a>. The perturbative phase this non-perturbative sector sits in without changing.</li>
+<li><a href="why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$</a>. The ceiling this article places the instanton under.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

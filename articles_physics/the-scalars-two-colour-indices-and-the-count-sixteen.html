@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Scalar&#x27;s Two Indices: Two Colour, One Trace, and the Count Sixteen — Biquaternion Universe</title>
+  <meta name="description" content="The question. How many real components does the scalar have, and which of its labels does the group act on?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-scalars-two-indices-two-colour-one-trace-and-the-count-sixteen"><strong>The Scalar's Two Indices: Two Colour, One Trace, and the Count Sixteen</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> How many real components does the scalar have, and which of its labels does the group act on?</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\Phi:\ \underbrace{4\times4}_{\text{colour pair, Hermitian}}\ \Longrightarrow\ 16\ \text{real}=\underbrace{15}_{\mathbf{15}}+\underbrace{1}_{\mathbf1};\qquad \dim\mathrm{SU}(4)=15 .\;}
+$$</p>
+<p><strong>The fifteen is the algebra's, and it is where the count starts.</strong> A traceless Hermitian $4\times4$ has $16-1=15$ real parameters, which is $\dim\mathrm{SU}(4)$. The trace is one more real parameter, and $\Phi$ may carry it. <strong>$15+1=16$, and there is nowhere else for the count to go.</strong></p>
+<p><strong>What this article does.</strong> It counts the components, names the two labels, says why Hermiticity is forced, and states what the counting does not fix.</p>
+<p><strong>What it does not do.</strong> It writes no potential and no mass. <a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a> writes the potential; <a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-two-quartics.html">The Lagrangian and the Scalar Matrix</a> writes the kinetic term.</p>
+<h2 id="the-representation-read-off-the-indices">The Representation, Read Off the Indices</h2>
+<p><strong>A $4\times4$ matrix carries one lower and one upper colour index, and that product is reducible.</strong></p>
+<p>$$
+\mathbf4\otimes\bar{\mathbf4}=\mathbf{15}\oplus\mathbf1,
+\qquad
+15+1=16 .
+$$</p>
+<p><strong>The sixteen is the number of real parameters of a Hermitian matrix</strong>, and the split says what the group does to them. The $\mathbf1$ is the trace, $\operatorname{tr}\Phi$; the $\mathbf{15}$ is the traceless part, which is the adjoint. <strong>Both pieces are carried by the same field</strong>, and the mass operator uses only the singlet.</p>
+<p><strong>Why this and not the $\mathbf4$.</strong> The mass operator decides it, and the argument is two lines:</p>
+<p>$$
+\bar\xi\Phi\xi\to\mathbf1
+\quad\Longleftrightarrow\quad
+\bar{\mathbf4}\otimes\Phi\otimes\mathbf4\supset\mathbf1
+\quad\Longleftrightarrow\quad
+\Phi\in\bar{\mathbf4}\otimes\mathbf4 .
+$$</p>
+<p><strong>And $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ contains no $\bar{\mathbf4}$</strong>, so a scalar in the fundamental forms no mass operator with one $\bar\xi$ and one $\xi$. <strong>The scalar's colour structure is not a choice; it is the existence of the Yukawa sector.</strong> <a href="the-scalar-content-one-matrix-and-ten-survivors.html">The Scalar Content</a> records the census.</p>
+<p><strong>Three counts that must not be confused.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>count</th>
+<th>number</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real components of the Hermitian matrix</td>
+<td>$\mathbf{16}$</td>
+<td>the field's degrees of freedom</td>
+</tr>
+<tr>
+<td>complex entries of a general $4\times4$</td>
+<td>$16$</td>
+<td><em>not</em> this field: Hermiticity halves it to $16$ real, not $32$</td>
+</tr>
+<tr>
+<td>generators of $\mathrm{SU}(4)$</td>
+<td>$15$</td>
+<td>the traceless part</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The middle row is the trap.</strong> Sixteen complex entries is a general matrix with $32$ real parameters; a Hermitian matrix has sixteen real. <strong>A count of $32$ has forgotten the dagger, and any count larger than that has multiplied by an index that no generator acts on.</strong></p>
+<h2 id="the-two-labels">The Two Labels</h2>
+<p><strong>What a component carries, and what acts on it.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>label</th>
+<th>range</th>
+<th>acted on by the group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the colour row</td>
+<td>$1,\dots,4$</td>
+<td>yes, $\Phi\mapsto U\Phi U^{\dagger}$</td>
+</tr>
+<tr>
+<td>the colour column</td>
+<td>$1,\dots,4$</td>
+<td>yes, the same transformation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two labels, both gauged, and that is the whole list.</strong> There is no third index on $\Phi$: not a copy, not a family, not a colour–anticolour pair beyond the two already named. <strong>A third index would multiply the count and nothing in the algebra would act on it</strong>, which is the definition of a label that costs components and buys nothing.</p>
+<p><strong>Why the group cannot act on a third index.</strong> A generator acting on it would be a sixteenth generator, and the algebra has fifteen. <strong>The group is fixed by the algebra's dimension</strong>, so any further label is necessarily ungauged, and an ungauged label on a Hermitian matrix is not a degree of freedom: it is a bookkeeping device, and the corpus does not use one here.</p>
+<p><strong>The colour pair does double duty, and that is why the matrix is not extravagant.</strong> The same two indices give the gauge–scalar vertex its commutator and the Yukawa operator its singlet. <strong>One structure, two jobs</strong>, and the sixteen is the smallest count that does both.</p>
+<h2 id="the-count-twice">The Count, Twice</h2>
+<p><strong>Once as entries, once as a decomposition.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bookkeeping</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>diagonal entries, real</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>off-diagonal entries, one complex pair per unordered pair</td>
+<td>$6\times2=12$</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td>$\mathbf{16}$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>real</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the trace $\mathbf1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>the traceless $\mathbf{15}$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td>$\mathbf{16}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two tables agree, and the agreement is the check.</strong> Six pairs above the diagonal give twelve real, plus four real diagonal entries: sixteen. <strong>No component is double-counted and none is missing.</strong></p>
+<p><strong>Degrees of freedom and components are the same number here.</strong> A real scalar has one degree of freedom per component, unlike a fermion, so sixteen components are sixteen degrees of freedom before any eating. <strong>The vector case is where the two differ</strong>, and <a href="the-sixteen-above-m-c-massless-vector-like-and-what-that-costs.html">The Sixteen Above $M_C$</a> works that difference out for the fermions.</p>
+<h2 id="what-the-counting-does-not-fix">What the Counting Does Not Fix</h2>
+<p><strong>Four things the representation leaves open, stated so no later article has to assume them.</strong></p>
+<ul>
+<li><em>The potential.</em> One quadratic and two quartics, with three free coefficients. <strong>The representation fixes how many terms there are and not what they are</strong>; the counting is silent on signs.</li>
+<li><em>The mass.</em> $\mu^{2}$ is a parameter. Whether the origin is a minimum is a statement about its sign, not about the count.</li>
+<li><em>The vacuum's shape.</em> Any traceless diagonal form is available to a Hermitian matrix. <strong>The count does not choose</strong>, and <a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a> shows that the choice is what decides how many directions the transition eats.</li>
+<li><em>The Yukawa matrix.</em> Its entries are free, and the representation fixes only that the operator exists.</li>
+</ul>
+<p><strong>What the counting does fix, and it is worth stating positively.</strong> The number of eaten directions is six: one per broken generator, and never more than the six the stabiliser leaves. <strong>A scalar with sixteen components can feed six Goldstones and cannot feed seven</strong>, because six is the number of generators that do not commute with the vacuum.</p>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the dimension of $\mathbf4\otimes\bar{\mathbf4}$</td>
+<td>$4\times4$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>its decomposition</td>
+<td>$\mathbf{15}\oplus\mathbf1$</td>
+<td>$15+1=16$</td>
+</tr>
+<tr>
+<td>the real parameters of a Hermitian $4\times4$</td>
+<td>$4+6\times2$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>the real parameters of a general $4\times4$</td>
+<td>$16$ complex</td>
+<td>$32$, <strong>not this field</strong></td>
+</tr>
+<tr>
+<td>the generators</td>
+<td>$4^{2}-1$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the mass operator's requirement</td>
+<td>$\bar{\mathbf4}\otimes\Phi\otimes\mathbf4\supset\mathbf1$</td>
+<td>$\Phi\in\bar{\mathbf4}\otimes\mathbf4$</td>
+</tr>
+<tr>
+<td>the quartet's exclusion</td>
+<td>$\mathbf4\otimes\mathbf4$</td>
+<td>$\mathbf6\oplus\mathbf{10}$, no $\bar{\mathbf4}$</td>
+</tr>
+<tr>
+<td>the eaten count</td>
+<td>$15-9$</td>
+<td>$6$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>Sixteen real components: fifteen from the algebra and one from the trace.</strong> The representation is $\mathbf{15}\oplus\mathbf1=\mathbf4\otimes\bar{\mathbf4}$ in the colour indices, forced by the existence of the mass operator and not chosen for convenience.</p>
+<p><strong>Two labels, both gauged.</strong> No copy index, no family index on $\Phi$: a third label would multiply the count and no generator would act on it.</p>
+<p><strong>Thirty-two is the number to avoid, and it is the one that looks right.</strong> It is the count of a general complex $4\times4$, which is a different field from a Hermitian one, and it is the first step on a ladder that ends in a negative $b_0$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Phi$</td>
+<td>the scalar, a Hermitian $4\times4$</td>
+</tr>
+<tr>
+<td>$\mathbf{15}\oplus\mathbf1$</td>
+<td>$\mathbf4\otimes\bar{\mathbf4}$, the adjoint plus the trace</td>
+</tr>
+<tr>
+<td>$\bar{\mathbf4}$</td>
+<td>the conjugate fundamental, the index carried by $\bar\xi$</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>the $\mathrm{SU}(4)$ element acting as $\Phi\mapsto U\Phi U^{\dagger}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-scalar-content-one-matrix-and-ten-survivors.html">The Scalar Content</a>. The same field counted with the eating, and the ten that survive.</li>
+<li><a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a>. The potential this count leaves undetermined, written.</li>
+<li><a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-two-quartics.html">The Lagrangian and the Scalar Matrix</a>. The kinetic term for this field, and the commutator its two colour indices force.</li>
+<li><a href="the-su4-model-four-colours-fifteen-generators-one-declaration.html">The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration</a>. The fifteen the count starts from.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

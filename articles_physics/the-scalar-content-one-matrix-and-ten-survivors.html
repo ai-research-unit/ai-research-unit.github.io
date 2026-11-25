@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Scalar Content: One Matrix, Sixteen Components, Six Eaten, Ten Survivors — Biquaternion Universe</title>
+  <meta name="description" content="The question. What carries the vacuum at, how many real components does it have, how many are eaten, and how many survive?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-scalar-content-one-matrix-sixteen-components-six-eaten-ten-survivors"><strong>The Scalar Content: One Matrix, Sixteen Components, Six Eaten, Ten Survivors</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> What carries the vacuum at $M_C$, how many real components does it have, how many are eaten, and how many survive?</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;
+\Phi\in\mathbf{15}\oplus\mathbf1:\ 16\ \text{real},\ 6\ \text{eaten},\ 10\ \text{survive};\qquad
+16=6+10 .
+\;}
+$$</p>
+<p><strong>The count starts at fifteen and stops at sixteen.</strong> $\dim\mathrm{SU}(4)=4^{2}-1=15$, and the traceless Hermitian $4\times4$ is exactly that algebra: fifteen real entries. The trace is one more real number, and the scalar may carry it, so the content is $\mathbf{15}\oplus\mathbf1$ and the count is $15+1=16$. <strong>No further doubling is available</strong>: the matrix is Hermitian, so its off-diagonal entries are not independent complex numbers, and no index is gauged that would multiply them.</p>
+<p><strong>What this article establishes.</strong> That the multiplet is one Hermitian matrix; why the matrix index is forced by the Yukawa operator; the decomposition of the sixteen into blocks under the residual $\mathrm{U}(3)$; the count of eaten and surviving components; and the price that count carries.</p>
+<p><strong>What it does not establish.</strong> A potential, a mass for any survivor, or a Yukawa matrix. It is a census, and the articles that need the numbers cite it rather than recounting them.</p>
+<p><strong>Where the neighbours are.</strong> The breaking that eats the six is <a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">The Breaking of the Primordial Force</a>. The transition is <a href="matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html">The Matching at $M_C$</a>. The field that waits for the electroweak scale is <a href="the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html">The Weak Sector Below $M_C$</a>. The operator the matrix index makes possible is <a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">The Yukawa Sector</a>.</p>
+<h2 id="the-field">The Field</h2>
+<p><strong>One Hermitian $4\times4$, and its sixteen is the algebra's.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>real parameters</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the traceless Hermitian $4\times4$</td>
+<td>$16-1=15$</td>
+<td>the adjoint, $\mathbf{15}$</td>
+</tr>
+<tr>
+<td>the trace</td>
+<td>$1$</td>
+<td>the singlet, $\mathbf1$</td>
+</tr>
+<tr>
+<td><strong>$\Phi$</strong></td>
+<td>$\mathbf{16}$</td>
+<td>$\mathbf{15}\oplus\mathbf1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why Hermitian and not general complex.</strong> The scalar's kinetic term is $\operatorname{tr}(D_{\imath}\Phi)^{\dagger}(D_{\imath}\Phi)$, and its potential is built from $\Phi^{\dagger}\Phi$. <strong>A general complex matrix would carry a phase per entry that no term in the action depends on</strong>, so those phases are not dynamical and are removed by the same argument that removes a would-be Goldstone of an ungauged symmetry. <strong>The physical field is the Hermitian one</strong>, and its count is the algebra's count.</p>
+<p><strong>Why not a quartet.</strong> The mass operator decides it:</p>
+<p>$$
+\bar\xi\,\Phi\,\xi\to\mathbf1
+\quad\Longleftrightarrow\quad
+\bar{\mathbf4}\otimes\Phi\otimes\mathbf4\supset\mathbf1
+\quad\Longleftrightarrow\quad
+\Phi\in\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1 .
+$$</p>
+<p><strong>And $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ contains no $\bar{\mathbf4}$</strong>, so a scalar in the fundamental forms no operator with one $\bar\xi$ and one $\xi$ at all.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>candidate $\Phi$</th>
+<th>$\bar\xi\,\Phi\,\xi$</th>
+<th>invariant?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbf4$</td>
+<td>needs $\mathbf4\subset\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$</td>
+<td><strong>no</strong></td>
+</tr>
+<tr>
+<td>$\mathbf{15}\oplus\mathbf1=\mathbf4\otimes\bar{\mathbf4}$</td>
+<td>$\bar{\mathbf4}\otimes(\mathbf4\otimes\bar{\mathbf4})\otimes\mathbf4\to\mathbf1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbf6$</td>
+<td>needs two conjugates, $\bar{\mathbf4}\otimes\bar{\mathbf4}\otimes\mathbf6$</td>
+<td>yes, but not with one $\xi$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the matrix is not a preference; it is forced by the existence of a mass term</strong>, and its size is then fixed by the algebra and by nothing else.</p>
+<h2 id="the-blocks-under-the-residual-group">The Blocks Under the Residual Group</h2>
+<p><strong>Write the vacuum and the blocks follow.</strong></p>
+<p>$$
+\Phi=v_C\,D+\text{fluctuations},
+\qquad
+D=\operatorname{diag}(-3,1,1,1),
+\qquad
+\operatorname{tr}D=0 .
+$$</p>
+<p><strong>The stabiliser of $D$ is $\mathrm{U}(3)$ on the last three lines</strong>, and the sixteen decompose under it by where the entries sit in the matrix.</p>
+<p>$$
+\mathbf{15}\oplus\mathbf1\;\longrightarrow\;\mathbf8_0\oplus\mathbf3_{-\frac43}\oplus\bar{\mathbf3}_{+\frac43}\oplus\mathbf1_0\oplus\mathbf1_0 .
+$$</p>
+<p><strong>Count the real components block by block, not by multiplying complex entries.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>where it sits</th>
+<th>real components</th>
+<th>eaten</th>
+<th>survivors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbf8_0$</td>
+<td>the traceless $3\times3$ corner</td>
+<td>$8$</td>
+<td>$0$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\mathbf3\oplus\bar{\mathbf3}$</td>
+<td>the row and column through the fourth line</td>
+<td>$6$</td>
+<td>$6$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbf1_0$</td>
+<td>the trace of the $3\times3$ corner</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbf1_0$</td>
+<td>the $(4,4)$ entry</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td></td>
+<td>$\mathbf{16}$</td>
+<td>$\mathbf{6}$</td>
+<td>$\mathbf{10}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The arithmetic of the rows.</strong> A Hermitian $3\times3$ has nine real entries: eight traceless and one trace. The off-diagonal block — three entries in the fourth row, their three conjugates in the fourth column — is three complex numbers, so six real. The $(4,4)$ entry is one real. <strong>$9+6+1=16$, and the four rows are the same sixteen.</strong></p>
+<p><strong>Six is the count of broken generators, and the two routes agree.</strong> Fifteen generators, nine of which commute with $D$, so six are broken; and the $\mathbf3\oplus\bar{\mathbf3}$ block has exactly six real components. <strong>The Goldstone theorem is the statement that these are the same count</strong>, and here it can be read off the matrix.</p>
+<p><strong>The octet loses nothing.</strong> The vacuum is a colour singlet, so no generator acting on the $\mathbf8_0$ block is broken, and all eight real octet components survive. <strong>They are colour octets with $B-L=0$</strong>, and they are heavy at $M_C$ because their mass is the condensate's scale.</p>
+<p><strong>And the two singlets are one radial mode and one physical scalar.</strong> The vacuum lies along one combination of the two singlet directions, and the mode along the vacuum is the radial excitation; the combination orthogonal to it is a physical scalar. <strong>So the ten are $8+1+1$: an octet, a singlet, and the radial mode.</strong></p>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>One scale, one subtraction.</strong></p>
+<p>$$
+\underbrace{16}_{\Phi}=\underbrace{6}_{\text{eaten at }M_C}+\underbrace{10}_{\text{surviving}} .
+$$</p>
+<p><strong>The ten split as eight octet, one singlet, one radial.</strong> No other scalar exists in the content at this scale, and any count that reports a different total has doubled an index that no generator acts on.</p>
+<p><strong>The doublet is a different field.</strong> The electroweak doublet $H$ that the weak sector uses is colour-blind, four real components, three of them eaten at $v$ and one the Higgs. <strong>It is not part of this matrix and it is not counted here</strong>; it is counted in <a href="the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html">The Weak Sector Below $M_C$</a>.</p>
+<p><strong>Why the doublet cannot be a component of $\Phi$.</strong> $\Phi$ carries two colour indices and no left index, so its survivors are colour octets and colour singlets, and <strong>a colour singlet is neutral under the left factor</strong>. The standard Higgs mechanism needs a field that transforms under the left factor and carries hypercharge, and no component of a colour matrix does.</p>
+<h2 id="what-the-sixteen-cost">What the Sixteen Cost</h2>
+<p><strong>The number is a liability and it is stated before the article's checks.</strong></p>
+<ul>
+<li><em>A colour octet of eight real scalars.</em> It survives $M_C$ and couples to two gluons through the kinetic term. <strong>Its mass is the condensate's scale times a quartic coefficient</strong>, so it is heavy by construction; the model cannot say why beyond that, because the only scale available is $M_C$.</li>
+<li><em>One extra colour singlet.</em> It mixes with the doublet below $v$, so the lightest neutral scalar is a mixture and not $H$ alone. <strong>The corpus's "one doublet that waits" describes the breaking correctly and the spectrum only approximately.</strong></li>
+<li><em>Proton decay.</em> The dangerous block is the $\mathbf3\oplus\bar{\mathbf3}$, and it is eaten at $M_C$. <strong>The octet adds loop-level channels</strong>, and none is computed here.</li>
+</ul>
+<p><strong>What a smaller sector would need.</strong> A colour-singlet scalar would decouple from colour entirely and could form no Yukawa operator for these fermions. <strong>The sixteen is the price of the mass operator</strong>, and it is paid here rather than in a later article.</p>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the dimension of the algebra</td>
+<td>$4^{2}-1$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the count of $\Phi$</td>
+<td>$15+1$</td>
+<td>$16$ real</td>
+</tr>
+<tr>
+<td>the blocks</td>
+<td>$8+6+1+1$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>the eaten count at $M_C$</td>
+<td>six of the $\mathbf3\oplus\bar{\mathbf3}$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>the same from generators</td>
+<td>$15-9$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>the massless vectors at $M_C$</td>
+<td>$15-6$</td>
+<td>$9=\dim\mathfrak{u}(3)$</td>
+</tr>
+<tr>
+<td>the survivors</td>
+<td>$16-6$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>the block sum</td>
+<td>$8+1+1$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>the Yukawa</td>
+<td>$\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$</td>
+<td>one singlet, so one mass operator</td>
+</tr>
+<tr>
+<td>the scalar's effect on $b_0$</td>
+<td>$N_s=16$ real</td>
+<td>scalar term $-\tfrac43$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two routes to six agreeing is the check that matters</strong>, because one counts generators and the other counts real components. <strong>They agree because the Goldstone theorem is the statement that the two counts are the same count</strong>, and a census that has them disagree has multiplied something.</p>
+<h2 id="distinctions-that-are-easy-to-lose">Distinctions That Are Easy to Lose</h2>
+<p>A breaking is not a deletion. The six vectors eaten at $M_C$ are rotations of the condensate; the vectors that swallow them are what the rotations become (<em>The Breaking of the Primordial Force</em>).</p>
+<p>A survivor is not a light field. All ten survivors of $\Phi$ are heavy at $M_C$, because their mass is the condensate's scale.</p>
+<p>A Hermitian matrix is not half a complex one. $\mathbf{15}\oplus\mathbf1$ is sixteen real, and the sixteen is $15+1$, not $32$.</p>
+<p>A count of components is not a count of particles. Sixteen real components are the scalar's degrees of freedom one for one; a fermion's sixteen Weyl fields are thirty-two states, and the two counts are not the same kind of count.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One Hermitian $4\times4$.</strong> $\mathbf{15}\oplus\mathbf1$, sixteen real components, fifteen from the algebra and one from the trace. <strong>The matrix index is forced by the mass operator</strong>: $\bar\xi\Phi\xi$ needs $\Phi\in\bar{\mathbf4}\otimes\mathbf4$, and $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ contains no $\bar{\mathbf4}$.</p>
+<p><strong>Six eaten, ten surviving.</strong> The six are the $\mathbf3\oplus\bar{\mathbf3}$ block, one real component per broken generator; the ten are an octet, a singlet and the radial mode.</p>
+<p><strong>The sixteen is also the number the running uses.</strong> A scalar multiplet of sixteen components contributes $-\tfrac43$ to $b_0$, and that is the term <a href="the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html">The Primordial Coupling</a> subtracts. <strong>Each doubling of the count costs another $\tfrac43$</strong>: thirty-two real components would give $b_0=\tfrac{20}{3}$ and sixty-four would give $4$. <strong>The census and the running are therefore one statement and not two</strong>, and the coupling article tabulates the three side by side.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Phi$</td>
+<td>the scalar, a Hermitian $4\times4$, $\mathbf{15}\oplus\mathbf1$</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(-3,1,1,1)$, the vacuum's shape, traceless</td>
+</tr>
+<tr>
+<td>$\mathbf8_0$</td>
+<td>the traceless $3\times3$ corner, eight real components</td>
+</tr>
+<tr>
+<td>$\mathbf3\oplus\bar{\mathbf3}$</td>
+<td>the fourth row and column, six real, all eaten</td>
+</tr>
+<tr>
+<td>the two $\mathbf1_0$</td>
+<td>the trace of the corner and the $(4,4)$ entry</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>the electroweak doublet, four real, not part of $\Phi$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">The Breaking of the Primordial Force</a>. The six, named, and the masses they give.</li>
+<li><a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a>. The potential these sixteen components sit in.</li>
+<li><a href="the-scalars-two-colour-indices-and-the-count-sixteen.html">The Scalar's Two Indices</a>. The same count from the representation side.</li>
+<li><a href="the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html">The Primordial Coupling</a>. The $b_0$ that needs $N_s=16$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

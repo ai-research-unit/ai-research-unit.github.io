@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lagrangian and the Sixteen: The Kinetic Term and the Yukawa Coupling — Biquaternion Universe</title>
+  <meta name="description" content="The question. What do the sixteen Weyl fields contribute to the action, and what does the scalar couple to them through?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lagrangian-and-the-sixteen-the-kinetic-term-and-the-yukawa-coupling"><strong>The Lagrangian and the Sixteen: The Kinetic Term and the Yukawa Coupling</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> What do the sixteen Weyl fields contribute to the $\mathrm{SU}(4)$ action, and what does the scalar couple to them through?</p>
+<p><strong>The answer.</strong> Two pieces and two matrices.</p>
+<p>$$
+\boxed{\;\mathcal{L}_{\xi}=\sum_{f=1}^{16}\bar\xi_{f}\,i\gamma_{\imath}D_{\imath}\,\xi_{f},
+\qquad
+\mathcal{L}_{\mathrm{Yuk}}=y_{\alpha\beta}\,\bar\xi^{\alpha}\Phi\,\xi^{\beta}+\text{h.c.}\;}
+$$</p>
+<p><strong>One covariant derivative with fifteen matrices of each kind, and one Yukawa matrix on the copy index.</strong> The kinetic term is fixed by the representation and carries no free number; the Yukawa term is one $2\times2$ complex matrix and carries four real numbers.</p>
+<p><strong>What this article does.</strong> It writes both pieces, counts the states and the vertices, derives why the Yukawa operator needs the matrix index, extracts the mass matrix after the condensate, and computes the one ratio the sector predicts — the ratio that falsifies it.</p>
+<p><strong>What it does not do.</strong> It does not diagonalise the Yukawa matrix or run the masses; that is <a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">The Yukawa Sector</a>'s, and this article stops where that one begins. <strong>Nor does it repeat the masslessness argument</strong>, which is <a href="the-sixteen-above-m-c-massless-vector-like-and-what-that-costs.html">The Sixteen Above $M_C$</a>'s.</p>
+<h2 id="the-kinetic-term">The Kinetic Term</h2>
+<p><strong>Sixteen Weyl fields, two representations, one derivative.</strong></p>
+<p>$$
+D_{\imath}\xi_{i}=\partial_{\imath}\xi_{i}-ig_4A_{a,\imath}\bigl(t_{a}\bigr)_{i}{}^{j}\xi_{j},
+\qquad
+D_{\imath}\bar\xi^{i}=\partial_{\imath}\bar\xi^{i}+ig_4A_{a,\imath}\bar\xi^{j}\bigl(t_{a}\bigr)_{j}{}^{i},
+$$</p>
+<p>with $t_{a}$ the fifteen generators in whichever representation the field sits in, and the sign difference the statement that one carries the index up and the other down.</p>
+<p><strong>Why the coupling is the same $g_4$ and not a second one.</strong> A gauge symmetry has one coupling per simple factor, and $\mathrm{SU}(4)$ is one factor. <strong>The identity of the coupling across representations is what makes the gauge sector a gauge sector</strong>, and it is the sense in which the primordial force is one force.</p>
+<p><strong>The content and the state count.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>representation</th>
+<th>Weyl fields</th>
+<th>states</th>
+<th>the generator matrices</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbf4$</td>
+<td>$2$ per copy value</td>
+<td>$2\times2\times2=8$</td>
+<td>$t_{a}$, $4\times4$</td>
+</tr>
+<tr>
+<td>$\bar{\mathbf4}$</td>
+<td>$2$ per copy value</td>
+<td>$8$</td>
+<td>$-t_{a}^{T}$, $4\times4$</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td>$16$</td>
+<td>$\mathbf{32}$</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Thirty-two states, sixteen fields, and the pair is what makes a mass possible.</strong> A Dirac mass needs a left-handed and a right-handed field of the same charge, and the content supplies them in conjugate pairs — <strong>which is why the corpus's choice not to write a bare mass is a choice and not a prohibition.</strong> <a href="the-sixteen-above-m-c-massless-vector-like-and-what-that-costs.html">The Sixteen Above $M_C$</a> states what that choice costs.</p>
+<p><strong>The current the kinetic term produces.</strong></p>
+<p>$$
+j^{\xi}_{a,\imath}=\sum_{f=1}^{16}\bar\xi_{f}\gamma_{\imath}t_{a}\xi_{f},
+$$</p>
+<p><strong>a vector current, bilinear in the fields, and the only source of the gauge field above $M_C$ apart from the scalar's.</strong> Its ordinary divergence is not zero; its covariant divergence is. <strong>So no gauge charge exists in this phase</strong>, and the corpus's conserved charges are properties of the residual group below $M_C$.</p>
+<p><strong>The vertices, counted.</strong> Each of the fifteen generators gives one vertex per Weyl field it acts on, and the count is read off the representation:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>vertex</th>
+<th>count</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar\xi A\xi$ for $\xi\in\mathbf4$</td>
+<td>$15$</td>
+<td>one per generator, per field, summed over the eight</td>
+</tr>
+<tr>
+<td>$\bar\xi A\xi$ for $\xi\in\bar{\mathbf4}$</td>
+<td>$15$</td>
+<td>the conjugate matrices, the same count</td>
+</tr>
+<tr>
+<td>distinct Lorentz structures</td>
+<td>$1$</td>
+<td>$\gamma_{\imath}$, no $\sigma_{\imath\jmath}$ at dimension four</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>At dimension four there is no Pauli term and no dipole coupling</strong>, because $\bar\xi\sigma_{\imath\jmath}F_{\imath\jmath}\xi$ has dimension five. <strong>The kinetic term is therefore minimal and the gauge vertex is fixed by the representation alone</strong>, with no free coefficient to adjust.</p>
+<h2 id="the-yukawa-operator">The Yukawa Operator</h2>
+<p><strong>The operator is forced to be a trace, and the trace is what needs the matrix index.</strong></p>
+<p>$$
+\bar\xi^{\alpha}\,\Phi\,\xi^{\beta}\to\mathbf1
+\quad\Longleftrightarrow\quad
+\bar{\mathbf4}\otimes\bigl(\mathbf{15}\oplus\mathbf1\bigr)\otimes\mathbf4\supset\mathbf1 .
+$$</p>
+<p><strong>The product contains exactly one singlet, and it comes from the $\mathbf1$ in $\Phi$.</strong> The $\mathbf{15}$ part contributes nothing: $\bar{\mathbf4}\otimes\mathbf{15}\otimes\mathbf4$ has no invariant with one $\bar\xi$ and one $\xi$. <strong>So the operator is unique and the Yukawa matrix is $2\times2$, not a matrix per block.</strong></p>
+<p><strong>The quartet would have given nothing at all.</strong> $\bar{\mathbf4}\otimes\mathbf4\otimes\mathbf4$ has no singlet because $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$, and neither summand is $\bar{\mathbf4}$. <strong>A scalar in the fundamental has no Yukawa coupling to these sixteen fermions</strong>, so the operator's existence is an argument for the matrix index and not a convention about it.</p>
+<p><strong>The copy index is what the matrix $y$ acts on.</strong> $\alpha,\beta$ run over the two values, and the gauge sector is blind to them: no vertex in the kinetic term carries $\alpha$. <strong>So the Yukawa matrix is the only place where the two copies mix</strong>, and its diagonalisation is a change of basis that no gauge interaction can see.</p>
+<p><strong>Four real parameters, and their count.</strong> A $2\times2$ complex matrix has eight real entries, of which three phases are removed by rephasing the fermions and one by an overall phase that is unobservable; that leaves four. <strong>The corpus's Yukawa article states the same count from the other side</strong>, and the four are the sector's whole content.</p>
+<h2 id="the-mass-matrix-after-the-condensate">The Mass Matrix After the Condensate</h2>
+<p><strong>Substitute $\Phi=\Phi_{0}+\varphi$ with $\Phi_{0}=v_{C}D$ and the Yukawa term becomes a mass term plus a coupling.</strong></p>
+<p>$$
+\mathcal{L}_{\mathrm{Yuk}}\supset y_{\alpha\beta}\,\bar\xi^{\alpha}\bigl(v_{C}D\bigr)\xi^{\beta}+\text{h.c.}
+=y_{\alpha\beta}\,v_{C}\,\bar\xi^{\alpha}_{\,i}D_{ij}\xi^{\beta}_{\,j}+\text{h.c.}
+$$</p>
+<p><strong>The condensate enters as a diagonal matrix with entries $(-3,1,1,1)$</strong>, so a fermion on the lepton line gets $-3v_{C}$ times its Yukawa entry and a fermion on a colour line gets $+v_{C}$ times its own.</p>
+<p><strong>The ratio is three, and it is the sector's only prediction.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>the condensate entry</th>
+<th>the mass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lepton</td>
+<td>$-3$</td>
+<td>$3\lvert y\rvert v_{C}$</td>
+</tr>
+<tr>
+<td>colour, each of three</td>
+<td>$+1$</td>
+<td>$\lvert y\rvert v_{C}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So a lepton and a down-type quark with the same Yukawa entry have masses in the ratio $3:1$</strong>, which is the statement $m_{e}=3m_{d}$ once the two entries are identified.</p>
+<p><strong>The identification is the weak point and it is stated.</strong> $y$ is one matrix on the copy index, so the lepton and the down quark receive the <em>same</em> $y$ only if they sit in the same copy — and the copy index is precisely what becomes the right-handed weak index at the transition. <strong>The corpus makes that identification explicitly</strong>, and the whole content of the prediction is that it is made.</p>
+<p><strong>The number.</strong> With $m_{d}=4.67\ \mathrm{MeV}$ and $m_{e}=0.511\ \mathrm{MeV}$ at the scales where they are quoted,</p>
+<p>$$
+\frac{3m_{d}}{m_{e}}=\frac{3\times4.67}{0.511}=27.4 .
+$$</p>
+<p><strong>The model says $1$ and the world says $27.4$</strong>, so the sector is falsified by a factor of twenty-seven and the falsification is not an arithmetic slip. <strong>The article that owns this comparison says the same number and treats it as the model's sharpest failure</strong>; this article's contribution is to show that the factor comes from the condensate's entries and from nowhere else.</p>
+<h2 id="the-scale-the-yukawa-sector-sits-at">The Scale the Yukawa Sector Sits At</h2>
+<p><strong>Two numbers tie the pieces together, and both are computed from the matching.</strong></p>
+<p>$$
+v_{C}=\frac{\sqrt2\,M_X}{g_4}=\frac{1.4142\times2.33\times10^{5}}{0.8544}=3.85\times10^{5}\ \mathrm{GeV},
+\qquad
+M_X=\tfrac12 g_4^{2}v_{C}^{2} .
+$$</p>
+<p><strong>So the condensate is three hundred and eighty-five TeV</strong>, and a fermion with $y=1$ has a mass of order $v_{C}$. <strong>Every fermion in the model that is not protected is therefore at the transition scale</strong>, and the corpus's light fermions are light because their Yukawa entries are small and not because their scale is.</p>
+<p><strong>The check is the inverse.</strong> $\tfrac12(0.730)(3.853\times10^{5})^{2}=5.42\times10^{10}\ \mathrm{GeV}^{2}$, whose square root is $2.33\times10^{5}\ \mathrm{GeV}$ — the matching scale the coupling article uses. <strong>The two numbers are the same number twice</strong>, and that is what a matching relation is.</p>
+<p><strong>What the Yukawa sector does not fix.</strong> $v_{C}$ is fixed by the matching and not by the Yukawa; $y$'s four numbers are free; and the light fermion masses come from small entries and not from a hierarchy mechanism. <strong>The model has a hierarchy problem and this article does not solve it</strong>: it states that the ratio $m_e/m_d$ is a group prediction and that the smallness of all the masses is not.</p>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Weyl count</td>
+<td>$2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>the state count</td>
+<td>$2$ per Weyl</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>the gauge vertices per representation</td>
+<td>one per generator per field</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>Lorentz structures at dimension four</td>
+<td>$\gamma_{\imath}$ only</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>the Yukawa singlets</td>
+<td>$\bar{\mathbf4}\otimes(\mathbf{15}\oplus\mathbf1)\otimes\mathbf4$</td>
+<td>exactly $1$, from the $\mathbf1$</td>
+</tr>
+<tr>
+<td>the quartet's singlets</td>
+<td>$\bar{\mathbf4}\otimes\mathbf4\otimes\mathbf4$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the Yukawa parameters</td>
+<td>$8$ real minus $3$ rephasings minus $1$ overall</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>the mass ratio from the condensate</td>
+<td>$\lvert-3\rvert:\lvert+1\rvert$</td>
+<td>$3:1$</td>
+</tr>
+<tr>
+<td>the predicted ratio against the measured</td>
+<td>$3m_{d}/m_{e}$</td>
+<td>$27.4$ $\Rightarrow$ falsified</td>
+</tr>
+<tr>
+<td>$v_{C}$ from the matching</td>
+<td>$\sqrt2M_X/g_4$</td>
+<td>$3.85\times10^{5}\ \mathrm{GeV}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The kinetic term is minimal and fixed</strong>: sixteen Weyl fields, two representations, fifteen matrices of each kind, thirty-two states, one vertex per generator per field, and no free coefficient at dimension four.</p>
+<p><strong>The Yukawa operator exists only for the matrix index.</strong> $\bar{\mathbf4}\otimes(\mathbf{15}\oplus\mathbf1)\otimes\mathbf4$ has one singlet and $\bar{\mathbf4}\otimes\mathbf4\otimes\mathbf4$ has none, so the quartet reading would leave the sixteen with no mass operator anywhere in the theory.</p>
+<p><strong>The condensate's entries $(-3,1,1,1)$ give a $3:1$ mass ratio</strong>, and identifying the two copy entries gives $m_{e}=3m_{d}$, which is wrong by a factor $27.4$. <strong>That number is the sector's whole output and it is a refutation</strong>, not a fit.</p>
+<p><strong>And the scale is not a prediction.</strong> $v_{C}=385\ \mathrm{TeV}$ comes from the matching, the four Yukawa numbers are free, and the lightness of the observed fermions is an input the model reproduces by small entries and does not explain.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\xi_{f}$, $\bar\xi_{f}$</td>
+<td>the sixteen Weyl fields, $f=1,\dots,16$, of $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$</td>
+</tr>
+<tr>
+<td>$t_{a}$</td>
+<td>the fifteen generators in the $\mathbf4$; $-t_{a}^{T}$ in the $\bar{\mathbf4}$</td>
+</tr>
+<tr>
+<td>$y_{\alpha\beta}$</td>
+<td>the $2\times2$ Yukawa matrix on the copy index, four real parameters</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(-3,1,1,1)$, the condensate's shape</td>
+</tr>
+<tr>
+<td>$v_{C}$</td>
+<td>the condensate's magnitude, $3.85\times10^{5}\ \mathrm{GeV}$</td>
+</tr>
+<tr>
+<td>$M_X$</td>
+<td>$\tfrac12g_4^{2}v_{C}^{2}=2.33\times10^{5}\ \mathrm{GeV}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">The Yukawa Sector of the $\mathrm{SU}(4)$ Model</a>. The diagonalisation this article stops short of, and the falsification in full.</li>
+<li><a href="the-sixteen-above-m-c-massless-vector-like-and-what-that-costs.html">The Sixteen Above $M_C$</a>. Why the content is massless above the transition, and what the vector-like pairing costs.</li>
+<li><a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a>. Both pieces inside the full display.</li>
+<li><a href="the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html">The Primordial Coupling</a>. $g_4$ at $M_X$, from which $v_{C}$ is computed here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

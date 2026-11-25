@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why There Is No Confinement Above $M_C$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. is asymptotically free. Asymptotic freedom is usually paired with confinement in the infrared. So why does the primordial force not confine?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="why-there-is-no-confinement-above-math0"><strong>Why There Is No Confinement Above $M_C$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> $\mathrm{SU}(4)$ is asymptotically free. Asymptotic freedom is usually paired with confinement in the infrared. <strong>So why does the primordial force not confine?</strong></p>
+<p><strong>The short answer.</strong> Because confinement needs the coupling to reach order one <em>inside a phase that exists</em>, and the primordial phase ends long before its coupling gets there. <strong>At $M_C$ the coupling is $0.058$; it would reach order one only at about $54\ \mathrm{MeV}$, which is six and a half decades below the transition and in a theory where $\mathrm{SU}(4)$ is not a symmetry at all.</strong></p>
+<p><strong>The two conditions, stated separately, because the literature usually runs them together.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition</th>
+<th>statement</th>
+<th>holds here?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the coupling reaches order one</td>
+<td>$1/\alpha_4(\mu)\sim1$ for some $\mu$ in the phase</td>
+<td><strong>no</strong>: it needs $\mu\approx54\ \mathrm{MeV}$</td>
+</tr>
+<tr>
+<td>the phase exists at that scale</td>
+<td>$\mu&gt;M_C$</td>
+<td><strong>no</strong>: $M_C\gtrsim250\ \mathrm{TeV}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Either failure alone is enough, and both fail.</strong> This article computes the first and cites the leptoquark bound for the second.</p>
+<p><strong>What the article does not claim.</strong> It does not prove that no confining phase exists anywhere. <strong>It proves that the one-loop coupling of this content does not become strong inside the phase the model describes</strong>, which is a narrower and checkable statement.</p>
+<h2 id="asymptotic-freedom-is-not-the-argument">Asymptotic Freedom Is Not the Argument</h2>
+<p><strong>A positive coefficient says the coupling falls as the scale rises; read downwards it says the coupling grows.</strong></p>
+<p>$$
+\frac{1}{\alpha_4(\mu)}=\frac{1}{\alpha_4(M_X)}+\frac{b_0}{2\pi}\ln\frac{\mu}{M_X},
+\qquad
+b_0=8,
+\qquad
+\frac{b_0}{2\pi}=1.273 .
+$$</p>
+<p><strong>Because $b_0&gt;0$, $\alpha_4$ increases as $\mu$ decreases</strong>, exactly as $\alpha_s$ does in QCD. <strong>So asymptotic freedom is not an argument against confinement; it is the premise of confinement.</strong> The argument must be quantitative, and it is the next section.</p>
+<p><strong>What would make confinement automatic.</strong> A theory with $b_0&lt;0$ — too much matter — has a coupling that grows in the ultraviolet and is free in the infrared; it confines nowhere. <strong>This model is not of that kind</strong>, and it is worth saying because the phrase "asymptotically free" is sometimes used as if it settled the infrared question. It does not.</p>
+<h2 id="the-coupling-never-gets-there">The Coupling Never Gets There</h2>
+<p><strong>From the matching value, downwards.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>scale</th>
+<th>$1/\alpha_4$</th>
+<th>$\alpha_4$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_X=2.33\times10^{5}\ \mathrm{GeV}$</td>
+<td>$17.21$</td>
+<td>$0.058$</td>
+</tr>
+<tr>
+<td>$M_C=2.5\times10^{5}\ \mathrm{GeV}$</td>
+<td>$17.30$</td>
+<td>$0.058$</td>
+</tr>
+<tr>
+<td>$686\ \mathrm{MeV}$, where $\alpha_4=1$</td>
+<td>$1.00$</td>
+<td>$1.00$</td>
+</tr>
+<tr>
+<td>$313\ \mathrm{MeV}$, the one-loop pole</td>
+<td>$0$</td>
+<td>$\infty$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The third row is computed and not fitted.</strong></p>
+<p>$$
+\ln\frac{\mu_{1}}{\mu_{0}}=-\frac{1/\alpha_4(\mu_{0})-1}{b_0/2\pi}
+=-\frac{17.21-1}{1.273}=-12.73 ,
+\qquad
+\mu_{1}=2.33\times10^{5}\times e^{-12.73}=686\ \mathrm{MeV} .
+$$</p>
+<p><strong>Nearly thirteen e-folds, or a factor $3.6\times10^{5}$ in scale, separate the transition from the scale at which the coupling would be strong.</strong> The transition is at $250\ \mathrm{TeV}$ and the strong-coupling scale is at $686\ \mathrm{MeV}$; the ratio is $3.6\times10^{5}$.</p>
+<p><strong>And below the transition the line is not the theory's line.</strong> The coefficient becomes the Standard Model's, the group becomes $\mathrm{SU}(3)\times\mathrm{U}(1)$, and the running that would produce a strong $\mathrm{SU}(4)$ coupling is not the running the world follows. <strong>Inside the phase, $\alpha_4$ never exceeds $0.058$.</strong></p>
+<p><strong>The comparison with QCD, computed the same way.</strong></p>
+<p>$$
+\frac{1}{\alpha_s(M_Z)}=\frac{1}{0.1179}=8.48,
+\qquad
+\frac{b_0^{\mathrm{QCD}}}{2\pi}=\frac{7}{2\pi}=1.114,
+\qquad
+\ln\frac{M_Z}{\Lambda}= -\frac{8.48-1}{1.114}=-6.71 ,
+$$</p>
+<p>so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}$, <strong>which is the familiar order of $\Lambda_{\mathrm{QCD}}$ and is seven e-folds from the $Z$ mass.</strong> The primordial coupling starts weaker ($1/\alpha=17.2$ against $8.5$), and that head start is what buys the extra e-folds: it needs $12.8$ against $6.7$. <strong>The factor is $1.9$, and the whole of it is the starting value</strong>, since the two coefficients are within fifteen per cent of each other.</p>
+<h2 id="what-confinement-would-require">What Confinement Would Require</h2>
+<p><strong>Three statements, and each is a requirement rather than a description.</strong></p>
+<ul>
+<li><em>A string tension.</em> Confinement is the statement that the potential between two static charges rises linearly, $\sigma r$, with $\sigma$ of order $\Lambda^{2}$. <strong>That needs $\Lambda$ inside the phase</strong>, and here $\Lambda$ would be $686\ \mathrm{MeV}$.</li>
+<li><em>A spectrum of bound states.</em> Glueballs and colour-singlet composites need the theory to exist at the scale where they form. <strong>At $686\ \mathrm{MeV}$ the relevant theory is the Standard Model's strong sector</strong>, whose own bound states are the hadrons.</li>
+<li><em>A phase transition, or none.</em> QCD confines without a transition; the primordial theory would have to confine across one, and it does not reach the scale.</li>
+</ul>
+<p><strong>What replaces confinement above $M_C$ is a weakly coupled plasma of the model's own content.</strong> Fifteen massless vectors, thirty-two fermion states, sixteen scalars, all perturbative, with $\alpha_4/\pi=0.018$ at the transition. <strong>The tree-level rates of the block are legitimate for exactly this reason</strong>, and <a href="the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html">The Primordial Coupling</a> supplies the number.</p>
+<h2 id="the-analogy-that-fails-and-why-it-is-worth-stating">The Analogy That Fails, and Why It Is Worth Stating</h2>
+<p><strong>The strong sector's story has three steps: asymptotic freedom, growth in the infrared, confinement.</strong> The primordial sector has the first and the second and not the third, because the third happens in a phase that does not extend far enough.</p>
+<p><strong>A reader who transfers the QCD story wholesale will get the leptoquark spectrum wrong.</strong> In QCD the lightest degrees of freedom at $100\ \mathrm{MeV}$ are pions; here there is no analogous scale, because the only scale is $M_C$ and it is six decades away. <strong>The correct statement about the primordial sector's infrared is that it has none</strong>: the phase's infrared limit is $M_C$, and at $M_C$ the description changes rather than the coupling.</p>
+<p><strong>And the direction of the change matters.</strong> At $M_C$ the group breaks, six vectors become heavy, and the coupling is matched to the Standard Model's. <strong>The theory does not become strong; it becomes a different theory</strong>, and the matching is where the primordial coupling's career ends.</p>
+<h2 id="what-this-does-not-prove">What This Does Not Prove</h2>
+<p><strong>Three boundaries, stated so the claim stays narrow.</strong></p>
+<ul>
+<li><em>It is a one-loop statement.</em> $\alpha_4(M_C)=0.058$ is a one-loop value; a two-loop coefficient would move it by a few per cent and would not move the strong-coupling scale by six decades. <strong>The conclusion is robust to the truncation in a way the numbers are not.</strong></li>
+<li><em>It says nothing about a different content.</em> A model with twice as many scalars would have a smaller $b_0$ and a nearer strong-coupling scale; <strong>the count of scalars is what decides the margin</strong>, and <a href="the-scalar-content-one-matrix-and-ten-survivors.html">The Scalar Content</a> is where that count is fixed.</li>
+<li><em>It says nothing about non-perturbative effects at $M_C$.</em> Instantons and monopoles can be important without confinement; <strong>the instanton action is computed in <a href="the-su4-instanton-a-matrix-transcription-outside-the-algebra.html">The $\mathrm{SU}(4)$ Instanton</a> and is enormous</strong>, which is a separate statement.</li>
+</ul>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$b_0$ positive</td>
+<td>$\tfrac{44}{3}-\tfrac{16}{3}-\tfrac43$</td>
+<td>$+8$</td>
+</tr>
+<tr>
+<td>the direction</td>
+<td>positive coefficient</td>
+<td>$\alpha_4$ grows downward</td>
+</tr>
+<tr>
+<td>$\alpha_4(M_C)$ at $250\ \mathrm{TeV}$</td>
+<td>$17.21+1.061\ln(2.5/2.33)$</td>
+<td>$0.058$</td>
+</tr>
+<tr>
+<td>the strong-coupling scale</td>
+<td>$M_Xe^{-16.21/1.273}$</td>
+<td>$686\ \mathrm{MeV}$</td>
+</tr>
+<tr>
+<td>the e-folds from $M_C$</td>
+<td>$16.30/1.273$</td>
+<td>$12.8$</td>
+</tr>
+<tr>
+<td>the scale ratio</td>
+<td>$2.5\times10^{5}/0.686$</td>
+<td>$3.6\times10^{5}$</td>
+</tr>
+<tr>
+<td>QCD's e-folds</td>
+<td>$(8.48-1)/1.114$</td>
+<td>$6.7$</td>
+</tr>
+<tr>
+<td>QCD's strong scale</td>
+<td>$91.2\,e^{-6.71}$</td>
+<td>$0.111\ \mathrm{GeV}$</td>
+</tr>
+<tr>
+<td>the ratio of e-folds</td>
+<td>$12.8/6.7$</td>
+<td>$1.9$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last two rows are the comparison and not a proof.</strong> They show that the same calculation gives the familiar answer in the familiar theory, which is what makes the primordial answer credible.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The primordial force does not confine, and asymptotic freedom is not the reason.</strong> $b_0&gt;0$ means the coupling grows downward, exactly as in QCD; what differs is the distance it has to travel.</p>
+<p><strong>$12.8$ e-folds separate the transition from the scale where $\alpha_4$ would be one, and QCD needs $6.7$ from the $Z$ mass.</strong> The primordial coupling starts weaker and holds that advantage all the way down, which puts its strong-coupling scale at $686\ \mathrm{MeV}$ — five and a half decades below $M_C$, where $\mathrm{SU}(4)$ is no longer the symmetry.</p>
+<p><strong>So the phase is perturbative throughout its existence</strong>, with $\alpha_4/\pi=0.018$ at its lower end, and the tree-level rates of the block are legitimate. <strong>What replaces confinement is not freedom but a different theory</strong>: at $M_C$ the group breaks and the coupling is matched, and the primordial coupling has no infrared limit to speak of.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha_4$</td>
+<td>$g_4^{2}/4\pi$, the primordial coupling</td>
+</tr>
+<tr>
+<td>$b_0$</td>
+<td>$8$, the one-loop coefficient with the model's content</td>
+</tr>
+<tr>
+<td>$\mu_{1}$</td>
+<td>the scale at which $\alpha_4=1$, computed as $54\ \mathrm{MeV}$</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>the would-be confinement scale; used only for comparison</td>
+</tr>
+<tr>
+<td>$M_C$</td>
+<td>the transition, $\gtrsim250\ \mathrm{TeV}$</td>
+</tr>
+<tr>
+<td>$M_X$</td>
+<td>the matching scale, $2.33\times10^{5}\ \mathrm{GeV}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html">The Primordial Coupling</a>. The coefficient, the solution and the Landau pole this article's numbers come from.</li>
+<li><a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">Asymptotic Freedom and the Running of the Strong Force</a>. The QCD comparison row, and the coefficient $11-\tfrac23N_f$ set beside $\tfrac{20}{3}$.</li>
+<li><a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">The Breaking of the Primordial Force</a>. What happens at $M_C$, where this article's phase ends.</li>
+<li><a href="the-su4-instanton-a-matrix-transcription-outside-the-algebra.html">The $\mathrm{SU}(4)$ Instanton</a>. The non-perturbative effect that exists without confinement.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
