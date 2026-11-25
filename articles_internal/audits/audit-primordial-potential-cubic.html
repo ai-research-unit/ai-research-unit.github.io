@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The Cubic Normalisation in *The Primordial Potential*, and Four Claims of the Referee — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Items 1 and 2 executed on 2026-11-25; items 3 and 4 declined as optional. The article is…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-cubic-normalisation-in-the-primordial-potential-and-four-claims-of-the-referee"><strong>Audit: The Cubic Normalisation in <em>The Primordial Potential</em>, and Four Claims of the Referee</strong></h1>
+<p><em>Status of this file.</em> <strong>Items 1 and 2 executed on 2026-11-25; items 3 and 4 declined as optional.</strong> The article is <code>articles_physics/the-primordial-potential-one-symmetric-minimum-above-m-c.md</code>. One substantive defect is confirmed by computation; one gap is confirmed by counter-example; four further referee items are judged to be optional wording.</p>
+<p><em>What the file is for.</em> It separates the referee's claims into three classes — <strong>confirmed</strong>, <strong>confirmed but smaller than stated</strong>, and <strong>not a defect</strong> — so that the patch list at the end is a decision and not a re-reading.</p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The verdict.</strong> The referee is right about the cubic and right about the fifth quartic, and <strong>too hard on the other four items</strong>. One sentence of the article is arithmetically inconsistent with the thresholds printed three lines below it. Everything else the referee lists is a clarification.</p>
+<p><strong>The article is correct where it matters.</strong> The potential, the symmetric minimum, the mass spectrum $\mu_\Phi^2$ on fifteen and $\mu_\Phi^2+4\mu_2^2$ on the trace, the traceless cone, the range $[\tfrac14,\tfrac{7}{12}]$ with the maximum at $D$, and the branch structure $\lambda_1&lt;0\Rightarrow D$ are all verified and all right. This audit does not re-derive them; it re-derives the two things that are wrong.</p>
+<h2 id="confirmed-the-cubic-carries-a-factor-two-it-does-not-use">Confirmed: The Cubic Carries a Factor Two It Does Not Use</h2>
+<p><strong>The sentence, quoted exactly.</strong> Line 145:</p>
+<blockquote>
+<p>$\operatorname{tr}Ξ^{3}$ is real for Hermitian $Ξ$, so $c_{3}(\operatorname{tr}Ξ^{3}+\text{h.c.})=2c_{3}\operatorname{tr}Ξ^{3}$</p>
+</blockquote>
+<p><strong>The thresholds, quoted exactly.</strong> Three lines later: $c_{3}\sqrt X\gtrsim0.577\,\lambda_{1}$ against the even split, and $c_{3}\sqrt X\gtrsim0.31\,\lambda_{1}$ against the identity, the second being "$\tfrac13$ divided by the cubic's advantage $0.577+0.5$".</p>
+<p><strong>The two are not the same normalisation, and the numbers are computed in the second.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>value</th>
+<th>source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{tr}D^{3}$ at $r^{2}=X/12$</td>
+<td>$-24r^{3}=-X^{3/2}/\sqrt3=-0.5774\,X^{3/2}$</td>
+<td>computed, exact</td>
+</tr>
+<tr>
+<td>cubic as $c_{3}\operatorname{tr}Ξ^{3}$ on $D$</td>
+<td>$-0.5774\,c_{3}X^{3/2}$</td>
+<td>same</td>
+</tr>
+<tr>
+<td>cubic as $2c_{3}\operatorname{tr}Ξ^{3}$ on $D$</td>
+<td>$-1.1547\,c_{3}X^{3/2}$</td>
+<td>double</td>
+</tr>
+<tr>
+<td>quartic gap, $D$ against the even split</td>
+<td>$\tfrac13\lambda_{1}X^{2}$</td>
+<td>$(\tfrac{7}{12}-\tfrac14)\lambda_1$</td>
+</tr>
+<tr>
+<td>threshold, single $c_{3}$</td>
+<td>$\tfrac13/0.5774=0.5774$</td>
+<td><strong>matches the article</strong></td>
+</tr>
+<tr>
+<td>threshold, $2c_{3}$</td>
+<td>$\tfrac13/1.1547=0.2887$</td>
+<td>would need $0.289$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\Xi^{3}$ on the identity, $X=4c^{2}$</td>
+<td>$X^{3/2}/2=0.5\,X^{3/2}$</td>
+<td>computed</td>
+</tr>
+<tr>
+<td>advantage over the identity, single $c_{3}$</td>
+<td>$0.5774+0.5=1.0774$</td>
+<td><strong>matches "$0.577+0.5$"</strong></td>
+</tr>
+<tr>
+<td>threshold against the identity, single $c_{3}$</td>
+<td>$\tfrac13/1.0774=0.3095$</td>
+<td><strong>matches $0.31$</strong></td>
+</tr>
+<tr>
+<td>threshold against the identity, $2c_{3}$</td>
+<td>$\tfrac13/(1.1547+1)=0.1547$</td>
+<td>would need $0.155$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the article's numbers are a single-$c_3$ computation throughout</strong>, and the phrase "$0.577+0.5$" settles it: under $2c_3$ the advantage would be $1.1547+1$, which no one writes as $0.577+0.5$.</p>
+<p><strong>The defect is the $+$h.c. clause, and it is redundant twice over.</strong> $\operatorname{tr}Ξ^{3}$ is real for Hermitian $Ξ$, since $\bigl(\operatorname{tr}M^{3}\bigr)^{*}=\operatorname{tr}(M^{\dagger})^{3}=\operatorname{tr}M^{3}$. <strong>A real term needs no Hermitian conjugate</strong>, so writing $c_3(\operatorname{tr}\Xi^3+\text{h.c.})$ adds a conjugate equal to the term it conjugates, and the $=2c_3$ that follows doubles a coefficient the thresholds define singly.</p>
+<p><strong>The minimal repair deletes the clause; it does not halve the thresholds.</strong> Keeping $2c_3$ and printing $0.289$ and $0.155$ costs three further edits — both thresholds, the Checks row, and the "$0.577+0.5$" phrase — and makes transparent arithmetic opaque. <strong>The single-$c_3$ reading is the one the article already reasons in.</strong></p>
+<p><strong>Scope of the defect: one sentence.</strong> The Checks row "the cubic's value on the declared direction | $-24r^{3}$ with $r^{2}=X/12$ | $-\tfrac{1}{\sqrt3}X^{3/2}$" is $\operatorname{tr}\Xi^{3}$ and is already correct. The notation row for $c_{3}$ is silent on normalisation and survives the repair unchanged.</p>
+<h2 id="confirmed-the-fifth-quartic-is-excluded-from-the-cone-without-being-named-there">Confirmed: The Fifth Quartic Is Excluded From the Cone Without Being Named There</h2>
+<p><strong>What the referee says.</strong> The potential section allows $\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi$ and sets it to zero; the cone section derives with $\lambda_1\ldots\lambda_4$ and never repeats the declaration. <strong>This is right, and it is more than presentational.</strong></p>
+<p><strong>A counter-example, so the point does not rest on a reading.</strong> Take a point satisfying all four stated rows and add a fifth quartic with $\lambda_5&lt;0$:</p>
+<p>$$
+\lambda_{1}=0,\quad \lambda_{2}=0,\quad \lambda_{3}=0,\quad \lambda_{4}=0.1,\quad \lambda_{5}=-1 .
+$$</p>
+<p>The four rows hold: $\lambda_1+\lambda_2=0$, $\lambda_1+4\lambda_2=0$, $\tfrac14\lambda_1+\lambda_2+4\lambda_3+16\lambda_4=1.6\ge0$, $\lambda_1+\lambda_2+\lambda_3+\lambda_4=0.1\ge0$. Along the ray $Ξ=t\operatorname{diag}(1,1,1,-1)$,</p>
+<p>$$
+x=4t^{2},\quad \operatorname{tr}Ξ^{4}=4t^{4},\quad y=2t,\quad y^{2}x=16t^{4},\quad y^{4}=16t^{4},\quad y\operatorname{tr}Ξ^{3}=4t^{4},
+$$</p>
+<p>$$
+V_{4}=\bigl(0+0+0+1.6-4\bigr)t^{4}=-2.4\,t^{4}&lt;0 .
+$$</p>
+<p><strong>So the four printed conditions do not bound the potential the article says is allowed.</strong> They bound the potential with $\lambda_5=0$, which is the potential the article actually uses, and for that potential the cone is correct. <strong>The gap is that the cone section does not say which potential it is a cone for.</strong></p>
+<p><strong>The repair is one sentence.</strong> The counter-example stays out of the article; one clause suffices: the cone is the cone of $V$ with $\lambda_5=0$, and the fifth quartic is a declaration and not a symmetry.</p>
+<h2 id="judged-optional-the-four-wording-items">Judged Optional: The Four Wording Items</h2>
+<p><strong>The "fifteen generators" paragraph is not garbled.</strong> The referee calls it "conceptually muddled" and offers a replacement. <strong>The original is correct</strong>: a generator is traceless because $\mathfrak{su}(4)$ removes the trace, and $Ξ$ is a field and not an element of the algebra. <strong>The referee's replacement adds the representation content $\mathbf{4}\otimes\bar{\mathbf4}=\mathbf{15}\oplus\mathbf1$</strong>, which the article states in the Introduction by way of <em>The Scalar's Two Indices</em>. <strong>A clause naming it in §<em>The Potential</em> would help a reader who opens the article there</strong>; it corrects no error. <strong>Addition, low priority.</strong></p>
+<p><strong>"Two that bind" is asserted, not derived.</strong> Correct, and the referee's diagnosis is right. The argument is one line: at fixed $x$ and $y$ the quartic is linear in $\operatorname{tr}Ξ^{4}/x^{2}$ and in $y^{2}/x$, and those two attain their extremes only at the identity and at a single entry, so no interior direction beats both corners. <strong>Worth adding</strong>: it is the only unproved step in a section whose whole claim is that neither row can be dropped. <strong>Addition, medium priority.</strong></p>
+<p><strong>"The degeneracy is not an accident of the group, and it is not what it was" is cryptic but not wrong.</strong> The next sentence names $\mathrm{O}(16)$ at $\mu_2^2=0$ and $\mathrm{U}(4)$ otherwise, so the antecedent is one line away. <strong>Optional tightening</strong>: better prose, same physics.</p>
+<p><strong>The thermal barrier, the $\mathrm{U}(3)$ little group, and the $\mathrm{U}(4)$ justification in the Checks table are acceptable as they stand.</strong> On the thermal point the barrier is the $T\,m^{3}$ term of the finite-temperature potential, and that term is proportional to the cubic coupling in the high-temperature expansion, so "a barrier or none depending on the cubic" is a correct compression rather than a slip. On $\mathrm{U}(3)$ the referee agrees the article is correct, since $S(\mathrm{U}(1)\times\mathrm{U}(3))\cong\mathrm{U}(3)$ at dimension nine. <strong>No action.</strong></p>
+<h2 id="what-the-referee-got-right-that-was-already-right">What the Referee Got Right That Was Already Right</h2>
+<p><strong>Right, and already the article's claim, so the credit is double-counted:</strong> the cone's two ends, the range $[\tfrac14,\tfrac{7}{12}]$, the branch structure of $\lambda_1$, the trace-sign analysis, and the "distinctions" section. <strong>The referee verifies these and calls them strengths; they are strengths, and no edit follows from the verification.</strong></p>
+<p><strong>Right, and worth keeping visible after the repair:</strong> that $\operatorname{tr}D^{3}&lt;0$ lowers $D$ and that the even split's cubic vanishes identically. <strong>That asymmetry is why the thresholds exist</strong>, and it survives item 1 intact.</p>
+<p><strong>The referee's own arithmetic slips once.</strong> In the $2c_3$ paragraph it writes the advantage over the identity as $c_3X^{3/2}+0.577c_3X^{3/2}$ and then uses $2.155$, mixing the two normalisations in the way the article does. The table above is the clean version.</p>
+<h2 id="strategy">Strategy</h2>
+<p><strong>One patch is required, one is strongly advised, two are optional.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>site</th>
+<th>change</th>
+<th>priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>§<em>The Declared Vacuum</em>, line 145</td>
+<td>delete "$+\text{h.c.}$" and "$=2c_3\operatorname{tr}Ξ^3$"; write the term as $c_3\operatorname{tr}Ξ^3$ with $c_3$ real, noting $\operatorname{tr}\Xi^3$ is real for Hermitian $\Xi$ and needs no conjugate</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>§<em>The Trace Channel, in the Cone</em>, opening</td>
+<td>one sentence: this is the cone of $V$ with $\lambda_5=0$, the fifth quartic being a declaration that vanishes on the traceless hyperplane</td>
+<td><strong>strongly advised</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>§<em>The Trace Channel, in the Cone</em>, after the table</td>
+<td>one sentence deriving "two that bind" from linearity in $\operatorname{tr}\Xi^4/x^2$ and $y^2/x$</td>
+<td>optional, medium</td>
+</tr>
+<tr>
+<td>4</td>
+<td>§<em>The Potential</em>, the "fifteen generators" paragraph</td>
+<td>one clause naming $\mathbf{4}\otimes\bar{\mathbf4}=\mathbf{15}\oplus\mathbf1$</td>
+<td>optional, low</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Item 1 changes no number in the article</strong>, which is the test that it is the right repair: the thresholds, the Checks row and the "$0.577+0.5$" phrase already say what the repaired sentence will say.</p>
+<p><strong>Item 2 changes no number either</strong>, and it closes a gap the counter-example shows is real rather than pedantic. <strong>The Checks table gains one row</strong> stating the cone's scope: the trace-channel conditions are for $\lambda_5=0$.</p>
+<p><strong>Nothing else in the article moves.</strong> The referee's proposed reorganisation — demoting the trace channel to an appendix, shortening the cubic — is declined: the trace channel is where the identity row bites, and the cubic is the only place the branch asymmetry is visible.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The Primordial Coupling — One Scalar Factor of Two, and What Moves With It — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A review, not an edit. No article was modified and no menu entry was touched. Every number below was recomputed from the article&#x27;s…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-primordial-coupling-one-scalar-factor-of-two-and-what-moves-with-it"><strong>Audit: The Primordial Coupling — One Scalar Factor of Two, and What Moves With It</strong></h1>
+<p><em>Status of this file.</em> <strong>A review, not an edit.</strong> No article was modified and no menu entry was touched. Every number below was recomputed from the article's own inputs, $M_X=3.73\times10^{-5}\ \mathrm{J}=2.3281\times10^{5}\ \mathrm{GeV}$ and $g_4^{2}(M_X)=0.730$, and a maximum of a hundred elements was recomputed per claim.</p>
+<p><em>What the file is for.</em> It records what two independent reviews of <code>articles_physics/the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.md</code> got right, what they missed, and what this audit corrects in its own earlier reading. <strong>The article's headline coefficient is wrong by a factor of two in one term</strong>, and the error is invisible to the comparison the article uses to check itself.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>One finding is substantive: the scalar term counts thirty-two real components where the field has sixteen.</strong> Everything else in this file is either a consequence of that or presentational.</li>
+<li><strong>The article's own table states the contradiction.</strong> The column that says "sixteen real" sits beside arithmetic that charges the term for thirty-two.</li>
+<li><strong>The conclusion of the article survives, every qualitative claim survives, and every number downstream moves.</strong> $b_0$ becomes $26/3$, the pole becomes $885\ \mathrm{MeV}$, and a second article must be patched with it.</li>
+<li><strong>Two reviews missed the finding, and each missed it differently.</strong> One praised the scalar table as the article's best contribution; the other rewrote the QCD sentence while keeping the coefficient that the sentence is supposed to produce.</li>
+<li><strong>Nothing here is applied without the author's decision.</strong> §11 lists the five decisions.</li>
+</ol>
+<h2 id="1-the-verdict">1. The Verdict</h2>
+<p><strong>The article is sound in structure and wrong in one coefficient.</strong> Its ledger, its conventions block, its pole discipline and its separation of import from computation are all correct and worth keeping as they stand. Its scalar term is charged for a complex adjoint where the field is one real adjoint, so $b_0=8$ should be $b_0=26/3=8.667$.</p>
+<p><strong>The error is a factor of two in the third term and it propagates to five places in this article and to three other files.</strong> The direction of every qualitative claim is unchanged: $b_0&gt;0$, asymptotic freedom, weak coupling at the transition, no confinement, pole as artefact. The magnitudes are not.</p>
+<p><strong>Why it survived two reviews.</strong> The article checks itself against QCD, and QCD has no scalar. Every cross-check in the piece — $b_0$ against $11-\tfrac23N_f$, the four thirds, the eight thirds — is a fermion check. <strong>A term that only a scalar can exercise was never exercised.</strong></p>
+<h2 id="2-the-finding-the-scalar-term-counts-thirty-two-where-the-field-has-sixteen">2. The Finding: the Scalar Term Counts Thirty-Two Where the Field Has Sixteen</h2>
+<p><strong>The formula the article uses is the complex-scalar form, and the field it feeds is real.</strong> Line 68 and line 71 of the article read</p>
+<p>$$
+b_0=\frac{11}{3}C_{A}-\frac{4}{3}T_{R}N_{f}-\frac{1}{3}T_{S}N_{s},
+$$</p>
+<p>with "$T_{S}N_{s}$ the total Dynkin index of the scalars counted as complex fields" and $N_{s}=1$ adjoint. <strong>One complex adjoint is two real adjoints.</strong> $\Xi$ is one.</p>
+<h3 id="21-the-three-warrants">2.1 The three warrants</h3>
+<p><strong>Warrant one, the article's own table.</strong> The row reads "the scalar | $T_{S}=4$ | $\mathbf{15}\oplus\mathbf1$, sixteen real | $-\tfrac43=-1.333$". <strong>The two middle columns disagree with each other.</strong> Sixteen real components is $\tfrac16\times4=\tfrac23$; thirty-two is $\tfrac13\times4=\tfrac43$. The table prints the count of one and the term of the other.</p>
+<p><strong>Warrant two, the corpus's own formula article.</strong> <code>the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.md</code>, §4.3, gives</p>
+<p>$$
+b=\tfrac{11}{3}C_2(G)-\tfrac{4}{3}T_F n_f-\tfrac{1}{6}T_S n_s,
+$$</p>
+<p>"with $n_f$ and $n_s$ the number of Dirac fermions and <strong>real</strong> scalars in the representation". <strong>The corpus already owns the real-scalar convention, and the article under review uses the other one without converting.</strong></p>
+<p><strong>Warrant three, the benchmarks, and the reason the article's own checks could not catch this.</strong> The two conventions are the same convention whenever the multiplet has an even number of real components, because then $n_s$ real is $\tfrac{n_s}{2}$ complex and the arithmetic coincides. <strong>Every standard benchmark is of that kind</strong>, which is exactly why the error survived three cross-checks:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>theory</th>
+<th>content</th>
+<th>$\tfrac16$ with $n_s$ real</th>
+<th>$\tfrac13$ with $N_s$ complex</th>
+<th>separates?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal N=2$ SYM, $\mathrm{SU}(4)$</td>
+<td>vector, $1$ Dirac adjoint, $2$ real adjoint</td>
+<td>$8$</td>
+<td>$8$, at $N_s=1$</td>
+<td>no: $2$ real $=1$ complex</td>
+</tr>
+<tr>
+<td>$\mathcal N=4$ SYM, $\mathrm{SU}(4)$</td>
+<td>vector, $2$ Dirac adjoint, $6$ real adjoint</td>
+<td>$0$</td>
+<td>$0$, at $N_s=3$</td>
+<td>no: $6$ real $=3$ complex</td>
+</tr>
+<tr>
+<td>the SM's $\mathrm{SU}(2)$</td>
+<td>$6$ Dirac doublets, one doublet</td>
+<td>$\tfrac{19}{6}$</td>
+<td>$\tfrac{19}{6}$</td>
+<td>no: $2$ real $=1$ complex</td>
+</tr>
+<tr>
+<td>one real adjoint and nothing else, $\mathrm{SU}(4)$</td>
+<td>vector $+$ one real adjoint</td>
+<td>$14$</td>
+<td>$13\tfrac13$</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>the model</td>
+<td>vector, $8$ Dirac fundamental, one real adjoint</td>
+<td>$\tfrac{26}{3}$</td>
+<td>$8$</td>
+<td><strong>yes</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The separating case is the model's own situation, not a textbook one.</strong> A Hermitian matrix has sixteen real components and nothing pairs them, so its screening is that of sixteen real scalars and not of a complex field. <strong>The last row of the table is the article's content read both ways</strong>, and it differs by $\tfrac23$ — the factor of two in one term, which is the whole finding.</p>
+<p><strong>The physical warrant is one sentence.</strong> Screening is linear in the number of real components; a complex field is two real ones; charging sixteen real components at the complex rate charges thirty-two.</p>
+<p><strong>The signs are right in the article, and only the factor is wrong.</strong> Antiscreening from the adjoint, screening from fermions and scalars: the article states that pattern correctly at line 71. What it gets wrong is the size of the third term, which is the one term the pattern cannot check.</p>
+<h3 id="22-the-repair-in-two-lines">2.2 The repair, in two lines</h3>
+<p>Either keep $\tfrac13 T_SN_s$ and write $N_s=\tfrac12$ for one real adjoint, which is correct and unreadable, or adopt the corpus's $\tfrac16$ form:</p>
+<p>$$
+b_0=\frac{11}{3}C_{A}-\frac{4}{3}T_{R}N_{f}-\frac{1}{6}T_{S}n_{s},\qquad n_{s}=1 \text{ real adjoint},
+$$</p>
+<p>$$
+b_0=\frac{44}{3}-\frac{16}{3}-\frac{2}{3}=\frac{26}{3}=8.667 .
+$$</p>
+<p><strong>The second form is the one to take</strong>, because it is the form the heavy-sector article already states, and because it makes the "real components" column of the scalar table the natural one rather than a warning label.</p>
+<h3 id="23-the-three-row-table-shifts-by-one-row">2.3 The three-row table shifts by one row</h3>
+<p><strong>The article's three rows are all correct and all misassigned.</strong> Recomputed with $\tfrac16$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>scalar sector</th>
+<th>real components</th>
+<th>$n_s$</th>
+<th>scalar term</th>
+<th>$b_0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the Hermitian $\mathbf{15}\oplus\mathbf1$, the model's</td>
+<td>$16$</td>
+<td>$1$</td>
+<td>$-\tfrac23$</td>
+<td>$\tfrac{26}{3}=8.667$, <strong>the model's</strong></td>
+</tr>
+<tr>
+<td>a complex $\mathbf{15}\oplus\mathbf1$</td>
+<td>$32$</td>
+<td>$2$</td>
+<td>$-\tfrac43$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>a complex matrix with a two-valued label</td>
+<td>$64$</td>
+<td>$4$</td>
+<td>$-\tfrac83$</td>
+<td>$\tfrac{20}{3}=6.667$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The article's first two rows are the second and third rows of the correct table.</strong> Its "$8$" is what a complex multiplet gives; its "$\tfrac{20}{3}$" is what $64$ real components give; its "$4$" is what $128$ real components give, a field the algebra does not have. The table is not fabricated — it is shifted by exactly one doubling, which is the same statement as the factor of two in §2.</p>
+<p><strong>And the "each doubling costs $\tfrac43$" sentence is wrong in the same way.</strong> The steps are $-\tfrac23\to-\tfrac43\to-\tfrac83$, so the first doubling costs $\tfrac23$ and the second costs $\tfrac43$. <strong>Each doubling doubles the term</strong>; only the second step happens to equal the number the article quotes for both.</p>
+<h2 id="3-what-moves">3. What Moves</h2>
+<p><strong>One coefficient, eleven numbers.</strong> All recomputed, all from the same imported $\alpha_4(M_X)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>article</th>
+<th>corrected</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar term</td>
+<td>$-\tfrac43=-1.333$</td>
+<td>$-\tfrac23=-0.667$</td>
+<td>the finding</td>
+</tr>
+<tr>
+<td>$b_0$</td>
+<td>$8$</td>
+<td>$\tfrac{26}{3}=8.667$</td>
+<td></td>
+</tr>
+<tr>
+<td>$b_0/2\pi$</td>
+<td>$1.273$</td>
+<td>$1.379$</td>
+<td></td>
+</tr>
+<tr>
+<td>$\alpha_4(M_X)$</td>
+<td>$0.0581$</td>
+<td>$0.0581$</td>
+<td>unchanged: it is the import</td>
+</tr>
+<tr>
+<td>$1/\alpha_4(M_X)$</td>
+<td>$17.21$</td>
+<td>$17.21$</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>a decade above: $1/\alpha$, $\alpha$, $g^{2}$</td>
+<td>$20.15$, $0.0496$, $0.624$</td>
+<td>$20.39$, $0.0490$, $0.616$</td>
+<td></td>
+</tr>
+<tr>
+<td>$1/\alpha_4(M_P)$</td>
+<td>$57.44$</td>
+<td>$60.79$</td>
+<td></td>
+</tr>
+<tr>
+<td>$\alpha_4(M_P)$</td>
+<td>$0.0174$</td>
+<td>$0.0165$</td>
+<td></td>
+</tr>
+<tr>
+<td>$g_4^{2}(M_P)$</td>
+<td>$0.219$</td>
+<td>$0.207$</td>
+<td></td>
+</tr>
+<tr>
+<td>$\alpha_4(M_P)/\alpha_4(M_X)$</td>
+<td>$0.300$</td>
+<td>$0.283$</td>
+<td>"under a third" survives</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{pole}}$</td>
+<td>$313\ \mathrm{MeV}$</td>
+<td>$885\ \mathrm{MeV}$</td>
+<td></td>
+</tr>
+<tr>
+<td>$\alpha_4$ at $1\ \mathrm{TeV}$</td>
+<td>$0.097$</td>
+<td>$0.103$</td>
+<td>the forbidden extrapolation</td>
+</tr>
+<tr>
+<td>$b_0$ against QCD's $7$</td>
+<td>$+1$</td>
+<td>$+\tfrac53$</td>
+<td></td>
+</tr>
+<tr>
+<td>the shift coefficient $\tfrac{b_0-7}{2\pi}$</td>
+<td>$0.159$</td>
+<td>$0.265$</td>
+<td>§5</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The qualitative claims all survive and two of them narrow.</strong> "Under a third of its value at $M_X$" holds at $0.283$ against $0.300$. "More than five decades below $M_C$" holds at $5.45$ decades against $5.90$. <strong>"A larger coefficient means a faster approach to freedom, and the difference is one part in eight" does not survive</strong>: $1.667/8.667=0.192$, so the difference is one part in five.</p>
+<h2 id="4-the-downstream-sites">4. The Downstream Sites</h2>
+<p><strong>Three files outside this article carry the old number, and one of them carries it as a table.</strong></p>
+<h3 id="41-math2">4.1 <code>why-there-is-no-confinement-above-m-c.md</code></h3>
+<p><strong>It cites $b_0=8$ as a premise and builds a four-row table on the pole.</strong> Recomputed with $b_0=\tfrac{26}{3}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>site</th>
+<th>article</th>
+<th>corrected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"$b_0=8$, $b_0/2\pi=1.273$"</td>
+<td>$1.273$</td>
+<td>$1.379$</td>
+</tr>
+<tr>
+<td>$1/\alpha_4$ at $M_C=2.5\times10^{5}\ \mathrm{GeV}$</td>
+<td>$17.30$</td>
+<td>$17.31$</td>
+</tr>
+<tr>
+<td>"the one-loop pole"</td>
+<td>$313\ \mathrm{MeV}$</td>
+<td>$885\ \mathrm{MeV}$</td>
+</tr>
+<tr>
+<td>"where $\alpha_4=1$"</td>
+<td>$686\ \mathrm{MeV}$</td>
+<td>$1.83\ \mathrm{GeV}$</td>
+</tr>
+<tr>
+<td>"nearly thirteen e-folds"</td>
+<td>$12.73$</td>
+<td>$11.83$</td>
+</tr>
+<tr>
+<td>"the ratio is $3.6\times10^{5}$"</td>
+<td>$3.6\times10^{5}$</td>
+<td>$1.4\times10^{5}$</td>
+</tr>
+<tr>
+<td>"it needs $12.8$ against $6.7$"</td>
+<td>$12.8$</td>
+<td>$11.8$</td>
+</tr>
+<tr>
+<td>"the factor is $1.9$"</td>
+<td>$1.9$</td>
+<td>$1.8$</td>
+</tr>
+<tr>
+<td>"the two coefficients are within fifteen per cent"</td>
+<td>$15\%$</td>
+<td>about a quarter</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Its argument is untouched.</strong> The coupling reaches order one at $1.83\ \mathrm{GeV}$, which is still five decades below $M_C$, so "the phase ends before the growth matters" is as true as before. <strong>The numbers are not.</strong></p>
+<h3 id="42-math3">4.2 <code>the-scalar-content-one-matrix-and-ten-survivors.md</code></h3>
+<p>Line 151 repeats the error verbatim: "A scalar multiplet of sixteen components contributes $-\tfrac43$ to $b_0$ … Each doubling of the count costs another $\tfrac43$: thirty-two real components would give $b_0=\tfrac{20}{3}$ and sixty-four would give $4$." <strong>Corrected: $-\tfrac23$; thirty-two gives $8$ and sixty-four gives $\tfrac{20}{3}$.</strong></p>
+<h3 id="43-the-menu-math4">4.3 The menu, <code>physics.md</code></h3>
+<p>The comment above the entry still describes the article before it was written: "the coefficient the corpus never writes", "the running a gap", "$\alpha_s\approx0.08$ at $250\ \mathrm{TeV}$". <strong>The coefficient is now written, the running is now computed, and $\alpha_s(M_X)=0.058$, not $0.08$.</strong></p>
+<h2 id="5-the-matching-scale-paragraph-coefficient-sign-and-a-bound-that-runs-the-wrong-way">5. The Matching-Scale Paragraph: Coefficient, Sign, and a Bound That Runs the Wrong Way</h2>
+<p><strong>Three things are wrong in one paragraph, and the reviews caught one of them.</strong></p>
+<p><strong>The coefficient follows $b_0$.</strong> With $b_0=\tfrac{26}{3}$,</p>
+<p>$$
+\Delta\Bigl(\frac{1}{\alpha}\Bigr)=\frac{\tfrac{26}{3}-7}{2\pi}\ln\frac{M_X}{M_C}=0.265\,\ln\frac{M_X}{M_C},
+$$</p>
+<p>so the article's $0.159$ becomes $0.265$.</p>
+<p><strong>The sign is not fixed by the corpus, and the article's own numbers point the other way.</strong> The article writes $+0.11$ for $M_X$ within a factor of two of $M_C$, which presumes $M_X&gt;M_C$. But $M_X^{2}=\tfrac12g_4^{2}v_C^{2}=32v^{2}$ gives $M_X=5.66\,v$ while $M_C&gt;v$, so the ordering is not fixed: if $M_C$ sits near $v$ then $M_X$ is the larger, and if $M_C$ is well above $v$ then $M_X$ is the smaller. <strong>The corpus's own numerical table takes the second branch</strong>, putting $M_X=2.33\times10^{5}\ \mathrm{GeV}$ below $M_C=2.5\times10^{5}\ \mathrm{GeV}$. <strong>The honest form states the magnitude and the direction of growth, not a sign.</strong></p>
+<p><strong>The "factor of two" is not a worst case but the article's own tightest case.</strong> $M_C$ is bounded below and not predicted, so $|\ln(M_X/M_C)|$ has no upper bound: at the corpus's pair it is $0.07$, at a factor of two it is $0.69$, and at $M_C=10M_X$ it is $2.3$, where the shift is $0.61$ in $1/\alpha_4$ or $3.5$ per cent. <strong>So the honest sentence is "a tenth of a per cent at the corpus's own pair, one per cent for a factor of two, a few per cent if $M_C$ is a decade above $M_X$", and it is smaller than the two-loop term in the first two cases and comparable in the third.</strong></p>
+<p><strong>This also answers the question the first review asked and could not answer.</strong> Which way does the corpus's choice err? If $M_X&lt;M_C$ it makes $\alpha_4$ at the matching scale <em>smaller</em> than strict matching at $M_C$ would give, so the phase is very slightly weaker, which is the direction the article already calls conservative. If $M_X&gt;M_C$ the sign reverses. <strong>Since the sign is not fixed, the sentence should say "of this magnitude, in whichever direction the two scales are ordered", and drop the claim that the shift is one-signed.</strong></p>
+<h2 id="6-the-pole-analogy-qcd-has-no-ultraviolet-landau-pole">6. The Pole Analogy: QCD Has No Ultraviolet Landau Pole</h2>
+<p><strong>Both reviews praised this sentence. It is wrong twice.</strong></p>
+<p>The article says the pole "is the same kind of object as the QCD Landau pole at $10^{19}\ \mathrm{GeV}$". The corpus's own asymptotic-freedom article says the opposite of the first half:</p>
+<blockquote>
+<p>QED has $b_0=-\tfrac43$ … $1/\alpha$ falls steadily and would reach zero at $\exp(3\pi/2\alpha)\approx1.6\times10^{270}\ \mathrm{J}$. That scale is called the Landau pole … <strong>The sign of the beta function decides whether a theory has an ultraviolet problem or an infrared one, and QCD has the second.</strong></p>
+</blockquote>
+<p><strong>QCD is asymptotically free, so it has no ultraviolet pole.</strong> Its one-loop line does reach $1/\alpha_s=0$, but downward, at $45\ \mathrm{MeV}$ — that is $\Lambda_{\mathrm{QCD}}$, the infrared end.</p>
+<p><strong>And $10^{19}\ \mathrm{GeV}$ is the Planck scale, not a Landau pole.</strong> The corpus's two pole values are $1.6\times10^{270}\ \mathrm{J}$ for QED and $2.884\times10^{31}\ \mathrm{J}$ for hypercharge, the second being $1.8\times10^{41}\ \mathrm{GeV}$. <strong>$10^{19}\ \mathrm{GeV}$ is $1.6\times10^{9}\ \mathrm{J}$</strong>: two hundred and sixty-one orders below the first and twenty-two below the second. The number in the sentence is the Planck mass wearing the wrong name.</p>
+<p><strong>Two repairs are available and the author should choose.</strong></p>
+<ul>
+<li><em>The QED form.</em> "The same kind of object as the Landau pole of QED, which the asymptotic-freedom article puts at $1.6\times10^{270}\ \mathrm{J}$": a zero of a truncated line, two hundred and sixty-one orders beyond anything the truncation describes.</li>
+<li><em>The QCD infrared form, which is closer in structure.</em> "The same kind of object as the zero of the QCD line at $45\ \mathrm{MeV}$": a scale where the one-loop solution formally diverges, read as physics only because QCD adds non-perturbative dynamics that this phase does not have. <strong>This one keeps the QCD comparison the article wants and puts the right number on it.</strong></li>
+</ul>
+<p><strong>The paragraph's conclusion is unaffected.</strong> The pole is arithmetic; the phase ends first; nothing at $885\ \mathrm{MeV}$ is predicted. Only the analogy's warrant is missing.</p>
+<h2 id="7-the-qcd-decomposition-sentence">7. The QCD Decomposition Sentence</h2>
+<p><strong>The second review is right that the sentence does not add up, and its replacement keeps the coefficient the sentence is supposed to produce.</strong> Both are now wrong.</p>
+<p><strong>The article's count is wrong.</strong> "Four more Dirac fields" against QCD's six: the model has eight, so there are <strong>two</strong> more. Two Dirac cost $\tfrac43\times\tfrac12\times2=\tfrac43$.</p>
+<p><strong>The article's arithmetic is measured against the wrong total.</strong> With the corrected scalar, the decomposition is</p>
+<p>$$
+\tfrac{11}{3}\times(4-3)=\tfrac{11}{3}=3.667,
+\qquad
+-\tfrac{4}{3}\times\tfrac12\times(8-6)=-\tfrac43=-1.333,
+\qquad
+-\tfrac{2}{3}=-0.667,
+$$</p>
+<p>$$
+\tfrac{11}{3}-\tfrac43-\tfrac23=\tfrac53=1.667,
+$$</p>
+<p>and $b_0^{\mathrm{model}}-b_0^{\mathrm{QCD}}=\tfrac{26}{3}-7=\tfrac53$, which agrees. <strong>The corrected sentence is "two more Dirac fields cost $\tfrac43$ and the scalar costs $\tfrac23$, netting $+\tfrac53$".</strong> The second review's replacement — two Dirac and the scalar costing $\tfrac83$ and netting $+1$ — reproduces the erroneous $b_0=8$ and must not be used.</p>
+<h2 id="8-the-two-loop-estimate-both-reviews-asked-for">8. The Two-Loop Estimate Both Reviews Asked For</h2>
+<p><strong>The article asserts three times that a scalar doubling is "larger than the two-loop term the article omits", and never gives the term. The corpus supplies the measurement.</strong></p>
+<p><code>asymptotic-freedom-and-the-running-of-the-strong-coupling.md</code> compares one loop against two at the scales where $\alpha_s$ is measured: <strong>ten per cent apart at $3.2\times10^{-10}\ \mathrm{J}$, where $\alpha_s\approx0.3$</strong>, and one per cent at $4.8\times10^{-9}\ \mathrm{J}$. The relative size of the two-loop term is first order in $\alpha$, so at $\alpha_4=0.058$ it is</p>
+<p>$$
+10\%\times\frac{0.058}{0.3}\approx2\%,
+$$</p>
+<p>that is about $0.9$ units in $1/\alpha_4(M_P)$ out of the article's $43.6$.</p>
+<p><strong>The scalar doubling is $3.35$ units</strong> — $\tfrac{26/3-8}{2\pi}\ln(M_P/M_X)=0.106\times31.6$ — which is $7.7$ per cent of the change, <strong>about four times the two-loop term.</strong> So the article's claim survives comfortably and can now be stated with the number instead of the adjective:</p>
+<ul>
+<li>"the two-loop correction is about two per cent of the change, and each scalar doubling is about eight per cent";</li>
+<li>"$\alpha_4/\pi=0.018$ at the matching scale, which is why the one-loop expansion is good to a few per cent" — the same estimate, applied to the sentence at line 146 that the second review flagged as asserted.</li>
+</ul>
+<p><strong>This closes both reviews' first item.</strong> Neither could supply the number because neither noticed that the corpus contains the measurement.</p>
+<h2 id="9-minor-findings">9. Minor Findings</h2>
+<p><strong>Eleven rows under "Ten numbers".</strong> §<em>The Checks</em> says "Ten numbers, each recomputed" and tabulates eleven. Neither review counted.</p>
+<p><strong>The unit switch.</strong> $M_X$ is $3.7\times10^{-5}\ \mathrm{J}$ in §<em>Conventions</em> and $2.3\times10^{5}\ \mathrm{GeV}$ everywhere else. One conversion line at first use closes it. <strong>Also: two other articles quote this bound differently</strong>, as $3.69\times10^{-5}\ \mathrm{J}$ and as $4.0\times10^{-5}\ \mathrm{J}$ rounded. The article is explicit that it uses $3.73\times10^{-5}\ \mathrm{J}$, which is the honest move; a note that the pole moves by $7$ per cent if the rounded $4.0$ is used would be enough.</p>
+<p><strong>$M_C\gtrsim10^{5}\ \mathrm{GeV}$ at line 166</strong> is the article's own rounding of a corpus bound that reads $2.5\times10^{5}\ \mathrm{GeV}$. The two uses of the same scale in one article should agree.</p>
+<p><strong>The custodial bullet.</strong> "$\rho=1$ at tree level comes from the two-index structure of $\Xi$" is a claim owned by <code>custodial-symmetry-and-the-rho-parameter.md</code>, and that article's own summary is more careful: the algebra supplies the custodial action, and the framework's scalar sector does not supply the field it would act on. <strong>Either cite it or drop the bullet</strong>; as written it is the one sentence in the article with no warrant.</p>
+<p><strong>"The model has one coupling."</strong> Corpus language, in $53$ sites and in an article title, so it should not be changed globally. <strong>One qualifier at first use — "one gauge coupling" — costs nothing and removes the reading that the scalar quartic is being denied.</strong></p>
+<p><strong>The fermion pairing.</strong> "A Weyl field contributes half a Dirac field's screening, and the sixteen Weyl fields are eight Dirac fields once the copies are paired" is correct but leaves the reader to supply $2\times(\mathbf4+\bar{\mathbf4})=8$. <strong>One clause.</strong></p>
+<p><strong>The $1\ \mathrm{TeV}$ value.</strong> $0.103$ now. It is flagged as not a prediction and appears in running text; either mark it or drop it.</p>
+<p><strong>"The fifteen, the sixteen and the scalar"</strong> at line 13 wants two words of apposition.</p>
+<p><strong>$\zeta$.</strong> The notation row "absent from everything in this article" is a corpus habit and reads as intended once the reader knows $\zeta$ is the gauge-fixing parameter. <strong>Parenthetical only.</strong></p>
+<h2 id="10-what-the-two-reviews-got-right-what-they-missed-and-where-this-audit-corrects-itself">10. What the Two Reviews Got Right, What They Missed, and Where This Audit Corrects Itself</h2>
+<p><strong>Both reviews reached the right verdict on the wrong centre of gravity.</strong> They graded presentation; the article's defect is a coefficient.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>first review</th>
+<th>second review</th>
+<th>this audit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$b_0=8$</td>
+<td>accepted</td>
+<td>"all arithmetic checks out"</td>
+<td><strong>$26/3$: the scalar term is doubled</strong></td>
+</tr>
+<tr>
+<td>the scalar table</td>
+<td>"the article's best original contribution"</td>
+<td>"a sharp statement"</td>
+<td>right shape, <strong>shifted one row</strong></td>
+</tr>
+<tr>
+<td>QCD decomposition</td>
+<td>not seen</td>
+<td>found the mismatch, repaired it to a wrong total</td>
+<td>found, repaired to $\tfrac53$</td>
+</tr>
+<tr>
+<td>the pole analogy</td>
+<td>"exactly right"</td>
+<td>"the right analogy"</td>
+<td><strong>QCD has no UV pole; $10^{19}\ \mathrm{GeV}$ is $M_P$</strong></td>
+</tr>
+<tr>
+<td>two-loop size</td>
+<td>asked for a number, gave none</td>
+<td>asked for a number, gave none</td>
+<td>$2\%$, from the QCD article's own comparison</td>
+</tr>
+<tr>
+<td>matching shift</td>
+<td>sign and magnitude both queried</td>
+<td>"at most a factor of $2.3$"</td>
+<td>coefficient $0.265$; <strong>no sign; the bound runs the other way</strong></td>
+</tr>
+<tr>
+<td>"each doubling costs $\tfrac43$"</td>
+<td>repeated it</td>
+<td>repeated it</td>
+<td>$\tfrac23$ then $\tfrac43$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The second review's "at most a factor of $2.3$" is backwards.</strong> It divides $M_X$ by the article's rounded $M_C\gtrsim10^{5}\ \mathrm{GeV}$, which makes $M_X$ the larger of the two. Two other articles put $M_C$ above $M_X$, and neither scale is predicted, so the interval has no upper bound. <strong>The shift is not bounded above at all; it grows only logarithmically, which is the fact that makes it tolerable.</strong></p>
+<p><strong>And this audit corrects its own first reading in two places.</strong> It said the corrected scalar rows give $b_0=26/3,\,22/3,\,14/3$; they give $26/3,\,8,\,20/3$, because the term is subtracted and the step is $\tfrac23$ then $\tfrac43$. It also said the steps in $b_0$ were $\tfrac43$ then $\tfrac83$; they are $\tfrac23$ then $\tfrac43$. <strong>The error in both cases was treating the scalar term as if it had been doubled twice at once, which is the same slip the article makes.</strong> The numbers in §3 and §4 are unaffected: they all follow from $b_0=26/3$.</p>
+<h2 id="11-suggested-strategy">11. Suggested Strategy</h2>
+<p><strong>One finding, one order of operations, five decisions.</strong> Nothing below is applied.</p>
+<p><strong>The order, if the finding is accepted.</strong></p>
+<ol>
+<li><strong>This article, §<em>The Coefficient</em>.</strong> Change the formula to $\tfrac16T_Sn_s$, $n_s=1$ real adjoint; correct the three-row table to $16/32/64\to26/3,\,8,\,20/3$; correct "each doubling" to the sequence; correct the QCD sentence to two Dirac and $\tfrac53$; correct "one part in eight" to one part in five.</li>
+<li><strong>This article, §<em>The Solution</em>.</strong> $b_0/2\pi=1.379$; the three-row evaluation table; $\alpha_4(M_P)=0.0165$; the $1\ \mathrm{TeV}$ line to $0.103$.</li>
+<li><strong>This article, §<em>The Pole</em>.</strong> $885\ \mathrm{MeV}$; the analogy repaired per §6; $M_C$ corrected to $2.5\times10^{5}\ \mathrm{GeV}$ and the separation restated as five and a half decades.</li>
+<li><strong>This article, §<em>What the Running Says</em>, §<em>The Checks</em>, §<em>Summary</em>, §<em>Summary of Notation</em>.</strong> The four statements ($0.0165$, $0.283$), eleven rows, the ledger's $\alpha_4(M_P)$, the summary's $0.0165$ and the doubling sentence, $n_s$ in the notation.</li>
+<li><strong>This article, §<em>The Coupling the Model Has</em>.</strong> The shift coefficient $0.265$, the sign dropped, the magnitude rule of §5.</li>
+<li><strong><code>why-there-is-no-confinement-above-m-c.md</code>.</strong> The nine cells of §4.1.</li>
+<li><strong><code>the-scalar-content-one-matrix-and-ten-survivors.md</code>,</strong> line 151.</li>
+<li><strong><code>physics.md</code>,</strong> the entry's comment.</li>
+</ol>
+<p><strong>The decisions.</strong></p>
+<ul>
+<li><strong>D1. The scalar factor.</strong> Accept $b_0=\tfrac{26}{3}$ and the $\tfrac16$ form, or keep $\tfrac13$ and defend $N_s=1$ as one complex adjoint. <strong>The audit recommends acceptance</strong>: the article's own table says sixteen real, the corpus's formula article uses the real-scalar convention, and a single real adjoint is the separating case, at $14$ against $13\tfrac13$. The contrary reading requires the field to be complex, which the scalar-content article explicitly denies.</li>
+<li><strong>D2. The downstream patch.</strong> Patch the confinement article and the scalar-content article in the same pass, or leave them and record the inconsistency. <strong>The audit recommends patching:</strong> the confinement article cites this one for the number, and a cited number that no longer matches its source is worse than either value alone.</li>
+<li><strong>D3. The pole analogy.</strong> QED form, or a QCD comparison. <strong>The audit recommends the QED form</strong> at $1.6\times10^{270}\ \mathrm{J}$, because a zero of a truncated line is the object the article needs and QCD's own zero is a <em>physical</em> scale — that is precisely what makes it a different kind of object. The QCD comparison is kept as one contrast sentence, at the corpus's own $0.111\ \mathrm{GeV}$. <strong>Applied that way.</strong></li>
+<li><strong>D4. The matching paragraph.</strong> State the magnitude without a sign, or fix the ordering of $M_X$ and $M_C$ in the corpus first. <strong>The audit recommends the magnitude form</strong>, since fixing the ordering is a decision about the model and not about this article.</li>
+<li><strong>D5. The style items of §9.</strong> Apply or defer.</li>
+</ul>
+<p><strong>What this audit did not do.</strong> It did not compute $b_1$, and it did not claim the two per cent of §8 is anything better than an order-of-magnitude scaling of the corpus's own QCD comparison. It did not resolve $M_X$ against $M_C$, which is a model question.</p>
+<h2 id="12-the-checks-run">12. The Checks Run</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$b_0$ with $\tfrac16$, $n_s=1$ real adjoint</td>
+<td>$\tfrac{44}{3}-\tfrac{16}{3}-\tfrac23=\tfrac{26}{3}$</td>
+</tr>
+<tr>
+<td>the two conventions on every even-count multiplet</td>
+<td>identical: $\mathcal N=2\to8$, $\mathcal N=4\to0$, SM $\mathrm{SU}(2)\to\tfrac{19}{6}$, so none of them can catch the error</td>
+</tr>
+<tr>
+<td>the two conventions on one real adjoint, $\mathrm{SU}(4)$</td>
+<td>$14$ against $13\tfrac13$: the separating case</td>
+</tr>
+<tr>
+<td>the model read both ways</td>
+<td>$\tfrac{26}{3}$ against $8$</td>
+</tr>
+<tr>
+<td>$1/\alpha_4$ at $M_C=2.5\times10^{5}\ \mathrm{GeV}$</td>
+<td>$17.31$</td>
+</tr>
+<tr>
+<td>QCD $b_1$ at six flavours, from the calibrated formula</td>
+<td>$102-76=26$, matching $102-\tfrac{38}{3}N_f$</td>
+</tr>
+<tr>
+<td>$1/\alpha_s(M_X)$ from $\alpha_s(M_Z)=0.1179$, $b_0=7$</td>
+<td>$17.22$, against the imported $17.21$: the $g_4^{2}=0.730$ is that running rounded</td>
+</tr>
+<tr>
+<td>$b_0/2\pi$</td>
+<td>$1.3793$</td>
+</tr>
+<tr>
+<td>$1/\alpha_4(M_P)$</td>
+<td>$17.214+1.3793\times31.59=60.79$</td>
+</tr>
+<tr>
+<td>slope between the three evaluation rows</td>
+<td>$1.379$ at every step</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{pole}}$</td>
+<td>$2.3281\times10^{5}\,e^{-12.48}=885\ \mathrm{MeV}$</td>
+</tr>
+<tr>
+<td>decades from $M_C=2.5\times10^{5}\ \mathrm{GeV}$ to the pole</td>
+<td>$5.45$</td>
+</tr>
+<tr>
+<td>scale where $\alpha_4=1$</td>
+<td>$1.83\ \mathrm{GeV}$, $11.76$ e-folds below $M_X$</td>
+</tr>
+<tr>
+<td>$\alpha_4$ at $1\ \mathrm{TeV}$ on the extended line</td>
+<td>$0.103$</td>
+</tr>
+<tr>
+<td>$\alpha_4(M_P)/\alpha_4(M_X)$</td>
+<td>$0.283$</td>
+</tr>
+<tr>
+<td>QCD gap</td>
+<td>$\tfrac{26}{3}-7=\tfrac53$</td>
+</tr>
+<tr>
+<td>shift coefficient</td>
+<td>$\tfrac{26/3-7}{2\pi}=0.2653$</td>
+</tr>
+<tr>
+<td>two-loop size scaled from the QCD comparison</td>
+<td>$10\%\times\tfrac{0.058}{0.3}\approx2\%$</td>
+</tr>
+<tr>
+<td>rows in §<em>The Checks</em></td>
+<td>$11$</td>
+</tr>
+<tr>
+<td>Landau-pole values in the corpus</td>
+<td>$1.6\times10^{270}\ \mathrm{J}$ (QED), $2.884\times10^{31}\ \mathrm{J}$ (hypercharge)</td>
+</tr>
+<tr>
+<td>QCD's one-loop zero</td>
+<td>$45\ \mathrm{MeV}$, infrared</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="13-what-was-applied">13. What Was Applied</h2>
+<p><strong>The five decisions were taken and every patch listed in §11 was made. Four files changed: the article, the confinement article, the scalar-content article, and the menu comment.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>what changed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.md</code></td>
+<td>$\tfrac16T_Sn_s$ form; $b_0=\tfrac{26}{3}$; the scalar table shifted to $26/3,\,8,\,20/3$; the QCD sentence to two Dirac and $\tfrac53$; one part in five; $b_0/2\pi=1.379$; $\alpha_4(M_P)=0.0165$; the $1\ \mathrm{TeV}$ line to $0.103$ and marked as forbidden; pole at $885\ \mathrm{MeV}$; the analogy repaired; $M_C$ to $2.5\times10^{5}\ \mathrm{GeV}$; the matching paragraph rebuilt; the two-loop sentence with its number; the J/GeV conversion once; "one gauge coupling"; the fermion-pairing clause; the custodial bullet cited; eleven rows; $n_s$ in the notation; the custodial article added to Further Reading</td>
+</tr>
+<tr>
+<td><code>why-there-is-no-confinement-above-m-c.md</code></td>
+<td>$b_0=\tfrac{26}{3}$, slope $1.379$, strong-coupling scale $1.83\ \mathrm{GeV}$, $11.8$ e-folds, ratio $1.4\times10^{5}$, factor $1.8$, "about a quarter", pole $885\ \mathrm{MeV}$, $1/\alpha_4(M_C)=17.31$, the nine check rows</td>
+</tr>
+<tr>
+<td><code>the-scalar-content-one-matrix-and-ten-survivors.md</code></td>
+<td>line 151 and the checks row: $-\tfrac23$ for sixteen real, then $8$ and $\tfrac{20}{3}$</td>
+</tr>
+<tr>
+<td><code>physics.md</code></td>
+<td>the menu comment rewritten to describe the article as written, with the coefficient, the running and the pole</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three of the article's own claims got stronger, not weaker.</strong> The coupling is still under a third at the Planck scale ($0.283$); the pole is still five and a half decades below $M_C$ ($5.45$); and the scalar doubling is now measured against a two-loop term that the corpus supplies, at four times its size.</p>
+<p><strong>One thing was not changed and should be.</strong> The corpus still quotes $M_C$ as $2.5\times10^{5}\ \mathrm{GeV}$ in two articles and as $\gtrsim10^{5}$ in the article's own line 166 — which §11 corrected to $2.5\times10^{5}$ — so the bound now agrees everywhere it is used for the pole, but the threshold article remains the owner of the number and has not been reconciled with the leptoquark article's own value.</p>
+<h2 id="14-a-third-review-and-why-the-error-is-attractive">14. A Third Review, and Why the Error Is Attractive</h2>
+<p><strong>A third review of the article, read after the patches, again reports $b_0=8$ and again checks the arithmetic against that value.</strong> Its tables reproduce $\tfrac{11}{3}4-\tfrac43\tfrac12 8-\tfrac13 4=8$ and then treat the $8$ as the Hermitian sector's; its own diagnostic table lists "Hermitian $8$, complex $20/3$, doubled $4$", which is the article's table shifted one doubling down. <strong>The coefficient is the one the article now assigns to a complex scalar</strong>, so the review is reading the pre-patch text, and every number it derives — $\alpha_4(M_P)=0.0174$, the pole at $313\ \mathrm{MeV}$, the $0.6\%$ matching shift, $\Delta(1/\alpha)=0.159\ln$ — belongs to that text as well.</p>
+<p><strong>The error is attractive for the reason §1 gives, and it survives a review that is otherwise careful.</strong> A reviewer who recomputes the fermion term, the adjoint term and the QCD comparison correctly has exercised every term except the scalar one, and $\tfrac13$ against $\tfrac16$ is a factor of two that no fermionic cross-check can see. <strong>The test that catches it is the Dynkin index of the $\mathbf{15}$ of $\mathrm{SU}(4)$, which equals $C_A=4$ by coincidence at $N=4$</strong>, so $T_S n_s=4\cdot1=4$ and the term is $\tfrac16\times4=\tfrac23$ and not $\tfrac43$.</p>
+<p><strong>One sentence of that review is a real catch, and the article already carries the repair.</strong> It objects that "four more Dirac fields and the scalar cost $\tfrac83$" is miscounted at eight Dirac fields against QCD's six; the article now says <em>two</em> more Dirac fields at $\tfrac43$ and the scalar at $\tfrac23$, subtracting $2$ and netting $+\tfrac53$. <strong>Every other point it raises — the "one gauge coupling" qualifier, the $M_X$/$M_C$ size in three cases, the fermion-pairing clause, the $J$/GeV conversion, the forbidden $1\ \mathrm{TeV}$ extrapolation, the custodial bullet's citation, the $29$ against $31$ triple count — is answered in the text as it now stands or in <code>audit-generator-convention.md</code>.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

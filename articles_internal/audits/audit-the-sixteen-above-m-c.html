@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The Sixteen Above $M_C$ — Biquaternion Universe</title>
+  <meta name="description" content="Verdict: one real numerical error, one real physics gap, one false positive, and one item where the review&#x27;s arithmetic is wrong. The structural claims…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-sixteen-above-math0"><strong>Audit: The Sixteen Above $M_C$</strong></h1>
+<p><strong>Verdict: one real numerical error, one real physics gap, one false positive, and one item where the review's arithmetic is wrong.</strong> The structural claims all survive.</p>
+<h2 id="1-finding-one-math1-was-double-counted">1. Finding One: $g_*$ Was Double-Counted</h2>
+<p><strong>The article said</strong> $g_*=\underbrace{30}_{\text{the fifteen}}\times2+\ldots=60+28=88$.</p>
+<p><strong>The label and the number disagree.</strong> Fifteen gauge fields with two polarisations each are thirty states, and thirty states contribute thirty to $g_*$ — the definition is $g_*=\sum_B g_i+\tfrac78\sum_F g_i$ with $g_i$ already counting helicities. Writing $30\times2$ counts the polarisations twice.</p>
+<p>$$
+15\times2+32\times\tfrac78=30+28=58 .
+$$</p>
+<p><strong>The cross-check that settles it</strong>: the Standard Model gives $28+90\times\tfrac78=106.75$, with the ninety being 45 Weyl fields at two states each — the same convention in which sixteen Weyl fields are thirty-two states, which the article's own table uses. <strong>So the article's $32$ is the helicity count and its $30$ must be one too.</strong></p>
+<p><strong>Fixed in three places</strong>: the display, the checks row, and the notation row. <strong>The review found this and then contradicted itself</strong> — its Strengths item 5 calls $60+28=88$ correct, and its issue 6 calls it wrong. <strong>The issue is right.</strong></p>
+<h2 id="2-finding-two-math12-was-missing-from-the-math13-argument">2. Finding Two: $\theta_4$ Was Missing From the $CP$ Argument</h2>
+<p><strong>The article argued</strong> "no $CP$ violation above $M_C$" from $C$ and $P$ separately holding in the gauge sector.</p>
+<p><strong>The inference does not cover the one term that is $CP$-odd.</strong> $\theta_4\operatorname{tr}(F\tilde F)$ is $P$-odd and $C$-even, so $C\cdot P$ does not remove it: a product argument only kills what is odd under exactly one of the two.</p>
+<p><strong>What does remove it is the article's own first claim.</strong> The fermions are massless above $M_C$, so the axial rotation that shifts $\theta_4$ costs nothing and the angle is removable. <strong>The article's own premise therefore upgrades its conclusion</strong>, and the missing sentence was the bridge.</p>
+<p><strong>The review reached the right gap and the wrong fix.</strong> It proposed "no <em>perturbative</em> $CP$ violation; $\theta_4$ effects are $e^{-S}\sim10^{-47}$". That is the old instanton article's position, and the instanton article now says the opposite: the angle is <strong>redundant, not suppressed</strong>, so there is no $\theta_4$ dependence to weight. <strong>A caveat at $10^{-47}$ would have been weaker than the truth.</strong></p>
+<p><strong>Added as a sixth bullet</strong>, with the sign of the argument — $P$-odd, $C$-even — and a pointer to the instanton article.</p>
+<h2 id="3-finding-three-the-mass-matrix-count">3. Finding Three: The Mass Matrix Count</h2>
+<p><strong>The article said</strong> "the group does not forbid it; the model sets $m=0$".</p>
+<p><strong>True, and the count of tunings was missing.</strong> $m_{ij}$ has four complex entries; the copy index is ungauged, so rotations among the two $\mathbf4$ copies against the two $\bar{\mathbf4}$ copies are symmetries, and the invariants of $m$ are its two singular values. <strong>So $m=0$ is two conditions, not one.</strong></p>
+<p><strong>The review says four real tunings, or two complex.</strong> Both are wrong: $2\times2$ complex is four complex entries, and the physical count is two, not four, because of the field redefinitions. <strong>The review's sentence would have introduced a new error while fixing a real gap.</strong></p>
+<p><strong>Written as</strong>: four complex entries, two singular values, two masses set to zero.</p>
+<h2 id="4-finding-four-the-math39-bullet-is-correct">4. Finding Four: The $C$ Bullet Is Correct</h2>
+<p><strong>The review calls "the content is closed under $C$ as a permutation of the field set — $C$ carries $2\cdot\mathbf4$ to $2\cdot\bar{\mathbf4}$" a category error.</strong></p>
+<p><strong>It is the standard statement and it is the corpus's own language.</strong> <em>Classification of the Fermions</em> "writes the conjugation as a permutation"; for a vector-like content, $C$ maps a field in $\mathbf4$ to a field in $\bar{\mathbf4}$ and the conjugate fields are already in the list, which is precisely what vector-like means. <strong>The review's own replacement says the same thing in different words</strong> — "the conjugate of a $\mathbf4$ is a $\bar{\mathbf4}$, which is already in the content" — and then calls the original misleading.</p>
+<p><strong>Rejected.</strong> The one clause added is the reason the map is available: the $\bar{\mathbf4}$ fields are already there.</p>
+<h2 id="5-the-rest-applied">5. The Rest, Applied</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"nothing in the Lagrangian refers to $i$"</td>
+<td>fixed to "nothing in the <em>gauge</em> Lagrangian", with the mass term named as the exception</td>
+</tr>
+<tr>
+<td>ledger row "no generation constraint" marked cost</td>
+<td><strong>changed to neither</strong>, with a paragraph saying why: a chiral theory does not explain three either, so it is a benefit not collected</td>
+</tr>
+<tr>
+<td>"four costs and three benefits"</td>
+<td><strong>three, three, and one neither</strong></td>
+</tr>
+<tr>
+<td>chirality mechanism asserted</td>
+<td><strong>stated</strong>: a single factor on the copy index stays vector-like, since $(\mathbf4,\mathbf2)\oplus(\bar{\mathbf4},\mathbf2)$ is self-conjugate; two factors are needed, $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$, and that is <em>Rank Five From Three</em>'s single postulate</td>
+</tr>
+<tr>
+<td>Chiral Wall link points at the declaration</td>
+<td><strong>it is a section of that article</strong> (§<em>The Chiral Wall</em>, line 296); annotated rather than repointed</td>
+</tr>
+<tr>
+<td>copy index "not a generation index"</td>
+<td>added to the conventions</td>
+</tr>
+<tr>
+<td>"one decomposition, three consequences" buried</td>
+<td><strong>not buried</strong> — it is a paragraph after the checks table, not a caption; left in place</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="6-the-reviews-own-errors-collected">6. The Review's Own Errors, Collected</h2>
+<ul>
+<li><strong>$g_*$: right</strong> (58), and contradicted by its own Strengths item 5.</li>
+<li><strong>Mass matrix: wrong</strong> — four real tunings; it is two singular values.</li>
+<li><strong>$\theta_4$: right gap, wrong remedy</strong> — it proposes $e^{-S}$ suppression where the corpus now says redundancy, which is stronger.</li>
+<li><strong>$C$: false positive.</strong></li>
+<li><strong>"Eight numbers"</strong> — the checks table had nine rows and now says nine; the review did not catch this.</li>
+</ul>
+<h2 id="7-what-did-not-move">7. What Did Not Move</h2>
+<p><strong>The content, the state count, the cubic index, the $\mathrm{SU}(4)^3$ cancellation, the absence of mixed coefficients, $\pi_4(\mathrm{SU}(4))=0$, and the eight-Dirac count are all correct as they stood.</strong> No number in the article changed except $g_*$.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

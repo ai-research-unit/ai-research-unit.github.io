@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Colours in $\mathrm{SU}(3)$: A Coordinate Label on the Eight, Not a Charge — Biquaternion Universe</title>
+  <meta name="description" content="The question. Below the corpus writes on eight gluons and calls them colours. What are they, and why eight?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-colours-in-math0-a-coordinate-label-on-the-eight-not-a-charge"><strong>The Colours in $\mathrm{SU}(3)$: A Coordinate Label on the Eight, Not a Charge</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Below $M_C$ the corpus writes $r\bar g$ on eight gluons and calls them colours. <strong>What are they, and why eight?</strong></p>
+<p><strong>The answer.</strong> The labels are still coordinates, and for the first time they are coordinates of a group that is gauged. <strong>Eight is $3^{2}-1$, the rank is two, and the ninth colour–anticolour slot is not a missing gluon.</strong> It is the $B-L$ vector, and this model already contains it.</p>
+<p><strong>What this article establishes.</strong> Why the residual group is $\mathrm{SU}(3)$ and not $\mathrm{SO}(3)$. The nine slots and the eight. The two diagonal gluons and the basis among them. That the excluded singlet is occupied, by the corner. And the four facts that are measurable against the labels that are not.</p>
+<p><strong>What it does not establish.</strong> That colour exists above $M_C$ — <strong>it does not, and the companion article <em>The Colours in $\mathrm{SU}(4)$</em> is the half that says so</strong>. Nor that the group is derived: the residual is $\mathrm{SU}(3)$ given the quartet, with $N_c=4-1=3$, and the measurement that confirms three is not this article's business.</p>
+<p><strong>The relation between the two articles in one line.</strong> Above $M_C$ there are fifteen coordinates and no group to be charged under. <strong>Below it there are eight coordinates and a group.</strong> The coordinates did not change their nature; what changed is that there is now something for them to be coordinates of.</p>
+<h2 id="the-group-is-math12-and-the-rank-says-so">The Group Is $\mathrm{SU}(3)$, and the Rank Says So</h2>
+<p><strong>The residual is the stabiliser of the lepton line.</strong></p>
+<p>$$
+\mathrm{SU}(3)_c=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t),
+\qquad
+\dim_{\mathbb R}\mathfrak{su}(3)=8,
+\qquad
+\operatorname{rank}\mathfrak{su}(3)=2 .
+$$</p>
+<p><strong>Colour is never broken.</strong> The vacuum is $D=\operatorname{diag}(-3,1,1,1)$ in the $(\ell,r,g,b)$ order, and <strong>on the colour block it is a multiple of the identity</strong>, so it commutes with every matrix acting on that block:</p>
+<p>$$
+[D,X]=0\quad\text{for every colour }X .
+$$</p>
+<p><strong>That one line is why the eight are exactly massless below $M_C$ and not merely light.</strong> The mass form $M^{2}_{XY}=\operatorname{tr}([X,D]^{\dagger}[Y,D])$ vanishes on all eight, and the vanishing is a symmetry statement rather than a numerical accident.</p>
+<p><strong>And it is why the residual is $\mathrm{SU}(3)$ and not $\mathrm{SO}(3)$.</strong> The rank of a group is the number of independent diagonal generators, and the two numbers differ:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>candidate residual</th>
+<th>dimension</th>
+<th>rank</th>
+<th>diagonal bosons</th>
+<th>shape</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(3)_c$</td>
+<td>$8$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>colour</td>
+</tr>
+<tr>
+<td>$\mathrm{SO}(3)\cong\mathrm{SU}(2)/\mathbb Z_2$</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>the electroweak shape</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A rank-one residual gives one diagonal boson, and colour has two.</strong> The two are the standard combinations, and they are in the corpus's grid as the two diagonal cells of the $3\times3$ block. <strong>A group that gave one would be an $\mathrm{SU}(2)$ in disguise</strong>, which is the shape the weak sector takes and not this one.</p>
+<p><strong>The check is arithmetic and does not need the groups named.</strong> The colour block is $3\times3$, so it has three diagonal cells; one combination is removed; <strong>two remain.</strong> A rank-one group would have one diagonal, and no arrangement of a $3\times3$ grid produces that.</p>
+<h2 id="the-nine-slots-and-the-eight">The Nine Slots and the Eight</h2>
+<p><strong>Colour–anticolour is the tensor product of the triplet with its conjugate, and it is reducible.</strong></p>
+<p>$$
+\mathbf 3\otimes\bar{\mathbf3}=\mathbf 8\oplus\mathbf 1,
+\qquad
+8+1=9 .
+$$</p>
+<p><strong>Nine slots, eight gluons, and the ninth is the singlet.</strong> The count is the whole content of the phrase <em>one fewer on the diagonal</em>, and it is worth printing the nine before subtracting anything.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slot</th>
+<th>where it sits</th>
+<th>in the octet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r\bar g$, $r\bar b$, $g\bar r$, $g\bar b$, $b\bar r$, $b\bar g$</td>
+<td>the six off-diagonal cells</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$r\bar r$, $g\bar g$, $b\bar b$</td>
+<td>the three diagonal cells</td>
+<td>two combinations yes, the third no</td>
+</tr>
+<tr>
+<td>the trace $r\bar r+g\bar g+b\bar b$</td>
+<td>the sum of the three</td>
+<td><strong>no, this is the singlet</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The six off-diagonal slots are four independent generators plus their reverses</strong> — six directions, three planes, two amplitudes per plane. <strong>The three diagonal slots are three directions, of which the trace is not a generator of $\mathrm{SU}(3)$</strong>, because $\mathfrak{su}(3)$ is traceless.</p>
+<p><strong>So the diagonal carries two gluons and not three</strong>, and the reason is not a choice of basis: <strong>the removed direction is the one the $S$ in $\mathrm{SU}$ removes.</strong> A reader who rotates the three colour lines freely will move the two gluons among the diagonal cells, and will not produce a third.</p>
+<p><strong>The count, twice.</strong></p>
+<p>$$
+\underbrace{6}_{\text{off-diagonal}}+\underbrace{2}_{\text{diagonal}}=8=\underbrace{3^{2}-1}_{\dim\mathfrak{su}(3)} .
+$$</p>
+<h2 id="the-two-diagonal-gluons-and-why-the-pair-is-not-canonical">The Two Diagonal Gluons, and Why the Pair Is Not Canonical</h2>
+<p><strong>The invariant statement comes first, because it is the one that can be checked without choosing a pair.</strong> A general element of the Cartan is $a\,iD+b\,d_{2}+c\,d_{3}$, and its entry on the lepton line is</p>
+<p>$$
+\bigl(a\,iD+b\,d_{2}+c\,d_{3}\bigr)_{\ell\ell}=-3ia+0+0 .
+$$</p>
+<p><strong>That entry vanishes if and only if $a=0$.</strong> So the Cartan directions that lie inside the colour block are exactly the span of $d_{2}$ and $d_{3}$, and that span is two-dimensional. <strong>That, and not any choice of pair, is what "two of the three diagonals stay inside the octet" means.</strong> The third direction is the only one that touches the lepton line, and it is the one that leaves.</p>
+<p><strong>The printed arrays, and the words they come from.</strong> The diagonal words are $\ell_{j}r_{j}$, and each is a signed permutation with an eigenvalue $-1$ on the $\{t,j\}$ block:</p>
+<p>$$
+W_{xx}=\operatorname{diag}(-1,-1,1,1),\quad
+W_{yy}=\operatorname{diag}(-1,1,-1,1),\quad
+W_{zz}=\operatorname{diag}(-1,1,1,-1).
+$$</p>
+<p><strong>Their sum is the vacuum direction</strong>, $W_{xx}+W_{yy}+W_{zz}=\operatorname{diag}(-3,1,1,1)=D$, which is why $iD=i\sum_{j}W_{jj}$ is traceless and why the sum is taken rather than the differences. <strong>The two differences give</strong></p>
+<p>$$
+d_{2}=\tfrac{i}{2}\bigl(W_{yy}-W_{xx}\bigr)=\operatorname{diag}(0,i,-i,0),
+\qquad
+d_{3}=\tfrac{i}{2}\bigl(W_{zz}-W_{yy}\bigr)=\operatorname{diag}(0,0,i,-i).
+$$</p>
+<p><strong>Compare them with Gell-Mann, and the comparison is exact and worth doing in two steps.</strong></p>
+<p>$$
+d_{2}=i\,\lambda_{3}^{\mathrm{emb}},
+\qquad
+d_{3}=i\Bigl(-\tfrac12\lambda_{3}^{\mathrm{emb}}+\tfrac{\sqrt3}{2}\lambda_{8}^{\mathrm{emb}}\Bigr),
+$$</p>
+<p><strong>with $\lambda_{3}^{\mathrm{emb}}=\operatorname{diag}(0,1,-1,0)$ and $\lambda_{8}^{\mathrm{emb}}=\tfrac{1}{\sqrt3}\operatorname{diag}(0,1,1,-2)$.</strong> Three things follow, and each corrects a natural guess.</p>
+<ul>
+<li><strong>The factor $i$ is a convention, not a rescaling.</strong> The corpus's generators are anti-Hermitian and Gell-Mann's are Hermitian; $d_{a}=i\,(\text{real symmetric})$ throughout, exactly as the planes are $iS_{jk}$.</li>
+<li><strong>The individual norms agree.</strong> $\operatorname{tr}(d_{a}^{\dagger}d_{a})=2$ and $\operatorname{tr}(\lambda_{a}\lambda_{b})=2\delta_{ab}$, so $d_{2}$ is <em>literally</em> $i\lambda_{3}^{\mathrm{emb}}$ and no normalisation differs between the two conventions.</li>
+<li><strong>The change of basis is not orthogonal.</strong> $d_{3}$ is a unit-coefficient combination of the two, and $\operatorname{tr}(d_{2}^{\dagger}d_{3})=-1$, so the corpus's pair is a <strong>sheared</strong> basis of the same plane, not a rotated one.</li>
+</ul>
+<p><strong>The Gram, stated as a matrix.</strong> In the pairing $-\operatorname{tr}(XY)$ on anti-Hermitian arrays,</p>
+<p>$$
+G=\begin{pmatrix}\operatorname{tr}(d_{2}^{\dagger}d_{2}) &amp; \operatorname{tr}(d_{2}^{\dagger}d_{3})\\[2pt] \operatorname{tr}(d_{3}^{\dagger}d_{2}) &amp; \operatorname{tr}(d_{3}^{\dagger}d_{3})\end{pmatrix}
+=\begin{pmatrix}2 &amp; -1\\ -1 &amp; 2\end{pmatrix},
+$$</p>
+<p><strong>with $\det G=3$ and eigenvalues $1$ and $3$.</strong> Positive definite, so the pair is a genuine basis; not diagonal, so it is not an orthogonal one. <strong>Both statements matter</strong>: the first is why the two are linearly independent and the space is truly two-dimensional, the second is why "the two diagonal gluons" is a phrase with an asterisk.</p>
+<p><strong>The corpus says exactly this, in one sentence worth quoting.</strong> $\operatorname{tr}(d_{2}d_{3})=+1$ is, in its own words, <em>the array form of the statement that a colour basis is a choice and the algebra is not.</em> <strong>That is this article's thesis one scale down</strong>, and it is the reason the pair needs no defence.</p>
+<p><strong>An orthogonal pair is one rotation away, and the rotation is free.</strong> $G$ is positive definite and $2\times2$, so a single rotation diagonalises it; the result is $(\lambda_{3},\lambda_{8})$ up to signs and order. <strong>Nothing computed from the octet depends on which of the two pairs a calculation starts from</strong>, because both span the same two-dimensional space and the Casimirs are traces over the whole algebra.</p>
+<h3 id="what-is-less-certain-below-math82-said-plainly">What Is Less Certain Below $M_C$, Said Plainly</h3>
+<p><strong>The construction above $M_C$ is uniform, and that is why the labels there are unambiguous.</strong> One rule, $W_{\mu\nu}=\ell_{\mu}r_{\nu}$, produces one word per generator; the planes are sums and differences of words; <strong>every one of the fifteen is exactly one word or one combination of two, and the rule never consults a basis of the Cartan.</strong> That is what makes "cell $(i,j)$" a well-defined address above $M_C$.</p>
+<p><strong>Below $M_C$ the octet inherits a basis that was chosen for a different purpose.</strong> The pair $(d_{2},d_{3})$ exists because the colour block is chained $x\to y\to z$ and the two successive differences were taken. <strong>Chain it $z\to y\to x$ and you get another non-orthogonal pair spanning the same plane.</strong> So:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>status below $M_C$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the two-dimensional colour-block Cartan</td>
+<td>invariant</td>
+</tr>
+<tr>
+<td>the split $2+1$</td>
+<td>invariant</td>
+</tr>
+<tr>
+<td>the direction that leaves, $iD$</td>
+<td>invariant up to scale</td>
+</tr>
+<tr>
+<td>the pair $(d_{2},d_{3})$</td>
+<td>a by-product of the chain order</td>
+</tr>
+<tr>
+<td>the pair $(\lambda_{3},\lambda_{8})$</td>
+<td>an orthogonal basis of the same plane</td>
+</tr>
+<tr>
+<td>the names "the two diagonal gluons"</td>
+<td>a name for whichever pair is in use</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the phrase "the two diagonal gluons" is not canonical, and the honest statement says so.</strong> What is canonical is <em>the two-dimensional space of diagonal generators that act only on colour</em>. <strong>A reader who wants a canonical pair should fix an orthogonal one; a reader who wants to reproduce the corpus's arrays should use $d_{2}$ and $d_{3}$ and carry the $-1$ in the Gram.</strong> Neither choice is more physical.</p>
+<p><strong>One asymmetry is worth naming, because it is why the corpus's choice looks half-familiar.</strong> $d_{2}$ is exactly $i\lambda_{3}^{\mathrm{emb}}$: the chain starts at the $x$–$y$ difference, and that difference <em>is</em> Gell-Mann's third generator. <strong>$d_{3}$ is where the shear enters</strong>, because it takes the difference of the next pair rather than the trace-orthogonal complement. <strong>A reader who checks only $d_{2}$ against $\lambda_{3}$ will conclude the two conventions agree, and will be right about that entry and wrong about the pair.</strong></p>
+<p><strong>And this is the sense in which the two phases differ in kind.</strong> Above $M_C$ the labels are addresses in a grid whose construction never needed a Cartan basis, so the question "which pair?" does not arise. <strong>Below $M_C$ the group is unbroken and its adjoint is split into an octet and a singlet, and that split forces a choice of Cartan basis on us.</strong> The choice is free; the split is not.</p>
+<h2 id="the-ninth-slot-is-the-math108-vector-and-that-is-why-the-grid-closes">The Ninth Slot Is the $B-L$ Vector, and That Is Why the Grid Closes</h2>
+<p><strong>This model does not leave the singlet empty. It puts the corner in it.</strong></p>
+<p><strong>Take the colour-block identity and complete it tracelessly in four dimensions.</strong> The colour-block identity is $\operatorname{diag}(0,1,1,1)$ in the $(\ell,r,g,b)$ order — zero on the lepton line, one on each colour line — and its trace is three, so it is not a generator of $\mathfrak{su}(4)$. <strong>Subtract a quarter of the $4\times4$ identity:</strong></p>
+<p>$$
+\operatorname{diag}(0,1,1,1)-\tfrac34\,\mathbb 1
+=\bigl(-\tfrac34,\tfrac14,\tfrac14,\tfrac14\bigr)
+=\tfrac14\operatorname{diag}(-3,1,1,1)
+=\tfrac14 D .
+$$</p>
+<p><strong>The ninth slot, made traceless, is the corner.</strong> The colour-block trace and the $B-L$ direction are one direction once the four-dimensional trace is removed, and <strong>that identification is the reason the grid holds fifteen generators and not sixteen.</strong></p>
+<p><strong>So the singlet is not an absent gluon. It is a different particle.</strong> Three properties separate it from the octet, and each is checkable:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>property</th>
+<th>the eight</th>
+<th>the singlet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the algebra</td>
+<td>non-abelian, self-coupling</td>
+<td>abelian, no self-coupling</td>
+</tr>
+<tr>
+<td>the coupling</td>
+<td>the strong coupling</td>
+<td>its own, and it mixes downstream</td>
+</tr>
+<tr>
+<td>the fate below $M_C$</td>
+<td>massless, and it stays massless</td>
+<td>massless until a second vacuum mixes it</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>And the words matter here.</strong> The singlet is a gauge boson of the unbroken colour group in the same sense that the eight are — <strong>but it is not a gluon</strong>, because a gluon is a boson of the non-abelian factor. <strong>Calling it a ninth gluon would be the same error as calling the photon a fourth weak boson</strong>: the count of the factor's adjoint is eight, and the ninth slot belongs to a different factor.</p>
+<p><strong>The objection, named before it is answered.</strong> <em>If the singlet is the $B-L$ boson, is the exclusion of the singlet not a bookkeeping artefact?</em> <strong>No, and the arithmetic shows why.</strong> The exclusion is the statement $\dim\mathfrak{su}(3)=8$ rather than $9$; the model happens to possess a ninth vector, and that vector is not in the adjoint of $\mathrm{SU}(3)$. <strong>A theory with a $\mathrm{U}(3)$ gauge group would have nine, and would be a different theory with a different spectrum.</strong></p>
+<h2 id="the-labels-are-coordinates-here-too">The Labels Are Coordinates Here Too</h2>
+<p><strong>Nothing about the previous article's argument changes at $M_C$.</strong> The gauge field is still $A_\mu=\sum_{a}A^{a}_\mu t_{a}$, the index is still a coordinate, and a gauge transformation still rotates the components:</p>
+<p>$$
+A_\mu\ \longmapsto\ U A_\mu U^{\dagger}+\tfrac{i}{g_3}U\partial_\mu U^{\dagger},
+\qquad
+A^{a}_\mu\ \longmapsto\ R^{ab}A^{b}_\mu+\text{inhomogeneous}.
+$$</p>
+<p><strong>A field carrying $r\bar g$ in one gauge carries a combination of all eight in another.</strong> The label is a coordinate on the adjoint, and <strong>a coordinate that a symmetry rotates away is not a property of a particle.</strong></p>
+<p><strong>What changed at $M_C$ is not the status of the label. It is the status of the group.</strong> Above the transition the coordinates were coordinates of a basis with no factor attached; below it they are coordinates of a factor that is gauged and unbroken. <strong>The map became a map of something.</strong></p>
+<p><strong>And that is why QCD may talk about colour at all.</strong> The coordinate is conventional; the structure it coordinatises is measured. <strong>The invariants are the measurable part</strong>, and each is computed from the dimension and the rank with no reference to a letter:</p>
+<p>$$
+C_{F}=\frac{N^{2}-1}{2N}=\frac43,
+\qquad
+C_{A}=N=3,
+\qquad
+T_{R}=\tfrac12 .
+$$</p>
+<p><strong>These three are structural</strong>: they follow from $N=3$ alone, which is why they may be printed here, and the measurement that fixes $N=3$ is not this article's subject. <strong>What no experiment can decide is whether the third colour is called blue</strong>, because a relabelling of the three lines is an automorphism of the description and not a change in the world.</p>
+<h2 id="what-is-real-and-what-is-chosen">What Is Real and What Is Chosen</h2>
+<p><strong>Four facts, and each is checkable without naming a colour.</strong></p>
+<p>$$
+\boxed{\;
+G=\mathrm{SU}(3)_c,\qquad
+\dim_{\mathbb R}\mathfrak g=8,\qquad
+\operatorname{rank}\mathfrak g=2,\qquad
+\text{the singlet excluded}
+\;}
+$$</p>
+<p><strong>What is chosen is everything a relabelling of the three lines can move.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the letters $r,g,b$</td>
+<td>notation</td>
+</tr>
+<tr>
+<td>the label $r\bar g$ of a given slot</td>
+<td>a coordinate</td>
+</tr>
+<tr>
+<td>which two combinations are $\lambda_{3}$ and $\lambda_{8}$</td>
+<td>one basis of a two-dimensional space</td>
+</tr>
+<tr>
+<td>which diagonal slot is called the missing one</td>
+<td>a basis statement</td>
+</tr>
+<tr>
+<td>the pair $(d_{2},d_{3})$, non-orthogonal, against $(\lambda_{3},\lambda_{8})$</td>
+<td>a sheared basis of one plane</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The test is the one the companion article states, applied one size down.</strong> Take a sentence with a colour word, relabel the three lines, ask what survives. <strong>The dimension, the rank, the exclusion of the singlet and the three Casimirs survive. The letters do not.</strong></p>
+<h2 id="the-rank-ledger-math136">The Rank Ledger: $3=2+1$</h2>
+<p><strong>"The rank drops from three to two" is true of the simple factor and false of the algebra</strong>, and the difference is worth one paragraph because it is the commonest slip.</p>
+<p>$$
+\operatorname{rank}\mathfrak{su}(4)=3,
+\qquad
+\operatorname{rank}\bigl(\mathfrak{su}(3)\oplus\mathfrak u(1)\bigr)=2+1=3 .
+$$</p>
+<p><strong>The total rank is preserved at this breaking.</strong> One diagonal direction leaves the simple factor and becomes an abelian factor of its own, so the count of diagonal directions is the same before and after. <strong>Rank is monotone downwards inside an algebra and additive across factors</strong>, and this transition does both at once: $\mathfrak{su}(4)\to\mathfrak{su}(3)$ loses one, and $\mathfrak{su}(3)\to\mathfrak{su}(3)\oplus\mathfrak u(1)$ gains one back.</p>
+<p><strong>The ledger closes at three, and it must.</strong> A breaking that removed a diagonal direction and added nothing would leave a rank-two algebra with a rank-three's worth of Cartan directions, which is impossible. <strong>The corner is where the third direction goes</strong>, which is the same statement as the previous section's identification, read on the ranks instead of the cells.</p>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>arithmetic</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>slots of the tensor product</td>
+<td>$3\times3$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>the adjoint</td>
+<td>$3^{2}-1$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>the singlet</td>
+<td>$9-8$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>the octet's composition</td>
+<td>six off-diagonal $+$ two diagonal</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>the diagonal cells</td>
+<td>three cells, one trace removed</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>the dimension</td>
+<td>$3^{2}-1$</td>
+<td>$8=\dim\mathfrak{su}(3)$</td>
+</tr>
+<tr>
+<td>the rank</td>
+<td>independent diagonal directions</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>the rank ledger</td>
+<td>$2+1$</td>
+<td>$3=\operatorname{rank}\mathfrak{su}(4)$</td>
+</tr>
+<tr>
+<td>the kernel at $M_C$</td>
+<td>six off-diagonal $+$ two diagonal $+$ the corner</td>
+<td>$6+2+1=9=\dim\mathfrak u(3)$</td>
+</tr>
+<tr>
+<td>the singlet's identity</td>
+<td>$\operatorname{diag}(0,1,1,1)-\tfrac34\mathbb 1$</td>
+<td>$\tfrac14 D$</td>
+</tr>
+<tr>
+<td>the eight's mass</td>
+<td>$[D,X]=0$ on the colour block</td>
+<td>$0$, exact</td>
+</tr>
+<tr>
+<td>the sextet's mass</td>
+<td>$D$ differs across the lepton line</td>
+<td>$32v^{2}$</td>
+</tr>
+<tr>
+<td>the fundamental Casimir</td>
+<td>$(9-1)/(2\cdot3)$</td>
+<td>$4/3$</td>
+</tr>
+<tr>
+<td>the adjoint Casimir</td>
+<td>$N$ at $N=3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>the lepton-line entry of the Cartan</td>
+<td>$a\,iD+b\,d_{2}+c\,d_{3}\mapsto-3ia$</td>
+<td>zero iff $a=0$</td>
+</tr>
+<tr>
+<td>the colour-block Cartan</td>
+<td>span of the two with zero lepton entry</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>the Gram of the pair</td>
+<td>$\det\begin{pmatrix}2&amp;-1\\-1&amp;2\end{pmatrix}$</td>
+<td>$3&gt;0$, so a basis</td>
+</tr>
+<tr>
+<td>the Gram's eigenvalues</td>
+<td>$\lambda^{2}-4\lambda+3$</td>
+<td>$1$ and $3$, not degenerate</td>
+</tr>
+<tr>
+<td>$d_{2}$ against Gell-Mann</td>
+<td>$d_{2}=i\lambda_{3}^{\mathrm{emb}}$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>the individual norms</td>
+<td>$\operatorname{tr}(d_{a}^{\dagger}d_{a})$ and $\operatorname{tr}(\lambda_{a}\lambda_{b})=2\delta_{ab}$</td>
+<td>$2=2$, no rescaling</td>
+</tr>
+<tr>
+<td>a rank-one residual would give</td>
+<td>one diagonal boson</td>
+<td>not colour</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>Eight, rank two, singlet excluded.</strong> The phrase <em>one fewer on the diagonal</em> is the arithmetic $9\to8$, and it is the same arithmetic as the companion article's $16\to15$ applied one size down. <strong>The dimension, the rank and the exclusion are invariant; the letters and the choice of basis are not.</strong></p>
+<p><strong>The residual is $\mathrm{SU}(3)$ and not $\mathrm{SO}(3)$, and the rank is the test.</strong> Two diagonal bosons require rank two, and a rank-one group has one. <strong>Colour is never broken at $M_C$</strong>, which is why the eight are exact zeros of the mass matrix rather than small ones.</p>
+<p><strong>The ninth slot is occupied.</strong> The colour-block identity, completed tracelessly in four dimensions, is the corner $D/4$; the singlet is therefore the $B-L$ vector and not a missing gluon. <strong>That identification is why fifteen generators and not sixteen</strong>, and it is the sharpest link between the two articles.</p>
+<p><strong>The two diagonal gluons are a space, not a pair.</strong> The Cartan directions inside the colour block are exactly those with zero lepton-line entry, so the space is two-dimensional and that is invariant; the pair $(d_{2},d_{3})$ is a non-orthogonal basis of it, with $\operatorname{tr}(d_{2}^{\dagger}d_{3})=-1$ and Gram eigenvalues $1$ and $3$. <strong>$d_{2}$ is exactly $i\lambda_{3}^{\mathrm{emb}}$ and the norms agree term by term</strong>, so the conventions differ by a shear and not by a rescaling — a fact that misleads anyone who checks only the first entry.</p>
+<p><strong>The labels are coordinates below $M_C$ as they were above it.</strong> What changed is that the group is now gauged, so the invariants computed from the coordinates are measurable. <strong>The map became a map of something, and the territory is the group.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\ell,r,g,b)$</td>
+<td>the four lines, in the order the vacuum uses</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)_c$</td>
+<td>$\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$, the unbroken colour factor, dimension $8$, rank $2$</td>
+</tr>
+<tr>
+<td>$\mathfrak u(3)$</td>
+<td>$\mathfrak{su}(3)_c\oplus\mathfrak u(1)_{B-L}$, the kernel of $\operatorname{ad}(iD)$, dimension $9$</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(-3,1,1,1)$, the vacuum's direction</td>
+</tr>
+<tr>
+<td>$B-L$</td>
+<td>$\tfrac13 D$, the abelian factor's generator</td>
+</tr>
+<tr>
+<td>$d_{2}$, $d_{3}$</td>
+<td>the corpus's two colour diagonals, $\operatorname{diag}(0,i,-i,0)$ and $\operatorname{diag}(0,0,i,-i)$</td>
+</tr>
+<tr>
+<td>$\lambda_{3}^{\mathrm{emb}}$, $\lambda_{8}^{\mathrm{emb}}$</td>
+<td>Gell-Mann's two, embedded on the colour block: $d_{2}=i\lambda_{3}^{\mathrm{emb}}$, $d_{3}$ a unit combination of both</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>the Gram matrix $\begin{pmatrix}2&amp;-1\\-1&amp;2\end{pmatrix}$ of the corpus's pair, $\det=3$</td>
+</tr>
+<tr>
+<td>$C_{F}$, $C_{A}$, $T_{R}$</td>
+<td>the three Casimirs, fixed by $N=3$</td>
+</tr>
+<tr>
+<td>$\mathbf 8$, $\mathbf 1$</td>
+<td>the adjoint and the singlet of the tensor product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-colours-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html">The Colours in $\mathrm{SU}(4)$: A Coordinate Label on the Fifteen, Not a Charge</a>, the first half: the fifteen flat labels and why none is a charge.</li>
+<li><a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">The Breaking of the Primordial Force</a>, for $\operatorname{ad}(iD)$, its spectrum $0^{9}\oplus(\pm4i)^{3}$ and the kernel $\mathfrak u(3)$.</li>
+<li><a href="classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html">Classification of the Bosons in the $\mathrm{SU}(4)$ Model</a>, for the grid and the octet's $6+2$ read as cells.</li>
+<li><a href="quantum-chromodynamics-as-the-residual-of-su4.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$</a>, for what the corpus does and does not reach of QCD, and for the status of $N_c=3$ as imported.</li>
+<li><a href="the-centraliser-the-complement-and-the-index-dimension-and-rank.html">The Centraliser, the Complement, and the Index</a>, for rank monotone downwards inside an algebra and additive across factors.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The $\mathrm{SU}(4)$ Instanton — Two Factors That Are Wrong and One That Is Not — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A review, not an edit. No article was modified. Every number below was recomputed from the article&#x27;s own inputs,, and.">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-math1-instanton-two-factors-that-are-wrong-and-one-that-is-not"><strong>Audit: The $\mathrm{SU}(4)$ Instanton — Two Factors That Are Wrong and One That Is Not</strong></h1>
+<p><em>Status of this file.</em> <strong>A review, not an edit.</strong> No article was modified. Every number below was recomputed from the article's own inputs, $g_4^{2}(M_X)=0.730$, $\alpha_4(M_X)=0.0581$ and $\alpha_4(M_C)=1/17.31$.</p>
+<p><em>What the file is for.</em> It records what the posted review of <code>articles_physics/the-su4-instanton-a-matrix-transcription-outside-the-algebra.md</code> got right, what it got wrong, and what it missed. <strong>The review recommends one "must fix" and gets the physics of that fix wrong; it endorses the one paragraph that carries an error; and its one proposed derivation is arithmetically off by three.</strong></p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>The review's "must fix" would entrench an error.</strong> The article says $\theta_4$ is physical <em>because</em> the content is anomaly-free. It is not physical: the content is massless and the axial rotation removes it. The review repeats the article's claim in clearer words, which makes it worse.</li>
+<li><strong>The review praises the one paragraph that is wrong.</strong> The $\theta$ term's coefficient is off by a factor of two, and the article's two integrality displays cannot both hold — they differ by $g^{2}/2$, not by $2$.</li>
+<li><strong>The review's proposed derivation of $4N-5$ gives $8$, not $11$.</strong> The number $11$ in the article is right; the derivation offered for it is wrong, and so is the article's own sentence justifying it.</li>
+<li><strong>One error the review missed and one it caught partially.</strong> The standard embedding is not the maximal one; and $S(M_C)$ is $108.7$ or $108.8$, not $108.6$.</li>
+<li><strong>Nothing is applied without the author's decision.</strong> §8 lists the four decisions.</li>
+</ol>
+<h2 id="1-the-verdict">1. The Verdict</h2>
+<p><strong>The article's main claims survive. Its $\theta_4$ section does not.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S=8\pi^{2}/g_4^{2}=2\pi/\alpha_4=108.2$</td>
+<td>correct</td>
+</tr>
+<tr>
+<td>$e^{-S}=1.1\times10^{-47}$</td>
+<td>correct to the quoted digit</td>
+</tr>
+<tr>
+<td>$4N=16=4+1+11$</td>
+<td>correct</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{inst}}\lesssim1/M_C$</td>
+<td>correct, and correctly argued</td>
+</tr>
+<tr>
+<td>"transcribed, not derived"</td>
+<td>correct, and the best part of the piece</td>
+</tr>
+<tr>
+<td>$\theta_4$ is physical because the content is anomaly-free</td>
+<td><strong>wrong, and wrong in the direction the review says to fix</strong></td>
+</tr>
+<tr>
+<td>the $\theta$ term's coefficient</td>
+<td><strong>off by a factor of two</strong></td>
+</tr>
+<tr>
+<td>$S(M_C)=108.6$</td>
+<td><strong>wrong: $108.7$ with the article's own $\alpha_4(M_C)$, $108.8$ with the corrected running</strong></td>
+</tr>
+<tr>
+<td>"the standard one is the maximal embedding"</td>
+<td><strong>wrong: the standard is the block embedding $4=2\oplus1\oplus1$, the most reducible one</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two of these are substantive and both sit in the $\theta_4$ material</strong>, which is exactly where the review put its attention and where it got the physics backwards.</p>
+<h2 id="2-finding-one-math30-is-removable-not-physical">2. Finding One: $\theta_4$ Is Removable, Not Physical</h2>
+<p><strong>The article's chain.</strong> "A rotation of the fermions by a chiral phase shifts $\theta_4$ by an amount fixed by the anomaly coefficient, and the corpus's sixteen are paired so that the anomaly cancels — which is why the shift is zero and $\theta_4$ is physical rather than removable."</p>
+<p><strong>The review's replacement.</strong> "The content is vector-like, so the $\mathrm{SU}(4)^{3}$ anomaly vanishes identically; a chiral content would have let $\theta_4$ be rotated away."</p>
+<p><strong>Both use the same premise, and it is false: vector-like content does not make the $\theta$-shift vanish.</strong></p>
+<h3 id="21-two-different-anomalies-and-the-conflation">2.1 Two different anomalies, and the conflation</h3>
+<p><strong>The one that cancels is the triangle with three gauge currents.</strong> For the content $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$,</p>
+<p>$$
+A(\mathbf4)+A(\bar{\mathbf4})=0 \quad\text{pairwise, so}\quad 2A(\mathbf4)-2A(\mathbf4)=0 .
+$$</p>
+<p>That is what makes the theory consistent, and it is what the companion article means by "the anomaly cancels by counting".</p>
+<p><strong>The one that shifts $\theta$ is the mixed axial–gauge anomaly</strong>, the divergence of the axial current:</p>
+<p>$$
+\partial_{\imath}j^{5}_{\imath}=\frac{g^{2}}{16\pi^{2}}\operatorname{tr}\bigl(F\tilde F\bigr)\sum_{f}2T(R_{f}) \quad\text{schematically},
+$$</p>
+<p><strong>and every term in that sum is positive.</strong> The two chiralities of a Dirac field contribute with the same sign here, because the axial rotation acts with opposite signs on them and the Dynkin index does not. For this content the coefficient is $16\times2\times\tfrac12$, not zero.</p>
+<p><strong>So the two statements are not the same statement.</strong> Gauge anomaly zero says the theory is consistent. $\theta$-shift nonzero says a chiral rotation moves $\theta$. <strong>The article needs the second to be zero and it is not.</strong></p>
+<h3 id="22-what-follows-and-it-is-the-opposite-of-what-the-article-says">2.2 What follows, and it is the opposite of what the article says</h3>
+<p><strong>With all eight Dirac fields massless — which the companion article establishes, and states as a choice rather than a theorem — the rotation costs nothing.</strong> Nothing else in the Lagrangian changes: no Yukawa, since $\langle\Xi\rangle=0$; no mass term, since $m=0$ is chosen. <strong>So $\theta_4$ is set to zero by a field redefinition and is not a parameter of the phase.</strong> Its effects are not suppressed by $10^{-47}$; they are absent.</p>
+<p><strong>The invariant is $\bar\theta_4=\theta_4+\arg\det m$, and the model sets $m=0$.</strong> That is the sharp form: $\theta_4$ alone was never the physical parameter, the combination was, and with the model's choice the combination is removable.</p>
+<p><strong>This has three consequences, and all three simplify the article.</strong></p>
+<ul>
+<li>The bullet "it is free" becomes "it is free in the Lagrangian and redundant in the phase".</li>
+<li>The bullet "it is unobservable" becomes exact instead of an estimate at $10^{-47}$.</li>
+<li>The bullet "there is no axion" becomes trivially satisfied: there is nothing to solve, so the absence of a Peccei–Quinn field is not a choice with a price.</li>
+</ul>
+<p><strong>It also answers the article's own "what would be wrong" test.</strong> The $\theta_4$ term is a total derivative, so it cannot affect the equations of motion; with massless fermions it cannot affect the physics either. <strong>That is a stronger statement than "the phase is not ours", and it is the one the corpus can defend.</strong></p>
+<h3 id="23-what-the-correction-does-not-disturb">2.3 What the correction does not disturb</h3>
+<p><strong>The instanton itself is untouched.</strong> The action, the suppression, the moduli, the cutoff and the transcription argument all survive: they never used $\theta_4$. <strong>The $\theta$ term is one paragraph of the article, not its spine.</strong></p>
+<h2 id="3-finding-two-the-math54-term-is-off-by-a-factor-of-two">3. Finding Two: the $\theta$ Term Is Off by a Factor of Two</h2>
+<p><strong>The article writes two integrality statements and calls them equivalent.</strong></p>
+<p>$$
+\frac{g_4^{2}}{32\pi^{2}}\int\operatorname{tr}\bigl(\mathbb{F}\tilde{\mathbb{F}}\bigr)\in\mathbb{Z}
+\quad\text{"equivalently"}\quad
+\frac{1}{16\pi^{2}}\int\operatorname{tr}\bigl(F_{\imath\jmath}\tilde F_{\imath\jmath}\bigr)\in\mathbb{Z}.
+$$</p>
+<p><strong>They are not equivalent, and neither holds.</strong> With $\operatorname{tr}(T_{a}T_{b})=\tfrac12\delta_{ab}$ the trace is half the sum, and the BPST configuration has</p>
+<p>$$
+\int F_{a}\tilde F_{a}\,d^{4}x=\frac{32\pi^{2}}{g^{2}},
+\qquad\text{so}\qquad
+\int\operatorname{tr}\bigl(\mathbb{F}\tilde{\mathbb{F}}\bigr)=\frac{16\pi^{2}}{g^{2}} .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>expression</th>
+<th>value for one BPST instanton</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dfrac{g^{2}}{32\pi^{2}}\displaystyle\int\operatorname{tr}$</td>
+<td>$\tfrac12$</td>
+</tr>
+<tr>
+<td>$\dfrac{1}{16\pi^{2}}\displaystyle\int\operatorname{tr}$</td>
+<td>$\dfrac{1}{g^{2}}=1.37$</td>
+</tr>
+<tr>
+<td>$\dfrac{g^{2}}{16\pi^{2}}\displaystyle\int\operatorname{tr}$</td>
+<td>$1$ ✓</td>
+</tr>
+<tr>
+<td>$\dfrac{g^{2}}{32\pi^{2}}\displaystyle\int F_{a}\tilde F_{a}$</td>
+<td>$1$ ✓</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the correct pair is $\dfrac{g^{2}}{16\pi^{2}}\displaystyle\int\operatorname{tr}$ and $\dfrac{g^{2}}{32\pi^{2}}\displaystyle\int F_{a}\tilde F_{a}$</strong>, and the factor of two between them is the trace's — which is what the sentence "the factor of two is the trace's, not the group's" means to say. <strong>The article keeps the trace in both displays and drops the $g^{2}$ from the second, which is the one combination that fails.</strong></p>
+<p><strong>The corpus already has the right form.</strong> The EDM article writes</p>
+<p>$$
+\theta\,\frac{g_s^{2}}{32\pi^{2}}\,G_{a\imath\jmath}\tilde{G}_{a\imath\jmath},
+$$</p>
+<p>a sum over generators, no trace — correct. <strong>The instanton article is the deviation.</strong></p>
+<h3 id="31-the-periodicity-is-the-casualty">3.1 The periodicity is the casualty</h3>
+<p><strong>With the article's coefficient the weight of one instanton is $e^{i\theta/2}$, whose period is $4\pi$.</strong> With the corrected coefficient it is $e^{i\theta}$, period $2\pi$. <strong>So the article's stated period is right and its stated coefficient is wrong, and the two cannot both be kept.</strong> The fix is one symbol in two places: $32\pi^{2}\to16\pi^{2}$ in the $\theta$ term and in the integrality display.</p>
+<p><strong>Everything numerical is unaffected.</strong> $S=8\pi^{2}/g^{2}$ does not use the $\theta$ normalisation, so $108.2$, $1.1\times10^{-47}$ and the whole moduli discussion stand.</p>
+<h2 id="4-finding-three-the-reviews-derivation-of-math80-gives-math81">4. Finding Three: the Review's Derivation of $4N-5$ Gives $8$</h2>
+<p><strong>The article says</strong> "eleven parameters are left after the stabiliser is quotiented out. The arithmetic: $4N-5=11$."</p>
+<p><strong>The review offers the derivation</strong>: the stabiliser is $\mathrm{SU}(N-2)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ of dimension $4N-9$, "leaving $4N-5$". <strong>That is not arithmetic, it is two different numbers.</strong></p>
+<p>$$
+\dim\mathrm{SU}(4)=15,\qquad
+\dim\bigl[\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{U}(1)\bigr]=3+3+1=7,
+\qquad
+15-7=8 .
+$$</p>
+<p><strong>The review's own displayed formula, $(N^{2}-1)-[(N-2)^{2}-1+3+1]$, evaluates to $8$ at $N=4$.</strong> It then reports the result as $11$. <strong>Applying the review's fix would replace a right number with a wrong derivation of it.</strong></p>
+<p><strong>And the article's sentence has the same defect.</strong> Quotienting by the stabiliser of the $\mathrm{SU}(2)$ embedding gives $4N-8=8$, not $4N-5=11$. So "$4N-5$ after the stabiliser is quotiented out" cannot be a plain coset statement in either version.</p>
+<p><strong>What is true, and what the article now says.</strong> $4N$ is the collective-coordinate count (equivalently the ADHM count $4Nk$ at $k=1$), and $5$ of them are the four translations and the one dilatation. <strong>The other eleven split in two</strong>: the embedding orbit $\mathrm{SU}(4)/[\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{U}(1)]$ has dimension $15-7=8$, and the three rotations of the instanton inside its own $\mathrm{SU}(2)$ complete it. <strong>$8+3=11$</strong>, and the check that it is right is that it reproduces $4N-5$ at $N=2$ ($0+3=3$) and at $N=3$ ($4+3=7$) as well as at $N=4$.</p>
+<p><strong>So both the article's sentence and the review's derivation are wrong, and the number in the table is right.</strong> The review's instinct — "the reader cannot see where the $5$ comes from" — is sound; its remedy is not.</p>
+<h2 id="5-finding-four-the-maximal-embedding-is-the-wrong-embedding">5. Finding Four: "the Maximal Embedding" Is the Wrong Embedding</h2>
+<p><strong>The article says</strong> "$\mathrm{SU}(4)$ has more than one conjugacy class of $\mathrm{SU}(2)$ subgroups ... the standard one is the maximal embedding, and the others are not computed here."</p>
+<p><strong>The standard embedding is the block one, $4=2\oplus1\oplus1$, and it is the most reducible, not the maximal.</strong> The decompositions of the $\mathbf4$ under an $\mathrm{SU}(2)$ are</p>
+<p>$$
+\mathbf4=\mathbf2\oplus\mathbf1\oplus\mathbf1,\qquad
+\mathbf4=\mathbf3\oplus\mathbf1,\qquad
+\mathbf4=\mathbf2\oplus\mathbf2,\qquad
+\mathbf4=\mathbf4 .
+$$</p>
+<p><strong>The last is the principal (irreducible) embedding, and it is the one the word "maximal" describes.</strong> The BPST solution uses the first. <strong>So the article's sentence names the wrong class</strong>, and its moduli table is the block-embedding table.</p>
+<p><strong>The review's physics point here is right and worth keeping</strong>: the <em>action</em> is embedding-independent at unit winding — it is $8\pi^{2}|n|/g^{2}$ and knows nothing but $n$ — while the <em>moduli count and the fluctuation spectrum</em> are not. The article's "the article's claim does not depend on which is chosen" should become "the action and the topological charge do not depend on which is chosen; the table above is the block embedding's".</p>
+<h2 id="6-finding-five-math118">6. Finding Five: $S(M_C)$</h2>
+<p><strong>The article quotes $S(M_C)=2\pi/0.0578=108.6$.</strong> Two problems, and the review found the first.</p>
+<ul>
+<li>$2\pi/0.0578=108.71$, so the entry should be $108.7$, not $108.6$. The article's "half a unit larger" is then $0.55$, which the sentence's own arithmetic supports.</li>
+<li><strong>With the corrected running the coupling is $\alpha_4(M_C)=1/17.31=0.05776$, giving $S(M_C)=108.78$.</strong> So the value is $108.8$ and the difference is $0.62$ — "six tenths larger", not "half".</li>
+</ul>
+<p><strong>Both fixes are one digit each.</strong> The conclusion — the suppression is the same to two significant figures across the phase — is unaffected.</p>
+<h2 id="7-what-the-review-got-right">7. What the Review Got Right</h2>
+<p><strong>Six items, and five of them are worth applying.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S(M_C)$ inconsistency</td>
+<td>right, and the corrected running makes it worse than the review knew</td>
+</tr>
+<tr>
+<td>"three of the fifteen" is a gauge choice</td>
+<td>right: $F$ lies in the $\mathrm{su}(2)$, $A$ need not, and a gauge transformation outside the subgroup puts components on all fifteen</td>
+</tr>
+<tr>
+<td>embedding-independence needs a scope qualifier</td>
+<td>right, though for the reason in §5, not the one given</td>
+</tr>
+<tr>
+<td>"largest number in the block" is ambiguous</td>
+<td>right: $M_P=1.22\times10^{19}$ is a larger number, so the claim needs "dimensionless"</td>
+</tr>
+<tr>
+<td>the $\theta$ period argument should show $e^{2\pi in}=1$</td>
+<td>right, one clause</td>
+</tr>
+<tr>
+<td>"no observable depends on it" needs a warrant</td>
+<td>right in spirit; §2 makes it exact rather than approximate</td>
+</tr>
+<tr>
+<td>the anomaly logic is backwards and must be fixed</td>
+<td><strong>wrong, and it is the one item it calls mandatory</strong></td>
+</tr>
+<tr>
+<td>the stabiliser derivation</td>
+<td><strong>wrong, gives $8$</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The review's structural suggestions are sound.</strong> The two summary sections do overlap; §<em>Why the Algebra Cannot Hold It</em> is the article's core and would read better earlier; the $\theta_4$ anomaly point deserves its own subsection header. <strong>None changes a number.</strong></p>
+<h2 id="8-suggested-strategy">8. Suggested Strategy</h2>
+<p><strong>One finding of physics, one of normalisation, three of arithmetic, and one of terminology. Nothing applied.</strong></p>
+<p><strong>The order.</strong></p>
+<ol>
+<li><strong>§<em>$\theta_4$ and the Questions It Raises</em>.</strong> Replace the anomaly paragraph with the two-anomaly statement of §2.1, and the "physical rather than removable" conclusion with "redundant above $M_C$ because the fermions are massless, with $\bar\theta_4=\theta_4+\arg\det m$ and $m=0$".</li>
+<li><strong>§<em>The Topological Term</em> and §<em>The Checks</em>.</strong> $g^{2}/32\pi^{2}\operatorname{tr}\to g^{2}/16\pi^{2}\operatorname{tr}$; the second display becomes $g^{2}/32\pi^{2}\int F_{a}\tilde F_{a}$; the checks row corrected.</li>
+<li><strong>The introduction, the box and the summary.</strong> "a free parameter of the model" → "a parameter the phase renders redundant"; the summary's "physical because the content is anomaly-free" → the corrected statement.</li>
+<li><strong>§<em>The Moduli</em>.</strong> $4N-5$ kept, the justification corrected per §4; "maximal embedding" → the block embedding $4=2\oplus1\oplus1$, with the scope clause of §5.</li>
+<li><strong>The three minor numbers.</strong> $S(M_C)=108.8$ and "six tenths"; "the largest dimensionless number in the coupling block"; $e^{2\pi in}=1$.</li>
+<li><strong>§<em>The Action and Its Size</em>.</strong> The gauge-choice qualifier on "three of the fifteen".</li>
+</ol>
+<p><strong>The decisions.</strong></p>
+<ul>
+<li><strong>D1. The $\theta_4$ status.</strong> Accept that $\theta_4$ is redundant above $M_C$, or keep "physical" and defend it. <strong>The audit recommends acceptance</strong>: the content is massless by the model's own choice, the axial anomaly is nonzero, and the corpus's instanton article already lists "its relation to the $\theta$-angle" as untreated. <strong>This is the one change that alters the article's thesis</strong>, so it is the author's call and not a proofreading fix.</li>
+<li><strong>D2. The $\theta$ normalisation.</strong> Correct to $g^{2}/16\pi^{2}\operatorname{tr}$, or keep the displays and drop the $2\pi$ period. <strong>The audit recommends the correction</strong>: it restores the period the article already claims and matches the EDM article's convention.</li>
+<li><strong>D3. The $4N-5$ justification.</strong> Replace with the "standard count, five removed" form, or leave the sentence. <strong>The audit recommends replacing</strong>, because the current sentence is the only unsupported derivation in an article that is otherwise careful about what it derives.</li>
+<li><strong>D4. The minor items.</strong> Apply or defer.</li>
+</ul>
+<p><strong>What this audit does not do.</strong> It does not compute the fluctuation spectrum, does not settle which embedding the model should use, and does not prove that the block embedding is the one the corpus intends. <strong>It also does not claim that the correction to $\theta_4$ changes any number</strong>: the instanton's action, suppression and moduli are independent of it.</p>
+<h2 id="9-the-checks-run">9. The Checks Run</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$8\pi^{2}/g^{2}$ at $g^{2}=0.730$</td>
+<td>$108.16$</td>
+</tr>
+<tr>
+<td>$2\pi/\alpha_4(M_X)$ at $\alpha_4=0.0581$</td>
+<td>$108.16$</td>
+</tr>
+<tr>
+<td>$e^{-108.16}$</td>
+<td>$1.06\times10^{-47}$</td>
+</tr>
+<tr>
+<td>$1/\alpha_4(M_C)$ from $b_0=\tfrac{26}{3}$</td>
+<td>$17.31$</td>
+</tr>
+<tr>
+<td>$S(M_C)$ from $\alpha_4(M_C)=0.05776$</td>
+<td>$108.78$</td>
+</tr>
+<tr>
+<td>$S(M_C)$ from the article's $0.0578$</td>
+<td>$108.71$</td>
+</tr>
+<tr>
+<td>$4N$ at $N=4$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$4N-5$</td>
+<td>$11$</td>
+</tr>
+<tr>
+<td>$4N-9$ at $N=4$</td>
+<td>$7$: the stabiliser's dimension</td>
+</tr>
+<tr>
+<td>the coset $\mathrm{SU}(4)/[\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{U}(1)]$</td>
+<td>$8$, not $11$</td>
+</tr>
+<tr>
+<td>the review's formula at $N=4$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\int F_{a}\tilde F_{a}$ for BPST</td>
+<td>$32\pi^{2}/g^{2}=432.6$</td>
+</tr>
+<tr>
+<td>$(g^{2}/32\pi^{2})\int\operatorname{tr}$</td>
+<td>$0.5$</td>
+</tr>
+<tr>
+<td>$(1/16\pi^{2})\int\operatorname{tr}$</td>
+<td>$1/g^{2}=1.37$</td>
+</tr>
+<tr>
+<td>$(g^{2}/16\pi^{2})\int\operatorname{tr}$</td>
+<td>$1$ ✓</td>
+</tr>
+<tr>
+<td>period implied by $e^{i\theta/2}$</td>
+<td>$4\pi$</td>
+</tr>
+<tr>
+<td>axial $\theta$-shift coefficient, 16 Weyl in $\mathbf4$ and $\bar{\mathbf4}$</td>
+<td>$16\times2\times\tfrac12=16$, nonzero</td>
+</tr>
+<tr>
+<td>gauge anomaly, $2A(\mathbf4)+2A(\bar{\mathbf4})$</td>
+<td>$0$, as it must be</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

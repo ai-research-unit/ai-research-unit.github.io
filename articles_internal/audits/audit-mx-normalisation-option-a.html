@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The Sextet Mass Normalisation, Option A Executed — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A corpus-wide convention change, executed 2026-11-25 on the user&#x27;s instruction (&quot;A&quot;). Eleven files, twenty-nine edits, build clean.">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-sextet-mass-normalisation-option-a-executed"><strong>Audit: The Sextet Mass Normalisation, Option A Executed</strong></h1>
+<p><em>Status of this file.</em> <strong>A corpus-wide convention change, executed 2026-11-25 on the user's instruction ("A").</strong> Eleven files, twenty-nine edits, build clean.</p>
+<h2 id="what-was-wrong">What Was Wrong</h2>
+<p><strong>The corpus stated three things that cannot all hold.</strong> With $Ξ_0=v_CD$, $D=\operatorname{diag}(-3,1,1,1)$, $\operatorname{tr}D^{2}=12$, an orthonormal basis $\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$, and the canonical mass term $\tfrac12M^{2}A^{2}$:</p>
+<p>$$
+\operatorname{tr}\bigl([t_a,\Xi_0]^{\dagger}[t_b,\Xi_0]\bigr)=8\,g_4^{2}v_C^{2}\,\delta_{ab}\ \text{on the six}
+\ \Longrightarrow\ M_X^{2}=16\,g_4^{2}v_C^{2}.
+$$</p>
+<p><strong>The corpus wrote $\tfrac12g_4^{2}v_C^{2}$</strong>, a factor $32$ low, and reconciled it with the array-level $32v^{2}$ by defining $v_C=8v/g_4$. <strong>That $8$ was $\sqrt{2\cdot32}$</strong>, a bookkeeping square root with no derivation: it was chosen so the chain closed.</p>
+<p><strong>The $16$ is derived and the $8$ was not.</strong> $16=(\Delta d)^{2}=(1-(-3))^{2}$ is one power of the commutator on each side of the trace; the $2$ that turns $16$ into $32$ is the $\tfrac12$ of $\tfrac12M^{2}A^{2}$. <strong>Both factors are statements about the Lagrangian</strong>, so $v_C=\sqrt2\,v/g_4$ follows rather than being fitted.</p>
+<h2 id="what-changed">What Changed</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>edits</th>
+<th>what</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-breaking-…-six-leptoquarks.md</code></td>
+<td>7</td>
+<td>the display, the conversion, the $\sqrt{2\cdot32}$ sentence, three table rows, the notation row</td>
+</tr>
+<tr>
+<td><code>six-leptoquarks-above-m-c-…</code></td>
+<td>6</td>
+<td>two displays, the checks row, the <strong>Mass.</strong> sentence, the notation row ($g_4v_C/\sqrt2\to4g_4v_C$)</td>
+</tr>
+<tr>
+<td><code>lepton-flavour-…</code></td>
+<td>3</td>
+<td>the contact-term identity, two table rows</td>
+</tr>
+<tr>
+<td><code>matching-at-m-c-…</code></td>
+<td>4</td>
+<td>three table rows, one prose display</td>
+</tr>
+<tr>
+<td><code>the-mass-matrix-of-the-fifteen-…</code></td>
+<td>1</td>
+<td>the notation row defining $v_C$</td>
+</tr>
+<tr>
+<td><code>the-one-coupling-…</code></td>
+<td>2</td>
+<td>display and notation row</td>
+</tr>
+<tr>
+<td><code>the-primordial-coupling-…</code></td>
+<td>1</td>
+<td>display, and the "up to the corpus's normalisation" hedge removed</td>
+</tr>
+<tr>
+<td><code>the-threshold-scales-…</code></td>
+<td>1</td>
+<td>checks row</td>
+</tr>
+<tr>
+<td><code>three-diagrams-…</code></td>
+<td>2</td>
+<td>prose and notation row</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-scalar-matrix-…</code></td>
+<td>1</td>
+<td>"with the corpus's normalisation" replaced by the explicit basis</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-sixteen-…</code></td>
+<td>8</td>
+<td>$v_C$ formula, numeric, the check display, three table rows, two prose numbers</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Unchanged everywhere: $32v^{2}$.</strong> The array condensate $v$ does not move; only the relation between $v_C$ and $v$ does.</p>
+<h2 id="the-numbers">The Numbers</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>before</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_X^{2}$</td>
+<td>$\tfrac12g_4^{2}v_C^{2}$</td>
+<td>$16g_4^{2}v_C^{2}$</td>
+</tr>
+<tr>
+<td>$v_C$</td>
+<td>$8v/g_4=3.85\times10^{5}$ GeV</td>
+<td>$\sqrt2\,v/g_4=6.82\times10^{4}$ GeV</td>
+</tr>
+<tr>
+<td>$v_C$ in prose</td>
+<td>$385$ TeV</td>
+<td>$68$ TeV</td>
+</tr>
+<tr>
+<td>$M_X$ in terms of $v_C$</td>
+<td>$g_4v_C/\sqrt2$</td>
+<td>$4g_4v_C$</td>
+</tr>
+<tr>
+<td>$M_X$</td>
+<td>$2.33\times10^{5}$ GeV</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>the inverse check</td>
+<td>$\tfrac12(0.730)(3.853\times10^{5})^{2}=5.42\times10^{10}$</td>
+<td>$16(0.730)(6.818\times10^{4})^{2}=5.43\times10^{10}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The inverse check was recomputed, not relabelled</strong>: the same $5.43\times10^{10}$ GeV$^{2}$ comes back, whose root is the coupling article's $2.33\times10^{5}$ GeV.</p>
+<h2 id="the-one-physical-consequence-stated">The One Physical Consequence, Stated</h2>
+<p><strong>The four-fermion coefficient's elegance is lost.</strong> The old $\tfrac12$ made</p>
+<p>$$
+\frac{g_4^{2}}{2M_X^{2}}=\frac{1}{v_C^{2}}
+$$</p>
+<p>exactly, which is the reason the corpus chose it: the coupling cancels and $v_C$ alone sets the contact-term scale. <strong>Under $M_X^{2}=16g_4^{2}v_C^{2}$ the identity becomes</strong></p>
+<p>$$
+\frac{g_4^{2}}{2M_X^{2}}=\frac{1}{32\,v_C^{2}}=\frac{1}{2(\Delta d)^{2}v_C^{2}} .
+$$</p>
+<p><strong>The physical point survives</strong>: the coupling still cancels, and the condensate is still the only scale. <strong>What changes is the coefficient</strong>, from $1$ to $1/32$, and it is now traceable to $(\Delta d)^{2}$ rather than to a chosen normalisation. <code>lepton-flavour-…</code> was updated to say this.</p>
+<p><strong>A reader who wants the old elegance back must choose option C</strong>, $\Xi_0=\frac{v_C}{4\sqrt2}D$, which restores $1/v_C^{2}$ at the cost of a $4\sqrt2$ nobody can read off the vacuum. <strong>That trade was put to the user and A was chosen.</strong></p>
+<h2 id="verified">Verified</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gram eigenvalue, machine</td>
+<td>$8$ six times, nine zeros</td>
+</tr>
+<tr>
+<td>$16g_4^{2}v_C^{2}=32v^2$</td>
+<td>holds at $v_C=\sqrt2v/g_4$, machine-checked</td>
+</tr>
+<tr>
+<td>$4g_4v_C=M_X$</td>
+<td>$4(0.8544)(6.82\times10^{4})=2.33\times10^{5}$</td>
+</tr>
+<tr>
+<td>residual <code>\tfrac12 g_4 v_C</code> forms</td>
+<td>zero</td>
+</tr>
+<tr>
+<td>residual $385$ TeV / $8v/g_4$</td>
+<td>zero</td>
+</tr>
+<tr>
+<td>brace parity, inline-dollar parity, display-dollar parity, eleven files</td>
+<td>all balanced</td>
+</tr>
+<tr>
+<td>tables</td>
+<td>two pre-existing pipe-in-math flags, present identically at <code>HEAD</code>, not introduced here</td>
+</tr>
+<tr>
+<td>build</td>
+<td>exit $0$, eleven targets written, sitemap $3358$ urls</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="not-changed-and-why">Not Changed, and Why</h2>
+<ul>
+<li><strong><code>the-weak-sector-…</code></strong> uses $v_C=10v$ as an explicit illustrative choice for an expansion in $v/v_C$, and says so. It is not a claim about the condensate.</li>
+<li><strong><code>M_X^{2}/M_{W_R}^{2}=2g_4^{2}/g_R^{2}</code></strong> is a ratio of two masses and is independent of the normalisation of $v_C$.</li>
+<li><strong>The $250$ TeV floor against $M_X=233$ TeV</strong> in <code>matching-at-m-c-…</code> is a pre-existing tension between two different estimates, not created here, and not touched.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

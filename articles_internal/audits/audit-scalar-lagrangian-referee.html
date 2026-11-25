@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: *The Lagrangian and the Scalar Matrix*, and Eight Claims of the Referee — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Items 1-6 executed on 2026-11-25; item 6 as option A, recorded in audit-mx-normalisation-option-a.md.">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-lagrangian-and-the-scalar-matrix-and-eight-claims-of-the-referee"><strong>Audit: <em>The Lagrangian and the Scalar Matrix</em>, and Eight Claims of the Referee</strong></h1>
+<p><em>Status of this file.</em> <strong>Items 1-6 executed on 2026-11-25; item 6 as option A, recorded in <code>audit-mx-normalisation-option-a.md</code>.</strong></p>
+<p><em>The article.</em> <code>articles_physics/the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.md</code>, 191 lines.</p>
+<p><em>What the file is for.</em> It separates the referee's eight items into <strong>genuine defect</strong>, <strong>worth one clause</strong>, and <strong>declined with reason</strong>, and it records one defect the referee did not raise. The patch list at the end is a decision.</p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The verdict.</strong> The referee is right that the physics is correct and finds no error in it. <strong>Four of the eight items are worth one clause each. Four are declined</strong>, two of them because the article already says what the referee asks for.</p>
+<p><strong>The article survives every check that can be run.</strong> Verified in this audit:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15 trilinear vertices</td>
+<td>one generator per vertex</td>
+<td>correct</td>
+</tr>
+<tr>
+<td>120 quadrilinear vertices</td>
+<td>symmetric pairs $15\cdot16/2$</td>
+<td>correct</td>
+</tr>
+<tr>
+<td>16 real equations</td>
+<td>Hermiticity, no conjugate pair</td>
+<td>correct</td>
+</tr>
+<tr>
+<td>field equation display</td>
+<td>finite-difference test of $\partial V/\partial\Xi^{\dagger}$, random Hermitian point</td>
+<td>agrees to $2\times10^{-10}$ relative</td>
+</tr>
+<tr>
+<td>rank of $M^2$</td>
+<td>eigenvalues of the Gram, orthonormal $\mathfrak{su}(4)$ basis</td>
+<td>$6$, six equal nonzeros, nine zeros</td>
+</tr>
+<tr>
+<td>$M_X^2$ eigenvalue equality</td>
+<td>the $6\times6$ block</td>
+<td>all six equal, exactly</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The field equation was tested and not merely read.</strong> The display's five separate coefficients — $\mu_\Phi^2$, $2\lambda_2\operatorname{tr}\Xi^2$, $\lambda_3(\operatorname{tr}\Xi)^2$, $2\lambda_1$, and the whole trace bracket — are all reproduced by a numerical derivative at a random Hermitian point. <strong>The factor pattern, including the $\mu_2^2\operatorname{tr}\Xi\,\mathbb 1$ with no $2$, is the Hermitian convention $\delta V=2\operatorname{tr}(M\,\delta\Xi)$ and is consistent throughout.</strong> That is the place a sign or a factor silently goes wrong, and it does not.</p>
+<h2 id="confirmed-defects">Confirmed Defects</h2>
+<h3 id="1-the-inner-product-math17-is-never-defined-in-this-article">1. The inner product $\langle\cdot,\cdot\rangle$ is never defined in this article</h3>
+<p>Line 132 writes $M^2_{ab}=g_4^2v_C^2\langle[t_a,D],[t_b,D]\rangle$, and $\langle\cdot,\cdot\rangle$ appears nowhere else in the file without definition. <strong>The parent article defines it at its own line 198</strong> — "the Gram entry $\langle d_2,d_3\rangle=-\operatorname{tr}(d_2d_3)=-1$" — so the corpus has the convention and this article uses it without importing it.</p>
+<p><strong>Why it matters here and not elsewhere.</strong> The rank statement is a Gram-matrix statement: a Gram matrix is positive semi-definite, and its rank is the dimension of the span only under a positive-definite pairing. <strong>For anti-Hermitian $X,Y$ the pairing $-\operatorname{tr}(XY)=\operatorname{tr}(X^{\dagger}Y)$ is positive definite</strong>, and that is the pairing the article's "[t_a,D]^\dagger[t_b,D]" already writes. The two notations are the same object and the article does not say so.</p>
+<p><strong>Repair, one clause:</strong> after the display, "with $\langle X,Y\rangle=\operatorname{tr}(X^{\dagger}Y)=-\operatorname{tr}(XY)$ on anti-Hermitian matrices, positive definite."</p>
+<h3 id="2-the-quartet-reading-sentence-gives-the-right-count-by-the-wrong-mechanism">2. The "quartet reading" sentence gives the right count by the wrong mechanism</h3>
+<p>The article: "the quadrilinear count differs because the commutator's structure constants enter."</p>
+<p><strong>The structure constants are not the reason the counts differ.</strong> A quartet's quadrilinear term is $g^2A_aA_b\,\phi^{\dagger}t_at_b\phi=g^2A_aA_b\tfrac12\delta_{ab}\lvert\phi\rvert^2$ — <strong>diagonal in $(a,b)$, hence 15 vertices, not 120.</strong> The matrix's term is $g^2A_aA_b\operatorname{tr}([t_a,\Xi]^{\dagger}[t_b,\Xi])$, <strong>not diagonal, hence all symmetric pairs, 120.</strong> Structure constants enter the <em>value</em> of each matrix vertex once $\Xi$ is expanded in generators; <strong>they do not enter the count, which is an index count.</strong></p>
+<p><strong>The article never states the quartet's number</strong>, so the contrast it invokes is left for the reader to supply. <strong>Repair:</strong> name 15, and name the diagonal reason.</p>
+<h2 id="worth-one-clause">Worth One Clause</h2>
+<h3 id="3-one-kinetic-coefficient-suffices-the-field-redefinition-also-moves-the-potential">3. "One kinetic coefficient suffices" — the field redefinition also moves the potential</h3>
+<p>The article says a term $b(\partial\operatorname{tr}\Xi)^2$ "is absorbed by rescaling the singlet", then concludes "that is why one kinetic coefficient suffices and two quadratic coefficients do not."</p>
+<p><strong>The conclusion is right; the step is a field redefinition and the article does not say so.</strong> Rescaling $t\to t/\sqrt{1+4b}$ leaves the kinetic term canonical and moves $\mu_2^2\to\mu_2^2/(1+4b)$, $\lambda_3\to\lambda_3/(1+4b)$, $\lambda_4\to\lambda_4/(1+4b)^2$. <strong>So the count "six coefficients" is a count in the canonical-kinetic basis</strong>, and a reader who thinks the second kinetic term is <em>physically</em> absent will mis-count by one.</p>
+<p><strong>Repair, one clause:</strong> the rescaling is a field redefinition, it is free, and the potential's trace coefficients are quoted in the basis where the kinetic term is canonical.</p>
+<h3 id="4-the-fifth-quartics-absence-from-the-cone-is-not-cross-referenced">4. The fifth quartic's absence from the cone is not cross-referenced</h3>
+<p>The article says the group allows five quartics and the model writes four, and calls this "a declaration of zero coefficients". <strong>The Primordial Potential's cone is derived for $\lambda_5=0$</strong>, and that article now says so in its own §<em>The Trace Channel, in the Cone</em> (patched 2026-11-25). <strong>This article and that one are consistent, and neither points at the other on this point.</strong> One clause closes the loop: the cone in the potential article is the cone for the potential written here.</p>
+<h2 id="declined-with-reason">Declined, With Reason</h2>
+<h3 id="5-the-gauss-law-derivation-is-not-compressed-it-already-carries-the-step-the-referee-asks-for">5. The Gauss-law derivation is not compressed — it already carries the step the referee asks for</h3>
+<p>The referee asks for the Hermiticity of $D_t\Xi$ and the anti-Hermiticity of $[t_a,\Xi]$ to be shown. <strong>The article states both</strong>: "the product is purely imaginary, since $(D_t\Xi)$ is Hermitian and $[t_a,\Xi]$ is anti-Hermitian". <strong>What it does not say in words is why the two cross terms are equal rather than conjugate</strong> — namely $(D_t\Xi)^{\dagger}=D_t\Xi$. That is one clause, and it is the only gap. <strong>Rated: optional, one clause.</strong></p>
+<h3 id="6-the-jacobi-identity">6. The Jacobi identity</h3>
+<p>"by Jacobi" is enough for a working companion, and the identity is one line if a reader wants it. <strong>Optional.</strong></p>
+<h3 id="7-the-trace-terms-never-rotate-example">7. The "trace terms never rotate" example</h3>
+<p>Optional illustration. The general argument is stated and correct; a worked $c\,\mathbb 1$ example adds no claim. <strong>Declined.</strong></p>
+<h3 id="8-cubic-terms-in-the-equation-of-motion-vs-cubic-in-the-potential">8. "cubic terms in the equation of motion" vs "cubic in the potential"</h3>
+<p>The article writes "two different cubic terms in the equation of motion" and immediately says what they are ($\Xi\Xi^{\dagger}\Xi$ and $(\operatorname{tr}\Xi^{\dagger}\Xi)\Xi$). <strong>The phrasing is unambiguous in context</strong> and the referee's worry is a hypothetical misreading. <strong>Declined.</strong></p>
+<h2 id="a-defect-the-referee-did-not-raise-math42-is-two-numbers">A Defect the Referee Did Not Raise: $v_C$ Is Two Numbers</h2>
+<p><strong>The companion states three things that cannot all hold at once.</strong></p>
+<ol>
+<li>the vacuum is $\Xi_0=v_CD$;</li>
+<li>$M^2_{ab}=g_4^2v_C^2\langle[t_a,D],[t_b,D]\rangle$;</li>
+<li>"with the corpus's normalisation the nonzero eigenvalues are equal, $M_X^2=\tfrac12g_4^2v_C^2$".</li>
+</ol>
+<p><strong>From (1) and (2), with $D=\operatorname{diag}(-3,1,1,1)$ and $\operatorname{tr}D^2=12$ and an orthonormal basis, the six eigenvalues are $8g_4^2v_C^2$, not $\tfrac12$.</strong> Computed, not estimated:</p>
+<p>$$
+-\operatorname{tr}\bigl([t_a,D]^{2}\bigr)=8\ \text{on each of the six},\qquad \text{rank}=6 .
+$$</p>
+<p><strong>The factor between the two statements is 16, or 32 once the $\tfrac12M^2A^2$ convention is applied.</strong> It cannot come from the $\tfrac12$, from $\operatorname{tr}(t_at_b)=\tfrac12$, or from any sign: <strong>it comes from $v_C$ being two different numbers in the same article</strong> — the coefficient of $D$ in $\Xi_0=v_CD$, and the corpus's physical condensate $v_C=8v/g_4$ defined by the very equation $M_X^2=\tfrac12g_4^2v_C^2$.</p>
+<p><strong>The article half-notices this.</strong> It writes "with the corpus's normalisation", which scopes the $\tfrac12$ to the corpus's $v_C$ and not to its own. <strong>But the notation table then lists $D$ unnormalised and the text writes $\Xi_0=v_CD$, so the scoping is invisible.</strong></p>
+<p><strong>Two repairs, both one clause, and the choice is the user's:</strong></p>
+<ul>
+<li><em>Weak:</em> say that the $\tfrac12$ is the corpus's $v_C$ and not the coefficient in $\Xi_0=v_CD$; the equality of the six, which is the article's claim, is unaffected.</li>
+<li><em>Strong:</em> write $\Xi_0=\tfrac{v_C}{4}D$ and show that it reproduces $8\cdot\tfrac1{16}=\tfrac12$; then (1), (2), (3) hold simultaneously and no hedging is needed. <strong>This requires the $D$-normalisation convention to be fixed here, and it propagates to the breaking article's $v_C=8v/g_4$.</strong></li>
+</ul>
+<p><strong>Resolved in favour of neither: option A was taken instead, $M_X^{2}=16g_4^{2}v_C^{2}$ with $\Xi_0=v_CD$, in a corpus-wide change recorded separately.</strong> Originally recommended: The strong one touches a conversion that three articles share and that the breaking article explicitly says "none of them restates it". <strong>The article's own claim — six equal eigenvalues — is true under either reading</strong>, and only the arithmetic label is at stake.</p>
+<h2 id="strategy">Strategy</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>site</th>
+<th>change</th>
+<th>priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>after the $M^2_{ab}$ display</td>
+<td>define $\langle X,Y\rangle=\operatorname{tr}(X^{\dagger}Y)$, note positive definiteness</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>§<em>The Expansion</em>, the "quartet reading" sentence</td>
+<td>name 15, name the diagonal reason, drop "structure constants" as the count's cause</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>§<em>The Piece</em>, the kinetic paragraph</td>
+<td>one clause: a field redefinition, free, potential quoted in the canonical-kinetic basis</td>
+<td>advised</td>
+</tr>
+<tr>
+<td>4</td>
+<td>§<em>The Piece</em>, fifth-quartic paragraph</td>
+<td>one clause: the cone in <em>The Primordial Potential</em> is the cone for this potential ($\lambda_5=0$)</td>
+<td>advised</td>
+</tr>
+<tr>
+<td>5</td>
+<td>§<em>The Constraint</em></td>
+<td>one clause: $(D_t\Xi)^{\dagger}=D_t\Xi$, which is why the two terms are equal and not conjugate</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>6</td>
+<td>§<em>The Vector Mass Matrix</em></td>
+<td>the weak $v_C$ repair: the $\tfrac12$ is the corpus's condensate, not the coefficient in $\Xi_0=v_CD$</td>
+<td><strong>needs the user's decision</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>No number in the article changes under items 1–5.</strong> Item 6 changes no number either under the weak form; under the strong form it changes one symbol equation.</p>
+<p><strong>Items 1 and 2 are corrections</strong> — an undefined symbol that the rank argument depends on, and a wrong mechanism for a right count. <strong>Items 3 and 4 close loops</strong> that the corpus has already opened. <strong>Item 5 is cosmetic.</strong> <strong>Item 6 is the only one where the corpus's own convention has to be chosen rather than quoted.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

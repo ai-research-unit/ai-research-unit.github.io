@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Was Applied: The $\mathrm{SU}(4)$ Instanton — Biquaternion Universe</title>
+  <meta name="description" content="Companion to audit-su4-instanton.md. The decisions were taken and the patches made. Two articles changed: the instanton article and the Lagrangian article.">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="what-was-applied-the-math3-instanton"><strong>What Was Applied: The $\mathrm{SU}(4)$ Instanton</strong></h1>
+<p><em>Companion to <code>audit-su4-instanton.md</code>.</em> <strong>The decisions were taken and the patches made. Two articles changed: the instanton article and the Lagrangian article.</strong></p>
+<h2 id="the-changes">The Changes</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>where</th>
+<th>change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Introduction</td>
+<td>"a free parameter of the model" → "a free coefficient of the Lagrangian — and a redundant one above $M_C$"</td>
+</tr>
+<tr>
+<td>Introduction, scope</td>
+<td>"why it does not arise here in the same form" → "why it does not arise above $M_C$"</td>
+</tr>
+<tr>
+<td>§<em>The Topological Term</em></td>
+<td>$\theta$ term's coefficient $g^{2}/32\pi^{2}\operatorname{tr}\to g^{2}/16\pi^{2}\operatorname{tr}$</td>
+</tr>
+<tr>
+<td>§<em>The Topological Term</em></td>
+<td>the two integrality displays made genuinely equivalent: $\frac{g^{2}}{16\pi^{2}}\int\operatorname{tr}$ and $\frac{g^{2}}{32\pi^{2}}\int F_{a}\tilde F_{a}$, each evaluated on one BPST instanton to $1$</td>
+</tr>
+<tr>
+<td>§<em>The Topological Term</em></td>
+<td>the periodicity clause now shows $e^{2\pi i n}=1$ for every integer $n$</td>
+</tr>
+<tr>
+<td>§<em>The Topological Term</em></td>
+<td>"$\theta_4$ is a parameter of the phase and not a redundancy" → "weights every winding sector", with the observable question deferred</td>
+</tr>
+<tr>
+<td>§<em>The Action and Its Size</em></td>
+<td>"the largest number in the block" → "the largest dimensionless number in the coupling block"</td>
+</tr>
+<tr>
+<td>§<em>The Action and Its Size</em></td>
+<td>the accuracy claim given its warrant: every instanton quantity carries $e^{-S}$, forty-five orders below the one-loop accuracy</td>
+</tr>
+<tr>
+<td>§<em>The Action and Its Size</em></td>
+<td>$S(M_C)$: $108.6$ → $108.8$, from $\alpha_4(M_C)=0.05776$; "half a unit" → "six tenths"</td>
+</tr>
+<tr>
+<td>§<em>The Moduli</em></td>
+<td>orientation count's justification: $4Nk$, five removed, then $8$ (embedding orbit) $+3$ (own $\mathrm{SU}(2)$) $=11$</td>
+</tr>
+<tr>
+<td>§<em>The Moduli</em></td>
+<td>"three of the fifteen directions" given the gauge-choice qualifier</td>
+</tr>
+<tr>
+<td>§<em>The Moduli</em></td>
+<td>"the maximal embedding" → the block embedding $\mathbf2\oplus\mathbf1\oplus\mathbf1$, with the principal one named as what "maximal" would mean</td>
+</tr>
+<tr>
+<td>§<em>The Moduli</em></td>
+<td>embedding-independence scoped to the action and the charge, not the moduli count or the spectrum</td>
+</tr>
+<tr>
+<td>§$\theta_4$</td>
+<td>new subsection <em>The Anomaly Makes $\theta_4$ Removable, Not Physical</em>: gauge anomaly $0$, axial coefficient positive, massless fermions let the rotation remove the angle, $\bar\theta_4=\theta_4+\arg\det m=0$ because $m=0$</td>
+</tr>
+<tr>
+<td>§$\theta_4$</td>
+<td>the axion bullet reframed from a price paid to a non-issue, and strong $CP$ stated as neither solved nor inherited</td>
+</tr>
+<tr>
+<td>§<em>The Checks</em></td>
+<td>the $M_C$ row corrected; rows added for the $\theta$ period, the gauge anomaly, the axial coefficient; the orientation row replaced by $15-7+3$</td>
+</tr>
+<tr>
+<td>§<em>Summary</em></td>
+<td>the $\theta_4$ sentence rewritten to the redundancy; "largest number" → "largest exponent"</td>
+</tr>
+<tr>
+<td>Notation</td>
+<td>$\theta_4$ row annotated; $\bar\theta_4$ row added</td>
+</tr>
+<tr>
+<td>Further Reading</td>
+<td><em>The Sixteen Above $M_C$</em> (the $m=0$ the argument rests on) and <em>The Axion and the Peccei–Quinn Mechanism</em> (the parameter $\theta_4$ is not)</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-primordial-force.md</code></td>
+<td>line 67: $\theta_4$ "free parameter of the theory" → "free parameter of the Lagrangian", with a pointer to the redundancy; the $CP$ sentence moved from $\theta_4$ to $\arg\det m$ and the Yukawa phases</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-primordial-force.md</code></td>
+<td>the omission bullet and the notation row: "free" → "free in the Lagrangian", with the redundancy noted</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-decisions">The Decisions</h2>
+<ul>
+<li><strong>D1. $\theta_4$'s status: taken, in the direction the review opposed.</strong> The article now says the parameter is redundant above $M_C$. The warrant is the companion article's own $m=0$ and the positivity of the axial coefficient, and neither is a new assumption.</li>
+<li><strong>D2. The normalisation: corrected.</strong> It is the change that makes the article's own $2\pi$ period true.</li>
+<li><strong>D3. The justification: replaced</strong>, with a derivation that checks at $N=2,3,4$.</li>
+<li><strong>D4. The minor items: all six applied.</strong></li>
+</ul>
+<h2 id="what-the-correction-did-not-touch">What the Correction Did Not Touch</h2>
+<p><strong>No number in the article moved except $S(M_C)$.</strong> The action, the suppression, the moduli, the cutoff and the transcription argument never used $\theta_4$. <strong>The $M_C$ value moved because the coupling article's $b_0$ changed, not because of anything in this pass.</strong></p>
+<h2 id="the-two-claims-that-changed-status">The Two Claims That Changed Status</h2>
+<ul>
+<li><em>"$\theta_4$ is physical because the content is anomaly-free"</em> → <strong>false</strong>. The content is anomaly-free in the gauge sense and anomalous in the axial sense, and the second is the one that would have made the angle physical — had the fermions been massive.</li>
+<li><em>"the standard one is the maximal embedding"</em> → <strong>false</strong>. The standard is the block embedding, and it is the least maximal of the four.</li>
+</ul>
+<p><strong>Both were in sentences that asserted rather than argued</strong>, which is the pattern worth watching: the article's derivations are sound and its asides are where it slipped.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -76,9 +76,9 @@
 <p>$$
 \boxed{\;Ξ:\ \underbrace{4\times4}_{\text{colour pair, Hermitian}}\ \Longrightarrow\ 16\ \text{real}=\underbrace{15}_{\mathbf{15}}+\underbrace{1}_{\mathbf1};\qquad \dim\mathrm{SU}(4)=15 .\;}
 $$</p>
-<p><strong>The fifteen is the algebra's, and it is where the count starts.</strong> A traceless Hermitian $4\times4$ has $16-1=15$ real parameters, which is $\dim\mathrm{SU}(4)$. The trace is one more real parameter, and $Ξ$ may carry it. <strong>$15+1=16$, and there is nowhere else for the count to go.</strong></p>
+<p><strong>The fifteen is the algebra's, and it is where the count starts.</strong> A traceless Hermitian $4\times4$ has $16-1=15$ real parameters, which is $\dim\mathrm{SU}(4)$ — <strong>the Hermitian matrices are $i\mathfrak{su}(4)$ and the algebra is its anti-Hermitian partner, so what matches is the dimension and not the space.</strong> The trace is one more real parameter, and $Ξ$ may carry it. <strong>$15+1=16$, and there is nowhere else for the count to go.</strong></p>
 <p><strong>What this article does.</strong> It counts the components, names the two labels, says why Hermiticity is forced, and states what the counting does not fix.</p>
-<p><strong>What it does not do.</strong> It writes no potential and no mass. <a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a> writes the potential; <a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-two-quartics.html">The Lagrangian and the Scalar Matrix</a> writes the kinetic term.</p>
+<p><strong>What it does not do.</strong> It writes no potential and no mass. <a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a> writes the potential; <a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html">The Lagrangian and the Scalar Matrix</a> writes the kinetic term.</p>
 <h2 id="the-representation-read-off-the-indices">The Representation, Read Off the Indices</h2>
 <p><strong>A $4\times4$ matrix carries one lower and one upper colour index, and that product is reducible.</strong></p>
 <p>$$
@@ -86,7 +86,7 @@ $$</p>
 \qquad
 15+1=16 .
 $$</p>
-<p><strong>The sixteen is the number of real parameters of a Hermitian matrix</strong>, and the split says what the group does to them. The $\mathbf1$ is the trace, $\operatorname{tr}Ξ$; the $\mathbf{15}$ is the traceless part, which is the adjoint. <strong>Both pieces are carried by the same field</strong>, and the mass operator uses only the singlet.</p>
+<p><strong>The sixteen is the number of real parameters of a Hermitian matrix</strong>, and the split says what the group does to them. The $\mathbf1$ is the trace, $\operatorname{tr}Ξ$; the $\mathbf{15}$ is the traceless part, which is the adjoint. <strong>Both pieces are carried by the same field, and the reason the field is a matrix and not a vector is one line</strong>: the contraction $\bar\xi Ξ\xi$ is a singlet of $\bar{\mathbf4}\otimes\mathbf4$, and the singlet of that product is the matrix itself.</p>
 <p><strong>Why this and not the $\mathbf4$.</strong> The mass operator decides it, and the argument is two lines:</p>
 <p>$$
 \bar\xiΞ\xi\to\mathbf1
@@ -95,7 +95,7 @@ $$</p>
 \quad\Longleftrightarrow\quad
 Ξ\in\bar{\mathbf4}\otimes\mathbf4 .
 $$</p>
-<p><strong>And $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ contains no $\bar{\mathbf4}$</strong>, so a scalar in the fundamental forms no mass operator with one $\bar\xi$ and one $\xi$. <strong>The scalar's colour structure is not a choice; it is the existence of the Yukawa sector.</strong> <a href="the-scalar-content-one-matrix-and-ten-survivors.html">The Scalar Content</a> records the census.</p>
+<p><strong>And $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ contains no $\bar{\mathbf4}$</strong> — the $\mathbf{10}$ is the symmetric part and the $\mathbf6$ the antisymmetric, $10+6=16$, and neither is the $\bar{\mathbf4}$ — so a scalar in the fundamental forms no mass operator with one $\bar\xi$ and one $\xi$. <strong>The scalar's colour structure is not a choice; it is the existence of the Yukawa sector.</strong> <a href="the-scalar-content-one-matrix-and-ten-survivors.html">The Scalar Content</a> records the census.</p>
 <p><strong>Three counts that must not be confused.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -124,6 +124,15 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The middle row is the trap.</strong> Sixteen complex entries is a general matrix with $32$ real parameters; a Hermitian matrix has sixteen real. <strong>A count of $32$ has forgotten the dagger, and any count larger than that has multiplied by an index that no generator acts on.</strong></p>
+<h2 id="why-hermitian-three-ways">Why Hermitian, Three Ways</h2>
+<p><strong>The count of sixteen is a statement about a Hermitian matrix, so Hermiticity is not decoration and the article owes the argument.</strong></p>
+<p><strong>First, from the mass operator.</strong> Write the Yukawa term as $X+y^{*}X^{†}$ with $X=y\,\bar\xi Ξ\xi$. <strong>The conjugate term carries $Ξ^{†}$ where the first carries $Ξ$, so the sum depends on the two only through</strong></p>
+<p>$$
+\tfrac12\bigl(Ξ+Ξ^{†}\bigr),
+$$</p>
+<p><strong>and an anti-Hermitian part cancels between the halves.</strong> So the field the fermions couple to is the Hermitian part, and an anti-Hermitian matrix would be a field with no Yukawa coupling and therefore no mass. <strong>The ledger does not carry a field it cannot mass.</strong></p>
+<p><strong>Second, from the potential.</strong> $\operatorname{tr}Ξ^{2}$ and $\operatorname{tr}Ξ^{4}$ are real only for Hermitian $Ξ$. For a general complex matrix the invariant of degree two is $\operatorname{tr}Ξ^{†}Ξ$, which is not $\operatorname{tr}Ξ^{2}$, and every quartic would have to carry its own dagger. <strong>The corpus's potential is written in the traces without daggers, and that writing is a statement that the field is Hermitian.</strong></p>
+<p><strong>And the count of equations follows the count of components.</strong> Varying a Hermitian $Ξ$ and varying $Ξ^{†}$ give the same equation, not a conjugate pair, so the sixteen components give sixteen equations and not half of thirty-two. <strong>That is <a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html">The Lagrangian and the Scalar Matrix</a>'s observation, and it is the third reason the same sixteen appears in every count of this field.</strong></p>
 <h2 id="the-two-labels">The Two Labels</h2>
 <p><strong>What a component carries, and what acts on it.</strong></p>
 <div class="table-scroll"><table>
@@ -147,9 +156,14 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Two labels, both gauged, and that is the whole list.</strong> There is no third index on $Ξ$: not a copy, not a family, not a colour–anticolour pair beyond the two already named. <strong>A third index would multiply the count and nothing in the algebra would act on it</strong>, which is the definition of a label that costs components and buys nothing.</p>
-<p><strong>Why the group cannot act on a third index.</strong> A generator acting on it would be a sixteenth generator, and the algebra has fifteen. <strong>The group is fixed by the algebra's dimension</strong>, so any further label is necessarily ungauged, and an ungauged label on a Hermitian matrix is not a degree of freedom: it is a bookkeeping device, and the corpus does not use one here.</p>
-<p><strong>The colour pair does double duty, and that is why the matrix is not extravagant.</strong> The same two indices give the gauge–scalar vertex its commutator and the Yukawa operator its singlet. <strong>One structure, two jobs</strong>, and the sixteen is the smallest count that does both.</p>
+<p><strong>Two labels, both gauged, and that is the whole list.</strong> There is no third index on $Ξ$: not a copy, not a family, not a colour–anticolour pair beyond the two already named.</p>
+<p><strong>Why no generator acts on a third index, stated as the declaration it is.</strong> The gauge group of the model is $\mathrm{SU}(4)$, and its fifteen generators act on the two colour indices and on nothing else. <strong>The reason is not that a third index would need a sixteenth generator</strong>: a $\mathrm{U}(1)$ acting on a new label would not have to enlarge $\mathrm{SU}(4)$ at all, and "fifteen is all the room there is" is a statement about the dimension of one factor, not about how many factors a model may have. <strong>The reason is that the declaration names one factor.</strong> A second factor acting on a new label is a different model, and this article counts this one.</p>
+<p><strong>And the copy index is the case that shows the choice is a ledger entry and not a theorem.</strong> The model does carry an ungauged two-valued label, $α=1,2$, and <strong>it sits on the fermion and on the Yukawa matrix, not on $Ξ$</strong>: $\mathcal L_Y=y_{αβ}\,\bar\xi^{α†}Ξ\xi^{β}$, with $Ξ$ a singlet under $α$. <strong>A copy index on $Ξ$ would make the count sixty-four rather than sixteen, and that is a different model</strong> — one with a scalar matrix per copy instead of one shared matrix. <a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">The Yukawa Sector</a> says why the index sits where it does. <strong>Sixteen is the count of the declared field, and the declaration is what fixes it.</strong></p>
+<p><strong>The colour pair does double duty, and that is why the matrix is not extravagant.</strong> The same two indices give the gauge–scalar vertex its commutator and the Yukawa operator its singlet. <strong>The group acts by conjugation, $Ξ\mapsto UΞU^{†}$, so the covariant derivative is a commutator and not a multiplication</strong>:</p>
+<p>$$
+D_μΞ=\partial_μΞ-ig_4[A_μ,Ξ],
+$$</p>
+<p><strong>and the bracket is forced by the two-index structure rather than assumed.</strong> <strong>One structure, two jobs</strong>, and the sixteen is the smallest count that does both.</p>
 <h2 id="the-count-twice">The Count, Twice</h2>
 <p><strong>Once as entries, once as a decomposition.</strong></p>
 <div class="table-scroll"><table>
@@ -201,12 +215,13 @@ $$</p>
 <h2 id="what-the-counting-does-not-fix">What the Counting Does Not Fix</h2>
 <p><strong>Four things the representation leaves open, stated so no later article has to assume them.</strong></p>
 <ul>
-<li><em>The potential.</em> One quadratic and two quartics, with three free coefficients. <strong>The representation fixes how many terms there are and not what they are</strong>; the counting is silent on signs.</li>
+<li><em>The potential.</em> Two quadratics and four quartics, with six free coefficients: the traceless pair, and the trace's own quadratic and two quartics. <strong>The representation fixes how many terms there are and not what they are</strong>; the counting is silent on signs.</li>
 <li><em>The mass.</em> $\mu^{2}$ is a parameter. Whether the origin is a minimum is a statement about its sign, not about the count.</li>
 <li><em>The vacuum's shape.</em> Any traceless diagonal form is available to a Hermitian matrix. <strong>The count does not choose</strong>, and <a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a> shows that the choice is what decides how many directions the transition eats.</li>
 <li><em>The Yukawa matrix.</em> Its entries are free, and the representation fixes only that the operator exists.</li>
 </ul>
-<p><strong>What the counting does fix, and it is worth stating positively.</strong> The number of eaten directions is six: one per broken generator, and never more than the six the stabiliser leaves. <strong>A scalar with sixteen components can feed six Goldstones and cannot feed seven</strong>, because six is the number of generators that do not commute with the vacuum.</p>
+<p><strong>What the counting does fix, and it is worth stating positively.</strong> One Goldstone boson per broken generator and no more, so <strong>the count that matters is a ceiling: sixteen components can feed up to twelve generators</strong>, and twelve is the most any traceless vacuum in this field can break — every traceless Hermitian matrix is conjugate to a diagonal one, and four distinct eigenvalues leave $\mathrm{U}(1)^{3}$, so $15-3=12$. <strong>So whatever shape the potential chooses, the multiplet is large enough to feed it</strong>, and a smaller multiplet might not have been.</p>
+<p><strong>The six is the potential's number and not the representation's.</strong> For the declared vacuum the stabiliser is nine-dimensional and the count is $15-9=6$; <a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a> derives the shape and <a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">The Breaking of the Primordial Force</a> reads the spectrum. <strong>A reader who carries $6$ away from this article should carry the vacuum with it.</strong> The ten components that survive the eating are counted in <a href="the-scalar-content-one-matrix-and-ten-survivors.html">The Scalar Content</a>.</p>
 <h2 id="the-checks">The Checks</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -250,19 +265,30 @@ $$</p>
 <tr>
 <td>the quartet's exclusion</td>
 <td>$\mathbf4\otimes\mathbf4$</td>
-<td>$\mathbf6\oplus\mathbf{10}$, no $\bar{\mathbf4}$</td>
+<td>$\mathbf{10}$ symmetric $+\,\mathbf6$ antisymmetric, no $\bar{\mathbf4}$</td>
 </tr>
 <tr>
-<td>the eaten count</td>
+<td>the anti-Hermitian part</td>
+<td>cancels in $X+X^{†}$</td>
+<td>no Yukawa coupling, no mass</td>
+</tr>
+<tr>
+<td>the largest eaten count any vacuum demands</td>
+<td>$15-3$, four distinct eigenvalues</td>
+<td>$12$, and $12\le16$</td>
+</tr>
+<tr>
+<td>the eaten count, declared vacuum</td>
 <td>$15-9$</td>
-<td>$6$</td>
+<td>$6$, the potential's</td>
 </tr>
 </tbody>
 </table></div>
+<p><strong>The last two rows differ on purpose.</strong> The representation supplies the ceiling, twelve; the vacuum supplies the actual count, six. <strong>Reading the second as a consequence of the counting is the one mistake this table is built to prevent</strong>, and the section above states the same thing in words.</p>
 <h2 id="summary">Summary</h2>
 <p><strong>Sixteen real components: fifteen from the algebra and one from the trace.</strong> The representation is $\mathbf{15}\oplus\mathbf1=\mathbf4\otimes\bar{\mathbf4}$ in the colour indices, forced by the existence of the mass operator and not chosen for convenience.</p>
-<p><strong>Two labels, both gauged.</strong> No copy index, no family index on $Ξ$: a third label would multiply the count and no generator would act on it.</p>
-<p><strong>Thirty-two is the number to avoid, and it is the one that looks right.</strong> It is the count of a general complex $4\times4$, which is a different field from a Hermitian one, and it is the first step on a ladder that ends in a negative $b_0$.</p>
+<p><strong>Two labels, both gauged.</strong> No copy index, no family index on $Ξ$: the model's one ungauged label sits on the fermion and on the Yukawa matrix, and a copy index on $Ξ$ would be a different model with sixty-four components.</p>
+<p><strong>Thirty-two is the number to avoid, and it is the one that looks right.</strong> It is the count of a general complex $4\times4$, a different field from a Hermitian one, and <strong>the coupling article reads the count straight off the beta coefficient</strong>: sixteen real components give $b_0=\tfrac{26}{3}$, thirty-two give $8$, and a two-valued label on the matrix gives $\tfrac{20}{3}$ — <strong>each rung of that ladder moves $b_0$ by more than the two-loop term the running omits</strong>, which is why the count has to be this one and not one step up.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -294,7 +320,7 @@ $$</p>
 <ul>
 <li><a href="the-scalar-content-one-matrix-and-ten-survivors.html">The Scalar Content</a>. The same field counted with the eating, and the ten that survive.</li>
 <li><a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a>. The potential this count leaves undetermined, written.</li>
-<li><a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-two-quartics.html">The Lagrangian and the Scalar Matrix</a>. The kinetic term for this field, and the commutator its two colour indices force.</li>
+<li><a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html">The Lagrangian and the Scalar Matrix</a>. The kinetic term for this field, and the commutator its two colour indices force.</li>
 <li><a href="the-su4-model-four-colours-fifteen-generators-one-declaration.html">The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration</a>. The fifteen the count starts from.</li>
 </ul>
       </div>

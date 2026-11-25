@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The Generator Convention, Anti-Hermitian Mathematics and Hermitian Vertices — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. The check was run and the patches made. The question was whether the mathematics corpus and the physics block disagree about the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-generator-convention-anti-hermitian-mathematics-and-hermitian-vertices"><strong>Audit: The Generator Convention, Anti-Hermitian Mathematics and Hermitian Vertices</strong></h1>
+<p><em>Status of this file.</em> <strong>The check was run and the patches made.</strong> The question was whether the mathematics corpus and the physics block disagree about the Hermiticity of the generators of $\mathfrak{su}(4)$. They do not: the mathematics fixes the anti-Hermitian algebra, the physics prints the same fifteen arrays and writes its action in the Hermitian set obtained from them by $i$ and a rescaling. <strong>Three sentences were wrong about that passage, one of them a false statement about the structure constants, and they are corrected here.</strong></p>
+<h2 id="1-what-the-mathematics-says">1. What the Mathematics Says</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>source</th>
+<th>statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</em></td>
+<td>the generators are $K$ with $K^{*}=-K$ and $\operatorname{tr}K=0$; bracket $[K_1,K_2]$ with no $i$; rotor $U=e^{K}$; split $15=6+9$</td>
+</tr>
+<tr>
+<td>the same article, on the split</td>
+<td>six real antisymmetric (the words with one $t$ index) and nine imaginary (the nine $iN_{jk}$)</td>
+</tr>
+<tr>
+<td><em>The Generator Displays</em> (this directory)</td>
+<td>"the fifteen are anti-Hermitian, traceless, of square $-\mathrm{I}_4$"; verified numerically</td>
+</tr>
+<tr>
+<td><code>ai-physics-review.md</code></td>
+<td>a Hermitian $K$ moves the Hermitian part of the operator algebra out of itself, "so it is not a generator"</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reason is structural and not stylistic.</strong> The gauge algebra is the derivation algebra of the Hermitian part, $S\mapsto KS-SK$; the derivation is a derivation only for anti-Hermitian $K$, and $\exp(K)$ is unitary exactly then.</p>
+<h2 id="2-what-the-physics-says">2. What the Physics Says</h2>
+<p><strong>The printed arrays are the same fifteen, and they are anti-Hermitian.</strong> $G_{a}^{\dagger}=-G_{a}$, $\operatorname{tr}G_{a}=0$, with $\operatorname{tr}(G_{a}^{\dagger}G_{a})=2$ for the fourteen and $12$ for the corner $iD$.</p>
+<p><strong>The action is written in a second set.</strong></p>
+<p>$$
+t_{a}=\frac{iG_{a}}{\sqrt{2n_{a}}},\qquad
+n_{a}:=\operatorname{tr}\bigl(G_{a}^{\dagger}G_{a}\bigr)=2\ (\text{the fourteen printed}),\ 12\ (\text{the corner}),\quad n_{c_{3}}=6\ \bigl(c_{3}=d_{2}-d_{3}\bigr),
+\qquad
+\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab},\quad t_{a}^{\dagger}=t_{a}.
+$$</p>
+<p><strong>No new letter is spent on the factor.</strong> The reserved-letter audit gives $\nu$ to the wave number and $\lambda$ to the wavelength, so the rescaling is written from the trace norm the article already prints, $n_{a}=\operatorname{tr}(G_{a}^{\dagger}G_{a})$, and the bracket relation follows from $t_{a}=iG_{a}/\sqrt{2n_{a}}$ in one line:</p>
+<p>$$
+F^{c}{}_{ab}=\sqrt{\frac{n_{c}}{2\,n_{a}n_{b}}}\;f^{c}{}_{ab}.
+$$</p>
+<p><strong>The covariant derivative carries the $i$ that Hermiticity buys</strong>, $D_{\imath}=\partial_{\imath}-ig_4\sum_{a}A_{a,\imath}t_{a}$. In the anti-Hermitian set the same object is written $\partial_{\imath}-g_4\sum_{a}A_{a,\imath}G_{a}$, with no $i$. <strong>Two conventions, one theory</strong>, and the passage is one factor of $i$ and one rescaling, as <em>The Lagrangian and the Primordial Force</em>, §<em>Conventions</em>, states.</p>
+<p><strong>Why the action needs the Hermitian set.</strong> With an anti-Hermitian generator, the two orderings of the cross term in the scalar kinetic term have equal trace and cancel, and the cubic gauge–scalar vertex vanishes identically; with $t_{a}$ it does not. This is stated in <em>The Lagrangian and the Scalar Matrix</em> and is the one place where a change of basis deletes an interaction.</p>
+<h2 id="3-what-was-wrong-and-what-it-cost">3. What Was Wrong, and What It Cost</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>where</th>
+<th>the sentence</th>
+<th>what is true</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>The Scalar Content</em>, §<em>The Field</em></td>
+<td>"the traceless Hermitian $4\times4$ <strong>is exactly that algebra</strong>"</td>
+<td>the dimension is the algebra's ($15$); the space is not. The traceless Hermitian matrices are $i\mathfrak{su}(4)$, the carrier. <strong>The count $15+1=16$ is unaffected</strong></td>
+</tr>
+<tr>
+<td><em>The Scalars: Two Colour Indices and the Count Sixteen</em></td>
+<td>the same identification</td>
+<td>the same correction, in one clause</td>
+</tr>
+<tr>
+<td><em>The Lagrangian and the Primordial Force</em>, §<em>Conventions</em></td>
+<td>"in the Hermitian basis, $[t_{a},t_{b}]=i\sum_{c}f^{c}{}_{ab}t_{c}$ <strong>with the same real coefficients</strong>"</td>
+<td>the coefficients differ: $F^{c}{}_{ab}=\sqrt{n_{c}/2n_{a}n_{b}}\,f^{c}{}_{ab}$</td>
+</tr>
+<tr>
+<td>the same paragraph</td>
+<td>"<strong>that factor of $i$ is the whole difference</strong> between the two bases"</td>
+<td>the $i$ is one difference; the trace-norm rescaling is the other, and the article's own first sentence said so</td>
+</tr>
+<tr>
+<td><em>The Feynman Rules</em>, §<em>The Three-Gauge Vertex</em></td>
+<td>the six printed brackets tabulated beside "<strong>$29$</strong> distinct triples"</td>
+<td>the printed brackets give $31$; $29$ is the orthonormal count. Both are now stated</td>
+</tr>
+<tr>
+<td><em>The Feynman Rules</em>, §<em>Conventions</em> and notation</td>
+<td>a third symbol, $T_{a}=iG_{a}$ "up to normalisation"</td>
+<td>the block has two symbols, $G_{a}$ and $t_{a}$; $T_{a}$ is removed</td>
+</tr>
+<tr>
+<td><em>The Rotors of the Fifteen Generators</em></td>
+<td>"$T_{a}=iG_{a}$ hermitian"</td>
+<td>the same third symbol; rewritten as "the hermitian generator $iG_{a}$, unnormalised"</td>
+</tr>
+<tr>
+<td><em>The $\mathrm{SU}(4)$ Instanton</em></td>
+<td>$\mathbb{F}=\sum_{a}F_{a}T_{a}$, $\operatorname{tr}(T_{a}T_{b})$</td>
+<td>$t_{a}$, the block's symbol</td>
+</tr>
+<tr>
+<td><em>The Primordial Coupling</em>, §<em>Conventions</em></td>
+<td>$\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ with no statement that $t_{a}$ is Hermitian</td>
+<td>"$t_{a}$ Hermitian", plus the one line that says where the passage is made</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="4-the-arithmetic-recomputed">4. The Arithmetic, Recomputed</h2>
+<p><strong>All fifteen arrays were built and the brackets expanded in both bases.</strong> No quantity in the physics block was trusted to the prose.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>computed</th>
+<th>expected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{tr}(G_{a}^{\dagger}G_{a})$</td>
+<td>fourteen at $2$, the corner at $12$</td>
+<td>the article's two values</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(t_{a}t_{b})$</td>
+<td>$\tfrac12\delta_{ab}$</td>
+<td>$\tfrac12\delta_{ab}$</td>
+</tr>
+<tr>
+<td>$G_{a}^{\dagger}=-G_{a}$, all fifteen</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>nonzero brackets, of $\binom{15}{2}=105$</td>
+<td>$80$ in the printed basis, $80$ in the orthonormal one</td>
+<td>$80$</td>
+</tr>
+<tr>
+<td>distinct index triples</td>
+<td>$31$ printed, $29$ orthonormal</td>
+<td>$31$ and $29$</td>
+</tr>
+<tr>
+<td>$F^{c}{}_{ab}=\sqrt{n_{c}/2n_{a}n_{b}}\,f^{c}{}_{ab}$</td>
+<td><strong>worst error $0$, zero violations, every applicable bracket</strong></td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(d_{2}d_{3})$</td>
+<td>$+1$, the one nonzero off-diagonal Gram entry</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>the positive Gram $\operatorname{tr}(A^{\dagger}B)$</td>
+<td>block diagonal: twelve planes at $2$, the $(d_{2},d_{3})$ block at $1$ and $3$, the corner at $12$</td>
+<td>eigenvalues $1$, twelve at $2$, $3$, $12$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two instances, printed in the article so that a reader can check them without the script.</strong> $[A_{tx},A_{ty}]=-A_{xy}$: $f=-1$, $F=-\tfrac12$, factor $\sqrt{2/8}=\tfrac12$. $[iD,A_{tx}]=-4iS_{tx}$: $f=-4$, $F=-4/\sqrt{24}=-0.8165$, factor $\sqrt{2/48}=1/\sqrt{24}$.</p>
+<p><strong>The $29$ against $31$ is a real basis dependence and not a slip.</strong> The rotation $d_{2},d_{3}\mapsto c_{2},c_{3}$ mixes two Cartan directions, and two triples that were separate in the printed basis stand on one triple in the orthonormal one. The bracket count $80$ is the same in both.</p>
+<h2 id="5-what-is-not-affected">5. What Is Not Affected</h2>
+<p><strong>Every number in the coupling block.</strong> $b_0=\tfrac{26}{3}$ is a physical coefficient; it does not depend on Hermiticity, only on the normalisation $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ being the one the canonical kinetic term fixes. $C_{A}=4$, $T_{R}=\tfrac12$, $T_{S}=4$, $\alpha_4(M_X)=0.058$, $\alpha_4(M_P)=0.0165$, the pole at $885\ \mathrm{MeV}$, the instanton action $8\pi^{2}/g_4^{2}=108.2$ — all unchanged. <strong>The correction is to the language of the passage, and to one false arithmetic claim about the structure constants.</strong></p>
+<p><strong>The scalar count is unaffected for the same reason.</strong> $15+1=16$ counts <em>real</em> parameters, and the two spaces have the same real dimension; the error was to say the space itself is the algebra.</p>
+<h2 id="6-what-this-does-not-decide">6. What This Does Not Decide</h2>
+<p><strong>The reality class of the connection is a separate open question.</strong> In the biquaternion copy the alternative is between an anti-Hermitian connection in $\mathbb{B}_{\Phi}$ and a Hermitian one in $\mathbb{B}_{\Psi}$, and the lattice article records that $\exp(ia\kappa\mathcal{A})$ is $*$-unitary only for the Hermitian assignment. <strong>That question is about the real form of the algebra, not about which generating set writes the $\mathrm{SU}(4)$ action</strong>, and the two must not be conflated: the $\mathrm{SU}(4)$ block is written on $4\times4$ matrices with a definite Hermiticity for each of the two bases, and no choice is left open there.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

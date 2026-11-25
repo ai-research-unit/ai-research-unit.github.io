@@ -79,29 +79,30 @@
 e^{-S}=1.1\times10^{-47},\qquad
 \theta_{4}\ \text{periodic with period }2\pi .\;}
 $$</p>
-<p><strong>The instanton exists, is enormous, and is transcribed rather than derived.</strong> Its action is fixed by the same coupling that runs in <a href="the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html">The Primordial Coupling</a>, and the $\theta_4$ that weights it is a free parameter of the model.</p>
+<p><strong>The instanton exists, is enormous, and is transcribed rather than derived.</strong> Its action is fixed by the same coupling that runs in <a href="the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html">The Primordial Coupling</a>, and the $\theta_4$ that weights it is a free coefficient of the Lagrangian — <strong>and, as the last section shows, a redundant one above $M_C$, where the sixteen are massless.</strong></p>
 <p><strong>Why "outside the algebra" and not merely "hard".</strong> The instanton is a configuration of a gauge field on a four-dimensional space whose second Chern number is one. <strong>Its existence is a statement about a $4\times4$ matrix field and about $\pi_3(\mathrm{SU}(4))=\mathbb{Z}$</strong>, and the algebra $\mathbb{B}$ has compact group $\mathrm{U}(2)$ of real dimension four — far too small to contain fifteen generators, let alone a winding sector of them. <strong>The instanton therefore stands exactly where the action stands: on the transcribed side of the ceiling</strong>, and this article is where that placement is made explicit.</p>
 <p><strong>What this article does.</strong> It writes the topological term, computes the action and the suppression, counts the moduli, states the size-modulus cutoff, and locates the whole construction relative to the algebra.</p>
-<p><strong>What it does not do.</strong> It does not compute the $\theta_4$ dependence of any observable, does not build a dilute-gas model, and does not discuss the strong-$CP$ problem except to say why it does not arise here in the same form.</p>
+<p><strong>What it does not do.</strong> It does not compute the $\theta_4$ dependence of any observable, does not build a dilute-gas model, and does not discuss the strong-$CP$ problem except to say why it does not arise above $M_C$.</p>
 <h2 id="the-topological-term">The Topological Term</h2>
 <p><strong>One term, one coefficient, one periodicity.</strong></p>
 <p>$$
-\mathcal{L}_{\theta}=\theta_{4}\,\frac{g_4^{2}}{32\pi^{2}}\operatorname{tr}\bigl(\mathbb{F}_{\imath\jmath}\tilde{\mathbb{F}}_{\imath\jmath}\bigr),
+\mathcal{L}_{\theta}=\theta_{4}\,\frac{g_4^{2}}{16\pi^{2}}\operatorname{tr}\bigl(\mathbb{F}_{\imath\jmath}\tilde{\mathbb{F}}_{\imath\jmath}\bigr),
 \qquad
 \tilde{\mathbb{F}}_{\imath\jmath}=\tfrac12\varepsilon_{\imath\jmath\kappa\lambda}\mathbb{F}_{\kappa\lambda},
 $$</p>
-<p>with $\mathbb{F}=\sum_{a}F_{a}T_{a}$ the matrix-valued curvature and the trace over colour, which for a Hermitian matrix is the whole of the contraction.</p>
+<p>with $\mathbb{F}=\sum_{a}F_{a}t_{a}$ the matrix-valued curvature and the trace over colour, which for a Hermitian matrix is the whole of the contraction. <strong>The $t_{a}$ are the normalised Hermitian generators of the block</strong>, $t_{a}=iG_{a}/\sqrt{2n_{a}}$ on the anti-Hermitian printed arrays, with $n_{a}=\operatorname{tr}(G_{a}^{\dagger}G_{a})$ equal to $2$ for the fourteen and $12$ for the corner, so that $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$, $\mathbb{F}$ is Hermitian and $\operatorname{tr}(\mathbb{F}\tilde{\mathbb{F}})$ is real.</p>
 <p><strong>The normalisation is the one that makes the integral an integer.</strong></p>
 <p>$$
-\frac{g_4^{2}}{32\pi^{2}}\int\operatorname{tr}\bigl(\mathbb{F}\tilde{\mathbb{F}}\bigr)\in\mathbb{Z}
+\frac{g_4^{2}}{16\pi^{2}}\int\operatorname{tr}\bigl(\mathbb{F}\tilde{\mathbb{F}}\bigr)\in\mathbb{Z}
 \quad\text{equivalently}\quad
-\frac{1}{16\pi^{2}}\int\operatorname{tr}\bigl(F_{\imath\jmath}\tilde F_{\imath\jmath}\bigr)\in\mathbb{Z}
+\frac{g_4^{2}}{32\pi^{2}}\int F_{a,\imath\jmath}\tilde F_{a,\imath\jmath}\in\mathbb{Z}
 $$</p>
-<p>with $\operatorname{tr}(T_{a}T_{b})=\tfrac12\delta_{ab}$ in the second form — <strong>the normalisation the whole block uses</strong>, established from the printed arrays in <a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a>. <strong>Two conventions and one integer</strong>: the factor of two between them is the trace's, not the group's.</p>
-<p><strong>The coefficient $\theta_4$ is free and the group does not fix it.</strong> A total derivative does not affect the equations of motion, but it does affect the action of a configuration with nonzero winding, <strong>so $\theta_4$ is a parameter of the phase and not a redundancy of the description.</strong> The $2\pi$ periodicity follows from the integrality above: shifting $\theta_4$ by $2\pi$ multiplies the weight of every winding sector by $e^{2\pi i}=1$.</p>
+<p>with $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ in the first form — <strong>the normalisation the whole block uses</strong>, on the Hermitian $t_{a}$ and not on the printed anti-Hermitian $G_{a}$ whose norms are $2$ and $12$, as <a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a> fixes it. <strong>Two conventions and one integer</strong>: one BPST instanton gives $\int F_{a}\tilde F_{a}=32\pi^{2}/g_4^{2}$, so the sum-over-generators form integrates to $g_4^{2}/(32\pi^{2})\times32\pi^{2}/g_4^{2}=1$ and the trace form to $g_4^{2}/(16\pi^{2})\times\tfrac12\times32\pi^{2}/g_4^{2}=1$. <strong>The factor of two between the two displays is the trace's, not the group's.</strong> Dropping the $g_4^{2}$ while keeping the trace is the error that turns the integer $1$ into $1/g_4^{2}$.</p>
+<p><strong>The coefficient $\theta_4$ is free and the group does not fix it.</strong> A total derivative does not affect the equations of motion, but it does affect the action of a configuration with nonzero winding, <strong>so $\theta_4$ weights every winding sector and no argument in the group selects its value.</strong> The $2\pi$ periodicity follows from the integrality above: a sector of winding $n$ carries the weight $e^{i\theta_4 n}$, and shifting $\theta_4$ by $2\pi$ multiplies it by $e^{2\pi i n}=1$, <strong>for every integer $n$ at once — which is what makes the shift a symmetry of the whole sum and not of one term.</strong></p>
+<p><strong>Whether that weight is observable is a separate question</strong>, and it is the one the last section answers: the term is present in the Lagrangian and, above $M_C$, removable from the phase.</p>
 <p><strong>Why the trace is the matrix trace and not a sum over generators.</strong> $\operatorname{tr}(\mathbb{F}\tilde{\mathbb{F}})=\frac12F_{a}\tilde F_{a}$ by the normalisation, so the two agree as densities; <strong>but the integrality statement is about the matrix trace of a bundle, and the sum over generators carries no bundle.</strong> The distinction is the same one the parent article makes about the action's density, and it is sharper here: <strong>a sum over fifteen generators of fifteen numbers is not a Chern class.</strong></p>
 <h2 id="the-action-and-its-size">The Action and Its Size</h2>
-<p><strong>One number, and it is the largest number in the block.</strong></p>
+<p><strong>One number, and it is the largest dimensionless number in the coupling block.</strong></p>
 <p>$$
 S_{\mathrm{inst}}=\frac{8\pi^{2}}{g_4^{2}}=\frac{2\pi}{\alpha_4},
 \qquad
@@ -122,8 +123,8 @@ $$</p>
 \rho_{\mathrm{inst}}\lesssim\frac{1}{M_C},
 $$</p>
 <p><strong>because an instanton larger than the transition scale would have to live in a phase that does not exist there.</strong> That is the cutoff, and it is a statement about the model and not about the integral.</p>
-<p><strong>What the number means, stated without inflation.</strong> $1.1\times10^{-47}$ per unit four-volume in units of $M_C$ is not zero, and in a cosmological setting it would matter; <strong>inside the phase, no observable of the block depends on it at any accuracy the block claims.</strong> The article's point is not that the effect is negligible but that it is computable and large, <strong>which is the opposite of the usual situation in a strongly coupled theory where the semi-classical expansion fails.</strong></p>
-<p><strong>The value at the transition, for completeness.</strong> $S(M_C)=2\pi/\alpha_4(M_C)=108.6$, <strong>half a unit larger than at $M_X$</strong>, because the coupling has barely moved over the interval between them. <strong>The suppression is the same to two significant figures everywhere in the phase</strong>, which is why the article quotes one number.</p>
+<p><strong>What the number means, stated without inflation.</strong> $1.1\times10^{-47}$ per unit four-volume in units of $M_C$ is not zero, and in a cosmological setting it would matter; <strong>inside the phase, no observable of the block depends on it at any accuracy the block claims, and the warrant is one line: every instanton-induced quantity carries at least one factor of $e^{-S}$, and $10^{-47}$ is forty-five orders below the few per cent at which the one-loop running is known.</strong> The article's point is not that the effect is negligible but that it is computable and large, <strong>which is the opposite of the usual situation in a strongly coupled theory where the semi-classical expansion fails.</strong></p>
+<p><strong>The value at the transition, for completeness.</strong> $S(M_C)=2\pi/\alpha_4(M_C)=2\pi/0.05776=108.8$, <strong>six tenths larger than at $M_X$</strong>, because the coupling has barely moved over the interval between them. <strong>The suppression is the same to two significant figures everywhere in the phase</strong>, which is why the article quotes one number.</p>
 <h2 id="the-moduli">The Moduli</h2>
 <p><strong>A single instanton has $4N=16$ parameters, and the split is exact for $\mathrm{SU}(N)$.</strong></p>
 <div class="table-scroll"><table>
@@ -157,9 +158,9 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The orientation count is $11$ and not $15$, and the difference is what the instanton does not use.</strong> The solution is built by embedding an $\mathrm{SU}(2)$ in $\mathrm{SU}(4)$, so the orientation space is a coset and not the group; <strong>eleven parameters are left after the stabiliser is quotiented out.</strong> The arithmetic: $4N-5=11$.</p>
-<p><strong>The instanton does not use all fifteen generators.</strong> Its field strength lies in an $\mathrm{su}(2)$ subalgebra, so at any point in space the configuration excites three of the fifteen directions. <strong>That is not a defect of the solution but its construction</strong>, and it is worth stating because it bears on the article's main point: <strong>the object that requires fifteen generators to be written at all uses three of them at a time.</strong></p>
-<p><strong>The embedding is a choice, and the choice is not unique.</strong> $\mathrm{SU}(4)$ has more than one conjugacy class of $\mathrm{SU}(2)$ subgroups, so there is more than one family of instanton-like solutions; <strong>the standard one is the maximal embedding, and the others are not computed here.</strong> The article's claim does not depend on which is chosen, because the action is the same for all of them.</p>
+<p><strong>The orientation count is $11$ and not $15$, and the difference is what the instanton does not use.</strong> The count itself is the standard $4Nk$ at $k=1$, and the five removed are the four positions and the size. <strong>The remaining eleven are not one coset</strong>: the embedded $\mathrm{SU}(2)$ has stabiliser $\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ in $\mathrm{SU}(4)$ — dimension $3+3+1=7$ — so its orbit has dimension $15-7=8$, and the other three are the rotations of the instanton inside its own $\mathrm{SU}(2)$. <strong>$8+3=11$, and $4+1+11=16$</strong>, which is the table.</p>
+<p><strong>The instanton does not use all fifteen generators.</strong> Its field strength lies in an $\mathrm{su}(2)$ subalgebra; <strong>the connection can be brought to a gauge in which only three generators appear, and that is a gauge choice rather than a property of the solution</strong> — in another gauge all fifteen components of $A_{\imath}$ can be nonzero while $F_{\imath\jmath}$ stays inside the $\mathrm{su}(2)$. <strong>That is not a defect of the solution but its construction</strong>, and it is worth stating because it bears on the article's main point: <strong>the object that requires fifteen generators to be written at all uses three of them at a time.</strong></p>
+<p><strong>The embedding is a choice, and the choice is not unique.</strong> $\mathrm{SU}(4)$ has more than one conjugacy class of $\mathrm{SU}(2)$ subgroups, distinguished by how the $\mathbf4$ decomposes: $\mathbf2\oplus\mathbf1\oplus\mathbf1$, $\mathbf3\oplus\mathbf1$, $\mathbf2\oplus\mathbf2$, and the irreducible $\mathbf4$ of the principal embedding. <strong>The standard one is the block embedding $\mathbf2\oplus\mathbf1\oplus\mathbf1$, which is the most reducible and not the maximal one</strong> — the principal embedding is what "maximal" would name — and the others are not computed here. <strong>The action and the topological charge are the same for all of them</strong>, because both know only the winding number; <strong>the moduli count and the fluctuation spectrum are not</strong>, and the table above is the block embedding's.</p>
 <h2 id="why-the-algebra-cannot-hold-it">Why the Algebra Cannot Hold It</h2>
 <p><strong>Three statements, in order of strength.</strong></p>
 <ul>
@@ -169,15 +170,23 @@ $$</p>
 </ul>
 <p><strong>So the instanton sits with the action, the fifteen generators and the $\mathrm{SU}(4)$ group itself on the transcribed side of the ceiling</strong>, and the corpus's derived side — $\mathrm{SU}(2)$ and its abelian factor — is untouched by it. <strong>That placement is the article's contribution</strong>: the non-perturbative sector of the primordial force is a transcribed object, and no argument in the corpus derives it.</p>
 <p><strong>What would be needed to derive it.</strong> A four-dimensional algebra whose compact group had a nontrivial third homotopy group and enough dimension for the content. <strong>The corpus's theorem is that no four-dimensional algebra reaches $\mathrm{SU}(3)$</strong>, so such an algebra does not exist among the ones the corpus considers, and the instanton inherits the ceiling rather than escaping it.</p>
-<h2 id="math55-and-the-questions-it-raises">$\theta_4$ and the Questions It Raises</h2>
+<h2 id="math97-and-the-questions-it-raises">$\theta_4$ and the Questions It Raises</h2>
 <p><strong>Three statements about the parameter, and a fourth about what is absent.</strong></p>
 <ul>
-<li><em>It is free.</em> No argument in the corpus fixes $\theta_4$; the group admits the term and nothing selects its coefficient.</li>
-<li><em>It is unobservable in this phase.</em> The phase does not extend to any scale at which it is measured, and its effects are weighted by $10^{-47}$.</li>
-<li><em>It is not the strong-$CP$ parameter.</em> QCD's $\bar\theta$ is measured to be smaller than $10^{-10}$ by the neutron's electric dipole moment; <strong>$\theta_4$ has no such measurement because the phase is not the one we live in</strong>, and the two parameters are unrelated.</li>
-<li><em>There is no axion in the model.</em> A Peccei–Quinn field would be a new scalar with a new scale, and the content is fixed at two fields. <strong>The $\theta_4$ question is therefore not solved, it is relocated</strong> to a phase where it does not matter.</li>
+<li><em>It is free in the Lagrangian.</em> No argument in the corpus fixes $\theta_4$; the group admits the term and nothing selects its coefficient.</li>
+<li><em>It is not the strong-$CP$ parameter.</em> QCD's $\bar\theta$ is bounded below $10^{-10}$ by the neutron's electric dipole moment; <strong>$\theta_4$ has no such measurement because the phase is not the one we live in</strong>, and the two parameters are unrelated.</li>
+<li><em>It is unobservable in this phase.</em> The phase does not extend to any scale at which it is measured — <strong>and, more strongly, it is removable there</strong>, which is what the next subsection shows.</li>
+<li><em>There is no axion in the model, and none is needed.</em> A Peccei–Quinn field would be a new scalar at a new scale and the content is fixed at two fields; <strong>but the absence is not a price paid, because the parameter such a field would relax is not physical above $M_C$.</strong></li>
 </ul>
-<p><strong>And the anomaly does not remove it.</strong> A rotation of the fermions by a chiral phase shifts $\theta_4$ by an amount fixed by the anomaly coefficient, and the corpus's sixteen are paired so that the anomaly cancels — <strong>which is why the shift is zero and $\theta_4$ is physical rather than removable.</strong> A content with a nonzero anomaly would have let $\theta_4$ be rotated away, and this one does not.</p>
+<h3 id="the-anomaly-makes-math104-removable-not-physical">The Anomaly Makes $\theta_4$ Removable, Not Physical</h3>
+<p><strong>Two anomalies are usually run together here, and only the second one concerns this term.</strong></p>
+<ul>
+<li><em>The gauge anomaly.</em> The triangle of three gauge currents vanishes for this content, because $\mathbf4$ and $\bar{\mathbf4}$ contribute oppositely and appear in equal number: $2A(\mathbf4)+2A(\bar{\mathbf4})=0$. <strong>That is what makes the theory consistent</strong>, and it is what <em>The $\mathrm{SU}(4)$ Model</em> proves by counting.</li>
+<li><em>The axial anomaly.</em> The divergence of the axial current is proportional to $(g_4^{2}/16\pi^{2})\operatorname{tr}(F\tilde F)\sum_{f}2T(R_{f})$, <strong>and every term in that sum is positive.</strong> The two chiralities of a Dirac field add here instead of cancelling, so the coefficient is eight times a single fundamental Dirac field's, and it is not zero.</li>
+</ul>
+<p><strong>So a chiral rotation does shift $\theta_4$, and above $M_C$ the shift costs nothing.</strong> The sixteen are massless there: no Yukawa, because $\langle\Xi\rangle=0$, and no mass term, because the model sets $m=0$. A rotation that multiplies the $\mathbf4$ by $e^{i\alpha}$ and the $\bar{\mathbf4}$ by $e^{-i\alpha}$ then changes nothing in the Lagrangian except $\theta_4\to\theta_4+c\alpha$ with $c\ne0$, and $\alpha$ can be chosen to carry $\theta_4$ to zero. <strong>Above $M_C$, then, $\theta_4$ is a coefficient of the Lagrangian and not a parameter of the phase.</strong> The invariant is $\bar\theta_4=\theta_4+\arg\det m$, and setting $m=0$ fixes $\bar\theta_4$ at zero.</p>
+<p><strong>What would make it physical is the mass term the phase does not write.</strong> With massive fermions the rotation moves the phases of $m$ instead of removing $\theta_4$, and $\bar\theta_4$ becomes a genuine parameter — <strong>that is QCD's situation and not this phase's.</strong> Even then its effects would be weighted by $e^{-S}=1.1\times10^{-47}$, the estimate the previous section supplies.</p>
+<p><strong>Two consequences, and both simplify the list above.</strong> The unobservability is exact rather than an estimate: there is no $\theta_4$ dependence to suppress at $10^{-47}$. <strong>And the missing axion is a non-issue rather than a cost</strong> — a Peccei–Quinn field exists to relax a parameter, and this phase has none to relax. <strong>The corpus does not thereby solve the strong-$CP$ problem</strong>: $\theta_4$ above $M_C$ is not $\bar\theta$ below it, and the Standard Model's is the axion article's subject.</p>
 <h2 id="the-checks">The Checks</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -190,8 +199,8 @@ $$</p>
 <tbody>
 <tr>
 <td>the normalisation</td>
-<td>$\operatorname{tr}(T_{a}T_{b})=\tfrac12\delta_{ab}$</td>
-<td>$\frac{g^{2}}{32\pi^{2}}\int\operatorname{tr}F\tilde F\in\mathbb{Z}$</td>
+<td>$\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$, Hermitian $t_{a}$</td>
+<td>$\frac{g^{2}}{16\pi^{2}}\int\operatorname{tr}F\tilde F=\frac{g^{2}}{32\pi^{2}}\int F_{a}\tilde F_{a}=1$</td>
 </tr>
 <tr>
 <td>the action</td>
@@ -210,8 +219,8 @@ $$</p>
 </tr>
 <tr>
 <td>the action at $M_C$</td>
-<td>$2\pi/0.0578$</td>
-<td>$108.6$</td>
+<td>$2\pi/\alpha_4(M_C)$ at $0.05776$</td>
+<td>$108.8$</td>
 </tr>
 <tr>
 <td>the moduli</td>
@@ -220,13 +229,13 @@ $$</p>
 </tr>
 <tr>
 <td>the orientation count</td>
-<td>$4N-5$</td>
-<td>$11$</td>
+<td>$15-\dim[\mathrm{SU}(2)^{2}\times\mathrm{U}(1)]+3$</td>
+<td>$15-7+3=11$</td>
 </tr>
 <tr>
 <td>the excited generators</td>
 <td>an $\mathrm{su}(2)$ inside $\mathrm{su}(4)$</td>
-<td>$3$ of $15$</td>
+<td>$3$ of $15$, in one gauge</td>
 </tr>
 <tr>
 <td>the size cutoff</td>
@@ -235,15 +244,25 @@ $$</p>
 </tr>
 <tr>
 <td>the $\theta_4$ period</td>
-<td>integrality of the charge</td>
+<td>$e^{2\pi i n}=1$ for integer $n$</td>
 <td>$2\pi$</td>
+</tr>
+<tr>
+<td>the gauge anomaly</td>
+<td>$2A(\mathbf4)+2A(\bar{\mathbf4})$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the axial coefficient</td>
+<td>one per Weyl pair, all positive</td>
+<td>$8$, not $0$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p><strong>The primordial phase has instantons with action $108.2$, and the exponential is $1.1\times10^{-47}$.</strong> The number is fixed by the same coupling that runs in the rest of the block, and it is the largest number the block contains.</p>
-<p><strong>Sixteen moduli, eleven of them orientation</strong>, because the solution is an $\mathrm{SU}(2)$ inside $\mathrm{SU}(4)$ and excites three generators at a time. <strong>The size modulus is cut off at $1/M_C$</strong>, by the phase ending and not by the integral.</p>
-<p><strong>$\theta_4$ is a free parameter with a $2\pi$ period, physical because the content is anomaly-free, and unobservable because the phase is not ours.</strong> The strong-$CP$ problem is not solved; it is placed where it cannot be measured.</p>
+<p><strong>The primordial phase has instantons with action $108.2$, and the exponential is $1.1\times10^{-47}$.</strong> The number is fixed by the same coupling that runs in the rest of the block, and it is the largest exponent the block contains.</p>
+<p><strong>Sixteen moduli, eleven of them orientation</strong>, because the solution is an $\mathrm{SU}(2)$ inside $\mathrm{SU}(4)$ and excites three generators at a time, in the gauge that shows it. <strong>The size modulus is cut off at $1/M_C$</strong>, by the phase ending and not by the integral.</p>
+<p><strong>$\theta_4$ is free in the Lagrangian with a $2\pi$ period, and redundant above $M_C$</strong>: the gauge anomaly cancels, the axial one does not, and massless fermions let the rotation remove the angle. <strong>The strong-$CP$ problem is neither solved nor inherited</strong> — $\theta_4$ is not $\bar\theta$, and the Standard Model's is another article's.</p>
 <p><strong>And the whole construction is transcribed.</strong> Winding numbers need a group with a three-sphere's worth of topology; $\mathrm{U}(2)$ has dimension four and fifteen generators do not fit in it. <strong>The instanton is the clearest case in the corpus of a transcribed object with no derived counterpart</strong>, and stating that is more useful than deriving a number that the algebra cannot hold.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -256,7 +275,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{F}_{\imath\jmath}$</td>
-<td>$\sum_{a}F_{a,\imath\jmath}T_{a}$, the matrix-valued curvature</td>
+<td>$\sum_{a}F_{a,\imath\jmath}t_{a}$, the matrix-valued curvature, Hermitian</td>
 </tr>
 <tr>
 <td>$\tilde{\mathbb{F}}$</td>
@@ -264,7 +283,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\theta_{4}$</td>
-<td>the coefficient of the topological term, free, period $2\pi$</td>
+<td>the coefficient of the topological term: free in the Lagrangian, period $2\pi$, redundant above $M_C$</td>
+</tr>
+<tr>
+<td>$\bar\theta_4$</td>
+<td>$\theta_4+\arg\det m$, the rotation-invariant combination, zero here because $m=0$</td>
 </tr>
 <tr>
 <td>$S_{\mathrm{inst}}$</td>
@@ -284,6 +307,8 @@ $$</p>
 <ul>
 <li><a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a>. The term $\theta_4$ multiplies, and the trace-versus-pairing argument this article inherits.</li>
 <li><a href="the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html">The Primordial Coupling</a>. The $\alpha_4$ from which the action is computed.</li>
+<li><a href="the-sixteen-above-m-c-massless-vector-like-and-what-that-costs.html">The Sixteen Above $M_C$</a>. The masslessness that makes $\theta_4$ removable, and the $m=0$ the removability is a statement about.</li>
+<li><a href="the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html">The Axion and the Peccei–Quinn Mechanism</a>. The parameter $\theta_4$ is not.</li>
 <li><a href="why-there-is-no-confinement-above-m-c.html">Why There Is No Confinement Above $M_C$</a>. The perturbative phase this non-perturbative sector sits in without changing.</li>
 <li><a href="why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$</a>. The ceiling this article places the instanton under.</li>
 </ul>
