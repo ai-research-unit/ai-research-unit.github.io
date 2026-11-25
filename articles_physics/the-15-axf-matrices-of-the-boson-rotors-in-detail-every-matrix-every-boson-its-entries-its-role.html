@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fifteen AXF Matrices of the Boson Rotors in Detail: Every Matrix, Every Boson, Its Entries, Its Role — Biquaternion Universe</title>
+  <meta name="description" content="The question. Construction of the AXF Matrices of the Rotors of the Fifteen Generators gives one closed form per array and proves that the fifteen are…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fifteen-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role"><strong>The Fifteen AXF Matrices of the Boson Rotors in Detail: Every Matrix, Every Boson, Its Entries, Its Role</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> <a href="construction-of-the-axf-matrices-of-the-rotors-of-the-fifteen-generators.html">Construction of the AXF Matrices of the Rotors of the Fifteen Generators</a> gives one closed form per array and proves that the fifteen are elementary. <strong>This article takes the fifteen one at a time, in the boson order, and asks of each what its matrix does</strong>: which lines the array moves, which lines its rotor leaves alone, and what that makes the boson.</p>
+<p><strong>The answer in one line.</strong> A rotor of this model carries three kinds of nonzero entry and no more — a cosine that stays, a sine that moves, and a phase that multiplies — and <strong>a boson's role is decided by which of the three its rotor carries and by which lines it leaves at $1$.</strong></p>
+<p><strong>Four articles, four questions, and this is the fourth.</strong> <a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">The construction article</a> answers <em>what is the array</em>. <a href="construction-of-the-axf-matrices-of-the-rotors-of-the-fifteen-generators.html">The rotors construction</a> answers <em>what is the closed form</em>. <a href="the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The rotors article</a> answers <em>which space does the rotor turn, and why is none of them a boost</em>. <a href="the-15-axf-matrices-of-the-bosons-in-detail.html">The bosons-in-detail article</a> answers <em>what is the spectrum and what is the mass</em>. <strong>This article answers <em>what does the matrix do to the four lines, and what is the boson for</em></strong> — one section per boson, with the array and its rotor printed side by side.</p>
+<p><strong>Why the rotor and not only the array, said once.</strong> The array's entry is a vertex: it says which two lines a boson can join, and the Feynman rule reads it directly. <strong>The rotor's entry is an amplitude</strong>: it says how much of a line has become the other line after a finite parameter $\theta$, and it is the vertex summed to all orders. <strong>The two are not the same object read twice</strong>, and the distance between them is the mass — which is why the same $\sin\theta$ is an oscillation on the massless directions and a frozen amplitude on the heavy ones.</p>
+<p><strong>Why "role" and not "fate".</strong> A fate is what the vacuum does to a boson, and <a href="the-15-axf-matrices-of-the-bosons-in-detail.html">the bosons-in-detail article</a> gives it in one column: $32v^{2}$ six times, zero nine times. <strong>A role is what the boson does to the four lines</strong>, and it is not the same list: the corner is massless and multiplies all four lines by phases, the octet is massless and leaves the lepton line untouched. <strong>Two partitions of the same fifteen, and this article keeps them apart.</strong></p>
+<h2 id="conventions">Conventions</h2>
+<p><strong>The frame, the order and the arrays are the corpus's, and only the reading is this article's.</strong> The quartet is ordered $(t,x,y,z)$, $E_{jk}$ is the matrix unit in that order, $A_{jk}=E_{jk}-E_{kj}$ is the real plane, $iS_{jk}=i(E_{jk}+E_{kj})$ is the imaginary plane, $iD=i\operatorname{diag}(-3,1,1,1)$ is the corner, and $d_{2}=i\operatorname{diag}(0,1,-1,0)$, $d_{3}=i\operatorname{diag}(0,0,1,-1)$ are the two colour diagonals. <strong>Every array is anti-Hermitian and traceless</strong>, and its rotor is</p>
+<p>$$
+R_{a}(\theta)=\exp\bigl(\theta\,G_{a}\bigr),
+\qquad
+\theta\ \text{real},
+$$</p>
+<p><strong>with the parameter written $\theta$ once and never $\omega t$</strong>, since this article is about the matrix and not about the clock.</p>
+<p><strong>The reading rule, and it is the only one used below.</strong> The $j$-th column of $R_{a}(\theta)$ is the image of the $j$-th basis vector. <strong>A $1$ on the diagonal is a line the rotor does not touch. A $\cos\theta$ on the diagonal is a line it touches without moving. A $\sin\theta$ off the diagonal is a line it moves to its partner. A $e^{\pm i\theta}$ or a $i\sin\theta$ is a line it touches with a phase and no motion.</strong></p>
+<p><strong>Why $\theta$ and never a half angle.</strong> None of the fifteen is half of another array, so none of the fifteen has a half angle in its rotor. <strong>The $\tfrac12$ appears only when a composite is exponentiated</strong>, and §<em>What the Rotor Entries Say That the Array Entries Do Not</em> says where the composites sit.</p>
+<p><strong>One comparison decides the third reading of a role, and it is the vacuum.</strong> With $\Phi_{0}=vD$ the breaking direction, the rotor is a symmetry of the vacuum exactly when the array commutes with $D$:</p>
+<p>$$
+[A,D]=0
+\quad\Longleftrightarrow\quad
+R_{A}(\theta)\,\Phi_{0}\,R_{A}(\theta)^{-1}=\Phi_{0}.
+$$</p>
+<p><strong>Nine arrays commute with $D$ and six do not</strong>, and the count is the count of the massless and heavy vectors. <strong>A massless boson of this model is a rotor that leaves the vacuum exactly where it was; a heavy one is a rotor that moves it.</strong> That is the Higgs mechanism in the language of this article, and it is checked in the table at the end.</p>
+<h2 id="the-ledger-of-the-fifteen-read-on-the-rotors">The Ledger of the Fifteen, Read on the Rotors</h2>
+<p><strong>One row per boson, and the rotor's shape is the row's middle.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>boson</th>
+<th>array</th>
+<th>the rotor</th>
+<th>fixed lines</th>
+<th>$m^{2}$</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B'$</td>
+<td>$iD$</td>
+<td>four phases, one at triple rate</td>
+<td>none</td>
+<td>$0$</td>
+<td>the vacuum direction, and the only rotor that reaches the centre</td>
+</tr>
+<tr>
+<td>$\bar X^{r}$</td>
+<td>$A_{tx}$</td>
+<td>real turn of the lepton–red plane</td>
+<td>$y$, $z$</td>
+<td>$32v^{2}$</td>
+<td>lepton into red and back</td>
+</tr>
+<tr>
+<td>$X^{r}$</td>
+<td>$iS_{tx}$</td>
+<td>the same plane, phased</td>
+<td>$y$, $z$</td>
+<td>$32v^{2}$</td>
+<td>the second amplitude of the same pair</td>
+</tr>
+<tr>
+<td>$\bar X^{g}$</td>
+<td>$A_{ty}$</td>
+<td>real turn of the lepton–green plane</td>
+<td>$x$, $z$</td>
+<td>$32v^{2}$</td>
+<td>lepton into green and back</td>
+</tr>
+<tr>
+<td>$X^{g}$</td>
+<td>$iS_{ty}$</td>
+<td>the same plane, phased</td>
+<td>$x$, $z$</td>
+<td>$32v^{2}$</td>
+<td>the second amplitude</td>
+</tr>
+<tr>
+<td>$\bar X^{b}$</td>
+<td>$A_{tz}$</td>
+<td>real turn of the lepton–blue plane</td>
+<td>$x$, $y$</td>
+<td>$32v^{2}$</td>
+<td>lepton into blue and back</td>
+</tr>
+<tr>
+<td>$X^{b}$</td>
+<td>$iS_{tz}$</td>
+<td>the same plane, phased</td>
+<td>$x$, $y$</td>
+<td>$32v^{2}$</td>
+<td>the second amplitude</td>
+</tr>
+<tr>
+<td>$g_{1}$</td>
+<td>$A_{xy}$</td>
+<td>real turn of the red–green plane</td>
+<td>$t$, $z$</td>
+<td>$0$</td>
+<td>colour rotation</td>
+</tr>
+<tr>
+<td>$g_{2}$</td>
+<td>$iS_{xy}$</td>
+<td>the same plane, phased</td>
+<td>$t$, $z$</td>
+<td>$0$</td>
+<td>the second colour amplitude</td>
+</tr>
+<tr>
+<td>$g_{4}$</td>
+<td>$A_{xz}$</td>
+<td>real turn of the red–blue plane</td>
+<td>$t$, $y$</td>
+<td>$0$</td>
+<td>colour rotation</td>
+</tr>
+<tr>
+<td>$g_{5}$</td>
+<td>$iS_{xz}$</td>
+<td>the same plane, phased</td>
+<td>$t$, $y$</td>
+<td>$0$</td>
+<td>the second colour amplitude</td>
+</tr>
+<tr>
+<td>$g_{6}$</td>
+<td>$A_{yz}$</td>
+<td>real turn of the green–blue plane</td>
+<td>$t$, $x$</td>
+<td>$0$</td>
+<td>colour rotation</td>
+</tr>
+<tr>
+<td>$g_{7}$</td>
+<td>$iS_{yz}$</td>
+<td>the same plane, phased</td>
+<td>$t$, $x$</td>
+<td>$0$</td>
+<td>the second colour amplitude</td>
+</tr>
+<tr>
+<td>$T^{c}_{3}$</td>
+<td>$d_{2}$</td>
+<td>two opposite phases</td>
+<td>$t$, $z$</td>
+<td>$0$</td>
+<td>colour phase, red against green</td>
+</tr>
+<tr>
+<td>$T^{c}_{8}$</td>
+<td>$d_{3}$</td>
+<td>two opposite phases</td>
+<td>$t$, $x$</td>
+<td>$0$</td>
+<td>colour phase, green against blue</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Fixed lines: fourteen rotors fix exactly two lines, and one fixes none.</strong> The corner is the only rotor of the fifteen that touches all four lines, <strong>and that is why it is the only one that can be central</strong>: a rotor with a fixed line cannot be a multiple of the identity.</p>
+<p><strong>The lepton line separates the fifteen into eight and seven.</strong> Eight arrays annihilate $e_{t}$ — the six off-diagonal colour arrays and the two colour diagonals — and their rotors fix the lepton line for every $\theta$. <strong>Those eight are the octet</strong>, and they are the whole answer to "what is colour": the set of rotors that turn the colour triple and leave the lepton alone. The other seven are the corner, which multiplies $e_{t}$ by a phase, and the six leptoquarks, which move it into a colour line. <strong>$8+7$ is the partition the ledger of the spectrum does not show.</strong></p>
+<p><strong>Reality separates them into six and nine, and the split is the one the SU(4)–SO(4) note proves.</strong> The six real planes give real matrices for every $\theta$; the nine complex arrays give complex matrices except at $\theta\in\pi\mathbb{Z}$. <strong>At the half-turn the nine become real, and at $\theta=\pi$ every one of the fifteen is a diagonal of $\pm1$.</strong></p>
+<h2 id="the-corner-math110-the-array-the-vacuum-is-built-from">The Corner: $B'$, the Array the Vacuum Is Built From</h2>
+<p>$$
+iD=i\begin{pmatrix}-3&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},
+\qquad
+\exp\bigl(\theta\,iD\bigr)=
+\begin{pmatrix}
+e^{-3i\theta}&amp;0&amp;0&amp;0\\
+0&amp;e^{i\theta}&amp;0&amp;0\\
+0&amp;0&amp;e^{i\theta}&amp;0\\
+0&amp;0&amp;0&amp;e^{i\theta}
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> Four phases, and the only rotor of the fifteen with no off-diagonal entry at all. <strong>Three entries are $e^{i\theta}$ and one is $e^{-3i\theta}$</strong>, and the corner cell is the one the array's $-3$ decides: the four exponents sum to zero, $(-3)+1+1+1=0$, which is the tracelessness of the array read on the rotor. <strong>A rotor whose exponents sum to zero has determinant one</strong>, and that is the whole of the reason the fifteen sit in $\mathrm{SU}(4)$.</p>
+<p><strong>The reading.</strong> The rotor multiplies the lepton line by a phase that runs three times as fast and backwards, and each colour line by a phase that runs forwards. <strong>In the frame where the colour phase is removed the lepton runs at four times the rate</strong>, $\exp(\theta iD)=e^{i\theta}\operatorname{diag}(e^{-4i\theta},1,1,1)$, which is the display <a href="charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">the charge-quantisation article</a> prints from a different starting point.</p>
+<p><strong>The role.</strong> This is the array the vacuum is built from: $\Phi_{0}=vD$ with $D$ the same diagonal and $i$ removed, and $B-L=\tfrac13D$ on the quartet. <strong>Its rotor is the only one of the fifteen that reaches the centre, and it reaches it four times a turn</strong>:</p>
+<p>$$
+\exp\Bigl(k\tfrac{\pi}{2}\,iD\Bigr)=i^{k}\,\mathbb{1},
+\qquad k=0,1,2,3,
+$$</p>
+<p><strong>so the statement "$B-L$ is exact at every scale" has a rotor form: the one rotor that can be a multiple of the identity is the one whose array the vacuum is made of.</strong> No other rotor of the fifteen is ever central inside a turn: the twelve plane rotors and the two colour diagonals are central only at $\theta\in2\pi\mathbb{Z}$, and the value there is $+1$.</p>
+<h2 id="the-six-leptoquarks-the-rotors-that-move-the-lepton-line">The Six Leptoquarks: The Rotors That Move the Lepton Line</h2>
+<p><strong>One plane, two amplitudes, and the same rotor up to a factor of $i$.</strong> Each of the three colour lines gives a plane with the lepton line, and each plane carries two arrays: the real one, whose rotor turns the plane by the full angle, and the imaginary one, whose rotor turns the same plane and multiplies the moved amplitude by $i$. <strong>The first moves a real vector to a real vector; the second does not, and that is the whole difference between the two amplitudes of one complex field.</strong></p>
+<h3 id="math128-math129-the-real-turn-of-the-leptonred-plane">$\bar X^{r}$: $A_{tx}$, the real turn of the lepton–red plane</h3>
+<p>$$
+A_{tx}=\begin{pmatrix}0&amp;1&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta A_{tx}\bigr)=
+\begin{pmatrix}
+\cos\theta&amp;\sin\theta&amp;0&amp;0\\
+-\sin\theta&amp;\cos\theta&amp;0&amp;0\\
+0&amp;0&amp;1&amp;0\\
+0&amp;0&amp;0&amp;1
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> Four nonzero entries and two fixed lines. <strong>The $\cos\theta$ pair sits on the two lines the plane uses; the $\pm\sin\theta$ pair sits off the diagonal, with the $+$ at $(t,x)$ and the $-$ at $(x,t)$</strong>; the $y$ and $z$ lines carry a $1$ and are untouched. <strong>Real, with the off-diagonal pair antisymmetric, so the matrix is orthogonal</strong>, and at $\theta=0.4$ the image of $e_{t}$ is $(0.9211,\,-0.3894,\,0,\,0)$.</p>
+<p><strong>The reading.</strong> The rotor takes the lepton line into the red line and keeps its length: <strong>$\sin\theta$ is the amplitude that has become colour after a finite parameter, and $\cos\theta$ is the amplitude that has stayed leptonic.</strong> The two are one circle, and <strong>the entry never exceeds one</strong>, which is the difference between this rotor and a boost.</p>
+<p><strong>The role.</strong> $\bar X^{r}$ is the leptoquark amplitude of the red plane: <strong>the boson whose rotor moves the lepton line into the red line and back</strong>, which is the definition of a leptoquark read on the matrix rather than on the charges. <strong>It is heavy, $32v^{2}$, and the mass has a rotor form: this is one of the six rotors that do not leave the vacuum alone</strong>, since $[A_{tx},D]\ne0$ and the rotor conjugates $D$ into a different diagonal.</p>
+<p><strong>The plane closes.</strong> $[A_{tx},iS_{tx}]=2i(E_{tt}-E_{xx})=-\tfrac23\bigl(iD+2d_{2}+d_{3}\bigr)$, <strong>so the plane's two rotors and one diagonal combination generate an $\mathfrak{su}(2)$</strong> — which is why the two amplitudes are one doublet and why no third amplitude sits on the same plane.</p>
+<h3 id="math151-math152-the-same-plane-with-a-phase-on-the-moved-amplitude">$X^{r}$: $iS_{tx}$, the same plane with a phase on the moved amplitude</h3>
+<p>$$
+iS_{tx}=\begin{pmatrix}0&amp;i&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta\,iS_{tx}\bigr)=
+\begin{pmatrix}
+\cos\theta&amp;i\sin\theta&amp;0&amp;0\\
+i\sin\theta&amp;\cos\theta&amp;0&amp;0\\
+0&amp;0&amp;1&amp;0\\
+0&amp;0&amp;0&amp;1
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> The same four cells and the same two fixed lines, with the off-diagonal pair now $+i\sin\theta$ on both sides. <strong>Symmetric instead of antisymmetric, and imaginary instead of real</strong>, so the matrix is unitary and not orthogonal: at $\theta=0.4$ the image of $e_{t}$ is $(0.9211,\,0.3894i,\,0,\,0)$.</p>
+<p><strong>The reading.</strong> The $\cos\theta$ entries are the same as the real plane's; <strong>the difference is entirely in the off-diagonal pair, and it is one factor of $i$.</strong> So the rotor does not turn the real plane — it rotates the <em>complexified</em> plane, and on the circular lines $e_{t}\pm ie_{x}$ it is a pure phase, $e^{\pm i\theta}$.</p>
+<p><strong>The role.</strong> $X^{r}$ is the second amplitude of the same complex leptoquark field. <strong>Its rotor coincides with $\bar X^{r}$'s at exactly the half-turns</strong>, $\exp(\pi iS_{tx})=\exp(\pi A_{tx})=\operatorname{diag}(-1,-1,1,1)$, because there $\sin\pi=0$ and the $i$ has nothing to multiply. <strong>Away from those points the two rotors differ, and the difference is what makes the pair a complex field rather than two real ones.</strong></p>
+<h3 id="math167-math168-the-real-turn-of-the-leptongreen-plane">$\bar X^{g}$: $A_{ty}$, the real turn of the lepton–green plane</h3>
+<p>$$
+A_{ty}=\begin{pmatrix}0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta A_{ty}\bigr)=
+\begin{pmatrix}
+\cos\theta&amp;0&amp;\sin\theta&amp;0\\
+0&amp;1&amp;0&amp;0\\
+-\sin\theta&amp;0&amp;\cos\theta&amp;0\\
+0&amp;0&amp;0&amp;1
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> The same pattern one line over: $+\sin\theta$ at $(t,y)$, $-\sin\theta$ at $(y,t)$, $\cos\theta$ on the lepton and green lines, $1$ on $x$ and $z$. <strong>The $y$ line is now turned where it was fixed before, and the $x$ line is now fixed where it was turned</strong>, and that exchange is the whole difference from the red plane.</p>
+<p><strong>The reading.</strong> $\exp(\theta A_{ty})e_{t}=\cos\theta\,e_{t}-\sin\theta\,e_{y}$, <strong>the same circle with a different partner.</strong> The star carries the array to a colour plane with a minus, $\star A_{ty}=-A_{xz}$, and <strong>the minus is the orientation of the pair $(x,z)$ against the order of the quartet</strong> — it reappears in the recombination $A_{xz}=+(T^{L}_{y}-T^{R}_{y})$, the one plus sign among the six.</p>
+<p><strong>The role.</strong> $\bar X^{g}$ is the green leptoquark amplitude, with the same charge $-\tfrac23$, the same colour $\bar{\mathbf3}$ and the same mass $32v^{2}$. <strong>The mass is identical in the three colours because the vacuum's three colour eigenvalues are equal</strong>: the rotor's $\cos$ and $\sin$ are the same functions of $\theta$ on all six leptoquark planes, and colour enters only through which line is named.</p>
+<h3 id="math191-math192-the-same-plane-with-the-phase">$X^{g}$: $iS_{ty}$, the same plane with the phase</h3>
+<p>$$
+iS_{ty}=\begin{pmatrix}0&amp;0&amp;i&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta\,iS_{ty}\bigr)=
+\begin{pmatrix}
+\cos\theta&amp;0&amp;i\sin\theta&amp;0\\
+0&amp;1&amp;0&amp;0\\
+i\sin\theta&amp;0&amp;\cos\theta&amp;0\\
+0&amp;0&amp;0&amp;1
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> $+i\sin\theta$ at $(t,y)$ and $(y,t)$, $\cos\theta$ on the two turned lines, $1$ on the other two. <strong>Unitary, not orthogonal; real at the half-turn and nowhere else in a turn.</strong></p>
+<p><strong>The reading.</strong> $\exp(\theta\,iS_{ty})e_{t}=\cos\theta\,e_{t}+i\sin\theta\,e_{y}$: <strong>the moved amplitude has gained a quarter turn</strong>, so the lepton line does not become green — it becomes green with a phase, and a real apparatus cannot see that direction.</p>
+<p><strong>The role.</strong> $X^{g}$ completes the green pair exactly as $X^{r}$ completes the red one. <strong>The reading worth keeping is the negative one</strong>: nothing in the rotor of $X^{g}$ is new relative to $X^{r}$ except the name of a line, <strong>so the six leptoquark rotors are one rotor read on three planes and in two amplitudes</strong>, and the model has one leptoquark mass and not six.</p>
+<h3 id="math204-math205-the-real-turn-of-the-leptonblue-plane">$\bar X^{b}$: $A_{tz}$, the real turn of the lepton–blue plane</h3>
+<p>$$
+A_{tz}=\begin{pmatrix}0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\-1&amp;0&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta A_{tz}\bigr)=
+\begin{pmatrix}
+\cos\theta&amp;0&amp;0&amp;\sin\theta\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;1&amp;0\\
+-\sin\theta&amp;0&amp;0&amp;\cos\theta
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> $+\sin\theta$ at $(t,z)$, $-\sin\theta$ at $(z,t)$, $\cos\theta$ on the lepton and blue lines, $1$ on $x$ and $y$. <strong>The last of the three mixed planes, and its star image is the colour plane that shares its label</strong>, $\star A_{tz}=+A_{xy}$.</p>
+<p><strong>The reading.</strong> $\exp(\theta A_{tz})e_{t}=\cos\theta\,e_{t}-\sin\theta\,e_{z}$, with both colour lines $x$ and $y$ fixed. <strong>The rotor is a rotation of the pair (lepton, blue) and the identity on the other pair</strong> — the sharpest single example of "a plane rotor is a rotation in two lines and nothing elsewhere".</p>
+<p><strong>The role.</strong> $\bar X^{b}$ is the blue leptoquark amplitude, charge $-\tfrac23$, mass $32v^{2}$, and its plane's bracket closes the third way, $[A_{tz},iS_{tz}]=-\tfrac23 iD+\tfrac23 d_{2}+\tfrac43 d_{3}$. <strong>The three closures are the three independent diagonal combinations of the corner and the two colour phases</strong>, so each leptoquark plane closes with the diagonal sector and no leptoquark plane closes with another.</p>
+<h3 id="math223-math224-the-last-of-the-six">$X^{b}$: $iS_{tz}$, the last of the six</h3>
+<p>$$
+iS_{tz}=\begin{pmatrix}0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\i&amp;0&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta\,iS_{tz}\bigr)=
+\begin{pmatrix}
+\cos\theta&amp;0&amp;0&amp;i\sin\theta\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;1&amp;0\\
+i\sin\theta&amp;0&amp;0&amp;\cos\theta
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> $+i\sin\theta$ at $(t,z)$ and $(z,t)$, $\cos\theta$ on the turned pair, $1$ on the two colour lines it does not use. <strong>The sixth and last of the heavy rotors.</strong></p>
+<p><strong>The reading.</strong> $\exp(\theta\,iS_{tz})e_{t}=\cos\theta\,e_{t}+i\sin\theta\,e_{z}$. <strong>With this rotor the six are complete and the count of heavy vectors is six</strong>, and the count is the number of arrays that move the lepton line without being the corner.</p>
+<p><strong>The role.</strong> $X^{b}$ is the blue amplitude, and <strong>the sextet it completes is the only coloured massive set of the model</strong>: six rotors, one mass, three colour lines, two amplitudes, and six charges that sum to zero. <strong>The rotor language adds one fact to the ledger's</strong>: all six have the same $\cos$ and the same $\sin$, so the sextet is degenerate at the symmetric point by the shape of the rotor and not by a symmetry of the potential.</p>
+<h2 id="the-six-off-diagonal-gluons-the-rotors-that-leave-the-lepton-line-alone">The Six Off-Diagonal Gluons: The Rotors That Leave the Lepton Line Alone</h2>
+<p><strong>The complement of the previous section, and its statement is negative and exact: these six rotors fix $e_{t}$ for every $\theta$, and $e_{t}$ is the one line they all leave alone.</strong> Each turns a colour plane; each has a real and an imaginary amplitude; <strong>none of them moves the lepton line, which is what "colour is the stabiliser" means when it is written on a rotor.</strong></p>
+<h3 id="math238-math239-the-real-turn-of-the-redgreen-plane">$g_{1}$: $A_{xy}$, the real turn of the red–green plane</h3>
+<p>$$
+A_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;-1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta A_{xy}\bigr)=
+\begin{pmatrix}
+1&amp;0&amp;0&amp;0\\
+0&amp;\cos\theta&amp;\sin\theta&amp;0\\
+0&amp;-\sin\theta&amp;\cos\theta&amp;0\\
+0&amp;0&amp;0&amp;1
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> Two $1$s on the lines outside the plane, the $\cos\theta$ pair on red and green, and the $\pm\sin\theta$ pair between them. <strong>The lepton line carries a $1$ and so does the blue line</strong>, and those two $1$s are the article's statement that colour leaves the lepton alone.</p>
+<p><strong>The reading.</strong> $\exp(\theta A_{xy})e_{x}=\cos\theta\,e_{x}-\sin\theta\,e_{y}$ with $e_{t}=e_{t}$ and $e_{z}=e_{z}$: <strong>a rotation of the colour triple read inside the quartet.</strong> At $\theta=\pi$ the rotor is the sign flip on the red–green plane, $\operatorname{diag}(1,-1,-1,1)$, <strong>which is an involution of the group and not only a rotation of a plane: applied twice it gives the identity, and it is the element of order two a reader meets again at the centre.</strong></p>
+<p><strong>The role.</strong> $g_{1}$ is a gluon, and its rotor is a symmetry of the vacuum in the exact sense of the comparison above: $[A_{xy},D]=0$, so $R_{A_{xy}}(\theta)\Phi_{0}R_{A_{xy}}(\theta)^{-1}=\Phi_{0}$ for every $\theta$. <strong>The rotor is the gauge transformation of the unbroken colour group</strong>, and the zero mass is that sentence and not a separate computation.</p>
+<h3 id="math255-math256-the-same-plane-with-the-phase">$g_{2}$: $iS_{xy}$, the same plane with the phase</h3>
+<p>$$
+iS_{xy}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;i&amp;0\\0&amp;i&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta\,iS_{xy}\bigr)=
+\begin{pmatrix}
+1&amp;0&amp;0&amp;0\\
+0&amp;\cos\theta&amp;i\sin\theta&amp;0\\
+0&amp;i\sin\theta&amp;\cos\theta&amp;0\\
+0&amp;0&amp;0&amp;1
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> The same four cells, one $i$ on each off-diagonal entry, and the same two $1$s. <strong>Unitary and complex; real at the half-turns, where it equals $g_{1}$'s rotor.</strong></p>
+<p><strong>The reading.</strong> $\exp(\theta\,iS_{xy})e_{x}=\cos\theta\,e_{x}+i\sin\theta\,e_{y}$: <strong>the same rotation with the moved amplitude phased</strong>, and the circular lines $e_{x}\pm ie_{y}$ are multiplied by $e^{\mp i\theta}$.</p>
+<p><strong>The role.</strong> $g_{2}$ is the second gluon of the red–green plane, and <strong>the pair $\{g_{1},g_{2}\}$ is one complex colour field</strong>: the two rotors differ by the $i$ on the off-diagonal pair, which is the statement that the two arrays are the two amplitudes of one cell pair. <strong>A colour plane contributes one complex field and not two real ones</strong>, which is why the six off-diagonal colour arrays carry three complex colour fields, one per plane.</p>
+<h3 id="math267-math268-the-real-turn-of-the-redblue-plane">$g_{4}$: $A_{xz}$, the real turn of the red–blue plane</h3>
+<p>$$
+A_{xz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\\0&amp;-1&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta A_{xz}\bigr)=
+\begin{pmatrix}
+1&amp;0&amp;0&amp;0\\
+0&amp;\cos\theta&amp;0&amp;\sin\theta\\
+0&amp;0&amp;1&amp;0\\
+0&amp;-\sin\theta&amp;0&amp;\cos\theta
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> $+\sin\theta$ at $(x,z)$, $-\sin\theta$ at $(z,x)$, $\cos\theta$ on red and blue, $1$ on the lepton and green lines. <strong>The middle of the three colour planes, and the one whose star carries the minus</strong>, $\star A_{xz}=-A_{ty}$.</p>
+<p><strong>The reading.</strong> $\exp(\theta A_{xz})e_{x}=\cos\theta\,e_{x}-\sin\theta\,e_{z}$ with the lepton and green lines fixed. <strong>At $\theta=0.4$ the image of $e_{x}$ is $(0,\,0.9211,\,0,\,-0.3894)$</strong>, real, orthogonal, and confined to the colour block.</p>
+<p><strong>The role.</strong> $g_{4}$, a gluon of the red–blue plane, massless by the same commutator. <strong>Its bracket with its own imaginary partner gives a diagonal combination and not a single diagonal</strong>, $[A_{xz},iS_{xz}]=2i(E_{xx}-E_{zz})=2(d_{2}+d_{3})$: <strong>the middle colour plane sees both Cartan directions</strong>, which is why the colour block's three brackets are $2d_{2}$, $2(d_{2}+d_{3})$ and $2d_{3}$ and not three copies of one.</p>
+<h3 id="math286-math287-the-same-plane-with-the-phase">$g_{5}$: $iS_{xz}$, the same plane with the phase</h3>
+<p>$$
+iS_{xz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;0&amp;0\\0&amp;i&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta\,iS_{xz}\bigr)=
+\begin{pmatrix}
+1&amp;0&amp;0&amp;0\\
+0&amp;\cos\theta&amp;0&amp;i\sin\theta\\
+0&amp;0&amp;1&amp;0\\
+0&amp;i\sin\theta&amp;0&amp;\cos\theta
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> $+i\sin\theta$ at $(x,z)$ and $(z,x)$, $\cos\theta$ on the two turned lines, $1$ on the lepton and green lines. <strong>Unitary, and real at $\theta=\pi$.</strong></p>
+<p><strong>The reading.</strong> $\exp(\theta\,iS_{xz})e_{x}=\cos\theta\,e_{x}+i\sin\theta\,e_{z}$: <strong>the phasing of the red–blue plane</strong>, and the second of the three complex colour rotations.</p>
+<p><strong>The role.</strong> $g_{5}$ is the second gluon of the red–blue plane, massless and unbroken. <strong>The octet's rotor content is therefore three real rotations, three complex rotations and two diagonal phases</strong>, and only the first three are rotations of the quartet — <strong>a reader who expects eight rotation angles finds six turns and two phases.</strong></p>
+<h3 id="math297-math298-the-real-turn-of-the-greenblue-plane">$g_{6}$: $A_{yz}$, the real turn of the green–blue plane</h3>
+<p>$$
+A_{yz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;-1&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta A_{yz}\bigr)=
+\begin{pmatrix}
+1&amp;0&amp;0&amp;0\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;\cos\theta&amp;\sin\theta\\
+0&amp;0&amp;-\sin\theta&amp;\cos\theta
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> $+\sin\theta$ at $(y,z)$, $-\sin\theta$ at $(z,y)$, $\cos\theta$ on green and blue, and the $1$s on the lepton and red lines. <strong>The only plane of the six that leaves the red line and the lepton line as $1$s</strong>, and $\star A_{yz}=+A_{tx}$.</p>
+<p><strong>The reading.</strong> $\exp(\theta A_{yz})e_{y}=\cos\theta\,e_{y}-\sin\theta\,e_{z}$. <strong>The rotor is a rotation of the last colour pair</strong>, and its half-turn is the sign flip on that pair.</p>
+<p><strong>The role.</strong> $g_{6}$, a gluon of the green–blue plane, massless. <strong>Its bracket with its partner is the third single diagonal</strong>, $[A_{yz},iS_{yz}]=2i(E_{yy}-E_{zz})=2d_{3}$, and <strong>the three brackets together are the whole diagonal content of the octet.</strong></p>
+<h3 id="math311-math312-the-last-of-the-octet">$g_{7}$: $iS_{yz}$, the last of the octet</h3>
+<p>$$
+iS_{yz}=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;i\\0&amp;0&amp;i&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta\,iS_{yz}\bigr)=
+\begin{pmatrix}
+1&amp;0&amp;0&amp;0\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;\cos\theta&amp;i\sin\theta\\
+0&amp;0&amp;i\sin\theta&amp;\cos\theta
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> $+i\sin\theta$ at $(y,z)$ and $(z,y)$, $\cos\theta$ on green and blue, $1$ on the lepton and red lines. <strong>The sixth and last off-diagonal colour rotor.</strong></p>
+<p><strong>The reading.</strong> $\exp(\theta\,iS_{yz})e_{y}=\cos\theta\,e_{y}+i\sin\theta\,e_{z}$. <strong>With it the six off-diagonal colour rotors are complete</strong>, three planes and two amplitudes each, and the count is the nine cells of the colour block minus the trace.</p>
+<p><strong>The role.</strong> $g_{7}$ is a gluon, and <strong>the six off-diagonal rotors plus the two diagonals below are the octet</strong>: eight rotors, each fixing the lepton line, each commuting with $D$, each massless at every step of the chain.</p>
+<h2 id="the-two-colour-diagonals-the-rotors-that-phase-two-colour-lines">The Two Colour Diagonals: The Rotors That Phase Two Colour Lines</h2>
+<h3 id="math322-math323-red-against-green">$T^{c}_{3}$: $d_{2}$, red against green</h3>
+<p>$$
+d_{2}=i\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
+\qquad
+\exp\bigl(\theta d_{2}\bigr)=
+\begin{pmatrix}
+1&amp;0&amp;0&amp;0\\
+0&amp;e^{i\theta}&amp;0&amp;0\\
+0&amp;0&amp;e^{-i\theta}&amp;0\\
+0&amp;0&amp;0&amp;1
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> Four diagonal entries and no off-diagonal entry: <strong>two $1$s, one $e^{i\theta}$ and one $e^{-i\theta}$.</strong> The two phases are opposite, and their product is one, so the determinant is one.</p>
+<p><strong>The reading.</strong> Nothing moves; <strong>two lines are multiplied by opposite phases and two are left alone.</strong> The rotor is diagonal, so it commutes with every diagonal rotor, and <strong>that is the whole reason the Cartan of the octet is abelian</strong>.</p>
+<p><strong>The role.</strong> $T^{c}_{3}$ is one of the two Cartan directions of the colour group, massless and unbroken because $[d_{2},D]=0$. <strong>It is one of the eight rotors that fix the lepton line</strong>, and among the eight it is one of the two that turn nothing: it fixes blue, and multiplies red and green by opposite phases.</p>
+<h3 id="math330-math331-green-against-blue">$T^{c}_{8}$: $d_{3}$, green against blue</h3>
+<p>$$
+d_{3}=i\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;0&amp;0\\0&amp;0&amp;1&amp;0\\0&amp;0&amp;0&amp;-1\end{pmatrix},
+\qquad
+\exp\bigl(\theta d_{3}\bigr)=
+\begin{pmatrix}
+1&amp;0&amp;0&amp;0\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;e^{i\theta}&amp;0\\
+0&amp;0&amp;0&amp;e^{-i\theta}
+\end{pmatrix}.
+$$</p>
+<p><strong>The entries.</strong> One $e^{i\theta}$ on green, one $e^{-i\theta}$ on blue, and $1$ on the lepton and red lines. <strong>The second and last colour phase.</strong></p>
+<p><strong>The reading.</strong> $\exp(\theta d_{3})$ fixes the lepton line and the red line, <strong>so the two colour diagonals fix the lepton line and one colour line each</strong> — $d_{2}$ fixes blue, $d_{3}$ fixes red — and between them they give the two independent colour phase directions, with the third colour line playing the role of the trace.</p>
+<p><strong>The role.</strong> $T^{c}_{8}$ is the second Cartan direction, massless, and <strong>its one exceptional property is the trace form</strong>: $\operatorname{tr}(d_{2}d_{3})=+1$, so the two diagonals are not orthogonal. <strong>That is a statement about the basis and not about the group</strong> — any two independent combinations of the two phases would serve — <strong>and it is the only pair of the $105$ whose Gram entry is nonzero.</strong> The rotors still commute, and the two parameters compose into a two-angle torus with no correction:</p>
+<p>$$
+\exp\bigl(\beta d_{2}+\gamma d_{3}\bigr)
+=\operatorname{diag}\bigl(1,\,e^{i\beta},\,e^{-i\beta+i\gamma},\,e^{-i\gamma}\bigr),
+$$</p>
+<p><strong>and the corner can be added to it</strong>, because it commutes with both:</p>
+<p>$$
+\exp\bigl(\alpha iD+\beta d_{2}+\gamma d_{3}\bigr)
+=\operatorname{diag}\Bigl(e^{-3i\alpha},\,e^{i(\alpha+\beta)},\,e^{i(\alpha-\beta+\gamma)},\,e^{i(\alpha-\gamma)}\Bigr),
+$$</p>
+<p><strong>four phases with one relation among them, which is rank three.</strong> That is the only multi-parameter rotor of the model written in closed form, and it is closed for the reason the Cartan is abelian.</p>
+<h2 id="what-the-rotor-entries-say-that-the-array-entries-do-not">What the Rotor Entries Say That the Array Entries Do Not</h2>
+<p><strong>Three statements, and each is a comparison of the two matrices in one subsection.</strong></p>
+<p><strong>First, a vertex is not an amplitude.</strong> The array's entry is $1$ or $i$ and says which two lines the boson can join; <strong>the rotor's entry is $\sin\theta$ and says how much of one line has become the other after a finite parameter.</strong> For a massless boson the two agree in the only way they can — the vertex is unsuppressed and the amplitude is a circle — while for a heavy one the circle is no longer free: <strong>$\theta$ is then a field and not a symmetry parameter, the vacuum sits at one value of it, and the oscillation about that value is the $32v^{2}$.</strong></p>
+<p><strong>Second, the mass is a statement about the vacuum and the rotor makes it visible.</strong> Nine rotors leave $\Phi_{0}$ fixed and six move it, and the six are exactly the six with $32v^{2}$:</p>
+<p>$$
+[A,D]=0\ \text{for the nine}\ \Longleftrightarrow\ R_{A}(\theta)\Phi_{0}R_{A}(\theta)^{-1}=\Phi_{0},
+$$</p>
+<p><strong>so "massless" and "the rotor is a symmetry of the vacuum" are one statement and not two.</strong> <strong>The corner is in the nine and fixes no line; the octet is in the nine and fixes the lepton line</strong> — which is why the ledger of the mass and the ledger of what the rotors do are two different partitions of the same fifteen.</p>
+<p><strong>Third, the two amplitudes of a plane are not two bosons.</strong> The rotor of $iS_{jk}$ is the rotor of $A_{jk}$ with one factor of $i$ on the off-diagonal pair, <strong>so the pair is one plane, one angle, and two phases of one field.</strong> The count that follows is the corpus's: <strong>fifteen arrays and fifteen rotors, eight of them the colour octet and seven the corner and the sextet</strong> — and the redundancy the corpus warns about is not in this list: the six composites are products of two of these rotors and not rotors of their own.</p>
+<p><strong>And the composites, said once so that they are not smuggled in.</strong> $T^{L}_{a}$ and $T^{R}_{a}$ are halves of sums and differences of the plane arrays, so their rotors are products of the rotors printed here, at half the parameter:</p>
+<p>$$
+\exp\bigl(\theta A_{ta}\bigr)=\exp\bigl(-\theta T^{L}_{a}\bigr)\exp\bigl(-\theta T^{R}_{a}\bigr),
+\qquad
+\bigl[T^{L}_{a},T^{R}_{b}\bigr]=0 ,
+$$</p>
+<p><strong>and the half angle of a composite is the full angle of the plane it is half of.</strong> <strong>No rotor in this article has a half angle</strong>, because no array in this article is half of another; the fifteen are independent, and the rank of the fifteen as $4\times4$ matrices is fifteen.</p>
+<h2 id="the-checks">The Checks</h2>
+<p>Sixteen recomputations, with the quartet ordered $(t,x,y,z)$ and $\theta$ one real parameter.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the closed forms</td>
+<td>each rotor against the eigen-decomposition at $\theta=0.37$, $0.4$, $1.1$, $2.3$</td>
+<td>maximum deviation $2.2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the determinant</td>
+<td>$\exp(\theta\operatorname{tr}G)$, all fifteen traceless</td>
+<td>$1$ on all fifteen</td>
+</tr>
+<tr>
+<td>real for every $\theta$</td>
+<td>$\max\lvert\operatorname{Im}R\rvert$ at three parameters</td>
+<td>$6$ arrays at $2.1\times10^{-17}$, $9$ arrays at $0.93$</td>
+</tr>
+<tr>
+<td>real at the half-turn</td>
+<td>$R(\pi)$ for the nine complex arrays</td>
+<td>real, a diagonal of $\pm1$, on all nine</td>
+</tr>
+<tr>
+<td>the period</td>
+<td>$\lVert R(2\pi)-\mathbb{1}\rVert$</td>
+<td>$\le 7.4\times10^{-16}$ on all fifteen</td>
+</tr>
+<tr>
+<td>the half-turn of a plane</td>
+<td>$R_{A_{jk}}(\pi)$, $R_{iS_{jk}}(\pi)$</td>
+<td>the sign flip on the plane, $+1$ elsewhere; the two agree</td>
+</tr>
+<tr>
+<td>the corner at the quarter turns</td>
+<td>$\exp(k\tfrac{\pi}{2}iD)$</td>
+<td>$i^{k}\mathbb{1}$, $k=0,1,2,3$</td>
+</tr>
+<tr>
+<td>centrality</td>
+<td>the parameter at which $R$ is a multiple of $\mathbb{1}$</td>
+<td>$k\tfrac{\pi}{2}$ for the corner only; $2\pi$ for the fourteen</td>
+</tr>
+<tr>
+<td>the fixed lines</td>
+<td>$\dim\ker(R-\mathbb{1})$</td>
+<td>$2$ for fourteen rotors, $0$ for $iD$</td>
+</tr>
+<tr>
+<td>the lepton line</td>
+<td>arrays with $G e_{t}=0$</td>
+<td>$8$: the six colour planes and the two diagonals</td>
+</tr>
+<tr>
+<td>the moved lepton line</td>
+<td>arrays with $G e_{t}\ne0$</td>
+<td>$7$: the corner and the six leptoquarks</td>
+</tr>
+<tr>
+<td>the vacuum comparison</td>
+<td>$R_{A}\Phi_{0}R_{A}^{-1}$ against $\Phi_{0}$</td>
+<td>equal for the nine, displaced by $1.13$ at $\theta=0.3$ for the six</td>
+</tr>
+<tr>
+<td>the masses</td>
+<td>$\operatorname{tr}([G,\Phi_{0}]^{\dagger}[G,\Phi_{0}])$ with $v=1$</td>
+<td>$32$ six times, $0$ nine times</td>
+</tr>
+<tr>
+<td>the plane brackets</td>
+<td>$[A_{jk},iS_{jk}]$</td>
+<td>$2d_{2}$, $2(d_{2}+d_{3})$, $2d_{3}$, and one diagonal combination per leptoquark plane</td>
+</tr>
+<tr>
+<td>the Gram of the diagonals</td>
+<td>$\operatorname{tr}(d_{2}d_{3})$</td>
+<td>$+1$, the only nonzero off-diagonal entry of the fifteen</td>
+</tr>
+<tr>
+<td>the torus</td>
+<td>$\exp(\alpha iD+\beta d_{2}+\gamma d_{3})$</td>
+<td>four phases, one relation, no correction term</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>Fifteen matrices, fifteen rotors, one per boson, and every rotor is elementary because every array squares to a diagonal.</strong> One corner, six leptoquarks, six off-diagonal gluons and two colour diagonals.</p>
+<p><strong>Three kinds of nonzero entry and no more.</strong> A cosine that stays, a sine that moves, a phase that multiplies. <strong>The six real planes carry the first two and are real for every $\theta$; the six imaginary planes carry the same pair with an $i$ and are real only at the half-turns; the corner and the two diagonals carry phases and no motion.</strong></p>
+<p><strong>The role of a boson is read off its rotor in two comparisons.</strong> Eight rotors fix the lepton line and are the octet; seven do not, and they are the corner, which phases it, and the six leptoquarks, which move it into colour. <strong>Nine rotors leave the vacuum exactly where it was and are massless; six move it and are the $32v^{2}$.</strong></p>
+<p><strong>The corner is the only rotor that reaches the centre</strong>, four times a turn with values $i^{k}$, and it is the only one that can be central because it is the only one with no fixed line. <strong>That is the rotor form of "$B-L$ is exact at every scale", and it is one line: the array the vacuum is made of is the array whose rotor can be a multiple of the identity.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_{a}(\theta)$</td>
+<td>$\exp(\theta G_{a})$, the rotor of the array $G_{a}$</td>
+</tr>
+<tr>
+<td>$A_{jk}$</td>
+<td>the real plane $E_{jk}-E_{kj}$</td>
+</tr>
+<tr>
+<td>$iS_{jk}$</td>
+<td>the imaginary plane $i(E_{jk}+E_{kj})$</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>the corner $i\operatorname{diag}(-3,1,1,1)$</td>
+</tr>
+<tr>
+<td>$d_{2}$, $d_{3}$</td>
+<td>the two colour diagonals</td>
+</tr>
+<tr>
+<td>$\Phi_{0}=vD$</td>
+<td>the breaking direction, with $D=\operatorname{diag}(-3,1,1,1)$</td>
+</tr>
+<tr>
+<td>fixed line</td>
+<td>a line whose column in the rotor is that line itself, a $1$ on the diagonal</td>
+</tr>
+<tr>
+<td>role</td>
+<td>what the rotor does to the four lines: which it fixes, which it moves, and whether it leaves the vacuum alone</td>
+</tr>
+<tr>
+<td>$8+7$</td>
+<td>rotors that fix the lepton line, and rotors that do not</td>
+</tr>
+<tr>
+<td>$9+6$</td>
+<td>rotors that leave the vacuum alone, and rotors that move it</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="construction-of-the-axf-matrices-of-the-rotors-of-the-fifteen-generators.html">Construction of the AXF Matrices of the Rotors of the Fifteen Generators</a>. The fifteen closed forms this article reads entry by entry.</li>
+<li><a href="the-15-axf-matrices-of-the-bosons-in-detail.html">The Fifteen AXF Matrices of the Bosons in Detail</a>. The same fifteen as arrays: the spectrum, the mass, the Hodge star and the fate.</li>
+<li><a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">Construction of the AXF Matrices of the Fifteen Generators</a>. Where the fifteen come from, in three steps.</li>
+<li><a href="the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Fifteen Generators</a>. Which space each rotor turns, and the proofs that none of them is a boost.</li>
+<li><a href="the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html">The Commutation Table of the Fifteen Generators</a>. Every bracket quoted in the sections above, with its five rules.</li>
+<li><a href="classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html">Classification of the Bosons in the $\mathrm{SU}(4)$ Model</a>. The grid that names the cells, and the ledger the rows above are written in.</li>
+<li><a href="charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour</a>. The corner's relative phase, which the first section's display reproduces.</li>
+<li><a href="the-death-of-the-primordial-force-the-id-condensate-and-the-six-carriers-it-eats.html">The Death of the Primordial Force</a>. The mass form, the nine zeros, and the vacuum that decides which rotors are symmetries.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

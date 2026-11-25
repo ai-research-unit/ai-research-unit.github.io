@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Commutation Table of the Fifteen Generators: 225 Entries, 120 Independent, 80 Nonzero, and Five Rules That Produce Them All — Biquaternion Universe</title>
+  <title>The Commutation Table of the Fifteen Generators: 225 Entries, 105 Independent, 80 Nonzero, and Five Rules That Produce Them All — Biquaternion Universe</title>
   <meta name="description" content="The question. The group block of the corpus quotes one bracket where it needs one bracket. That is enough to prove a point about a sector, and it is not…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,10 +69,10 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules-that-produce-them-all"><strong>The Commutation Table of the Fifteen Generators: 225 Entries, 120 Independent, 80 Nonzero, and Five Rules That Produce Them All</strong></h1>
+        <h1 id="the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules-that-produce-them-all"><strong>The Commutation Table of the Fifteen Generators: 225 Entries, 105 Independent, 80 Nonzero, and Five Rules That Produce Them All</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The question.</strong> The group block of the corpus quotes one bracket where it needs one bracket. That is enough to prove a point about a sector, and it is not enough to see the object every sector sits on: the bracket of every generator with every other generator.</p>
-<p><strong>The answer, in numbers.</strong> The fifteen arrays give $15\times15=225$ ordered brackets. Antisymmetry leaves $120$ independent ones. Of those, $80$ are nonzero and $40$ vanish. <strong>Every right-hand side is a combination of the same fifteen arrays</strong>, so the table closes on itself and needs no symbol the algebra does not already have.</p>
+<p><strong>The answer, in numbers.</strong> The fifteen arrays give $15\times15=225$ ordered brackets. The fifteen brackets of an array with itself vanish, and antisymmetry pairs the remaining $210$, leaving $105$ independent brackets. Of those, $80$ are nonzero and $25$ vanish. <strong>Counting the fifteen self-brackets as well, $120$ entries are distinct up to sign and $40$ of the $225$ entries are zero.</strong> <strong>Every right-hand side is a combination of the same fifteen arrays</strong>, so the table closes on itself and needs no symbol the algebra does not already have.</p>
 <p><strong>The answer, in structure.</strong> Five rules produce all $80$ nonzero entries. Each is one line of matrix algebra. Together they are a presentation of the algebra in the fifteen arrays.</p>
 <p><strong>The method.</strong> Every entry was computed from the $4\times4$ matrices in exact rational arithmetic, pair by pair. The five rules were then implemented a second time, without the matrices, and compared with the $225$ computed entries on all $105$ independent pairs: no disagreement. Nothing in this article is a fit, a sample or an estimate.</p>
 <h2 id="the-six-composites-and-the-convention-of-the-table">The Six Composites, and the Convention of the Table</h2>
@@ -119,7 +119,7 @@ No other convention enters, and no generator is rescaled.</p>
 </tbody>
 </table></div>
 <p><strong>The three diagonals are one family.</strong> They are the diagonal generators of $\mathfrak{su}(4)$, and their eigenvalues are all that a bracket with a diagonal reads.</p>
-<p><strong>Only one order is printed.</strong> Since $[Y,X]=-[X,Y]$, the $225$ entries are $120$ entries and their negatives, and every table below lists a pair once, with the two arrays in the order of the block list above.</p>
+<p><strong>Only one order is printed.</strong> Since $[Y,X]=-[X,Y]$, the $210$ off-diagonal brackets are $105$ brackets and their negatives, and every table below lists a pair once, with the two arrays in the order of the block list above. The fifteen self-brackets are not printed at all: they are zero by antisymmetry, and they are counted in §<em>The Forty Zeros</em>.</p>
 <p><strong>The coefficients are few.</strong> In the $225$ entries exactly ten signed values occur:
 $$
 \pm\tfrac23,\quad \pm1,\quad \pm\tfrac43,\quad \pm2,\quad \pm4 .
@@ -796,11 +796,11 @@ $$</p>
 </tr>
 <tr>
 <td>nonzero entries</td>
-<td>$80$ of $120$</td>
+<td>$80$ of the $105$ independent brackets</td>
 </tr>
 <tr>
 <td>zero entries</td>
-<td>$40$, in the seven families above</td>
+<td>$25$ off-diagonal, plus the $15$ self-brackets: $40$ of the $225$ entries, in the seven families above</td>
 </tr>
 <tr>
 <td>coefficient set</td>
@@ -823,7 +823,7 @@ $$</p>
 <p><strong>The count by block is the check on the tables themselves.</strong> Parts I to IV contribute $12+12+30+3+5+5+3+5+5+0+0+0=80$. <strong>The tables print exactly that many rows.</strong></p>
 <p><strong>No pass exceeded thirty entries.</strong> Each block was recomputed and compared in its own pass, and the largest single pass is the thirty-entry real-imaginary block.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>Fifteen arrays, $225$ ordered brackets, $120$ independent, $80$ nonzero, $40$ zero.</strong> Five rules produce all of them:
+<p><strong>Fifteen arrays, $225$ ordered brackets, $105$ independent, $80$ nonzero, $25$ of the zeros off the diagonal and $40$ in all.</strong> Five rules produce all of them:
 $$
 [A_{jk},A_{kl}]=A_{jl},
 \qquad

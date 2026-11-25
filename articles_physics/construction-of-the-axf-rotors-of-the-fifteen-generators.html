@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Construction of the AXF Rotors of the Fifteen Generators: One Closed Form per Array, and Where the Half Angle Comes From — Biquaternion Universe</title>
+  <title>Construction of the AXF Matrices of the Rotors of the Fifteen Generators: One Closed Form per Array, and Where the Half Angle Comes From — Biquaternion Universe</title>
   <meta name="description" content="This article exponentiates the fifteen arrays that the construction article builds, and prints the fifteen answers. The construction article supplies the…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,7 +69,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="construction-of-the-axf-rotors-of-the-fifteen-generators-one-closed-form-per-array-and-where-the-half-angle-comes-from"><strong>Construction of the AXF Rotors of the Fifteen Generators: One Closed Form per Array, and Where the Half Angle Comes From</strong></h1>
+        <h1 id="construction-of-the-axf-matrices-of-the-rotors-of-the-fifteen-generators-one-closed-form-per-array-and-where-the-half-angle-comes-from"><strong>Construction of the AXF Matrices of the Rotors of the Fifteen Generators: One Closed Form per Array, and Where the Half Angle Comes From</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>This article exponentiates the fifteen arrays that <a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">the construction article</a> builds, and prints the fifteen answers.</strong> The construction article supplies the directions; this article supplies the motion along them, one closed form per array, in the same axis-free frame and with the same names. <strong>The order is not the construction article's</strong>, and it is explained in the next paragraph.</p>
 <p><strong>Three articles, three questions, and the division is deliberate.</strong> <a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">The construction article</a> answers <em>what is the array</em>. <a href="the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The rotors article</a> answers <em>which space does it turn, and why is none of them a boost</em>. <strong>This article answers only <em>what is the turned thing, written out</em></strong> — and it does so for all fifteen rather than for the few the theorem needs.</p>
@@ -235,22 +235,20 @@ $$</p>
 \exp\bigl(\theta T^{L}_{x}\bigr)=\mathbb{1}\cos\frac{\theta}{2}+2\,T^{L}_{x}\sin\frac{\theta}{2}
 =
 \begin{pmatrix}
-c&amp;-s&amp;0&amp;0\\
-s&amp;c&amp;0&amp;0\\
-0&amp;0&amp;c&amp;-s\\
-0&amp;0&amp;s&amp;c
-\end{pmatrix},
-\qquad
-c=\cos\frac{\theta}{2},\ s=\sin\frac{\theta}{2},
+\cos\frac{\theta}{2}&amp;-\sin\frac{\theta}{2}&amp;0&amp;0\\
+\sin\frac{\theta}{2}&amp;\cos\frac{\theta}{2}&amp;0&amp;0\\
+0&amp;0&amp;\cos\frac{\theta}{2}&amp;-\sin\frac{\theta}{2}\\
+0&amp;0&amp;\sin\frac{\theta}{2}&amp;\cos\frac{\theta}{2}
+\end{pmatrix}.
 $$</p>
 <p><strong>and the two $2\times2$ blocks are identical</strong>, which is the matrix form of "one generator, two planes, the same angle". The $tx$ plane and the $yz$ plane are turned together. <strong>The right-handed partner turns the same $tx$ plane and the opposite $yz$ plane</strong>,</p>
 <p>$$
 \exp\bigl(\theta T^{R}_{x}\bigr)=
 \begin{pmatrix}
-c&amp;-s&amp;0&amp;0\\
-s&amp;c&amp;0&amp;0\\
-0&amp;0&amp;c&amp;s\\
-0&amp;0&amp;-s&amp;c
+\cos\frac{\theta}{2}&amp;-\sin\frac{\theta}{2}&amp;0&amp;0\\
+\sin\frac{\theta}{2}&amp;\cos\frac{\theta}{2}&amp;0&amp;0\\
+0&amp;0&amp;\cos\frac{\theta}{2}&amp;\sin\frac{\theta}{2}\\
+0&amp;0&amp;-\sin\frac{\theta}{2}&amp;\cos\frac{\theta}{2}
 \end{pmatrix},
 $$</p>
 <p><strong>and the sign difference sits entirely in the second block</strong>, which is the construction article's "the two arrays of one label differ in sign on the plane $\{b,c\}$ and not on $\{t,a\}$", read after exponentiation.</p>
@@ -478,10 +476,6 @@ $$</p>
 <td>The projector in $G^{2}=-\omega^{2}P$</td>
 </tr>
 <tr>
-<td>$c,s$</td>
-<td>$\cos\frac{\theta}{2}$ and $\sin\frac{\theta}{2}$ in the weak rotors</td>
-</tr>
-<tr>
 <td>$T^{L}_{a},T^{R}_{a}$</td>
 <td>$\tfrac12L_{\vec e_{a}}$ and $\tfrac12R_{\vec e_{a}}$</td>
 </tr>
@@ -512,6 +506,7 @@ $$</p>
 <li><a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">Construction of the AXF Matrices of the Fifteen Generators</a>. The arrays this article exponentiates, in the same order and the same basis.</li>
 <li><a href="the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Fifteen Generators</a>. Which space each rotor turns, and the three proofs that none of them is a boost.</li>
 <li><a href="../articles_internal/structures/structure-SU4-SO4-relations.html">The Relation between $\mathfrak{su}(4)$ and $\mathfrak{so}(4)$: the Twelve Real Arrays and the Nine Complex Ones</a>. Why the order of this article is the split it is, and why the pairing $\{A_{jk},iS_{jk}\}$ is not a substitute.</li>
+<li><a href="the-15-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role.html">The Fifteen AXF Matrices of the Boson Rotors in Detail</a>. The same closed forms read one boson at a time: the entries, the fixed lines, and the role of each matrix.</li>
 <li><a href="the-15-axf-matrices-of-the-bosons-in-detail.html">The Fifteen AXF Matrices of the Bosons in Detail</a>. One subsection per array, with the printed matrix and the spectrum.</li>
 <li><a href="charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour</a>. The corner's exponential and the relative phase $N\theta$ that this article's display reproduces.</li>
 <li><a href="the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html">The Counts of the Fifteen</a>. Names against directions, which is the count this article's rank computation confirms.</li>

@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Commutation Table of the Fifteen Generators: 225 Entries, 105 Independent, 80 Nonzero, and Five Rules That Produce Them All — Biquaternion Universe</title>
+  <meta name="description" content="The question. The group block of the corpus quotes one bracket where it needs one bracket. That is enough to prove a point about a sector, and it is not…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules-that-produce-them-all"><strong>The Commutation Table of the Fifteen Generators: 225 Entries, 105 Independent, 80 Nonzero, and Five Rules That Produce Them All</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The group block of the corpus quotes one bracket where it needs one bracket. That is enough to prove a point about a sector, and it is not enough to see the object every sector sits on: the bracket of every generator with every other generator.</p>
+<p><strong>The answer, in numbers.</strong> The fifteen arrays give $15\times15=225$ ordered brackets. The fifteen brackets of an array with itself vanish, and antisymmetry pairs the remaining $210$, leaving $105$ independent brackets. Of those, $80$ are nonzero and $25$ vanish. <strong>Counting the fifteen self-brackets as well, $120$ entries are distinct up to sign and $40$ of the $225$ entries are zero.</strong> <strong>Every right-hand side is a combination of the same fifteen arrays</strong>, so the table closes on itself and needs no symbol the algebra does not already have.</p>
+<p><strong>The answer, in structure.</strong> Five rules produce all $80$ nonzero entries. Each is one line of matrix algebra. Together they are a presentation of the algebra in the fifteen arrays.</p>
+<p><strong>The method.</strong> Every entry was computed from the $4\times4$ matrices in exact rational arithmetic, pair by pair. The five rules were then implemented a second time, without the matrices, and compared with the $225$ computed entries on all $105$ independent pairs: no disagreement. Nothing in this article is a fit, a sample or an estimate.</p>
+<h2 id="the-six-composites-and-the-convention-of-the-table">The Six Composites, and the Convention of the Table</h2>
+<p><strong>The frame.</strong> The index order is $(t,x,y,z)$. The matrix unit is $E_{jk}$, the real plane is $A_{jk}=E_{jk}-E_{kj}$, the imaginary plane is $iS_{jk}=i(E_{jk}+E_{kj})$, and the bracket is the commutator of the matrices,
+$$
+[X,Y]=XY-YX .
+$$
+No other convention enters, and no generator is rescaled.</p>
+<p><strong>The fifteen, in four blocks.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>number</th>
+<th>the arrays</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real planes</td>
+<td>$6$</td>
+<td>$A_{jk}$, one for each of the six pairs of indices</td>
+</tr>
+<tr>
+<td>imaginary planes</td>
+<td>$6$</td>
+<td>$iS_{jk}$, the same six pairs</td>
+</tr>
+<tr>
+<td>the corner</td>
+<td>$1$</td>
+<td>$iD=i\operatorname{diag}(-3,1,1,1)$</td>
+</tr>
+<tr>
+<td>colour diagonals</td>
+<td>$2$</td>
+<td>$d_2=i\operatorname{diag}(0,1,-1,0)$, $d_3=i\operatorname{diag}(0,0,1,-1)$</td>
+</tr>
+<tr>
+<td><strong>The four blocks hold twelve planes and three diagonals, and nothing else.</strong> <strong>The six arrays $T^{L}_{a}$, $T^{R}_{a}$ are not rows of this table.</strong> Each is half a sum or difference of two planes, so its brackets are the brackets of Part I, and §<em>The Six Arrays Outside the Table</em> says why they are printed elsewhere.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three diagonals are one family.</strong> They are the diagonal generators of $\mathfrak{su}(4)$, and their eigenvalues are all that a bracket with a diagonal reads.</p>
+<p><strong>Only one order is printed.</strong> Since $[Y,X]=-[X,Y]$, the $210$ off-diagonal brackets are $105$ brackets and their negatives, and every table below lists a pair once, with the two arrays in the order of the block list above. The fifteen self-brackets are not printed at all: they are zero by antisymmetry, and they are counted in §<em>The Forty Zeros</em>.</p>
+<p><strong>The coefficients are few.</strong> In the $225$ entries exactly ten signed values occur:
+$$
+\pm\tfrac23,\quad \pm1,\quad \pm\tfrac43,\quad \pm2,\quad \pm4 .
+$$
+<strong>Five magnitudes, each a rational with denominator $1$ or $3$</strong>, and no other number appears anywhere in the table. <strong>The half and the third of the old table came from the weak arrays</strong>, whose normalisation is the half and whose planes are the sums.</p>
+<p><strong>Most entries are short, and shorter than they were.</strong> Seventy-six of the $80$ nonzero brackets carry one term, one carries two, and three carry three. <strong>The three are the $\{t,k\}$ planes paired with their own imaginary partner</strong>, whose answer needs all three diagonal directions; <strong>the single two-term entry is $[A_{xz},iS_{xz}]=2\,d_2+2\,d_3$</strong>, the one diagonal that needs two of the three to be named.</p>
+<h2 id="the-five-rules">The Five Rules</h2>
+<p><strong>Five rules, and the table is finished.</strong> In this section $j$, $k$, $l$ are distinct indices, $A_{kj}=-A_{jk}$ is understood throughout, and $iS_{kj}=+iS_{jk}$ is understood throughout.</p>
+<p><strong>Rule 1, two real planes.</strong>
+$$
+[A_{jk},A_{kl}]=A_{jl}.
+$$
+<strong>Two real planes with no common index commute</strong>, and that is the only zero of their block.</p>
+<p><strong>Rule 2, two imaginary planes.</strong>
+$$
+[iS_{jk},iS_{kl}]=-A_{jl}.
+$$
+<strong>The minus sign is the $i^{2}$.</strong> The two imaginary units multiply to $-1$, and the answer is a real plane.</p>
+<p><strong>Rule 3, a real plane and an imaginary one.</strong>
+$$
+[A_{jk},iS_{kl}]=iS_{jl}.
+$$
+<strong>The free index moves and the type is kept.</strong> The two shapes this rule does not cover are the pair with no common index, which gives zero, and the equal pair, which is Rule 4.</p>
+<p><strong>Rule 4, a plane and its own partner.</strong>
+$$
+[A_{jk},iS_{jk}]=2i\bigl(E_{jj}-E_{kk}\bigr).
+$$
+<strong>This is the only bracket among the twelve planes whose answer is not a plane.</strong> The six entries it produces are the entire source of the three diagonal directions in the table, and that is why the Cartan is not an independent fifth block but a consequence of the planes.</p>
+<p><strong>Rule 5, a plane and a diagonal.</strong> For a diagonal $i\Lambda$ with eigenvalues $\lambda_{j}$,
+$$
+[A_{jk},i\Lambda]=(\lambda_{k}-\lambda_{j})\,iS_{jk},
+\qquad
+[iS_{jk},i\Lambda]=-(\lambda_{k}-\lambda_{j})\,A_{jk}.
+$$
+<strong>One rule, three diagonals, and the coefficients $4$, $2$ and $1$ are eigenvalue spacings.</strong> The corner has spacing $4$ through $t$ and spacing $0$ inside colour, which is why it meets three planes and not six. The colour diagonals have spacings $1$ and $2$, and each meets five planes of the six.</p>
+<p><strong>There is no sixth rule, and that is a result.</strong> A bracket with one of the six $\mathfrak{so}(4)$ arrays is the average of two plane brackets, because each of them is half a sum or difference of two planes. <strong>A sixth rule would be Rules 1 to 5 applied twice</strong>, and §<em>The Six Arrays Outside the Table</em> does exactly that once, for the record.</p>
+<p><strong>What the absence means.</strong> A table that needs five rules is a table of one algebra. <strong>A table that needed a sixth, with a sign of its own and a commutativity of its own, would be a table of a product</strong> — and this model is not one.</p>
+<h2 id="part-i-two-real-planes">Part I. Two Real Planes</h2>
+<p><strong>Twelve nonzero entries, three zeros, and only $\pm1$.</strong> The block is $\mathfrak{so}(4)$: the six real planes are closed, their brackets never leave them, and every structure constant is an integer.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$X$</th>
+<th>$Y$</th>
+<th>$[X,Y]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{tx}$</td>
+<td>$A_{ty}$</td>
+<td>$-A_{xy}$</td>
+</tr>
+<tr>
+<td>$A_{tx}$</td>
+<td>$A_{tz}$</td>
+<td>$-A_{xz}$</td>
+</tr>
+<tr>
+<td>$A_{tx}$</td>
+<td>$A_{xy}$</td>
+<td>$A_{ty}$</td>
+</tr>
+<tr>
+<td>$A_{tx}$</td>
+<td>$A_{xz}$</td>
+<td>$A_{tz}$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$A_{tz}$</td>
+<td>$-A_{yz}$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$A_{xy}$</td>
+<td>$-A_{tx}$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$A_{yz}$</td>
+<td>$A_{tz}$</td>
+</tr>
+<tr>
+<td>$A_{tz}$</td>
+<td>$A_{xz}$</td>
+<td>$-A_{tx}$</td>
+</tr>
+<tr>
+<td>$A_{tz}$</td>
+<td>$A_{yz}$</td>
+<td>$-A_{ty}$</td>
+</tr>
+<tr>
+<td>$A_{xy}$</td>
+<td>$A_{xz}$</td>
+<td>$-A_{yz}$</td>
+</tr>
+<tr>
+<td>$A_{xy}$</td>
+<td>$A_{yz}$</td>
+<td>$A_{xz}$</td>
+</tr>
+<tr>
+<td>$A_{xz}$</td>
+<td>$A_{yz}$</td>
+<td>$-A_{xy}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three zeros are the three pairs of complementary planes</strong>, $\{t,x\}$ with $\{y,z\}$, $\{t,y\}$ with $\{x,z\}$ and $\{t,z\}$ with $\{x,y\}$. <strong>Planes with no common index act on disjoint entries and commute</strong>, and no other pair of real planes does.</p>
+<h2 id="part-ii-two-imaginary-planes">Part II. Two Imaginary Planes</h2>
+<p><strong>The same twelve and the same three zeros, with the answer on the other side.</strong> The imaginary block has exactly the support of the real one, and its image is the real planes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$X$</th>
+<th>$Y$</th>
+<th>$[X,Y]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$iS_{tx}$</td>
+<td>$iS_{ty}$</td>
+<td>$-A_{xy}$</td>
+</tr>
+<tr>
+<td>$iS_{tx}$</td>
+<td>$iS_{tz}$</td>
+<td>$-A_{xz}$</td>
+</tr>
+<tr>
+<td>$iS_{tx}$</td>
+<td>$iS_{xy}$</td>
+<td>$-A_{ty}$</td>
+</tr>
+<tr>
+<td>$iS_{tx}$</td>
+<td>$iS_{xz}$</td>
+<td>$-A_{tz}$</td>
+</tr>
+<tr>
+<td>$iS_{ty}$</td>
+<td>$iS_{tz}$</td>
+<td>$-A_{yz}$</td>
+</tr>
+<tr>
+<td>$iS_{ty}$</td>
+<td>$iS_{xy}$</td>
+<td>$-A_{tx}$</td>
+</tr>
+<tr>
+<td>$iS_{ty}$</td>
+<td>$iS_{yz}$</td>
+<td>$-A_{tz}$</td>
+</tr>
+<tr>
+<td>$iS_{tz}$</td>
+<td>$iS_{xz}$</td>
+<td>$-A_{tx}$</td>
+</tr>
+<tr>
+<td>$iS_{tz}$</td>
+<td>$iS_{yz}$</td>
+<td>$-A_{ty}$</td>
+</tr>
+<tr>
+<td>$iS_{xy}$</td>
+<td>$iS_{xz}$</td>
+<td>$-A_{yz}$</td>
+</tr>
+<tr>
+<td>$iS_{xy}$</td>
+<td>$iS_{yz}$</td>
+<td>$-A_{xz}$</td>
+</tr>
+<tr>
+<td>$iS_{xz}$</td>
+<td>$iS_{yz}$</td>
+<td>$-A_{xy}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The nine imaginary arrays are not a subalgebra</strong>, because the bracket of two of them is real. <strong>The six real planes are one</strong>, because the bracket of two of them is real again. <strong>The Cartan split of $\mathfrak{su}(4)$ is therefore lopsided</strong>: one half closes, the other half falls back on the first.</p>
+<h2 id="part-iii-a-real-plane-and-an-imaginary-plane">Part III. A Real Plane and an Imaginary Plane</h2>
+<p><strong>Thirty nonzero entries of thirty-six, and six of them are the whole story of the diagonals.</strong> The six zeros are the complementary pairs of different type. The six exceptions to Rule 3 are the equal planes, and those six are the only entries of the twelve-plane block whose answer is not a plane.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$X$</th>
+<th>$Y$</th>
+<th>$[X,Y]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{tx}$</td>
+<td>$iS_{tx}$</td>
+<td>$-\tfrac{2}{3}\,iD - \tfrac{4}{3}\,d_{2} - \tfrac{2}{3}\,d_{3}$</td>
+</tr>
+<tr>
+<td>$A_{tx}$</td>
+<td>$iS_{ty}$</td>
+<td>$-iS_{xy}$</td>
+</tr>
+<tr>
+<td>$A_{tx}$</td>
+<td>$iS_{tz}$</td>
+<td>$-iS_{xz}$</td>
+</tr>
+<tr>
+<td>$A_{tx}$</td>
+<td>$iS_{xy}$</td>
+<td>$iS_{ty}$</td>
+</tr>
+<tr>
+<td>$A_{tx}$</td>
+<td>$iS_{xz}$</td>
+<td>$iS_{tz}$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$iS_{tx}$</td>
+<td>$-iS_{xy}$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$iS_{ty}$</td>
+<td>$-\tfrac{2}{3}\,iD + \tfrac{2}{3}\,d_{2} - \tfrac{2}{3}\,d_{3}$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$iS_{tz}$</td>
+<td>$-iS_{yz}$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$iS_{xy}$</td>
+<td>$iS_{tx}$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$iS_{yz}$</td>
+<td>$iS_{tz}$</td>
+</tr>
+<tr>
+<td>$A_{tz}$</td>
+<td>$iS_{tx}$</td>
+<td>$-iS_{xz}$</td>
+</tr>
+<tr>
+<td>$A_{tz}$</td>
+<td>$iS_{ty}$</td>
+<td>$-iS_{yz}$</td>
+</tr>
+<tr>
+<td>$A_{tz}$</td>
+<td>$iS_{tz}$</td>
+<td>$-\tfrac{2}{3}\,iD + \tfrac{2}{3}\,d_{2} + \tfrac{4}{3}\,d_{3}$</td>
+</tr>
+<tr>
+<td>$A_{tz}$</td>
+<td>$iS_{xz}$</td>
+<td>$iS_{tx}$</td>
+</tr>
+<tr>
+<td>$A_{tz}$</td>
+<td>$iS_{yz}$</td>
+<td>$iS_{ty}$</td>
+</tr>
+<tr>
+<td>$A_{xy}$</td>
+<td>$iS_{tx}$</td>
+<td>$-iS_{ty}$</td>
+</tr>
+<tr>
+<td>$A_{xy}$</td>
+<td>$iS_{ty}$</td>
+<td>$iS_{tx}$</td>
+</tr>
+<tr>
+<td>$A_{xy}$</td>
+<td>$iS_{xy}$</td>
+<td>$2\,d_{2}$</td>
+</tr>
+<tr>
+<td>$A_{xy}$</td>
+<td>$iS_{xz}$</td>
+<td>$-iS_{yz}$</td>
+</tr>
+<tr>
+<td>$A_{xy}$</td>
+<td>$iS_{yz}$</td>
+<td>$iS_{xz}$</td>
+</tr>
+<tr>
+<td>$A_{xz}$</td>
+<td>$iS_{tx}$</td>
+<td>$-iS_{tz}$</td>
+</tr>
+<tr>
+<td>$A_{xz}$</td>
+<td>$iS_{tz}$</td>
+<td>$iS_{tx}$</td>
+</tr>
+<tr>
+<td>$A_{xz}$</td>
+<td>$iS_{xy}$</td>
+<td>$-iS_{yz}$</td>
+</tr>
+<tr>
+<td>$A_{xz}$</td>
+<td>$iS_{xz}$</td>
+<td>$2\,d_{2} + 2\,d_{3}$</td>
+</tr>
+<tr>
+<td>$A_{xz}$</td>
+<td>$iS_{yz}$</td>
+<td>$iS_{xy}$</td>
+</tr>
+<tr>
+<td>$A_{yz}$</td>
+<td>$iS_{ty}$</td>
+<td>$-iS_{tz}$</td>
+</tr>
+<tr>
+<td>$A_{yz}$</td>
+<td>$iS_{tz}$</td>
+<td>$iS_{ty}$</td>
+</tr>
+<tr>
+<td>$A_{yz}$</td>
+<td>$iS_{xy}$</td>
+<td>$-iS_{xz}$</td>
+</tr>
+<tr>
+<td>$A_{yz}$</td>
+<td>$iS_{xz}$</td>
+<td>$iS_{xy}$</td>
+</tr>
+<tr>
+<td>$A_{yz}$</td>
+<td>$iS_{yz}$</td>
+<td>$2\,d_{3}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The six diagonal answers, written in the basis $iD$, $d_2$, $d_3$.</strong> Rule 4 gives a difference of two matrix units, and the same difference reads:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>$[A_{jk},iS_{jk}]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{t,x\}$</td>
+<td>$-\tfrac{2}{3}\,iD - \tfrac{4}{3}\,d_{2} - \tfrac{2}{3}\,d_{3}$</td>
+</tr>
+<tr>
+<td>$\{t,y\}$</td>
+<td>$-\tfrac{2}{3}\,iD + \tfrac{2}{3}\,d_{2} - \tfrac{2}{3}\,d_{3}$</td>
+</tr>
+<tr>
+<td>$\{t,z\}$</td>
+<td>$-\tfrac{2}{3}\,iD + \tfrac{2}{3}\,d_{2} + \tfrac{4}{3}\,d_{3}$</td>
+</tr>
+<tr>
+<td>$\{x,y\}$</td>
+<td>$2\,d_{2}$</td>
+</tr>
+<tr>
+<td>$\{x,z\}$</td>
+<td>$2\,d_{2} + 2\,d_{3}$</td>
+</tr>
+<tr>
+<td>$\{y,z\}$</td>
+<td>$2\,d_{3}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The corner enters the three $\{t,k\}$ pairs with one coefficient, $-\tfrac23$, and never a colour pair.</strong> The reason is visible in Rule 5: the corner has a single distinguished eigenvalue, at $t$, so it separates $t$ from everything and separates nothing inside colour. <strong>The colour pairs give pure colour diagonals, and their coefficients $2$ are the spacings of $d_2$ and $d_3$.</strong></p>
+<h2 id="part-iv-a-plane-and-a-diagonal">Part IV. A Plane and a Diagonal</h2>
+<h3 id="the-corner">The Corner</h3>
+<p><strong>Six arrays meet the corner: the three planes through $t$ and their three imaginary partners.</strong> The three colour planes and both colour diagonals never do. <strong>The six $\mathfrak{so}(4)$ arrays meet it too, and each bracket is the average of two of the six rows below</strong> — no new coefficient, which is why they need no table of their own.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$X$</th>
+<th>$iD$</th>
+<th>$[X,iD]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{tx}$</td>
+<td>$iD$</td>
+<td>$4\,iS_{tx}$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$iD$</td>
+<td>$4\,iS_{ty}$</td>
+</tr>
+<tr>
+<td>$A_{tz}$</td>
+<td>$iD$</td>
+<td>$4\,iS_{tz}$</td>
+</tr>
+<tr>
+<td>$iS_{tx}$</td>
+<td>$iD$</td>
+<td>$-4\,A_{tx}$</td>
+</tr>
+<tr>
+<td>$iS_{ty}$</td>
+<td>$iD$</td>
+<td>$-4\,A_{ty}$</td>
+</tr>
+<tr>
+<td>$iS_{tz}$</td>
+<td>$iD$</td>
+<td>$-4\,A_{tz}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The coefficient $4$ is the eigenvalue spacing from $-3$ to $1$.</strong> No other bracket of the table has it, so the corner can be recognized in a bracket by its coefficient alone.</p>
+<h3 id="the-two-colour-diagonals">The Two Colour Diagonals</h3>
+<p><strong>Each colour diagonal meets five planes of its type and misses one.</strong> $d_2$ misses $A_{tz}$ and $iS_{tz}$, because $t$ and $z$ are its two fixed lines. $d_3$ misses $A_{tx}$ and $iS_{tx}$, for the same reason with $x$ in place of $z$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$X$</th>
+<th>$d_2$</th>
+<th>$[X,d_2]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{tx}$</td>
+<td>$d_{2}$</td>
+<td>$iS_{tx}$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$d_{2}$</td>
+<td>$-iS_{ty}$</td>
+</tr>
+<tr>
+<td>$A_{xy}$</td>
+<td>$d_{2}$</td>
+<td>$-2\,iS_{xy}$</td>
+</tr>
+<tr>
+<td>$A_{xz}$</td>
+<td>$d_{2}$</td>
+<td>$-iS_{xz}$</td>
+</tr>
+<tr>
+<td>$A_{yz}$</td>
+<td>$d_{2}$</td>
+<td>$iS_{yz}$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$X$</th>
+<th>$d_3$</th>
+<th>$[X,d_3]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{ty}$</td>
+<td>$d_{3}$</td>
+<td>$iS_{ty}$</td>
+</tr>
+<tr>
+<td>$A_{tz}$</td>
+<td>$d_{3}$</td>
+<td>$-iS_{tz}$</td>
+</tr>
+<tr>
+<td>$A_{xy}$</td>
+<td>$d_{3}$</td>
+<td>$iS_{xy}$</td>
+</tr>
+<tr>
+<td>$A_{xz}$</td>
+<td>$d_{3}$</td>
+<td>$-iS_{xz}$</td>
+</tr>
+<tr>
+<td>$A_{yz}$</td>
+<td>$d_{3}$</td>
+<td>$-2\,iS_{yz}$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$X$</th>
+<th>$d_2$</th>
+<th>$[X,d_2]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$iS_{tx}$</td>
+<td>$d_{2}$</td>
+<td>$-A_{tx}$</td>
+</tr>
+<tr>
+<td>$iS_{ty}$</td>
+<td>$d_{2}$</td>
+<td>$A_{ty}$</td>
+</tr>
+<tr>
+<td>$iS_{xy}$</td>
+<td>$d_{2}$</td>
+<td>$2\,A_{xy}$</td>
+</tr>
+<tr>
+<td>$iS_{xz}$</td>
+<td>$d_{2}$</td>
+<td>$A_{xz}$</td>
+</tr>
+<tr>
+<td>$iS_{yz}$</td>
+<td>$d_{2}$</td>
+<td>$-A_{yz}$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$X$</th>
+<th>$d_3$</th>
+<th>$[X,d_3]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$iS_{ty}$</td>
+<td>$d_{3}$</td>
+<td>$-A_{ty}$</td>
+</tr>
+<tr>
+<td>$iS_{tz}$</td>
+<td>$d_{3}$</td>
+<td>$A_{tz}$</td>
+</tr>
+<tr>
+<td>$iS_{xy}$</td>
+<td>$d_{3}$</td>
+<td>$-A_{xy}$</td>
+</tr>
+<tr>
+<td>$iS_{xz}$</td>
+<td>$d_{3}$</td>
+<td>$A_{xz}$</td>
+</tr>
+<tr>
+<td>$iS_{yz}$</td>
+<td>$d_{3}$</td>
+<td>$2\,A_{yz}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The coefficient $2$ marks the plane that leaves both fixed lines</strong>, the coefficient $1$ marks a plane that leaves one of them, and $0$ marks the plane that lies inside a fixed line. <strong>The three coefficients are the three possible spacings of a two-line plane against a two-line diagonal.</strong></p>
+<h3 id="the-three-diagonals-with-each-other">The Three Diagonals with Each Other</h3>
+<p><strong>They commute.</strong> $[iD,d_2]=[iD,d_3]=[d_2,d_3]=0$. The three are one Cartan subalgebra, no bracket of two of them produces the third, and this is the only block of the table whose every entry is zero with nothing to add.</p>
+<h2 id="the-six-arrays-outside-the-table">The Six Arrays Outside the Table</h2>
+<p><strong>One block is deliberately absent, and its absence is a statement about the model.</strong></p>
+<p><strong>The six arrays.</strong> The corpus still prints the six arrays</p>
+<p>$$
+T^{L}_{a}=-\tfrac12\bigl(A_{ta}+A_{bc}\bigr),\qquad
+T^{R}_{a}=-\tfrac12\bigl(A_{ta}-A_{bc}\bigr),
+$$</p>
+<p>with $(a,b,c)$ cyclic in $(x,y,z)$. <strong>They are not generators of this model.</strong> They are a rotated basis of the six-dimensional real subspace $\operatorname{span}\{A_{ab}\}=\mathfrak{so}(4)\subset\mathfrak{su}(4)$, and the rank of the twenty-one printed arrays is fifteen. <strong>So a bracket of two of them is a bracket of two plane arrays, and every entry is already in Part I or Part II.</strong></p>
+<p><strong>Their brackets, from the five rules and nothing more.</strong> Because each is half a sum or difference of two planes,</p>
+<p>$$
+[T^{L}_{a},T^{L}_{b}]=\epsilon_{abc}T^{L}_{c},\qquad
+[T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}T^{R}_{c},\qquad
+[T^{L}_{a},T^{R}_{b}]=0 .
+$$</p>
+<p><strong>The first two lines are Rules 1 and 2 read on the half-sum and half-difference</strong>, and the third is the statement that a self-dual and an anti-self-dual two-form commute — <strong>which is also the statement that $\mathfrak{k}_L$ and $\mathfrak{k}_R$ are independent factors of $\mathfrak{so}(4)$.</strong></p>
+<p><strong>What that does not buy.</strong> A direct product of two $\mathfrak{su}(2)$'s <strong>inside</strong> $\mathfrak{su}(4)$ is not a pair of gauge factors <strong>beside</strong> it. <strong>The closure is real, the commutativity is real, and the factor reading is not available</strong>: the rank of the algebra is three, the rank of the subspace is two, and no breaking of the fifteen produces five. <strong>That is the whole reason this article has five rules and not six</strong>, and the reason the six arrays are printed in <a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">Construction of the AXF Matrices</a> as a remark rather than as a block of the table.</p>
+<h2 id="the-forty-zeros">The Forty Zeros</h2>
+<p><strong>The zeros are as structured as the numbers.</strong> Forty independent brackets vanish, and every one of them is one of seven statements.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>count</th>
+<th>the reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>an array with itself</td>
+<td>$15$</td>
+<td>antisymmetry</td>
+</tr>
+<tr>
+<td>two real planes with no common index</td>
+<td>$3$</td>
+<td>disjoint entries, Rule 1</td>
+</tr>
+<tr>
+<td>two imaginary planes with no common index</td>
+<td>$3$</td>
+<td>disjoint entries, Rule 2</td>
+</tr>
+<tr>
+<td>a real and an imaginary plane with no common index</td>
+<td>$6$</td>
+<td>disjoint entries, Rule 3</td>
+</tr>
+<tr>
+<td>a plane inside a fixed line of a colour diagonal</td>
+<td>$4$</td>
+<td>the spacing is $0$, Rule 5</td>
+</tr>
+<tr>
+<td>a colour plane with the corner</td>
+<td>$6$</td>
+<td>the corner has no spacing inside colour, Rule 5</td>
+</tr>
+<tr>
+<td>the three diagonals with each other</td>
+<td>$3$</td>
+<td>the Cartan is abelian</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>No zero is an accident, and the list has seven lines and one row that says why.</strong> $15+3+3+6+4+6+3=40$. <strong>A reader who knows the eigenvalues of the three diagonals predicts all twenty-five off-diagonal zeros without computing a single matrix.</strong></p>
+<h2 id="what-the-table-says-that-no-single-bracket-says">What the Table Says That No Single Bracket Says</h2>
+<p><strong>The real planes are a subalgebra and the imaginary ones are not.</strong> Six generators close on themselves; nine do not, and their product falls back on the six. <strong>The compact form of $\mathfrak{su}(4)$ is not symmetric across the Cartan split</strong>, and this block is where that asymmetry is visible.</p>
+<p><strong>The twelve plane arrays are closed except on six pairs, and the six are exactly the pairs that generate the Cartan.</strong> Any reading in which the diagonal directions are extra data is contradicted here: they are produced by $[A_{jk},iS_{jk}]$ and by nothing else among the planes.</p>
+<p><strong>The corner meets six brackets as a factor and appears in three as an answer.</strong> It meets the three $\{t,k\}$ planes and their three imaginary partners, and it comes back from those three equal-plane brackets. <strong>The three colour planes and the two colour diagonals never see it at all</strong>, which is the algebraic content of the phrase that the corner is the lepton-line direction.</p>
+<p><strong>The six real planes are a subalgebra of rank two, and it is not a factor.</strong> $\operatorname{span}\{A_{ab}\}=\mathfrak{so}(4)$: six dimensions, closed, abelian when written as $\mathfrak{k}_L\oplus\mathfrak{k}_R$ — <strong>and still a subspace of the fifteen.</strong> That distinction is this article's one warning: <strong>closure and commutativity are algebraic facts, and being a gauge factor is not.</strong></p>
+<p><strong>Every coefficient is $\pm\tfrac23$, $\pm1$, $\pm\tfrac43$, $\pm2$ or $\pm4$.</strong> A table whose coefficients are five rationals is a table that can be checked by hand, and this one can.</p>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the $225$ ordered brackets, from the matrices</td>
+<td>every one inside the span of the fifteen</td>
+</tr>
+<tr>
+<td>the five rules, against the $225$ entries</td>
+<td>$105$ independent pairs, $0$ disagreements</td>
+</tr>
+<tr>
+<td>antisymmetry</td>
+<td>holds on all $225$</td>
+</tr>
+<tr>
+<td>the Jacobi identity</td>
+<td>holds identically: the bracket is a commutator of matrices</td>
+</tr>
+<tr>
+<td>nonzero entries</td>
+<td>$80$ of the $105$ independent brackets</td>
+</tr>
+<tr>
+<td>zero entries</td>
+<td>$25$ off-diagonal, plus the $15$ self-brackets: $40$ of the $225$ entries, in the seven families above</td>
+</tr>
+<tr>
+<td>coefficient set</td>
+<td>ten signed values, five magnitudes</td>
+</tr>
+<tr>
+<td>term count</td>
+<td>$76$ one-term, $1$ two-term, $3$ three-term</td>
+</tr>
+<tr>
+<td>nonzero per block</td>
+<td>$12+12+30+3+5+5+3+5+5+0+0+0=80$</td>
+</tr>
+<tr>
+<td>the six $\mathfrak{so}(4)$ arrays in the fifteen</td>
+<td>$0$ entries outside the span</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The count by block is the check on the tables themselves.</strong> Parts I to IV contribute $12+12+30+3+5+5+3+5+5+0+0+0=80$. <strong>The tables print exactly that many rows.</strong></p>
+<p><strong>No pass exceeded thirty entries.</strong> Each block was recomputed and compared in its own pass, and the largest single pass is the thirty-entry real-imaginary block.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Fifteen arrays, $225$ ordered brackets, $105$ independent, $80$ nonzero, $25$ of the zeros off the diagonal and $40$ in all.</strong> Five rules produce all of them:
+$$
+[A_{jk},A_{kl}]=A_{jl},
+\qquad
+[iS_{jk},iS_{kl}]=-A_{jl},
+\qquad
+[A_{jk},iS_{kl}]=iS_{jl},
+$$
+$$
+[A_{jk},iS_{jk}]=2i(E_{jj}-E_{kk}),
+\qquad
+[A_{jk},i\Lambda]=(\lambda_{k}-\lambda_{j})\,iS_{jk},
+\qquad
+[iS_{jk},i\Lambda]=-(\lambda_{k}-\lambda_{j})\,A_{jk}.
+$$</p>
+<p><strong>The real planes close, the imaginary ones do not, the corner is produced by the planes rather than added to them, and the six $\mathfrak{so}(4)$ arrays are a basis of the real planes and nothing more.</strong> Those four sentences are the table.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_{jk}$</td>
+<td>the matrix unit of $M_4(\mathbb{C})$, indices in the order $(t,x,y,z)$</td>
+</tr>
+<tr>
+<td>$A_{jk}=E_{jk}-E_{kj}$</td>
+<td>the real antisymmetric array of the plane $\{j,k\}$</td>
+</tr>
+<tr>
+<td>$S_{jk}=E_{jk}+E_{kj}$</td>
+<td>the real symmetric partner; $iS_{jk}$ is the algebra element</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>the corner, $i\operatorname{diag}(-3,1,1,1)$</td>
+</tr>
+<tr>
+<td>$d_2$, $d_3$</td>
+<td>the colour diagonals, $i\operatorname{diag}(0,1,-1,0)$ and $i\operatorname{diag}(0,0,1,-1)$</td>
+</tr>
+<tr>
+<td>$T^{L}_{a}$, $T^{R}_{a}$</td>
+<td>the six $\mathfrak{so}(4)$ arrays, $-\tfrac12(A_{ta}\pm A_{bc})$, $(a,b,c)$ cyclic; not generators</td>
+</tr>
+<tr>
+<td>$[X,Y]$</td>
+<td>$XY-YX$, the commutator of the matrices</td>
+</tr>
+<tr>
+<td>$\lambda_{j}$</td>
+<td>the eigenvalue of the diagonal $i\Lambda$ at the index $j$</td>
+</tr>
+<tr>
+<td>$\epsilon_{abc}$</td>
+<td>the Levi-Civita symbol of the three colour labels</td>
+</tr>
+<tr>
+<td>complementary planes</td>
+<td>two planes of $\{t,x,y,z\}$ with no common index</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em>, Springer, 1972 — structure constants, the Chevalley basis, and a table of brackets read as a presentation of the algebra.</li>
+<li>H. Georgi, <em>Lie Algebras in Particle Physics</em>, Benjamin Cummings, 1982 — the physicists' conventions, the $\tfrac12$ of a weak generator, and the sign of $\epsilon_{abc}$.</li>
+<li>R. Gilmore, <em>Lie Groups, Lie Algebras, and Some of Their Applications</em>, Wiley, 1974 — compact real forms, the splitting $\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, and the inertia that separates the two halves.</li>
+<li>The corpus: <a href="the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Fifteen Generators</a> for the exponential of each generator; <a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">The Construction of the AXF Matrices of the Fifteen Generators</a> for the arrays themselves; <a href="the-15-axf-matrices-of-the-bosons-in-detail.html">The Fifteen AXF Matrices of the Bosons in Detail</a> for one subsection per generator; <a href="classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html">Classification of the Bosons</a> for the cell each array occupies; <a href="the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html">The Counts of the Fifteen</a> for the count that ends at fifteen.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
