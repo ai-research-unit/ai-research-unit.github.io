@@ -16,7 +16,7 @@ The entropy inequalities are real. [The Local Entropy Current](the-local-entropy
 
 ## The Category's Three Layers
 
-The category is ordered, and the order is a dependency chain rather than a sequence of topics. Each layer uses the layer above it and adds one object. The field's own stress and flow, which used to be the first of those layers, now form a separate category — *Biquaternion Relativistic Quantum Hydrodynamics* — and the chain here begins where a state is put on the field.
+The category is ordered, and the order is a dependency chain rather than a sequence of topics. Each layer uses the layer above it and adds one object. The field's own stress and flow, which used to be the first of those layers, now form a separate category — *Biquaternion Relativistic Quantum Fluid Mechanics* — and the chain here begins where a state is put on the field.
 
 The three articles that no longer open it are the whole of that block: [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), which writes $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$ and shows that the quantum potential is its divergence; [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), which assembles the Dirac field's triple — density, frame element, spin direction — and shows that its flow is not a gradient; and [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), which proves that the flow is irrotational except on the zero-divisor cone and that the circulation there is $h n/m$.
 
@@ -70,7 +70,7 @@ The temperature is a length and not a frequency. $\beta=mc/(2\pi\nu_mk_BT)$ with
 
 The flow is an element with a low index. $\tilde V_\Phi=\tilde P_\Phi/m$, components $v_{\Phi,\imath}$ only where a component is unavoidable. The metric is $\delta_{\imath\jmath}$ and the index labels a direction and not a tensor slot, which is why no display in the category raises one.
 
-Five identifications, one declaration, one sign, one length. That is what the framework adds to the standard theory — the flow identifications among them made in the hydrodynamics block, the thermal ones here — and the list is the ledger's answer to the question the category was built to ask.
+Five identifications, one declaration, one sign, one length. That is what the framework adds to the standard theory — the flow identifications among them made in the fluid-mechanics block, the thermal ones here — and the list is the ledger's answer to the question the category was built to ask.
 
 ## The Four Transcription Articles
 
@@ -187,7 +187,7 @@ Its last substantive article is the fluid's transport, and beyond transport lies
 
 ## Summary
 
-The category is twenty-two articles in three layers and a ledger: the state (1 to 7), locality (8 to 14) and the fluid (15 to 21), with this article as the ledger. Four of the twenty-two are transcriptions — 6, 13, 14 and 21 — and each carries the sentence that it is standard physics in the corpus's letters with no framework interpretation. The other eighteen add identifications the algebra makes available, several of them inherited from the hydrodynamics block: the velocity is a boost, the spin a rotor, the spin's conservation the rotor's equation, the Frenkel condition automatic, the quantum potential the mass shell's correction, the second law one divergence, the temperature a length.
+The category is twenty-two articles in three layers and a ledger: the state (1 to 7), locality (8 to 14) and the fluid (15 to 21), with this article as the ledger. Four of the twenty-two are transcriptions — 6, 13, 14 and 21 — and each carries the sentence that it is standard physics in the corpus's letters with no framework interpretation. The other eighteen add identifications the algebra makes available, several of them inherited from the fluid-mechanics block: the velocity is a boost, the spin a rotor, the spin's conservation the rotor's equation, the Frenkel condition automatic, the quantum potential the mass shell's correction, the second law one divergence, the temperature a length.
 
 $\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546\,078\times10^{-14}\,\mathrm{m}$ at $300\,\mathrm{K}$ and $7.638\,233\times10^{-15}\,\mathrm{m}$ at $1000\,\mathrm{K}$, where $c\beta=mc^{2}/(2\pi\nu_mk_BT)$ is the same circumference in the material sector's units and not an independent number: the two displays differ by the factor $c$, so agreement between them tests the constants and not the physics. Circulation is $h n/m$, checked at three radii for three windings. The Josephson frequency is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ per $1.6022\times10^{-22}\,\mathrm{J}$ of chemical-potential difference. The second variation of the energy density in a three-channel example is $0.033$, split $0.0125+0.0125+0.008$ across the bulk, shear and heat channels. The front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$, which is $0.4472\,c$ for $(0.1,0.5)$ and $1.4142\,c$ — acausal — for $(1.0,0.5)$. The Thomas factor is $0.503\,782$ at $\beta_{\mathrm{vel}}=0.1$.
 

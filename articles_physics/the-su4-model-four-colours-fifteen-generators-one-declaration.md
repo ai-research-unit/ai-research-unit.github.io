@@ -19,11 +19,11 @@ $$
 
 **The two layers, and the one that matters here.** Layer A is what the algebra does on its own carrier. Layer B is $\mathrm{SU}(4)$ acting on a formal copy of that carrier. **The distinction is load-bearing**: the algebra's commutant forces the copy, and §*The Carrier Is a Copy* proves it with a count.
 
-**What this article establishes.** That the group is $\mathrm{SU}(4)$ and the count is fifteen; that the fifteen split as $8+1+6$; that the matter content is the sixteen and that it is vector-like under the group, so its anomaly cancels by counting; that one coupling multiplies all fifteen generators; that the fifteen already contains a real $\mathfrak{so}(4)$ of six dimensions and rank two; that the sixteen is closed under $CP$ and not under $C$; and that the ceiling on any group commuting with the Lorentz action is $\mathrm{SU}(2)$, which is why the carrier is a copy.
+**What this article establishes.** That the group is $\mathrm{SU}(4)$ and the count is fifteen; that the fifteen split as $8+1+6$; that the matter content is the sixteen and that it is vector-like under the group, so its anomaly cancels by counting; that one coupling multiplies all fifteen generators; that the fifteen already contains a real $\mathfrak{so}(4)$ of six dimensions and rank two; that the sixteen is closed under $C$ and therefore under $CP$; and that the ceiling on any group commuting with the Lorentz action is $\mathrm{SU}(2)$, which is why the carrier is a copy.
 
 **What it does not establish.** That the algebra derives the group — it derives the group *given* the carrier. That the lepton line is the fourth colour — that is declaration (A). That the model is chiral where it gauges — **it is not, and §*The Chiral Wall* shows that this is now a theorem about the model rather than a caveat about a representation.**
 
-**What is absent here.** No weak pair, no hypercharge, no photon, no $W$, no $Z$, no rank five. **Those arrive at $M_C$, where colour, one abelian factor and two weak factors describe what the vacuum leaves**, and that is the subject of the next section of the corpus. This article is the model above that scale, and it is complete on its own terms.
+**What is absent here.** No weak pair, no hypercharge, no photon, no $W$, no $Z$, no rank five. **Those arrive at $M_C$, where colour, one abelian factor and two weak factors describe what the vacuum leaves**, and that is the subject of the next section of the corpus. This article is the gauge content of the model above that scale, and it is complete as a statement of that content: **the scalar sector is [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html), and the fermion masses are [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html), whose verdict is that the ratio $m_\ell=3m_q$ is falsified.**
 
 **Where the rest is.** The counts and the arrays are [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html) and [The Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The transition is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the weak force is, and why it is not a piece of the fifteen, is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The couplings are [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html).
 
@@ -42,13 +42,13 @@ $$
 
 **Six pairs, two arrays per pair, three diagonals: $12+3=15$.** The count is not a choice. There are $\binom42=6$ pairs of four indices; each pair carries a real and an imaginary array; and a trace-free diagonal has three dimensions.
 
-**The same count from the cells.** A $4\times4$ grid has sixteen cells. One of them is the trace, which $\mathfrak{su}(4)$ excludes, and the other fifteen are the generators.
+**The same count from the cells.** A $4\times4$ grid has sixteen cells. The four diagonal cells span four directions and one combination of them is the trace, which $\mathfrak{su}(4)$ excludes; **three trace-free diagonals remain, and with the twelve off-diagonal cells they are the fifteen generators.**
 
 $$
 16=1+15 .
 $$
 
-**One grid, sixteen cells.** Three factors would need three grids and $24=4^2+2^2+2^2$ cells; one group needs one grid, and sixteen cells minus the trace are the fifteen generators.
+**One grid, sixteen cells.** A product of factors would need one grid per factor, and a trace to remove from each; **one group needs one grid, and one trace removed from its sixteen cells gives the fifteen generators.**
 
 **The split that the declaration fixes.** Under $\mathrm{SU}(3)_c$ acting on the three colours,
 
@@ -88,7 +88,7 @@ $$
 \mathbf{16}=\underbrace{\mathbf 4\otimes\mathbf 2}_{\text{two copies of the quartet}}\oplus\underbrace{\bar{\mathbf4}\otimes\mathbf 2}_{\text{two copies of its conjugate}} .
 $$
 
-**The neutrino is not added.** The lepton line of the conjugate quartet, at $B-L=-1$, is the right-handed neutrino's slot. **The moment the lepton is a colour, the fourth component of the $\bar{\mathbf4}$ is forced, and it is a neutrino.** That is forced by the colours alone.
+**The neutrino is not added.** The lepton line of the conjugate quartet, at $B-L=+1$, is the right-handed neutrino's slot. **The moment the lepton is a colour, the fourth component of the $\bar{\mathbf4}$ is forced, and it is a neutrino.** That is forced by the colours alone.
 
 **The anomaly, by counting.** Under $\mathrm{SU}(4)$ alone the content is
 
@@ -134,9 +134,9 @@ $$
 | $A_{15}$ | $1$ | $\mathbf 1$ | the $B-L$ vector, massless until it mixes downstream |
 | $a$ in $\mathfrak m$ | $6$ | $\mathbf 3+\bar{\mathbf3}$ | the leptoquarks, heavy at $M_C$ |
 
-**Nine massless and six massive, and that is the whole bosonic spectrum of this model.** No $W$, no $Z$, no photon: **those arrive at $M_C$**, where the vacuum that breaks the primordial force also gives the right-handed pair its mass.
+**Nine massless and six massive, and that is the whole gauge-boson spectrum of this model.** No $W$, no $Z$, no photon: **those arrive at $M_C$**, where the vacuum that breaks the primordial force also gives the right-handed pair its mass. **The scalar sector is not in this table**: it is sixteen real components in *The Scalar Content*, six of them eaten by these six vectors.
 
-**What the model does not tie.** One coupling, so there is no ratio to fix and no matching problem. **The three couplings, and the four decades between the strong and the electroweak scales, are a property of the spectrum below $M_C$**, and they are treated in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). **A single coupling has no matching problem.**
+**What the model does not tie.** One gauge coupling above $M_C$, so there is no ratio between gauge couplings to fix. **That is not the absence of a matching problem; it turns the matching into a prediction**: the three couplings below $M_C$, and the four decades between the strong and the electroweak scales, are what one $g_4$ runs into, and they are treated in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). **The scalar and Yukawa couplings are separate parameters and this article fixes none of them.**
 
 ## The Real $\mathfrak{so}(4)$ Inside the Fifteen
 
@@ -183,7 +183,7 @@ $$
 
 **So the real $\mathfrak{so}(4)$ straddles the transition**: three of its six planes are heavy and three are massless. **A half, being half of one plane and half of the other, is a sum of a heavy and a massless vector** — a coherence, not a particle. That single fact is why the six arrays could never be the weak bosons, and [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) makes it a theorem.
 
-**Why the reading is tempting.** Six arrays, six generators of the weak pair, six leptoquarks, all inside fifteen alongside nine. **Everything matches except closure, charge and mass**, and the mismatch is the subject of the next section of the corpus.
+**Why the reading is tempting, and where the three sixes differ.** Six real planes, six leptoquark arrays and six weak generators are **three different sixes, and only the first two are even inside the fifteen**. The six planes are $\operatorname{span}\{A_{ab}\}$ and they close; the six leptoquarks are $\{A_{tk},iS_{tk}\}$ and they do **not** close, since $[A_{tx},A_{ty}]=-A_{xy}$ lies outside them; and the six weak generators close by assumption, not by arithmetic. **The match is a match of number and nothing else**: the planes are closed but are not the leptoquarks, the leptoquarks are not closed, and neither set is the weak pair.
 
 **The honest sentence for this article.** **The fifteen contains a six-dimensional real subalgebra that looks like a weak sector and behaves like one under every operation except the three that matter** — it does not close on the sextet, its charges are thirds rather than integral, and its directions are half heavy. **A subalgebra is not a factor, and the three failures are why.**
 
@@ -222,7 +222,7 @@ $$
 
 **Only the central phase is in the algebra.** Everything else is an endomorphism, at length one, two, three or four. **The table records addresses, and it is not a hierarchy**: $\mathfrak{su}(4)$ has a basis of fifteen elements of length one, so "the group $\mathrm{SU}(4)$ has length three" is not a statement.
 
-**What selects the group is the module, not the length.** The algebra supplies one four-dimensional complex module, so the largest compact simple group acting faithfully on it is $\mathrm{SU}(4)$; $\mathrm{SU}(5)$ needs five dimensions and $\mathrm{SO}(10)$ sixteen, and the algebra supplies neither.
+**What selects the group is the module, and it selects it up to one choice.** The algebra supplies one four-dimensional complex module, and the largest compact simple group acting faithfully on it is $\mathrm{SU}(4)$; $\mathrm{SU}(5)$ needs five dimensions and $\mathrm{SO}(10)$ sixteen, and the algebra supplies neither. **Maximality is not a principle of physics, so what this fixes is the menu and not the choice**: the group is the maximal one of the module, which is what the table of §*What Is Derived* means by *derived, given the carrier*.
 
 ## Why This Group and Not a Larger One
 
@@ -234,7 +234,7 @@ $$
 
 **The four-factor group is the group at $M_C$.** Colour, one abelian factor and the two weak factors are what the vacuum of the primordial force leaves, and the weak factors arrive at that scale. **It is a step of the transition, not a rival candidate**: an alternative would be a group chosen instead, and this one is arrived at.
 
-**The one-line reason the group is $\mathrm{SU}(4)$.** The carrier is four-dimensional and its stabiliser is $\mathrm{SU}(3)$; three colours inside a four-dimensional carrier with one line removed is $\mathrm{SU}(4)$, not $\mathrm{SU}(3)\times\mathrm{U}(1)$. **Whether the fourth direction is gauged is the physics question, and this model answers that it is.**
+**The one-line reason the group is $\mathrm{SU}(4)$.** The full group of a four-dimensional complex carrier is $\mathrm{SU}(4)$, and the subgroup that fixes one line in it is $\mathrm{SU}(3)\times\mathrm{U}(1)$ modulo a discrete factor. **The stabiliser is a subgroup of $\mathrm{SU}(4)$, not an alternative to it** — it is what acts once the fourth direction is frozen out, and which of the two describes the world is a question about physics. **Whether the fourth direction is gauged is that question, and this model answers that it is.**
 
 ## The Uniqueness Result, Demoted
 
@@ -246,7 +246,7 @@ $$
 \mathcal A_F=J_2^{L}(\mathbb C)\oplus J_2^{R}(\mathbb C)\oplus J_4(\mathbb C),
 $$
 
-of real dimension $4+4+16=24$, in blocks of size $2,2,4$. **Its associators span $\mathfrak{su}(2)\oplus\mathfrak{su}(2)\oplus\mathfrak{su}(4)$, of dimension $3+3+15=21$** — three factors, and still not one group.
+of real dimension $4+4+16=24$, in blocks of size $2,2,4$. **Its automorphism group has Lie algebra $\mathfrak{su}(2)\oplus\mathfrak{su}(2)\oplus\mathfrak{su}(4)$, of dimension $3+3+15=21$** — three factors in all, and still not one group.
 
 **Why it is demoted, in one paragraph.** The theorem forces a **product group** in a representation the corpus does not use. **The model here is one simple group**, so a theorem that forces a product is a theorem about a different object. **It is neither evidence against the $\mathrm{SU}(4)$ model nor evidence for it**, and it is recorded so that the citation is not mistaken for support.
 
@@ -285,7 +285,13 @@ $$
 
 **The internal quartet is a formal copy of the carrier**: it inherits the split, because the split is canonical, and it does not inherit the Lorentz action, because it must not. **$M_4(\mathbb C)$ cannot host two large commuting compact groups**, and that is a fact about dimension, not about this model.
 
-**One consequence worth stating.** The commutant result also says the fifteen contains a distinguished $\mathfrak{su}(2)$ — the one inside the commutant — **of rank one inside rank three.** When the transition needs a weak factor of rank one, **that is the direction it has available**, and it is available inside the algebra rather than beside it. The next section of the corpus uses the fact.
+**One consequence worth stating, and it is negative.** The commutant result also says the fifteen contains a distinguished $\mathfrak{su}(2)$ — the one inside the commutant — **of rank one inside rank three.** **The vacuum does not preserve it.** On $D=\operatorname{diag}(-3,1,1,1)$,
+
+$$
+\bigl[D,T^{R}_{x}\bigr]=2\bigl(E_{tx}+E_{xt}\bigr)\ne0 ,
+$$
+
+**so $\mathfrak{k}_R$ is broken at $M_C$, and its three directions are not mass eigenstates either** — they are the half-sum of a $32v^{2}$ direction and a $0$ direction, exactly as the plane arrays are. **So the commutant supplies a distinguished $\mathfrak{su}(2)$ and not a weak factor**, which is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html)'s point: the weak factors arrive beside the group and not inside it.
 
 ## The Chiral Wall, Which Is Now a Theorem
 
@@ -297,11 +303,11 @@ $$
 
 > **The model is not chiral where it gauges. This is not a caveat about a representation; it is a property of the model, proved by the same count that makes its anomaly vanish.**
 
-**Where the chirality is.** Entirely in the copy index, which is a label. **The sixteen is complex as a representation of a group that includes the copy index, and not as a representation of $\mathrm{SU}(4)$ alone** — and that difference is the whole reason a chiral theory is possible below $M_C$: **the copy index is what gets gauged at the transition.**
+**Where the chirality is.** Nowhere in this article, and the article says so. The copy index is a label the group does not see. **A single $\mathrm{SU}(2)$ acting on it would not change that**, because $\mathbf2\simeq\bar{\mathbf2}$ and $(\mathbf4,\mathbf2)\oplus(\bar{\mathbf4},\mathbf2)$ is its own conjugate — the count $2\cdot4\oplus2\cdot\bar4$ is vector-like under any group that acts on the copy index the same way in both terms. **A chiral content needs the two copies acted on by two different factors**, $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$, and **that split is a postulate of the transition rather than a consequence of this article** — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html) carries it as exactly one postulate and names it.
 
 **What would count as the algebra supplying chirality.** A one-sided action of the algebra on a chiral spinor module. **That remains the corpus's open problem, unchanged, and it is not solved here.** What has changed is that the model no longer pretends to have the answer in a representation: **it declares the copy index, and the declaration is honest because the index is visible.**
 
-**What is refused.** Writing the sixteen as a single multiplet of a larger group and calling the chirality derived, when the multiplet is real. **A real multiplet cannot be chiral**, and the sixteen is complex only because of the copy index.
+**What is refused.** Writing the sixteen as a single multiplet of a larger group and calling the chirality derived, when the multiplet is real. **A real multiplet cannot be chiral**, and the sixteen becomes chiral only when the copy index splits into two separately gauged factors.
 
 ## The Checks
 
@@ -328,17 +334,17 @@ $$
 
 A subalgebra is not a factor. $\mathfrak{so}(4)$ is six real dimensions inside the fifteen; a factor would be a group multiplying the fields. **Rank three against rank five is the difference** (*The Real $\mathfrak{so}(4)$*).
 
-The copy index is not a gauge factor. It labels two copies of the quartet and carries no coupling; it becomes a factor only at the transition (*The Sixteen*).
+The copy index is not a gauge factor. It labels two copies of the quartet and carries no coupling; it becomes a factor only at the transition, and **the split of that factor into two weak factors is the transition's postulate and not this article's** (*The Sixteen*, *The Chiral Wall*).
 
 Vector-like is not a defect. It is why the anomaly vanishes by counting, and it is why the model has no chiral gauge coupling — the second being what the transition to $M_C$ exists to fix (*The Chiral Wall*).
 
-One coupling is not a simplification of three. It is the absence of the two factors that carried the other two, and it removes the matching problem entirely (*One Covariant Derivative*).
+One coupling is not a simplification of three. It is the absence of the two factors that carried the other two, and it turns the three low-energy couplings into a prediction: the matching at $M_C$ becomes a computation rather than a fit (*One Covariant Derivative*).
 
 A theorem about another group is not evidence about this one. The Boyle–Farnsworth result forces a product group in a representation this frame does not use (*The Uniqueness Result, Demoted*).
 
 ## Summary
 
-**One group.** $\mathrm{SU}(4)$, fifteen real dimensions, rank three, one coupling. **No product, no second factor, and no rank five anywhere in the model.**
+**One group.** $\mathrm{SU}(4)$, fifteen real dimensions, rank three, one gauge coupling. **No product, no second factor, and no rank five anywhere above $M_C$** — the four factors and the rank five are what the vacuum leaves at that scale, and they are not a piece of this group.
 
 **The count is fifteen, twice over.** Twelve plane arrays and three diagonals; or sixteen cells minus the trace. **The split is $8+1+6$**: colour, the abelian direction, and the six leptoquark planes.
 
@@ -346,7 +352,7 @@ A theorem about another group is not evidence about this one. The Boyle–Farnsw
 
 **The fifteen already contains a real $\mathfrak{so}(4)$ of six dimensions and rank two**, spanned by the six antisymmetric planes and equal to $\mathfrak k_L\oplus\mathfrak k_R$. **It is the subalgebra that looks like two weak factors and is not.** It is a subalgebra, not a factor, and the condensate puts $32v^{2}$ on three of its planes and $0$ on the other three — **which is why the six arrays are not the weak bosons.**
 
-**The ceiling on a commuting group is $\mathrm{SU}(2)$**, by the commutant count $8\to4\to3$, and that is why the carrier is a formal copy. **The same three dimensions are the rank-one direction the transition needs at $M_C$**, and they are inside the algebra rather than beside it.
+**The ceiling on a commuting group is $\mathrm{SU}(2)$**, by the commutant count $8\to4\to3$, and that is why the carrier is a formal copy. **That $\mathfrak{su}(2)$ is not a weak factor**: the condensate breaks it, $[D,T^{R}_{x}]\ne0$, so its directions are coherent sums and not mass eigenstates. **The weak factors arrive beside the group; nothing in the fifteen supplies them.**
 
 **Nothing numerical moved.** The spectrum of $\operatorname{ad}(iD)$, the masses, the sextet's charges and the nine massless directions are exactly as the first-breaking section states them. **The frame changed; no eigenvalue did.**
 
