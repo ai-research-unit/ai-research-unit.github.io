@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Handover at $M_C$: What the Transition Hands Down, and Where the Masses Come From — Biquaternion Universe</title>
+  <meta name="description" content="The layer. This is the interface article. Everything in it is a statement about which quantities cross a scale and which do not, and its Layer-A content…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-handover-at-math0-what-the-transition-hands-down-and-where-the-masses-come-from"><strong>The Handover at $M_C$: What the Transition Hands Down, and Where the Masses Come From</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The layer.</strong> This is the interface article. Everything in it is a statement about which quantities cross a scale and which do not, and its Layer-A content is one sentence: <strong>the vacuum is the same vacuum on both sides of the handover, so no eigenvalue moves.</strong></p>
+<p><strong>The question.</strong> At what scale does the $\mathrm{SU}(4)$ model stop and the left–right model begin, what exactly is handed over, and where does each mass in the final spectrum come from?</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;
+M_C\ \ge\ M_R\ \ge\ M_W,\qquad
+M_C\gtrsim250\ \mathrm{TeV},\qquad
+v=246\ \mathrm{GeV} ;
+\;}
+$$</p>
+<p>$$
+\boxed{\;
+\text{handed down: }\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R
+\text{ and nine massless vectors} ;
+\;}
+$$</p>
+<p><strong>So the handover is a handover of a group and a spectrum, not of a Lagrangian.</strong> The transition leaves behind a gauge sector, a set of masses above the scale, and one coupling to be matched; below the scale, the left–right model does everything else with its own two vacua.</p>
+<p><strong>What this article establishes.</strong> The four quantities that cross the boundary; the ordering of the three scales and why it is the only ordering available; the fate of the mega coupling at the handover, including the tension the corpus already records and which the migration does not repair; the origin of every mass in the final spectrum; and the list of things that are <em>not</em> handed down, which is where the corpus's neutral sector and its mixing matrix stand.</p>
+<p><strong>Not established.</strong> The numerical values of $M_R$ and of the mega coupling. <strong>The first is free and the second is fixed by a boundary condition the corpus already says fails.</strong> Neither is a defect introduced here: both are the corpus's, and the migration is about origins rather than about unification.</p>
+<p><strong>Where the rest is.</strong> The construction that produces the group at $M_C$ is <a href="the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html">The Weak Force Born as a Side Effect</a>. The death that produces the colour factor is <a href="the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html">The Death of the Mega Strong Force</a>. The sextet's mass and bound are <a href="the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html">The Sextet Put Aside</a>. <strong>Everything below the handover is the existing corpus</strong>, beginning with <a href="the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain</a>.</p>
+<h2 id="the-interface-four-quantities-cross-and-one-number-is-matched">The Interface: Four Quantities Cross, and One Number Is Matched</h2>
+<p><strong>The inventory, with the status of each item.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>value at the handover</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the group</td>
+<td>$\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td><strong>exact</strong>, rank $5$, dimension $15$</td>
+</tr>
+<tr>
+<td>the massless vectors</td>
+<td>eight gluons, $B'$ — nine in all</td>
+<td><strong>exact</strong>, the kernel of $\operatorname{ad}(iD)$</td>
+</tr>
+<tr>
+<td>the six heavy vectors</td>
+<td>$M_X^{2}=\tfrac12g_4^{2}v_R^{2}$</td>
+<td>a bound, not a number</td>
+</tr>
+<tr>
+<td>the couplings</td>
+<td>$g_3$, $g_{B-L}$, $g_L$, $g_R$</td>
+<td>matched at $M_C$; the matching is a separate ledger</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The group is the item that matters, and it is exact.</strong> It is not an approximation and not a limit: <strong>below $M_C$ the four factors are the gauge group of the theory, and above $M_C$ they are not a group at all</strong> — above it there is one simple factor, and the four are a decomposition of the adjoint.</p>
+<p><strong>The nine massless vectors are exact in the same sense.</strong> They are the centraliser of the vacuum, computed once in <a href="the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html">The Death of the Mega Strong Force</a>, and nothing downstream moves them.</p>
+<p><strong>The six are a bound and not a value</strong>, because $v_R$ is not fixed by the model; the bound is $250$ TeV and it is what makes the transition scale a measured quantity rather than a parameter.</p>
+<p><strong>And the couplings are the one item that needs an act of matching rather than a computation.</strong> That act is the subject of §<em>The Coupling at the Handover</em>, and it is where the corpus's one serious tension lives.</p>
+<h2 id="the-scale-ledger">The Scale Ledger</h2>
+<p><strong>Three scales, and each has a different status.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>scale</th>
+<th>status</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_C$</td>
+<td><strong>bounded below</strong> by $K_L\to\mu e$</td>
+<td>$\gtrsim250$ TeV</td>
+</tr>
+<tr>
+<td>$M_R$</td>
+<td><strong>free</strong>, bounded below by $M_W$ and above by $M_C$</td>
+<td>not predicted</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td><strong>measured</strong></td>
+<td>$246$ GeV</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The ordering is forced, and the reason is nesting.</strong> The two vacua are nested — the second lies in the direction the first leaves unbroken — so a breaking that used the second before the first would have already used a direction the first was supposed to preserve. <strong>The corpus states this in <a href="the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html">The Order of the Breaking</a>, and the migration does not touch it.</strong></p>
+<p><strong>The ordering in one line.</strong></p>
+<p>$$
+M_C\ \ge\ M_R\ \ge\ M_W .
+$$</p>
+<p><strong>What each inequality protects.</strong> $M_C\ge M_R$ protects the first transition: the mega force must die before the right sector does, or the right sector's vacuum would be a direction the mega force had not yet released. $M_R\ge M_W$ protects the second: hypercharge must be broken after it is formed.</p>
+<p><strong>And the values, in the two-unit convention the corpus uses.</strong> The sextet's bound is $4.0\times10^{-5}$ J, which is $2.5\times10^{2}$ TeV; the weak scale is $80.4$ GeV; <strong>the ratio is $3.1\times10^{3}$, three and a half decades, and that is the whole of the hierarchy the first step is allowed to create.</strong></p>
+<h2 id="the-coupling-at-the-handover">The Coupling at the Handover</h2>
+<p><strong>One coupling above, two below.</strong> At $M_C$ the single mega coupling must reproduce both the colour coupling and the $B-L$ coupling:</p>
+<p>$$
+g_4(M_C)\ \longrightarrow\ \bigl(g_3(M_C),\,g_{B-L}(M_C)\bigr),
+$$</p>
+<p><strong>which fixes one relation among the two and leaves the other as a prediction of the matching.</strong></p>
+<p><strong>The corpus's condition, and its failure, stated once.</strong> The natural boundary condition is equal couplings at the transition, $g_4=g_L=g_R$. <strong>That condition implies two numbers at once</strong> — the normalisation $\sin^{2}\theta_W=\tfrac38$ and the equality $g_4=g_L$ — <strong>and the corpus computes that they are met four decades apart:</strong> $1.63\times10^{3}$ J and $1.57\times10^{7}$ J, that is $1.0\times10^{13}$ GeV and $9.8\times10^{16}$ GeV. <strong>No single threshold satisfies both.</strong></p>
+<p><strong>What the migration does about it: nothing, and that is the correct amount.</strong> The failure is a statement about unification — about whether one coupling at one scale can reproduce three measured ones — and the migration is a statement about origins. <strong>A construction that births a group does not have to unify its couplings</strong>, and pretending otherwise would be the kind of overreach that makes a reframing look like a solution.</p>
+<p><strong>What the migration does change, and it is worth being precise.</strong> Before, the coupling failure was a failure of the model's <em>premise</em> — the premise being that $\mathrm{SU}(4)$ is the whole gauge structure. <strong>After, the premise is that $\mathrm{SU}(4)$ is the structure above $M_C$ only, and the weak couplings are born at $M_C$ rather than inherited from it.</strong> The failure remains exactly as computed; <strong>what changes is what it is a failure of.</strong></p>
+<h2 id="where-the-masses-come-from">Where the Masses Come From</h2>
+<p><strong>The full ledger, and this is the table the article exists for.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>mass</th>
+<th>formula</th>
+<th>scale</th>
+<th>who supplies it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the six leptoquarks</td>
+<td>$M_X^{2}=\tfrac12g_4^{2}v_R^{2}$</td>
+<td>$M_C$</td>
+<td>the first vacuum</td>
+</tr>
+<tr>
+<td>$W_R,Z_R$</td>
+<td>$\sim g_R v_R$</td>
+<td>$M_R$</td>
+<td>the second vacuum</td>
+</tr>
+<tr>
+<td>$W,Z$</td>
+<td>$\sim g\,v$</td>
+<td>$v$</td>
+<td>the electroweak vacuum</td>
+</tr>
+<tr>
+<td>the photon</td>
+<td>$0$</td>
+<td>—</td>
+<td>the null direction of a rank-two matrix</td>
+</tr>
+<tr>
+<td>the gluons</td>
+<td>$0$</td>
+<td>—</td>
+<td>colour is a stabiliser</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the column of scales.</strong> Every mass is at the scale of the vacuum that produced it, and no mass is at a scale it did not come from. <strong>That is what the composite route could not do</strong>: it had to make an $80$ GeV object out of $250$ TeV parts, and the ratio was three and a half decades of binding energy.</p>
+<p><strong>Read the two zeros.</strong> They are not accidents and they are not fine tuning: the photon is the null direction of a sum of two rank-one matrices, and the gluons are the directions the first vacuum annihilates. <strong>Both are structural, both are computed, and both survive the migration untouched.</strong></p>
+<p><strong>Read what is absent.</strong> No entry is a composite, no entry needs a binding energy, and no entry is a difference of large numbers. <strong>A ledger that looks like this is a ledger of a renormalisable theory with hierarchical breaking, which is what the corpus is.</strong></p>
+<h2 id="what-is-not-handed-down">What Is Not Handed Down</h2>
+<p><strong>Three absences, and each one is a place where the corpus stands unchanged.</strong></p>
+<p><strong>The weak group is not handed down; it is born at the handover.</strong> Below $M_C$ it exists; above $M_C$ it does not. <strong>So the handover is the moment of birth and not a moment of transfer</strong>, and the word <em>handover</em> is used for the spectrum and the colour factor, which are transferred, and not for the weak factors, which arrive.</p>
+<p><strong>The photon is not handed down; it is a mixture formed later.</strong> At $M_C$ there is a $B'$ and two weak Cartans; <strong>the photon is the null direction of a $3\times3$ matrix built from two later vacua</strong>, and it does not exist as a separate factor at any point. The corpus computes it in <a href="the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html">The Neutral Sector</a>, and the migration does not touch that calculation.</p>
+<p><strong>The mixing angle is not handed down; it is computed downstream.</strong> This is why the $45^\circ$ of the additive identities cannot be the mixing: <strong>the mixing is a property of a mass matrix that does not exist at $M_C$.</strong> The identities are a statement about a basis; the angle is a statement about a vacuum, and the vacuum is later.</p>
+<p><strong>The three absences in one sentence.</strong> <strong>What crosses $M_C$ is a group and a spectrum; what is created at $M_C$ is two factors; what is created after $M_C$ is a photon and an angle.</strong></p>
+<h2 id="two-numbers-that-must-not-be-confused">Two Numbers That Must Not Be Confused</h2>
+<p><strong>The corpus contains two distinct large scales, and they answer different questions.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>scale</th>
+<th>what it is</th>
+<th>how it is obtained</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_C\gtrsim250$ TeV</td>
+<td>a <strong>floor</strong> on the transition</td>
+<td>$K_L\to\mu e$, the sextet's own bound</td>
+</tr>
+<tr>
+<td>$\sim10^{13}$ GeV</td>
+<td>where one coupling <strong>would</strong> reproduce the measured ones</td>
+<td>the equal-coupling condition, which fails</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>They differ by a factor of about forty million, and both are correct.</strong> The first is a lower bound from a flavour-changing decay; the second is the scale a unification would prefer. <strong>A transition anywhere between them satisfies the flavour bound and misses the unification preference</strong>, which is exactly the tension the corpus records.</p>
+<p><strong>The rule that follows.</strong> When a statement depends on the scale, <strong>say which scale it uses.</strong> The confinement-scale argument of <a href="what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html">What the Sextet Cannot Do</a> quoted three and a half decades, which is the <em>most favourable</em> case: at the floor. At the unification-preferred scale it is eleven decades. <strong>Either way the composite route is closed, and the article says both numbers rather than the flattering one.</strong></p>
+<h2 id="what-the-leftright-corpus-does-next">What the Left–Right Corpus Does Next</h2>
+<p><strong>Nothing in the nine surviving articles changes</strong>, and this section is the receipt.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>what it computes</th>
+<th>touched by the migration?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Breaking Chain</td>
+<td>the chain, the dimensions, the ranks</td>
+<td>one paragraph: where the weak factors come from</td>
+</tr>
+<tr>
+<td>The Order of the Breaking</td>
+<td>the nesting and $M_C\ge M_R\ge M_W$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>The Unbroken Subgroup</td>
+<td>the nine and the twelve</td>
+<td>one paragraph, the same one</td>
+</tr>
+<tr>
+<td>Where the Twenty-One Generators Go</td>
+<td>the ledger of three readings</td>
+<td>no</td>
+</tr>
+<tr>
+<td>The Adjoint Mass Matrix of the Fifteen</td>
+<td>$32v^{2}$ and $0$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>The Adjoint Mass Matrix as the Square of the Roots</td>
+<td>the same, as a double commutator</td>
+<td>no</td>
+</tr>
+<tr>
+<td>The Leptoquarks</td>
+<td>the mass, the bound, the diquark fork</td>
+<td>no</td>
+</tr>
+<tr>
+<td>The Scalar Sector</td>
+<td>$24$ real, $12$ eaten, $12$ surviving</td>
+<td>no</td>
+</tr>
+<tr>
+<td>The Fermions After the Breaking</td>
+<td>the content below the chain</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why seven of the nine need nothing.</strong> They are statements about the vacuum $\operatorname{diag}(-3,1,1,1)$ and about the fifteen arrays, <strong>and neither the vacuum nor the arrays move.</strong> The migration changes where two factors come from; it does not change a single eigenvalue, a single count, or a single bound. <strong>That is the test of whether a migration is a reframing or a rewrite, and here it is a reframing.</strong></p>
+<p><strong>Why the other two need one paragraph.</strong> Their opening sentences say the group has three factors, and after the migration that sentence needs its origin stated. <strong>The paragraph is a cross-reference and not a correction</strong>: the three factors are the endpoint of the transition, the weak ones arrive at it, and nothing after $M_C$ changes.</p>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the handed-down group</td>
+<td>dimension $8+1+3+3$</td>
+<td>$15$, rank $5$</td>
+</tr>
+<tr>
+<td>the massless count</td>
+<td>$8+1$</td>
+<td>$9=\ker\operatorname{ad}(iD)$</td>
+</tr>
+<tr>
+<td>the sextet's mass</td>
+<td>$\frac12g_4^{2}v_R^{2}$</td>
+<td>bounded by $250$ TeV</td>
+</tr>
+<tr>
+<td>the ordering</td>
+<td>nesting of the two vacua</td>
+<td>$M_C\ge M_R\ge M_W$</td>
+</tr>
+<tr>
+<td>the hierarchy created by step one</td>
+<td>$M_C/M_W$ at the floor</td>
+<td>$3.1\times10^{3}$</td>
+</tr>
+<tr>
+<td>the coupling condition</td>
+<td>$\sin^{2}\theta_W=\frac38$ and $g_4=g_L$</td>
+<td>met four decades apart</td>
+</tr>
+<tr>
+<td>the two large scales</td>
+<td>flavour floor against unification preference</td>
+<td>$250$ TeV against $10^{13}$ GeV</td>
+</tr>
+<tr>
+<td>the confinement argument at the floor</td>
+<td>$M_C/M_W$</td>
+<td>$3.5$ decades</td>
+</tr>
+<tr>
+<td>the confinement argument at $10^{13}$ GeV</td>
+<td>$10^{13}/80.4$</td>
+<td>$11$ decades</td>
+</tr>
+<tr>
+<td>the photon</td>
+<td>null direction of a rank-two matrix</td>
+<td>massless, downstream</td>
+</tr>
+<tr>
+<td>the untouched articles</td>
+<td>seven of nine</td>
+<td>no eigenvalue moves</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="distinctions-that-are-easy-to-lose">Distinctions That Are Easy to Lose</h2>
+<p>A handover is not a unification. The group and the spectrum cross the scale; the couplings are matched and the matching fails, as the corpus already says (<em>The Coupling at the Handover</em>).</p>
+<p>A floor is not a prediction. $M_C\gtrsim250$ TeV says where the transition cannot be, not where it is (<em>Two Numbers That Must Not Be Confused</em>).</p>
+<p>Created at $M_C$ is not handed down at $M_C$. The weak factors arrive; the colour factor and the nine vectors cross (<em>What Is Not Handed Down</em>).</p>
+<p>An unchanged article is not an unexamined article. Seven of the nine were checked by searching for the product group; the four with zero mentions are the ones that survive verbatim, and that is evidence rather than assumption (<em>What the Left–Right Corpus Does Next</em>).</p>
+<p>The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's scale, and no mass is a difference of large numbers (<em>Where the Masses Come From</em>).</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The handover is at $M_C\gtrsim250$ TeV, bounded by $K_L\to\mu e$ and not by proton decay.</strong></p>
+<p><strong>Four quantities cross.</strong> The group $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, exact, rank five; the nine massless vectors, the kernel of $\operatorname{ad}(iD)$; the six heavy vectors at $M_X^{2}=\tfrac12g_4^{2}v_R^{2}$; and the couplings, to be matched.</p>
+<p><strong>The ordering is forced by nesting</strong>, $M_C\ge M_R\ge M_W$, and the only hierarchy the first step creates is three and a half decades at the floor.</p>
+<p><strong>Every mass comes from the vacuum that made it.</strong> The sextet from $v_R$, the right bosons from the second vacuum, $W$ and $Z$ from $v=246$ GeV, and the photon and the gluons from structure — a null direction and a stabiliser. <strong>No composite, no binding energy, no difference of large numbers.</strong></p>
+<p><strong>Three things are not handed down.</strong> The weak factors are born at the handover; the photon is a mixture formed after it; the mixing angle is computed after it. <strong>And that is why the $45^\circ$ of the identities cannot be the electroweak mixing: the mass matrix it would have to be an angle of does not exist yet.</strong></p>
+<p><strong>The corpus below $M_C$ stands.</strong> Nine articles, seven untouched, two with one paragraph each.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_C$</td>
+<td>the transition scale, $\gtrsim250$ TeV</td>
+</tr>
+<tr>
+<td>$M_R$</td>
+<td>the second breaking scale, free between $M_W$ and $M_C$</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>the electroweak vacuum, $246$ GeV</td>
+</tr>
+<tr>
+<td>$v_R$</td>
+<td>the magnitude of the first condensate</td>
+</tr>
+<tr>
+<td>$g_4,g_3,g_{B-L}$</td>
+<td>the mega coupling and the two it becomes at $M_C$</td>
+</tr>
+<tr>
+<td>$g_L,g_R$</td>
+<td>the weak couplings, born at $M_C$</td>
+</tr>
+<tr>
+<td>$B'$</td>
+<td>the abelian vector handed down from the fifteen</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html">The Weak Force Born as a Side Effect: A Condensate Index, Five Ranks From Three</a>. The construction that makes the group appear at $M_C$.</li>
+<li><a href="the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html">The Death of the Mega Strong Force</a>. The colour factor and the nine vectors that cross the boundary.</li>
+<li><a href="the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html">The Breaking Chain: One Flag, Three Stabilisers, Three Scales</a>. The downstream chain, unchanged.</li>
+<li><a href="the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html">The Order of the Breaking: Nested Vacua and the Scale Order</a>. Why $M_C\ge M_R\ge M_W$.</li>
+<li><a href="the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html">The Neutral Sector: Three Ingredients, Rank Two, One Null Direction</a>. The photon and the mixing angle, both formed after the handover.</li>
+<li><a href="the-one-coupling-that-returns-the-standard-model.html">The One Coupling That Returns the Standard Model</a>. The boundary condition and its four-decade failure.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

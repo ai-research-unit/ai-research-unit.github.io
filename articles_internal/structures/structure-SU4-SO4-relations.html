@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$\mathfrak{su}(4)$ as $\mathfrak{so}(4)$ and Nine More: One Involution Explains Why the Twenty-One Arrays Split Twelve and Nine — Biquaternion Universe</title>
+  <meta name="description" content="The question. Construction of the AXF Matrices of the Twenty-One Rotors presents the twenty-one arrays in two blocks: the twelve with real entries, then…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-as-math1-and-nine-more-one-involution-explains-why-the-twenty-one-arrays-split-twelve-and-nine"><strong>$\mathfrak{su}(4)$ as $\mathfrak{so}(4)$ and Nine More: One Involution Explains Why the Twenty-One Arrays Split Twelve and Nine</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> <a href="../../articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-rotors.html">Construction of the AXF Matrices of the Twenty-One Rotors</a> presents the twenty-one arrays in two blocks: the twelve with real entries, then the nine with purely imaginary entries. <a href="../../articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-generators.html">Construction of the AXF Matrices of the Twenty-One Generators</a> presents six of the same arrays as three pairs $\{A_{jk},iS_{jk}\}$. <strong>The two orders are incompatible, and the choice between them is not a matter of taste.</strong> This note says which one is forced, and by what.</p>
+<p><strong>The answer in one line.</strong> The twelve and the nine are the two eigenspaces of a single involution of $\mathfrak{su}(4)$, so the split is fixed by the real structure of the carrier before any author chooses anything; the pairing $\{A_{jk},iS_{jk}\}$ puts one leg in each eigenspace, so it is transversal to that structure and cannot carry a statement about the carrier.</p>
+<p><strong>The decomposition, which is the whole content.</strong>
+$$
+\mathfrak{su}(4)=\underbrace{\mathfrak{so}(4)}_{6}\ \oplus\ \underbrace{\mathfrak{p}}_{9},\qquad
+\mathfrak{p}=i\,\mathrm{Sym}_{0}(4;\mathbb{R}),\qquad 6+9=15 .
+$$
+<strong>The six is a Lie algebra and the nine is not.</strong> The six is the algebra of the real orthogonal quartet; the nine is its complement, and the bracket of two nines lands back in the six.</p>
+<p><strong>What this note adds to the two companions.</strong> The rotors article uses the split and states its consequence, that a rotor of a real array preserves $\mathbb{R}^{4}$ and a rotor of a complex one does not. <strong>This note proves the split, counts it, identifies the nine as a symmetric space and as a representation, and answers the objection that the pairing is more economical.</strong></p>
+<h2 id="the-one-involution">The One Involution</h2>
+<h3 id="complex-conjugation-is-minus-transpose-on-math7">Complex Conjugation Is Minus Transpose on $\mathfrak{su}(4)$</h3>
+<p><strong>Two involutions are available on $4\times4$ matrices, and on $\mathfrak{su}(4)$ they are the same one.</strong></p>
+<p>$$
+J(X)=\bar X,\qquad \sigma(X)=-X^{\mathsf T}.
+$$
+<strong>Both preserve $\mathfrak{su}(4)$ and both square to the identity.</strong> For $J$ this is immediate; for $\sigma$ it follows from $\sigma(X)^{\dagger}=-(X^{\dagger})^{\mathsf T}=-(-X)^{\mathsf T}=\sigma(X)^{\dagger}$ being anti-hermitian, which it is because $X^{\dagger}=-X$.</p>
+<p><strong>They coincide, and the proof is one line.</strong> Since $X^{\dagger}=-X$ reads $\bar X^{\mathsf T}=-X$, transposing gives
+$$
+\bar X=-X^{\mathsf T}=:\sigma(X)=J(X).
+$$
+<strong>Verified on all twenty-one arrays, entry by entry.</strong> There is no second real structure hiding in the frame, and the words "real" and "minus transpose" mean the same thing here.</p>
+<p><strong>The consequence is that the eigenspaces are unambiguous.</strong> A matrix of $\mathfrak{su}(4)$ is real, or purely imaginary, with no third possibility and no dependence on convention.</p>
+<h3 id="the-fixed-points-are-the-real-antisymmetric-arrays-and-they-are-math20">The Fixed Points Are the Real Antisymmetric Arrays, and They Are $\mathfrak{so}(4)$</h3>
+<p><strong>A fixed point of $J$ is real, and a real anti-hermitian matrix is real antisymmetric.</strong> So
+$$
+\mathfrak{su}(4)^{J=+1}=\bigl\{X\in M_4(\mathbb{R})\ :\ X^{\mathsf T}=-X\bigr\}=\mathfrak{so}(4),
+$$
+<strong>the Lie algebra of $\mathrm{SO}(4)$, of dimension six.</strong> Twelve of the twenty-one arrays lie here: the six real planes $A_{jk}$ and the six weak arrays $T^{L}_{a},T^{R}_{a}$. <strong>The count of twelve is a count of names; the dimension is six, and the next section is why.</strong></p>
+<h3 id="the-other-eigenspace-is-nine-purely-imaginary-directions">The Other Eigenspace Is Nine Purely Imaginary Directions</h3>
+<p><strong>A fixed point of $J=-1$ is purely imaginary, and $X^{\dagger}=-X$ then makes the real part symmetric.</strong>
+$$
+\mathfrak{p}=\bigl\{X\in\mathfrak{su}(4)\ :\ \bar X=-X\bigr\}=\bigl\{\,iS\ :\ S\in M_4(\mathbb{R}),\ S^{\mathsf T}=S,\ \operatorname{tr}S=0\,\bigr\}.
+$$
+<strong>The trace is set to zero because $\mathfrak{su}(4)$ is traceless and $iS$ inherits that.</strong> The dimension is the number of independent entries of a symmetric $4\times4$ matrix, minus the trace:
+$$
+\dim\mathfrak{p}=10-1=9 .
+$$
+<strong>Nine of the twenty-one arrays lie here</strong>: the six imaginary planes $iS_{jk}$, the corner $iD$, and the two colour diagonals $d_{2},d_{3}$. <strong>Here the count of names and the count of dimensions agree, and that agreement is not shared by the other side.</strong></p>
+<p><strong>The two eigenspaces are complementary, and the dimension count closes.</strong>
+$$
+15=6+9 .
+$$
+<strong>Nothing in this section used the corpus's particular fifteen.</strong> The same decomposition holds for any basis of $\mathfrak{su}(4)$ adapted to the real structure; the corpus's basis happens to be adapted, because it was built from the axis-free left and right matrices of a real carrier.</p>
+<h2 id="the-twelve-arrays-are-two-bases-of-one-six-dimensional-algebra">The Twelve Arrays Are Two Bases of One Six-Dimensional Algebra</h2>
+<p><strong>The six real planes span six dimensions, and the six weak arrays span six dimensions, and together they still span six.</strong></p>
+<p>$$
+\operatorname{rank}\{A_{jk}\}=6,\qquad
+\operatorname{rank}\{T^{L}_{a},T^{R}_{a}\}=6,\qquad
+\operatorname{rank}\{A_{jk},T^{L}_{a},T^{R}_{a}\}=6 .
+$$</p>
+<p><strong>So the six real planes are a basis of $\mathfrak{so}(4)$ and the six weak arrays are another basis of the same space.</strong> They are not two contributions that add; they are two descriptions of one algebra, and the six relations between them are the change of basis:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>real plane</th>
+<th>as a pair</th>
+<th>coefficient of $T^{L}$</th>
+<th>coefficient of $T^{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{tx}$</td>
+<td>$-(T^{L}_{x}+T^{R}_{x})$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$A_{ty}$</td>
+<td>$-(T^{L}_{y}+T^{R}_{y})$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$A_{tz}$</td>
+<td>$-(T^{L}_{z}+T^{R}_{z})$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$A_{yz}$</td>
+<td>$-(T^{L}_{x}-T^{R}_{x})$</td>
+<td>$-1$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>$A_{xz}$</td>
+<td>$+\,(T^{L}_{y}-T^{R}_{y})$</td>
+<td>$+1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$A_{xy}$</td>
+<td>$-(T^{L}_{z}-T^{R}_{z})$</td>
+<td>$-1$</td>
+<td>$+1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>All six were checked entry by entry.</strong> The physics content of the table is the sentence the construction article builds the model on: <strong>the sum keeps the plane on which left and right multiplication agree, which is the leptoquark plane, and the difference keeps the plane on which they disagree, which is the colour plane.</strong></p>
+<p><strong>The two bases are the same shape, which is the reason the twelve can be printed side by side without a warning.</strong> In the trace form $\langle X,Y\rangle=\operatorname{tr}(X^{\dagger}Y)$,
+$$
+\langle T_{a},T_{b}\rangle=\delta_{ab},\qquad
+\langle A_{jk},A_{lm}\rangle=2\,\delta .
+$$
+<strong>Both Gram matrices are scalar, so both bases are orthogonal, and the change of basis is a similarity.</strong> Writing $C$ for the $6\times6$ matrix of the coefficients above,
+$$
+CC^{\mathsf T}=2\,\mathbb{1}_{6},\qquad \frac{C}{\sqrt2}\in \mathrm{O}(6).
+$$
+<strong>So the six real planes are the weak six rotated by an orthogonal map and rescaled by $\sqrt2$.</strong> Nothing is lost in passing from one description to the other, and that is why the twelve names cost no information.</p>
+<p><strong>The objection this invites, and the answer.</strong> Twelve names for six dimensions looks like redundancy. <strong>It is redundancy, and it is deliberate</strong>: the six planes say which pair of labels a generator turns, the six weak arrays say which side of the algebra generated it, and the model needs both readings in different places. <strong>What the count forbids is treating the twelve as twelve independent directions.</strong></p>
+<h2 id="the-nine-arrays-are-nine-independent-directions">The Nine Arrays Are Nine Independent Directions</h2>
+<h3 id="the-two-summands-meet-only-at-zero">The Two Summands Meet Only at Zero</h3>
+<p><strong>The nine adds nine new dimensions to the six, and no more.</strong>
+$$
+\operatorname{rank}\{\mathfrak{so}(4)\cup\mathfrak{p}\}=15=6+9
+\qquad\Longrightarrow\qquad
+\mathfrak{so}(4)\cap\mathfrak{p}=\{0\}.
+$$
+<strong>Equivalently: no nonzero combination of the three diagonals $iD,d_{2},d_{3}$ is real.</strong> Every one of them is purely imaginary, so the intersection is empty at the level of a single array as well.</p>
+<h3 id="the-nine-is-not-a-subalgebra">The Nine Is Not a Subalgebra</h3>
+<p><strong>The bracket of two odd elements is even, and the bracket of an even and an odd element is odd.</strong> Both were checked on the corpus's arrays: all $441$ ordered pairs, no exception.</p>
+<p>$$
+[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{so}(4),\qquad
+[\mathfrak{so}(4),\mathfrak{p}]\subseteq\mathfrak{p}.
+$$</p>
+<p><strong>The first line is the one that matters for the name.</strong> A subspace closed under no bracket is not an algebra, and $\mathfrak{p}$ is not one: <strong>it is the complement of a subalgebra, not a subalgebra.</strong></p>
+<p><strong>The bracket is not merely contained, it is surjective onto the six.</strong>
+$$
+\operatorname{rank}\bigl\{[X,Y]\ :\ X,Y\in\mathfrak{p}\bigr\}=6,\qquad
+\operatorname{rank}\bigl\{[X,Y]\ :\ X\in\mathfrak{so}(4),\ Y\in\mathfrak{p}\bigr\}=9 .
+$$
+<strong>So two odd generators always generate an even one</strong>, which is why a commutator of two leptoquark planes can produce a colour rotation. <strong>A reader who expects the nine to close will look for a ninth-dimensional algebra and will not find one.</strong></p>
+<h3 id="the-nine-is-the-tangent-space-of-math78">The Nine Is the Tangent Space of $\mathrm{SU}(4)/\mathrm{SO}(4)$</h3>
+<p><strong>The two lines above are the two defining properties of a symmetric pair, so the pair $(\mathfrak{su}(4),\mathfrak{so}(4))$ is one.</strong> The associated compact symmetric space is the quotient, and its dimension is the dimension of the complement:
+$$
+\dim\frac{\mathrm{SU}(4)}{\mathrm{SO}(4)}=15-6=9=\dim\mathfrak{p}.
+$$
+<strong>So the nine is not a space of generators in the same sense as the six: it is the tangent space of the directions in which a group element leaves $\mathrm{SO}(4)$.</strong> That is the structural reason the rotors article can say, in one sentence, that the twelve preserve $\mathbb{R}^{4}$ and the nine do not — the nine is by construction the normal direction to $\mathrm{SO}(4)$.</p>
+<p><strong>The exponentiated version of the same statement.</strong> An odd rotor returns a real matrix only at isolated values of its parameter, and the values are the same for every odd array:
+$$
+\exp(\theta G)\in\mathrm{SO}(4)\ \text{for an odd }G
+\quad\Longleftrightarrow\quad
+\theta\in\pi\mathbb{Z},
+$$
+<strong>checked on the six imaginary planes and the three diagonals over a full period</strong>, and at those points the rotor coincides with an even one: $\exp(\pi iS_{tx})=\exp(\pi A_{tx})$ and $\exp(\pi iD)=-\mathbb{1}$. <strong>Two meetings per period, at the antipodes, is what a symmetric space's geodesics do.</strong></p>
+<h3 id="the-nine-is-a-math87-of-math88">The Nine Is a $(3,3)$ of $\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R$</h3>
+<p><strong>The nine is not an unstructured complement: it is an irreducible module, and its shape is worth naming.</strong> Write $\mathfrak{so}(4)=\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R$, the split the weak arrays supply. The dimensions of the commutants of the action on $\mathfrak{p}$ are
+$$
+\dim\operatorname{Comm}\bigl(\mathfrak{su}(2)_L\bigr)=9,\qquad
+\dim\operatorname{Comm}\bigl(\mathfrak{su}(2)_R\bigr)=9,\qquad
+\dim\operatorname{Comm}\bigl(\mathfrak{so}(4)\bigr)=1 .
+$$
+<strong>The last number says irreducible; the first two say the module is a tensor product of two three-dimensional pieces</strong>, because the commutant of one factor acting on a tensor product is the full matrix algebra of the other factor, of dimension $3\times3=9$.</p>
+<p><strong>The weights confirm it.</strong> The adjoint action of $T^{L}_{z}$ on $\mathfrak{p}$ has eigenvalues $+i$, $0$, $-i$, each with multiplicity three:
+$$
+\operatorname{ad}\bigl(T^{L}_{z}\bigr)\big|_{\mathfrak{p}}:\quad
+\{+i,+i,+i,\ 0,0,0,\ -i,-i,-i\},
+$$
+<strong>which is three copies of the adjoint of $\mathfrak{su}(2)$</strong>, and the same for $T^{R}_{z}$. So
+$$
+\mathfrak{p}\cong(\mathbf{3},\mathbf{3}),\qquad \dim=3\times3=9 .
+$$
+<strong>This is the compact statement of what the nine is</strong>: the leptoquark planes, the corner and the two colour diagonals together form one irreducible object of the weak pair, not nine unrelated directions.</p>
+<h2 id="where-each-physics-family-sits">Where Each Physics Family Sits</h2>
+<p><strong>The grading cuts across the physics grouping, and the table is the honest statement of that.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>arrays in $\mathfrak{so}(4)$</th>
+<th>arrays in $\mathfrak{p}$</th>
+<th>total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>weak</td>
+<td>$6$</td>
+<td>$0$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>leptoquark</td>
+<td>$3$</td>
+<td>$3$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>colour</td>
+<td>$3$</td>
+<td>$5$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$B-L$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$12$</td>
+<td>$9$</td>
+<td>$21$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The leptoquark sector splits three and three, and no other sector does.</strong> The three real leptoquark planes $A_{ta}$ rotate the quartet; the three imaginary ones $iS_{ta}$ do not. <strong>The weak sector is entirely in the six</strong>, which is the statement that the weak rotations are rotations of the quartet — the physical interpretation the rotors article gives to the $12+9$ split.</p>
+<p><strong>The colour sector is the surprise, and it is worth stating plainly.</strong> Three colour arrays are real rotations and five are not, so the colour sector straddles the grading more than any other. <strong>A reader who expects "real arrays are the weak ones" will be wrong</strong>: the six real planes are leptoquark and colour, and the weak arrays are real for a different reason.</p>
+<h2 id="why-the-pairing-is-transversal">Why the Pairing Is Transversal</h2>
+<p><strong>The pairing $\{A_{jk},iS_{jk}\}$ is a partition of the same twenty-one arrays into six pairs and three singletons, and it is orthogonal to the one above.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>first leg</th>
+<th>second leg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{A_{jk},iS_{jk}\}$</td>
+<td>real, so in $\mathfrak{so}(4)$</td>
+<td>purely imaginary, so in $\mathfrak{p}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every pair has one leg in each summand, and no pair lies inside a summand.</strong> That is what "transversal" means here, and it is the whole of the argument.</p>
+<p><strong>Why transversality disqualifies the pairing as a spine.</strong> A spine answers one question in one sentence per block. The question the rotors article asks is whether $\exp(\theta G)$ preserves $\mathbb{R}^{4}$. <strong>Answered on the grading, it takes one sentence for twelve arrays and one for nine.</strong> Answered on the pairing, the same sentence has to be said six times, once per pair, because each pair contains one array of each kind. <strong>The pairing is finer in one sense and useless in the other: it splits where the answer does not split.</strong></p>
+<h3 id="the-strongest-objection-and-the-answer">The Strongest Objection, and the Answer</h3>
+<p><strong>The objection is real and it should be stated in its strongest form.</strong> The two members of a pair share their square:
+$$
+A_{jk}^{2}=iS_{jk}^{2}=-\bigl(E_{jj}+E_{kk}\bigr),
+$$
+<strong>so they share the closed form of their rotors, and one formula covers both.</strong> A pairing that halves the number of closed forms is worth something, and the rotors article's own display does in fact put them side by side for exactly this reason.</p>
+<p><strong>The answer is that the economy is one sentence and the split is an argument.</strong> The shared square buys the observation that $\exp(\theta iS_{jk})$ is $\exp(\theta A_{jk})$ with $i\sin\theta$ where $\sin\theta$ was. <strong>It buys nothing about the carrier</strong>, because the two rotors differ precisely in what the shared square does not see. <strong>Two matrices can share a square and act on opposite sides of a real structure; that is exactly what happens here.</strong></p>
+<p><strong>The concession, stated so that it is not hidden.</strong> The pairing is the right spine for a different article. In the construction article and in <a href="../../articles_physics/the-commutation-table-of-the-twenty-one-generators-441-entries-164-nonzero-and-six-rules.html">the commutation table</a> the operative structure is which cells of the grid are occupied, and a pair occupies one cell-pair, so pairing is correct there. <strong>The error would be to carry the construction article's spine into a discussion of rotors, and the error in the other direction would be to carry this spine into the construction.</strong></p>
+<h2 id="what-the-split-decides">What the Split Decides</h2>
+<h3 id="which-rotors-preserve-the-real-quartet">Which Rotors Preserve the Real Quartet</h3>
+<p><strong>The question the rotors article answers is decided entirely by the grading, and this is the section that makes the claim exact.</strong></p>
+<p>$$
+G\in\mathfrak{so}(4)\ \Longrightarrow\ \exp(\theta G)\in\mathrm{SO}(4)\ \text{for every }\theta,
+\qquad
+G\in\mathfrak{p}\ \Longrightarrow\ \exp(\theta G)\in\mathrm{SO}(4)\ \text{only at }\theta\in\pi\mathbb{Z}.
+$$</p>
+<p><strong>The first line needs no computation beyond reality and orthogonality of the exponential of an antisymmetric matrix.</strong> The second needs the imaginary part to vanish, and it does so only at the endpoints of each half-turn.</p>
+<h3 id="the-cartan-lies-entirely-in-the-nine">The Cartan Lies Entirely in the Nine</h3>
+<p><strong>All three diagonal arrays are odd, so the Cartan subalgebra of $\mathfrak{su}(4)$ meets $\mathfrak{so}(4)$ only at zero.</strong>
+$$
+iD,\ d_{2},\ d_{3}\in\mathfrak{p}
+\qquad\Longrightarrow\qquad
+\mathfrak{t}\cap\mathfrak{so}(4)=\{0\},\qquad
+\operatorname{rank}\mathfrak{su}(4)=3&gt;\operatorname{rank}\mathfrak{so}(4)=2 .
+$$
+<strong>The maximal torus of $\mathrm{SU}(4)$ consists of diagonal phases, and a real diagonal matrix is the identity times a real number</strong>, so no one-parameter subgroup of the torus except the identity lies in $\mathrm{SO}(4)$.</p>
+<p><strong>The two-dimensional torus that $\mathrm{SO}(4)$ does have is inside the six.</strong> $A_{xy}$ and $A_{tz}$ commute and span an abelian subalgebra of dimension two:
+$$
+[A_{xy},A_{tz}]=0,\qquad \operatorname{rank}\{A_{xy},A_{tz}\}=2 .
+$$
+<strong>So the maximal torus of $\mathrm{SO}(4)$ is spanned by a colour rotation and a leptoquark rotation</strong>, which is the compact form of the statement that $\mathrm{SO}(4)$ mixes the two sectors freely.</p>
+<h2 id="what-this-does-not-say">What This Does Not Say</h2>
+<p><strong>It does not say the nine is an algebra.</strong> It is not; the bracket of two of its elements is in the six. <strong>A reader who takes "nine generators" to mean "a ninth-dimensional Lie algebra" has taken the wrong reading, and the rank of $[\mathfrak{p},\mathfrak{p}]$ being six is the correction.</strong></p>
+<p><strong>It does not say the physics grouping is wrong.</strong> The grouping by boson family is correct for the classification and for the mass matrix, and the table above shows where it sits. <strong>Two partitions of one set can both be correct and answer different questions.</strong></p>
+<p><strong>It does not say the split is a convention of this note.</strong> The split is the eigenspace decomposition of the involution $J$, and $J$ is fixed by the carrier. <strong>What is a convention is the choice of the carrier; given the biquaternion quartet, nothing here is free.</strong></p>
+<p><strong>It does not say the twelve are independent.</strong> It says the opposite: twelve names, six dimensions, six relations. <strong>The count of independent directions in the whole twenty-one is fifteen, not twenty-one</strong>, which is the count <a href="../../articles_physics/the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions.html">the five counts</a> makes from the other direction.</p>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>conjugation against minus transpose</td>
+<td>$J(X)$ against $-X^{\mathsf T}$, all $21$</td>
+<td>identical</td>
+</tr>
+<tr>
+<td>the fixed points</td>
+<td>$X$ real and anti-hermitian</td>
+<td>real antisymmetric, $6$</td>
+</tr>
+<tr>
+<td>the other eigenspace</td>
+<td>$\bar X=-X$ and $X^{\dagger}=-X$</td>
+<td>$i\,\mathrm{Sym}_{0}$, $9$</td>
+</tr>
+<tr>
+<td>the dimension count</td>
+<td>$6+9$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the six real planes</td>
+<td>rank as $4\times4$ arrays</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>the six weak arrays</td>
+<td>rank</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>the twelve together</td>
+<td>rank</td>
+<td>$6$, so two bases of one space</td>
+</tr>
+<tr>
+<td>the nine</td>
+<td>rank</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>the summands</td>
+<td>rank of $\mathfrak{so}(4)\cup\mathfrak{p}$</td>
+<td>$15$, so the intersection is $0$</td>
+</tr>
+<tr>
+<td>the grading</td>
+<td>all $441$ brackets</td>
+<td>$0$ violations</td>
+</tr>
+<tr>
+<td>$[\mathfrak{p},\mathfrak{p}]$</td>
+<td>rank of the brackets</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$[\mathfrak{so}(4),\mathfrak{p}]$</td>
+<td>rank of the brackets</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>the quotient</td>
+<td>$15-6$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>the Gram of the six weak</td>
+<td>$\operatorname{tr}(X^{\dagger}Y)$</td>
+<td>$\mathbb{1}_{6}$</td>
+</tr>
+<tr>
+<td>the Gram of the six planes</td>
+<td>$\operatorname{tr}(X^{\dagger}Y)$</td>
+<td>$2\,\mathbb{1}_{6}$</td>
+</tr>
+<tr>
+<td>the change of basis</td>
+<td>$CC^{\mathsf T}$</td>
+<td>$2\,\mathbb{1}_{6}$</td>
+</tr>
+<tr>
+<td>the commutant of $\mathfrak{so}(4)$ on $\mathfrak{p}$</td>
+<td>dimension</td>
+<td>$1$, so irreducible</td>
+</tr>
+<tr>
+<td>the commutant of $\mathfrak{su}(2)_L$ on $\mathfrak{p}$</td>
+<td>dimension</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>the weights of $T^{L}_{z}$ on $\mathfrak{p}$</td>
+<td>eigenvalues</td>
+<td>$+i,0,-i$, each three times</td>
+</tr>
+<tr>
+<td>the odd rotors in $\mathrm{SO}(4)$</td>
+<td>$\theta$ over one period</td>
+<td>$\theta\in\pi\mathbb{Z}$ only</td>
+</tr>
+<tr>
+<td>the Cartan</td>
+<td>$\mathfrak{t}$ against $\mathfrak{so}(4)$</td>
+<td>intersection $\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The twenty-one arrays split twelve and nine because $\mathfrak{su}(4)$ splits that way under one involution, and the involution is complex conjugation, which on $\mathfrak{su}(4)$ is the same map as minus transpose.</strong> The split is the eigenspace decomposition, so it is fixed by the carrier and not by the author.</p>
+<p><strong>The twelve are twelve names for six dimensions.</strong> The six real planes and the six weak arrays are two orthogonal bases of $\mathfrak{so}(4)$, related by a change of basis that is $\sqrt2$ times an orthogonal matrix. Twelve names, six relations, six dimensions.</p>
+<p><strong>The nine are nine names for nine dimensions, and they form the complement.</strong> The nine is not a subalgebra: its self-bracket fills the six. That pair of facts makes $(\mathfrak{su}(4),\mathfrak{so}(4))$ a symmetric pair, and the nine is the tangent space of $\mathrm{SU}(4)/\mathrm{SO}(4)$. As a module of the weak pair it is a single $(\mathbf{3},\mathbf{3})$.</p>
+<p><strong>The pairing $\{A_{jk},iS_{jk}\}$ is transversal to this structure, one leg in each summand.</strong> Its one genuine economy, that the two members share a square and so share a closed form, is a fact about two matrices and not about the carrier, so it cannot serve as the spine of an argument about which rotors preserve $\mathbb{R}^{4}$.</p>
+<p><strong>The split decides two things in one sentence each.</strong> Which rotors preserve the real quartet: the even ones always, the odd ones only at $\theta\in\pi\mathbb{Z}$. And where the Cartan sits: entirely in the nine, which is why the rank of $\mathrm{SU}(4)$ exceeds the rank of $\mathrm{SO}(4)$ by one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J$</td>
+<td>Complex conjugation, $\bar X$; on $\mathfrak{su}(4)$ equal to $-X^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>Minus transpose, $-X^{\mathsf T}$; the same involution as $J$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(4)$</td>
+<td>The $+1$ eigenspace: real antisymmetric arrays, dimension $6$</td>
+</tr>
+<tr>
+<td>$\mathfrak{p}$</td>
+<td>The $-1$ eigenspace: $i\,\mathrm{Sym}_{0}(4;\mathbb{R})$, dimension $9$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sym}_{0}$</td>
+<td>Real symmetric traceless $4\times4$ matrices</td>
+</tr>
+<tr>
+<td>$\mathfrak{t}$</td>
+<td>The Cartan of $\mathfrak{su}(4)$, spanned by $iD,d_{2},d_{3}$</td>
+</tr>
+<tr>
+<td>$A_{jk}$</td>
+<td>The real plane, in $\mathfrak{so}(4)$</td>
+</tr>
+<tr>
+<td>$iS_{jk}$</td>
+<td>The imaginary plane, in $\mathfrak{p}$</td>
+</tr>
+<tr>
+<td>$T^{L}_{a},T^{R}_{a}$</td>
+<td>The weak arrays, in $\mathfrak{so}(4)$</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>The $6\times6$ change of basis between the planes and the weak arrays</td>
+</tr>
+<tr>
+<td>$(\mathbf{3},\mathbf{3})$</td>
+<td>The irreducible $9$-dimensional module of $\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R$ that $\mathfrak{p}$ is</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../../articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-rotors.html">Construction of the AXF Matrices of the Twenty-One Rotors</a>. The article this note defends: the twenty-one closed forms, and the $12+9$ split used as its spine.</li>
+<li><a href="../../articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-generators.html">Construction of the AXF Matrices of the Twenty-One Generators</a>. The arrays, and the pairing $\{A_{jk},iS_{jk}\}$ that this note argues is transversal.</li>
+<li><a href="../../articles_physics/the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Twenty-One Generators</a>. Which space each rotor turns, and the three proofs that none is a boost.</li>
+<li><a href="structure-SU4-basis-construction.html">Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices</a>. The two bases of the fifteen, and the step that separates them.</li>
+<li><a href="../../articles_physics/the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions.html">The Five Counts of the Twenty-One</a>. Names against directions, which is the count this note's rank computation reproduces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
