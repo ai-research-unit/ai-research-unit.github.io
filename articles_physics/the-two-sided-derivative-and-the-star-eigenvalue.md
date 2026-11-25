@@ -215,5 +215,5 @@ What the derivative does not supply is the connection. Metric compatibility and 
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame route and the programme's accounting of connections, curvature and holonomy.
 - [The Newman–Penrose Formalism in Biquaternionic Form](the-newman-penrose-formalism-in-biquaternionic-form.html), for the twelve complex spin coefficients that are the components of this connection in a null basis.
 - [Expressing Lie Algebras via Biquaternions](../articles_internal/expressing-lie-algebras-via-biquaternions.html), for the identification of the scalar-free subspace with the Lorentz algebra.
-- [Conceptual Conventions](../articles_internal/conceptual-conventions.html), for the rule that an unpreferred concept stays unprivileged and for the status of a connection the algebra hosts but does not choose.
+- [Algebra and Element Conventions](algebra-and-element-conventions.html), for the rule that an unpreferred concept stays unprivileged and for the status of a connection the algebra hosts but does not choose.
 - Robert M. Wald, *General Relativity* (Chicago, 1984), for the tetrad connection, metric compatibility, torsion, and the curvature two-form.

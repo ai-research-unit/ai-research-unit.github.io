@@ -167,10 +167,10 @@ Sixteen recomputations, at $\operatorname{tr}$ in the fundamental, quartet order
 
 ## Further Reading
 
-- [Construction of the AXF Matrices of the Twenty-One Generators](construction-of-the-axf-matrices-of-the-twenty-one-generators.html). The twenty-one arrays, the three-step construction, and the property table this article's basis is taken from.
+- [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). The twenty-one arrays, the three-step construction, and the property table this article's basis is taken from.
 - [Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices](../articles_internal/structures/structure-SU4-basis-construction.html). The pair lemma, the rank-one blocks, the maths-base display, and the theorem that one plane, eigenline and diagonal are one condition.
 - [The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). What happens after this matrix: the second and third breaking, the mixing, and the scales.
-- [Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). Which boson sits on each array, and the full spectrum with colour and charge.
+- [Classification of the Bosons: Twenty-Four Cells, Twenty-One Generators](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). Which boson sits on each array, and the full spectrum with colour and charge.
 - [The Leptoquarks of the Four Colours Left–Right Model: Six States, One Bound, and Why Proton Decay Does Not Bite](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The six massive states of this matrix, their charges and the bound on their mass.
 - [The Scalar Sector of the Four Colours Left–Right Model: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). Where the vacuum comes from and what is eaten to feed these six masses.
-- [The Four Colours Left–Right Model](the-four-colours-left-right-model.html). The declaration, the carrier and the stabiliser that make $D$ the only trace-zero direction available.
+- [The Four Colours Left–Right Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The declaration, the carrier and the stabiliser that make $D$ the only trace-zero direction available.

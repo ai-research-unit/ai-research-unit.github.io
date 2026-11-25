@@ -14,7 +14,7 @@ $$
 \qquad
 \underbrace{21}_{\text{printed arrays}}-\underbrace{6}_{\text{the six of }\mathfrak{so}(4)}=15\ \text{directions}.
 $$
-**Twenty-one printed arrays and fifteen directions is not a contradiction**, and it is why the article prints twenty-one matrices to describe fifteen generators: **the six extra are a second basis of a six-dimensional subspace, and §*The Fifteen, Counted* proves it with a rank.**
+**Six composites beside fifteen generators is not a contradiction**, and it is why the article prints the six $\mathfrak{so}(4)$ arrays beside them: **the six extra are a second basis of a six-dimensional subspace, and §*The Fifteen, Counted* proves it with a rank.**
 
 **The frame.** The axis-free frame of [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html). The array of an operator is read by columns, the $j$-th column being the product with the $j$-th unit:
 $$
@@ -301,7 +301,7 @@ $$
 
 **Check one, in four cells.** The two weak arrays agree on the $\{t,a\}$ block, so their sum keeps it doubled and its half is the leptoquark plane; they differ on the $\{b,c\}$ block, so their difference keeps it doubled and its half is the colour plane. **The half in the definition of $T$ is exactly what makes those two lines integral.**
 
-**Twenty-one arrays, fifteen directions.** The six relations are independent, so the rank of the twenty-one columns over $\mathbb{Q}(i)$ — equivalently over $\mathbb{R}$, the entries being Gaussian integers — is fifteen, and the twenty-one arrays are distinct. **Both statements are needed and neither is a defect**: one array per generator, and six of the arrays two-term sums of the other fifteen.
+**Twenty-one arrays, fifteen generators.** The six relations are independent, so the rank of the twenty-one columns over $\mathbb{Q}(i)$ — equivalently over $\mathbb{R}$, the entries being Gaussian integers — is fifteen, and the twenty-one arrays are distinct. **Both statements are needed and neither is a defect**: one array per generator, and six of the arrays two-term sums of the other fifteen.
 
 **The normalisation, said once.** The fifteen are Gaussian-integer arrays, every entry in $\{0,\pm1,\pm i,\pm3i\}$ — the only entry of modulus $\ne1$ is the $-3i$ of the corner — with $\operatorname{tr}(X^{\dagger}X)=2$, except the corner, which has $12$. The six are real half-integer arrays, entries in $\{0,\pm\tfrac12\}$, with $1$. **No display mixes them**, and every relation above holds with the halves as written.
 
@@ -384,7 +384,7 @@ $$
 
 **Two conventions live in that table, and both are named.** **Which of a plane's two amplitudes carries which of the pair's two names is a choice** — the two names of a mirrored pair could be exchanged without changing a number. **And the real and imaginary amplitudes of one plane are the two components of one complex field**, so calling $A_{tx}$ the particle and $iS_{tx}$ the antiparticle is the $i$ convention and not a physical distinction. **What is not a choice is the count**: fifteen arrays, two amplitudes per plane, one boson per amplitude — **and the six $\mathfrak{so}(4)$ arrays outside the count, which are coherences of a heavy and a massless direction and therefore not bosons at all.**
 
-**Nine massless and six massive is this model's whole spectrum.** The nine are the gluon octet and $B'$; the six are the leptoquarks. **There is no $W$, no $Z$ and no photon here, and their absence is not a gap**: they need the weak factors, the three neutral directions and the second vacuum, and all three arrive at the transition. [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html) has the ledger; [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html) has where the rest come from.
+**Nine massless and six massive is this model's whole spectrum.** The nine are the gluon octet and $B'$; the six are the leptoquarks. **There is no $W$, no $Z$ and no photon here, and their absence is not a gap**: they need the weak factors, the three neutral directions and the second vacuum, and all three arrive at the transition. [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) has the ledger; [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html) has where the rest come from.
 
 ### The Mass, and the One Difference That Decides It
 
@@ -407,9 +407,9 @@ $$
 
 ### Three Things the Arrays Do Not Do
 
-**They do not boost.** No exponential of the fifteen is a Lorentz boost. The generator of the boost in a plane is the Hermitian $-i$ times the cell, and it is not in the algebra; [The Rotors of the Twenty-One Generators](the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) proves it three ways.
+**They do not boost.** No exponential of the fifteen is a Lorentz boost. The generator of the boost in a plane is the Hermitian $-i$ times the cell, and it is not in the algebra; [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) proves it three ways.
 
-**They do not identify the carrier with spacetime.** The quartet is a formal copy of the carrier, and a rotor of its three-space is a rotor of that three-space. The theorem and its consequence are in [The Four Colours Left–Right Model](the-four-colours-left-right-model.html), §*The Carrier Is a Copy*.
+**They do not identify the carrier with spacetime.** The quartet is a formal copy of the carrier, and a rotor of its three-space is a rotor of that three-space. The theorem and its consequence are in [The Four Colours Left–Right Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html), §*The Carrier Is a Copy*.
 
 **They do not fix a coupling.** The model's one coupling is symbolic, so the numbers in the mass column are coefficients of $v^{2}$ and not predictions in kilograms. [The Coupling Sector](../articles_internal/the-coupling-sector-of-the-four-colours-model.html) records what the model does and does not supply.
 
@@ -453,7 +453,7 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 
 **The fifteen generators are printed as twenty-one four-row axis-free arrays, and the article gives them in the order they are made.** The six arrays of $\mathfrak{so}(4)$ are half the raw arrays $\ell_a$, $r_a$; the fifteen are the sixteen words minus the trace word, with $i$ on the nine symmetric ones, and then the six pairs replaced by half-sum and half-difference.
 
-**The left and right triples differ by one sign on two entries per array**, they commute because the algebra is associative, and their brackets carry opposite signs because right multiplication is an anti-homomorphism. **As two-forms they are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$**, and the six real planes of $\mathfrak{su}(4)$ are their sums and differences: $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-\epsilon_{abc}(T^{L}_{a}-T^{R}_{a})$. Twenty-one arrays, fifteen directions.
+**The left and right triples differ by one sign on two entries per array**, they commute because the algebra is associative, and their brackets carry opposite signs because right multiplication is an anti-homomorphism. **As two-forms they are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$**, and the six real planes of $\mathfrak{su}(4)$ are their sums and differences: $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-\epsilon_{abc}(T^{L}_{a}-T^{R}_{a})$. Twenty-one arrays, fifteen generators.
 
 **Every property in Part III is one number.** Two cells or four; $2$, $12$ or $1$ under $\operatorname{tr}(X^{\dagger}X)$; spectrum $0,0,\pm i$ or $\pm\tfrac i2$ twice; a real rotation or a complex one. **And every array of the fifteen is one boson**: six leptoquarks, eight gluons and $B'$. **The six $\mathfrak{so}(4)$ arrays are not bosons**: each is half heavy and half massless, and the successor model is what names them. **The mass is $2v^{2}$ times the square of the difference of two eigenvalues of $D$**, which is $32v^{2}$ across the lepton line and zero across anything colour, and that single difference is the whole of the nine-and-six split.
 
@@ -484,9 +484,9 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 - [The Twenty-One Generators in the Axis-Free Frame](../articles_internal/the-twenty-one-generators-in-the-axis-free-frame.html). The arrays of $L_{\vec e_a}$ and $R_{\vec e_a}$, their word support and the six relations.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [$M_2(\mathbb{C})$ Defining Representation](../articles_maths/m2c-defining-representation.html). The four-row and two-row frames.
 - [The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$](../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html). The fifteen in the operator basis, numbered $G_1$ to $G_{15}$.
-- [The Rotors of the Twenty-One Generators](the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). What each array does when exponentiated, and why no boost is in the group.
-- [The Commutation Table of the Twenty-One Generators](the-commutation-table-of-the-twenty-one-generators-441-entries-164-nonzero-and-six-rules.html). Every bracket of every array with every other, printed block by block, with the six rules that produce the table.
-- [Classification of the Bosons: Sixteen Cells, Fifteen Directions](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). The grid and the ledger of the spectrum.
+- [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). What each array does when exponentiated, and why no boost is in the group.
+- [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html). Every bracket of every array with every other, printed block by block, with the six rules that produce the table.
+- [Classification of the Bosons: Sixteen Cells, Fifteen Generators](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid and the ledger of the spectrum.
 - [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). Where the four absent particles come from.
-- [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-four-colours-left-right-model.html). The declaration, the carrier, and the real $\mathfrak{so}(4)$ inside the fifteen.
+- [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The declaration, the carrier, and the real $\mathfrak{so}(4)$ inside the fifteen.
 - W. Fulton and J. Harris, *Representation Theory: A First Course*, Springer, 1991 — one-sided actions, the anti-homomorphism of the right action, and why the two commute.

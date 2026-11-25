@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**This article derives; it does not survey.** [The 21 AXF Matrices of the Bosons in Detail](the-21-axf-matrices-of-the-bosons-in-detail.html) prints the twenty-one arrays one at a time, and its subsection on $B'$ makes six statements about one array. **Five quotations follow, each a block taken word for word from that subsection.** Each is followed by what it forces. Nothing else is assumed, no array is recomputed, and no vacuum is chosen.
+**This article derives; it does not survey.** [The 15 AXF Matrices of the Bosons in Detail](the-15-axf-matrices-of-the-bosons-in-detail.html) prints the fifteen arrays one at a time, and its subsection on $B'$ makes six statements about one array. **Five quotations follow, each a block taken word for word from that subsection.** Each is followed by what it forces. Nothing else is assumed, no array is recomputed, and no vacuum is chosen.
 
-**The array, as the detail article prints it.** It is the corner of the fifteen, and it carries the only entry of modulus three in the whole twenty-one:
+**The array, as the detail article prints it.** It is the corner of the fifteen, and it carries the only entry of modulus three in the whole fifteen:
 
 $$
 iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr)=\begin{pmatrix}-3i & 0 & 0 & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & 0 & 0 & i\end{pmatrix}
@@ -22,13 +22,13 @@ $$
 | $B-L$ is exact at every scale | $[iD,\Phi_0]=0$ |
 | the relative phase of lepton and colour is $4\theta$ | four phases and no rotation |
 
-**What the chain needs beyond the quotations, stated once so that it is not smuggled in.** Two things, and neither is a free parameter of the argument. The first is the identification (A): the corner eigenvalue belongs to the lepton and the three equal eigenvalues belong to the three colours. The trace alone says "one against three"; (A) says which is which. The second is the combination $Y=T_{3R}+\tfrac12(B-L)$, by which hypercharge is built from the right-handed neutral direction and the corner. Both belong to the model and both are fixed elsewhere: (A) in [The Four Colours Left–Right Model](the-four-colours-left-right-model.html), the combination in [The Neutral Sector](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html). **Everything else in this article follows from the five quotations.**
+**What the chain needs beyond the quotations, stated once so that it is not smuggled in.** Two things, and neither is a free parameter of the argument. The first is the identification (A): the corner eigenvalue belongs to the lepton and the three equal eigenvalues belong to the three colours. The trace alone says "one against three"; (A) says which is which. The second is the combination $Y=T_{3R}+\tfrac12(B-L)$, by which hypercharge is built from the right-handed neutral direction and the corner. Both belong to the model and both are fixed elsewhere: (A) in [The Four Colours Left–Right Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html), the combination in [The Neutral Sector](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html). **Everything else in this article follows from the five quotations.**
 
 ## Quotation One: the Entries, and the Trace
 
 **The detail article, §$B'$:**
 
-> **The entries.** Four diagonal cells, and the only entry of modulus $\ne1$ in the whole twenty-one: $-3i$ at the corner. **Trace zero because $-3+1+1+1=0$**, norm $12$ because $9+1+1+1=12$, spectrum $-3i,i,i,i$.
+> **The entries.** Four diagonal cells, and the only entry of modulus $\ne1$ in the whole fifteen: $-3i$ at the corner. **Trace zero because $-3+1+1+1=0$**, norm $12$ because $9+1+1+1=12$, spectrum $-3i,i,i,i$.
 
 **And, in the same subsection:**
 
@@ -246,10 +246,10 @@ Fifteen recomputations, all on the quoted array, at $\operatorname{tr}$ in the f
 
 ## Further Reading
 
-- [The 21 AXF Matrices of the Bosons in Detail: Every Matrix, Every Boson, Its Entries, Its Spectrum and Its Fate](the-21-axf-matrices-of-the-bosons-in-detail.html). The article this one quotes; its §$B'$ is the source of all five quotations.
-- [Construction of the AXF Matrices of the Twenty-One Generators](construction-of-the-axf-matrices-of-the-twenty-one-generators.html). Where $iD=i(W_{xx}+W_{yy}+W_{zz})$ is built from one sum and two differences, and why the factor $i$ is forced.
-- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The declaration (A), which is the one input the quotations do not contain.
-- [Where the Twenty-One Generators Go: One Ledger, Three Readings, and the One Abelian Factor](where-the-twenty-one-generators-go-one-ledger-three-readings-and-the-one-abelian-factor.html). The array's address in the group, and why $B-L$ rather than hypercharge is what $\mathrm{SU}(4)$ supplies.
+- [The Fifteen AXF Matrices of the Bosons in Detail: Every Matrix, Every Boson, Its Entries, Its Spectrum and Its Fate](the-15-axf-matrices-of-the-bosons-in-detail.html). The article this one quotes; its §$B'$ is the source of all five quotations.
+- [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). Where $iD=i(W_{xx}+W_{yy}+W_{zz})$ is built from one sum and two differences, and why the factor $i$ is forced.
+- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The declaration (A), which is the one input the quotations do not contain.
+- [Where the Fifteen Generators Go: One Ledger, Three Readings, and the One Abelian Factor](where-the-fifteen-generators-go-one-ledger-three-readings-and-the-one-abelian-factor.html). The array's address in the group, and why $B-L$ rather than hypercharge is what $\mathrm{SU}(4)$ supplies.
 - [The Neutral Sector of the Four Colours Left–Right Model: Three Ingredients, Rank Two, One Null Direction](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html). Where $Y=T_{3R}+\tfrac12(B-L)$ comes from, and the mixing that leaves the corner's eigenvalue alone.
 - [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). The anomaly system solved in full: the three rays the comparison section trades against one trace.
 - [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html). The four rows, and why they vanish identically here.

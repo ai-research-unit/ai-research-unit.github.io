@@ -181,7 +181,7 @@ M_f=\frac{v}{\sqrt2}\,Y_{f},
 f=u,d,e ,
 $$
 
-and the physical masses are the singular values of $M_f$, obtained by bi-unitary diagonalisation. That step, and the two unitary factors that survive it as the CKM and PMNS matrices, is the subject of [The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html).
+and the physical masses are the singular values of $M_f$, obtained by bi-unitary diagonalisation. That step, and the two unitary factors that survive it as the CKM and PMNS matrices, is the subject of [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html).
 
 Why the sector exists at all. Without it the fermions are massless, which the world is not. With it, the masses are free parameters, which is the price. There is no third option inside the renormalisable model: a mass term without the scalar is forbidden by the gauge symmetry, and a mass term generated in any other way requires new fields.
 

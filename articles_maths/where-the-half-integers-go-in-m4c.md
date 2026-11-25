@@ -117,5 +117,5 @@ A half-integer eigenvalue is not a half-integer label. The distinction is the co
 - [The Slot and the Summand at $n=4$](the-slot-and-the-summand-at-n-4.html), for the identity $2j=n-1$.
 - [The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$](the-minimal-left-ideals-of-m4c.html), for the ideal.
 - [The Four Weights of the Module and the Half Angle at $n=4$](the-four-weights-of-the-module-and-the-half-angle-at-n-4.html), for the weights.
-- [Where the Half-Integers Go in the Biquaternion Algebra](where-the-half-integers-go-in-the-biquaternion-algebra.html), for the row at order two.
+- [Where the Half-Integers Go in the Biquaternion Algebra](where-the-half-integers-go-in-m4c.html), for the row at order two.
 - [Why the Conjugation Labels Are Integer at $n=4$](why-the-conjugation-labels-are-integer-at-n-4.html), for the argument from the difference of weights.

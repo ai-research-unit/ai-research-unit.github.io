@@ -135,5 +135,5 @@ At order $n$ the multiplicity of the weight $m$ is $n-|m|$, the total is $n^{2}$
 - [The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$](the-clebsch-gordan-decomposition-of-m4c.html), for the tensor rule and the Casimir.
 - [The Four Weights of the Module and the Half Angle at $n=4$](the-four-weights-of-the-module-and-the-half-angle-at-n-4.html), for the weights of the module.
 - [The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$](the-intersection-table-of-the-carriers-with-the-two-halves-at-n-4.html), for the structure the weights do not see.
-- [The Spin Decomposition of the Biquaternion Algebra](the-spin-decomposition-of-the-biquaternion-algebra.html), for the row at order two.
+- [The Spin Decomposition of the Biquaternion Algebra](the-spin-decomposition-of-m4c.html), for the row at order two.
 - [Which Spin Lives in Which Reading at $n=4$](which-spin-lives-in-which-reading-at-n-4.html), for the labels under other groups.

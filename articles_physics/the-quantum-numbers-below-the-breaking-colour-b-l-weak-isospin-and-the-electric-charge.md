@@ -110,7 +110,7 @@ $$
 
 **6.3 The warning.** An accidental charge has no reason to survive a change of content, and a model that relies on one is relying on the absence of a term rather than on a symmetry. $B-L$ is not accidental here — it is gauged — and that is the difference that matters for the proton.
 
-**6.4 The flavour charges.** The generation numbers are accidental in the same sense, and their violation is the Yukawa sector's business: [The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html).
+**6.4 The flavour charges.** The generation numbers are accidental in the same sense, and their violation is the Yukawa sector's business: [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html).
 
 ## The Anomalous Combination
 

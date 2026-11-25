@@ -260,5 +260,5 @@ An index is not a sector. The whole economy of the construction is that the weak
 - [The Weak Force Born as a Side Effect: A Condensate Index, Five Ranks From Three](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). The construction this article supplies the grammar for.
 - [The Death of the Mega Strong Force](the-death-of-the-mega-strong-force-the-id-condensate-and-the-six-carriers-it-eats.html). The surviving and dying pieces, computed.
 - [What the Sextet Cannot Do: The Charge Theorem That Rules Out the Recomposition](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html). The second and third closures.
-- [The Commutation Table of the Twenty-One Generators: 441 Entries, 164 Nonzero](the-commutation-table-of-the-twenty-one-generators-441-entries-164-nonzero-and-six-rules.html). The brackets that the closure dimensions are read from.
+- [The Commutation Table of the Fifteen Generators: 441 Entries, 164 Nonzero](the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html). The brackets that the closure dimensions are read from.
 - [$\mathfrak{su}(4)$ as $\mathfrak{so}(4)$ and Nine More](../articles_internal/structures/structure-SU4-SO4-relations.html). The involution behind the twelve-and-nine split.

@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This article classifies nothing. It states one hypothesis about why the fermions come in three copies, and what that hypothesis does and does not explain. The classification of one generation is finished elsewhere, in [The Fermions of One Generation](classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html). That article names the sixteen cells, the twenty-one bosons and the twelve surviving scalars, and it says nothing about flavour. The separation is deliberate: the classification states a structure, flavour states a spectrum, and a nomenclature that absorbs both stops being a nomenclature.
+This article classifies nothing. It states one hypothesis about why the fermions come in three copies, and what that hypothesis does and does not explain. The classification of one generation is finished elsewhere, in [The Fermions of One Generation](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). That article names the sixteen cells, the twenty-one bosons and the twelve surviving scalars, and it says nothing about flavour. The separation is deliberate: the classification states a structure, flavour states a spectrum, and a nomenclature that absorbs both stops being a nomenclature.
 
 The hypothesis is that there are no elementary particles, only fields and their levels of combined excitation. Flavour 1 is the ground level, flavour 2 the first combined level, and flavour 3 the second. The ladder has three rungs: the three copies are the whole of it, and there is no fourth.
 
@@ -14,15 +14,15 @@ The verdict can be given first. The ladder fails if its rungs are counted in mas
 
 ## Flavour Is a Level, Not a Charge
 
-The claim rests on a fact the classification article established. The fermions of one generation form a module of the algebra, and the tripling is a tensor product with a space on which the algebra acts trivially:
+The claim rests on a fact the classification article established. The fermions of one sector form a module $S$ of the algebra, and a copy index of dimension $n$ multiplies it with the algebra acting trivially on the index:
 
 $$
-\mathbf{16}\;\longrightarrow\;\mathbf{16}\otimes\mathbb C^{3},
+S\;\longrightarrow\;S\otimes\mathbb C^{n},
 \qquad
-\tilde Q\cdot(Ξ_{\mathrm{wfn}}\otimes f)=(\tilde Q\cdotΞ_{\mathrm{wfn}})\otimes f .
+\tilde Q\cdot(\Xi\otimes f)=(\tilde Q\cdot\Xi)\otimes f .
 $$
 
-Every operator the model builds from the group is therefore the same operator on every rung, $Q\otimes\mathbb 1_3$ and $T_3\otimes\mathbb 1_3$. No measurement of charge, colour, weak isospin or $B-L$ can distinguish one rung from another. Flavour cannot be a charge, and it must therefore be a quantity a spectrum produces: an energy, a mass, a level spacing.
+Every operator the model builds from the group is therefore the same operator on every rung, $O\otimes\mathbb 1_{n}$. **In this model $S$ is the sixteen and $n=2$; the ladder's $n=3$ is the successor's, and the hypothesis below is about the successor.** No measurement of charge, colour, weak isospin or $B-L$ can distinguish one rung from another. Flavour cannot be a charge, and it must therefore be a quantity a spectrum produces: an energy, a mass, a level spacing.
 
 There is a second reason to expect the rungs of a tower to be ordered rather than equivalent. A level decays only if a lower level exists with the same quantum numbers and enough phase space. Rung 1 is the bottom of its tower, so there is no lower rung to fall to, and it is stable by conservation rather than by accident. This is why $e$, $u$, $d$ and $\xi_{\mathrm{neu},e}$ sit at the top of their rows in the classification article: they are the ground states, and nothing beneath them carries their charges. No new dynamics is needed to stabilise rung 1, and none is claimed.
 
@@ -260,9 +260,9 @@ The letter $\rho$ carries the mass ratio in this article and is given the subscr
 ## Further Reading
 
 - [An Introduction to Flavour: Mass, Lifetime, Decay Pattern, the Three Handles](an-introduction-to-flavour.html). The phenomena this article theorises, with no theory of them.
-- [The Fermions of One Generation](classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html). One generation, sixteen cells, three grids, and no flavour.
+- [The Fermions of One Generation](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). One generation, sixteen cells, three grids, and no flavour.
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). Why the algebra does not count them.
-- [The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
+- [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The misalignment between the flavour basis and the mass basis.
-- [Lepton Flavour in the Four-Colours Model: Nothing Turns the Lepton, and One Generation Matrix Decides the Channels](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html). The operator's chiral structure, and the question of the generation matrix that the mass sector leaves open.
-- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The frame whose module the ladder multiplies.
+- [Lepton Flavour in the $\mathrm{SU}(4)$ Model: Nothing Turns the Lepton, and the Matrix That Would Have To](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The operator's chiral structure, and the question of the generation matrix that the mass sector leaves open.
+- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The frame whose module the ladder multiplies.

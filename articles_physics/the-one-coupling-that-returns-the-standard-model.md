@@ -125,7 +125,7 @@ $$
 | $3.73\times10^{-5}$ J | $0.730$ | $4.7\times10^{-12}$ | at the limit |
 | $4.81\times10^{-5}$ J | $0.718$ | $1.7\times10^{-12}$ | allowed, margin $2.8$ |
 
-The table takes $|U_{de}U_{s\imath}|=1$, the largest value; a smaller entry multiplies every rate by its fourth power and lowers the bound by its square root, and the identity branch gives zero at every mass. The bound is $M_X\gtrsim3.69\times10^{-5}$ J for that largest value and under that assumption, and it is a band of a factor of two rather than an order of magnitude, because the rate carries the fourth power of the mass. This is the only number in the model that a search can contradict, and it is a coupling's number: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$. The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are structural and are in [Lepton Flavour in the Four-Colours Model](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html); the substitution that turns the channel into a mass bound is what this section adds.
+The table takes $|U_{de}U_{s\imath}|=1$, the largest value; a smaller entry multiplies every rate by its fourth power and lowers the bound by its square root, and the identity branch gives zero at every mass. The bound is $M_X\gtrsim3.69\times10^{-5}$ J for that largest value and under that assumption, and it is a band of a factor of two rather than an order of magnitude, because the rate carries the fourth power of the mass. This is the only number in the model that a search can contradict, and it is a coupling's number: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$. The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are structural and are in [Lepton Flavour in the $\mathrm{SU}(4)$ Model](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html); the substitution that turns the channel into a mass bound is what this section adds.
 
 ## The Boundary Condition, and Why It Fails
 
@@ -281,7 +281,7 @@ The Yukawa sector answers the same question by counting. The one-bidoublet condi
 
 ## Further Reading
 
-- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The group, the sixteen, the chain and the declarations, with no coupling value.
+- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The group, the sixteen, the chain and the declarations, with no coupling value.
 - [The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). The chain as three stabilisers, and the dimension budget that fixes the count of states.
 - [The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators](the-weinberg-angle-and-the-three-neutral-states.html). The angle as a ratio, and the neutral current written symbolically.
 - [The Scalar Sector of the Four Colours Left–Right Model: Twenty-Four Real Components, Twelve Eaten, Twelve Surviving](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). The multiplet list and the states, with the mass ratios referred here.

@@ -148,7 +148,7 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 
 **7.1 The algebra and the module.** $\mathfrak{su}(2)_L$ and $\mathfrak{su}(2)_R$ are isomorphic; the sectors are not. Every statement that treats the two as interchangeable is a statement about the algebra alone and is silent about the physics.
 
-**7.2 Posited and derived.** Colour is posited, the weak factors are read off the rotors, hypercharge and charge are derived from the two. Mixing these three provenances is the commonest error in reading the model, and the corpus's own summary of it is [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html).
+**7.2 Posited and derived.** Colour is posited, the weak factors are read off the rotors, hypercharge and charge are derived from the two. Mixing these three provenances is the commonest error in reading the model, and the corpus's own summary of it is [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html).
 
 **7.3 $\mathfrak u(1)$ as a factor and $\mathfrak u(1)$ as a direction.** $B-L$ is a factor between $M_C$ and $M_R$. $Y$ and $Q$ are never factors: they are directions in a product. A coupling can be assigned to a factor; a direction's coupling is a combination of the factors'.
 

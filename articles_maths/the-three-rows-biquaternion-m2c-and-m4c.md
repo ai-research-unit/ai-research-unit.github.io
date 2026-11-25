@@ -123,4 +123,4 @@ The kernel of the map to the special unitary group is the centre in both rows, a
 - [The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$](the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html), for the third row.
 - [The Law of the Module and the Chain of Carriers at Every $n$](the-law-of-the-module-and-the-chain-of-carriers.html), for the general statement.
 - [The Four Carrier Lists of One Algebra at $n=4$](the-four-carrier-lists-of-one-algebra-at-n-4.html), for the readings.
-- [The Spin Zero Carrier of the Biquaternion Algebra](the-spin-zero-carrier-of-the-biquaternion-algebra.html), for the scalar carrier at order two.
+- [The Spin Zero Carrier of the Biquaternion Algebra](the-spin-zero-carrier-of-m4c.html), for the scalar carrier at order two.

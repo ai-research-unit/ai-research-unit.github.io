@@ -140,7 +140,7 @@ $$
 | The Breaking Chain | the chain, the dimensions, the ranks | one paragraph: where the weak factors come from |
 | The Order of the Breaking | the nesting and $M_C\ge M_R\ge M_W$ | no |
 | The Unbroken Subgroup | the nine and the twelve | one paragraph, the same one |
-| Where the Twenty-One Generators Go | the ledger of three readings | no |
+| Where the Fifteen Generators Go | the ledger of three readings | no |
 | The Adjoint Mass Matrix of the Fifteen | $32v^{2}$ and $0$ | no |
 | The Adjoint Mass Matrix as the Square of the Roots | the same, as a double commutator | no |
 | The Leptoquarks | the mass, the bound, the diquark fork | no |

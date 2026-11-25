@@ -22,7 +22,7 @@ $$
 
 **The division of labour with the entry-by-entry article.** [The Adjoint Mass Matrix of the Fifteen](the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html) computes all $225$ entries, states the commutator lemma that produces them, and separates the artefact that a recomputation of a weak mass produces. This article states the operator behind that computation, derives the spectrum from it, and reads the kernel as a Lie-algebra statement. The numbers must agree, and the checks confirm that they do.
 
-**The root language, and one caution.** A root of a compact Cartan element $H=i\operatorname{diag}(\ldots)$ is imaginary — the values $\pm i,\pm2i,\pm3i$ of [The Rotors of the Twenty-One Generators](the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). A root of a Hermitian vacuum $\Phi_0=vD$ is real, because $D$ is Hermitian and not anti-Hermitian. The mass is the square of the real root, and there is no contradiction: the vacuum is in the Hermitian half of $\mathfrak{sl}_4$, which is where a symmetry-breaking direction lives.
+**The root language, and one caution.** A root of a compact Cartan element $H=i\operatorname{diag}(\ldots)$ is imaginary — the values $\pm i,\pm2i,\pm3i$ of [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). A root of a Hermitian vacuum $\Phi_0=vD$ is real, because $D$ is Hermitian and not anti-Hermitian. The mass is the square of the real root, and there is no contradiction: the vacuum is in the Hermitian half of $\mathfrak{sl}_4$, which is where a symmetry-breaking direction lives.
 
 ## The Identity
 
@@ -170,7 +170,7 @@ Twelve recomputations, on the quartet ordered $(t,x,y,z)$, with $D=\operatorname
 ## Further Reading
 
 - [The Adjoint Mass Matrix of the Fifteen: One Number per Plane, $32v^2$ on Six and Zero on Nine](the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html). The same matrix computed entry by entry, all $225$ entries, the commutator lemma, and the artefact of a weak-mass recomputation.
-- [The Rotors of the Twenty-One Generators in the Four Colours Left–Right Model](the-rotors-of-the-twenty-one-generators-in-the-four-colours-left-right-model-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). The roots of a compact Cartan element, imaginary, and why a root vector is outside the algebra.
+- [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). The roots of a compact Cartan element, imaginary, and why a root vector is outside the algebra.
 - [The Unbroken Subgroup of the Four Colours Left–Right Model: Nine Massless Generators, Twelve That Acquire Mass](the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html). The same nine read as a group rather than as a matrix.
 - [The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). What happens to the nine after the first breaking.
 - [The Cartan Subalgebra, the Roots and the Three Real Forms](the-cartan-subalgebra-the-roots-and-the-three-real-forms.html). The root language, for the Lorentz algebra, where the same complexification question is settled.

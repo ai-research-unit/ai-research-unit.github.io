@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Two conditions pick out the generators: anti-Hermitian and traceless. The carrier has moved up one level. A generator is now an operator $K$ on the biquaternion algebra, the carrier of the derivation is the sixteen-dimensional space of operators $\operatorname{End}(\mathbb{B})$, and the fifteen parameters of $\mathfrak{su}(4)$ are fifteen directions in which an operator can be turned. Of the fifteen, three come from the algebra itself, the three inner derivations of the previous level, and twelve come from outside.**
+**Two conditions pick out the generators: anti-Hermitian and traceless. The carrier has moved up one level. A generator is now an operator $K$ on the biquaternion algebra, the carrier of the derivation is the sixteen-dimensional space of operators $\operatorname{End}(\mathbb{B})$, and the fifteen parameters of $\mathfrak{su}(4)$ are fifteen generators in which an operator can be turned. Of the fifteen, three come from the algebra itself, the three inner derivations of the previous level, and twelve come from outside.**
 
 The operator is $S\mapsto KS-SK$, anti-Hermitian for the Hilbert–Schmidt form on the sixteen-dimensional carrier, and its exponential is the conjugation by the rotor $U=e^{K}\in\mathrm{SU}(4)$ acting on operators. This is the same object as in the matrix article, with the same fifteen generators; what the operator frame adds is the reading of the carrier as the sixteen products of the algebra, and with it the split of the fifteen into the three that the algebra supplies and the twelve that it does not.
 

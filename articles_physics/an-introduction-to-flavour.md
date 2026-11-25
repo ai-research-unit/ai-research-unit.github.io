@@ -6,6 +6,8 @@
 
 The classification of one generation is a closed list. Sixteen cells, one name per cell, one charge per row, and no room left for a question. The question arrives the moment a second copy is written beside the first, because the copy is identical in every column but one: the mass.
 
+**A warning before the reader starts, because the vocabulary is the successor's.** This model has a two-valued copy index and no generation label: **its sixteen fields are eight, counted twice, and the copy index is the weak-doublet slot.** The three-column table below is measured data and belongs to the successor; **what this article establishes is why no gauge measurement could ever explain the columns, which is a statement about the group and holds in either frame.**
+
 This article is about that second copy and the third. It asks what distinguishes a generation from its neighbours, and it gets exactly three answers. Charge, colour, weak isospin and $B-L$ are the same in all three columns, so they cannot distinguish anything. Mass differs, lifetime differs, and the decay pattern differs. Those three differences are the whole of flavour, and the first task is to show that they are not three independent things.
 
 The order of the article follows the order of the argument. *Three Words, Used Precisely* fixes the vocabulary. *Why the Index Is Inert* shows why no gauge measurement can see the generation index at all, which is the structural fact the rest depends on. *The Sixteen Rows* and 4 draw the table and separate the six independent masses from the eighteen entries that colour and chirality multiply them into. *Mass: the Column the Model Does Not Compute*, 6 and 7 take the three handles one at a time. *How Each Handle Is Seen* says what each handle looks like in a detector. *The One Sharp Prediction: Sameness* and 10 record the one sharp prediction the model makes in this sector and the one place where a flavour label is measured to change.
@@ -26,31 +28,37 @@ The distinction between the first two is the whole content of *The One Sharp Pre
 
 ## Why the Index Is Inert
 
-The fermions of one generation form the module $\mathbf{16}$. Three generations are the tensor product of that module with a three-dimensional space on which the algebra acts trivially:
+**The theorem first, and it is one line of algebra.** Let the fermions of one sector be the module $S$ of the gauge group, and let a copy index of dimension $n$ multiply it:
 
 $$
-\mathbf{16}\;\longrightarrow\;\mathbf{16}\otimes\mathbb C^{3},
+S\;\longrightarrow\;S\otimes\mathbb C^{n},
 \qquad
-\tilde Q\cdot(Ξ_{\mathrm{wfn}}\otimes f)=(\tilde Q\cdotΞ_{\mathrm{wfn}})\otimes f .
+\tilde Q\cdot(\Xi\otimes f)=(\tilde Q\cdot\Xi)\otimes f .
 $$
 
-Every operator the model builds from the gauge group is therefore of the form $O\otimes\mathbb 1_3$. Written out in the flavour space,
+**Every operator the model builds from the gauge group is therefore $O\otimes\mathbb 1_{n}$**, and the operators that commute with the whole algebra are all of $M_{n}(\mathbb C)$. **The index factor is the commutant, and nothing in the algebra selects a direction inside it.**
+
+**In this model $S$ is the sixteen and $n=2$.** The copy index is the weak-doublet slot, the algebra is $\mathfrak{su}(4)$, and
 
 $$
-Q\otimes\mathbb 1_3=\begin{pmatrix}q&0&0\\0&q&0\\0&0&q\end{pmatrix},
+Q\otimes\mathbb 1_{2}=\begin{pmatrix}q&0\\0&q\end{pmatrix},
 \qquad
-T_{3L}\otimes\mathbb 1_3=\begin{pmatrix}t&0&0\\0&t&0\\0&0&t\end{pmatrix}.
+\bigl[X\otimes\mathbb 1_{2},\,\mathbb 1_{4}\otimes M\bigr]=0\ \ \text{for every }M .
 $$
 
-A matrix proportional to the identity commutes with everything, so the operators that commute with the entire algebra are all of $M_3(\mathbb C)$. The generation factor is the commutant, and nothing in the algebra selects a direction inside it.
+**The copy index carries a global $\mathrm{U}(2)$ that the gauge sector cannot see**, which is the statement [the vertex article](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html) proves as a commutation relation.
 
-Three consequences follow, and they organise everything else in this article.
+**Three consequences follow, and they organise everything else in this article.**
 
-No gauge measurement distinguishes the columns. A charge measurement returns $q$ three times. This is why the tripling is invisible to every experiment that measures a coupling, and why flavour had to be discovered by weighing particles rather than by counting charges.
+**No gauge measurement distinguishes the two copies.** A charge measurement returns $q$ twice, and the copies are distinguished only by mass. **That is the structural fact the whole of flavour rests on**, and here it is visible in a $2\times2$ matrix.
 
-No neutral gauge boson changes the label at tree level. A gauge vertex is the unit on the flavour index in the gauge basis, and a neutral current joins two fields with the same mass matrix, so the rotation cancels as $X^{\dagger}X=1$. A vertex that joins two different sectors does not cancel: the $W$ leaves $X_u^{\dagger}X_d$, the CKM, and a leptoquark leaves $X_d^{\dagger}X_e$. So the flavour-changing processes are the charged-current ones, the leptoquark ones, and the loops. The absence of the neutral ones has a name, GIM, and it is an identity following from $VV^{\dagger}=1$ rather than a dynamical accident.
+**No gauge boson changes the index at tree level.** A gauge vertex is $\mathbb 1_{n}$ on the index, so a vertex that joins two different sectors is the product of two different rotations, $X^{\dagger}Y$, and only a vertex that changes the sector can leave a misalignment. **In this model there is no such vertex at all**, because no generator carries $\alpha$; the misalignment exists only in the successor, where a charged current joins two doublet slots.
 
-The only free object in the sector is the Yukawa matrix. Since no generator can distinguish the columns, the entire difference between them must sit in the one place the algebra does not constrain. At the renormalisable level the only gauge-invariant object that can tell the columns apart is the Yukawa coupling, which needs the scalar to be invariant at all. *Mass: the Column the Model Does Not Compute* counts what that place contains.
+**The only free object in the sector is the Yukawa matrix.** Since no generator can distinguish the copies, the difference between them must sit where the algebra does not constrain — [the Yukawa article](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html) is that place, and it holds two numbers.
+
+**What the lemma does not give, and the honest sentence.** The measured flavour data are a *three*-column table, and **this model has a two-valued index and no generation label**: the three columns are the successor's, and every number below is data. **The lemma is quoted because it is the reason no gauge measurement can ever explain them**, not because it produces them.
+
+**The old form of this section, and why it was wrong here.** It wrote $\mathbf{16}\otimes\mathbb C^{3}$ and $T_{3L}\otimes\mathbb 1_{3}$. **Both belong to the successor**: the $\mathbf{16}$ is not a representation of $\mathfrak{su}(4)$, and $T_{3L}$ is not one of the fifteen. **The theorem survives the rewriting, and the symbols do not.**
 
 ## The Sixteen Rows
 
@@ -75,7 +83,7 @@ The classification article's two octets stack into sixteen rows, and each genera
 | $15$ | $u^{b}_{R}$ | $+\tfrac23$ | up, blue | $3.850\times10^{-30}$ | stable | charm, blue | $2.264\times10^{-27}$ | $1.03\times10^{-12}$ | top, blue | $3.079\times10^{-25}$ | $5.0\times10^{-25}$ |
 | $16$ | $d^{b}_{R}$ | $-\tfrac13$ | down, blue | $8.325\times10^{-30}$ | stable | strange, blue | $1.665\times10^{-28}$ | $8.98\times10^{-11}$ | bottom, blue | $7.452\times10^{-27}$ | $1.52\times10^{-12}$ |
 
-Four readings of this table are facts about the model rather than facts about the data.
+Four readings of this table are facts about the field content rather than facts about the measurements.
 
 The charge column does not change across a row. That is *Why the Index Is Inert*, read off a table. Every row carries one charge for all three generations.
 
@@ -83,9 +91,9 @@ The name, mass and lifetime columns do not change between a row and its colour c
 
 The same columns do not change between a chiral pair. Rows 2 and 10 carry one number twice, because a mass is a property of the Dirac particle and not of a chirality.
 
-So the sixteen rows carry four distinct masses per generation, and twelve distinct masses in the whole table: nine electrically charged fermion masses and three neutrino masses. That is the entire flavour content of the model, and it is what the three handles below have to explain.
+So the sixteen rows carry four distinct masses per generation, and twelve distinct masses in the whole table: nine electrically charged fermion masses and three neutrino masses. **That is the entire flavour content of the measured table**, and it is what the three handles below have to explain. **This model supplies none of the twelve numbers**, and the one it does supply, $m_{\ell}=3m_{q}$, is wrong by a factor $27$ in [the Yukawa article](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html).
 
-**The rows name particles, and the masses are the particles'.** Charge conjugation does not add a row: the antiparticle of a field is a conjugate mode of that same field, with the same mass, the opposite $Q$, the opposite $B-L$ and conjugate colour, and the charges are listed in [The Fermions of One Generation](classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html), §*The Antiparticle Quantum Numbers*. So the sixteen rows are the whole of the matter and the antiparticles add no mass, no lifetime and no branching ratio. **Antiparticles are not a fourth handle.** They are the same three handles with the signs of the charges reversed, which is why they are mentioned here once and not tabulated twice.
+**The rows name particles, and the masses are the particles'.** Charge conjugation does not add a row: the antiparticle of a field is a conjugate mode of that same field, with the same mass, the opposite $Q$, the opposite $B-L$ and conjugate colour, and the charges are listed in [The Fermions of One Generation](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html), §*The Antiparticle Quantum Numbers*. So the sixteen rows are the whole of the matter and the antiparticles add no mass, no lifetime and no branching ratio. **Antiparticles are not a fourth handle.** They are the same three handles with the signs of the charges reversed, which is why they are mentioned here once and not tabulated twice.
 
 The neutrino rows are the ones that are not numbers. A light neutrino mass is bounded and not measured, $m_\beta<8.02\times10^{-37}$ kg from tritium decay (the 2024 KATRIN limit) and $\sum m_{\xi_{\mathrm{neu}}}<2.14\times10^{-37}$ kg from cosmology, so the entries read stable and the oscillation is treated separately in *The One Exception: Oscillation*. The bound applies to the light eigenstates only. The right-handed row is the one that carries no bound at all: in the model's spectrum $\xi_{\mathrm{neu},R}$ is a gauge singlet, its mass is not constrained by tritium decay, and the seesaw of *Mass: the Column the Model Does Not Compute* places it at a scale that is not written anywhere in this table.
 
@@ -95,7 +103,7 @@ Read the table by column instead of by row and the tripling appears as three dif
 
 | handle | what it is | is it independent? |
 |---|---|---|
-| mass | the eigenvalues of the Yukawa matrix | yes, one arbitrary $3\times3$ |
+| mass | the eigenvalues of the Yukawa matrix (successor: $3\times3$; this model: $2\times2$) | yes, one arbitrary matrix |
 | lifetime | the inverse width | no, a function of the mass |
 | decay pattern | which channels are open | no, a function of the mass |
 
@@ -248,7 +256,7 @@ No mixing angle and no phase is derived. Nine of the eighteen real parameters of
 
 Flavour-changing neutral currents of the neutral gauge bosons are absent at tree level. That is a prediction rather than a gap, and its test is the LEP table of *The One Sharp Prediction: Sameness*. A leptoquark exchange is not one of them: it carries colour and charge, and the tree-level kaon channel is its business.
 
-One thing the model does not settle, kept separate from the four. The leptoquarks carry one coupling for every generation, so in the gauge basis their vertex has no generation index. Whether that survives diagonalisation is a question about the Yukawa sector and not about the gauge sector: one bidoublet gives $M_d=M_e$, one matrix, and no generation change at all, while a second fermion-mass contribution splits the two matrices and leaves a mixing matrix the frame does not write. The corpus therefore does not know whether charged-lepton flavour is violated, and it says so in [Lepton Flavour in the Four-Colours Model](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html). That is the opposite of the mass problem: the model cannot say why the masses differ, and it can say that the bosons do not care that they do.
+One thing the model does not settle, kept separate from the four. The leptoquarks carry one coupling for every generation, so in the gauge basis their vertex has no generation index. Whether that survives diagonalisation is a question about the Yukawa sector and not about the gauge sector: this model has one Yukawa matrix, so its two sectors are aligned and no generation change exists at all, while a successor with a second matrix would leave a mixing matrix the corpus does not write. **The model therefore cannot say whether charged-lepton flavour is violated, and it says so in [Lepton Flavour in the $\mathrm{SU}(4)$ Model](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html).** That is the opposite of the mass problem: the model cannot say why the masses differ, and it can say that the bosons do not care that they do.
 
 ## Checks
 
@@ -274,11 +282,11 @@ Every number below was recomputed from the values in *The Sixteen Rows* before i
 
 ## Further Reading
 
-- [The Fermions of One Generation](classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html). The sixteen cells of one generation, named, and no flavour.
+- [The Fermions of One Generation](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The sixteen cells of one generation, named, and no flavour.
 - [The Excitation Ladder Theory of Flavour](the-excitation-ladder-theory-of-flavour.html). The companion article, which takes these three handles and asks whether the columns are levels of one tower.
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). Why the algebra does not count them.
-- [The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
+- [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The misalignment between the flavour basis and the mass basis.
-- [Lepton Flavour in the Four-Colours Model: Nothing Turns the Lepton, and One Generation Matrix Decides the Channels](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html). The flavour-blind coupling, its mixing matrix and its predicted pattern.
+- [Lepton Flavour in the $\mathrm{SU}(4)$ Model: Nothing Turns the Lepton, and the Matrix That Would Have To](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The flavour-blind coupling, its mixing matrix and its predicted pattern.
 
 External data. The masses and lifetimes in *The Sixteen Rows* are the Particle Data Group values, Review of Particle Physics, and the $Z$ widths of *The One Sharp Prediction: Sameness* are the LEP line-shape results. Both are time-dependent compilations, so the numbers here should be quoted with a date when they are carried forward.

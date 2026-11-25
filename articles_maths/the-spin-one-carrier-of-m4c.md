@@ -134,5 +134,5 @@ The carrier is the only one that is a Lie algebra, and its spectrum has the fixe
 - [The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$](the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html), for the copy.
 - [The Spin-One Carrier and the Trace Form at $n=4$](the-spin-one-carrier-and-the-trace-form-at-n-4.html), for the form.
 - [The Spin-One Carrier and the Rank Strata at $n=4$](the-spin-one-carrier-and-the-rank-strata-at-n-4.html), for the strata.
-- [The Spin-One Carrier of the Biquaternion Algebra](the-spin-one-carrier-of-the-biquaternion-algebra.html), for the row at order two.
+- [The Spin-One Carrier of the Biquaternion Algebra](the-spin-one-carrier-of-m4c.html), for the row at order two.
 - [The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$](the-clebsch-gordan-decomposition-of-m4c.html), for the carrier.

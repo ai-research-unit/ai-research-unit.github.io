@@ -129,5 +129,5 @@ The table is not the parity rule: the parity rule splits the squares of the modu
 - [Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$](neither-half-is-invariant-the-cartan-element-at-n-4.html), for the failure of the splitting.
 - [The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$](the-parity-rule-the-two-squares-of-the-module-at-n-4.html), for the splitting of the module.
 - [The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$](the-clebsch-gordan-decomposition-of-m4c.html), for the carriers and the projectors.
-- [The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$](the-intersection-table-where-each-carrier-meets-sym-and-lambda.html), for the row at order two.
+- [The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$](the-intersection-table-of-the-carriers-with-the-two-halves.html), for the row at order two.
 - [Which Spin Lives in Which Reading at $n=4$](which-spin-lives-in-which-reading-at-n-4.html), for the labels in the other readings.

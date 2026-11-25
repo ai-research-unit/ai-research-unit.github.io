@@ -132,5 +132,5 @@ It occurs in all four readings of the algebra, it is the only one-dimensional pi
 - [The Spin-Zero Carrier and the Determinant at $n=4$](the-spin-zero-carrier-and-the-determinant-at-n-4.html), for the determinant.
 - [The Spin-Zero Carrier and the Spectral Strata at $n=4$](the-spin-zero-carrier-and-the-spectral-strata-at-n-4.html), for the spectrum.
 - [The Spin-Zero Carrier and the Rank Strata at $n=4$](the-spin-zero-carrier-and-the-rank-strata-at-n-4.html), for the rank.
-- [The Spin-Zero Carrier of the Biquaternion Algebra](the-spin-zero-carrier-of-the-biquaternion-algebra.html), for the row at order two.
+- [The Spin-Zero Carrier of the Biquaternion Algebra](the-spin-zero-carrier-of-m4c.html), for the row at order two.
 - [Which Spin Lives in Which Reading at $n=4$](which-spin-lives-in-which-reading-at-n-4.html), for the four readings.

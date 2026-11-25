@@ -271,6 +271,6 @@ Minimal electromagnetic coupling adds a field-strength–spin term with the same
 - [The Dirac Operator on a Manifold](../articles_maths/the-dirac-operator-on-a-manifold.html), for the Lichnerowicz formula, its sign conventions, and the vanishing theorem it implies.
 - [Spin Geometry](../articles_maths/spin-geometry.html), for the Clifford bundle, the spin connection, and the Clifford contraction that fixes the coefficient.
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](../articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html), for the Dirac–Kähler comparison and its algebraic reading.
-- [Conceptual Conventions](../articles_internal/conceptual-conventions.html), for the pointwise character of every trace in the framework.
+- [Algebra and Element Conventions](algebra-and-element-conventions.html), for the pointwise character of every trace in the framework.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Lichnerowicz formula and the Weitzenböck decomposition.
 - André Lichnerowicz, "Spineurs harmoniques," *Comptes Rendus de l'Académie des Sciences* **257** (1963), 7–9, for the formula and its coefficient.

@@ -33,9 +33,9 @@ $$
 
 **What the article establishes.** The content of the sixteen at each stage of the chain; the split $\mathbf4\to\mathbf3\oplus\mathbf1$ and its reading as "three colours and a lepton line"; the assignment of $T_{3R}$ within the right doublet; hypercharge derived from $B-L$ and $T_{3R}$; the charge table with its two vanishing sums; why there is exactly one quark doublet and one lepton doublet per generation; and the anomaly arithmetic that makes the content consistent.
 
-**What the article does not establish.** No mass and no mixing. The Yukawa sector, the one-matrix proportionality $M_d\propto M_e$ and its failure are [The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html). The generation count is [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html).
+**What the article does not establish.** No mass and no mixing. The Yukawa sector, the one-matrix proportionality $M_d\propto M_e$ and its failure are [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). The generation count is [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html).
 
-**Where the content is owned.** The sixteen states, their $CP$ closure and the antiparticle tables are [Classification of the Fermions in the Four Colours Left–Right Model: One Generation, Sixteen Fields, Thirty-Two States, Closed Under $CP$ and Not Under $C$](classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html). The hypercharge assignment as an anomaly problem is [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). This article owns the reading of the content after the breaking.
+**Where the content is owned.** The sixteen states, their $CP$ closure and the antiparticle tables are [Classification of the Fermions in the $\mathrm{SU}(4)$ Model: Sixteen Weyl Fields, Closed Under $C$ and Under $CP$](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The hypercharge assignment as an anomaly problem is [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). This article owns the reading of the content after the breaking.
 
 ## The Sixteen and the Two Blocks
 
@@ -178,7 +178,7 @@ Multiplicities: $6+3+3+2+1+1=16$.
 
 **Four silences.** Each is a different article.
 
-**8.1 Masses.** Every entry in the table is a quantum number. None is a mass. The masses come from Yukawa couplings, and the minimal content's single bidoublet forces $M_d\propto M_e$: [The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html).
+**8.1 Masses.** Every entry in the table is a quantum number. None is a mass. The masses come from Yukawa couplings, and the minimal content's single bidoublet forces $M_d\propto M_e$: [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html).
 
 **8.2 Mixing.** The table is diagonal in flavour by construction: one generation. The CKM and PMNS matrices are [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) and [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html).
 
@@ -238,9 +238,9 @@ Multiplicities: $6+3+3+2+1+1=16$.
 
 ## Further Reading
 
-- [Classification of the Fermions in the Four Colours Left–Right Model: One Generation, Sixteen Fields, Thirty-Two States, Closed Under $CP$ and Not Under $C$](classification-of-the-fermions-in-the-four-colours-left-right-model-one-generation-sixteen-fields-thirty-two-states-closed-under-cp-and-not-under-c.html). The states, the antiparticle tables and the $CP$ closure.
+- [Classification of the Fermions in the $\mathrm{SU}(4)$ Model: Sixteen Weyl Fields, Closed Under $C$ and Under $CP$](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The states, the antiparticle tables and the $CP$ closure.
 - [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). The same assignments read as an anomaly problem, with the three rays and the one that survives.
 - [Charge Quantisation from the Fourth Colour: One Trace, One Third](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). Why the trace fixes the eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$.
-- [The Yukawa Sector of the Four Colours Left–Right Model: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-of-the-four-colours-left-right-model-fermion-mass-matrices-and-their-diagonalisation.html). What the content cannot say about masses.
+- [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). What the content cannot say about masses.
 - [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-the-four-colours-left-right-model.html). The anomaly arithmetic in full.
 - [The Order of the Breaking in the Four Colours Left–Right Model: Nested Vacua and the Scale Order $M_C\ge M_R\ge M_W$](the-order-of-the-breaking-in-the-four-colours-left-right-model-nested-vacua-and-the-scale-order.html). Why $T_{3R}$ is a label only below $M_R$ and $B-L$ only below $M_C$.

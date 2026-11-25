@@ -175,6 +175,6 @@ The count reconciles: sixteen frame functions, six local rotor parameters, ten m
 - [The Curved Dirac Operator and Its Square](the-curved-dirac-operator-and-its-square.html), for the one place where the missing measure bites.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the material sector, its form, and the identification of its null cone with the zero divisors.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the singular set that the metric's null cone reproduces point by point.
-- [Conceptual Conventions](../articles_internal/conceptual-conventions.html), for the rule that the sector fixes the signs and for the status of a frame as an unpreferred concept.
+- [Algebra and Element Conventions](algebra-and-element-conventions.html), for the rule that the sector fixes the signs and for the status of a frame as an unpreferred concept.
 - Robert M. Wald, *General Relativity* (Chicago, 1984), for Sylvester's law of inertia, orthonormal frames, and the tetrad formulation.
 - Charles W. Misner, Kip S. Thorne, and John A. Wheeler, *Gravitation* (Freeman, 1973), for the vierbein as the object that carries a metric between coordinate and orthonormal descriptions.

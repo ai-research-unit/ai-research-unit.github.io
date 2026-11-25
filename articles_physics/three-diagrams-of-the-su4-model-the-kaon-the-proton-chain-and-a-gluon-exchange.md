@@ -1,8 +1,8 @@
-# __Three Diagrams of the Four Colours Model: The Kaon, the Proton Chain, and a Gluon Exchange__
+# __Three Diagrams of the $\mathrm{SU}(4)$ Model: The Kaon, the Proton Chain, and a Gluon Exchange__
 
 ## Introduction
 
-**Three diagrams, and each is chosen to exercise one part of the rules that the corpus had not previously applied.** [The rules article](the-feynman-rules-of-the-four-colours-left-right-model-the-vertices-of-the-twenty-one-and-the-sixteen.html) prints the vertices; this article puts three of them on external legs and carries each to a number, a power, or a colour factor.
+**Three diagrams, and each is chosen to exercise one part of the rules that the corpus had not previously applied.** [The rules article](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html) prints the vertices; this article puts three of them on external legs and carries each to a number, a power, or a colour factor.
 
 - **$K_L\to\mu e$ at tree level.** Two leptoquark vertices and one heavy propagator. **It produces a number**, and the number is $3.5\times10^{-12}$ against a measured limit of $4.7\times10^{-12}$ — under one assumption that the article names and does not hide.
 - **The proton chain.** Three leptoquark vertices and no diquark. **It produces a power**, $M_X^{-10}$ against the $M_X^{-4}$ of a dimension-six operator, and the power is why the gauge sector is not bounded by proton decay.
@@ -17,18 +17,16 @@
 **The vertices, restated so the diagrams can be read without turning back.**
 
 $$
-\Gamma^{(4)}_{a,\imath}=-ig_{4}\gamma_{\imath}\bigl(t_{a}\otimes\mathbb{1}_{2}\bigr),
-\qquad
-\Gamma^{(L)}_{i,\imath}=-ig_{L}\gamma_{\imath}\bigl(\mathbb{1}_{4}\otimes\tau_{i}\bigr),
+\Gamma_{a,\imath}=-ig_{4}\gamma_{\imath}\bigl(t_{a}\otimes\mathbb{1}_{2}\bigr),
 $$
 
-**with $t_{a}$ the normalised generator of [the rules article](the-feynman-rules-of-the-four-colours-left-right-model-the-vertices-of-the-twenty-one-and-the-sixteen.html)'s normalisation section, and the heavy propagator in the limit $k^{2}\ll M_X^{2}$**
+**with $t_{a}$ the normalised generator of [the rules article](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html)'s normalisation section, and the heavy propagator in the limit $k^{2}\ll M_X^{2}$**
 $$
 \frac{i}{k^{2}-M_X^{2}}\ \longrightarrow\ \frac{-i}{M_X^{2}} .
 $$
 **Every diagram below is at energies far below $M_X$, so every leptoquark propagator is a constant and every diagram is a contact term.** That is the reason a two-vertex diagram and a three-vertex diagram differ by a power of $M_X$ and by nothing else.
 
-**The couplings.** $g_4$ at a leptoquark vertex, $g_{s}$ for the gluon, and no relation between them. **The corpus leaves the three couplings symbolic and independent**, so whether $g_s$ equals the restriction of $g_4$ to the corner block is a question the frame does not answer; this article keeps the two symbols distinct and never uses one to compute the other.
+**The coupling, and there is one.** $g_4$ at every vertex, the gluon's included: **the gluon vertex is $g_4$ restricted to the corner block, so the question whether $g_s$ equals $g_4$ is not a question here.** The value stays symbolic, and no diagram below needs it: the kaon rate carries $g_4^{4}$, the proton power carries none, and the colour factor is a ratio.
 
 ## Diagram One: $K_L\to\mu e$
 
@@ -53,7 +51,7 @@ $$
 i\mathcal{M}=i\,\frac{g_4^{2}}{2M_X^{2}}\Bigl[(\bar q\,\gamma^{\imath}P_L\ell)(\bar q'\,\gamma_{\imath}P_L\ell')+(L\to R)\Bigr],
 $$
 
-**with the factor $\tfrac12$ carried in the corpus's operator; it is not a colour sum**, and the colour sum was disposed of in the paragraph above. The $V-A$ at each vertex is the model's: the left-handed block couples $P_{L}$, the right-handed block $P_{R}$, and both appear because both chiralities of the mixed plane exist. **The operator is the one the corpus prints in [the lepton-flavour article](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html), and the $L\to R$ line is not an afterthought**: it is the second of the two planes of the pair.
+**with the factor $\tfrac12$ carried in the corpus's operator; it is not a colour sum**, and the colour sum was disposed of in the paragraph above. The $V-A$ at each vertex is the model's: the left-handed block couples $P_{L}$, the right-handed block $P_{R}$, and both appear because both chiralities of the mixed plane exist. **The operator is the one the corpus prints in [the lepton-flavour article](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html), and the $L\to R$ line is not an afterthought**: it is the second of the two planes of the pair.
 
 **Why $K_L$ and not $K_S$.** The kaon is a pseudoscalar, so only the axial part of a $V-A$ current contributes, and the axial matrix element is odd under $K^{0}\leftrightarrow\bar K^{0}$. **With $K_S$ the symmetric combination and $K_L$ the odd one, the odd combination survives and the even one cancels**: the frame predicts $K_L\to\mu e$ and forbids $K_S\to\mu e$ at leading order, with a residue at the $|\epsilon_K|^{2}$ level near $10^{-20}$. **That is a selection rule of the algebra plus one fact about a kaon, and neither is adjustable.**
 
@@ -128,7 +126,7 @@ $$
 
 **Why it is $\tfrac43$ and not $3$ or $\tfrac12$.** The factor attached to an external quark line that emits a gluon is $C_F$, the quadratic Casimir of the triplet; $3$ is the number of colours, which appears when a colour sum is made and none is made here; $\tfrac12$ is $T_R$, the normalisation of the trace, which appears when the gluon is the external state. **A reader who mixes the three gets a diagram wrong by a factor of $\tfrac83$ or $\tfrac{2}{3}$, and the rule is: $C_F$ per external quark line, $T_R$ per quark loop, $N_c$ per colour sum.**
 
-**What the diagram does not test.** It does not test the mixed band, because no leptoquark appears; it does not test the weak sector, because no $\tau$ appears. **It tests exactly one thing: that the corner of $\mathrm{SU}(4)$ is an $\mathrm{SU}(3)$ with the standard Casimir**, and its value is a check on the normalisation rather than on the group.
+**What the diagram does not test.** It does not test the mixed band, because no leptoquark appears, and **there is no weak sector to leave untested**: the model has no $\tau$, and the copy index is not gauged. **It tests exactly one thing: that the corner of $\mathrm{SU}(4)$ is an $\mathrm{SU}(3)$ with the standard Casimir**, and its value is a check on the normalisation rather than on the group.
 
 **The comparison that the three diagrams make together.**
 
@@ -142,11 +140,11 @@ $$
 
 ## What the Three Diagrams Do Not Establish
 
-**They do not establish that the fourth colour exists.** Every number above is computed from a field content that was declared, and the kaon rate's normalisation is an assumption about a matrix. **A reader who wants evidence has to go to the direct searches for the $W_R$ and to the $K_L\to\mu e$ measurement, and the corpus's position is that the measurement is the decisive one.**
+**They do not establish that the fourth colour exists.** Every number above is computed from a field content that was declared, and the kaon rate's normalisation is an assumption about a matrix. **A reader who wants evidence has to go to the $K_L\to\mu e$ measurement and to the leptoquark searches, and the corpus's position is that the measurement is the decisive one**: the model fixes the operator and not the mixing, so only a measurement can decide.
 
-**They do not establish a mass.** $M_X$ enters every formula as a free parameter. The corpus's leptoquark mass is $M_X^{2}=\tfrac12g_4^{2}v_R^{2}$, so $M_X=\sqrt2\,M_{W_R}$ only under the extra assumption $g_4=g_R$; the kaon number uses the corner of parameter space as well.
+**They do not establish a mass.** $M_X$ enters every formula as a free parameter, and the model supplies one value for it: $M_X^{2}=8g_4^{2}v^{2}$ from the adjoint mass matrix, **the only mass scale the model has** (the array-level value, before normalisation, is $32v^{2}$). A reader who wants $v$ has to take it from outside, and the kaon number uses the corner of parameter space as well.
 
-**They do not establish a hierarchy.** The three diagrams have three different colour behaviours and one coupling each, and no relation among $g_4$, $g_s$ and $g_L$ is used.
+**They do not establish a hierarchy, because there is none to establish.** The three diagrams have three different colour behaviours and one coupling, and **a single coupling cannot produce a ratio of couplings**: the old frame's $g_4$, $g_s$ and $g_L$ are one symbol here, and the mismatch they used to carry is a property of the successor.
 
 **And they do not close the loop.** Every one is tree level. **The muon channels need a loop, a chirality flip and a GIM sum, and the corpus states the result without computing the coefficient**, which is the honest ceiling of the sector at present.
 
@@ -184,10 +182,10 @@ $$
 
 | Symbol | Meaning |
 | --- | --- |
-| $M_X$ | The leptoquark mass, $=\sqrt2\,M_{W_R}$ in the minimal vacuum |
+| $M_X$ | The leptoquark mass, $M_X^{2}=8g_4^{2}v^{2}$ from the adjoint mass matrix |
 | $U_{qe}$ | The generation matrix entries, not written by the frame |
 | $f_K$ | The kaon decay constant, an imported hadronic number |
-| $P_{L}$, $P_{R}$ | The chiral projectors of the two blocks |
+| $P_{L}$, $P_{R}$ | The chiral projectors of the two halves, quartet and conjugate |
 | $C_F$ | $\tfrac43$, the quadratic Casimir of the triplet |
 | $T_R$ | $\tfrac12$, the trace normalisation |
 | $N_c$ | $3$, the number of colours |
@@ -199,11 +197,11 @@ $$
 
 ## Further Reading
 
-- [The Feynman Rules of the Four Colours Left–Right Model](the-feynman-rules-of-the-four-colours-left-right-model-the-vertices-of-the-twenty-one-and-the-sixteen.html). The vertices these three diagrams use, and the normalisation that produced $C_F$.
+- [The Feynman Rules of the $\mathrm{SU}(4)$ Model](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The vertices these three diagrams use, and the normalisation that produced $C_F$.
 - [The Fermion–Gauge Vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The matrices behind the two leptoquark vertices, with their charges.
-- [Lepton Flavour in the Four-Colours Model: Nothing Turns the Lepton](lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html). The operator, the rate, the $K_L$–$K_S$ selection and the assumption about $U$ in full.
+- [Lepton Flavour in the $\mathrm{SU}(4)$ Model: Nothing Turns the Lepton](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The operator, the rate, the $K_L$–$K_S$ selection and the assumption about $U$ in full.
 - [The Leptoquarks of the Four Colours Left–Right Model](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html). The six states, the $B-L=\pm\tfrac43$, and the dimension-nine argument.
 - [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The $C_F$, $T_R$, $N_c$ bookkeeping in its own setting.
 - [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html). The contraction that turns a vertex into an amplitude.
 - [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html). The heavy limit used at every leptoquark line.
-- [The Commutation Table of the Twenty-One Generators](the-commutation-table-of-the-twenty-one-generators-441-entries-164-nonzero-and-six-rules.html). The closure of the colour block that the gluon diagram relies on.
+- [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html). The closure of the colour block that the gluon diagram relies on.

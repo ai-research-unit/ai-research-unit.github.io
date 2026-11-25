@@ -1,22 +1,20 @@
-# __Where the Twenty-One Generators Go: One Ledger, Three Readings, and the One Abelian Factor__
+# __Where the Fifteen Generators Go: One Ledger, Three Readings, and the One Abelian Factor__
 
 ## Introduction
 
-**The question.** Twenty-one generators, three factors, three breakings. Which generator goes where, and what happens to each one?
+**The question.** Fifteen generators, one group, one breaking. Which generator goes where, and what happens to each one?
 
 **The answer has three parts, and the first is arithmetic.**
 
 $$
-21=\underbrace{15}_{\mathrm{SU}(4)}+\underbrace{3}_{\mathrm{SU}(2)_L}+\underbrace{3}_{\mathrm{SU}(2)_R},
-\qquad
 15=\underbrace{8}_{\mathfrak{su}(3)}+\underbrace{1}_{\mathbb R\,iD}+\underbrace{6}_{\mathfrak m}.
 $$
 
-The first equation is the frame. The second is the reason the frame can break to the Standard Model: of the fifteen, eight are the gluons, one is the $B-L$ boson and six are leptoquarks.
+**That single equation is the frame, and it is also the reason the frame can break to the Standard Model**: of the fifteen, eight are the gluons, one is the $B-L$ boson and six are leptoquarks. **There is no second equation, because there is no second factor.**
 
-**The names are the ones the boson articles use, and this article renames nothing.** The corner array is $iD=i\operatorname{diag}(-3,1,1,1)$ and its boson is $B'$; the six off-diagonal colour arrays are $A_{xy},iS_{xy}$ and their four relatives, printed as $g_{1},g_{2},g_{4},g_{5},g_{6},g_{7}$; the two colour diagonals are $d_{2},d_{3}$, printed as $T^{c}_{3},T^{c}_{8}$; the six mixed planes are $A_{ta},iS_{ta}$ for $a=x,y,z$, printed as $\bar X^{a},X^{a}$; the six weak arrays are $T^{L}_{a},T^{R}_{a}$, printed as the two $W$ triples. **The atoms are the same atoms, so the counts can be checked against the matrices entry by entry.**
+**The names are the ones the boson articles use, and this article renames nothing.** **The six arrays $T^{L}_{a}$, $T^{R}_{a}$ appear once below, in a row that says what they are not.** The corner array is $iD=i\operatorname{diag}(-3,1,1,1)$ and its boson is $B'$; the six off-diagonal colour arrays are $A_{xy},iS_{xy}$ and their four relatives, printed as $g_{1},g_{2},g_{4},g_{5},g_{6},g_{7}$; the two colour diagonals are $d_{2},d_{3}$, printed as $T^{c}_{3},T^{c}_{8}$; the six mixed planes are $A_{ta},iS_{ta}$ for $a=x,y,z$, printed as $\bar X^{a},X^{a}$; the six weak arrays are $T^{L}_{a},T^{R}_{a}$, printed as the two $W$ triples. **The atoms are the same atoms, so the counts can be checked against the matrices entry by entry.**
 
-**What this article does not do.** It computes no matrix, chooses no vacuum and derives no mass. The arrays are printed one at a time in [The 21 AXF Matrices of the Bosons in Detail](the-21-axf-matrices-of-the-bosons-in-detail.html) and built in [Construction of the AXF Matrices](construction-of-the-axf-matrices-of-the-twenty-one-generators.html); the chain is in [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html); the states are tabulated in [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). **This article reads one ledger, three ways, and then answers the one question the ledger raises and cannot settle: which abelian factor survives.**
+**What this article does not do.** It computes no matrix, chooses no vacuum and derives no mass. The arrays are printed one at a time in [The Fifteen AXF Matrices of the Bosons in Detail](the-15-axf-matrices-of-the-bosons-in-detail.html) and built in [Construction of the AXF Matrices](construction-of-the-axf-matrices-of-the-fifteen-generators.html); the chain is in [The Breaking Chain](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html); the states are tabulated in [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **This article reads one ledger, three ways, and then answers the one question the ledger raises and cannot settle: which abelian factor survives.**
 
 **The three readings, named before they are used.** The first sorts the fifteen by what each does to the time line $\mathbb C e_t$ and finds $8+1+6$ — a sort that uses no structure beyond the split the matrix already has. The second grades the sextet by $D$ and finds two triples, which is the particle–antiparticle pairing of the six. The third reads the same nine as a maximal compact subalgebra, and there the leptoquark count becomes a compactness count. **Each reading is a different question asked of the same table**, and none of them introduces a new object.
 
@@ -31,18 +29,17 @@ The first equation is the frame. The second is the reason the frame can break to
 | gluons | $8$ | $A_{xy},iS_{xy},A_{xz},iS_{xz},A_{yz},iS_{yz},d_{2},d_{3}$ — the detail article's $g_{1},g_{2},g_{4},g_{5},g_{6},g_{7},T^{c}_{3},T^{c}_{8}$ | $\mathfrak{su}(3)$, the subalgebra that fixes the unit line | massless and unbroken at every scale | none |
 | the $B-L$ boson, $B'$ | $1$ | $iD$, the corner | the Cartan direction of $\mathfrak{su}(4)$ that commutes with colour | one of the two ingredients of hypercharge | none of its own |
 | leptoquarks | $6$ | $A_{ta}$ and $iS_{ta}$, $a=x,y,z$ — the detail article's $\bar X^{a},X^{a}$ | the off-diagonal block $\mathfrak m$, mixing $\mathbb C e_t$ with $B_V$ | massive, colour triplet, charge $\pm\tfrac23$ | $M_{C}$ |
-| weak isospin | $3$ | $T^{L}_{x},T^{L}_{y},T^{L}_{z}$ | $\mathrm{SU}(2)_L$ | $W^{\pm}_{L}$ massive, $W^{3}_{L}$ mixed into the photon and the $Z$ | $M_{W}$ |
-| right-handed weak | $3$ | $T^{R}_{x},T^{R}_{y},T^{R}_{z}$ | $\mathrm{SU}(2)_R$ | $W^{\pm}_{R}$ and $Z_R$ massive, and the neutral direction supplies $T_{3R}$ to hypercharge | $M_{R}$ |
+| the six $\mathfrak{so}(4)$ arrays | not generators | $T^{L}_{a}$, $T^{R}_{a}$, $a=x,y,z$ | $\operatorname{span}\{A_{ab}\}$, rank $2$ of $3$ | **no particle**: half heavy, half massless | none |
 
-The rows sum to $8+1+6+3+3=21$, and the array column lists each of the twenty-one exactly once: **an entry in the table and a subsection of the detail article are the same object.**
+The generator rows sum to $8+1+6=15$, and the array column lists each of the fifteen exactly once: **an entry in the table and a subsection of the detail article are the same object.** **The fourth row is not a fourth class of generator.** It is the six arrays the corpus prints in a redundant basis, and its entry in the last-but-one column is the reason it is not a row of the spectrum.
 
-**The classes are disjoint as generators of the product group, and not as operators on the carrier.** Each row is a class of generators and not of states — the three of $\mathrm{SU}(2)_R$ yield two massive states and one direction that is not a state at all but an ingredient. But $L_{\vec e_a}$ and $R_{\vec e_a}$ are traceless and skew-adjoint for $\operatorname{tr}(X^\dagger Y)$, hence elements of $\mathfrak{su}(4)$, and they are independent, so the six weak generators lie *inside* the fifteen. The carrier therefore supplies
+**The classes are disjoint as generators, and the fourth row is not one of them.** Each row is a class of generators and not of states — the three of $\mathrm{SU}(2)_R$ yield two massive states and one direction that is not a state at all but an ingredient. But $L_{\vec e_a}$ and $R_{\vec e_a}$ are traceless and skew-adjoint for $\operatorname{tr}(X^\dagger Y)$, hence elements of $\mathfrak{su}(4)$, and they are independent, so the six weak generators lie *inside* the fifteen. The carrier therefore supplies
 
 $$
 \dim_{\mathbb R}\mathfrak u(4)=16=15+1 ,
 $$
 
-and the twenty-one exists only on the formal copy the group acts on — which is why the copy is declared rather than found. Said as arithmetic: $15+6=21$ double counts, and $15+6-6=15$ is the algebra. [The Five Counts of the Twenty-One](the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions.html) takes that distinction as its subject and counts the same objects five ways.
+and the twenty-one exists only on the formal copy the group acts on — which is why the copy is declared rather than found. Said as arithmetic: $15+6=21$ double counts, and $15+6-6=15$ is the algebra. [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html) takes that distinction as its subject and counts the same objects five ways.
 
 **And the overlap is not marginal.** Projecting a weak generator onto the block $8+1$ and onto the coset $\mathfrak m$, in the same norm, gives $\sqrt2$ and $\sqrt2$ against a total of $2$: **each weak generator is an equal superposition of a colour direction and a leptoquark direction.** So neither block equals a weak generator, and a reader who takes the six of $\mathfrak m$ for the six of the two $\mathrm{SU}(2)$'s has conflated two different sixes that are not even orthogonal.
 
@@ -70,19 +67,19 @@ $8+1+6=15$. The $8+1=9$ is the stabiliser of the line, and it is a subgroup; the
 
 > **What this does and does not mean.** Leptoquarks and Lorentz boosts are both "directions that mix the time line with a space line", and that is a statement about the *shape* of the generators in the same matrix algebra. It is not a statement that the leptoquarks are boosts. A boost is a spacetime transformation and the six are internal gauge directions; the coincidence is that $\mathrm{SU}(4)$ acts on four coordinates which the algebra also reads as time and space, and the physics identification of those four coordinates with colour is (A), not a theorem. The count is a bookkeeping fact about one carrier used twice.
 
-## Reading Two: the Six as Two Triples, Graded by $D$
+## Reading Two: the Sextet as Two Triples, Graded by $D$
 
-**The six split three and three, and the split is the corner's own.** With $iD=i\operatorname{diag}(-3,1,1,1)$ and $E_{jk}$ the matrix unit in the order $(t,x,y,z)$,
+**The sextet splits three and three, and the split is the corner's own.** With $iD=i\operatorname{diag}(-3,1,1,1)$ and $E_{jk}$ the matrix unit in the order $(t,x,y,z)$,
 
 $$
 [iD,E_{ti}]=-4i\,E_{ti},\qquad [iD,E_{it}]=+4i\,E_{it},
 $$
 
-so three of the six raise the line into a colour direction and carry $D=+4$, and three lower it back and carry $D=-4$. **This is not the $3+3$ of the weak pairs.** Both sixes split three and three, the sextet by the corner's grading and the weak set by the factor it comes from, and the two splits are of different sixes: the ledger's third row here, its last two rows there. Divided by three that is $B-L=\pm\tfrac43$ — the leptoquark charge of $\pm\tfrac23$ once the $\mathrm{SU}(2)_R$ half is added, which is the $\pm\tfrac23$ of the ledger.
+so three of the six raise the line into a colour direction and carry $D=+4$, and three lower it back and carry $D=-4$. **This is not the $3+3$ of the $\mathfrak{so}(4)$ arrays.** Both sixes split three and three — the sextet by the corner's grading, the real planes by self-duality — and the two splits are of different sixes: the ledger's third row here, its fourth row there. **The coincidence of the number is a coincidence of dimension and nothing more.** Divided by three that is $B-L=\pm\tfrac43$ — the leptoquark charge of $\pm\tfrac23$ once the $\mathrm{SU}(2)_R$ half is added, which is the $\pm\tfrac23$ of the ledger.
 
 **So the $3+3$ is not a relabelling of the sextet: it is the particle–antiparticle pairing, written in the corner's grading.** The detail article names the two halves $\bar X^{a}$ and $X^{a}$, assigns the real array $A_{ta}$ to the first and the imaginary array $iS_{ta}$ to the second, and states that the choice of which is the particle is a convention of the $i$ — [The Leptoquarks of the Four Colours Left–Right Model](the-leptoquarks-of-the-four-colours-left-right-model-six-states-one-bound-and-why-proton-decay-does-not-bite.html) owns the sector. **What is not a convention is the grading**: the two halves carry opposite $D$, so the corner distinguishes them whether or not anyone names them.
 
-**And the six leave a fingerprint on the weak pair.** Projecting $L_{\vec e_a}$ onto $\mathfrak m$ gives a norm of $\sqrt2$ out of $2$, and the projection of $R_{\vec e_a}$ onto $\mathfrak m$ is *the same vector*. Two consequences follow, and the second is the one worth keeping. First, $L_{\vec e_a}-R_{\vec e_a}$ has no leptoquark part at all — it is pure colour. Second, the six weak generators reach only a three-dimensional subspace of the six-dimensional $\mathfrak m$, so three leptoquark directions are not the leptoquark half of any weak generator. **That is why the ledger's last two rows cannot be read off the sextet.**
+**And the six composites leave a fingerprint on the sextet.** Projecting $L_{\vec e_a}$ onto $\mathfrak m$ gives a norm of $\sqrt2$ out of $2$, and the projection of $R_{\vec e_a}$ onto $\mathfrak m$ is *the same vector*. Two consequences follow. First, $L_{\vec e_a}-R_{\vec e_a}$ has no leptoquark part at all — it is pure colour. Second, **the two composites share their leptoquark half, which is exactly why they cannot be independent generators of the model**: the sextet is one six, and a redundant basis reads it twice. The six composites reach only a three-dimensional subspace of the six-dimensional $\mathfrak m$, so three leptoquark directions are not the leptoquark half of any weak generator. **That is why the ledger's last two rows cannot be read off the sextet.**
 
 ## Reading Three: the Same Nine as a Maximal Compact
 
@@ -125,7 +122,7 @@ one direction from $\mathrm{SU}(2)_R$ and one from $\mathrm{SU}(4)$, with a fixe
 
 So four surviving generators draw on five frame directions: three from $\mathrm{SU}(2)_L$, one from $\mathrm{SU}(2)_R$, one from $\mathrm{SU}(4)$. The surplus direction is not an error in the count. The two neutral raw directions span a plane; $Y$ is one direction in it; the orthogonal direction in the same plane is a physical state, the $Z_R$, which becomes massive at $M_R$. The step $5\to4$ is therefore the step in which one gauge boson acquires a mass, and it happens entirely inside that plane.
 
-**The next step is the same construction once more.** At the electroweak scale the two directions $W^3_L$ and $Y$ span a second plane; the photon is one direction in it and the $Z$ is the other. So the neutral sector is three fields in and three states out, of rank two, with one null direction. That count is a property of a sum of two rank-one matrices and holds for any couplings; [The Neutral Sector](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html) derives the null vector and the two masses, and [Classification of the Bosons](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html) states the same rank-two fact in the grid's language.
+**The next step is the same construction once more.** At the electroweak scale the two directions $W^3_L$ and $Y$ span a second plane; the photon is one direction in it and the $Z$ is the other. So the neutral sector is three fields in and three states out, of rank two, with one null direction. That count is a property of a sum of two rank-one matrices and holds for any couplings; [The Neutral Sector](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html) derives the null vector and the two masses, and [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) states the same rank-two fact in the grid's language.
 
 **Why the distinction has to be kept.** "The $\mathrm{U}(1)$ of $\mathrm{SU}(4)$" and "the $\mathrm{U}(1)$ of the Standard Model" name two different generators. The first is $B-L$, whose boson is the corner field $B'$. The second is $Y$, whose boson is a mixture. A reader who conflates them will expect the photon to be the $\mathrm{SU}(4)$ boson, and it is not: the photon is a mixture of all three neutral fields, and its coefficient on the $B-L$ direction is nonzero.
 
@@ -155,22 +152,23 @@ Twelve recomputations, at $\operatorname{tr}$ in the fundamental, the quartet or
 
 | claim | check | result |
 |---|---|---|
-| every array in the ledger once | the five rows against the twenty-one subsections | $21/21$, no repeat |
-| the generator ledger | $8+1+6+3+3$ | $21$ |
-| the ledger on the carrier | $\dim\mathfrak u(4)$ against $15+1$ | $16$, so the $21$ is on the copy |
+| every generator in the ledger once | the three rows against the fifteen subsections | $15/15$, no repeat |
+| the generator ledger | $8+1+6$ | $15$ |
+| the composite row | the six arrays against the fifteen | $0$ new directions |
+| the ledger on the carrier | $\dim\mathfrak u(4)$ against $16$ | $16$, so the fifteen is one short of the copy |
 | the overlap of the two sixes | block part against coset part of $L_{\vec e_a}$ | $\sqrt2$ and $\sqrt2$ of $2$, not orthogonal |
 | the shared leptoquark half | $L_{\vec e_a}$ against $R_{\vec e_a}$ on $\mathfrak m$ | the same vector; $L-R$ is pure colour |
 | the time-line sort | $8+1+6$ by action on $\mathbb C e_t$ | $15$, and $8+1$ is the stabiliser |
-| the $3+3$ of the six | $[iD,E_{it}]$ against $[iD,E_{ti}]$ | $+4i$ against $-4i$, so $B-L=\pm\tfrac43$ |
+| the $3+3$ of the sextet | $[iD,E_{it}]$ against $[iD,E_{ti}]$ | $+4i$ against $-4i$, so $B-L=\pm\tfrac43$ |
 | the two real forms | $\mathfrak{su}(4)$ against $\mathfrak{su}(1,3)$ | $15=9+6$ both, the six compact in one only |
 | the first misreading | $7$ of the $15$ against $8$ gluons | $7$ is not strong |
-| the second misreading | $3+3$ from the two $\mathrm{SU}(2)$'s | two different factors |
+| the second misreading | $3+3$ from two commuting $\mathfrak{su}(2)$'s | a subspace of the fifteen, not a factor |
 | the centraliser | $\mathfrak z_{\mathfrak{su}(3)}(\mathfrak{su}(4))$ | one-dimensional, spanned by $iD$ |
-| the electroweak count | $3$ from $\mathrm{SU}(2)_L$ plus $1$ mixed | $4$ from $5$ raw directions |
+| the composite's fate | $m^{2}$ of $T^{L}_{a}$ | $8v^{2}$, not a generator |
 
 ## Summary
 
-**The ledger.** $21=15+3+3$ and $15=8+1+6$. Eight of the fifteen are gluons, one is the $B-L$ boson $B'$, the corner array $iD$, six are leptoquarks. Three of the six weak generators are the weak isospin, three are the right-handed weak group. **The classes are disjoint as generators of the product, not as operators on the carrier**: the six weak generators lie inside the fifteen, so the carrier supplies $16=15+1$ and the twenty-one lives on the formal copy.
+**The ledger.** $15=8+1+6$. Eight of the fifteen are gluons, one is the $B-L$ boson $B'$, the corner array $iD$, six are leptoquarks. **The six $\mathfrak{so}(4)$ arrays are a redundant basis of the six real planes and not a class of generator**, and their row in the ledger says so. **The classes are disjoint as generators**: there is no second factor for them to sit in, and the carrier's spectrum is the fifteenupplies $16=15+1$ and the twenty-one lives on the formal copy.
 
 **The first reading.** Sorted by what it does to the time line $\mathbb C e_t$, the fifteen is $8$ (annihilate it) $+1$ (act on it as a phase) $+6$ (move it out). The nine are the stabiliser of the line; the seven that see the line are the six and the corner.
 
@@ -178,9 +176,9 @@ Twelve recomputations, at $\operatorname{tr}$ in the fundamental, the quartet or
 
 **The third reading.** The same nine are the maximal compact subalgebra of $\mathfrak{su}(1,3)$ as well as of $\mathfrak{su}(4)$; the six are compact in $\mathfrak{su}(4)$ and non-compact in the pseudo-unitary real form. The leptoquark count is a compactness count, and $\mathfrak{su}(4)$ and $\mathfrak{su}(1,3)$ differ on nothing else.
 
-**The abelian factor.** The breaking supplies $\mathrm{U}(1)_{B-L}$ and not $\mathrm{U}(1)_Y$. Hypercharge is a diagonal subgroup of $\mathrm{U}(1)_{B-L}\times\mathrm{U}(1)_{3R}$, so four electroweak generators draw on five frame directions and the fifth is the $Z_R$.
+**The abelian factor.** The breaking supplies $\mathrm{U}(1)_{B-L}$ and not $\mathrm{U}(1)_Y$. **Hypercharge is a diagonal subgroup of $\mathrm{U}(1)_{B-L}\times\mathrm{U}(1)_{3R}$, and that product is not a product of this model's factors**: it is a product of the model's one abelian direction with a direction the transition creates. Four electroweak generators draw on five raw directions, and the fifth is the $Z_R$ — **all of it downstream of this ledger.**
 
-**The bridge.** $B-L$ is the direction the $\mathrm{SU}(4)$ breaking leaves behind, and hypercharge is that direction combined with the neutral direction of $\mathrm{SU}(2)_R$. It is a bridge between symmetries, not between forces, and it is calibrated at both ends by the same sum: $+\tfrac13$ three times and $-1$ once.
+**The bridge.** $B-L$ is the direction the $\mathrm{SU}(4)$ breaking leaves behind, and hypercharge is that direction combined with a neutral direction the transition supplies. It is a bridge between symmetries, not between forces, and it is calibrated at both ends by the same sum: $+\tfrac13$ three times and $-1$ once.
 
 ## Summary of Notation
 
@@ -201,11 +199,11 @@ Twelve recomputations, at $\operatorname{tr}$ in the fundamental, the quartet or
 
 ## Further Reading
 
-- [The 21 AXF Matrices of the Bosons in Detail: Every Matrix, Every Boson, Its Entries, Its Spectrum and Its Fate](the-21-axf-matrices-of-the-bosons-in-detail.html). The twenty-one one at a time; every row of the ledger here is a subsection there.
-- [Classification of the Bosons in the Four Colours Left–Right Model: Twenty-Four Cells, Twenty-One Generators, Nine Massless and Twelve Massive](classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html). The three grids, the name in every cell, and the twenty-one states.
-- [The Five Counts of the Twenty-One](the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions.html). Cell, plane, array, generator, direction, and the map between the counts.
-- [Construction of the AXF Matrices of the Twenty-One Generators](construction-of-the-axf-matrices-of-the-twenty-one-generators.html). Where the three diagonal arrays are built from one sum and two differences.
-- [The Commutation Table of the Twenty-One Generators](the-commutation-table-of-the-twenty-one-generators-441-entries-164-nonzero-and-six-rules.html). Every bracket, which is how the classes here are proved closed.
+- [The Fifteen AXF Matrices of the Bosons in Detail: Every Matrix, Every Boson, Its Entries, Its Spectrum and Its Fate](the-15-axf-matrices-of-the-bosons-in-detail.html). The twenty-one one at a time; every row of the ledger here is a subsection there.
+- [Classification of the Bosons in the $\mathrm{SU}(4)$ Model: Sixteen Cells, Fifteen Generators, Nine Massless and Six Heavy](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The three grids, the name in every cell, and the twenty-one states.
+- [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html). Cell, plane, array, generator, direction, and the map between the counts.
+- [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). Where the three diagonal arrays are built from one sum and two differences.
+- [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-120-independent-80-nonzero-and-five-rules.html). Every bracket, which is how the classes here are proved closed.
 - [The Breaking Chain of the Four Colours Left–Right Model: One Flag, Three Stabilisers, Three Scales](the-breaking-chain-of-the-four-colours-left-right-model-one-flag-three-stabilisers-three-scales.html). The budget $21\to15\to12\to9$, the rank budget, and the spectra.
 - [The Unbroken Subgroup](the-unbroken-subgroup-of-the-four-colours-left-right-model-nine-massless-generators-twelve-that-acquire-mass.html). Why the kernel of the mass matrix is the stabiliser, which is the first reading in general form.
 - [The Neutral Sector](the-neutral-sector-of-the-four-colours-left-right-model-three-ingredients-rank-two-one-null-direction.html). Three ingredients, rank two, one null direction.

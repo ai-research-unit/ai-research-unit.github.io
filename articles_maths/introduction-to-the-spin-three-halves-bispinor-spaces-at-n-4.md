@@ -135,5 +135,5 @@ Fixing one factor of the pair gives the minimal left or right ideals, of dimensi
 - [The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$](the-minimal-left-ideals-of-m4c.html), for the module.
 - [Spinors and Dirac Spinors in $M_4(\mathbb{C})$](spinors-and-dirac-spinors-at-n-4.html), for the terminology.
 - [The Fierz–Kofink Identities and the Classification of Spinors at $n=4$](the-fierz-kofink-identities-at-n-4.html), for the identities.
-- [Introduction to the Spin-$\tfrac12$ Bispinor Spaces](introduction-to-the-spin-half-bispinor-spaces.html), for the row at order two.
+- [Introduction to the Spin-$\tfrac12$ Bispinor Spaces](the-spin-half-bispinor-spaces.html), for the row at order two.
 - [The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms](the-quaternionic-structure-of-the-module-at-n-4.html), for the self-duality.

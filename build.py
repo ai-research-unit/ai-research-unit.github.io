@@ -15,9 +15,10 @@ DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-uni
 # Old URLs kept alive after a rename: (deployed page, alias that copies it).
 # The pruner spares the aliases, and no sitemap lists them.
 LEGACY_COPIES = [
-    # The AXF construction article was retitled "Construction of ..."; the old URL
-    # serves the same page, whose content did not change.
-    ("articles_physics/construction-of-the-axf-matrices-of-the-twenty-one-generators.html",
+    # The AXF construction article was rewritten for the fifteen generators; the
+    # twenty-one-generator URL now serves the fifteen-generator page, so a retired
+    # address cannot outlive the model it described.
+    ("articles_physics/construction-of-the-axf-matrices-of-the-fifteen-generators.html",
      "articles_physics/the-axf-matrices-of-the-twenty-one-generators.html"),
     # The chain-and-spectrum and scalar-and-leptoquark articles were split in two.
     # Sources follow the two-section rename: an alias whose source was itself
@@ -28,11 +29,11 @@ LEGACY_COPIES = [
      "articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html"),
     # The classification article was split in two, bosons and fermions; the old
     # URL serves the boson article, which carries the group, the ledger and grids.
-    ("articles_physics/classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html",
+    ("articles_physics/classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html",
      "articles_physics/particle-classification-three-grids-one-name-in-every-cell.html"),
     # The boson-spectrum article was merged into the classification article; the
     # old URL serves the merged page, which now carries the fates and the mixing.
-    ("articles_physics/classification-of-the-bosons-in-the-four-colours-left-right-model-twenty-four-cells-twenty-one-generators-nine-massless-and-twelve-massive.html",
+    ("articles_physics/classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html",
      "articles_physics/the-twenty-one-gauge-bosons-nine-massless-twelve-massive.html"),
     ("articles_maths/the-spin-half-bispinors-and-n-norm-regularity-in-m2c.html",
      "articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html"),
@@ -102,9 +103,9 @@ LEGACY_COPIES = [
      "articles_maths/from-the-spin-of-the-rotor-to-the-spin-of-a-pair.html"),
     # The Four Colours Left–Right Model: the files are renamed, the old URLs
     # stay alive. Every retired address copies the same live page.
-    ("articles_physics/the-four-colours-left-right-model.html",
+    ("articles_physics/the-su4-model-four-colours-fifteen-generators-one-declaration.html",
      "articles_physics/the-pati-salam-model-in-the-biquaternion-framework.html"),
-    ("articles_physics/the-four-colours-left-right-model.html",
+    ("articles_physics/the-su4-model-four-colours-fifteen-generators-one-declaration.html",
      "articles_physics/the-fourth-colour-left-right-model.html"),
     ("articles_internal/the-coupling-sector-of-the-four-colours-model.html",
      "articles_internal/the-coupling-sector-of-the-fourth-colour-model.html"),
@@ -112,9 +113,9 @@ LEGACY_COPIES = [
      "articles_internal/internal-note-the-fourth-colour-left-right-model.html"),
     # Charged lepton flavour: the article states the open question, and the
     # retired addresses stay alive.
-    ("articles_physics/lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html",
+    ("articles_physics/lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html",
      "articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html"),
-    ("articles_physics/lepton-flavour-in-the-four-colours-model-nothing-turns-the-lepton.html",
+    ("articles_physics/lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html",
      "articles_physics/the-fourth-colour-lepton-one-operator-one-unknown-and-the-channels-that-cannot-see-it.html"),
     ("articles_maths/the-trace-form-and-its-indefinite-inertia.html",
      "articles_maths/the-trace-form-and-its-indefinite-signature.html"),

@@ -1,4 +1,4 @@
-# __Classification of the Bosons in the $\mathrm{SU}(4)$ Model: Sixteen Cells, Fifteen Directions, Nine Massless and Six Heavy__
+# __Classification of the Bosons in the $\mathrm{SU}(4)$ Model: Sixteen Cells, Fifteen Generators, Nine Massless and Six Heavy__
 
 ## Introduction
 
@@ -25,7 +25,7 @@ $$
 \;}
 $$
 
-**The model.** One model: **the $\mathrm{SU}(4)$ model**, set out in [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-four-colours-left-right-model.html). **The name is stated first because every name here belongs to that model and to nothing else.** It is not the Standard Model's particle list and not a general classification of everything the algebra could describe: **it is the boson content of one group, on one grid, with one declaration.**
+**The model.** One model: **the $\mathrm{SU}(4)$ model**, set out in [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). **The name is stated first because every name here belongs to that model and to nothing else.** It is not the Standard Model's particle list and not a general classification of everything the algebra could describe: **it is the boson content of one group, on one grid, with one declaration.**
 
 **What this article no longer contains, and why.** The previous version classified twenty-one generators on three grids: a $4\times4$ and two $2\times2$'s, $16+4+4=24$ cells and $24-3=21$ bosons, with nine massless and twelve massive including $W^{\pm}$, $W^{\pm}_{R}$, $Z$ and $Z_{R}$. **Those four particles are not in this model.** There is no $2\times2$ grid because there is no weak factor, and the neutral mixing that produces the photon needs two more neutral directions and a second vacuum. **The photon, the $Z$, the $W$'s and the $Z_R$ are fields of the successor**, and their classification is in the next section of the corpus. **This article classifies fifteen fields and it is complete when it has done so.**
 
@@ -139,7 +139,7 @@ $$
 
 where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which colour they carry. **The full matrix, its diagonal form and the eigenvalue count are [The Adjoint Mass Matrix of the Fifteen](the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html).
 
-## The Spectrum: Fifteen Directions, Fifteen Particles
+## The Spectrum: Fifteen Generators, Fifteen Particles
 
 **Fifteen cells hold generators; one of them is an ingredient in a mixture that has not happened yet; and the count closes.**
 
@@ -190,7 +190,7 @@ $$
 
 and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colour plane, so no single cell holds one of them.** They are half in the mixed band and half in the colour block.
 
-**What this costs the classification.** A reader who tries to place the six on the grid will place each of them twice, once in the mixed band and once in the colour block, **and will then find the band double-counted.** The grid classifies the fifteen directions in the basis where each direction has one home; **the six $\mathfrak{so}(4)$ arrays are a different basis of a six-dimensional subspace, and they have no cells.**
+**What this costs the classification.** A reader who tries to place the six on the grid will place each of them twice, once in the mixed band and once in the colour block, **and will then find the band double-counted.** The grid classifies the fifteen generators in the basis where each direction has one home; **the six $\mathfrak{so}(4)$ arrays are a different basis of a six-dimensional subspace, and they have no cells.**
 
 **What happens to them at the transition, and it is the decisive fact.** The condensate gives $32v^{2}$ to the three mixed planes and $0$ to the three colour planes, so **each of the six arrays is half heavy and half massless**:
 
@@ -200,7 +200,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 | $T^{R}_{x}$ | $A_{tx}$, $A_{yz}$ | $32v^{2}$, $0$ | no |
 | the other four | the same pattern | $32v^{2}$, $0$ | no |
 
-**A sum of a heavy and a massless state is a coherence, not a particle**, and that is why these six are absent from the spectrum table. **They are the six that the successor will name, and they are not six particles here.** The theorem is [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html); the reading is [The Real $\mathfrak{so}(4)$ Inside the Fifteen](the-four-colours-left-right-model.html).
+**A sum of a heavy and a massless state is a coherence, not a particle**, and that is why these six are absent from the spectrum table. **They are the six that the successor will name, and they are not six particles here.** The theorem is [What the Sextet Cannot Do](what-the-sextet-cannot-do-the-charge-theorem-that-rules-out-the-recomposition.html); the reading is [The Real $\mathfrak{so}(4)$ Inside the Fifteen](the-su4-model-four-colours-fifteen-generators-one-declaration.html).
 
 ## Where the Five Names of the Corner Come From
 
@@ -224,13 +224,13 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 
 | field | representation | real components | belongs to |
 | --- | --- | --- | --- |
-| $\Phi$ | quartet $\times$ copy index | $16$ | **this model**: it is what breaks $\mathrm{SU}(4)$ |
+| $\Phi$ | the Hermitian $4\times4$, $\mathbf{15}\oplus\mathbf1$ | $16$ | **this model**: it is what breaks $\mathrm{SU}(4)$ |
 | $H$ | the electroweak bidoublet | $8$ | the successor |
 | $\Sigma$ | the adjoint scalar, $(\mathbf{15},\mathbf2,\mathbf2)$ | $120$ | the successor, and not minimal |
 
-**Six of $\Phi$'s sixteen components are eaten by the sextet.** The condensate that breaks the group is a direction in $\Phi$, and the six leptoquarks that acquire $32v^{2}$ acquire it by eating the six components that point along their own planes. **An eaten component has no name of its own: it is the third polarisation of the boson that ate it**, which is why the eaten six reappear on the gauge grid and not in the scalar list.
+**Six of $\Phi$'s sixteen components are eaten by the sextet.** The condensate is $\langle\Phi\rangle=v\operatorname{diag}(-3,1,1,1)$ in the hermitean matrix, and the six leptoquarks that acquire $32v^{2}$ acquire it by eating the six components that point along their own planes. **The count is forced by the coset**: $15-9=6$, and a condensate in the fundamental would eat seven and leave no $B'$. **An eaten component has no name of its own: it is the third polarisation of the boson that ate it**, which is why the eaten six reappear on the gauge grid and not in the scalar list.
 
-**The other ten components of $\Phi$ survive here and are used downstream.** They are the ones the successor's Higgs sector is built from, and the count — twenty-four real components, twelve eaten, twelve surviving — is [The Scalar Sector of the Four Colours Left–Right Model](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html). **The corpus's one caveat about this sector is quoted there and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
+**The other ten components of $\Phi$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the hermitean matrix, and they are the ones the successor's Higgs sector is built from. **[The Scalar Sector](the-scalar-sector-of-the-four-colours-left-right-model-twenty-four-real-components-twelve-eaten-twelve-surviving.html) belongs to the old frame and counts its bidoublets, not this field.** **The corpus's one caveat about this sector is quoted there and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
 
 **The word to avoid is "the Higgs coupling".** This model leaves the gauge coupling symbolic and predicts none of it, fixes no scalar multiplet, and has no coupling claim in this sector to patch. **A sentence such as "the minimal sector gives $m_d=m_e$" imports the Pati–Salam literature's condition into a model whose ledger refuses it.**
 
@@ -329,9 +329,9 @@ Fifteen is not twenty-one. **The four extra particles of the old classification 
 
 ## Further Reading
 
-- [The $\mathrm{SU}(4)$ Model](the-four-colours-left-right-model.html). The group, the declaration, and the real $\mathfrak{so}(4)$ inside the fifteen.
-- [The Counts of the Fifteen](the-five-counts-of-the-twenty-one-twenty-four-cells-six-planes-twenty-one-arrays-fifteen-directions.html). The vocabulary: cell, pair, array, direction.
-- [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-twenty-one-generators.html). Every generator printed.
+- [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The group, the declaration, and the real $\mathfrak{so}(4)$ inside the fifteen.
+- [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html). The vocabulary: cell, pair, array, direction.
+- [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). Every generator printed.
 - [The Adjoint Mass Matrix of the Fifteen](the-adjoint-mass-matrix-of-the-fifteen-one-number-per-plane.html). Where $32v^{2}$ on six planes comes from.
 - [The Sextet Put Aside](the-sextet-put-aside-six-leptoquarks-above-m-c-and-why-they-are-not-seen.html). The six, their bound, and why they are heavy rather than gone.
 - [The Weak Force Born as a Side Effect](the-weak-force-born-as-a-side-effect-a-condensate-index-five-ranks-from-three.html). Where the four absent particles come from.
