@@ -1513,7 +1513,7 @@
 <a href="articles_physics/the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Gauge Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One</a>
 <!-- which algebra and which module each sector is built in once the chain has run, colour in $\mathrm{End}(\mathbb C^3)$ and the weak factor on the doublet lines, the address each residual algebra has in $\mathrm{End}_{\mathbb C}(\mathbb B)$, and what the reduction loses, so that the two sector sections open with the algebra they need already named. -->
 
-### The Strong Interaction
+### The Strong Force
 
 #### Generalities
 
@@ -1592,7 +1592,7 @@
 <a href="articles_physics/jets-the-qcd-cross-section-and-the-infrared-structure.html">Jets, the QCD Cross Section and the Infrared Structure</a>
 <!-- standard input, and the one article whose own perturbative terms are individually infinite. the ratio $R=3\sum Q_f^2[1+\alpha_s/\pi+\dots]$ as a staircase $2$, $10/3$, $11/3$, $5$ at the quark thresholds, with the corrections evaluated at 34 GeV and $M_Z$ and the point that $R$ is a blunt instrument — a four per cent correction makes a two per cent measurement a $\delta\alpha_s$ of $0.06$, and inverting $R=3.9$ against $R_0=11/3$ gives $0.20$ where the running demands $0.14$, so $R$ counts colour rather than measuring the strength; jets as definitions, with the fixed-cone versus sequential distinction and the generalised $k_T$ distance; the three-jet rate $\frac{2\alpha_sC_F}{\pi}\ln^2(1/y)$ tabulated at four resolutions up to $1.53$ at $y=0.02$, where a rate above one is not a rate and the truncation is invalid rather than imprecise; the soft ($dE/E$) and collinear ($d\theta/\theta$) divergences as the volume of the region where $n$ and $n+1$ partons are indistinguishable; Bloch--Nordsieck and KLN as the statement that a hard process is never observed in isolation, with the $+1$ in $1+\alpha_s/\pi$ identified as what is left after two infinities are subtracted; the splitting functions with their sum rules computed, $\int P_{qq}=0$ exactly, $\int zP_{qq}=-16/9$, $\int zP_{gq}=+16/9$, $\int P_{qg}=1/3$, and $\int z[P_{qq}+P_{gq}]=0$ to $10^{-16}$ as energy conservation that no one imposed; the eikonal and the double logarithm, $W=0.84$ at $M_Z$ with $Q_0=5$ GeV, so the expansion parameter is $\alpha_s\ln^2$ and is of order one; the Sudakov form factor with the two-jets fraction falling from $0.93$ at $40$ GeV to $0.43$ at $5$ GeV, and the table showing that improving one logarithm to $\ln(Q/\Lambda)$ moves the exponent from $0.84$ to $1.78$, a factor of two that is the size of the leading correction; the shower as that exponent plus a random number generator, ordered in angle for coherence; hadronisation at $0.5$ GeV$/Q$, ten per cent at $M_Z$ and seventy per cent at $14$ GeV; and infrared safety as the criterion that decides whether an observable has a perturbative expansion at all. -->
 
-### The Electroweak Interaction
+### The Electroweak Force
 
 #### Generalities
 
@@ -1679,9 +1679,9 @@
 <a href="articles_physics/the-lagrangian-and-the-w-and-z-bosons.html">The Lagrangian and the W and Z Bosons</a>
 <!-- two curvatures plus one scalar's covariant kinetic term and potential, with no mass term allowed; the variation giving the Yang–Mills equations with the scalar current as source, and the divergence condition that a hand-written mass would break; the mass matrix from the vacuum, $M_W=gv/2$ and $M_Z=M_W/\cos\theta_W$ as its nonzero eigenvalues and the photon as its zero eigenvalue; $\rho=1$ from one doublet of isospin $\tfrac12$; the four Gauss laws and the five physical modes; the electromagnetic current as the unbroken combination; and the boundary, the $\mathrm{U}(1)$ line exact and the $\mathrm{SU}(2)$ lines transcribed. -->
 
-<a href="articles_physics/the-weak-interaction-in-biquaternionic-form.html">The Weak Interaction in Biquaternionic Form</a>
+<a href="articles_physics/the-weak-force-in-biquaternionic-form.html">The Weak Force in Biquaternionic Form</a>
 <!-- the process, the four-fermion contact and its accuracy; the $V-A$ current; the vector and axial vertices as cells; the chiral vertex as a single cell with informational left multiplier and Peirce-nilpotent right multiplier; the square identity $(\Gamma_\mu(g_V-g_A\chi))^2=g_{\mu\mu}(g_V^2-g_A^2)I_4$ and the criterion that the vertex is null exactly at $|g_A|=|g_V|$; parity reversing the axial weight $g_A\mapsto-g_A$, with maximal violation at $|g_A|=|g_V|$; the neutral current off the null point at $|g_A/g_V|=13.3$; two adjacent weak vertices vanishing for every index pair, which is the chirality flip the pion ratio measures; the muon lifetime and the pion ratio recomputed; what the coupling, the left-only selection, the generations and the mixing import. -->
-<a href="articles_physics/the-lagrangian-and-the-weak-interaction.html">The Lagrangian and the Weak Interaction</a>
+<a href="articles_physics/the-lagrangian-and-the-weak-force.html">The Lagrangian and the Weak Force</a>
 <!-- the charged-current action and its variation, solving for $W$ and expanding the propagator at $q^2/M_W^2$, which is an exact Gaussian elimination followed by a momentum expansion; the contact $-\tfrac{4G_F}{\sqrt2}J^+J^-$ with $G_F/\sqrt2=g^2/8M_W^2$; the $V-A$ vertex as the algebra's chirality projection and therefore exact, the mass and the coupling imported; the contact's expansion scale, its unitarity bound $4\pi M_W/g$ and the window between them; the current as the ladder Noether current with its axial anomaly; and the boundary, the vertex carried and the mass not. -->
 
 <a href="articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism in Biquaternionic Form</a>

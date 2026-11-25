@@ -1,8 +1,8 @@
-# __The Lagrangian and the Weak Interaction__
+# __The Lagrangian and the Weak Force__
 
 ## Introduction
 
-This article writes the charged-current weak interaction as an extremum of an action, and shows that eliminating the $W$ from that action produces the four-fermion contact with the coefficient $G_F$ fixed. It is the action-first companion of *The Weak Interaction in Biquaternionic Form*, which states the currents and the rates; this article asks what functional produces the $V-A$ vertex, and why the contact approximation is as good as it is.
+This article writes the charged-current weak interaction as an extremum of an action, and shows that eliminating the $W$ from that action produces the four-fermion contact with the coefficient $G_F$ fixed. It is the action-first companion of *The Weak Force in Biquaternionic Form*, which states the currents and the rates; this article asks what functional produces the $V-A$ vertex, and why the contact approximation is as good as it is.
 
 Its place in the sector. The action here is the charged-current term of the sector's functional, [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html), with the $W$ already massive and the neutral sector dropped. The elimination below is exact only in that truncated setting, and the article says where.
 
@@ -191,7 +191,7 @@ The three findings. The contact is an exact Gaussian elimination followed by a m
 
 ## Further Reading
 
-- [The Weak Interaction in Biquaternionic Form](the-weak-interaction-in-biquaternionic-form.html) — the parent: the contact, the rates, the pion-to-lepton ratio.
+- [The Weak Force in Biquaternionic Form](the-weak-force-in-biquaternionic-form.html) — the parent: the contact, the rates, the pion-to-lepton ratio.
 - [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html) — the action the eliminated field belongs to.
 - [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html) — the charged and neutral currents in one action.
 - [Møller Scattering in Biquaternionic Form](moller-scattering-in-biquaternionic-form.html) — the neutral-current counterpart of the elimination.

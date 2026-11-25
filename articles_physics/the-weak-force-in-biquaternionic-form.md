@@ -1,8 +1,8 @@
-# __The Weak Interaction in Biquaternionic Form__
+# __The Weak Force in Biquaternionic Form__
 
 ## Introduction
 
-The **weak interaction** is the interaction that changes flavour. A neutron becomes a proton by emitting an electron and an antineutrino, a muon becomes an electron, an antineutrino and a muon neutrino, and a strange quark becomes an up quark. The interaction is short-ranged, and below the W mass it is described by a **four-fermion contact**: four fermion fields at one point, with no propagator between them. Enrico Fermi wrote the first such contact in 1934 for beta decay, with a vector coupling. The modern form was fixed in 1958 by Feynman and Gell-Mann and, independently, by Marshak and Sudarshan: the current is $V-A$, the difference of a vector and an axial vector, and the difference is what makes the interaction **maximally parity-violating**, established experimentally by Wu and her collaborators in 1957 on polarized cobalt-60.
+The **weak force** is the interaction that changes flavour. A neutron becomes a proton by emitting an electron and an antineutrino, a muon becomes an electron, an antineutrino and a muon neutrino, and a strange quark becomes an up quark. The interaction is short-ranged, and below the W mass it is described by a **four-fermion contact**: four fermion fields at one point, with no propagator between them. Enrico Fermi wrote the first such contact in 1934 for beta decay, with a vector coupling. The modern form was fixed in 1958 by Feynman and Gell-Mann and, independently, by Marshak and Sudarshan: the current is $V-A$, the difference of a vector and an axial vector, and the difference is what makes the interaction **maximally parity-violating**, established experimentally by Wu and her collaborators in 1957 on polarized cobalt-60.
 
 This article treats the process level, and not the bosons. The companion *The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form* settles what the framework reaches for the carriers — the Proca kinematics, the charges as eigenvalues of the adjoint action, the neutral mixing, the self-couplings — and states plainly that it stops at the chiral coupling. The present article starts there, asks what the framework has for the **current** itself and for the contact built from two of them, and answers in the three categories the corpus uses.
 
@@ -30,7 +30,7 @@ $$
 J^{+}_{\imath}=\tilde{Ξ}_{\mathrm u}^{\dagger}iR_{\vec e_x}\,\gamma_{\imath}(1-\gamma_5)\tilde{Ξ}_{\mathrm d},
 $$
 
-and the interaction Lagrangian, its variation and the contact it produces are not repeated here: [The Lagrangian and the Weak Interaction](the-lagrangian-and-the-weak-interaction.html) writes the charged-current action, varies the field, solves for it and expands the propagator at $q^2/M_W^2$, and obtains Fermi's four-fermion form
+and the interaction Lagrangian, its variation and the contact it produces are not repeated here: [The Lagrangian and the Weak Force](the-lagrangian-and-the-weak-force.html) writes the charged-current action, varies the field, solves for it and expands the propagator at $q^2/M_W^2$, and obtains Fermi's four-fermion form
 
 $$
 \mathcal{L}_{\mathrm{eff}}=-\frac{4G_{\mathrm F}}{\sqrt2}\sum_{\imath}\varepsilon_{\imath} J^{+}_{\imath} J^{-}_{\imath},

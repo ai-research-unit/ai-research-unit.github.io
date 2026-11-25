@@ -15,6 +15,12 @@ DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-uni
 # Old URLs kept alive after a rename: (deployed page, alias that copies it).
 # The pruner spares the aliases, and no sitemap lists them.
 LEGACY_COPIES = [
+    # The weak sector was renamed from "interaction" to "force" with its section.
+    # The old addresses serve the renamed pages rather than 404.
+    ("articles_physics/the-weak-force-in-biquaternionic-form.html",
+     "articles_physics/the-weak-interaction-in-biquaternionic-form.html"),
+    ("articles_physics/the-lagrangian-and-the-weak-force.html",
+     "articles_physics/the-lagrangian-and-the-weak-interaction.html"),
     # The AXF construction article was rewritten for the fifteen generators; the
     # twenty-one-generator URL now serves the fifteen-generator page, so a retired
     # address cannot outlive the model it described.
