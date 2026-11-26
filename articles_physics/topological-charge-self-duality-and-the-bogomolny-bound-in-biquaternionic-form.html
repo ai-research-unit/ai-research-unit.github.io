@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Topological Charge, Self-Duality and the Bogomolny Bound in Biquaternionic Form — Biquaternion Universe</title>
-  <meta name="description" content="The object. A field configuration can be classified by an integer that no continuous deformation changes. For a gauge field the integer is the integral of…">
+  <meta name="description" content="The object. A field configuration can be classified by an integer that no continuous deformation changes. For a connection the integer is the integral of…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form"><strong>Topological Charge, Self-Duality and the Bogomolny Bound in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The object.</strong> A field configuration can be classified by an integer that no continuous deformation changes. For a gauge field the integer is the integral of a density built from the field strength, and it is fixed by the behaviour of the field at infinity rather than by its shape. Configurations with nonzero charge are <strong>instantons</strong> in the Euclidean theory; the same charge in the Lorentzian theory would be carried by solitons, and the two cases differ in what makes a configuration stable.</p>
+<p><strong>The object.</strong> A field configuration can be classified by an integer that no continuous deformation changes. For a connection the integer is the integral of a density built from the field strength, and it is fixed by the behaviour of the field at infinity rather than by its shape. Configurations with nonzero charge are <strong>instantons</strong> in the Euclidean theory; the same charge in the Lorentzian theory would be carried by solitons, and the two cases differ in what makes a configuration stable.</p>
 <p><strong>What this article is.</strong> The general theory, with no sector attached: the density, its primitivity, the self-duality condition, the bound that self-dual configurations saturate, and the reason the framework's own invariants supply the abelian density and not the non-abelian one. It is used by the strong sector, where the objects are the non-perturbative configurations of the colour gauge theory.</p>
 <p><strong>Where the applications are.</strong></p>
 <ul>
@@ -79,7 +79,7 @@
 <li>The electroweak sector, nowhere. The weak sector's non-perturbative configurations belong to the same topology but are not what that sector's articles treat.</li>
 </ul>
 <h2 id="the-density-and-its-primitivity">The Density and Its Primitivity</h2>
-<p><strong>The density.</strong> For a gauge field with field strength $F_{\imath\jmath}$,</p>
+<p><strong>The density.</strong> For a connection with field strength $F_{\imath\jmath}$,</p>
 <p>$$
 \varrho=\frac{1}{16\pi^2}\,\mathrm{Tr}\left(F_{\imath\jmath}\tilde F_{\imath\jmath}\right),
 \qquad
@@ -97,7 +97,7 @@ $$</p>
 \qquad
 J_{\mathrm{CS},\imath}=\tfrac14\epsilon_{\imath\jmath\rho\sigma}A_{\jmath} F_{\rho\sigma},
 $$</p>
-<p>and $J_{\mathrm{CS}}$ is gauge dependent while $\varrho$ is not. The primitive is therefore a computational device, not an invariant, and this distinction matters when the question is whether the framework can write the density at all.</p>
+<p>and $J_{\mathrm{CS}}$ is representative-dependent while $\varrho$ is not. The primitive is therefore a computational device, not an invariant, and this distinction matters when the question is whether the framework can write the density at all.</p>
 <p><strong>The abelian charge vanishes.</strong> On $\mathbb R^4$ with finite action the boundary term vanishes, so there is no abelian instanton. Instantons are intrinsically non-abelian.</p>
 <h2 id="self-duality-and-the-bound">Self-Duality and the Bound</h2>
 <p><strong>The star.</strong> On two-forms the Hodge star satisfies $\star^2=-1$ in Lorentzian signature and $\star^2=+1$ in Euclidean. Consequently $F=\star F$ forces $F=0$ on real Lorentzian fields, and the self-duality condition is a Euclidean condition. This is the single reason instantons are defined on the Euclidean continuation and not on spacetime.</p>
@@ -114,7 +114,7 @@ $$</p>
 <h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
 <ul>
 <li><strong>Supplied.</strong> Two invariants of the abelian field, $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, and the identity $\sum_{\imath,\jmath}F_{\imath\jmath}\star F_{\imath\jmath}=4I_2$ in the Euclidean case, so the imaginary part of the biquaternion norm <strong>is</strong> the abelian density.</li>
-<li><strong>Not supplied.</strong> The non-abelian density. $\mathrm{Tr}(F\wedge F)$ needs a matrix trace over the gauge algebra, and the biquaternion norm is a rank-two bilinear with a single algebra slot; the norm of the biquaternion representative is not gauge invariant under $F_{\imath\jmath}\mapsto\tilde UF_{\imath\jmath}\tilde U^{-1}$. This is a recorded gap, not an oversight.</li>
+<li><strong>Not supplied.</strong> The non-abelian density. $\mathrm{Tr}(F\wedge F)$ needs a matrix trace over the algebra, and the biquaternion norm is a rank-two bilinear with a single algebra slot; the norm of the biquaternion representative is not invariant under $F_{\imath\jmath}\mapsto\tilde UF_{\imath\jmath}\tilde U^{-1}$. This is a recorded gap, not an oversight.</li>
 <li><strong>Imported.</strong> The star, the bound and the Chern–Simons primitive.</li>
 </ul>
 <p><strong>Where the application is.</strong> <a href="instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a> applies every statement above to the framework's compact factor: it writes the density for both cases, verifies the total-derivative identity symbolically, checks the non-invariance numerically, and exhibits the BPST solution with its charge and action.</p>

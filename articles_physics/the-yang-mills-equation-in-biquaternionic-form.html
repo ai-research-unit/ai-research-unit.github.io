@@ -83,28 +83,28 @@ $$</p>
 \qquad
 \tilde D\tilde F = \tilde\nabla_\Phi\tilde F + i\kappa\,[\mathcal{A}, \tilde F]\;},
 $$</p>
-<p>with the covariant derivative $D_{\imath} = \partial/\partial R_{\imath} + i\kappa\mathcal{A}_{\imath}$ acting on the curvature through the commutator, in the adjoint action of the gauge algebra. The subject of this article is what changes from the abelian case, and the answer is a short list.</p>
+<p>with the covariant derivative $D_{\imath} = \partial/\partial R_{\imath} + i\kappa\mathcal{A}_{\imath}$ acting on the curvature through the commutator, in the adjoint action of the algebra. The subject of this article is what changes from the abelian case, and the answer is a short list.</p>
 <ul>
-<li><strong>The field equation itself acquires a term.</strong> In the abelian case the connection coefficients commute (in the parent's $\mathrm{U}(1)$ case they are central), so $[\mathcal{A}_{\imath},F_{\imath\jmath}] = 0$ and the field equation is the ordinary divergence. In the non-abelian case the commutator term is present and cannot be dropped: the covariant derivative is not the ordinary one, and the source of a non-abelian gauge field is itself charged.</li>
+<li><strong>The field equation itself acquires a term.</strong> In the abelian case the connection coefficients commute (in the parent's $\mathrm{U}(1)$ case they are central), so $[\mathcal{A}_{\imath},F_{\imath\jmath}] = 0$ and the field equation is the ordinary divergence. In the non-abelian case the commutator term is present and cannot be dropped: the covariant derivative is not the ordinary one, and the source of a non-abelian connection is itself charged.</li>
 <li><strong>The current is covariantly conserved, not ordinarily conserved.</strong> Taking the covariant divergence of the field equation gives $\sum_{\imath} D_{\imath} J_{\imath} = 0$. This is <em>not</em> $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = 0$: the ordinary divergence of the current is $-i\kappa[\mathcal{A}_{\imath},J_{\imath}]$, which is nonzero for a generic non-abelian field. Writing ordinary conservation here would be a defect, not a simplification.</li>
 <li><strong>The terms that vanish in the abelian limit do so because the abelian connection commutes.</strong> Every commutator that distinguishes the non-abelian equation from Maxwell contains either $[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$ or $[\mathcal{A}_{\imath},\,\cdot\,]$; all of them vanish when the connection coefficients commute, and none of them cancels against a nonvanishing partner.</li>
 </ul>
 <p>The division between what is established and what is interpretation is kept explicit.</p>
 <ul>
 <li><strong>Established, and recomputed below.</strong> The curvature identity $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$; the Bianchi identity $D_{\imath} F_{\imath\jmath} + D_{\imath} F_{\jmath k} + D_{\jmath} F_{k\imath} = 0$; the Yang–Mills equation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = J_{\jmath}$ with the commutator term $i\kappa[\mathcal{A}_{\imath},F_{\imath\jmath}]$; the covariant conservation $\sum_{\imath} D_{\imath} J_{\imath} = 0$ and the failure of ordinary conservation; the reduction to Maxwell on a commuting generator set; and the adjoint transformation $J_{2,\jmath} = \tilde U J_{\jmath} \tilde U^{-1}$ of the source. Each was recomputed on a generic, non-constant $\mathrm{SU}(2)$-valued connection — all three generators, non-commuting — at four generic points, by exact polynomial arithmetic; no claim below rests on the abelian case.</li>
-<li><strong>Interpretation.</strong> Reading $\sum_{\imath} D_{\imath} F_{\imath\jmath}$ as the conserved current of a non-abelian gauge field, and the field equation as the Euler–Lagrange equation of $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$, is the standard interpretation of the algebra, placed in the framework's notation. It is labelled as interpretation where it occurs.</li>
+<li><strong>Interpretation.</strong> Reading $\sum_{\imath} D_{\imath} F_{\imath\jmath}$ as the conserved current of a non-abelian connection, and the field equation as the Euler–Lagrange equation of $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$, is the standard interpretation of the algebra, placed in the framework's notation. It is labelled as interpretation where it occurs.</li>
 <li><strong>Gaps and defects, left visible.</strong> The biquaternion packaging of the curvature that the parent articles use, $\mathcal{F} = \tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$, does not inherit the adjoint transformation as a single algebra conjugation, and the naive product $\vec\nabla_\Phi\!\cdot\!(\sum_{\jmath} F_{\imath\jmath}e_{\jmath})$ is not the covariant divergence of the field equation; both are stated precisely and neither is smoothed over. The framework's inability to fix the gauge is inherited unchanged and bounds the whole construction; no gauge is chosen anywhere below.</li>
 </ul>
 <h2 id="the-non-abelian-curvature-and-the-adjoint-covariant-derivative">The Non-Abelian Curvature and the Adjoint Covariant Derivative</h2>
 <p>The constructions of this article are those of its two parents, and they are recalled here only far enough to fix the conventions the field equation uses.</p>
-<p>The connection is an $\mathrm{SU}(2)$-valued one-form, $\mathcal{A}_{\imath}$, and the covariant derivative is $D_{\imath} = \partial/\partial R_{\imath} + i\kappa\mathcal{A}_{\imath}$, with $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$. Under a local gauge transformation $\tilde U(\tilde{Q})\in SU(2)$ the connection and field strength transform in the adjoint representation,</p>
+<p>The connection is an $\mathrm{SU}(2)$-valued one-form, $\mathcal{A}_{\imath}$, and the covariant derivative is $D_{\imath} = \partial/\partial R_{\imath} + i\kappa\mathcal{A}_{\imath}$, with $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$. Under a local transformation $\tilde U(\tilde{Q})\in SU(2)$ the connection and field strength transform in the adjoint representation,</p>
 <p>$$
 \mathcal{A}_{2,\imath} = \tilde U\mathcal{A}_{\imath} \tilde U^{-1} + \frac{i}{\kappa}(\partial/\partial R_{\imath} \tilde U)\tilde U^{-1},
 \qquad
 F_{2,\imath\jmath} = \tilde U F_{\imath\jmath} \tilde U^{-1},
 $$</p>
-<p>and $F_{\imath\jmath}$ is <em>not</em> gauge invariant: it is an algebra element rotated by the group. The covariance of the first-order operator is what forces the inhomogeneous term in the first law.</p>
-<p>Two derived objects carry the rest of the article. The first is the <strong>adjoint covariant derivative</strong>, the action of the gauge connection on an algebra-valued field $\tilde{Q}$:</p>
+<p>and $F_{\imath\jmath}$ is <em>not</em> invariant: it is an algebra element rotated by the group. The covariance of the first-order operator is what forces the inhomogeneous term in the first law.</p>
+<p>Two derived objects carry the rest of the article. The first is the <strong>adjoint covariant derivative</strong>, the action of the connection on an algebra-valued field $\tilde{Q}$:</p>
 <p>$$
 D_{\imath} \tilde{Q} = \partial/\partial R_{\imath} \tilde{Q} + i\kappa\,[\mathcal{A}_{\imath}, \tilde{Q}].
 $$</p>
@@ -127,7 +127,7 @@ $$</p>
 \mathcal{F} = \tfrac12\sum_{\imath,\jmath}F_{\imath\jmath}\,\bar{e}_{\imath} e_{\jmath} \;\in\; \mathbb{B},
 \qquad \bar{e}_t = e_t,\; \bar{e}_{\imath} = -\vec e_{\imath} .
 $$</p>
-<p>It collects the six independent curvature components against the quaternion-basis products $\bar{e}_{\imath} e_{\jmath}$. What this object does and does not inherit under a gauge transformation is treated in its own section below; the reader should not assume that the componentwise transformation law $F_{\imath\jmath}\mapsto \tilde UF_{\imath\jmath}\tilde U^{-1}$ promotes to a single conjugation of $\mathcal{F}$.</p>
+<p>It collects the six independent curvature components against the quaternion-basis products $\bar{e}_{\imath} e_{\jmath}$. What this object does and does not inherit under a local transformation is treated in its own section below; the reader should not assume that the componentwise transformation law $F_{\imath\jmath}\mapsto \tilde UF_{\imath\jmath}\tilde U^{-1}$ promotes to a single conjugation of $\mathcal{F}$.</p>
 <h2 id="the-yangmills-equation">The Yang–Mills Equation</h2>
 <p>Let the current be the covariant divergence of the curvature,</p>
 <p>$$
@@ -139,15 +139,15 @@ $$</p>
 $$</p>
 <p>is the Yang–Mills equation, and the two terms of its expansion are the whole of its content.</p>
 <ul>
-<li><strong>The ordinary divergence $\sum_{\imath}\partial/\partial R_{\imath} F_{\imath\jmath}$.</strong> In the abelian limit this term alone is Maxwell's source equation. In the non-abelian case it is not gauge covariant on its own.</li>
-<li><strong>The commutator term $i\kappa[\mathcal{A}_{\imath},F_{\imath\jmath}]$.</strong> The index $\mu$ of the connection is contracted with the <em>derivative</em> index of $F_{\imath\jmath}$ — the first index — and the commutator is taken with that same $\mathcal{A}_{\imath}$. This is the only placement that makes the equation gauge covariant and the current covariantly conserved; it is the term most often got wrong. In the abelian case $\mathcal{A}_{\imath}$ commutes with the curvature (it is central in the parent's $\mathrm{U}(1)$ case, and lies on a single generator otherwise), so the term vanishes.</li>
+<li><strong>The ordinary divergence $\sum_{\imath}\partial/\partial R_{\imath} F_{\imath\jmath}$.</strong> In the abelian limit this term alone is Maxwell's source equation. In the non-abelian case it is not covariant on its own.</li>
+<li><strong>The commutator term $i\kappa[\mathcal{A}_{\imath},F_{\imath\jmath}]$.</strong> The index $\mu$ of the connection is contracted with the <em>derivative</em> index of $F_{\imath\jmath}$ — the first index — and the commutator is taken with that same $\mathcal{A}_{\imath}$. This is the only placement that makes the equation covariant and the current covariantly conserved; it is the term most often got wrong. In the abelian case $\mathcal{A}_{\imath}$ commutes with the curvature (it is central in the parent's $\mathrm{U}(1)$ case, and lies on a single generator otherwise), so the term vanishes.</li>
 </ul>
 <p>The two slots of the index structure are fixed. The derivative that acts is the one whose index is contracted, and it must be the same index that labels the connection inside the commutator; and the curvature is contracted in its first index by that derivative. Writing $[\mathcal{A}_{\jmath},F_{\imath\jmath}]$ (connection index equal to the free index), or $[\mathcal{A}_{\imath},F_{\jmath\imath}]$ (the two curvature slots exchanged), or reversing the sign of the commutator term, each destroys the conservation law derived in the next section. This was checked directly on a generic non-commuting connection: the correct placement gives $\sum_{\jmath} D_{\jmath}(\sum_{\imath} D_{\imath} F_{\imath\jmath}) = 0$ to $3\times10^{-15}$, while the three alternatives and the ordinary divergence give residuals of order $10$ — order unity on the same field. The reader who is unsure of a sign convention should repeat that one computation rather than consult memory.</p>
-<p><strong>Gauge covariance.</strong> The equation is covariant without any gauge being chosen. With $F_{2,\imath\jmath} = \tilde UF_{\imath\jmath}\tilde U^{-1}$ and the transformation of the connection, the covariant derivative satisfies $D_{2,\imath}(\tilde U\tilde{Ξ}) = \tilde U D_{\imath}\tilde{Ξ}$, so the current transforms in the adjoint,</p>
+<p><strong>Covariance.</strong> The equation is covariant without any gauge being chosen. With $F_{2,\imath\jmath} = \tilde UF_{\imath\jmath}\tilde U^{-1}$ and the transformation of the connection, the covariant derivative satisfies $D_{2,\imath}(\tilde U\tilde{Ξ}) = \tilde U D_{\imath}\tilde{Ξ}$, so the current transforms in the adjoint,</p>
 <p>$$
 J_{2,\jmath} = \tilde U J_{\jmath} \tilde U^{-1},
 $$</p>
-<p>and $\sum_{\imath} D_{2,\imath}F_{2,\imath\jmath} = \tilde U(\sum_{\imath} D_{\imath} F_{\imath\jmath})\tilde U^{-1}$. The equation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = J_{\jmath}$ therefore holds in one gauge if and only if it holds in every gauge; no condition such as $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\mathcal{A}) = 0$, and no other gauge-fixing surface, is imposed or available. This point is worth stating because the framework's canonical-quantisation article records that it <em>cannot</em> fix the gauge; the Yang–Mills equation inherits that situation rather than relieving it. The adjoint transformation of the source was verified numerically on a generic connection with a generic (constant) group rotation; the covariance for a general local $\tilde U$ follows from the transformation laws above and was not separately rechecked.</p>
+<p>and $\sum_{\imath} D_{2,\imath}F_{2,\imath\jmath} = \tilde U(\sum_{\imath} D_{\imath} F_{\imath\jmath})\tilde U^{-1}$. The equation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = J_{\jmath}$ therefore holds in one gauge if and only if it holds in every gauge; no condition such as $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\mathcal{A}) = 0$, and no other fixing the representative surface, is imposed or available. This point is worth stating because the framework's canonical-quantisation article records that it <em>cannot</em> fix the gauge; the Yang–Mills equation inherits that situation rather than relieving it. The adjoint transformation of the source was verified numerically on a generic connection with a generic (constant) group rotation; the covariance for a general local $\tilde U$ follows from the transformation laws above and was not separately rechecked.</p>
 <p><strong>Biquaternionic form.</strong> Pack the four components of the current into a biquaternion in the quaternion basis,</p>
 <p>$$
 \mathcal{J} = \sum_{\jmath\in\{t,x,y,z\}} J_{\jmath} e_{\jmath} \;\in\; \mathbb{B}.
@@ -208,11 +208,11 @@ $$</p>
 <p>$$
 \tilde D\tilde F = \tilde\nabla_\Phi\tilde F = \tilde J_{\Phi},
 $$</p>
-<p>which is Maxwell's source equation, and the current is now a commuting biquaternion, invariant under the abelian gauge transformations that preserve the generator set. Correspondingly the conservation law degenerates,</p>
+<p>which is Maxwell's source equation, and the current is now a commuting biquaternion, invariant under the abelian local transformations that preserve the generator set. Correspondingly the conservation law degenerates,</p>
 <p>$$
 \langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} + i\kappa\,[\mathcal{A},\tilde J_{\Phi}] = \langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = 0,
 $$</p>
-<p>because $[\mathcal{A}_{\jmath},J_{\jmath}] = \sum_{\jmath} a_{\jmath}[g,g]J_{\jmath} = 0$; the current is <strong>ordinarily</strong> conserved, and it is invariant under the abelian gauge transformations that preserve the commuting generator set, $J_{2,\jmath} = \tilde U J_{\jmath} \tilde U^{-1} = J_{\jmath}$ (in the centre case every central $\tilde U$ qualifies, since $\tilde U$ is central; on a single spatial generator, the qualifying $\tilde U$ are those of the abelian subgroup generated by $g$).</p>
+<p>because $[\mathcal{A}_{\jmath},J_{\jmath}] = \sum_{\jmath} a_{\jmath}[g,g]J_{\jmath} = 0$; the current is <strong>ordinarily</strong> conserved, and it is invariant under the abelian local transformations that preserve the commuting generator set, $J_{2,\jmath} = \tilde U J_{\jmath} \tilde U^{-1} = J_{\jmath}$ (in the centre case every central $\tilde U$ qualifies, since $\tilde U$ is central; on a single spatial generator, the qualifying $\tilde U$ are those of the abelian subgroup generated by $g$).</p>
 <p>Nothing here cancels. Every non-abelian term vanishes because the abelian connection commutes — with itself, with the curvature it generates, and with the current — not because two nonzero contributions are arranged to cancel. This is the precise sense in which the abelian case is the degenerate one, and it is why agreement on a commuting generator set is a consistency check on normalisation and signs but <em>not</em> evidence for the non-abelian statement: every non-abelian identity above was checked on the full non-commuting $\mathrm{SU}(2)$ connection, where the commutators are nonzero, and the abelian reduction was checked separately.</p>
 <h2 id="the-bianchi-identity-and-the-homogeneous-half">The Bianchi Identity and the Homogeneous Half</h2>
 <p>The Yang–Mills equation is half of the non-abelian system. The other half is the Bianchi identity,</p>
@@ -253,7 +253,7 @@ $$
 \vec\nabla_{-} = \partial/\partial \tau - i\,\vec\nabla_\Phi ,
 $$</p>
 <p>where $\tau$ is time in units of length, $\circ$ the biquaternion product, $G$ a given biquaternionic source, and $F = f + \vec F$ a <strong>constant</strong> biquaternion — the <em>structural coefficient</em> — with scalar part $f$ and vector part $\vec F$ [Alexeyeva 2014]. The four papers are a sequence of specialisations of this one equation: the earlier ones treat the members equivalent to the biquaternionic Maxwell system ($F = 0$) and to the biquaternionic Dirac system ($F = f$, a complex scalar), with their generalisations, and the fourth takes the <strong>vector-valued</strong> coefficient $\vec F \neq 0$. The author's remark for that case is that the equation, written in matrix (tensor) form, belongs to the class of Yang–Mills equations. Recording the series here gives the corpus a single source for the Maxwell–Dirac–Yang–Mills web that the framework's own articles reach by separate routes.</p>
-<p><strong>What the identification is, and what it is not.</strong> The coefficient is constant, so the equation carries no non-constant connection, no commutator curvature and no covariant derivative of the kind $D_{\imath}$ above. "Belongs to the class of Yang–Mills equations" is a statement about the <strong>matrix form of a linear first-order system with matrix coefficients</strong> — the shape of the equation, not its gauge structure. The two constructions are therefore not competing derivations of one object: this article's equation is non-linear in a field-valued connection and its current is only covariantly conserved, while the biwave equation is linear with a fixed coefficient. That one route reaches a Yang–Mills-type matrix form from a constant coefficient, and the other from a connection, is a genuine difference of route, and the corpus records it as such rather than as an agreement.</p>
+<p><strong>What the identification is, and what it is not.</strong> The coefficient is constant, so the equation carries no non-constant connection, no commutator curvature and no covariant derivative of the kind $D_{\imath}$ above. "Belongs to the class of Yang–Mills equations" is a statement about the <strong>matrix form of a linear first-order system with matrix coefficients</strong> — the shape of the equation, not its structure. The two constructions are therefore not competing derivations of one object: this article's equation is non-linear in a field-valued connection and its current is only covariantly conserved, while the biwave equation is linear with a fixed coefficient. That one route reaches a Yang–Mills-type matrix form from a constant coefficient, and the other from a connection, is a genuine difference of route, and the corpus records it as such rather than as an agreement.</p>
 <p><strong>Second-order form and solution.</strong> Composing the two mutual operators for constant $\vec F$ gives the single second-order operator</p>
 <p>$$
 \left(\vec\nabla_{-} - \vec F\right)\circ\left(\vec\nabla_{+} + \vec F\right)
@@ -321,7 +321,7 @@ $$</p>
 <p><strong>A one-line biquaternion form.</strong> The abelian parent compresses its four equations into $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$. Is there a representative of the non-abelian curvature, or a modified product, for which the Yang–Mills equation is a single adjoint-covariant biquaternion identity, or is the index-mixing obstruction of this article fatal to that program? The obstruction found here is sharp enough to state and not resolved.</p>
 </li>
 <li>
-<p><strong>Which compact algebra, and how many factors.</strong> The gauge algebra used here is the $\mathrm{SU}(2)$ factor of the material sector, with the abelian factor $\mathbb{R}(ie_t)$ beside it. Whether larger gauge algebras are available, and whether the framework selects one, is the gap recorded by the non-abelian parent and untouched here.</p>
+<p><strong>Which compact algebra, and how many factors.</strong> The algebra used here is the $\mathrm{SU}(2)$ factor of the material sector, with the abelian factor $\mathbb{R}(ie_t)$ beside it. Whether larger algebras are available, and whether the framework selects one, is the gap recorded by the non-abelian parent and untouched here.</p>
 </li>
 <li>
 <p><strong>The reality class of the connection.</strong> The non-abelian parent shows that no single Hermitian-conjugation eigenspace accommodates the connection across all four components, with the obstruction sitting in the time direction because $\partial/\partial R_t = -i\partial/\partial r'_t$. The field equation and its conservation law are statements about the algebra and do not depend on resolving that, but the physical identification of $\mathcal{A}_{\imath}$ does.</p>
@@ -330,16 +330,16 @@ $$</p>
 <p><strong>The matter representation.</strong> The covariant derivative here acts by left multiplication, and the current is defined from the curvature alone. For coupled matter the representation carried by the matter field must be specified, and it is not fixed here; the chiral-fermion and minimal-coupling articles pose that question.</p>
 </li>
 <li>
-<p><strong>Gauge fixing.</strong> The framework cannot fix the gauge, and the Yang–Mills equation supplies no selection principle. The non-abelian case adds the Gribov question of whether a gauge orbit meets a gauge-fixing surface more than once; nothing here addresses it.</p>
+<p><strong>Fixing the representative.</strong> The framework cannot fix the gauge, and the Yang–Mills equation supplies no selection principle. The non-abelian case adds the Gribov question of whether an orbit meets a fixing the representative surface more than once; nothing here addresses it.</p>
 </li>
 <li>
 <p><strong>Topological terms.</strong> The Bianchi identity and the invariant density are the ingredients of $\int\mathrm{Tr}(F\wedge F)$ and of instanton solutions. The self-dual truncation of the field equation is treated elsewhere; its relation to the biquaternion packaging is open.</p>
 </li>
 <li>
-<p><strong>Empirical contact.</strong> As everywhere in the framework, whether any of this yields a prediction distinguishing it from standard non-abelian gauge theory is untouched. The construction is a reformulation.</p>
+<p><strong>Empirical contact.</strong> As everywhere in the framework, whether any of this yields a prediction distinguishing it from standard Yang–Mills theory is untouched. The construction is a reformulation.</p>
 </li>
 <li>
-<p><strong>The matrix form called Yang–Mills-like.</strong> Alexeyeva's vector-coefficient biwave equation is reported to belong to the class of Yang–Mills equations once written in matrix (tensor) form. Whether that form carries any of the structure this article's $D_{\imath}$ carries — a connection, a covariant conservation law, gauge covariance — or only the shape of a linear first-order system with a constant coefficient, is not settled by the source and is left open here. It is the one question on which the two routes might be made to meet.</p>
+<p><strong>The matrix form called Yang–Mills-like.</strong> Alexeyeva's vector-coefficient biwave equation is reported to belong to the class of Yang–Mills equations once written in matrix (tensor) form. Whether that form carries any of the structure this article's $D_{\imath}$ carries — a connection, a covariant conservation law, covariance — or only the shape of a linear first-order system with a constant coefficient, is not settled by the source and is left open here. It is the one question on which the two routes might be made to meet.</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
@@ -356,7 +356,7 @@ $$</p>
 <li>The field equation acquires the commutator term $i\kappa[\mathcal{A}_{\imath},F_{\imath\jmath}]$, with the derivative index contracted with the first index of the curvature and with the connection of the same index inside the commutator. This is the only placement that makes the equation covariant and the current conserved; the three alternatives tested fail at order unity.</li>
 <li>The current is <strong>covariantly</strong> conserved, $\sum_{\jmath} D_{\jmath} J_{\jmath} = 0$, not ordinarily conserved: $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = -i\kappa[\mathcal{A}_{\jmath},J_{\jmath}] \neq 0$. The conservation follows from the field equation and the antisymmetry of the curvature, through $\tfrac12\sum_{\imath,\jmath}[D_{\jmath},D_{\imath}]F_{\imath\jmath} = \tfrac12 i\kappa\sum_{\imath,\jmath}[F_{\jmath\imath},F_{\imath\jmath}] = 0$; the differential Bianchi identity is the independent homogeneous half and is not what makes it true.</li>
 </ul>
-<p>In the abelian limit — a commuting generator set, whether the centre $\mathbb{B}_{C}$ of the parent or a single fixed generator — every commutator vanishes: $[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}] = 0$ removes the curvature's commutator term, $[\mathcal{A}_{\imath},F_{\imath\jmath}] = 0$ removes the field equation's, and $[\mathcal{A}_{\jmath},J_{\jmath}] = 0$ removes the one separating covariant from ordinary conservation. The equation reduces to Maxwell's, $\sum_{\imath}\partial/\partial R_{\imath} F_{\imath\jmath} = J_{\jmath}$, with an ordinarily conserved current that is invariant under the abelian gauge transformations preserving the generator set. Nothing cancels; the abelian connection commutes with everything it meets.</p>
+<p>In the abelian limit — a commuting generator set, whether the centre $\mathbb{B}_{C}$ of the parent or a single fixed generator — every commutator vanishes: $[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}] = 0$ removes the curvature's commutator term, $[\mathcal{A}_{\imath},F_{\imath\jmath}] = 0$ removes the field equation's, and $[\mathcal{A}_{\jmath},J_{\jmath}] = 0$ removes the one separating covariant from ordinary conservation. The equation reduces to Maxwell's, $\sum_{\imath}\partial/\partial R_{\imath} F_{\imath\jmath} = J_{\jmath}$, with an ordinarily conserved current that is invariant under the abelian local transformations preserving the generator set. Nothing cancels; the abelian connection commutes with everything it meets.</p>
 <p>The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_{\jmath} J_{\jmath} e_{\jmath}$ with $\sum_{\jmath} \bigl(D_{\imath} F_{\imath\jmath}\bigr) e_{\jmath} = \mathcal{J}$ and $J_{2,\jmath} = \tilde UJ_{\jmath} \tilde U^{-1}$, and limited for the curvature: the representative $\mathcal{F} = \tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$ inherits the componentwise adjoint law, not a single conjugation, and the naive one-line product picks up an index-mixing term of order unity. That limitation is stated, not papered over.</p>
 <p>A second, independent route to a biquaternion equation with a Yang–Mills-type matrix form is recorded from the literature: the biwave equation $\vec\nabla_{+} B + F\circ B = G$ — and the same with $\vec\nabla_{-}$ — with a constant vector structural coefficient, whose homogeneous solutions are the algebraic twistors and whose second-order operator carries a mass $(\vec F,\vec F)$ and a directional term. It is linear, with a fixed coefficient, and therefore carries no connection and no covariant conservation law. The corpus keeps the two routes apart by name and records the matrix-form claim as a class statement, not an equivalence.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -390,7 +390,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$</td>
-<td>Centre of the algebra; abelian gauge factor</td>
+<td>Centre of the algebra; abelian group factor</td>
 </tr>
 <tr>
 <td>$\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\imath}\,\vec e_{\imath}\partial/\partial R_{\imath}$</td>
@@ -410,7 +410,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
-<td>Compact gauge algebra inside $\mathbb{B}_{\Phi}$</td>
+<td>Compact algebra inside $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$T_a = \tfrac12 e_a$, $2\,\mathrm{Sc}(T_aT_b) = -\tfrac12\delta_{ab}$</td>
@@ -434,7 +434,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal{A}_{2,\imath} = \tilde U\mathcal{A}_{\imath} \tilde U^{-1} + \frac{i}{\kappa}(\partial/\partial R_{\imath} \tilde U)\tilde U^{-1}$</td>
-<td>Adjoint gauge transformation of the connection</td>
+<td>Adjoint local transformation of the connection</td>
 </tr>
 <tr>
 <td>$F_{\imath\jmath} = \partial/\partial R_{\imath}\,\mathcal{A}_{\jmath} - \partial/\partial R_{\jmath}\,\mathcal{A}_{\imath} + i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$</td>
@@ -490,7 +490,7 @@ $$</p>
 </tr>
 <tr>
 <td>$-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$</td>
-<td>Gauge-invariant Yang–Mills density (matrix trace)</td>
+<td>Invariant Yang–Mills density (matrix trace)</td>
 </tr>
 <tr>
 <td>$2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
@@ -532,10 +532,10 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a> — the immediate parent; the $\mathrm{SU}(2)$ factor, the curvature with its commutator, the adjoint transformation, the Bianchi identity, and the source-free equation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = 0$ that this article sources.</li>
-<li><a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a> — the abelian connection and covariant derivative, the curvature as a commutator that closes on the algebra, and the gap this article and its non-abelian companion take up.</li>
+<li><a href="non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Connections in Biquaternionic Form</a> — the immediate parent; the $\mathrm{SU}(2)$ factor, the curvature with its commutator, the adjoint transformation, the Bianchi identity, and the source-free equation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = 0$ that this article sources.</li>
+<li><a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Connection in Biquaternionic Form</a> — the abelian connection and covariant derivative, the curvature as a commutator that closes on the algebra, and the gap this article and its non-abelian companion take up.</li>
 <li><a href="maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a> — the abelian field equation $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$, the source biquaternion, and the conservation law whose non-abelian generalisation is the subject here.</li>
-<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a> — the origin of the connection and the transformation law, and the preview of the non-abelian curvature used here.</li>
+<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Minimal coupling in Biquaternionic Form</a> — the origin of the connection and the transformation law, and the preview of the non-abelian curvature used here.</li>
 <li><a href="the-field-strength-biquaternion-and-its-invariants.html">The Field-Strength Biquaternion and Its Invariants</a> — the abelian invariants and the biquaternion norm, whose non-abelian extension remains open.</li>
 <li><a href="chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a> — the covariant derivative on the spinor module and the matter representation that the current of this article does not fix.</li>
 <li><a href="the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a> — the left/right matter-representation question and the coupled Dirac equation.</li>
@@ -543,9 +543,9 @@ $$</p>
 <li><a href="instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a> — the self-dual truncation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = 0$ and the topological charge built from the Bianchi identity.</li>
 <li><a href="../articles_maths/lie-algebras-a-general-introduction.html">Lie Algebras: A General Introduction</a> — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.</li>
 <li><a href="algebra-and-element-conventions.html">Conventions in the Biquaternion Universe</a> and <a href="../articles_maths/quaternion-algebra.html">Quaternion Algebra</a> — the multiplication rule, the conjugations and the centre used throughout.</li>
-<li><a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a> — the sector basis and the imaginary-scalar/real-vector structure on which the $\mathrm{SU}(2)$ gauge factor rests.</li>
+<li><a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a> — the sector basis and the imaginary-scalar/real-vector structure on which the $\mathrm{SU}(2)$ group factor rests.</li>
 <li><a href="states-observables-and-the-born-weight.html">States, Observables and the Born Weight</a> — the Hermitian sector and the pairing formula distinguished here from the matrix trace.</li>
-<li><a href="curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article.</li>
+<li><a href="curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> — the two-sided gravitational connection, distinct from the one-sided connection of this article.</li>
 <li>L. A. Alexeyeva, "Differential algebra of biquaternions. 4. Twistors and twistor fields," arXiv:1406.5347 [math-ph] (2014), <em>Mathematical Journal</em> <strong>13</strong> (2013), for the vector-coefficient biwave equation whose matrix form is identified with the Yang–Mills class, for its non-stationary and stationary fundamental solutions and characteristic surfaces, and for the interpretation of the homogeneous equation as a transformation of charges and currents in an external field — the last recorded in <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em>.</li>
 <li>V. V. Kassandrov, "Biquaternion Electrodynamics and the Weyl–Cartan Geometry of Space-Time", <em>Gravitation &amp; Cosmology</em> <strong>1</strong> (1995) 216, arXiv:gr-qc/0007027, for the external claim recorded in <em>A neighbouring claim: the triplet from the electromagnetic potential</em>: the scalar-free part $N_{a0}=A_a$, $N_{ab}=\delta_{ab}A_0-i\sum_c\varepsilon_{abc}A_c$ of the biquaternion connection fixed linearly by the electromagnetic potential, its self-dual strength obeying the Yang–Mills equation as a Bianchi consequence, and the determinant relation by which the electromagnetic field strength is the modulus of the triplet. Cited as the programme's claim, not adopted.</li>
 </ul>

@@ -72,11 +72,11 @@
         <h1 id="electroweak-precision-observables-the-oblique-parameters-math0-math1-math2"><strong>Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The material below is standard theory, written in the corpus's language. No number in it is derived from the biquaternion algebra, and §<em>What the Framework Supplies</em> separates the linear algebra the algebra can host from the part imported with the particle content. The two sources are Peskin and Takeuchi (1990), where the three parameters are defined, and the electroweak review of the Particle Data Group, where they are fitted.</p>
-<p>Three numbers summarise what any heavy new sector does to the electroweak gauge bosons, and they exist because the vacuum polarisation of those bosons has more freedom than the three inputs of the theory can fix. The freedom is three-dimensional, and that dimension is a count, not a convention:</p>
+<p>Three numbers summarise what any heavy new sector does to the electroweak connections, and they exist because the vacuum polarisation of those bosons has more freedom than the three inputs of the theory can fix. The freedom is three-dimensional, and that dimension is a count, not a convention:</p>
 <p>$$
 8-2-3=3 .
 $$</p>
-<p>Four self-energy functions, each with a value and a slope at zero momentum, give eight numbers. Electromagnetic gauge invariance sets two of the values to zero. The three measured inputs $\alpha$, $G_F$ and $M_Z$ absorb three more. Three combinations survive, and they are called $S$, $T$ and $U$.</p>
+<p>Four self-energy functions, each with a value and a slope at zero momentum, give eight numbers. Electromagnetic local invariance sets two of the values to zero. The three measured inputs $\alpha$, $G_F$ and $M_Z$ absorb three more. Three combinations survive, and they are called $S$, $T$ and $U$.</p>
 <p>The definitions are these.</p>
 <p>$$
 S=\frac{4s_W^2c_W^2}{\alpha}\left[\Pi'_{ZZ}(0)-\frac{c_W^2-s_W^2}{s_Wc_W}\Pi'_{Z\gamma}(0)-\Pi'_{\gamma\gamma}(0)\right] ,
@@ -118,12 +118,12 @@ $$</p>
 <p>The three are consistent with zero, and that is the sharpest statement in the sector: no new sector that couples obliquely to the gauge bosons sits at the electroweak scale. The sentence is weaker than it sounds, and §<em>What the Parameters Cannot See</em> says why.</p>
 <p>$\rho$ appears elsewhere as the tree-level number $1$ and as the custodial invariant, and the statement "$\rho-1\approx\alpha T$" is used without the definition of $T$. Here are the definition, the count that produces it, and the numbers.</p>
 <h2 id="the-self-energy-functions">The Self-Energy Functions</h2>
-<p>The one-particle-irreducible two-point function of two gauge fields, in momentum space, carries two Lorentz indices and is written</p>
+<p>The one-particle-irreducible two-point function of two connections, in momentum space, carries two Lorentz indices and is written</p>
 <p>$$
 i\Pi_{VV',\imath\jmath}(q)=i\left(\delta_{\imath\jmath}-\frac{q_{\imath} q_{\jmath}}{q^2}\right)\Pi_{VV'}(q^2)+\text{(terms proportional to }q_{\imath}\text{ or }q_{\jmath}\text{)} .
 $$</p>
 <p>The second piece never contributes to a physical amplitude: a conserved external current annihilates it. What matters is the transverse function $\Pi_{VV'}(q^2)$.</p>
-<p>For the photon the transverse structure is forced. Electromagnetic gauge invariance requires $\sum_{\imath} q_{\imath}\Pi_{\gamma\gamma,\imath\jmath}=0$. With the projectors</p>
+<p>For the photon the transverse structure is forced. Electromagnetic local invariance requires $\sum_{\imath} q_{\imath}\Pi_{\gamma\gamma,\imath\jmath}=0$. With the projectors</p>
 <p>$$
 P_{\imath\jmath}=\delta_{\imath\jmath}+\frac{q_{\imath} q_{\jmath}}{\Pi} ,
 \qquad
@@ -168,7 +168,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Two values are zero and two are not. The two that vanish do so by electromagnetic gauge invariance: a massless photon cannot mix with anything at zero momentum, because a mixing would give it a mass. The two that do not vanish are the masses themselves: $\Pi_{ZZ}(0)=M_Z^2$ and $\Pi_{WW}(0)=M_W^2$ in the reference theory, so the two non-zero values are not free but are fixed by the two measured masses.</p>
+<p>Two values are zero and two are not. The two that vanish do so by electromagnetic local invariance: a massless photon cannot mix with anything at zero momentum, because a mixing would give it a mass. The two that do not vanish are the masses themselves: $\Pi_{ZZ}(0)=M_Z^2$ and $\Pi_{WW}(0)=M_W^2$ in the reference theory, so the two non-zero values are not free but are fixed by the two measured masses.</p>
 <p>Each function is expanded about $q^2=0$,</p>
 <p>$$
 \Pi_{VV'}(q^2)=\Pi_{VV'}(0)+q^2\,\Pi'_{VV'}(0)+\tfrac12 q^4\,\Pi''_{VV'}(0)+\cdots ,
@@ -194,7 +194,7 @@ $$</p>
 <tr>
 <td>$\Pi_{\gamma\gamma}(0)=0$ and $\Pi_{Z\gamma}(0)=0$</td>
 <td>$6$ remain</td>
-<td>electromagnetic gauge invariance</td>
+<td>electromagnetic local invariance</td>
 </tr>
 <tr>
 <td>$\alpha$, $G_F$, $M_Z$ as inputs</td>
@@ -420,7 +420,7 @@ $$</p>
 <p>The same fit cannot predict the mass of a new sector, because a new sector enters with three unknown parameters rather than one. What the fit supplies for new physics is an allowed region in the $S$–$T$ plane, not a number.</p>
 <p>The number to remember is $1/(6\pi)=0.053$ per unit of $\ln M_H$. The same factor appears as the large-$N$ estimate $N_c/(6\pi)$ for a chiral doublet's contribution to $S$, and the two are easy to confuse: one is a slope in the Higgs mass, the other an estimate of a finite mixing from a fermion loop. They enter different fits and they are not interchangeable.</p>
 <h2 id="what-the-parameters-cannot-see">What the Parameters Cannot See</h2>
-<p>The three parameters describe new physics that couples to the Standard Model <em>only</em> through the gauge-boson self-energies. That is a strong assumption, and it fails in identifiable ways.</p>
+<p>The three parameters describe new physics that couples to the Standard Model <em>only</em> through the connection self-energies. That is a strong assumption, and it fails in identifiable ways.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -447,7 +447,7 @@ $$</p>
 </tr>
 <tr>
 <td>a sector coupling only to the Higgs</td>
-<td>it shifts $M_H$ and the quartic, not the gauge functions</td>
+<td>it shifts $M_H$ and the quartic, not the phase functions</td>
 <td>the Higgs couplings</td>
 </tr>
 <tr>
@@ -505,11 +505,11 @@ $$</p>
 <tbody>
 <tr>
 <td>Transversality of the self-energy from the Ward identity</td>
-<td>the algebra's, via the gauge-fixing article's projector</td>
+<td>the algebra's, via the fixing the representative article's projector</td>
 </tr>
 <tr>
 <td>The projector algebra $P^2=P$, $L^2=L$, $P+L=\delta$</td>
-<td>from the gauge-fixing article</td>
+<td>from the fixing the representative article</td>
 </tr>
 <tr>
 <td>The count $8-2-3=3$</td>
@@ -543,15 +543,15 @@ $$</p>
 <li>The count is a dimension. The three parameters are the dimension of a quotient of the eight Taylor coefficients by five constraints, and a dimension is exactly what a linear-algebra framework can state without knowing the dynamics.</li>
 </ul>
 <p>What the algebra does not contribute is the numerical values, and the <em>existence</em> of the three parameters as measurements. The framework can say why three combinations survive; it cannot say what they are worth, because their worth is set by the particle content, and the particle content has no framework route.</p>
-<p>Those two statements are what make the article consistent with the gauge-fixing article rather than merely adjacent to it: the same $P$ and $L$, the same Ward identity, the same $\Pi$.</p>
+<p>Those two statements are what make the article consistent with the fixing the representative article rather than merely adjacent to it: the same $P$ and $L$, the same Ward identity, the same $\Pi$.</p>
 <p>The oblique parameters are a <em>summary</em> of heavy physics, not a theory of it. Nothing in the framework or in the algebra produces the heavy sector to be summarised, so the article's subject is what the Standard Model's precision data say about the absence of such a sector, and it is silent on what such a sector would be.</p>
 <h2 id="summary">Summary</h2>
-<p>Three numbers summarise heavy new physics in the gauge sector, and their number is forced: four self-energy functions with value and slope give eight numbers, two vanish by electromagnetic gauge invariance, three are absorbed by the measured inputs $\alpha$, $G_F$ and $M_Z$, and three survive. The count is $8-2-3=3$ and it is a dimension, not a convention.</p>
+<p>Three numbers summarise heavy new physics in the sector, and their number is forced: four self-energy functions with value and slope give eight numbers, two vanish by electromagnetic local invariance, three are absorbed by the measured inputs $\alpha$, $G_F$ and $M_Z$, and three survive. The count is $8-2-3=3$ and it is a dimension, not a convention.</p>
 <p>$T$ is the $\rho$ parameter written as a deviation, $\alpha T=\rho-1$; with $T=0.05$ the custodial relation holds to $3.6\times10^{-4}$. $S$ is what survives the subtraction in the neutral sector — the $W_3$–$B$ mixing together with the difference $\Pi'_{ZZ}-\Pi'_{\gamma\gamma}$ — and it is largest for a degenerate chiral doublet, at $N_c/(6\pi)$; $U$ is the same kind of difference taken in the derivative, which is why $U$ is the smallest and the least measured. A custodially invariant sector has $T=U=0$ exactly, and the statement is the value and the derivative of one relation, $\Pi_{WW}(q^2)=\Pi_{W_3W_3}(q^2)$, whose $q^2=0$ case is $M_W=M_Zc_W$.</p>
 <p>The measured values are $S=0.00\pm0.07$, $T=0.05\pm0.06$ and $U=0.02\pm0.06$, with an $S$–$T$ correlation near $+0.9$. The strong correlation is not a detail: it means the two uncertainties cannot be combined in quadrature and that a sector moving along the ellipse is less constrained than either bound suggests.</p>
 <p>A mass splitting shifts $T$ through the Veltman bracket, which is quadratic in $\delta m^2$ for a near-degenerate pair and linear in the heavy mass for a hierarchical one; the popular linear estimate $\delta\rho\simeq N_cG_F\delta m^2/(8\sqrt2\pi^2)$ overestimates the near-degenerate case by more than two orders of magnitude, and the table above shows the exact values beside it. The top–bottom pair contributes $T=1.27$ and sits inside the reference, which is what the subtraction means. An exactly degenerate <em>chiral</em> pair has $T=U=0$ by custodial symmetry and $S=N_c/(6\pi)$ at full strength; it is the vector-like pair, with equal left and right couplings, that vanishes from all three. $S$ is therefore a meter of chiral versus vector-like structure, not of particle count.</p>
 <p>The standard large-$N$ estimate for a chiral doublet's contribution to $S$, $N_c/(6\pi)=0.053$, is the size of the experimental uncertainty. That coincidence is what makes the sector a precision test: one chiral doublet at the electroweak scale would be visible, and none is. A vector-like singlet, and any state with no isospin, shifts nothing at leading order, so the parameters measure multiplet structure and its breaking rather than the presence of heavy states. The oblique description is itself a hypothesis, tested by the fit's residuals, with a date on it.</p>
-<p>The framework supplies the transversality of the self-energy through the gauge-fixing article's projector, and the dimension count as linear algebra. It does not supply the definitions, the numbers, or the particle content.</p>
+<p>The framework supplies the transversality of the self-energy through the fixing the representative article's projector, and the dimension count as linear algebra. It does not supply the definitions, the numbers, or the particle content.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

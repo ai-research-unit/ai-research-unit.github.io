@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Machinery Under the Primordial Action: The Trace, the Curvature, the Ghosts and the One-Loop Determinant — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Every step between the primordial block&#x27;s field content and its numbers is derived here, in the block&#x27;s notation, so that a reader who stays…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-machinery-under-the-primordial-action-the-trace-the-curvature-the-ghosts-and-the-one-loop-determinant"><strong>The Machinery Under the Primordial Action: The Trace, the Curvature, the Ghosts and the One-Loop Determinant</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Every step between the primordial block's field content and its numbers is derived here, in the block's notation, so that a reader who stays inside the category never needs a result stated in another block.</p>
+<p><strong>Why one article and not four references.</strong> Four steps are used by more than one article of the block. The trace fixes the $\tfrac14$ of the display and every vertex read from it. The curvature identity gives the fifteen Gauss laws that set the degree-of-freedom count. The ghosts enter the action written and are never derived. The one-loop coefficient is applied to the matrix but derived for the doublet. <strong>None of the four is long</strong>, and each is one page of algebra the block can own rather than rent.</p>
+<p>| step | used by | enters at |</p>
+<p>| --- | --- | --- |</p>
+<p>| the cyclic trace and its normalisation | the display, every vertex, the instanton | §<em>The Trace</em> |</p>
+<p>| $[D_{\imath},D_{\jmath}]=-ig_{4}F_{\imath\jmath}$, adjoint covariance, Bianchi | the Gauss laws, the Feynman rules, the instanton | §<em>The Curvature</em> |</p>
+<p>| Faddeev–Popov gauge fixing, fifteen ghosts, one $\zeta$ | $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{\mathrm{gh}}$, the count $78$ | §<em>The Ghosts</em> |</p>
+<p>| the one-loop master formula and which determinants drop out | the $\rho^{4}\ln\rho^{2}$ coefficient | §<em>The Determinants</em> |</p>
+<p><strong>What is assumed and not derived.</strong> That the fifteen arrays exist, that the group is $\mathrm{SU}(4)$, that the content is the sixteen Weyl fields and the Hermitian matrix $\Xi$, and that the sector carries one coupling $g_{4}$. <strong>The arrays are the boson block's subject</strong>; this article takes them as the representation it is handed.</p>
+<p><strong>The ceiling, stated at the door.</strong> Only the first step needs a representation the algebra does not contain: the trace runs on $\mathbb{C}^{4}$ while $\mathbb{B}\cong M_{2}(\mathbb{C})$ holds $\mathbb{C}^{2}$, so the density is transcribed in a precise sense. <strong>The other three steps are theorems about any connection or any first-class algebra</strong> and do not inherit the ceiling. §<em>The Ceiling</em> separates the two cases and says what the difference costs.</p>
+<h2 id="the-trace-and-the-factor-of-four">The Trace, and the Factor of Four</h2>
+<p><strong>The action needs a density, and a density has to be a number that no local transformation moves.</strong> Three properties are wanted at once, and one functional supplies all three.</p>
+<p><strong>It is invariant, because a trace is cyclic.</strong> For $\mathbb{F}_{\imath\jmath}=\sum_{a}F_{a,\imath\jmath}t_{a}$ and $F'_{\imath\jmath}=U\mathbb{F}_{\imath\jmath}U^{\dagger}$,</p>
+<p>$$
+
+\operatorname{tr}\bigl(F'^{2}\bigr)=\operatorname{tr}\bigl(U\mathbb{F}^{2}U^{\dagger}\bigr)=\operatorname{tr}\bigl(\mathbb{F}^{2}\bigr),
+
+$$</p>
+<p>so the density is the same at every gauge. <strong>The cyclicity is the whole of the invariance</strong>, and a pairing that is not cyclic has no invariant square to offer.</p>
+<p><strong>It is real, because the curvature is Hermitian.</strong> With $t_{a}$ Hermitian and $F_{a,\imath\jmath}$ real, $\mathbb{F}$ is Hermitian, so $\mathbb{F}^{2}$ is Hermitian and its trace is real. <strong>Positivity follows from the same fact</strong>: the trace of the square of a nonzero Hermitian matrix is positive, which is what a kinetic term needs.</p>
+<p><strong>It is a trace over $\mathbb{C}^{4}$, and that is the whole of what the block asks of the algebra.</strong></p>
+<h3 id="two-norms-and-one-normalisation">Two Norms and One Normalisation</h3>
+<p><strong>The printed arrays are anti-Hermitian and their trace norms take two values, and the difference is a factor of six.</strong></p>
+<p>| family | count | $\operatorname{tr}\bigl(G^{\dagger}G\bigr)$ | $\operatorname{tr}\bigl(G^{2}\bigr)$ |</p>
+<p>| --- | --- | --- | --- |</p>
+<p>| the twelve planes, $A_{\imath\jmath}$ and $iS_{\imath\jmath}$ | $12$ | $2$ | $-2$ |</p>
+<p>| the colour diagonals, before the rotation | $2$ | $2$ | $-2$ |</p>
+<p>| the corner $iD$ | $1$ | $12$ | $-12$ |</p>
+<p><strong>So a single normalisation constant cannot serve</strong>, and the normalisation is $t_{a}=iG_{a}/\sqrt{2n_{a}}$ with $n_{a}$ the array's own norm: $t_{a}=iG_{a}/2$ on the fourteen of norm $2$, and $t_{15}=iG_{15}/\sqrt{24}$ on the corner. <strong>The factor six is the reason a vertex read off $G_{a}$ instead of $t_{a}$ is wrong by $\sqrt{6}$ on the corner and by $1$ on the planes</strong>, which is a mismatch no overall rescaling repairs.</p>
+<p><strong>The condition $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ is then a condition on the basis and not only on the normalisation.</strong> A norm fixes an array's length and not its angle, so two arrays can still fail to be transverse: on the set built from the printed rows, exactly two pairs fail, and both pair the corner with a colour diagonal. <strong>The rotation of the two colour diagonals into an orthogonal pair is what removes them</strong>, and that rotation is part of the block's normalisation rather than a convenience.</p>
+<p><strong>With sixteen such generators the density identity is one line.</strong></p>
+<p>$$
+
+\mathbb{F}_{\imath\jmath}=\sum_{a}F_{a,\imath\jmath}t_{a}
+
+\quad\Longrightarrow\quad
+
+\operatorname{tr}\Bigl(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath}\Bigr)
+
+=\tfrac12\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath},
+
+$$</p>
+<p>so $-\tfrac12\operatorname{tr}(\sum\mathbb{F}\mathbb{F})=-\tfrac14\sum_{a}F_{a}F_{a}$. <strong>The $\tfrac14$ is therefore not a choice of convention</strong>: it is the coefficient the normalisation forces, and it moves if the normalisation does.</p>
+<p><strong>Why the density is a trace and not a second invariant of the algebra.</strong> The block has one pairing available on $\mathbb{B}$, the scalar part $2\operatorname{Sc}(\tilde Q_{1}\tilde Q_{2})$, and on $M_{2}(\mathbb{C})$ that pairing <em>is</em> the trace: the three imaginary units are traceless, so $\operatorname{tr}\tilde Q=2\operatorname{Sc}\tilde Q$ and $2\operatorname{Sc}(\tilde Q_{1}\tilde Q_{2})=\operatorname{tr}(\tilde Q_{1}\tilde Q_{2})$. <strong>Its cyclicity is not in question; its dimension is.</strong> The fifteen generators are $4\times4$ and the biquaternion is $2\times2$, so the algebra's pairing has no argument on which to act. <strong>That is the precise content of the corpus's sentence that the algebra's pairing is unavailable for this action</strong>, and it is a statement about the size of the matrix and not about the trace's symmetry.</p>
+<p><strong>And the sign is a second trap in the same place.</strong> On the printed anti-Hermitian arrays $\operatorname{tr}(G_{a}^{2})=-2$ and $-12$, so a density written on $G_{a}$ has the wrong sign for every one of the fifteen. <strong>Two knobs, one number</strong>: the normalisation and the sign are both fixed by the same table, which is why the block writes every vertex in $t_{a}$.</p>
+<h2 id="the-curvature-covariance-the-commutator-the-bianchi-identity">The Curvature: Covariance, the Commutator, the Bianchi Identity</h2>
+<p><strong>Three statements, and the block uses each one for a different purpose.</strong></p>
+<p><strong>The connection transforms inhomogeneously and the curvature transforms homogeneously.</strong> With $A'_{\imath}=UA_{\imath}U^{\dagger}+\tfrac{i}{g_{4}}U\partial_{\imath}U^{\dagger}$,</p>
+<p>$$
+
+D'_{\imath}=\partial_{\imath}-ig_{4}A'_{\imath}=U\bigl(\partial_{\imath}-ig_{4}A_{\imath}\bigr)U^{\dagger}=UD_{\imath}U^{\dagger},
+
+$$</p>
+<p>and the inhomogeneous term is exactly what cancels the derivative of $U$. <strong>So the covariant derivative is covariant by construction and not by a check</strong>, and $[D'_{\imath},D'_{\jmath}]=U[D_{\imath},D_{\jmath}]U^{\dagger}$ follows without further work.</p>
+<p><strong>The commutator of two covariant derivatives is the curvature, up to the coupling.</strong></p>
+<p>$$
+
+[D_{\imath},D_{\jmath}]=-ig_{4}\Bigl(\partial_{\imath}A_{\jmath}-\partial_{\jmath}A_{\imath}-ig_{4}[A_{\imath},A_{\jmath}]\Bigr)=-ig_{4}\mathbb{F}_{\imath\jmath},
+
+$$</p>
+<p>and the derivation is the product rule applied twice: the second derivatives cancel because partial derivatives commute, the two mixed terms cancel because each carries one derivative and one connection, and the leftover is the curl minus the commutator. <strong>The $i$ in the definition of $\mathbb{F}$ is what makes it Hermitian</strong>, since $[A_{\imath},A_{\jmath}]$ is anti-Hermitian for Hermitian $A$ and $-i$ times it is Hermitian.</p>
+<p><strong>The Bianchi identity is the Jacobi identity in disguise.</strong></p>
+<p>$$
+
+D_{\imath}\mathbb{F}_{\jmath\kappa}+D_{\jmath}\mathbb{F}_{\kappa\imath}+D_{\kappa}\mathbb{F}_{\imath\jmath}=0,
+
+$$</p>
+<p>which follows from $[D_{\imath},[D_{\jmath},D_{\kappa}]]+\text{cyclic}=0$ and the identification above. <strong>No equation of motion is used</strong>: the identity holds for every connection, including the ones that solve nothing.</p>
+<h3 id="three-statements-the-block-uses">Three Statements the Block Uses</h3>
+<p><strong>The Gauss law.</strong> The $\imath=t$ component of the field equation contains no second time derivative of $A_{a,t}$, because $\mathbb{F}_{tt}=0$ identically. <strong>It fixes $A_{a,t}$ in terms of the other fields rather than propagating it</strong>, one constraint per generator, fifteen in all, and each is first class. That is the count's first line: $4\times15=60$ components of the fifteen, less two per first-class constraint, gives $30$.</p>
+<p><strong>Covariant conservation.</strong> $\sum_{\imath}\varepsilon_{\imath}D_{\imath}\mathbb{F}_{\imath\jmath}$ is not divergenceless in the ordinary sense, so the current it equals is conserved only with the connection term. <strong>The conserved object is the covariant divergence, and above $M_{C}$ there is no charge</strong>, only a current, because the charge is defined by a residual symmetry and the symmetry is broken.</p>
+<p><strong>Why no component of $\mathbb{F}_{\imath\jmath}$ is a number.</strong> The six components mix under the adjoint action, so a statement about one of them is a statement in one gauge. <strong>This is what forces every vertex and every mass to be read from invariants</strong>, and it is the reason the block never quotes a single $F_{a,\imath\jmath}$ as a physical field.</p>
+<p><strong>What survives the transcription and what does not.</strong> The three statements above are properties of <em>any</em> connection: they hold for the fifteen exactly as they hold for the three of $\mathrm{SU}(2)$. <strong>The curvature's algebra is free of the ceiling; the topological integrality is not</strong>, and that distinction is what §<em>The Instanton</em> rests on.</p>
+<h2 id="the-ghosts-one-parameter-and-fifteen-grassmann-fields">The Ghosts: One Parameter and Fifteen Grassmann Fields</h2>
+<p><strong>The action as written fixes nothing about the gauge, so the path integral needs a fixing the representative insert and a determinant.</strong></p>
+<p><strong>One line of the Faddeev–Popov construction, in the block's notation.</strong> Insert unity as</p>
+<p>$$
+
+1=\int\mathcal{D}\omega\;\delta\bigl(F_{a}-\omega_{a}\bigr)\det\frac{\delta F_{a}}{\delta\alpha_{b}},
+
+\qquad
+
+F_{a}=\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}A_{a,\imath},
+
+$$</p>
+<p>average over $\omega$ with a Gaussian of width $\zeta$, and represent the determinant by Grassmann fields in the adjoint. <strong>The first factor is the fixing term the display already carries</strong>,</p>
+<p>$$
+
+\mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a}\Bigl(\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}A_{a,\imath}\Bigr)^{2},
+
+$$</p>
+<p>and the second is fifteen pairs of ghosts,</p>
+<p>$$
+
+\mathcal{L}_{\mathrm{gh}}=\sum_{a}\bar c_{a}\Bigl(-\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}D_{\imath}\Bigr)c_{a},
+
+$$</p>
+<p><strong>with the operator in the bracket being the variation of the fixing the representative function under a local transformation</strong>, which is why the ghost couples to the connection and to nothing else.</p>
+<h3 id="why-one-math87-and-not-four">Why One $\zeta$ and Not Four</h3>
+<p><strong>Because the group is simple, and the number of fixing parameters is the number of independent invariants the orbit admits.</strong> One factor means one; four factors would mean four plus the mixings between them, which is the difference between this block and the electroweak one. <strong>A reader who carries four $\zeta$'s over from the electroweak sector has changed the theory</strong>, since the extra three multiply terms that are not there.</p>
+<p><strong>The ghosts are complex Grassmann scalars in the adjoint: fifteen fields, thirty real components.</strong> A Grassmann field contributes minus one degree of freedom per real component in a loop and nothing on shell, so the pair subtracts two per generator. <strong>That is exactly the two polarisations a first-class constraint removes</strong>, and the two subtractions are the same subtraction counted twice in two ways.</p>
+<h3 id="what-the-ghost-subtracts">What the Ghost Subtracts</h3>
+<p><strong>The count, with the ghosts placed where they belong.</strong></p>
+<p>| field | components | on shell |</p>
+<p>| --- | --- | --- |</p>
+<p>| the fifteen $A_{a,\imath}$ | $60$ | $30$ |</p>
+<p>| the sixteen $\xi_{f}$ | $64$ real | $32$ states |</p>
+<p>| $\Xi$ | $16$ real | $16$ |</p>
+<p>| the ghosts $c_{a}$, $\bar c_{a}$ | $30$ Grassmann | $0$, loops only |</p>
+<p>| <strong>total</strong> | | $\mathbf{78}$ |</p>
+<p><strong>The two subtractions are one subtraction.</strong> Sixty components, less two per first-class constraint, leaves thirty; the ghost pair then contributes minus two per generator to the <em>loop</em> count and nothing to the on-shell one. <strong>So a table that subtracts the ghosts from the on-shell vectors subtracts twice</strong> and leaves no vector at all. <strong>The $78$ is a count of this phase only</strong>, and it is the number the block's census quotes.</p>
+<p><strong>The ghost operator is field-dependent, and the gauge determinant at the identity background is not.</strong> That asymmetry is used in §<em>The Determinants</em>: the ghost loop depends on $\Xi$ through $[\Xi,\cdot]$, so at a background proportional to the identity it depends on nothing.</p>
+<h2 id="the-determinants-three-drop-out-and-one-does-not">The Determinants: Three Drop Out and One Does Not</h2>
+<p><strong>One formula, and every determinant in the block is a choice of what to put in it.</strong></p>
+<p>$$
+
+V_{\mathrm{eff}}(\Xi_{0})=V(\Xi_{0})+\frac{1}{64\pi^{2}}\operatorname{STr}\Bigl[M^{4}\Bigl(\ln\frac{M^{2}}{\mu^{2}}-\frac{3}{2}\Bigr)\Bigr],
+
+$$</p>
+<p><strong>with one factor of $1/64\pi^{2}$ per real bosonic degree of freedom, minus one per fermionic one.</strong> The $\tfrac{1}{64\pi^{2}}$ is the constant-field value of $\tfrac12\int d^{4}k_{E}/(2\pi)^{4}\ln(k_{E}^{2}+m^{2})$; the $-\tfrac32$ is the scheme's, absorbed into $\mu$ by a finite renormalisation, and <strong>the coefficient of the logarithm is the only part that survives a change of scheme</strong>. That is why every effective-potential article in the corpus quotes a coefficient of $\rho^{4}\ln\rho^{2}$ and none quotes a constant.</p>
+<p><strong>Three assumptions, each named.</strong> The background is constant, so the result is a potential and not an action. Only the scalar has a background. The expansion is one loop in $\hbar$.</p>
+<h3 id="the-gauge-and-ghost-determinants-at-the-identity-background">The Gauge and Ghost Determinants at the Identity Background</h3>
+<p><strong>Both drop out, and the reason is one commutator.</strong></p>
+<p>$$
+
+M^{2}_{ab}\;\propto\;\operatorname{tr}\bigl([\Xi_{0},t_{a}][\Xi_{0},t_{b}]\bigr)
+
+=\Bigl(\frac{\rho}{2}\Bigr)^{2}\operatorname{tr}\bigl([\mathbb{1},t_{a}][\mathbb{1},t_{b}]\bigr)=0
+
+\qquad\text{for}\quad \Xi_{0}=\frac{\rho}{2}\mathbb{1},
+
+$$</p>
+<p><strong>because the identity commutes with every generator.</strong> No vector acquires a mass that depends on $\rho$, so the gauge determinant is a field-independent constant, and the ghost determinant is too, for the same reason through the same commutator. <strong>The assumption in the one-loop article is therefore not an assumption but a consequence of the background it chooses</strong> — and it fails at any background not proportional to the identity, which is why that article restricts itself to the identity direction.</p>
+<p><strong>The same commutator is why the vacuum's trace costs nothing in the sector</strong>: a shift $\Xi_{0}\mapsto\Xi_{0}+c\,\mathbb{1}$ leaves every $[\Xi_{0},t_{a}]$ unchanged.</p>
+<h3 id="the-fermion-determinant-and-the-sign-it-can-flip">The Fermion Determinant, and the Sign It Can Flip</h3>
+<p><strong>The fermion determinant does not drop out, and the reason is the operator the block exists to have.</strong></p>
+<p><strong>With the Yukawa $\mathcal{L}_{\mathrm{Yuk}}=y_{\alpha\beta}\bar\xi^{\alpha}\Xi\xi^{\beta}$ and the identity background, each of the sixteen Weyl fields acquires a mass</strong>, and the $2\times2$ matrix $y_{\alpha\beta}$ gives two eigenvalues $y_{1}$, $y_{2}$, each carried by four colour copies:</p>
+<p>$$
+
+m_{i}=\frac{y_{i}\rho}{2},
+
+\qquad i=1,2,
+
+\qquad \text{eight Dirac fields in all.}
+
+$$</p>
+<p><strong>So the "no other field has a background" argument does not reach the fermions</strong>: no fermion condenses, but every fermion is massive once $\Xi_{0}\neq0$, and its mass is proportional to $\rho$. <strong>That is the phase's own mechanism read backwards</strong>: the same coupling that gives the leptoquarks their masses in the broken phase gives the sixteen their masses in the symmetric one.</p>
+<p><strong>The contribution follows from the master formula with the fermionic sign and the four states of a Dirac field.</strong></p>
+<p>$$
+
+V_{1}^{f}=-\frac{4}{64\pi^{2}}\sum_{i=1}^{2}4\,m_{i}^{4}\ln\frac{m_{i}^{2}}{\mu^{2}}
+
+=-\frac{\rho^{4}}{64\pi^{2}}\bigl(y_{1}^{4}+y_{2}^{4}\bigr)\ln\frac{\rho^{2}}{\mu^{2}},
+
+$$</p>
+<p><strong>the $4$ inside from the Dirac trace and the $4$ outside from the colour copies, and the two $4$'s and the $16$ in $m^{4}$ leaving one.</strong> With $y_{1}=y_{2}=y$ the coefficient is $-\dfrac{y^{4}}{32\pi^{2}}$.</p>
+<p><strong>The total coefficient is the difference of the two, and the sign is not settled by the scalar sector.</strong></p>
+<p>$$
+
+\mathcal{C}_{\mathrm{tot}}=\frac{1}{16\pi^{2}}\Bigl(9\lambda_{1}^{2}-\frac{y^{4}}{2}\Bigr),
+
+\qquad
+
+\mathcal{C}_{\mathrm{tot}}&gt;0\iff y^{4}&lt;18\lambda_{1}^{2},
+
+\qquad
+
+y_{\mathrm{crit}}=1.456\,\sqrt{\lambda_{1}} .
+
+$$</p>
+<p><strong>So the scalar-only coefficient $\dfrac{9\lambda_{1}^{2}}{16\pi^{2}}$ is a ceiling and not the number.</strong> The fermion loop subtracts from it, and for $y\gtrsim1.5\sqrt{\lambda_{1}}$ the total turns negative, which reverses the stability conclusion that the one-loop article draws from the scalar sector alone. <strong>The condition is stated here so that the conclusion carries its warrant.</strong></p>
+<p><strong>What the negative sign does not mean.</strong> At large $\rho$ a negative $\rho^{4}\ln\rho^{2}$ term drives the potential down without bound, <strong>but the logarithm is already larger than the tree term there</strong>, at $\rho\gtrsim9\mu$ at $\lambda_{1}=1$ — so the region where the sign matters is the region where the one-loop potential is not a potential. <strong>The statement is about the neighbourhood of $\mu$, and it is a statement about a sign and not about a minimum.</strong></p>
+<h2 id="the-ceiling-restated-for-the-machinery">The Ceiling, Restated for the Machinery</h2>
+<p><strong>Four steps, and the ceiling cuts through two of them.</strong></p>
+<ul>
+<li>
+<p><em>The trace.</em> Invariance, reality and positivity are properties of a trace on any matrix algebra. <strong>What the block cannot have is the algebra's own pairing</strong>, because that pairing is the trace on $\mathbb{C}^{2}$ and the field lives on $\mathbb{C}^{4}$. The cost is a representation, not a structure.</p>
+</li>
+<li>
+<p><em>The curvature identities.</em> $[D,D]=-ig_{4}\mathbb{F}$ and the Bianchi identity are theorems about connections. <strong>They are not transcribed</strong>: they hold on $\mathbb{C}^{4}$ for the same reason they hold on $\mathbb{C}^{2}$, and no coefficient from a table enters them.</p>
+</li>
+<li>
+<p><em>The ghosts.</em> The Faddeev–Popov construction fixes the gauge of any theory with a first-class algebra. <strong>Fifteen is a number inside it</strong>, not a hypothesis of it.</p>
+</li>
+<li>
+<p><em>The one-loop formula.</em> Mode counting and one momentum integral. <strong>It is transcription-free</strong>, and the only input the block supplies is the Hessian.</p>
+</li>
+</ul>
+<p><strong>So the machinery is not the weak part of the block.</strong> The transcribed objects are the fifteen arrays, the structure constants read from the table, and the topological charge whose integrality needs a bundle. <strong>Everything between the arrays and the numbers is ordinary field theory</strong>, and that is what makes the block's arithmetic checkable by anyone who never opens the corpus.</p>
+<h2 id="the-checks">The Checks</h2>
+<p>| claim | check | result |</p>
+<p>| --- | --- | --- |</p>
+<p>| the two trace norms | $\operatorname{tr}(G^{\dagger}G)$ over the fifteen printed arrays | $2$ and $12$ |</p>
+<p>| the corner against a plane | $12/2$ | $6$ |</p>
+<p>| the sign on the printed arrays | $\operatorname{tr}(G^{2})$ | $-2$ and $-12$ |</p>
+<p>| transversality | $\max_{a,b}\lvert\operatorname{tr}(t_{a}t_{b})-\tfrac12\delta_{ab}\rvert$ after the rotation | $0$ |</p>
+<p>| printed pairs that fail before it | $\operatorname{tr}(G_{a}G_{b})\neq0$, $a&lt;b$ | $2$, both with $iD$ |</p>
+<p>| the density identity | $\operatorname{tr}(\sum\mathbb{F}\mathbb{F})$ against $\tfrac12\sum_{a}F_{a}F_{a}$ | agree to $10$ digits |</p>
+<p>| $[D_{\imath},D_{\jmath}]=-ig_{4}\mathbb{F}_{\imath\jmath}$ | random connection on a $32$-point periodic grid, spectral derivative | error $4.6\times10^{-14}$, scale $18.3$ |</p>
+<p>| $F'=U\mathbb{F}U^{\dagger}$ | $U(x)=\exp(i\theta_{a}(x)t_{a})$, unitarity error $2.2\times10^{-15}$ | error $5.5\times10^{-9}$ |</p>
+<p>| the density is invariant | $\operatorname{tr}(F'^{2})$ against $\operatorname{tr}(\mathbb{F}^{2})$ | differ by $2.3\times10^{-13}$ |</p>
+<p>| the Bianchi identity | $D_{[\imath}\mathbb{F}_{\jmath\kappa]}$ on the same connection | error $6.5\times10^{-14}$ |</p>
+<p>| $[\mathbb{1},t_{a}]=0$ | all fifteen | $0$, so the gauge mass matrix vanishes at $\Xi_{0}\propto\mathbb{1}$ |</p>
+<p>| the scalar coefficient | $\frac{36\lambda_{1}^{2}}{64\pi^{2}}$ | $\frac{9\lambda_{1}^{2}}{16\pi^{2}}$ |</p>
+<p>| the fermion coefficient, $y_{1}=y_{2}=y$ | $-\frac{4\cdot4}{64\pi^{2}}\cdot\frac{y^{4}}{16}$ | $-\frac{y^{4}}{32\pi^{2}}$ |</p>
+<p>| the sign condition | $9\lambda_{1}^{2}$ against $\tfrac12y^{4}$ | $y&lt;1.456\sqrt{\lambda_{1}}$ |</p>
+<p><strong>One methodological note, because it bit this article first.</strong> A white-noise test field breaks the product rule on a grid, since products of Nyquist modes alias, and a commutator check run on white noise reports errors of order the field. <strong>The test fields here are bandlimited to three modes</strong>, which is what makes the errors above of order $10^{-14}$ and not of order one.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The primordial block rests on four results, and this article derives all four in its own notation: the cyclic trace with its two norms and the factor $\tfrac14$; the curvature's covariance, the commutator identity and the Bianchi identity; the Faddeev–Popov fixing the representative with one parameter and fifteen ghosts; and the one-loop master formula with its $1/64\pi^{2}$ per real mode.</strong></p>
+<p><strong>The trace is a trace on $\mathbb{C}^{4}$ and not the algebra's scalar part, for a reason of dimension and not of symmetry</strong>: $2\operatorname{Sc}$ equals $\operatorname{tr}$ on $M_{2}(\mathbb{C})$, and the fifteen generators do not live there.</p>
+<p><strong>The gauge and ghost determinants drop out at the identity background because the identity commutes with every generator</strong>, so no vector mass depends on $\rho$; that is a consequence and not an assumption.</p>
+<p><strong>The fermion determinant does not drop out, because the Yukawa gives the sixteen masses $y_{i}\rho/2$</strong>, and its coefficient $-\frac{1}{64\pi^{2}}(y_{1}^{4}+y_{2}^{4})$ can make the total one-loop coefficient negative. <strong>The scalar-only coefficient is a ceiling, and the sign condition is $y^{4}&lt;18\lambda_{1}^{2}$.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>| symbol | meaning |</p>
+<p>| --- | --- |</p>
+<p>| $t_{a}$ | the fifteen normalised Hermitian generators, $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ |</p>
+<p>| $G_{a}$ | the printed anti-Hermitian arrays, $\operatorname{tr}(G_{a}^{\dagger}G_{a})=2$ or $12$ |</p>
+<p>| $A_{a,\imath}$ | the fifteen connection components, real |</p>
+<p>| $\mathbb{F}_{\imath\jmath}$ | $\sum_{a}F_{a,\imath\jmath}t_{a}$, the curvature as a matrix |</p>
+<p>| $D_{\imath}$ | $\partial_{\imath}-ig_{4}A_{\imath}$, the covariant derivative in the representation |</p>
+<p>| $\zeta$ | the one fixing parameter |</p>
+<p>| $c_{a}$, $\bar c_{a}$ | fifteen ghosts and antighosts, complex Grassmann, adjoint |</p>
+<p>| $\Xi_{0}$ | $\frac{\rho}{2}\mathbb{1}$, the identity background |</p>
+<p>| $y_{1}$, $y_{2}$ | the two eigenvalues of the Yukawa matrix $y_{\alpha\beta}$ |</p>
+<p>| $\mathcal{C}$ | the coefficient of $\rho^{4}\ln(\rho^{2}/\mu^{2})$ |</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>
+<p><a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a>. The display these four steps support, and the article whose assumptions are discharged here.</p>
+</li>
+<li>
+<p><a href="the-lagrangian-and-the-non-abelian-gauge-fields.html">The Lagrangian and the Non-Abelian Gauge Fields</a>. The $\mathrm{SU}(2)$ action written in the algebra, against which the transcription of §<em>The Ceiling</em> is measured.</p>
+</li>
+<li>
+<p><a href="the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html">The One-Loop Effective Potential of the Scalar Matrix</a>. The Hessian and the coefficient this article supplies the fermionic half of.</p>
+</li>
+<li>
+<p><a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a>. The tree potential whose quartics enter the scalar coefficient.</p>
+</li>
+<li>
+<p><a href="the-su4-instanton-a-matrix-transcription-outside-the-algebra.html">The $\mathrm{SU}(4)$ Instanton</a>. Where the topological density, and the bundle it needs, are the subject.</p>
+</li>
+<li>
+<p><a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">The Feynman Rules of the $\mathrm{SU}(4)$ Model</a>. The vertices read off the normalisation fixed in §<em>The Trace</em>.</p>
+</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

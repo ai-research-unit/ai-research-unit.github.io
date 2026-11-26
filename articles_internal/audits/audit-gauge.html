@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The Word *Gauge*, and What a Purge Can and Cannot Reach — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Audit, and the purge has begun: two batches, 19 occurrences removed from 14 files, no claim changed. The corpus holds 6 200…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-word-gauge-and-what-a-purge-can-and-cannot-reach"><strong>Audit: The Word <em>Gauge</em>, and What a Purge Can and Cannot Reach</strong></h1>
+<p><em>Status of this file.</em> <strong>Audit, and the purge has begun: two batches, 19 occurrences removed from 14 files, no claim changed.</strong> The corpus holds 6 200 occurrences of the word in <code>articles_physics</code>, 1 396 in <code>articles_maths</code>, 341 in the two menus. The verdict below is that the word can be reduced to a residue of 414 in physics, and that the notion cannot be removed. Nothing was edited to produce this file.</p>
+<p><em>What the file is for.</em> It records the discussion that produced it, defines how the word is to be searched and reported, and sets out the migration strategies, in the order they should be run, with the count each stage should reach.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>A word and a notion are two different targets.</strong> The word is a naming defect and is fixable; the notion — <em>more labels than states</em> — is a theorem of the corpus and stays.</li>
+<li><strong>"Gauge" is almost always an adjective.</strong> Three occurrences in four modify a noun that already carries the meaning, and deleting the adjective loses nothing.</li>
+<li><strong>Titles, menus and slugs are the visible surface.</strong> They are fixed first, because that is all a reader sees, and the slugs cannot be renamed at all.</li>
+<li><strong>A purge is measured per article, never in bulk.</strong> The distribution is so skewed that six articles hold more than a hundred occurrences each while 312 articles hold none.</li>
+<li><strong>No replacement word may collide with a word the corpus already uses.</strong> "Frame" fails on this test and is rejected.</li>
+</ol>
+<h2 id="1-the-claim-under-test">1. The Claim Under Test</h2>
+<p><strong>The accusation.</strong> The word carries a century of baggage and names nothing a reader can picture. <em>Force</em> names an interaction. <em>Space</em> names a manifold. <em>Gauge</em> names what a description is permitted to do twice. A label of that kind invites the reader to look for a substance where there is a redundancy.</p>
+<p><strong>The defence, and it is narrow.</strong> The corpus cannot do without the notion, for a reason internal to its own arithmetic. Three counts in the corpus are the same count:</p>
+<ul>
+<li>the fifteen vectors carry $60$ components and $30$ states, because fifteen Gauss laws each remove two;</li>
+<li>the unbroken phase carries $140$ components and $78$ states;</li>
+<li>the anomaly of the sixteen cancels because $\mathbf4$ and $\bar{\mathbf4}$ are paired, and not because three traces vanish.</li>
+</ul>
+<p><strong>Each of those sentences says one thing: the labels outnumber the states.</strong> <em>Connection</em> names the field that carries the labels. <em>Covariance</em> names how the labels move. <em>Local symmetry</em> names the group that moves them. <strong>None of the three names the surplus.</strong> That surplus is what the word <em>gauge</em> was coined for, and no substitute on any list supplies it.</p>
+<p><strong>The verdict, therefore, is two-sided.</strong> The word is a bad name in $73\%$ of its uses, where it is a decorative adjective. It is a necessary name in the quarter where it stands alone and says <em>the map is many-to-one</em>. §6 separates the two and gives each its own treatment.</p>
+<p><strong>What was proposed and rejected.</strong> A replacement set was drawn up and put to the audit: <em>local frame</em> for gauge, <em>local rotation</em> for gauge transformation, <em>connection</em> for gauge field, <em>local frame independence</em> for gauge invariance, <em>choice of frame</em> for gauge fixing, <em>frame-rotation group</em> for gauge group. <strong>Four of the six fail the collision test of §5</strong>, and the first one fails hardest.</p>
+<h2 id="2-the-census">2. The Census</h2>
+<p><strong>Measured on 26 November 2026.</strong> Every count below is produced by the commands of §7.1, run from the repository root.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>collection</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tokens</td>
+<td><code>articles_physics</code></td>
+<td><strong>6 200</strong></td>
+</tr>
+<tr>
+<td>tokens</td>
+<td><code>articles_maths</code></td>
+<td><strong>1 396</strong></td>
+</tr>
+<tr>
+<td>tokens</td>
+<td><code>physics.md</code>, <code>maths.md</code></td>
+<td><strong>341</strong> ($261 + 80$)</td>
+</tr>
+<tr>
+<td>tokens</td>
+<td><code>articles_internal</code></td>
+<td><strong>752</strong>, of which $106$ in <code>audits/</code></td>
+</tr>
+<tr>
+<td>files touched</td>
+<td><code>articles_physics</code></td>
+<td><strong>403</strong> of $716$</td>
+</tr>
+<tr>
+<td>files touched</td>
+<td><code>articles_maths</code></td>
+<td><strong>160</strong> of $2\,639$</td>
+</tr>
+<tr>
+<td>titles containing the word</td>
+<td>both collections</td>
+<td><strong>32</strong></td>
+</tr>
+<tr>
+<td>slugs containing the word</td>
+<td>both collections</td>
+<td><strong>31</strong></td>
+</tr>
+<tr>
+<td>occurrences on a citation line</td>
+<td><code>articles_physics</code></td>
+<td><strong>153</strong></td>
+</tr>
+<tr>
+<td>occurrences inside a link target</td>
+<td><code>articles_physics</code></td>
+<td><strong>206</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The five commands that produce the table.</strong></p>
+<pre><code>grep -rhoiE '\bgauge\w*' --include='*.md' articles_physics | wc -l
+grep -rliE '\bgauge\w*' --include='*.md' articles_physics | wc -l
+grep -rlE '^# __.*[Gg]auge' --include='*.md' articles_physics articles_maths | wc -l
+grep -rhiE '^\- .*gauge' --include='*.md' articles_physics | grep -E '\([12][09][0-9]{2}\)|arXiv|Press|Rev\.' | grep -oi gauge | wc -l
+grep -rhoiE ']\([^)]*gauge[^)]*\)' --include='*.md' articles_physics | grep -oi gauge | wc -l
+</code></pre>
+<p><strong>The distribution is the important number, and it is extreme.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>threshold</th>
+<th>files at or above it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ge100$ occurrences</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\ge50$</td>
+<td>$26$</td>
+</tr>
+<tr>
+<td>$\ge30$</td>
+<td>$61$</td>
+</tr>
+<tr>
+<td>$\ge20$</td>
+<td>$97$</td>
+</tr>
+<tr>
+<td>$\ge10$</td>
+<td>$169$</td>
+</tr>
+<tr>
+<td>$\ge5$</td>
+<td>$250$</td>
+</tr>
+<tr>
+<td>$\ge1$</td>
+<td>$403$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$312$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The top six files hold $705$ occurrences, $11.4\%$ of the physics total. The top twenty hold $1\,791$, $28.9\%$. The top sixty hold $3\,411$, $55.0\%$. <strong>The median file that contains the word at all contains it seven times.</strong> A purge is therefore not a corpus-wide find-and-replace with a risk everywhere; it is twenty-six files of real work and a long tail of small edits.</p>
+<p><strong>The six heaviest.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>occurrences</th>
+<th>density per 1 000 words</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>137</td>
+<td>34.0</td>
+<td>The Gauge Field Path Integral in Biquaternionic Form</td>
+</tr>
+<tr>
+<td>120</td>
+<td>19.4</td>
+<td>Gauge Redundancy and the Information in the Gauge Orbit</td>
+</tr>
+<tr>
+<td>117</td>
+<td>20.3</td>
+<td>The Higgs Mechanism as an Erasure of Information</td>
+</tr>
+<tr>
+<td>112</td>
+<td>12.0</td>
+<td>Electroweak Theory in the Biquaternion Framework</td>
+</tr>
+<tr>
+<td>111</td>
+<td>11.0</td>
+<td>The Standard Model as the Low-Energy Phase</td>
+</tr>
+<tr>
+<td>108</td>
+<td>27.5</td>
+<td>BRST Symmetry in Biquaternionic Form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3-the-diagnosis-three-classes-and-one-frozen-subset">3. The Diagnosis: Three Classes, and One Frozen Subset</h2>
+<p><strong>Every occurrence falls into one of three classes</strong>, and a fourth row of the table is a subset rather than a class. The classification rule is the noun list of §6.1 and it is exhaustive: a token matched by <code>\bgauge\w*</code> is attributive if the next word is on the list, verbal if it is <code>gauged</code> or <code>gauges</code> used as a verb, and nominal otherwise.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>count</th>
+<th>share</th>
+<th>example</th>
+<th>survives deletion of the adjective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attributive — <em>gauge</em> before a noun</td>
+<td><strong>4 504</strong></td>
+<td>$73\%$</td>
+<td>the gauge orbit</td>
+<td>yes, the noun stands</td>
+</tr>
+<tr>
+<td>verbal — <em>to gauge</em> a symmetry</td>
+<td><strong>133</strong></td>
+<td>$2\%$</td>
+<td>the symmetry is gauged</td>
+<td>no, rephrased as <em>made local</em></td>
+</tr>
+<tr>
+<td>nominal — <em>the gauge</em>, standing alone</td>
+<td><strong>1 561</strong></td>
+<td>$25\%$</td>
+<td>in the gauge where $\partial\!\cdot\! A=0$</td>
+<td>no, and it should not</td>
+</tr>
+<tr>
+<td>of the total, inside a link target or a quoted title</td>
+<td>206</td>
+<td>—</td>
+<td><code>the-gauge-principle-…html</code></td>
+<td>no, the path is permanent</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The attributive class is the accusation, and it is correct.</strong> In <em>the gauge-fixing term</em>, in <em>the gauge determinant</em>, in <em>the gauge orbit</em>, in <em>the gauge parameter</em>, the noun already carries the physics. The adjective adds a pointer to the technique and no information. <strong>Deleting it changes no equation and weakens no claim.</strong></p>
+<p><strong>The nominal class is the defence, and it is narrow.</strong> $337$ occurrences are followed by punctuation or a function word — <em>the gauge is</em>, <em>in the gauge where</em>, <em>a gauge exists</em>. These are sentences about the many-to-one map, and about the fact that a computation may depend on the representative. <strong>They are not decoration, and a mechanical pass must not touch them.</strong></p>
+<p><strong>The maths collection holds a third sense, and it is the same mistake in another dress.</strong> There, <em>the gauge</em> is used as a noun meaning a fibre or a stabiliser: <em>the gauge is the fibre of the conjugation map over the root</em>; <em>the gauge group is the fibre over $H$</em>; <em>choosing a projective frame is choosing a gauge</em>. The construction is defensible. The word is not: what it names is a fibre or a stabiliser, and both words exist. $304$ occurrences of <em>the gauge is / of / as</em> appear in <code>articles_maths</code>.</p>
+<p><strong>And the evidence that the word is doing no work at all.</strong> Six articles of this corpus are <em>about</em> the word — the gauge principle, the gauge connection, the gauge orbit, the gauge field path integral, gauge fixing, the gauge algebras. Their density is $11$ to $34$ per thousand words, against a corpus average of $1.74$. <strong>The six hold $705$ occurrences in $39\,286$ words, $17.9$ per thousand; the rest of the collection holds $5\,495$ in $3.5$ million words, $1.56$ per thousand — nine times thinner.</strong> The word concentrates where the word is the subject, and nowhere else does it carry weight.</p>
+<h2 id="4-what-cannot-migrate">4. What Cannot Migrate</h2>
+<p><strong>Three residues, and each has a reason that is not a preference.</strong></p>
+<p><strong>Citations, 153 occurrences.</strong> A published title is quoted, not authored. <em>Non-Abelian Gauge Fields</em> is a paper's name. Rewriting it makes the reference unfindable, and the corpus's rule is that a cited title is data.</p>
+<p><strong>Slugs, 31 of them, and the URLs they produce.</strong> <code>build.py</code> has no redirect mechanism, and <code>prune_orphans()</code> deletes from the deploy tree every page whose source no longer exists. <strong>A renamed slug is therefore a dead link for anyone who kept it, with no forwarding page.</strong> Titles may change freely; slugs may not.</p>
+<p><strong>The notion, in about 340 places.</strong> <em>In the gauge where</em>, <em>the gauge is fixed</em>, <em>a gauge exists</em>. Each of these sentences is the many-to-one statement. Replace one with <em>connection</em> and the sentence becomes false: a connection is not many-to-one, the map from connections to field strengths is.</p>
+<h2 id="5-why-the-recommended-vocabulary-fails">5. Why the Recommended Vocabulary Fails</h2>
+<p><strong>A replacement word must be free.</strong> It is not enough that it be accurate; it must not already mean something else in the same corpus.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>proposed</th>
+<th>occurrences already in <code>articles_physics</code></th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>frame</td>
+<td><strong>6 924</strong> — <em>the biquaternion frame</em> alone is 951, <em>frame field</em> 79, <em>the Euclidean frame</em> 17</td>
+<td><strong>rejected.</strong> Two unrelated meanings on 13 000 sites</td>
+</tr>
+<tr>
+<td>rotor</td>
+<td><strong>3 184</strong> — the $\mathrm{SU}(2)$ rotor, a defined object</td>
+<td><strong>rejected.</strong> A collision with a defined symbol</td>
+</tr>
+<tr>
+<td>connection</td>
+<td><strong>2 885</strong></td>
+<td><strong>accepted</strong>, and already used in the right sense</td>
+</tr>
+<tr>
+<td>local symmetry</td>
+<td>11</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>local rotation</td>
+<td>5</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>internal symmetry</td>
+<td>27</td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>the redundancy</td>
+<td>139</td>
+<td>accepted, in the sense <em>redundancy of description</em></td>
+</tr>
+<tr>
+<td>minimal coupling</td>
+<td>164</td>
+<td>accepted, and it names what the principle proves</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The frame objection, stated precisely.</strong> <em>Frame</em> in this corpus is the observer's frame: the biquaternion frame of a sector, the Euclidean frame, the tetrad. It appears once per $513$ words, already. Adding a second meaning — <em>a choice of colour basis at each point</em> — would put two senses of one word on $13\,000$ sites, in a corpus whose method is one word per role. <strong>That is a worse defect than the one being repaired.</strong></p>
+<p><strong>The one substitution that costs nothing is <em>connection</em>.</strong> It is already the corpus's word for the field: <em>the gauge connection</em> occurs 111 times, and in every one of them <em>gauge</em> is redundant.</p>
+<h2 id="6-the-migration-strategies">6. The Migration Strategies</h2>
+<p><strong>Five strategies, in the order they must run.</strong> Each has an entry condition and an exit count.</p>
+<h3 id="61-strategy-a-the-noun-map-applied-attributively">6.1 Strategy A — The Noun Map, Applied Attributively</h3>
+<p><strong>Target: the 4 504 attributive occurrences.</strong> A fixed table maps the adjective-plus-noun to a noun phrase. Nothing else is touched.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>replaced by</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gauge field, fields, boson, bosons</td>
+<td>connection, connections, the connection's quanta</td>
+<td>625</td>
+</tr>
+<tr>
+<td>gauge transformation(s)</td>
+<td>local rotation (spin 1, $\mathrm{SU}(2)$) / local change of basis ($\mathrm{SU}(4)$)</td>
+<td>390</td>
+</tr>
+<tr>
+<td>gauge group</td>
+<td>the symmetry group, or the group by its name</td>
+<td>409</td>
+</tr>
+<tr>
+<td>gauge invariant, gauge invariance</td>
+<td>invariant under local rotations, local invariance</td>
+<td>701</td>
+</tr>
+<tr>
+<td>gauge principle</td>
+<td>minimal coupling</td>
+<td>280</td>
+</tr>
+<tr>
+<td>gauge freedom, gauge orbit</td>
+<td>the redundancy, the orbit of descriptions</td>
+<td>280</td>
+</tr>
+<tr>
+<td>gauge symmetry, symmetries</td>
+<td>local symmetry</td>
+<td>127</td>
+</tr>
+<tr>
+<td>gauge algebra(s)</td>
+<td>the algebra, or $\mathfrak{su}(4)$ by name</td>
+<td>126</td>
+</tr>
+<tr>
+<td>gauge connection(s)</td>
+<td>connection</td>
+<td>151</td>
+</tr>
+<tr>
+<td>gauge structure, gauge sector</td>
+<td>the structure, the sector</td>
+<td>181</td>
+</tr>
+<tr>
+<td>gauge parameter, choice, fixing, fixed</td>
+<td>the parameter, the choice of representative, fixing the representative</td>
+<td>467</td>
+</tr>
+<tr>
+<td>gauge-dependent, gauge-covariant</td>
+<td>representative-dependent, covariant</td>
+<td>110</td>
+</tr>
+<tr>
+<td>gauge theory</td>
+<td>the theory of connections, or the theory by its name</td>
+<td>235</td>
+</tr>
+<tr>
+<td><strong>covered by the map</strong></td>
+<td></td>
+<td><strong>4 082</strong></td>
+</tr>
+<tr>
+<td>unfilled — the adjective before a noun off the list</td>
+<td>classified by hand, per file</td>
+<td>422</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every count in the table is produced by one command</strong>, with the pattern written out in the form shown:</p>
+<pre><code>grep -ohiE '\bgauge[- ](fields?|bosons?)\b' -r --include='*.md' articles_physics | wc -l
+</code></pre>
+<p><strong>The map covers $91\%$ of the attributive class</strong>, $4\,082$ of $4\,504$, and the $422$ left over are the adjectives sitting on a noun the list does not name — <em>gauge mediation</em>, <em>gauge singlet</em>, <em>gauge content</em>, <em>gauge theory of flavour</em>. Those are read one at a time, because each of them is a compound the corpus invented and no table can predict.</p>
+<p><strong>The rule that keeps this honest.</strong> A substitution is applied only when the resulting sentence is still true and still parses. <em>The gauge field path integral</em> becomes <em>the connection path integral</em>, which is true. <em>Gauge-fixing in the electroweak theory</em> becomes <em>fixing the representative in the electroweak theory</em>, which is true. <strong>A sentence that needs a rewrite rather than a substitution is deferred to Strategy B</strong> and counted there.</p>
+<h3 id="62-strategy-b-the-twenty-six-heavy-files-rewritten-one-at-a-time">6.2 Strategy B — The Twenty-Six Heavy Files, Rewritten One at a Time</h3>
+<p><strong>Target: the 26 files at $\ge50$ occurrences.</strong> These are the articles whose subject is the concept, and no substitution table can serve them, because in them the word carries the argument. Each is read whole, and the word is replaced by what the sentence needs:</p>
+<ul>
+<li>in a passage about invariance: <em>the local symmetry</em>;</li>
+<li>in a passage about the field: <em>the connection</em>;</li>
+<li>in a passage about the surplus: <strong>the word stays, once, with a definition</strong>;</li>
+<li>in a passage about a calculation's dependence on the representative: <em>the representative</em>.</li>
+</ul>
+<p><strong>The definition, written once per article at most, and only where the surplus is used:</strong></p>
+<blockquote>
+<p>The map from connections to field strengths is many-to-one, and the surplus — the part of a connection that no field strength records — is what this article calls the gauge.</p>
+</blockquote>
+<p><strong>That sentence is the whole of what survives the purge, and it is the only place the word earns its keep.</strong> A reader who meets it once has the notion; a reader who meets the adjective on every page has only the habit.</p>
+<h3 id="63-strategy-c-titles-menus-and-headings">6.3 Strategy C — Titles, Menus and Headings</h3>
+<p><strong>Target: the 32 titles, 157 headings, and 261 menu occurrences.</strong> This is the visible surface, and it goes first, because a reader forms the impression from it and because the menu is the corpus's own outline.</p>
+<p><strong>Titles are free to change; slugs are not.</strong> A title rewrite keeps its file name, so the URL survives and the title states the object:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>title now</th>
+<th>title after</th>
+<th>slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Gauge Principle in Biquaternionic Form</td>
+<td>Minimal Coupling: Why the Derivative Must Carry the Connection</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>The Covariant Derivative and Gauge Connection</td>
+<td>The Covariant Derivative: One Connection, Six Subspaces</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>Non-Abelian Gauge Fields in Biquaternionic Form</td>
+<td>Non-Abelian Connections in Biquaternionic Form</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>Gauge Curvature and the Bianchi Identity</td>
+<td>The Curvature of a Connection and the Bianchi Identity</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>Gauge Redundancy and the Information in the Gauge Orbit</td>
+<td>Redundancy of Description: The Information in the Orbit</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>Gauge Fixing in the Electroweak Theory</td>
+<td>Fixing the Representative: $R_\xi$, Ghosts and the Goldstone Theorem</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>The Gauge Field Path Integral</td>
+<td>The Connection Path Integral</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>The Mass Matrix of the Fifteen Gauge Bosons</td>
+<td>The Mass Matrix of the Fifteen Connections</td>
+<td>unchanged</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The mismatch between title and slug is a cost, and it is the smaller cost.</strong> A slug that says <code>gauge-principle</code> under a title that says <em>minimal coupling</em> is a fossil, and a fossil is cheaper than a dead URL.</p>
+<p><strong>Section headings in <code>physics.md</code> carry the same treatment.</strong> <em>The General Gauge Machinery</em> becomes <em>The Action and the Equation of Motion</em>; the category title changes, the entries do not move.</p>
+<h3 id="64-strategy-d-the-maths-sense">6.4 Strategy D — The Maths Sense</h3>
+<p><strong>Target: the 1 396 occurrences in <code>articles_maths</code>, of which 304 are nominal.</strong> Here the word names a fibre, a stabiliser, or a torsor, and each of those words is available and exact.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>replaced by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the gauge (a fibre)</td>
+<td>the fibre</td>
+</tr>
+<tr>
+<td>the gauge group (a stabiliser)</td>
+<td>the stabiliser</td>
+</tr>
+<tr>
+<td>choosing a gauge (a section)</td>
+<td>choosing a representative</td>
+</tr>
+<tr>
+<td>the gauge torus</td>
+<td>the stabiliser torus</td>
+</tr>
+<tr>
+<td>gauge freedom</td>
+<td>the ambiguity of the representative</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>This is a smaller job than physics and it is cleaner</strong>, because the mathematics does not need the surplus: a fibre is a set, and a set is not many-to-one.</p>
+<h3 id="66-the-register-of-traps-kept-as-the-tail-is-worked">6.6 The Register of Traps, Kept as the Tail Is Worked</h3>
+<p><strong>Eleven traps were found in the first six tail files.</strong> Each is recorded with the rule it forces, because the tail is where a mechanical pass quietly produces a contradiction.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>trap</th>
+<th>found in</th>
+<th>the rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>a link description that reproduces a page title</td>
+<td><em>Confinement</em>, 4 handles</td>
+<td>the description <strong>is</strong> the title; never edit it in the tail. List it, and Stage C sweeps the whole set with one command</td>
+</tr>
+<tr>
+<td>2</td>
+<td>a paraphrase of a title</td>
+<td><em>the companion article on gauge redundancy</em></td>
+<td>the paraphrase must <strong>predict</strong> the new title, or it needs a second edit. Name the subject, not the page</td>
+</tr>
+<tr>
+<td>3</td>
+<td>defined notation</td>
+<td>$\digamma_{\mathrm{gau}}$ $468$, $\theta_{\mathrm{gau}}$ $187$, in $63$ files</td>
+<td>a symbol is not prose and the census never sees it. <strong>Stage F</strong>, one mechanical pass, never mixed with a sentence edit</td>
+</tr>
+<tr>
+<td>4</td>
+<td>a section heading that contains the word</td>
+<td><em>Why the Gauge Quantisation Does Not Transfer</em></td>
+<td>the corpus has <strong>no anchor links</strong> but <strong>$1\,572$</strong> <code>§*Heading*</code> references, $19$ of them with the word. A heading rename is a two-file edit: the heading, and every reference to it anywhere</td>
+</tr>
+<tr>
+<td>5</td>
+<td>a term of art</td>
+<td><em>pure gauge</em>, $95$ occurrences</td>
+<td>replace by what it means — <em>a pure rotation, with vanishing curvature</em> — never by a synonym. The meaning is in the phrase</td>
+</tr>
+<tr>
+<td>6</td>
+<td>the same phrase in three places</td>
+<td>statement, closing summary, ledger table</td>
+<td>a long article states its finding, restates it in the summary and tabulates it. <strong>Fix all three in the same pass</strong>, or the summary contradicts the body</td>
+</tr>
+<tr>
+<td>7</td>
+<td>the paragraph is wrapped at a newline</td>
+<td><em>Confinement</em>, $3$ fragments</td>
+<td>a fragment copied from a whitespace-collapsed reading will not match the file. <strong>Match on a fragment that spans no newline</strong>, and edit the piece, not the sentence</td>
+</tr>
+<tr>
+<td>8</td>
+<td>a heading that recurs across articles is a convention</td>
+<td><code>## Gauge Covariance</code> stands in $6$ articles</td>
+<td><strong>rename it in one coordinated pass or not at all.</strong> A single-article rename leaves the series inconsistent, and the reader sees the inconsistency</td>
+</tr>
+<tr>
+<td>9</td>
+<td>a compound the corpus invented</td>
+<td><em>gauge law</em>, $20$ occurrences</td>
+<td>replace it by the <strong>standard name that already exists</strong> in the corpus — <em>transformation law</em>, $149$ occurrences — so the pass introduces no new word</td>
+</tr>
+<tr>
+<td>10</td>
+<td>deferred sites accumulate in buckets</td>
+<td>$30$ of $178$ kept sites in six files</td>
+<td>keep three lists per batch — <strong>edited, frozen, deferred</strong> — and merge the deferred lists at Stage C, never one at a time</td>
+</tr>
+<tr>
+<td>11</td>
+<td>a description of another article's section</td>
+<td><em>the massless gauge field whose gauge structure</em></td>
+<td>neither prose nor a title: it moves when <strong>that</strong> section's heading moves. Put it in the deferred list of the article that owns the heading</td>
+</tr>
+<tr>
+<td>12</td>
+<td>a <strong>named class of theory</strong>, not a description</td>
+<td><em>lattice gauge theory</em> $30$, <em>chiral gauge theory</em> $20$, <em>pure gauge</em> $95$, <em>gauge-fixed</em> $26$, <em>gauging</em> $30$, <em>gauge coupling</em> $39$</td>
+<td>the name belongs to the literature, and the corpus keeps it where the result arrives under it. <strong>A family pass must exclude these six strings by name</strong>; each is a sentence-level decision, and most are kept</td>
+</tr>
+<tr>
+<td>13</td>
+<td>the whole <strong>line</strong> was excluded because it held a link</td>
+<td>$1\,635$ prose sites survived the first mechanical pass</td>
+<td>mask the link target and the italic title, then edit the rest of the line. <strong>Exclude the span, never the line</strong>: a long physics paragraph almost always holds a link somewhere</td>
+</tr>
+<tr>
+<td>14</td>
+<td>agreement, which the map does not see</td>
+<td><em>a invariant</em> $85$, <em>an connection</em> $148$, in $39$ files</td>
+<td>a substitution that changes the first letter of the noun <strong>changes the article</strong>. Repair in the same pass, and count it: <code>a/an</code> is a pass of its own</td>
+</tr>
+<tr>
+<td>15</td>
+<td>two entries of the map collide on one phrase</td>
+<td><em>local gauge symmetry</em> became <em>local local symmetry</em>, $5$ files</td>
+<td>apply the longer phrase first, and <strong>scan for a doubled word after every pass</strong>. The collision is invisible in a per-family count, because each family alone looks clean</td>
+</tr>
+<tr>
+<td>16</td>
+<td>a factor of the group is not a phase</td>
+<td><em>the corpus's non-abelian gauge factor</em> became <em>non-abelian phase factor</em>, false in most of $30$ sites</td>
+<td>name the object for what it is — <strong>a factor of the group</strong> — not for what its abelian instance looks like. The first attempt was reverted and the $31$ files reprocessed</td>
+</tr>
+<tr>
+<td>17</td>
+<td>a direction in the algebra is not a direction of redundancy</td>
+<td><em>the spatial and gauge directions</em> became <em>spatial and redundant directions</em>, false</td>
+<td><em>redundant</em> is a word for a <strong>count of representatives</strong>. It is wrong wherever the sentence names generators</td>
+</tr>
+<tr>
+<td>18</td>
+<td>the rewriting script destroyed the file structure</td>
+<td>$300$ files, $2\,157$ lines, every table and heading broken</td>
+<td>a pass that rebuilds a file from a match iterator on <code>.*</code> <strong>doubles every newline</strong>. Split on <code>\n</code>, join on <code>\n</code>, and compare the <code>&lt;h2&gt;</code>/<code>&lt;h3&gt;</code>/<code>&lt;table&gt;</code> counts against <code>git show HEAD:file</code> after <strong>every</strong> batch. That comparison caught the damage and nothing else did</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The nineteenth is not a trap but a discipline, and it is the one that matters.</strong> In <em>the-Centre</em> article the sentence <em>The spin $\mathbb{Z}_2$ is gauged, not superselecting</em> was ungrammatical before the pass and grammatical after it. <strong>A substitution that repairs the sentence is evidence the word was never doing work there.</strong> A substitution that requires a new clause is evidence the word was — and that site goes to the register of §6.5, not to the noun map.</p>
+<p><strong>Measured, after two mechanical passes and the repairs they needed.</strong> <code>articles_physics</code> stands at <strong>$6\,200 \rightarrow 2\,815$</strong>, with $333$ files edited and $3\,385$ occurrences removed. The residue of $2\,815$ classifies as:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>count</th>
+<th>state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>prose</td>
+<td>$1\,635$</td>
+<td>the reading list, one sentence at a time</td>
+</tr>
+<tr>
+<td>a page-title handle</td>
+<td>$412$</td>
+<td>frozen until Stage C, and <strong>larger than §2 implied</strong></td>
+</tr>
+<tr>
+<td>a link target</td>
+<td>$393$</td>
+<td>frozen, a permanent address</td>
+</tr>
+<tr>
+<td>a citation</td>
+<td>$235$</td>
+<td>frozen, quoted as published</td>
+</tr>
+<tr>
+<td>a heading, or a <code>§*Heading*</code> reference</td>
+<td>$150$</td>
+<td>Stage C, swept with the $19$ references</td>
+</tr>
+<tr>
+<td>the symbol <code>\mathrm{gau}</code></td>
+<td>$661$ — $468$ in <code>\digamma</code>, $193$ in <code>\theta</code></td>
+<td>Stage F, and <strong>verified identical to <code>HEAD</code></strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The census of §2 is not revised here.</strong> It describes the corpus before the pass and it is what the estimate was built on; §11 records the count after each batch. <strong>The title-handle pool is the one number that moved against the estimate</strong>: §6.3 counted $206$ link targets and $153$ citation lines and treated titles as $32$ page names, but a page name recurs in prose, and it recurs $412$ times. Stage C therefore renames a title and sweeps its handles in one commit, or it does not rename.</p>
+<p><strong>What the map bought, and what it cost.</strong> It is right for the six largest families — <em>invariant</em>, <em>field</em>, <em>transformation</em>, <em>group</em>, <em>symmetry</em>, <em>freedom</em> — and it took them out of the prose almost entirely: $364$ <em>gauge-invariant</em>, $278$ <em>gauge field</em>, $277$ <em>gauge transformation</em>, $244$ <em>gauge group</em>, $129$ <em>gauge freedom</em> in one pass. It is wrong wherever the word names <strong>a class</strong> (<em>gauge theory</em>, <em>gauge coupling</em>), <strong>a count</strong> (<em>gauge direction</em>), or <strong>a factor</strong> (<em>gauge factor</em>), and each of those three produced a false sentence that had to be reverted.</p>
+<p><strong>Four of the eighteen traps were created by the pass itself</strong> — 14, 15, 16, 17 — and one, 18, was created by the script that applied it. That is the ratio to expect from a mechanical pass: it is fast, and it invents its own failure modes. <strong>The corpus found eleven; the keyboard found seven.</strong></p>
+<p><strong>The tail, re-measured.</strong> $1\,635$ prose sites in $341$ files; the largest is <em>Gauge-Fixing in the Electroweak Theory</em> at $40$, the median near $4$, and the last hundred files hold one or two each. <strong>The tail after the map is no longer a count problem — it is a reading problem</strong>, and it is now the same problem as Stage B, which is why §6.2's method takes over from here.</p>
+<h3 id="67-the-file-that-is-not-to-be-touched">6.7 The File That Is Not to Be Touched</h3>
+<p><strong><code>articles_physics/conceptual-conventions.md</code> carries $19$ occurrences and all nineteen are frozen by instruction.</strong> The file is not an article that uses the word. It is the article that states the defect: <em>The word "gauge" is doing too much work and carries 100 years of confusing baggage</em>, followed by a five-row table of what to write instead. <strong>Purging it would delete the finding and leave the purge without its argument.</strong></p>
+<p><strong>The rule, and it is written into every script as an exclusion by filename.</strong> Nothing in the file is renamed — not the heading <code>## Unpreferred Concepts</code>, not the table rows, not the italic <em>gauge</em> in the sentence that names the word. The file is in the frozen column of §6.5 and it is not counted as a failure or a success.</p>
+<p><strong>One operational reason, beyond the argument.</strong> The file is untracked in git. A <code>git checkout</code> sweep does not restore it, and an edit to it cannot be undone from history. <strong>A frozen file with no history is a file that must be excluded before the pass starts, not repaired after it.</strong></p>
+<p><strong>A conflict, recorded and not resolved here.</strong> The file's replacement table proposes the <strong>frame</strong> vocabulary: <em>local frame rotation</em>, <em>choice of frame</em>, <em>frame-rotation group</em>. §5 measured that <em>frame</em> already means the observer's frame $6\,924$ times in this corpus, and rejected the word on that collision. <strong>The two cannot both stand.</strong> Until the author decides, the tail pass uses the two words of that table that survive §5 — <em>connection</em> and <em>local transformation</em> — and it does not write <em>frame</em> anywhere. <strong>This is a decision above the pass, and the pass does not take it.</strong></p>
+<h3 id="65-strategy-e-what-stays-and-why">6.5 Strategy E — What Stays, and Why</h3>
+<p><strong>Three kinds of site are frozen and are not counted as failures:</strong></p>
+<ol>
+<li><strong>$206$ occurrences inside link targets</strong>, which are permanent addresses;</li>
+<li><strong>$153$ occurrences on citation lines</strong>, quoted as published — measured as disjoint from the first set, so the frozen union is $359$;</li>
+<li><strong>the definition sentence of §6.2</strong>, at most once per heavy article, about $55$ occurrences in all.</li>
+</ol>
+<p><strong>The target residue for <code>articles_physics</code> is therefore $\approx414$</strong>, and it is reached by subtraction rather than by hope. Of the $6\,198$ classified occurrences, $359$ are frozen and about $55$ are definitional; the other $5\,784$ are removed. <strong>So the residue is $206 + 153 + 55 = 414$, and every remaining occurrence is frozen or definitional by construction.</strong> A target of zero is not available without breaking citations or URLs, and a purge that reports zero would be reporting a corpus that no longer cites the literature.</p>
+<h2 id="7-how-to-search-and-report">7. How to Search and Report</h2>
+<p><strong>One protocol, four steps, run per batch.</strong> The batch is the unit of work; a batch is one article, or one menu section, never a folder.</p>
+<h3 id="71-the-inventory">7.1 The Inventory</h3>
+<pre><code>grep -rnoiE '\bgauge[- ]?\w*' --include='*.md' articles_physics/&lt;file&gt;.md
+</code></pre>
+<p><code>-n</code> so every hit has a line number to report, <code>-o</code> so the hit is shown in isolation, and the word-boundary so <code>gauges</code> and <code>gauged</code> are found as themselves. <strong>Run it before the edit and keep the output</strong>, because the count before is the denominator of the report.</p>
+<h3 id="72-the-classification">7.2 The Classification</h3>
+<p><strong>Every hit is assigned to one of the three classes of §3 before any edit is made</strong>; whether it also sits in a link target is recorded beside it. A hit that cannot be classified is a hit that has not been read, and it is left alone and reported as unclassified.</p>
+<h3 id="73-the-report-one-row-per-article">7.3 The Report, One Row per Article</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>column</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>article</td>
+<td>the stem</td>
+</tr>
+<tr>
+<td>before</td>
+<td>occurrences, from the inventory</td>
+</tr>
+<tr>
+<td>attributive</td>
+<td>count, and the substitutions applied</td>
+</tr>
+<tr>
+<td>verbal</td>
+<td>count</td>
+</tr>
+<tr>
+<td>nominal</td>
+<td>count, with the ones kept and the reason</td>
+</tr>
+<tr>
+<td>after</td>
+<td>occurrences, from the same command re-run</td>
+</tr>
+<tr>
+<td>sentences rewritten</td>
+<td>the ones that no substitution could serve</td>
+</tr>
+<tr>
+<td>claims changed</td>
+<td><strong>expected: none</strong>; a nonzero entry here is a defect, not a result</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the audit's guard.</strong> A purge of a name must not change a claim. If a rewritten sentence now says something the equation does not support, the sentence is wrong and the batch fails.</p>
+<h3 id="74-the-gate">7.4 The Gate</h3>
+<p><strong>A batch closes when all four hold:</strong></p>
+<ol>
+<li>the after-count equals before minus attributive minus verbal minus the acknowledged nominal;</li>
+<li>every remaining nominal hit is on the frozen list of §6.5 or carries the definition of §6.2;</li>
+<li>the article renders: <code>python -c</code> through <code>build.md_to_html</code> produces the same number of <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> and <code>&lt;table&gt;</code> elements as before;</li>
+<li>no link target changed, checked by extracting <code>](…)</code> from the file and testing each path exists.</li>
+</ol>
+<p><strong>Nothing is committed.</strong> Version control is the author's, per <code>PLAN.md</code>.</p>
+<h2 id="8-order-of-work-and-the-count-after-each-stage">8. Order of Work, and the Count After Each Stage</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>stage</th>
+<th>scope</th>
+<th>occurrences before</th>
+<th>after the stage</th>
+<th>effort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>menus, headings, the $32$ titles</td>
+<td>$341$ in the menus, $157$ headings, $32$ titles</td>
+<td>$0$ except inside link targets</td>
+<td>one pass on <code>physics.md</code> and <code>maths.md</code></td>
+</tr>
+<tr>
+<td>A</td>
+<td>the $377$ light files</td>
+<td><strong>$4\,088$</strong> — $2\,899$ attributive, $105$ verbal, $1\,084$ nominal</td>
+<td>$\approx300$, all frozen</td>
+<td>table-driven, mechanical</td>
+</tr>
+<tr>
+<td>A′</td>
+<td>the six largest families, table-driven, $333$ files</td>
+<td>$6\,022$</td>
+<td>$2\,815$ — the residue of §6.6</td>
+<td>two passes, $2\,433$ lines edited</td>
+</tr>
+<tr>
+<td>B</td>
+<td>the $26$ heavy files</td>
+<td><strong>$2\,110$</strong> — $1\,605$ attributive, $28$ verbal, $477$ nominal, in $164\,932$ words</td>
+<td>$\approx60$, the definition sentences</td>
+<td>the real work</td>
+</tr>
+<tr>
+<td>D</td>
+<td>maths, $160$ files</td>
+<td><strong>$1\,396$</strong></td>
+<td>$\approx40$</td>
+<td>one pass, per §6.4</td>
+</tr>
+<tr>
+<td>E</td>
+<td>frozen sites</td>
+<td>$359$ — $206$ link targets, $153$ citations, and no overlap between them</td>
+<td>$359$</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The arithmetic closes.</strong> $4\,088 + 2\,110 = 6\,198$, the classified total of §3, and the residue after every stage is $359$ frozen occurrences plus about $55$ definition sentences, which is <strong>$\approx414$ in <code>articles_physics</code></strong> — the number this audit set out to reach.</p>
+<p><strong>Stage C first, because it is what a reader sees and because it is reversible.</strong> Stage A second, because it is mechanical and it shrinks the surface that B must read. <strong>Stage B is where the judgement is</strong>, and it should not be entered until A has shown the sentence patterns that substitution cannot serve. Stage D is independent of A and B and can run in between.</p>
+<h2 id="9-risks">9. Risks</h2>
+<p><strong>Meaning drift, and it is the real one.</strong> <em>Gauge invariance</em> and <em>local symmetry</em> are not synonyms in every sentence. A theory can be locally symmetric and still not be invariant under a local rotation of a basis that the theory does not couple. <strong>The substitution is right in the corpus's usage and wrong in general</strong>, which means the pass must be read, not run blind.</p>
+<p><strong>The maths collision.</strong> <em>Gauge</em> in <code>articles_maths</code> means a fibre. A bulk substitution shared between the two collections would import the physics sense into the mathematics. <strong>The two collections are treated separately, always.</strong></p>
+<p><strong>The definition sentence, used twice in one article.</strong> Once the word is defined it tends to be reused. <strong>One definition, one reuse per section at most</strong>, and the second article that needs it links to the first.</p>
+<p><strong>The silent failure mode: the adjective removed and the noun wrong.</strong> <em>The gauge field equations</em> becomes <em>the connection equations</em>, which is right. <em>The gauge orbit</em> becomes <em>the orbit</em>, which is ambiguous, because the corpus has group orbits elsewhere. <strong>The noun map must name the noun, not delete the adjective and hope.</strong></p>
+<h2 id="10-verification">10. Verification</h2>
+<p><strong>The audit itself is verified by re-running its own commands.</strong> The table of §2 reproduces every headline number, and the classification of §3 sums to the total:</p>
+<p>$$
+4\,504 + 133 + 1\,561 = 6\,198 ,
+$$</p>
+<p>against $6\,200$ matched tokens; the two-token difference is <code>gauge__</code> and <code>gauged__</code>, artefacts of a menu comment, and they belong to neither class.</p>
+<p><strong>What "done" means for the migration, stated once.</strong> It means the physics corpus carries about four hundred occurrences, of which every one is either a quoted title, a link path, or a definition of the surplus. <strong>It does not mean the word is gone</strong>, and a report claiming it is gone has either broken a citation or renamed a URL.</p>
+<p><strong>And the sentence that should be read as the conclusion of the discussion.</strong> The word is a bad name and the notion is a real theorem. <strong>Purge the name from every place where it decorates a noun; keep it in the one place where it states that the labels outnumber the states.</strong></p>
+<h2 id="11-progress-log">11. Progress Log</h2>
+<p><strong>Batches applied so far, with the ledger the report format of §7.3 requires.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>batch</th>
+<th>files touched</th>
+<th>occurrences removed</th>
+<th>residue in those files</th>
+<th>claims changed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>8</td>
+<td>8</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>6</td>
+<td>11</td>
+<td>$1$ — an article title, frozen</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2</td>
+<td>$86$</td>
+<td>$12$ — $8$ page-title handles, $4$ citations</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2</td>
+<td>$73$</td>
+<td>$15$ — $11$ page-title handles, $0$ citations, $4$ deferred</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>| 5 | $301$ | $2\,912$ | $3\,110$ | $0$ |
+| 6 | $121$ | $295$ | $2\,815$ | $0$ |
+| — | $302$ | <em>failed</em> | structure destroyed, reverted, $0$ kept | $0$ |
+| — | $44$ | $0$ — repairs only | $2\,815$ | $0$ |</p>
+<p><strong>Corpus after six batches: $2\,815$ occurrences in $341$ files</strong>, from $6\,200$ in $403$; $333$ files edited. Batches 5 and 6 are the mechanical passes of §6.6; the two repair rows are the agreement pass of trap 14 and the doubled-word pass of trap 15.</p>
+<p><strong>One batch was applied and thrown away.</strong> It edited $2\,157$ lines in $302$ files and broke the line structure of every one of them — trap 18. <strong>Nothing of it survived except the lesson</strong>, and the lesson is the only reason it is in the ledger. Every edited file renders with the same heading and table counts as before, and no link target in them is dead.</p>
+<p><strong>Three traps the tail holds, all found in the first twenty lines of work.</strong></p>
+<ol>
+<li><strong>An article title inside a sentence.</strong> <em>The Four General Products: Composition, Probability, Causality, Gauge</em> is a reference to a page, so it is frozen until Stage C renames that page. Whenever a title is renamed, every sentence that names it must move in the same commit.</li>
+<li><strong>A section heading used as a link description.</strong> <em>the gauge structure</em> in a further-reading line describes a heading in another article; the two change together, never one alone.</li>
+<li><strong>A term that carries a definition.</strong> <em>the gauge ceiling</em> is not decoration — the article defines two ceilings and the phrase names one of them. It was replaced by the article's own term, <em>the dimensional ceiling</em>, and not by a synonym invented for the occasion. <strong>A defined term in the corpus is replaced by the corpus's other name for it, or not at all.</strong></li>
+</ol>
+<p><strong>And the shape of the work, measured.</strong> In the eight single-occurrence files of batch 1, four of the eight hits were citations or titles and could not move. <strong>In the tail, roughly one hit in three is frozen</strong>, so the $4\,088$ occurrences of the light files do not yield $4\,088$ removals: the frozen $359$ are concentrated there, and the honest estimate for the tail is $3\,700$ removable.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

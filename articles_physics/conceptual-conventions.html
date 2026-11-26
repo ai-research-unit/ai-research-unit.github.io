@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conceptual Conventions — Biquaternion Universe</title>
+  <meta name="description" content="The rule. A concept is used in this corpus only when two conditions hold together. It must be consistent with mathematics. And no result of experiment may…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conceptual-conventions"><strong>Conceptual Conventions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The rule.</strong> A concept is used in this corpus only when two conditions hold together. It must be consistent with mathematics. And no result of experiment may contradict it. A concept that fails either condition is left out here.</p>
+<p><strong>Why both conditions bite in this corpus.</strong> These articles make physical claims, so neither condition can be met by silence. A concept that is mathematically inconsistent produces a wrong equation. A concept that a measurement contradicts produces a wrong prediction. There is no third shelter in which the question becomes purely mathematical.</p>
+<p><strong>The two conditions are not a demand for derivation.</strong> Most equations here are transcribed from the literature, and a transcribed equation is a correct one. The conditions ask only whether a concept is a sound object and a safe one. Where a claim comes from is a different question, and the corpus answers it in one line elsewhere: it derives the arena and imports the dynamics. That ledger classifies claims, not concepts. The field is an element whether the equation it appears in is derived or transcribed.</p>
+<p><strong>Two ways of using a concept that passes.</strong> A concept that passes both conditions is used in one of two ways. It is <strong>preferred</strong> when the algebra already contains it. It is <strong>unpreferred</strong> when it is a working tool that brings something the algebra does not contain: a chosen frame, a basis other than the multiplication table itself, a root, or a piece of the algebra printed as though it were the whole. An unpreferred concept is not false. It is used only when the article says what it brings.</p>
+<p><strong>The two lists.</strong> The next two sections give the lists, the one the corpus writes by default first and the one it writes only under a declaration second. The first holds the concepts it writes with no comment at all. The second holds the concepts it writes with the defect named. The order is that of a reader who wants the algebra first and the working tools after it. The summary states the result in a few lines.</p>
+<p><strong>How a concept is presented.</strong> The prose argues one claim from the start. Sentences are short, active, and carry one idea each. Every claim carries a warrant: a proof, a check, or a stated reading of the conventions. The vocabulary is plain and consistent from article to article. There is no filler and no flourish.</p>
+<p><strong>No contravariant index appears in this article, and none appears anywhere in the series.</strong> The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.</p>
+<h2 id="preferred-concepts">Preferred Concepts</h2>
+<p>These concepts are the algebra, its display and its two sectors, written down. Each one is read from an element, a form or the multiplication table itself, and none of them needs a root, an idempotent, an ideal, a gamma matrix or a metric supplied from outside.</p>
+<ul>
+<li><strong>Biquaternions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with the four units $e_t=1\otimes1$, $\vec e_x=1\otimes\vec e_x$, $\vec e_y=1\otimes\vec e_y$, $\vec e_z=1\otimes\vec e_z$, and the element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_{\imath}=q_{\imath}+iq'_{\imath}$, that is eight real coordinates. One product fixes the rest: $e_{\imath} e_{\jmath}=\sum_\rho\varepsilon_{\imath\jmath}^{\ \ \rho}e_\rho$ with $\varepsilon_{\imath\jmath}^{\ \ \rho}\in\{0,+1,-1\}$. No complex number appears in the table, because $i$ is central and is carried by the coefficients. No matrix, column, ideal or projector appears in the definition.</li>
+<li><strong>The $4\times4$ AXF matrices.</strong> The left matrices of the coefficient basis, $L_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=[\tilde Qe_{\jmath}]_{\imath}$. On the four units, taken in the two families and both signs, the sixteen arrays are signed permutations with entries in $\{0,+1,-1\}$ that are the structure constants read by columns, and ten properties hold at once: the entries are integers, the matrices are orthogonal over $\mathbb{R}$, the determinant is one, the transpose is the quaternion conjugation $L^{\mathsf T}=L(\tilde Q^{\natural})$, the dagger is the Hermitian conjugation, the eight matrices $\pm L_{\mathrm{axf},e_{\imath}}$ are the quaternion group $Q_8$, the real slice lands in $M_4(\mathbb{R})$, the trace is $4Q_t$, and the right matrix is the transposed left one between $D$ and its inverse, $R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$. The display is preferred because it adds no datum of its own: its entries are the multiplication table, and it names no axis and imposes no metric. Among signed-permutation bases it is the only one, up to a relabelling of the three directions and a sign on each vector.</li>
+<li><strong>The two sectors.</strong> The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ carries the four-vectors and the interval. The Hermitian subspace $\mathbb{B}_{\Psi}$ carries the observables, the states and the spin generators. The algebra supplies the subspaces and the forms on them, and the identification of a subspace with a physical role is the programme's step, stated at every use.</li>
+<li><strong>The unit metric of $\mathbb{B}$.</strong> The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, and all four coefficients are $+1$: the metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$. On real coefficients that is the ordinary Euclidean metric, positive definite, and no direction is singled out by a sign. Here ${}^{\natural}$ keeps the scalar and negates the three vectors. The metric is the same on the two sectors: with $Q_t=i q'_t$ the time square is negative because $i^2=-1$, and the interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$. Nothing is absorbed: the $i$ stays in the coefficient, and there is one metric.</li>
+</ul>
+<h2 id="unpreferred-concepts">Unpreferred Concepts</h2>
+<p>Each concept below is used somewhere in the corpus, and each one brings something the algebra does not contain. The list names the defect. An unpreferred concept is admitted as a display when the article that prints it declares the missing piece once, at the head of the display.</p>
+<ul>
+<li><strong>The Pauli matrices $\sigma_\eta$.</strong> <em>The defect:</em> the array carries a preferred axis, and neither the algebra nor the sentence names it. Isotropy is measured, so the axis is a defect and not a notation.</li>
+<li><strong>The gamma matrices $\gamma_\mu$.</strong> <em>The defect:</em> the five basis operators carry a preferred frame, and with it a preferred axis, and the frame is not named. Isotropy is measured, so the frame is a defect and not a notation.</li>
+<li><strong>A Clifford algebra as a foundation.</strong> <em>The defect:</em> it starts from a quadratic form, so a metric is imposed on the algebra before the algebra is read. The biquaternion algebra carries its own form, the norm $\tilde Q\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and the sector fixes the signs. A metric supplied from outside is a preferred datum, and nothing in the algebra asks for one.</li>
+<li><strong>The word gauge.</strong> <em>The defect:</em> the word is doing too much work and carries a hundred years of confusing baggage. One sentence uses it for a frame, for a transformation, for a field, for an invariance and for a fixing, and nothing in the sentence says which. The reader has to guess, and the guess is often wrong. Each of the five objects has a plain name, and the plain name removes the guess. The corpus writes the plain name. It keeps the word <em>gauge</em> only where a transcribed result arrives under that word, and there it says so.</li>
+<li><strong>The Wick rotation, $r'_t\mapsto-i\tau$.</strong> <em>The defect:</em> the series uses one name for two operations on the algebra. The contour rotation $r'_t\mapsto-i\tau$ continues the material coordinate off the real axis, and at real $\tau$ its source is not a point of $\mathbb{B}_{\Phi}$; it is not a map between the subspaces. The relabelling of one coefficient, $i r'_t\mapsto\tau$, is the map $W=\mathrm{diag}(-i,1,1,1)$, and it carries a point of $\mathbb{B}_{\Phi}$ to a point of $\mathbb{B}_{H}$, the inertia from $(3,1)$ to $(4,0)$, and the light cone away. That second operation is a change of the reality condition on one continued field, $\flat\to\bar{\cdot}$ with $\flat=\bar{\cdot}\circ W^{2}$, and not an identification of two objects of the algebra: $\mathbb{B}_{H}$ is closed under multiplication and $\mathbb{B}_{\Phi}$ is not, so no ring map carries one onto the other.</li>
+</ul>
+<p>The gauge entry, in detail. The word covers five different objects, and each one has a plain name.</p>
+<ul>
+<li><em>The choice of local frame.</em> Write local frame, local reference frame, local basis, internal frame, frame field in the tetrad sense, or section of a bundle, which is a choice of representative at each point.</li>
+<li><em>The transformation.</em> Write local frame rotation, local rotation, local colour rotation for $SU(N)$, local change of basis, frame transformation, change of local frame, or reparameterisation.</li>
+<li><em>The boson, the field $A_\mu$.</em> Write connection, connection field, parallel-transport field, frame connection, compensator, which is the field that compensates the derivative, or rotor field, which is the reading of this corpus.</li>
+<li><em>The invariance.</em> Write local frame independence, local symmetry, frame covariance, or local basis independence.</li>
+<li><em>The fixing.</em> Write choice of frame, choosing a representative, fixing the frame, or choosing a section.</li>
+</ul>
+<p>This article adopts one plain name per object, and no other use of the word.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>where the word <em>gauge</em> appears</th>
+<th>what this article writes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gauge transformation</td>
+<td>local frame rotation</td>
+</tr>
+<tr>
+<td>gauge field, gauge boson</td>
+<td>connection</td>
+</tr>
+<tr>
+<td>gauge invariance</td>
+<td>local frame independence</td>
+</tr>
+<tr>
+<td>gauge choice, fixing a gauge</td>
+<td>choice of frame</td>
+</tr>
+<tr>
+<td>gauge group</td>
+<td>frame-rotation group</td>
+</tr>
+<tr>
+<td>gauge theory</td>
+<td>connection theory</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rotor reading is the one that fits the algebra. The transformation is a rotor. The field is a rotor-valued connection. The invariance is the independence of the local frame. The sentence "the gauge field restores gauge invariance under local gauge transformations" then reads "the connection field restores independence of the local frame under local frame rotations". The physics is the same, and the word is gone.</p>
+<p>The word stays where a result arrives named with it, and the article says which sense is meant: the electroweak gauge group, the gauge fixing of a path integral, and the gauge symmetry of a transcribed Lagrangian. Nothing is renamed against the literature; the corpus only declines to write the word where it is writing on its own.</p>
+<h2 id="summary">Summary</h2>
+<p>A concept is used in this corpus only when it agrees with mathematics and no result of experiment contradicts it. Both conditions bite here, because these articles make physical claims.</p>
+<p>The concepts that pass are used in one of two ways. Preferred concepts are the algebra itself, and there are four: the biquaternion algebra, the $4\times4$ AXF display, the two sectors and the unit metric. Unpreferred concepts are working tools that bring a frame, a sign pattern, a dimension or an ambiguity: the Pauli matrices, the gamma matrices, the Clifford algebra as a foundation, the Wick rotation and the word <em>gauge</em>. Each is admitted only with the missing piece declared.</p>
+<p>The AXF display is the model case: it prints the multiplication table and nothing else, so no axis, no frame and no metric enters with it. The Clifford entry is the one worth reading twice: the identification with $\mathrm{Cl}_{3,0}$ is exact, and it brings an inertia and a second simple factor that the algebra does not have.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>. The base, the glyphs, and the one metric of the series.</li>
+<li><a href="../articles_physics/product-and-form-conventions.html">Product and Form Conventions</a>. The twelve products and the four forms, which are the four choices of conjugation on the two slots.</li>
+<li><a href="../articles_physics/norm-and-pairing-conventions.html">Norm and Pairing Conventions</a>. The four norms, the polar word and the three pairings.</li>
+<li><a href="../articles_physics/special-element-conventions.html">Special Element Conventions</a>. The central map, the chirality convention, where operator chirality — the side of a basis operator — is fixed, and the spin and spinor conventions.</li>
+<li><a href="../articles_physics/frame-and-metric-conventions.html">Frame and Metric Conventions</a>. The two frames, the one metric they share, the Clifford map, and the rule that a frame is declared before it is used.</li>
+<li><a href="../articles_physics/matrix-representations-conventions.html">Matrix Representations Conventions</a>. The three displays, the Pauli form, the Clifford structure and the legacy gamma block.</li>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>. The operator that is its element, the Fock exception and the calculus.</li>
+<li><a href="../articles_physics/physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a>. The physical units and the common glyphs.</li>
+<li><a href="../articles_physics/index-and-notation-conventions.html">Index and Notation Conventions</a>. The marks and the subscripts.</li>
+<li><a href="../articles_maths/conceptual-conventions.html">Conceptual Conventions</a>. The same rule at the algebraic layer, where the three kinds of defect are stated in full.</li>
+<li><a href="../articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html">The Differentiable Field: One Primary Equation and the Linear Sector</a>. The ledger of the postulated, the derived and the imported, which classifies claims and not concepts.</li>
+<li><a href="../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused">The AXF Matrices: Axis-Free, Integer Entries</a>. The defect in full, the covariance test, and the frames that are not defects.</li>
+<li><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a>. The objects the physics does not need, and the limit of the copies.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
