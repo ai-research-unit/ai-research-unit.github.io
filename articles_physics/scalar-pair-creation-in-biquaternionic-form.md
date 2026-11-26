@@ -298,6 +298,6 @@ The process is standard scalar quantum field theory in an external background, t
 - L. Parker, "Particle creation in expanding universes," *Physical Review Letters* **21** (1968) 562–564, and "Quantized fields and particle creation in expanding universes. I," *Physical Review* **183** (1969) 1057–1068, for particle creation by a time-dependent background.
 - S. A. Fulling, *Aspects of Quantum Field Theory in Curved Space-Time* (Cambridge, 1989), for the in/out decomposition, the vacuum persistence amplitude, and the ambiguity of the vacuum.
 - N. D. Birrell and P. C. W. Davies, *Quantum Fields in Curved Space* (Cambridge, 1982), for the mode equation, the Bogoliubov coefficients, and the sudden and adiabatic limits.
-- J. Schwinger, "On local invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for pair creation in a strong electric field, the electromagnetic analogue.
+- J. Schwinger, "On gauge invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for pair creation in a strong electric field, the electromagnetic analogue.
 - G. T. Moore, "Quantum theory of the electromagnetic field in a variable-length one-dimensional cavity," *Journal of Mathematical Physics* **11** (1970) 2679–2691, for the dynamical Casimir effect.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), and S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the mode expansion and the charge whose conservation selects pairs.

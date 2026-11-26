@@ -278,7 +278,7 @@ where $F$ is the biquaternion-valued field of this form — not the field streng
 
 What the mass breaks is the **axial** symmetry, not the phase. The axial rotation multiplies the two parts named by the subscript by opposite phases, $\tilde{Ξ}_{R}\mapsto\exp(i\theta_{\mathrm{gau}})\tilde{Ξ}_{R}$, $\tilde{Ξ}_{L}\mapsto\exp(-i\theta_{\mathrm{gau}})\tilde{Ξ}_{L}$. Each gradient term is multiplied by one of these phases and can be divided out; the mass term cannot, because it pairs the two values and so carries the *relative* factor $\exp(i\theta_{\mathrm{gau}})/\exp(-i\theta_{\mathrm{gau}})=\exp(2i\theta_{\mathrm{gau}})$. The pair is invariant only when $\exp(2i\theta_{\mathrm{gau}})=1$, that is $\theta_{\mathrm{gau}}\equiv0\pmod{\pi}$, where the rotation has degenerated into the global phase $\pm1$. The continuous axial rotation is broken by the mass, exactly as the divergence below records.
 
-Write $\bar{\tilde{Ξ}}:=\tilde{Ξ}^*i\vec e_x$ for the $\bar{\tilde{Ξ}}:=\tilde{Ξ}^*i\vec e_x$ of *Chiral Fermions in the Biquaternion Framework* — the Hermitian form, a pairing of two states and not an action on one, to be distinguished from the coefficient conjugation $\bar F$ of the two-sided equation above, and from the quaternionic norm $\tilde{Ξ}^{\natural}\tilde{Ξ}$, which vanishes on the zero-divisor cone and cannot serve as a density. The chirality basis operator acts on the field by $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$, so the axial current inserts it,
+Write $\bar{\tilde{Ξ}}:=\tilde{Ξ}^*i\vec e_x$ for the **Dirac adjoint** of *Chiral Fermions in the Biquaternion Framework* — the Hermitian form, a pairing of two states and not an action on one, to be distinguished from the coefficient conjugation $\bar F$ of the two-sided equation above, and from the quaternionic norm $\tilde{Ξ}^{\natural}\tilde{Ξ}$, which vanishes on the zero-divisor cone and cannot serve as a density. The chirality basis operator acts on the field by $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$, so the axial current inserts it,
 
 $$
 j_{5\imath}=\bar{\tilde{Ξ}}\,\bigl(e_{\imath}\,\tilde{Ξ}\,\vec e_z\,\vec e_{\tau(\imath)}\bigr),
@@ -455,7 +455,7 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Hermann Weyl, "Elektron und Gravitation," *Zeitschrift für Physik* **56** (1929) 330–352, for the origin of the minimal coupling and the local phase.
-- Chen-Ning Yang and Robert L. Mills, "Conservation of Isotopic Spin and Isotopic Local invariance," *Physical Review* **96** (1954) 191–195, for the non-abelian extension.
+- Chen-Ning Yang and Robert L. Mills, "Conservation of Isotopic Spin and Isotopic Gauge Invariance," *Physical Review* **96** (1954) 191–195, for the non-abelian extension.
 - P. A. M. Dirac, *Lectures on Quantum Mechanics* (Yeshiva University, 1964), for first-class constraints and the Hamiltonian form of connection theories.
 - L. D. Faddeev and A. A. Slavnov, *Gauge Fields: Introduction to Quantum Theory* (Benjamin/Cummings, 1980), for the covariant quantization of connections.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), and S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the standard treatment of abelian and Yang–Mills theory.

@@ -47,7 +47,7 @@ $$
 \qquad
 F_{\imath\jmath} = \partial/\partial R_{\imath}\,\mathcal{A}_{\jmath} - \partial/\partial R_{\jmath}\,\mathcal{A}_{\imath} + i\kappa\,[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}] \in \mathrm{SU}(2)\oplus i\,\mathrm{SU}(2) = \mathrm{SL}(2,\mathbb{C}).
 $$
-Acting on any field, $[D_{\imath},D_{\jmath}]\tilde{Ξ} = i\kappa\,F_{\imath\jmath}\tilde{Ξ}$. The commutator of the two first-order operators is therefore not a second-order operator and not even a first-order one: it has no derivative at all. It is **multiplication by an element of the finite-dimensional algebra** $\mathbb{B}$. This was recomputed exactly on generic non-commuting, position-dependent connections, for all six independent index pairs, with the residual identically zero; and the zeroth-order character was checked separately by verifying $[D_{\imath},D_{\jmath}0 = f\,[D_{\imath},D_{\jmath}]\tilde{Ξ}$ for an arbitrary scalar function $f$.
+Acting on any field, $[D_{\imath},D_{\jmath}]\tilde{Ξ} = i\kappa\,F_{\imath\jmath}\tilde{Ξ}$. The commutator of the two first-order operators is therefore not a second-order operator and not even a first-order one: it has no derivative at all. It is **multiplication by an element of the finite-dimensional algebra** $\mathbb{B}$. This was recomputed exactly on generic non-commuting, position-dependent connections, for all six independent index pairs, with the residual identically zero; and the zeroth-order character was checked separately by verifying $[D_{\imath},D_{\jmath}](f\tilde{Ξ}) = f\,[D_{\imath},D_{\jmath}]\tilde{Ξ}$ for an arbitrary scalar function $f$.
 
 Two immediate properties fix the index structure.
 
@@ -213,7 +213,7 @@ The two Jacobi identities are not the same statement. The operator identity is a
 
 Everything above was checked by explicit substitution on $\mathrm{SU}(2)$ with the non-commuting generators $\vec e_x,\vec e_y,\vec e_z$ and the rule $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$, on connections with generic real polynomial coefficients in all four components. The following were confirmed.
 
-- **The reduction.** $[D_{\imath},D_{\jmath}]\tilde{Ξ} = i\kappa F_{\imath\jmath}\tilde{Ξ}$ for all six independent index pairs, and the commutator is zeroth order, $[D_{\imath},D_{\jmath}0 = f[D_{\imath},D_{\jmath}]\tilde{Ξ}$.
+- **The reduction.** $[D_{\imath},D_{\jmath}]\tilde{Ξ} = i\kappa F_{\imath\jmath}\tilde{Ξ}$ for all six independent index pairs, and the commutator is zeroth order, $[D_{\imath},D_{\jmath}](f\tilde{Ξ}) = f[D_{\imath},D_{\jmath}]\tilde{Ξ}$.
 - **The Bianchi identity.** The cyclic sum vanishes identically for all $64$ ordered triples, with individual terms of order unity, so the vanishing is a genuine cancellation and not a sum of zeros.
 - **The Jacobi identification.** The operator Jacobi sum equals $i\kappa$ times the Bianchi cyclic sum identically, and the three term classes of the coordinate proof (second derivatives, derivative-of-commutator, nested commutators) each vanish for the stated reason.
 - **The non-vacuity controls.** The wrong cyclic order is generically nonzero; the one-sided replacement $\partial/\partial R_{\imath} F_{\imath\jmath}+i\kappa\mathcal{A}_{\imath} F_{\imath\jmath}$ gives a generically nonzero cyclic sum; and $F_{\imath\jmath}$ differs from $i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$ for position-dependent connections.

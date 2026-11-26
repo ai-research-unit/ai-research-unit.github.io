@@ -421,8 +421,8 @@ The charged current is chiral, $J^{+}_{\imath}$ of §*The Currents and the Self-
 - A. Salam, "Weak and electromagnetic interactions," in *Elementary Particle Theory*, ed. N. Svartholm (Almqvist and Wiksell, 1968), for the unified electroweak construction.
 - S. Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the electroweak currents, the connection self-couplings and the radiative corrections.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Higgs mechanism, the W and Z masses, the currents and the vertices.
-- T. W. B. Kibble, "Symmetry breaking in Yang–Mills theory," *Physical Review* **155** (1967) 1554–1561, for the non-abelian Higgs mechanism and the would-be Goldstone modes.
-- P. W. Higgs, "Broken symmetries and the masses of connection," *Physical Review Letters* **13** (1964) 508–509, for the mass generation mechanism.
+- T. W. B. Kibble, "Symmetry breaking in non-Abelian gauge theories," *Physical Review* **155** (1967) 1554–1561, for the non-abelian Higgs mechanism and the would-be Goldstone modes.
+- P. W. Higgs, "Broken symmetries and the masses of gauge bosons," *Physical Review Letters* **13** (1964) 508–509, for the mass generation mechanism.
 - G. 't Hooft, "Renormalizable Lagrangians for massive Yang–Mills fields," *Nuclear Physics B* **35** (1971) 167–188, for the renormalizability of the massive non-abelian theory.
 - Particle Data Group, R. L. Workman *et al.*, "Review of Particle Physics," *Progress of Theoretical and Experimental Physics* **2022** (2022) 083C01, for the measured masses, the mixing angle and the electroweak precision parameters.
 - W. J. Marciano and A. Sirlin, "Precise $SU(2)\times \mathrm{U}(1)$ parameters and the $Z$ mass," *Physical Review D* **22** (1980) 2695–2700, for the relation between $G_F$, $v$ and the W mass and for the radiative correction $\delta r$.

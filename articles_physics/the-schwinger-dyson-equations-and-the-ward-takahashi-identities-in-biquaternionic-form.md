@@ -267,9 +267,9 @@ The algebra's contribution is specific and limited. It supplies the functional d
 - F. J. Dyson, "The S matrix in quantum electrodynamics," *Physical Review* **75** (1949) 1736–1755, for the perturbative expansion of the equations.
 - J. C. Ward, "An identity in quantum electrodynamics," *Physical Review* **78** (1950) 182, for the abelian identity.
 - Y. Takahashi, "On the generalized Ward identity," *Il Nuovo Cimento* **6** (1957) 371–375, for the general form and the non-abelian extension.
-- J. C. Taylor, "Ward identities and charge renormalization of the Yang–Mills field," *Nuclear Physics B* **33** (1971) 436–444, and A. A. Slavnov, "Ward identities in connection theory," *Theoretical and Mathematical Physics* **10** (1972) 99–104, for the non-abelian Slavnov–Taylor identities.
+- J. C. Taylor, "Ward identities and charge renormalization of the Yang–Mills field," *Nuclear Physics B* **33** (1971) 436–444, and A. A. Slavnov, "Ward identities in gauge theories," *Theoretical and Mathematical Physics* **10** (1972) 99–104, for the non-abelian Slavnov–Taylor identities.
 - S. L. Adler, "Axial-vector vertex in spinor electrodynamics," *Physical Review* **177** (1969) 2426–2438, and J. S. Bell and R. Jackiw, "A PCAC puzzle: $\pi^0\to\gamma\gamma$ in the $\sigma$-model," *Il Nuovo Cimento A* **60** (1969) 47–61, for the axial anomaly.
-- K. Fujikawa, "Path-integral measure for invariant fermion theories," *Physical Review Letters* **42** (1979) 1195–1198, for the Jacobian derivation of the anomaly.
+- K. Fujikawa, "Path-integral measure for gauge-invariant fermion theories," *Physical Review Letters* **42** (1979) 1195–1198, for the Jacobian derivation of the anomaly.
 - W. A. Bardeen, "Anomalous Ward identities in spinor field theories," *Physical Review* **184** (1969) 1848–1857, for the consistency conditions of the anomalous identities.
 - J. Zinn-Justin, *Quantum Field Theory and Critical Phenomena* (Oxford, 2002), for the derivation of the Schwinger–Dyson and Ward–Takahashi equations from the functional integral and their role in renormalisation.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the master equation, the contact terms, and the Ward identities of QED.

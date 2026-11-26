@@ -93,7 +93,7 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 
 - *It is a one-loop statement.* $\alpha_4(M_C)=0.058$ is a one-loop value; a two-loop coefficient would move it by a few per cent and would not move the strong-coupling scale by five decades. **The conclusion is robust to the truncation in a way the numbers are not.**
 - *It says nothing about a different content.* A model with twice as many scalars would have a smaller $b_0$ and a nearer strong-coupling scale; **the count of scalars is what decides the margin**, and [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) is where that count is fixed.
-- *It says nothing about non-perturbative effects at $M_C$.* Instantons and monopoles can be important without confinement; **the instanton action is computed in $M_C$ and is enormous**, which is a separate statement.
+- *It says nothing about non-perturbative effects at $M_C$.* Instantons and monopoles can be important without confinement; **the instanton action is computed in [The $\mathrm{SU}(4)$ Instanton](the-su4-instanton-a-matrix-transcription-outside-the-algebra.html) and is enormous**, which is a separate statement.
 
 ## The Checks
 

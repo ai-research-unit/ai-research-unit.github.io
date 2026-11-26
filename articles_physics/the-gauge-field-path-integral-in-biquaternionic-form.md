@@ -301,8 +301,8 @@ The fixed-representative quadratic action is Gaussian, and its inverse is the pr
 
 ## Further Reading
 
-- C. Becchi, A. Rouet and R. Stora, "Renormalization of Connection theory," *Annals of Physics* **98** (1976) 287–321, for the nilpotent symmetry of the fixed-representative Lagrangian and the cohomological route.
-- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Yang–Mills theory and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the physical-state condition and the cohomology of the BRST charge.
+- C. Becchi, A. Rouet and R. Stora, "Renormalization of Gauge Theories," *Annals of Physics* **98** (1976) 287–321, for the nilpotent symmetry of the fixed-representative Lagrangian and the cohomological route.
+- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Non-Abelian Gauge Theories and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the physical-state condition and the cohomology of the BRST charge.
 - L. D. Faddeev and V. N. Popov, "Feynman Diagrams for the Yang–Mills Field," *Physics Letters B* **25** (1967) 29–30, for the choice of representative identity and the determinant.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the functional-integral quantization of connection, the choice of representative parameter, and the Ward identities.
 - Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Faddeev–Popov procedure, the fixed-representative propagator, and the transverse projector.

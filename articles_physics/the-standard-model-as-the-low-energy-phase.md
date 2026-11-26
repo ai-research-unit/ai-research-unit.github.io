@@ -260,7 +260,7 @@ $$
 
 **The chiral wall closes the argument, and this is where it differs from the reasons above.** From the group article: non-abelian chiral one-sided multiplication does not exist. The observed $SU(2)_L$ couples only to left-handed fields, so it is chiral non-abelian, so the algebra cannot supply it as a one-sided action. **That is the ceiling of this article restated at the pair**, and it is the reason the parity question cannot be settled by choosing a bigger group: the missing object is the tie between an operator side and a spinor letter, not a generator.
 
-**The chain, in the form Gauge Fields: An Introduction to Quantum Theory owns.**
+**The chain, in the form [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) owns.**
 
 $$
 \mathrm{SU}(4)\ \xrightarrow[\ M_C\ ]{\ \langleΞ\rangle\ }\
@@ -297,7 +297,7 @@ Not established: a chiral symmetry group. The framework's canonical symmetry gro
 
 ### Hypercharge is underived
 
-The Standard Model's hypercharge is a specific $\mathrm{U}(1)$ with a specific assignment table and a chiral action, and it is the ingredient that makes the electric charge $Ϙ = T_3 + Y$ and cancels the gauge and gravitational anomalies. The framework has a $\mathrm{U}(1)$ — the $*$-unitary centre — but the assignment table is not derivable from it, and no source in the series supplies one. The only abelian charge the framework possesses is a single parameter $ϙ$, the same for every element; the gauge principle supplies no second abelian direction, no non-central abelian action is available to it, and there is no anomaly computation from which an assignment could be inferred. 0 The eight-row check of §*Why the Standard Model Makes One Side Local and Not Two* does not change this: it is a consistency check inside an imported frame, and it begins from $B-L$ eigenvalues the frame assigns by hand.
+The Standard Model's hypercharge is a specific $\mathrm{U}(1)$ with a specific assignment table and a chiral action, and it is the ingredient that makes the electric charge $Ϙ = T_3 + Y$ and cancels the gauge and gravitational anomalies. The framework has a $\mathrm{U}(1)$ — the $*$-unitary centre — but the assignment table is not derivable from it, and no source in the series supplies one. The only abelian charge the framework possesses is a single parameter $ϙ$, the same for every element; the gauge principle supplies no second abelian direction, no non-central abelian action is available to it, and there is no anomaly computation from which an assignment could be inferred. **No route yet.** The eight-row check of §*Why the Standard Model Makes One Side Local and Not Two* does not change this: it is a consistency check inside an imported frame, and it begins from $B-L$ eigenvalues the frame assigns by hand.
 
 ### The content is not selected — and what the framework supplies, counted
 
@@ -469,7 +469,7 @@ No section assumes a Standard Model structure. The three group factor are each s
 - [Helicity in Biquaternionic Form](helicity-in-biquaternionic-form.html) — the corpus's explicit statement that the framework "does not contain a colored connection theory"; the transcription boundary this article makes systematic.
 - [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html) — the standing empirical-equivalence result, the caution under which any biquaternionic Standard Model would labour.
 - [Reading an Extra Component: The Gürsey Default, the Reversion Test, and the Prior-Art Warning](reading-an-extra-component-the-gursey-default-the-reversion-test-and-the-prior-art-warning.html), for the Lanczos doubling, the Gürsey isospin reading, the Poincaré-and-reversion legitimacy test, the Einstein–Mayer equation and the prior-art warning, with the primary sources listed there.
-- Jacques Distler and Skip Garibaldi, "There is no $E_8$ connection theory with three generations" (arXiv:0905.2658), for the exhaustive check that the Standard Model's chiral fermions do not fit in $E_8$ with the Standard-Model symmetry group as the commutant; the basis of the row on the exceptional carriers.
+- Jacques Distler and Skip Garibaldi, "There is no $E_8$ gauge theory with three generations" (arXiv:0905.2658), for the exhaustive check that the Standard Model's chiral fermions do not fit in $E_8$ with the Standard-Model symmetry group as the commutant; the basis of the row on the exceptional carriers.
 - Garrett Lisi, "An exceptionally simple theory of everything" (arXiv:0711.0770), for the $E_8$ programme that places one generation of fermions and the connection in the adjoint $\mathbf{248}$; recorded as the instance of the exceptional candidate, and as a target rather than a route.
 - David J. Gross, Jeffrey A. Harvey, Emil Martinec and Ryan Rohm, "Heterotic string theory (I). The free heterotic string", *Nuclear Physics B* 256 (1985) 253–284, for the $E_8\times E_8$ symmetry group recorded above as the top rung of the rank ladder.
 - G. Petiau, *Il Nuovo Cimento* **40** (1965) 84–101, for the double-periodic waves of the derivatively coupled system.

@@ -289,5 +289,5 @@ The constant setting is closed — a finite product of exponentials up to the gr
 - [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), for the symmetric improvement and the operator-setting comparison.
 - [Landau Levels in Biquaternionic Form](landau-levels-in-biquaternionic-form.html), for the spectrum a non-constant potential does produce.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the standard action, the Noether current and the stress tensor.
-- Julian Schwinger, "On local invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the functional-derivative reading of the current.
+- Julian Schwinger, "On gauge invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the functional-derivative reading of the current.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the variational treatment of the Dirac action in geometric algebra.

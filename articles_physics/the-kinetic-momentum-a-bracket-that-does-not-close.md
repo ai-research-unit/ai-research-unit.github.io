@@ -285,5 +285,5 @@ The conserved angular momentum of the Landau problem is the canonical one. The k
 - R. Peierls, "Zur Theorie des Diamagnetismus von Leitungselektronen," *Zeitschrift für Physik* **80** (1933) 763–791, for the lattice version of the same replacement.
 - M. V. Berry, "Quantal phase factors accompanying adiabatic changes," *Proceedings of the Royal Society A* **392** (1984) 45–57, for the phase that distinguishes a phase shift from a physical change.
 - Y. Aharonov and D. Bohm, "Significance of electromagnetic potentials in the quantum theory," *Physical Review* **115** (1959) 485–491, for a non-gradient potential having an observable effect.
-- T. T. Wu and C. N. Yang, "Concept of nonintegrable phase factors and global formulation of connection," *Physical Review D* **12** (1975) 3845–3857, for the obstruction to a single-valued phase function on a region of non-zero field.
+- T. T. Wu and C. N. Yang, "Concept of nonintegrable phase factors and global formulation of gauge fields," *Physical Review D* **12** (1975) 3845–3857, for the obstruction to a single-valued phase function on a region of non-zero field.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the vector product as the vector part of a quaternion product.

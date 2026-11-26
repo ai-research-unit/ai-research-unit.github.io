@@ -260,13 +260,13 @@ A biquaternionic grand unification would require enlarging the carrier to $M_n(\
 
 - Howard Georgi and Sheldon L. Glashow, "Unity of all elementary-particle forces", *Physical Review Letters* 32 (1974) 438–441, for the $SU(5)$ grand-unified theory and the fermion representations.
 - Harald Fritzsch and Peter Minkowski, "Unified interactions of leptons and hadrons", *Annals of Physics* 93 (1975) 193–266, for the $SO(10)$ unification and the $\mathbf{16}$ spinor.
-- F. Gürsey, Pierre Ramond and P. Sikivie, "A universal connection theory model based on $E_6$", *Physics Letters B* 60 (1976) 177–180, for the $E_6$ unification.
+- F. Gürsey, Pierre Ramond and P. Sikivie, "A universal gauge theory model based on $E_6$", *Physics Letters B* 60 (1976) 177–180, for the $E_6$ unification.
 - Howard Georgi, *Lie Algebras in Particle Physics* (Westview, 2nd ed. 1999), for the rank and dimension counting of the unified groups and their representations.
 - R. Slansky, "Group theory for unified model building", *Physics Reports* 79 (1981) 1–128, for the branching rules and representation content of the unified models.
 - Andrzej J. Buras, "Weak Hamiltonian, CP violation and rare decays", in *Probing the Standard Model of Particle Physics* (Cambridge University Press, 1998), for the running of the couplings and the unification scale.
 - Steven Weinberg, "The quantum theory of fields", Vol. II (Cambridge University Press, 1996), for the renormalisation-group analysis of connection coupling and the grand-unification threshold.
 - Frank Wilczek and Anthony Zee, "Operator analysis of nucleon decay", *Physical Review Letters* 43 (1979) 1571–1573, for proton decay and the baryon-number-violating operators.
 - John C. Baez, "The octonions", *Bulletin of the American Mathematical Society* 39 (2002) 145–205, for the division-algebraic routes to the unified groups and the role of the exceptional algebras.
-- Jacques Distler and Skip Garibaldi, "There is no $E_8$ connection theory with three generations" (arXiv:0905.2658), for the exhaustive check that the Standard Model's chiral fermions do not fit in $E_8$ with the Standard-Model symmetry group as the commutant.
+- Jacques Distler and Skip Garibaldi, "There is no $E_8$ gauge theory with three generations" (arXiv:0905.2658), for the exhaustive check that the Standard Model's chiral fermions do not fit in $E_8$ with the Standard-Model symmetry group as the commutant.
 - David J. Gross, Jeffrey A. Harvey, Emil Martinec and Ryan Rohm, "Heterotic string theory (I). The free heterotic string", *Nuclear Physics B* 256 (1985) 253–284, for the $E_8\times E_8$ symmetry group of the heterotic string.
 - Garrett Lisi, "An exceptionally simple theory of everything" (arXiv:0711.0770), for the $E_8$ programme that places one generation of fermions and the connection in the adjoint $\mathbf{248}$; recorded as the most cited instance of the exceptional candidate.

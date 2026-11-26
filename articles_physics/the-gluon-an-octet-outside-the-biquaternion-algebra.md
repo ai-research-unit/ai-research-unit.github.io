@@ -306,7 +306,7 @@ This does not contradict the ceiling, because it does not take place in $\mathbb
 
 - M. Gell-Mann, "A schematic model of baryons and mesons," *Physics Letters* **8** (1964) 214–215, for the colour degree of freedom and the quark model.
 - H. Fritzsch, M. Gell-Mann and H. Leutwyler, "Advantages of the color octet gluon picture," *Physics Letters B* **47** (1973) 365–368, for the colour octet of connection and the non-abelian action.
-- D. J. Gross and F. Wilczek, "Ultraviolet behavior of Yang–Mills theory," *Physical Review Letters* **30** (1973) 1343–1346, for asymptotic freedom.
+- D. J. Gross and F. Wilczek, "Ultraviolet behavior of non-abelian gauge theories," *Physical Review Letters* **30** (1973) 1343–1346, for asymptotic freedom.
 - H. D. Politzer, "Reliable perturbative results for strong interactions?," *Physical Review Letters* **30** (1973) 1346–1348, for the one-loop beta function and its sign.
 - S. Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the Yang–Mills theory, the structure constants and the Casimir data.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the QCD Lagrangian, the self-couplings and the beta function.

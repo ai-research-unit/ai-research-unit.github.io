@@ -515,7 +515,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 - H. A. Gersch, "Feynman's relativistic chessboard as an Ising model," *International Journal of Theoretical Physics* **20** (1981) 491–501, for the checkerboard model and its continuum limit.
 - F. A. Berezin and M. S. Marinov, "Particle spin dynamics as the Grassmann variant of classical mechanics," *Annals of Physics* **104** (1977) 336–362, for the Grassmann worldline and the spin factor.
 - L. Brink, P. Di Vecchia and P. Howe, "A Lagrangian formulation of the classical and quantum dynamics of spinning particles," *Nuclear Physics B* **118** (1977) 76–94, for the supersymmetric worldline action.
-- J. Schwinger, "On local invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the proper-time representation.
+- J. Schwinger, "On gauge invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the proper-time representation.
 - M. G. Schmidt and C. Schubert, "The worldline path integral approach to Feynman graphs," in *Loops and Legs in Quantum Field Theory* (2000), and C. Schubert, "Perturbative quantum field theory in the string-inspired formalism," *Physics Reports* **355** (2001) 73–234, for the modern worldline formulation.
 - T. Jacobson and L. S. Schulman, "Quantum stochastics: the passage from a relativistic to a non-relativistic path integral," *Journal of Physics A: Mathematical and General* **17** (1984) 375–383, for the checkerboard continuum limit.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the Dirac propagator, its momentum-space form, and the propagator equation.

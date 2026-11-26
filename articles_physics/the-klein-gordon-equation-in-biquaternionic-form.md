@@ -117,7 +117,7 @@ because $\Box_\Phi$ is real and therefore commutes with $\bar{\cdot}$. For the c
 It is worth separating three operations that are easy to conflate at this point, because the rest of the article turns on keeping them apart:
 
 - **Multiplication by the scalar imaginary $i$** is central and is a real-linear isomorphism exchanging the sectors, $i\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ and $i\mathbb{B}_{\Phi} = \mathbb{B}_{\Psi}$.
-- **Complex conjugation $\bar{\cdot}$** acts on the coefficients and is an algebra automorphism. Because $\bar{\cdot}$ commutes with ${}^{*}$ (the two generate the Klein four-group of conjugations together with ${}^{\natural}$), it $\bar{\cdot}$: if $\tilde H_\Psi^{*} = \tilde H_\Psi$ then $(\tilde{H}_\Psi^*)^{*} = (\tilde H_\Psi^{*})^* = \tilde{H}_\Psi^*$, and likewise for $\mathbb{B}_{\Phi}$.
+- **Complex conjugation $\bar{\cdot}$** acts on the coefficients and is an algebra automorphism. Because $\bar{\cdot}$ commutes with ${}^{*}$ (the two generate the Klein four-group of conjugations together with ${}^{\natural}$), it **preserves each sector**: if $\tilde H_\Psi^{*} = \tilde H_\Psi$ then $(\tilde{H}_\Psi^*)^{*} = (\tilde H_\Psi^{*})^* = \tilde{H}_\Psi^*$, and likewise for $\mathbb{B}_{\Phi}$.
 - **Hermitian conjugation ${}^{*}$** is the conjugation whose $\pm1$ eigenspaces *define* $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$; it is neither $i$-multiplication nor $\bar{\cdot}$.
 
 The distinction is concrete. Take $\tilde\Xi = e_t + i \vec e_x \in \mathbb{B}_{\Psi}$. Then

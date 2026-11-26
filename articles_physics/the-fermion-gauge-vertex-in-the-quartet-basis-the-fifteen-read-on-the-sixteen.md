@@ -9,7 +9,7 @@
 - **Where does each entry go?** Every one of the $128$ nonzero fermion–gauge entries is a coefficient joining one quartet line to one quartet line. **There are $64$ on the quartet half and $64$ on the conjugate half**, and the article names the four families, prints their matrices, and lists the pairs.
 - **What does each entry carry?** $B-L$ is read off the entry and computed for every family. **The fifteen carry $B-L$ and do not carry $T_{3}$**, and the article says exactly where that split sits and why the missing half is a wall and not an oversight.
 - **What does the algebra forbid?** No generator moves a fermion along the lepton line into another lepton line, no generator changes the copy index, and the six mixed planes are the only entries that change a line at all. **Each of the three is a statement with a proof, not a remark.**
-- **It does not derive the fermion Lagrangian.** The matrices are the corpus's; the dynamics is the transcription. **The dynamics is Gauge Fields: An Introduction to Quantum Theory's ledger**, and this article inherits it without softening it.
+- **It does not derive the fermion Lagrangian.** The matrices are the corpus's; the dynamics is the transcription. **The dynamics is [the spin note](../articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.html)'s ledger**, and this article inherits it without softening it.
 
 ## Conventions, and the Order of the Sixteen
 
@@ -126,7 +126,7 @@ $$
 
 **The second $64$ is the conjugate half**, where the vertex is $-t_{a}^{T}\otimes\mathbb{1}_{2}$ and every entry is reversed with a minus. **The two halves have the same count and the opposite sign**, which is the statement §*The Conjugate Half* makes precise.
 
-**What the first row forbids is lepton flavour.** No generator has an entry joining the lepton line to itself except the corner's phase, so no connection vertex can turn one lepton into another. **That is Gauge Fields: An Introduction to Quantum Theory's structural result**, and here it is one row of a table.
+**What the first row forbids is lepton flavour.** No generator has an entry joining the lepton line to itself except the corner's phase, so no connection vertex can turn one lepton into another. **That is [the lepton-flavour article](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html)'s structural result**, and here it is one row of a table.
 
 **What the second row forbids is a gauge origin for $Q$.** The corner gives the same phase $-3i$ to both copies in the lepton cell and the same phase $+i$ to both copies in a colour cell. **A matrix that is $\mathbb 1$ on the copy index cannot separate $\nu$ from $e$**, and the statement is exact: the two copy entries of every array are equal.
 
@@ -174,7 +174,7 @@ $$
 
 **Three prohibitions, and each is one line of matrix arithmetic.**
 
-1. **No generator changes the copy index.** Every array is $\mathbb 1_{2}$ on $\alpha$, so $(X\otimes\mathbb 1_{2})$ has no entry between $\alpha=1$ and $\alpha=2$. **The consequence is that no connection vertex converts a $\nu$ into an $e$ or a $u$ into a $d$**, and there is no $W$ in the model for the same reason. The copy index carries a global $\mathrm{U}(2)$ that the sector cannot see; **whether the Yukawa sector breaks it is $\mathbb 1_{2}$'s question.**
+1. **No generator changes the copy index.** Every array is $\mathbb 1_{2}$ on $\alpha$, so $(X\otimes\mathbb 1_{2})$ has no entry between $\alpha=1$ and $\alpha=2$. **The consequence is that no connection vertex converts a $\nu$ into an $e$ or a $u$ into a $d$**, and there is no $W$ in the model for the same reason. The copy index carries a global $\mathrm{U}(2)$ that the sector cannot see; **whether the Yukawa sector breaks it is [the Yukawa article](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html)'s question.**
 2. **No generator has two entries on the lepton line.** The corner has one, the six mixed planes have one each in the $t$ row, and the colour block has none. **So a lepton can be turned into a quark or given a phase, and not into another lepton.**
 3. **No generator carries $T_{3}$.** The fifteen are $\mathbb 1$ on the copy index, so no combination of them can produce $\tau_{3}$: **$[\mathbb 1_{4}\otimes\tau_{3},X\otimes\mathbb 1_{2}]=0$ for every $X$ in the fifteen, so $\tau_{3}$ commutes with the whole algebra and is not in it.** That is the wall, and it is a commutation statement.
 

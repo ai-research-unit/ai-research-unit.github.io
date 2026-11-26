@@ -481,5 +481,5 @@ The framework's **own** structure is anomaly-free identically: the central $\mat
 - E. Witten, "An $SU(2)$ anomaly," *Physics Letters B* **117** (1982) 324–328, for the global (discrete) anomaly.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the triangle calculation, the trace identities, and the Standard Model cancellation conditions.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 2 (Cambridge, 1996), for the anomaly, its topological character, and the $\mathrm{U}(1)_A$ problem.
-- K. Fujikawa, "Path-integral measure for invariant fermion theories," *Physical Review Letters* **42** (1979) 1195–1198, for the path-integral derivation of the anomaly.
+- K. Fujikawa, "Path-integral measure for gauge-invariant fermion theories," *Physical Review Letters* **42** (1979) 1195–1198, for the path-integral derivation of the anomaly.
 - M. F. Atiyah and I. M. Singer, "The index of elliptic operators: III," *Annals of Mathematics* **87** (1968) 546–604, for the index theorem that makes the anomaly coefficient topological.

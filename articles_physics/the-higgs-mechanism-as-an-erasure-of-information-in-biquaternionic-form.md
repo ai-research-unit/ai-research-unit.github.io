@@ -300,13 +300,13 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 
 ## Further Reading
 
-- Peter W. Higgs, "Broken Symmetries and the Masses of Connection," *Physical Review Letters* **13** (1964) 508–509, for the mechanism and the connection mass.
+- Peter W. Higgs, "Broken Symmetries and the Masses of Gauge Bosons," *Physical Review Letters* **13** (1964) 508–509, for the mechanism and the connection mass.
 - F. Englert and R. Brout, "Broken Symmetry and the Mass of Gauge Vector Mesons," *Physical Review Letters* **13** (1964) 321–323, for the independent formulation.
 - Jeffrey Goldstone, Abdus Salam, and Steven Weinberg, "Broken Symmetries," *Physical Review* **127** (1962) 965–970, for the Goldstone theorem and the massless mode.
 - Steven Weinberg, "A Model of Leptons," *Physical Review Letters* **19** (1967) 1264–1266, for the electroweak realization and the doublet structure the framework lacks.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the abelian and non-abelian Higgs mechanism, the unitary fixing condition, and the degree-of-freedom count.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Proca mass, the absorbed Goldstone mode, and the counting of polarizations.
-- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Yang–Mills theory and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the quartet mechanism and the statement that the Goldstone modes are unphysical in a covariant fixing condition.
+- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Non-Abelian Gauge Theories and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the quartet mechanism and the statement that the Goldstone modes are unphysical in a covariant fixing condition.
 - Rolf Landauer, "Irreversibility and Heat Generation in the Computing Process," *IBM Journal of Research and Development* **5** (1961) 183–191, for the thermodynamic cost of erasing a bit.
 - Charles H. Bennett, "The Thermodynamics of Computation — A Review," *International Journal of Theoretical Physics* **21** (1982) 905–940, for reversible computation, erasure, and the distinction between re-encoding and dissipation.
 - Wojciech H. Zurek, "Decoherence, einselection, and the quantum origins of the classical," *Reviews of Modern Physics* **75** (2003) 715–775, for einselection and the emergence of a preferred, stable set of variables.

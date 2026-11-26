@@ -121,7 +121,7 @@ six checks and six hits. **So the left triple spans the self-dual three-space of
 
 ## Part II. The Fifteen of $\mathfrak{su}(4)$ in Three Steps
 
-**The construction is the one of 0, and it has three steps.** Step 1 names the raw material; Step 2 makes the sixteen words and deletes the trace; Step 3 sums and subtracts the six pairs. **Steps 1 and 2 are forced. Step 3 is one choice, and it is the choice that puts one plane in one array.** The choice is not arbitrary even so: §*The Unique Property of the Physics Base* of that article proves the pair resolution is the only basis of the fifteen that a diagonal adjoint $M^2$ admits, with "one plane", "eigenline of the pair" and "diagonal mass matrix" three names for one condition.
+**The construction is the one of [Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices](../articles_internal/structures/structure-SU4-basis-construction.html), and it has three steps.** Step 1 names the raw material; Step 2 makes the sixteen words and deletes the trace; Step 3 sums and subtracts the six pairs. **Steps 1 and 2 are forced. Step 3 is one choice, and it is the choice that puts one plane in one array.** The choice is not arbitrary even so: §*The Unique Property of the Physics Base* of that article proves the pair resolution is the only basis of the fifteen that a diagonal adjoint $M^2$ admits, with "one plane", "eigenline of the pair" and "diagonal mass matrix" three names for one condition.
 
 ### Step 1. Eight Arrays, Two of Them the Identity
 

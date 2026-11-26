@@ -321,8 +321,8 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 - L. D. Faddeev and A. A. Slavnov, *Gauge Fields: An Introduction to Quantum Theory* (Benjamin/Cummings, 1980), for the Faddeev–Popov procedure, the Slavnov–Taylor identities and the quantum equations of motion.
 - S. Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the non-abelian path integral, the ghosts, the one-loop beta function and the asymptotically free sign.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Schwinger–Dyson equations, the Ward and Slavnov–Taylor identities and the parameter-independence argument.
-- V. N. Gribov, "Quantization of Yang–Mills theory," *Nuclear Physics B* **139** (1978) 1–19, for the copies and the horizon of the choice of representative condition.
+- V. N. Gribov, "Quantization of non-Abelian gauge theories," *Nuclear Physics B* **139** (1978) 1–19, for the copies and the horizon of the choice of representative condition.
 - I. M. Singer, "Some remarks on the Gribov ambiguity," *Communications in Mathematical Physics* **60** (1978) 7–12, for the topological obstruction to a global gauge slice.
 - N. Vandersickel and D. Zwanziger, "The Gribov problem and QCD dynamics," *Physics Reports* **520** (2012) 175–251, for the fundamental domain, the horizon condition and the continuum confinement setting.
-- J. B. Kogut and L. Susskind, "Hamiltonian formulation of Wilson's lattice connection theory," *Physical Review D* **11** (1975) 395–408, for the non-perturbative regulator in which the confining behaviour is established.
+- J. B. Kogut and L. Susskind, "Hamiltonian formulation of Wilson's lattice gauge theories," *Physical Review D* **11** (1975) 395–408, for the non-perturbative regulator in which the confining behaviour is established.
 - M. F. Atiyah and I. M. Singer, "Dirac operators coupled to vector potentials," *Proceedings of the National Academy of Sciences* **81** (1984) 2597–2600, for the index theory of the covariant derivative in the adjoint representation.

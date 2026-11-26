@@ -235,7 +235,7 @@ its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B
 
 - A. A. Belavin, A. M. Polyakov, A. S. Schwarz, and Yu. S. Tyupkin, "Pseudoparticle solutions of the Yang–Mills equations," *Physics Letters B* **59** (1975) 85–87, for the instanton and the topological charge.
 - G. 't Hooft, "Symmetry breaking through Bell–Jackiw anomalies," *Physical Review Letters* **37** (1976) 8–11, for the $\theta_{\mathrm{vac}}$ dependence and the topological term's role.
-- C. G. Callan, R. F. Dashen, and D. J. Gross, "The structure of the connection theory vacuum," *Physics Letters B* **63** (1976) 334–340, for the $\theta_{\mathrm{vac}}$ vacuum as a superposition of winding sectors.
+- C. G. Callan, R. F. Dashen, and D. J. Gross, "The structure of the gauge theory vacuum," *Physics Letters B* **63** (1976) 334–340, for the $\theta_{\mathrm{vac}}$ vacuum as a superposition of winding sectors.
 - R. Jackiw and C. Rebbi, "Vacuum periodicity in a Yang–Mills quantum theory," *Physical Review Letters* **37** (1976) 172–175, for vacuum periodicity and the large local transformation.
 - S. Coleman, *Aspects of Symmetry* (Cambridge University Press, 1985), for the $\theta_{\mathrm{vac}}$ vacuum, the $\theta_{\mathrm{vac}}$ term, and the strong-CP discussion.
 - R. D. Peccei and H. R. Quinn, "CP conservation in the presence of pseudoparticles," *Physical Review Letters* **38** (1977) 1440–1443, for the axion and the relaxation of $\theta_{\mathrm{vac}}$.

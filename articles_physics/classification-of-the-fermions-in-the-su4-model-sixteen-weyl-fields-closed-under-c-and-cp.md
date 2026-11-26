@@ -134,7 +134,7 @@ $$
 
 **It does not reverse the colour.** The quartet and the antiquartet both carry the three colour labels, with opposite $B-L$. The colour of $\bar u$ is $\bar{\mathbf3}$ as a representation, and its *label* is still one of the three. **A reader who expects $C$ to exchange $r$ with $\bar r$ has conflated the label with the representation.**
 
-**It does not give the mass.** $C$ is a symmetry of the content and not a mass term: a mass needs a scalar that converts $\mathbf4$ into $\bar{\mathbf4}$, which exists — the fourth-colour scalar $Ξ$ — and whose vacuum is what breaks the group. **The Yukawa sector is $C$**, and it is downstream of this count.
+**It does not give the mass.** $C$ is a symmetry of the content and not a mass term: a mass needs a scalar that converts $\mathbf4$ into $\bar{\mathbf4}$, which exists — the fourth-colour scalar $Ξ$ — and whose vacuum is what breaks the group. **The Yukawa sector is [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html)**, and it is downstream of this count.
 
 ## The Checks
 

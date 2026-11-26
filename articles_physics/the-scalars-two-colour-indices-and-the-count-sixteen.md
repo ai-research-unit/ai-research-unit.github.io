@@ -64,7 +64,7 @@ $$
 
 **Second, from the potential.** $\operatorname{tr}Ξ^{2}$ and $\operatorname{tr}Ξ^{4}$ are real only for Hermitian $Ξ$. For a general complex matrix the invariant of degree two is $\operatorname{tr}Ξ^{†}Ξ$, which is not $\operatorname{tr}Ξ^{2}$, and every quartic would have to carry its own dagger. **The corpus's potential is written in the traces without daggers, and that writing is a statement that the field is Hermitian.**
 
-**And the count of equations follows the count of components.** Varying a Hermitian $Ξ$ and varying $Ξ^{†}$ give the same equation, not a conjugate pair, so the sixteen components give sixteen equations and not half of thirty-two. **That is $Ξ$'s observation, and it is the third reason the same sixteen appears in every count of this field.**
+**And the count of equations follows the count of components.** Varying a Hermitian $Ξ$ and varying $Ξ^{†}$ give the same equation, not a conjugate pair, so the sixteen components give sixteen equations and not half of thirty-two. **That is [The Lagrangian and the Scalar Matrix](the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html)'s observation, and it is the third reason the same sixteen appears in every count of this field.**
 
 ## The Two Labels
 

@@ -483,7 +483,7 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 
 - M. V. Berry, "Quantal phase factors accompanying adiabatic changes," *Proceedings of the Royal Society of London A* **392** (1984) 45–57, for the original geometric phase.
 - B. Simon, "Holonomy, the quantum adiabatic theorem, and Berry's phase," *Physical Review Letters* **51** (1983) 2167–2170, for the fibre-bundle formulation and the connection.
-- F. Wilczek and A. Zee, "Appearance of structure in simple dynamical systems," *Physical Review Letters* **52** (1984) 2111–2114, for the non-abelian phase of a degenerate level.
+- F. Wilczek and A. Zee, "Appearance of gauge structure in simple dynamical systems," *Physical Review Letters* **52** (1984) 2111–2114, for the non-abelian phase of a degenerate level.
 - Y. Aharonov and J. Anandan, "Phase change during a cyclic quantum evolution," *Physical Review Letters* **58** (1987) 1593–1596, for the non-adiabatic generalisation.
 - D. H. Gottlieb, "Eigenbundles, Quaternions, and Berry's Phase," arXiv:math/0304281 [math.AT] (2003), for the existence question treated as a homotopy-theoretic classification: the three cross-sections $s_1, s_2, s_3$ of the spectral bundle, recorded in the section above, and a 4 by 4 complex-quaternion realization used only as an example.
 - A. Shapere and F. Wilczek, *Geometric Phases in Physics* (World Scientific, 1989), for the collected theory and its applications.

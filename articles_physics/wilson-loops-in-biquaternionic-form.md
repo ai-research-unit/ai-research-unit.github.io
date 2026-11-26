@@ -288,7 +288,7 @@ verified in the $2\times2$ representation, so that the two Lorentz invariants of
 - Kenneth G. Wilson, "Confinement of Quarks," *Physical Review D* **10** (1974) 2445–2459, for the Wilson loop and the area law as the confinement criterion.
 - Alexander M. Polyakov, *Gauge Fields and Strings* (Harwood, 1987), for the loop equation, the area law, and the string picture of confinement.
 - Yu. M. Makeenko and A. A. Migdal, "Exact Equation for the Loop Average in Multicolor QCD," *Physics Letters B* **88** (1979) 135–137, for the loop equation and its large-$N$ closure.
-- John B. Kogut, "An Introduction to Lattice Connection theory and Spin Systems," *Reviews of Modern Physics* **51** (1979) 659–713, for the lattice formulation in which the area law is established.
+- John B. Kogut, "An Introduction to Lattice Gauge Theory and Spin Systems," *Reviews of Modern Physics* **51** (1979) 659–713, for the lattice formulation in which the area law is established.
 - Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Wilson loop, the static potential, and the renormalization of the perimeter divergence.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the non-abelian holonomy and its transformation law.
 - Gerard 't Hooft, "On the Phase Transition Towards Permanent Quark Confinement," *Nuclear Physics B* **138** (1978) 1–25, for the confinement criterion and the behaviour of the loop in the different phases.

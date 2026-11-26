@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This article exponentiates the fifteen arrays that Gauge Fields: An Introduction to Quantum Theory builds, and prints the fifteen answers.** The construction article supplies the directions; this article supplies the motion along them, one closed form per array, in the same axis-free frame and with the same names. **The order is not the construction article's**, and it is explained in the next paragraph.
+**This article exponentiates the fifteen arrays that [the construction article](construction-of-the-axf-matrices-of-the-fifteen-generators.html) builds, and prints the fifteen answers.** The construction article supplies the directions; this article supplies the motion along them, one closed form per array, in the same axis-free frame and with the same names. **The order is not the construction article's**, and it is explained in the next paragraph.
 
 **Three articles, three questions, and the division is deliberate.** [The construction article](construction-of-the-axf-matrices-of-the-fifteen-generators.html) answers *what is the array*. [The rotors article](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) answers *which space does it turn, and why is none of them a boost*. **This article answers only *what is the turned thing, written out*** — and it does so for all fifteen rather than for the few the theorem needs.
 
@@ -144,7 +144,7 @@ $$
 \exp\bigl(\theta iD\bigr)=e^{i\theta}\operatorname{diag}\bigl(e^{-4i\theta},1,1,1\bigr),
 $$
 
-**which is the display $N\theta$ prints, character for character.** That is not a coincidence of notation: the article's $N\theta$ relative phase and this article's factor $3$ against $1$ are the same statement, and the two were computed from different starting points.
+**which is the display [the charge-quantisation article](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html) prints, character for character.** That is not a coincidence of notation: the article's $N\theta$ relative phase and this article's factor $3$ against $1$ are the same statement, and the two were computed from different starting points.
 
 **The rotor is central exactly four times a turn, and the four values are the fourth roots of unity.**
 

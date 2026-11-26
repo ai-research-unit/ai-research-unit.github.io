@@ -287,8 +287,8 @@ The Goldstone field's current is $\tilde J_{\Phi}=-f\tilde\nabla_\Phi\vartheta_{
 
 - J. Goldstone, "Field theories with superconductor solutions," *Nuovo Cimento* **19** (1961) 154–164, for the original statement of the theorem.
 - J. Goldstone, A. Salam and S. Weinberg, "Broken symmetries," *Physical Review* **127** (1962) 965–970, for the proof and the counting of the massless modes.
-- Y. Nambu, "Quasi-particles and local invariance in the theory of superconductivity," *Physical Review* **117** (1960) 648–663, and Y. Nambu and G. Jona-Lasinio, "Dynamical model of elementary particles based on an analogy with superconductivity. I," *Physical Review* **122** (1961) 345–358, for the physical origin of the mechanism in a condensed-matter analogy.
-- P. W. Higgs, "Broken symmetries and the masses of connection," *Physical Review Letters* **13** (1964) 508–509, for the gauge-theoretic absorption of the would-be Goldstone mode.
+- Y. Nambu, "Quasi-particles and gauge invariance in the theory of superconductivity," *Physical Review* **117** (1960) 648–663, and Y. Nambu and G. Jona-Lasinio, "Dynamical model of elementary particles based on an analogy with superconductivity. I," *Physical Review* **122** (1961) 345–358, for the physical origin of the mechanism in a condensed-matter analogy.
+- P. W. Higgs, "Broken symmetries and the masses of gauge bosons," *Physical Review Letters* **13** (1964) 508–509, for the gauge-theoretic absorption of the would-be Goldstone mode.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 2 (Cambridge, 1996), for spontaneous symmetry breaking, the effective potential, and the Goldstone theorem in its general form.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Mexican-hat potential, the Goldstone mode, and the counting rule.
 - S. Coleman, *Aspects of Symmetry* (Cambridge, 1985), for the effective-potential proof and for the discrete-symmetry contrast.

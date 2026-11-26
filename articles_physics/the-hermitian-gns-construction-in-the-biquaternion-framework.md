@@ -48,7 +48,7 @@ a left ideal because $\langle \tilde Q_1\tilde Q_3,\tilde Q_1\tilde Q_3\rangle_\
 > $$
 > \pi_\omega(\tilde Q_3)[\tilde Q_1] \;=\; [\tilde Q_3\tilde Q_1]
 > $$
-> is a well-defined $*$-representation of $\mathcal{A}$ on $\mathcal{H}_\omega$, the vector $\Omega_\omega=[e]$ is $*$ (the set $\pi_\omega(\mathcal{A})\Omega_\omega$ is dense), and $\omega(\tilde Q_3)=\langle\Omega_\omega|\pi_\omega(\tilde Q_3)|\Omega_\omega\rangle$. The triple $(\mathcal{H}_\omega,\pi_\omega,\Omega_\omega)$ is unique up to $*$-unitary equivalence.
+> is a well-defined $*$-representation of $\mathcal{A}$ on $\mathcal{H}_\omega$, the vector $\Omega_\omega=[e]$ is **cyclic** (the set $\pi_\omega(\mathcal{A})\Omega_\omega$ is dense), and $\omega(\tilde Q_3)=\langle\Omega_\omega|\pi_\omega(\tilde Q_3)|\Omega_\omega\rangle$. The triple $(\mathcal{H}_\omega,\pi_\omega,\Omega_\omega)$ is unique up to $*$-unitary equivalence.
 
 Two corollaries will be used constantly. First, $\omega$ is **pure** — not a nontrivial convex combination of other states — if and only if $\pi_\omega$ is **irreducible**. Second, the **cyclic vector is annihilated by the radical**:
 $$

@@ -297,12 +297,12 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 ## Further Reading
 
 - K. G. Wilson, "Confinement of quarks," *Physical Review D* **10** (1974) 2445–2459, for the lattice connection theory, the plaquette action and the strong-coupling area law.
-- K. G. Wilson, "Nonabelian lattice connection theories," in *New Phenomena in Subnuclear Physics*, ed. A. Zichichi (Plenum, 1977), for the lattice formulation and its continuum limit.
-- J. B. Kogut and L. Susskind, "Hamiltonian formulation of Wilson's lattice connection theory," *Physical Review D* **11** (1975) 395–408, for the transfer matrix, the Hamiltonian limit and the strong-coupling expansion.
-- J. B. Kogut, "An introduction to lattice connection theory and spin systems," *Reviews of Modern Physics* **51** (1979) 659–713, for the group integrals, the tiling expansion and the area law.
+- K. G. Wilson, "Nonabelian lattice gauge theories," in *New Phenomena in Subnuclear Physics*, ed. A. Zichichi (Plenum, 1977), for the lattice formulation and its continuum limit.
+- J. B. Kogut and L. Susskind, "Hamiltonian formulation of Wilson's lattice gauge theories," *Physical Review D* **11** (1975) 395–408, for the transfer matrix, the Hamiltonian limit and the strong-coupling expansion.
+- J. B. Kogut, "An introduction to lattice gauge theory and spin systems," *Reviews of Modern Physics* **51** (1979) 659–713, for the group integrals, the tiling expansion and the area law.
 - M. Creutz, *Quarks, Gluons and Lattices* (Cambridge, 1983), for the one-plaquette model, the Bessel-function averages and the deconfinement transition.
 - K. Osterwalder and R. Schrader, "Axioms for Euclidean Green's functions," *Communications in Mathematical Physics* **31** (1973) 83–112, for reflection positivity and the reconstruction of the Hamiltonian.
-- M. Lüscher, "Construction of a selfadjoint, strictly positive transfer matrix for Euclidean lattice connection theory," *Communications in Mathematical Physics* **54** (1977) 283–292, for the positivity of the Wilson transfer matrix.
-- A. Hasenfratz and P. Hasenfratz, "The equivalence of the $SU(2)$ lattice connection theory with a non-linear sigma model," *Physics Letters B* **93** (1980) 165–168, for the $SU(2)$ lattice structure and the real-fundamental special case.
-- M. Creutz, "Monte Carlo study of quantized $SU(2)$ connection theory," *Physical Review D* **21** (1980) 2308–2315, for the numerical lattice determination of the string tension and the scaling of the coupling.
-- G. Münster and P. Weisz, "On the continuum limit of lattice connection theory," *Nuclear Physics B* **180** (1981) 330–338, for the approach to the continuum and the scaling behaviour.
+- M. Lüscher, "Construction of a selfadjoint, strictly positive transfer matrix for Euclidean lattice gauge theories," *Communications in Mathematical Physics* **54** (1977) 283–292, for the positivity of the Wilson transfer matrix.
+- A. Hasenfratz and P. Hasenfratz, "The equivalence of the $SU(2)$ lattice gauge theory with a non-linear sigma model," *Physics Letters B* **93** (1980) 165–168, for the $SU(2)$ lattice structure and the real-fundamental special case.
+- M. Creutz, "Monte Carlo study of quantized $SU(2)$ gauge theory," *Physical Review D* **21** (1980) 2308–2315, for the numerical lattice determination of the string tension and the scaling of the coupling.
+- G. Münster and P. Weisz, "On the continuum limit of lattice gauge theories," *Nuclear Physics B* **180** (1981) 330–338, for the approach to the continuum and the scaling behaviour.

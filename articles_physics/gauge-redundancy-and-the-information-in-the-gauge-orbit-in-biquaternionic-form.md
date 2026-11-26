@@ -336,7 +336,7 @@ The orbit's only non-empty content is global. A connection can be set to zero by
 ## Further Reading
 
 - Hermann Weyl, "Elektron und Gravitation," *Zeitschrift für Physik* **56** (1929) 330–352, for the origin of the local phase and the redundancy it introduces.
-- Chen-Ning Yang and Robert L. Mills, "Conservation of Isotopic Spin and Isotopic Local invariance," *Physical Review* **96** (1954) 191–195, for the non-abelian transformation law and the adjoint orbit.
+- Chen-Ning Yang and Robert L. Mills, "Conservation of Isotopic Spin and Isotopic Gauge Invariance," *Physical Review* **96** (1954) 191–195, for the non-abelian transformation law and the adjoint orbit.
 - P. A. M. Dirac, *Lectures on Quantum Mechanics* (Yeshiva University, 1964), for first-class constraints and the statement that the redundancy is not fixed by the equations of motion.
 - L. D. Faddeev and A. A. Slavnov, *Gauge Fields: Introduction to Quantum Theory* (Benjamin/Cummings, 1980), for the orbit, fixing the representative, and the Faddeev–Popov measure.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the counting of physical polarizations and the role of the Bianchi identity.

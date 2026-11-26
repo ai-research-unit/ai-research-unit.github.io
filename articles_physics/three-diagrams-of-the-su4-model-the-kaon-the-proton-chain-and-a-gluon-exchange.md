@@ -20,7 +20,7 @@ $$
 \Gamma_{a,\imath}=-ig_{4}\gamma_{\imath}\bigl(t_{a}\otimes\mathbb{1}_{2}\bigr),
 $$
 
-**with $t_{a}$ the normalised generator of $t_{a}$'s normalisation section, and the heavy propagator in the limit $k^{2}\ll M_X^{2}$**
+**with $t_{a}$ the normalised generator of [the rules article](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html)'s normalisation section, and the heavy propagator in the limit $k^{2}\ll M_X^{2}$**
 $$
 \frac{i}{k^{2}-M_X^{2}}\ \longrightarrow\ \frac{-i}{M_X^{2}} .
 $$
@@ -51,7 +51,7 @@ $$
 i\mathcal{M}=i\,\frac{g_4^{2}}{2M_X^{2}}\Bigl[(\bar q\,\gamma^{\imath}P_L\ell)(\bar q'\,\gamma_{\imath}P_L\ell')+(L\to R)\Bigr],
 $$
 
-**with the factor $\tfrac12$ carried in the corpus's operator; it is not a colour sum**, and the colour sum was disposed of in the paragraph above. The $V-A$ at each vertex is the model's: the left-handed block couples $P_{L}$, the right-handed block $P_{R}$, and both appear because both chiralities of the mixed plane exist. **The operator is the one the corpus prints in $\tfrac12$, and the $L\to R$ line is not an afterthought**: it is the second of the two planes of the pair.
+**with the factor $\tfrac12$ carried in the corpus's operator; it is not a colour sum**, and the colour sum was disposed of in the paragraph above. The $V-A$ at each vertex is the model's: the left-handed block couples $P_{L}$, the right-handed block $P_{R}$, and both appear because both chiralities of the mixed plane exist. **The operator is the one the corpus prints in [the lepton-flavour article](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html), and the $L\to R$ line is not an afterthought**: it is the second of the two planes of the pair.
 
 **Why $K_L$ and not $K_S$.** The kaon is a pseudoscalar, so only the axial part of a $V-A$ current contributes, and the axial matrix element is odd under $K^{0}\leftrightarrow\bar K^{0}$. **With $K_S$ the symmetric combination and $K_L$ the odd one, the odd combination survives and the even one cancels**: the frame predicts $K_L\to\mu e$ and forbids $K_S\to\mu e$ at leading order, with a residue at the $|\epsilon_K|^{2}$ level near $10^{-20}$. **That is a selection rule of the algebra plus one fact about a kaon, and neither is adjustable.**
 

@@ -34,7 +34,7 @@ $$
 Z \;=\; \int \mathcal D\mathcal A\;\exp(-S[\mathcal A]),
 $$
 
-where the measure, the choice of representative and the ghosts are the objects constructed in the companion path-integral articles; the instanton calculus takes that construction for granted. **Steepest descent, the saddle-point condition, the one-loop determinant and the treatment of the flat directions are the machinery of Gauge Fields: An Introduction to Quantum Theory.** What is added here is the framework's saddle: a self-dual configuration, whose classical action is fixed by the topology,
+where the measure, the choice of representative and the ghosts are the objects constructed in the companion path-integral articles; the instanton calculus takes that construction for granted. **Steepest descent, the saddle-point condition, the one-loop determinant and the treatment of the flat directions are the machinery of [The Euclidean Semiclassical Expansion and the Dilute Gas in Biquaternionic Form](the-euclidean-semiclassical-expansion-and-the-dilute-gas-in-biquaternionic-form.html).** What is added here is the framework's saddle: a self-dual configuration, whose classical action is fixed by the topology,
 
 $$
 S_{\mathrm{cl}}=\frac{8\pi^2}{g^2}|Ϙ| ,
@@ -262,7 +262,7 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 - Gerard 't Hooft, "Computation of the quantum effects due to a four-dimensional pseudoparticle", *Physical Review D* 14 (1976) 3432–3450, for the one-instanton measure, the one-loop determinant and the theta dependence.
 - Alexander A. Belavin, Alexander M. Polyakov, Albert S. Schwartz and Yuri S. Tyupkin, "Pseudoparticle solutions of the Yang–Mills equations", *Physics Letters B* 59 (1975) 85–87, for the instanton saddle.
 - Sidney Coleman, "The uses of instantons", in *Aspects of Symmetry* (Cambridge University Press, 1985), for the theta vacuum, the dilute-gas picture and its interpretation.
-- Curtis G. Callan, Roger F. Dashen and David J. Gross, "The structure of the connection theory vacuum", *Physics Letters B* 63 (1976) 334–340, for the theta vacuum and the cluster-decomposition argument.
+- Curtis G. Callan, Roger F. Dashen and David J. Gross, "The structure of the gauge theory vacuum", *Physics Letters B* 63 (1976) 334–340, for the theta vacuum and the cluster-decomposition argument.
 - Edward Witten, "Instantons, the quark model, and the $1/N$ expansion", *Nuclear Physics B* 149 (1979) 285–320, for the theta dependence and the large-$N$ resolution of the vacuum energy.
 - Mikhail A. Shifman, ed., *Instantons in Gauge Theories* (World Scientific, 1994), for a collected account of the instanton calculus and its applications.
 - Michael F. Atiyah, Vladimir G. Drinfeld, Nigel J. Hitchin and Yuri I. Manin, "Construction of instantons", *Physics Letters A* 65 (1978) 185–187, for the moduli space whose measure the semiclassical integral uses.

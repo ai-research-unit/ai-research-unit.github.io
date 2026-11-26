@@ -226,7 +226,7 @@ The coupled field has a charge, because the enlarged carrier has a phase and the
 - *The Connection Path Integral in Biquaternionic Form*, for the Faddeev–Popov construction that a dynamical connection would need.
 - *Landau Levels in Biquaternionic Form*, for the constant magnetic background's spectrum of the transverse factor.
 - *Pair Creation in a Bounded Region in Biquaternionic Form*, for the constant electric background.
-- J. Schwinger, "On Local invariance and Vacuum Polarization," *Physical Review* **82** (1951) 664, for the background-field determinant and its local invariance.
+- J. Schwinger, "On Gauge Invariance and Vacuum Polarization," *Physical Review* **82** (1951) 664, for the background-field determinant and its local invariance.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the massive vector in a background and the counting of modes.
 - L. D. Faddeev and A. A. Slavnov, *Gauge Fields: An Introduction to Quantum Theory* (Benjamin, 1980), for the external-versus-dynamical distinction.
 - S. Weinberg, *The Quantum Theory of Fields II* (Cambridge, 1996), for the effective action of a massive vector.

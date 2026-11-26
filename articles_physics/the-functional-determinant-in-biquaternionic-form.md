@@ -260,7 +260,7 @@ For a central fluctuation operator the module determinant is the square of the s
 
 ## Further Reading
 
-- J. S. Schwinger, "On local invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the proper-time representation of the one-loop determinant.
+- J. S. Schwinger, "On gauge invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the proper-time representation of the one-loop determinant.
 - S. W. Hawking, "Zeta function regularization of path integrals in curved spacetime," *Communications in Mathematical Physics* **55** (1977) 133–148, for zeta-function regularization and $-\left.\frac{d\zeta}{ds}\right|_{s=0}$.
 - J. S. Dowker and R. Critchley, "Effective Lagrangian and energy-momentum tensor in de Sitter space," *Physical Review D* **13** (1976) 3224–3232, for the zeta-function and point-splitting evaluation of the determinant.
 - B. S. DeWitt, *Dynamical Theory of Groups and Fields* (Gordon and Breach, 1965), for the heat kernel and the Seeley–DeWitt coefficients.

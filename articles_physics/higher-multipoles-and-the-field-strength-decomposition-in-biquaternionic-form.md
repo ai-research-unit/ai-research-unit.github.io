@@ -165,7 +165,7 @@ $$
 \tilde{F}^{*} = i\vec N^* ,
 $$
 
-so that the self-dual half is the field strength itself and the anti-self-dual half is obtained from it by the dagger. The identity uses $\tilde{F}^{*} = i\vec E+c\vec B$ together with $\vec B=\mu\vec H$, so it holds for the real field; on the $\tilde{F}^{*} = i\vec E+c\vec B$ field space the two halves are the independent projections of $F$ and the dagger is no longer the operation that produces the second from the first. For a real field, $\vec N^* = \overline{\vec N}$: the two chiralities are complex conjugates and carry the same six real components, so either alone encodes the whole field. On the complexified field space they are independent, and it is there that the decomposition is a genuine splitting; on the real field space it is the statement that the field is encoded by a single complex vector, its Riemann–Silberstein vector.
+so that the self-dual half is the field strength itself and the anti-self-dual half is obtained from it by the dagger. The identity uses $\tilde{F}^{*} = i\vec E+c\vec B$ together with $\vec B=\mu\vec H$, so it holds for the real field; on the **complexified** field space the two halves are the independent projections of $F$ and the dagger is no longer the operation that produces the second from the first. For a real field, $\vec N^* = \overline{\vec N}$: the two chiralities are complex conjugates and carry the same six real components, so either alone encodes the whole field. On the complexified field space they are independent, and it is there that the decomposition is a genuine splitting; on the real field space it is the statement that the field is encoded by a single complex vector, its Riemann–Silberstein vector.
 
 ### The Relation of the Two Decompositions
 

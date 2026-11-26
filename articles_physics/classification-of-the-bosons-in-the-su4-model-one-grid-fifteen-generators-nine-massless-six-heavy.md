@@ -179,7 +179,7 @@ $$
 32=2\cdot4^{2},
 $$
 
-where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which colour they carry. **The full matrix, its diagonal form and the eigenvalue count are ](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
+where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which colour they carry. **The full matrix, its diagonal form and the eigenvalue count are [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
 ## The Spectrum: Fifteen Generators, Fifteen Particles
 
@@ -294,7 +294,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 
 **Six of $Ξ$'s sixteen components are eaten by the sextet.** The condensate is $\langleΞ\rangle=v\operatorname{diag}(-3,1,1,1)$ in the Hermitian matrix, and the six leptoquarks that acquire $32v^{2}$ acquire it by eating the six components that point along their own planes. **The count is forced by the coset**: $15-9=6$, one real component per broken generator. **An eaten component has no name of its own: it is the third polarisation of the boson that ate it**, which is why the eaten six reappear on the gauge grid and not in the scalar list.
 
-**The other ten components of $Ξ$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the Hermitian matrix, and they are the ones the Higgs sector below $M_C$ is built from. **$Ξ$ is the census of that ledger.** **The corpus's one caveat stands and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
+**The other ten components of $Ξ$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the Hermitian matrix, and they are the ones the Higgs sector below $M_C$ is built from. **[The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) is the census of that ledger.** **The corpus's one caveat stands and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
 
 **The word to avoid is "the Higgs coupling".** This model leaves the connection coupling symbolic and predicts none of it, fixes no scalar multiplet, and has no coupling claim in this sector to patch. **A sentence such as "the minimal sector gives $m_d=m_e$" imports the Pati–Salam literature's condition into a model whose ledger refuses it.**
 

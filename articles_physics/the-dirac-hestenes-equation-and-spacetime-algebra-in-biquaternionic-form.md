@@ -222,7 +222,7 @@ C[\tilde{Ξ}]=-\vec e_y\,\tilde{Ξ}^*\,\vec e_y,
 T[\tilde{Ξ}]=-\vec e_y\,\tilde{Ξ}^*(-r'_t,\vec r),
 $$
 
-with $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and $\tilde{Ξ}^*$ the conjugation that is antilinear in the coefficients and reverses the order of a product, the antilinear map that carries one part of the field onto the other. $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ Parity is a right multiplication by the fixed element $i\vec e_x$, which is odd. Charge conjugation multiplies on $\tilde{Ξ}^*$ sides, by $-\vec e_y$ on the left and by $\vec e_y$ on the right — the conjugation by $\vec e_y$ up to sign — and it is composed with $\tilde{Ξ}^*$. Time reversal multiplies on the left by $-\vec e_y$ and is composed with the same $\tilde{Ξ}^*$. Their characters and the side of each factor are collected in the table.
+with $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and $\tilde{Ξ}^*$ the conjugation that is antilinear in the coefficients and reverses the order of a product, the antilinear map that carries one part of the field onto the other. **The three are not three of one kind, and none of them is a plain multiplication by a single element on one side.** Parity is a right multiplication by the fixed element $i\vec e_x$, which is odd. Charge conjugation multiplies on **both** sides, by $-\vec e_y$ on the left and by $\vec e_y$ on the right — the conjugation by $\vec e_y$ up to sign — and it is composed with $\tilde{Ξ}^*$. Time reversal multiplies on the left by $-\vec e_y$ and is composed with the same $\tilde{Ξ}^*$. Their characters and the side of each factor are collected in the table.
 
 | Operation | Character | Action | Side of the factor | Chirality |
 |---|---|---|---|---|

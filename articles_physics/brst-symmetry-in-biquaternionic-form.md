@@ -297,10 +297,10 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 
 ## Further Reading
 
-- C. Becchi, A. Rouet and R. Stora, "Renormalization of Connection theory," *Annals of Physics* **98** (1976) 287–321, for the original BRST transformation and its nilpotency.
-- I. V. Tyutin, "Local invariance in Field Theory and Statistical Physics in Operator Formalism" (1975), Lebedev preprint, for the independent discovery of the same symmetry.
+- C. Becchi, A. Rouet and R. Stora, "Renormalization of Gauge Theories," *Annals of Physics* **98** (1976) 287–321, for the original BRST transformation and its nilpotency.
+- I. V. Tyutin, "Gauge Invariance in Field Theory and Statistical Physics in Operator Formalism" (1975), Lebedev preprint, for the independent discovery of the same symmetry.
 - L. D. Faddeev and V. N. Popov, "Feynman Diagrams for the Yang–Mills Field," *Physics Letters B* **25** (1967) 29–30, for the ghost fields and the determinant.
-- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Yang–Mills theory and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the quartet mechanism and the cohomological construction of the physical subspace.
+- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Non-Abelian Gauge Theories and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the quartet mechanism and the cohomological construction of the physical subspace.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the BRST symmetry, the choice of representative fermion, and the Slavnov–Taylor identities.
 - Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Faddeev–Popov procedure, the ghost Lagrangian, and the BRST charge.
 - Marc Henneaux and Claudio Teitelboim, *Quantization of Gauge Systems* (Princeton, 1992), for the general theory of nilpotent charges and the cohomological reduction of constrained systems.

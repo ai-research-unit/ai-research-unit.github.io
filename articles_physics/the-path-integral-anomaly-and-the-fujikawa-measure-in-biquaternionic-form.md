@@ -81,6 +81,6 @@ The algebra enters at two points, and neither is the coefficient.
 
 ## Further Reading
 
-- K. Fujikawa, "Path-Integral Measure for Invariant Fermion Theories," *Physical Review Letters* **42** (1979) 1195–1198, the method.
-- K. Fujikawa, "Path Integral for Connection theory with Fermions," *Physical Review D* **21** (1980) 2848, the coefficient.
+- K. Fujikawa, "Path-Integral Measure for Gauge-Invariant Fermion Theories," *Physical Review Letters* **42** (1979) 1195–1198, the method.
+- K. Fujikawa, "Path Integral for Gauge Theories with Fermions," *Physical Review D* **21** (1980) 2848, the coefficient.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory*, Chapter 19, for the diagrammatic comparison.
