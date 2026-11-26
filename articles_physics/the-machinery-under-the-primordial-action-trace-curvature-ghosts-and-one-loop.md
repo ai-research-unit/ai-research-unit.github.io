@@ -51,7 +51,7 @@ so the density is the same at every representative. **The cyclicity is the whole
 **It is real, because the curvature is Hermitian.** With $t_{a}$ Hermitian and $F_{a,\imath\jmath}$ real, $\mathbb{F}$ is Hermitian, so $\mathbb{F}^{2}$ is Hermitian and its trace is real. **Positivity follows from the same fact**: the trace of the square of a nonzero Hermitian matrix is positive, which is what a kinetic term needs.
 
 
-**It is a trace over $\mathbb{C}^{4}$, and that is the whole of what the block asks of the algebra.**
+**It is a trace over $\mathbb{C}^{4}$, and that is the whole of what the block asks of the algebra.** The three requirements and the module criterion behind this section are stated once, before any block uses them, in [The Invariant Density: Which Pairing the Action Can Integrate](the-invariant-density-which-pairing-the-action-can-integrate.html).
 
 
 ### Two Norms and One Normalisation

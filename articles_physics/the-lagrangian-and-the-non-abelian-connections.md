@@ -26,7 +26,7 @@ $$
 
 the stationarity condition is $D_{\imath} F_{\imath\jmath}=0$. The coefficient $\tfrac12$ and the sign are the standard ones once the generators are normalized so that $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$.
 
-*Second, the trace is not the corpus's pairing.* The invariance of the density needs $\mathrm{Tr}(\tilde QF\tilde Q^{-1}\tilde QF\tilde Q^{-1})=\mathrm{Tr}(FF)$, which is the cyclicity of the matrix trace. The corpus's informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a different functional, and it does not have that property. Using it would give an action that is not invariant, and the distinction is the sharpest technical point of this article.
+*Second, the trace is not the corpus's pairing.* The invariance of the density needs $\mathrm{Tr}(\tilde QF\tilde Q^{-1}\tilde QF\tilde Q^{-1})=\mathrm{Tr}(FF)$, which is the cyclicity of the matrix trace. The corpus's informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a different functional, and it does not have that property. Using it would give an action that is not invariant, and the distinction is the sharpest technical point of this article. The requirement itself, stated before any sector uses it, is in [The Invariant Density: Which Pairing the Action Can Integrate](the-invariant-density-which-pairing-the-action-can-integrate.html), which also fixes the sign against the Hermiticity of the generators.
 
 *Third, the action reaches $\mathrm{SU}(2)$ and stops.* The algebra's compact group is $\mathrm{U}(2)$, so the construction gives a Yang–Mills theory for $\mathrm{SU}(2)$ and for its abelian factor, and it gives none for $\mathrm{SU}(3)$. The action's existence is therefore a statement about the algebra's ceiling, and the ceiling article is its continuation.
 

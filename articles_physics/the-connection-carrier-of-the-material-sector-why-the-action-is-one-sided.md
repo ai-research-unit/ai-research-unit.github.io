@@ -53,7 +53,7 @@ Two actions of one element. A unit quaternion $\tilde Q$ can rotate an element, 
 
 The numbers. Over two thousand random elements and random rotors the trace is preserved by conjugation to a residual of $2\times10^{-15}$, while the left product returns a trace that is generically nonzero — of order one on a normally distributed element. The star is preserved by conjugation for every unitary $\tilde Q$, and never by the left product unless the element is central.
 
-**Why the trace and not something else.** It is the shortest invariant that separates the two, and it separates them exactly: the trace of a commutator vanishes, so any conjugation preserves it, while the left product changes it whenever the multiplier is non-central. The discriminator is therefore a proof and not a numerical accident.
+**Why the trace and not something else.** It is the shortest invariant that separates the two, and it separates them exactly: the trace of a commutator vanishes, so any conjugation preserves it, while the left product changes it whenever the multiplier is non-central. The discriminator is therefore a proof and not a numerical accident. The general criterion behind it — a density follows the transformation law of its module — is stated in [The Invariant Density: Which Pairing the Action Can Integrate](the-invariant-density-which-pairing-the-action-can-integrate.html).
 
 ## What the Carrier Supplies and What It Does Not
 

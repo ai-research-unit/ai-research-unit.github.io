@@ -454,7 +454,44 @@
 <a href="articles_physics/the-sector-map-and-its-exact-parts.html">The Sector Map and Its Exact Parts</a>
 <!-- the two projections onto the Hermitian and anti-Hermitian slices, and the non-additivity of the product; the map $J(\tilde Q)=i\tilde Q$, its square $-e_t$, its commutation with the congruence, its reversal of the product and the proof that no rescaling makes it a homomorphism; the sign flip of the natural norm and the preservation of the Hermitian form; the coordinate dictionary $i r'_t e_t+\vec r\mapsto-r'_t e_t+i\vec r$ and the two inertias; what the map does not carry, a four-vector not being a state and a composition needing a sign. -->
 
+## Biquaternion Universe Apparatus
+
+<!-- the five steps every force block performs and none of them owns: the connection and why a local symmetry forces it,
+     the curvature and its Bianchi identity, the invariant density the action integrates, the functional integral and the
+     determinant, and the running of the coupling. Filed here, between Relativity and the Primordial Force, because a reader
+     who meets any of the five inside a sector reads it with that sector's notation already doing work. Four of the five
+     articles are shared by every sector; the density article is the one this module exists for. -->
+
+### Local Symmetry and the Connection
+
+<a href="articles_physics/the-covariant-derivative-and-connection-in-biquaternionic-form.html">The Covariant Derivative and Connection in Biquaternionic Form</a>
+<!-- the covariant derivative and its components; the covariant derivative as a derivation; local covariance and what it forces; the connection as a orbit; the curvature as the commutator of covariant derivatives; the covariant square and the curvature term; the representative and the gravitational connection; the making local/variation commutativity of the internal case and its failure for the standard gravitational coupling, and an external construction in which one algebra-valued connection carries both the local $U(1)$ and the Lorentz connection. -->
+
+<a href="articles_physics/connection-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Connection Curvature and the Bianchi Identity in Biquaternionic Form</a>
+<!-- the covariant derivative and the curvature it defines; the curvature as an algebra element, not a matrix commutator; the covariant derivative on the curvature, two-sided not one-sided; the Bianchi identity; the Bianchi identity as the Jacobi identity; explicit verification on a non-abelian connection; whether one biquaternion equation can carry the Bianchi identity. -->
+
+### The Density the Action Integrates
+
+<a href="articles_physics/the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a>
+<!-- the three requirements on a density; cyclicity as the whole of the invariance, with a pairing that fails written out; reality and the sign as one statement with the Hermiticity type; positivity as a Euclidean statement; the element pairing and the trace as one functional at $2\times2$, so the obstruction on $\mathbb{C}^4$ is dimension and not symmetry; the $\tfrac12$, the $\tfrac14$ and the factor six the normalisation forces; the left action, where the trace is unavailable and the Hermitian form is the density. -->
+
+### The Functional Integral and the Determinant
+
+<a href="articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a>
+<!-- the functional integral and the path integral; the field and the central-scalar action; the Gaussian functional integral; sector factorization; the free scalar field; the Euclidean rotation; localisation to a causally complete region; the measure and the gap. -->
+
+<a href="articles_physics/the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a>
+<!-- the determinant of a module operator; the fundamental determinant and the biquaternion norm; the determinant in the Gaussian integral; regularisation; the fermionic determinant and its phase; the conformal variation of the determinant. -->
+
+### The Running Coupling
+
+<a href="articles_physics/the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a>
+<!-- the scale dependence of the effective action; the regulator and the shell; integrating out a shell and the scalar quartic coupling; the non-abelian connection coupling; fixed points and the flow equation; whether the regulator respects the two sectors. -->
+
 ## Biquaternion Universe Primordial Force
+
+<!-- the five steps this block applies are in the module above: the connection, the curvature, the invariant density,
+     the functional integral with its determinant, and the running of the coupling. Nothing below re-derives them. -->
 
 ### The SU(4) Model
 
@@ -1526,30 +1563,18 @@
 
 ## Biquaternion Universe Particle Physics
 
-<!-- the toolbox the block opens with: the minimal-coupling principle, the covariant
-     derivative, curvature, the Hopf bundle, the index theorem, duality, the non-abelian field,
-     the Yang-Mills equation and its path integral, the lattice, instantons, the semiclassical
-     expansion, the sigma model, the effective potential, the anomaly and the Stueckelberg mass. -->
+<!-- the toolbox the block opens with, eight articles long: the minimal-coupling principle, the
+     covariant derivative, the curvature and its Bianchi identity, the index theorem, the
+     non-abelian field, its action, the Yang-Mills equation and its path integral. Everything
+     that is one sector's application of this machinery is filed in that sector. -->
 
 ### The General Connection Machinery
 
 <a href="articles_physics/the-minimal-coupling-in-biquaternionic-form.html">The Minimal Coupling in Biquaternionic Form</a>
 <!-- the global phase symmetry; making the symmetry local; the connection and the covariant derivative; the field strength as the curvature; the minimal-coupling principle and the Maxwell field; the non-abelian extension and where the gap is; the mass term and the axial symmetry. -->
 
-<a href="articles_physics/the-covariant-derivative-and-connection-in-biquaternionic-form.html">The Covariant Derivative and Connection in Biquaternionic Form</a>
-<!-- the covariant derivative and its components; the covariant derivative as a derivation; local covariance and what it forces; the connection as a orbit; the curvature as the commutator of covariant derivatives; the covariant square and the curvature term; the representative and the gravitational connection; the making local/variation commutativity of the internal case and its failure for the standard gravitational coupling, and an external construction in which one algebra-valued connection carries both the local $U(1)$ and the Lorentz connection. -->
-
-<a href="articles_physics/connection-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Connection Curvature and the Bianchi Identity in Biquaternionic Form</a>
-<!-- the covariant derivative and the curvature it defines; the curvature as an algebra element, not a matrix commutator; the covariant derivative on the curvature, two-sided not one-sided; the Bianchi identity; the Bianchi identity as the Jacobi identity; explicit verification on a non-abelian connection; whether one biquaternion equation can carry the Bianchi identity. -->
-
-<a href="articles_physics/the-hopf-fibration-and-the-biquaternion-bundle.html">The Hopf Fibration and the Biquaternion Bundle</a>
-<!-- the two spheres inside the algebra; the Hopf map and its fibres; the principal bundle and its local data; the non-abelian reading and the instanton boundary; the Hopf invariant and the two winding numbers; the associated vector bundle and the defining module. -->
-
 <a href="articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a>
 <!-- the Dirac operator and its index; the Atiyah–Singer theorem; the density, the charge and the total derivative; a worked case, the abelian index and the charge-$n$ zero modes; the index and the instanton moduli; the biquaternion reading and the rank-two limitation. -->
-
-<a href="articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.html">Electric–Magnetic Duality and the Modular Group in Biquaternionic Form</a>
-<!-- duality of the free field and its internal character; the complex coupling and the modular group; the charge lattice and the quantisation condition; the modular action on the charge lattice; the biquaternion reading, continuous duality and a discrete group. -->
 
 <a href="articles_physics/non-abelian-connections-in-biquaternionic-form.html">Non-Abelian Connections in Biquaternionic Form</a>
 <!-- the representative algebra inside the material sector; the non-abelian connection and covariant derivative; the field strength is not locally invariant; the field strength as the commutator of covariant derivatives; the Bianchi identity and where Jacobi enters; the Yang–Mills action; the reality condition and the $ict$ direction. -->
@@ -1562,9 +1587,6 @@
 
 <a href="articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a>
 <!-- the non-abelian action and its orbit; fixing and the Faddeev–Popov determinant; the ghost fields and the Grassmann envelope; the propagator and representative-parameter independence; the quantum Yang–Mills equation; representative slicing and the Gribov ambiguity. -->
-
-<a href="articles_physics/lattice-connection-theory-and-the-biquaternion-path-integral.html">Lattice Connection Theory and the Biquaternion Path Integral</a>
-<!-- why a regulator; the lattice carrier; the plaquette and the Wilson action; the lattice path integral; strong coupling, the area law and confinement; the continuum limit and the running coupling.  The algebra's own orders are read as a discrete spacetime lattice, the real slice Euclidean and the complex order lightlike. -->
 
 ### The Strong Force
 
@@ -1581,6 +1603,9 @@
 
 <a href="articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a>
 <!-- the theta term and its density, written in cells with the gammas confined to the closing Gamma Formulation and the two Dirac equations stated there; periodicity and the theta vacuum; strong CP and the value of theta; the chiral rotation and the invariance of the physical parameter. -->
+
+<a href="articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.html">Electric–Magnetic Duality and the Modular Group in Biquaternionic Form</a>
+<!-- duality of the free field and its internal character; the complex coupling and the modular group; the charge lattice and the quantisation condition; the modular action on the charge lattice; the biquaternion reading, continuous duality and a discrete group. -->
 
 <a href="articles_physics/why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</a>
 <!-- the algebra's own compact structure; why $SU(3)$ cannot fit; the Cartan decomposition and the maximal compact subalgebra; what would be needed to pass the ceiling, the matrix enlargement $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$-where the embedded $\mathrm{SU}(3)$ elements have explicit closed forms in biquaternion parameters; the ceiling and the Standard Model. -->
@@ -2034,7 +2059,7 @@
 
 ### Generalities
 
-<!-- second quantisation and the field-theory apparatus, twenty-nine articles: the vacuum as a minimal idempotent; Fock space; the grading and the superalgebra reading; the GNS construction; Wick's theorem; Bogoliubov transformations; the Wick rotation; the functional integral, its determinant and the effective action; Schwinger–Dyson and Ward–Takahashi; the S-matrix and the LSZ reduction; the spin–statistics and CPT theorems; charge conjugation; the lattice and the thermal circle; the Unruh and Hawking effects; the renormalisation group; the conformal anomaly; the theta vacuum; bosonisation; the spectral triple; and the quantisation hub that indexes the group. -->
+<!-- second quantisation and the field-theory apparatus, twenty-six articles: the vacuum as a minimal idempotent; Fock space; the grading and the superalgebra reading; the GNS construction; Wick's theorem; Bogoliubov transformations; the Wick rotation; the effective action and the generating functional; Schwinger–Dyson and Ward–Takahashi; the S-matrix and the LSZ reduction; the spin–statistics and CPT theorems; charge conjugation; the lattice and the thermal circle; the Unruh and Hawking effects; the renormalisation group; the conformal anomaly; the theta vacuum; bosonisation; the spectral triple; and the quantisation hub that indexes the group. -->
 <a href="articles_physics/the-biquaternion-vacuum-as-a-minimal-idempotent.html">The Biquaternion Vacuum as a Minimal Idempotent</a>
 <!-- the vacuum as a state; idempotents and minimality; the one-mode vacuum; the vacuum is a zero divisor; the minimal left ideal and the one-particle module; the vacuum manifold; the field vacuum is not an idempotent. -->
 
@@ -2059,17 +2084,11 @@
 <a href="articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a>
 <!-- the three subspaces of $\mathbb{B}$; the standard Wick rotation as the coefficient map $W=\mathrm{diag}(-i,1,1,1)$; the two reality conditions on one algebra, $\flat=\bar{\cdot}\circ T$ with $W^{2}=T$ and $W$ a square root of the time reflection; why the compact slice is easier, the six rows of the table being one property under five names; why the change sometimes fails, by the analyticity of the continued quantity in the strip; the split of applications that transfer and those that resist, with the thermal objection answered; what is established and what is interpretation. -->
 
-<a href="articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a>
-<!-- the functional integral and the path integral; the field and the central-scalar action; the Gaussian functional integral; sector factorization; the free scalar field; the Euclidean rotation; localisation to a causally complete region; the measure and the gap. -->
-
 <a href="articles_physics/the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action in Biquaternionic Form</a>
 <!-- the connected generating functional; the classical field and the Legendre transform; the effective action and the loop expansion; sector factorization of the effective action; the effective potential and the vacuum; the one-loop term and the determinant. -->
 
 <a href="articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html">The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</a>
 <!-- the total-derivative argument; the Schwinger–Dyson equations from the invariance of the functional integral; the equations in the framework's scalar, spinor and connection theories; the Ward–Takahashi identities and the photon self-energy; what the algebra supplies, what it imports, and what it does not supply. -->
-
-<a href="articles_physics/the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a>
-<!-- the determinant of a module operator; the fundamental determinant and the biquaternion norm; the determinant in the Gaussian integral; regularisation; the fermionic determinant and its phase; the conformal variation of the determinant. -->
 
 <a href="articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a>
 <!-- the S-matrix in the interaction picture; two notions of unitary in the algebra; the one-mode S-matrix; the S-matrix element and the Born rule; unitarity, the optical theorem and the algebra; the Dyson series, the propagator and the contour.  The amplitude is read on the polar word as scale, phase, velocity and spin-rotation moduli. -->
@@ -2097,9 +2116,6 @@
 
 <a href="articles_physics/hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a>
 <!-- the Schwarzschild horizon and its surface gravity; the near-horizon region and the Unruh identification; Bogoliubov coefficients and the in and out vacua; from mode mixing to the Planck spectrum; the Hawking temperature; what the framework carries and what it imports. -->
-
-<a href="articles_physics/the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a>
-<!-- the scale dependence of the effective action; the regulator and the shell; integrating out a shell and the scalar quartic coupling; the non-abelian connection coupling; fixed points and the flow equation; whether the regulator respects the two sectors. -->
 
 <a href="articles_physics/the-conformal-anomaly-in-biquaternionic-form.html">The Conformal Anomaly in Biquaternionic Form</a>
 <!-- the arena metric declared once and the one metric of the series; the conformal response as a diagonal sum of the matrix of components; its classical vanishing and the improvement term; the quantum response as the variation of the determinant; the spectral sum and the heat-kernel coefficient; the multiplicity of the fibre, four complex and eight real; the coefficients in two and four dimensions and the weights; the rescaling at the three levels; the anomaly and the renormalisation group; the chiral pair, the mass and the non-central determinant; the proper-time representation. -->
@@ -2203,6 +2219,9 @@
 
 <a href="articles_physics/the-connection-path-integral-in-biquaternionic-form.html">The Connection Path Integral in Biquaternionic Form</a>
 <!-- the functional integral for a connection field; fixing and the Faddeev–Popov construction; the Gaussian integral and the propagator; the measure, the ghosts and what is being summed over. -->
+
+<a href="articles_physics/lattice-connection-theory-and-the-biquaternion-path-integral.html">Lattice Connection Theory and the Biquaternion Path Integral</a>
+<!-- why a regulator; the lattice carrier; the plaquette and the Wilson action; the lattice path integral; strong coupling, the area law and confinement; the continuum limit and the running coupling.  The algebra's own orders are read as a discrete spacetime lattice, the real slice Euclidean and the complex order lightlike. -->
 
 <a href="articles_physics/wilson-loops-in-biquaternionic-form.html">Wilson Loops in Biquaternionic Form</a>
 <!-- the holonomy of the connection; local invariance and Stokes' theorem; the small loop and the field strength; the Gaussian average of the loop; the Aharonov–Bohm phase; the non-abelian loop and the surface; the loop as an observable; the loop equation. -->
