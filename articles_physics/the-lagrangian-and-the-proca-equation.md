@@ -16,7 +16,7 @@ $$
 \tilde F\in\mathbb{B}_V ,
 $$
 
-one biquaternion equation for the anti-Hermitian potential, with the field strength the pure-vector part of its conjugate gradient. The article asks what action has this equation as its Euler–Lagrange equation, and what the action's symmetries give. The answer is one action, one equation, and one Noether current — the energy–momentum — together with two structural statements: that the Lorenz condition is a consequence of the equation and not a gauge choice, and that the mass term is what forbids the gauge symmetry and therefore what forbids a second, phase-like current.
+one biquaternion equation for the anti-Hermitian potential, with the field strength the pure-vector part of its conjugate gradient. The article asks what action has this equation as its Euler–Lagrange equation, and what the action's symmetries give. The answer is one action, one equation, and one Noether current — the energy–momentum — together with two structural statements: that the Lorenz condition is a consequence of the equation and not a choice of representative, and that the mass term is what forbids the local symmetry and therefore what forbids a second, phase-like current.
 
 **Three things are established.**
 
@@ -28,7 +28,7 @@ $$
 
 the Euler–Lagrange equation is the Proca equation. The normalization is fixed by two requirements and by nothing else: the field term is the Maxwell Lagrangian density $\tfrac12(\epsilon\vec E^2-\vec B^2/\mu)$, and the mass term's sign is the one that makes the energy positive. The other relative sign gives the same equation and a negative energy, and is rejected.
 
-*Second, the Lorenz condition is not a constraint imposed on the action.* Varying the action gives the Proca equation alone; the divergence of that equation gives $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)=0$. In the variational reading, that is the statement that the mass term breaks the gauge symmetry: the variation which would leave the field term invariant does not leave the mass term invariant, and the equation consequently carries a longitudinal part which the massless equation does not.
+*Second, the Lorenz condition is not a constraint imposed on the action.* Varying the action gives the Proca equation alone; the divergence of that equation gives $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)=0$. In the variational reading, that is the statement that the mass term breaks the local symmetry: the variation which would leave the field term invariant does not leave the mass term invariant, and the equation consequently carries a longitudinal part which the massless equation does not.
 
 *Third, the only Noether current is the energy–momentum.* The field is real and the action is invariant under the Poincaré group; there is no central phase in the carrier, so there is no $\mathrm{U}(1)$ and no charge. The stress tensor is symmetric, conserved on solutions, traceless only where the field is null, and its trace is proportional to the mass term. That last statement is the field-theoretic form of the reality of the field.
 
@@ -103,16 +103,16 @@ $$
 
 which is the Lorenz condition. The parent proves the identity; this article records what the variational reading adds, which is the interpretation and not the proof.
 
-**The interpretation: the mass term is the obstruction to gauge invariance.** Consider the shift $\tilde A_\Phi\to\tilde A_\Phi+(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. The field strength is unchanged, because the field strength is the antisymmetric part of the conjugate gradient and the conjugate gradient of a gradient is symmetric; so the field term of the action is invariant. The mass term is not:
+**The interpretation: the mass term is the obstruction to local invariance.** Consider the shift $\tilde A_\Phi\to\tilde A_\Phi+(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. The field strength is unchanged, because the field strength is the antisymmetric part of the conjugate gradient and the conjugate gradient of a gradient is symmetric; so the field term of the action is invariant. The mass term is not:
 
 $$
 \langle\tilde A_\Phi+(\tilde\nabla_\Phi)\Gamma\rangle_\natural
 =\langle\tilde A_\Phi\rangle_\natural+2\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde A_\Phi^{\natural}(\tilde\nabla_\Phi)\Gamma\bigr)+\langle(\tilde\nabla_\Phi)\Gamma\rangle_\natural ,
 $$
 
-and neither of the last two terms vanishes for a general $\Gamma$. So the action has no gauge symmetry, and the equation inherits a longitudinal part. The Lorenz condition is the statement that this part is absent on shell, and it is a consequence of the equation rather than a condition imposed on the field.
+and neither of the last two terms vanishes for a general $\Gamma$. So the action has no local symmetry, and the equation inherits a longitudinal part. The Lorenz condition is the statement that this part is absent on shell, and it is a consequence of the equation rather than a condition imposed on the field.
 
-**Why this is not a gauge choice, in one sentence.** In the massless theory $S=0$ can be reached from any potential by a gauge transformation, so it is a choice of representative; here no gauge transformation exists, so $S=0$ is a property of the solution. That is the whole difference, and it is visible in the action as the presence of the mass term.
+**Why this is not a choice of representative, in one sentence.** In the massless theory $S=0$ can be reached from any potential by a local transformation, so it is a choice of representative; here no local transformation exists, so $S=0$ is a property of the solution. That is the whole difference, and it is visible in the action as the presence of the mass term.
 
 ## The Structural Consequence: The Constraint Removes One Degree of Freedom
 
@@ -120,7 +120,7 @@ and neither of the last two terms vanishes for a general $\Gamma$. So the action
 
 **The count.** The potential has four real components in the material sector. The equation is four equations, but they are not independent: applying the conjugate gradient and taking the scalar part annihilates the field term identically and leaves $\nu_m^{2}S=0$, where $S=\partial a'_t/\partial r'_t+\vec\nabla_\Phi\cdot\vec A$. For $\nu_m\neq0$ this is $S=0$, one relation among the four components.
 
-**What the relation does.** With $S=0$, the temporal component of the equation contains no second time derivative of $a'_t$: it is the statement that $a'_t$ is determined by $\vec\nabla_\Phi\cdot\vec A$ and its rate. So the four components carry three propagating modes and one determined one, and the three are the two transverse polarisations and the longitudinal one that the mass term makes physical. The massless limit is the degenerate case, where $S=0$ becomes a gauge choice rather than a determination, and the longitudinal mode decouples.
+**What the relation does.** With $S=0$, the temporal component of the equation contains no second time derivative of $a'_t$: it is the statement that $a'_t$ is determined by $\vec\nabla_\Phi\cdot\vec A$ and its rate. So the four components carry three propagating modes and one determined one, and the three are the two transverse polarisations and the longitudinal one that the mass term makes physical. The massless limit is the degenerate case, where $S=0$ becomes a choice of representative rather than a determination, and the longitudinal mode decouples.
 
 **The hand check.** Put $\tilde A_\Phi=a'_t e_t$ alone, spatially constant. Then $\tilde F=0$ and the equation reads $\nu_m^{2}a'_t e_t=0$, so $a'_t=0$: a purely temporal, constant potential is not a solution of the massive theory, though it is a pure gauge configuration of the massless one. The mass term is what removes it, and the count above is that removal stated in general.
 
@@ -198,7 +198,7 @@ $$
 
 whose Euler–Lagrange equation is $\tilde\nabla_\Phi\tilde F=4\pi^{2}\nu_m^2\tilde A_\Phi$, four real equations for the four components of the material sector. The coefficient of the field term is the Maxwell normalization, the relative sign of the mass term is fixed by positivity of the energy, and the pairing is the real part of the scalar part because only that pairing is real on $\tilde F\tilde F$ and reproduces the equation.
 
-The divergence of the equation forces the Lorenz condition, and the variational reading of that fact is that the mass term breaks the gauge shift which the field term alone would allow. The action has no internal symmetry, so its only currents are the energy–momentum and the angular momentum: the stress tensor is symmetric, conserved, positive in energy, and its trace is $-\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ exactly, so that it vanishes only for a null field. Plane waves extremize the action, a toroidal family does too, and no non-trivial pure gradient does — the last being the variational statement that the mass removes the gauge freedom.
+The divergence of the equation forces the Lorenz condition, and the variational reading of that fact is that the mass term breaks the gauge shift which the field term alone would allow. The action has no internal symmetry, so its only currents are the energy–momentum and the angular momentum: the stress tensor is symmetric, conserved, positive in energy, and its trace is $-\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ exactly, so that it vanishes only for a null field. Plane waves extremize the action, a toroidal family does too, and no non-trivial pure gradient does — the last being the variational statement that the mass removes the redundancy.
 
 ## Summary of Notation
 
@@ -245,4 +245,4 @@ $$
 
 Then $\vec\nabla_\Phi\cdot\vec A=\vec r\cdot(\vec\nabla_\Phi\times\nablaΞ_{\mathrm{wfn}})-\vec\nabla_\PhiΞ_{\mathrm{wfn}}\cdot(\vec\nabla_\Phi\times\vec r)=0$, so the Lorenz condition holds identically, and $\Box_\Phi\vec A=\vec\nabla_\Phi(\Box_\PhiΞ_{\mathrm{wfn}})\times\vec r=4\pi^{2}\nu_m^2\vec A$ because the curl of a gradient vanishes and $\vec r$ is static. This is an exact non-plane solution: with $Ξ_{\mathrm{wfn}}=j_0(\kappa r)\cos(2\pi\nu'_t r'_t)$ and $\kappa^2=4\pi^{2}\nu_t^{\prime\,2}-4\pi^{2}\nu_m^2$ it is a spherical, toroidal-vector field. The identity is verified by finite differences at the level of $10^{-7}$ on a smooth configuration, which is the accuracy of the difference scheme. The family is the corpus's first exact Proca solution that is not a superposition of plane waves.
 
-**No pure-gradient solution.** Take $\tilde A_\Phi=(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. Then $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi)\Gamma)=+\Box_\Phi\Gamma$ — the composition of the gradient with its conjugate is the d'Alembertian with a plus sign, since the two time derivatives each carry an $i$ and the two spatial ones do not — so the Lorenz condition forces $\Box_\Phi\Gamma=0$; the equation then forces $4\pi^{2}\nu_m^2(\tilde\nabla_\Phi)\Gamma=0$, that is, $\Gamma$ constant and the field zero. So the massive theory admits no non-trivial pure-gradient solution. This is the variational form of "there is no gauge freedom": in the massless theory the pure gradients are exactly the gauge orbit, and here the orbit has collapsed to a point. The statement is exact and needs no approximation.
+**No pure-gradient solution.** Take $\tilde A_\Phi=(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. Then $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi)\Gamma)=+\Box_\Phi\Gamma$ — the composition of the gradient with its conjugate is the d'Alembertian with a plus sign, since the two time derivatives each carry an $i$ and the two spatial ones do not — so the Lorenz condition forces $\Box_\Phi\Gamma=0$; the equation then forces $4\pi^{2}\nu_m^2(\tilde\nabla_\Phi)\Gamma=0$, that is, $\Gamma$ constant and the field zero. So the massive theory admits no non-trivial pure-gradient solution. This is the variational form of "there is no redundancy": in the massless theory the pure gradients are exactly the orbit, and here the orbit has collapsed to a point. The statement is exact and needs no approximation.

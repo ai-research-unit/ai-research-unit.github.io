@@ -13,7 +13,7 @@
 - **Established, and recomputed below.** A Dirac field is an element with independent values and eight real components. A Weyl field is an element of one value, with four. A Majorana field is the fixed space of an antilinear involution of square one, also with four. The Majorana condition is consistent with a mass: the mass shell stays $N=-m^{2}c^{2}$, and half the degrees of freedom are removed, not the mass. The vector current of the self-conjugate field vanishes, so the field carries no fermion number.
 - **Established elsewhere in the corpus, and sharpened here.** The three notions are read directly on the element, because the field *is* an element and the two values are the two eigenspaces of one operator of the frame. Nothing in the construction is a column, a block or an ideal, and none of the older objects enters.
 - **Arithmetical, and recorded because it looks paradoxical.** A commuting c-number element that satisfies the same algebraic condition gives the *opposite* bilinear pattern: its scalar pairing vanishes and its vector current does not. The pattern is a property of the anticommuting field, and the sign by which the two cases differ is the anticommutativity alone.
-- **Not established, and left visible.** The left-handedness of the neutrino is empirical. The framework transcribes the chiral gauge structure, it does not derive the assignment. The value of the mass and the size of the mixing are outside the algebra.
+- **Not established, and left visible.** The left-handedness of the neutrino is empirical. The framework transcribes the chiral structure, it does not derive the assignment. The value of the mass and the size of the mixing are outside the algebra.
 
 **The programme's own limit.** The framework supplies the arena and imports the dynamics: the field, the values, the conjugations and the pairings are the algebra's, and the Dirac operator of the frame is written here because the algebra can write it, not because the algebra forces it. The neutrino's masses are measured, and the algebra supplies the structure in which they are expressed.
 
@@ -55,7 +55,7 @@ a pure right multiplier, so it is an example of the right slot and never its def
 - It **exchanges the two values**. The conjugate of a left-handed field is a right-handed field; that is what makes the antiparticle of a chiral fermion carry the opposite chirality.
 - It **commutes with the kinetic operator**. If it did not, the condition $\tilde{Ξ}_c=\tilde{Ξ}$ would not be preserved by the evolution, and a field self-conjugate at one time would not stay self-conjugate.
 
-**Why the pairing is writable at all, in rotor terms.** The compact factor is $SU(2)$, which in this algebra is $\mathrm{SU}(2)=\mathrm{Spin}(3)$, and its two spinor-valued objects — the module and the module conjugate to it — are **equivalent**: the defining representation of $\mathrm{Spin}(3)$ is self-conjugate, $2\cong\bar 2$, because the group has no independent conjugate spinor. So a bilinear that pairs a field with its own conjugate is a scalar of the gauge group, which is the statement the Majorana condition needs. For a group with complex representations, $\mathrm{SU}(3)$ say, the same pairing would be forbidden and the Majorana mass would have to wait for a larger structure. The self-conjugacy is thus not a convenience of the quaternions; it is the reason the framework has one carrier for the neutrino instead of a particle and a distinct antiparticle carrier.
+**Why the pairing is writable at all, in rotor terms.** The compact factor is $SU(2)$, which in this algebra is $\mathrm{SU}(2)=\mathrm{Spin}(3)$, and its two spinor-valued objects — the module and the module conjugate to it — are **equivalent**: the defining representation of $\mathrm{Spin}(3)$ is self-conjugate, $2\cong\bar 2$, because the group has no independent conjugate spinor. So a bilinear that pairs a field with its own conjugate is a scalar of the symmetry group, which is the statement the Majorana condition needs. For a group with complex representations, $\mathrm{SU}(3)$ say, the same pairing would be forbidden and the Majorana mass would have to wait for a larger structure. The self-conjugacy is thus not a convenience of the quaternions; it is the reason the framework has one carrier for the neutrino instead of a particle and a distinct antiparticle carrier.
 
 **The frame, declared once.** The kinetic operator of this article is built from four multipliers of the axis-free frame: the right multiplication by $\vec e_x$, and, for each spatial direction, the left multiplication by the unit of that direction followed by the right multiplication by $\vec e_y$. Written as actions on an element,
 
@@ -263,13 +263,13 @@ and it is the algebra's own, the anti-Hermitian part carrying the four-vectors a
 
 **The empirical constraints.** The neutrino is electrically neutral, it comes in three species, and it is left-handed in the charged-current interaction. Two consequences follow from the Standard Model alone, and neither depends on a mass mechanism.
 
-First, the light neutrino cannot carry an ordinary Dirac mass with a Standard-Model Higgs doublet: a right-handed partner is absent, and a bare mass term would break the gauge symmetry.
+First, the light neutrino cannot carry an ordinary Dirac mass with a Standard-Model Higgs doublet: a right-handed partner is absent, and a bare mass term would break the local symmetry.
 
 Second, the electromagnetic moments are unobservably small. The moment is proportional to the mass in the minimal extension, and it vanishes identically for a strictly self-conjugate field, because the only multiplier that can carry it is odd under the conjugation.
 
 The framework transcribes both facts, and neither is a derivation.
 
-**What the framework supplies.** The arena supplies the field, the two values, the chiral gauge action and the two kinds of mass. The chiral gauge structure is the algebra's, and the companion *Chiral Fermions in the Biquaternion Framework* computes it: a chiral abelian symmetry needs an element off the centre, the mass bilinear is invariant exactly when the two charges are equal, and the abelian sector the algebra supplies canonically is vector-like. The two kinds of mass are the linear chiral pair and the antilinear self-pairing, and the section above fixed which conjugation carries the second.
+**What the framework supplies.** The arena supplies the field, the two values, the chiral gauge action and the two kinds of mass. The chiral structure is the algebra's, and the companion *Chiral Fermions in the Biquaternion Framework* computes it: a chiral abelian symmetry needs an element off the centre, the mass bilinear is invariant exactly when the two charges are equal, and the abelian sector the algebra supplies canonically is vector-like. The two kinds of mass are the linear chiral pair and the antilinear self-pairing, and the section above fixed which conjugation carries the second.
 
 **What the framework does not supply.** It does not fix the mass matrix, the mixing angles or the phase, and it does not choose between the Dirac and the Majorana mechanisms for a given species. Those are measured. What the algebra does is narrower, and it is not small: it makes the choice a choice between two structures it carries. The Dirac mass is the linear pairing of the two values. The Majorana mass is the antilinear pairing of the field with its conjugate. The two are different objects, and they conserve different charges.
 
@@ -291,7 +291,7 @@ The framework transcribes both facts, and neither is a derivation.
 | The vector current of the self-conjugate field vanishes | supplied | the anticommutation of the components |
 | A commuting element gives the opposite pattern | recorded | the same computation without anticommutation |
 | The sector split is not the Majorana real form | supplied | the operator does not preserve $\mathbb{B}_{\Phi}$ |
-| The chiral gauge group is vector-like | supplied | the centre multiplies the two values alike |
+| The chiral symmetry group is vector-like | supplied | the centre multiplies the two values alike |
 | The left-handedness of the neutrino | transcribed | experiment |
 | The mass values, mixings and phases | not supplied | measurement |
 | Whether a given species is Dirac or Majorana | not supplied | measurement |

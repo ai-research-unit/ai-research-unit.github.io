@@ -126,13 +126,13 @@ so multiplication by $i$ flips the sign of the adjoint and with it the sector: $
 
 ### The Central Scalar as a Background Value
 
-The centre is the complex line $\mathbb{C}e_t$, and the one number the whole algebra shares is the complex coefficient $z$ in $ze_t$. Read as a classical value, $ze_t$ is the framework's candidate for a **background field value**: it is the number the whole algebra shares, its phase $e^{i\theta_{\mathrm{pha}}}=z/|z|$ is a gauge choice and not an observable, and it is what the complex time, the energy and the global phase have in common.
+The centre is the complex line $\mathbb{C}e_t$, and the one number the whole algebra shares is the complex coefficient $z$ in $ze_t$. Read as a classical value, $ze_t$ is the framework's candidate for a **background field value**: it is the number the whole algebra shares, its phase $e^{i\theta_{\mathrm{pha}}}=z/|z|$ is a choice of representative and not an observable, and it is what the complex time, the energy and the global phase have in common.
 
 Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 The algebra limits what such a value can be. The centre is a field, $\mathbb{C}e_t$, and has no nontrivial idempotent; a central value can therefore be a scalar expectation and not a projector. It cannot supply a central projection that would split the algebra, and a **central** value cannot break a symmetry of the algebra: it is fixed by every automorphism, and the centre has no nontrivial idempotent and no degenerate family of values. A non-central order parameter is a different object and is not what this section reads.
 
-**The boundary.** The reading names a $c$-number value, not an operator and not an order parameter. The phase of the central scalar is a gauge choice; only a relative phase or a modulus is observable. No Higgs mechanism, no symmetry-breaking scale and no dynamics are derived here; the centre is minimal, and the value is a background of the framework, not a field with a potential.
+**The boundary.** The reading names a $c$-number value, not an operator and not an order parameter. The phase of the central scalar is a choice of representative; only a relative phase or a modulus is observable. No Higgs mechanism, no symmetry-breaking scale and no dynamics are derived here; the centre is minimal, and the value is a background of the framework, not a field with a potential.
 
 ### An Action: the Rotor
 

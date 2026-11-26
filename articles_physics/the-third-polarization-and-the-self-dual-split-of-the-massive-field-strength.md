@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The self-dual and anti-self-dual split is the framework's home for integer spin. On a real field strength the Hodge dual acts as $-\,$left multiplication by the central imaginary, its projectors decompose the complexified vector part into two three-dimensional complex spaces, and the two halves are the two representations $(1,0)$ and $(0,1)$ of the Lorentz group — two pure spin-one multiplets with no scalar admixture. For the massless field the halves are the two helicities: $\vec E+ic\vec B$ carries helicity $+1$, $\vec E-ic\vec B$ carries helicity $-1$, and the longitudinal direction belongs to the propagation vector, where the gauge freedom removes it.
+The self-dual and anti-self-dual split is the framework's home for integer spin. On a real field strength the Hodge dual acts as $-\,$left multiplication by the central imaginary, its projectors decompose the complexified vector part into two three-dimensional complex spaces, and the two halves are the two representations $(1,0)$ and $(0,1)$ of the Lorentz group — two pure spin-one multiplets with no scalar admixture. For the massless field the halves are the two helicities: $\vec E+ic\vec B$ carries helicity $+1$, $\vec E-ic\vec B$ carries helicity $-1$, and the longitudinal direction belongs to the propagation vector, where the redundancy removes it.
 
-The companion article on the split closes with the promise of the massive case: there the gauge freedom is absent, the longitudinal polarization becomes physical, and the third state has to be counted as a genuine degree of freedom. This article keeps the promise. It asks two questions and answers both. **What is the third state, in the split's terms?** And: **what does the split see of it?**
+The companion article on the split closes with the promise of the massive case: there the redundancy is absent, the longitudinal polarization becomes physical, and the third state has to be counted as a genuine degree of freedom. This article keeps the promise. It asks two questions and answers both. **What is the third state, in the split's terms?** And: **what does the split see of it?**
 
 **The answers, in one paragraph each.**
 
@@ -155,7 +155,7 @@ The companion article states the obstruction in the massless case: a real field 
 
 ## What This Says About the Programme
 
-**The split is the helicity classification, and that is enough for the massless sector.** For the Maxwell field the two halves are the two helicities, the gauge freedom removes the third direction, and the split's two triplets are exactly the two physical states. Nothing in the companion article's treatment of the massless case needs revision.
+**The split is the helicity classification, and that is enough for the massless sector.** For the Maxwell field the two halves are the two helicities, the redundancy removes the third direction, and the split's two triplets are exactly the two physical states. Nothing in the companion article's treatment of the massless case needs revision.
 
 **For the massive sector the split classifies two of the three states and it is blind to the third, and the blindness is structural.** The third state is the potential's scalar admixture made physical by the mass; the split acts on the field strength; and the field strength of the third state is proportional to $\nu_m^2$. So the third state is not a small correction to the split, it is a different carrier's content. The statement "spin one is pure" — the two-form carries no scalar — remains true and is exactly why the third state is invisible: the scalar is in the potential, and the two-form has projected it away.
 

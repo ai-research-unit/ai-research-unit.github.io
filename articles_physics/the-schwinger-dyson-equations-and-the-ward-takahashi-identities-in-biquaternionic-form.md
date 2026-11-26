@@ -15,7 +15,7 @@ The contribution is an interpretation, and it is small.
 - **Standard, and transcribed.** The total-derivative argument itself, the assumption of translation invariance of the measure, the contact terms, the master equation, the local Ward–Takahashi derivation, the axial anomaly, and the Slavnov–Taylor identities of the non-abelian theory. The algebra supplies none of these.
 - **Not supplied.** The functional measure and its invariance. Every identity in this article is conditional on a premise the algebra cannot formulate, and the condition is stated rather than closed. This is the same gap as the measure gap of *The Functional Integral in Biquaternionic Form*, seen where it has its sharpest consequence.
 
-The article proceeds as follows. A section fixes the total-derivative argument on which both relations rest. Two sections derive the Schwinger–Dyson equations — the quantum equation of motion and the master equation — and specialise them to the scalar field, the gauge field, and the fermion. A section derives the Ward–Takahashi identities in general form, and two sections treat the central phase, which is the framework's canonical case, and the axial identity with its anomaly. A section separates what the algebra supplies from what it imports, and the article closes with open questions.
+The article proceeds as follows. A section fixes the total-derivative argument on which both relations rest. Two sections derive the Schwinger–Dyson equations — the quantum equation of motion and the master equation — and specialise them to the scalar field, the connection, and the fermion. A section derives the Ward–Takahashi identities in general form, and two sections treat the central phase, which is the framework's canonical case, and the axial identity with its anomaly. A section separates what the algebra supplies from what it imports, and the article closes with open questions.
 
 ## The Total-Derivative Argument
 
@@ -71,7 +71,7 @@ $$
 \Big\langle\frac{\delta S}{\delta\tilde{Ξ}(x)}\,\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)\Big\rangle_{\!J}
 =i\,\frac{h}{2\pi}\Big(\tilde J_{\Phi}(x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}+\sum_{\imath\in\{x,y,z\}}\delta(y_{\imath}-x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_{k-1})\tilde{Ξ}(y_{k+1})\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}\Big),
 $$
-which is the hierarchy: the divergence of the current-like object $\delta S/\delta\tilde{Ξ}$ is a source term plus **contact terms**, and the contact terms are what distinguish the quantum equation from the naive insertion of the classical equation. At coincident points the equation is distributional, and the delta terms are the whole of the difference. This is general and standard; it is not special to the gauge field, and the same structure appears for the scalar and the fermion below.
+which is the hierarchy: the divergence of the current-like object $\delta S/\delta\tilde{Ξ}$ is a source term plus **contact terms**, and the contact terms are what distinguish the quantum equation from the naive insertion of the classical equation. At coincident points the equation is distributional, and the delta terms are the whole of the difference. This is general and standard; it is not special to the connection, and the same structure appears for the scalar and the fermion below.
 
 ### The Master Equation and the Hierarchy
 
@@ -118,7 +118,7 @@ The free case is the statement that the expectation of the free field solves the
 
 ### The Gauge Field and the Fermion
 
-**The gauge field.** The Schwinger–Dyson statement of the quantum Yang–Mills equation is derived in full in *The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form*, and it is the same total-derivative argument with $\mathcal{O}[\mathcal{A}]$ in place of $F$:
+**The connection.** The Schwinger–Dyson statement of the quantum Yang–Mills equation is derived in full in *The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form*, and it is the same total-derivative argument with $\mathcal{O}[\mathcal{A}]$ in place of $F$:
 $$
 \Big\langle\big(\sum_{\imath} D_{\imath} F_{\imath\jmath}\big)_a\Big\rangle=\Big\langle J_{\mathrm{gf},\jmath a}\Big\rangle+\Big\langle J_{\mathrm{gh},\jmath a}\Big\rangle ,
 $$
@@ -197,7 +197,7 @@ the second term being the topological density. In the quantum theory the axial c
 
 ### Non-Abelian: the Slavnov–Taylor Identities
 
-For a non-abelian gauge theory the symmetry whose Ward–Takahashi identity is at issue is the BRST symmetry of *BRST Symmetry in Biquaternionic Form*, and its identities are the **Slavnov–Taylor identities**. They are one identity for each external leg, relating amplitudes with different numbers of ghosts and longitudinal gauge fields, and they express the gauge-parameter independence of physical amplitudes and the decoupling of longitudinal modes. The framework's contribution to them is exactly its contribution to BRST: the gauge algebra realized by the commutator, the Jacobi identity inherited from associativity, and hence the nilpotency $s^2=0$ that makes the identities close. The identities themselves, their renormalisation, and the four-dimensional consistency conditions are standard and are transcribed; they are recorded here as the non-abelian face of the same measure-invariance argument, with $s$ the odd derivation.
+For a Yang–Mills theory the symmetry whose Ward–Takahashi identity is at issue is the BRST symmetry of *BRST Symmetry in Biquaternionic Form*, and its identities are the **Slavnov–Taylor identities**. They are one identity for each external leg, relating amplitudes with different numbers of ghosts and longitudinal connections, and they express the parameter independence of physical amplitudes and the decoupling of longitudinal modes. The framework's contribution to them is exactly its contribution to BRST: the algebra realized by the commutator, the Jacobi identity inherited from associativity, and hence the nilpotency $s^2=0$ that makes the identities close. The identities themselves, their renormalisation, and the four-dimensional consistency conditions are standard and are transcribed; they are recorded here as the non-abelian face of the same measure-invariance argument, with $s$ the odd derivation.
 
 ## What the Algebra Supplies, What It Imports, What It Does Not Supply
 
@@ -215,7 +215,7 @@ For a non-abelian gauge theory the symmetry whose Ward–Takahashi identity is a
 
 3. **The master equation on the module.** The master equation was written with the variation evaluated at $\delta/\delta\tilde J_{\Phi}$ through the real pairing. Can the whole hierarchy be packaged as a single identity of $\mathbb{B}$-module operators, without passing through a component basis, in the way the effective action is packaged on the module?
 
-4. **The gravitational Ward identity.** The gauge Ward identity comes from a one-sided symmetry of a one-sided connection; the gravitational analogue has the two-sided rotor action of *Curved Spacetime and the Biquaternion Framework*. What is the Ward–Takahashi identity of the local Lorentz symmetry, and does its derivation meet the same two-sided obstruction that the quantum-gravity article records for the gauge-fixing problem?
+4. **The gravitational Ward identity.** The gauge Ward identity comes from a one-sided symmetry of a one-sided connection; the gravitational analogue has the two-sided rotor action of *Curved Spacetime and the Biquaternion Framework*. What is the Ward–Takahashi identity of the local Lorentz symmetry, and does its derivation meet the same two-sided obstruction that the quantum-gravity article records for the fixing the representative problem?
 
 5. **The central phase and the axial identity as a pair.** Both identities are Ward–Takahashi identities of an internal rotation, one of the centre and one of the chirality. The centre's identity is exact; the chirality's acquires the anomaly. Is the difference the algebra's, in the sense that the centre is a genuine scalar symmetry and the chirality is the off-diagonal rotation between the two central ideals, or is it the standard difference of measure behaviour that the algebra merely inherits?
 
@@ -233,7 +233,7 @@ $$
 $$
 whose sign is fixed by the series convention $Z=\int\mathcal{D}\tilde{Ξ}\,\exp(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}})$, with $\theta_{\mathrm{src}}:=\langle\tilde J_{\Phi},\frac{2\pi \tilde{Ξ}\rangle}{h}$ the source angle built from a real pairing; its $J$-expansion generates the whole hierarchy, and the free case was checked in finite dimension.
 
-The algebra's contribution is specific and limited. It supplies the functional derivative as the module's own gradient, so that the argument needs no basis; the variation of the quadratic action as the central $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ on the module, so that the scalar hierarchy is generated by the central d'Alembertian and the mass; the chirality-off-diagonal fermionic variation, from the right-multiplication mass term, which is the algebraic origin of the axial anomaly's structure; the central phase as the canonical one-parameter symmetry, with generator $i$ and current in the material sector $\mathbb{B}_{\Phi}$; and the module's chirality structure as the carrier of the anomaly's Jacobian. It does **not** supply the functional measure or its invariance, which is the premise of every identity here; the contact terms; the master equation; the local Ward–Takahashi derivation; the anomaly coefficient; or the Slavnov–Taylor identities of the non-abelian theory. The quantum Yang–Mills equation of the companion article is the gauge-field instance of the same argument, the axial anomaly of the anomaly articles is the failure of its measure premise, and the BRST nilpotency of the BRST article is what makes the non-abelian identities close.
+The algebra's contribution is specific and limited. It supplies the functional derivative as the module's own gradient, so that the argument needs no basis; the variation of the quadratic action as the central $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ on the module, so that the scalar hierarchy is generated by the central d'Alembertian and the mass; the chirality-off-diagonal fermionic variation, from the right-multiplication mass term, which is the algebraic origin of the axial anomaly's structure; the central phase as the canonical one-parameter symmetry, with generator $i$ and current in the material sector $\mathbb{B}_{\Phi}$; and the module's chirality structure as the carrier of the anomaly's Jacobian. It does **not** supply the functional measure or its invariance, which is the premise of every identity here; the contact terms; the master equation; the local Ward–Takahashi derivation; the anomaly coefficient; or the Slavnov–Taylor identities of the non-abelian theory. The quantum Yang–Mills equation of the companion article is the connection instance of the same argument, the axial anomaly of the anomaly articles is the failure of its measure premise, and the BRST nilpotency of the BRST article is what makes the non-abelian identities close.
 
 ## Summary of Notation
 
@@ -248,7 +248,7 @@ The algebra's contribution is specific and limited. It supplies the functional d
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $2\,\mathrm{Sc}(e_t)=2$ | Pairing formula |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ | Quadratic operator |
-| $a$ | colour index of the gauge algebra, written low |
+| $a$ | colour index of the algebra, written low |
 | $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}})$, $\theta_{\mathrm{src}}:=\langle\tilde J_{\Phi},\frac{2\pi \tilde{Ξ}\rangle}{h}$ | Functional integral with module-valued source |
 | $\delta F/\delta\tilde{Ξ}$ | Module gradient, defined through the pairing |
 | $\langle\delta S/\delta\tilde{Ξ}(x)\rangle=0$ | Quantum equation of motion |

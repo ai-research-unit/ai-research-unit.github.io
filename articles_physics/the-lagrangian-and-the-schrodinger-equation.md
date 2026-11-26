@@ -189,7 +189,7 @@ The angle is $\theta_{\mathrm{evo}}=\frac{2\pi h_t\,r'_t}{h\,c}$, the scalar par
 
 **The counterexample is the test of that reading.** Replacing $i$ by a non-central root of $-e_t$ produces a flow that is not unitary on the same states, which shows the constraint falls on the coefficient. That is why the structural consequence can call reality the weakest of its four requirements: it constrains the writing of the density and leaves the Hamiltonian's spectrum alone.
 
-**What the section does not claim.** It does not build the Dirac bracket, and it does not claim the first-order pair is the whole of the canonical structure. The claim is narrower: one primary constraint per part, second class, arising from the first order and from no gauge symmetry.
+**What the section does not claim.** It does not build the Dirac bracket, and it does not claim the first-order pair is the whole of the canonical structure. The claim is narrower: one primary constraint per part, second class, arising from the first order and from no local symmetry.
 
 ## The Structural Consequence: Reality Is the Weakest of Four
 

@@ -108,7 +108,7 @@ The worked instance is the promoted mass. The Einstein–Mayer pair replaces one
 | $D_+$, $D_-$ | the two superpositions of §*The Default Reading*, read as an isospin doublet |
 | $E$ | the Einstein–Mayer hypercomplex mass, an element of $\mathbb{B}$ |
 | $E^{\dagger}$ | its Hermitian conjugate, the dagger of *Operator and Calculus Conventions* |
-| $G$ | a $*$-unitary element, the gauge freedom of the Lanczos system |
+| $G$ | a $*$-unitary element, the redundancy of the Lanczos system |
 | $\vec\nabla_\Phi$ | the gradient of the $\mathbb{B}$ frame, unhalved, as in *Frame and Metric Conventions* |
 | $G$, $H$ | the two factors of the sigma-model invariance $E\mapsto G^{*}EH$ |
 

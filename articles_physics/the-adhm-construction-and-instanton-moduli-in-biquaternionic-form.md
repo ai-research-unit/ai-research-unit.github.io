@@ -21,7 +21,7 @@ The quaternionic form. A connection whose curvature is self-dual is equivalent t
 
 ## The ADHM Equations
 
-The datum. For gauge group $SU(N)$ and charge $k$:
+The datum. For symmetry group $SU(N)$ and charge $k$:
 
 $$
 B_1,\ B_2 \in \mathrm{Hom}(\mathbb{C}^k,\mathbb{C}^k),
@@ -43,7 +43,7 @@ $$
 
 The first is holomorphic and the second is the moment map for the unitary action; together they are the self-duality equation in disguise.
 
-**The gauge redundancy.** The datum carries a $\mathrm{U}(k)$ action, $B_i\mapsto gB_ig^{-1}$, $I\mapsto gI$, $J\mapsto Jg^{-1}$, which does not change the connection. The moduli space is the quotient of the solution set by that action, and taking the quotient is what makes it a manifold rather than a cone.
+**The redundancy.** The datum carries a $\mathrm{U}(k)$ action, $B_i\mapsto gB_ig^{-1}$, $I\mapsto gI$, $J\mapsto Jg^{-1}$, which does not change the connection. The moduli space is the quotient of the solution set by that action, and taking the quotient is what makes it a manifold rather than a cone.
 
 ## The Dimension of the Moduli Space
 
@@ -71,7 +71,7 @@ The twistor reading. The same equations are the statement that a certain holomor
 
 - **Supplied.** The quaternionic structure itself. The algebra is a quaternion algebra over $\mathbb{C}$, so the identification of $\mathbb{R}^4$ with the quaternions and the split of the field strength into self-dual parts are carried by the algebra and not imported.
 - **Imported.** The moduli-space dimension, the quotient and the reconstruction formula. These are standard mathematics, transcribed.
-- **Not supplied.** The gauge group of the sector. The construction is written for $SU(N)$; which $N$ applies is a sector question, and in this framework the compact factor fixes $N=2$.
+- **Not supplied.** The symmetry group of the sector. The construction is written for $SU(N)$; which $N$ applies is a sector question, and in this framework the compact factor fixes $N=2$.
 
 Where the application is. [The ADHM Construction and Biquaternion Instanton Data](the-adhm-construction-and-biquaternion-instanton-data.html) works the construction for the framework's compact factor, states the dimension it gives, and relates the quaternionic structure of the datum to the algebra's own left multiplication.
 
@@ -80,7 +80,7 @@ Where the application is. [The ADHM Construction and Biquaternion Instanton Data
 | Symbol | Meaning |
 |---|---|
 | $k$ | the instanton charge |
-| $N$ | the rank of the gauge group |
+| $N$ | the rank of the symmetry group |
 | $B_1,B_2$ | the complex matrices of the datum |
 | $I,J$ | the vectors of the datum |
 | $\mu_{\mathbb C},\mu_{\mathbb R}$ | the complex and real equations |

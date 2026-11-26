@@ -4,7 +4,7 @@
 
 At this rung the coupling adds no term to the action; it changes one variable. The two terms of [The Lagrangian and the Spin-Zero Fluid](the-lagrangian-and-the-spin-zero-fluid.html) survive intact, and the only change is that the four-velocity is the mechanical one, $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$ with $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$. That is the minimal coupling stated covariantly, and it is why the density is untouched: a substitution inside one square cannot reach a term that carries no phase.
 
-*First, the action is written in gauge-invariant variables, so its gauge invariance is not a symmetry but a redundancy already quotiented out.* The free action's phase $S_{\tilde\Xi}$ and the potentials appear only in the combination $\partial_{\imath} S_{\tilde\Xi}-q A_{\imath}$. The action is therefore a functional of $\varrho$ and that combination alone, and no shift of either moves it. At the first-order rung the invariance had to be checked term by term inside two brackets; here the bracket is one object and the checking is a definition.
+*First, the action is written in invariant variables, so its local invariance is not a symmetry but a redundancy already quotiented out.* The free action's phase $S_{\tilde\Xi}$ and the potentials appear only in the combination $\partial_{\imath} S_{\tilde\Xi}-q A_{\imath}$. The action is therefore a functional of $\varrho$ and that combination alone, and no shift of either moves it. At the first-order rung the invariance had to be checked term by term inside two brackets; here the bracket is one object and the checking is a definition.
 
 *Second, the mass shell is unchanged in form and the whole of the coupling is in the velocity.* The variation of the density returns $\sum_{\imath} V_{\Phi,\imath}V_{\Phi,\imath}=-c^{2}-2Q_{\mathrm{qnt}}/m$, the free display verbatim, with $V$ the mechanical velocity. The connection's spatial part enters the velocity and not the shell: the shell's right-hand side carries the density and the d'Alembertian, and the coupling cannot reach either.
 
@@ -14,7 +14,7 @@ This is the variational companion of [The Charged Spin-Zero Fluid](the-charged-s
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection: $ϙ$ is the coupling, $q=-ϙ$ the electric charge; $\tilde A_\Phi=i a'_t e_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}$ with $a'_t=\omicron_{\mathrm{pot}}$; the covariant derivative is $\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$; $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$; $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$, $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$. A gauge transformation is $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+ϙ\Gamma$ together with $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$, that is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$. The temporal slot's sign is the one that looks odd and is not: the invariant is $W_0=(\partial_{t'}S_{\tilde\Xi}+ϙ a'_t)/m$, so the scalar potential moves against the phase and not with it, where the first-order rung's bracket $\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}$ carries the opposite sign on the phase and the potential moves with it. The two rungs differ in the sign of one bracket and in nothing else, and a reader moving between the two articles should expect the scalar potential to shift in opposite directions.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection: $ϙ$ is the coupling, $q=-ϙ$ the electric charge; $\tilde A_\Phi=i a'_t e_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}$ with $a'_t=\omicron_{\mathrm{pot}}$; the covariant derivative is $\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$; $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$; $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$, $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$. A local transformation is $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+ϙ\Gamma$ together with $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$, that is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$. The temporal slot's sign is the one that looks odd and is not: the invariant is $W_0=(\partial_{t'}S_{\tilde\Xi}+ϙ a'_t)/m$, so the scalar potential moves against the phase and not with it, where the first-order rung's bracket $\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}$ carries the opposite sign on the phase and the potential moves with it. The two rungs differ in the sign of one bracket and in nothing else, and a reader moving between the two articles should expect the scalar potential to shift in opposite directions.
 
 ## The Action in the Fluid Variables
 
@@ -30,7 +30,7 @@ Compare the two displays: the dust term, the coefficient $m\rho_{\mathrm{num}}/2
 
 The connection is a central element of $\mathbb{B}_\Phi$, so it multiplies the phase factor of the word and commutes past the amplitude. A term built from $\varrho$ and its derivatives therefore cannot contain $\tilde A_\Phi$ at all. In the action that is the second term: **the gradient energy is the unique term the coupling cannot reach, and it is the whole of the quantum sector.**
 
-The action has two arguments and they are the two gauge-invariant data of the fluid. Write them as $\varrho$ and $W_{\imath}=(\partial_{\imath} S_{\tilde\Xi}-q A_{\imath})/m$. Then $\mathcal L_{\mathrm{fl}}=\mathcal L_{\mathrm{fl}}[\varrho,\partial_{\imath} \varrho,W_{\imath}]$, and no other combination of the word's data survives a gauge transformation. The free action's two arguments were $\varrho$ and $S_{\tilde\Xi}$; the charged action's are $\varrho$ and $W$, and the change of variable is the whole of the coupling.
+The action has two arguments and they are the two invariant data of the fluid. Write them as $\varrho$ and $W_{\imath}=(\partial_{\imath} S_{\tilde\Xi}-q A_{\imath})/m$. Then $\mathcal L_{\mathrm{fl}}=\mathcal L_{\mathrm{fl}}[\varrho,\partial_{\imath} \varrho,W_{\imath}]$, and no other combination of the word's data survives a local transformation. The free action's two arguments were $\varrho$ and $S_{\tilde\Xi}$; the charged action's are $\varrho$ and $W$, and the change of variable is the whole of the coupling.
 
 ## The Variation: Two of Them
 
@@ -68,17 +68,17 @@ $$
 
 which is the block's boxed law. The sign is fixed by the substitution's time slot: the energy is $E^{\mathrm{mech}}=E+ϙ a'_t$, so $E=E^{\mathrm{mech}}-ϙ a'_t$ and, with $q=-ϙ$, the potential energy is $q\omicron_{\mathrm{pot}}$. The action fixes the sign in one place, and the block's article fixes it in three.
 
-Two fields, $\varrho$ and $S_{\tilde\Xi}$, or equivalently $\varrho$ and $W$; two equations; no multiplier. The constraint structure is not the coupling's business, and this is the rung at which that is cleanest: the first-order charged fluid has a gauge redundancy and the relativistic one has a redundancy plus a shell, and neither has a subsidiary condition.
+Two fields, $\varrho$ and $S_{\tilde\Xi}$, or equivalently $\varrho$ and $W$; two equations; no multiplier. The constraint structure is not the coupling's business, and this is the rung at which that is cleanest: the first-order charged fluid has a redundancy and the relativistic one has a redundancy plus a shell, and neither has a subsidiary condition.
 
 ## The Constraints the Action Imposes: Gauge Invariance as a Redundancy
 
-Both arguments, $\varrho$ and $W_{\imath}$, are fixed by a gauge transformation, so $\mathcal L_{\mathrm{fl}}$ is fixed by construction and no boundary term arises.
+Both arguments, $\varrho$ and $W_{\imath}$, are fixed by a local transformation, so $\mathcal L_{\mathrm{fl}}$ is fixed by construction and no boundary term arises.
 
 There the action's terms were $-\rho_{\mathrm{num}}\mathcal E$ and $-\rho_{\mathrm{num}}\vec\pi^{2}/2m$, each invariant, but $S$ and $\omicron_{\mathrm{pot}}$ appeared separately and the invariance had to be checked inside each bracket. Here they never appear separately.
 
 What the redundancy costs and what it does not. It removes one of the word's eight parameters from the action's arguments: $\theta_{\mathrm{pha}}$ and $a'_t$ enter only through $W_0$, so the phase and the scalar potential are one degree of freedom between them. It does not remove the current: the constant shift is a global subgroup and its Noether current is the charge current. A redundancy and a symmetry are different objects, and the action shows both at once: the local one is the redundancy that the variables have already absorbed, the global one is the current.
 
-Computing $T_{\imath\jmath}$ with $S_{\tilde\Xi}$ as the variable gives a tensor that moves under a gauge transformation by terms in $\partial\Gamma$; the difference is a total derivative, so the conserved charges are unaffected, and the tensor written in $W$ and $\partial \varrho$ is invariant. The same caution as at the first-order charged rung applies: **the article may call $\mathcal E^{\mathrm{mech}}$ and $\sigma^{Q}$ the fluid's, and must not call the canonical tensor the fluid's without saying which variable it was computed from.**
+Computing $T_{\imath\jmath}$ with $S_{\tilde\Xi}$ as the variable gives a tensor that moves under a local transformation by terms in $\partial\Gamma$; the difference is a total derivative, so the conserved charges are unaffected, and the tensor written in $W$ and $\partial \varrho$ is invariant. The same caution as at the first-order charged rung applies: **the article may call $\mathcal E^{\mathrm{mech}}$ and $\sigma^{Q}$ the fluid's, and must not call the canonical tensor the fluid's without saying which variable it was computed from.**
 
 ## The Structural Consequence: The Vorticity Is the Field Strength
 
@@ -116,7 +116,7 @@ The charge's sign is $q$'s and the density is positive, so a change of sign of $
 
 ## What the Principle Adds and What It Relabels: In the Fluid Chart
 
-Adds. The coupling as a change of variable rather than an added term, with the reason: a central element multiplies the phase factor and cannot reach the amplitude. Gauge invariance as a property of the variables rather than a checked symmetry, and the reason the current survives it. The sign of the Lorentz force fixed at the substitution's time slot. The vorticity's identity as a computation about the variables, and the rank as the field's. And the coupling-blindness of the entire quantum sector as one term of the action.
+Adds. The coupling as a change of variable rather than an added term, with the reason: a central element multiplies the phase factor and cannot reach the amplitude. Local invariance as a property of the variables rather than a checked symmetry, and the reason the current survives it. The sign of the Lorentz force fixed at the substitution's time slot. The vorticity's identity as a computation about the variables, and the rank as the field's. And the coupling-blindness of the entire quantum sector as one term of the action.
 
 Does not add. No new equation: continuity and the shell are the block's, and the boxed law is the shell's gradient. No field equation: the action is the matter action and $A_{\imath}$ is given. No statement about the charge's quantization: $ϙ$ is a parameter here and the connection's own dynamics is outside the block. No thermodynamics.
 
@@ -132,7 +132,7 @@ A frame that is reconstructed from the element and not fixed by the potential is
 
 No new equation and no new charge. The charge is the Schrödinger fluid's charge, and the article says so in one line rather than deriving it twice.
 
-The nodal exception and the gauge covariance — the second now through the phase's covariant derivative and not through the density.
+The nodal exception and the covariance — the second now through the phase's covariant derivative and not through the density.
 
 At the frame's degeneracy, where the potential's extremum is not unique. The article states it once, and that statement is the difference between this fluid and its uncharged companion.
 
@@ -150,7 +150,7 @@ The variations. The phase gives $\partial_{\imath}(\rho_{\mathrm{num}}V_{\Phi,\i
 
 The vorticity. $\omega=ϙ F/m$ is an identity about the variables, so the rotation is the field's and costs no field; the rank is the field strength's.
 
-Gauge invariance. A redundancy already quotiented out, because the action's arguments are $\varrho$ and $W$; the global subgroup supplies the charge current; the canonical stress is gauge dependent and the tensor in $W$ is not.
+Local invariance. A redundancy already quotiented out, because the action's arguments are $\varrho$ and $W$; the global subgroup supplies the charge current; the canonical stress is representative-dependent and the tensor in $W$ is not.
 
 What the charge changes. One variable. The gradient energy, the quantum potential, the quantum stress and the shell's right-hand side are the free ones.
 
@@ -161,10 +161,10 @@ What the charge changes. One variable. The gradient energy, the quantum potentia
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ | The word; the free article's, unchanged |
 | $ϙ$ | Coupling; minus the electric charge, $q=-ϙ$ |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t=\omicron_{\mathrm{pot}}$ |
-| $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
+| $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | Phase; representative-dependent |
 | $W_{\imath}=(\partial_{\imath} S_{\tilde\Xi}-q A_{\imath})/m$ | Mechanical four-velocity; the action's second argument |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | Mechanical momentum; $m\tilde V_\Phi$ |
-| $\rho_{\mathrm{num}}=\varrho^{2}$ | Proper density; gauge invariant |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | Proper density; invariant |
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Charge density; the current's temporal component over $c$ |
 | $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential; coupling-blind |
 | $\mathcal E_{\mathrm{grad}}=-\frac{hc}{8\pi^{2}\nu_m}\int\sum_{\imath}(\partial_{\imath} \varrho)^{2}$ | Gradient energy; coupling-blind |

@@ -75,13 +75,13 @@ so that $(x,y,z)=(x_1,x_2,x_3)$ is the image of $\varsigma\in\mathbb{R}^4$. The 
 $$
 \boxed{\;r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|=\varsigma_1^2+\varsigma_2^2+\varsigma_3^2+\varsigma_0^2=|\vec\varsigma|^2=\langle \varsigma\rangle_{\natural}\;},
 $$
-where $\varsigma=\varsigma_1\vec e_x+\varsigma_2\vec e_y+\varsigma_3\vec e_z+\varsigma_0e_t\in\mathbb{H}$ and $\langle \varsigma\rangle_{\natural}=\varsigma^{\natural}\varsigma$ is the quaternion (hence the biquaternion, with real coefficients) norm. The identity was checked numerically on random $\varsigma$ and holds to machine precision. Its differential companion is the statement that the map is a Riemannian submersion with one gauge direction: the Jacobian $J=\partial(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\partial \varsigma$ satisfies
+where $\varsigma=\varsigma_1\vec e_x+\varsigma_2\vec e_y+\varsigma_3\vec e_z+\varsigma_0e_t\in\mathbb{H}$ and $\langle \varsigma\rangle_{\natural}=\varsigma^{\natural}\varsigma$ is the quaternion (hence the biquaternion, with real coefficients) norm. The identity was checked numerically on random $\varsigma$ and holds to machine precision. Its differential companion is the statement that the map is a Riemannian submersion with one redundant direction: the Jacobian $J=\partial(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\partial \varsigma$ satisfies
 $$
 J^{\mathsf T}J=4N(\varsigma)\big(I-\vec u\vec u^{\mathsf T}\big),
 \qquad
 \vec u\propto(\varsigma_2,-\varsigma_1,-\varsigma_0,\varsigma_3),
 $$
-with three eigenvalues equal to $4N(\varsigma)$ and one null direction. The null direction is the gauge direction of the two-to-one map — the **KS constraint** is $\varsigma_2\,d\varsigma_1-\varsigma_1\,d\varsigma_2-\varsigma_0\,d\varsigma_3+\varsigma_3\,d\varsigma_0=0$ — and on the constraint surface the induced metric of the physical three-space is conformal,
+with three eigenvalues equal to $4N(\varsigma)$ and one null direction. The null direction is the redundant direction of the two-to-one map — the **KS constraint** is $\varsigma_2\,d\varsigma_1-\varsigma_1\,d\varsigma_2-\varsigma_0\,d\varsigma_3+\varsigma_3\,d\varsigma_0=0$ — and on the constraint surface the induced metric of the physical three-space is conformal,
 $$
 \big|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\big|^2=4N(\varsigma)\,\big|d\varsigma\big|^2 .
 $$
@@ -162,7 +162,7 @@ The algebra's contribution is an interpretation. The Coulomb potential is a **ce
 | $\varsigma=\varsigma_1\vec e_x+\varsigma_2\vec e_y+\varsigma_3\vec e_z+\varsigma_0e_t\in\mathbb{H}$ | The quaternion carried by $\varsigma$ |
 | $\langle \varsigma\rangle_{\natural}=\varsigma^{\natural}\varsigma=\lvert\vec\varsigma\rvert^2$ | Quaternion norm; equals $r$ |
 | $x_1,x_2,x_3$ in terms of $\varsigma$ | The Kustaanheimo–Stiefel map; $\varsigma\mapsto(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ |
-| $J^{\mathsf T}J=4N(\varsigma)(I-\vec u\vec u^{\mathsf T})$, $\vec u\propto(\varsigma_2,-\varsigma_1,-\varsigma_0,\varsigma_3)$ | Riemannian submersion; one gauge direction |
+| $J^{\mathsf T}J=4N(\varsigma)(I-\vec u\vec u^{\mathsf T})$, $\vec u\propto(\varsigma_2,-\varsigma_1,-\varsigma_0,\varsigma_3)$ | Riemannian submersion; one redundant direction |
 | $\varsigma_2\,d\varsigma_1-\varsigma_1\,d\varsigma_2-\varsigma_0\,d\varsigma_3+\varsigma_3\,d\varsigma_0=0$ | KS constraint; the null (gauge) direction of the submersion |
 | $S\to\int ds\,[\,2m\lvert d\varsigma/ds\rvert^2-E \langle \varsigma\rangle_{\natural}-\kappa\,]$ | Transformed action; four-dimensional isotropic oscillator |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$, $r\,ds$ | Measures; the transformation's Jacobian is not supplied by the algebra |

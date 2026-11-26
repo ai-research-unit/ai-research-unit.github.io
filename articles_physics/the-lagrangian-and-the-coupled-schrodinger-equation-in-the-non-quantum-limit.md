@@ -11,9 +11,9 @@ The article's central clarification is about the coupling, and it is a warning. 
 
 The consequence for the leading term. The leading term is the full covariant kinetic energy $\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}/2m$, not the free one plus corrections. The limit's leading equation changes value when the potential is switched on and its order never does, which is the same statement the equation-route companion makes and the reason the two agree term for term.
 
-What the article establishes, in five sentences. The parent's action has five terms, three of order zero in the phase and one of order two in the scale, and the fifth is the potential energy. The single deletion leaves the covariant classical action, whose variation with respect to the scale is the eikonal in the kinetic momentum and whose variation with respect to the phase is the covariant continuity equation, the second unchanged by the deletion. The truncated action is gauge invariant exactly, with the phase translated and the potential shifted, and the invariance is the parent's statement that the gauge group is one coordinate of the chart. The three coupling pieces are of one order, so the coupling enters the leading term and no expansion in it exists.
+What the article establishes, in five sentences. The parent's action has five terms, three of order zero in the phase and one of order two in the scale, and the fifth is the potential energy. The single deletion leaves the covariant classical action, whose variation with respect to the scale is the eikonal in the kinetic momentum and whose variation with respect to the phase is the covariant continuity equation, the second unchanged by the deletion. The truncated action is invariant exactly, with the phase translated and the potential shifted, and the invariance is the parent's statement that the symmetry group is one coordinate of the chart. The three coupling pieces are of one order, so the coupling enters the leading term and no expansion in it exists.
 
-What is not new. The covariant Madelung action, the paramagnetic–diamagnetic split, the covariant continuity equation and the derivation of the covariant Hamilton–Jacobi equation from an action are standard, and the split is in every textbook on the fluid formulation of a charged field. Added here: the ordering of the parent's five terms against one parameter, the statement that all three coupling pieces are leading, and the reading of the truncated action's gauge invariance on the chart.
+What is not new. The covariant Madelung action, the paramagnetic–diamagnetic split, the covariant continuity equation and the derivation of the covariant Hamilton–Jacobi equation from an action are standard, and the split is in every textbook on the fluid formulation of a charged field. Added here: the ordering of the parent's five terms against one parameter, the statement that all three coupling pieces are leading, and the reading of the truncated action's local invariance on the chart.
 
 The restriction is the free one. The action is the central field's, $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_{t}$, and the parent proves that class is invariant exactly under a central Hamiltonian. The limit is defined there and nowhere else, in this family as in the other three.
 
@@ -66,7 +66,7 @@ Which block is deleted, and how much it costs. The truncated action drops the gr
 
 Restoring it adds the quantum potential. The restored term enters the equation for $\vec u_{\mathrm b}$ and not the equation for the phase, and it enters with the density in the denominator. It is large where the density is small, so the truncated theory cannot describe a node, and the article's section on the nodal exception is where that boundary is stated.
 
-Why the truncation is gauge invariant. The deleted block is built from $\nabla\varrho$, and $\varrho$ is invariant under the gauge shift of the phase. The block is therefore a gauge scalar and its deletion commutes with a gauge transformation, which is the property the first-order family lacks.
+Why the truncation is invariant. The deleted block is built from $\nabla\varrho$, and $\varrho$ is invariant under the gauge shift of the phase. The block is therefore a gauge scalar and its deletion commutes with a local transformation, which is the property the first-order family lacks.
 
 Why it is not boost invariant. The block is a spatial gradient and not a four-gradient, so it distinguishes the slicing. The truncation of this family singles out a frame, and that is a real loss even though the error is small: a small non-covariant term is still a non-covariant term.
 
@@ -78,7 +78,7 @@ The covariant eikonal. The phase's variation of the truncated action gives the c
 
 The covariant continuity equation. The variation in the frame gives the continuity equation with the covariant divergence in place of the ordinary one. It survives unchanged for the same reason, and the two together are the truncated theory's whole content.
 
-The gauge covariance. Every kept block is a gauge covariant object and the deleted block was a gauge scalar, so the truncation commutes with a gauge transformation. The truncated theory is gauge invariant, and the article says so in a section of its own because it is the property that fails for the first-order family.
+The covariance. Every kept block is a covariant object and the deleted block was a gauge scalar, so the truncation commutes with a local transformation. The truncated theory is invariant, and the article says so in a section of its own because it is the property that fails for the first-order family.
 
 The currents. Density and energy are the phase's conjugate quantities, and the current is the density times the phase's gradient. Their expressions survive verbatim, and the coupling enters them exactly where it entered the parent.
 
@@ -109,7 +109,7 @@ $$
 
 which divided by $-2\varrho$ is the parent's Hamilton–Jacobi equation with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The two differ by exactly the deleted term and by nothing else, and the potential's coefficient is the same in both.
 
-The quantum potential does not carry the connection, and the action shows why. The deleted term is $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, a function of the scale alone. The scale is invariant under the gauge group, so its gradient is too, and the divergence that follows from it is $Q$ and nothing more. This is the variational form of the parent's first finding, which the equation route obtains by inspection.
+The quantum potential does not carry the connection, and the action shows why. The deleted term is $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, a function of the scale alone. The scale is invariant under the symmetry group, so its gradient is too, and the divergence that follows from it is $Q$ and nothing more. This is the variational form of the parent's first finding, which the equation route obtains by inspection.
 ## The Constraints the Action Imposes: Gauge Invariance of the Truncated Action
 The transformation on the chart. With $\Gamma$ real, the phase is translated, the vector potential shifted, and the scalar potential shifted:
 
@@ -133,7 +133,7 @@ $$
 \frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+q\omicron_{\mathrm{pot}}\ \longmapsto\ \frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+q\dot\Gamma+q\omicron_{\mathrm{pot}}-q\dot\Gamma=\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+q\omicron_{\mathrm{pot}} .
 $$
 
-The two canceling pairs are the two terms that carry the time derivative. In the action the first term shifts by $-q \varrho^{2}\dot\Gamma$ and the potential-energy term by $+q \varrho^{2}\dot\Gamma$, term for term and pointwise, so no boundary term is produced and no integration by parts is needed. **The truncated action is gauge invariant exactly**, and the parent's reading is the reason it must be: the gauge group translates one coordinate of the word and leaves the other seven, so a term built from the scale and the invariant combination of the phase cannot see it.
+The two canceling pairs are the two terms that carry the time derivative. In the action the first term shifts by $-q \varrho^{2}\dot\Gamma$ and the potential-energy term by $+q \varrho^{2}\dot\Gamma$, term for term and pointwise, so no boundary term is produced and no integration by parts is needed. **The truncated action is invariant exactly**, and the parent's reading is the reason it must be: the symmetry group translates one coordinate of the word and leaves the other seven, so a term built from the scale and the invariant combination of the phase cannot see it.
 
 The limit and the gauge transformation commute. The deletion is the removal of a term built from the scale alone, so it removes a gauge invariant quantity. Deleting and gauging in either order gives the same action, and that is a one-line statement here and a computation in an equation-first account.
 ## The Structural Consequence: Varying the Phase: the Covariant Transport, Unchanged
@@ -153,7 +153,7 @@ the covariant continuity equation, whose current is the kinetic momentum over th
 
 It is identical on the full action, and the reason is again the deleted term's content. The deleted term contains no $\theta_{\mathrm{pha}}$ and no $\vec A$, so both derivatives of the Lagrangian with respect to the phase are unchanged. The transport equation is not an order of an expansion: it is invariant under the deletion, and that invariance is the variational statement that the connection changes the current's carrier and not its structure.
 
-The paramagnetic term is what puts $\vec A$ into the current. Differentiating $\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\rvert^{2}$ with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns the covariant gradient, so the momentum conjugate to the phase is $\frac{h}{2\pi} \varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A)=\varrho^{2}\vec\pi$, the current. **The piece that looks like a perturbation in the action is the piece that makes the current gauge invariant**, and that is why it cannot be dropped.
+The paramagnetic term is what puts $\vec A$ into the current. Differentiating $\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\rvert^{2}$ with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns the covariant gradient, so the momentum conjugate to the phase is $\frac{h}{2\pi} \varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A)=\varrho^{2}\vec\pi$, the current. **The piece that looks like a perturbation in the action is the piece that makes the current invariant**, and that is why it cannot be dropped.
 ## The Noether Currents: Density, Charge and Energy
 The current is the density times the transport velocity, and the limit makes that literal. The phase's momentum is the density,
 $$
@@ -185,7 +185,7 @@ The parent's coupled action has five terms: the phase's rate times the density, 
 
 The limit is the deletion of that one term, and the deletion is a subtraction. Varying the scale of the truncated action gives the covariant Hamilton–Jacobi equation; varying the phase gives the covariant continuity equation, unchanged term for term. **One deletion changes one equation and leaves the other untouched**, in this family as in the free one.
 
-The three coupling pieces are of one order, so the coupling is leading and there is no expansion in it. The paramagnetic piece is what makes the conjugate momentum the kinetic one, and dropping it would destroy the current's gauge invariance. The truncated action is gauge invariant exactly, and the deletion and the gauge transformation commute because the deleted term is built from the scale alone.
+The three coupling pieces are of one order, so the coupling is leading and there is no expansion in it. The paramagnetic piece is what makes the conjugate momentum the kinetic one, and dropping it would destroy the current's local invariance. The truncated action is invariant exactly, and the deletion and the local transformation commute because the deleted term is built from the scale alone.
 ## Summary of Notation
 | Symbol | Meaning |
 |---|---|
@@ -200,7 +200,7 @@ The three coupling pieces are of one order, so the coupling is leading and there
 | $\epsilon=1/(\pi_{\Phi}L)$ | The parameter; one power per derivative of the scale |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; the deleted term's equation |
 ## Further Reading
-- [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), the parent: the coupled Lagrangian, the three coupling pieces, and the gauge direction of the chart.
+- [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), the parent: the coupled Lagrangian, the three coupling pieces, and the redundant direction of the chart.
 - [The Coupled Schrödinger equation in the Non-Quantum Limit](the-coupled-schrodinger-equation-in-the-non-quantum-limit.html), the companion: the same limit on the parent's pair, the Lorentz force, the vorticity and the circulation.
 - [The Lagrangian and the Schrödinger Equation in the Non-Quantum Limit](the-lagrangian-and-the-schrodinger-equation-in-the-non-quantum-limit.html), the free variational companion.
 - [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), for the covariant logarithmic derivative and the pair.

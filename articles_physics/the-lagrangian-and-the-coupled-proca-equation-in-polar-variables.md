@@ -116,9 +116,9 @@ $$
 =\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-exactly, with the other seven parameters fixed: the gauge transformation is the translation of one coordinate. The numerical check is exact to $10^{-16}$.
+exactly, with the other seven parameters fixed: the local transformation is the translation of one coordinate. The numerical check is exact to $10^{-16}$.
 
-The variational reading. Because the action depends on the phase only through its gradient, a constant translation of the phase leaves it invariant, and a *local* translation is compensated by the connection's shift. The pair of statements is the chart's form of gauge invariance, and it is exact in the infinitesimal sense with no remainder: there is no multiplier, no gauge-fixing term, and no compensating field beyond the connection itself.
+The variational reading. Because the action depends on the phase only through its gradient, a constant translation of the phase leaves it invariant, and a *local* translation is compensated by the connection's shift. The pair of statements is the chart's form of local invariance, and it is exact in the infinitesimal sense with no remainder: there is no multiplier, no fixing term, and no compensating field beyond the connection itself.
 
 The two-term structure of the invariance. The mass term is invariant under a constant phase translation because it does not depend on the phase at all in the chart: the phase cancels in $\tilde A^{*}\tilde A^{\natural}$. The field term is invariant because it depends on the phase's gradient and a constant translation does not move a gradient. So in the chart the two invariants have visibly different reasons, and the element form's single computation splits into two.
 
@@ -161,7 +161,7 @@ $$
 =\mathrm{Sc}\bigl(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde A\bigr),
 $$
 
-the temporal slot of the element form's current, by the chain rule and because the phase's generator on the field is multiplication by $i$. The identity is exact and it is the chart's cleanest statement about the current: the charge density is the momentum of the one coordinate that the gauge group translates, and no other coordinate's momentum contributes to it.
+the temporal slot of the element form's current, by the chain rule and because the phase's generator on the field is multiplication by $i$. The identity is exact and it is the chart's cleanest statement about the current: the charge density is the momentum of the one coordinate that the symmetry group translates, and no other coordinate's momentum contributes to it.
 
 The spatial slots. The current's spatial components are the momenta conjugate to the phase's *gradients* in the same sense, and the conservation law is the statement that the four of them form a divergence-free object. The chart adds no new content here; it relocates the object to the phase's canonical pair.
 
@@ -186,7 +186,7 @@ Does not add.
 - No establishment of the Hessian's non-degeneracy on the whole N-regular set, and therefore no claim that the chart's system is regular everywhere.
 - No constraint analysis, because there is no first-order degeneracy to analyse.
 
-**The distinction that matters.** The first-order companions' charts expose a constrained system and their variational principles are constrained systems. This one does not, and the difference is the order of the field equation and not the choice of variables. The chart's genuine gain is that the coupling becomes a shift of one coordinate and the gauge group becomes one coordinate, and its genuine cost is that the equation becomes a contraction with a field-dependent frame.
+**The distinction that matters.** The first-order companions' charts expose a constrained system and their variational principles are constrained systems. This one does not, and the difference is the order of the field equation and not the choice of variables. The chart's genuine gain is that the coupling becomes a shift of one coordinate and the symmetry group becomes one coordinate, and its genuine cost is that the equation becomes a contraction with a field-dependent frame.
 
 ## Open Questions
 
@@ -204,7 +204,7 @@ $$
 
 with $R$ the frame's own scalar, equal to one exactly when the rotor is trivial, independent of the rapidity when the two axes are collinear and dependent on it when they are not: a quadratic form in the eight gradients with a frame-built metric, a mass potential $R\varrho^{2}$, and a connection that shifts the phase's gradient and nothing else.
 
-The chart needs no multipliers for the unit conditions, because the word is exact; the gauge transformation is the translation of the phase coordinate, exact infinitesimally; the charge is the momentum conjugate to that coordinate; and the system is second order, so the constrained-system structure of the first-order companions has no analogue here. What the chart does not do is simplify the field term or establish the regularity of its own metric, and the article says so.
+The chart needs no multipliers for the unit conditions, because the word is exact; the local transformation is the translation of the phase coordinate, exact infinitesimally; the charge is the momentum conjugate to that coordinate; and the system is second order, so the constrained-system structure of the first-order companions has no analogue here. What the chart does not do is simplify the field term or establish the regularity of its own metric, and the article says so.
 
 ## Summary of Notation
 

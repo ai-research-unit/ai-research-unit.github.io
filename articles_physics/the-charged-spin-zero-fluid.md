@@ -24,7 +24,7 @@ with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the mate
 
 Three things are established.
 
-*First, the density is untouched and the velocity becomes mechanical.* The word is the free article's, $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon$, and the scale is still $\varrho$, so $\rho_{\mathrm{num}}=\varrho^{2}$. What the coupling changes is the momentum the phase rate names: the phase gradient is replaced by $\partial_{\imath} S_{\tilde\Xi}+ϙA_{\imath}$, and the velocity the fluid carries is that over the mass. The free velocity was a gradient and was not gauge invariant; the mechanical velocity is not a gradient and is gauge invariant.
+*First, the density is untouched and the velocity becomes mechanical.* The word is the free article's, $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon$, and the scale is still $\varrho$, so $\rho_{\mathrm{num}}=\varrho^{2}$. What the coupling changes is the momentum the phase rate names: the phase gradient is replaced by $\partial_{\imath} S_{\tilde\Xi}+ϙA_{\imath}$, and the velocity the fluid carries is that over the mass. The free velocity was a gradient and was not invariant; the mechanical velocity is not a gradient and is invariant.
 
 *Second, the vorticity becomes the field strength.* Because the mechanical one-form is a gradient plus a potential, its exterior derivative is the potential's alone, and that is $ϙF$. Everything the free article proved about the vanishing of $\omega$ survives as the statement $\vec E=\vec B=0$.
 
@@ -73,7 +73,7 @@ The one-line reason, and the reason it matters for the fluid. A central connecti
 
 ## The Density and the Velocity
 
-The marker density is unchanged, and the conserved density is now gauge invariant. The word's scale is $\varrho$ and $\rho_{\mathrm{num}}=\varrho^{2}$ in both cases; the free article's $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ survives with the mechanical $\gamma$,
+The marker density is unchanged, and the conserved density is now invariant. The word's scale is $\varrho$ and $\rho_{\mathrm{num}}=\varrho^{2}$ in both cases; the free article's $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ survives with the mechanical $\gamma$,
 
 $$
 c\,\rho_{\mathrm{chg}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(E+ϙc\,a'_t\bigr),
@@ -81,7 +81,7 @@ c\,\rho_{\mathrm{chg}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(E+ϙc\,a'_t\bigr),
 \gamma=-\frac{1}{c}\,V^{t},
 $$
 
-and the bracket is invariant under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Lambda}{h}$, $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Lambda$, because the two shifts cancel inside it. The free current was not gauge invariant and the coupling repairs that; the repair is a cancellation inside one bracket, where the element form's is a cancellation between two terms of a bilinear.
+and the bracket is invariant under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Lambda}{h}$, $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Lambda$, because the two shifts cancel inside it. The free current was not invariant and the coupling repairs that; the repair is a cancellation inside one bracket, where the element form's is a cancellation between two terms of a bilinear.
 
 The velocity is the mechanical one and it is the only velocity the fluid has. Write
 
@@ -103,7 +103,7 @@ $$
 
 whose one-form is closed iff the potential is pure gauge. **The free article's irrotationality is therefore the statement $F=0$**, and it is a statement about the connection the field is coupled to rather than about the field.
 
-A gauge transformation moves the two terms and not the sum. The angle and the potential shift in opposite directions, the mechanical momentum is fixed, and the velocity with it. So the velocity is an observable of the chart, which the free velocity was not. The free article records that its current was not gauge invariant; this one is, and the reason is that the velocity now carries the potential the phase used to leave behind.
+A local transformation moves the two terms and not the sum. The angle and the potential shift in opposite directions, the mechanical momentum is fixed, and the velocity with it. So the velocity is an observable of the chart, which the free velocity was not. The free article records that its current was not invariant; this one is, and the reason is that the velocity now carries the potential the phase used to leave behind.
 
 ## The Vorticity
 
@@ -195,7 +195,7 @@ The potential moves the zero of the mechanical energy, and the charge density fo
 
 That surface is the pair-threshold, and the article claims the kinematics and no more. The number density $\varrho^{2}$ never changes sign and never vanishes there; what changes sign is the charge density, which is the number density times the mechanical phase rate. So the free article's "two defects are one defect" — the sign of the charge and the indefiniteness of the density — is unchanged in structure: the coupling moves the boundary and does not remove it. The field theory of the boundary, in which a negative-frequency branch stopped by a sufficiently strong electric potential is a pair-producing configuration, is [The Klein Paradox in Biquaternionic Form](the-klein-paradox-in-biquaternionic-form.html)'s subject, and the present article's contribution is the fluid statement: a fluid whose charge density is a positive number density times a mechanical phase rate has a charge-sign boundary wherever that rate vanishes, and a constant potential translates the boundary without abolishing it.
 
-The gauge transformation does not move the boundary. The bracket is gauge invariant, so the surface $E+ϙc\,a'_t=0$ is a gauge-invariant set, and the worry that the threshold is a gauge artefact is answered in one line.
+The local transformation does not move the boundary. The bracket is invariant, so the surface $E+ϙc\,a'_t=0$ is an invariant set, and the worry that the threshold is a gauge artefact is answered in one line.
 
 ## The Reverse Map
 
@@ -207,7 +207,7 @@ $$
 
 and the third member is not a condition on the flow alone: the flow and the connection are one datum, and neither determines the other. That is what the coupling does to the correspondence, and it is a change of the domain and not of the strength of either arrow.
 
-The two arrows are still of different strengths, and the asymmetry is now a quotient. The field gives a density, an action and a mechanical momentum, exactly and with no conditions. The reverse direction takes a positive density, an action and a connection and returns $\tilde\Xi=\varrho e^{\frac{2\pi iS_{\tilde\Xi}}{h}}\varepsilon$, but two triples differing by a gauge transformation give the same field. **The map is well defined on gauge orbits and not on triples**, and the free article's bijection on the $N$-regular set is the $ϙ=0$ slice of a bijection on orbits. Nothing is lost and nothing is gained: the count of the field's data is unchanged, because the connection was never the field's datum.
+The two arrows are still of different strengths, and the asymmetry is now a quotient. The field gives a density, an action and a mechanical momentum, exactly and with no conditions. The reverse direction takes a positive density, an action and a connection and returns $\tilde\Xi=\varrho e^{\frac{2\pi iS_{\tilde\Xi}}{h}}\varepsilon$, but two triples differing by a local transformation give the same field. **The map is well defined on orbits and not on triples**, and the free article's bijection on the $N$-regular set is the $ϙ=0$ slice of a bijection on orbits. Nothing is lost and nothing is gained: the count of the field's data is unchanged, because the connection was never the field's datum.
 
 A reader's objection, and the answer. The objection is that the mechanical velocity is defined as the canonical one plus the potential, so "the vorticity is the field strength" is a definition and not a result. The objection is right about the definition and wrong about the content: what the display fixes is that the fluid's vorticity is *not an independent variable*, and that is a statement about the fluid and not about the letters. A free fluid could have had a vorticity of its own and did not; this one has the field's and cannot have another.
 
@@ -216,7 +216,7 @@ A reader's objection, and the answer. The objection is that the mechanical veloc
 Twelve statements, each one line, and each with its reason. This is what the charged scalar fluid is.
 
 1. The word is unchanged and the coupling is a shift, not a parameter. The scale, the angle and the branch; the connection enters the phase bracket, and the count of the field's data is the free article's.
-2. The marker density is $\varrho^{2}$ and the conserved density is the mechanical phase rate times it. $c\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}(E+ϙca'_t)/m$, and it is gauge invariant, which the free one was not.
+2. The marker density is $\varrho^{2}$ and the conserved density is the mechanical phase rate times it. $c\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}(E+ϙca'_t)/m$, and it is invariant, which the free one was not.
 3. The velocity is the mechanical momentum over the mass, and it is the only velocity the fluid has. It is invertible exactly where $Q_{\mathrm{qnt}}$ vanishes, as before.
 4. The flow is irrotational exactly where the field strength vanishes. $\omega=ϙF/m$, exact, with no quantum correction.
 5. The vorticity's rank is the field strength's: $0$, $2$ or $4$, and $4$ exactly where $\vec E\cdot\vec B\ne0$. No free fluid of the block reaches rank four with its vorticity proper.
@@ -272,7 +272,7 @@ What the correspondence supports and what it does not. It supports the claim tha
 
 ## What Is Established and What Is Interpretation
 
-Established. The type table, and with it the statement that the coupling can reach the scale and the phase brackets and no others. The mechanical momentum as the canonical one plus the potential, and the velocity as that over the mass. The gauge invariance of the velocity, the charge density and the current, from a cancellation inside one bracket. The vorticity as $ϙF/m$, exactly, with the rank statement and the three-row singular-value table. The circulation as $h n+ϙ\digamma_{\mathrm{flx}}$, and the survival of the flux term where the field strength vanishes on the loop. The acceleration law as the free one plus the Lorentz term, with the identity verified symbolically in both slots. The invariance of the quantum potential, the Korteweg class of the stress, and the absence of an equation of state. The movement of the charge-sign boundary with the potential, and its gauge invariance. The reverse map's domain as a set of triples, well defined on gauge orbits.
+Established. The type table, and with it the statement that the coupling can reach the scale and the phase brackets and no others. The mechanical momentum as the canonical one plus the potential, and the velocity as that over the mass. The local invariance of the velocity, the charge density and the current, from a cancellation inside one bracket. The vorticity as $ϙF/m$, exactly, with the rank statement and the three-row singular-value table. The circulation as $h n+ϙ\digamma_{\mathrm{flx}}$, and the survival of the flux term where the field strength vanishes on the loop. The acceleration law as the free one plus the Lorentz term, with the identity verified symbolically in both slots. The invariance of the quantum potential, the Korteweg class of the stress, and the absence of an equation of state. The movement of the charge-sign boundary with the potential, and its local invariance. The reverse map's domain as a set of triples, well defined on orbits.
 
 The comparison is established as a table and not as a claim. Every entry of §*The Three Charged Fluids* is a statement proved in one of the three charged articles, and the entries are what make the comparison systematic: the word's count, the density, the velocity, the vorticity's form and rank, the circulation, where the charge lands, the stress, the equation of state, the compressibility, the degenerate set, and what closes the system.
 
@@ -286,13 +286,13 @@ The charged Klein–Gordon equation is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\nat
 
 The connection is central per component, so it merges with the scale and the phase brackets and cannot reach the branch. On the central field the kinematics is therefore exactly a shift of the phase rate, and the shift is the classical substitution in one element: $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$.
 
-The density is $\varrho^{2}$ and the conserved density is the mechanical phase rate times it, gauge invariant where the free one was not. The velocity is $\tilde P^{\mathrm{mech}}/m$, an invertible element exactly where the quantum potential vanishes and no longer a gradient.
+The density is $\varrho^{2}$ and the conserved density is the mechanical phase rate times it, invariant where the free one was not. The velocity is $\tilde P^{\mathrm{mech}}/m$, an invertible element exactly where the quantum potential vanishes and no longer a gradient.
 
 The vorticity is $ϙF/m$ exactly, so the fluid is irrotational exactly where the field strength vanishes. Its rank is $0$, $2$ or $4$, and four exactly where $\vec E\cdot\vec B\ne0$, which is the rank no free fluid of the block reaches with its vorticity proper. The circulation is $h n+ϙ\digamma_{\mathrm{flx}}$, and the flux term survives where the field strength vanishes on the loop.
 
 The force is the Lorentz force plus the free quantum gradient, $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and it comes from the one gradient of the coupled mass shell. The quantum potential, the Korteweg stress and the absence of an equation of state are untouched, because the field is external and the amplitude is untouched.
 
-The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gauge invariant, and the number density's sign never moves. The degenerate set is $\varrho=0$, as it was. The reverse map's domain is now a set of triples — density, action, connection — and it is well defined on gauge orbits rather than on triples.
+The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is invariant, and the number density's sign never moves. The degenerate set is $\varrho=0$, as it was. The reverse map's domain is now a set of triples — density, action, connection — and it is well defined on orbits rather than on triples.
 
 ## Summary of Notation
 
@@ -300,14 +300,14 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gaug
 | --- | --- |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon$ | The word; the free article's, unchanged by the coupling |
 | $\varrho>0$ | Scale; $\rho_{\mathrm{num}}=\varrho^{2}$ |
-| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The phase coordinate; moves under a gauge transformation |
+| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The phase coordinate; moves under a local transformation |
 | $\varepsilon$ | The branch; untouched by the connection |
 | $\tilde A_\Phi=i a'_t e_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}$ | The connection; $a'_t$ and $\vec A$ real, so $\tilde A_\Phi\in\mathbb{B}_\Phi$ |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The covariant derivative; central per component |
 | $ϙ$ | The coupling |
 | $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The action |
 | $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | The canonical momentum; $E=-\frac{h}{2\pi} c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ |
-| $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | The mechanical momentum; gauge invariant |
+| $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | The mechanical momentum; invariant |
 | $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$ | The four-velocity; $\tilde V_\Phi\tilde V_\Phi^{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ |
 | $\rho_{\mathrm{chg}}$ | The conserved density; $c\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}(E+ϙca'_t)/m$ |
 | $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$ | The field strength; $\det F$ is $(\vec E\cdot\vec B)^{2}$ up to a factor |

@@ -26,7 +26,7 @@ S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int \sum_{\imath,\jmath}F_{\imath
 F_{\mathrm{dual},\imath\jmath}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\imath\jmath\rho\sigma}F_{\rho\sigma} ,
 $$
 
-with all indices summed in the $i r'_t$ convention as in the companion gauge articles. A quantisation statement carries the factor $\frac{2\pi}{h}$ beside the charge product. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T_{a}T_{b})=\tfrac12\delta_{ab}$; that normalization is what makes $Ϙ$ an integer.
+with all indices summed in the $i r'_t$ convention as in the companion gauge articles. A quantisation statement carries the factor $\frac{2\pi}{h}$ beside the charge product. The trace $\mathrm{Tr}$ is the matrix trace on the group factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T_{a}T_{b})=\tfrac12\delta_{ab}$; that normalization is what makes $Ϙ$ an integer.
 
 Two things follow, and the article states them separately. The framework **supplies** the theta term's density and its discrete periodicity; it **does not supply** the value of $\theta_{\mathrm{vac}}$, because $\theta_{\mathrm{vac}}$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
 
@@ -50,7 +50,7 @@ both acting from the left, and each half satisfies $\Box_\Phi\tilde{Ξ}=4\pi^{2}
 
 ## The Theta Term and Its Density
 
-The theta term of a non-abelian gauge theory is
+The theta term of a Yang–Mills theory is
 
 $$
 \boxed{\;S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int d^4r\,\sum_{\imath,\jmath,a}F_{\imath\jmath a}F_{\mathrm{dual},\imath\jmath a}
@@ -216,7 +216,7 @@ The field content is carried by the gradient and by the chirality subscript: the
 | $\Box_\Phi$ | The d'Alembertian of the same article, the quaternionic norm of the gradient, in the material reading; scalar |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field, an element of $\mathbb B$, and its two parts: $L$ is the value $-1$, $R$ the value $+1$ |
 | $a,b,c$ | Colour indices, written low; every contraction over them is an explicit sum. The speed of light is also $c$ and is a scalar, not an index. |
-| $f_{abc}$ | Structure constants of the gauge factor, written low |
+| $f_{abc}$ | Structure constants of the group factor, written low |
 
 ## Further Reading
 

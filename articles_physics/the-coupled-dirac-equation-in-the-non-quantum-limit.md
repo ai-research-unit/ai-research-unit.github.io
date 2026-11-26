@@ -22,7 +22,7 @@ What that does to order zero. The eikonal is the mechanical mass shell, and the 
 
 What the article must say about the spin, and it is the honest part. The coupling enters two of the four brackets by type — the phase's and the boost's — and it cannot enter the rotor's, because that bracket is a real vector part and the potential is central imaginary and Hermitian. So the magnetic moment is not a rotor rotation in this chart: the spin's own transport is the free one, and the observed precession arises because the boost's curvature bends the frame in which the rotor's rate is zero. The parent states this as a limitation of the chart and this article carries it into the limit.
 
-What the article establishes, in five sentences. The coupling is one addition to the phase bracket, and the frame it produces is the kinetic frame. Order zero is the mechanical mass shell with the kinetic boost, and its polarisation condition is the free one written in kinetic variables. Order one is the continuity equation with the kinetic velocity, the velocity's transport — the Lorentz force — and the spin's transport, which is the free transport plus the precession induced by the boost's curvature. The criterion must be written on the mechanical wavevector, because the canonical one is not gauge invariant. The chart has one structural limit: an anomalous magnetic moment has no slot in it, and the corpus does not claim otherwise.
+What the article establishes, in five sentences. The coupling is one addition to the phase bracket, and the frame it produces is the kinetic frame. Order zero is the mechanical mass shell with the kinetic boost, and its polarisation condition is the free one written in kinetic variables. Order one is the continuity equation with the kinetic velocity, the velocity's transport — the Lorentz force — and the spin's transport, which is the free transport plus the precession induced by the boost's curvature. The criterion must be written on the mechanical wavevector, because the canonical one is not invariant. The chart has one structural limit: an anomalous magnetic moment has no slot in it, and the corpus does not claim otherwise.
 
 What is not new. The minimal substitution into the Dirac equation, the kinetic four-velocity, and the BMT precession as the composition of the magnetic torque with the Thomas term are standard. Added here: the reading of the frame as the kinetic frame, the statement that the coupling enters exactly two of the four brackets *by type*, and the limit's inheritance of the chart's inability to carry an anomalous moment.
 
@@ -56,7 +56,7 @@ The gauge statement, in the parent's sharpest form. For a pure gauge potential $
 
 The parameter. $\epsilon=1/(\pi_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The frame's slots are the mechanical variables, so the momentum the criterion reads is the mechanical one.
 
-Why the canonical momentum fails. A criterion on $\vec p$ changes value under a gauge transformation, while $\vec\pi$ does not. A limit whose validity depends on the gauge is a statement about the chart.
+Why the canonical momentum fails. A criterion on $\vec p$ changes value under a local transformation, while $\vec\pi$ does not. A limit whose validity depends on the gauge is a statement about the chart.
 
 The order table, which is the free table.
 

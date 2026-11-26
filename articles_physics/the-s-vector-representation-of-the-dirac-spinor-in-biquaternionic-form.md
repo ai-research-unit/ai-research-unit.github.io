@@ -246,7 +246,7 @@ $$
 \tilde\nabla_{\imath} G_{Lk} = \bigl(\partial/\partial x_{\imath} + ieA_{\imath}\bigr)G_{Lk} .
 $$
 
-The opposite charges of the two parts are thus the two eigenvalues of $c_5$, and the gauge field couples to them with opposite signs, as a gauge field on two values must.
+The opposite charges of the two parts are thus the two eigenvalues of $c_5$, and the connection couples to them with opposite signs, as a connection on two values must.
 
 Both kinetic terms carry the same combination $i\check c$, and that product is not purely imaginary, because $\check c$ already contains an $i$. Since $\check c_{\imath\jmath k}=({r'_{t}}_{\imath\jmath k\rho}-i\varepsilon_{\imath\jmath k\rho})j_\rho$, the combination is
 $$
@@ -301,7 +301,7 @@ $$
 i\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_{\imath}\,\check c_{\imath\jmath k}\,\tilde\nabla_{\jmath} G_{\imath} - m\, G^{*}_{\imath} = 0
 $$
 
-is the compact form of the same pair at $A_{\imath}=0$: the two equations above are its two values, and every $G_{\imath}$ is their sum. Both halves are quoted in the source's letters, $\partial/\partial x_{\jmath}$ its index partial and $A_{\jmath}$ its gauge field; the compact line writes the same equation in the corpus gradient, whose ${\jmath}$-th leg stands in that slot. This is the two-value structure of the element's equation, carried to the four-vector carrier. On the element the same pair reads
+is the compact form of the same pair at $A_{\imath}=0$: the two equations above are its two values, and every $G_{\imath}$ is their sum. Both halves are quoted in the source's letters, $\partial/\partial x_{\jmath}$ its index partial and $A_{\jmath}$ its connection; the compact line writes the same equation in the corpus gradient, whose ${\jmath}$-th leg stands in that slot. This is the two-value structure of the element's equation, carried to the four-vector carrier. On the element the same pair reads
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
@@ -354,7 +354,7 @@ $$
 = 2\partial/\partial x_{\imath}\Bigl[\varepsilon_{\imath\jmath k\rho}\bigl(B_{\jmath}\partial/\partial x_{\imath} B_\rho - N_{\jmath}\partial/\partial x_{\imath} N_\rho + 2mB_{\jmath} N_{\imath} j_\rho\bigr)\Bigr],
 $$
 
-a Chern–Pontryagin-type density equal to a total derivative of a Chern–Simons-type current. The Dirac Lagrangian can therefore be modified by that total derivative, which is the entry into the topologically massive gauge field of the companion article *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.
+a Chern–Pontryagin-type density equal to a total derivative of a Chern–Simons-type current. The Dirac Lagrangian can therefore be modified by that total derivative, which is the entry into the topologically massive connection of the companion article *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.
 
 ## The U(1) Transformation and the De Moivre Theorem
 

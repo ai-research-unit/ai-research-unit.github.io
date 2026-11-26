@@ -2,11 +2,11 @@
 
 ## Introduction
 
-**The question.** The corpus writes $r\bar g$, $r\bar b$ and $b\bar\ell$ on the fifteen gauge bosons, and it calls them colours. **Are they charges?**
+**The question.** The corpus writes $r\bar g$, $r\bar b$ and $b\bar\ell$ on the fifteen connections, and it calls them colours. **Are they charges?**
 
 **The answer.** No. **They are coordinates in a $4\times4$ table.** Above $M_C$ the group is one simple factor and no $\mathrm{SU}(3)$ is gauged, so a colour letter names a slot and nothing else. **It is not an eigenvalue, not a conserved number, and not an observable.**
 
-**What this article establishes.** The fifteen flat labels, with no broken-phase word among them: twelve ordered pairs and three diagonal directions. Why the labels mix under a gauge transformation. Why nothing can measure them above $M_C$. And the four facts that are real — the group, its dimension, its rank, and the common mass.
+**What this article establishes.** The fifteen flat labels, with no broken-phase word among them: twelve ordered pairs and three diagonal directions. Why the labels mix under a local transformation. Why nothing can measure them above $M_C$. And the four facts that are real — the group, its dimension, its rank, and the common mass.
 
 **What it does not establish.** That colour exists anywhere. **The $\mathrm{SU}(3)$ content — eight, rank two, the singlet excluded — belongs to the phase below $M_C$**, and the companion article [The Colours in $\mathrm{SU}(3)$](the-colours-in-su3-a-coordinate-label-on-the-eight-not-a-charge.html) carries it. This article is the first half, and it stops at the transition.
 
@@ -82,7 +82,7 @@ $$
 
 ### It Is Not Gauge Invariant
 
-**The gauge field is $A_\mu=\sum_{a}A_\mu^{a}t_{a}$, and the index $a$ is the label.** Under a gauge transformation,
+**The connection is $A_\mu=\sum_{a}A_\mu^{a}t_{a}$, and the index $a$ is the label.** Under a local transformation,
 
 $$
 A_\mu\ \longmapsto\ U A_\mu U^{\dagger}+\tfrac{i}{g_4}U\partial_\mu U^{\dagger},
@@ -90,7 +90,7 @@ $$
 
 **so the components rotate among themselves**, $A_\mu^{a}\mapsto R^{ab}A_\mu^{b}$ plus the inhomogeneous term, with $R$ the adjoint rotation built from $U$. **A field carrying $r\bar g$ in one gauge carries a combination of all fifteen in another.** The only basis-independent numbers are the Casimirs, and the quadratic Casimir of the adjoint takes the same value on all fifteen.
 
-**A charge is a number that a gauge-invariant operator can read off.** The label $r\bar g$ is an index of a basis in which the group mixes components. **Those are different kinds of object**, and calling the second a charge is the error this article exists to prevent.
+**A charge is a number that an invariant operator can read off.** The label $r\bar g$ is an index of a basis in which the group mixes components. **Those are different kinds of object**, and calling the second a charge is the error this article exists to prevent.
 
 **The weights do not rescue it.** The weights of a representation are labels relative to a chosen Cartan basis, and the normalisation of a Cartan generator is itself a choice. **The root system is invariant; the numbers attached to a root are not.**
 
@@ -104,11 +104,11 @@ $$
 
 **and $\Xi_0=0$, every entry is zero for every pair.**
 
-**So all fifteen are massless, with one coupling, in one degenerate multiplet.** A mass would be the one gauge-invariant label that could separate a direction from its neighbours, and there is none. **No cross-section, no decay rate and no spectrum can tell $E_{b\ell}$ from $E_{br}$**: every basis rotation is a symmetry of the numbers, and a label a symmetry can rotate away is not a property of anything.
+**So all fifteen are massless, with one coupling, in one degenerate multiplet.** A mass would be the one invariant label that could separate a direction from its neighbours, and there is none. **No cross-section, no decay rate and no spectrum can tell $E_{b\ell}$ from $E_{br}$**: every basis rotation is a symmetry of the numbers, and a label a symmetry can rotate away is not a property of anything.
 
 **This is the sharpest form of the claim.** Below $M_C$ the degeneracy lifts — six of the fifteen take $32v^{2}$ and nine stay at zero — and that split is observable. **Above $M_C$ there is nothing to lift, and therefore nothing for a name to attach to.**
 
-**The strongest objection, named before it is answered.** *QCD's colours are basis labels too, and its eight gluons are physical.* **True, and it is the point.** Even below $M_C$, $r\bar g$ is a coordinate on the adjoint of $\mathrm{SU}(3)$; what is physical there is the group, the dimension eight, the rank two, the exclusion of the singlet, and the gauge-invariant rates computed from them. **The letters are never physics at either scale.** What changes between the scales is not that the letters become real. **It is that below $M_C$ there is a group for the coordinates to be coordinates of, and above it there is not.**
+**The strongest objection, named before it is answered.** *QCD's colours are basis labels too, and its eight gluons are physical.* **True, and it is the point.** Even below $M_C$, $r\bar g$ is a coordinate on the adjoint of $\mathrm{SU}(3)$; what is physical there is the group, the dimension eight, the rank two, the exclusion of the singlet, and the invariant rates computed from them. **The letters are never physics at either scale.** What changes between the scales is not that the letters become real. **It is that below $M_C$ there is a group for the coordinates to be coordinates of, and above it there is not.**
 
 ## What Is Real, and What Is Chosen
 
@@ -169,7 +169,7 @@ $$
 
 **The fifteen labels are twelve ordered pairs and three diagonal directions, and none of them is a charge.** A pair names the two lines a direction connects; a diagonal names the weighting of a line. **The table is a chart of sixteen slots with the trace removed, and that is the whole of what colour means above $M_C$.**
 
-**The labels are unobservable for two independent reasons.** They mix under a gauge transformation, so no gauge-invariant operator carries one; and the fifteen are exactly degenerate, so no rate or mass distinguishes one label from another. **A label a symmetry can rotate away is notation.**
+**The labels are unobservable for two independent reasons.** They mix under a local transformation, so no invariant operator carries one; and the fifteen are exactly degenerate, so no rate or mass distinguishes one label from another. **A label a symmetry can rotate away is notation.**
 
 **Four things are real: the group, the dimension, the rank, and the masslessness.** They survive every basis and are checkable without naming a line. **The twelve-and-three split is a fifth**, invariant for the same reason.
 

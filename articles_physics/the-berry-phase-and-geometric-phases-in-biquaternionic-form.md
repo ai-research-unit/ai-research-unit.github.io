@@ -11,7 +11,7 @@ This article carries that construction into the biquaternion algebra $\mathbb{B}
 The article's findings are stated here in advance, so that the reader can hold them against the text.
 
 1. **The Berry connection is not visible in the state of $\mathbb{B}_{\Psi}$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{\mathrm{id},1,2}(\vec u_\Psi)$, but $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\,\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}}) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\tilde{Ξ}$ of the state module, and its definition uses the same Hermitian form, read through the scalar part, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
-2. **The connection is a $\mathrm{U}(1)$ gauge connection on parameter space**, transforming as $\mathcal{A} \mapsto \mathcal{A} - d\alpha$ under a rephasing of the eigenstate, with curvature $\mathcal{F} = d\mathcal{A}$. Its structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same $\mathrm{U}(1)$ that *The Gauge Principle in Biquaternionic Form* attaches to the algebra.
+2. **The connection is a $\mathrm{U}(1)$ connection on parameter space**, transforming as $\mathcal{A} \mapsto \mathcal{A} - d\alpha$ under a rephasing of the eigenstate, with curvature $\mathcal{F} = d\mathcal{A}$. Its structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same $\mathrm{U}(1)$ that *The Gauge Principle in Biquaternionic Form* attaches to the algebra.
 3. **The two routes agree** on spin-1/2 in a slowly rotating field: the line integral of the connection and the surface integral of the curvature both give $-\theta_{\mathrm{sol}}/2$, where $\theta_{\mathrm{sol}}$ is the solid angle subtended by the loop, for every loop in a one-parameter family.
 4. **The curvature is quantised only on a closed surface.** The cap flux $-\pi(1-\cos\theta_0)$ is continuous in the loop; only the integral over the closed Bloch sphere is quantised, giving the Chern number $\mp 1$ for the two bands, whose sum is zero. The closed surface must avoid the degeneracy point, which is where the gap closes.
 5. **The Berry connection is not the framework's spacetime connection.** It is literally the standard Berry connection, rewritten through the Hermitian form, read through the scalar part. Its relation to the abelian connection $\tilde{A}_{\Phi}$ of the gauge-principle article is an **analogy**: same structure group, same transformation law, same curvature definition, but a different base space and a different kind of object. It is not claimed to be the same field.
@@ -43,7 +43,7 @@ $$
 
 The right-hand side is a line integral of a one-form on parameter space; it does not refer to the rate at which the path is traversed. Replacing $R(r'_t)$ by a reparametrization of the same curve leaves $\gamma_n$ unchanged, while the dynamical phase $-\frac{2\pi}{h}\int  E_n\,dr'_t$ scales with the duration. This is the precise sense in which the second phase is **geometric** and the first is not; the speed-independence is checked explicitly on the example below.
 
-The eigenstate is defined only up to a phase, so the integrand is not a gauge-invariant object by itself. Writing $|n\rangle \mapsto \exp(i\theta_{\mathrm{gau}}(R))|n\rangle$ for a real function $\theta_{\mathrm{gau}}$ whose phase factor $\exp(i\theta_{\mathrm{gau}})$ is single-valued, the phase acquired around a **closed** loop shifts by
+The eigenstate is defined only up to a phase, so the integrand is not an invariant object by itself. Writing $|n\rangle \mapsto \exp(i\theta_{\mathrm{gau}}(R))|n\rangle$ for a real function $\theta_{\mathrm{gau}}$ whose phase factor $\exp(i\theta_{\mathrm{gau}})$ is single-valued, the phase acquired around a **closed** loop shifts by
 
 $$
 \oint \nabla_R\alpha\cdot dR = 2\pi k , \qquad k \in \mathbb{Z},
@@ -137,7 +137,7 @@ $$
 
 The first term is the conjugate of the second (complex conjugation in $\mathbb{B}_{C}$ reverses the order inside the scalar part), so $\mathrm{Sc}(\tilde{Ξ}^{\dagger}\partial/\partial R_{\imath}\tilde{Ξ})$ is purely imaginary and $i$ times it is real. The connection is therefore a **real one-form** on parameter space. It is not an element of $\mathbb{B}_{\Phi}$ and not a biquaternion: it is a real number attached to each direction in parameter space.
 
-**Gauge transformation.** Let $\theta_{\mathrm{gau}}(R)$ be a real function and let $\tilde{Ξ} \mapsto \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ}$. Because $\exp(i\theta_{\mathrm{gau}})$ is central and $*$-unitary, it multiplies $\tilde{Ξ}$ from the left without ordering ambiguity, and
+**Local transformation.** Let $\theta_{\mathrm{gau}}(R)$ be a real function and let $\tilde{Ξ} \mapsto \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ}$. Because $\exp(i\theta_{\mathrm{gau}})$ is central and $*$-unitary, it multiplies $\tilde{Ξ}$ from the left without ordering ambiguity, and
 
 $$
 \begin{aligned}
@@ -154,7 +154,7 @@ $$
 \qquad\text{for}\qquad \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ} .
 $$
 
-This is the transformation law of an **abelian gauge connection**. It is the same law as the electromagnetic gauge transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ of *The Gauge Principle in Biquaternionic Form*, and the same law as the electromagnetic Berry connection of the standard theory. The rest of this section makes the analogy precise and states its limits.
+This is the transformation law of an **abelian connection**. It is the same law as the electromagnetic local transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ of *The Gauge Principle in Biquaternionic Form*, and the same law as the electromagnetic Berry connection of the standard theory. The rest of this section makes the analogy precise and states its limits.
 
 ### Why the Analogy Is Structural and Not Decorative
 
@@ -164,9 +164,9 @@ $$
 \mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C}) \subset \mathbb{B}_{C} \subset \mathbb{B} ,
 $$
 
-Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
+Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
 
-and the same additive transformation law. In this precise sense the Berry connection is a gauge connection **of the same type** as the one the framework supplies for electromagnetism. What differs is everything else:
+and the same additive transformation law. In this precise sense the Berry connection is a connection **of the same type** as the one the framework supplies for electromagnetism. What differs is everything else:
 
 | | Gauge-principle connection $\tilde{A}_{\Phi}$ | Berry connection $\mathcal{A}$ |
 |---|---|---|
@@ -190,7 +190,7 @@ $$
 = \gamma - \oint_{\mathcal{C}} d\alpha .
 $$
 
-If $\exp(i\theta_{\mathrm{gau}})$ is single-valued on the loop, the last integral is $2\pi k$ for some integer $k$, the winding number of $\exp(i\theta_{\mathrm{gau}})$ around the loop. A single-valued rephasing of the eigenstate therefore shifts the closed-loop phase by $2\pi k$ and nothing more, so the **gauge-invariant content is the phase modulo $2\pi$**. This is the first of the article's traps, and it is now a statement about the transition functions of a $\mathrm{U}(1)$ bundle rather than about the arbitrariness of a wave function. The curvature below is the object that removes the ambiguity at the level of the integrand.
+If $\exp(i\theta_{\mathrm{gau}})$ is single-valued on the loop, the last integral is $2\pi k$ for some integer $k$, the winding number of $\exp(i\theta_{\mathrm{gau}})$ around the loop. A single-valued rephasing of the eigenstate therefore shifts the closed-loop phase by $2\pi k$ and nothing more, so the **invariant content is the phase modulo $2\pi$**. This is the first of the article's traps, and it is now a statement about the transition functions of a $\mathrm{U}(1)$ bundle rather than about the arbitrariness of a wave function. The curvature below is the object that removes the ambiguity at the level of the integrand.
 
 ## The Berry Curvature
 
@@ -419,7 +419,7 @@ is a **Lorentz invariant** — the argument of an invariant is invariant — and
 
 1. **The non-abelian case.** The Wilczek–Zee phase needs a degenerate level separated from the rest of the spectrum. In a single qubit this is impossible; it requires $\mathbb{B}^{\otimes_\mathbb{C} n}$, whose tensor product the parent article leaves open. Does the framework's own non-commutativity supply a natural matrix-valued connection on a many-qubit state module, and if so is it the standard one?
 
-2. **A $\mathbb{B}$-valued geometric phase.** The connection defined here is $\mathrm{U}(1)$-valued because the eigenstate's rephasing freedom is central. Could a non-central, $\mathbb{B}$-valued connection on the state module define a geometric phase intrinsic to the algebra, without tensor products? The non-abelian gauge structure of the gauge-principle article suggests the algebra has the wherewithal; nothing here constructs it.
+2. **A $\mathbb{B}$-valued geometric phase.** The connection defined here is $\mathrm{U}(1)$-valued because the eigenstate's rephasing freedom is central. Could a non-central, $\mathbb{B}$-valued connection on the state module define a geometric phase intrinsic to the algebra, without tensor products? The non-abelian structure of the gauge-principle article suggests the algebra has the wherewithal; nothing here constructs it.
 
 3. **The local complex structure.** The series makes the spacetime complex structure local through $c = 1/\sqrt{\epsilon\mu}$, while the scalar imaginary $i$ of the state module is a global central element. If the complex structure is local, does the Berry phase — which uses $i$ as the complex structure of the state module — see the local structure? *The Schrödinger Equation in Biquaternionic Form* records the same tension as an open question, and this article inherits it.
 
@@ -429,7 +429,7 @@ is a **Lorentz invariant** — the argument of an invariant is invariant — and
 
 ## Summary
 
-The Berry phase is the geometric phase acquired by an adiabatic eigenstate around a closed loop in parameter space. It is computed by two equivalent routes, the line integral of the **Berry connection** and the surface integral of the **Berry curvature**, and it is defined modulo $2\pi$ because a rephasing of the eigenstate is a gauge transformation.
+The Berry phase is the geometric phase acquired by an adiabatic eigenstate around a closed loop in parameter space. It is computed by two equivalent routes, the line integral of the **Berry connection** and the surface integral of the **Berry curvature**, and it is defined modulo $2\pi$ because a rephasing of the eigenstate is a local transformation.
 
 In the biquaternion framework the instantaneous eigenstate of $\tilde H_\Psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{\mathrm{id},1,2}(\vec u_R)$, but the idempotent is **blind** to the connection: $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}}) = 0$ identically. The connection is carried by the **spinor** $\tilde{Ξ}$ of the Peirce carrier $\mathbb{B}\tilde\Pi_{\mathrm{id}}$, a minimal left ideal here, and is defined by the Hermitian form of the state module, read through the scalar part,
 
@@ -468,7 +468,7 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\mathcal{P} = S^2$ | Parameter space = Bloch sphere of $\mathbb{B}_{\Psi}$ |
 | $\theta, \theta_{\mathrm{azm}}$ | Polar and azimuthal angles on the Bloch sphere |
 | $\mathcal{A}_{\imath}$ | Berry connection, $i\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\partial/\partial R_{\imath}\tilde{Ξ})/\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ |
-| $\mathcal{A}_{2,\imath} = \mathcal{A}_{\imath} - \partial/\partial R_{\imath}\alpha$ | Gauge transformation of the Berry connection |
+| $\mathcal{A}_{2,\imath} = \mathcal{A}_{\imath} - \partial/\partial R_{\imath}\alpha$ | Local transformation of the Berry connection |
 | $\mathcal{F}_{\imath\jmath} = \partial/\partial R_{\imath}\mathcal{A}_{\jmath} - \partial/\partial R_{\jmath}\mathcal{A}_{\imath}$ | Berry curvature |
 | $\gamma_\pm$ | Berry phase of the spin-up / spin-down band |
 | $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ | Solid angle of the cap bounded by the loop |

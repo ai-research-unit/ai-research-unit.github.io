@@ -12,7 +12,7 @@ Position in the block. This is the charged companion of [The Fourier Transform a
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_{\imath}+\frac{2\pi i\varkappa}{h}A_{\imath}$, and the gauge transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
+The charged companion's: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_{\imath}+\frac{2\pi i\varkappa}{h}A_{\imath}$, and the local transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
 
 $$
 \vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,
@@ -38,7 +38,7 @@ $$
 
 and the last equality is the article's first result. The velocity is constant and its curl is exactly zero, and the check on one hundred events gave $\max\lvert\nabla\times\vec v\rvert=2.5\times10^{-16}$ for a constant $\vec A$.
 
-The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\omicron_{\mathrm{pot}}=-\partial_{t'}\chi$ the gauge transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\chi}{h})$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\frac{2\pi \varkappa\vec A}{h}$.
+The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\omicron_{\mathrm{pot}}=-\partial_{t'}\chi$ the local transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\chi}{h})$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\frac{2\pi \varkappa\vec A}{h}$.
 
 The two labels, and which one the fluid reads.
 
@@ -97,11 +97,11 @@ The objection, and the answer. The objection is that the flux term is a gauge ar
 
 ## Two Supports, One Field
 
-The transform of a solution is a measure on a support, and which support depends on the variable. In the canonical variable the support is the free shell $\mathcal E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$; in the kinetic variable it is the same shell translated by the potential. Since the two variables differ by a gauge transformation, and a gauge transformation of a linear phase translates the support, the two supports are the same set of physical states written in two charts.
+The transform of a solution is a measure on a support, and which support depends on the variable. In the canonical variable the support is the free shell $\mathcal E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$; in the kinetic variable it is the same shell translated by the potential. Since the two variables differ by a local transformation, and a local transformation of a linear phase translates the support, the two supports are the same set of physical states written in two charts.
 
 What that buys the fluid reading is one sentence. The velocity is $\vec\pi/m$, so it is the kinetic label over the mass; a mode's velocity is therefore read from the kinetic support and not from the canonical one. The chart in which the support is free is the chart in which the fluid is not, and the chart in which the fluid's velocity is the label is the chart in which the support is translated. The free companion's maxim that the canonical flow is irrotational and the kinetic flow is the field's is the same statement seen from the two charts.
 
-What is gauge invariant is the curvature, and it is the only thing that is. The mode count, the support, the envelope, the label: all change with the chart. The curvature does not. **So the momentum-space reading of this fluid has exactly one invariant, and it is the vorticity.** That is the article's summary sentence in one line.
+What is invariant is the curvature, and it is the only thing that is. The mode count, the support, the envelope, the label: all change with the chart. The curvature does not. **So the momentum-space reading of this fluid has exactly one invariant, and it is the vorticity.** That is the article's summary sentence in one line.
 
 ## Limits
 
@@ -127,7 +127,7 @@ A constant connection is a multiplier, carries no curvature, mixes no modes and 
 
 A connection with curvature is not a multiplier. Its transform is a derivative of a delta for a linear profile, and the coupling then falls as the inverse of the separation, which is the momentum-space face of a constant field strength.
 
-**So the mode basis is the mode basis of the flat connections, and the vorticity is exactly what it cannot carry.** The fluid's rotation is invisible to the Fourier decomposition by construction, and the one gauge-invariant object of the momentum-space reading is the curvature.
+**So the mode basis is the mode basis of the flat connections, and the vorticity is exactly what it cannot carry.** The fluid's rotation is invisible to the Fourier decomposition by construction, and the one invariant object of the momentum-space reading is the curvature.
 
 A mode carries the flux quantum and not the winding quantum: its circulation is $\varkappa\digamma_{\mathrm{flx}}$ and not $h n+\varkappa\digamma_{\mathrm{flx}}$, because a mode has no node. The winding quantum is inter-mode and the flux quantum is not.
 

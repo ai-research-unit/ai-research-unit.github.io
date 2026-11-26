@@ -59,7 +59,7 @@ The constraint. $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde
 
 ## The Ordering
 
-The criterion. $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$ the *mechanical* momentum, because the canonical one is not gauge invariant.
+The criterion. $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$ the *mechanical* momentum, because the canonical one is not invariant.
 
 The table, and it is the Dirac table.
 

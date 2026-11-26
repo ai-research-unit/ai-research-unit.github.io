@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The Hopf fibration of the companion article *The Hopf Fibration and the Biquaternion Gauge Bundle* supplied the geometric home of the gauge field and two integers: the winding of a map from the three-sphere, which is the instanton number, and the Chern number of a circle bundle over the two-sphere, which is the magnetic charge. This article supplies the tool that turns those integers into a *count*. The Atiyah–Singer index theorem states that the difference between the number of positive-chirality and negative-chirality zero modes of a Dirac operator is a topological integral, and in the gauge-theoretic setting that integral is the same density whose integral gave the instanton charge in *Instantons and Solitons in Biquaternionic Form*. The charge that classifies the field and the number of fermion zero modes that the field supports are therefore the same number up to the Dynkin index of the representation: the index is $2T(R)$ times the charge, and for the defining representation of $\mathrm{SU}(2)$, where $2T=1$, the two coincide.
+The Hopf fibration of the companion article *The Hopf Fibration and the Biquaternion Gauge Bundle* supplied the geometric home of the connection and two integers: the winding of a map from the three-sphere, which is the instanton number, and the Chern number of a circle bundle over the two-sphere, which is the magnetic charge. This article supplies the tool that turns those integers into a *count*. The Atiyah–Singer index theorem states that the difference between the number of positive-chirality and negative-chirality zero modes of a Dirac operator is a topological integral, and in the gauge-theoretic setting that integral is the same density whose integral gave the instanton charge in *Instantons and Solitons in Biquaternionic Form*. The charge that classifies the field and the number of fermion zero modes that the field supports are therefore the same number up to the Dynkin index of the representation: the index is $2T(R)$ times the charge, and for the defining representation of $\mathrm{SU}(2)$, where $2T=1$, the two coincide.
 
 The framework enters through three points, two of which are its own and one of which is not.
 
 - **The operator is the framework's.** The Dirac operator in biquaternionic form is built from the biquaternionic gradient of *Operator and Calculus Conventions*, §*The Gradient*, and its coupling to the connection, and its composition with its conjugate returns the d'Alembertian of the same section. Its carrier is the algebra itself, and *The Dirac Equation in Biquaternionic Form* fixes the equation. The index is a property of that operator.
 - **The counting is by the topological density, which the framework already has.** The index density is a total derivative whose integral is the instanton number, and the abelian form of the density is the framework's invariant $I_2=\vec E\cdot\vec B$. This was established in *Instantons and Solitons in Biquaternionic Form* and is not repeated here.
-- **The trace is the matrix trace, and the framework's biquaternion norm does not supply it.** The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the gauge factor. The framework's quadratic invariant, the biquaternion norm of *Algebra and Element Conventions*, is a bilinear form of a *single* algebra element and has no second slot in which to trace two gauge-algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.
+- **The trace is the matrix trace, and the framework's biquaternion norm does not supply it.** The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the group factor. The framework's quadratic invariant, the biquaternion norm of *Algebra and Element Conventions*, is a bilinear form of a *single* algebra element and has no second slot in which to trace two algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.
 
 The article states the theorem as the standard result it is, derives the specialisations that the framework uses, and keeps the framework's own content apart from the standard content.
 
@@ -45,14 +45,14 @@ $$
 
 Each term is a left multiplication by one frame unit. The symbol is the same sum with the derivative replaced by the covector component, so it is an element of the algebra and not an array.
 
-**The operator.** The twisted Dirac operator in the representation $R$ is the gauge-covariant gradient
+**The operator.** The twisted Dirac operator in the representation $R$ is the covariant gradient
 
 $$
 \tilde D_R=\sum_{\imath}e_{\imath} D_{\imath},\qquad
 D_{\imath}\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_{\imath}}+i\kappa\,\mathcal A_{\imath}\tilde{Ξ},
 $$
 
-with the sum over $\mu\in\{t,x,y,z\}$ and the connection $\mathcal A_{\imath}$ valued in the gauge algebra, multiplying the field from the left. The components are those of the gauge-covariant derivative of *Algebra and Element Conventions*, and
+with the sum over $\mu\in\{t,x,y,z\}$ and the connection $\mathcal A_{\imath}$ valued in the algebra, multiplying the field from the left. The components are those of the covariant derivative of *Algebra and Element Conventions*, and
 
 $$
 [D_{\imath},D_{\jmath}]\tilde{Ξ}=i\kappa\,F_{\imath\jmath}\tilde{Ξ},\qquad
@@ -67,7 +67,7 @@ $$
 
 because $e_t$ commutes with the three spatial units, so the mixed time–space terms add; the three spatial units anticommute, so their mixed terms vanish; and each spatial square is $-e_t$, which gives the negative sum. Ellipticity needs the invertibility of the symbol and not of its square, so the vector term changes nothing.
 
-The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Box_\Phi$, and on the material sector that reads $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_{\imath},D_{\jmath}]$, and for the pure-gauge connection $\mathcal A_{\imath}=(i\kappa)^{-1}u^{-1}\partial u/\partial R_{\imath}$ the covariant derivative is a conjugation of the free one, $D_{\imath}\tilde{Ξ}=u^{-1}\partial(u\tilde{Ξ})/\partial R_{\imath}$.
+The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Box_\Phi$, and on the material sector that reads $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_{\imath},D_{\jmath}]$, and for the pure-connection $\mathcal A_{\imath}=(i\kappa)^{-1}u^{-1}\partial u/\partial R_{\imath}$ the covariant derivative is a conjugation of the free one, $D_{\imath}\tilde{Ξ}=u^{-1}\partial(u\tilde{Ξ})/\partial R_{\imath}$.
 
 **The first order, and the mass.** The free equation is first order and carries one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$. The massive equation is the chiral pair
 
@@ -192,7 +192,7 @@ so the abelian index density is the framework's own invariant $I_2$ up to a cons
 
 ## A Worked Case: the Abelian Index and the Charge-$n$ Zero Modes
 
-The index formula is worth exercising in the framework's abelian sector, where every ingredient is the algebra's. Take the two-sphere with a $\mathrm{U}(1)$ gauge field whose first Chern number is $n$; the associated line bundle has $c_1=n$, and the Hopf bundle of *The Hopf Fibration and the Biquaternion Gauge Bundle* is the case $n=1$. The twisted Dirac index is
+The index formula is worth exercising in the framework's abelian sector, where every ingredient is the algebra's. Take the two-sphere with a $\mathrm{U}(1)$ connection whose first Chern number is $n$; the associated line bundle has $c_1=n$, and the Hopf bundle of *The Hopf Fibration and the Biquaternion Gauge Bundle* is the case $n=1$. The twisted Dirac index is
 
 $$
 \mathrm{ind}\,\tilde D_n=\int_{S^2}A_{\mathrm{aro}}(TS^2)\wedge\mathrm{ch}(L)=\int_{S^2}c_1(L)=n ,
@@ -234,9 +234,9 @@ Two consequences follow and are used in the later articles. First, the adjoint z
 
 ## The Biquaternion Reading and the Rank-Two Limitation
 
-The framework's contribution to the index theorem is not the theorem but the identification of its ingredients. The operator is the gauge-covariant gradient $\tilde D_R$ above, whose composition with its conjugate has scalar part $\Box_\Phi$; the carrier is the algebra $\mathbb{B}$ read as a module over itself, and the two chiral halves are its two parts $\mathbb{B}_L$ and $\mathbb{B}_R$, which is the reading of *The Dirac Equation in Biquaternionic Form* on the regular module. The adjoint representation is the three-dimensional real subspace $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ that the algebra carries as its own commutator algebra; and the group theory that produces the Dynkin indices is read directly from the quaternion commutators $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$. The zero-mode counts $k$ and $4k$ are therefore a statement about the algebra's modules: the defining module gives one mode per unit charge, and the adjoint, being the algebra acting on itself, gives four.
+The framework's contribution to the index theorem is not the theorem but the identification of its ingredients. The operator is the covariant gradient $\tilde D_R$ above, whose composition with its conjugate has scalar part $\Box_\Phi$; the carrier is the algebra $\mathbb{B}$ read as a module over itself, and the two chiral halves are its two parts $\mathbb{B}_L$ and $\mathbb{B}_R$, which is the reading of *The Dirac Equation in Biquaternionic Form* on the regular module. The adjoint representation is the three-dimensional real subspace $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ that the algebra carries as its own commutator algebra; and the group theory that produces the Dynkin indices is read directly from the quaternion commutators $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$. The zero-mode counts $k$ and $4k$ are therefore a statement about the algebra's modules: the defining module gives one mode per unit charge, and the adjoint, being the algebra acting on itself, gives four.
 
-What the framework does not supply is the *invariant* expression of the non-abelian index density. The density $\mathrm{Tr}(F\wedge F)$ requires the matrix trace over the gauge factor and the wedge of two algebra-valued two-forms, and the framework's biquaternion norm cannot produce it. The biquaternion norm pairs a single algebra element with its conjugate through the quaternion product and returns one scalar; it has one algebra slot. The index density needs two. This is the same rank-two limitation that the companion article found for the topological density and that the energy–momentum-tensor article found for the stress tensor: the framework's quadratic invariant is rank-two and single-slot, while the non-abelian index density is traced over a second algebra factor. The consequence is precise: the framework can write the index density in components with the matrix trace, and it can identify its integral as the topological charge, but the density is not an object of the biquaternion-norm invariant calculus. The zero-mode count is expressible; the invariant whose integral computes it, in the non-abelian case, is not one of the framework's invariants.
+What the framework does not supply is the *invariant* expression of the non-abelian index density. The density $\mathrm{Tr}(F\wedge F)$ requires the matrix trace over the group factor and the wedge of two algebra-valued two-forms, and the framework's biquaternion norm cannot produce it. The biquaternion norm pairs a single algebra element with its conjugate through the quaternion product and returns one scalar; it has one algebra slot. The index density needs two. This is the same rank-two limitation that the companion article found for the topological density and that the energy–momentum-tensor article found for the stress tensor: the framework's quadratic invariant is rank-two and single-slot, while the non-abelian index density is traced over a second algebra factor. The consequence is precise: the framework can write the index density in components with the matrix trace, and it can identify its integral as the topological charge, but the density is not an object of the biquaternion-norm invariant calculus. The zero-mode count is expressible; the invariant whose integral computes it, in the non-abelian case, is not one of the framework's invariants.
 
 A second place where the count is imported is the fermion itself. The index theorem counts zero modes of a Dirac operator, and the operator presupposes a field valued in the algebra, the multiplication that acts on it and the chirality label; those are supplied by *The Dirac Equation in Biquaternionic Form* and *Chiral Fermions in the Biquaternion Framework*, and the physical identification of the counted modes with fermionic states is standard quantum field theory. The relevant anomaly statement — that the divergence of the axial current is proportional to the same density — belongs to the spin-half programme of the corpus and is not derived here; the index theorem is its Euclidean, elliptic counterpart, and the two are related by the standard argument.
 
@@ -254,12 +254,12 @@ The index density is a total derivative whose integral equals the instanton char
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
-| $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |
+| $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact algebra inside $\mathbb{B}_{\Phi}$ |
 | $T_a=\tfrac12 \vec e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$ | Normalised generators |
 | $\Box_\Phi=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian of the $\mathbb{B}$ frame; the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ |
 | $\Delta_\Phi=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$ | Laplacian in the three vector coordinates |
 | $\tilde\nabla_\Phi=\sum_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$ | Biquaternionic gradient, acting from the left; $(\tilde\nabla_\Phi)^{\natural}=\sum_{\imath}\varepsilon_{\imath} e_{\imath}\,\partial/\partial R_{\imath}$ |
-| $\tilde D_R=\sum_{\imath} e_{\imath} D_{\imath}$ | Twisted Dirac operator in the representation $R$; the gauge-covariant gradient |
+| $\tilde D_R=\sum_{\imath} e_{\imath} D_{\imath}$ | Twisted Dirac operator in the representation $R$; the covariant gradient |
 | $D_{\imath}=\partial/\partial R_{\imath}+i\kappa\,\mathcal A_{\imath}$ | Covariant derivative; $[D_{\imath},D_{\jmath}]=i\kappa F_{\imath\jmath}$ |
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two values of the chirality subscript; $R$ is the plus value |
 | $\xi$ | Chirality of the frame: right multiplication by $-i\vec e_z$, whose two eigenspaces are $\mathbb B_L$ and $\mathbb B_R$ |
@@ -270,7 +270,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $A_{\mathrm{aro}}(TM)\wedge\mathrm{ch}(E_R)$ | Index density; $A_{\mathrm{aro}}=1$ on the flat slice |
 | $T(R)$ | Dynkin index; $T(\text{defining})=\tfrac12$, $T(\text{adjoint})=2$ |
 | $R$ | Representation label, defining (dim $2$) or adjoint (dim $3$) |
-| $\kappa$ | Coupling constant of the gauge field |
+| $\kappa$ | Coupling constant of the connection |
 | $\mathcal F=d\mathcal A+i\kappa\,\mathcal A\wedge\mathcal A$ | Field-strength two-form |
 | $F_{\imath\jmath}=\partial/\partial R_{\imath}\,\mathcal A_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal A_{\imath}+i\kappa[\mathcal A_{\imath},\mathcal A_{\jmath}]$ | Its components; $[D_{\imath},D_{\jmath}]=i\kappa F_{\imath\jmath}$ |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological (instanton) charge, $Ϙ\in\mathbb Z$; the trace in the defining representation |

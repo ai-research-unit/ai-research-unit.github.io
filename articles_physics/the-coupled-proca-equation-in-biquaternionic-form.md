@@ -48,7 +48,7 @@ $$
 
 The right side is real and central, so it is neither anti-Hermitian nor Hermitian and scalar-free; it is outside $\mathbb{B}_\Phi$. A hundred random products of material-sector elements leave the sector in every case, and the reason is structural: $\mathbb{B}_\Phi$ is a real subspace of dimension four in an algebra of real dimension eight, and it is closed under multiplication only by central *real* scalars.
 
-The obstruction is the coupling. The gauge principle's minimal substitution is $\tilde\nabla_\Phi\mapsto\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ acting on the field from the left. The added element lies in $\mathbb{B}_\Phi$, so the coupled derivative of a material field is a sum of a material element and a product of two material elements. The first is in the sector, the second is not, and the equation cannot be posed inside the sector.
+The obstruction is the coupling. The minimal coupling's minimal substitution is $\tilde\nabla_\Phi\mapsto\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ acting on the field from the left. The added element lies in $\mathbb{B}_\Phi$, so the coupled derivative of a material field is a sum of a material element and a product of two material elements. The first is in the sector, the second is not, and the equation cannot be posed inside the sector.
 
 Two ways out, and one of them is the physics. The first is to project after every multiplication, which is not a covariant operation and produces an equation that is not the minimal coupling of anything. The second is to enlarge the carrier to $\mathbb{B}$, where every product closes, and to accept that the field is now complex. The second is the standard charged Proca field: a complex four-vector, eight real components, of which the free field is the real slice.
 
@@ -66,7 +66,7 @@ $$
 \tilde A_\Phi=A_te_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath},
 $$
 
-acting from the left. The sign pair is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$.
+acting from the left. The sign pair is the minimal coupling's: $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$.
 
 The connection is central per component in the abelian case. With $A_{\imath}$ scalar coefficients that commute with the units and with one another, the covariant derivative separates:
 
@@ -100,7 +100,7 @@ For a purely electric potential $\tilde A_\Phi^{\natural}=+\tilde A_\Phi$; for a
 
 ## Gauge Covariance
 
-The gauge transformation.
+The local transformation.
 
 $$
 \tilde A_2=\digamma_{\mathrm{gau}}\tilde A,
@@ -258,7 +258,7 @@ $$
 j_{\imath}=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A\bigr)
 $$
 
-in the article's pairing, one real number per component, and it is the object the inhomogeneous Maxwell equation needs. Two statements about it are exact and are the article's reason for stating it at all: it is invariant under the gauge group, and it is conserved on solutions by the equation and its conjugate.
+in the article's pairing, one real number per component, and it is the object the inhomogeneous Maxwell equation needs. Two statements about it are exact and are the article's reason for stating it at all: it is invariant under the symmetry group, and it is conserved on solutions by the equation and its conjugate.
 
 Why the free article could not have it. A real field has no phase to rotate, so the free current is zero identically rather than merely non-conserved. The free article's remark that the electromagnetic current "is the source that the inhomogeneous equation has and the free equation does not" is a statement about the carrier, and the coupled article supplies the carrier.
 
@@ -278,7 +278,7 @@ Adds.
 
 - No new solution and no new prediction: the equation is the standard minimally coupled Proca equation.
 - No derivation of the charge's value or sign: $ϙ$ is a parameter.
-- No claim that the coupling is forced by the algebra: it is forced by the *localization* of the central phase, which is the gauge principle's premise and not the algebra's theorem.
+- No claim that the coupling is forced by the algebra: it is forced by the *localization* of the central phase, which is the minimal coupling's premise and not the algebra's theorem.
 - No claim that the extra term in the field strength is non-abelian in the group-theoretic sense. It is bilinear in the two potentials and it is what the algebra produces; whether it is best read as a non-abelian structure or as the abelian theory's covariant curl is a question of interpretation, and the article records the identity and not the interpretation.
 
 ## Open Questions

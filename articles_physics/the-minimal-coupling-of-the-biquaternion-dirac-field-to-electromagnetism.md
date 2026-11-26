@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Minimal coupling** is the prescription by which a charged field is coupled to the electromagnetic field: the ordinary derivative is replaced by the **covariant derivative**. In the biquaternion framework both objects are already fixed by the gauge principle. The connection is the potential biquaternion $\tilde{A}_{\Phi}$ of *Maxwell's Equations in the Biquaternionic Formulation*, its gauge transformation is
+**Minimal coupling** is the prescription by which a charged field is coupled to the electromagnetic field: the ordinary derivative is replaced by the **covariant derivative**. In the biquaternion framework both objects are already fixed by the minimal coupling. The connection is the potential biquaternion $\tilde{A}_{\Phi}$ of *Maxwell's Equations in the Biquaternionic Formulation*, its local transformation is
 
 $$
 \tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
@@ -14,18 +14,18 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi} .
 $$
 
-The gauge principle article derived $\tilde\nabla_{\mathrm{gco},\Phi}$ from the localization of the algebra's central phase and verified that the covariant derivative of a field transforms homogeneously. It applied the result to a general element, not specifically to the Dirac field. *The Dirac Equation in Biquaternionic Form* names the minimal coupling of the Dirac field as the subject of the companion treatment (its open question 7), and the coupled equation is not fixed by the free equation alone. This article supplies that statement, and reports what the recomputation gives.
+The minimal coupling article derived $\tilde\nabla_{\mathrm{gco},\Phi}$ from the localization of the algebra's central phase and verified that the covariant derivative of a field transforms homogeneously. It applied the result to a general element, not specifically to the Dirac field. *The Dirac Equation in Biquaternionic Form* names the minimal coupling of the Dirac field as the subject of the companion treatment (its open question 7), and the coupled equation is not fixed by the free equation alone. This article supplies that statement, and reports what the recomputation gives.
 
 Three results are established here.
 
 1. **The coupled equation.** Replacing the gradient in the free biquaternion Dirac equation by the covariant derivative gives the pair $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$. The second operator is the $\natural$-image of the first, so it carries the quaternion-conjugate gradient and the conjugate connection.
-2. **Exact gauge covariance, massive as well as massless.** The pair holds in every gauge when it holds in one, because the parent's mass term is linear in the field and the local phase is one central scalar multiplying the field from the left, so the mass term acquires the same factor as the derivative term. The mass breaks the *relative* phase of the two parts, not the common one.
-3. **A negative result on the current.** The bilinear $i\tilde{Ξ}\tilde{Ξ}^*$ is a material-sector object and is gauge invariant, but it is **not conserved** on solutions of the massless equation: the exact solution written in the section on the current gives $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$. The electromagnetic current of the coupled system is therefore not a product of the field with its conjugate inside the algebra. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
+2. **Exact covariance, massive as well as massless.** The pair holds in every gauge when it holds in one, because the parent's mass term is linear in the field and the local phase is one central scalar multiplying the field from the left, so the mass term acquires the same factor as the derivative term. The mass breaks the *relative* phase of the two parts, not the common one.
+3. **A negative result on the current.** The bilinear $i\tilde{Ξ}\tilde{Ξ}^*$ is a material-sector object and is invariant, but it is **not conserved** on solutions of the massless equation: the exact solution written in the section on the current gives $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$. The electromagnetic current of the coupled system is therefore not a product of the field with its conjugate inside the algebra. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 The division between what is established and what is interpretation is stated at the outset and kept explicit.
 
-- **Established, and recomputed below.** The minimal-coupling prescription acting on the biquaternion Dirac field by left multiplication; the coupled equation and its component form; the exact gauge covariance of the coupled equation, in the massive case as well as the massless one; the gauge invariance and material-sector membership of $i\tilde{Ξ}\tilde{Ξ}^*$; the non-conservation of that bilinear, exhibited on an exact solution rather than asserted; the reason the prescription attaches to the pair and not to the two-sided form of the parent.
-- **Interpretation.** Interpreting the coupled equation as "the Dirac field in a background electromagnetic connection" is a geometric interpretation of an algebraic construction. The algebra supplies the transformation law and the covariance; the connection/curvature picture is a consistent interpretation, as in the gauge principle article.
+- **Established, and recomputed below.** The minimal-coupling prescription acting on the biquaternion Dirac field by left multiplication; the coupled equation and its component form; the exact covariance of the coupled equation, in the massive case as well as the massless one; the local invariance and material-sector membership of $i\tilde{Ξ}\tilde{Ξ}^*$; the non-conservation of that bilinear, exhibited on an exact solution rather than asserted; the reason the prescription attaches to the pair and not to the two-sided form of the parent.
+- **Interpretation.** Interpreting the coupled equation as "the Dirac field in a background electromagnetic connection" is a geometric interpretation of an algebraic construction. The algebra supplies the transformation law and the covariance; the connection/curvature picture is a consistent interpretation, as in the minimal coupling article.
 - **Gaps, left visible.** No product of the field with its conjugate that the algebra offers is conserved, and which object the conserved interaction current is remains open. Whether the physical field is the one the connection multiplies from the left or its $\natural$-image is a choice the parent left open. The relative phase broken by the mass, and whether it can be gauged, is not treated here. These are stated as gaps in the sections where they arise and collected in the open questions.
 
 The article is organized as follows. The next section recalls the Dirac field, its two components, and the phase symmetry that is to be localized. The section after that states the minimal-coupling prescription, and a subsection of it separates the two forms of the Dirac equation that the corpus carries on the algebra — the one-sided pair and the two-sided form with the conjugation in the mass term — and states why the prescription attaches to the first. The following section proves the covariance in the massless case and fixes the sign conventions. The next section treats the massive case, where the linear mass term preserves the covariance and the relative phase is what the mass breaks. A section examines the interaction current and the Maxwell source, reports the negative result on an explicit solution, and records one external identity of the same shape, due to Arbab, which is verified here and cited without being adopted as framework content. A section separates what the algebra supplies from what it only transcribes. The article then collects the open questions, and a closing section fixes the frame in which the basis operators are compared with the standard matrices, and that section is the only place in which those matrices appear.
@@ -68,7 +68,7 @@ $$
 
 is an antilinear involution whose fixed space is the material sector $\mathbb{B}_{\Phi}$. It is the algebra's real structure, and it is not the mass.
 
-**The phase symmetry to be localized.** The symmetry that minimal coupling localizes is the algebra's central $\mathrm{U}(1)$, established in the gauge principle article. A **constant** central phase
+**The phase symmetry to be localized.** The symmetry that minimal coupling localizes is the algebra's central $\mathrm{U}(1)$, established in the minimal coupling article. A **constant** central phase
 
 $$
 \tilde{Ξ} \;\longmapsto\; \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}, \qquad \theta_{\mathrm{cen}} \ \text{constant},
@@ -95,7 +95,7 @@ because each member acquires the product $\varsigma\varsigma^{-1} = 1$. The mass
 
 A mass term that *paired the field with its conjugate* would be a different object: $\flat$ is antilinear, $(\digamma_{\mathrm{gau}}\tilde{Ξ})^\flat = \digamma_{\mathrm{gau}}^{*}\tilde{Ξ}^{\flat}$ for a central phase, so such a term would acquire the factor $\exp(2i\theta_{\mathrm{gau}})$ under a local phase and would be form-invariant only for $\digamma_{\mathrm{gau}} = \pm 1$. That obstruction belongs to the real structure and is treated in the companion articles on the neutrino and on the two kinds of mass; it is not a property of the parent's mass term, which pairs $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$.
 
-The **charge** $ϙ$ is the coupling constant of the field, introduced by the gauge principle. It is a parameter: the algebra does not fix its value, its sign, or its quantization. For the electron $ϙ = -e$; the value and the sign are inserted, as *The Electron in Biquaternionic Form* records.
+The **charge** $ϙ$ is the coupling constant of the field, introduced by the minimal coupling. It is a parameter: the algebra does not fix its value, its sign, or its quantization. For the electron $ϙ = -e$; the value and the sign are inserted, as *The Electron in Biquaternionic Form* records.
 
 ## The Minimal Coupling Prescription
 
@@ -133,7 +133,7 @@ $$
 
 and three cases follow that are easily read as one. For a **purely electric** potential, $\tilde{A}_{\Phi}^{\natural}=+\tilde{A}_{\Phi}$, and the two members of the pair carry opposite entries. For a **purely magnetic** one, $\tilde{A}_{\Phi}^{\natural}=-\tilde{A}_{\Phi}$, and they carry the same entry. For a general potential it is neither, and the second member is the conjugate of the first, not its negative.
 
-**Why that asymmetry is not a decomposition.** It is tempting to read the electric part and the magnetic part as two couplings that happen to share the coefficient, since each is self-conjugate up to a sign. The gauge transformation rules this out: the entry absorbs $-\tilde\nabla_\Phi\Gamma$, and $\tilde\nabla_\Phi\Gamma$ has a time part and a space part, so **a purely electric potential does not stay purely electric under a general gauge function**. Purity is a property of a gauge and not of the entry, and the equal-or-opposite alternative above is correspondingly gauge-dependent. Only the whole covector is covariant, which is why the second member of the pair is not the first with $ϙ\to-ϙ$.
+**Why that asymmetry is not a decomposition.** It is tempting to read the electric part and the magnetic part as two couplings that happen to share the coefficient, since each is self-conjugate up to a sign. The local transformation rules this out: the entry absorbs $-\tilde\nabla_\Phi\Gamma$, and $\tilde\nabla_\Phi\Gamma$ has a time part and a space part, so **a purely electric potential does not stay purely electric under a general phase function**. Purity is a property of a gauge and not of the entry, and the equal-or-opposite alternative above is correspondingly representative-dependent. Only the whole covector is covariant, which is why the second member of the pair is not the first with $ϙ\to-ϙ$.
 
 **Component form.** Write the potential as $\tilde{A}_{\Phi} = \sum_{\imath} A_{\imath} e_{\imath}$ with complex scalar coefficients $A_{\imath}$ — the abelian case, in which the connection coefficients are central scalars and commute with one another and with the units. Since each $A_{\imath}$ is central, the covariant derivative separates into components:
 
@@ -143,9 +143,9 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath},
 $$
 
-with $\partial/\partial R_t = -i\,\partial/\partial r'_t$ and $\partial/\partial R_{\imath} = \partial/\partial x_{\imath}$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. With the action in units of $\frac{h}{2\pi}$ this gives $\tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} + iϙA_{\imath}$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.
+with $\partial/\partial R_t = -i\,\partial/\partial r'_t$ and $\partial/\partial R_{\imath} = \partial/\partial x_{\imath}$. This is the identical component form derived in the minimal coupling article, now read as an operator on the Dirac field. With the action in units of $\frac{h}{2\pi}$ this gives $\tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} + iϙA_{\imath}$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.
 
-**The connection is a material-sector object.** The gauge principle article shows that a **real** gauge function $\Gamma$ keeps $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ in $\mathbb{B}_{\Phi}$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ in $\tilde\nabla_{\mathrm{gco},\Phi}$ is Hermitian:
+**The connection is a material-sector object.** The minimal coupling article shows that a **real** phase function $\Gamma$ keeps $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ in $\mathbb{B}_{\Phi}$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ in $\tilde\nabla_{\mathrm{gco},\Phi}$ is Hermitian:
 
 $$
 \left(i\tilde{A}_{\Phi}\right)^{*} = -i\,\tilde{A}_{\Phi}^{*} = i\tilde{A}_{\Phi},
@@ -153,18 +153,18 @@ $$
 
 since $\tilde{A}_{\Phi}^{*} = -\tilde{A}_{\Phi}$ on $\mathbb{B}_{\Phi}$. The factor $i$ is what converts the anti-Hermitian connection into a Hermitian coupling. This is inherited, not rederived.
 
-**Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ with the phase $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial R_{\imath} \to \partial/\partial R_{\imath} -\frac{2\pi iϙA_{\imath}}{h}$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}_{\Phi}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
+**Sign convention.** The minimal coupling article fixes the pair of signs $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ with the phase $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial R_{\imath} \to \partial/\partial R_{\imath} -\frac{2\pi iϙA_{\imath}}{h}$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}_{\Phi}$); this article inherits the minimal coupling's sign and does not silently flip it. The covariance checks below use the inherited pair.
 
-Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
+Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
 **Left action, and the mirror read through $\natural$.** Every coupling used in this article acts on the left. The mirror construction — derivative and connection both inserted on the right — is not a second prescription: it is the same one applied to the conjugate field. The renaming theorem of *Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*, gives $(\tilde{Ξ}\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} = (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}^{\natural}$; the right-action equation on $\tilde{Ξ}$ is the left-action equation on $\tilde{Ξ}^{\natural}$, with the operator $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ that the second member of the pair already carries. Nothing needs a right arrow: the side is given by position, and $\natural$ is what changes it.
 
-Both constructions are gauge covariant, and they must be, being the same construction seen through $\natural$. What is **not** covariant is the mixed combination — the left gradient with the connection inserted on the right — because there the two $\tilde\nabla_\Phi\Gamma$ terms do not cancel: the chain rule brings $\tilde\nabla_\Phi\Gamma$ in from the left and the gauge shift removes it from the right, and the two differ by a commutator. Applying the mixed operator to $\digamma_{\mathrm{gau}}\tilde{Ξ}$ and subtracting $\digamma_{\mathrm{gau}}$ times the mixed operator applied to $\tilde{Ξ}$ leaves
+Both constructions are covariant, and they must be, being the same construction seen through $\natural$. What is **not** covariant is the mixed combination — the left gradient with the connection inserted on the right — because there the two $\tilde\nabla_\Phi\Gamma$ terms do not cancel: the chain rule brings $\tilde\nabla_\Phi\Gamma$ in from the left and the gauge shift removes it from the right, and the two differ by a commutator. Applying the mixed operator to $\digamma_{\mathrm{gau}}\tilde{Ξ}$ and subtracting $\digamma_{\mathrm{gau}}$ times the mixed operator applied to $\tilde{Ξ}$ leaves
 
 $$\frac{2\pi i\,ϙ}{h}\,\digamma_{\mathrm{gau}}\left[\tilde\nabla_\Phi\Gamma,\ \tilde{Ξ}\right],
 $$
 
-which vanishes for every field only when $\tilde\nabla_\Phi\Gamma$ is central, that is, only when the gauge function is constant. The two consistent constructions correspond to the two sides on which the algebra can act, and the choice between them is a choice of matter representation: from which side the connection multiplies the field. The gauge principle article records this as an open question, and this article does not resolve it; it states the left-action form, which is the one the gauge principle produces, and records the right-action mirror as the alternative.
+which vanishes for every field only when $\tilde\nabla_\Phi\Gamma$ is central, that is, only when the phase function is constant. The two consistent constructions correspond to the two sides on which the algebra can act, and the choice between them is a choice of matter representation: from which side the connection multiplies the field. The minimal coupling article records this as an open question, and this article does not resolve it; it states the left-action form, which is the one the minimal coupling produces, and records the right-action mirror as the alternative.
 
 ### Which Equation the Prescription Attaches To
 
@@ -200,13 +200,13 @@ The two forms carry the same operator content and are not the same statement: th
 
 ## Gauge Covariance of the Coupled Equation
 
-The gauge transformation is
+The local transformation is
 
 $$
 \tilde{Ξ}_{2} = \digamma_{\mathrm{gau}}\,\tilde{Ξ}, \qquad \digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}}\tilde{Q}), \qquad \Gamma \ \text{real},
 $$
 
-together with $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The covariance is the same computation as in the gauge principle article, repeated here because it is the justification of the prescription. The pair needs one Leibniz rule per member and one chain rule per member. The chain rules are
+together with $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The covariance is the same computation as in the minimal coupling article, repeated here because it is the justification of the prescription. The pair needs one Leibniz rule per member and one chain rule per member. The chain rules are
 
 $$
 \tilde\nabla_\Phi\digamma_{\mathrm{gau}} =\frac{2\pi i\,ϙ}{h}\left(\tilde\nabla_\Phi\Gamma\right)\digamma_{\mathrm{gau}} ,
@@ -242,7 +242,7 @@ $$
 \boxed{\;\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde{Ξ}_{R,2} = \digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde{Ξ}_{L,2} = \digamma_{\mathrm{gau}}\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L}\;}
 $$
 
-Consequently the **massless minimally coupled biquaternion Dirac equation is exactly gauge covariant**:
+Consequently the **massless minimally coupled biquaternion Dirac equation is exactly covariant**:
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 0 \quad \Longleftrightarrow \quad \tilde\nabla_{\mathrm{gco},\Phi,2}\tilde{Ξ}_{R,2} = 0, \qquad
@@ -303,7 +303,7 @@ The two sides transform identically, because the central phase is a scalar and t
 
 This is the biquaternion form of the standard fact that a mass term linear in the field is compatible with a gauged continuous $\mathrm{U}(1)$. The two parts of the field acquire the same phase; what the mass forbids is the opposite assignment of the two, as the section on the field records.
 
-**What it is not.** The article does not declare the standard minimal coupling deficient, and with the linear mass term it does not need to: the massive sector is gauge covariant on the same footing as the massless one. What the biquaternion form adds is the location of the coupling in the algebra — the covariant derivative acting by left multiplication, with the central phase passing through the linear mass and the relative phase broken instead. The residual question of the left-versus-right matter representation is the parent's, and is collected in the open questions below.
+**What it is not.** The article does not declare the standard minimal coupling deficient, and with the linear mass term it does not need to: the massive sector is covariant on the same footing as the massless one. What the biquaternion form adds is the location of the coupling in the algebra — the covariant derivative acting by left multiplication, with the central phase passing through the linear mass and the relative phase broken instead. The residual question of the left-versus-right matter representation is the parent's, and is collected in the open questions below.
 
 **The interpretation that is taken.** The parent's linear mass term is read here as the expression of an ordinary Dirac mass: a term that pairs the two parts of one element, and therefore carries the charge. The alternative reading — a mass term built on the real structure $\flat$, with no continuously charged massive field — remains available, but only for a different equation, one genuinely built on $\flat$; it is a statement about the algebra's real structure rather than about the parent, and it is where the companion articles on the neutrino and on the two kinds of mass continue the discussion.
 
@@ -317,7 +317,7 @@ $$
 \tilde J_{\Phi,\mathrm{sp}} = i\,\tilde{Ξ}\,\tilde{Ξ}^* .
 $$
 
-Three of its properties are immediate and exact. It is **gauge invariant**, because for a unimodular central phase
+Three of its properties are immediate and exact. It is **invariant**, because for a unimodular central phase
 
 $$
 \left(\digamma_{\mathrm{gau}}\tilde{Ξ}\right)\left(\digamma_{\mathrm{gau}}\tilde{Ξ}\right)^{*} = \digamma_{\mathrm{gau}}\,\tilde{Ξ}\tilde{Ξ}^*\,\digamma_{\mathrm{gau}}^{*} = |\digamma_{\mathrm{gau}}|^2\,\tilde{Ξ}\tilde{Ξ}^* = \tilde{Ξ}\tilde{Ξ}^* ,
@@ -360,7 +360,7 @@ $$
 
 the scalar part of $\tilde J_{\Phi,\mathrm{sp}}$ being $i\,e^{-2Q_t}$, of the required $ic\rho$ form. The divergence is non-zero everywhere and equals $-2$ at the origin. The naive biquaternion product is therefore **not** the conserved electromagnetic current of the Dirac field. The sign of the bilinear does not help: $\tilde J_{\Phi,\mathrm{sp}}^{*} = -\tilde J_{\Phi,\mathrm{sp}}$, so passing to the conjugate flips the divergence to $+2\,e^{-2Q_t}$.
 
-**What the algebra does not supply.** The field, its conjugate and the two products of the algebra are the only ingredients the algebra offers for a bilinear of this kind, and the one product of this form that is gauge invariant and of the density sign fails the conservation test on an exact solution. The failure is therefore not an accident of the sign or of the normalization. Whether some other construction inside the algebra — a restriction to a subspace, a further factor of the field, a second field — gives a conserved object is not settled here; the question is open question 3. What can be said without a further construction is that the conserved current of the older literature is not a product of the field with its conjugate inside the algebra, and needs an ingredient outside it; that statement is made in the closing section, where the frame is written.
+**What the algebra does not supply.** The field, its conjugate and the two products of the algebra are the only ingredients the algebra offers for a bilinear of this kind, and the one product of this form that is invariant and of the density sign fails the conservation test on an exact solution. The failure is therefore not an accident of the sign or of the normalization. Whether some other construction inside the algebra — a restriction to a subspace, a further factor of the field, a second field — gives a conserved object is not settled here; the question is open question 3. What can be said without a further construction is that the conserved current of the older literature is not a product of the field with its conjugate inside the algebra, and needs an ingredient outside it; that statement is made in the closing section, where the frame is written.
 
 ## An External Identity for the Source: The Mixed Invariant
 
@@ -400,34 +400,34 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 
 **What the algebra supplies.**
 
-- *A canonical abelian coupling.* The gauge group is the $*$-unitary part of the centre, and the centre is the only place a central phase can live. The $\mathrm{U}(1)$ that minimal coupling gauges is attached to the algebra without a choice of representation, as the gauge principle article establishes.
+- *A canonical abelian coupling.* The symmetry group is the $*$-unitary part of the centre, and the centre is the only place a central phase can live. The $\mathrm{U}(1)$ that minimal coupling gauges is attached to the algebra without a choice of representation, as the minimal coupling article establishes.
 - *The covariant derivative as the localization of the phase.* The interaction term $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$ is not added by hand: it is the term the localized phase forces, and the connection it forces is exactly the potential biquaternion of the Maxwell article.
 - *Exact covariance of the coupled equation*, in the massive case as well as the massless one, with the component operators $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ and the phase law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ inherited unchanged.
 - *The second-order equation with its curvature term.* The operator identity $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 +\frac{2\pi i\,ϙ}{h}\tilde{F}$ turns the coupled pair into a covariant wave equation carrying $\frac{2\pi i\,ϙ}{h}\tilde{F}$ as a term, the curvature entering as an element and not as an extra structure.
-- *A material-sector connection.* For a real gauge function the connection stays in $\mathbb{B}_{\Phi}$, so the coupling respects the sector decomposition the framework is built on.
+- *A material-sector connection.* For a real phase function the connection stays in $\mathbb{B}_{\Phi}$, so the coupling respects the sector decomposition the framework is built on.
 - *One addition, and it is this one.* Read as an entry of the array rather than as a term in an equation, the coupling is a single element in the diagonal slot, $B_{RR}=\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ and $B_{LL}=\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}^{\natural}$, with the mass in the off-diagonal pair. Of all the elements that can be placed in those slots, this is the only one a measurement requires: the potential is tested by the two Aharonov–Bohm phases, by the Josephson frequency, by the Landau degeneracy and by the Coulomb spectrum, while every other candidate shape is algebra without a measurement. The count is made here rather than cited: the shapes that fail the test — a real scalar in the diagonal slot, an imaginary spatial bivector, an imaginary pseudoscalar and an axial vector — are exact algebra and unmeasured physics, and they are not additions to the gradient in the sense of this article.
 
 **What it only transcribes.**
 
-- *The minimal-coupling principle itself.* The derivation is the standard global-to-local argument carried into the biquaternion algebra. The algebra supplies a home for it and makes the component structure transparent; it does not supply a reason for the gauge field to exist.
+- *The minimal-coupling principle itself.* The derivation is the standard global-to-local argument carried into the biquaternion algebra. The algebra supplies a home for it and makes the component structure transparent; it does not supply a reason for the connection to exist.
 - *The value of the coupling.* The charge $ϙ$ is a parameter; the algebra does not fix it.
 - *The standard results of the Dirac theory.* The conserved current, the non-relativistic limit and the gyromagnetic factor are properties of the equation the framework contains, obtained with a linear mass term; the framework transcribes them, and the companion articles on the electron and on the solutions compute them.
 
 **The commutativity that makes this unambiguous — and the sector where it fails.** The whole prescription rests on a property used above without being named: for an internal gauge group the substitution of the covariant derivative gives the same equation whether it is applied to the action or to the equation of motion, so it does not matter which of the two is gauged. The reason is that the phase is a **central scalar**: it commutes with the gradient and with every element, so the localization and the variation cannot disagree. The property is not universal. When the transformation is not central — when it acts by an element of the algebra multiplying the field, as the Lorentz transformation of the vierbein formulation does — the two orders differ, because the gradient does not pass through a non-central factor, and the difference is the commutator of that factor with the gradient. J. Fredsted (arXiv:1906.12200v3, 2019) proves the mismatch for the gravitationally coupled fermion and constructs a world-index formalism in which it is removed, recorded in *Curved Spacetime and the Biquaternion Framework*. The consequence for this article is a boundary rather than a defect: the minimal-coupling prescription derived here is unambiguous **because** its gauge group is internal and its phase central, and it must not be transferred to the gravitational sector unchanged, where the same prescription is a different and inequivalent construction.
 
-**What is interpretation.** Reading the coupled equation as a Dirac field propagating in a background connection is a geometric interpretation. The algebraic content is the transformation law, the covariance of the coupled equation in both the massless and the massive case, and the explicit component form; the connection picture is a consistent interpretation of that content, as in the gauge principle article.
+**What is interpretation.** Reading the coupled equation as a Dirac field propagating in a background connection is a geometric interpretation. The algebraic content is the transformation law, the covariance of the coupled equation in both the massless and the massive case, and the explicit component form; the connection picture is a consistent interpretation of that content, as in the minimal coupling article.
 
 ## Open Questions
 
 1. **The relative phase of the two parts.** The mass keeps the common central phase and breaks the relative one. Can the relative phase be gauged, and does the framework's central-element structure supply anything analogous to the would-be Goldstone statement for the breaking? A mass term built on the antilinear real structure $\flat$ would be incompatible with a gauged common phase as well, and the companion on the neutrino takes that case up.
 
-2. **The matter representation.** The gauge principle produces a left-action covariant derivative; a right-action mirror is equally covariant, and the mixed insertion is not. Which side is the physical Dirac field multiplied from? The second member of the pair is the $\natural$-image of the first, so the algebra relates the two sides without choosing between them, and the choice is made where the field is placed, not by the equation. What fixes it inside the algebra?
+2. **The matter representation.** The minimal coupling produces a left-action covariant derivative; a right-action mirror is equally covariant, and the mixed insertion is not. Which side is the physical Dirac field multiplied from? The second member of the pair is the $\natural$-image of the first, so the algebra relates the two sides without choosing between them, and the choice is made where the field is placed, not by the equation. What fixes it inside the algebra?
 
-3. **The interaction current.** The gauge-invariant bilinear $i\tilde{Ξ}\tilde{Ξ}^*$ is in $\mathbb{B}_{\Phi}$ but is not conserved: the exact solution $\tilde{Ξ}_{R} = \tfrac12\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$, with $\xi = \exp(iQ_x-Q_t)$, gives $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$. Is there a construction on the algebra, on a restricted subspace or with a further factor of the field, that is conserved? Or is the current irreducibly an object of a larger structure, as the older literature's construction suggests? Not settled here.
+3. **The interaction current.** The invariant bilinear $i\tilde{Ξ}\tilde{Ξ}^*$ is in $\mathbb{B}_{\Phi}$ but is not conserved: the exact solution $\tilde{Ξ}_{R} = \tfrac12\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$, with $\xi = \exp(iQ_x-Q_t)$, gives $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$. Is there a construction on the algebra, on a restricted subspace or with a further factor of the field, that is conserved? Or is the current irreducibly an object of a larger structure, as the older literature's construction suggests? Not settled here.
 
 4. **The sourced system.** How does the Dirac current feed the biquaternionic Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$, and does the coupled system close on the algebra? The integrability condition $Z\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ must be recovered from the current. The external identity of the section on the mixed invariant supplies the shape of an answer — the source contraction is fixed by the two field strengths — but it is stated for the source's own field strengths, not for $\tilde{Ξ}$, so it does not by itself close the corpus's system.
 
-5. **The shared generator.** The internal phase $\exp(i\theta_{\mathrm{gau}})$ and the complex time coordinate $i r'_t$ both use the single element $i$ of $\mathbb{B}$. Is this identification content-bearing, or vacuous because the phase is central? (The gauge principle article's open question.)
+5. **The shared generator.** The internal phase $\exp(i\theta_{\mathrm{gau}})$ and the complex time coordinate $i r'_t$ both use the single element $i$ of $\mathbb{B}$. Is this identification content-bearing, or vacuous because the phase is central? (The minimal coupling article's open question.)
 
 6. **The non-abelian extension.** When the connection becomes $\mathbb{B}$-valued it is no longer central, so it no longer commutes with the field, and the left/right question becomes sharp: the order of the factors is then part of the statement. The companions on the covariant derivative, on non-abelian fields and on the Yang–Mills equation place the field, but the choice is made there rather than forced.
 
@@ -493,7 +493,7 @@ The contraction sums follow from the squares. No index is raised: the summed ind
 
 ## Summary
 
-The minimal coupling of the biquaternion Dirac field to electromagnetism is the replacement of the gradient by the covariant derivative of the gauge principle,
+The minimal coupling of the biquaternion Dirac field to electromagnetism is the replacement of the gradient by the covariant derivative of the minimal coupling,
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,\imath} = \frac{\partial}{\partial R_{\imath}} +\frac{2\pi i\,ϙ}{h}A_{\imath},
@@ -514,7 +514,7 @@ $$
 
 with the interaction term $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$ that the localized central phase forces. In the massless case the two members decouple, $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 0$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 0$.
 
-The **massless** and the **massive** coupled equations are both exactly gauge covariant: with $\tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ}$ and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$,
+The **massless** and the **massive** coupled equations are both exactly covariant: with $\tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ}$ and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$,
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,2}\tilde{Ξ}_{R,2} = \digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde{Ξ}_{L,2} = \digamma_{\mathrm{gau}}\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L},
@@ -541,7 +541,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part: the coefficient of $e_t$, and half the trace in the frame of the closing section |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian symmetry group |
 | $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$ | Biquaternionic gradient (Dirac operator) |
 | $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$ | Quaternion-conjugate gradient |
 | $\vec u$ | The declared unit of the frame, in the parent's two-sided form |
@@ -551,7 +551,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$, $\tilde{Ξ}^* = \overline{\tilde{Ξ}^{\natural}}$ | Anti-Hermitian conjugate of the field (the algebra's real structure; **not** the mass) |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | Free biquaternion Dirac equation (massive chiral pair) |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{B}_{\Phi}$) |
-| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Gauge transformation of the connection |
+| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Local transformation of the connection |
 | $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\Gamma$ real scalar |
 | $\varsigma$ | A second central constant, in the relative phase $\tilde{Ξ}_{R}\mapsto\varsigma\tilde{Ξ}_{R}$, $\tilde{Ξ}_{L}\mapsto\varsigma^{-1}\tilde{Ξ}_{L}$ |
 | $ϙ$ | Charge (coupling constant), not fixed by the algebra |
@@ -563,7 +563,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}\tilde{Ξ}$ | Interaction term |
 | $\exp(2i\theta_{\mathrm{gau}})$ | Phase that an antilinear mass term would acquire under a local phase; the linear mass term acquires $\digamma_{\mathrm{gau}}$ instead |
 | $\|\tilde{Ξ}\|^2 = \mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^*)$ | Euclidean modulus squared; real and $\ge 0$, the sum of the four squared coefficient moduli |
-| $\tilde J_{\Phi,\mathrm{sp}} = i\tilde{Ξ}\tilde{Ξ}^*$ | Naive bilinear; gauge invariant, in $\mathbb{B}_{\Phi}$, **not conserved** |
+| $\tilde J_{\Phi,\mathrm{sp}} = i\tilde{Ξ}\tilde{Ξ}^*$ | Naive bilinear; invariant, in $\mathbb{B}_{\Phi}$, **not conserved** |
 | $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Four-current; the Maxwell source is $Z\,\tilde J_{\Phi}$ |
 | $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell equation |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |

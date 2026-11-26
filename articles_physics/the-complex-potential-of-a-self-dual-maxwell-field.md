@@ -42,7 +42,7 @@ $$
 \vec E+i\vec H=0,
 $$
 
-the **duality-purity** condition of the complex field, the anti-self-dual sign in the corpus's naming. The system is gauge invariant, with an arbitrary smooth complex gauge function, so one further condition may be imposed; the useful one is the complex Lorentz gauge
+the **duality-purity** condition of the complex field, the anti-self-dual sign in the corpus's naming. The system is invariant, with an arbitrary smooth complex phase function, so one further condition may be imposed; the useful one is the complex Lorentz gauge
 
 $$
 \frac{\partial \Pi}{\partial h_t}+\vec\nabla_\Phi\cdot\vec C=0 .
@@ -59,7 +59,7 @@ $$
 
 This is the one place where the construction is easy to misread. The split is **not** $C_x=\mathrm{Re}\,C_{\bar w}$, $C_y=\mathrm{Im}\,C_{\bar w}$: the null combination is $C_{\bar w}=C_x+iC_y$ with a factor one, and covariant components carry $C_w=C_x-iC_y=0$, so both Cartesian components are complex and each is half the null one. With the real split the Lorentz gauge fails by $0.41$ where the field is $0.60$; with the split above it holds to order $10^{-11}$, and the field is the Coulomb one. All the numbers quoted in this article were recomputed from the split above.
 
-The count is the one that matters later: three conditions plus one gauge condition on four complex components. The field strength is quadratic in the derivatives of the potential and is not affected by the gauge; the charge is read from it by Gauss's theorem.
+The count is the one that matters later: three conditions plus one fixing condition on four complex components. The field strength is quadratic in the derivatives of the potential and is not affected by the gauge; the charge is read from it by Gauss's theorem.
 
 **Duality invariance, and what the condition costs.** Duality rotation multiplies $\vec N$ by a phase, and $\vec N=0$ is preserved by it, so the condition is duality invariant in the sense the invariants article records. It is *not* a condition a real field can meet: with real $\vec E$ and $\vec H$, $\vec E+i\vec H=0$ forces both to vanish, six real equations on six real components. That is the reality obstruction of the split article, and it is the reason the potential here is complex at the outset and not a real potential with a complex field strength.
 
@@ -85,11 +85,11 @@ $$
 \frac{\partial C_u}{\partial u}+\frac{\partial C_v}{\partial v}+\frac{\partial C_w}{\partial w}+\frac{\partial C_{\bar w}}{\partial \bar w}=0 ,
 $$
 
-which is the form in which the gauge condition joins the matrix picture.
+which is the form in which the fixing condition joins the matrix picture.
 
 ## The Two-Component Gauge and the Reduced System
 
-In these coordinates the self-duality condition plus the Lorentz gauge admits a gauge in which only two components survive, $C_{\bar w}$ and $C_v$, the other two, $C_u$ and $C_w$, being zero. The removal is the source's: the residual gauge freedom of the system is $C_{\imath}\mapsto C_{\imath}+\partial\digamma_{\mathrm{gau}}/\partial x_{\imath}$ with $\Box_\Phi\digamma_{\mathrm{gau}}=0$, which preserves the Lorentz gauge, and a parameter with that freedom can always be chosen to satisfy $C_u=\partial\digamma_{\mathrm{gau}}/\partial u$, $C_w=\partial\digamma_{\mathrm{gau}}/\partial\bar w$, because the compatibility condition $\partial C_u/\partial \bar w=\partial C_w/\partial u$ for those two equations holds identically on the equations of motion. Subtraction then removes both components at once.
+In these coordinates the self-duality condition plus the Lorentz gauge admits a gauge in which only two components survive, $C_{\bar w}$ and $C_v$, the other two, $C_u$ and $C_w$, being zero. The removal is the source's: the residual redundancy of the system is $C_{\imath}\mapsto C_{\imath}+\partial\digamma_{\mathrm{gau}}/\partial x_{\imath}$ with $\Box_\Phi\digamma_{\mathrm{gau}}=0$, which preserves the Lorentz gauge, and a parameter with that freedom can always be chosen to satisfy $C_u=\partial\digamma_{\mathrm{gau}}/\partial u$, $C_w=\partial\digamma_{\mathrm{gau}}/\partial\bar w$, because the compatibility condition $\partial C_u/\partial \bar w=\partial C_w/\partial u$ for those two equations holds identically on the equations of motion. Subtraction then removes both components at once.
 
 In that gauge the system reduces to the pair
 

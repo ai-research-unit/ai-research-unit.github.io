@@ -73,7 +73,7 @@ The count. One real function, one second-order equation, an invertible momentum.
 
 **The interaction's only structural addition is a density-dependent mass.** The added term is $-\frac{\varpi_{\mathrm{cpl}}}{4}N^{2}$ with $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, which carries no derivative, so it enters the equation as a coefficient multiplying the field. **A coefficient that depends on the field is not a condition on the field**: it changes the equation and leaves the data free, and that is the whole difference between a nonlinearity and a restriction.
 
-Why the absence is worth a section. The constrained members of this family are the gauge fields, the Proca field and the sigma model. The interacting scalar is the case where the nonlinearity is the entire difficulty and the constraint count is the free article's, so a reader who expects a self-interaction to bring a Gauss law should be told here that it brings none.
+Why the absence is worth a section. The constrained members of this family are the connection fields, the Proca field and the sigma model. The interacting scalar is the case where the nonlinearity is the entire difficulty and the constraint count is the free article's, so a reader who expects a self-interaction to bring a Gauss law should be told here that it brings none.
 
 What the section does not claim. It does not claim the action is integrable, that its solutions are global, or that its energy is bounded below. Those are properties of the potential and they belong to the limits section; the claim here is about the count of constraints, and the count is zero.
 

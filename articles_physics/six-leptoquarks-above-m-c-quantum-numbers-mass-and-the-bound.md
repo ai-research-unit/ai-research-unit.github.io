@@ -26,7 +26,7 @@ $$
 
 **So the six are not destroyed by the transition — they are made heavy by it, and heavy in a way that a flavour-changing decay forbids them to escape.** The phrase *integrated out* is precise: **absent from the asymptotic spectrum, present in the theory, and bounded from below.**
 
-**And before the transition the six are massless.** This is stated in the introduction because it is the fact a reader is most likely to get wrong, and it is not a convention or an approximation: above $M_C$ there is no condensate, so the sextet's mass is exactly zero, and an unbroken gauge symmetry keeps it zero to every order in perturbation theory. **The mass $M_X$ below is created by the breaking and does not exist before it**, so "the leptoquarks are heavy" is a statement about the phase this article is about, not about $\mathrm{SU}(4)$.
+**And before the transition the six are massless.** This is stated in the introduction because it is the fact a reader is most likely to get wrong, and it is not a convention or an approximation: above $M_C$ there is no condensate, so the sextet's mass is exactly zero, and an unbroken local symmetry keeps it zero to every order in perturbation theory. **The mass $M_X$ below is created by the breaking and does not exist before it**, so "the leptoquarks are heavy" is a statement about the phase this article is about, not about $\mathrm{SU}(4)$.
 
 **What this article establishes.** The sextet's quantum numbers and its fate; its mass as a function of the one vacuum it eats; the bound that fixes the scale of the transition at two hundred and fifty teraelectronvolts; why proton decay does not bite although $B$ is violated in thirds; and the precise sense in which a state can be integrated out without being removed.
 
@@ -128,7 +128,7 @@ $$
 \Gamma\propto\frac{m_p^{11}}{M_X^{10}} .
 $$
 
-**Six extra powers on the rate, and they are the whole of the model's survival.** The two-body mode $p\to e^{+}\pi^{0}$ has no gauge contribution at any order, because its final state is two quarks and a lepton while the gauge sector supplies one quark-to-lepton conversion at a time. **The channel to look for is $p\to e^{+}e^{+}e^{-}$, and it is far below reach.**
+**Six extra powers on the rate, and they are the whole of the model's survival.** The two-body mode $p\to e^{+}\pi^{0}$ has no gauge contribution at any order, because its final state is two quarks and a lepton while the sector supplies one quark-to-lepton conversion at a time. **The channel to look for is $p\to e^{+}e^{+}e^{-}$, and it is far below reach.**
 
 **The one field that would change it.** A colour antitriplet coupling to two quarks — a diquark — gives dimension six from a single exchange. **The fifteen does not contain one**: its colour triplet carries $B-L=\pm\tfrac43$ and a $qq$ pair carries $+\tfrac23$, so the coupling violates the gauged $B-L$. **A $(\mathbf{6},\mathbf1,\mathbf1)$ scalar would supply it, and the frame has none.** Add one and the bound becomes
 
@@ -154,7 +154,7 @@ $$
 
 **This section exists because the natural next thought is wrong, and it is worth closing before it is opened.**
 
-**The temptation.** Six gauge directions break; the weak pair is six gauge directions; **perhaps the breaking is a recombination.** The dimensions match, and nothing else does.
+**The temptation.** Six redundant directions break; the weak pair is six redundant directions; **perhaps the breaking is a recombination.** The dimensions match, and nothing else does.
 
 **The charge.** Every member has $Q=\pm\tfrac23$, so any pair sums to $\{0,\pm\tfrac43\}$ and never to $\pm1$. **The explicit channel confirms it**,
 
@@ -192,7 +192,7 @@ Heavy is not gone. The transition converts six massless directions into six vect
 
 The flavour bound is not a measurement. It is a floor on the scale, with a coefficient uncertain by a factor of a few (*The Bound*).
 
-Proton decay does not bind the gauge sector. It binds it only if a diquark is added, and the fifteen has none; the leading gauge operator is dimension nine (*Why Proton Decay Does Not Bite*).
+Proton decay does not bind the sector. It binds it only if a diquark is added, and the fifteen has none; the leading gauge operator is dimension nine (*Why Proton Decay Does Not Bite*).
 
 Matching dimensions is not matching physics. Six for six is a coincidence of dimension and a failure of charge (*What the Sextet Does Not Do*).
 

@@ -86,7 +86,7 @@ Two variations of one display, and a third for the constraint. The chart's actio
 
 The boundary term. The amplitude's variation produces one, because its block carries two derivatives; on a region with fixed amplitude on the boundary it vanishes, and on a region that reaches infinity the fall-off kills it. The frame's variation produces none, because the frame enters algebraically through $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ and through no derivative of its own beyond the covariant one.
 
-Why the constraint is not a choice. The Lorenz condition is the scalar part of the connection's variation, so it is one of the Euler–Lagrange equations and not a gauge fixing. In the massless limit the same variation gives an identity instead, and that change of status is the article's *The Truncation and Its Error* read from the variation side.
+Why the constraint is not a choice. The Lorenz condition is the scalar part of the connection's variation, so it is one of the Euler–Lagrange equations and not a fixing the representative. In the massless limit the same variation gives an identity instead, and that change of status is the article's *The Truncation and Its Error* read from the variation side.
 
 ## The Constraints the Action Imposes: The Constraint Survives the Truncation
 
@@ -94,7 +94,7 @@ Three variations give one constraint and two transports. The amplitude's block i
 
 The truncation moves the transports and leaves the constraint. The phase's transport and the frame's transport lose the deleted block's contribution and remain equations of motion. The amplitude's equation loses nothing that could have made it an evolution equation, because the deleted block was the only candidate. That asymmetry is the whole content of the limit, and it is why the constraint is untouched while everything else is corrected.
 
-The constraint is second class. The mass term breaks the local invariance of the field it multiplies, so the constraint does not generate a transformation; it pairs with the gauge condition the chart inherits, and the count of degrees falls by one pair rather than by two. Nothing here needs a multiplier.
+The constraint is second class. The mass term breaks the local invariance of the field it multiplies, so the constraint does not generate a transformation; it pairs with the fixing condition the chart inherits, and the count of degrees falls by one pair rather than by two. Nothing here needs a multiplier.
 
 What the section does not claim. It does not re-derive the Lorenz condition in this chart's variables: the condition is read in the element and polar readings. It claims that the limit's constraint structure is the parent's, stated in the chart the limit uses.
 

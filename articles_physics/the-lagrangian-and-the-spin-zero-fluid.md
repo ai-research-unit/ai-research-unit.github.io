@@ -50,7 +50,7 @@ $$
 \partial_{\imath}\bigl(\rho_{\mathrm{num}}V_{\Phi,\imath}\bigr)=0,
 $$
 
-which is $\partial_{\imath} J_{\Phi,\imath}=0$ with $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$. The current is the Noether current of the phase shift and the continuity equation is its conservation, and the shift is global: nothing here is a gauge redundancy, so the current is a charge.
+which is $\partial_{\imath} J_{\Phi,\imath}=0$ with $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$. The current is the Noether current of the phase shift and the continuity equation is its conservation, and the shift is global: nothing here is a redundancy, so the current is a charge.
 
 Varying the amplitude gives the mass shell, and the shell contains the quantum potential through the d'Alembertian. The gradient term varies as
 
@@ -154,7 +154,7 @@ What it adds: the second-order formulation as a fluid statement. The field equat
 
 What it does not add. No new equation and no new solution. Every equation in this article is the element article's, and the article says so in its first paragraph so that no reader looks for a new prediction.
 
-What it inherits. The uncharged character, the gauge invariance of the scale, and the nodal exception. **The rotor is not a charge**, and the article's comparison with the charged Schrödinger fluid is a single sentence making that point.
+What it inherits. The uncharged character, the local invariance of the scale, and the nodal exception. **The rotor is not a charge**, and the article's comparison with the charged Schrödinger fluid is a single sentence making that point.
 
 One thing it inherits worse. The frame's meaning is clearer here than in the element reading, but its *determination* is not: the frame is reconstructed from the element and not fixed by a potential, so the fluid reading has less to say about it than the coupled fluids do.
 

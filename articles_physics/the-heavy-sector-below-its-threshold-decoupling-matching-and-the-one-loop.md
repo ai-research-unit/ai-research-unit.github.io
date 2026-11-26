@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The question.** The chain removes twelve gauge fields and a scalar sector at two thresholds. Is the removal exact, or is it an approximation? What happens to the effects of the fields that are removed, and what is computed when one says "the couplings are matched at one loop"?
+**The question.** The chain removes twelve connections and a scalar sector at two thresholds. Is the removal exact, or is it an approximation? What happens to the effects of the fields that are removed, and what is computed when one says "the couplings are matched at one loop"?
 
 **The answer.**
 

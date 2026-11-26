@@ -247,7 +247,7 @@ The biquaternion framework has nothing to add to this argument except the observ
 
 ### The logarithm and the energy dependence
 
-The phase $\exp(i\theta_{\mathrm{cld}})$ and the phase $2\sigma_0$ are both energy dependent, through $\theta_{\mathrm{cld}}=-\digamma_{\mathrm{smt}}\ln\sin^2(\theta_{\mathrm{sct}}/2)$ real because $\digamma_{\mathrm{smt}}$ and the logarithm of a positive number are real, and through $\digamma_{\mathrm{smt}}=\frac{2\pi \alpha}{h\,v}$ and through $\sigma_0(\digamma_{\mathrm{smt}})$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical mark of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\digamma_{\mathrm{smt}}$ makes it energy dependent.
+The phase $\exp(i\theta_{\mathrm{cld}})$ and the phase $2\sigma_0$ are both energy dependent, through $\theta_{\mathrm{cld}}=-\digamma_{\mathrm{smt}}\ln\sin^2(\theta_{\mathrm{sct}}/2)$ real because $\digamma_{\mathrm{smt}}$ and the logarithm of a positive number are real, and through $\digamma_{\mathrm{smt}}=\frac{2\pi \alpha}{h\,v}$ and through $\sigma_0(\digamma_{\mathrm{smt}})$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical mark of the long-range potential: the Coulomb amplitude's phase cannot be removed by a constant redefinition, because the logarithm makes it angle dependent and the parameter $\digamma_{\mathrm{smt}}$ makes it energy dependent.
 
 In the biquaternion interpretation these are central phases: $\exp(i\theta_{\mathrm{cld}})$ and $\exp(2i\theta_{\mathrm{sct},0})$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{B}_{C}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's $*$-unitary-versus-rotor distinction applies: these are $*$-unitary central phases, not unit-norm rotors.
 
@@ -270,7 +270,7 @@ The logarithmic phase is the non-relativistic analogue of an infrared divergence
 
 - **The partial-wave sum.** The closed-form evaluation of the Coulomb amplitude is a standard but delicate summation; the algebra does not supply it and the article cites it as standard.
 - **Screening and short-range corrections.** For a screened potential the framework's statements about centrality still apply, but the physics is the standard Born series and phase-shift analysis, and no new structure appears.
-- **The long-range phase and the module.** Whether the algebra gives a preferred gauge for the divergent Coulomb phase, beyond the flux-based definition, is not known.
+- **The long-range phase and the module.** Whether the algebra gives a preferred representative for the divergent Coulomb phase, beyond the flux-based definition, is not known.
 - **Empirical content.** As elsewhere, whether the reformulation distinguishes itself from scalar Coulomb scattering is open.
 
 ## Open Questions

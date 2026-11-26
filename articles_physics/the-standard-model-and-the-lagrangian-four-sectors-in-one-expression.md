@@ -10,9 +10,9 @@ $$
 \boxed{\;\mathcal L_{\mathrm{SM}}=\mathcal L_{\text{gauge}}+\mathcal L_{\text{fermion}}+\mathcal L_{\text{scalar}}+\mathcal L_{\text{Yukawa}},\qquad 60\to19\;}
 $$
 
-**The standing.** The expression is standard theory. It is transcribed, not derived, and no term in it follows from the biquaternion algebra. What the article adds to a textbook display is three things: one notation, one sign rule stated and proved, and one audit of gauge invariance carried out term by term.
+**The standing.** The expression is standard theory. It is transcribed, not derived, and no term in it follows from the biquaternion algebra. What the article adds to a textbook display is three things: one notation, one sign rule stated and proved, and one audit of local invariance carried out term by term.
 
-**Why assembling is not a transcription exercise.** A reader may object that the sum of four published pieces proves nothing, and the objection is correct as stated. The value of the assembly is what it makes possible. Gauge invariance is a property of the sum and not of the pieces: the fermion kinetic term is invariant only if the covariant derivative is built from the same three connections that the gauge kinetic terms carry, and the Yukawa sector is invariant only if the conjugate doublet is used with the right hypercharge. Those are statements about the assembly, and they are checked below, term by term, in one notation.
+**Why assembling is not a transcription exercise.** A reader may object that the sum of four published pieces proves nothing, and the objection is correct as stated. The value of the assembly is what it makes possible. Local invariance is a property of the sum and not of the pieces: the fermion kinetic term is invariant only if the covariant derivative is built from the same three connections that the gauge kinetic terms carry, and the Yukawa sector is invariant only if the conjugate doublet is used with the right hypercharge. Those are statements about the assembly, and they are checked below, term by term, in one notation.
 
 **Two results, stated now.** The assembly yields two quantitative results that no single-sector article states.
 
@@ -53,7 +53,7 @@ The proof. The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial on
 The two places it bites. The rule fixes the sign of a kinetic term and nothing else in this article.
 
 - The scalar. A text in the standard metric writes $+\tfrac12\partial\xi\cdot\partial\xi$ for a real scalar. The rule turns it into $-\tfrac12\sum_{\imath}\partial_{\imath}\xi\,\partial_{\imath}\xi$, which is exactly the corpus's scalar Lagrangian of [Stress–Energy Conservation Laws and the Field Action](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), whose expansion $-\tfrac12[-\left(\partial\xi/\partial r'_t\right)^2+(\vec\nabla_\Phi\xi)^2]$ is the standard $\tfrac12\dot\xi^2-\tfrac12(\vec\nabla_\Phi\xi)^2$.
-- The gauge field. A text writes $-\tfrac14F\cdot F$. The rule turns it into $-\tfrac14\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}$, which is the corpus's display. Here the sign is unchanged, because the weight over the two indices cancels the flip.
+- The connection. A text writes $-\tfrac14F\cdot F$. The rule turns it into $-\tfrac14\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}$, which is the corpus's display. Here the sign is unchanged, because the weight over the two indices cancels the flip.
 
 The check that the two writings are one Lagrangian. With $A_t=iA_0$ and $F_{\imath\jmath}=\partial A_{\jmath}/\partial R_{\imath}-\partial A_{\imath}/\partial R_{\jmath}$, the temporal components are $F_{tk}=iE_{\imath}$ and the spatial ones are $F_{\imath l}=\epsilon_{k l\,n_{\mathrm{idx}}}B_m$. Then $\sum_{\imath\jmath}F_{\imath\jmath}F_{\imath\jmath}=2\sum_{\imath\in\{x,y,z\}} F_{tk}F_{tk}+\sum_{\imath l}F_{\imath l}F_{\imath l}=-2E^2+2B^2$, and $-\tfrac14$ of that is $\tfrac12(E^2-B^2)$, which is the standard $-\tfrac14F\cdot F$ evaluated on the same fields. The energy comes out positive in both writings; the corpus's own stress–energy article fixes the sign on that requirement.
 
@@ -81,7 +81,7 @@ $$
 \mathcal{L}_{\mathrm{gauge}}=-\tfrac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14\sum_{\imath,\jmath}B_{\imath\jmath}B_{\imath\jmath} .
 $$
 
-The three coefficients are equal because each factor's gauge field is normalised so that its kinetic term has unit coefficient. That normalisation is what makes the three couplings independent numbers; a rescaling of any one field moves a constant between the kinetic term and the coupling, and the product $g_sF$ is what the physics sees.
+The three coefficients are equal because each factor's connection is normalised so that its kinetic term has unit coefficient. That normalisation is what makes the three couplings independent numbers; a rescaling of any one field moves a constant between the kinetic term and the coupling, and the product $g_sF$ is what the physics sees.
 
 **Three, not one.** The three kinetic terms do not mix. A term $G_{\imath\jmath}W_{\imath\jmath}$ would be forbidden by the product structure, since the two fields carry different quantum numbers and no invariant contraction exists. Mixing of the neutral fields happens at the level of the mass matrix and the currents, not at the level of the kinetic terms, and the mixing is a rotation of $W_{3,\imath}$ and $B_{\imath}$ that leaves the kinetic terms in the form above.
 
@@ -93,7 +93,7 @@ $$
 \mathcal{L}_{\mathrm{ferm}}=\sum_{Ξ_{\mathrm{wfn}}}\bar{\tilde\Xi}_{Ξ_{\mathrm{wfn}}}\,i\,\tilde\nabla_{\mathrm{gco},\Phi}\,\tilde\Xi_{Ξ_{\mathrm{wfn}}} ,
 $$
 
-with $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ the Dirac adjoint of the corpus, and $\tilde\nabla_{\mathrm{gco},\Phi}$ the gauge-covariant gradient, carrying the three connections in the representation of the field it acts on. The display states the structure; the component form of $\tilde\nabla_{\mathrm{gco},\Phi}$ and the sign of the bilinear are the Dirac article's, where the massless pair is $\tilde\nabla_\Phi\tilde\Xi_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=0$.
+with $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ the Dirac adjoint of the corpus, and $\tilde\nabla_{\mathrm{gco},\Phi}$ the covariant gradient, carrying the three connections in the representation of the field it acts on. The display states the structure; the component form of $\tilde\nabla_{\mathrm{gco},\Phi}$ and the sign of the bilinear are the Dirac article's, where the massless pair is $\tilde\nabla_\Phi\tilde\Xi_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=0$.
 
 The covariant gradient. Its action on a field in the representation $(\mathbf{3}$ or $\mathbf{1},\mathbf{2}$ or $\mathbf{1},Y)$ is the one of *Operator and Calculus Conventions*, §*The Gradient*, and it reads
 
@@ -183,7 +183,7 @@ $$
 
 and the physical masses are the singular values of $M_f$, obtained by bi-unitary diagonalisation. That step, and the two unitary factors that survive it as the CKM and PMNS matrices, is the subject of [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html).
 
-Why the sector exists at all. Without it the fermions are massless, which the world is not. With it, the masses are free parameters, which is the price. There is no third option inside the renormalisable model: a mass term without the scalar is forbidden by the gauge symmetry, and a mass term generated in any other way requires new fields.
+Why the sector exists at all. Without it the fermions are massless, which the world is not. With it, the masses are free parameters, which is the price. There is no third option inside the renormalisable model: a mass term without the scalar is forbidden by the local symmetry, and a mass term generated in any other way requires new fields.
 
 ## The Assembled Expression
 
@@ -233,7 +233,7 @@ and the analogous laws for $W_{\imath}$ with $U_L$ and for $B_{\imath}$ with the
 
 The three places where the audit could fail and does not.
 
-- The fermion kinetic term needs all three connections. If the covariant derivative carried only the hypercharge connection, the term would fail under $SU(2)_L$ and $SU(3)_c$. The invariance of this term is what forces the gauge fields to be the same objects that appear in the three kinetic terms, and that is the content of calling the theory a gauge theory rather than three separate ones.
+- The fermion kinetic term needs all three connections. If the covariant derivative carried only the hypercharge connection, the term would fail under $SU(2)_L$ and $SU(3)_c$. The invariance of this term is what forces the connections to be the same objects that appear in the three kinetic terms, and that is the content of calling the theory a gauge theory rather than three separate ones.
 - The up-type Yukawa needs the conjugate doublet. With $\omicron_{\mathrm{hgs}}$ in place of $\tilde\omicron_{\mathrm{hgs}}$, the total hypercharge would be $-1/6+1/2+2/3=+1$, and the term would not be invariant. The conjugate is forced.
 - The potential needs the modulus squared and nothing else. A term $\omicron_{\mathrm{hgs}}^T\omicron_{\mathrm{hgs}}$ or $\omicron_{\mathrm{hgs}}^\dagger\tau_a\omicron_{\mathrm{hgs}}$ would fail; only $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$ is a singlet. That is why the potential has two parameters and not more.
 
@@ -324,10 +324,10 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{L}_{\mathrm{QCD}}$, $\mathcal{L}_{\mathrm{EW}}$, $\mathcal{L}_{H}$, $\mathcal{L}_{\mathrm{Yuk}}$ | The four sectors |
-| $G_{a,\imath}$, $W_{a,\imath}$, $B_{\imath}$ | Colour, weak and hypercharge gauge fields |
+| $G_{a,\imath}$, $W_{a,\imath}$, $B_{\imath}$ | Colour, weak and hypercharge connections |
 | $G_{a,\imath\jmath}$, $W_{a,\imath\jmath}$, $B_{\imath\jmath}$ | Their field strengths |
 | $f_{abc}$, $\varepsilon_{abc}$ | Colour and weak structure constants |
-| $\tilde\nabla_{\mathrm{gco},\Phi}$ | The gauge-covariant gradient; the representation is that of the field it acts on |
+| $\tilde\nabla_{\mathrm{gco},\Phi}$ | The covariant gradient; the representation is that of the field it acts on |
 | $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ | The Dirac adjoint |
 | $\omicron_{\mathrm{hgs}}$, $\tilde\omicron_{\mathrm{hgs}}$ | The scalar doublet of hypercharge $\tfrac12$ and its conjugate of hypercharge $-\tfrac12$ |
 | $Y_{u}$, $Y_{d}$, $Y_{e}$ | The three Yukawa matrices, general complex $3\times3$ |
@@ -352,4 +352,4 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 - [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html). The colour sector at the level of the field.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). Which terms the framework reaches and which it imports.
 
-The three companions this article names but does not carry — the QCD Lagrangian, gauge fixing and the electroweak precision observables — are written, as articles 9, 7 and 8 of the series, and each is linked above at the point where it is invoked.
+The three companions this article names but does not carry — the QCD Lagrangian, fixing the representative and the electroweak precision observables — are written, as articles 9, 7 and 8 of the series, and each is linked above at the point where it is invoked.

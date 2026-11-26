@@ -34,7 +34,7 @@ with $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ the material connect
 
 *Third, in the operator setting the word reproduces the covariant Madelung pair, and the connection enters only where the pair can carry it.* The continuity equation gets the kinetic momentum in place of the gradient, the Hamilton–Jacobi equation gets the kinetic energy in place of the kinetic term and $-ϙ\omicron_{\mathrm{pot}}$ in place of nothing, and the quantum potential is written with the ordinary gradient of the scale because the connection cannot touch it. The plate is standard quantum fluid mechanics; the biquaternionic form of it is what the article supplies (§*The Central Field in the Operator Setting*).
 
-**What is not claimed.** No new prediction and no new solution: the equation is the element form's and the flow is its consequence. The polar chart does not decouple the four brackets from the parameters, does not simplify the equation, and does not supply a second constant of motion. What it supplies is the reading: which bracket the connection joins, which coordinate the gauge group translates, and which invariants the coupling leaves alone.
+**What is not claimed.** No new prediction and no new solution: the equation is the element form's and the flow is its consequence. The polar chart does not decouple the four brackets from the parameters, does not simplify the equation, and does not supply a second constant of motion. What it supplies is the reading: which bracket the connection joins, which coordinate the symmetry group translates, and which invariants the coupling leaves alone.
 
 **Conventions.** The algebra, the pairing, the sectors, the two settings and the parameter ranges are the free polar article's and are not restated. Time is $t'$, so that $i \frac{h}{2\pi}\partial_{t'}=i \frac{h}{2\pi} c\,\partial_{r'_t}$ and the element form's $r'_t=c\,t'$ is the parent's material length; the polar article uses $t'$ throughout, and so does this one. The connection is $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}=c\,a'_t$ and $\vec A$ real, and the coupling is $ϙ$, which is minus the electric charge of the older convention: the mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$ and the potential energy enters as $-ϙ\omicron_{\mathrm{pot}}$. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\rho_{\mathrm{num}}/2$, and the word gives $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
@@ -140,7 +140,7 @@ $$
 \mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}}
 $$
 
-is the kinetic energy of the flow, and it is gauge invariant. In terms of the phase and the potential it is the free kinetic energy plus the potential, which is the classical statement that the total energy minus the potential energy is the kinetic one. The gauge invariance is worth one line: $\theta_{\mathrm{pha}}$ shifts by $+\frac{2\pi ϙ\Gamma}{h}$ and $\omicron_{\mathrm{pot}}$ by $+\partial_{t'}\Gamma$, so the two halves of $\mathcal E$ move in the same direction and by the same amount, and the article records that the phase rate alone is not gauge invariant — only the combination is.
+is the kinetic energy of the flow, and it is invariant. In terms of the phase and the potential it is the free kinetic energy plus the potential, which is the classical statement that the total energy minus the potential energy is the kinetic one. The local invariance is worth one line: $\theta_{\mathrm{pha}}$ shifts by $+\frac{2\pi ϙ\Gamma}{h}$ and $\omicron_{\mathrm{pot}}$ by $+\partial_{t'}\Gamma$, so the two halves of $\mathcal E$ move in the same direction and by the same amount, and the article records that the phase rate alone is not invariant — only the combination is.
 
 **The vorticity.** The velocity is $\vec v=\vec\pi/m=(\vec\nabla_\Phi S-q\vec A)/m$, and its curl is
 
@@ -166,13 +166,13 @@ $$
 u_r\longmapsto u_r .
 $$
 
-**The gauge group is the translation of one coordinate.** Seven of the eight parameters are inert under the gauge group and one is translated, by a function of the spacetime point. That is the polar form of the statement that the gauge group is the centre's $\mathrm{U}(1)$: on the chart, the centre acts as the additive group of the phase. The element-form companion says the same thing from the other side — the transformation touches the connection and the field's central phase and no other parameter — and the polar statement is the sharper one because it names the coordinate.
+**The symmetry group is the translation of one coordinate.** Seven of the eight parameters are inert under the symmetry group and one is translated, by a function of the spacetime point. That is the polar form of the statement that the symmetry group is the centre's $\mathrm{U}(1)$: on the chart, the centre acts as the additive group of the phase. The element-form companion says the same thing from the other side — the transformation touches the connection and the field's central phase and no other parameter — and the polar statement is the sharper one because it names the coordinate.
 
 **What is invariant.** Everything built from $\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$, from $\partial_{t'}\theta_{\mathrm{pha}}-\frac{2\pi ϙ}{h}\omicron_{\mathrm{pot}}$, and from the other six parameters. The scale, the rapidity, the two axes, the density, the rapidity's rate and the gap are invariant, and the two combinations of the phase with the connection are invariant. The phase itself is not, and neither is its rate alone.
 
-**The free article's "no gauge freedom" and what the coupling does to it.** The free polar article records that the free equation fixes the phase's rate and that there is no gauge freedom to fix: $\theta_{\mathrm{pha}}$ is a physical coordinate whose evolution is determined. The coupling does not contradict that; it splits the statement in two. The *rate* of the phase is still determined, and it is the gauge-invariant combination $\mathcal E$ that is determined; the phase itself acquires an arbitrary additive function, and the equation determines only the differences. So a coordinate that was physical becomes a coordinate with a gauge direction, and the direction is exactly the one whose conjugate momentum is the density.
+**The free article's "no redundancy" and what the coupling does to it.** The free polar article records that the free equation fixes the phase's rate and that there is no redundancy to fix: $\theta_{\mathrm{pha}}$ is a physical coordinate whose evolution is determined. The coupling does not contradict that; it splits the statement in two. The *rate* of the phase is still determined, and it is the invariant combination $\mathcal E$ that is determined; the phase itself acquires an arbitrary additive function, and the equation determines only the differences. So a coordinate that was physical becomes a coordinate with a redundant direction, and the direction is exactly the one whose conjugate momentum is the density.
 
-**Why that is consistent with the flow.** The flow's rate statement, $\partial_{t'}\theta_{\mathrm{pha}}=-(h_t-ϙ\omicron_{\mathrm{pot}})\frac{2\pi}{h}$, is invariant when read correctly: $h_t$ is the free coefficient, a property of the free element and not of the potential, while the potential's shift of $\omicron_{\mathrm{pot}}$ is compensated by the field's own phase shift. In the constant setting the gauge functions that keep the connection constant are the linear ones, and for those the two changes are constants that cancel.
+**Why that is consistent with the flow.** The flow's rate statement, $\partial_{t'}\theta_{\mathrm{pha}}=-(h_t-ϙ\omicron_{\mathrm{pot}})\frac{2\pi}{h}$, is invariant when read correctly: $h_t$ is the free coefficient, a property of the free element and not of the potential, while the potential's shift of $\omicron_{\mathrm{pot}}$ is compensated by the field's own phase shift. In the constant setting the phase functions that keep the connection constant are the linear ones, and for those the two changes are constants that cancel.
 
 ## Flux and Circulation
 
@@ -192,17 +192,17 @@ with $\Sigma$ any surface bounded by the loop. With $ϙ$ the negative of the ele
 
 ## What the Polar Chart Adds and What It Does Not
 
-**Adds.** The type statement: the connection is central imaginary in every slot, joins the phase bracket, and cannot reach the scale, the boost or the rotor. The coordinate statement: the gauge group translates $\theta_{\mathrm{pha}}$ and nothing else, and the density is its conjugate momentum. The invariance statement: $\vec\pi$ and $\mathcal E$ are the two gauge-invariant combinations, and the quantum potential is untouched because the scale is untouched. The limit statement: the same shift of the two coefficients reads as a frequency shift and an axis shift in the constant setting, and as a kinetic momentum and a potential energy in the operator setting. And the loop statement, which is one line from the vorticity.
+**Adds.** The type statement: the connection is central imaginary in every slot, joins the phase bracket, and cannot reach the scale, the boost or the rotor. The coordinate statement: the symmetry group translates $\theta_{\mathrm{pha}}$ and nothing else, and the density is its conjugate momentum. The invariance statement: $\vec\pi$ and $\mathcal E$ are the two invariant combinations, and the quantum potential is untouched because the scale is untouched. The limit statement: the same shift of the two coefficients reads as a frequency shift and an axis shift in the constant setting, and as a kinetic momentum and a potential energy in the operator setting. And the loop statement, which is one line from the vorticity.
 
 **Does not add.** No new solution and no new constant of motion. The free article's frozen scale, frozen rapidity, phase rate and gap survive with shifted numbers and are not multiplied by the coupling. The word does not become a solution method for the coupled equation; it is a chart in which the equation's structure is visible.
 
-**The one thing the coupling changes in kind.** The free chart has no gauge direction: all eight parameters are physical. The coupled chart has one, and it is a direction along which the chart is degenerate — a whole line of parameters, one for each function $\Gamma$, describes the same field and the same connection up to gauge. That is the only structural change, and it is the one the variational companion uses.
+**The one thing the coupling changes in kind.** The free chart has no redundant direction: all eight parameters are physical. The coupled chart has one, and it is a direction along which the chart is degenerate — a whole line of parameters, one for each function $\Gamma$, describes the same field and the same connection up to gauge. That is the only structural change, and it is the one the variational companion uses.
 
 ## Open Questions
 
 **1. The operator setting for the general element.** The article's operator statements are the central field's. For a general element with spatial derivatives — a boost that varies from point to point, a rotor that twists — the covariant bracket's central-imaginary part and the boost bracket both carry gradient information, and the way the connection distributes between them is not examined here.
 
-**2. The global structure of the word.** The word is a bijection on the $N$-regular set, which is contractible in the unit directions but has the phase's range $(-\pi/2,\pi/2]$; whether a gauge function with nonzero winding forces a chart that leaves the range, and how the chart must be patched, is not examined here.
+**2. The global structure of the word.** The word is a bijection on the $N$-regular set, which is contractible in the unit directions but has the phase's range $(-\pi/2,\pi/2]$; whether a phase function with nonzero winding forces a chart that leaves the range, and how the chart must be patched, is not examined here.
 
 **3. The nonlinear case.** The condensate article's Gross–Pitaevskii term is a function of the density alone, and the polar chart writes it as a function of $\varrho$ and $\theta_{\mathrm{rpd}}$; whether the coupled nonlinear flow keeps the scale frozen is a one-line check that is not performed here.
 
@@ -216,7 +216,7 @@ $$
 \mathcal A^{\mathrm{gco}}_{\imath}=\mathcal A_{\imath}+\frac{2\pi i\,ϙ}{h}A_{\imath} .
 $$
 
-Each addition is a central imaginary number, so the connection joins the phase bracket and reaches no other: the scale, the rapidity, the boost's axis and the rotor's axis are untouched by it in type, and the gauge group acts on the chart as the translation of $\theta_{\mathrm{pha}}$ alone.
+Each addition is a central imaginary number, so the connection joins the phase bracket and reaches no other: the scale, the rapidity, the boost's axis and the rotor's axis are untouched by it in type, and the symmetry group acts on the chart as the translation of $\theta_{\mathrm{pha}}$ alone.
 
 In the constant setting the coupled element is $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A)$ and the free flow applies with two numbers shifted: the scale and the rapidity frozen, the phase advancing at $-(h_t-ϙ\omicron_{\mathrm{pot}})\frac{2\pi}{h}$, every carried direction precessing at $2|\vec h_\Psi-q\vec A|\frac{2\pi}{h}$. The unshifted vector is the canonical momentum, the shifted one the kinetic momentum.
 
@@ -236,7 +236,7 @@ the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,b}u_r$ | The word; $\tilde U_{\Psi,b}=\exp(i\theta_{\mathrm{rpd}}\vec u_b)$ |
 | $\varrho>0$ | The scale |
-| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The central phase; the coordinate the gauge group translates |
+| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The central phase; the coordinate the symmetry group translates |
 | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_b$ | The rapidity and axis of the Hermitian boost |
 | $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_r$ | The angle and axis of the rotor |
 | $\mathcal A_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$ | The free logarithmic derivative |
@@ -251,17 +251,17 @@ the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2
 | $h_t$, $\vec h_\Psi$ | The canonical energy and momentum of the constant setting |
 | $h_t-ϙ\omicron_{\mathrm{pot}}$, $\vec h_\Psi-q\vec A$ | The kinetic energy and momentum |
 | $\digamma_{\mathrm{flx}}$ | The magnetic flux through a loop |
-| $\Gamma$, $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge function and factor |
+| $\Gamma$, $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The phase function and factor |
 
 ## Further Reading
 
 - [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the free flow that this article shifts.
 - [The Coupled Schrödinger Equation in Biquaternionic Form](the-coupled-schrodinger-equation-in-biquaternionic-form.html), the element-form companion, for the equation, the sign bookkeeping of the two slots and the current.
-- [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), where the gauge direction of the chart is what the action's symmetry acts on.
+- [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), where the redundant direction of the chart is what the action's symmetry acts on.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the carrier, the two settings and the centrality of $i$.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the centre that this article reads as a translation of $\theta_{\mathrm{pha}}$.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator whose two slots the chart reads.
-- [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same construction in the second-order case, where the chart's gauge direction is one coordinate among several.
+- [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same construction in the second-order case, where the chart's redundant direction is one coordinate among several.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the case in which the connection reaches all four brackets.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its bijection.
 - [The N-Regular Sector](../articles_maths/the-n-regular-sector.html) and [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the domain the chart covers.

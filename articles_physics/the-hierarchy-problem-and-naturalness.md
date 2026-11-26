@@ -8,7 +8,7 @@ The Higgs mass is the only dimensionful parameter in the model that is not prote
 
 Three claims are refused at the outset.
 
-- The quadratic divergence is not the problem. The divergence is a regulator artefact: in dimensional regularisation the Standard Model has no quadratic divergence in the scalar mass at all, because there is no gauge-invariant dimension-two operator other than the $\mu^2$ term itself. The physical problem is sensitivity, not divergence, and the two are different statements. Section *The Divergence Is a Convention* separates them.
+- The quadratic divergence is not the problem. The divergence is a regulator artefact: in dimensional regularisation the Standard Model has no quadratic divergence in the scalar mass at all, because there is no invariant dimension-two operator other than the $\mu^2$ term itself. The physical problem is sensitivity, not divergence, and the two are different statements. Section *The Divergence Is a Convention* separates them.
 - The framework has no solution. It does not, and section *What the Algebra Says* gives the exact reason.
 - Naturalness is not a theorem. It is a heuristic with one success and at least one conspicuous failure, and section *Naturalness Is Not a Theorem* states both.
 
@@ -35,7 +35,7 @@ The Standard Model contributes through three sources.
 
 | Source | Coupling | Coefficient $c$ | Share |
 |---|---|---|---|
-| Gauge bosons | $\tfrac94 g^2$ | $0.239$ | $9.6\%$ |
+| Connections | $\tfrac94 g^2$ | $0.239$ | $9.6\%$ |
 | Top quark | $3y_t^2$ | $1.476$ | $59.3\%$ |
 | Higgs quartic | $6\varpi_{\mathrm{cpl}}$ | $0.774$ | $31.1\%$ |
 | Total | — | $2.489$ | $100\%$ |
@@ -54,7 +54,7 @@ $$
 \delta m_H^2=\frac{c}{16\pi^2}M^2\left[\frac{2}{\epsilon}-\gamma+\ln\frac{4\pi\mu^2}{M^2}\right] ,
 $$
 
-with no $\Lambda^2$ term at all. The reason is structural: the only gauge-invariant operator of dimension two that can renormalise the Higgs mass is $\xi_{\mathrm{pot}}^{\dagger}\xi_{\mathrm{pot}}$ itself, so the divergence must be proportional to $\mu^2$ and not to a cutoff. In a cutoff scheme the quadratic term appears; in dim reg it does not; and the two schemes describe the same physics.
+with no $\Lambda^2$ term at all. The reason is structural: the only invariant operator of dimension two that can renormalise the Higgs mass is $\xi_{\mathrm{pot}}^{\dagger}\xi_{\mathrm{pot}}$ itself, so the divergence must be proportional to $\mu^2$ and not to a cutoff. In a cutoff scheme the quadratic term appears; in dim reg it does not; and the two schemes describe the same physics.
 
 So what is the problem? Two things, and neither is the divergence.
 
@@ -133,10 +133,10 @@ Three field types, compared.
 | Field type | Mass term | Protected by | Shift |
 |---|---|---|---|
 | Fermion | $m\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}$ | Chiral symmetry | $\delta m\propto m\ln\Lambda$ — proportional to the mass |
-| Gauge boson | $\tfrac12m^2\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}$ | Gauge symmetry | Forbidden while massless; protected after breaking |
+| Connection | $\tfrac12m^2\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}$ | Local symmetry | Forbidden while massless; protected after breaking |
 | Scalar | $m^2\xi_{\mathrm{pot}}^{\dagger}\xi_{\mathrm{pot}}$ | Nothing | $\delta m^2\propto\Lambda^2$ |
 
-A symmetry that forbids the mass term also forbids its radiative correction, because the correction must respect the symmetry of the Lagrangian. Chiral symmetry forbids $m\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}$ for a massless fermion, so the correction must be proportional to the mass — a fermion mass is *technically natural*: setting it to zero is stable under renormalisation. Gauge symmetry forbids $m^2A^2$, so a gauge boson mass is natural in the same sense.
+A symmetry that forbids the mass term also forbids its radiative correction, because the correction must respect the symmetry of the Lagrangian. Chiral symmetry forbids $m\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}$ for a massless fermion, so the correction must be proportional to the mass — a fermion mass is *technically natural*: setting it to zero is stable under renormalisation. Local symmetry forbids $m^2A^2$, so a connection mass is natural in the same sense.
 
 The scalar has no such protection. $\xi_{\mathrm{pot}}^{\dagger}\xi_{\mathrm{pot}}$ is a singlet under every symmetry of the Standard Model, so no symmetry forbids it, and no symmetry can forbid its correction. This is the whole content of the hierarchy problem: it is a statement about the absence of a symmetry, and it is exact in that form.
 
@@ -333,7 +333,7 @@ The table gives each item and its provenance.
 
 ## Summary
 
-The Higgs mass is the only dimensionful parameter with no symmetry to protect it. Every heavy state coupled to the Higgs shifts it by $\frac{c}{16\pi^2}\Lambda^2$, with coefficients $0.239$ from gauge bosons, $1.476$ from the top and $0.774$ from the quartic, summing to $2.489$.
+The Higgs mass is the only dimensionful parameter with no symmetry to protect it. Every heavy state coupled to the Higgs shifts it by $\frac{c}{16\pi^2}\Lambda^2$, with coefficients $0.239$ from connections, $1.476$ from the top and $0.774$ from the quartic, summing to $2.489$.
 
 The divergence is a convention — dimensional regularisation gives no quadratic term at all — but the sensitivity is not. It is a statement about heavy states, and it produces the tuning: $\Lambda=1.6\times10^{-7}\ \mathrm{J}$ costs nothing, $1.6\times10^{-6}\ \mathrm{J}$ costs one part in a hundred, $M_{\mathrm{Pl}}$ costs one part in $3.0\times10^{32}$.
 

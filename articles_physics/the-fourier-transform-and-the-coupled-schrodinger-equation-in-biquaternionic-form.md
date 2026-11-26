@@ -12,7 +12,7 @@ The second finding is the split between the curvature and the gap. The symbol's 
 
 The third finding is that the connection cannot split the symbol. Every coefficient of the connection is central, so the covariant derivative commutes with the four units and the symbol remains one element or one scalar. The coupling does not enlarge the carrier and does not mix the coefficients, which is the parent's fourfold structure surviving the transform.
 
-The fourth finding is that the scalar potential translates the pole pair and leaves its spacing alone. A constant $\omicron_{\mathrm{pot}}$ shifts both eigenvalues by the same number, so the spacing is untouched and equal to the free gap. The spacing is gauge invariant and the position of the pair is not, and the gauge transformation's effect on the frequency is exactly the phase shift the field supplies.
+The fourth finding is that the scalar potential translates the pole pair and leaves its spacing alone. A constant $\omicron_{\mathrm{pot}}$ shifts both eigenvalues by the same number, so the spacing is untouched and equal to the free gap. The spacing is invariant and the position of the pair is not, and the local transformation's effect on the frequency is exactly the phase shift the field supplies.
 
 The companion articles. The polar companion, *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Polar Variables*, reads the same symbol in the chart. The variational companion, *The Lagrangian and the Coupled Schrödinger Equation in Momentum Space*, asks what the coupled action's quadratic form is at fixed frequency. The free version of this article is *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form*.
 
@@ -84,7 +84,7 @@ What the identity says. The coupling does not create a new dispersion relation. 
 
 What the identity does not say. It does not say that the two settings are the same setting, and it does not say that $\vec\nu_{\Phi}$ is the kinetic momentum. The shifted argument is $h\,\vec\nu_{\Phi}-q\vec A$, which the parent calls the mechanical momentum $\vec\pi$, and the identity is the statement that the symbol depends on the mechanical momentum alone.
 
-The mechanical momentum is the invariant. The mechanical momentum and the energy $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ are the two gauge-invariant combinations of the polar coupled companion. In the symbol they are the only arguments: the symbol is a function of the two invariants and of nothing else.
+The mechanical momentum is the invariant. The mechanical momentum and the energy $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ are the two invariant combinations of the polar coupled companion. In the symbol they are the only arguments: the symbol is a function of the two invariants and of nothing else.
 
 The free symbol is recovered twice. Setting $\omicron_{\mathrm{pot}}=0$ and $\vec A=0$ returns the free symbol. Setting $ϙ=0$ returns it as well. The two limits agree, which is the check that the sign of $ϙ$ is the parent's and not a fresh choice.
 
@@ -140,13 +140,13 @@ Why that is not a paradox. A constant $\vec A$ shifts the wave vector; a constan
 
 The constant setting's pole pair. The zeros of the determinant are at $hf_{\mathrm{frq}}=h_t-ϙ\omicron_{\mathrm{pot}}\pm\lvert\vec h_\Psi-q\vec A\rvert$, each twice. The pair is the free pair translated by $-ϙ\omicron_{\mathrm{pot}}$ and its half-gap enlarged by $\vec A$.
 
-**The spacing is gauge invariant.** The spacing is $2\lvert\vec h_\Psi-q\vec A\rvert$ and the position is $h_t-ϙ\omicron_{\mathrm{pot}}$. Under a gauge transformation with $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ and $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$, the constant setting admits only linear $\Gamma$, for which both shifts are constants: the position moves by $-ϙ\partial_{t'}\Gamma$ and the field's phase moves by $+\frac{2\pi ϙ\Gamma}{h}$. The two cancel in the frequency, and the spacing is untouched by either, which is the frequency-space form of the parent's check.
+**The spacing is invariant.** The spacing is $2\lvert\vec h_\Psi-q\vec A\rvert$ and the position is $h_t-ϙ\omicron_{\mathrm{pot}}$. Under a local transformation with $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ and $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$, the constant setting admits only linear $\Gamma$, for which both shifts are constants: the position moves by $-ϙ\partial_{t'}\Gamma$ and the field's phase moves by $+\frac{2\pi ϙ\Gamma}{h}$. The two cancel in the frequency, and the spacing is untouched by either, which is the frequency-space form of the parent's check.
 
 The ranks are the free ranks. The symbol is invertible off the zeros, has rank two at a zero and rank zero at the single zero of a scalar Hamiltonian. The connection changes none of the three numbers, and the reason is that it changes the symbol's arguments and not its type.
 
 The degenerate case moves as one number. For $\vec h_\Psi=0$ and $\vec A=0$ the pair collapses to the single value $h_t-ϙ\omicron_{\mathrm{pot}}$, and the gap is zero. A scalar potential shifts the collapse point and does not open a gap, which is the statement that an electric potential cannot create structure.
 
-The pole set is a function of the two invariants. $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi=h\,\vec\nu_{\Phi}-q\vec A$ are the only combinations that appear, so the zero set is a locus in the space of invariants. Gauge transformations move the coordinates and not the locus, and that sentence is the whole of this section's content.
+The pole set is a function of the two invariants. $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi=h\,\vec\nu_{\Phi}-q\vec A$ are the only combinations that appear, so the zero set is a locus in the space of invariants. Local transformations move the coordinates and not the locus, and that sentence is the whole of this section's content.
 
 What the spacing is not. It is not a mass. The gap of the free Schrödinger symbol is $2\lvert\vec h_\Psi\rvert$, which is twice a momentum and not a mass; the mass appears as the curvature. The article keeps the two words apart, because a second-order equation's shell is a mass and a first-order equation's gap is a rate.
 
@@ -174,7 +174,7 @@ The first question is the operator setting's spectrum. With a confining potentia
 
 The second is the sign's physical reading. The shift $+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ raises the frequency for a positive $ϙ\omicron_{\mathrm{pot}}$. Whether the corpus's convention for the charge makes that the standard sign for every reader is a conventions question and not a physics question, and it is left to the conventions articles.
 
-The third is the varying connection. The gauge-invariant statement is about the two invariants; whether a local symbol built from them is faithful where the connection varies is the polar companion's open question, and it is open here.
+The third is the varying connection. The invariant statement is about the two invariants; whether a local symbol built from them is faithful where the connection varies is the polar companion's open question, and it is open here.
 
 The fourth is the field strength's second-order effect. The curvature in the wave vector is invariant, and the mixed derivative $\partial^{2}\sigma/\partial\omega\partial \nu_{\Phi,k}$ vanishes. Whether a nonzero mixed derivative is the mark of a coupling outside the present class is not settled.
 
@@ -184,7 +184,7 @@ The coupled symbol is the free symbol at a shifted argument. In the operator set
 
 The curvature in the wave vector is $-\frac{h^{2}}{4\pi^{2}}/m=-0.588235$, the same with no connection, with $\vec A$ and with $2\vec A$. The gap in the constant setting is $2\lvert\vec h_\Psi-q\vec A\rvert$: $1.232882$ free and $1.503329$ with $ϙ\vec A=(0.35,0.25,0)$, while $ϙ\omicron_{\mathrm{pot}}=0.4$ alone left the gap at $1.232883$ and moved the symbol by $-0.360000$. The scalar potential translates the pair and the vector potential separates it, and the effective mass is the bare mass.
 
-The connection is central in every slot, so the symbol remains one scalar or one element and the four copies of the parent survive. The ranks are the free ranks, the spacing of the pair is gauge invariant, and the pole set is a locus in the plane of the two invariants.
+The connection is central in every slot, so the symbol remains one scalar or one element and the four copies of the parent survive. The ranks are the free ranks, the spacing of the pair is invariant, and the pole set is a locus in the plane of the two invariants.
 
 ## Summary of Notation
 
@@ -199,13 +199,13 @@ The connection is central in every slot, so the symbol remains one scalar or one
 | $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A)$ | The shifted Hamiltonian |
 | $\partial^{2}\sigma/\partial \nu_{\Phi,k}^{2}=-\frac{h^{2}}{4\pi^{2}}/m=-0.588235$ | The curvature; the effective mass; invariant |
 | $2\lvert\vec h_\Psi-q\vec A\rvert$ | The gap; $1.232882$ free, $1.503329$ with the quoted $\vec A$ |
-| $h_t-ϙ\omicron_{\mathrm{pot}}\pm\lvert\vec h_\Psi-q\vec A\rvert$ | The pole pair; translated, with spacing that is gauge invariant |
+| $h_t-ϙ\omicron_{\mathrm{pot}}\pm\lvert\vec h_\Psi-q\vec A\rvert$ | The pole pair; translated, with spacing that is invariant |
 
 ## Further Reading
 
-- *The Coupled Schrödinger Equation in Biquaternionic Form*, for the equation, its two signs, its gauge covariance and the two-number shift this article reads in frequency space.
+- *The Coupled Schrödinger Equation in Biquaternionic Form*, for the equation, its two signs, its covariance and the two-number shift this article reads in frequency space.
 - *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form*, for the free symbol whose shifted arguments appear here.
 - *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the same symbol read in the chart.
 - *The Lagrangian and the Coupled Schrödinger Equation in Momentum Space*, for the coupled action's quadratic form at fixed frequency.
-- *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the two invariants $\vec\pi$ and $\mathcal E$ and the gauge direction.
+- *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the two invariants $\vec\pi$ and $\mathcal E$ and the redundant direction.
 - *Maxwell's Equations in the Biquaternionic Formulation*, for the connection's temporal coefficient and the sign of $ϙ$.

@@ -159,7 +159,7 @@ The group-theoretic statement is worth restating physically. Fermionic squeezing
 
 Both branches act geometrically on the state space, and the action is the action of the group of invertibles of $\mathbb{B}$.
 
-**Phases are the gauge symmetry of the mode.** A phase $\vec\Pi_{\mathrm{nil},x}\mapsto \exp(i\vartheta_{\mathrm{par}})\vec\Pi_{\mathrm{nil},x}$ is conjugation by $\tilde Q_{\mathrm{par},\vartheta}=\exp(-i\vartheta_{\mathrm{par}}\tilde\Pi_{\mathrm{id},-})$, which commutes with the number operator and therefore fixes it and both idempotents:
+**Phases are the local symmetry of the mode.** A phase $\vec\Pi_{\mathrm{nil},x}\mapsto \exp(i\vartheta_{\mathrm{par}})\vec\Pi_{\mathrm{nil},x}$ is conjugation by $\tilde Q_{\mathrm{par},\vartheta}=\exp(-i\vartheta_{\mathrm{par}}\tilde\Pi_{\mathrm{id},-})$, which commutes with the number operator and therefore fixes it and both idempotents:
 $$
 \tilde Q_{\mathrm{par},\vartheta}\,\tilde\Pi_{\mathrm{id},-}\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \tilde\Pi_{\mathrm{id},-},
 \qquad
@@ -167,7 +167,7 @@ $$
 \qquad
 \tilde Q_{\mathrm{par},\vartheta}\,(i\vec e_z)\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = i\vec e_z .
 $$
-The phase changes the ladder operators but leaves the occupation and both one-mode states invariant; it is the $\mathrm{U}(1)$ **gauge** symmetry of the mode, and its generator is the number operator. It is inner and non-central, so it is not the trivial automorphism — it acts nontrivially on the operators and trivially on the states, which is what a symmetry is. In the bilinear pairing the effect cancels: $2\,\mathrm{Sc}(\tilde Q_{\mathrm{par},\vartheta}\tilde{Q}\tilde Q_{\vartheta_{\mathrm{par}}}^{-1})=2\,\mathrm{Sc}(\tilde{Q})$ by cyclicity, so no gauge-invariant observable sees the phase.
+The phase changes the ladder operators but leaves the occupation and both one-mode states invariant; it is the $\mathrm{U}(1)$ **gauge** symmetry of the mode, and its generator is the number operator. It is inner and non-central, so it is not the trivial automorphism — it acts nontrivially on the operators and trivially on the states, which is what a symmetry is. In the bilinear pairing the effect cancels: $2\,\mathrm{Sc}(\tilde Q_{\mathrm{par},\vartheta}\tilde{Q}\tilde Q_{\vartheta_{\mathrm{par}}}^{-1})=2\,\mathrm{Sc}(\tilde{Q})$ by cyclicity, so no invariant observable sees the phase.
 
 **The group of invertibles acts on the Bloch sphere.** The genuinely non-central, non-gauge unitaries of $\mathbb{B}$ form the complement of the stabilizer in $\mathrm{U}(2)$, and their conjugation action on the Hermitian sector,
 $$

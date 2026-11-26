@@ -162,7 +162,7 @@ $$
 
 ## Ghosts, Gauge Fixing and the Scalar Vertices
 
-**One gauge-fixing parameter, because there is one group.** The Feynman–'t Hooft choice $\mathcal{L}_{\mathrm{gf}}=-\tfrac{1}{2\xi}\sum_{a}(\partial_{\imath}A_{a,\imath})^{2}$ gives fifteen ghosts, one per generator, with masses $0$ on the nine and $\xi\,32v^{2}$ on the six. **A second gauge-fixing parameter would be a symptom of a second factor**, and the model has none.
+**One fixing parameter, because there is one group.** The Feynman–'t Hooft choice $\mathcal{L}_{\mathrm{gf}}=-\tfrac{1}{2\xi}\sum_{a}(\partial_{\imath}A_{a,\imath})^{2}$ gives fifteen ghosts, one per generator, with masses $0$ on the nine and $\xi\,32v^{2}$ on the six. **A second fixing parameter would be a symptom of a second factor**, and the model has none.
 
 **The ghost–gauge vertex is $g_{4}f_{abc}k_{\imath}$**, with the momentum on the outgoing ghost. **The count of nonzero vertices is again $29$ triples**, and the vanishing ones vanish for the same reason.
 
@@ -172,7 +172,7 @@ $$
 
 ## What the Rules Do Not Contain
 
-**No $W$, no $Z$, no photon.** The model has one unbroken $\mathrm{U}(1)$ and eight gluons; **the electroweak gauge fields arrive at $M_C$, and so do their vertices.** A rule set that printed a $Wff$ vertex would be printing a vertex of a different Lagrangian.
+**No $W$, no $Z$, no photon.** The model has one unbroken $\mathrm{U}(1)$ and eight gluons; **the electroweak connections arrive at $M_C$, and so do their vertices.** A rule set that printed a $Wff$ vertex would be printing a vertex of a different Lagrangian.
 
 **No fermion masses and no mixing angles.** The sixteen Weyl fields are massless until the condensate gives them a Yukawa matrix, and that matrix is [the Yukawa article](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). **No CKM matrix and no PMNS matrix**: both need two factors and a second condensate.
 
@@ -213,13 +213,13 @@ $$
 | --- | --- |
 | $G_{a}$, $a=1\dots15$ | the printed anti-Hermitian arrays |
 | $t_{a}$ | the generator made Hermitian and rescaled, $t_{a}=iG_{a}/\sqrt{2\operatorname{tr}(G_{a}^{\dagger}G_{a})}$, so $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ |
-| $A_{a,\imath}$ | the fifteen gauge fields |
+| $A_{a,\imath}$ | the fifteen connections |
 | $\xi_{i}$, $\bar\xi^{i}$ | the quartet and conjugate-quartet Weyl fields, two copies each |
 | $Ξ$ | the Hermitian $4\times4$ scalar, sixteen real components |
 | $D=\operatorname{diag}(-3,1,1,1)$ | the condensate direction |
 | $d_{2}$, $d_{3}$, $c_{2}$, $c_{3}$ | the two colour diagonals and their orthogonal combinations |
 | $f_{abc}$ | the structure constants of the fifteen |
-| $\xi$ | the gauge-fixing parameter, not the fermion |
+| $\xi$ | the fixing parameter, not the fermion |
 
 ## Further Reading
 

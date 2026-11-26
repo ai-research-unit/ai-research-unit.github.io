@@ -90,13 +90,13 @@ $$
 
 **4.5 The breaking is wanted twice over, and it costs no Goldstone.** A Majorana mass for the right-handed neutrino carries $B-L=-2$, so it needs a vacuum that breaks the charge — and the transition supplies one. **That is the seesaw's licence, and it is the same vev that breaks $\mathrm{SU}(2)_R$** ([The Seesaw Mechanism](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html)). And because the broken direction was a direction of a *gauge* group above $M_C$, the would-be Goldstone is eaten: it is the longitudinal mode of the $Z_R$, whose mass $\tfrac58g^2v_C^2$ is the neutral sector's ([The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html)).
 
-**4.6 Compared with the Standard Model.** There $B-L$ is an accidental global symmetry from the start and is never gauged, and it is broken only by the Weinberg operator at dimension five. **Here it is a gauge direction above $M_C$, broken at $M_C$, and accidental below it** — the exact opposite order of statuses, with the same low-energy consequence, because the residual violation below $M_C$ is again of dimension five and suppressed by the same scale.
+**4.6 Compared with the Standard Model.** There $B-L$ is an accidental global symmetry from the start and is never gauged, and it is broken only by the Weinberg operator at dimension five. **Here it is a redundant direction above $M_C$, broken at $M_C$, and accidental below it** — the exact opposite order of statuses, with the same low-energy consequence, because the residual violation below $M_C$ is again of dimension five and suppressed by the same scale.
 
 ## $B$ and $L$ Separately
 
 **The charges that are not symmetries, and the reason the proton is stable anyway.**
 
-**5.1 The violation.** Above $M_C$ the leptoquark vertex couples a quark to a lepton, and the gauge field that mediates it carries $B-L=\pm\tfrac43$ and no baryon number. So $B$ alone and $L$ alone are explicitly broken by the gauge coupling; above $M_C$ only $B-L$ is a symmetry of the gauge sector — and the vacuum breaks even that one, at the same scale, by §4.2.
+**5.1 The violation.** Above $M_C$ the leptoquark vertex couples a quark to a lepton, and the connection that mediates it carries $B-L=\pm\tfrac43$ and no baryon number. So $B$ alone and $L$ alone are explicitly broken by the gauge coupling; above $M_C$ only $B-L$ is a symmetry of the sector — and the vacuum breaks even that one, at the same scale, by §4.2.
 
 **5.2 The size of the violation.** Below $M_C$ the mediator is gone and the violation appears as dimension-six operators suppressed by $1/M_C^{2}$. So $B$ and $L$ are violated at low energy by an amount that is small because $M_C$ is large, not because a symmetry protects them.
 
@@ -108,7 +108,7 @@ $$
 
 **Not every conserved number is a symmetry of the vacuum.** Three examples, and one warning.
 
-**6.1 What "accidental" means.** A charge that is conserved because the renormalisable Lagrangian contains no operator violating it, given the field content and the gauge symmetries. It is not imposed; it follows.
+**6.1 What "accidental" means.** A charge that is conserved because the renormalisable Lagrangian contains no operator violating it, given the field content and the local symmetries. It is not imposed; it follows.
 
 **6.2 The examples, and one that is not one.** Baryon number below $M_C$ is accidental: no renormalisable operator violates it once the leptoquarks are removed, and the leading violation is of dimension six. **Lepton number is not accidental here.** The right-handed neutrino is a gauge singlet below $M_C$, its Majorana mass carries $B-L=-2$, and the vacuum has already broken the charge that forbade it — so $L$ is broken at dimension three, with no suppression at all. **That is the seesaw, and it is why the neutrino mass is the one place the framework's broken charge shows.**
 
@@ -120,7 +120,7 @@ $$
 
 **One combination is violated by non-perturbative effects, and it is not $B-L$.**
 
-**7.1 The statement.** In the Standard Model the combination $B+L$ is violated by sphalerons while $B-L$ is not. The same holds here below $M_C$, because the field content and the gauge group restricted to the Standard-Model factors are the same. **The anomalous statement is about the coefficients of the currents, not about the vacuum**, so the breaking of §4.2 does not touch it: the triangle coefficient of $B-L$ vanishes whether or not a vev carries the charge. What the breaking does change is the *kind* of protection — accidental rather than gauge — and the leading explicit violation is the dimension-five Weinberg operator, suppressed by the transition scale.
+**7.1 The statement.** In the Standard Model the combination $B+L$ is violated by sphalerons while $B-L$ is not. The same holds here below $M_C$, because the field content and the symmetry group restricted to the Standard-Model factors are the same. **The anomalous statement is about the coefficients of the currents, not about the vacuum**, so the breaking of §4.2 does not touch it: the triangle coefficient of $B-L$ vanishes whether or not a vev carries the charge. What the breaking does change is the *kind* of protection — accidental rather than gauge — and the leading explicit violation is the dimension-five Weinberg operator, suppressed by the transition scale.
 
 **7.2 Why $B-L$ escapes.** Its current has vanishing anomaly coefficients. The triangle coefficient of $B-L$ cancels inside a generation for the same reason every other anomaly does, the trace $\operatorname{tr}_{\mathbf4}(B-L)=0$ over the four entries of the carrier. So the current is conserved even where it is only global, and the sphaleron has nothing to act on. Above $M_C$ the direction is inside a simple group and there is no separate current to discuss.
 
@@ -136,7 +136,7 @@ $$
 | the rank | $3\to5\to4\to3$ | two gained and one lost at $M_C$, one lost at $M_W$ |
 | the two steps at $M_W$ | $T_{3L}$ and $Y$ broken, $Q$ conserved | a sum of two broken generators can be unbroken |
 | the $B-L$ of the leptoquarks | $\pm\tfrac43$ against $\pm\tfrac23$ for a diquark | the diquark vertex is forbidden |
-| the $B-L$ status | a gauge direction above $M_C$, broken at $M_C$ | the eigenvalue never changes; the charge is lost |
+| the $B-L$ status | a redundant direction above $M_C$, broken at $M_C$ | the eigenvalue never changes; the charge is lost |
 | the anomaly of $B-L$ | $\operatorname{tr}_{\mathbf4}(B-L)=0$ | no anomalous violation |
 
 ## Distinctions That Are Easy to Lose

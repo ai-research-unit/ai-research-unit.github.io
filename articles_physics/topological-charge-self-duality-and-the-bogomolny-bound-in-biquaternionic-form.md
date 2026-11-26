@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The object.** A field configuration can be classified by an integer that no continuous deformation changes. For a gauge field the integer is the integral of a density built from the field strength, and it is fixed by the behaviour of the field at infinity rather than by its shape. Configurations with nonzero charge are **instantons** in the Euclidean theory; the same charge in the Lorentzian theory would be carried by solitons, and the two cases differ in what makes a configuration stable.
+**The object.** A field configuration can be classified by an integer that no continuous deformation changes. For a connection the integer is the integral of a density built from the field strength, and it is fixed by the behaviour of the field at infinity rather than by its shape. Configurations with nonzero charge are **instantons** in the Euclidean theory; the same charge in the Lorentzian theory would be carried by solitons, and the two cases differ in what makes a configuration stable.
 
 **What this article is.** The general theory, with no sector attached: the density, its primitivity, the self-duality condition, the bound that self-dual configurations saturate, and the reason the framework's own invariants supply the abelian density and not the non-abelian one. It is used by the strong sector, where the objects are the non-perturbative configurations of the colour gauge theory.
 
@@ -13,7 +13,7 @@
 
 ## The Density and Its Primitivity
 
-**The density.** For a gauge field with field strength $F_{\imath\jmath}$,
+**The density.** For a connection with field strength $F_{\imath\jmath}$,
 
 $$
 \varrho=\frac{1}{16\pi^2}\,\mathrm{Tr}\left(F_{\imath\jmath}\tilde F_{\imath\jmath}\right),
@@ -39,7 +39,7 @@ $$
 J_{\mathrm{CS},\imath}=\tfrac14\epsilon_{\imath\jmath\rho\sigma}A_{\jmath} F_{\rho\sigma},
 $$
 
-and $J_{\mathrm{CS}}$ is gauge dependent while $\varrho$ is not. The primitive is therefore a computational device, not an invariant, and this distinction matters when the question is whether the framework can write the density at all.
+and $J_{\mathrm{CS}}$ is representative-dependent while $\varrho$ is not. The primitive is therefore a computational device, not an invariant, and this distinction matters when the question is whether the framework can write the density at all.
 
 **The abelian charge vanishes.** On $\mathbb R^4$ with finite action the boundary term vanishes, so there is no abelian instanton. Instantons are intrinsically non-abelian.
 
@@ -66,7 +66,7 @@ with equality exactly when $F=\pm\star F$. The self-dual configurations are ther
 ## What the Framework Supplies
 
 - **Supplied.** Two invariants of the abelian field, $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, and the identity $\sum_{\imath,\jmath}F_{\imath\jmath}\star F_{\imath\jmath}=4I_2$ in the Euclidean case, so the imaginary part of the biquaternion norm **is** the abelian density.
-- **Not supplied.** The non-abelian density. $\mathrm{Tr}(F\wedge F)$ needs a matrix trace over the gauge algebra, and the biquaternion norm is a rank-two bilinear with a single algebra slot; the norm of the biquaternion representative is not gauge invariant under $F_{\imath\jmath}\mapsto\tilde UF_{\imath\jmath}\tilde U^{-1}$. This is a recorded gap, not an oversight.
+- **Not supplied.** The non-abelian density. $\mathrm{Tr}(F\wedge F)$ needs a matrix trace over the algebra, and the biquaternion norm is a rank-two bilinear with a single algebra slot; the norm of the biquaternion representative is not invariant under $F_{\imath\jmath}\mapsto\tilde UF_{\imath\jmath}\tilde U^{-1}$. This is a recorded gap, not an oversight.
 - **Imported.** The star, the bound and the Chern–Simons primitive.
 
 **Where the application is.** [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html) applies every statement above to the framework's compact factor: it writes the density for both cases, verifies the total-derivative identity symbolically, checks the non-invariance numerically, and exhibits the BPST solution with its charge and action.

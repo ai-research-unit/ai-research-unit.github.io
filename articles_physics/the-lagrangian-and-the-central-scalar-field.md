@@ -60,7 +60,7 @@ The mass term. $-\tfrac12\nu_m^2\mathrm{Sc}(\tilde\Xi^{\natural}\tilde\Xi)=-\tfr
 
 The source term. $g\rho\,\mathrm{Sc}(\tilde\Xi)=g\rho\,\xi$ couples the field to a prescribed density and nothing else; it is linear, so it shifts the minimum without changing the quadratic structure. The sign convention that makes like sources attract is the one in which a positive $\rho$ produces a negative $\xi$, which is what the parent's static solution shows.
 
-What the action does not contain. No cubic or quartic term in $\xi$ built from the algebra, because there is no invariant of the algebra of that degree in a central element; no derivative coupling, because there is no gauge field in this sector; and no spin term, because a central scalar carries no vector index. Each absence is a statement about the algebra and not an omission.
+What the action does not contain. No cubic or quartic term in $\xi$ built from the algebra, because there is no invariant of the algebra of that degree in a central element; no derivative coupling, because there is no connection in this sector; and no spin term, because a central scalar carries no vector index. Each absence is a statement about the algebra and not an omission.
 
 **The pairing. The pairing is the scalar part of the element product, and in the centre it is ordinary multiplication.** $\mathrm{Sc}(\tilde\Xi^{\natural}\tilde\Xi)=\xi^2$ and $\mathrm{Sc}((\tilde\nabla_\Phi\tilde\Xi)^{\natural}\tilde\nabla_\Phi\tilde\Xi)=\sum_{\imath}(\partial_{\imath}\xi)^2$, both real. There is no imaginary part to cancel and no conjugation to choose, because a central element is its own conjugate up to sign in the imaginary centre.
 
@@ -102,9 +102,9 @@ The Green function, and what it is not. The action's kernel is $\Box_\Phi-4\pi^{
 
 ## The Constraints the Action Imposes: There Are None
 
-The count. **One real function, one second-order equation, one degree of freedom. No gauge symmetry, no Gauss law, no constraint surface to restrict the variation.** The action is unconstrained and that is the whole of its constraint structure.
+The count. **One real function, one second-order equation, one degree of freedom. No local symmetry, no Gauss law, no constraint surface to restrict the variation.** The action is unconstrained and that is the whole of its constraint structure.
 
-Why that is worth a section. Every other article in the family has a constraint: the Proca field has its Lorenz condition, the gauge fields have their Gauss laws, the sigma model has its unit-norm surface. The scalar has none, and the absence is what makes it the reference case against which the others' constraints can be read.
+Why that is worth a section. Every other article in the family has a constraint: the Proca field has its Lorenz condition, the connections have their Gauss laws, the sigma model has its unit-norm surface. The scalar has none, and the absence is what makes it the reference case against which the others' constraints can be read.
 
 What the absence implies for the canonical treatment. The scalar's canonical momentum is $\pi=\partial\mathcal{L}/\partial\dot\xi=\dot\xi$, and the relation is invertible, so there is no primary constraint and no Dirac bracket. The canonical quantisation of the scalar field is therefore the simplest in the corpus, and its simplicity is a consequence of the action's unconstrained form.
 
@@ -112,7 +112,7 @@ What the absence implies for the canonical treatment. The scalar's canonical mom
 
 The statement. **$\Box_\Phi$ is central, so it acts on each of the four components of $\tilde\Xi$ separately and identically.** A field with all four components active is four decoupled copies of the scalar, not one interacting system.
 
-Why this is a boundary and not a defect. The family's other sectors need a noncentral operator to couple components: the Proca equation's field strength, the Dirac equation's $\gamma$-insertion, the gauge field's commutator. The scalar's operator has none, so the scalar cannot mix the algebra's directions. That is precisely why the scalar is said to lie outside the state module and why the corpus's ladder structure is absent in this sector.
+Why this is a boundary and not a defect. The family's other sectors need a noncentral operator to couple components: the Proca equation's field strength, the Dirac equation's $\gamma$-insertion, the connection's commutator. The scalar's operator has none, so the scalar cannot mix the algebra's directions. That is precisely why the scalar is said to lie outside the state module and why the corpus's ladder structure is absent in this sector.
 
 The one thing the centre does carry. It carries the mass and the wave operator, and both are exact. The scalar's classical dynamics, its Green functions and its Yukawa profile are all correct in the algebra's letters. The boundary is at the interaction, not at the propagation.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The question.** The frame's gauge group carries two $\mathrm{SU}(2)$ factors, one on each side. Where does a doubled $\mathrm{SU}(2)$ come from in this algebra, and what does it act on?
+**The question.** The frame's symmetry group carries two $\mathrm{SU}(2)$ factors, one on each side. Where does a doubled $\mathrm{SU}(2)$ come from in this algebra, and what does it act on?
 
 **The answer in three lines.**
 
@@ -14,15 +14,15 @@ L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4),\quad \dim=3+3=6,\quad \o
 \;}
 $$
 
-**The group is the algebra's own product, at the element level, for free**, as the two one-sided families of the vector part. **Its two factors are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$**, and the sign of one bracket is what distinguishes them. **And the same group acts on two different modules**, spacetime and internal, of which only the second is a gauge factor.
+**The group is the algebra's own product, at the element level, for free**, as the two one-sided families of the vector part. **Its two factors are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$**, and the sign of one bracket is what distinguishes them. **And the same group acts on two different modules**, spacetime and internal, of which only the second is a group factor.
 
-**What this article claims.** That the group is present in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ without an operator layer; that its two factors are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$, distinguished by the sign of one bracket; that the same group acts on two different modules, spacetime and internal, and that only the second is a gauge factor; that three of its four roles in physics are already realised; and that whether the fourth is realised is a question about the module and not about the algebra.
+**What this article claims.** That the group is present in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ without an operator layer; that its two factors are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$, distinguished by the sign of one bracket; that the same group acts on two different modules, spacetime and internal, and that only the second is a group factor; that three of its four roles in physics are already realised; and that whether the fourth is realised is a question about the module and not about the algebra.
 
 **What this article does not claim.** That the algebra supplies a chiral gauge theory. It does not: one-sided multiplication is vector-like, and the tie between an operator side and a spinor letter is not in the algebra. That failure is the *chiral wall*, stated in [Electroweak Theory in the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and restated for the frame in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html); *One Group, Two Modules* and *What Would Settle It* quote it and do not re-derive it. **Nor does this article state any coupling value**; where the two factors' strengths would enter, it names the structure and stops.
 
 **Where the other question is answered.** Why the low-energy gauge group has one weak factor and not two is a question about hypercharge, about the multiplet assignment and about a breaking, and it is the Standard Model's chapter: [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html), §*Why the Standard Model Gauges One Side and Not Two*. **This article keeps the group; that section keeps the comparison.**
 
-**One word, five jobs.** *Left* and *right* name, in this corpus, the slot an operator acts on, the label of an element, the helicity of a field, the multiplication side in a product, and — in $\mathrm{SU}(2)_L$ — a gauge factor. **Five meanings of two words is how this subject goes wrong**, so this article says *side* for the multiplication, *letter* for the chirality slot, and *factor* for the gauge group.
+**One word, five jobs.** *Left* and *right* name, in this corpus, the slot an operator acts on, the label of an element, the helicity of a field, the multiplication side in a product, and — in $\mathrm{SU}(2)_L$ — a group factor. **Five meanings of two words is how this subject goes wrong**, so this article says *side* for the multiplication, *letter* for the chirality slot, and *factor* for the symmetry group.
 
 **The order.** *The Group* fixes the group as an abstract object. *The Two Sides in the Algebra* finds it in the algebra and separates its two halves. *One Group, Two Modules* separates the two modules the group can act on, which is the technical heart. *Four Roles in Physics* lists the four roles it plays in physics. *What the Group Costs* is the cost, *What Would Settle It* is what would settle it, *The Checks* is the checks and *Distinctions That Are Easy to Lose* the distinctions.
 
@@ -142,7 +142,7 @@ $$
 
 ## One Group, Two Modules
 
-**The danger.** *The Two Sides in the Algebra* shows that the group is native. It does not show that the group can be an *internal* gauge symmetry, and that difference is the whole question. **A group is not a physical symmetry until a module is named**, and this group acts here on two modules that are not the same physics.
+**The danger.** *The Two Sides in the Algebra* shows that the group is native. It does not show that the group can be an *internal* local symmetry, and that difference is the whole question. **A group is not a physical symmetry until a module is named**, and this group acts here on two modules that are not the same physics.
 
 **The first module: the carrier.** $\mathbb{B}$ itself, real dimension eight, with the vector part $\mathfrak{k}$ of dimension three carrying the adjoint action. Here the group is
 
@@ -251,7 +251,7 @@ The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g
 
 The group is not the pair's group. $\mathrm{SU}(2)\times\mathrm{SU}(2)$ is a product of two factors; the electroweak pair of the Standard Model, $\mathrm{SU}(2)\times\mathrm{U}(1)$, is a different group with a different quotient structure, and [The Electroweak Pair](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html) is where that difference is computed.
 
-Native is not gauged. The group's presence at the element level is a fact about the algebra; a gauge symmetry is a fact about a module (*One Group, Two Modules*).
+Native is not gauged. The group's presence at the element level is a fact about the algebra; a local symmetry is a fact about a module (*One Group, Two Modules*).
 
 Spacetime is not internal. The same group is $\mathrm{Spin}(4)_{E}$ on the carrier and an internal factor on the tensor factors, and the left–right model needs the second (*One Group, Two Modules*).
 
@@ -277,7 +277,7 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 
 **The cost.** Two $\mathrm{SU}(2)$'s and a circle are free, because the alphabet is $\mathrm{SU}(2)$; colour costs a layer; a group needing a separate $\mathrm{SU}(3)$ with a commuting $\mathrm{SU}(2)$ is over budget.
 
-**What is missing, and it is one thing.** The tie between the operator side and the spinor letter. With it the two factors become the two chiralities, and the group becomes a chiral gauge group in the algebra's own terms.
+**What is missing, and it is one thing.** The tie between the operator side and the spinor letter. With it the two factors become the two chiralities, and the group becomes a chiral symmetry group in the algebra's own terms.
 
 ## Summary of Notation
 

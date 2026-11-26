@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The companion articles *Non-Abelian Gauge Fields in Biquaternionic Form* and *Instantons and Solitons in Biquaternionic Form* build their non-abelian gauge theory on the compact factor
+The companion articles *Non-Abelian Gauge Fields in Biquaternionic Form* and *Instantons and Solitons in Biquaternionic Form* build their Yang–Mills theory on the compact factor
 
 $$
 \mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi} ,
 $$
 
-whose group is the unit quaternions, $\mathrm{SU}(2)=\{\tilde u\in\mathbb{H}:\langle\tilde u\rangle_{\natural}=1\}=S^3=\mathrm{Spin}(3)$, the group of the spatial rotations; and their abelian gauge theory on the central phase $\mathbb C_{\mathbb B}$. The article keeps the algebra and its group apart throughout, because the ceiling below is a statement about the algebra, and which group the algebra's factor is in the language of the Standard Model is a separate question with a separate answer. The reason for the split is not a choice of convenience, and it is not that nobody has tried the alternative: the biquaternion algebra reaches $SU(2)$ and it does not reach $SU(3)$. This article states that ceiling precisely, proves it from the algebra's own structure, and identifies what has to be added to pass it. The result is a **result**, not a failure: a framework that knows exactly which gauge groups it can carry and which it cannot is more informative than one that leaves the question open.
+whose group is the unit quaternions, $\mathrm{SU}(2)=\{\tilde u\in\mathbb{H}:\langle\tilde u\rangle_{\natural}=1\}=S^3=\mathrm{Spin}(3)$, the group of the spatial rotations; and their abelian gauge theory on the central phase $\mathbb C_{\mathbb B}$. The article keeps the algebra and its group apart throughout, because the ceiling below is a statement about the algebra, and which group the algebra's factor is in the language of the Standard Model is a separate question with a separate answer. The reason for the split is not a choice of convenience, and it is not that nobody has tried the alternative: the biquaternion algebra reaches $SU(2)$ and it does not reach $SU(3)$. This article states that ceiling precisely, proves it from the algebra's own structure, and identifies what has to be added to pass it. The result is a **result**, not a failure: a framework that knows exactly which symmetry groups it can carry and which it cannot is more informative than one that leaves the question open.
 
 Three distinct questions must be separated, because they have different answers and conflating them produces a spurious "problem".
 
@@ -17,9 +17,9 @@ Three distinct questions must be separated, because they have different answers 
 3. *Can the colour triplet be a module of the algebra?* No. A module over $\mathbb B\cong M_2(\mathbb C)$ has even complex dimension, and colour requires a complex three-dimensional space.
 4. *Can a group that is not in the algebra still be legitimate?* Yes, if the algebra gives it an address and a module. This fourth question is not answered by the ceiling and is not the same question as any of the first three; it is the Layer-B question, and its answer has two parts. **The address**: the generators are endomorphisms of $\mathbb B$, sums of the Conway words $e_{\imath}[\,]e_{\jmath}$, which is the third sense of *Expressing Lie Algebras via Biquaternions*. **The module**: the group acts on a carrier the algebra supplies. $\mathrm{SU}(4)$ acting on the formal copy passes both and does not satisfy question 1. **The two verdicts are both true, and they are about different objects**; §*The Ceiling and the Standard Model* states where the boundary falls.
 
-The article answers the first three, and the answers are consistent: the algebra's intrinsic compact gauge algebra is $\mathfrak{u}(2)$, of real dimension four, whose group is $\mathrm{U}(2)$; $SU(3)$ needs an eight-dimensional compact algebra and cannot be contained in it; and the smallest carrier that contains $SU(3)$ is $M_2(\mathbb B)$, whose intrinsic group is $\mathrm{U}(4)$.
+The article answers the first three, and the answers are consistent: the algebra's intrinsic compact algebra is $\mathfrak{u}(2)$, of real dimension four, whose group is $\mathrm{U}(2)$; $SU(3)$ needs an eight-dimensional compact algebra and cannot be contained in it; and the smallest carrier that contains $SU(3)$ is $M_2(\mathbb B)$, whose intrinsic group is $\mathrm{U}(4)$.
 
-- Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the non-abelian gauge structure.
+- Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the non-abelian structure.
 - The mathematics articles *Biquaternion Rotations and Lorentz Transformations* and *Biquaternion Versors and the Orthogonal Group*, for the representation theory of the algebra and for its spinor and Clifford realizations.
 - The mathematics article *The Biquaternion Group of Invertibles as a Topological Group*, for the topological obstructions.
 - Companion article *The Hopf Fibration and the Biquaternion Gauge Bundle*, for the intrinsic $\mathrm{U}(2)$ as a structure group.
@@ -27,7 +27,7 @@ The article answers the first three, and the answers are consistent: the algebra
 
 ## The Algebra's Own Compact Structure
 
-The gauge fields of the framework are elements of the algebra. The Lie algebra generated by taking commutators of the algebra with itself is
+The connections of the framework are elements of the algebra. The Lie algebra generated by taking commutators of the algebra with itself is
 
 $$
 [\mathbb B,\mathbb B] \;=\; \mathrm{SL}(2,\mathbb C) ,
@@ -63,7 +63,7 @@ $$
 \dim_{\mathbb R}\mathrm{U}(2)=4\;}.
 $$
 
-This is the algebra's intrinsic gauge structure, and it is verified by the dimension count and the commutators: the three $\vec e_a$ close on $\mathrm{SU}(2)$ with the structure constants $\varepsilon_{abc}$, and $ie_t$ is central and spans the $\mathrm{U}(1)$. The three $\vec e_a$ span the Lie algebra of $\mathrm{Spin}(3)$, the group of the spatial rotations, and the group generated by them is the unit quaternions, $S^3$; that identification is what the ceiling below turns on, and the notation keeps the algebra and the group apart. The gauge group of fields valued in $\mathbb B$ is therefore
+This is the algebra's intrinsic structure, and it is verified by the dimension count and the commutators: the three $\vec e_a$ close on $\mathrm{SU}(2)$ with the structure constants $\varepsilon_{abc}$, and $ie_t$ is central and spans the $\mathrm{U}(1)$. The three $\vec e_a$ span the Lie algebra of $\mathrm{Spin}(3)$, the group of the spatial rotations, and the group generated by them is the unit quaternions, $S^3$; that identification is what the ceiling below turns on, and the notation keeps the algebra and the group apart. The symmetry group of fields valued in $\mathbb B$ is therefore
 
 $$
 G_{\mathbb B}=\mathrm{U}(2),
@@ -75,7 +75,7 @@ or $SU(2)\times \mathrm{U}(1)$ if the determinant phase is separated, the two be
 
 - **Unitaries of the defining module.** $\mathbb B\cong M_2(\mathbb C)$ acts on the defining module $S\cong\mathbb C^2$, and the unitaries of this action are $\mathrm{U}(2)$.
 - **Automorphisms.** The $\mathbb C$-algebra automorphisms of $\mathbb B\cong M_2(\mathbb C)$ are $PGL(2,\mathbb C)=PSL(2,\mathbb C)$, whose maximal compact subgroup is $PU(2)=SO(3)=SU(2)/\mathbb Z_2$; over $\mathbb R$ the Galois conjugation of $i$ is an additional outer automorphism, and the compact part remains the same. The automorphism group of the imaginary quaternions is $SO(3)=SU(2)/\mathbb Z_2$.
-- **Norm-preserving rotors.** The transformations preserving the biquaternion norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ act as left and right quaternion multiplication, $SU(2)_{\mathrm{L}}\times SU(2)_{\mathrm{R}}/\mathbb Z_2=SO(4)$, the two subscripts marking the two sides of the multiplication and not the electroweak factors; the diagonal subgroup is the $SU(2)$ of the present gauge theory, and the axial combination is the chirality rotation of *Chiral Fermions in the Biquaternion Framework*, not a gauge group.
+- **Norm-preserving rotors.** The transformations preserving the biquaternion norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ act as left and right quaternion multiplication, $SU(2)_{\mathrm{L}}\times SU(2)_{\mathrm{R}}/\mathbb Z_2=SO(4)$, the two subscripts marking the two sides of the multiplication and not the electroweak factors; the diagonal subgroup is the $SU(2)$ of the present gauge theory, and the axial combination is the chirality rotation of *Chiral Fermions in the Biquaternion Framework*, not a symmetry group.
 - **Stabilisers.** The stabiliser of a unit pure-imaginary element $\vec u$, which is the unbroken $\mathrm{U}(1)$ of an adjoint-scalar symmetry-breaking pattern, is a maximal torus of $SU(2)$; the pattern of unbroken subgroups is the pattern of $SU(2)$, with a one-dimensional maximal torus.
 
 Four constructions, one ceiling.
@@ -84,7 +84,7 @@ Four constructions, one ceiling.
 
 The obstruction to $SU(3)$ has a dimension form, a module form, and an algebraic form, and the three are independent.
 
-**Dimension.** The compact gauge algebra of the algebra is $\mathrm{U}(2)$, of real dimension $4$. The Lie algebra $\mathrm{SU}(3)$ has real dimension $8$. A subalgebra cannot be larger than its parent,
+**Dimension.** The compact algebra of the algebra is $\mathrm{U}(2)$, of real dimension $4$. The Lie algebra $\mathrm{SU}(3)$ has real dimension $8$. A subalgebra cannot be larger than its parent,
 
 $$
 \boxed{\;\dim_{\mathbb R}\mathrm{SU}(3)=8 \;>\; 4=\dim_{\mathbb R}\mathrm{U}(2)\;},
@@ -148,7 +148,7 @@ $$
 \dim_{\mathbb R}\mathbb{B}_{\Phi} = 4 .
 $$
 
-The largest compact subgroup therefore has dimension four, and it is the $\mathrm{U}(2)$ of the intrinsic gauge structure. A compact eight-dimensional subalgebra cannot exist, not because of any particular choice of basis but because the maximal compact dimension is four; this is the Lie-theoretic content of the first of the three arguments. The Cartan relations also expose the non-compact directions: the four-dimensional complement $\mathbb{B}_{\Psi}$ fails to be a subalgebra, since $[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]\subset\mathbb{B}_{\Phi}$ takes it out of itself, and it is precisely this non-closure that prevents the eight real dimensions of $\mathbb B$ from organising into a compact eight-dimensional algebra.
+The largest compact subgroup therefore has dimension four, and it is the $\mathrm{U}(2)$ of the intrinsic structure. A compact eight-dimensional subalgebra cannot exist, not because of any particular choice of basis but because the maximal compact dimension is four; this is the Lie-theoretic content of the first of the three arguments. The Cartan relations also expose the non-compact directions: the four-dimensional complement $\mathbb{B}_{\Psi}$ fails to be a subalgebra, since $[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]\subset\mathbb{B}_{\Phi}$ takes it out of itself, and it is precisely this non-closure that prevents the eight real dimensions of $\mathbb B$ from organising into a compact eight-dimensional algebra.
 
 For comparison, the matrix algebra over the complex numbers shows how the ceiling lifts. In $M_n(\mathbb C)$ the involution $x\mapsto -x^{*}$ has maximal compact fixed space $\mathrm{U}(n)$, of real dimension $n^2$, so the largest compact subalgebra grows quadratically. For the biquaternion algebra $n=2$ and the maximum is $4$, which is $SU(2)\times \mathrm{U}(1)$ and no more; for the enlarged carrier $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$ the maximum is $(2n)^2$, and $\mathrm{SU}(3)$ of dimension $8$ fits once $(2n)^2\ge8$, i.e. $n\ge2$. The ceiling is thus exactly the statement $n=1$ in this family.
 
@@ -176,13 +176,13 @@ $$
 $$
 of complex dimension $64$. It is a Clifford algebra, hence associative, and its commutator is a genuine Lie bracket; it carries an intrinsic $SU(3)$ as the stabiliser of a maximal totally isotropic subspace, equivalently of an invertible element $e_7$ inside $G_2=\mathrm{Aut}(\mathbb O)$. The colour group here is the algebra's own and not an import, so within this carrier the ceiling does not apply — the carrier is not $\mathbb B$ and the modules are not $\mathbb B$-modules, and the three-dimensional colour triplet has a home as a minimal left ideal. What it costs is the change of carrier, which is a real cost: $SU(3)$ is *the algebra's own* only after the algebra has been replaced by one of complex dimension $64$. The structural statement below therefore stands as a statement about $\mathbb B$ — the group ceases to be the algebra's own as soon as the carrier changes — with the correction that associativity, at least, need not be the casualty.
 
-**The structural statement.** Within the associative four-dimensional complex algebra, the gauge group is $\mathrm{U}(2)$ and no more. $SU(3)$ is reachable only by enlarging the carrier, and every enlargement pays in canonicity: the group ceases to be the algebra's own. This is the sense in which the ceiling is a sharp result about the algebra rather than a limitation of effort. It also connects directly to the last article of this group, *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*, where the same count is used to determine how far a unification based on the algebra can go.
+**The structural statement.** Within the associative four-dimensional complex algebra, the symmetry group is $\mathrm{U}(2)$ and no more. $SU(3)$ is reachable only by enlarging the carrier, and every enlargement pays in canonicity: the group ceases to be the algebra's own. This is the sense in which the ceiling is a sharp result about the algebra rather than a limitation of effort. It also connects directly to the last article of this group, *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*, where the same count is used to determine how far a unification based on the algebra can go.
 
 ## The Ceiling and the Standard Model
 
 It is worth stating the consequence in the language of the Standard Model, because it is the sharpest way to express what the framework's particle content can be.
 
-The Standard Model gauge group is
+The Standard Model symmetry group is
 
 $$
 G_{\mathrm{SM}}=SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y ,
@@ -206,11 +206,11 @@ It does not reach the first factor, $SU(3)_c$, at all. A field content in which 
 
 **One part of the ceiling does carry over unchanged, and it must not be softened with the rest.** Chirality is not a question of dimension or of carriers: the algebra's product is two-sided, and no enlargement of the group supplies the one-sided action a chiral gauge coupling needs. **That wall stands at both layers** — the group may be licensed, the matter representation may not be derived — and it is the wall the frame still quotes.
 
-Two consequences follow, and both are genuine results for the framework's particle programme. First, any biquaternionic account of strong interactions must be an account of the *gauge-invariant composites* — the hadrons and, more precisely, the colour-singlet operators — because the coloured fields themselves do not exist as algebra-valued fields; the coloured sector is not expressible, and only the singlet sector is. This is consistent with the informational programme of the corpus, where confinement is read as the absence of a colour-singlet decomposition. Second, the electroweak **kinematics** and the abelian sector are the framework's own, because they are exactly the $\mathrm{U}(2)$ that the algebra carries; the chiral coupling is not, and it is the one object of the electroweak sector that the companion articles record as open. This is why the articles of *Biquaternion Universe Particle Physics* treat the electroweak and abelian gauge fields directly, the chiral matter coupling as an unbuilt object, and the colour sector only through its composites. The ceiling is thus the structural reason behind the shape of the framework's existing gauge articles.
+Two consequences follow, and both are genuine results for the framework's particle programme. First, any biquaternionic account of strong interactions must be an account of the *invariant composites* — the hadrons and, more precisely, the colour-singlet operators — because the coloured fields themselves do not exist as algebra-valued fields; the coloured sector is not expressible, and only the singlet sector is. This is consistent with the informational programme of the corpus, where confinement is read as the absence of a colour-singlet decomposition. Second, the electroweak **kinematics** and the abelian sector are the framework's own, because they are exactly the $\mathrm{U}(2)$ that the algebra carries; the chiral coupling is not, and it is the one object of the electroweak sector that the companion articles record as open. This is why the articles of *Biquaternion Universe Particle Physics* treat the electroweak and abelian connections directly, the chiral matter coupling as an unbuilt object, and the colour sector only through its composites. The ceiling is thus the structural reason behind the shape of the framework's existing gauge articles.
 
 ## Summary
 
-The biquaternion algebra's intrinsic compact gauge structure is the anti-Hermitian sector, the Lie algebra
+The biquaternion algebra's intrinsic compact structure is the anti-Hermitian sector, the Lie algebra
 
 $$
 \boxed{\;\mathfrak{u}(2)=\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathfrak{su}(2)\oplus\mathfrak{u}(1),
@@ -237,16 +237,16 @@ The ceiling is passed by enlarging the carrier to $M_n(\mathbb B)\cong M_{2n}(\m
 | $\flat=-(\cdot)^\dagger$, ${}^{*}=\tilde Q^{*}$ | Anti-Hermitian and Hermitian conjugations |
 | $[x,y]=xy-yx$ | Commutator |
 | $[\mathbb B,\mathbb B]=\mathrm{SL}(2,\mathbb C)$ | Derived algebra; real dimension $6$ |
-| $\mathfrak{u}(2)=\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ | Intrinsic compact gauge algebra; dimension $4$; its group is $\mathrm{U}(2)$ |
+| $\mathfrak{u}(2)=\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ | Intrinsic compact algebra; dimension $4$; its group is $\mathrm{U}(2)$ |
 | $\mathrm{SU}(2)=\{\tilde u\in\mathbb H:\langle\tilde u\rangle_{\natural}=1\}=S^3=\mathrm{Spin}(3)$ | The factor's group: unit quaternions, the spatial rotations |
 | $T_a=\tfrac12\vec e_a$, $T_0=\tfrac12ie_t$ | Generators of $\mathfrak{su}(2)$ and $\mathfrak{u}(1)$ |
 | $S\cong\mathbb C^2$ | Defining module; any module has $\dim_{\mathbb C}V=2r$ |
-| $\mathrm{U}(2)$ | Intrinsic gauge group of algebra-valued fields; $=(SU(2)\times\mathrm{U}(1))/\mathbb Z_2$ |
+| $\mathrm{U}(2)$ | Intrinsic symmetry group of algebra-valued fields; $=(SU(2)\times\mathrm{U}(1))/\mathbb Z_2$ |
 | $\mathfrak{su}(3)$ | Colour algebra; dimension $8$, not reached |
 | $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$ | Enlarged carrier; intrinsic group $\mathrm{U}(2n)$ |
 | $SO(3)=SU(2)/\mathbb Z_2$, $SO(4)$ | Automorphism and norm-rotor compact groups |
 | $\mathbb O$, $G_2$ | Octonions and their automorphism group; home of $SU(3)$, non-associative |
-| $G_{\mathrm{SM}}=SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | Standard-Model gauge group; the framework reaches the **algebra** of the last two, and its group is their $\mathbb Z_2$ quotient |
+| $G_{\mathrm{SM}}=SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | Standard-Model symmetry group; the framework reaches the **algebra** of the last two, and its group is their $\mathbb Z_2$ quotient |
 
 ## Further Reading
 
@@ -255,7 +255,7 @@ The ceiling is passed by enlarging the carrier to $M_n(\mathbb B)\cong M_{2n}(\m
 - F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for the division algebras $\mathbb R,\mathbb C,\mathbb H,\mathbb O$ and their automorphism and $*$-unitary groups.
 - Israel M. Gelfand, Raoul A. Minlos and Z. Ya. Shapiro, *Representations of the Rotation and Lorentz Groups* (Pergamon, 1963), for the representation theory of $SU(2)$ and the module structure used here.
 - Theodore Frankel, *The Geometry of Physics* (Cambridge University Press, 3rd ed. 2011), for the geometry of $\mathrm{U}(2)$, $SU(2)$ and the compact forms of the classical groups.
-- Howard Georgi, *Lie Algebras in Particle Physics* (Westview, 2nd ed. 1999), for the dimension and rank counting of $\mathrm{SU}(n)$ and the Standard-Model gauge group.
+- Howard Georgi, *Lie Algebras in Particle Physics* (Westview, 2nd ed. 1999), for the dimension and rank counting of $\mathrm{SU}(n)$ and the Standard-Model symmetry group.
 - Leonard Susskind and John Kogut, "Preface to the strong interactions", and Kenneth G. Wilson, "Confinement of quarks", *Physical Review D* 10 (1974) 2445–2459, for the singlet-sector structure of the colour sector.
 - Mikio Nakahara, *Geometry, Topology and Physics* (CRC Press, 2nd ed. 2003), for the quaternion algebra, its automorphisms and its $*$-unitary groups.
 - R. Slansky, "Group theory for unified model building", *Physics Reports* 79 (1981) 1–128, for the representation theory of the unified groups and the dimension counting of the Standard-Model factors.

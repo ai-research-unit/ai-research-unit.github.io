@@ -179,7 +179,7 @@ since $R_vR_u=R_{uv}$ and $R_uR_v=R_{vu}$. Then $R_v$ carries one half into the 
 
 ## Limits
 
-- **No derivation of the gauge group.** The algebra supplies the sign; it does not supply the Standard Model gauge group, its representations or its breaking pattern.
+- **No derivation of the symmetry group.** The algebra supplies the sign; it does not supply the Standard Model symmetry group, its representations or its breaking pattern.
 - **No second kind of field.** The two values of the basis operator belong to fields of one kind; distinguishing the left-handed field from its conjugate is not something an operator of $\mathbb{B}$ does.
 - **No matter content and no generations.** The number of copies is an input.
 - **No mass value and no spectrum.** The algebra fixes the slot of the mass term, which is the right slot, and the element that can carry it, which is any $v$ with $uv+vu=0$; the number $m$ is dynamical, and the pair says nothing about it beyond its appearance as $\nu_m$.
@@ -214,7 +214,7 @@ The limit is stated once and it is not small: the two values of the basis operat
 
 - [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the definition, the dimensions, the swap, the conjugation and the list of unrelated objects.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the chiral pair, the one-sided and the two-sided equation, and the plane-wave solutions.
-- [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), for the two forms of the equation and the gauge covariance of the pair on the algebra.
+- [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), for the two forms of the equation and the covariance of the pair on the algebra.
 - [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html), for the distinction the limit of this article points to: the left-handed field and its conjugate are not two copies of one thing.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chiral projectors and the mass selection rule in the physics corpus.
 - [The Two Chiralities of $M_4(\mathbb{C})$](../articles_maths/the-two-chiralities-of-m4c.html), for the comparison with the matrix case.

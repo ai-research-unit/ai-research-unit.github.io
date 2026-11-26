@@ -14,7 +14,7 @@ $$
 
 with $\vec\Omega$ the rotor's angular velocity, $\partial_{t'}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{-1}=\frac12\vec\Omega$. It shows that four of the eight momenta vanish identically, that the Euler–Lagrange equations are exactly the eight components of the field equation in the parameter basis, and that their solutions are the parent's flow.
 
-This article puts the electromagnetic connection into that Lagrangian and asks what the chart does with it. The answer has one sentence — the connection enters the potential and not the kinetic term, in the constant setting — and that sentence has consequences worth four sections: the phase coefficient $-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is untouched, so the momenta and the constraint structure are untouched; the potential $V$ becomes the shifted potential $V_{\mathrm{gco}}$; the flow is the free flow read with the kinetic eigenvalues; and the chart acquires a gauge direction which the free chart does not have.
+This article puts the electromagnetic connection into that Lagrangian and asks what the chart does with it. The answer has one sentence — the connection enters the potential and not the kinetic term, in the constant setting — and that sentence has consequences worth four sections: the phase coefficient $-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is untouched, so the momenta and the constraint structure are untouched; the potential $V$ becomes the shifted potential $V_{\mathrm{gco}}$; the flow is the free flow read with the kinetic eigenvalues; and the chart acquires a redundant direction which the free chart does not have.
 
 Three findings.
 
@@ -30,7 +30,7 @@ and every other term of the Lagrangian is the free one, letter for letter. The f
 
 *Third, the chart acquires a gauge direction, and the direction is $\theta_{\mathrm{pha}}$.* The gauge group translates the phase and leaves the other seven parameters alone, so the coupled chart has a direction along which the field and the connection together are unchanged. The free chart has no such direction: all eight parameters are physical. The consequence is the sharp statement of the coupled chart — the momentum conjugate to the gauge direction is $-\frac{h}{2\pi} N$, and $N$ is the charge that the connection sources (§*The Constraints the Action Imposes: The Gauge Direction of the Chart*).
 
-What is not claimed. No new prediction and no new solution. The polar Lagrangian is a substitution, not a new principle; the free article's closure argument — that the parameter equations are the equation's components and the Jacobian is invertible — is repeated with covariant letters and not replaced. The genuinely new statements are the four above: that the kinetic term is untouched, that the constraint structure is therefore untouched, that the potential shift is a two-number shift, and that the gauge direction of the chart is the phase.
+What is not claimed. No new prediction and no new solution. The polar Lagrangian is a substitution, not a new principle; the free article's closure argument — that the parameter equations are the equation's components and the Jacobian is invertible — is repeated with covariant letters and not replaced. The genuinely new statements are the four above: that the kinetic term is untouched, that the constraint structure is therefore untouched, that the potential shift is a two-number shift, and that the redundant direction of the chart is the phase.
 
 ## Conventions
 
@@ -132,7 +132,7 @@ $$
 =ϙ\,\vec j,
 $$
 
-which is the element-form companion's identity in the chart and is one line here because the action's only $\vec A$-dependence is the modulus. The polar form of the identity is worth having because it displays the current's three pieces at once: a gradient piece, a term linear in $\vec A$ from the paramagnetic term, and a term quadratic in $\vec A$ from the diamagnetic one — and only the sum is gauge invariant.
+which is the element-form companion's identity in the chart and is one line here because the action's only $\vec A$-dependence is the modulus. The polar form of the identity is worth having because it displays the current's three pieces at once: a gradient piece, a term linear in $\vec A$ from the paramagnetic term, and a term quadratic in $\vec A$ from the diamagnetic one — and only the sum is invariant.
 
 The vorticity, unchanged in form. The velocity is $\vec\pi/m$ and its curl is $ϙ\vec B/m$; the parameterization does not change that, because the curl of a gradient vanishes and the parameterization only names the gradient. So the free article's irrotationality statement becomes: the canonical flow is irrotational, the kinetic flow is rotational exactly where the field is, and the chart exhibits the difference as the difference between $\vec\nabla_\Phi S$ and $\vec\pi$.
 
@@ -199,7 +199,7 @@ What the coupling does to them. The connection is central and carries no velocit
 The one place the coupling does reach a bracket. The potential's spatial slot is Hermitian, so it joins the boost bracket, and its temporal slot is real, so it joins the scale bracket. Neither reaches the phase bracket, and that is why the phase's equation is the continuity equation with no coupling term in it.
 ## The Constraints the Action Imposes: The Gauge Direction of the Chart
 
-The action of the gauge group on the parameters. Under $\tilde\Xi\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde\Xi$,
+The action of the symmetry group on the parameters. Under $\tilde\Xi\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde\Xi$,
 
 $$
 \varrho\longmapsto \varrho,
@@ -219,13 +219,13 @@ because the factor is central and commutes with every invertible element. Seven 
 
 The Lagrangian's response. The kinetic term gains $-ϙ\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$ and the potential term gains $+ϙ\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$, since $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ enters $V_{\mathrm{gco}}$ with one minus. The gains cancel, and the action of the field and the connection together is invariant — the element-form companion's statement, in the chart's letters, and here it is visibly the statement that $\theta_{\mathrm{pha}}$'s coefficient and $\omicron_{\mathrm{pot}}$'s coefficient are the same function of the rapidity.
 
-What happens when the connection is held fixed. With $\omicron_{\mathrm{pot}}$ fixed, the two gains do not cancel and the action changes by a boundary term for a time-dependent $\Gamma$. So the local transformation is not a symmetry of the fixed-background action; only its constant part is. The distinction is worth stating because it is exactly the distinction between the global symmetry that gives the charge and the local one that gives the redundancy: **the gauge direction of the chart is a direction of the coupled system's action and not of the field's action in a fixed background.**
+What happens when the connection is held fixed. With $\omicron_{\mathrm{pot}}$ fixed, the two gains do not cancel and the action changes by a boundary term for a time-dependent $\Gamma$. So the local transformation is not a symmetry of the fixed-background action; only its constant part is. The distinction is worth stating because it is exactly the distinction between the global symmetry that gives the charge and the local one that gives the redundancy: **the redundant direction of the chart is a direction of the coupled system's action and not of the field's action in a fixed background.**
 
-The momentum along the gauge direction. $p_{\theta_{\mathrm{pha}}}=-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}=-\frac{h}{2\pi} N$, and $N$ is invariant, so the momentum is invariant: the translation of $\theta_{\mathrm{pha}}$ moves the coordinate and not the momentum. That is the chart's version of the statement that the charge is gauge invariant and the phase is not, and it is also the reason the conservation of $N$ survives the coupling: it is the Euler–Lagrange equation of $\theta_{\mathrm{pha}}$, and the gauge direction does not disturb it, because the equation is $\dot p_{\theta}=0$ and a constant translation cannot change a derivative.
+The momentum along the redundant direction. $p_{\theta_{\mathrm{pha}}}=-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}=-\frac{h}{2\pi} N$, and $N$ is invariant, so the momentum is invariant: the translation of $\theta_{\mathrm{pha}}$ moves the coordinate and not the momentum. That is the chart's version of the statement that the charge is invariant and the phase is not, and it is also the reason the conservation of $N$ survives the coupling: it is the Euler–Lagrange equation of $\theta_{\mathrm{pha}}$, and the redundant direction does not disturb it, because the equation is $\dot p_{\theta}=0$ and a constant translation cannot change a derivative.
 
-What the chart's degeneracy means for the equations. The eight parameter equations are the eight components of the field equation, and the gauge direction is not one of them: the field equation is invariant, so a family of parameters related by the gauge direction gives one equation. The counting is therefore unchanged — eight equations for eight parameters, with the gauge direction a redundancy of the description and not a new degree of freedom. The free chart's counting is the same, with the redundancy absent.
+What the chart's degeneracy means for the equations. The eight parameter equations are the eight components of the field equation, and the redundant direction is not one of them: the field equation is invariant, so a family of parameters related by the redundant direction gives one equation. The counting is therefore unchanged — eight equations for eight parameters, with the redundant direction a redundancy of the description and not a new degree of freedom. The free chart's counting is the same, with the redundancy absent.
 
-The free article's "no gauge freedom" and the coupled statement. The free polar Lagrangian article records that the free equation fixes the phase's rate and that there is no gauge freedom to fix. The coupled statement is compatible with it and sharper: the rate is still fixed, and it is the gauge-invariant combination $\mathcal E=-\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}}$ that is fixed; the phase itself is free. So the coupling converts a physical coordinate into a coordinate with a gauge direction, and the direction is the one whose conjugate momentum is the density.
+The free article's "no redundancy" and the coupled statement. The free polar Lagrangian article records that the free equation fixes the phase's rate and that there is no redundancy to fix. The coupled statement is compatible with it and sharper: the rate is still fixed, and it is the invariant combination $\mathcal E=-\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}}$ that is fixed; the phase itself is free. So the coupling converts a physical coordinate into a coordinate with a redundant direction, and the direction is the one whose conjugate momentum is the density.
 
 ## The Structural Consequence: The Potential Shift Is the Whole of the Coupling
 
@@ -271,11 +271,11 @@ with $N=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ the density of the free section a
 
 The sign. The charge is $ϙ N$ with $ϙ$ the coupling fixed in the conventions; the sign of the current is the sign of the charge, and the density is positive. The article's element companion fixes the same sign by the same convention, and the chart adds nothing to it.
 
-What the gauge direction does to the current. The current is invariant under the gauge transformation of the chart, because $N$ is built from $\varrho$ and the frame and the transformation moves only the phase. That invariance is the statement that the current is physical, and it is the chart's form of the element article's gauge invariance of the Noether current.
+What the redundant direction does to the current. The current is invariant under the local transformation of the chart, because $N$ is built from $\varrho$ and the frame and the transformation moves only the phase. That invariance is the statement that the current is physical, and it is the chart's form of the element article's local invariance of the Noether current.
 
 ## What the Principle Adds and What It Relabels: And What It Does Not
 
-Adds. The coupled Lagrangian in the chart, and with it the two-number statement of minimal coupling: $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$, $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$ in the potential, and nothing else. The statement that the kinetic term is untouched, with the algebraic reason — the connection is central and carries no velocity — and the corollary that the four vanishing momenta and the cross term are untouched. The covariant Madelung action with its three coupling pieces, its two Euler–Lagrange equations, and the current as $-\partial L/\partial\vec A$. And the gauge direction of the chart, with the invariant momentum $-\frac{h}{2\pi} N$ along it.
+Adds. The coupled Lagrangian in the chart, and with it the two-number statement of minimal coupling: $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$, $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$ in the potential, and nothing else. The statement that the kinetic term is untouched, with the algebraic reason — the connection is central and carries no velocity — and the corollary that the four vanishing momenta and the cross term are untouched. The covariant Madelung action with its three coupling pieces, its two Euler–Lagrange equations, and the current as $-\partial L/\partial\vec A$. And the redundant direction of the chart, with the invariant momentum $-\frac{h}{2\pi} N$ along it.
 
 Does not add. No new solution and no new prediction. No new closure proof: the closure is the free article's, transported. No decoupling of the four brackets from the parameter equations: the Jacobian is the free one's, because the word is the free one's. No constraint analysis: the constant-setting system's closure is the free article's open question and the coupling does not decide it — it neither creates a constraint nor removes one.
 
@@ -313,7 +313,7 @@ $$
 
 its equations are the covariant Madelung pair, and its $\vec A$-derivative is the charge current, $-\partial L/\partial\vec A=ϙ\vec j$. The three coupling pieces are the free kinetic term, the paramagnetic term and the positive diamagnetic term.
 
-The gauge group translates $\theta_{\mathrm{pha}}$ and nothing else, so the coupled chart has one gauge direction and the free chart has none. Along it the momentum $-\frac{h}{2\pi} N$ is invariant, and the conservation of $N$ is the Euler–Lagrange equation of the phase, undisturbed by the translation.
+The symmetry group translates $\theta_{\mathrm{pha}}$ and nothing else, so the coupled chart has one redundant direction and the free chart has none. Along it the momentum $-\frac{h}{2\pi} N$ is invariant, and the conservation of $N$ is the Euler–Lagrange equation of the phase, undisturbed by the translation.
 
 ## Summary of Notation
 
@@ -336,7 +336,7 @@ The gauge group translates $\theta_{\mathrm{pha}}$ and nothing else, so the coup
 | $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | The action of the flow |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/2m\varrho$ | The quantum potential |
 | $L$ | The Lagrangian; $K$ its kinetic term |
-| $\Gamma$, $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge function and factor |
+| $\Gamma$, $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The phase function and factor |
 
 ## Further Reading
 
@@ -346,7 +346,7 @@ The gauge group translates $\theta_{\mathrm{pha}}$ and nothing else, so the coup
 - [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the free flow.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word's bijection on which the closure rests.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator's two slots.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation that becomes the chart's gauge direction.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation that becomes the chart's redundant direction.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the same chart in the spinor case, where the connection reaches all four brackets.
 - [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html), for the fluid reading of the central-field action.
 - [Landau Levels in Biquaternionic Form](landau-levels-in-biquaternionic-form.html), for the operator setting in a constant magnetic field, where the diamagnetic term is the whole spectrum.

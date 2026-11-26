@@ -2,14 +2,14 @@
 
 ## Introduction
 
-**The claim.** The Standard Model is a short list of objects and a short list of numbers. This article prints both. It prints the gauge group, the fifteen Weyl fields of one generation with their quantum numbers, the twelve gauge bosons, the scalar doublet, and the nineteen parameters with the value and the scheme of each. It derives nothing, and it decides nothing on behalf of the model.
+**The claim.** The Standard Model is a short list of objects and a short list of numbers. This article prints both. It prints the symmetry group, the fifteen Weyl fields of one generation with their quantum numbers, the twelve connections, the scalar doublet, and the nineteen parameters with the value and the scheme of each. It derives nothing, and it decides nothing on behalf of the model.
 
 **The answer.**
 
 $$
 \boxed{\;SU(3)_c\times SU(2)_L\times\mathrm{U}(1)_Y,\qquad
 15\ \text{Weyl fields per generation},\qquad
-12\ \text{gauge bosons},\qquad
+12\ \text{connections},\qquad
 1\ \text{scalar doublet},\qquad
 19\ \text{parameters}\;}
 $$
@@ -20,17 +20,17 @@ $$
 
 **The strongest objection, named at the start.** A table of imported content is worth nothing if it is mistaken for a result. The objection is exact, and the answer is the standing: the table is a checklist. Its use is to say what a derivation would have to reproduce. A reader who wants the boundary in one number should read the parameter count, which is the subject of the last two sections.
 
-**The order.** The gauge group comes first, then the matter content, then the charge, then the anomaly conditions that constrain the charges, then the bosons and the scalar, then the nineteen parameters, then what the count leaves out, then what the algebra fixes.
+**The order.** The symmetry group comes first, then the matter content, then the charge, then the anomaly conditions that constrain the charges, then the bosons and the scalar, then the nineteen parameters, then what the count leaves out, then what the algebra fixes.
 
 ## The Gauge Group
 
-**The group.** The gauge group is the product
+**The group.** The symmetry group is the product
 
 $$
 SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y .
 $$
 
-The group is a product and not a simple group. Each factor carries its own coupling, its own gauge fields and its own quantum number, and the model supplies no relation between the three couplings. That absence is the reason a mixing angle is a parameter rather than a number.
+The group is a product and not a simple group. Each factor carries its own coupling, its own connections and its own quantum number, and the model supplies no relation between the three couplings. That absence is the reason a mixing angle is a parameter rather than a number.
 
 **The three quantum numbers.** A field is placed by three labels. The first is the colour representation: a triplet $3$ of $SU(3)_c$, an octet $8$, or a singlet $1$. The second is the weak representation: a doublet $2$ of $SU(2)_L$ or a singlet $1$. The third is the hypercharge $Y$, a real number fixed by the convention
 
@@ -47,7 +47,7 @@ with $Ϙ$ the electric charge in units of the elementary charge and $T_3$ the ei
 
 Together the two asymmetries forbid a bare fermion mass. A term of the form $m\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}$ couples the two chiralities and is not invariant under the product, so no fermion mass exists before symmetry breaking.
 
-| Factor | Group | Real dimension | Coupling | Gauge fields | Acts on |
+| Factor | Group | Real dimension | Coupling | Connections | Acts on |
 |---|---|---|---|---|---|
 | Colour | $SU(3)_c$ | $8$ | $g_s$ | eight gluons $G_{a,\imath}$, $a=1,\dots,8$ | colour triplets only |
 | Weak isospin | $SU(2)_L$ | $3$ | $g$ | $W_{a,\imath}$, $a=1,2,3$ | left-handed doublets only |
@@ -155,7 +155,7 @@ The cubic term is the one worth displaying, because it vanishes by cancellation 
 
 ## The Gauge Bosons and the Scalar
 
-**The gauge fields.** The adjoint representation of the product gives $8+3+1=12$ gauge fields. Before symmetry breaking all twelve are massless and the photon is not distinguished from the hypercharge field.
+**The connections.** The adjoint representation of the product gives $8+3+1=12$ connections. Before symmetry breaking all twelve are massless and the photon is not distinguished from the hypercharge field.
 
 | Field | Multiplicity | Representation | Mass after breaking |
 |---|---|---|---|
@@ -233,7 +233,7 @@ The six entries sum to $9+4+3+1+1+1=19$.
 
 **The QCD vacuum angle.** The angle $\theta_{\mathrm{QCD}}$ is a parameter, and the measured bound is $|\theta_{\mathrm{QCD}}|<10^{-10}$. If a mechanism sets it to zero — an axion, as [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html) records — the count falls to eighteen. The bound is therefore a statement about a parameter whose natural value is not zero, which is the strong CP problem.
 
-**The discrete inputs.** Three numbers of the model are not in the count because they are not continuous parameters: the gauge group $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$, the representation content of one generation, and the number of generations. Each is an input, and the model explains none of them.
+**The discrete inputs.** Three numbers of the model are not in the count because they are not continuous parameters: the symmetry group $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$, the representation content of one generation, and the number of generations. Each is an input, and the model explains none of them.
 
 **The hierarchy of scales.** The nineteen carry no relation among their magnitudes. The electron mass and the top mass differ by more than five orders of magnitude, and the electroweak scale sits about sixteen orders of magnitude below the Planck scale. Nothing in the list explains either gap. The two problems are the subject of [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html).
 
@@ -241,7 +241,7 @@ The six entries sum to $9+4+3+1+1+1=19$.
 
 **Nothing in the list.** The framework's gauge principle supplies a central abelian factor with a charge parameter $ϙ$, a connection, a covariant derivative and a curvature; [The Standard Model under the Biquaternion Framework](the-standard-model-as-the-low-energy-phase.html) records that the parameter is free, that no relation binds it to a second coupling, and that no hypercharge assignment or scalar sector follows. The count above is therefore inherited whole.
 
-**The framework's own parameters.** The algebra's parameters are not the model's. The gauge principle carries $ϙ$, and the mass formula carries the mass $m$ and the constant $\nu_m$ of the massive equation; none of the three is one of the nineteen, and none of them is fixed by the algebra either. The framework is in the same position as the model it reformulates, with a different list.
+**The framework's own parameters.** The algebra's parameters are not the model's. The minimal coupling carries $ϙ$, and the mass formula carries the mass $m$ and the constant $\nu_m$ of the massive equation; none of the three is one of the nineteen, and none of them is fixed by the algebra either. The framework is in the same position as the model it reformulates, with a different list.
 
 **The one proposal that touches the list.** [The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form](the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.html) proposes ratios of masses proportional to the dimensions of the Lorentz representations, normalised to the electron. That proposal fixes no absolute scale, and the absolute scale is what a mass parameter is. It cannot be read as a derivation of the nine masses.
 
@@ -251,7 +251,7 @@ The six entries sum to $9+4+3+1+1+1=19$.
 
 ## Summary
 
-The Standard Model is the gauge theory of $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$, with matter in the chiral representations of one generation — the quark doublet $Q_L$ of hypercharge $\tfrac16$, the two quark singlets $u_R$ and $d_R$ of hypercharge $\tfrac23$ and $-\tfrac13$, the lepton doublet $L_L$ of hypercharge $-\tfrac12$ and the charged-lepton singlet $e_R$ of hypercharge $-1$ — which is fifteen Weyl fields per generation and forty-five for three; a scalar doublet of hypercharge $\tfrac12$ with four real components; and twelve gauge bosons, eight gluons, $W^\pm$, $Z$ and the photon, which after breaking carry sixteen, nine and two polarisations against the twenty-four of the twelve massless fields.
+The Standard Model is the gauge theory of $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$, with matter in the chiral representations of one generation — the quark doublet $Q_L$ of hypercharge $\tfrac16$, the two quark singlets $u_R$ and $d_R$ of hypercharge $\tfrac23$ and $-\tfrac13$, the lepton doublet $L_L$ of hypercharge $-\tfrac12$ and the charged-lepton singlet $e_R$ of hypercharge $-1$ — which is fifteen Weyl fields per generation and forty-five for three; a scalar doublet of hypercharge $\tfrac12$ with four real components; and twelve connections, eight gluons, $W^\pm$, $Z$ and the photon, which after breaking carry sixteen, nine and two polarisations against the twenty-four of the twelve massless fields.
 
 The charge is not independent of the three labels. It is $Ϙ=Y+T_3$, and the table reproduces the seven observed charges from the five hypercharges. The five are constrained, not chosen: the four anomaly conditions, with the colour condition and the weak condition and the gravitational condition linear and the cubic condition cubic, reduce through $Y_Q=\tfrac12(Y_u+Y_d)$, $Y_L=-\tfrac32(Y_u+Y_d)$ and $Y_e=-3(Y_u+Y_d)$ to the single equation $Y_u^3+Y_d^3=7(Y_u+Y_d)^3$, whose solutions form three rays, of which one carries the observed charges and one is excluded because it gives quark charges of $\pm\tfrac12$. The conditions were recomputed in exact rational arithmetic and vanish identically on the observed assignment; the overall scale is the normalisation and is fixed by the measured electron charge, not by the algebra.
 
@@ -263,14 +263,14 @@ The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$
 
 | Symbol | Meaning |
 |---|---|
-| $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | The gauge group; colour, weak isospin, hypercharge |
+| $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | The symmetry group; colour, weak isospin, hypercharge |
 | $g_s$, $g$, $g_{\mathrm Y}$ | The three gauge couplings; the reference checklist writes $g_3$, $g_2$, $g_1$ |
 | $Q_L$, $u_R$, $d_R$, $L_L$, $e_R$ | The five multiplets of one generation |
 | $Y$ | Hypercharge, with $Ϙ=Y+T_3$; the reference writes $Y_W=2Y$ |
 | $T_3$ | Third weak-isospin eigenvalue, $\pm\tfrac12$ in a doublet, $0$ in a singlet |
 | $Ϙ$ | Electric charge in units of the elementary charge |
 | $ϙ$ | The framework's charge parameter of the gauge principle; the charge glyph of [Physics Units](physics-units-and-common-elements-conventions.html) |
-| $W_{a,\imath}$, $B_{\imath}$, $G_{a,\imath}$ | Weak, hypercharge and colour gauge fields |
+| $W_{a,\imath}$, $B_{\imath}$, $G_{a,\imath}$ | Weak, hypercharge and colour connections |
 | $W^\pm_{\imath}$, $Z_{\imath}$, $A_{\imath}$ | Charged, neutral massive and electromagnetic fields after mixing |
 | $\theta_W$ | Weinberg angle, $\tan\theta_W=g_{\mathrm Y}/g$ |
 | $v$, $M_W$, $M_Z$, $M_H$ | Electroweak scale and the three boson masses |

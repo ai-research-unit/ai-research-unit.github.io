@@ -12,7 +12,7 @@ This is the charged companion of [The Fourier Transform and the Spin-Half Fluid]
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $ϙ$, the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, the gauge transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ with $\Gamma$ real, and
+The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $ϙ$, the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, the local transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ with $\Gamma$ real, and
 
 $$
 \tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi ,
@@ -103,7 +103,7 @@ At a mode the connection is constant, so $\tilde F=0$ and the companion's vortic
 
 ## The Four Rungs' One Invariant
 
-**Every charged rung of the block has one gauge-invariant object in the momentum-space reading, and it is the curvature.**
+**Every charged rung of the block has one invariant object in the momentum-space reading, and it is the curvature.**
 
 | rung | the mode's label | what the gauge does | the invariant |
 | --- | --- | --- | --- |
@@ -142,7 +142,7 @@ The loop invariant is a Lorentz transformation times a phase. At a mode the fram
 
 Both slots of the connection are translations at a mode, so a mode's velocity is constant, its acceleration is zero and the Lorentz force vanishes identically. The force is inter-mode, and the phrase "the force takes the charge and the spin does not" is a dynamical statement about the label followed by a bookkeeping statement about the carrier.
 
-The vorticity is $ϙF/m$ and a constant connection has no curvature, so a mode is irrotational. Across the four charged rungs the only gauge-invariant object of the momentum-space reading is the curvature, and the spinor rung is the one whose label is exactly the frame.
+The vorticity is $ϙF/m$ and a constant connection has no curvature, so a mode is irrotational. Across the four charged rungs the only invariant object of the momentum-space reading is the curvature, and the spinor rung is the one whose label is exactly the frame.
 
 ## Summary of Notation
 

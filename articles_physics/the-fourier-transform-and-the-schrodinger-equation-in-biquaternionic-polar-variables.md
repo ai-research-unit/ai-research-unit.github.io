@@ -103,7 +103,7 @@ The density is invariant, and it is the modulus squared. $n=\mathrm{Sc}(\tilde\X
 
 A constant phase multiplies the modes and changes no modulus. Multiplying the field by $e^{i\alpha}$ multiplies every coefficient $c_j$ by $e^{i\alpha}$, and $\lvert c_j\rvert$ is unchanged to $1.1\times10^{-16}$. So the phase is the transform's invisible coordinate: it enters the kernel and not the spectrum.
 
-That is why the phase is the gauge direction in the coupled chart. The coupled polar companion records that the gauge group translates $\theta_{\mathrm{pha}}$ and nothing else. Here the same fact appears before any connection is introduced: the phase is the one coordinate a central unit of modulus one can shift.
+That is why the phase is the redundant direction in the coupled chart. The coupled polar companion records that the symmetry group translates $\theta_{\mathrm{pha}}$ and nothing else. Here the same fact appears before any connection is introduced: the phase is the one coordinate a central unit of modulus one can shift.
 
 What the transform does move is the frequency. The symbol's argument is the frequency, and the frequency is the time derivative of the phase for a single mode. The transform's variable and the chart's phase rate are the same object read once as a label and once as a derivative.
 
@@ -159,7 +159,7 @@ $$
 
 The density is the conjugate momentum of the phase. The statement is the parent's and it is one line here. It is also the reason the phase is the transform's variable: a pair $(q,p)$ with $p$ the density is exactly what a transform in $q$ acts on.
 
-The pair is invariant in the coupled chart. The coupled polar parent records $p_\theta=-\frac{h}{2\pi} N$ and its invariance under the gauge transformation, and the invariance is the statement that the pair survives the coupling. The transform's variable is therefore gauge invariant as a variable, even though the phase itself is translated.
+The pair is invariant in the coupled chart. The coupled polar parent records $p_\theta=-\frac{h}{2\pi} N$ and its invariance under the local transformation, and the invariance is the statement that the pair survives the coupling. The transform's variable is therefore invariant as a variable, even though the phase itself is translated.
 
 The pair is not a pair of independent data. On a central field $n=\varrho^{2}$ and the two functions are the two unknowns of Madelung's pair; on a general field the rapidity enters $n$ and the density is a function of two parameters. The conjugacy is between the phase and the density, not between the phase and the scale, and the distinction matters as soon as the field is not central.
 
@@ -207,7 +207,7 @@ The first question is the varying word. A field whose phase rate varies has no s
 
 The second is the sign of the symbol's norm. A negative quaternionic norm makes the symbol's own phase $\pi/2$ and its scale a fourth root. Whether that phase has a dynamical meaning, or is an artefact of reading a symbol as a field, is not decided.
 
-The third is the coupled chart's pair. The pair $(\theta_{\mathrm{pha}},n)$ is invariant under the gauge transformation, and the connection enters the phase's rate. Which variable replaces $n$ when the connection is time dependent is the coupled companion's question, and it is open there too.
+The third is the coupled chart's pair. The pair $(\theta_{\mathrm{pha}},n)$ is invariant under the local transformation, and the connection enters the phase's rate. Which variable replaces $n$ when the connection is time dependent is the coupled companion's question, and it is open there too.
 
 The fourth is the operator setting. With $\tilde H_\Psi=\hat H\,e_t$ the symbol becomes a convolution, and the chart's two rates become functions of position. Whether the chart survives as a local reading, with the quantum potential as the residue, is the polar parent's open question and it is not answered here.
 
@@ -239,6 +239,6 @@ The phase is a character and the rotor is not: $0.6$ and $0.9$ about different a
 - *The Schrödinger Equation in Biquaternionic Polar Variables*, for the word, its domain, the four brackets and the two rates this article reads in frequency space.
 - *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form*, for the symbol, its determinant and the counts of poles.
 - *The Lagrangian and the Schrödinger Equation in Polar Variables*, for the kinetic Lagrangian, the factor $\cosh\theta_{\mathrm{rpd}}$ and the conjugate momentum $-\frac{h}{2\pi} n$.
-- *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the gauge direction of the chart and the invariance of the pair.
+- *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the redundant direction of the chart and the invariance of the pair.
 - *The Lagrangian and the Schrödinger Equation in Momentum Space*, for the action's quadratic form at fixed frequency.
 - *Algebra and Element Conventions*, for the four types and the two conjugations that separate them.

@@ -122,7 +122,7 @@ One entry is in two groups, and the reason is exact. $M_H$ is an eigenvalue by k
 The arena group, entry by entry:
 
 - The four mixing parameters (10–13). A $3\times3$ unitary matrix has nine real parameters; rephasing five away leaves four. The framework supplies $\mathrm{U}(3)$ as the norm-preserving group of the flavour factor and the elements on which it acts, so the *space* is supplied. [The CKM article](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) supplies the necessity of the phase not being removable. The point in the space is measured.
-- The three couplings (14–16). Each is the normalisation of a connection in a covariant derivative. The framework's gauge principle produces exactly this object and records that its normalisation is a free parameter $ϙ$; a second coupling is a second free parameter with no relation to the first. So the arena is supplied — and supplied *with the same freedom*, which is why this is arena and not derivation.
+- The three couplings (14–16). Each is the normalisation of a connection in a covariant derivative. The framework's minimal coupling produces exactly this object and records that its normalisation is a free parameter $ϙ$; a second coupling is a second free parameter with no relation to the first. So the arena is supplied — and supplied *with the same freedom*, which is why this is arena and not derivation.
 - The vacuum angle (17). A phase of a central term, which [the theta-vacuum article](the-theta-vacuum-in-biquaternionic-form.html) constructs. The arena is supplied; the smallness is not explained.
 
 A mass is an eigenvalue of a mass operator, and the framework represents the operator: the mass term in the Dirac equation, the mass matrices in the Yukawa sector. What it does not have is a principle that selects the eigenvalues. Two statements must be kept apart:
@@ -145,7 +145,7 @@ The framework's own constructions carry three continuous parameters:
 
 | Parameter | Where it appears | Fixed by the algebra? |
 |---|---|---|
-| $ϙ$ | The central charge of the gauge principle | No |
+| $ϙ$ | The central charge of the minimal coupling | No |
 | $m$ | The mass in the massive field equation | No |
 | $\nu_m$ | The constant of the massive equation | No |
 
@@ -252,7 +252,7 @@ For every proposal in the corpus that touches a parameter, the question is which
 | Proposal | Entry touched | Grade claimed | Grade justified |
 |---|---|---|---|
 | The spin–mass formula | 1–9 | Relation | Relation among ratios, scale free; not a value |
-| The gauge principle's $ϙ$ | 14–16 | Arena | Arena; no relation to a second coupling |
+| The minimal coupling's $ϙ$ | 14–16 | Arena | Arena; no relation to a second coupling |
 | The theta-vacuum construction | 17 | Arena | Arena; no value, no mechanism for smallness |
 | The CKM as a flavour-factor operator | 10–13 | Arena | Arena; the group and the phase's necessity, not the point |
 | The PMNS as the same operator | 10–13 (leptons) | Arena | Arena; and the count $4$ or $6$ as a discriminator |

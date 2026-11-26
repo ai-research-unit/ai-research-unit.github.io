@@ -39,7 +39,7 @@ $$
 \tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi:=A_t\,\mathrm{d}r'_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\,\mathrm{d}r_{\imath},
 $$
 
-and not the algebra product. The distinction is forced by the coordinates: the temporal slot of the position is $ir'_t$, and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so a product would carry a factor of $i$ that no gauge transformation produces. The one-form is a real number at each point of the worldline.
+and not the algebra product. The distinction is forced by the coordinates: the temporal slot of the position is $ir'_t$, and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so a product would carry a factor of $i$ that no local transformation produces. The one-form is a real number at each point of the worldline.
 
 The sign of the gauge term. The covariant derivative carries $+\frac{2\pi iϙ}{h}\tilde A_\Phi$. A field redefinition then removes a constant potential only with the phase $e^{-iϙ\tilde A_\Phi\cdot(\tilde R_\Phi-\tilde R_{\Phi,i})\frac{2\pi}{h}}$, as §*The Exact Kernel in a Field-Free Potential* shows by one differentiation. The worldline weight therefore carries the gauge term with a minus,
 
@@ -106,7 +106,7 @@ by the fundamental theorem of calculus, for every path with the same endpoints. 
 
 The check is a lattice check, and it is where the discretisation matters. A gauge term is a line integral, and a discretised worldline must choose a point of each segment at which to evaluate the potential. With the symmetric (midpoint) rule the telescoping is exact: over two hundred random eight-step paths with a quadratic $\Gamma$ the gauge term equals the boundary term to $2\times10^{-15}$. With the left-endpoint rule it does not: the defect is $6\times10^{1}$ at worst on the same paths, and on a fixed smooth path it halves as the step halves, $3.3\times10^{-1}$, $1.7\times10^{-1}$, $8.3\times10^{-2}$, $4.1\times10^{-2}$ for eight, sixteen, thirty-two and sixty-four steps.
 
-The rule is not a detail of the bookkeeping. The defect of the left-endpoint rule is $O(h)$ and path-dependent, so a lattice sum with that rule is not gauge invariant at finite step and does not converge to a gauge-invariant limit without a counterterm. The symmetric rule makes the gauge term a coboundary exactly, at every step, on every path. That is the worldline version of the lattice-gauge statement that the link variable must sit on the link and not at its foot. **The two rules agree in the continuum and differ on the lattice, and the continuum statement is the one this article uses.**
+The rule is not a detail of the bookkeeping. The defect of the left-endpoint rule is $O(h)$ and path-dependent, so a lattice sum with that rule is not invariant at finite step and does not converge to an invariant limit without a counterterm. The symmetric rule makes the gauge term a coboundary exactly, at every step, on every path. That is the worldline version of the lattice-gauge statement that the link variable must sit on the link and not at its foot. **The two rules agree in the continuum and differ on the lattice, and the continuum statement is the one this article uses.**
 
 Second regime: closed but not exact. The flux between two histories. Let $F=0$ in a region that is not simply connected. Then the one-form is closed and not exact, and its integral around a non-contractible loop is a nonzero number. On $\mathbb{R}^4$ no such loop exists, and the first regime covers every field-free potential. A region with a hole is a different matter, and the corpus's setting is $\mathbb{R}^4$: the statement below is about the structure of the sum and not about a physical solenoid.
 
@@ -122,7 +122,7 @@ with $\Sigma$ any surface the loop bounds. The relative weight of the two histor
 
 The check is exact for polygons. For a constant field strength in a two-dimensional model the gauge term of a polygonal loop equals the field strength times the enclosed area to $2\times10^{-16}$ over five random hexagons, and a two-path model with endpoints $(0,0)$ and $(2,0)$ gives a difference of $-0.480$ against a field-times-area of $-0.480$. Green's theorem is exact for a linear potential on a polygon, so the identity is algebraic and the number is a check on the arithmetic and the orientation.
 
-What the three regimes say together. The gauge field has exactly two ways to change a sum over histories: through the endpoints, when the potential is exact, and through the enclosed flux, when it is not. Neither channel touches the spin factor, and neither touches the measure. A field with no flux is a change of variable on the space of paths and not a force.
+What the three regimes say together. The connection has exactly two ways to change a sum over histories: through the endpoints, when the potential is exact, and through the enclosed flux, when it is not. Neither channel touches the spin factor, and neither touches the measure. A field with no flux is a change of variable on the space of paths and not a force.
 
 ## The Exact Kernel in a Field-Free Potential
 
@@ -266,7 +266,7 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 | $\mathcal S_L,\mathcal S_R$ | The two components of the coupled propagator, elements of $\mathbb{B}$ |
 | $\mathcal S^{A},\mathcal S^{0}$ | The kernels in a constant potential and in no potential |
 | $\mathcal{F}[x]$ | Spin factor, the path-ordered algebra-valued weight |
-| $\Gamma$ | Real gauge function; $\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$ for an exact potential |
+| $\Gamma$ | Real phase function; $\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$ for an exact potential |
 | $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Gauge angle |
 | $\delta_{\imath\jmath}$ | The metric on the four slots, used in the Lorentz equation and in the kinetic normalisation |
 | $T$ | Proper time; $x(\tau)$ the worldline |

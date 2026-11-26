@@ -22,7 +22,7 @@ R_{\mathrm{axf}}(\tilde Q)_{\imath\jmath}=\bigl[e_{\jmath}\,\tilde Q\bigr]_{\ima
 $$
 **The order is $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the product is $\vec e_x\vec e_y=\vec e_z$ cyclically, and $E_{jk}$ is the matrix unit in that order.** The scalar unit $e_t$ is the identity of the algebra, so $e_t\vec X=\vec Xe_t=\vec X$: the temporal line is the lepton line of the model, and that is the whole of the identification.
 
-**Two words that name a side and not a chirality.** $L$ and $R$ name the side of the multiplication in the algebra, left or right. **They do not name gauge factors of this model**: the six arrays they index are a real basis of $\mathfrak{so}(4)\subset\mathfrak{su}(4)$, and no fermion chirality is assigned to a side here. **The chirality assignment is a declaration made below $M_C$**, in the next section of the corpus.
+**Two words that name a side and not a chirality.** $L$ and $R$ name the side of the multiplication in the algebra, left or right. **They do not name group factor of this model**: the six arrays they index are a real basis of $\mathfrak{so}(4)\subset\mathfrak{su}(4)$, and no fermion chirality is assigned to a side here. **The chirality assignment is a declaration made below $M_C$**, in the next section of the corpus.
 
 ## Part I. The Six Arrays of $\mathfrak{so}(4)$ from the Axis-Free Arrays
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article writes the topologically massive gauge field as one of the two eliminations of a single parent action, and shows that the mass it carries is topological because the term that carries it has one derivative and no metric. It is the action-first companion of *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*, which performs the two reductions and records the resulting pair of theories; this article asks what functional both theories come from, and why one functional can have two fields as its extremum.
+This article writes the topologically massive connection as one of the two eliminations of a single parent action, and shows that the mass it carries is topological because the term that carries it has one derivative and no metric. It is the action-first companion of *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*, which performs the two reductions and records the resulting pair of theories; this article asks what functional both theories come from, and why one functional can have two fields as its extremum.
 
 The equation. The parent's equation is the pair of linear relations obtained by varying the two fields,
 
@@ -82,11 +82,11 @@ The type of the coefficient. One mass $m$ and one shift $a$, and the combination
 
 What the shift $a$ does. The second coupling $a$ enters the derivative as a conjugation and shifts the effective mass to $m-a$. It is a parameter of the parent and not of either reduced theory, and its presence is what makes the parent's two eliminations give masses that agree. Setting $a=0$ recovers the plain case.
 
-**The selection rule. The selection rule is gauge invariance of the equations, and it is satisfied by a term that breaks the Lagrangian's invariance.** The Chern–Simons term's variation is a total derivative, so the action changes by a boundary term and the equations do not change. That is a weaker selection than exact invariance, and it is the reason a topological mass is possible at all: as an exact invariant the term does not exist in three dimensions.
+**The selection rule. The selection rule is local invariance of the equations, and it is satisfied by a term that breaks the Lagrangian's invariance.** The Chern–Simons term's variation is a total derivative, so the action changes by a boundary term and the equations do not change. That is a weaker selection than exact invariance, and it is the reason a topological mass is possible at all: as an exact invariant the term does not exist in three dimensions.
 
 What reality does not buy. Reality does not buy a local mass term, a positive-definite Hamiltonian, or uniqueness. Three things the reality of the action does not supply:
 
-- *No local gauge-invariant mass.* The Chern–Simons term is the only mass available, and it is not an invariant of the Lagrangian.
+- *No local invariant mass.* The Chern–Simons term is the only mass available, and it is not an invariant of the Lagrangian.
 - *No positive-definite energy without a sign condition.* The Hamiltonian is positive for one sign of $m$ only, and the sign is a choice the action permits both ways.
 - *No uniqueness of the reduction.* Which field is eliminated is a choice, and the two choices give different-looking theories.
 
@@ -112,7 +112,7 @@ up to the total divergence the corpus's $Z_0$ removes. The mass couples $G$ to $
 
 Varying the Dirac field. $\delta S/\delta G_{\jmath}=0$ gives the second relation, $(m-a)G_{\imath}=\sum\epsilon\epsilon(\tilde\nabla H)^{*}i\check c$, and substituting it back leaves a second-order Lagrangian for $H_{\imath}$ with a kinetic term and a one-derivative term. At $a=e=0$ and after the rescaling $H_{\imath}\mapsto bH_{\imath}$ that restores the canonical normalization, it becomes the topologically massive form above.
 
-**Why the two eliminations cannot both be applied.** Each elimination uses the other field's equation; applying both would impose both equations simultaneously, which is consistent only on shell. The correct reading is that the parent action defines one theory with two descriptions, and a description is chosen by which field is integrated out. The choice is not a gauge choice, because the two descriptions have different fields; it is a choice of which variable is fundamental.
+**Why the two eliminations cannot both be applied.** Each elimination uses the other field's equation; applying both would impose both equations simultaneously, which is consistent only on shell. The correct reading is that the parent action defines one theory with two descriptions, and a description is chosen by which field is integrated out. The choice is not a choice of representative, because the two descriptions have different fields; it is a choice of which variable is fundamental.
 
 The check that would catch a sign. The three-dimensional topological equation
 
@@ -120,11 +120,11 @@ $$
 \sum_{\jmath}\epsilon_{\jmath}\frac{\partial F_{\jmath\imath}}{\partial x_{\jmath}}+\frac{m}{2}\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_{\imath}\,\check\varepsilon_{\imath\jmath k}F^{*}_{\jmath k}=0
 $$
 
-must be invariant under the gauge transformation of $B_{\imath}$, and it is, because the variation of the Chern–Simons term is a total derivative. If the factor $\tfrac{m}{2}$ were $\tfrac{m}{4}$, the equation would not reduce to the Proca equation in the appropriate limit; the boxed coefficient is the check.
+must be invariant under the local transformation of $B_{\imath}$, and it is, because the variation of the Chern–Simons term is a total derivative. If the factor $\tfrac{m}{2}$ were $\tfrac{m}{4}$, the equation would not reduce to the Proca equation in the appropriate limit; the boxed coefficient is the check.
 
 ## The Constraints the Action Imposes: One Degree of Freedom from Three Components
 
-**The count.** In three dimensions a vector has three components. The gauge symmetry removes one and the Chern–Simons term makes the remaining two into one massive mode, so the count is one. A plain massive vector in three dimensions would also have two polarizations, but with both helicities at the same mass; the topological mass splits the sign, and the theory keeps one.
+**The count.** In three dimensions a vector has three components. The local symmetry removes one and the Chern–Simons term makes the remaining two into one massive mode, so the count is one. A plain massive vector in three dimensions would also have two polarizations, but with both helicities at the same mass; the topological mass splits the sign, and the theory keeps one.
 
 Why the constraint survives the mass. A plain mass term $m^2B_{\imath} B_{\imath}$ would make the temporal component propagate and would give a second degree of freedom; the Chern–Simons term does not, because it is first order and its equation is a constraint on the field strength rather than a second-order equation for the potential. The constraint's survival is the same fact as the derivative count.
 
@@ -132,7 +132,7 @@ The invertibility of the kinetic operator. The parent's kernel in $G$ is $(m-a)I
 
 ## The Structural Consequence: A Mass with One Derivative Is a Mass That Cannot Be Removed
 
-**The statement.** The topological mass is fixed by the gauge structure and not by a parameter in the potential. It cannot be tuned to zero without the theory changing its degree-of-freedom count, and it cannot be given a sign without choosing an orientation.
+**The statement.** The topological mass is fixed by the structure and not by a parameter in the potential. It cannot be tuned to zero without the theory changing its degree-of-freedom count, and it cannot be given a sign without choosing an orientation.
 
 Why it is called topological. The Chern–Simons term is the integral of a three-form built from the connection, and its variation is a boundary term; its value on a closed manifold is quantised. The mass it gives is therefore tied to the topology of the gauge bundle and not to a scalar's vacuum value.
 

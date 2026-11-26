@@ -208,7 +208,7 @@ $$
 =-\tfrac12\left(1-\cos\theta\right)d\theta_{\mathrm{azm}}\;}.
 $$
 
-The connection is real, as it must be for a phase; it is the connection whose parallel transport keeps neighbouring states in Pancharatnam's sense of being in phase. The overall phase of $\vec J$ is the gauge freedom, and $\mathcal A$ is gauge-dependent, but its integral around a closed circuit is not.
+The connection is real, as it must be for a phase; it is the connection whose parallel transport keeps neighbouring states in Pancharatnam's sense of being in phase. The overall phase of $\vec J$ is the redundancy, and $\mathcal A$ is representative-dependent, but its integral around a closed circuit is not.
 
 ### The Criterion and the Transport
 
@@ -220,7 +220,7 @@ $$
 
 along the transport. A family of states satisfying this condition is **horizontal** for the connection: it is the family obtained by Pancharatnam transport, and the prescription is the optical analogue of parallel transport. The connection $\mathcal A=i\langle J|dJ\rangle$ is the one-form whose integral gives the residual phase when the states are compared in a fixed gauge rather than along the horizontal transport.
 
-The residual phase is a property of closed circuits only. If the representatives are changed by the real re-phasing angle $\theta_{\mathrm{pha},k}$, $|J_{\imath}\rangle\to \exp(i\theta_{\mathrm{pha},k})|J_{\imath}\rangle$, the overlaps change by $\exp(i(\xi_{k+1}-\xi_{\imath}))$, and the product around a closed sequence is unchanged because the phases telescope. Hence the Pancharatnam phase of a circuit is gauge invariant, while the phase $\arg\langle A|B\rangle$ of a pair is not: the physical content of a pair of states is the interference visibility $|\langle A|B\rangle|$, and the physical content of a circuit is the closed-loop phase. This is the same distinction that the symplectic article draws between the potential and the symplectic form: the local object is gauge dependent, the loop integral is not.
+The residual phase is a property of closed circuits only. If the representatives are changed by the real re-phasing angle $\theta_{\mathrm{pha},k}$, $|J_{\imath}\rangle\to \exp(i\theta_{\mathrm{pha},k})|J_{\imath}\rangle$, the overlaps change by $\exp(i(\xi_{k+1}-\xi_{\imath}))$, and the product around a closed sequence is unchanged because the phases telescope. Hence the Pancharatnam phase of a circuit is invariant, while the phase $\arg\langle A|B\rangle$ of a pair is not: the physical content of a pair of states is the interference visibility $|\langle A|B\rangle|$, and the physical content of a circuit is the closed-loop phase. This is the same distinction that the symplectic article draws between the potential and the symplectic form: the local object is representative-dependent, the loop integral is not.
 
 ### The Curvature and the Half-Solid-Angle Rule
 

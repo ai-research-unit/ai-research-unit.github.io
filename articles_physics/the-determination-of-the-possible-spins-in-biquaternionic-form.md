@@ -139,7 +139,7 @@ which give $C=2\,\frac{h^{2}}{4\pi^{2}}$ on all three states. The value is $\fra
 
 **The physical interpretation.** A vector field. In the rest frame of a massive vector the three weights are the three polarizations. For a massless one the longitudinal state is removed and two helicities remain. The photon, the $W^\pm$, the $Z$ and the gluons are the observed instances.
 
-**The massless count and the cone.** The two helicities are the self-dual and the anti-self-dual halves of the field strength, $\vec E+i c\vec B$ and $\vec E-i c\vec B$. The removed state is the longitudinal direction $\vec u_\Phi$, the unit vector along the momentum, which is the helicity-zero eigenvector. The algebra exhibits the third eigenvector; it does not remove it. The removal is a gauge condition, and the gauge-fixing principle is imported.
+**The massless count and the cone.** The two helicities are the self-dual and the anti-self-dual halves of the field strength, $\vec E+i c\vec B$ and $\vec E-i c\vec B$. The removed state is the longitudinal direction $\vec u_\Phi$, the unit vector along the momentum, which is the helicity-zero eigenvector. The algebra exhibits the third eigenvector; it does not remove it. The removal is a fixing condition, and the fixing the representative principle is imported.
 
 **Masslessness, the cone and $N=0$.** The mass shell is the level set $N=-m^2c^2$ of the norm $N=\langle\tilde P_{\Phi}\rangle_\natural$ of the four-momentum. The massless case is $N=0$, the zero-divisor cone. On that cone the little group is the double cover of $E(2)$. The algebra marks the cone: among the level sets of $N$ on the material sector, $N=0$ is the only one that is a cone, the only one on which the four-momentum is not invertible, and the only one invariant under rescaling. It does not choose $m=0$: the norm is homogeneous, so the algebra carries no preferred mass. The choice $m=0$ is an input.
 
@@ -161,7 +161,7 @@ $$
 G_{\tilde P,\Phi}=\{\tilde U\in SL(2,\mathbb{C}):\tilde U\tilde P_{\Phi}\tilde U^{*}=\tilde P_{\Phi}\}.
 $$
 
-For a massive particle $\tilde P_{\Phi}$ is timelike and $G_{\tilde P,\Phi}\cong SU(2)$; its irreducible representations are the spin representations, labelled by $s$, and the rest-frame carrier has $2s+1$ states. For a massless particle $\tilde P_{\Phi}$ is null and $G_{\tilde P,\Phi}$ is the double cover of $E(2)$; each finite-dimensional irreducible unitary representation carries a single helicity $h$, and a massless particle of spin $s$ uses the two representations $h=\pm s$ (at $s=0$, only $h=0$). The reduction from $2s+1$ to two is the gauge condition, not the little group.
+For a massive particle $\tilde P_{\Phi}$ is timelike and $G_{\tilde P,\Phi}\cong SU(2)$; its irreducible representations are the spin representations, labelled by $s$, and the rest-frame carrier has $2s+1$ states. For a massless particle $\tilde P_{\Phi}$ is null and $G_{\tilde P,\Phi}$ is the double cover of $E(2)$; each finite-dimensional irreducible unitary representation carries a single helicity $h$, and a massless particle of spin $s$ uses the two representations $h=\pm s$ (at $s=0$, only $h=0$). The reduction from $2s+1$ to two is the fixing condition, not the little group.
 
 The passage from $SU(2)$ to the double cover of $E(2)$ is the reason the massless count is two and not three. It is a property of the momentum, not of the carrier.
 
@@ -217,7 +217,7 @@ The regular module of the biquaternion algebra contains exactly three irreducibl
 
 There is no fourth: the irreducible subcarriers have dimensions $1$, $2$ and $3$, and the only four-dimensional invariant subspace is the whole algebra, which is reducible. The arithmetic $1+2+3=6>4$ shows that the three can never be the constituents of a single action.
 
-The physical interpretation is the scalar, the spinor and the vector, and the observed elementary particles carry exactly these three spins. The match is a match of labels, not a prediction of the particle content. Spin is the Casimir label of a carrier, not a direction: the direction labels a state, and the spin labels the representation. The relativistic label is the little-group label, $SU(2)$ for a massive particle and the double cover of $E(2)$ with helicity for a massless one. The spin–statistics theorem is respected by the algebraic split but is not proved by it. Masslessness is not derived: the cone marks $N=0$, and the gauge condition that removes the longitudinal state is imported.
+The physical interpretation is the scalar, the spinor and the vector, and the observed elementary particles carry exactly these three spins. The match is a match of labels, not a prediction of the particle content. Spin is the Casimir label of a carrier, not a direction: the direction labels a state, and the spin labels the representation. The relativistic label is the little-group label, $SU(2)$ for a massive particle and the double cover of $E(2)$ with helicity for a massless one. The spin–statistics theorem is respected by the algebraic split but is not proved by it. Masslessness is not derived: the cone marks $N=0$, and the fixing condition that removes the longitudinal state is imported.
 
 ## Summary of Notation
 

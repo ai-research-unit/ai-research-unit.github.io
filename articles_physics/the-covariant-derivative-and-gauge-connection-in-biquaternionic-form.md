@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **gauge principle** article of the companion series localized the central phase symmetry of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ and found that the price of locality is a connection and a new derivative. It established, and this article inherits unchanged, the transformation law of the connection,
+The **minimal coupling** article of the companion series localized the central phase symmetry of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ and found that the price of locality is a connection and a new derivative. It established, and this article inherits unchanged, the transformation law of the connection,
 
 $$
 \tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
@@ -14,14 +14,14 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath}  e_{\imath} \tilde\nabla_{\mathrm{gco},\Phi,\imath} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}, \qquad \tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath},
 $$
 
-together with the identification of the field strength with the curvature, $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$. This article takes the connection $\tilde{A}_{\Phi}$ and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}$ produced by that localization and studies them as objects in their own right. Nothing inherited from the gauge principle is rederived, renamed, or corrected here; the transformation law, the covariance, and the curvature identity are used as input.
+together with the identification of the field strength with the curvature, $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$. This article takes the connection $\tilde{A}_{\Phi}$ and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}$ produced by that localization and studies them as objects in their own right. Nothing inherited from the minimal coupling is rederived, renamed, or corrected here; the transformation law, the covariance, and the curvature identity are used as input.
 
 **Notation, once.** The derivative letters are those of *Operator and Calculus Conventions*, §*The Gradient*: the biquaternionic gradient $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, the d'Alembertian $\Box_\Phi$ the two compose, and the Laplacian $\Delta_\Phi$ in the three vector coordinates, read on the material sector as that section reads them. This article uses the four glyphs as the convention fixes them and adds no derivative of its own: every derivative below is one of them, or the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}$ built on them and its quaternion conjugate $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$. No other letter names a derivative.
 
-The article develops the two objects in four directions that the gauge principle article did not pursue.
+The article develops the two objects in four directions that the minimal coupling article did not pursue.
 
 - **The derivative as an operator.** $\tilde\nabla_{\mathrm{gco},\Phi}$ is a first-order differential operator, not an element of $\mathbb{B}$. It is a derivation on the algebra of fields, and the connection is precisely the difference between $\tilde\nabla_{\mathrm{gco},\Phi}$ and $\tilde\nabla_\Phi$: $[\tilde\nabla_{\mathrm{gco},\Phi,\imath}, f] = \partial/\partial R_{\imath} f$ for a scalar function $f$.
-- **The connection as an orbit.** Covariance does not merely hold for $\tilde\nabla_{\mathrm{gco},\Phi}$; it *determines* it. Requiring $\tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}$ for a central phase $\digamma_{\mathrm{gau}}$ forces the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection has no gauge-invariant local value — it can be gauged to zero at any one point — and only its curvature obstructs doing so on a neighbourhood.
+- **The connection as an orbit.** Covariance does not merely hold for $\tilde\nabla_{\mathrm{gco},\Phi}$; it *determines* it. Requiring $\tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}$ for a central phase $\digamma_{\mathrm{gau}}$ forces the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection has no invariant local value — it can be gauged to zero at any one point — and only its curvature obstructs doing so on a neighbourhood.
 - **The curvature as a commutator that closes on the algebra.** The commutator $[\tilde\nabla_{\mathrm{gco},\Phi,\imath}, \tilde\nabla_{\mathrm{gco},\Phi,\jmath}]$ is multiplication by $\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$; unlike $\tilde\nabla_{\mathrm{gco},\Phi}$ itself, it is an element of $\mathbb{B}$.
 - **The covariant square.** With $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ the quaternion conjugate of $\tilde\nabla_{\mathrm{gco},\Phi}$, the exact operator identity splits into the covariant d'Alembertian in its scalar part and the curvature in its vector part:
 $$
@@ -30,9 +30,9 @@ $$
 
 The division between what is established and what is interpretation is kept explicit, as in the companion articles.
 
-- **Established, and recomputed below.** The identities of the four bullets above; the flatness of pure-gauge connections; the reality condition that keeps $\tilde{A}_{\Phi}$ in $\mathbb{B}_{\Phi}$; and the observation that the connection one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ is a real quaternion.
+- **Established, and recomputed below.** The identities of the four bullets above; the flatness of pure-connections; the reality condition that keeps $\tilde{A}_{\Phi}$ in $\mathbb{B}_{\Phi}$; and the observation that the connection one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ is a real quaternion.
 - **Interpretation.** Reading $\tilde{A}_{\Phi}$ as a connection on a bundle, the covariant derivative as parallel transport, and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}$ as the biquaternion form of the identity "square of a Dirac operator equals Laplacian plus curvature" are geometric interpretations of algebraic content. They are labelled as interpretation wherever they occur.
-- **Gaps, left visible.** The non-abelian extension, the reality and compactness conditions that would select a compact gauge algebra, and the covariant wave operator for a charged scalar are not settled here; each is stated as a gap where it arises and collected in the open questions.
+- **Gaps, left visible.** The non-abelian extension, the reality and compactness conditions that would select a compact algebra, and the covariant wave operator for a charged scalar are not settled here; each is stated as a gap where it arises and collected in the open questions.
 
 ## The Covariant Derivative and Its Components
 
@@ -58,7 +58,7 @@ Two points about the nature of $\tilde\nabla_{\mathrm{gco},\Phi}$ are worth stat
 
 **$\tilde\nabla_{\mathrm{gco},\Phi}$ is an operator, not an algebra element.** The covariant derivative maps fields to fields; it carries the dimension of a derivative and does not belong to $\mathbb{B}$. Only its components $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ are scalar operators, and even they are not elements of the algebra. The connection $\tilde{A}_{\Phi}$, by contrast, is an element of $\mathbb{B}$ — indeed of $\mathbb{B}_{\Phi}$ — and it is the *coefficient* of the new term, not the derivative itself.
 
-**The coefficients are central, so there is no ordering ambiguity.** In the abelian case each $A_{\imath}$ is a complex scalar and therefore commutes with every biquaternion and with the basis elements. Left and right multiplication by each coefficient $\frac{2\pi i\,ϙ}{h}A_{\imath}$ agree, and the derivation below never has to choose an order. This is the algebraic mark of the abelian gauge group: the phase lies in the centre, and the connection has central coefficients.
+**The coefficients are central, so there is no ordering ambiguity.** In the abelian case each $A_{\imath}$ is a complex scalar and therefore commutes with every biquaternion and with the basis elements. Left and right multiplication by each coefficient $\frac{2\pi i\,ϙ}{h}A_{\imath}$ agree, and the derivation below never has to choose an order. This is the algebraic mark of the abelian symmetry group: the phase lies in the centre, and the connection has central coefficients.
 
 The following table collects the components and their meanings.
 
@@ -104,21 +104,21 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath} - \partial/\partial R_{\imath} =\frac{2\pi i\,ϙ}{h}A_{\imath},
 $$
 
-and this is the precise sense in which the connection "compensates" for the ordinary derivative's failure to be gauge covariant.
+and this is the precise sense in which the connection "compensates" for the ordinary derivative's failure to be covariant.
 
-**4. $\tilde\nabla_{\mathrm{gco},\Phi}$ is not closed under multiplication, but its commutator is.** The composition $\tilde\nabla_{\mathrm{gco},\Phi,\imath} \tilde\nabla_{\mathrm{gco},\Phi,\jmath}$ is a second-order operator and is not an algebra element. The *commutator* $[\tilde\nabla_{\mathrm{gco},\Phi,\imath},\tilde\nabla_{\mathrm{gco},\Phi,\jmath}]$, on the other hand, is first order and in fact has no derivative at all: it is multiplication by an element of $\mathbb{B}$. That element is the curvature, treated in its own section below. This is the structural reason the gauge field strength is the commutator of covariant derivatives rather than any single $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$.
+**4. $\tilde\nabla_{\mathrm{gco},\Phi}$ is not closed under multiplication, but its commutator is.** The composition $\tilde\nabla_{\mathrm{gco},\Phi,\imath} \tilde\nabla_{\mathrm{gco},\Phi,\jmath}$ is a second-order operator and is not an algebra element. The *commutator* $[\tilde\nabla_{\mathrm{gco},\Phi,\imath},\tilde\nabla_{\mathrm{gco},\Phi,\jmath}]$, on the other hand, is first order and in fact has no derivative at all: it is multiplication by an element of $\mathbb{B}$. That element is the curvature, treated in its own section below. This is the structural reason the connection strength is the commutator of covariant derivatives rather than any single $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$.
 
 ## Gauge Covariance and What It Forces
 
-The gauge principle article proves the covariance of the construction (inherited here, not rederived): with $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ a central phase and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$, the covariant derivative built from $\tilde{A}_{\Phi,2}$ satisfies
+The minimal coupling article proves the covariance of the construction (inherited here, not rederived): with $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ a central phase and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$, the covariant derivative built from $\tilde{A}_{\Phi,2}$ satisfies
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}
 $$
 
-Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
+Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
-for every field $\tilde{Ξ}$, so the equation $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ} = 0$ holds in every gauge when it holds in one. For the present article the important point is the converse direction, which the gauge principle article did not state: **covariance determines $\tilde\nabla_{\mathrm{gco},\Phi}$; the connection is forced, not chosen.**
+for every field $\tilde{Ξ}$, so the equation $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ} = 0$ holds in every gauge when it holds in one. For the present article the important point is the converse direction, which the minimal coupling article did not state: **covariance determines $\tilde\nabla_{\mathrm{gco},\Phi}$; the connection is forced, not chosen.**
 
 To see this, suppose only that the field transforms as $\tilde{Ξ} \mapsto \digamma_{\mathrm{gau}}\tilde{Ξ}$ and that a derivative of the form $\tilde\nabla_{\mathrm{gco},\Phi,2} = \tilde\nabla_\Phi + \Omega_2$ is required to be covariant, $\tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}$ for all $\tilde{Ξ}$, where $\Omega_2$ denotes multiplication by an element of $\mathbb{B}$. Expanding the left-hand side with the Leibniz rule,
 
@@ -144,7 +144,7 @@ $$
 
 which, with $\Omega =\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$, is the inherited transformation law. The compensating field is therefore not an assumption added to the theory: once the phase is localized, the requirement of covariance leaves no freedom in the transformation of the connection. The specialization of the chain rule to the exponential was checked by finite differences at a point not used to motivate it, and the algebraic form $\Omega_2 = \digamma_{\mathrm{gau}}\Omega\digamma_{\mathrm{gau}}^{-1} - (\tilde\nabla_\Phi\digamma_{\mathrm{gau}})\digamma_{\mathrm{gau}}^{-1}$ was checked exactly on random central phases in a truncated ring.
 
-The forcing is stated within the left-action convention that the gauge principle produces; with a right action the same argument gives the mirror derivative, and the mixed insertion is not covariant at all. The parent's massive equation is written with the left action,
+The forcing is stated within the left-action convention that the minimal coupling produces; with a right action the same argument gives the mirror derivative, and the mixed insertion is not covariant at all. The parent's massive equation is written with the left action,
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L},
@@ -154,15 +154,15 @@ $$
 
 and the linear mass term passes the central phase through, so the left action is the natural one for the charged massive field and it is the form the minimal-coupling article states. The choice between the left and right actions for a general matter field is a choice of matter representation, raised as an open question by that article and left open here.
 
-The centrality of $\digamma_{\mathrm{gau}}$ is what makes the transformation law *additive*. Left and right multiplication by $\digamma_{\mathrm{gau}}$ agree, so no conjugation appears and the gauge group is abelian. It is the centre of $\mathbb{B}$ that supplies the group, and the centre is one complex dimension; the gauge group is $\mathrm{U}(1)$.
+The centrality of $\digamma_{\mathrm{gau}}$ is what makes the transformation law *additive*. Left and right multiplication by $\digamma_{\mathrm{gau}}$ agree, so no conjugation appears and the symmetry group is abelian. It is the centre of $\mathbb{B}$ that supplies the group, and the centre is one complex dimension; the symmetry group is $\mathrm{U}(1)$.
 
-The reality of the gauge function is inherited as well. A real $\Gamma$ keeps $\tilde{A}_{\Phi}$ in the material sector: $\tilde\nabla_\Phi\Gamma$ has an imaginary scalar coefficient and real vector coefficients, exactly the membership condition of $\mathbb{B}_{\Phi}$; a complex $\Gamma$ would move the connection out of it.
+The reality of the phase function is inherited as well. A real $\Gamma$ keeps $\tilde{A}_{\Phi}$ in the material sector: $\tilde\nabla_\Phi\Gamma$ has an imaginary scalar coefficient and real vector coefficients, exactly the membership condition of $\mathbb{B}_{\Phi}$; a complex $\Gamma$ would move the connection out of it.
 
 ## The Connection as a Gauge Orbit
 
 The transformation law makes the connection's status precise.
 
-**The connection is not gauge invariant.** Its entire gauge orbit is the set $\{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$. The scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$,
+**The connection is not invariant.** Its entire orbit is the set $\{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$. The scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$,
 
 $$
 S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_t + \mathrm{div}\,\vec A,
@@ -170,7 +170,7 @@ $$
 
 transforms as $S_2 = S - \Box_\Phi\Gamma$, so $S$ is a pure-gauge quantity; the Lorenz gauge $S = 0$ is a choice, not a condition. This is the gauge scalar of the Maxwell article, inherited unchanged.
 
-**Pure-gauge connections are flat.** If $\tilde{A}_{\Phi} = \tilde\nabla_\Phi\Gamma$ for a scalar function $\Gamma$, then
+**Pure-connections are flat.** If $\tilde{A}_{\Phi} = \tilde\nabla_\Phi\Gamma$ for a scalar function $\Gamma$, then
 
 $$
 \tilde{F} = \mathrm{Vect}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma\right) = 0,
@@ -178,16 +178,16 @@ $$
 
 because $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma = \Box_\Phi\Gamma\, e_t$ is a pure scalar and has no vector part. A connection that is a gradient carries no curvature. This was checked for complex as well as real $\Gamma$.
 
-**A single point can always be made connection-free.** Given any connection $\tilde{A}_{\Phi}$ and any point $\tilde{Q}_0$, choose the real, affine gauge function
+**A single point can always be made connection-free.** Given any connection $\tilde{A}_{\Phi}$ and any point $\tilde{Q}_0$, choose the real, affine phase function
 
 $$
 \Gamma(\tilde{Q}) = -a\,r'_t + A_x(\tilde{Q}_0)\,r_x + A_y(\tilde{Q}_0)\,r_y + A_z(\tilde{Q}_0)\,r_z,
 \qquad a = -ic\,A_t(\tilde{Q}_0) = \xi(\tilde{Q}_0) \in \mathbb{R},
 $$
 
-so that $\partial/\partial R_{\imath}\,\Gamma(\tilde{Q}_0) = A_{\imath}(\tilde{Q}_0)$ and hence $\tilde{A}_{\Phi,2}(\tilde{Q}_0) = 0$. The connection therefore has no gauge-invariant value at a point; whatever invariant content it has must be built from derivatives.
+so that $\partial/\partial R_{\imath}\,\Gamma(\tilde{Q}_0) = A_{\imath}(\tilde{Q}_0)$ and hence $\tilde{A}_{\Phi,2}(\tilde{Q}_0) = 0$. The connection therefore has no invariant value at a point; whatever invariant content it has must be built from derivatives.
 
-**The curvature is the obstruction to doing this on a neighbourhood.** A connection with $\tilde{F} = 0$ satisfies $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath} = 0$, and the Poincaré lemma applied to the one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ then supplies a local $\Gamma$ with $\tilde{A}_{\Phi} = \tilde\nabla_\Phi\Gamma$. The step from a closed one-form to an exact one is the Poincaré lemma; it is *invoked* here, not recomputed. The conclusion is that $\tilde{F}$ measures exactly what cannot be removed by a gauge transformation.
+**The curvature is the obstruction to doing this on a neighbourhood.** A connection with $\tilde{F} = 0$ satisfies $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath} = 0$, and the Poincaré lemma applied to the one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ then supplies a local $\Gamma$ with $\tilde{A}_{\Phi} = \tilde\nabla_\Phi\Gamma$. The step from a closed one-form to an exact one is the Poincaré lemma; it is *invoked* here, not recomputed. The conclusion is that $\tilde{F}$ measures exactly what cannot be removed by a local transformation.
 
 **The connection one-form is a real quaternion.** One observation about the connection is worth recording. Pairing the connection with a coordinate displacement gives
 
@@ -197,7 +197,7 @@ $$
 d\vec r = \vec e_x\,dr_x + \vec e_y\,dr_y + \vec e_z\,dr_z ,
 $$
 
-which is real. The time term is real because its two imaginary units cancel, $d(i r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_{\imath}$ and $dr_{\imath}$ are separately real. In the algebra this says $\sum_{\imath} A_{\imath}\,dx_{\imath} \in \mathbb{B}_{H}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_{\imath} A_{\imath}\,dx_{\imath} \mapsto \sum_{\imath} A_{\imath}\,dx_{\imath} - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
+which is real. The time term is real because its two imaginary units cancel, $d(i r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_{\imath}$ and $dr_{\imath}$ are separately real. In the algebra this says $\sum_{\imath} A_{\imath}\,dx_{\imath} \in \mathbb{B}_{H}$, the real-quaternion subspace. Around a closed path the integral is invariant, because $\sum_{\imath} A_{\imath}\,dx_{\imath} \mapsto \sum_{\imath} A_{\imath}\,dx_{\imath} - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
 
 ## The Curvature as the Commutator of Covariant Derivatives
 
@@ -209,7 +209,7 @@ $$
 F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath} .
 $$
 
-This is the gauge principle article's commutator identity, inherited here. Three consequences are developed in the present article.
+This is the minimal coupling article's commutator identity, inherited here. Three consequences are developed in the present article.
 
 **The commutator closes on the algebra.** Although $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ is an operator and not an element of $\mathbb{B}$, its commutator with $\tilde\nabla_{\mathrm{gco},\Phi,\jmath}$ is multiplication by the biquaternion $\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$ — a scalar multiple of a field. The failure of covariant derivatives to commute is thus an algebraic object, not a differential one, and it can be contracted with the basis to form the field-strength biquaternion.
 
@@ -222,11 +222,11 @@ $$
 \tilde{F} =\frac{h}{4\pi \,i\,ϙ}\sum_{\imath,\jmath\in\{t,x,y,z\}}[\tilde\nabla_{\mathrm{gco},\Phi,\imath}, \tilde\nabla_{\mathrm{gco},\Phi,\jmath}]\,e_{\imath}^{\natural} e_{\jmath} ,
 $$
 
-with $e_t^{\natural} = e_t$ and $e_{\imath}^{\natural} = -\vec e_{\imath}$. The first identity is purely algebraic in the derivatives and is the gauge principle article's curvature identity; the second is its restatement as a commutator of covariant derivatives.
+with $e_t^{\natural} = e_t$ and $e_{\imath}^{\natural} = -\vec e_{\imath}$. The first identity is purely algebraic in the derivatives and is the minimal coupling article's curvature identity; the second is its restatement as a commutator of covariant derivatives.
 
-**The curvature is gauge invariant and is not in the material sector.** Because $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma) = 0$, $\tilde{F}$ is unchanged by a gauge transformation. It is nevertheless not an element of $\mathbb{B}_{\Phi}$: it has vanishing scalar part and a vector part that is neither purely real nor purely imaginary, as the Maxwell article records. The connection is a material-sector object; its curvature is not.
+**The curvature is invariant and is not in the material sector.** Because $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma) = 0$, $\tilde{F}$ is unchanged by a local transformation. It is nevertheless not an element of $\mathbb{B}_{\Phi}$: it has vanishing scalar part and a vector part that is neither purely real nor purely imaginary, as the Maxwell article records. The connection is a material-sector object; its curvature is not.
 
-Because $\tilde{F}$ is built from $\tilde{A}_{\Phi}$ by differentiation, the homogeneous Maxwell equations are identities rather than equations of motion — the Bianchi identity of the connection. The biquaternion form of that identity and the non-abelian completion of the curvature are the subjects of separate planned companions and are not claimed here. (In particular, the one-line equation $\tilde\nabla_\Phi\tilde{F} = 0$ is *not* the Bianchi identity; it is the full source-free Maxwell system. This was checked and recorded in the gauge principle companion so that it is not written by mistake.)
+Because $\tilde{F}$ is built from $\tilde{A}_{\Phi}$ by differentiation, the homogeneous Maxwell equations are identities rather than equations of motion — the Bianchi identity of the connection. The biquaternion form of that identity and the non-abelian completion of the curvature are the subjects of separate planned companions and are not claimed here. (In particular, the one-line equation $\tilde\nabla_\Phi\tilde{F} = 0$ is *not* the Bianchi identity; it is the full source-free Maxwell system. This was checked and recorded in the minimal coupling companion so that it is not written by mistake.)
 
 The shape recurs one rank up. The commutator of two kinetic angular momenta is a third one plus a multiplication operator quadratic in position, so it too leaves the span of the operators it starts from and lands on multiplication. The companion article *The Kinetic Momentum: A Bracket That Does Not Close* records that bracket and reads it against the curvature: the mechanical momentum is the spatial part of the connection, the field strength is its curvature, and the kinetic angular momentum is the cross product of position with the connection.
 
@@ -281,7 +281,7 @@ $$
 
 The structural similarity to the identity that the square of a Dirac operator is a Laplacian plus a curvature term is an **interpretation** of this result, not a claim that the biquaternion operator is the standard Dirac operator.
 
-**A gap for the charged scalar.** The gauge principle article's clean realization of the global symmetry was the complex scalar biquaternion field $\tilde{Ξ} = \xi\,e_t$ obeying the massive Klein–Gordon equation $(\Box_\Phi - 4\pi^{2}\nu_m^{2})\tilde{Ξ} = 0$; the free equation is examined in the Klein–Gordon article, which does not gauge it. Covariantizing the *scalar operator* gives $\left(\sum_{\imath} \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 - 4\pi^{2}\nu_m^{2}\right)\xi\,e_t = 0$, which is consistent. But $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t) = \left(\sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2\xi\right)e_t +\frac{2\pi i\,ϙ}{h}\xi\,\tilde{F}$, and the second term is a pure vector whenever $\tilde{F} \neq 0$. A purely scalar field therefore cannot satisfy $\left((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi} - 4\pi^{2}\nu_m^{2}\right)\tilde{Ξ} = 0$ in a region of nonzero curvature; only the scalar projection $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi})$ acts on scalars, or the charged scalar must acquire vector components. Which of these the framework intends is **not settled here**. It is a genuine gap: the minimal coupling of a scalar is not the same statement as the minimal coupling of a biquaternion, and the difference is the curvature. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
+**A gap for the charged scalar.** The minimal coupling article's clean realization of the global symmetry was the complex scalar biquaternion field $\tilde{Ξ} = \xi\,e_t$ obeying the massive Klein–Gordon equation $(\Box_\Phi - 4\pi^{2}\nu_m^{2})\tilde{Ξ} = 0$; the free equation is examined in the Klein–Gordon article, which does not gauge it. Covariantizing the *scalar operator* gives $\left(\sum_{\imath} \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 - 4\pi^{2}\nu_m^{2}\right)\xi\,e_t = 0$, which is consistent. But $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t) = \left(\sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2\xi\right)e_t +\frac{2\pi i\,ϙ}{h}\xi\,\tilde{F}$, and the second term is a pure vector whenever $\tilde{F} \neq 0$. A purely scalar field therefore cannot satisfy $\left((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi} - 4\pi^{2}\nu_m^{2}\right)\tilde{Ξ} = 0$ in a region of nonzero curvature; only the scalar projection $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi})$ acts on scalars, or the charged scalar must acquire vector components. Which of these the framework intends is **not settled here**. It is a genuine gap: the minimal coupling of a scalar is not the same statement as the minimal coupling of a biquaternion, and the difference is the curvature. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 ### The Chiral Pair and Why the Mass Couples Two Fields
 
@@ -313,17 +313,17 @@ which is $\Box_\Phi$ with the sign of $\Delta_\Phi$ reversed and a vector part a
 
 The boundary can be drawn as in the companion articles.
 
-**What it supplies.** The centre $\mathbb{B}_{C}$ supplies the abelian gauge group $\mathrm{U}(1)$ canonically. The algebra makes the transformation law forced rather than assumed, makes the connection a material-sector object, makes the commutator of covariant derivatives an element of the algebra, and makes the covariant square split into a wave operator and a curvature term without any extra structure. It also preserves the sector decomposition under a real gauge function.
+**What it supplies.** The centre $\mathbb{B}_{C}$ supplies the abelian symmetry group $\mathrm{U}(1)$ canonically. The algebra makes the transformation law forced rather than assumed, makes the connection a material-sector object, makes the commutator of covariant derivatives an element of the algebra, and makes the covariant square split into a wave operator and a curvature term without any extra structure. It also preserves the sector decomposition under a real phase function.
 
 **What it only transcribes.** The global-to-local argument itself, the form of minimal coupling, and the covariant derivative are the standard constructions, written in the algebra's notation. The algebra provides a home and makes the identities transparent; it does not supply a reason for a connection to exist, and it does not fix the coupling constant $ϙ$.
 
-**What is interpretation.** The bundle picture — connection as parallel transport, curvature as infinitesimal holonomy — is a consistent interpretation of the algebraic content. The one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ lies in the real-quaternion subspace and its loop integral is gauge invariant by the fundamental theorem of calculus ($\oint d\Gamma = 0$); the geometric interpretation of those two facts is interpretation, and the identity $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 +\frac{2\pi i\,ϙ}{h}\tilde{F}$ is what makes the interpretation precise.
+**What is interpretation.** The bundle picture — connection as parallel transport, curvature as infinitesimal holonomy — is a consistent interpretation of the algebraic content. The one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ lies in the real-quaternion subspace and its loop integral is invariant by the fundamental theorem of calculus ($\oint d\Gamma = 0$); the geometric interpretation of those two facts is interpretation, and the identity $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 +\frac{2\pi i\,ϙ}{h}\tilde{F}$ is what makes the interpretation precise.
 
 ## The Gauge Connection and the Gravitational Connection
 
 The word "connection" is used in the framework for two different objects, and conflating them is an error worth naming.
 
-The connection of this article is **one-sided**: $\tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath}$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde{Q} = \partial/\partial R_{\imath}\,\tilde{Q} + \vec\Gamma_{\imath}\tilde{Q} + \tilde{Q}\vec\Gamma_{\imath}^{*}$, because the Lorentz generators act on $\mathbb{B}_{\Phi}$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^{*}$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $\mathrm{U}(1)$ connection of the centre; the gravitational connection lies in the six-dimensional scalar-free subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
+The connection of this article is **one-sided**: $\tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath}$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde{Q} = \partial/\partial R_{\imath}\,\tilde{Q} + \vec\Gamma_{\imath}\tilde{Q} + \tilde{Q}\vec\Gamma_{\imath}^{*}$, because the Lorentz generators act on $\mathbb{B}_{\Phi}$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^{*}$ and not by the commutator; the two differ precisely for the boosts. The connection of this article is a $\mathrm{U}(1)$ connection of the centre; the gravitational connection lies in the six-dimensional scalar-free subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
 
 The distinction has a consequence the corpus had not recorded, and an external source names it. For an internal gauge force, the abelian case of this article, the substitution $\partial/\partial R_{\imath} \to \tilde\nabla_{\mathrm{gco},\Phi,\imath}$ gives the same physics whether it is applied to the action or to the Euler–Lagrange equations, because the connection is central: it multiplies from the side the derivative already multiplies from, and it passes through every invertible element. For the standard gravitational coupling in the vierbein formulation, the two procedures **do not commute**: the varied equation acquires an anticommutator term between the frame element and the Lorentz generator, which the substituted equation does not have. The difference is settled by one test, whether the generator commutes with the four units, and the test separates the two cases cleanly. The centre of $\mathbb{B}$ is the real span of $e_t$ and $ie_t$, so the six-dimensional scalar-free subspace, where the Lorentz generator lives, contains no central element at all; the scalar-free units themselves do not even commute with one another, $[\vec e_x,\vec e_y]=2\vec e_z$ and cyclically, whereas the central element commutes with everything,
 
@@ -341,15 +341,15 @@ A second external source goes further and puts the two objects into one. J. Fred
 
 1. **The covariant wave operator for a charged scalar.** Does the framework use $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}) = \sum_{\imath} \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2$ as the covariant d'Alembertian for a scalar, or must a charged scalar be a general biquaternion with vector components induced by the curvature? The two interpretations differ by the term $\frac{2\pi i\,ϙ}{h}\tilde{F}\xi$, which is nonzero wherever the field strength is.
 
-2. **The non-abelian extension.** The commutator of covariant derivatives acquires $[A_{\imath},A_{\jmath}]$ when the connection is $\mathbb{B}$-valued, and the algebra already contains the required non-commutativity. What is not derived is a reality and tracelessness condition that would select a compact gauge algebra; the commutator algebra of $\mathbb{B}$ is $\mathfrak{gl}(2,\mathbb{C})$, not compact. The reality conditions natural in the biquaternion framework, and which simple gauge algebras they admit, are left to the planned companions on non-abelian fields and Yang–Mills.
+2. **The non-abelian extension.** The commutator of covariant derivatives acquires $[A_{\imath},A_{\jmath}]$ when the connection is $\mathbb{B}$-valued, and the algebra already contains the required non-commutativity. What is not derived is a reality and tracelessness condition that would select a compact algebra; the commutator algebra of $\mathbb{B}$ is $\mathfrak{gl}(2,\mathbb{C})$, not compact. The reality conditions natural in the biquaternion framework, and which simple algebras they admit, are left to the planned companions on non-abelian fields and Yang–Mills.
 
 3. **The matter representation.** The covariant derivative acts by left multiplication, and in the abelian case left and right agree. For the charged massive field the parent's linear chiral pair is written with the left action, which makes the left action the natural one there. For a non-abelian connection the two differ, and the representation carried by the matter field must be specified; what fixes it for a general matter field is open, and the chiral-fermion article's treatment of the two parts named by the subscript and the minimal-coupling article's left/right analysis are the concrete settings in which the question is posed.
 
 4. **Dynamical content of the covariant square.** The curvature term $\frac{2\pi i\,ϙ}{h}\tilde{F}$ in $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a magnetic-moment coupling — or is it a rewriting of the commutator identity with no independent consequence?
 
-5. **The one-form and the holonomy.** The connection one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $i r'_t$ convention in disguise? No answer is offered here.
+5. **The one-form and the holonomy.** The connection one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ is a real quaternion, the loop integral is invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $i r'_t$ convention in disguise? No answer is offered here.
 
-6. **Gauge fixing.** The canonical-quantization article establishes that the framework cannot fix the gauge. The present article does not supply a selection principle either; the gauge orbit of the connection is exactly as large as the local phases allow.
+6. **Fixing the representative.** The canonical-quantization article establishes that the framework cannot fix the gauge. The present article does not supply a selection principle either; the orbit of the connection is exactly as large as the local phases allow.
 
 7. **Empirical contact.** As everywhere in the framework, the open question is whether any of this yields a prediction distinguishing it from standard gauge theory. The construction above is a reformulation; the question of empirical contact is untouched by it.
 
@@ -365,7 +365,7 @@ $$
 
 with $\tilde{A}_{\Phi} = \sum_{\imath} A_{\imath} e_{\imath} \in \mathbb{B}_{\Phi}$ the connection. It is not an element of the algebra; it is a derivation on fields, with Leibniz rule $\tilde\nabla_{\mathrm{gco},\Phi}(f\tilde{Ξ}) = f\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ} + (\tilde\nabla_\Phi f)\tilde{Ξ}$ and commutator $[\tilde\nabla_{\mathrm{gco},\Phi,\imath},f] = \partial/\partial R_{\imath} f$, so that the connection is exactly the difference $\tilde\nabla_{\mathrm{gco},\Phi,\imath} - \partial/\partial R_{\imath} =\frac{2\pi i\,ϙ}{h}A_{\imath}$.
 
-Covariance determines the connection rather than merely holding for it: the requirement $\tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}$ forces $\Omega_2 = \digamma_{\mathrm{gau}}\Omega\digamma_{\mathrm{gau}}^{-1} - (\tilde\nabla_\Phi\digamma_{\mathrm{gau}})\digamma_{\mathrm{gau}}^{-1}$, which for $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ is the inherited law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection is a gauge orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ lies in the real-quaternion subspace and has a gauge-invariant loop integral.
+Covariance determines the connection rather than merely holding for it: the requirement $\tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}$ forces $\Omega_2 = \digamma_{\mathrm{gau}}\Omega\digamma_{\mathrm{gau}}^{-1} - (\tilde\nabla_\Phi\digamma_{\mathrm{gau}})\digamma_{\mathrm{gau}}^{-1}$, which for $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ is the inherited law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection is an orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ lies in the real-quaternion subspace and has an invariant loop integral.
 
 The curvature is the commutator of covariant derivatives, $[\tilde\nabla_{\mathrm{gco},\Phi,\imath},\tilde\nabla_{\mathrm{gco},\Phi,\jmath}] =\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$, and contracts to the field strength $\tilde{F} =\frac{h}{4\pi \,i\,ϙ}\sum_{\imath\jmath}[\tilde\nabla_{\mathrm{gco},\Phi,\imath},\tilde\nabla_{\mathrm{gco},\Phi,\jmath}]e_{\imath}^{\natural} e_{\jmath}$. Unlike $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$, the commutator is an element of the algebra. The covariant square separates cleanly,
 
@@ -375,7 +375,7 @@ $$
 \mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}) = \sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2, \quad \mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}) =\frac{2\pi i\,ϙ}{h}\tilde{F}\;},
 $$
 
-with the scalar part the covariant d'Alembertian and the vector part the curvature. Two gaps are left visible: the covariant wave operator for a charged scalar is ambiguous between the scalar projection and a bivector-valued field, and the non-abelian extension still needs a reality condition selecting a compact gauge algebra. The gauge connection of this article is one-sided and abelian; it is not the two-sided gravitational connection of the curved-spacetime article.
+with the scalar part the covariant d'Alembertian and the vector part the curvature. Two gaps are left visible: the covariant wave operator for a charged scalar is ambiguous between the scalar projection and a bivector-valued field, and the non-abelian extension still needs a reality condition selecting a compact algebra. The connection of this article is one-sided and abelian; it is not the two-sided gravitational connection of the curved-spacetime article.
 
 The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$, written on the algebra by left multiplication, the second member being the first on the conjugate field. It is not the square of a single field: the conjugate derivative applied to $\tilde\nabla_\Phi\tilde{Ξ} = 2\pi\nu_m\tilde{Ξ}$ returns $\Box_\Phi\tilde{Ξ} = m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$, a second-order equation in two objects rather than one, and $\tilde\nabla_\Phi^2$ is not $\Box_\Phi$ — its scalar part is $\partial^2/\partial R_t^2-\Delta_\Phi$ against the $\partial^2/\partial R_t^2+\Delta_\Phi$ of $\Box_\Phi$, and its vector part does not vanish. That is why the mass couples two fields.
 
@@ -388,17 +388,17 @@ The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco},\Phi}\
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
-| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian symmetry group |
 | $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$ | Biquaternionic gradient |
 | $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}$ | Quaternion-conjugate gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial^2}{\partial R_t\partial R_{\imath}}$ | Square of the gradient; not scalar, and not $\Box_\Phi$ |
 | $\Delta_\Phi=\sum_{\imath\in\{x,y,z\}}\partial^2/\partial R_{\imath}^2$ | Laplacian in the three vector coordinates |
 | $\tilde{A}_{\Phi} = \sum_{\imath} A_{\imath} e_{\imath} = i\,a'_t\,e_t + \vec A$ | Connection / potential biquaternion, in $\mathbb{B}_{\Phi}$ |
-| $\Gamma$ | Real scalar gauge function |
+| $\Gamma$ | Real scalar phase function |
 | $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ | Local central phase (abelian) |
 | $ϙ$ | Coupling constant (charge), not fixed by the algebra |
-| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Gauge transformation of the connection |
+| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Local transformation of the connection |
 | $m$ | Mass of the parent's Dirac field |
 | $\tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi} = \sum_{\imath}  e_{\imath} \tilde\nabla_{\mathrm{gco},\Phi,\imath}$ | Covariant derivative |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath} = \partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath}$ | Components; $\partial/\partial R_t = \partial/\partial(i r'_t)$ |
@@ -406,7 +406,7 @@ The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco},\Phi}\
 | $\tilde{A}_{\Phi}^{\natural}$ | Quaternion conjugate of the connection, by *Product and Form Conventions* |
 | $[\tilde\nabla_{\mathrm{gco},\Phi,\imath}, f] = \partial/\partial R_{\imath} f$ | Derivation property |
 | $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2 = S - \Box_\Phi\Gamma$ | Gauge scalar; pure gauge |
-| $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\imath\jmath}F_{\imath\jmath}e_{\imath}^{\natural} e_{\jmath}$ | Field strength = curvature, gauge invariant |
+| $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\imath\jmath}F_{\imath\jmath}e_{\imath}^{\natural} e_{\jmath}$ | Field strength = curvature, invariant |
 | $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath}$ | Abelian curvature components |
 | $[\tilde\nabla_{\mathrm{gco},\Phi,\imath}, \tilde\nabla_{\mathrm{gco},\Phi,\jmath}] =\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$ | Curvature as commutator |
 | $\sum_{\imath} \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 = \mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi})$ | Covariant d'Alembertian |

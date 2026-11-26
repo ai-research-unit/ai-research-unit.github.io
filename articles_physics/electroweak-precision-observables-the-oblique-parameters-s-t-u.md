@@ -4,13 +4,13 @@
 
 The material below is standard theory, written in the corpus's language. No number in it is derived from the biquaternion algebra, and §*What the Framework Supplies* separates the linear algebra the algebra can host from the part imported with the particle content. The two sources are Peskin and Takeuchi (1990), where the three parameters are defined, and the electroweak review of the Particle Data Group, where they are fitted.
 
-Three numbers summarise what any heavy new sector does to the electroweak gauge bosons, and they exist because the vacuum polarisation of those bosons has more freedom than the three inputs of the theory can fix. The freedom is three-dimensional, and that dimension is a count, not a convention:
+Three numbers summarise what any heavy new sector does to the electroweak connections, and they exist because the vacuum polarisation of those bosons has more freedom than the three inputs of the theory can fix. The freedom is three-dimensional, and that dimension is a count, not a convention:
 
 $$
 8-2-3=3 .
 $$
 
-Four self-energy functions, each with a value and a slope at zero momentum, give eight numbers. Electromagnetic gauge invariance sets two of the values to zero. The three measured inputs $\alpha$, $G_F$ and $M_Z$ absorb three more. Three combinations survive, and they are called $S$, $T$ and $U$.
+Four self-energy functions, each with a value and a slope at zero momentum, give eight numbers. Electromagnetic local invariance sets two of the values to zero. The three measured inputs $\alpha$, $G_F$ and $M_Z$ absorb three more. Three combinations survive, and they are called $S$, $T$ and $U$.
 
 The definitions are these.
 
@@ -42,7 +42,7 @@ $\rho$ appears elsewhere as the tree-level number $1$ and as the custodial invar
 
 ## The Self-Energy Functions
 
-The one-particle-irreducible two-point function of two gauge fields, in momentum space, carries two Lorentz indices and is written
+The one-particle-irreducible two-point function of two connections, in momentum space, carries two Lorentz indices and is written
 
 $$
 i\Pi_{VV',\imath\jmath}(q)=i\left(\delta_{\imath\jmath}-\frac{q_{\imath} q_{\jmath}}{q^2}\right)\Pi_{VV'}(q^2)+\text{(terms proportional to }q_{\imath}\text{ or }q_{\jmath}\text{)} .
@@ -50,7 +50,7 @@ $$
 
 The second piece never contributes to a physical amplitude: a conserved external current annihilates it. What matters is the transverse function $\Pi_{VV'}(q^2)$.
 
-For the photon the transverse structure is forced. Electromagnetic gauge invariance requires $\sum_{\imath} q_{\imath}\Pi_{\gamma\gamma,\imath\jmath}=0$. With the projectors
+For the photon the transverse structure is forced. Electromagnetic local invariance requires $\sum_{\imath} q_{\imath}\Pi_{\gamma\gamma,\imath\jmath}=0$. With the projectors
 
 $$
 P_{\imath\jmath}=\delta_{\imath\jmath}+\frac{q_{\imath} q_{\jmath}}{\Pi} ,
@@ -77,7 +77,7 @@ There are four functions: the three neutral pairs among $\gamma$ and $Z$, and th
 | $\Pi_{ZZ}$ | $ZZ$ | no |
 | $\Pi_{WW}$ | $WW$ | no |
 
-Two values are zero and two are not. The two that vanish do so by electromagnetic gauge invariance: a massless photon cannot mix with anything at zero momentum, because a mixing would give it a mass. The two that do not vanish are the masses themselves: $\Pi_{ZZ}(0)=M_Z^2$ and $\Pi_{WW}(0)=M_W^2$ in the reference theory, so the two non-zero values are not free but are fixed by the two measured masses.
+Two values are zero and two are not. The two that vanish do so by electromagnetic local invariance: a massless photon cannot mix with anything at zero momentum, because a mixing would give it a mass. The two that do not vanish are the masses themselves: $\Pi_{ZZ}(0)=M_Z^2$ and $\Pi_{WW}(0)=M_W^2$ in the reference theory, so the two non-zero values are not free but are fixed by the two measured masses.
 
 Each function is expanded about $q^2=0$,
 
@@ -96,7 +96,7 @@ Eight numbers, less two, less three.
 | Step | Removed | Reason |
 |---|---|---|
 | four functions, value and slope | $8$ remain | definition |
-| $\Pi_{\gamma\gamma}(0)=0$ and $\Pi_{Z\gamma}(0)=0$ | $6$ remain | electromagnetic gauge invariance |
+| $\Pi_{\gamma\gamma}(0)=0$ and $\Pi_{Z\gamma}(0)=0$ | $6$ remain | electromagnetic local invariance |
 | $\alpha$, $G_F$, $M_Z$ as inputs | $3$ remain | they fix three normalisations |
 | the survivors | $S$, $T$, $U$ | by definition |
 
@@ -248,14 +248,14 @@ The number to remember is $1/(6\pi)=0.053$ per unit of $\ln M_H$. The same facto
 
 ## What the Parameters Cannot See
 
-The three parameters describe new physics that couples to the Standard Model *only* through the gauge-boson self-energies. That is a strong assumption, and it fails in identifiable ways.
+The three parameters describe new physics that couples to the Standard Model *only* through the connection self-energies. That is a strong assumption, and it fails in identifiable ways.
 
 | What is invisible or misdescribed | Why | What is needed instead |
 |---|---|---|
 | a $Z'$ with direct fermion couplings | it produces four-fermion operators, not self-energies | a full four-fermion fit |
 | leptoquarks with flavour structure | the couplings carry generation indices | flavour-specific observables |
 | new physics lighter than $M_Z$ | the expansion in $q^2/M^2$ does not converge | a full momentum-dependent analysis |
-| a sector coupling only to the Higgs | it shifts $M_H$ and the quartic, not the gauge functions | the Higgs couplings |
+| a sector coupling only to the Higgs | it shifts $M_H$ and the quartic, not the phase functions | the Higgs couplings |
 | anything with a large width | a broad resonance is not a heavy state | a line-shape analysis |
 
 A $Z'$ is the standard example: it mixes with the $Z$, so it does shift $S$ and $T$, but it also couples to fermions directly, and the direct couplings dominate the $Z$-pole observables. A fit in $S$ and $T$ alone would attribute the shift to the wrong parameter and could miss the state entirely.
@@ -290,8 +290,8 @@ What the algebra supplies and what is imported:
 
 | Item | Status |
 |---|---|
-| Transversality of the self-energy from the Ward identity | the algebra's, via the gauge-fixing article's projector |
-| The projector algebra $P^2=P$, $L^2=L$, $P+L=\delta$ | from the gauge-fixing article |
+| Transversality of the self-energy from the Ward identity | the algebra's, via the fixing the representative article's projector |
+| The projector algebra $P^2=P$, $L^2=L$, $P+L=\delta$ | from the fixing the representative article |
 | The count $8-2-3=3$ | linear algebra; available to any framework |
 | The custodial relation $\Pi_{WW}=\Pi_{W_3W_3}$ and its $q^2=0$ case | the algebra's group, the tree-level masses |
 | The definitions of $S$, $T$, $U$ | imported, Peskin–Takeuchi |
@@ -306,13 +306,13 @@ Two things the algebra contributes are not transcription.
 
 What the algebra does not contribute is the numerical values, and the *existence* of the three parameters as measurements. The framework can say why three combinations survive; it cannot say what they are worth, because their worth is set by the particle content, and the particle content has no framework route.
 
-Those two statements are what make the article consistent with the gauge-fixing article rather than merely adjacent to it: the same $P$ and $L$, the same Ward identity, the same $\Pi$.
+Those two statements are what make the article consistent with the fixing the representative article rather than merely adjacent to it: the same $P$ and $L$, the same Ward identity, the same $\Pi$.
 
 The oblique parameters are a *summary* of heavy physics, not a theory of it. Nothing in the framework or in the algebra produces the heavy sector to be summarised, so the article's subject is what the Standard Model's precision data say about the absence of such a sector, and it is silent on what such a sector would be.
 
 ## Summary
 
-Three numbers summarise heavy new physics in the gauge sector, and their number is forced: four self-energy functions with value and slope give eight numbers, two vanish by electromagnetic gauge invariance, three are absorbed by the measured inputs $\alpha$, $G_F$ and $M_Z$, and three survive. The count is $8-2-3=3$ and it is a dimension, not a convention.
+Three numbers summarise heavy new physics in the sector, and their number is forced: four self-energy functions with value and slope give eight numbers, two vanish by electromagnetic local invariance, three are absorbed by the measured inputs $\alpha$, $G_F$ and $M_Z$, and three survive. The count is $8-2-3=3$ and it is a dimension, not a convention.
 
 $T$ is the $\rho$ parameter written as a deviation, $\alpha T=\rho-1$; with $T=0.05$ the custodial relation holds to $3.6\times10^{-4}$. $S$ is what survives the subtraction in the neutral sector — the $W_3$–$B$ mixing together with the difference $\Pi'_{ZZ}-\Pi'_{\gamma\gamma}$ — and it is largest for a degenerate chiral doublet, at $N_c/(6\pi)$; $U$ is the same kind of difference taken in the derivative, which is why $U$ is the smallest and the least measured. A custodially invariant sector has $T=U=0$ exactly, and the statement is the value and the derivative of one relation, $\Pi_{WW}(q^2)=\Pi_{W_3W_3}(q^2)$, whose $q^2=0$ case is $M_W=M_Zc_W$.
 
@@ -322,7 +322,7 @@ A mass splitting shifts $T$ through the Veltman bracket, which is quadratic in $
 
 The standard large-$N$ estimate for a chiral doublet's contribution to $S$, $N_c/(6\pi)=0.053$, is the size of the experimental uncertainty. That coincidence is what makes the sector a precision test: one chiral doublet at the electroweak scale would be visible, and none is. A vector-like singlet, and any state with no isospin, shifts nothing at leading order, so the parameters measure multiplet structure and its breaking rather than the presence of heavy states. The oblique description is itself a hypothesis, tested by the fit's residuals, with a date on it.
 
-The framework supplies the transversality of the self-energy through the gauge-fixing article's projector, and the dimension count as linear algebra. It does not supply the definitions, the numbers, or the particle content.
+The framework supplies the transversality of the self-energy through the fixing the representative article's projector, and the dimension count as linear algebra. It does not supply the definitions, the numbers, or the particle content.
 
 ## Summary of Notation
 

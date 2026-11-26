@@ -84,7 +84,7 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 Three statements, and each is unchanged.
 
-*It removes the field's own shift freedom.* $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$ is not a symmetry of $\mathcal L_{\mathrm{gco}}$ at $\nu_m\ne0$, because $\lvert A\rvert^{2}$ is not invariant; and the coupling does not restore it, because $D\partial\Gamma\ne\partial$ unless $\Gamma$ is constant in the gauge-covariant sense.
+*It removes the field's own shift freedom.* $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$ is not a symmetry of $\mathcal L_{\mathrm{gco}}$ at $\nu_m\ne0$, because $\lvert A\rvert^{2}$ is not invariant; and the coupling does not restore it, because $D\partial\Gamma\ne\partial$ unless $\Gamma$ is constant in the covariant sense.
 
 *It supplies the condition.* The derivation above uses the mass term's coefficient: with $\nu_m=0$ the identity $\partial\partial F=0$ stands alone and says nothing about $A$.
 
@@ -92,11 +92,11 @@ Three statements, and each is unchanged.
 
 What the mass term no longer does is make the condition a conservation law. That is the fourth statement of the free rung and it is not available, for the reason the previous section gives: the source is there whether or not the mass is.
 
-And the coupling does not break the external gauge symmetry. Under $A\mapsto\digamma_{\mathrm{gau}} A$ with $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $A^{\mathrm{ext}}_{\imath}\mapsto A^{\mathrm{ext}}_{\imath}-\partial_{\imath}\Gamma$, both terms are invariant: the derivative term because $D$ is, the algebraic term because $\lvert\digamma_{\mathrm{gau}}\rvert^{2}=1$. Two different freedoms must be kept apart: the field's own shift, which the mass breaks at both rungs, and the external group's phase rotation, which is a symmetry at the charged rung and is what makes the carrier complex.
+And the coupling does not break the external local symmetry. Under $A\mapsto\digamma_{\mathrm{gau}} A$ with $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $A^{\mathrm{ext}}_{\imath}\mapsto A^{\mathrm{ext}}_{\imath}-\partial_{\imath}\Gamma$, both terms are invariant: the derivative term because $D$ is, the algebraic term because $\lvert\digamma_{\mathrm{gau}}\rvert^{2}=1$. Two different freedoms must be kept apart: the field's own shift, which the mass breaks at both rungs, and the external group's phase rotation, which is a symmetry at the charged rung and is what makes the carrier complex.
 
 ## The Structural Consequence: What the Carrier's Doubling Costs
 
-The free carrier has four real parameters; the charged one has eight, and the action says which term sees which. The block's charged article records the doubling and this article states its location: the derivative term sees all eight, the algebraic term sees one combination of them — the magnitude — and the external gauge redundancy removes one.
+The free carrier has four real parameters; the charged one has eight, and the action says which term sees which. The block's charged article records the doubling and this article states its location: the derivative term sees all eight, the algebraic term sees one combination of them — the magnitude — and the external redundancy removes one.
 
 The density and the direction are therefore not enough to describe the carrier, and that is the difference from the other charged articles. At the scalar rung the carrier is one complex number and the fluid's variables exhaust it; at the spinor rung the carrier is one biquaternion and the word's eight parameters exhaust it; **here the carrier is a complex vector, the fluid's variables are a magnitude and a direction, and the count does not close.** The balance is the phase and the imaginary part of the direction, and the action puts the phase in the derivative term only.
 
@@ -112,7 +112,7 @@ The sign. The charge is $q\rho_{\mathrm{chg}}$ with $\rho_{\mathrm{chg}}=\varrho
 
 ## What the Principle Adds and What It Relabels: In the Fluid Chart
 
-Adds. The location of the coupling in the action: the derivative term and not the algebraic one, hence the pressure's survival and the continuity's loss. The decomposition $F=r\Omega+\mathrm{d}r\wedge u$ as an algebraic identity with $D$ in place of $\mathrm{d}$, and with it the statement that the vorticity's source has changed while its structure has not. The condition's loss of its fluid reading, stated as the source term that $\partial\cdot A$ acquires. The separation of the two gauge freedoms. And the count's failure to close, located at the carrier's complex structure.
+Adds. The location of the coupling in the action: the derivative term and not the algebraic one, hence the pressure's survival and the continuity's loss. The decomposition $F=r\Omega+\mathrm{d}r\wedge u$ as an algebraic identity with $D$ in place of $\mathrm{d}$, and with it the statement that the vorticity's source has changed while its structure has not. The condition's loss of its fluid reading, stated as the source term that $\partial\cdot A$ acquires. The separation of the two redundancies. And the count's failure to close, located at the carrier's complex structure.
 
 Does not add. No new equation. No new fluid: the reading of the magnitude and the direction survives and does not extend. No statement about the extra four parameters beyond their location. No thermodynamics. No quantum potential, at either rung, since the Proca action has no second derivative of the magnitude.
 

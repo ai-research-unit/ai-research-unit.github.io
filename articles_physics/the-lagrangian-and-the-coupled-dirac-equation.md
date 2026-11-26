@@ -65,7 +65,7 @@ The constant $\frac{h}{2\pi} c$. It multiplies the whole functional, it cancels 
 
 ### The Two Settings
 
-The constant setting. $\tilde A_\Phi$ is a fixed element of $\mathbb{B}_\Phi$ with constant coefficients. The equation is algebraic in momentum space, the residual is linear with constant coefficients, and the solution is a finite product of exponentials up to the gauge factor:
+The constant setting. $\tilde A_\Phi$ is a fixed element of $\mathbb{B}_\Phi$ with constant coefficients. The equation is algebraic in momentum space, the residual is linear with constant coefficients, and the solution is a finite product of exponentials up to the group factor:
 
 $$
 \tilde\Xi=\exp\Bigl(-i\frac{2\pi ϙ}{h}\tilde A_\Phi\cdot R\Bigr)\tilde\Xi_{\mathrm{free}},
@@ -109,15 +109,15 @@ $$
 
 the covariant wave equation with the curvature term. The coupling therefore changes the compatibility condition in exactly one place, the curvature, and nowhere else.
 
-Boundary terms. The variation of a field of compact support produces none. For fields periodic in the spatial directions no boundary term appears either, provided the gauge function is periodic; a non-periodic gauge function changes the boundary data and the action is then stationary only within a gauge class. That is the standard statement and the coupling does not alter it.
+Boundary terms. The variation of a field of compact support produces none. For fields periodic in the spatial directions no boundary term appears either, provided the phase function is periodic; a non-periodic phase function changes the boundary data and the action is then stationary only within a gauge class. That is the standard statement and the coupling does not alter it.
 
 ## The Constraints the Action Imposes: The Two Gauges
 
-**A first-order action has constrained momenta, and a coupled one has a gauge orbit.** Two different objects are called a constraint in this family, and the article keeps them apart because confusing them is the commonest error in the coupled case.
+**A first-order action has constrained momenta, and a coupled one has an orbit.** Two different objects are called a constraint in this family, and the article keeps them apart because confusing them is the commonest error in the coupled case.
 
 The primary constraints. The action is first order: the conjugate momentum of each part is a bilinear of the other part, not a rate. So the momenta do not determine the velocities and the Legendre transform is not invertible. The count is the parent's, and the polar companion exhibits it as the vanishing of the momenta of the frame; here it is the statement that the action is linear in the time derivatives of the two parts.
 
-The gauge orbit. The local central phase $\tilde\Xi_{R,L}\mapsto e^{i\Lambda}\tilde\Xi_{R,L}$, $\tilde A_\Phi\mapsto\tilde A_\Phi-(\frac{h}{2\pi ϙ})\partial\Lambda$ is a symmetry of the action, and it is the orbit and not the choice: the action selects no representative, and no Lorenz condition is imposed anywhere in this article. The distinction matters because the constraint is physical — it removes momenta — while the orbit is a redundancy of the description and removes no degree of freedom from the action's content.
+The orbit. The local central phase $\tilde\Xi_{R,L}\mapsto e^{i\Lambda}\tilde\Xi_{R,L}$, $\tilde A_\Phi\mapsto\tilde A_\Phi-(\frac{h}{2\pi ϙ})\partial\Lambda$ is a symmetry of the action, and it is the orbit and not the choice: the action selects no representative, and no Lorenz condition is imposed anywhere in this article. The distinction matters because the constraint is physical — it removes momenta — while the orbit is a redundancy of the description and removes no degree of freedom from the action's content.
 
 What the article looks at. The orbit, because the symmetry is exact, and the constraints only to the extent that they fix the count. That is the division the family uses, and the polar companion is where the count is carried out in full.
 
@@ -148,7 +148,7 @@ and the two brackets cancel for every field exactly when $\delta\tilde A_\Phi=-\
 
 **What this settles that the equation alone could not.** The coupled equation can be written down with any operator in place of the gradient, and every such equation is an equation. Only the functional selects the operator whose equation is *the* equation of a locally phased field. The variational principle therefore does real work here: it converts "couple by this prescription" into "the prescription is what local invariance requires".
 
-What it does not settle. The repair is unique *within the abelian class* and up to terms of higher order in the field strength. A term built from $\tilde F$ alone is invariant and cannot be excluded by this argument; it is the gauge field's own action and belongs to the Maxwell article, not to the matter action. The argument also says nothing about non-abelian connections, where $\tilde A_\Phi$ does not commute with the field and the two terms above do not separate.
+What it does not settle. The repair is unique *within the abelian class* and up to terms of higher order in the field strength. A term built from $\tilde F$ alone is invariant and cannot be excluded by this argument; it is the connection's own action and belongs to the Maxwell article, not to the matter action. The argument also says nothing about non-abelian connections, where $\tilde A_\Phi$ does not commute with the field and the two terms above do not separate.
 
 ## The Noether Currents: What the Action Produces and What It Does Not
 
@@ -182,7 +182,7 @@ $$
 \tilde J_{\Phi,\mathrm{sp}}=i\,\tilde\Xi\,\tilde\Xi^{*},
 $$
 
-the value-side product that *The Dirac Equation in Biquaternionic Form* builds. It is an element of $\mathbb{B}$, it is gauge invariant because the two phases cancel, its scalar part is the density with the density's sign, and its vector part is the current-like object the letter suggests. Every formal property except one is right.
+the value-side product that *The Dirac Equation in Biquaternionic Form* builds. It is an element of $\mathbb{B}$, it is invariant because the two phases cancel, its scalar part is the density with the density's sign, and its vector part is the current-like object the letter suggests. Every formal property except one is right.
 
 The one property that fails is conservation. Evaluate the divergence on an exact solution — a superposition of two plane waves, so that the cross terms do not vanish by symmetry — and $\partial_{r'_t}\tilde J_{\Phi,\mathrm{sp}}^{\,t}+\sum_{\imath\in\{x,y,z\}}\partial_{\imath}\tilde J_{\Phi,\mathrm{sp}}^{\,k}$ is nonzero, at the same order as the current itself. Evaluate the same divergence for the display above on the same field and it vanishes to machine precision. The difference is not small and it is not a boundary effect.
 
@@ -252,7 +252,7 @@ and its variation gives the coupled pair. The mass term is invariant under a loc
 
 The local phase's Noether current is the parent's display, and it is one object with three writings: the action's two-part display, the chart's $\rho\cosh\theta_{\mathrm{rpd}}$ and $\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b}$, and the Gordon pairing with two frame units. The time component is a sum over the parts and the spatial component is a difference, because the parts carry conjugate derivatives.
 
-The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant, of the density sign, and not conserved: it carries the two parts with one sign. The conserved current is a triple product, and the algebra supplies every factor. What the algebra does not supply is the choice of the two frame units, which is the frame's datum.
+The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is invariant, of the density sign, and not conserved: it carries the two parts with one sign. The conserved current is a triple product, and the algebra supplies every factor. What the algebra does not supply is the choice of the two frame units, which is the frame's datum.
 
 The covariant stress tensor is conserved when the connection is constant and its divergence is the Lorentz force density when the connection is not: matter alone is not conserved in a background.
 
@@ -284,8 +284,8 @@ The constant setting is closed — a finite product of exponentials up to the ga
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), the equation in the chart.
 - [The Lagrangian and the Coupled Dirac Equation in Polar Variables](the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html), the same action in the chart, and the constraints.
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the pairing and the adjoint row's dictionary.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization and the pair of signs.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Minimal coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization and the pair of signs.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), for the symmetric improvement and the operator-setting comparison.
 - [Landau Levels in Biquaternionic Form](landau-levels-in-biquaternionic-form.html), for the spectrum a non-constant potential does produce.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the standard action, the Noether current and the stress tensor.

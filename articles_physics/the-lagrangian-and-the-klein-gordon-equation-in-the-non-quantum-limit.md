@@ -70,7 +70,7 @@ What restoring the term does. Varying the parent's scale equation with the block
 
 Why the error is a functional of the amplitude alone. The deleted block contains no phase and no potential, so the correction cannot move the phase's equation or the current. The error is confined to the amplitude's equation, and that is why the article can say the transport equation is untouched by the truncation and the mass-shell equation is not.
 
-Gauge covariance of the error. The deleted block is a Lorentz scalar built from the scale's gradient; the scale is gauge invariant. The error is therefore gauge invariant and the truncation commutes with a gauge transformation, which is the property the first-order family does not have and which the article's section on gauge invariance states separately.
+Covariance of the error. The deleted block is a Lorentz scalar built from the scale's gradient; the scale is invariant. The error is therefore invariant and the truncation commutes with a local transformation, which is the property the first-order family does not have and which the article's section on local invariance states separately.
 
 What the error is not. It is not a bound on any solution. **The expansion is asymptotic in $\epsilon$ and it is not claimed to converge**, so the statement is that the truncated equations hold to order $\epsilon^{2}$ for amplitudes that vary slowly, and not that the true solution is within a stated distance of the truncated one.
 
@@ -123,7 +123,7 @@ Keeping the block turns the constraint back into an equation. The quantum potent
 
 The constraint's content is the energy relation. It ties the amplitude to the phase's gradient and the mass at each instant, which is what the leading-order action is built to produce, so the constraint and the limit's leading result are the same statement read twice.
 
-What the constraint is not. It is not a gauge condition, since the invariance here is global, and it is not a Gauss law, since no connection equation is varied. The phase's transport is untouched by the deletion, and that asymmetry is what the structural consequence records.
+What the constraint is not. It is not a fixing condition, since the invariance here is global, and it is not a Gauss law, since no connection equation is varied. The phase's transport is untouched by the deletion, and that asymmetry is what the structural consequence records.
 
 ## The Structural Consequence: Varying the Phase: the Transport, Unchanged
 The phase's variation.

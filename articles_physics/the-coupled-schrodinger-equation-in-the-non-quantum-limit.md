@@ -20,13 +20,13 @@ $$
 
 The scale, the rapidity, the two axes and the density are invariant, and the two combinations of the phase with the potential are the invariants the limit works with.
 
-The consequence for the criterion is the article's first result. The large gradient is no longer $\vec\nabla_\Phi S$ but the kinetic momentum $\vec\pi=\vec\nabla_\Phi S-q\vec A$, which is the gauge-invariant combination. A criterion written on the canonical gradient would not be gauge invariant, and it would be wrong wherever the potential is large. The parameter is $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$, and the scale's gradient is measured against that.
+The consequence for the criterion is the article's first result. The large gradient is no longer $\vec\nabla_\Phi S$ but the kinetic momentum $\vec\pi=\vec\nabla_\Phi S-q\vec A$, which is the invariant combination. A criterion written on the canonical gradient would not be invariant, and it would be wrong wherever the potential is large. The parameter is $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$, and the scale's gradient is measured against that.
 
 The parent's coupling is $ϙ$, with $ϙ=-q$ where $q$ is the electric charge. Every display in this article uses $q$ and the canonical form $\vec\pi=\vec p-q\vec A$; the parent's $-ϙ\omicron_{\mathrm{pot}}$ is $+q\omicron_{\mathrm{pot}}$ here, and the parent's $\vec\nabla_\Phi\times\vec v=ϙ\vec B/m$ is $-(q/m)\vec B$.
 
 The coupling changes no order: both of the parent's equations have the same three orders as the free pair, and the quantum potential is the same function of the scale. Order zero is a Hamilton–Jacobi equation in the kinetic momentum, and its gradient is the Lorentz force with $\vec\pi=m\vec v$, so the non-relativistic limit produces Newton's law with the magnetic force and nothing else. Order one is the covariant continuity equation, whose current is the kinetic momentum over the mass, and which is not an expansion. The vorticity is the field's: the canonical flow is irrotational and the kinetic flow is rotational exactly where $\vec B$ is, and the circulation is quantised with the flux subtracted, an exact statement the limit inherits and does not derive.
 
-The covariant Madelung pair, the kinetic momentum in the transport current, the vorticity of the velocity field and the flux-corrected circulation are standard results of the fluid formulation of a charged scalar field, and the Lorentz force from a Hamilton–Jacobi equation is textbook. Added here: the ordering of the parent's own terms against a gauge-invariant parameter, the statement that the coupling costs no accuracy, and the reading of the gauge group as the translation of one polar coordinate.
+The covariant Madelung pair, the kinetic momentum in the transport current, the vorticity of the velocity field and the flux-corrected circulation are standard results of the fluid formulation of a charged scalar field, and the Lorentz force from a Hamilton–Jacobi equation is textbook. Added here: the ordering of the parent's own terms against an invariant parameter, the statement that the coupling costs no accuracy, and the reading of the symmetry group as the translation of one polar coordinate.
 
 The restriction is the free one, and the coupling does not remove it. The parent's pair is the central field's, $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_{t}$, and that class is invariant only under a central Hamiltonian. The limit is therefore defined on the central class here as it is in the free companion, and for the same reason.
 
@@ -46,7 +46,7 @@ with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The first is th
 
 The connection appears in three places and nowhere else. In the transport it replaces the canonical gradient by the kinetic momentum. In the Hamilton–Jacobi equation it does the same in the kinetic term and it adds the potential energy $q\omicron_{\mathrm{pot}}$. In the quantum potential it does not appear at all.
 
-$Q$ is built from the scale $\varrho$ and its ordinary Laplacian. The scale is invariant under the gauge group, its Laplacian is invariant, and no derivative of the potential reaches it, because the covariant derivative acts on the phase and the frame and the scale is neither. **The quantum potential is the free one, term for term**, and the parent states it as its first finding.
+$Q$ is built from the scale $\varrho$ and its ordinary Laplacian. The scale is invariant under the symmetry group, its Laplacian is invariant, and no derivative of the potential reaches it, because the covariant derivative acts on the phase and the frame and the scale is neither. **The quantum potential is the free one, term for term**, and the parent states it as its first finding.
 
 
 
@@ -68,7 +68,7 @@ $$
 L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert .
 $$
 
-**A criterion on the canonical gradient would fail gauge invariance, and the failure is not cosmetic.** Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi q\Gamma}{h}$ and $\vec A\to\vec A+\vec\nabla_\Phi\Gamma$, the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$ while $\vec\pi$ does not. A parameter defined on the canonical gradient would therefore change value under a gauge transformation, and a limit whose smallness depends on the gauge is not a statement about the field.
+**A criterion on the canonical gradient would fail local invariance, and the failure is not cosmetic.** Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi q\Gamma}{h}$ and $\vec A\to\vec A+\vec\nabla_\Phi\Gamma$, the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$ while $\vec\pi$ does not. A parameter defined on the canonical gradient would therefore change value under a local transformation, and a limit whose smallness depends on the gauge is not a statement about the field.
 
 The order table is the free table with one substitution.
 
@@ -134,7 +134,7 @@ $$
 
 the density carried by the kinetic velocity. In the free case the carrier was $\vec\nabla_\Phi S/m$; here it is $\vec\pi/m$, and that is the whole change.
 
-**The current is gauge invariant, term by term, and the free one is not.** Under a gauge transformation the phase's gradient shifts by $q\vec\nabla_\Phi\Gamma$ and the potential's by $-q\vec\nabla_\Phi\Gamma$, and the two cancel inside one bracket. That is what the coupling buys: a current that is a property of the field rather than of the chart.
+**The current is invariant, term by term, and the free one is not.** Under a local transformation the phase's gradient shifts by $q\vec\nabla_\Phi\Gamma$ and the potential's by $-q\vec\nabla_\Phi\Gamma$, and the two cancel inside one bracket. That is what the coupling buys: a current that is a property of the field rather than of the chart.
 
 The vorticity is the field's, and the statement splits in two.
 
@@ -164,7 +164,7 @@ $$
 Q=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Delta_\Phi \varrho}{\varrho},
 $$
 
-with the ordinary Laplacian and no potential in it. The coupling does not enter, and the reason is one sentence long: the covariant derivative acts on the phase, the quantum potential is built from the scale, and the scale is inert under the gauge group.
+with the ordinary Laplacian and no potential in it. The coupling does not enter, and the reason is one sentence long: the covariant derivative acts on the phase, the quantum potential is built from the scale, and the scale is inert under the symmetry group.
 
 Its size is therefore the free size. With $\varrho=\exp(-x^{2}/4\sigma^{2})$ and $\epsilon=1/(\pi_{\Phi}\sigma)$,
 
@@ -182,9 +182,9 @@ It costs nothing in accuracy. The three orders are the free three, the deleted t
 
 It costs one new condition, and the condition is stated and not met. The connection must be slowly varying on the scale $L$, or the criterion's meaning changes: $\vec\pi$ contains $\vec A$, so a potential that varies as fast as the phase makes the leading term vary as fast as the scale. **No article in the corpus states that condition as a hypothesis**, and this one states it as a gap rather than assuming it away.
 
-The current is gauge invariant. The vorticity is the field's, exactly. And the circulation is quantised with the flux, exactly. None of the three is a semiclassical result; all three are inherited, and the limit's role is to leave them standing.
+The current is invariant. The vorticity is the field's, exactly. And the circulation is quantised with the flux, exactly. None of the three is a semiclassical result; all three are inherited, and the limit's role is to leave them standing.
 
-It gains one structural reading. On the polar chart the gauge group is the translation of one coordinate, so gauge invariance is the statement that seven of the eight parameters are inert and one shifts. The limit's covariance is then visible as a statement about which parameters the criterion reads: it reads the scale and the two invariants of the phase, and it is blind to the other six.
+It gains one structural reading. On the polar chart the symmetry group is the translation of one coordinate, so local invariance is the statement that seven of the eight parameters are inert and one shifts. The limit's covariance is then visible as a statement about which parameters the criterion reads: it reads the scale and the two invariants of the phase, and it is blind to the other six.
 
 ## Verification
 
@@ -198,7 +198,7 @@ were compared with the three components of $\frac{d\vec\pi}{dt'}-q(\vec E+\vec v
 
 The vorticity was checked by direct differentiation. $\vec\nabla_\Phi\times(\vec\nabla_\Phi S-q\vec A)=-q\vec\nabla_\Phi\times\vec A$ because the curl of a gradient vanishes identically, and this is an identity and not an approximation.
 
-The quantum potential was checked for invariance. $Q$ contains $\varrho$ and $\Delta_\Phi \varrho$ only; under the gauge transformation the word's factors transform as the parent states, the scale is unchanged, and $Q$ is unchanged term for term.
+The quantum potential was checked for invariance. $Q$ contains $\varrho$ and $\Delta_\Phi \varrho$ only; under the local transformation the word's factors transform as the parent states, the scale is unchanged, and $Q$ is unchanged term for term.
 
 The circulation was checked against the parent's letters. The parent writes $\oint\vec\pi\cdot\mathrm{d}\vec l=h n+ϙ\digamma_{\mathrm{flx}}$ with $ϙ=-q$; the display here is the same statement in the article's letters.
 
@@ -206,9 +206,9 @@ The circulation was checked against the parent's letters. The parent writes $\oi
 
 ## Summary
 
-The parent's pair carries the connection in exactly three places: the transport current, the kinetic term of the Hamilton–Jacobi equation, and the potential energy. The quantum potential is the free one, because it is built from the scale and the scale is inert under the gauge group.
+The parent's pair carries the connection in exactly three places: the transport current, the kinetic term of the Hamilton–Jacobi equation, and the potential energy. The quantum potential is the free one, because it is built from the scale and the scale is inert under the symmetry group.
 
-The criterion must be written on the mechanical momentum, $\epsilon=1/(\pi_{\Phi}L)$, because the canonical gradient is not gauge invariant. With that substitution the order table is the free table and the coupling contributes no parameter.
+The criterion must be written on the mechanical momentum, $\epsilon=1/(\pi_{\Phi}L)$, because the canonical gradient is not invariant. With that substitution the order table is the free table and the coupling contributes no parameter.
 
 Order zero is the Hamilton–Jacobi equation in the kinetic momentum, and its gradient is the Lorentz force with $\vec\pi=m\vec v$: Newton's law with the magnetic force, from order zero alone, by two named cancellations. Order one is the covariant continuity equation, exact and untouched by the limit, and it carries two exact companions — the vorticity $-(q/m)\vec B$ and the circulation $h n-q\digamma_{\mathrm{flx}}$.
 

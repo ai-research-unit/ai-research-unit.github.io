@@ -6,7 +6,7 @@ The question. The electroweak sector's scalar is the one field in the corpus who
 
 The answer in five sentences. The scalar action is the Klein–Gordon action for a complex doublet with a potential $V=-\mu^{2}\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}+\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2}$, and the potential is a function of one variable, $r^{2}=2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}$, so the four real components split into one radial direction that is curved and three angular directions that are flat. The variation gives $\Box\omicron_{\mathrm{hgs}}=\mu^{2}\omicron_{\mathrm{hgs}}-2\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})\omicron_{\mathrm{hgs}}$, whose radial reading is the anharmonic oscillator and whose unitary reading is $\Box h+m_h^{2}h+3\varpi_{\mathrm{cpl}} vh^{2}+\varpi_{\mathrm{cpl}} h^{3}=0$. The mass is the curvature of the potential at its minimum, $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$, and the same $\varpi_{\mathrm{cpl}}$ fixes the cubic and quartic self-couplings at $6\varpi_{\mathrm{cpl}} v$ and $6\varpi_{\mathrm{cpl}}$, so one number is measured three times. The three flat directions are the would-be Goldstone modes, and that is the whole of what the scalar sector contributes to the breaking.
 
-Why this article exists apart from the sector article. Because the sector article's subject is the gauge action and its two phases, and the scalar's own structure is a different claim. Here the gauge fields are spectators: the covariant derivative is replaced by the ordinary one, and the difference between the two actions is exactly the vector mass term, which the companion derives. What is left is a potential and its derivatives, and those are exact.
+Why this article exists apart from the sector article. Because the sector article's subject is the gauge action and its two phases, and the scalar's own structure is a different claim. Here the connections are spectators: the covariant derivative is replaced by the ordinary one, and the difference between the two actions is exactly the vector mass term, which the companion derives. What is left is a potential and its derivatives, and those are exact.
 
 What is not done. No loop, no renormalisation, no running, no unitarity computation, no scattering amplitude and no decay rate. The value of $\varpi_{\mathrm{cpl}}$ is taken from the measured mass and is not derived. Nothing here is the Standard Model's quantised scalar sector, and the article says so at the point where the reader would expect it.
 
@@ -57,7 +57,7 @@ It is real, term by term. The kinetic term is $\partial_{\imath}\omicron_{\mathr
 
 **Why the sign of $\mu^{2}$ is the whole content.** With $\mu^{2}<0$ the potential has a single stationary point, at $\omicron_{\mathrm{hgs}}=0$, and it is a minimum; the four components are degenerate and each has mass $\sqrt{-\mu^{2}}$. With $\mu^{2}>0$ the origin is a maximum and the minimum is the three-sphere $\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}=v^{2}/2$. Nothing else in the action changes. The article's subject is the second case, and the first is named here only because the same display covers both.
 
-What the display is not. It is not the electroweak action: three of the four derivatives are not there, and putting them back turns the three flat directions into the longitudinal polarisations of $W^{\pm}$ and $Z$. It is not a quantised action: there is no gauge fixing, no ghost and no loop. And it is not a claim that the scalar is elementary — the potential is a renormalisable truncation, and the corpus's effective-potential article treats what the truncation costs.
+What the display is not. It is not the electroweak action: three of the four derivatives are not there, and putting them back turns the three flat directions into the longitudinal polarisations of $W^{\pm}$ and $Z$. It is not a quantised action: there is no fixing the representative, no ghost and no loop. And it is not a claim that the scalar is elementary — the potential is a renormalisable truncation, and the corpus's effective-potential article treats what the truncation costs.
 
 ## The Variation
 
@@ -89,7 +89,7 @@ $$
 
 which is the radial equation expanded about $r=v+h$ with the linear term removed by the minimum condition. The three terms after the mass term are the nonlinearity, and their coefficients are fixed: there is no freedom left in them once $\varpi_{\mathrm{cpl}}$ and $v$ are chosen.
 
-The boundary term, and why it is not an obstacle. The equation is second order in time, so the variation needs $\omicron_{\mathrm{hgs}}$ and its normal derivative fixed on the boundary — the same condition the Klein–Gordon article imposes, and the surface term vanishes under it. The scalar's variation is the simplest in the family for this reason: no gauge parameter, no constraint, no identity.
+The boundary term, and why it is not an obstacle. The equation is second order in time, so the variation needs $\omicron_{\mathrm{hgs}}$ and its normal derivative fixed on the boundary — the same condition the Klein–Gordon article imposes, and the surface term vanishes under it. The scalar's variation is the simplest in the family for this reason: no parameter, no constraint, no identity.
 
 **What the variation does not give.** It does not give the masses of the vectors, the Goldstone modes, or the count. Those come from the same action with the covariant derivative restored and the vacuum chosen, and they are the companion article's subject. What the variation gives here is the scalar's equation and, through it, the statement that the potential's derivatives are the couplings.
 
@@ -107,7 +107,7 @@ What the section does not claim. It does not claim the vacuum is undetermined: t
 
 The claim. The potential is a function of $r$ alone, so the four real components of the doublet split into one radial field with a curved potential and three angular fields with a flat one. The radial field's mass is the curvature at the minimum, and the same curvature's third and fourth derivatives are its self-couplings. One number determines three measured quantities.
 
-The split, in one line. $V$ depends on the four $\xi_{\mathrm{pot},A}$ through $\sum_A\xi_{\mathrm{pot},A}^{2}$ and on nothing else, so the symmetry group of the potential alone is $O(4)$, acting by rotations of the four-vector. A minimum at $r=v$ breaks $O(4)$ to $O(3)$, and the count of flat directions is $4-1=3$. Those three are the would-be Goldstone modes. Nothing about the gauge fields entered this paragraph, and that is the point: the breaking is a property of the potential.
+The split, in one line. $V$ depends on the four $\xi_{\mathrm{pot},A}$ through $\sum_A\xi_{\mathrm{pot},A}^{2}$ and on nothing else, so the symmetry group of the potential alone is $O(4)$, acting by rotations of the four-vector. A minimum at $r=v$ breaks $O(4)$ to $O(3)$, and the count of flat directions is $4-1=3$. Those three are the would-be Goldstone modes. Nothing about the connections entered this paragraph, and that is the point: the breaking is a property of the potential.
 
 The curvature check. Expand $V$ about $r=v$:
 
@@ -143,7 +143,7 @@ $$
 
 conserved by the equation of motion. In the unitary chart the doublet has one real non-zero component, and $J_{Y,\imath}$ vanishes identically there: $\omicron_{\mathrm{hgs}}^{\dagger}\partial_{\imath}\omicron_{\mathrm{hgs}}$ is real when $\omicron_{\mathrm{hgs}}$ is real, so the two terms cancel. **The physical Higgs field carries no hypercharge.**
 
-Where the current went. Into the three angular directions. A general chart writes $\omicron_{\mathrm{hgs}}=\frac{1}{\sqrt2}\binom{0}{r}e^{i\theta_{a}\tau_{a}/2}$-style, and the phase directions carry $J_{Y,\imath}$ in proportion to their gradients. Those directions are the would-be Goldstones, and the gauge field that eats them inherits the coupling: the statement that the $Z$ has a hypercharge current is the same statement as the statement that the eaten Goldstones carried one. This is the mechanism read from the current side, and it agrees with the companion's count, which reads it from the degrees of freedom.
+Where the current went. Into the three angular directions. A general chart writes $\omicron_{\mathrm{hgs}}=\frac{1}{\sqrt2}\binom{0}{r}e^{i\theta_{a}\tau_{a}/2}$-style, and the phase directions carry $J_{Y,\imath}$ in proportion to their gradients. Those directions are the would-be Goldstones, and the connection that eats them inherits the coupling: the statement that the $Z$ has a hypercharge current is the same statement as the statement that the eaten Goldstones carried one. This is the mechanism read from the current side, and it agrees with the companion's count, which reads it from the degrees of freedom.
 
 The count of currents, from the potential alone. The potential's symmetry is $O(4)$; the minimum breaks it to $O(3)$; the number of generators that do not annihilate the vacuum is $6-3=3$. So three currents are broken and one linear combination of the four electroweak generators survives — the electromagnetic one, whose charge is $Q=T_3+Y/2$, with the sign of the electron's charge fixed by the hypercharge assignment and not by anything in this article. The count of currents and the count of Goldstones are the same number for the same reason.
 
@@ -159,7 +159,7 @@ where the constant is subtracted so that the energy of the vacuum is zero by def
 
 ## What the Principle Adds and What It Relabels
 
-Adds. One parameter, $\varpi_{\mathrm{cpl}}$, for the whole scalar sector, with the mass as its curvature and the two self-couplings as its third and fourth derivatives. The relation $g_{hhhh}=g_{hhh}/v$. The vacuum energy as a number the potential produces. And the split into one curved and three flat directions, which is the breaking stated without the gauge fields.
+Adds. One parameter, $\varpi_{\mathrm{cpl}}$, for the whole scalar sector, with the mass as its curvature and the two self-couplings as its third and fourth derivatives. The relation $g_{hhhh}=g_{hhh}/v$. The vacuum energy as a number the potential produces. And the split into one curved and three flat directions, which is the breaking stated without the connections.
 
 Relabels. The corpus's Higgs-mechanism statements — the doublet, the potential, the circle of minima, the count, the masses — are all recoverable from this action, and it adds no number to them except $\varpi_{\mathrm{cpl}}$, which they already contain in the form $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$.
 

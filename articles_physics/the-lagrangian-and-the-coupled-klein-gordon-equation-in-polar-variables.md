@@ -194,7 +194,7 @@ No other parameter moves. The claim is that this is the *whole* of minimal coupl
 
 What it buys. The four-bracket expansion of the free article is unchanged: the brackets are the logarithmic derivative's decomposition and know nothing about the connection. The coupling enters the phase's bracket alone, and the mass term, being a function of $\varrho$ and the frame, is untouched. Hence the coupled chart's Lagrangian is the free chart's Lagrangian with one rate and one gradient shifted, and the two-number statement of the operator setting — $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$, $\vec h_\Psi\mapsto\vec h_\Psi-ϙ\vec A$ — is the same statement read in the other chart.
 
-What it forbids. A coupling that entered the frame's brackets would break the gauge invariance computed in the section on the charge, because the frame is what the gauge transformation rotates. The placement is therefore forced by the symmetry and not chosen for convenience.
+What it forbids. A coupling that entered the frame's brackets would break the local invariance computed in the section on the charge, because the frame is what the local transformation rotates. The placement is therefore forced by the symmetry and not chosen for convenience.
 
 ### The Reconstruction and Its Limits
 
@@ -222,7 +222,7 @@ with $E=-\frac{h}{2\pi} c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, which is the f
 
 The sign. On the negative-frequency branch $E$ is negative, the bracket can change sign where the potential is large, and the charge density follows. So the potential shifts the boundary between the two signs but does not remove the sign change; the free article's two defects are one defect, and the coupling does not address it. The positive definiteness of $\rho_{\mathrm{num}}$ is a statement about the number density and not about the charge.
 
-The gauge invariance. Under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Lambda}{h}$ and $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Lambda$, the bracket $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$ is invariant, the bracket $\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A$ is invariant, and **the charge is invariant**. The invariance is a two-line computation in the chart, and it is the same statement as the element companion's cancellation between the two terms of a bilinear. The chart's version is the sharper one for the charge, because the charge is one product and the cancellation is inside one bracket.
+The local invariance. Under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Lambda}{h}$ and $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Lambda$, the bracket $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$ is invariant, the bracket $\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A$ is invariant, and **the charge is invariant**. The invariance is a two-line computation in the chart, and it is the same statement as the element companion's cancellation between the two terms of a bilinear. The chart's version is the sharper one for the charge, because the charge is one product and the cancellation is inside one bracket.
 
 What the pairing of the two branches gives. Complex conjugation sends $\theta_{\mathrm{pha}}\to-\theta_{\mathrm{pha}}$ and leaves the connection alone; the charge changes sign and the action is unchanged, because the action is even in $\partial\theta$ except for the linear interaction term, and that term changes sign with the phase. So the conjugate branch is the antiparticle's chart, with the opposite charge and the same mass shell, and the potential's contribution to the charge reverses with it. The statement is the free article's, and the coupling's only addition is that the potential enters the charge.
 
@@ -249,9 +249,9 @@ Why the action does not see it. A circulation is a property of a closed loop and
 Adds.
 
 - A derivation of the charged Madelung pair from the element action by one substitution, with the two functions identified as the field's scale and phase rather than postulated.
-- The interaction's two-term structure, linear and quadratic in the potential, exhibited separately, with the quadratic term identified as the one that gauge invariance requires.
+- The interaction's two-term structure, linear and quadratic in the potential, exhibited separately, with the quadratic term identified as the one that local invariance requires.
 - The statement that the coupling preserves the chart's regularity: same kinetic rank, same Legendre transform, no constraint, no multiplier.
-- The charge's gauge invariance as a cancellation inside one bracket, and the vorticity and circulation as consequences of the current's definition.
+- The charge's local invariance as a cancellation inside one bracket, and the vorticity and circulation as consequences of the current's definition.
 - The eight-parameter chart's closure carried over unchanged, with the connection shifting two slots and multiplying nothing.
 
 Does not add.
@@ -285,7 +285,7 @@ S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{-(\partial_{r'_t}\varrho)^{2}+\
 +\frac{(2\pi)^{2} \rho_{\mathrm{num}}}{h^{2}}\bigl[(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)^{2}-\lvert\nabla S_{\tilde\Xi}-q\vec A\rvert^{2}\bigr]-4\pi^{2}\nu_m^{2}\rho_{\mathrm{num}}\Bigr\},
 $$
 
-and its two equations are the transport equation and the amplitude equation of the polar companion. The interaction is a linear term in the potential times the free phase rate plus a quadratic term with no phase, and the quadratic term is what gauge invariance requires. The kinetic matrix's rank is unchanged, so no constraint appears and no multiplier is needed; the eight-parameter chart's exactness by the invertible Jacobian is the free article's and survives. The vorticity of the mechanical current is $ϙ\vec B$ and its circulation is $h n+ϙ\digamma_{\mathrm{flx}}$.
+and its two equations are the transport equation and the amplitude equation of the polar companion. The interaction is a linear term in the potential times the free phase rate plus a quadratic term with no phase, and the quadratic term is what local invariance requires. The kinetic matrix's rank is unchanged, so no constraint appears and no multiplier is needed; the eight-parameter chart's exactness by the invertible Jacobian is the free article's and survives. The vorticity of the mechanical current is $ϙ\vec B$ and its circulation is $h n+ϙ\digamma_{\mathrm{flx}}$.
 
 ## Summary of Notation
 

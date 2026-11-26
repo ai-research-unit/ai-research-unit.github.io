@@ -174,13 +174,13 @@ The count jumps at $M_C$ and falls twice, and the jump is the point: one factor 
 
 **The heavy pieces are removed, not deleted.** The distinction is the subject of the next article in the block.
 
-**6.1 The removal.** Below $M_C$ the leptoquark piece is absent from the derivative. Fields coupled by it are no longer coupled: the lepton and the quark do not share a connection, and the gauge symmetry that would have related them is gone.
+**6.1 The removal.** Below $M_C$ the leptoquark piece is absent from the derivative. Fields coupled by it are no longer coupled: the lepton and the quark do not share a connection, and the local symmetry that would have related them is gone.
 
 **6.2 What remains of it.** The removal leaves operators: four-fermion terms with coefficients $\sim g_4^{2}/M_X^{2}$, which is why the leptoquarks can be bounded without being produced. That is the effective-Lagrangian statement, and the bound is in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
 **6.3 The correction to the light couplings.** The removal also shifts the light couplings by finite amounts, which is the matching computation of [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html). At tree level the shifts are zero; at one loop they are not.
 
-**6.4 The exact statement.** Up to the matching corrections, the three pieces above are the whole gauge sector of the low-energy theory. Nothing else couples to a fermion through a derivative.
+**6.4 The exact statement.** Up to the matching corrections, the three pieces above are the whole sector of the low-energy theory. Nothing else couples to a fermion through a derivative.
 
 ## The Checks
 

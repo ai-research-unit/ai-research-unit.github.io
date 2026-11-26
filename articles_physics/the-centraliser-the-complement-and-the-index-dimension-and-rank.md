@@ -101,7 +101,7 @@ $$
 
 **Nine is not six, so the two subspaces lie on different orbits.** 
 
-**Why the number nine matters.** The sextet's brackets close on the *strong* force and on nothing else: $[\mathfrak m,\mathfrak m]=\mathfrak u(3)$, dimension $9$, which is the dimension of the surviving gauge sector. **So the sextet is not a reservoir of weak directions — it is a reservoir of colour directions.** Its own algebra regenerates what colour already is.
+**Why the number nine matters.** The sextet's brackets close on the *strong* force and on nothing else: $[\mathfrak m,\mathfrak m]=\mathfrak u(3)$, dimension $9$, which is the dimension of the surviving sector. **So the sextet is not a reservoir of weak directions — it is a reservoir of colour directions.** Its own algebra regenerates what colour already is.
 
 **The same theorem in one sentence.** **A closed set can only be carried to a closed set, and the sextet's closure is nine-dimensional while any six-dimensional closed set's closure is six-dimensional.** The obstruction is a dimension count on a closure, and that is why it survives every change of basis, ordering, and dynamics.
 
@@ -162,7 +162,7 @@ $$
 
 **A scalar multiplet can, and only a multiplet can.** A multiplet is specified by its indices, and an index names a space on which a group acts. **When a multiplet appears in the spectrum carrying an index, a factor exists whether or not anyone has written it down**; the transition does not create the group, it makes the index dynamical by making its scalar condense.
 
-**This is the precise content of the phrase "arrives with the index".** The weak force is not manufactured; it was never absent from the *representation theory*, only from the *gauge algebra*. **The transition is the moment the difference stops mattering, because the object carrying the index is the object doing the breaking.**
+**This is the precise content of the phrase "arrives with the index".** The weak force is not manufactured; it was never absent from the *representation theory*, only from the *algebra*. **The transition is the moment the difference stops mattering, because the object carrying the index is the object doing the breaking.**
 
 **And it is why the word is "index" and not "sector".** A new sector would be new fields with new couplings — a new group, a new scale, a new dynamics. An index is a property of a field the model already has. **The whole economy of the construction is in that distinction**, and it is the distinction the earlier version of this work lost when it proposed a confining sector.
 

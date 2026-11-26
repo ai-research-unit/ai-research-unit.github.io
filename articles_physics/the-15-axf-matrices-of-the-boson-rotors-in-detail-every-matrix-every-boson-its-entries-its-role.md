@@ -241,7 +241,7 @@ $$
 
 **The reading.** $\exp(\theta A_{xy})e_{x}=\cos\theta\,e_{x}-\sin\theta\,e_{y}$ with $e_{t}=e_{t}$ and $e_{z}=e_{z}$: **a rotation of the colour triple read inside the quartet.** At $\theta=\pi$ the rotor is the sign flip on the red–green plane, $\operatorname{diag}(1,-1,-1,1)$, **which is an involution of the group and not only a rotation of a plane: applied twice it gives the identity, and it is the element of order two a reader meets again at the centre.**
 
-**The role.** $g_{1}$ is a gluon, and its rotor is a symmetry of the vacuum in the exact sense of the comparison above: $[A_{xy},D]=0$, so $R_{A_{xy}}(\theta)Ξ_{0}R_{A_{xy}}(\theta)^{-1}=Ξ_{0}$ for every $\theta$. **The rotor is the gauge transformation of the unbroken colour group**, and the zero mass is that sentence and not a separate computation.
+**The role.** $g_{1}$ is a gluon, and its rotor is a symmetry of the vacuum in the exact sense of the comparison above: $[A_{xy},D]=0$, so $R_{A_{xy}}(\theta)Ξ_{0}R_{A_{xy}}(\theta)^{-1}=Ξ_{0}$ for every $\theta$. **The rotor is the local transformation of the unbroken colour group**, and the zero mass is that sentence and not a separate computation.
 
 ### $g_{2}$: $iS_{xy}$, the same plane with the phase
 

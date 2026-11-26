@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article writes the non-abelian gauge field as the extremum of the Yang–Mills action inside the material sector, and shows that the trace which makes the action invariant is a matrix trace and not the corpus's informational pairing. It is the action-first companion of *Non-Abelian Gauge Fields in Biquaternionic Form*, which builds the connection, the covariant derivative and the field strength; this article asks what functional has the Yang–Mills equation as its stationary condition, and which pairing is the one that makes it gauge invariant.
+This article writes the non-abelian connection as the extremum of the Yang–Mills action inside the material sector, and shows that the trace which makes the action invariant is a matrix trace and not the corpus's informational pairing. It is the action-first companion of *Non-Abelian Gauge Fields in Biquaternionic Form*, which builds the connection, the covariant derivative and the field strength; this article asks what functional has the Yang–Mills equation as its stationary condition, and which pairing is the one that makes it invariant.
 
 The equation. The parent's equation is the Yang–Mills equation without sources,
 
@@ -26,7 +26,7 @@ $$
 
 the stationarity condition is $D_{\imath} F_{\imath\jmath}=0$. The coefficient $\tfrac12$ and the sign are the standard ones once the generators are normalized so that $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$.
 
-*Second, the trace is not the corpus's pairing.* The invariance of the density needs $\mathrm{Tr}(\tilde QF\tilde Q^{-1}\tilde QF\tilde Q^{-1})=\mathrm{Tr}(FF)$, which is the cyclicity of the matrix trace. The corpus's informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a different functional, and it does not have that property. Using it would give an action that is not gauge invariant, and the distinction is the sharpest technical point of this article.
+*Second, the trace is not the corpus's pairing.* The invariance of the density needs $\mathrm{Tr}(\tilde QF\tilde Q^{-1}\tilde QF\tilde Q^{-1})=\mathrm{Tr}(FF)$, which is the cyclicity of the matrix trace. The corpus's informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a different functional, and it does not have that property. Using it would give an action that is not invariant, and the distinction is the sharpest technical point of this article.
 
 *Third, the action reaches $\mathrm{SU}(2)$ and stops.* The algebra's compact group is $\mathrm{U}(2)$, so the construction gives a Yang–Mills theory for $\mathrm{SU}(2)$ and for its abelian factor, and it gives none for $\mathrm{SU}(3)$. The action's existence is therefore a statement about the algebra's ceiling, and the ceiling article is its continuation.
 
@@ -62,7 +62,7 @@ $$
 
 Why the quadratic invariant and not another. At dimension four the only invariant built from the curvature alone is its square; a cubic term does not exist because the trace of an odd number of generators vanishes, and a term with derivatives of the curvature has dimension five. The action is therefore the unique one at this order, and its coefficient is fixed by the normalization of the generators and by no other choice.
 
-Why the commutator term makes the theory interacting. In the abelian case $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$ is linear in the potential and the action is quadratic. Here the commutator makes $F$ quadratic in $A$, so the action contains cubic and quartic terms, and those terms are the gauge field's self-coupling. Nothing was added: the self-coupling is the square of a curvature that is itself nonlinear, and that nonlinearity is the statement that the gauge group is non-abelian.
+Why the commutator term makes the theory interacting. In the abelian case $F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}$ is linear in the potential and the action is quadratic. Here the commutator makes $F$ quadratic in $A$, so the action contains cubic and quartic terms, and those terms are the connection's self-coupling. Nothing was added: the self-coupling is the square of a curvature that is itself nonlinear, and that nonlinearity is the statement that the symmetry group is non-abelian.
 
 The components. Expanding in generators gives
 
@@ -76,7 +76,7 @@ which is the standard form, with $g$ absorbed into the normalization of $A_{a,\i
 
 The pairing. The pairing is the matrix trace, and it is not the informational reduction. $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on $\mathbb{B}\cong M_2(\mathbb{C})$ is a bilinear form invariant under $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{-1}$, $\tilde Q_2\mapsto\tilde Q\tilde Q_2\tilde Q^{-1}$; the corpus's reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a different functional, and it is not invariant under that pair of transformations.
 
-Why the difference matters. If the action used the reduction, its density would change under a gauge transformation and the theory would not be a gauge theory. The action works because of the trace's cyclicity, and the reduction does not have it. The two agree only in special cases — when one of the factors is a scalar — and the field strength is not a scalar.
+Why the difference matters. If the action used the reduction, its density would change under a local transformation and the theory would not be a gauge theory. The action works because of the trace's cyclicity, and the reduction does not have it. The two agree only in special cases — when one of the factors is a scalar — and the field strength is not a scalar.
 
 The reality of the trace. For anti-Hermitian $F_{\imath\jmath}$, $\mathrm{Tr}(F_{\imath\jmath}F_{\imath\jmath})$ is real and non-positive, so $-\tfrac12\mathrm{Tr}(FF)$ is real and non-negative. The reality follows from the anti-Hermiticity and not from an extra condition, and the positivity is what makes the energy bounded below.
 
@@ -98,7 +98,7 @@ The element setting. The action written as $-\tfrac12\mathrm{Tr}(FF)$ with $F$ a
 
 The component setting. The action written as $-\tfrac14\sum_aF_{a,\imath\jmath}F_{a,\imath\jmath}$ with the structure constants explicit. The vertices are visible, and the coupling's place in the commutator is visible.
 
-Why the two settings are not a choice of notation. They differ in what they display and in what they hide. The element form makes the gauge invariance obvious and the vertices obscure; the component form does the reverse. A reader who knows only one has a partial view of the same object, and the corpus uses both deliberately.
+Why the two settings are not a choice of notation. They differ in what they display and in what they hide. The element form makes the local invariance obvious and the vertices obscure; the component form does the reverse. A reader who knows only one has a partial view of the same object, and the corpus uses both deliberately.
 
 What the comparison shows. The passage between the two is the passage between the trace and the structure constants, and the identity that connects them is $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$ together with $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$. The two settings are one action read two ways, and the normalization is what makes the readings agree.
 
@@ -125,9 +125,9 @@ $$
 \boxed{\;D_{\imath} F_{\imath\jmath}=0\;}
 $$
 
-which is the parent's equation. The covariant derivative in it is the same object that appeared in the curvature's variation, and that coincidence is the statement that the equation is gauge covariant.
+which is the parent's equation. The covariant derivative in it is the same object that appeared in the curvature's variation, and that coincidence is the statement that the equation is covariant.
 
-Why the equation is not gauge invariant and the action is. $F_{\imath\jmath}$ transforms homogeneously, so $D_{\imath} F_{\imath\jmath}$ does too, and the equation is covariant; the action is invariant because the trace is cyclic. The difference between covariance and invariance is the difference between the field strength's transformation and the trace's, and both are needed: the action must be invariant to be a number, and the equation must be covariant to be consistent.
+Why the equation is not invariant and the action is. $F_{\imath\jmath}$ transforms homogeneously, so $D_{\imath} F_{\imath\jmath}$ does too, and the equation is covariant; the action is invariant because the trace is cyclic. The difference between covariance and invariance is the difference between the field strength's transformation and the trace's, and both are needed: the action must be invariant to be a number, and the equation must be covariant to be consistent.
 
 **The Bianchi identity, and why it is not the equation.** $D_{\imath} F_{\imath\jmath}+D_{\imath} F_{\jmath k}+D_{\jmath} F_{k\imath}=0$ holds identically for any $A_{\imath}$, because the curvature is a commutator. It is not the equation of motion; it is the integrability condition, and the two are related as the Jacobi identity is related to the structure constants. The equation is the statement that the theory is on shell; the identity is the statement that the curvature exists.
 
@@ -139,13 +139,13 @@ $$
 D_j F_{j0}=0 ,
 $$
 
-the non-abelian Gauss law, which is first class because the gauge symmetry is unbroken. It removes one component of $A_{\imath}$ per generator, and the residual gauge freedom removes another, leaving two physical polarizations per generator.
+the non-abelian Gauss law, which is first class because the local symmetry is unbroken. It removes one component of $A_{\imath}$ per generator, and the residual redundancy removes another, leaving two physical polarizations per generator.
 
 The count. Four components per generator, minus two, gives two; times three generators gives six physical modes for the $\mathrm{SU}(2)$ field. The counting is the same as in the abelian case per generator, and the difference is that the constraint is now non-linear in the potential.
 
-Why the constraint is non-linear and what that means. $D_jF_{j0}=\partial_jF_{j0}+[A_j,F_{j0}]$ contains the potential, so the Gauss law is a differential equation for $A_0$ with the spatial fields as sources. In the abelian case it is a Poisson equation; here it is a non-linear one, and that non-linearity is the technical content of "the gauge field carries charge".
+Why the constraint is non-linear and what that means. $D_jF_{j0}=\partial_jF_{j0}+[A_j,F_{j0}]$ contains the potential, so the Gauss law is a differential equation for $A_0$ with the spatial fields as sources. In the abelian case it is a Poisson equation; here it is a non-linear one, and that non-linearity is the technical content of "the connection carries charge".
 
-The consequence for the canonical treatment. The constraint's non-linearity is why the non-abelian theory's canonical quantisation is not a free-field construction, and why the path-integral treatment with the Faddeev–Popov determinant is the corpus's route. That determinant is field dependent here and field independent in the abelian case, which is the difference the gauge-fixing articles record.
+The consequence for the canonical treatment. The constraint's non-linearity is why the non-abelian theory's canonical quantisation is not a free-field construction, and why the path-integral treatment with the Faddeev–Popov determinant is the corpus's route. That determinant is field dependent here and field independent in the abelian case, which is the difference the fixing the representative articles record.
 
 ## The Structural Consequence: The Ceiling Is in the Algebra and Not in the Action
 
@@ -155,7 +155,7 @@ The statement. The construction works for any subgroup of the algebra's compact 
 
 The consequence for the corpus's four sectors. The electromagnetic and weak sectors have actions on the algebra's elements, with the weak one partial; the strong sector has an action only in components; and gravity has a quadratic action without a carrier. The ceiling is what makes those four statuses different, and the sector hub records the comparison.
 
-What the structure predicts. That the non-abelian sector's gauge invariance is exact for $\mathrm{SU}(2)$, that the coupling runs, and that no colour can be derived. All three are recorded elsewhere and all three follow from the algebra's dimension.
+What the structure predicts. That the non-abelian sector's local invariance is exact for $\mathrm{SU}(2)$, that the coupling runs, and that no colour can be derived. All three are recorded elsewhere and all three follow from the algebra's dimension.
 
 ## The Noether Currents: The Colour Current and Its Own Source
 
@@ -167,9 +167,9 @@ $$
 
 which is the standard non-abelian current. It is conserved on shell, $D_{\imath} j_{a,\imath}=0$, and its conservation is the equation of motion contracted with the structure constants.
 
-Why the current carries the field. The current is bilinear in the gauge field and contains $A$ explicitly, not only $F$. That is the statement that the gauge field carries the charge it couples to, and it is the difference from the abelian current, which contains only $F$.
+Why the current carries the field. The current is bilinear in the connection and contains $A$ explicitly, not only $F$. That is the statement that the connection carries the charge it couples to, and it is the difference from the abelian current, which contains only $F$.
 
-Why the conservation is covariant and not ordinary. $\partial_{\imath} j_{a,\imath}=0$ fails; $D_{\imath} j_{a,\imath}=0$ holds. The ordinary divergence differs from the covariant one by a term proportional to the connection, and that term is the statement that the current is not gauge invariant by itself.
+Why the conservation is covariant and not ordinary. $\partial_{\imath} j_{a,\imath}=0$ fails; $D_{\imath} j_{a,\imath}=0$ holds. The ordinary divergence differs from the covariant one by a term proportional to the connection, and that term is the statement that the current is not invariant by itself.
 
 Energy–momentum. Translation invariance gives $T_{\imath\jmath}=\mathrm{Tr}(F_{\imath k}F_{\jmath k})-\tfrac14g_{\imath\jmath}\mathrm{Tr}(F^2)$-type expression, symmetric and traceless at the classical level. The tracelessness is the classical scale invariance, and its quantum violation is the beta function.
 
@@ -186,7 +186,7 @@ Adds.
 Relabels.
 
 - *The "non-abelian" of the theory.* It is not a modification of Maxwell's theory; it is the same construction with a curvature that does not commute with itself.
-- *The self-interaction.* It is not a vertex added to the theory; it is the geometry of the gauge group.
+- *The self-interaction.* It is not a vertex added to the theory; it is the geometry of the symmetry group.
 - *The ceiling.* It is not a limitation of the action; it is a limitation of the algebra that carries the connection.
 
 The distinction that matters. The action is the square of a curvature, and the curvature is a commutator. Everything that distinguishes the non-abelian theory from the abelian one follows from the commutator, and the commutator is where the algebra's structure constants enter.
@@ -201,7 +201,7 @@ The action. $S_{\mathrm{YM}}=-\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\imath,\jmath
 
 The three findings. The trace is the matrix trace and not the corpus's informational reduction, and using the reduction would break the invariance. The coupling survives in the equation because the commutator carries one power of it, which is why the non-abelian coupling runs. The construction stops at the algebra's $\mathrm{U}(2)$, so $\mathrm{SU}(2)$ is exact and $\mathrm{SU}(3)$ is not reachable.
 
-**The boundary.** The connection, the curvature and the trace are the algebra's; the gauge group's identity as colour, the running and the mass gap are not.
+**The boundary.** The connection, the curvature and the trace are the algebra's; the symmetry group's identity as colour, the running and the mass gap are not.
 
 ## Summary of Notation
 

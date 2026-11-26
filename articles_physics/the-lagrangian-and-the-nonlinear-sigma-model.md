@@ -30,7 +30,7 @@ $$
 
 the Euler–Lagrange condition is exactly the conservation of $j_{\imath}$. The action is the unique term with two derivatives that is invariant under $\tilde U\mapsto g_L\tilde U g_R^{*}$, and the coefficient $f^2$ is the only free number in it.
 
-*Second, the constraint is the model.* The unit-norm condition on $\tilde U$ is not imposed after the variation; it is what makes the action nonlinear. Varying freely inside the constraint surface gives three equations for three Goldstone fields, and the fourth direction of $\mathbb{H}$ is removed by the constraint rather than by a gauge choice.
+*Second, the constraint is the model.* The unit-norm condition on $\tilde U$ is not imposed after the variation; it is what makes the action nonlinear. Varying freely inside the constraint surface gives three equations for three Goldstone fields, and the fourth direction of $\mathbb{H}$ is removed by the constraint rather than by a choice of representative.
 
 *Third, the action's only content is the derivative expansion.* Every invariant of the target that can be written is a power of $\partial\tilde U$, so the classical action is the first term of a series whose successive terms are suppressed by $f$. That is why the model is predictive below $4\pi f$ and silent above it.
 

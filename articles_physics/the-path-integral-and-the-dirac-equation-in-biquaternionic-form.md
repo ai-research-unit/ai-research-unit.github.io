@@ -151,7 +151,7 @@ S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_{\imath}\frac{dR_{\imath}}{d\tau}\f
 \qquad  h^{2}\nu_m^{2}=m^{2}c^{2},
 $$
 
-up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$, so that for a straight worldline
+up to the standard normalisation of the measure and the einbein choice of representative. The tangent is read in the complex coordinate, $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$, so that for a straight worldline
 
 $$
 \sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau} = -\frac{(x-x_2)^2}{T^2},

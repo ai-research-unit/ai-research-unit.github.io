@@ -192,7 +192,7 @@ $$
 
 | object | needed? | why not |
 | --- | --- | --- |
-| a new gauge group | **no** | the endpoint is $\mathrm{SU}(3)\times\mathrm{U}(1)\times\mathrm{SU}(2)\times\mathrm{SU}(2)$ |
+| a new symmetry group | **no** | the endpoint is $\mathrm{SU}(3)\times\mathrm{U}(1)\times\mathrm{SU}(2)\times\mathrm{SU}(2)$ |
 | a new scale $\Lambda$ | **no** | the scales are $M_C$ and $v$, both of them the corpus's |
 | a new confining dynamics | **no** | no bound state is built |
 | a matching rule for $W^{3}_L,W^{3}_R$ | **no** | they are the Cartans of factors that exist from the transition on |

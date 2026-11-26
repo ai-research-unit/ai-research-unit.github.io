@@ -168,7 +168,7 @@ $$
 
 where $A$ and $B$ are the $2\times2$ matrices of the two parameters. The ranks of $A$ and $B$ take the values $2$, $1$, $0$, so the product takes the values $4$, $2$, $1$, $0$. A two-sided operator never has rank three, and the reason is arithmetic and not geometric: three is not a product of two numbers from $\{0,1,2\}$.
 
-The scaling orbit. The two parameters are defined up to $(\digamma_{\mathrm{scl}}\tilde Q,\digamma_{\mathrm{scl}}^{-1}\tilde P)$ for a nonzero complex $\digamma_{\mathrm{scl}}$, so the parameter space of the cone is seven complex dimensional. The scaling is the gauge freedom of the cone, and it is the reason a two-sided operator carries no absolute phase.
+The scaling orbit. The two parameters are defined up to $(\digamma_{\mathrm{scl}}\tilde Q,\digamma_{\mathrm{scl}}^{-1}\tilde P)$ for a nonzero complex $\digamma_{\mathrm{scl}}$, so the parameter space of the cone is seven complex dimensional. The scaling is the redundancy of the cone, and it is the reason a two-sided operator carries no absolute phase.
 
 The doubling. On the central elements the two-sided operator squares the data of the element:
 
@@ -310,7 +310,7 @@ $$
 [a,x,b]=(a\circ x)\circ b-a\circ(x\circ b).
 $$
 
-Boyle and Farnsworth introduce this bracket as the generator of the gauge group, in place of the commutator, and they write it with the full anticommutator; their bracket is therefore four times this one, a convention on which nothing below depends. Two identities hold, and both were checked on random sector elements at machine precision:
+Boyle and Farnsworth introduce this bracket as the generator of the symmetry group, in place of the commutator, and they write it with the full anticommutator; their bracket is therefore four times this one, a convention on which nothing below depends. Two identities hold, and both were checked on random sector elements at machine precision:
 
 $$
 [a,x,b]=\bigl(0,\ (\vec v_a\cdot\vec v_x)\vec v_b-(\vec v_b\cdot\vec v_x)\vec v_a\bigr)
@@ -403,7 +403,7 @@ $$
 
 The multiplicativity is the composition law with the second slot starred, and it makes the map $\tilde Q\mapsto\mathrm{Hp}_{\tilde Q}$ a representation of the multiplicative monoid on the real cone of the operator space.
 
-It is a real cone. The central phase cancels, $\mathrm{Hp}_{\omega\tilde Q}=\mathrm{Hp}_{\tilde Q}$ for a central unit $\omega$, and a real rescaling squares, $\mathrm{Hp}_{t\tilde Q}=t^{2}\mathrm{Hp}_{\tilde Q}$ for real $t$. The family is therefore the image of the eight-real-dimensional parameter space modulo the central circle: a cone of real dimension seven over a base of dimension six. The gauge freedom of the general two-sided operator is not lost here; it is fixed to a sign, and the sign is invisible because the scaling is a square.
+It is a real cone. The central phase cancels, $\mathrm{Hp}_{\omega\tilde Q}=\mathrm{Hp}_{\tilde Q}$ for a central unit $\omega$, and a real rescaling squares, $\mathrm{Hp}_{t\tilde Q}=t^{2}\mathrm{Hp}_{\tilde Q}$ for real $t$. The family is therefore the image of the eight-real-dimensional parameter space modulo the central circle: a cone of real dimension seven over a base of dimension six. The redundancy of the general two-sided operator is not lost here; it is fixed to a sign, and the sign is invisible because the scaling is a square.
 
 The numbers. The spectrum is $\{\eta_i\bar\eta_j\}$, the trace is $4\lvert Q_t\rvert^{2}$, the determinant is $\lvert N\rvert^{4}$, and the value at the identity is the amplitude:
 
@@ -612,7 +612,7 @@ The four adjoints are the four forms of this algebra. Other algebras carry other
 
 The length theorem is a linear-algebra statement. It counts terms in a sum; it does not claim that a given physical process is realised by that sum. The Kraus reading of I.13.i identifies the terms with Kraus operators, and the identification is standard, but the entry does not derive the open-system formalism from the algebra.
 
-The frame reading does not define a frame. An inner automorphism is a change of coordinates on the algebra. Whether a physical frame is a tetrad, a gauge choice or a basis of a Hilbert space is not decided here, and the corpus uses the word in the algebraic sense only.
+The frame reading does not define a frame. An inner automorphism is a change of coordinates on the algebra. Whether a physical frame is a tetrad, a choice of representative or a basis of a Hilbert space is not decided here, and the corpus uses the word in the algebraic sense only.
 
 **No claim is made about measurement.** I.13.b computes a rank and an image. When a measurement occurs, whether the collapse is physical, and what selects the outcome are outside the section, and the entry says so rather than leaving it to be inferred.
 

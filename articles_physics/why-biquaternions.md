@@ -404,7 +404,7 @@ The Dirac field is where the algebra pays. One element, four complex coefficient
 
 The convergence outside supports this without proving it. Takabayasi, the de Broglie–Bohm programme and Hestenes found the same fluid in three different languages, and spacetime algebra, Clifford analysis, Daviau and the algebraic-spinor tradition found the same object. The convergence is of notations and not of independent authors, which is the weaker and the honest form, and the algebra is the place where the object of the second group produces the structure of the first.
 
-The reach is broad and the ceiling is real. Gauge fields with $\mathfrak{su}(2)$ values, antimatter through the anticommutator, KMS with imaginary time as a coordinate, entropy of the informational sector, and a gravitational programme. No three colours, no curved spacetime yet, and no new number.
+The reach is broad and the ceiling is real. Connections with $\mathfrak{su}(2)$ values, antimatter through the anticommutator, KMS with imaginary time as a coordinate, entropy of the informational sector, and a gravitational programme. No three colours, no curved spacetime yet, and no new number.
 
 The price is stated. The algebra is chirality-blind, so a direction must be declared, and the weak interaction is the physics that requires it. The array display is the other face of the same fact: the gamma set writes a direction and never names it, while the coefficient array writes none, and the $1+3$ the algebra carries is the structure that matches a space with three equal directions. The polar word fails on the zero-divisor cone, the equation continues there, and the flow does not preserve the cone.
 

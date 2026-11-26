@@ -14,7 +14,7 @@ This is the variational companion of [The Charged Spin-Half Fluid](the-charged-s
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}\in\mathbb{B}_\Phi$, covariant derivative $\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\digamma_{\mathrm{gau}}$ with $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})\in\mathbb{C}$, $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}\in\mathbb{B}_\Phi$, covariant derivative $\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Local transformations are central: $\tilde\Xi\mapsto\tilde\Xi\digamma_{\mathrm{gau}}$ with $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})\in\mathbb{C}$, $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$.
 
 ## The Action in the Fluid Variables: The Kinetic Term and the Two Rates
 
@@ -24,7 +24,7 @@ $$
 \mathcal L_{\mathrm{kin}}^{\mathrm{gco}}=\frac{h}{2\pi} c\,\rho_{\mathrm{chg}}\bigl(\mathcal R_{\mathrm{pha}}-\beta\,\mathcal R_{\mathrm{rpd}}\bigr),
 $$
 
-The two covariant rates are the time slots of the phase's bracket and of the boost's. The first is the gauge-invariant phase rate, $\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ a'_t}{h}$, which is the free article's $\mathcal E$ up to the mass; the second is the rapidity's rate with the vector potential's component along the boost axis added, and it is what makes the velocity the mechanical one.
+The two covariant rates are the time slots of the phase's bracket and of the boost's. The first is the invariant phase rate, $\dot\theta_{\mathrm{pha}}-\frac{2\pi ϙ a'_t}{h}$, which is the free article's $\mathcal E$ up to the mass; the second is the rapidity's rate with the vector potential's component along the boost axis added, and it is what makes the velocity the mechanical one.
 
 If the coupling had a rotor-bracket component, the second rate would acquire a term independent of $\beta$ and the spin would be canonically visible at rest. It has none, so the weight stays $\beta$ and the rest frame stays spinless. **The statement "the coupling adds a force and not a torque" is, in the action, the statement that $\beta$ is not modified.**
 
@@ -84,9 +84,9 @@ $$
 
 and $\digamma_{\mathrm{gau}}^{-1}\partial_{\imath}\digamma_{\mathrm{gau}}=\frac{2\pi iϙ\partial_{\imath}\Gamma}{h}$ is central, so it cancels against the transformed connection. The frame's brackets do not see the shift at all, because it is added on the left of the element and the frame's factors are to the right, and because a central element commutes past every one of them.
 
-A gauge transformation is a multiplication of the word by a central factor; the word's factors are the phase's and the frame's; a central multiplication can be absorbed into the phase's factor — which is what a phase shift is — and cannot be absorbed into the frame's, because the frame's factors are not central. So the shift is entirely the phase's, and the boost's bracket's apparent change is the connection's cancellation. **The coupling's reach and the gauge group's reach coincide, and both are the central direction of the algebra.**
+A local transformation is a multiplication of the word by a central factor; the word's factors are the phase's and the frame's; a central multiplication can be absorbed into the phase's factor — which is what a phase shift is — and cannot be absorbed into the frame's, because the frame's factors are not central. So the shift is entirely the phase's, and the boost's bracket's apparent change is the connection's cancellation. **The coupling's reach and the symmetry group's reach coincide, and both are the central direction of the algebra.**
 
-The global subgroup supplies the charge current $ϙ\tilde J_\Phi$; translation invariance supplies the stress, whose divergence is $-ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}$ plus the free spin term; and the canonical tensor computed with the phase as the variable is gauge dependent by a total derivative, while the tensor written in the frame's brackets is not.
+The global subgroup supplies the charge current $ϙ\tilde J_\Phi$; translation invariance supplies the stress, whose divergence is $-ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}$ plus the free spin term; and the canonical tensor computed with the phase as the variable is representative-dependent by a total derivative, while the tensor written in the frame's brackets is not.
 
 ## The Structural Consequence: Norms Survive and the Vorticity Stays the Frame's
 
@@ -110,7 +110,7 @@ The charge's sign is $q$'s; the spin's is the frame's, negative, and the product
 
 ## What the Principle Adds and What It Relabels: In the Fluid Chart
 
-Adds. The coupling's reach as a table with two structural zeros, and hence the type argument in one line. "No torque" as the invariance of the weight $\beta$ rather than as a computation. The canonical table's invariance, which is the same statement read canonically. The surviving normalisation as the statement that a connection transports and does not measure. The gauge invariance's exactness as the centrality of the gauge group rather than as a checked cancellation. And the contrast with the scalar rung as a difference in the kind of object the velocity is: a gradient there, a square here.
+Adds. The coupling's reach as a table with two structural zeros, and hence the type argument in one line. "No torque" as the invariance of the weight $\beta$ rather than as a computation. The canonical table's invariance, which is the same statement read canonically. The surviving normalisation as the statement that a connection transports and does not measure. The local invariance's exactness as the centrality of the symmetry group rather than as a checked cancellation. And the contrast with the scalar rung as a difference in the kind of object the velocity is: a gradient there, a square here.
 
 Does not add. No new equation: the parent's, with the polar companion's Euler–Lagrange equations as its components. No closure: the four primary constraints remain second class and the Dirac bracket remains open. No vorticity, for the particle setting's structural reason given in the free companion. No mass without a declared direction: the coupling does not supply one, and a connection could not, since a direction is not a transport. No thermodynamics.
 
@@ -148,7 +148,7 @@ The norms. Every norm survives, because a connection transports and does not mea
 
 The vorticity. The frame's and not the field's, because the velocity is invertible's square and not a gradient. The two charged rungs differ in the kind of object the velocity is.
 
-Gauge invariance. Exact, and exact because the gauge group is central and therefore commutes with the frame.
+Local invariance. Exact, and exact because the symmetry group is central and therefore commutes with the frame.
 
 ## Summary of Notation
 

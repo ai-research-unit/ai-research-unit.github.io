@@ -22,11 +22,11 @@ Four findings.
 
 *Second, the measure's radial power is seven and not three.* The chart's Jacobian is $\varrho^{7}$ times an angular factor, verified by the homogeneity test: doubling $\varrho$ multiplies the Jacobian determinant by $128$, the exponent fitted is $7.000000$. The radial power is the carrier's dimension less one, so the coupling adds four angular directions and no radial one, and the mass term's $\varrho^{2}$ still completes the Gaussian — now to $a^{-4}$, which is eight components' worth.
 
-*Third, the phase is the charge's coordinate.* Its circle is integrated at every point, its translation is the gauge transformation, and the measure's Jacobian for the translation is one. The free chart's missing angle is the charge, and the gauge invariance of the integral is the invariance of a flat measure under a shift of one of its coordinates.
+*Third, the phase is the charge's coordinate.* Its circle is integrated at every point, its translation is the local transformation, and the measure's Jacobian for the translation is one. The free chart's missing angle is the charge, and the local invariance of the integral is the invariance of a flat measure under a shift of one of its coordinates.
 
 *Fourth, the Lorenz term stays displayed and the mass stays untouched.* The divergence's square is one of the exponent's pieces, its saddle is the covariant condition, and the eigenvalue that the free article called the ghost is unchanged. The coupling enters the constraint and not the mass, and the chart shows the two separations at once: the phase rotates the mass term, and the covariant divergence deforms the constraint's saddle.
 
-What the article does not do. It does not produce a second integral, does not evaluate the coupled kernel, and does not decide the gauge-fixing question for a dynamical connection. It reads the enlarged integral and says what the enlargement is.
+What the article does not do. It does not produce a second integral, does not evaluate the coupled kernel, and does not decide the fixing the representative question for a dynamical connection. It reads the enlarged integral and says what the enlargement is.
 
 Conventions. The algebra, the word, the sectors and the pairing are the polar equation article's. The connection is $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant gradient is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$. The Proca potential is $\tilde A$; the connection is $\tilde A_\Phi$. The Hermitian factor is $H=\varrho\tilde U_{\Psi,\mathrm b}$ with $\tilde U_{\Psi,\mathrm b}=\cosh u+i\sinh u\,\hat u_{\mathrm b}$, and the unitary factor is $\Omega=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$. The word is the polar decomposition $\tilde A=H\Omega$ and it is a bijection onto the N-regular set, not onto the whole algebra; the equation article's domain statements apply and are not repeated.
 
@@ -80,13 +80,13 @@ which is the $a^{-4}$ an eight-component Gaussian carries. The radial power plus
 
 The unitary factor does not change the scale's weight, and the reason is that it is an isometry. Right multiplication by $\Omega$ preserves the algebra's Euclidean norm: with $\tilde X=(0.3,-0.7,1.2,0.4)+i(-0.5,0.9,0.2,-1.1)$ the norm squared was $4.490000000000$ before and after the multiplication, to the last digit. So the coupling's extra four parameters are purely angular, the scale's radial power is set by the carrier's dimension alone, and the measure's weight on $\varrho$ is what the mass term sees.
 
-The measure's flatness survives the enlargement, and that is why the gauge transformation costs nothing. The phase is one of the eight coordinates, its translation is the gauge transformation, and a translation of one coordinate has unit Jacobian. The invariance of the measure under the gauge group is therefore a statement about a coordinate shift, not about a link variable, and it holds at any step size and for a finite transformation.
+The measure's flatness survives the enlargement, and that is why the local transformation costs nothing. The phase is one of the eight coordinates, its translation is the local transformation, and a translation of one coordinate has unit Jacobian. The invariance of the measure under the symmetry group is therefore a statement about a coordinate shift, not about a link variable, and it holds at any step size and for a finite transformation.
 
 ## The Phase Is the Charge
 
 **The phase's circle is the charge's coordinate, and the free chart's missing angle is the free field's reality.** The free carrier has $\Omega=i$: a fixed unitary element and not a variable. So the free field's "no phase" is the statement that the unitary factor is frozen, and the coupled field's charge is the statement that it is free. One coordinate, one charge, and the chart names it.
 
-The gauge transformation is a shift of that coordinate by a function of the point. $\tilde A\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde A$ multiplies the unitary factor on the left by a central phase, so $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$ and nothing else changes. The scale, the rapidity and the rotor are untouched, which is the chart's version of the statement that the gauge group acts on the phase alone.
+The local transformation is a shift of that coordinate by a function of the point. $\tilde A\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde A$ multiplies the unitary factor on the left by a central phase, so $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$ and nothing else changes. The scale, the rapidity and the rotor are untouched, which is the chart's version of the statement that the symmetry group acts on the phase alone.
 
 The mass term is invariant under the shift in the modulus and not in the argument. $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ rotates by $e^{\frac{2\pi 2iϙ\Gamma}{h}}$ under the transformation, so its modulus is invariant and its argument is not. The invariant length is the modulus, and this is why the coupled action's mass term is the real pairing and not the biquaternionic norm. The chart shows both faces of one fact.
 
@@ -120,7 +120,7 @@ Adds, second, the mass term's separation into magnitude and rotation. $\langle\t
 
 Adds, third, the radial power's rule. $\varrho^{3}$ on four components, $\varrho^{7}$ on eight, with the homogeneity exponent measured at $7.000000$ and the isometry of the unitary factor checked to the last digit. The scale's weight is set by the carrier's dimension, and the exponent's linearity decides whether the Jacobian cancels or completes.
 
-Adds, fourth, the two faces of one gauge invariance. The phase shifts, the modulus does not, and the measure's Jacobian is one. The invariance is a coordinate shift and the conservation is a consequence of a flat measure, which is the strongest form the statement takes anywhere in the corpus's path-integral set.
+Adds, fourth, the two faces of one local invariance. The phase shifts, the modulus does not, and the measure's Jacobian is one. The invariance is a coordinate shift and the conservation is a consequence of a flat measure, which is the strongest form the statement takes anywhere in the corpus's path-integral set.
 
 Does not add a value. The kernel is not evaluated, the determinant is the element companion's, and the saddle is the element companion's.
 
@@ -144,7 +144,7 @@ The coupled Proca integral's chart is the eight-parameter word, and it factorise
 
 The mass term is $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$: the modulus is the free scale, the argument is twice the phase, and the rotor cancels. The invariant the coupled action uses, $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$, is real and phase-blind, $0.4465451904$ at two different phases. The free chart's branch sign therefore becomes the coupled chart's angle.
 
-The measure's radial power is seven, measured at a homogeneity exponent of $7.000000$; right multiplication by $\Omega$ is an isometry and was checked to the last digit; and the mass term's $\varrho^{2}$ completes the Gaussian to $a^{-4}$, which is eight components' worth. The phase's circle is integrated at every point, its translation is the gauge transformation, and the flat measure's unit Jacobian is why the invariance is exact.
+The measure's radial power is seven, measured at a homogeneity exponent of $7.000000$; right multiplication by $\Omega$ is an isometry and was checked to the last digit; and the mass term's $\varrho^{2}$ completes the Gaussian to $a^{-4}$, which is eight components' worth. The phase's circle is integrated at every point, its translation is the local transformation, and the flat measure's unit Jacobian is why the invariance is exact.
 
 The constraint's square is displayed, its saddle is the covariant Lorenz condition, and the mass is untouched. The word composes for the algebra's product — scales multiply, phases add, rotors multiply — and does not compose for the integral's convolution. The kernel remains a bivector and remains outside the chart.
 
@@ -161,7 +161,7 @@ The constraint's square is displayed, its saddle is the covariant Lorenz conditi
 | $\varrho^{7}$ | The coupled chart's radial power |
 | $\varrho^{3}$ | The free chart's radial power |
 | $\int_0^\infty \varrho^{7}\mathrm{d}\varrho\,e^{-a\varrho^{2}}=3/a^{4}$ | Eight components' worth of Gaussian weight |
-| $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$ | The gauge transformation as a coordinate shift |
+| $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$ | The local transformation as a coordinate shift |
 | $S_{\mathrm{gco}}=\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | The displayed constraint; its saddle is the covariant condition |
 | $-\nu_m^{2}$ | The ghost; a momentum-space eigenvalue the chart does not see |
 

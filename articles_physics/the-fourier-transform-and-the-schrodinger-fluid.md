@@ -162,7 +162,7 @@ The denial. The transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-
 
 ## Open Questions
 
-1. A measure of the quantum layer. The quantum potential has no gauge freedom to be invariant under at this rung, but the question the spinor rung's Fourier article raises has an image here. Whether some spectral measure of the interference — a weight, a spread, a decay rate — separates the coherent from the incoherent part in a basis-independent way is not settled, and the two-mode case suggests not, since the cross term's spectrum is a pair of points separated by the difference of the two wave numbers.
+1. A measure of the quantum layer. The quantum potential has no redundancy to be invariant under at this rung, but the question the spinor rung's Fourier article raises has an image here. Whether some spectral measure of the interference — a weight, a spread, a decay rate — separates the coherent from the incoherent part in a basis-independent way is not settled, and the two-mode case suggests not, since the cross term's spectrum is a pair of points separated by the difference of the two wave numbers.
 
 2. The branch in momentum space. The sign $\varepsilon$ is a datum of the word and the transform does not read it, since a delta at one wave number carries no sign beyond the amplitude's own. Whether the branch has any momentum-space image at all, or whether it is exactly the datum the transform loses, is not settled here.
 

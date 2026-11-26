@@ -259,7 +259,7 @@ reason there is none and the weaker rule that is present.
   the framework's two splits are gradings of the vector space and are mixed by multiplication, so they
   are not partitions of the theory. Boundary: the owners are this article's *Central Simple Structure and the
   Absence of Superselection* and the obstruction $O15$ of *What the Biquaternion Algebra Cannot Do*.
-- The spin $\mathbb{Z}_2$ is gauged, not superselecting. The double cover $\{\pm e_t\}$ acts as
+- The spin $\mathbb{Z}_2$ is a redundancy of description, not a superselection. The double cover $\{\pm e_t\}$ acts as
   $\pm\mathrm{id}$ according to the module, and the two signs are identified by the covering rather than
   separating the theory, so it is the opposite of a superselection: a superselection rule says two signs are
   unobservably distinct, while the covering says they are two descriptions of one state. Owner: *Biquaternion

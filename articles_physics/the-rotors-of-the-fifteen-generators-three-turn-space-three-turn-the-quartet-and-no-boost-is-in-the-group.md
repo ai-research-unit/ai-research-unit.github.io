@@ -131,7 +131,7 @@ $$
 $$
 with eigenvalues $e^{\eta},e^{-\eta},1,1$. At $\eta=0.75$ the moduli are $0.4724$, $1$, $1$, $2.1170$, and $e^{\pm0.75}=0.4724$, $2.1170$. A real eigenvalue other than one is exactly what a unitary matrix cannot have.
 
-**Why the direction and not the boost is what the model keeps.** The six cells of the mixed band are the six leptoquarks, the only bosons of the frame that carry colour and mix the lepton line, with $B-L=\pm\tfrac43$ and $Q=\pm\tfrac23$. In a Lorentzian reading those are the three boost planes with two generators apiece. The frame keeps the planes and drops the sign of the form, so the bosons are compact rotations of a plane through the lepton line and not boosts. That is a statement about the frame's form, and it is the reason the leptoquarks are massive vector bosons of a compact group rather than gauge fields of a non-compact one.
+**Why the direction and not the boost is what the model keeps.** The six cells of the mixed band are the six leptoquarks, the only bosons of the frame that carry colour and mix the lepton line, with $B-L=\pm\tfrac43$ and $Q=\pm\tfrac23$. In a Lorentzian reading those are the three boost planes with two generators apiece. The frame keeps the planes and drops the sign of the form, so the bosons are compact rotations of a plane through the lepton line and not boosts. That is a statement about the frame's form, and it is the reason the leptoquarks are massive vector bosons of a compact group rather than connections of a non-compact one.
 
 ## Why No Boost Is in the Group: Three Proofs
 
@@ -193,7 +193,7 @@ $$
 \mathfrak k_R=\{R_{e_x},R_{e_y},R_{e_z}\},\qquad
 \operatorname{span}(\mathfrak k_L\cup\mathfrak k_R)=\mathfrak{so}(4),
 $$
-six matrices, anti-Hermitian and traceless, independent, spanning the six-dimensional space of real antisymmetric matrices. Every pair commutes across the two triples, $[L_{e_a},R_{e_b}]=0$, so the two triples are two commuting $\mathfrak{su}(2)$'s inside $\mathfrak{so}(4)$. This is $\mathrm{Spin}(4)\to\mathrm{SO}(4)$, and the exponentials are rotors of the carrier's four-space. **One correction of reading, and it is the whole of the model's change**: $\mathfrak{so}(4)$ is a subalgebra **of** $\mathfrak{su}(4)$ and not a pair of factors **beside** it, so no gauge boson of this model is a left or a right rotor. The six arrays are combinations of the fifteen, and the three colours are what the fifteen contain.
+six matrices, anti-Hermitian and traceless, independent, spanning the six-dimensional space of real antisymmetric matrices. Every pair commutes across the two triples, $[L_{e_a},R_{e_b}]=0$, so the two triples are two commuting $\mathfrak{su}(2)$'s inside $\mathfrak{so}(4)$. This is $\mathrm{Spin}(4)\to\mathrm{SO}(4)$, and the exponentials are rotors of the carrier's four-space. **One correction of reading, and it is the whole of the model's change**: $\mathfrak{so}(4)$ is a subalgebra **of** $\mathfrak{su}(4)$ and not a pair of factors **beside** it, so no connection of this model is a left or a right rotor. The six arrays are combinations of the fifteen, and the three colours are what the fifteen contain.
 
 **A single factor is not a spatial rotor.** Take the left rotor $\exp(\theta L_{e_x})$ and apply it to the time direction:
 $$
@@ -295,7 +295,7 @@ The roots are twelve, not fifteen, they are outside $\mathfrak{su}(4)$, and thei
 | $K_{tx}=S_{tx}$ | the boost of the $t$–$x$ plane, Hermitian and outside $\mathfrak{su}(4)$ |
 | $\eta_{\mathrm{M}}$ | $\operatorname{diag}(1,-1,-1,-1)$, the Minkowski form on the quartet |
 | $L_{e_a}$, $R_{e_a}$ | left and right multiplication by an imaginary unit |
-| $\mathfrak k_L,\mathfrak k_R$ | the two commuting $\mathfrak{su}(2)$'s spanning $\mathfrak{so}(4)\subset\mathfrak{su}(4)$; not gauge factors |
+| $\mathfrak k_L,\mathfrak k_R$ | the two commuting $\mathfrak{su}(2)$'s spanning $\mathfrak{so}(4)\subset\mathfrak{su}(4)$; not group factor |
 | $\langle X,Y\rangle_{*}=\operatorname{Sc}(XY^{*})$ | the Hermitian form of the carrier, definite |
 | $\langle Q\rangle_{\natural}=\sum_{\imath}Q_{\imath}^{2}$ | the algebra's multiplicative quadratic form |
 | $\mathfrak{su}(4)=\mathfrak{so}(4)\oplus i\,\mathrm{Sym}_0(4,\mathbb{R})$ | the Cartan split, $6+9=15$ |

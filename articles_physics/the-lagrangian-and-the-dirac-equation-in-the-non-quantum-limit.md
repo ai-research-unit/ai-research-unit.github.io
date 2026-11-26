@@ -113,7 +113,7 @@ The one-form $\frac{h}{2\pi} c\,\varrho^{2}\bigl[\cosh\theta_{\mathrm{rpd}}\,\ma
 
 A momentum that vanishes everywhere is a primary constraint, and it is the whole constraint content here. The truncation creates it rather than inheriting it: the parent's first-order action carries rates for all eight and its constraints are the pair the first-order form imposes, and deleting the frame's gradient terms removes a velocity. **A removed velocity is a constraint**, not a lost equation.
 
-The mass term breaks the local invariance of the field it multiplies, so the constraint does not generate a transformation; it pairs with the gauge direction the chart inherits, and the count of degrees falls by one pair.
+The mass term breaks the local invariance of the field it multiplies, so the constraint does not generate a transformation; it pairs with the redundant direction the chart inherits, and the count of degrees falls by one pair.
 
 What the section does not claim. It does not build the Dirac bracket and it does not assert a Gauss law: the connection is fixed in this limit, so no constraint arrives from its equation, and the variation section states the same fact from the other side.
 
@@ -149,7 +149,7 @@ The Legendre transform of a first-order action is $E=U$, because $p\dot q=A\dot 
 
 *No quantum potential.* The corpus's other families discard one and could in principle recover it as a term of the action. Here it is absent by construction, and the statements the corpus makes about it in this family are statements about the iterated equation.
 
-*The gauge orbit of the parametrisation.* The first-order Lagrangian is degenerate, so the velocities are not determined by the momenta and the parametrisation has a freedom. Whether that freedom is the same as the gauge group, and what it does to the limit's statements, is not settled in the corpus.
+*The orbit of the parametrisation.* The first-order Lagrangian is degenerate, so the velocities are not determined by the momenta and the parametrisation has a freedom. Whether that freedom is the same as the symmetry group, and what it does to the limit's statements, is not settled in the corpus.
 ## Summary
 The parent's Dirac action is a one-form plus a potential: every velocity enters linearly, three momenta vanish, and the Euler–Lagrange equations are $\Omega\dot q=\mathrm{d}U$ with a closed and degenerate two-form. The scale enters as $\varrho^{2}$ in both terms and never with its own derivative, so there is no kinetic term to delete.
 

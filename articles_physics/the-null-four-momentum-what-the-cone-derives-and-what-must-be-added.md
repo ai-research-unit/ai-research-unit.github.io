@@ -189,7 +189,7 @@ The division of the article, in one table. Each row is a statement about the pho
 | The value $m=0$ | Inserted | the field equation; not fixed by the algebra |
 | Any mass scale at all | Inserted | the algebra is scale-invariant; no scale is native |
 | The choice of the null branch over the massive one | Inserted | a physical selection the algebra does not make |
-| The reduction to two transverse polarizations | Inserted | the subsidiary gauge condition |
+| The reduction to two transverse polarizations | Inserted | the subsidiary fixing condition |
 | Quantization, the ladder, the number operator | Outside | the photon article's accounting, not revisited here |
 
 ## Boundaries

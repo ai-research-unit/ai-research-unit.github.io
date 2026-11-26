@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The transform's kernel is a central unit, and the gauge transformation is a central unit too. So the two commute, and the transform of a gauge-transformed field is the gauge-transformed transform. That one sentence is the whole of the article's first section, and it fixes the chart's reading of the coupling: the gauge group translates the phase and the transform commutes with the translation.
+The transform's kernel is a central unit, and the local transformation is a central unit too. So the two commute, and the transform of a gauge-transformed field is the gauge-transformed transform. That one sentence is the whole of the article's first section, and it fixes the chart's reading of the coupling: the symmetry group translates the phase and the transform commutes with the translation.
 
 The second finding is that the covariant bracket adds a real number to the phase's rate and nothing else. The polar coupled parent computes the covariant logarithmic derivative and finds the free one plus a central imaginary number in every slot. In frequency space that number becomes $ϙ\omicron_{\mathrm{pot}}$ added to $hf_{\mathrm{frq}}$. The connection touches one of the four brackets, and the other three are the free ones.
 
@@ -16,7 +16,7 @@ The companion articles. *The Fourier Transform and the Coupled Schrödinger Equa
 
 ## Conventions
 
-The chart, its word and its norms are those of *The Schrödinger Equation in Biquaternionic Polar Variables*. The covariant logarithmic derivative, the two invariants and the gauge direction are those of *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*. The symbol's translation identity and its sign are those of *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*.
+The chart, its word and its norms are those of *The Schrödinger Equation in Biquaternionic Polar Variables*. The covariant logarithmic derivative, the two invariants and the redundant direction are those of *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*. The symbol's translation identity and its sign are those of *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*.
 
 The covariant slots. $D_t=\partial_{t'}-\frac{2\pi iϙ\omicron_{\mathrm{pot}}}{h}$ and $D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ A_{\imath}}{h}$, with $\omicron_{\mathrm{pot}}$ and $\vec A$ real. The two signs differ, and the difference is the metric $i$ of the material-time derivative.
 
@@ -32,15 +32,15 @@ The substitution. $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot
 
 ## The Transform's Kernel in the Coupled Chart
 
-Both operations are central multiplications. The transform multiplies by $e^{-i\theta_{\mathrm{pwp}}}$, and a gauge transformation multiplies by $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$. Both are central units, so they commute:
+Both operations are central multiplications. The transform multiplies by $e^{-i\theta_{\mathrm{pwp}}}$, and a local transformation multiplies by $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$. Both are central units, so they commute:
 
 $$
 \int\mathrm{d}t'\,e^{i\omega t'}\big(\digamma_{\mathrm{gau}}\tilde\Xi\big)=\digamma_{\mathrm{gau}}\int\mathrm{d}t'\,e^{i\omega t'}\tilde\Xi .
 $$
 
-The transform is therefore gauge covariant. A gauge-transformed field has a gauge-transformed transform, with the same $\Gamma$ and the same $\digamma_{\mathrm{gau}}$. No link variable is needed and no Jacobian appears, and the reason is the centrality and not the constancy of $\Gamma$.
+The transform is therefore covariant. A gauge-transformed field has a gauge-transformed transform, with the same $\Gamma$ and the same $\digamma_{\mathrm{gau}}$. No link variable is needed and no Jacobian appears, and the reason is the centrality and not the constancy of $\Gamma$.
 
-The chart's reading of the same line. The kernel's word has $\theta_{\mathrm{pha}}=\theta_{\mathrm{pwp}}$ and nothing else; the gauge factor has $\theta_{\mathrm{pha}}=\frac{2\pi ϙ\Gamma}{h}$ and nothing else. Two elements that each carry one coordinate commute, because a central unit is a function of the centre alone.
+The chart's reading of the same line. The kernel's word has $\theta_{\mathrm{pha}}=\theta_{\mathrm{pwp}}$ and nothing else; the group factor has $\theta_{\mathrm{pha}}=\frac{2\pi ϙ\Gamma}{h}$ and nothing else. Two elements that each carry one coordinate commute, because a central unit is a function of the centre alone.
 
 What this does not say. It does not say that the transform is gauge invariant. The transform of a gauge-transformed field is a gauge-transformed transform, and the phase of the coefficients moves with $\Gamma$. **Covariance is the statement, and invariance is a different statement**; the invariants of §*The Invariants Are Not Functionals of the Symbol* are gauge invariant, and the coefficients are not.
 
@@ -62,7 +62,7 @@ a real number added to a real number. **The connection occupies the phase type a
 
 The other three brackets are the free ones. The connection is central in every slot, so it cannot reach the scale's rate, the boost's connection or the rotor's connection. The scale is untouched, the rapidity is untouched, and the rotor is untouched, which is the polar coupled parent's type statement read in frequency space.
 
-The count is one addition and three zeros. Of the four brackets, one receives a real number and three receive nothing. That is the sharpest way to state what a central connection can do, and it is the frequency-space form of the statement that the gauge group is the centre's.
+The count is one addition and three zeros. Of the four brackets, one receives a real number and three receive nothing. That is the sharpest way to state what a central connection can do, and it is the frequency-space form of the statement that the symmetry group is the centre's.
 
 The spatial slots add nothing to the symbol's type. The spatial covariant derivative shifts the wave vector and does not change the symbol's type either; the symbol stays a scalar or an element. So the connection's whole effect on the symbol is a shift of its arguments, in both slots, with the signs the parent fixes.
 
@@ -96,7 +96,7 @@ The two rates in the chart's letters. The phase runs at $-\big(h_t-ϙ\omicron_{\
 
 The numbers. With $\lvert\vec h_\Psi\rvert=0.616441$ the free gap is $1.232882$; with $ϙ\vec A=(0.35,0.25,0)$ it is $1.503329$; with $ϙ\omicron_{\mathrm{pot}}=0.4$ alone it stays $1.232882$ and the phase's rate moves by $-0.400000$. The gap is a vector-potential effect and the translation is a scalar-potential effect.
 
-The invariant reading. The two eigenvalues are $\mathcal E_0\pm\lvert\vec\pi_0\rvert$ for a mode, with $\mathcal E_0=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi_0=h\,\vec\nu_{\Phi}-q\vec A$. So the pair is a function of the two invariants, and the chart's two rates are functions of the two invariants. Gauge transformations move neither.
+The invariant reading. The two eigenvalues are $\mathcal E_0\pm\lvert\vec\pi_0\rvert$ for a mode, with $\mathcal E_0=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi_0=h\,\vec\nu_{\Phi}-q\vec A$. So the pair is a function of the two invariants, and the chart's two rates are functions of the two invariants. Local transformations move neither.
 
 What the pair does not carry. It does not carry the rotor's axis, which the vector potential shifts. The gap is read and the axis is frame data, exactly as in the free polar companion.
 
@@ -110,7 +110,7 @@ So the symbol cannot carry the invariants as functionals. It carries the *values
 
 Where the invariants live. They live in the field and in its word, and their integrals are the Noether charges. **The transform diagonalises the charges and does not determine the invariants**, and that asymmetry is the polar chart's rendering of the difference between a label and a value.
 
-The gauge covariance of the invariants. Under a gauge transformation the phase's gradient shifts by $-\vec\nabla_\Phi\Gamma$ and $\vec A$ by $+\vec\nabla_\Phi\Gamma$... in the parent's sign convention $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ and $\theta\mapsto\theta+\frac{2\pi ϙ\Gamma}{h}$, so $\frac{h}{2\pi}\nabla\theta-q\vec A$ is invariant. Both invariants are gauge invariant and both are field-dependent, and the pair of properties is what a symbol cannot have.
+The covariance of the invariants. Under a local transformation the phase's gradient shifts by $-\vec\nabla_\Phi\Gamma$ and $\vec A$ by $+\vec\nabla_\Phi\Gamma$... in the parent's sign convention $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ and $\theta\mapsto\theta+\frac{2\pi ϙ\Gamma}{h}$, so $\frac{h}{2\pi}\nabla\theta-q\vec A$ is invariant. Both invariants are invariant and both are field-dependent, and the pair of properties is what a symbol cannot have.
 
 A caution about $\vec\nu_{\Phi}$. The symbol's argument $\vec\nu_{\Phi}$ is the transform's label and not the field's mechanical momentum. They agree on a single plane wave and disagree on every superposition. **Reading $h\,\vec\nu_{\Phi}-q\vec A$ as the field's momentum is the error this section exists to prevent.**
 
@@ -138,7 +138,7 @@ Why the case is worth stating. It is the case in which the chart's three stateme
 
 The type statement, sharpened. The connection adds a real number to the phase's rate and to nothing else. In the chart the statement has a name: it occupies one of the four brackets.
 
-The covariance statement. The transform and the gauge transformation commute, because both are central multiplications. Covariance is one line and it needs no link variable.
+The covariance statement. The transform and the local transformation commute, because both are central multiplications. Covariance is one line and it needs no link variable.
 
 The distinction between labels and values. The symbol is a function of the two invariants; the field has a distribution of them. The transform diagonalises the charges and does not determine the distribution, and the example's $1.700$ against $2.500$ is the measure of the difference.
 
@@ -156,7 +156,7 @@ One time. The transform is in time and the wave vector is its label; the field's
 
 The first question is the varying bracket. Where the bracket varies, the symbol does not exist and the transform spreads. Whether a local symbol built from $\mathcal E$ and $\vec\pi$ is faithful in a stated limit is the standard WKB question, and it is not decided here.
 
-The second is the gauge transformation's large version. The commutativity of the transform and a central multiplication holds for every $\Gamma$, including one with a nonzero winding. Whether a large gauge transformation changes the spectrum of the transform is a question about the domains and not about the algebra, and it is open.
+The second is the local transformation's large version. The commutativity of the transform and a central multiplication holds for every $\Gamma$, including one with a nonzero winding. Whether a large local transformation changes the spectrum of the transform is a question about the domains and not about the algebra, and it is open.
 
 The third is the chart's flat dual under a coupling. The free chart's dual variable $n=\varrho^{2}$ is flat. Under a coupling the density is unchanged and the phase's rate is shifted, so the flatness survives; whether the *pair* survives when the connection varies with time is the coupled polar parent's open question.
 
@@ -164,17 +164,17 @@ The fourth is the sign of $ϙ\omicron_{\mathrm{pot}}$ in the phase's rate. The p
 
 ## Summary
 
-The transform and the gauge transformation are both central multiplications, so they commute: the transform of a gauge-transformed field is the gauge-transformed transform, exactly, with no link variable. The covariant bracket adds the real number $ϙ\omicron_{\mathrm{pot}}$ to the phase's rate and leaves the other three brackets of the chart untouched. That is the frequency-space form of the statement that a central connection can only reach the phase.
+The transform and the local transformation are both central multiplications, so they commute: the transform of a gauge-transformed field is the gauge-transformed transform, exactly, with no link variable. The covariant bracket adds the real number $ϙ\omicron_{\mathrm{pot}}$ to the phase's rate and leaves the other three brackets of the chart untouched. That is the frequency-space form of the statement that a central connection can only reach the phase.
 
 The symbol is a model of the bracket: faithful where the bracket is constant, absent where it varies. The effective number of modes of a chirped unit was $1.00$, $5.80$ and $26.53$ at chirp rates $0$, $1$ and $4$, so the spread is the measure of the failure. The eigenvalues are $h_t-ϙ\omicron_{\mathrm{pot}}\pm\lvert\vec h_\Psi-q\vec A\rvert$, and the gap moves from $1.232882$ to $1.503329$ with the quoted vector potential while a scalar potential of $0.4$ leaves it at $1.232882$ and moves the rate by $-0.400000$.
 
-The invariants $\vec\pi$ and $\mathcal E$ are gauge invariant and field dependent, so they are not functionals of the symbol: two superpositions of the same two modes share the symbol and have mean mechanical momenta $1.700$ and $2.500$. And the constant background is the exact case: the phase is linear in $\omicron_{\mathrm{pot}}$ and quadratic in $\vec A$ with no higher term, and the symbol is independent of the amplitude to $4.5\times10^{-14}$, so no amplitude–potential cross term can exist.
+The invariants $\vec\pi$ and $\mathcal E$ are invariant and field dependent, so they are not functionals of the symbol: two superpositions of the same two modes share the symbol and have mean mechanical momenta $1.700$ and $2.500$. And the constant background is the exact case: the phase is linear in $\omicron_{\mathrm{pot}}$ and quadratic in $\vec A$ with no higher term, and the symbol is independent of the amplitude to $4.5\times10^{-14}$, so no amplitude–potential cross term can exist.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
-| $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge factor; central, hence commuting with the kernel |
+| $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The group factor; central, hence commuting with the kernel |
 | $e^{-i\theta_{\mathrm{pwp}}}$ | The transform's kernel; central, one coordinate |
 | $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ | The covariant frequency; the invariant $\mathcal E$ on a mode |
 | $h\,\nu_{\Phi,k}+ϙ A_{\imath}$ | The mechanical momentum; the invariant $\vec\pi$ on a mode |
@@ -186,7 +186,7 @@ The invariants $\vec\pi$ and $\mathcal E$ are gauge invariant and field dependen
 
 ## Further Reading
 
-- *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the covariant logarithmic derivative, the two invariants and the gauge direction cited here.
+- *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the covariant logarithmic derivative, the two invariants and the redundant direction cited here.
 - *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*, for the element-form symbol and its two settings.
 - *The Fourier Transform and the Schrödinger Equation in Biquaternionic Polar Variables*, for the free chart's four brackets and the flat dual.
 - *The Schrödinger Equation in Biquaternionic Polar Variables*, for the word, the two rates and the two norms.

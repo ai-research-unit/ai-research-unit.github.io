@@ -6,7 +6,7 @@ The framework states its own test. *Introduction to the Biquaternion Universe* a
 
 There are two ways to use $\mathbb{B}$ in physics, and they are not the same claim.
 
-**Translation.** Take an equation of physics as given, write it in the algebra, and read what the algebra adds: a geometric meaning, a unification of notation, a constraint that was invisible. The Maxwell equations, the Dirac equation and the gauge principle enter this way, and most of the corpus is of this kind.
+**Translation.** Take an equation of physics as given, write it in the algebra, and read what the algebra adds: a geometric meaning, a unification of notation, a constraint that was invisible. The Maxwell equations, the Dirac equation and the minimal coupling enter this way, and most of the corpus is of this kind.
 
 **Derivation.** Take the algebra and a definition of the derivative as the only input, ask what a differentiable function must obey, and read the equations of physics as consequences of the answer. Nothing is transcribed, because there is nothing to transcribe from: the field equations become the integrability conditions of one condition on one function.
 
@@ -26,7 +26,7 @@ The corpus is not uniform about what it postulates, and the distinction between 
 | The state space and the Born form | derived from $\mathbb{B}_{\Psi}$ | *States, Observables and the Born Weight* |
 | The Dirac equation | transcribed into the algebra | *The Dirac Equation in Biquaternionic Form* |
 | The Maxwell equations | transcribed, or obtained from a biquaternion wave equation | *Nonlinear Maxwell Equations in Biquaternionic Form* |
-| The gauge principle | postulated, with a ceiling on the group | *The Gauge Principle in Biquaternionic Form* |
+| The minimal coupling | postulated, with a ceiling on the group | *The Gauge Principle in Biquaternionic Form* |
 | $\frac{h}{2\pi}$ | imported, nowhere derived | — |
 
 The pattern is visible in one line: **the corpus derives the arena and imports the dynamics.** The interval, the group, the cone and the state space follow from the algebra; the equations of motion are written into it. The derivation route is an attempt to close that gap, and it closes it from the dynamics side rather than the kinematic one.
@@ -67,7 +67,7 @@ This also dissolves the most obvious objection to a nonlinear primary equation. 
 
 What plays the role of the field is not $\Sigma$ but the multiplier. The condition splits as $d\digamma_{\mathrm{frm}}=Ξ\,dZ\,\zeta$, with $Ξ$ the left semi-derivative carrying the gauge field and $\digamma_{\mathrm{frm}},\zeta$ two $SL(2,\mathbb{C})$-spinors; the system is eight equations for six unknowns, and the connection it generates is weakly self-dual — the self-dual part of its curvature vanishes on the solutions rather than identically — so that its Bianchi identity is the field equation. That construction is *The Algebrodynamical Programme*, §*The Generating System and the Gauge Fields*, and it is not repeated here.
 
-The point for this article is the direction of the implication. In the corpus's gauge articles the connection is introduced because a symmetry is made local, and the field strength is defined as its curvature; the gauge principle is the postulate. Here the connection is what a differentiable function carries, the curvature is its integrability obstruction, and the field equations are identities. No gauge principle is assumed.
+The point for this article is the direction of the implication. In the corpus's gauge articles the connection is introduced because a symmetry is made local, and the field strength is defined as its curvature; the minimal coupling is the postulate. Here the connection is what a differentiable function carries, the curvature is its integrability obstruction, and the field equations are identities. No minimal coupling is assumed.
 
 ## The Three Corpus Objects the Gradient Meets
 
@@ -97,7 +97,7 @@ The direction field of a null solution of Maxwell's equations is tangent to a ge
 
 ### Gauge Equations Without a Gauge Postulate
 
-The gain is not a new equation but a new status for the old ones. Maxwell and Yang–Mills become identities, and the gauge principle becomes a theorem about the curvature of the connection a differentiable function carries. That is the strongest form the corpus's open question 1 could take: the dynamics is a consequence of the algebra and of one definition, and the definition is not adjustable without changing what a derivative means.
+The gain is not a new equation but a new status for the old ones. Maxwell and Yang–Mills become identities, and the minimal coupling becomes a theorem about the curvature of the connection a differentiable function carries. That is the strongest form the corpus's open question 1 could take: the dynamics is a consequence of the algebra and of one definition, and the definition is not adjustable without changing what a derivative means.
 
 ### A Fixed Scale, and What It Does Not Settle
 
@@ -127,7 +127,7 @@ The singular locus of a solution is the branch set of the generating function, $
 
 The generating system is over-determined, eight equations for six unknowns, and the over-determination is what denies it a variational principle of the usual kind. A Lagrangian is what canonical quantisation needs, and the corpus's quantisation articles — *Canonical Quantization of the Biquaternion Graviton Field*, *The Path Integral in Biquaternionic Form* — presuppose one. The derivation route buys its explanatory power at the price of the method by which the rest of the corpus quantises. Any quantisation of it must be a quantisation of a constrained system, and the programme itself says that this requires new methods.
 
-The programme's own position is less absolute than that: the primary system admits no Lagrangian, while the **secondary** gauge fields associated with it do, since they are ordinary field equations once the congruence is given. So the action exists one storey down. That is not enough for canonical quantisation of the primary field, and it is more than nothing.
+The programme's own position is less absolute than that: the primary system admits no Lagrangian, while the **secondary** connections associated with it do, since they are ordinary field equations once the congruence is given. So the action exists one storey down. That is not enough for canonical quantisation of the primary field, and it is more than nothing.
 
 ### No Superposition
 

@@ -20,7 +20,7 @@ The corpus's coordinates, stated once. The derivative is $\partial/\partial R_{\
 
 The colour bookkeeping. Triplet indices are $i,j,k,l=1,2,3$; adjoint indices are $a,b,c,d,e=1,\dots,8$; flavour is $f$, and colour never mixes with flavour. The generators are $T_{a}=\digamma_{\mathrm{gmn},a}/2$ with $\mathrm{Tr}\left(T_{a}T_{b}\right)=\frac12\delta_{ab}$; the covariant derivative is $D_{\imath}=\partial/\partial R_{\imath}-ig_sG_{a,\imath} T_{a}$ on the triplet, $-T_{a}^{*}$ on the antitriplet, and $-if_{abc}$ on the octet.
 
-The couplings and the parameters. $g_s$ is the strong coupling, taken positive, and $\alpha_s=g_s^2/4\pi$. The gauge parameter is $\zeta$, with $\zeta=1$ the Feynman gauge. The quark mass $m_f$ is an input from the Yukawa sector and not a parameter of this action. Of the numbers used below, $T_R$ is a convention and $N_c=3$ is a measurement; $C_F=4/3$ and $C_A=3$ are facts once $N_c$ is granted.
+The couplings and the parameters. $g_s$ is the strong coupling, taken positive, and $\alpha_s=g_s^2/4\pi$. The parameter is $\zeta$, with $\zeta=1$ the Feynman gauge. The quark mass $m_f$ is an input from the Yukawa sector and not a parameter of this action. Of the numbers used below, $T_R$ is a convention and $N_c=3$ is a measurement; $C_F=4/3$ and $C_A=3$ are facts once $N_c$ is granted.
 
 One convention is a restriction. Spinors, generators and projectors are written in the component dictionary, because the octet is not in $\mathbb{B}$. Where a biquaternion object exists — the sign rule, the transverse projector, the reality conditions — the display is the algebra's; where it does not, the display is a transcription and is labelled one.
 
@@ -32,7 +32,7 @@ $$
 \mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}+\sum_f\barΞ_{\mathrm{wfn},f}\left(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)Ξ_{\mathrm{wfn},f}-\frac{1}{2\zeta}\sum_{a,\imath}\left(\frac{\partial G_{a,\imath}}{\partial R_{\imath}}\right)^2+\sum_{a}\bar c_{a}\left(-\frac{\partial^2}{\partial R_{\imath}\partial R_{\imath}}\right)c_{a}+\mathcal{L}_{cG} .
 $$
 
-The pieces, named. The first is the gauge kinetic term; the second the quark term, one per flavour, with the covariant derivative carrying the colour connection in the triplet; the third the gauge-fixing term with parameter $\zeta$; the fourth and fifth the ghost kinetic and ghost–gluon terms. The list is complete for perturbation theory. The $\theta$ term,
+The pieces, named. The first is the gauge kinetic term; the second the quark term, one per flavour, with the covariant derivative carrying the colour connection in the triplet; the third the fixing term with parameter $\zeta$; the fourth and fifth the ghost kinetic and ghost–gluon terms. The list is complete for perturbation theory. The $\theta$ term,
 
 $$
 \mathcal{L}_\theta=\theta_{\mathrm{QCD}}\frac{g_s^2}{32\pi^2}\sum_{a,\imath,\jmath}G_{a,\imath\jmath}\widetilde G_{a,\imath\jmath} ,
@@ -84,7 +84,7 @@ $$
 \qquad 3\times3=1+8 .
 $$
 
-The singlet part is the trace, and the gauge field is traceless, so what remains is the octet. The further requirement is that the gluon field be real, and the octet is the real representation: it is the adjoint, and the adjoint of a compact group is real. The two requirements, traceless colour–anticolour and reality, leave $\mathbf{8}$ and nothing else.
+The singlet part is the trace, and the connection is traceless, so what remains is the octet. The further requirement is that the gluon field be real, and the octet is the real representation: it is the adjoint, and the adjoint of a compact group is real. The two requirements, traceless colour–anticolour and reality, leave $\mathbf{8}$ and nothing else.
 
 The decompositions that matter for the spectrum. Colour confinement means that only singlets appear as asymptotic states, so the question is which products contain a $\mathbf{1}$.
 
@@ -179,7 +179,7 @@ The pairing. Three bilinears and no cross term. The gauge term pairs $G_{a,\imat
 
 The type of the coefficient. Every coefficient is real, and one of them is fixed by a count and not by a normalisation. The $\tfrac14$ in front of the gauge term is a convention, settled with the definition of $G_{a,\imath\jmath}$ and not separately from it: it is the value that makes the variation produce $D_{\imath} G_{a,\imath\jmath}$ with no leftover factor. $\zeta$ must be real and positive, because the third term exists to make a quadratic form invertible and positive, and a complex or negative $\zeta$ leaves the kernel indefinite and the propagator unsigned. $g_s$ is real and $m_f$ is real, because the fields they multiply are real and a complex coupling would make $G_{a,\imath\jmath}$ complex and the density with it. The one coefficient here that is not a normalisation is the sign of the ghost term. It must be opposite to a normal scalar's, so that the determinant it contributes cancels the two unphysical modes each gauge generator carries. Flip that sign and the count of degrees of freedom is wrong by $2(N^2-1)$, which in this theory is thirty-two.
 
-The potentials admitted. The orbit is flat, the gluon is massless, and the $\theta$ term is a total derivative. $G_{a,\imath}$ is a real field in the adjoint and the density is invariant under $G_{\imath}\to UG_{\imath} U^{-1}+\frac{i}{g_s}U\partial_{\imath} U^{-1}$, so the gauge orbit is a flat direction of $-\tfrac14\sum GG$ and the quadratic kernel is not invertible on it. That is why the third and fourth terms are in the display at all: they are admitted because the potential alone is degenerate, and not because perturbation theory prefers them. A mass term $m^2\sum_a\sum_{\imath} G_{a,\imath} G_{a,\imath}$ is not admitted, because it is not invariant; the gluon is therefore massless by what the action permits and not because its mass happens to be small. That is the sharpest difference from the Proca case, where the mass term does two jobs at once. The $\theta$ term is admitted and has no effect on any perturbative amplitude, since it is a total derivative.
+The potentials admitted. The orbit is flat, the gluon is massless, and the $\theta$ term is a total derivative. $G_{a,\imath}$ is a real field in the adjoint and the density is invariant under $G_{\imath}\to UG_{\imath} U^{-1}+\frac{i}{g_s}U\partial_{\imath} U^{-1}$, so the orbit is a flat direction of $-\tfrac14\sum GG$ and the quadratic kernel is not invertible on it. That is why the third and fourth terms are in the display at all: they are admitted because the potential alone is degenerate, and not because perturbation theory prefers them. A mass term $m^2\sum_a\sum_{\imath} G_{a,\imath} G_{a,\imath}$ is not admitted, because it is not invariant; the gluon is therefore massless by what the action permits and not because its mass happens to be small. That is the sharpest difference from the Proca case, where the mass term does two jobs at once. The $\theta$ term is admitted and has no effect on any perturbative amplitude, since it is a total derivative.
 
 What reality does not buy. The spectrum is not in the display. The density is real at every real configuration, and that is the whole of the claim. A real spectrum is a different and stronger statement, and it needs the mode expansion that turns a quadratic kernel into frequencies. Here the kernel is the gauge-fixed one, and its modes are the perturbative gluons and quarks at short distance, not the asymptotic states, which are hadrons. The article computes $b_0$, does not run it, does not confine, and produces no hadron mass. So the reality of this display says nothing about the spectrum beyond the free short-distance limit, and nothing below claims more.
 
@@ -197,7 +197,7 @@ The identity that is not an equation. Because $G_{a,\imath\jmath}$ is a commutat
 
 The boundary term. Both variations are second order in derivatives and their surface terms are killed by holding the fields and their normal derivatives fixed at the boundary.
 
-**What the variation does not give.** It does not give the gauge-fixing term or the ghost term. Those are added so that the quadratic kernel inverts, and their own variation is the BRST doublet that leaves the physical content unchanged. They are stated in their own section below, and the price of adding them is a gauge parameter and eight fictitious scalars.
+**What the variation does not give.** It does not give the fixing term or the ghost term. Those are added so that the quadratic kernel inverts, and their own variation is the BRST doublet that leaves the physical content unchanged. They are stated in their own section below, and the price of adding them is a parameter and eight fictitious scalars.
 
 ## The Constraints the Action Imposes: Eight Gauss Laws and One Orbit
 
@@ -215,13 +215,13 @@ $$
 D_{ab,\imath\jmath}(k)=\frac{-i\delta_{ab}}{k^2+i\epsilon}\left[\delta_{\imath\jmath}-(1-\zeta)\frac{k_{\imath} k_{\jmath}}{k^2}\right] .
 $$
 
-The ghost term, and why it is the adjoint. The Faddeev–Popov determinant for the gauge orbit produces
+The ghost term, and why it is the adjoint. The Faddeev–Popov determinant for the orbit produces
 
 $$
 \mathcal{L}_{cG}=-g_s\sum_{a,b,c}f_{abc}\left(\frac{\partial\bar c_{a}}{\partial R_{\imath}}\right)G_{b,\imath} c_{c} ,
 $$
 
-with the ghost $c_{a}$ in the adjoint representation: eight of them, one per generator, massless, and scalars with the wrong statistics. The eight is the same eight as the gluon's, for the same reason — the gauge orbit has one direction per generator. In the electroweak theory the ghost of the $SU(2)$ factor is also an adjoint, and the ghost of the $\mathrm{U}(1)$ factor decouples because an abelian structure constant vanishes.
+with the ghost $c_{a}$ in the adjoint representation: eight of them, one per generator, massless, and scalars with the wrong statistics. The eight is the same eight as the gluon's, for the same reason — the orbit has one direction per generator. In the electroweak theory the ghost of the $SU(2)$ factor is also an adjoint, and the ghost of the $\mathrm{U}(1)$ factor decouples because an abelian structure constant vanishes.
 
 What the ghost does in a computation. Only two things: it runs in loops, and it carries a minus sign relative to a scalar loop. That minus is the whole reason the ghost loop contributes with the opposite sign to a would-be scalar loop, and it is why the gluon self-energy at one loop gives $11-\frac23N_f$ rather than something else.
 
@@ -235,9 +235,9 @@ $$
 
 a condition on the initial data for each of the eight generators. It contains no second time derivative, so it propagates nothing: it is Gauss's law eight times over, and the divergence of the spatial part reproduces it because the colour current is covariantly conserved. The word *covariantly* is the whole non-abelian content here: an ordinary divergence would not reproduce the constraint, and the $f_{abc}$ term in $D_{\imath} j_{a,\imath}$ is exactly what makes the two agree.
 
-The orbit is a choice, the constraint is not. The gauge group acts as an eight-function local group on $G_{a,\imath}$ alone, since the quarks are matter and transform with it. The orbit is what the constraint's kernel describes; selecting a representative is what $\zeta$ does. A reader who confuses the two will think the gauge-fixing term is physics. It is not: $\zeta$ cancels from every observable, and the Feynman rules below carry it in the propagator and nowhere else.
+The orbit is a choice, the constraint is not. The symmetry group acts as an eight-function local group on $G_{a,\imath}$ alone, since the quarks are matter and transform with it. The orbit is what the constraint's kernel describes; selecting a representative is what $\zeta$ does. A reader who confuses the two will think the fixing term is physics. It is not: $\zeta$ cancels from every observable, and the Feynman rules below carry it in the propagator and nowhere else.
 
-How many polarisations. Eight fields with four components each is thirty-two. The eight Gauss constraints remove eight, and the eight gauge conditions of a chosen gauge remove eight more, leaving sixteen: two transverse polarisations per gluon, and no longitudinal one, because the gluon is massless here even though the theory generates a mass scale through the anomaly. The ghosts contribute nothing asymptotic — eight of them, one per generator, running only in loops — and the minus sign they carry is the one the Feynman rules record.
+How many polarisations. Eight fields with four components each is thirty-two. The eight Gauss constraints remove eight, and the eight fixing conditions of a chosen gauge remove eight more, leaving sixteen: two transverse polarisations per gluon, and no longitudinal one, because the gluon is massless here even though the theory generates a mass scale through the anomaly. The ghosts contribute nothing asymptotic — eight of them, one per generator, running only in loops — and the minus sign they carry is the one the Feynman rules record.
 
 **What the constraint does not decide.** It does not select a vacuum. QCD's vacuum is a one-parameter family labelled by $\theta_{\mathrm{QCD}}$, the term that is a total derivative and that the introduction names; the constraint above is satisfied by every member of the family, and the choice among them is the theta-vacuum article's subject.
 
@@ -427,7 +427,7 @@ The ledger.
 | The colour factors $4/3$, $3$, $1/2$ | **Derived** from $N_c=3$ and the trace normalisation, once those are granted |
 | The Ward identity of the three-gluon vertex | **Imported** (it is the tree-level shadow of the Slavnov–Taylor identity), and verified |
 | The sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ | **Derived in the algebra** |
-| Transversality of the gluon propagator | **Derived in the algebra**, from the same gauge-fixing article's projector |
+| Transversality of the gluon propagator | **Derived in the algebra**, from the same fixing the representative article's projector |
 
 What the algebra can host, stated precisely. The projector structure of the propagator, the sign rule and the reality conditions are biquaternionic objects; the octet is not. The route the corpus takes is the one [the gluon article](the-gluon-an-octet-outside-the-biquaternion-algebra.html) sets out: the octet is not in $\mathbb{B}$, but it is in $M_2(\mathbb{B})\cong M_4(\mathbb{C})$, where a $3\times3$ scalar-free block can be written and the $\mathrm{SU}(3)$ elements have explicit biquaternion closed forms. That enlargement is a carrier, not a derivation: it hosts the octet at the price of a larger module, and it does not produce the triplet or the number three.
 
@@ -435,7 +435,7 @@ What the algebra can host, stated precisely. The projector structure of the prop
 
 ## Summary
 
-The QCD Lagrangian is $-\frac14\sum GG$ plus a quark term plus gauge fixing plus ghosts, and the gluon's self-couplings follow from the commutator in $G_{a,\imath\jmath}$. The four pieces and the four vertices are standard theory, transcribed here in the corpus's coordinates, and every number in the Feynman rules was derived from that Lagrangian rather than quoted: the three-gluon rule has no explicit $i$ because its term carries one derivative, the four-gluon rule has one, and the two signs are tied to the same $g_s$.
+The QCD Lagrangian is $-\frac14\sum GG$ plus a quark term plus fixing the representative plus ghosts, and the gluon's self-couplings follow from the commutator in $G_{a,\imath\jmath}$. The four pieces and the four vertices are standard theory, transcribed here in the corpus's coordinates, and every number in the Feynman rules was derived from that Lagrangian rather than quoted: the three-gluon rule has no explicit $i$ because its term carries one derivative, the four-gluon rule has one, and the two signs are tied to the same $g_s$.
 
 Three colours is a measured fact, established four independent ways — the $R$ ratio, the $\pi^0$ width, the $Z$ hadronic width, and the existence of a three-quark baryon with a symmetric spin–flavour wavefunction. The last of these fixes the number exactly, because the only invariant that can make a baryon is the antisymmetric $\epsilon$ of rank $N_c$.
 
@@ -463,7 +463,7 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 | $j_{a,\imath}$ | Colour current, $\sum_f\barΞ_{\mathrm{wfn},f}\varepsilon_{\imath}\gamma_{\imath} T_{a}Ξ_{\mathrm{wfn},f}$; covariantly conserved |
 | $j_{5,\imath}$ | Flavour-singlet axial current, with the mass and anomaly terms in its divergence |
 | $\sum_{\imath}\varepsilon_{\imath}\theta_{\imath\imath}$ | Trace of the stress tensor; equal to $\beta(g_s)G_{a}G_{a}/2g_s$ |
-| $\zeta$ | Gauge parameter; $\zeta=1$ is Feynman gauge |
+| $\zeta$ | Parameter; $\zeta=1$ is Feynman gauge |
 | $c_{a}$, $\bar c_{a}$ | Ghost and antighost, in the adjoint |
 | $\theta_{\mathrm{QCD}}$ | Coefficient of the $G\widetilde G$ term |
 | $N_c$ | Number of colours, $3$, measured |
@@ -478,7 +478,7 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 | $\epsilon_{abc}$ | The totally antisymmetric rank-$N_c$ invariant; the only colour singlet in $\mathbf{3}^{\otimes N_c}$ |
 | $J$ | Spin of a hadron, $J=3/2$ for the $\mathcal{B}^{++}$ and the $\Omega^-$ |
 | $\kappa$ | Generator rescaling $T_{a}\to\kappa T_{a}$, under which $T_R\to\kappa^2T_R$ |
-| $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{cG}$ | Gauge-fixing term and ghost–gluon interaction of the Lagrangian display |
+| $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{cG}$ | Fixing term and ghost–gluon interaction of the Lagrangian display |
 
 ## Further Reading
 

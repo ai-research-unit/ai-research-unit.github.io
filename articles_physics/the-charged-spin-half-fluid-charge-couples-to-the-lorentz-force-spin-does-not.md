@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The charge reaches the momentum and the frame's rapidity, and it cannot reach the spin. That is the whole of what the coupling does to the spin-half fluid, and the article's work is to draw out what follows: the velocity is still an invertible element, the vorticity is still the frame's, the spin direction is still gauge invariant and still coupling-blind, and the three open items of the free article — no vorticity transport law, no closure, no spin dynamics in a background — survive the coupling untouched. The charge adds a force and an angle shift; it does not add a constitutive law.
+The charge reaches the momentum and the frame's rapidity, and it cannot reach the spin. That is the whole of what the coupling does to the spin-half fluid, and the article's work is to draw out what follows: the velocity is still an invertible element, the vorticity is still the frame's, the spin direction is still invariant and still coupling-blind, and the three open items of the free article — no vorticity transport law, no closure, no spin dynamics in a background — survive the coupling untouched. The charge adds a force and an angle shift; it does not add a constitutive law.
 
 The equation. The coupled Dirac equation in polar variables is the free one with covariant derivatives,
 
@@ -218,7 +218,7 @@ The consequence, stated plainly. In this chart the magnetic moment is not a roto
 
 What the background does to the spin is indirect, and the composition is the whole of the physics. The field curves the boost, and the spin's transport follows the boost's. Where the trajectory bends, the frame in which the rotor's own rate is zero bends with it, and the observed precession is the rotor's own rate composed with the transport of the frame. That composition is what the standard theory calls Thomas precession, and [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html) carries out the expansion and shows the two contributions combining to the Larmor rate with the ratio two. **So the Larmor precession is second order in the chart's bookkeeping: not a torque on the spin, but a consequence of the frame's transport, which the field does control.**
 
-The exact statement of what is invariant. The spin's *kinematics* is exact and gauge invariant: $\vec s$ is a function of the rotor alone, the rotor is gauge invariant, so the spin direction is an observable of the chart with no gauge ambiguity. That is more than the element form states, and the coupling does not weaken it, since a central phase cannot touch the rotor. The spin's *dynamics* is the free one plus whatever the frame's transport induces, and the article claims no more.
+The exact statement of what is invariant. The spin's *kinematics* is exact and invariant: $\vec s$ is a function of the rotor alone, the rotor is invariant, so the spin direction is an observable of the chart with no gauge ambiguity. That is more than the element form states, and the coupling does not weaken it, since a central phase cannot touch the rotor. The spin's *dynamics* is the free one plus whatever the frame's transport induces, and the article claims no more.
 
 ## What the Charge Cannot Close
 
@@ -235,15 +235,15 @@ The negative result stated as a positive one. The charge does not close the spin
 Twelve statements, each one line, and each with its reason. This is what the charged spin fluid is.
 
 1. The word is unchanged and the coupling is confined by type. Eight parameters; the connection reaches the phase and boost brackets and not the scale or the rotor.
-2. The density is untouched. The gauge transformation moves the angle alone, and the scale, the rapidity, the axis and the rotor are gauge invariant by inspection.
+2. The density is untouched. The local transformation moves the angle alone, and the scale, the rapidity, the axis and the rotor are invariant by inspection.
 3. The velocity is the kinetic one, named by the covariant wavevector: $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{ϙ\tilde A_\Phi}{h}$.
 4. The velocity is invertible for every field. $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$; the normalisation is kinematical and the coupling cannot touch it.
-5. The rapidity and the axis are observables. $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, and no gauge transformation changes either.
+5. The rapidity and the axis are observables. $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, and no local transformation changes either.
 6. The vorticity is the frame's gradient. Its proper part is rank two for every solution, and it is not $ϙF/m$ for any field.
 7. The vorticity is closed and not exact. Closedness is the Maurer–Cartan flatness of $\Gamma$; exactness fails wherever the holonomy is non-trivial; there is still no transport law.
 8. The loop invariant is a Lorentz transformation times a phase. Nothing about it is quantised, and the scalar's $c/\nu_m$ is the central factor of the transformation.
 9. The Gordon split survives. The convection part is the chart's current; the bound magnetisation current has no explicit dependence on the connection.
-10. The spin direction is gauge invariant and coupling-blind. $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$; the chart shows no rotor torque, and the Larmor precession is second order, through the frame.
+10. The spin direction is invariant and coupling-blind. $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$; the chart shows no rotor torque, and the Larmor precession is second order, through the frame.
 11. The coupling adds a force and not a torque. $\sum_{\jmath}\partial_{\jmath} T_{\imath\jmath}=-ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}+$ the free article's spin term, and the second is unchanged.
 12. The degenerate set is $\varrho=0$ and the closure is still underdetermined. The charge does not supply the missing spin-transport law, and the reason is that the missing law lives in the bracket the connection cannot reach.
 
@@ -309,7 +309,7 @@ The vorticity is the frame's logarithmic derivative and contains no connection. 
 
 The loop invariant is a Lorentz transformation times a phase, and nothing about it is quantised. The Gordon split survives, and the bound magnetisation current has no explicit dependence on the connection. The coupling adds a force and no torque: $\sum_{\jmath}\partial_{\jmath} T_{\imath\jmath}=ϙ\sum_{\jmath} F_{\imath\jmath}J_{\jmath}+$ the free spin term.
 
-The spin direction is gauge invariant and coupling-blind, and the Larmor precession is second order, through the frame. The free article's three open items — no vorticity transport, no closure, no spin dynamics in a background — survive, and the charge does not close them.
+The spin direction is invariant and coupling-blind, and the Larmor precession is second order, through the frame. The free article's three open items — no vorticity transport, no closure, no spin dynamics in a background — survive, and the charge does not close them.
 
 ## Summary of Notation
 
@@ -317,10 +317,10 @@ The spin direction is gauge invariant and coupling-blind, and the Larmor precess
 | --- | --- |
 | $\tilde\Xi_{\mathrm D}=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word |
 | $\varrho>0$ | Scale; the density is a factor of the word |
-| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The angle; the only gauge-dependent parameter |
+| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The angle; the only representative-dependent parameter |
 | $\theta_{\mathrm{rpd}},\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}},\ \text{axis}$ | Angle and axis of the rotor |
-| $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction; gauge invariant, coupling-blind |
+| $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction; invariant, coupling-blind |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The four-velocity; $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ |
 | $\Gamma_{\imath}=\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}$ | The frame's logarithmic derivative |
 | $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$ | The covariant wavevector |

@@ -65,7 +65,7 @@ What the measure does not contain. It is invariant under a central phase, becaus
 
 Two terms and no cross term. The weight's bracket of §*Conventions* is a sum of a scale part, $(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}-\nu_m^{2}\varrho^{2}$, and a phase part, $\varrho^{2}\bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr)$. The two are separate because a central field's word is a product of a real function and an invertible element, and the derivative of a product separates into the derivative of the modulus and the modulus times the derivative of the phase.
 
-No term of the exponent contains $\theta_{\mathrm{pha}}$. The angle is a cyclic coordinate at every point, and the gauge transformation of the coupled companion is the translation of that coordinate. In the free case the consequence is the article's main structural fact: the phase is integrated over a circle at every point and its value nowhere appears, so the phase integral sees only the gradient field.
+No term of the exponent contains $\theta_{\mathrm{pha}}$. The angle is a cyclic coordinate at every point, and the local transformation of the coupled companion is the translation of that coordinate. In the free case the consequence is the article's main structural fact: the phase is integrated over a circle at every point and its value nowhere appears, so the phase integral sees only the gradient field.
 
 The scale enters twice, and the second time is the coupling. The scale appears as its own gradient and as the weight $\varrho^{2}$ of the phase's square. That weight is the density, so the chart's exponent is the statement that the phase's kinetic term is the density times the squared four-gradient of the action. The variational companion says the same thing with the statement that the frame density multiplies the bracket.
 
@@ -152,7 +152,7 @@ Each factor of the word lands in one place, and the field case differs from the 
 
 Against the single-particle chart, the difference is the gradient. For one history the scale is a number and lives in the measure alone, because a number has no derivative. For a field the scale is a function, so it has a gradient, and the gradient is a term of the exponent. The scale is in the measure in both cases and in the exponent in one of them, and the asymmetry is the difference between a path and a field.
 
-The gauge transformation would move one entry of the table. A central phase multiplies the field, which in the chart translates $\theta_{\mathrm{pha}}$ and leaves $\varrho$ and the measure alone. The measure is gauge invariant because the Jacobian is the scale and the scale is gauge invariant, and this is the fact the coupled companion turns on.
+The local transformation would move one entry of the table. A central phase multiplies the field, which in the chart translates $\theta_{\mathrm{pha}}$ and leaves $\varrho$ and the measure alone. The measure is invariant because the Jacobian is the scale and the scale is invariant, and this is the fact the coupled companion turns on.
 
 ## What the Polar Reading Adds and Does Not Add
 
@@ -191,7 +191,7 @@ $$
 +\varrho^{2}\Bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)-\nu_m^{2}\varrho^{2}\Bigr].
 $$
 
-Three structural facts follow. The measure is a functional of the scale alone, so it is gauge invariant and positive, and its continuum form is a product over points that is exact on a lattice and formal in the continuum. The exponent is free of the angle's value, so the angle's integral is a Gaussian whose saddle is the transport equation: the phase is a constraint, and the pair of the variational companion is the pair of saddles. The chart's failure at the nodes is invisible, because the Jacobian vanishes there.
+Three structural facts follow. The measure is a functional of the scale alone, so it is invariant and positive, and its continuum form is a product over points that is exact on a lattice and formal in the continuum. The exponent is free of the angle's value, so the angle's integral is a Gaussian whose saddle is the transport equation: the phase is a constraint, and the pair of the variational companion is the pair of saddles. The chart's failure at the nodes is invisible, because the Jacobian vanishes there.
 
 The change of variables is exact through three factors that cancel: the Jacobian of the measure, the determinant of the parameter metric, and the Fresnel factor of the Gaussian. The integral agrees with the Cartesian one to $3.7\times10^{-15}$ on a two-site lattice, and the determinant ratio is one to machine precision. In the Euclidean chart the exponent is four squares, so convergence is term by term and the only obstruction is a negative mass squared, which appears as the failure of the last square alone.
 

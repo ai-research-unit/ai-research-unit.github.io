@@ -10,7 +10,7 @@ Why the assignment deserves its own article. Three statements circulate about hy
 
 - That the hypercharges are arbitrary. They are not. Four anomaly conditions constrain five numbers, and the constraint is strong enough to leave three rays.
 - That they are fixed by anomaly cancellation alone. They are not. Anomaly freedom leaves a continuous freedom, and the discrete choice among the rays is made by the electric charges, which are measured.
-- That the assignment follows from the gauge group. It does not. The group is silent on which field is a doublet and which is a singlet, and silent on the charges.
+- That the assignment follows from the symmetry group. It does not. The group is silent on which field is a doublet and which is a singlet, and silent on the charges.
 
 The article makes all three statements precise.
 
@@ -30,7 +30,7 @@ $$
 
 of a compact simple group and a compact abelian group. The two factors carry two independent couplings, $g$ and $g_{\mathrm Y}$, and the model supplies no relation between them. The ratio $g_{\mathrm Y}/g$ is the Weinberg angle, and it is measured rather than computed.
 
-What the framework has in place of the product. The first factor is present as an object and the second as an object, but their union is not a product on the nose. The framework's compact factor is $SU(2)$, which in this algebra is the group $\mathrm{SU}(2)=S^3$, the second is the central phase $S^1=\{\xi e_t:|\xi|=1\}$, and the two share the two points $\pm e_t$ — the rotor $-e_t$ is the same rotation as $+e_t$, and it is also the phase of angle $\pi$. The gauge group of the construction is therefore the quotient
+What the framework has in place of the product. The first factor is present as an object and the second as an object, but their union is not a product on the nose. The framework's compact factor is $SU(2)$, which in this algebra is the group $\mathrm{SU}(2)=S^3$, the second is the central phase $S^1=\{\xi e_t:|\xi|=1\}$, and the two share the two points $\pm e_t$ — the rotor $-e_t$ is the same rotation as $+e_t$, and it is also the phase of angle $\pi$. The symmetry group of the construction is therefore the quotient
 
 $$
 \bigl(\mathrm{SU}(2)\times S^1\bigr)/\{\pm e_t\},
@@ -62,7 +62,7 @@ $$
 
 and the product $g_{\mathrm Y}Y$ is what appears. That product is the reason the overall scale of $Y$ is not a physical quantity, as §*What the Conditions Do Not Fix* shows.
 
-The canonical normalisation. A theory is normally written with the kinetic terms $-\tfrac14\sum W_{a}W_{a}$ and $-\tfrac14\sum BB$ both of unit coefficient. That fixes the normalisation of the two gauge fields and hence splits the product $g_{\mathrm Y}Y$ into a coupling and a charge. The split is a convention: the covariant derivative carries the product $g_{\mathrm Y}Y$ and not the two factors separately, so the rescaling $Y\mapsto\digamma_{\mathrm{cfm}} Y$ with $g_{\mathrm Y}\mapsto g_{\mathrm Y}/\digamma_{\mathrm{cfm}}$ moves a number between the coupling and the charge and changes nothing else. $B_{\imath}$ is not rescaled in that operation, which is why the field strength $B_{\imath\jmath}$ and the kinetic term $-\tfrac14\sum BB$ come through untouched. Rescaling $B_{\imath}$ as well would rescale the kinetic term by $\digamma_{\mathrm{cfm}}^{-2}$ and would have to be undone by changing its coefficient, which is exactly the freedom the canonical normalisation removes.
+The canonical normalisation. A theory is normally written with the kinetic terms $-\tfrac14\sum W_{a}W_{a}$ and $-\tfrac14\sum BB$ both of unit coefficient. That fixes the normalisation of the two connections and hence splits the product $g_{\mathrm Y}Y$ into a coupling and a charge. The split is a convention: the covariant derivative carries the product $g_{\mathrm Y}Y$ and not the two factors separately, so the rescaling $Y\mapsto\digamma_{\mathrm{cfm}} Y$ with $g_{\mathrm Y}\mapsto g_{\mathrm Y}/\digamma_{\mathrm{cfm}}$ moves a number between the coupling and the charge and changes nothing else. $B_{\imath}$ is not rescaled in that operation, which is why the field strength $B_{\imath\jmath}$ and the kinetic term $-\tfrac14\sum BB$ come through untouched. Rescaling $B_{\imath}$ as well would rescale the kinetic term by $\digamma_{\mathrm{cfm}}^{-2}$ and would have to be undone by changing its coefficient, which is exactly the freedom the canonical normalisation removes.
 
 ## The Three Labels and the Charge
 
@@ -229,7 +229,7 @@ The mixed $\mathrm{U}(1)$ question. If the model contained a second abelian fact
 
 ## The Witten Condition
 
-A second kind of anomaly. Besides the perturbative triangle anomaly there is a global obstruction: an $SU(2)$ gauge theory with an odd number of left-handed doublets is inconsistent, because the fermion determinant changes sign under a large gauge transformation. The condition is not a triangle coefficient and is not found by the computation above.
+A second kind of anomaly. Besides the perturbative triangle anomaly there is a global obstruction: an $SU(2)$ gauge theory with an odd number of left-handed doublets is inconsistent, because the fermion determinant changes sign under a large local transformation. The condition is not a triangle coefficient and is not found by the computation above.
 
 The count. Each generation supplies four weak doublets: three from the colour triplet of $Q_L$ and one from $L_L$. Four is even. With three generations the count is twelve, also even.
 
@@ -239,7 +239,7 @@ Why it belongs in this article. The Witten condition is a constraint on the same
 
 ## The Scalar's Hypercharge, and the Chain
 
-**The scalar is not in the anomaly system.** The doublet $\omicron_{\mathrm{hgs}}$ is a boson, so it contributes to no triangle coefficient. Its hypercharge is fixed by a different requirement: the Yukawa couplings must be gauge invariant.
+**The scalar is not in the anomaly system.** The doublet $\omicron_{\mathrm{hgs}}$ is a boson, so it contributes to no triangle coefficient. Its hypercharge is fixed by a different requirement: the Yukawa couplings must be invariant.
 
 The requirement. For the charged-lepton mass the invariant term is $\bar L_L\omicron_{\mathrm{hgs}}\,e_R$. Its total hypercharge must vanish, and a barred field carries the negative of the hypercharge of the unbarred one, so
 
@@ -303,7 +303,7 @@ The framework reaches the algebra of the group and not the assignment. Its abeli
 
 | Symbol | Meaning |
 |---|---|
-| $SU(2)_L\times\mathrm{U}(1)_Y$ | The electroweak gauge group |
+| $SU(2)_L\times\mathrm{U}(1)_Y$ | The electroweak symmetry group |
 | $g$, $g_{\mathrm Y}$ | The weak and hypercharge couplings; $\tan\theta_W=g_{\mathrm Y}/g$ |
 | $T_3$ | Third weak-isospin eigenvalue, $\pm\tfrac12$ in a doublet, $0$ in a singlet |
 | $Y$ | Hypercharge; the reference checklist writes $Y_W=2Y$ |

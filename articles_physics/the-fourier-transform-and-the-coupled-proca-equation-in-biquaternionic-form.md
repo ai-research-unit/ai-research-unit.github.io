@@ -27,7 +27,7 @@ No sector is exchanged. The coupled field is an element of $\mathbb{B}$, its tra
 
 ## Conventions
 
-The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The gradient and the covariant derivative are those of *Operator and Calculus Conventions* and *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, whose symbol rule for a gauge-covariant operator is quoted in derived form:
+The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The gradient and the covariant derivative are those of *Operator and Calculus Conventions* and *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, whose symbol rule for a covariant operator is quoted in derived form:
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath}\longmapsto i\pi_{\imath} ,
@@ -76,7 +76,7 @@ $-\pi^{2}$ is one number times the identity in the amplitude space; $\frac{2\pi 
 
 The curvature term's trace vanishes, which is the parent's Lorenz argument in frequency space. The parent shows that taking the trace of the covariant equation removes the commutator, so the curvature does not enter the covariant Lorenz condition. In the symbol's language: the trace of $\sigma_{\mathrm{gco}}$ is $-\pi^{2}\cdot4$ and has no curvature in it, so the constraint's symbol is the free one at $\pi$. That single sentence is the whole of the parent's §*The Lorenz Condition in Covariant Form*, and the article states it as a trace.
 
-A gauge transformation shifts $A_{\imath}$ by a gradient, which shifts $\pi_{\imath}$ and leaves $F$ alone; so the symbol's translation moves and its obstruction does not. That is the frequency-space form of gauge covariance: the symbol is not invariant, its two parts transform differently, and the next section separates them.
+A local transformation shifts $A_{\imath}$ by a gradient, which shifts $\pi_{\imath}$ and leaves $F$ alone; so the symbol's translation moves and its obstruction does not. That is the frequency-space form of covariance: the symbol is not invariant, its two parts transform differently, and the next section separates them.
 
 ## The Translation Is Exact
 
@@ -211,7 +211,7 @@ The mass does not enter the obstruction: the mass term is $-\nu_m^{2}\delta$, wh
 ## Further Reading
 
 - *The Coupled Proca Equation in Biquaternionic Form*, for the carrier argument, the minimal substitution, the covariant field strength and the constant background.
-- *The Coupled Proca Equation in Biquaternionic Polar Variables*, for the same theory read in the chart, and for the gauge transformation as a phase translation.
+- *The Coupled Proca Equation in Biquaternionic Polar Variables*, for the same theory read in the chart, and for the local transformation as a phase translation.
 - *Gauge Fields and the Covariant Derivative*, for the commutator, the curvature and the square-splitting identity.
 - *The Fourier Transform and the Proca Equation in Biquaternionic Form*, for the free symbol's determinant, rank and kernel.
 - *The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Form*, for the occupancy bench and the ladder's rungs.

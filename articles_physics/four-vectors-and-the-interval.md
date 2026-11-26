@@ -427,7 +427,7 @@ The sector carries the standard four-vectors, and each one is a different invari
 | four-velocity | $\tilde V_{\Phi}=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^{2}$ | the normalisation |
 | four-momentum | $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ | $(E/c,\vec p)$ | $-m^{2}c^{2}$ | the mass shell |
 | four-wavevector | $\tilde\Upsilon_{\Phi}=i\frac{\omega}{c}e_t+2\pi\vec\nu_\Phi$ | $(\omega/c,\vec\nu_\Phi)$ | $0$ for light | the dispersion relation |
-| four-potential | $\tilde A_{\Phi}=i a'_t e_t+\vec A$ | $(a'_t,\vec A)$ | gauge-dependent | not an invariant |
+| four-potential | $\tilde A_{\Phi}=i a'_t e_t+\vec A$ | $(a'_t,\vec A)$ | representative-dependent | not an invariant |
 | four-current | $\tilde J_{\Phi}=i c\rho\,e_t+\vec j$ | $(c\rho,\vec j)$ | not fixed | not an invariant |
 | four-force | $\tilde{\mathcal F}_{\Phi}=i\frac{\gamma\vec f\cdot\vec v}{c}e_t+\gamma\vec f$ | $(\gamma\vec f\cdot\vec v/c,\gamma\vec f)$ | not fixed | orthogonality to $\tilde V_{\Phi}$ |
 
@@ -437,7 +437,7 @@ The four-velocity's norm is a constant, and that is what makes it a normalised d
 
 The four-force is orthogonal to the four-velocity in the Minkowski pairing of §*The Bracket*. The identity of that section applies with $\tilde R_{\Phi,1}=\tilde{\mathcal F}_{\Phi}$ and $\tilde R_{\Phi,2}=\tilde V_{\Phi}$, and $\operatorname{Sc}(\tilde{\mathcal F}_{\Phi}\tilde V_{\Phi}^{\natural})$ is their Minkowski pairing. That scalar vanishes when the temporal component of the force is the power divided by $c$, which is the statement that such a force preserves the rest mass. A force whose temporal component is anything else has a non-zero pairing and changes $N(\tilde V_{\Phi})$: it changes the rest mass, and the algebra says so through the scalar part of an element of the algebra.
 
-The four-potential's gauge freedom is a motion inside the sector. The transformation $\tilde A_{\Phi}\mapsto\tilde A_{\Phi}+\partial\xi$ adds to the potential an element of the sector that is the gradient of a scalar, and the norm of the sum is not the sum of the norms. The field strength, built from the antisymmetrised derivative, is the object whose components are the entries of a matrix in $\mathbb{B}_{\Phi}$ and whose norm is invariant. The entry does not derive the field equations; it records that the object whose norm is invariant exists in the sector and the potential does not have that property.
+The four-potential's redundancy is a motion inside the sector. The transformation $\tilde A_{\Phi}\mapsto\tilde A_{\Phi}+\partial\xi$ adds to the potential an element of the sector that is the gradient of a scalar, and the norm of the sum is not the sum of the norms. The field strength, built from the antisymmetrised derivative, is the object whose components are the entries of a matrix in $\mathbb{B}_{\Phi}$ and whose norm is invariant. The entry does not derive the field equations; it records that the object whose norm is invariant exists in the sector and the potential does not have that property.
 
 The four-current's norm is not fixed because a current is a density and not a state. The continuity equation $\operatorname{Sc}\bigl((\tilde\nabla_{\Phi})^{\natural}\tilde J_{\Phi}\bigr)=0$ is the statement that a divergence vanishes, and the divergence is the scalar part of a product of an informational operator with a material element. The current is a material four-vector whose scalar part is a charge density and whose vector part is a flux; the equation constrains the pair and not the norm.
 
@@ -563,7 +563,7 @@ Neither factor of a general unit need be in the sector. A rotation factor is mat
 
 This is the precise content of the phrase that the Lorentz group acts on spacetime. The group is not a subset of the space and not a product of its points; it is the group of congruences of the algebra that preserve the norm of the space. The algebra makes the statement literal, and it also explains why the complexification is needed: the six parameters of the group do not fit in the four dimensions of the sector.
 
-Boundary. The action is linear and acts on a flat space. No local action, no bundle and no gauge field is constructed here, and the entry does not claim that a change of frame is a physical operation performed on an object.
+Boundary. The action is linear and acts on a flat space. No local action, no bundle and no connection is constructed here, and the entry does not claim that a change of frame is a physical operation performed on an object.
 
 ### I.12.k — Seven Four-Vectors Are One Object in Seven Costumes
 
@@ -595,7 +595,7 @@ The object is a real four-plane and the readings are readings of its quadratic f
 
 No dynamics is supplied. The interval is a constant on the sector and says nothing about how a four-vector changes. A law that keeps a worldline inside the cone, one that crosses it, and one that does neither are all compatible with the interval. Conservation of the norm along a path is a constraint that a theory may impose; it is not implied here.
 
-No field equation is supplied. The sector carries the four-potential and the four-current as elements, and it carries no operator that would annihilate them into an equation. The wave operator, the field strength and the gauge connection belong to later entries of the category, and the entry refers to them and does not restate them.
+No field equation is supplied. The sector carries the four-potential and the four-current as elements, and it carries no operator that would annihilate them into an equation. The wave operator, the field strength and the connection belong to later entries of the category, and the entry refers to them and does not restate them.
 
 No statistics is supplied. The spectral pair is a pair of complex numbers and not a pair of occupation numbers. Nothing here says whether the two modes are distinguishable, and no Fock space, no commutation relation and no spin-statistics connection is constructed.
 
@@ -652,7 +652,7 @@ The sector is a chart and the informational sector is the other chart. The ident
 | the four-velocity | $\tilde V_{\Phi}$ | $i\gamma c\,e_t+\gamma\vec v$, norm $-c^{2}$ |
 | the four-momentum | $\tilde P_{\Phi}$ | $i\frac{E}{c}e_t+\vec p$, norm $-m^{2}c^{2}$ |
 | the four-wavevector | $\tilde\Upsilon_{\Phi}$ | $i\frac{\omega}{c}e_t+\vec\nu_\Phi$, norm zero for light |
-| the four-potential | $\tilde A_{\Phi}$ | $i a'_t e_t+\vec A$, gauge-dependent norm |
+| the four-potential | $\tilde A_{\Phi}$ | $i a'_t e_t+\vec A$, representative-dependent norm |
 | the four-current | $\tilde J_{\Phi}$ | $i c\rho\,e_t+\vec j$ |
 | the four-force | $\tilde{\mathcal F}_{\Phi}$ | $i\frac{\gamma\vec f\cdot\vec v}{c}e_t+\gamma\vec f$ |
 

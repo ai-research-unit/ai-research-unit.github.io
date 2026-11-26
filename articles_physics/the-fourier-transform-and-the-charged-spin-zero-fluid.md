@@ -12,7 +12,7 @@ Position in the block. This is the charged companion of [The Fourier Transform a
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\varkappa}{h}\tilde A_\Phi$, and the gauge transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$. The mechanical momentum is
+The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\varkappa}{h}\tilde A_\Phi$, and the local transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$. The mechanical momentum is
 
 $$
 \tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+\varkappa\tilde A_\Phi,
@@ -67,11 +67,11 @@ The identity is the companion's, $\mathrm{d}\tilde V=\frac{\varkappa}{m}\tilde F
 
 The rank is the relativistic rung's own addition and it has no image at the rung below. The companion finds the vorticity proper of rank two always, and the raw derivative of the frame reaching rank four, and it finds that adding $\varkappa F/m$ for a field with $\vec E\cdot\vec B\ne0$ gives a rank-four two-form — singular values $0.921$, $0.921$, $0.632$, $0.632$ against the frame's $0.150342$, $0.150342$, $0$, $0$ and the raw derivative's $0.20582$, $0.20582$, $0.02742$, $0.02742$. **The charged Schrödinger fluid's vorticity cannot reach rank four, because a boost mixes the two halves of the field and there is no boost there.** So the two charged rungs differ in the rank of the object a mode cannot carry, and the difference is the mass.
 
-What survives at both rungs is the invariance statement. The curvature is the only gauge-invariant object the momentum-space reading has, and the mode count, the support and the envelope are all chart-dependent. The one thing the transform of a charged fluid can say without a gauge choice is what its vorticity is, and that is why this article's central section is a section about a curvature and not about a spectrum.
+What survives at both rungs is the invariance statement. The curvature is the only invariant object the momentum-space reading has, and the mode count, the support and the envelope are all chart-dependent. The one thing the transform of a charged fluid can say without a choice of representative is what its vorticity is, and that is why this article's central section is a section about a curvature and not about a spectrum.
 
 ## Two Supports, One Field
 
-The canonical and kinetic labels differ by the potential, so the transform has two supports and the choice between them is a gauge choice.
+The canonical and kinetic labels differ by the potential, so the transform has two supports and the choice between them is a choice of representative.
 
 $$
 \tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{\varkappa}{h}\tilde A_\Phi
@@ -79,7 +79,7 @@ $$
 \text{the support in the kinetic variable}=\text{the free shell},
 $$
 
-and in the canonical variable the support is the same shell translated the other way. A gauge transformation with a linear phase translates the support, so the two descriptions are related by a translation and not by a deformation, which is this article's first result read on the two charts.
+and in the canonical variable the support is the same shell translated the other way. A local transformation with a linear phase translates the support, so the two descriptions are related by a translation and not by a deformation, which is this article's first result read on the two charts.
 
 The fluid's velocity is read from the kinetic label, and that fixes which chart the fluid is written in. $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$, so the flow's datum is the label on the translated support; in the chart where the support is free the flow's variable is the canonical one and the velocity is not read from it. The chart in which the fluid's velocity is the label is the chart in which the support is translated, exactly as at the rung below.
 

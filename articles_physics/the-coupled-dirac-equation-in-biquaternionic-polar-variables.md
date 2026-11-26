@@ -91,7 +91,7 @@ i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A
 \qquad\text{whenever}\qquad A_{\imath}=\frac{\partial\Lambda}{\partial R_{\imath}},
 $$
 
-so a pure-gauge potential is absorbed by a reparameterisation of the angle and by nothing else. That is the polar statement of gauge invariance, and it is a statement about the *angle* and not about the field.
+so a pure-gauge potential is absorbed by a reparameterisation of the angle and by nothing else. That is the polar statement of local invariance, and it is a statement about the *angle* and not about the field.
 
 The momentum. With $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ and $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ the free reading, the coupled reading is
 
@@ -161,7 +161,7 @@ The strongest objection, and the answer. The objection is that the chart has mer
 
 ## The Gauge-Invariant Reparameterisation
 
-The angle is a coordinate, so the gauge transformation is a change of coordinate on the same field. The invariant content is what survives it.
+The angle is a coordinate, so the local transformation is a change of coordinate on the same field. The invariant content is what survives it.
 
 The transformation in the chart.
 
@@ -173,7 +173,7 @@ $$
 \varrho,\ \tilde U_{\Psi,\mathrm b},\ \tilde u_{\mathrm r}\ \text{fixed}.
 $$
 
-Only the angle moves. The scale, the boost and the rotor are gauge invariant by inspection, because a central scalar phase cannot change a modulus, cannot change a rapidity and cannot turn a rotor.
+Only the angle moves. The scale, the boost and the rotor are invariant by inspection, because a central scalar phase cannot change a modulus, cannot change a rapidity and cannot turn a rotor.
 
 The covariant wavevector is invariant.
 
@@ -191,7 +191,7 @@ and $\tilde F$ is unchanged by the transformation, since a gradient can be absor
 
 What the chart's invariants are, in one list. The radius $\varrho$; the rapidity $\theta_{\mathrm{rpd}}$ and the axis $\vec u_{\mathrm b}$; the rotor angle $\theta_{\mathrm{axr}}$ and its axis; the covariant wavevector $\tilde\Upsilon_{\Phi,\mathrm{gco}}$; and the curvature $\tilde F$. The angle $\theta_{\mathrm{pha}}$ is a coordinate and not an invariant, and its gauge class is the physical statement.
 
-**The field's frame factor is gauge invariant and this is the chart's cleanest sentence.** Since the gauge transformation multiplies the word by a central scalar, the frame factors $\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}$ are untouched. The three things the chart calls frame — the boost, the rotor, and their product — are therefore exactly the gauge-invariant part of the field's decomposition, and the phase is exactly the gauge-dependent part. That is a sharper statement than the element form can make, and it is the reason the polar chart is worth having.
+**The field's frame factor is invariant and this is the chart's cleanest sentence.** Since the local transformation multiplies the word by a central scalar, the frame factors $\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}$ are untouched. The three things the chart calls frame — the boost, the rotor, and their product — are therefore exactly the invariant part of the field's decomposition, and the phase is exactly the representative-dependent part. That is a sharper statement than the element form can make, and it is the reason the polar chart is worth having.
 
 One qualification. The word is a bijection onto the N-regular set and the transformation preserves the set, so the transformed field is again N-regular and again has a word. No chart breaks under the transformation. What can break is the *smoothness*: a transformation with a singularity in $\Lambda$ gives a word that leaves the chart's range at a point, and the parent records the range restrictions for that reason.
 
@@ -209,7 +209,7 @@ What the background does to the spin is indirect. It curves the boost, and the s
 
 Why the chart cannot do more. The chart's variables are four brackets of four types, and the coupling is confined to two of them by type. A precession of the spin direction would have to be a term in the fourth bracket, and no central element can produce one. The polar chart therefore does not derive the spin's dynamics in a background; it locates the spin and the momentum in different brackets and leaves the coupling to the momentum. That is a real limit on what the polar equation says, and the article prefers to state it rather than to dress it up.
 
-What survives exactly. The spin's *kinematics* is exact and gauge invariant: $\hat s$ is a function of the rotor alone, the rotor is gauge invariant, and the spin direction is therefore an observable of the chart with no gauge ambiguity at all. That is more than the element form states, and it is the polar form's contribution to the spin question.
+What survives exactly. The spin's *kinematics* is exact and invariant: $\hat s$ is a function of the rotor alone, the rotor is invariant, and the spin direction is therefore an observable of the chart with no gauge ambiguity at all. That is more than the element form states, and it is the polar form's contribution to the spin question.
 
 ## What the Polar Form Adds, and What It Does Not
 
@@ -229,7 +229,7 @@ Does not add.
 - No spin dynamics in a background, as §*The Spin Transport* states.
 - No closure of the general case: the four brackets are coupled and the chart does not close them.
 
-**The ledger in one paragraph.** The polar coupled equation is the element coupled equation with the word substituted, and the substitution buys three things: the potential as a shift of a gradient, the velocity as the kinetic one, and the field's split into a gauge part and a gauge-invariant part. It buys nothing else. In particular it does not buy a spin equation in the background, and it does not buy any statement about the constraint structure of the field, which is a property of the action and not of the equation. The article that follows this one in the coupled quartet substitutes the word into the *action* instead, and the constraint structure appears there.
+**The ledger in one paragraph.** The polar coupled equation is the element coupled equation with the word substituted, and the substitution buys three things: the potential as a shift of a gradient, the velocity as the kinetic one, and the field's split into a gauge part and an invariant part. It buys nothing else. In particular it does not buy a spin equation in the background, and it does not buy any statement about the constraint structure of the field, which is a property of the action and not of the equation. The article that follows this one in the coupled quartet substitutes the word into the *action* instead, and the constraint structure appears there.
 
 ## Open Questions
 
@@ -237,7 +237,7 @@ The spin in the background. Whether a polar formulation exists in which the four
 
 The general field. The four brackets are coupled and the equation does not close them. The parent records the same underdetermination in the free case. Whether a closure condition can be added — a spin-transport equation chosen on principle rather than by convenience — is the parent's open question and the coupling does not settle it.
 
-The word's range under gauge transformations. A gauge transformation with a singular $\Lambda$ carries the word out of its chart's range at the singular set. Whether the range restrictions have a physical reading, or whether they are an artefact of the chart, is not settled here.
+The word's range under local transformations. A local transformation with a singular $\Lambda$ carries the word out of its chart's range at the singular set. Whether the range restrictions have a physical reading, or whether they are an artefact of the chart, is not settled here.
 
 The relative phase and the chart's parameter count. The mass breaks the relative phase of the two parts (§*The Field and Its Phase Symmetry* of the element companion), and the word has no parameter for that phase. Whether the absence is a genuine statement — that the relative phase is not a degree of freedom of the N-regular set — or a limitation of the chosen bijection is open.
 
@@ -251,9 +251,9 @@ The phase bracket carries the momentum, and the coupling shifts it: $\tilde\Upsi
 
 The boost bracket carries the velocity, and the boost is named by the covariant wavevector, so the velocity is the kinetic one and the canonical wavevector is the covariant one less the potential. The mass shell is $\kappa_t^{2}-|\vec\kappa|^{2}=-4\pi^{2}\nu_m^{2}$, a translated hyperboloid of unchanged radius: no constant potential opens a gap.
 
-The gauge transformation moves the angle and nothing else, so the covariant wavevector and the frame factors are gauge invariant and the phase is not. The invariant is the curvature.
+The local transformation moves the angle and nothing else, so the covariant wavevector and the frame factors are invariant and the phase is not. The invariant is the curvature.
 
-The spin is the rotor, the rotor is gauge invariant, and the connection cannot turn it. The spin's transport in a background is indirect, through the boost, and the polar chart does not derive it; that is the chart's honest limit and the g=2 article's subject.
+The spin is the rotor, the rotor is invariant, and the connection cannot turn it. The spin's transport in a background is indirect, through the boost, and the polar chart does not derive it; that is the chart's honest limit and the g=2 article's subject.
 
 The polar equation is the free pair in variables. It closes for a plane wave in a constant background and it does not close for a general field. The constraint structure enters when the action is asked for, in *The Lagrangian and the Coupled Dirac Equation in Polar Variables*.
 
@@ -263,21 +263,21 @@ The polar equation is the free pair in variables. It closes for a plane wave in 
 | --- | --- |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, central phase, boost, rotor |
 | $\varrho>0$ | Scale; $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is the density |
-| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; **the gauge-dependent coordinate** |
+| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; **the representative-dependent coordinate** |
 | $\theta_{\mathrm{rpd}}\ge0,\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$ |
 | $\theta_{\mathrm{axr}}\in[0,2\pi]$ | Angle of the rotor $\tilde u_{\mathrm r}$; $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ |
 | $\tilde A_\Phi=A_te_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}$ | Potential biquaternion; material sector; coefficients central in the abelian case |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, left action |
 | $\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The added element: central imaginary slot plus Hermitian vector slot |
 | $\tilde\Upsilon_\Phi=i\frac{E}{h c}e_t+\frac{\vec p}{h}$ | Canonical wavevector, from $\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ |
-| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; gauge invariant; names the boost |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; invariant; names the boost |
 | $\kappa_t,\vec\kappa$ | Components of $\tilde\Upsilon_{\Phi,\mathrm{gco}}$; $\kappa_t^{2}-|\vec\kappa|^{2}=-4\pi^{2}\nu_m^{2}$ |
 | $\tilde V_\Phi=ic\,\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ | Four-velocity; kinetic |
 | $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-vector factor; $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\mathcal B_\Psi$ |
 | $i\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi iϙ}{h}A_{\imath}$ | The coupled phase bracket |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | The boost bracket; receives the Hermitian slot |
-| $\tilde F$ | Curvature; the gauge invariant |
-| $\Lambda$ | Gauge function; $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Lambda}{h}$ |
+| $\tilde F$ | Curvature; the invariant |
+| $\Lambda$ | Phase function; $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Lambda}{h}$ |
 
 ## Further Reading
 

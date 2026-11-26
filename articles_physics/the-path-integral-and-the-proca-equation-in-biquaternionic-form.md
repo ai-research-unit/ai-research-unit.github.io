@@ -4,7 +4,7 @@
 
 The Proca field is the simplest field in the corpus whose functional integral exists as it stands. It is a real four-component field, it is commuting, its action is quadratic, and its mass term removes the one obstruction that the massless integral has. So the free integral is an ordinary Gaussian, its determinant can be computed exactly, and the answer contains the whole of the theory's particle content: the number three in the determinant's exponent is the three polarizations of the massive vector, and the eigenvalue that sits outside the cube is the ghost.
 
-Three facts organise the article, and the first is the one the massless case does not have. The mass term is what makes the integral exist. At $\nu_m=0$ the Proca operator has the four-dimensional kernel of pure gradients, the Gaussian's longitudinal eigenvalue vanishes, and the integral is the volume of the gauge group — which is why the Maxwell integral needs the Faddeev–Popov construction of *The Gauge Field Path Integral in Biquaternionic Form* and the Proca one needs nothing. No gauge-fixing condition, no Faddeev–Popov determinant, no ghost field, no gauge parameter. The mass does all of it, and it does it in one term.
+Three facts organise the article, and the first is the one the massless case does not have. The mass term is what makes the integral exist. At $\nu_m=0$ the Proca operator has the four-dimensional kernel of pure gradients, the Gaussian's longitudinal eigenvalue vanishes, and the integral is the volume of the symmetry group — which is why the Maxwell integral needs the Faddeev–Popov construction of *The Gauge Field Path Integral in Biquaternionic Form* and the Proca one needs nothing. No fixing condition, no Faddeev–Popov determinant, no ghost field, no parameter. The mass does all of it, and it does it in one term.
 
 The second fact is the operator's split, and it is exact in the algebra's own letters. The Proca operator is $P=\Box_\Phi-4\pi^{2}\nu_m^{2}-\tilde\nabla_\Phi D$ with $D\tilde A_\Phi=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ the divergence. The object $D$ and the gradient $\tilde\nabla_\Phi$ are the two canonical operators the algebra supplies, so the longitudinal projector $P_L=\tilde\nabla_\Phi\Box_\Phi^{-1}D$ needs no frame, no polarisation vector and no choice. Then
 
@@ -104,7 +104,7 @@ $$
 
 with $P_L$ of rank one and $P_T$ of rank three.
 
-**The mass is the only thing that acts on the longitudinal direction.** Every term of $P$ except $-\nu_m^{2}$ annihilates $P_L$: the d'Alembertian and the gradient-of-divergence cancel there exactly. So the longitudinal eigenvalue is $-\nu_m^{2}$ with no derivative in it, no momentum in it and no field in it. That single fact carries the ghost, the massless limit and the gauge-fixing question, and the next two sections are its consequences.
+**The mass is the only thing that acts on the longitudinal direction.** Every term of $P$ except $-\nu_m^{2}$ annihilates $P_L$: the d'Alembertian and the gradient-of-divergence cancel there exactly. So the longitudinal eigenvalue is $-\nu_m^{2}$ with no derivative in it, no momentum in it and no field in it. That single fact carries the ghost, the massless limit and the fixing the representative question, and the next two sections are its consequences.
 
 ## The Determinant and the Count of Three
 
@@ -148,9 +148,9 @@ The Euclidean operator has no ghost at all. With $\delta_{\imath\jmath}$ in plac
 
 ## The Massless Limit
 
-At $\nu_m=0$ the longitudinal eigenvalue vanishes and the integral is not defined. Then $\det P=0$, the Gaussian has a flat direction at every momentum, and the flat direction is the gauge orbit: $\tilde A_\Phi\mapsto\tilde A_\Phi+\tilde\nabla_\Phi\chi$ leaves both $\tilde F$ and the action unchanged. The integral becomes the volume of the group of gradient functions times the transverse integral, which is exactly the object the Faddeev–Popov construction removes.
+At $\nu_m=0$ the longitudinal eigenvalue vanishes and the integral is not defined. Then $\det P=0$, the Gaussian has a flat direction at every momentum, and the flat direction is the orbit: $\tilde A_\Phi\mapsto\tilde A_\Phi+\tilde\nabla_\Phi\chi$ leaves both $\tilde F$ and the action unchanged. The integral becomes the volume of the group of gradient functions times the transverse integral, which is exactly the object the Faddeev–Popov construction removes.
 
-**So the Proca integral needs no gauge fixing, and the Maxwell integral cannot do without one.** This is not a technical convenience; it is the same statement as the equation article's "the mass breaks the gauge symmetry". The path integral says it as a rank: the longitudinal projector has rank one at $\nu_m\neq0$ and rank one of zero eigenvalue at $\nu_m=0$.
+**So the Proca integral needs no fixing the representative, and the Maxwell integral cannot do without one.** This is not a technical convenience; it is the same statement as the equation article's "the mass breaks the local symmetry". The path integral says it as a rank: the longitudinal projector has rank one at $\nu_m\neq0$ and rank one of zero eigenvalue at $\nu_m=0$.
 
 The limit exists on conserved sources and only there. Contracting the inverse with a source gives
 
@@ -160,9 +160,9 @@ $$
 
 and the second term diverges as $\nu_m\to0$ unless $\tilde J_L=0$, i.e. unless $D\tilde J_\Phi=0$. The longitudinal mode decouples from a conserved source, and from nothing else. The numbers: for a conserved source the longitudinal term was exactly zero at every $\nu_m$ tried, and for a non-conserved one it grew as $1/\nu_m^{2}$, from $1.07\times10^{2}$ at $2\pi\nu_m=10^{-1}$ to $1.07\times10^{8}$ at $2\pi\nu_m=10^{-4}$.
 
-This is the integral's form of the third-polarisation statement. The corpus's *The Third Polarization and the Self-Dual Split of the Massive Field Strength* says that the third state is physical at $\nu_m\neq0$ and becomes the gauge direction at $\nu_m=0$. The integral says that the third state is a term in the propagator with the coefficient $1/\nu_m^{2}$, that it couples to the divergence of the source, and that a conserved source cannot see it.
+This is the integral's form of the third-polarisation statement. The corpus's *The Third Polarization and the Self-Dual Split of the Massive Field Strength* says that the third state is physical at $\nu_m\neq0$ and becomes the redundant direction at $\nu_m=0$. The integral says that the third state is a term in the propagator with the coefficient $1/\nu_m^{2}$, that it couples to the divergence of the source, and that a conserved source cannot see it.
 
-The gauge-fixing parameter of the Maxwell integral has no Proca analogue. There the longitudinal coefficient is a free number $\xi$; here it is fixed at $1/\nu_m^{2}$ by the mass. The Proca theory has no gauge to fix, so it has no gauge parameter, and the Lorenz condition is a consequence rather than a choice — which is the equation article's statement read as the uniqueness of the propagator.
+The fixing parameter of the Maxwell integral has no Proca analogue. There the longitudinal coefficient is a free number $\xi$; here it is fixed at $1/\nu_m^{2}$ by the mass. The Proca theory has no gauge to fix, so it has no parameter, and the Lorenz condition is a consequence rather than a choice — which is the equation article's statement read as the uniqueness of the propagator.
 
 ## The Semiclassical Expansion
 
@@ -199,17 +199,17 @@ The leading semiclassical kernel is the free one, and the loop expansion is the 
 
 ## What the Integral Adds and What It Does Not Add
 
-Adds, first, the frame-free derivation of the three–one split. The projectors are $\tilde\nabla_\Phi\Box_\Phi^{-1}D$ and its complement, and they are built from the two canonical first-order operators of the algebra. No polarisation vector, no momentum frame and no gauge choice enters. The exponent three is the rank of a projector, and the rank is computed without reference to any vector.
+Adds, first, the frame-free derivation of the three–one split. The projectors are $\tilde\nabla_\Phi\Box_\Phi^{-1}D$ and its complement, and they are built from the two canonical first-order operators of the algebra. No polarisation vector, no momentum frame and no choice of representative enters. The exponent three is the rank of a projector, and the rank is computed without reference to any vector.
 
 Adds, second, the exactness of the ghost's eigenvalue. Because the longitudinal eigenvalue is $-\nu_m^{2}$ with no derivative, the ghost's contribution is a constant and the ghost's sign is the metric's. The two statements together give the clean result: a massive vector's covariant integral is a correct three-state integral, and the fourth mode is a phase.
 
-Adds, third, the statement that the Proca integral needs no gauge fixing. The rank of the longitudinal projector is the whole of the argument, and the Faddeev–Popov apparatus of the Maxwell article has no Proca counterpart. The mass, the Lorenz condition and the absence of a gauge parameter are one fact in three costumes.
+Adds, third, the statement that the Proca integral needs no fixing the representative. The rank of the longitudinal projector is the whole of the argument, and the Faddeev–Popov apparatus of the Maxwell article has no Proca counterpart. The mass, the Lorenz condition and the absence of a parameter are one fact in three costumes.
 
 **Does not add a value.** The propagator is the standard Proca propagator, the determinant is the standard determinant, and the one-loop effective action is the standard one. Every closed form quoted here is in the literature, and the algebra's contribution is the route and not the destination.
 
 Does not supply the measure, and does not decide the statistics. The continuum measure over four real components per point is formal, as it is for every field in the corpus. The field is commuting and bosonic, and no Grassmann structure is needed or used — in this the article is the opposite of the Dirac companion, where the statistics had to be addressed explicitly.
 
-Does not treat a dynamical connection. The connection in the coupled companion is external, which is what keeps the integral Gaussian. A dynamical connection brings the Faddeev–Popov construction back, and that is where the gauge-field article resumes.
+Does not treat a dynamical connection. The connection in the coupled companion is external, which is what keeps the integral Gaussian. A dynamical connection brings the Faddeev–Popov construction back, and that is where the connection article resumes.
 
 ## Open Questions
 

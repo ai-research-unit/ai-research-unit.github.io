@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The claim.** The angle $\theta_W$ is not a third coupling. It is the one angle by which the two neutral gauge fields must be rotated to make the photon couple as pure electric charge, and once it is so defined the $Z$ coupling follows with no further freedom:
+**The claim.** The angle $\theta_W$ is not a third coupling. It is the one angle by which the two neutral connections must be rotated to make the photon couple as pure electric charge, and once it is so defined the $Z$ coupling follows with no further freedom:
 
 $$
 \mathcal{L}_Z=\frac{g}{\cos\theta_W}\sum_{f,\imath}\varepsilon_{\imath} Z_{\imath}\bar f\gamma_{\imath}\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_W\,P_R\Big]f .
@@ -396,7 +396,7 @@ What this article therefore is. A computation about the model. Its value to the 
 
 ## Summary
 
-The neutral sector has two gauge fields and one angle. Writing the physical fields as $A=\sin\theta_WW_3+\cos\theta_WB$ and $Z=\cos\theta_WW_3-\sin\theta_WB$, and demanding that the photon couple as pure electric charge with no $T_3$ admixture, fixes $\tan\theta_W=g_{\mathrm Y}/g$ and gives $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$. The $Z$ bracket then comes out as $\sqrt{g^2+g_{\mathrm Y}^2}(J_3-\sin^2\theta_WJ_Q)$ with no further freedom, and the square arises because the coefficient is $g_{\mathrm Y}^2/(g^2+g_{\mathrm Y}^2)$: two powers from the numerator and one from each term of the denominator. The angle is therefore defined by one condition, and its appearance squared in the neutral current is a consequence of that condition and not a second convention.
+The neutral sector has two connections and one angle. Writing the physical fields as $A=\sin\theta_WW_3+\cos\theta_WB$ and $Z=\cos\theta_WW_3-\sin\theta_WB$, and demanding that the photon couple as pure electric charge with no $T_3$ admixture, fixes $\tan\theta_W=g_{\mathrm Y}/g$ and gives $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$. The $Z$ bracket then comes out as $\sqrt{g^2+g_{\mathrm Y}^2}(J_3-\sin^2\theta_WJ_Q)$ with no further freedom, and the square arises because the coefficient is $g_{\mathrm Y}^2/(g^2+g_{\mathrm Y}^2)$: two powers from the numerator and one from each term of the denominator. The angle is therefore defined by one condition, and its appearance squared in the neutral current is a consequence of that condition and not a second convention.
 
 The chiral decomposition gives $g_L=T_3-Q\sin^2\theta_W$, $g_R=-Q\sin^2\theta_W$, $g_V=T_3-2Q\sin^2\theta_W$ and $g_A=T_3$. The axial coupling is the isospin exactly, because the mixing term cancels between chiralities, and that is why the neutrino's couplings are both $\tfrac12$ whatever the angle. At $\sin^2\theta_W=0.23122$ the electron's vector coupling is $-0.0376$, seven and a half per cent of its axial coupling, a near-cancellation that makes the leptonic asymmetries small; the up quark's is $+0.1917$ and the down quark's $-0.3459$.
 
@@ -414,7 +414,7 @@ The framework has no route to the angle, and the companion article says so. The 
 
 | Symbol | Meaning |
 |---|---|
-| $W_{3,\imath}$, $B_{\imath}$ | The two neutral gauge fields before mixing |
+| $W_{3,\imath}$, $B_{\imath}$ | The two neutral connections before mixing |
 | $A_{\imath}$, $Z_{\imath}$ | The photon and the neutral massive field |
 | $\theta_W$ | $\tan\theta_W=g_{\mathrm Y}/g$, the rotation that makes the photon pure charge |
 | $e$ | $g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ |

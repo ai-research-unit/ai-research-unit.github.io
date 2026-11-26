@@ -130,7 +130,7 @@ so the shift reverses the sign of some of the four units and does nothing else.
 
 **Which sign patterns the algebra supplies.** Conjugation by the unit $\vec e_{\imath}$, the map $x\mapsto\vec e_{\imath} x\vec e_{\imath}^{-1}$ — the only two-sided product in the article, and it acts on the units, never on the field or on a derivative — reverses the two spatial units perpendicular to it and fixes the other two: $\vec e_z x\vec e_z^{-1}$ sends $\vec e_x,\vec e_y$ to their negatives and fixes $\vec e_z$. So the four even sign patterns on the three spatial units are realized by inner automorphisms of $\mathbb{B}$. The quaternion conjugation $\natural$ reverses all three spatial units and supplies the four odd patterns. The temporal unit is central: no automorphism of $\mathbb{B}$ reverses it, and no element anticommutes with all four units — verified, the null space of the four equations $e_{\imath} a=-ae_{\imath}$ is zero. The temporal sign is reached by the shift alone.
 
-**What follows.** The sixteen poles are exactly degenerate in the free theory, and the degeneracy is a property of the difference operator, not of the algebra. They cannot be discarded in an interacting theory: the lattice conserves momentum only modulo $2\pi/a$, so a hard virtual gauge boson can transfer $\pi/a$ and connect the tastes.
+**What follows.** The sixteen poles are exactly degenerate in the free theory, and the degeneracy is a property of the difference operator, not of the algebra. They cannot be discarded in an interacting theory: the lattice conserves momentum only modulo $2\pi/a$, so a hard virtual connection can transfer $\pi/a$ and connect the tastes.
 
 ## The Nielsen–Ninomiya Theorem
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The claim. In this framework the gauge group *is* the spin group, and therefore the representation a field carries is fixed by its spin. The two cannot be chosen independently, and no amount of further construction will separate them.
+The claim. In this framework the symmetry group *is* the spin group, and therefore the representation a field carries is fixed by its spin. The two cannot be chosen independently, and no amount of further construction will separate them.
 
 Why it matters. The Standard Model needs the two to be independent. It assigns a spin-zero field to a doublet, a spin-half field to a doublet on one chirality only, and a spin-one field to the adjoint. In a framework where representation is a function of spin, each of those assignments is either forced or forbidden, and nothing in between.
 
@@ -18,9 +18,9 @@ The carriers. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts on itself, and 
 
 - Spin zero. The scalar is the central field $\xi\,e_t$, an element of the line $\mathbb{R}e_t$.
 - Spin half. The fermion is an element of a minimal left ideal $S_+$, which as a complex vector space is $\mathbb{C}^2$.
-- Spin one. The gauge field is valued in the adjoint, the vector part of the algebra, of real dimension three.
+- Spin one. The connection is valued in the adjoint, the vector part of the algebra, of real dimension three.
 
-Why this is an identity and not a theorem. The claim becomes shorter once the group is named correctly. A field's spin is the label of the carrier under the rotation group, and the framework's gauge group *is* the rotation group, $\mathrm{SU}(2)=\mathrm{Spin}(3)$ — the same group, not a group isomorphic to it. So "the gauge representation is fixed by the spin" is not a constraint the algebra happens to satisfy; it is the sentence "the carrier is classified by the group that acts on it", read twice. A framework in which the two could be chosen independently would need a gauge group that is *not* the rotation group, and that is exactly the enlargement this algebra does not have. What is a theorem, and what the rest of the article computes, is the table: which carrier each spin gets, and which row of the model's needs it does or does not match.
+Why this is an identity and not a theorem. The claim becomes shorter once the group is named correctly. A field's spin is the label of the carrier under the rotation group, and the framework's symmetry group *is* the rotation group, $\mathrm{SU}(2)=\mathrm{Spin}(3)$ — the same group, not a group isomorphic to it. So "the gauge representation is fixed by the spin" is not a constraint the algebra happens to satisfy; it is the sentence "the carrier is classified by the group that acts on it", read twice. A framework in which the two could be chosen independently would need a symmetry group that is *not* the rotation group, and that is exactly the enlargement this algebra does not have. What is a theorem, and what the rest of the article computes, is the table: which carrier each spin gets, and which row of the model's needs it does or does not match.
 
 **Each carrier is the one its spin allows.** The line is one-dimensional and real, the ideal is two-dimensional and complex, the adjoint is three-dimensional and real. The dimensions are $1$, $2$ and $3$, and they are the dimensions of the trivial, spinor and adjoint representations of $\mathrm{Spin}(3)$.
 
@@ -88,7 +88,7 @@ What survives. The abelian mechanism is untouched, because a central field can c
 
 The carrier is the ideal $S_+$, and it is one module, not two. The two chiral halves are the values of one operator — the letter law of [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), where $L$ and $R$ are the two values of the right multiplication by $\vec e_z$, not two separate spaces.
 
-The gauge action is left multiplication, and left multiplication does not read the letter. A left multiplication $(aQ)\vec e_z=a(Q\vec e_z)$ keeps the letter of its argument and applies the same element to both values. So a non-abelian gauge transformation acts on $L$ and $R$ with the same matrix, which is the definition of a vector-like coupling.
+The gauge action is left multiplication, and left multiplication does not read the letter. A left multiplication $(aQ)\vec e_z=a(Q\vec e_z)$ keeps the letter of its argument and applies the same element to both values. So a non-abelian local transformation acts on $L$ and $R$ with the same matrix, which is the definition of a vector-like coupling.
 
 **A chiral gauge theory needs two different actions on the two values.** It needs the group to act on $L$ and to act differently, or not at all, on $R$. Left multiplication cannot do this: it is one operator, acting on one side, on a module that contains both letters. That is the whole obstruction, and it is a statement about the carrier and not about the completeness of the work.
 
@@ -96,9 +96,9 @@ The abelian case is the exception, and it is the one the corpus has. A right mul
 
 ## The Vector Row: Why It Matches
 
-**The carrier is the vector part, and it is the adjoint.** The action of the group on its own algebra is conjugation, and the vector part is stable under it. The gauge field therefore transforms in the adjoint, as a connection must, and the covariant derivative $D_{\imath}\tilde\Xi=\partial/\partial R_{\imath}\tilde\Xi+i\kappa\,\mathcal{A}_{\imath}\tilde\Xi$ writes the coupling without a choice.
+**The carrier is the vector part, and it is the adjoint.** The action of the group on its own algebra is conjugation, and the vector part is stable under it. The connection therefore transforms in the adjoint, as a connection must, and the covariant derivative $D_{\imath}\tilde\Xi=\partial/\partial R_{\imath}\tilde\Xi+i\kappa\,\mathcal{A}_{\imath}\tilde\Xi$ writes the coupling without a choice.
 
-This is the corpus's unusual strength and its ceiling at once. The one row where the algebra is exactly what the model needs is the row the model uses for its carriers, and that is why the sector's kinematics, its self-couplings and its gauge algebra are all correct while its matter and its scalar are not.
+This is the corpus's unusual strength and its ceiling at once. The one row where the algebra is exactly what the model needs is the row the model uses for its carriers, and that is why the sector's kinematics, its self-couplings and its algebra are all correct while its matter and its scalar are not.
 
 ## What Would Break the Theorem
 

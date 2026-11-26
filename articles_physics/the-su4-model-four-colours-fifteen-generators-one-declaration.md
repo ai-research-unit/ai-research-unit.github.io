@@ -80,7 +80,7 @@ $$
 
 **Read the two factors of each term.** The first is the colour index: a quartet, lepton plus three colours. The second is a **copy index**, two-dimensional. Nothing else.
 
-**The copy index is a label here, not a gauge factor.** It does not multiply a generator in the covariant derivative, it has no coupling, and no field in this model transforms under it. **It records that the matter comes in two copies**, and that is all it does in this article.
+**The copy index is a label here, not a group factor.** It does not multiply a generator in the covariant derivative, it has no coupling, and no field in this model transforms under it. **It records that the matter comes in two copies**, and that is all it does in this article.
 
 **What the two copies are.** They are the two chiralities of the sixteen, each a doublon of the quartet:
 
@@ -134,7 +134,7 @@ $$
 | $A_{15}$ | $1$ | $\mathbf 1$ | the $B-L$ vector, massless | massless until it mixes downstream |
 | $a$ in $\mathfrak m$ | $6$ | $\mathbf 3+\bar{\mathbf3}$ | **the sextet, massless** | **heavy at $M_C$** |
 
-**Below $M_C$ there are nine massless and six massive, and that is the whole gauge-boson spectrum at that scale.** Above $M_C$ all fifteen are massless, no vacuum having formed — **and that includes the six leptoquarks, whose mass exists only once the condensate does.** The two columns are the point: **the sextet's column changes and the other two do not**, and a reader who reads "heavy" in the third row without the column heading has read the broken phase into the unbroken one.
+**Below $M_C$ there are nine massless and six massive, and that is the whole connection spectrum at that scale.** Above $M_C$ all fifteen are massless, no vacuum having formed — **and that includes the six leptoquarks, whose mass exists only once the condensate does.** The two columns are the point: **the sextet's column changes and the other two do not**, and a reader who reads "heavy" in the third row without the column heading has read the broken phase into the unbroken one.
 
 **And the middle column says *eight*, not *the gluons*, on purpose.** Above $M_C$ the group is one factor and **no $\mathrm{SU}(3)$ is gauged**, so *gluon* is a name the broken phase supplies: the eight are the six colour–colour off-diagonals plus the two colour diagonals, defined by the lines they move and not by a subgroup. **The $\mathrm{SU}(3)_c$ column is therefore a branching and not a pre-breaking content**, and §*The Names, and Which Phase They Belong To* of [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) states what changes at the transition and what does not — **the count $6+2=8$ never changes; only which group the two diagonals belong to does.**
 
@@ -205,7 +205,7 @@ $$
 | chirality | the copy index | declared |
 | any equality of couplings | — | not applicable: one coupling |
 
-**The criterion of legitimacy, restated.** The corpus once carried an implicit test: a gauge group is legitimate only if its generators are elements of the algebra, $X\in\mathbb B$. **That test is wrong and it has to go**, because $\mathfrak{su}(3)$ and $\mathfrak{su}(4)$ live in the endomorphisms of $\mathbb B$ and never in $\mathbb B$.
+**The criterion of legitimacy, restated.** The corpus once carried an implicit test: a symmetry group is legitimate only if its generators are elements of the algebra, $X\in\mathbb B$. **That test is wrong and it has to go**, because $\mathfrak{su}(3)$ and $\mathfrak{su}(4)$ live in the endomorphisms of $\mathbb B$ and never in $\mathbb B$.
 
 **The replacement is an address, not a filter.** A generator is an element of $\operatorname{End}_{\mathbb C}(\mathbb B)$, and the sixteen words $e_{\imath}[\,]e_{\jmath}=L_{e_{\imath}}R_{e_{\jmath}}$ are a basis of it. **The length of a generator is the rank of its coefficient array, and Conway's bound is four**:
 
@@ -338,7 +338,7 @@ $$
 
 A subalgebra is not a factor. $\mathfrak{so}(4)$ is six real dimensions inside the fifteen; a factor would be a group multiplying the fields. **Rank three against rank five is the difference** (*The Real $\mathfrak{so}(4)$*).
 
-The copy index is not a gauge factor. It labels two copies of the quartet and carries no coupling; it becomes a factor only at the transition, and **the split of that factor into two weak factors is the transition's postulate and not this article's** (*The Sixteen*, *The Chiral Wall*).
+The copy index is not a group factor. It labels two copies of the quartet and carries no coupling; it becomes a factor only at the transition, and **the split of that factor into two weak factors is the transition's postulate and not this article's** (*The Sixteen*, *The Chiral Wall*).
 
 Vector-like is not a defect. It is why the anomaly vanishes by counting, and it is why the model has no chiral gauge coupling — the second being what the transition to $M_C$ exists to fix (*The Chiral Wall*).
 

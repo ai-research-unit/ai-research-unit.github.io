@@ -223,7 +223,7 @@ which is the cyclotron frequency, and the velocity turns with it. For an electro
 
 3. **Non-uniform fields.** The closed form holds for constant $\vec\Omega_{\mathrm{LT}}$. For a varying field the equation of motion is still linear in $\tilde U$, but the direction of the rate turns with the position, and the rotor is a path-ordered exponential. What is the series' natural language for the path ordering, and does the gradient $\tilde\nabla_\Phi$ of *The Biquaternion D'Alembertian* supply it?
 
-4. **The gauge of the rest frame.** The residual rotation $\tilde U\to\tilde U\tilde u$ is a gauge freedom in the classical problem and a physical degree of freedom once spin is included. Is there a series convention for fixing it, and does it correspond to the Thomas–Wigner rotation of the companion exercise?
+4. **The gauge of the rest frame.** The residual rotation $\tilde U\to\tilde U\tilde u$ is a redundancy in the classical problem and a physical degree of freedom once spin is included. Is there a series convention for fixing it, and does it correspond to the Thomas–Wigner rotation of the companion exercise?
 
 5. **The rate as a connection.** The rate $\vec\Omega_{\mathrm{LT}}$ is an element of $\mathbb{B}_{V}$, the same subspace that carries the field strength. Is the eigenspinor flow a parallel transport in a connection whose curvature is the field, and does that interpretation connect to the curved-spacetime articles?
 

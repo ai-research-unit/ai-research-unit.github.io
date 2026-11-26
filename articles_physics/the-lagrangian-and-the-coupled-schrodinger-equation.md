@@ -143,9 +143,9 @@ and taking $\mathrm{Sc}$ gives $-ϙ\,\partial_{t'}\Gamma\,n$.
 
 **The potential term, and its gain.** $ϙ\omicron_{\mathrm{pot}}$ becomes $ϙ(\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma)$, so the term gains $+ϙ\,\partial_{t'}\Gamma\,n$. **The two gains are equal and opposite, and the action is invariant exactly.** There is no boundary term to discard and no improvement to make: the local transformation is a symmetry of the Lagrangian and not only of the action.
 
-**Why the two gains match, and what it says.** The kinetic gain is the derivative of the gauge function times the density, with the coupling's sign; the potential gain is the same object with the opposite sign. The matching is the statement that the covariant time derivative and the potential energy are one object split across two terms of the action — the split that the element-form companion records as the opposite signs of $D_t$ and $D_{\imath}$. A reader who wants a single sentence: *the action is invariant because the potential's shift and the phase's shift are the same shift.*
+**Why the two gains match, and what it says.** The kinetic gain is the derivative of the phase function times the density, with the coupling's sign; the potential gain is the same object with the opposite sign. The matching is the statement that the covariant time derivative and the potential energy are one object split across two terms of the action — the split that the element-form companion records as the opposite signs of $D_t$ and $D_{\imath}$. A reader who wants a single sentence: *the action is invariant because the potential's shift and the phase's shift are the same shift.*
 
-**What the invariance does not say.** It says nothing about the operator setting's domains or about large gauge functions with nonzero winding; those are the polar companion's open question 2 and the flux discussion, and the action's invariance is local and does not decide them.
+**What the invariance does not say.** It says nothing about the operator setting's domains or about large phase functions with nonzero winding; those are the polar companion's open question 2 and the flux discussion, and the action's invariance is local and does not decide them.
 
 ## The Structural Consequence: The Lorentz Force
 
@@ -184,7 +184,7 @@ $$
 
 where the second equality uses $\mathrm{Re}(iZ)=-\mathrm{Im}Z$. So the charge current is minus the derivative of the Lagrangian with respect to the vector potential, which is the variational statement that the current is what the connection couples to. The sign is fixed by the action's sign for $A_{\imath}$ inside $D_{\imath}$ and by the minus sign in front of the gradient term; with the opposite sign of $ϙ$ the current changes sign with it and the identity stands.
 
-**What the identity is good for.** It says that the current of this article and the source of the Maxwell equation are the same object, and it says it without a separate computation. It also says why the current must be gauge invariant: the Lagrangian's dependence on $\vec A$ is only through $D_{\imath}$, and $D_{\imath}$ is covariant, so $\partial L/\partial A_{\imath}$ transforms like a connection-independent vector. The free article's current lacks that property because the free Lagrangian's dependence on $\vec A$ is not there at all.
+**What the identity is good for.** It says that the current of this article and the source of the Maxwell equation are the same object, and it says it without a separate computation. It also says why the current must be invariant: the Lagrangian's dependence on $\vec A$ is only through $D_{\imath}$, and $D_{\imath}$ is covariant, so $\partial L/\partial A_{\imath}$ transforms like a connection-independent vector. The free article's current lacks that property because the free Lagrangian's dependence on $\vec A$ is not there at all.
 
 **The factor and the letters.** $j_{\imath}$ is the particle current; $ϙ j_{\imath}$ is the charge current. The element-form companion writes the charge current as $\vec J=ϙ\vec j$ and identifies it as the source of $\tilde\nabla_\Phi\tilde F=-\mu\tilde J$; the article uses that identification and does not re-derive it. The normalisation of $j$ is the free article's and is a convention, as it records.
 
@@ -222,7 +222,7 @@ j_{\imath}=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_{\imath}\tilde\Xi-\
 j_t=n,
 $$
 
-and it has a second definition, $ϙj_{\imath}=-\partial L/\partial A_{\imath}$, which identifies it as the source of the Maxwell equation and shows why it is gauge invariant.
+and it has a second definition, $ϙj_{\imath}=-\partial L/\partial A_{\imath}$, which identifies it as the source of the Maxwell equation and shows why it is invariant.
 
 The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in the constant setting, exactly conserved; the operator setting's energy density is the covariant modulus of the gradient minus $ϙ\omicron_{\mathrm{pot}} n$, with the integral conserved for a time-independent connection. The local flux is not printed here, and §*Open Questions* says so.
 
@@ -247,14 +247,14 @@ The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in 
 | $ϙj_{\imath}$, $\rho_{\mathrm{chg}}=ϙn$ | The charge current and the charge density |
 | $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A)$ | The coupled Hamiltonian of the constant setting |
 | $e$ | The energy density of the operator setting |
-| $\Gamma$, $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge function and factor |
+| $\Gamma$, $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The phase function and factor |
 | $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | The fields of the connection |
 
 ## Further Reading
 
 - [The Lagrangian and the Schrödinger Equation](the-lagrangian-and-the-schrodinger-equation.html), the free companion whose structure this article extends.
 - [The Coupled Schrödinger Equation in Biquaternionic Form](the-coupled-schrodinger-equation-in-biquaternionic-form.html), for the equation, the current and the two settings.
-- [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), where the same action is written in the chart and the gauge direction is named.
+- [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), where the same action is written in the chart and the redundant direction is named.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the carrier and the pairing the action is written with.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the central phase and the forced transformation law.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the covariance identities the invariance proof uses.

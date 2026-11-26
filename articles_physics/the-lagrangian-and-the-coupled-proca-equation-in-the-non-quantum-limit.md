@@ -109,14 +109,14 @@ That determination is the mass's statement. The only other place $\varrho$ appea
 
 The two transports are untouched, and the asymmetry is the limit's structure. The phase's transport and the frame's transport keep the terms the table marks and lose the deleted block's contribution, and both remain equations of motion. So the truncation moves the transports and leaves the constraint, and the deleted block is the only place where the two kinds of equation were mixed.
 
-It is not a gauge condition: the mass term breaks the local invariance of the field the amplitude multiplies, so the constraint pairs with the inherited gauge condition rather than generating a transformation, and the count falls by one pair. It is not a Gauss law either, since no connection equation is varied in this limit, and the section claims neither.
+It is not a fixing condition: the mass term breaks the local invariance of the field the amplitude multiplies, so the constraint pairs with the inherited fixing condition rather than generating a transformation, and the count falls by one pair. It is not a Gauss law either, since no connection equation is varied in this limit, and the section claims neither.
 
 ## The Structural Consequence: The Coupling Reaches the Constraint and Not the Mass
 Two brackets out of four, and the two are the ones that matter. The potential is central with a temporal and a spatial slot, so it enters the amplitude's covariant derivative and the frame's transport. It does not enter the mass block, which is a function of $\varrho$ and the frame alone, and it does not enter the rotor, which is a real vector part.
 
 The Lorenz condition is covariantised, because it is the scalar part of a covariant divergence; the mass shell is not, because the mass term is unchanged; and the spin direction is not, because the connection cannot reach it. Those three statements are the article's ledger, and they are exact: no approximation enters, since the coupling is a substitution in the derivative.
 
-Set the connection to a pure gradient, $\tilde A_\Phi=\partial\Lambda$. The covariant derivative shifts by a central element, the field strength is unchanged, and the constraint's scalar part is unchanged, because the extra term is a divergence. The mass block never sees the connection at all. So the gauge orbit is a direction in which only the phase moves, and the structural three-way split is visible in one choice.
+Set the connection to a pure gradient, $\tilde A_\Phi=\partial\Lambda$. The covariant derivative shifts by a central element, the field strength is unchanged, and the constraint's scalar part is unchanged, because the extra term is a divergence. The mass block never sees the connection at all. So the orbit is a direction in which only the phase moves, and the structural three-way split is visible in one choice.
 ## The Noether Currents: The Conserved Charge of the Coupled Chart
 **The charge exists once the potential is complex.** The free Proca field has no phase symmetry; the coupled one does, because the potential is complex and the phase rotation is compensated by the connection. So the charge appears with the coupling and not before it, and its density is the phase's conjugate momentum,
 

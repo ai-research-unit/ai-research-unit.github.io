@@ -8,7 +8,7 @@ $$
 \theta_{\mathrm{pha},AC} =\frac{2\pi}{h\,c^{2}}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot  d\vec r,
 $$
 
-which likewise depends on the path and the field but not on the speed at which the path is traversed. This is the **Aharonov–Casher (AC) effect**. The two effects have the same structure — a geometric phase from a gauge connection — with the electric displacement field and the magnetic dipole moment exchanged for the vector potential and the electric charge.
+which likewise depends on the path and the field but not on the speed at which the path is traversed. This is the **Aharonov–Casher (AC) effect**. The two effects have the same structure — a geometric phase from a connection — with the electric displacement field and the magnetic dipole moment exchanged for the vector potential and the electric charge.
 
 This article treats the AC effect in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles. The effect is standard and is reproduced exactly. What the framework contributes is the placement of the AC phase within the same algebraic structure as the geometric phases of spin:
 

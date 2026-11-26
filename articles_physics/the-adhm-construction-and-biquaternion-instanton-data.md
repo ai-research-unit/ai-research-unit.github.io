@@ -8,7 +8,7 @@
 
 The ADHM construction is unusual among the results of gauge theory in that its natural language is already the language of the framework. The self-duality equation on $\mathbb R^4$ is a *quaternionic* equation: $\mathbb R^4$ is identified with the real-quaternion subspace $\mathbb H_{\mathbb B}$, the four-dimensional rotation group is $SU(2)\times SU(2)$ acting by left and right quaternion multiplication, and a self-dual curvature is one whose components are holomorphic with respect to the quaternionic structure. The ADHM theorem states that the moduli space of self-dual connections on $\mathbb R^4$ is a quotient of a finite-dimensional quaternionic vector space by a $*$-unitary group, and the equations that define the quotient are the vanishing of the three components of a quaternionic moment map. This is the one place in the topological programme where the biquaternion algebra is not a convenient packaging of a complex construction but the construction's native field.
 
-The article proceeds in four steps. It writes the self-duality equation and identifies its quaternionic content; it states the ADHM equations and the quotient; it derives the dimension of the moduli space by counting the data, the constraints and the gauge redundancy, and checks the counting against the known cases; and it verifies the minimal ($k=1$) datum against the equations and against the BPST solution. It then separates the algebraic content from the analytic input, because the existence and completeness of the construction — that every self-dual connection arises this way and that the quotient is a manifold — are theorems of analysis, not identities of the algebra.
+The article proceeds in four steps. It writes the self-duality equation and identifies its quaternionic content; it states the ADHM equations and the quotient; it derives the dimension of the moduli space by counting the data, the constraints and the redundancy, and checks the counting against the known cases; and it verifies the minimal ($k=1$) datum against the equations and against the BPST solution. It then separates the algebraic content from the analytic input, because the existence and completeness of the construction — that every self-dual connection arises this way and that the quotient is a manifold — are theorems of analysis, not identities of the algebra.
 
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the instanton solutions and the topological charge.
 - Companion article *The Hopf Fibration and the Biquaternion Gauge Bundle*, for the boundary data and the structure group.
@@ -45,7 +45,7 @@ The practical consequence is that the data of a self-dual connection, being quat
 
 ## The ADHM Equations
 
-Let $k\ge1$ be the instanton number and let $N$ be the rank of the gauge group taken for the moment as $\mathrm{U}(N)$ or $SU(N)$; for the framework $N=2$. Introduce the data
+Let $k\ge1$ be the instanton number and let $N$ be the rank of the symmetry group taken for the moment as $\mathrm{U}(N)$ or $SU(N)$; for the framework $N=2$. Introduce the data
 
 $$
 B_1,B_2 \in \mathrm{End}(\mathbb C^k),
@@ -101,7 +101,7 @@ which is a pure-gauge-like expression in the $x$-dependent kernel; the self-dual
 
 ## The Dimension of the Moduli Space
 
-The dimension follows from counting the data, the constraints and the quotient — $4k^2+4kN$ real parameters, less $3k^2$ from the two equations, less $k^2$ from $\mathrm{U}(k)$; this is the general count of [The ADHM Construction and Instanton Moduli in Biquaternionic Form](the-adhm-construction-and-instanton-moduli-in-biquaternionic-form.html), and it leaves $4kN$. This agrees with the standard formula $\dim_{\mathbb R}\mathcal M_{\imath}=4k\,h^\vee$ for a simple group of dual Coxeter number $h^\vee$, since $h^\vee=N$ for $SU(N)$. For the framework's gauge factor $N=2$,
+The dimension follows from counting the data, the constraints and the quotient — $4k^2+4kN$ real parameters, less $3k^2$ from the two equations, less $k^2$ from $\mathrm{U}(k)$; this is the general count of [The ADHM Construction and Instanton Moduli in Biquaternionic Form](the-adhm-construction-and-instanton-moduli-in-biquaternionic-form.html), and it leaves $4kN$. This agrees with the standard formula $\dim_{\mathbb R}\mathcal M_{\imath}=4k\,h^\vee$ for a simple group of dual Coxeter number $h^\vee$, since $h^\vee=N$ for $SU(N)$. For the framework's group factor $N=2$,
 
 $$
 \boxed{\;\dim_{\mathbb R}\mathcal M_{\imath} = 8k ,
@@ -188,7 +188,7 @@ $$
 
 modulo the $\mathrm{U}(k)$ action. The equations are the vanishing of a quaternionic moment map, and the quotient is the hyperkähler quotient $\mathcal M_{\imath}=\mu^{-1}(0)/\mathrm{U}(k)$.
 
-Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal M_{\imath}=8k$ in the framework's two-dimensional-module convention, with $\dim_{\mathbb R}\mathcal M_{\imath}^{\text{physical}}=8k-3$ after removing the global $SU(2)$; $k=1$ reproduces the five moduli of BPST. The minimal datum $B_1=B_2=0$, $I=(\rho,0)$, $J=(0,\rho)^T$ satisfies both ADHM equations exactly and reconstructs the BPST solution. The quaternionic line, the moment map and the quotient are the framework's own structures; the ADHM existence and completeness theorems and the reconstruction formula are standard results transcribed. The obstruction carried by the commutator $[B_1,B_2]$ is the interaction between instantons, and for $k>1$ it lives in the enlarged matrix carrier rather than in a single biquaternion.
+Counting data, constraints and redundancy gives $\dim_{\mathbb R}\mathcal M_{\imath}=8k$ in the framework's two-dimensional-module convention, with $\dim_{\mathbb R}\mathcal M_{\imath}^{\text{physical}}=8k-3$ after removing the global $SU(2)$; $k=1$ reproduces the five moduli of BPST. The minimal datum $B_1=B_2=0$, $I=(\rho,0)$, $J=(0,\rho)^T$ satisfies both ADHM equations exactly and reconstructs the BPST solution. The quaternionic line, the moment map and the quotient are the framework's own structures; the ADHM existence and completeness theorems and the reconstruction formula are standard results transcribed. The obstruction carried by the commutator $[B_1,B_2]$ is the interaction between instantons, and for $k>1$ it lives in the enlarged matrix carrier rather than in a single biquaternion.
 
 ## Summary of Notation
 

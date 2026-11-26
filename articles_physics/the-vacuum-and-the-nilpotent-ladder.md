@@ -750,7 +750,7 @@ The reading gives the bundle's fibre a physical content and closes the entry's c
 
 The duality rotation is a symmetry and not a change of element. The transformation preserves both nullness conditions, so it stays on the stratum; and it changes the element, so it is not a redundancy. That combination is exactly what a fibre coordinate is: a parameter that moves within a set of distinct elements which the stratum treats alike.
 
-The boundary. The duality angle is a rotation of the field pair and not a phase of a wave function. Nothing here is a $U(1)$ gauge freedom, and no charge is associated with it.
+The boundary. The duality angle is a rotation of the field pair and not a phase of a wave function. Nothing here is a $U(1)$ redundancy, and no charge is associated with it.
 
 ### I.10.az — Nullness Is Not Radiation
 

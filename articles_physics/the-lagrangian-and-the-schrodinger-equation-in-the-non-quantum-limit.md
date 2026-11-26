@@ -15,7 +15,7 @@ The action below is the central field's, $\theta_{\mathrm{rpd}}=0$ and $\tilde u
 
 The parent proves that on the central field the cross term of the general action vanishes identically, so the central case cannot detect an error in it: *every statement about the central field in that section would survive the error of dropping the cross term*. The limit inherits the blindness, and it is harmless here for a reason worth one sentence: the limit is defined on the central class, so a term that vanishes identically there cannot enter the truncated action at any order.
 
-The parent's action splits into orders $0$ and $2$ and no term of order $1$. The single order-$2$ term is the scale's gradient, which is the quantum potential's origin. Its deletion leaves an action whose variation with respect to the scale is the eikonal and whose variation with respect to the phase is the transport equation, the second of which is unchanged by the deletion. The truncated action is gauge invariant under a constant phase shift and is the fluid action of a potential flow. What the route does not supply is the size of the discarded term, which is the companion's subject.
+The parent's action splits into orders $0$ and $2$ and no term of order $1$. The single order-$2$ term is the scale's gradient, which is the quantum potential's origin. Its deletion leaves an action whose variation with respect to the scale is the eikonal and whose variation with respect to the phase is the transport equation, the second of which is unchanged by the deletion. The truncated action is invariant under a constant phase shift and is the fluid action of a potential flow. What the route does not supply is the size of the discarded term, which is the companion's subject.
 
 What is not new. That the semiclassical limit of a wave equation is a truncation of its action, that the leading-order action is the Hamilton–Jacobi action, and that the transport equation is its phase variation are standard results of semiclassical mechanics. Added here: the identification of the deleted term with one factor of the complete polar decomposition, the exact statement that the phase variation is invariant under the deletion, and the reading of the truncated action as a pressureless fluid's.
 ## Conventions
@@ -131,7 +131,7 @@ That constraint is the truncated Hamiltonian. It relates the amplitude to the ph
 
 The quantum potential is the deleted block, so restoring it restores the scale's rate and the equation becomes an evolution equation again. The presence of the constraint is the exact marker of the truncation, and a computation that finds the amplitude propagating has kept the term.
 
-What it is not. It is not a gauge condition, since the invariance here is global, and it is not a Gauss law, since no connection equation is varied. The phase's transport is untouched by the deletion, and that asymmetry is what the structural consequence records.
+What it is not. It is not a fixing condition, since the invariance here is global, and it is not a Gauss law, since no connection equation is varied. The phase's transport is untouched by the deletion, and that asymmetry is what the structural consequence records.
 
 ## The Structural Consequence: Varying the Phase: the Transport, Unchanged
 The phase's variation, on the truncated action.
@@ -154,7 +154,7 @@ Varying the scale returns the constraint, which is the deleted order's equation;
 
 A fluid of density $\varrho^{2}$ and velocity $\vec\nabla_\Phi S/m$, irrotational because the velocity is a gradient, with no pressure and with a body force $-\vec\nabla_\Phi V_{\mathrm{op}}$. Its two equations are the two the limit produces, and the deleted term is exactly the pressure: $-\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ is the internal energy of a fluid whose pressure potential is the quantum potential, since $\frac{hc}{8\pi^{2}\nu_m}\lvert\vec\nabla_\Phi\ln \varrho\rvert^{2}$ differentiated gives the quantum force.
 
-A constant shift $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\theta_{0}$ leaves the truncated action invariant, because only the derivative appears. A shift depending on position does not, because the kinetic term is not invariant under it; the action is not gauge invariant and the free Schrödinger equation is not either. The truncation therefore preserves exactly the symmetry the parent's action has, and no symmetry is broken or gained by the deletion.
+A constant shift $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\theta_{0}$ leaves the truncated action invariant, because only the derivative appears. A shift depending on position does not, because the kinetic term is not invariant under it; the action is not invariant and the free Schrödinger equation is not either. The truncation therefore preserves exactly the symmetry the parent's action has, and no symmetry is broken or gained by the deletion.
 ## The Noether Currents: Density, Charge and Energy
 The phase's momentum is the density,
 $$

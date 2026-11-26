@@ -107,7 +107,7 @@ The rotor is constant at a mode, so the spin direction is constant, so a mode do
 
 The consequence in fluid words is a missing equation. The spin-half fluid's transport law is a statement about how $\vec s$ turns along the flow, and at a mode the flow's parameter is the phase's and the turning is zero: **a mode has no spin transport to write**, and the transport law is an equation on the off-diagonal part of the field in the momentum space. That is the same structure as the vorticity's, one factor over.
 
-The spin direction is gauge invariant and the vorticity is not, and the modes do not see the difference. At this rung there is no gauge freedom and the distinction is empty; at the charged rung it is not, and the companion's finding is that the phase cannot rotate the rotor. The pattern is fixed at the free rung: both the spin and the vorticity are read from brackets a mode holds constant, so both are off-diagonal in the momentum space, and the two differ only in what a connection can do to them.
+The spin direction is invariant and the vorticity is not, and the modes do not see the difference. At this rung there is no redundancy and the distinction is empty; at the charged rung it is not, and the companion's finding is that the phase cannot rotate the rotor. The pattern is fixed at the free rung: both the spin and the vorticity are read from brackets a mode holds constant, so both are off-diagonal in the momentum space, and the two differ only in what a connection can do to them.
 
 ## What the Transform Leaves of the Word
 

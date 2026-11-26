@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion articles *The Gauge Principle in Biquaternionic Form* and *The Covariant Derivative and Gauge Connection in Biquaternionic Form* obtain the gauge connection by localising a central phase, and *Non-Abelian Gauge Fields in Biquaternionic Form* extends the construction to the compact factor $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$. All three treat the connection as a field on a fixed background. This article supplies the geometric object that underlies them: the **principal bundle**. Its claim is sharp and, for this framework, not merely formal. The unit sphere of the biquaternion algebra does not *carry* the Hopf fibration; it *is* the total space of the Hopf fibration, and the Hopf fibration is the simplest nontrivial principal bundle. For the compact factor, the gauge bundle is therefore one of the algebra's own level sets, not an object imported from topology.
+The companion articles *The Gauge Principle in Biquaternionic Form* and *The Covariant Derivative and Gauge Connection in Biquaternionic Form* obtain the connection by localising a central phase, and *Non-Abelian Gauge Fields in Biquaternionic Form* extends the construction to the compact factor $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$. All three treat the connection as a field on a fixed background. This article supplies the geometric object that underlies them: the **principal bundle**. Its claim is sharp and, for this framework, not merely formal. The unit sphere of the biquaternion algebra does not *carry* the Hopf fibration; it *is* the total space of the Hopf fibration, and the Hopf fibration is the simplest nontrivial principal bundle. For the compact factor, the gauge bundle is therefore one of the algebra's own level sets, not an object imported from topology.
 
 The Hopf fibration is the map
 
@@ -20,7 +20,7 @@ which sends a unit quaternion to a unit pure-imaginary quaternion. Its fibres ar
 
 The article proceeds by deriving each of these interpretations and then stating exactly what the algebra supplies and what it does not. The distinction is kept visible throughout: the total space, the base, the fibre, the classifying integer and the local connection are all objects of the framework; the quantisation of the abelian charge in units of $\frac{h}{2\pi}$ and the assignment of a dynamics to the connection are imported, because the algebra is a complexified classical structure.
 
-- Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge connection and the covariant derivative.
+- Companion article *The Gauge Principle in Biquaternionic Form*, for the connection and the covariant derivative.
 - Companion article *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, for the non-abelian connection.
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the instanton boundary map.
 - Companion article *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the structure group and its ceiling.
@@ -178,11 +178,11 @@ $$
 \mathcal f = d\mathcal a = i F\;},
 $$
 
-which is exactly the abelian connection of *The Gauge Principle in Biquaternionic Form*, whose coefficients are central and whose curvature is central and gauge invariant. The Hopf connection is therefore not merely analogous to the framework's abelian connection; it is that connection in the sector where the base is the idempotent sphere. The real one-form $a$ has a single real coefficient and enters the algebra through the central generator $ie_t$, while the fibre direction it is dual to is the stabiliser direction $\vec e_z$; the gauge transformation $a\mapsto a+d\xi$ is the change of local trivialisation of the bundle.
+which is exactly the abelian connection of *The Gauge Principle in Biquaternionic Form*, whose coefficients are central and whose curvature is central and invariant. The Hopf connection is therefore not merely analogous to the framework's abelian connection; it is that connection in the sector where the base is the idempotent sphere. The real one-form $a$ has a single real coefficient and enters the algebra through the central generator $ie_t$, while the fibre direction it is dual to is the stabiliser direction $\vec e_z$; the local transformation $a\mapsto a+d\xi$ is the change of local trivialisation of the bundle.
 
 ## The Non-Abelian Reading and the Instanton Boundary
 
-The same total space, regarded as $SU(2)$ rather than as a $\mathrm{U}(1)$-bundle over $S^2$, is the compact factor of the non-abelian gauge theory, and its third homotopy group classifies the instanton sector. The two interpretations are different bundle structures on the same manifold: the abelian structure uses the fibration $S^3\to S^2$, the non-abelian one uses $S^3$ as the structure group itself.
+The same total space, regarded as $SU(2)$ rather than as a $\mathrm{U}(1)$-bundle over $S^2$, is the compact factor of the Yang–Mills theory, and its third homotopy group classifies the instanton sector. The two interpretations are different bundle structures on the same manifold: the abelian structure uses the fibration $S^3\to S^2$, the non-abelian one uses $S^3$ as the structure group itself.
 
 The connection between them is the **boundary behaviour of a finite-action gauge field**. A finite-action connection on $\mathbb R^4$ must approach a pure gauge at infinity, $\mathcal A_{\imath}\to \tilde U^{-1}\partial/\partial x_{\imath} \tilde U$ with $\tilde U\in SU(2)$, and the one-point compactification of $\mathbb R^4$ is $S^4$. The field is then a connection on a bundle over $S^4$, and its restriction to a small three-sphere around the point at infinity is a map
 
@@ -210,7 +210,7 @@ where $\omega$ is the area form of the base normalised so that $\int_{S^2}\omega
 
 Two geometric interpretations of $H$ connect it to the rest of the article. First, $H$ is the **linking number** of two generic fibres: the preimages of two distinct base points are two circles in $S^3$, and their linking number is $H$. The fibres are the algebra's $\mathrm{U}(1)$ cosets, so the linking number of two such cosets is the same integer that classifies the bundle. Second, $H$ is the **instanton number of the associated boundary map**: with the instanton boundary data of the next section, the winding of $g_\infty:S^3\to SU(2)$ and the Hopf invariant of the composite $S^3\to SU(2)\to S^2$ are locked together, and both equal the topological charge. In the higher Hopf maps $H>1$, the configuration is a multiply wound fibration; the series of Hopf maps therefore supplies a family of configurations simultaneously in $\pi_2(S^2)$ and $\pi_3(S^2)$.
 
-It is worth keeping the three homotopy groups distinct, since the framework uses all three. The group $\pi_2(S^2)=\mathbb Z$ classifies the **topological charge**, the degree of the map $\vec u_x\mapsto\mathrm{hopf}$ from the sphere at infinity; the group $\pi_3(S^3)=\pi_3(SU(2))=\mathbb Z$ classifies the **instanton charge**, the winding of the gauge transformation at the boundary of $\mathbb R^4$; and the group $\pi_3(S^2)=\mathbb Z$ classifies the **Hopf invariant** of the fibration itself, which is the linking of its fibres. In the Hopf bundle all three are available at once, and for the minimal configuration all three equal one: one unit of charge for the abelian bundle, one unit of instanton winding for the non-abelian boundary map, and one unit of Hopf invariant for the linking of the fibres. That triple coincidence is the article's structural statement in its sharpest form.
+It is worth keeping the three homotopy groups distinct, since the framework uses all three. The group $\pi_2(S^2)=\mathbb Z$ classifies the **topological charge**, the degree of the map $\vec u_x\mapsto\mathrm{hopf}$ from the sphere at infinity; the group $\pi_3(S^3)=\pi_3(SU(2))=\mathbb Z$ classifies the **instanton charge**, the winding of the local transformation at the boundary of $\mathbb R^4$; and the group $\pi_3(S^2)=\mathbb Z$ classifies the **Hopf invariant** of the fibration itself, which is the linking of its fibres. In the Hopf bundle all three are available at once, and for the minimal configuration all three equal one: one unit of charge for the abelian bundle, one unit of instanton winding for the non-abelian boundary map, and one unit of Hopf invariant for the linking of the fibres. That triple coincidence is the article's structural statement in its sharpest form.
 
 ## The Associated Vector Bundle and the Defining Module
 
@@ -220,13 +220,13 @@ $$
 P\times_\rho V \;=\; (P\times V)\big/\{(Ug,v)\sim(\tilde U,\rho(g)v)\} .
 $$
 
-For the compact factor $SU(2)\subset\mathbb H_{\mathbb B}$ the fundamental representation is the defining two-dimensional module $S\cong\mathbb C^2$ of the algebra, and by *The Element and Operator Representations* the algebra acts on $S$ as $\mathbb B\cong M_2(\mathbb C)=\mathrm{End}(S)$. The associated bundle is therefore the **spinor bundle** of the framework, whose sections are the two-component objects of *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The gauge connection is a connection on $P$; it induces a covariant derivative on sections of the associated bundle by
+For the compact factor $SU(2)\subset\mathbb H_{\mathbb B}$ the fundamental representation is the defining two-dimensional module $S\cong\mathbb C^2$ of the algebra, and by *The Element and Operator Representations* the algebra acts on $S$ as $\mathbb B\cong M_2(\mathbb C)=\mathrm{End}(S)$. The associated bundle is therefore the **spinor bundle** of the framework, whose sections are the two-component objects of *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The connection is a connection on $P$; it induces a covariant derivative on sections of the associated bundle by
 
 $$
 D_{\imath} \tilde{Ξ} = \partial/\partial x_{\imath}\tilde{Ξ} + i\kappa\,\mathcal A_{\imath}\tilde{Ξ} ,
 $$
 
-which is the covariant derivative of *Non-Abelian Gauge Fields in Biquaternionic Form*. The bundle-theoretic derivation of the covariant derivative — a connection is needed so that the comparison of neighbouring fibres is meaningful — is the geometric form of the gauge principle, and the algebra supplies the module on which it acts.
+which is the covariant derivative of *Non-Abelian Gauge Fields in Biquaternionic Form*. The bundle-theoretic derivation of the covariant derivative — a connection is needed so that the comparison of neighbouring fibres is meaningful — is the geometric form of the minimal coupling, and the algebra supplies the module on which it acts.
 
 The associated bundle picture fixes why the abelian and non-abelian cases of the framework differ as they do. A central connection acts on the module through scalar multiplication, so its curvature is inert; a connection in $\mathrm{SU}(2)$ acts through the adjoint action on the module, so its curvature transforms in the adjoint and is not invariant. The difference is the difference between the fibre $\mathrm{U}(1)$ of the Hopf fibration and the structure group $SU(2)$ of which that fibre is a subgroup.
 
@@ -236,11 +236,11 @@ The article's structural result is best stated as a division.
 
 - **Algebraic, and derived here.** The total space $S^3$ is the biquaternion-norm level set of $\mathbb H_{\mathbb B}$; the base $S^2$ is the Hermitian idempotent sphere of $\mathbb{B}_{\Psi}$; the fibre is the stabiliser $\mathrm{U}(1)_{\vec e_z}\subset SU(2)\subset\mathbb H_{\mathbb B}$, which is isomorphic to, but distinct from, the centre's unit circle $\mathrm{U}(1)_{\mathbb C_{\mathbb B}}\subset\mathbb C_{\mathbb B}$; the Hopf map is the adjoint action $\tilde U\mapsto U\vec e_z\bar{\tilde U}$; the transition function and its winding are computed from the algebra; the first Chern number is one; and the local connection is the abelian connection of *The Gauge Principle in Biquaternionic Form*, with curvature $iF$. The instanton boundary map is in $SU(2)\subset\mathbb H_{\mathbb B}$ and its winding is $\pi_3(SU(2))=\mathbb Z$. None of these is imported.
 - **Standard topology, transcribed.** The classification of principal bundles by homotopy classes of maps into the classifying space, the Chern–Weil construction of characteristic classes, and the existence of the invariant connection are standard results of fibre-bundle theory; the article uses them rather than deriving them. The Hopf bundle's nontriviality and $c_1=1$ are classical.
-- **Imported from physics.** The identification of the Chern number with an electric or magnetic charge requires the electromagnetic coupling; the quantisation in units of $\frac{h}{2\pi}$, the dynamical action, and the identification of the connection with a physical vector potential are quantum-mechanical and dynamical inputs. The algebra is a classical complexified structure and contains no $\frac{h}{2\pi}$; it supplies the home of the gauge freedom, and quantum physics supplies the quantum.
+- **Imported from physics.** The identification of the Chern number with an electric or magnetic charge requires the electromagnetic coupling; the quantisation in units of $\frac{h}{2\pi}$, the dynamical action, and the identification of the connection with a physical vector potential are quantum-mechanical and dynamical inputs. The algebra is a classical complexified structure and contains no $\frac{h}{2\pi}$; it supplies the home of the redundancy, and quantum physics supplies the quantum.
 
 ## Summary
 
-The unit sphere of the biquaternion algebra is the total space of the Hopf fibration. Read as real quaternions it is $SU(2)=S^3$; read as the base of the adjoint action it is the idempotent sphere $S^2=\{\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)\}\subset\mathbb{B}_{\Psi}$; and the fibre is the stabiliser $\mathrm{U}(1)_{\vec e_z}$ generated by $\vec e_z$, a maximal torus of the compact factor and the abelian gauge group of the companion articles. This circle is the diagonal torus $\{\mathrm{diag}(\exp(i\theta_{\mathrm{gau}}),\exp(-i\theta_{\mathrm{gau}}))\}$ and is distinct from the unit circle of the centre, the scalar circle $\{\mathrm{diag}(\exp(i\theta_{\mathrm{gau}}),\exp(i\theta_{\mathrm{gau}}))\}$; the two meet only in $\{\pm e_t\}$, and it is the central circle that supplies the coefficient $i$ of the abelian connection. The Hopf map
+The unit sphere of the biquaternion algebra is the total space of the Hopf fibration. Read as real quaternions it is $SU(2)=S^3$; read as the base of the adjoint action it is the idempotent sphere $S^2=\{\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)\}\subset\mathbb{B}_{\Psi}$; and the fibre is the stabiliser $\mathrm{U}(1)_{\vec e_z}$ generated by $\vec e_z$, a maximal torus of the compact factor and the abelian symmetry group of the companion articles. This circle is the diagonal torus $\{\mathrm{diag}(\exp(i\theta_{\mathrm{gau}}),\exp(-i\theta_{\mathrm{gau}}))\}$ and is distinct from the unit circle of the centre, the scalar circle $\{\mathrm{diag}(\exp(i\theta_{\mathrm{gau}}),\exp(i\theta_{\mathrm{gau}}))\}$; the two meet only in $\{\pm e_t\}$, and it is the central circle that supplies the coefficient $i$ of the abelian connection. The Hopf map
 
 $$
 \boxed{\;\pi(\tilde U)=\tilde U \vec e_z\bar{\tilde U}\;}
@@ -258,14 +258,14 @@ The same manifold, read as the structure group $SU(2)$, classifies the instanton
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_{\imath}^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace |
-| $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ | Centre; abelian gauge factor |
+| $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ | Centre; abelian group factor |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian (informational) and anti-Hermitian (material) sectors |
 | $S^3=\{\tilde U\in\mathbb H_{\mathbb B}:\tilde U\bar{\tilde U}=e_t\}$ | Unit real quaternions $=SU(2)=$ Hopf total space |
 | $S^2=\{\vec u\in\mathbb H_{\mathbb B}:\vec u^2=-e_t\}$ | Unit pure-imaginary sphere $=$ Hermitian idempotent sphere of $\mathbb{B}_{\Psi}$ |
 | $\tilde\Pi_{\mathrm{id}}(\vec u)=\tfrac12(e_t+i\vec u)$ | Idempotent of $\mathbb{B}_{\Psi}$ associated with $\vec u$ |
 | $\pi(\tilde U)=U\vec e_z\bar{\tilde U}$ | Hopf map $S^3\to S^2$ |
 | $\mathrm{Stab}(\vec e_z)=\mathrm{U}(1)_{\vec e_z}=\{\cos\alpha\,e_t+\sin\alpha\,\vec e_z\}$ | Fibre of $\pi$; maximal torus of $SU(2)$ generated by $\vec e_z$ |
-| $\mathrm{U}(1)_{\mathbb C_{\mathbb B}}=\{\exp(i\theta_{\mathrm{gau}})e_t\}$ | Unit circle of the centre; abelian gauge factor, distinct from $\mathrm{Stab}(\vec e_z)$ |
+| $\mathrm{U}(1)_{\mathbb C_{\mathbb B}}=\{\exp(i\theta_{\mathrm{gau}})e_t\}$ | Unit circle of the centre; abelian group factor, distinct from $\mathrm{Stab}(\vec e_z)$ |
 | $g_{SN}(\theta_{\mathrm{azm}})=\exp(\theta_{\mathrm{azm}} \vec e_z)$ | Transition function of the Hopf bundle, winding one |
 | $a=\tfrac12(1-\cos\theta)d\theta_{\mathrm{azm}}$ | Invariant local connection one-form |
 | $F=da=\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$ | Curvature; $\int_{S^2}F=2\pi$, $c_1=1$ |

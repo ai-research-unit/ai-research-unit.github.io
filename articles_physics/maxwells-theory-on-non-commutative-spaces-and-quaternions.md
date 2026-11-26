@@ -214,7 +214,7 @@ $$
 T_{\mathrm{can},\imath\jmath} = (\partial A_\alpha/\partial x_{\jmath})\frac{\partial\mathcal L}{\partial(\partial A_\alpha/\partial x_{\imath})} - \delta_{\imath\jmath}\mathcal L,
 $$
 
-is conservative, $\partial/\partial x_{\imath} T_{\mathrm{can},\imath\jmath}=0$. To reach a gauge-invariant tensor one adds a term $\Lambda_{\imath\jmath}$ with $\partial/\partial x_{\imath}\Lambda_{\imath\jmath}=0$; the source's choice is
+is conservative, $\partial/\partial x_{\imath} T_{\mathrm{can},\imath\jmath}=0$. To reach an invariant tensor one adds a term $\Lambda_{\imath\jmath}$ with $\partial/\partial x_{\imath}\Lambda_{\imath\jmath}=0$; the source's choice is
 
 $$
 \Lambda_{\imath\jmath} = -(\partial A_{\jmath}/\partial x_\alpha)\frac{\partial\mathcal L}{\partial(\partial A_\alpha/\partial x_{\imath})},

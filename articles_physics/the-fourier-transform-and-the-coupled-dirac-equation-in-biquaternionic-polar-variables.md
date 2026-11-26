@@ -6,7 +6,7 @@ In momentum space the coupled Dirac equation separates into two things: what eve
 
 The kinetic term and the mass term are both diagonal in momentum, in every setting. The kinetic term is diagonal because a derivative is a multiplier at each wave number, and that is a property of the derivative and not of the coefficients. The mass term is diagonal in momentum and off-diagonal in the part label, because it is a constant central coefficient multiplying one part into the other. **The coupling is the only source of mode mixing**, and it mixes exactly when $\tilde A_\Phi$ depends on position.
 
-The second half of the finding is about gauge freedom. A gauge transformation with a linear phase moves the support of a mode and leaves its count alone; anything else re-superposes the modes. Gauge freedom is therefore the only rearrangement of the mixing that leaves the equation fixed, and it removes the mixing exactly when the connection is a pure gradient. The parent's two settings are the two cases of that one distinction: a connection that is a gradient and a connection that carries a curvature.
+The second half of the finding is about redundancy. A local transformation with a linear phase moves the support of a mode and leaves its count alone; anything else re-superposes the modes. Redundancy is therefore the only rearrangement of the mixing that leaves the equation fixed, and it removes the mixing exactly when the connection is a pure gradient. The parent's two settings are the two cases of that one distinction: a connection that is a gradient and a connection that carries a curvature.
 
 The polar reading is a per-mode reading, and that is a statement about the word. A mode has one wave number, so its word has four constants and no momentum dependence. A superposition has no single word. This is why the coupling's mixing is invisible to any one word: what mixes is the sum, and the word describes one term of the sum.
 
@@ -88,7 +88,7 @@ What the mixing does to the spectrum is a relocation of weight. Each occupied mo
 
 ## Gauge Freedom and the Two Settings
 
-Gauge freedom is the only rearrangement that leaves the equation fixed. The parent's transformation moves $\tilde\Xi$ by a central phase and $\tilde A_\Phi$ by a gradient, and the pair is form-invariant. In the word it moves $\theta_{\mathrm{pha}}$ and nothing else. In momentum space it moves the support, and how it moves it depends on one property of $\Gamma$.
+Redundancy is the only rearrangement that leaves the equation fixed. The parent's transformation moves $\tilde\Xi$ by a central phase and $\tilde A_\Phi$ by a gradient, and the pair is form-invariant. In the word it moves $\theta_{\mathrm{pha}}$ and nothing else. In momentum space it moves the support, and how it moves it depends on one property of $\Gamma$.
 
 A linear gauge phase translates. With $\theta_{\mathrm{gau}}$ linear, the multiplication is a translation of the support by $\vec\nabla_\Phi\theta_{\mathrm{gau}}$, so the count of occupied modes is preserved and each mode keeps its amplitude up to the phase. The parent's constant-potential case is exactly this: the gauge that removes a constant connection is linear in $\Gamma$, and it acts on a plane wave by multiplication.
 
@@ -98,7 +98,7 @@ A non-linear gauge phase re-superposes. With $\theta_{\mathrm{gau}}$ quadratic t
 
 The two settings of the parent are the two cases of that distinction. The constant potential, solved in closed form, is the zero-curvature case: its connection is a gradient and its mixing is removable. The general static connection, whose constants of motion the parent lists, is the case in which the curvature need not vanish. The check is one line on each side: on a $32\times32$ grid of spacing $0.05$ the curvature component was $0.0\times10^{0}$ for a constant $\tilde A_t$ and $0.9$ for $\tilde A_t=i\,0.9\,x$.
 
-So "gauge freedom is the only source of mode mixing" has a precise reading. Every mixing pattern that a gauge transformation can remove is removed exactly when the curvature vanishes; the remainder is not a gauge artefact and no $\Gamma$ touches it. The sentence is not a claim that gauge freedom produces observable mixing, which it cannot, but that it is the only operation which changes the mixing without changing the equation.
+So "redundancy is the only source of mode mixing" has a precise reading. Every mixing pattern that a local transformation can remove is removed exactly when the curvature vanishes; the remainder is not a gauge artefact and no $\Gamma$ touches it. The sentence is not a claim that redundancy produces observable mixing, which it cannot, but that it is the only operation which changes the mixing without changing the equation.
 
 What the polar variables add to that sentence is where the change lands. A gauge transformation moves the angle, so the momentum-space translation it induces is a translation of the label; the amplitude's scale, boost and rotor are untouched. That is the same type table as §*The Word of a Mode*, read now as a statement about a symmetry rather than about a background.
 
@@ -108,13 +108,13 @@ Constant coefficients, and the licence's reach. The momentum-space reading needs
 
 The abelian component form. The parent separates the covariant derivative into components because the coefficients $A_{\imath}$ are central scalars. A non-abelian connection would add a commutator, the momentum-space coupling would not be a convolution of the field with a kernel alone, and the count of mixed modes would not be a property of one profile.
 
-The companion's question is the order, and it is not this article's. *The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Form* classifies the coupling as a multiplier, a first-order operator or a convolution, and shows that the rung of that ladder is gauge-dependent while its floor is not. A count of occupied modes and an order of an operator are different measurements: a first-order operator can leave a mode count at one for a suitable profile, and a multiplier can spread a mode if it is a distribution. The two articles agree at the constant case and separate everywhere else.
+The companion's question is the order, and it is not this article's. *The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Form* classifies the coupling as a multiplier, a first-order operator or a convolution, and shows that the rung of that ladder is representative-dependent while its floor is not. A count of occupied modes and an order of an operator are different measurements: a first-order operator can leave a mode count at one for a suitable profile, and a multiplier can spread a mode if it is a distribution. The two articles agree at the constant case and separate everywhere else.
 
 The denial, once more. Every object above is an element of $\mathbb{B}$ or a coefficient of one. No step carries a field out of its sector, and the transform's amplitude at a wave number is the same eight real numbers at a point that the field had at an event, resummed.
 
 ## Open Questions
 
-One question is left open: whether the mixing count has a gauge-invariant refinement. The count of occupied modes depends on the basis and on the threshold, and the curvature is the only invariant the article can point to. Whether some spectral measure of the mixing — a weight, a spread, a decay rate — is a function of the curvature alone, and not of the gauge, is not settled here; the linear case suggests it, because its $1/\Delta k$ envelope is the transform of a constant field strength and nothing else.
+One question is left open: whether the mixing count has an invariant refinement. The count of occupied modes depends on the basis and on the threshold, and the curvature is the only invariant the article can point to. Whether some spectral measure of the mixing — a weight, a spread, a decay rate — is a function of the curvature alone, and not of the gauge, is not settled here; the linear case suggests it, because its $1/\Delta k$ envelope is the transform of a constant field strength and nothing else.
 
 ## Summary
 
@@ -122,7 +122,7 @@ In momentum space a mode is a point and an element, and the element's word has f
 
 The coupling is the only source of mode mixing, and the mixing is the smoothness of the connection read in the mode basis. One mode in gave one mode out for a constant connection, seventeen for a smooth bump, sixty-three for a spike and all sixty-four for a linear one, whose envelope fell as $1/\Delta k$ with $\lvert G\rvert\cdot\lvert\Delta_\Phi\rvert=38.4$ to within $1.3\%$. A strong constant connection mixes nothing and a weak spiky one mixes everything.
 
-Gauge freedom is the only rearrangement that leaves the equation fixed, and it removes the mixing exactly when the connection is a pure gradient, which is exactly when the curvature vanishes: $0.0$ for a constant $\tilde A_t$ against $0.9$ for $\tilde A_t=i\,0.9x$. A linear gauge phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ translates the support and preserves the count; anything else re-superposes. The parent's two settings are the two cases of that one distinction.
+Redundancy is the only rearrangement that leaves the equation fixed, and it removes the mixing exactly when the connection is a pure gradient, which is exactly when the curvature vanishes: $0.0$ for a constant $\tilde A_t$ against $0.9$ for $\tilde A_t=i\,0.9x$. A linear gauge phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ translates the support and preserves the count; anything else re-superposes. The parent's two settings are the two cases of that one distinction.
 
 ## Summary of Notation
 
@@ -135,7 +135,7 @@ Gauge freedom is the only rearrangement that leaves the equation fixed, and it r
 | $\nu_m^{2}-k^{2}$ | The determinant of the symbol; its zero is the shell |
 | $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ | The gauge angle |
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_\natural$ | The quaternionic norm; scale and angle |
-| $\tilde\Xi^{\natural}\tilde\Xi/N(\tilde\Xi)$ | The rotor read relative to the norm; gauge invariant |
+| $\tilde\Xi^{\natural}\tilde\Xi/N(\tilde\Xi)$ | The rotor read relative to the norm; invariant |
 | $\lvert G(k_0+\Delta_\Phi)\rvert\cdot\lvert\Delta_\Phi\rvert$ | The envelope of the linear connection's mixing |
 
 ## Further Reading

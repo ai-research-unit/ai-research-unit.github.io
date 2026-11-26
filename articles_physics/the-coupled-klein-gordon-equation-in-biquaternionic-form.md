@@ -80,7 +80,7 @@ $$
 A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Lambda .
 $$
 
-The field's factor is a central unit, so it multiplies the field on either side and the transformation is the localization of the centre's $\mathrm{U}(1)$ — the gauge principle article's construction, applied to a scalar.
+The field's factor is a central unit, so it multiplies the field on either side and the transformation is the localization of the centre's $\mathrm{U}(1)$ — the minimal coupling article's construction, applied to a scalar.
 
 **The first derivative is covariant, exactly.** With $D_{\imath}:=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ and the primed connection,
 
@@ -99,7 +99,7 @@ D_{\imath}'D_{\imath}'\big(e^{\frac{2\pi i\,ϙ\Lambda}{h}}\tilde\Xi\big)
 =e^{\frac{2\pi i\,ϙ\Lambda}{h}}D_{\imath} D_{\imath}\tilde\Xi ,
 $$
 
-because the two derivatives act on the same central unit and the cancellation of the gauge gradients repeats slot by slot. So $\Box_{\mathrm{gco},\Phi}$ is covariant, the mass term is invariant (two factors, opposite phases, both central), and the coupled equation is gauge covariant. The commutator of two covariant derivatives is the curvature,
+because the two derivatives act on the same central unit and the cancellation of the gauge gradients repeats slot by slot. So $\Box_{\mathrm{gco},\Phi}$ is covariant, the mass term is invariant (two factors, opposite phases, both central), and the coupled equation is covariant. The commutator of two covariant derivatives is the curvature,
 
 $$
 \big[D_{\imath},D_{\jmath}\big]=\frac{2\pi i\,ϙ}{h}\Big(\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}\Big)=\frac{2\pi i\,ϙ}{h}F_{\imath\jmath},
@@ -107,7 +107,7 @@ $$
 
 a multiplication by a scalar multiple of the identity, which is the abelian statement that the field strength carries no matrix.
 
-**What the covariance costs.** Nothing in the field's own data: the transformation touches the connection and the field's central phase and no other parameter. The polar companion states the same fact as the statement that the gauge group acts as the translation of one coordinate. The element form's statement is stronger in one respect and weaker in another: it holds for a general element with no restriction, and it says nothing about which coordinate is being translated.
+**What the covariance costs.** Nothing in the field's own data: the transformation touches the connection and the field's central phase and no other parameter. The polar companion states the same fact as the statement that the symmetry group acts as the translation of one coordinate. The element form's statement is stronger in one respect and weaker in another: it holds for a general element with no restriction, and it says nothing about which coordinate is being translated.
 
 ## The Covariant Square and What It Forbids
 
@@ -139,7 +139,7 @@ No central field is a solution of the covariant square's equation in a region of
 
 *Read the scalar projection.* Drop the vector part and keep the scalar equation $\sum_{\imath} D_{\imath}^{2}\xi=4\pi^{2}\nu_m^{2}\xi$, which is the standard charged Klein–Gordon equation for one complex scalar. This is a consistent equation and it is the standard theory; what it is not is the equation $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi$, which it does not satisfy.
 
-*Let the field leave the centre.* Keep the full equation in $\mathbb{B}$ and let the field acquire vector components. Then the equation is consistent and gauge covariant, and its four coefficients are coupled by $\tilde F$: the curvature term is pure vector, so it converts a scalar coefficient into vector coefficients and the reverse. That theory is not the standard one, because the standard charged scalar has one component and no curvature coupling.
+*Let the field leave the centre.* Keep the full equation in $\mathbb{B}$ and let the field acquire vector components. Then the equation is consistent and covariant, and its four coefficients are coupled by $\tilde F$: the curvature term is pure vector, so it converts a scalar coefficient into vector coefficients and the reverse. That theory is not the standard one, because the standard charged scalar has one component and no curvature coupling.
 
 **The check.** The identity was verified on a periodic lattice of $16^4$ points with a band-limited field and a periodic connection, in three configurations. With a constant connection — a pure gauge — the residual's vector part after subtracting the scalar equation is $5\times10^{-15}$ of the field, which is machine zero. With a constant field strength of magnitude $0.7$ in units of $ϙ$, with $2\pi\nu_m=1.3$, the scalar part of the residual equals $(\sum_{\imath} D_{\imath}^{2}-\nu_m^{2})\xi$ to $0.0$ and the vector part is nonzero and equal to $\frac{2\pi iϙ}{h}\xi\tilde F$ to $4\times10^{-15}$; the measured coefficient at a sampled point is $0.21+0.48i$ against a predicted $0.21+0.48i$. With a purely electric connection varying in space, the vector part appears along the direction of the electric field and nowhere else, again to $5\times10^{-15}$. The identity is exact and the numerical work only locates the terms.
 
@@ -181,7 +181,7 @@ whose Euler–Lagrange equation is E1. The two functionals differ by the off-dia
 
 **How large the difference is.** On a band-limited field with a periodic connection, $\sum_{\imath}\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\big]$ evaluates to $141.8$, the cross term to $-46.3$, and their sum to $95.5$, which is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi\big]$ to machine precision. So the two kinetic terms differ by a third of the value at this configuration — the difference is not a surface effect and not small. On a central field the cross term vanishes identically, and there the two actions agree; that is the free article's remark that the four copies are independent, read as a statement about the action.
 
-**What the two equations share.** Both are gauge covariant, both reduce to the free equation at $ϙ=0$, and both are second order. What separates them is that E2 is the standard theory and E1 is not, and the separating term is the field strength. The article states this as its second finding and does not present E1 as a rival with a claim to the same physics.
+**What the two equations share.** Both are covariant, both reduce to the free equation at $ϙ=0$, and both are second order. What separates them is that E2 is the standard theory and E1 is not, and the separating term is the field strength. The article states this as its second finding and does not present E1 as a rival with a claim to the same physics.
 
 ## The Field Equation and the Carrier
 
@@ -235,7 +235,7 @@ The right side is the equation's residual contracted with the field and projecte
 
 **The current picks the equation.** The right side contains $\Box_{\mathrm{gco},\Phi}$ and not $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$, so the conservation is a conservation for E2 and not for E1. That is a third, independent reason to prefer E2: the current that the phase symmetry supplies belongs to it. For E1 the same computation leaves the curvature behind, and the residual is $\frac{2\pi iϙ}{h}\tilde F\tilde\Xi$ rather than zero.
 
-**What the coupling repairs and what it does not.** The free current $\tilde J_\Phi$ is not gauge invariant: shifting the phase of the field by a function changes $\rho$ and $\vec j$ by terms in the gradient of the shift. The coupled current is gauge invariant, because every derivative in it is covariant and the field's factor cancels between the two terms. What the coupling does not repair is the sign: on the negative-frequency branch the temporal component is negative, exactly as in the free article, and no choice of connection changes that. The two defects of the free article therefore separate under the coupling — one is repaired, the other is a property of the carrier and stays.
+**What the coupling repairs and what it does not.** The free current $\tilde J_\Phi$ is not invariant: shifting the phase of the field by a function changes $\rho$ and $\vec j$ by terms in the gradient of the shift. The coupled current is invariant, because every derivative in it is covariant and the field's factor cancels between the two terms. What the coupling does not repair is the sign: on the negative-frequency branch the temporal component is negative, exactly as in the free article, and no choice of connection changes that. The two defects of the free article therefore separate under the coupling — one is repaired, the other is a property of the carrier and stays.
 
 **The factor.** The constant $1/(2\nu_m)$ is the free article's normalisation and it is a convention: it is chosen so that the current reduces to the free one at $ϙ=0$ with the free article's letters. Changing it rescales the current and changes nothing else. The article states the identity with the constant in place because the identity, not the constant, is the content.
 
@@ -259,7 +259,7 @@ where the proportionality is the normalisation of the field term, which the Maxw
 
 **The consistency condition is the conservation law.** The Maxwell article's equation has a scalar part, and the scalar part of $\tilde\nabla_\Phi\tilde F$ vanishes identically because $\tilde F$ is a pure vector and $\Box_\Phi$ is a scalar operator. So the source must satisfy $\mathrm{Sc}\big((\tilde\nabla_\Phi)^{\natural}\tilde J_\Phi^{\mathrm{(src)}}\big)=0$, which is the free article's form of the continuity equation, and the matter equation supplies exactly that. The two variations of one action are therefore mutually consistent, and the consistency is not an extra condition imposed on the system: it is the same statement as the current's conservation.
 
-**What this says about the coupling's existence.** A coupling between a charged field and a connection is possible exactly when the field has a conserved current, because the connection's equation must be integrable. The scalar field's current is its phase symmetry's, the symmetry exists because the algebra's centre is a $\mathrm{U}(1)$, and the coupling is the localization of that symmetry. The chain is the gauge principle article's, and the coupled Klein–Gordon article adds the one computation that the chain needs at second order: the current of the covariant equation is conserved.
+**What this says about the coupling's existence.** A coupling between a charged field and a connection is possible exactly when the field has a conserved current, because the connection's equation must be integrable. The scalar field's current is its phase symmetry's, the symmetry exists because the algebra's centre is a $\mathrm{U}(1)$, and the coupling is the localization of that symmetry. The chain is the minimal coupling article's, and the coupled Klein–Gordon article adds the one computation that the chain needs at second order: the current of the covariant equation is conserved.
 
 ## A Constant Background
 
@@ -282,7 +282,7 @@ the same shift the Proca companion records, and for the same reason: the tempora
 - One rule in place of four, with the relative signs of the scalar and vector potentials fixed by the metric and not chosen.
 - The exact split of the covariant square into the scalar d'Alembertian and the curvature, and with it the prohibition on central fields in a nonzero field strength.
 - The discrimination between the two coupled equations, which the free theory cannot make, with the action as the arbiter and the current as the second witness.
-- The gauge-invariant current, and its identification with the source of the connection's equation.
+- The invariant current, and its identification with the source of the connection's equation.
 - The carrier carried over without change: one complex function, one equation, one charge, so the free article's bookkeeping survives as it stands.
 
 **Does not add.**
@@ -296,7 +296,7 @@ the same shift the Proca companion records, and for the same reason: the tempora
 
 ## Open Questions
 
-**Whether E1's theory is admissible.** The equation $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi$ is consistent, gauge covariant and second order, and its four coefficients are coupled by the field strength. Whether it is a known theory under another name — a scalar with a Pauli-like coupling to the field strength, or a scalar in a higher representation — is not settled here. The article records the equation, the action that produces it, and the fact that it is not the standard theory, and stops there.
+**Whether E1's theory is admissible.** The equation $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi$ is consistent, covariant and second order, and its four coefficients are coupled by the field strength. Whether it is a known theory under another name — a scalar with a Pauli-like coupling to the field strength, or a scalar in a higher representation — is not settled here. The article records the equation, the action that produces it, and the fact that it is not the standard theory, and stops there.
 
 **The multiplicity of the coefficients.** The standard charged scalar has one complex component; the algebra's transcription has four, all with the same charge. Whether the framework intends the four as a physical multiplicity, as a polarization space that the equation does not constrain, or as an artefact of transcribing a scalar into an algebra built for spin is not answered by the equation and is not answered here.
 
@@ -323,7 +323,7 @@ $$
 
 and the difference is a pure vector, so a central field is forbidden wherever the field strength is nonzero. The article adopts the component equation, which is the action's, which decouples, and which the current belongs to; it records the algebra's alternative and does not adopt it.
 
-The current is $J_{\imath}=\frac{i}{4\pi\nu_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi-(\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi)^{*}\tilde\Xi\big)$, real, gauge invariant, and conserved by the identity $\partial_{\imath} J_{\imath}=-\frac{1}{2\pi\nu_m}\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2})\tilde\Xi]$. It is the source of the connection's equation, and its conservation is that equation's integrability condition. What the coupling repairs is the gauge dependence of the current; what it leaves is the sign of the density, which is the carrier's.
+The current is $J_{\imath}=\frac{i}{4\pi\nu_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi-(\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi)^{*}\tilde\Xi\big)$, real, invariant, and conserved by the identity $\partial_{\imath} J_{\imath}=-\frac{1}{2\pi\nu_m}\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2})\tilde\Xi]$. It is the source of the connection's equation, and its conservation is that equation's integrability condition. What the coupling repairs is the representative-dependent of the current; what it leaves is the sign of the density, which is the carrier's.
 
 ## Summary of Notation
 

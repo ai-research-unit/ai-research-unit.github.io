@@ -22,7 +22,7 @@ $$
 \tilde A_\Phi=i\,\frac{\omicron_{\mathrm{pot}}}{c}\,e_t+\vec A,
 $$
 
-with $\omicron_{\mathrm{pot}}$ the electric potential and $\vec A$ the vector potential, both real, and $ϙ$ the coupling the gauge principle introduces. The coupled equation is
+with $\omicron_{\mathrm{pot}}$ the electric potential and $\vec A$ the vector potential, both real, and $ϙ$ the coupling the minimal coupling introduces. The coupled equation is
 
 $$
 \boxed{\;i \frac{h}{2\pi}\,D_t\tilde\Xi=\frac{1}{2m}\sum_{\imath\in\{x,y,z\}}\big(-i \frac{h}{2\pi}\,D_{\imath}\big)^{2}\tilde\Xi,\;}
@@ -52,7 +52,7 @@ $$
 
 The two shifts are the canonical-to-kinetic dictionary of the older literature, and the polar companion reads them off the word. They are the only content of "minimal coupling" in a setting with no derivatives, and they are stated in §*The Constant Setting*.
 
-**What is not claimed.** No new prediction, no new solution, no new particle. The equation is the standard one of non-relativistic scalar electrodynamics, and its current, its gauge covariance and its non-relativistic limit are the standard ones. What the algebra contributes is that the coupling is one element rather than four rules, that the current is a bilinear of the algebra's own pairing, and that the sign bookkeeping of the two slots is the metric rather than a convention.
+**What is not claimed.** No new prediction, no new solution, no new particle. The equation is the standard one of non-relativistic scalar electrodynamics, and its current, its covariance and its non-relativistic limit are the standard ones. What the algebra contributes is that the coupling is one element rather than four rules, that the current is a bilinear of the algebra's own pairing, and that the sign bookkeeping of the two slots is the metric rather than a convention.
 
 **One setting is not the other.** The free article distinguishes a constant-element setting, in which the equation is an ordinary differential equation with the closed-form propagator, from an operator setting, in which it is the ordinary Schrödinger equation. The coupling has a different face in each: a shift of two numbers in the first, a covariant Laplacian in the second. The two are kept apart below, and no result is transferred between them.
 
@@ -98,7 +98,7 @@ $$
 \tilde\Xi^{*}\longmapsto e^{-i\alpha}\tilde\Xi^{*},
 $$
 
-leaves the free equation invariant, because $i$ is central and the Hamiltonian is Hermitian. The local form of the same symmetry is what forces the connection, and it is the gauge principle's construction. The free article's Noether charge is
+leaves the free equation invariant, because $i$ is central and the Hamiltonian is Hermitian. The local form of the same symmetry is what forces the connection, and it is the minimal coupling's construction. The free article's Noether charge is
 
 $$
 N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=n=\frac{\rho}{2},
@@ -106,7 +106,7 @@ $$
 
 and its conservation is one line from the equation and its conjugate. The factor of two is the $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ convention and not a normalisation; it is stated once here and not again.
 
-**The local version, and what it costs.** The gauge principle localises the centre's $\mathrm{U}(1)$: the angle becomes a real function $\Gamma$, the field acquires the factor $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$, and the connection transforms as
+**The local version, and what it costs.** The minimal coupling localises the centre's $\mathrm{U}(1)$: the angle becomes a real function $\Gamma$, the field acquires the factor $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$, and the connection transforms as
 
 $$
 \tilde A_\Phi\longmapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma,
@@ -197,7 +197,7 @@ $$
 
 so the right side is the equation's residual contracted with the field and projected on the imaginary part of the scalar part: it vanishes on every solution and the continuity equation is exact off shell. The same identity in the free case is the free article's, with $D_{\imath}\to\partial_{\imath}$.
 
-**Gauge invariance.** Under $\tilde\Xi\mapsto\digamma_{\mathrm{gau}}\tilde\Xi$ and $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$, the two factors of the bilinear acquire $\digamma_{\mathrm{gau}}$ and $\digamma_{\mathrm{gau}}^{-1}$, and $\digamma_{\mathrm{gau}}$ is central, so they cancel; and each $D_{\imath}\tilde\Xi$ is multiplied by $\digamma_{\mathrm{gau}}$, so the two factors acquire $\digamma_{\mathrm{gau}}^{-1}$ and $\digamma_{\mathrm{gau}}$ and cancel again. The current is invariant, and so is the density. This is the property the free current lacks and the coupling supplies: for $ϙ=0$ a local phase shift changes $\vec j$ by a term in $\vec\nabla_\Phi\Gamma$, and with the connection in place the shift is absorbed.
+**Local invariance.** Under $\tilde\Xi\mapsto\digamma_{\mathrm{gau}}\tilde\Xi$ and $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$, the two factors of the bilinear acquire $\digamma_{\mathrm{gau}}$ and $\digamma_{\mathrm{gau}}^{-1}$, and $\digamma_{\mathrm{gau}}$ is central, so they cancel; and each $D_{\imath}\tilde\Xi$ is multiplied by $\digamma_{\mathrm{gau}}$, so the two factors acquire $\digamma_{\mathrm{gau}}^{-1}$ and $\digamma_{\mathrm{gau}}$ and cancel again. The current is invariant, and so is the density. This is the property the free current lacks and the coupling supplies: for $ϙ=0$ a local phase shift changes $\vec j$ by a term in $\vec\nabla_\Phi\Gamma$, and with the connection in place the shift is absorbed.
 
 **The charge current, and the source.** Multiplying by $ϙ$ gives the charge density $\rho_{\mathrm{chg}}:=ϙ n$ and the charge current $\vec J:=ϙ\vec j$, and the continuity equation is theirs unchanged. That current is the source of the inhomogeneous Maxwell equation, in the form the Maxwell article and the coupled Klein–Gordon companion use,
 
@@ -224,7 +224,7 @@ The element has the same form as $\tilde H_\Psi$, with two real numbers shifted,
 
 **How to read the two shifts.** $\vec h_\Psi$ is the free field's momentum and $h_t$ its energy; after the coupling the coefficients are the mechanical momentum and the canonical energy, $h_t-ϙ\omicron_{\mathrm{pot}}$. The first is the canonical-to-kinetic dictionary in the spatial slot, the second in the temporal one, and they carry opposite signs for the reason §*Conventions and the Sign Bookkeeping* gives. A constant potential therefore translates every frequency by $\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ and every rotor axis by $ϙ\vec A$, and it resizes nothing: the gap between the two eigenvalues is $2|\vec h_\Psi-q\vec A|$ and depends on the vector potential alone.
 
-**No gauge invariance is lost.** The two shifts are consistent with the gauge transformation, and the check is one line: under $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ the phase rate would appear to change, but the field's phase changes by $\frac{2\pi ϙ\Gamma}{h}$ in the same step, and the two changes are equal and opposite. In the constant setting the gauge function must be at most linear in $t'$ for the connection to stay constant, and for a linear one the shift of $\omicron_{\mathrm{pot}}$ is a constant translation of the phase rate — which is exactly the translation the field's own phase supplies.
+**No local invariance is lost.** The two shifts are consistent with the local transformation, and the check is one line: under $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ the phase rate would appear to change, but the field's phase changes by $\frac{2\pi ϙ\Gamma}{h}$ in the same step, and the two changes are equal and opposite. In the constant setting the phase function must be at most linear in $t'$ for the connection to stay constant, and for a linear one the shift of $\omicron_{\mathrm{pot}}$ is a constant translation of the phase rate — which is exactly the translation the field's own phase supplies.
 
 ## The Non-Relativistic Limit of the Coupled Klein–Gordon Equation
 
@@ -242,7 +242,7 @@ with the same $D_{\imath}$ and the same $D_t$ as above. The sign check is the on
 
 ## What the Coupling Adds and What It Does Not
 
-**Adds.** One equation and one covariant derivative in place of four substitution rules. A current that is real, conserved and gauge invariant, with no adjoint row. A covariance proof that is three lines and holds for a general element. The constant setting's dictionary, $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$ and $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$, as the whole of minimal coupling where there are no derivatives. And the closure statement, which is the article's structural result: the scalar case's $U(1)$ current lives inside the algebra.
+**Adds.** One equation and one covariant derivative in place of four substitution rules. A current that is real, conserved and invariant, with no adjoint row. A covariance proof that is three lines and holds for a general element. The constant setting's dictionary, $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$ and $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$, as the whole of minimal coupling where there are no derivatives. And the closure statement, which is the article's structural result: the scalar case's $U(1)$ current lives inside the algebra.
 
 **Does not add.** No new prediction; the equation is the standard one. No new solution; the coupled constant setting's solution is the free propagator with shifted numbers, and the operator setting's solutions are the standard ones. No enlargement of the carrier; the coupling is central and the four copies are the free four copies.
 
@@ -272,7 +272,7 @@ with $\tilde\Xi\in\mathbb{B}$ one general element, $ϙ$ the coupling and $\tilde
 
 The field remains one element of $\mathbb{B}$ and the coupling changes nothing about the carrier, because the connection's coefficients are central and left multiplication by them is scalar multiplication. The theory is four copies of the standard charged scalar field sharing one connection.
 
-Gauge covariance is exact and holds for a general element: the central unit cancels between the two factors of every bilinear, and the connection's transformation law is forced by the cancellation of the two gauge gradients.
+Covariance is exact and holds for a general element: the central unit cancels between the two factors of every bilinear, and the connection's transformation law is forced by the cancellation of the two gauge gradients.
 
 The current is
 
@@ -282,7 +282,7 @@ j_{\imath}=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_{\imath}\tilde\Xi-\
 j_t=n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi),
 $$
 
-real, conserved on solutions, and gauge invariant. It closes inside the algebra, with no adjoint row and no fixed frame unit, and that is where the scalar case separates from the spinor one.
+real, conserved on solutions, and invariant. It closes inside the algebra, with no adjoint row and no fixed frame unit, and that is where the scalar case separates from the spinor one.
 
 In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm gco}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A)$, and the free flow applies to it unchanged. The coupled Schrödinger system is the non-relativistic limit of the coupled Klein–Gordon system, and the limit closes because the metric sign of the temporal slot is the same sign in both equations.
 
@@ -308,8 +308,8 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 | $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The density; $\rho=2n$ is the free article's |
 | $j_{\imath}$, $j_t=n$ | The particle current and its temporal component |
 | $\rho_{\mathrm{chg}}=ϙ n$, $\vec J=ϙ\vec j$ | The charge density and the charge current |
-| $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge factor; $\Gamma$ real |
-| $\Gamma$ | The gauge function; $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$, $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ |
+| $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The group factor; $\Gamma$ real |
+| $\Gamma$ | The phase function; $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$, $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ |
 
 ## Further Reading
 
@@ -317,10 +317,10 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 - [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the word of the field and the flow that the constant setting's shift acts on.
 - [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), the polar companion, where the shift of the two coefficients is read as the kinetic momentum and the kinetic energy.
 - [The Lagrangian and the Coupled Schrödinger Equation](the-lagrangian-and-the-coupled-schrodinger-equation.html), the variational companion, where the current of this article is the Noether charge of the coupled action.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the central phase and the forced transformation law.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator's algebra and its commutator.
+- [The Minimal coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the central phase and the forced transformation law.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator's algebra and its commutator.
 - [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), for the sign convention and the left-action convention that this article inherits.
-- [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), for the structural contrast: the bilinear that is gauge invariant and not conserved, and the repaired current.
+- [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), for the structural contrast: the bilinear that is invariant and not conserved, and the repaired current.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Form](the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the relativistic parent whose non-relativistic limit this article is.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the potential biquaternion and the four-current that this article's $J$ sources.
 - [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html), for the value and the sign of $ϙ$, which the algebra does not fix.
@@ -328,4 +328,4 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 - [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the stress tensor of the operator setting.
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), for the construction that produces the current.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the standard treatment of minimal coupling and the conserved current.
-- L. D. Landau and E. M. Lifshitz, *Quantum Mechanics: Non-Relativistic Theory* (Pergamon, 1977), for the charged scalar field in a magnetic field and the gauge-invariant current.
+- L. D. Landau and E. M. Lifshitz, *Quantum Mechanics: Non-Relativistic Theory* (Pergamon, 1977), for the charged scalar field in a magnetic field and the invariant current.

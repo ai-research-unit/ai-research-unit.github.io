@@ -83,7 +83,7 @@ $$
 \boxed{\;\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^2\Bigr]-\tfrac12S^2-\tfrac124\pi^{2}\nu_m^2\langle\tilde A_\Phi\rangle_\natural\;}
 $$
 
-with the last term read from the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass. The middle piece is not a gauge-fixing term added by hand: it is what the projection removes, and it is present in the element form already, hidden inside $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$. In the chart it is displayed, and displayed is where its rôle can be read: its variation is what produces the Lorenz condition as an equation.
+with the last term read from the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass. The middle piece is not a fixing term added by hand: it is what the projection removes, and it is present in the element form already, hidden inside $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$. In the chart it is displayed, and displayed is where its rôle can be read: its variation is what produces the Lorenz condition as an equation.
 
 The parameters. On the timelike branch the field is $\tilde A_{\Phi}(q)$ with $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ and the two angles parametrizing $\hat u_{\mathrm b}$; the discrete $\varepsilon$ is not varied, because it is a label and not a coordinate. On the spacelike branch $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ with the angles those of $\hat u$. In both cases four.
 
@@ -163,7 +163,7 @@ $$
 
 with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$. It is the divergence of the four-vector in the chart's variables, and it is the secondary constraint. On shell it removes one of the four parameters and leaves three.
 
-It is implied, and the variational reading says why. In the element form the condition follows from the divergence of the equation. In the chart it follows from the variation of the $-\tfrac12S^2$ term together with the rest, and it is the statement that the longitudinal part of the field is not free. There is no multiplier attached to it, and there is no gauge orbit along which it could be reached: it is one equation among the four.
+It is implied, and the variational reading says why. In the element form the condition follows from the divergence of the equation. In the chart it follows from the variation of the $-\tfrac12S^2$ term together with the rest, and it is the statement that the longitudinal part of the field is not free. There is no multiplier attached to it, and there is no orbit along which it could be reached: it is one equation among the four.
 
 **What it is not.** It is not the continuity equation of a fluid and it is not a guidance equation, because the material sector has no phase and therefore no phase current to conserve. The scalar Madelung pair is a pair because the field is one complex function; here the field is a real four-vector, and the condition is a single divergence. The variational principle does not manufacture the missing half.
 

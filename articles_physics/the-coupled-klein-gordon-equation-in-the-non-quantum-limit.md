@@ -20,11 +20,11 @@ $$
 
 which is Newton's law with the magnetic force, with the relativistic relation between momentum and velocity. Two identities carry it: the mixed derivatives of the action commute, and the mechanical four-momentum is a gradient minus a potential.
 
-The criterion must be written on the mechanical momentum, and here the argument is the free one. $\vec\pi=\vec\nabla_\Phi S-q\vec A$ is gauge invariant and $\vec\nabla_\Phi S$ is not, so a parameter defined on the canonical gradient changes value under a gauge transformation. A limit whose smallness depends on the gauge is not a statement about the field.
+The criterion must be written on the mechanical momentum, and here the argument is the free one. $\vec\pi=\vec\nabla_\Phi S-q\vec A$ is invariant and $\vec\nabla_\Phi S$ is not, so a parameter defined on the canonical gradient changes value under a local transformation. A limit whose smallness depends on the gauge is not a statement about the field.
 
 The second parameter is the free one. $\delta=1/(2\pi\nu_mL)$ does not involve the connection, because the Compton wavelength is the field's and not the potential's. The coupling changes neither parameter.
 
-What the article establishes, in five sentences. The parent's pair is the free pair with two substitutions, and the quantum potential is untouched. Order zero is the mass shell in the mechanical four-momentum, $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$, and its gradient is the Lorentz force with $\vec v=c^{2}\vec\pi/\mathcal E$. Order one is the transport equation with the mechanical current, which is gauge invariant and exact. The vorticity is the field's for the current velocity $\vec\pi/m$ and the field's plus an energy-gradient term for the kinematic velocity, and that split has no counterpart in the non-relativistic family because there the two velocities coincide.
+What the article establishes, in five sentences. The parent's pair is the free pair with two substitutions, and the quantum potential is untouched. Order zero is the mass shell in the mechanical four-momentum, $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$, and its gradient is the Lorentz force with $\vec v=c^{2}\vec\pi/\mathcal E$. Order one is the transport equation with the mechanical current, which is invariant and exact. The vorticity is the field's for the current velocity $\vec\pi/m$ and the field's plus an energy-gradient term for the kinematic velocity, and that split has no counterpart in the non-relativistic family because there the two velocities coincide.
 
 What is not new. The covariant Madelung pair for a charged scalar field, the mass shell in mechanical variables, the Lorentz force from a Hamilton–Jacobi equation and the vorticity of a charged flow are all standard. Added here: the ordering of the parent's own factorisation against one parameter, the exact form of the vorticity split with the energy-gradient term named, and the statement that the coupling changes the value of every leading term and the accuracy of none.
 
@@ -65,13 +65,13 @@ Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho},
 \mathcal E=E-q\omicron_{\mathrm{pot}} .
 $$
 
-The quantum potential is the free one, and the parent's reason is one line: it is built from the scale, the scale is inert under the gauge group, and no derivative of the potential reaches it. The coupling shifts the two leading terms and leaves the order-two term alone.
+The quantum potential is the free one, and the parent's reason is one line: it is built from the scale, the scale is inert under the symmetry group, and no derivative of the potential reaches it. The coupling shifts the two leading terms and leaves the order-two term alone.
 
 ## The Criterion on the Mechanical Momentum
 
 The parameter. $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$ and $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The covariant derivative differentiates the phase's gradient minus the potential's contribution, so that combination is what is large and what the scale's gradient is measured against.
 
-Why the canonical gradient fails. Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi q\Gamma}{h}$ the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$, while $\vec A$ shifts by $\vec\nabla_\Phi\Gamma$ and the two cancel inside $\vec\pi$. A criterion on the canonical gradient would be gauge dependent, and a limit whose validity depends on the gauge is a statement about the chart and not about the field.
+Why the canonical gradient fails. Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi q\Gamma}{h}$ the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$, while $\vec A$ shifts by $\vec\nabla_\Phi\Gamma$ and the two cancel inside $\vec\pi$. A criterion on the canonical gradient would be representative-dependent, and a limit whose validity depends on the gauge is a statement about the chart and not about the field.
 
 The order table is the free table with one substitution.
 
@@ -93,7 +93,7 @@ $$
 
 the mass shell of a charge $q$ in the potentials, written in the mechanical energy and momentum.
 
-The two mechanical variables are the two gauge-invariant combinations. $\mathcal E$ is the temporal one and $\vec\pi$ the spatial one, and the free article's two invariants are their limits. The eikonal is again a normalisation and not an energy balance: it fixes the norm of the mechanical four-momentum, and the potential moves the norm's argument without moving the statement.
+The two mechanical variables are the two invariant combinations. $\mathcal E$ is the temporal one and $\vec\pi$ the spatial one, and the free article's two invariants are their limits. The eikonal is again a normalisation and not an energy balance: it fixes the norm of the mechanical four-momentum, and the potential moves the norm's argument without moving the statement.
 
 The flow. Differentiating the shell along the characteristics,
 
@@ -135,7 +135,7 @@ $$
 \rho_{\mathrm{chg}}=\frac{\rho_{\mathrm{num}}\,\mathcal E}{mc^{2}} ,
 $$
 
-with the mechanical energy in the charge density and the mechanical momentum in the current, the material length $r'_{t}=ct'$ supplying the one factor between the two forms. **Both are gauge invariant and the free pair's were not**: that is what the coupling buys.
+with the mechanical energy in the charge density and the mechanical momentum in the current, the material length $r'_{t}=ct'$ supplying the one factor between the two forms. **Both are invariant and the free pair's were not**: that is what the coupling buys.
 
 It is exact and the limit does not touch it. No term is dropped at any order, and the equation is the free one with the substitutions. The current's carrier is the mechanical momentum, and the reason is the one the variational companion states: the conjugate momentum of the phase is $\rho\vec\pi$ and not $\rho\vec\nabla_\Phi S$.
 
@@ -175,7 +175,7 @@ $$
 
 the free article's two forms, with the d'Alembertian and with the density alone.
 
-Nothing about the coupling appears in either form. The scale is invariant under the gauge group, the logarithm of the density is invariant, and the second derivatives are ordinary. **The quantum potential is the free one, term for term**, and the parent states it as its first finding.
+Nothing about the coupling appears in either form. The scale is invariant under the symmetry group, the logarithm of the density is invariant, and the second derivatives are ordinary. **The quantum potential is the free one, term for term**, and the parent states it as its first finding.
 
 Its size is the free size in both denominators. Against the rest energy it is $\delta^{2}=\frac{h^{2}}{4\pi^{2}}/(m^{2}c^{2}L^{2})$; against the kinetic energy it is $\epsilon^{2}$. Neither involves $q$, so a strong potential does not make the approximation worse, and a rapidly varying one does — which is the hypothesis the next section states.
 
@@ -185,7 +185,7 @@ It costs nothing in accuracy. The three orders are the free three, the deleted t
 
 It costs one hypothesis, and the hypothesis is stated and not met. $\vec\pi$ contains $\vec A$, so the criterion's meaning requires the potential to vary slowly on the length $L$: a potential varying as fast as the phase would make the leading term vary as fast as the scale, and the expansion would be in the wrong quantity. No article in the corpus states that hypothesis, and this one states it as a gap.
 
-It gains three exact statements. The current is gauge invariant. The current velocity's vorticity is the field's. The circulation is quantised with the flux. None is semiclassical; all three are the exact pair's, and the limit's role is to leave them standing.
+It gains three exact statements. The current is invariant. The current velocity's vorticity is the field's. The circulation is quantised with the flux. None is semiclassical; all three are the exact pair's, and the limit's role is to leave them standing.
 
 It changes one thing qualitatively, and it is the vorticities. In the non-relativistic family the kinematic and current velocities coincide, so there is one vorticity statement; here they differ by $\gamma$ and there are two, and the second carries the energy's gradient. That is a relativistic effect of the limit and not of the coupling, and it would be present with the field switched off.
 
@@ -201,7 +201,7 @@ vanish identically. The check was made with $c\neq1$ so that the factors of $c$ 
 
 The vorticity was checked by direct differentiation. $\vec\nabla_\Phi\times(\vec\nabla_\Phi S-q\vec A)=-q\vec\nabla_\Phi\times\vec A$ because the curl of a gradient vanishes; the second term of the kinematic vorticity follows from $\vec\nabla_\Phi\times(f\vec X)=f\vec\nabla_\Phi\times\vec X+\vec\nabla_\Phi f\times\vec X$ with $f=1/\Gamma$.
 
-The quantum potential was checked for invariance. It contains $\varrho$ and $\Box_\Phi \varrho$; under the gauge transformation the scale is unchanged, so $Q_{\mathrm{qnt}}$ is unchanged term for term.
+The quantum potential was checked for invariance. It contains $\varrho$ and $\Box_\Phi \varrho$; under the local transformation the scale is unchanged, so $Q_{\mathrm{qnt}}$ is unchanged term for term.
 
 The pair was checked against the free pair. Setting $\omicron_{\mathrm{pot}}=0$ and $\vec A=0$ returns the free article's two boxed lines term for term, so the coupling enters as a substitution and not as a modification.
 
@@ -213,7 +213,7 @@ The parent's covariant derivative factors exactly on the central field, with the
 
 Order zero is the mass shell in the mechanical energy and momentum, and its gradient is the Lorentz force with $\vec v=c^{2}\vec\pi/\mathcal E$. The force is the same bracket as the non-relativistic family's and the kinematics is not: $\vec\pi=\gamma m\vec v$ here and $\vec\pi=m\vec v$ there.
 
-Order one is the transport equation in the mechanical current, gauge invariant and exact, and it carries two exact companions the limit inherits: the current velocity's vorticity is $-(q/m)\vec B$, and the circulation is $h n-q\digamma_{\mathrm{flx}}$. The kinematic velocity's vorticity differs from the current velocity's by the energy's gradient, a relativistic effect that the non-relativistic family cannot have.
+Order one is the transport equation in the mechanical current, invariant and exact, and it carries two exact companions the limit inherits: the current velocity's vorticity is $-(q/m)\vec B$, and the circulation is $h n-q\digamma_{\mathrm{flx}}$. The kinematic velocity's vorticity differs from the current velocity's by the energy's gradient, a relativistic effect that the non-relativistic family cannot have.
 
 Order two is the free quantum potential, with the free size in both denominators. The coupling changes the value of every leading term and the accuracy of none, and it costs one unstated hypothesis: the potential must be slowly varying on the scale $L$.
 

@@ -4,7 +4,7 @@
 
 A massive spin-1 field can acquire its mass in more than one way. The **Proca** mass is second order and scalar: a term $\mu^2\sum_{\imath}\varepsilon_{\imath} A_{\imath} A_{\imath}$ in the Lagrangian and a Klein–Gordon factor in the propagator. A **topological** mass is first order: a term with one derivative, one power of the mass, and a Levi-Civita symbol, which in $2+1$ dimensions is the Chern–Simons term of Deser, Jackiw and Templeton.
 
-Liu Yu-Fen's claim is a duality of the second kind. The **Dirac** Lagrangian in the vector representation is first order in the derivative and carries its mass as a term that couples the field to its conjugate. A first-order **parent action** in the same variables has two reductions: eliminating the auxiliary potential gives back the Dirac Lagrangian, and eliminating the Dirac field gives a second-order Lagrangian whose mass term is first order, one derivative and one power of $m$. In four dimensions that mass term is the cubic form; on the three-dimensional spin manifold, once the embedding vector $j$ is used to slice the space, it is exactly the Maxwell plus Chern–Simons Lagrangian of the topologically massive gauge field. The two reductions describe the same propagating modes, at least classically.
+Liu Yu-Fen's claim is a duality of the second kind. The **Dirac** Lagrangian in the vector representation is first order in the derivative and carries its mass as a term that couples the field to its conjugate. A first-order **parent action** in the same variables has two reductions: eliminating the auxiliary potential gives back the Dirac Lagrangian, and eliminating the Dirac field gives a second-order Lagrangian whose mass term is first order, one derivative and one power of $m$. In four dimensions that mass term is the cubic form; on the three-dimensional spin manifold, once the embedding vector $j$ is used to slice the space, it is exactly the Maxwell plus Chern–Simons Lagrangian of the topologically massive connection. The two reductions describe the same propagating modes, at least classically.
 
 The article records the two parent actions and their four eliminations, and separates what is verified from what is quoted. It is the physics companion of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form* and of *Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form*: the parent action is written in the s-vector variables, and its two reductions pass through the self-dual field strength and the cubic (order-three ding) form of those articles.
 
@@ -78,7 +78,7 @@ The second term is the chirality of the four-vector carrier, and it is written a
 $$
 \tilde\nabla_{\Phi,\imath,a} B_{\jmath}-\tilde\nabla_{\Phi,\jmath,a} B_{\imath}=\partial/\partial x_{\imath} B_{\jmath}-\partial/\partial x_{\jmath} B_{\imath}+ia\,j_{\imath} B^*_{\jmath}-ia\,j_{\jmath} B^*_{\imath}=F_{\imath\jmath},
 $$
-which is the source's field strength: it reduces to the Maxwell tensor at $a=0$ and is invariant under the generalized gauge transformation $B_{\imath}\mapsto B_{\imath}+p^+_{\imath\jmath}\partial/\partial x_{\jmath}\Theta$. The constant $a$ is real and differs from $m$; it survives in the reductions as the combination $m-a$ and is set to zero in the three-dimensional case.
+which is the source's field strength: it reduces to the Maxwell tensor at $a=0$ and is invariant under the generalized local transformation $B_{\imath}\mapsto B_{\imath}+p^+_{\imath\jmath}\partial/\partial x_{\jmath}\Theta$. The constant $a$ is real and differs from $m$; it survives in the reductions as the combination $m-a$ and is set to zero in the three-dimensional case.
 
 ### The Four-Dimensional Parent Action
 
@@ -159,11 +159,11 @@ The overall normalisation is the source's: the kinetic term carries $1/m$, so th
 
 Two properties make the first-order mass term topological rather than a mass put in by hand.
 
-**The Lagrangian is not invariant, but the equations are.** The dual potential carries the gauge freedom
+**The Lagrangian is not invariant, but the equations are.** The dual potential carries the redundancy
 $$
 \sum_{\jmath,k}\epsilon_{\jmath}\epsilon_{\imath}\,\check c_{\jmath\imath k}\partial/\partial x_{\jmath}\bigl(\delta H_{\imath}\bigr)=0 ,
 $$
-for which the equations of motion are unchanged while the mass term changes by a total derivative only. The mass term is therefore not invariant under the gauge transformation, and the theory is nonetheless gauge covariant: the invariance sits in the equations and not in the Lagrangian, which is the definition of a topological term. In the three-dimensional case the transformation is the explicit one,
+for which the equations of motion are unchanged while the mass term changes by a total derivative only. The mass term is therefore not invariant under the local transformation, and the theory is nonetheless covariant: the invariance sits in the equations and not in the Lagrangian, which is the definition of a topological term. In the three-dimensional case the transformation is the explicit one,
 $$
 B_{\imath}\mapsto B_{\imath}+p^+_{\imath\jmath}\,\partial/\partial x_{\jmath}\Theta ,
 $$
@@ -277,9 +277,9 @@ G^{\mathrm R}_{\imath}=G^{0\mathrm R}_{\imath}\exp\Bigl(-i\theta_{\mathrm{wln}}^
 \qquad
 G^{\mathrm L}_{\imath}=G^{0\mathrm L}_{\imath}\exp\Bigl(i\theta_{\mathrm{wln}}\Bigr),
 $$
-which depends on the path from a fixed initial point, and $U_{\mathrm{vec}}$ is form-invariant under the map: it is the same function of the mapped fields as of the original ones, so the map is invertible and the massless and massive solutions correspond one to one. This is the source's **non-integrable phase**: the mass is not a scalar multiplying $\tilde{Ξ}^{\dagger}iC_0\tilde{Ξ}$ but a unit complex vector, a direction in the complexified tangent space, and the phase it generates is path-dependent and is not removable by a gauge transformation of the s-vector. Its real part is the vector current and its imaginary part the axial current, so the phase and the "scale" of the field are the two halves of one complex vector.
+which depends on the path from a fixed initial point, and $U_{\mathrm{vec}}$ is form-invariant under the map: it is the same function of the mapped fields as of the original ones, so the map is invertible and the massless and massive solutions correspond one to one. This is the source's **non-integrable phase**: the mass is not a scalar multiplying $\tilde{Ξ}^{\dagger}iC_0\tilde{Ξ}$ but a unit complex vector, a direction in the complexified tangent space, and the phase it generates is path-dependent and is not removable by a local transformation of the s-vector. Its real part is the vector current and its imaginary part the axial current, so the phase and the "scale" of the field are the two halves of one complex vector.
 
-The topological mass of the gauge field and the phase mass of the Dirac field are then the same object read in the two reductions: in both, the mass is a first-order coupling carried by a direction that the algebra supplies and that no gauge transformation removes. In the gauge reduction that direction is the neutral spacelike $j$, on which the Chern–Simons symbol is built; in the Dirac reduction it is the complex unit vector $U_{\mathrm{vec}}$, on which the phase is built. Both are directions the algebra fixes, not parameters put in by hand.
+The topological mass of the connection and the phase mass of the Dirac field are then the same object read in the two reductions: in both, the mass is a first-order coupling carried by a direction that the algebra supplies and that no local transformation removes. In the gauge reduction that direction is the neutral spacelike $j$, on which the Chern–Simons symbol is built; in the Dirac reduction it is the complex unit vector $U_{\mathrm{vec}}$, on which the phase is built. Both are directions the algebra fixes, not parameters put in by hand.
 
 ## What the Equivalence Is and Is Not
 
@@ -305,13 +305,13 @@ These questions are open.
 
 ## Summary
 
-The Dirac Lagrangian in the vector representation and the Lagrangian of the three-dimensional topologically massive gauge field are **dual**: one first-order parent action in the s-vector variables reduces, on one elimination, to the Dirac Lagrangian — first-order kinetic term in the $\check c$ structure constants, mass term $m(G^*G^*+GG)$ coupling the field to its conjugate — and, on the other elimination, to a second-order Lagrangian for the dual potential whose mass term is first order, one derivative and one power of $m$. On the spin manifold orthogonal to $j$, at $a=0$, the latter reads
+The Dirac Lagrangian in the vector representation and the Lagrangian of the three-dimensional topologically massive connection are **dual**: one first-order parent action in the s-vector variables reduces, on one elimination, to the Dirac Lagrangian — first-order kinetic term in the $\check c$ structure constants, mass term $m(G^*G^*+GG)$ coupling the field to its conjugate — and, on the other elimination, to a second-order Lagrangian for the dual potential whose mass term is first order, one derivative and one power of $m$. On the spin manifold orthogonal to $j$, at $a=0$, the latter reads
 $$
 \mathcal{L}_G=-\tfrac{1}{4m}\sum_{\imath,k}\epsilon_{\imath}\epsilon_{\imath} F_{\imath k}F_{\imath k}+\tfrac14\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_{\imath}\,\check\varepsilon_{\jmath\imath k}\,B^*_{\jmath} F_{\imath k},
 $$
 Maxwell plus a Chern–Simons mass, with $\check\varepsilon_{\jmath\imath k}=\sum_\rho\varepsilon_{\jmath\imath k\rho}j_\rho$ and the gauge equation $\sum_{\jmath}\epsilon_{\jmath}\,\partial F_{\jmath\imath}/\partial x_{\jmath}+\tfrac m2\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_{\imath}\check\varepsilon_{\imath\jmath k}F^*_{\jmath k}=0$. The same $m$ is, in the other reduction, the non-integrable phase of the Dirac field: a shift $mK_{\imath}$ of the covariant derivative, with $U_{\mathrm{vec}}$ the source's unit complex vector, integrated along a path.
 
-Three facts make the mechanism work. The first-order mass term changes only by a total derivative under the gauge freedom of the dual potential, which is what "topological" means here. Of the two parts of $\check c$, only the Levi-Civita one appears in the reduced Lagrangian of Eq. (88) — the $r'_t$ part cancels in the reduction — and a Levi-Civita contraction is a Chern–Simons term. And the two-form $H_{\imath\jmath}$ carries the same information as the s-vector — three complex components in the anti-self-dual $H_{[\imath\jmath]}$ and one in the trace $H_{(\imath\jmath)}=-\xi^*\epsilon_{\imath}\delta_{\imath\jmath}$, with no sum on $\mu$, which is four — so the auxiliary field of the reduction is the antisymmetric part of the biquaternion.
+Three facts make the mechanism work. The first-order mass term changes only by a total derivative under the redundancy of the dual potential, which is what "topological" means here. Of the two parts of $\check c$, only the Levi-Civita one appears in the reduced Lagrangian of Eq. (88) — the $r'_t$ part cancels in the reduction — and a Levi-Civita contraction is a Chern–Simons term. And the two-form $H_{\imath\jmath}$ carries the same information as the s-vector — three complex components in the anti-self-dual $H_{[\imath\jmath]}$ and one in the trace $H_{(\imath\jmath)}=-\xi^*\epsilon_{\imath}\delta_{\imath\jmath}$, with no sum on $\mu$, which is four — so the auxiliary field of the reduction is the antisymmetric part of the biquaternion.
 
 The parent actions and the eliminations are the source's; the algebraic identities they use were recomputed for this article and hold. The eliminations themselves were not recomputed, and no quantum statement is made.
 

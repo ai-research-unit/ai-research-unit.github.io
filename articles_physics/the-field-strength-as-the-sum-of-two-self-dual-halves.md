@@ -6,7 +6,7 @@ A field strength is a two-form, and a two-form in four dimensions has six compon
 
 This article is the field-theoretic reading of the block's structural articles. It states the field strength as a bivector and as an element of the Lie algebra, defines the dual and its square, performs the split, identifies the Riemann–Silberstein half, derives the transformation law and the statement that the halves transform by the tensor action and not by the congruence, and writes the Bianchi identity and the field equation as one complex equation.
 
-The algebra and the sign conventions are those of the corpus's field-strength articles, and this article does not restate them. *The Field-Strength Biquaternion and Its Invariants* supplies the field-strength biquaternion, the Hodge dual and the invariants; *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane* supplies the projectors and the naming of the two signs; *Exercise: Duality Rotation and the Riemann–Silberstein Vector* supplies the duality rotation and the warning about the transformation law; *Maxwell's Equations in the Biquaternionic Formulation* supplies the potential and the gauge structure. The block adds only the group-theoretic reading.
+The algebra and the sign conventions are those of the corpus's field-strength articles, and this article does not restate them. *The Field-Strength Biquaternion and Its Invariants* supplies the field-strength biquaternion, the Hodge dual and the invariants; *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane* supplies the projectors and the naming of the two signs; *Exercise: Duality Rotation and the Riemann–Silberstein Vector* supplies the duality rotation and the warning about the transformation law; *Maxwell's Equations in the Biquaternionic Formulation* supplies the potential and the structure. The block adds only the group-theoretic reading.
 
 ## The Field Strength as a Bi-Vector
 
@@ -241,7 +241,7 @@ $$
 F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath} .
 $$
 
-For an abelian connection the curvature is gauge invariant, which is the calculation of the previous subsection; for a non-abelian one the curvature would acquire a commutator $[A_{\imath},A_{\jmath}]$ and would transform in the adjoint. The abelian case is the one the block uses, and the absence of the commutator is the reason the field strength's carrier is the bivector and not a tensor product of two vector carriers.
+For an abelian connection the curvature is invariant, which is the calculation of the previous subsection; for a non-abelian one the curvature would acquire a commutator $[A_{\imath},A_{\jmath}]$ and would transform in the adjoint. The abelian case is the one the block uses, and the absence of the commutator is the reason the field strength's carrier is the bivector and not a tensor product of two vector carriers.
 
 ### Why the Two Carriers Behave Differently Under the Shift
 

@@ -229,7 +229,7 @@ is curvature-free by construction, and the teleparallel gauge is the one in whic
 
 One defect in that paragraph is checkable on the page and needs no computation. The display for the contorsion reads $N_{\mathrm{cont},\imath ab}=-\omega_{\imath ab}(e)=e_{a\jmath}\frac{\partial e_{b]\jmath}}{\partial r_{x[\imath}}-e_{b\jmath}\frac{\partial e_{a]\jmath}}{\partial r_{x[\imath}}$, and the line immediately below, which the same paragraph equates to it, reads $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ},\,C_{ab}\,\partial \tilde{Ξ}/\partial x_{\imath}\rangle=-e_{a\jmath}\frac{\partial e_{b]\jmath}}{\partial r_{x[\imath}}-e_{b\jmath}\frac{\partial e_{a]\jmath}}{\partial r_{x[\imath}}$. The second term changes sign between two consecutive displays of the same object, so at most one of them is right.
 
-What is *not* correct is what the source puts into that identity. The teleparallel gauge condition, read as an equation for the contorsion — hence, through Eq. (6), for the bilinear
+What is *not* correct is what the source puts into that identity. The teleparallel fixing condition, read as an equation for the contorsion — hence, through Eq. (6), for the bilinear
 $$
 N_{\mathrm{cont},\imath ab}=\kappa\,\mathrm{ReTr}\bigl\langle\tilde{Ξ},\,C_{ab}\,\partial \tilde{Ξ}/\partial x_{\imath}\bigr\rangle
 $$

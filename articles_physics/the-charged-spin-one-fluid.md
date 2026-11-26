@@ -197,13 +197,13 @@ What the coupling does add is the self-interaction term in the field strength. T
 
 ## The Massless Limit
 
-The free article's massless limit removes the fluid, and the reason is that the Lorenz condition was the mass's gift. With $A_{\imath}=ru_{\imath}$ the free condition is continuity, and continuity came from taking the divergence of $\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=m^{2}A_{\imath}$: at $m=0$ there is nothing on the right and the Lorenz condition is a gauge choice rather than a constraint. So the free fluid's incompressibility evaporates at $m=0$ and the fluid reading goes with it.
+The free article's massless limit removes the fluid, and the reason is that the Lorenz condition was the mass's gift. With $A_{\imath}=ru_{\imath}$ the free condition is continuity, and continuity came from taking the divergence of $\sum_{\jmath}\partial_{\jmath} F_{\jmath\imath}=m^{2}A_{\imath}$: at $m=0$ there is nothing on the right and the Lorenz condition is a choice of representative rather than a constraint. So the free fluid's incompressibility evaporates at $m=0$ and the fluid reading goes with it.
 
 The coupled case has the same limit and a different residue. For $m>0$ the scalar part of the equation forces the covariant Lorenz condition and the ordinary divergence is the amplitude of §*The Lorenz Condition Is No Longer the Continuity Equation*. At $m=0$ the equation is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=0$, whose divergence gives no constraint on the potential; the covariant Lorenz condition becomes one gauge choice among many. The compressibility statement therefore degrades in the same way as the free one: it is a statement about a gauge, and a gauge is not a fluid property.
 
 The residue that survives is the charge current. The Noether current of the phase symmetry is conserved for every $m$, including zero, and it does not vanish on the complex field. So the massless charged vector fluid keeps a conserved current, a density and a flow, and loses its constraint: it is a fluid in the sense of having a current and a stress, and not in the sense of having an incompressibility.
 
-The article states the algebraic limit and claims nothing about the photon. At $m=0$ the field is a gauge field, the phase is a gauge parameter and the "density" $\varrho$ is a gauge-dependent normalisation; the fluid reading of a gauge field is a different subject, and the block does not have it. **The honest statement is that the limit is continuous in the equations and discontinuous in the reading**, and the discontinuity is located at the constraint.
+The article states the algebraic limit and claims nothing about the photon. At $m=0$ the field is a connection, the phase is a parameter and the "density" $\varrho$ is a representative-dependent normalisation; the fluid reading of a connection is a different subject, and the block does not have it. **The honest statement is that the limit is continuous in the equations and discontinuous in the reading**, and the discontinuity is located at the constraint.
 
 Why the limit is worth a section at all. Because the free article's most quoted sentence is that the photon has no fluid, and the coupled case shows where that sentence comes from: not from the vector character, and not from the spin, but from the fact that the constraint which makes the current conserved is the same equation that makes the flow incompressible. Decouple the two — which is what a charge does — and the massless limit keeps half the fluid.
 
@@ -221,8 +221,8 @@ Twelve statements, each one line, and each with its reason. This is what the cha
 8. The ordinary divergence is the amplitude. $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-\frac{2\pi iϙ}{h}\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, with real part $\frac{2\pi ϙ}{h}\varrho^{2}\sin2\theta_{\mathrm{pha}}$ and imaginary part $-\frac{2\pi ϙ}{h}\varrho^{2}\cos2\theta_{\mathrm{pha}}$.
 9. The charged vector fluid is compressible. The free article's incompressibility is the $ϙ=0$ case, and it was the mass's gift through the Lorenz condition.
 10. The stiff equation of state survives as a formula. $\epsilon=p=\frac12m^{2}\varrho^{2}$ on the sector where the field strength vanishes, and it dies as a constitutive law because $\varrho$ is a coordinate and not an invariant.
-11. The field's own stress is in the fluid's stress. The field strength is dynamical and its part of the stress is present, which is the opposite of the two companion articles, where the gauge field's stress is external.
-12. The massless limit keeps the current and loses the constraint, because at $m=0$ the covariant Lorenz condition is a gauge choice and the compressibility becomes unobservable.
+11. The field's own stress is in the fluid's stress. The field strength is dynamical and its part of the stress is present, which is the opposite of the two companion articles, where the connection's stress is external.
+12. The massless limit keeps the current and loses the constraint, because at $m=0$ the covariant Lorenz condition is a choice of representative and the compressibility becomes unobservable.
 
 ## The Three Charged Fluids
 
@@ -246,7 +246,7 @@ This article's column is the third, and it is the column in which the charge doe
 
 The row that separates this column from the other two is the compressibility. The scalar fluid is compressible by the quantum potential, the spin-half fluid is compressible by its frame's expansion, and the vector fluid is compressible by its amplitude. Three compressibilities and three different objects, and only the third is fixed by an equation rather than by an identity: the scalar's is a derived quantity, the spin's is free data, and the vector's is the modulus.
 
-The row that makes this column the richest is the stress. The companion articles can say that the gauge field's stress is external and sits on the other side of the equation; here the field's stress is the fluid's own, and the self-interaction term in the field strength is the reason. A fluid whose stress includes its own field is a medium in the strongest sense the block has, and it is the vector case's privilege.
+The row that makes this column the richest is the stress. The companion articles can say that the connection's stress is external and sits on the other side of the equation; here the field's stress is the fluid's own, and the self-interaction term in the field strength is the reason. A fluid whose stress includes its own field is a medium in the strongest sense the block has, and it is the vector case's privilege.
 
 ## What the Charge Does to the Correspondence
 

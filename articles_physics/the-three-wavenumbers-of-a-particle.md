@@ -447,7 +447,7 @@ The measured ranges.
 | $W$ | $1.2878\times10^{-8}\ \mathrm{J}$ | $6.483\times10^{16}\ \mathrm{m^{-1}}$ | $2.455\times10^{-18}\ \mathrm{m}$ | the weak charged current |
 | $Z$ | $1.4610\times10^{-8}\ \mathrm{J}$ | $7.355\times10^{16}\ \mathrm{m^{-1}}$ | $2.164\times10^{-18}\ \mathrm{m}$ | the weak neutral current |
 
-The ordering of the force ranges is the ordering of the mass wave numbers, read backwards. The electromagnetic force is long ranged because the wave number of its carrier is zero; the weak force is the shortest because its carriers have the largest wave numbers among the known gauge bosons; the nuclear force sits between them because the pion is light on the scale of the weak bosons. In every case the number that decides is $\nu_m$, and no other number enters.
+The ordering of the force ranges is the ordering of the mass wave numbers, read backwards. The electromagnetic force is long ranged because the wave number of its carrier is zero; the weak force is the shortest because its carriers have the largest wave numbers among the known connections; the nuclear force sits between them because the pion is light on the scale of the weak bosons. In every case the number that decides is $\nu_m$, and no other number enters.
 
 The same statement in the operator. The massive d'Alembertian of the series carries the coefficient $\nu_m^{2}$, and its Green function is the Yukawa kernel. *The Biquaternion D'Alembertian and Its Green's Functions* derives it there, and the coefficient is the only place the mass enters. The range of the force and the coefficient of the operator are one wave number written twice.
 

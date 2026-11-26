@@ -231,7 +231,7 @@ and they are proportional only if $Q_t=0$ or $\vec Q=0$, neither of which holds 
 | idempotent form | $\kappa\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}^{2}=\tilde\Pi_{\mathrm{id}}$, $\tilde\Pi_{\mathrm{id}}\neq0,e_t$ | the direction and the scale |
 | spectrum | $\{\kappa,0\}$, $\kappa\neq0$ | the spectral type |
 
-The descriptions are equivalent and each names a different datum. The pair $(\kappa,\tilde\Pi_{\mathrm{id}})$ is determined by the element, and the element by the pair, so the correspondence is a bijection and not a parametrisation with a kernel. That matters for what follows: there is no gauge freedom in the decomposition of a null element, and the only freedom is the freedom to describe the same element twice.
+The descriptions are equivalent and each names a different datum. The pair $(\kappa,\tilde\Pi_{\mathrm{id}})$ is determined by the element, and the element by the pair, so the correspondence is a bijection and not a parametrisation with a kernel. That matters for what follows: there is no redundancy in the decomposition of a null element, and the only freedom is the freedom to describe the same element twice.
 
 The second description is the one that survives every later test. An element of the stratum is a scaled projector, and the projection is primitive: it is not a sum of two non-zero orthogonal idempotents. Everything in §*The Description That Survives* is a consequence of primitivity, and everything in §*The Description That Fails* is a consequence of the scale being a scale of a null object.
 
@@ -791,7 +791,7 @@ A normalisation needs a scale, and the modulus is not the only available scale. 
 
 The reading is that a ray is normalised by its weight and not by its length. In a theory of massless objects the natural normalisation is the energy, which is a component of the momentum, and not a length built from the whole vector. The algebra states the same preference: the component is invertible, the length is not.
 
-The map is a section and not a convention. If the normalisation were a choice there would be a family of representatives and a gauge freedom between them; uniqueness says there is one representative and no freedom. A phase freedom on a spinor representative is therefore a freedom of the module and not of the element.
+The map is a section and not a convention. If the normalisation were a choice there would be a family of representatives and a redundancy between them; uniqueness says there is one representative and no freedom. A phase freedom on a spinor representative is therefore a freedom of the module and not of the element.
 
 The absence of a rest frame is the same failure. The polar word is the algebra's own boost to the scalar line, so a vanishing modulus means that no unit reaches that line from a null element, and the absence of a rest frame is a statement about the modulus and not about the momentum.
 

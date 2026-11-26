@@ -40,7 +40,7 @@ S_{\mathrm{YM}}[\vec\Gamma]=\int d^{4}x\,\sqrt{|\det G|}\;\mathrm{Sc}\bigl(\tild
 \tilde F_{\imath\jmath}=\partial_{\imath}\vec\Gamma_{\jmath}-\partial_{\jmath}\vec\Gamma_{\imath}+[\vec\Gamma_{\imath},\vec\Gamma_{\jmath}],
 $$
 
-with $\tilde F$ the curvature two-form. It is the exact analogue of the Maxwell action the corpus already varies — the biquaternion Maxwell equation follows from it, with the caveat the corpus records that the Lorentz generator does not commute with the basis operator, so the varied form differs from the substituted form by a term. Its equations are second order in the connection, its principal symbol is the wave operator on each component, and its content is a gauge field, not a metric.
+with $\tilde F$ the curvature two-form. It is the exact analogue of the Maxwell action the corpus already varies — the biquaternion Maxwell equation follows from it, with the caveat the corpus records that the Lorentz generator does not commute with the basis operator, so the varied form differs from the substituted form by a term. Its equations are second order in the connection, its principal symbol is the wave operator on each component, and its content is a connection, not a metric.
 
 Einstein's action is a different functional of different variables,
 
@@ -54,7 +54,7 @@ Two things are worth saying about the comparison, because both are commonly got 
 
 **The two cannot be separated by dimensions.** In four dimensions both integrands have mass dimension four, so no scaling argument distinguishes them. Any claim that "the algebra's natural action is the only marginal one" is false: gravity is marginal too.
 
-**They cannot be separated by gauge invariance.** Both are invariant under their respective gauge groups, and the frame route's local Lorentz freedom is exactly the gauge freedom the Einstein–Hilbert action has. Invariance therefore does not select between them.
+**They cannot be separated by local invariance.** Both are invariant under their respective symmetry groups, and the frame route's local Lorentz freedom is exactly the redundancy the Einstein–Hilbert action has. Invariance therefore does not select between them.
 
 What separates them is derivative order and variable: one derivative of a connection against two derivatives of a frame. The algebra sees neither.
 

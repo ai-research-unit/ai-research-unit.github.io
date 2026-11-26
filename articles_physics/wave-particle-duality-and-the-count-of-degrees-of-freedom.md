@@ -18,7 +18,7 @@ Read against the published spectrum, that line gives the eigenvalues $-\nu_t^{\p
 
 Why this belongs to the duality. Wave–particle duality, as *Wave–Particle Duality and the Fourier Transform* states it, is one equation read in two bases. Here one integer is read twice. On the wave side it is the dimension of the image of the symbol: how many field strengths the operator can produce at a frequency. On the particle side it is the number of polarisation states available at that frequency. The two readings are the two halves of rank–nullity, and the switch between them is the transform.
 
-What this does not buy. No dynamics, no value of a mass, no mechanism for the massless limit, and no derivation of gauge invariance. The rank reports how many directions the symbol reaches. Why a direction is a state, and why the massless field has a gauge symmetry, are the readings imported from the articles named below.
+What this does not buy. No dynamics, no value of a mass, no mechanism for the massless limit, and no derivation of local invariance. The rank reports how many directions the symbol reaches. Why a direction is a state, and why the massless field has a local symmetry, are the readings imported from the articles named below.
 
 The conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, so $\vec e_{\imath}^{2}=-e_t$ for $k=x,y,z$. On a plane wave *Derivatives, Fields and Transforms* gives the symbols
 
@@ -211,7 +211,7 @@ So the three directions are used in three different ways. One is annihilated on 
 
 ### One circular polarisation, not the longitudinal
 
-The direction the symbol loses on the cone is circular, not longitudinal. A reader expects the massless field to lose the longitudinal direction, because a residual gauge transformation removes it, and that is the textbook sentence. Here the direction that leaves the image is $\varepsilon_{\mathrm{fop},+}$, a transverse circular direction. The longitudinal direction is annihilated at no frequency point, on the cone or off it: its image is $-i\,\nu_{\Phi}-\nu_t^{\prime}\vec u_\Phi$, non-zero because of the scalar part, and that scalar part is the constraint rather than a fourth surviving vector direction.
+The direction the symbol loses on the cone is circular, not longitudinal. A reader expects the massless field to lose the longitudinal direction, because a residual local transformation removes it, and that is the textbook sentence. Here the direction that leaves the image is $\varepsilon_{\mathrm{fop},+}$, a transverse circular direction. The longitudinal direction is annihilated at no frequency point, on the cone or off it: its image is $-i\,\nu_{\Phi}-\nu_t^{\prime}\vec u_\Phi$, non-zero because of the scalar part, and that scalar part is the constraint rather than a fourth surviving vector direction.
 
 The two statements are consistent, and the difference is what is being counted. The textbook count is of states after the gauge quotient. The rank counts amplitude directions before the quotient. The longitudinal direction is removed for both massive and massless fields by the constraint, which is why it leaves the vector part; its image remains in the algebra as the scalar constraint, and it is counted once in the rank at every frequency. The massless case then loses one circular direction, which is why the count is two and not three. The constraint and the cone together produce the massless count, and the rank separates them.
 
@@ -255,7 +255,7 @@ Where the longitudinal amplitude comes from. Off the cone the longitudinal direc
 
 ### The massless field counts two
 
-A massless field sits on the cone at every wave number, and the rank is two, one less than off the cone. The kernel is one complex line, $\varepsilon_{\mathrm{fop},+}$, so the loss is exactly one circular polarisation. The Proca article obtains its two by removing the longitudinal direction with a residual gauge transformation, and the two counts agree while the bookkeeping differs: the rank's two dimensions are $\varepsilon_{\mathrm{fop},-}$ and the longitudinal image $-i\,\nu_{\Phi}-\nu_t^{\prime}\vec u_\Phi$, whereas the Proca pair is $\varepsilon_{\mathrm{fop},\pm}$. **The agreement is a count of dimensions, and this article claims no more than that.**
+A massless field sits on the cone at every wave number, and the rank is two, one less than off the cone. The kernel is one complex line, $\varepsilon_{\mathrm{fop},+}$, so the loss is exactly one circular polarisation. The Proca article obtains its two by removing the longitudinal direction with a residual local transformation, and the two counts agree while the bookkeeping differs: the rank's two dimensions are $\varepsilon_{\mathrm{fop},-}$ and the longitudinal image $-i\,\nu_{\Phi}-\nu_t^{\prime}\vec u_\Phi$, whereas the Proca pair is $\varepsilon_{\mathrm{fop},\pm}$. **The agreement is a count of dimensions, and this article claims no more than that.**
 
 The two arguments are independent, and that is the useful part. A reader who distrusts the gauge argument can count the rank; a reader who distrusts the algebra can count the amplitudes. When they agree the count is not in doubt, and the agreement is not circular, because neither argument refers to the other.
 
@@ -267,7 +267,7 @@ What the two cases share is the shape of the answer, not the mechanism. In both,
 
 ### What the count does not derive
 
-No gauge invariance. The rank drop on the cone is not the statement that the massless field has a gauge symmetry. Gauge invariance is a statement about a transformation that leaves the equation fixed, and it is an input of the Maxwell and Proca articles. The rank reports the dimension of an image; the gauge argument reports an equivalence class. They meet in the count and they are not the same statement.
+No local invariance. The rank drop on the cone is not the statement that the massless field has a local symmetry. Local invariance is a statement about a transformation that leaves the equation fixed, and it is an input of the Maxwell and Proca articles. The rank reports the dimension of an image; the gauge argument reports an equivalence class. They meet in the count and they are not the same statement.
 
 No Higgs mechanism. The passage from three to two as the mass is turned off is a discontinuity of the count, and the mechanism that makes it continuous is the Stueckelberg field, which the Proca article records. The rank sees the discontinuity and nothing else; it has no scalar to give the third direction to.
 
@@ -310,7 +310,7 @@ The eigenvectors are null. $\varepsilon_{\mathrm{fop},+}^{2}=\varepsilon_{\mathr
 
 The three counts of the corpus are three readings of one rank. The massive vector has three because it is off the cone, the massless vector has two because it is on it, and the graviton has two by a different mechanism on a different carrier. The massless agreement is an agreement of dimensions, and §*The massless field counts two* states where the direction-by-direction correspondence stops.
 
-What is not derived. Gauge invariance, the value of a mass, the mechanism of the massless limit, and the identification of a direction with a state. The rank is exact; the reading is imported, and the article marks where.
+What is not derived. Local invariance, the value of a mass, the mechanism of the massless limit, and the identification of a direction with a state. The rank is exact; the reading is imported, and the article marks where.
 
 ## Summary of Notation
 

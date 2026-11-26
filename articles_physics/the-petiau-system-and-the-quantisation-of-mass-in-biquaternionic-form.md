@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The masses of the elementary particles are the one part of the Standard Model that the theory does not explain. The renormalisable Lagrangian carries a Yukawa coupling for every charged fermion, and each of those couplings is a free parameter fixed only by measurement; the theory is consistent for any values, and no principle internal to it selects the ones nature uses. The same is true of the gauge-boson masses, which follow from one scalar parameter of the potential. Mass is an input, not an output.
+The masses of the elementary particles are the one part of the Standard Model that the theory does not explain. The renormalisable Lagrangian carries a Yukawa coupling for every charged fermion, and each of those couplings is a free parameter fixed only by measurement; the theory is consistent for any values, and no principle internal to it selects the ones nature uses. The same is true of the connection masses, which follow from one scalar parameter of the potential. Mass is an input, not an output.
 
 The biquaternion framework does not by itself derive a single mass value — an algebra with no scale cannot. But it carries a specific line of work in which the mass parameter is treated as a **field** and the field equations for the mass are **closed on themselves**. That line runs from Lanczos's 1929 reformulation of Dirac's equation, through Einstein and Mayer's 1933 promotion of the mass to a biquaternion, to Petiau's 1965 closed nonlinear system. The present article states that line, verifies the parts that are pure algebra, and keeps the parts that are speculation labelled as such.
 

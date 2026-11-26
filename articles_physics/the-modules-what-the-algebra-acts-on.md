@@ -414,7 +414,7 @@ The carrier of the module is not yet a field. A field is an element of the carri
 - The Peirce pair and the tensor split of the Pauli display are one splitting, written as ideals and as a tensor index.
 - The two slots of the display are copies of $S$; chirality is the pair $(S,S^{\mathrm{c}})$, graded by $\mathsf V_{\mathrm{vol}}=-iR_{\vec e_z}$, and it is a real structure.
 - The star does not exchange the two spinor spaces: it maps $S_+$ to the right row $\tilde\Pi_{\mathrm{id},+}\mathbb{B}$.
-- A spinor has an intrinsic diagonal coefficient and an intrinsic nilpotent part; the mixed coordinate is gauge-dependent.
+- A spinor has an intrinsic diagonal coefficient and an intrinsic nilpotent part; the mixed coordinate is representative-dependent.
 - The two nilpotents are two square-zero steps, and the ladder has two rungs because the carrier has two lines.
 - The module carries an indefinite bilinear form and a canonical swap, and no positivity: the Hermitian form is a second structure.
 - The invertibles act on the line of polarizations by Möbius transformations through $PGL_2(\mathbb{C})$, transitively, with a Borel stabiliser.
@@ -433,7 +433,7 @@ The carrier of the module is not yet a field. A field is an element of the carri
 | $\Pi_u=\tfrac12(e_t+iu\cdot\vec e)$ | the rank-one idempotent at $u\in\mathbb{C}^{3}$, $u\cdot u=1$ |
 | $Ξ_{\mathrm{wfn},+}=a\tilde\Pi_{\mathrm{id},++}\jmath_+$ | the intrinsic form of a positive spinor |
 | $a,c,b,d$ | Peirce coordinates of the two spinors |
-| $t\in\mathbb{C}^{\times}$ | the gauge parameter of a Peirce basis |
+| $t\in\mathbb{C}^{\times}$ | the parameter of a Peirce basis |
 | $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ | the trace form on the carrier |
 | $\sigma(L_aR_b)=L_bR_a$ | the swap |
 | $\mathsf V_{\mathrm{vol}}=-iR_{\vec e_z}$ | the chirality basis operator |

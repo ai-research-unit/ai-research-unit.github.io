@@ -35,9 +35,9 @@ $$
 
 **Not established.** Nothing here says *why* the condensate forms. The scalar potential is not derived anywhere in the corpus, and this article does not pretend to derive it. **What is established is what follows once the condensate exists** — and that is a great deal, because the entire mass spectrum of the first breaking follows from one direction.
 
-**What "breaking" means here, stated before it is used.** Two things happen to the six generators at once, and they are the same event seen twice: **they are eaten** (each becomes the longitudinal mode of a now-massive vector) and **they become heavy** ($32v^{2}$ each). Neither is a destruction. **The six are absent from the spectrum below the transition and present in it above; that is what a condensate does to a gauge direction.**
+**What "breaking" means here, stated before it is used.** Two things happen to the six generators at once, and they are the same event seen twice: **they are eaten** (each becomes the longitudinal mode of a now-massive vector) and **they become heavy** ($32v^{2}$ each). Neither is a destruction. **The six are absent from the spectrum below the transition and present in it above; that is what a condensate does to a redundant direction.**
 
-**And the mass they acquire is the mass they did not have, stated as plainly as the corpus can put it.** Above $M_C$ the six are **massless** — exactly zero, not small — because the operator whose spectrum is the mass matrix, $M^{2}=2v^{2}[D,[D,\cdot]]$, has nothing to act on until $D$ is the condensate's direction, and because the gauge symmetry is unbroken there and forbids a mass to every order. **Nothing in $\mathrm{SU}(4)$ makes the sextet heavy.** The number $32v^{2}$ in the box above is produced by the vacuum at $M_C$ and does not exist before it. **So "the leptoquarks are heavy" is a statement about the broken phase, and the unbroken phase has fifteen massless vectors, all of them.**
+**And the mass they acquire is the mass they did not have, stated as plainly as the corpus can put it.** Above $M_C$ the six are **massless** — exactly zero, not small — because the operator whose spectrum is the mass matrix, $M^{2}=2v^{2}[D,[D,\cdot]]$, has nothing to act on until $D$ is the condensate's direction, and because the local symmetry is unbroken there and forbids a mass to every order. **Nothing in $\mathrm{SU}(4)$ makes the sextet heavy.** The number $32v^{2}$ in the box above is produced by the vacuum at $M_C$ and does not exist before it. **So "the leptoquarks are heavy" is a statement about the broken phase, and the unbroken phase has fifteen massless vectors, all of them.**
 
 **Where the rest is.** The mass matrix is derived in §*The Mass the Six Acquire*, together with the basis question. The six states are [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html), which owns their mass relation and their experimental bound. The scalar that condenses is the line in the centre, fixed in §*The Condensate*. **What the six cannot do — become the weak bosons — is [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html)**, and it is the reason the next article is about an index rather than about debris.
 
@@ -75,7 +75,7 @@ $$
 \mathfrak{u}(3)=\{X\in\mathfrak{su}(4)\ :\ [iD,X]=0\},
 $$
 
-**the block-diagonal matrices acting on the three colour directions, traceless.** Its dimension is $1+9-1=9$: one corner entry, a $3\times3$ block, and the trace condition removing one. **That nine is the whole of the surviving gauge sector, and it is computed, not assumed.**
+**the block-diagonal matrices acting on the three colour directions, traceless.** Its dimension is $1+9-1=9$: one corner entry, a $3\times3$ block, and the trace condition removing one. **That nine is the whole of the surviving sector, and it is computed, not assumed.**
 
 ## The Adjoint Action, Which Is the Whole Theorem
 
@@ -251,7 +251,7 @@ $$
 | object | before | after | in what sense |
 | --- | --- | --- | --- |
 | the group | $\mathrm{SU}(4)$, dimension $15$ | $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$, dimension $9$ | it breaks |
-| the six leptoquarks | massless gauge directions | massive vectors, $M_X^{2}=16g_4^{2}v_C^{2}$ | heavy, not absent from the theory |
+| the six leptoquarks | massless redundant directions | massive vectors, $M_X^{2}=16g_4^{2}v_C^{2}$ | heavy, not absent from the theory |
 | the rank | $3$ | $3$ | it does not move |
 | the colour | inside the fifteen | a stabiliser factor | it survives, and survives exactly |
 
@@ -263,7 +263,7 @@ $$
 
 **Nothing in this article removes a generator from the model.** The fifteen arrays are the same fifteen above and below the transition; what changes is which of them the ground state commutes with. **A condensate is a property of the vacuum, so the breaking is a property of one phase of the theory and not of its Lagrangian**, and the Lagrangian is one $\mathrm{SU}(4)$ theory at every scale.
 
-**So the primordial force is not gone, and the word for what happens to it is breaking.** Above $M_C$ the condensate is absent, the fifteen directions are all massless gauge directions, and the group is one simple factor. Below $M_C$ the same fifteen are read through a vacuum that commutes with nine of them and not with six. **The two descriptions are one theory in two phases**, and the passage between them is the vanishing of one scalar expectation value.
+**So the primordial force is not gone, and the word for what happens to it is breaking.** Above $M_C$ the condensate is absent, the fifteen directions are all massless redundant directions, and the group is one simple factor. Below $M_C$ the same fifteen are read through a vacuum that commutes with nine of them and not with six. **The two descriptions are one theory in two phases**, and the passage between them is the vanishing of one scalar expectation value.
 
 **What would restore it, stated as a reading and not as a result.** A condensate that vanishes restores the symmetry. Three routes do that: a temperature of order $M_C$; a field excursion that carries the scalar to the origin; or a region in which the scalar never condensed. **The corpus derives none of the three**, because the scalar potential is not in it. What the corpus establishes is the spectrum on either side of the transition, and that is enough to say what restoration would look like and what it would cost.
 

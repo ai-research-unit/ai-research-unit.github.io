@@ -84,7 +84,7 @@ The frame's transport survives. Varying the frame gives the transport that rotat
 
 The charge and the spin survive. The phase's variation gives the charge and the frame's variation gives the spin density, with the connection entering only through the covariant derivative. Both expressions are the parent's, and the article's section on the charge and the spin is where they are displayed.
 
-The gauge covariance survives. The parent action is gauge invariant and the limit touches no term, so the truncated functional is gauge invariant. The truncation cannot break the gauge symmetry, because there is no truncation; the section says so once and does not labour it.
+The covariance survives. The parent action is invariant and the limit touches no term, so the truncated functional is invariant. The truncation cannot break the local symmetry, because there is no truncation; the section says so once and does not labour it.
 
 What does not survive, and this is the honest part. Nothing is lost, and nothing is gained: **the limit does not select a class of solutions, because it is not an approximation to anything**. The article's claim is that the order-zero structure is exact, and that the "non-quantum" name describes an exact structure rather than a limit of one.
 

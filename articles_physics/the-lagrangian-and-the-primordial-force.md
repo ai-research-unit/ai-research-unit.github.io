@@ -6,7 +6,7 @@ This article writes the $\mathrm{SU}(4)$ action in one display, derives the equa
 
 The pieces of the action exist in the corpus as fragments. *The Feynman Rules of the Model* writes one covariant derivative and four pieces and then reads rules off them; the scalar census counts sixteen real components and says in as many words that it establishes no potential; the Yukawa sector diagonalises one matrix. **No article writes them in one display and derives from them.** This one does, and it is the article the block exists for: every other force block of the corpus carries its Lagrangian article, and the primordial force carried none.
 
-The parent is *The Lagrangian and the Non-Abelian Gauge Fields*, which writes $-\tfrac12\operatorname{tr}(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath})$ for $\mathrm{SU}(2)$ and proves that the trace which makes the density gauge invariant is the matrix trace and not the corpus's informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. **That step does not change here.** What changes is the size of the matrix and the status of the result, and the status is the harder half.
+The parent is *The Lagrangian and the Non-Abelian Gauge Fields*, which writes $-\tfrac12\operatorname{tr}(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath})$ for $\mathrm{SU}(2)$ and proves that the trace which makes the density invariant is the matrix trace and not the corpus's informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. **That step does not change here.** What changes is the size of the matrix and the status of the result, and the status is the harder half.
 
 Three things are established.
 
@@ -22,7 +22,7 @@ $$
 
 with one covariant derivative, $D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}t_{a}$, and one gauge coupling. **The coupling is the same $g_4$ in the gauge, fermion and scalar kinetic terms**, and that identity is the whole content of the words *one force*. **The display carries seven terms and four dynamical pieces**, the other three being the gauge-fixing, the ghosts and the Yukawa. **One force does not mean one parameter**: the scalar's six coefficients $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$, $\lambda_{1}$, $\lambda_{2}$, $\lambda_{3}$ and $\lambda_{4}$, the Yukawa matrix $y$, the gauge parameter $\zeta$ and the topological angle $\theta_{4}$ are nine more numbers, and §*What the Display Does Not Contain* lists them.
 
-*Second, the equations and the count.* The stationarity condition is $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\jmath}=-g_4\,j_{a,\jmath}$, with the current built from the sixteen and the scalar matrix; the temporal component is a Gauss law per generator, fifteen in all; and the constraint algebra fixes the degrees of freedom to $15\times2$ for the gauge fields, $32$ states for the fermions and $16$ real for the scalar.
+*Second, the equations and the count.* The stationarity condition is $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\jmath}=-g_4\,j_{a,\jmath}$, with the current built from the sixteen and the scalar matrix; the temporal component is a Gauss law per generator, fifteen in all; and the constraint algebra fixes the degrees of freedom to $15\times2$ for the connections, $32$ states for the fermions and $16$ real for the scalar.
 
 *Third, the status, and it is the point of the article.* $\mathrm{SU}(2)$ is written *in* the algebra; $\mathrm{SU}(4)$ is written *on* it. The compact group of $\mathbb{B}$ is $\mathrm{U}(2)$, of real dimension four, and fifteen generators do not fit inside four. **So the action below is a transcription and not a derivation**, and it stands with $\mathrm{SU}(3)$ on the transcribed side of the ceiling, not with $\mathrm{SU}(2)$ on the derived side. *Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$* owns the argument; this article states where its display falls in it.
 
@@ -49,7 +49,7 @@ $$
 
 **The traces.** $\operatorname{tr}$ is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ enlarged to the $4\times4$ matrices that represent $\mathfrak{su}(4)$; $\mathrm{Sc}$ is the coefficient of $e_t$ in an element of $\mathbb{B}$. **The two are different functionals and only the first is used in the action**, for the reason §*The Trace and Not the Reduction* gives.
 
-**The fields.** $A_{a,\imath}$ is the gauge field of generator $a$, real; $F_{a,\imath\jmath}$ its field strength; $\xi_{f}$, $f=1,\dots,16$, the Weyl fields of $2\cdot\mathbf{4}\oplus2\cdot\bar{\mathbf{4}}$; $Ξ$ the scalar, a $4\times4$ Hermitian matrix in the colour indices and carrying no copy index, so $15+1=16$ real parameters; $\gamma_{\imath}$ the Dirac matrices, written low.
+**The fields.** $A_{a,\imath}$ is the connection of generator $a$, real; $F_{a,\imath\jmath}$ its field strength; $\xi_{f}$, $f=1,\dots,16$, the Weyl fields of $2\cdot\mathbf{4}\oplus2\cdot\bar{\mathbf{4}}$; $Ξ$ the scalar, a $4\times4$ Hermitian matrix in the colour indices and carrying no copy index, so $15+1=16$ real parameters; $\gamma_{\imath}$ the Dirac matrices, written low.
 
 ## The Display
 
@@ -61,7 +61,7 @@ $$
 | fermion kinetic | the sixteen | the fermion–gauge vertex, one matrix per generator |
 | scalar kinetic | $Ξ$, sixteen real | the gauge–scalar vertex and the mass of the six |
 | $V(Ξ)$ | $Ξ$ | the scalar self-couplings |
-| $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{\mathrm{gh}}$ | fifteen ghosts | the gauge-fixing and ghost vertices |
+| $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{\mathrm{gh}}$ | fifteen ghosts | the fixing the representative and ghost vertices |
 | $\mathcal{L}_{\mathrm{Yuk}}$ | fermions and $Ξ$ | one matrix in the family index |
 
 **Why the gauge piece is written with $\tfrac14$ and the element form with $\tfrac12$.** The two are the same number read in two bases. With $F_{\imath\jmath}=\sum_{a}F_{a,\imath\jmath}t_{a}$, the normalised generators of §*The Normalisation* and not the printed arrays, and $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$,
@@ -73,7 +73,7 @@ $$
 
 so $-\tfrac12\operatorname{tr}(\sum FF)=-\tfrac14\sum_{a}FF$. **The coefficient is not a choice**: it is fixed once the generators are normalised, and the normalisation is fixed by the requirement that the kinetic term of $A_{a,\imath}$ be canonical. **Written with the printed $G_{a}$ instead, the trace norms are $2$ and $12$ and the coefficient is not $\tfrac14$** — which is why every vertex in this block is read from $t_{a}$ and not from $G_{a}$.
 
-**Why nothing else appears at dimension four.** The gauge invariant, parity-even, dimension-four functionals of the fifteen alone are the square of the curvature and nothing else. A cubic term vanishes because $\operatorname{tr}$ of an odd number of generators is zero, and a term with a derivative of the curvature has dimension five. **One further term exists and is not written**: the topological density $\operatorname{tr}(\mathbb{F}\wedge\mathbb{F})$, whose integral is quantised and whose coefficient $\theta_4$ is a free parameter of the Lagrangian and not a function of the group. It is named here and left to *The $\mathrm{SU}(4)$ Instanton*, **which also shows that it is redundant above $M_C$**, where the sixteen are massless and a chiral rotation removes it. **It is also the one dimension-four term the group allows that is odd under $CP$**, and that is worth one sentence because the corpus says elsewhere that the sixteen is closed under $CP$: the closure is a statement about the field list, a $CP$ map exists and permutes it, while the Lagrangian's $CP$ is a statement about the values of the mass phases $\arg\det m$ and of the Yukawa phases, and neither is fixed by the group. **So the model can be $CP$-conserving and it is not $CP$-symmetric by construction**, and the difference is a measurement rather than a convention.
+**Why nothing else appears at dimension four.** The invariant, parity-even, dimension-four functionals of the fifteen alone are the square of the curvature and nothing else. A cubic term vanishes because $\operatorname{tr}$ of an odd number of generators is zero, and a term with a derivative of the curvature has dimension five. **One further term exists and is not written**: the topological density $\operatorname{tr}(\mathbb{F}\wedge\mathbb{F})$, whose integral is quantised and whose coefficient $\theta_4$ is a free parameter of the Lagrangian and not a function of the group. It is named here and left to *The $\mathrm{SU}(4)$ Instanton*, **which also shows that it is redundant above $M_C$**, where the sixteen are massless and a chiral rotation removes it. **It is also the one dimension-four term the group allows that is odd under $CP$**, and that is worth one sentence because the corpus says elsewhere that the sixteen is closed under $CP$: the closure is a statement about the field list, a $CP$ map exists and permutes it, while the Lagrangian's $CP$ is a statement about the values of the mass phases $\arg\det m$ and of the Yukawa phases, and neither is fixed by the group. **So the model can be $CP$-conserving and it is not $CP$-symmetric by construction**, and the difference is a measurement rather than a convention.
 
 **The fermion piece in the corpus's coordinates.** The kinetic term is
 
@@ -119,7 +119,7 @@ and the group fixes none of the six coefficients. **Two quartics and not one in 
 
 **The trace has its own quadratic and its own sign, and that sign is what makes the vacuum traceless.** The symmetric minimum is $\mu_{\Phi}^{2}>0$ and $\mu_{2}^{2}>0$, so $\langleΞ\rangle=0$ and the group is exact: the first sign holds the matrix at the origin, the second holds its trace there. **The broken phase is not simply the other sign of $\mu_{\Phi}^{2}$**: as *The Primordial Potential* shows, once the trace is pinned at zero the declared vacuum $\operatorname{diag}(-3,1,1,1)$ is the minimum in the branch $\lambda_{1}<0$, and the even split is the minimum in the branch $\lambda_{1}>0$. **So the vacuum is two signs and not one** — one for the shape and one for the trace — and *The Breaking of the Primordial Force* reads the branch the corpus declares.
 
-**What tracelessness of the vacuum is, and what it is not.** It is the condition $\mu_{2}^{2}+\lambda_{3}\langle\operatorname{tr}Ξ^{2}\rangle>0$, which makes $\operatorname{tr}Ξ=0$ the minimum of the trace direction once the shape is chosen. **It is not a condition on the field**, and the difference shows in the count: sixteen components at this scale, six eaten, ten survivors. **And it costs nothing in the gauge sector**, because the identity commutes with every generator, $[\mathbb 1,t_{a}]=0$, so a shift $\Xi_{0}\mapsto\Xi_{0}+c\,\mathbb 1$ leaves the mass matrix $[\Xi_{0},[\Xi_{0},\cdot\,]]$ unchanged: the same $32v^{2}$, the same nine massless, the same six eaten. **The identity is invisible to the force and visible only to the scalar potential**, and that separation is why the corpus's numbers survive the correction untouched.
+**What tracelessness of the vacuum is, and what it is not.** It is the condition $\mu_{2}^{2}+\lambda_{3}\langle\operatorname{tr}Ξ^{2}\rangle>0$, which makes $\operatorname{tr}Ξ=0$ the minimum of the trace direction once the shape is chosen. **It is not a condition on the field**, and the difference shows in the count: sixteen components at this scale, six eaten, ten survivors. **And it costs nothing in the sector**, because the identity commutes with every generator, $[\mathbb 1,t_{a}]=0$, so a shift $\Xi_{0}\mapsto\Xi_{0}+c\,\mathbb 1$ leaves the mass matrix $[\Xi_{0},[\Xi_{0},\cdot\,]]$ unchanged: the same $32v^{2}$, the same nine massless, the same six eaten. **The identity is invisible to the force and visible only to the scalar potential**, and that separation is why the corpus's numbers survive the correction untouched.
 
 **This is the one place where the article writes coefficients the group does not supply, and it says so**: the scalar census refuses the potential on purpose, and the refusal is correct at that article's scope.
 
@@ -137,9 +137,9 @@ and the group fixes none of the six coefficients. **Two quartics and not one in 
 
 **What the second term of that pair buys.** It is what allows a minimum whose direction is not decided by the quadratic term alone, so the vacuum's *shape* — in particular whether the traceless part of $Ξ$ is a rank-one projector and not a multiple of the identity — is a dynamical question rather than a declared one. **The corpus's vacuum is that shape**, $Ξ\propto D$ with $D=\operatorname{diag}(-3,1,1,1)$, which is $-4$ times the traceless part of the rank-one projector $\operatorname{diag}(1,0,0,0)$. **The matrix is not itself rank one** — it is invertible, with four nonzero eigenvalues — and it is the traceless part alone that the two quartics see.
 
-**What it costs.** Six free numbers in a block whose virtue is that it has one coupling. **The gauge sector has one parameter and the scalar sector has six**, and the asymmetry is not a defect of the writing: it is the number of invariants a matrix admits once no condition is put on it.
+**What it costs.** Six free numbers in a block whose virtue is that it has one coupling. **The sector has one parameter and the scalar sector has six**, and the asymmetry is not a defect of the writing: it is the number of invariants a matrix admits once no condition is put on it.
 
-**The gauge-fixing and ghost pieces.** $\mathcal{L}_{\mathrm{gf}}=-\tfrac{1}{2\zeta}\sum_{a}\bigl(\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}A_{a,\imath}\bigr)^{2}$ with one parameter $\zeta$ for the whole group, and $\mathcal{L}_{\mathrm{gh}}=\sum_{a}\bar c_{a}\bigl(-\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}D_{\imath}\bigr)c_{a}$ with fifteen ghosts in the adjoint. **One parameter and not four**, which is the difference between this block and the electroweak one: there the four factors each carried a gauge parameter and the mixing made them unequal.
+**The fixing the representative and ghost pieces.** $\mathcal{L}_{\mathrm{gf}}=-\tfrac{1}{2\zeta}\sum_{a}\bigl(\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}A_{a,\imath}\bigr)^{2}$ with one parameter $\zeta$ for the whole group, and $\mathcal{L}_{\mathrm{gh}}=\sum_{a}\bar c_{a}\bigl(-\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}D_{\imath}\bigr)c_{a}$ with fifteen ghosts in the adjoint. **One parameter and not four**, which is the difference between this block and the electroweak one: there the four factors each carried a parameter and the mixing made them unequal.
 
 **The Yukawa piece, named and not written.** One contraction of the matrix and one matrix in the copy index,
 
@@ -187,7 +187,7 @@ which is the matrix *The Yukawa Sector* diagonalises, and which gives $m_\ell=3m
 
 **What a quartet would have given.** Nothing: $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$, and neither term contains a $\bar{\mathbf4}$, so the product $\bar{\mathbf4}\otimes\mathbf4\otimes\mathbf4$ has no singlet. **The table in §*The Scalar Content* is the whole argument**, and it is the reason the matrix reading is the model's.
 
-**What the fermion copy index adds.** $y_{\alpha\beta}$ is a $2\times2$ matrix on the two Weyl fields that share a colour index, so the pair is mixed by the Yukawa and not by the gauge sector. **Two eigenvalues, one diagonalisation, and the condensate's two entries $(-3v_C,+v_C)$ multiplying them**, which is the arithmetic of the mass relation and belongs to the article that computes it.
+**What the fermion copy index adds.** $y_{\alpha\beta}$ is a $2\times2$ matrix on the two Weyl fields that share a colour index, so the pair is mixed by the Yukawa and not by the sector. **Two eigenvalues, one diagonalisation, and the condensate's two entries $(-3v_C,+v_C)$ multiplying them**, which is the arithmetic of the mass relation and belongs to the article that computes it.
 
 ## The Normalisation, and Why the Corner Is Different
 
@@ -229,7 +229,7 @@ $$
 =\operatorname{tr}\Bigl(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath}\Bigr).
 $$
 
-**The corpus's informational reduction does not have that property.** $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is bilinear, symmetric and real on the material sector, but it is not cyclic, so a density built from it would change under a gauge transformation and the theory would not be a gauge theory. **The two functionals agree only where one factor is a scalar**, and a field strength is not a scalar. The proof is *The Lagrangian and the Non-Abelian Gauge Fields*'s; it is cited here rather than repeated, and it is the sharpest technical statement in either article.
+**The corpus's informational reduction does not have that property.** $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is bilinear, symmetric and real on the material sector, but it is not cyclic, so a density built from it would change under a local transformation and the theory would not be a gauge theory. **The two functionals agree only where one factor is a scalar**, and a field strength is not a scalar. The proof is *The Lagrangian and the Non-Abelian Gauge Fields*'s; it is cited here rather than repeated, and it is the sharpest technical statement in either article.
 
 **Reality and sign.** For anti-Hermitian $\mathbb{F}_{\imath\jmath}$, $\operatorname{tr}(\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath})$ is real, and $\operatorname{tr}(\mathbb{F}_{\imath\jmath}^{\dagger}\mathbb{F}_{\imath\jmath})=-\operatorname{tr}(\mathbb{F}^{2})$ is non-negative. **Reality is what the anti-Hermiticity buys, and that much is not a convention.** **Positivity is a different statement and it belongs to the Hamiltonian, not to the Lagrangian**: the density $-\tfrac12\operatorname{tr}(\sum\mathbb{F}\mathbb{F})$ is $\tfrac12\sum_{a}(E_{a}^{2}-B_{a}^{2})$ once the corpus's weights are applied to the summed pairs, so it changes sign between an electric and a magnetic configuration. **The energy that is bounded below is $\tfrac12\sum_{a}(E_{a}^{2}+B_{a}^{2})\ge0$**, and it is positive for the same reason.
 
@@ -251,7 +251,7 @@ $$
 
 **The scalar current is quadratic above $M_C$ and linear below it**, and that shift is the whole mechanism of the mass: with $Ξ=v+\delta Ξ$ the current splits into a piece in the fluctuation $\delta Ξ$ and a piece in $\delta Ξ\,\delta Ξ$, and the first is the $A$–$\delta Ξ$ mixing that a mass term is. Above the transition only the second piece is present, so no one-scalar emission exists and every direction stays massless — which is why the unbroken phase has no mass term and needs none.
 
-**The current is covariantly conserved.** Gauge invariance of the matter action makes $\sum_{\imath}\varepsilon_{\imath}D_{\imath}j_{\imath}$ vanish once the matter fields are on shell, so the conservation is a consequence of the invariance and not a further condition. **The ordinary divergence $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}j_{\imath}$ is not zero**, because it carries the $[A_{\imath},j_{\imath}]$ term. **So no gauge charge exists**, exactly as in the strong sector: the charge is defined only for the residual $\mathrm{SU}(3)\times\mathrm{U}(1)$ below $M_C$, and above it there is a current and no charge.
+**The current is covariantly conserved.** Local invariance of the matter action makes $\sum_{\imath}\varepsilon_{\imath}D_{\imath}j_{\imath}$ vanish once the matter fields are on shell, so the conservation is a consequence of the invariance and not a further condition. **The ordinary divergence $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}j_{\imath}$ is not zero**, because it carries the $[A_{\imath},j_{\imath}]$ term. **So no gauge charge exists**, exactly as in the strong sector: the charge is defined only for the residual $\mathrm{SU}(3)\times\mathrm{U}(1)$ below $M_C$, and above it there is a current and no charge.
 
 **The temporal component of the equation is not an equation of motion but a constraint.** $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,t\imath}=-g_{4}j_{a,t}$ contains no second time derivative of $A_{a,t}$, so it fixes $A_{a,t}$ in terms of the other fields: **a Gauss law per generator, fifteen in all.** Each is first class, so each removes two degrees of freedom from a four-component field, and the count is
 
@@ -259,7 +259,7 @@ $$
 4\times15\ \longrightarrow\ 2\times15=30
 $$
 
-for the gauge fields, before gauge fixing and with the ghosts counted separately.
+for the connections, before fixing the representative and with the ghosts counted separately.
 
 **The count, side by side.**
 
@@ -298,7 +298,7 @@ The dimension of the algebra's compact group is four. $\mathbb{B}\cong M_2(\math
 
 **Six absences, each deliberate.**
 
-- *No mass for the fifteen.* A mass term $\tfrac12m^{2}\sum_{a,\imath}A_{a,\imath}A_{a,\imath}$ is not gauge invariant, and none is written. The masses come from $\langleΞ\rangle$ and are the transition's.
+- *No mass for the fifteen.* A mass term $\tfrac12m^{2}\sum_{a,\imath}A_{a,\imath}A_{a,\imath}$ is not invariant, and none is written. The masses come from $\langleΞ\rangle$ and are the transition's.
 - *No potential coefficients.* $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$ and the four quartics are the six parameters the group does not fix.
 - *No Yukawa value.* One matrix, its entries free, its spectrum measured.
 - *No value of $g_4$.* The coupling multiplies the action and does not cancel from the equation, because the commutator carries one power of it and the derivative none; but its value is a boundary condition taken from below, and *The Primordial Coupling* owns it.
@@ -330,11 +330,11 @@ The dimension of the algebra's compact group is four. $\mathbb{B}\cong M_2(\math
 
 ## Summary
 
-The $\mathrm{SU}(4)$ Lagrangian is one coupling on fifteen generators and seven terms: the curvature's square, the sixteen's kinetic term, the scalar matrix's kinetic term and its potential, and the gauge-fixing, ghost and Yukawa pieces. **One $g_4$ enters the curvature and both covariant derivatives**, and that identity, not any vertex, is what the words *one force* mean. **The other nine numbers — $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$, the four quartics, $y$, $\zeta$ and $\theta_{4}$ — are parameters and not the couplings of a second and third force.** **The scalar sector's six are the price of a field that carries no condition**: the trace adds one quadratic and two quartics, and the identity part of the vacuum is invisible to the force, so none of the masses moves.
+The $\mathrm{SU}(4)$ Lagrangian is one coupling on fifteen generators and seven terms: the curvature's square, the sixteen's kinetic term, the scalar matrix's kinetic term and its potential, and the fixing the representative, ghost and Yukawa pieces. **One $g_4$ enters the curvature and both covariant derivatives**, and that identity, not any vertex, is what the words *one force* mean. **The other nine numbers — $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$, the four quartics, $y$, $\zeta$ and $\theta_{4}$ — are parameters and not the couplings of a second and third force.** **The scalar sector's six are the price of a field that carries no condition**: the trace adds one quadratic and two quartics, and the identity part of the vacuum is invisible to the force, so none of the masses moves.
 
 The normalisation is one rotation and three rescalings. The printed fifteen fail to be orthogonal in exactly one place, $\operatorname{tr}(d_{2}d_{3})=+1$; the rotation $c_{2}=d_{2}+d_{3}$, $c_{3}=d_{2}-d_{3}$ repairs it, with norms $2$ and $6$; and $t_{a}=iG_{a}/2$, $t_{c_{3}}=i(d_{2}-d_{3})/\sqrt{12}$, $t_{15}=iG_{15}/\sqrt{24}$ then give $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ for all fifteen. The corner is longer than a plane by $\sqrt6$, so every vertex that touches $B'$ carries the factor $1/\sqrt6$, and that factor comes from the trace and not from the group.
 
-The variation gives one equation and fifteen constraints. $D_{\imath}F_{a,\imath\jmath}=-g_4j_{a,\jmath}$ with a fermion term and a scalar term, the scalar one vanishing at $\langleΞ\rangle=0$; the temporal component is a Gauss law per generator; thirty degrees of freedom survive for the gauge fields, thirty-two states for the fermions and sixteen real for the scalar, and **the ghosts contribute nothing on shell, so the total is seventy-eight.**
+The variation gives one equation and fifteen constraints. $D_{\imath}F_{a,\imath\jmath}=-g_4j_{a,\jmath}$ with a fermion term and a scalar term, the scalar one vanishing at $\langleΞ\rangle=0$; the temporal component is a Gauss law per generator; thirty degrees of freedom survive for the connections, thirty-two states for the fermions and sixteen real for the scalar, and **the ghosts contribute nothing on shell, so the total is seventy-eight.**
 
 The trace is the matrix trace and not the informational reduction. Only cyclicity makes the density invariant, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is not cyclic, and the two agree only where one factor is a scalar. **This is the sharpest technical point of the article**: the one pairing the algebra owns is the one the action cannot use.
 
@@ -346,7 +346,7 @@ Six things are deliberately absent: a mass for the fifteen, the potential's coef
 
 | Symbol | Meaning |
 |---|---|
-| $A_{a,\imath}$, $F_{a,\imath\jmath}$ | Gauge field and field strength of generator $a$, $a=1,\dots,15$ |
+| $A_{a,\imath}$, $F_{a,\imath\jmath}$ | Connection and field strength of generator $a$, $a=1,\dots,15$ |
 | $g_4$ | The primordial coupling, one value for the whole group |
 | $T_{a}$, $t_{a}$ | The printed array, and its rescaled form with $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ |
 | $G_{a}$ | The printed anti-Hermitian array; the action is written in $t_{a}=iG_{a}/2$, $t_{c_{3}}=i(d_{2}-d_{3})/\sqrt{12}$, $t_{15}=iG_{15}/\sqrt{24}$ |
@@ -360,7 +360,7 @@ Six things are deliberately absent: a mass for the fifteen, the potential's coef
 | $\mu_{2}^{2}$ | the coefficient of $(\operatorname{tr}Ξ)^{2}$; positive, and that sign is what makes the vacuum traceless |
 | $y_{\alpha\beta}$ | The Yukawa matrix in the family index |
 | $j_{a,\jmath}$ | The total current: a fermion term and a scalar term |
-| $\zeta$ | The one gauge parameter of the group |
+| $\zeta$ | The one parameter of the group |
 | $c_{a}$, $\bar c_{a}$ | The fifteen ghosts in the adjoint |
 | $\theta_4$ | The coefficient of $\operatorname{tr}(\mathbb{F}\wedge\mathbb{F})$, free in the Lagrangian, not written; redundant above $M_C$ where the sixteen are massless |
 | $\mathbb{F}_{\imath\jmath}$ | The element form, $\sum_{a}F_{a,\imath\jmath}G_{a}$, anti-Hermitian; the same combination in $t_{a}$ is Hermitian |

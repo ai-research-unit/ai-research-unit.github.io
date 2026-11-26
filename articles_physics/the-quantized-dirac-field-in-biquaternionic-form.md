@@ -134,7 +134,7 @@ This was checked on the two-mode truncation of the algebra in the parent article
 
 The parity has three consequences that organize the rest of the article.
 
-**Observables are even.** A physical bilinear, such as the Dirac scalar $\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}i\vec e_x\tilde{Ξ}_{\mathrm{fop}}\bigr)$ or the current below, is quadratic in the field and therefore even, commuting with $(-1)^F$. This is why the physical content of the theory is in the bilinears: the field itself is not an observable, and the sign $\tilde{Ξ}_{\mathrm{fop}}\mapsto-\tilde{Ξ}_{\mathrm{fop}}$ is invisible to every gauge-invariant bilinear. The **observable algebra** is the even subalgebra of the field algebra; equivalently, the field is a square root of the observables.
+**Observables are even.** A physical bilinear, such as the Dirac scalar $\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}i\vec e_x\tilde{Ξ}_{\mathrm{fop}}\bigr)$ or the current below, is quadratic in the field and therefore even, commuting with $(-1)^F$. This is why the physical content of the theory is in the bilinears: the field itself is not an observable, and the sign $\tilde{Ξ}_{\mathrm{fop}}\mapsto-\tilde{Ξ}_{\mathrm{fop}}$ is invisible to every invariant bilinear. The **observable algebra** is the even subalgebra of the field algebra; equivalently, the field is a square root of the observables.
 
 **The grading is an algebra grading.** The operator algebra splits into an even part, commuting with $(-1)^F$, and an odd part, anticommuting with it, and products obey the graded rule: even$\cdot$even and odd$\cdot$odd are even, even$\cdot$odd is odd. The field operators anticommute with one another precisely because they are all odd. "Fermionic operators anticommute" and "the algebra is $\mathbb{Z}/2$-graded with the field in the odd part" are the same statement.
 
@@ -258,7 +258,7 @@ $$
 
 with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$ and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $5.3\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.2\times10^{-10}$; a single plane wave gives $1.2\times10^{-11}$, the same error floor. A single plane wave tests only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.
 
-In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}\tilde{Ξ}^*$ is gauge invariant and in $\mathbb{B}_{\Phi}$ but is *not* conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$ displayed above.
+In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}\tilde{Ξ}^*$ is invariant and in $\mathbb{B}_{\Phi}$ but is *not* conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$ displayed above.
 
 ### Spin
 
@@ -344,7 +344,7 @@ Distributing the outer $i$ with $i^2=-1$ gives the equivalent numerator $-\tilde
 - Companion article *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*, for the biquaternion plane waves $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ and the spin sums.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the spin–statistics connection and the $2\pi$ sign that the grading and the anticommutator share.
 - Companion article *The Feynman Propagator in Biquaternionic Form*, for the momentum-space two-point function and the deformation of the mass shell.
-- Companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, for the gauge-invariant current and the fixed units its bilinear carries.
+- Companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, for the invariant current and the fixed units its bilinear carries.
 - Companion article *The Electron in Biquaternionic Form*, for the one-particle sector interpretation of the spin bilinear.
 - *The Dirac Equation in Biquaternionic Form*, for the one-sided chiral pair and the two-sided dictionary that separates the two equations.
 

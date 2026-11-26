@@ -23,7 +23,7 @@ $$
 =\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi+\frac{2\pi i\,ϙ}{h}A_{\imath} ,
 $$
 
-with the connection's term added after the word has been differentiated and with no factor of $\tilde\Xi$ or $\tilde\Xi^{-1}$ attached to it. The separability is not an approximation: it is the algebraic mark of the abelian gauge group, whose parameter lies in the centre.
+with the connection's term added after the word has been differentiated and with no factor of $\tilde\Xi$ or $\tilde\Xi^{-1}$ attached to it. The separability is not an approximation: it is the algebraic mark of the abelian symmetry group, whose parameter lies in the centre.
 
 *Second, the connection therefore touches only the central slots, and the two-object pair survives.* A central scalar is either real or central imaginary in a given slot, and the four brackets of the word's logarithmic derivative contain exactly one bracket of each type: the scale is real and the phase is central imaginary. So the connection merges with those two and cannot reach the boost or the rotor, and for a central field the whole coupling is the substitution
 
@@ -116,20 +116,20 @@ $$
 \tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
 
-so the gauge transformation is the translation of $\theta_{\mathrm{pha}}$ by $\frac{2\pi ϙ\Lambda}{h}$ with the other seven parameters fixed, and the identity is exact because a central unit passes to the left through the whole word and the phase factor is the leftmost factor.
+so the local transformation is the translation of $\theta_{\mathrm{pha}}$ by $\frac{2\pi ϙ\Lambda}{h}$ with the other seven parameters fixed, and the identity is exact because a central unit passes to the left through the whole word and the phase factor is the leftmost factor.
 
-**What it says about the connection.** For a pure-gauge connection $A_{\imath}=\partial_{\imath}\Lambda$ the added term is $\frac{2\pi iϙ}{h}\partial_{\imath}\Lambda$, so
+**What it says about the connection.** For a pure-connection $A_{\imath}=\partial_{\imath}\Lambda$ the added term is $\frac{2\pi iϙ}{h}\partial_{\imath}\Lambda$, so
 
 $$
 i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath}
 =i\frac{\partial}{\partial R_{\imath}}\Bigl(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda\Bigr),
 $$
 
-and the whole effect of the potential is absorbed by a reparameterisation of one coordinate. That is the polar statement of gauge invariance: the connection's content in the chart is that one coordinate is not physical.
+and the whole effect of the potential is absorbed by a reparameterisation of one coordinate. That is the polar statement of local invariance: the connection's content in the chart is that one coordinate is not physical.
 
-**The finite statement and its caveat.** For a finite shift the translated angle may leave $(-\pi/2,\pi/2]$, and then the first factor is no longer in the chart's normal form; the excess is absorbed by the other factors. The chart is therefore not closed under the gauge group although the field is, and the article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates. The Proca companion records the same caveat in the same terms.
+**The finite statement and its caveat.** For a finite shift the translated angle may leave $(-\pi/2,\pi/2]$, and then the first factor is no longer in the chart's normal form; the excess is absorbed by the other factors. The chart is therefore not closed under the symmetry group although the field is, and the article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates. The Proca companion records the same caveat in the same terms.
 
-**What the coupling adds to this picture.** Nothing, and that is the point. The gauge transformation was already a phase translation; the coupling is what makes the translation *local*, because the connection's transformation law is what allows $\Lambda$ to depend on the coordinates. The chart shows the two facts as one: a local translation of one coordinate is a gauge transformation, and a global translation of it is a change of the field's phase.
+**What the coupling adds to this picture.** Nothing, and that is the point. The local transformation was already a phase translation; the coupling is what makes the translation *local*, because the connection's transformation law is what allows $\Lambda$ to depend on the coordinates. The chart shows the two facts as one: a local translation of one coordinate is a local transformation, and a global translation of it is a change of the field's phase.
 
 ## The Equation in Polar Variables: the Central Field
 
@@ -191,7 +191,7 @@ $$
 \tilde P^{\mathrm{mech}}_\Phi=i\,\frac{E+ϙ c\,a'_t}{c}\,e_t+\bigl(\vec p-q\vec A\bigr),
 $$
 
-and it is gauge invariant: the phase's shift and the potential's shift cancel inside each component, which is the chart's form of the element companion's statement that every derivative in the current is covariant. The free current was not gauge invariant, and the coupling repairs that. It does not repair the sign: on the negative-frequency branch the temporal component is negative, and the positive definiteness of $\rho_{\mathrm{num}}$ is exactly as absent as it was.
+and it is invariant: the phase's shift and the potential's shift cancel inside each component, which is the chart's form of the element companion's statement that every derivative in the current is covariant. The free current was not invariant, and the coupling repairs that. It does not repair the sign: on the negative-frequency branch the temporal component is negative, and the positive definiteness of $\rho_{\mathrm{num}}$ is exactly as absent as it was.
 
 **The vorticity.** The free flow is the gradient of the action and is therefore irrotational. The coupled flow is not:
 
@@ -211,7 +211,7 @@ $$
 
 the first term because $\vec p=\frac{h}{2\pi}\nabla\theta$ is a gradient and its circulation is quantized in units of $h$, the second because the circulation of the vector potential is the magnetic flux through the loop. The mechanical circulation is therefore quantized *up to the flux*, which is the chart's exact statement of the flux-quantization and Aharonov–Bohm structure: a loop that encloses flux $\digamma_{\mathrm{flx}}$ has a mechanical circulation shifted by $ϙ\digamma_{\mathrm{flx}}$, and the shift is visible to the phase even where the field strength vanishes on the loop.
 
-**What the chart shows here that the element form does not.** The element form's current is a bilinear and its gauge invariance is a cancellation between two terms. The chart's current is the density times a four-vector, its gauge invariance is a cancellation inside one component, and its vorticity is one curl. The three statements are the same statement, and the chart is the one that exhibits the vorticity, because the vorticity is a statement about a vector field and the chart is where the vector field is written.
+**What the chart shows here that the element form does not.** The element form's current is a bilinear and its local invariance is a cancellation between two terms. The chart's current is the density times a four-vector, its local invariance is a cancellation inside one component, and its vorticity is one curl. The three statements are the same statement, and the chart is the one that exhibits the vorticity, because the vorticity is a statement about a vector field and the chart is where the vector field is written.
 
 ## What the Chart Cannot Carry
 
@@ -237,7 +237,7 @@ and the second term is the field strength conjugated by the field.
 
 - The count: the connection enters as one central scalar per slot and therefore touches two of the four brackets, with the temporal slot real and the spatial slots imaginary.
 - The one substitution: $\frac{h}{2\pi} cP_t=E+ϙca'_t$ and $\frac{h}{2\pi}\vec P=\vec p-q\vec A$, the two classical replacements in one element, with the bracket's temporal coefficient equal to $-iP_t$.
-- The gauge transformation as the translation of one coordinate, exact infinitesimally.
+- The local transformation as the translation of one coordinate, exact infinitesimally.
 - The pair of equations as the parent's pair with the mechanical momentum and the same quantum potential.
 - The vorticity, $ϙ\vec B$, and the circulation, $h n+ϙ\digamma_{\mathrm{flx}}$: the two statements that the coupling changes the qualitative character of the flow rather than only its numbers.
 
@@ -273,7 +273,7 @@ $$
 \vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A)\bigr)-\frac{\partial}{\partial r'_t}\bigl(\rho_{\mathrm{num}}(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)\bigr)=0 .
 $$
 
-The quantum potential and the density are unchanged; the momentum is not, the current is gauge invariant, the vorticity is $ϙ\vec B$, and the circulation is $h n+ϙ\digamma_{\mathrm{flx}}$. The chart carries the component equation and cannot carry the algebra's equation, whose curvature term is a general element after conjugation by the field; that is the polar face of the element companion's prohibition on central fields in a nonzero field strength.
+The quantum potential and the density are unchanged; the momentum is not, the current is invariant, the vorticity is $ϙ\vec B$, and the circulation is $h n+ϙ\digamma_{\mathrm{flx}}$. The chart carries the component equation and cannot carry the algebra's equation, whose curvature term is a general element after conjugation by the field; that is the polar face of the element companion's prohibition on central fields in a nonzero field strength.
 
 ## Summary of Notation
 

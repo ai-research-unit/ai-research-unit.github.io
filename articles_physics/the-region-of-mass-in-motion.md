@@ -811,7 +811,7 @@ The interpretation is that a kinematic state is a spectrum together with a frame
 
 The fibre is acted on by the rotations and fixed by the boosts. A rotation moves $\vec Q$ and preserves $\vec Q^{2}$, so it moves the fibre and fixes the spectrum. A boost moves both. That is the algebraic split between the two kinds of Lorentz transformation, and it is visible on the region alone.
 
-The boundary. The fibre is not a gauge orbit. Its points are distinct elements of the algebra, not descriptions of one element, and no quotient by rotations is taken here.
+The boundary. The fibre is not an orbit. Its points are distinct elements of the algebra, not descriptions of one element, and no quotient by rotations is taken here.
 
 ### I.10.p — The Mass Is the Product and the Energy Is the Sum
 
@@ -879,11 +879,11 @@ Read: the eigenbasis depends on $\tilde Q$, and no rotation-natural rational for
 
 **The frame that diagonalises an element cannot be built from the element alone.** The root $\vec{Ζ}$ is built from $\vec Q$, but the two nilpotents need one more direction: the symmetric formula uses $\vec w$, and the axis charts use $\vec e_{\imath}$. The obstruction is a theorem of invariant theory, not a failure of ingenuity.
 
-The interpretation is that a mode basis is a gauge choice. Two physicists who diagonalise the same momentum with different auxiliary directions get two bases related by the reciprocal rescaling, and nothing in the algebra prefers one. The physical content — the spectrum, the idempotents, the two ideals as subspaces — does not depend on the choice.
+The interpretation is that a mode basis is a choice of representative. Two physicists who diagonalise the same momentum with different auxiliary directions get two bases related by the reciprocal rescaling, and nothing in the algebra prefers one. The physical content — the spectrum, the idempotents, the two ideals as subspaces — does not depend on the choice.
 
-The invariance statement is the useful one. The pair is unique up to one complex rescaling, and the normalisation removes it. So the gauge freedom is one complex number, it acts on the two nilpotents reciprocally, and it leaves every product and every square invariant.
+The invariance statement is the useful one. The pair is unique up to one complex rescaling, and the normalisation removes it. So the redundancy is one complex number, it acts on the two nilpotents reciprocally, and it leaves every product and every square invariant.
 
-The boundary. The freedom is not a physical gauge field. It is a choice of basis inside one element's own frame, and no connection or curvature is attached to it here.
+The boundary. The freedom is not a physical connection. It is a choice of basis inside one element's own frame, and no connection or curvature is attached to it here.
 
 ### I.10.v — The Flow Is Unitary Only Where the Element Is Anti-Hermitian
 

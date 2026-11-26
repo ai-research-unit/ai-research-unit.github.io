@@ -35,7 +35,7 @@ with $\chi_{i}$ the sixteen real components of the Hermitian matrix, $\mu$ the r
 **Three things are being assumed and each is named.**
 
 - *The background is constant.* Gradient terms are dropped, so the result is a potential and not an action.
-- *The tree potential is the whole of the tree level.* No other field has a background, so the gauge and fermion determinants are field-independent and drop out.
+- *The tree potential is the whole of the tree level.* No other field has a background. **The gauge and ghost determinants then drop out**, because the identity background commutes with every generator and no vector mass depends on $\rho$; **the fermion determinant does not**, because the Yukawa turns the same background into a mass $y_{i}\rho/2$ for each of the sixteen Weyl fields. That term is computed in [The Machinery Under the Primordial Action](the-machinery-under-the-primordial-action-trace-curvature-ghosts-and-one-loop.html).
 - *The expansion is one loop.* Every statement below is first order in $\hbar$.
 
 **The Hessian is evaluated along one direction only, and the direction is chosen for a reason.** The identity, $Ξ_{0}=\frac{\rho}{2}\mathbb{1}$, is the phase's most symmetric point; **its little group is all of $\mathrm{SU}(4)$, so the Hessian's blocks are fixed by symmetry and no numerical diagonalisation is needed.**
@@ -87,7 +87,7 @@ $$
 
 **Two checks on $36$.** It is $15\cdot\tfrac94+1\cdot\tfrac94$, that is fifteen traceless modes and one trace mode, **all at the same mass** $\tfrac32\lambda_{1}\rho^{2}$ when $\lambda_{2}=0$. And $36=16\cdot\tfrac94$, so the coefficient is $9/(16\pi^{2})$ per the canonical $\frac{1}{64\pi^{2}}\times 36$.
 
-**The sign is positive and the sign is a conclusion.** $\mathcal{C}>0$ for $\lambda_{1}>0$, so the one-loop term raises the potential at large field and cannot destabilise it from above; the only place it can act against the tree term is where $\ln(\rho^{2}/\mu^{2})<0$, that is $\rho<\mu$.
+**The sign is positive for the scalar sector, and the scalar sector is not the whole of one loop.** $\mathcal{C}>0$ for $\lambda_{1}>0$, so the scalar modes raise the potential at large field and cannot destabilise it from above; the only place they act against the tree term is where $\ln(\rho^{2}/\mu^{2})<0$, that is $\rho<\mu$. **The fermion loop subtracts**, $-\frac{1}{64\pi^{2}}(y_{1}^{4}+y_{2}^{4})\rho^{4}\ln(\rho^{2}/\mu^{2})$, so at $y_{1}=y_{2}=y$ the total coefficient is $\frac{1}{16\pi^{2}}\bigl(9\lambda_{1}^{2}-\tfrac12y^{4}\bigr)$ and it is positive only for $y^{4}<18\lambda_{1}^{2}$. **The positivity below is the scalar sector's, and the condition that carries it to the potential is the fermion's.**
 
 ## Comparison With the Doublet
 
@@ -136,7 +136,7 @@ $$
 
 - *Other directions of the background.* At a background $Ξ_{0}\propto D$ the little group is $\mathrm{U}(3)$ and the Hessian's blocks are larger; **the coefficient there is a different number and this article does not compute it.** The identity was chosen because its blocks separate exactly.
 - *The two-loop term.* It is of order $\lambda^{3}$ and would shift the coefficient's logarithm; **it is omitted and the omission is declared rather than estimated.**
-- *The gauge and fermion determinants.* They are field-independent at a scalar background with no other condensate, so they drop out — **but only above $M_C$, where no vector has a mass depending on $Ξ$.**
+- *The gauge and ghost determinants.* They are field-independent at the identity background, because $[\mathbb{1},t_{a}]=0$ for all fifteen, so no vector mass depends on $\Xi$ — **and that is a property of this background and not of the phase.** The fermion determinant is not dropped; it is the term added in §*The Coefficient*.
 - *Resummation.* At $\rho\gg\mu$ the logarithm is large and the one-loop term must be resummed; **the corpus's other effective-potential articles say the same thing**, and none of them resums.
 
 ## The Checks
@@ -157,7 +157,7 @@ $$
 
 **The coefficient of $\rho^{4}\ln(\rho^{2}/\mu^{2})$ for the Hermitian scalar matrix at $\lambda_{2}=0$ is $\frac{9\lambda_{1}^{2}}{16\pi^{2}}=0.0570\lambda_{1}^{2}$, which is three times a doublet's at equal coupling.** It comes from an exactly diagonalised Hessian: fifteen traceless Hermitian modes and one trace mode, all at $\tfrac32\lambda_{1}\rho^{2}$ when the second quartic vanishes.
 
-**The sign is positive**, so the correction cannot destabilise the symmetric minimum from above, and the only region where it competes with the tree term is $\rho\lesssim1.7\mu$ at $\lambda_{1}=1$ — which is the region where a one-loop calculation is legitimate anyway.
+**The scalar sign is positive**, so the scalar modes cannot destabilise the symmetric minimum from above, and the region where they compete with the tree term is $\rho\lesssim9\mu$ at $\lambda_{1}=1$ — which is the region where a one-loop calculation is legitimate anyway. **The fermion loop is what can flip that sign**, and it does so for $y^{4}>18\lambda_{1}^{2}$.
 
 **The comparison with the doublet is the article's useful output.** A claim that the matrix sector is "bigger" becomes a number: three, from sixteen components instead of four and mass ratios of three halves against three and one.
 

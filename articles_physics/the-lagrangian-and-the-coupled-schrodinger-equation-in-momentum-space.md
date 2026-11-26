@@ -10,7 +10,7 @@ $\partial\sigma/\partial\omega=\frac{h}{2\pi}$ with or without the connection, b
 
 For a mode of unit norm, $E=\frac{1}{2m}\lvert h\,\vec\nu_{\Phi}-q\vec A\rvert^{2}-ϙ\omicron_{\mathrm{pot}}=-\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})$, verified over one hundred draws with zero residual. **The symbol is the action's density, and the energy is that density with the frequency set to zero and the sign flipped**, which is the standard sign of a Lagrangian's Legendre transform.
 
-A gauge transformation shifts $\omicron_{\mathrm{pot}}$ and $\vec A$, and the same transformation shifts the frequency and the wave vector of a mode. The two shifts cancel in the symbol, verified to $8.9\times10^{-16}$. **So the symbol is a function of $\mathcal E$ and $\vec\pi$ and not of the four ingredients separately**, and the two slots' opposite signs are exactly what makes the cancellation work.
+A local transformation shifts $\omicron_{\mathrm{pot}}$ and $\vec A$, and the same transformation shifts the frequency and the wave vector of a mode. The two shifts cancel in the symbol, verified to $8.9\times10^{-16}$. **So the symbol is a function of $\mathcal E$ and $\vec\pi$ and not of the four ingredients separately**, and the two slots' opposite signs are exactly what makes the cancellation work.
 
 The earlier companions report a sign for the frequency shift that a careless substitution would reverse. Here the reversal is visible as a failure of exactly the cancellation above, so the article can state which sign is the parent's and why.
 
@@ -79,7 +79,7 @@ Each of the three terms is real on its own, so the sum is real and no cancellati
 
 What the term-by-term structure forbids. It forbids a complex action from a real connection and a Hermitian Hamiltonian. **A complex action would need a non-Hermitian coefficient or a complex $ϙ$**, and the article's licence excludes both.
 
-$\lvert D_{\imath}\tilde\Xi\rvert$ is unchanged when $\tilde\Xi$ is multiplied by an invertible element, so the gauge transformation cannot change the gradient term. That invariance is the reason the action's gauge covariance is exact and not up to a total derivative, and the parent states it once.
+$\lvert D_{\imath}\tilde\Xi\rvert$ is unchanged when $\tilde\Xi$ is multiplied by an invertible element, so the local transformation cannot change the gradient term. That invariance is the reason the action's covariance is exact and not up to a total derivative, and the parent states it once.
 
 The potential is real by the licence, $\varrho\omicron_{\mathrm{pot}}$ with $\omicron_{\mathrm{pot}}$ real, so no sector is excluded. The exclusion needs a potential that is a free element, and that is the scalar family's case.
 
@@ -135,7 +135,7 @@ A nonzero mixed derivative would mean that the frequency's conjugate depends on 
 
 ## The Constraints the Action Imposes: Gauge Invariance of the Symbol
 
-Under a gauge transformation $\tilde\Xi\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde\Xi$, the connection moves as $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ and $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. A mode's phase moves as $\theta\mapsto\theta+\frac{2\pi ϙ\Gamma}{h}$, so its frequency and wave vector move as
+Under a local transformation $\tilde\Xi\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde\Xi$, the connection moves as $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ and $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. A mode's phase moves as $\theta\mapsto\theta+\frac{2\pi ϙ\Gamma}{h}$, so its frequency and wave vector move as
 
 $$
 \omega\longmapsto\omega-\frac{ϙ}{h}\partial_{t'}\Gamma,
@@ -147,9 +147,9 @@ Substituting the four shifts into $\sigma_{\mathrm{gco}}$ cancels $\partial_{t'}
 
 The symbol is a function of $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ and $\vec\pi=h\,\vec\nu_{\Phi}-q\vec A$ and of nothing else. The four ingredients are not independent, and the symbol's two arguments are the two invariants of the polar companion.
 
-The frequency shift in the symbol is $+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ and the mode's frequency shift under a gauge transformation is $-\frac{2\pi ϙ\partial_{t'}\Gamma}{h}$. The two signs differ, and they must differ, because $\omicron_{\mathrm{pot}}$ and $\partial_{t'}\Gamma$ enter $\mathcal E$ with the *same* sign while $\omega$ and $\partial_{t'}\Gamma$ enter with opposite signs. **A substitution that gave $\omega\mapsto\omega+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ with the other sign would break the cancellation**, and that is how the article detects the error rather than asserting the convention.
+The frequency shift in the symbol is $+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ and the mode's frequency shift under a local transformation is $-\frac{2\pi ϙ\partial_{t'}\Gamma}{h}$. The two signs differ, and they must differ, because $\omicron_{\mathrm{pot}}$ and $\partial_{t'}\Gamma$ enter $\mathcal E$ with the *same* sign while $\omega$ and $\partial_{t'}\Gamma$ enter with opposite signs. **A substitution that gave $\omega\mapsto\omega+\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ with the other sign would break the cancellation**, and that is how the article detects the error rather than asserting the convention.
 
-What the invariance does not say. It does not say that the action is gauge invariant. The action's value moves by a total derivative, which is the parent's statement and not this article's. The symbol's invariance is stronger and it needs no boundary term, because the symbol is a density at one point and a total derivative has no local content.
+What the invariance does not say. It does not say that the action is invariant. The action's value moves by a total derivative, which is the parent's statement and not this article's. The symbol's invariance is stronger and it needs no boundary term, because the symbol is a density at one point and a total derivative has no local content.
 
 A constant $\Gamma$ shifts both invariants by the same constants, so the symbol is invariant under a two-parameter translation of its arguments. That freedom is the constant-background case's, and it is why the polar companion can call the constant background exact.
 
@@ -159,7 +159,7 @@ The coupled symbol is the free symbol evaluated at the shifted potential, $\sigm
 
 Write the free symbol's defining identity, $\sigma(\omega)\tilde X=\bigl(\frac{h}{2\pi}(\omega-\omega_0)-\tilde H_\Psi\bigr)\tilde X$; replacing $\tilde H_\Psi$ by $\tilde H_\Psi-ϙ\tilde A$ shifts the zero of the frequency by $\frac{2\pi ϙ\tilde A}{h}$ and leaves the slope in $\omega$ unchanged. The slope is the article's *Legendre* result, and its invariance under the coupling is the statement that the coupling is not a velocity.
 
-What the shift cannot do. It cannot change the reality of the symbol, because $ϙ\tilde A$ is real and adding a real element to a Hermitian one keeps it Hermitian. So the coupled article's reality statements are the free ones, and the gauge invariance of the symbol is the statement that a shift by a gradient moves the zero and not the spectrum.
+What the shift cannot do. It cannot change the reality of the symbol, because $ϙ\tilde A$ is real and adding a real element to a Hermitian one keeps it Hermitian. So the coupled article's reality statements are the free ones, and the local invariance of the symbol is the statement that a shift by a gradient moves the zero and not the spectrum.
 
 ## The Noether Currents: The Charge Per Mode
 
@@ -217,7 +217,7 @@ The coupled action at fixed frequency is the coupled symbol: $\big\langle\tilde 
 
 The Legendre slope is $\frac{h}{2\pi}$ and the mixed derivative vanishes, so the frequency and the wave vector are separated and the problem is unconstrained. The energy is minus the symbol at zero frequency, $E=-\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})$, verified over one hundred draws with zero residual, and the sign is the Lagrangian's.
 
-The symbol is gauge invariant in the invariant coordinates: the four shifts cancel, verified to $8.9\times10^{-16}$, so $\sigma_{\mathrm{gco}}$ is a function of $\mathcal E$ and $\vec\pi$ alone. That invariance is also the resolution of the frequency shift's sign, because the opposite sign would break the cancellation.
+The symbol is invariant in the invariant coordinates: the four shifts cancel, verified to $8.9\times10^{-16}$, so $\sigma_{\mathrm{gco}}$ is a function of $\mathcal E$ and $\vec\pi$ alone. That invariance is also the resolution of the frequency shift's sign, because the opposite sign would break the cancellation.
 
 ## Summary of Notation
 

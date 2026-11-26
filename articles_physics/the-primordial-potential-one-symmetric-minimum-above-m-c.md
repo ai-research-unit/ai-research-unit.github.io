@@ -71,7 +71,7 @@ $$
 | the number of massless vectors | no vacuum | $15$ |
 | the leptoquark sextet's mass | no vacuum | $0$ |
 
-**The last two rows are the phase's defining property.** Fifteen massless vectors, sixteen massive scalars, and no scale in the gauge sector at all: **the unbroken phase has no $M_C$ in it**, and $M_C$ is the scale at which the vacuum forms. **The second row is the consequence a reader is likeliest to forget: the six leptoquarks are among the fifteen**, so in this phase they are massless — exactly, and not approximately — and the mass $32v^{2}$ they carry below $M_C$ is made by the vacuum and by nothing else.
+**The last two rows are the phase's defining property.** Fifteen massless vectors, sixteen massive scalars, and no scale in the sector at all: **the unbroken phase has no $M_C$ in it**, and $M_C$ is the scale at which the vacuum forms. **The second row is the consequence a reader is likeliest to forget: the six leptoquarks are among the fifteen**, so in this phase they are massless — exactly, and not approximately — and the mass $32v^{2}$ they carry below $M_C$ is made by the vacuum and by nothing else.
 
 ## The Boundedness Cone
 

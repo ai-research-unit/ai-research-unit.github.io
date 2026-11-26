@@ -126,7 +126,7 @@ The denial. The transform carries $\mathbb{B}_\Phi$-valued fields to $\mathbb{B}
 
 1. Whether the constraint can be solved by a transform of its own. A constraint that is a multiplier on one side and a correlation on the other is a nonlinear equation for the measure. Whether some other transform — a logarithm, a scattering transform, a division by the amplitude — makes it linear is not known to the author, and it is the natural next question for this rung.
 
-2. The rotor's invisibility. The chart has a rotor and no invariant reads it. Whether the rotor is a gauge freedom of the description, in the sense in which a redundant parameter is, or a physical datum that the invariants happen to miss, is not settled by the parent and is not settled here.
+2. The rotor's invisibility. The chart has a rotor and no invariant reads it. Whether the rotor is a redundancy of the description, in the sense in which a redundant parameter is, or a physical datum that the invariants happen to miss, is not settled by the parent and is not settled here.
 
 3. The number of currents at a label. The parent finds three currents and one conservation. Whether the other two have a momentum-space face at all, or whether they are exactly the ones the mode basis cannot see, is the question the last two sections circle and do not close.
 

@@ -2,15 +2,15 @@
 
 ## Introduction
 
-What the corpus has and what it lacks. The corpus has the electroweak group, its hypercharge assignment, its doublet, its potential, its gauge-boson masses, its quotient and its parity lock. It does not have the electroweak Lagrangian in one display, and this family has no quantised electroweak theory at all. This article writes the one Lagrangian in its two phases — unbroken and broken — and states what the variational principle says about each.
+What the corpus has and what it lacks. The corpus has the electroweak group, its hypercharge assignment, its doublet, its potential, its connection masses, its quotient and its parity lock. It does not have the electroweak Lagrangian in one display, and this family has no quantised electroweak theory at all. This article writes the one Lagrangian in its two phases — unbroken and broken — and states what the variational principle says about each.
 
-The answer in five sentences. The unbroken action is the gauge action of $SU(2)\times U(1)$ with one complex doublet and its potential. Its variation gives the Yang–Mills equations with the doublet's currents, the scalar's equation and the constraint that Gauss's law becomes for each generator. At the potential's minimum the doublet's gradient term becomes a mass term for three of the four gauge fields, and the count of degrees of freedom is preserved because the three would-be Goldstone modes become the longitudinal polarisations. The masses are therefore products of a coupling and a vacuum expectation value, not parameters. Nothing in the article is quantised: no gauge fixing, no ghost, no loop, no running.
+The answer in five sentences. The unbroken action is the gauge action of $SU(2)\times U(1)$ with one complex doublet and its potential. Its variation gives the Yang–Mills equations with the doublet's currents, the scalar's equation and the constraint that Gauss's law becomes for each generator. At the potential's minimum the doublet's gradient term becomes a mass term for three of the four connections, and the count of degrees of freedom is preserved because the three would-be Goldstone modes become the longitudinal polarisations. The masses are therefore products of a coupling and a vacuum expectation value, not parameters. Nothing in the article is quantised: no fixing the representative, no ghost, no loop, no running.
 
 Why both phases in one article. Because the breaking is a classical statement about a potential's minimum, and the corpus can make it exactly. A reader who has been told that the corpus "does not do the Standard Model" should see precisely what it does do: the classical action, its two phases, and the mass relation $m_W=gv/2$ with the count that forces it.
 
 ## Conventions
 
-The conventions are the corpus's, and they are the ones the menu's convention articles fix. The gauge group is $SU(2)_L\times U(1)_Y$ with couplings $g$ and $g_{\mathrm Y}$; the gauge fields are $W_{\imath,a}$ for $a=1,2,3$ and $B_{\imath}$; the field strengths are $W_{a,\imath\jmath}=\partial_{\imath} W_{a,\jmath}-\partial_{\jmath} W_{a,\imath}+g\epsilon_{abc}W_{b,\imath} W_{c,\jmath}$ and $B_{\imath\jmath}=\partial_{\imath} B_{\jmath}-\partial_{\jmath} B_{\imath}$. The doublet is $\omicron_{\mathrm{hgs}}$, a complex two-component column with hypercharge $Y_{\mathrm{hch}}=+\tfrac12$; its covariant derivative is
+The conventions are the corpus's, and they are the ones the menu's convention articles fix. The symmetry group is $SU(2)_L\times U(1)_Y$ with couplings $g$ and $g_{\mathrm Y}$; the connections are $W_{\imath,a}$ for $a=1,2,3$ and $B_{\imath}$; the field strengths are $W_{a,\imath\jmath}=\partial_{\imath} W_{a,\jmath}-\partial_{\jmath} W_{a,\imath}+g\epsilon_{abc}W_{b,\imath} W_{c,\jmath}$ and $B_{\imath\jmath}=\partial_{\imath} B_{\jmath}-\partial_{\jmath} B_{\imath}$. The doublet is $\omicron_{\mathrm{hgs}}$, a complex two-component column with hypercharge $Y_{\mathrm{hch}}=+\tfrac12$; its covariant derivative is
 
 $$
 D_{\imath}\omicron_{\mathrm{hgs}}=\Bigl(\partial_{\imath}+i\,g\,\tau_{a}W_{a,\imath}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath}\Bigr)\omicron_{\mathrm{hgs}} ,
@@ -32,7 +32,7 @@ $$
 
 with $\mathcal{L}_{\mathrm{matter}}$ the fermion kinetic terms with their covariant derivatives and the Yukawa couplings, which this article names and does not expand.
 
-Why each term is what it is. The two gauge terms are the Yang–Mills and Maxwell terms: quadratic in the field strengths, gauge invariant, and fixed in normalisation by the same requirement that fixes the Maxwell term — the charge that appears in the covariant derivative must be the charge that appears in the current. The scalar term is the Klein–Gordon kinetic term with the derivative covariantised, which is the same minimal-coupling step the coupled scalar article performs, applied twice because the group has two factors. The potential is the only term with a negative mass squared, and it is the term that decides the phase.
+Why each term is what it is. The two gauge terms are the Yang–Mills and Maxwell terms: quadratic in the field strengths, invariant, and fixed in normalisation by the same requirement that fixes the Maxwell term — the charge that appears in the covariant derivative must be the charge that appears in the current. The scalar term is the Klein–Gordon kinetic term with the derivative covariantised, which is the same minimal-coupling step the coupled scalar article performs, applied twice because the group has two factors. The potential is the only term with a negative mass squared, and it is the term that decides the phase.
 
 The two phases, and why the same action has them. The potential's minimum is at $\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}=\mu^{2}/2\digamma_{\mathrm{qtc}}\equiv v^{2}/2$, a circle of minima and not a point. If $\mu^{2}<0$ the minimum is at $\omicron_{\mathrm{hgs}}=0$ and the action's ground state is symmetric; if $\mu^{2}>0$ it is not. The action does not change between the phases; the vacuum does. That is the classical content of "spontaneous breaking", and the corpus can state it exactly.
 
@@ -44,7 +44,7 @@ $$
 
 which is a mass term for the combinations $W^{\pm}=(W_1\mp iW_2)/\sqrt2$ and $Z=(gW_3-g_{\mathrm Y}B)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, and none for $A=(g_{\mathrm Y}B+gW_3)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$. The masses are $m_W=gv/2$, $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}\,v/2$ and $m_A=0$.
 
-**What the display is not.** It is not a gauge-fixing term and not a quantisation. It is the same action, evaluated at a chosen vacuum, with the scalar's fluctuations kept. The chart is called unitary because it keeps only the physical scalar; the quantised theory's $R_\xi$ charts are a different construction and are not in this article.
+**What the display is not.** It is not a fixing term and not a quantisation. It is the same action, evaluated at a chosen vacuum, with the scalar's fluctuations kept. The chart is called unitary because it keeps only the physical scalar; the quantised theory's $R_\xi$ charts are a different construction and are not in this article.
 
 ## The Variation
 
@@ -68,15 +68,15 @@ The constraint. Take the time component of the gauge equations and the divergenc
 
 The boundary term. Each variation is first or second order as its parent is; the gauge variations are second order and their surface terms are killed by holding the field and its normal derivative fixed. The scalar's variation is second order and the same condition applies.
 
-**What the variation does not give.** It does not give the ghost terms, the gauge-fixing terms or the BRST structure. Those belong to the quantised theory, which this family does not contain; the corpus's $R_\xi$ article states them for the standard theory and is not this family's.
+**What the variation does not give.** It does not give the ghost terms, the fixing terms or the BRST structure. Those belong to the quantised theory, which this family does not contain; the corpus's $R_\xi$ article states them for the standard theory and is not this family's.
 
 ## The Constraints the Action Imposes
 
-Four Gauss laws, one per generator, and one orbit. The unbroken action's constraints are the four $\mu=0$ gauge equations, $D_j W_{a,j0}=\rho_{a}$ and $\partial_j B^{j0}=\rho^{Y}$, conditions on the initial data for each generator. The gauge orbit is the four-function local group, acting on the gauge fields and the doublet together.
+Four Gauss laws, one per generator, and one orbit. The unbroken action's constraints are the four $\mu=0$ gauge equations, $D_j W_{a,j0}=\rho_{a}$ and $\partial_j B^{j0}=\rho^{Y}$, conditions on the initial data for each generator. The orbit is the four-function local group, acting on the connections and the doublet together.
 
-The count, before and after. Before breaking: four gauge fields, two polarisations each if massless — eight; one complex doublet, four real scalars; total twelve. After breaking: three massive vectors, three polarisations each — nine; one massless vector, two — two; one physical scalar — one; total twelve. The count is preserved, and the three that moved are the three would-be Goldstone modes, which became the longitudinal polarisations.
+The count, before and after. Before breaking: four connections, two polarisations each if massless — eight; one complex doublet, four real scalars; total twelve. After breaking: three massive vectors, three polarisations each — nine; one massless vector, two — two; one physical scalar — one; total twelve. The count is preserved, and the three that moved are the three would-be Goldstone modes, which became the longitudinal polarisations.
 
-Why the constraint is not the gauge choice. As in the Maxwell article, the constraint is the action's content and the gauge choice is a representative's selection. The unitary chart is a choice: it fixes the gauge by putting the Goldstone modes inside the vectors. A reader who confuses the two will think that the breaking removed degrees of freedom; the count above shows it did not.
+Why the constraint is not the choice of representative. As in the Maxwell article, the constraint is the action's content and the choice of representative is a representative's selection. The unitary chart is a choice: it fixes the gauge by putting the Goldstone modes inside the vectors. A reader who confuses the two will think that the breaking removed degrees of freedom; the count above shows it did not.
 
 **What the massive vectors' constraint is.** A massive vector's time component is still constrained — the Proca article's statement — so the three polarisations are two transverse and one longitudinal, and the longitudinal one is the Goldstone mode in the chart. The corpus can therefore state the Higgs mechanism as a count and not as a metaphor.
 
@@ -98,13 +98,13 @@ $$
 Q=T_3+Y
 $$
 
-is. Its current is the electromagnetic one, and the photon is its gauge field.
+is. Its current is the electromagnetic one, and the photon is its connection.
 
 The sign. The sign of the electric charge is the sign of the eigenvalue of $Q$, and $Q$'s normalisation is fixed by the scalar's hypercharge $Y_{\mathrm{hch}}=+\tfrac12$ and by $T_3=\pm\tfrac12$ on the doublet. The electron sits in the lepton doublet, whose hypercharge is $-\tfrac12$, and its $T_3=-\tfrac12$; the two sum to the observed $Q=-1$. The assignment is the corpus's electroweak articles', not this article's choice.
 
 **Why only one combination survives.** A current is conserved after breaking if its generator annihilates the vacuum. The vacuum is neutral under $Q$ and not under $T_1,T_2$ or $T_3-Y$ separately, so exactly one combination of the four generators leaves it invariant. That is the same statement as the photon's masslessness, read from the currents rather than from the masses — two readings of one fact, and the article gives both because they are checkable independently.
 
-The stress. The energy density is the sum of the gauge fields', the scalar's and the fermions'. In the broken phase the vector masses contribute $\frac12m^{2}A_0^{2}$ terms to it, and the positivity of the energy is the positivity of each term. There is no cross term of indefinite sign, and that is a property of the unitary chart: in a general chart the Goldstone modes' kinetic terms can look indefinite, and the chart is what removes the appearance.
+The stress. The energy density is the sum of the connections', the scalar's and the fermions'. In the broken phase the vector masses contribute $\frac12m^{2}A_0^{2}$ terms to it, and the positivity of the energy is the positivity of each term. There is no cross term of indefinite sign, and that is a property of the unitary chart: in a general chart the Goldstone modes' kinetic terms can look indefinite, and the chart is what removes the appearance.
 
 ## What the Principle Adds and What It Relabels
 
@@ -112,7 +112,7 @@ Adds. The two phases as one action, the mass relation as a computation, and the 
 
 Relabels. The corpus's electroweak articles' statements — the group, the hypercharge, the doublet, the potential, the masses, the quotient, the parity lock — are all recoverable from the action, and the action adds no number to them.
 
-**What it does not reach, and this family does not either.** The quantised theory: the gauge fixing and the ghosts, the $R_\xi$ charts, the Ward identities, the running of $g$ and $g_{\mathrm Y}$, the oblique parameters, the precision observables. The corpus has articles *about* those subjects and does not have the theory that computes them. A reader who wants the $S$-parameter will find its definition and not its value from this family.
+**What it does not reach, and this family does not either.** The quantised theory: the fixing the representative and the ghosts, the $R_\xi$ charts, the Ward identities, the running of $g$ and $g_{\mathrm Y}$, the oblique parameters, the precision observables. The corpus has articles *about* those subjects and does not have the theory that computes them. A reader who wants the $S$-parameter will find its definition and not its value from this family.
 
 The honest sentence. This family's electroweak content is a classical gauge theory with a classical breaking, exact and checkable, and it is not the Standard Model. The gap is quantisation, and the bridge article is where the gap is named.
 
@@ -131,7 +131,7 @@ $$
 | Symbol | Meaning |
 |---|---|
 | $g,\ g_{\mathrm Y}$ | $SU(2)_L$ and $U(1)_Y$ couplings |
-| $W_{a,\imath},\ B_{\imath}$ | Gauge fields of the two factors |
+| $W_{a,\imath},\ B_{\imath}$ | Connections of the two factors |
 | $W_{a,\imath\jmath},\ B_{\imath\jmath}$ | Field strengths, the first non-Abelian |
 | $\omicron_{\mathrm{hgs}}$ | Complex doublet, hypercharge $Y_{\mathrm{hch}}=+\tfrac12$ |
 | $D_{\imath}\omicron_{\mathrm{hgs}}$ | Covariant derivative with both connections |

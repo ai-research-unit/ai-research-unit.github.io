@@ -228,7 +228,7 @@ The strongest objection. Any conserved current can be presented as the current o
 
 The partial answer, and its limit. The objection is correct, and the partial answer is the one the element companion gives: the requirement is not merely that the current be conserved but that it be the *pairing* the algebra supplies, with the two parts entering with opposite signs. In the word, that requirement is the requirement that the phase flow and the boost flow combine at the two rates. The partial answer's limit is that it replaces one selection problem by another: the pairing is the algebra's, but the choice of frame units inside the pairing is the frame's (§*The Current* of the element companion). So the conjecture is well posed only relative to a frame.
 
-What would settle it. The Dirac brackets of the six constraints, computed with the four-bracket structure in place of the parameter structure, and the verification that the resulting flow reproduces $\partial_{r'_t}\tilde\Xi=-2\pi i\tilde\Upsilon_\Phi\tilde\Xi$ up to the gauge factor. This is a finite computation on a system with eight parameters and six constraints, and it is not attempted here.
+What would settle it. The Dirac brackets of the six constraints, computed with the four-bracket structure in place of the parameter structure, and the verification that the resulting flow reproduces $\partial_{r'_t}\tilde\Xi=-2\pi i\tilde\Upsilon_\Phi\tilde\Xi$ up to the group factor. This is a finite computation on a system with eight parameters and six constraints, and it is not attempted here.
 
 What the article claims without the conjecture. Everything in §*The Action in the Word* and §*The Constraints the Action Imposes: The Structure* stands without the conjecture: the action, the momenta, the two evolution equations, the six constraints, and the absence of multipliers for the unit conditions. The conjecture is what would connect them to the equation, and the connection is what is missing.
 
@@ -284,7 +284,7 @@ The reconstruction conjecture. §*The Reconstruction and Its Limits: The Conject
 
 The two flows and the one symmetry. The word has a phase flow and a boost flow; the action has one symmetry. Whether the constrained system supplies the second flow is the same question as the conjecture's, approached from the other side. A computation of the boost's Noether charge in the constrained system, and its comparison with the pairing's spatial slots, would settle it.
 
-The frame's role. The pairing needs fixed frame units and the word's parameters are read in a fixed frame. Whether the frame's choice is a gauge freedom of the polar formulation, or a genuine datum, is not settled.
+The frame's role. The pairing needs fixed frame units and the word's parameters are read in a fixed frame. Whether the frame's choice is a redundancy of the polar formulation, or a genuine datum, is not settled.
 
 The operator setting's closure. Whether the constraint structure closes in the operator setting, where the rapidity and the rotor angle are fields, is not attempted. The standard spin-fluid literature suggests it does not close without an additional transport law, and the corpus has not settled which law the biquaternionic arrangement selects.
 
@@ -338,7 +338,7 @@ The polar variational principle's genuine gain is therefore structural and not d
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), the equation in the chart, without the action.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the mass-term proposition.
 - [The Lagrangian and the Dirac Equation](the-lagrangian-and-the-dirac-equation.html), for the free action's structure and the count of the pair.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization that produces the coupling.
+- [The Minimal coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization that produces the coupling.
 - [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html), for the four brackets as the spin-half fluid's transport laws.
 - [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html), for the scalar limit in which the brackets collapse to two.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the spin's transport in a background.

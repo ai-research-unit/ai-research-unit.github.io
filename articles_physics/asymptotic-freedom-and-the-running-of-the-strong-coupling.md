@@ -61,13 +61,13 @@ The value used in practice. At the $Z$ pole five flavours are active, so $b_0=7.
 
 ## Why the Sign Is Negative
 
-The count. The gauge sector's antiscreening carries weight $11$ — the gluon and ghost loops together, not the gluon alone — and each quark's screening carries $-\tfrac23$. Six quarks remove four units, leaving seven. Asymptotic freedom is the statement $11>\tfrac23N_f$, and at $N_f=6$ the margin is a factor of nearly three.
+The count. The sector's antiscreening carries weight $11$ — the gluon and ghost loops together, not the gluon alone — and each quark's screening carries $-\tfrac23$. Six quarks remove four units, leaving seven. Asymptotic freedom is the statement $11>\tfrac23N_f$, and at $N_f=6$ the margin is a factor of nearly three.
 
 The physical picture, and what it is worth. A colour charge placed in the vacuum polarises it: virtual $q\bar q$ pairs screen the charge the way a dielectric screens an electric charge, which is the QED behaviour and would make the coupling grow with distance. The gluon carries colour itself, so the virtual gluons are not a dielectric but a paramagnet, and their contribution has the opposite sign: the charge appears to *grow* as the probe recedes, so the coupling falls as $Q$ rises. The direction is worth stating twice, because it is the one place the analogy is easy to invert: screening makes the charge grow as the probe approaches, antiscreening makes it shrink, and it is the second that QCD does. That is the picture, and it is correct as far as it goes. It is worth less than the calculation: the picture explains the sign but not the size, and the size — $11$ against $\tfrac23$ per flavour — is the content. The word *antiscreening* names a result; it does not produce one.
 
 What the sign actually says. In the ultraviolet, $g_s\to0$ and the partonic description becomes exact. In the infrared, $g_s$ grows without bound in perturbation theory and the expansion dies. Both halves matter, and only the first is under control: asymptotic freedom is a statement about short distances that is *derived*, and confinement is a statement about long distances that is *not* derived from the same information, even though it is the natural continuation of the same sign. This article is about the derived half.
 
-The contrast with QED, in one number. For QED with one Dirac fermion $b_0=-\tfrac43$, so $1/\alpha$ *decreases* with energy: from $137.036$ at the electron mass to $128.1$ at $1.6\times10^{5}$ J. The two signs differ because the adjoint Casimir is absent in the abelian case, and that is a group-theoretic fact about the gauge group, not about the algebra $\mathbb{B}$ or about the coordinates. The group article's table states all four cases side by side.
+The contrast with QED, in one number. For QED with one Dirac fermion $b_0=-\tfrac43$, so $1/\alpha$ *decreases* with energy: from $137.036$ at the electron mass to $128.1$ at $1.6\times10^{5}$ J. The two signs differ because the adjoint Casimir is absent in the abelian case, and that is a group-theoretic fact about the symmetry group, not about the algebra $\mathbb{B}$ or about the coordinates. The group article's table states all four cases side by side.
 
 ## The Solution
 
@@ -248,7 +248,7 @@ The division, stated plainly. [The Renormalization Group in Biquaternionic Form]
 
 What this article adds. The coefficient written in the colour factors rather than in the Casimirs, with the ghost split out of the eleven; the Dirac–Weyl conversion; the solution of the equation rather than its coefficient; the threshold matching; the numbers at the scales where the coupling is measured, at one and at two loops; $\Lambda$ with its scheme, order and flavour dependence; the sensitivity of $\Lambda$ to $\alpha_s$; the scale at which the expansion dies; and the parameter-count statement that turns the running into a prediction.
 
-What neither article does. Neither derives the beta function from the algebra, and neither claims to. The coefficient is a computation in quantum field theory with a gauge-invariant regulator, and the algebra's own regulator is not gauge invariant. That is the same boundary the QCD article marks for the group and the triplet, met from a different side.
+What neither article does. Neither derives the beta function from the algebra, and neither claims to. The coefficient is a computation in quantum field theory with an invariant regulator, and the algebra's own regulator is not invariant. That is the same boundary the QCD article marks for the group and the triplet, met from a different side.
 
 ## What the Framework Supplies
 
@@ -263,10 +263,10 @@ The ledger.
 | $\Lambda$ and dimensional transmutation | **Imported** in concept, **evaluated** here |
 | The measured $\alpha_s(M_Z)$ | **Imported.** A measurement, not a computation |
 | The sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ | **Derived in the algebra**; it affects no number here |
-| A gauge-invariant regulator | **Not supplied.** The algebra's natural regulator breaks gauge invariance |
+| An invariant regulator | **Not supplied.** The algebra's natural regulator breaks local invariance |
 | The value of $\Lambda$ | **Not supplied by anything.** The theory's one scale is an input |
 
-**The one place the algebra touches the running, and it is a negative result.** The biquaternion norm is the natural cutoff: it is a real central scalar, it commutes with the projections onto the material and informational sectors, and it is therefore a legitimate regulator. It is also not gauge invariant, because it does not commute with the gauge transformations that act on the octet. The corpus has no $\epsilon$-deformed biquaternion algebra, so dimensional regularisation — the regulator the calculation actually needs — has no home here. The honest statement is that the running is transcribed, and that the transcription is not a weakness of the algebra but a boundary of what the algebra was built to do.
+**The one place the algebra touches the running, and it is a negative result.** The biquaternion norm is the natural cutoff: it is a real central scalar, it commutes with the projections onto the material and informational sectors, and it is therefore a legitimate regulator. It is also not invariant, because it does not commute with the local transformations that act on the octet. The corpus has no $\epsilon$-deformed biquaternion algebra, so dimensional regularisation — the regulator the calculation actually needs — has no home here. The honest statement is that the running is transcribed, and that the transcription is not a weakness of the algebra but a boundary of what the algebra was built to do.
 
 ## Summary
 

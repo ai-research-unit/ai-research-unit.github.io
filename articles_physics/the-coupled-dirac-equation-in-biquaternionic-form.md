@@ -14,7 +14,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi},
 $$
 
-acting by left multiplication. Here $\Gamma$ is a real gauge function and $ϙ$ is the charge. The coupling is not an addition: it is the term the localization of the algebra's central phase forces.
+acting by left multiplication. Here $\Gamma$ is a real phase function and $ϙ$ is the charge. The coupling is not an addition: it is the term the localization of the algebra's central phase forces.
 
 **The equation.**
 
@@ -40,7 +40,7 @@ What this article does **not** do is derive the polar form or the action. Those 
 - *The Lagrangian and the Coupled Dirac Equation* states the action, derives the Noether currents, and settles the current question.
 - *The Lagrangian and the Coupled Dirac Equation in Polar Variables* substitutes the word into the *coupled action* and reads the constraint structure.
 
-**What is new here, and what is inherited.** The equation, the gauge law and the covariance proof are the gauge principle's, read as an operator statement on the Dirac field. Inherited from *The Dirac Equation in Biquaternionic Form* are the field, the pair and the value. New in this article are the solutions in a constant potential, the constants of motion for a static connection, the Larmor rate of the frame, and the theorem that separates the pair from the two-sided form. The article is therefore a structural hub and not a restatement.
+**What is new here, and what is inherited.** The equation, the gauge law and the covariance proof are the minimal coupling's, read as an operator statement on the Dirac field. Inherited from *The Dirac Equation in Biquaternionic Form* are the field, the pair and the value. New in this article are the solutions in a constant potential, the constants of motion for a static connection, the Larmor rate of the frame, and the theorem that separates the pair from the two-sided form. The article is therefore a structural hub and not a restatement.
 
 ## The Field and Its Phase Symmetry
 
@@ -100,7 +100,7 @@ $$
 
 For a purely electric potential $\tilde A_{\Phi}^{\natural}=+\tilde A_{\Phi}$, so the two members carry opposite entries; for a purely magnetic one $\tilde A_{\Phi}^{\natural}=-\tilde A_{\Phi}$, so they carry the same entry; for a general potential it is neither. The second member is the conjugate of the first and not the first with $ϙ\to-ϙ$.
 
-**The asymmetry is not a decomposition.** It is tempting to read the electric and magnetic parts as two couplings sharing a coefficient, since each is self-conjugate up to a sign. The gauge law rules this out: the entry absorbs $-\tilde\nabla_\Phi\Gamma$, which has a time part and a space part, so a purely electric potential does not stay purely electric under a general gauge function. Purity is a property of a gauge and not of the entry. Only the whole covector is covariant.
+**The asymmetry is not a decomposition.** It is tempting to read the electric and magnetic parts as two couplings sharing a coefficient, since each is self-conjugate up to a sign. The gauge law rules this out: the entry absorbs $-\tilde\nabla_\Phi\Gamma$, which has a time part and a space part, so a purely electric potential does not stay purely electric under a general phase function. Purity is a property of a gauge and not of the entry. Only the whole covector is covariant.
 
 **Component form.** Write $\tilde A_{\Phi}=\sum_{\imath} A_{\imath} e_{\imath}$ with complex scalar coefficients $A_{\imath}$ — the abelian case, in which the connection coefficients are central scalars and commute with one another and with the units. Since each $A_{\imath}$ is central, the covariant derivative separates:
 
@@ -114,7 +114,7 @@ with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R
 
 **That one line is the whole of the polar reading.** Because each component is central, the interaction term passes through the field and can be written on either side of it. It cannot rotate a non-central factor; it multiplies the whole word. The polar companion draws every consequence of that sentence, and this article uses it once, in §*Larmor Precession and the Gyromagnetic Ratio*.
 
-**The connection is a material-sector object.** For a real gauge function $\Gamma$, the gauge law keeps $\tilde A_{\Phi}$ in $\mathbb{B}_{\Phi}$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$ is Hermitian,
+**The connection is a material-sector object.** For a real phase function $\Gamma$, the gauge law keeps $\tilde A_{\Phi}$ in $\mathbb{B}_{\Phi}$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$ is Hermitian,
 
 $$
 \bigl(i\tilde A_{\Phi}\bigr)^{*}=-i\,\tilde A_{\Phi}^{*}=i\tilde A_{\Phi},
@@ -122,13 +122,13 @@ $$
 
 since $\tilde A_{\Phi}^{*}=-\tilde A_{\Phi}$ on $\mathbb{B}_{\Phi}$. The factor $i$ is what converts the anti-Hermitian connection into a Hermitian coupling.
 
-**Sign convention.** The pair of signs is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$ and $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$. Here
+**Sign convention.** The pair of signs is the minimal coupling's: $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$ and $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$. Here
 
 $$
 \theta_{\mathrm{gau}}:=\frac{2\pi ϙ\,\Gamma}{h}
 $$
 
-is the gauge angle. The parent's open question writes the standard physics convention $\partial/\partial R_{\imath}\to\partial/\partial R_{\imath}-\frac{2\pi i\,ϙA_{\imath}}{h}$, with the opposite sign; that is the same coupling with the opposite sign of $ϙ$, and this article inherits the gauge principle's sign and does not flip it. *Relativistic Mechanics from the Dirac Wave* writes $\vec p-q\vec A$ for the same reason, and the two writings are one coupling.
+is the gauge angle. The parent's open question writes the standard physics convention $\partial/\partial R_{\imath}\to\partial/\partial R_{\imath}-\frac{2\pi i\,ϙA_{\imath}}{h}$, with the opposite sign; that is the same coupling with the opposite sign of $ϙ$, and this article inherits the minimal coupling's sign and does not flip it. *Relativistic Mechanics from the Dirac Wave* writes $\vec p-q\vec A$ for the same reason, and the two writings are one coupling.
 
 **Left action, and the mirror through $\natural$.** Every coupling used here acts on the left. The mirror — derivative and connection both on the right — is not a second prescription. The renaming theorem gives
 
@@ -176,7 +176,7 @@ and $\bar\digamma_{\mathrm{gau}}\ne\digamma_{\mathrm{gau}}$ for non-real $\digam
 
 ## Gauge Covariance
 
-The gauge transformation is
+The local transformation is
 
 $$
 \tilde\Xi_2=\digamma_{\mathrm{gau}}\,\tilde\Xi,
@@ -253,7 +253,7 @@ because a linear mass term carries the same factor. The two sides transform iden
 
 **This is the biquaternion form of a standard fact.** A mass term linear in the field is compatible with a gauged continuous $\mathrm{U}(1)$. The two parts acquire the same phase; what the mass forbids is the *opposite* assignment of the two, which is the relative phase of §*The Field and Its Phase Symmetry*.
 
-**What the article does not claim.** It does not declare the standard minimal coupling deficient, and with a linear mass term it does not need to. The massive sector is gauge covariant on the same footing as the massless one. What the biquaternion form adds is the location of the coupling in the algebra: a covariant derivative acting from the left, with the central phase passing through the linear mass and the relative phase broken instead.
+**What the article does not claim.** It does not declare the standard minimal coupling deficient, and with a linear mass term it does not need to. The massive sector is covariant on the same footing as the massless one. What the biquaternion form adds is the location of the coupling in the algebra: a covariant derivative acting from the left, with the central phase passing through the linear mass and the relative phase broken instead.
 
 **The alternative reading.** A mass term built on the real structure $\flat$, with no continuously charged massive field, remains available — but only for a different equation, one genuinely built on $\flat$. That is a statement about the algebra's real structure and not about this pair, and it belongs to *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* and to the neutrino article.
 
@@ -269,7 +269,7 @@ $$
 
 which is a multiplication by one central phase with a linear argument.
 
-**What that does to a plane wave.** Write $\tilde\Xi=\tilde\Xi_0\exp(i\theta)$ with $\theta$ linear and $\tilde\Xi_0$ constant, and let $\tilde\Upsilon_\Phi=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ be the canonical wavevector. The gauge factor adds $-\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ to the wavevector of the field, so the canonical wavevector and the covariant one are related by
+**What that does to a plane wave.** Write $\tilde\Xi=\tilde\Xi_0\exp(i\theta)$ with $\theta$ linear and $\tilde\Xi_0$ constant, and let $\tilde\Upsilon_\Phi=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ be the canonical wavevector. The group factor adds $-\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ to the wavevector of the field, so the canonical wavevector and the covariant one are related by
 
 $$
 \tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_{\Phi},
@@ -299,7 +299,7 @@ $$
 
 The two displays are one surface and two origins. The radius is $\nu_m$ in both, the shape is the same, and the potential moves the centre and nothing else. **The translation is the potential's and the gap is $\nu_m$'s**: a uniform $A_t$ moves every level by $ϙA_t$ and leaves every spacing unchanged, and no constant potential opens a gap.
 
-**The reason, in one line.** A gauge transformation shifts a wavevector by a gradient, and a shift of a variable cannot change a radius. A gap would need a term with a scale of its own; the algebra has one scalar here, and it is the mass coefficient.
+**The reason, in one line.** A local transformation shifts a wavevector by a gradient, and a shift of a variable cannot change a radius. A gap would need a term with a scale of its own; the algebra has one scalar here, and it is the mass coefficient.
 
 **The vector part of the curvature vanishes.** For constant $\tilde A_{\Phi}$ the field strength is zero, so the second-order operator of §*Gauge Covariance* is the free one with every component shifted at once. That is the same statement from the second-order side, and it agrees.
 
@@ -323,7 +323,7 @@ $$
 
 and again the covariant momentum is the canonical one plus $\frac{2\pi ϙ}{h}\vec A$ in units of $\frac{h}{2\pi}$. A uniform vector potential therefore shifts the momentum and not the dispersion.
 
-**Angular momentum, and the gauge-covariant modification.** Under a spatial rotation the potential rotates with the field, so the conserved generator is the sum of the orbital part and the spin part, with the connection entering the orbital part through the covariant derivative:
+**Angular momentum, and the covariant modification.** Under a spatial rotation the potential rotates with the field, so the conserved generator is the sum of the orbital part and the spin part, with the connection entering the orbital part through the covariant derivative:
 
 $$
 \vec J=\int\mathrm{d}^{3}\varrho\Bigl\{\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\bigl(\vec r\times(-i \frac{h}{2\pi}\nabla_{\mathrm{gco}})\bigr)\tilde\Xi\bigr]+\vec S\Bigr\},
@@ -452,7 +452,7 @@ with the interaction term $\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}\tilde\Xi$ that th
 
 The prescription attaches to the one-sided pair and not to the two-sided form, because the two-sided form's mass term is a conjugation and a right multiplication and carries no continuous central phase to localize. That is a theorem about the two displays.
 
-The coupled equation is exactly gauge covariant, massive as well as massless, with $\tilde\Xi_2=\digamma_{\mathrm{gau}}\tilde\Xi$ and $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$: both members transform with the same $\digamma_{\mathrm{gau}}$, and the linear mass term acquires it too. The mass breaks the relative phase of the two parts and not the common one.
+The coupled equation is exactly covariant, massive as well as massless, with $\tilde\Xi_2=\digamma_{\mathrm{gau}}\tilde\Xi$ and $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$: both members transform with the same $\digamma_{\mathrm{gau}}$, and the linear mass term acquires it too. The mass breaks the relative phase of the two parts and not the common one.
 
 A constant potential is pure gauge, so a plane wave sees it as a shift of the wavevector: $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_{\Phi}$, the mass shell $\kappa_t^{2}-|\vec\kappa|^{2}=4\pi^{2}\nu_m^{2}$ is translated and not resized, and no constant potential opens a gap. Squaring the pair gives the covariant wave equation with the curvature term $\frac{2\pi i\,ϙ}{h}\tilde F$, and for constant $\tilde A_{\Phi}$ that term vanishes.
 
@@ -466,7 +466,7 @@ $$
 j_{\imath}=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_{\imath}\tilde\Xi\,\vec e_{\mathrm{spt}(\imath)}\bigr)\vec e_x\bigr).
 $$
 
-The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, and the two parts enter it with the same sign, so it is not conserved. The variational companion proves the positive statement and exhibits the failure.
+The naive $i\tilde\Xi\tilde\Xi^{*}$ is invariant and of the density sign, and the two parts enter it with the same sign, so it is not conserved. The variational companion proves the positive statement and exhibits the failure.
 
 ## Summary of Notation
 
@@ -490,7 +490,7 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 | $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}^{\natural}$ | Its $\natural$-image; the operator of the second member |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | Material time derivative |
 | $\tilde F$ | Field strength; $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}+\frac{2\pi i\,ϙ}{h}\tilde F$ |
-| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_{\Phi}$ | Covariant wavevector; gauge invariant; in $\mathbb{B}_{\Phi}$ |
+| $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_{\Phi}$ | Covariant wavevector; invariant; in $\mathbb{B}_{\Phi}$ |
 | $\kappa_t,\vec\kappa$ | Components of $\tilde\Upsilon_{\Phi,\mathrm{gco}}$; $\kappa_t^{2}-|\vec\kappa|^{2}=4\pi^{2}\nu_m^{2}$ |
 | $\pi_t,\vec\pi$ | Components of the canonical $\tilde\Upsilon_\Phi$; the mass shell is displaced by $-\frac{2\pi ϙ}{h}\tilde A_{\Phi}$ |
 | $j_{\imath}=\mathrm{Sc}\bigl(\tilde\Xi^{*}i(i e_{\imath}\tilde\Xi\vec e_{\mathrm{spt}(\imath)})\vec e_x\bigr)$ | The conserved current; two fixed frame units |
@@ -500,8 +500,8 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 ## Further Reading
 
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the field, the pair and the value.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase and the pair of signs.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Minimal coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase and the pair of signs.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the potential biquaternion and the four-current.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the word in the background.
 - [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html), for the action, the Noether currents and the current crux.

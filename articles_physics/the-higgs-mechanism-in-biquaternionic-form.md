@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **Higgs mechanism** is the statement that a gauge symmetry which is exact in the action can be hidden by the vacuum, and that the hiding is not free. A gauge-field mass term, $m^2\sum_{\imath} A_{\imath} A_{\imath}$, is forbidden: it is not invariant under the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ that the companion articles derive for the connection. The mass is generated instead from the one place the symmetry permits — the **kinetic term of the scalar field**, evaluated at a vacuum expectation value that does not respect the symmetry. The gauge field acquires a mass whose square is the coefficient of the quadratic term that the kinetic term thereby produces, and the would-be Goldstone mode of the scalar, which the vacuum makes massless, is absorbed into the gauge field as its longitudinal polarization. Both facts follow from the same coupling. Neither is a term written into the action by hand, and avoiding that is the whole content of the mechanism.
+The **Higgs mechanism** is the statement that a local symmetry which is exact in the action can be hidden by the vacuum, and that the hiding is not free. A connection mass term, $m^2\sum_{\imath} A_{\imath} A_{\imath}$, is forbidden: it is not invariant under the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ that the companion articles derive for the connection. The mass is generated instead from the one place the symmetry permits — the **kinetic term of the scalar field**, evaluated at a vacuum expectation value that does not respect the symmetry. The connection acquires a mass whose square is the coefficient of the quadratic term that the kinetic term thereby produces, and the would-be Goldstone mode of the scalar, which the vacuum makes massless, is absorbed into the connection as its longitudinal polarization. Both facts follow from the same coupling. Neither is a term written into the action by hand, and avoiding that is the whole content of the mechanism.
 
 This article works the mechanism inside the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, in the notation of the companion articles. The pieces are already in the read list. *The Gauge Principle in Biquaternionic Form* localizes the central phase of the algebra and produces the connection $\tilde{A}_{\Phi}$, the covariant derivative $D = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$, and the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$; it also identifies the complex scalar $\tilde{Ξ} = \xi\,e_t$ as the realization of the symmetry that survives a mass term. *The Covariant Derivative and Gauge Connection in Biquaternionic Form* studies $D$ as an operator and records the covariant square. *Non-Abelian Gauge Fields in Biquaternionic Form* exhibits the compact algebra $\mathrm{SU}(2)$ inside the material sector and reports the reality condition on the connection as a gap. *Chiral Fermions in the Biquaternion Framework* derives the selection rule that a bare fermion mass requires equal left and right charges, and names the present article as the companion in which the compensating scalar is to be treated.
 
@@ -12,11 +12,11 @@ $$
 D_{\imath}\tilde{Ξ}\Big|_{\langle\tilde{Ξ}\rangle} \;=\;\frac{2\pi i\,ϙ}{h}\,A_{\imath}\,\langle\tilde{Ξ}\rangle  .
 $$
 
-The covariant derivative is *linear in the gauge field* when evaluated at the vacuum. The scalar kinetic term is quadratic in $D_{\imath}\tilde{Ξ}$, so at the vacuum it becomes quadratic in the gauge field — a mass term for $\tilde{A}_{\Phi}$ — with a coefficient proportional to $|\langle\xi\rangle|^2$. The vacuum value that makes this happen is the one that minimizes the potential, and it is not gauge invariant; that is why the mass term, which the symmetry forbids as an explicit term, is allowed to appear from the kinetic term. The rest of the article makes each step explicit and checks it.
+The covariant derivative is *linear in the gauge field* when evaluated at the vacuum. The scalar kinetic term is quadratic in $D_{\imath}\tilde{Ξ}$, so at the vacuum it becomes quadratic in the connection — a mass term for $\tilde{A}_{\Phi}$ — with a coefficient proportional to $|\langle\xi\rangle|^2$. The vacuum value that makes this happen is the one that minimizes the potential, and it is not invariant; that is why the mass term, which the symmetry forbids as an explicit term, is allowed to appear from the kinetic term. The rest of the article makes each step explicit and checks it.
 
 The division between what is established and what is interpretation is kept explicit, as in the companion articles.
 
-- Established, and recomputed below. The framework's scalar is the complex central field $\tilde{Ξ} = \xi\,e_t$; the potential $V(\xi^*\xi)$ has a circle of minima at $|\xi| = v/\sqrt{2}$, which the central $\mathrm{U}(1)$ moves and therefore does not leave invariant; the covariant derivative at the vacuum is $\frac{2\pi i\,ϙ}{h}A_{\imath}\langle\tilde{Ξ}\rangle$; the scalar kinetic term therefore produces the gauge-field quadratic form $-\frac{ϙ^{2}\,v^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}\,\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi})_{\natural}$, which is a Proca mass term with mass-squared $M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}$; the kinetic term is gauge invariant while a put-in mass term is not; and the degree-of-freedom count balances, $2+2 = 1+3$.
+- Established, and recomputed below. The framework's scalar is the complex central field $\tilde{Ξ} = \xi\,e_t$; the potential $V(\xi^*\xi)$ has a circle of minima at $|\xi| = v/\sqrt{2}$, which the central $\mathrm{U}(1)$ moves and therefore does not leave invariant; the covariant derivative at the vacuum is $\frac{2\pi i\,ϙ}{h}A_{\imath}\langle\tilde{Ξ}\rangle$; the scalar kinetic term therefore produces the connection quadratic form $-\frac{ϙ^{2}\,v^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}\,\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi})_{\natural}$, which is a Proca mass term with mass-squared $M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}$; the kinetic term is invariant while a put-in mass term is not; and the degree-of-freedom count balances, $2+2 = 1+3$.
 - Interpretation. Interpreting the phase of $\xi$ as a would-be Goldstone mode, the set of minima as a circle of degenerate vacua, and the removal of the phase as the unitary gauge is the standard interpretation of the algebra. It is labelled as interpretation where it occurs.
 - Gap, left visible. The framework supplies its scalar in the centre $\mathbb{B}_{C}$, where it is a singlet of the non-abelian factor $\mathrm{SU}(2)$ of the material sector; a central scalar cannot break $SU(2)$. The framework does not supply a scalar in a non-trivial representation, an electroweak doublet, or the hypercharge assignments of the Standard Model, and the reality condition on a non-abelian connection is itself open. The non-abelian and electroweak Higgs mechanism is therefore not constructed here, and no quantum numbers are invented to bridge the gap.
 
@@ -28,7 +28,7 @@ $$
 \tilde{Ξ}(\tilde{Q}) = \xi(\tilde{Q})\,e_t \;\in\; \mathbb{B}_{C}, \qquad \xi \in \mathbb{C},
 $$
 
-which the gauge principle article identifies as the realization of the global symmetry that survives a mass: under the constant phase $\xi\mapsto \exp(i\theta_{\mathrm{cen}})\xi$ the massive Klein–Gordon equation is invariant, because its mass term is linear in the field. This is the scalar the Higgs mechanism uses. It is complex, and we say so explicitly: a real scalar would be neutral under the central phase and could not break a $\mathrm{U}(1)$ at all. The framework does supply a complex scalar, so no real-scalar assumption is forced here; the real case is mentioned only where it differs.
+which the minimal coupling article identifies as the realization of the global symmetry that survives a mass: under the constant phase $\xi\mapsto \exp(i\theta_{\mathrm{cen}})\xi$ the massive Klein–Gordon equation is invariant, because its mass term is linear in the field. This is the scalar the Higgs mechanism uses. It is complex, and we say so explicitly: a real scalar would be neutral under the central phase and could not break a $\mathrm{U}(1)$ at all. The framework does supply a complex scalar, so no real-scalar assumption is forced here; the real case is mentioned only where it differs.
 
 The symmetry. The global symmetry is the $*$-unitary part of the centre, $\xi\mapsto\digamma_{\mathrm{gau}}\xi$ with $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{cen}})$ central. Localizing it means $\digamma_{\mathrm{gau}}(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ with $\Gamma$ a real scalar function, and it forces the connection,
 
@@ -38,7 +38,7 @@ D_{\imath} = \partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath}, \qqua
 D_{\imath}\tilde{Ξ} = \partial/\partial R_{\imath}\,\tilde{Ξ} +\frac{2\pi i\,ϙ}{h}A_{\imath}\tilde{Ξ}.
 $$
 
-Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
+Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
 The covariant derivative is inherited unchanged from the read list; nothing about it is rederived here.
 
@@ -50,13 +50,13 @@ $$
 
 The covariant derivative of the scalar is again a scalar — it does not acquire vector components along $\vec e_x, \vec e_y, \vec e_z$. This is exactly the property that fails in the non-abelian case, where the connection does not commute with the field and $D_{\imath}\tilde{Ξ}$ acquires components in directions the field did not have. It is the reason the abelian mechanism below closes, and the reason the non-abelian one is a gap (see its own section).
 
-The scalar Lagrangian. The gauge-invariant density of the scalar is the kinetic term plus a potential,
+The scalar Lagrangian. The invariant density of the scalar is the kinetic term plus a potential,
 
 $$
 \mathcal{L}_\text{scalar} = -\,\sum_{\imath,\jmath}g_{\imath\jmath}\,(D_{\imath}\xi)^*(D_{\jmath}\xi) \;-\; V\!\left(\xi^*\xi\right),
 $$
 
-where the potential is a function of the single invariant $\xi^*\xi = \mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$. The kinetic term is the Lorentz-invariant contraction, in the $i r'_t$ metric of the Conventions, of the covariant derivative with its conjugate; it is manifestly real and, as the next section uses, gauge invariant. The standard normalization is fixed by the coefficient $-1$ on the kinetic term and by the definition of $v$ in the potential.
+where the potential is a function of the single invariant $\xi^*\xi = \mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$. The kinetic term is the Lorentz-invariant contraction, in the $i r'_t$ metric of the Conventions, of the covariant derivative with its conjugate; it is manifestly real and, as the next section uses, invariant. The standard normalization is fixed by the coefficient $-1$ on the kinetic term and by the definition of $v$ in the potential.
 
 ## The Potential and the Non-Zero Vacuum
 
@@ -88,21 +88,21 @@ $$
 \boxed{\;m_h^2 = 2\beta v^2\;}
 $$
 
-The angular field $\vartheta_{\mathrm{fld}}$ has **no potential at all**. It is the massless mode that the vacuum's degeneracy makes inevitable — the **would-be Goldstone boson**. Its value is a coordinate on the circle of minima, and a change of $\vartheta_{\mathrm{fld}}$ is a gauge transformation, which is why it cannot carry a physical mass of its own. The next two sections show that it does not disappear; it is absorbed.
+The angular field $\vartheta_{\mathrm{fld}}$ has **no potential at all**. It is the massless mode that the vacuum's degeneracy makes inevitable — the **would-be Goldstone boson**. Its value is a coordinate on the circle of minima, and a change of $\vartheta_{\mathrm{fld}}$ is a local transformation, which is why it cannot carry a physical mass of its own. The next two sections show that it does not disappear; it is absorbed.
 
-The two real fields $h$ and $\vartheta_{\mathrm{fld}}$ are the two real degrees of freedom of the complex scalar $\xi$. Before any gauge field is considered, the scalar alone contributes $2$ real degrees of freedom, and the vacuum leaves one massive ($h$) and one massless ($\vartheta_{\mathrm{fld}}$).
+The two real fields $h$ and $\vartheta_{\mathrm{fld}}$ are the two real degrees of freedom of the complex scalar $\xi$. Before any connection is considered, the scalar alone contributes $2$ real degrees of freedom, and the vacuum leaves one massive ($h$) and one massless ($\vartheta_{\mathrm{fld}}$).
 
 ## The Mass from the Scalar Kinetic Term
 
-We now evaluate the kinetic term of the scalar at the vacuum. This is the step at which the gauge boson mass is produced, and it is worth doing slowly, because the temptation is to write the mass term down and quote the answer.
+We now evaluate the kinetic term of the scalar at the vacuum. This is the step at which the connection mass is produced, and it is worth doing slowly, because the temptation is to write the mass term down and quote the answer.
 
-No mass term may be written by hand. Under the gauge transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$, the combination
+No mass term may be written by hand. Under the local transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$, the combination
 
 $$
 \langle\tilde A_{\Phi}\rangle \;\longmapsto\; \bigl\langle\tilde A_{\Phi} - \tilde\nabla_\Phi\Gamma\bigr\rangle \;\neq\; \langle\tilde A_{\Phi}\rangle
 $$
 
-in general, so a term $m^2\sum_{\imath} A_{\imath} A_{\imath}$ in the action is not gauge invariant. It is exactly the term the symmetry forbids. The mechanism must therefore generate it from something that *is* invariant, and the invariant object available is the kinetic term of the scalar.
+in general, so a term $m^2\sum_{\imath} A_{\imath} A_{\imath}$ in the action is not invariant. It is exactly the term the symmetry forbids. The mechanism must therefore generate it from something that *is* invariant, and the invariant object available is the kinetic term of the scalar.
 
 The vacuum value of the covariant derivative. At the constant vacuum $\xi = v/\sqrt{2}$, the ordinary derivative vanishes and only the connection term survives:
 
@@ -112,9 +112,9 @@ D_{\imath}\xi\Big|_{\text{vac}} = \partial/\partial R_{\imath}\,\frac{v}{\sqrt{2
 D_{\imath}\tilde{Ξ}\Big|_{\text{vac}} =\frac{2\pi i\,ϙ}{h}A_{\imath}\,\langle\tilde{Ξ}\rangle  .
 $$
 
-This is the key equation. The covariant derivative of the scalar is **proportional to the gauge field** once the scalar is frozen at its vacuum value.
+This is the key equation. The covariant derivative of the scalar is **proportional to the connection** once the scalar is frozen at its vacuum value.
 
-**The kinetic term becomes a mass term.** Inserting this into the gauge-invariant kinetic density gives
+**The kinetic term becomes a mass term.** Inserting this into the invariant kinetic density gives
 
 $$
 -\,\sum_{\imath,\jmath} g_{\imath\jmath}(D_{\imath}\xi)^*(D_{\jmath}\xi)\Big|_{\text{vac}}
@@ -142,8 +142,8 @@ This is the standard abelian-Higgs result. It reproduces the textbook value: wit
 What produced the mass, and what did not. Three things about the derivation are worth stating, because each is a trap avoided.
 
 - The mass came from the kinetic term. The potential $V$ was used only to supply the vacuum value $v$; its curvature at the minimum gives the *scalar* mass $m_h^2 = 2\beta v^2$, not the gauge mass. The gauge mass $M_A$ does not involve $\beta$ at all, and would be unchanged if the potential were flatter or steeper while keeping the same $v$. That is the mark that the gauge mass is generated by the kinetic term.
-- No gauge mass term was written by hand. The derivation began from $-\sum_{\imath,\jmath}g_{\imath\jmath}(D_{\imath}\xi)^*(D_{\jmath}\xi)$, which is gauge invariant, and produced $\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi}) = \langle\tilde{A}_{\Phi},\tilde{A}_{\Phi}\rangle_{\natural}$ only after substituting a vacuum that is *not* gauge invariant. The non-invariance of the result is inherited from the non-invariance of the vacuum, not inserted.
-- The kinetic term itself remains gauge invariant. Under $\xi\mapsto\digamma_{\mathrm{gau}}\xi$ and $\tilde{A}_{\Phi,2}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, $D_{\imath}\xi\mapsto\digamma_{\mathrm{gau}} D_{\imath}\xi$, so $(D_{\imath}\xi)^*(D_{\imath}\xi)\mapsto|\digamma_{\mathrm{gau}}|^2(D_{\imath}\xi)^*(D_{\imath}\xi) = (D_{\imath}\xi)^*(D_{\imath}\xi)$ because $|\digamma_{\mathrm{gau}}| = 1$.
+- No gauge mass term was written by hand. The derivation began from $-\sum_{\imath,\jmath}g_{\imath\jmath}(D_{\imath}\xi)^*(D_{\jmath}\xi)$, which is gauge invariant, and produced $\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi}) = \langle\tilde{A}_{\Phi},\tilde{A}_{\Phi}\rangle_{\natural}$ only after substituting a vacuum that is *not* invariant. The non-invariance of the result is inherited from the non-invariance of the vacuum, not inserted.
+- The kinetic term itself remains invariant. Under $\xi\mapsto\digamma_{\mathrm{gau}}\xi$ and $\tilde{A}_{\Phi,2}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, $D_{\imath}\xi\mapsto\digamma_{\mathrm{gau}} D_{\imath}\xi$, so $(D_{\imath}\xi)^*(D_{\imath}\xi)\mapsto|\digamma_{\mathrm{gau}}|^2(D_{\imath}\xi)^*(D_{\imath}\xi) = (D_{\imath}\xi)^*(D_{\imath}\xi)$ because $|\digamma_{\mathrm{gau}}| = 1$.
 
 $$
 -\,\sum_{\imath,\jmath} g_{\imath\jmath}(D_{\imath}\xi)^*(D_{\jmath}\xi)\Big|_{\text{vac}}
@@ -151,13 +151,13 @@ $$
 = -\,\frac{ϙ^{2}\,v^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}\,\mathrm{Sc}\!\left(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi}\right),
 $$
 
-the middle expression being the $i r'_t$ form of the biquaternion norm and the last the corpus's packaging. The standard cross-check $\langle|\xi|\rangle = v/\sqrt{2}$ is what fixes the factor $1/2$ and gives the textbook $M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}$. Because a coefficient can be checked on the case that suggested it — here, the single component $A_0$ — the coefficient was *also* checked on a generic, non-axis-aligned connection direction and on a second, independent parameter set $(q_2, v_2)$: in both cases the induced quadratic form divided by $\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi}) = \langle\tilde{A}_{\Phi},\tilde{A}_{\Phi}\rangle_{\natural}$ equals $-\frac{ϙ^{2}\,v^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ to a relative error below $10^{-15}$. The gauge invariance of the kinetic density was checked with a non-constant gauge function on a generic connection, with residuals at the level of the floating-point round-off ($\sim 10^{-17}$), while the put-in mass term $A_1^2$ was found to change by a nonzero amount well above round-off under the same transformation, confirming that it is the symmetry that forbids it.
+the middle expression being the $i r'_t$ form of the biquaternion norm and the last the corpus's packaging. The standard cross-check $\langle|\xi|\rangle = v/\sqrt{2}$ is what fixes the factor $1/2$ and gives the textbook $M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}$. Because a coefficient can be checked on the case that suggested it — here, the single component $A_0$ — the coefficient was *also* checked on a generic, non-axis-aligned connection direction and on a second, independent parameter set $(q_2, v_2)$: in both cases the induced quadratic form divided by $\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi}) = \langle\tilde{A}_{\Phi},\tilde{A}_{\Phi}\rangle_{\natural}$ equals $-\frac{ϙ^{2}\,v^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ to a relative error below $10^{-15}$. The local invariance of the kinetic density was checked with a non-constant phase function on a generic connection, with residuals at the level of the floating-point round-off ($\sim 10^{-17}$), while the put-in mass term $A_1^2$ was found to change by a nonzero amount well above round-off under the same transformation, confirming that it is the symmetry that forbids it.
 
 ## The Would-Be Goldstone Mode and the Count
 
 The mass term above was obtained in the gauge in which $\xi$ is real and constant — the tree-level vacuum. In a generic gauge the scalar still has its angular mode $\vartheta_{\mathrm{fld}}$, and it is worth seeing where it goes. The answer is the second half of the mechanism.
 
-The phase is a gauge direction. The parametrization $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\theta_{\mathrm{gld}})$ exhibits the phase as a field. But a phase rotation is precisely a gauge transformation: choosing
+The phase is a redundant direction. The parametrization $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\theta_{\mathrm{gld}})$ exhibits the phase as a field. But a phase rotation is precisely a local transformation: choosing
 
 $$
 \Gamma(\tilde{Q}) = -\,\frac{h}{2\pi ϙ\,v}\,\vartheta_{\mathrm{fld}}(\tilde{Q})
@@ -165,32 +165,32 @@ $$
 
 gives $\xi\mapsto  \exp(i\theta_{\mathrm{gau}})\xi = \exp(-i\theta_{\mathrm{gld}})\xi = \frac{1}{\sqrt{2}}(v+h)$, which is real — the angular field is removed. This choice is the unitary gauge for this abelian model. In it the scalar is a single real field $h$, and the potential gives it the mass $m_h^2 = 2\beta v^2$.
 
-Where the phase went. The gauge transformation that removes $\vartheta_{\mathrm{fld}}$ also shifts the connection,
+Where the phase went. The local transformation that removes $\vartheta_{\mathrm{fld}}$ also shifts the connection,
 
 $$
 A_{2,\imath} = A_{\imath} - \partial/\partial R_{\imath}\,\Gamma = A_{\imath} +\frac{h}{2\pi ϙ\,v}\,\partial/\partial R_{\imath}\,\vartheta_{\mathrm{fld}} ,
 $$
 
-so the combination $A_{\imath} +\frac{h}{2\pi ϙ\,v}\partial/\partial R_{\imath}\,\vartheta_{\mathrm{fld}}$ is gauge invariant and the mass term depends on it, not on $A_{\imath}$ alone. The two terms are not separately physical: what the gauge field gained as a mass is exactly the longitudinal component it did not have as a massless field, and $\partial/\partial R_{\imath}\,\vartheta_{\mathrm{fld}}$ is that component. The would-be Goldstone boson is absorbed by the gauge field, which is why it does not appear in the physical spectrum, and why the counting below balances.
+so the combination $A_{\imath} +\frac{h}{2\pi ϙ\,v}\partial/\partial R_{\imath}\,\vartheta_{\mathrm{fld}}$ is invariant and the mass term depends on it, not on $A_{\imath}$ alone. The two terms are not separately physical: what the connection gained as a mass is exactly the longitudinal component it did not have as a massless field, and $\partial/\partial R_{\imath}\,\vartheta_{\mathrm{fld}}$ is that component. The would-be Goldstone boson is absorbed by the connection, which is why it does not appear in the physical spectrum, and why the counting below balances.
 
 **The degree-of-freedom count.** Count the real, physical, on-shell degrees of freedom before and after the breaking, in four dimensions.
 
 *Before (symmetric phase, $\langle\tilde{Ξ}\rangle = 0$):*
 
 - The complex scalar $\xi$ has $2$ real components, both massless.
-- The gauge field $A_{\imath}$ is massless. A massless vector in four dimensions has $4$ field components, and gauge invariance removes $2$ of them, leaving $2$ transverse polarizations.
+- The connection $A_{\imath}$ is massless. A massless vector in four dimensions has $4$ field components, and local invariance removes $2$ of them, leaving $2$ transverse polarizations.
 - Total: $2 + 2 = 4$.
 
 *After (broken phase, $\langle|\xi|\rangle = v/\sqrt{2}$):*
 
 - The scalar has $1$ real physical component, the radial mode $h$, which is massive.
-- The phase mode $\vartheta_{\mathrm{fld}}$ is not an independent physical field; it is the longitudinal polarization of the gauge field.
-- The gauge field is massive. A massive vector has no residual gauge symmetry, so its $4$ components are all physical up to the equation of motion, giving $3$ polarizations: $2$ transverse and $1$ longitudinal.
+- The phase mode $\vartheta_{\mathrm{fld}}$ is not an independent physical field; it is the longitudinal polarization of the connection.
+- The connection is massive. A massive vector has no residual local symmetry, so its $4$ components are all physical up to the equation of motion, giving $3$ polarizations: $2$ transverse and $1$ longitudinal.
 - Total: $1 + 3 = 4$.
 
-The count balances, $4 = 4$, and it balances *only because* the gauge field gained one polarization and the scalar lost one mode. This is the degree-of-freedom bookkeeping of the Goldstone theorem: the number of would-be Goldstone bosons equals the number of broken generators, here $1$ (the single generator of the broken $\mathrm{U}(1)$), and each is absorbed by a gauge field that becomes massive and acquires the longitudinal polarization.
+The count balances, $4 = 4$, and it balances *only because* the connection gained one polarization and the scalar lost one mode. This is the degree-of-freedom bookkeeping of the Goldstone theorem: the number of would-be Goldstone bosons equals the number of broken generators, here $1$ (the single generator of the broken $\mathrm{U}(1)$), and each is absorbed by a connection that becomes massive and acquires the longitudinal polarization.
 
-The count is not automatic. It is a check on the whole construction, not a restatement of it. The equality $2+2 = 1+3$ holds because exactly one scalar mode ceased to be an independent physical field and exactly one gauge polarization was gained; the two events are the same event. If the potential had left the $\mathrm{U}(1)$ unbroken ($v = 0$), the scalar would keep $2$ real massless components and the gauge field its $2$ transverse polarizations, again $4$ — but with no absorption and a different distribution. What the count confirms is that the broken phase has neither lost nor gained a degree of freedom: the Goldstone mode was moved, not created, and it moved into the gauge field. Balances of this kind are the standard guard against a mechanism that has quietly dropped a mode, and this one balances.
+The count is not automatic. It is a check on the whole construction, not a restatement of it. The equality $2+2 = 1+3$ holds because exactly one scalar mode ceased to be an independent physical field and exactly one gauge polarization was gained; the two events are the same event. If the potential had left the $\mathrm{U}(1)$ unbroken ($v = 0$), the scalar would keep $2$ real massless components and the connection its $2$ transverse polarizations, again $4$ — but with no absorption and a different distribution. What the count confirms is that the broken phase has neither lost nor gained a degree of freedom: the Goldstone mode was moved, not created, and it moved into the connection. Balances of this kind are the standard guard against a mechanism that has quietly dropped a mode, and this one balances.
 
 A note on the Higgs mass. The radial mode's mass $m_h^2 = 2\beta v^2$ is a second prediction of the same potential, independent of $M_A$. Both follow from the single configuration $V = \beta(\xi^*\xi - v^2/2)^2$: the gauge mass from the shape of the kinetic term at the vacuum, the scalar mass from the curvature of the potential. The framework reproduces the standard relation between them through $\beta$, which it does not fix.
 
@@ -200,7 +200,7 @@ The mechanism above is the abelian one. The physically realized Higgs mechanism 
 
 The framework has a non-abelian algebra but not a settled non-abelian connection. *Non-Abelian Gauge Fields in Biquaternionic Form* shows that the vector part of the material sector, $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, is $\mathrm{SU}(2)$ under the commutator, and that the material sector decomposes as $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ — an abelian factor and a compact simple factor. But the reality condition on the *connection* is obstructed in the time direction by the $i r'_t$ derivative, and the representation carried by the matter field is not fixed. Until those are settled, a non-abelian covariant derivative on the scalar is not available to evaluate.
 
-The framework's scalar is a singlet of the non-abelian factor. This is the sharpest obstacle. The scalar the framework supplies, $\tilde{Ξ} = \xi\,e_t$, lies in the centre; it commutes with every element, and every rotor fixes it under the Hermitian pair, $\mathrm{Sd}_{\tilde U}(\xi e_t)=\tilde U\,\xi e_t\,\tilde U^{*}=\xi e_t$. Left multiplication does move it, $L_{\tilde U}(\xi e_t)=\xi\tilde U$, but it moves it out of the centre and out of any carrier, which is the second reason the framework cannot use this scalar as a doublet. Fixed by the pair and moved by the left action: a scalar is by definition the singlet. A field that is invariant under a group cannot break it — the vacuum $\langle\xi\rangle e_t$ is invariant under $SU(2)$, so it is not a vacuum of broken $SU(2)$, and no $SU(2)$ gauge boson acquires a mass from it. To break the non-abelian factor one needs a scalar that transforms non-trivially — in the adjoint $\tilde{Ξ}\mapsto U\tilde{Ξ}U^{-1}$, or in a module of $\mathbb{B}$ — and the framework does not supply a canonical one. This is not a technicality to be papered over; it is the statement that the scalar that gives mass must carry the same symmetry the gauge fields carry, and the central scalar does not.
+The framework's scalar is a singlet of the non-abelian factor. This is the sharpest obstacle. The scalar the framework supplies, $\tilde{Ξ} = \xi\,e_t$, lies in the centre; it commutes with every element, and every rotor fixes it under the Hermitian pair, $\mathrm{Sd}_{\tilde U}(\xi e_t)=\tilde U\,\xi e_t\,\tilde U^{*}=\xi e_t$. Left multiplication does move it, $L_{\tilde U}(\xi e_t)=\xi\tilde U$, but it moves it out of the centre and out of any carrier, which is the second reason the framework cannot use this scalar as a doublet. Fixed by the pair and moved by the left action: a scalar is by definition the singlet. A field that is invariant under a group cannot break it — the vacuum $\langle\xi\rangle e_t$ is invariant under $SU(2)$, so it is not a vacuum of broken $SU(2)$, and no $SU(2)$ connection acquires a mass from it. To break the non-abelian factor one needs a scalar that transforms non-trivially — in the adjoint $\tilde{Ξ}\mapsto U\tilde{Ξ}U^{-1}$, or in a module of $\mathbb{B}$ — and the framework does not supply a canonical one. This is not a technicality to be papered over; it is the statement that the scalar that gives mass must carry the same symmetry the connections carry, and the central scalar does not.
 
 The repair, stated as a rotor condition. The line above says exactly what is wrong and therefore what would be right: a scalar that the rotor turns. The group here is $SU(2)$, which in this algebra is $\mathrm{SU}(2)=\mathrm{Spin}(3)$, so \"turned\" means acted on by $\mathrm{Sd}_{\tilde u}$ and \"carried\" means acted on by $L_{\tilde u}$. A field is turned by the rotor only if it lives in a carrier that left multiplication preserves, so the repair is a condition on the carrier and not on the potential. The algebra offers three candidates and one line of arithmetic excludes or qualifies each.
 
@@ -212,11 +212,11 @@ The repair, stated as a rotor condition. The line above says exactly what is wro
 
 There is no electroweak doublet and no hypercharge assignment. The Standard Model scalar is an $SU(2)_L$ doublet with hypercharge $Y = 1/2$, whose components are arranged so that one neutral component can acquire a vacuum expectation value while leaving the electromagnetic $\mathrm{U}(1)$ unbroken. Nothing in the read-list construction produces a doublet, a hypercharge operator, or the $SU(2)_L\times \mathrm{U}(1)_Y$ group with its quantum numbers. The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, which has a natural two-dimensional module $S$, so a doublet-shaped object is available algebraically; but the assignment of hypercharge, the relative $\mathrm{U}(1)$ inside the electroweak group, and the coupling of the doublet to the $W$ and $B$ fields are not determined by the algebra. **Writing those assignments down here would be inventing them**, and the assignment is exactly what the electroweak sector is made of. They are therefore not written.
 
-The fermion masses are likewise not constructed. *Chiral Fermions in the Biquaternion Framework* proves the selection rule that a bare Dirac mass is gauge invariant only when the left and right charges are equal, so a chiral fermion has no bare mass and must obtain one from a compensating scalar through a Yukawa coupling. That article names the present one as the place where the compensating scalar is to be treated. What can be said here is the negative: the framework's own mass term is the linear chirality coupling, a Dirac mass that the selection rule admits only when $ϙ_L = ϙ_R$ and that therefore cannot supply a chiral fermion's mass; the framework's abelian gauge group is central and so does not distinguish the two chiral halves; and no Yukawa coupling of the framework's scalar to those halves is constructed.
+The fermion masses are likewise not constructed. *Chiral Fermions in the Biquaternion Framework* proves the selection rule that a bare Dirac mass is invariant only when the left and right charges are equal, so a chiral fermion has no bare mass and must obtain one from a compensating scalar through a Yukawa coupling. That article names the present one as the place where the compensating scalar is to be treated. What can be said here is the negative: the framework's own mass term is the linear chirality coupling, a Dirac mass that the selection rule admits only when $ϙ_L = ϙ_R$ and that therefore cannot supply a chiral fermion's mass; the framework's abelian symmetry group is central and so does not distinguish the two chiral halves; and no Yukawa coupling of the framework's scalar to those halves is constructed.
 
 Whether the framework's scalar can play the role of the Standard Model Higgs in giving fermion masses is therefore open, and is not settled by the mechanism above.
 
-What the abelian construction *does* establish is the structure the non-abelian one must reproduce: a scalar whose vacuum is not invariant under the gauge group, a kinetic term that turns the vacuum value of the covariant derivative into a quadratic form in the connection, a mass-squared equal to the coefficient of that form, and a degree-of-freedom count that balances by absorbing the Goldstone modes. The electroweak sector is the same mechanism with a scalar in the right representation; finding that representation inside $\mathbb{B}$ is the open problem, not the mechanism.
+What the abelian construction *does* establish is the structure the non-abelian one must reproduce: a scalar whose vacuum is not invariant under the symmetry group, a kinetic term that turns the vacuum value of the covariant derivative into a quadratic form in the connection, a mass-squared equal to the coefficient of that form, and a degree-of-freedom count that balances by absorbing the Goldstone modes. The electroweak sector is the same mechanism with a scalar in the right representation; finding that representation inside $\mathbb{B}$ is the open problem, not the mechanism.
 
 Outside this framework there are two interpretations of the sector that do not use the framework's central scalar. One is the eigenvalue route recorded in the next section. The other is the volume-element interpretation of the left-right symmetric construction, in which the role of the symmetry-breaking element is taken by the volume element $\omega=E_1E_2E_3$ of the complex split biquaternion algebra $\mathrm{Cl}(3)$: $\omega$ is central, self-adjoint and involutive, it exchanges the two chiralities, and it is read as a source and sink of hypercharge of the kind the Standard Model scalar supplies. That element lives in the Clifford algebra $\mathrm{Cl}(3)$ above $\mathbb{B}$ and not in $\mathbb{B}$; the interpretation has no field, no potential and no coupling, and the present note records only that limit. Neither route supplies the electroweak doublet, the hypercharge assignment or the Yukawa coupling that the paragraph above names as the gap, and the present article adopts neither.
 
@@ -255,7 +255,7 @@ How this bears on the article's own gap. The framework's obstacle is that its sc
 
 5. The Yukawa coupling. How does the framework's scalar couple to the chiral spinor halves so as to generate fermion mass after breaking? The chiral-fermions article poses the question and this article does not answer it.
 
-6. The number of broken generators. In a general non-abelian model the Goldstone count is $\dim(G/H)$, and the balance of degrees of freedom is the same argument run with more gauge fields. Does the biquaternion framework constrain $G$ and $H$, and hence the count?
+6. The number of broken generators. In a general non-abelian model the Goldstone count is $\dim(G/H)$, and the balance of degrees of freedom is the same argument run with more connections. Does the biquaternion framework constrain $G$ and $H$, and hence the count?
 
 7. Empirical contact. As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from the standard Higgs mechanism. The abelian construction above is a reformulation of scalar electrodynamics; the question of empirical contact is untouched by it.
 
@@ -267,7 +267,7 @@ $$
 D_{\imath}\tilde{Ξ}\Big|_{\text{vac}} =\frac{2\pi i\,ϙ}{h}A_{\imath}\langle\tilde{Ξ}\rangle  ,
 $$
 
-and the gauge-invariant scalar kinetic term therefore reduces to a quadratic form in the connection,
+and the invariant scalar kinetic term therefore reduces to a quadratic form in the connection,
 
 $$
 -\,\sum_{\imath,\jmath} g_{\imath\jmath}(D_{\imath}\xi)^*(D_{\jmath}\xi)\Big|_{\text{vac}}
@@ -280,9 +280,9 @@ $$
 M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}
 $$
 
-No mass term was written by hand: a term $m^2\sum_{\imath} A_{\imath} A_{\imath}$ is not gauge invariant, while the kinetic term is, and the mass appears only after the non-invariant vacuum is substituted. The mass does not involve the quartic coupling $\beta$; the radial mode's mass $m_h^2 = 2\beta v^2$ does. The angular mode of the scalar is a would-be Goldstone boson with no potential; a gauge transformation removes it (the unitary gauge), and the connection acquires it as its longitudinal polarization. The degree-of-freedom count balances, $2 + 2 = 1 + 3$.
+No mass term was written by hand: a term $m^2\sum_{\imath} A_{\imath} A_{\imath}$ is not invariant, while the kinetic term is, and the mass appears only after the non-invariant vacuum is substituted. The mass does not involve the quartic coupling $\beta$; the radial mode's mass $m_h^2 = 2\beta v^2$ does. The angular mode of the scalar is a would-be Goldstone boson with no potential; a local transformation removes it (the unitary gauge), and the connection acquires it as its longitudinal polarization. The degree-of-freedom count balances, $2 + 2 = 1 + 3$.
 
-The coefficient and the count were recomputed: the induced quadratic form equals $-\frac{ϙ^{2}\,v^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ times $\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi}) = \langle\tilde{A}_{\Phi},\tilde{A}_{\Phi}\rangle_{\natural}$ on a generic connection direction and on two independent parameter sets (relative error below $10^{-15}$); the kinetic density is gauge invariant to round-off while a put-in mass term changes by a nonzero amount well above round-off; and the count balances only when the Goldstone mode is absorbed.
+The coefficient and the count were recomputed: the induced quadratic form equals $-\frac{ϙ^{2}\,v^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}$ times $\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi}) = \langle\tilde{A}_{\Phi},\tilde{A}_{\Phi}\rangle_{\natural}$ on a generic connection direction and on two independent parameter sets (relative error below $10^{-15}$); the kinetic density is invariant to round-off while a put-in mass term changes by a nonzero amount well above round-off; and the count balances only when the Goldstone mode is absorbed.
 
 One gap is left visible and is not closed. The framework's scalar lies in the centre and is therefore a **singlet of the non-abelian factor** $\mathrm{SU}(2)$ of the material sector; a singlet cannot break $SU(2)$. The framework supplies neither a scalar in a non-trivial representation, nor an electroweak doublet, nor the hypercharge assignments, and the reality condition on a non-abelian connection is itself open. The non-abelian and electroweak Higgs mechanism is therefore not constructed here, and the quantum numbers it would require are not invented. What is established is the mechanism and its counting; what is open is the representation of the scalar that the Standard Model needs.
 
@@ -295,16 +295,16 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
-| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian gauge factor |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian group factor |
 | $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_{\imath}\,\vec e_{\imath}\partial/\partial R_{\imath}$ | Biquaternionic gradient; $\partial/\partial R_t = -i\partial/\partial r'_t/c$ |
 | $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_{\imath}\,\vec e_{\imath}\partial/\partial R_{\imath}$ | Quaternion-conjugate gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $\tilde{A}_{\Phi} = \sum_{\imath} A_{\imath} e_{\imath} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection; $A_0$ imaginary, $\vec A$ real |
 | $A_{\imath}$ | Complex connection coefficients (central, abelian) |
-| $\Gamma$ | Real scalar gauge function |
+| $\Gamma$ | Real scalar phase function |
 | $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ | Local central phase |
 | $ϙ,\frac{h}{2\pi}, \kappa =\frac{2\pi ϙ}{h}$ | Charge, the action of one radian of phase, coupling |
-| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Gauge transformation of the connection |
+| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Local transformation of the connection |
 | $D_{\imath} = \partial/\partial R_{\imath} + i\kappa A_{\imath}$ | Covariant derivative |
 | $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$ | Complex central scalar field |
 | $\xi$ | Complex scalar amplitude; $|\xi| = v/\sqrt{2}$ at the vacuum |
@@ -314,9 +314,9 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $h$ | Radial (Higgs) mode, $m_h^2 = 2\beta v^2$ |
 | $\vartheta_{\mathrm{fld}}$ | Angular (would-be Goldstone) mode, the phase $\vartheta_{\mathrm{fld}}/v$ |
 | $\varepsilon=(1,-1,-1,-1)$ | coordinate signs for contractions |
-| $\mathcal{L}_\text{scalar} = -\sum_{\imath,\jmath}g_{\imath\jmath}(D_{\imath}\xi)^*(D_{\jmath}\xi) - V$ | Gauge-invariant scalar Lagrangian |
+| $\mathcal{L}_\text{scalar} = -\sum_{\imath,\jmath}g_{\imath\jmath}(D_{\imath}\xi)^*(D_{\jmath}\xi) - V$ | Invariant scalar Lagrangian |
 | $-\sum_{\imath,\jmath} g_{\imath\jmath}(D_{\imath}\xi)^*(D_{\jmath}\xi)\big|_\text{vac} = -\frac{ϙ^{2}\,v^{2}}{2\,\frac{h^{2}}{4\pi^{2}}}\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi})_{\natural}$ | Kinetic term at the vacuum = mass term |
-| $M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}$ | Gauge boson mass-squared from the kinetic term |
+| $M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}$ | Connection mass-squared from the kinetic term |
 | $\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi}) = \sum_{\imath} A_{\imath}^2$ | Biquaternion norm of the connection in $\mathbb{B}_{\Phi}$ |
 | $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*}) = 2\langle\tilde\Pi_{\mathrm{id}},\tilde H_\Psi\rangle_{*}$ | Inherited state-pairing reading |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
@@ -325,15 +325,15 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 
 ## Further Reading
 
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the complex scalar realization $\tilde{Ξ} = \xi\,e_t$, the transformation law, and the covariant derivative inherited here.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the covariant derivative as an operator, the gauge orbit, the curvature, and the covariant square used in the gap discussion.
-- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the compact algebra $\mathrm{SU}(2)$ inside $\mathbb{B}_{\Phi}$, its reality gap, and the non-abelian connection whose absence bounds this article.
+- [The Minimal coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the complex scalar realization $\tilde{Ξ} = \xi\,e_t$, the transformation law, and the covariant derivative inherited here.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the covariant derivative as an operator, the orbit, the curvature, and the covariant square used in the gap discussion.
+- [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the compact algebra $\mathrm{SU}(2)$ inside $\mathbb{B}_{\Phi}$, its reality gap, and the non-abelian connection whose absence bounds this article.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the mass selection rule $ϙ_L = ϙ_R$, the charge operator, and the naming of this article as the compensating-scalar companion.
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the free scalar equation whose gauging and vacuum this article uses.
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html) — the framework's scalar Lagrangian, whose complex-field normalization is discussed in the companion notes.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the sector's basis, its four-vectors, and the imaginary-scalar/real-vector structure of the connection.
 - [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian sector and the pairing formula.
-- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian potential and field strength that the gauge field mass modifies.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian potential and field strength that the connection mass modifies.
 - [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) — the left/right matter-representation question that the non-abelian scalar inherits.
 - [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html) — the framework's inability to fix the gauge, which the unitary gauge here chooses rather than derives.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html) — the multiplication rule, the conjugations, and the centre used throughout.

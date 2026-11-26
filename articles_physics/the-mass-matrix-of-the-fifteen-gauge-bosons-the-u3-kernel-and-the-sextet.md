@@ -7,7 +7,7 @@ six leptoquark directions take $32v^{2}$ at the transition. $8+1+6=15$.
 
 **The model.** One model: the $\mathrm{SU}(4)$ model, set out in [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One
 Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). **Its gauge content is the fifteen generators of $\mathfrak{su}(4)$ and
-nothing else.** There is no weak factor in the algebra and no weak gauge field in the ledger: $W^{\pm}$, $Z$, $Z_R$ and the photon are not directions of this
+nothing else.** There is no weak factor in the algebra and no weak connection in the ledger: $W^{\pm}$, $Z$, $Z_R$ and the photon are not directions of this
 model. They arrive at $M_C$ with the doublet index of the condensate, and their masses are computed below the transition, in [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html).
 
 **What the article computes, and what it borrows.** It states the two blocks, derives the sextet's mass from the adjoint action of the vacuum, and shows that

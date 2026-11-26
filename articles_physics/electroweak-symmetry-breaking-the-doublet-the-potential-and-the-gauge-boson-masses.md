@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The claim. The electroweak sector breaks $SU(2)_L\times\mathrm{U}(1)_Y$ to $\mathrm{U}(1)_{\mathrm{em}}$ through one scalar doublet. The doublet's four real components become one massive scalar and three longitudinal polarisations, and the gauge bosons acquire the masses
+The claim. The electroweak sector breaks $SU(2)_L\times\mathrm{U}(1)_Y$ to $\mathrm{U}(1)_{\mathrm{em}}$ through one scalar doublet. The doublet's four real components become one massive scalar and three longitudinal polarisations, and the connections acquire the masses
 
 $$
 M_W=\frac{g\,v}{2},
@@ -52,7 +52,7 @@ Why a doublet of complex fields is four real fields. Each component is a complex
 
 ## The Potential and Its Minimum
 
-The potential. The most general potential invariant under the gauge group and renormalisable, given one doublet, is
+The potential. The most general potential invariant under the symmetry group and renormalisable, given one doublet, is
 
 $$
 V(\omicron_{\mathrm{pot}})=-\mu^2\,\omicron_{\mathrm{pot}}^{\dagger}\omicron_{\mathrm{pot}}+\digamma_{\mathrm{qtc}}\left(\omicron_{\mathrm{pot}}^{\dagger}\omicron_{\mathrm{pot}}\right)^2 ,
@@ -108,7 +108,7 @@ Q\,\langle\omicron_{\mathrm{pot}}\rangle=\left(T_3+Y\right)\frac{1}{\sqrt2}\begi
 =\left(-\tfrac12+\tfrac12\right)\langle\omicron_{\mathrm{pot}}\rangle=0 .
 $$
 
-That single line is the whole of the alignment: the charge operator annihilates the vacuum, so the electromagnetic group survives, and the three generators orthogonal to it do not, so the other three gauge directions acquire mass.
+That single line is the whole of the alignment: the charge operator annihilates the vacuum, so the electromagnetic group survives, and the three generators orthogonal to it do not, so the other three redundant directions acquire mass.
 
 The stationarity check. The minimum conditions $\partial V/\partial\omicron_{\mathrm{pot}}=0$ give $-\mu^2+2\digamma_{\mathrm{qtc}}\omicron_{\mathrm{pot}}^\dagger\omicron_{\mathrm{pot}}=0$, which at the minimum reads $\mu^2=\digamma_{\mathrm{qtc}} v^2$. The potential energy at the minimum is $V_{\min}=-\mu^4/(4\digamma_{\mathrm{qtc}})=-\digamma_{\mathrm{qtc}} v^4/4=-M_H^2v^2/8$, a negative constant. That constant is the cosmological constant problem in its original form: the model sets the zero of energy at the minimum and puts the vacuum at $-M_H^2v^2/8$, and nothing in it cancels the result against the observed dark-energy density. [Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source](cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.html) records the logical status of $\Lambda$ and why neither of its standard readings makes it a prediction; the constant plays no part in the masses.
 
@@ -156,7 +156,7 @@ $$
 
 where $\omicron_{\mathrm{pot},0}^{\uparrow}=\frac{1}{\sqrt2}\binom{v}{0}$ is the same doublet with the entries exchanged. The first two produce the charged directions, and the last two produce the neutral one with opposite signs.
 
-The kinetic term at the vacuum. The corpus's sign rule makes the term $-\sum_{\imath}(D_{\imath}\omicron_{\mathrm{pot}})^\dagger(D_{\imath}\omicron_{\mathrm{pot}})$, and at the vacuum the derivative carries no spacetime index of its own, so the term is a quadratic form in the four gauge fields,
+The kinetic term at the vacuum. The corpus's sign rule makes the term $-\sum_{\imath}(D_{\imath}\omicron_{\mathrm{pot}})^\dagger(D_{\imath}\omicron_{\mathrm{pot}})$, and at the vacuum the derivative carries no spacetime index of its own, so the term is a quadratic form in the four connections,
 
 $$
 \mathcal{L}_{\mathrm{mass}}=-\frac{v^2}{8}\left[g^2\left(W_{1,\imath}\right)^2+g^2\left(W_{2,\imath}\right)^2+\left(gW_{3,\imath}-g_{\mathrm Y}B_{\imath}\right)^2\right] .
@@ -242,7 +242,7 @@ The count before the breaking. Count on-shell real degrees of freedom in four di
 
 | Object | Count | Degrees of freedom |
 |---|---|---|
-| four gauge fields, massless | $4$ | $4\times2=8$ |
+| four connections, massless | $4$ | $4\times2=8$ |
 | scalar doublet, four real components | $4$ | $4$ |
 | **total** | | $\mathbf{12}$ |
 
@@ -259,7 +259,7 @@ The count after. The same fields, now in the broken phase.
 
 A massive vector has three polarisations: two transverse and one longitudinal.
 
-**The balance is $12=12$, and it is not automatic.** The equality holds because exactly three scalar components ceased to be independent fields and exactly three gauge polarisations were gained. The two events are one event, seen from two sides. Had the group been broken to nothing, four gauge fields would be massive and no photon would survive, and the count would still balance — the count does not determine the pattern, only its arithmetic.
+**The balance is $12=12$, and it is not automatic.** The equality holds because exactly three scalar components ceased to be independent fields and exactly three gauge polarisations were gained. The two events are one event, seen from two sides. Had the group been broken to nothing, four connections would be massive and no photon would survive, and the count would still balance — the count does not determine the pattern, only its arithmetic.
 
 Where each component went. The three eaten components are the two real parts of $\omicron_{\mathrm{pot}}^+$ and the imaginary part of $\omicron_{\mathrm{pot}}^0$. The fourth, the real part of $\omicron_{\mathrm{pot}}^0$ after the shift, is $h$. The identification is worth writing because it fixes which field is which:
 
@@ -271,21 +271,21 @@ Where each component went. The three eaten components are the two real parts of 
 
 The number of Goldstones equals the number of broken generators. The group has four generators and the surviving group has one, so three are broken, and three is the number of eaten components. This is the Goldstone theorem in its counting form, and the equality is the content of the previous table. The abelian case of [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) has one broken generator and one eaten mode, and the two articles are the same argument at two sizes.
 
-The would-be Goldstones are gauge directions. In a generic gauge the doublet is
+The would-be Goldstones are redundant directions. In a generic gauge the doublet is
 
 $$
 \omicron_{\mathrm{pot}}=\exp\left(i\sum_a\theta_{\mathrm{gld},a}\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
-and the three fields $\xi_a$ are the would-be Goldstones. The angle is $\theta_{\mathrm{gld},a}=\xi_a/v$, a real Goldstone field over the real vacuum expectation value. A gauge transformation with parameter $\Gamma_a=-\frac{2}{gv}\xi_a$ removes them, at the price of shifting the gauge fields by $\partial\xi/\partial R_{\imath}$. The combination that is gauge invariant is $W_{a,\imath}+\frac{2}{gv}\partial\xi_a/\partial R_{\imath}$, and it is that combination which carries the mass. The Goldstone is not destroyed: it becomes the longitudinal part of the field that absorbed it.
+and the three fields $\xi_a$ are the would-be Goldstones. The angle is $\theta_{\mathrm{gld},a}=\xi_a/v$, a real Goldstone field over the real vacuum expectation value. A local transformation with parameter $\Gamma_a=-\frac{2}{gv}\xi_a$ removes them, at the price of shifting the connections by $\partial\xi/\partial R_{\imath}$. The combination that is invariant is $W_{a,\imath}+\frac{2}{gv}\partial\xi_a/\partial R_{\imath}$, and it is that combination which carries the mass. The Goldstone is not destroyed: it becomes the longitudinal part of the field that absorbed it.
 
 Why this is a statement about a field and not about a particle. The Goldstone mode never appears in the physical spectrum, and at the same time it is present in every gauge but the unitary one. The two statements are consistent because the mode is a gauge artefact: its presence or absence is a choice of coordinates on field space, and no observable depends on the choice. What is observable is the three polarisations of the massive vector, and those are counted in the second table.
 
 ## The Unitary Gauge and the Physical Spectrum
 
-The gauge. The unitary gauge is the choice in which the three Goldstones are set to zero and the doublet is $\frac{1}{\sqrt2}(0,v+h)^{T}$. Three gauge conditions, three eaten fields, and no ghosts in the spectrum at tree level.
+The gauge. The unitary gauge is the choice in which the three Goldstones are set to zero and the doublet is $\frac{1}{\sqrt2}(0,v+h)^{T}$. Three fixing conditions, three eaten fields, and no ghosts in the spectrum at tree level.
 
-The spectrum. Five particles come out of the four gauge fields and the four scalar components:
+The spectrum. Five particles come out of the four connections and the four scalar components:
 
 | Particle | Mass | Polarisations | Coupling to $h$ |
 |---|---|---|---|
@@ -440,7 +440,7 @@ $$
 
 For one doublet with $T=\tfrac12$ and $T_3=-\tfrac12$ the numerator is $v^2\left(\tfrac34-\tfrac14\right)=\tfrac12v^2$ and the denominator is $2v^2\tfrac14=\tfrac12v^2$, giving one. For one triplet with $T=1$ and $T_3=-1$ the numerator is $v^2(2-1)=v^2$ and the denominator $2v^2$, giving one half. A triplet therefore pulls $\rho$ below one, and the measurement bounds its vacuum expectation value.
 
-Why $\rho=1$ is structural. The doublet, written as a $2\times2$ matrix $\omicron_{\mathrm{hgs}}=(\tilde\omicron_{\mathrm{pot}},\omicron_{\mathrm{pot}})$ whose columns are the doublet and its conjugate, has a potential that depends only on $\mathrm{tr}(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})$. The potential therefore has an $SU(2)_L\times SU(2)_R$ symmetry larger than the gauged one, and the vacuum $\langle\omicron_{\mathrm{hgs}}\rangle\propto\mathrm I$ breaks it to the diagonal $SU(2)_V$. That residual symmetry is custodial, and it is what makes the three gauge bosons' masses related.
+Why $\rho=1$ is structural. The doublet, written as a $2\times2$ matrix $\omicron_{\mathrm{hgs}}=(\tilde\omicron_{\mathrm{pot}},\omicron_{\mathrm{pot}})$ whose columns are the doublet and its conjugate, has a potential that depends only on $\mathrm{tr}(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})$. The potential therefore has an $SU(2)_L\times SU(2)_R$ symmetry larger than the gauged one, and the vacuum $\langle\omicron_{\mathrm{hgs}}\rangle\propto\mathrm I$ breaks it to the diagonal $SU(2)_V$. That residual symmetry is custodial, and it is what makes the three connections' masses related.
 
 **The hypercharge breaks custodial symmetry explicitly.** The gauged hypercharge is the third generator of $SU(2)_R$, so switching it on distinguishes the third direction from the other two. The tree-level $\rho=1$ survives because the vacuum is custodially invariant; the breaking appears at one loop, in the difference between the $W$ and $Z$ self-energies, and it is one of the corrections inside $\delta r$.
 
@@ -448,11 +448,11 @@ The empirical bound, in the form that matters here. The measured $\rho$ is unity
 
 ## The Equivalence Theorem
 
-The statement. At energies large compared with the gauge-boson mass, an amplitude with a longitudinal $W$ or $Z$ in the initial or final state equals, up to corrections of order $M/E$, the amplitude with the corresponding Goldstone field. In the notation above, $\mathcal{M}(W_L\ldots)=\mathcal{M}(\xi\ldots)+O(M/E)$.
+The statement. At energies large compared with the connection mass, an amplitude with a longitudinal $W$ or $Z$ in the initial or final state equals, up to corrections of order $M/E$, the amplitude with the corresponding Goldstone field. In the notation above, $\mathcal{M}(W_L\ldots)=\mathcal{M}(\xi\ldots)+O(M/E)$.
 
-Why it is true here. The Goldstone fields are the gauge directions that the mass term mixes with the longitudinal polarisation. In the $R_\xi$ gauges the mixing is proportional to the Goldstone mass, which is $M_W$ in unitary-weighted gauges; at high energy the mixing is small and the two states are effectively the same.
+Why it is true here. The Goldstone fields are the redundant directions that the mass term mixes with the longitudinal polarisation. In the $R_\xi$ gauges the mixing is proportional to the Goldstone mass, which is $M_W$ in unitary-weighted gauges; at high energy the mixing is small and the two states are effectively the same.
 
-The use. The theorem converts a calculation in a gauge theory into a calculation in a scalar theory, which is the reason the longitudinal amplitudes of the Standard Model are computable. It is also the reason the sector is testable: the scattering of longitudinal gauge bosons at high energy would grow with energy if the scalar were absent, and the scalar exchange cancels the growth. The cancellation is exact only if the scalar's couplings are the ones in the table above, so a measurement of longitudinal scattering is a measurement of that table.
+The use. The theorem converts a calculation in a gauge theory into a calculation in a scalar theory, which is the reason the longitudinal amplitudes of the Standard Model are computable. It is also the reason the sector is testable: the scattering of longitudinal connections at high energy would grow with energy if the scalar were absent, and the scalar exchange cancels the growth. The cancellation is exact only if the scalar's couplings are the ones in the table above, so a measurement of longitudinal scattering is a measurement of that table.
 
 The bound it gives. Without a scalar, the amplitude for $W_LW_L\to W_LW_L$ grows as $E^2/v^2$ and violates unitarity at about $2.1\times10^{-24}\ \mathrm{kg}$. The scalar's exchange cancels the growth, and the residual term is of order $M_H^2/v^2$. The scale $2.1\times10^{-24}\ \mathrm{kg}$ is therefore the scale at which something must appear if the sector is not as described, and it is the reason the scalar was expected below about $1.6\times10^{-7}$ J.
 
@@ -466,7 +466,7 @@ The distance to the electroweak case is exactly three items. Stated as a list, b
 
 | Item | Framework | Standard Model |
 |---|---|---|
-| the gauge group | central $\mathrm{U}(1)$, or $SU(2)$ from $\mathbb{B}_\omicron_{\mathrm{hgs}}$ | $SU(2)_L\times\mathrm{U}(1)_Y$ |
+| the symmetry group | central $\mathrm{U}(1)$, or $SU(2)$ from $\mathbb{B}_\omicron_{\mathrm{hgs}}$ | $SU(2)_L\times\mathrm{U}(1)_Y$ |
 | the scalar's representation | the centre, a singlet of $SU(2)$ | a doublet, charged under both factors |
 | the scalar's hypercharge | one central charge, vector-like | $\tfrac12$, chiral |
 

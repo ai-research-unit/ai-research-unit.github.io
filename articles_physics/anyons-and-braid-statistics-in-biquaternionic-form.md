@@ -80,7 +80,7 @@ $$
 
 $$
 
-The angle is $\theta_{\mathrm{gau}}$, the integrated gauge function: the charge and the potential are real, so the angle is real.
+The angle is $\theta_{\mathrm{gau}}$, the integrated phase function: the charge and the potential are real, so the angle is real.
 
 The angle $\theta_{\mathrm{any}}$ is the statistics angle, and it is continuous because the product $eΞ$ is continuous. The model was the historical origin of anyons, and it shows why the statistics is not quantized in $2+1$ dimensions: the flux is not quantized for a general source, so neither is the phase. The relation to the Aharonov–Bohm discussion of the Wilson-loop construction is direct: the exchange phase is half the holonomy, and the holonomy is the loop observable.
 
@@ -121,13 +121,13 @@ With the linking number of a single full loop verified to be $\pm1$ for the Hopf
 
 ### The Chern–Simons Term
 
-The field theory whose solitons and quasiparticles carry fractional statistics is the Chern–Simons theory. In $2+1$ dimensions the gauge field admits the topological term
+The field theory whose solitons and quasiparticles carry fractional statistics is the Chern–Simons theory. In $2+1$ dimensions the connection admits the topological term
 
 $$
 S_{\mathrm{CS}} = \frac{k}{4\pi}\int d^3r\;\varepsilon_{\imath\jmath\rho}A_{\imath}\partial/\partial x_{\jmath} A_\rho ,
 $$
 
-with $k$ the level and $\varepsilon_{\imath\jmath\rho}$ the Levi-Civita symbol, $\varepsilon_{012}=+1$; the lower-index symbol is the same array, so the term is unchanged. The term is gauge invariant (up to a surface term) and metric independent: it involves no metric, so it defines a topological field theory, with no local propagating degrees of freedom. Its physical content is entirely in the behavior of Wilson loops, which are the observables of the theory.
+with $k$ the level and $\varepsilon_{\imath\jmath\rho}$ the Levi-Civita symbol, $\varepsilon_{012}=+1$; the lower-index symbol is the same array, so the term is unchanged. The term is invariant (up to a surface term) and metric independent: it involves no metric, so it defines a topological field theory, with no local propagating degrees of freedom. Its physical content is entirely in the behavior of Wilson loops, which are the observables of the theory.
 
 ### Wilson Loops, Linking, and the Statistics Angle
 
@@ -170,7 +170,7 @@ The Chern–Simons connection is a connection whose curvature vanishes away from
 
 ## Non-Abelian Anyons
 
-When the gauge group is non-abelian the loops carry a representation label in addition to the charge, and the exchange is a matrix rather than a phase. The Wilson loop is untraced only in the intermediate steps; the observable is the trace in a representation $R$,
+When the symmetry group is non-abelian the loops carry a representation label in addition to the charge, and the exchange is a matrix rather than a phase. The Wilson loop is untraced only in the intermediate steps; the observable is the trace in a representation $R$,
 
 $$
 W_R(C) = \mathrm{Tr}_R\,\mathcal{P}\exp\left(i\theta_{\mathrm{gau}}\right),

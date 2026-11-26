@@ -122,7 +122,7 @@ $$
 
 with $\mathcal{Q}_{\mathrm{free}}$ the free article's form. Every exact statement the free article makes about $\mathcal{Q}_{\mathrm{free}}$ is therefore a statement about $\mathcal{Q}$ with the argument translated, and no new computation is needed to carry it over.
 
-**What the relabelling is not is a gauge transformation of the field.** The translation moves the argument of the form; the field is untouched. The gauge transformation moves the field's phase and the argument together, and that is the companion's subject. The two are different operations and the article keeps them apart, because the temptation to call the translation a gauge transformation is strong and it is the one error this section exists to prevent.
+**What the relabelling is not is a local transformation of the field.** The translation moves the argument of the form; the field is untouched. The local transformation moves the field's phase and the argument together, and that is the companion's subject. The two are different operations and the article keeps them apart, because the temptation to call the translation a local transformation is strong and it is the one error this section exists to prevent.
 
 A functional that depends on $\tilde A_\Phi$ only through $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ cannot distinguish "the coupling is present and the momentum is shifted" from "the coupling is absent and the momentum is the shifted one". That is exactly right for a constant connection, which the parent proves is pure gauge: a constant potential is removable by a phase and the two descriptions are the same physical situation.
 
@@ -230,7 +230,7 @@ checked to $2.2\times10^{-16}$ over the four rows below.
 
 The second variation is $2.032500$ and $-0.127500$, so a scalar potential of $\pm0.5$ moves the number across zero; the wrong object is $5.322500$ and $1.902500$, and it does not cross. So the number's sign is a physical statement and the wrong object's sign is not, which is why the distinction between the two is not bookkeeping.
 
-A linear gauge function translates the support of the field in momentum space and leaves $\pi$ where it was, because the shift of $\tilde A_\Phi$ and the shift of $k$ cancel in $\frac{h}{2\pi} k+ϙA$. So $\pi^{2}-\nu_m^{2}$ is a number attached to the mode and not to the gauge, and the free article's $\tilde\Upsilon_\Phi$-dependent statement was not.
+A linear phase function translates the support of the field in momentum space and leaves $\pi$ where it was, because the shift of $\tilde A_\Phi$ and the shift of $k$ cancel in $\frac{h}{2\pi} k+ϙA$. So $\pi^{2}-\nu_m^{2}$ is a number attached to the mode and not to the gauge, and the free article's $\tilde\Upsilon_\Phi$-dependent statement was not.
 
 ### Zero, Pole and the On-Shell Action
 
@@ -353,7 +353,7 @@ Whether the invisibility of the local phase at a mode has a reading in the word.
 
 At a constant connection the coupled Dirac action at a mode is one quadratic form per wave number, and the coupling's entire effect on it is a translation of the argument: $2\pi i\tilde\Upsilon_\Phi+\frac{iϙ}{h}\tilde A_\Phi=\frac{i}{h}\tilde P'_\Phi$ with residual $0.0\times10^{0}$. The real part stays redundant, because both summands of the symbol are Hermitian, with a largest imaginary part of $3.6\times10^{-15}$ over two hundred draws.
 
-The second variation is one number, $N=\pi^{2}-4\pi^{2}\nu_m^{2}$, and the reason it is a number is that the $\natural$-square of *any* element is central — the composed operator's off-diagonal defect was $0.0\times10^{0}$. The number is $0.750000$, $2.032500$, $-0.127500$ and $0.518900$ at the four rows of the table, and it crosses zero when the scalar potential changes sign; the wrong object $\pi^{2}+2\nu_m\pi_t+\nu_m^{2}$ does not. The number is gauge invariant because it depends on $\pi$ and not on $k$.
+The second variation is one number, $N=\pi^{2}-4\pi^{2}\nu_m^{2}$, and the reason it is a number is that the $\natural$-square of *any* element is central — the composed operator's off-diagonal defect was $0.0\times10^{0}$. The number is $0.750000$, $2.032500$, $-0.127500$ and $0.518900$ at the four rows of the table, and it crosses zero when the scalar potential changes sign; the wrong object $\pi^{2}+2\nu_m\pi_t+\nu_m^{2}$ does not. The number is invariant because it depends on $\pi$ and not on $k$.
 
 The curvature is what limits the statement. $\tilde F$ is a pure vector, hence $\natural$-antisymmetric with residual $0.0\times10^{0}$, and its commutator with a generic element measured $4.43$: a $\natural$-antisymmetric element cannot be central. So the composed operator is a central multiple of the identity exactly when the field strength vanishes, and the free article's zero-pole relation is available exactly there — which answers that article's open question negatively and precisely.
 
@@ -394,7 +394,7 @@ On the shell the mode form vanishes — $3.6\times10^{-15}$ against $-32.554945$
 - *Biquaternion Continuous Harmonic Analysis*, for the convolution theorem that bounds the constant-connection licence.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), Chapter 7, for the free Dirac propagator and the first-order Lagrangian's vanishing on solutions.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), Chapter 2, for the momentum-space action and the minimal substitution in the standard language.
-- L. D. Landau and E. M. Lifshitz, *Quantum Mechanics: Non-Relativistic Theory* (Pergamon, 3rd ed., 1977), §111, for the gauge transformation as a translation of the canonical momentum.
+- L. D. Landau and E. M. Lifshitz, *Quantum Mechanics: Non-Relativistic Theory* (Pergamon, 3rd ed., 1977), §111, for the local transformation as a translation of the canonical momentum.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), Chapter 9, for the Ward identity as a statement about the transition amplitude between two modes.
 
 ## Aside: Why the Parent’s Test Field Had Two Modes

@@ -58,8 +58,8 @@ $$
 \operatorname{tr}\bigl(D_{\imath}Ξ\bigr)^{\dagger}\bigl(D_{\imath}Ξ\bigr)
 =
 \underbrace{\operatorname{tr}\partial_{\imath}Ξ^{\dagger}\partial_{\imath}Ξ}_{\text{kinetic}}
-\underbrace{-2ig_4A_{a,\imath}\operatorname{tr}\bigl(\partial_{\imath}Ξ\,[t_{a},Ξ]\bigr)}_{\text{one gauge field}}
-\underbrace{+g_4^{2}A_{a,\imath}A_{b,\imath}\operatorname{tr}\bigl([t_{a},Ξ]^{\dagger}[t_{b},Ξ]\bigr)}_{\text{two gauge fields}} .
+\underbrace{-2ig_4A_{a,\imath}\operatorname{tr}\bigl(\partial_{\imath}Ξ\,[t_{a},Ξ]\bigr)}_{\text{one connection}}
+\underbrace{+g_4^{2}A_{a,\imath}A_{b,\imath}\operatorname{tr}\bigl([t_{a},Ξ]^{\dagger}[t_{b},Ξ]\bigr)}_{\text{two connections}} .
 $$
 
 **The counts follow from the indices and not from a diagram.**
@@ -85,7 +85,7 @@ $$
 
 **The derivative of the potential is a matrix and not a number**, and that is the difference between this field and a quartet: $\partial V/\partialΞ^{\dagger}$ carries the same two indices as $Ξ$, so the equation is an equation between matrices and holds entry by entry.
 
-**The trace terms shift the equation and never rotate it.** The pieces carrying an unpaired $\operatorname{tr}Ξ$ give multiples of $\mathbb 1$; the pieces carrying $(\operatorname{tr}Ξ)^{2}\Xi$ or $\operatorname{tr}Ξ^{2}\,\Xi$ rescale the matrix part without rotating it in colour space. **That is why the trace channel changes masses and never the breaking pattern**: a shift of $Ξ$ by $c\,\mathbb 1$ commutes with all fifteen generators, so the gauge sector never sees it.
+**The trace terms shift the equation and never rotate it.** The pieces carrying an unpaired $\operatorname{tr}Ξ$ give multiples of $\mathbb 1$; the pieces carrying $(\operatorname{tr}Ξ)^{2}\Xi$ or $\operatorname{tr}Ξ^{2}\,\Xi$ rescale the matrix part without rotating it in colour space. **That is why the trace channel changes masses and never the breaking pattern**: a shift of $Ξ$ by $c\,\mathbb 1$ commutes with all fifteen generators, so the sector never sees it.
 
 **The two quartics of the traceless part produce two different cubic terms in the equation of motion.** $ΞΞ^{\dagger}Ξ$ is a matrix product of three factors; $(\operatorname{tr}Ξ^{\dagger}Ξ)Ξ$ is a number times the field. **A potential with one quartic would have only the second kind**, and the difference is what makes the model's vacuum shape a dynamical question. **The two trace quartics add no third kind**: they produce $(\operatorname{tr}Ξ)^{2}Ξ$ and $(\operatorname{tr}Ξ)^{2}\operatorname{tr}Ξ^{2}\,\mathbb 1$, a rescaling and a shift, and neither is a matrix product.
 
@@ -146,7 +146,7 @@ $$
 
 **Five absences, each with the article where it is supplied.**
 
-- *No mass term.* $\mu_{\Phi}^{2}$ is a coefficient of the potential, and a mass for the fifteen is forbidden by gauge invariance.
+- *No mass term.* $\mu_{\Phi}^{2}$ is a coefficient of the potential, and a mass for the fifteen is forbidden by local invariance.
 - *No second scale.* The piece has $g_4$ and no other coupling; $v_C$ is the potential's.
 - *No Yukawa.* The fermion–scalar vertex $y\bar\xiΞ\xi$ is a separate piece and a separate matrix.
 - *No second kinetic structure.* $(\partial_{\imath}\operatorname{tr}Ξ)^{2}$ is a second invariant of degree two and one rescaling of the singlet absorbs it (§*The Piece*); the kinetic term therefore has one coefficient, while the potential's two quadratics are independent.

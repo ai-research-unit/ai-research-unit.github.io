@@ -201,7 +201,7 @@ E=\exp\bigl(e\alpha(r_x)\,\omega\bigr),
 eA\mapsto eA-\tilde\nabla_\Phi\alpha ,
 $$
 
-a **right** multiplication by the phase factor, accompanied by the gauge transformation of the potential, with $e$ the charge coupling constant of the equation. The side is forced by the equation: the phase must reach the derivative on the same side as the spin plane. The derivative term produces
+a **right** multiplication by the phase factor, accompanied by the local transformation of the potential, with $e$ the charge coupling constant of the equation. The side is forced by the equation: the phase must reach the derivative on the same side as the spin plane. The derivative term produces
 
 $$
 \tilde\nabla_\Phi(\tilde{Ξ} E)\,\omega

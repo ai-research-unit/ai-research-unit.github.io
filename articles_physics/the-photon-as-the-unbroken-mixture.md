@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The question.** The electromagnetism section of this category is a set of articles whose equations are exact and whose field is one field. The $\mathrm{SU}(4)$ model adds a group with three neutral gauge bosons instead of two. What does that addition change in the section, given that Maxwell's equations are not touched?
+**The question.** The electromagnetism section of this category is a set of articles whose equations are exact and whose field is one field. The $\mathrm{SU}(4)$ model adds a group with three neutral connections instead of two. What does that addition change in the section, given that Maxwell's equations are not touched?
 
 **The answer in one line.**
 
@@ -18,7 +18,7 @@ $$
 
 **The direction of the mixture is the charge generator's own coefficient vector, and it is a null direction for one reason: both vacua are electrically neutral.** The photon is the last stabiliser of the chain, so it is the most mixed object in the frame, and the mixing is forced rather than chosen.
 
-**What the article claims.** That the photon is a particular combination of three neutral gauge fields; that the combination's **direction** is fixed by two neutrality conditions and requires no choice; that the direction is the coefficient vector of $Q$, so the photon is the unique combination that carries zero charge on every vacuum; and that the section's other articles survive verbatim, their equations untouched.
+**What the article claims.** That the photon is a particular combination of three neutral connections; that the combination's **direction** is fixed by two neutrality conditions and requires no choice; that the direction is the coefficient vector of $Q$, so the photon is the unique combination that carries zero charge on every vacuum; and that the section's other articles survive verbatim, their equations untouched.
 
 **What the article does not claim.** That the photon's dynamics changes. That photon mass or charge quantisation is modified. That the mixture is observable: it is not, at any energy, and *Why the Mixture Is Unobservable* says why. **And it does not compute the photon's coefficients in the three gauge fields**, because those coefficients carry the three couplings; they are in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). *Direction and Coordinates: Where This Article Stops* states that boundary.
 
@@ -130,7 +130,7 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 **4.1 The direction is in the space of generators.** $d=(1,1,\sqrt{2/3})$ is a vector of coefficients on $(T_{3L},T_{3R},T^{15})$. It says which combination of symmetries survives. It is fixed by two neutrality conditions, it is dimensionless, and it can be stated without naming an energy or a coupling.
 
-**4.2 The coordinates are in the space of gauge fields.** The physical photon field is a combination of the three gauge fields, and its coefficients there are not the direction: they are the direction **weighted by the three couplings**, so that the combination is canonically normalised. **That weighting is the whole coupling content of the mixture.** It changes when the couplings change and it depends on which scales are chosen.
+**4.2 The coordinates are in the space of connections.** The physical photon field is a combination of the three connections, and its coefficients there are not the direction: they are the direction **weighted by the three couplings**, so that the combination is canonically normalised. **That weighting is the whole coupling content of the mixture.** It changes when the couplings change and it depends on which scales are chosen.
 
 **4.3 Where the coordinates live.** In [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html), which is the single place in this category where a coupling value is written. **A reader who wants the photon's coefficients in the three fields should read that article. A reader who wants to know why the photon is a mixture at all should read this one.**
 
@@ -154,7 +154,7 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 **One connection the frame can make and the literature cannot, and it is worth stating carefully.**
 
-**6.1 The category's electromagnetic articles derive Maxwell from the algebra's structure**, not from a gauge principle: the field strength is a bivector, the equations are a projection, and $\mathrm{U}(1)$ appears as a phase. **Nothing in that derivation needs a mixture.**
+**6.1 The category's electromagnetic articles derive Maxwell from the algebra's structure**, not from a minimal coupling: the field strength is a bivector, the equations are a projection, and $\mathrm{U}(1)$ appears as a phase. **Nothing in that derivation needs a mixture.**
 
 **6.2 The frame adds a second description of the same field**, and the two must be compatible. The category's description says the photon is a $\mathrm{U}(1)$ connection; the frame's says the $\mathrm{U}(1)$ is a stabiliser of three vacua and its connection is a combination. **They are compatible because a linear combination of connections is a connection**, and the stabiliser's generator is $Q$.
 
@@ -170,13 +170,13 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 | what is added | length |
 |---|---|
-| the photon is a mixture of three neutral gauge fields, and its direction in the neutral space is $(1,1,\sqrt{2/3})$ in $(T_{3L},T_{3R},T^{15})$ | one display |
+| the photon is a mixture of three neutral connections, and its direction in the neutral space is $(1,1,\sqrt{2/3})$ in $(T_{3L},T_{3R},T^{15})$ | one display |
 | the direction is the coefficient vector of $Q$, hence null on both vacua, hence forced | one paragraph |
 | the direction is algebra and the coefficients in the three fields are dynamics, which the coupling article owns | one sentence and a forward reference |
 
-**7.2 What is unchanged.** Maxwell's equations, the wave equation, the gauge invariance $A_{\imath}\to A_{\imath}+\partial_{\imath}\chi$, the field strength, the stress tensor, the Lagrangian $-\tfrac14F^{2}$, the quantisation, the Feynman rules, the Coulomb potential, the radiation formulae, the article titles, the exercises. **Every equation in the section is the same equation.**
+**7.2 What is unchanged.** Maxwell's equations, the wave equation, the local invariance $A_{\imath}\to A_{\imath}+\partial_{\imath}\chi$, the field strength, the stress tensor, the Lagrangian $-\tfrac14F^{2}$, the quantisation, the Feynman rules, the Coulomb potential, the radiation formulae, the article titles, the exercises. **Every equation in the section is the same equation.**
 
-**7.3 The one sentence whose meaning changes.** Where a category article says *the photon is the gauge boson of $\mathrm{U}(1)_{\mathrm{em}}$*, it can now also say *the $\mathrm{U}(1)_{\mathrm{em}}$ whose generator is $Q$, and whose gauge field is this mixture*. **The sentence was not wrong before; it was incomplete**, and this article completes it once rather than in every article.
+**7.3 The one sentence whose meaning changes.** Where a category article says *the photon is the connection of $\mathrm{U}(1)_{\mathrm{em}}$*, it can now also say *the $\mathrm{U}(1)_{\mathrm{em}}$ whose generator is $Q$, and whose connection is this mixture*. **The sentence was not wrong before; it was incomplete**, and this article completes it once rather than in every article.
 
 **7.4 Why one article and not an edit everywhere.** Because the mixture is a fact about the field's identity, and the identity is used once, at the field's definition. **Everything after that is dynamics, and dynamics does not care which linear combination of heavy fields a light field is made of.** The Standard Model's own textbooks state the $W^{3}$–$B$ mixture once and then never again, and the section's articles are written the same way.
 
@@ -204,7 +204,7 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 ## Distinctions That Are Easy to Lose
 
-The direction is not the coefficients. $(1,1,\sqrt{2/3})$ is a vector on generators; the coefficients in the three gauge fields are that vector weighted by the three couplings, and they are in the coupling article (*Direction and Coordinates: Where This Article Stops*).
+The direction is not the coefficients. $(1,1,\sqrt{2/3})$ is a vector on generators; the coefficients in the three connections are that vector weighted by the three couplings, and they are in the coupling article (*Direction and Coordinates: Where This Article Stops*).
 
 The mixture does not modify Maxwell's equations. It is a statement about the field's identity, and $F=\mathrm dA$ is unchanged (*The Photon and the Corpus's Own Electromagnetism*).
 
@@ -214,7 +214,7 @@ The $\sqrt{2/3}$ is not a dynamical number. It is the fifteenth Cartan's normali
 
 The photon is not $B$. The $\mathrm{U}(1)$ boson at the end of the chain is $B$; the photon is the combination of three fields that annihilates both neutrals (*Why the Photon Is the Mixed Object*, *The Direction, Derived Three Ways*).
 
-Three neutral gauge bosons are not three scalars. All three are gauge fields, and the scalar sector's neutral states are a separate object.
+Three neutral connections are not three scalars. All three are connections, and the scalar sector's neutral states are a separate object.
 
 ## Summary
 
@@ -226,7 +226,7 @@ Three neutral gauge bosons are not three scalars. All three are gauge fields, an
 
 **The three routes.** The null vector of the neutral mass matrix, the coefficient vector of $Q$, and the cross product of the two neutral lepton lines. The first and the third test the same two vectors from the scalar and the fermion side; the second is why they agree.
 
-**The boundary.** The direction is algebra and is settled here. The coefficients in the three gauge fields, and the value of the angle that follows from them, are the coupling article's (*Direction and Coordinates: Where This Article Stops*).
+**The boundary.** The direction is algebra and is settled here. The coefficients in the three connections, and the value of the angle that follows from them, are the coupling article's (*Direction and Coordinates: Where This Article Stops*).
 
 **The addition.** One article of three statements, and one sentence completed in the articles that define the field; their equations are unchanged.
 

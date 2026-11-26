@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The question.** The model has one group. **Which cell of the grid does each gauge boson occupy, which cell holds no boson, which bosons are made of cells rather than sitting in one, and which of the fifteen keep their masslessness when the transition comes?**
+**The question.** The model has one group. **Which cell of the grid does each connection occupy, which cell holds no boson, which bosons are made of cells rather than sitting in one, and which of the fifteen keep their masslessness when the transition comes?**
 
 **The answer.**
 
@@ -131,7 +131,7 @@ and the vanishing of the trace is the same statement as the four diagonal entrie
 
 ## The Names, and Which Phase They Belong To
 
-**Every word in this grid is a name held on deposit, and the article says what each is on deposit for.** The cells are labelled *gluon* and *leptoquark* from the first display onward, and **no $\mathrm{SU}(3)$ is gauged above $M_C$**: the group is one simple factor, $\mathrm{SU}(4)$, and a subalgebra of a simple group is not a factor of the theory. **So above $M_C$ the fifteen have no group to be the gauge bosons of except $\mathrm{SU}(4)$ itself**, and "this gluon carries $r\bar g$" is not yet a statement about a charge.
+**Every word in this grid is a name held on deposit, and the article says what each is on deposit for.** The cells are labelled *gluon* and *leptoquark* from the first display onward, and **no $\mathrm{SU}(3)$ is gauged above $M_C$**: the group is one simple factor, $\mathrm{SU}(4)$, and a subalgebra of a simple group is not a factor of the theory. **So above $M_C$ the fifteen have no group to be the connections of except $\mathrm{SU}(4)$ itself**, and "this gluon carries $r\bar g$" is not yet a statement about a charge.
 
 **What is true above $M_C$, stated only in $\mathrm{SU}(4)$ terms.**
 
@@ -155,7 +155,7 @@ $$
 
 **Read the branching together with the grid and the arithmetic is the one worth stating carefully.** Six of the twelve off-diagonal directions are colour–colour and six are mixed; the octet takes the first six plus the two colour diagonals, and the sextet takes the last six. **Nothing is created and nothing is destroyed**: it is the same fifteen, and the transition moves six of them from massless to $32v^{2}$.
 
-**So "six are lost and two are gained" is a true count and a false picture.** True: the octet is $6+2$ rather than eight off-diagonal, and the six mixed directions lie outside it. False in three ways: **the six mixed directions were never in the octet** — they are the mixed band, and they remain directions of the same algebra; **the two diagonals were always two of the fifteen**, and no direction joins anything; **and the count of vectors does not move at all**, fifteen massless above $M_C$ against nine and six below. What does change for the two diagonals is their status: below $M_C$ they are two of the eight gauge bosons of an unbroken factor, and above it they are two Cartan directions of a simple group. **That is a change of what a boson belongs to, and not a change in what exists.**
+**So "six are lost and two are gained" is a true count and a false picture.** True: the octet is $6+2$ rather than eight off-diagonal, and the six mixed directions lie outside it. False in three ways: **the six mixed directions were never in the octet** — they are the mixed band, and they remain directions of the same algebra; **the two diagonals were always two of the fifteen**, and no direction joins anything; **and the count of vectors does not move at all**, fifteen massless above $M_C$ against nine and six below. What does change for the two diagonals is their status: below $M_C$ they are two of the eight connections of an unbroken factor, and above it they are two Cartan directions of a simple group. **That is a change of what a boson belongs to, and not a change in what exists.**
 
 **And this is why the grid's $r\bar g$ is a cell label and not a charge label.** Cell $(x,y)$ means *moves the $y$ line into the $x$ line*: the entry names two lines, not two charges. **Below $M_C$ the same entry reads as the colour–anticolour of a gluon, and that reading is available only there.**
 
@@ -173,7 +173,7 @@ $$
 
 **And $\bar X$ is not a different kind of object.** It is the reverse amplitude of the same plane, which is why its mass is the same and its charge is the opposite. **A reader who takes $X$ and $\bar X$ for two species has read a factor of two into the sextet that is not there**: there are six particles because there are three colour planes and two directions each.
 
-**The mass, and where it comes from.** **In the unbroken phase the mass of the sextet is exactly zero**, and that zero is a property of the phase and not of the particle: with $Ξ=0$ there is no vacuum direction, the mass form is the zero operator, and the gauge symmetry is unbroken, so the zero survives to every order. **The transition is what gives the six a mass**, and it gives all of them the same one:
+**The mass, and where it comes from.** **In the unbroken phase the mass of the sextet is exactly zero**, and that zero is a property of the phase and not of the particle: with $Ξ=0$ there is no vacuum direction, the mass form is the zero operator, and the local symmetry is unbroken, so the zero survives to every order. **The transition is what gives the six a mass**, and it gives all of them the same one:
 
 $$
 32=2\cdot4^{2},
@@ -215,9 +215,9 @@ $$
 | carries colour into it | the $t$ row right of the corner | $3$ | $\bar X^{r},\bar X^{g},\bar X^{b}$ |
 | neither | the $3\times3$ colour block | $8$ | $g_{1}\dots g_{8}$ |
 
-$1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So the sextet is exactly the set of gauge bosons that can change the lepton number, the corner measures it, and the eight gluons are the block that cannot.**
+$1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So the sextet is exactly the set of connections that can change the lepton number, the corner measures it, and the eight gluons are the block that cannot.**
 
-> **What this is not.** The $t$ index is the algebra's time unit, so "touching the $t$ index" is the algebra's own statement. **It does not follow that these seven are spacetime objects**: they are internal gauge directions that happen to touch the coordinate $e_t$, and the identification of the four coordinates with colour is the declaration.
+> **What this is not.** The $t$ index is the algebra's time unit, so "touching the $t$ index" is the algebra's own statement. **It does not follow that these seven are spacetime objects**: they are internal redundant directions that happen to touch the coordinate $e_t$, and the identification of the four coordinates with colour is the declaration.
 
 ## Two Misreadings, and What the Count Says Instead
 
@@ -237,7 +237,7 @@ so with the normalisation $\operatorname{tr}(X^{\dagger}Y)=2\delta$, **exactly h
 - $T^{L}_{a}$ and $T^{R}_{a}$ have the **same** mixed half, so $T^{L}_{a}-T^{R}_{a}$ is pure colour and no band direction is owed to either of them;
 - the six composites therefore span only **three** of the six band directions. **A redundant basis reads the six twice; it adds nothing to the fifteen.**
 
-**The qualifier matters, and it is where the corpus changes register.** Inside $\mathfrak{su}(4)$ the composites are not new directions, and the algebra stays fifteen-dimensional. **At $M_C$ they are new fields all the same**, six gauge directions born with the copy index while the six leptoquarks acquire mass — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). So the count of massless vectors does not fall at the transition: six leave the kernel of $\operatorname{ad}(iD)$ and six arrive beside it.
+**The qualifier matters, and it is where the corpus changes register.** Inside $\mathfrak{su}(4)$ the composites are not new directions, and the algebra stays fifteen-dimensional. **At $M_C$ they are new fields all the same**, six redundant directions born with the copy index while the six leptoquarks acquire mass — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). So the count of massless vectors does not fall at the transition: six leave the kernel of $\operatorname{ad}(iD)$ and six arrive beside it.
 
 **What is left of the sentence, and it is the useful part.** Three of the six are the weak isospin the Standard Model keeps, and three belong to a factor the Standard Model does not keep, one direction of which is the raw material of hypercharge. **That sentence is about the four-factor phase, not about the fifteen**, and it is stated in [The Gauge Algebras of the Two Sectors](the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html).
 

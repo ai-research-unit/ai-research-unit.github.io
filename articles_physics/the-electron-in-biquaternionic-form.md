@@ -35,7 +35,7 @@ A second, less comfortable point belongs in the introduction. Almost every state
 | The field | the element $\tilde{Ξ}\in\mathbb{B}$ |
 | Free equation | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_{m_e}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_{m_e}\tilde{Ξ}_{R}$ |
 | Mass | the coefficient $m_e$ of the chirality-off-diagonal pair |
-| Charge | the coupling $ϙ=-e$ in the gauge-covariant derivative (see below) |
+| Charge | the coupling $ϙ=-e$ in the covariant derivative (see below) |
 | Spin state | the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ along a declared unit direction $\vec u$ |
 | Spin observables | Hermitian elements $\tilde H_\Psi = i \sum_{\imath\in\{x,y,z\}} h_{\imath}\vec e_{\imath}\in\mathbb{B}_{\Psi}$ |
 | Conserved current | $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j\in\mathbb{B}_{\Phi}$, with $j_0\ge0$ |
@@ -85,14 +85,14 @@ $$
 \tilde P_{\Phi} \to \tilde P_{\Phi} - ϙ\tilde A_{\Phi}, \qquad\text{equivalently}\qquad p_{\imath} \to p_{\imath} - ϙA_{\imath},
 $$
 
-with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ by the gauge-covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}$ of *Operator and Calculus Conventions* and its conjugate $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$, both carrying $+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$, and derives the coupled equation
+with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ by the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}$ of *Operator and Calculus Conventions* and its conjugate $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$, both carrying $+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$, and derives the coupled equation
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_{m_e}\tilde{Ξ}_{L}, \qquad
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_{m_e}\tilde{Ξ}_{R},
 $$
 
-and shows that it is exactly gauge covariant in the massive case as well as the massless one, the central phase passing through the linear mass pair; the charge is therefore *represented* in the framework, not derived by it.
+and shows that it is exactly covariant in the massive case as well as the massless one, the central phase passing through the linear mass pair; the charge is therefore *represented* in the framework, not derived by it.
 
 Four statements are worth separating.
 
@@ -300,7 +300,7 @@ The contraction sums follow from the squares. No index is raised: the summed ind
 
 ## Summary
 
-The electron is the biquaternion Dirac field $\tilde{Ξ}\in\mathbb{B}$: one element whose two chirality parts satisfy the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_{m_e}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_{m_e}\tilde{Ξ}_{R}$. The mass is the coefficient of the off-diagonal coupling of the two values; the algebra's real structure $\flat={}-{}^{*}$ acts on the two sectors with opposite signs; and the rest-energy phase $\exp(-i\theta_{\mathrm{rst}}) = \cos(2\pi\nu_{m_e}r'_t)e_t - \sin(2\pi\nu_{m_e}r'_t)(ie_t)$ rotates the two sectors into one another at $ck_{m_e}$. The charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current then lies in $\mathbb{B}_{\Phi}$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{B}_{\Psi}$.
+The electron is the biquaternion Dirac field $\tilde{Ξ}\in\mathbb{B}$: one element whose two chirality parts satisfy the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_{m_e}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_{m_e}\tilde{Ξ}_{R}$. The mass is the coefficient of the off-diagonal coupling of the two values; the algebra's real structure $\flat={}-{}^{*}$ acts on the two sectors with opposite signs; and the rest-energy phase $\exp(-i\theta_{\mathrm{rst}}) = \cos(2\pi\nu_{m_e}r'_t)e_t - \sin(2\pi\nu_{m_e}r'_t)(ie_t)$ rotates the two sectors into one another at $ck_{m_e}$. The charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly covariant; the conserved current then lies in $\mathbb{B}_{\Phi}$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{B}_{\Psi}$.
 
 The framework derives the electron's spin-$\tfrac{1}{2}$ representation content from the unique irreducible action of $\mathbb{B}\cong M_2(\mathbb{C})$ on a complex space of dimension two, and the spin state and observable structure from the state of $\mathbb{B}_{\Psi}$ with the Born pairing; the magnitude $\frac{h}{4\pi}$ is a normalisation. It derives the tree-level gyromagnetic factor $g=2$ from the $1/2m_e$ coefficient produced by eliminating the small part, giving $\vec\mu_e = -(e/m_e)\vec S$ and one Bohr magneton $\mu_B = ec\dfrac{1}{4\pi\nu_{m_e}} = 9.274010\times10^{-24}$ J T$^{-1}$; the anomalous part $a\approx\alpha/2\pi$ is outside the equation. It reproduces the Zitterbewegung at $\omega_Z = 2ck_{m_e} = 1.55269\times10^{21}$ rad s$^{-1}$ and amplitude $\frac{h}{4\pi \,m_{e}\,c}= 193.1$ fm, and the companion article's test shows the trembling is the second harmonic of the sector rotation, not a mark of either sector. It contains the two values of the chirality and the mass term as the chirality-mixing coupling, but not the weak $V-A$ coupling of the left-handed electron.
 

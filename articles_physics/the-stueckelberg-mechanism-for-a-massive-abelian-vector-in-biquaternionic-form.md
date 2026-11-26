@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The object.** A mass term $-\tfrac12\mu^2 A_{\imath} A_{\imath}$ is not invariant under an abelian gauge transformation $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$. A massive vector is therefore either a gauge field whose symmetry has been broken by hand, or a gauge field whose mass is carried by an extra field. The **Stueckelberg mechanism** is the second route: a scalar is introduced that shifts under the same transformation, the combination
+**The object.** A mass term $-\tfrac12\mu^2 A_{\imath} A_{\imath}$ is not invariant under an abelian local transformation $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Gamma$. A massive vector is therefore either a connection whose symmetry has been broken by hand, or a connection whose mass is carried by an extra field. The **Stueckelberg mechanism** is the second route: a scalar is introduced that shifts under the same transformation, the combination
 
 $$
 A_{\imath,\mathrm u}=A_{\imath}-\partial_{\imath}\xi
@@ -10,12 +10,12 @@ $$
 
 is invariant, and the mass term written in that combination costs no symmetry.
 
-**What this article is.** The general construction, with no sector attached. It states the obstruction, the invariant mass term, the gauge fixing, the degree-of-freedom count, and the relation to the abelian Higgs. The construction applies to any abelian gauge field, and this category contains one such field.
+**What this article is.** The general construction, with no sector attached. It states the obstruction, the invariant mass term, the fixing the representative, the degree-of-freedom count, and the relation to the abelian Higgs. The construction applies to any abelian connection, and this category contains one such field.
 
 **Where the applications are.**
 
 - The electroweak sector, where the massive $W$ and $Z$ are the case in point. The mechanism used there is not this one: the sector uses the Higgs, and the Stueckelberg route is the alternative it does not take. The application article is [The Stueckelberg Mechanism in Biquaternionic Form](the-stueckelberg-mechanism-in-biquaternionic-form.html), which works the construction in the framework's own notation and states which of the two routes the algebra can host.
-- The strong sector, nowhere. $SU(3)$ is unbroken and its gauge bosons are massless.
+- The strong sector, nowhere. $SU(3)$ is unbroken and its connections are massless.
 
 ## The Proca Obstruction
 
@@ -25,13 +25,13 @@ $$
 \mathcal{L}_{\mathrm{P}}=-\tfrac12\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_\Phi\rangle_{\natural},
 $$
 
-is not invariant under $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$, because the mass term is quadratic in the connection while the transformation is affine. The obstruction is not a technicality of notation: a mass term is a length, and a gauge symmetry forbids one.
+is not invariant under $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$, because the mass term is quadratic in the connection while the transformation is affine. The obstruction is not a technicality of notation: a mass term is a length, and a local symmetry forbids one.
 
 **The consequences that follow from the obstruction.** The propagator of the Proca field has the form $(-g_{\imath\jmath}+k_{\imath} k_{\jmath}/\mu^2)/(k^2-\mu^2)$, whose longitudinal part grows with energy; the theory is not renormalisable by power counting; and the longitudinal mode is put in by hand as a third polarisation rather than arising from a field.
 
 ## The Invariant Mass Term
 
-Introduce a scalar $\xi$ that shifts under the gauge transformation,
+Introduce a scalar $\xi$ that shifts under the local transformation,
 
 $$
 \tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma,
@@ -51,7 +51,7 @@ $$
 \boxed{\;\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\Phi,\mathrm u}\rangle_{\natural}\;}
 $$
 
-is invariant for every $\Gamma$. The gauge group is unchanged — the scalar shifts with the same parameter as the connection, so no new symmetry is introduced — and the mass is now compatible with it.
+is invariant for every $\Gamma$. The symmetry group is unchanged — the scalar shifts with the same parameter as the connection, so no new symmetry is introduced — and the mass is now compatible with it.
 
 **The equations.** Variation with respect to the vector gives
 
@@ -84,7 +84,7 @@ and variation with respect to the scalar gives the constraint $\tilde\nabla_\Phi
 | Symbol | Meaning |
 |---|---|
 | $\tilde A_\Phi$ | the abelian connection |
-| $\Gamma$ | the gauge parameter |
+| $\Gamma$ | the parameter |
 | $\xi$ | the shift scalar |
 | $\tilde A_{\Phi,\mathrm u}$ | the invariant combination |
 | $\mu$ | the vector mass |

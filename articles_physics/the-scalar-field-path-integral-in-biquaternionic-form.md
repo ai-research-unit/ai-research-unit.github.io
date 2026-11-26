@@ -101,7 +101,7 @@ $$
 \pi=\left(\partial\xi_{\mathrm{scl}}/\partial r'_t\right)^{\,*},
 $$
 
-which is the conjugate momentum of the companion canonical quantization. The regularity of the Legendre transform — no constraint, no gauge redundancy — is what makes the passage between the two forms exact and uncontroversial in the scalar sector; in the Dirac and Maxwell cases the same passage requires the introduction of ghosts and constraints, and the framework supplies no principle that would avoid them.
+which is the conjugate momentum of the companion canonical quantization. The regularity of the Legendre transform — no constraint, no redundancy — is what makes the passage between the two forms exact and uncontroversial in the scalar sector; in the Dirac and Maxwell cases the same passage requires the introduction of ghosts and constraints, and the framework supplies no principle that would avoid them.
 
 The path integral is also a semiclassical expansion. Writing $\xi_{\mathrm{scl}}=\xi_{\mathrm{scl},cl}+\varsigma_{\mathrm{grs}}$ about a solution of the classical equation, the exponent expands as
 

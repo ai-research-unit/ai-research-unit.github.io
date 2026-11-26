@@ -104,7 +104,7 @@ so $\mathfrak u(1)_Y$ is a one-dimensional subspace of $\mathfrak{su}(2)_R\oplus
 | $W^{1}_L,W^{2}_L,W^{3}_L$ | $3$ | $\mathrm{SU}(2)_L$, as a factor |
 | $Y$ | $1$ | one direction of $\mathrm{SU}(2)_R$ and one of $\mathrm{SU}(4)$, mixed |
 
-The surplus is not an error in the count. The two neutral raw directions span a plane; $Y$ is one direction in it; **the orthogonal direction is a physical state, the $Z_R$, which becomes massive at $M_C$.** The step $5\to4$ is therefore the step in which one gauge boson acquires a mass, and it happens entirely inside that plane.
+The surplus is not an error in the count. The two neutral raw directions span a plane; $Y$ is one direction in it; **the orthogonal direction is a physical state, the $Z_R$, which becomes massive at $M_C$.** The step $5\to4$ is therefore the step in which one connection acquires a mass, and it happens entirely inside that plane.
 
 **And the vacuum is a vector, not a line.** $T_{3R}$ gives $+\tfrac12$ on $v_C e_\uparrow$ and $B-L$ gives $-1$, so neither annihilates it; the kernel is the single combination $Y$. **The line count and the generator count disagree and both are right**: a doublet has one line up to phase, so the line stabiliser is $\mathrm{U}(1)_R$ and the step reads $3\to1$; the generator that survives is one of the four directions of $\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$, so the step reads $4\to1$. A stabiliser of a vector is smaller than the stabiliser of its line, and a scalar vacuum is a vector.
 

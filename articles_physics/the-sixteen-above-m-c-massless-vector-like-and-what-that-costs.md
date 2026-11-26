@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This article is about a phase and not about a multiplet. *Classification of the Fermions* counts the sixteen, assigns $B-L$ off the grid and writes the conjugation as a permutation; *The $\mathrm{SU}(4)$ Model* declares the content and proves the anomaly cancels by counting. **Neither says what the sixteen does above $M_C$**, and the phase has three properties that no other article states together: the fields are massless, the content is vector-like in pairs, and both facts are consequences of the vacuum and not of the gauge symmetry.
+This article is about a phase and not about a multiplet. *Classification of the Fermions* counts the sixteen, assigns $B-L$ off the grid and writes the conjugation as a permutation; *The $\mathrm{SU}(4)$ Model* declares the content and proves the anomaly cancels by counting. **Neither says what the sixteen does above $M_C$**, and the phase has three properties that no other article states together: the fields are massless, the content is vector-like in pairs, and both facts are consequences of the vacuum and not of the local symmetry.
 
 **The three claims, and one of them is uncomfortable.**
 
-- *Massless* is asserted by the phase and **not protected by the group.** The boson sector's masslessness is protected: a mass term $\tfrac12m^{2}A_{a,\imath}A_{a,\imath}$ is not gauge invariant, so gauge invariance forbids it and the fifteen must be massless until a vacuum forms. **The sixteen has no such protection.** $\mathbf4\otimes\bar{\mathbf4}=\mathbf{15}\oplus\mathbf1$, the singlet is a gauge-invariant bilinear, and a mass term built from it is allowed at every scale. **So the fermions' masslessness above $M_C$ is a parameter set to zero and not a theorem.**
+- *Massless* is asserted by the phase and **not protected by the group.** The boson sector's masslessness is protected: a mass term $\tfrac12m^{2}A_{a,\imath}A_{a,\imath}$ is not invariant, so local invariance forbids it and the fifteen must be massless until a vacuum forms. **The sixteen has no such protection.** $\mathbf4\otimes\bar{\mathbf4}=\mathbf{15}\oplus\mathbf1$, the singlet is an invariant bilinear, and a mass term built from it is allowed at every scale. **So the fermions' masslessness above $M_C$ is a parameter set to zero and not a theorem.**
 - *Vector-like* is a theorem: the content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, so each representation appears with its conjugate in equal number.
 - *What it costs* is the whole of §*What the Phase Cannot Do*: a gauged vector-like sector cannot tell left from right, so the phase has no parity violation and no $CP$ violation from the gauge sector, and the transition is what supplies both.
 
@@ -26,7 +26,7 @@ $$
 
 **The coupling.** One $g_4$, in the covariant derivative $D_{\imath}=\partial_{\imath}-ig_4\sum_{a}A_{a,\imath}t_{a}$, with the normalisation of *The Lagrangian and the Primordial Force*.
 
-**The phase.** Above $M_C$ the scalar's expectation value vanishes, $\langleΞ\rangle=0$, so no Yukawa vertex can dress a fermion line and no gauge-invariant mass is generated dynamically. **The phase is defined by that vanishing and by nothing else.**
+**The phase.** Above $M_C$ the scalar's expectation value vanishes, $\langleΞ\rangle=0$, so no Yukawa vertex can dress a fermion line and no invariant mass is generated dynamically. **The phase is defined by that vanishing and by nothing else.**
 
 **The indices.** All low, all sums weighted, as everywhere in the series. **The copy index $i$ is a label and not a frame slot**: it counts two and it never contracts with a spacetime index. **It is not a spinor index, not a colour index and not a generation index**: it doubles the content *within* one generation, and the number of generations is a separate input the corpus does not derive.
 
@@ -43,7 +43,7 @@ $$
 
 **The first three are statements about the vacuum; the fourth is a statement about the group.** The distinction matters because the fourth cannot change at the transition while the first three all do.
 
-**The masslessness is a choice with a name.** Since $\mathbf4\otimes\bar{\mathbf4}$ contains a singlet, the gauge symmetry admits
+**The masslessness is a choice with a name.** Since $\mathbf4\otimes\bar{\mathbf4}$ contains a singlet, the local symmetry admits
 
 $$
 \mathcal{L}_{m}=-\sum_{i,j}m_{ij}\,\bar\xi^{\alpha}_{i}\xi_{\alpha,j}+\text{h.c.} ,
@@ -57,19 +57,19 @@ The model sets $m=0$ above $M_C$, and the setting is of the same kind as $\mu_{\
 
 - *The transition would be pointless.* If $m$ were nonzero, the sixteen would be massive at every scale, the lightest generation would weigh $m$, and the masses would not come from the vacuum that the other nine articles are about.
 - *The observed spectrum is the constraint.* The electron's mass is $9.1\times10^{-31}\ \mathrm{kg}$, and a Dirac mass at the primordial scale would be at least fourteen orders of magnitude larger unless $m$ were tuned. **Tuning $m$ to zero is a choice; tuning it to $10^{-18}$ of the primordial scale is a coincidence**, and the model prefers the choice it can state.
-- *The gauge symmetry does not care either way.* Because the content is vector-like, a mass term is a singlet and the theory is consistent with or without it. **A chiral theory would have forbidden it**, which is the one place where being vector-like costs nothing and buys nothing.
+- *The local symmetry does not care either way.* Because the content is vector-like, a mass term is a singlet and the theory is consistent with or without it. **A chiral theory would have forbidden it**, which is the one place where being vector-like costs nothing and buys nothing.
 
 ### The Bosons Are Protected and the Fermions Are Not
 
 **The asymmetry, stated once, because it is easy to lose.**
 
-| sector | mass term | gauge invariant? | so the masslessness is |
+| sector | mass term | invariant? | so the masslessness is |
 |---|---|---|---|
 | the fifteen | $\tfrac12m^{2}\sum_{a,\imath}A_{a,\imath}A_{a,\imath}$ | no | protected |
 | the sixteen | $m_{ij}\bar\xi_{i}\xi_{j}$ | **yes** | assumed |
 | the scalar | $m^{2}\operatorname{tr}Ξ^{2}$ | yes | assumed |
 
-**Two of the three sectors have an assumed masslessness and only one has a protected one.** The boson sector is the exception because a gauge field's mass term breaks the symmetry that defines it, and that is the only structural protection in the model. **A reader who takes "all fifteen directions are massless above $M_C$" as a theorem should take "the sixteen are massless" as an assumption**, and the two sentences sit in the same paragraph of the declaration article without that distinction being drawn.
+**Two of the three sectors have an assumed masslessness and only one has a protected one.** The boson sector is the exception because a connection's mass term breaks the symmetry that defines it, and that is the only structural protection in the model. **A reader who takes "all fifteen directions are massless above $M_C$" as a theorem should take "the sixteen are massless" as an assumption**, and the two sentences sit in the same paragraph of the declaration article without that distinction being drawn.
 
 ## Vector-Like, and What the Anomaly Count Buys
 
@@ -110,15 +110,15 @@ g_{*}=\underbrace{15\times2}_{\text{the fifteen}}+\underbrace{32}_{\text{the six
 =30+28=58 ,
 $$
 
-**counting the gauge fields' two polarisations each and the fermions' factor $\tfrac78$** — the fifteen contribute the thirty states the table above counts, and the sixteen contribute thirty-two, so $g_*$ is $30+28$ and not $60+28$. That number is the phase's contribution to a thermal bath, it is stated here only because it is the one place the state count is a physical quantity, and **no cosmological use of it is made in this block**: the phase may never have been populated, and the corpus does not claim it was.
+**counting the connections' two polarisations each and the fermions' factor $\tfrac78$** — the fifteen contribute the thirty states the table above counts, and the sixteen contribute thirty-two, so $g_*$ is $30+28$ and not $60+28$. That number is the phase's contribution to a thermal bath, it is stated here only because it is the one place the state count is a physical quantity, and **no cosmological use of it is made in this block**: the phase may never have been populated, and the corpus does not claim it was.
 
 ## What the Phase Cannot Do
 
 **Six things, and each is a consequence of one fact: the gauged sector is vector-like.**
 
 - *No parity violation.* A gauge interaction that treats the two copies equally cannot produce a parity-odd rate. **Every tree-level process above $M_C$ is parity-symmetric**, and the asymmetry the weak sector shows below $M_C$ has no counterpart above it.
-- *No $C$ violation from the gauge sector.* The content is closed under $C$ as a permutation of the field set — $C$ carries $2\cdot\mathbf4$ to $2\cdot\bar{\mathbf4}$, **and the $\bar{\mathbf4}$ fields are already there, which is what vector-like means** — and a symmetry of the content that the interaction also respects gives no asymmetric rate.
-- *No $CP$ violation above $M_C$.* With $C$ and $P$ each respected by the gauge sector, the product is. **The observed $CP$ violation is therefore a statement about the phase below $M_C$**, and it is not in the primordial sector at all.
+- *No $C$ violation from the sector.* The content is closed under $C$ as a permutation of the field set — $C$ carries $2\cdot\mathbf4$ to $2\cdot\bar{\mathbf4}$, **and the $\bar{\mathbf4}$ fields are already there, which is what vector-like means** — and a symmetry of the content that the interaction also respects gives no asymmetric rate.
+- *No $CP$ violation above $M_C$.* With $C$ and $P$ each respected by the sector, the product is. **The observed $CP$ violation is therefore a statement about the phase below $M_C$**, and it is not in the primordial sector at all.
 - *And the $\theta_4$ term does not reopen it.* $\theta_4\operatorname{tr}(F\tilde F)$ is $P$-odd and $C$-even, so the product argument does not reach it; **what removes it is the masslessness.** The axial rotation shifts $\theta_4$ and costs nothing above $M_C$, because no mass term is there to absorb the shift, so the angle is **redundant rather than merely suppressed** — [The $\mathrm{SU}(4)$ Instanton](the-su4-instanton-a-matrix-transcription-outside-the-algebra.html) carries that argument. **The statement is exact, and not an estimate at $e^{-S}$.**
 - *No left–right asymmetry in the spectrum.* The two copies have the same mass, the same couplings and the same dispersion, because the only thing that could differ between them is the mass matrix $m_{ij}$, and it is zero.
 - *No distinction between the copies at all.* Nothing in the gauge Lagrangian refers to $i$ except the fermion's own label; **the mass term would, and it is set to zero.** **The copy index is invisible to every interaction above $M_C$**, and that invisibility is what makes the doubling exact rather than approximate.
@@ -163,15 +163,15 @@ $$
 | $g_{*}$ of the phase, gauge $15\times2$ and fermion $32\times\tfrac78$ | $30+28=58$ |
 | the mass channel | the singlet of $\mathbf4\otimes\bar{\mathbf4}=\mathbf{15}\oplus\mathbf1$ |
 
-**The last row is the article's technical point in one line**: the singlet that makes the mass term gauge invariant is the same singlet that makes the anomaly cancel and the same one that made the coupling article's coefficient blind to the scalar's representation. **One decomposition, three consequences**, and a reader who has met all three in different articles has met one fact three times.
+**The last row is the article's technical point in one line**: the singlet that makes the mass term invariant is the same singlet that makes the anomaly cancel and the same one that made the coupling article's coefficient blind to the scalar's representation. **One decomposition, three consequences**, and a reader who has met all three in different articles has met one fact three times.
 
 ## Summary
 
-Above $M_C$ the sixteen are massless, vector-like and parity-symmetric, and the three properties have three different grounds. **Masslessness is assumed**: $\mathbf4\otimes\bar{\mathbf4}$ contains a singlet, so a gauge-invariant mass exists and the model sets its two physical masses — the singular values of $m_{ij}$ — to zero, exactly as it sets $\mu_{\Phi}^{2}>0$. **Vector-like is a theorem**: the content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$ and each representation appears with its conjugate in equal number. **Parity symmetry is a consequence of vector-likeness**: a gauge sector that treats the copies equally cannot produce a parity-odd rate.
+Above $M_C$ the sixteen are massless, vector-like and parity-symmetric, and the three properties have three different grounds. **Masslessness is assumed**: $\mathbf4\otimes\bar{\mathbf4}$ contains a singlet, so an invariant mass exists and the model sets its two physical masses — the singular values of $m_{ij}$ — to zero, exactly as it sets $\mu_{\Phi}^{2}>0$. **Vector-like is a theorem**: the content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$ and each representation appears with its conjugate in equal number. **Parity symmetry is a consequence of vector-likeness**: a sector that treats the copies equally cannot produce a parity-odd rate.
 
 **The anomaly cancels by counting and costs nothing.** $2(+1)+2(-1)=0$, no mixed coefficient exists because there is one factor, and no condition is imposed on the spectrum, the hypercharges or the number of generations. **That is the benefit side of vector-likeness and it is real**, not a consolation.
 
-**The cost side is that the phase cannot be the whole theory.** No parity violation, no $CP$ violation from the gauge sector, no left–right asymmetry, no distinction between the copies at all. **The $CP$ statement is exact and not a truncation**: the $\theta_4$ term is the one gauge-sector operator that is $CP$-odd, and the masslessness makes it removable rather than merely suppressed. **The transition is required by the phase's own symmetry structure**, and what it changes is not the fields and not the labels but the status of the copy index: ungauged above, gauged below — with the split into two factors supplied by the transition's one postulate rather than by this phase.
+**The cost side is that the phase cannot be the whole theory.** No parity violation, no $CP$ violation from the sector, no left–right asymmetry, no distinction between the copies at all. **The $CP$ statement is exact and not a truncation**: the $\theta_4$ term is the one sector operator that is $CP$-odd, and the masslessness makes it removable rather than merely suppressed. **The transition is required by the phase's own symmetry structure**, and what it changes is not the fields and not the labels but the status of the copy index: ungauged above, gauged below — with the split into two factors supplied by the transition's one postulate rather than by this phase.
 
 **The state count is thirty-two either way.** Sixteen massless Weyl fields and eight massive Dirac fields give the same multiplicity and different dispersions, so no argument from multiplicity can tell the phases apart. What tells them apart is $\omega=\lvert\vec k\rvert$ above and eight masses below.
 
@@ -182,7 +182,7 @@ Above $M_C$ the sixteen are massless, vector-like and parity-symmetric, and the 
 | $\xi^{\alpha}_{i}$, $\bar\xi^{\alpha}_{i}$ | Fermion field, quartet index $\alpha$, copy index $i$ |
 | $\mathbf{16}$ | $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$ |
 | $i$ | The copy index, $i=1,2$; a label, ungauged above $M_C$ |
-| $m_{ij}$ | The gauge-invariant mass matrix in the copy index; set to zero above $M_C$ |
+| $m_{ij}$ | The invariant mass matrix in the copy index; set to zero above $M_C$ |
 | $T_{a}\otimes\mathbb{1}_{2}$ | Every generator's action on the sixteen; the two-index rule |
 | $g_4$ | The one coupling, the same on both copies |
 | $g_{*}$ | $58$ for the phase, from $30$ gauge and $28$ fermionic states |

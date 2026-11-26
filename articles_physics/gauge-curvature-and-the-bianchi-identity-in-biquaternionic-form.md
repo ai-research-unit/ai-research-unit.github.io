@@ -13,7 +13,7 @@ The division between what is established and what is interpretation is kept expl
 
 - **Established, and recomputed below.** The identity $[D_{\imath},D_{\jmath}]=i\kappa F_{\imath\jmath}$ with $F_{\imath\jmath}$ a definite element of the algebra; that the commutator is zeroth order (multiplication); the antisymmetry $F_{\imath\jmath}=-F_{\jmath\imath}$; the Bianchi identity $D_{\imath} F_{\imath\jmath}+D_{\imath} F_{\jmath k}+D_{\jmath} F_{k\imath}=0$; its identification with the operator Jacobi identity; and the algebraic Jacobi identity used in the coordinate proof. All were recomputed exactly on $\mathrm{SU}(2)$ with generic non-commuting, position-dependent connections, on all index pairs and all index triples, and on two independent random families. The abelian case was also recomputed, and is reported as *not* evidence.
 - **Scope limitation, reported rather than smoothed over.** The reduction "operator commutator $=$ algebra element" is exact. The stronger interpretation "the curvature *is* a single algebra commutator" is not: $F_{\imath\jmath} = \partial/\partial R_{\imath}\,\mathcal{A}_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal{A}_{\imath}+i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$ contains the exterior-derivative term, which is not a commutator of algebra elements. It is a single commutator of the connection components only when the curl $\partial/\partial R_{\imath}\,\mathcal{A}_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal{A}_{\imath}$ vanishes. This is stated where it arises and carried into the open questions.
-- **Inherited, and not settled here.** The reality class of the connection in the $i r'_t$ direction, and which compact gauge algebra the framework selects, are taken unchanged from the non-abelian article; nothing here resolves them.
+- **Inherited, and not settled here.** The reality class of the connection in the $i r'_t$ direction, and which compact algebra the framework selects, are taken unchanged from the non-abelian article; nothing here resolves them.
 
 ## The Covariant Derivative and the Curvature It Defines
 
@@ -28,7 +28,7 @@ D_{\imath} = \partial/\partial R_{\imath} + i\kappa\,\mathcal{A}_{\imath}, \qqua
 D_{\imath}\tilde{Ξ} = \partial/\partial R_{\imath}\,\tilde{Ξ} + i\kappa\,\mathcal{A}_{\imath}\tilde{Ξ} ,
 \qquad \kappa =\frac{2\pi ϙ}{h}.
 $$
-This is the formal statement of the connection, before any reality condition is imposed; the obstruction to a single Hermitian-conjugation eigenspace across all four components, a property of the $i r'_t$ derivative and not of the gauge algebra, is inherited unchanged from the companion and is carried as open question 3 below.
+This is the formal statement of the connection, before any reality condition is imposed; the obstruction to a single Hermitian-conjugation eigenspace across all four components, a property of the $i r'_t$ derivative and not of the algebra, is inherited unchanged from the companion and is carried as open question 3 below.
 This is the one-sided, non-abelian connection of the companion article; its transformation law under a local $\tilde U(\tilde{Q}) \in SU(2)$ is
 $$
 \mathcal{A}_{\mathrm g,\imath} = \tilde U\,\mathcal{A}_{\imath}\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_{\imath} \tilde U)\,\tilde U^{-1},
@@ -79,11 +79,11 @@ F_{12} = i\left([\vec e_x,\vec e_y]+[\vec e_x,\vec e_z]+[\vec e_y,\vec e_z]\righ
 $$
 a genuinely non-abelian curvature, nonzero and non-central. The reduction to a single commutator is exact here; for a position-dependent connection it is not, and the honest statement is the operator-level one: **the operator commutator is multiplication by the single element $i\kappa F_{\imath\jmath}$**, while the element $F_{\imath\jmath}$ is the sum of a curl and a commutator. This is carried into the open questions as a scope limitation, not hidden.
 
-**The curvature is not gauge invariant.** Under $\mathcal{A}_{\imath} \mapsto \mathcal{A}_{\mathrm g,\imath}$ with the transformation law above, direct computation gives the adjoint law
+**The curvature is not invariant.** Under $\mathcal{A}_{\imath} \mapsto \mathcal{A}_{\mathrm g,\imath}$ with the transformation law above, direct computation gives the adjoint law
 $$
 F_{\mathrm g,\imath\jmath} = \tilde U\,F_{\imath\jmath}\,\tilde U^{-1},
 $$
-which was verified both for an infinitesimal local $\tilde U = e_t + \varepsilon g$ with $g\in\mathrm{SU}(2)$ and for a finite constant $SU(2)$ element; in each case the residual vanished exactly. The trace $\mathrm{Tr}(F_{\imath\jmath})$ is invariant — here it vanishes identically, since the curvature is valued in the derived algebra — but the component is not: it is rotated by the group, and only gauge-invariant polynomials in $F$ are observables. Here and below $\mathrm{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ factor, not the informational pairing formula.
+which was verified both for an infinitesimal local $\tilde U = e_t + \varepsilon g$ with $g\in\mathrm{SU}(2)$ and for a finite constant $SU(2)$ element; in each case the residual vanished exactly. The trace $\mathrm{Tr}(F_{\imath\jmath})$ is invariant — here it vanishes identically, since the curvature is valued in the derived algebra — but the component is not: it is rotated by the group, and only invariant polynomials in $F$ are observables. Here and below $\mathrm{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ factor, not the informational pairing formula.
 
 ## The Covariant Derivative on the Curvature: Two-Sided, Not One-Sided
 
@@ -107,11 +107,11 @@ $$
 
 The distinction is not cosmetic. Replacing the two-sided covariant derivative of the curvature by the one-sided $\partial/\partial R_{\imath} F_{\imath\jmath} + i\kappa\,\mathcal{A}_{\imath} F_{\imath\jmath}$ destroys the Bianchi identity: on a generic non-commuting connection the resulting cyclic sum is nonzero and of order unity, while the correct two-sided sum vanishes. This was checked as a negative control, not assumed.
 
-Finally, this gauge connection must not be confused with the gravitational connection of the corpus. The gauge connection is **one-sided**: it acts on matter by left multiplication, and on the adjoint-valued curvature by the commutator. The gravitational connection of *Curved Spacetime and the Biquaternion Framework* is **two-sided in a different sense**,
+Finally, this connection must not be confused with the gravitational connection of the corpus. The connection is **one-sided**: it acts on matter by left multiplication, and on the adjoint-valued curvature by the commutator. The gravitational connection of *Curved Spacetime and the Biquaternion Framework* is **two-sided in a different sense**,
 $$
 D_{\imath}\tilde{Q} = \partial/\partial R_{\imath}\,\tilde{Q} + \vec\Gamma_{\imath}\tilde{Q} + \tilde{Q}\vec\Gamma_{\imath}^{*} ,
 $$
-because the infinitesimal Lorentz action on $\mathbb{B}_{\Phi}$ is $G\tilde{Q} + \tilde{Q}G^{*}$, not the commutator; the two differ precisely for the boosts. The gauge connection lives in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ and is one-sided; the gravitational connection lives in the six-dimensional scalar-free subspace and is two-sided. They share a name and nothing else, and no relation between them is asserted.
+because the infinitesimal Lorentz action on $\mathbb{B}_{\Phi}$ is $G\tilde{Q} + \tilde{Q}G^{*}$, not the commutator; the two differ precisely for the boosts. The connection lives in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ and is one-sided; the gravitational connection lives in the six-dimensional scalar-free subspace and is two-sided. They share a name and nothing else, and no relation between them is asserted.
 
 ## The Bianchi Identity
 
@@ -240,7 +240,7 @@ The abelian check therefore passes for a reason unrelated to the non-abelian sta
 
 ## Can One Biquaternion Equation Carry the Bianchi Identity?
 
-The gauge principle article left open "the sense in which a single biquaternion equation carries" the Bianchi identity, and the covariant-derivative article recorded the negative result that the one-line equation $\tilde\nabla_\Phi\tilde{F}=0$ is the full source-free Maxwell system and not the Bianchi identity. That negative result is confirmed here by recomputation, and the reason is visible.
+The minimal coupling article left open "the sense in which a single biquaternion equation carries" the Bianchi identity, and the covariant-derivative article recorded the negative result that the one-line equation $\tilde\nabla_\Phi\tilde{F}=0$ is the full source-free Maxwell system and not the Bianchi identity. That negative result is confirmed here by recomputation, and the reason is visible.
 
 For the abelian field-strength biquaternion $\tilde{F} = i\vec E - c\vec B = \vec F = \sum_{\imath\in\{x,y,z\}} F_{\imath} \vec e_{\imath}$, direct computation with the quaternion product gives the exact identities
 
@@ -260,17 +260,17 @@ The structural reason is that the Bianchi identity is a three-index antisymmetri
 
 1. **The single-biquaternion Bianchi.** The gap above is the sharpest open question of this article. Is there an algebra-intrinsic operation — a projection or a product with the conjugate gradient — that extracts the cyclic three-index sum from a biquaternion expression, or is the antisymmetric symbol genuinely required? The parent's negative result for $(\tilde\nabla_\Phi)^{\natural}\tilde{F}$ and the recomputed forms of both products suggest the latter, but neither settles it.
 
-2. **The curvature as one commutator.** The reduction "$[D_{\imath},D_{\jmath}] = $ multiplication by $i\kappa F_{\imath\jmath}$" is exact, but $F_{\imath\jmath}$ itself is a curl plus a commutator, and is a single algebra commutator only when the curl $\partial/\partial R_{\imath}\,\mathcal{A}_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal{A}_{\imath}$ vanishes. Is there a gauge-covariant way to write the full $F_{\imath\jmath}$ as a single commutator of algebra-valued objects, or is the split into curl and commutator intrinsic?
+2. **The curvature as one commutator.** The reduction "$[D_{\imath},D_{\jmath}] = $ multiplication by $i\kappa F_{\imath\jmath}$" is exact, but $F_{\imath\jmath}$ itself is a curl plus a commutator, and is a single algebra commutator only when the curl $\partial/\partial R_{\imath}\,\mathcal{A}_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal{A}_{\imath}$ vanishes. Is there a covariant way to write the full $F_{\imath\jmath}$ as a single commutator of algebra-valued objects, or is the split into curl and commutator intrinsic?
 
-3. **The reality class of the connection.** Inherited from the non-abelian article, unchanged: because $\partial/\partial R_t = -i\partial/\partial r'_t$, no single Hermitian-conjugation eigenspace is preserved by the gauge transformation across all four components, and the consistent mixed assignment (time in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$, space in $i\,\mathrm{SU}(2)\subset\mathbb{B}_{\Psi}$) is not shown to be the intended one.
+3. **The reality class of the connection.** Inherited from the non-abelian article, unchanged: because $\partial/\partial R_t = -i\partial/\partial r'_t$, no single Hermitian-conjugation eigenspace is preserved by the local transformation across all four components, and the consistent mixed assignment (time in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$, space in $i\,\mathrm{SU}(2)\subset\mathbb{B}_{\Psi}$) is not shown to be the intended one.
 
-4. **Which compact gauge algebra.** Also inherited: the framework exhibits $\mathrm{SU}(2)$ in the vector part of $\mathbb{B}_{\Phi}$, and the material sector decomposes as $\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$. Whether a larger compact algebra is available, and which the framework selects, is open.
+4. **Which compact algebra.** Also inherited: the framework exhibits $\mathrm{SU}(2)$ in the vector part of $\mathbb{B}_{\Phi}$, and the material sector decomposes as $\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$. Whether a larger compact algebra is available, and which the framework selects, is open.
 
 5. **The matter representation.** The covariant derivative here acts on matter by left multiplication and on the curvature by the commutator. For a non-abelian connection the left and right actions on a matter field differ, and which representation the matter field carries is not fixed here.
 
 6. **Topological charge.** The Bianchi identity and the invariant density are the ingredients of the topological charge $\int\mathrm{Tr}(F\wedge F)$. Whether this requires the antisymmetric symbol as extra structure, as the packaging discussion suggests, and what the biquaternion framework supplies for it, is left open.
 
-7. **Empirical contact.** As everywhere in the framework: does any of this yield a prediction distinguishing it from standard non-abelian gauge theory? The construction is a reformulation, and this question is untouched by it.
+7. **Empirical contact.** As everywhere in the framework: does any of this yield a prediction distinguishing it from standard Yang–Mills theory? The construction is a reformulation, and this question is untouched by it.
 
 ## Summary
 
@@ -307,7 +307,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace; centre $\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$ | Commutator on the vector part of $\mathbb{B}_{\Phi}$ |
-| $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Gauge algebra inside $\mathbb{B}_{\Phi}$ |
+| $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Algebra inside $\mathbb{B}_{\Phi}$ |
 | $T_a=\tfrac12 \vec e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ |
 | $\tilde U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde U^{-1}=\bar{\tilde U}=\tilde U^\dagger$ |
 | $\mathcal{A}_{\imath} = \sum_a\mathcal{A}_{\imath a} \vec e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_{\imath}\mathcal{A}_{\imath} e_{\imath}$ |
@@ -317,13 +317,13 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $F_{\imath\jmath} = \partial/\partial R_{\imath}\,\mathcal{A}_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal{A}_{\imath}+i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$ | Curvature components, antisymmetric |
 | $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$ | Curvature as the commutator of covariant derivatives |
 | $F_{\mathrm g,\imath\jmath} = \tilde UF_{\imath\jmath}\tilde U^{-1}$ | Adjoint transformation of the curvature |
-| $a,b$ | colour index of the gauge algebra, written low |
+| $a,b$ | colour index of the algebra, written low |
 | $D_{\imath} \tilde{Q} = \partial/\partial R_{\imath} \tilde{Q} + i\kappa[\mathcal{A}_{\imath},\tilde{Q}]$ | Adjoint covariant derivative, $[D_{\imath},\tilde{Q}]=D_{\imath} \tilde{Q}$ |
 | $D_{\imath} F_{\imath\jmath} + D_{\imath} F_{\jmath k} + D_{\jmath} F_{k\imath}=0$ | Bianchi identity (cyclic order as shown) |
 | $\varepsilon_{k\imath\jmath\rho}D_{\imath} F_{\imath\jmath}=0$ | Contracted form of the Bianchi identity |
 | $\tilde{F}=i\vec E-c\vec B$ | Abelian field-strength biquaternion, $\vec F=\sum_{\imath\in\{x,y,z\}} F_{\imath}\vec e_{\imath}$ |
 | $\mathrm{div}(\vec F),\ \mathrm{curl}\,\vec F$ | Three-dimensional operators on the coefficient triple |
-| $-\tfrac12\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,\mathrm{Tr}(F_{\imath\jmath}F_{\imath\jmath})$ | Gauge-invariant Yang–Mills density (matrix trace) |
+| $-\tfrac12\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\,\mathrm{Tr}(F_{\imath\jmath}F_{\imath\jmath})$ | Invariant Yang–Mills density (matrix trace) |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading (distinct from the matrix trace) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

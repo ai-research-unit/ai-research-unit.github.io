@@ -498,7 +498,7 @@ Read: a change of frame is a left multiplication $\tilde Q\mapsto\tilde U\tilde 
 
 The two differ in what they act on. A change of frame acts on the algebra and moves every element. The frame is a factor of one element and moves with it. Under a change of frame the amplitude conjugates and the frame multiplies on the left, and neither is quotiented away.
 
-The physical interpretation is that the polar decomposition is a decomposition and not a gauge fixing. A gauge fixing removes a redundancy and leaves a representative of a class. The polar decomposition keeps the element and splits it into two invariantly defined pieces. A reader who conflates the passive and the active sense will conclude that the frame is unphysical, and the conclusion is a category error.
+The physical interpretation is that the polar decomposition is a decomposition and not a fixing the representative. A fixing the representative removes a redundancy and leaves a representative of a class. The polar decomposition keeps the element and splits it into two invariantly defined pieces. A reader who conflates the passive and the active sense will conclude that the frame is unphysical, and the conclusion is a category error.
 
 The boundary. The two senses coincide only when the frame is central, and then only up to the sign that the double cover supplies.
 
@@ -524,7 +524,7 @@ The state map is not injective and cannot be inverted. Its fibres are five-dimen
 
 The purity reading is about an element and not about a subsystem. The statement that a pure state is a null element is a statement about the amplitude of one element. It does not license the inference that every pure state of a composite is null, and it does not compute a reduced state.
 
-The decomposition removes nothing. It is not a quotient, not a gauge choice, and not a coarse-graining. It is an identity in the algebra, and the two factors are as much a part of the element as the element is.
+The decomposition removes nothing. It is not a quotient, not a choice of representative, and not a coarse-graining. It is an identity in the algebra, and the two factors are as much a part of the element as the element is.
 
 ## Summary
 

@@ -44,7 +44,7 @@ Three real data against the two real components of one complex coefficient, and 
 
 The branch is a datum and not a variable of the flow. Nothing in the pair moves it: the continuity equation is even in $\varepsilon$ and the Hamilton–Jacobi equation does not contain it, so the sign is constant along the flow and can change only where the density vanishes. That is the nodal set, and it is the next rung's subject as much as this one's.
 
-There is no gauge freedom to fix and no free function to choose. The field has eight real components, the word has eight real parameters, and the equation is first order in time with one complex equation per coefficient, that is eight real equations. The word is therefore exactly determined by the field. The four parameters that Madelung's form does not show are the boost's three and the rotor's angle, and they are zero because the field is central, not because a choice was made.
+There is no redundancy to fix and no free function to choose. The field has eight real components, the word has eight real parameters, and the equation is first order in time with one complex equation per coefficient, that is eight real equations. The word is therefore exactly determined by the field. The four parameters that Madelung's form does not show are the boost's three and the rotor's angle, and they are zero because the field is central, not because a choice was made.
 
 ## The Pair
 

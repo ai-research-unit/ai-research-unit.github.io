@@ -6,7 +6,7 @@
 
 *The ADHM Construction and Biquaternion Instanton Data* parametrised the self-dual connections of the Euclidean theory, and *The Index Theorem and the Zero-Mode Count in Biquaternionic Form* counted the fermion modes they support. This article turns the instanton from a solution of a field equation into a contribution to a physical quantity. It develops the **semiclassical expansion** of the Euclidean path integral around instantons and collects those contributions into the **instanton gas**, the dilute-medium picture in which the theta dependence of the vacuum and the vacuum energy are computed.
 
-The subject straddles a boundary that this corpus keeps sharp. The path integral itself, its measure, the gauge-fixing and the Faddeev–Popov procedure belong to the quantisation programme, developed in the articles of *Biquaternion Universe Quantum Fields*, and *Interpretation of the Wick Rotation in the Biquaternion Universe* fixes the Euclidean continuation that the instanton calculus requires. Those results are used here, not re-derived. What belongs to the present article is the *use* of the instanton configurations: the steepest-descent evaluation around a saddle, the collective-coordinate measure that the ADHM moduli space supplies, the sum over topological sectors that produces the theta vacuum, and the dilute-gas approximation with its range of validity. The companion article *The Theta Parameter and Strong CP in Biquaternionic Form* takes the theta angle so obtained and develops its consequences.
+The subject straddles a boundary that this corpus keeps sharp. The path integral itself, its measure, the fixing the representative and the Faddeev–Popov procedure belong to the quantisation programme, developed in the articles of *Biquaternion Universe Quantum Fields*, and *Interpretation of the Wick Rotation in the Biquaternion Universe* fixes the Euclidean continuation that the instanton calculus requires. Those results are used here, not re-derived. What belongs to the present article is the *use* of the instanton configurations: the steepest-descent evaluation around a saddle, the collective-coordinate measure that the ADHM moduli space supplies, the sum over topological sectors that produces the theta vacuum, and the dilute-gas approximation with its range of validity. The companion article *The Theta Parameter and Strong CP in Biquaternionic Form* takes the theta angle so obtained and develops its consequences.
 
 Two of the framework's own results enter directly. First, the topological charge and its density were identified in *Instantons and Solitons in Biquaternionic Form*: the abelian density is the framework's invariant $I_2=\vec E\cdot\vec B$, and the non-abelian density is the matrix trace $\mathrm{Tr}(F\wedge F)$, which the biquaternion norm does not supply. Second, the moduli space of the saddle is the ADHM quotient of *The ADHM Construction and Biquaternion Instanton Data*, whose dimension fixes the number of collective coordinates and hence the measure. The semiclassical expansion is therefore built on the framework's topology and the framework's moduli; what it adds, and what it must import, is the fluctuation calculus of quantum field theory.
 
@@ -28,7 +28,7 @@ with equality for self-dual or anti-self-dual fields. The Lorentzian sign patter
 
 ## The Euclidean Path Integral and Steepest Descent
 
-The Euclidean partition function of the gauge field is, schematically,
+The Euclidean partition function of the connection is, schematically,
 
 $$
 Z \;=\; \int \mathcal D\mathcal A\;\exp(-S[\mathcal A]),
@@ -44,7 +44,7 @@ by the saturated Bogomolny bound of *Instantons and Solitons in Biquaternionic F
 
 ## The One-Instanton Measure and Collective Coordinates
 
-The moduli space of the charge-one saddle is the five-dimensional family of *The ADHM Construction and Biquaternion Instanton Data*: four translations $x_{0\imath}$ and one dilatation $\rho$, the three global $SU(2)$ orientations being in the gauge orbit. The collective-coordinate measure is the volume element of this space, and the classical part of the one-instanton contribution is
+The moduli space of the charge-one saddle is the five-dimensional family of *The ADHM Construction and Biquaternion Instanton Data*: four translations $x_{0\imath}$ and one dilatation $\rho$, the three global $SU(2)$ orientations being in the orbit. The collective-coordinate measure is the volume element of this space, and the classical part of the one-instanton contribution is
 
 $$
 Z_{\mathrm{cl},1} \;\propto\; \int d^4r_0\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2) ,
@@ -66,7 +66,7 @@ where the power of the coupling comes from the one-loop fluctuation determinant,
 
 ## The Theta Vacuum and the Sum over Sectors
 
-The gauge field configurations fall into topological sectors labelled by $Ϙ\in\mathbb Z$, and the partition function is a sum over sectors,
+The connection configurations fall into topological sectors labelled by $Ϙ\in\mathbb Z$, and the partition function is a sum over sectors,
 
 $$
 Z \;=\;\sum_{Ϙ\in\mathbb Z} Z_Ϙ ,
@@ -171,7 +171,7 @@ $$
 \prod_{f=1}^{N_f}m_f
 $$
 
-when the flavours are massive, and vanishes when any flavour is massless. The resulting $2N_f$-fermion interaction is the 't Hooft vertex, and its structure is fixed by the zero-mode count and not by the algebra: the algebra supplies the saddle, the topology and the density, while the count of legs and the vertex come from the index theorem and the fermionic measure. This is the sharpest illustration of the division of labour in this subcategory, and it is the point at which the semiclassical expansion stops being a statement about the gauge field alone.
+when the flavours are massive, and vanishes when any flavour is massless. The resulting $2N_f$-fermion interaction is the 't Hooft vertex, and its structure is fixed by the zero-mode count and not by the algebra: the algebra supplies the saddle, the topology and the density, while the count of legs and the vertex come from the index theorem and the fermionic measure. This is the sharpest illustration of the division of labour in this subcategory, and it is the point at which the semiclassical expansion stops being a statement about the connection alone.
 
 ## The Phase-Integral Content
 
@@ -241,7 +241,7 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra |
 | $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact factor; home of the instanton |
-| $\mathcal A_{\imath}$, $F_{\imath\jmath}$ | Gauge connection and curvature |
+| $\mathcal A_{\imath}$, $F_{\imath\jmath}$ | Connection and curvature |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge |
 | $S=\frac{1}{2g^2}\int\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ | Euclidean action |
 | $S_{\mathrm{cl}}=\frac{8\pi^2}{g^2}\lvert Ϙ\rvert$ | Saturated (Bogomolny) classical action |

@@ -94,7 +94,7 @@ The check on the overall sign. For a plane wave $\vartheta_{\mathrm{fld}}=\varth
 
 **There is no constraint in the Dirac sense.** One real field, one second-order equation, one degree of freedom; the canonical momentum is invertible and there is no primary constraint. The action is unconstrained.
 
-The shift symmetry is not a constraint and does something different. It is a symmetry of the action that is realized nonlinearly — the field transforms by a constant, which is not a linear representation — and its consequence is a conserved current rather than a restriction on the variation. The distinction between a gauge symmetry, which removes degrees of freedom, and a nonlinear symmetry, which does not, is the point of this section.
+The shift symmetry is not a constraint and does something different. It is a symmetry of the action that is realized nonlinearly — the field transforms by a constant, which is not a linear representation — and its consequence is a conserved current rather than a restriction on the variation. The distinction between a local symmetry, which removes degrees of freedom, and a nonlinear symmetry, which does not, is the point of this section.
 
 Why the nonlinear realization is forced. The symmetry is spontaneously broken, so it is not a symmetry of the vacuum and cannot act linearly on the field that parameterizes the vacuum manifold. The constant shift is the nonlinear action, and the derivative-only structure is its consequence.
 

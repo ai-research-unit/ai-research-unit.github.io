@@ -6,7 +6,7 @@ The coupled variational parent ends with a precise complaint and this article an
 
 At a mode the mass term is $\tfrac12\nu_m^{2}A^{\dagger}A$, a sesquilinear form, invariant under $A\mapsto e^{i\alpha}A$: measured at $0.169050$ for every $\alpha$ in $\{0,\,0.7,\,1.9,\,3.1\}$. The field term is $\tfrac12[kA]^{2}$, a bilinear form, and it acquires $e^{2i\alpha}$: the ratio's argument is $1.400000$, $-2.483185$ and $-0.083185$, which is $2\alpha$ modulo $2\pi$. So the mismatch that the parent states as "the phase's square must be one" is a phase factor of $2\alpha$ on one term and $1$ on the other, and it is exact.
 
-The parent's coupled reading is explicit: on the coupled carrier the mass term does not break the gauge symmetry, so the constraint is not the residue of a broken symmetry; it says that the longitudinal part is determined by the transverse part through the mass. In frequency space the determination is a division: $a_t'=2\pi\vec\nu_\Phi\cdot\vec a/\nu_t'$, verified to $8\times10^{-17}$ on two test amplitudes. The constraint is one amplitude expressed through three.
+The parent's coupled reading is explicit: on the coupled carrier the mass term does not break the local symmetry, so the constraint is not the residue of a broken symmetry; it says that the longitudinal part is determined by the transverse part through the mass. In frequency space the determination is a division: $a_t'=2\pi\vec\nu_\Phi\cdot\vec a/\nu_t'$, verified to $8\times10^{-17}$ on two test amplitudes. The constraint is one amplitude expressed through three.
 
 Along the shifted four-momentum the form is $\tfrac12\nu_m^{2}(A\!\cdot\!A)$, so its magnitude is $\tfrac12\nu_m^{2}$ — $0.245000000$ at $2\pi\nu_m=0.7$ — at every momentum tested, and the coupling's only effect is the sign, which follows $\pi^{2}$. The coupling cannot change what the constraint costs, and that is the frequency-space form of the parent's "the constraint is a consequence and not an imposed condition".
 
@@ -132,7 +132,7 @@ The constraint is the vanishing of the temporal coefficient's $\pi_t$ dependence
 
 ## The Constraints the Action Imposes: The Constraint Is a Determination
 
-On the coupled carrier the mass term does not break the gauge symmetry, so the free article's "the mass breaks it" reading is unavailable; what remains is that the equation's longitudinal content determines the temporal amplitude from the spatial ones:
+On the coupled carrier the mass term does not break the local symmetry, so the free article's "the mass breaks it" reading is unavailable; what remains is that the equation's longitudinal content determines the temporal amplitude from the spatial ones:
 
 $$
 [kA]=0
@@ -148,7 +148,7 @@ Along $\pi_{\imath}$ the form is $\tfrac12\nu_m^{2}(A\!\cdot\!A)$, so its magnit
 
 The trace of $\sigma_{\mathrm{gco}}$ is $-4\pi^{2}$ and carries no $F$; the longitudinal coefficient carries no $\varkappa$ except through the sign. So the constraint is the one part of the coupled theory whose structure is exactly the free one's, and the parent's "the constraint holds to machine precision in a background with constant field strength" is that statement's numerical form.
 
-What the constraint is not is the gauge-fixing condition of the free theory. The free article's constraint was the vanishing of a coefficient that the mass supplied, and it removed the direction along the wave number; here the same equation removes the gradient part of the amplitude and leaves the mass's longitudinal polarisation. The two readings are the same equation and different bookkeeping, and the parent says so: "the same statement in both cases with a different bookkeeping".
+What the constraint is not is the fixing condition of the free theory. The free article's constraint was the vanishing of a coefficient that the mass supplied, and it removed the direction along the wave number; here the same equation removes the gradient part of the amplitude and leaves the mass's longitudinal polarisation. The two readings are the same equation and different bookkeeping, and the parent says so: "the same statement in both cases with a different bookkeeping".
 
 Expanding the form's diagonal,
 

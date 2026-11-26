@@ -15,7 +15,7 @@
 
 ## Why There Is No Mass Term Before the Breaking
 
-**A Dirac mass needs a left-handed and a right-handed field of the same charge, and the sixteen supply them in pairs.** So a mass term $\bar\xi\xi$ is allowed by the gauge symmetry — **and it is not written.** The reason is a choice of the model's ledger and not a theorem: **$Ξ$ is what gives the sixteen their masses, and a bare mass would be a second source that the ledger does not carry.**
+**A Dirac mass needs a left-handed and a right-handed field of the same charge, and the sixteen supply them in pairs.** So a mass term $\bar\xi\xi$ is allowed by the local symmetry — **and it is not written.** The reason is a choice of the model's ledger and not a theorem: **$Ξ$ is what gives the sixteen their masses, and a bare mass would be a second source that the ledger does not carry.**
 
 **The consequence is the one that matters downstream.** Every fermion is massless in the symmetric phase, the electroweak-scale ratios are set by $y$ alone, and **there is no see-saw, because there is no gauge-singlet mass to give a right-handed neutrino.**
 
@@ -85,7 +85,7 @@ $$
 
 **So the mixing matrix is unobservable, and with it the phase.** In the quark sector of the Standard Model the product $W_{u}^{\dagger}W_{d}$ survives as the CKM matrix because the up and the down masses come from two different matrices. **Here they come from one matrix**, so the product is $W^{\dagger}W=\mathbb 1$ after diagonalisation, **and the phase that a second matrix would have left behind has nothing to multiply.**
 
-**The $CP$ statement, exactly.** The gauge sector is real in this basis (the structure constants are integers and the generators are real or $i$ times real), and the Yukawa sector is one matrix diagonalisable to real positive entries. **So the model conserves $CP$ exactly, in both sectors, and the reason is a count: one matrix, not two.** That is a statement about this model and not about the world; **the observed $CP$ violation belongs below $M_C$**, where a second matrix exists.
+**The $CP$ statement, exactly.** The sector is real in this basis (the structure constants are integers and the generators are real or $i$ times real), and the Yukawa sector is one matrix diagonalisable to real positive entries. **So the model conserves $CP$ exactly, in both sectors, and the reason is a count: one matrix, not two.** That is a statement about this model and not about the world; **the observed $CP$ violation belongs below $M_C$**, where a second matrix exists.
 
 **The Jarlskog invariant is zero and the computation is one line.** $J=\operatorname{Im}\det[y_{u}y_{u}^{\dagger},y_{d}y_{d}^{\dagger}]$; with $y_{u}=y_{d}=y$ the commutator vanishes, so $J=0$. **Two sectors, one matrix, no invariant.**
 

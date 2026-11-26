@@ -66,7 +66,7 @@ What the construction needs that the corpus has. The Green functions of each act
 
 ## The Constraints the Action Imposes: The Dirac Bracket
 
-Constraints, and the bracket they force. When the action is first order or has a gauge symmetry, the Legendre transform does not invert and the naive bracket is inconsistent on the constraint surface. Dirac's construction replaces it: solve the constraints, or gauge-fix them, and define
+Constraints, and the bracket they force. When the action is first order or has a local symmetry, the Legendre transform does not invert and the naive bracket is inconsistent on the constraint surface. Dirac's construction replaces it: solve the constraints, or gauge-fix them, and define
 
 $$
 \{F,G\}_{D}=\{F,G\}-\{F,\chi_a\}\,(C^{-1})_{ab}\,\{\chi_b,G\},

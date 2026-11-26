@@ -564,7 +564,7 @@ $$
 
 and the signed measure is the weight with the quaternion conjugate inserted in the first slot. That is the exact sense in which an indefinite geometry is a definite one with a chosen conjugation. The conjugation is ${}^{\natural}$ and not multiplication by the central $i$, which has order four.
 
-The boundary. The form is a form. It derives no gauge group, no coupling and no field content, and the cone $\mathcal K$ is not the zero-divisor cone.
+The boundary. The form is a form. It derives no symmetry group, no coupling and no field content, and the cone $\mathcal K$ is not the zero-divisor cone.
 
 ### I.7.h — No Function Is Both a Mass and a Probability
 
@@ -592,7 +592,7 @@ The two bilinear forms share their group, and that sharing is a fact about $\mat
 
 On the material sector the isometry group of the interval is the Lorentz group. The statement is a restriction statement: it is the group of the quaternionic form on the sector, not of the quaternionic form on the algebra, and the two differ.
 
-The boundary. A group of a form is not a gauge group of a theory. The entry does not claim that the gauge group of a physical model is one of the four. It claims that a measure determines its own isometries, and that those are the group a theory must respect if it uses that measure.
+The boundary. A group of a form is not a symmetry group of a theory. The entry does not claim that the symmetry group of a physical model is one of the four. It claims that a measure determines its own isometries, and that those are the group a theory must respect if it uses that measure.
 
 ### I.7.j — The Fundamental Symmetry Is Invisible to All Four
 
@@ -645,7 +645,7 @@ Two senses of norm are kept apart. The algebraic norm is a map into the ring, co
 
 The coincidences on the sectors are statements about forms. The identities $P=\pm H$ and $\mathrm{Kr}=\pm N$ on a sector do not make the four products agree there, and they do not make the Krein form a probability or the plain form an interval.
 
-**The entry states no dynamics, no mass value, no gauge group and no state space.** The mass shell is a level set; the interval is a metric and not an equation of motion; the volume is a signed content and not a field; the area is a restriction of a form and not a Hamiltonian.
+**The entry states no dynamics, no mass value, no symmetry group and no state space.** The mass shell is a level set; the interval is a metric and not an equation of motion; the volume is a signed content and not a field; the area is a restriction of a form and not a Hamiltonian.
 
 The four cuts are four and not one. A degenerate biquaternion is not the same object as a zero divisor for any letter. Only the quaternionic cut coincides with the non-invertibles, and only off the origin.
 

@@ -178,7 +178,7 @@ so it agrees with the dual on the bare electric family and differs by a sign on 
 | $\mathcal{O}_{0k}$, the bivector composed with the chirality basis operator | the EDM, $\vec E$ | anti-Hermitian | $\mathbb{B}_{\Phi}$ |
 | $\mathcal{G}_{0k}$ | the bare electric component | anti-Hermitian | $\mathbb{B}_{\Phi}$ |
 
-The EDM insertion is therefore the anti-Hermitian, material-sector insertion, and its Hermitian partner in the informational sector is the magnetic-moment insertion, one duality passage and one factor of $i$ away. This is the article's central structural statement. The bare electric bivector is anti-Hermitian as well, and it is listed only for completeness: it is not gauge invariant by itself, and only its contraction with $F$ is an operator.
+The EDM insertion is therefore the anti-Hermitian, material-sector insertion, and its Hermitian partner in the informational sector is the magnetic-moment insertion, one duality passage and one factor of $i$ away. This is the article's central structural statement. The bare electric bivector is anti-Hermitian as well, and it is listed only for completeness: it is not invariant by itself, and only its contraction with $F$ is an operator.
 
 **No dictionary is needed.** On the timelike pair the EDM insertion is not merely an operator that happens to be anti-Hermitian: it is the left multiplication by the element $-\vec e_{\imath}$, and $-\vec e_{\imath}$ is itself an element of the material sector. The placement is an identity, not a match. The rotation insertion is the left multiplication by $i\vec e_{\imath}$, an element of the informational sector; and since multiplication by the central $i$ exchanges the sectors, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$, the EDM insertion is the central imaginary times the rotation insertion about the same axis,
 
@@ -256,7 +256,7 @@ $$
 \text{(pseudotensor)}\ \tilde{Ξ}^*i\,\bigl(\mathcal{O}_{\imath\jmath}\tilde{Ξ}\bigr)\vec e_x .
 $$
 
-Each is the field, the element the insertion multiplies it by, the unit $\vec e_{\mathrm{spt}(\imath)}$ that *Matrix Representations Conventions* attaches to the index, and the right factor $\vec e_x$ of the Dirac adjoint; the axial pair is the same product with the chirality factor appended, and in the last two the pair index decides which member of its family appears: the timelike pair gives the EDM insertion, the spatial pair the pseudotensor. A bilinear with free indices has no parity of its own, since its timelike and its spatial components transform oppositely; the parities are therefore those of the gauge-invariant operators, bilinear times field:
+Each is the field, the element the insertion multiplies it by, the unit $\vec e_{\mathrm{spt}(\imath)}$ that *Matrix Representations Conventions* attaches to the index, and the right factor $\vec e_x$ of the Dirac adjoint; the axial pair is the same product with the chirality factor appended, and in the last two the pair index decides which member of its family appears: the timelike pair gives the EDM insertion, the spatial pair the pseudotensor. A bilinear with free indices has no parity of its own, since its timelike and its spatial components transform oppositely; the parities are therefore those of the invariant operators, bilinear times field:
 
 | Operator | Bilinear | $\mathbf{P}$ | $\mathbf{T}$ | $\mathbf{C}$ | $\mathbf{CP}$ | Insertion |
 |---|---|---|---|---|---|---|
@@ -272,7 +272,7 @@ The EDM is the pseudotensor bilinear, the tensor times the chirality basis opera
 
 ## The Form Factors and the Two Coefficients
 
-**The electromagnetic vertex.** The most general gauge-invariant vertex of an on-shell spin-$\tfrac12$ particle with the electromagnetic field, at momentum transfer $2\pi\nu_{\Phi}=p_2-p_1$, is
+**The electromagnetic vertex.** The most general invariant vertex of an on-shell spin-$\tfrac12$ particle with the electromagnetic field, at momentum transfer $2\pi\nu_{\Phi}=p_2-p_1$, is
 
 $$
 \Gamma_{\imath}(p_2,p_1)\,\tilde{Ξ}
@@ -311,7 +311,7 @@ so that the two coefficients are the form factors at zero momentum transfer, mul
     $$
 
     whose contribution to the neutron EDM is of order $d_n\sim\theta\times1.6\times10^{-37}\ \mathrm{C\,m}$; the bound on $d_n$ forces $|\theta|\lesssim10^{-10}$. The $\theta$ parameter belongs to the corpus's general gauge apparatus and is not developed here; the fermion-sector statement is that the EDM is where the $\theta$ problem is measured.
-- **New physics.** Any new CP-violating phase in a theory of fermions and gauge fields contributes to the EDMs, usually at the one- or two-loop level, and the bounds constrain the scale of that physics. This is the sense in which the EDM searches probe beyond the Standard Model.
+- **New physics.** Any new CP-violating phase in a theory of fermions and connections contributes to the EDMs, usually at the one- or two-loop level, and the bounds constrain the scale of that physics. This is the sense in which the EDM searches probe beyond the Standard Model.
 
 **The Standard Model prediction, and its smallness.** The Standard Model's CKM phase gives EDMs that are far below the current bounds; the electron EDM, in particular, is generated only at four loops and is unobservably small. The framework inherits this: its fermion sector carries the linear chiral mass and the antilinear real structure, neither of which contains a CP-odd phase, and the algebra's central objects are the volume element and the chirality basis operator, not a CP-violating angle. The framework therefore predicts no measurable EDM, and observes that any EDM would be evidence for a phase it does not contain.
 
@@ -374,7 +374,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 
 1. **The placement's sharpness.** The identification of the Hermitian and anti-Hermitian insertions with the sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ is the framework's stated dictionary. For the EDM insertion the placement is exact: the insertion is the left multiplication by the element $-\vec e_{\imath}$ of $\mathbb{B}_{\Phi}$, and nothing is compared. The rotation insertion is the left multiplication by $i\vec e_{\imath}$, and the central imaginary times it is read in the material sector through $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$. The insertions that carry a right factor as well — the bare electric bivector and the pseudotensor — are placed by the rule on the two factors and not by an element of $\mathbb{B}$ alone; a sector assignment of a two-sided multiplication is a statement about the operator, and the article makes it as one.
 
-2. **The phase's sector.** A CP-odd phase multiplying the material-sector insertion is an imaginary coefficient. Whether the framework can distinguish phases that sit in the mass matrix from phases that sit in the dipole coefficients, and whether the abelian gauge-sector field strength of the framework supplies a $\theta$-like invariant, is not settled here and belongs partly to the general gauge apparatus.
+2. **The phase's sector.** A CP-odd phase multiplying the material-sector insertion is an imaginary coefficient. Whether the framework can distinguish phases that sit in the mass matrix from phases that sit in the dipole coefficients, and whether the abelian sector field strength of the framework supplies a $\theta$-like invariant, is not settled here and belongs partly to the general gauge apparatus.
 
 3. **The composite EDMs.** The neutron and proton EDMs are matrix elements of quark and gluon CP-odd operators, and their computation is nonperturbative. The framework's proton and neutron articles supply no value; whether a biquaternion treatment of the bound-state problem can be given is open and lies outside the fermion sector.
 

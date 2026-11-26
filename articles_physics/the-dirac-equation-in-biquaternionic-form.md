@@ -468,7 +468,7 @@ in agreement with the companion article on the Klein–Gordon equation. This is 
 
 ## The Solutions and the Correspondence Elsewhere
 
-**The solutions.** The plane waves, the massless and the massive kernel conditions, the spherical and cylindrical solutions, and the field read as the gradient of a scalar potential are developed in *Explicit Solutions of the Biquaternionic Dirac Equation*, together with the shifted gradient, the completion, the nullness of the elementary field and the constrained gauge freedom of the potential.
+**The solutions.** The plane waves, the massless and the massive kernel conditions, the spherical and cylindrical solutions, and the field read as the gradient of a scalar potential are developed in *Explicit Solutions of the Biquaternionic Dirac Equation*, together with the shifted gradient, the completion, the nullness of the elementary field and the constrained redundancy of the potential.
 
 **The correspondence.** The Maxwell correspondence, the static-medium dictionary, the mass-shell condition and the Lanczos feedback reading are developed in *The Dirac–Maxwell Correspondence in Biquaternionic Form*.
 
@@ -659,9 +659,9 @@ the second form checked against the value test on two hundred random elements of
 
 1. **The real structure $\flat$ and the electroweak interaction.** The conjugation $\flat = -{}^{*}$, whose fixed space is the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and which is the algebra's real structure, has the shape of a Majorana-type pairing. Does that real structure have a natural interpretation in terms of the electroweak interaction — in particular, does it supply the real form in which the neutrino is distinguished from the charged fermions?
 
-2. **The relation to the Standard Model.** The Standard Model describes fermions in the spinor representation of the Lorentz group. How does the biquaternion framework extend to the full Standard Model, including the gauge fields?
+2. **The relation to the Standard Model.** The Standard Model describes fermions in the spinor representation of the Lorentz group. How does the biquaternion framework extend to the full Standard Model, including the connections?
 
-3. **The non-abelian generalization.** The biquaternionic Dirac equation is abelian (the field is a single biquaternion). How does the framework extend to non-abelian gauge theories, where the fermion field is a vector in a representation of the gauge group?
+3. **The non-abelian generalization.** The biquaternionic Dirac equation is abelian (the field is a single biquaternion). How does the framework extend to Yang–Mills theory, where the fermion field is a vector in a representation of the symmetry group?
 
 4. **The relation to the twistor program.** Twistor theory works in the complex four-dimensional space $\mathbb{C}^4$, which is the coefficient space of $\mathbb{B}$. How do the biquaternion Dirac equation and the twistor equation relate?
 

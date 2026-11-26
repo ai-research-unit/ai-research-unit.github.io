@@ -26,7 +26,7 @@ with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction
 The companion articles, and what each supplies, are the following.
 
 - *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion, the Hodge dual and the field invariants.
-- *Maxwell's Equations in the Biquaternionic Formulation*, for the potential biquaternion, the field strength and the gauge structure of the massless case.
+- *Maxwell's Equations in the Biquaternionic Formulation*, for the potential biquaternion, the field strength and the structure of the massless case.
 - *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module, its conjugate and the Lorentz action on the defining module.
 - *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, for the explicit construction of the spin-one triplet from the adjoint action: the generators, the commutators, the Casimir and the weight basis.
 - *The Photon in Biquaternionic Form*, for the massless helicity states and the circular polarization basis.
@@ -312,7 +312,7 @@ A real field strength is never an eigenform of the dual, and the reason is a cou
 
 The consequence for the split is a statement about what has been decomposed. The projectors $\tilde\Pi_{\mathrm{id},sd,asd}$ act on the complexified vector part, so the two halves are the halves of a **complex** field. A real field strength lies in neither half, and the two halves appear separately only after complexification, as the two circular polarizations of a plane wave. The split is therefore a decomposition and never a condition that a real field could be asked to satisfy.
 
-Any scheme that imposes self-duality as an equation must consequently take its field outside the material sector $\mathbb{B}_{\Phi}$. The external algebrodynamical programme does exactly this: its field is $\mathbb{C}$-valued throughout, the duality-purity condition $\vec N=0$ — the anti-self-dual sign in this article's naming — is imposed on that complex field, and the ordinary real field is read off from it by $\Im\vec H=\Re\vec E$, $\Im\vec E=-\Re\vec H$. The Coulomb solution of *The Algebrodynamical Programme* shows the pattern ($\vec E$ real, $\vec H$ purely imaginary) and *The Complex Potential of a Self-Dual Maxwell Field* states the general relation with the potential that generates it. No result of that programme transfers to the corpus's real Maxwell field without this step, and the step is a change of carrier, not a gauge choice.
+Any scheme that imposes self-duality as an equation must consequently take its field outside the material sector $\mathbb{B}_{\Phi}$. The external algebrodynamical programme does exactly this: its field is $\mathbb{C}$-valued throughout, the duality-purity condition $\vec N=0$ — the anti-self-dual sign in this article's naming — is imposed on that complex field, and the ordinary real field is read off from it by $\Im\vec H=\Re\vec E$, $\Im\vec E=-\Re\vec H$. The Coulomb solution of *The Algebrodynamical Programme* shows the pattern ($\vec E$ real, $\vec H$ purely imaginary) and *The Complex Potential of a Self-Dual Maxwell Field* states the general relation with the potential that generates it. No result of that programme transfers to the corpus's real Maxwell field without this step, and the step is a change of carrier, not a choice of representative.
 
 ## Summary
 

@@ -48,7 +48,7 @@ $$
 
 with the trace over the gauge representation. The numerical coefficient is fixed by the heat-kernel expansion and by the dimension of the representation; no diagram is drawn, and no loop integral is performed.
 
-**What the regulator must preserve.** The regulation must preserve the gauge symmetry while not preserving the chiral one; a regulator that preserved both would give zero and would be measuring the wrong thing. The choice is therefore a statement about which symmetry is being probed, and it is the reason the method gives the anomaly of the current that is actually broken.
+**What the regulator must preserve.** The regulation must preserve the local symmetry while not preserving the chiral one; a regulator that preserved both would give zero and would be measuring the wrong thing. The choice is therefore a statement about which symmetry is being probed, and it is the reason the method gives the anomaly of the current that is actually broken.
 
 **The index relation.** Integrating the density over a closed manifold relates the anomaly to the index of the Dirac operator,
 

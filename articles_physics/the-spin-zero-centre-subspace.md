@@ -210,7 +210,7 @@ $$
 
 Verified for seven angles across the range. The same test on the material sector succeeds only at the two ends: for a random anti-Hermitian element multiplied by $\exp(i\vartheta)$, the anti-Hermitian defect is $0$ at $\vartheta=0$ and $\vartheta=\pi$ and between $1.9$ and $6.4$ at the interior angles. The centre carries a continuous phase; the material sector carries a sign.
 
-**The reading. A charge is a phase, and a phase that acts on a value is a one-parameter group of multiplications.** The carrier that admits the whole circle is the centre; the carrier that admits only $\pm1$ is the material sector; and the spin-half carrier admits the circle but through a projector, through the idempotent of its axis, which is why its charge is a different object. This is the algebraic content of the sentence that a scalar field is the field that can carry a continuous charge without a gauge field.
+**The reading. A charge is a phase, and a phase that acts on a value is a one-parameter group of multiplications.** The carrier that admits the whole circle is the centre; the carrier that admits only $\pm1$ is the material sector; and the spin-half carrier admits the circle but through a projector, through the idempotent of its axis, which is why its charge is a different object. This is the algebraic content of the sentence that a scalar field is the field that can carry a continuous charge without a connection.
 
 The phase of the vacuum. The same circle is the set of minima of a scalar potential: if $V$ depends on $\lvert\xi\rvert$ alone, every point of $\lvert\xi\rvert=v/\sqrt{2}$ is a minimum and the phase is a coordinate along the circle of vacua. The algebra does not supply the potential, but it supplies the shape of the coordinate: a compact circle, hence a discrete label for the charge, and a radial direction that is not a phase at all. Both facts are used in the section on the vacuum.
 
@@ -281,11 +281,11 @@ No scalar ray in the module. The algebra's simple module is $\mathbb{C}^{2}$, an
 
 No intrinsic magnetic moment. A magnetic moment needs either an intrinsic spin or an internal current distribution, and a single complex scalar has neither. The Zeeman coupling, the Stern–Gerlach splitting and the spin–orbit coupling are all couplings of an internal vector, and the carrier does not have one. The statement is algebraic and exact: the obstruction is the vanishing of the vector part, not a smallness of it.
 
-No magnetic field. The field equation is one scalar equation, so there is no gauge connection, no field-strength tensor and no electric–magnetic split. The static solution of a central scalar source is a scalar potential with no vector counterpart, and the moving solution has a scalar Liénard–Wiechert form. The absence of magnetism here is not a limit and not an approximation; the theory has no object out of which a magnetic field could be built.
+No magnetic field. The field equation is one scalar equation, so there is no connection, no field-strength tensor and no electric–magnetic split. The static solution of a central scalar source is a scalar potential with no vector counterpart, and the moving solution has a scalar Liénard–Wiechert form. The absence of magnetism here is not a limit and not an approximation; the theory has no object out of which a magnetic field could be built.
 
 The force is central. Because the value is rotationally invariant, the potential it generates is a central scalar, and the force on a test source is a vector parallel to the position. The link from the value space to the centrality of the force is algebraic, and it is the same fact as the first of the three.
 
-One qualification. The orbital magnetic effects of a moving charge are present for any charged particle and are not intrinsic magnetism. The three statements above are about intrinsic moments and about the existence of a gauge field, and they do not deny the orbital effects.
+One qualification. The orbital magnetic effects of a moving charge are present for any charged particle and are not intrinsic magnetism. The three statements above are about intrinsic moments and about the existence of a connection, and they do not deny the orbital effects.
 
 ## The Centre and the Group
 
@@ -301,7 +301,7 @@ Centrality is globality. Being central, the phase multiplies every element and e
 
 **Gauging the central phase gives no gauge theory.** A local phase needs a connection valued in the Lie algebra of the group, and the Lie algebra of the central phase is the span of $ie_t$, which is central. A central connection commutes with everything, so it couples to nothing and the covariant derivative collapses to the ordinary one. An abelian gauge theory needs matter that transforms nontrivially, and here the matter transforms by scalars.
 
-The ceiling. A larger group needs generators outside the centre and outside the real triple; the anti-Hermitian sector has real dimension four and gives $\mathfrak{u}(2)$ exactly, so the algebra's intrinsic gauge group stops there. The route past it is an enlarged carrier, $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, whose intrinsic group is $\mathrm{U}(2n)$.
+The ceiling. A larger group needs generators outside the centre and outside the real triple; the anti-Hermitian sector has real dimension four and gives $\mathfrak{u}(2)$ exactly, so the algebra's intrinsic symmetry group stops there. The route past it is an enlarged carrier, $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, whose intrinsic group is $\mathrm{U}(2n)$.
 
 The reading. The scalar sector carries the framework's only exact continuous symmetry, and that symmetry is the one the algebra cannot gauge. The two statements are one statement read twice: the phase is central, so it is everywhere the same, and being everywhere the same it cannot be made local.
 
@@ -319,7 +319,7 @@ the radial field $h$ has the mass $m_h^{2}=2\beta v^{2}$ and the angular field h
 
 What the carrier contributes. Three things, stated as the carrier's contribution and not as a derivation of the mechanism. The number of real modes is two, because the closure is two real dimensional. One of the two is a phase, because the added direction is $\mathbb{R}(ie_t)$ and a phase is what that direction is. And the phase is compact, because it is an angle, so the charge it labels is discrete. The potential, the value of $v$ and the masses are inputs; the counting and the periodicity are the algebra's.
 
-**A caution.** The mechanism needs a gauge field to absorb the angular mode, and the previous section showed that the central phase cannot be gauged inside $\mathbb{B}$. The broken phase of the corpus is therefore a reading of the scalar's two modes and not a derivation of the electroweak mechanism, which needs the enlarged carrier.
+**A caution.** The mechanism needs a connection to absorb the angular mode, and the previous section showed that the central phase cannot be gauged inside $\mathbb{B}$. The broken phase of the corpus is therefore a reading of the scalar's two modes and not a derivation of the electroweak mechanism, which needs the enlarged carrier.
 
 ## The Interpretations
 

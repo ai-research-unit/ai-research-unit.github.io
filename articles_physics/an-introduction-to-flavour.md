@@ -28,7 +28,7 @@ The distinction between the first two is the whole content of *The One Sharp Pre
 
 ## Why the Index Is Inert
 
-**The theorem first, and it is one line of algebra.** Let the fermions of one sector be the module $S$ of the gauge group, and let a copy index of dimension $n$ multiply it:
+**The theorem first, and it is one line of algebra.** Let the fermions of one sector be the module $S$ of the symmetry group, and let a copy index of dimension $n$ multiply it:
 
 $$
 S\;\longrightarrow\;S\otimes\mathbb C^{n},
@@ -36,7 +36,7 @@ S\;\longrightarrow\;S\otimes\mathbb C^{n},
 \tilde Q\cdot(\Xi\otimes f)=(\tilde Q\cdot\Xi)\otimes f .
 $$
 
-**Every operator the model builds from the gauge group is therefore $O\otimes\mathbb 1_{n}$**, and the operators that commute with the whole algebra are all of $M_{n}(\mathbb C)$. **The index factor is the commutant, and nothing in the algebra selects a direction inside it.**
+**Every operator the model builds from the symmetry group is therefore $O\otimes\mathbb 1_{n}$**, and the operators that commute with the whole algebra are all of $M_{n}(\mathbb C)$. **The index factor is the commutant, and nothing in the algebra selects a direction inside it.**
 
 **In this model $S$ is the sixteen and $n=2$.** The copy index is the weak-doublet slot, the algebra is $\mathfrak{su}(4)$, and
 
@@ -52,7 +52,7 @@ $$
 
 **No gauge measurement distinguishes the two copies.** A charge measurement returns $q$ twice, and the copies are distinguished only by mass. **That is the structural fact the whole of flavour rests on**, and here it is visible in a $2\times2$ matrix.
 
-**No gauge boson changes the index at tree level.** A gauge vertex is $\mathbb 1_{n}$ on the index, so a vertex that joins two different sectors is the product of two different rotations, $X^{\dagger}Y$, and only a vertex that changes the sector can leave a misalignment. **In this model there is no such vertex at all**, because no generator carries $\alpha$; the misalignment exists only below $M_C$, where a charged current joins two doublet slots.
+**No connection changes the index at tree level.** A gauge vertex is $\mathbb 1_{n}$ on the index, so a vertex that joins two different sectors is the product of two different rotations, $X^{\dagger}Y$, and only a vertex that changes the sector can leave a misalignment. **In this model there is no such vertex at all**, because no generator carries $\alpha$; the misalignment exists only below $M_C$, where a charged current joins two doublet slots.
 
 **The only free object in the sector is the Yukawa matrix.** Since no generator can distinguish the copies, the difference between them must sit where the algebra does not constrain — [the Yukawa article](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html) is that place, and it holds two numbers.
 
@@ -214,7 +214,7 @@ Each handle has its own experimental signature, and the list is the operational 
 
 The historical order matches the table, and that is not a coincidence. The muon was found as a track that stopped where a track should not. The strange quark was found as a particle that lived too long for its mass. The charm and beauty quarks were found as thresholds and displaced vertices. The top was found as a resonance whose width exceeds the strong-interaction scale, so it decays before it can hadronise. In every case the discovery was a mass, and the confirmation was a lifetime or a branching ratio. No discovery in the list was a new charge.
 
-That is the empirical shape of the tripling, and it matches *Why the Index Is Inert* exactly. Three columns that differ in nothing the gauge sector sees can only be found by weighing them.
+That is the empirical shape of the tripling, and it matches *Why the Index Is Inert* exactly. Three columns that differ in nothing the sector sees can only be found by weighing them.
 
 ## The One Sharp Prediction: Sameness
 
@@ -254,7 +254,7 @@ No mass is derived. The three masses of a sector are the eigenvalues of an arbit
 
 No mixing angle and no phase is derived. Nine of the eighteen real parameters of $Y$ survive, and all nine are measured.
 
-Flavour-changing neutral currents of the neutral gauge bosons are absent at tree level. That is a prediction rather than a gap, and its test is the LEP table of *The One Sharp Prediction: Sameness*. A leptoquark exchange is not one of them: it carries colour and charge, and the tree-level kaon channel is its business.
+Flavour-changing neutral currents of the neutral connections are absent at tree level. That is a prediction rather than a gap, and its test is the LEP table of *The One Sharp Prediction: Sameness*. A leptoquark exchange is not one of them: it carries colour and charge, and the tree-level kaon channel is its business.
 
 One thing the model does not settle, kept separate from the four. The leptoquarks carry one coupling for every generation, so in the gauge basis their vertex has no generation index. Whether that survives diagonalisation is a question about the Yukawa sector and not about the gauge sector: this model has one Yukawa matrix, so its two sectors are aligned and no generation change exists at all, while a second matrix below $M_C$ would leave a mixing matrix the corpus does not write. **The model therefore cannot say whether charged-lepton flavour is violated, and it says so in [Lepton Flavour in the $\mathrm{SU}(4)$ Model](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html).** That is the opposite of the mass problem: the model cannot say why the masses differ, and it can say that the bosons do not care that they do.
 

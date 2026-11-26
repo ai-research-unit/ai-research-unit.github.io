@@ -8,7 +8,7 @@ Three findings, and the first is the reason the article exists.
 
 *First, the coupling enters three of the four terms of the exponent and never the measure.* The kinetic term is untouched, because the connection's temporal coefficient sits in the covariant derivative and not in $\partial_{t'}$. The gradient term becomes a sum of moduli of covariant derivatives and splits into the free term, a term linear in $\vec A$ through the phase gradient, and a term quadratic in $\vec A$. The potential term is one more term, linear in $\omicron_{\mathrm{pot}}$. Nothing else is added, and the measure is the free measure.
 
-*Second, the gauge invariance of the integral is exact, and the measure is what makes it exact.* The transformation is a central phase at each point, so its Jacobian is one and the flat measure is untouched; the exponent shifts by a total derivative which cancels between the kinetic and the potential terms, term by term, exactly as the variational companion records. No lattice link, no Wilson line and no discretisation rule is introduced, and this is a structural difference from the Klein–Gordon case rather than a convenience.
+*Second, the local invariance of the integral is exact, and the measure is what makes it exact.* The transformation is a central phase at each point, so its Jacobian is one and the flat measure is untouched; the exponent shifts by a total derivative which cancels between the kinetic and the potential terms, term by term, exactly as the variational companion records. No lattice link, no Wilson line and no discretisation rule is introduced, and this is a structural difference from the Klein–Gordon case rather than a convenience.
 
 *Third, the constant background is exactly solvable and the two shifts are the whole of the coupling there.* The kernel is the free kernel times a phase factor in the potential and a translation factor in the vector potential, and the dispersion is $E+ϙ\omicron_{\mathrm{pot}}=(\vec p-q\vec A)^{2}/2m$. The composition of the shifted kernels is verified to $2.3\times10^{-12}$.
 
@@ -85,7 +85,7 @@ The measure is invariant because the Jacobian is one. At each point the transfor
 
 The exponent is invariant term by term. The kinetic term gains $-ϙ\,\partial_{t'}\Gamma\,n$, the potential term gains $+ϙ\,\partial_{t'}\Gamma\,n$, and the two cancel; the gradient term is invariant by covariance. The variational companion states the same cancellation and calls it the clearest statement of why the covariant derivative and the potential are one object. **The integral's invariance is therefore exact and is not a boundary-term statement**, because the two gains are equal and opposite inside the exponent at every point.
 
-The determinant is gauge invariant. The operator transforms by a similarity, $A_{\mathrm{gco}}\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}A_{\mathrm{gco}}e^{-\frac{2\pi iϙ\Gamma}{h}}$, on top of the shift that the potential supplies; the shift is what makes the similarity exact rather than approximate, and a similarity leaves the determinant unchanged. Since the measure's Jacobian is one, $Z$ is invariant, and so is every correlator of gauge-invariant insertions.
+The determinant is invariant. The operator transforms by a similarity, $A_{\mathrm{gco}}\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}A_{\mathrm{gco}}e^{-\frac{2\pi iϙ\Gamma}{h}}$, on top of the shift that the potential supplies; the shift is what makes the similarity exact rather than approximate, and a similarity leaves the determinant unchanged. Since the measure's Jacobian is one, $Z$ is invariant, and so is every correlator of invariant insertions.
 
 The density is the response to the potential, and the statement is one derivative. Differentiating the exponent with respect to $\omicron_{\mathrm{pot}}(x)$ brings down $\frac{2\pi i}{h}ϙ\,n(x)$, so
 
@@ -97,7 +97,7 @@ and the second derivative gives the density–density correlator. This is the in
 
 No link, no discretisation rule, no linearisation. The Klein–Gordon companion has to ask whether the lattice's link is the linearised phase or the exponential one, and it answers that the exponential one is implied by the chart. The Schrödinger integral does not have that question, because the field is one complex number and the transformation is a rotation of it: the discrete product's every step carries a phase factor of modulus one, and the composition is exact. The question survives in the Klein–Gordon article because the field there has two independent slots whose covariance is a statement about each of them; here there is one slot and the statement is one multiplication.
 
-The contrast with the Dirac case is the same contrast as in the equation. The Dirac companion records that the naive bilinear is gauge invariant and not conserved, so the current needs a triple product and two fixed frame units. The Schrödinger integral has neither defect: the bilinear is the density, it is conserved, and it is what the source couples to. The integral's gauge structure is as simple as the algebra allows, and the reason is that the connection is central.
+The contrast with the Dirac case is the same contrast as in the equation. The Dirac companion records that the naive bilinear is invariant and not conserved, so the current needs a triple product and two fixed frame units. The Schrödinger integral has neither defect: the bilinear is the density, it is conserved, and it is what the source couples to. The integral's structure is as simple as the algebra allows, and the reason is that the connection is central.
 
 ## The Constant Background
 
@@ -127,13 +127,13 @@ The translation factor is a phase and not a gauge choice. The second factor of t
 
 The equation of the saddle is the Lorentz force and the algebra adds nothing to it. The variational companion derives the force from the action's variation and records it; here the same statement appears as the classical limit of the integral, which is the standard correspondence between the stationary phase and the classical equation. No spin is involved: the field is scalar, the connection is central, and the only structure the charge has is its coupling.
 
-The determinant is gauge invariant and the amplitude is therefore physical. The van Vleck amplitude is built from the classical action's second variation, and the classical action is gauge invariant up to endpoint terms; the Maslov constant is central and unchanged. The semiclassical kernel is $A_{\mathrm{wkb}}\exp(\frac{2\pi iS_{\mathrm{cl}}}{h})\exp(\frac{2\pi iϙ\int A\cdot dr}{h})$, the last factor being the phase the connection accumulates along the classical path — the Aharonov–Bohm phase of the corpus's geometric-phase articles, appearing here as the semiclassical limit's bookkeeping.
+The determinant is invariant and the amplitude is therefore physical. The van Vleck amplitude is built from the classical action's second variation, and the classical action is invariant up to endpoint terms; the Maslov constant is central and unchanged. The semiclassical kernel is $A_{\mathrm{wkb}}\exp(\frac{2\pi iS_{\mathrm{cl}}}{h})\exp(\frac{2\pi iϙ\int A\cdot dr}{h})$, the last factor being the phase the connection accumulates along the classical path — the Aharonov–Bohm phase of the corpus's geometric-phase articles, appearing here as the semiclassical limit's bookkeeping.
 
 ## What the Form Adds and What It Does Not Add
 
 Adds, first, that the coupling is one central operator in four slots. The temporal and the three spatial slots are one substitution read four times; there is no ordering question, no commutator and no relative sign to choose, because the connection's coefficients are central and commute with the units. The exponent's three terms are one square's expansion.
 
-Adds, second, that the measure stays flat. The gauge transformation is a rotation at each point with unit Jacobian, so the free measure is the coupled measure and no link structure is introduced. This is why the Schrödinger integral's gauge invariance is exact at every step and the Klein–Gordon integral's needed the chart to make the same point.
+Adds, second, that the measure stays flat. The local transformation is a rotation at each point with unit Jacobian, so the free measure is the coupled measure and no link structure is introduced. This is why the Schrödinger integral's local invariance is exact at every step and the Klein–Gordon integral's needed the chart to make the same point.
 
 Adds, third, the invariance of the determinant's power. The coupling changes the operator and not its order in time, so the coupled determinant is again a first power and the integral is as well defined as the free one.
 
@@ -145,7 +145,7 @@ Does not add a value. The free and constant-background kernels are exact and sta
 
 1. Can the interacting two-point function be written in closed form for a general connection? No. The integral is the standard one, and what would be needed is a solution of the coupled equation, not a property of the integral.
 
-2. What happens when the connection is non-central? A non-abelian connection, or a connection valued in $\mathbb{B}_{\Psi}$ rather than in the centre, would put the connection inside the field's multiplication and raise the ordering question the central case does not have. Whether the integral survives is open, and the corpus's gauge-sector articles are where the connection's algebra is discussed.
+2. What happens when the connection is non-central? A non-abelian connection, or a connection valued in $\mathbb{B}_{\Psi}$ rather than in the centre, would put the connection inside the field's multiplication and raise the ordering question the central case does not have. Whether the integral survives is open, and the corpus's sector articles are where the connection's algebra is discussed.
 
 3. Is the $ϙ$-independence of the determinant's power exact? The power counts time derivatives and the covariant derivative is still one derivative, so the answer should be yes; a proof that the coupled operator's determinant is a well-defined first-order object on the same footing as the free one is not given.
 
@@ -157,7 +157,7 @@ Does not add a value. The free and constant-background kernels are exact and sta
 
 The coupled functional integral is the free one with three extra terms in the exponent and the same measure. The kinetic term is untouched because the temporal connection sits in $D_t$; the gradient term is a sum of moduli of covariant derivatives, hence positive, and splits into the free term, a linear term in $\vec A$ and a quadratic one; the potential term is $ϙ\omicron_{\mathrm{pot}}\,n$, and the whole exponent stays real. The operator $A_{\mathrm{gco}}=i \frac{h}{2\pi} D_t-\frac{1}{2m}(-i \frac{h}{2\pi}\vec D)^{2}$ is still first order in time, so its determinant enters to the first power exactly as in the free case.
 
-The gauge transformation is a central phase at each point, its Jacobian is one, so the measure is untouched; the exponent shifts by a total derivative that cancels between the kinetic and the potential terms, so the invariance is exact and term by term, with no link and no boundary term. The determinant is gauge invariant by the similarity the shift supplies, and the density is the functional derivative of $\ln Z$ with respect to $\omicron_{\mathrm{pot}}$. The constant background is exact: the kernel is the free kernel times $\exp(-\frac{2\pi iϙ\omicron_{\mathrm{pot}} r'_t}{h\,c})$ and $\exp(\frac{2\pi iϙ\vec A\cdot\vec r}{h})$, its composition verified to $2.3\times10^{-12}$, with the dispersion $E+ϙ\omicron_{\mathrm{pot}}=(\vec p-q\vec A)^{2}/2m$. The semiclassical kernel is van Vleck's amplitude times the classical action's phase times the connection's line integral along the classical path.
+The local transformation is a central phase at each point, its Jacobian is one, so the measure is untouched; the exponent shifts by a total derivative that cancels between the kinetic and the potential terms, so the invariance is exact and term by term, with no link and no boundary term. The determinant is invariant by the similarity the shift supplies, and the density is the functional derivative of $\ln Z$ with respect to $\omicron_{\mathrm{pot}}$. The constant background is exact: the kernel is the free kernel times $\exp(-\frac{2\pi iϙ\omicron_{\mathrm{pot}} r'_t}{h\,c})$ and $\exp(\frac{2\pi iϙ\vec A\cdot\vec r}{h})$, its composition verified to $2.3\times10^{-12}$, with the dispersion $E+ϙ\omicron_{\mathrm{pot}}=(\vec p-q\vec A)^{2}/2m$. The semiclassical kernel is van Vleck's amplitude times the classical action's phase times the connection's line integral along the classical path.
 
 ## Summary of Notation
 
@@ -170,7 +170,7 @@ The gauge transformation is a central phase at each point, its Jacobian is one, 
 | $\vec\pi=-i \frac{h}{2\pi}\vec\nabla_\Phi-q\vec A$ | Mechanical momentum |
 | $A_{\mathrm{gco}}=i \frac{h}{2\pi} D_t-\frac{1}{2m}(-i \frac{h}{2\pi}\vec D)^{2}$ | The first-order operator of the integral |
 | $\det(A_{\mathrm{gco}})^{-1}$ | The coupled determinant; power unchanged |
-| $e^{\frac{2\pi iϙ}{h}\Gamma}$ | The gauge transformation; unit Jacobian |
+| $e^{\frac{2\pi iϙ}{h}\Gamma}$ | The local transformation; unit Jacobian |
 | $K_{\mathrm{gco}}$ | The constant-background kernel |
 | $\exp(-\frac{2\pi iϙ\omicron_{\mathrm{pot}} r'_t}{h\,c})\exp(\frac{2\pi iϙ\vec A\cdot\vec r}{h})$ | Its two factors |
 | $E+ϙ\omicron_{\mathrm{pot}}=(\vec p-q\vec A)^{2}/2m$ | The dispersion's two shifts |
@@ -179,13 +179,13 @@ The gauge transformation is a central phase at each point, its Jacobian is one, 
 ## Further Reading
 
 - *The Lagrangian and the Coupled Schrödinger Equation*, for the action, the term-by-term invariance and the Noether current.
-- *The Coupled Schrödinger Equation in Biquaternionic Form*, for the equation, the gauge covariance and the constant setting's two shifts.
+- *The Coupled Schrödinger Equation in Biquaternionic Form*, for the equation, the covariance and the constant setting's two shifts.
 - *The Path Integral and the Schrödinger Equation in Biquaternionic Form*, for the free integral whose determinant's power this article keeps.
 - *The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the same integral read in the word.
 - *The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form*, for the second-order coupled integral and the link question this article does not have.
 - *Landau Levels in Biquaternionic Form*, for the constant magnetic field's spectrum.
 - *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the line-integral phase in its geometric reading.
-- L. D. Faddeev and A. A. Slavnov, *Gauge Fields: An Introduction to Quantum Theory* (Benjamin, 1980), for the first-order integral and its gauge structure.
+- L. D. Faddeev and A. A. Slavnov, *Gauge Fields: An Introduction to Quantum Theory* (Benjamin, 1980), for the first-order integral and its structure.
 - H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 2009), for the constant-background kernels.
 - L. S. Schulman, *Techniques and Applications of Path Integration* (Wiley, 1981), for the vector potential in the discretised product.
 - M. Reed and B. Simon, *Methods of Modern Mathematical Physics II* (Academic Press, 1975), for the diamagnetic inequality.

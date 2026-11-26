@@ -169,7 +169,7 @@ Does not add a value. Every closed form quoted is the element companion's; the d
 
 3. What is the chart's version of the ghost? The ghost is a property of a momentum mode and the chart is a property of a field value. The chart's nearest object is the branch sign, and the two are not the same. Whether a momentum-space chart would display the ghost as a coordinate is open.
 
-4. Does the rapidity's divergence have a meaning? The mass term is flat in $u$ and the kinetic term is not, so the rapidity's integral is convergent only because of the field strength. Whether the flat direction is the massless limit's gauge direction seen from the chart is a question this article does not answer.
+4. Does the rapidity's divergence have a meaning? The mass term is flat in $u$ and the kinetic term is not, so the rapidity's integral is convergent only because of the field strength. Whether the flat direction is the massless limit's redundant direction seen from the chart is a question this article does not answer.
 
 5. Empirical content. None.
 

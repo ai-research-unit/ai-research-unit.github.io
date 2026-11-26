@@ -254,7 +254,7 @@ $$
 
 **The first two lines are Rules 1 and 2 read on the half-sum and half-difference**, and the third is the statement that a self-dual and an anti-self-dual two-form commute — **which is also the statement that $\mathfrak{k}_L$ and $\mathfrak{k}_R$ are independent factors of $\mathfrak{so}(4)$.**
 
-**What that does not buy.** A direct product of two $\mathfrak{su}(2)$'s **inside** $\mathfrak{su}(4)$ is not a pair of gauge factors **beside** it. **The closure is real, the commutativity is real, and the factor reading is not available**: the rank of the algebra is three, the rank of the subspace is two, and no breaking of the fifteen produces five. **That is the whole reason this article has five rules and not six**, and the reason the six arrays are printed in [Construction of the AXF Matrices](construction-of-the-axf-matrices-of-the-fifteen-generators.html) as a remark rather than as a block of the table.
+**What that does not buy.** A direct product of two $\mathfrak{su}(2)$'s **inside** $\mathfrak{su}(4)$ is not a pair of group factor **beside** it. **The closure is real, the commutativity is real, and the factor reading is not available**: the rank of the algebra is three, the rank of the subspace is two, and no breaking of the fifteen produces five. **That is the whole reason this article has five rules and not six**, and the reason the six arrays are printed in [Construction of the AXF Matrices](construction-of-the-axf-matrices-of-the-fifteen-generators.html) as a remark rather than as a block of the table.
 
 ## The Forty Zeros
 
@@ -280,7 +280,7 @@ $$
 
 **The corner meets six brackets as a factor and appears in three as an answer.** It meets the three $\{t,k\}$ planes and their three imaginary partners, and it comes back from those three equal-plane brackets. **The three colour planes and the two colour diagonals never see it at all**, which is the algebraic content of the phrase that the corner is the lepton-line direction.
 
-**The six real planes are a subalgebra of rank two, and it is not a factor.** $\operatorname{span}\{A_{ab}\}=\mathfrak{so}(4)$: six dimensions, closed, abelian when written as $\mathfrak{k}_L\oplus\mathfrak{k}_R$ — **and still a subspace of the fifteen.** That distinction is this article's one warning: **closure and commutativity are algebraic facts, and being a gauge factor is not.**
+**The six real planes are a subalgebra of rank two, and it is not a factor.** $\operatorname{span}\{A_{ab}\}=\mathfrak{so}(4)$: six dimensions, closed, abelian when written as $\mathfrak{k}_L\oplus\mathfrak{k}_R$ — **and still a subspace of the fifteen.** That distinction is this article's one warning: **closure and commutativity are algebraic facts, and being a group factor is not.**
 
 **Every coefficient is $\pm\tfrac23$, $\pm1$, $\pm\tfrac43$, $\pm2$ or $\pm4$.** A table whose coefficients are five rationals is a table that can be checked by hand, and this one can.
 

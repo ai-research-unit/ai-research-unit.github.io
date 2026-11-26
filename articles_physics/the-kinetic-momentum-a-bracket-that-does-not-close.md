@@ -31,7 +31,7 @@ $$
 
 The two differ by a function of position. The canonical momentum differentiates and the vector potential multiplies. Nothing else separates them.
 
-The distinction is not a choice of notation. The two momenta transform differently under a gauge transformation, and the difference is the whole content of the next section.
+The distinction is not a choice of notation. The two momenta transform differently under a local transformation, and the difference is the whole content of the next section.
 
 Under $\vec A\to\vec A+\vec\nabla_\Phi\digamma_{\mathrm{gau}}$ the canonical momentum is unchanged, the mechanical momentum shifts, and the field strength is unchanged.
 
@@ -42,7 +42,7 @@ Under $\vec A\to\vec A+\vec\nabla_\Phi\digamma_{\mathrm{gau}}$ the canonical mom
 | $\vec B$ | unchanged |
 | $[\pi_j,\pi_{\imath}]$ | unchanged |
 
-The state carries the compensating central phase. The companion article on gauge transformations of the first and second kinds fixes that phase, and the Aharonov–Bohm article records what it does around a closed path.
+The state carries the compensating central phase. The companion article on local transformations of the first and second kinds fixes that phase, and the Aharonov–Bohm article records what it does around a closed path.
 
 ## What the Relation Fixes
 
@@ -131,7 +131,7 @@ $$
 \tilde L_{\mathrm{kin},z}=\tilde L_{\mathrm{orb},z}-\frac{ϙB}{2}\left(r_x^2+r_y^2\right)e_t .
 $$
 
-The correction is quadratic in position and grows with the orbit. It is not a small term at large radius, and it is not removable by a gauge choice because $\vec B$ is gauge invariant.
+The correction is quadratic in position and grows with the orbit. It is not a small term at large radius, and it is not removable by a choice of representative because $\vec B$ is invariant.
 
 The identity was checked numerically in the symmetric gauge on a spectral grid: the two sides of $\tilde L_{\mathrm{kin},z}=\tilde L_{\mathrm{orb},z}-\frac{ϙB}{2}(r_x^2+r_y^2)e_t$ agree to a relative residual of $2.8\times10^{-16}$, which is machine precision.
 
@@ -165,7 +165,7 @@ The bracket above is not a Lie bracket on the span of the generators, and the re
 
 **What fails is closure, not consistency.** The Jacobi identity holds for the bracket, because the bracket is a commutator of operators and commutators always satisfy it. The failure is narrower and sharper: the commutator of two members of the triple is not a member of the span of the triple. A reader who expects the Jacobi identity to be the test will look in the wrong place.
 
-**Nothing repairs it.** Three repairs suggest themselves and all fail. A rescaling of the generators rescales the anomaly with them. A linear redefinition mixes the generators among themselves and leaves the anomaly outside the span, because the anomaly is independent of the generators. A gauge choice cannot remove it, because the anomaly is built from $\vec B$ and $\vec B$ is gauge invariant.
+**Nothing repairs it.** Three repairs suggest themselves and all fail. A rescaling of the generators rescales the anomaly with them. A linear redefinition mixes the generators among themselves and leaves the anomaly outside the span, because the anomaly is independent of the generators. A choice of representative cannot remove it, because the anomaly is built from $\vec B$ and $\vec B$ is invariant.
 
 **The free case is the control.** At $ϙ=0$ the anomaly vanishes and the bracket closes exactly on the rotation algebra. The failure is therefore not a property of the cross product or of the biquaternion notation. It is a property of the field, and it appears exactly when the second half of the canonical relation stops vanishing.
 
@@ -247,7 +247,7 @@ $$
 [\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=i\,\frac{h}{2\pi}\,\varepsilon_{\imath\jmath\ell}\Bigl(\tilde L_{\mathrm{kin},k}+ϙ\,r_{\imath}\,(\vec r\cdot\vec B)\Bigr),
 $$
 
-a rotation bracket plus a multiplication operator quadratic in position. The three components do not span a Lie algebra, because the extra term is not a first-order differential operator. Jacobi holds; closure fails. No rescaling, redefinition or gauge choice repairs it, and the failure vanishes exactly with the field.
+a rotation bracket plus a multiplication operator quadratic in position. The three components do not span a Lie algebra, because the extra term is not a first-order differential operator. Jacobi holds; closure fails. No rescaling, redefinition or choice of representative repairs it, and the failure vanishes exactly with the field.
 
 The anomaly has the shape of the curvature in the covariant derivative article: a commutator that leaves the span of the operators and lands on multiplication. The mechanical momentum is the spatial part of the connection, the field strength is its curvature, and the kinetic angular momentum is the cross product of position with the connection.
 

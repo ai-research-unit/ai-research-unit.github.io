@@ -186,7 +186,7 @@ $$
 \arg\langle\tilde{Ξ}_{1}|\tilde{Ξ}_{2}\rangle = \arg\,2\,\mathrm{Sc}\!\left(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2}\right),
 $$
 
-and it is gauge-covariant: a rephasing $\tilde{Ξ}_{a}\mapsto \exp(i\theta_{\mathrm{cen},a})\tilde{Ξ}_{a}$ shifts the connection by a total derivative, exactly as in the Berry article. The gauge freedom of the geometric phase is the freedom to rephase the spinor at each point of the path, and the curvature is the gauge-invariant content.
+and it is covariant: a rephasing $\tilde{Ξ}_{a}\mapsto \exp(i\theta_{\mathrm{cen},a})\tilde{Ξ}_{a}$ shifts the connection by a total derivative, exactly as in the Berry article. The redundancy of the geometric phase is the freedom to rephase the spinor at each point of the path, and the curvature is the invariant content.
 
 ## The Rotating Field at Arbitrary Rate
 

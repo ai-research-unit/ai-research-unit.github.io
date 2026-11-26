@@ -8,7 +8,7 @@ The Klein–Gordon symbol is one scalar, the Schrödinger symbol is one affine s
 
 In the four-component reading the symbol is $\sigma_{\imath\jmath}=(k^{2}-4\pi^{2}\nu_m^{2})\delta_{\imath\jmath}-2\pi\nu_{\imath} 2\pi\nu_{\jmath}$, whose determinant is $-\nu_m^{2}(k^{2}-\nu_m^{2})^{3}$. The cubic factor is the three polarisations of the parent's count; the single factor $-\nu_m^{2}$ is the longitudinal direction, and it does not vanish on the shell. **The mass is what keeps one direction out of the kernel**, and it is why the count is three and not two.
 
-On the mass shell the kernel is the Lorenz plane, three-dimensional, in both cases. The massless field's kernel contains one more direction than the Lorenz plane does — the wave number itself — and that direction is the gauge orbit. So the two fields have the same kernel dimension and different propagating counts, and the difference is whether $\nu_{\imath}$ is annihilated. That is the frequency-space form of "the Lorenz condition is implied here and chosen there", and it is checked to machine precision.
+On the mass shell the kernel is the Lorenz plane, three-dimensional, in both cases. The massless field's kernel contains one more direction than the Lorenz plane does — the wave number itself — and that direction is the orbit. So the two fields have the same kernel dimension and different propagating counts, and the difference is whether $\nu_{\imath}$ is annihilated. That is the frequency-space form of "the Lorenz condition is implied here and chosen there", and it is checked to machine precision.
 
 As $\nu_m\to0$ the determinant does not merely acquire a new zero: it vanishes at every wave number, so the symbol is invertible nowhere in the limit. The parent's discontinuous degrees-of-freedom count and the Stueckelberg device are the position-space faces of this one fact.
 
@@ -152,16 +152,16 @@ The first column's rank counts how many field strengths the gradient can produce
 
 The massless column is where the two computations separate visibly. For $\nu_m=0$ the symbol has rank three off the cone and one on it, and the count follows from one formula applied four times:
 
-| field | surface | rank | $\dim\ker$ | $\nu_{\imath}$ in kernel | gauge orbit | count |
+| field | surface | rank | $\dim\ker$ | $\nu_{\imath}$ in kernel | orbit | count |
 | --- | --- | --- | --- | --- | --- | --- |
 | Proca | $k^{2}=4\pi^{2}\nu_m^{2}$ | $1$ | $3$ | no | $0$ | $3$ |
 | Proca | $k^{2}\neq \nu_m^{2}$ | $4$ | $0$ | — | — | $0$ |
 | Maxwell | $k^{2}=0$ | $1$ | $3$ | yes | $1$ | $2$ |
 | Maxwell | $k^{2}\neq0$ | $3$ | $1$ | yes | $1$ | $0$ |
 
-Read the fourth column: it is the whole difference between the two theories. The two fields have the same rank on their respective surfaces and the same kernel dimension, and they differ in whether the wave number belongs to the kernel. The mass's entire effect on the rank structure is one membership, and everything the parent says about gauge freedom follows from it.
+Read the fourth column: it is the whole difference between the two theories. The two fields have the same rank on their respective surfaces and the same kernel dimension, and they differ in whether the wave number belongs to the kernel. The mass's entire effect on the rank structure is one membership, and everything the parent says about redundancy follows from it.
 
-**The count is the kernel's dimension minus the gauge orbit's dimension inside it.** For the Proca field on the shell that is $3-0=3$; for the Maxwell field on the cone it is $3-1=2$. The formula is the corpus's, and the article uses it four times rather than asserting the answers separately, because a count derived once from one formula cannot drift between the rows.
+**The count is the kernel's dimension minus the orbit's dimension inside it.** For the Proca field on the shell that is $3-0=3$; for the Maxwell field on the cone it is $3-1=2$. The formula is the corpus's, and the article uses it four times rather than asserting the answers separately, because a count derived once from one formula cannot drift between the rows.
 
 ## The Massless Limit Is a Failure of Invertibility
 
@@ -177,7 +177,7 @@ Read the fourth column: it is the whole difference between the two theories. The
 
 The wave number is fixed at $2\pi\nu_t'=1.5$ with $2\pi\vec\nu_\Phi=(0.3,0.2,0.1)$, so no entry is near its own shell: $k^{2}-\nu_m^{2}$ runs from $2.035$ at $2\pi\nu_m=0.7$ to $2.11$ at $\nu_m=0$, and the determinant falls by twelve orders of magnitude while that factor moves by four per cent. The fall is entirely the linear factor.
 
-The limit is therefore not a limit of symbols. Every $\nu_m>0$ gives an invertible symbol off the shell and a propagator with one pole on it. At $\nu_m=0$ there is no invertible point, the propagator is not defined as an inverse, and the gauge orbit appears. That is the frequency-space form of the parent's statement that no sequence of Proca fields converges to a Maxwell field with a smooth third state, and it is why the Stueckelberg device has to add a field rather than perturb one.
+The limit is therefore not a limit of symbols. Every $\nu_m>0$ gives an invertible symbol off the shell and a propagator with one pole on it. At $\nu_m=0$ there is no invertible point, the propagator is not defined as an inverse, and the orbit appears. That is the frequency-space form of the parent's statement that no sequence of Proca fields converges to a Maxwell field with a smooth third state, and it is why the Stueckelberg device has to add a field rather than perturb one.
 
 The ratio $s_{\min}/s_{\max}$ is the quantitative version of the same statement. It falls by fifteen orders of magnitude across the table while the rank stays four, which is the numerical mark of a matrix approaching singularity along a fixed direction: the direction is the longitudinal one, its eigenvalue is $-\nu_m^{2}$, and the approach is linear in $\nu_m^{2}$.
 
@@ -215,7 +215,7 @@ The Proca operator's symbol, in the four-component reading, is $\sigma_{\imath\j
 
 Off the mass shell the rank is four, the kernel is empty, and the symbol is invertible with smallest singular value $0.191$. On the shell the rank is one, the kernel is three-dimensional, and it is the Lorenz plane: the three null vectors satisfy $[kA]=0$ to $3\times10^{-17}$. The wave number itself is an eigenvector with eigenvalue $-\nu_m^{2}$, verified to $1.1\times10^{-16}$, so the longitudinal amplitude is multiplied rather than annihilated. That is why the massive field has three polarisations and not two.
 
-The count is the kernel's dimension minus the gauge orbit's dimension inside it: $3-0=3$ for the Proca field on the shell and $3-1=2$ for the Maxwell field on the cone. The two fields have the same rank and the same kernel dimension and differ in one membership — whether $\nu_{\imath}$ is annihilated. That single fact is the frequency-space form of "the Lorenz condition is implied here and chosen there".
+The count is the kernel's dimension minus the orbit's dimension inside it: $3-0=3$ for the Proca field on the shell and $3-1=2$ for the Maxwell field on the cone. The two fields have the same rank and the same kernel dimension and differ in one membership — whether $\nu_{\imath}$ is annihilated. That single fact is the frequency-space form of "the Lorenz condition is implied here and chosen there".
 
 The massless limit is a failure of invertibility: $\lvert\det\sigma\rvert$ falls from $2.083$ to $2.9\times10^{-15}$ as $\nu_m$ goes from $0.7$ to $0$ at a wave number four per cent from its own shell, which is the linear factor's vanishing and nothing else. The symbol is even in the wave number to machine precision, and that evenness is the second order of the operator — read by the polar companion as an absent bracket and by the variational companion as a two-valued inversion.
 

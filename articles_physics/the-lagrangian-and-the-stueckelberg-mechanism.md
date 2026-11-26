@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article writes the Stueckelberg action for a massive abelian vector and shows that its two ways of counting the same physics — the unitary gauge and the covariant gauges — are two readings of one functional. It is the action-first companion of *The Stueckelberg Mechanism in Biquaternionic Form*, which states the mechanism and the degree-of-freedom count; this article asks what action makes a mass term gauge invariant, and at what price.
+This article writes the Stueckelberg action for a massive abelian vector and shows that its two ways of counting the same physics — the unitary gauge and the covariant gauges — are two readings of one functional. It is the action-first companion of *The Stueckelberg Mechanism in Biquaternionic Form*, which states the mechanism and the degree-of-freedom count; this article asks what action makes a mass term invariant, and at what price.
 
 Its place in the sector. The vector here is abelian, so this functional is not a term of [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html): the sector masses its bosons with the Higgs and not with a shift field. The construction is filed beside the electroweak articles because that is where a massive vector is discussed, not because the sector uses it. The general statement, with no sector attached, is [The Stueckelberg Mechanism for a Massive Abelian Vector in Biquaternionic Form](the-stueckelberg-mechanism-for-a-massive-abelian-vector-in-biquaternionic-form.html).
 
@@ -28,9 +28,9 @@ the stationarity conditions are the two equations above, and the action is invar
 
 *Second, the price is one scalar and no ghost.* The Stueckelberg scalar is a non-dynamical mode in the unitary gauge and an $\zeta$-dependent mode in the covariant gauges; the Faddeev–Popov determinant of an abelian fixing is field independent, so there is no ghost. The unphysical sector is the smallest one a massive vector can have.
 
-*Third, the count is gauge independent and the distribution is not.* Four components of $A_{\imath}$ plus one scalar, minus one gauge symmetry, minus one mass-shell constraint, gives three physical modes in every gauge. What changes between gauges is which modes are called physical.
+*Third, the count is gauge independent and the distribution is not.* Four components of $A_{\imath}$ plus one scalar, minus one local symmetry, minus one mass-shell constraint, gives three physical modes in every gauge. What changes between gauges is which modes are called physical.
 
-The mechanism is standard, and it is the abelian case of what the electroweak sector does with a doublet. What the corpus contributes is the exact biquaternionic writing of the invariant combination and the comparison of the two gauge choices on one page.
+The mechanism is standard, and it is the abelian case of what the electroweak sector does with a doublet. What the corpus contributes is the exact biquaternionic writing of the invariant combination and the comparison of the two choices of representative on one page.
 
 ## Conventions
 
@@ -70,7 +70,7 @@ $$
 
 with the corpus's sign rule, so that the mass term is $-\tfrac12\mu^2\sum_{\imath}(\cdots)^2$ and the unitary gauge $\xi=0$ gives the Proca mass term exactly.
 
-The gauge transformation, checked. Under $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Lambda$ and $\xi\mapsto\xi+\mu\Lambda$,
+The local transformation, checked. Under $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Lambda$ and $\xi\mapsto\xi+\mu\Lambda$,
 
 $$
 A_{\imath}-\frac{1}{\mu}\partial_{\imath}\xi\longmapsto A_{\imath}+\partial_{\imath}\Lambda-\frac{1}{\mu}\partial_{\imath}\xi-\partial_{\imath}\Lambda=A_{\imath}-\frac{1}{\mu}\partial_{\imath}\xi ,
@@ -94,7 +94,7 @@ Reality does not buy renormalizability or a physical scalar. Three things the re
 
 - *No renormalizability claim.* The Stueckelberg action is renormalizable as a gauge theory and not as a Proca theory; the distinction is the whole reason the mechanism is used.
 - *No physical scalar.* The scalar is not an asymptotic state; it is the longitudinal polarization in another variable.
-- *No ghost freedom by itself.* The absence of ghosts follows from the abelian determinant being field independent, which is a property of the gauge group and not of the action's reality.
+- *No ghost freedom by itself.* The absence of ghosts follows from the abelian determinant being field independent, which is a property of the symmetry group and not of the action's reality.
 
 ## The Variation: Two Equations, One of Them a Constraint
 
@@ -122,7 +122,7 @@ which is the deformed Lorenz condition, $\partial_{\imath} A_{\imath}=\frac{1}{\
 
 **The two equations are consistent, and that is not automatic.** Taking the divergence of the vector equation gives $\mu^2\partial_{\imath}(A_{\imath}-\partial_{\imath}\xi/\mu)=0$, which is the scalar equation. So the scalar's equation is the divergence of the vector's, and the system over-determines nothing. This is the same structure the Proca article records: the constraint is implied and not imposed, and here it is implied twice over, once from each variation.
 
-The gauge redundancy of the two equations. Because the action is invariant, the equations cannot determine $\xi$ and the longitudinal part of $A_{\imath}$ separately; they determine only the combination $\tilde C_\Phi$. The unitary gauge picks a representative, and that is a choice of section in the orbit, not an extra equation.
+The redundancy of the two equations. Because the action is invariant, the equations cannot determine $\xi$ and the longitudinal part of $A_{\imath}$ separately; they determine only the combination $\tilde C_\Phi$. The unitary gauge picks a representative, and that is a choice of section in the orbit, not an extra equation.
 
 The check that would catch a missing factor. In the unitary gauge the first equation is $\partial_{\jmath} F_{\imath\jmath}=\mu^2A_{\imath}$ and its divergence gives $\mu^2\partial_{\imath} A_{\imath}=0$, which is the Lorenz condition with the right sign. If the mass term had been written $\tfrac12\mu^2A_{\imath} A_{\imath}$ without the scalar, the divergence would give $\partial_{\imath} A_{\imath}=0$ as an identity, which is false; the scalar is what makes the constraint consistent with the equation.
 
@@ -130,7 +130,7 @@ The check that would catch a missing factor. In the unitary gauge the first equa
 
 The count in the unitary gauge. Four components of $A_{\imath}$, one constraint from the deformed Gauss law, three physical modes. The scalar has been gauged to zero and has become the longitudinal polarization; it has not disappeared, it has been relabelled.
 
-The count in the covariant gauge. The same four plus one, with the gauge condition $G=\partial_{\imath} A_{\imath}-\zeta\mu^2\xi=0$ removing one and the scalar carrying an $\zeta$-dependent mass $\zeta\mu^2$. At $\zeta\to\infty$ the scalar's mass diverges and it decouples, leaving the Proca propagator; at $\zeta=0$ its mass vanishes and it is a free scalar. The physical amplitudes are $\zeta$ independent, and the independence is the statement that the scalar and the longitudinal vector carry one mode between them.
+The count in the covariant gauge. The same four plus one, with the fixing condition $G=\partial_{\imath} A_{\imath}-\zeta\mu^2\xi=0$ removing one and the scalar carrying an $\zeta$-dependent mass $\zeta\mu^2$. At $\zeta\to\infty$ the scalar's mass diverges and it decouples, leaving the Proca propagator; at $\zeta=0$ its mass vanishes and it is a free scalar. The physical amplitudes are $\zeta$ independent, and the independence is the statement that the scalar and the longitudinal vector carry one mode between them.
 
 Why there is no ghost. The Faddeev–Popov determinant for the abelian condition is $\det(\Box-\zeta\mu^2)$, which is field independent, so it contributes a constant to the path integral and no propagating ghost. In the non-abelian case the determinant is field dependent, the ghosts propagate, and the counting involves them. The abelian mechanism's unphysical sector is therefore one scalar and nothing else, and that is the minimum for a massive vector.
 
@@ -138,17 +138,17 @@ The constraint that must survive. The mass-shell constraint $\partial_{\imath} A
 
 ## The Structural Consequence: The Mass Term Becomes Invariant, and the Field Becomes a Coordinate
 
-The statement. A mass term is not invariant under a gauge transformation, and the mechanism makes it invariant by promoting the gauge parameter to a field. The promoted field is not a new particle; it is the gauge parameter made dynamical, and its dynamics is fixed by the requirement that it cancel the shift of the vector.
+The statement. A mass term is not invariant under a local transformation, and the mechanism makes it invariant by promoting the parameter to a field. The promoted field is not a new particle; it is the parameter made dynamical, and its dynamics is fixed by the requirement that it cancel the shift of the vector.
 
-Why the structure recurs. Every massive gauge field in the corpus has this shape, and the electroweak sector is the non-abelian case with a doublet. The Stueckelberg action is the abelian prototype: one scalar, one vector, one invariant combination, and the count of three modes. Reading it once makes the electroweak count a special case rather than a separate fact.
+Why the structure recurs. Every massive connection in the corpus has this shape, and the electroweak sector is the non-abelian case with a doublet. The Stueckelberg action is the abelian prototype: one scalar, one vector, one invariant combination, and the count of three modes. Reading it once makes the electroweak count a special case rather than a separate fact.
 
-The equivalence, stated carefully. The Stueckelberg theory and the Proca theory have the same physical spectrum and the same amplitudes. They differ in what is manifest: the Stueckelberg action is manifestly gauge invariant and manifestly renormalizable by power counting; the Proca action is manifestly unitary and manifestly three-mode. The equivalence is exact at the level of the S-matrix and is the content of the parent's comparison.
+The equivalence, stated carefully. The Stueckelberg theory and the Proca theory have the same physical spectrum and the same amplitudes. They differ in what is manifest: the Stueckelberg action is manifestly invariant and manifestly renormalizable by power counting; the Proca action is manifestly unitary and manifestly three-mode. The equivalence is exact at the level of the S-matrix and is the content of the parent's comparison.
 
 **What the structure does not give.** It does not give the scalar a mass, a potential or an interaction. It does not explain why a mass exists. It gives a consistent description of a mass that is already there.
 
 ## The Noether Currents: The Conserved Current of the Shift
 
-The shift current. The action is invariant under $\xi\mapsto\xi+\mu\Lambda$ with constant $\Lambda$ only when combined with a constant shift of $A_{\imath}$, and the constant shift of $A_{\imath}$ by a gradient is a gauge transformation, so the global symmetry is trivial on the physical fields. The would-be Noether current is
+The shift current. The action is invariant under $\xi\mapsto\xi+\mu\Lambda$ with constant $\Lambda$ only when combined with a constant shift of $A_{\imath}$, and the constant shift of $A_{\imath}$ by a gradient is a local transformation, so the global symmetry is trivial on the physical fields. The would-be Noether current is
 
 $$
 j_{\imath}=\mu\bigl(A_{\imath}-\frac{1}{\mu}\partial_{\imath}\xi\bigr)=\mu\,\tilde C_{\Phi,\imath} ,
@@ -168,13 +168,13 @@ Adds.
 
 - *The invariance in one line.* The action shows that the mass term depends on the invariant combination and on nothing else, which the equations hide.
 - *The parameter count.* The mechanism adds a field and no parameter, and the count is visible only when the action is written.
-- *The reason for no ghost.* The abelian determinant's field independence is a property of the action's gauge structure.
+- *The reason for no ghost.* The abelian determinant's field independence is a property of the action's structure.
 
 Relabels.
 
 - *The "mechanism".* It is not a dynamical process; it is a rewriting of the same theory in variables where the invariance is manifest.
-- *The scalar.* It is not a particle; it is the gauge parameter promoted to a field, and in the unitary gauge it is the longitudinal polarization.
-- *The gauge choice.* The unitary gauge and the covariant gauges are not two theories; they are two readings of one action.
+- *The scalar.* It is not a particle; it is the parameter promoted to a field, and in the unitary gauge it is the longitudinal polarization.
+- *The choice of representative.* The unitary gauge and the covariant gauges are not two theories; they are two readings of one action.
 
 The distinction that matters. The action is invariant and the physical content is three modes. Everything in this article follows from the tension between those two statements and from the fact that the invariant combination is what the action depends on.
 
@@ -198,9 +198,9 @@ The boundary. The invariant combination and its biquaternionic form are the alge
 | $\tilde F$ | field strength, $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ |
 | $\xi$ | Stueckelberg scalar, real central |
 | $\mu$ | mass |
-| $\tilde C_\Phi=\tilde A_\Phi-\tilde\nabla_\Phi\xi/\mu$ | the gauge-invariant combination |
-| $\Lambda$, $\zeta$ | gauge parameter; covariant-gauge parameter |
-| $G=\partial_{\imath} A_{\imath}-\zeta\mu^2\xi$ | covariant gauge condition |
+| $\tilde C_\Phi=\tilde A_\Phi-\tilde\nabla_\Phi\xi/\mu$ | the invariant combination |
+| $\Lambda$, $\zeta$ | parameter; covariant-parameter |
+| $G=\partial_{\imath} A_{\imath}-\zeta\mu^2\xi$ | covariant fixing condition |
 
 ## Further Reading
 

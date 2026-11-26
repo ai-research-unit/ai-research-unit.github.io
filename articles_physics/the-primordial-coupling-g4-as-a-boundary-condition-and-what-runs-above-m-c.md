@@ -10,7 +10,7 @@ $$
 g_4^{2}=4\pi\,\alpha_s(M_X) ,
 $$
 
-and then uses the value to turn the $K_L\to\mu e$ rate into a mass bound. **Nothing in the corpus integrates the same coupling upward.** Above $M_C$ the group is $\mathrm{SU}(4)$, the content is the fifteen gauge fields, the sixteen Weyl fields and the scalar, and the coefficient that governs the coupling there is written nowhere. That coefficient is a two-line computation and its absence left the phase described but not computed.
+and then uses the value to turn the $K_L\to\mu e$ rate into a mass bound. **Nothing in the corpus integrates the same coupling upward.** Above $M_C$ the group is $\mathrm{SU}(4)$, the content is the fifteen connections, the sixteen Weyl fields and the scalar, and the coefficient that governs the coupling there is written nowhere. That coefficient is a two-line computation and its absence left the phase described but not computed.
 
 **What this article supplies.**
 
@@ -47,7 +47,7 @@ $$
 **$g_4$ is one number for the whole group.** Three consequences follow and each is a departure from what a reader expects:
 
 - *No ratio to fix.* With one coupling there is no $\alpha_1/\alpha_2$ to match and no unification condition to impose; the matching at $M_C$ is a set of equalities among derived couplings and not a constraint on $g_4$.
-- *No free parameter in the gauge sector.* The value enters every vertex and every rate, so a measurement of any one of them fixes it. The corpus uses $K_L\to\mu e$, because it is the one channel the model predicts at tree level with no unknown matrix beyond the generation entries.
+- *No free parameter in the sector.* The value enters every vertex and every rate, so a measurement of any one of them fixes it. The corpus uses $K_L\to\mu e$, because it is the one channel the model predicts at tree level with no unknown matrix beyond the generation entries.
 - *Nothing for it to protect.* $\rho=1$ at tree level is unaffected by the value of $g_4$ and is not a relation among couplings; it is a property of the scalar sector, and [The Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter.html) owns that argument and states what it does and does not establish.
 
 **The value is imported, and the import is not a derivation.** $\alpha_s(M_X)$ is obtained by running the measured $\alpha_s(M_Z)=0.1179$ up through the Standard Model's content. **That running uses the strong sector's own coefficient and not $\mathrm{SU}(4)$'s**, so the identification $g_4^{2}=4\pi\alpha_s(M_X)$ is a matching statement: it says the two theories are the same theory at $M_X$. **The corpus imposes it at $M_X$ while a strict matching is at $M_C$**, and the two differ by one interval of running.
@@ -68,11 +68,11 @@ $$
 b_0=\frac{11}{3}C_{A}-\frac{4}{3}T_{R}N_{f}-\frac{1}{6}T_{S}n_{s} ,
 $$
 
-with $C_{A}=N=4$ for $\mathrm{SU}(4)$, $T_{R}=\tfrac12$ for a fundamental fermion, $N_{f}$ the number of Dirac fermions, and $T_{S}n_{s}$ the total Dynkin index of the scalars counted as **real** fields, $n_{s}=1$ for the one real adjoint. **The three terms are the gauge field's antiscreening, the fermions' screening, and the scalars' screening**, in that order and with that sign pattern.
+with $C_{A}=N=4$ for $\mathrm{SU}(4)$, $T_{R}=\tfrac12$ for a fundamental fermion, $N_{f}$ the number of Dirac fermions, and $T_{S}n_{s}$ the total Dynkin index of the scalars counted as **real** fields, $n_{s}=1$ for the one real adjoint. **The three terms are the connection's antiscreening, the fermions' screening, and the scalars' screening**, in that order and with that sign pattern.
 
 | contribution | what counts | the count | its term in $b_0$ |
 |---|---|---|---|
-| the fifteen gauge fields | $C_{A}=4$ | $1$ adjoint | $+\tfrac{44}{3}=+14.667$ |
+| the fifteen connections | $C_{A}=4$ | $1$ adjoint | $+\tfrac{44}{3}=+14.667$ |
 | the sixteen Weyl fields | $N_{f}=8$ Dirac | $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$ | $-\tfrac{16}{3}=-5.333$ |
 | the scalar | $T_{S}=4$ | $\mathbf{15}\oplus\mathbf1$, sixteen real | $-\tfrac{2}{3}=-0.667$ |
 | **total** | | | $\mathbf{\tfrac{26}{3}=8.667}$ |
@@ -147,7 +147,7 @@ $$
 
 - *The phase is weakly coupled at the transition.* $\alpha_4(M_X)=0.058$, so $\alpha_4/\pi=0.018$ and the one-loop expansion is good to a few per cent. **The two-loop term is about two per cent of the change**: one loop misses two by ten per cent at $\alpha_s\approx0.3$, the relative size scales as $\alpha$, and $10\%\times0.058/0.3\approx2\%$. **This is what makes the tree-level rates of the Feynman-rules article legitimate**, and it is the reason no resummation appears anywhere in the primordial block.
 - *The phase is asymptotically free.* $b_0=\tfrac{26}{3}>0$, so $\alpha_4\to0$ as $\mu\to\infty$. The primordial force does not grow at short distances, and no Landau-pole cosmology is available to it: an asymptotically free sector cannot be strongly coupled in the early universe, so it can drive neither a confining transition nor a thermal relic abundance through its own gauge interactions.
-- *The coupling is weakest where the content is heaviest.* Antiscreening wins because the matter above $M_C$ is more than the Standard Model's per gauge field, and the coupling at $M_P$ is under a third of its value at $M_X$. **A unified description at a high scale would therefore be a weakly coupled one**, which is the opposite of the strong-coupling picture a GUT without asymptotic freedom would need.
+- *The coupling is weakest where the content is heaviest.* Antiscreening wins because the matter above $M_C$ is more than the Standard Model's per connection, and the coupling at $M_P$ is under a third of its value at $M_X$. **A unified description at a high scale would therefore be a weakly coupled one**, which is the opposite of the strong-coupling picture a GUT without asymptotic freedom would need.
 - *Nothing confines, and the coefficient is why.* A confining phase needs the coupling to grow at long distances; here it grows downward only, and the phase ends at $M_C$ before the growth matters. **This is the quantitative half of *Why There Is No Confinement Above $M_C$***, which supplies the mechanism and cites this article for the number.
 
 **What the running does not say.** It does not say that the three Standard Model couplings meet. **They do not, and the meeting is not a goal of the model**: $g_4$ is one number and the three below $M_C$ are derived from it by the matching relations, so a "unification" statement would be a statement about the matching and not about a crossing of lines. The corpus's coupling article draws the same distinction from the other side.
@@ -207,7 +207,7 @@ $$
 
 ## Summary
 
-The model has one gauge coupling and this article computes what it does above $M_C$. **$b_0=\tfrac{26}{3}$**, from $\tfrac{44}{3}$ for the fifteen gauge fields, $-\tfrac{16}{3}$ for the sixteen Weyl fields read as eight Dirac fields, and $-\tfrac23$ for the scalar, the last of which is the adjoint Dynkin index of a sixteen-component Hermitian multiplet taken at the weight of a real field.
+The model has one gauge coupling and this article computes what it does above $M_C$. **$b_0=\tfrac{26}{3}$**, from $\tfrac{44}{3}$ for the fifteen connections, $-\tfrac{16}{3}$ for the sixteen Weyl fields read as eight Dirac fields, and $-\tfrac23$ for the scalar, the last of which is the adjoint Dynkin index of a sixteen-component Hermitian multiplet taken at the weight of a real field.
 
 **The running faces up.** $b_0>0$, so $\alpha_4$ falls from $0.0581$ at $M_X$ to $0.0165$ at the Planck scale, and the primordial phase is asymptotically free and weakly coupled everywhere it exists. **That is what makes the tree-level rates of the block legitimate and what forbids a confining primordial phase.**
 
@@ -233,7 +233,7 @@ The model has one gauge coupling and this article computes what it does above $M
 | $M_C$ | The transition scale, above the leptoquark bound |
 | $M_{P}$ | $1.22\times10^{19}\ \mathrm{GeV}$, used only as a far end |
 | $\mu_{\mathrm{pole}}$ | $885\ \mathrm{MeV}$, the zero of the extended one-loop line |
-| $\zeta$ | The gauge-fixing parameter of the corpus's propagators; absent from everything in this article, which needs no gauge fixing |
+| $\zeta$ | The fixing parameter of the corpus's propagators; absent from everything in this article, which needs no fixing the representative |
 
 ## Further Reading
 

@@ -275,7 +275,7 @@ In the algebra the mass is the off-diagonal pair that exchanges the two chiral p
 
 - **The momentum.** The algebra has no state and no momentum; $\vec p$ is a datum the state carries, and without it there is no axis and no operator.
 - **The mass.** Whether $m=0$ is an input. The framework represents the Proca field as readily as the Maxwell one, and the two differ in whether the label is invariant and whether the third value is physical.
-- **The gauge removal.** The deletion of the zero value of a massless vector field is a property of the gauge orbit and not of the spectrum.
+- **The gauge removal.** The deletion of the zero value of a massless vector field is a property of the orbit and not of the spectrum.
 - **The doubling.** Whether both helicities are present is a property of the field.
 - **The choice of carrier.** Which particle uses which carrier — the electron the fundamental module, the photon the adjoint — is physics and not algebra.
 - **The amplitude calculus.** The Parke–Taylor formula, the colour structure and the momentum-conservation constraints are transcribed, not derived.
@@ -312,7 +312,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 - [Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation](exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html), for the helicity element $\tilde{Ζ}$, the two helicity lines and the mass that leaves them intact.
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the massive case, where the label is not invariant.
 - [Canonical Quantization of the Biquaternion Graviton Field](canonical-quantization-of-the-biquaternion-graviton-field.html), for the spin-two spectrum and the two physical states.
-- [The Determination of the Possible Spins in Biquaternionic Form](the-determination-of-the-possible-spins-in-biquaternionic-form.html), for the little-group classification and the statement that the reduction from $2s+1$ to two is the gauge condition.
+- [The Determination of the Possible Spins in Biquaternionic Form](the-determination-of-the-possible-spins-in-biquaternionic-form.html), for the little-group classification and the statement that the reduction from $2s+1$ to two is the fixing condition.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the spin operator whose projection this is.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chirality basis operator and its invariance.
 - [The Hydrogen Atom in Biquaternionic Form — The Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html), for the non-conservation of chirality at nonzero mass.

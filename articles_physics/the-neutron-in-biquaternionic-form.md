@@ -31,7 +31,7 @@ with $m_n$ the neutron mass. The other, Kravchenko's **two-sided equation**, is 
 
 **Spin-$\tfrac12$ is represented, not built.** In standard physics the neutron's spin-$\tfrac12$ is not fundamental: it is the total angular momentum of three spin-$\tfrac12$ constituents in a bound colour-singlet state, and the composite nature is what makes the spin assignment non-trivial (the naive three-quark spin coupling gives both $\tfrac12$ and $\tfrac32$; the observed ground state is $\tfrac12$). The algebra carries spin-$\tfrac12$ as a representation, but the framework contains no constituents and no composition rule, so it does **not** derive that the neutron's bound state has spin-$\tfrac12$. It represents the answer rather than producing it.
 
-**The mass is a parameter, and the near-degeneracy with the proton is unexplained.** The free pair contains $m_n$ only as the common coefficient of the two mass terms, one per chirality; the framework is scale-free until that number is supplied, so the neutron mass is an input rather than a consequence. So is the fact that the neutron and proton masses agree to about $0.14\%$ ($m_n-m_p \approx 2.306\times10^{-30}$ kg): in standard physics this near-degeneracy is the isospin symmetry of the strong interaction, an approximate flavour $SU(2)$ acting on the $(p,n)$ doublet. The framework does contain an $SU(2)$ — the span of $\vec e_x,\vec e_y,\vec e_z$ is $\mathfrak{su}(2)$ under the commutator, exponentiating to $\mathrm{SU}(2)$ — but that is the rotation/gauge algebra of the material sector, not flavour isospin, and identifying the two would be an import rather than a derivation. The framework supplies no second fermion with a nearly equal mass.
+**The mass is a parameter, and the near-degeneracy with the proton is unexplained.** The free pair contains $m_n$ only as the common coefficient of the two mass terms, one per chirality; the framework is scale-free until that number is supplied, so the neutron mass is an input rather than a consequence. So is the fact that the neutron and proton masses agree to about $0.14\%$ ($m_n-m_p \approx 2.306\times10^{-30}$ kg): in standard physics this near-degeneracy is the isospin symmetry of the strong interaction, an approximate flavour $SU(2)$ acting on the $(p,n)$ doublet. The framework does contain an $SU(2)$ — the span of $\vec e_x,\vec e_y,\vec e_z$ is $\mathfrak{su}(2)$ under the commutator, exponentiating to $\mathrm{SU}(2)$ — but that is the rotation/algebra of the material sector, not flavour isospin, and identifying the two would be an import rather than a derivation. The framework supplies no second fermion with a nearly equal mass.
 
 **Where the near-degeneracy does live, and its price.** The single-field equation of this article has no partner inside it. The doubled Lanczos system does. The companion article *The Proton in Biquaternionic Form* records Gürsey's construction in the section *The Isospin Partner, and Why It Is Not in This Equation*: from the Lanczos pair $\tilde\nabla_\Phi\tilde Q_1=m\tilde Q_2$, $\tilde\nabla_\Phi\tilde Q_2=m\tilde Q_1$, one forms the two superpositions
 
@@ -88,7 +88,7 @@ $$
 \tilde{Ξ}_{L}\mapsto ϙ_L\tilde{Ξ}_{L},\qquad \tilde{Ξ}_{R}\mapsto ϙ_R\tilde{Ξ}_{R},
 $$
 
-with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix: they are parameters, and the bare Dirac mass is gauge invariant if and only if $ϙ_L=ϙ_R$.
+with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix: they are parameters, and the bare Dirac mass is invariant if and only if $ϙ_L=ϙ_R$.
 
 **The two rules are one right multiplication.** The action is $\tilde{Ξ}\mapsto\tilde{Ξ} b$, by the element
 
@@ -135,7 +135,7 @@ The reason the bound composite is unavailable is structural, and the QCD article
 
 **No three-dimensional carrier.** The algebra $\mathbb{B}$ is simple, so every **module** is a sum of copies of the unique simple one, of complex dimension two: every module has complex dimension $2k$. A colour triplet — a three-complex-dimensional internal space for a quark, on which an $\mathrm{SU}(3)$ must act complex-linearly — is not a module of $\mathbb{B}$, and the only three-dimensional complex carrier the algebra has is its own scalar-free part under the adjoint action, which carries no colour. The ceiling is a statement about the carrier, not about the arithmetic.
 
-**No confinement.** The framework has no non-perturbative formulation, no Wilson loop, no gauge-invariant regulator, no gauge-fixing principle, and no mass gap; the QCD article records confinement as an obstacle with **no mechanism proposed**, not merely an unproven one.
+**No confinement.** The framework has no non-perturbative formulation, no Wilson loop, no invariant regulator, no fixing the representative principle, and no mass gap; the QCD article records confinement as an obstacle with **no mechanism proposed**, not merely an unproven one.
 
 Consequently the neutron's defining structural facts — baryon number one, three constituent quarks, a colour singlet, a bound state with a mass gap above it — lie outside the framework. The framework cannot say what the neutron is made of, and it cannot explain why a colourless composite of charged constituents exists at all. Its own closest apparatus is the zero-divisor cone of $\mathbb{B}_{\Phi}$ and the non-abelian curvature it does contain, neither of which is a confinement mechanism. On the fermion-number question the framework is also not equipped: the parent's linear mass conserves the vector $\mathrm{U}(1)$, while the separate Majorana-type coupling built on the real structure $\flat$ reduces a continuous fermion-number phase to a sign on that interpretation; neither supplies the quark model's baryon number as a conserved $\mathrm{U}(1)$.
 
@@ -157,7 +157,7 @@ $$
 
 and its sign is negative. The nonzero value is direct evidence that the neutron is not structureless; in standard physics it arises from the charged quarks and their spin and orbital motion inside the colour-singlet bound state. The framework has neither the charged constituents nor the binding, so it cannot supply the moment, and its tree-level spin prediction is not merely incomplete on the neutron — read as a neutral point Dirac field it is **zero, against a measured number of order one in nuclear magnetons**. This is the sharpest place in the article where a framework statement meets a neutron measurement and does not match, and it matches the composite conclusion of the preceding section rather than contradicting it: the neutron is precisely the object for which the framework's structureless Dirac description is quantitatively wrong.
 
-The same boundary shows in the neutron's decay. The free neutron beta-decays with a mean lifetime of about $880$ s; the decay is a weak-interaction process, and the framework contains no weak chiral gauge structure — its centre is vector-like, and the chiral-fermion article records that a chiral gauge group is not derived. The lifetime is therefore outside the framework, as is the isospin near-degeneracy with the proton noted above. The mechanism by which a coupling becomes a lifetime — the complex energy pole of an unstable state and its width — is treated in *The Unstable State and the Complex Energy Pole in Biquaternionic Form*; what the framework lacks is the weak coupling itself, not the mechanism.
+The same boundary shows in the neutron's decay. The free neutron beta-decays with a mean lifetime of about $880$ s; the decay is a weak-interaction process, and the framework contains no weak chiral structure — its centre is vector-like, and the chiral-fermion article records that a chiral symmetry group is not derived. The lifetime is therefore outside the framework, as is the isospin near-degeneracy with the proton noted above. The mechanism by which a coupling becomes a lifetime — the complex energy pole of an unstable state and its width — is treated in *The Unstable State and the Complex Energy Pole in Biquaternionic Form*; what the framework lacks is the weak coupling itself, not the mechanism.
 
 ## Accounting: Derived, Represented, Outside
 
@@ -175,7 +175,7 @@ The article's finding is best stated as a ledger, in the manner of the electron 
 | Confinement and the bound-state mass gap | **Outside** | no mechanism, no non-perturbative apparatus |
 | Baryon number | **Outside** | not a framework quantum number |
 | Magnetic moment $\mu_n\neq0$ | **Outside** | measured; the framework's neutral Dirac value is $0$ |
-| Lifetime / beta decay | **Outside** | no weak chiral gauge structure |
+| Lifetime / beta decay | **Outside** | no weak chiral structure |
 | Isospin; $p$–$n$ near-degeneracy | **Outside** | approximate flavour $SU(2)$ not derived; the framework's $SU(2)$ is the sector's rotation algebra |
 | Any discriminator from another spin-$\tfrac12$ field | **Outside** | the algebra contains none |
 

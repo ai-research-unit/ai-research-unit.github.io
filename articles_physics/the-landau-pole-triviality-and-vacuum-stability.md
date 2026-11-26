@@ -100,7 +100,7 @@ The coupling along the way, which is the more useful table.
 
 **The physical statement.** $g_{\mathrm Y}$ grows by a third over thirty-eight e-folds. That is not a crisis; it is the mark of an abelian factor with matter that carries hypercharge. The growth is slow because $b_1$ is small and because logarithms are logarithms.
 
-Why the pole is nevertheless worth printing. Because it is the only place in the model where a coupling's growth is *unbounded*, and because the reason is structural rather than accidental. A non-abelian coupling has a negative $b$ because the gauge bosons themselves carry charge and screen the other way; an abelian coupling has no such self-interaction, so its $\beta$ function is the sum of matter contributions alone and is necessarily positive for the matter the model contains. Section *Why Abelian Is Different* makes that exact.
+Why the pole is nevertheless worth printing. Because it is the only place in the model where a coupling's growth is *unbounded*, and because the reason is structural rather than accidental. A non-abelian coupling has a negative $b$ because the connections themselves carry charge and screen the other way; an abelian coupling has no such self-interaction, so its $\beta$ function is the sum of matter contributions alone and is necessarily positive for the matter the model contains. Section *Why Abelian Is Different* makes that exact.
 
 What the framework says about it, stated here so it is not repeated. The framework's gauge principle produces a *central* abelian factor — this is the ceiling's constructive half, recorded in [the gauge-group article](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) — and a central factor has no self-interaction by definition. So the positive $b_1$ is not a choice the framework could have made differently. That is a real structural statement and it is the strongest thing this article has to say on the subject.
 
@@ -111,7 +111,7 @@ The diagrammatic reason. The $\beta$ function's sign is decided by the screening
 | Contribution | Sign of $b$ | Present for |
 |---|---|---|
 | Matter loop (fermions, scalars) | Positive: screening | All couplings |
-| Gauge-boson loop | Negative: antiscreening | Non-abelian only |
+| Connection loop | Negative: antiscreening | Non-abelian only |
 | Ghost loop | Negative: antiscreening | Non-abelian only |
 | Scalar loop | Positive | All couplings with scalars |
 
@@ -200,7 +200,7 @@ The $\beta$ function, term by term, at the weak scale. With $y_t=\sqrt2\,m_t/v=0
 |---|---|---|
 | $24\varpi_{\mathrm{cpl}}^2$ | Scalar self-coupling | $+0.400$ |
 | $-6y_t^4$ | Top quark | $-5.81$ |
-| $\tfrac38\left(2g^4+(g^2+g_{\mathrm Y}^2)^2\right)$ | Gauge bosons | $+0.250$ |
+| $\tfrac38\left(2g^4+(g^2+g_{\mathrm Y}^2)^2\right)$ | Connections | $+0.250$ |
 | $\varpi_{\mathrm{cpl}}\left(12y_t^2-9g^2-3g_{\mathrm Y}^2\right)$ | Mixed | $+0.98$ |
 | **Sum** | | $-4.18$ |
 | $\beta_{\varpi_{\mathrm{cpl}}}=\text{sum}/16\pi^2$ | | $-0.0265$ |
@@ -318,7 +318,7 @@ What is imported whole. The three $\beta$ functions, the coefficients, the two- 
 
 Three statements, one of which is a structural result.
 
-**First, and this is the real one: the Landau pole is structural.** The framework's gauge principle produces a central abelian factor. A central connection has no self-coupling, therefore no antiscreening, therefore $b_1>0$ for any matter content with the observed quantum numbers. So the hypercharge pole is not a numerical accident that a different model might avoid; it is what a central factor *is*. The consequence is uncomfortable: the framework's most native object, the abelian connection with its free parameter $ϙ$, is the one object that cannot be UV-complete alone. Nothing in the algebra repairs this, because the repair would require the abelian factor to become non-abelian, which is precisely what the ceiling forbids.
+**First, and this is the real one: the Landau pole is structural.** The framework's minimal coupling produces a central abelian factor. A central connection has no self-coupling, therefore no antiscreening, therefore $b_1>0$ for any matter content with the observed quantum numbers. So the hypercharge pole is not a numerical accident that a different model might avoid; it is what a central factor *is*. The consequence is uncomfortable: the framework's most native object, the abelian connection with its free parameter $ϙ$, is the one object that cannot be UV-complete alone. Nothing in the algebra repairs this, because the repair would require the abelian factor to become non-abelian, which is precisely what the ceiling forbids.
 
 Second: triviality is imported. The bound comes from the $\xi_{\mathrm{pot}}^4$ $\beta$ function, and the framework has no potential of its own from which a quartic's running could be derived. [The electroweak-symmetry-breaking article](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) records that the potential is standard input; so is its running.
 
@@ -381,7 +381,7 @@ The hypercharge coupling grows, because an abelian factor has no self-coupling a
 
 The quartic's growth bounds the Higgs mass from above at every cutoff: $1.344\times10^{-24}$ kg at $1.6\times10^{-7}$ J, $5.526\times10^{-25}$ kg at $1.6\times10^{-4}$ J, $2.567\times10^{-25}$ kg at the Planck scale. A larger cutoff gives a tighter bound, and at infinity the theory is free. The measured $2.230\times10^{-25}$ kg is $86.8\%$ of the Planck-scale ceiling.
 
-The three gauge couplings almost meet: $0.476$, $0.504$, $0.490$ at $M_{\mathrm{Pl}}$, a spread of $5.7\%$. They do not meet, and the framework cannot complete them, because the ceiling forbids any gauge algebra above dimension four.
+The three gauge couplings almost meet: $0.476$, $0.504$, $0.490$ at $M_{\mathrm{Pl}}$, a spread of $5.7\%$. They do not meet, and the framework cannot complete them, because the ceiling forbids any algebra above dimension four.
 
 The quartic itself turns negative, because $\beta_{\varpi_{\mathrm{cpl}}}$ is a difference of terms of order one: $-6y_t^4=-5.76$ against $+0.400+0.250+0.98$. That structure makes the answer a precision question, and the three-loop answer is $\varpi_{\mathrm{cpl}}=0$ at $1.6\times10^{1}$ J and $\varpi_{\mathrm{cpl}}(M_{\mathrm{Pl}})=-0.014$. A one-loop estimate gets the sign right and the scale wrong by orders of magnitude, which is why the corpus prints the order with the number.
 

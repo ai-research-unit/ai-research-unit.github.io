@@ -60,7 +60,7 @@ $$
 \mathcal{L}_{\mathrm{int}}=-\frac{g}{2\sqrt2}\sum_{\imath}\bigl(W^{+}_{\imath} J^{+}_{\imath}+W^{-}_{\imath} J^{-}_{\imath}\bigr).
 $$
 
-The interaction is a product of a gauge field and a current and nothing else: no derivative of the $W$, no derivative of the current. That absence is what makes the elimination of the next section so simple.
+The interaction is a product of a connection and a current and nothing else: no derivative of the $W$, no derivative of the current. That absence is what makes the elimination of the next section so simple.
 
 Why the current carries the $V-A$ structure. In the algebra the projection is the right multiplication by a unit imaginary vector, and the two chiral parts of $\tilde\Xi$ are the two eigenspaces of that insertion. The corpus's Dirac bilinear $\bar{\tilde\Xi}\gamma_{\imath}(1-\gamma_5)\tilde\Xi$ is the component form of the object, and the algebraic statement is that the weak vertex selects one of the two chiral halves. The selection is exact: it is a projection in the algebra and not an approximation to one.
 
@@ -124,7 +124,7 @@ The expansion parameter. The contact is the leading term of an expansion in $k^2
 
 The unitarity bound. The contact amplitude grows with energy, and at some energy it violates unitarity. The bound is $\sqrt{s}\lesssim 4\pi M_W/g$, which is the scale at which the $W$ must be restored. The bound is a consequence of the contact's dimension and is the technical statement of the theory's upper limit.
 
-Why the $W$'s own constraint does not appear. In the unitary gauge the $W$'s three polarizations are all physical and its constraint has been used to remove the fourth; the eliminated field carried no constraint into the contact. In a covariant gauge the Goldstone would appear in the contact's corrections, and the corrections would be gauge dependent while the rates are not.
+Why the $W$'s own constraint does not appear. In the unitary gauge the $W$'s three polarizations are all physical and its constraint has been used to remove the fourth; the eliminated field carried no constraint into the contact. In a covariant gauge the Goldstone would appear in the contact's corrections, and the corrections would be representative-dependent while the rates are not.
 
 **The bound is below the Planck scale and above the weak scale.** The window in which the contact is both accurate and unitary is wide, from nuclear momenta to the $W$ mass, and that width is why the four-fermion theory was a complete description for forty years.
 

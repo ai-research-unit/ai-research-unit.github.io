@@ -5,7 +5,7 @@ The limit in one sentence. Write the parent's coupled polar action, delete the s
 
 The parent prints the action in the mechanical variables. [The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-coupled-klein-gordon-equation-in-polar-variables.html) writes the action first in the general element with the covariant logarithmic derivative and then for the central field, where the connection appears in the phase's two brackets and nowhere else. The scale's block is untouched by the coupling, so the limit here is the free limit applied to a shifted phase.
 
-The deletion is the free deletion, and it is one Lorentz scalar. $(\partial_{r'_{t}}\varrho)^{2}-\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ is invariant under boosts of the material sector, and the connection does not enter it. The limit therefore commutes with the Lorentz group and with the gauge group, because the deleted block is a scalar of both.
+The deletion is the free deletion, and it is one Lorentz scalar. $(\partial_{r'_{t}}\varrho)^{2}-\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ is invariant under boosts of the material sector, and the connection does not enter it. The limit therefore commutes with the Lorentz group and with the symmetry group, because the deleted block is a scalar of both.
 
 The coupling survives the truncation entire, and that is this article's point. The parent splits the interaction into a piece linear in the potential times the free phase rate and a piece quadratic in the potential with no phase. Both are order zero, because neither carries a derivative of the scale. So the truncation deletes no part of the interaction, and a reader who expected the potential to enter as a perturbation finds it in the leading term twice.
 
@@ -63,7 +63,7 @@ with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $m^{2}c^{2}=h^{2}\nu_m^{2}$; th
 
 The action is degenerate in the scale. No term carries a derivative of $\varrho$, so the scale's variation is algebraic and its momentum vanishes. The scale is a Lagrange multiplier of one constraint, and the constraint is the mechanical mass shell.
 
-The deletion is invariant under both groups. $(\partial_{r'_{t}}\varrho)^{2}-\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ is a Lorentz scalar of the material sector, and it contains no phase and no potential, so it is invariant under the gauge group as well. Deleted and transformed commute for both, and the truncated action is covariant and gauge invariant because the deleted object was.
+The deletion is invariant under both groups. $(\partial_{r'_{t}}\varrho)^{2}-\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ is a Lorentz scalar of the material sector, and it contains no phase and no potential, so it is invariant under the symmetry group as well. Deleted and transformed commute for both, and the truncated action is covariant and invariant because the deleted object was.
 
 The contrast with the first-order families is one line. There the deleted term is $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ alone, which no boost preserves, so the limit there is defined in a frame and its action is the action of a fluid with a distinguished time. Here the limit is defined on the manifold, and the truncated action's only time is the sector's.
 
@@ -73,7 +73,7 @@ The truncated action differs from the parent by the scale's kinetic term, which 
 
 Restoring it adds the quantum potential. Varying the parent with the block present gives the truncated equation plus a divergence of a gradient over the density. The correction is a quantum term with the density in its denominator, so it is large where the density is small and it is the reason the truncated theory cannot describe a nodal region.
 
-The error is amplitude-only and gauge invariant. The deleted block contains no phase and no connection, and the scale is gauge invariant. The correction therefore cannot move the transport equation, cannot move the current, and cannot break gauge covariance, and it commutes with a boost because the block is a Lorentz scalar.
+The error is amplitude-only and invariant. The deleted block contains no phase and no connection, and the scale is invariant. The correction therefore cannot move the transport equation, cannot move the current, and cannot break covariance, and it commutes with a boost because the block is a Lorentz scalar.
 
 What the coupling does to the error. Nothing, and that is worth stating: the connection sits inside the covariant bracket and the deleted block is the scale's gradient squared, which the connection does not enter. The error is the same functional of the amplitude in the coupled theory as in the free one, which is why the coupled article's error section is one paragraph long.
 
@@ -87,7 +87,7 @@ The mass shell on the truncated class. The scale's variation gives a constant am
 
 The currents, unchanged. Density, charge and energy are first integrals of the transport, and the transport is untouched. Their expressions are the parent's, and the coupling enters them only where it entered before — through the shifted frequency in the energy and not at all in the charge.
 
-The gauge covariance. The truncated action is a sum of gauge-covariant blocks and the deleted block was one too, so the truncation commutes with a gauge transformation. The truncated theory is gauge invariant, which the article states as a separate section rather than as a remark, because it is the property that fails in the first-order family.
+The covariance. The truncated action is a sum of covariant blocks and the deleted block was one too, so the truncation commutes with a local transformation. The truncated theory is invariant, which the article states as a separate section rather than as a remark, because it is the property that fails in the first-order family.
 
 The covariance under boosts. The deleted block is a scalar, so the truncation commutes with a boost. The truncated coupled theory is Lorentz covariant, and the article contrasts this with the family whose deleted term is a spatial gradient and whose truncation therefore singles out a frame.
 
@@ -120,9 +120,9 @@ The constraint is the truncated theory's Hamiltonian. A degenerate Lagrangian of
 ## The Constraints the Action Imposes: Gauge Invariance and the Deletion
 The invariants. The truncated action is built from two combinations, $\left(\partial_{r'_{t}}S+q\omicron_{\mathrm{pot}}/c\right)$ and $\vec\nabla_\Phi S-q\vec A$, and both are unchanged under the local phase translation with the potential's shift. The action is invariant term for term, the quadratic piece supplying the compensation for the potential's square.
 
-The deletion commutes with the transformation, and the reason is structural. The deleted block is built from the scale, the scale is inert under the gauge group, and a gauge invariant object removed from a gauge invariant action leaves a gauge invariant action. No computation is needed and none was done: the statement is a consequence of the block's content.
+The deletion commutes with the transformation, and the reason is structural. The deleted block is built from the scale, the scale is inert under the symmetry group, and an invariant object removed from an invariant action leaves an invariant action. No computation is needed and none was done: the statement is a consequence of the block's content.
 
-Why this matters for the limit's meaning. The non-quantum limit is supposed to be a statement about the field and not about the chart. The covariance and the gauge invariance of the deletion are what make that true, and they are the two properties the first-order families cannot have in the same form.
+Why this matters for the limit's meaning. The non-quantum limit is supposed to be a statement about the field and not about the chart. The covariance and the local invariance of the deletion are what make that true, and they are the two properties the first-order families cannot have in the same form.
 ## The Structural Consequence: Varying the Phase: the Covariant Transport, Unchanged
 The phase's variation.
 
@@ -134,7 +134,7 @@ the covariant transport equation, with the mechanical momentum in the spatial di
 
 It is identical on the full action. The deleted block carries no phase, so both derivatives of the Lagrangian with respect to $\theta_{\mathrm{pha}}$ are one expression, and no rearrangement is needed to see it. The transport equation is not an order of an expansion; it is invariant under the deletion.
 
-The conjugate momentum is the mechanical one, and the quadratic piece is what makes it so. Differentiating the spatial bracket with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns $-2\varrho^{2}\left(\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{2\pi q}{h}\vec A\right)$, that is $\rho\vec\pi$ up to $\frac{h}{2\pi}$. **The interaction's linear piece is what shifts the conjugate momentum from the canonical to the mechanical one**, and the quadratic piece is what keeps the shift consistent under a gauge transformation.
+The conjugate momentum is the mechanical one, and the quadratic piece is what makes it so. Differentiating the spatial bracket with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns $-2\varrho^{2}\left(\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{2\pi q}{h}\vec A\right)$, that is $\rho\vec\pi$ up to $\frac{h}{2\pi}$. **The interaction's linear piece is what shifts the conjugate momentum from the canonical to the mechanical one**, and the quadratic piece is what keeps the shift consistent under a local transformation.
 
 The pair the truncated action produces is charged relativistic dust. A flow along the mechanical momentum, a density carried by it, no pressure, and a normalisation that is the mechanical shell. The parent's own phrase for the free case is irrotational dust; with the connection the flow is still dust and it is no longer irrotational in the kinematic sense, which is the equation-route companion's vorticity split.
 ## The Noether Currents: Density, Charge and Energy
@@ -150,9 +150,9 @@ What the deletion does to the two. The deleted term is a gradient of the scale, 
 ## What the Principle Adds and What It Relabels: By the Variational Route
 Three things, and the second is the coupling's.
 
-*The deletion is a scalar of both groups.* Covariance and gauge invariance of the limit are properties of the deleted block, not estimates about solutions.
+*The deletion is a scalar of both groups.* Covariance and local invariance of the limit are properties of the deleted block, not estimates about solutions.
 
-*Both interaction pieces are leading, and the table shows it.* A reader who thought the potential enters as a perturbation can see that the linear and quadratic pieces sit in blocks of order zero, and that the quadratic one is required by boundedness and by gauge invariance. That is the cleanest statement in the corpus of why the coupling cannot be expanded.
+*Both interaction pieces are leading, and the table shows it.* A reader who thought the potential enters as a perturbation can see that the linear and quadratic pieces sit in blocks of order zero, and that the quadratic one is required by boundedness and by local invariance. That is the cleanest statement in the corpus of why the coupling cannot be expanded.
 
 *The scale's lost dynamics is visible as degeneracy.* The full action has a second-order equation for $\varrho$; the truncated one has a constraint. The quantum potential is the whole of the scale's dynamics, so removing it is not removing a correction from an equation but removing a field's kinetic term from an action.
 
@@ -166,11 +166,11 @@ What it does not add.
 ## Summary
 The parent's coupled central action has four blocks: the covariant phase bracket, the scale's kinetic term, and the mass term, with the interaction distributed inside the first. One power of $\epsilon=1/(\pi_{\Phi}L)$ goes to each derivative of the scale, so the scale's block is order two and everything else is order zero.
 
-The limit is the deletion of that block, and the block is a Lorentz scalar with no phase and no potential, so the deletion commutes with boosts and with gauge transformations. **The truncated action is covariant and gauge invariant because the deleted object was.**
+The limit is the deletion of that block, and the block is a Lorentz scalar with no phase and no potential, so the deletion commutes with boosts and with local transformations. **The truncated action is covariant and invariant because the deleted object was.**
 
 Varying the scale gives the mechanical mass shell as an algebraic constraint and varying the phase gives the covariant transport equation, unchanged term for term. The truncated action is $\varrho^{2}\left[\left(\partial_{r'_{t}}S+q\omicron_{\mathrm{pot}}/c\right)^{2}-\lvert\vec\pi\rvert^{2}-m^{2}c^{2}\right]$, degenerate in the scale, and its content is charged relativistic dust with the mechanical shell as its Hamiltonian.
 
-The coupling survives entire: both interaction pieces are order zero, the quadratic one is required by boundedness and by gauge invariance, and the truncation deletes none of the interaction. The variational route's blind spots are the second parameter and the slow-connection hypothesis, neither of which a term count can see.
+The coupling survives entire: both interaction pieces are order zero, the quadratic one is required by boundedness and by local invariance, and the truncation deletes none of the interaction. The variational route's blind spots are the second parameter and the slow-connection hypothesis, neither of which a term count can see.
 ## Summary of Notation
 | Symbol | Meaning |
 |---|---|
@@ -205,6 +205,6 @@ The first row was checked for the sign and for the interaction's coefficients. K
 
 The two interaction pieces were checked against the parent's expansion. Expanding the parent's bracket returns the free kinetic term, the term linear in the potential multiplying the free phase rate, and the term quadratic in the potential with no phase; the coefficients agree with the parent's display term for term, and all three were confirmed to carry no derivative of the scale.
 
-The covariance and the gauge invariance of the deletion were checked as identities. The block is the sector's contraction of one gradient with itself and contains neither the phase nor the potential, so it is a scalar of both groups and its removal preserves both invariances.
+The covariance and the local invariance of the deletion were checked as identities. The block is the sector's contraction of one gradient with itself and contains neither the phase nor the potential, so it is a scalar of both groups and its removal preserves both invariances.
 
 What was not checked. No boundary-value problem was solved, no constraint analysis beyond the primary one was performed, and no numerical solution of the truncated system was run. The claims are about blocks and identities, and both were verified as algebra.

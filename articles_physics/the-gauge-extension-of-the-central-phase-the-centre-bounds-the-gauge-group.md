@@ -28,19 +28,19 @@ properties are the whole of its relevance.
 - It is **the whole continuous symmetry of the algebra that acts uniformly**, because the centre is
   one-dimensional and every uniform continuous symmetry must be central.
 
-The gauge principle asks for the local version: a phase $\theta_{\mathrm{cen}}(x)$ that depends on the point, and a
+The minimal coupling asks for the local version: a phase $\theta_{\mathrm{cen}}(x)$ that depends on the point, and a
 connection $\tilde{A}_{\Phi,\imath}$ that transforms so that the covariant derivative
 $\partial/\partial x_{\imath} - iϙ\tilde{A}_{\Phi,\imath}$ is phase-covariant. The framework has the phase and not the connection,
 and the reason is structural rather than technical: a connection is a field valued in the Lie algebra of the
 group, and the Lie algebra of the central phase is the one-dimensional span of $ie_t$, which is central. A
 central generator produces a field that commutes with everything, so the "connection" it generates cannot
 couple to anything and the covariant derivative collapses to the ordinary one. A gauged central phase is
-therefore no gauge theory at all: an abelian gauge field needs a matter field that transforms
+therefore no gauge theory at all: an abelian connection needs a matter field that transforms
 non-trivially, and the framework's matter lives in modules on which a central phase acts by a scalar.
 
 ## The Centre and the Gauge Group
 
-With the obstruction stated, the reason the gauge group stays at $\mathrm{U}(2)$ follows. The intrinsic gauge group of the
+With the obstruction stated, the reason the symmetry group stays at $\mathrm{U}(2)$ follows. The intrinsic symmetry group of the
 algebra is the $*$-unitary slice $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$, the central product
 $(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, and the abelian factor is exactly the central phase. The structure of
 the group is the structure of the centre:
@@ -57,7 +57,7 @@ A larger group would need generators outside the centre and outside the real-qua
 are none: the anti-Hermitian sector of $\mathbb{B}$ has real dimension four, giving $\mathfrak{u}(2)$ exactly,
 and the Cartan decomposition of that Lie algebra has the compact part $\mathfrak{u}(2)$ and no more. So the
 ceiling is not a limit of the framework's ambitions but a computation of the algebra, and the route past it
-is an enlarged carrier — $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, whose intrinsic gauge group is $\mathrm{U}(2n)$
+is an enlarged carrier — $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, whose intrinsic symmetry group is $\mathrm{U}(2n)$
 and which contains $SU(3)$ for $n\ge2$, as the ceiling article computes — and not a new interpretation of
 $\mathbb{B}$. What the enlargement changes is the **algebra** and not its centre: every matrix algebra over
 $\mathbb{C}$ has centre the scalars, so the additional generators are non-central, and it is their presence,
@@ -81,15 +81,15 @@ so a shift by $2\pi i$ in the phase and a shift by $2\pi$ in the rotation are ea
 Two interpretations of the extension problem are consistent with the algebra, and the article states both and
 chooses neither.
 
-Reading A — the central extension is the whole extension. The gauge structure of the framework is the
+Reading A — the central extension is the whole extension. The structure of the framework is the
 central product $\mathrm{U}(2)$ and nothing else, and the physically meaningful statement is that the framework's
-gauge group is the extension of $SU(2)$ by the central phase. On this interpretation the framework is a
+symmetry group is the extension of $SU(2)$ by the central phase. On this interpretation the framework is a
 $\mathrm{U}(2)$-gauge theory in which the abelian factor is the algebra's centre, hypercharge is the central phase and
-weak isospin is the module action, and the ceiling is a result about the gauge group of the algebra rather
+weak isospin is the module action, and the ceiling is a result about the symmetry group of the algebra rather
 than a defect. The interpretation is the framework's own position and is labelled as an interpretation: the algebra fixes
 the group and not the names of its factors.
 
-Reading B — the central phase is the trace of a local structure. The gauge structure the framework
+Reading B — the central phase is the trace of a local structure. The structure the framework
 should carry is a **local** one, and the central phase is the shadow of a connection that the algebra does
 not contain. On this interpretation the interesting object is the obstruction itself: a local phase gauge theory
 requires a non-central generator, the algebra has none, and the minimal carrier on which the obstruction
@@ -104,14 +104,14 @@ question is being asked.
 
 **The hypercharge clause of Reading A is false, and the disproof is one paragraph.** Write $\mathfrak u(2)=\mathfrak{su}(2)\oplus\mathfrak u(1)$ by the trace decomposition. Any Lie-algebra isomorphism onto that direct sum carries the centre onto the centre, because the centre is an invariant of the algebra and not of a chosen splitting; the centre of $\mathfrak u(2)$ is the line $\mathbb R\,ie_t$, and the line is one-dimensional. A connection valued in $\mathfrak u(1)$ therefore couples to every field through the single number that multiplies $ie_t$. Hypercharge requires six values on one generation, with $Y_L\neq Y_R$ for a single species, and a map that sends every element to a multiple of one generator cannot produce them.
 
-So the two readings survive, with one clause removed. Reading A remains true as a statement about the framework's group: the gauge group is $\mathrm U(2)$, the abelian factor is the central phase, and the ceiling is exact. What it cannot also claim is that this phase *is* hypercharge. Reading B is untouched, since it already denies that the algebra contains the needed structure.
+So the two readings survive, with one clause removed. Reading A remains true as a statement about the framework's group: the symmetry group is $\mathrm U(2)$, the abelian factor is the central phase, and the ceiling is exact. What it cannot also claim is that this phase *is* hypercharge. Reading B is untouched, since it already denies that the algebra contains the needed structure.
 
 Where the computation is. The refusal is computed, with the assignment table and the anomaly conditions, in [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html), §*Why the Assignment Is Not Derivable Here*. That article reaches the same conclusion from the other end: the framework supplies the algebra of the group and not the assignment, and one central charge cannot supply two numbers for one species.
 
 ## What Is Not Claimed
 
 - The article does not claim that the central phase is **gaugeable** in the sense of producing a
-  propagating abelian gauge field. It claims that the framework's continuous symmetry is the central phase
+  propagating abelian connection. It claims that the framework's continuous symmetry is the central phase
   and that the algebra supplies no non-central generator with which to localise it.
 - It does not claim that the ceiling is **permanent**. The ceiling is a statement about $\mathbb{B}$; the
   enlarged carriers of the ceiling article pass it, and the price is stated there and not repeated here.
@@ -121,14 +121,14 @@ Where the computation is. The refusal is computed, with the assignment table and
 
 ## Physical Readings
 
-- **The centre is the gauge group's abelian factor.** The interpretation is that the algebra's one continuous
-  uniform symmetry is the abelian factor of its intrinsic gauge group, so a framework whose only
+- **The centre is the symmetry group's abelian factor.** The interpretation is that the algebra's one continuous
+  uniform symmetry is the abelian factor of its intrinsic symmetry group, so a framework whose only
   uniform symmetry is a phase is a framework with a $\mathrm{U}(1)$ factor and no more. Owner: *The Centre of the
   Biquaternion Algebra as the Classical Sector*.
 - Compactness is the discreteness of the charge. The interpretation is that the charge carried by the central
   phase is discrete because the phase is a circle, which is the same mechanism as the compact group of the
   gauge ceiling. Owner: *The Physical Interpretation of the 12 Products*.
-- Non-centrality is non-locality's algebraic price. The interpretation is that a local gauge symmetry costs a
+- Non-centrality is non-locality's algebraic price. The interpretation is that a local symmetry costs a
   non-central generator, so the framework's globality is the price it pays for having a scalar centre, and
   the enlargement is the price it would pay to escape. Owners: *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* and *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*.
 
@@ -137,7 +137,7 @@ Where the computation is. The refusal is computed, with the assignment table and
 The framework's continuous symmetry is the central phase $\exp(i\theta_{\mathrm{cen}})e_t\cong \mathrm{U}(1)$, central, compact and
 global, and it is the whole of the algebra's uniform symmetry. Its gauge extension is blocked by centrality:
 a local phase needs a connection valued in a non-central generator, the algebra's only uniform generator is
-the central $ie_t$, and a central connection couples to nothing. The intrinsic gauge group is the $*$-unitary
+the central $ie_t$, and a central connection couples to nothing. The intrinsic symmetry group is the $*$-unitary
 slice $\mathrm{U}(2)=(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, whose abelian factor is the central phase and whose size is
 fixed by the four-dimensional anti-Hermitian sector; a larger group requires an enlarged carrier with
 non-central generators, not a larger centre. Two interpretations are stated and neither is chosen: that the central
@@ -150,7 +150,7 @@ does not contain.
 |---|---|
 | $\exp(i\theta_{\mathrm{cen}})e_t$ | the central phase, the group $\mathrm{U}(1)$ of central unitaries |
 | $ie_t$ | the generator of the central phase, central and of one real dimension |
-| $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$ | the $*$-unitary slice, the algebra's intrinsic gauge group |
+| $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$ | the $*$-unitary slice, the algebra's intrinsic symmetry group |
 | $(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$ | the structure of the slice, with the abelian factor the central phase |
 | $\mathfrak{u}(2)$ | the anti-Hermitian sector of the algebra, the Lie algebra of the slice |
 

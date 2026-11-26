@@ -270,7 +270,7 @@ The vector identity has the average momentum in the convection slot and the tran
 
 The two terms of the momentum-space identity have a direct interpretation, and that is why the decomposition is useful.
 
-The **convection term** is $\frac{(p+p_2)_{\imath}}{2\,m\,c}\bar w_2w$. It is the current of a charged scalar of mass $m$ and momentum $\tfrac12(p+p_2)$: the orbital part. It depends on the average four-momentum, it reduces to $\bar w_2w\,v_{\imath}$ in the non-relativistic limit, and it is the piece protected by gauge invariance.
+The **convection term** is $\frac{(p+p_2)_{\imath}}{2\,m\,c}\bar w_2w$. It is the current of a charged scalar of mass $m$ and momentum $\tfrac12(p+p_2)$: the orbital part. It depends on the average four-momentum, it reduces to $\bar w_2w\,v_{\imath}$ in the non-relativistic limit, and it is the piece protected by local invariance.
 
 The **spin term** is $\frac{i}{m\,c}\sum_{\jmath}\varepsilon_{\jmath}(p_2-p)_{\jmath}\bar w_2\Sigma_{\imath\jmath}w$. It depends on the momentum **transfer** and on the tensor bilinear, and it is the piece that carries the magnetic moment: a spin density produces a current only where its density varies, and the variation is what the transfer measures.
 

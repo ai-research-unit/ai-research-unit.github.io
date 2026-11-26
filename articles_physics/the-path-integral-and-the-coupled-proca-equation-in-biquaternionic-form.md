@@ -12,7 +12,7 @@ Four findings, and the first is a change of carrier.
 
 *Third, the constraint is covariant and exact, and the ordinary Lorenz condition is not.* The curvature term of the covariant d'Alembertian is a pure vector and has no scalar part, so the trace of the coupled equation forces the covariant divergence to vanish with no term to spare. The ordinary divergence then differs from it by a term bilinear in the connection. The constraint survives in the form the coupling can preserve, and it is deformed in the form it cannot.
 
-*Fourth, the field acquires a charge.* The free field is real, and a real field has no phase to rotate, so the free theory had one current and no charge. The coupled carrier is complex, the phase is a symmetry of the mass term as well as of the field term, and the Noether current exists. The measure gains a circle at each point; the circle's Jacobian is one; and the gauge invariance of the integral is exact at every step, with no link and no ghost.
+*Fourth, the field acquires a charge.* The free field is real, and a real field has no phase to rotate, so the free theory had one current and no charge. The coupled carrier is complex, the phase is a symmetry of the mass term as well as of the field term, and the Noether current exists. The measure gains a circle at each point; the circle's Jacobian is one; and the local invariance of the integral is exact at every step, with no link and no ghost.
 
 What is not claimed. The equation is the standard minimally coupled Proca equation, the integral is the standard one, and no new solution or prediction is offered. The algebra's contribution is that the coupling is one element, that the obstruction to it is a closure statement, and that the three–one split and the constraint fall out of two traces.
 
@@ -38,7 +38,7 @@ So the integral runs over $\mathbb{B}$, and the free integral is its real slice.
 
 The mass term is what makes the enlarged carrier acceptable, and the two facts are one. On the eight-dimensional carrier the invariant length $|a'_t|^{2}-|\vec A|^{2}$ is real and invariant under the phase, and the mass term built from it is a genuine mass term. On the four-dimensional carrier the mass term $\langle\tilde A_\Phi\rangle_\natural$ is real because the field is real, and it is indefinite because the metric is. **The carrier that closes under the coupling is the carrier on which the mass term is invariant**, exactly as the coupled equation article proves from the equation's side.
 
-No gauge-fixing determinant is introduced, because the connection is external. The article treats $\tilde A_\Phi$ as a fixed background. That keeps the integral Gaussian in the Proca field, keeps the measure flat, and puts the Faddeev–Popov question out of scope — *The Gauge Field Path Integral in Biquaternionic Form* is where a dynamical connection's integral is treated. The Proca mass term still lifts the longitudinal zero mode, so even a dynamical connection would not need gauge fixing of the Proca field; what it would need is gauge fixing of the connection, which is a different object.
+No fixing the representative determinant is introduced, because the connection is external. The article treats $\tilde A_\Phi$ as a fixed background. That keeps the integral Gaussian in the Proca field, keeps the measure flat, and puts the Faddeev–Popov question out of scope — *The Gauge Field Path Integral in Biquaternionic Form* is where a dynamical connection's integral is treated. The Proca mass term still lifts the longitudinal zero mode, so even a dynamical connection would not need fixing the representative of the Proca field; what it would need is fixing the representative of the connection, which is a different object.
 
 ## The Exponent
 
@@ -125,7 +125,7 @@ $$
 
 the covariant Lorenz condition, forced by the equation and not imposed on it.
 
-What is not forced is the ordinary divergence. The covariant divergence and the ordinary one differ by a term bilinear in the connection, so a field satisfying the covariant condition need not satisfy the ordinary one. The integral inherits this asymmetry: its saddle obeys the covariant condition, and the ordinary divergence of the saddle is a functional of the background. Nothing in the integral prefers the ordinary condition, which is the point — the ordinary condition is not gauge covariant and cannot be a property of the theory.
+What is not forced is the ordinary divergence. The covariant divergence and the ordinary one differ by a term bilinear in the connection, so a field satisfying the covariant condition need not satisfy the ordinary one. The integral inherits this asymmetry: its saddle obeys the covariant condition, and the ordinary divergence of the saddle is a functional of the background. Nothing in the integral prefers the ordinary condition, which is the point — the ordinary condition is not covariant and cannot be a property of the theory.
 
 The constraint is what the saddle's longitudinal part is, and the mass is what it costs. In the transverse-longitudinal split the saddle is
 
@@ -172,7 +172,7 @@ Adds, second, the exact survival of the three–one split. The coupling deforms 
 
 Adds, third, the asymmetry between the covariant and the ordinary constraint. The integral's saddle obeys the covariant condition exactly and the ordinary one only up to a bilinear term. The integral cannot prefer a condition that is not covariant, and this is why the ordinary Lorenz condition never appears as an equation of the coupled theory.
 
-Adds, fourth, the charge as a consequence of the carrier. The free field's reality is the absence of a phase; the enlarged carrier has one; the phase is the charge's coordinate. The integral's measure acquires a circle per point with unit Jacobian, and the exactness of the gauge invariance is a consequence of the measure's flatness rather than of a discretisation rule.
+Adds, fourth, the charge as a consequence of the carrier. The free field's reality is the absence of a phase; the enlarged carrier has one; the phase is the charge's coordinate. The integral's measure acquires a circle per point with unit Jacobian, and the exactness of the local invariance is a consequence of the measure's flatness rather than of a discretisation rule.
 
 **Does not add a value.** The coupled equation is the standard one, the determinant factorisation is the free one with the covariant operator in place, and the one-loop effective action is the standard one.
 
@@ -184,7 +184,7 @@ Does not treat a dynamical connection, and does not decide the second quantisati
 
 2. Does the constraint's deformation have an integral consequence? The ordinary divergence of the saddle is a functional of the background. Whether that functional is a total derivative, and whether it can be written as a surface term of the effective action, is open.
 
-3. What happens when the connection is itself quantised? Then the carrier's double is joined by the connection's own gauge orbit, the Faddeev–Popov construction applies to the connection, and the Proca determinant becomes a functional in the path integral over the connection. Whether the factorisation survives that integration is the interesting question, and it is not answered here.
+3. What happens when the connection is itself quantised? Then the carrier's double is joined by the connection's own orbit, the Faddeev–Popov construction applies to the connection, and the Proca determinant becomes a functional in the path integral over the connection. Whether the factorisation survives that integration is the interesting question, and it is not answered here.
 
 4. Is there a non-abelian version? The mixed term is the algebra's form of the commutator term a non-abelian field strength carries, so the coupled Proca equation is already half-way to a non-abelian structure. Whether the split survives a non-abelian connection, where the curvature is no longer a pure vector of a commutative algebra, is open.
 
@@ -196,7 +196,7 @@ The coupled Proca functional integral runs over a different configuration space 
 
 The action is quadratic in the Proca field for a fixed connection, with the free density, a bilinear mixed term and a term quadratic in the connection; the expansion was checked to $3.6\times10^{-15}$ and the mixed term's scalar part vanishes identically. The operator is the free operator with the covariant d'Alembertian, and it splits as $((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi-4\pi^{2}\nu_m^{2})P_T-4\pi^{2}\nu_m^{2}P_L$: the coupling deforms the transverse cube and leaves the longitudinal eigenvalue at $-\nu_m^{2}$, so the determinant is the covariant transverse determinant cubed times the same single factor. The covariant Lorenz condition is forced exactly, because the curvature is a pure vector and has no scalar part; the ordinary condition is not, and the difference is bilinear in the connection.
 
-The coupled field has a charge, because the enlarged carrier has a phase and the mass term is phase-invariant; the measure gains a circle per point with unit Jacobian, and the gauge invariance is exact at every step with no link and no ghost. The one-loop effective action is three times a charged scalar's plus a constant.
+The coupled field has a charge, because the enlarged carrier has a phase and the mass term is phase-invariant; the measure gains a circle per point with unit Jacobian, and the local invariance is exact at every step with no link and no ghost. The one-loop effective action is three times a charged scalar's plus a constant.
 
 ## Summary of Notation
 
@@ -212,7 +212,7 @@ The coupled field has a charge, because the enlarged carrier has a phase and the
 | $P_{\mathrm{gco}}=((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2})P_T^{\mathrm{gco}}-4\pi^{2}\nu_m^{2}P_L^{\mathrm{gco}}$ | The coupled split |
 | $\det P_{\mathrm{gco}}=(\det((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2}))^{3}(-4\pi^{2}\nu_m^{2})$ | The determinant; coupling deforms only the cube |
 | $D_{\mathrm{gco}}\tilde A=\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ | The covariant Lorenz condition |
-| $e^{\frac{2\pi iϙ\Gamma}{h}}$ | The gauge transformation; unit Jacobian |
+| $e^{\frac{2\pi iϙ\Gamma}{h}}$ | The local transformation; unit Jacobian |
 | $3\cdot\frac12\mathrm{Tr}\log((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-4\pi^{2}\nu_m^{2})$ | The one-loop term; three times a scalar's |
 
 ## Further Reading

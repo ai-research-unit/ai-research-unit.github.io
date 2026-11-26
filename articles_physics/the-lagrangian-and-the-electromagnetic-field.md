@@ -16,7 +16,7 @@ with $\tilde A_\Phi\in\mathbb{B}_\Phi$ the potential, $\tilde F$ the field stren
 
 Three results, and one of them is a warning.
 
-*First, the action is one term.* $S=\int\mathrm{d}^{4}r\,\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, with the field strength inside it, so that the potential enters only through $\tilde F$. That single placement is what makes the gauge orbit visible from the action rather than from the equation.
+*First, the action is one term.* $S=\int\mathrm{d}^{4}r\,\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, with the field strength inside it, so that the potential enters only through $\tilde F$. That single placement is what makes the orbit visible from the action rather than from the equation.
 
 *Second, the variation gives both halves of Maxwell.* Varying $\tilde A_\Phi$ gives $\tilde\nabla_\Phi\tilde F=0$ in the free case and $-Z\tilde J_\Phi$ once a matter action is added; the scalar part of the same equation is Gauss's law, and it is a constraint on the initial data and not an evolution equation.
 
@@ -57,7 +57,7 @@ Three properties, each one line.
 
 *It is real.* $\tilde F$ is a pure vector with complex coefficients, and $\mathrm{Sc}(\tilde F\tilde F)$ is real because it is a symmetric bilinear of one element evaluated in the scalar part, where the central $i$ enters squared. Equivalently $\tilde F\tilde F$ is invariant under both conjugations, since $\tilde F^{\natural}=\tilde F$ for a vector and $\tilde F^{*}$ conjugates the coefficients' $i$ twice in the product.
 
-*It is gauge invariant.* The shift $\tilde A_\Phi\mapsto\tilde A_\Phi+\tilde\nabla_\Phi\Lambda$ leaves $\tilde F$ unchanged, because $\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Lambda\bigr)=0$: the conjugate gradient of a gradient is symmetric, and a symmetric element has no vector part.
+*It is invariant.* The shift $\tilde A_\Phi\mapsto\tilde A_\Phi+\tilde\nabla_\Phi\Lambda$ leaves $\tilde F$ unchanged, because $\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Lambda\bigr)=0$: the conjugate gradient of a gradient is symmetric, and a symmetric element has no vector part.
 
 *It carries no mass.* A term $\tfrac12m^{2}\mathrm{Re}\,\mathrm{Sc}(\tilde A_\Phi\tilde A_\Phi)$ would break the invariance above and is the Proca article's subject; this article has no such term, and that absence is the difference between the two parents.
 
@@ -93,11 +93,11 @@ $$
 
 the parent's homogeneous equation. Adding a matter action whose variation with respect to $\tilde A_\Phi$ is $-Z\,\tilde J_\Phi$ gives the inhomogeneous one. The constant $Z$ is therefore not a choice of this article: it is the normalisation that makes the source the current, and the coupled articles verify it by deriving the current from the matter action.
 
-What the variation does not produce. It does not produce a condition on $\tilde A_\Phi$ alone, because the action depends on the potential only through a gauge-invariant combination; the longitudinal part is invisible to it, and that invisibility is the next section but two.
+What the variation does not produce. It does not produce a condition on $\tilde A_\Phi$ alone, because the action depends on the potential only through an invariant combination; the longitudinal part is invisible to it, and that invisibility is the next section but two.
 
 ## The Constraints the Action Imposes
 
-**Gauss's law is the constraint, and the gauge orbit is the redundancy.** The two are different objects and the article keeps them apart.
+**Gauss's law is the constraint, and the orbit is the redundancy.** The two are different objects and the article keeps them apart.
 
 The constraint. Take the scalar part of the field equation. The left side's scalar part is $\mathrm{Sc}(\tilde\nabla_\Phi\tilde F)$, and for a pure-vector $\tilde F$ it equals a divergence,
 
@@ -109,7 +109,7 @@ $$
 
 up to the factor $i$ that the time slot carries. So the scalar part of $\tilde\nabla_\Phi\tilde F=0$ is $\vec\nabla_\Phi\cdot\vec D=0$: Gauss's law without sources, a condition on the initial data at every time and not an equation that determines a rate. With a source it reads $\vec\nabla_\Phi\cdot\vec D=\rho$, and the charge density is then not free either: taking the divergence of Ampère's law and substituting gives $\partial\rho/\partial t'+\vec\nabla_\Phi\cdot\vec J=0$, the integrability condition the parent states.
 
-The gauge orbit. The action is invariant under $\tilde A_\Phi\mapsto\tilde A_\Phi+\tilde\nabla_\Phi\Lambda$ for any real scalar $\Lambda$. Two potentials in the same orbit are one field configuration, and the action does not select a representative. Choosing one is a gauge choice; the orbit itself is a property of the description.
+The orbit. The action is invariant under $\tilde A_\Phi\mapsto\tilde A_\Phi+\tilde\nabla_\Phi\Lambda$ for any real scalar $\Lambda$. Two potentials in the same orbit are one field configuration, and the action does not select a representative. Choosing one is a choice of representative; the orbit itself is a property of the description.
 
 Which of the two this article looks at. The orbit, because it is exact and it is what makes the count of degrees of freedom come out right: four components of $\tilde A_\Phi$, one constraint, one orbit direction, two transverse polarisations. The constraint is stated because the count needs it, and it is not solved.
 
@@ -147,7 +147,7 @@ The stress's conservation. $\partial_{\imath} T_{\imath\jmath}=0$ on solutions i
 
 ## What the Principle Adds and What It Relabels
 
-What it adds. Two things, and both are structural rather than predictive. It exhibits the field strength as the only thing the action sees, so that the gauge orbit is a property of the action and not of a chosen equation. And it makes the constraint and the orbit visibly different: one comes from the scalar part of the variation, the other from the kernel of the map from potential to field strength.
+What it adds. Two things, and both are structural rather than predictive. It exhibits the field strength as the only thing the action sees, so that the orbit is a property of the action and not of a chosen equation. And it makes the constraint and the orbit visibly different: one comes from the scalar part of the variation, the other from the kernel of the map from potential to field strength.
 
 What it relabels. The Maxwell equations themselves. The action adds no solution, no prediction and no constant that the parent does not have. The normalisation $Z$ is the parent's; the sign of the field term is the Proca companion's; the stress is the standard one. A reader who wants the physics will find all of it in the parent.
 
@@ -155,7 +155,7 @@ What it relabels. The Maxwell equations themselves. The action adds no solution,
 
 ## Summary
 
-The Maxwell field is the extremum of one term, $S=\int\tfrac{\epsilon}{2}\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, and its variation recovers $\tilde\nabla_\Phi\tilde F=-Z\tilde J_\Phi$ with the constraint $\vec\nabla_\Phi\cdot\vec D=\rho$ as the scalar part. The potential enters only through the field strength, so the longitudinal part is a gauge orbit and not a degree of freedom, and the count is two transverse polarisations. The free field's symmetries give a positive stress and no charge; the charge appears with the source and its sign is the source's. Nothing here is quantised, and the article says so in its first section rather than its last.
+The Maxwell field is the extremum of one term, $S=\int\tfrac{\epsilon}{2}\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, and its variation recovers $\tilde\nabla_\Phi\tilde F=-Z\tilde J_\Phi$ with the constraint $\vec\nabla_\Phi\cdot\vec D=\rho$ as the scalar part. The potential enters only through the field strength, so the longitudinal part is an orbit and not a degree of freedom, and the count is two transverse polarisations. The free field's symmetries give a positive stress and no charge; the charge appears with the source and its sign is the source's. Nothing here is quantised, and the article says so in its first section rather than its last.
 
 $$
 S[\tilde A_\Phi]=\int\mathrm{d}^{4}r\;\tfrac{\epsilon}{2}\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr),
@@ -180,14 +180,14 @@ $$
 | $\vec D=\epsilon\vec E,\ \vec B=\mu\vec H$ | Displacement and induction |
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |
 | $T_{\imath\jmath}$ | Energy–momentum tensor |
-| $\Lambda$ | Gauge parameter, a real scalar |
+| $\Lambda$ | Parameter, a real scalar |
 
 ## Further Reading
 
 - *Maxwell's Equations in the Biquaternionic Formulation*, the parent, for the field strength, the source and the normalisation $Z$.
 - *The Lagrangian and the Proca Equation*, for the same field term with a mass and for the sign convention this article keeps.
 - *The Lagrangian and the Coupled Klein–Gordon Equation*, for the derivation of the current that sources the field.
-- *The Lagrangian and the Electromagnetic Field in Polar Variables* is not written; the chart of a massless field is the gauge orbit's own parameterisation and is the gap this family leaves open.
+- *The Lagrangian and the Electromagnetic Field in Polar Variables* is not written; the chart of a massless field is the orbit's own parameterisation and is the gap this family leaves open.
 - Landau and Lifshitz, *The Classical Theory of Fields*, for the stress tensor and the sign conventions of the Lagrangian.
 - Julian Schwinger, *Classical Electrodynamics*, for the source normalisation and the constraint's role in the initial-value problem.
 - *The Lagrangian and the Second Quantisation: From the Action to the Commutator*, for what a quantised version of this action would require and for the statement that the corpus does not supply it.

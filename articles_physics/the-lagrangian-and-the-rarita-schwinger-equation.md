@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The plain statement, first. This family has the Rarita–Schwinger equation and it does not have the Rarita–Schwinger action. The parent, *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*, writes the equation, its two constraints, its rest-frame reduction and its gauge freedom; this article names the action that the literature uses, states what it must contain for the parent's results to follow from it, and records that the corpus does not write it.
+The plain statement, first. This family has the Rarita–Schwinger equation and it does not have the Rarita–Schwinger action. The parent, *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*, writes the equation, its two constraints, its rest-frame reduction and its redundancy; this article names the action that the literature uses, states what it must contain for the parent's results to follow from it, and records that the corpus does not write it.
 
 Why an article about an absence. Because an absence that is not recorded is read as an oversight. A reader who has seen the Klein–Gordon, Dirac and Proca actions will expect the spin-$\tfrac32$ action to be the next article in the family, and it is not. This article says so, gives the reason, and states exactly what would have to be built for it to be written.
 
@@ -32,7 +32,7 @@ What the action must contain for the parent's results to follow.
 
 *Second, two multipliers.* The parent's trace constraint and its divergence constraint are primary and secondary conditions of the equation; an action that reproduces them must carry a multiplier for each, and the multipliers are the object the corpus has not built.
 
-*Third, the massless invariance.* The parent records the gauge freedom $\tilde\Xi_{\imath}\mapsto\tilde\Xi_{\imath}+\partial_{\imath}\epsilon$ at $\nu_m=0$. An action for the massless field must be invariant under it, which requires the field's trace to be absent from the action or removed by the first multiplier.
+*Third, the massless invariance.* The parent records the redundancy $\tilde\Xi_{\imath}\mapsto\tilde\Xi_{\imath}+\partial_{\imath}\epsilon$ at $\nu_m=0$. An action for the massless field must be invariant under it, which requires the field's trace to be absent from the action or removed by the first multiplier.
 
 **What is missing, precisely.** One object: an element or a pair of elements of $\mathbb{B}$ that contracts the vector index with the field's chiral structure and is not simply the frame. The frame gives $\vec e_{\imath}$, which contracts a vector index with a direction; the trace constraint needs a contraction that mixes the two chiralities of the vector index itself, and this family has not exhibited one.
 
@@ -52,7 +52,7 @@ Why the check is not optional. The spin-$\tfrac32$ equation has the well-known p
 
 The count, in one line. Four vector components, each with two chiralities: eight complex data. The trace constraint removes two, the divergence constraint removes two, and the pair of first-order equations removes half of the rest; the rest frame leaves four complex parameters, the quartet the parent exhibits. An action that produced only the pair would leave the quartet's neighbours in place, and the count would be four higher.
 
-The massless case. At $\nu_m=0$ the gauge freedom removes two more, and the physical count is the two helicities of a massless spin-$\tfrac32$ particle. The action's invariance under the gauge shift is what makes the count come out right, and it is the third item in the action's list of debts.
+The massless case. At $\nu_m=0$ the redundancy removes two more, and the physical count is the two helicities of a massless spin-$\tfrac32$ particle. The action's invariance under the gauge shift is what makes the count come out right, and it is the third item in the action's list of debts.
 
 What the constraints are not. They are not the Lorenz condition of the Proca article and not the phase continuity of the scalar: those remove a longitudinal mode of a vector, and these remove a vector-index trace. The difference is why the spin-$\tfrac32$ constraints need their own multipliers and cannot be inherited from the spin-one article.
 
@@ -64,7 +64,7 @@ The hand check of the boundary. Compare the three actions this family has. The s
 
 What that means for the family's claims. Every statement of the form "the action has this equation as its Euler–Lagrange equation" is a statement about spins up to one. The spin-$\tfrac32$ article is the first member of the family for which the statement is not made, and saying so is more valuable than making it by analogy.
 
-What the absence does not affect. The parent's equation, its constraints, its rest-frame reduction, its gauge freedom, and its comparison with spins one and one-half are independent of the action and remain. The family loses the variational derivation of those results, not the results.
+What the absence does not affect. The parent's equation, its constraints, its rest-frame reduction, its redundancy, and its comparison with spins one and one-half are independent of the action and remain. The family loses the variational derivation of those results, not the results.
 
 ## The Noether Currents That Are Known
 
@@ -72,13 +72,13 @@ Known from the equation, not from the action. The parent's comparison section re
 
 What the action would add. The Noether procedure would produce the same currents and would fix their normalisation relative to the action's normalisation. That is the one thing the equation cannot supply: a current is defined up to a constant, and the constant is the coupling in the action. So the currents are known in form and not in normalisation, and the corpus says so.
 
-**The sign of the charge.** At $\nu_m=0$ the massless field's gauge symmetry is not a phase symmetry, so there is no charge and no sign to fix; the massive field has no gauge freedom and no charge either. The spin-$\tfrac32$ field is neutral in this corpus, and the sign question does not arise — which is one more respect in which it resembles the Proca field and not the Dirac field.
+**The sign of the charge.** At $\nu_m=0$ the massless field's local symmetry is not a phase symmetry, so there is no charge and no sign to fix; the massive field has no redundancy and no charge either. The spin-$\tfrac32$ field is neutral in this corpus, and the sign question does not arise — which is one more respect in which it resembles the Proca field and not the Dirac field.
 
 Why the section exists at all. Because a reader is entitled to know what survives the absence. The currents survive in form; the normalisation, the multiplier structure and the variational derivation do not.
 
 ## What the Principle Adds and What It Relabels: The Absence
 
-It does not change the physics of the parent. The equation, the constraints, the quartet, the gauge freedom: all of it stands, and none of it was derived from an action.
+It does not change the physics of the parent. The equation, the constraints, the quartet, the redundancy: all of it stands, and none of it was derived from an action.
 
 **It changes the family's uniformity.** The claim "every member of this family is an Euler–Lagrange equation of a written action" is false, and the falsehood is at spin $\tfrac32$. The family hub records it in the completeness table, and the bridge article does not pretend otherwise.
 
@@ -114,7 +114,7 @@ $$
 
 ## Further Reading
 
-- *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*, the parent, for the equation, the constraints, the rest-frame reduction and the gauge freedom.
+- *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*, the parent, for the equation, the constraints, the rest-frame reduction and the redundancy.
 - *The Lagrangian and the Proca Equation*, for the spin-one action, whose index is contracted by the algebra's own multiplication and not by a multiplier.
 - *The Lagrangian and the Dirac Equation*, for the spin-half action, whose mass needs the fixed direction and no index.
 - William Rarita and Julian Schwinger, *On a theory of particles with half-integral spin*, Phys. Rev. 60 (1941), for the equation and the action.

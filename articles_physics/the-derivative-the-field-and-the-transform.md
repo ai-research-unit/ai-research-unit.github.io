@@ -470,7 +470,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The two-sided condition is an external programme.** The algebraic part is verified in the corpus's own terms; the particle reading is the programme's and is recorded and not endorsed. The derived systems are weaker than the corpus's Maxwell equation and cannot displace it.
 
-**The group is the algebra's group.** It is not a gauge group, and the gauge ceiling is untouched: $\mathfrak{su}(3)$ is reached by enlarging the carrier to $M_3(\mathbb{B})$, not by finding an octet inside $\mathbb{B}$.
+**The group is the algebra's group.** It is not a symmetry group, and the gauge ceiling is untouched: $\mathfrak{su}(3)$ is reached by enlarging the carrier to $M_3(\mathbb{B})$, not by finding an octet inside $\mathbb{B}$.
 
 **The transform here is not the Fourier transform.** The exponential of a generator is the transform of this entry; the kernel $\exp(-2\pi i\tilde Z\omega t)$ and the inversion theorem belong to the next section, and the two are related by one fact only: the Fourier kernel is the exponential of a root of $-1$. Nothing in this entry states an inversion theorem, a Plancherel theorem or a convolution theorem.
 

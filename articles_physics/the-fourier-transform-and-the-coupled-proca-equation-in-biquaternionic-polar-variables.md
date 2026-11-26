@@ -2,21 +2,21 @@
 
 ## Introduction
 
-*The Proca Equation in Biquaternionic Polar Variables* tabulates four brackets and finds the phase identically zero on both branches; *The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables* reads that emptiness as the reality of the symbol. *The Coupled Proca Equation in Biquaternionic Polar Variables* then shows that on the complex carrier the phase returns and its motion is the gauge transformation. This article's first finding is where the returned phase sits in frequency space: not in the momentum, and in the curvature.
+*The Proca Equation in Biquaternionic Polar Variables* tabulates four brackets and finds the phase identically zero on both branches; *The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables* reads that emptiness as the reality of the symbol. *The Coupled Proca Equation in Biquaternionic Polar Variables* then shows that on the complex carrier the phase returns and its motion is the local transformation. This article's first finding is where the returned phase sits in frequency space: not in the momentum, and in the curvature.
 
 The free symbol $\sigma=(k^{2}-4\pi^{2}\nu_m^{2})\delta-2\pi\nu_{\imath} 2\pi\nu_{\jmath}$ is a real symmetric matrix, so it commutes with complex conjugation and cannot generate a phase. The coupled symbol is $-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F_{\Phi}-\pi_{\imath}\pi_{\jmath}$: Hermitian with an imaginary part, and the imaginary part is the curvature. The phase slot is therefore open in the coupled theory — but only at second order and only through the field strength, never through the potential.
 
 The second finding is that the branch label disappears and the cone with it. The free chart's two branches are the two signs of a real indefinite invariant; the coupled field's norm is a complex number of modulus $\varrho^{2}$ and a complex number has no sign, so there is nothing to label. In frequency space the free amplitude cone — codimension one, three-dimensional — collapses to the origin of the chart, which is codimension eight. One degenerate variety becomes one point, and the article states the collapse as a transfer of codimension and not as a loss of structure.
 
-The third finding is that the returned phase and the gauge group are one coordinate, and the symbol is blind to it. The parent proves that a constant central unit multiplies the word's leftmost factor and that the gauge transformation is therefore the motion of one coordinate. In frequency space the same motion shifts $\pi_{\imath}$ and leaves the obstruction alone, so the symbol's dependence on the gauge parameter is a translation of its argument and nothing else. The phase is a coordinate of the field and not a degree of freedom of the symbol.
+The third finding is that the returned phase and the symmetry group are one coordinate, and the symbol is blind to it. The parent proves that a constant central unit multiplies the word's leftmost factor and that the local transformation is therefore the motion of one coordinate. In frequency space the same motion shifts $\pi_{\imath}$ and leaves the obstruction alone, so the symbol's dependence on the parameter is a translation of its argument and nothing else. The phase is a coordinate of the field and not a degree of freedom of the symbol.
 
-The fourth finding is the ledger of three. The free chart has no phase bracket, no charge and no gauge freedom; the coupled chart has all three; and the three are the same coordinate. The article states them as one sentence with three names, because the corpus's three separate absences are the reason the free Proca chart looks impoverished next to the Dirac one and the reason it is not.
+The fourth finding is the ledger of three. The free chart has no phase bracket, no charge and no redundancy; the coupled chart has all three; and the three are the same coordinate. The article states them as one sentence with three names, because the corpus's three separate absences are the reason the free Proca chart looks impoverished next to the Dirac one and the reason it is not.
 
 No sector is exchanged. The coupled field is an element of $\mathbb{B}$ with eight real parameters, its transform is $\mathbb{B}$-valued, and the chart is a coordinate system on the same element. There is no new solution and no new equation; the word, the gauge identity and the mass-term formulas are the parent's.
 
 ## Conventions
 
-The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The covariant derivative is that of *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule for a gauge-covariant operator:
+The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The covariant derivative is that of *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule for a covariant operator:
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath}\longmapsto i\pi_{\imath} ,
@@ -96,29 +96,29 @@ What the mass does not see is the phase, and what the symbol does not see is the
 
 ## The Symbol Is Blind to the Coordinate
 
-A gauge transformation moves one coordinate of the chart and one argument of the symbol, and the two motions are the same motion. The parent's identity is $\tilde A\mapsto\digamma_{\mathrm{gau}}\tilde A$ with $\digamma_{\mathrm{gau}}=e^{i\vartheta_{\mathrm{gau}}}$ central, and its effect on the word's first factor is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}}$. On the symbol the same transformation is $\pi_{\imath}\mapsto\pi_{\imath}+\frac{h}{2\pi}\partial_{\imath}\vartheta_{\mathrm{gau}}$, a translation of the argument, and the obstruction $F$ is unchanged.
+A local transformation moves one coordinate of the chart and one argument of the symbol, and the two motions are the same motion. The parent's identity is $\tilde A\mapsto\digamma_{\mathrm{gau}}\tilde A$ with $\digamma_{\mathrm{gau}}=e^{i\vartheta_{\mathrm{gau}}}$ central, and its effect on the word's first factor is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}}$. On the symbol the same transformation is $\pi_{\imath}\mapsto\pi_{\imath}+\frac{h}{2\pi}\partial_{\imath}\vartheta_{\mathrm{gau}}$, a translation of the argument, and the obstruction $F$ is unchanged.
 
-Write $\sigma_{\mathrm{gco}}(\pi)$ for the symbol as a function of the shifted momentum; then under a gauge transformation $\sigma_{\mathrm{gco}}(\pi)\mapsto\sigma_{\mathrm{gco}}(\pi+\frac{h}{2\pi}\,\mathrm{d}\vartheta)$ and no other change occurs. **The symbol is a function and the transformation is an argument shift**, which is the frequency-space form of "the gauge group acts on the chart by one coordinate's motion and on the equation by nothing".
+Write $\sigma_{\mathrm{gco}}(\pi)$ for the symbol as a function of the shifted momentum; then under a local transformation $\sigma_{\mathrm{gco}}(\pi)\mapsto\sigma_{\mathrm{gco}}(\pi+\frac{h}{2\pi}\,\mathrm{d}\vartheta)$ and no other change occurs. **The symbol is a function and the transformation is an argument shift**, which is the frequency-space form of "the symmetry group acts on the chart by one coordinate's motion and on the equation by nothing".
 
-A quantity built from $\sigma_{\mathrm{gco}}(\pi)$ alone moves with $\pi$; a gauge-invariant quantity must be built from the obstruction or from a difference of symbols at two momenta. That is the frequency-space statement of the parent's "the field strength is the gauge-invariant object", and the article's contribution is to say that the symbol's invariant content is its curvature term.
+A quantity built from $\sigma_{\mathrm{gco}}(\pi)$ alone moves with $\pi$; an invariant quantity must be built from the obstruction or from a difference of symbols at two momenta. That is the frequency-space statement of the parent's "the field strength is the invariant object", and the article's contribution is to say that the symbol's invariant content is its curvature term.
 
 The blindness has a cost that the parent's chart makes visible. The chart's phase coordinate is a coordinate of the field and not a degree of freedom of the equation: two words differing only in $\theta_{\mathrm{pha}}$ describe the same physics, and the chart therefore overcounts the physical parameters by one. In frequency space the overcount is the argument shift's redundancy, and the article's ledger of three absences is that overcount read three ways.
 
 ## Three Absences, One Reality
 
-The parent's free article records no phase bracket, no charge and no gauge freedom; the coupled article records all three; and the three arrive together because they are one coordinate. The ledger is exact:
+The parent's free article records no phase bracket, no charge and no redundancy; the coupled article records all three; and the three arrive together because they are one coordinate. The ledger is exact:
 
 | | free chart | coupled chart | frequency space |
 | --- | --- | --- | --- |
 | phase bracket | zero identically | $\partial_{\imath}\theta_{\mathrm{pha}}$ | imaginary part of the symbol is the curvature |
 | charge | none | from the phase's Noether current | the phase is a coordinate, so it has a conjugate |
-| gauge freedom | none | the phase's motion | the argument shift of the symbol |
+| redundancy | none | the phase's motion | the argument shift of the symbol |
 | branch label | the sign of a real norm | none, the norm is complex | the cone collapses to a point |
 | constraint | one equation on four | one equation on eight | the trace, no curvature in it |
 
 The branch label is the one entry that the coupling *removes* rather than supplies, and its removal is §*The Branch Disappears and the Cone Collapses*. A ledger with three gains and one loss is honest; a ledger with three gains and no loss would be a sales document.
 
-The three gains are one gain because the phase is one coordinate. The charge is the momentum conjugate to it, the gauge freedom is its motion, and the bracket is its gradient. The corpus's three separate statements are one statement read three ways, and the article's contribution is the frequency-space column, which is a fourth reading of the same coordinate.
+The three gains are one gain because the phase is one coordinate. The charge is the momentum conjugate to it, the redundancy is its motion, and the bracket is its gradient. The corpus's three separate statements are one statement read three ways, and the article's contribution is the frequency-space column, which is a fourth reading of the same coordinate.
 
 The branch label's disappearance is the consequence of the carrier's widening, not of the phase's arrival: an eight-parameter chart has no cone because a complex norm's vanishing is eight conditions, and that would be true of any complexification. So the ledger's rows are not causally linked, and the article states that to prevent the wrong reading.
 
@@ -136,7 +136,7 @@ The constraint's symbol being free does not make the constraint's solution free 
 
 The translation term is exact for a constant connection; the obstruction is a multiplier only where the curvature is constant. Every statement above about the imaginary part carries that condition.
 
-The gauge transformation's exactness rests on the centrality of $\digamma_{\mathrm{gau}}$, and the corpus's coupling is Abelian. A non-Abelian coupling would make the word's leftmost factor's motion non-central, and the phase coordinate's status would need redoing.
+The local transformation's exactness rests on the centrality of $\digamma_{\mathrm{gau}}$, and the corpus's coupling is Abelian. A non-Abelian coupling would make the word's leftmost factor's motion non-central, and the phase coordinate's status would need redoing.
 
 The parent records that a finite shift can take the phase factor out of its normal form and that the excess is absorbed by the other factors. The article's §*The Symbol Is Blind to the Coordinate* uses the infinitesimal identity and inherits the caveat.
 
@@ -158,7 +158,7 @@ The branch label disappears and the cone with it. The free chart's two branches 
 
 The mass is a modulus in the phase. $\mathrm{Sc}(\tilde A^{\natural}\tilde A)=\varrho^{2}\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ is invariant under a constant central unit to fifteen digits, so the mass sees the scale and the two axes' relative angle and never the phase. In frequency space the mass term is a multiple of the identity in the amplitude space, and a multiple of the identity commutes with the phase rotation.
 
-The gauge transformation is the phase coordinate's motion, and on the symbol it is a translation of the argument: $\sigma_{\mathrm{gco}}(\pi)\mapsto\sigma_{\mathrm{gco}}(\pi+\frac{h}{2\pi}\,\mathrm{d}\vartheta)$ and nothing else. So the symbol's gauge-invariant content is its obstruction, and the constraint — the trace — carries no curvature, which is why the covariant Lorenz condition is the free one in $\pi$. The ledger closes with three gains and one loss: a bracket, a charge and a gauge freedom on one side, and the branch label on the other, and the loss is the carrier's doing and not the phase's.
+The local transformation is the phase coordinate's motion, and on the symbol it is a translation of the argument: $\sigma_{\mathrm{gco}}(\pi)\mapsto\sigma_{\mathrm{gco}}(\pi+\frac{h}{2\pi}\,\mathrm{d}\vartheta)$ and nothing else. So the symbol's invariant content is its obstruction, and the constraint — the trace — carries no curvature, which is why the covariant Lorenz condition is the free one in $\pi$. The ledger closes with three gains and one loss: a bracket, a charge and a redundancy on one side, and the branch label on the other, and the loss is the carrier's doing and not the phase's.
 
 ## Summary of Notation
 
@@ -170,14 +170,14 @@ The gauge transformation is the phase coordinate's motion, and on the symbol it 
 | $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F-\pi_{\imath}\pi_{\jmath}$ | The coupled symbol; Hermitian, complex |
 | $\frac{2\pi i\varkappa}{h}F_{\Phi}$ | The imaginary part; the obstruction |
 | $-4\pi^{2}$ | The trace; the constraint's symbol, free of curvature |
-| $\digamma_{\mathrm{gau}}=e^{i\vartheta_{\mathrm{gau}}}$ | The constant central unit; the gauge parameter |
+| $\digamma_{\mathrm{gau}}=e^{i\vartheta_{\mathrm{gau}}}$ | The constant central unit; the parameter |
 | $\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ | The mass term's frame factor; $\varrho^{2}$ on the trivial-rotor slice |
 | $\varrho>0$ | The N-regular set; the failure set is $\varrho=0$, codimension eight |
 | $0.00\times10^{0}$ | The free symbol's parity residual; unchanged by the coupling |
 
 ## Further Reading
 
-- *The Coupled Proca Equation in Biquaternionic Polar Variables*, for the four-factor word, the gauge transformation as a phase translation, the covariant logarithmic derivative and the mass term's frame factor.
+- *The Coupled Proca Equation in Biquaternionic Polar Variables*, for the four-factor word, the local transformation as a phase translation, the covariant logarithmic derivative and the mass term's frame factor.
 - *The Proca Equation in Biquaternionic Polar Variables*, for the free two-factor word, the branches and the bracket table.
 - *The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables*, for the free chart's parity table and the amplitude cone.
 - *The Fourier Transform and the Coupled Proca Equation in Biquaternionic Form*, for the same symbol in components, and for the obstruction's failure to be a function of $\pi$.

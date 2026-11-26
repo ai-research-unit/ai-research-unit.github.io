@@ -22,7 +22,7 @@ The rotor picture: turning a frame and carrying a module. A unit real quaternion
 
 The statement. For elements $a,b$ of the algebra, $L_a\circ L_b=L_{ab}$. The map $a\mapsto L_a$ is therefore multiplicative: it is a representation of the algebra on itself, the regular one.
 
-Why it matters. A gauge transformation must compose as the group composes. Because the parameter multiplies, a product of two gauge transformations is the gauge transformation of the product parameter, and the coupling can be written as a single element multiplying the field. This is what makes $D_{\imath}\tilde\Xi=\partial/\partial R_{\imath}\tilde\Xi+i\kappa\,\mathcal{A}_{\imath}\tilde\Xi$ a covariant derivative rather than a formal symbol.
+Why it matters. A local transformation must compose as the group composes. Because the parameter multiplies, a product of two local transformations is the local transformation of the product parameter, and the coupling can be written as a single element multiplying the field. This is what makes $D_{\imath}\tilde\Xi=\partial/\partial R_{\imath}\tilde\Xi+i\kappa\,\mathcal{A}_{\imath}\tilde\Xi$ a covariant derivative rather than a formal symbol.
 
 **What it does not say.** That the left family is multiplicative does not make it an *algebra* endomorphism. The two statements are different, and the difference is the second result.
 
@@ -30,9 +30,9 @@ Why it matters. A gauge transformation must compose as the group composes. Becau
 
 The statement. $L_a(xy)=a\,xy$, whereas $L_a(x)L_a(y)=a\,x\,a\,y$. The two agree only when $a$ is central. So $L_a$ is a linear map of the algebra to itself, multiplicative in its parameter, and not a homomorphism of the algebra's own product.
 
-Consequence for the group. Restricted to the unit elements, left multiplication gives a group acting on a module. It does not give a group of automorphisms of the algebra. A symmetry in the automorphism sense — one that preserves the algebraic structure, hence both sectors and the star — is conjugation, and conjugation is not what the gauge field does.
+Consequence for the group. Restricted to the unit elements, left multiplication gives a group acting on a module. It does not give a group of automorphisms of the algebra. A symmetry in the automorphism sense — one that preserves the algebraic structure, hence both sectors and the star — is conjugation, and conjugation is not what the connection does.
 
-**This is the technical form of the sector's central claim.** A gauge field in a non-central generator acts on matter by an operator that is not an automorphism, so the "internal symmetry" reading fails at the level of the definition and not at the level of the physics. The field is a connection on a module, and the geometric reading follows: a connection in the adjoint of $\mathrm{Spin}(3)$ is the spatial part of a spin connection.
+**This is the technical form of the sector's central claim.** A connection in a non-central generator acts on matter by an operator that is not an automorphism, so the "internal symmetry" reading fails at the level of the definition and not at the level of the physics. The field is a connection on a module, and the geometric reading follows: a connection in the adjoint of $\mathrm{Spin}(3)$ is the spatial part of a spin connection.
 
 ## Third Result: the Left Action Is the Spin Representation
 

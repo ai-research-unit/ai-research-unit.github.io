@@ -136,7 +136,7 @@ $$
 
 Three things follow, and they are the article's reason for existing.
 
-*The quantum potential is not a potential.* It is the chemical potential of a density-gradient energy: the change in the fluid's energy when a particle is added at fixed volume. A potential in the usual sense is a function of position given from outside; this one is a functional of the density and disappears when the density is uniform. The distinction is not verbal — a potential can be subtracted by a gauge choice and this cannot, because it is a property of the state.
+*The quantum potential is not a potential.* It is the chemical potential of a density-gradient energy: the change in the fluid's energy when a particle is added at fixed volume. A potential in the usual sense is a function of position given from outside; this one is a functional of the density and disappears when the density is uniform. The distinction is not verbal — a potential can be subtracted by a choice of representative and this cannot, because it is a property of the state.
 
 *The quantum stress is the same object read as a pressure.* The block's identity $\partial_j\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_iQ$ is, in this language, the statement that a gradient energy has a stress and that the force is its divergence. The action makes the identity a definition: $\mathcal E_{\mathrm{grad}}$ is a functional of $\rho_{\mathrm{num}}$ and its gradients, so it has a functional derivative $Q$ and a stress tensor $\sigma^{Q}_{ij}$, and the two are related because the energy is a scalar. The block computes the identity directly from the wave equation; here it is the Euler–Lagrange structure's.
 

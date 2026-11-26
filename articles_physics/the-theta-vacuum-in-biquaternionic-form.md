@@ -50,7 +50,7 @@ with $F_{\imath\jmath}$ the components of the curvature and the trace over the g
 $$
 S_{\mathrm{vac}} = \frac{\theta_{\mathrm{vac}}}{16\pi^2}\int d^4r\;\mathrm{tr}\big(\sum_{\imath,\jmath}F_{\imath\jmath}\tilde F_{\imath\jmath}\big) = \theta_{\mathrm{vac}}\,Ϙ ,
 $$
-a total derivative term that does not affect the equations of motion in any sector of fixed $Ϙ$ but weights the sectors relative to one another in the path integral. It is this weighting, and only this weighting, that the $\theta_{\mathrm{vac}}$ vacuum encodes. The term is P- and T-odd, and it is the unique marginal operator built from the gauge fields that is a total derivative and does not change the perturbative theory.
+a total derivative term that does not affect the equations of motion in any sector of fixed $Ϙ$ but weights the sectors relative to one another in the path integral. It is this weighting, and only this weighting, that the $\theta_{\mathrm{vac}}$ vacuum encodes. The term is P- and T-odd, and it is the unique marginal operator built from the connections that is a total derivative and does not change the perturbative theory.
 
 **Why the framework's contribution is only the value space.** Nothing in the construction of $Ϙ$ or $S_{\mathrm{vac}}$ uses a biquaternion-specific fact: the charge is a standard topological invariant, the dual is the standard Hodge dual, and the trace is the standard gauge trace. What the framework can supply is (i) the space in which the *phase* lives, which is its centre, and (ii) the statement that the determinant whose phase the angle is has a phase only when the operator is non-central. Both are taken up in the next two sections.
 
@@ -62,7 +62,7 @@ The construction is transcribed, and the algebra's contribution is identified wi
 $$
 |\theta_{\mathrm{vac}}\rangle = \sum_{Ϙ\in\mathbb{Z}} \exp(\,i\theta_{\mathrm{vac}} Ϙ)\,|Ϙ\rangle,
 $$
-and its defining property is that the topological charge operator acts on it by a phase, $Ϙ_{\mathrm{fop}}|\theta_{\mathrm{vac}}\rangle = -i\frac{\partial}{\partial\theta_{\mathrm{vac}}}|\theta_{\mathrm{vac}}\rangle$; the vacuum is an eigenstate of the large gauge transformation that shifts $Ϙ$ by one, with eigenvalue $\exp(-i\theta_{\mathrm{vac}})$. This is standard, and it is the statement that the large gauge transformation is implemented on the vacuum by a phase rather than by the identity.
+and its defining property is that the topological charge operator acts on it by a phase, $Ϙ_{\mathrm{fop}}|\theta_{\mathrm{vac}}\rangle = -i\frac{\partial}{\partial\theta_{\mathrm{vac}}}|\theta_{\mathrm{vac}}\rangle$; the vacuum is an eigenstate of the large local transformation that shifts $Ϙ$ by one, with eigenvalue $\exp(-i\theta_{\mathrm{vac}})$. This is standard, and it is the statement that the large local transformation is implemented on the vacuum by a phase rather than by the identity.
 
 **The weighting is central.** The phase $\exp(i\theta_{\mathrm{vac}} Ϙ)$ is built from the central $i$, and the central scalars are exactly the centre of the algebra:
 $$
@@ -103,7 +103,7 @@ $$
 \qquad
 \det\mathcal{C}(\digamma_{\mathrm{mss}}) = \digamma_{\mathrm{mss}}^2 ,
 $$
-has a strictly positive determinant and no phase. The two are the framework's central and non-central cases in miniature: a determinant phase requires the operator to mix the two chiralities, which is exactly the non-centrality of the mass term. A *varying* phase requires the crossing itself: with the parameter taken through the degeneracy, as in $\mathcal{D}(\mu)=\left(\begin{smallmatrix}\digamma_{\mathrm{mss}} & i\mu\ i\mu & -\digamma_{\mathrm{mss}}\end{smallmatrix}\right)$ at $\digamma_{\mathrm{mss}}=1$, the determinant vanishes at $\mu=1$ and its phase jumps from $\pi$ to $0$ across it, so the phase counts the crossing rather than merely reporting the sign of the determinant. The verification below records the numbers. The toy model does not compute a $\theta_{\mathrm{vac}}$ angle — that requires the gauge-field family — but it exhibits *which* operators can produce the phase that a $\theta_{\mathrm{vac}}$ angle is.
+has a strictly positive determinant and no phase. The two are the framework's central and non-central cases in miniature: a determinant phase requires the operator to mix the two chiralities, which is exactly the non-centrality of the mass term. A *varying* phase requires the crossing itself: with the parameter taken through the degeneracy, as in $\mathcal{D}(\mu)=\left(\begin{smallmatrix}\digamma_{\mathrm{mss}} & i\mu\ i\mu & -\digamma_{\mathrm{mss}}\end{smallmatrix}\right)$ at $\digamma_{\mathrm{mss}}=1$, the determinant vanishes at $\mu=1$ and its phase jumps from $\pi$ to $0$ across it, so the phase counts the crossing rather than merely reporting the sign of the determinant. The verification below records the numbers. The toy model does not compute a $\theta_{\mathrm{vac}}$ angle — that requires the connection family — but it exhibits *which* operators can produce the phase that a $\theta_{\mathrm{vac}}$ angle is.
 
 **What the phase is not.** The phase of the determinant is not the $i\epsilon$ prescription (which fixes a contour, not a topology), not the sign ambiguity of a fermion determinant (which is a boundary condition on the family, not a winding), and not the central phase of the previous section (which weights sectors and is an input to the state). The framework's cleanliness here is that the three are different objects: the central phase lies in the centre, the determinant phase lies in the argument of a complex number computed from a non-central operator, and the $i\epsilon$ lies in the propagator's pole prescription.
 
@@ -181,7 +181,7 @@ at small $\theta_{\mathrm{vac}}$, so that a nonzero $\xi$ is what makes $\theta_
 
 **Standard, and transcribed.**
 
-- The construction of the $\theta_{\mathrm{vac}}$ vacuum, the implementation of the large gauge transformation by a phase, and the $\theta_{\mathrm{vac}}$-term's status as a total derivative.
+- The construction of the $\theta_{\mathrm{vac}}$ vacuum, the implementation of the large local transformation by a phase, and the $\theta_{\mathrm{vac}}$-term's status as a total derivative.
 - The topological charge's integrality, the one-instanton value $Ϙ=1$, and the second Chern number.
 - The periodicity of $\theta_{\mathrm{vac}}$, the invariant combination $\bar\theta_{\mathrm{vac}}=\theta_{\mathrm{vac}}+\arg\det M$, the strong-CP problem, and the axion as a relaxation mechanism.
 - The eta invariant and the phase of a determinant family; the parity and time-reversal properties of $F\tilde F$.
@@ -196,8 +196,8 @@ at small $\theta_{\mathrm{vac}}$, so that a nonzero $\xi$ is what makes $\theta_
 **Open.**
 
 - Whether the framework has any statement about the *value* of $\theta_{\mathrm{vac}}$, beyond housing it in the centre, is not addressed; the framework fixes the value space and not the value, exactly as it fixes the algebra and not the temperature.
-- Whether a genuinely biquaternion-valued gauge configuration (as opposed to a gauge field written with biquaternion notation) produces a $\theta_{\mathrm{vac}}$ dependence with a framework-specific structure is not addressed; the instanton article's configurations are the standard ones.
-- The construction of the large-gauge-transformation operator on the Fock module, and the precise sense in which it is implemented by the central phase, is left to the Fock and gauge-field articles.
+- Whether a genuinely biquaternion-valued gauge configuration (as opposed to a connection written with biquaternion notation) produces a $\theta_{\mathrm{vac}}$ dependence with a framework-specific structure is not addressed; the instanton article's configurations are the standard ones.
+- The construction of the large-local transformation operator on the Fock module, and the precise sense in which it is implemented by the central phase, is left to the Fock and connection articles.
 
 ## Summary
 

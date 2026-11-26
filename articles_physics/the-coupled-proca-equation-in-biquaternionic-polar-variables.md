@@ -20,7 +20,7 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd
 
 *First, the coupling enters the logarithmic derivative as one central scalar per slot.* Because each component of the connection is a central scalar, $\frac{2\pi iϙ}{h}A_{\imath}$ passes through $\tilde A^{-1}$ and joins the logarithmic derivative without disturbing its types. It merges with the two central brackets — the scale and the phase — and it cannot reach either of the two frame brackets. That is a statement of type and not of size: a central scalar cannot produce a real vector part and cannot produce a Hermitian vector.
 
-*Second, the gauge transformation is a translation of one parameter.* Multiplication of the field by a central unit multiplies the word and acts on $\theta_{\mathrm{pha}}$ alone. Infinitesimally that is exact with every other parameter fixed; the check is exact to machine precision. The chart therefore linearises the gauge group, and the connection's whole content in the chart is that one coordinate is not physical.
+*Second, the local transformation is a translation of one parameter.* Multiplication of the field by a central unit multiplies the word and acts on $\theta_{\mathrm{pha}}$ alone. Infinitesimally that is exact with every other parameter fixed; the check is exact to machine precision. The chart therefore linearises the symmetry group, and the connection's whole content in the chart is that one coordinate is not physical.
 
 *Third, the equation in the chart is second order and not first order, and that is where this article parts company with the Dirac and Schrödinger companions.* Those fields are first order in the material time, their actions are first order, and the chart exposes a constrained system whose momenta partly vanish. The Proca field is second order in the material time, its action is second order, and no momentum vanishes identically. The chart therefore has no primary constraint to exhibit, and the honest statement of this article is that the polar form of the coupled Proca theory is a change of coordinates on a second-order problem and not a constraint analysis.
 
@@ -111,22 +111,22 @@ $$
 \tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
 
-so the gauge transformation is the translation of $\theta_{\mathrm{pha}}$ by $\vartheta_{\mathrm{gau}}$ with the other seven parameters fixed. The identity is exact and the numerical check is exact to $10^{-16}$.
+so the local transformation is the translation of $\theta_{\mathrm{pha}}$ by $\vartheta_{\mathrm{gau}}$ with the other seven parameters fixed. The identity is exact and the numerical check is exact to $10^{-16}$.
 
 **Why it is exact.** $\digamma_{\mathrm{gau}}$ is central, so it passes to the left through the whole word and multiplies the leftmost factor; and the leftmost factor is the phase factor, whose argument is additive. No other factor is touched, because no other factor carries a central scalar.
 
-**What it says about the connection.** For a pure-gauge connection, $A_{\imath}=\partial_{\imath}\Lambda$, the added term is $\frac{2\pi iϙ}{h}\partial_{\imath}\Lambda$, so
+**What it says about the connection.** For a pure-connection, $A_{\imath}=\partial_{\imath}\Lambda$, the added term is $\frac{2\pi iϙ}{h}\partial_{\imath}\Lambda$, so
 
 $$
 i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A_{\imath}
 =i\frac{\partial}{\partial R_{\imath}}\Bigl(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda\Bigr),
 $$
 
-and the whole effect of the potential is absorbed by a reparameterisation of one coordinate. That is the polar statement of gauge invariance, and it is a statement about the angle and not about the field.
+and the whole effect of the potential is absorbed by a reparameterisation of one coordinate. That is the polar statement of local invariance, and it is a statement about the angle and not about the field.
 
-**The finite statement and its one caveat.** For a finite shift the translated angle may leave the interval $(-\pi/2,\pi/2]$, and then the word's first factor is no longer in the chart's normal form: $e^{i(\vartheta+\vartheta_{\mathrm{gau}})}$ with the sum outside the range is invertible whose real part is negative, and the chart's phase factor is the one with positive real part. The excess is absorbed by the other factors, and the chart is therefore not closed under the gauge group as a chart, although the field is. The article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates.
+**The finite statement and its one caveat.** For a finite shift the translated angle may leave the interval $(-\pi/2,\pi/2]$, and then the word's first factor is no longer in the chart's normal form: $e^{i(\vartheta+\vartheta_{\mathrm{gau}})}$ with the sum outside the range is invertible whose real part is negative, and the chart's phase factor is the one with positive real part. The excess is absorbed by the other factors, and the chart is therefore not closed under the symmetry group as a chart, although the field is. The article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates.
 
-**The contrast with the element form.** In the element form the gauge transformation multiplies the field by a central unit and that is that. In the chart the same operation is the motion of one coordinate, and the coordinate is the argument of the norm. The two statements are the same statement, and the second is the reason the operation is called a phase transformation.
+**The contrast with the element form.** In the element form the local transformation multiplies the field by a central unit and that is that. In the chart the same operation is the motion of one coordinate, and the coordinate is the argument of the norm. The two statements are the same statement, and the second is the reason the operation is called a phase transformation.
 
 ## The Equation in the Chart
 
@@ -173,7 +173,7 @@ which is the statement that the covariant divergence of the word vanishes. The e
 - The count: eight parameters, eight components, and the four-factor word matching the four types of the logarithmic derivative.
 - The phase as the argument of the norm, and the free article's discrete sign as the real slice of it.
 - The connection's location: two central slots and no others, with the temporal slot real and the spatial ones imaginary.
-- The gauge transformation as one coordinate's translation, infinitesimally exact.
+- The local transformation as one coordinate's translation, infinitesimally exact.
 - The mass term's dependence on the frame's non-Lorentz part, and its independence of the rapidity when the rotor's axis lies along the boost's.
 
 **Hides.**
@@ -182,7 +182,7 @@ which is the statement that the covariant divergence of the word vanishes. The e
 - The field strength. $\tilde F$ is a derived object in the chart, built from the brackets and the frame's conjugation, and the chart does not simplify its bilinear dependence on the connection.
 - The current. The charge current is a bilinear in the field and its conjugate, and the chart's expression for it is longer than the element form's without being more informative.
 
-**The honest ledger.** The chart is a coordinate system, and its virtue is that the gauge group becomes one visible coordinate and the coupling becomes four visible slots. Its cost is that the equation becomes a contraction with a field-dependent frame, and every statement about the field strength becomes a statement about that frame. Neither form is simpler; the chart is *sharper about the coupling* and the element form is *sharper about the algebra*.
+**The honest ledger.** The chart is a coordinate system, and its virtue is that the symmetry group becomes one visible coordinate and the coupling becomes four visible slots. Its cost is that the equation becomes a contraction with a field-dependent frame, and every statement about the field strength becomes a statement about that frame. Neither form is simpler; the chart is *sharper about the coupling* and the element form is *sharper about the algebra*.
 
 ## Open Questions
 
@@ -202,7 +202,7 @@ $$
 
 with eight real parameters and the word a bijection onto the N-regular set. The free field's two-factor word is the real slice of this one: the phase and the rotor are the two factors that reality removes and the charge restores, and the norm $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ is the single line that shows it.
 
-The connection is central per slot, so it merges with the scale and the phase brackets and cannot touch the boost or the rotor; the four-momentum shift $\frac{h}{2\pi} c\kappa_t=E+ϙca'_t$, $\frac{h}{2\pi}\vec\kappa=\vec p-q\vec A$ is one substitution in one element. The gauge transformation is the translation of $\theta_{\mathrm{pha}}$ alone, exact infinitesimally. The equation is second order, the chart exhibits no primary constraint, and that is the difference between this sector and the first-order sectors of the Schrödinger and Dirac companions. The mass term is $\varrho^{2}$ exactly when the rotor is trivial, because the boost is a Lorentz transformation and the rotor is not.
+The connection is central per slot, so it merges with the scale and the phase brackets and cannot touch the boost or the rotor; the four-momentum shift $\frac{h}{2\pi} c\kappa_t=E+ϙca'_t$, $\frac{h}{2\pi}\vec\kappa=\vec p-q\vec A$ is one substitution in one element. The local transformation is the translation of $\theta_{\mathrm{pha}}$ alone, exact infinitesimally. The equation is second order, the chart exhibits no primary constraint, and that is the difference between this sector and the first-order sectors of the Schrödinger and Dirac companions. The mass term is $\varrho^{2}$ exactly when the rotor is trivial, because the boost is a Lorentz transformation and the rotor is not.
 
 ## Summary of Notation
 
@@ -210,7 +210,7 @@ The connection is central per slot, so it merges with the scale and the phase br
 | --- | --- |
 | $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, central phase, boost, rotor |
 | $\varrho>0$ | Scale; $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ |
-| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the gauge-dependent coordinate |
+| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the representative-dependent coordinate |
 | $\theta_{\mathrm{rpd}}\ge0,\ \hat u_{\mathrm b}\in S^{2}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}}\in[0,2\pi],\ \hat u_{\mathrm r}\in S^{2}$ | Angle and axis of the rotor |
 | $\mathbb{B}$, $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$ | The algebra, its material and informational sectors |

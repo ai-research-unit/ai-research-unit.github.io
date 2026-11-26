@@ -314,7 +314,7 @@ The axis of the pair is not part of the amplitude. It is the vector part of the 
 
 On a closed circuit the phases telescope and the product of the overlaps is invariant. That product is the Pancharatnam phase, and for a circuit bounding a solid angle $\Omega$ it is half the solid angle, with the half being the mark of the double cover.
 
-The physical reading is that the algebra owns the pairing and the modulus, and the phase belongs to a loop. The pair's phase is gauge dependent; only the loop is an invariant. The connection, the curvature and the half-solid-angle rule are not derived here.
+The physical reading is that the algebra owns the pairing and the modulus, and the phase belongs to a loop. The pair's phase is representative-dependent; only the loop is an invariant. The connection, the curvature and the half-solid-angle rule are not derived here.
 
 The boundary. A single overlap has no invariant phase. The statement is about a closed circuit and a chosen representative on each ray.
 
@@ -364,7 +364,7 @@ $$
 
 so the quaternion conjugation is the fundamental symmetry of the indefinite structure: its eigenspaces are the centre and the vector subspace, of complex dimensions one and three, of the two opposite signs and mutually orthogonal.
 
-The physical reading is that a constraint is not a state. **A definite form counts states: it is positive, it normalises, and its rank-one elements are pure states.** An indefinite form fixes a redundancy: it distinguishes the two signs and leaves the normalisation to a gauge choice. On the material sector the Krein form is minus the interval, so the gauge form and the causal form are one form read with a sign, and on the informational sector they coincide.
+The physical reading is that a constraint is not a state. **A definite form counts states: it is positive, it normalises, and its rank-one elements are pure states.** An indefinite form fixes a redundancy: it distinguishes the two signs and leaves the normalisation to a choice of representative. On the material sector the Krein form is minus the interval, so the gauge form and the causal form are one form read with a sign, and on the informational sector they coincide.
 
 The boundary. The Krein form is a form, not a gauge theory. No group, no coupling and no field content is derived. What the algebra supplies is the inertia, the fundamental symmetry and the resulting orthogonality.
 
@@ -378,7 +378,7 @@ The physical reading is that a real description cannot see this obstruction. The
 
 The count makes the statement sharp. Of the $512$ triples of the basis, $252$ witness the failure of the plain sesquilinear bracket, $144$ that of the quaternionic bilinear one, and $72$ that of the quaternionic sesquilinear one. The sparsest failure is the one that carries the complex structure, and the densest is the one whose witness is real.
 
-The boundary. A non-vanishing Jacobi sum is an algebraic fact about a bracket. Whether a physical symmetry algebra is expected to close is a separate hypothesis, and the entry does not derive a gauge algebra from a bracket that fails to be one.
+The boundary. A non-vanishing Jacobi sum is an algebraic fact about a bracket. Whether a physical symmetry algebra is expected to close is a separate hypothesis, and the entry does not derive an algebra from a bracket that fails to be one.
 
 ### I.6.j — Only the Plain Column Closes
 
@@ -456,7 +456,7 @@ The sector dictionary is a convention. That $\mathbb{B}_{\Phi}$ is spacetime and
 
 The counts are basis-dependent. $252$, $144$ and $72$ are counts on the eight-element basis, given as the shape of each failure; they are not invariants of the bracket, and they change with the basis.
 
-No product is derived from its job, and no job from its product. The products are the algebra's; the jobs are the readings. The entry derives no dynamics, no state space, no mass spectrum, no gauge group and no measurement postulate.
+No product is derived from its job, and no job from its product. The products are the algebra's; the jobs are the readings. The entry derives no dynamics, no state space, no mass spectrum, no symmetry group and no measurement postulate.
 
 **The grid is a grid of products on $\mathbb{B}$, and that is why entanglement is not a row.** Each of the twelve operations is a map $\mathbb{B}\times\mathbb{B}\to\mathbb{B}$: a pair of elements in, one element out. A correlation between two systems is not of that type. It is a property of one element of the tensor square $\mathbb{B}\otimes\mathbb{B}$, and the operation that extracts it, the partial trace, is a map $\mathbb{B}\otimes\mathbb{B}\to\mathbb{B}$ with one factor already traced against the scalar pairing. So entanglement was never a candidate for a fifth row: a fifth row would need a fifth setting of the two dials, and there is none, while a shared state needs a second factor, and the grid has one factor by construction. The argument is the reason I.6.a can say there is no fifth product and mean it.
 

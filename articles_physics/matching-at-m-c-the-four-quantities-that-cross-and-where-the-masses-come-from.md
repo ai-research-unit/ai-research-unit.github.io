@@ -23,7 +23,7 @@ $$
 \;}
 $$
 
-**So the matching is a matching of a group and a spectrum, not of a Lagrangian.** The transition leaves behind a gauge sector, a set of masses at the scale, and one coupling to be matched. **The left–right group is the group at $M_C$ and it has no width**: the same vacuum that produces it makes the right-handed bosons heavy, so below $M_C$ the description is the Standard Model's.
+**So the matching is a matching of a group and a spectrum, not of a Lagrangian.** The transition leaves behind a sector, a set of masses at the scale, and one coupling to be matched. **The left–right group is the group at $M_C$ and it has no width**: the same vacuum that produces it makes the right-handed bosons heavy, so below $M_C$ the description is the Standard Model's.
 
 **What this article establishes.** The four quantities that cross the boundary; the ordering of the two scales and why it is the only ordering available; the sense in which the left–right group is a stage of zero width rather than a second threshold; the fate of the mega coupling at the matching, including the tension the corpus already records and which the migration does not repair; the origin of every mass in the final spectrum; and the list of things that are *not* passed down, which is where the corpus's neutral sector and its mixing matrix stand.
 
@@ -42,7 +42,7 @@ $$
 | the six leptoquark vectors | $M_X^{2}=16g_4^{2}v_C^{2}$ | a bound, not a number |
 | the couplings | $g_3$, $g_{B-L}$ | matched at $M_C$; the matching is a separate ledger |
 
-**The group is the item that matters, and it is exact at the scale.** It is not an approximation and not a limit: **at $M_C$ the two factors are the gauge group of the theory, and above $M_C$ they are not a group at all** — above it there is one simple factor, and the two are a decomposition of the adjoint.
+**The group is the item that matters, and it is exact at the scale.** It is not an approximation and not a limit: **at $M_C$ the two factors are the symmetry group of the theory, and above $M_C$ they are not a group at all** — above it there is one simple factor, and the two are a decomposition of the adjoint.
 
 **The group has no width, and that is the article's one structural claim.** The vacuum that produces the two factors is a line in the carrier, $\operatorname{diag}(-3,1,1,1)$. **That one line is what makes the sextet heavy**, so the two-factor group and the mass of the six are the same event. **A stage of zero width is a description and not a threshold**: below $M_C$ the effective theory is colour and $B-L$, and the six are integrated out at the scale that produced them.
 
@@ -114,7 +114,7 @@ $$
 
 **What the migration does about it: nothing, and that is the correct amount.** The failure is a statement about unification — about whether one coupling at one scale can reproduce three measured ones — and the migration is a statement about origins. **A construction that births a group does not have to unify its couplings**, and pretending otherwise would be the kind of overreach that makes a reframing look like a solution.
 
-**What the migration does change, and it is worth being precise.** Before, the coupling failure was a failure of the model's *premise* — the premise being that $\mathrm{SU}(4)$ is the whole gauge structure. **After, the premise is that $\mathrm{SU}(4)$ is the whole gauge structure, and the electroweak couplings below $M_C$ are the Standard Model's.** The failure remains exactly as computed; **what changes is what it is a failure of.**
+**What the migration does change, and it is worth being precise.** Before, the coupling failure was a failure of the model's *premise* — the premise being that $\mathrm{SU}(4)$ is the whole structure. **After, the premise is that $\mathrm{SU}(4)$ is the whole structure, and the electroweak couplings below $M_C$ are the Standard Model's.** The failure remains exactly as computed; **what changes is what it is a failure of.**
 
 ## Where the Masses Come From
 

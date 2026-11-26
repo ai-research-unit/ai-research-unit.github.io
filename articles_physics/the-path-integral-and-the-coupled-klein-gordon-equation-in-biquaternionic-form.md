@@ -6,12 +6,12 @@ This article puts the coupled scalar action into the functional integral. *The P
 
 The substitution. Minimal coupling replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ in the kinetic term. Nothing else changes: the field stays in the centre, the measure stays flat, the mass term stays $\nu_m^{2}\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the phase stays central and $*$-unitary.
 
-The finding is one sentence, and the article is its unfolding. The exponent splits into three terms — the free one, a term linear in the potential times the current, and a term quadratic in the potential with no derivative — and the third term is what makes the sum gauge invariant, so the integral cannot be built from the current alone.
+The finding is one sentence, and the article is its unfolding. The exponent splits into three terms — the free one, a term linear in the potential times the current, and a term quadratic in the potential with no derivative — and the third term is what makes the sum invariant, so the integral cannot be built from the current alone.
 
 Four consequences follow, and each is stated exactly or checked.
 
 - The split is an algebraic identity, exact for every connection and every field, checked to $6\times10^{-15}$.
-- The gauge transformation of the integration variable is a rotation of the two real components at each point, so the measure is invariant with no Jacobian, and on a lattice the invariance requires the phase to be carried in an exponential link and not in a linear one.
+- The local transformation of the integration variable is a rotation of the two real components at each point, so the measure is invariant with no Jacobian, and on a lattice the invariance requires the phase to be carried in an exponential link and not in a linear one.
 - The Gaussian inverts the paired operator $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})-\nu_m^{2}$, which is the equation's operator for a purely vector connection and is not the equation's operator for a scalar potential.
 - The current is the first variation of the integral with respect to the connection, and its conservation is the differentiated form of the measure's invariance.
 
@@ -68,7 +68,7 @@ $$
 
 up to the term that carries $c_{\imath}$ twice, which is the third. The interaction is therefore the current times the potential plus the potential squared, and no other object appears.
 
-The third term has no derivative, and that is its function. It is the term a "current times potential" presentation omits. It is also the term that makes the exponent invariant: the current's term alone changes by a total derivative under a gauge transformation, and the potential-squared term is what supplies the rest. The gauge invariance of the exponent is a cancellation between the second and third terms, and the article states the cancellation before it states the consequence, because the consequence is the next section.
+The third term has no derivative, and that is its function. It is the term a "current times potential" presentation omits. It is also the term that makes the exponent invariant: the current's term alone changes by a total derivative under a local transformation, and the potential-squared term is what supplies the rest. The local invariance of the exponent is a cancellation between the second and third terms, and the article states the cancellation before it states the consequence, because the consequence is the next section.
 
 For fixed connection the exponent is quadratic in the field. Every term of the split is quadratic in $\Xi$ and the coefficients are fixed numbers, so the functional integral is a Gaussian for every connection, with a quadratic form that carries the $A^{2}$ term as part of its coefficient. The coupling does not spoil the Gaussian; it moves the quadratic form.
 
@@ -76,11 +76,11 @@ For fixed connection the exponent is quadratic in the field. Every term of the s
 
 The transformation is a rotation at each point. Write $\tilde\Xi\mapsto e^{iϑ_{\mathrm{gau}}}\tilde\Xi$ with $ϑ_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ and $\Lambda$ real. At one point the field is two real numbers, and the transformation rotates the pair by the angle $ϑ_{\mathrm{gau}}(x)$. A rotation has unit determinant, so the flat measure $\prod_x\mathrm{d}\Xi_1\mathrm{d}\Xi_2$ is invariant with no Jacobian at all. The measure's invariance is the statement that a local phase is orthogonal.
 
-The lattice version, and the one technical requirement. On a lattice the covariant difference between neighbouring sites must carry the phase as an exponential and not as a linear term. A link $U_{j}=e^{i(\Lambda_{j}-\Lambda_{j+1})}$ makes the determinant of the quadratic form equal to the free one exactly: the ratio of determinants for a random pure-gauge link field on six sites is $1.00000000000000$. The linearised link $U_j=1+i(\Lambda_j-\Lambda_{j+1})$ gives a ratio of $22.15$ on the same configuration. **The invariance is exact for the Wilson link and approximate for the linear one**, and the difference is the difference between a gauge transformation of the lattice and its first-order shadow.
+The lattice version, and the one technical requirement. On a lattice the covariant difference between neighbouring sites must carry the phase as an exponential and not as a linear term. A link $U_{j}=e^{i(\Lambda_{j}-\Lambda_{j+1})}$ makes the determinant of the quadratic form equal to the free one exactly: the ratio of determinants for a random pure-gauge link field on six sites is $1.00000000000000$. The linearised link $U_j=1+i(\Lambda_j-\Lambda_{j+1})$ gives a ratio of $22.15$ on the same configuration. **The invariance is exact for the Wilson link and approximate for the linear one**, and the difference is the difference between a local transformation of the lattice and its first-order shadow.
 
-What the invariance buys. The matter action, the mass term and the measure are each invariant, so the integral is a functional of the connection's gauge orbit and not of the connection. The variational companion says the same thing about the action; the integral adds the measure, and the measure's invariance is what makes the statement a statement about the integral and not only about the integrand.
+What the invariance buys. The matter action, the mass term and the measure are each invariant, so the integral is a functional of the connection's orbit and not of the connection. The variational companion says the same thing about the action; the integral adds the measure, and the measure's invariance is what makes the statement a statement about the integral and not only about the integrand.
 
-What it does not buy. The integral is not invariant under a transformation that moves the field and leaves the connection fixed, and that is the definition of a gauge symmetry rather than a symmetry. The article keeps the two apart throughout, because the current's conservation below is a consequence of the first and would be a false statement under the second.
+What it does not buy. The integral is not invariant under a transformation that moves the field and leaves the connection fixed, and that is the definition of a local symmetry rather than a symmetry. The article keeps the two apart throughout, because the current's conservation below is a consequence of the first and would be a false statement under the second.
 
 ## The Quadratic Form and the Operator It Inverts
 
@@ -162,13 +162,13 @@ The background-field reading. The determinant depends on the connection only thr
 
 Adds.
 
-- The three-way split of the exponent, exact, with the potential-squared term identified as the one that carries the gauge invariance.
+- The three-way split of the exponent, exact, with the potential-squared term identified as the one that carries the local invariance.
 - The measure's invariance as a rotation, with the lattice requirement that the link be an exponential; the Wilson link reproduces the free determinant to machine precision and the linearised link does not.
 - The identification of the operator the Gaussian inverts, and with it the statement that the integral and the equation can carry different poles in a scalar potential.
 - The current as the first variation of the integral, and its conservation as the differentiated measure invariance rather than as a consequence of the equations.
 - The fork between the two readings of the covariant square, restated as a choice of measure.
 
-No new prediction and no new solution: the integral is the standard charged scalar's. No continuum measure and no regularisation of the determinant's phase. No resolution of the scalar-potential sign question; the article sharpens it to a statement about the pole. No treatment of the interacting theory and none of the connection's own integral, which belongs to the gauge-field path integral article.
+No new prediction and no new solution: the integral is the standard charged scalar's. No continuum measure and no regularisation of the determinant's phase. No resolution of the scalar-potential sign question; the article sharpens it to a statement about the pole. No treatment of the interacting theory and none of the connection's own integral, which belongs to the connection path integral article.
 
 The honest ledger. The coupling contributes one term to the exponent, one freedom to the quadratic form, and one identity to the measure. Everything else — the centrality, the Gaussian, the semiclassical structure — is the free theory's, and the article's content is the location of the three.
 
@@ -186,9 +186,9 @@ The honest ledger. The coupling contributes one term to the exponent, one freedo
 
 ## Summary
 
-The coupled Klein–Gordon functional integral is the free one with the exponent's kinetic term covariantised, and its structure is the expansion of one squared modulus. The exponent splits into the free action, the current times the potential, and the potential squared, exactly and for every connection, the split checked to $6\times10^{-15}$. The third term carries the gauge invariance, so the coupling cannot be read as a current term alone.
+The coupled Klein–Gordon functional integral is the free one with the exponent's kinetic term covariantised, and its structure is the expansion of one squared modulus. The exponent splits into the free action, the current times the potential, and the potential squared, exactly and for every connection, the split checked to $6\times10^{-15}$. The third term carries the local invariance, so the coupling cannot be read as a current term alone.
 
-The measure is flat and the gauge transformation is a rotation at each point, so it is invariant with no Jacobian; on a lattice the invariance is exact only for a link that carries the phase in an exponential, and the free determinant is reproduced to machine precision in that case and not in the linearised one. The Gaussian inverts the paired operator: for a purely vector connection that is the equation's operator and the shell is the free one at the shifted wave number, and for a scalar potential the two operators differ and the difference is the variational companion's recorded cross term, here at the pole.
+The measure is flat and the local transformation is a rotation at each point, so it is invariant with no Jacobian; on a lattice the invariance is exact only for a link that carries the phase in an exponential, and the free determinant is reproduced to machine precision in that case and not in the linearised one. The Gaussian inverts the paired operator: for a purely vector connection that is the equation's operator and the shell is the free one at the shifted wave number, and for a scalar potential the two operators differ and the difference is the variational companion's recorded cross term, here at the pole.
 
 The current is the first variation of the integral with respect to the connection, and its conservation is the differentiated invariance of the measure, so it holds in every correlation function. The two readings of the covariant square become a choice of measure: the centre inverts the scalar operator, and the curvature's vector part needs a measure that does not factorise. Everything else in the integral is central, and the coupling changes no object's type.
 
@@ -199,12 +199,12 @@ The current is the first variation of the integral with respect to the connectio
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The covariant derivative; coefficients central |
 | $c_{\imath}=\frac{2\pi iϙ}{h}A_{\imath}$ | The slot's coefficient; $c_t$ real and $c_{\imath}$ imaginary for a material connection |
 | $S_{\mathrm{gco}}$ | The coupled matter action; the exponent's numerator |
-| $\exp(\frac{2\pi iS_{\mathrm{gco}}}{h})$ | The weight; central, $*$-unitary, invariant under a gauge transformation |
+| $\exp(\frac{2\pi iS_{\mathrm{gco}}}{h})$ | The weight; central, $*$-unitary, invariant under a local transformation |
 | $S_0$ | The free action |
 | $J_{\imath}=2\,\mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde\Xi\bigr]$ | The current; the coefficient of the exponent's linear term |
 | $\sum_{\imath}\lvert c_{\imath}\rvert^{2}\lvert\Xi\rvert^{2}$ | The potential-squared term; no derivative |
 | $\prod_x\mathrm{d}\Xi_1\mathrm{d}\Xi_2$ | The flat measure; invariant under a local phase |
-| $U_j=e^{i(\Lambda_j-\Lambda_{j+1})}$ | The Wilson link; exact gauge invariance on the lattice |
+| $U_j=e^{i(\Lambda_j-\Lambda_{j+1})}$ | The Wilson link; exact local invariance on the lattice |
 | $\sum_{\imath}(\partial_{\imath}-\bar c_{\imath})(\partial_{\imath}+c_{\imath})-\nu_m^{2}$ | The paired operator; the Gaussian's inverse |
 | $\Box_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}$ | The equation's operator; the squared reading |
 | $\bar c_{\imath}=-c_{\imath}$ | The condition for the two operators to coincide; holds for a vector connection |

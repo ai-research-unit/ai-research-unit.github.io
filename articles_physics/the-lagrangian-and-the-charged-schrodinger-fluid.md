@@ -8,7 +8,7 @@ Three results.
 
 *First, the minimal substitution acts inside the brackets and nowhere else.* The two replacements are $\partial_{t'}S\mapsto\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}$ and $\vec\nabla_\Phi S\mapsto\nabla S-q\vec A$, and they are the two slots of one object: the four-derivative of the phase. The gradient energy is untouched.
 
-*Second, the Lagrangian density is gauge invariant term by term, and not up to a total derivative.* The shift of the phase and the shift of the potential cancel inside each bracket, so no boundary term is needed and the invariance is exact in the density.
+*Second, the Lagrangian density is invariant term by term, and not up to a total derivative.* The shift of the phase and the shift of the potential cancel inside each bracket, so no boundary term is needed and the invariance is exact in the density.
 
 *Third, the action supplies the Clebsch structure that a rotational fluid needs, and it supplies it as a potential rather than as an extra pair of fields.* The velocity is $\vec\pi/m$, a gradient plus a potential; its curl is $ϙ\vec B/m$, which is the block's unconditional identity, and the rank is two because a three-vector curl is a rank-two object.
 
@@ -16,7 +16,7 @@ Position in the block. This is the variational companion of [The Charged Schröd
 
 ## Conventions
 
-The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection added: $ϙ$ is the coupling and equals minus the electric charge, $q=-ϙ$; $\omicron_{\mathrm{pot}}$ and $\vec A$ are the scalar and vector potentials; $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$; a gauge transformation is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$, $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$, $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. The field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, and the covariant derivative is $\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$, so the mechanical momentum is $\tilde P^{\mathrm{mech}}=\tilde P+ϙ\tilde A$.
+The conventions are restated here so that every sign below is checkable from this page alone. Those of the free companion, with the connection added: $ϙ$ is the coupling and equals minus the electric charge, $q=-ϙ$; $\omicron_{\mathrm{pot}}$ and $\vec A$ are the scalar and vector potentials; $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$; a local transformation is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\frac{2\pi ϙ\Gamma}{h}$, $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$, $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. The field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, and the covariant derivative is $\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$, so the mechanical momentum is $\tilde P^{\mathrm{mech}}=\tilde P+ϙ\tilde A$.
 
 ## The Action in the Fluid Variables
 
@@ -26,7 +26,7 @@ $$
 \boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}+\frac{\vec\pi^{2}}{2m}\Bigr)-\frac{hc}{8\pi^{2}\nu_m}(\vec\nabla_\Phi \varrho)^{2}\;}
 $$
 
-The first bracket is one object and not two. The combination $\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}$ is the time slot of the covariant derivative of the phase, and the corpus names it $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}}$, the kinetic energy. The spatial slot is $\vec\pi$, the kinetic momentum. **Both are gauge invariant and neither is separately meaningful**: a shift of the phase moves both, and a shift of the potential moves both back.
+The first bracket is one object and not two. The combination $\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}$ is the time slot of the covariant derivative of the phase, and the corpus names it $\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}}$, the kinetic energy. The spatial slot is $\vec\pi$, the kinetic momentum. **Both are invariant and neither is separately meaningful**: a shift of the phase moves both, and a shift of the potential moves both back.
 
 The gradient energy is unchanged, and the reason is algebraic. The third term carries the amplitude and its derivatives and no phase, so no substitution can reach it. In the word, the amplitude and the phase are separate factors and the connection is a central element: it multiplies the phase factor and commutes past the amplitude. That is the whole of the type argument, and in the action it is the statement that one term of four is untouched.
 
@@ -42,7 +42,7 @@ $$
 \vec v=\frac{\vec\pi}{m}.
 $$
 
-The equation is the free one with $\vec v$ replaced, and it is not a new equation. The charge current is $ϙ\vec j$ and its conservation is this continuity equation multiplied by $ϙ$; neither the coupling nor the field appears in it, which is the statement that the continuity equation is the gauge invariance's Noether identity and not the dynamics'.
+The equation is the free one with $\vec v$ replaced, and it is not a new equation. The charge current is $ϙ\vec j$ and its conservation is this continuity equation multiplied by $ϙ$; neither the coupling nor the field appears in it, which is the statement that the continuity equation is the local invariance's Noether identity and not the dynamics'.
 
 Varying the amplitude gives the energy equation, and its gradient is the Lorentz force.
 
@@ -80,7 +80,7 @@ and under $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ the combination $\vec\nabl
 
 The invariance is stronger than the free article's and it is a different kind. The free action is invariant under a constant shift of the phase, which is a global symmetry with a Noether current. This one is invariant under a *local* shift, which is a redundancy and not a symmetry: the current it implies is the charge current, and its conservation is an identity rather than a consequence of the equations. **A local invariance gives no conserved quantity beyond the one the global subgroup gives**, and the global subgroup here is the constant shift, whose current is $ϙ\rho_{\mathrm{num}}$ — the charge density.
 
-The canonical energy is gauge dependent and the fluid's energy is not. The Legendre transform of $\mathcal L_{\mathrm{fl}}$ in $\dot S$ gives $\rho_{\mathrm{num}}\vec\pi^{2}/2m+\mathcal E_{\mathrm{grad}}-\rho_{\mathrm{num}}ϙ\omicron_{\mathrm{pot}}$, which moves under a gauge transformation; the quantity $\mathcal E$ of the energy equation does not. This is the standard situation for a charged field, and it is worth stating because it limits what the article may call the fluid's energy: **$\mathcal E$ is the kinetic energy and it is gauge invariant; the canonical energy is the matter action's and only the sum with the field's energy is physical.** No thermodynamics is intended here, and the third category's local thermal state is a different object.
+The canonical energy is representative-dependent and the fluid's energy is not. The Legendre transform of $\mathcal L_{\mathrm{fl}}$ in $\dot S$ gives $\rho_{\mathrm{num}}\vec\pi^{2}/2m+\mathcal E_{\mathrm{grad}}-\rho_{\mathrm{num}}ϙ\omicron_{\mathrm{pot}}$, which moves under a local transformation; the quantity $\mathcal E$ of the energy equation does not. This is the standard situation for a charged field, and it is worth stating because it limits what the article may call the fluid's energy: **$\mathcal E$ is the kinetic energy and it is invariant; the canonical energy is the matter action's and only the sum with the field's energy is physical.** No thermodynamics is intended here, and the third category's local thermal state is a different object.
 
 ## The Structural Consequence: The Coupling Supplies the Clebsch Structure
 
@@ -112,15 +112,15 @@ with $q$ the charge. The velocity is the mechanical one, and that is the whole o
 
 The energy and the quantum potential. The stress is the free one, because the quantum potential depends on $\varrho$ alone and the coupling does not touch $\varrho$. So the charge current is covariantised and the stress is not, which is the article's *What the Charge Does Not Change* seen from the currents.
 
-The sign. The sign of the charge is the sign of $q$, and the density remains positive. The two are independent: a negative charge with a positive density is a negative temporal component, and the article's gauge-invariance section is what makes the pair consistent under a gauge transformation.
+The sign. The sign of the charge is the sign of $q$, and the density remains positive. The two are independent: a negative charge with a positive density is a negative temporal component, and the article's local invariance section is what makes the pair consistent under a local transformation.
 
 ## What the Principle Adds and What It Relabels: In the Fluid Chart
 
-Adds. The coupling as one substitution in one object, the four-derivative of the phase, rather than as three separate amendments to three equations. The gauge invariance as an exact property of the density, with the reason each term is separately invariant. The sign of the Lorentz force fixed once, at the potential energy's term. The Clebsch structure identified as the connection, which explains the rank and explains why the pair is free. And the quantum sector visible as the one term the connection cannot reach.
+Adds. The coupling as one substitution in one object, the four-derivative of the phase, rather than as three separate amendments to three equations. The local invariance as an exact property of the density, with the reason each term is separately invariant. The sign of the Lorentz force fixed once, at the potential energy's term. The Clebsch structure identified as the connection, which explains the rank and explains why the pair is free. And the quantum sector visible as the one term the connection cannot reach.
 
 Does not add. No new equation: the two Euler–Lagrange equations are the block's, and the acceleration law is the second's gradient. No new current: the charge current is the phase current multiplied by the coupling. No field equation: the action is the matter action, and $\vec E$ and $\vec B$ are given. No statement about the quantum potential's gauge behaviour beyond its invariance, which is the free article's.
 
-The one thing it states that the block does not. The block's charged article notes that the coupling adds no fourth datum and adds a redundancy. The action states the redundancy as the invariance of the density, and it lets the count be read: four terms, two of them gauge invariant only in pairs, one of them not gauge dependent at all, and one of them — the potential energy — whose partner is the phase's time derivative. **The count of independent gauge-invariant combinations is two**, $\mathcal E$ and $\vec\pi$, and they are the two the word's phase and boost would have supplied at the rung above.
+The one thing it states that the block does not. The block's charged article notes that the coupling adds no fourth datum and adds a redundancy. The action states the redundancy as the invariance of the density, and it lets the count be read: four terms, two of them invariant only in pairs, one of them not representative-dependent at all, and one of them — the potential energy — whose partner is the phase's time derivative. **The count of independent invariant combinations is two**, $\mathcal E$ and $\vec\pi$, and they are the two the word's phase and boost would have supplied at the rung above.
 
 ## What the Principle Adds and What It Relabels: The Fluid Alone
 
@@ -132,7 +132,7 @@ What it adds: the density fluctuation and the potential. The charge density is t
 
 What it does not add. No new equation: the continuity equation is the same continuity equation with a covariant divergence, and the article says so in one line.
 
-What it inherits. The gauge covariance, the nodal exception, and the frame's constrained character. The first is inherited exactly and the third is inherited with a shift, because the potential now depends on the frame and the frame is where the potential is extremal.
+What it inherits. The covariance, the nodal exception, and the frame's constrained character. The first is inherited exactly and the third is inherited with a shift, because the potential now depends on the frame and the frame is where the potential is extremal.
 
 What the coupling costs the fluid reading. Nothing. The fluid reading was already the reading in which the velocity is primary, and the coupling is a velocity shift, so the coupled fluid is the free fluid with one word changed. The article's brevity about it is deliberate.
 
@@ -152,7 +152,7 @@ The coupling. One substitution in the phase's four-derivative. Two terms changed
 
 The Clebsch structure. The velocity is a gradient plus a potential, so the connection *is* the second Clebsch potential and the vorticity's rank is two. The pair costs nothing because it is the field.
 
-Gauge invariance. Exact in the density, term by term, with no boundary term. The canonical energy is gauge dependent; $\mathcal E$ is not.
+Local invariance. Exact in the density, term by term, with no boundary term. The canonical energy is representative-dependent; $\mathcal E$ is not.
 
 ## Summary of Notation
 
@@ -160,16 +160,16 @@ Gauge invariance. Exact in the density, term by term, with no boundary term. The
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The word; the free article's, unchanged |
 | $ϙ$ | Coupling; minus the electric charge, $q=-ϙ$ |
-| $\omicron_{\mathrm{pot}}$, $\vec A$ | Scalar and vector potentials; gauge dependent |
-| $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
+| $\omicron_{\mathrm{pot}}$, $\vec A$ | Scalar and vector potentials; representative-dependent |
+| $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ | Phase; representative-dependent |
 | $\partial_{t'}S-ϙ\omicron_{\mathrm{pot}}$ | Time slot of the covariant derivative; the kinetic energy's negative |
-| $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Kinetic momentum; gauge invariant |
-| $\vec v=\vec\pi/m$ | Velocity; gauge invariant |
-| $\mathcal E=-\partial_{t'}S+ϙ\omicron_{\mathrm{pot}}$ | Kinetic energy; gauge invariant |
-| $\rho_{\mathrm{num}}=\varrho^{2}$ | Density; gauge invariant |
+| $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Kinetic momentum; invariant |
+| $\vec v=\vec\pi/m$ | Velocity; invariant |
+| $\mathcal E=-\partial_{t'}S+ϙ\omicron_{\mathrm{pot}}$ | Kinetic energy; invariant |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | Density; invariant |
 | $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; untouched by the coupling |
 | $\mathcal E_{\mathrm{grad}}=\frac{hc}{8\pi^{2}\nu_m}\int(\vec\nabla_\Phi \varrho)^{2}$ | Gradient energy; untouched by the coupling |
-| $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths; gauge invariant |
+| $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths; invariant |
 | $\xi_{\mathrm{pot},\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | Clebsch potentials; here $\xi_{\mathrm{pot},\mathrm{clb}}=S/m$, $\alpha_{\mathrm{clb}}=ϙ/m$, $\beta_{\mathrm{clb}}$ the potential's |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |

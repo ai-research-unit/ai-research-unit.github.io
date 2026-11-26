@@ -30,7 +30,7 @@ $$
 
 with $t_{a}$ the fifteen generators in whichever representation the field sits in, and the sign difference the statement that one carries the index up and the other down.
 
-**Why the coupling is the same $g_4$ and not a second one.** A gauge symmetry has one coupling per simple factor, and $\mathrm{SU}(4)$ is one factor. **The identity of the coupling across representations is what makes the gauge sector a gauge sector**, and it is the sense in which the primordial force is one force.
+**Why the coupling is the same $g_4$ and not a second one.** A local symmetry has one coupling per simple factor, and $\mathrm{SU}(4)$ is one factor. **The identity of the coupling across representations is what makes the sector a sector**, and it is the sense in which the primordial force is one force.
 
 **The content and the state count.**
 
@@ -48,7 +48,7 @@ $$
 j^{\xi}_{a,\imath}=\sum_{f=1}^{16}\bar\xi_{f}\gamma_{\imath}t_{a}\xi_{f},
 $$
 
-**a vector current, bilinear in the fields, and the only source of the gauge field above $M_C$ apart from the scalar's.** Its ordinary divergence is not zero; its covariant divergence is. **So no gauge charge exists in this phase**, and the corpus's conserved charges are properties of the residual group below $M_C$.
+**a vector current, bilinear in the fields, and the only source of the connection above $M_C$ apart from the scalar's.** Its ordinary divergence is not zero; its covariant divergence is. **So no gauge charge exists in this phase**, and the corpus's conserved charges are properties of the residual group below $M_C$.
 
 **The vertices, counted.** Each of the fifteen generators gives one vertex per Weyl field it acts on, and the count is read off the representation:
 
@@ -74,7 +74,7 @@ $$
 
 **The quartet would have given nothing at all.** $\bar{\mathbf4}\otimes\mathbf4\otimes\mathbf4$ has no singlet because $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$, and neither summand is $\bar{\mathbf4}$. **A scalar in the fundamental has no Yukawa coupling to these sixteen fermions**, so the operator's existence is an argument for the matrix index and not a convention about it.
 
-**The copy index is what the matrix $y$ acts on.** $\alpha,\beta$ run over the two values, and the gauge sector is blind to them: no vertex in the kinetic term carries $\alpha$. **So the Yukawa matrix is the only place where the two copies mix**, and its diagonalisation is a change of basis that no gauge interaction can see.
+**The copy index is what the matrix $y$ acts on.** $\alpha,\beta$ run over the two values, and the sector is blind to them: no vertex in the kinetic term carries $\alpha$. **So the Yukawa matrix is the only place where the two copies mix**, and its diagonalisation is a change of basis that no gauge interaction can see.
 
 **Four real parameters, and their count.** A $2\times2$ complex matrix has eight real entries, of which three phases are removed by rephasing the fermions and one by an overall phase that is unobservable; that leaves four. **The corpus's Yukawa article states the same count from the other side**, and the four are the sector's whole content.
 

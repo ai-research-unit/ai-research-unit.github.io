@@ -168,13 +168,13 @@ $$
 | the coupling | the strong coupling | its own, and it mixes downstream |
 | the fate below $M_C$ | massless, and it stays massless | massless until a second vacuum mixes it |
 
-**And the words matter here.** The singlet is a gauge boson of the unbroken colour group in the same sense that the eight are — **but it is not a gluon**, because a gluon is a boson of the non-abelian factor. **Calling it a ninth gluon would be the same error as calling the photon a fourth weak boson**: the count of the factor's adjoint is eight, and the ninth slot belongs to a different factor.
+**And the words matter here.** The singlet is a connection of the unbroken colour group in the same sense that the eight are — **but it is not a gluon**, because a gluon is a boson of the non-abelian factor. **Calling it a ninth gluon would be the same error as calling the photon a fourth weak boson**: the count of the factor's adjoint is eight, and the ninth slot belongs to a different factor.
 
-**The objection, named before it is answered.** *If the singlet is the $B-L$ boson, is the exclusion of the singlet not a bookkeeping artefact?* **No, and the arithmetic shows why.** The exclusion is the statement $\dim\mathfrak{su}(3)=8$ rather than $9$; the model happens to possess a ninth vector, and that vector is not in the adjoint of $\mathrm{SU}(3)$. **A theory with a $\mathrm{U}(3)$ gauge group would have nine, and would be a different theory with a different spectrum.**
+**The objection, named before it is answered.** *If the singlet is the $B-L$ boson, is the exclusion of the singlet not a bookkeeping artefact?* **No, and the arithmetic shows why.** The exclusion is the statement $\dim\mathfrak{su}(3)=8$ rather than $9$; the model happens to possess a ninth vector, and that vector is not in the adjoint of $\mathrm{SU}(3)$. **A theory with a $\mathrm{U}(3)$ symmetry group would have nine, and would be a different theory with a different spectrum.**
 
 ## The Labels Are Coordinates Here Too
 
-**Nothing about the previous article's argument changes at $M_C$.** The gauge field is still $A_\mu=\sum_{a}A^{a}_\mu t_{a}$, the index is still a coordinate, and a gauge transformation still rotates the components:
+**Nothing about the previous article's argument changes at $M_C$.** The connection is still $A_\mu=\sum_{a}A^{a}_\mu t_{a}$, the index is still a coordinate, and a local transformation still rotates the components:
 
 $$
 A_\mu\ \longmapsto\ U A_\mu U^{\dagger}+\tfrac{i}{g_3}U\partial_\mu U^{\dagger},

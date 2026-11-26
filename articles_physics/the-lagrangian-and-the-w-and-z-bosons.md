@@ -25,7 +25,7 @@ S=\int d^4r\;\Bigl[-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\
 +\sum_{\imath}\bigl(D_{\imath}\omicron_{\mathrm{hgs}}\bigr)^{\dagger}\bigl(D_{\imath}\omicron_{\mathrm{hgs}}\bigr)-V(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})\Bigr],
 $$
 
-varying $W_{a,\imath}$ and $B_{\imath}$ gives the parent's equations with the scalar current as source, and evaluating the scalar at its minimum turns the kinetic term into a mass term for two of the four gauge fields.
+varying $W_{a,\imath}$ and $B_{\imath}$ gives the parent's equations with the scalar current as source, and evaluating the scalar at its minimum turns the kinetic term into a mass term for two of the four connections.
 
 *Second, the masses are forced by one number.* Every mass in the sector is $g\,v/2$ or $\sqrt{g^2+g_{\mathrm Y}^2}\,v/2$, and the ratio is fixed at one,
 
@@ -41,7 +41,7 @@ The electroweak action is standard and is imported whole. What the corpus contri
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$, used for the fermion and scalar elements; the gauge fields are written in components, because the $SU(2)$ factor is not carried by a single algebra element.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$, used for the fermion and scalar elements; the connections are written in components, because the $SU(2)$ factor is not carried by a single algebra element.
 
 The group and the couplings. $SU(2)_L$ with coupling $g$ and generators $\tau_{a}=\sigma_{a}/2$ in the doublet; $\mathrm{U}(1)_Y$ with coupling $g_{\mathrm Y}$ and hypercharge $Y$. The doublet has $Y_{\mathrm{hch}}=\tfrac12$ and $T_3=\pm\tfrac12$ on its two components.
 
@@ -53,7 +53,7 @@ The sign convention. The curvature terms enter with $-\tfrac14$, the scalar kine
 
 ## The Action in Element Form
 
-The gauge sector. Two curvatures and their squares,
+The sector. Two curvatures and their squares,
 
 $$
 \mathcal{L}_{\mathrm{gauge}}=-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14\sum_{\imath,\jmath}B_{\imath\jmath}B_{\imath\jmath},
@@ -69,7 +69,7 @@ $$
 D_{\imath}=\partial_{\imath}+ig\sum_a\tau_{a} W_{a,\imath}+i g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath} .
 $$
 
-The covariant derivative is where the masses live: it contains the gauge fields multiplied by the generators, and when $\omicron_{\mathrm{hgs}}$ is replaced by its vacuum value the product becomes a constant matrix times $W_{\imath} W_{\imath}$.
+The covariant derivative is where the masses live: it contains the connections multiplied by the generators, and when $\omicron_{\mathrm{hgs}}$ is replaced by its vacuum value the product becomes a constant matrix times $W_{\imath} W_{\imath}$.
 
 The mass term from the vacuum. Writing $\omicron_{\mathrm{hgs}}=\langle\omicron_{\mathrm{hgs}}\rangle+\digamma_{\mathrm{hgs}}$ and keeping the quadratic terms,
 
@@ -77,7 +77,7 @@ $$
 \sum_{\imath}\bigl(D_{\imath}\omicron_{\mathrm{hgs}}\bigr)^{\dagger}\bigl(D_{\imath}\omicron_{\mathrm{hgs}}\bigr)\supset\frac{v^2}{8}\Bigl[g^2\bigl(W_{1,\imath} W_{1,\imath}+W_{2,\imath} W_{2,\imath}\bigr)+\bigl(gW_{3,\imath}-g_{\mathrm Y}B_{\imath}\bigr)^{2}\Bigr],
 $$
 
-which is a mass matrix for the four gauge fields. It is rank three: one combination is massless, and that combination is the photon.
+which is a mass matrix for the four connections. It is rank three: one combination is massless, and that combination is the photon.
 
 The diagonalization. With
 
@@ -107,7 +107,7 @@ Why the linear combination and not another. The mass matrix in the $(W_3,B)$ pla
 
 **The pairing is the Hermitian norm, and it is what makes the scalar's kinetic term real and positive.** $\sum_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^{\dagger}(D_{\imath}\omicron_{\mathrm{hgs}})$ is a sum of squared norms, real and non-negative term by term. The gauge kinetic terms are real because $W_{a,\imath\jmath}$ and $B_{\imath\jmath}$ are real in components and their squares carry the corpus's sign rule.
 
-Why the scalar needs the dagger and the gauge fields do not. The scalar is complex, so its kinetic term needs a conjugate to be real; the gauge fields are real, so theirs does not. The asymmetry is a statement about the representations and not about the pairing.
+Why the scalar needs the dagger and the connections do not. The scalar is complex, so its kinetic term needs a conjugate to be real; the connections are real, so theirs does not. The asymmetry is a statement about the representations and not about the pairing.
 
 Three coefficients: two couplings and one vacuum value. $g$ and $g_{\mathrm Y}$ are dimensionless; $v$ has dimension of mass. The masses are products $g\,v$, so their dimensions are right by construction, and the ratio $M_Z/M_W$ is a pure number fixed by the two couplings.
 
@@ -123,7 +123,7 @@ Reality does not buy the masses, the mixing angle or $\rho=1$. Three things the 
 
 ## The Variation: The Currents Are the Sources
 
-The variation with respect to the gauge fields. Varying $W_{a,\imath}$ and integrating by parts,
+The variation with respect to the connections. Varying $W_{a,\imath}$ and integrating by parts,
 
 $$
 \delta S=\int d^4r\;\Bigl[\delta W_{a,\imath}\Bigl(D_{\jmath} W_{a,\imath\jmath}-j_{a,\imath}\Bigr)\Bigr],
@@ -147,7 +147,7 @@ The check that would catch a factor. At the vacuum, $j_{a,\imath}=0$ for the unb
 
 ## The Constraints the Action Imposes: Four Gauss Laws and One Massless Mode
 
-The constraint structure. Each gauge field brings a first-class constraint, the Gauss law $D_j W_{a,0j}=j_{a,0}$, so four constraints act on eight gauge components, and the three Goldstones are not removed by the constraints but absorbed as longitudinal modes. Counting polarisation states before and after the breaking,
+The constraint structure. Each connection brings a first-class constraint, the Gauss law $D_j W_{a,0j}=j_{a,0}$, so four constraints act on eight gauge components, and the three Goldstones are not removed by the constraints but absorbed as longitudinal modes. Counting polarisation states before and after the breaking,
 
 $$
 \underbrace{8}_{\text{four vectors, massless}}+\underbrace{4}_{\text{four scalars}}\;=\;\underbrace{9}_{\text{three massive vectors}}+\underbrace{2}_{\text{photon}}+\underbrace{1}_{\text{radial scalar}}\;=\;12 ,
@@ -155,11 +155,11 @@ $$
 
 so no mode is lost and none is added: three of the four scalars become the longitudinal modes of the three vectors that acquire a mass, and what remains is three massive vectors of three modes each, a massless vector of two and one radial scalar. In particles rather than modes the same spectrum is five states, $W^{+}$, $W^{-}$, $Z$, $A$ and $h$. The count is the same in any gauge; the distribution is not.
 
-Why the Goldstones are removed and not the modes. The scalar's four components are three Goldstones and one radial mode, and the three Goldstones become the longitudinal polarizations of the three massive gauge fields. The bookkeeping is exact: three massless gauge fields would have six polarizations in total counting the photon, and three massive ones have nine, so three polarizations must be supplied, and the Goldstones supply them.
+Why the Goldstones are removed and not the modes. The scalar's four components are three Goldstones and one radial mode, and the three Goldstones become the longitudinal polarizations of the three massive connections. The bookkeeping is exact: three massless connections would have six polarizations in total counting the photon, and three massive ones have nine, so three polarizations must be supplied, and the Goldstones supply them.
 
 The one massless combination. The photon's masslessness is the vanishing eigenvalue of the mass matrix, and it is a constraint in the technical sense: the unbroken $\mathrm{U}(1)_{\mathrm{em}}$ generator annihilates the vacuum, so its Gauss law survives as a constraint and the corresponding field stays massless. That is the same mechanism as in the electromagnetic article, with the generator being the combination $Q=T_3+Y$.
 
-The check that the count is gauge independent. In the $R_\xi$ gauge the Goldstones are kept with $\xi$-dependent masses and the same twelve modes over the same five states appear; in the unitary gauge they are removed and the gauge propagators take their Proca form. The two descriptions differ in what is counted and agree in what is physical, which is the content of the gauge-fixing article for this sector.
+The check that the count is gauge independent. In the $R_\xi$ gauge the Goldstones are kept with $\xi$-dependent masses and the same twelve modes over the same five states appear; in the unitary gauge they are removed and the gauge propagators take their Proca form. The two descriptions differ in what is counted and agree in what is physical, which is the content of the fixing the representative article for this sector.
 
 ## The Structural Consequence: Masses Are Couplings Times a Vacuum Value
 
@@ -219,7 +219,7 @@ The distinction that matters. The action is symmetric and the vacuum is not. Eve
 
 ## Summary
 
-The action. Gauge kinetic terms plus one scalar's covariant kinetic term and potential. Varying the gauge fields gives the Yang–Mills equations with the scalar current as source; evaluating the scalar at its minimum turns the kinetic term into masses $M_W=gv/2$ and $M_Z=M_W/\cos\theta_W$.
+The action. Gauge kinetic terms plus one scalar's covariant kinetic term and potential. Varying the connections gives the Yang–Mills equations with the scalar current as source; evaluating the scalar at its minimum turns the kinetic term into masses $M_W=gv/2$ and $M_Z=M_W/\cos\theta_W$.
 
 The three findings. The masses are not parameters but products of a coupling and the vacuum value, so the action needs no mass term and forbids one. The ratio $\rho=1$ is a consequence of the single doublet. The photon's masslessness is the zero eigenvalue of a rank-three mass matrix.
 

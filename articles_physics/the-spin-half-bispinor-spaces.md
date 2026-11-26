@@ -388,11 +388,11 @@ $$
 
 The norm says that a mass pairs the two closures; this says that the pairing does not move the value.
 
-The interpretation: gauge invariance of a mass. A mass term that pairs the two ideals ties their two charges together, and the archive's selection rule is the statement of that tie: a bare Dirac mass is gauge invariant if and only if the two chiral charges are equal, and a chiral fermion is massless in the unbroken phase. The pairing is the algebraic reason the tie exists, and the entry reports the rule as the archive's and claims only the pairing for itself.
+The interpretation: local invariance of a mass. A mass term that pairs the two ideals ties their two charges together, and the archive's selection rule is the statement of that tie: a bare Dirac mass is invariant if and only if the two chiral charges are equal, and a chiral fermion is massless in the unbroken phase. The pairing is the algebraic reason the tie exists, and the entry reports the rule as the archive's and claims only the pairing for itself.
 
 The interpretation: why the pairing is symmetric. The polar form $B$ is symmetric, so $B(X_+,X_-)=B(X_-,X_+)$ and the exchange of the two names changes nothing. There is no sign to track, and no antisymmetric structure enters the mass. The fermionic minus sign belongs to the action of a full turn and to the exchange of two particles, not to this pairing; the entry states that separation because the two are easy to conflate.
 
-Why the mass is not a fifth force and not a scalar. The mass coefficient is central, so it commutes with everything and multiplies both ideals by the same number. It is a number and not an element of a sector: it does not sit in $\mathbb{B}_\Psi$, it does not sit in $\mathbb{B}_\Phi$, and no gauge field couples to it. The algebra gives the shape of the pairing and gives no value: $\nu_m$ is a parameter, and the entry states that as a boundary rather than as a gap.
+Why the mass is not a fifth force and not a scalar. The mass coefficient is central, so it commutes with everything and multiplies both ideals by the same number. It is a number and not an element of a sector: it does not sit in $\mathbb{B}_\Psi$, it does not sit in $\mathbb{B}_\Phi$, and no connection couples to it. The algebra gives the shape of the pairing and gives no value: $\nu_m$ is a parameter, and the entry states that as a boundary rather than as a gap.
 
 ## The Sector Question
 

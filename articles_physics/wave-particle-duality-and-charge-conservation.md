@@ -268,7 +268,7 @@ The map is read on the vector part, and the whole algebra gives other numbers. R
 
 The labels on the circular pair are the companion article's. $(\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2},\vec u_\Phi)$ is right-handed, and the circular pair carries the plus sign on the first of them. A different triad exchanges the labels and leaves every dimension and every residual unchanged.
 
-No value of a mass, no gauge invariance, no statement about a state. The article computes the cokernel of a massless symbol in a medium. It does not derive the mass shell, it does not exhibit a gauge freedom, and it does not assert that a physical photon occupies one circular polarisation rather than another. The identification of the second member as a helicity selection rule is an interpretation of a linear constraint, and the algebra alone does not supply it.
+No value of a mass, no local invariance, no statement about a state. The article computes the cokernel of a massless symbol in a medium. It does not derive the mass shell, it does not exhibit a redundancy, and it does not assert that a physical photon occupies one circular polarisation rather than another. The identification of the second member as a helicity selection rule is an interpretation of a linear constraint, and the algebra alone does not supply it.
 
 ## Summary
 

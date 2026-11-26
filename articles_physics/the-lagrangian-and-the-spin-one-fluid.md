@@ -4,7 +4,7 @@
 
 The Proca field is $A_{\imath}=r\,u_{\imath}$: a magnitude and a direction, which are a density and a velocity. So the fluid is not a reading of a polar decomposition imposed from outside — it is the field's own parameterisation, and the action written in it is the Proca action and nothing else.
 
-*First, one term of the action does two things, and they are the same thing.* The mass term $\frac{\nu_m^{2}}{2}r^{2}$ removes the gauge freedom and supplies the Lorenz condition; the Lorenz condition in the fluid's variables is $\sum_{\imath}\partial_{\imath}(ru_{\imath})=0$, which is continuity. The spin-one fluid's continuity is the replacement for its lost gauge freedom, and both come from one term.
+*First, one term of the action does two things, and they are the same thing.* The mass term $\frac{\nu_m^{2}}{2}r^{2}$ removes the redundancy and supplies the Lorenz condition; the Lorenz condition in the fluid's variables is $\sum_{\imath}\partial_{\imath}(ru_{\imath})=0$, which is continuity. The spin-one fluid's continuity is the replacement for its lost redundancy, and both come from one term.
 
 *Second, the density's variation and the direction's variation are the longitudinal and transverse parts of the field equation, and the Lorenz condition is neither: it is their consequence*, by the identity $\sum_{\imath,\jmath}\partial_{\imath}\partial_{\jmath} F_{\jmath\imath}=0$. The action therefore explains the block's phrase that the free incompressibility is the mass's gift: without the mass the identity has nothing to balance, and the condition does not arise.
 
@@ -78,7 +78,7 @@ $$
 
 because $F$ is antisymmetric. **The Lorenz condition is therefore a consequence of the equation and not a condition imposed on it, and it exists exactly when $\nu_m\ne0$.**
 
-The same term removes the gauge freedom. With $\nu_m=0$ the action is invariant under $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$; with $\nu_m\ne0$ it is not, because the mass term is not. One term supplies the condition and destroys the freedom the condition replaces, and the two statements are the same statement seen from two sides: a massless vector has a redundancy and no condition, a massive one has a condition and no redundancy, and the count of physical components is the same in both cases.
+The same term removes the redundancy. With $\nu_m=0$ the action is invariant under $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Gamma$; with $\nu_m\ne0$ it is not, because the mass term is not. One term supplies the condition and destroys the freedom the condition replaces, and the two statements are the same statement seen from two sides: a massless vector has a redundancy and no condition, a massive one has a condition and no redundancy, and the count of physical components is the same in both cases.
 
 In the fluid's variables the condition is continuity. With $A_{\imath}=r\,u_{\imath}$,
 
@@ -116,11 +116,11 @@ Three statements, and the block makes each of them in the equations' language.
 
 ## What the Principle Adds and What It Relabels: In the Fluid Chart
 
-Adds. The mass term's double role, stated once: it removes the gauge freedom and supplies the condition that replaces it, and in the fluid's variables that condition is continuity. The pair of variations as the field equation's longitudinal and transverse parts, with the Lorenz condition as their consequence by an identity. The multiplier's necessity and its reading as a pressure. The decomposition of the field strength into vorticity and density gradient. And the reason this rung has no quantum force: the action has no second derivative of the magnitude.
+Adds. The mass term's double role, stated once: it removes the redundancy and supplies the condition that replaces it, and in the fluid's variables that condition is continuity. The pair of variations as the field equation's longitudinal and transverse parts, with the Lorenz condition as their consequence by an identity. The multiplier's necessity and its reading as a pressure. The decomposition of the field strength into vorticity and density gradient. And the reason this rung has no quantum force: the action has no second derivative of the magnitude.
 
-Does not add. No new equation: the four components are the field's. No new current: the Proca current is $\nu_m^{2}A_{\imath}$ up to the normalisation, and it is the field. No gauge invariance to discuss, because the mass removed it. No thermodynamics, and no quantum potential, since this rung has none. And no statement about the massless limit's fluid reading, which the block's article explicitly denies.
+Does not add. No new equation: the four components are the field's. No new current: the Proca current is $\nu_m^{2}A_{\imath}$ up to the normalisation, and it is the field. No local invariance to discuss, because the mass removed it. No thermodynamics, and no quantum potential, since this rung has none. And no statement about the massless limit's fluid reading, which the block's article explicitly denies.
 
-The one thing the action says that the equations cannot. The Lorenz condition, the loss of gauge freedom, the continuity equation and the stiffness of the flow are four statements about four different objects, and in the action they are one term. That is the strongest case in the layer for writing the fluid's Lagrangian: not a new result, but the location of four results in one coefficient.
+The one thing the action says that the equations cannot. The Lorenz condition, the loss of redundancy, the continuity equation and the stiffness of the flow are four statements about four different objects, and in the action they are one term. That is the strongest case in the layer for writing the fluid's Lagrangian: not a new result, but the location of four results in one coefficient.
 
 ## What the Principle Adds and What It Relabels: The Fluid Alone
 
@@ -148,7 +148,7 @@ The multiplier's sign. $\digamma_{\mathrm{lgr}}$ is determined by the equations 
 
 The action. $\mathcal L=\frac12[(\partial r)^{2}-(u\cdot\partial r)^{2}]-\frac{r^{2}}{4}\omega^{2}-\sum_{\imath,\jmath}\varepsilon_{\imath} r\,\omega_{\imath\jmath}\partial_{\imath} r\,u_{\jmath}+\frac{4\pi^{2}\nu_m^{2}}{2}r^{2}$, with $A=ru$ and $u^{2}=-1$.
 
-The mass term. It removes the gauge freedom, supplies the Lorenz condition, and in the fluid's variables that condition is continuity $\sum_{\imath}\partial_{\imath}(ru_{\imath})=0$. One term, four statements.
+The mass term. It removes the redundancy, supplies the Lorenz condition, and in the fluid's variables that condition is continuity $\sum_{\imath}\partial_{\imath}(ru_{\imath})=0$. One term, four statements.
 
 The variations. The density's is the field equation's longitudinal part, the direction's its transverse part, and the Lorenz condition is their consequence by $\partial\partial F=0$.
 

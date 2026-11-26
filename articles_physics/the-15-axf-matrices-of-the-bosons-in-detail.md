@@ -16,7 +16,7 @@
 
 | boson | kind | array | cells moved | mass |
 | --- | --- | --- | --- | --- |
-| $B'$ | the fifteenth gauge boson, the corner | $iD$ | the four diagonal cells | $0$ in this phase |
+| $B'$ | the fifteenth connection, the corner | $iD$ | the four diagonal cells | $0$ in this phase |
 | $\bar X^{r}$ | the red leptoquark, charge $-\tfrac23$ | $A_{tx}$ | $(t,x)$ and $(x,t)$ | $32v^{2}$ |
 | $X^{r}$ | the red leptoquark, charge $+\tfrac23$ | $iS_{tx}$ | $(t,x)$ and $(x,t)$ | $32v^{2}$ |
 | $\bar X^{g}$ | the green leptoquark, charge $-\tfrac23$ | $A_{ty}$ | $(t,y)$ and $(y,t)$ | $32v^{2}$ |

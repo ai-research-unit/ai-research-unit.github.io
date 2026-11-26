@@ -144,7 +144,7 @@ $$
 | mixed plane | $(t,a)$: colour $\to$ lepton | $\tfrac13(-3-1)=-\tfrac43$ | $+\tfrac43$ | $+\tfrac23$ |
 | mixed plane | $(a,t)$: lepton $\to$ colour | $\tfrac13(1+3)=+\tfrac43$ | $-\tfrac43$ | $-\tfrac23$ |
 
-**The $Q$ column is half the $B-L$ column, and that is not a coincidence.** Every gauge vertex is diagonal in the copy index, so $\tau_{3}$ is the same before and after: **$\Delta Q=\Delta(B-L)/2$ for the fermion, which is why the boson's $Q$ is $\mp\tfrac23$ where its $B-L$ is $\mp\tfrac43$.** The two charges agree on the gauge sector because the gauge sector cannot see $\tau_{3}$.
+**The $Q$ column is half the $B-L$ column, and that is not a coincidence.** Every gauge vertex is diagonal in the copy index, so $\tau_{3}$ is the same before and after: **$\Delta Q=\Delta(B-L)/2$ for the fermion, which is why the boson's $Q$ is $\mp\tfrac23$ where its $B-L$ is $\mp\tfrac43$.** The two charges agree on the sector because the sector cannot see $\tau_{3}$.
 
 **The six mixed planes in the naming of particles.**
 
@@ -176,7 +176,7 @@ $$
 
 1. **No generator changes the copy index.** Every array is $\mathbb 1_{2}$ on $\alpha$, so $(X\otimes\mathbb 1_{2})$ has no entry between $\alpha=1$ and $\alpha=2$. **The consequence is that no gauge vertex converts a $\nu$ into an $e$ or a $u$ into a $d$**, and there is no $W$ in the model for the same reason. The copy index carries a global $\mathrm{U}(2)$ that the gauge sector cannot see; **whether the Yukawa sector breaks it is [the Yukawa article](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html)'s question.**
 2. **No generator has two entries on the lepton line.** The corner has one, the six mixed planes have one each in the $t$ row, and the colour block has none. **So a lepton can be turned into a quark or given a phase, and not into another lepton.**
-3. **No generator carries $T_{3}$.** The fifteen are $\mathbb 1$ on the copy index, so no combination of them can produce $\tau_{3}$: **$[\mathbb 1_{4}\otimes\tau_{3},X\otimes\mathbb 1_{2}]=0$ for every $X$ in the fifteen, so $\tau_{3}$ commutes with the whole gauge algebra and is not in it.** That is the wall, and it is a commutation statement.
+3. **No generator carries $T_{3}$.** The fifteen are $\mathbb 1$ on the copy index, so no combination of them can produce $\tau_{3}$: **$[\mathbb 1_{4}\otimes\tau_{3},X\otimes\mathbb 1_{2}]=0$ for every $X$ in the fifteen, so $\tau_{3}$ commutes with the whole algebra and is not in it.** That is the wall, and it is a commutation statement.
 
 ## What the Article Does Not Do
 
