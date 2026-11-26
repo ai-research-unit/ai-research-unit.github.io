@@ -59,9 +59,9 @@ and the full correlators are the derivatives of $Z$ itself. The formalism is the
 $$
 W[\tilde J_{\Phi}] = \tfrac12\big\langle \tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\big\rangle ,
 \qquad\text{equivalently}\qquad
-W[\tilde J_{\Phi}] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\langle\tilde J_{\Phi}(-k),\tilde J_{\Phi}(k)\rangle}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}c^{2}},
+W[\tilde J_{\Phi}] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\langle\tilde J_{\Phi}(-k),\tilde J_{\Phi}(k)\rangle}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+4\pi^{2}\nu_m^{2}},
 $$
-using the wave biquaternion $\tilde Q_{\Phi}=i(E/c)e_t+\vec p$ and $N(\tilde Q_{\Phi})=\tilde Q_{\Phi}\tilde Q_{\Phi}^{\natural}$. The kernel displayed is that of the kinetic operator $-\Box_\Phi+4\pi^{2}\nu_m^{2}$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+m^{2}\,c^{2}$; the action's operator is $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$, whose symbol is $-\mathcal{M}$, so the kernel of $W_{\mathrm{kinetic}}{}^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+m^{2}\,c^{2}$, as before. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
+using the wave biquaternion $\tilde Q_{\Phi}=i(E/c)e_t+\vec p$, read in wave-number units, and $N(\tilde Q_{\Phi})=\tilde Q_{\Phi}\tilde Q_{\Phi}^{\natural}$. The kernel displayed is that of the kinetic operator $-\Box_\Phi+4\pi^{2}\nu_m^{2}$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+4\pi^{2}\nu_m^{2}$; the action's operator is $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$, whose symbol is $-\mathcal{M}$, so the kernel of $W_{\mathrm{kinetic}}{}^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+4\pi^{2}\nu_m^{2}$, as before. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
 **A remark on the trace.** The derivative $\delta W/\delta\tilde J_{\Phi}$ is defined through the pairing, and because the pairing is a real bilinear form on the module, it takes a module-valued source to a module-valued classical field. No privileged matrix basis is needed; the derivative is the module's own gradient. This will matter in the next section, where the Legendre transform is taken on the module and not on a coordinate vector space.
 
@@ -102,9 +102,9 @@ holds exactly. These are the two standard identities of the Legendre transform; 
 
 **Finite-dimensional verification.** With a Hermitian positive-definite
 $$
-W_{\mathrm{kinetic}} \to K = \begin{pmatrix} 2 & 0.3 & 0 \ 0.3 & 1.4 & 0.2 \ 0 & 0.2 & 1.1 \end{pmatrix},
+W_{\mathrm{kinetic}} \to K = \begin{pmatrix} 2 & 0.3 & 0 \\ 0.3 & 1.4 & 0.2 \\ 0 & 0.2 & 1.1 \end{pmatrix},
 $$
-and source $J=(0.5,-0.4,0.9)$, the classical field is $\xi=A_{\mathrm{cph}}^{-1}J=(0.322647,-0.484316,0.906239)$, and
+and source $J=(0.5,-0.4,0.9)$ — $A_{\mathrm{cph}}$ is the matrix of the quadratic form in this real basis, so $A_{\mathrm{cph}}=K$ here — the classical field is $\xi=A_{\mathrm{cph}}^{-1}J=(0.322647,-0.484316,0.906239)$, and
 $$
 W[J]=\tfrac12 J^T A_{\mathrm{cph}}^{-1}J = 0.58533264 = \tfrac12\xi^T K\xi = \Gamma[\xi],
 \qquad
@@ -170,10 +170,10 @@ The minimizer is the vacuum expectation value of the field, and the curvature at
 
 **Tree-level vacuum.** At tree level $V_{\mathrm{eff}}=V$, and for the biquaternion scalar
 $$
-V(\tilde{Ξ}_{\mathrm{cl}}) = m^2\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Ξ}^{*}_{\mathrm{cl}}\tilde{Ξ}_{\mathrm{cl}}\big)
-= \tfrac12 m^2\,\big\langle \tilde{Ξ}_{\mathrm{cl}},\tilde{Ξ}_{\mathrm{cl}}\big\rangle ,
+V(\tilde{Ξ}_{\mathrm{cl}}) = 4\pi^{2}\nu_m^{2}\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Ξ}^{*}_{\mathrm{cl}}\tilde{Ξ}_{\mathrm{cl}}\big)
+= \tfrac12\,4\pi^{2}\nu_m^{2}\,\big\langle \tilde{Ξ}_{\mathrm{cl}},\tilde{Ξ}_{\mathrm{cl}}\big\rangle ,
 $$
-whose minimum is $\tilde{Ξ}_{\mathrm{cl}}=0$ for $m^2>0$, the symmetric vacuum. A one-mode truncation of this field is exactly the two-level structure of *The Biquaternion Vacuum as a Minimal Idempotent*: the constant mode's energy is quadratic in the norm, the number operator is multiplication by the idempotent $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$, and the ground state is a minimal idempotent of $\mathbb{B}_{\Psi}$ selected by the sign of the quadratic term. The one-mode ground state is the field-theoretic statement of the vacuum-selection rule that the earlier article states algebraically.
+whose minimum is $\tilde{Ξ}_{\mathrm{cl}}=0$ for $4\pi^{2}\nu_m^{2}>0$, the symmetric vacuum. A one-mode truncation of this field is exactly the two-level structure of *The Biquaternion Vacuum as a Minimal Idempotent*: the constant mode's energy is quadratic in the norm, the number operator is multiplication by the idempotent $\tilde\Pi_{\mathrm{id},-}=\tfrac12(e_t-i\vec e_z)$, and the ground state is a minimal idempotent of $\mathbb{B}_{\Psi}$ selected by the sign of the quadratic term. The one-mode ground state is the field-theoretic statement of the vacuum-selection rule that the earlier article states algebraically.
 
 **The one-loop potential and convexity.** The one-loop correction
 $$
@@ -181,7 +181,7 @@ V_{\mathrm{eff}}(\tilde{Ξ}_{\mathrm{cl}}) = V(\tilde{Ξ}_{\mathrm{cl}}) +\frac{
 $$
 is the standard Coleman–Weinberg form, and it is manifestly convex in the region where $\frac{d^2V}{d\xi^2}>0$; where the tree potential is non-convex the one-loop potential is amended by the Maxwell construction, which is exactly the statement that the Legendre transform is the convex envelope of $W$. The framework's contribution is again the real form with respect to which the convexity is taken, and the orthogonality of the sectors. The standard results are transcribed and cited.
 
-**Finite-dimensional convexity check.** For the one-dimensional model $V(\xi)=\tfrac12 m^2\xi^2+\tfrac{\digamma_{\mathrm{qtc}}}{4}\xi^4$ with $4\pi^{2}\nu_m^{2}=1.3$, $\digamma_{\mathrm{mix}}=0.7$, the curvature $\frac{d^2V}{d\xi^2}(\xi)=4\pi^{2}\nu_m^{2}+3\digamma_{\mathrm{qtc}}\xi^2$ takes the values $1.3$, $1.825$, $4.324$ at $\xi=0,0.5,1.2$: positive at all three points, so the tree effective potential is convex on that range and the Legendre transform is unmodified there.
+**Finite-dimensional convexity check.** For the one-dimensional model $V(\xi)=\tfrac12\,4\pi^{2}\nu_m^{2}\xi^2+\tfrac{\digamma_{\mathrm{qtc}}}{4}\xi^4$ with $4\pi^{2}\nu_m^{2}=1.3$, $\digamma_{\mathrm{mix}}=0.7$, the curvature $\frac{d^2V}{d\xi^2}(\xi)=4\pi^{2}\nu_m^{2}+3\digamma_{\mathrm{qtc}}\xi^2$ takes the values $1.3$, $1.825$, $4.324$ at $\xi=0,0.5,1.2$: positive at all three points, so the tree effective potential is convex on that range and the Legendre transform is unmodified there.
 
 ## The One-Loop Term and the Determinant
 
@@ -203,7 +203,7 @@ S_E[\tilde{Ξ}_{\mathrm{cl}}] +\frac{h}{4\pi}\,\mathrm{Tr}\log  S_E^{(2)}[\tilde
 $$
 the last form under the Wick rotation that turns $iS$ into $-S_E$. The logarithm of the fluctuation operator's determinant is thus the whole of the one-loop effective action, and its regularization is the source of the conformal anomaly of *The Conformal Anomaly in Biquaternionic Form*.
 
-**Biquaternion content.** Two features are the algebra's. First, $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ acts on the module, so its determinant is a determinant on a two-complex-dimensional fibre per mode, and the trace in $\mathrm{Tr}\log$ is the $2\times2$ trace of the image, which is $2\,\mathrm{Sc}$. Second, when $S^{(2)}$ is central the logarithm factorizes over the sectors, giving the factorized one-loop expressions above. These are the only two places the algebra enters; the rest — the loop integral, the regularization, the renormalization — is standard.
+**Biquaternion content.** Two features are the algebra's. First, $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ acts on the field's fibre, the algebra, so its determinant is a determinant on four complex dimensions — eight real — per mode, and the trace in $\mathrm{Tr}\log$ is the trace of the image on the algebra, which is $4\,\mathrm{Sc}$: the $2\times2$ trace of one minimal left ideal, $2\,\mathrm{Sc}$, doubled by the second ideal. Second, when $S^{(2)}$ is central the logarithm factorizes over the sectors, giving the factorized one-loop expressions above. These are the only two places the algebra enters; the rest — the loop integral, the regularization, the renormalization — is standard.
 
 ### The Proper-Time Form
 
@@ -225,7 +225,7 @@ has coefficients $a_n$ built from the curvature of $S^{(2)}$ and the geometry of
 
 **Established (algebra and functional analysis of the module).**
 - The connected and effective functionals are the quadratic forms $W=\tfrac12\langle\tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\rangle$ and $\Gamma=\tfrac12\langle\tilde{Ξ}_{\mathrm{cl}},W_{\mathrm{kinetic}}\tilde{Ξ}_{\mathrm{cl}}\rangle$ for a free theory, with the inverse-Hessian relation and the Legendre identity; verified in finite dimension.
-- The Legendre transform is taken on the module, and its convexity is convexity in the real form $\langle\tilde{Q},\tilde{Q}_1\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$, which is positive definite on the algebra; the sector split enters through the orthogonality of the sectors.
+- The Legendre transform is taken on the module, and its convexity is convexity in the real form $\langle\tilde{Q},\tilde{Q}_1\rangle_{\mathbb{R}}=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$, which is positive definite on the algebra; the sector split enters through the orthogonality of the sectors.
 - For a sector-diagonal action the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing.
 - The one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$, the logarithm of a module determinant.
 
@@ -241,7 +241,7 @@ has coefficients $a_n$ built from the curvature of $S^{(2)}$ and the geometry of
 
 ## Summary
 
-The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde{Q}_1\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$. For a free theory they are the quadratics $W[\tilde J_{\Phi}]=\tfrac12\langle\tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\rangle$ and $\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\tfrac12\langle\tilde{Ξ}_{\mathrm{cl}},W_{\mathrm{kinetic}}\tilde{Ξ}_{\mathrm{cl}}\rangle$, with $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle$ at $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J_{\Phi}$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$, which the next article computes and regularizes.
+The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde{Q}_1\rangle_{\mathbb{R}}=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$. For a free theory they are the quadratics $W[\tilde J_{\Phi}]=\tfrac12\langle\tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\rangle$ and $\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\tfrac12\langle\tilde{Ξ}_{\mathrm{cl}},W_{\mathrm{kinetic}}\tilde{Ξ}_{\mathrm{cl}}\rangle$, with $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle$ at $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J_{\Phi}$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$, which the next article computes and regularizes.
 
 Because a central kinetic operator does not mix the material and informational sectors, the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing with it; any non-central term — an interaction, a non-central kinetic operator, or the chirality-off-diagonal Dirac mass — breaks the factorization. The tree-level effective potential $V=\tfrac12 m^2\langle\tilde{Ξ}_{\mathrm{cl}},\tilde{Ξ}_{\mathrm{cl}}\rangle$ has its minimum at the symmetric point $\tilde{Ξ}_{\mathrm{cl}}=0$; in a one-mode truncation the ground state is a minimal idempotent of $\mathbb{B}_{\Psi}$, the field-theoretic counterpart of the vacuum-selection rule of *The Biquaternion Vacuum as a Minimal Idempotent*.
 

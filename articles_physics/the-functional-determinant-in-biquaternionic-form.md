@@ -23,11 +23,13 @@ $$
 \det\big(L_{\tilde Q}\big) = \det\big(R_{\tilde Q}\big) = \langle\tilde Q\rangle_{\natural}^2 .
 $$
 This is the framework's algebraic determinant; it is checked below and it is the reason the biquaternion norm, and not an auxiliary object, is the determinant of an algebra element.
-- **Established (algebra): the module determinant is a square.** A biquaternion field's fluctuation operator acts on a two-complex-dimensional fibre per mode, and for a central operator $S^{(2)}=\kappa e_t$ the determinant on that fibre is the square of the operator's value on a single complex dimension,
+- **Established (algebra): the determinant on an ideal is a square, and on the field's fibre a fourth power.** A biquaternion field's fluctuation operator acts on the algebra's four complex dimensions — eight real — per mode, and the algebra is the direct sum of two minimal left ideals, each $\mathbb{B}\tilde\Pi_{\mathrm{id}}(\vec u)\cong\mathbb{C}^{2}$. For a central operator $S^{(2)}=\kappa e_t$ the determinant on one ideal is the square of the operator's value on a single complex dimension, and the determinant on the field's fibre is the product over the two ideals,
 $$
-\det\big(S^{(2)}\big)\Big|_{\text{module}} = \kappa^2 ,
+\det\big(S^{(2)}\big)\Big|_{\text{ideal}} = \kappa^2 ,
+\qquad
+\det\big(S^{(2)}\big)\Big|_{\mathbb{B}} = \kappa^4 ,
 $$
-the exponent being the module's complex dimension. The determinant on the whole algebra, which is four-complex-dimensional, would be $\kappa^4$; the framework's determinant is defined once the module is chosen, and the module is fixed by the algebra. When $S^{(2)}$ is not central — the chirality-off-diagonal Dirac mass is the example — the two chiralities mix and the determinant does not factor.
+the exponents being the complex dimensions, two and four. The real form then enters with the dimension eight, and the Gaussian power is the fourth. When $S^{(2)}$ is not central — the chirality-off-diagonal Dirac mass is the example — the two chiralities mix and the determinant does not factor.
 - **Standard, and transcribed.** The zeta-function regularization
 $$
 \log\det S^{(2)} = -\left.\frac{d\zeta_{S^{(2)}}}{ds}\right|_{s=0},
@@ -47,13 +49,15 @@ $$
 \qquad
 \log\det S^{(2)} = \sum_n \log\eta_n = \mathrm{Tr}\log S^{(2)} ,
 $$
-the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi_{\mathrm{id}}(\vec u)\cong\mathbb{C}^2$ per mode, so each $\eta_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.
+the second equality making sense on the principal branch. On one ideal the operator acts on $\mathbb{B}\tilde\Pi_{\mathrm{id}}(\vec u)\cong\mathbb{C}^2$ per mode, so each $\eta_n$ there is a two-fold object; on the field's fibre, the algebra $\mathbb{B}$ itself, it acts on four complex dimensions, and the determinant is the product of the two ideals' determinants.
 
-**The central case.** If $S^{(2)}=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+m^{2}\,c^{2}=\mathcal{M}(\tilde Q_{\Phi})$, whose Lorentzian continuation differs from the action's operator $\Box_\Phi-4\pi^{2}\nu_m^{2}$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
+**The central case.** If $S^{(2)}=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+4\pi^{2}\nu_m^{2}=\mathcal{M}(\tilde Q_{\Phi})$, whose Lorentzian continuation differs from the action's operator $\Box_\Phi-4\pi^{2}\nu_m^{2}$ only by the overall sign that the fibre's even dimension absorbs), then on one ideal it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
 $$
-\boxed{\;\det\big(\kappa\,e_t\big)\Big|_{\text{module}} = \kappa^2\;}.
+\boxed{\;\det\big(\kappa\,e_t\big)\Big|_{\text{ideal}} = \kappa^2 ,
+\qquad
+\det\big(\kappa\,e_t\big)\Big|_{\mathbb{B}} = \kappa^4\;}.
 $$
-The factor $\kappa^2$ is the module's two complex dimensions; equivalently, the central eigenvalue contributes once per complex dimension. On the algebra itself, regarded as a four-complex-dimensional space, multiplication by $\kappa$ has determinant $\kappa^4$, and the two are related by the change of the space on which the determinant is taken. The framework's determinant is thus defined once the module is chosen, and the module is fixed by the algebra.
+The factor $\kappa^2$ is the ideal's two complex dimensions and $\kappa^4$ the field's four; equivalently, the central eigenvalue contributes once per complex dimension, and the second ideal doubles the count. The framework's determinant is defined once the fibre is chosen, and the fibre is the algebra on which the field takes its values.
 
 **The non-central case.** If $S^{(2)}$ is not central, it mixes the two chiralities (the minimal left ideals) and the determinant does not factor. The mass term's right-multiplication form is the standard instance: the Dirac operator
 $$
@@ -98,12 +102,12 @@ confirming the second. The eigenvalues of $\mathsf{M}_2(\tilde Q)$ are $1.520333
 
 The determinant's function in the formalism is to normalize the Gaussian integral, and its one-loop role follows from the same computation.
 
-**The Gaussian.** For a quadratic action $S[\tilde{Ξ}]=\tfrac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle$ the functional-integral article gives
+**The Gaussian.** For a quadratic action $S[\tilde{Ξ}]=\tfrac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle_{\mathbb{R}}$ the functional-integral article gives
 $$
-\int\mathcal{D}\tilde{Ξ}\;\exp(-\frac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle)
+\int\mathcal{D}\tilde{Ξ}\;\exp\big(-\tfrac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle_{\mathbb{R}}\big)
 = \big(\det W_{\mathrm{kinetic}}\big)^{-1/2},
 $$
-the determinant taken on the module. The factor $-\tfrac12$ is the inverse square root appropriate to a real field (one self-conjugate under the pairing); the determinant is taken over the module's components per mode, so the module's dimension enters as the size of the determinant. The power to which the determinant is raised is a convention of real-versus-complex counting and is fixed with the reality of the field; the algebra fixes the module on which the determinant is taken, not the power.
+the determinant taken on the field's eight real dimensions. The factor $-\tfrac12$ is the inverse square root appropriate to a real field (one self-conjugate under the pairing), and the power is fixed by the dimension rather than chosen: the determinant of a central operator is the eighth power of its value, so its inverse square root is the fourth power, $\kappa^{-4}$ per mode. Four real dimensions per sector give the power $-2$, and the two sectors multiply to $-4$.
 
 **The one-loop action.** Expanding about a classical field as in the previous article,
 $$
@@ -117,21 +121,21 @@ where $\mathrm{Tr}$ is the trace on the module. The determinant and the effectiv
 
 **The free case.** For the free biquaternion scalar, $S^{(2)}=W_{\mathrm{kinetic}}$ is central and mode-diagonal, and
 $$
-\Gamma_1 = \frac12\sum_{\text{modes}}\log\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big)^2
-= \sum_{\text{modes}}\log\big(4\pi^{2}\nu_{\mathrm{eu}}^2+m^2\big)
+\Gamma_1 = \frac12\sum_{\text{modes}}\log\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+4\pi^{2}\nu_m^{2}\big)^{8}
+= 4\sum_{\text{modes}}\log\big(4\pi^{2}\nu_{\mathrm{eu}}^2+4\pi^{2}\nu_m^{2}\big)
 \qquad\text{(Euclidean)},
 $$
-the exponent $2$ being the module's two complex dimensions, which cancels the $\tfrac12$. This is the biquaternion scalar's one-loop free energy; its divergence and renormalization are standard and are the subject of the renormalization-group article.
+the exponent $8$ being the field's eight real dimensions, so that the $\tfrac12$ leaves four logarithms per mode — twice the free energy of a complex scalar, the eight-real count in its standard form. This is the biquaternion scalar's one-loop free energy; its divergence and renormalization are standard and are the subject of the renormalization-group article.
 
 ### The Determinant as a Product over Modes, and Its Ratio
 
-In a translation-invariant background the operator is diagonal in momentum, and the determinant becomes a product over modes. For the central scalar operator on the module,
+In a translation-invariant background the operator is diagonal in momentum, and the determinant becomes a product over modes. For the central scalar operator on the field's fibre,
 $$
-\det\big(\Box_\Phi-4\pi^{2}\nu_m^{2}\big)\Big|_{\text{module}}
-= \prod_{\imath}\Big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\Big)^2
-= \prod_{\imath}\big(4\pi^{2}\nu_{\mathrm{eu}}^2+m^2\big)^2
+\det\big(\Box_\Phi-4\pi^{2}\nu_m^{2}\big)\Big|_{\mathbb{B}}
+= \prod_{\imath}\Big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+4\pi^{2}\nu_m^{2}\Big)^{8}
+= \prod_{\imath}\big(4\pi^{2}\nu_{\mathrm{eu}}^2+4\pi^{2}\nu_m^{2}\big)^{8}
 $$
-in the Euclidean continuation, the square being the module's two complex dimensions and the overall sign of the continuation cancelling in it. The product diverges, and only **ratios** of determinants of operators of the same type are scheme-independent. The ratio
+in the Euclidean continuation, the exponent eight being the field's eight real dimensions and the overall sign of the continuation cancelling because the dimension is even. The product diverges, and only **ratios** of determinants of operators of the same type are scheme-independent. The ratio
 $$
 \frac{\det S^{(2)}_1}{\det S^{(2)}_2} = \frac{\prod_n \eta_n^{(1)}}{\prod_n \eta_n^{(2)}}
 $$
@@ -173,9 +177,9 @@ The determinant of a fermionic fluctuation operator is the place where the frame
 
 **The Grassmann integral.** Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$, written as the two-by-two array of its two lines; the algebra-level determinant is an open point.
 $$
-\int\mathcal{D}\tilde{Ξ}^{\natural}\,\mathcal{D}\tilde{Ξ}\;\exp\big(\,\tilde{Ξ}^{\natural}\mathcal{F}\tilde{Ξ}\big) = \det\mathcal{F},
+\int\mathcal{D}\tilde{Ξ}^{\natural}\,\mathcal{D}\tilde{Ξ}\;\exp\big(-\,\tilde{Ξ}^{\natural}\mathcal{F}\tilde{Ξ}\big) = \det\mathcal{F},
 \qquad
-\mathcal{F} = \begin{pmatrix} -2\pi\nu_m & \mathcal{F}_R \ \mathcal{F}_L & -2\pi\nu_m \end{pmatrix},
+\mathcal{F} = \begin{pmatrix} -2\pi\nu_m & \mathcal{F}_R \\ \mathcal{F}_L & -2\pi\nu_m \end{pmatrix},
 $$
 which is standard. In the framework the spinor field is carried by the spinor module and the mass term is the chirality-off-diagonal, right-multiplication operator of the conventions article; the determinant is therefore that of a module operator whose chiral structure is nontrivial. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
 
@@ -210,7 +214,7 @@ the trace of the energy-momentum tensor being the conformal variation of the one
 **Established (algebra).**
 - The fundamental determinant of an element is the biquaternion norm, $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$; verified and proved.
 - Left and right multiplication by $\tilde Q$ on the algebra have equal determinant $\langle\tilde Q\rangle_{\natural}^2$; verified and proved.
-- A central operator's determinant on the two-complex-dimensional module is the square of its single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$; a non-central operator's determinant does not factor.
+- A central operator's determinant on one minimal left ideal is the square of its single-complex-dimension value, $\det(\kappa e_t)|_{\text{ideal}}=\kappa^2$, and on the field's fibre, the algebra, the fourth power, $\kappa^4$; a non-central operator's determinant does not factor.
 
 **Standard, and transcribed.**
 - Zeta-function regularization and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\det$; the heat-kernel and Seeley–DeWitt evaluation; the Grassmann determinant; the eta invariant and its relation to the phase; the conformal variation of $\Gamma_1$ and the conformal anomaly.
@@ -254,7 +258,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
 | $G_{\mathrm{prop}}(r'_t)=\mathrm{Tr}\,\exp(-r'_t S^{(2)})$, $K\sim(4\pi r'_t)^{-d/2}\sum a_n {r'_{t}}^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / conformal anomaly |
-| $\mathcal{F}=\begin{pmatrix}-2\pi\nu_m&\mathcal{F}_R\ \mathcal{F}_L&-2\pi\nu_m\end{pmatrix}$ | Fermionic fluctuation operator: the mass-shifted pair in the chirality basis, with the two lines' derivative parts off the diagonal |
+| $\mathcal{F}=\begin{pmatrix}-2\pi\nu_m&\mathcal{F}_R\\ \mathcal{F}_L&-2\pi\nu_m\end{pmatrix}$ | Fermionic fluctuation operator: the mass-shifted pair in the chirality basis, with the two lines' derivative parts off the diagonal |
 | $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\theta_{\mathrm{pha},\mathcal{F}})$ | Complex (chiral) fermion determinant |
 | $\digamma_{\mathrm{fac}}(\mathcal{F})$ | Eta invariant; spectral asymmetry of the phase |
 
