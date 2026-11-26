@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gap: What the Algebra Supplies and What It Does Not — Biquaternion Universe</title>
+  <meta name="description" content="The four preceding articles each ended with the same sentence in different words: the algebra supplies a home and not an inhabitant. This article collects…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-gap-what-the-algebra-supplies-and-what-it-does-not"><strong>The Gap: What the Algebra Supplies and What It Does Not</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The four preceding articles each ended with the same sentence in different words: the algebra supplies a home and not an inhabitant. This article collects the sentence once, itemises it, and states the one negative structural finding the section produced.</p>
+<p>The itemisation is worth making because the boundary is uneven, and a reader who takes the section's headline — the tetrad <em>is</em> the matrix-unit basis — as a statement about the theory rather than about a frame will place the boundary in the wrong place. Three of the section's objects are native: the tetrad, the frame's pairing, and the representation theory that the curvature and the connection are read in. Three are not: the connection, the curvature, and the dynamics. The native three are all statements about a point and a basis at that point. The non-native three are all statements about a solution.</p>
+<p>The negative finding is stated last and is not softened: the two-sector decomposition of the algebra does not organise the Weyl scalars, because the scalars live in a five-complex-dimensional space and the algebra is four-complex-dimensional.</p>
+<h2 id="the-ledger-item-by-item">The Ledger, Item by Item</h2>
+<p>The construction separates cleanly into what is native to $\mathbb{B}$ and what is transcribed.</p>
+<p><strong>Native to the algebra.</strong> The four null legs, as zero divisors and as rank-one matrices; the identity that the tetrad is $\sqrt2\,i$ times the matrix-unit basis, with the two real null directions equal to the two primitive idempotents $\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2}$; the multiplication table of the four legs, in which the two real directions annihilate each other and the two nilpotents multiply into the idempotents; the block-antidiagonal pairing on the Peirce grading, which is the structural reason a null basis and not an orthonormal one appears; the trace criterion that separates the idempotent corners from the nilpotent ones; the sphere of idempotents $\tfrac12(e_t+i\vec u)$, $\vec u\in S^{2}$, and the identification of the link of the null cone with $S^{2}\times S^{3}$; the spinor dyad and its symplectic normalization; the inner products and the interval, both rebuilt from the tetrad; the bivector subspace $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ in which a connection takes its values; the spinor module $S$ and its symmetric power $\mathrm{sym}^4 S$ in which the Weyl scalars take their values; and the boost weights, which follow from the weights of $\mathrm{sym}^4 S$. The mapping of the null tetrad onto the zero divisors is exact, with no residual mismatch: every leg is a zero divisor, every leg is rank one, and the four together span $\mathbb{B}$. In particular, the null structure of the Newman–Penrose tetrad maps onto the framework's zero-divisor structure cleanly, and no gap is reported here.</p>
+<p><strong>Not native to the algebra.</strong> Three items, in increasing order of severity. First, the <strong>connection</strong>: the spin coefficients exist once a metric-compatible connection is chosen, but the algebra does not select one. The parent article records the same for the frame, and it is the reason the spin coefficients are described here as components of a $\mathbb{B}$-valued 1-form rather than as objects the algebra produces. Second, the <strong>curvature</strong>: the Weyl tensor is a rank-four object outside $\mathbb{B}$, and the five scalars are its components in $\mathrm{sym}^4 S$. The algebra says what an element of $\mathrm{sym}^4 S$ is, but nothing in the algebra determines which element a spacetime produces. The gravity articles already record this as open, and it remains open; this article has made the statement of the gap precise by naming the object that is missing. Third, the <strong>dynamics and the global structure</strong>: there are no field equations here, so the algebra cannot say which Petrov types occur, and the construction is pointwise and linear, so it carries no topological or asymptotic information. The peeling behaviour of the scalars along a null direction, for instance, is a statement about a limit and lies outside the algebra.</p>
+<p><strong>On the two-sector decomposition.</strong> The gravity articles raise the question whether the decomposition $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ organises the Weyl bivectors and the five scalars. The construction here answers it partially, and mostly negatively. The bivectors on which the self-dual Weyl tensor acts do have a native home: the algebra's bivector subspace is the six-real-dimensional derived algebra of $\mathbb{B}$ that the parent identifies with $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, and the three-complex-dimensional self-dual bivector space sits inside its complexification. But the Weyl tensor is not a bivector; its self-dual part is a symmetric traceless map on the three-dimensional self-dual bivector space, equivalently the spin-two object $\tilde{Ξ}_{ABCD}\in\mathrm{sym}^4 S$, which is five complex dimensional. Since $\mathbb{B}$ itself is four complex dimensional, $\mathrm{sym}^4 S$ is not a subspace of $\mathbb{B}$, and the decomposition of $\mathbb{B}$ into $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ cannot organise $\mathrm{sym}^4 S$ as a decomposition into subspaces. The two-sector split does not, by itself, organise the Weyl scalars. Whether some finer correspondence exists — for instance between the self-dual/anti-self-dual split of the curvature and the complex structure that the algebra carries — is not settled here, and is left as an open question rather than forced.</p>
+<h2 id="summary-of-the-section">Summary of the Section</h2>
+<p>The Newman–Penrose formalism and the biquaternion framework meet at the null vector. The section has shown that the meeting is exact at the level of the tetrad: the four legs of a null tetrad are the four zero divisors that the algebra already distinguishes, and up to the common factor $\sqrt2\,i$ they are the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$, with the two real null directions equal to the two primitive idempotents. The inner products $l\cdot n=-1$ and $m\cdot\bar m=+1$, the off-diagonal tetrad metric, and the reconstruction of the interval $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$ from the tetrad were all recomputed, and the construction was checked on a dyad chosen for the check rather than on the basis dyad that suggested it.</p>
+<p>The identification is then used rather than merely stated. Multiplying the four legs gives a table homogeneous of degree one in $\sigma=\sqrt2\,i$, in which $ln=nl=0$ — the two real null directions annihilate each other — and $m\bar m=\sigma l$, $\bar mm=\sigma n$ — the nilpotent pair multiplies into the idempotent pair. The bilinear form on the Peirce corners is block-antidiagonal, two hyperbolic planes, which is why the algebra's multiplication basis is null for its own norm and an orthonormal frame is the thing that is <em>not</em> native. The trace separates the corners, $\mathrm{tr}\,\tilde\Pi_{\mathrm{id}}=1$ against $\mathrm{tr}\,\vec\Pi_{\mathrm{nil}}=0$, so four arbitrary null directions are not a Peirce basis; nilpotence is its own condition, $Q_t=0$ together with vanishing norm, checked on two thousand random elements. The primitive idempotents sweep a two-sphere, $\tilde\Pi_{\mathrm{id}}=\tfrac12(e_t+i\vec u)$ with $\vec u\in S^{2}$, and the link of the null cone is $S^{2}\times S^{3}$, so the fibre of a null frame field is that link. On the sector question the article corrects itself: the projector is Hermitian and informational, but the leg is material, $\star l=-l$, and it is the factor $\sqrt2\,i$ that carries the projector out of $\mathbb{B}_{\Psi}$ into $\mathbb{B}_{\Phi}$ — the same $i$ that makes a boost generator Hermitian makes a projector into a light ray. The identification holds in the unit-boost frame: a boost along the axis scales $l$ and $n$ by reciprocal factors and destroys the common $\sigma$, so the tetrad is the Peirce basis in that representative and a leg-by-leg rescaling of it in any other.</p>
+<p>The two objects the tetrad is used to express are hosted but not generated. The twelve spin coefficients are the components in the null basis of an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued — hence $\mathbb{B}$-valued — connection; the count $4\times6=24$ real $=12$ complex was derived twice, once from the antisymmetry of the connection coefficients and once from the dimension of the scalar-free subspace. The five Weyl scalars are the components of the self-dual Weyl spinor $\tilde{Ξ}_{ABCD}\in\mathrm{sym}^4 S$; the count $10=5$ complex was verified by exhibiting the ten-dimensional space of Weyl tensors and computing the rank of the map to the five scalars to be ten over $\mathbb{R}$. The boost weights $\tilde{Ξ}_{\imath}\mapsto A^{2-k}\exp(i(2-k)\theta_{\mathrm{cen}})\tilde{Ξ}_{\imath}$ were recomputed for all five scalars, and the Petrov classification was exhibited as the multiplicity pattern of the roots of the binary quartic in $\mathrm{sym}^4 S$, with the canonical vanishing patterns stated together with the convention on which they depend.</p>
+<p>The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the connection's home, and the spinor module that carries the Weyl spinor; it does not supply the connection, the Weyl tensor, or the dynamics that would select one. The two-sector decomposition does not organise the Weyl scalars, because $\mathrm{sym}^4 S$ is five complex dimensional and $\mathbb{B}$ is four. That is a negative structural finding, reported as such rather than closed.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>biquaternion algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, scalar imaginary $i$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$</td>
+<td>anti-Hermitian and Hermitian subspaces of $\mathbb{B}$; material and informational sectors</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{H}$</td>
+<td>real-quaternion subspace</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$</td>
+<td>biquaternion norm; $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$, $\mathrm{Tr}$</td>
+<td>scalar part and trace</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$</td>
+<td>the general quaternionic bilinear form on $\mathbb{B}_{\Phi}$, the interval, of inertia $(3,1)$</td>
+</tr>
+<tr>
+<td>$Ξ$</td>
+<td>matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$</td>
+</tr>
+<tr>
+<td>$S$, $\bar S$</td>
+<td>spinor module and its conjugate, $S\cong\mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>$\mathrm{sym}^4 S$</td>
+<td>self-dual Weyl spinors, complex dimension $5$</td>
+</tr>
+<tr>
+<td>$o,o'$</td>
+<td>normalized spinor dyad, $\varepsilon(o,o')=1$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{\mathrm{id},1},\tilde\Pi_{\mathrm{id},2},\vec\Pi_{\mathrm{nil},1},\vec\Pi_{\mathrm{nil},2}$</td>
+<td>matrix units $E_{11},E_{22},E_{12},E_{21}$ in $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>matrix with $1$ in position $(i,j)$</td>
+</tr>
+<tr>
+<td>$l,n,m,\bar m$</td>
+<td>null tetrad legs; $l,n$ real and material ($\star l=-l$), $m,\bar m$ exchanged by star; components $l_a,n_a,m_a,\bar m_a$</td>
+</tr>
+<tr>
+<td>$\sigma=\sqrt2\,i$</td>
+<td>the common normalisation, $l=\sigma\tilde\Pi_{\mathrm{id},1}$, $n=\sigma\tilde\Pi_{\mathrm{id},2}$, $m=\sigma x$, $\bar m=\sigma y$; the multiplication table is linear in it</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}$</td>
+<td>the null cone, equal to the zero-divisor set with the origin; real dimension six, link $S^{2}\times S^{3}$</td>
+</tr>
+<tr>
+<td>$g_{ab}[\mathrm{NP}]$</td>
+<td>tetrad metric, off-diagonal</td>
+</tr>
+<tr>
+<td>$\varepsilon(o,o')$</td>
+<td>symplectic pairing of the spinor module</td>
+</tr>
+<tr>
+<td>$\Gamma_{abc}=(\nabla_a e_b)\cdot e_c$</td>
+<td>connection coefficients in the tetrad</td>
+</tr>
+<tr>
+<td>$\kappa,\sigma,\rho,\tau,\pi,\varsigma_{\mathrm{nps}},\imath,\jmath,\varepsilon,\gamma,\beta,\alpha$</td>
+<td>the twelve spin coefficients</td>
+</tr>
+<tr>
+<td>$D,\mathcal{N}_{\mathrm{NP}},\delta,\bar\delta$</td>
+<td>directional derivatives along $l,n,m,\bar m$</td>
+</tr>
+<tr>
+<td>$C_{abcd}$</td>
+<td>Weyl tensor</td>
+</tr>
+<tr>
+<td>$\tilde{Ξ}_{0},\dots,\tilde{Ξ}_{4}$</td>
+<td>the five Weyl scalars</td>
+</tr>
+<tr>
+<td>$\tilde{Ξ}_{ABCD}$</td>
+<td>self-dual Weyl spinor in $\mathrm{sym}^4 S$</td>
+</tr>
+<tr>
+<td>$A,\theta_{\mathrm{cen}}$</td>
+<td>boost and spin parameters of the tetrad rotation</td>
+</tr>
+<tr>
+<td>$z$</td>
+<td>complex parameter of a null rotation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a>, for the frame field and the curvature bivector against which this ledger is drawn.</li>
+<li><a href="linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a>, where the Weyl tensor and the self-dual and anti-self-dual bivectors are recorded as an open problem.</li>
+<li><a href="the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.html">The Einstein Field Equations in the Biquaternion Framework: The Linearised Dictionary and the Non-Linear Gap</a>, for the same gap stated for the field equations rather than for the tetrad.</li>
+<li><a href="the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a>, for $S$, the symmetric powers in which the Weyl spinor lives, and the symplectic form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
