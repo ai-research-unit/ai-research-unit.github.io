@@ -1,0 +1,114 @@
+# __The Five Weyl Scalars: Ten Real Components, One Quartic__
+
+## Introduction
+
+The Weyl tensor is the part of the curvature that the field equations do not fix at a point: the trace-free part of the Riemann tensor, ten real components, carrying the tidal and gravitational-wave content of a spacetime and vanishing identically in conformally flat ones. The Newman–Penrose formalism resolves it in the null tetrad into five complex scalars, and the resolution is a bijection rather than a projection — ten real numbers in, ten real numbers out, in two notations.
+
+This article does four things with the five scalars, and separates them. It computes the **bijection** and verifies it by rank. It gives the **spinorial form** of the five, which is where the biquaternion framework enters: they are the components of an element of $\mathrm{sym}^4 S$, the fourth symmetric power of the spinor module. It derives the **boost weights**, which are the weights of that representation, and shows what the null rotations leave fixed. And it reads the **Petrov classification** as the multiplicity theory of a binary quartic.
+
+The separation that governs the article is stated once and holds to the end. The algebra hosts $\mathrm{sym}^4 S$, because it hosts $S$. It does not determine which element of $\mathrm{sym}^4 S$ a given spacetime produces. Everything below that is representation theory is therefore independent of that gap; everything that classifies a particular spacetime is not.
+
+The tetrad is the one of the companion article, $l=\sigma	ilde\Pi_{\mathrm{id},1}$, $n=\sigma	ilde\Pi_{\mathrm{id},2}$, $m=\sigma x$, $ar m=\sigma y$ with $\sigma=\sqrt2\,i$, normalized so that $l\cdot n=-1$ and $m\cdotar m=+1$ with all other inner products zero. The dyad behind it is $\{o,o'\}$, with $o$ the first and $o'$ the second element.
+
+## The Weyl Scalars
+
+The Weyl tensor $C_{abcd}$ is the trace-free part of the Riemann tensor, the part left after the Ricci tensor and the curvature scalar are removed. It inherits the algebraic symmetries of the Riemann tensor, $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$ with $C_{a[bcd]}=0$, and it is trace-free, $\sum_{a,c}\varrho_{\mathrm{ifm,ac}}C_{abcd}=0$; in four dimensions this leaves ten independent real components. Contracting it with the null tetrad produces the five complex **Weyl scalars**:
+
+$$
+\begin{aligned}
+\tilde{Ξ}_{0} &= \sum_{a,b,c,d} C_{abcd}\,l_a m_b l_c m_d, \\[2pt]
+\tilde{Ξ}_{1} &= \sum_{a,b,c,d} C_{abcd}\,l_a n_b l_c m_d, \\[2pt]
+\tilde{Ξ}_{2} &= \sum_{a,b,c,d} C_{abcd}\,l_a m_b \bar m_c n_d, \\[2pt]
+\tilde{Ξ}_{3} &= \sum_{a,b,c,d} C_{abcd}\,l_a n_b \bar m_c n_d, \\[2pt]
+\tilde{Ξ}_{4} &= \sum_{a,b,c,d} C_{abcd}\,\bar m_a n_b \bar m_c n_d,
+\end{aligned}
+\tag{1}
+$$
+
+with an overall sign that is convention-dependent. The index structure of (1) fixes the boost weights computed below, and the pattern of which legs appear in which scalar is the part of the convention that matters.
+
+The counting works, and the passage from ten real components to five complex ones is a real isomorphism rather than a coincidence. To verify it, parametrise a general tensor with the Weyl symmetries $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$, $C_{a[bcd]}=0$ and $\sum_{a,c}\varrho_{\mathrm{ifm,ac}}C_{abcd}=0$. With the antisymmetries and pair symmetry there are $21$ independent pair-components; the first Bianchi identity imposes one independent condition and trace-freeness imposes ten, leaving a $21-11=10$ dimensional space. The map that sends such a tensor to the five complex contractions (1) was computed on that ten-dimensional space and found to have rank ten over $\mathbb{R}$ — equivalently rank five over $\mathbb{C}$ — so the five complex scalars are exactly the ten real components reorganised, and no information is lost.
+
+The scalars have a spinorial form that names them in the framework's own objects. The self-dual part of the Weyl tensor is the totally symmetric fourth-rank spinor
+$$
+\tilde{Ξ}_{ABCD} \in \mathrm{sym}^4 S,
+$$
+whose five independent components are the five scalars,
+$$
+\tilde{Ξ}_{0} = \tilde{Ξ}_{0000}, \quad \tilde{Ξ}_{1} = \tilde{Ξ}_{0001}, \quad \tilde{Ξ}_{2} = \tilde{Ξ}_{0011}, \quad \tilde{Ξ}_{3} = \tilde{Ξ}_{0111}, \quad \tilde{Ξ}_{4} = \tilde{Ξ}_{1111},
+\tag{2}
+$$
+where the index $0$ refers to the dyad element $o$ and $1$ to $o'$. Since $S$ is two-dimensional, $\mathrm{sym}^4 S$ has dimension $\binom{2+4-1}{4}=5$, matching (1); the anti-self-dual part is the complex conjugate spinor $\bar{\tilde{Ξ}}_{\bar A\bar B\bar C\bar D} \in \mathrm{sym}^4\bar S$, and the reality of the Weyl tensor identifies the two, so the ten real components are the real and imaginary parts of the five complex scalars. This is the biquaternionic form of the Weyl scalars: **they are the five components of an element of $\mathrm{sym}^4 S$, the fourth symmetric power of the framework's spinor module.**
+
+A qualification is required, and it is the main gap of this article. The framework hosts $\mathrm{sym}^4 S$, because it hosts the spinor module $S$; but the Weyl tensor is an external rank-four object, and nothing in $\mathbb{B}$ determines it. The Weyl spinor is $\mathrm{sym}^4 S$-valued, and the algebra says what that means, but which element of $\mathrm{sym}^4 S$ a given spacetime produces is not a question the algebra answers. The next two sections use only the representation theory of $\mathrm{sym}^4 S$, and are therefore independent of this gap; the classification of a specific spacetime is not.
+
+## Boost Weights and the Rotations of the Tetrad
+
+The tetrad is defined up to the six-parameter local Lorentz group, and the five scalars transform by the index structure of (1). It is useful to split that group into the two-parameter boost–spin subgroup and the two null rotations.
+
+A boost–spin transformation rescales the legs as
+
+$$
+l \mapsto A\,l, \qquad n \mapsto A^{-1}n, \qquad m \mapsto \exp(i\theta_{\mathrm{cen}})m, \qquad \bar m \mapsto \exp(-i\theta_{\mathrm{cen}})\bar m, \qquad A>0,\ \theta_{\mathrm{cen}}\in\mathbb{R},
+\tag{3}
+$$
+
+which preserves every entry of the normalisation $l\cdot n=-1$, $m\cdot\bar m=+1$. In spinor terms it is $o\mapsto A^{1/2}\exp(i\theta_{\mathrm{cen}}/2)o$, $o'\mapsto A^{-1/2}\exp(-i\theta_{\mathrm{cen}}/2)o'$. Substituting (3) into (1), each scalar picks up a monomial:
+
+$$
+\boxed{\;\tilde{Ξ}_{\imath} \;\longmapsto\; A^{\,2-k}\,\exp(\,i(2-k)\theta_{\mathrm{cen}})\,\tilde{Ξ}_{\imath}, \qquad k=0,\dots,4\;}.
+\tag{4}
+$$
+
+The exponent $2-k$ is the **boost weight** of $\tilde{Ξ}_{\imath}$; it is also its spin weight, so the two coincide for the Weyl scalars. The five weights are $2,1,0,-1,-2$ as $k$ runs from $0$ to $4$.
+
+Taking a general Weyl tensor and the explicit tetrad of the companion article, the ratio $\tilde{Ξ}_{k,2}/\tilde{Ξ}_{\imath}$ came out equal to $A^{2-k}\exp(i(2-k)\theta_{\mathrm{cen}})$ for every $k$ from $0$ to $4$; the check is multilinear in the Weyl tensor and therefore does not depend on the particular tensor chosen. The same weights are visible directly in the spinor form (2): $\tilde{Ξ}_{\imath}$ carries $4-k$ dyad indices of type $o$ and $k$ of type $o'$, while $o$ and $o'$ carry boost weights $+\tfrac12$ and $-\tfrac12$, so the weight of $\tilde{Ξ}_{\imath}$ is $(4-k)\tfrac12 + k(-\tfrac12) = 2-k$.
+
+The weights make the word "definite" precise: the group acts on the five scalars diagonally in the boost direction, and the weight is the exponent of that diagonal action. They also explain why a statement that a scalar vanishes is frame-independent while a statement about the relative size of two scalars is graded: the vanishing of $\tilde{Ξ}_{\imath}$ is preserved by every boost–spin because $A^{2-k}\neq0$, and the five scalars sit in five distinct weight spaces.
+
+The null rotations complete the group. A null rotation about $l$ fixes $l$ and shifts the other three legs,
+
+$$
+l \mapsto l, \qquad m \mapsto m + \bar z\,l, \qquad \bar m \mapsto \bar m + z\,l, \qquad n \mapsto n + z\,m + \bar z\,\bar m + |z|^2 l, \qquad z\in\mathbb{C},
+\tag{5}
+$$
+
+which again preserves $l\cdot n=-1$ and $m\cdot\bar m=+1$. Under (5) the scalar $\tilde{Ξ}_{0}$ is invariant. This is forced by the index structure: $\tilde{Ξ}_{0}$ contains $l$ twice, and the terms generated by $m\mapsto m+\bar z l$ involve the contractions $\sum_{a,b,c,d}C_{abcd}l_al_bl_cm_d$ and $\sum_{a,b,c,d}C_{abcd}l_am_bl_cl_d$, each of which has a repeated leg in a pair of antisymmetric slots and therefore vanishes for any tensor with the Riemann antisymmetries. A null rotation about $n$ leaves $\tilde{Ξ}_{4}$ invariant by the same argument with $l\leftrightarrow n$.
+
+The invariance of the two extreme scalars is what makes the principal-null-direction conditions meaningful. The condition $\tilde{Ξ}_{0}=0$ is unchanged by a null rotation about $l$, so it is a property of the null direction $l$ rather than of the particular tetrad containing it: it says that $l$ is a principal null direction. The same holds for $\tilde{Ξ}_{4}=0$ and $n$. The remaining scalars shift under (5) by polynomial combinations of their partners, with the shifts graded by the boost weights; this is the mechanism by which a null rotation can align $l$ with a repeated principal null direction, as used in the classification below.
+
+## Petrov Types and the Vanishing Pattern
+
+The Petrov type of a Weyl tensor is the multiplicity pattern of its four principal null directions, and in the spinor form (2) this is a statement about a binary quartic. With $k_A = o_A + x\,o'_A$,
+
+$$
+q(x) \;=\; \sum_{A,B,C,D}\tilde{Ξ}_{ABCD}\,k_Ak_Bk_Ck_D \;=\; \tilde{Ξ}_{0} + 4x\,\tilde{Ξ}_{1} + 6x^2\,\tilde{Ξ}_{2} + 4x^3\,\tilde{Ξ}_{3} + x^4\,\tilde{Ξ}_{4} .
+\tag{6}
+$$
+
+The root $x=0$ represents the null direction $l$ (more precisely the spinor $o$), and the vanishing of $q$ and its derivatives at $x=0$ is the statement that $l$ is a repeated principal null direction. Explicitly,
+
+$$
+\begin{array}{ll}
+\tilde{Ξ}_{0} = 0 & l \text{ is a principal null direction (PND)}, \\[2pt]
+\tilde{Ξ}_{0} = \tilde{Ξ}_{1} = 0 & l \text{ is a double PND}, \\[2pt]
+\tilde{Ξ}_{0} = \tilde{Ξ}_{1} = \tilde{Ξ}_{2} = 0 & l \text{ is a triple PND}, \\[2pt]
+\tilde{Ξ}_{0} = \tilde{Ξ}_{1} = \tilde{Ξ}_{2} = \tilde{Ξ}_{3} = 0 & l \text{ is a quadruple PND}.
+\end{array}
+\tag{7}
+$$
+
+The four roots of the quartic (6) are the four principal null directions, counted with multiplicity, and the Petrov type is their multiplicity pattern. A quartic has five nontrivial multiplicity patterns — the partitions of $4$ — together with the identically zero case, and these are the six Petrov types:
+
+| Type | Multiplicities | Principal null directions | Canonical form with $l$ repeated |
+|------|----------------|----------------------------|----------------------------------|
+| I | $1+1+1+1$ | four distinct | $\tilde{Ξ}_{0}=0$; with $n$ also a PND, $\tilde{Ξ}_{0}=\tilde{Ξ}_{4}=0$ |
+| II | $2+1+1$ | one double, two simple | $\tilde{Ξ}_{0}=\tilde{Ξ}_{1}=0$ |
+| D | $2+2$ | two double | $\tilde{Ξ}_{0}=\tilde{Ξ}_{1}=\tilde{Ξ}_{3}=\tilde{Ξ}_{4}=0$, $\tilde{Ξ}_{2}\neq0$ |
+| III | $3+1$ | one triple, one simple | $\tilde{Ξ}_{0}=\tilde{Ξ}_{1}=\tilde{Ξ}_{2}=0$ |
+| N | $4$ | one quadruple | $\tilde{Ξ}_{0}=\tilde{Ξ}_{1}=\tilde{Ξ}_{2}=\tilde{Ξ}_{3}=0$, $\tilde{Ξ}_{4}\neq0$ |
+| O | — | none (conformally flat) | all $\tilde{Ξ}_{\imath}=0$ |
+
+Two conventions are at work in such a table, and they must be separated. The **type** — the multiplicity pattern — is invariant. The **canonical vanishing list** is not: it depends on which principal null direction is aligned with $l$, and the table above aligns $l$ with the repeated direction. If instead $n$ is the repeated direction, the roles of the scalars are exchanged by $\tilde{Ξ}_{\imath}\leftrightarrow\tilde{Ξ}_{4-k}$, consistent with the weights $2-k$ and $-2+k$. The pattern in the table is stable under the residual boost–spin and null-rotation freedoms that preserve the alignment, which is why "the type" is well defined even though the individual scalars are not.
+
+The framework does not derive the classification, and it does not need to: the classification is the multiplicity theory of the quartic (6), which lives in $\mathrm{sym}^4 S$, and $\mathrm{sym}^4 S$ is hosted by the algebra. What the algebra cannot do is produce the quartic for a given spacetime. That is the gap recorded above, and it is not closed here.

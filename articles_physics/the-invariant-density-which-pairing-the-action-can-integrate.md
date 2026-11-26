@@ -30,7 +30,7 @@ and the physical configuration does not. **A density that changed under that map
 
 **It must have one sign, because the energy is a square.** In the Minkowski section the statement is that the Hamiltonian is bounded below; on the Euclidean section it is that $e^{-S_E}$ converges. **Both are statements about the sign of a sum of squares**, and both fail if the density is indefinite.
 
-**Why the quadratic and nothing else.** Locality, invariance and dimension four leave one functional of the curvature alone. A cubic term vanishes because the trace of an odd number of generators is zero; a term with a derivative of the curvature has dimension five; a term with no curvature is a constant. **So the density is the square, and the whole question is which square.**
+**Why the quadratic and nothing else.** Locality, invariance and dimension four leave one functional of the curvature alone. **A cubic term is excluded by dimension, not by a vanishing trace**: $\operatorname{tr}(\mathbb{F}^3)$ is a dimension-six operator. It happens to vanish on $\mathfrak{su}(2)$ alone, because $\operatorname{tr}(t_at_bt_c)$ is totally symmetric there and $d^{abc}=0$, but that is a property of the algebra and not the reason, and it fails on the $\mathrm{U}(2)$ the corpus actually uses, where the central generator makes $\operatorname{tr}(\mathbb{F}^3)\ne0$. A term with a derivative of the curvature has dimension five; a term with no curvature is a constant. **So the density is the square, and the whole question is which square.**
 
 ## Cyclicity Is the Whole of the Invariance
 
@@ -67,16 +67,24 @@ $$
 \mathcal{L}=-\tfrac12\operatorname{tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr)
 $$
 
-is non-negative. **The minus sign is not a convention independent of the field's Hermiticity**: it is the sign that turns the square of an anti-Hermitian object into a positive number.
+is non-negative. **The minus sign is not a convention independent of the field's Hermiticity**: it is the sign that turns the square of an anti-Hermitian object into a positive number. **The summation here is the Euclidean one**, with $\delta_{\imath\jmath}$; the Minkowski contraction carries $\varepsilon_{\imath}=(1,-1,-1,-1)$ and is indefinite, and §*Where positivity is a statement at all* says what survives there. Read the paragraph above as the Euclidean statement it is.
 
-**The same number in the other convention.** Let $t_a$ be Hermitian generators and $F_{a,\imath\jmath}$ real, and put $\mathbb{F}_{\imath\jmath}=\sum_a F_{a,\imath\jmath}t_a$. Then $\mathbb{F}$ is Hermitian and $\operatorname{tr}(\mathbb{F}^2)\ge0$, so the positive density is written with a plus,
+**The same number in the other convention.** Two symbols are needed, one per Hermiticity type. Write $F^{(\mathrm{aH})}_{\imath\jmath}$ for the anti-Hermitian curvature used above, and let $t_a$ be Hermitian generators with real coefficients $F_{a,\imath\jmath}$, so that
 
 $$
--\tfrac12\operatorname{tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr)
-=\tfrac12\operatorname{tr}\Bigl(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath}\Bigr)
+\mathbb{F}_{\imath\jmath}:=\sum_a F_{a,\imath\jmath}\,t_a=i\,F^{(\mathrm{aH})}_{\imath\jmath}
 $$
 
-with $\mathbb{F}=iF$, the two differing by one factor of $i$ and by nothing else.
+is Hermitian. Then $\operatorname{tr}(\mathbb{F}^2)\ge0$, so the positive density carries a plus in that basis, and the two readings are one number:
+
+$$
+\underbrace{-\tfrac12\operatorname{tr}\Bigl(\sum_{\imath,\jmath}F^{(\mathrm{aH})}_{\imath\jmath}F^{(\mathrm{aH})}_{\imath\jmath}\Bigr)}_{\text{anti-Hermitian, minus}}
+=\underbrace{+\tfrac12\operatorname{tr}\Bigl(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath}\Bigr)}_{\text{Hermitian, plus}}
+\qquad\text{because}\qquad
+\bigl(F^{(\mathrm{aH})}\bigr)^2=-\mathbb{F}^2 \ \text{ when } \mathbb{F}=iF^{(\mathrm{aH})}.
+$$
+
+The two sides differ by one factor of $i$ inside the square — equivalently by one sign — and by nothing else. **Writing both sides with a single letter $F$ is the error this display exists to prevent**: the left side is the same physical field read in the anti-Hermitian convention and the right side in the Hermitian one.
 
 **The rule this yields, and it is the rule the corpus needs.** The printed sign belongs to the Hermiticity type of the object it multiplies. **A density written $-\tfrac12\operatorname{tr}(FF)$ is a positive density for anti-Hermitian $F$; a density written $-\tfrac12\operatorname{tr}(\mathbb{FF})$ is a positive density for anti-Hermitian $\mathbb{F}$, and a negative one for Hermitian $\mathbb{F}$.** Every display in the corpus that carries $\operatorname{tr}$ must therefore be read together with the line that fixes the Hermiticity of its generators, and the two displays that print $-\tfrac12\operatorname{tr}(\sum\mathbb{FF})$ and $-\tfrac14\sum_aF_aF_a$ with Hermitian $t_a$ are the second form. **This is the one inconsistency between the three fragments, and it is a sign stated in one convention and read in the other.**
 
@@ -84,7 +92,7 @@ with $\mathbb{F}=iF$, the two differing by one factor of $i$ and by nothing else
 
 ## The Element Pairing and the Trace Are One Functional at Two by Two
 
-**The corpus carries two pairings, and at the algebra's own size they coincide.** The informational reduction is $2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$, the coefficient of $e_t$ in the product doubled. The matrix trace is $\operatorname{tr}$. On $\mathbb{B}\cong M_2(\mathbb{C})$ the three imaginary units are traceless, so
+**The corpus carries two pairings, and at the algebra's own size they coincide.** The corpus's **informational reduction** is $2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$, the coefficient of $e_t$ in the product doubled. **It is the plain scalar-part bilinear and not the Hermitian pairing**: the star version $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ of the [Noether article](noethers-theorem-in-biquaternionic-form.html) is a different functional, real and positive definite, and the two agree only when the second factor is Hermitian and real-scalar. Nothing below uses the star; the whole section is about the plain form, which is the one the action's density is built from. The matrix trace is $\operatorname{tr}$. On $\mathbb{B}\cong M_2(\mathbb{C})$ the three imaginary units are traceless, so
 
 $$
 \operatorname{tr}\tilde Q=2\operatorname{Sc}\tilde Q
@@ -94,7 +102,7 @@ $$
 
 **One functional, two notations.** So the sentence "the density is a trace and not the corpus's pairing" cannot mean that the two disagree on $2\times2$ matrices; on that size they are equal term by term, and their cyclicity is one and the same property.
 
-**What the sentence does mean, stated precisely.** The field whose density is wanted is a matrix over $\mathbb{C}^4$ — fifteen $4\times4$ generators, or a quartets-valued spinor — and the biquaternion pairing has no argument of that size. **The obstruction is the dimension of the module and not the symmetry of the pairing.** The corpus's own machinery article says this in one line, and this section is the reason that line holds.
+**What the sentence does mean, stated precisely.** The field whose density is wanted is a matrix over $\mathbb{C}^4$ — the primordial block's fifteen $4\times4$ arrays (the fifteen generators of $\mathfrak{su}(4)$, of which the $\mathfrak{su}(3)\oplus\mathfrak{u}(1)$ content is the observable part), or a four-component spinor — and the biquaternion pairing has no argument of that size. **The obstruction is the dimension of the module and not the symmetry of the pairing.** The corpus's own machinery article says this in one line, and this section is the reason that line holds.
 
 **Two failures that a reader should be able to tell apart.**
 
@@ -142,7 +150,12 @@ $$
 
 and the factor between the two families is $\sqrt{6}$. **A vertex read off $G_a$ instead of $t_a$ is wrong by that factor on the corner and right on the planes**, and no overall rescaling repairs a mismatch that is not overall.
 
-**The sign is a second trap in the same place.** The printed arrays are anti-Hermitian, so $\operatorname{tr}(G_a^2)=-n_a<0$. **A density written on $G_a$ has the wrong sign on every one of the generators**, and the same table that fixes the norm fixes the sign. That is why the normalisation of a basis is one operation and not two: the length, the angle and the sign are all read from $\operatorname{tr}(G_a^{\dagger}G_b)$.
+**The sign is a second trap in the same place, and it is a trap about which form is being used.** The printed arrays are anti-Hermitian, so $\operatorname{tr}(G_a^2)=-n_a<0$. Two statements follow, and they are not the same statement.
+
+- *The element form is right as it stands.* With $F=\sum_aF_aG_a$ anti-Hermitian, $\operatorname{tr}(F^2)<0$, so $-\tfrac12\operatorname{tr}(F^2)>0$. The minus in the element form is doing its job.
+- *The component form is wrong as it stands.* $-\tfrac14\sum_aF_aF_a$ is what $-\tfrac12\operatorname{tr}(F^2)$ becomes after expanding on anti-Hermitian $G_a$, and it is negative, because the expansion produces $\operatorname{tr}(G_aG_b)=-n_a\delta_{ab}$ on the printed arrays and not $+\tfrac12\delta_{ab}$: with $G_a^{\dagger}=-G_a$ the norm is $n_a=\operatorname{tr}(G_a^{\dagger}G_a)=-\operatorname{tr}(G_a^2)$, so $-\tfrac12\operatorname{tr}(F^2)=+\tfrac12\sum_an_aF_a^2>0$, while $-\tfrac14\sum_aF_a^2<0$. It is the coefficient form that is built for Hermitian $t_a$.
+
+**So "the density on $G_a$ has the wrong sign" is true of $- \tfrac14\sum_aF_aF_a$ and false of $-\tfrac12\operatorname{tr}(F^2)$.** The repair is one of two moves: flip the printed sign in the component form, or carry the $i$ and use the Hermitian $t_a=iG_a/\sqrt{2n_a}$, which is what the rescaled basis above does. Both repairs are the same factor of $i$ that §*Reality, and Where the Sign Comes From* isolates. The same table fixes the norm and the sign because both are read from $\operatorname{tr}(G_a^{\dagger}G_b)$ — but the table fixes them for the component form, and the element form needs no repair at all.
 
 **Why the off-diagonal entries need a rotation and not a rescaling.** A norm fixes an array's length and says nothing about its angle, so two arrays can each be correctly normalised and still fail to be transverse. **The corpus's basis has exactly two such pairs**, and both pair the corner with a colour diagonal; the rotation that removes them is part of the normalisation. **The general statement: orthonormality is a condition on the Gram matrix, and a diagonal rescaling can only fix its diagonal.**
 
@@ -163,7 +176,7 @@ are both linear and both invertible, and they behave differently under the trace
 | preserves the star | yes | no |
 | preserves Hermiticity | yes | no |
 
-**The discriminator is a proof and not a numerical accident.** The trace of a commutator vanishes, so conjugation preserves the trace for every $\tilde Q$. The left product changes it whenever $\tilde Q$ is not central, because $\operatorname{tr}(\tilde QX)=\operatorname{tr}(X\tilde Q)$ and that differs from $\operatorname{tr}(X)$ in general. **The corpus checked the first line to a residual of $2\times10^{-15}$ over random elements and random rotors, and the check agrees with the proof**; the proof is what makes it a discriminator.
+**The discriminator is a proof and not a numerical accident.** The trace of a commutator vanishes, so conjugation preserves the trace for every $\tilde Q$. The left product changes it whenever $\tilde Q$ is not central, because $\operatorname{tr}(\tilde QX)=\operatorname{tr}(X\tilde Q)$ and that differs from $\operatorname{tr}(X)$ in general. **The corpus checked the first line to a residual of $2\times10^{-15}$ over random elements and random rotors** — random data, not a physical configuration, so the check confirms the arithmetic of the identity and nothing about any particular field; the proof is what makes it a discriminator.
 
 **What this means for a density.** On the carrier, where the local transformation multiplies the matter field on the left, the trace of a square is *not* available as a density. **The invariant there is built from the Hermitian form instead**, $\operatorname{tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$, which is invariant because a left multiplication by a unitary element cancels against its adjoint. **The pairing follows the transformation law of the field, and that is the criterion of the article**: the adjoint action wants the trace of a product; the module action wants the Hermitian form.
 
@@ -184,9 +197,9 @@ are both linear and both invertible, and they behave differently under the trace
 
 The density an action integrates must be a real scalar, invariant under the local transformation, and of one sign. **One functional supplies all three, the matrix trace, and cyclicity is the whole of the invariance**: the square of the curvature is invariant under $F\mapsto\tilde QF\tilde Q^{-1}$ exactly because $\operatorname{tr}(XY)=\operatorname{tr}(YX)$, and a pairing that is not cyclic has no invariant square.
 
-Reality and positivity follow from the Hermiticity type and not from extra conditions. **With anti-Hermitian $F$ the square's trace is real and non-positive and the density carries a minus; with Hermitian generators and real coefficients the same number carries a plus.** The sign is one statement with the Hermiticity, and every display must be read with the line that fixes it. **Positivity itself is a Euclidean statement**: in Minkowski signature the contraction is indefinite and the requirement is a bounded Hamiltonian.
+Reality and positivity follow from the Hermiticity type and not from extra conditions. **With anti-Hermitian $F^{(\mathrm{aH})}$ the square's trace is real and non-positive and the density carries a minus; with Hermitian $\mathbb{F}=iF^{(\mathrm{aH})}$ the same number carries a plus.** The sign is one statement with the Hermiticity, and every display must be read with the line that fixes it. The element form $-\tfrac12\operatorname{tr}(F^2)$ is already correct for anti-Hermitian $F$; what goes wrong on anti-Hermitian generators is the coefficient form $-\tfrac14\sum_aF_aF_a$, which is the form built for Hermitian ones. **Positivity itself is a Euclidean statement**: in Minkowski signature the contraction is indefinite and the requirement is a bounded Hamiltonian.
 
-On $\mathbb{B}\cong M_2(\mathbb{C})$ the element pairing $2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ and the trace are the same functional, so there is no conflict at the algebra's size. **The density is a trace because the force acts on a $\mathbb{C}^4$ module, and the algebra's pairing has no argument there**; the obstruction is the module's dimension and not the pairing's symmetry.
+On $\mathbb{B}\cong M_2(\mathbb{C})$ the element pairing $2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ — the plain scalar-part bilinear, not the Hermitian pairing $\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ — and the trace are the same functional, so there is no conflict at the algebra's size. **The density is a trace because the force acts on a $\mathbb{C}^4$ module, and the algebra's pairing has no argument there**; the obstruction is the module's dimension and not the pairing's symmetry.
 
 The coefficient is forced by the basis. **$\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$ yields $\tfrac12$ in the element form and $\tfrac14$ in the component form**, and a basis whose arrays carry two trace norms forces a rescaling per array, with a factor of six between the families. Off-diagonal Gram entries are removed by a rotation and not a rescaling.
 
@@ -202,7 +215,9 @@ When the local group acts on the left, the trace is not available and the Hermit
 | $\mathbb{F}_{\imath\jmath}=\sum_aF_{a,\imath\jmath}t_a$ | The same curvature expanded on the normalised basis |
 | $\operatorname{tr}$ | The matrix trace on the module the field lives on |
 | $\operatorname{Sc}$ | The coefficient of $e_t$ in an element; $\operatorname{tr}\tilde Q=2\operatorname{Sc}\tilde Q$ on $M_2(\mathbb C)$ |
-| $2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ | The corpus's informational reduction; equal to $\operatorname{tr}(\tilde Q_1\tilde Q_2)$ at $2\times2$ |
+| $2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ | The corpus's informational reduction: the plain scalar-part bilinear, equal to $\operatorname{tr}(\tilde Q_1\tilde Q_2)$ at $2\times2$ |
+| $\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ | The Hermitian pairing of the [Noether article](noethers-theorem-in-biquaternionic-form.html), real and positive definite; a different functional, not used here |
+| $F^{(\mathrm{aH})}_{\imath\jmath}$, $\mathbb{F}_{\imath\jmath}=iF^{(\mathrm{aH})}_{\imath\jmath}$ | The same curvature in the anti-Hermitian and Hermitian conventions |
 | $t_a$ | Normalised generators, $\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$ |
 | $G_a$ | Printed arrays, anti-Hermitian, $\operatorname{tr}(G_a^{\dagger}G_a)=n_a$ |
 | $n_a$ | The array's own trace norm; $2$ on the fourteen, $12$ on the corner |

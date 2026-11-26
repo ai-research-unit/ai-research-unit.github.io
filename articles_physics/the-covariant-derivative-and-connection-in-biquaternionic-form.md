@@ -32,7 +32,7 @@ The division between what is established and what is interpretation is kept expl
 
 - **Established, and recomputed below.** The identities of the four bullets above; the flatness of pure-connections; the reality condition that keeps $\tilde{A}_{\Phi}$ in $\mathbb{B}_{\Phi}$; and the observation that the connection one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ is a real quaternion.
 - **Interpretation.** Reading $\tilde{A}_{\Phi}$ as a connection on a bundle, the covariant derivative as parallel transport, and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}$ as the biquaternion form of the identity "square of a Dirac operator equals Laplacian plus curvature" are geometric interpretations of algebraic content. They are labelled as interpretation wherever they occur.
-- **Gaps, left visible.** The non-abelian extension, the reality and compactness conditions that would select a compact algebra, and the covariant wave operator for a charged scalar are not settled here; each is stated as a gap where it arises and collected in the open questions.
+- **Gaps, left visible.** The non-abelian extension and the reality and compactness conditions that would select a compact algebra are not settled here. Nor is the charge-conjugation operation that a gauged scalar action turns out to need; that one is discovered below rather than assumed, in §*Does the Action Decide?*, and it is the only place where the article is forced to introduce an operation the algebra does not supply.
 
 ## The Covariant Derivative and Its Components
 
@@ -182,10 +182,10 @@ because $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma = \Box_\Phi\Gamma
 
 $$
 \Gamma(\tilde{Q}) = -a\,r'_t + A_x(\tilde{Q}_0)\,r_x + A_y(\tilde{Q}_0)\,r_y + A_z(\tilde{Q}_0)\,r_z,
-\qquad a = -ic\,A_t(\tilde{Q}_0) = \xi(\tilde{Q}_0) \in \mathbb{R},
+\qquad a = -i\,A_t(\tilde{Q}_0) = \xi(\tilde{Q}_0)\in\mathbb{R},
 $$
 
-so that $\partial/\partial R_{\imath}\,\Gamma(\tilde{Q}_0) = A_{\imath}(\tilde{Q}_0)$ and hence $\tilde{A}_{\Phi,2}(\tilde{Q}_0) = 0$. The connection therefore has no invariant value at a point; whatever invariant content it has must be built from derivatives.
+so that $\partial/\partial R_{\imath}\,\Gamma(\tilde{Q}_0) = A_{\imath}(\tilde{Q}_0)$ and hence $\tilde{A}_{\Phi,2}(\tilde{Q}_0) = 0$. **The coefficient $a$ is $\xi$, the real scalar of $A_t = i\xi$, and no factor of $c$ enters**: $R_t = i r'_t$, so $\partial r'_t/\partial R_t = -i$ and $\partial\Gamma/\partial R_t = -a\,(-i) = ia = i\xi = A_t$. Writing $-ic\,A_t$ instead gives $c\xi$, one factor of $c$ too many, and leaves the connection unremoved by that factor; there is no $c$ in the coordinate, since $r'_t$ is already the length $ct$. The connection therefore has no invariant value at a point; whatever invariant content it has must be built from derivatives.
 
 **The curvature is the obstruction to doing this on a neighbourhood.** A connection with $\tilde{F} = 0$ satisfies $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath} = 0$, and the Poincaré lemma applied to the one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ then supplies a local $\Gamma$ with $\tilde{A}_{\Phi} = \tilde\nabla_\Phi\Gamma$. The step from a closed one-form to an exact one is the Poincaré lemma; it is *invoked* here, not recomputed. The conclusion is that $\tilde{F}$ measures exactly what cannot be removed by a local transformation.
 
@@ -197,7 +197,7 @@ $$
 d\vec r = \vec e_x\,dr_x + \vec e_y\,dr_y + \vec e_z\,dr_z ,
 $$
 
-which is real. The time term is real because its two imaginary units cancel, $d(i r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_{\imath}$ and $dr_{\imath}$ are separately real. In the algebra this says $\sum_{\imath} A_{\imath}\,dx_{\imath} \in \mathbb{B}_{H}$, the real-quaternion subspace. Around a closed path the integral is invariant, because $\sum_{\imath} A_{\imath}\,dx_{\imath} \mapsto \sum_{\imath} A_{\imath}\,dx_{\imath} - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
+which is real. The time term is real because its two imaginary units cancel, $d(i r'_t) = i\,dr'_t$ and $A_t = i\,a'_t$ giving $i^2a'_t\,dr'_t = -\xi\,dr'_t$; the spatial terms are real because $A_{\imath}$ and $dr_{\imath}$ are separately real. **It is the same cancellation as in the charge density of *Noether's Theorem in Biquaternionic Form***, where $J_t = ic\rho$ pairs the imaginary unit of the time component with the imaginary unit of the density and leaves a real number: in both cases the imaginary unit is the one the $ir'_t$ convention puts on $R_t$, and in both cases spending it twice is what makes the object real. In the algebra this says $\sum_{\imath} A_{\imath}\,dx_{\imath} \in \mathbb{B}_{H}$, the real-quaternion subspace. Around a closed path the integral is invariant, because $\sum_{\imath} A_{\imath}\,dx_{\imath} \mapsto \sum_{\imath} A_{\imath}\,dx_{\imath} - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
 
 ## The Curvature as the Commutator of Covariant Derivatives
 
@@ -240,7 +240,15 @@ $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} := \sum_{\imath}  e_{\imath}^{\natural} \tilde\nabla_{\mathrm{gco},\Phi,\imath} = (\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}^{\natural},
 $$
 
-the conjugation $\natural$ being that of *Product and Form Conventions*, applied to the basis elements, the central coefficients $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ passing through untouched. Here $\tilde{A}_{\Phi}^{\natural} \neq -\tilde{A}_{\Phi}$ in general; quaternion conjugation is not charge conjugation, and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ is the quaternion conjugate of the operator, not the operator for the opposite charge. With this definition the exact operator identity
+the conjugation $\natural$ being that of *Product and Form Conventions*, applied to the basis elements, the central coefficients $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$ passing through untouched. Here $\tilde{A}_{\Phi}^{\natural} \neq -\tilde{A}_{\Phi}$ in general; quaternion conjugation is not charge conjugation, and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ is the quaternion conjugate of the operator, not the operator for the opposite charge.
+
+**The two conjugates differ, and by how much.** It is tempting to identify this operator with the one that would act on the conjugate field, $\tilde{Ξ}^{*}$. It is not the same operator, and the discrepancy is exact:
+
+$$
+(\tilde\nabla_\Phi)^{\natural}+\lambda\,\tilde{A}_{\Phi}^{\natural}\quad\text{(basis conjugated)}\qquad\text{against}\qquad(\tilde\nabla_\Phi)^{\natural}-\lambda\,\tilde{A}_{\Phi}\quad\text{(charge flipped)},
+$$
+
+with $\lambda:=2\pi iϙ/h$. For $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ the two differ by $\lambda(\tilde{A}_{\Phi}^{\natural}+\tilde{A}_{\Phi}) = 2\lambda\,i\,a'_t\,e_t$: they agree on the three spatial components and disagree on the time component alone. The reason is that $\lambda\tilde{A}_{\Phi}$ is fixed by $^{*}$ — the conjugation negates $\lambda$ and negates $\tilde{A}_{\Phi}$, and the two minus signs cancel — so the algebra's own conjugation cannot flip a charge. §*Does the Action Decide?* is where this difference has consequences: it is exactly the difference between a real and a complex Lagrangian. With this definition the exact operator identity
 
 $$
 \boxed{\;(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2} +\frac{2\pi i\,ϙ}{h}\tilde{F}\;}
@@ -281,7 +289,37 @@ $$
 
 The structural similarity to the identity that the square of a Dirac operator is a Laplacian plus a curvature term is an **interpretation** of this result, not a claim that the biquaternion operator is the standard Dirac operator.
 
-**A gap for the charged scalar.** The minimal coupling article's clean realization of the global symmetry was the complex scalar biquaternion field $\tilde{Ξ} = \xi\,e_t$ obeying the massive Klein–Gordon equation $(\Box_\Phi - 4\pi^{2}\nu_m^{2})\tilde{Ξ} = 0$; the free equation is examined in the Klein–Gordon article, which does not representative it. Covariantizing the *scalar operator* gives $\left(\sum_{\imath} \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 - 4\pi^{2}\nu_m^{2}\right)\xi\,e_t = 0$, which is consistent. But $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t) = \left(\sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2\xi\right)e_t +\frac{2\pi i\,ϙ}{h}\xi\,\tilde{F}$, and the second term is a pure vector whenever $\tilde{F} \neq 0$. A purely scalar field therefore cannot satisfy $\left((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi} - 4\pi^{2}\nu_m^{2}\right)\tilde{Ξ} = 0$ in a region of nonzero curvature; only the scalar projection $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi})$ acts on scalars, or the charged scalar must acquire vector components. Which of these the framework intends is **not settled here**. It is a genuine gap: the minimal coupling of a scalar is not the same statement as the minimal coupling of a biquaternion, and the difference is the curvature. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
+**The charged scalar: two candidate operators.** The minimal coupling article's clean realization of the global symmetry was the complex scalar biquaternion field $\tilde{Ξ} = \xi\,e_t$ obeying the massive Klein–Gordon equation $(\Box_\Phi - 4\pi^{2}\nu_m^{2})\tilde{Ξ} = 0$; the free equation is examined in the Klein–Gordon article, which states it and does not derive it from an action. Covariantizing the *scalar operator* gives $\left(\sum_{\imath} \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 - 4\pi^{2}\nu_m^{2}\right)\xi\,e_t = 0$, which is consistent. But $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t) = \left(\sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2\xi\right)e_t +\frac{2\pi i\,ϙ}{h}\xi\,\tilde{F}$, and the second term is a pure vector whenever $\tilde{F} \neq 0$. A purely scalar field therefore cannot satisfy $\left((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi} - 4\pi^{2}\nu_m^{2}\right)\tilde{Ξ} = 0$ in a region of nonzero curvature; only the scalar projection $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi})$ acts on scalars, or the charged scalar must acquire vector components. Which of the two the framework's own action produces is settled in §*Does the Action Decide?* immediately below; what it costs to write that action is not. The distinction is genuine: the minimal coupling of a scalar is not the same statement as the minimal coupling of a biquaternion, and the difference is the curvature. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
+
+### Does the Action Decide?
+
+The two operators offered above are separated by the action of the stationary-action article, and the answer is the scalar projection — but not because the pairing projects anything away, and the way the action decides is worth recording.
+
+Minimal coupling in the action means the replacement $\tilde\nabla_\Phi\to\tilde\nabla_{\mathrm{gco},\Phi}$ in $\mathcal{L}$. Take $\tilde\Xi=\xi e_t$. Because $e_t$ is central, only the diagonal terms survive the scalar part, and the Lagrangian becomes a sum over the four indices,
+
+$$
+\mathcal{L} = \sum_{\imath}\big(\partial_\imath\xi^{*}+\lambda\,A_\imath\,\xi^{*}\big)\big(\partial_\imath\xi+\lambda\,A_\imath\,\xi\big) + m_0^{2}\,\xi^{*}\xi,
+\qquad \lambda:=\frac{2\pi iϙ}{h},\quad m_0:=2\pi\nu_m .
+$$
+
+**With the same charge on the two factors this is not real**, and the time index is why. Under $^{*}$ the derivative flips sign, $\bigl(\partial/\partial R_t\,\xi\bigr)^{*} = -\,\partial/\partial R_t\,\xi^{*}$, because $\partial/\partial R_t = -i\,\partial/\partial r'_t$ and the imaginary unit changes sign; the potential term does not flip, because $\lambda\,\tilde{A}_{\Phi}$ is fixed by $^{*}$ as §*The Covariant Square* records. So the factor on the conjugate field is neither the conjugate of the other factor nor its negative, and the pair fails to be a modulus.
+
+**Flipping the charge on the conjugate factor repairs it.** Differentiating $\tilde\Xi^{*}$ with $-\lambda\,A_{\imath}$ rather than $+\lambda\,A_{\imath}$ turns the same display into
+
+$$
+\mathcal{L} = -\bigl|D_t\xi\bigr|^{2}+\sum_{\imath\in\{x,y,z\}}\bigl|D_{\imath}\xi\bigr|^{2}+m_0^{2}\lvert\xi\rvert^{2},
+\qquad D_{\imath}:=\partial/\partial R_{\imath}+\lambda\,A_{\imath},
+$$
+
+which is real, is the standard gauged scalar Lagrangian with the metric's signature, and is invariant because the conjugate field carries the inverse phase. Its Euler–Lagrange equation follows from one derivative and one integration by parts,
+
+$$
+\Bigl(\sum_{\imath\in\{t,x,y,z\}}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}-m_0^{2}\Bigr)\xi = 0 ,
+$$
+
+which is the scalar projection — the scalar part of the covariant square — and not the full square. Both displays were checked at a point with a non-constant potential: the opposite-charge functional is real to machine precision and equals the modulus form, while the same-charge functional has a nonzero imaginary part there.
+
+**What this settles, and what it leaves.** The gap closes on the side of the projection. The framework's action never produces the inconsistent full-square equation for a scalar, because a scalar has no vector component for the curvature term to act on; $\frac{2\pi iϙ}{h}\xi\tilde{F}$ is then not an equation the field must satisfy but the statement that a scalar field is not an eigenfield of the covariant square, and the difference *is* the curvature. What the derivation leaves is an operation rather than an equation: the conjugate factor of the action needs the opposite charge, and the section above has just recorded that $^{*}$ does not supply it, since it fixes $\lambda\tilde{A}_{\Phi}$. A gauged scalar action here therefore has to name a charge-conjugation insertion. Whether the algebra supplies one as an involution — negating $\lambda\tilde{A}_{\Phi}$ while leaving $i$ alone — is open, and it is the same operation a charged antiparticle would require.
 
 ### The Chiral Pair and Why the Mass Couples Two Fields
 
@@ -307,7 +345,7 @@ $$
 
 which is $\Box_\Phi$ with the sign of $\Delta_\Phi$ reversed and a vector part added. The expression is derived here from the squares of the invertibles, and it was checked with residual $0$ on random polynomial scalar functions. The Laplacian enters with opposite signs because the spatial legs of $\tilde\nabla_\Phi$ square to $-e_t$ while $e_{\imath}^{\natural} e_{\imath} = e_t$ for every $\mu$, and the mixed derivatives leave a vector part wherever they do not vanish. Writing $\tilde\nabla_\Phi^2 = \Box_\Phi$ would therefore be wrong by $2\Delta_\Phi$ in the scalar part and by that vector part.
 
-**The minimal coupling** replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}$ by $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ in the pair, which is the coupled pair of *Covariance and What It Forces*. The replacement holds term by term because the coefficients $A_{\imath}$ are central and pass through the invertibles.
+**The minimal coupling** replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}$ by $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ in the pair, which is the coupled pair of *Covariance and What It Forces*. The replacement holds as an algebraic substitution, term by term, because the coefficients $A_{\imath}$ are central and pass through the invertibles. What an algebraic substitution does not carry on its own is the reality of the functional it produces; that is the subject of the next subsection, and it is where the coupled action is actually fixed.
 
 ## What the Algebra Supplies, Transcribes, and Only Interprets
 
@@ -339,19 +377,19 @@ A second external source goes further and puts the two objects into one. J. Fred
 
 ## Open Questions
 
-1. **The covariant wave operator for a charged scalar.** Does the framework use $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}) = \sum_{\imath} \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2$ as the covariant d'Alembertian for a scalar, or must a charged scalar be a general biquaternion with vector components induced by the curvature? The two interpretations differ by the term $\frac{2\pi i\,ϙ}{h}\tilde{F}\xi$, which is nonzero wherever the field strength is.
+1. **The charge-conjugation insertion.** §*Does the Action Decide?* settles the equation: minimally coupling the action gives the scalar projection, $\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^2\xi = m_0^{2}\xi$, for a charged scalar, and the curvature term $\frac{2\pi i\,ϙ}{h}\xi\tilde{F}$ is a statement about the covariant square rather than an equation for the field. What that derivation needs, and what is open, is the operation: the conjugate factor of the action must carry the opposite charge, which the algebra's $^{*}$ does not supply, because $^{*}$ fixes $\lambda\tilde{A}_{\Phi}$. Whether the framework can define a charge conjugation — negating $\lambda\tilde{A}_{\Phi}$ and leaving $i$ alone — and whether it is an involution compatible with the other conjugations, is the open point. It is the same operation a charged antiparticle would require, so it is not an idle one.
 
-2. **The non-abelian extension.** The commutator of covariant derivatives acquires $[A_{\imath},A_{\jmath}]$ when the connection is $\mathbb{B}$-valued, and the algebra already contains the required non-commutativity. What is not derived is a reality and tracelessness condition that would select a compact algebra; the commutator algebra of $\mathbb{B}$ is $\mathfrak{gl}(2,\mathbb{C})$, not compact. The reality conditions natural in the biquaternion framework, and which simple algebras they admit, are left to the planned companions on non-abelian fields and Yang–Mills.
+2. **The non-abelian extension.** The commutator of covariant derivatives acquires $[A_{\imath},A_{\jmath}]$ when the connection is $\mathbb{B}$-valued, and the algebra already contains the required non-commutativity. What is not derived is a reality and tracelessness condition that would select a compact algebra; the commutator algebra of $\mathbb{B}$ is $\mathfrak{gl}(2,\mathbb{C})$, not compact. The candidates are easy to name: the compact real forms of $\mathfrak{gl}(2,\mathbb{C})$ are $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, the $\mathfrak{u}(1)$ being the centre already in use, and the only compact simple real form inside $\mathbb{B}$ is $\mathfrak{su}(2)=\mathrm{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, whose brackets are $[i\vec e_a,i\vec e_b]=2i\varepsilon_{abc}\,i\vec e_c$. What an $SU(2)$ connection would cost is already visible in §*The Connection and the Gravitational Connection*: its generators are not central, so left and right multiplication no longer agree, localization and Euler–Lagrange variation no longer commute, and the matter representation must be specified. Building that connection with an explicit representation, and checking whether the ordering problem of the two-sided case reappears there, is the concrete form the gap leaves.
 
 3. **The matter representation.** The covariant derivative acts by left multiplication, and in the abelian case left and right agree. For the charged massive field the parent's linear chiral pair is written with the left action, which makes the left action the natural one there. For a non-abelian connection the two differ, and the representation carried by the matter field must be specified; what fixes it for a general matter field is open, and the chiral-fermion article's treatment of the two parts named by the subscript and the minimal-coupling article's left/right analysis are the concrete settings in which the question is posed.
 
-4. **Dynamical content of the covariant square.** The curvature term $\frac{2\pi i\,ϙ}{h}\tilde{F}$ in $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a magnetic-moment coupling — or is it a rewriting of the commutator identity with no independent consequence?
+4. **Dynamical content of the covariant square.** The curvature term $\frac{2\pi i\,ϙ}{h}\tilde{F}$ in $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a magnetic-moment coupling — or is it a rewriting of the commutator identity with no independent consequence? The standard analogy is worth naming: squaring the Dirac operator produces $\sigma^{\mu\nu}F_{\mu\nu}$, the magnetic-moment term, so a curvature term in the square of a first-order operator is where such a coupling lives. Whether the biquaternion analogue becomes one depends on identifying a spin structure inside the algebra, which this article does not do; the structural similarity alone does not supply it.
 
 5. **The one-form and the holonomy.** The connection one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ is a real quaternion, the loop integral is invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $i r'_t$ convention in disguise? No answer is offered here.
 
 6. **Fixing the representative.** The canonical-quantization article establishes that the framework cannot fix the representative. The present article does not supply a selection principle either; the orbit of the connection is exactly as large as the local phases allow.
 
-7. **Empirical contact.** As everywhere in the framework, the open question is whether any of this yields a prediction distinguishing it from standard connection theory. The construction above is a reformulation; the question of empirical contact is untouched by it.
+7. **Empirical contact.** As everywhere in the framework, the open question is whether any of this yields a prediction distinguishing it from standard connection theory. The honest answer at this level is no, and it is worth saying plainly rather than hedging: the construction is a restatement of standard connection theory in the algebra's notation, and the one place where it is more than a restatement — the charge-conjugation requirement of §*Does the Action Decide?* — changes nothing observable either, since the repaired Lagrangian is the standard gauged scalar one. A distinction would have to come from somewhere else in the corpus, not from this article.
 
 ## Summary
 
@@ -375,7 +413,7 @@ $$
 \mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}) = \sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2, \quad \mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi}) =\frac{2\pi i\,ϙ}{h}\tilde{F}\;},
 $$
 
-with the scalar part the covariant d'Alembertian and the vector part the curvature. Two gaps are left visible: the covariant wave operator for a charged scalar is ambiguous between the scalar projection and a bivector-valued field, and the non-abelian extension still needs a reality condition selecting a compact algebra. The connection of this article is one-sided and abelian; it is not the two-sided gravitational connection of the curved-spacetime article.
+with the scalar part the covariant d'Alembertian and the vector part the curvature. The charged-scalar question is settled by the action rather than left open: the minimally coupled Lagrangian is real only when the conjugate factor carries the opposite charge, and its Euler–Lagrange equation is the scalar projection, so a charged scalar obeys the covariant d'Alembertian and the curvature term of the full square is not an equation for it. What that leaves is the charge-conjugation insertion itself, which the algebra's conjugation does not supply, and the non-abelian extension, which still needs a reality condition selecting a compact algebra — $\mathfrak{su}(2)$ being the only compact simple candidate inside $\mathbb{B}$. The connection of this article is one-sided and abelian; it is not the two-sided gravitational connection of the curved-spacetime article.
 
 The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$, written on the algebra by left multiplication, the second member being the first on the conjugate field. It is not the square of a single field: the conjugate derivative applied to $\tilde\nabla_\Phi\tilde{Ξ} = 2\pi\nu_m\tilde{Ξ}$ returns $\Box_\Phi\tilde{Ξ} = m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$, a second-order equation in two objects rather than one, and $\tilde\nabla_\Phi^2$ is not $\Box_\Phi$ — its scalar part is $\partial^2/\partial R_t^2-\Delta_\Phi$ against the $\partial^2/\partial R_t^2+\Delta_\Phi$ of $\Box_\Phi$, and its vector part does not vanish. That is why the mass couples two fields.
 
@@ -412,12 +450,16 @@ The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco},\Phi}\
 | $\sum_{\imath} \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 = \mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi})$ | Covariant d'Alembertian |
 | $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 +\frac{2\pi i\,ϙ}{h}\tilde{F}$ | Covariant square identity |
 | $e_t^{\natural} = e_t, e_{\imath}^{\natural} = -\vec e_{\imath}$ | Conjugate basis |
-| $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
-| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form on the informational sector |
+| $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum. Not to be confused with the coupling, written $\lambda$ below |
+| $\lambda = 2\pi iϙ/h$ | Coupling coefficient of the covariant derivative; $i$ times the inverse length per unit potential |
+| $D_{\imath} = \partial/\partial R_{\imath}+\lambda A_{\imath}$ | Compact name for the covariant derivative components of §*Does the Action Decide?* |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form on the informational sector: the pairing $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*}$ of *Four-Vectors and the Interval*, read on $\mathbb{B}_{\Psi}$ |
 
 ## Further Reading
 
 - [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html) — the origin of the connection, the transformation law, the covariance, and the curvature identity inherited here.
+- [The Relativistic Particle and the Lagrangian: The Stationary-Action Principle](the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.html) — the Lagrangian that §*Does the Action Decide?* minimally couples and varies, with the sign convention used there.
+- [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html) — the current whose gauged version is the natural companion to this article, and the charge density $J_t=ic\rho$ whose reality is the same cancellation as the one-form's.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the potential, the field strength, the scalar part $S$, and the Maxwell equation.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the invariant content of $\tilde{F}$, which this article uses but does not develop.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the massless field equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ and the minimal-coupling question.
