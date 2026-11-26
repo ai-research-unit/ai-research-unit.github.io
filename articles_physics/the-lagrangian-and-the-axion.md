@@ -74,7 +74,7 @@ The selection rule. The selection rule is the shift symmetry plus the anomaly, a
 
 **What reality does not buy. Reality does not buy a mass, a scale, or a solution to the strong CP problem.** Three things the reality of the action does not supply:
 
-- *No mass without the sector.* The potential comes from the same fields the axion couples to; without them the axion is massless.
+- *No mass without the connection.* The potential comes from the same fields the axion couples to; without them the axion is massless.
 - *No fixed $f_a$.* The decay constant is a parameter, and the allowed window is phenomenological.
 - *No automatic solution.* The mechanism sets $\bar\theta_{\mathrm{eff}}=0$ only if the potential's minimum is there, which requires the CP symmetry of the sector; the argument is the parent's.
 

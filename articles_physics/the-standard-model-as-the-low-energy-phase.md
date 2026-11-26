@@ -407,7 +407,7 @@ What is not established is everything Standard-Model-specific.
 - **The matter sector.** The chirality kinematics are exact; the chiral symmetry group is absent, the hypercharge is underived, and the representation content and generation number are not selected. **No route yet.**
 - **The scalar sector.** Unbuilt. The mass selection rule names what a compensating scalar would have to carry, and the framework supplies no scalar field with the required quantum numbers, and no corresponding potential, expectation value, or Yukawa coupling. **No route yet.**
 
-The obstacles with a known route are the finite, identifiable ones: the reality class of the non-abelian connection, the non-abelian matter representation, the anomaly, the fixing the representative principle, and — conditional on the no-route items above — the electroweak mixing. The upstream items are the chirality problem, the hypercharge problem, and the scalar sector. None of them exists, and settling any one of them would not by itself produce the Standard Model.
+The obstacles with a known route are the finite, identifiable ones: the reality class of the non-abelian connection, the non-abelian matter representation, the anomaly, the principle that fixes the representative, and — conditional on the no-route items above — the electroweak mixing. The upstream items are the chirality problem, the hypercharge problem, and the scalar sector. None of them exists, and settling any one of them would not by itself produce the Standard Model.
 
 No section assumes a Standard Model structure. The three group factor are each stated with their source and status, and where standard numbers appear they are marked as imports. The boundary is the result.
 

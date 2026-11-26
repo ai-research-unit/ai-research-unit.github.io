@@ -47,7 +47,7 @@ $$
 **$g_4$ is one number for the whole group.** Three consequences follow and each is a departure from what a reader expects:
 
 - *No ratio to fix.* With one coupling there is no $\alpha_1/\alpha_2$ to match and no unification condition to impose; the matching at $M_C$ is a set of equalities among derived couplings and not a constraint on $g_4$.
-- *No free parameter in the sector.* The value enters every vertex and every rate, so a measurement of any one of them fixes it. The corpus uses $K_L\to\mu e$, because it is the one channel the model predicts at tree level with no unknown matrix beyond the generation entries.
+- *No free parameter in the connection.* The value enters every vertex and every rate, so a measurement of any one of them fixes it. The corpus uses $K_L\to\mu e$, because it is the one channel the model predicts at tree level with no unknown matrix beyond the generation entries.
 - *Nothing for it to protect.* $\rho=1$ at tree level is unaffected by the value of $g_4$ and is not a relation among couplings; it is a property of the scalar sector, and [The Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter.html) owns that argument and states what it does and does not establish.
 
 **The value is imported, and the import is not a derivation.** $\alpha_s(M_X)$ is obtained by running the measured $\alpha_s(M_Z)=0.1179$ up through the Standard Model's content. **That running uses the strong sector's own coefficient and not $\mathrm{SU}(4)$'s**, so the identification $g_4^{2}=4\pi\alpha_s(M_X)$ is a matching statement: it says the two theories are the same theory at $M_X$. **The corpus imposes it at $M_X$ while a strict matching is at $M_C$**, and the two differ by one interval of running.

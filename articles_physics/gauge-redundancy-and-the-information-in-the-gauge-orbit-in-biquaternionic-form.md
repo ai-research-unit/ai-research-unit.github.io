@@ -263,7 +263,7 @@ The boundary is drawn as in the companion articles.
 
 **Transcribed from standard gauge theory.** The interpretation of the orbit as a fibre, of the connection as a section, and of the holonomy as monodromy is the standard bundle picture written in the algebra's notation. The algebra makes the invariance transparent; it does not force the geometric interpretation. The degree-of-freedom counting is the standard one for a massless vector field: the framework supplies its first step — the rank-one orbit — and the second step, the Gauss-law constraint, is imported with the field equation.
 
-**Not supplied.** A fixing the representative principle, which the canonical-quantization article records as absent; the non-abelian orbit, whose transformation law is the adjoint one and whose reality condition is open; and any empirical consequence distinguishing the interpretation from standard gauge theory. The orbit and its invariance are properties of any formulation of an abelian gauge theory; the framework's contribution is to locate the symmetry group in the centre of the algebra and to exhibit the orbit as the fibre of the curvature map.
+**Not supplied.** A principle that fixes the representative, which the canonical-quantization article records as absent; the non-abelian orbit, whose transformation law is the adjoint one and whose reality condition is open; and any empirical consequence distinguishing the interpretation from standard gauge theory. The orbit and its invariance are properties of any formulation of an abelian gauge theory; the framework's contribution is to locate the symmetry group in the centre of the algebra and to exhibit the orbit as the fibre of the curvature map.
 
 **Companion articles.** The construction rests on the following written articles of the series.
 
@@ -271,7 +271,7 @@ The boundary is drawn as in the companion articles.
 - Companion article *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, for $D$ as an operator, its covariance, and the covariant square.
 - Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the adjoint transformation law and the non-abelian orbit.
 - Companion article *Wilson Loops in Biquaternionic Form*, for the holonomy, the loop as a two-sector bilinear, and the small-loop expansion.
-- Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the constraint structure and the absent fixing the representative principle.
+- Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the constraint structure and the absent principle that fixes the representative.
 - Companion article *States, Observables and the Born Weight*, for the state space, the trace, and the absence of an observable conjugate to the central phase.
 - Companion article *Relative Entropy and the Biquaternion Framework*, for the relative entropy and its invariance under $*$-unitary conjugation.
 - Companion article *Confinement and the Loss of Partonic Information in Biquaternionic Form*, for the loss case against which this article's redundancy is defined.
@@ -279,7 +279,7 @@ The boundary is drawn as in the companion articles.
 
 ## Open Questions
 
-1. **A fixing the representative principle.** The orbit is a torsor, so no member is preferred. Is there an algebraic principle that selects a representative — a condition natural to $\mathbb{B}$ rather than imported — or is the choice irreducibly extrinsic, as the canonical-quantization article suggests?
+1. **A principle that fixes the representative.** The orbit is a torsor, so no member is preferred. Is there an algebraic principle that selects a representative — a condition natural to $\mathbb{B}$ rather than imported — or is the choice irreducibly extrinsic, as the canonical-quantization article suggests?
 
 2. **The non-abelian orbit.** For a non-central symmetry group the orbit is the adjoint orbit of the connection, $A_{\imath}\mapsto \tilde Q A_{\imath} \tilde Q^{-1} + (i/\kappa)(\partial/\partial R_{\imath} \tilde Q)\tilde Q^{-1}$, and it is no longer a torsor of an abelian group but a coadjoint-type space. Does the orbit still have a clean fibre interpretation, and does the relative-entropy invariance survive with the appropriate $*$-unitary?
 

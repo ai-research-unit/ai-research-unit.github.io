@@ -15,7 +15,7 @@ The answer, stated at the outset, has three positive parts and four negative one
 The negative parts are equally specific.
 
 4. **No ladder.** There is no bosonic creation or annihilation operator in $\mathbb{B}$ (the scalar part of a commutator vanishes, while $2\,\mathrm{Sc}(e_t)=2$), so the photon number operator $N_\gamma$ is not an element of the algebra. The ladder algebra is imported, as *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* records.
-5. **No fixing the representative principle.** The algebra offers no reason to prefer one gauge to another, so although the transverse plane is native, the *reduction* from four polarizations to two is imposed from outside.
+5. **No principle that fixes the representative.** The algebra offers no reason to prefer one gauge to another, so although the transverse plane is native, the *reduction* from four polarizations to two is imposed from outside.
 6. **Masslessness is inserted.** Nothing in the algebra fixes $m=0$. Masslessness is what makes helicity Lorentz invariant and what makes the third helicity unphysical; the framework represents the massive (Proca) alternative as readily as the massless one.
 7. **Interactions, and any empirical test that would distinguish the framework from standard electrodynamics, lie outside** the free field treated here.
 
@@ -218,7 +218,7 @@ read across the twelve structures in *The Zero-Divisor Cone and the Massless Spe
 
 The gaps are of three kinds, and none is closed by better notation.
 
-**Algebraic gaps.** There is no bosonic ladder in $\mathbb{B}$; the photon number operator is not an element of the algebra; and the fixing the representative principle is absent. The first two are finite-dimensionality statements and are inherited from the Fock article. The third is the one the polarization results most nearly touch and do not reach: the algebra supplies the transverse plane and the longitudinal direction that must be removed, but not the rule for removing it.
+**Algebraic gaps.** There is no bosonic ladder in $\mathbb{B}$; the photon number operator is not an element of the algebra; and the principle that fixes the representative is absent. The first two are finite-dimensionality statements and are inherited from the Fock article. The third is the one the polarization results most nearly touch and do not reach: the algebra supplies the transverse plane and the longitudinal direction that must be removed, but not the rule for removing it.
 
 **Represented quantities.** Masslessness is the sharpest. The photon is defined by $m=0$, and $m=0$ is what makes helicity Lorentz invariant and what removes the helicity-zero state; the framework represents $m=0$ and $m\neq0$ on the same footing and does not prefer either. The reason is structural rather than bookkeeping: the norm is homogeneous, so the cone is scale-invariant and the algebra carries no preferred scale with which to fix $m$. *The Null Four-Momentum: What the Cone Derives and What Must Be Added* gives that argument, and gathers what the cone nevertheless derives — the massless shell as the zero-divisor cone, the frame-independence of $c$ from the multiplicativity of the norm, the absence of a rest frame for a null four-momentum, and the motion at $c$ for every momentum. The neutrality that makes the photon its own antiparticle is likewise an input. The unit $\frac{h}{2\pi}$ and the identification of the one-particle states as photons are inputs.
 
