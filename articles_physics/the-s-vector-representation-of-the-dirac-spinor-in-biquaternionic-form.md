@@ -433,7 +433,7 @@ so the preferred frame is not put in by hand in the final form, it is the algebr
 
 3. **The lattice consequence.** The source suggests, as "further speculation", that because the dualized Dirac equation is second order, and second-order Lagrangians have no fermion-doubling problem, the vector representation offers a route around the Nielsen–Ninomiya obstruction. The corpus's *Fermion Doubling and the Nielsen–Ninomiya Theorem* treats that obstruction as a lattice statement; whether the s-vector representation evades its hypotheses, or merely restates them in a different field variable, is open.
 
-4. **The interaction with a preferred frame.** If $u_{\imath}$ is physical, the construction singles out a preferred direction in the vacuum. Does the resulting theory violate Lorentz invariance observably, or is $k$ a artifact of the representative of the description? The source does not say.
+4. **The interaction with a preferred frame.** If $u_{\imath}$ is physical, the construction singles out a preferred direction in the vacuum. Does the resulting theory violate Lorentz invariance observably, or is $k$ an artifact of the representative of the description? The source does not say.
 
 5. **Extension beyond four dimensions.** The construction uses the Lorentzian four-dimensional signs essentially — the source notes that a biquaternion description would not work if the dimension and the signs were different. What happens at the next triality dimension, eight, where the algebra is the octonions and the vector and the two part spaces coincide, is the Cartan case the corpus records in *Triality and Spin(8) with Inner Conjugation*.
 

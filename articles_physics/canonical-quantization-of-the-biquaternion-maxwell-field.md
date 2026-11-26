@@ -61,7 +61,7 @@ $$
 S_2=S-\Box_\Phi\Gamma,
 $$
 
-and the field strength is invariant, $\tilde{F}_2=\tilde{F}$. The companion article states plainly that $S$ "is a artifact of the representative" and that the **Lorenz fixing condition** $S=0$ is "a choice of gauge, not a physical condition". In that gauge the potential obeys the second-order equation
+and the field strength is invariant, $\tilde{F}_2=\tilde{F}$. The companion article states plainly that $S$ "is an artifact of the representative" and that the **Lorenz fixing condition** $S=0$ is "a choice of gauge, not a physical condition". In that gauge the potential obeys the second-order equation
 
 $$
 \Box_\Phi\tilde{A}_{\Phi}=-\mu\tilde J_{\Phi},\qquad \tilde J_{\Phi}=ic\rho\,e_t+\vec J.
@@ -234,7 +234,7 @@ The verdict is therefore not a ranking. **Maxwell is a transcription of standard
 
 **Open, and not settled here.**
 
-- **The principle that fixes the representative.** The framework gives no algebraic reason to prefer $S=0$ to any other gauge, or to prefer Gupta–Bleuler to the Coulomb fixing condition. Whether a biquaternionic principle exists is the central open question. The companion article's judgement that $S$ is a artifact of the representative is a negative statement, not a mechanism.
+- **The principle that fixes the representative.** The framework gives no algebraic reason to prefer $S=0$ to any other gauge, or to prefer Gupta–Bleuler to the Coulomb fixing condition. Whether a biquaternionic principle exists is the central open question. The companion article's judgement that $S$ is an artifact of the representative is a negative statement, not a mechanism.
 - **The intrinsic Lagrangian and pairings.** The parent Dirac article records that the $\mathbb{B}$-intrinsic Lagrangian and conjugate momentum are not fixed by the algebra. The same is true here, and more sharply, because the natural variable $\tilde{F}$ has no canonical partner at all. Whether a real-scalar Lagrangian built from the trace and norm pairings reproduces the standard constraint structure is not shown.
 - **The biquaternion Fock space.** Whether there is a Fock space native to $\mathbb{B}$, rather than the exterior (fermionic) or symmetric (bosonic) algebra of a module's solution space, is the subject of the planned companion article on the Fock space.
 - **The photon.** Whether the two transverse polarizations have a native meaning in the algebra — for instance, in the vector part of the material sector — is the subject of the planned article on the photon.
