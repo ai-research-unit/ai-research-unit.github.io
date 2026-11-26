@@ -77,6 +77,52 @@ When there is an issue, explain it clearly.
 Avoid verbiage, jargon, over-engineering, complacency.
 
 
+
+
+
+################################
+### RULES TO WRITE TITLES
+################################
+
+The core principle to encode :
+A physics title is a compressed abstract, not a chapter heading. It should let a specialist decide in 3 seconds whether to read the paper. Evocativeness is a liability; searchability and precision are assets.
+
+Concrete prompting strategies
+
+1. Give a hard style constraint with a named target
+Don't say "good titles." Say:
+
+"Write titles in the style of Physical Review D / JHEP / Nuclear Physics B. They must be descriptive, technical, and searchable. Do not use definite-article constructions like 'The Fifteen' or 'The Quartet' as the subject. Do not use narrative or dramatic subtitles. Do not personify mathematical objects."
+
+2. Provide positive exemplars 
+
+3. Ban the offending pattern explicitly
+"The following title patterns are forbidden: 'The X and the Y', 'The X: [narrative clause]', 'Nothing [verb]s the [noun]', 'The X Printed', any title where a definite article + capitalized noun is the subject and the reader cannot tell what physical object is meant."
+
+4. Ask for a physicist's reading test
+"For each title, answer: could a physicist who has not read the abstract identify (a) the model/object, (b) the construction or result, and (c) the key number or property? If not, rewrite."
+
+5. Separate topic from claim
+Force the model to fill a template before generating the title:
+
+text
+Object of study   
+What is done
+Key result/property
+Then: "Now write a title that states (a) and (b) in the main clause and (c) in the subtitle, using no more than 20 words total."
+
+6. Use a negative example + rewrite cycle
+Show the model one of its bad titles and ask it to diagnose why it's bad, then rewrite. This calibrates the model's internal critic:
+
+"Here is a title you produced: 'Lepton Flavour: Nothing Turns the Lepton, and the Matrix That Would Have To.' Identify every feature that makes this unsuitable for a physics journal. Then rewrite it as a PRD-style title."
+
+7. Constrain length and structure
+Physics titles are typically 8–20 words, one colon maximum, and the colon separates topic from specific result — not setup from punchline. Encode this:
+
+"Maximum one colon. Left of colon = the object/system. Right of colon = the specific construction, classification, or result. No second colon. No question marks. No exclamation."
+
+
+
 ################################
 ### RULES DURING THE QUESTION MODE
 ################################

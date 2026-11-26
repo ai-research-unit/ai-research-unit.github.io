@@ -188,6 +188,6 @@ The equation of state is a ratio of squared quantities, $w=(\dot\xi^{2}-2V)/(\do
 
 - [Matter Into the Frame: The Variation That Defines the Source](matter-into-the-frame-the-variation-that-defines-the-source.html), for the dictionary this article tests and the index-placement remark it makes precise.
 - [The Lagrangian and the Central Scalar Field](the-lagrangian-and-the-central-scalar-field.html), for the central scalar action whose Euler–Lagrange equation appears here as the frame's Laplace–Beltrami equation.
-- [The Action Problem](the-action-problem.html), for the perfect-fluid frame with leg scales $\sqrt\rho$ and $\sqrt p$ that this article's equation of state fills, and for the trace collapse.
+- [The Exact Gravitational Action](the-exact-gravitational-action-the-functional-the-boundary-term-and-the-variation.html), for the perfect-fluid frame with leg scales $\sqrt\rho$ and $\sqrt p$ that this article's equation of state fills, and for the trace collapse.
 - [The Maxwell Sector on a Frame](the-maxwell-sector-on-a-frame.html), for the sector where the same dictionary is applied to a field with spin one, and where the algebraic packaging fails.
 - [The Newtonian Limit: Closing the Chain](the-newtonian-limit-closing-the-chain.html), for the chain that a $\rho$ of this kind feeds.

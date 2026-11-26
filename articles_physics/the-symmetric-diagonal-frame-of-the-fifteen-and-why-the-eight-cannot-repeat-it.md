@@ -145,17 +145,17 @@ The frame adopted for the fifteen is $M$, because its arrays have the same width
 
 The claim is that no basis of the eight generators of $\mathfrak{su}(3)$ can be permuted by $S_3$ acting on the three lines. The proof does not use the diagonal at all in its first form, and uses only the diagonal in its second.
 
-First form, by characters. The trace of the permutation matrix on three lines is $3$ for the identity, $1$ for a three-cycle and $2$ for a transposition, because the cycle has no fixed point and the transposition fixes one line. On the adjoint of $\mathfrak{su}(n)$ the character is $|\operatorname{tr}g|^2-1$. Verified:
+First form, by characters. The trace of a permutation matrix counts the lines it fixes. On three lines it is $3$ for the identity, $0$ for a three-cycle and $1$ for a transposition, because the cycle fixes no line and the transposition fixes one. On four lines with $\epsilon_t$ fixed the same three values rise by one: $4$, $1$, $2$. On the adjoint of $\mathfrak{su}(n)$ the character is $|\operatorname{tr}g|^2-1$. Verified:
 
 | group | identity | three-cycle | transposition |
 | --- | --- | --- | --- |
-| $S_3$ on $\mathfrak{su}(3)$ | $8$ | $0$ | $-1$ |
-| $S_3$ on $\mathfrak{su}(4)$, $t$ fixed | $15$ | $3$ | $0$ |
+| $S_3$ on $\mathfrak{su}(3)$, three lines | $\lvert 3\rvert^2-1=8$ | $\lvert 0\rvert^2-1=-1$ | $\lvert 1\rvert^2-1=0$ |
+| $S_3$ on $\mathfrak{su}(4)$, $t$ fixed | $\lvert 4\rvert^2-1=15$ | $\lvert 1\rvert^2-1=0$ | $\lvert 2\rvert^2-1=3$ |
 
-With the three irreducible representations of $S_3$ of dimensions $1$, $1$ and $2$, characters $(1,1,1)$, $(1,-1,1)$ and $(2,0,-1)$, the multiplicities solve
+With the three irreducible representations of $S_3$ of dimensions $1$, $1$ and $2$, characters $(1,1,1)$, $(1,1,-1)$ and $(2,-1,0)$, the multiplicities solve
 
 $$
-\mathfrak{su}(3):\quad a+b+2c=8,\quad a-b=0,\quad a+b-c=-1,
+\mathfrak{su}(3):\quad a+b+2c=8,\quad a+b-c=-1,\quad a-b=0,
 $$
 
 giving $(a,b,c)=(1,1,3)$ and
@@ -167,7 +167,7 @@ $$
 and
 
 $$
-\mathfrak{su}(4):\quad a+b+2c=15,\quad a-b=3,\quad a+b-c=0,
+\mathfrak{su}(4):\quad a+b+2c=15,\quad a+b-c=0,\quad a-b=3,
 $$
 
 giving $(a,b,c)=(4,1,5)$ and

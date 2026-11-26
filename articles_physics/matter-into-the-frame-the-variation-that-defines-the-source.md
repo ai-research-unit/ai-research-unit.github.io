@@ -264,7 +264,7 @@ The half that is absent is the other term of the stationary condition: a functio
 
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame route, its three mechanisms of curvature, and its boundary.
 - [The Gram Matrix as the Only Metric](the-gram-matrix-as-the-only-metric.html), for $g=E\digamma_{\mathrm{met}}E^{\mathsf T}$ and the count sixteen against ten.
-- [The Action Problem](the-action-problem.html), for the perfect-fluid frame, the trace collapse of the single-element carrier, and the pairing formulation of the action problem.
+- [The Exact Gravitational Action](the-exact-gravitational-action-the-functional-the-boundary-term-and-the-variation.html), for the perfect-fluid frame, the trace collapse of the single-element carrier, and the pairing formulation of the action problem.
 - [Spin-Half Energy-Momentum Tensor](the-spin-half-energy-momentum-tensor.html), for the symmetric and antisymmetric parts, the Belinfante relation and the Frenkel condition.
 - [Torsion, Contorsion and the Spin Connection in Biquaternionic Form](torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html), for the spin tensor that an antisymmetric frame variation would source.
 - [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the flat-space $\Theta$ that the sectoral articles carry onto a frame.

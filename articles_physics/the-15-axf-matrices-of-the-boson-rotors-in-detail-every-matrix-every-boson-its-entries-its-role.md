@@ -10,7 +10,7 @@
 
 **Why the rotor and not only the array, said once.** The array's entry is a vertex: it says which two lines a boson can join, and the Feynman rule reads it directly. **The rotor's entry is an amplitude**: it says how much of a line has become the other line after a finite parameter $\theta$, and it is the vertex summed to all orders. **The two are not the same object read twice**, and the distance between them is the mass — which is why the same $\sin\theta$ is an oscillation on the massless directions and a frozen amplitude on the heavy ones.
 
-**Why "role" and not "fate".** A fate is what the vacuum does to a boson, and [the bosons-in-detail article](the-15-axf-matrices-of-the-bosons-in-detail.html) gives it in one column: $32v^{2}$ six times, zero nine times. **A role is what the boson does to the four lines**, and it is not the same list: the corner is massless and multiplies all four lines by phases, the octet is massless and leaves the lepton line untouched. **Two partitions of the same fifteen, and this article keeps them apart.**
+**Why "role" and not "fate".** A fate is what the vacuum does to a boson, and [the bosons-in-detail article](the-15-axf-matrices-of-the-bosons-in-detail.html) gives it in one column: $32v^{2}$ six times, zero nine times, **below $M_C$**; above $M_C$ the column is zero on all fifteen and there is no fate to state. **A role is what the boson does to the four lines**, and it is phase-free: the corner multiplies all four lines by phases, the octet leaves the lepton line untouched, and neither sentence needs the vacuum. **Two partitions of the same fifteen, and this article keeps them apart.**
 
 ## Conventions
 
@@ -30,7 +30,7 @@ $$
 
 **Why $\theta$ and never a half angle.** None of the fifteen is half of another array, so none of the fifteen has a half angle in its rotor. **The $\tfrac12$ appears only when a composite is exponentiated**, and §*What the Rotor Entries Say That the Array Entries Do Not* says where the composites sit.
 
-**One comparison decides the third reading of a role, and it is the vacuum.** With $Ξ_{0}=vD$ the breaking direction, the rotor is a symmetry of the vacuum exactly when the array commutes with $D$:
+**One comparison decides the third reading of a role, and it is a commutator.** With $Ξ_{0}=vD$ the breaking direction, the rotor is a symmetry of the vacuum exactly when the array commutes with $D$ — and **the commutator is an algebraic fact whether or not a vacuum is put in front of it**:
 
 $$
 [A,D]=0
@@ -38,21 +38,21 @@ $$
 R_{A}(\theta)\,Ξ_{0}\,R_{A}(\theta)^{-1}=Ξ_{0}.
 $$
 
-**Nine arrays commute with $D$ and six do not**, and the count is the count of the massless and heavy vectors. **A massless boson of this model is a rotor that leaves the vacuum exactly where it was; a heavy one is a rotor that moves it.** That is the Higgs mechanism in the language of this article, and it is checked in the table at the end.
+**Nine arrays commute with $D$ and six do not.** Above $M_C$ that is a statement about commutators and nothing else; **below $M_C$ it becomes the mass split, and a massless boson is then a rotor that leaves the vacuum exactly where it was while a heavy one moves it.** That is the Higgs mechanism in the language of this article, and it is checked in the table at the end.
 
 ## The Ledger of the Fifteen, Read on the Rotors
 
 **One row per boson, and the rotor's shape is the row's middle.**
 
-| boson | array | the rotor | fixed lines | $m^{2}$ | role |
+| boson | array | the rotor | fixed lines | $m^{2}$ above $M_C$ | role |
 | --- | --- | --- | --- | --- | --- |
 | $B'$ | $iD$ | four phases, one at triple rate | none | $0$ | the vacuum direction, and the only rotor that reaches the centre |
-| $\bar X^{r}$ | $A_{tx}$ | real turn of the lepton–red plane | $y$, $z$ | $32v^{2}$ | lepton into red and back |
-| $X^{r}$ | $iS_{tx}$ | the same plane, phased | $y$, $z$ | $32v^{2}$ | the second amplitude of the same pair |
-| $\bar X^{g}$ | $A_{ty}$ | real turn of the lepton–green plane | $x$, $z$ | $32v^{2}$ | lepton into green and back |
-| $X^{g}$ | $iS_{ty}$ | the same plane, phased | $x$, $z$ | $32v^{2}$ | the second amplitude |
-| $\bar X^{b}$ | $A_{tz}$ | real turn of the lepton–blue plane | $x$, $y$ | $32v^{2}$ | lepton into blue and back |
-| $X^{b}$ | $iS_{tz}$ | the same plane, phased | $x$, $y$ | $32v^{2}$ | the second amplitude |
+| $\bar X^{r}$ | $A_{tx}$ | real turn of the lepton–red plane | $y$, $z$ | $0$ | lepton into red and back |
+| $X^{r}$ | $iS_{tx}$ | the same plane, phased | $y$, $z$ | $0$ | the second amplitude of the same pair |
+| $\bar X^{g}$ | $A_{ty}$ | real turn of the lepton–green plane | $x$, $z$ | $0$ | lepton into green and back |
+| $X^{g}$ | $iS_{ty}$ | the same plane, phased | $x$, $z$ | $0$ | the second amplitude |
+| $\bar X^{b}$ | $A_{tz}$ | real turn of the lepton–blue plane | $x$, $y$ | $0$ | lepton into blue and back |
+| $X^{b}$ | $iS_{tz}$ | the same plane, phased | $x$, $y$ | $0$ | the second amplitude |
 | $g_{1}$ | $A_{xy}$ | real turn of the red–green plane | $t$, $z$ | $0$ | colour rotation |
 | $g_{2}$ | $iS_{xy}$ | the same plane, phased | $t$, $z$ | $0$ | the second colour amplitude |
 | $g_{4}$ | $A_{xz}$ | real turn of the red–blue plane | $t$, $y$ | $0$ | colour rotation |
@@ -61,6 +61,8 @@ $$
 | $g_{7}$ | $iS_{yz}$ | the same plane, phased | $t$, $x$ | $0$ | the second colour amplitude |
 | $T^{c}_{3}$ | $d_{2}$ | two opposite phases | $t$, $z$ | $0$ | colour phase, red against green |
 | $T^{c}_{8}$ | $d_{3}$ | two opposite phases | $t$, $x$ | $0$ | colour phase, green against blue |
+
+**The fifth column is zero on every row, and that is the phase and not an omission.** Above $M_C$ there is no vacuum, so the spectrum of a rotor cannot depend on which array it is: **the fifteen are degenerate, and the column becomes informative only below $M_C$, where six rows take $32v^{2}$ and nine take $0$** — [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)'s computation.
 
 **Fixed lines: fourteen rotors fix exactly two lines, and one fixes none.** The corner is the only rotor of the fifteen that touches all four lines, **and that is why it is the only one that can be central**: a rotor with a fixed line cannot be a multiple of the identity.
 
@@ -117,7 +119,7 @@ $$
 
 **The reading.** The rotor takes the lepton line into the red line and keeps its length: **$\sin\theta$ is the amplitude that has become colour after a finite parameter, and $\cos\theta$ is the amplitude that has stayed leptonic.** The two are one circle, and **the entry never exceeds one**, which is the difference between this rotor and a boost.
 
-**The role.** $\bar X^{r}$ is the leptoquark amplitude of the red plane: **the boson whose rotor moves the lepton line into the red line and back**, which is the definition of a leptoquark read on the matrix rather than on the charges. **It is heavy, $32v^{2}$, and the mass has a rotor form: this is one of the six rotors that do not leave the vacuum alone**, since $[A_{tx},D]\ne0$ and the rotor conjugates $D$ into a different diagonal.
+**The role.** $\bar X^{r}$ is the amplitude of the red plane: **the boson whose rotor moves the lepton line into the red line and back**, which is the definition read on the matrix rather than on the charges. **Mass $0$ above $M_C$.** **Below $M_C$ it is heavy, $32v^{2}$, and the mass has a rotor form: it is one of the six rotors that do not commute with $D$**, since $[A_{tx},D]\ne0$ and the rotor conjugates $D$ into a different diagonal.
 
 **The plane closes.** $[A_{tx},iS_{tx}]=2i(E_{tt}-E_{xx})=-\tfrac23\bigl(iD+2d_{2}+d_{3}\bigr)$, **so the plane's two rotors and one diagonal combination generate an $\mathfrak{su}(2)$** — which is why the two amplitudes are one doublet and why no third amplitude sits on the same plane.
 
@@ -159,7 +161,7 @@ $$
 
 **The reading.** $\exp(\theta A_{ty})e_{t}=\cos\theta\,e_{t}-\sin\theta\,e_{y}$, **the same circle with a different partner.** The star carries the array to a colour plane with a minus, $\star A_{ty}=-A_{xz}$, and **the minus is the orientation of the pair $(x,z)$ against the order of the quartet** — it reappears in the recombination $A_{xz}=+(T^{L}_{y}-T^{R}_{y})$, the one plus sign among the six.
 
-**The role.** $\bar X^{g}$ is the green leptoquark amplitude, with the same charge $-\tfrac23$, the same colour $\bar{\mathbf3}$ and the same mass $32v^{2}$. **The mass is identical in the three colours because the vacuum's three colour eigenvalues are equal**: the rotor's $\cos$ and $\sin$ are the same functions of $\theta$ on all six leptoquark planes, and colour enters only through which line is named.
+**The role.** $\bar X^{g}$ is the green amplitude, with the same charge $-\tfrac23$ and the same mass: $0$ above $M_C$, and one common value below it. **That value is identical in the three spatial lines because the three eigenvalues of $D$ there are equal**: the rotor's $\cos$ and $\sin$ are the same functions of $\theta$ on all six mixed planes, and the line enters only through which one is named.
 
 ### $X^{g}$: $iS_{ty}$, the same plane with the phase
 
@@ -199,7 +201,7 @@ $$
 
 **The reading.** $\exp(\theta A_{tz})e_{t}=\cos\theta\,e_{t}-\sin\theta\,e_{z}$, with both colour lines $x$ and $y$ fixed. **The rotor is a rotation of the pair (lepton, blue) and the identity on the other pair** — the sharpest single example of "a plane rotor is a rotation in two lines and nothing elsewhere".
 
-**The role.** $\bar X^{b}$ is the blue leptoquark amplitude, charge $-\tfrac23$, mass $32v^{2}$, and its plane's bracket closes the third way, $[A_{tz},iS_{tz}]=-\tfrac23 iD+\tfrac23 d_{2}+\tfrac43 d_{3}$. **The three closures are the three independent diagonal combinations of the corner and the two colour phases**, so each leptoquark plane closes with the diagonal sector and no leptoquark plane closes with another.
+**The role.** $\bar X^{b}$ is the blue amplitude, charge $-\tfrac23$, mass $0$ above $M_C$, and its plane's bracket closes the third way, $[A_{tz},iS_{tz}]=-\tfrac23 iD+\tfrac23 d_{2}+\tfrac43 d_{3}$. **The three closures are the three independent diagonal combinations of the corner and the two colour phases**, so each leptoquark plane closes with the diagonal sector and no leptoquark plane closes with another.
 
 ### $X^{b}$: $iS_{tz}$, the last of the six
 
@@ -219,7 +221,7 @@ $$
 
 **The reading.** $\exp(\theta\,iS_{tz})e_{t}=\cos\theta\,e_{t}+i\sin\theta\,e_{z}$. **With this rotor the six are complete and the count of heavy vectors is six**, and the count is the number of arrays that move the lepton line without being the corner.
 
-**The role.** $X^{b}$ is the blue amplitude, and **the sextet it completes is the only coloured massive set of the model**: six rotors, one mass, three colour lines, two amplitudes, and six charges that sum to zero. **The rotor language adds one fact to the ledger's**: all six have the same $\cos$ and the same $\sin$, so the sextet is degenerate at the symmetric point by the shape of the rotor and not by a symmetry of the potential.
+**The role.** $X^{b}$ is the blue amplitude, and **the six it completes are the only set that moves the lepton line**: six rotors, one mass, three spatial lines, two amplitudes, and six charges that sum to zero. **Above $M_C$ that mass is zero, like the other nine.** **The rotor language adds one fact to the ledger's**: all six have the same $\cos$ and the same $\sin$, so the six are degenerate by the shape of the rotor and not by a symmetry of any potential.
 
 ## The Six Colour-Plane Rotors: The Rotors That Leave the Lepton Line Alone
 
@@ -407,9 +409,9 @@ $$
 
 **Three statements, and each is a comparison of the two matrices in one subsection.**
 
-**First, a vertex is not an amplitude.** The array's entry is $1$ or $i$ and says which two lines the boson can join; **the rotor's entry is $\sin\theta$ and says how much of one line has become the other after a finite parameter.** For a massless boson the two agree in the only way they can — the vertex is unsuppressed and the amplitude is a circle — while for a heavy one the circle is no longer free: **$\theta$ is then a field and not a symmetry parameter, the vacuum sits at one value of it, and the oscillation about that value is the $32v^{2}$.**
+**First, a vertex is not an amplitude.** The array's entry is $1$ or $i$ and says which two lines the boson can join; **the rotor's entry is $\sin\theta$ and says how much of one line has become the other after a finite parameter.** Above $M_C$ every direction is massless and the two agree in the only way they can: the vertex is unsuppressed and the amplitude is a circle. **Below $M_C$ six directions are heavy and their circle is no longer free — $\theta$ is then a field and not a symmetry parameter, the vacuum sits at one value of it, and the oscillation about that value is the $32v^{2}$.**
 
-**Second, the mass is a statement about the vacuum and the rotor makes it visible.** Nine rotors leave $Ξ_{0}$ fixed and six move it, and the six are exactly the six with $32v^{2}$:
+**Second, the rotor carries a split that the vacuum turns into a mass.** Nine rotors commute with $D$ and six do not, and the six are exactly the six mixed planes. **Above $M_C$ that is a statement about $D$ and nothing about mass**; below $M_C$ it is the mass split, $32v^{2}$ against $0$:
 
 $$
 [A,D]=0\ \text{for the nine}\ \Longleftrightarrow\ R_{A}(\theta)Ξ_{0}R_{A}(\theta)^{-1}=Ξ_{0},
@@ -417,7 +419,7 @@ $$
 
 **so "massless" and "the rotor is a symmetry of the vacuum" are one statement and not two.** **The corner is in the nine and fixes no line; the octet is in the nine and fixes the lepton line** — which is why the ledger of the mass and the ledger of what the rotors do are two different partitions of the same fifteen.
 
-**Third, the two amplitudes of a plane are not two bosons.** The rotor of $iS_{jk}$ is the rotor of $A_{jk}$ with one factor of $i$ on the off-diagonal pair, **so the pair is one plane, one angle, and two phases of one field.** The count that follows is the corpus's: **fifteen arrays and fifteen rotors, eight of them the colour octet and seven the corner and the sextet** — and the redundancy the corpus warns about is not in this list: the six composites are products of two of these rotors and not rotors of their own.
+**Third, the two amplitudes of a plane are not two bosons.** The rotor of $iS_{jk}$ is the rotor of $A_{jk}$ with one factor of $i$ on the off-diagonal pair, **so the pair is one plane, one angle, and two phases of one field.** The count that follows is the corpus's: **fifteen arrays and fifteen rotors, eight of them the spatial block and seven the corner and the six mixed planes** — and the redundancy the corpus warns about is not in this list: the six composites are products of two of these rotors and not rotors of their own.
 
 **And the composites, said once so that they are not smuggled in.** $T^{L}_{a}$ and $T^{R}_{a}$ are halves of sums and differences of the plane arrays, so their rotors are products of the rotors printed here, at half the parameter:
 
@@ -458,7 +460,7 @@ Sixteen recomputations, with the quartet ordered $(t,x,y,z)$ and $\theta$ one re
 
 **Three kinds of nonzero entry and no more.** A cosine that stays, a sine that moves, a phase that multiplies. **The six real planes carry the first two and are real for every $\theta$; the six imaginary planes carry the same pair with an $i$ and are real only at the half-turns; the corner and the two diagonals carry phases and no motion.**
 
-**The role of a boson is read off its rotor in two comparisons.** Eight rotors fix the lepton line and are the octet; seven do not, and they are the corner, which phases it, and the six leptoquarks, which move it into colour. **Nine rotors leave the vacuum exactly where it was and are massless; six move it and are the $32v^{2}$.**
+**The role of a boson is read off its rotor in two comparisons.** Eight rotors fix the lepton line and are the octet; seven do not, and they are the corner, which phases it, and the six mixed planes, which move it. **Nine rotors commute with $D$ and six do not** — a statement about the algebra above $M_C$, and the mass split, $0$ against $32v^{2}$, only below it.
 
 **The corner is the only rotor that reaches the centre**, four times a turn with values $i^{k}$, and it is the only one that can be central because it is the only one with no fixed line. **That is the rotor form of "$B-L$'s eigenvalue is fixed at every scale", and it is one line: the array the vacuum is made of is the array whose rotor can be a multiple of the identity.** The charge itself is a different statement, and it goes at the transition ([The Quantum Numbers Below the Breaking](the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html)).
 

@@ -135,7 +135,7 @@ $$
 | which line is called $\ell$ | declaration (A) |
 | the label $i\bar j$ of a given cell | a coordinate |
 | the three combinations $iM_x$, $iM_y$, $iM_z$ | one basis of the Cartan, the symmetric one |
-| the partition $15=8+1+6$ | a branching, and it needs the declaration |
+| the partition $15=8+1+6$ | a degeneration of the frame at $v_t=0$, and it needs the declaration |
 | the words gluon, leptoquark, $B-L$ boson | names of cells, relative to that declaration |
 
 **The last two rows are the ones that mislead, and the reason is the same in each.** They look like facts about the fifteen and they are facts about the fifteen *plus a declared line*. **Change the declaration and the partition changes and the names change, while no number computed from the spectrum moves.** That is exactly what a bookkeeping device does, and it is the test this article's title claims the labels pass.
@@ -162,7 +162,7 @@ $$
 | rank | independent diagonal directions | $3$ |
 | mass of every direction above $M_C$ | $\Xi_0=0$ | $0$ |
 | the two branchings of the same arithmetic | $4^{2}-1$, $3^{2}-1$ | $15$, $8$ |
-| the partition with the declaration | $8+1+6$ | $15$ |
+| the partition with the declaration | $8+1+6$, at the degenerate value of the frame | $15$ |
 | the partition without it | $12+3$ | $15$ |
 
 ## Summary
@@ -173,7 +173,7 @@ $$
 
 **Four things are real: the group, the dimension, the rank, and the masslessness.** They survive every basis and are checkable without naming a line. **The twelve-and-three split is a fifth**, invariant for the same reason.
 
-**Everything with a colour word in it is downstream of a declared line.** The partition $8+1+6$, the words gluon and leptoquark, the phrase "the fourth colour" — each requires declaration (A), and each changes when the declaration changes while no number moves. **That is the test of bookkeeping, and the fifteen pass it.**
+**Everything with a colour word in it is downstream of a declared line.** The partition $8+1+6$, the words gluon and leptoquark, the phrase "the fourth colour" — each requires declaration (A), and the first requires a second thing besides: a vacuum, because $8+1+6$ is the degenerate value of the diagonal frame and not a decomposition of the fifteen. **That is the test of bookkeeping, and the fifteen pass it.**
 
 ## Summary of Notation
 

@@ -127,6 +127,20 @@ A type III field algebra with an outer modular flow. No route yet. The finite-di
 
 Empirical content for the gravitational sector. No route. Nothing in the framework's gravity series predicts a deviation from standard general relativity; a quantisation could in principle produce one, but there is no quantisation to do so. This item is owned by *The Empirical Status of the Biquaternion Framework* and is not developed here; the gravitational part of it is the action and its coupling, both of which belong to the field-equation article.
 
+## The Conformal Factor: A Measure Is Not Enough
+
+The obstacles above are about a dynamics that does not exist. This one survives even if it did, and it belongs here rather than in the action article because it is a statement about the integral, not about the integrand.
+
+**The Euclidean Hilbert action is unbounded below.** Under a conformal rescaling $g\mapsto\Omega^{2}g$ the Euclidean action changes by a term whose quadratic form in $\Omega$ is indefinite, so along a conformal direction at fixed conformal class the action can be driven to minus infinity. This is the conformal-factor problem of Euclidean quantum gravity, and it means a path integral over metrics requires a contour prescription — a rotation in the conformal direction — before it is defined at all.
+
+Suppose the action problem were solved and a functional were written whose variation is the Einstein equation. One problem would remain, and it belongs in this article because it is often mistaken for a detail.
+
+The Euclidean Einstein–Hilbert action is unbounded below. Under a conformal rescaling $g\mapsto\Omega^{2}g$ the action changes by a term whose quadratic form in $\Omega$ is indefinite, so the action can be driven to minus infinity along a conformal direction at fixed conformal class. This is the conformal factor problem of Euclidean quantum gravity, and it means that a path integral over metrics requires a contour prescription — a rotation in the conformal direction — before it is defined at all.
+
+The framework has no such prescription and no place to put one: a contour is a choice about a measure, and the corpus's measure problem is the same one recorded for the informational sector, where the trace has no volume element. So even a solved action problem would leave the quantisation problem open, and the quantum-gravity article's ordering argument — that quantisation presupposes an action, a momentum and a constraint structure — understates the case by one item. It presupposes a measure as well.
+
+**What it adds to the ordering argument.** The ordering argument of the preceding sections is that quantisation presupposes an action, a momentum and a constraint structure. It presupposes a measure as well, and the measure is where this problem lives: a contour is a choice about a measure, and this corpus has no measure for the gravitational sector, for the same reason it has none for the informational sector — the trace has no volume element. So a solved action problem would leave the quantisation problem exactly where it is.
+
 ## The Modular Route to a Horizon Temperature: What It Gives and What It Does Not
 
 The perturbative route is blocked at its first link. There is a second route in the framework that reaches thermal data without quantising a metric, and its status is different enough to be stated on its own. It is the framework's finite-dimensional modular operator, and it is the one place in this article where the algebraic chain of the introduction is entered rather than the canonical or path-integral chains.

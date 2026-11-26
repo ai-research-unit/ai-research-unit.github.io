@@ -1,0 +1,201 @@
+# __Why Gravitation Is Not a Force but a Curvature__
+
+## Introduction
+
+**The question.** There are four interactions in the standard list and three in the other list. Is gravity the fourth force, or is it the shape of the stage on which the other three act? The two lists are not a disagreement about the world; they are a disagreement about which description to call fundamental, and this article separates the part of the question that has a frame-independent answer from the part that does not.
+
+**The answer, in one line.** No instrument reads gravity as a force: an accelerometer in free fall reads zero, and a gravimeter reads the proper acceleration of an observer who is being *held up*. What survives when that holding is removed is curvature, and curvature is tidal — it is read by a gradiometer, not by an accelerometer.
+
+**What this article adds, and what it does not repeat.** [The Force Content of the Model](the-force-content-of-the-su4-model-one-connection-a-nine-dimensional-kernel-and-rank-five.html) already argues from the model's own inventory that gravity has no slot in the connection, and that argument is not repeated here. This article is about the two descriptions themselves: what "not a force" means exactly, what an accelerometer and a gradiometer each measure, which number separates the two readings, why this framework lands on the geometric side for a reason of its own, and why it nevertheless contains a gauge connection that sits on the other side.
+
+**The three positions, stated before they are judged.**
+
+| position | gravity is | what is fundamental | where it is held |
+| --- | --- | --- | --- |
+| three forces and a geometry | the curvature of the arena | the metric | classical general relativity |
+| four forces | a gauge interaction with a spin-two quantum | a quantum field on a background | particle physics, perturbative quantum gravity |
+| one interaction | derived, or emergent | the unified object | unification programmes, emergent gravity |
+
+**Why the question is not merely verbal, said once and then used.** A force, in the only sense mechanics gives the word, is a term in an equation of motion that produces *proper* acceleration. Proper acceleration is what an accelerometer reads, and every observer agrees on its value at an event. So "is gravity a force?" has a frame-independent answer at the level of what an instrument reads, and a frame-dependent answer at the level of what appears in a coordinate equation. Both answers are correct; they are answers about different objects, and most of the disagreement in the literature is a failure to say which object is meant.
+
+## Conventions
+
+The frame is $\tilde E_{\Phi,\imath}$, the Gram matrix $g_{\imath\jmath}=\langle\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}$ with inverse $G_{\imath\jmath}$, indices low. The Schwarzschild function is $f=1-2M/r$ in units $c=1$, so $M$ carries units of length; the orthonormal tetrad is $\hat e_{\hat t}=f^{-1/2}\partial_{t}$, $\hat e_{\hat r}=f^{1/2}\partial_{r}$, $\hat e_{\hat\theta}=r^{-1}\partial_{\theta}$, $\hat e_{\hat\phi}=(r\sin\theta)^{-1}\partial_{\phi}$.
+
+**Two objects are used throughout, and the distinction between them is the article.** The electric part of the curvature is $E_{\hat\imath\hat\jmath}=R_{\hat\imath\hat t\hat\jmath\hat t}$, the magnetic part is its dual, and the four-acceleration is $a^{\mu}=u^{\nu}\nabla_{\nu}u^{\mu}$. The first is what a gradiometer reads; the second is what an accelerometer reads.
+
+## What "Not a Force" Means, in the Only Sense That Survives
+
+**A force is what an accelerometer reads.** Newtonian mechanics defines a force by its effect on motion, $F=ma$, and the relativistic form of that statement is $a^{\mu}=u^{\nu}\nabla_{\nu}u^{\mu}\neq0$. The definition is operational and frame-independent: it names a quantity an instrument measures, not a term in a particular coordinate equation.
+
+**Free fall is the zero of that instrument.** A body in free fall follows a geodesic, and along a geodesic $u^{\nu}\nabla_{\nu}u^{\mu}=0$ identically. An accelerometer released with the apple reads zero for the whole of its fall. This is not an idealisation: it is the operating principle of every drag-free satellite, and it is why a gravimeter in a falling lift reads nothing.
+
+**What a gravimeter reads instead.** A supported observer at fixed $r$ has $u=f^{-1/2}\partial_{t}$, so $u^{t}=f^{-1/2}$ and the only non-zero component is
+
+$$
+a^{r}=\Gamma^{r}{}_{tt}\left(u^{t}\right)^{2}=\frac{M}{r^{2}},
+\qquad
+|a|=\sqrt{g_{rr}}\,a^{r}=\frac{M}{r^{2}\sqrt{f}}=\frac{M}{r^{2}}\left(1-\frac{2M}{r}\right)^{-1/2}.
+$$
+
+**The magnitude is Newton's acceleration with one factor, and the factor is exactly $1/\sqrt{f}$.** At $r=3M$ that factor is $\sqrt{3}$ and at $r=4M$ it is $\sqrt{2}$, both exact; at large $r$ it tends to one.
+
+| $r$ | $|a|$ with $M=1$ | $M/r^{2}$ | ratio |
+| --- | --- | --- | --- |
+| $3M$ | $0.1924500897$ | $0.1111111111$ | $\sqrt{3}$ |
+| $4M$ | $0.0883883476$ | $0.0625000000$ | $\sqrt{2}$ |
+| $10M$ | $0.0111803399$ | $0.0100000000$ | $1.1180340$ |
+| $100M$ | $0.0001010153$ | $0.0001000000$ | $1.0101525$ |
+
+**Read the table as a statement about instruments and not about gravity.** The quantity that grows without bound as $r\to2M$ is the acceleration of an observer who *refuses to fall*. It is a holding force, supplied by whatever the observer stands on, and it diverges at the horizon precisely because no holding force can keep an observer there. Nothing in the table is a property of the gravitational field; all of it is a property of the observer's worldline.
+
+**The sentence that survives, and it is the whole of the classical claim.** Gravity is not a force because nothing needs to push a freely falling body. What pushes is the ground, and the ground is not gravity.
+
+## The Equivalence Principle Removes the Term and Not the Tensor
+
+**What can be removed.** At any point $p$ there are coordinates in which $\Gamma^{\mu}{}_{\nu\rho}(p)=0$. In those coordinates the gravitational term in the geodesic equation vanishes at $p$, exactly as the centrifugal term vanishes at the axis of a rotating frame. This is the local form of the equivalence principle, and it is the precise sense in which "gravity is a force" fails: the term is absorbable into the frame, and a term that can be absorbed by a change of frame is not a force in the operational sense.
+
+**What cannot be removed.** The second derivatives cannot be absorbed, and their invariant content at a point is the curvature. For a static field the electric part is the whole of it, and the magnetic part vanishes.
+
+$$
+E_{\hat\imath\hat\jmath}=R_{\hat\imath\hat t\hat\jmath\hat t}
+=\operatorname{diag}\!\left(-\frac{2M}{r^{3}},\ \frac{M}{r^{3}},\ \frac{M}{r^{3}}\right),
+\qquad
+\operatorname{tr}E=0,
+\qquad
+B_{\hat\imath\hat\jmath}=0 .
+$$
+
+**Both statements are exact and were checked symbolically.** The computation is on the Schwarzschild metric with $M$ and $r$ symbolic, not at a point: the three diagonal entries come out as $-2M/r^{3}$ radially and $+M/r^{3}$ in each tangential direction, the six off-diagonal entries of the electric part and all six components of the dual vanish identically, and the trace is zero for every $r$. The Kretschmann scalar of the same field is $48M^{2}/r^{6}$, and the sum of the squares of the three eigenvalues is $6M^{2}/r^{6}$.
+
+**The vanishing trace is the sharpest single fact in the article.** The trace is $R_{\hat t\hat t}$, and for a perfect fluid with density $\rho$ and pressure $p$,
+
+$$
+\operatorname{tr}E=R_{\hat t\hat t}=8\pi G\left(T_{\hat t\hat t}+\tfrac12 T\right)=4\pi G\left(\rho+3p\right),
+$$
+
+which is the active gravitational mass density and is zero in vacuum. Two consequences follow, and both are about what gravity is. First, the field has no local energy density of its own, which is why the energy of the gravitational field can be written only as a pseudotensor and never as a tensor: a genuinely local field energy would have to appear on the right-hand side, and there is no invariant place to put it. Second, pressure gravitates, and it gravitates with the same coefficient as density, which no force law whose charge is mass alone can reproduce.
+
+**Two numbers from one planet, and they are read by two different instruments.** At the Earth's surface $r_{s}/R=1.3923\times10^{-9}$, one part in $7.18\times10^{8}$. Half of that number is the Newtonian potential depth, $GM/(c^{2}R)=6.96\times10^{-10}$, which is also the fractional slowing of a clock at the surface, $1-r_{s}/2R=0.999999999304$. The tidal reading at the same place is $2GM/R^{3}=3.08\times10^{-6}\ \mathrm{s^{-2}}$, which is what a gradiometer measures. The first is a statement about clock rates and is removable by choosing a different frame; the second is curvature and is not.
+
+## The Curvature That Remains Is the Tidal Field, and the Correspondence Is Exact
+
+**Component for component, the two descriptions coincide in the static field.** The Newtonian tidal tensor of $\Phi=-M/r$ is $\partial_{\imath}\partial_{\jmath}\Phi$, and on the same Schwarzschild solution the electric part is the same array:
+
+$$
+E_{\hat\imath\hat\jmath}=\partial_{\imath}\partial_{\jmath}\Phi
+=\operatorname{diag}\!\left(-\frac{2M}{r^{3}},\ \frac{M}{r^{3}},\ \frac{M}{r^{3}}\right),
+\qquad
+\partial_{\imath}\partial^{\imath}\Phi=0 .
+$$
+
+**This was verified on both sides, symbolically, and the equality is exact.** The Newtonian side gives $-2M/r^{3}$ along the radial direction and $+M/r^{3}$ in the two tangential directions, with zero trace because $\nabla^{2}\Phi=0$ outside the source; the relativistic side gives the same three numbers from the Riemann tensor. So the tensor that Newtonian theory calls the tidal field and the tensor that general relativity calls the electric part of the curvature are, in this regime, one object written twice.
+
+**What follows for the taxonomy, and it is narrower than either side usually claims.** In the regime where both descriptions are testable, "gravity is a force" and "gravity is curvature" are not competing theories; they are one tensor expressed in two languages. The disagreement is therefore about which description to regard as fundamental, and a disagreement of that kind cannot be settled by an experiment that both descriptions predict identically.
+
+**Where the two descriptions part, and it is where the curvature has structure a potential cannot carry.** The equality above holds because the field is static, so $B=0$ and $E$ is a gradient. In a radiative field $B\neq0$ and $E$ is no longer the gradient of anything; the two degrees of freedom that survive the constraint count propagate, and the invariant that measures them is $C^{2}=48M^{2}/r^{6}$ in the static case and is non-zero and non-gradient in the wave zone. The Newtonian force is then not a rival description but a truncation, and a truncation that has lost the part of the field which carries energy away.
+
+## Why This Framework Says It for Its Own Reason
+
+**The metric here is built rather than postulated.** In the frame route the metric is the Gram matrix of four legs,
+
+$$
+g_{\imath\jmath}(x)=\langle\tilde E_{\Phi,\imath}(x),\tilde E_{\Phi,\jmath}(x)\rangle_{\natural},
+$$
+
+so the array that defines lengths and the array that defines the gravitational field are the same four elements. That is a stronger statement than "the metric couples universally", because universality is normally an assumption about couplings and here it is a statement about how many objects exist.
+
+**Consequence one: universal coupling is the absence of a second object.** In a Yang–Mills theory the connection is a field separate from the matter, and each matter field carries a charge that can vanish, so the coupling can be switched off by removing the charge. Here every matter term is built from the legs through the Gram matrix, and the dictionary that produces the source,
+
+$$
+T^{\imath\jmath}\propto\frac{\delta S_{\mathrm{m}}}{\delta g_{\imath\jmath}},
+$$
+
+is a chain rule that holds for any Lagrangian depending on the frame only through $g$. There is no second array to vary independently and no charge to set to zero. That is what [Matter Into the Frame](matter-into-the-frame-the-variation-that-defines-the-source.html) means when it says the dictionary needs no assumption about the matter Lagrangian.
+
+**Consequence two: the potential is a clock rate.** The same number that Newton called a potential is the rate at which a clock at $r$ runs against one at infinity, $1-r_{s}/2r$, and the Earth's value of that deficit is $6.96\times10^{-10}$. A force law does not predict that; a geometry does, because in a geometry the potential and the metric component $g_{tt}$ are the same symbol. The equivalence principle is this identity read as a measurement.
+
+**Consequence three, and it is the honest limit of the argument.** None of this shows that gravity *is* curvature in any absolute sense. It shows that in these variables there is no second object that could be the force. Whether the Gram matrix is more fundamental than a connection is precisely the question of the next section, and this framework does not answer it by construction.
+
+## Why the Framework Also Writes a Force, and Must
+
+**The corpus holds a connection, and the connection is a gauge object.** [The Exact Gravitational Action](the-exact-gravitational-action-the-functional-the-boundary-term-and-the-variation.html) constructs a $\mathbb{B}$-valued one-form $\vec\Gamma_{\imath}$ taking values in the six-real-dimensional scalar-free subspace, with a curvature two-form and a torsion. That is a connection on a bundle in everything but name, and its curvature is a field strength.
+
+**The action the algebra writes most naturally is the force-like one.** Curvature squared,
+
+$$
+S_{\mathrm{YM}}[\vec\Gamma]=\int d^{4}x\,\sqrt{|\det G|}\;\mathrm{Sc}\bigl(\tilde F_{\imath\jmath}\tilde F_{\imath\jmath}^{\natural}\bigr),
+\qquad
+\tilde F_{\imath\jmath}=\partial_{\imath}\vec\Gamma_{\jmath}-\partial_{\jmath}\vec\Gamma_{\imath}+[\vec\Gamma_{\imath},\vec\Gamma_{\jmath}],
+$$
+
+is one derivative of a connection, and it is the exact analogue of the Maxwell action the corpus already varies. Einstein's functional is two derivatives of a frame. The algebra is indifferent between them: it counts no derivatives, so it cannot prefer the geometric action, and the one it writes without effort is the gauge one.
+
+**The consequence is the strongest form of the dissent usually stated as "gravity can be rewritten as a gauge theory".** Here it is not a rewriting. This framework contains both objects — the frame whose Gram matrix is the metric, and the connection whose curvature is a field strength — and both are writable in the same algebra. The choice between "gravity is curvature" and "gravity is a force" is, in these variables, the choice of which object to vary, and the corpus varies the connection where it can and the frame where it must.
+
+## The Five Dissents, Stated Fairly and Priced
+
+**The gauge formulation.** Gravity can be written with a tetrad and a spin connection, as a Poincaré gauge theory, or as a MacDowell–Mansouri model whose connection unifies the Lorentz group with translations. The construction is not decorative: it reproduces the Palatini action and makes the similarity to Yang–Mills structural rather than verbal. *The price.* The group acts on the frame bundle and the connection is the spin connection of the tangent bundle, so what is gauged is the local Lorentz freedom, which is a redundancy of the description and not a charge. Universality survives the reformulation: the charge is energy–momentum, which cannot be switched off, and a force whose charge is universal is one that no source configuration can remove. The gauge reading therefore does not restore the Newtonian sense of force; it relocates the question.
+
+**The Newtonian limit is a force.** At low energy and weak field the theory reduces to $F=GMm/r^{2}$, and celestial mechanics is done with that formula every day. *The price.* The limit is a limit. [The Newtonian Limit](the-newtonian-limit-closing-the-chain.html) closes this chain inside the framework's letters and shows that the potential is the time–time component of the frame perturbation, $h_{00}=r_{s}/r$, with $\gamma=1$ forced by the same trace reversal. Nothing is restored by the limit; the force is what the geometry looks like when it is truncated to first order.
+
+**Gravitons.** If the metric is quantised, its quanta are exchanged, and an exchange diagram is a force in the same sense as photon exchange. *The price.* The statement is about a quantisation programme on a background, and this framework's quantisation is obstructed: [the quantum-gravity article](quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.html) records the two-sided obstruction, and the graviton is not among the fifteen generators. Even where the programme succeeds, "force" then means a term in an effective action on a fixed background, which is the same truncation as the Newtonian limit and not a rival to the geometric description.
+
+**The fictitious-force analogy cuts both ways.** Centrifugal and Coriolis terms are called fictitious because a change of frame removes them, and the gravitational term behaves the same way locally. *The price, and it is the argument's own undoing.* Under diffeomorphism invariance no frame is privileged, so "real versus coordinate" is not a frame-independent distinction at the level of the term. The only frame-independent object is the curvature. The analogy therefore shows that the *force* is removable and says nothing against the *curvature* being real; used carefully it supports the thesis rather than undermining it.
+
+**The operational objection.** A gravimeter measures $g$, force balances work, and engineering uses the force language with complete success. *The price.* What the instrument reads is the magnitude computed above, $M/(r^{2}\sqrt{f})$, which is the acceleration of a supported observer. It is the holding force, and the holding force is supplied by the support. The operational reading confirms the thesis as soon as the instrument is specified precisely.
+
+## What Decides the Count of Forces
+
+**The count is a claim about fundamentality and not about nature.** If the metric is fundamental, gravity is the geometry of the arena and the forces are the three that push bodies off geodesics. If a quantum field on a fixed background is fundamental, gravity is the fourth force. If the fundamental object is neither, the distinction is emergent and the question loses its content.
+
+**What this framework would need in order to settle it, and does not have.** An exact action for the frame would make the geometric description the fundamental one and fix the count at three; a derivation of a spin-two quantum from the fifteen generators would make the force description the fundamental one and fix the count at four. The corpus has neither: the action is owed, as [the action article](the-exact-gravitational-action-the-functional-the-boundary-term-and-the-variation.html) records, and the graviton is absent from the adjoint, as [the force-content article](the-force-content-of-the-su4-model-one-connection-a-nine-dimensional-kernel-and-rank-five.html) proves.
+
+**A third possibility the corpus cannot exclude.** If the metric is not fundamental — if it is thermodynamic, or entanglement-derived, or a coarse-grained variable — then gravity is neither a force nor fundamental geometry, and both lists are bookkeeping at a level that is not the bottom. Nothing in the corpus bears on this, in either direction.
+
+## What This Article Does Not Decide
+
+**It does not fix a coupling.** The constant $16\pi G/c^{4}$ is calibrated by the Newtonian limit and not derived, and the calibration is the same whether the description is geometric or force-like.
+
+**It does not write the action.** The exact frame functional, its variation and its boundary term are the subject of the articles cited above, and the absence of the first is what keeps the framework's own answer to this article's question provisional.
+
+**It does not settle whether "arena" has content beyond the variables.** That the metric is built from legs is a fact about this framework's bookkeeping. Whether it tells us anything about the world beyond the bookkeeping is a question about the world, and no amount of algebra answers it.
+
+## Summary
+
+**No instrument reads gravity as a force.** An accelerometer in free fall reads zero because a geodesic has zero proper acceleration; a gravimeter reads $M/(r^{2}\sqrt{f})$, which is the acceleration of an observer being held up, and which diverges at the horizon because no holding is possible there.
+
+**The equivalence principle removes the term and leaves the tensor.** Normal coordinates set the connection to zero at a point, exactly as an inertial frame removes centrifugal terms. What survives is the electric part of the curvature, which for Schwarzschild is $\operatorname{diag}(-2M/r^{3},\,M/r^{3},\,M/r^{3})$ with zero trace and zero magnetic part, verified symbolically in $M$ and $r$.
+
+**That tensor is the Newtonian tidal field, exactly.** The electric part equals $\partial_{\imath}\partial_{\jmath}\Phi$ component for component in the static weak field, so the force description and the geometric description are one object written twice wherever both are testable, and the disagreement is about fundamentality rather than about prediction.
+
+**The framework lands on the geometric side for its own reason.** The metric is the Gram matrix of the legs, so universal coupling is the absence of a second object, the potential is a clock rate, and there is no charge to switch off. This is a statement about the framework's variables and not a proof about nature.
+
+**The framework nevertheless contains the other description.** It holds a $\mathbb{B}$-valued connection with a curvature two-form and a torsion, and the action the algebra writes without effort is curvature squared. Both descriptions are available in the same letters, which is the strongest form the gauge-theory dissent can take.
+
+**The count of forces is fixed by what is fundamental, and the corpus does not fix that.** It lacks the exact frame action and it lacks a derivation of a spin-two quantum, and until it has one of them, "three forces and a geometry" is the reading its variables suggest and not a result it proves.
+
+## Summary of Notation
+
+| symbol | meaning |
+| --- | --- |
+| $\tilde E_{\Phi,\imath}$ | frame leg, a $\mathbb{B}_{\Phi}$-valued object |
+| $g_{\imath\jmath}$, $G_{\imath\jmath}$ | Gram matrix of the legs and its inverse |
+| $f$ | $1-2M/r$ in units $c=1$ |
+| $a^{\mu}$ | four-acceleration $u^{\nu}\nabla_{\nu}u^{\mu}$, what an accelerometer reads |
+| $E_{\hat\imath\hat\jmath}$ | electric part of the curvature, $R_{\hat\imath\hat t\hat\jmath\hat t}$ |
+| $B_{\hat\imath\hat\jmath}$ | magnetic part, the dual of the same Riemann tensor |
+| $\Phi$ | Newtonian potential, $-M/r$ |
+| $\vec\Gamma_{\imath}$, $\tilde F_{\imath\jmath}$ | the $\mathbb{B}$-valued connection and its curvature two-form |
+| $C^{2}$ | square of the Weyl tensor |
+
+## Further Reading
+
+- [The Force Content of the $\mathrm{SU}(4)$ Model: One Connection, a Nine-Dimensional Kernel, and Rank Five](the-force-content-of-the-su4-model-one-connection-a-nine-dimensional-kernel-and-rank-five.html), for the inventory argument this article does not repeat: the graviton is not among the fifteen.
+- [The Exact Gravitational Action](the-exact-gravitational-action-the-functional-the-boundary-term-and-the-variation.html), for the connection, the curvature two-form, the two natural functionals and what separates them.
+- [The Newtonian Limit: Closing the Chain](the-newtonian-limit-closing-the-chain.html), for the potential as $h_{00}$, the calibration of $16\pi G/c^{4}$ and the value of $\gamma$.
+- [Matter Into the Frame: The Variation That Defines the Source](matter-into-the-frame-the-variation-that-defines-the-source.html), for the dictionary that needs no assumption about the matter Lagrangian, which is universal coupling read as a chain rule.
+- [Conservation as a Consequence](conservation-as-a-consequence.html), for the two divergences and the frame version of the conservation laws.
+- [Extrinsic Curvature on a Frame](extrinsic-curvature-on-a-frame.html), for the boundary geometry that the geometric reading requires and the force reading does not.
+- [Quantum Gravity in the Biquaternion Framework](quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.html), for the two-sided obstruction and what it costs the graviton reading.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame route's construction of the metric from the legs.

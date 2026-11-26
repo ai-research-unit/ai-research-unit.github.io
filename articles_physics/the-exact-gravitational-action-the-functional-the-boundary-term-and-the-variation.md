@@ -1,12 +1,26 @@
-# __The Action Problem__
+# __The Exact Gravitational Action: The Functional, the Boundary Term and the Variation__
 
 ## Introduction
 
-Every article in this category ends at the same sentence: there is no action. The frame route carries metrics, the connection gives a covariant derivative, the Dirac operator exists on a curved background, the Weyl scalars are hosted, and horizons and cosmology are reachable up to their global halves. None of it is dynamics, and the reason is one missing object.
+**The question, in one line.** Which gravitational action can this framework write, and which can it not? The answer is a ledger, and the ledger is short enough to read at the door.
 
-This article treats that object on its own rather than as the last bullet of a list. The question is narrow — what would a biquaternion-intrinsic action have to be, and why does the algebra not supply one — and the answer offered here is narrower still: **the action problem is a derivative-counting problem**. An action is a functional of fields and their derivatives. The algebra supplies the fields and the algebraic operations. It does not supply the derivative, and it therefore cannot fix how many derivatives a Lagrangian may contain. Gravity needs exactly two. Nothing algebraic prefers two, and nothing algebraic forbids four.
+| sector | action written | where |
+| --- | --- | --- |
+| electromagnetic, free | one | the Maxwell articles of this corpus |
+| electromagnetic, coupled | sixteen | *The Sector Hub* |
+| electroweak | one, both phases | *The Sector Hub* |
+| strong | none, and cannot be | *The Sector Hub* |
+| gravitational, quadratic | yes | *The Lagrangian and Linearised Gravity* |
+| gravitational, exact | not yet | this article |
+| primordial block | yes, ghosts included | *The Machinery Under the Primordial Action* |
 
-That statement is worth separating from two weaker ones it is often confused with. It is not the claim that the algebra lacks ingredients: every ingredient of a gravitational action — a scalar, a volume element, a connection, a curvature two-form — is present in the corpus, and the next sections list them. Nor is it the claim that a *wrong* action has been proposed and rejected. No action has been proposed at all.
+So the gravitational sector is not empty. It carries one action, exact at second order in the frame perturbation, varied to the linearised Einstein tensor with the calibrated coefficient, with the Bianchi identity falling out of the variation in one line. What it lacks is the *exact* functional — the one whose variation is the full equation, nonlinear terms included. That is the whole of the subject, and it is an engineering gap with a shape, not a defect of the algebra.
+
+**What the gap is not, said first because it is usually said wrong.** It is not an absence of ingredients: a scalar, a volume element, a connection, a curvature two-form and a frame are all present in the corpus, and the sections below list them. It is not the absence of a candidate: Lovelock's theorem says that in four dimensions, among local functionals of the metric with second-order field equations, there is exactly one up to two constants, so the functional is not in doubt. It is not even an absence of variation: the second-order truncation is varied, in tensor letters, in the article cited above.
+
+**The gap's shape, in three parts.** The *functional* must be written in the algebra's own variables rather than in the tensor dictionary. The *variation* must be performed with respect to the frame. The corpus's one exact verification of a frame variation is a pointwise check of the frame-to-metric dictionary, and that dictionary is exact; but it is quadratic in the frame, so its differential is linear in the perturbation, while the Hilbert Lagrangian is rational in the metric and its frame variation is not a finite expansion at all. The *boundary* must be handled, because the exact functional is not stationary under Dirichlet conditions without the Gibbons–Hawking–York term, and that term needs two objects — the induced Gram matrix of the boundary's legs and the extrinsic curvature of its normal — that the corpus has never built.
+
+**One premise about method, because the earlier form of this article got it wrong.** No algebra counts derivatives. The Standard Model's gauge group does not count them; the tangent space of a manifold does not count them; derivative order in a field theory is fixed by power counting, by the demand for second-order equations, and by experiment. A framework whose algebra is derivative-free is therefore in the position of every other framework, and the biquaternions are not being asked to do something that groups cannot do. What they can do is *write every operator on the menu*, and the menu is finite. That is the difference between a gap and an impossibility, and it is worth the article.
 
 ## What an Action Needs, and What the Algebra Has
 
@@ -20,15 +34,21 @@ A local action in four dimensions needs four things.
 
 **A space of fields to vary over, and a boundary term.** The frame, the connection, or both. The boundary term is required for a well-posed variational principle, and it is a technical demand the corpus has never addressed.
 
-So the ingredients are all present, and the absence of an action is not an absence of material. What is missing is a reason.
+So the ingredients are all present. What the algebra does not supply is a reason to stop at two derivatives — and nothing else supplies one either, which is why the question has to be answered by a theorem and a measurement rather than by an algebraic identity.
 
-## The Derivative Is Not an Algebra Operation
+## The Derivative Is Not an Algebra Operation, and No Algebra Counts Them
 
 Here is the structural point, and it is short. Every operation the algebra owns is algebraic: products, the natural involution, the scalar part, the determinant of the matrix image. A derivative is not among them. Differentiation is an operation of the manifold, acting on the frame field $\tilde E_{\Phi,\imath}(x)$, and it appears in the theory only because the frame is a *field* — a function of position — not because it is a biquaternion.
 
 That has a consequence which is easy to miss because it looks like a technicality. The algebra can constrain the *algebraic shape* of an integrand — it can say that the scalar must be built from $\mathrm{Sc}$, that the bilinear pairings must respect the two sectors, that a wedge product must be a $\mathbb{B}$-valued two-form — and it cannot constrain the *number of derivatives*. A functional with one derivative per field, with two, and with four are all equally algebraic in shape. The algebra is blind to the difference, and the difference is precisely what distinguishes Yang–Mills from general relativity from higher-derivative gravity.
 
-So the selection problem is not "which algebraic combination" but "which derivative order", and the algebra has no opinion on the second question. That is why the corpus could build the curved Dirac operator and stop: the Dirac equation's derivative order is fixed by the flat equation it deforms, which was itself fixed by experiment. Gravity has no such anchor, because the Einstein equation was never derived in the framework to begin with.
+So the selection problem is not "which algebraic combination" but "which derivative order".
+
+**The counter, which has to be answered before this diagnosis is used for anything.** No algebra counts derivatives. $SU(3)\times SU(2)\times U(1)$ does not count them, the tangent space of a manifold does not count them, and the multiplication table of a Clifford algebra does not count them. Derivative order in a field theory is fixed by power counting, by the demand that the field equations be second order, and by experiment — never by the multiplication table of a symmetry group. The blindness described above is therefore a property of the method and not a defect of the biquaternions, and an article that presents it as the framework's special difficulty has mistaken a common condition for a private one.
+
+**What the algebra can do instead, and it is the more important half.** It can write every operator on the menu. The menu is finite at any given dimension: with the frame dimensionless and $\partial$ of dimension one, the operators of dimension four built from the frame are a list that can be counted, and *Power Counting on a Frame* counts it. Nothing on that list needs an operation the algebra lacks — not the curvature scalars, not the field strength, not the fermion bilinear. So the algebra is not asked to choose two derivatives, because no algebra is; it is asked to write the finite list once the choice is made elsewhere, and it can.
+
+That reframing is why the rest of this article is a list of constructions rather than a list of failures.
 
 ## Why the Natural Algebra Action Is Not Einstein's
 
@@ -60,7 +80,7 @@ What separates them is derivative order and variable: one derivative of a connec
 
 ## Lovelock's Theorem: What Selects Two Derivatives
 
-The diagnosis of the preceding section is that the algebra cannot count derivatives, so nothing in it prefers the two that gravity needs. That diagnosis is right, and it is worth setting beside the sharpest external result on the question, because the comparison changes what a solution would have to look like.
+The preceding section says that no algebra counts derivatives, so the question of which derivative order gravity takes cannot be answered inside any algebra. The sharpest external result on the question is worth setting beside that, because it changes what a solution would have to look like: the choice is made by a theorem plus a measurement, and the theorem names its own premises.
 
 **The theorem.** In four dimensions the only symmetric rank-two tensor built from the metric and its first two derivatives, linear in the second derivative and divergence-free, is a combination of the Einstein tensor and the metric itself. Equivalently: the only local action of the form
 
@@ -84,7 +104,7 @@ up to a total derivative, with $a$ and $\Lambda$ the only free numbers. In five 
 
 **What a no-go would now have to say.** The negative route sketched at the end of this article asks for a proof that no functional of the frame alone can produce a source with a traceless part. Lovelock sharpens the positive route in the same way: a candidate action does not have to be shown to be *algebraically natural*, only to satisfy the three premises, and the corpus's difficulty is that the second premise is a statement about the manifold's symmetry group rather than about the algebra's operations.
 
-## Route One: the Scalar Curvature Read Off the Dirac Square
+## Route One, as a Result: the Scalar Curvature as a Trace
 
 There is one place in the corpus where a curvature scalar appears as an algebraic expression, and it is worth stating precisely, because it is the most promising route to an action written in the algebra's own terms.
 
@@ -110,9 +130,9 @@ $$
 
 This is a genuine rewriting and it should not be oversold. It is not a derivation: the right-hand side needs $\Box$, which needs the connection, which is the same datum the left-hand side needs, so the identity expresses $R$ in terms of objects it presupposes. The gain is conceptual rather than computational — the curvature scalar becomes a spectral quantity, a trace of an operator built from the algebra's own Dirac operator, which is the shape a spectral action takes. Whether that shape buys anything depends on whether the trace can be regulated without a background metric, and the corpus has no measure and no regulator.
 
-The route is therefore recorded as the better of the two candidates, not as a result. Its virtue is that it makes the action *algebra-writable*; its defect is that it does not make the choice of two derivatives *algebraic*. The same trace could be taken of a fourth power of the Dirac operator, and the algebra would not object.
+This is recorded as a construction, not as a candidate. Its virtue is that the Hilbert action becomes *algebra-writable* with no tensor named; its limit is that it does not make the choice of two derivatives algebraic, and no route can, for the reason the preceding section gives. The same trace could be taken of a fourth power of the Dirac operator, and the algebra would not object — but power counting would, and that is now the right place to look.
 
-## Route Two: the Source as a Gram Matrix
+## Route Two, as a Result: the Source as the Gram Matrix of Its Own Frame
 
 An action needs a matter part, and the matter part needs a source. The framework's difficulty here is independent of the gravitational one and is recorded in the cosmology article: the natural algebra packaging of a rank-two tensor collapses to its trace.
 
@@ -152,7 +172,7 @@ What this does and does not settle. It settles the objection that the algebra ca
 
 ## The Boundary Term: the Gibbons–Hawking–York Functional
 
-Requirement 4 of the list above — a boundary term that makes the variational principle well posed — is the one the corpus has never filled, and it is worth writing out because the failure is instructive rather than technical.
+The third item of the list above — a boundary term that makes the variational principle well posed — is the one the corpus has never filled, and it is worth writing out because the failure is instructive rather than technical.
 
 **The problem in one line.** Varying the Hilbert action gives a bulk term and a surface term, and the surface term contains the *normal derivative* of the metric variation:
 
@@ -174,54 +194,48 @@ with $K$ the trace of the extrinsic curvature of the boundary in the ambient met
 
 **The sign.** $K$ changes sign with the orientation of $n_{\imath}$, and the cancellation is exact only when the normal's convention matches the one used in the bulk variation. This is the one place in the construction where a bookkeeping choice fixes a sign, and it is the reason the term is frequently written with the opposite sign in the literature. The corpus's interval has the one minus on the time slot, so its spacelike normal is outward-pointing with $n_{\imath}n^{\imath}=+1$ on a boundary of constant time, and the sign above is the one that cancels.
 
-**What it settles, and what it costs.** With the term the action is stationary under Dirichlet, so requirement 4 can be met. The cost is that the term is built from the extrinsic curvature of the boundary, and that is a frame object the corpus has never constructed: on a frame route whose volume element is $\sqrt{|\det G|}$, the boundary term needs the induced Gram matrix of the three legs tangent to the boundary *and* the extrinsic curvature of the leg normal to it. The corpus has the Gram determinant and no boundary geometry at all. Requirement 4 is therefore not a technicality to be added later; it is a sixth object, of the same order of difficulty as the connection was.
+**What it settles, and what it costs.** With the term the action is stationary under Dirichlet, so the third item can be met. The cost is that the term is built from the extrinsic curvature of the boundary, and that is a frame object the corpus has never constructed: on a frame route whose volume element is $\sqrt{|\det G|}$, the boundary term needs the induced Gram matrix of the three legs tangent to the boundary *and* the extrinsic curvature of the leg normal to it. The corpus has the Gram determinant and no boundary geometry at all. Requirement 4 is therefore not a technicality to be added later; it is a sixth object, of the same order of difficulty as the connection was.
 
 **Where the corpus already leans on it.** The entropy $A/4G$ is obtained from the Euclidean action, and on a Euclidean section of a vacuum solution the bulk term vanishes on shell while the York term survives and supplies $A/4G$ in full. *Black Hole Thermodynamics in Biquaternionic Form* cites Gibbons and Hawking for exactly this and does not write the functional. The citation is correct; the dependency is worth naming, because it means one of the corpus's sharper results rests on a boundary term the corpus does not possess.
 
 **What the corpus's other actions do, stated as a ledger.** A Klein–Gordon or Maxwell action carries no more than first derivatives of the field, so its surface term is $n^{\imath}\,\delta\phi\,\partial_{\imath}\phi$ and vanishes under $\delta\phi=0$ with no condition on the normal derivative. Those actions are well posed as written. The Hilbert action is not, and neither is any of its truncations. The corpus's Lagrangian articles are therefore correct to impose Dirichlet conditions without comment, and the gravity articles are not — a distinction no article currently draws.
 
-## Beyond Having an Action: the Conformal Factor
-
-Suppose the action problem were solved and a functional were written whose variation is the Einstein equation. One problem would remain, and it belongs in this article because it is often mistaken for a detail.
-
-The Euclidean Einstein–Hilbert action is unbounded below. Under a conformal rescaling $g\mapsto\Omega^{2}g$ the action changes by a term whose quadratic form in $\Omega$ is indefinite, so the action can be driven to minus infinity along a conformal direction at fixed conformal class. This is the conformal factor problem of Euclidean quantum gravity, and it means that a path integral over metrics requires a contour prescription — a rotation in the conformal direction — before it is defined at all.
-
-The framework has no such prescription and no place to put one: a contour is a choice about a measure, and the corpus's measure problem is the same one recorded for the informational sector, where the trace has no volume element. So even a solved action problem would leave the quantisation problem open, and the quantum-gravity article's ordering argument — that quantisation presupposes an action, a momentum and a constraint structure — understates the case by one item. It presupposes a measure as well.
-
 ## What Is Not the Problem
 
-**The frame route is not weakened by the absence of an action.** Carrying a metric does not require a dynamics, and every result in the neighbouring articles stands. The absence is a boundary of the programme's reach, not an error in its constructions.
+**The frame route is not weakened by the missing exact functional.** Carrying a metric does not require a dynamics, and every result in the neighbouring articles stands. A missing exact functional is a boundary of the programme's reach, not an error in its constructions.
 
-**The absence is not an inconsistency.** Nothing in the corpus asserts an equation of motion it cannot derive. The articles that come closest — the gravitational-wave and black-hole-thermodynamics articles — both mark their equations as transcribed, and the audit that preceded this category found no place where a transcription had been promoted to a result.
+**The gap is not an inconsistency.** Nothing in the corpus asserts an equation of motion it cannot derive, and the articles that transcribe say so. The articles that come closest — the gravitational-wave and black-hole-thermodynamics articles — both mark their equations as transcribed, and the audit that preceded this category found no place where a transcription had been promoted to a result.
 
-**The problem is not that the algebra is too small.** It is not: the connection's home, the curvature two-form, the frame, the determinant and the scalar part are all present. The problem is that the algebra is derivative-free, and an action is a statement about derivatives.
+**The problem is not that the algebra is too small.** It is not: the connection's home, the curvature two-form, the frame, the determinant and the scalar part are all present, and the operators that could sit in an action are on a finite list the algebra can write. What is missing is the exact functional's frame-letter form and its boundary term — two concrete objects, not a principle.
 
-## What Would Settle It
+## What Is Owed, in the Order It Would Be Paid
 
-The settling object is a single functional, and it has four requirements, each of which can be checked separately.
+Four items are owed. Each can be checked separately. Two of them have an article of their own, and neither article closes the item it addresses — which is the honest report of where the corpus stands.
 
-1. **It is written in the algebra's operations**, with no object introduced that the corpus does not already construct: $\mathrm{Sc}$, the natural involution, the Gram determinant, the $\mathbb{B}$-valued connection and its curvature.
-2. **Its variation with respect to the frame reproduces the Einstein equation** in the vacuum case, including the correct coefficient, and its variation with respect to the connection reproduces metric compatibility and vanishing torsion — the Palatini structure, which the corpus is unusually well placed to write because it already has both variables as $\mathbb{B}$-valued objects.
-3. **Its matter part produces a source that is not traceless.** The carrier for such a source is the frame exhibited above; what the functional must still supply is the dynamics that fixes it.
-4. **It carries a boundary term** that makes the variational principle well posed on a region with a boundary — the object written out in the section below, which the corpus does not have.
+1. **The exact functional in frame letters.** $S=\frac{1}{16\pi G}\int d^{4}x\,\sqrt{|\det G|}\,R$, with $R$ the scalar curvature of the Gram metric — written with no tensor named and no object the corpus does not already construct. *The Variation in Frame Letters* states exactly how far this is from being a formality.
+2. **Its variation with respect to the frame**, reproducing the Einstein equation with the nonlinear terms intact, and its variation with respect to the connection, reproducing metric compatibility and vanishing torsion — the Palatini structure, for which the corpus is unusually well placed because it already holds both variables as $\mathbb{B}$-valued objects.
+3. **The boundary term**, written out in the preceding section, with its two missing objects supplied: the induced Gram matrix of the boundary's legs and the extrinsic curvature of its normal. *Extrinsic Curvature on a Frame* builds the second.
+4. **The matter part, producing a source that is not traceless.** The carrier for such a source is the frame; what the functional must still supply is the dynamics that fixes it.
 
-**A third route, recorded and not taken.** The diagnosis above is that the algebra has no derivative. The one external programme that attacks the diagnosis directly is the calculus of Jordan differential forms. It keeps the five relations of the exterior algebra — linearity, the Leibniz rule, commutativity with the elements, and antisymmetry of the product of forms — and replaces the sixth, which is implicit in the commutative case and is associativity, by the Jordan relation. The construction is stated and its properties derived in the source cited here, and it has not been carried to a bosonic action; its authors defer the field theory. It therefore settles nothing, and it is recorded for one reason. It locates the missing derivative in the same place this article does, and it says the derivative can be had by changing the algebra of forms rather than the algebra of coordinates.
+**A third route, recorded and not taken.** The obstacle described above is that the algebra carries no derivative. The one external programme that attacks that obstacle directly is the calculus of Jordan differential forms. It keeps the five relations of the exterior algebra — linearity, the Leibniz rule, commutativity with the elements, and antisymmetry of the product of forms — and replaces the sixth, which is implicit in the commutative case and is associativity, by the Jordan relation. The construction is stated and its properties derived in the source cited here, and it has not been carried to a bosonic action; its authors defer the field theory. It therefore settles nothing, and it is recorded for one reason. It locates the missing derivative in the same place this article does, and it says the derivative can be had by changing the algebra of forms rather than the algebra of coordinates.
 
-A no-go would be equally valuable and is easier to state: a proof that no functional of the frame alone, built from $\mathrm{Sc}$ and the Gram determinant, can produce a source with a traceless part would close the second half of the problem in the negative. The trace collapse of the natural packaging is a strong enough constraint that such a proof may be within reach, and searching for it is cheaper than searching for the action.
+**What is not on the list, and why.** The coefficients. Lovelock leaves two constants at two derivatives and four at four, and this article calibrates none of them; the Newtonian limit fixes $\kappa^{2}=16\pi G/c^{4}$ uniquely, and the rest are measured or zero by fiat. A framework that leaves its couplings to measurement is in general relativity's position, and that is a weaker complaint than it sounds, but it is a real one and it belongs on a ledger rather than in a footnote.
 
 ## Summary
 
-The action problem is one question — what functional of the frame and the connection has the Einstein equation as its variation — and this article's answer to why it is open is a single structural fact: **the algebra has no derivative, so it cannot count derivatives, and gravity is a two-derivative theory.** The algebra supplies every ingredient of an action (a scalar part, a Gram determinant as the volume element, a $\mathbb{B}$-valued connection, a curvature two-form) and supplies no principle that selects a derivative order, which is why the quadratic functional it most naturally suggests is Yang–Mills and not Einstein.
+The question is which gravitational action this framework can write, and the answer has three parts rather than one verdict.
 
-Two candidate routes survive. The scalar curvature can be written as the trace of the squared Dirac operator plus the connection Laplacian, $R=\mathrm{tr}[(\tilde FD)^{2}+\Box]$, which makes the Hilbert action algebra-writable at the cost of presupposing the connection it uses. And the source can be carried as the Gram matrix of its own frame — the perfect-fluid case is written out above — which answers the traceless-part objection but leaves the matter action, and therefore the dynamics of that frame, to be found.
+**The functional is not in doubt.** Lovelock's theorem leaves $R$ and $\Lambda$ as the only local, diffeomorphism-invariant, second-order choices in four dimensions, so an author who writes the Hilbert action is not choosing among rivals. The cosmological constant enters as an additive number and costs no new object. The corpus already writes the second-order truncation, varies it, recovers the linearised Einstein tensor with $\kappa^{2}=16\pi G/c^{4}$ calibrated by the Newtonian limit, and sees the Bianchi identity in one line of the variation.
 
-Two external results sharpen the statement without settling it. Lovelock's theorem makes the Hilbert functional unique once locality, diffeomorphism invariance and second-order equations are assumed, which relocates the choice of derivative order onto a premise the corpus lacks for the same reason it lacks the rest; and the cosmological constant emerges as a free additive number rather than a new object. The Gibbons–Hawking–York term is the price of a well-posed variational principle, and it is a boundary object — induced Gram matrix plus extrinsic curvature — that the corpus has no construction for, which makes it a sixth missing object rather than a footnote to the fourth requirement.
+**Three things are missing, and none of them is the functional.** The exact functional in frame letters; the boundary term that makes it stationary under Dirichlet conditions, which needs the induced Gram matrix of the boundary's legs and the extrinsic curvature of its normal; and three of the four coefficients Lovelock leaves free. The measure, which is a fourth item, is a matter for quantisation and is handed to the quantum-gravity article, where the conformal-factor problem shows that a measure is not enough even once an action exists.
 
-Even a solved action would leave the conformal factor and the measure open. The honest position is that this is the corpus's single hardest open object, that it is open for a reason that can be stated in one sentence, and that the negative route — a no-go for the traceless source — is the cheaper of the two attacks.
+**Two constructions are kept, and they are promoted rather than proposed.** The scalar curvature as a trace, $R=\mathrm{tr}[(\tilde FD)^{2}+\Box]$, makes the Hilbert action algebra-writable at the cost of presupposing the connection it uses. The source as the Gram matrix of its own frame carries the traceless part that no single element can. Neither substitutes for the exact variation; both are things the framework can do that the tensor language does not suggest.
+
+The honest position is narrower than "there is no action", and it is checkable: the gravitational sector has one action, and what it needs is its exact form, its boundary term and its coefficients, in that order.
 
 ## Further Reading
 
-- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame route, Route Three's connection, and the standing statement that there is no action.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame route and Route Three's connection.
 - [The Curved Dirac Operator and Its Square](the-curved-dirac-operator-and-its-square.html), for the Lichnerowicz identity $(\tilde F D)^{2}=-\Box+\tfrac14R$ on which Route One rests, and for its basis-operator caveat.
 - [The Gram Matrix as the Only Metric](the-gram-matrix-as-the-only-metric.html), for the volume element as a Gram determinant and for the congruence reading of the metric.
 - [Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source](cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source.html), for the rank-two carrier and the trace collapse of the perfect-fluid source.

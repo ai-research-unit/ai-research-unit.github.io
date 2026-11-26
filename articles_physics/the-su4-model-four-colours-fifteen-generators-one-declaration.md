@@ -1,29 +1,35 @@
-# __The $\mathrm{SU}(4)$ Model: One Group, Fifteen Generators, One Declaration__
+# __The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three__
 
 ## Introduction
 
-**The model is one group.** Not a product, not a pair of weak factors beside a colour group: one simple group acting on one four-dimensional complex space.
+**The model is one group.** One simple group acting on one four-dimensional complex space, with no second factor beside it.
 
 $$
 \boxed{\;
 G=\mathrm{SU}(4),\qquad
 \dim_{\mathbb R}\mathfrak g=15,\qquad
 \operatorname{rank}\mathfrak g=3,\qquad
-15=\underbrace{8}_{\mathfrak{su}(3)}\oplus\underbrace{1}_{\mathbb R\,iD}\oplus\underbrace{6}_{\mathfrak m}
+\underbrace{15}_{16-1}=\underbrace{12}_{\text{six pairs}\times2}+\underbrace{3}_{\text{diagonals}}
 \;}
 $$
 
-**One group, fifteen generators, one declaration.** The fifteen split, *below the transition*, as eight of colour, one abelian direction and six leptoquarks. **Above the transition there is no colour group and no colour label**: there are four lines of one quartet, and the only statement the algebra does not make is which of the four lines is the lepton. **The labels themselves are coordinates, and [The Colours in $\mathrm{SU}(4)$](the-colours-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html) prints all fifteen and shows why none of them is a charge.**
+**The box states the construction, and the construction is not a sum of irreducibles.** The fifteen are built from the six pairs of the four indices: each pair carries a real plane $A_{jk}$ and an imaginary plane $iS_{jk}$, twelve arrays; the four diagonal cells lose the trace and leave three generators $iM_{x},iM_{y},iM_{z}$. **That is the whole construction, and [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) derives it from the algebra's own six arrays, with no cell count taken on trust.**
+
+**Nothing in this article needs a colour.** The four lines are $(t,x,y,z)$; a direction of the group is a pair of lines or a trace-free diagonal, and that is the whole vocabulary. **A colour letter has no physical reality behind it: it is a coordinate on the $4\times4$ table**, and [The Colours in $\mathrm{SU}(4)$](the-colours-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html) prints the test: a sentence with a colour word is physics only if it survives a relabelling of the four lines. **The corpus's rule is to write *four lines* for $(t,x,y,z)$ and *twelve directions and three diagonal directions* for the fifteen**, and this article follows it, admitting a broken-phase word only with its phase named.
+
+**The fifteen do not split, and the article says so once and means it.** $\mathfrak{su}(4)$ is simple: every one of the fifteen generates all fifteen by brackets, so there is no factor, no ideal and no invariant subspace. **The sum $15=8+1+6$ names a degeneration of the fifteen, at one value of the frame's own parameter, where the rank drops from three to two** — it is the limit you reach by deleting a line of $\mathbb C^4$, and deleting a line is not a decomposition. §*The Eight Is a Degeneration, Not a Piece* states the parameter and the drop.
+
+**One group, fifteen generators, one declaration.** There is one group, one adjoint and one coupling, and one thing the algebra does not say: **which of the four lines is the lepton.** That is the whole of the declaration. **It adds no block to the fifteen, and it moves no eigenvalue.** **The cell labels are coordinates on the table, and [The Colours in $\mathrm{SU}(4)$](the-colours-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html) prints all fifteen and shows why none of them is a charge.**
 
 **Why the group is one and not three.** The fifteen contains a real $\mathfrak{so}(4)$, spanned by the six real antisymmetric planes, and those six directions look like two weak triples. **They are not.** A factor is a group; a subalgebra is a subspace of the algebra, and reading a subalgebra as a factor is what names three groups where the algebra has one. **The six arrays are $\mathfrak{so}(4)$ in a rotated basis.** §*The Real $\mathfrak{so}(4)$ Inside the Fifteen* computes which one this is, and the next section of the corpus says what the weak force actually is.
 
 **The two layers, and the one that matters here.** Layer A is what the algebra does on its own carrier. Layer B is $\mathrm{SU}(4)$ acting on a formal copy of that carrier. **The distinction is load-bearing**: the algebra's commutant forces the copy, and §*The Carrier Is a Copy* proves it with a count.
 
-**What this article establishes.** That the group is $\mathrm{SU}(4)$ and the count is fifteen; that the fifteen split as $8+1+6$; that the matter content is the sixteen and that it is vector-like under the group, so its anomaly cancels by counting; that one coupling multiplies all fifteen generators; that the fifteen already contains a real $\mathfrak{so}(4)$ of six dimensions and rank two; that the sixteen is closed under $C$ and, since $P$ maps it to itself as well, under $CP$, so the content is real under both while the Lagrangian's phases remain free; and that the ceiling on any group commuting with the Lorentz action is $\mathrm{SU}(2)$, which is why the carrier is a copy.
+**What this article establishes.** That the group is $\mathrm{SU}(4)$ and the count is fifteen, built as twelve planes and three diagonals; that the fifteen do not branch at all, every generator generating all fifteen, and that the eight is a degeneration of the diagonal frame rather than a piece of the algebra; that the matter content is the sixteen and that it is vector-like under the group, so its anomaly cancels by counting; that one coupling multiplies all fifteen generators; that the fifteen already contains a real $\mathfrak{so}(4)$ of six dimensions and rank two; that the sixteen is closed under $C$ and, since $P$ maps it to itself as well, under $CP$, so the content is real under both while the Lagrangian's phases remain free; and that the ceiling on any group commuting with the Lorentz action is $\mathrm{SU}(2)$, which is why the carrier is a copy.
 
-**What it does not establish.** That the algebra derives the group — it derives the group *given* the carrier. That the lepton line is the fourth colour — that is declaration (A). That the model is chiral where the symmetry acts — **it is not, and §*The Chiral Wall* shows that this is now a theorem about the model rather than a caveat about a representation.**
+**What it does not establish.** That the algebra derives the group — it derives the group *given* the carrier. That the lepton line is $e_t$ and not another line — that is declaration (A). That the model is chiral where the symmetry acts — **it is not, and §*The Chiral Wall* shows that this is now a theorem about the model rather than a caveat about a representation.**
 
-**What is absent here.** No weak pair, no hypercharge, no photon, no $W$, no $Z$, no rank five. **Those arrive at $M_C$, where colour, one abelian factor and two weak factors describe what the vacuum leaves**, and that is the subject of the next section of the corpus. This article is the connection content of the model above that scale, and it is complete as a statement of that content: **the scalar sector is [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html), and the fermion masses are [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html), whose verdict is that the ratio $m_\ell=3m_q$ is falsified.**
+**What is absent here.** No weak pair, no hypercharge, no photon, no $W$, no $Z$, no rank five. **Those arrive at $M_C$, where the octet, one abelian factor and two weak factors describe what the vacuum leaves**, and that is the subject of the next section of the corpus. This article is the connection content of the model above that scale, and it is complete as a statement of that content: **the scalar sector is [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html), and the fermion masses are [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html), whose verdict is that the ratio $m_\ell=3m_q$ is falsified.**
 
 **Where the rest is.** The counts and the arrays are [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html) and [The Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The transition is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the weak force is, and why it is not a piece of the fifteen, is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The couplings are [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html).
 
@@ -42,6 +48,26 @@ $$
 
 **Six pairs, two arrays per pair, three diagonals: $12+3=15$.** The count is not a choice. There are $\binom42=6$ pairs of four indices; each pair carries a real and an imaginary array; and a trace-free diagonal has three dimensions.
 
+**The construction, in the three steps the construction article takes.** No plane is chosen and no array is guessed: every one of them is an operation on the algebra's own multiplication.
+
+| step | the objects | count | $\operatorname{tr}(X^{\dagger}X)$ |
+| --- | --- | --- | --- |
+| 1 | the six arrays $\ell_a=L_{\mathrm{axf}}(\vec e_a)$, $r_a=R_{\mathrm{axf}}(\vec e_a)$ | $6$ | $4$ |
+| 2 | the sixteen words $W_{\mu\nu}=\ell_\mu r_\nu$, less $W_{tt}=\mathrm I_4$, the only word with a trace | $16\to15$ | $4$ |
+| 3 | each of the six pairs $\{\mu,\nu\}$ replaced by its half-sum and half-difference | $12$ two-cell arrays | $2$ |
+
+**Step 1 gives the six, and they are $\mathfrak{so}(4)$ and not the fifteen.** Step 2 gives a basis of the fifteen in which **no array is one cell wide**: a word moves four cells. Step 3 is one operation per pair, and it is what puts one plane in one array.
+
+**The three diagonal words are untouched by Step 3, and the frame is their half-sum.**
+
+$$
+iM_{x}=i(E_{xx}-E_{tt})=\tfrac12\bigl(iN_{yy}+iN_{zz}\bigr),
+$$
+
+**and cyclically: the frame member on one line is the half-sum of the two diagonal words on the other two.** The map is $\tfrac12\begin{pmatrix}0&1&1\\1&0&1\\1&1&0\end{pmatrix}$, of determinant $2$, so it is invertible and the three diagonals are the same three directions as the three diagonal words.
+
+**What the count fixes and what the display chooses.** $12+3$ is arithmetic. **The choice is Step 3**, made for legibility, and it moves no number: the words and the plane arrays span one space, and Part III of the construction article prints every property of both bases so the reader can check that.
+
 **The same count from the cells.** A $4\times4$ grid has sixteen cells. The four diagonal cells span four directions and one combination of them is the trace, which $\mathfrak{su}(4)$ excludes; **three trace-free diagonals remain, and with the twelve off-diagonal cells they are the fifteen generators.**
 
 $$
@@ -50,23 +76,52 @@ $$
 
 **One grid, sixteen cells.** A product of factors would need one grid per factor, and a trace to remove from each; **one group needs one grid, and one trace removed from its sixteen cells gives the fifteen generators.**
 
-**The split that the declaration fixes.** Under $\mathrm{SU}(3)_c$ acting on the three colours,
+## The Eight Is a Degeneration, Not a Piece
+
+**One. No factor exists.** $\mathfrak{su}(4)$ is simple: close any single generator under brackets with the whole algebra and the closure is all fifteen.
 
 $$
-\mathbf{15}=\mathbf 8_{0}\oplus\mathbf 1_{0}\oplus\mathbf 3_{+4/3}\oplus\bar{\mathbf3}_{-4/3},
+\dim\overline{\langle X\rangle}_{\text{Lie}}=15\qquad\text{for each of the fifteen }X .
 $$
 
-that is
+**So there is no proper ideal, no invariant subspace and no splitting to split along.** A sum $15=8+1+6$ is therefore not a statement about $\mathfrak{su}(4)$.
+
+**Two. The diagonal frame is a family, and the eight is its degenerate member.** Take a diagonal with one odd entry on a vector line and equal entries on the other two,
 
 $$
-15=8+1+6 .
+v=(v_t,\alpha,\beta,\beta),\qquad v_t+\alpha+2\beta=0 ,
 $$
 
-**The eight is colour. The one is the abelian direction $iD$. The six is the leptoquark sextet**, carrying one colour and one lepton index at once, with $B-L=\pm\tfrac43$ and $Q=\pm\tfrac23$ once charge is defined.
+so that it is traceless. Its orbit under the spatial $S_3$ has size three, and the inner product of two members of the orbit is
 
-**Read the split as a fate list.** The eight survive every breaking of the model as gluons. The one survives as the $B-L$ vector and later mixes. **The six are the only coloured massive vectors in the theory — massive below $M_C$, and massless above it, like every other vector of the fifteen**, and they are what a leptoquark search looks for.
+$$
+\langle v_x,v_y\rangle=v_t^{2}+2\alpha\beta+\beta^{2}
+=v_t^{2}-2\beta v_t-3\beta^{2}=(v_t-3\beta)(v_t+\beta).
+$$
 
-**The rank.** A maximal torus of $\mathfrak{su}(4)$ has dimension three. It is spanned by the three diagonal generators $iM_{j}=i(E_{jj}-E_{tt})$, which the permutation of $x,y,z$ permutes, and $iD=i\sum_{j}M_{j}$ is a direction in it and not a fourth generator ([The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html)). **Rank three, and no breaking of this group reaches rank five** — not because of dynamics, but because a subalgebra never outranks its algebra. **That single line is why two weak factors cannot be pieces of this one.**
+**For $\beta\neq0$ the rank is three everywhere except at one value of $v_t$:**
+
+| $v_t$ | orbit | rank | sum |
+| --- | --- | --- | --- |
+| $3\beta$ | $(3,-5,1,1)$ and permutations | $3$ | $-3D$ |
+| $-\beta$ | $(-1,-1,1,1)$ and permutations | $3$ | $D$ |
+| $0$ | $(0,-2,1,1)$ and permutations | $\mathbf 2$ | $0$ |
+
+**At $v_t=0$ the three vectors become dependent and their sum vanishes.** That is a degeneration, in the strict sense: the rank drops, and the frame stops being a frame. **And the degenerate orbit is exactly the $\mathfrak{su}(3)$ democratic triple**, $\operatorname{diag}(0,-2,1,1)$ and its two images, spanning a two-dimensional space.
+
+**Three. So the eight is what remains when a line is deleted.** Set $v_t=0$ and the seven arrays that touch $t$ — six planes $A_{ta},iS_{ta}$ and the one $t$-diagonal direction — have nowhere to live. **The eight is the residue of deleting a line, and deleting a line is a degeneration of the frame and not a decomposition of the algebra.**
+
+**Four. The permutation arithmetic says the same thing, and says why the eight cannot carry the frame.** Under the spatial $S_3$ the two spaces decompose with different multiplicities of the trivial representation:
+
+$$
+\mathbf{15}=4\cdot\mathbf 1\oplus\mathbf 1'\oplus 5\cdot\mathbf 2,
+\qquad
+\mathbf 8=\mathbf 1\oplus\mathbf 1'\oplus 3\cdot\mathbf 2 .
+$$
+
+**Four invariant directions against one.** The fifteen carry four $S_3$-invariant directions and the eight carry one; the three that are lost are exactly the directions along $t$. **A frame permuted by $S_3$ needs a line outside the permutation to absorb the trace, and the eight has no such line** — [The Symmetric Diagonal Frame of the Fifteen](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves this in two independent ways and is the reference for the whole section.
+
+**Five. What this means for the phrase $8+1+6$.** It names a **degeneration**, at one value of $v_t$, and writing it as a sum writes the limit as though it were a structure. **Above $M_C$ there is no $v_t$ to set and no line to delete**, so there is no eight: the fifteen are one adjoint, twelve planes and three diagonals, and this article is written entirely above that scale. **Below $M_C$ the vacuum itself picks the degenerate value**, and that is where the word *eight* earns its place.
 
 ## The Sixteen, and the Copy Index
 
@@ -78,7 +133,7 @@ $$
 4\cdot2+4\cdot2=16 .
 $$
 
-**Read the two factors of each term.** The first is the colour index: a quartet, lepton plus three colours. The second is a **copy index**, two-dimensional. Nothing else.
+**Read the two factors of each term.** The first is the quartet index: the lepton line and the three others. The second is a **copy index**, two-dimensional. Nothing else.
 
 **The copy index is a label here, not a group factor.** It does not multiply a generator in the covariant derivative, it has no coupling, and no field in this model transforms under it. **It records that the matter comes in two copies**, and that is all it does in this article.
 
@@ -88,7 +143,7 @@ $$
 \mathbf{16}=\underbrace{\mathbf 4\otimes\mathbf 2}_{\text{two copies of the quartet}}\oplus\underbrace{\bar{\mathbf4}\otimes\mathbf 2}_{\text{two copies of its conjugate}} .
 $$
 
-**The neutrino is not added.** The lepton line of the conjugate quartet, at $B-L=+1$, is the right-handed neutrino's slot. **The moment the lepton is a colour, the fourth component of the $\bar{\mathbf4}$ is forced, and it is a neutrino.** That is forced by the colours alone.
+**The neutrino is not added.** The lepton line of the conjugate quartet, at $B-L=+1$, is the right-handed neutrino's slot. **The moment the lepton is one of the four lines, the fourth component of the $\bar{\mathbf4}$ is forced, and it is a neutrino.** That is forced by the four lines alone.
 
 **The anomaly, by counting.** Under $\mathrm{SU}(4)$ alone the content is
 
@@ -122,23 +177,29 @@ $$
 D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}t_{a} .
 $$
 
-**One sum, fifteen fields, one coupling.** Three factors would bring three sums and three couplings; here there is one of each, and no ratio to fix. **The $t_{a}$ are Hermitian and normalised by $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$**, the same fifteen the Lagrangian uses; the anti-Hermitian printed arrays $G_{a}$ differ from them by a factor $i$ and a rescaling, and [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) fixes that once in §*The Normalisation*.
+**One sum, fifteen fields, one coupling.** Three factors would bring three sums and three couplings; here there is one of each, and no ratio to fix. **The canonical generators $t_{a}$ are Hermitian with $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$**, and **the printed fifteen are not yet that set.** They are Gaussian-integer arrays of norm two, orthogonal on every pair except the three of the diagonal frame, where
 
-**Every index is low**, because the colour index's metric is $\delta_{\imath\jmath}=(1,1,1,1)$: a raised index names the same index. **The label $a$ is a name and not a frame slot**; it counts the fifteen generators. **The spacetime index is the exception and the two never mix**: a Dirac operator contracts it with the Minkowski weight $\varepsilon_{\imath}=(1,-1,-1,-1)$, as [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) states, while every index of this article's $4\times4$ matrices is colour and carries no weight.
+$$
+\operatorname{tr}\bigl(M_{j}M_{k}\bigr)=2\delta_{jk}+\bigl(1-\delta_{jk}\bigr),\qquad j,k=x,y,z .
+$$
 
-**What the fifteen fields are.**
+**The orthogonal frame is one integer rotation away**, $A_{j}=\sum_{k}M_{k}-2M_{j}$, of norm $4$ and $\operatorname{tr}(A_{j}A_{k})=4\delta_{jk}$, as [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) prints in §*The Gram, and the three entries that are not orthogonal*. **The passage from the printed arrays to the $t_{a}$ is therefore a factor $i$, one rotation of the three diagonal directions and a rescaling** — a rescaling alone cannot remove those three $+1$ entries — and [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) fixes it once in §*The Normalisation*.
 
-| block | count | $\mathrm{SU}(3)_c$ below $M_C$ | fate: above $M_C$ | fate: below $M_C$ |
-| --- | --- | --- | --- | --- |
-| $a$ in the $\mathfrak{su}(3)$ corner | $8$ | $\mathbf 8$ | **the eight colour directions, massless** | the gluon octet, massless |
-| $A_{15}$ | $1$ | $\mathbf 1$ | the $B-L$ vector, massless | massless until it mixes downstream |
-| $a$ in $\mathfrak m$ | $6$ | $\mathbf 3+\bar{\mathbf3}$ | **the sextet, massless** | **heavy at $M_C$** |
+**Every index is low**, because the quartet index's metric is $\delta_{\imath\jmath}=(1,1,1,1)$: a raised index names the same index. **The label $a$ is a name and not a frame slot**; it counts the fifteen generators. **The spacetime index is the exception and the two never mix**: a Dirac operator contracts it with the Minkowski weight $\varepsilon_{\imath}=(1,-1,-1,-1)$, as [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) states, while every index of this article's $4\times4$ matrices is a quartet index and carries no weight.
 
-**Below $M_C$ there are nine massless and six massive, and that is the whole connection spectrum at that scale.** Above $M_C$ all fifteen are massless, no vacuum having formed — **and that includes the six leptoquarks, whose mass exists only once the condensate does.** The two columns are the point: **the sextet's column changes and the other two do not**, and a reader who reads "heavy" in the third row without the column heading has read the broken phase into the unbroken one.
+**What the fifteen fields are, with no block structure imposed.**
 
-**And the middle column says *eight*, not *the gluons*, on purpose.** Above $M_C$ the group is one factor and **no $\mathrm{SU}(3)$ is made local**, so *gluon* is a name the broken phase supplies: the eight are the six colour–colour off-diagonals plus the two colour diagonals, defined by the lines they move and not by a subgroup. **The $\mathrm{SU}(3)_c$ column is therefore a branching and not a pre-breaking content**, and §*The Names, and Which Phase They Belong To* of [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) states what changes at the transition and what does not — **the count $6+2=8$ never changes; only which group the two diagonals belong to does.**
+| the arrays | count | mass above $M_C$ | mass below $M_C$ |
+| --- | --- | --- | --- |
+| $A_{ta}$, $iS_{ta}$, $a=x,y,z$ | $6$ | $0$ | $32v^{2}$ |
+| $A_{bc}$, $iS_{bc}$, $b<c$ in $x,y,z$ | $6$ | $0$ | $0$ |
+| $iM_{x}$, $iM_{y}$, $iM_{z}$ | $3$ | $0$ | $0$ |
 
-**No $W$, no $Z$ and no photon in this list**: those need the weak factors, which arrive at $M_C$ in the same condensation that gives the right-handed pair its mass, and they become massive at $M_W$. **The scalar sector is not in this table**: it is sixteen real components in *The Scalar Content*, six of them eaten by these six vectors.
+**The table is by array and not by block, because the blocks are a choice.** Above $M_C$ all fifteen are massless: no vacuum has formed, so there is no $D$ and $M^{2}=2v^{2}[D,[D,\cdot\,]]$ has nothing to act with. **Below $M_C$ six of them are heavy and nine are massless, and the six are the ones that touch the lepton line.** A reader who sorts the fifteen into three blocks before reading this table has made the choice $D$ makes, one section early.
+
+**The nine massless split further only after $D$ is fixed, and by then the split is a statement about the phase.** Two differences of the diagonal frame become the Cartan of the octet that survives, the sum becomes the $B-L$ direction, and the six planes of the spatial block become the rest of the octet. **That is the broken phase's bookkeeping.** It is stated in [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) and [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), with the vacuum in hand.
+
+**No $W$, no $Z$ and no photon in this list**: those need the weak factors, which arrive at $M_C$ in the same condensation that gives the right-handed pair its mass, and they become massive at $M_W$. **The scalar sector is not in this table**: it is sixteen real components in *The Scalar Content*, six of them eaten by these six heavy vectors.
 
 **What the model does not tie.** One connection coupling above $M_C$, so there is no ratio between connection couplings to fix. **That is not the absence of a matching problem; it turns the matching into a prediction**: the three couplings below $M_C$, and the four decades between the strong and the electroweak scales, are what one $g_4$ runs into, and they are treated in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). **The scalar and Yukawa couplings are separate parameters and this article fixes none of them.**
 
@@ -179,17 +240,17 @@ $$
 
 | planes | $m^{2}$ |
 | --- | --- |
-| $A_{ta},A_{ty},A_{tz}$ | $32v^{2}$ |
+| $A_{tx},A_{ty},A_{tz}$ | $32v^{2}$ |
 | $A_{xy},A_{xz},A_{yz}$ | $0$ |
-| $iS_{ta},iS_{ty},iS_{tz}$ | $32v^{2}$ |
+| $iS_{tx},iS_{ty},iS_{tz}$ | $32v^{2}$ |
 | $iS_{xy},iS_{xz},iS_{yz}$ | $0$ |
 | the three diagonals | $0$ |
 
 **So the real $\mathfrak{so}(4)$ straddles the transition**: three of its six planes are heavy and three are massless. **A half, being half of one plane and half of the other, is a sum of a heavy and a massless vector** — a coherence, not a particle. That single fact is why the six arrays could never be the weak bosons, and [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) makes it a theorem.
 
-**Why the reading is tempting, and where the three sixes differ.** Six real planes, six leptoquark arrays and six weak generators are **three different sixes, and only the first two are even inside the fifteen**. The six planes are $\operatorname{span}\{A_{ab}\}$ and they close; the six leptoquarks are $\{A_{tk},iS_{tk}\}$ and they do **not** close, since $[A_{tx},A_{ty}]=-A_{xy}$ lies outside them; and the six weak generators close by assumption, not by arithmetic. **The match is a match of number and nothing else**: the planes are closed but are not the leptoquarks, the leptoquarks are not closed, and neither set is the weak pair.
+**Why the reading is tempting, and where the three sixes differ.** Six real planes, the six arrays that move the lepton line, and six weak generators are **three different sixes, and only the first two are even inside the fifteen**. The six planes are $\operatorname{span}\{A_{ab}\}$ and they close; the six that move $e_t$ are $\{A_{tk},iS_{tk}\}$ and they do **not** close, since $[A_{tx},A_{ty}]=-A_{xy}$ lies outside them; and the six weak generators close by assumption, not by arithmetic. **The match is a match of number and nothing else**: the planes are closed but are not the mixed six, the mixed six are not closed, and neither set is the weak pair.
 
-**The honest sentence for this article.** **The fifteen contains a six-dimensional real subalgebra that looks like a weak sector and behaves like one under every operation except the three that matter** — it does not close on the sextet, its charges are thirds rather than integral, and its directions are half heavy. **A subalgebra is not a factor, and the three failures are why.**
+**The honest sentence for this article.** **The fifteen contains a six-dimensional real subalgebra that looks like a weak sector and behaves like one under every operation except the three that matter** — it does not close on the mixed six, its charges are thirds rather than integral, and its directions are half heavy. **A subalgebra is not a factor, and the three failures are why.**
 
 ## What Is Derived and What Is Declared
 
@@ -220,7 +281,7 @@ $$
 | --- | --- | --- | --- |
 | central $\mathrm{U}(1)$ | yes, $\mathbb R(ie_t)$ | $1$ | $L_{e_t}R_{e_t}$ |
 | the six sides $\mathfrak k_L\oplus\mathfrak k_R$ | no | $1$ | $L_{\vec e_a}R_{e_t}$, $L_{e_t}R_{\vec e_a}$ |
-| $\mathrm{SU}(3)_c$ | no | $2$ on seven, $3$ on $\operatorname{diag}(0,1,1,-2)$ | off-diagonal pairs of $B_V$, and the Cartan |
+| $\mathrm{SU}(3)$, below $M_C$ | no | $2$ on seven, $3$ on $\operatorname{diag}(0,1,1,-2)$ | off-diagonal pairs of $B_V$, and the Cartan |
 | $\mathrm{SU}(4)$ | no | $1$ on the six unscaled words, $2$ or $3$ on the other named generators, $4$ generic | all fifteen |
 | $B-L$ | no | $3$ | $i\sum_a L_{\vec e_a}R_{\vec e_a}$ |
 
@@ -236,7 +297,7 @@ $$
 
 **$\mathrm{SO}(10)$.** Rank five, and it contains $\mathrm{SU}(4)$ — **but its spinor is a $\mathbf{16}$ obtained by a Clifford algebra the corpus does not otherwise use**, and containment is not a derivation. It is recorded and refused.
 
-**The four-factor group is the group at $M_C$.** Colour, one abelian factor and the two weak factors are what the vacuum of the primordial force leaves, and the weak factors arrive at that scale. **It is a step of the transition, not a rival candidate**: an alternative would be a group chosen instead, and this one is arrived at.
+**The four-factor group is the group at $M_C$.** The octet, one abelian factor and the two weak factors are what the vacuum of the primordial force leaves, and the weak factors arrive at that scale. **It is a step of the transition, not a rival candidate**: an alternative would be a group chosen instead, and this one is arrived at.
 
 **The one-line reason the group is $\mathrm{SU}(4)$.** The full group of a four-dimensional complex carrier is $\mathrm{SU}(4)$, and the subgroup that fixes one line in it is $\mathrm{SU}(3)\times\mathrm{U}(1)$ modulo a discrete factor. **The stabiliser is a subgroup of $\mathrm{SU}(4)$, not an alternative to it** — it is what acts once the fourth direction is frozen out, and which of the two describes the world is a question about physics. **Whether the fourth direction is made local is that question, and this model answers that it is.**
 
@@ -260,7 +321,7 @@ of real dimension $4+4+16=24$, in blocks of size $2,2,4$. **Its automorphism gro
 
 ## The Carrier Is a Copy, and Here Is the Theorem
 
-**The objection.** If $\mathrm{SU}(4)$ acts on the same four dimensions as the Lorentz action, the two must commute — and then colour would have to sit in the commutant of the Lorentz algebra, where there is no room for it.
+**The objection.** If $\mathrm{SU}(4)$ acts on the same four dimensions as the Lorentz action, the two must commute — and then the internal factor would have to sit in the commutant of the Lorentz algebra, where there is no room for it.
 
 **The computation, and it is the load-bearing one.**
 
@@ -305,7 +366,7 @@ $$
 
 **What this model has.** One copy index, not made local, and one coupling multiplying the fifteen. **The local content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, vector-like in pairs.** A vector-like local sector has no chiral connection coupling at all, and therefore:
 
-> **The model is not chiral where it fixing conditions. This is not a caveat about a representation; it is a property of the model, proved by the same count that makes its anomaly vanish.**
+> **The model is not chiral where the symmetry acts. This is not a caveat about a representation; it is a property of the model, proved by the same count that makes its anomaly vanish.**
 
 **Where the chirality is.** Nowhere in this article, and the article says so. The copy index is a label the group does not see. **A single $\mathrm{SU}(2)$ acting on it would not change that**, because $\mathbf2\simeq\bar{\mathbf2}$ and $(\mathbf4,\mathbf2)\oplus(\bar{\mathbf4},\mathbf2)$ is its own conjugate — the count $2\cdot4\oplus2\cdot\bar4$ is vector-like under any group that acts on the copy index the same way in both terms. **A chiral content needs the two copies acted on by two different factors**, $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$, and **that split is a postulate of the transition rather than a consequence of this article** — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html) carries it as exactly one postulate and names it.
 
@@ -319,9 +380,16 @@ $$
 | --- | --- | --- |
 | the dimension | arrays: $6$ pairs $\times\,2+3$ diagonals | $15$ |
 | the cells | $4\times4$ minus the trace | $1+15$ |
-| the split | branching of the $\mathbf{15}$ under $\mathrm{SU}(3)_c$ | $8+1+6$ |
-| the sextet's $B-L$ | $(-1)-\bigl(+\tfrac13\bigr)$ | $\pm\tfrac43$ |
-| the sextet's charge | $\tfrac12(B-L)$ with no isospin | $\pm\tfrac23$ |
+| the algebra is simple | Lie closure of each single generator | $15$ of $15$, all fifteen |
+| the eight is a degeneration | rank of the orbit at $v_t=0$ | $2$, against $3$ elsewhere |
+| the degenerate orbit is $\mathfrak{su}(3)$ | $(0,-2,1,1)$ and permutations | sum $0$, rank $2$ |
+| the eight has no symmetric frame | $S_3$-fixed directions, $15$ against $8$ | $4$ against $1$ |
+| the characters | $S_3$ on $15$ and on $8$, at (id, cycle, swap) | $(15,0,3)$ and $(8,-1,0)$ |
+| the masses, by array | $2v^{2}[D,[D,\cdot\,]]$ on each of the fifteen | $32v^{2}$ on six, $0$ on nine |
+| the frame's own norms | $\operatorname{tr}((iM_{j})^{\dagger}iM_{j})$ | $2$ on all three |
+| the Gram of the frame | $\operatorname{tr}(M_{j}M_{k})$ | $2$ diagonal, $+1$ off it |
+| the orthogonal frame | $\operatorname{tr}(A_{j}A_{k})$, $A_{j}=\sum_k M_k-2M_j$ | $4\delta_{jk}$ |
+| the six heavy directions | $[D,E_{ta}]=\mp4E_{ta}$ | they move $e_t$ |
 | the rank | maximal torus of $\mathfrak{su}(4)$ | $3$ |
 | the matter content | $(4\otimes2)\oplus(\bar4\otimes2)$ | $8+8=16$ |
 | the $\mathrm{SU}(4)$ content | two quartets, two antiquartets | vector-like |
@@ -331,12 +399,16 @@ $$
 | the commutant | $8\to4\to3$ | $\mathfrak{su}(2)$ |
 | $\mathfrak{so}(4)$ inside the fifteen | $\operatorname{span}\{A_{ab}\}$ | $\dim6$, rank $2$, closed |
 | $[\mathfrak k_L,\mathfrak k_R]$ | all nine pairs | $0$ |
-| the condensate on $\mathfrak{so}(4)$ | $2(1-(-3))^{2}$ on $A_{ta}$, $0$ on $A_{jk}$ | $32v^{2}$ and $0$ |
-| the trace norms | $\operatorname{tr}(A^{2})$, $\operatorname{tr}(M_{j}^{2})$, $\operatorname{tr}(D^{2})$ | $-2$, $-2$, $-12$ |
+| the condensate on $\mathfrak{so}(4)$ | $2(1-(-3))^{2}$ on $A_{ta}$, $0$ on $A_{bc}$ | $32v^{2}$ and $0$ |
+| the trace norms | $\operatorname{tr}(A^{2})$, $\operatorname{tr}\bigl((iM_{j})^{2}\bigr)$, $\operatorname{tr}\bigl((iD)^{2}\bigr)$ | $-2$, $-2$, $-12$ |
 
 ## Distinctions That Are Easy to Lose
 
 A subalgebra is not a factor. $\mathfrak{so}(4)$ is six real dimensions inside the fifteen; a factor would be a group multiplying the fields. **Rank three against rank five is the difference** (*The Real $\mathfrak{so}(4)$*).
+
+A degeneration is not a decomposition. The fifteen are twelve planes and three diagonals, and the eight is the value $v_t=0$ of the diagonal frame's parameter, where the rank drops from three to two and the frame stops being a frame (*The Eight Is a Degeneration, Not a Piece*).
+
+A subalgebra is not a factor. The eight is closed under brackets and is a genuine subalgebra, **and that is exactly why it cannot be used as a factor**: the algebra is simple, so no subalgebra of it is invariant (*The Eight Is a Degeneration, Not a Piece*).
 
 The copy index is not a group factor. It labels two copies of the quartet and carries no coupling; it becomes a factor only at the transition, and **the split of that factor into two weak factors is the transition's postulate and not this article's** (*The Sixteen*, *The Chiral Wall*).
 
@@ -350,22 +422,22 @@ A theorem about another group is not evidence about this one. The Boyle–Farnsw
 
 **One group.** $\mathrm{SU}(4)$, fifteen real dimensions, rank three, one connection coupling. **No product, no second factor, and no rank five anywhere above $M_C$** — the four factors and the rank five are what the vacuum leaves at that scale, and they are not a piece of this group.
 
-**The count is fifteen, twice over.** Twelve plane arrays and three diagonals; or sixteen cells minus the trace. **The split is $8+1+6$**: colour, the abelian direction, and the six leptoquark planes.
+**The count is fifteen, and the construction is not a sum.** Twelve plane arrays and three diagonals, from six pairs of indices and one trace removed; or sixteen cells minus the trace. **There is no eight in the construction and no eight in the algebra**: the fifteen are one simple adjoint, and the eight is a degeneration that appears only when a line of $\mathbb C^4$ is deleted. **The symmetric frame is three diagonals permuted by $S_3$, summing to $D$, and the eight cannot repeat it because it has no fourth line to absorb the trace.**
 
-**The sixteen is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$** — two copies of the quartet and two of its conjugate, with the copy index as a label. **Vector-like in pairs, so the anomaly cancels by counting rather than by three traces**, and the model is not chiral where it fixing conditions.
+**The sixteen is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$** — two copies of the quartet and two of its conjugate, with the copy index as a label. **Vector-like in pairs, so the anomaly cancels by counting rather than by three traces**, and the model is not chiral where the symmetry acts.
 
 **The fifteen already contains a real $\mathfrak{so}(4)$ of six dimensions and rank two**, spanned by the six antisymmetric planes and equal to $\mathfrak k_L\oplus\mathfrak k_R$. **It is the subalgebra that looks like two weak factors and is not.** It is a subalgebra, not a factor, and the condensate puts $32v^{2}$ on three of its planes and $0$ on the other three — **which is why the six arrays are not the weak bosons.**
 
 **The ceiling on a commuting group is $\mathrm{SU}(2)$**, by the commutant count $8\to4\to3$, and that is why the carrier is a formal copy. **That $\mathfrak{su}(2)$ is not a weak factor**: the condensate breaks it, $[D,T^{R}_{x}]\ne0$, so its directions are coherent sums and not mass eigenstates. **The weak factors arrive beside the group; nothing in the fifteen supplies them.**
 
-**Nothing numerical moved.** The spectrum of $\operatorname{ad}(iD)$, the masses, the sextet's charges and the nine massless directions are exactly as the first-breaking section states them. **The frame changed; no eigenvalue did.**
+**Nothing numerical moved.** The spectrum of $\operatorname{ad}(iD)$, the masses, the module's charges and the nine massless directions are exactly as the first-breaking section states them. **The frame changed; no eigenvalue did.**
 
 ## Summary of Notation
 
 | symbol | meaning |
 | --- | --- |
 | $G=\mathrm{SU}(4)$ | the group, acting on the four-dimensional complex carrier |
-| $\mathfrak m$ | the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$ |
+| $\mathfrak m$ | the six that move the lepton line, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$ |
 | $iD$ | $\operatorname{diag}(-3i,i,i,i)$, the abelian direction and the transition's vacuum |
 | $\mathbf{16}$ | the matter content, $\mathbf4\otimes\mathbf2\oplus\bar{\mathbf4}\otimes\mathbf2$ |
 | the copy index | the two-dimensional label on the quartet; not made local here |

@@ -72,10 +72,12 @@ $$
 $$
 \underbrace{6}_{\text{mixed cells}}+\underbrace{9}_{3\times3}+\underbrace{1}_{(t,t)}=16 ,
 \qquad
-\underbrace{6}_{\text{leptoquarks}}+\underbrace{8}_{\text{gluons}}+\underbrace{1}_{B-L}=15 .
+\underbrace{6}_{\text{move }e_t}+\underbrace{8}_{\text{fix }e_t}+\underbrace{1}_{B-L}=15 .
 $$
 
-**That display is the whole of the model's decomposition, and it is a picture of $15=8+1+6$.** The three colour planes $\{r,g\},\{r,b\},\{g,b\}$ hold the six off-diagonal gluons, two per plane. **The three mixed planes $\{t,r\},\{t,g\},\{t,b\}$ hold the six leptoquarks, two per plane.** The $3\times3$ colour block's diagonal and the $(t,t)$ corner together hold the three Cartan directions, and **no single generator holds the corner**: each of the three occupies the corner and one colour cell, which is why there are four diagonal cells and three diagonal generators. **The sum of the three, $D=M_x+M_y+M_z$, is the direction that makes the trace vanish, and it is a sum and not a member.** **Those two names are the broken phase's, and §*The Names, and Which Phase They Belong To* below says exactly what they are on deposit for.**
+**The second line counts cells, one generator per cell, and it is not a decomposition of the fifteen.** The notation invites the reading $15=8+1+6$, and the reading is wrong twice over. **First, $\mathfrak{su}(4)$ is simple**, so the fifteen have no blocks; a sum of blocks is a statement about a subgroup, and a subgroup is something a person names. **Second, the eight and the one close under brackets and the six do not**, so the summands are not even of one kind. **The line is a sorting of cells by whether the cell moves $e_t$.**
+
+**The three planes $\{r,g\},\{r,b\},\{g,b\}$ hold the six off-diagonal arrays of the spatial block, two per plane.** **The three mixed planes $\{t,r\},\{t,g\},\{t,b\}$ hold the six arrays that move $e_t$, two per plane.** The $3\times3$ block's diagonal and the $(t,t)$ corner together hold the three Cartan directions, and **no single generator holds the corner**: each of the three occupies the corner and one spatial cell, which is why there are four diagonal cells and three diagonal generators. **The sum of the three, $D=M_x+M_y+M_z$, is the direction that makes the trace vanish, and it is a sum and not a member.** **The words *gluon* and *leptoquark* are the broken phase's, and §*The Names, and Which Phase They Belong To* below says exactly what they are on deposit for.**
 
 ## How to Read a Cell
 

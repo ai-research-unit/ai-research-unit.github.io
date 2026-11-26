@@ -18,19 +18,19 @@ $$
 
 **A basis that contains $iD$ is a legitimate basis**, and it is the one in which the broken phase names its bosons: $iD$ together with $d_{2}=\tfrac i2(M_y-M_x)$ and $d_{3}=\tfrac i2(M_z-M_y)$ spans the same three dimensions. **It is not the declared basis**, and the difference shows in one place: in the frame each leptoquark plane closes with a single diagonal array, $[A_{tj},iS_{tj}]=-2iM_{j}$, while in the broken-phase basis it closes with a combination. **Every other number — entries, spectra, trace norms, masses — is identical in the two bases**, because the two differ by an invertible integer rotation of a three-dimensional space.
 
-**Why an array and not a name.** An array is a matrix; a boson is a particle. **The passage from one to the other is the article's subject, and it is short**: the entries say which cells the generator moves, the spectrum says what its exponential does to the quartet, and the mass says what the vacuum does to it. **Each subsection makes those three statements and stops.**
+**Why an array and not a name.** An array is a matrix; a boson is a particle. **The passage from one to the other is the article's subject, and it is short**: the entries say which cells the generator moves, the spectrum says what its exponential does to the quartet, and the mass says what the vacuum does to it — **which above $M_C$ is nothing, for all fifteen.** **Each subsection makes those three statements and stops.**
 
 **The fifteen, indexed.**
 
-| boson | kind | array | cells moved | mass |
+| boson | kind | array | cells moved | $m^{2}$ above $M_C$ |
 | --- | --- | --- | --- | --- |
-| $B'$ | the corner direction, the sum of the three diagonal arrays | $iD=i(M_x+M_y+M_z)$ | the four diagonal cells | $0$ in this phase |
-| $\bar X^{r}$ | the red leptoquark, charge $-\tfrac23$ | $A_{tx}$ | $(t,x)$ and $(x,t)$ | $32v^{2}$ |
-| $X^{r}$ | the red leptoquark, charge $+\tfrac23$ | $iS_{tx}$ | $(t,x)$ and $(x,t)$ | $32v^{2}$ |
-| $\bar X^{g}$ | the green leptoquark, charge $-\tfrac23$ | $A_{ty}$ | $(t,y)$ and $(y,t)$ | $32v^{2}$ |
-| $X^{g}$ | the green leptoquark, charge $+\tfrac23$ | $iS_{ty}$ | $(t,y)$ and $(y,t)$ | $32v^{2}$ |
-| $\bar X^{b}$ | the blue leptoquark, charge $-\tfrac23$ | $A_{tz}$ | $(t,z)$ and $(z,t)$ | $32v^{2}$ |
-| $X^{b}$ | the blue leptoquark, charge $+\tfrac23$ | $iS_{tz}$ | $(t,z)$ and $(z,t)$ | $32v^{2}$ |
+| $B'$ | the corner direction, the sum of the three diagonal arrays | $iD=i(M_x+M_y+M_z)$ | the four diagonal cells | $0$ |
+| $\bar X^{r}$ | the red leptoquark, charge $-\tfrac23$ | $A_{tx}$ | $(t,x)$ and $(x,t)$ | $0$ |
+| $X^{r}$ | the red leptoquark, charge $+\tfrac23$ | $iS_{tx}$ | $(t,x)$ and $(x,t)$ | $0$ |
+| $\bar X^{g}$ | the green leptoquark, charge $-\tfrac23$ | $A_{ty}$ | $(t,y)$ and $(y,t)$ | $0$ |
+| $X^{g}$ | the green leptoquark, charge $+\tfrac23$ | $iS_{ty}$ | $(t,y)$ and $(y,t)$ | $0$ |
+| $\bar X^{b}$ | the blue leptoquark, charge $-\tfrac23$ | $A_{tz}$ | $(t,z)$ and $(z,t)$ | $0$ |
+| $X^{b}$ | the blue leptoquark, charge $+\tfrac23$ | $iS_{tz}$ | $(t,z)$ and $(z,t)$ | $0$ |
 | $g_{1}$ | the red–green plane, real array | $A_{xy}$ | $(x,y)$ and $(y,x)$ | $0$ |
 | $g_{2}$ | the red–green plane, imaginary array | $iS_{xy}$ | $(x,y)$ and $(y,x)$ | $0$ |
 | $g_{4}$ | the red–blue plane, real array | $A_{xz}$ | $(x,z)$ and $(z,x)$ | $0$ |
@@ -41,7 +41,7 @@ $$
 | $iM_{y}$ | the frame direction weighting the green line against the lepton line | $iM_{y}$ | $(t,t)$ and $(y,y)$ | $0$ |
 | $iM_{z}$ | the frame direction weighting the blue line against the lepton line | $iM_{z}$ | $(t,t)$ and $(z,z)$ | $0$ |
 
-**One array per boson, fifteen arrays, fifteen generators, and the ledger is a bijection.** The fifteen sections below are the twelve planes and the three $iM_{j}$; **$B'$ stands above them because it is their sum and not a member**, printed first because the vacuum it names is what the masses are computed from. There is no name in the fifteen that is a combination of other names, and no direction of the algebra that is missing from them.
+**One array per boson, fifteen arrays, fifteen generators, and the ledger is a bijection.** The fifteen sections below are the twelve planes and the three $iM_{j}$; **$B'$ stands above them because it is their sum and not a member**, printed first because it is the one array with an entry of modulus three. There is no name in the fifteen that is a combination of other names, and no direction of the algebra that is missing from them. **The mass column is the spectrum above $M_C$, and above $M_C$ it is zero on all sixteen rows**; the column below $M_C$ takes two values, and it is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)'s.
 
 **None of the fifteen is a gluon above $M_C$, and none carries a colour.** The group there is one simple factor and no $\mathrm{SU}(3)$ is made local, so the words *gluon* and *colour* name cells of the grid and nothing that exists. **They are held on deposit for the phase below $M_C$**, where the eight directions of the $3\times3$ block are the connections of an unbroken factor; above it the words carry no content, and [Conceptual Conventions](conceptual-conventions.html) states the rule. **What exists above $M_C$ is fifteen directions, one coupling, and no invariant that separates one direction from another.** **That is the difference the model makes**: a ledger with more names than dimensions is a ledger of a bigger algebra read in a redundant basis, and this one is neither.
 
@@ -49,11 +49,11 @@ $$
 
 **The properties are in the family table of the construction article, and they are not printed a second time.** [The Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) gives, for each of the six families, the entries, the number of cells, the norm $\operatorname{tr}(X^{\dagger}X)$ and the spectrum. **This article uses those numbers and adds the two things the family table does not carry**: the mass form of a single array, and the Hodge star.
 
-**The mass form.** With $Ξ_0=vD$, $D=\operatorname{diag}(-3,1,1,1)$ and $X$ one array,
+**The mass form, and why it vanishes here.** Above $M_C$ there is no condensate: $Ξ_0=0$ and
 $$
-m^{2}(X)=\operatorname{tr}\bigl([X,Ξ_0]^{\dagger}[X,Ξ_0]\bigr)=v^{2}\operatorname{tr}\bigl(X^{\dagger}[D,[D,X]]\bigr),
+m^{2}(X)=\operatorname{tr}\bigl([X,Ξ_0]^{\dagger}[X,Ξ_0]\bigr)=0
 $$
-which is the diagonal entry $M^{2}_{XX}$ of [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) **on an array of trace norm $2$, and $2|m^{2}|/\operatorname{tr}(X^{\dagger}X)$ on any other**. **It gives $32v^{2}$ on the six leptoquark arrays and $0$ on the nine colour and corner arrays, and that is the whole of the mass spectrum of this model.** **On the six $\mathfrak{so}(4)$ arrays it gives $8v^{2}$, and $8v^{2}$ is not a mass.** Those arrays are coherent sums of a $32v^{2}$ direction and a $0$ direction, and they are normalised to trace norm $1$ where a plane is normalised to $2$; dividing that out gives a mass-matrix entry of $16v^{2}$, the mean of $32v^{2}$ and $0$. **Neither number is an eigenvalue**: a coherent sum of a heavy and a massless direction is not a mass eigenstate, so neither reading is the mass of anything. **The $v$ here is the $\mathrm{SU}(4)$-breaking value**, and it is the only breaking value this model has.
+for each of the fifteen, because the commutator with zero vanishes. **The fifteen are exactly degenerate above $M_C$, and the degeneracy is a property of the algebra and not of a scale.** **Below $M_C$ the same trace is taken with $Ξ_0=vD$, $D=\operatorname{diag}(-3,1,1,1)$, and it gives $32v^{2}$ on six arrays and $0$ on nine**; that computation, with the coherent $\mathfrak{so}(4)$ sums that give $16v^{2}$ and the reason $16v^{2}$ is not a mass, is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)'s and is not repeated here. **The $v$ is the $\mathrm{SU}(4)$-breaking value**, and it is the only breaking value this model has.
 
 **The star.** On the real antisymmetric arrays the Hodge star of $\mathbb{R}^4$ acts, $\star(dt\wedge dx)=dy\wedge dz$ and cyclically, with $\star^{2}=+1$. **It gives $\star T^{L}_{a}=+T^{L}_{a}$ and $\star T^{R}_{a}=-T^{R}_{a}$** on the six $\mathfrak{so}(4)$ arrays, and on the six real planes $\star A_{tx}=+A_{yz}$, $\star A_{ty}=-A_{xz}$, $\star A_{tz}=+A_{xy}$. **The star is not defined on the nine imaginary arrays**, which are not two-forms.
 
@@ -63,15 +63,17 @@ which is the diagonal entry $M^{2}_{XX}$ of [The Breaking of the Primordial Forc
 
 **The six.** $T^{L}_{a}=\tfrac12 L_{\mathrm{axf}}(\vec e_a)$ and $T^{R}_{a}=\tfrac12 R_{\mathrm{axf}}(\vec e_a)$, $a=x,y,z$. Each is half a sum or a difference of two planes, $T^{L}_{a}=-\tfrac12(A_{ta}+A_{bc})$ and $T^{R}_{a}=-\tfrac12(A_{ta}-A_{bc})$ with $(a,b,c)$ cyclic. **They span $\mathfrak{so}(4)$, six real dimensions inside the fifteen, and they are not independent directions of the algebra.**
 
-**Why they get no subsection.** A subsection in this article states four things: the entries, the spectrum, the plane the array turns, and the boson it is. **The first three hold for the six and are the first three of the plane arrays they are made of. The fourth fails**, and it fails in the one way that matters:
+**Why they get no subsection.** A subsection in this article states four things: the entries, the spectrum, the plane the array turns, and the boson it is. **The first three hold for the six and are the first three of the plane arrays they are made of. The fourth fails**, and above $M_C$ the reason is a count: $T^{L}_{a}=-\tfrac12(A_{ta}+A_{bc})$ is a sum of two of the fifteen, so it spans no direction the fifteen do not already span. **A sixteenth row in the ledger would name a combination, and a combination is not a boson.**
+
+**Below $M_C$ a second reason appears, and it is spectral.** There the two halves of $T^{L}_{a}$ take different masses and the sum is a coherence,
 
 $$
 m^{2}\bigl(T^{L}_{a}\bigr)=\tfrac12\bigl(32v^{2}\bigr)+\tfrac12\bigl(0\bigr)=16v^{2},
 $$
 
-**and $16v^{2}$ is not a mass.** It is the average of a heavy direction and a massless one, so $T^{L}_{a}$ is a coherence and not a state: **no term of the mass matrix is diagonal in it, and the physical spectrum at $M_C$ has no particle with this array's quantum numbers.** The heavy half sits in the leptoquark, the massless half in the gluon, and the array is a rotation between two particles of different mass that exists only at the symmetric point.
+**and $16v^{2}$ is not a mass**, because no term of the mass matrix is diagonal in it. **That sentence belongs to the broken phase and is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)'s**; above $M_C$ there is nothing for it to say, since all fifteen are degenerate.
 
-**What the six do carry, and it is not nothing.** They are the arrays in which the real $\mathfrak{so}(4)$ of the quartet is visible: $T^{L}$ closes with $+\epsilon_{abc}$, $T^{R}$ with $-\epsilon_{abc}$, and the two triples commute. **That is a true statement about a subalgebra and it is not a particle content.** The corpus keeps the computation in [Construction of the AXF Matrices](construction-of-the-axf-matrices-of-the-fifteen-generators.html) and in [The Commutation Table](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html), and the model's spectrum in the next section, where those six directions are made local and named.
+**What the six do carry, and it is not nothing.** They are the arrays in which the real $\mathfrak{so}(4)$ of the quartet is visible: $T^{L}$ closes with $+\epsilon_{abc}$, $T^{R}$ with $-\epsilon_{abc}$, and the two triples commute. **That is a true statement about a subalgebra and it is not a particle content.** The corpus keeps the computation in [Construction of the AXF Matrices](construction-of-the-axf-matrices-of-the-fifteen-generators.html) and in [The Commutation Table](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html).
 
 ## The Corner Direction, Before the Fifteen
 
@@ -113,7 +115,7 @@ $$
 $$
 and at $\theta=0.4$ the image of $e_t$ is $(0.9211,\,-0.3894,\,0,\,0)$. **Real and orthogonal, so it is a rotation of the quartet** and not a boost: [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) proves that no exponential of the fifteen arrays is a boost. **The star carries it to the colour plane**, $\star A_{tx}=+A_{yz}$, and that is why the self-dual combination $A_{tx}+A_{yz}=-2T^{L}_{x}$ is a half.
 
-**The boson.** $\bar X^{r}$ is a leptoquark: **the array moves the lepton line into the red line and back**, which is the definition of a leptoquark and the reason the cell $(t,x)$ sits in the mixed band. Charge $-\tfrac23$, $B-L=-\tfrac43$, colour $\bar{\mathbf3}$. **Mass $32v^{2}=2v^{2}(1-(-3))^{2}$**, twice the square of the difference between the lepton eigenvalue and the colour eigenvalue of the vacuum: colour is unbroken because $D$ is a multiple of the identity on the colour triple, and the leptoquark is massive because the lepton line is not. **The bracket with its partner is exact**, $[A_{tx},iS_{tx}]=2i(E_{tt}-E_{xx})=-2iM_{x}$, so the plane's two arrays and one frame direction close into an $\mathfrak{su}(2)$, with no combination needed. [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) owns the sector.
+**The boson.** $\bar X^{r}$ is a leptoquark: **the array moves the lepton line into the red line and back**, which is the definition of a leptoquark and the reason the cell $(t,x)$ sits in the mixed band. Charge $-\tfrac23$, $B-L=-\tfrac43$, the red line. **Mass $0$ above $M_C$**, as for all fifteen: no condensate exists there to give the plane a mass. **Below $M_C$ it takes $32v^{2}=2v^{2}(1-(-3))^{2}$**, twice the square of the lepton-minus-spatial difference of $D$, and that value is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)'s. **The bracket with its partner is exact**, $[A_{tx},iS_{tx}]=2i(E_{tt}-E_{xx})=-2iM_{x}$, so the plane's two arrays and one frame direction close into an $\mathfrak{su}(2)$, with no combination needed. [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) owns the sector.
 
 ### $X^{r}$, the red leptoquark of charge $+\tfrac23$: $iS_{tx}$, the imaginary amplitude on the same plane
 
@@ -129,7 +131,7 @@ $$
 $$
 giving $(0.9211,\,0.3894i,\,0,\,0)$ at $\theta=0.4$. **Unitary and not orthogonal**: the image of a real unit vector has an imaginary component, so this exponential does not act on the real quartet at all. **That is the $6+9$ split read on one plane**, and it is why the article separates the arrays that rotate from the arrays that phase.
 
-**The boson.** $X^{r}$ is the other amplitude of the same complex leptoquark field as $\bar X^{r}$. **Charge $+\tfrac23$, $B-L=+\tfrac43$, mass $32v^{2}$** from the same plane and the same difference of eigenvalues. **The pair is one complex field and the two arrays are its real and imaginary parts**, which the corpus states as a convention: calling the real array the particle and the imaginary one the antiparticle is the $i$ convention and not a physical distinction. **What is not a convention is that both arrays are supported on the same two cells**, and therefore that the particle and the antiparticle of a plane come in one pair of mirrored cells.
+**The boson.** $X^{r}$ is the other amplitude of the same complex leptoquark field as $\bar X^{r}$. **Charge $+\tfrac23$, $B-L=+\tfrac43$, mass $0$ above $M_C$**, from the same plane and the same degeneracy. **The pair is one complex field and the two arrays are its real and imaginary parts**, which the corpus states as a convention: calling the real array the particle and the imaginary one the antiparticle is the $i$ convention and not a physical distinction. **What is not a convention is that both arrays are supported on the same two cells**, and therefore that the particle and the antiparticle of a plane come in one pair of mirrored cells.
 
 ### $\bar X^{g}$, the green leptoquark of charge $-\tfrac23$: $A_{ty}$, the real plane through the lepton line
 
@@ -141,7 +143,7 @@ $$
 
 **The exponential.** $\exp(\theta A_{ty})e_t=\cos\theta\,e_t-\sin\theta\,e_y$, with $e_x$ and $e_z$ fixed. **The star gives $\star A_{ty}=-A_{xz}$**, the minus being the orientation of the complementary pair $(x,z)$ against the order of the quartet, and the same minus appears in the recombination $A_{xz}=+(T^{L}_{y}-T^{R}_{y})$.
 
-**The boson.** $\bar X^{g}$, charge $-\tfrac23$, $B-L=-\tfrac43$, colour $\bar{\mathbf3}$ in the green line. **Mass $32v^{2}$ and the same bracket structure**: $[A_{ty},iS_{ty}]=2i(E_{tt}-E_{yy})=-2iM_{y}$. **The three leptoquark planes are three copies of one computation**, and the sign differences between them are the $\epsilon$ of the pair resolution, not three physics.
+**The boson.** $\bar X^{g}$, charge $-\tfrac23$, $B-L=-\tfrac43$, colour $\bar{\mathbf3}$ in the green line. **Mass $0$ above $M_C$, and the same bracket structure**: $[A_{ty},iS_{ty}]=2i(E_{tt}-E_{yy})=-2iM_{y}$. **The three mixed planes are three copies of one computation**, and the sign differences between them are the $\epsilon$ of the pair resolution, not three physics.
 
 ### $X^{g}$, the green leptoquark of charge $+\tfrac23$: $iS_{ty}$, the imaginary amplitude on the same plane
 
@@ -153,7 +155,7 @@ $$
 
 **The exponential.** $\exp(\theta\, iS_{ty})e_t=\cos\theta\,e_t+i\sin\theta\,e_y$, the same form as the red plane with $y$ in place of $x$.
 
-**The boson.** $X^{g}$, charge $+\tfrac23$, the particle of the green plane, mass $32v^{2}$. **The mass is the same for all six leptoquark arrays because $D$ is blind to which colour line the plane uses**: all three colour eigenvalues are $+1$ and the lepton eigenvalue is $-3$, so every mixed plane gets the same difference and colour never splits the sextet.
+**The boson.** $X^{g}$, charge $+\tfrac23$, the particle of the green plane, mass $0$ above $M_C$. **All six mixed planes are degenerate with the other nine directions and with each other**, and the reason is the same one: above $M_C$ there is one mass, zero, so no spatial line can split anything. **Below $M_C$ the six share one value because $D$ is a multiple of the identity on the spatial triple**, and that is the breaking article's sentence.
 
 ### $\bar X^{b}$, the blue leptoquark of charge $-\tfrac23$: $A_{tz}$, the real plane through the lepton line
 
@@ -165,7 +167,7 @@ $$
 
 **The exponential.** $\exp(\theta A_{tz})e_t=\cos\theta\,e_t-\sin\theta\,e_z$, with $e_x$ and $e_y$ fixed. **The star gives $\star A_{tz}=+A_{xy}$**, so the self-dual completion of this plane is the half $-2T^{L}_{z}$.
 
-**The boson.** $\bar X^{b}$, charge $-\tfrac23$, colour $\bar{\mathbf3}$ in the blue line, mass $32v^{2}$. **The bracket is $[A_{tz},iS_{tz}]=2i(E_{tt}-E_{zz})=-2iM_{z}$**, the third of the three ways a leptoquark plane closes on a frame direction.
+**The boson.** $\bar X^{b}$, charge $-\tfrac23$, colour $\bar{\mathbf3}$ in the blue line, mass $0$ above $M_C$. **The bracket is $[A_{tz},iS_{tz}]=2i(E_{tt}-E_{zz})=-2iM_{z}$**, the third of the three ways a leptoquark plane closes on a frame direction.
 
 ### $X^{b}$, the blue leptoquark of charge $+\tfrac23$: $iS_{tz}$, the imaginary amplitude on the same plane
 
@@ -177,7 +179,7 @@ $$
 
 **The exponential.** $\exp(\theta\, iS_{tz})e_t=\cos\theta\,e_t+i\sin\theta\,e_z$, complex and not orthogonal.
 
-**The boson.** $X^{b}$, charge $+\tfrac23$, the particle of the blue plane, mass $32v^{2}$. **With it the sextet is complete**: six arrays, six bosons, one mass, three colour lines, and the six charges sum to zero. **The sextet is the only massive set that touches a colour line**, and it fixes the scale $M_C$ at which colour stops being the whole story: [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html).
+**The boson.** $X^{b}$, charge $+\tfrac23$, the particle of the blue plane, mass $0$ above $M_C$. **With it the mixed band is complete**: six arrays, six cells, one mass — zero — three spatial lines, and the six charges sum to zero. **Below $M_C$ these six take one common value and are the only set that does**, and that is where the scale enters at which the spatial lines stop being the whole story: [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html).
 
 ### $g_{1}$, the red–green plane: $A_{xy}$, the real rotation
 
@@ -324,8 +326,8 @@ Nineteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet 
 | the star on the real planes | $\star A_{tx}$, $\star A_{ty}$, $\star A_{tz}$ | $+A_{yz}$, $-A_{xz}$, $+A_{xy}$ |
 | the plane bracket | $[A_{jk},iS_{jk}]$ against $2i(E_{jj}-E_{kk})$ | $6/6$ exact |
 | the leptoquark bracket in the frame | $[A_{tj},iS_{tj}]$ against $-2iM_{j}$ | $3/3$ exact |
-| the masses | $\operatorname{tr}([X,Ξ_0]^{\dagger}[X,Ξ_0])$ | $32v^{2}$ six times, $0$ nine times |
-| the six $\mathfrak{so}(4)$ arrays | $m^{2}$ in their own basis | $16v^{2}$ each, off-diagonal, not a mass |
+| the masses | $\operatorname{tr}([X,Ξ_0]^{\dagger}[X,Ξ_0])$ at $Ξ_0=0$ | $0$ on all fifteen |
+| the six $\mathfrak{so}(4)$ arrays | their coordinates on the fifteen | inside the span, no new direction |
 | the six arrays in the fifteen | their coordinates | $0$ entries outside the span |
 | the Gram of the fifteen | $105$ pairs | $102$ zero, three at $\operatorname{tr}(M_{j}M_{k})=+1$ |
 | the sum's norm | $\operatorname{tr}(D^{2})$ | $12$ |
@@ -338,11 +340,11 @@ Nineteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet 
 
 **Two spectra.** $0,0,+i,-i$ on all fifteen, and $-3i,i,i,i$ on their sum, the corner. **Nothing else appears**, and that is why every exponential in the article has a closed form.
 
-**One mass and one artefact.** $32v^{2}$ on the six leptoquark arrays, zero on the nine colour-block and frame arrays, and on the corner that is their sum; **and $8v^{2}$ from the un-normalised form on the six $\mathfrak{so}(4)$ arrays — $16v^{2}$ as a mass-matrix entry, the mean of $32v^{2}$ and $0$ — which is not a mass at all.** **The $32$ is twice the square of the vacuum's lepton-minus-colour difference**, and the zeros are the two facts that $D$ is a multiple of the identity on colour and that it commutes with itself.
+**One mass, and it is zero.** $0$ on all fifteen above $M_C$, and on the corner that is their sum, because there is no condensate to break the degeneracy. **Below $M_C$ six take $32v^{2}$ and nine take $0$**, and the $32$ is twice the square of the lepton-minus-spatial difference of $D$; **that column, with the $16v^{2}$ that is not a mass, is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)'s.**
 
 **Every plane closes with its partner, and in the frame the closure is exact and single.** $[A_{jk},iS_{jk}]=2i(E_{jj}-E_{kk})$ holds on all six planes: in the colour block it gives $2i(M_{x}-M_{y})$, $2i(M_{x}-M_{z})$ and $2i(M_{y}-M_{z})$, and each leptoquark plane gives one frame direction with no combination, $[A_{tj},iS_{tj}]=-2iM_{j}$. **Nothing closes at the corner**, which is the sum and not a member.
 
-**The six absent matrices are absent for one reason.** Each is half heavy and half massless, so it is a coherence and not a state. **A ledger of coherences would have fifteen more rows and no more particles.**
+**The six absent matrices are absent because they are sums.** Each is a combination of two of the fifteen, so it spans nothing new above $M_C$; below $M_C$ each is half heavy and half massless, and the coherence argument is the breaking article's. **A ledger of coherences would have fifteen more rows and no more particles.**
 
 ## Summary of Notation
 

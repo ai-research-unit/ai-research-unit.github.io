@@ -153,4 +153,4 @@ The physics that survives the passage is worth more than the algebra that does n
 - [Matter Into the Frame: The Variation That Defines the Source](matter-into-the-frame-the-variation-that-defines-the-source.html), for the dictionary this sector is tested against and the count that forces the passage from an element to a frame.
 - [The Scalar Sector on a Frame](the-scalar-sector-on-a-frame.html), for the sector where the same dictionary works with no index structure at all.
 - [The Dirac Sector on a Frame](the-dirac-sector-on-a-frame.html), for the sector where the frame enters intrinsically and the antisymmetric part appears.
-- [The Action Problem](the-action-problem.html), for the trace collapse and the perfect-fluid frame that the radiation fluid's isotropic average fills.
+- [The Exact Gravitational Action](the-exact-gravitational-action-the-functional-the-boundary-term-and-the-variation.html), for the trace collapse and the perfect-fluid frame that the radiation fluid's isotropic average fills.
