@@ -8,7 +8,7 @@
 
 **The naming rule, and the one convention in it.** The $4\times4$ grid of the quartet carries one name per cell, printed in [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **The array $A_{jk}$ carries the boson named in the cell $(j,k)$, and the array $iS_{jk}$ of the same plane carries the other amplitude of that pair.** So the real array of the plane $\{t,x\}$ carries $\bar X^{r}$, the name of the cell $(t,x)$, and the imaginary array carries $X^{r}$. **Which of the two amplitudes takes which of the two names is a convention and no number depends on it**; the corpus states that once and this article uses it once.
 
-**Every section is titled with the boson first and the array second**, so the table of contents reads as the boson content of the model: **the corner, the six leptoquarks with their charges, the six colour planes, and the three frame directions.** That is the whole list.
+**Every section is titled with the boson first and the array second**, so the table of contents reads as the boson content of the model: **the corner, the six leptoquarks with their charges, the six spatial planes, and the three frame directions.** That is the whole list.
 
 **The diagonal is printed in the declared frame, and the corner is the sum of it.** The three diagonal arrays of the fifteen are $iM_{j}=i\bigl(E_{jj}-E_{tt}\bigr)$ with $j=x,y,z$, and **the direction the vacuum is built from is their sum and not a sixteenth array**,
 
@@ -83,21 +83,23 @@ $$
 iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr)=\begin{pmatrix}-3i & 0 & 0 & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & 0 & 0 & i\end{pmatrix}
 $$
 
-**The entries.** Four diagonal cells, and the only entry of modulus $\ne1$ in the whole fifteen: $-3i$ at the corner. **The display is the sum of the three frame arrays**, $iD=iM_x+iM_y+iM_z$, so its entries are sums of $\pm i$ and its norm is the norm of a sum, not of a member. **Trace zero because $-3+1+1+1=0$**, norm $12$ because $9+1+1+1=12$, spectrum $-3i,i,i,i$. **The corner cell carries minus the sum of the other three**, and that is the only way a diagonal with three equal entries can be traceless. **The same equation read as charges is $3\cdot(+1)+(-3)=0$** — and the $-3$ is the count of colour lines, the same number that appears as $N-1$ in the charge quantum $e/(N-1)$. **The number is not "the trace removed"**: removing the trace is deleting the word $W_{tt}$ from the sixteen to reach fifteen, which is a count of arrays, while $-3$ is an eigenvalue of the sum of three of the fifteen.
+**The entries.** Four diagonal cells, and the only entry of modulus $\ne1$ in the whole fifteen: $-3i$ at the corner. **The display is the sum of the three frame arrays**, $iD=iM_x+iM_y+iM_z$, so its entries are sums of $\pm i$ and its norm is the norm of a sum, not of a member. **Trace zero because $-3+1+1+1=0$**, norm $12$ because $9+1+1+1=12$, spectrum $-3i,i,i,i$. **The corner cell carries minus the sum of the other three**, and that is the only way a diagonal with three equal entries can be traceless. **The same equation read as charges is $3\cdot(+1)+(-3)=0$** — and the $-3$ is the count of spatial lines, the same number that appears as $N-1$ in the charge quantum $e/(N-1)$. **The number is not "the trace removed"**: removing the trace is deleting the word $W_{tt}$ from the sixteen to reach fifteen, which is a count of arrays, while $-3$ is an eigenvalue of the sum of three of the fifteen.
 
 **The exponential.** Four phases and no rotation,
 $$
 \exp(\theta\, iD)=\operatorname{diag}\bigl(e^{-3i\theta},\,e^{i\theta},\,e^{i\theta},\,e^{i\theta}\bigr).
 $$
-At $\theta=0.4$ the lepton phase is $0.3624-0.9320i$ and each colour phase is $0.9211+0.3894i$. **The array moves no index and turns no plane**; it multiplies the four lines by four phases.
+At $\theta=0.4$ the lepton phase is $0.3624-0.9320i$ and each strong phase is $0.9211+0.3894i$. **The array moves no index and turns no plane**; it multiplies the four lines by four phases.
 
 **The boson.** $B'$ is the $B-L$ boson, and **the array is the one the vacuum is built from**. With the $i$ removed, $D=\operatorname{diag}(-3,1,1,1)$ is the Hermitian direction of the breaking, $Ξ_0=vD$, and $B-L=\tfrac13D$ on the $\mathbf4$: the charge is this array divided by three, which in charges reads $(-1,\tfrac13,\tfrac13,\tfrac13)$ with the lepton first.
 
-**What the vacuum does not see.** $[iD,Ξ_0]=0$, so this array is invisible to the first breaking — and it is not alone: nine directions commute with $D$, the eight of the colour block and $B'$ itself. **The unique statement is narrower and it is the one that matters here**: of the nine arrays that involve the $t$ line, six move it and three weight it, and **$B'$ is the one combination of the three that is blind to which colour line it weights** — the three weights are equal, and that equality is what makes the corner entry $-3$.
+**What the vacuum does not see.** $[iD,Ξ_0]=0$, so this array is invisible to the first breaking — and it is not alone: nine directions commute with $D$, the eight of the spatial block and $B'$ itself. **The unique statement is narrower and it is the one that matters here**: of the nine arrays that involve the $t$ line, six move it and three weight it, and **$B'$ is the one combination of the three that is blind to which spatial line it weights** — the three weights are equal, and that equality is what makes the corner entry $-3$.
 
 **Its mass depends on which vacuum is assumed, and the two descriptions differ.** If the first breaking is by a direction that commutes with it — an adjoint-type vev along the lepton line — $B'$ stays massless down to $v$. On the minimal content of the corpus, one breaking at $v_C$ carrying the line and a right doublet, it does not: [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html) gives it a diagonal entry $\tfrac38g^2v_C^2$ and a share $\tfrac35$ of the $Z_R$, whose mass is $\tfrac58g^2v_C^2$. **So "massless until the weak breaking" is true in the first description and false in the second, and the corpus uses the second.**
 
 **Downstream, after a mixing this model does not contain, it is one of the three ingredients of $\gamma$, $Z$ and $Z_R$**, with the share $\tfrac16$ that $Q$ gives it in the basis where $Q=T_3+\tfrac16D$, and it supplies the hypercharge coupling $g_{\mathrm Y}$. [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) has the stabilisers and [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) has the ledger.
+
+**Where the colour word sits.** The corner weighs the three spatial lines equally, and that equality is what the entry $-3$ means; **no letter is singled out here**, so the word names no member of the fifteen.
 
 ## The Fifteen, One Array at a Time
 
@@ -113,9 +115,11 @@ $$
 $$
 \exp(\theta A_{tx})e_t=\cos\theta\,e_t-\sin\theta\,e_x,\qquad \exp(\theta A_{tx})e_y=e_y,\qquad \exp(\theta A_{tx})e_z=e_z ,
 $$
-and at $\theta=0.4$ the image of $e_t$ is $(0.9211,\,-0.3894,\,0,\,0)$. **Real and orthogonal, so it is a rotation of the quartet** and not a boost: [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) proves that no exponential of the fifteen arrays is a boost. **The star carries it to the colour plane**, $\star A_{tx}=+A_{yz}$, and that is why the self-dual combination $A_{tx}+A_{yz}=-2T^{L}_{x}$ is a half.
+and at $\theta=0.4$ the image of $e_t$ is $(0.9211,\,-0.3894,\,0,\,0)$. **Real and orthogonal, so it is a rotation of the quartet** and not a boost: [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) proves that no exponential of the fifteen arrays is a boost. **The star carries it to the spatial plane**, $\star A_{tx}=+A_{yz}$, and that is why the self-dual combination $A_{tx}+A_{yz}=-2T^{L}_{x}$ is a half.
 
 **The boson.** $\bar X^{r}$ is a leptoquark: **the array moves the lepton line into the red line and back**, which is the definition of a leptoquark and the reason the cell $(t,x)$ sits in the mixed band. Charge $-\tfrac23$, $B-L=-\tfrac43$, the red line. **Mass $0$ above $M_C$**, as for all fifteen: no condensate exists there to give the plane a mass. **Below $M_C$ it takes $32v^{2}=2v^{2}(1-(-3))^{2}$**, twice the square of the lepton-minus-spatial difference of $D$, and that value is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)'s. **The bracket with its partner is exact**, $[A_{tx},iS_{tx}]=2i(E_{tt}-E_{xx})=-2iM_{x}$, so the plane's two arrays and one frame direction close into an $\mathfrak{su}(2)$, with no combination needed. [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) owns the sector.
+
+**Where the colour word sits.** The two cells are $\ell\bar r$ and $r\bar\ell$: **red is the row $x$**, a coordinate of the table and not a property of the array.
 
 ### $X^{r}$, the red leptoquark of charge $+\tfrac23$: $iS_{tx}$, the imaginary amplitude on the same plane
 
@@ -133,6 +137,8 @@ giving $(0.9211,\,0.3894i,\,0,\,0)$ at $\theta=0.4$. **Unitary and not orthogona
 
 **The boson.** $X^{r}$ is the other amplitude of the same complex leptoquark field as $\bar X^{r}$. **Charge $+\tfrac23$, $B-L=+\tfrac43$, mass $0$ above $M_C$**, from the same plane and the same degeneracy. **The pair is one complex field and the two arrays are its real and imaginary parts**, which the corpus states as a convention: calling the real array the particle and the imaginary one the antiparticle is the $i$ convention and not a physical distinction. **What is not a convention is that both arrays are supported on the same two cells**, and therefore that the particle and the antiparticle of a plane come in one pair of mirrored cells.
 
+**Where the colour word sits.** The same address as $\bar X^{r}$: **the second amplitude of one cell pair**, and the letter names a row for the pair and not for the amplitude.
+
 ### $\bar X^{g}$, the green leptoquark of charge $-\tfrac23$: $A_{ty}$, the real plane through the lepton line
 
 $$
@@ -144,6 +150,8 @@ $$
 **The exponential.** $\exp(\theta A_{ty})e_t=\cos\theta\,e_t-\sin\theta\,e_y$, with $e_x$ and $e_z$ fixed. **The star gives $\star A_{ty}=-A_{xz}$**, the minus being the orientation of the complementary pair $(x,z)$ against the order of the quartet, and the same minus appears in the recombination $A_{xz}=+(T^{L}_{y}-T^{R}_{y})$.
 
 **The boson.** $\bar X^{g}$, charge $-\tfrac23$, $B-L=-\tfrac43$, colour $\bar{\mathbf3}$ in the green line. **Mass $0$ above $M_C$, and the same bracket structure**: $[A_{ty},iS_{ty}]=2i(E_{tt}-E_{yy})=-2iM_{y}$. **The three mixed planes are three copies of one computation**, and the sign differences between them are the $\epsilon$ of the pair resolution, not three physics.
+
+**Where the colour word sits.** $\ell\bar g$ and $g\bar\ell$: **green is the row $y$**, a coordinate and not a charge.
 
 ### $X^{g}$, the green leptoquark of charge $+\tfrac23$: $iS_{ty}$, the imaginary amplitude on the same plane
 
@@ -157,6 +165,8 @@ $$
 
 **The boson.** $X^{g}$, charge $+\tfrac23$, the particle of the green plane, mass $0$ above $M_C$. **All six mixed planes are degenerate with the other nine directions and with each other**, and the reason is the same one: above $M_C$ there is one mass, zero, so no spatial line can split anything. **Below $M_C$ the six share one value because $D$ is a multiple of the identity on the spatial triple**, and that is the breaking article's sentence.
 
+**Where the colour word sits.** The same address as $\bar X^{g}$, the second amplitude; **one letter, two amplitudes, one address**.
+
 ### $\bar X^{b}$, the blue leptoquark of charge $-\tfrac23$: $A_{tz}$, the real plane through the lepton line
 
 $$
@@ -168,6 +178,8 @@ $$
 **The exponential.** $\exp(\theta A_{tz})e_t=\cos\theta\,e_t-\sin\theta\,e_z$, with $e_x$ and $e_y$ fixed. **The star gives $\star A_{tz}=+A_{xy}$**, so the self-dual completion of this plane is the half $-2T^{L}_{z}$.
 
 **The boson.** $\bar X^{b}$, charge $-\tfrac23$, colour $\bar{\mathbf3}$ in the blue line, mass $0$ above $M_C$. **The bracket is $[A_{tz},iS_{tz}]=2i(E_{tt}-E_{zz})=-2iM_{z}$**, the third of the three ways a leptoquark plane closes on a frame direction.
+
+**Where the colour word sits.** $\ell\bar b$ and $b\bar\ell$: **blue is the row $z$**, and the three leptoquark planes are the three addresses of the mixed band.
 
 ### $X^{b}$, the blue leptoquark of charge $+\tfrac23$: $iS_{tz}$, the imaginary amplitude on the same plane
 
@@ -181,13 +193,15 @@ $$
 
 **The boson.** $X^{b}$, charge $+\tfrac23$, the particle of the blue plane, mass $0$ above $M_C$. **With it the mixed band is complete**: six arrays, six cells, one mass — zero — three spatial lines, and the six charges sum to zero. **Below $M_C$ these six take one common value and are the only set that does**, and that is where the scale enters at which the spatial lines stop being the whole story: [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html).
 
+**Where the colour word sits.** The same address as $\bar X^{b}$, the second amplitude; **the mixed band has three addresses and six amplitudes**, which is the $6$ of $15=6+6+3$.
+
 ### $g_{1}$, the red–green plane: $A_{xy}$, the real rotation
 
 $$
 A_{xy}=E_{xy}-E_{yx}=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix}
 $$
 
-**The entries.** Two cells inside the colour block, $+1$ at $(x,y)$ and $-1$ at $(y,x)$, and nothing on the lepton line or the blue line. **Real antisymmetric, trace zero, norm $2$, spectrum $0,0,\pm i$.**
+**The entries.** Two cells inside the spatial block, $+1$ at $(x,y)$ and $-1$ at $(y,x)$, and nothing on the lepton line or the blue line. **Real antisymmetric, trace zero, norm $2$, spectrum $0,0,\pm i$.**
 
 **The exponential.** A rotation of the red–green plane that fixes the other two lines,
 $$
@@ -195,9 +209,11 @@ $$
 $$
 At $\theta=0.4$ the image of $e_x$ is $(0,\,0.9211,\,-0.3894,\,0)$. **The array is a rotation of the quartet that leaves the lepton line alone**, which is the geometric content of "colour is a stabiliser", and it is the reason [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) counts it among the three that turn space.
 
-**The name, and the mass.** $g_{1}$ is a cell of the red–green plane, and **above $M_C$ it is a direction and not a particle**: no $\mathrm{SU}(3)$ is local there, so *gluon* is a name held on deposit for the phase below. **Its mass is zero at every step of the chain, exactly**, because $D$ is a multiple of the identity on the colour triple: the plane's two eigenvalues of $D$ are equal, the difference is zero, and the mass form above vanishes. **The same computation in the array language is one line**, $[A_{xy},D]=0$.
+**The name, and the mass.** $g_{1}$ is a cell of the red–green plane, and **above $M_C$ it is a direction and not a particle**: no $\mathrm{SU}(3)$ is local there, so *gluon* is a name held on deposit for the phase below. **Its mass is zero at every step of the chain, exactly**, because $D$ is a multiple of the identity on the three spatial lines: the plane's two eigenvalues of $D$ are equal, the difference is zero, and the mass form above vanishes. **The same computation in the array language is one line**, $[A_{xy},D]=0$.
 
-**The star.** $\star A_{xy}=+A_{tz}$: the red–green colour plane and the blue leptoquark plane are one pair under the star, and that pairing is why the six planes split into three colour and three mixed.
+**The star.** $\star A_{xy}=+A_{tz}$: the red–green spatial plane and the blue leptoquark plane are one pair under the star, and that pairing is why the six planes split into three colour and three mixed.
+
+**Where the colour word sits.** The address is $r\bar g$ on one cell and $g\bar r$ on the other, **and the two writings are the two signs of one entry**: a pair of rows and not an ordered pair.
 
 ### $g_{2}$, the red–green plane: $iS_{xy}$, the complex rotation
 
@@ -209,7 +225,9 @@ $$
 
 **The exponential.** $\exp(\theta\, iS_{xy})e_x=\cos\theta\,e_x+i\sin\theta\,e_y$, giving $(0,\,0.9211,\,0.3894i,\,0)$ at $\theta=0.4$, with $e_t$ and $e_z$ fixed. **Unitary and not orthogonal**: the image of a real unit vector has an imaginary part, so this exponential does not act on the real quartet.
 
-**The mass.** $g_{2}$ is the second cell of the red–green plane, and its mass is zero for the same reason as $g_{1}$'s, $[iS_{xy},D]=0$. **The pair $\{g_{1},g_{2}\}$ is one complex colour field**, because the two arrays are conjugates under transpose-and-$i$: a colour plane contributes one real colour field and not two independent phases, and that is why the octet is real.
+**The mass.** $g_{2}$ is the second cell of the red–green plane, and its mass is zero for the same reason as $g_{1}$'s, $[iS_{xy},D]=0$. **The pair $\{g_{1},g_{2}\}$ is one complex strong field**, because the two arrays are conjugates under transpose-and-$i$: a spatial plane contributes one real strong field and not two independent phases, and that is why the octet is real.
+
+**Where the colour word sits.** The same address again, with $i$ on both cells: **one complex field has one address and two phases**, so the block's six planes are three addresses with two phases each.
 
 ### $g_{4}$, the red–blue plane: $A_{xz}$, the real rotation
 
@@ -221,9 +239,11 @@ $$
 
 **The exponential.** $\exp(\theta A_{xz})e_x=\cos\theta\,e_x-\sin\theta\,e_z$, fixing $e_t$ and $e_y$; at $\theta=0.4$ the image of $e_x$ is $(0,\,0.9211,\,0,\,-0.3894)$.
 
-**The mass.** $g_{4}$, the real cell of the red–blue plane, massless by the same equality of colour eigenvalues. **Its bracket with its own imaginary partner is the one that ties the colour block to its Cartan**, $[A_{xz},iS_{xz}]=2i(E_{xx}-E_{zz})=2i(M_{x}-M_{z})$, and it is the middle of the three colour brackets.
+**The mass.** $g_{4}$, the real cell of the red–blue plane, massless by the same equality of diagonal entries. **Its bracket with its own imaginary partner is the one that ties the spatial block to its Cartan**, $[A_{xz},iS_{xz}]=2i(E_{xx}-E_{zz})=2i(M_{x}-M_{z})$, and it is the middle of the three colour brackets.
 
-**The star.** $\star A_{xz}=-A_{ty}$. One of the three colour planes carries a minus in this pairing and the other two do not, because the sign is the orientation of the plane and not a choice of naming.
+**The star.** $\star A_{xz}=-A_{ty}$. One of the three spatial planes carries a minus in this pairing and the other two do not, because the sign is the orientation of the plane and not a choice of naming.
+
+**Where the colour word sits.** $r\bar b$ and $b\bar r$, with **green the row the array does not touch**: the absence is part of the address and part of why this plane's bracket needs both Cartan directions.
 
 ### $g_{5}$, the red–blue plane: $iS_{xz}$, the complex rotation
 
@@ -235,7 +255,9 @@ $$
 
 **The exponential.** $\exp(\theta\, iS_{xz})e_x=\cos\theta\,e_x+i\sin\theta\,e_z$, complex and not orthogonal, as in the red–green plane.
 
-**The mass.** $g_{5}$, the second cell of the red–blue plane, massless. **A reader who expects eight rotation angles in a colour octet finds three rotations, three complex rotations and two diagonal phases instead**: three real planes, three imaginary planes and two colour phases, and only the first three are rotations of the quartet.
+**The mass.** $g_{5}$, the second cell of the red–blue plane, massless. **A reader who expects eight rotation angles in a octet finds three rotations, three complex rotations and two diagonal phases instead**: three real planes, three imaginary planes and two strong phases, and only the first three are rotations of the quartet.
+
+**Where the colour word sits.** The same address as $g_{4}$, the second phase; **the pair is one field and one address**.
 
 ### $g_{6}$, the green–blue plane: $A_{yz}$, the real rotation
 
@@ -247,9 +269,11 @@ $$
 
 **The exponential.** $\exp(\theta A_{yz})e_y=\cos\theta\,e_y-\sin\theta\,e_z$, fixing $e_t$ and $e_x$; at $\theta=0.4$ the image of $e_y$ is $(0,\,0,\,0.9211,\,-0.3894)$.
 
-**The mass.** $g_{6}$, the real cell of the green–blue plane, massless. **The bracket is $[A_{yz},iS_{yz}]=2i(E_{yy}-E_{zz})=2i(M_{y}-M_{z})$**, the third of the three, and the three together are the whole diagonal content of the colour block.
+**The mass.** $g_{6}$, the real cell of the green–blue plane, massless. **The bracket is $[A_{yz},iS_{yz}]=2i(E_{yy}-E_{zz})=2i(M_{y}-M_{z})$**, the third of the three, and the three together are the whole diagonal content of the spatial block.
 
 **The star.** $\star A_{yz}=+A_{tx}$, the inverse of the assignment on the red–green plane.
+
+**Where the colour word sits.** $g\bar b$ and $b\bar g$, with **red the row the array does not touch**.
 
 ### $g_{7}$, the green–blue plane: $iS_{yz}$, the complex rotation
 
@@ -261,7 +285,9 @@ $$
 
 **The exponential.** $\exp(\theta\, iS_{yz})e_y=\cos\theta\,e_y+i\sin\theta\,e_z$, complex and not orthogonal.
 
-**The mass.** $g_{7}$, the second cell of the green–blue plane, massless. **The six off-diagonal arrays $g_{1},g_{2},g_{4},g_{5},g_{6},g_{7}$ plus the two diagonal directions of the colour block are the eight**: the grid's $3\times3$ block has nine cells, the trace is removed, and eight derived directions remain. **Below $M_C$ those eight are the connections of an unbroken $\mathrm{SU}(3)$ and the word for them is gluon; above it the eight is a set of directions and no group is local.**
+**The mass.** $g_{7}$, the second cell of the green–blue plane, massless. **The six off-diagonal arrays $g_{1},g_{2},g_{4},g_{5},g_{6},g_{7}$ plus the two diagonal directions of the spatial block are the eight**: the grid's $3\times3$ block has nine cells, the trace is removed, and eight derived directions remain. **Below $M_C$ those eight are the connections of an unbroken $\mathrm{SU}(3)$ and the word for them is gluon; above it the eight is a set of directions and no group is local.**
+
+**Where the colour word sits.** The same address as $g_{6}$, the second phase; **with it the block's three addresses are complete**.
 
 ### $iM_{x}$: $i(E_{xx}-E_{tt})$, the frame direction that weights the red line against the lepton line
 
@@ -279,6 +305,8 @@ giving $0.9211-0.3894i$ on the lepton line and $0.9211+0.3894i$ on red at $\thet
 
 **The name, and the mass.** $iM_{x}$ is one of the three diagonal arrays of the fifteen, and **it is the direction the red leptoquark plane closes on**: $[A_{tx},iS_{tx}]=-2iM_{x}$, so that plane's two arrays and this one diagonal close into an $\mathfrak{su}(2)$. **It is massless at every step**, $[iM_{x},D]=0$ being the commutator of two diagonals, and the mass form vanishes for the same reason. **It multiplies the corner by $-1$ and the red line by $+1$**, and that single difference is the whole content of the array.
 
+**Where the colour word sits.** The array weighs the red row against the lepton row: **the letter names a row**, and $iM_{x}$ is a difference of two rows and not a property of red.
+
 ### $iM_{y}$: $i(E_{yy}-E_{tt})$, the same weighting on the green line
 
 $$
@@ -290,6 +318,8 @@ $$
 **The exponential.** $\exp(\theta\,iM_{y})=\operatorname{diag}\bigl(e^{-i\theta},\,1,\,e^{i\theta},\,1\bigr)$.
 
 **The name, and the mass.** Massless, and the direction the green leptoquark plane closes on, $[A_{ty},iS_{ty}]=-2iM_{y}$.
+
+**Where the colour word sits.** The same difference on the green row, and the letter again names a row.
 
 ### $iM_{z}$: $i(E_{zz}-E_{tt})$, the third of the frame
 
@@ -303,7 +333,9 @@ $$
 
 **The name, and the mass.** Massless, and the direction the blue leptoquark plane closes on, $[A_{tz},iS_{tz}]=-2iM_{z}$.
 
-**The three together, and the four facts the frame hands over.** **They are one orbit of the permutation of $x,y,z$**, and no member is fixed by it; **they are not mutually orthogonal**, $\operatorname{tr}(M_{j}M_{k})=2\delta_{jk}+(1-\delta_{jk})$, so a canonical kinetic term needs one integer rotation, to $A_{j}=\sum_{k}M_{k}-2M_{j}$ with $\operatorname{tr}(A_{j}A_{k})=4\delta_{jk}$; **their sum is the vacuum direction**, $D=M_{x}+M_{y}+M_{z}$, which is the only diagonal combination the permutation leaves fixed and the array $B'$ is built from; and **the sum is orthogonal to the two directions of the colour block's Cartan**, because $\operatorname{tr}(DM_{j})=4$ for all three $j$ and therefore $\operatorname{tr}\bigl(D(M_{j}-M_{k})\bigr)=0$. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves that arithmetic and the impossibility of the same construction in $\mathfrak{su}(3)$; [The Commutation Table](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html) has the brackets.
+**The three together, and the four facts the frame hands over.** **They are one orbit of the permutation of $x,y,z$**, and no member is fixed by it; **they are not mutually orthogonal**, $\operatorname{tr}(M_{j}M_{k})=2\delta_{jk}+(1-\delta_{jk})$, so a canonical kinetic term needs one integer rotation, to $A_{j}=\sum_{k}M_{k}-2M_{j}$ with $\operatorname{tr}(A_{j}A_{k})=4\delta_{jk}$; **their sum is the vacuum direction**, $D=M_{x}+M_{y}+M_{z}$, which is the only diagonal combination the permutation leaves fixed and the array $B'$ is built from; and **the sum is orthogonal to the two directions of the spatial block's Cartan**, because $\operatorname{tr}(DM_{j})=4$ for all three $j$ and therefore $\operatorname{tr}\bigl(D(M_{j}-M_{k})\bigr)=0$. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves that arithmetic and the impossibility of the same construction in $\mathfrak{su}(3)$; [The Commutation Table](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html) has the brackets.
+
+**Where the colour word sits.** The same difference on the blue row; **the three frame directions are the three rows, each weighed once against the lepton row**.
 
 
 ## The Checks
@@ -322,7 +354,7 @@ Nineteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet 
 | the frame phase, red | $\exp(0.4\,iM_{x})$ | $e^{-0.4i}$, $e^{0.4i}$, $1$, $1$ |
 | the frame phase, green | $\exp(0.4\,iM_{y})$ | $e^{-0.4i}$, $1$, $e^{0.4i}$, $1$ |
 | the frame phase, blue | $\exp(0.4\,iM_{z})$ | $e^{-0.4i}$, $1$, $1$, $e^{0.4i}$ |
-| the colour rotation | $\exp(0.4A_{xy})e_x$ | $(0,0.9211,-0.3894,0)$ |
+| the group rotation | $\exp(0.4A_{xy})e_x$ | $(0,0.9211,-0.3894,0)$ |
 | the star on the real planes | $\star A_{tx}$, $\star A_{ty}$, $\star A_{tz}$ | $+A_{yz}$, $-A_{xz}$, $+A_{xy}$ |
 | the plane bracket | $[A_{jk},iS_{jk}]$ against $2i(E_{jj}-E_{kk})$ | $6/6$ exact |
 | the leptoquark bracket in the frame | $[A_{tj},iS_{tj}]$ against $-2iM_{j}$ | $3/3$ exact |
@@ -334,7 +366,7 @@ Nineteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet 
 
 ## Summary
 
-**Fifteen arrays, one per boson, and the index at the top is the whole table of contents.** One corner direction that is the sum of three, six leptoquarks, six colour planes and three frame directions.
+**Fifteen arrays, one per boson, and the index at the top is the whole table of contents.** One corner direction that is the sum of three, six leptoquarks, six spatial planes and three frame directions.
 
 **Two behaviours and not fifteen.** A real plane array has a real orthogonal exponential and turns its plane; an imaginary one has a unitary exponential and phases its lines. **Only the six real planes rotate the quartet**, and the two halves of the article follow that split.
 
@@ -342,7 +374,7 @@ Nineteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet 
 
 **One mass, and it is zero.** $0$ on all fifteen above $M_C$, and on the corner that is their sum, because there is no condensate to break the degeneracy. **Below $M_C$ six take $32v^{2}$ and nine take $0$**, and the $32$ is twice the square of the lepton-minus-spatial difference of $D$; **that column, with the $16v^{2}$ that is not a mass, is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)'s.**
 
-**Every plane closes with its partner, and in the frame the closure is exact and single.** $[A_{jk},iS_{jk}]=2i(E_{jj}-E_{kk})$ holds on all six planes: in the colour block it gives $2i(M_{x}-M_{y})$, $2i(M_{x}-M_{z})$ and $2i(M_{y}-M_{z})$, and each leptoquark plane gives one frame direction with no combination, $[A_{tj},iS_{tj}]=-2iM_{j}$. **Nothing closes at the corner**, which is the sum and not a member.
+**Every plane closes with its partner, and in the frame the closure is exact and single.** $[A_{jk},iS_{jk}]=2i(E_{jj}-E_{kk})$ holds on all six planes: in the spatial block it gives $2i(M_{x}-M_{y})$, $2i(M_{x}-M_{z})$ and $2i(M_{y}-M_{z})$, and each leptoquark plane gives one frame direction with no combination, $[A_{tj},iS_{tj}]=-2iM_{j}$. **Nothing closes at the corner**, which is the sum and not a member.
 
 **The six absent matrices are absent because they are sums.** Each is a combination of two of the fifteen, so it spans nothing new above $M_C$; below $M_C$ each is half heavy and half massless, and the coherence argument is the breaking article's. **A ledger of coherences would have fifteen more rows and no more particles.**
 
@@ -361,13 +393,13 @@ Nineteen recomputations, at $\operatorname{tr}$ in the fundamental, the quartet 
 | $\star$ | the Hodge star of $\mathbb{R}^4$ with the Euclidean metric, $\star^2=+1$ |
 | $m^{2}(X)$ | $\operatorname{tr}([X,Ξ_0]^{\dagger}[X,Ξ_0])$, the diagonal entry of the mass matrix |
 | $X^{a}$, $\bar X^{a}$ | the two leptoquark amplitudes of colour $a$ |
-| $g_{1}\dots g_{7}$ | the six colour-plane arrays, named by the cell they occupy: gluons below $M_C$ and directions above it |
-| $T^{c}_{3}$, $T^{c}_{8}$ | the broken phase's names for the colour block's two Cartan directions |
+| $g_{1}\dots g_{7}$ | the six spatial-plane arrays, named by the cell they occupy: gluons below $M_C$ and directions above it |
+| $T^{c}_{3}$, $T^{c}_{8}$ | the broken phase's names for the spatial block's two Cartan directions |
 | $v$ | the $\mathrm{SU}(4)$-breaking value, the only breaking value of this model |
 
-## The Four Colours, Introduced Last
+## The Three Letters, and the Colour Word
 
-**Everything above was written with four line names and no colour word, and the colour word enters here for one reason: a reader who has seen the grid will ask what the four rows are called.** The answer is four labels, and that is the whole of what they are.
+**Everything above was written with four line names and no further argument, and the word enters here for one reason: it is the literature's word for what a letter would name, and a reader will meet it.** **This article is one of exactly three places in the corpus where it is discussed.** [Conceptual Conventions](conceptual-conventions.html) states the rule and the ground it stands on; here the letters are read on the matrices; [The Eight AXF Matrices of the Gluons in Detail](the-eight-axf-matrices-of-the-gluons-in-detail-every-matrix-every-gluon-its-entries-its-spectrum-and-its-fate.html) reads them on the octet. **Every other article uses *the strong group*, *the triplet index*, *the spatial block* or *the count*.**
 
 **The carrier and its letters.**
 
@@ -377,11 +409,11 @@ $$
 
 Four lines, four letters, one object. **$E_{ij}$ moves line $j$ into line $i$, and its label reads *line $i$ on line anti-$j$***; columns are sources and rows are targets, so the grid is the table of the array's entries.
 
-**A letter is a coordinate of the table.** The table has sixteen cells, the trace removes one direction, and fifteen remain. **The letters name rows and columns. They are not eigenvalues, not conserved numbers, and not observables.**
+**A letter is a coordinate of the table, and a colour is what the word would name if a letter named a property.** The table has sixteen cells, the trace removes one direction, and fifteen remain. **The letters name rows and columns. They are not eigenvalues, not conserved numbers, and not observables**, and each of the sixteen remarks above says which two rows of that array the letters address.
 
-**Why four.** Because the carrier is four-dimensional and the group is one factor acting on it. **Three-colour language belongs to $\mathrm{SU}(3)$, and no $\mathrm{SU}(3)$ is a factor of the theory above $M_C$**: a subalgebra of a simple group is not a factor, and nothing makes it local there. **The count of colour letters is three because one of the four lines is the lepton line**, not because a colour group has three colours. That is declaration (A), and it is the model's one input about which line is which.
+**Why four.** Because the carrier is four-dimensional and the group is one factor acting on it. **Three-line language belongs to the strong phase, and no $\mathrm{SU}(3)$ is a factor of the theory above $M_C$**: a subalgebra of a simple group is not a factor, and nothing makes it local there. **The count of spatial letters is three because one of the four lines is the lepton line**, not because a group carries three members. That is declaration (A), and it is the model's one input about which line is which.
 
-**Three tests, and a colour word fails all three.**
+**Three tests, and a charge fails all three.**
 
 | test | what it asks | result |
 | --- | --- | --- |
@@ -389,13 +421,15 @@ Four lines, four letters, one object. **$E_{ij}$ moves line $j$ into line $i$, a
 | basis rotation | is the label invariant under a local transformation? | no — the components rotate among the fifteen |
 | degeneracy | does anything distinguish one label above $M_C$? | no — all fifteen are massless there |
 
-**So the phrase "four colours" is one to avoid.** It reads as a group with four colours. **The correct sentence is: fifteen directions of one simple group, of which twelve move a line and three weight the lines.** *The fourth colour* is a different phrase with a different status: it is shorthand for the one declaration of the model, and it is written with the word *declaration* beside it or not at all.
+**So no charge follows from the letters.** To read one is to hear a group with four members where there is one simple group on four lines. **The correct sentence is: fifteen directions of one simple group, of which twelve move a line and three weight the lines.** *The fourth line* is a shorter phrase with a narrower status: it is shorthand for the one declaration of the model, and it is written with the word *declaration* beside it or not at all.
 
-**What the letters buy, and it is real.** They make the grid readable in one glance: **the six leptoquarks are the cells that touch the lepton row, the six colour planes are the cells of the $3\times3$ block, and the three frame directions weight one colour line against the lepton line.** That is the picture of $15=6+6+3$, and it is the fastest way to see which array does what. **A picture is not a charge.**
+**The empirical ground, and it is the strongest of the three.** **A colour is never observed in nature.** Confinement, imported as standard physics, keeps every non-singlet state out of the asymptotic spectrum: no isolated quark and no isolated gluon is observed, and every particle that comes back from a detector is a singlet. **So no measurement returns a colour**: the measurements fix the count, three, and the dimension of the group below $M_C$, eight, and nothing else. **The word is a name for an address, and an address is not a property that a detector can report.** [Confinement and the Loss of Partonic Information](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) states the same fact as the reason the asymptotic algebra is the singlet projection.
 
-**Below $M_C$ the letters acquire a group, and still not a charge.** The first breaking leaves $\mathrm{SU}(3)\times\mathrm U(1)$ local, so the eight directions of the $3\times3$ block are the connections of a real factor, and *gluon* is a fair name for them there. **Even there $r\bar g$ is a coordinate on the adjoint of $\mathrm{SU}(3)$: what is physical is the group, its dimension eight, its rank two, the exclusion of the singlet, and the rates computed from them.** [The Colours in $\mathrm{SU}(4)$](the-colours-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html) and [The Colours in $\mathrm{SU}(3)$](the-colours-in-su3-a-coordinate-label-on-the-eight-not-a-charge.html) carry that argument to the end.
+**What the letters buy, and it is real.** They make the grid readable in one glance: **the six leptoquarks are the cells that touch the lepton row, the six spatial planes are the cells of the $3\times3$ block, and the three frame directions weight one spatial line against the lepton line.** That is the picture of $15=6+6+3$, and it is the fastest way to see which array does what. **A picture is not a charge.**
 
-**The ledger of the word.**
+**Below $M_C$ the letters acquire a group, and still not a charge.** The first breaking leaves $\mathrm{SU}(3)\times\mathrm U(1)$ local, so the eight directions of the $3\times3$ block are the connections of a real factor, and *gluon* is a fair name for them there. **Even there a letter pair is a coordinate on the adjoint of $\mathrm{SU}(3)$: what is physical is the group, its dimension eight, its rank two, the exclusion of the singlet, and the rates computed from them.** [The Eight AXF Matrices of the Gluons in Detail](the-eight-axf-matrices-of-the-gluons-in-detail-every-matrix-every-gluon-its-entries-its-spectrum-and-its-fate.html) prints the eight one at a time; [The Three Lines in $\mathrm{SU}(3)$](the-three-lines-in-su3-a-coordinate-label-on-the-eight-not-a-charge.html) carries the argument to the end.
+
+**The ledger of the letters.**
 
 | object | status |
 | --- | --- |
@@ -404,10 +438,10 @@ Four lines, four letters, one object. **$E_{ij}$ moves line $j$ into line $i$, a
 | a cell label $i\bar j$ | a coordinate |
 | the twelve-and-three split | invariant: twelve roots, rank three |
 | the eight below $M_C$ | the adjoint of a group factor |
-| a colour charge | does not exist |
-| the phrase "four colours" | a misnomer for four lines |
+| a colour as a property | never observed, and not claimed |
+| the phrase "four colours" | a misnomer: four lines of one multiplet, not four group members |
 
-**One sentence to carry away.** **A colour is a coordinate on a table, and a coordinate is bookkeeping; what survives a relabelling of the four lines is physics.** [Conceptual Conventions](conceptual-conventions.html) lists the word among the unpreferred ones for exactly this reason, and [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves the one place where the fourth line does real work: it is what lets three diagonal directions be symmetric in the three colour lines.
+**One sentence to carry away.** **A colour is a coordinate on a table, a coordinate is bookkeeping, and nothing of the kind is ever observed in nature; what survives a relabelling of the four lines is physics.** [Conceptual Conventions](conceptual-conventions.html) states the rule that admits the word here and in two other articles, and [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves the one place where the fourth line does real work: it is what lets three diagonal directions be symmetric in the three spatial lines.
 
 ## Further Reading
 
@@ -420,6 +454,6 @@ Four lines, four letters, one object. **$E_{ij}$ moves line $j$ into line $i$, a
 - [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html), for the charged block and the mixing the two weak triples undergo.
 - [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), for the grid that names the cells and the ledger.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), which joins this article's fifteen subsections to the classification's cells in one ledger, names every array printed here, and reads the ledger three ways.
-- [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html), which reads the corner entry of $iD$ as the quark–lepton relation: $-3+1+1+1=0$, and where *the fourth colour* is read as the declaration it is.
-- [The Colours in $\mathrm{SU}(4)$: A Coordinate Label on the Fifteen, Not a Charge](the-colours-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html), the argument behind the last section, and [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html), for the frame printed in the diagonal sections.
+- [Charge Quantisation from the Fourth Line](charge-quantisation-from-the-fourth-line-one-trace-one-third.html), which reads the corner entry of $iD$ as the quark–lepton relation: $-3+1+1+1=0$, and where *the fourth line* is read as the declaration it is.
+- [The Colours in $\mathrm{SU}(4)$: A Coordinate Label on the Fifteen, Not a Charge](the-three-lines-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html), the argument behind the last section, and [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html), for the frame printed in the diagonal sections.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) and [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$](quantum-chromodynamics-as-the-residual-of-su4.html), for the two sectors the third part supplies.

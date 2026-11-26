@@ -21,7 +21,7 @@ $$
 
 **The quartet index $i$ is slow and the copy index $\alpha$ is fast**, and every matrix below is printed in that order. **The sixteen are two quartets and two antiquartets**: eight fields in $\mathbf 4$ and eight in $\bar{\mathbf4}$.
 
-**The copy index is the weak-doublet slot, and the model does not representative it.** $\alpha$ distinguishes the two members of a cell — for the lepton line the neutrino from the electron, for a colour line the up from the down — and **no generator of the fifteen carries an $\alpha$**: every array is $\mathbb 1$ on it. The consequence is the whole of §*What the Algebra Forbids*.
+**The copy index is the weak-doublet slot, and the model does not representative it.** $\alpha$ distinguishes the two members of a cell — for the lepton line the neutrino from the electron, for a spatial line the up from the down — and **no generator of the fifteen carries an $\alpha$**: every array is $\mathbb 1$ on it. The consequence is the whole of §*What the Algebra Forbids*.
 
 **The convention of the whole article.**
 
@@ -60,14 +60,14 @@ with $\tau_{3}=\pm\tfrac12$ on the copy index. **$B-L$ is a generator and $Q$ is
 
 | family | count | matrix | what an entry does | boson's $B-L$ |
 | --- | --- | --- | --- | --- |
-| colour planes | $6$ | $A_{ab}$, $iS_{ab}$, $a,b\in\{x,y,z\}$ | $a\to b$ inside the triple | $0$ |
-| colour Cartan | $2$ | $d_{2}$, $d_{3}$ | phases inside the triple | $0$ |
+| spatial planes | $6$ | $A_{ab}$, $iS_{ab}$, $a,b\in\{x,y,z\}$ | $a\to b$ inside the triple | $0$ |
+| $\mathfrak{su}(3)$ Cartan | $2$ | $d_{2}$, $d_{3}$ | phases inside the triple | $0$ |
 | corner | $1$ | $iD$ | phases, $-3i$ on $t$ and $+i$ on each $a$; no entry moves a line | $0$ |
 | mixed planes | $6$ | $A_{ta}$, $iS_{ta}$ | $t\leftrightarrow a$ | $\pm\tfrac43$ |
 
 **The last column is the charge the *boson* carries and not the charge of a field.** An entry that joins $t$ to $a$ moves a state from $B-L=-1$ to $B-L=+\tfrac13$, so the boson that carries the entry must take $-\tfrac43$ with it: **$-1=\tfrac13-\tfrac43$, and the vertex conserves $B-L$ exactly.**
 
-**The families as $4\times4$ blocks.** The colour planes and the colour Cartan are block-diagonal, with the $3\times3$ colour block acting and the $t$ entry untouched:
+**The families as $4\times4$ blocks.** The spatial planes and the $\mathfrak{su}(3)$ Cartan are block-diagonal, with the $3\times3$ spatial block acting and the $t$ entry untouched:
 
 $$
 A_{xy}=\begin{pmatrix}0&0&0&0\\0&0&1&0\\0&-1&0&0\\0&0&0&0\end{pmatrix},
@@ -107,11 +107,11 @@ $$
 
 | class | count | action on $e_{t}$ | consequence |
 | --- | --- | --- | --- |
-| colour planes, and the two differences of frame directions that cancel the lepton entry | $8$ | $0$ | no coupling of a colour direction to a lepton |
+| spatial planes, and the two differences of frame directions that cancel the lepton entry | $8$ | $0$ | no coupling of a adjoint direction to a lepton |
 | the corner direction $iD$, the sum of the three frame arrays | $1$ | $-3i\,e_{t}$ | the lepton's $B-L$, and no change of line |
-| mixed planes $A_{ta}$, $iS_{ta}$ | $6$ | into the colour triple | the leptoquarks, and the only change of line |
+| mixed planes $A_{ta}$, $iS_{ta}$ | $6$ | into the three lines | the leptoquarks, and the only change of line |
 
-**The count is exhaustive and each row is a computation.** A colour plane $A_{ab}$ has its two nonzero entries in rows and columns $a,b$, both inside the triple, so its $t$ column is zero. **The corner is diagonal, so it cannot move a line, and its $t$ entry is $-3i$.** The six mixed planes have their entries in the $t$ row and the $a$ column, so each sends $e_{t}$ to a multiple of $e_{a}$ and nothing else.
+**The count is exhaustive and each row is a computation.** A spatial plane $A_{ab}$ has its two nonzero entries in rows and columns $a,b$, both inside the triple, so its $t$ column is zero. **The corner is diagonal, so it cannot move a line, and its $t$ entry is $-3i$.** The six mixed planes have their entries in the $t$ row and the $a$ column, so each sends $e_{t}$ to a multiple of $e_{a}$ and nothing else.
 
 **The count of entries, family by family.**
 
@@ -129,9 +129,9 @@ $$
 
 **What the first row forbids is lepton flavour.** No generator has an entry joining the lepton line to itself except the diagonal weight on it, so no connection vertex can turn one lepton into another. **That is [the lepton-flavour article](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html)'s structural result**, and here it is one row of a table.
 
-**What the second row forbids is a representative origin for $Q$.** The corner gives the same phase $-3i$ to both copies in the lepton cell and the same phase $+i$ to both copies in a colour cell. **A matrix that is $\mathbb 1$ on the copy index cannot separate $\nu$ from $e$**, and the statement is exact: the two copy entries of every array are equal.
+**What the second row forbids is a representative origin for $Q$.** The corner gives the same phase $-3i$ to both copies in the lepton cell and the same phase $+i$ to both copies in a spatial cell. **A matrix that is $\mathbb 1$ on the copy index cannot separate $\nu$ from $e$**, and the statement is exact: the two copy entries of every array are equal.
 
-**What the third row allows is the whole of the model's new physics.** Six entries join the lepton line to a colour line, each carries $B-L=\mp\tfrac43$, and each conserves $B-L$ at the vertex because the boson carries it away. **Six generators, three colours and the two plane types, and that is the leptoquark sector.**
+**What the third row allows is the whole of the model's new physics.** Six entries join the lepton line to a spatial line, each carries $B-L=\mp\tfrac43$, and each conserves $B-L$ at the vertex because the boson carries it away. **Six generators, three lines and the two plane types, and that is the leptoquark sector.**
 
 ## The Charges of Every Entry
 
@@ -139,11 +139,11 @@ $$
 
 | family | entry | $\Delta(B-L)$ of the fermion | boson's $B-L$ | boson's $Q$ |
 | --- | --- | --- | --- | --- |
-| colour plane | $(\imath,\jmath)$ both colour | $0$ | $0$ | $0$ |
-| colour Cartan | diagonal | $0$ | $0$ | $0$ |
+| spatial plane | $(\imath,\jmath)$ both spatial | $0$ | $0$ | $0$ |
+| $\mathfrak{su}(3)$ Cartan | diagonal | $0$ | $0$ | $0$ |
 | corner | diagonal | $0$ | $0$ | $0$ |
-| mixed plane | $(t,a)$: colour $\to$ lepton | $\tfrac13(-3-1)=-\tfrac43$ | $+\tfrac43$ | $+\tfrac23$ |
-| mixed plane | $(a,t)$: lepton $\to$ colour | $\tfrac13(1+3)=+\tfrac43$ | $-\tfrac43$ | $-\tfrac23$ |
+| mixed plane | $(t,a)$: spatial $\to$ lepton | $\tfrac13(-3-1)=-\tfrac43$ | $+\tfrac43$ | $+\tfrac23$ |
+| mixed plane | $(a,t)$: lepton $\to$ spatial | $\tfrac13(1+3)=+\tfrac43$ | $-\tfrac43$ | $-\tfrac23$ |
 
 **The $Q$ column is half the $B-L$ column, and that is not a coincidence.** Every connection vertex is diagonal in the copy index, so $\tau_{3}$ is the same before and after: **$\Delta Q=\Delta(B-L)/2$ for the fermion, which is why the boson's $Q$ is $\mp\tfrac23$ where its $B-L$ is $\mp\tfrac43$.** The two charges agree on the sector because the sector cannot see $\tau_{3}$.
 
@@ -176,7 +176,7 @@ $$
 **Three prohibitions, and each is one line of matrix arithmetic.**
 
 1. **No generator changes the copy index.** Every array is $\mathbb 1_{2}$ on $\alpha$, so $(X\otimes\mathbb 1_{2})$ has no entry between $\alpha=1$ and $\alpha=2$. **The consequence is that no connection vertex converts a $\nu$ into an $e$ or a $u$ into a $d$**, and there is no $W$ in the model for the same reason. The copy index carries a global $\mathrm{U}(2)$ that the sector cannot see; **whether the Yukawa sector breaks it is [the Yukawa article](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html)'s question.**
-2. **No generator has two entries on the lepton line.** The corner has one, the six mixed planes have one each in the $t$ row, and the colour block has none. **So a lepton can be turned into a quark or given a phase, and not into another lepton.**
+2. **No generator has two entries on the lepton line.** The corner has one, the six mixed planes have one each in the $t$ row, and the spatial block has none. **So a lepton can be turned into a quark or given a phase, and not into another lepton.**
 3. **No generator carries $T_{3}$.** The fifteen are $\mathbb 1$ on the copy index, so no combination of them can produce $\tau_{3}$: **$[\mathbb 1_{4}\otimes\tau_{3},X\otimes\mathbb 1_{2}]=0$ for every $X$ in the fifteen, so $\tau_{3}$ commutes with the whole algebra and is not in it.** That is the wall, and it is a commutation statement.
 
 ## What the Article Does Not Do
@@ -193,7 +193,7 @@ $$
 | entries in all | $60+60$ | $120$ |
 | quartet entries of the fifteen | $12\cdot2+3\cdot2$ | $30$ |
 | nonzero brackets | of the $105$ pairs | $80$ |
-| mixed planes | three colours, two plane types | $6$ |
+| mixed planes | three lines, two plane types | $6$ |
 | corner entries | four diagonal cells, a sum of three arrays | $4$ |
 | $B-L$ transfer, mixed plane | $-1=\tfrac13-\tfrac43$ | $-1$ |
 | $B-L$ per generation | $2(-1)+6(\tfrac13)$ | $0$ |
@@ -204,7 +204,7 @@ $$
 
 ## Summary
 
-**The fifteen act on the sixteen as $X\otimes\mathbb 1_{2}$, and the shadow they cast has $120$ nonzero entries.** Three families and a sum, one selection rule: the colour block does not see the lepton, the corner gives it a phase, and the six mixed planes move it to a colour line and carry $\mp\tfrac43$ away with them.
+**The fifteen act on the sixteen as $X\otimes\mathbb 1_{2}$, and the shadow they cast has $120$ nonzero entries.** Three families and a sum, one selection rule: the spatial block does not see the lepton, the corner gives it a phase, and the six mixed planes move it to a spatial line and carry $\mp\tfrac43$ away with them.
 
 **The copy index is where the model stops.** Every array is the identity on it, so no connection vertex can change it, and $Q$ therefore has a global half and a connection half that never meet. **That is the chiral wall, stated as a matrix fact.**
 
@@ -227,6 +227,6 @@ $$
 
 - [The Feynman Rules of the $\mathrm{SU}(4)$ Model](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The rule this article expands, and the normalisation that precedes it.
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The sixteen, the $B-L$ column, and the two copies.
-- [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). Why the corner is $-3$ and the three are $+1$.
-- [Lepton Flavour in the Four Colours Model](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The same prohibition, from the flavour side.
+- [Charge Quantisation from the Fourth Line](charge-quantisation-from-the-fourth-line-one-trace-one-third.html). Why the corner is $-3$ and the three are $+1$.
+- [Lepton Flavour in the $\mathrm{SU}(4)$ Model](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The same prohibition, from the flavour side.
 - [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). The $80$ nonzero brackets this article quotes.

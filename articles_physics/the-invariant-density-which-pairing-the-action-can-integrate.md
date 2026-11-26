@@ -157,7 +157,7 @@ and the factor between the two families is $\sqrt{6}$. **A vertex read off $G_a$
 
 **So "the density on $G_a$ has the wrong sign" is true of $- \tfrac14\sum_aF_aF_a$ and false of $-\tfrac12\operatorname{tr}(F^2)$.** The repair is one of two moves: flip the printed sign in the component form, or carry the $i$ and use the Hermitian $t_a=iG_a/\sqrt{2n_a}$, which is what the rescaled basis above does. Both repairs are the same factor of $i$ that §*Reality, and Where the Sign Comes From* isolates. The same table fixes the norm and the sign because both are read from $\operatorname{tr}(G_a^{\dagger}G_b)$ — but the table fixes them for the component form, and the element form needs no repair at all.
 
-**Why the off-diagonal entries need a rotation and not a rescaling.** A norm fixes an array's length and says nothing about its angle, so two arrays can each be correctly normalised and still fail to be transverse. **The corpus's basis has exactly two such pairs**, and both pair the corner with a colour diagonal; the rotation that removes them is part of the normalisation. **The general statement: orthonormality is a condition on the Gram matrix, and a diagonal rescaling can only fix its diagonal.**
+**Why the off-diagonal entries need a rotation and not a rescaling.** A norm fixes an array's length and says nothing about its angle, so two arrays can each be correctly normalised and still fail to be transverse. **The corpus's basis has exactly two such pairs**, and both pair the corner with a spatial diagonal; the rotation that removes them is part of the normalisation. **The general statement: orthonormality is a condition on the Gram matrix, and a diagonal rescaling can only fix its diagonal.**
 
 ## When the Local Group Acts on the Left
 

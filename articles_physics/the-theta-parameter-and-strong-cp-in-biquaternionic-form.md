@@ -215,7 +215,7 @@ The field content is carried by the gradient and by the chirality subscript: the
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate |
 | $\Box_\Phi$ | The d'Alembertian of the same article, the quaternionic norm of the gradient, in the material reading; scalar |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field, an element of $\mathbb B$, and its two parts: $L$ is the value $-1$, $R$ the value $+1$ |
-| $a,b,c$ | Colour indices, written low; every contraction over them is an explicit sum. The speed of light is also $c$ and is a scalar, not an index. |
+| $a,b,c$ | Indices, written low; every contraction over them is an explicit sum. The speed of light is also $c$ and is a scalar, not an index. |
 | $f_{abc}$ | Structure constants of the group factor, written low |
 
 ## Further Reading

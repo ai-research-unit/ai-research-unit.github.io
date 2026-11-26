@@ -39,7 +39,7 @@
 
 **No native interaction.** The quartic vertex is imported. The corpus has the interacting scalar action and not its $S$-matrix, and the reason is the same one.
 
-**No derivation of the Standard Model.** The algebra's compact group is $\mathrm{U}(2)$; colour, weak isospin and the nineteen parameters are outside it.
+**No derivation of the Standard Model.** The algebra's compact group is $\mathrm{U}(2)$; the strong group, weak isospin and the nineteen parameters are outside it.
 
 ## Summary
 

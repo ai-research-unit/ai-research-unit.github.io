@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Three of the fifteen generators are diagonal. Up to this point they have been written as one trace direction and two differences, $iD$, $d_2$ and $d_3$. That choice singles out one colour line and then chains the other two, so it is not symmetric in the three vector units.
+Three of the fifteen generators are diagonal. Up to this point they have been written as one trace direction and two differences, $iD$, $d_2$ and $d_3$. That choice singles out one spatial line and then chains the other two, so it is not symmetric in the three vector units.
 
 A different triple is available above $M_C$, and it is symmetric. It is written
 
@@ -28,9 +28,9 @@ The symmetry that is lost is a symmetry of the frame, not of the representation.
 
 ## The Permutation Is Spatial
 
-The fifteen generators are indexed by the six unordered pairs of four lines, $(\epsilon_t,\epsilon_x,\epsilon_y,\epsilon_z)$. One of the four lines is the scalar direction, $\epsilon_t$, and three are the vector directions of the algebra, $\epsilon_x,\epsilon_y,\epsilon_z$, which the corpus elsewhere calls the colours.
+The fifteen generators are indexed by the six unordered pairs of four lines, $(\epsilon_t,\epsilon_x,\epsilon_y,\epsilon_z)$. One of the four lines is the scalar direction, $\epsilon_t$, and three are the vector directions of the algebra, $\epsilon_x,\epsilon_y,\epsilon_z$, which the corpus elsewhere calls the three spatial directions.
 
-The group $S_3$ acts by permuting the three vector labels and fixing $\epsilon_t$. On the arrays it acts by conjugation with the corresponding permutation matrix, and the twelve off-diagonal arrays are permuted among themselves. On the diagonal it acts on the three colour entries and leaves the $t$ entry alone.
+The group $S_3$ acts by permuting the three vector labels and fixing $\epsilon_t$. On the arrays it acts by conjugation with the corresponding permutation matrix, and the twelve off-diagonal arrays are permuted among themselves. On the diagonal it acts on the three spatial entries and leaves the $t$ entry alone.
 
 The reason $\epsilon_t$ sits outside the permutation is not aesthetic. It is structural, and Section *What Makes the Triple Traceless* shows that the symmetric frame is possible in $\mathfrak{su}(4)$ and not in $\mathfrak{su}(3)$ for exactly this reason.
 
@@ -72,7 +72,7 @@ Verified exactly. The coefficient is $+1$, not $-\tfrac13$: the sum of the frame
 
 ## What Makes the Triple Traceless
 
-Look at one element, $M_x=\operatorname{diag}(-1,1,0,0)$. Its three colour entries are $+1$, $0$ and $0$. The entry on $\epsilon_t$ is $-1$. Nothing in the colour block forces the total to vanish; the $-1$ on the fourth line does.
+Look at one element, $M_x=\operatorname{diag}(-1,1,0,0)$. Its three spatial entries are $+1$, $0$ and $0$. The entry on $\epsilon_t$ is $-1$. Nothing in the spatial block forces the total to vanish; the $-1$ on the fourth line does.
 
 This is the whole mechanism, and it is easiest to see by removing the fourth line. In $\mathfrak{su}(3)$ the analogous object is the democratic triple
 
@@ -110,7 +110,7 @@ $$
 A_x=(-1,-1,1,1),\qquad A_y=(-1,1,-1,1),\qquad A_z=(-1,1,1,-1),
 $$
 
-which is the three colour words $W_{jj}=\mathbb 1-2E_{tt}-2E_{jj}$ already used in the corpus. With $v_t=3\beta$ and $\beta=1$,
+which is the three spatial words $W_{jj}=\mathbb 1-2E_{tt}-2E_{jj}$ already used in the corpus. With $v_t=3\beta$ and $\beta=1$,
 
 $$
 (3,-5,1,1),\qquad (3,1,-5,1),\qquad (3,1,1,-5),
@@ -213,17 +213,17 @@ The statements that follow from the two sections above are narrower than the phr
 
 The adjoint representation is not broken by the permutation. $\mathbf 8=\mathbf 1\oplus\mathbf 1'\oplus 3\cdot\mathbf 2$ is a decomposition into genuine submodules, and the relabelling of lines is a symmetry of the algebra throughout. Nothing forbids it and nothing removes it.
 
-The frame is what changes, and it changes in two steps. Above $M_C$ the frame is $M$, symmetric in $x,y,z$, and the permutation acts on it without a fixed element: no member names the lepton line. Below $M_C$ the vacuum is the direction $D$, which lies on the invariant line, so it is fixed by the whole permutation. The frame adapted to the broken phase is $\{D,T^c_3,T^c_8\}$, symmetric only under the transposition of two colour lines, that is under $S_2$. The passage from $S_3$ to $S_2$ is therefore the frame's motion, and it is the content of the breaking in the diagonal sector.
+The frame is what changes, and it changes in two steps. Above $M_C$ the frame is $M$, symmetric in $x,y,z$, and the permutation acts on it without a fixed element: no member names the lepton line. Below $M_C$ the vacuum is the direction $D$, which lies on the invariant line, so it is fixed by the whole permutation. The frame adapted to the broken phase is $\{D,T^c_3,T^c_8\}$, symmetric only under the transposition of two spatial lines, that is under $S_2$. The passage from $S_3$ to $S_2$ is therefore the frame's motion, and it is the content of the breaking in the diagonal sector.
 
 No Goldstone boson follows. $S_3$ is not gauged, so its loss removes no continuous symmetry and produces no massless mode. The eleven massless generators of the broken phase come from $\operatorname{ad}(D)$ and its kernel, not from this discussion.
 
-The eight cannot repeat the construction because a symmetric frame needs one line outside the permutation, and $\mathfrak{su}(3)$ has no fourth line. This is why the symmetric frame is a property of the four-line theory and not of its three-colour part.
+The eight cannot repeat the construction because a symmetric frame needs one line outside the permutation, and $\mathfrak{su}(3)$ has no fourth line. This is why the symmetric frame is a property of the four-line theory and not of its three-spatial part.
 
 ## The Twelve and Their Recombination
 
 The diagonal triple is symmetric with no recombination. The twelve off-diagonal arrays are not, and the reason is a sign.
 
-Write $A_{bc}=E_{bc}-E_{cb}$ for a colour pair. Under the transposition of $b$ and $c$ it maps to $-A_{bc}$. Verified by conjugation:
+Write $A_{bc}=E_{bc}-E_{cb}$ for a pair of indices. Under the transposition of $b$ and $c$ it maps to $-A_{bc}$. Verified by conjugation:
 
 $$
 \text{swap}(x,y):\quad A_{xy}\longmapsto-A_{xy}.
@@ -338,8 +338,8 @@ The cost of the choice is one rotation: the frame's three directions are not ort
 - `construction-of-the-axf-matrices-of-the-fifteen-generators.md`
 - `the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.md`
 - `the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.md`
-- `the-colours-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.md`
+- `the-three-lines-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.md`
 - `the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.md`
-- `charge-quantisation-from-the-fourth-colour-one-trace-one-third.md`
+- `charge-quantisation-from-the-fourth-line-one-trace-one-third.md`
 - `the-lagrangian-and-the-primordial-force.md`
 - `classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.md`

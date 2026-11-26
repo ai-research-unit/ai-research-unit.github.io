@@ -314,7 +314,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact algebra inside $\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ | Lie-algebra decomposition of the material sector |
 | $T_a = \tfrac12 e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ |
-| $a,b,c$ | colour indices of the algebra, written low |
+| $a,b,c$ | indices of the algebra, written low |
 | $\tilde Q(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde Q^{-1}=\bar{\tilde Q}=\tilde Q^\dagger$ |
 | $\mathcal{A}_{\imath} = \sum_a\mathcal{A}_{\imath a} e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_{\imath}\mathcal{A}_{\imath} e_{\imath}$ |
 | $\kappa =\frac{2\pi ϙ}{h}$ | Coupling |

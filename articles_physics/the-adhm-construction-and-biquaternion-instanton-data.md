@@ -193,7 +193,7 @@ Counting data, constraints and redundancy gives $\dim_{\mathbb R}\mathcal M_{\im
 | $\mathcal{A}_{\mathrm{ADHM}}(x)$ | ADHM linear operator; kernel gives the connection |
 | $\mathcal A_{\imath}=\bar v\,\partial/\partial x_{\imath} v$ | Reconstruction of the self-dual connection |
 | $\varsigma_{\mathrm{thf},\imath\jmath a}$ | Self-dual 't Hooft symbols |
-| $a$ | colour index of the instanton connection, written low |
+| $a$ | index of the instanton connection, written low |
 | $\rho$ | Instanton scale; the $k=1$ datum |
 | $T(R)$, defining module | Dynkin index $\tfrac12$; the two-dimensional simple module of $\mathbb B$ |
 

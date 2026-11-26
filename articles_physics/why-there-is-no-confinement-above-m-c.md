@@ -74,7 +74,7 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 **Three statements, and each is a requirement rather than a description.**
 
 - *A string tension.* Confinement is the statement that the potential between two static charges rises linearly, $\sigma r$, with $\sigma$ of order $\Lambda^{2}$. **That needs $\Lambda$ inside the phase**, and here $\Lambda$ would be $1.8\ \mathrm{GeV}$.
-- *A spectrum of bound states.* Glueballs and colour-singlet composites need the theory to exist at the scale where they form. **At $1.8\ \mathrm{GeV}$ the relevant theory is the Standard Model's strong sector**, whose own bound states are the hadrons.
+- *A spectrum of bound states.* Glueballs and singlet composites need the theory to exist at the scale where they form. **At $1.8\ \mathrm{GeV}$ the relevant theory is the Standard Model's strong sector**, whose own bound states are the hadrons.
 - *A phase transition, or none.* QCD confines without a transition; the primordial theory would have to confine across one, and it does not reach the scale.
 
 **What replaces confinement above $M_C$ is a weakly coupled plasma of the model's own content.** Fifteen massless vectors, thirty-two fermion states, sixteen scalars, all perturbative, with $\alpha_4/\pi=0.018$ at the transition. **The tree-level rates of the block are legitimate for exactly this reason**, and [The Primordial Coupling](the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html) supplies the number.

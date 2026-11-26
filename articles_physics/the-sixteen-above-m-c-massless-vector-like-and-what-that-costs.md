@@ -28,7 +28,7 @@ $$
 
 **The phase.** Above $M_C$ the scalar's expectation value vanishes, $\langleΞ\rangle=0$, so no Yukawa vertex can dress a fermion line and no invariant mass is generated dynamically. **The phase is defined by that vanishing and by nothing else.**
 
-**The indices.** All low, all sums weighted, as everywhere in the series. **The copy index $i$ is a label and not a frame slot**: it counts two and it never contracts with a spacetime index. **It is not a spinor index, not a colour index and not a generation index**: it doubles the content *within* one generation, and the number of generations is a separate input the corpus does not derive.
+**The indices.** All low, all sums weighted, as everywhere in the series. **The copy index $i$ is a label and not a frame slot**: it counts two and it never contracts with a spacetime index. **It is not a spinor index, not a index and not a generation index**: it doubles the content *within* one generation, and the number of generations is a separate input the corpus does not derive.
 
 ## What the Phase Asserts
 
@@ -192,8 +192,8 @@ Above $M_C$ the sixteen are massless, vector-like and parity-symmetric, and the 
 ## Further Reading
 
 - [Classification of the Fermions in the $\mathrm{SU}(4)$ Model](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The count, the two octets, the $B-L$ assignment and the conjugation as a permutation.
-- [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The declaration of vector-likeness and the anomaly count that this article reads as a phase statement.
-- [The Chiral Wall, Which Is Now a Theorem](the-su4-model-four-colours-fifteen-generators-one-declaration.html). §*The Chiral Wall* of the declaration article: why the model is not chiral where the symmetry acts, and where the chirality is instead.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The declaration of vector-likeness and the anomaly count that this article reads as a phase statement.
+- [The Chiral Wall, Which Is Now a Theorem](the-su4-model-four-lines-fifteen-generators-one-declaration.html). §*The Chiral Wall* of the declaration article: why the model is not chiral where the symmetry acts, and where the chirality is instead.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The transition's single postulate — the two copies acted on by two different factors — which is what turns the label into chirality.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The action these sixteen fields sit in, and the place where $m_{ij}$ would have been written.
 - [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The two-index rule $X\otimes\mathbb{1}_{2}$ that makes the copy index invisible.

@@ -73,7 +73,7 @@ $$
 \mathbf{15}\oplus\mathbf1\;\longrightarrow\;\mathbf8_0\oplus\mathbf3_{+\frac43}\oplus\bar{\mathbf3}_{-\frac43}\oplus\mathbf1_0\oplus\mathbf1_0 .
 $$
 
-**The triplet's charge is positive**, $+\tfrac43$, because moving the lepton into a colour slot raises $B-L$ by $\tfrac13-(-1)$; the antitriplet carries the minus. **Count the real components block by block, not by multiplying complex entries.**
+**The triplet's charge is positive**, $+\tfrac43$, because moving the lepton into a spatial slot raises $B-L$ by $\tfrac13-(-1)$; the antitriplet carries the minus. **Count the real components block by block, not by multiplying complex entries.**
 
 | block | where it sits | real components | eaten | survivors |
 | --- | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ $$
 
 **Six is the count of broken generators, and the two routes agree.** Fifteen generators, nine of which commute with $D$, so six are broken; and the $\mathbf3\oplus\bar{\mathbf3}$ block has exactly six real components. **The Goldstone theorem is the statement that these are the same count**, and here it can be read off the matrix.
 
-**The octet loses nothing.** The vacuum is a colour singlet, so no generator acting on the $\mathbf8_0$ block is broken, and all eight real octet components survive. **They are colour octets with $B-L=0$**, and they are heavy at $M_C$ because their mass is the condensate's scale.
+**The octet loses nothing.** The vacuum is a singlet, so no generator acting on the $\mathbf8_0$ block is broken, and all eight real octet components survive. **They are octets with $B-L=0$**, and they are heavy at $M_C$ because their mass is the condensate's scale.
 
 **And the two singlets are one radial mode and one physical scalar.** The vacuum lies along one combination of the two singlet directions, and the mode along the vacuum is the radial excitation; the combination orthogonal to it is a physical scalar. **So the ten are $8+1+1$: an octet, a singlet, and the radial mode.**
 
@@ -101,19 +101,19 @@ $$
 
 **The ten split as eight octet, one singlet, one radial.** No other scalar exists in the content at this scale, and any count that reports a different total has doubled an index that no generator acts on.
 
-**The doublet is a different field.** The electroweak doublet $H$ that the weak sector uses is colour-blind, four real components, three of them eaten at $v$ and one the Higgs. **It is not part of this matrix and it is not counted here**; it is counted in [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html).
+**The doublet is a different field.** The electroweak doublet $H$ that the weak sector uses is blind to the block, four real components, three of them eaten at $v$ and one the Higgs. **It is not part of this matrix and it is not counted here**; it is counted in [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html).
 
-**Why the doublet cannot be a component of $Ξ$.** $Ξ$ carries two colour indices and no left index, so its survivors are colour octets and colour singlets, and **a colour singlet is neutral under the left factor**. The standard Higgs mechanism needs a field that transforms under the left factor and carries hypercharge, and no component of a colour matrix does.
+**Why the doublet cannot be a component of $Ξ$.** $Ξ$ carries two indices and no left index, so its survivors are octets and singlets, and **a singlet is neutral under the left factor**. The standard Higgs mechanism needs a field that transforms under the left factor and carries hypercharge, and no component of a spatial matrix does.
 
 ## What the Sixteen Cost
 
 **The number is a liability and it is stated before the article's checks.**
 
-- *A colour octet of eight real scalars.* It survives $M_C$ and couples to two gluons through the kinetic term. **Its mass is the condensate's scale times a quartic coefficient**, so it is heavy by construction; the model cannot say why beyond that, because the only scale available is $M_C$.
-- *One extra colour singlet.* It mixes with the doublet below $v$, so the lightest neutral scalar is a mixture and not $H$ alone. **The corpus's "one doublet that waits" describes the breaking correctly and the spectrum only approximately.**
+- *A octet of eight real scalars.* It survives $M_C$ and couples to two gluons through the kinetic term. **Its mass is the condensate's scale times a quartic coefficient**, so it is heavy by construction; the model cannot say why beyond that, because the only scale available is $M_C$.
+- *One extra singlet.* It mixes with the doublet below $v$, so the lightest neutral scalar is a mixture and not $H$ alone. **The corpus's "one doublet that waits" describes the breaking correctly and the spectrum only approximately.**
 - *Proton decay.* The dangerous block is the $\mathbf3\oplus\bar{\mathbf3}$, and it is eaten at $M_C$. **The octet adds loop-level channels**, and none is computed here.
 
-**What a smaller sector would need.** A colour-singlet scalar would decouple from colour entirely and could form no Yukawa operator for these fermions. **The sixteen is the price of the mass operator**, and it is paid here rather than in a later article.
+**What a smaller sector would need.** A singlet scalar would decouple from the strong sector entirely and could form no Yukawa operator for these fermions. **The sixteen is the price of the mass operator**, and it is paid here rather than in a later article.
 
 ## The Checks
 
@@ -165,5 +165,5 @@ A count of components is not a count of particles. Sixteen real components are t
 
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The six, named, and the masses they give.
 - [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html). The potential these sixteen components sit in.
-- [The Scalar's Two Indices](the-scalars-two-colour-indices-and-the-count-sixteen.html). The same count from the representation side.
+- [The Scalar's Two Indices](the-scalars-two-indices-and-the-count-sixteen.html). The same count from the representation side.
 - [The Primordial Coupling](the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html). The $b_0$ that needs $N_s=16$.

@@ -2,14 +2,14 @@
 
 ## Introduction
 
-**No connection vertex changes a lepton's line, and the proof is three matrix statements.** The fifteen act on the sixteen as $X\otimes\mathbb 1_{2}$; the lepton is the temporal line $\mathbb C e_{t}$; and every array either annihilates $e_{t}$, multiplies it by a phase, or sends it into the colour triple. **None sends it to itself with a different label, and none sends it to a different lepton.**
+**No connection vertex changes a lepton's line, and the proof is three matrix statements.** The fifteen act on the sixteen as $X\otimes\mathbb 1_{2}$; the lepton is the temporal line $\mathbb C e_{t}$; and every array either annihilates $e_{t}$, multiplies it by a phase, or sends it into the three lines. **None sends it to itself with a different label, and none sends it to a different lepton.**
 
 **Two sentences that are easy to confuse, and the article keeps them apart.**
 
 - **In this model, nothing turns the lepton.** The statement is exact, it is a computation on the fifteen, and it does not depend on any coupling.
 - **Below $M_C$, a matrix decides.** The channel $K_L\to\mu e$ needs a vertex that carries a generation index, and this model has no generation index at all: **it has one generation, counted twice.**
 
-**What the model does fix.** The six leptoquarks, their charges, their mass, the equality of the two chiralities' coefficients, the colour factor of one, the $\Delta F=0$ contact term that certainly exists, the selection rule that picks $K_L$ over $K_S$, and the fourth-power shape of the rate. **What it does not fix is whether a lepton can change generation, because it has no generation to change.**
+**What the model does fix.** The six leptoquarks, their charges, their mass, the equality of the two chiralities' coefficients, the group factor of one, the $\Delta F=0$ contact term that certainly exists, the selection rule that picks $K_L$ over $K_S$, and the fourth-power shape of the rate. **What it does not fix is whether a lepton can change generation, because it has no generation to change.**
 
 **Why the distinction matters.** The bound $M_X\gtrsim3.7\times10^{-5}$ J is quoted in the literature as the model's strongest statement. **It is not a prediction and not a bound of this model**: it is a two-generation channel with the mixing matrix set to one, and it should be quoted as an assumption.
 
@@ -23,7 +23,7 @@ $$
 
 **One coupling, so the two chiralities come with equal coefficients**, and that equality is exact here: the quartet and the conjugate quartet are made local by the same $g_4$. **There is no $LR$ term**, because an $LR$ term would need a scalar that carries both chiralities, and $Ξ$ couples $\bar\xi\xi$ and not $\bar\xi\xi$ of the same chirality.
 
-**The colour factor is one.** The quark legs sit on one colour line, the leptoquark propagator is diagonal in colour, and there is no sum over colours to make. **A colour factor of three would need the two vertices on different colour lines**, which is a different diagram.
+**The group factor is one.** The quark legs sit on one spatial line, the leptoquark propagator is diagonal in the line index, and there is no sum over the triplet index to make. **A group factor of three would need the two vertices on different spatial lines**, which is a different diagram.
 
 **The mass of the exchanged boson is not free.** The sextet's mass is $M_X^{2}=32v^{2}$ from the adjoint mass matrix, that is $16g_4^{2}v_C^{2}$ in the physical normalisation $Ξ_0=v_CD$, so **the operator's coefficient is $g_4^{2}/(2M_X^{2})=1/(32v_C^{2})$: the coupling cancels and only the condensate survives.** A reader who wants a heavy leptoquark has to want a large $v$.
 
@@ -43,7 +43,7 @@ $$
 
 | family | on $\mathbb C e_{t}$ | on $B_V$ | can it change a lepton's line |
 | --- | --- | --- | --- |
-| colour planes, colour Cartan ($8$) | $0$ | acts as $\mathfrak{su}(3)$ | no |
+| spatial planes, $\mathfrak{su}(3)$ Cartan ($8$) | $0$ | acts as $\mathfrak{su}(3)$ | no |
 | corner $iD$ ($1$) | $-3i$ times itself | $+i$ times itself | no, a phase |
 | mixed planes ($6$) | into $B_V$ | into $\mathbb C e_{t}$ | yes, but into a quark |
 
@@ -67,7 +67,7 @@ $$
 | --- | --- |
 | no connection vertex changes a lepton's generation | exact in this model, by the table above |
 | the leptoquark operator's two chiralities have equal coefficients | exact, one coupling |
-| the colour factor is one | exact, one colour line |
+| the group factor is one | exact, one spatial line |
 | $M_X^{2}=32v^{2}$ | exact, the adjoint mass matrix |
 | whether $K_L\to\mu e$ occurs at all | **undecided: it needs a matrix this model does not have** |
 | the size of the mixing | **not computed anywhere in the corpus** |
@@ -97,7 +97,7 @@ $$
 
 **So the $K_L$ channel is the one that exists and the $K_S$ channel is suppressed by $|\epsilon_K|^{2}\sim10^{-20}$**, which is a statement about the operator's Lorentz structure and not about its coefficient.
 
-**The colour factor of one.** Two vertices on one colour line, a propagator diagonal in colour, and no sum: **the amplitude carries no $N_c$ and no $1/N_c$.**
+**The group factor of one.** Two vertices on one spatial line, a propagator diagonal in the line index, and no sum: **the amplitude carries no $N_c$ and no $1/N_c$.**
 
 **The $\Delta F=0$ contact term.** It exists whatever the mixing is, it shifts the $d$–$e$ and $s$–$\mu$ couplings by a relative $(v/M_X)^{2}=1/32$, **and it is invisible.**
 
@@ -109,10 +109,10 @@ $$
 | --- | --- | --- |
 | generators acting inside $\mathbb C e_{t}$ | entries in the $t$ row and column | $1$, the corner |
 | generators sending $e_{t}$ to $B_V$ | the six mixed planes | $6$ |
-| generators annihilating $e_{t}$ | the colour block | $8$ |
+| generators annihilating $e_{t}$ | the spatial block | $8$ |
 | copy-index-changing generators | entries joining $\alpha=1$ to $\alpha=2$ | $0$ |
 | chirality coefficients | one coupling, quartet and conjugate | equal |
-| colour factor | one line, diagonal propagator | $1$ |
+| group factor | one line, diagonal propagator | $1$ |
 | $M_X^{2}$ | adjoint mass matrix, then the physical normalisation | $32v^{2}=16g_4^{2}v_C^{2}$ |
 | $\Delta F=0$ shift | $(v/M_X)^{2}$, $v$ the array value | $1/32$ |
 | $K_L\to\mu e$ at $|U|=1$ | $g_4^{4}f_K^{2}m_\mu^{2}m_K/128\pi M_X^{4}$ | $3.5\times10^{-12}$ |
@@ -123,9 +123,9 @@ $$
 
 ## Summary
 
-**Nothing turns the lepton in this model, and the proof is a count of entries.** One generator acts inside the lepton line, six send it into the colour triple, eight annihilate it, and none joins the two copies.
+**Nothing turns the lepton in this model, and the proof is a count of entries.** One generator acts inside the lepton line, six send it into the three lines, eight annihilate it, and none joins the two copies.
 
-**The channel $K_L\to\mu e$ needs a matrix the model does not have**, because the model has one Yukawa matrix and one generation. **The bound on $M_X$ that the literature quotes is a two-generation channel with that matrix set to one**, and the model's own contribution is the operator's shape: two chiralities with equal coefficients, colour factor one, and $M_X^{-4}$.
+**The channel $K_L\to\mu e$ needs a matrix the model does not have**, because the model has one Yukawa matrix and one generation. **The bound on $M_X$ that the literature quotes is a two-generation channel with that matrix set to one**, and the model's own contribution is the operator's shape: two chiralities with equal coefficients, group factor one, and $M_X^{-4}$.
 
 **What the transition must supply is named and not invented**: a second matrix, a generation index, and a condensate that does not tie the lepton mass to the quark mass by three.
 
@@ -134,7 +134,7 @@ $$
 | symbol | meaning |
 | --- | --- |
 | $\mathbb C e_{t}$ | the lepton line of the quartet |
-| $B_V$ | the colour triple, $\operatorname{span}\{e_{x},e_{y},e_{z}\}$ |
+| $B_V$ | the three lines, $\operatorname{span}\{e_{x},e_{y},e_{z}\}$ |
 | $M_X$ | the sextet's mass, $M_X^{2}=32v^{2}=16g_4^{2}v_C^{2}$ |
 | $g_4$ | the model's single connection coupling |
 | $U_{de}$, $U_{s\mu}$ | mixing entries below $M_C$, not computed in the corpus |
@@ -148,5 +148,5 @@ $$
 - [The Yukawa Sector of the $\mathrm{SU}(4)$ Model](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). The one matrix, the aligned mass basis, and the factor three.
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The sixteen, and the copy index that is not a generation.
 - [An Introduction to Flavour](an-introduction-to-flavour.html). Why an index the algebra cannot see is invisible to every symmetry measurement.
-- [Three Diagrams of the $\mathrm{SU}(4)$ Model](three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html). The same operator, drawn, with the kaon rate and the colour factor.
+- [Three Diagrams of the $\mathrm{SU}(4)$ Model](three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html). The same operator, drawn, with the kaon rate and the group factor.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The sextet in full, with its quantum numbers and the bound.

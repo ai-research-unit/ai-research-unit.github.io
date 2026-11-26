@@ -54,11 +54,11 @@ $$
 | --- | --- | --- | --- | --- |
 | real planes $A_{jk}$ | $6$ | $-\bigl(E_{jj}+E_{kk}\bigr)$ | $1$ | $-2$ |
 | imaginary planes $iS_{jk}$ | $6$ | $-\bigl(E_{jj}+E_{kk}\bigr)$ | $1$ | $-2$ |
-| colour diagonals $d_{2},d_{3}$ | $2$ | $-\bigl(E_{jj}+E_{kk}\bigr)$ | $1$ | $-2$ |
+| spatial diagonals $d_{2},d_{3}$ | $2$ | $-\bigl(E_{jj}+E_{kk}\bigr)$ | $1$ | $-2$ |
 | corner $iD$ | $1$ | $-\operatorname{diag}(9,1,1,1)$ | $3$ on $e_{t}$, $1$ on the triple | $-12$ |
 | the halves $T^{L}_{a},T^{R}_{a}$ | $6$ | $-\tfrac14\mathbb{1}$ | $\tfrac12$ | $-1$ |
 
-**The corner is the one array whose square is not a scalar multiple of a projector, and it is handled as two blocks of the same formula**: $\omega=3$ on the lepton line and $\omega=1$ on the colour triple. **That is the whole of its exceptional treatment**, and the two-block reading is what produces the four phases rather than two.
+**The corner is the one array whose square is not a scalar multiple of a projector, and it is handled as two blocks of the same formula**: $\omega=3$ on the lepton line and $\omega=1$ on the three spatial lines. **That is the whole of its exceptional treatment**, and the two-block reading is what produces the four phases rather than two.
 
 **The half in $T^{L}_{a}=\tfrac12L_{\vec e_{a}}$ is exactly the half angle in its rotor.** It is the only place where the parameter and the turned angle differ, **and it belongs to a composite and not to a generator**: the model's fifteen have no half angle, because none of them is half of another. **A reader who expects $\theta$ and finds $\theta/2$ has found the $\tfrac12$ of a basis that is not this model's.**
 
@@ -96,7 +96,7 @@ $$
 
 **Concretely $\exp(\pi A_{xy})=\operatorname{diag}(1,-1,-1,1)$**: at half a turn the rotor is not a rotation by $\pi$ in the plane alone but the diagonal sign flip that also fixes the two untouched lines, and **that element is the one a reader will meet again as a $\mathbb{Z}_{2}$ of the group.** At a full turn the rotor returns to the identity, which is what separates this family from the weak one below.
 
-**The six split three and three by what they carry.** The three $A_{bc}$ turn the colour triple and fix the lepton line; the three $A_{ta}$ carry the lepton line into colour and back. **That is the geometric content of the statement that colour is a stabiliser and the leptoquarks are not**, and it is read from the rotor in one line: $R_{A_{bc}}(\theta)e_{t}=e_{t}$ for every $\theta$, while $R_{A_{ta}}(\theta)e_{t}\ne e_{t}$ as soon as $\theta\ne0$.
+**The six split three and three by what they carry.** The three $A_{bc}$ turn the three lines and fix the lepton line; the three $A_{ta}$ carry the lepton line into a spatial line and back. **That is the geometric content of the statement that the strong group is a stabiliser and the leptoquarks are not**, and it is read from the rotor in one line: $R_{A_{bc}}(\theta)e_{t}=e_{t}$ for every $\theta$, while $R_{A_{ta}}(\theta)e_{t}\ne e_{t}$ as soon as $\theta\ne0$.
 
 ## The Six Imaginary Planes: Rotors of the Complexified Carrier
 
@@ -128,9 +128,9 @@ $$
 
 **so the two families meet at $\theta=\pi$ and nowhere else in $(0,2\pi)$.** The statement is exact and it is the sharpest way to see that the imaginary planes are not a second kind of rotation but the same rotation read on a complex basis: **at the half-turn the imaginary weight $\sin\theta$ vanishes and only the real part survives.**
 
-**What the imaginary planes are for, on the rotor side, is the phases of the massless sector.** The corner and the two colour diagonals below are diagonal and give phases outright; the six imaginary planes give the mixing that a phase alone cannot, and **the pair $\{iS_{jk},A_{jk}\}$ together is what makes $\mathfrak{u}(2)$ on the plane** rather than $\mathfrak{so}(2)$ alone.
+**What the imaginary planes are for, on the rotor side, is the phases of the massless sector.** The corner and the two spatial diagonals below are diagonal and give phases outright; the six imaginary planes give the mixing that a phase alone cannot, and **the pair $\{iS_{jk},A_{jk}\}$ together is what makes $\mathfrak{u}(2)$ on the plane** rather than $\mathfrak{so}(2)$ alone.
 
-## The Corner and the Two Colour Diagonals: Three Commuting Rotors and the Torus
+## The Corner and the Two Spatial Diagonals: Three Commuting Rotors and the Torus
 
 **The corner is diagonal, so its rotor is four phases and needs no formula beyond the entrywise exponential.**
 
@@ -138,13 +138,13 @@ $$
 \exp\bigl(\theta iD\bigr)=\operatorname{diag}\bigl(e^{-3i\theta},\,e^{i\theta},\,e^{i\theta},\,e^{i\theta}\bigr).
 $$
 
-**The lepton line turns three times as fast as each colour line, and the relative phase is four times the parameter.**
+**The lepton line turns three times as fast as each spatial line, and the relative phase is four times the parameter.**
 
 $$
 \exp\bigl(\theta iD\bigr)=e^{i\theta}\operatorname{diag}\bigl(e^{-4i\theta},1,1,1\bigr),
 $$
 
-**which is the display [the charge-quantisation article](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html) prints, character for character.** That is not a coincidence of notation: the article's $N\theta$ relative phase and this article's factor $3$ against $1$ are the same statement, and the two were computed from different starting points.
+**which is the display [the charge-quantisation article](charge-quantisation-from-the-fourth-line-one-trace-one-third.html) prints, character for character.** That is not a coincidence of notation: the article's $N\theta$ relative phase and this article's factor $3$ against $1$ are the same statement, and the two were computed from different starting points.
 
 **The rotor is central exactly four times a turn, and the four values are the fourth roots of unity.**
 
@@ -153,9 +153,9 @@ $$
 \qquad k=0,1,2,3,
 $$
 
-**so $iD$ generates a circle whose image contains the centre four times, and it is the only array of the fifteen that reaches the centre inside a single turn.** The six planes and the two colour diagonals are central only at $\theta\in2\pi\mathbb{Z}$, with value $+1$; **the six composites at $\theta\in2k\pi$, with value $(-1)^{k}$, and that factor is the half angle again.** **Only the corner reaches $i\mathbb{1}$ and $-i\mathbb{1}$, and only it reaches the centre four times in one period.** This is the rotor-side reading of the corpus's "central four times a turn".
+**so $iD$ generates a circle whose image contains the centre four times, and it is the only array of the fifteen that reaches the centre inside a single turn.** The six planes and the two spatial diagonals are central only at $\theta\in2\pi\mathbb{Z}$, with value $+1$; **the six composites at $\theta\in2k\pi$, with value $(-1)^{k}$, and that factor is the half angle again.** **Only the corner reaches $i\mathbb{1}$ and $-i\mathbb{1}$, and only it reaches the centre four times in one period.** This is the rotor-side reading of the corpus's "central four times a turn".
 
-**The two colour diagonals give two opposite phases each, and no mixing.**
+**The two spatial diagonals give two opposite phases each, and no mixing.**
 
 $$
 \exp\bigl(\theta d_{2}\bigr)=\operatorname{diag}\bigl(1,\,e^{i\theta},\,e^{-i\theta},\,1\bigr),
@@ -163,7 +163,7 @@ $$
 \exp\bigl(\theta d_{3}\bigr)=\operatorname{diag}\bigl(1,\,1,\,e^{i\theta},\,e^{-i\theta}\bigr).
 $$
 
-**The pair is the diagonal of an $\mathrm{SU}(2)$ acting on two of the three colour lines, with the third line playing the role of the trace**, exactly as the construction article's $d_{2},d_{3}$ are the diagonal of the colour triple with the missing combination the trace.
+**The pair is the diagonal of an $\mathrm{SU}(2)$ acting on two of the three spatial lines, with the third line playing the role of the trace**, exactly as the construction article's $d_{2},d_{3}$ are the diagonal of the three lines with the missing combination the trace.
 
 **These three commute, so their exponentials compose into a three-angle torus and the composition is exact.**
 
@@ -221,7 +221,7 @@ T^{L}_{x}+T^{R}_{x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&0\\0&0&0&0\end{pmatr
 T^{L}_{x}-T^{R}_{x}=\begin{pmatrix}0&0&0&0\\0&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}=-A_{yz}.
 $$
 
-**The sum turns the leptoquark plane and the difference turns the colour plane**, and that is the whole content of the vector-and-axial split in this basis. **One bracket then turns these two displays into a statement about rotors, which is the next section.**
+**The sum turns the leptoquark plane and the difference turns the spatial plane**, and that is the whole content of the vector-and-axial split in this basis. **One bracket then turns these two displays into a statement about rotors, which is the next section.**
 
 ## The Real Plane Rotor, and the Two Half-Angle Rotors Behind It
 
@@ -274,7 +274,7 @@ $$
 
 **They are not rotations of space.** The quartet's three spatial indices $x,y,z$ are the carrier's, and [the rotors article](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) states the caveat in full: the group of the carrier is not the Lorentz group, and the identification of the carrier's triple with laboratory space is an extra input and not a result. **$R_{A_{xy}}(\theta)$ rotates the carrier's triple; whether the apparatus turns with it is a question this article does not touch.**
 
-**None of them is a boost.** $G_{a}$ is anti-hermitian for all fifteen, so $R_{a}(\theta)$ is unitary with unit-modulus eigenvalues and $\operatorname{tr}G_{a}^{2}$ is negative: **it takes the value $-2$ on the twelve planes and two colour diagonals, $-12$ on the corner, and never a positive number.** A boost in the $tx$ plane has $K^{2}=E_{tt}+E_{xx}$, so $\operatorname{tr}K^{2}=+2$; **the sign alone separates the fifteen from every boost, and the smallest gap is the corner's $-12$ against the boost's $+2$.** The rotors article proves this three ways and this article does not re-prove it; the closed forms above are the strongest single illustration, since every one of them is a rotation or a phase and **no hyperbolic function appears in any of the fifteen.**
+**None of them is a boost.** $G_{a}$ is anti-hermitian for all fifteen, so $R_{a}(\theta)$ is unitary with unit-modulus eigenvalues and $\operatorname{tr}G_{a}^{2}$ is negative: **it takes the value $-2$ on the twelve planes and two spatial diagonals, $-12$ on the corner, and never a positive number.** A boost in the $tx$ plane has $K^{2}=E_{tt}+E_{xx}$, so $\operatorname{tr}K^{2}=+2$; **the sign alone separates the fifteen from every boost, and the smallest gap is the corner's $-12$ against the boost's $+2$.** The rotors article proves this three ways and this article does not re-prove it; the closed forms above are the strongest single illustration, since every one of them is a rotation or a phase and **no hyperbolic function appears in any of the fifteen.**
 
 **Nine of them are not rotors of a real plane.** The six imaginary planes and the three diagonals are complex arrays, so their rotors leave the real quartet at every $\theta$ except the half-turns. **Six rotors of $\mathbb{R}^{4}$ and nine of $\mathbb{C}^{4}$ is the honest split**, and the title's fifteen counts the curves and not fifteen real rotations.
 
@@ -292,7 +292,7 @@ $$
 | the corner against the charge article | $e^{i\theta}\operatorname{diag}(e^{-4i\theta},1,1,1)$ | identical |
 | the corner's central points | $\exp(k\tfrac{\pi}{2}iD)$ | $i^{k}\mathbb{1}$ |
 | the centrality ladder | the parameter at which each family is central | $2\pi$ for the fourteen, $k\tfrac{\pi}{2}$ for the corner, $2k\pi$ for the six |
-| the colour diagonals | $\exp(\theta d_{2})$, $\exp(\theta d_{3})$ | $(1,e^{i\theta},e^{-i\theta},1)$, $(1,1,e^{i\theta},e^{-i\theta})$ |
+| the spatial diagonals | $\exp(\theta d_{2})$, $\exp(\theta d_{3})$ | $(1,e^{i\theta},e^{-i\theta},1)$, $(1,1,e^{i\theta},e^{-i\theta})$ |
 | the torus | $\exp(\alpha iD+\beta d_{2}+\gamma d_{3})$ | four phases, one relation |
 | the halves' square | $G^{2}$ for $T^{L}_{a},T^{R}_{a}$ | $-\tfrac14\mathbb{1}$ |
 | the halves' period | $\exp(2\pi T)$, $\exp(4\pi T)$ | $-\mathbb{1}$, $+\mathbb{1}$ |
@@ -303,7 +303,7 @@ $$
 
 ## Summary
 
-**The fifteen rotors are the exponentials of the fifteen arrays, and all of them are elementary because all fifteen arrays square to diagonal matrices.** Fourteen obey one two-term formula with a single frequency, and the corner obeys the same formula twice with two frequencies, $3$ on the lepton line and $1$ on the colour triple.
+**The fifteen rotors are the exponentials of the fifteen arrays, and all of them are elementary because all fifteen arrays square to diagonal matrices.** Fourteen obey one two-term formula with a single frequency, and the corner obeys the same formula twice with two frequencies, $3$ on the lepton line and $1$ on the three spatial lines.
 
 **The rotors fall into a $6+9$ split that the arrays' entries decide.** Six have real entries and give rotations of the quartet with period $2\pi$; nine have complex entries and give unitary rotors of the complexified carrier, real only at the half-turns, where the imaginary planes coincide with the real ones.
 
@@ -322,7 +322,7 @@ $$
 | $T^{L}_{a},T^{R}_{a}$ | $\tfrac12L_{\vec e_{a}}$ and $\tfrac12R_{\vec e_{a}}$ |
 | $A_{ta},A_{bc}$ | The real planes, which are minus the sum and minus the difference of the two halves |
 | $iS_{jk}$ | The imaginary plane |
-| $iD$, $d_{2}$, $d_{3}$ | The corner and the two colour diagonals |
+| $iD$, $d_{2}$, $d_{3}$ | The corner and the two spatial diagonals |
 | $12$, $9$ | Rotors of $\mathbb{R}^{4}$ and of $\mathbb{C}^{4}$ |
 | $15$ | The rank of the fifteen as $4\times4$ arrays |
 
@@ -333,5 +333,5 @@ $$
 - [The Relation between $\mathfrak{su}(4)$ and $\mathfrak{so}(4)$: the Twelve Real Arrays and the Nine Complex Ones](../articles_internal/structures/structure-SU4-SO4-relations.html). Why the order of this article is the split it is, and why the pairing $\{A_{jk},iS_{jk}\}$ is not a substitute.
 - [The Fifteen AXF Matrices of the Boson Rotors in Detail](the-15-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role.html). The same closed forms read one boson at a time: the entries, the fixed lines, and the role of each matrix.
 - [The Fifteen AXF Matrices of the Bosons in Detail](the-15-axf-matrices-of-the-bosons-in-detail.html). One subsection per array, with the printed matrix and the spectrum.
-- [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The corner's exponential and the relative phase $N\theta$ that this article's display reproduces.
+- [Charge Quantisation from the Fourth Line](charge-quantisation-from-the-fourth-line-one-trace-one-third.html). The corner's exponential and the relative phase $N\theta$ that this article's display reproduces.
 - [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html). Names against directions, which is the count this article's rank computation confirms.

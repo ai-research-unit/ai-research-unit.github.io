@@ -7,7 +7,7 @@
 **What it fixes and what it cannot.**
 
 - **It fixes the fermion masses up to two numbers.** $y$ has eight real parameters, six of them are rotations that nothing in the model can see, and **two survive: the eigenvalues.**
-- **It ties the lepton mass to the quark mass, with a ratio of three.** The condensate is $v\operatorname{diag}(-3,1,1,1)$, so a fermion on the lepton line is three times heavier than a fermion on a colour line with the same eigenvalue. **$m_{\ell}=3m_{q}$ within a copy**, and that is the sector's one quantitative statement.
+- **It ties the lepton mass to the quark mass, with a ratio of three.** The condensate is $v\operatorname{diag}(-3,1,1,1)$, so a fermion on the lepton line is three times heavier than a fermion on a spatial line with the same eigenvalue. **$m_{\ell}=3m_{q}$ within a copy**, and that is the sector's one quantitative statement.
 - **It cannot produce a mixing angle or a phase.** One matrix, one mass basis, and no connection vertex that changes the copy index. **The sector conserves $CP$ exactly**, and the reason is a count.
 - **It cannot produce a hierarchy among the three generations, because the model has no generation index.** The copy index is a two-valued degeneracy, not a family label; **the three generations are not in this model.**
 
@@ -32,7 +32,7 @@ $$
 
 **It is invariant and the invariance is one line of representation arithmetic.** $\xi$ is a $\mathbf 4$, $\bar\xi$ a $\bar{\mathbf4}$, and $Ξ$ a Hermitian $4\times4$, which is $\mathbf{15}\oplus\mathbf1$. **$\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$ contains the identity, so the product contracts to a singlet**, and the contraction is the matrix trace read in the quartet index.
 
-**The matrix $y$ is on the copy index and on nothing else.** It cannot carry a colour index (invariance), it cannot carry a momentum (locality), and it cannot carry a generation label (there is none). **So the sector's whole freedom is a $2\times2$ complex matrix**, and the next paragraph counts what of it is physical.
+**The matrix $y$ is on the copy index and on nothing else.** It cannot carry a index (invariance), it cannot carry a momentum (locality), and it cannot carry a generation label (there is none). **So the sector's whole freedom is a $2\times2$ complex matrix**, and the next paragraph counts what of it is physical.
 
 | step | real parameters | what removes them |
 | --- | --- | --- |
@@ -57,18 +57,18 @@ $$
 
 **The matrix is diagonal in the quartet index and proportional to $y$ in the copy index.** That sentence is the whole structure of the sector, and it has three consequences.
 
-**The first is the factor three.** A fermion on the lepton line gets $-3v\,y_{\alpha\beta}$ and one on a colour line gets $+v\,y_{\alpha\beta}$: **the same eigenvalue, multiplied by three on the lepton line.** Nothing in $y$ can undo it, because $y$ multiplies both.
+**The first is the factor three.** A fermion on the lepton line gets $-3v\,y_{\alpha\beta}$ and one on a spatial line gets $+v\,y_{\alpha\beta}$: **the same eigenvalue, multiplied by three on the lepton line.** Nothing in $y$ can undo it, because $y$ multiplies both.
 
-**The second is the colour degeneracy.** The three colour lines have the same entry $+v$, so **the three colours of a quark are exactly degenerate.** That is a prediction and it is exact: the condensate does not break colour, so no colour-split mass can appear at this level.
+**The second is the spatial degeneracy.** The three spatial lines have the same entry $+v$, so **the three lines of a quark are exactly degenerate.** That is a prediction and it is exact: the condensate does not break the strong group, so no block-split mass can appear at this level.
 
 **The third is that the four masses of one generation are two numbers.** With $y$ diagonalised to $(y_{1},y_{2})$:
 
 | field | line | mass |
 | --- | --- | --- |
 | $\nu$ | lepton, copy $1$ | $3v\,|y_{1}|$ |
-| $u^{r},u^{g},u^{b}$ | colour, copy $1$ | $v\,|y_{1}|$ |
+| $u^{r},u^{g},u^{b}$ | spatial, copy $1$ | $v\,|y_{1}|$ |
 | $e$ | lepton, copy $2$ | $3v\,|y_{2}|$ |
-| $d^{r},d^{g},d^{b}$ | colour, copy $2$ | $v\,|y_{2}|$ |
+| $d^{r},d^{g},d^{b}$ | spatial, copy $2$ | $v\,|y_{2}|$ |
 
 **Eight mass eigenstates, four distinct values, two parameters, and a ratio of three fixed by the condensate.** A reader who wants the Standard Model's four independent masses has to add three parameters that this model does not have.
 
@@ -99,14 +99,14 @@ $$
 | $m_{\nu}/m_{u}$ | $3$ | below $10^{-6}$ | wrong by more than $10^{6}$ |
 | $m_{u}/m_{d}$ | free, $y_{1}/y_{2}$ | $0.47$ | no statement |
 | $m_{u}/m_{c}$ | no generation index | $0.0022$ | absent |
-| colour degeneracy | exact | exact | holds |
+| spatial degeneracy | exact | exact | holds |
 | $CP$ violation | $0$ | $J\approx3\times10^{-5}$ | absent |
 
 **The first row is the one to quote.** $m_{e}=0.511$ MeV and $m_{d}\simeq4.7$ MeV at $2$ GeV give $0.109$; the model gives $3$; **the ratio of the two is $27.4$.** The arithmetic is three lines and the conclusion is not negotiable.
 
 **The reason is structural and cannot be repaired inside the model.** The factor three is the ratio of the condensate's entries, $-3$ against $+1$, and it is the same number that makes the leptoquark heavy. **A model whose lepton and quark masses differ by a fixed factor has no freedom left to fix them**, and that is the definition of the boundary this sector hits.
 
-**What the transition must add, stated as a requirement and not as a promise.** A second condensate, so that the lepton line and the colour lines can receive different factors; a second Yukawa matrix, so that a phase can survive; and a generation index, so that a hierarchy can exist. **None of the three is in this model, and the article's claim is only that the three are necessary.**
+**What the transition must add, stated as a requirement and not as a promise.** A second condensate, so that the lepton line and the spatial lines can receive different factors; a second Yukawa matrix, so that a phase can survive; and a generation index, so that a hierarchy can exist. **None of the three is in this model, and the article's claim is only that the three are necessary.**
 
 ## Neutrinos
 
@@ -132,8 +132,8 @@ $$
 | removed by rephasing and rotation | $2+2+2$ | $6$ |
 | physical parameters | $8-6$ | $2$ |
 | the operator's invariance | $\bar{\mathbf4}\otimes\mathbf4\supset\mathbf1$ | $\mathbf{15}\oplus\mathbf1$ |
-| lepton-line mass | $3v\,|y_{\alpha}|$ | $3\times$ the colour case |
-| colour degeneracy | three lines, one entry | exact |
+| lepton-line mass | $3v\,|y_{\alpha}|$ | $3\times$ the spatial case |
+| spatial degeneracy | three lines, one entry | exact |
 | distinct masses per generation | two copies, two line types | $4$ values from $2$ numbers |
 | the mixing matrix | $W^{\dagger}W$ | $\mathbb 1$ |
 | the Jarlskog invariant | one matrix, commutator $0$ | $0$ |
@@ -144,7 +144,7 @@ $$
 
 ## Summary
 
-**One operator, one matrix, two masses, no phase.** The Yukawa sector is a $2\times2$ complex matrix on the copy index, reduced by rephasing and rotation to two real eigenvalues, and the condensate multiplies them by $-3v$ on the lepton line and $+v$ on the colour lines.
+**One operator, one matrix, two masses, no phase.** The Yukawa sector is a $2\times2$ complex matrix on the copy index, reduced by rephasing and rotation to two real eigenvalues, and the condensate multiplies them by $-3v$ on the lepton line and $+v$ on the spatial lines.
 
 **The factor three is the sector's only prediction, and $m_{e}=3m_{d}$ is wrong by $27$.** That failure is structural: it comes from the same ratio that makes the leptoquark heavy, and no choice of $y$ can repair it.
 
@@ -165,7 +165,7 @@ $$
 
 ## Further Reading
 
-- [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The content, the condensate, and the ledger this sector sits in.
+- [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The content, the condensate, and the ledger this sector sits in.
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). Why the model is closed under $C$ and $CP$, and where the copy index sits.
 - [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The proof that no vertex carries the copy index, which is the reason no phase survives.
 - [The Feynman Rules](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The Lagrangian this sector is one line of.

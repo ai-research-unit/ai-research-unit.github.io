@@ -68,7 +68,7 @@ $$
 
 | item | rank cost |
 | --- | --- |
-| colour $\mathrm{SU}(3)_c$ | $2$ |
+| the strong group $\mathrm{SU}(3)_c$ | $2$ |
 | the abelian factor $\mathrm{U}(1)_{B-L}$ | $1$ |
 | $\mathrm{SU}(2)_L$ | $1$ |
 | $\mathrm{SU}(2)_R$ | $1$ |
@@ -84,7 +84,7 @@ $$
 | $\mathrm{U}(3)$ | $\mathrm{SU}(3)\times\mathrm{U}(1)$ | $2+1=3$ | $\mathbf 8_0\oplus\mathbf 1_0\oplus\mathbf 3_{+4}\oplus\bar{\mathbf 3}_{-4}$ |
 | $\mathrm{S}(\mathrm{U}(2)\times\mathrm{U}(2))$ | $\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ | $1+1+1=3$ | $(\mathbf3,\mathbf1)_0\oplus(\mathbf1,\mathbf3)_0\oplus(\mathbf1,\mathbf1)_0\oplus(\mathbf2,\mathbf2)_{\pm2}$ |
 
-**Row one buys colour plus one abelian factor. Row two buys weak-times-weak plus one abelian factor. Neither buys colour *and* weak**, because colour needs two ranks and weak needs two, and four exceeds three. **Two ways to spend three ranks, not two halves of five.**
+**Row one buys the spatial block plus one abelian factor. Row two buys weak-times-weak plus one abelian factor. Neither buys the spatial block *and* weak**, because the block needs two ranks and weak needs two, and four exceeds three. **Two ways to spend three ranks, not two halves of five.**
 
 **And the two rows cannot both be exact.** Their Lie bracket generates all fifteen generators of $\mathfrak{su}(4)$, which is simple, so a vacuum annihilated by both would break nothing. **The model must choose, and the corpus chooses the first row — that is what the transition is.**
 
@@ -108,7 +108,7 @@ $$
 
 **Rank is not a dynamical quantity.** It is the dimension of a torus, and a torus does not grow when a vacuum chooses a direction inside it. **So no chain of breakings, in any order, with any dynamics, at any temperature, reaches rank five from rank three.**
 
-**And colour times weak needs five.** The endpoint's dimension is a sum of four positive ranks; the sum is five; the opening balance is three. **Therefore $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ is not a subgroup of $\mathrm{SU}(4)$, and no condensation will make it one.**
+**And the block times weak needs five.** The endpoint's dimension is a sum of four positive ranks; the sum is five; the opening balance is three. **Therefore $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ is not a subgroup of $\mathrm{SU}(4)$, and no condensation will make it one.**
 
 **This is a different statement from the usual "the algebra is too small", and it is stronger.** The usual objection says there is not enough *dimension*; but dimension is not the obstacle — $15\ge 8+1+3+3=15$ exactly, so dimension is in fact sufficient. **What is insufficient is rank, and rank is conserved downwards.** That is why the obstruction survives every clever rearrangement of the breaking.
 
@@ -155,7 +155,7 @@ $$
 | what happens | where it lives | rank |
 | --- | --- | --- |
 | $\mathrm{SU}(4)$ condenses along the lepton line | the $\mathrm{SU}(4)$ index of $Ξ$ | $3$ |
-| six leptoquarks eaten, colour and $B-L$ survive | the stabiliser of that line | $2+1$ |
+| six leptoquarks eaten, the strong group and $B-L$ survive | the stabiliser of that line | $2+1$ |
 | a two-dimensional internal space appears | the $\mathbf 2$ index of $Ξ$ | $1$ |
 | its chiral half is the second weak factor | the copy structure of the condensate | $1$ |
 | **endpoint** | $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | $\mathbf{3+1+1=5}$ |
@@ -220,12 +220,12 @@ $$
 
 | scale | what happens | who gets mass |
 | --- | --- | --- |
-| $M_C\gtrsim250\ \mathrm{TeV}$ | $\mathrm{SU}(4)$ breaks, sextet eaten, colour and $B-L$ survive | the six leptoquarks |
+| $M_C\gtrsim250\ \mathrm{TeV}$ | $\mathrm{SU}(4)$ breaks, sextet eaten, the strong group and $B-L$ survive | the six leptoquarks |
 | $v=246\ \mathrm{GeV}$ | electroweak breaking | $W$, $Z$ |
 
-**The arrival brings in the group and the colour vacuum kills the right half of it.** No object is built from parts a thousand times heavier than itself, and the left half waits for its own vacuum.
+**The arrival brings in the group and the first vacuum kills the right half of it.** No object is built from parts a thousand times heavier than itself, and the left half waits for its own vacuum.
 
-**The corpus states the same thing in the mass-matrix article, and it is worth repeating because it is the strongest textual support the construction has:** each of the six halves is one colour plane plus or minus one leptoquark plane, so no one of them is a particle; and **the weak vectors arrive with the doublet index, taking their masses from the vacuum of that index and not from the colour one.** **That is precisely the mass ledger of this section, written before the construction existed.**
+**The corpus states the same thing in the mass-matrix article, and it is worth repeating because it is the strongest textual support the construction has:** each of the six halves is one spatial plane plus or minus one leptoquark plane, so no one of them is a particle; and **the weak vectors arrive with the doublet index, taking their masses from the vacuum of that index and not from the spatial one.** **That is precisely the mass ledger of this section, written before the construction existed.**
 
 ## The Other Route, Closed Elsewhere
 
@@ -286,9 +286,9 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 
 **The rank lemma is why it must be so.** $\operatorname{rank}\mathfrak{su}(4)=3$, the endpoint costs $5$, and a subalgebra never outranks its algebra. **So the weak factors are not pieces of $\mathrm{SU}(4)$; they arrive beside it — which is what "arrival" means here, and what $3+1+1=5$ certifies.**
 
-**The mechanism is one object with three indices.** $Ξ\in(\mathbf{15}\oplus\mathbf1)$: the colour pair breaks $\mathrm{SU}(4)$ and eats the sextet, the $\mathbf 2$ index is the weak force. **The breaking and the birth are one event with two aspects.**
+**The mechanism is one object with three indices.** $Ξ\in(\mathbf{15}\oplus\mathbf1)$: the pair of indices breaks $\mathrm{SU}(4)$ and eats the sextet, the $\mathbf 2$ index is the weak force. **The breaking and the birth are one event with two aspects.**
 
-**The sextet cannot do it, twice over.** Charge: $Q=\pm\tfrac23$ sums to $\{0,\pm\tfrac43\}$ and never to $\pm1$, and the colour singlet is neutral identically. Mass: a bound state weighs at least its confinement scale, and that scale is $250$ TeV. Both proofs are [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html)'s. **Neither closure can be repaired by dynamics.**
+**The sextet cannot do it, twice over.** Charge: $Q=\pm\tfrac23$ sums to $\{0,\pm\tfrac43\}$ and never to $\pm1$, and the singlet is neutral identically. Mass: a bound state weighs at least its confinement scale, and that scale is $250$ TeV. Both proofs are [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html)'s. **Neither closure can be repaired by dynamics.**
 
 **The price is one postulate, paid in a currency the corpus already spends**, and the mass ledger stays the corpus's: $M_C>v$, with the sextet at $M_C$ and $W$ at $v$.
 

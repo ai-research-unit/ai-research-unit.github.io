@@ -37,7 +37,7 @@ $$
 
 **The zero above $M_C$ is exact and not a truncation.** With no condensate there is no direction for the mass form $M^{2}=2v^{2}\bigl[D,[D,\cdot\,]\bigr]$ to act on, so it is the zero operator on all fifteen; and an unbroken local symmetry forbids a vector mass at every order, so no loop restores one. **A reader who quotes "nine massless" for the $\mathrm{SU}(4)$ phase has quoted the broken phase's number**, and §*The Sextet, Which Is the Six Cells of the Mixed Band* gives the transition that changes it.
 
-**The model.** One model: **the $\mathrm{SU}(4)$ model**, set out in [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). **The name is stated first because every name here belongs to that model and to nothing else.** It is not the Standard Model's particle list and not a general classification of everything the algebra could describe: **it is the boson content of one group, on one grid, with one declaration.**
+**The model.** One model: **the $\mathrm{SU}(4)$ model**, set out in [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). **The name is stated first because every name here belongs to that model and to nothing else.** It is not the Standard Model's particle list and not a general classification of everything the algebra could describe: **it is the boson content of one group, on one grid, with one declaration.**
 
 **What is not in this model.** There is no $2\times2$ grid because there is no weak factor, and the neutral mixing that produces the photon needs two more neutral directions and a second vacuum. **The photon, the $Z$, the $W$'s and the $Z_R$ arrive at $M_C$**, and their classification is in the next section of the corpus. **This article classifies fifteen fields and it is complete when it has done so.**
 
@@ -47,15 +47,15 @@ $$
 G=\mathrm{SU}(4),\qquad \dim=15,\qquad \operatorname{rank}=3,\qquad 15=\underbrace{8}_{\mathfrak{su}(3)}\oplus\underbrace{1}_{\mathbb R\,iD}\oplus\underbrace{6}_{\mathfrak m}.
 $$
 
-**One grid of sixteen cells.** One trace removed, fifteen generators. **Three blocks**: the $(t,t)$ corner, the mixed band of six, and the colour square of nine.
+**One grid of sixteen cells.** One trace removed, fifteen generators. **Three blocks**: the $(t,t)$ corner, the mixed band of six, and the spatial square of nine.
 
 ## The Group and Its Three Numbers
 
 **Fifteen, three, six.** The dimension $15$. The rank $3$, which is the number of diagonal generators that commute. **The six**, which is the sextet: three mixed planes, two arrays each.
 
-**Where the numbers come from, in one line each.** The dimension comes from the cells: $16-1$, because the trace is removed. **The rank comes from the torus**: $iD$ and the two colour diagonals. **The six comes from the mixed band**: the $t$ row and column off the corner, six cells, six generators, two per plane.
+**Where the numbers come from, in one line each.** The dimension comes from the cells: $16-1$, because the trace is removed. **The rank comes from the torus**: $iD$ and the two spatial diagonals. **The six comes from the mixed band**: the $t$ row and column off the corner, six cells, six generators, two per plane.
 
-**What the rank controls.** The number of fields that stay massless when the group breaks is the dimension of the stabiliser, and a direction in the torus keeps the torus: **the rank does not move, $3\to2+1=3$**. After the transition the surviving algebra is colour plus one abelian direction, $\mathfrak{su}(3)\oplus\mathfrak{u}(1)=\mathfrak{u}(3)$, of dimension $8+1=9$ and rank three. **So nine directions are massless and six are heavy, and the nine is exactly that algebra's dimension.** That is the whole relation between the numbers, and it is stated once here because every later count uses it.
+**What the rank controls.** The number of fields that stay massless when the group breaks is the dimension of the stabiliser, and a direction in the torus keeps the torus: **the rank does not move, $3\to2+1=3$**. After the transition the surviving algebra is the strong group plus one abelian direction, $\mathfrak{su}(3)\oplus\mathfrak{u}(1)=\mathfrak{u}(3)$, of dimension $8+1=9$ and rank three. **So nine directions are massless and six are heavy, and the nine is exactly that algebra's dimension.** That is the whole relation between the numbers, and it is stated once here because every later count uses it.
 
 **The rank is why two weak factors cannot be a subgroup.** $\operatorname{rank}\mathfrak{su}(4)=3$ and the four-factor phase needs five. **A subalgebra never outranks its algebra**, and this article's spectrum is the reason that sentence is not abstract: **three is all the diagonal room there is.**
 
@@ -66,7 +66,7 @@ $$
 | block | cells | generators | names | what it is |
 | --- | --- | --- | --- | --- |
 | the $t$ row and column, off the corner | $3+3=6$ | $6$ | $X^{r},X^{g},X^{b}$ and $\bar X^{r},\bar X^{g},\bar X^{b}$ | the leptoquark sextet |
-| the $3\times3$ colour block | $9$ | $8$ | $g_{1}\dots g_{8}$ | the gluon octet |
+| the $3\times3$ spatial block | $9$ | $8$ | $g_{1}\dots g_{8}$ | the gluon octet |
 | the four diagonal cells | $4$ | $3$ | $M_{x},M_{y},M_{z}$ | the Cartan: three generators, each on two cells, the corner shared by all three; the trace removed |
 
 $$
@@ -104,9 +104,9 @@ T^{c}_{3}=x\bar x-y\bar y,
 T^{c}_{8}=\tfrac{1}{\sqrt3}\bigl(x\bar x+y\bar y-2z\bar z\bigr).
 $$
 
-**So $T^{c}_{3}$ spans $xx$ and $yy$, $T^{c}_{8}$ spans all three colour cells, and $B-L$ spans all four.** The names are the conventional basis; the cells are the raw directions. **What is one per cell is the count**: four diagonal cells, one trace removed, three generators.
+**So $T^{c}_{3}$ spans $xx$ and $yy$, $T^{c}_{8}$ spans all three spatial cells, and $B-L$ spans all four.** The names are the conventional basis; the cells are the raw directions. **What is one per cell is the count**: four diagonal cells, one trace removed, three generators.
 
-**The labels of the grid are the corpus's four algebra labels.** $t$ is $e_t$, the temporal unit, and $x,y,z$ are $e_x,e_y,e_z$; so the row written $t$ is the temporal line and the three written $x,y,z$ are the colour directions. **The change of letter is declaration (A) and nothing more: the lepton line is the temporal line.**
+**The labels of the grid are the corpus's four algebra labels.** $t$ is $e_t$, the temporal unit, and $x,y,z$ are $e_x,e_y,e_z$; so the row written $t$ is the temporal line and the three written $x,y,z$ are the adjoint directions. **The change of letter is declaration (A) and nothing more: the lepton line is the temporal line.**
 
 **The corner is forced, and that is charge quantisation.** Read the diagonal cells as the four eigenvalues of the vacuum direction $D=M_x+M_y+M_z$, so that the grid's diagonal is
 
@@ -117,7 +117,7 @@ $$
 **The four entries must sum to zero**, because a generator of $\mathrm{SU}(4)$ is traceless, so
 
 $$
-(t,t)=-\bigl(\text{the three colour entries}\bigr)=-(1+1+1)=-3 .
+(t,t)=-\bigl(\text{the three spatial entries}\bigr)=-(1+1+1)=-3 .
 $$
 
 Written as a generator,
@@ -126,7 +126,7 @@ $$
 B-L=\tfrac13 D,\qquad \operatorname{tr}_{\mathbf 4}(B-L)=-\tfrac33+\tfrac13+\tfrac13+\tfrac13=0 ,
 $$
 
-and the vanishing of the trace is the same statement as the four diagonal entries summing to nothing. **The lepton cell is minus the colour trace**, which is the corpus's charge-quantisation result read off the grid in one line, and it is why the entry is $-3$ and not a free number.
+and the vanishing of the trace is the same statement as the four diagonal entries summing to nothing. **The lepton cell is minus the trace over the triplet index**, which is the corpus's charge-quantisation result read off the grid in one line, and it is why the entry is $-3$ and not a free number.
 
 **Four diagonal cells, three generators, and the removed one is the definition.** The fourth combination — all four entries equal — is the trace direction $i\mathrm I$, and it is not a generator of $\mathrm{SU}(4)$: it is the direction $\det=1$ removes. **So the grid holds sixteen cells and fifteen generators, and the missing one is not a hole in the picture but the definition of the group.**
 
@@ -140,9 +140,9 @@ $$
 15=\underbrace{12}_{\text{off-diagonal: each connects two distinct lines}}+\underbrace{3}_{\text{diagonal: each weights the four lines}} ,
 $$
 
-**and the only charge any of the fifteen carries is the adjoint's, the $\mathbf{15}$.** An off-diagonal direction moves one line into another, so it moves two line numbers by $\pm1$ and is charged under the Cartan; **the three diagonal directions commute with one another and therefore carry zero Cartan charge.** That is the whole pre-breaking charge statement, and it is complete: no boson above $M_C$ is a colour triplet, a colour octet, or anything else with an $\mathrm{SU}(3)$ label.
+**and the only charge any of the fifteen carries is the adjoint's, the $\mathbf{15}$.** An off-diagonal direction moves one line into another, so it moves two line numbers by $\pm1$ and is charged under the Cartan; **the three diagonal directions commute with one another and therefore carry zero Cartan charge.** That is the whole pre-breaking charge statement, and it is complete: no boson above $M_C$ is a triplet, a octet, or anything else with an $\mathrm{SU}(3)$ label.
 
-**The eight are nevertheless well defined above $M_C$, and it is by their action rather than by a group.** The eight directions that annihilate the lepton line — the six colour–colour off-diagonals and the two colour diagonals — are a set the algebra hands over before any vacuum forms, **because the lepton line is declared and not chosen by the breaking**. [The Rotors in Detail](the-15-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role.html) takes exactly that set as its definition of colour, and it is available at every scale. **What the breaking adds is the group factor, not the set.**
+**The eight are nevertheless well defined above $M_C$, and it is by their action rather than by a group.** The eight directions that annihilate the lepton line — the six spatial–spatial off-diagonals and the two spatial diagonals — are a set the algebra hands over before any vacuum forms, **because the lepton line is declared and not chosen by the breaking**. [The Rotors in Detail](the-15-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role.html) takes exactly that set as its definition of the strong group, and it is available at every scale. **What the breaking adds is the group factor, not the set.**
 
 **What the breaking changes is a partition of a fixed fifteen.**
 
@@ -154,11 +154,11 @@ $$
 \underbrace{\mathbf1_{0}}_{(t,t)} .
 $$
 
-**Read the branching together with the grid and the arithmetic is the one worth stating carefully.** Six of the twelve off-diagonal directions are colour–colour and six are mixed; the octet takes the first six plus the two colour diagonals, and the sextet takes the last six. **Nothing is created and nothing is destroyed**: it is the same fifteen, and the transition moves six of them from massless to $32v^{2}$.
+**Read the branching together with the grid and the arithmetic is the one worth stating carefully.** Six of the twelve off-diagonal directions are spatial–spatial and six are mixed; the octet takes the first six plus the two spatial diagonals, and the sextet takes the last six. **Nothing is created and nothing is destroyed**: it is the same fifteen, and the transition moves six of them from massless to $32v^{2}$.
 
 **So "six are lost and two are gained" is a true count and a false picture.** True: the octet is $6+2$ rather than eight off-diagonal, and the six mixed directions lie outside it. False in three ways: **the six mixed directions were never in the octet** — they are the mixed band, and they remain directions of the same algebra; **the two diagonals were always two of the fifteen**, and no direction joins anything; **and the count of vectors does not move at all**, fifteen massless above $M_C$ against nine and six below. What does change for the two diagonals is their status: below $M_C$ they are two of the eight connections of an unbroken factor, and above it they are two Cartan directions of a simple group. **That is a change of what a boson belongs to, and not a change in what exists.**
 
-**And this is why the grid's $r\bar g$ is a cell label and not a charge label.** Cell $(x,y)$ means *moves the $y$ line into the $x$ line*: the entry names two lines, not two charges. **Below $M_C$ the same entry reads as the colour–anticolour of a gluon, and that reading is available only there.**
+**And this is why the grid's $r\bar g$ is a cell label and not a charge label.** Cell $(x,y)$ means *moves the $y$ line into the $x$ line*: the entry names two lines, not two charges. **Below $M_C$ the same entry reads as the triplet–antitriplet pair of a gluon, and that reading is available only there.**
 
 ## The Sextet, Which Is the Six Cells of the Mixed Band
 
@@ -170,9 +170,9 @@ $$
 | $\{t,g\}$ | $(t,g)$ and $(g,t)$ | $\bar X^{g}$ and $X^{g}$ | $-\tfrac23$, $+\tfrac23$ | $-\tfrac43$, $+\tfrac43$ | $32v^{2}$ |
 | $\{t,b\}$ | $(t,b)$ and $(b,t)$ | $\bar X^{b}$ and $X^{b}$ | $-\tfrac23$, $+\tfrac23$ | $-\tfrac43$, $+\tfrac43$ | $32v^{2}$ |
 
-**The charge follows from the two indices and needs no separate rule.** Moving a lepton into a colour slot changes $B-L$ by $\tfrac13-(-1)=\tfrac43$, and **with no isospin to add** that is $Q=\tfrac12\cdot\tfrac43=\pm\tfrac23$. **The two charge classes are the two directions of the three planes.**
+**The charge follows from the two indices and needs no separate rule.** Moving a lepton into a spatial slot changes $B-L$ by $\tfrac13-(-1)=\tfrac43$, and **with no isospin to add** that is $Q=\tfrac12\cdot\tfrac43=\pm\tfrac23$. **The two charge classes are the two directions of the three planes.**
 
-**And $\bar X$ is not a different kind of object.** It is the reverse amplitude of the same plane, which is why its mass is the same and its charge is the opposite. **A reader who takes $X$ and $\bar X$ for two species has read a factor of two into the sextet that is not there**: there are six particles because there are three colour planes and two directions each.
+**And $\bar X$ is not a different kind of object.** It is the reverse amplitude of the same plane, which is why its mass is the same and its charge is the opposite. **A reader who takes $X$ and $\bar X$ for two species has read a factor of two into the sextet that is not there**: there are six particles because there are three spatial planes and two directions each.
 
 **The mass, and where it comes from.** **In the unbroken phase the mass of the sextet is exactly zero**, and that zero is a property of the phase and not of the particle: with $Ξ=0$ there is no vacuum direction, the mass form is the zero operator, and the local symmetry is unbroken, so the zero survives to every order. **The transition is what gives the six a mass**, and it gives all of them the same one:
 
@@ -180,13 +180,13 @@ $$
 32=2\cdot4^{2},
 $$
 
-where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which colour they carry. **The full matrix, its diagonal form and the eigenvalue count are [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
+where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which spatial line they occupy. **The full matrix, its diagonal form and the eigenvalue count are [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
 ## The Spectrum: Fifteen Generators, Fifteen Particles
 
 **Fifteen cells hold generators; one of them is an ingredient in a mixture that has not happened yet; and the count closes.**
 
-**Every state, with its colour, its charge, its mass and its scale.**
+**Every state, with its $\mathrm{SU}(3)$ index, its charge, its mass and its scale.**
 
 | particle | count | $\mathrm{SU}(3)$ | $Q$ | mass | scale | from which cell |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -201,24 +201,24 @@ $$
 \underbrace{8+1}_{9\ \text{massless}}+\underbrace{3+3}_{6\ \text{heavy}}=15 .
 $$
 
-**Two zeros and one reason.** The gluons and $B'$ are massless because **no vacuum of this model breaks colour or $B-L$**: the condensate that does the breaking carries $B-L=0$ on the colour block and its action on the $(t,t)$ direction is the one it uses to eat the sextet. **Everything that ever gives $B'$ a mass happens downstream**, when a second vacuum mixes it with directions this model does not have. **A spectrum that gave two different reasons for the two zeros would be wrong about one of them**, and the honest statement is that both zeros are the same zero: the symmetric phase has fifteen massless fields and the transition gives mass to exactly six.
+**Two zeros and one reason.** The gluons and $B'$ are massless because **no vacuum of this model breaks the strong group or $B-L$**: the condensate that does the breaking carries $B-L=0$ on the spatial block and its action on the $(t,t)$ direction is the one it uses to eat the sextet. **Everything that ever gives $B'$ a mass happens downstream**, when a second vacuum mixes it with directions this model does not have. **A spectrum that gave two different reasons for the two zeros would be wrong about one of them**, and the honest statement is that both zeros are the same zero: the symmetric phase has fifteen massless fields and the transition gives mass to exactly six.
 
-**The only coloured massive states.** The six leptoquarks are the only coloured massive states in the theory. **Colour is never broken**, so the objects that carry colour and mass at once are exactly the six that mix the lepton line with the colour lines.
+**The only non-singlet massive states.** The six leptoquarks are the only non-singlet massive states in the theory. **The strong group is never broken**, so the objects that carry the strong charge and mass at once are exactly the six that mix the lepton line with the spatial lines.
 
 ## The Nine Generators Touching the $t$ Index
 
-**One arrangement fact, and it is the grid's own.** Nine generators have a nonzero entry in the $t$ row or the $t$ column. **In the grid they are visible without any computation**: everything in the $t$ row, everything in the $t$ column, and the three diagonal directions, each of which occupies the corner and one colour cell.
+**One arrangement fact, and it is the grid's own.** Nine generators have a nonzero entry in the $t$ row or the $t$ column. **In the grid they are visible without any computation**: everything in the $t$ row, everything in the $t$ column, and the three diagonal directions, each of which occupies the corner and one spatial cell.
 
 | what it does with the $t$ line | cells | count | names |
 | --- | --- | --- | --- |
-| carries it out into colour | the $t$ column below the corner | $3$ | $X^{r},X^{g},X^{b}$ |
-| carries colour into it | the $t$ row right of the corner | $3$ | $\bar X^{r},\bar X^{g},\bar X^{b}$ |
+| carries it out into a spatial line | the $t$ column below the corner | $3$ | $X^{r},X^{g},X^{b}$ |
+| carries a spatial line into it | the $t$ row right of the corner | $3$ | $\bar X^{r},\bar X^{g},\bar X^{b}$ |
 | reads it without moving it | the corner, shared by all three | $3$ | $M_{x},M_{y},M_{z}$; their sum is $B'$ |
-| does not touch it | the $3\times3$ colour block | $8$ | $g_{1}\dots g_{8}$ |
+| does not touch it | the $3\times3$ spatial block | $8$ | $g_{1}\dots g_{8}$ |
 
-$3+3+3=9$, and the last $3$ is the diagonal. **So the sextet is exactly the set of connections that can change the lepton number, the three diagonal directions read it, and the eight gluons are the block that cannot.** **The count of nine is the frame's; in the colour-adapted basis the reading set is written as one array $iD$ and two colour diagonals, and $7$ is that basis' arithmetic, not the algebra's.** What is invariant is the function: six move the lepton line, three read it, eight neither.
+$3+3+3=9$, and the last $3$ is the diagonal. **So the sextet is exactly the set of connections that can change the lepton number, the three diagonal directions read it, and the eight gluons are the block that cannot.** **The count of nine is the frame's; in the block-adapted basis the reading set is written as one array $iD$ and two spatial diagonals, and $7$ is that basis' arithmetic, not the algebra's.** What is invariant is the function: six move the lepton line, three read it, eight neither.
 
-> **What this is not.** The $t$ index is the algebra's time unit, so "touching the $t$ index" is the algebra's own statement. **It does not follow that these seven are spacetime objects**: they are internal redundant directions that happen to touch the coordinate $e_t$, and the identification of the four coordinates with colour is the declaration.
+> **What this is not.** The $t$ index is the algebra's time unit, so "touching the $t$ index" is the algebra's own statement. **It does not follow that these seven are spacetime objects**: they are internal redundant directions that happen to touch the coordinate $e_t$, and the identification of the four coordinates with the four line letters is the declaration.
 
 ## Two Misreadings, and What the Count Says Instead
 
@@ -226,7 +226,7 @@ $3+3+3=9$, and the last $3$ is the diagonal. **So the sextet is exactly the set 
 
 Of the fifteen, **eight are gluons, one is the $B-L$ boson $B'$ and six are leptoquarks**. Seven of the fifteen are therefore not the strong interaction, and the correct sentence is exact: *eight of the fifteen are the gluons; one is the $B-L$ boson, the sum $D=M_x+M_y+M_z$ of the three diagonal arrays; six are leptoquarks.* **The seven is a count of functions and not of arrays: the three diagonal arrays supply the eight's two Cartan directions and $B'$ at once.**
 
-**The second error is that the six are not one object.** The six of the mixed band are not the six of the two $\mathrm{SU}(2)$'s. Each half is a combination of one mixed plane and one colour plane,
+**The second error is that the six are not one object.** The six of the mixed band are not the six of the two $\mathrm{SU}(2)$'s. Each half is a combination of one mixed plane and one spatial plane,
 
 $$
 T^{L}_{x}=-\tfrac12\bigl(A_{tx}+A_{yz}\bigr),\qquad
@@ -235,12 +235,12 @@ $$
 
 so with the normalisation $\operatorname{tr}(X^{\dagger}Y)=2\delta$, **exactly half of its norm sits in $\mathfrak{su}(3)$ and half in the mixed band**. Two consequences follow, and both are exact:
 
-- $T^{L}_{a}$ and $T^{R}_{a}$ have the **same** mixed half, so $T^{L}_{a}-T^{R}_{a}$ is pure colour and no band direction is owed to either of them;
+- $T^{L}_{a}$ and $T^{R}_{a}$ have the **same** mixed half, so $T^{L}_{a}-T^{R}_{a}$ is pure spatial and no band direction is owed to either of them;
 - the six composites therefore span only **three** of the six band directions. **A redundant basis reads the six twice; it adds nothing to the fifteen.**
 
 **The qualifier matters, and it is where the corpus changes register.** Inside $\mathfrak{su}(4)$ the composites are not new directions, and the algebra stays fifteen-dimensional. **At $M_C$ they are new fields all the same**, six redundant directions born with the copy index while the six leptoquarks acquire mass — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). So the count of massless vectors does not fall at the transition: six leave the kernel of $\operatorname{ad}(iD)$ and six arrive beside it.
 
-**What is left of the sentence, and it is the useful part.** Three of the six are the weak isospin the Standard Model keeps, and three belong to a factor the Standard Model does not keep, one direction of which is the raw material of hypercharge. **That sentence is about the four-factor phase, not about the fifteen**, and it is stated in [The Algebra of the Two Sectors](the-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html).
+**What is left of the sentence, and it is the useful part.** Three of the six are the weak isospin the Standard Model keeps, and three belong to a factor the Standard Model does not keep, one direction of which is the raw material of hypercharge. **That sentence is about the four-factor phase, not about the fifteen**, and it is stated in [The Algebra of the Two Sectors](the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html).
 
 ## The Six Arrays of $\mathfrak{so}(4)$ Are Not on the Grid Either
 
@@ -253,11 +253,11 @@ T^{L}_{x}=-\tfrac12\bigl(A_{tx}+A_{yz}\bigr),\qquad
 T^{R}_{x}=-\tfrac12\bigl(A_{tx}-A_{yz}\bigr),
 $$
 
-and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colour plane, so no single cell holds one of them.** They are half in the mixed band and half in the colour block.
+and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one spatial plane, so no single cell holds one of them.** They are half in the mixed band and half in the spatial block.
 
-**What this costs the classification.** A reader who tries to place the six on the grid will place each of them twice, once in the mixed band and once in the colour block, **and will then find the band double-counted.** The grid classifies the fifteen generators in the basis where each direction has one home; **the six $\mathfrak{so}(4)$ arrays are a different basis of a six-dimensional subspace, and they have no cells.**
+**What this costs the classification.** A reader who tries to place the six on the grid will place each of them twice, once in the mixed band and once in the spatial block, **and will then find the band double-counted.** The grid classifies the fifteen generators in the basis where each direction has one home; **the six $\mathfrak{so}(4)$ arrays are a different basis of a six-dimensional subspace, and they have no cells.**
 
-**What happens to them at the transition, and it is the decisive fact.** The condensate gives $32v^{2}$ to the three mixed planes and $0$ to the three colour planes, so **each of the six arrays is half heavy and half massless**:
+**What happens to them at the transition, and it is the decisive fact.** The condensate gives $32v^{2}$ to the three mixed planes and $0$ to the three spatial planes, so **each of the six arrays is half heavy and half massless**:
 
 | array | its two halves | $m^{2}$ of each half | a particle? |
 | --- | --- | --- | --- |
@@ -265,7 +265,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 | $T^{R}_{x}$ | $A_{tx}$, $A_{yz}$ | $32v^{2}$, $0$ | no |
 | the other four | the same pattern | $32v^{2}$, $0$ | no |
 
-**A sum of a heavy and a massless state is a coherence, not a particle**, and that is why these six are absent from the spectrum table. **They are the six that the four-factor phase will name, and they are not six particles here.** The theorem is [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html); the reading is [The Real $\mathfrak{so}(4)$ Inside the Fifteen](the-su4-model-four-colours-fifteen-generators-one-declaration.html).
+**A sum of a heavy and a massless state is a coherence, not a particle**, and that is why these six are absent from the spectrum table. **They are the six that the four-factor phase will name, and they are not six particles here.** The theorem is [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html); the reading is [The Real $\mathfrak{so}(4)$ Inside the Fifteen](the-su4-model-four-lines-fifteen-generators-one-declaration.html).
 
 ## Where the Five Names of the Corner Come From
 
@@ -305,7 +305,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 | --- | --- | --- |
 | "the six" | the sextet's six cells against the six $\mathfrak{so}(4)$ arrays; not the same six | *the leptoquark sextet*, *the six planes of $\mathfrak{so}(4)$* |
 | "neutral" | the $B'$ direction against the three neutral directions below $M_C$ | *the $B'$ direction*, *the neutral sector* (below $M_C$ only) |
-| "colour" | the four labels, the lepton line, the three, and "colour triplet" | *the four*, *the fourth line*, *the three*, *colour triplet* |
+| the retired word, [Conceptual Conventions](conceptual-conventions.html) | the four labels, the lepton line, the three, and "triplet" | *the four*, *the fourth line*, *the three*, *triplet* |
 | "mass" | the quaternionic norm, the finite mass $m$, an eigenvalue, and a scale | name which of the four |
 | "$X$" | six particles in two charge classes | $X^{\alpha}$ and $\bar X^{\alpha}$ |
 | "$B$" | the $(t,t)$ cell against the hypercharge field | $B'$ or $C$ for the cell, $B$ for hypercharge |
@@ -320,7 +320,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 
 **Robust, in the sense that no choice of basis or declaration changes it.** The dimension fifteen; the rank three; the block structure $6+9+1$; the corner's entry $-3$; the sextet's charge $\pm\tfrac23$; the mass $32v^{2}$ on exactly six planes; the seven cells touching $t$.
 
-**Robust given the declaration (A).** The names: which cell is the lepton, which three are colour, and therefore which six are leptoquarks. **A different assignment of the line would rename the whole grid and change no count.**
+**Robust given the declaration (A).** The names: which cell is the lepton, which three are spatial, and therefore which six are leptoquarks. **A different assignment of the line would rename the whole grid and change no count.**
 
 **Bookkeeping, and stated as such.** The choice of which diagonal combination is called $B-L$ and which two are called $T^{c}_{3}$ and $T^{c}_{8}$; the numbering of the gluons; the symbol $B'$.
 
@@ -335,7 +335,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 | its generators | $16-1$ | $15$ |
 | its four blocks | $6+9+1$ cells | $16$ |
 | its generators by block | $6+8+1$ | $15$ |
-| the corner | $(t,t)$ entry against the colour trace | $-3$ against $1+1+1$ |
+| the corner | $(t,t)$ entry against the trace over the triplet index | $-3$ against $1+1+1$ |
 | the trace over the quartet | $-3+1+1+1$ | $0$ |
 | the sextet | $3$ pairs $\times2$ directions | $6$ |
 | the sextet's charge | $\tfrac12\bigl(\tfrac13-(-1)\bigr)$ | $\pm\tfrac23$ |
@@ -353,10 +353,10 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 | the rank | maximal torus | $3$ |
 | the surviving algebra after the transition | $\mathfrak{su}(3)\oplus\mathfrak u(1)$, $8+1$ | $9=\dim$ |
 | the heavy count as the complement | $15-9$ | $6$ |
-| the six $\mathfrak{so}(4)$ arrays on the grid | each half mixed, half colour | no cells |
+| the six $\mathfrak{so}(4)$ arrays on the grid | each half mixed, half spatial | no cells |
 | the off-diagonal and diagonal split | $12+3$ | $15$, the same in both phases |
 | the branching below $M_C$ | $\mathbf 8_0\oplus\mathbf 3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}\oplus\mathbf1_0$ | $8+3+3+1=15$ |
-| the octet's composition | six colour–colour $+$ two Cartan | $8$ |
+| the octet's composition | six spatial planes $+$ two Cartan | $8$ |
 | the vector count across the transition | $15$ massless, then $9+6$ | $15$, unchanged |
 | the Cartan charge of a diagonal direction | $[H,H']=0$ | $0$ |
 
@@ -370,7 +370,7 @@ A plane is not an array. Three geometric pairs carry six arrays; the sextet is t
 
 A name is not a direction. The six $\mathfrak{so}(4)$ arrays are names on a rotated basis of a six-dimensional subspace, and they have no cells.
 
-A name is not a charge. *Gluon* names a boson of the $\mathrm{SU}(3)$ factor, and that factor is made local only below $M_C$; above it the same eight are directions of $\mathfrak{su}(4)$, named by the lines they move. **The label $r\bar g$ on a cell is an index statement in both phases and a colour–anticolour statement in one.**
+A name is not a charge. *Gluon* names a boson of the $\mathrm{SU}(3)$ factor, and that factor is made local only below $M_C$; above it the same eight are directions of $\mathfrak{su}(4)$, named by the lines they move. **The label $r\bar g$ on a cell is an index statement in both phases and a triplet–antitriplet statement in one.**
 
 Massless is not unbroken forever. The nine are massless in this model; **$B'$ acquires a mass downstream, and the gluons never do.**
 
@@ -378,17 +378,17 @@ Fifteen, and not twenty-one at this scale. **The four particles $W^{\pm}$, $Z$ a
 
 ## Summary
 
-**One grid, sixteen cells, fifteen generators, three blocks.** Six leptoquarks in the mixed band, eight gluons in the colour square, $B'$ in the diagonal, and the trace removed by the definition of $\mathrm{SU}(4)$. **The diagonal holds three generators, not one, and $B'$ is their sum.**
+**One grid, sixteen cells, fifteen generators, three blocks.** Six leptoquarks in the mixed band, eight gluons in the spatial square, $B'$ in the diagonal, and the trace removed by the definition of $\mathrm{SU}(4)$. **The diagonal holds three generators, not one, and $B'$ is their sum.**
 
-**The corner is forced and that is charge quantisation.** $B-L=\tfrac13\operatorname{diag}(-3,1,1,1)$, with $-3$ equal to minus the colour trace, and the vanishing trace is the same statement.
+**The corner is forced and that is charge quantisation.** $B-L=\tfrac13\operatorname{diag}(-3,1,1,1)$, with $-3$ equal to minus the trace over the triplet index, and the vanishing trace is the same statement.
 
 **The spectrum is nine and six below $M_C$, and fifteen and zero above it.** Eight gluons and $B'$ massless, six leptoquarks at $32v^{2}$, once the condensate exists. **Before it, the count is fifteen massless and not nine**, the six leptoquarks included, and **two zeros with one reason**: the symmetric phase has fifteen massless fields and the transition gives mass to exactly six.
 
-**And the names belong to the second phase.** *Gluon* names a boson of an unbroken $\mathrm{SU}(3)$ factor, which exists only below $M_C$; above it the eight are the six colour–colour off-diagonals and the two colour diagonals, named by what they connect and not by a group. **The octet is $6+2$, nothing is created at the transition, and the one thing that changes for the two diagonals is which group they belong to.**
+**And the names belong to the second phase.** *Gluon* names a boson of an unbroken $\mathrm{SU}(3)$ factor, which exists only below $M_C$; above it the eight are the six spatial–spatial off-diagonals and the two spatial diagonals, named by what they connect and not by a group. **The octet is $6+2$, nothing is created at the transition, and the one thing that changes for the two diagonals is which group they belong to.**
 
 **The photon, the $Z$, the $W$'s and the $Z_R$ are absent, and their absence is the frame.** They need two weak factors, three neutral directions, a second vacuum and a mixing angle — **all of them born at the transition, none of them a cell of this grid.**
 
-**Nine generators touch the lepton line**, six that carry it into colour and three that read it: **exactly the connections that can change the lepton number, and the diagonal directions that measure it.** **The seven of the colour-adapted basis is the same physics written with $B'$ as one array; the frame prints it as three.**
+**Nine generators touch the lepton line**, six that carry it into the spatial lines and three that read it: **exactly the connections that can change the lepton number, and the diagonal directions that measure it.** **The seven of the block-adapted basis is the same physics written with $B'$ as one array; the frame prints it as three.**
 
 ## Summary of Notation
 
@@ -399,14 +399,14 @@ Fifteen, and not twenty-one at this scale. **The four particles $W^{\pm}$, $Z$ a
 | $M_{j}=E_{jj}-E_{tt}$ | the three diagonal generators, the symmetric frame |
 | $X^{\alpha}$, $\bar X^{\alpha}$ | the leptoquark and its reverse amplitude, $\alpha=r,g,b$ |
 | $g_{1}\dots g_{8}$ | the gluon octet |
-| $T^{c}_{3}$, $T^{c}_{8}$ | the two colour Cartans |
+| $T^{c}_{3}$, $T^{c}_{8}$ | the two $\mathfrak{su}(3)$ Cartans |
 | $\mathfrak m$ | the sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$ |
-| $Ξ$ | the fourth-colour scalar, $16$ real components |
+| $Ξ$ | the fourth-line scalar, $16$ real components |
 | $32v^{2}$ | the sextet's mass eigenvalue below $M_C$; above $M_C$ the sextet's mass is $0$ |
 
 ## Further Reading
 
-- [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The group, the declaration, and the real $\mathfrak{so}(4)$ inside the fifteen.
+- [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The group, the declaration, and the real $\mathfrak{so}(4)$ inside the fifteen.
 - [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html). The vocabulary: cell, pair, array, direction.
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). Every generator printed.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Where $32v^{2}$ on six planes comes from.

@@ -47,7 +47,7 @@ Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument 
 
 The framework supplies the first two as different objects and the third as a statement about the module's symmetry quantum numbers, and it is precisely the *difference* of the two masses that produces the suppression.
 
-**The singlet is anomaly-silent.** A right-handed neutrino is a symmetry singlet: vanishing colour and weak charge and vanishing hypercharge. As the companion article on anomalies records, it therefore contributes zero to every anomaly cancellation condition, and a Majorana mass for it is forbidden by no consistency requirement. The heavy state that the seesaw needs is thus invisible to the anomaly constraints that fix the rest of the spectrum — the fermion-sector reason the mechanism is available at all.
+**The singlet is anomaly-silent.** A right-handed neutrino is a symmetry singlet: vanishing triplet and weak charge and vanishing hypercharge. As the companion article on anomalies records, it therefore contributes zero to every anomaly cancellation condition, and a Majorana mass for it is forbidden by no consistency requirement. The heavy state that the seesaw needs is thus invisible to the anomaly constraints that fix the rest of the spectrum — the fermion-sector reason the mechanism is available at all.
 
 ## The Type-I Seesaw: Mass Matrix and Diagonalisation
 

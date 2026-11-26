@@ -8,7 +8,7 @@ The framework's contribution is specific. A lattice link variable is the paralle
 $$
 2\,\mathrm{Sc}\,\tilde U=2\,\mathrm{Re}(\tilde U_0)\in[-2,2],
 $$
-for $\tilde U=\tilde U_te_t+\tilde U_x\vec e_x+\tilde U_y\vec e_y+\tilde U_z\vec e_z$. Throughout this article a trace of a group element, a link or a link product is written as twice its scalar part, $2\,\mathrm{Sc}\,\tilde X$; a trace applied to a field strength is the trace on the $\mathrm{SU}(2)$ colour factor. The action is bounded below and the measure is bounded above, and the path integral converges without a formal fixing the representative determinant. This is the structural reason the lattice is the natural non-perturbative regulator for the framework: the nonlinearity that obstructs the continuum measure — the group-valued link — is exactly the compactness that makes the lattice measure finite.
+for $\tilde U=\tilde U_te_t+\tilde U_x\vec e_x+\tilde U_y\vec e_y+\tilde U_z\vec e_z$. Throughout this article a trace of a group element, a link or a link product is written as twice its scalar part, $2\,\mathrm{Sc}\,\tilde X$; a trace applied to a field strength is the trace on the $\mathrm{SU}(2)$ group factor. The action is bounded below and the measure is bounded above, and the path integral converges without a formal fixing the representative determinant. This is the structural reason the lattice is the natural non-perturbative regulator for the framework: the nonlinearity that obstructs the continuum measure — the group-valued link — is exactly the compactness that makes the lattice measure finite.
 
 The article is organized as follows. The next section states why a regulator is needed and what the lattice supplies. A section constructs the lattice carrier: sites, links, the group-valued variable and its transformation law. A section derives the plaquette and the Wilson action and shows that its naive continuum limit is the Yang–Mills density of the companion articles, with the coupling normalization fixed. A section defines the lattice path integral and its measure, and records the transfer-matrix and reflection-positivity properties on which the **physical interpretation** rests. A section carries out the strong-coupling expansion, obtains the area law and the string tension, and identifies confinement. A section takes the continuum limit and fixes the place of the lattice in the renormalization group. A closing section separates what the algebra supplies from what is imported.
 
@@ -227,7 +227,7 @@ Three remarks place the construction.
 
 **Imported, and left visible.** The Wilson action and the plaquette construction; the strong-coupling expansion and the group integral identities; the area law and the string tension; the transfer matrix and reflection positivity; the continuum limit and the renormalization-group relation between $a$ and the coupling; and the lattice results on the deconfinement transition. The algebra supplies the carrier and the normalization; the analysis is standard lattice connection theory.
 
-**Not supplied.** The lattice does not add a new symmetry group: it regularizes the compact factor the algebra contains, so it is the $SU(2)$ theory. It does not supply the fermion content, the chiral structure or the colour octet. It does not by itself prove confinement beyond the strong-coupling regime, and it does not supply a continuum construction of the non-abelian measure without a limit. As everywhere in the series, no empirical content is added.
+**Not supplied.** The lattice does not add a new symmetry group: it regularizes the compact factor the algebra contains, so it is the $SU(2)$ theory. It does not supply the fermion content, the chiral structure or the octet. It does not by itself prove confinement beyond the strong-coupling regime, and it does not supply a continuum construction of the non-abelian measure without a limit. As everywhere in the series, no empirical content is added.
 
 ## The Orders as a Discrete Spacetime Lattice
 
@@ -292,7 +292,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $\langle\mathrm{Sc}\,\tilde U_{\Box,\Phi}\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
 | $b_0=\tfrac{11}{3}C_2(G)=\tfrac{22}{3}$ | One-loop coefficient for pure $SU(2)$ |
 | $\delta_{\imath\jmath}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
-| $a,b$ | Colour indices, written low; the lattice spacing is also written $a$ and is a length, not an index |
+| $a,b$ | Indices, written low; the lattice spacing is also written $a$ and is a length, not an index |
 
 ## Further Reading
 

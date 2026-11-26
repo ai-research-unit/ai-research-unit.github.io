@@ -220,7 +220,7 @@ $$
 | $\{x,z\}$ | $W_{xz}=N_{xz}$, $W_{zx}=N_{zx}$ | $-S_{xz}$ | $-S_{ty}$ |
 | $\{y,z\}$ | $W_{yz}=N_{yz}$, $W_{zy}=N_{zy}$ | $-S_{yz}$ | $+S_{tx}$ |
 
-**Read the third column as one sentence.** The half-sum is always **minus** the array on the pair's own two indices; the half-difference is **plus or minus** the array on the complementary pair. **Take the pair $\{t,a\}$: the agreement is the plane $\{t,a\}$, which is a leptoquark plane, and the disagreement is the plane $\{b,c\}$, which is a colour plane.** Take the pair $\{b,c\}$: the agreement is the real colour array $-S_{bc}$ and the disagreement is the real leptoquark array $\pm S_{ta}$.
+**Read the third column as one sentence.** The half-sum is always **minus** the array on the pair's own two indices; the half-difference is **plus or minus** the array on the complementary pair. **Take the pair $\{t,a\}$: the agreement is the plane $\{t,a\}$, which is a leptoquark plane, and the disagreement is the plane $\{b,c\}$, which is a spatial plane.** Take the pair $\{b,c\}$: the agreement is the real spatial array $-S_{bc}$ and the disagreement is the real leptoquark array $\pm S_{ta}$.
 
 **Six of the twelve outputs are generators as they stand and six are not.** The three outputs on a pair $\{t,a\}$ are real antisymmetric, $A_{ta}$ and $A_{bc}$, which is $\mathfrak{su}(4)$ already; the three outputs on a pair $\{b,c\}$ are real symmetric, $S_{bc}$ and $S_{ta}$, and they take the factor $i$ of Step 2 like the other symmetric words. **That is why the displays below write $iS_{jk}$ and not $S_{jk}$, and it is the same rule as before, not a second one.**
 
@@ -229,7 +229,7 @@ $$
 A_{ta}=-\tfrac12\bigl(W_{ta}+W_{at}\bigr),\qquad
 A_{bc}=+\tfrac12\bigl(W_{ta}-W_{at}\bigr),
 $$
-**and this is the sentence the model is built on**: the leptoquark plane is where left and right multiplication agree, and the colour plane is where they disagree. **The half is what makes these two lines integral.**
+**and this is the sentence the model is built on**: the leptoquark plane is where left and right multiplication agree, and the spatial plane is where they disagree. **The half is what makes these two lines integral.**
 
 **The six mixed planes, three displays.** $A_{jk}=E_{jk}-E_{kj}$ and $iS_{jk}=i(E_{jk}+E_{kj})$.
 
@@ -245,7 +245,7 @@ $$
 A_{tz}=\begin{pmatrix}0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ -1 & 0 & 0 & 0\end{pmatrix},\qquad iS_{tz}=\begin{pmatrix}0 & 0 & 0 & i \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & 0\end{pmatrix}
 $$
 
-**The six colour arrays, three displays.**
+**The six spatial arrays, three displays.**
 
 $$
 A_{xy}=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix},\qquad iS_{xy}=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix}
@@ -279,13 +279,13 @@ $$
 $$
 d_2=\tfrac i2\bigl(M_x-M_y\bigr),\qquad d_3=\tfrac i2\bigl(M_y-M_z\bigr),
 $$
-so the two colour diagonals $T^{c}_{3}$, $T^{c}_{8}$ are the two differences and $B'$ is the sum, exactly as before; what changes is that the frame does not put $iD$ in the list.
+so the two spatial diagonals $T^{c}_{3}$, $T^{c}_{8}$ are the two differences and $B'$ is the sum, exactly as before; what changes is that the frame does not put $iD$ in the list.
 
 **One array worked from end to end, because the mechanism is worth seeing once.**
 $$
 \tfrac12\bigl(W_{tx}+W_{xt}\bigr)=\tfrac12\left[\begin{pmatrix}0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0\end{pmatrix}+\begin{pmatrix}0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0\end{pmatrix}\right]=\begin{pmatrix}0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix}=-A_{tx}
 $$
-**The two words of the pair agree on the plane $\{t,x\}$ and disagree on $\{y,z\}$; the sum kills the disagreement; the survivor is one leptoquark plane.** The first display of the colour group does the same on the imaginary side: $iS_{tz}=i\tfrac12(W_{xy}-W_{yx})$ keeps $\{t,z\}$.
+**The two words of the pair agree on the plane $\{t,x\}$ and disagree on $\{y,z\}$; the sum kills the disagreement; the survivor is one leptoquark plane.** The first display of the strong group does the same on the imaginary side: $iS_{tz}=i\tfrac12(W_{xy}-W_{yx})$ keeps $\{t,z\}$.
 
 **The count.** Six pairs give twelve arrays, the three diagonal words give three, $12+3=15$. **The arithmetic of the construction is the arithmetic of the grid**: twelve off-diagonal planes and three diagonal arrays.
 
@@ -303,7 +303,7 @@ T^{R}_{a}=-\tfrac12\bigl(A_{ta}-\epsilon_{abc}A_{bc}\bigr).
 $$
 **The $\epsilon$ is a convention and not a sign of the algebra.** $A_{bc}$ is written with $b<c$ throughout, and $\epsilon_{abc}=+1$ when $(a,b,c)$ is a cyclic order of $(x,y,z)$. For $a=x$ and $a=z$ the cyclic pair is already ascending, so the second line reads with a minus; for $a=y$ the cyclic pair is $(z,x)$ and the ascending one is $(x,z)$, so the same array carries the opposite sign. **Write the pairs in cyclic order and $\epsilon=+1$ everywhere; write them with $b<c$ and $\epsilon$ is the price.**
 
-**Check one, in four cells.** The two halves agree on the $\{t,a\}$ block, so their sum keeps it doubled and its half is the leptoquark plane; they differ on the $\{b,c\}$ block, so their difference keeps it doubled and its half is the colour plane. **The half in the definition of $T$ is exactly what makes those two lines integral.**
+**Check one, in four cells.** The two halves agree on the $\{t,a\}$ block, so their sum keeps it doubled and its half is the leptoquark plane; they differ on the $\{b,c\}$ block, so their difference keeps it doubled and its half is the spatial plane. **The half in the definition of $T$ is exactly what makes those two lines integral.**
 
 **Fifteen generators, six halves.** The six relations are independent, so the six add no direction: the rank over $\mathbb{Q}(i)$ — equivalently over $\mathbb{R}$, the entries being Gaussian integers — is fifteen with them and fifteen without them, and each of the six is distinct from the fifteen. **Both statements are needed and neither is a defect**: one array per generator, and six arrays that are two-term sums of the other fifteen.
 
@@ -337,7 +337,7 @@ $$
 $$
 \operatorname{tr}\bigl(M_jM_k\bigr)=2\delta_{jk}+\bigl(1-\delta_{jk}\bigr),\qquad \operatorname{tr}\bigl(t_jt_k\bigr)=\tfrac12\delta_{jk}+\tfrac14\bigl(1-\delta_{jk}\bigr),
 $$
-**which is the array form of the statement that a colour basis is a choice and the algebra is not, and the price of choosing the symmetric one.** The orthogonal frame is the same three directions rotated by an integer matrix,
+**which is the array form of the statement that a basis on the spatial block is a choice and the algebra is not, and the price of choosing the symmetric one.** The orthogonal frame is the same three directions rotated by an integer matrix,
 $$
 A_j=W_{jj}=\sum_kM_k-2M_j,\qquad \operatorname{tr}\bigl(A_jA_k\bigr)=4\delta_{jk},\qquad \operatorname{tr}\bigl(-\tfrac{A_j}{\sqrt8}\,,\,-\tfrac{A_k}{\sqrt8}\bigr)=\tfrac12\delta_{jk},
 $$
@@ -363,7 +363,7 @@ with $\operatorname{tr}(T^{L}_{a}T^{L}_{b})=-\delta_{ab}$ and $\operatorname{tr}
 | block | cells | arrays | bosons |
 | --- | --- | --- | --- |
 | the $t$ row and column, off the corner | $6$ | $A_{ta}$, $iS_{ta}$ | the leptoquark sextet $X^{a}$, $\bar X^{a}$ |
-| the $3\times3$ colour block, off the diagonal | $6$ | $A_{bc}$, $iS_{bc}$ | six colour–colour arrays: the off-diagonal gluons below $M_C$ |
+| the $3\times3$ spatial block, off the diagonal | $6$ | $A_{bc}$, $iS_{bc}$ | six spatial–spatial arrays: the off-diagonal gluons below $M_C$ |
 | the diagonal frame | $4$ cells, $3$ generators | $iM_j$ | the frame; below $M_C$ the two differences $T^{c}_{3}$, $T^{c}_{8}$ and the sum $B'$ |
 | the corner cell | $1$ | none: the trace | not a generator, and $iD$ is the sum of the frame |
 | not on the grid | — | $T^{L}_{a}$ | no particle: half heavy, half massless |
@@ -389,7 +389,7 @@ $$
 | $iM_j$, $j=x,y,z$ | the diagonal, four cells | the frame: above $M_C$ three symmetric directions | $0$ |
 | $d_2=\tfrac i2(M_x-M_y)$, $d_3=\tfrac i2(M_y-M_z)$ | combinations of the frame | $T^{c}_{3}$, $T^{c}_{8}$ | $0$ |
 | $iD=i\sum_jM_j$ | the sum of the frame | $B'$ | $0$ at the first breaking; an ingredient of $\gamma$, $Z$, $Z_R$ |
-| $T^{L}_{a}$, $T^{R}_{a}$ | four cells each: one mixed plane and one colour plane | **no boson** | $32v^{2}$ on one half, $0$ on the other |
+| $T^{L}_{a}$, $T^{R}_{a}$ | four cells each: one mixed plane and one spatial plane | **no boson** | $32v^{2}$ on one half, $0$ on the other |
 
 **Two conventions live in that table, and both are named.** **Which of a plane's two amplitudes carries which of the pair's two names is a choice** — the two names of a mirrored pair could be exchanged without changing a number. **And the real and imaginary amplitudes of one plane are the two components of one complex field**, so calling $A_{tx}$ the particle and $iS_{tx}$ the antiparticle is the $i$ convention and not a physical distinction. **What is not a choice is the count**: fifteen arrays, two amplitudes per plane, one boson per amplitude — **and the six $\mathfrak{so}(4)$ arrays outside the count, which are coherences of a heavy and a massless direction and therefore not bosons at all.**
 
@@ -410,7 +410,7 @@ $$
 M^{2}=\operatorname{diag}\bigl(\underbrace{32v^{2},\dots,32v^{2}}_{6},\underbrace{0,\dots,0}_{9}\bigr).
 $$
 
-**Read $32$ off the eigenvalues.** $32=2\times4^{2}$, and $4=1-(-3)$ is a colour eigenvalue minus the lepton eigenvalue. **Colour is unbroken because $D$ is a multiple of the identity on the colour triple**, and every diagonal direction is untouched because $[iM_j,D]=0$ for all three, so the corner is too; the nine zeros are those two facts and nothing else.
+**Read $32$ off the eigenvalues.** $32=2\times4^{2}$, and $4=1-(-3)$ is a diagonal entry minus the lepton eigenvalue. **The strong group is unbroken because $D$ is a multiple of the identity on the three spatial lines**, and every diagonal direction is untouched because $[iM_j,D]=0$ for all three, so the corner is too; the nine zeros are those two facts and nothing else.
 
 **The matrix has its own article.** [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) derives the matrix from the double commutator, states the commutator lemma that produces it, names the nine-dimensional kernel as $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, and gives the spectrum at a general vacuum.
 
@@ -418,7 +418,7 @@ $$
 
 **They do not boost.** No exponential of the fifteen is a Lorentz boost. The generator of the boost in a plane is the Hermitian $-i$ times the cell, and it is not in the algebra; [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) proves it three ways.
 
-**They do not identify the carrier with spacetime.** The quartet is a formal copy of the carrier, and a rotor of its three-space is a rotor of that three-space. The theorem and its consequence are in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html), §*The Carrier Is a Copy*.
+**They do not identify the carrier with spacetime.** The quartet is a formal copy of the carrier, and a rotor of its three-space is a rotor of that three-space. The theorem and its consequence are in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html), §*The Carrier Is a Copy*.
 
 **They do not fix a coupling.** The model's one coupling is symbolic, so the numbers in the mass column are coefficients of $v^{2}$ and not predictions in kilograms. [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html) records what the model does and does not supply.
 
@@ -453,8 +453,8 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 | $\operatorname{tr}(X^{\dagger}X)$ of the fifteen | $2$ on all fifteen |
 | $iM_x+iM_y+iM_z-iD$ | $0$, exact |
 | Gram of the fifteen off-diagonal | one entry, $+1$ |
-| eight colour generators fix $e_t$ / six mixed move it | $8/8$ / $6/6$ |
-| eight colour generators closed under the bracket | $64/64$ |
+| eight eight generators fix $e_t$ / six mixed move it | $8/8$ / $6/6$ |
+| eight eight generators closed under the bracket | $64/64$ |
 | $M^{2}$ of the fifteen | $32v^{2}$ on the six mixed planes, $0$ on the nine, off-diagonals $0$ |
 | $\exp(\theta A_{tx})$: rotation, $e_t\mapsto(\cos\theta,-\sin\theta,0,0)$ | exact; $0.4$ gives $(0.921061,-0.389418,0,0)$ |
 | $\det\exp(0.7X)=1$ and unitary | $15/15$ and $6/6$ |
@@ -465,7 +465,7 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 
 **The left and right triples differ by one sign on two entries per array**, they commute because the algebra is associative, and their brackets carry opposite signs because right multiplication is an anti-homomorphism. **As two-forms they are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$**, and the six real planes of $\mathfrak{su}(4)$ are their sums and differences: $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-\epsilon_{abc}(T^{L}_{a}-T^{R}_{a})$. Twenty-one arrays, fifteen generators.
 
-**Every property in Part III is one number.** Two cells or four; $2$, $12$ or $1$ under $\operatorname{tr}(X^{\dagger}X)$; spectrum $0,0,\pm i$ or $\pm\tfrac i2$ twice; a real rotation or a complex one. **And every array of the fifteen is one boson**: six leptoquarks, eight gluons and $B'$. **The six $\mathfrak{so}(4)$ arrays are not bosons**: each is half heavy and half massless, and the four-factor phase is what names them. **The mass is $2v^{2}$ times the square of the difference of two eigenvalues of $D$**, which is $32v^{2}$ across the lepton line and zero across anything colour, and that single difference is the whole of the nine-and-six split.
+**Every property in Part III is one number.** Two cells or four; $2$, $12$ or $1$ under $\operatorname{tr}(X^{\dagger}X)$; spectrum $0,0,\pm i$ or $\pm\tfrac i2$ twice; a real rotation or a complex one. **And every array of the fifteen is one boson**: six leptoquarks, eight gluons and $B'$. **The six $\mathfrak{so}(4)$ arrays are not bosons**: each is half heavy and half massless, and the four-factor phase is what names them. **The mass is $2v^{2}$ times the square of the difference of two eigenvalues of $D$**, which is $32v^{2}$ across the lepton line and zero across anything spatial, and that single difference is the whole of the nine-and-six split.
 
 ## Summary of Notation
 
@@ -499,5 +499,5 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 - [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). Every bracket of every array with every other, printed block by block, with the six rules that produce the table.
 - [Classification of the Bosons: Sixteen Cells, Fifteen Generators](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid and the ledger of the spectrum.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Where the four absent particles come from.
-- [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The declaration, the carrier, and the real $\mathfrak{so}(4)$ inside the fifteen.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The declaration, the carrier, and the real $\mathfrak{so}(4)$ inside the fifteen.
 - W. Fulton and J. Harris, *Representation Theory: A First Course*, Springer, 1991 — one-sided actions, the anti-homomorphism of the right action, and why the two commute.

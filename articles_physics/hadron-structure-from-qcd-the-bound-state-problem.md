@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The standing of this article.** Everything below is standard theory, written in the corpus's coordinates and notation. It is **standard input**, not a framework result. Colour is the sharpest declared boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), no compact algebra inside $\mathbb{B}$ has real dimension above four and no $\mathbb{B}$-module has odd complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is transcribed, and the article says so before it computes anything.
+**The standing of this article.** Everything below is standard theory, written in the corpus's coordinates and notation. It is **standard input**, not a framework result. The strong group is the sharpest declared boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), no compact algebra inside $\mathbb{B}$ has real dimension above four and no $\mathbb{B}$-module has odd complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is transcribed, and the article says so before it computes anything.
 
-**What this article is actually about.** The previous four articles computed things that perturbation theory can reach: a running coupling, a set of densities, a set of cross sections, and a colour count. This one computes the one number that perturbation theory cannot reach, and it explains why. The proton's mass is the cleanest demonstration in physics that a quantum field theory can generate a scale it does not contain — and the demonstration is not a metaphor, it is a computation that agrees with the measured number to one per cent.
+**What this article is actually about.** The previous four articles computed things that perturbation theory can reach: a running coupling, a set of densities, a set of cross sections, and a triplet count. This one computes the one number that perturbation theory cannot reach, and it explains why. The proton's mass is the cleanest demonstration in physics that a quantum field theory can generate a scale it does not contain — and the demonstration is not a metaphor, it is a computation that agrees with the measured number to one per cent.
 
 **The claim, in four parts.**
 
@@ -33,7 +33,7 @@ $$
 \frac{336}{2.16}=156 ,
 $$
 
-so $99.4\%$ of a constituent quark's mass is not the quark's mass. A constituent quark is a quark plus its share of the colour field, and the model has renamed the binding energy as a mass.
+so $99.4\%$ of a constituent quark's mass is not the quark's mass. A constituent quark is a quark plus its share of the strong field, and the model has renamed the binding energy as a mass.
 
 **The statement the numbers force.** The proton's mass is the energy of its own field configuration, and the only reason it is a *mass* rather than an energy is that special relativity converts field energy into rest mass. This is not a poetic reading; it is what the trace of the energy–momentum tensor says, and the next section makes it an equation.
 
@@ -282,7 +282,7 @@ against the predicted $0.184$. The difference of $0.008$ is the size of the high
 
 **What it supplies.** The proton as an effective spin-$\tfrac12$ field of $\mathbb{B}$, established in [The Proton](the-proton-in-biquaternionic-form.html) and [The Neutron](the-neutron-in-biquaternionic-form.html): a Dirac field whose charge operator and magnetic moment are computed, and whose compositeness is absorbed into imported parameters. The chiral condensate as an order parameter with a gap equation and a critical coupling, in [the condensate article](the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html). The conformal anomaly as a central scalar coefficient of the determinant, in [the conformal anomaly article](the-conformal-anomaly-in-biquaternionic-form.html). The group manifold on which a winding number lives, in [the Skyrme article](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html). And the lattice formulation itself, in [the lattice article](lattice-connection-theory-and-the-biquaternion-path-integral.html), which is where the numerical route of this article is set out.
 
-**What it does not supply, stated as a declaration.** No colour triplet, so no quarks in the algebraic sense. No gluon. No Wilson loop, no area law, no string tension. No many-body bound-state formalism. No measure on which $\int d^3p/2E$ is an algebraic operation. The bound-state problem of this article is therefore entirely standard physics, transcribed into the corpus's notation, and the framework's role is to say what it can represent and to say so plainly.
+**What it does not supply, stated as a declaration.** No triplet, so no quarks in the algebraic sense. No gluon. No Wilson loop, no area law, no string tension. No many-body bound-state formalism. No measure on which $\int d^3p/2E$ is an algebraic operation. The bound-state problem of this article is therefore entirely standard physics, transcribed into the corpus's notation, and the framework's role is to say what it can represent and to say so plainly.
 
 **The ledger.**
 
@@ -302,7 +302,7 @@ against the predicted $0.184$. The difference of $0.008$ is the size of the high
 | The Bjorken sum rule and its series | **Imported**; the three-term table computed here |
 | The proton as an effective $\mathbb{B}$ field | **Framework**: represented, not composed |
 | The condensate, the anomaly's central term, the winding number | **Framework**: each in its own article |
-| Colour, confinement, the string tension, a many-body formalism | **Not available**, per the ceiling |
+| The strong group, confinement, the string tension, a many-body formalism | **Not available**, per the ceiling |
 
 **What this article does not do.** It does not compute a lattice correlator, does not solve the Skyrme profile, does not fit $\sigma_{\pi N}$, and does not prove the spin sum rule's scheme independence. It states the decomposition, computes every arithmetic consequence it quotes, and marks the boundary.
 
@@ -318,7 +318,7 @@ The spin decomposes as $\tfrac12=\tfrac12(0.32)+0.09+0.25$: a third from quark s
 
 The second grade of answer is achieved: a numerical algorithm with a controlled error and a structural decomposition of the mass. The third is not, and is not expected, because QCD at long distance has no small parameter.
 
-The framework represents the proton, the condensate, the anomaly and the winding number, and it declares that it does not supply colour, confinement or a many-body formalism. The bound-state problem is standard physics, transcribed.
+The framework represents the proton, the condensate, the anomaly and the winding number, and it declares that it does not supply the strong group, confinement or a many-body formalism. The bound-state problem is standard physics, transcribed.
 
 ## Summary of Notation
 
@@ -344,7 +344,7 @@ The framework represents the proton, the condensate, the anomaly and the winding
 | $\Gamma_1^{p-n}$ | First moment of $g_1^p-g_1^n$ |
 | $a$ | Lattice spacing |
 | $m_{\text{const}}$ | Constituent quark mass, $\approx5.99\times10^{-28}\ \mathrm{kg}$ |
-| $N_c$ | Number of colours, $3$ |
+| $N_c$ | The count of spatial lines, $3$ |
 | $\mu_4^2$ | Higher-twist matrix element of the Bjorken sum rule |
 
 ## Further Reading

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The layer.** The sextet is the off-diagonal block of the fifteen, so this article is a statement about the complement of a stabiliser in $\mathfrak{su}(4)$ — and about what a heavy coloured vector does to the experiments that could see it.
+**The layer.** The sextet is the off-diagonal block of the fifteen, so this article is a statement about the complement of a stabiliser in $\mathfrak{su}(4)$ — and about what a heavy non-singlet vector does to the experiments that could see it.
 
 **The question.** What becomes of the six when the primordial force breaks, how heavy are they, and what forbids them from being the weak bosons?
 
@@ -71,7 +71,7 @@ $$
 \qquad 15=8+1+6 .
 $$
 
-**The $B-L$ values are forced by the index structure.** A leptoquark plane carries one lepton index and one colour index; the lepton has $B-L=-1$ and a colour has $B-L=+\tfrac13$, so the difference is
+**The $B-L$ values are forced by the index structure.** A leptoquark plane carries one lepton index and one spatial index; the lepton has $B-L=-1$ and a spatial line has $B-L=+\tfrac13$, so the difference is
 
 $$
 B-L=\pm\left(1+\tfrac13\right)=\pm\tfrac43 ,
@@ -83,7 +83,7 @@ $$
 Q=\pm\tfrac23 .
 $$
 
-**So the sextet is three states of charge $+\tfrac23$ (colour triplet) and three of charge $-\tfrac23$ (colour antitriplet).** No member is neutral, no member is integrally charged, and no member is a colour singlet. **Every one of those three facts will be used in the charge theorem.**
+**So the sextet is three states of charge $+\tfrac23$ (triplet) and three of charge $-\tfrac23$ (antitriplet).** No member is neutral, no member is integrally charged, and no member is a singlet. **Every one of those three facts will be used in the charge theorem.**
 
 **What they do to matter.** A leptoquark converts one quark into one lepton, so $\Delta B=\pm\tfrac13$ per fermion leg, and $B-L$ is conserved because the $X$ carries $\pm\tfrac43$ itself. **The vertex is the model's signature and its liability at once**: it is what a search looks for, and it is what a flavour-changing decay bounds.
 
@@ -130,7 +130,7 @@ $$
 
 **Six extra powers on the rate, and they are the whole of the model's survival.** The two-body mode $p\to e^{+}\pi^{0}$ has no connection contribution at any order, because its final state is two quarks and a lepton while the sector supplies one quark-to-lepton conversion at a time. **The channel to look for is $p\to e^{+}e^{+}e^{-}$, and it is far below reach.**
 
-**The one field that would change it.** A colour antitriplet coupling to two quarks — a diquark — gives dimension six from a single exchange. **The fifteen does not contain one**: its colour triplet carries $B-L=\pm\tfrac43$ and a $qq$ pair carries $+\tfrac23$, so the coupling violates the local $B-L$. **A $(\mathbf{6},\mathbf1,\mathbf1)$ scalar would supply it, and the frame has none.** Add one and the bound becomes
+**The one field that would change it.** An antitriplet coupling to two quarks — a diquark — gives dimension six from a single exchange. **The fifteen does not contain one**: its triplet carries $B-L=\pm\tfrac43$ and a $qq$ pair carries $+\tfrac23$, so the coupling violates the local $B-L$. **A $(\mathbf{6},\mathbf1,\mathbf1)$ scalar would supply it, and the frame has none.** Add one and the bound becomes
 
 $$
 M_\Sigma\gtrsim1.60\times10^{5}\ \mathrm{J}=10^{15}\ \mathrm{GeV}=10^{12}\ \mathrm{TeV},
@@ -144,9 +144,9 @@ $$
 
 **Two reasons, and they are independent.**
 
-**The scale.** A coloured state at $250$ TeV is beyond any collider. Pair production of coloured vectors falls with the square of the mass at fixed energy; **the reach of a hadron collider for such states is a few teraelectronvolts, two orders below the flavour bound.**
+**The scale.** A non-singlet state at $250$ TeV is beyond any collider. Pair production of non-singlet vectors falls with the square of the mass at fixed energy; **the reach of a hadron collider for such states is a few teraelectronvolts, two orders below the flavour bound.**
 
-**The quantum numbers.** Even at reach, the signature is unusual: a charge-$\tfrac23$ colour triplet decaying to a quark and a lepton, with no missing energy and no resonance in a standard channel. **The searches exist and are quoted in the companion article; the conclusion is a null result that constrains nothing beyond what $K_L\to\mu e$ already constrains.**
+**The quantum numbers.** Even at reach, the signature is unusual: a charge-$\tfrac23$ triplet decaying to a quark and a lepton, with no missing energy and no resonance in a standard channel. **The searches exist and are quoted in the companion article; the conclusion is a null result that constrains nothing beyond what $K_L\to\mu e$ already constrains.**
 
 **The honest position, and it is the corpus's own.** Six states that should exist and have not been seen is the weakest possible form of failure — nothing is contradicted — and also the most persistent, because it cannot be repaired by a better calculation, only by moving the scale. **A model whose one sharp prediction is a bound rather than a number has not been tested; it has been constrained.**
 
@@ -162,7 +162,7 @@ $$
 \mathbf3_{+4/3}\otimes\bar{\mathbf3}_{-4/3}=\mathbf1_0\oplus\mathbf8_0,
 $$
 
-**where the colour singlet is neutral identically — three spin states, all $Q=0$, no charged vector at all.** Six neutral states is the opposite of four charged and two neutral.
+**where the singlet is neutral identically — three spin states, all $Q=0$, no charged vector at all.** Six neutral states is the opposite of four charged and two neutral.
 
 **The mass.** A bound state weighs at least its confinement scale, and the confinement scale here is the transition scale, $250$ TeV. **An $80$ GeV composite cannot be built from constituents a thousand times heavier.**
 
@@ -198,7 +198,7 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 
 ## Summary
 
-**Identity.** $\mathfrak m=\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$: six states, $Q=\pm\tfrac23$, colour triplet or antitriplet, $B-L=\pm\tfrac43$. Forced by the local fourth colour, and the only coloured massive vectors in the theory — massive below $M_C$.
+**Identity.** $\mathfrak m=\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$: six states, $Q=\pm\tfrac23$, triplet or antitriplet, $B-L=\pm\tfrac43$. Forced by the local fourth line, and the only non-singlet massive vectors in the theory — massive below $M_C$.
 
 **Fate.** Massless above $M_C$, eaten at the transition, heavy below it. Two registers of one event, not two claims.
 

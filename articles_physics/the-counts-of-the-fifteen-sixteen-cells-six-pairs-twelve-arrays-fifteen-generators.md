@@ -10,7 +10,7 @@
 
 **What is not here.** Three factors would need three grids and $24=4^2+2^2+2^2$ cells. **With one group there is one grid and one copy of the fifteen**, so the ledger is four counts and not six.
 
-**The articles it leans on** are [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html) for the group and the declaration, [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the arrays, [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the grid, and [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) for the count the mass spectrum uses.
+**The articles it leans on** are [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html) for the group and the declaration, [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the arrays, [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the grid, and [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) for the count the mass spectrum uses.
 
 ## The Cell: Sixteen Positions
 
@@ -20,7 +20,7 @@ $$
 4^{2}=16 .
 $$
 
-**A cell is a position and not a generator.** The cell $(i,j)$ is the matrix unit $E_{ij}$; it is not an element of the algebra. **The algebra is the traceless anti-Hermitian part**, so a generator is a combination of cells: an off-diagonal generator occupies two cells, $A_{jk}=E_{jk}-E_{kj}$ or $iS_{jk}=i(E_{jk}+E_{kj})$, and a diagonal generator is a combination of diagonal cells. With $N_{xx},N_{yy},N_{zz}$ the colour diagonal cells and $E_{tt}$ the corner,
+**A cell is a position and not a generator.** The cell $(i,j)$ is the matrix unit $E_{ij}$; it is not an element of the algebra. **The algebra is the traceless anti-Hermitian part**, so a generator is a combination of cells: an off-diagonal generator occupies two cells, $A_{jk}=E_{jk}-E_{kj}$ or $iS_{jk}=i(E_{jk}+E_{kj})$, and a diagonal generator is a combination of diagonal cells. With $N_{xx},N_{yy},N_{zz}$ the spatial diagonal cells and $E_{tt}$ the corner,
 
 $$
 iM_x=i\bigl(N_{xx}-E_{tt}\bigr),\qquad iM_y=i\bigl(N_{yy}-E_{tt}\bigr),\qquad iM_z=i\bigl(N_{zz}-E_{tt}\bigr),
@@ -39,9 +39,9 @@ $$
 | --- | --- | --- |
 | corner | $1$ | $(t,t)$, the single cell that carries $B'$ |
 | mixed band | $6$ | the $t$ row and the $t$ column, off the corner |
-| colour block | $9$ | the $3\times3$ grid on $x,y,z$ |
+| spatial block | $9$ | the $3\times3$ grid on $x,y,z$ |
 
-$1+6+9=16$. **The generator count of the same three blocks is $1+6+8=15$**, because the colour block has nine cells and eight derived generators.
+$1+6+9=16$. **The generator count of the same three blocks is $1+6+8=15$**, because the spatial block has nine cells and eight derived generators.
 
 **Why the cells are counted at all.** The cell count says how many amplitudes a generator moves: two for an off-diagonal array, none for a diagonal one. **The mass articles say "one entry per plane" and the classification says "one name in every cell"**, and both are statements about cells.
 
@@ -55,13 +55,13 @@ $$
 \binom{4}{2}=6
 $$
 
-of them: **three mixed**, $\{t,x\}$, $\{t,y\}$, $\{t,z\}$, and **three colour**, $\{x,y\}$, $\{y,z\}$, $\{z,x\}$.
+of them: **three mixed**, $\{t,x\}$, $\{t,y\}$, $\{t,z\}$, and **three spatial**, $\{x,y\}$, $\{y,z\}$, $\{z,x\}$.
 
 **Each plane carries two arrays.** The real array $A_{jk}=E_{jk}-E_{kj}$ and the imaginary one $iS_{jk}=i(E_{jk}+E_{kj})$ are independent, both lie in the algebra, and both are supported on the same two indices. **So six planes carry twelve arrays, and $12+3=15$ counts the fifteen once the three diagonals are added.**
 
-**The word "plane" is used for the array in the mass articles, and that is the one slide to know.** "The six leptoquark planes" and "$32v^{2}$ on six planes" count arrays: three geometric pairs, each contributing a real and an imaginary array. "The three colour planes" counts geometric pairs, because the colour block is discussed as a block. **Both usages are arithmetically consistent; a sentence that mixes them is not.** The safe form names the object: *the six mixed arrays, on three geometric planes*.
+**The word "plane" is used for the array in the mass articles, and that is the one slide to know.** "The six leptoquark planes" and "$32v^{2}$ on six planes" count arrays: three geometric pairs, each contributing a real and an imaginary array. "The three spatial planes" counts geometric pairs, because the spatial block is discussed as a block. **Both usages are arithmetically consistent; a sentence that mixes them is not.** The safe form names the object: *the six mixed arrays, on three geometric planes*.
 
-**A plane is not a particle.** The three mixed geometric pairs carry six leptoquark states, because each pair carries two amplitudes, $X^{\alpha}$ and $\bar X^{\alpha}$. The three colour pairs carry eight gluons, because the colour block is $\mathfrak{su}(3)$ and not three generators. **So "one plane, one particle" holds for the mixed band and fails for colour**, and the count of particles is neither six nor three.
+**A plane is not a particle.** The three mixed geometric pairs carry six leptoquark states, because each pair carries two amplitudes, $X^{\alpha}$ and $\bar X^{\alpha}$. The three pairs of indices carry eight gluons, because the spatial block is $\mathfrak{su}(3)$ and not three generators. **So "one plane, one particle" holds for the mixed band and fails for the block**, and the count of particles is neither six nor three.
 
 ## The Array: Fifteen Matrices
 
@@ -75,7 +75,7 @@ of them: **three mixed**, $\{t,x\}$, $\{t,y\}$, $\{t,z\}$, and **three colour**,
 
 **Fifteen arrays, fifteen generators, and here the two counts agree** — because the fifteen arrays are a basis. **That agreement is the point of using this basis**, and it is the one register in which the count of printed names and the dimension are the same number.
 
-**The entry twelve is arithmetic about the sum.** $\operatorname{tr}(D^{2})=9+1+1+1=12$: nine from the lepton line and one from each colour line. **No array of the fifteen has that norm; the sum does.** The three generators each have norm two, and $12$ is what three of them add up to, $3\cdot 2+3\cdot 2\cdot 1=12$ across the frame's Gram, since their mutual overlap is one.
+**The entry twelve is arithmetic about the sum.** $\operatorname{tr}(D^{2})=9+1+1+1=12$: nine from the lepton line and one from each spatial line. **No array of the fifteen has that norm; the sum does.** The three generators each have norm two, and $12$ is what three of them add up to, $3\cdot 2+3\cdot 2\cdot 1=12$ across the frame's Gram, since their mutual overlap is one.
 
 **A normalisation that will matter later.** Every one of the fifteen has norm two in the symmetric frame — the twelve planes and the three diagonals alike. **The trace direction has norm twelve and is not among them.** **A mass quoted per generator is basis-independent; a mass quoted per array carries the array's normalisation.** The adjoint mass matrix is written per generator for that reason.
 
@@ -116,7 +116,7 @@ Recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\v
 | check | computation | result |
 | --- | --- | --- |
 | the cell count | $4^{2}$ | $16$ |
-| the pair count | $\binom42$, mixed plus colour | $6=3+3$ |
+| the pair count | $\binom42$, mixed plus spatial | $6=3+3$ |
 | the arrays on the pairs and the diagonals | $12+3$ | $15$ |
 | the rank of the fifteen arrays | real rank of the $15\times32$ matrix | $15$ |
 | the grid in blocks | $1+6+9$ | $16$ |

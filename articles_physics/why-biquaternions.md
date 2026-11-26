@@ -308,7 +308,7 @@ $$
 
 so a connection with values in $\mathfrak{su}(2)$ is a connection on the algebra itself, and instantons and solitons follow from the same product ([Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html), [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html)).
 
-The ceiling is exact and it is stated as a result rather than a hope. The algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$, so colour with three values is outside the carrier ([Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html)). The weak isospin fits; the strong interaction does not, and no construction inside the algebra supplies the third colour.
+The ceiling is exact and it is stated as a result rather than a hope. The algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$, so a three-valued index is outside the carrier ([Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html)). The weak isospin fits; the strong interaction does not, and no construction inside the algebra supplies the third line.
 
 ### Antimatter
 
@@ -374,7 +374,7 @@ So the domain of the word is an algebraic condition, checked at each point. At e
 
 4. **A closing condition for the four brackets.** Whether a second structure, a transport equation for the rotor of the kind the classical-spin literature carries, closes the system canonically is open. Fabbri's nineteen forms are the map of the possibilities, and no member of the map is canonical.
 
-5. **Colour.** The algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$. Whether a larger carrier, or a tensor construction over the algebra, restores three colours without losing the economy of this one, is open.
+5. **The strong group.** The algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$. Whether a larger carrier, or a tensor construction over the algebra, restores three lines without losing the economy of this one, is open.
 
 6. **Curved spacetime.** The framework is flat. The tetrad form of the gradient, the coupling to curvature, and the relation to general relativity remain open.
 
@@ -403,7 +403,7 @@ The Dirac field is where the algebra pays. One element, four complex coefficient
 
 The convergence outside supports this without proving it. Takabayasi, the de Broglie–Bohm programme and Hestenes found the same fluid in three different languages, and spacetime algebra, Clifford analysis, Daviau and the algebraic-spinor tradition found the same object. The convergence is of notations and not of independent authors, which is the weaker and the honest form, and the algebra is the place where the object of the second group produces the structure of the first.
 
-The reach is broad and the ceiling is real. Connections with $\mathfrak{su}(2)$ values, antimatter through the anticommutator, KMS with imaginary time as a coordinate, entropy of the informational sector, and a gravitational programme. No three colours, no curved spacetime yet, and no new number.
+The reach is broad and the ceiling is real. Connections with $\mathfrak{su}(2)$ values, antimatter through the anticommutator, KMS with imaginary time as a coordinate, entropy of the informational sector, and a gravitational programme. No three lines, no curved spacetime yet, and no new number.
 
 The price is stated. The algebra is chirality-blind, so a direction must be declared, and the weak interaction is the physics that requires it. The array display is the other face of the same fact: the gamma set writes a direction and never names it, while the coefficient array writes none, and the $1+3$ the algebra carries is the structure that matches a space with three equal directions. The polar word fails on the zero-divisor cone, the equation continues there, and the flow does not preserve the cone.
 
@@ -460,7 +460,7 @@ The corpus articles, in the order in which this article uses them:
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html). The cone, the phase winding, and the quantum of circulation.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html). The Madelung pair and its relativistic form.
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused). The direction an array display writes, and the axis-free display.
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). $\mathrm{SU}(2)$ from the vector units, and why colour is outside.
+- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). $\mathrm{SU}(2)$ from the vector units, and why the strong group is outside.
 - [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html). Imaginary time as a coordinate.
 - [Coarse-Graining and the Biquaternion Entropy Functional](coarse-graining-and-the-biquaternion-entropy-functional.html). States, entropy, and the null cone.
 - [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html). The anticommutator and the antiparticles.

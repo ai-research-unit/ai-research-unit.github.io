@@ -33,7 +33,7 @@ $$
 
 | operation | object it acts on | what must be true | example in this model |
 | --- | --- | --- | --- |
-| **survives** | a subalgebra | the vacuum is annihilated by it | colour, $\mathrm{SU}(3)_c$ |
+| **survives** | a subalgebra | the vacuum is annihilated by it | the strong group, $\mathrm{SU}(3)_c$ |
 | **breaks** | a complement | the vacuum does not commute with it | the sextet, $\mathfrak m$ |
 | **arrives** | a factor | the transition carries an index | $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ |
 
@@ -41,7 +41,7 @@ $$
 
 **Arrives is a statement of a different kind.** It does not say which piece of the algebra survives; **it says that the list of factors has grown.** No computation on $\mathfrak{su}(4)$ alone can produce it, because the list of factors before the transition has no weak entries to preserve or destroy.
 
-**The confusion this article removes.** A reader who has only the first two operations will try to express the third in their terms — "the weak force survives as a subalgebra" or "the weak force emerges from the debris" or "the weak force is the complement of colour". **All three are phrased in a vocabulary that cannot express arrival, and all three are false for that reason before any calculation is done.**
+**The confusion this article removes.** A reader who has only the first two operations will try to express the third in their terms — "the weak force survives as a subalgebra" or "the weak force emerges from the debris" or "the weak force is the complement of the strong group". **All three are phrased in a vocabulary that cannot express arrival, and all three are false for that reason before any calculation is done.**
 
 ## The Rank Account: Downward Inside, Free Across
 
@@ -101,7 +101,7 @@ $$
 
 **Nine is not six, so the two subspaces lie on different orbits.** 
 
-**Why the number nine matters.** The sextet's brackets close on the *strong* force and on nothing else: $[\mathfrak m,\mathfrak m]=\mathfrak u(3)$, dimension $9$, which is the dimension of the surviving sector. **So the sextet is not a reservoir of weak directions — it is a reservoir of colour directions.** Its own algebra regenerates what colour already is.
+**Why the number nine matters.** The sextet's brackets close on the *strong* force and on nothing else: $[\mathfrak m,\mathfrak m]=\mathfrak u(3)$, dimension $9$, which is the dimension of the surviving sector. **So the sextet is not a reservoir of weak directions — it is a reservoir of adjoint directions.** Its own algebra regenerates what the strong group already is.
 
 **The same theorem in one sentence.** **A closed set can only be carried to a closed set, and the sextet's closure is nine-dimensional while any six-dimensional closed set's closure is six-dimensional.** The obstruction is a dimension count on a closure, and that is why it survives every change of basis, ordering, and dynamics.
 
@@ -119,14 +119,14 @@ $$
 
 | quantity | value | what it is |
 | --- | --- | --- |
-| $\dim\mathfrak u(3)$ | $9$ | colour plus $B-L$ |
+| $\dim\mathfrak u(3)$ | $9$ | the spatial block plus $B-L$ |
 | $\dim\mathfrak s(\mathfrak u(2)\oplus\mathfrak u(2))$ | $7$ | weak pair plus $B-L$ |
 | their span | $12$ | $9+7-4$ |
 | their intersection | $4$ | $\operatorname{span}\{A_{xy},A_{xz},A_{yz},iD\}$ |
 | their Lie closure | $15$ | all of $\mathfrak{su}(4)$ |
 | the closure defect | $3$ | the span misses three directions of the fifteen |
 
-**Read the intersection.** The common part is the three colour rotation planes plus $B-L$: **what colour and the weak pair share, in this basis, is the *rotation* part of colour and the abelian direction, and nothing else.** The colour planes $iS_{xy},iS_{xz},iS_{yz}$ are not in the weak pair; the weak planes $T^{L}_{a},T^{R}_{a}$ all contain a leptoquark component and so are not in colour.
+**Read the intersection.** The common part is the three group rotation planes plus $B-L$: **what the strong group and the weak pair share, in this basis, is the *rotation* part of the block and the abelian direction, and nothing else.** The spatial planes $iS_{xy},iS_{xz},iS_{yz}$ are not in the weak pair; the weak planes $T^{L}_{a},T^{R}_{a}$ all contain a leptoquark component and so are not in the block.
 
 **Read the closure.** Twelve plus brackets gives fifteen. **The two readings generate the algebra between them**, which is the algebraic reason they cannot both be exact: a vacuum annihilated by both would be annihilated by all fifteen generators, and $\mathfrak{su}(4)$ is simple, so no such vacuum exists. **The corpus's statement that the two are the maximal-rank subgroups and their closure is everything is this line.**
 
@@ -179,7 +179,7 @@ $$
 | word | what it claims | true here? |
 | --- | --- | --- |
 | emergent | a symmetry of a composite spectrum | **no**: no composites exist |
-| survives | a subalgebra of the algebra | for colour, **yes** |
+| survives | a subalgebra of the algebra | for the strong group, **yes** |
 | arrives | a factor borne by an index | for the weak pair, **yes** |
 
 **"Arrives" is weaker than "emergent" and it is the weaker claim that is true.** It says less about mechanism and exactly enough about structure: **the factor is there because the index is there, and the index is there because the transition's scalar is a doublet.**
@@ -212,7 +212,7 @@ $$
 | the weak pair's closure | $[\mathfrak{so}(4),\mathfrak{so}(4)]$ | $\mathfrak{so}(4)$, dimension $6$ |
 | the orbit invariant | $\dim$ of the closure is $\operatorname{Ad}$-invariant | $9\ne6$, no conjugation |
 | the two subgroups | $9+7-4$ | span $12$, intersection $4$ |
-| the intersection | $A_{xy},A_{xz},A_{yz},iD$ | colour rotations plus $B-L$ |
+| the intersection | $A_{xy},A_{xz},A_{yz},iD$ | group rotations plus $B-L$ |
 | the joint closure | span plus brackets | $15$, all of $\mathfrak{su}(4)$ |
 | the dimension coincidence | $8+1+6=8+1+3+3$ | $15=15$ |
 | the difference | closure of the six | open $9$ against closed $6$ |
@@ -223,7 +223,7 @@ Breaking is not shrinking. The group loses six directions and keeps its rank; a 
 
 Arriving is not emerging. Arrival is a property of an index; emergence is a property of a composite spectrum, and this model has no composites (*Where the Word "Emergent" Went Wrong*).
 
-The sextet's brackets close on colour. That is not a detail: it is why the sextet is the parent of the strong force and not of the weak one (*The Obstruction*).
+The sextet's brackets close on the block. That is not a detail: it is why the sextet is the parent of the strong force and not of the weak one (*The Obstruction*).
 
 Equal dimension is not equal structure. Nine plus six open and nine plus three plus three closed are both fifteen and are not the same fifteen (*Why Six Keeps Appearing*).
 
@@ -248,7 +248,7 @@ An index is not a sector. The whole economy of the construction is that the weak
 | symbol | meaning |
 | --- | --- |
 | $\mathfrak m$ | the sextet, the complement of $\mathfrak u(3)$ |
-| $\mathfrak u(3)$ | colour plus $B-L$, the centraliser of $iD$, dimension $9$ |
+| $\mathfrak u(3)$ | the spatial block plus $B-L$, the centraliser of $iD$, dimension $9$ |
 | $\mathfrak s(\mathfrak u(2)\oplus\mathfrak u(2))$ | the weak pair plus $B-L$, dimension $7$ |
 | $\operatorname{Ad}_g$ | conjugation by $g$, which preserves brackets and closure dimensions |
 | $[\mathfrak a,\mathfrak a]$ | the span of all brackets of elements of $\mathfrak a$ |

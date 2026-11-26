@@ -248,7 +248,7 @@ The algebra's contribution is specific and limited. It supplies the functional d
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $2\,\mathrm{Sc}(e_t)=2$ | Pairing formula |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $W_{\mathrm{kinetic}}=\Box_\Phi-4\pi^{2}\nu_m^{2}$ | Quadratic operator |
-| $a$ | colour index of the algebra, written low |
+| $a$ | adjoint index of the algebra, written low |
 | $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}})$, $\theta_{\mathrm{src}}:=\langle\tilde J_{\Phi},\frac{2\pi \tilde{Ξ}\rangle}{h}$ | Functional integral with module-valued source |
 | $\delta F/\delta\tilde{Ξ}$ | Module gradient, defined through the pairing |
 | $\langle\delta S/\delta\tilde{Ξ}(x)\rangle=0$ | Quantum equation of motion |

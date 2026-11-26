@@ -87,14 +87,14 @@ $$
 =y_{\alpha\beta}\,v_{C}\,\bar\xi^{\alpha}_{\,i}D_{ij}\xi^{\beta}_{\,j}+\text{h.c.}
 $$
 
-**The condensate enters as a diagonal matrix with entries $(-3,1,1,1)$**, so a fermion on the lepton line gets $-3v_{C}$ times its Yukawa entry and a fermion on a colour line gets $+v_{C}$ times its own.
+**The condensate enters as a diagonal matrix with entries $(-3,1,1,1)$**, so a fermion on the lepton line gets $-3v_{C}$ times its Yukawa entry and a fermion on a spatial line gets $+v_{C}$ times its own.
 
 **The ratio is three, and it is the sector's only prediction.**
 
 | line | the condensate entry | the mass |
 | --- | --- | --- |
 | lepton | $-3$ | $3\lvert y\rvert v_{C}$ |
-| colour, each of three | $+1$ | $\lvert y\rvert v_{C}$ |
+| spatial, each of three | $+1$ | $\lvert y\rvert v_{C}$ |
 
 **So a lepton and a down-type quark with the same Yukawa entry have masses in the ratio $3:1$**, which is the statement $m_{e}=3m_{d}$ once the two entries are identified.
 

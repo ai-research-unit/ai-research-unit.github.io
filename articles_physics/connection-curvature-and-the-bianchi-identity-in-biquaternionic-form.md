@@ -326,7 +326,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $F_{\imath\jmath} = \partial/\partial R_{\imath}\,\mathcal{A}_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal{A}_{\imath}+i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$ | Curvature components, antisymmetric, valued in $\mathfrak{sl}(2,\mathbb{C})$ as a real Lie algebra |
 | $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$ | Curvature as the commutator of covariant derivatives |
 | $F_{\mathrm g,\imath\jmath} = \tilde UF_{\imath\jmath}\tilde U^{-1}$ | Adjoint transformation of the curvature |
-| $a,b$ | colour index of the algebra, written low |
+| $a,b$ | adjoint index of the algebra, written low |
 | $D_{\imath} \tilde{Q} = \partial/\partial R_{\imath} \tilde{Q} + i\kappa[\mathcal{A}_{\imath},\tilde{Q}]$ | Adjoint covariant derivative, $[D_{\imath},\tilde{Q}]=D_{\imath} \tilde{Q}$ |
 | $D_{k} F_{\imath\jmath} + D_{\imath} F_{\jmath k} + D_{\jmath} F_{k\imath}=0$ | Bianchi identity, three distinct indices, cyclic order as shown |
 | $D_{[k}F_{\imath\jmath]}=0$ | The same identity as the antisymmetric part of $DF$ |

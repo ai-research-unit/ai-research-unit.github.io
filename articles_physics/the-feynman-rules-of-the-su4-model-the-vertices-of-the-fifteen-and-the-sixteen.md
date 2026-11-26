@@ -15,7 +15,7 @@
 
 ## The Frame These Tables Are Expressed In
 
-**The tables below were computed in the colour-adapted diagonal basis**, one trace direction $iD$ and two differences $d_{2}$, $d_{3}$, and they are printed that way. **The declared basis of the diagonal is the symmetric frame**,
+**The tables below were computed in the block-adapted diagonal basis**, one trace direction $iD$ and two differences $d_{2}$, $d_{3}$, and they are printed that way. **The declared basis of the diagonal is the symmetric frame**,
 $$
 M_{j}=E_{jj}-E_{tt},\qquad G_{j}=iM_{j},\qquad iD=i\sum_{j}M_{j},
 $$
@@ -31,9 +31,9 @@ which replaces $t_{c_{3}}$ of the older passage and gives $\operatorname{tr}(t_{
 
 **The coordinates, stated once.** The derivative is $\partial/\partial R_{\imath}$, the metric is $\delta_{\imath\jmath}=(1,1,1,1)$, and every index is low: a contraction is a plain sum, $\sum_{\imath}X_{\imath}Y_{\imath}$, with no sign hidden in the metric.
 
-**The quartet index runs over $(t,x,y,z)$**, and the three colour lines are $x,y,z$ under the names $r,g,b$ used in [the fermion classification](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). **The two namings are one convention**, and this article writes $x,y,z$ when it reads an array and $r,g,b$ when it names a particle.
+**The quartet index runs over $(t,x,y,z)$**, and the three spatial lines are $x,y,z$ under the names $r,g,b$ used in [the fermion classification](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). **The two namings are one convention**, and this article writes $x,y,z$ when it reads an array and $r,g,b$ when it names a particle.
 
-**The generators are anti-Hermitian and traceless, and the arrays are read by columns.** The printed matrices are the $G_{a}$ of [the construction article](construction-of-the-axf-matrices-of-the-fifteen-generators.html); a matrix unit $E_{\imath\jmath}$ has a $1$ in row $\imath$, column $\jmath$. **The generators the rules are written in are Hermitian**, $t_{a}=iG_{a}/\sqrt{2n_{a}}$ with $n_{a}=\operatorname{tr}(G_{a}^{\dagger}G_{a})$ equal to $2$ for the thirteen planes and diagonals and $12$ for the corner, the colour diagonal $c_{3}=d_{2}-d_{3}$ being taken at its own norm $6$, so that $t_{a}^{\dagger}=t_{a}$ and $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$; [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) fixes that passage once. **The printed arrays carry the anti-Hermitian convention and the $i$ that makes them Hermitian is one step, the trace-norm rescaling the other, and a vertex read off a printed array without both is wrong by the product.**
+**The generators are anti-Hermitian and traceless, and the arrays are read by columns.** The printed matrices are the $G_{a}$ of [the construction article](construction-of-the-axf-matrices-of-the-fifteen-generators.html); a matrix unit $E_{\imath\jmath}$ has a $1$ in row $\imath$, column $\jmath$. **The generators the rules are written in are Hermitian**, $t_{a}=iG_{a}/\sqrt{2n_{a}}$ with $n_{a}=\operatorname{tr}(G_{a}^{\dagger}G_{a})$ equal to $2$ for the thirteen planes and diagonals and $12$ for the corner, the spatial diagonal $c_{3}=d_{2}-d_{3}$ being taken at its own norm $6$, so that $t_{a}^{\dagger}=t_{a}$ and $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$; [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) fixes that passage once. **The printed arrays carry the anti-Hermitian convention and the $i$ that makes them Hermitian is one step, the trace-norm rescaling the other, and a vertex read off a printed array without both is wrong by the product.**
 
 **The bookkeeping of the sixteen.** The four Weyl fields of the quartet are $\xi_{i}$ with $i\in\{t,r,g,b\}$, the four of the conjugate quartet are $\bar\xi^{i}$, and each comes in two copies labelled by an index the model does not representative. **Sixteen fields, thirty-two states, and the copy index is a degeneracy and not a charge.**
 
@@ -116,9 +116,9 @@ so the diagonal's coupling is weaker than a plane's by $2/\sqrt8=1/\sqrt2=0.7071
 
 **There is no mixing matrix to invert.** A four-factor propagator section would have to rotate four neutral fields and produce a photon and a $Z$; **here the mass matrix is already diagonal in the basis of planes, and the rotation is the identity.** The mixing below $M_C$ is downstream, and it is not in this Lagrangian.
 
-**Two of the nine are massless for two different reasons, and the difference is not cosmetic.** The eight of the colour block are massless because their generators commute with $D$, which is an exact statement about the stabiliser; **below $M_C$ those eight are the gluons, and above it they are eight directions and the word is not used**. **The corner is massless because it is $D$ itself**: $[D,[D,iD]]=0$ for any diagonal, so the direction of the condensate cannot be lifted by the condensate. **A ninth massless field that is massless for a different reason is the one place where a counting argument can go wrong.**
+**Two of the nine are massless for two different reasons, and the difference is not cosmetic.** The eight of the spatial block are massless because their generators commute with $D$, which is an exact statement about the stabiliser; **below $M_C$ those eight are the gluons, and above it they are eight directions and the word is not used**. **The corner is massless because it is $D$ itself**: $[D,[D,iD]]=0$ for any diagonal, so the direction of the condensate cannot be lifted by the condensate. **A ninth massless field that is massless for a different reason is the one place where a counting argument can go wrong.**
 
-**The sextet's mass is the same number for all six.** $32v^{2}$ comes from $2(1-(-3))^{2}=(4)^{2}\cdot2$: a plane that carries one $t$ index costs $2(1+3)^{2}$ and a plane that carries two colour indices costs zero. **The value is verified per plane** in [the detail article](the-15-axf-matrices-of-the-bosons-in-detail.html).
+**The sextet's mass is the same number for all six.** $32v^{2}$ comes from $2(1-(-3))^{2}=(4)^{2}\cdot2$: a plane that carries one $t$ index costs $2(1+3)^{2}$ and a plane that carries two indices costs zero. **The value is verified per plane** in [the detail article](the-15-axf-matrices-of-the-bosons-in-detail.html).
 
 ## The Vertex List
 
@@ -142,12 +142,12 @@ so the diagonal's coupling is weaker than a plane's by $2/\sqrt8=1/\sqrt2=0.7071
 
 | family | the array | the lines it joins | the charge it carries |
 | --- | --- | --- | --- |
-| planes $A_{ab}$, $a,b$ both colour | $2$ entries, colour–colour | quark to quark | a gluon below $M_C$, $B-L=0$ |
-| planes $A_{ta}$, $iS_{ta}$ | $2$ entries, $t$ to colour | lepton to quark | $B-L=\mp\tfrac43$, $Q=\mp\tfrac23$ |
-| colour-block diagonals | $2$ entries, colour–colour | quark to quark | a gluon below $M_C$, $B-L=0$ |
+| planes $A_{ab}$, $a,b$ both spatial | $2$ entries, spatial–spatial | quark to quark | a gluon below $M_C$, $B-L=0$ |
+| planes $A_{ta}$, $iS_{ta}$ | $2$ entries, $t$ to spatial | lepton to quark | $B-L=\mp\tfrac43$, $Q=\mp\tfrac23$ |
+| spatial-block diagonals | $2$ entries, spatial–spatial | quark to quark | a gluon below $M_C$, $B-L=0$ |
 | the corner $iD$ | $4$ entries, diagonal | lepton to lepton, quark to quark | $B-L=0$ |
 
-**The leptoquark vertex conserves $B-L$ exactly, and the arithmetic is one line.** The lepton line carries $B-L=-1$, the colour line $+\tfrac13$, and the boson $-\tfrac43$: $-1=\tfrac13-\tfrac43$. **The charge is read off the commutator** $[iD,E_{ta}]=-4iE_{ta}$, so the boson's $D$-eigenvalue is $-4$ and its $B-L$ is $-4/3$ under $B-L=\tfrac13D$.
+**The leptoquark vertex conserves $B-L$ exactly, and the arithmetic is one line.** The lepton line carries $B-L=-1$, the spatial line $+\tfrac13$, and the boson $-\tfrac43$: $-1=\tfrac13-\tfrac43$. **The charge is read off the commutator** $[iD,E_{ta}]=-4iE_{ta}$, so the boson's $D$-eigenvalue is $-4$ and its $B-L$ is $-4/3$ under $B-L=\tfrac13D$.
 
 **The corner couples to every line and to none of them twice.** $iD$ is diagonal with entries $-3,1,1,1$, so it gives one vertex on each of the four lines and none off the diagonal. **That is why it is the direction the condensate can sit on**: a diagonal generator does not move a fermion between cells.
 
@@ -159,7 +159,7 @@ $$
 \Gamma_{abc}^{\imath\jmath\ell}(k_{1},k_{2},k_{3})=g_{4}f_{abc}\bigl[(k_{1}-k_{2})^{\ell}g^{\imath\jmath}+(k_{2}-k_{3})^{\imath}g^{\jmath\ell}+(k_{3}-k_{1})^{\jmath}g^{\ell\imath}\bigr].
 $$
 
-**The count is exact, and the number of triples depends on the basis the brackets are read in.** Of the $\binom{15}{2}=105$ pairs, **$80$ have a nonzero bracket in either basis**. The number of distinct index triples is **$31$ in the printed basis and $29$ once $d_{2},d_{3}$ are rotated to $c_{2},c_{3}$**, because the rotation mixes the two colour diagonals and lets two triples that were separate stand on one. **The rules are written in the orthonormal basis, so the vertex runs over $29$ triples**; the six brackets tabulated below are printed-basis values, and that is why $31$ is the number to expect from them.
+**The count is exact, and the number of triples depends on the basis the brackets are read in.** Of the $\binom{15}{2}=105$ pairs, **$80$ have a nonzero bracket in either basis**. The number of distinct index triples is **$31$ in the printed basis and $29$ once $d_{2},d_{3}$ are rotated to $c_{2},c_{3}$**, because the rotation mixes the two spatial diagonals and lets two triples that were separate stand on one. **The rules are written in the orthonormal basis, so the vertex runs over $29$ triples**; the six brackets tabulated below are printed-basis values, and that is why $31$ is the number to expect from them.
 
 **Six brackets, computed and printed.**
 
@@ -233,13 +233,13 @@ $$
 | $\xi_{i}$, $\bar\xi^{i}$ | the quartet and conjugate-quartet Weyl fields, two copies each |
 | $Ξ$ | the Hermitian $4\times4$ scalar, sixteen real components |
 | $D=\operatorname{diag}(-3,1,1,1)$ | the condensate direction |
-| $d_{2}$, $d_{3}$, $c_{2}$, $c_{3}$ | the two colour diagonals and their orthogonal combinations |
+| $d_{2}$, $d_{3}$, $c_{2}$, $c_{3}$ | the two spatial diagonals and their orthogonal combinations |
 | $f_{abc}$ | the structure constants of the fifteen |
 | $\xi$ | the fixing parameter, not the fermion |
 
 ## Further Reading
 
-- [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The group, the content, and the declaration this article transcribes.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The group, the content, and the declaration this article transcribes.
 - [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). The $80$ nonzero brackets and the five rules that generate them.
 - [The Fifteen AXF Matrices of the Bosons in Detail](the-15-axf-matrices-of-the-bosons-in-detail.html). Every array, its entries, and its mass.
 - [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The $120$ entries, one generator at a time.

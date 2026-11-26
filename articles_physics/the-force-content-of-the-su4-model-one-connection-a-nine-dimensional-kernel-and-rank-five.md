@@ -4,12 +4,12 @@
 
 **The claim.** The model writes one connection. Fifteen generators, one bracket, one coupling $g_4$, and the same $g_4$ multiplies the representative, the fermion and the scalar. That identity is what the words *one force* mean here, and it is a statement about the action and not about the algebra.
 
-**The three statuses, and one absence.** The other objects that physics calls forces are not three more connections. Colour is the part of the fifteen that the vacuum commutes with. The weak pair is not in the fifteen and arrives with the breaking. Gravity has no slot in the fifteen and is carried by a frame. Each status has a test, and the tests are different in kind.
+**The three statuses, and one absence.** The other objects that physics calls forces are not three more connections. The spatial part of the fifteen is what the vacuum commutes with. The weak pair is not in the fifteen and arrives with the breaking. Gravity has no slot in the fifteen and is carried by a frame. Each status has a test, and the tests are different in kind.
 
 | object | where it lives | status | test |
 | --- | --- | --- | --- |
 | the primordial force | the fifteen, above $M_C$ | the one connection | one $g_4$ in three kinetic terms |
-| colour | the kernel of $\operatorname{ad}(iD)$ | survives | $[iD,X]=0$ on the eight |
+| the strong group | the kernel of $\operatorname{ad}(iD)$ | survives | $[iD,X]=0$ on the eight |
 | $B-L$ | the kernel, ninth direction | survives | the same test |
 | the weak pair | an index on the condensate | arrives | rank $3+1+1=5$ |
 | gravity | the frame, not the fifteen | no slot | no generator carries it |
@@ -18,7 +18,7 @@
 
 **What *one* does not mean.** One force is not one parameter. The scalar's six coefficients, the Yukawa matrix, the parameter $\zeta$ and the topological angle $\theta_4$ are nine more numbers, and the group fixes none of them. *One force* names the number of connection couplings and nothing else.
 
-**The plan.** The display is read first, and the word *one* is fixed there. Colour is treated as the kernel, with its coupling, its running and its confinement regime. The two theorems that forbid the weak pair from being debris come next, then the index that replaces debris. Two senses of *residual* are then separated, because the weak force fits one of them and not the other. Gravity follows, as a frame and not an element. A ledger and a list of what is not claimed close the argument.
+**The plan.** The display is read first, and the word *one* is fixed there. The strong group is treated as the kernel, with its coupling, its running and its confinement regime. The two theorems that forbid the weak pair from being debris come next, then the index that replaces debris. Two senses of *residual* are then separated, because the weak force fits one of them and not the other. Gravity follows, as a frame and not an element. A ledger and a list of what is not claimed close the argument.
 
 ## The Display, and What *One* Means in It
 
@@ -42,9 +42,9 @@ with one covariant derivative, $D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}
 
 **The precise claim, then.** Of the interactions the model writes, exactly one is a connection. That is the claim this article defends, and every later section is a statement about the fate of that one connection or about an object that is not it.
 
-## Colour: The Kernel, Not a Second Connection
+## The Strong Group: The Kernel, Not a Second Connection
 
-**The vacuum.** The model's one load-bearing declaration is the split $\mathbf4=\mathbf1\oplus\mathbf3$, with $e_t$ the lepton and the other three lines the colours. The scalar carries one $\mathrm{SU}(4)$ index, so its value is a vector in the carrier, and the declaration says which direction is available. Trace-freeness then forces the pattern up to scale:
+**The vacuum.** The model's one load-bearing declaration is the split $\mathbf4=\mathbf1\oplus\mathbf3$, with $e_t$ the lepton and the other three lines the spatial lines. The scalar carries one $\mathrm{SU}(4)$ index, so its value is a vector in the carrier, and the declaration says which direction is available. Trace-freeness then forces the pattern up to scale:
 
 $$
 D=\operatorname{diag}(-3,1,1,1),\qquad iD=\operatorname{diag}(-3i,i,i,i).
@@ -64,13 +64,13 @@ $$
 
 and the six moved directions are the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, each at $32v^{2}=2\,(1-(-3))^{2}v^{2}$.
 
-**Colour is therefore a stabiliser, and the corpus has a word for it.** $\mathrm{SU}(3)_c$ is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$. The word is *residual*, and it is already used that way for QCD. Nothing new is switched on at $M_C$: the eight arrays are the same eight matrices that were among the fifteen above the transition, the bracket is the same bracket, and the coupling at the matching is the same number. Above the transition they are eight directions of one multiplet and not an octet, which is why the corpus keeps the word *gluon* for the phase below it.
+**The strong group is therefore a stabiliser, and the corpus has a name for it.** $\mathrm{SU}(3)_c$ is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$. The word is *residual*, and it is already used that way for QCD. Nothing new is switched on at $M_C$: the eight arrays are the same eight matrices that were among the fifteen above the transition, the bracket is the same bracket, and the coupling at the matching is the same number. Above the transition they are eight directions of one multiplet and not an octet, which is why the corpus keeps the word *gluon* for the phase below it.
 
 **The coupling, followed across the boundary.** At $M_C$ the strong coupling is matched to the primordial one, $g_3(M_C)=g_4$. The matching is a boundary condition taken from experiment and not a prediction, and the corpus records the tension in it; what matters here is that it is one number and not two. Below the transition the same number runs with a different coefficient, because the content that screens it has changed: eight Dirac fermions and one Hermitian $\mathbf{15}\oplus\mathbf1$ above, quarks and gluons below. So $\alpha_s$ is not a second constant of nature in this model. It is $g_4$ read at a lower scale with a different beta function.
 
 **Three objections, and their answers.** The first is that QCD has its own angle. It has one, and the model does not supply it: $\theta_4$ is the topological angle of the fifteen, free in the Lagrangian and redundant above $M_C$ because the sixteen are massless and one chiral rotation removes it, and it is not the strong-$CP$ parameter $\bar\theta$ below the transition. So the model inherits the strong-$CP$ problem rather than solving it, and it does not explain the size of QCD's angle. The second is that confinement is a new phenomenon. It is a regime of the same coupling at long distance, not a second interaction, and the model has no confining phase above $M_C$ at all. The third is that $\Lambda_{\mathrm{QCD}}$ is a new scale. It is dimensional transmutation of the one coupling, and a scale is not an interaction.
 
-**One correction to the phrasing that *degenerates into the strong force* invites.** What survives is colour *and* one abelian factor, $\mathfrak{u}(3)$ and not $\mathfrak{su}(3)$. The degeneracy is into $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$. The extra direction is the sum of the three frame diagonals, $iD=T_x+T_y+T_z$, and it is why the rank does not move: $3\to2+1=3$.
+**One correction to the phrasing that *degenerates into the strong force* invites.** What survives is the strong group *and* one abelian factor, $\mathfrak{u}(3)$ and not $\mathfrak{su}(3)$. The degeneracy is into $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$. The extra direction is the sum of the three frame diagonals, $iD=T_x+T_y+T_z$, and it is why the rank does not move: $3\to2+1=3$.
 
 **The sentence to keep.** The strong force is the primordial force read through a vacuum that fixes nine of the fifteen directions. It is the same object in a lower phase, and calling that a degeneration is right if the word means exactly that.
 
@@ -88,10 +88,10 @@ and the six moved directions are the leptoquark sextet, $\mathbf3_{+4/3}\oplus\b
 
 | subgroup | structure | rank | what it buys |
 | --- | --- | --- | --- |
-| $\mathrm{U}(3)$ | $\mathrm{SU}(3)\times\mathrm{U}(1)$ | $2+1=3$ | colour and one abelian factor |
+| $\mathrm{U}(3)$ | $\mathrm{SU}(3)\times\mathrm{U}(1)$ | $2+1=3$ | the block and one abelian factor |
 | $\mathrm{S}(\mathrm{U}(2)\times\mathrm{U}(2))$ | $\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ | $1+1+1=3$ | weak-times-weak and one abelian factor |
 
-Colour needs two ranks and the weak pair needs two, and four exceeds three. **Two ways to spend three, not two halves of five.** The two rows cannot both be exact, because their brackets generate all fifteen and $\mathfrak{su}(4)$ is simple: a vacuum annihilated by both would break nothing.
+The block needs two ranks and the weak pair needs two, and four exceeds three. **Two ways to spend three, not two halves of five.** The two rows cannot both be exact, because their brackets generate all fifteen and $\mathfrak{su}(4)$ is simple: a vacuum annihilated by both would break nothing.
 
 **The charge theorem, which closes the other half.** Every member of the sextet carries $Q=\pm\tfrac23$ and $B-L=\pm\tfrac43$. The best channel it can form is
 
@@ -99,11 +99,11 @@ $$
 \mathbf3_{+4/3}\otimes\bar{\mathbf3}_{-4/3}=\mathbf1_0\oplus\mathbf8_0 ,
 $$
 
-and the singlet is neutral identically. No combination reaches $Q=\pm1$. The weak arrays are in $\mathfrak{su}(4)$, and each is half leptoquark and half colour; none is a weak boson.
+and the singlet is neutral identically. No combination reaches $Q=\pm1$. The weak arrays are in $\mathfrak{su}(4)$, and each is half leptoquark and half spatial; none is a weak boson.
 
 **The mass table separates an identity from a particle.** The sextet sits at $32v^{2}$; the weak pair sits at $0$ until $v$. An array at thirty-two times the vacuum and an array at zero are not the same particle, whatever identities can be written between them.
 
-**What this means for the sentence *the weak force is a residual*.** In the group-theoretic sense of the previous section, it is not. Colour is a residual because it is a subgroup the vacuum fixes. The weak pair is not a subgroup of anything the vacuum fixed, and the word is unavailable for it.
+**What this means for the sentence *the weak force is a residual*.** In the group-theoretic sense of the previous section, it is not. The strong group is a residual because it is a subgroup the vacuum fixes. The weak pair is not a subgroup of anything the vacuum fixed, and the word is unavailable for it.
 
 ## What Arrives, and What It Costs
 
@@ -150,10 +150,10 @@ so the vertex is nilpotent exactly at $|g_A|=|g_V|$, which is $V-A$ and $V+A$ an
 
 | sense | definition | example | what it predicts |
 | --- | --- | --- | --- |
-| group-theoretic | a subgroup a vacuum fixes | colour; $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$ | the coupling is the same at the matching |
+| group-theoretic | a subgroup a vacuum fixes | the strong group; $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$ | the coupling is the same at the matching |
 | effective | a low-energy contact from integrating out a heavy carrier | the nuclear force; the weak contact | an expansion parameter and a new low-energy coupling |
 
-**Colour is a residual in the first sense.** The nuclear force and the weak contact are residuals in the second. The confusion in the phrase *the weak force is a residual like the nuclear force* is that it mixes the two, and the mixing is where the sentence goes wrong.
+**The strong group is a residual in the first sense.** The nuclear force and the weak contact are residuals in the second. The confusion in the phrase *the weak force is a residual like the nuclear force* is that it mixes the two, and the mixing is where the sentence goes wrong.
 
 **The weak contact is a residual, and exactly.** Below $M_W$, eliminating the $W$ from the charged-current action gives
 
@@ -278,13 +278,13 @@ equals the trace times the unit, so it is blind to the scalar-free part — whic
 
 **The model writes one connection.** Fifteen generators, one bracket, one $g_4$ in the representative, fermion and scalar kinetic terms. The display is a transcription onto the algebra; the compact group of $\mathbb{B}$ is $\mathrm{U}(2)$, and the claim is about the model.
 
-**Colour is the kernel and not a second connection.** $iD=\operatorname{diag}(-3i,i,i,i)$ gives $\operatorname{ad}(iD)$ the spectrum $0^{9}\oplus(\pm4i)^{3}$, so nine of the fifteen are fixed and six are moved. The kernel is $\mathfrak{u}(3)=\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L}$, colour is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$, and the coupling at the matching is the primordial one. The correct sentence is that the primordial force degenerates into colour *and* one abelian factor; the rank does not move, $3\to2+1=3$.
+**The strong group is the kernel and not a second connection.** $iD=\operatorname{diag}(-3i,i,i,i)$ gives $\operatorname{ad}(iD)$ the spectrum $0^{9}\oplus(\pm4i)^{3}$, so nine of the fifteen are fixed and six are moved. The kernel is $\mathfrak{u}(3)=\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L}$, the strong group is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$, and the coupling at the matching is the primordial one. The correct sentence is that the primordial force degenerates into the strong group *and* one abelian factor; the rank does not move, $3\to2+1=3$.
 
-**The weak pair cannot be debris.** The rank lemma forbids rank five inside rank three, and the endpoint needs five. The two maximal-rank readings each spend exactly three, and colour plus weak needs four. The charge theorem forbids the sextet from reaching $Q=\pm1$: every member is at $\pm\tfrac23$, and the pair channel is neutral plus octet.
+**The weak pair cannot be debris.** The rank lemma forbids rank five inside rank three, and the endpoint needs five. The two maximal-rank readings each spend exactly three, and the strong group plus weak needs four. The charge theorem forbids the sextet from reaching $Q=\pm1$: every member is at $\pm\tfrac23$, and the pair channel is neutral plus octet.
 
 **The weak pair arrives.** The condensate carries a doublet index, $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$, and rank is additive across factors. The index is a postulate, and it is the one new assumption. What the framework supplies is the shape of the chiral vertex, exact and nilpotent at $|g_A|=|g_V|$; what it imports is the strength, the scale and the choice of the left half.
 
-**Two senses of residual, and only one applies.** Colour is a residual in the group-theoretic sense. The weak contact is a residual in the effective sense: eliminating the $W$ gives $G_{\mathrm F}/\sqrt2=g^{2}/(8M_W^{2})$, accurate to a part per million at $100$ MeV, and the short range is a consequence of the breaking. The weak pair is not a fragment of the primordial force, and the analogy with the nuclear force holds for the contact and fails for the group.
+**Two senses of residual, and only one applies.** The strong group is a residual in the group-theoretic sense. The weak contact is a residual in the effective sense: eliminating the $W$ gives $G_{\mathrm F}/\sqrt2=g^{2}/(8M_W^{2})$, accurate to a part per million at $100$ MeV, and the short range is a consequence of the breaking. The weak pair is not a fragment of the primordial force, and the analogy with the nuclear force holds for the contact and fails for the group.
 
 **Gravity has no slot.** The fifteen are the adjoint; the graviton is not among them. Curvature is carried by a frame, and the perturbation is an $\mathbb{B}_{\Phi}$-valued one-form: ten symmetric components, sixteen frame components, six local Lorentz, and no single biquaternion can hold them. The quadratic action exists, the dynamics does not, and the coupling is not fixed. Gravity is not a force in the model because it was never in the connection, and the geometric reading of GR is a stronger and independent statement to the same effect.
 
@@ -307,13 +307,13 @@ equals the trace times the unit, so it is blind to the scalar-free part — whic
 
 ## Further Reading
 
-- [The $\mathrm{SU}(4)$ Model: One Group, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The carrier, the declaration and the content.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The carrier, the declaration and the content.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The display, its variation, and the statement that it is a transcription.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The adjoint spectrum, the kernel and the sextet.
 - [The Centraliser, the Complement, and the Index](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The three words *survives*, *breaks* and *arrives*.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The rank lemma and the doublet index.
 - [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). Why the sextet cannot become the weak pair.
-- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$](quantum-chromodynamics-as-the-residual-of-su4.html). Colour as a stabiliser, and the wall restated.
+- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$](quantum-chromodynamics-as-the-residual-of-su4.html). The strong group as a stabiliser, and the wall restated.
 - [The Weak Force in Biquaternionic Form](the-weak-force-in-biquaternionic-form.html). The chiral vertex, its nilpotency and the rates.
 - [The Lagrangian and the Weak Force](the-lagrangian-and-the-weak-force.html). The elimination that produces the contact.
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html). Curvature outside the algebra, and the frame route.

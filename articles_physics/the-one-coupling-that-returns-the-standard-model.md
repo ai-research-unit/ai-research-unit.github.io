@@ -97,7 +97,7 @@ $$
 
 and the solution exists only while the bracket is positive. Two consequences follow at once:
 
-- $g_R$ comes out below $g_L$, between $0.62$ and $0.73$ of it over the admissible region, so the fourth colour's right-handed sector is weaker than its left-handed one at the threshold.
+- $g_R$ comes out below $g_L$, between $0.62$ and $0.73$ of it over the admissible region, so the fourth line's right-handed sector is weaker than its left-handed one at the threshold.
 - The ratio $M_X/M_{W_R}$ lies between $2.2$ and $3.1$, not at $\sqrt2$, and a leptoquark floor of $3.2\times10^{-5}$ J therefore corresponds to a $W_R$ floor of $1.1$ to $1.4\times10^{-5}$ J rather than to $160$.
 
 **3.3 What it confirms.** The relation reproduces $\alpha_{\mathrm{em}}$, $\alpha_s$ and $\sin^2\theta_W$ at $M_Z$ exactly and for any admissible pair of scales, because each is built from those three numbers at $M_Z$ and run up. Those three are data at $M_Z$ — $\alpha^{-1}(M_Z)=127.95$ and $\sin^2\theta_W=0.23122$ among them — and the relation is imposed on top of them. A statement that reproduces its own inputs is a consistency condition, and a consistency condition confirms nothing.
@@ -160,7 +160,7 @@ $$
 
 **5.3 What that means in words.** The extra scale moves the meeting of $g_4$ with $g_L$, because $c_4\ne c_2$. It does nothing to the meeting of $g_R$ with $g_L$, because parity makes their running identical. The extra running fixes exactly the half that was not the problem.
 
-**5.4 What closing the gap would take.** Only breaking parity above $M_C$ lets the gap run, and the gap is $44.6$ in inverse-coupling units against $27$ e-folds to the colour meeting:
+**5.4 What closing the gap would take.** Only breaking parity above $M_C$ lets the gap run, and the gap is $44.6$ in inverse-coupling units against $27$ e-folds to the strong-group meeting:
 
 $$
 \Delta c_2\simeq2\pi\frac{44.6}{27}\simeq10 .
@@ -201,7 +201,7 @@ and that is a statement about the number of matrices, not about any value. One m
 
 The last column is where the scale enters, and it enters twice: once in the ratio "at $m_b$", and once in the phrase "once the running is included".
 
-**6.4 What the counting leaves standing.** The argument that the minimal scalar sector is insufficient does not depend on any of these numbers. One bidoublet gives one matrix for two sectors; the data do not show proportional spectra; therefore the sector needs a second matrix. The repair is a second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$, or the colour-singlet component of a $(\mathbf{15},\mathbf2,\mathbf2)$. What the arithmetic of *The Yukawa Sector: The Same Question* adds is the size of the miss, not the existence of it.
+**6.4 What the counting leaves standing.** The argument that the minimal scalar sector is insufficient does not depend on any of these numbers. One bidoublet gives one matrix for two sectors; the data do not show proportional spectra; therefore the sector needs a second matrix. The repair is a second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$, or the singlet component of a $(\mathbf{15},\mathbf2,\mathbf2)$. What the arithmetic of *The Yukawa Sector: The Same Question* adds is the size of the miss, not the existence of it.
 
 **6.5 The quartic.** The scalar potential's quartic is a coupling with a value at a scale and a running like any other, and it belongs in the same place as these.
 
@@ -234,7 +234,7 @@ The recovery is not a derivation: it shows that the measured numbers below are c
 
 The output is not a prediction: $g_R$ moves with the chosen scales, between $0.62$ and $0.73$ of $g_L$ (*The One Scale*).
 
-$\tfrac38$ is not a prediction of the unified case: it holds at $1.63\times10^{3}$ J, where colour is $13\%$ short (*The Boundary Condition, and Why It Fails*).
+$\tfrac38$ is not a prediction of the unified case: it holds at $1.63\times10^{3}$ J, where the strong coupling is $13\%$ short (*The Boundary Condition, and Why It Fails*).
 
 The failure of the unified case is not arithmetic: the equality is not preserved by the matter content between $M_Z$ and $M_C$ (*The Boundary Condition, and Why It Fails*).
 
@@ -244,15 +244,15 @@ The scalar sector's defect is not a numerical mismatch: it is one matrix serving
 
 ## Summary
 
-The Standard Model is recovered from the fourth colour by one equation, $\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}$ at $M_C$, together with one scale and one statement of content below it.
+The Standard Model is recovered from the fourth line by one equation, $\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}$ at $M_C$, together with one scale and one statement of content below it.
 
 The arithmetic is exact and short. The denominators are $1$, $1$ and $\tfrac23$; they sum to $\tfrac83$; the angle at the threshold is $\tfrac38$; and the same sum read from the generator algebra gives the identical result.
 
 What it does not fix is stated in the same place. The scale is free above a leptoquark floor, $g_R$ is an output rather than a prediction, the mass ratio is $\sqrt2\,g_4/g_R$ rather than $\sqrt2$, and a value of $g_R$ that moves with the scale cannot be tested.
 
-The unified case fails, and it fails as arithmetic. $\tfrac38$ is exact where colour is $13\%$ short, and colour is exact where the angle is $16\%$ high. The two conditions hold four decades apart.
+The unified case fails, and it fails as arithmetic. $\tfrac38$ is exact where the strong coupling is $13\%$ short, and the strong coupling is exact where the angle is $16\%$ high. The two conditions hold four decades apart.
 
-The three-scale repair does not rescue it, for a reason that is a symmetry and not a number. Parity makes the two $\mathrm{SU}(2)$ coefficients equal, so the extra scale moves the meeting of colour and leaves the meeting of the two chiral factors where it was.
+The three-scale repair does not rescue it, for a reason that is a symmetry and not a number. Parity makes the two $\mathrm{SU}(2)$ coefficients equal, so the extra scale moves the meeting of the strong coupling and leaves the meeting of the two chiral factors where it was.
 
 The Yukawa sector answers the same question by counting. The one-bidoublet conditions $m_d=m_e$ and $m_u=m_{\jmath}$ are scale-bearing and falsified; the argument they supported survives without them, because one matrix for two sectors is a statement about counting, and counting needs no scale.
 
@@ -274,7 +274,7 @@ The Yukawa sector answers the same question by counting. The one-bidoublet condi
 
 ## Further Reading
 
-- [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The group, the sixteen, the chain and the declarations, with no coupling value.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The group, the sixteen, the chain and the declarations, with no coupling value.
 - [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The chain as three stabilisers, and the dimension budget that fixes the count of states.
 - [The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators](the-weinberg-angle-and-the-three-neutral-states.html). The angle as a ratio, and the neutral current written symbolically.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The multiplet list and the states, with the mass ratios referred here.

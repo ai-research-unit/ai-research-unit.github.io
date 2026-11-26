@@ -22,7 +22,7 @@ S\;\longrightarrow\;S\otimes\mathbb C^{n},
 \tilde Q\cdot(\Xi\otimes f)=(\tilde Q\cdot\Xi)\otimes f .
 $$
 
-Every operator the model builds from the group is therefore the same operator on every rung, $O\otimes\mathbb 1_{n}$. **In this model $S$ is the sixteen and $n=2$; the ladder's $n=3$ lies below $M_C$, and the hypothesis below is about that phase.** No measurement of charge, colour, weak isospin or $B-L$ can distinguish one rung from another. Flavour cannot be a charge, and it must therefore be a quantity a spectrum produces: an energy, a mass, a level spacing.
+Every operator the model builds from the group is therefore the same operator on every rung, $O\otimes\mathbb 1_{n}$. **In this model $S$ is the sixteen and $n=2$; the ladder's $n=3$ lies below $M_C$, and the hypothesis below is about that phase.** No measurement of charge, the triplet index, weak isospin or $B-L$ can distinguish one rung from another. Flavour cannot be a charge, and it must therefore be a quantity a spectrum produces: an energy, a mass, a level spacing.
 
 There is a second reason to expect the rungs of a tower to be ordered rather than equivalent. A level decays only if a lower level exists with the same quantum numbers and enough phase space. Rung 1 is the bottom of its tower, so there is no lower rung to fall to, and it is stable by conservation rather than by accident. This is why $e$, $u$, $d$ and $\xi_{\mathrm{neu},e}$ sit at the top of their rows in the classification article: they are the ground states, and nothing beneath them carries their charges. No new dynamics is needed to stabilise rung 1, and none is claimed.
 
@@ -121,7 +121,7 @@ $$
 
 with $\mu$ the mean of the three $\sqrt{\rho_i}$ and $\sigma$ their standard deviation. The bracket is an identity and not a fit, so $Q=\tfrac23$ is exactly the statement $\sigma/\mu=1$: the three roots are as spread as their own mean. The measured spread is $0.999\,990\,8$, not $1$ by $9\times10^{-6}$, and the same number read as an angle, $\arccos\left(1/\sqrt{3Q}\right)$, is $44.9997^{\circ}$.
 
-**Why it is not evidence for the ladder.** The ladder sets an interval between neighbouring rungs and places no condition on a combination of the three masses, so Koide's relation is neither derived here nor used here. It is a measured arithmetic on three numbers, and the corpus records it as one. The numeral $\tfrac23$ also appears in the model as a trace ratio of one to three, in [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html), and the two are not the same statement: one is a dimension of a representation and the other a ratio of masses. That they coincide in value is recorded and not explained.
+**Why it is not evidence for the ladder.** The ladder sets an interval between neighbouring rungs and places no condition on a combination of the three masses, so Koide's relation is neither derived here nor used here. It is a measured arithmetic on three numbers, and the corpus records it as one. The numeral $\tfrac23$ also appears in the model as a trace ratio of one to three, in [Charge Quantisation from the Fourth Line](charge-quantisation-from-the-fourth-line-one-trace-one-third.html), and the two are not the same statement: one is a dimension of a representation and the other a ratio of masses. That they coincide in value is recorded and not explained.
 
 ## No Exact Closure
 
@@ -146,7 +146,7 @@ The bounds agree, and they agree on three:
 | $Z$ invisible width | $N_{\xi_{\mathrm{neu}}}=2.984\pm0.008$ | light neutrinos with standard couplings |
 | big-bang nucleosynthesis | $N_{\mathrm{eff}}\approx3$ at $1.16\times10^{13}$ K | rungs light and coupled at $1.16\times10^{13}$ K |
 | $H\to gg$, $H\to\gamma\gamma$ | matches three | families at any mass |
-| direct search | none below about $1.6\times10^{-7}$ J | new charged or coloured states |
+| direct search | none below about $1.6\times10^{-7}$ J | new charged or non-singlet states |
 
 A fourth family is excluded at any mass and not only at low mass, because it does not decouple: the Yukawa grows with the mass, so its contribution to $H\to gg$ and $H\to\gamma\gamma$ approaches a constant, and the measured Higgs rates match three.
 
@@ -265,4 +265,4 @@ The letter $\rho$ carries the mass ratio in this article and is given the subscr
 - [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The misalignment between the flavour basis and the mass basis.
 - [Lepton Flavour in the $\mathrm{SU}(4)$ Model: Nothing Turns the Lepton, and the Matrix That Would Have To](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The operator's chiral structure, and the question of the generation matrix that the mass sector leaves open.
-- [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The frame whose module the ladder multiplies.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The frame whose module the ladder multiplies.

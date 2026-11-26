@@ -44,7 +44,7 @@ Any candidate must have three properties.
 | Property | Evidence | Consequence for a candidate |
 |---|---|---|
 | Cold, or at most warm | Structure formation; the power spectrum's shape | Must be non-relativistic at $T\sim1.16\times10^{4}$ K |
-| Electrically neutral, and neutral under colour | No electromagnetic or strong mark; the CMB's acoustic peaks | Must be a singlet, or a neutral member of a multiplet |
+| Electrically neutral, and neutral under the strong group | No electromagnetic or strong mark; the CMB's acoustic peaks | Must be a singlet, or a neutral member of a multiplet |
 | Stable, or long-lived | Present today | Must be protected by a symmetry or by kinematics |
 
 The sharpest single measurement is the Bullet Cluster: two galaxy clusters that have passed through each other, with the X-ray gas (baryons) shocked and slowed in the middle while the gravitational mass, reconstructed from lensing, has passed through. The mass-to-light ratio tracks the galaxies and not the gas. That is a direct statement that the dark component is collisionless and the baryonic component is not, and it cannot be reproduced by any modification of gravity that couples to baryons alone.

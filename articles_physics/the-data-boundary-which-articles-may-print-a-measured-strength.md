@@ -78,9 +78,9 @@ An article may print a strength value only if all five hold. If one fails, the v
 
 **Second, the smuggled equality.** An equality may not be smuggled in as a definition. The relation between the electric charge, the weak strength and the angle is a definition, and it carries no scale: the angle *is* the ratio. A definition of that kind is structural and may stand anywhere. A numerical value for it is data. An assertion that the model produces the value is a claim. The three are different sentences that look alike.
 
-**Third, the computed coefficient.** It is not data. The one-loop coefficients of the strong and electroweak groups are computed from colour and isospin data, and they may be stated anywhere, with their values, because no measurement enters them. The gluon article and the framework's QCD article quote a coefficient and stay structural: their coefficient is a count of diagrams.
+**Third, the computed coefficient.** It is not data. The one-loop coefficients of the strong and electroweak groups are computed from triplet and isospin data, and they may be stated anywhere, with their values, because no measurement enters them. The gluon article and the framework's QCD article quote a coefficient and stay structural: their coefficient is a count of diagrams.
 
-**Fourth, the model's own sector.** The boundary may not be widened to cover it. "The Standard Model is data" is true. "The fourth colour's couplings are the Standard Model's" is not, and it is the smuggling route the coupling rule closes. The two sectors share a low-energy limit; they do not share a coupling statement.
+**Fourth, the model's own sector.** The boundary may not be widened to cover it. "The Standard Model is data" is true. "The fourth line's couplings are the Standard Model's" is not, and it is the smuggling route the coupling rule closes. The two sectors share a low-energy limit; they do not share a coupling statement.
 
 ## The Checks
 
@@ -115,5 +115,5 @@ The permission has four edges drawn, and the sharpest is the fourth: the low-ene
 
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The single claim, its arithmetic, its failure, and the Yukawa sector under the same test.
 - [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-and-the-three-neutral-states.html). The second claim: the mixing as a ratio, with the form the generators fix.
-- [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The frame, stated with every strength a symbol.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The frame, stated with every strength a symbol.
 - [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The chain, with the coupling block kept in the coupling article.

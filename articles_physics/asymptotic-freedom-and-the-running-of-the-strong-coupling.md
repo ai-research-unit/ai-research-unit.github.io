@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The exemption this article claims.** This article is data. Every number in it is the measured strong force, transcribed, and it states no coupling of the Four Colours Model: no $g_4$, no $M_C$, no matching relation, no boundary condition at a scale. So it stands under the corpus's data boundary, and its values stay; a running of a measured quantity is not a claim the algebra makes. The model's own couplings are in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html), and nothing here duplicates them. The word *coupling* does not stand in a title outside the flagged section.
+**The exemption this article claims.** This article is data. Every number in it is the measured strong force, transcribed, and it states no coupling of the $\mathrm{SU}(4)$ model: no $g_4$, no $M_C$, no matching relation, no boundary condition at a scale. So it stands under the corpus's data boundary, and its values stay; a running of a measured quantity is not a claim the algebra makes. The model's own couplings are in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html), and nothing here duplicates them. The word *coupling* does not stand in a title outside the flagged section.
 
-The standing of this article. Everything below is standard theory, written in the corpus's coordinates and notation. It is standard input, not a framework result. The one-loop coefficient is the formula of [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), and it is not re-derived here; what this article adds is the arithmetic of the coefficient in terms of the colour factors of [the QCD article](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html), the solution of the running equation, the numbers at the scales where the coupling is measured, and the one parameter that replaces the coupling.
+The standing of this article. Everything below is standard theory, written in the corpus's coordinates and notation. It is standard input, not a framework result. The one-loop coefficient is the formula of [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), and it is not re-derived here; what this article adds is the arithmetic of the coefficient in terms of the group factors of [the QCD article](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html), the solution of the running equation, the numbers at the scales where the coupling is measured, and the one parameter that replaces the coupling.
 
 The claim. The strong coupling is not a constant, and its dependence on scale has a sign that makes the theory calculable. Three statements carry the article.
 
@@ -32,9 +32,9 @@ $$
 
 The conversion between the two is one line of algebra and is worth stating because the two forms are both in circulation: $d\alpha_s/d\ln\mu=(g_s/2\pi)\beta_{g_s}$, and $(g_s/2\pi)\left(-b_0g_s^3/16\pi^2\right)=-b_0g_s^4/32\pi^3=-b_0\alpha_s^2/2\pi$.
 
-The three contributions, named. The coefficient is a sum of three diagram classes, which the table below groups into two lines because only their sum enters; the colour factors $C_A=3$ and $T_R=1/2$ were computed from explicit Gell-Mann matrices in the QCD article.
+The three contributions, named. The coefficient is a sum of three diagram classes, which the table below groups into two lines because only their sum enters; the group factors $C_A=3$ and $T_R=1/2$ were computed from explicit Gell-Mann matrices in the QCD article.
 
-| Contribution | Colour factor | Its term in $b_0$ | At $N_c=3$ |
+| Contribution | Group factor | Its term in $b_0$ | At $N_c=3$ |
 |---|---|---|---|
 | Gluon and ghost loops, together | $C_A$ | $\tfrac{11}{3}C_A$ | $+11$ |
 | Quark loop | $T_R$ per flavour | $-\tfrac43T_RN_f$ | $-\tfrac23N_f$ |
@@ -63,7 +63,7 @@ The value used in practice. At the $Z$ pole five flavours are active, so $b_0=7.
 
 The count. The sector's antiscreening carries weight $11$ — the gluon and ghost loops together, not the gluon alone — and each quark's screening carries $-\tfrac23$. Six quarks remove four units, leaving seven. Asymptotic freedom is the statement $11>\tfrac23N_f$, and at $N_f=6$ the margin is a factor of nearly three.
 
-The physical picture, and what it is worth. A colour charge placed in the vacuum polarises it: virtual $q\bar q$ pairs screen the charge the way a dielectric screens an electric charge, which is the QED behaviour and would make the coupling grow with distance. The gluon carries colour itself, so the virtual gluons are not a dielectric but a paramagnet, and their contribution has the opposite sign: the charge appears to *grow* as the probe recedes, so the coupling falls as $Q$ rises. The direction is worth stating twice, because it is the one place the analogy is easy to invert: screening makes the charge grow as the probe approaches, antiscreening makes it shrink, and it is the second that QCD does. That is the picture, and it is correct as far as it goes. It is worth less than the calculation: the picture explains the sign but not the size, and the size — $11$ against $\tfrac23$ per flavour — is the content. The word *antiscreening* names a result; it does not produce one.
+The physical picture, and what it is worth. A strong charge placed in the vacuum polarises it: virtual $q\bar q$ pairs screen the charge the way a dielectric screens an electric charge, which is the QED behaviour and would make the coupling grow with distance. The gluon carries a triplet index itself, so the virtual gluons are not a dielectric but a paramagnet, and their contribution has the opposite sign: the charge appears to *grow* as the probe recedes, so the coupling falls as $Q$ rises. The direction is worth stating twice, because it is the one place the analogy is easy to invert: screening makes the charge grow as the probe approaches, antiscreening makes it shrink, and it is the second that QCD does. That is the picture, and it is correct as far as it goes. It is worth less than the calculation: the picture explains the sign but not the size, and the size — $11$ against $\tfrac23$ per flavour — is the content. The word *antiscreening* names a result; it does not produce one.
 
 What the sign actually says. In the ultraviolet, $g_s\to0$ and the partonic description becomes exact. In the infrared, $g_s$ grows without bound in perturbation theory and the expansion dies. Both halves matter, and only the first is under control: asymptotic freedom is a statement about short distances that is *derived*, and confinement is a statement about long distances that is *not* derived from the same information, even though it is the natural continuation of the same sign. This article is about the derived half.
 
@@ -238,7 +238,7 @@ $$
 m_p=\frac{1}{2m_p}\langle p|\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}|p\rangle .
 $$
 
-The number, and what it denies. Lattice QCD puts the quark-mass contribution to the nucleon mass at a few per cent of $m_p=1.673\times10^{-27}\ \mathrm{kg}$ — of order $1\%$ for the $u$ and $d$ current masses alone, nearer $5\%$ once the pion–nucleon sigma term is used — with the rest in the energy of the colour field and in the conformal anomaly, which are two distinct lines of the same decomposition. The proton is not made of quark masses; it is made of the energy of the colour field that binds them, and the coefficient that governs the anomalous part of that energy is $b_0$. This is why the proton mass is of order $\Lambda$ and not of order the quark masses, and why the ratio $m_pc^2/\Lambda_3=938/142=6.6$ of two energies is a number the lattice computes rather than a coincidence.
+The number, and what it denies. Lattice QCD puts the quark-mass contribution to the nucleon mass at a few per cent of $m_p=1.673\times10^{-27}\ \mathrm{kg}$ — of order $1\%$ for the $u$ and $d$ current masses alone, nearer $5\%$ once the pion–nucleon sigma term is used — with the rest in the energy of the strong field and in the conformal anomaly, which are two distinct lines of the same decomposition. The proton is not made of quark masses; it is made of the energy of the strong field that binds them, and the coefficient that governs the anomalous part of that energy is $b_0$. This is why the proton mass is of order $\Lambda$ and not of order the quark masses, and why the ratio $m_pc^2/\Lambda_3=938/142=6.6$ of two energies is a number the lattice computes rather than a coincidence.
 
 Why this belongs in this article and not the next two. The running and the mass gap are two readings of one coefficient. [The parton article](the-parton-model-and-deep-inelastic-scattering.html) takes the partonic description that asymptotic freedom licenses and computes structure functions in it, and [the jets article](jets-the-qcd-cross-section-and-the-infrared-structure.html) computes the cross sections. This one closes by noting that the same coefficient which makes the partons free at short distance is the one that makes the proton heavy at long distance.
 
@@ -246,7 +246,7 @@ Why this belongs in this article and not the next two. The running and the mass 
 
 The division, stated plainly. [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html) established: the Wilsonian effective action and its flow equation; the regulator and the momentum shell; the one-loop bubble and its $1/8\pi^2$; the beta functions of the quartic, abelian and non-abelian couplings with their signs; the adjoint Casimir checked for $SU(2)$ and $SU(3)$; the threshold $N_f\le16$ verified on $N_f=16$ and $N_f=17$; and both non-trivial fixed points with their stability. It also recorded where the algebra stops: the regulator the algebra most naturally hosts is a sharp cutoff on the biquaternion norm, and local invariance forbids it, while the regulator that preserves local invariance — dimensional regularisation — is not a four-dimensional biquaternion object. The running of a non-abelian coupling therefore has to be computed in a scheme the algebra does not supply.
 
-What this article adds. The coefficient written in the colour factors rather than in the Casimirs, with the ghost split out of the eleven; the Dirac–Weyl conversion; the solution of the equation rather than its coefficient; the threshold matching; the numbers at the scales where the coupling is measured, at one and at two loops; $\Lambda$ with its scheme, order and flavour dependence; the sensitivity of $\Lambda$ to $\alpha_s$; the scale at which the expansion dies; and the parameter-count statement that turns the running into a prediction.
+What this article adds. The coefficient written in the group factors rather than in the Casimirs, with the ghost split out of the eleven; the Dirac–Weyl conversion; the solution of the equation rather than its coefficient; the threshold matching; the numbers at the scales where the coupling is measured, at one and at two loops; $\Lambda$ with its scheme, order and flavour dependence; the sensitivity of $\Lambda$ to $\alpha_s$; the scale at which the expansion dies; and the parameter-count statement that turns the running into a prediction.
 
 What neither article does. Neither derives the beta function from the algebra, and neither claims to. The coefficient is a computation in quantum field theory with an invariant regulator, and the algebra's own regulator is not invariant. That is the same boundary the QCD article marks for the group and the triplet, met from a different side.
 
@@ -257,7 +257,7 @@ The ledger.
 | Item | Status |
 |---|---|
 | The beta function and its one-loop coefficient | **Imported.** Standard theory; the group article's formula, used here |
-| The colour factors $C_A=3$, $T_R=1/2$ | **Derived** in the QCD article from explicit matrices, given $N_c=3$ |
+| The group factors $C_A=3$, $T_R=1/2$ | **Derived** in the QCD article from explicit matrices, given $N_c=3$ |
 | $N_f\le16$ | **Derived** from the coefficient, given the particle content |
 | The solution of the running equation | **Derived here**, by separation of variables |
 | $\Lambda$ and dimensional transmutation | **Imported** in concept, **evaluated** here |
@@ -280,9 +280,9 @@ The expansion dies below about $4.81\times10^{-11}\ \mathrm{J}$, where $\alpha_s
 
 The theory has an edge at $N_f=16.5$ and a conformal window below it; the Standard Model sits far inside, with $b_0=7$ at six flavours, and that margin is why perturbation theory works over four orders of magnitude. QED sits on the other side of the same sign with a Landau pole, and the difference is the adjoint Casimir.
 
-Two readings of the one coefficient close the article: the same $b_0$ that makes the partons free at short distance gives the proton its mass at long distance, through the conformal anomaly, with $m_p=1.673\times10^{-27}\ \mathrm{kg}$ of which a few per cent comes from the quark masses and the rest from colour-field energy.
+Two readings of the one coefficient close the article: the same $b_0$ that makes the partons free at short distance gives the proton its mass at long distance, through the conformal anomaly, with $m_p=1.673\times10^{-27}\ \mathrm{kg}$ of which a few per cent comes from the quark masses and the rest from the strong field's energy.
 
-The framework supplies the sign rule and the colour factors and nothing else. The beta function is imported, the regulator is imported, and the value of $\Lambda$ is supplied by nothing at all.
+The framework supplies the sign rule and the group factors and nothing else. The beta function is imported, the regulator is imported, and the value of $\Lambda$ is supplied by nothing at all.
 
 ## Summary of Notation
 
@@ -292,7 +292,7 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 | $b_0$ | One-loop coefficient, $11-\tfrac23N_f$ |
 | $b_1$ | Two-loop coefficient, $102-\tfrac{38}{3}N_f$ |
 | $\beta_{g_s}=\mu\,dg_s/d\mu$ | Beta function of the coupling |
-| $C_A=3$ | Quadratic Casimir of the adjoint, the gluon's colour charge |
+| $C_A=3$ | Quadratic Casimir of the adjoint, the gluon's strong charge |
 | $T_R=1/2$ | Dynkin index of the triplet, the quark loop's normalisation |
 | $N_f$ | Number of active quark flavours at the scale $\mu$ |
 | $\mu$ | Renormalisation scale; $Q$ the kinematic scale of a process |
@@ -300,7 +300,7 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 | $m_t$, $m_b$, $m_c$ | Flavour thresholds $3.079\times10^{-25}$, $7.453\times10^{-27}$, $2.264\times10^{-27}\ \mathrm{kg}$ |
 | $\alpha_s^*$ | Fixed-point coupling of the conformal window |
 | $g_s$ | The coupling itself, $\alpha_s=g_s^2/4\pi$; the beta function is written for $g_s$ |
-| $N_c=3$ | Number of colours; enters $b_0$ only through $C_A=N_c$ and the normalisation $T_R=\tfrac12$ |
+| $N_c=3$ | The count of spatial lines; enters $b_0$ only through $C_A=N_c$ and the normalisation $T_R=\tfrac12$ |
 | $m_p$ | Proton mass, $1.673\times10^{-27}\ \mathrm{kg}$, the matrix element of the conformal anomaly |
 | $\sigma$ | String tension; $m_p^{2}c^{3}/\sigma\hbar$ is the pure number the theory predicts, and it is written squared because the root of the tension is a half power of the base units |
 | $\sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}$ | Trace of the energy–momentum tensor, proportional to $G_{a,\imath\jmath}G_{a,\imath\jmath}$ with coefficient $b_0$ |
@@ -311,7 +311,7 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 ## Further Reading
 
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html). The beta functions, the regulator question and the fixed points that this article uses without repeating.
-- [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The colour factors $C_A=3$ and $T_R=1/2$, computed from explicit Gell-Mann matrices, and the vertices the loops are built from.
+- [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The group factors $C_A=3$ and $T_R=1/2$, computed from explicit Gell-Mann matrices, and the vertices the loops are built from.
 - [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html). The adjoint representation and the embedded $\mathrm{SU}(3)$ elements.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The dimension bound behind the ledger's first row.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). Where $\alpha_s$ sits among the parameters, and at which scale.
@@ -319,4 +319,4 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 - [The Parton Model and Deep Inelastic Scattering](the-parton-model-and-deep-inelastic-scattering.html). The article that uses the asymptotically free description, and the structure functions it computes.
 - [Jets, the QCD Cross Section and the Infrared Structure](jets-the-qcd-cross-section-and-the-infrared-structure.html). Where the cross sections the parton model needs are computed, and where the infrared end of the running is met again.
 - [Confinement and the Loss of Partonic Information in Biquaternionic Form](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html). The area law that this article says the beta function does not give.
-- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). The classification that the ledger follows.
+- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). The classification that the ledger follows.

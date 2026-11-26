@@ -66,7 +66,7 @@ The canonical normalisation. A theory is normally written with the kinetic terms
 
 ## The Three Labels and the Charge
 
-The labels. A field is placed by its colour representation, its weak representation and its hypercharge. The first two are discrete; the third is a real number. The electric charge is not a fourth label: it is the combination
+The labels. A field is placed by its representation of the strong group, its weak representation and its hypercharge. The first two are discrete; the third is a real number. The electric charge is not a fourth label: it is the combination
 
 $$
 Ϙ=Y+T_3
@@ -111,8 +111,8 @@ A right-handed field in $R$ contributes as a left-handed field in the conjugate 
 Three lemmas, each one line.
 
 - $SU(2)$ has no cubic invariant. For any representation, $\{T_b,T_c\}=\tfrac12\delta_{bc}\mathrm I$ in the fundamental, so $T_a\{T_b,T_c\}=\tfrac12\delta_{bc}T_a$, whose trace vanishes because every $SU(2)$ generator is traceless. Since every $SU(2)$ representation is real or pseudoreal, the same holds for all of them. Hence $SU(2)_L^3$ vanishes identically, whatever the fermion content.
-- A single trace vanishes whenever at most one non-abelian generator is present. A condition with one non-abelian generator and two abelian ones is $Y^2\mathrm{Tr}\,[T_a]$, and one with one colour, one weak and one abelian generator is $Y\,\mathrm{Tr}\,[T_{a,c}]\,\mathrm{Tr}\,[T_b^L]$. Both single traces vanish, so both families do. The conditions that survive are the ones with a *pair* of generators of the same factor, where $\mathrm{Tr}\,[T_aT_b]\propto\delta_{ab}$ does not vanish and the content enters through one power of $Y$: those are the $SU(3)_c^2$ and $SU(2)_L^2$ rows below. This split is the reason the list is four and not two.
-- The colour cubic cancels because the colour content is vector-like. With $A(3)=1$ and $A(\bar3)=-1$, the quark doublet supplies $2A(3)$ from its two components and the two right-handed quarks supply $-A(3)$ each, so $2A(3)-A(3)-A(3)=0$.
+- A single trace vanishes whenever at most one non-abelian generator is present. A condition with one non-abelian generator and two abelian ones is $Y^2\mathrm{Tr}\,[T_a]$, and one with one triplet index, one weak and one abelian generator is $Y\,\mathrm{Tr}\,[T_{a,c}]\,\mathrm{Tr}\,[T_b^L]$. Both single traces vanish, so both families do. The conditions that survive are the ones with a *pair* of generators of the same factor, where $\mathrm{Tr}\,[T_aT_b]\propto\delta_{ab}$ does not vanish and the content enters through one power of $Y$: those are the $SU(3)_c^2$ and $SU(2)_L^2$ rows below. This split is the reason the list is four and not two.
+- The triplet cubic cancels because the triplet content is vector-like. With $A(3)=1$ and $A(\bar3)=-1$, the quark doublet supplies $2A(3)$ from its two components and the two right-handed quarks supply $-A(3)$ each, so $2A(3)-A(3)-A(3)=0$.
 
 **The four surviving conditions.** Three are linear in the hypercharges and one is cubic. Written in the hypercharges of the table, so that $Y_u$, $Y_d$ and $Y_e$ are the values the singlets carry,
 
@@ -231,11 +231,11 @@ The mixed $\mathrm{U}(1)$ question. If the model contained a second abelian fact
 
 A second kind of anomaly. Besides the perturbative triangle anomaly there is a global obstruction: an $SU(2)$ connection theory with an odd number of left-handed doublets is inconsistent, because the fermion determinant changes sign under a large local transformation. The condition is not a triangle coefficient and is not found by the computation above.
 
-The count. Each generation supplies four weak doublets: three from the colour triplet of $Q_L$ and one from $L_L$. Four is even. With three generations the count is twelve, also even.
+The count. Each generation supplies four weak doublets: three from the triplet of $Q_L$ and one from $L_L$. Four is even. With three generations the count is twelve, also even.
 
-**The check is satisfied and is not automatic.** A model with one generation of a single coloured quark doublet and no lepton doublet would violate it. The Standard Model's content satisfies it because colour multiplies the quark doublet by three and the lepton doublet adds one, so the parity is that of $N_c+1$ per generation, which is even for $N_c=3$.
+**The check is satisfied and is not automatic.** A model with one generation of a single non-singlet quark doublet and no lepton doublet would violate it. The Standard Model's content satisfies it because the triplet index multiplies the quark doublet by three and the lepton doublet adds one, so the parity is that of $N_c+1$ per generation, which is even for $N_c=3$.
 
-Why it belongs in this article. The Witten condition is a constraint on the same assignment that the triangle conditions constrain, and a reader who solves the triangle system and stops would miss it. It is the one place where the number of colours enters a consistency condition rather than a coupling.
+Why it belongs in this article. The Witten condition is a constraint on the same assignment that the triangle conditions constrain, and a reader who solves the triangle system and stops would miss it. It is the one place where the count of spatial lines enters a consistency condition rather than a coupling.
 
 ## The Scalar's Hypercharge, and the Chain
 
@@ -272,7 +272,7 @@ Three facts about the framework, each established in a companion article.
 
 - The framework's abelian factor is the central phase. The minimal coupling of [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html) supplies the $*$-unitary part of the centre, which is $\mathrm{U}(1)$, and a charge parameter $ϙ$ that multiplies every coefficient of a state by the same phase.
 - That phase is vector-like. Because the phase acts as a scalar, a state and its partner of the opposite chirality carry the same charge, so the cubic sum is $ϙ^3-ϙ^3=0$ identically, for every state and every charge. [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation.html) states this as the algebraic fact that the framework's abelian factor cannot be weak hypercharge.
-- The framework's compact factor is $SU(2)$ and not $SU(3)$. [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) proves that the algebra's intrinsic compact algebra is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of real dimension four, and that no module of $\mathbb{B}$ carries a colour triplet.
+- The framework's compact factor is $SU(2)$ and not $SU(3)$. [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) proves that the algebra's intrinsic compact algebra is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of real dimension four, and that no module of $\mathbb{B}$ carries a triplet.
 
 The consequence. The framework reaches the *algebra* of the electroweak group, since $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ is exactly the algebra of $SU(2)_L\times\mathrm{U}(1)_Y$. It does not reach the *assignment*, for two reasons that are worth separating.
 
@@ -289,11 +289,11 @@ Why the computation is still worth doing here. Because the ledger needs it. A bo
 
 The electroweak group is $SU(2)_L\times\mathrm{U}(1)_Y$, with two independent couplings $g$ and $g_{\mathrm Y}$ and the same Lie algebra as $\mathrm{U}(2)$. The electric charge is $Ϙ=Y+T_3$, so the seven charges of one generation follow from five hypercharges, and every hypercharge is an integer multiple of $\tfrac16$.
 
-The five hypercharges are the solution of four anomaly conditions: the $SU(3)_c^2\,\mathrm{U}(1)_Y$, $SU(2)_L^2\,\mathrm{U}(1)_Y$ and gravitational conditions, which are linear, and the $\mathrm{U}(1)_Y^3$ condition, which is cubic. The $SU(2)_L^3$ condition and every condition with at most one non-abelian generator vanish identically — the first because $SU(2)$ has no cubic invariant and every $SU(2)$ generator is traceless, the rest because each factorises a single trace, $Y^2\mathrm{Tr}\,[T_a]$ or $Y\,\mathrm{Tr}\,[T_{a,c}]\,\mathrm{Tr}\,[T_b^L]$, and both single traces vanish. The two conditions with a pair of generators of one factor survive because $\mathrm{Tr}\,[T_aT_b]\propto\delta_{ab}$ does not, and the $SU(3)_c^3$ condition cancels because the colour content of the quarks is vector-like, $2A(3)-A(3)-A(3)=0$.
+The five hypercharges are the solution of four anomaly conditions: the $SU(3)_c^2\,\mathrm{U}(1)_Y$, $SU(2)_L^2\,\mathrm{U}(1)_Y$ and gravitational conditions, which are linear, and the $\mathrm{U}(1)_Y^3$ condition, which is cubic. The $SU(2)_L^3$ condition and every condition with at most one non-abelian generator vanish identically — the first because $SU(2)$ has no cubic invariant and every $SU(2)$ generator is traceless, the rest because each factorises a single trace, $Y^2\mathrm{Tr}\,[T_a]$ or $Y\,\mathrm{Tr}\,[T_{a,c}]\,\mathrm{Tr}\,[T_b^L]$, and both single traces vanish. The two conditions with a pair of generators of one factor survive because $\mathrm{Tr}\,[T_aT_b]\propto\delta_{ab}$ does not, and the $SU(3)_c^3$ condition cancels because the triplet content of the quarks is vector-like, $2A(3)-A(3)-A(3)=0$.
 
 The linear system has rank three on five unknowns, so its solution space is two-dimensional, spanned by $(1,1,1,-3,-6)$ and $(0,1,-1,0,0)$. In the parameters $p$ and $q$ of that space the cubic becomes $18p(9p^2-q^2)$, which factors exactly as $18p(3p-q)(3p+q)$. The solution set is therefore three rays: $q=3p$, which is the observed assignment; $q=-3p$, which is the same assignment with up and down interchanged; and $p=0$, which is excluded because it makes both doublets half-integrally charged. The measured charges select the first, and the overall scale is a convention traded against the normalisation of $g_{\mathrm Y}$, not a physical quantity.
 
-Beyond the triangle conditions stands the Witten condition, that the number of left-handed doublets be even. Each generation supplies $N_c+1=4$, so the content satisfies it, and the condition is the one place where the number of colours enters a consistency requirement rather than a coupling.
+Beyond the triangle conditions stands the Witten condition, that the number of left-handed doublets be even. Each generation supplies $N_c+1=4$, so the content satisfies it, and the condition is the one place where the count of spatial lines enters a consistency requirement rather than a coupling.
 
 The scalar's hypercharge is not part of the anomaly system, since a boson contributes no triangle coefficient. It is fixed by the invariance of the Yukawa terms, $-Y_{L_L}+Y_{\mathrm{hch}}+Y_{e_R}=0$ and so $Y_{\mathrm{hch}}=Y_{L_L}-Y_{e_R}=+\tfrac12$, and with it the neutral component can carry the vacuum expectation value and leave the photon massless. The chain is: content, then four anomaly conditions, then the measured charges, then Yukawa invariance.
 
@@ -312,7 +312,7 @@ The framework reaches the algebra of the group and not the assignment. Its abeli
 | $Y_Q$, $Y_L$ | Hypercharges of the quark and lepton doublets, in the convention of the table |
 | $Y_u$, $Y_d$, $Y_e$ | Hypercharges of the three singlets, reversed when a right-handed field is written as a conjugate |
 | $A_{abc}(R)=\mathrm{Tr}_R[T_a\{T_b,T_c\}]$ | The triangle coefficient |
-| $A(3)$, $A(\bar3)$ | Cubic colour Casimirs, $+1$ and $-1$ |
+| $A(3)$, $A(\bar3)$ | Cubic triplet Casimirs, $+1$ and $-1$ |
 | $M$ | The $3\times5$ matrix of the linear anomaly conditions |
 | $p$, $q$ | The two parameters of the linear solution space |
 | $Y_{\mathrm{hch}}=\tfrac12$, $Y_{\tilde\omicron_{\mathrm{hgs}}}=-\tfrac12$ | Hypercharges of the scalar doublet and its conjugate |
@@ -323,7 +323,7 @@ The framework reaches the algebra of the group and not the assignment. Its abeli
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The content this assignment is written for, and the charge table the solution reproduces.
 - [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html). The derivation of the triangle coefficient, the three lemmas, and the verification of the conditions on the observed spectrum.
 - [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html). The central phase and the charge parameter $ϙ$.
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The intrinsic compact algebra $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ and the colour ceiling.
+- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The intrinsic compact algebra $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ and the strong-group ceiling.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why a central charge cannot be chiral, and the non-central case as the open question.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The covariant derivative and the Yukawa terms whose invariance fixes $Y_{\mathrm{hch}}$.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). The same boundary in ledger form.

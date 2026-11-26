@@ -258,7 +258,7 @@ For every proposal in the corpus that touches a parameter, the question is which
 | The PMNS as the same operator | 10–13 (leptons) | Arena | Arena; and the count $4$ or $6$ as a discriminator |
 | The condensate and the conformal anomaly | 18 | None | No scale mechanism; the QCD case is imported |
 | The Skyrme soliton | 1–9 | None | Ratios within a truncation, not parameters |
-| The ceiling | — | Constraint | Forbids a $\mathbb{B}$ colour triplet, which forbids nothing among the nineteen |
+| The ceiling | — | Constraint | Forbids a $\mathbb{B}$ triplet, which forbids nothing among the nineteen |
 
 What the table shows is one relation, of a restricted kind. Five arenas. Zero values. And one constraint that constrains the framework rather than the model. The table is the answer to "what does the framework fix".
 

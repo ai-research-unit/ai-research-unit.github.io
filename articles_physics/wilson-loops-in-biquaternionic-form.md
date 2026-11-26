@@ -281,7 +281,7 @@ verified in the $2\times2$ representation, so that the two Lorentz invariants of
 | $\langle W(C)\rangle\sim \exp(-\kappa\,\mathrm{perim})$ / $\exp(-\sigma\,\mathrm{area})$ | Perimeter law (screening) / area law (confinement) |
 | $\sigma$ | String tension |
 | $\ell$ | Side length of the small loop; its area is $\ell^2$ |
-| $a$ | Colour index of the algebra, written low; every contraction over it is an explicit sum. The loop size is $\ell$. |
+| $a$ | Adjoint index of the algebra, written low; every contraction over it is an explicit sum. The loop size is $\ell$. |
 
 ## Further Reading
 

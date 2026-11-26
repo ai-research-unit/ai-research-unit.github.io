@@ -1,20 +1,20 @@
-# __The Colours in $\mathrm{SU}(4)$: A Coordinate Label on the Fifteen, Not a Charge__
+# __The Three Lines in $\mathrm{SU}(4)$: A Coordinate Label on the Fifteen, Not a Charge__
 
 ## Introduction
 
-**The question.** The corpus writes $r\bar g$, $r\bar b$ and $b\bar\ell$ on the fifteen connections, and it calls them colours. **Are they charges?**
+**The question.** The corpus writes $r\bar g$, $r\bar b$ and $b\bar\ell$ on the fifteen connections, and it calls them line names. **Are they charges?**
 
-**The answer.** No. **They are coordinates in a $4\times4$ table.** Above $M_C$ the group is one simple factor and no $\mathrm{SU}(3)$ is made local, so a colour letter names a slot and nothing else. **It is not an eigenvalue, not a conserved number, and not an observable.**
+**The answer.** No. **They are coordinates in a $4\times4$ table.** Above $M_C$ the group is one simple factor and no $\mathrm{SU}(3)$ is made local, so a line letter names a slot and nothing else. **It is not an eigenvalue, not a conserved number, and not an observable.**
 
 **What this article establishes.** The fifteen flat labels, with no broken-phase word among them: twelve ordered pairs and three diagonal directions. Why the labels mix under a local transformation. Why nothing can measure them above $M_C$. And the four facts that are real — the group, its dimension, its rank, and the common mass.
 
-**What it does not establish.** That colour exists anywhere. **The $\mathrm{SU}(3)$ content — eight, rank two, the singlet excluded — belongs to the phase below $M_C$**, and the companion article [The Colours in $\mathrm{SU}(3)$](the-colours-in-su3-a-coordinate-label-on-the-eight-not-a-charge.html) carries it. This article is the first half, and it stops at the transition.
+**What it does not establish.** That the strong group exists anywhere. **The $\mathrm{SU}(3)$ content — eight, rank two, the singlet excluded — belongs to the phase below $M_C$**, and the companion article [The Three Lines in $\mathrm{SU}(3)$](the-three-lines-in-su3-a-coordinate-label-on-the-eight-not-a-charge.html) carries it. This article is the first half, and it stops at the transition.
 
-**Why the flat list comes first.** A claim that "colour is bookkeeping" is worth nothing until the bookkeeping is printed. **So the article prints all fifteen labels before it argues anything about them.**
+**Why the flat list comes first.** A claim that "the labels are bookkeeping" is worth nothing until the bookkeeping is printed. **So the article prints all fifteen labels before it argues anything about them.**
 
 ## The Four Lines, and the Two Things the Renaming Does
 
-**The carrier above $M_C$ is a four-dimensional complex space, and its basis is written $(t,x,y,z)$.** The colour notation writes the same four lines as $(\ell,r,g,b)$.
+**The carrier above $M_C$ is a four-dimensional complex space, and its basis is written $(t,x,y,z)$.** The line-letter notation writes the same four lines as $(\ell,r,g,b)$.
 
 **Two separate acts sit inside that renaming, and only one of them carries content.**
 
@@ -23,15 +23,15 @@
 | writing $x,y,z$ as $r,g,b$ | a change of letter | notation, no content |
 | writing $t$ as $\ell$ | the statement that the temporal line is the lepton line | declaration (A) |
 
-**The first act is free.** Nothing in the model depends on calling the second line red rather than green, and a permutation of the three colour letters changes no number. **The second act is the corpus's one declared input**, and its content is which line is which — not that a colour group exists.
+**The first act is free.** Nothing in the model depends on calling the second line red rather than green, and a permutation of the three line letters changes no number. **The second act is the corpus's one declared input**, and its content is which line is which — not that a strong group exists.
 
-**What neither act does is representative anything.** The group acting on the quartet is $\mathrm{SU}(4)$, one factor, and its fifteen generators act on the four lines. **There is no second factor, and no colour subgroup that is a factor of the theory.** A reader who supplies one has added a premise the model does not contain.
+**What neither act does is representative anything.** The group acting on the quartet is $\mathrm{SU}(4)$, one factor, and its fifteen generators act on the four lines. **There is no second factor, and no three-line subgroup that is a factor of the theory.** A reader who supplies one has added a premise the model does not contain.
 
 **That is the whole of the pre-breaking situation.** Four lines, fifteen directions between them, one group. **The letters name the lines; the labels below name the directions.**
 
 ## The Fifteen, Flat
 
-**Define the matrix unit $E_{ij}$: the direction that moves line $j$ into line $i$, with $i\ne j$.** Its colour label is $i\bar j$, read as *line $i$ on line anti-$j$*. **Columns are sources and rows are targets**, so cell $(i,j)$ of the corpus's grid is $E_{ij}$.
+**Define the matrix unit $E_{ij}$: the direction that moves line $j$ into line $i$, with $i\ne j$.** Its cell label is $i\bar j$, read as *line $i$ on line anti-$j$*. **Columns are sources and rows are targets**, so cell $(i,j)$ of the corpus's grid is $E_{ij}$.
 
 **The fifteen are twelve such pairs and three diagonal directions.** That is the complete list, and no word from the broken phase appears in it.
 
@@ -72,9 +72,9 @@ $$
 
 **The corpus's three are $iM_x$, $iM_y$ and $iM_z$**, with $M_j=E_{jj}-E_{tt}$, and the trace direction $D=\operatorname{diag}(-3,1,1,1)$ is their sum up to normalisation. **That basis is a choice; the dimension three is not.** **This one is chosen because it is symmetric in $x,y,z$: the permutation of the three vector labels permutes the three of them and fixes no member**, and the fourth line is what makes the choice possible at all, as [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves. A reader who prefers $i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr)$, $\tfrac i2\bigl(W_{yy}-W_{xx}\bigr)$ and $\tfrac i2\bigl(W_{zz}-W_{yy}\bigr)$ has the same three-dimensional space in another basis, and every number computed from it is unchanged.
 
-**The diagonal directions carry no root.** A Cartan generator has weight zero: it measures the shift a root produces and produces none itself. **"The colour of a diagonal boson" is therefore the zero label**, which is another way of saying that the three are the measuring rods and the twelve are the moves.
+**The diagonal directions carry no root.** A Cartan generator has weight zero: it measures the shift a root produces and produces none itself. **"The label of a diagonal boson" is therefore the zero label**, which is another way of saying that the three are the measuring rods and the twelve are the moves.
 
-**And the analogous arithmetic one size down names the same object.** Colour–anticolour slots number $N^{2}$; the algebra keeps $N^{2}-1$; the removed one is the trace. **At $N=4$ that is $16\to15$; at $N=3$ it is $9\to8$.** The arithmetic is identical and so is its status: **a count, not a convention.**
+**And the analogous arithmetic one size down names the same object.** Triplet–antitriplet slots number $N^{2}$; the algebra keeps $N^{2}-1$; the removed one is the trace. **At $N=4$ that is $16\to15$; at $N=3$ it is $9\to8$.** The arithmetic is identical and so is its status: **a count, not a convention.**
 
 ## Why the Label Is Not a Charge
 
@@ -108,7 +108,7 @@ $$
 
 **This is the sharpest form of the claim.** Below $M_C$ the degeneracy lifts — six of the fifteen take $32v^{2}$ and nine stay at zero — and that split is observable. **Above $M_C$ there is nothing to lift, and therefore nothing for a name to attach to.**
 
-**The strongest objection, named before it is answered.** *QCD's colours are basis labels too, and its eight gluons are physical.* **True, and it is the point.** Even below $M_C$, $r\bar g$ is a coordinate on the adjoint of $\mathrm{SU}(3)$; what is physical there is the group, the dimension eight, the rank two, the exclusion of the singlet, and the invariant rates computed from them. **The letters are never physics at either scale.** What changes between the scales is not that the letters become real. **It is that below $M_C$ there is a group for the coordinates to be coordinates of, and above it there is not.**
+**The strongest objection, named before it is answered.** *QCD's triplet labels are basis labels too, and its eight gluons are physical.* **True, and it is the point.** Even below $M_C$, $r\bar g$ is a coordinate on the adjoint of $\mathrm{SU}(3)$; what is physical there is the group, the dimension eight, the rank two, the exclusion of the singlet, and the invariant rates computed from them. **The letters are never physics at either scale.** What changes between the scales is not that the letters become real. **It is that below $M_C$ there is a group for the coordinates to be coordinates of, and above it there is not.**
 
 ## What Is Real, and What Is Chosen
 
@@ -142,11 +142,11 @@ $$
 
 ## One Statement That Must Not Be Carried Upward
 
-**"Four colours" is the phrase to avoid.** It reads as a group with four colours, and above $M_C$ there is no colour group — there are four lines of one multiplet. **The correct pre-breaking sentence is: fifteen directions of one simple group, of which twelve move a line and three weight the lines.**
+**The phrase that reads the labels as four group members is to be avoided.** It reads as a group with four lines, and above $M_C$ there is no strong group — there are four lines of one multiplet. **The correct pre-breaking sentence is: fifteen directions of one simple group, of which twelve move a line and three weight the lines.**
 
-**"The fourth colour" is a different phrase with a different status**, and the difference is worth keeping. It is shorthand for declaration (A), the statement that $e_t$ is the lepton line, and the corpus states it as one declaration rather than as a result. **A reader may keep the phrase provided the word *declaration* stays beside it.** Its content is which line is which; no measurement inside this article's scope decides that, and the algebra does not either.
+**"The fourth line" is a different phrase with a different status**, and the difference is worth keeping. It is shorthand for declaration (A), the statement that $e_t$ is the lepton line, and the corpus states it as one declaration rather than as a result. **A reader may keep the phrase provided the word *declaration* stays beside it.** Its content is which line is which; no measurement inside this article's scope decides that, and the algebra does not either.
 
-**The test is mechanical.** Take any sentence with a colour word in it and ask whether it survives a relabelling of the four lines. **What survives is physics. What does not is a coordinate, and coordinates belong to the table, not to nature.**
+**The test is mechanical.** Take any sentence carrying a line name in it and ask whether it survives a relabelling of the four lines. **What survives is physics. What does not is a coordinate, and coordinates belong to the table, not to nature.**
 
 ## The Checks
 
@@ -167,22 +167,22 @@ $$
 
 ## Summary
 
-**The fifteen labels are twelve ordered pairs and three diagonal directions, and none of them is a charge.** A pair names the two lines a direction connects; a diagonal names the weighting of a line. **The table is a chart of sixteen slots with the trace removed, and that is the whole of what colour means above $M_C$.**
+**The fifteen labels are twelve ordered pairs and three diagonal directions, and none of them is a charge.** A pair names the two lines a direction connects; a diagonal names the weighting of a line. **The table is a chart of sixteen slots with the trace removed, and that is the whole of what the label means above $M_C$.**
 
 **The labels are unobservable for two independent reasons.** They mix under a local transformation, so no invariant operator carries one; and the fifteen are exactly degenerate, so no rate or mass distinguishes one label from another. **A label a symmetry can rotate away is notation.**
 
 **Four things are real: the group, the dimension, the rank, and the masslessness.** They survive every basis and are checkable without naming a line. **The twelve-and-three split is a fifth**, invariant for the same reason.
 
-**Everything with a colour word in it is downstream of a declared line.** The partition $8+1+6$, the words gluon and leptoquark, the phrase "the fourth colour" — each requires declaration (A), and the first requires a second thing besides: a vacuum, because $8+1+6$ is the degenerate value of the diagonal frame and not a decomposition of the fifteen. **That is the test of bookkeeping, and the fifteen pass it.**
+**Every statement that uses a line letter is downstream of a declared line.** The partition $8+1+6$, the words gluon and leptoquark, the phrase "the fourth line" — each requires declaration (A), and the first requires a second thing besides: a vacuum, because $8+1+6$ is the degenerate value of the diagonal frame and not a decomposition of the fifteen. **That is the test of bookkeeping, and the fifteen pass it.**
 
 ## Summary of Notation
 
 | symbol | meaning |
 | --- | --- |
 | $(t,x,y,z)$ | the carrier basis above $M_C$ |
-| $(\ell,r,g,b)$ | the same four lines in colour letters |
+| $(\ell,r,g,b)$ | the same four lines in line letters |
 | $E_{ij}$ | the direction moving line $j$ into line $i$, with $i\ne j$ |
-| $i\bar j$ | the colour label of $E_{ij}$ |
+| $i\bar j$ | the cell label of $E_{ij}$ |
 | $iM_j$, $j=x,y,z$ | the three trace-free diagonal directions, the symmetric frame |
 | $iD$ | $i\sum_jM_j$, the trace direction, not one of the fifteen |
 | $D$ | $\operatorname{diag}(-3,1,1,1)$ up to normalisation, the direction the vacuum takes below $M_C$ |
@@ -192,7 +192,7 @@ $$
 
 ## Further Reading
 
-- [The $\mathrm{SU}(4)$ Model: One Group, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html), for the group, the count of fifteen and the place of declaration (A).
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html), for the group, the count of fifteen and the place of declaration (A).
 - [The Counts of the Fifteen: Sixteen Cells, Six Pairs, Twelve Arrays, Fifteen Generators](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html), for the cell, plane and array vocabulary used above.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), for the same grid read with names in every cell, and for what changes at the transition.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html), for the covariant derivative, the one coupling and the local transformation quoted above.

@@ -12,7 +12,7 @@ $$
 D_{\imath}Ξ=\partial_{\imath}Ξ-ig_4\sum_{a=1}^{15}A_{a,\imath}\bigl[t_{a},Ξ\bigr].\;}
 $$
 
-**One field, one commutator, four quartics.** The commutator is what a matrix index forces; two of the quartics are what a matrix admits in its traceless part, and a vector admits only one; the trace adds two more quartics and a second quadratic; and the one coupling is the same $g_4$ that multiplies the curvature. **The title counts the quartic coefficients the display carries**, and the trace channel is the part of the potential that never rotates the field in colour space: its terms enter the field equation only through multiples of $\mathbb 1$ and of $Ξ$ itself.
+**One field, one commutator, four quartics.** The commutator is what a matrix index forces; two of the quartics are what a matrix admits in its traceless part, and a vector admits only one; the trace adds two more quartics and a second quadratic; and the one coupling is the same $g_4$ that multiplies the curvature. **The title counts the quartic coefficients the display carries**, and the trace channel is the part of the potential that never rotates the field in triplet space: its terms enter the field equation only through multiples of $\mathbb 1$ and of $Ξ$ itself.
 
 **What this article does.** It writes the piece, expands it, derives the field equation and the constraint, counts the equations against the components, and computes the four numbers the piece implies: fifteen trilinear vertices, one hundred and twenty quadrilinear ones, a rank-six vector mass matrix, and a kinetic normalisation of one.
 
@@ -20,7 +20,7 @@ $$
 
 ## The Piece, and Why Each Symbol Is There
 
-**The covariant derivative acts by commutation because $Ξ$ carries one colour index of each kind.**
+**The covariant derivative acts by commutation because $Ξ$ carries one index of each kind.**
 
 $$
 Ξ\mapsto UΞ U^{\dagger}
@@ -36,7 +36,7 @@ $$
 
 **No factor of $\tfrac12$ appears, unlike the curvature's $\tfrac14$.** The reason is the normalisation $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$: the curvature is an algebra element squared and its trace supplies a $\tfrac12$, and the scalar bilinear is a trace of two fields and supplies none. **The two normalisations are checked in [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) against the printed arrays**, where the corner direction carries trace norm $12$ and sets the coefficient.
 
-**Nothing is summed but the colour indices.** $Ξ$ carries one lower and one upper colour index and no other label, so the trace over colour is the whole of the contraction, and the sixteen real components are the algebra's $15+1$.
+**Nothing is summed but the indices.** $Ξ$ carries one lower and one upper index and no other label, so the trace over the spatial block is the whole of the contraction, and the sixteen real components are the algebra's $15+1$.
 
 **The potential, with all four quartic coefficients written.**
 
@@ -46,7 +46,7 @@ V(Ξ)=\mu_{\Phi}^{2}\operatorname{tr}Ξ^{2}+\mu_{2}^{2}(\operatorname{tr}Ξ)^{2}
 +\underbrace{\lambda_{3}(\operatorname{tr}Ξ)^{2}\operatorname{tr}Ξ^{2}+\lambda_{4}(\operatorname{tr}Ξ)^{4}}_{\text{trace channel}} .
 $$
 
-**Two quadratics and four quartics, six coefficients in all, which is the scalar sector's count in [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html).** The traceless pair is the one the commutator and the field equation can tell apart, since $\lambda_{1}$ multiplies a matrix product and $\lambda_{2}$ a number times the field; the trace pair multiplies only scalars, so it shifts the equation without rotating the field in colour space.
+**Two quadratics and four quartics, six coefficients in all, which is the scalar sector's count in [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html).** The traceless pair is the one the commutator and the field equation can tell apart, since $\lambda_{1}$ multiplies a matrix product and $\lambda_{2}$ a number times the field; the trace pair multiplies only scalars, so it shifts the equation without rotating the field in triplet space.
 
 **The fifth quartic and the three cubics are absent and not forbidden.** $\operatorname{tr}Ξ^{3}\operatorname{tr}Ξ$ is invariant and of degree four, and $\operatorname{tr}Ξ^{3}$, $\operatorname{tr}Ξ^{2}\operatorname{tr}Ξ$ and $(\operatorname{tr}Ξ)^{3}$ are invariant and of degree three; the model drops them all, and dropping them is a choice of coefficients — zero — rather than a property of the group. **The cubics are odd under $Ξ\to-Ξ$, so a potential even in the field removes those three and does not touch the quartic.** **The count of what the group allows is five quartics and three cubics**, and the article writes four quartics and no cubic. **The four are exactly those built from $Ξ^{2}$ and $\operatorname{tr}Ξ$**: $\operatorname{tr}Ξ^{4}=\operatorname{tr}(Ξ^{2}Ξ^{2})$, $(\operatorname{tr}Ξ^{2})^{2}$, $(\operatorname{tr}Ξ)^{2}\operatorname{tr}Ξ^{2}$ and $(\operatorname{tr}Ξ)^{4}$, while the dropped one needs $Ξ^{3}$. **That is the rule the corpus follows and it is a declaration of zero coefficients**, not a symmetry: the group allows all five. **The boundedness cone in [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html) is the cone for this potential with $\lambda_{5}=0$**, which is the potential written here; a nonzero $\lambda_{5}$ would need a row of its own there.
 
@@ -85,7 +85,7 @@ $$
 
 **The derivative of the potential is a matrix and not a number**, and that is the difference between this field and a quartet: $\partial V/\partialΞ^{\dagger}$ carries the same two indices as $Ξ$, so the equation is an equation between matrices and holds entry by entry.
 
-**The trace terms shift the equation and never rotate it.** The pieces carrying an unpaired $\operatorname{tr}Ξ$ give multiples of $\mathbb 1$; the pieces carrying $(\operatorname{tr}Ξ)^{2}\Xi$ or $\operatorname{tr}Ξ^{2}\,\Xi$ rescale the matrix part without rotating it in colour space. **That is why the trace channel changes masses and never the breaking pattern**: a shift of $Ξ$ by $c\,\mathbb 1$ commutes with all fifteen generators, so the sector never sees it.
+**The trace terms shift the equation and never rotate it.** The pieces carrying an unpaired $\operatorname{tr}Ξ$ give multiples of $\mathbb 1$; the pieces carrying $(\operatorname{tr}Ξ)^{2}\Xi$ or $\operatorname{tr}Ξ^{2}\,\Xi$ rescale the matrix part without rotating it in triplet space. **That is why the trace channel changes masses and never the breaking pattern**: a shift of $Ξ$ by $c\,\mathbb 1$ commutes with all fifteen generators, so the sector never sees it.
 
 **The two quartics of the traceless part produce two different cubic terms in the equation of motion.** $ΞΞ^{\dagger}Ξ$ is a matrix product of three factors; $(\operatorname{tr}Ξ^{\dagger}Ξ)Ξ$ is a number times the field. **A potential with one quartic would have only the second kind**, and the difference is what makes the model's vacuum shape a dynamical question. **The two trace quartics add no third kind**: they produce $(\operatorname{tr}Ξ)^{2}Ξ$ and $(\operatorname{tr}Ξ)^{2}\operatorname{tr}Ξ^{2}\,\mathbb 1$, a rescaling and a shift, and neither is a matrix product.
 

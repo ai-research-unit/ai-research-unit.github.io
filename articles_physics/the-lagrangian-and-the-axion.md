@@ -34,7 +34,7 @@ The conventions are restated here so that every sign below is checkable from thi
 
 The field. $a$ is real and periodic, $a\equiv a+2\pi f_a$; $f_a$ is the axion decay constant, with dimension of mass. The dimensionless angle is $\theta=a/f_a$.
 
-The sector. $F_{a'\imath\jmath}$ are the colour field strengths, $g_s$ the strong coupling, and $\tilde F$ the dual; the density $F\tilde F=\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}$ is a total derivative.
+The sector. $F_{a'\imath\jmath}$ are the strong field strengths, $g_s$ the strong coupling, and $\tilde F$ the dual; the density $F\tilde F=\sum_{\imath,\jmath}F_{\imath\jmath}F_{\mathrm{dual},\imath\jmath}$ is a total derivative.
 
 The potential. $V(a)=\Lambda^4\bigl(1-\cos(a/f_a+\bar\theta)\bigr)$ at leading order, with $\Lambda^4$ the topological susceptibility and $\bar\theta$ the vacuum angle.
 

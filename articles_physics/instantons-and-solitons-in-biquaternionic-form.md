@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This article is the strong sector's account of the general theory of topological charge.** It states the density and its primitivity, the self-duality condition and the Bogomolny bound, and it then does the part that no sector-free statement can do: it sets the objects in the framework's compact factor, exhibits the solution, and answers what the framework's own invariants supply for them and what they do not. The general statements are proved here rather than cited elsewhere, so the article can be read on its own; the sector's content is the non-perturbative configurations of the colour connection theory.
+**This article is the strong sector's account of the general theory of topological charge.** It states the density and its primitivity, the self-duality condition and the Bogomolny bound, and it then does the part that no sector-free statement can do: it sets the objects in the framework's compact factor, exhibits the solution, and answers what the framework's own invariants supply for them and what they do not. The general statements are proved here rather than cited elsewhere, so the article can be read on its own; the sector's content is the non-perturbative configurations of the strong connection theory.
 
 The companion article *Non-Abelian Connections in Biquaternionic Form* closes with an open question: whether the biquaternion framework supplies a preferred connection with finite action and nonzero topological charge, and whether the zero-divisor structure of $\mathbb{B}_{\Phi}$ plays any role in it. This article takes that question up. Its subject is **localised finite-energy solutions** of the framework's field equations, and it treats the two families that the phrase covers separately, because they differ in three things at once — the sign of the star, boundary conditions, and what makes them stable.
 
@@ -374,7 +374,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $\epsilon_{\imath\jmath\rho\sigma}$ | Totally antisymmetric symbol, $\epsilon_{0123}=+1$ |
 | $g,\ \kappa=\frac{2\pi ϙ}{h}$ | Connection coupling and the parent's coupling convention |
 | $\rho$ | Instanton radius (a modulus) |
-| $a$ | Colour index of $\mathrm{SU}(2)$, written low; every contraction over it is an explicit sum |
+| $a$ | Adjoint index of $\mathrm{SU}(2)$, written low; every contraction over it is an explicit sum |
 
 ## Further Reading
 

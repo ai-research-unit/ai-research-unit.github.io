@@ -423,7 +423,7 @@ The framework supplies the null direction, and with it the light-cone decomposit
 | $d_n=-A_n/b_0$ | Exponent of $\alpha_s$ in the moment's evolution |
 | $\alpha_s(Q^2)$ | Strong coupling at the scale of the probe |
 | $b_0=11-\tfrac23N_f$ | One-loop coefficient of the running, $\tfrac{25}{3}$ at four flavours |
-| $C_F=\tfrac43$ | Quadratic Casimir of the triplet; the quark's colour charge |
+| $C_F=\tfrac43$ | Quadratic Casimir of the triplet; the quark's strong charge |
 | $q_n=\int_0^1x^{n-1}q(x)dx$ | The $n$-th moment whose evolution the exponent governs |
 | $\alpha$ | Fine-structure constant; the cross section above carries $\alpha^2$ |
 | $S_G$ | Gottfried sum, measured $0.235\pm0.026$ |

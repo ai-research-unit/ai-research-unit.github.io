@@ -1,4 +1,4 @@
-# __The Quantum Numbers Below the Breaking: Colour, $B-L$, Weak Isospin and the Electric Charge__
+# __The Quantum Numbers Below the Breaking: The Strong Group, $B-L$, Weak Isospin and the Electric Charge__
 
 ## Introduction
 
@@ -17,7 +17,7 @@ $$
 $$
 \boxed{\;
 \underbrace{Q}_{\text{exact}},\quad
-\underbrace{\text{colour}}_{\text{exact, confined}},\quad
+\underbrace{\text{strong}}_{\text{exact, confined}},\quad
 \underbrace{B-L}_{\text{eigenvalue fixed, charge lost at }M_C},\quad
 \underbrace{T_{3L},T_{3R},Y}_{\text{broken at }M_W,\ M_C,\ M_W}.
 \;}
@@ -25,7 +25,7 @@ $$
 
 **The single idea.** Conservation and masslessness are the same condition. A generator that annihilates the vacuum gives a massless boson *and* a conserved charge, and a generator that does not gives a massive boson *and* a charge that is no longer a symmetry. So the table of conserved charges is the table of massless bosons read as quantum numbers, and there is nothing to compute twice. **No charge escapes the criterion, and $B-L$ looks as though it does.** Its boson is the $Z_R$, and its eigenvalue never moves; that is why it is easy to write as though it survived the transition. The $B-L$ section below shows that it does not, and that what survives in its place is $B$, by accident of the content.
 
-**What the article establishes.** The criterion and its proof; the table of charges with the scale at which each is lost; the two charges that survive — colour and the electric charge — with the different senses in which they survive; the exact status of $B-L$; the reason $B$ and $L$ separately are not symmetries and why the proton is stable anyway; the charges that are accidents of the field content; and the anomalous combination.
+**What the article establishes.** The criterion and its proof; the table of charges with the scale at which each is lost; the two charges that survive — the strong charge and the electric charge — with the different senses in which they survive; the exact status of $B-L$; the reason $B$ and $L$ separately are not symmetries and why the proton is stable anyway; the charges that are accidents of the field content; and the anomalous combination.
 
 **What the article does not establish.** No dynamics and no decay rate. The proton's stability is treated in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html), and the sphaleron statement in [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html).
 
@@ -52,7 +52,7 @@ $$
 | charge | generator | exact above | exact below | lost at | reason |
 |---|---|---|---|---|---|
 | electric, $Q$ | $T_{3L}+Y$ | below $M_W$ only | at every scale below $M_W$ | never below $M_W$ | it annihilates both vevs |
-| colour | $\mathfrak{su}(3)$ | at every scale | at every scale | never | $X e_t=0$ |
+| the strong charge | $\mathfrak{su}(3)$ | at every scale | at every scale | never | $X e_t=0$ |
 | $B-L$ | the surviving $\mathrm{SU}(4)$ Cartan | as a direction of $\mathrm{SU}(4)$ above $M_C$ | no | $M_C$ | the lepton line carries $B-L=-1$, so $[B-L,Ξ_0]\neq0$ |
 | $T_{3R}$ | $\sigma^{3}/2$ | above $M_C$ | no | $M_C$ | the right line is a $T_{3R}$ eigenstate, not an eigenstate of the other two |
 | $Y$ | $T_{3R}+\tfrac12(B-L)$ | above $M_W$ | no | $M_W$ | the left line breaks it |
@@ -64,29 +64,29 @@ $$
 
 **2.3 The rank statement.** At each step the rank of the conserved charge lattice is the rank of $\mathfrak h$: $3\to5\to4\to3$. The number of independent conserved Cartan charges is that rank, and it is why there are three at the bottom and not more. **The rank rises at the first step**, because the two weak $\mathrm{SU}(2)$ factors arrive with the doublet index and bring their Cartans; it falls back to four in the same vacuum, because the right factor is broken there; and it falls to three at $v$, because a broken $\mathrm{SU}(2)_L$ leaves a single abelian direction. **Rank five exists at $M_C$ and has no width.**
 
-## Colour: Exact and Confined
+## The Strong Group: Exact and Confined
 
-**Three different senses of "survives", and colour has two of them.**
+**Three different senses of "survives", and the strong charge has two of them.**
 
-**3.1 Colour is exact.** $\mathfrak{su}(3)\subset\mathfrak h_i$ at every stage, so the eight colour charges are conserved at every scale. No step of the chain touches them.
+**3.1 The strong charge is exact.** $\mathfrak{su}(3)\subset\mathfrak h_i$ at every stage, so the eight strong charges are conserved at every scale. No step of the chain touches them.
 
-**3.2 Colour is confined.** Conserved does not mean realised. The physical states are colour singlets, so no state carries a colour charge, and the conservation law is realised as the absence of coloured asymptotic states rather than as a selection rule among them.
+**3.2 The strong charge is confined.** Conserved does not mean realised. The physical states are singlets, so no state carries a strong charge, and the conservation law is realised as the absence of non-singlet asymptotic states rather than as a selection rule among them.
 
-**3.3 Why the two statements are compatible.** A conserved charge can be realised trivially on the physical spectrum. Colour is the standard example, and it is the reason "colour is conserved" and "there are no free quarks" are both true.
+**3.3 Why the two statements are compatible.** A conserved charge can be realised trivially on the physical spectrum. The strong charge is the standard example, and it is the reason "the strong charge is conserved" and "there are no free quarks" are both true.
 
-**3.4 The consequence for the model.** Because colour is a stabiliser at every scale, no step of the chain can make a coloured state light in a way that would show up as a free particle. The confinement statement is [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html).
+**3.4 The consequence for the model.** Because the strong group is a stabiliser at every scale, no step of the chain can make a non-singlet state light in a way that would show up as a free particle. The confinement statement is [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html).
 
 ## $B-L$: A Fixed Eigenvalue at Every Scale, a Charge Broken at $M_C$
 
 **The charge that is the article's hardest case, because its number never moves while its symmetry does.**
 
-**4.1 Inside $\mathrm{SU}(4)$ it is a direction; the colour step promotes it to a factor with no interval attached.** $B-L$ is a Cartan generator of the simple group and carries no coupling of its own, so there is no scale above $M_C$ at which it is a separate local symmetry. The colour half of the transition leaves it in the residual group, $\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ at rank five and dimension fifteen ([Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html)). **That group has no interval of scales**: the doublet half of the same vacuum breaks it at once (§4.2), so the factor is a statement about the residual algebra and never about a range of energies.
+**4.1 Inside $\mathrm{SU}(4)$ it is a direction; the $M_C$ step promotes it to a factor with no interval attached.** $B-L$ is a Cartan generator of the simple group and carries no coupling of its own, so there is no scale above $M_C$ at which it is a separate local symmetry. The spatial half of the transition leaves it in the residual group, $\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ at rank five and dimension fifteen ([Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html)). **That group has no interval of scales**: the doublet half of the same vacuum breaks it at once (§4.2), so the factor is a statement about the residual algebra and never about a range of energies.
 
-**4.2 The transition does two things to it, and they must be told apart.** The colour part of the vacuum, $iD$, commutes with $B-L$: the corner is in the stabiliser, so the six generators that become heavy do not include it, and the sextet's $\pm\tfrac43$ are eigenvalues of a generator the colour step leaves alone. **The doublet part of the same vacuum does not commute with it.** That vacuum lies on the lepton line, where $B-L=-1$ and $T_{3R}=+\tfrac12$, so $[B-L,Ξ_0]=-Ξ_0\neq0$. **By the criterion of §*The Criterion*, $B-L$ is not conserved below $M_C$** — and by §1.4 it is not approximately conserved either: it is not defined.
+**4.2 The transition does two things to it, and they must be told apart.** The spatial part of the vacuum, $iD$, commutes with $B-L$: the corner is in the stabiliser, so the six generators that become heavy do not include it, and the sextet's $\pm\tfrac43$ are eigenvalues of a generator the $M_C$ step leaves alone. **The doublet part of the same vacuum does not commute with it.** That vacuum lies on the lepton line, where $B-L=-1$ and $T_{3R}=+\tfrac12$, so $[B-L,Ξ_0]=-Ξ_0\neq0$. **By the criterion of §*The Criterion*, $B-L$ is not conserved below $M_C$** — and by §1.4 it is not approximately conserved either: it is not defined.
 
-**4.3 What does annihilate the vacuum is hypercharge.** $Y=T_{3R}+\tfrac12(B-L)$ gives $\tfrac12-\tfrac12=0$ on that line, so $Y$ is the unbroken direction and $B-L$ alone is not. Below $M_C$ the exact symmetry charges are colour, $Y$, and — below $v$ — $Q$. **The charge that survives in $B-L$'s place does so by accident**: $B$, because the renormalisable Lagrangian contains no operator that violates it once the leptoquarks are gone (§*The Charges That Are Merely Accidental*).
+**4.3 What does annihilate the vacuum is hypercharge.** $Y=T_{3R}+\tfrac12(B-L)$ gives $\tfrac12-\tfrac12=0$ on that line, so $Y$ is the unbroken direction and $B-L$ alone is not. Below $M_C$ the exact symmetry charges are the strong charge, $Y$, and — below $v$ — $Q$. **The charge that survives in $B-L$'s place does so by accident**: $B$, because the renormalisable Lagrangian contains no operator that violates it once the leptoquarks are gone (§*The Charges That Are Merely Accidental*).
 
-**4.4 The eigenvalue is what does not move, and it is a different statement.** $B-L$ takes the same values at every scale — $-1$ on the lepton line, $\tfrac13$ on the three colour lines — because an eigenvalue is a property of an array and not of the vacuum, and no mixing between $W^{3}_{L}$, $W^{3}_{R}$ and $B'$ changes a diagonal entry of $B'$. **"The chain never renormalises $B-L$" is true; "$B-L$ is conserved below $M_C$" is false**, and the two are easy to run together because both are sentences about a number that stays put.
+**4.4 The eigenvalue is what does not move, and it is a different statement.** $B-L$ takes the same values at every scale — $-1$ on the lepton line, $\tfrac13$ on the three spatial lines — because an eigenvalue is a property of an array and not of the vacuum, and no mixing between $W^{3}_{L}$, $W^{3}_{R}$ and $B'$ changes a diagonal entry of $B'$. **"The chain never renormalises $B-L$" is true; "$B-L$ is conserved below $M_C$" is false**, and the two are easy to run together because both are sentences about a number that stays put.
 
 **4.5 The breaking is wanted twice over, and it costs no Goldstone.** A Majorana mass for the right-handed neutrino carries $B-L=-2$, so it needs a vacuum that breaks the charge — and the transition supplies one. **That is the seesaw's licence, and it is the same vev that breaks $\mathrm{SU}(2)_R$** ([The Seesaw Mechanism](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html)). And because the broken direction was a direction of a *representative* group above $M_C$, the would-be Goldstone is eaten: it is the longitudinal mode of the $Z_R$, whose mass $\tfrac58g^2v_C^2$ is the neutral sector's ([The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html)).
 
@@ -143,7 +143,7 @@ $$
 
 **Three pairs.**
 
-**8.1 Conserved and realised.** Colour is conserved and has no coloured asymptotic states. A charge can be exact and act trivially on the spectrum.
+**8.1 Conserved and realised.** The strong charge is conserved and has no non-singlet asymptotic states. A charge can be exact and act trivially on the spectrum.
 
 **8.2 Made local, broken, accidental.** $B-L$ is made local above $M_C$ and broken at $M_C$; $B$ is accidental below $M_C$ and violated at dimension six; $L$ is broken at dimension three by the right-handed neutrino's mass. **Three statuses, and the third is the one that produces a measured number**, because a dimension-three term is not suppressed (the seesaw article has it).
 
@@ -153,7 +153,7 @@ $$
 
 **The criterion.** A symmetry charge is conserved exactly when its generator annihilates the vacuum — the same condition as a massless boson.
 
-**The survivors.** $Q$ and colour, and with them $B$ by accident of the content. **$B-L$ is not one of them**: its eigenvalue is fixed at every scale, but the transition that breaks $\mathrm{SU}(2)_R$ breaks it, and the Majorana neutrino mass is the price and the payoff.
+**The survivors.** $Q$ and the strong charge, and with them $B$ by accident of the content. **$B-L$ is not one of them**: its eigenvalue is fixed at every scale, but the transition that breaks $\mathrm{SU}(2)_R$ breaks it, and the Majorana neutrino mass is the price and the payoff.
 
 **The casualties.** $T_{3R}$ and $B-L$ at $M_C$; $T_{3L}$ and $Y$ at $M_W$; $L$ just below $M_C$, through the right-handed neutrino's mass. **$B$ is never one of them** — it is not broken at all, and it is accidental, which is a weaker thing than conserved.
 
@@ -176,6 +176,6 @@ $$
 
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The same criterion read as a mass spectrum.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The $B-L$ of the leptoquarks and the absent diquark channel.
-- [Charge Quantisation from the Fourth Colour: One Trace, One Third](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). Where the charge lattice comes from.
+- [Charge Quantisation from the Fourth Line: One Trace, One Third](charge-quantisation-from-the-fourth-line-one-trace-one-third.html). Where the charge lattice comes from.
 - [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html). The anomalous combination and its consequences.
-- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). Colour exact and confined.
+- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). The strong charge exact and confined.

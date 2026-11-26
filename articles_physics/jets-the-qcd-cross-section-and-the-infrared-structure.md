@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The standing of this article. Everything below is standard theory, written in the corpus's coordinates and notation. It is standard input, not a framework result. Colour is the sharpest boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), no compact algebra inside $\mathbb{B}$ has real dimension above four and no $\mathbb{B}$-module has odd complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is transcribed, and this article is the one where the transcription has to confront the fact that its own perturbation series is divergent term by term.
+The standing of this article. Everything below is standard theory, written in the corpus's coordinates and notation. It is standard input, not a framework result. The strong group is the sharpest boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), no compact algebra inside $\mathbb{B}$ has real dimension above four and no $\mathbb{B}$-module has odd complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is transcribed, and this article is the one where the transcription has to confront the fact that its own perturbation series is divergent term by term.
 
 Why this article is different from its neighbours. The previous three computed quantities that were finite. This one computes quantities whose individual terms are infinite. Every real-emission diagram at order $\alpha_s$ diverges when a gluon is soft or collinear, and every virtual diagram diverges at the same points; only their sum is finite. The article's subject is that cancellation, why it is guaranteed, what it costs, and what happens when it does not happen.
 
@@ -34,7 +34,7 @@ The staircase. The Born-level values are exact rationals, since the charges are:
 | $+\,b$ | $11/9$ | $11/3=3.667$ | $2m_b$ |
 | $+\,t$ | $5/3$ | $5$ | $2m_t$ |
 
-**What the staircase tests, and what it does not.** Each step is a threshold: as the energy passes twice a quark mass, a new colour triplet switches on and $R$ jumps by $3Q_f^2$. The steps are separate measurements of $N_c$ — the $11/3$ plateau is the one that excludes $N_c=1$ and $N_c=4$ by a wide margin. What the staircase does *not* test is the coupling: the correction is a few per cent, and it does not move the plateaus.
+**What the staircase tests, and what it does not.** Each step is a threshold: as the energy passes twice a quark mass, a new triplet switches on and $R$ jumps by $3Q_f^2$. The steps are separate measurements of $N_c$ — the $11/3$ plateau is the one that excludes $N_c=1$ and $N_c=4$ by a wide margin. What the staircase does *not* test is the coupling: the correction is a few per cent, and it does not move the plateaus.
 
 The corrections, evaluated. With $\alpha_s$ run from $\alpha_s(M_Z)=0.1179$ by [the running article](asymptotic-freedom-and-the-running-of-the-strong-coupling.html)'s one-loop line, and taking the second coefficient in its $N_f$-dependent form, $c_2=1.4092-0.0781N_f$ — that is $1.097$ at four flavours and $1.019$ at five, not the $1.41$ that is often quoted for the constant term alone:
 
@@ -52,7 +52,7 @@ $$
 \delta\alpha_s=\pi\,\frac{\delta R}{R_0}=\pi\times\frac{0.078}{3.667}\approx\pi\times0.021\approx0.067 ,
 $$
 
-which is half the value of $\alpha_s$ itself. Inverting the leading formula against $R=3.9$ with $R_0=3.667$ gives $\alpha_s=0.20$, against the $0.14$ that the running demands — a factor of $1.45$ out, from a two per cent discrepancy in $R$. The lesson is not that the formula is wrong; it is that a quantity whose leading correction is four per cent cannot determine a coupling that enters at that order, and that $R$'s role is to count colour and to confirm the size of the correction, not to measure $\alpha_s$ well. The precision determinations use the $Z$ lineshape, which is sensitive at the per-mille level, and event shapes, which are sensitive at the per-cent level through a coefficient larger than one.
+which is half the value of $\alpha_s$ itself. Inverting the leading formula against $R=3.9$ with $R_0=3.667$ gives $\alpha_s=0.20$, against the $0.14$ that the running demands — a factor of $1.45$ out, from a two per cent discrepancy in $R$. The lesson is not that the formula is wrong; it is that a quantity whose leading correction is four per cent cannot determine a coupling that enters at that order, and that $R$'s role is to count the triplet multiplicity and to confirm the size of the correction, not to measure $\alpha_s$ well. The precision determinations use the $Z$ lineshape, which is sensitive at the per-mille level, and event shapes, which are sensitive at the per-cent level through a coefficient larger than one.
 
 ## What a Jet Is, and Why the Definition Enters the Prediction
 
@@ -307,7 +307,7 @@ What this article does not do. It does not compute a shower, does not resum beyo
 
 ## Summary
 
-The total cross section into hadrons is computable and blind. $R=3\sum_fQ_f^2(1+\alpha_s/\pi+\dots)$ gives the staircase $2$, $10/3$, $11/3$, $5$ at the quark thresholds, and the correction is only $4$ per cent, so a two per cent measurement of $R$ is a two per cent measurement of a four per cent effect — which in coupling units is an uncertainty of $0.067$, half the value of $\alpha_s$. $R$ counts colour and confirms the size of the correction; it does not measure the coupling well.
+The total cross section into hadrons is computable and blind. $R=3\sum_fQ_f^2(1+\alpha_s/\pi+\dots)$ gives the staircase $2$, $10/3$, $11/3$, $5$ at the quark thresholds, and the correction is only $4$ per cent, so a two per cent measurement of $R$ is a two per cent measurement of a four per cent effect — which in coupling units is an uncertainty of $0.067$, half the value of $\alpha_s$. $R$ counts the triplet multiplicity and confirms the size of the correction; it does not measure the coupling well.
 
 A jet is a definition. Fixed cones and sequential recombination differ, and sequential algorithms are infrared safe by construction. The three-jet rate at leading log is $\frac{2\alpha_sC_F}{\pi}\ln^2(1/y)$, it is $0.53$ at $y=0.10$ and $1.53$ at $y=0.02$ — and a rate above one is not a rate, which is why the logarithms must be summed rather than truncated.
 
@@ -341,8 +341,8 @@ The framework supplies the null direction and the form of the interference, and 
 | $\mathcal{R}_{\mathrm{ev}}(Q,Q_0)$ | Sudakov form factor, $e^{-W}$ |
 | $Q_0$ | Resolution or cutoff scale |
 | $\Lambda_{\mathrm{eff}}$ | Effective scale of the MLLA logarithm, $3.2\times10^{-11}\ \mathrm{J}$; not $\Lambda_{N_f}$ |
-| $C_F=4/3$ | Quadratic Casimir of the triplet; the quark's colour charge |
-| $N_c=3$ | Number of colours |
+| $C_F=4/3$ | Quadratic Casimir of the triplet; the quark's strong charge |
+| $N_c=3$ | The count of spatial lines |
 | $N_f$ | Number of flavours kinematically open at the scale |
 | $T_R=1/2$ | Normalisation of the gluon-to-quark kernel |
 | $\alpha_s$ | Strong coupling; quoted with its scale, as in the running article |

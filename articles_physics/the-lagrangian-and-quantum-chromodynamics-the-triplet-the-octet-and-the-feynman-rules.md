@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The standing of this article. Everything below is standard theory, written in the corpus's coordinates and notation. It is standard input, not a framework result. Colour is the sharpest boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), any compact algebra inside $\mathbb{B}$ has real dimension at most four and every $\mathbb{B}$-module has even complex dimension, so neither $SU(3)$ nor a colour triplet is available in the algebra. The strong sector is therefore transcribed, and the article says so before it prints the Lagrangian. What it adds to a textbook display is three things: the Feynman rules derived from this particular Lagrangian rather than quoted, with the sign of every vertex fixed by the same $g_s$; the colour arithmetic computed and checked; and one table that separates what is imported from what, if anything, the algebra contributes.
+The standing of this article. Everything below is standard theory, written in the corpus's coordinates and notation. It is standard input, not a framework result. The strong group is the sharpest boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), any compact algebra inside $\mathbb{B}$ has real dimension at most four and every $\mathbb{B}$-module has even complex dimension, so neither $SU(3)$ nor a triplet is available in the algebra. The strong sector is therefore transcribed, and the article says so before it prints the Lagrangian. What it adds to a textbook display is three things: the Feynman rules derived from this particular Lagrangian rather than quoted, with the sign of every vertex fixed by the same $g_s$; the group arithmetic computed and checked; and one table that separates what is imported from what, if anything, the algebra contributes.
 
 The claim. Quantum chromodynamics is one Lagrangian with four pieces and four vertices.
 
@@ -10,15 +10,15 @@ $$
 \mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}+\sum_f\barΞ_{\mathrm{wfn},f}\left(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)Ξ_{\mathrm{wfn},f}+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}} .
 $$
 
-The quark $Ξ_{\mathrm{wfn},f}$ is a colour triplet, one per flavour $f$; the gluon $G_{a,\imath}$ is a colour octet; the vertices are the quark–gluon, the three-gluon, the four-gluon and the ghost–gluon, and they exhaust the tree-level content. The $\theta$ term is a fifth piece, a total derivative in perturbation theory, and it is named here and left to its own article.
+The quark $Ξ_{\mathrm{wfn},f}$ is a triplet, one per flavour $f$; the gluon $G_{a,\imath}$ is a octet; the vertices are the quark–gluon, the three-gluon, the four-gluon and the ghost–gluon, and they exhaust the tree-level content. The $\theta$ term is a fifth piece, a total derivative in perturbation theory, and it is named here and left to its own article.
 
-Why the number three is not in the Lagrangian. Nothing in the algebra or in the Lagrangian's structure fixes $N_c=3$. The number is measured, four independent ways, and the section *Why Three Colours* records them. That is the same status as the nineteen parameters of [the content article](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html): a fact about the world, imported.
+Why the number three is not in the Lagrangian. Nothing in the algebra or in the Lagrangian's structure fixes $N_c=3$. The number is measured, four independent ways, and the section *Why Three Lines* records them. That is the same status as the nineteen parameters of [the content article](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html): a fact about the world, imported.
 
 ## Conventions
 
 The corpus's coordinates, stated once. The derivative is $\partial/\partial R_{\imath}$, every four-index sum obeys the sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$, and the metric is the corpus's $(1,1,1,1)$ on the biquaternion coordinates, so a display here and the same display in a text with a mostly-minus metric differ by the sign of every summed pair. A Dirac matrix is written low and contracted as $\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} X_{\imath}$ with $\varepsilon_t=+1$. The measure is $\mathrm{d}^4r$.
 
-The colour bookkeeping. Triplet indices are $i,j,k,l=1,2,3$; adjoint indices are $a,b,c,d,e=1,\dots,8$; flavour is $f$, and colour never mixes with flavour. The generators are $T_{a}=\digamma_{\mathrm{gmn},a}/2$ with $\mathrm{Tr}\left(T_{a}T_{b}\right)=\frac12\delta_{ab}$; the covariant derivative is $D_{\imath}=\partial/\partial R_{\imath}-ig_sG_{a,\imath} T_{a}$ on the triplet, $-T_{a}^{*}$ on the antitriplet, and $-if_{abc}$ on the octet.
+The index bookkeeping. Triplet indices are $i,j,k,l=1,2,3$; adjoint indices are $a,b,c,d,e=1,\dots,8$; flavour is $f$, and the triplet index never mixes with flavour. The generators are $T_{a}=\digamma_{\mathrm{gmn},a}/2$ with $\mathrm{Tr}\left(T_{a}T_{b}\right)=\frac12\delta_{ab}$; the covariant derivative is $D_{\imath}=\partial/\partial R_{\imath}-ig_sG_{a,\imath} T_{a}$ on the triplet, $-T_{a}^{*}$ on the antitriplet, and $-if_{abc}$ on the octet.
 
 The couplings and the parameters. $g_s$ is the strong coupling, taken positive, and $\alpha_s=g_s^2/4\pi$. The parameter is $\zeta$, with $\zeta=1$ the Feynman fixing condition. The quark mass $m_f$ is an input from the Yukawa sector and not a parameter of this action. Of the numbers used below, $T_R$ is a convention and $N_c=3$ is a measurement; $C_F=4/3$ and $C_A=3$ are facts once $N_c$ is granted.
 
@@ -32,7 +32,7 @@ $$
 \mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}+\sum_f\barΞ_{\mathrm{wfn},f}\left(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)Ξ_{\mathrm{wfn},f}-\frac{1}{2\zeta}\sum_{a,\imath}\left(\frac{\partial G_{a,\imath}}{\partial R_{\imath}}\right)^2+\sum_{a}\bar c_{a}\left(-\frac{\partial^2}{\partial R_{\imath}\partial R_{\imath}}\right)c_{a}+\mathcal{L}_{cG} .
 $$
 
-The pieces, named. The first is the connection kinetic term; the second the quark term, one per flavour, with the covariant derivative carrying the colour connection in the triplet; the third the fixing term with parameter $\zeta$; the fourth and fifth the ghost kinetic and ghost–gluon terms. The list is complete for perturbation theory. The $\theta$ term,
+The pieces, named. The first is the connection kinetic term; the second the quark term, one per flavour, with the covariant derivative carrying the strong connection in the triplet; the third the fixing term with parameter $\zeta$; the fourth and fifth the ghost kinetic and ghost–gluon terms. The list is complete for perturbation theory. The $\theta$ term,
 
 $$
 \mathcal{L}_\theta=\theta_{\mathrm{QCD}}\frac{g_s^2}{32\pi^2}\sum_{a,\imath,\jmath}G_{a,\imath\jmath}\widetilde G_{a,\imath\jmath} ,
@@ -40,11 +40,11 @@ $$
 
 is a total derivative and contributes nothing to any perturbative amplitude; it is a parameter of the theory and it belongs to [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html).
 
-Why the choice of representative and ghost terms are not optional. The quadratic kernel of the connection alone is not invertible, because the orbit is a flat direction of $-\frac14\sum GG$; the choice of representative term lifts it, and the ghost term restores the local invariance that the fixing broke. That mechanism is the subject of [Fixing the Representative in the Electroweak Theory](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html), and its structure in QCD is identical with one difference that matters: the ghost of QCD is in the adjoint, so it carries a colour index and couples through $f_{abc}$ rather than through a generator matrix.
+Why the choice of representative and ghost terms are not optional. The quadratic kernel of the connection alone is not invertible, because the orbit is a flat direction of $-\frac14\sum GG$; the choice of representative term lifts it, and the ghost term restores the local invariance that the fixing broke. That mechanism is the subject of [Fixing the Representative in the Electroweak Theory](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html), and its structure in QCD is identical with one difference that matters: the ghost of QCD is in the adjoint, so it carries a index and couples through $f_{abc}$ rather than through a generator matrix.
 
 **The mass term is allowed here and forbidden there.** A term $m\barΞ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}$ is invariant under $SU(3)$, so QCD admits quark masses; the same term is forbidden in the electroweak theory because the two chiralities carry different $SU(2)$ representations. The quark mass in the display above is therefore a genuine parameter of the strong sector, generated elsewhere — by the Yukawa sector — and carried here as an input.
 
-### Why Three Colours
+### Why Three Lines
 
 Four measurements, one conclusion. Each of the four sees $N_c$ in a different way, and all four give $3$.
 
@@ -53,9 +53,9 @@ Four measurements, one conclusion. Each of the four sees $N_c$ in a different wa
 | $R=\sigma(e^+e^-\to\text{hadrons})/\sigma(e^+e^-\to\mu^+\mu^-)$ | $N_c\sum_fQ_f^2$ | $11/3$ above the bottom threshold, against $3.9$ measured |
 | $\Gamma(\pi^0\to\gamma\gamma)$ | $N_c^2$ | $1.2\times10^{-18}\ \mathrm{J}$, against $1.2\times10^{-18}\ \mathrm{J}$ predicted for $N_c=3$ |
 | $\Gamma(Z\to\text{hadrons})/\Gamma(Z\to\ell^+\ell^-)$ | $N_c$ | $20.77$, the factor three times the coupling ratio |
-| Existence of $\mathcal{B}^{++}$ and $\Omega^-$ | rank of the antisymmetric invariant | three quarks in a totally antisymmetric colour state |
+| Existence of $\mathcal{B}^{++}$ and $\Omega^-$ | rank of the antisymmetric invariant | three quarks in a totally antisymmetric triplet state |
 
-The $R$ ratio, written out. The cross section into hadrons is the cross section into quarks, and each quark flavour contributes its charge squared times the number of colour states,
+The $R$ ratio, written out. The cross section into hadrons is the cross section into quarks, and each quark flavour contributes its charge squared times the number of triplet states,
 
 $$
 R=N_c\sum_fQ_f^2 ,
@@ -63,7 +63,7 @@ $$
 
 so that $R=2$ below the charm threshold, $10/3$ below the bottom, $11/3$ below the top and $5$ above it. The measured values follow this staircase, with a residual excess of order $\alpha_s/\pi$: at $5.4\times10^{-9}\ \mathrm{J}$ the parton-model $11/3=3.67$ becomes $3.8$ once the first-order correction is included, against $3.9$ measured.
 
-Counting versus structure. The first three measurements count colour states, and each would move if the count were four: $R$ would be $4\sum_fQ_f^2$ and the $Z$ hadronic width larger by a third, and both are excluded. The fourth measurement does something different. A baryon is a colour singlet, and the only invariant tensor available to build one from $N_c$ triplets is the totally antisymmetric $\epsilon$ of rank $N_c$. The $\mathcal{B}^{++}$ is $uuu$ with $J=3/2$ and zero orbital angular momentum, so its spin–flavour wavefunction is totally symmetric, and Fermi statistics forces its colour wavefunction to be totally antisymmetric. A totally antisymmetric three-index invariant exists only for $N_c=3$. The particle's existence is therefore the statement that the antisymmetriser has exactly three slots.
+Counting versus structure. The first three measurements count triplet states, and each would move if the count were four: $R$ would be $4\sum_fQ_f^2$ and the $Z$ hadronic width larger by a third, and both are excluded. The fourth measurement does something different. A baryon is a singlet, and the only invariant tensor available to build one from $N_c$ triplets is the totally antisymmetric $\epsilon$ of rank $N_c$. The $\mathcal{B}^{++}$ is $uuu$ with $J=3/2$ and zero orbital angular momentum, so its spin–flavour wavefunction is totally symmetric, and Fermi statistics forces its spin–flavour wavefunction to be totally antisymmetric. A totally antisymmetric three-index invariant exists only for $N_c=3$. The particle's existence is therefore the statement that the antisymmetriser has exactly three slots.
 
 The empirical status. $N_c=3$ is measured. **No argument in this corpus produces the number**, and [the QCD article](quantum-chromodynamics-as-the-residual-of-su4.html) records it as a *no route yet* item, not as a derivation with a missing step.
 
@@ -73,20 +73,20 @@ The three representations.
 
 | Object | Representation | Dimension | Why |
 |---|---|---|---|
-| Quark $Ξ_{\mathrm{wfn}}$ | $\mathbf{3}$ | $3$ | It carries one colour index |
+| Quark $Ξ_{\mathrm{wfn}}$ | $\mathbf{3}$ | $3$ | It carries one index |
 | Antiquark $\barΞ_{\mathrm{wfn}}$ | $\bar{\mathbf{3}}$ | $3$ | The conjugate index |
-| Gluon $G_{a,\imath}$ | $\mathbf{8}$ (adjoint) | $8=N^2-1$ | It carries colour and anticolour in the traceless combination |
+| Gluon $G_{a,\imath}$ | $\mathbf{8}$ (adjoint) | $8=N^2-1$ | It carries a triplet index and its conjugate in the traceless combination |
 
-Why the gluon is the octet and not the singlet inside $\mathbf{3}\otimes\bar{\mathbf{3}}$. A gluon must carry a colour and an anticolour, so it lives in $\mathbf{3}\otimes\bar{\mathbf{3}}$, and
+Why the gluon is the octet and not the singlet inside $\mathbf{3}\otimes\bar{\mathbf{3}}$. A gluon must carry a triplet index and an antitriplet index, so it lives in $\mathbf{3}\otimes\bar{\mathbf{3}}$, and
 
 $$
 \mathbf{3}\otimes\bar{\mathbf{3}}=\mathbf{1}\oplus\mathbf{8} ,
 \qquad 3\times3=1+8 .
 $$
 
-The singlet part is the trace, and the connection is traceless, so what remains is the octet. The further requirement is that the gluon field be real, and the octet is the real representation: it is the adjoint, and the adjoint of a compact group is real. The two requirements, traceless colour–anticolour and reality, leave $\mathbf{8}$ and nothing else.
+The singlet part is the trace, and the connection is traceless, so what remains is the octet. The further requirement is that the gluon field be real, and the octet is the real representation: it is the adjoint, and the adjoint of a compact group is real. The two requirements, traceless triplet–antitriplet and reality, leave $\mathbf{8}$ and nothing else.
 
-The decompositions that matter for the spectrum. Colour confinement means that only singlets appear as asymptotic states, so the question is which products contain a $\mathbf{1}$.
+The decompositions that matter for the spectrum. Confinement means that only singlets appear as asymptotic states, so the question is which products contain a $\mathbf{1}$.
 
 $$
 \mathbf{3}\otimes\bar{\mathbf{3}}=\mathbf{1}\oplus\mathbf{8} ,
@@ -96,9 +96,9 @@ $$
 \mathbf{8}\otimes\mathbf{8}=\mathbf{1}\oplus\mathbf{8}\oplus\mathbf{8}\oplus\mathbf{10}\oplus\overline{\mathbf{10}}\oplus\mathbf{27} .
 $$
 
-The first line is the meson and the gluon; the second is the baryon, with one singlet out of twenty-seven states; the third is the gluon–gluon channel, where the singlet is the one that mixes with the vacuum and the $\mathbf{8}$'s are the two-gluon colour octets. The dimension arithmetic is the only check made here — $9=1+8$, $27=1+8+8+10$, $64=1+8+8+10+10+27$ — and the arithmetic is exact, though it does not prove the decompositions.
+The first line is the meson and the gluon; the second is the baryon, with one singlet out of twenty-seven states; the third is the gluon–gluon channel, where the singlet is the one that mixes with the vacuum and the $\mathbf{8}$'s are the two-gluon octets. The dimension arithmetic is the only check made here — $9=1+8$, $27=1+8+8+10$, $64=1+8+8+10+10+27$ — and the arithmetic is exact, though it does not prove the decompositions.
 
-A singlet made of two quarks does not exist. $\mathbf{3}\otimes\mathbf{3}=\bar{\mathbf{3}}\oplus\mathbf{6}$ contains no singlet, which is the group-theoretic statement that a diquark cannot be colour neutral and therefore cannot be an asymptotic state. This is the reason the strong spectrum is mesons and baryons rather than pairs.
+A singlet made of two quarks does not exist. $\mathbf{3}\otimes\mathbf{3}=\bar{\mathbf{3}}\oplus\mathbf{6}$ contains no singlet, which is the group-theoretic statement that a diquark cannot be a singlet and therefore cannot be an asymptotic state. This is the reason the strong spectrum is mesons and baryons rather than pairs.
 
 ### The Generators and the Normalisation
 
@@ -133,7 +133,7 @@ C_A=N=3 ,
 T_R=\frac12 .
 $$
 
-What each number counts. $C_F$ is the colour charge of a quark, the value of $\sum_aT_{a}T_{a}$ on the triplet; $C_A$ is the colour charge of a gluon, the value of the same sum on the octet; $T_R$ is the normalisation of the quark loop. With $N=3$ they are
+What each number counts. $C_F$ is the strong charge of a quark, the value of $\sum_aT_{a}T_{a}$ on the triplet; $C_A$ is the strong charge of a gluon, the value of the same sum on the octet; $T_R$ is the normalisation of the quark loop. With $N=3$ they are
 
 | Quantity | Definition | Value for $N=3$ |
 |---|---|---|
@@ -191,7 +191,7 @@ $$
 D_{\jmath} G_{a,\imath\jmath}=g_s\sum_f\barΞ_{\mathrm{wfn},f}\left(\varepsilon_{\imath}\gamma_{\imath} T_{a}\right)Ξ_{\mathrm{wfn},f} ,
 $$
 
-with the covariant divergence on the left because the field strength is a commutator; varying $\barΞ_{\mathrm{wfn},f}$ gives the covariant Dirac equation $\left(i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)Ξ_{\mathrm{wfn},f}=0$, and varying $Ξ_{\mathrm{wfn},f}$ gives its conjugate. The source is the colour current, and it carries the same $T_{a}$ the covariant derivative carries: the charge in $D_{\imath}$ is the charge in $j_{a,\imath}$, which is the normalisation check the Maxwell article performs for $e$.
+with the covariant divergence on the left because the field strength is a commutator; varying $\barΞ_{\mathrm{wfn},f}$ gives the covariant Dirac equation $\left(i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)Ξ_{\mathrm{wfn},f}=0$, and varying $Ξ_{\mathrm{wfn},f}$ gives its conjugate. The source is the adjoint current, and it carries the same $T_{a}$ the covariant derivative carries: the charge in $D_{\imath}$ is the charge in $j_{a,\imath}$, which is the normalisation check the Maxwell article performs for $e$.
 
 The identity that is not an equation. Because $G_{a,\imath\jmath}$ is a commutator it satisfies $D_{[\imath}G_{a,\jmath\rho]}=0$ identically, for every configuration, on shell or off. That is the Bianchi identity, it constrains nothing, and it is not the field equation. The two stand to each other as $\mathrm{d}F=0$ stands to $\mathrm{d}\star F=J$.
 
@@ -233,7 +233,7 @@ D_jG_{a,j0}=g_s\rho_{a} ,
 \rho_{a}=\sum_fΞ_{\mathrm{wfn},f}^{\dagger}T_{a}Ξ_{\mathrm{wfn},f} ,
 $$
 
-a condition on the initial data for each of the eight generators. It contains no second time derivative, so it propagates nothing: it is Gauss's law eight times over, and the divergence of the spatial part reproduces it because the colour current is covariantly conserved. The word *covariantly* is the whole non-abelian content here: an ordinary divergence would not reproduce the constraint, and the $f_{abc}$ term in $D_{\imath} j_{a,\imath}$ is exactly what makes the two agree.
+a condition on the initial data for each of the eight generators. It contains no second time derivative, so it propagates nothing: it is Gauss's law eight times over, and the divergence of the spatial part reproduces it because the adjoint current is covariantly conserved. The word *covariantly* is the whole non-abelian content here: an ordinary divergence would not reproduce the constraint, and the $f_{abc}$ term in $D_{\imath} j_{a,\imath}$ is exactly what makes the two agree.
 
 The orbit is a choice, the constraint is not. The symmetry group acts as an eight-function local group on $G_{a,\imath}$ alone, since the quarks are matter and transform with it. The orbit is what the constraint's kernel describes; selecting a representative is what $\zeta$ does. A reader who confuses the two will think the fixing term is physics. It is not: $\zeta$ cancels from every observable, and the Feynman rules below carry it in the propagator and nowhere else.
 
@@ -257,7 +257,7 @@ Propagators.
 
 Vertices.
 
-| Vertex | Colour factor | Lorentz structure |
+| Vertex | Group factor | Lorentz structure |
 |---|---|---|
 | Quark–gluon | $T_{a,ij}$ | $-ig_s\varepsilon_{\imath}\gamma_{\imath}$ |
 | Three-gluon | $g_sf_{abc}$ | $(p_1-p_2)_\rho\delta_{\imath\jmath}+(p_2-p_3)_{\imath}\delta_{\jmath\rho}+(p_3-p_1)_{\jmath}\delta_{\rho\imath}$ |
@@ -332,9 +332,9 @@ What the claim forbids. It forbids treating the gluon's self-interactions as a l
 
 ## The Noether Currents and the Sign of the Charge
 
-### The Colour Factors
+### The Group Factors
 
-Where each number is used. The three colour factors are not decoration; each one is the group-theory factor of a definite diagram class.
+Where each number is used. The three group factors are not decoration; each one is the group-theory factor of a definite diagram class.
 
 | Factor | Diagram class | Where it appears |
 |---|---|---|
@@ -342,7 +342,7 @@ Where each number is used. The three colour factors are not decoration; each one
 | $C_A=3$ | Gluon or ghost in the loop | The gluon self-energy; the three- and four-gluon couplings; the antiscreening |
 | $T_R=1/2$ | Quark loop inserted in a gluon line | The screening; the $N_f$ term of the beta function |
 
-The arithmetic of the one-loop coefficient, handed on. The gluon self-energy at one loop is the sum of three diagram classes, and their colour factors combine as
+The arithmetic of the one-loop coefficient, handed on. The gluon self-energy at one loop is the sum of three diagram classes, and their group factors combine as
 
 $$
 b_0=\frac{11}{3}C_A-\frac{4}{3}T_RN_f=11-\frac{2}{3}N_f ,
@@ -380,17 +380,17 @@ $$
 \sum_aT_{a,ij}T_{a,k l}=\frac12\left(\delta_{il}\delta_{j\imath}-\frac13\delta_{ij}\delta_{\imath l}\right) ,
 $$
 
-is what makes colour summing mechanical: a gluon exchanged between two quark lines contracts two generator matrices into a Kronecker delta minus a trace. It is the $SU(3)$ analogue of the $SU(2)$ identity $\sum_a\sigma_{a,ij}\sigma_{a,k l}=2\delta_{il}\delta_{j\imath}-\delta_{ij}\delta_{\imath l}$ for the Pauli matrices, generalised to $-\delta_{ij}\delta_{\imath l}/N$ in place of the second term; the coefficient $1/N$ of that term is why the $1/N$ expansion of the strong interaction exists at all.
+is what makes sum over the triplet indexming mechanical: a gluon exchanged between two quark lines contracts two generator matrices into a Kronecker delta minus a trace. It is the $SU(3)$ analogue of the $SU(2)$ identity $\sum_a\sigma_{a,ij}\sigma_{a,k l}=2\delta_{il}\delta_{j\imath}-\delta_{ij}\delta_{\imath l}$ for the Pauli matrices, generalised to $-\delta_{ij}\delta_{\imath l}/N$ in place of the second term; the coefficient $1/N$ of that term is why the $1/N$ expansion of the strong interaction exists at all.
 
-The two quadratic Casimir invariants. From the explicit matrices, $\sum_aT_{a}T_{a}=\frac43I$ and $\sum_{c,e}f_{ace}f_{bce}=3\delta_{ab}$; both are properties of $SU(3)$ and both were reproduced from the matrices rather than assumed. The three numbers of the colour-factor table are therefore not three independent inputs: $T_R$ is a normalisation, $C_A=N$ follows from $N=3$ alone and is untouched by the rescaling, and $C_F=T_R(N^2-1)/N$ is the one combination that carries $T_R$.
+The two quadratic Casimir invariants. From the explicit matrices, $\sum_aT_{a}T_{a}=\frac43I$ and $\sum_{c,e}f_{ace}f_{bce}=3\delta_{ab}$; both are properties of $SU(3)$ and both were reproduced from the matrices rather than assumed. The three numbers of the group-factor table are therefore not three independent inputs: $T_R$ is a normalisation, $C_A=N$ follows from $N=3$ alone and is untouched by the rescaling, and $C_F=T_R(N^2-1)/N$ is the one combination that carries $T_R$.
 
-The colour current, and the conservation it has. The current that couples to $G_{a,\imath}$ is
+The adjoint current, and the conservation it has. The current that couples to $G_{a,\imath}$ is
 
 $$
 j_{a,\imath}=\sum_f\barΞ_{\mathrm{wfn},f}\left(\varepsilon_{\imath}\gamma_{\imath} T_{a}\right)Ξ_{\mathrm{wfn},f} ,
 $$
 
-and it is covariantly conserved, $D_{\imath} j_{a,\imath}=0$, not ordinarily conserved: its ordinary divergence is $\partial_{\imath} j_{a,\imath}=g_sf_{abc}G_{b,\imath} j_{c,\imath}$, which does not vanish. The current carries the colour it couples to, so it cannot be a singlet, and the statement is the same one the non-abelian article makes about the field equation. It is also why this corpus writes no colour charge operator: a conserved charge needs a singlet current, and confinement is exactly the statement that no colour-singlet current exists.
+and it is covariantly conserved, $D_{\imath} j_{a,\imath}=0$, not ordinarily conserved: its ordinary divergence is $\partial_{\imath} j_{a,\imath}=g_sf_{abc}G_{b,\imath} j_{c,\imath}$, which does not vanish. The current carries the triplet index it couples to, so it cannot be a singlet, and the statement is the same one the non-abelian article makes about the field equation. It is also why this corpus writes no strong charge operator: a conserved charge needs a singlet current, and confinement is exactly the statement that no singlet current exists.
 
 The sign of the charge. $g_s$ enters $D_{\imath}$ with $-i$ and the quark–gluon vertex with $-ig_s\varepsilon_{\imath}\gamma_{\imath} T_{a}$, so a quark carries $+1$ in units of $g_s$ and an antiquark $-1$. Under $g_s\to-g_s$ the odd vertices flip and the even ones do not, which is the sentence the Feynman-rule section makes about copying a sign out of a book: only $g_s^2$ and the relative signs fixed by the Ward identity reach an observable.
 
@@ -424,7 +424,7 @@ The ledger.
 | The Lagrangian and its four pieces | **Imported.** Standard theory, transcribed in the corpus's coordinates |
 | The covariant derivative and the curvature identity | **Imported**, and verified as a matrix identity |
 | The Feynman rules and their signs | **Derived from the Lagrangian above**, in this article |
-| The colour factors $4/3$, $3$, $1/2$ | **Derived** from $N_c=3$ and the trace normalisation, once those are granted |
+| The group factors $4/3$, $3$, $1/2$ | **Derived** from $N_c=3$ and the trace normalisation, once those are granted |
 | The Ward identity of the three-gluon vertex | **Imported** (it is the tree-level shadow of the Slavnov–Taylor identity), and verified |
 | The sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ | **Derived in the algebra** |
 | Transversality of the gluon propagator | **Derived in the algebra**, from the same fixing the representative article's projector |
@@ -437,13 +437,13 @@ What the algebra can host, stated precisely. The projector structure of the prop
 
 The QCD Lagrangian is $-\frac14\sum GG$ plus a quark term plus fixing the representative plus ghosts, and the gluon's self-couplings follow from the commutator in $G_{a,\imath\jmath}$. The four pieces and the four vertices are standard theory, transcribed here in the corpus's coordinates, and every number in the Feynman rules was derived from that Lagrangian rather than quoted: the three-gluon rule has no explicit $i$ because its term carries one derivative, the four-gluon rule has one, and the two signs are tied to the same $g_s$.
 
-Three colours is a measured fact, established four independent ways — the $R$ ratio, the $\pi^0$ width, the $Z$ hadronic width, and the existence of a three-quark baryon with a symmetric spin–flavour wavefunction. The last of these fixes the number exactly, because the only invariant that can make a baryon is the antisymmetric $\epsilon$ of rank $N_c$.
+The count three is a measured fact, established four independent ways — the $R$ ratio, the $\pi^0$ width, the $Z$ hadronic width, and the existence of a three-quark baryon with a symmetric spin–flavour wavefunction. The last of these fixes the number exactly, because the only invariant that can make a baryon is the antisymmetric $\epsilon$ of rank $N_c$.
 
-The representations are the triplet, the antitriplet and the octet. The octet is forced twice over: a gluon carries colour and anticolour without a trace, and its field is real. Three decompositions carry the spectrum: $\mathbf{3}\otimes\bar{\mathbf{3}}=\mathbf{1}\oplus\mathbf{8}$ for mesons, $\mathbf{3}\otimes\mathbf{3}\otimes\mathbf{3}=\mathbf{1}\oplus\mathbf{8}\oplus\mathbf{8}\oplus\mathbf{10}$ for baryons, and $\mathbf{8}\otimes\mathbf{8}$, whose singlet is the glueball. The absence of a singlet in $\mathbf{3}\otimes\mathbf{3}=\bar{\mathbf{3}}\oplus\mathbf{6}$ is why a diquark is not an asymptotic state.
+The representations are the triplet, the antitriplet and the octet. The octet is forced twice over: a gluon carries a triplet index and an antitriplet index without a trace, and its field is real. Three decompositions carry the spectrum: $\mathbf{3}\otimes\bar{\mathbf{3}}=\mathbf{1}\oplus\mathbf{8}$ for mesons, $\mathbf{3}\otimes\mathbf{3}\otimes\mathbf{3}=\mathbf{1}\oplus\mathbf{8}\oplus\mathbf{8}\oplus\mathbf{10}$ for baryons, and $\mathbf{8}\otimes\mathbf{8}$, whose singlet is the glueball. The absence of a singlet in $\mathbf{3}\otimes\mathbf{3}=\bar{\mathbf{3}}\oplus\mathbf{6}$ is why a diquark is not an asymptotic state.
 
-The colour factors are $C_F=4/3$, $C_A=3$ and $T_R=1/2$, they were computed from the explicit Gell-Mann matrices, and every identity in the table of checks closed at machine precision. Per flavour the gluon's $11C_A/3$ outweighs the quark's $4T_R/3$ by $16.5$, and that is the margin by which antiscreening beats screening and the reason the coupling falls.
+The group factors are $C_F=4/3$, $C_A=3$ and $T_R=1/2$, they were computed from the explicit Gell-Mann matrices, and every identity in the table of checks closed at machine precision. Per flavour the gluon's $11C_A/3$ outweighs the quark's $4T_R/3$ by $16.5$, and that is the margin by which antiscreening beats screening and the reason the coupling falls.
 
-One coupling fixes every vertex: the three-gluon rule carries $g_s$ and the four-gluon rule $g_s^2$ because the field strength is the commutator, and a separate self-coupling would make it something else. The colour current is covariantly conserved and not ordinarily conserved, so no colour charge exists; the stress tensor's trace is the anomaly, which is where the strong sector's mass scale comes from without a mass term.
+One coupling fixes every vertex: the three-gluon rule carries $g_s$ and the four-gluon rule $g_s^2$ because the field strength is the commutator, and a separate self-coupling would make it something else. The adjoint current is covariantly conserved and not ordinarily conserved, so no strong charge exists; the stress tensor's trace is the anomaly, which is where the strong sector's mass scale comes from without a mass term.
 
 The framework supplies the sign rule and the projectors and nothing else. The group, the number three, the matrices and the Lagrangian are imported, and the ledger says so line by line.
 
@@ -460,13 +460,13 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 | $C_F=4/3$ | Quadratic Casimir of the triplet, $\sum_aT_{a}T_{a}=C_FI$ |
 | $C_A=3$ | Quadratic Casimir of the adjoint, $\sum_{c,e}f_{ace}f_{bce}=C_A\delta_{ab}$ |
 | $D_{\imath}$ | Covariant derivative, $\partial_{\imath}-ig_sG_{a,\imath} T_{a}$ |
-| $j_{a,\imath}$ | Colour current, $\sum_f\barΞ_{\mathrm{wfn},f}\varepsilon_{\imath}\gamma_{\imath} T_{a}Ξ_{\mathrm{wfn},f}$; covariantly conserved |
+| $j_{a,\imath}$ | Adjoint current, $\sum_f\barΞ_{\mathrm{wfn},f}\varepsilon_{\imath}\gamma_{\imath} T_{a}Ξ_{\mathrm{wfn},f}$; covariantly conserved |
 | $j_{5,\imath}$ | Flavour-singlet axial current, with the mass and anomaly terms in its divergence |
 | $\sum_{\imath}\varepsilon_{\imath}\theta_{\imath\imath}$ | Trace of the stress tensor; equal to $\beta(g_s)G_{a}G_{a}/2g_s$ |
 | $\zeta$ | Parameter; $\zeta=1$ is Feynman fixing condition |
 | $c_{a}$, $\bar c_{a}$ | Ghost and antighost, in the adjoint |
 | $\theta_{\mathrm{QCD}}$ | Coefficient of the $G\widetilde G$ term |
-| $N_c$ | Number of colours, $3$, measured |
+| $N_c$ | The count of spatial lines, $3$, measured |
 | $N_f$ | Number of quark flavours active at a given scale |
 | $R$ | $\sigma(e^+e^-\to\text{hadrons})/\sigma(e^+e^-\to\mu^+\mu^-)$ |
 | $\Pi_{\imath\jmath}(k)$ | $k_{\imath} k_{\jmath}-k^2\delta_{\imath\jmath}$, the tree inverse propagator |
@@ -475,7 +475,7 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 | $m_f$ | Mass of quark flavour $f$, a parameter imported from the Yukawa sector |
 | $Q_f$ | Electric charge of flavour $f$, in units of $e$ |
 | $b_0$ | One-loop coefficient of the beta function, $b_0=\frac{11}{3}C_A-\frac43T_RN_f$ |
-| $\epsilon_{abc}$ | The totally antisymmetric rank-$N_c$ invariant; the only colour singlet in $\mathbf{3}^{\otimes N_c}$ |
+| $\epsilon_{abc}$ | The totally antisymmetric rank-$N_c$ invariant; the only singlet in $\mathbf{3}^{\otimes N_c}$ |
 | $J$ | Spin of a hadron, $J=3/2$ for the $\mathcal{B}^{++}$ and the $\Omega^-$ |
 | $\kappa$ | Generator rescaling $T_{a}\to\kappa T_{a}$, under which $T_R\to\kappa^2T_R$ |
 | $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{cG}$ | Fixing term and ghost–gluon interaction of the Lagrangian display |
@@ -487,8 +487,8 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 - [SU(3) Representations and the Gell-Mann–Okubo Mass Formula](su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html). The representation theory behind the decompositions of the section on the triplet and the octet.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The sign rule, and the strong sector in its place among the four.
 - [Fixing the Representative in the Electroweak Theory: $R_\xi$ Conditions, Ghosts and the Goldstone Equivalence Theorem](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html). The choice of representative mechanism that QCD borrows unchanged.
-- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). The classification that the ledger follows.
-- [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The colour quantum numbers of the fifteen fields, and $\alpha_s$ among the parameters.
+- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). The classification that the ledger follows.
+- [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The strong quantum numbers of the fifteen fields, and $\alpha_s$ among the parameters.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The abelian case, where the structure constants vanish and both self-couplings are absent.
 - [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). The full one-loop arithmetic behind $b_0$, which this article hands on as $11C_A/3-4T_RN_f/3$.
 - [Confinement and the Loss of Partonic Information in Biquaternionic Form](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html). Why the octet is never an asymptotic state, which is the question the Feynman rules of this article cannot answer.

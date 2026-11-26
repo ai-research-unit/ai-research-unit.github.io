@@ -32,7 +32,7 @@ $$
 
 The group is a product and not a simple group. Each factor carries its own coupling, its own connections and its own quantum number, and the model supplies no relation between the three couplings. That absence is the reason a mixing angle is a parameter rather than a number.
 
-**The three quantum numbers.** A field is placed by three labels. The first is the colour representation: a triplet $3$ of $SU(3)_c$, an octet $8$, or a singlet $1$. The second is the weak representation: a doublet $2$ of $SU(2)_L$ or a singlet $1$. The third is the hypercharge $Y$, a real number fixed by the convention
+**The three quantum numbers.** A field is placed by three labels. The first is the representation of the strong group: a triplet $3$ of $SU(3)_c$, an octet $8$, or a singlet $1$. The second is the weak representation: a doublet $2$ of $SU(2)_L$ or a singlet $1$. The third is the hypercharge $Y$, a real number fixed by the convention
 
 $$
 Ϙ=Y+T_3 ,
@@ -49,7 +49,7 @@ Together the two asymmetries forbid a bare fermion mass. A term of the form $m\b
 
 | Factor | Group | Real dimension | Coupling | Connections | Acts on |
 |---|---|---|---|---|---|
-| Colour | $SU(3)_c$ | $8$ | $g_s$ | eight gluons $G_{a,\imath}$, $a=1,\dots,8$ | colour triplets only |
+| Strong group | $SU(3)_c$ | $8$ | $g_s$ | eight gluons $G_{a,\imath}$, $a=1,\dots,8$ | triplets only |
 | Weak isospin | $SU(2)_L$ | $3$ | $g$ | $W_{a,\imath}$, $a=1,2,3$ | left-handed doublets only |
 | Hypercharge | $\mathrm{U}(1)_Y$ | $1$ | $g_{\mathrm Y}$ | $B_{\imath}$ | every field, with charge $Y$ |
 
@@ -61,15 +61,15 @@ The three couplings are written $g_s$, $g$ and $g_{\mathrm Y}$ throughout the co
 
 **The representations.** The content of one generation is five multiplets, and the definition of each is its representation triple and its hypercharge:
 
-- the left-handed quark doublet $Q_L$, a colour triplet, a weak doublet, hypercharge $\tfrac16$;
-- the right-handed up-type quark $u_R$, a colour triplet, a weak singlet, hypercharge $\tfrac23$;
-- the right-passed down-type quark $d_R$, a colour triplet, a weak singlet, hypercharge $-\tfrac13$;
-- the left-handed lepton doublet $L_L$, a colour singlet, a weak doublet, hypercharge $-\tfrac12$;
-- the right-handed charged lepton $e_R$, a colour singlet, a weak singlet, hypercharge $-1$.
+- the left-handed quark doublet $Q_L$, a triplet, a weak doublet, hypercharge $\tfrac16$;
+- the right-handed up-type quark $u_R$, a triplet, a weak singlet, hypercharge $\tfrac23$;
+- the right-passed down-type quark $d_R$, a triplet, a weak singlet, hypercharge $-\tfrac13$;
+- the left-handed lepton doublet $L_L$, a singlet, a weak doublet, hypercharge $-\tfrac12$;
+- the right-handed charged lepton $e_R$, a singlet, a weak singlet, hypercharge $-1$.
 
 The neutrino is the upper component of $L_L$ and has no right-handed partner in the minimal content. That omission is the reason the minimal model has massless neutrinos, and it is treated in §*What the Count Leaves Out*.
 
-**The table.** The number of Weyl fields in each row is the product of the two multiplicities: colour dimension times weak dimension.
+**The table.** The number of Weyl fields in each row is the product of the two multiplicities: triplet dimension times weak dimension.
 
 | Multiplet | $SU(3)_c$ | $SU(2)_L$ | $Y$ | $T_3$ | $Ϙ=Y+T_3$ | Weyl fields |
 |---|---|---|---|---|---|---|
@@ -79,7 +79,7 @@ The neutrino is the upper component of $L_L$ and has no right-handed partner in 
 | $L_L=(\xi_{\mathrm{neu},L},e_L)$ | $1$ | $2$ | $-1/2$ | $+1/2$, $-1/2$ | $0$, $-1$ | $2$ |
 | $e_R$ | $1$ | $1$ | $-1$ | $0$ | $-1$ | $1$ |
 
-**The count.** The last column sums to $6+3+3+2+1=15$. That is the content of one generation: fifteen left-handed Weyl fields, of which twelve carry colour and three do not, and of which every coloured one carries fractional charge.
+**The count.** The last column sums to $6+3+3+2+1=15$. That is the content of one generation: fifteen left-handed Weyl fields, of which twelve carry a triplet index and three do not, and of which every non-singlet one carries fractional charge.
 
 **Three copies.** The model contains three generations, and the three are identical in quantum numbers. The table is the same three times, and only the masses differ. The number three is a discrete input; [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html) records that the corpus accommodates it as a multiplicity and does not derive it. With three generations the count is $45$ Weyl fields.
 
@@ -111,7 +111,7 @@ $$
 6Y_Q^3-3Y_u^3-3Y_d^3+2Y_L^3-Y_e^3=0 .
 $$
 
-The first is the colour condition, the second the weak condition, the third the gravitational condition and the fourth the cubic condition. The fifth condition, $SU(3)_c^3$, vanishes identically: the colour content of the quarks is vector-like, and $2A(3)-A(3)-A(3)=0$ for the cubic colour coefficient $A(3)$.
+The first is the triplet condition, the second the weak condition, the third the gravitational condition and the fourth the cubic condition. The fifth condition, $SU(3)_c^3$, vanishes identically: the triplet content of the quarks is vector-like, and $2A(3)-A(3)-A(3)=0$ for the cubic triplet coefficient $A(3)$.
 
 **The sign of the right-handed terms.** The three minus signs in front of $Y_u$, $Y_d$ and $Y_e$ are the table's values. A right-handed field written as a left-handed conjugate reverses its hypercharge, so the same four conditions in the conjugate variables $Y^{\mathrm c}_u=-Y_u$, $Y^{\mathrm c}_d=-Y_d$, $Y^{\mathrm c}_e=-Y_e$ carry plus signs throughout, and mixing the two writings gives a sum that does not vanish. [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html) states both forms and the arithmetic of the mixture.
 
@@ -253,7 +253,7 @@ The six entries sum to $9+4+3+1+1+1=19$.
 
 The Standard Model is the connection theory of $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$, with matter in the chiral representations of one generation — the quark doublet $Q_L$ of hypercharge $\tfrac16$, the two quark singlets $u_R$ and $d_R$ of hypercharge $\tfrac23$ and $-\tfrac13$, the lepton doublet $L_L$ of hypercharge $-\tfrac12$ and the charged-lepton singlet $e_R$ of hypercharge $-1$ — which is fifteen Weyl fields per generation and forty-five for three; a scalar doublet of hypercharge $\tfrac12$ with four real components; and twelve connections, eight gluons, $W^\pm$, $Z$ and the photon, which after breaking carry sixteen, nine and two polarisations against the twenty-four of the twelve massless fields.
 
-The charge is not independent of the three labels. It is $Ϙ=Y+T_3$, and the table reproduces the seven observed charges from the five hypercharges. The five are constrained, not chosen: the four anomaly conditions, with the colour condition and the weak condition and the gravitational condition linear and the cubic condition cubic, reduce through $Y_Q=\tfrac12(Y_u+Y_d)$, $Y_L=-\tfrac32(Y_u+Y_d)$ and $Y_e=-3(Y_u+Y_d)$ to the single equation $Y_u^3+Y_d^3=7(Y_u+Y_d)^3$, whose solutions form three rays, of which one carries the observed charges and one is excluded because it gives quark charges of $\pm\tfrac12$. The conditions were recomputed in exact rational arithmetic and vanish identically on the observed assignment; the overall scale is the normalisation and is fixed by the measured electron charge, not by the algebra.
+The charge is not independent of the three labels. It is $Ϙ=Y+T_3$, and the table reproduces the seven observed charges from the five hypercharges. The five are constrained, not chosen: the four anomaly conditions, with the triplet condition and the weak condition and the gravitational condition linear and the cubic condition cubic, reduce through $Y_Q=\tfrac12(Y_u+Y_d)$, $Y_L=-\tfrac32(Y_u+Y_d)$ and $Y_e=-3(Y_u+Y_d)$ to the single equation $Y_u^3+Y_d^3=7(Y_u+Y_d)^3$, whose solutions form three rays, of which one carries the observed charges and one is excluded because it gives quark charges of $\pm\tfrac12$. The conditions were recomputed in exact rational arithmetic and vanish identically on the observed assignment; the overall scale is the normalisation and is fixed by the measured electron charge, not by the algebra.
 
 The model's free content is nineteen numbers: nine fermion masses, four mixing parameters, three connection couplings, the QCD vacuum angle, the electroweak scale and the Higgs mass. The four of the mixing is $9-5$, the nine parameters of a $3\times3$ unitary matrix less the five phases that field rephasings absorb. The values are scheme- and scale-dependent, and the table quotes each with its scheme. The two boson masses are not among them; they follow from $g$, $g_{\mathrm Y}$ and $v$ at tree level, and the computed $1.431\times10^{-25}\ \mathrm{kg}$ and $1.631\times10^{-25}\ \mathrm{kg}$ sit against the measured $1.4329\times10^{-25}$ and $1.62557\times10^{-25}\ \mathrm{kg}$, with the residual difference a question of scheme and of the one-loop correction, which [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html) works through rather than asserts. The neutrino masses, the axion and the three discrete inputs lie outside the count, and each extension has its own price.
 
@@ -263,14 +263,14 @@ The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$
 
 | Symbol | Meaning |
 |---|---|
-| $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | The symmetry group; colour, weak isospin, hypercharge |
+| $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | The symmetry group; the strong group, weak isospin, hypercharge |
 | $g_s$, $g$, $g_{\mathrm Y}$ | The three connection couplings; the reference checklist writes $g_3$, $g_2$, $g_1$ |
 | $Q_L$, $u_R$, $d_R$, $L_L$, $e_R$ | The five multiplets of one generation |
 | $Y$ | Hypercharge, with $Ϙ=Y+T_3$; the reference writes $Y_W=2Y$ |
 | $T_3$ | Third weak-isospin eigenvalue, $\pm\tfrac12$ in a doublet, $0$ in a singlet |
 | $Ϙ$ | Electric charge in units of the elementary charge |
 | $ϙ$ | The framework's charge parameter of the minimal coupling; the charge glyph of [Physics Units](physics-units-and-common-elements-conventions.html) |
-| $W_{a,\imath}$, $B_{\imath}$, $G_{a,\imath}$ | Weak, hypercharge and colour connections |
+| $W_{a,\imath}$, $B_{\imath}$, $G_{a,\imath}$ | Weak, hypercharge and strong connections |
 | $W^\pm_{\imath}$, $Z_{\imath}$, $A_{\imath}$ | Charged, neutral massive and electromagnetic fields after mixing |
 | $\theta_W$ | Weinberg angle, $\tan\theta_W=g_{\mathrm Y}/g$ |
 | $v$, $M_W$, $M_Z$, $M_H$ | Electroweak scale and the three boson masses |
@@ -286,7 +286,7 @@ The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). Why the three is accommodated and not derived.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The seven or eight parameters that a neutrino mass costs.
 - [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html). The vacuum angle and the mechanism that sets it to zero.
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Why the colour factor of the first table lies outside the algebra.
+- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Why the group factor of the first table lies outside the algebra.
 - [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html). What agreement with this content does and does not establish.
 
 The two companions this article names but does not carry — the QCD Lagrangian and the electroweak precision observables — are written, as articles 9 and 8 of the series, and the references above point to them.

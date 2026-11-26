@@ -1,14 +1,14 @@
-# __The Colours in $\mathrm{SU}(3)$: A Coordinate Label on the Eight, Not a Charge__
+# __The Three Lines in $\mathrm{SU}(3)$: A Coordinate Label on the Eight, Not a Charge__
 
 ## Introduction
 
-**The question.** Below $M_C$ the corpus writes $r\bar g$ on eight gluons and calls them colours. **What are they, and why eight?**
+**The question.** Below $M_C$ the corpus writes $r\bar g$ on eight gluons and calls them line names. **What are they, and why eight?**
 
-**The answer.** The labels are still coordinates, and for the first time they are coordinates of a group that is made local. **Eight is $3^{2}-1$, the rank is two, and the ninth colour–anticolour slot is not a missing gluon.** It is the $B-L$ vector, and this model already contains it.
+**The answer.** The labels are still coordinates, and for the first time they are coordinates of a group that is made local. **Eight is $3^{2}-1$, the rank is two, and the ninth triplet–antitriplet slot is not a missing gluon.** It is the $B-L$ vector, and this model already contains it.
 
 **What this article establishes.** Why the residual group is $\mathrm{SU}(3)$ and not $\mathrm{SO}(3)$. The nine slots and the eight. The two diagonal gluons and the basis among them. That the excluded singlet is occupied, by the corner. And the four facts that are measurable against the labels that are not.
 
-**What it does not establish.** That colour exists above $M_C$ — **it does not, and the companion article *The Colours in $\mathrm{SU}(4)$* is the half that says so**. Nor that the group is derived: the residual is $\mathrm{SU}(3)$ given the quartet, with $N_c=4-1=3$, and the measurement that confirms three is not this article's business.
+**What it does not establish.** That the strong group exists above $M_C$ — **it does not, and the companion article *The Three Lines in $\mathrm{SU}(4)$* is the half that says so**. Nor that the group is derived: the residual is $\mathrm{SU}(3)$ given the quartet, with $N_c=4-1=3$, and the measurement that confirms three is not this article's business.
 
 **The relation between the two articles in one line.** Above $M_C$ there are fifteen coordinates and no group to be charged under. **Below it there are eight coordinates and a group.** The coordinates did not change their nature; what changed is that there is now something for them to be coordinates of.
 
@@ -24,10 +24,10 @@ $$
 \operatorname{rank}\mathfrak{su}(3)=2 .
 $$
 
-**Colour is never broken.** The vacuum is $D=\operatorname{diag}(-3,1,1,1)$ in the $(\ell,r,g,b)$ order, and **on the colour block it is a multiple of the identity**, so it commutes with every matrix acting on that block:
+**The strong group is never broken.** The vacuum is $D=\operatorname{diag}(-3,1,1,1)$ in the $(\ell,r,g,b)$ order, and **on the spatial block it is a multiple of the identity**, so it commutes with every matrix acting on that block:
 
 $$
-[D,X]=0\quad\text{for every colour }X .
+[D,X]=0\quad\text{for every }X\text{ of the block} .
 $$
 
 **That one line is why the eight are exactly massless below $M_C$ and not merely light.** The mass form $M^{2}_{XY}=\operatorname{tr}([X,D]^{\dagger}[Y,D])$ vanishes on all eight, and the vanishing is a symmetry statement rather than a numerical accident.
@@ -36,16 +36,16 @@ $$
 
 | candidate residual | dimension | rank | diagonal bosons | shape |
 | --- | --- | --- | --- | --- |
-| $\mathrm{SU}(3)_c$ | $8$ | $2$ | $2$ | colour |
+| $\mathrm{SU}(3)_c$ | $8$ | $2$ | $2$ | the strong shape |
 | $\mathrm{SO}(3)\cong\mathrm{SU}(2)/\mathbb Z_2$ | $3$ | $1$ | $1$ | the electroweak shape |
 
-**A rank-one residual gives one diagonal boson, and colour has two.** The two are the standard combinations, and they are in the corpus's grid as the two diagonal cells of the $3\times3$ block. **A group that gave one would be an $\mathrm{SU}(2)$ in disguise**, which is the shape the weak sector takes and not this one.
+**A rank-one residual gives one diagonal boson, and the strong group has two.** The two are the standard combinations, and they are in the corpus's grid as the two diagonal cells of the $3\times3$ block. **A group that gave one would be an $\mathrm{SU}(2)$ in disguise**, which is the shape the weak sector takes and not this one.
 
-**The check is arithmetic and does not need the groups named.** The colour block is $3\times3$, so it has three diagonal cells; one combination is removed; **two remain.** A rank-one group would have one diagonal, and no arrangement of a $3\times3$ grid produces that.
+**The check is arithmetic and does not need the groups named.** The spatial block is $3\times3$, so it has three diagonal cells; one combination is removed; **two remain.** A rank-one group would have one diagonal, and no arrangement of a $3\times3$ grid produces that.
 
 ## The Nine Slots and the Eight
 
-**Colour–anticolour is the tensor product of the triplet with its conjugate, and it is reducible.**
+**The triplet–antitriplet product is the tensor product of the triplet with its conjugate, and it is reducible.**
 
 $$
 \mathbf 3\otimes\bar{\mathbf3}=\mathbf 8\oplus\mathbf 1,
@@ -63,7 +63,7 @@ $$
 
 **The six off-diagonal slots are four independent generators plus their reverses** — six directions, three planes, two amplitudes per plane. **The three diagonal slots are three directions, of which the trace is not a generator of $\mathrm{SU}(3)$**, because $\mathfrak{su}(3)$ is traceless.
 
-**So the diagonal carries two gluons and not three**, and the reason is not a choice of basis: **the removed direction is the one the $S$ in $\mathrm{SU}$ removes.** A reader who rotates the three colour lines freely will move the two gluons among the diagonal cells, and will not produce a third.
+**So the diagonal carries two gluons and not three**, and the reason is not a choice of basis: **the removed direction is the one the $S$ in $\mathrm{SU}$ removes.** A reader who rotates the three spatial lines freely will move the two gluons among the diagonal cells, and will not produce a third.
 
 **The count, twice.**
 
@@ -79,7 +79,7 @@ $$
 \bigl(a\,iD+b\,d_{2}+c\,d_{3}\bigr)_{\ell\ell}=-3ia+0+0 .
 $$
 
-**That entry vanishes if and only if $a=0$.** So the Cartan directions that lie inside the colour block are exactly the span of $d_{2}$ and $d_{3}$, and that span is two-dimensional. **That, and not any choice of pair, is what "two of the three diagonals stay inside the octet" means.** The third direction is the only one that touches the lepton line, and it is the one that leaves.
+**That entry vanishes if and only if $a=0$.** So the Cartan directions that lie inside the spatial block are exactly the span of $d_{2}$ and $d_{3}$, and that span is two-dimensional. **That, and not any choice of pair, is what "two of the three diagonals stay inside the octet" means.** The third direction is the only one that touches the lepton line, and it is the one that leaves.
 
 **The printed arrays, and the words they come from.** The diagonal words are $\ell_{j}r_{j}$, and each is a signed permutation with an eigenvalue $-1$ on the $\{t,j\}$ block:
 
@@ -120,7 +120,7 @@ $$
 
 **with $\det G=3$ and eigenvalues $1$ and $3$.** Positive definite, so the pair is a genuine basis; not diagonal, so it is not an orthogonal one. **Both statements matter**: the first is why the two are linearly independent and the space is truly two-dimensional, the second is why "the two diagonal gluons" is a phrase with an asterisk.
 
-**The corpus says exactly this, in one sentence worth quoting.** $\operatorname{tr}(d_{2}d_{3})=+1$ is, in its own words, *the array form of the statement that a colour basis is a choice and the algebra is not.* **That is this article's thesis one scale down**, and it is the reason the pair needs no defence.
+**The corpus says exactly this, in one sentence worth quoting.** $\operatorname{tr}(d_{2}d_{3})=+1$ is, in its own words, *the array form of the statement that a line basis is a choice and the algebra is not.* **That is this article's thesis one scale down**, and it is the reason the pair needs no defence.
 
 **An orthogonal pair is one rotation away, and the rotation is free.** $G$ is positive definite and $2\times2$, so a single rotation diagonalises it; the result is $(\lambda_{3},\lambda_{8})$ up to signs and order. **Nothing computed from the octet depends on which of the two pairs a calculation starts from**, because both span the same two-dimensional space and the Casimirs are traces over the whole algebra.
 
@@ -128,19 +128,19 @@ $$
 
 **The construction above $M_C$ is uniform, and that is why the labels there are unambiguous.** One rule, $W_{\mu\nu}=\ell_{\mu}r_{\nu}$, produces one word per generator; the planes are sums and differences of words; **every one of the fifteen is exactly one word or one combination of two, and the rule never consults a basis of the Cartan.** That is what makes "cell $(i,j)$" a well-defined address above $M_C$.
 
-**Below $M_C$ the octet inherits a basis that was chosen for a different purpose.** The pair $(d_{2},d_{3})$ exists because the colour block is chained $x\to y\to z$ and the two successive differences were taken. **Chain it $z\to y\to x$ and you get another non-orthogonal pair spanning the same plane.** So:
+**Below $M_C$ the octet inherits a basis that was chosen for a different purpose.** The pair $(d_{2},d_{3})$ exists because the spatial block is chained $x\to y\to z$ and the two successive differences were taken. **Chain it $z\to y\to x$ and you get another non-orthogonal pair spanning the same plane.** So:
 
 | object | status below $M_C$ |
 | --- | --- |
-| the two-dimensional colour-block Cartan | invariant |
+| the two-dimensional spatial-block Cartan | invariant |
 | the split $2+1$ | invariant |
 | the direction that leaves, $iD$ | invariant up to scale |
 | the pair $(d_{2},d_{3})$ | a by-product of the chain order |
-| the pair $(M_{x}-M_{y},\,M_{y}-M_{z})$ | the declared frame, restricted to the colour block |
+| the pair $(M_{x}-M_{y},\,M_{y}-M_{z})$ | the declared frame, restricted to the spatial block |
 | the pair $(\lambda_{3},\lambda_{8})$ | an orthogonal basis of the same plane |
 | the names "the two diagonal gluons" | a name for whichever pair is in use |
 
-**So the phrase "the two diagonal gluons" is not canonical, and the honest statement says so.** What is canonical is *the two-dimensional space of diagonal generators that act only on colour*. **A reader who wants a canonical pair should fix an orthogonal one; a reader who wants to reproduce the corpus's arrays should use $d_{2}$ and $d_{3}$ and carry the $-1$ in the Gram.** Neither choice is more physical.
+**So the phrase "the two diagonal gluons" is not canonical, and the honest statement says so.** What is canonical is *the two-dimensional space of diagonal generators that act only on the spatial block*. **A reader who wants a canonical pair should fix an orthogonal one; a reader who wants to reproduce the corpus's arrays should use $d_{2}$ and $d_{3}$ and carry the $-1$ in the Gram.** Neither choice is more physical.
 
 **In the declared frame the same plane has a natural pair.** The three diagonal arrays of the fifteen are $M_{j}=E_{jj}-E_{tt}$, and the two differences $M_{x}-M_{y}$ and $M_{y}-M_{z}$ are exactly the diagonal directions with no lepton entry, so they span the octet's Cartan without any subtraction. **They are orthogonal but not normalised**, $\operatorname{tr}\bigl((M_{x}-M_{y})^{2}\bigr)=6$, and $d_{2}$, $d_{3}$ are one more choice inside the same two-dimensional space, with the Gram entry $\operatorname{tr}(d_{2}d_{3})=+1$ as the price of making it. **The table's point survives the change of pair**: the space is canonical, the pair is not. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves the restriction and why no three-dimensional version exists in $\mathfrak{su}(3)$.
 
@@ -152,7 +152,7 @@ $$
 
 **This model does not leave the singlet empty. It puts the corner in it.**
 
-**Take the colour-block identity and complete it tracelessly in four dimensions.** The colour-block identity is $\operatorname{diag}(0,1,1,1)$ in the $(\ell,r,g,b)$ order — zero on the lepton line, one on each colour line — and its trace is three, so it is not a generator of $\mathfrak{su}(4)$. **Subtract a quarter of the $4\times4$ identity:**
+**Take the spatial-block identity and complete it tracelessly in four dimensions.** The spatial-block identity is $\operatorname{diag}(0,1,1,1)$ in the $(\ell,r,g,b)$ order — zero on the lepton line, one on each spatial line — and its trace is three, so it is not a generator of $\mathfrak{su}(4)$. **Subtract a quarter of the $4\times4$ identity:**
 
 $$
 \operatorname{diag}(0,1,1,1)-\tfrac34\,\mathbb 1
@@ -161,7 +161,7 @@ $$
 =\tfrac14 D .
 $$
 
-**The ninth slot, made traceless, is the corner.** The colour-block trace and the $B-L$ direction are one direction once the four-dimensional trace is removed, and **that identification is the reason the grid holds fifteen generators and not sixteen.**
+**The ninth slot, made traceless, is the corner.** The spatial-block trace and the $B-L$ direction are one direction once the four-dimensional trace is removed, and **that identification is the reason the grid holds fifteen generators and not sixteen.**
 
 **So the singlet is not an absent gluon. It is a different particle.** Three properties separate it from the octet, and each is checkable:
 
@@ -171,7 +171,7 @@ $$
 | the coupling | the strong coupling | its own, and it mixes downstream |
 | the fate below $M_C$ | massless, and it stays massless | massless until a second vacuum mixes it |
 
-**And the words matter here.** The singlet is a connection of the unbroken colour group in the same sense that the eight are — **but it is not a gluon**, because a gluon is a boson of the non-abelian factor. **Calling it a ninth gluon would be the same error as calling the photon a fourth weak boson**: the count of the factor's adjoint is eight, and the ninth slot belongs to a different factor.
+**And the words matter here.** The singlet is a connection of the unbroken strong group in the same sense that the eight are — **but it is not a gluon**, because a gluon is a boson of the non-abelian factor. **Calling it a ninth gluon would be the same error as calling the photon a fourth weak boson**: the count of the factor's adjoint is eight, and the ninth slot belongs to a different factor.
 
 **The objection, named before it is answered.** *If the singlet is the $B-L$ boson, is the exclusion of the singlet not a bookkeeping artefact?* **No, and the arithmetic shows why.** The exclusion is the statement $\dim\mathfrak{su}(3)=8$ rather than $9$; the model happens to possess a ninth vector, and that vector is not in the adjoint of $\mathrm{SU}(3)$. **A theory with a $\mathrm{U}(3)$ symmetry group would have nine, and would be a different theory with a different spectrum.**
 
@@ -189,7 +189,7 @@ $$
 
 **What changed at $M_C$ is not the status of the label. It is the status of the group.** Above the transition the coordinates were coordinates of a basis with no factor attached; below it they are coordinates of a factor that is made local and unbroken. **The map became a map of something.**
 
-**And that is why QCD may talk about colour at all.** The coordinate is conventional; the structure it coordinatises is measured. **The invariants are the measurable part**, and each is computed from the dimension and the rank with no reference to a letter:
+**And that is why the QCD transcription may name the eight at all.** The coordinate is conventional; the structure it coordinatises is measured. **The invariants are the measurable part**, and each is computed from the dimension and the rank with no reference to a letter:
 
 $$
 C_{F}=\frac{N^{2}-1}{2N}=\frac43,
@@ -199,11 +199,11 @@ C_{A}=N=3,
 T_{R}=\tfrac12 .
 $$
 
-**These three are structural**: they follow from $N=3$ alone, which is why they may be printed here, and the measurement that fixes $N=3$ is not this article's subject. **What no experiment can decide is whether the third colour is called blue**, because a relabelling of the three lines is an automorphism of the description and not a change in the world.
+**These three are structural**: they follow from $N=3$ alone, which is why they may be printed here, and the measurement that fixes $N=3$ is not this article's subject. **What no experiment can decide is whether the third line is called blue**, because a relabelling of the three lines is an automorphism of the description and not a change in the world.
 
 ## What Is Real and What Is Chosen
 
-**Four facts, and each is checkable without naming a colour.**
+**Four facts, and each is checkable without naming a letter.**
 
 $$
 \boxed{\;
@@ -224,7 +224,7 @@ $$
 | which diagonal slot is called the missing one | a basis statement |
 | the pair $(d_{2},d_{3})$, non-orthogonal, against $(\lambda_{3},\lambda_{8})$ | a sheared basis of one plane |
 
-**The test is the one the companion article states, applied one size down.** Take a sentence with a colour word, relabel the three lines, ask what survives. **The dimension, the rank, the exclusion of the singlet and the three Casimirs survive. The letters do not.**
+**The test is the one the companion article states, applied one size down.** Take a sentence carrying a line name, relabel the three lines, ask what survives. **The dimension, the rank, the exclusion of the singlet and the three Casimirs survive. The letters do not.**
 
 ## The Rank Ledger: $3=2+1$
 
@@ -254,27 +254,27 @@ $$
 | the rank ledger | $2+1$ | $3=\operatorname{rank}\mathfrak{su}(4)$ |
 | the kernel at $M_C$ | six off-diagonal $+$ two diagonal $+$ the corner | $6+2+1=9=\dim\mathfrak u(3)$ |
 | the singlet's identity | $\operatorname{diag}(0,1,1,1)-\tfrac34\mathbb 1$ | $\tfrac14 D$ |
-| the eight's mass | $[D,X]=0$ on the colour block | $0$, exact |
+| the eight's mass | $[D,X]=0$ on the spatial block | $0$, exact |
 | the sextet's mass | $D$ differs across the lepton line | $32v^{2}$ |
 | the fundamental Casimir | $(9-1)/(2\cdot3)$ | $4/3$ |
 | the adjoint Casimir | $N$ at $N=3$ | $3$ |
 | the lepton-line entry of the Cartan | $a\,iD+b\,d_{2}+c\,d_{3}\mapsto-3ia$ | zero iff $a=0$ |
-| the colour-block Cartan | span of the two with zero lepton entry | $2$ |
+| the spatial-block Cartan | span of the two with zero lepton entry | $2$ |
 | the Gram of the pair | $\det\begin{pmatrix}2&-1\\-1&2\end{pmatrix}$ | $3>0$, so a basis |
 | the Gram's eigenvalues | $\lambda^{2}-4\lambda+3$ | $1$ and $3$, not degenerate |
 | $d_{2}$ against Gell-Mann | $d_{2}=i\lambda_{3}^{\mathrm{emb}}$ | exact |
 | the individual norms | $\operatorname{tr}(d_{a}^{\dagger}d_{a})$ and $\operatorname{tr}(\lambda_{a}\lambda_{b})=2\delta_{ab}$ | $2=2$, no rescaling |
-| a rank-one residual would give | one diagonal boson | not colour |
+| a rank-one residual would give | one diagonal boson | not the spatial block |
 
 ## Summary
 
 **Eight, rank two, singlet excluded.** The phrase *one fewer on the diagonal* is the arithmetic $9\to8$, and it is the same arithmetic as the companion article's $16\to15$ applied one size down. **The dimension, the rank and the exclusion are invariant; the letters and the choice of basis are not.**
 
-**The residual is $\mathrm{SU}(3)$ and not $\mathrm{SO}(3)$, and the rank is the test.** Two diagonal bosons require rank two, and a rank-one group has one. **Colour is never broken at $M_C$**, which is why the eight are exact zeros of the mass matrix rather than small ones.
+**The residual is $\mathrm{SU}(3)$ and not $\mathrm{SO}(3)$, and the rank is the test.** Two diagonal bosons require rank two, and a rank-one group has one. **The strong group is never broken at $M_C$**, which is why the eight are exact zeros of the mass matrix rather than small ones.
 
-**The ninth slot is occupied.** The colour-block identity, completed tracelessly in four dimensions, is the corner $D/4$; the singlet is therefore the $B-L$ vector and not a missing gluon. **That identification is why fifteen generators and not sixteen**, and it is the sharpest link between the two articles.
+**The ninth slot is occupied.** The spatial-block identity, completed tracelessly in four dimensions, is the corner $D/4$; the singlet is therefore the $B-L$ vector and not a missing gluon. **That identification is why fifteen generators and not sixteen**, and it is the sharpest link between the two articles.
 
-**The two diagonal gluons are a space, not a pair.** The Cartan directions inside the colour block are exactly those with zero lepton-line entry, so the space is two-dimensional and that is invariant; the pair $(d_{2},d_{3})$ is a non-orthogonal basis of it, with $\operatorname{tr}(d_{2}^{\dagger}d_{3})=-1$ and Gram eigenvalues $1$ and $3$. **$d_{2}$ is exactly $i\lambda_{3}^{\mathrm{emb}}$ and the norms agree term by term**, so the conventions differ by a shear and not by a rescaling — a fact that misleads anyone who checks only the first entry.
+**The two diagonal gluons are a space, not a pair.** The Cartan directions inside the spatial block are exactly those with zero lepton-line entry, so the space is two-dimensional and that is invariant; the pair $(d_{2},d_{3})$ is a non-orthogonal basis of it, with $\operatorname{tr}(d_{2}^{\dagger}d_{3})=-1$ and Gram eigenvalues $1$ and $3$. **$d_{2}$ is exactly $i\lambda_{3}^{\mathrm{emb}}$ and the norms agree term by term**, so the conventions differ by a shear and not by a rescaling — a fact that misleads anyone who checks only the first entry.
 
 **The labels are coordinates below $M_C$ as they were above it.** What changed is that the group is now made local, so the invariants computed from the coordinates are measurable. **The map became a map of something, and the territory is the group.**
 
@@ -283,19 +283,19 @@ $$
 | symbol | meaning |
 | --- | --- |
 | $(\ell,r,g,b)$ | the four lines, in the order the vacuum uses |
-| $\mathrm{SU}(3)_c$ | $\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$, the unbroken colour factor, dimension $8$, rank $2$ |
+| $\mathrm{SU}(3)_c$ | $\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$, the unbroken group factor, dimension $8$, rank $2$ |
 | $\mathfrak u(3)$ | $\mathfrak{su}(3)_c\oplus\mathfrak u(1)_{B-L}$, the kernel of $\operatorname{ad}(iD)$, dimension $9$ |
 | $D$ | $\operatorname{diag}(-3,1,1,1)$, the vacuum's direction |
 | $B-L$ | $\tfrac13 D$, the abelian factor's generator |
-| $d_{2}$, $d_{3}$ | the corpus's two colour diagonals, $\operatorname{diag}(0,i,-i,0)$ and $\operatorname{diag}(0,0,i,-i)$ |
-| $\lambda_{3}^{\mathrm{emb}}$, $\lambda_{8}^{\mathrm{emb}}$ | Gell-Mann's two, embedded on the colour block: $d_{2}=i\lambda_{3}^{\mathrm{emb}}$, $d_{3}$ a unit combination of both |
+| $d_{2}$, $d_{3}$ | the corpus's two spatial diagonals, $\operatorname{diag}(0,i,-i,0)$ and $\operatorname{diag}(0,0,i,-i)$ |
+| $\lambda_{3}^{\mathrm{emb}}$, $\lambda_{8}^{\mathrm{emb}}$ | Gell-Mann's two, embedded on the spatial block: $d_{2}=i\lambda_{3}^{\mathrm{emb}}$, $d_{3}$ a unit combination of both |
 | $G$ | the Gram matrix $\begin{pmatrix}2&-1\\-1&2\end{pmatrix}$ of the corpus's pair, $\det=3$ |
 | $C_{F}$, $C_{A}$, $T_{R}$ | the three Casimirs, fixed by $N=3$ |
 | $\mathbf 8$, $\mathbf 1$ | the adjoint and the singlet of the tensor product |
 
 ## Further Reading
 
-- [The Colours in $\mathrm{SU}(4)$: A Coordinate Label on the Fifteen, Not a Charge](the-colours-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html), the first half: the fifteen flat labels and why none is a charge.
+- [The Three Lines in $\mathrm{SU}(4)$: A Coordinate Label on the Fifteen, Not a Charge](the-three-lines-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html), the first half: the fifteen flat labels and why none is a charge.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), for $\operatorname{ad}(iD)$, its spectrum $0^{9}\oplus(\pm4i)^{3}$ and the kernel $\mathfrak u(3)$.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), for the grid and the octet's $6+2$ read as cells.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$](quantum-chromodynamics-as-the-residual-of-su4.html), for what the corpus does and does not reach of QCD, and for the status of $N_c=3$ as imported.

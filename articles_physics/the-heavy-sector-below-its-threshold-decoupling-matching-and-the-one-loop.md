@@ -52,12 +52,12 @@ $$
 
 | threshold | what leaves | what remains of it | status of the removal |
 |---|---|---|---|
-| $M_C$ | six leptoquarks, the coloured components of $Ξ$; $\nu_R$'s Majorana mass | four-fermion operators with $\Delta B=\Delta L=\pm1$; the dimension-five operator for neutrino mass; the $1/M_C^{2}$ corrections to $W$ couplings | one breaking at one scale, truncated effects |
+| $M_C$ | six leptoquarks, the non-singlet components of $Ξ$; $\nu_R$'s Majorana mass | four-fermion operators with $\Delta B=\Delta L=\pm1$; the dimension-five operator for neutrino mass; the $1/M_C^{2}$ corrections to $W$ couplings | one breaking at one scale, truncated effects |
 | $M_W$ | $W^{\pm}$, $Z$, the top, the Higgses | the four-fermion charged-current and neutral-current operators of the Fermi theory | exact breaking, slowly converging truncation |
 
 **3.1 The transition.** The leptoquarks leave and their exchange becomes contact interactions. The same vacuum removes the six leptoquarks, and the neutrino's Majorana mass becomes a dimension-five operator — the seesaw. The bound on $M_C$ is the bound on those coefficients, and the diquark channel is the one that would give proton decay — with a suppression that makes it harmless, as [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) shows.
 
-**3.2 Why one removal and not two.** The leptoquarks and the Majorana mass leave at $M_C$ and not at a scale of their own, because the vacuum that gives them their mass is the vacuum that breaks the colour. **A reader who expects two removals will look for a second threshold that the content does not have.**
+**3.2 Why one removal and not two.** The leptoquarks and the Majorana mass leave at $M_C$ and not at a scale of their own, because the vacuum that gives them their mass is the vacuum that breaks the strong group. **A reader who expects two removals will look for a second threshold that the content does not have.**
 
 **3.3 The electroweak threshold.** The bosons leave and the theory becomes Fermi's. The removal is the most familiar and the least clean, because the top is close in mass.
 
@@ -67,7 +67,7 @@ $$
 
 **Where the two descriptions are made to agree.** Three statements of increasing precision.
 
-**4.1 Tree level.** The couplings are equated at the threshold. At $M_C$ the single $\mathrm{SU}(4)$ coupling becomes two, the colour one and the $B-L$ one, both equal to $g_4$:
+**4.1 Tree level.** The couplings are equated at the threshold. At $M_C$ the single $\mathrm{SU}(4)$ coupling becomes two, the strong one and the $B-L$ one, both equal to $g_4$:
 
 $$
 g_s(M_C)=g_4(M_C),
@@ -77,7 +77,7 @@ g_{B-L}(M_C)=g_4(M_C),
 g(M_C)=g_L(M_C).
 $$
 
-At the same scale the two neutral couplings combine into hypercharge by the orthogonality relation of [The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). **Both steps are at $M_C$: the colour factor and the hypercharge factor are made by the same vacuum.** No correction, no logarithm: at tree level a coupling passes through a threshold unchanged.
+At the same scale the two neutral couplings combine into hypercharge by the orthogonality relation of [The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). **Both steps are at $M_C$: the group factor and the hypercharge factor are made by the same vacuum.** No correction, no logarithm: at tree level a coupling passes through a threshold unchanged.
 
 **4.2 One loop.** The equality acquires a finite shift,
 

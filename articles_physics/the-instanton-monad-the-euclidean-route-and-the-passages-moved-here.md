@@ -60,7 +60,7 @@ $$
 \mathbb{PT}=\frac{\mathrm{SU}(4)}{\mathrm{U}(1)\times\mathrm{SU}(3)} ,
 $$
 
-each point carries those two internal groups. The $\mathrm{SU}(3)$ acts on the quotient $l^\perp$ and is colour; the $\mathrm{U}(1)$ is the one the resolution above has just used. Because the fibre is the sphere of complex structures, the sphere of the preceding section is the internal space of the lift, and the point of $\mathbb{PT}$ is exactly a choice of $J$.
+each point carries those two internal groups. The $\mathrm{SU}(3)$ acts on the quotient $l^\perp$ and is the strong group; the $\mathrm{U}(1)$ is the one the resolution above has just used. Because the fibre is the sphere of complex structures, the sphere of the preceding section is the internal space of the lift, and the point of $\mathbb{PT}$ is exactly a choice of $J$.
 
 **The generation.** One generation of fermions is the space of linear maps
 

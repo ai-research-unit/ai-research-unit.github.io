@@ -278,7 +278,7 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$; has nilpotents, but is ungraded and has no odd elements |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational and material sectors; connection in $\mathbb{B}_{\Phi}$, generators in $\mathbb{B}_{\Psi}$ |
 | $\tilde{A}_{\Phi}=iA_te_t+\vec A\in\mathbb{B}_{\Phi}$ | Potential biquaternion |
-| $a,b,c$; ${\imath},\jmath$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |
+| $a,b,c$; ${\imath},\jmath$ | Internal triplet and spacetime indices, both written low; every contraction over them is an explicit sum |
 | $T_a=i\vec e_a$, $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c$ | $\mathrm{SU}(2)$ generators realized by the commutator |
 | $f_{abc}$ | Structure constants; Jacobi identity required for nilpotency |
 | $g$, $D_{\imath}=\partial/\partial R_{\imath}+gA_{\imath}$ | Coupling and covariant derivative |

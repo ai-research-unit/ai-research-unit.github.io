@@ -201,7 +201,7 @@ The exact values sit beside the linear estimate.
 
 The last row is the reference, and that is the point of the whole scheme. The top–bottom contribution is not new physics: it sits inside the Standard Model prediction, and the reference top mass is defined so that it does. A reader who takes the $1.27$ of the last row as a discrepancy to be explained has forgotten what the subtraction means.
 
-With $\sigma_T=0.06$ and a colour-triplet doublet at $5.35\times10^{-25}\ \mathrm{kg}$, the near-degenerate bracket gives $\delta m\lesssim5.3\times10^{-26}\ \mathrm{kg}$, and the exact bracket agrees: $300/325$ gives $T=0.036$ and $300/330$ gives $T=0.052$. The bound is on the splitting relative to the mass, not on the mass, which is why a heavy degenerate multiplet survives.
+With $\sigma_T=0.06$ and a triplet doublet at $5.35\times10^{-25}\ \mathrm{kg}$, the near-degenerate bracket gives $\delta m\lesssim5.3\times10^{-26}\ \mathrm{kg}$, and the exact bracket agrees: $300/325$ gives $T=0.036$ and $300/330$ gives $T=0.052$. The bound is on the splitting relative to the mass, not on the mass, which is why a heavy degenerate multiplet survives.
 
 $S$ is the harder one to estimate, because it survives only through the mixing, so it is sensitive to the difference of the two loop functions rather than to their size, and the difference is what makes the estimates scheme- and splitting-dependent. The large-$N$ number $N_c/(6\pi)$ is $0.053$ per doublet, of the order of the experimental uncertainty, which is the quantitative reason this sector is called precision physics: a single chiral doublet at the electroweak scale would be visible, and none is. The exact one-loop value for a given mass splitting is a two-line computation from the definition, and the literature's tables differ in the third digit for that reason.
 
@@ -344,7 +344,7 @@ The framework supplies the transversality of the self-energy through the fixing 
 | $U$ | The custodial-breaking slope parameter |
 | $\delta\rho$ | The shift of $\rho$, equal to $\alpha T$ at leading order |
 | $f(m_1,m_2)$ | The Veltman bracket, vanishing at $m_1=m_2$ |
-| $N_c$ | Colour multiplicity: $1$ for leptons, $3$ for quarks |
+| $N_c$ | Triplet multiplicity: $1$ for leptons, $3$ for quarks |
 | $m_t$, $M_H$ | Reference top and Higgs masses of the subtraction |
 
 ## Further Reading
@@ -357,5 +357,5 @@ The framework supplies the transversality of the self-energy through the fixing 
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The sign rule that puts a corpus action beside a standard one.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). The classification that the last section uses.
 
-- [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The strong sector that fixes $N_c$ in the bracket of §*What a Heavy Sector Would Shift*, and the colour factor that makes a quark doublet three times a leptonic one.
+- [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The strong sector that fixes $N_c$ in the bracket of §*What a Heavy Sector Would Shift*, and the group factor that makes a quark doublet three times a leptonic one.
 - [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). The top mass that sets the reference subtraction, and the Higgs coupling whose scale dependence is the other half of the scheme question.

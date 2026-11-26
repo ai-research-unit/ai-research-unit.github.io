@@ -4,13 +4,13 @@
 
 Exponentiate a generator and the result is an element of the group. Whether that element is a **rotor** is a second question, and it has no answer until a real space and a form are named. This article names them, block by block, for the fifteen generators of the $\mathrm{SU}(4)$ model.
 
-**The answer, in three lines.** Three generators turn the carrier's three-space: their exponentials are rotors of ordinary space. Three turn the four-space of the quartet, mixing the lepton line with colour: their exponentials are rotors of the quartet and not of space. Nine are not real matrices at all, so their exponentials move the real quartet off itself. And no generator of the fifteen has a Lorentz boost as its exponential, for a reason that fits in one line: a boost preserves the algebra's norm and is not unitary, and every element of the group is unitary.
+**The answer, in three lines.** Three generators turn the carrier's three-space: their exponentials are rotors of ordinary space. Three turn the four-space of the quartet, mixing the lepton line with a spatial line: their exponentials are rotors of the quartet and not of space. Nine are not real matrices at all, so their exponentials move the real quartet off itself. And no generator of the fifteen has a Lorentz boost as its exponential, for a reason that fits in one line: a boost preserves the algebra's norm and is not unitary, and every element of the group is unitary.
 
 **The two claims this article was written to test.**
 
 The first is that exponentiated $\mathrm{SU}(4)$ generators are Lorentz rotors, because $\mathrm{SU}(4)\cong\mathrm{Spin}(6)$ and a spin group is a group of rotors. Half of that is true and the half that is true is not the half that matters. $\mathrm{SU}(4)$ is $\mathrm{Spin}(6)$, so every exponential is a rotor of a six-dimensional real space. That space is not spacetime and its form is definite, so the rotor is not a Lorentz rotor. §*Six Dimensions, and the Shape That Looks Like Lorentz* gives the count and the reason the shape is misleading.
 
-The second is that left and right multiplication by the imaginary units are the left and right spatial rotors. This one is close to true and the correction is exact. The six arrays $\{L_{e_a},R_{e_a}\}$ span $\mathfrak{so}(4)$, a real six-dimensional subalgebra of the fifteen, and each triple is a group of rotors of the carrier's four-space. Neither is a group of rotors of three-space: a left rotor alone carries the time direction into a colour direction. The spatial rotors are the pairs in which the right parameter is the inverse of the left, and that pairing is the diagonal of $\mathrm{Spin}(4)$ and not either triple. §*The Six Real Planes, and the Rotors Inside Them* computes it, **and it states the one thing the old reading got wrong: a subalgebra of the fifteen is not a factor beside it.**
+The second is that left and right multiplication by the imaginary units are the left and right spatial rotors. This one is close to true and the correction is exact. The six arrays $\{L_{e_a},R_{e_a}\}$ span $\mathfrak{so}(4)$, a real six-dimensional subalgebra of the fifteen, and each triple is a group of rotors of the carrier's four-space. Neither is a group of rotors of three-space: a left rotor alone carries the time direction into a adjoint direction. The spatial rotors are the pairs in which the right parameter is the inverse of the left, and that pairing is the diagonal of $\mathrm{Spin}(4)$ and not either triple. §*The Six Real Planes, and the Rotors Inside Them* computes it, **and it states the one thing the old reading got wrong: a subalgebra of the fifteen is not a factor beside it.**
 
 **One correction of vocabulary at the start.** The question speaks of the fifteen roots of $\mathfrak{su}(4)$. The number fifteen is the dimension of the algebra, and the roots are twelve, with a Cartan of three. The roots are not generators of $\mathfrak{su}(4)$ at all: they are the $E_{jk}$ of $\mathfrak{sl}(4,\mathbb{C})$, they are not anti-Hermitian, and their exponentials are shears and not rotors. §*The Roots Are Outside the Algebra* settles the point, and it is the one place where the correction changes the answer rather than the wording.
 
@@ -29,7 +29,7 @@ The word is used in the physics literature in five different senses, and each se
 | group | what acts | the quadratic space | the rotor turns |
 |---|---|---|---|
 | $\mathrm{SU}(2)\cong\mathrm{Spin}(3)$ | unit quaternions on the vector part | $B_V$, definite | the carrier's three-space |
-| $\mathrm{SU}(3)$ | the eight that fix the lepton line | $B_V$, definite, on the $\mathfrak{so}(3)$ part | the colour triple, three of the eight |
+| $\mathrm{SU}(3)$ | the eight that fix the lepton line | $B_V$, definite, on the $\mathfrak{so}(3)$ part | the three lines, three of the eight |
 | $\mathrm{SU}(4)\cong\mathrm{Spin}(6)$ | the carrier's unitaries | six real dimensions, definite | a six-dimensional space, not spacetime |
 | $\mathfrak{so}(4)$, the six real planes | left and right multiplication | the quartet, definite | the carrier's four-space |
 | $\mathrm{SO}^{+}(3,1)\cong\mathrm{SL}(2,\mathbb{C})$ | norm automorphisms of the real slice | the Minkowski slice, indefinite | spacetime |
@@ -84,13 +84,13 @@ Six planes with two generators each, plus the three diagonal generators of the f
 
 ## The Three That Turn Space
 
-The three real generators of the colour planes are the only ones of the fifteen whose exponential is a rotation of the carrier's three-space.
+The three real generators of the spatial planes are the only ones of the fifteen whose exponential is a rotation of the carrier's three-space.
 
 **They fix the lepton line.** With $A_{xy}=E_{xy}-E_{yx}$ and the order $(t,x,y,z)$,
 $$
 A_{xy}e_t=0,\qquad A_{xz}e_t=0,\qquad A_{yz}e_t=0 .
 $$
-This is the statement that colour fixes the lepton line, read on the generators rather than on the group: $\mathfrak{so}(3)\subset\mathfrak{su}(3)\subset\mathfrak{su}(4)$, and the three are the real-rotation part of the eight.
+This is the statement that the strong group fixes the lepton line, read on the generators rather than on the group: $\mathfrak{so}(3)\subset\mathfrak{su}(3)\subset\mathfrak{su}(4)$, and the three are the real-rotation part of the eight.
 
 **Their exponentials are rotors of three-space.** For every $\theta$,
 $$
@@ -98,15 +98,15 @@ $$
 \exp(\theta A_{xy})\,e_z=e_z,\qquad
 \exp(\theta A_{xy})\,e_x=\cos\theta\,e_x-\sin\theta\,e_y .
 $$
-The exponential fixes the lepton line point by point, turns the colour triple, and preserves the Euclidean form. It is a rotor, and the space it turns is the space the model calls colour.
+The exponential fixes the lepton line point by point, turns the three lines, and preserves the Euclidean form. It is a rotor, and the space it turns is the space the model declares the block.
 
-**What the check gives.** At $\theta=0.4$ the image of $e_x$ is $(0,\,0.9211,\,-0.3894,\,0)$, and $e_t$ and $e_z$ are fixed. At $\theta=1.2$ the image is $(0,\,0.3624,\,-0.9320,\,0)$. The angle is $\theta$ and not $2\theta$, because the rotation acts on the colour triple, which is a vector of $\mathfrak{so}(3)$ and not a spinor of it.
+**What the check gives.** At $\theta=0.4$ the image of $e_x$ is $(0,\,0.9211,\,-0.3894,\,0)$, and $e_t$ and $e_z$ are fixed. At $\theta=1.2$ the image is $(0,\,0.3624,\,-0.9320,\,0)$. The angle is $\theta$ and not $2\theta$, because the rotation acts on the three spatial lines, which is a vector of $\mathfrak{so}(3)$ and not a spinor of it.
 
 **One caution about the word space.** The three-space turned here is $B_V$, the carrier's vector part. The corpus says in as many words that the physical quartet of the model is a formal copy of the carrier, and that the copy does not inherit the Lorentz action; §*What the Article Does Not Claim* quotes the theorem. So the rotor is a rotor of the carrier's three-space, and identifying that space with laboratory space is a further step that this frame does not take.
 
-## The Three That Turn the Lepton Line into Colour
+## The Three That Turn the Lepton Line into the Spatial Lines
 
-The mixed band of the grid — six cells, three planes, one plane for each colour direction with the lepton line — is where the shape of a boost appears. The appearance is exact and the identification fails, for a reason that is one sign.
+The mixed band of the grid — six cells, three planes, one plane for each adjoint direction with the lepton line — is where the shape of a boost appears. The appearance is exact and the identification fails, for a reason that is one sign.
 
 **The real generator of a mixed plane.** $A_{tx}=E_{tx}-E_{xt}$ is anti-Hermitian, real and traceless, so it is in $\mathfrak{su}(4)$. Its exponential is a rotation of the $t$–$x$ plane:
 $$
@@ -131,7 +131,7 @@ $$
 $$
 with eigenvalues $e^{\eta},e^{-\eta},1,1$. At $\eta=0.75$ the moduli are $0.4724$, $1$, $1$, $2.1170$, and $e^{\pm0.75}=0.4724$, $2.1170$. A real eigenvalue other than one is exactly what a unitary matrix cannot have.
 
-**Why the direction and not the boost is what the model keeps.** The six cells of the mixed band are the six leptoquarks, the only bosons of the frame that carry colour and mix the lepton line, with $B-L=\pm\tfrac43$ and $Q=\pm\tfrac23$. In a Lorentzian reading those are the three boost planes with two generators apiece. The frame keeps the planes and drops the sign of the form, so the bosons are compact rotations of a plane through the lepton line and not boosts. That is a statement about the frame's form, and it is the reason the leptoquarks are massive vector bosons of a compact group rather than connections of a non-compact one.
+**Why the direction and not the boost is what the model keeps.** The six cells of the mixed band are the six leptoquarks, the only bosons of the frame that carry a triplet index and mix the lepton line, with $B-L=\pm\tfrac43$ and $Q=\pm\tfrac23$. In a Lorentzian reading those are the three boost planes with two generators apiece. The frame keeps the planes and drops the sign of the form, so the bosons are compact rotations of a plane through the lepton line and not boosts. That is a statement about the frame's form, and it is the reason the leptoquarks are massive vector bosons of a compact group rather than connections of a non-compact one.
 
 ## Why No Boost Is in the Group: Three Proofs
 
@@ -179,11 +179,11 @@ The same computation in the compact basis gives the rotation of §*The Three Tha
 $$
 \Lambda^{2}(\mathbf1\oplus\mathbf3)=\Lambda^{2}\mathbf3\ \oplus\ (\mathbf1\otimes\mathbf3)=3+3,
 $$
-which is $3$ colour planes and $3$ planes through the lepton line. The dimension count is the grid's count of planes, and it is the reason the article could speak of six planes without choosing a basis.
+which is $3$ spatial planes and $3$ planes through the lepton line. The dimension count is the grid's count of planes, and it is the reason the article could speak of six planes without choosing a basis.
 
 **What that does not buy.** The shape $3+3$ is the shape of the Lorentz algebra, rotations plus boosts, and this is exactly why the leptoquark directions are mistaken for boosts in a hurry. The form on the six-dimensional space is definite, because it is induced by the definite Hermitian form of the carrier. A Lorentzian six would be $\mathfrak{so}(1,5)$; a Lorentzian four inside it would be $\mathfrak{so}(3,1)$, and that is a different real form of a different complex algebra. The shape is a coincidence of dimensions and the signature is what decides.
 
-**The honest statement of the coincidence.** Three planes turn the colour triple and three turn a plane through the lepton line. In the compact form the second three are Euclidean rotations. In a Lorentzian form the second three would be the boosts. The frame is the compact form, so they are rotations, and the word boost names a direction of the grid and not an element of the group.
+**The honest statement of the coincidence.** Three planes turn the three lines and three turn a plane through the lepton line. In the compact form the second three are Euclidean rotations. In a Lorentzian form the second three would be the boosts. The frame is the compact form, so they are rotations, and the word boost names a direction of the grid and not an element of the group.
 
 ## The Six Real Planes, and the Rotors Inside Them
 
@@ -193,15 +193,15 @@ $$
 \mathfrak k_R=\{R_{e_x},R_{e_y},R_{e_z}\},\qquad
 \operatorname{span}(\mathfrak k_L\cup\mathfrak k_R)=\mathfrak{so}(4),
 $$
-six matrices, anti-Hermitian and traceless, independent, spanning the six-dimensional space of real antisymmetric matrices. Every pair commutes across the two triples, $[L_{e_a},R_{e_b}]=0$, so the two triples are two commuting $\mathfrak{su}(2)$'s inside $\mathfrak{so}(4)$. This is $\mathrm{Spin}(4)\to\mathrm{SO}(4)$, and the exponentials are rotors of the carrier's four-space. **One correction of reading, and it is the whole of the model's change**: $\mathfrak{so}(4)$ is a subalgebra **of** $\mathfrak{su}(4)$ and not a pair of factors **beside** it, so no connection of this model is a left or a right rotor. The six arrays are combinations of the fifteen, and the three colours are what the fifteen contain.
+six matrices, anti-Hermitian and traceless, independent, spanning the six-dimensional space of real antisymmetric matrices. Every pair commutes across the two triples, $[L_{e_a},R_{e_b}]=0$, so the two triples are two commuting $\mathfrak{su}(2)$'s inside $\mathfrak{so}(4)$. This is $\mathrm{Spin}(4)\to\mathrm{SO}(4)$, and the exponentials are rotors of the carrier's four-space. **One correction of reading, and it is the whole of the model's change**: $\mathfrak{so}(4)$ is a subalgebra **of** $\mathfrak{su}(4)$ and not a pair of factors **beside** it, so no connection of this model is a left or a right rotor. The six arrays are combinations of the fifteen, and the three lines are what the fifteen contain.
 
 **A single factor is not a spatial rotor.** Take the left rotor $\exp(\theta L_{e_x})$ and apply it to the time direction:
 $$
 \exp(\theta L_{e_x})\,e_t=\cos\theta\,e_t+\sin\theta\,e_x .
 $$
-At $\theta=0.7$ the coefficients are $0.7648$ and $0.6442$, that is $\cos0.7$ and $\sin0.7$. The time direction has moved into a colour direction. A rotor that does this is a rotation of the four-space and not of three-space. The right factor alone does the same to $e_t$; the two differ only on the second plane each of them turns, $\{y,z\}$, where the right factor's angle carries the opposite sign.
+At $\theta=0.7$ the coefficients are $0.7648$ and $0.6442$, that is $\cos0.7$ and $\sin0.7$. The time direction has moved into a adjoint direction. A rotor that does this is a rotation of the four-space and not of three-space. The right factor alone does the same to $e_t$; the two differ only on the second plane each of them turns, $\{y,z\}$, where the right factor's angle carries the opposite sign.
 
-**The spatial rotors are the paired ones.** The two-sided action of the algebra is $X\mapsto uXu^{-1}$, which is left multiplication by $u$ and right multiplication by $u^{-1}$ together. That pairing fixes the time direction and turns the colour triple:
+**The spatial rotors are the paired ones.** The two-sided action of the algebra is $X\mapsto uXu^{-1}$, which is left multiplication by $u$ and right multiplication by $u^{-1}$ together. That pairing fixes the time direction and turns the three lines:
 $$
 u=e^{\theta e_x}:\qquad
 e_t\mapsto e_t,\qquad
@@ -218,11 +218,11 @@ At $\theta=0.5$ the coefficients are $0.5403$ and $0.8415$, that is $\cos1$ and 
 
 | block | count | the exponential is | a rotor of | of spacetime? |
 |---|---|---|---|---|
-| colour planes, real generator | $3$ | a rotation of $B_V$, the lepton line fixed | the carrier's three-space | no, of the carrier |
-| colour planes, imaginary generator | $3$ | a complex rotation, not a real matrix | a plane of the six | no |
+| spatial planes, real generator | $3$ | a rotation of $B_V$, the lepton line fixed | the carrier's three-space | no, of the carrier |
+| spatial planes, imaginary generator | $3$ | a complex rotation, not a real matrix | a plane of the six | no |
 | mixed planes, real generator | $3$ | a rotation of a plane through the lepton line | the carrier's four-space | no |
 | mixed planes, imaginary generator | $3$ | a complex rotation, the boost's partner | a plane of the six | no |
-| diagonal, four cells less the trace | $3$ | a phase on a colour or the lepton line | no real plane | no |
+| diagonal, four cells less the trace | $3$ | a phase on a spatial line or on the lepton line | no real plane | no |
 | boost directions, a second reading of the mixed imaginary cells | — | not in the group: the Hermitian generator, $-i$ times the cell | — | — |
 
 Fifteen entries, and one row that is not a generator. The last row is the article: the boost directions are named by cells of the grid and the boosts themselves are outside the algebra.
@@ -230,17 +230,17 @@ Fifteen entries, and one row that is not a generator. The last row is the articl
 **The four statements the ledger supports.**
 
 - Three of the fifteen turn the carrier's three-space, and no others do.
-- Three more turn the four-space of the quartet, and each carries the lepton line into colour, which is why the leptoquarks are the bosons of that block.
+- Three more turn the four-space of the quartet, and each carries the lepton line into a spatial line, which is why the leptoquarks are the bosons of that block.
 - The nine imaginary generators of $\mathrm{SU}(4)$ turn planes of a six-dimensional space and no real plane of the quartet.
 - No exponential of the fifteen is a Lorentz boost, and the reason is a sign in the form and not a gap in the algebra.
 
 ## What the Article Does Not Claim
 
-**It does not identify the carrier's space with spacetime.** The model's quartet is a formal copy. The proof is in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html), §*The Carrier Is a Copy*: if $\mathrm{SU}(4)$ acted on the same four dimensions as the Lorentz action, it would sit in that action's commutant, and the compact part of the commutant is $\mathfrak{su}(2)$ of dimension three, not fifteen. So a rotor of the carrier's three-space is a rotor of the carrier's three-space, and the identification of that space with laboratory space is a separate claim that this frame refuses.
+**It does not identify the carrier's space with spacetime.** The model's quartet is a formal copy. The proof is in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html), §*The Carrier Is a Copy*: if $\mathrm{SU}(4)$ acted on the same four dimensions as the Lorentz action, it would sit in that action's commutant, and the compact part of the commutant is $\mathfrak{su}(2)$ of dimension three, not fifteen. So a rotor of the carrier's three-space is a rotor of the carrier's three-space, and the identification of that space with laboratory space is a separate claim that this frame refuses.
 
 **It does not claim that the frame derives the Lorentz group.** The Lorentz group is derived in the corpus, as the automorphism group of the algebra's norm on the real slice. It is a different group on a different form, acting on a different module. The frame and the Lorentz group meet in the rotations of a four-dimensional Euclidean space, and that intersection is the theorem of §*The Two Forms on the Carrier*.
 
-**It does not claim that the compact rotations of the model are physical rotations.** The eight gluons do not rotate apparatus. The three real colour generators turn the colour triple, and whether the colour triple is a direction of space is the open identification above. What is claimed is exact and smaller: which exponentials are real matrices, which are not, and which of them preserve which form.
+**It does not claim that the compact rotations of the model are physical rotations.** The eight gluons do not rotate apparatus. The three real eight generators turn the three lines, and whether the three lines is a direction of space is the open identification above. What is claimed is exact and smaller: which exponentials are real matrices, which are not, and which of them preserve which form.
 
 **It does not claim that no boost exists in the corpus.** The corpus has the boosts, in the split directions $K_{\imath}=\tfrac12 i\vec e_{\imath}$, Hermitian, with real rapidity, in [The Six Generators and Their Commutators](the-six-generators-and-their-commutators.html) and [The Two Casimirs of the Lorentz Algebra](the-two-casimirs-of-the-lorentz-algebra.html). What this article adds is that they are not in $\mathfrak{su}(4)$, and that the reason is a trace.
 
@@ -271,15 +271,15 @@ Fifteen recomputations on the coefficient frame, the quartet ordered $(t,x,y,z)$
 
 Exponentiating a generator gives a group element, and a rotor only after a real space and a form are named. For the fifteen generators of the frame the naming has an exact answer.
 
-Three generators turn the carrier's three-space: the real colour planes, which fix the lepton line. Their exponentials are the only rotors of that space among the fifteen.
+Three generators turn the carrier's three-space: the real spatial planes, which fix the lepton line. Their exponentials are the only rotors of that space among the fifteen.
 
-Three turn the four-space of the quartet, each carrying the lepton line into a colour direction: the real generators of the mixed planes, the six leptoquark cells paired into three planes.
+Three turn the four-space of the quartet, each carrying the lepton line into a adjoint direction: the real generators of the mixed planes, the six leptoquark cells paired into three planes.
 
 Nine are not real matrices. They exponentiate to complex matrices that turn planes of the six-dimensional space of $\mathrm{Spin}(6)$ and move the real quartet off itself.
 
 No exponential is a Lorentz boost. A boost preserves the algebra's norm and is not unitary; every element of the group is unitary; $\mathrm{SU}(4)$ and $\mathrm{SO}(4,\mathbb{C})$ meet exactly in $\mathrm{SO}(4)$. Three independent proofs, one sign, and a trace of the square that reads $-2$ against $+2$.
 
-Left and right multiplication are the two triples of rotors of the carrier's four-space, and they span the six real planes of $\mathfrak{so}(4)$ inside the fifteen. Neither triple is a group of spatial rotors; the spatial rotors are the pairs with the right parameter the inverse of the left, and that pairing is what turns the colour triple and fixes the lepton line. **They are a subalgebra and not a factor**: nothing of this model is made local on them, and the weak pair below $M_C$ is an index that this algebra does not carry.
+Left and right multiplication are the two triples of rotors of the carrier's four-space, and they span the six real planes of $\mathfrak{so}(4)$ inside the fifteen. Neither triple is a group of spatial rotors; the spatial rotors are the pairs with the right parameter the inverse of the left, and that pairing is what turns the three lines and fixes the lepton line. **They are a subalgebra and not a factor**: nothing of this model is made local on them, and the weak pair below $M_C$ is an index that this algebra does not carry.
 
 The roots are twelve, not fifteen, they are outside $\mathfrak{su}(4)$, and their exponentials are shears.
 
@@ -288,7 +288,7 @@ The roots are twelve, not fifteen, they are outside $\mathfrak{su}(4)$, and thei
 | symbol | what it is |
 |---|---|
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the base of $\mathbb B$, with $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclically |
-| $B_V$ | the colour triple, $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ |
+| $B_V$ | the three lines, $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ |
 | $E_{jk}$ | the matrix unit of $M_4(\mathbb{C})$ in the order $(t,x,y,z)$ |
 | $A_{jk}=E_{jk}-E_{kj}$ | the real antisymmetric generator of the plane $\{j,k\}$ |
 | $S_{jk}=E_{jk}+E_{kj}$ | the real symmetric partner; $iS_{jk}$ is the cell in the algebra |
@@ -306,4 +306,4 @@ The roots are twelve, not fifteen, they are outside $\mathfrak{su}(4)$, and thei
 - R. Gilmore, *Lie Groups, Lie Algebras, and Some of Their Applications*, Wiley, 1974 — the exponential map, the compact and split real forms, and the inertia that separates them.
 - H. Georgi, *Lie Algebras in Particle Physics*, Benjamin Cummings, 1982 — the physicists' Hermitian generators, the $i$ in the exponential, and the $\mathrm{SU}(n)$ conventions.
 - J. F. Cornwell, *Group Theory in Physics*, Academic Press, 1984 — $\mathrm{SU}(4)$ and its identification with $\mathrm{Spin}(6)$.
-- The corpus: [The Two Casimirs of the Lorentz Algebra](the-two-casimirs-of-the-lorentz-algebra.html) for the two generator conventions and the signs each carries; [The Lorentz Group as Biquaternion Norm Automorphisms](the-lorentz-group-as-biquaternion-norm-automorphisms.html) for the Lorentz group as the automorphism group of the norm; [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the cells and the planes used here; [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html) for the frame, the ladder and the copy theorem. [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the fifteen arrays printed one apiece and separated by algebra, the fifteen of $\mathfrak{su}(4)$ with the six halves beside them.
+- The corpus: [The Two Casimirs of the Lorentz Algebra](the-two-casimirs-of-the-lorentz-algebra.html) for the two generator conventions and the signs each carries; [The Lorentz Group as Biquaternion Norm Automorphisms](the-lorentz-group-as-biquaternion-norm-automorphisms.html) for the Lorentz group as the automorphism group of the norm; [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the cells and the planes used here; [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html) for the frame, the ladder and the copy theorem. [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the fifteen arrays printed one apiece and separated by algebra, the fifteen of $\mathfrak{su}(4)$ with the six halves beside them.

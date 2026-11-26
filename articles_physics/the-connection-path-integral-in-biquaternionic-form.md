@@ -297,7 +297,7 @@ The fixed-representative quadratic action is Gaussian, and its inverse is the pr
 | $P_{\imath\jmath}=\delta_{\imath\jmath}-p_{\imath} p_{\jmath}/N$, $P^2=P$, $\mathrm{tr}P=3$, $P_{\imath\jmath}p_{\jmath}=0$ | Transverse projector (verified) |
 | $L_{\imath\jmath}=p_{\imath} p_{\jmath}/N$, $L^2=L$, $\mathrm{tr}L=1$, $P+L=\delta$, $PL=LP=0$ | Longitudinal projector; carries the parameter |
 | $(D(\zeta)-D(\zeta_2))_{\imath\jmath}j_{\jmath}=0$ for $\sum_{\jmath} p_{\jmath} j_{\jmath}=0$ | Parameter independence for conserved currents (verified) |
-| $a,b,c$ | Adjoint colour and ghost indices, written low; every contraction over them is an explicit sum |
+| $a,b,c$ | Adjoint and ghost indices, written low; every contraction over them is an explicit sum |
 
 ## Further Reading
 

@@ -63,7 +63,7 @@ $$
 
 **3.4 What the bound is not.** It is not a measurement of $M_C$, and it is not a prediction. It is a floor, it can be evaded by generation-dependent couplings, and the corpus says the evasion would be a modification of the frame rather than of the chain.
 
-**3.5 The stronger bound that may or may not apply.** If the scalar sector contains a colour triplet coupling to two quarks, a diquark, then proton decay bounds that scalar at $M_\Sigma\gtrsim1.60\times10^{5}$ J — about ten orders above the leptoquark bound. The minimal content has no such scalar, so in the minimal content the weaker bound stands alone.
+**3.5 The stronger bound that may or may not apply.** If the scalar sector contains a triplet coupling to two quarks, a diquark, then proton decay bounds that scalar at $M_\Sigma\gtrsim1.60\times10^{5}$ J — about ten orders above the leptoquark bound. The minimal content has no such scalar, so in the minimal content the weaker bound stands alone.
 
 ## Why There Is One Transition and Not Two
 
@@ -71,7 +71,7 @@ $$
 
 **5.1 The rank-one vacuum.** $Ξ$'s vacuum is a line in the carrier, and the model breaks once, at one scale. Above $M_C$ there is one factor, $\mathrm{SU}(4)$, of rank three and dimension fifteen; below it there are two, $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$, of dimension twelve and the same rank.
 
-**5.2 The consequence for counting.** One threshold, two groups: $\mathrm{SU}(4)$ above, colour times $B-L$ below. The massless vectors read $15\to9$: fifteen above the transition, before the vacuum forms; nine below, the kernel of $\operatorname{ad}(iD)$. **The arrow is $15-6$**: six of the fifteen become heavy at $32v_C^{2}$, and no vector arrives.
+**5.2 The consequence for counting.** One threshold, two groups: $\mathrm{SU}(4)$ above, the spatial block times $B-L$ below. The massless vectors read $15\to9$: fifteen above the transition, before the vacuum forms; nine below, the kernel of $\operatorname{ad}(iD)$. **The arrow is $15-6$**: six of the fifteen become heavy at $32v_C^{2}$, and no vector arrives.
 
 **5.3 The consequence for the bounds.** The bound on $M_C$ is a bound on $M_X$, and the minimal content has no second heavy vector to bound.
 
@@ -141,7 +141,7 @@ $$
 
 | symbol | meaning |
 |---|---|
-| $M_C$, $M_W$ | the colour and electroweak scales |
+| $M_C$, $M_W$ | the strong and electroweak scales |
 | $v$, $v_C$ | the electroweak and the $\mathrm{SU}(4)$-breaking vacuum values |
 | $M_X$ | the leptoquark mass, at $M_C$ |
 | $g_4$, $g_3$, $g_{B-L}$ | the primordial coupling and the two it becomes at $M_C$ |

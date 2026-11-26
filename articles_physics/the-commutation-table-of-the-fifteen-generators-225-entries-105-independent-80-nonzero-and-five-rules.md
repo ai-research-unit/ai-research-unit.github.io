@@ -25,7 +25,7 @@ No other convention enters, and no generator is rescaled.
 | real planes | $6$ | $A_{jk}$, one for each of the six pairs of indices |
 | imaginary planes | $6$ | $iS_{jk}$, the same six pairs |
 | trace direction | $1$ | $iD=i\operatorname{diag}(-3,1,1,1)=i\sum_jM_j$, printed as the third diagonal |
-| colour diagonals | $2$ | $d_2=i\operatorname{diag}(0,1,-1,0)=\tfrac i2(M_x-M_y)$, $d_3=\tfrac i2(M_y-M_z)$ |
+| spatial diagonals | $2$ | $d_2=i\operatorname{diag}(0,1,-1,0)=\tfrac i2(M_x-M_y)$, $d_3=\tfrac i2(M_y-M_z)$ |
 **The four blocks hold twelve planes and three diagonals, and nothing else.** **The six arrays $T^{L}_{a}$, $T^{R}_{a}$ are not rows of this table.** Each is half a sum or difference of two planes, so its brackets are the brackets of Part I, and §*The Six Arrays Outside the Table* says why they are printed elsewhere.
 
 **The three diagonals are one family.** They are the diagonal generators of $\mathfrak{su}(4)$, and their eigenvalues are all that a bracket with a diagonal reads.
@@ -52,7 +52,7 @@ $$
 \qquad
 \bigl[iM_j,iS_{kl}\bigr]=-\bigl(\lambda^{(j)}_k-\lambda^{(j)}_l\bigr)\,A_{kl},
 $$
-**and the bracket of two diagonals vanishes.** The differences take the values $0$, $\pm1$ and $\pm2$, so **the diagonal rows of the table are integer and single-array in the frame**, where the printed colour-adapted basis produces halves and thirds; the trace direction is the sum and its differences take $\pm4$ on the mixed planes and $0$ on the colour ones, which is the same statement as the corner meeting twelve brackets at spacing $4$. Verified on all $48$ diagonal-plane brackets, exact, no disagreement; the $66$ plane-plane brackets are untouched by the change of diagonal basis.
+**and the bracket of two diagonals vanishes.** The differences take the values $0$, $\pm1$ and $\pm2$, so **the diagonal rows of the table are integer and single-array in the frame**, where the printed block-adapted basis produces halves and thirds; the trace direction is the sum and its differences take $\pm4$ on the mixed planes and $0$ on the spatial ones, which is the same statement as the corner meeting twelve brackets at spacing $4$. Verified on all $48$ diagonal-plane brackets, exact, no disagreement; the $66$ plane-plane brackets are untouched by the change of diagonal basis.
 
 **Only one order is printed.** Since $[Y,X]=-[X,Y]$, the $210$ off-diagonal brackets are $105$ brackets and their negatives, and every table below lists a pair once, with the two arrays in the order of the block list above. The fifteen self-brackets are not printed at all: they are zero by antisymmetry, and they are counted in §*The Forty Zeros*.
 
@@ -98,7 +98,7 @@ $$
 \qquad
 [iS_{jk},i\Lambda]=-(\lambda_{k}-\lambda_{j})\,A_{jk}.
 $$
-**One rule, three diagonals, and the coefficients $4$, $2$ and $1$ are eigenvalue spacings.** The corner has spacing $4$ through $t$ and spacing $0$ inside colour, which is why it meets three planes and not six. The colour diagonals have spacings $1$ and $2$, and each meets five planes of the six.
+**One rule, three diagonals, and the coefficients $4$, $2$ and $1$ are eigenvalue spacings.** The corner has spacing $4$ through $t$ and spacing $0$ inside the block, which is why it meets three planes and not six. The spatial diagonals have spacings $1$ and $2$, and each meets five planes of the six.
 
 **There is no sixth rule, and that is a result.** A bracket with one of the six $\mathfrak{so}(4)$ arrays is the average of two plane brackets, because each of them is half a sum or difference of two planes. **A sixth rule would be Rules 1 to 5 applied twice**, and §*The Six Arrays Outside the Table* does exactly that once, for the record.
 
@@ -194,13 +194,13 @@ $$
 | $\{x,z\}$ | $2\,d_{2} + 2\,d_{3}$ |
 | $\{y,z\}$ | $2\,d_{3}$ |
 
-**The corner enters the three $\{t,k\}$ pairs with one coefficient, $-\tfrac23$, and never a colour pair.** The reason is visible in Rule 5: the corner has a single distinguished eigenvalue, at $t$, so it separates $t$ from everything and separates nothing inside colour. **The colour pairs give pure colour diagonals, and their coefficients $2$ are the spacings of $d_2$ and $d_3$.**
+**The corner enters the three $\{t,k\}$ pairs with one coefficient, $-\tfrac23$, and never a pair of indices.** The reason is visible in Rule 5: the corner has a single distinguished eigenvalue, at $t$, so it separates $t$ from everything and separates nothing inside the block. **The pairs of indices give pure spatial diagonals, and their coefficients $2$ are the spacings of $d_2$ and $d_3$.**
 
 ## Part IV. A Plane and a Diagonal
 
 ### The Corner
 
-**Six arrays meet the corner: the three planes through $t$ and their three imaginary partners.** The three colour planes and both colour diagonals never do. **The six $\mathfrak{so}(4)$ arrays meet it too, and each bracket is the average of two of the six rows below** — no new coefficient, which is why they need no table of their own.
+**Six arrays meet the corner: the three planes through $t$ and their three imaginary partners.** The three spatial planes and both spatial diagonals never do. **The six $\mathfrak{so}(4)$ arrays meet it too, and each bracket is the average of two of the six rows below** — no new coefficient, which is why they need no table of their own.
 
 | $X$ | $iD$ | $[X,iD]$ |
 | --- | --- | --- |
@@ -213,9 +213,9 @@ $$
 
 **The coefficient $4$ is the eigenvalue spacing from $-3$ to $1$.** No other bracket of the table has it, so the corner can be recognized in a bracket by its coefficient alone.
 
-### The Two Colour Diagonals
+### The Two Spatial Diagonals
 
-**Each colour diagonal meets five planes of its type and misses one.** $d_2$ misses $A_{tz}$ and $iS_{tz}$, because $t$ and $z$ are its two fixed lines. $d_3$ misses $A_{tx}$ and $iS_{tx}$, for the same reason with $x$ in place of $z$.
+**Each spatial diagonal meets five planes of its type and misses one.** $d_2$ misses $A_{tz}$ and $iS_{tz}$, because $t$ and $z$ are its two fixed lines. $d_3$ misses $A_{tx}$ and $iS_{tx}$, for the same reason with $x$ in place of $z$.
 
 | $X$ | $d_2$ | $[X,d_2]$ |
 | --- | --- | --- |
@@ -290,8 +290,8 @@ $$
 | two real planes with no common index | $3$ | disjoint entries, Rule 1 |
 | two imaginary planes with no common index | $3$ | disjoint entries, Rule 2 |
 | a real and an imaginary plane with no common index | $6$ | disjoint entries, Rule 3 |
-| a plane inside a fixed line of a colour diagonal | $4$ | the spacing is $0$, Rule 5 |
-| a colour plane with the corner | $6$ | the corner has no spacing inside colour, Rule 5 |
+| a plane inside a fixed line of a spatial diagonal | $4$ | the spacing is $0$, Rule 5 |
+| a spatial plane with the corner | $6$ | the corner has no spacing inside the block, Rule 5 |
 | the three diagonals with each other | $3$ | the Cartan is abelian |
 
 **No zero is an accident, and the list has seven lines and one row that says why.** $15+3+3+6+4+6+3=40$. **A reader who knows the eigenvalues of the three diagonals predicts all twenty-five off-diagonal zeros without computing a single matrix.**
@@ -302,7 +302,7 @@ $$
 
 **The twelve plane arrays are closed except on six pairs, and the six are exactly the pairs that generate the Cartan.** Any reading in which the diagonal directions are extra data is contradicted here: they are produced by $[A_{jk},iS_{jk}]$ and by nothing else among the planes.
 
-**The corner meets six brackets as a factor and appears in three as an answer.** It meets the three $\{t,k\}$ planes and their three imaginary partners, and it comes back from those three equal-plane brackets. **The three colour planes and the two colour diagonals never see it at all**, which is the algebraic content of the phrase that the corner is the lepton-line direction.
+**The corner meets six brackets as a factor and appears in three as an answer.** It meets the three $\{t,k\}$ planes and their three imaginary partners, and it comes back from those three equal-plane brackets. **The three spatial planes and the two spatial diagonals never see it at all**, which is the algebraic content of the phrase that the corner is the lepton-line direction.
 
 **The six real planes are a subalgebra of rank two, and it is not a factor.** $\operatorname{span}\{A_{ab}\}=\mathfrak{so}(4)$: six dimensions, closed, abelian when written as $\mathfrak{k}_L\oplus\mathfrak{k}_R$ — **and still a subspace of the fifteen.** That distinction is this article's one warning: **closure and commutativity are algebraic facts, and being a group factor is not.**
 
@@ -355,11 +355,11 @@ $$
 | $A_{jk}=E_{jk}-E_{kj}$ | the real antisymmetric array of the plane $\{j,k\}$ |
 | $S_{jk}=E_{jk}+E_{kj}$ | the real symmetric partner; $iS_{jk}$ is the algebra element |
 | $iD$ | the corner, $i\operatorname{diag}(-3,1,1,1)$ |
-| $d_2$, $d_3$ | the colour diagonals, $i\operatorname{diag}(0,1,-1,0)$ and $i\operatorname{diag}(0,0,1,-1)$ |
+| $d_2$, $d_3$ | the spatial diagonals, $i\operatorname{diag}(0,1,-1,0)$ and $i\operatorname{diag}(0,0,1,-1)$ |
 | $T^{L}_{a}$, $T^{R}_{a}$ | the six $\mathfrak{so}(4)$ arrays, $-\tfrac12(A_{ta}\pm A_{bc})$, $(a,b,c)$ cyclic; not generators |
 | $[X,Y]$ | $XY-YX$, the commutator of the matrices |
 | $\lambda_{j}$ | the eigenvalue of the diagonal $i\Lambda$ at the index $j$ |
-| $\epsilon_{abc}$ | the Levi-Civita symbol of the three colour labels |
+| $\epsilon_{abc}$ | the Levi-Civita symbol of the three cell labels |
 | complementary planes | two planes of $\{t,x,y,z\}$ with no common index |
 
 ## Further Reading

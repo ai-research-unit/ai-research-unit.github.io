@@ -202,7 +202,7 @@ The three cases can now be stated in one place.
 - **Loss** (companion: confinement). The fibre of the physical map is non-trivial and its elements are distinct partonic configurations that the asymptotic algebra cannot see; no choice of representative recovers them, and no record survives. This is genuine erasure with a non-trivial kernel.
 - **Relocation** (this article). The fibre is an orbit — hence carries no physical information — but the mechanism's action on it produces a physical record, the mass, and the count of degrees of freedom is conserved. Nothing physical is erased, and something physical is recorded.
 
-The test that separates relocation from loss is whether the erasure leaves an invariant record. The Higgs mechanism does: the mass $M_A$ and the scalar mass $m_h$ are the record. Confinement does not: the colour of an individual parton leaves no asymptotic record at all. And the test that separates relocation from mere redundancy is whether the erasure has any physical consequence: the orbit alone has none, while the Higgs mechanism's exploitation of it gives the connection a mass.
+The test that separates relocation from loss is whether the erasure leaves an invariant record. The Higgs mechanism does: the mass $M_A$ and the scalar mass $m_h$ are the record. Confinement does not: the triplet index of an individual parton leaves no asymptotic record at all. And the test that separates relocation from mere redundancy is whether the erasure has any physical consequence: the orbit alone has none, while the Higgs mechanism's exploitation of it gives the connection a mass.
 
 ## The Vacuum as a Stable Record
 

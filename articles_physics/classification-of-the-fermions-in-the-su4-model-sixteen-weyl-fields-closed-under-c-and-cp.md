@@ -60,7 +60,7 @@ $$
 
 **Three remarks about the pairing.**
 
-- **The two copies carry the same $B-L$ and the same colour.** That is the definition of an index: $\imath=1,2$ is a label the group does not see, so it cannot change an eigenvalue. **The splitting of the two copies happens below $M_C$**, and it is where the up/down and the neutrino/electron distinction is made.
+- **The two copies carry the same $B-L$ and the same triplet index.** That is the definition of an index: $\imath=1,2$ is a label the group does not see, so it cannot change an eigenvalue. **The splitting of the two copies happens below $M_C$**, and it is where the up/down and the neutrino/electron distinction is made.
 - **A massive fermion needs both halves.** $\mathbf4$ and $\bar{\mathbf4}$ are one Dirac field read twice; the electron is the pair, not either row alone. **So a count of fields is sixteen and a count of particles is fewer.**
 - **Three generations multiply the table by three**: forty-eight Weyl fields and ninety-six states. **The number of generations is not fixed by the grid.**
 
@@ -68,7 +68,7 @@ $$
 
 **One statement, made once, because the model's tables cannot carry it.**
 
-**The model fixes $B-L$ and it does not fix $Q$.** $B-L$ is a generator of the algebra, so every entry of every quartet has a definite value of it. **$Q$ is not a generator of $\mathrm{SU}(4)$, and no combination of the fifteen is the electric charge of a fermion**, because the two copies of a quartet carry the same $B-L$ and the same colour and differ in nothing the group acts on.
+**The model fixes $B-L$ and it does not fix $Q$.** $B-L$ is a generator of the algebra, so every entry of every quartet has a definite value of it. **$Q$ is not a generator of $\mathrm{SU}(4)$, and no combination of the fifteen is the electric charge of a fermion**, because the two copies of a quartet carry the same $B-L$ and the same triplet index and differ in nothing the group acts on.
 
 **What supplies the difference.** A weak factor: a local $\mathrm{SU}(2)$ acting on the copy index, with $T_3=\pm\tfrac12$, gives
 
@@ -76,7 +76,7 @@ $$
 Q=T_3+\tfrac12\bigl(B-L\bigr),
 $$
 
-and the familiar charges come back — $0$ and $-1$ on the lepton line, $+\tfrac23$ and $-\tfrac13$ on each colour line. **That equation belongs below $M_C$ and not here**: it is written where the weak factor is born as a side effect, and it is not used in this article's tables.
+and the familiar charges come back — $0$ and $-1$ on the lepton line, $+\tfrac23$ and $-\tfrac13$ on each spatial line. **That equation belongs below $M_C$ and not here**: it is written where the weak factor is born as a side effect, and it is not used in this article's tables.
 
 **Why the distinction is worth a section.** A table of $Q$ values in an $\mathrm{SU}(4)$-only article would be a table of charges that this model does not carry. **The honest column is the one above, and its fourth entry reads "not fixed".**
 
@@ -116,7 +116,7 @@ $$
 | states per generation | $32$ | each Weyl field has two helicities |
 | fields with $B-L=-1$ | $4$ | $\nu_{1},\nu_{2},e_{1},e_{2}$ |
 | fields with $B-L=+1$ | $4$ | the four conjugates |
-| fields with $B-L=+\tfrac13$ | $6$ | $u,d$ in three colours, two copies |
+| fields with $B-L=+\tfrac13$ | $6$ | $u,d$ in three lines, two copies |
 | fields with $B-L=-\tfrac13$ | $6$ | their conjugates |
 | the sum of $B-L$ over the sixteen | $4(-1)+4(+1)+6(\tfrac13)+6(-\tfrac13)$ | $0$ |
 
@@ -132,9 +132,9 @@ $$
 
 **It does not add a field.** The sixteen are closed, so $C$ permutes them; there is no second sixteen and no missing partner.
 
-**It does not reverse the colour.** The quartet and the antiquartet both carry the three colour labels, with opposite $B-L$. The colour of $\bar u$ is $\bar{\mathbf3}$ as a representation, and its *label* is still one of the three. **A reader who expects $C$ to exchange $r$ with $\bar r$ has conflated the label with the representation.**
+**It does not reverse the triplet index.** The quartet and the antiquartet both carry the three cell labels, with opposite $B-L$. The representation of $\bar u$ is $\bar{\mathbf3}$, and its *label* is still one of the three. **A reader who expects $C$ to exchange $r$ with $\bar r$ has conflated the label with the representation.**
 
-**It does not give the mass.** $C$ is a symmetry of the content and not a mass term: a mass needs a scalar that converts $\mathbf4$ into $\bar{\mathbf4}$, which exists — the fourth-colour scalar $Ξ$ — and whose vacuum is what breaks the group. **The Yukawa sector is [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html)**, and it is downstream of this count.
+**It does not give the mass.** $C$ is a symmetry of the content and not a mass term: a mass needs a scalar that converts $\mathbf4$ into $\bar{\mathbf4}$, which exists — the fourth-line scalar $Ξ$ — and whose vacuum is what breaks the group. **The Yukawa sector is [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html)**, and it is downstream of this count.
 
 ## The Checks
 
@@ -150,13 +150,13 @@ $$
 | the conjugate trace | $-(-3+1+1+1)$ | $0$ |
 | $CP$ | $C$ closed, $P$ a space operation | closed |
 | the sum of squares, as a control | $4^{2}+2^{2}+2^{2}$ | $24$, wrong operation |
-| $Q$ from the algebra alone | any combination of the fifteen | impossible: same $B-L$, same colour |
+| $Q$ from the algebra alone | any combination of the fifteen | impossible: same $B-L$, same triplet index |
 
 ## Distinctions That Are Easy to Lose
 
 An index is not a factor. The copy index $\imath=1,2$ is invisible to the group; a local doublet is not.
 
-A label is not a representation. The three colour labels are the same on both sides of the conjugate pair; the representation is $\mathbf3$ on one side and $\bar{\mathbf3}$ on the other.
+A label is not a representation. The three cell labels are the same on both sides of the conjugate pair; the representation is $\mathbf3$ on one side and $\bar{\mathbf3}$ on the other.
 
 $B-L$ is not $Q$. The model fixes the first, and the second needs the weak factor.
 
@@ -186,7 +186,7 @@ Closed under $C$ is not the same as closed under $CP$. **This model has both, be
 ## Further Reading
 
 - [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The cell picture the fermion labels use.
-- [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The declaration, the group, and the fermion content stated as a principle.
+- [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The declaration, the group, and the fermion content stated as a principle.
 - [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). The masses of these states.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Where $T_3$ comes from.
-- [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). Why the lepton line is minus the colour trace.
+- [Charge Quantisation from the Fourth Line](charge-quantisation-from-the-fourth-line-one-trace-one-third.html). Why the lepton line is minus the trace over the triplet index.

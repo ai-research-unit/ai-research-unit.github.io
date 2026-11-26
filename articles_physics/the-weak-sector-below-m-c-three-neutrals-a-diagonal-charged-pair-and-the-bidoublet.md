@@ -26,8 +26,8 @@ weak sector is seven real vector fields, and six of them arrive**: the doublet i
 model's own fifteenth Cartan, which was there all along. **None of the six is a generator of the model; $B'$ is.**
 
 **Three neutral, and why exactly three.** Neutral connections are those with $Q=0$: $W^3_L$, $W^3_R$, and the $\mathrm{SU}(4)$ Cartan direction that
-survives the first breaking. The other two $\mathrm{SU}(4)$ Cartans, $T^{c}_{3}$ and $T^{c}_{8}$, are neutral but are colour and never mix with anything,
-because colour is unbroken. So the mixing sector is exactly three fields:
+survives the first breaking. The other two $\mathrm{SU}(4)$ Cartans, $T^{c}_{3}$ and $T^{c}_{8}$, are neutral but belong to the spatial block and never mix with anything,
+because the strong group is unbroken. So the mixing sector is exactly three fields:
 
 $$
 \{W^3_L,\ W^3_R,\ B'\},\qquad B'\equiv A^{15}.
@@ -240,8 +240,8 @@ bidoublet; the corpus's content has none.
 
 **A second bidoublet changes nothing about that conclusion.** It adds more angles of the same excluded kind.
 
-**A $(\mathbf{15},\mathbf2,\mathbf2)$ bidoublet is a different model again.** Its components include colour octets, and a vacuum expectation value in them
-breaks colour directly; then the colour block is no longer zero and the model's two-block split is lost.
+**A $(\mathbf{15},\mathbf2,\mathbf2)$ bidoublet is a different model again.** Its components include octets, and a vacuum expectation value in them
+breaks the strong group directly; then the spatial block is no longer zero and the model's two-block split is lost.
 
 ## What the Article Does Not Do
 
@@ -306,7 +306,7 @@ what the doublet index supplies plus $B'$, counted from $M_C$ down.
 | $W^3_L$, $W^3_R$ | the two neutral weak redundant directions |
 | $W^{\pm}_{L}$, $W^{\pm}_{R}$ | the charged connections of the two weak factors |
 | $B'$ | the fifteenth $\mathrm{SU}(4)$ Cartan, the corner cell of the grid |
-| $T^{c}_{3}$, $T^{c}_{8}$ | the two colour Cartans, removed by the first breaking |
+| $T^{c}_{3}$, $T^{c}_{8}$ | the two $\mathfrak{su}(3)$ Cartans, removed by the first breaking |
 | $T^{15}$ | the corner generator, normalised by $\operatorname{tr}(T^{15})^{2}=\tfrac12$ |
 | $B-L$ | $\sqrt{8/3}\,T^{15}$, the charge of the corner |
 | $a_1$, $a_2$ | the two neutral vacuum vectors in $\mathbb{R}^3$, both of length $\sqrt{5/8}$ |

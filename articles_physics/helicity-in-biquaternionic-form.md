@@ -278,7 +278,7 @@ In the algebra the mass is the off-diagonal pair that exchanges the two chiral p
 - **The removal of the redundancy.** The deletion of the zero value of a massless vector field is a property of the orbit and not of the spectrum.
 - **The doubling.** Whether both helicities are present is a property of the field.
 - **The choice of carrier.** Which particle uses which carrier — the electron the fundamental module, the photon the adjoint — is physics and not algebra.
-- **The amplitude calculus.** The Parke–Taylor formula, the colour structure and the momentum-conservation constraints are transcribed, not derived.
+- **The amplitude calculus.** The Parke–Taylor formula, the group structure and the momentum-conservation constraints are transcribed, not derived.
 - **A massive spinor-helicity extension.** The two-term bispinor and its $SU(2)$ little group are not developed.
 
 ## Summary

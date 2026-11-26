@@ -193,7 +193,7 @@ That density is itself a total derivative, $\sum_{\imath,\jmath,a}F_{\imath\jmat
 
 **The Peccei–Quinn symmetry is the algebra's centre.** The one exact global $\mathrm{U}(1)$ that the classical biquaternion algebra contains is the group of central phases, and the Peccei–Quinn symmetry is precisely a global $\mathrm{U}(1)$ of scalar phases. The framework therefore does not have to adjoin the symmetry; it has it, and the reason it cannot be broken by any algebra-built term is that the centre commutes with everything. This is the framework's contribution to the mechanism, and it is exact.
 
-**The axion is a central phase.** The axion field is the angular part of the central scalar, $a = f_a\arg\xi$, and its kinetic term is the central scalar's kinetic term with the radial mode frozen at its expectation value. The axion is therefore a **central**, and hence singlet, field: it carries no isospin, no colour and no electric charge, which is the correct Standard Model assignment for the QCD axion at the level of the algebra. The material-sector and informational-sector contents are untouched. This is the same central singlet that the Higgs and Goldstone articles use, read in its angular mode.
+**The axion is a central phase.** The axion field is the angular part of the central scalar, $a = f_a\arg\xi$, and its kinetic term is the central scalar's kinetic term with the radial mode frozen at its expectation value. The axion is therefore a **central**, and hence singlet, field: it carries no isospin, no triplet index and no electric charge, which is the correct Standard Model assignment for the QCD axion at the level of the algebra. The material-sector and informational-sector contents are untouched. This is the same central singlet that the Higgs and Goldstone articles use, read in its angular mode.
 
 **The anomaly is the boundary.** The axion's mass, its CP-restoring minimum and its couplings all come from the coupling $\frac{a}{f_a}FF_{\mathrm{dual}}$, which requires the QCD field strength, its dual, and the fermionic measure that makes the axial rotation anomalous. The dual field strength and the chiral measure belong to the general-connection and spinor sectors; the framework's centre is not anomalously coupled by itself, and the companion articles on chiral fermions and on the theta parameter record where the anomaly sits. The framework therefore supplies the field and the symmetry, and the anomaly that lifts the field is imported. This is the same boundary the pion article draws for the axial current, seen from the scalar side.
 
@@ -251,7 +251,7 @@ The framework's contribution is the exact global phase symmetry of the centre, t
 | $\tilde{Ξ} = \frac{\rho}{\sqrt2}\exp(i\theta_{\mathrm{axn}})e_t$ | Central scalar; axion is its angular mode |
 | $\xi = \tfrac{\rho}{\sqrt2}\exp(i\theta_{\mathrm{axn}})$ | Complex central component; $a/f_a$ is its Peccei–Quinn phase |
 | $a$ | Axion field (pseudo-Goldstone phase) |
-| $a,b,c$ | colour indices of the connection, written low; each contraction is an explicit sum. The axion field also uses the letter $a$. |
+| $a,b,c$ | indices of the connection, written low; each contraction is an explicit sum. The axion field also uses the letter $a$. |
 | $v_0 = \vert\langle\xi\rangle\vert$, $f_a = \sqrt2\,v_0$ | Scalar vacuum value; its relation to the decay constant |
 | $f_a$ | Peccei–Quinn / axion decay constant |
 | $\bar\theta = \theta_{\mathrm{vac}}+\arg\det M_q$ | Physical CP-violating parameter (companion article) |

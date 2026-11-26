@@ -66,7 +66,7 @@ so the density is the same at every representative. **The cyclicity is the whole
 
 | the twelve planes, $A_{\imath\jmath}$ and $iS_{\imath\jmath}$ | $12$ | $2$ | $-2$ |
 
-| the colour diagonals, before the rotation | $2$ | $2$ | $-2$ |
+| the spatial diagonals, before the rotation | $2$ | $2$ | $-2$ |
 
 | the corner $iD$ | $1$ | $12$ | $-12$ |
 
@@ -74,7 +74,7 @@ so the density is the same at every representative. **The cyclicity is the whole
 **So a single normalisation constant cannot serve**, and the normalisation is $t_{a}=iG_{a}/\sqrt{2n_{a}}$ with $n_{a}$ the array's own norm: $t_{a}=iG_{a}/2$ on the fourteen of norm $2$, and $t_{15}=iG_{15}/\sqrt{24}$ on the corner. **The factor six is the reason a vertex read off $G_{a}$ instead of $t_{a}$ is wrong by $\sqrt{6}$ on the corner and by $1$ on the planes**, which is a mismatch no overall rescaling repairs.
 
 
-**The condition $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ is then a condition on the basis and not only on the normalisation.** A norm fixes an array's length and not its angle, so two arrays can still fail to be transverse: on the set built from the printed rows, exactly two pairs fail, and both pair the corner with a colour diagonal. **The rotation of the two colour diagonals into an orthogonal pair is what removes them**, and that rotation is part of the block's normalisation rather than a convenience.
+**The condition $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ is then a condition on the basis and not only on the normalisation.** A norm fixes an array's length and not its angle, so two arrays can still fail to be transverse: on the set built from the printed rows, exactly two pairs fail, and both pair the corner with a spatial diagonal. **The rotation of the two spatial diagonals into an orthogonal pair is what removes them**, and that rotation is part of the block's normalisation rather than a convenience.
 
 
 **With sixteen such generators the density identity is one line.**
@@ -289,7 +289,7 @@ $$
 **The fermion determinant does not drop out, and the reason is the operator the block exists to have.**
 
 
-**With the Yukawa $\mathcal{L}_{\mathrm{Yuk}}=y_{\alpha\beta}\bar\xi^{\alpha}\Xi\xi^{\beta}$ and the identity background, each of the sixteen Weyl fields acquires a mass**, and the $2\times2$ matrix $y_{\alpha\beta}$ gives two eigenvalues $y_{1}$, $y_{2}$, each carried by four colour copies:
+**With the Yukawa $\mathcal{L}_{\mathrm{Yuk}}=y_{\alpha\beta}\bar\xi^{\alpha}\Xi\xi^{\beta}$ and the identity background, each of the sixteen Weyl fields acquires a mass**, and the $2\times2$ matrix $y_{\alpha\beta}$ gives two eigenvalues $y_{1}$, $y_{2}$, each carried by four copies:
 
 
 $$
@@ -318,7 +318,7 @@ V_{1}^{f}=-\frac{4}{64\pi^{2}}\sum_{i=1}^{2}4\,m_{i}^{4}\ln\frac{m_{i}^{2}}{\mu^
 $$
 
 
-**the $4$ inside from the Dirac trace and the $4$ outside from the colour copies, and the two $4$'s and the $16$ in $m^{4}$ leaving one.** With $y_{1}=y_{2}=y$ the coefficient is $-\dfrac{y^{4}}{32\pi^{2}}$.
+**the $4$ inside from the Dirac trace and the $4$ outside from the copies, and the two $4$'s and the $16$ in $m^{4}$ leaving one.** With $y_{1}=y_{2}=y$ the coefficient is $-\dfrac{y^{4}}{32\pi^{2}}$.
 
 
 **The total coefficient is the difference of the two, and the sign is not settled by the scalar sector.**

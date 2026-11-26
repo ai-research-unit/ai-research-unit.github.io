@@ -267,7 +267,7 @@ gives an equation with no time derivative of $\mathcal{A}_{0}$: it constrains th
 
 **The consequence for quantisation.** A non-linear first-class constraint is why the non-abelian theory is not quantised by imposing the constraint on a Fock space built from free fields. The route is the path integral over the orbit, with the constraint's gauge-fixing and its field-dependent determinant. [The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form](the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html) carries that construction, and the field dependence of the determinant there is exactly the non-linearity found here.
 
-## The Noether Currents: The Colour Current and Its Own Source
+## The Noether Currents: The Adjoint Current and Its Own Source
 
 **The current.** The density is invariant under the *global* $\mathrm{SU}(2)$, so Noether's theorem gives a conserved current. In the component setting, with the coupling real,
 

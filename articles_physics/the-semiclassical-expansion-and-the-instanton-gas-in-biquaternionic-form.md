@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This article is the strong sector's account of the semiclassical expansion, and it carries the general machinery.** Steepest descent, the collective-coordinate measure, the theta vacuum, the dilute gas and the one-loop prefactor are developed here rather than cited elsewhere. What the sector supplies is the content: the configurations are those of the colour connection theory, the theta angle produced by the sum is the strong CP parameter, and the gaps recorded are the framework's.
+**This article is the strong sector's account of the semiclassical expansion, and it carries the general machinery.** Steepest descent, the collective-coordinate measure, the theta vacuum, the dilute gas and the one-loop prefactor are developed here rather than cited elsewhere. What the sector supplies is the content: the configurations are those of the strong connection theory, the theta angle produced by the sum is the strong CP parameter, and the gaps recorded are the framework's.
 
 *The ADHM Construction and Biquaternion Instanton Data* parametrised the self-dual connections of the Euclidean theory, and *The Index Theorem and the Zero-Mode Count in Biquaternionic Form* counted the fermion modes they support. This article turns the instanton from a solution of a field equation into a contribution to a physical quantity. It develops the **semiclassical expansion** of the Euclidean path integral around instantons and collects those contributions into the **instanton gas**, the dilute-medium picture in which the theta dependence of the vacuum and the vacuum energy are computed.
 

@@ -79,7 +79,7 @@ with $C_{A}=N=4$ for $\mathrm{SU}(4)$, $T_{R}=\tfrac12$ for a fundamental fermio
 
 **Why the fermion count is eight and not sixteen.** A Weyl field contributes half a Dirac field's screening, and the sixteen Weyl fields are eight Dirac fields once the copies are paired. **The pairing is exact above $M_C$**, because the content is vector-like there and a Dirac field is what a pair of conjugate Weyl fields is. The count is explicit: the content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, so the two quartets and the two antiquartets pair as $2\times(\mathbf4+\bar{\mathbf4})=8$, each Dirac field being one $\mathbf4$ Weyl field and one $\bar{\mathbf4}$ Weyl field. **Below $M_C$ the count changes** and the same sixteen fields are counted with the Standard Model's hypercharges; that running is the coupling article's and not this one's.
 
-**Why the scalar term is two thirds.** The scalar is $\mathbf{15}\oplus\mathbf1$ in the colour indices, so its Dynkin index is that of the adjoint, $T_{S}=C_{A}=4$, plus the singlet's zero:
+**Why the scalar term is two thirds.** The scalar is $\mathbf{15}\oplus\mathbf1$ in the indices, so its Dynkin index is that of the adjoint, $T_{S}=C_{A}=4$, plus the singlet's zero:
 
 $$
 \tfrac16 T_{S}n_{s}=\tfrac16\times\bigl(\underbrace{4}_{\mathbf{15}}+\underbrace{0}_{\mathbf1}\bigr)=\tfrac{2}{3} .
@@ -87,7 +87,7 @@ $$
 
 **The weight is one sixth and not one third because the field is real.** $Ξ$ is Hermitian, so its sixteen components are sixteen real fields and not eight complex ones; a complex multiplet would enter at $-\tfrac13T_S$ per unit of Dynkin index, which is twice the screening of a real one. **The formula's $n_s$ counts real scalars for exactly that reason**, and [The Heavy Sector Below Its Threshold](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html) states the coefficient in precisely this form, with $n_s$ the number of real scalars.
 
-**There is no second index to multiply by.** $Ξ$ is a Hermitian matrix with a lower and an upper colour index and nothing else: sixteen real components, fifteen of them the adjoint and one the trace. **A count that doubles this — a complex matrix, or a matrix with a label no generator acts on — is counting components the algebra does not have**, and the row below shows what that does to $b_0$.
+**There is no second index to multiply by.** $Ξ$ is a Hermitian matrix with a lower and an upper index and nothing else: sixteen real components, fifteen of them the adjoint and one the trace. **A count that doubles this — a complex matrix, or a matrix with a label no generator acts on — is counting components the algebra does not have**, and the row below shows what that does to $b_0$.
 
 **The scalar term is the one term that reads the model's content, and it reads it sharply.** The three candidate scalar sectors give three coefficients:
 
@@ -107,7 +107,7 @@ $$
 
 - *How the connection acts on $Ξ$*: the commutator $[T_{a},Ξ]$, fixed by the matrix index, and not a multiplication.
 - *How many directions are eaten at $M_C$*: six, one per broken generator of $\mathrm{SU}(4)$.
-- *How many components survive*: ten, of which eight are a colour octet.
+- *How many components survive*: ten, of which eight are a octet.
 
 **All three are the scalar articles' and none of them enters the running.** This article computes the coefficient, states which content it counts, and cites the census for everything else.
 
@@ -238,7 +238,7 @@ The model has one connection coupling and this article computes what it does abo
 ## Further Reading
 
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The boundary condition, the $\tfrac38$ arithmetic, and the $K_L\to\mu e$ bound that fixes $M_X$.
-- [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The content whose Dynkin indices the coefficient counts.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The content whose Dynkin indices the coefficient counts.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The action the coupling multiplies, and the normalisation $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ this article assumes.
 - [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). The same line for $\mathrm{SU}(3)$, whose coefficient $11-\tfrac23N_f$ this article's $b_0=\tfrac{26}{3}$ is set beside, and the QED Landau pole this article's pole is compared to.
 - [Why There Is No Confinement Above $M_C$](why-there-is-no-confinement-above-m-c.html). The mechanism, which cites this article for the number.

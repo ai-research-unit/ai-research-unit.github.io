@@ -1,4 +1,4 @@
-# __The Scalar's Two Indices: Two Colour, One Trace, and the Count Sixteen__
+# __The Scalar's Two Indices: One Trace and the Count Sixteen__
 
 ## Introduction
 
@@ -7,7 +7,7 @@
 **The answer.**
 
 $$
-\boxed{\;Ξ:\ \underbrace{4\times4}_{\text{colour pair, Hermitian}}\ \Longrightarrow\ 16\ \text{real}=\underbrace{15}_{\mathbf{15}}+\underbrace{1}_{\mathbf1};\qquad \dim\mathrm{SU}(4)=15 .\;}
+\boxed{\;Ξ:\ \underbrace{4\times4}_{\text{pair of indices, Hermitian}}\ \Longrightarrow\ 16\ \text{real}=\underbrace{15}_{\mathbf{15}}+\underbrace{1}_{\mathbf1};\qquad \dim\mathrm{SU}(4)=15 .\;}
 $$
 
 **The fifteen is the algebra's, and it is where the count starts.** A traceless Hermitian $4\times4$ has $16-1=15$ real parameters, which is $\dim\mathrm{SU}(4)$ — **the Hermitian matrices are $i\mathfrak{su}(4)$ and the algebra is its anti-Hermitian partner, so what matches is the dimension and not the space.** The trace is one more real parameter, and $Ξ$ may carry it. **$15+1=16$, and there is nowhere else for the count to go.**
@@ -18,7 +18,7 @@ $$
 
 ## The Representation, Read Off the Indices
 
-**A $4\times4$ matrix carries one lower and one upper colour index, and that product is reducible.**
+**A $4\times4$ matrix carries one lower and one upper index, and that product is reducible.**
 
 $$
 \mathbf4\otimes\bar{\mathbf4}=\mathbf{15}\oplus\mathbf1,
@@ -38,7 +38,7 @@ $$
 Ξ\in\bar{\mathbf4}\otimes\mathbf4 .
 $$
 
-**And $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ contains no $\bar{\mathbf4}$** — the $\mathbf{10}$ is the symmetric part and the $\mathbf6$ the antisymmetric, $10+6=16$, and neither is the $\bar{\mathbf4}$ — so a scalar in the fundamental forms no mass operator with one $\bar\xi$ and one $\xi$. **The scalar's colour structure is not a choice; it is the existence of the Yukawa sector.** [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) records the census.
+**And $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ contains no $\bar{\mathbf4}$** — the $\mathbf{10}$ is the symmetric part and the $\mathbf6$ the antisymmetric, $10+6=16$, and neither is the $\bar{\mathbf4}$ — so a scalar in the fundamental forms no mass operator with one $\bar\xi$ and one $\xi$. **The scalar's index structure is not a choice; it is the existence of the Yukawa sector.** [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) records the census.
 
 **Three counts that must not be confused.**
 
@@ -72,16 +72,16 @@ $$
 
 | label | range | acted on by the group |
 | --- | --- | --- |
-| the colour row | $1,\dots,4$ | yes, $Ξ\mapsto UΞ U^{\dagger}$ |
-| the colour column | $1,\dots,4$ | yes, the same transformation |
+| the spatial row | $1,\dots,4$ | yes, $Ξ\mapsto UΞ U^{\dagger}$ |
+| the spatial column | $1,\dots,4$ | yes, the same transformation |
 
-**Two labels, both made local, and that is the whole list.** There is no third index on $Ξ$: not a copy, not a family, not a colour–anticolour pair beyond the two already named.
+**Two labels, both made local, and that is the whole list.** There is no third index on $Ξ$: not a copy, not a family, not a triplet–antitriplet pair of indices beyond the two already named.
 
-**Why no generator acts on a third index, stated as the declaration it is.** The symmetry group of the model is $\mathrm{SU}(4)$, and its fifteen generators act on the two colour indices and on nothing else. **The reason is not that a third index would need a sixteenth generator**: a $\mathrm{U}(1)$ acting on a new label would not have to enlarge $\mathrm{SU}(4)$ at all, and "fifteen is all the room there is" is a statement about the dimension of one factor, not about how many factors a model may have. **The reason is that the declaration names one factor.** A second factor acting on a new label is a different model, and this article counts this one.
+**Why no generator acts on a third index, stated as the declaration it is.** The symmetry group of the model is $\mathrm{SU}(4)$, and its fifteen generators act on the two indices and on nothing else. **The reason is not that a third index would need a sixteenth generator**: a $\mathrm{U}(1)$ acting on a new label would not have to enlarge $\mathrm{SU}(4)$ at all, and "fifteen is all the room there is" is a statement about the dimension of one factor, not about how many factors a model may have. **The reason is that the declaration names one factor.** A second factor acting on a new label is a different model, and this article counts this one.
 
 **And the copy index is the case that shows the choice is a ledger entry and not a theorem.** The model does carry an not made local two-valued label, $α=1,2$, and **it sits on the fermion and on the Yukawa matrix, not on $Ξ$**: $\mathcal L_Y=y_{αβ}\,\bar\xi^{α†}Ξ\xi^{β}$, with $Ξ$ a singlet under $α$. **A copy index on $Ξ$ would make the count sixty-four rather than sixteen, and that is a different model** — one with a scalar matrix per copy instead of one shared matrix. [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html) says why the index sits where it does. **Sixteen is the count of the declared field, and the declaration is what fixes it.**
 
-**The colour pair does double duty, and that is why the matrix is not extravagant.** The same two indices give the representative–scalar vertex its commutator and the Yukawa operator its singlet. **The group acts by conjugation, $Ξ\mapsto UΞU^{†}$, so the covariant derivative is a commutator and not a multiplication**:
+**The pair of indices does double duty, and that is why the matrix is not extravagant.** The same two indices give the representative–scalar vertex its commutator and the Yukawa operator its singlet. **The group acts by conjugation, $Ξ\mapsto UΞU^{†}$, so the covariant derivative is a commutator and not a multiplication**:
 
 $$
 D_μΞ=\partial_μΞ-ig_4[A_μ,Ξ],
@@ -141,7 +141,7 @@ $$
 
 ## Summary
 
-**Sixteen real components: fifteen from the algebra and one from the trace.** The representation is $\mathbf{15}\oplus\mathbf1=\mathbf4\otimes\bar{\mathbf4}$ in the colour indices, forced by the existence of the mass operator and not chosen for convenience.
+**Sixteen real components: fifteen from the algebra and one from the trace.** The representation is $\mathbf{15}\oplus\mathbf1=\mathbf4\otimes\bar{\mathbf4}$ in the indices, forced by the existence of the mass operator and not chosen for convenience.
 
 **Two labels, both made local.** No copy index, no family index on $Ξ$: the model's one not made local label sits on the fermion and on the Yukawa matrix, and a copy index on $Ξ$ would be a different model with sixty-four components.
 
@@ -160,5 +160,5 @@ $$
 
 - [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html). The same field counted with the eating, and the ten that survive.
 - [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html). The potential this count leaves undetermined, written.
-- [The Lagrangian and the Scalar Matrix](the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html). The kinetic term for this field, and the commutator its two colour indices force.
-- [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The fifteen the count starts from.
+- [The Lagrangian and the Scalar Matrix](the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html). The kinetic term for this field, and the commutator its two indices force.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The fifteen the count starts from.

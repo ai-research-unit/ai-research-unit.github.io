@@ -38,7 +38,7 @@
 
 **What exists.** No action. Nothing in the family corresponds to a gluon, a quark or a hadron.
 
-**Why not.** The algebra's compact group is $\mathrm{U}(2)$, and colour needs $SU(3)$.
+**Why not.** The algebra's compact group is $\mathrm{U}(2)$, and the spatial block needs $SU(3)$.
 
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) — the dimension ceiling.
 - [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html) — why an embedding is not a derivation.
@@ -75,7 +75,7 @@ Four sectors, four answers. The electromagnetic sector is carried exactly, the e
 | Symbol | Meaning |
 |---|---|
 | $SU(2)\times U(1)$ | the electroweak group, carried partly by the algebra |
-| $SU(3)$ | the colour group, outside the algebra |
+| $SU(3)$ | the strong group, outside the algebra |
 | $m_W=gv/2$ | the vector mass as a product of one coupling and one vacuum value |
 | ten minus four minus four | the graviton's count: components, constraints, orbit |
 | the frame | four elements carrying the metric perturbation |

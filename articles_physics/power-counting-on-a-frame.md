@@ -106,7 +106,7 @@ with three numbers that the corpus does not fix: $\Lambda$, $\alpha$, $\beta$.
 
 ## Observability, and Why the Corpus Can Postpone It
 
-The curvature squares are suppressed relative to $R$ by two powers of the ratio of the field's curvature scale to the scale at which the terms are generated, and the corpus has such a scale in $M_{C}$, the scale above which the colour labels are dropped.
+The curvature squares are suppressed relative to $R$ by two powers of the ratio of the field's curvature scale to the scale at which the terms are generated, and the corpus has such a scale in $M_{C}$, the scale above which the cell labels are dropped.
 
 **What that buys.** Any prediction that depends on $\alpha$ or $\beta$ is suppressed by $(E/M_{C})^{2}$ at energies $E$, so a corpus whose stated domain is below $M_{C}$ can set them to zero without contradicting itself, provided it says that setting them to zero is what it is doing. That is the difference between an approximation and a claim, and the articles that use the Hilbert action should be read as making the first.
 

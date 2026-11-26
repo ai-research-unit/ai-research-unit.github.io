@@ -27,7 +27,7 @@ $$
 
 | Sector | Symbol | Carries | Its parameters |
 |---|---|---|---|
-| Strong | $\mathcal{L}_{\mathrm{QCD}}$ | the colour connection | $g_s$, $\theta_{\mathrm{QCD}}$, six quark masses through the Yukawa sector |
+| Strong | $\mathcal{L}_{\mathrm{QCD}}$ | the strong connection | $g_s$, $\theta_{\mathrm{QCD}}$, six quark masses through the Yukawa sector |
 | Electroweak representative and kinetic | $\mathcal{L}_{\mathrm{EW}}$ | the weak and hypercharge connections | $g$, $g_{\mathrm Y}$, and the fermion kinetic normalisations |
 | Scalar | $\mathcal{L}_{H}$ | all three connections, through $D_{\imath}\omicron_{\mathrm{hgs}}$ | $\mu^2$, $\varpi_{\mathrm{cpl}}$ |
 | Yukawa | $\mathcal{L}_{\mathrm{Yuk}}$ | no connection | the three coupling matrices |
@@ -73,7 +73,7 @@ W_{a,\imath\jmath}=\frac{\partial W_{a,\jmath}}{\partial R_{\imath}}-\frac{\part
 B_{\imath\jmath}=\frac{\partial B_{\jmath}}{\partial R_{\imath}}-\frac{\partial B_{\imath}}{\partial R_{\jmath}} .
 $$
 
-The colour structure constants are $f_{abc}$ and the weak ones are $\varepsilon_{abc}$ in the normalised basis. The two non-abelian curvatures carry the same commutator term in the same form; the abelian one does not, because its structure constants vanish.
+The strong structure constants are $f_{abc}$ and the weak ones are $\varepsilon_{abc}$ in the normalised basis. The two non-abelian curvatures carry the same commutator term in the same form; the abelian one does not, because its structure constants vanish.
 
 The kinetic terms. Three, one per factor,
 
@@ -101,7 +101,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{Ξ_{\mathrm{wfn}}}=\tilde\nabla_\Phi\tilde\Xi_{Ξ_{\mathrm{wfn}}}+\frac{2\pi i\,ϙ}{h}\Bigl(\sum_a T_{a,Ξ_{\mathrm{wfn}}} G_{a}+\sum_a\tau_{a,Ξ_{\mathrm{wfn}}} W_{a}+Y_Ξ_{\mathrm{wfn}} B\Bigr)\tilde\Xi_{Ξ_{\mathrm{wfn}}} ,
 $$
 
-with $T_{a,Ξ_{\mathrm{wfn}}}$ the colour generators in the representation of $Ξ_{\mathrm{wfn}}$ and $\tau_{a,Ξ_{\mathrm{wfn}}}$ the weak ones. The bracket is the connection in that representation, and it is the same object for all fifteen fields of a generation, differing only in which generators act and with which hypercharge.
+with $T_{a,Ξ_{\mathrm{wfn}}}$ the eight generators in the representation of $Ξ_{\mathrm{wfn}}$ and $\tau_{a,Ξ_{\mathrm{wfn}}}$ the weak ones. The bracket is the connection in that representation, and it is the same object for all fifteen fields of a generation, differing only in which generators act and with which hypercharge.
 
 Why the term is one term and not fifteen. The fifteen Weyl fields of a generation carry fifteen different connections and fifteen different hypercharges, so the display above is fifteen terms in one line. That is the whole of the fermion sector: a kinetic term per field, and no mass term.
 
@@ -229,7 +229,7 @@ and the analogous laws for $W_{\imath}$ with $U_L$ and for $B_{\imath}$ with the
 | potential $\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$ | $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}\mapsto\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$ | the invariant is the modulus squared, a singlet |
 | Yukawa, down type | the three factors transform by $U_Q^{\dagger}$, $U_{\omicron_{\mathrm{hgs}}}$, $U_d$ | the product is $U_Q^{\dagger}U_{\omicron_{\mathrm{hgs}}} U_d$, and the $SU(2)$ contraction is the singlet |
 | Yukawa, up type | the same with $U_{\tilde\omicron_{\mathrm{hgs}}}$ | $U_{\tilde\omicron_{\mathrm{hgs}}}$ is the conjugate of $U_{\omicron_{\mathrm{hgs}}}$, and the phase is opposite |
-| $\theta$ term | invariant | $G_{\imath\jmath}$ is adjoint-valued, and the epsilon contraction is a colour singlet |
+| $\theta$ term | invariant | $G_{\imath\jmath}$ is adjoint-valued, and the epsilon contraction is a singlet |
 
 The three places where the audit could fail and does not.
 
@@ -303,7 +303,7 @@ Three sectors out of four. The corpus writes a connection action, a scalar actio
 
 The dictionary is a dictionary and not a theory. Each row is an identity between two writings of one object, and none of them is a derivation. The corpus's contribution is that the objects have homes: the connection is a material-sector element, the curvature is its vector part under $\natural$, the scalar is an element and its modulus squared is the norm.
 
-**The sector with no corpus counterpart.** The colour sector is the exception. The algebra's ceiling is $SU(2)$, reached as the norm-one part of the material sector, and no element of $\mathbb{B}$ carries three colours. The QCD Lagrangian is therefore written in this article in a notation the algebra supplies for the spacetime indices only; the colour indices are external to it. That is stated in [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) and in [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html), and it is the one structural asymmetry of the assembly.
+**The sector with no corpus counterpart.** The strong sector is the exception. The algebra's ceiling is $SU(2)$, reached as the norm-one part of the material sector, and no element of $\mathbb{B}$ carries three lines. The QCD Lagrangian is therefore written in this article in a notation the algebra supplies for the spacetime indices only; the indices are external to it. That is stated in [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) and in [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html), and it is the one structural asymmetry of the assembly.
 
 The parameter ledger, stated once. Three of the four sectors are writable in the corpus's language and none of the nineteen parameters is fixed by it. The assembly therefore measures the boundary as sharply as the parameter table does: the algebra supplies the arena in which three of these four expressions are written, and it supplies no coefficient.
 
@@ -313,20 +313,20 @@ The Standard Model Lagrangian is the sum of four sectors plus the vacuum-angle t
 
 The sign rule is $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$, proved in one line from $X_t=iX_0$ and the metric of the interval. It converts the corpus's $-\tfrac12\sum\partial\xi\partial\xi$ into the standard $+\tfrac12\partial\xi\cdot\partial\xi$, converts its $-\tfrac14\sum FF$ into the standard $-\tfrac14F\cdot F$ with no change of sign, and leaves the two writings one Lagrangian: the abelian check gives $\sum_{\imath\jmath}F_{\imath\jmath}F_{\imath\jmath}=2(B^2-E^2)$ and hence $\tfrac12(E^2-B^2)$ on both sides.
 
-The audit is term by term and it passes. The three kinetic terms are invariant because each curvature transforms in the adjoint; the fermion and scalar kinetic terms because each covariant derivative transforms with the same unitary that acts on its field; the potential because it depends only on the singlet $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$; the Yukawa terms because the total hypercharge vanishes in each of the three, $-1/6+1/2-1/3$, $-1/6-1/2+2/3$ and $+1/2+1/2-1$; and the vacuum-angle term because it is a colour singlet. A bare fermion mass fails the audit, and its absence is a result and not an omission.
+The audit is term by term and it passes. The three kinetic terms are invariant because each curvature transforms in the adjoint; the fermion and scalar kinetic terms because each covariant derivative transforms with the same unitary that acts on its field; the potential because it depends only on the singlet $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$; the Yukawa terms because the total hypercharge vanishes in each of the three, $-1/6+1/2-1/3$, $-1/6-1/2+2/3$ and $+1/2+1/2-1$; and the vacuum-angle term because it is a singlet. A bare fermion mass fails the audit, and its absence is a result and not an omission.
 
 Written out, the four sectors and the vacuum-angle term carry sixty real parameters: three couplings, two scalar parameters, one vacuum angle, eighteen for $Y_{e}$ and thirty-six for the pair $Y^u,Y_{d}$. Field redefinitions remove forty-one of them — twenty-six in the quark sector through $U(3)_Q\times U(3)_u\times U(3)_d$ leaving ten, which is six masses and four mixing parameters, and fifteen in the lepton sector through $U(3)_L\times U(3)_e$ leaving three masses — so nineteen survive, which is the table of that article. The redundancy is a freedom of flavour basis and not a small correction.
 
-The expression omits neutrino masses, gravity and a dark sector, and each omission is a measurement rather than an oversight. The unique dimension-five operator the content allows is the neutrino mass, and it is absent only because the theory is written renormalisable. Three of the four sectors have corpus counterparts term for term, through the dictionary of this article; the colour sector has none, because the algebra's ceiling is $SU(2)$. The assembly therefore closes the ledger the parameter table opened: the arena is the algebra's, and all sixty coefficients written here are imported.
+The expression omits neutrino masses, gravity and a dark sector, and each omission is a measurement rather than an oversight. The unique dimension-five operator the content allows is the neutrino mass, and it is absent only because the theory is written renormalisable. Three of the four sectors have corpus counterparts term for term, through the dictionary of this article; the strong sector has none, because the algebra's ceiling is $SU(2)$. The assembly therefore closes the ledger the parameter table opened: the arena is the algebra's, and all sixty coefficients written here are imported.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{L}_{\mathrm{QCD}}$, $\mathcal{L}_{\mathrm{EW}}$, $\mathcal{L}_{H}$, $\mathcal{L}_{\mathrm{Yuk}}$ | The four sectors |
-| $G_{a,\imath}$, $W_{a,\imath}$, $B_{\imath}$ | Colour, weak and hypercharge connections |
+| $G_{a,\imath}$, $W_{a,\imath}$, $B_{\imath}$ | Strong, weak and hypercharge connections |
 | $G_{a,\imath\jmath}$, $W_{a,\imath\jmath}$, $B_{\imath\jmath}$ | Their field strengths |
-| $f_{abc}$, $\varepsilon_{abc}$ | Colour and weak structure constants |
+| $f_{abc}$, $\varepsilon_{abc}$ | Strong and weak structure constants |
 | $\tilde\nabla_{\mathrm{gco},\Phi}$ | The covariant gradient; the representation is that of the field it acts on |
 | $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ | The Dirac adjoint |
 | $\omicron_{\mathrm{hgs}}$, $\tilde\omicron_{\mathrm{hgs}}$ | The scalar doublet of hypercharge $\tfrac12$ and its conjugate of hypercharge $-\tfrac12$ |
@@ -349,7 +349,7 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 - [Stress–Energy Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html). The scalar action and the sign convention that fixes the dictionary.
 - [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html). The normalisation of the fifth line and its status as a total derivative.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The one sector with no corpus counterpart.
-- [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html). The colour sector at the level of the field.
+- [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html). The strong sector at the level of the field.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). Which terms the framework reaches and which it imports.
 
 The three companions this article names but does not carry — the QCD Lagrangian, fixing the representative and the electroweak precision observables — are written, as articles 9, 7 and 8 of the series, and each is linked above at the point where it is invoked.

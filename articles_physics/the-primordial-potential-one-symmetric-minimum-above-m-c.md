@@ -25,7 +25,7 @@ V(Ξ)=\mu_{\Phi}^{2}\operatorname{tr}Ξ^{2}
 +\lambda_{4}\bigl(\operatorname{tr}Ξ\bigr)^{4},
 $$
 
-with $Ξ$ the Hermitian $4\times4$ matrix of [The Scalar's Two Indices](the-scalars-two-colour-indices-and-the-count-sixteen.html), the trace taken over colour, and no copy index on $Ξ$: one Hermitian matrix, sixteen real parameters.
+with $Ξ$ the Hermitian $4\times4$ matrix of [The Scalar's Two Indices](the-scalars-two-indices-and-the-count-sixteen.html), the trace taken over the spatial block, and no copy index on $Ξ$: one Hermitian matrix, sixteen real parameters.
 
 **The field carries no condition.** $\operatorname{tr}Ξ$ is a symmetry singlet and a dynamical mode, and the sixteen components are sixteen. **"Fifteen generators, so fifteen scalar directions" is the count that deletes it, and it is wrong**: a generator is traceless because $\mathfrak{su}(4)$ removes the trace, and that is a property of the algebra and not of a field. **A constraint on a field is not a convention**, for the reason a Proca field keeps its fourth component: a condition that removes a mode follows from an equation of motion, or nothing removes it. **Tracelessness in this model is a property of the vacuum** — the second sign below — and the article never constrains the field to get it.
 
@@ -227,4 +227,4 @@ A bounded potential is not a stable one. Boundedness is a statement about $V_{4}
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the declared vacuum does to the fifteen once it is assumed.
 - [The One-Loop Effective Potential](the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html). The boundary of this article's region, at $\mu_{\Phi}^{2}=0$.
 - [The Lagrangian and the Scalar Matrix](the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html). The kinetic term beside this potential, and where the metric structure that produces the quartics comes from.
-- [The Scalar's Two Indices](the-scalars-two-colour-indices-and-the-count-sixteen.html). The field whose sixteen components are counted here.
+- [The Scalar's Two Indices](the-scalars-two-indices-and-the-count-sixteen.html). The field whose sixteen components are counted here.

@@ -13,7 +13,7 @@ D_\mu=\partial_\mu
 -i g\,\frac{\tau^{a}}{2}W^{a}_{\mu}
 -i g_Y\,Y B_{\mu},
 \qquad
-a=1,\dots,8\ \text{for colour},\quad a=1,2,3\ \text{for isospin},
+a=1,\dots,8\ \text{for the strong group},\quad a=1,2,3\ \text{for isospin},
 \;}
 $$
 
@@ -37,7 +37,7 @@ $$
 
 **What the article does not establish.** No numerical value. $g_4$, $g_L$, $g_R$ are symbols here, and the running that would give them values at a scale is [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html). Whether the running succeeds is [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html).
 
-**Where the algebras are.** [The Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One](the-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html) lists the algebras this derivative is built from. The generic construction of a covariant derivative in the algebra is [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html).
+**Where the algebras are.** [The Algebras of the Two Sectors: The Strong Group on Three Dimensions, Weak Isospin on Two, the Photon on One](the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html) lists the algebras this derivative is built from. The generic construction of a covariant derivative in the algebra is [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html).
 
 ## One Derivative at the Top
 
@@ -54,7 +54,7 @@ with $T^{A}$ the fifteen anti-Hermitian generators of $\mathfrak{su}(4)$. **No $
 
 **1.2 Fifteen and one.** Fifteen connections, because there are fifteen generators. One coupling, because there is one simple factor. A simple group has one coupling by definition — the generators of $\mathrm{SU}(4)$ cannot carry different couplings without breaking the invariance that makes them a basis of one algebra.
 
-**1.3 Why "fifteen and one" matters.** Any statement that separates couplings above $M_C$ — "the leptoquark coupling is different from the gluon coupling", "the weak coupling is a second parameter" — is false, because there is one parameter. **Below $M_C$ the four factors are not equal in status.** Colour and $B-L$ are subalgebras of the algebra that carried $g_4$, so their couplings are $g_4$ by inheritance, exactly. The weak pair is not a subalgebra: it is born at $M_C$ with the index, and its two couplings are free parameters whose equality to $g_4$ is the corpus's threshold assumption and not a derivation — [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) says where that assumption fails.
+**1.3 Why "fifteen and one" matters.** Any statement that separates couplings above $M_C$ — "the leptoquark coupling is different from the gluon coupling", "the weak coupling is a second parameter" — is false, because there is one parameter. **Below $M_C$ the four factors are not equal in status.** The strong group and $B-L$ are subalgebras of the algebra that carried $g_4$, so their couplings are $g_4$ by inheritance, exactly. The weak pair is not a subalgebra: it is born at $M_C$ with the index, and its two couplings are free parameters whose equality to $g_4$ is the corpus's threshold assumption and not a derivation — [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) says where that assumption fails.
 
 **1.4 The reality condition.** Each connection is real, each generator anti-Hermitian in the physicists' convention or Hermitian with the $i$ absorbed, and the whole expression is anti-Hermitian: $D^\dagger=-D$. That is what makes $D_\mu$ a derivative rather than a field, and it is the reason the algebra's anti-Hermitian subspace is the one that carries the connection.
 
@@ -69,7 +69,7 @@ g_4A^{A}T^{A}\ \longrightarrow\
 g_4\,G^{a}T^{a}+g_4\,B\,T^{15}+g_4\left(X^{a}_{\mu}\,T^{a}_{t}+\text{h.c.}\right),
 $$
 
-where $T^{a}_{t}$ are the six mixed generators. The colour piece and the $B-L$ piece are the residual ones; the mixed piece is heavy. Note that all three carry the same $g_4$: the split is a split of generators, not of couplings.
+where $T^{a}_{t}$ are the six mixed generators. The gluon piece and the $B-L$ piece are the residual ones; the mixed piece is heavy. Note that all three carry the same $g_4$: the split is a split of generators, not of couplings.
 
 **The weak pieces are not a split of the fifteen.** They are new connections, and they appear because the two copies of $\mathrm{SU}(2)$ arrive at $M_C$ with the index that the breaking object carries — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). **So the derivative below $M_C$ is the restriction of the one above it plus six connections whose couplings are not inherited:** $g_L$ and $g_R$ are free parameters, matched to $g_4$ only by the threshold assumption. The six mixed generators $T^{a}_{t}$ are a different object: they are inside the fifteen, they are the ones that became heavy, and their coupling is $g_4$ like the rest.
 
@@ -99,17 +99,17 @@ with $Q=T_{3L}+Y$ and $A$ the photon. The angle here is $\theta_W$.
 
 | piece | coupling | algebra | multiplies | acts on |
 |---|---|---|---|---|
-| gluon | $g_s=g_4$ | $\mathfrak{su}(3)$ | the triplet index of every coloured field | $\mathbb C^3$ |
+| gluon | $g_s=g_4$ | $\mathfrak{su}(3)$ | the triplet index of every non-singlet field | $\mathbb C^3$ |
 | weak | $g=g_L$ | $\mathfrak{su}(2)_L$ | the $L$ doublet index, and only on left fields | $\mathbb C^2_L$ |
 | hypercharge | $g_Y$ | $\mathfrak u(1)_Y$ | the number $Y$ of every field | the whole generation |
 
-**3.1 The colours.** The gluon piece multiplies nothing but the triplet index: it is blind to flavour, to chirality and to the lepton line. In indices, $(T^{a})^{i}_{\ j}$ with $i,j\in\{r,g,b\}$ and no other free index.
+**3.1 The strong piece.** The gluon piece multiplies nothing but the triplet index: it is blind to flavour, to chirality and to the lepton line. In indices, $(T^{a})^{i}_{\ j}$ with $i,j\in\{r,g,b\}$ and no other free index.
 
 **3.2 The left piece.** The weak piece multiplies the doublet index and is absent on right-handed fields, because the right block has no $L$ index. That absence is what "the weak interaction is chiral" means at the level of the derivative: a right-handed singlet has no $\tau^{a}$ to multiply.
 
-**3.3 The hypercharge piece.** It multiplies a number, not an index, and it acts on every field of the generation. That is why $Y$ can distinguish $u_R$ from $d_R$ while colour cannot, and why the two right-handed states that were degenerate above $M_C$ split below it.
+**3.3 The hypercharge piece.** It multiplies a number, not an index, and it acts on every field of the generation. That is why $Y$ can distinguish $u_R$ from $d_R$ while the strong group cannot, and why the two right-handed states that were degenerate above $M_C$ split below it.
 
-**3.4 The three heavy pieces, for contrast.** The leptoquark piece multiplies a colour index and a lepton index at once; the $W_R$ piece multiplies only the $R$ index; the heavy neutral pieces multiply the two combinations orthogonal to $Y$ and to $Q$. None appears in the table because none survives.
+**3.4 The three heavy pieces, for contrast.** The leptoquark piece multiplies a index and a lepton index at once; the $W_R$ piece multiplies only the $R$ index; the heavy neutral pieces multiply the two combinations orthogonal to $Y$ and to $Q$. None appears in the table because none survives.
 
 ## The Three Couplings and the Two Matching Relations
 
@@ -193,7 +193,7 @@ The count jumps at $M_C$ and falls twice, and the jump is the point: one factor 
 | the orthogonality | $A_R^{2}+A_{B-L}^{2}=B'^{2}$ | gives $g_Y^{-2}=g_R^{-2}+(2g_{B-L})^{-2}$ |
 | the electromagnetic limit | $1/e^{2}=1/g^{2}+1/g_Y^{2}$ | reproduces $\tan\theta_W=g_Y/g$ |
 | the chirality | $L$ piece absent on right singlets | the $R$ block has no $L$ index |
-| the colour blindness | gluon piece carries no flavour index | holds in every term |
+| the block's blindness | gluon piece carries no flavour index | holds in every term |
 
 ## Distinctions That Are Easy to Lose
 
@@ -209,7 +209,7 @@ The count jumps at $M_C$ and falls twice, and the jump is the point: one factor 
 
 **One derivative.** Fifteen connections and one coupling at the top; twelve connections, three pieces and three couplings between $M_C$ and $M_W$; nine massless connections and two couplings below $M_W$.
 
-**The three pieces.** Colour on the triplet, weak isospin on the left doublet, hypercharge on the number $Y$.
+**The three pieces.** The strong group on the triplet, weak isospin on the left doublet, hypercharge on the number $Y$.
 
 **The two relations.** $g_s=g_{B-L}=g_4$ by identity of generators; $g_Y^{-2}=g_R^{-2}+(2g_{B-L})^{-2}$ by orthogonality of fields. **And one assumption:** $g_4=g_L=g_R$ at $M_C$, which the running tests.
 
@@ -226,15 +226,15 @@ The count jumps at $M_C$ and falls twice, and the jump is the point: one factor 
 | $D_\mu$ | the covariant derivative |
 | $g_4$, $g_L$, $g_R$ | the couplings of the three simple factors |
 | $g_{B-L}$ | the coupling of the $B-L$ factor at $M_C$ |
-| $g_s$, $g$, $g_Y$, $e$ | the low-energy couplings of colour, isospin, hypercharge, electromagnetism |
-| $T^{A}$, $T^{a}$ | the fifteen $\mathrm{SU}(4)$ generators and the eight colour ones |
+| $g_s$, $g$, $g_Y$, $e$ | the low-energy couplings of the strong group, of isospin, of hypercharge and of electromagnetism |
+| $T^{A}$, $T^{a}$ | the fifteen $\mathrm{SU}(4)$ generators and the eight of the spatial block |
 | $\tau^{a}$, $\sigma^{a}$ | the left and right isospin generators |
 | $Y$, $Q$ | hypercharge and electric charge |
 | $\theta_W$ | the weak mixing angle, $\tan\theta_W=g_Y/g$ |
 
 ## Further Reading
 
-- [The Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One](the-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html). The algebras and modules this derivative is built from.
+- [The Algebras of the Two Sectors: The Strong Group on Three Dimensions, Weak Isospin on Two, the Photon on One](the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html). The algebras and modules this derivative is built from.
 - [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html). The generic construction, before any model.
 - [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html). What the removal of the heavy pieces costs.
 - [The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators](the-weinberg-angle-and-the-three-neutral-states.html). The rotation $\theta_W$ and the neutral basis.

@@ -31,7 +31,7 @@ $$
 \tilde{\mathbb{F}}_{\imath\jmath}=\tfrac12\varepsilon_{\imath\jmath\kappa\lambda}\mathbb{F}_{\kappa\lambda},
 $$
 
-with $\mathbb{F}=\sum_{a}F_{a}t_{a}$ the matrix-valued curvature and the trace over colour, which for a Hermitian matrix is the whole of the contraction. **The $t_{a}$ are the normalised Hermitian generators of the block**, $t_{a}=iG_{a}/\sqrt{2n_{a}}$ on the anti-Hermitian printed arrays, with $n_{a}=\operatorname{tr}(G_{a}^{\dagger}G_{a})$ equal to $2$ for the fourteen and $12$ for the corner, so that $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$, $\mathbb{F}$ is Hermitian and $\operatorname{tr}(\mathbb{F}\tilde{\mathbb{F}})$ is real.
+with $\mathbb{F}=\sum_{a}F_{a}t_{a}$ the matrix-valued curvature and the trace over the spatial block, which for a Hermitian matrix is the whole of the contraction. **The $t_{a}$ are the normalised Hermitian generators of the block**, $t_{a}=iG_{a}/\sqrt{2n_{a}}$ on the anti-Hermitian printed arrays, with $n_{a}=\operatorname{tr}(G_{a}^{\dagger}G_{a})$ equal to $2$ for the fourteen and $12$ for the corner, so that $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$, $\mathbb{F}$ is Hermitian and $\operatorname{tr}(\mathbb{F}\tilde{\mathbb{F}})$ is real.
 
 **The normalisation is the one that makes the integral an integer.**
 
