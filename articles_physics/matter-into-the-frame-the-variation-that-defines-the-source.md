@@ -1,0 +1,268 @@
+# __Matter Into the Frame: The Variation That Defines the Source__
+
+## Introduction
+
+This article opens a section on the half of the gravitational field equation that the corpus has written least about: the source. It is the article that states, once and cleanly, how a matter action meets the frame, and it exists because the corpus's own sentences about this are scattered across four articles, none of which is about it.
+
+The framing sentence is short. In a frame formulation there is no separate source term. Matter that lives on a frame depends on the frame, and the derivative of its action with respect to the frame *is* the source. So "mass curves spacetime" is not a postulate to be added to the algebra, and it is not a claim that the corpus denies. It is the statement that a matter action, differentiated with respect to the object that carries the metric, gives the symmetric rank-two object that balances the geometry.
+
+Three results, and they are of different kinds.
+
+**The dictionary, exact.** For any matter action that depends on the frame through the metric, the variation is
+
+$$
+\delta S_{\mathrm{matter}}=\int d^{4}x\,\sqrt{|g|}\;\Theta_{\imath\jmath}\,\langle\delta\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural},
+\qquad
+\Theta_{\imath\jmath}=G_{\imath\jmath}\mathcal L+2\frac{\partial\mathcal L}{\partial g_{\imath\jmath}}=\frac{2}{\sqrt{|g|}}\frac{\delta S_{\mathrm{matter}}}{\delta g_{\imath\jmath}},
+$$
+
+verified here by finite differences on two independent frames to $1.1\times10^{-10}$ and $8.2\times10^{-11}$ relative, and inverted back to $\Theta$ to the same accuracy. This is the whole of the source side, and it is a computation, not a proposal.
+
+**The six directions that carry nothing.** A frame has sixteen components and a metric has ten, and the difference is the pointwise Lorentz group. The source sees only the ten; the variation of a Lorentz-rotated frame is invisible to it. Consequently the derivative with respect to the frame has six components that are pure redundancy, and the object it defines is a rank-two tensor and not a sixteen-component source.
+
+**The one thing that is genuinely absent, stated exactly.** Both sides of the balance come from the same variation, $\delta S_{\mathrm{grav}}+\delta S_{\mathrm{matter}}=0$. The matter side is now written and verified. The gravitational side — an action whose variation with respect to $\tilde E_{\Phi,\imath}$ is the Einstein tensor — is not constructed anywhere in the corpus. That is the absent half, and it is absent in a precisely stateable sense: *nothing in the algebra selects the response of the frame, though everything in the algebra can hold it.*
+
+The article is written in the framework's letters. Every quantity in it is either an element of $\mathbb{B}_{\Phi}$ or an array indexed by the corpus's all-low convention.
+
+## Conventions
+
+The conventions are the gravity articles' and none is redefined. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_{\imath}^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The material sector is $\mathbb{B}_{\Phi}=\{i r'_{t}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\}$, with the pairing $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$, whose value on the four basis elements
+
+$$
+e_0=ie_t,\quad e_1=\vec e_x,\quad e_2=\vec e_y,\quad e_3=\vec e_z,
+\qquad
+\langle e_a,e_b\rangle_{\natural}=(\digamma_{\mathrm{met}})_{ab}=\mathrm{diag}(-1,1,1,1),
+$$
+
+has its one minus on the time slot, that minus being the square of the $i$ in $e_0=ie_t$.
+
+The frame is the object of Route Two of *Curved Spacetime and the Biquaternion Framework*: four $\mathbb{B}_{\Phi}$-valued fields $\tilde E_{\Phi,\imath}(x)$ with
+
+$$
+g_{\imath\jmath}(x)=\langle\tilde E_{\Phi,\imath}(x),\tilde E_{\Phi,\jmath}(x)\rangle_{\natural}
+=\sum_{a,b}E_{\imath a}(x)\,(\digamma_{\mathrm{met}})_{ab}\,E_{\jmath b}(x),
+$$
+
+$E_{\imath a}$ being the coordinate of $\tilde E_{\Phi,\imath}$ along $e_a$. Written in the array of the sixteen frame components it is the congruence of *The Gram Matrix as the Only Metric*: with $E$ the array whose row $\imath$ holds the four components $E_{\imath a}$ of $\tilde E_{\Phi,\imath}$, $g=E\digamma_{\mathrm{met}}E^{\mathsf T}$, and $g$ is the interval's array, negative on the time slot. (That article writes the same congruence with the transpose of this array, its $E$ indexed row by basis element.) $G_{\imath\jmath}$ is the matrix inverse of $g_{\imath\jmath}$, defined by $\sum_{\jmath}g_{\imath\jmath}G_{\jmath k}=\delta_{\imath k}$, and $\sqrt{|g|}$ is the square root of the absolute determinant of that array. **$G_{\imath\jmath}$ is written where other articles of the series write the inverse of the metric**, and this is the one notational addition of the article: the corpus keeps every index low, so the inverse has its own letter.
+
+The dual frame follows and is used throughout:
+
+$$
+\tilde F_{\Phi,\imath}=\sum_{\jmath}G_{\imath\jmath}\,\tilde E_{\Phi,\jmath},
+\qquad
+\langle\tilde F_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}=\delta_{\imath\jmath},
+\qquad
+\langle\tilde F_{\Phi,\imath},\tilde F_{\Phi,\jmath}\rangle_{\natural}=G_{\imath\jmath}.
+$$
+
+**A correction to the parent article's display.** *Curved Spacetime and the Biquaternion Framework* writes the dual frame as $\tilde F_{\imath}=g_{\imath\jmath}\tilde E_{\Phi,\jmath}$. Read with $g_{\imath\jmath}$ as the array of the interval — which is how that article defines it — the display is right exactly when $g$ is its own inverse. In the flat frame $g=\digamma_{\mathrm{met}}$, it returns $-\tilde E_{\Phi,0}$ on the time leg and $+\tilde E_{\Phi,k}$ on the spatial legs, and those are the dual legs: $-ie_t$ is dual to $ie_t$ because $\langle-ie_t,ie_t\rangle_{\natural}=+1$. For the lapse leg $\tilde E_{\Phi,0}=iN e_t$ with $g_{00}=-N^{2}$ it returns $-iN^{3}e_t$ where the dual is $-ie_t/N$, and there it is wrong. The array intended is the inverse, and the label $G$ is used here so that the two cannot be confused. The parent's formula is right in substance — the dual frame is the frame contracted with an inverse metric — and it is the letter that is wrong outside the flat frame.
+
+## The Question, Without a Source Term
+
+The field equation of general relativity is usually written with a source on the right and a geometric object on the left,
+
+$$
+G_{\imath\jmath}=\frac{8\pi G}{c^{4}}T_{\imath\jmath},
+$$
+
+and the two sides read as if two different sorts of thing were being equated. In a frame formulation that reading is wrong, and the correction is not a matter of taste.
+
+**The frame is the metric.** Every metric is the Gram matrix of many frames, differing by the pointwise Lorentz group, and the frame field is a parametrisation of the metric with a six-dimensional redundancy at each point. Nothing else about a frame is physical. So a matter field written on a frame is a matter field written on a metric, plus a choice of representative.
+
+**The variation therefore has one stationary condition, not two.** Write
+
+$$
+S=S_{\mathrm{grav}}[\tilde E_{\Phi}]+\int d^{4}x\,\sqrt{|g|}\,\mathcal L\big(\tilde\Xi,\tilde F_{\Phi,\imath}D_{\imath}\tilde\Xi\big),
+$$
+
+and the statement that the total action is stationary is
+
+$$
+\frac{\delta S_{\mathrm{grav}}}{\delta\tilde E_{\Phi,\imath}}+\frac{\delta S_{\mathrm{matter}}}{\delta\tilde E_{\Phi,\imath}}=0 .
+$$
+
+There is no third object. The source is the second term, and it is not inserted by hand: it is what the matter action's dependence on the frame produces.
+
+**Why this matters for every sentence in the corpus that sounds negative.** The article *The Einstein Field Equations in the Biquaternion Framework* says that the algebra supplies no action, no field equation and no counterpart of diffeomorphism invariance. Each of those statements is about the *first* term of the display, and none is about the second. The corpus's negative sentences are about the response of the frame to its own curvature. They are not about whether matter acts as a source; matter acts, the equation with $T_{\imath\jmath}$ on the right is written in *Linearized Gravity in Biquaternionic Form* and used in *Gravitational Waves in Biquaternionic Form* to compute the power radiated by a binary, and the quadrupole prefactor $G/5c^{5}$ is verified there. What those articles do not do is derive the display. That distinction is the reason this article exists.
+
+## Where the Frame Enters an Action
+
+The frame enters a matter action in exactly three ways, and separating them is the practical content of the section.
+
+**Through the volume element**, $\sqrt{|g|}$, which is $\sqrt{|\det(E\digamma_{\mathrm{met}}E^{\mathsf T})|}$.
+
+**Through the inverse metric**, which every contracted derivative index uses: $G_{\imath\jmath}\partial_{\imath}\tilde\Xi\,\partial_{\jmath}\tilde\Xi$ in a kinetic term, and $\tilde F_{\Phi,\imath}D_{\imath}$ in a first-order operator.
+
+**Through the frame legs themselves, when the action is not built from the metric alone.** A Dirac field differentiated by $\tilde F_{\Phi,\imath}D_{\imath}$ sees the frame through the dual frame and through the spin connection $\vec\Gamma_{\imath}$, and neither is determined by $g$. This third entry is where the source can become more than the symmetric rank-two tensor, and it is treated separately below.
+
+The first two entries are exhaustive for a bosonic field whose action is built from $g$ and its derivatives: a scalar, a Maxwell field, a fluid. For those, the whole dependence of $\mathcal L$ on the frame is through $g_{\imath\jmath}$, and the variation is a chain rule.
+
+## The Dictionary
+
+Differentiate $S_{\mathrm{matter}}=\int d^{4}x\,\sqrt{|g|}\,\mathcal L$ with respect to the metric array. With $\delta\sqrt{|g|}=\tfrac12\sqrt{|g|}G_{\imath\jmath}\delta g_{\imath\jmath}$,
+
+$$
+\frac{\delta S_{\mathrm{matter}}}{\delta g_{\imath\jmath}}
+=\sqrt{|g|}\left[\tfrac12 G_{\imath\jmath}\mathcal L+\frac{\partial\mathcal L}{\partial g_{\imath\jmath}}\right]
+\equiv\tfrac12\sqrt{|g|}\,\Theta_{\imath\jmath}.
+$$
+
+Now substitute the frame. From $g_{\imath\jmath}=\sum_{ab}E_{\imath a}(\digamma_{\mathrm{met}})_{ab}E_{\jmath b}$,
+
+$$
+\delta g_{\imath\jmath}=2\langle\delta\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural},
+$$
+
+the factor two being the two legs and the symmetry of the pairing. Multiplying,
+
+$$
+\boxed{\;\delta S_{\mathrm{matter}}=\int d^{4}x\,\sqrt{|g|}\;\Theta_{\imath\jmath}\,\langle\delta\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}\;}
+$$
+
+and the coefficient form follows by inspection, because the pairing is linear in $\delta E_{\imath a}$:
+
+$$
+\boxed{\;\frac{\delta S_{\mathrm{matter}}}{\delta E_{\imath a}}=\sqrt{|g|}\,\Theta_{\imath\jmath}\,(E\digamma_{\mathrm{met}})_{\jmath a}\;}
+$$
+
+Three remarks, and each is a property the dictionary has and a shorter formula would not.
+
+**The second factor is not the dual frame.** $(E\digamma_{\mathrm{met}})_{\jmath a}=\sum_{b}E_{\jmath b}(\digamma_{\mathrm{met}})_{ba}$ is the frame with its form index lowered, which is the coefficient matrix of the pairing, not the dual frame $G E$. The two coincide only when $g$ is the flat array. Writing the dictionary with $\tilde F_{\Phi,\jmath}$ in place of $\tilde E_{\Phi,\jmath}$ gives a formula that is wrong off the flat frame, and it is the natural mistake: it is the mistake of treating a derivative with respect to a leg as if it were a contraction with a dual leg.
+
+**The dictionary inverts.** Since $\digamma_{\mathrm{met}}$ is its own inverse and $E\digamma_{\mathrm{met}}$ is invertible wherever the frame is, $(E\digamma_{\mathrm{met}})^{-1}=\digamma_{\mathrm{met}}E^{-1}$ and
+
+$$
+\Theta_{\imath\jmath}=\frac{1}{\sqrt{|g|}}\left(\frac{\delta S_{\mathrm{matter}}}{\delta E}\,\digamma_{\mathrm{met}}\,E^{-1}\right)_{\imath\jmath}.
+$$
+
+So the frame variation determines the tensor and the tensor determines the frame variation. Nothing is lost in the passage, which is the formal statement that the frame is a parametrisation of the metric and not a richer object.
+
+**The dictionary needs no assumption about $\mathcal L$.** It is a chain rule, and it holds for any $\mathcal L$ that depends on the frame only through $g$: a scalar with a potential, a Maxwell field, a perfect fluid with an equation of state, a higher-derivative term. What changes from one to the next is $\Theta$, not the dictionary.
+
+### The Verification
+
+Two independent frames were used, both non-diagonal and both away from the flat frame, with a scalar Lagrangian carrying a mass term and a prescribed gradient. The derivative $\delta S/\delta E_{\imath a}$ was computed by central differences of the density at a point on a nine-point-per-direction grid, so that the quadrature introduces no error at all: the discrete action is $\sum_{p}h^{4}f\big(E(x_{p}),x_{p}\big)$, only the term at $x_{p}$ depends on $E(x_{p})$, and the difference quotient is the pointwise derivative exactly.
+
+| quantity | case one | case two |
+| --- | --- | --- |
+| relative error of $\delta S/\delta E_{\imath a}=\sqrt{|g|}\Theta_{\imath\jmath}(E\digamma_{\mathrm{met}})_{\jmath a}$ | $1.1\times10^{-10}$ | $8.2\times10^{-11}$ |
+| relative error of the inversion back to $\Theta$ | $1.2\times10^{-10}$ | $6.9\times10^{-11}$ |
+| largest antisymmetric entry of $\Theta$ | $1.4\times10^{-17}$ | $0$ |
+| norm of the traceless part, as a fraction of $\|\Theta\|$ | $1.22$ | $0.70$ |
+
+The last row is there for a reason that belongs to the next section: the traceless part of $\Theta$ is not small, so a dictionary that captured only the trace — the natural single-biquaternion packaging, which collapses to $\mathrm{Sc}$ of one product — would be wrong by the whole of that fraction. The frame route is not the collapsed route.
+
+## The Six Directions That Carry Nothing
+
+A frame has sixteen functions and a metric has ten, so the map $E\mapsto g$ has a six-dimensional fibre at each point, and the fibre is the pointwise Lorentz orbit: if $\tilde U(x)\tilde U(x)^{\natural}=e_t$ then $\tilde E_{\Phi,\imath}\mapsto\tilde U\tilde E_{\Phi,\imath}\tilde U^{*}$ leaves $g_{\imath\jmath}$ unchanged.
+
+The consequence for the source is exact and is worth writing as an identity. An infinitesimal $\delta\tilde E_{\Phi,\imath}=\vec\omega\,\tilde E_{\Phi,\imath}-\tilde E_{\Phi,\imath}\vec\omega$ with $\vec\omega$ in the six-dimensional Lie subspace $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ produces $\delta g_{\imath\jmath}=0$. Therefore
+
+$$
+\Theta_{\imath\jmath}\,\langle\vec\omega\,\tilde E_{\Phi,\imath}-\tilde E_{\Phi,\imath}\vec\omega,\ \tilde E_{\Phi,\jmath}\rangle_{\natural}=0
+\qquad\text{for every }\vec\omega\text{ in the Lie subspace,}
+$$
+
+identically in $\Theta$ and in the frame. Six linear conditions on the sixteen components of the frame derivative, satisfied by construction.
+
+Two readings of that identity, and they are not the same, so both are stated.
+
+**It is a redundancy, not a constraint on matter.** The six conditions hold for *any* $\Theta$, including $\Theta=0$. Nothing about matter is being restricted; the frame simply has directions along which nothing physical varies.
+
+**It is why the source is a tensor.** Because the variation is blind to those six directions, the object defined by $\delta S/\delta E_{\imath a}$ is not sixteen independent numbers but the ten of a symmetric rank-two array, dressed in a sixteen-component representation. This is the precise content of the corpus's repeated statement that the source is "a symmetric rank-two object the framework does not carry as a single algebra element": it is not that the framework cannot express $T_{\imath\jmath}$; it is that $T_{\imath\jmath}$ has ten components and an element of $\mathbb{B}$ has eight, so no single element can hold it, while a *frame* holds it in its shape. The article *The Action Problem* supplies the sharpest instance, the perfect-fluid frame with leg scales $\sqrt{\rho}$ and $\sqrt{p}$, and this article's dictionary is the general statement behind that instance.
+
+## When the Source Is Not Symmetric
+
+The dictionary above produced a symmetric $\Theta$, and the reason is not the algebra but the Lagrangian: it depended on the frame only through $g$, and $g$ is symmetric. For a field whose action depends on the frame in the third way — through the dual frame and the spin connection, as the Dirac field's does — this is no longer automatic, and the asymmetric part has a physical name.
+
+**The general situation.** Let the matter action depend on $\tilde E_{\Phi,\imath}$ both through $g$ and intrinsically, through the dual frame and a connection $\vec\Gamma_{\imath}$. Then $\delta S/\delta E_{\imath a}$ need not be the covariant derivative of any symmetric array, and
+
+$$
+\Theta_{\imath\jmath}-\Theta_{\jmath\imath}\neq0
+$$
+
+is possible. The antisymmetric part is six numbers at a point, and it is the source of torsion: in a theory with an independent connection, the frame variation produces a spin density, and the spin density is what the torsion equation balances. *Torsion, Contorsion and the Spin Connection in Biquaternionic Form* constructs the spin tensor $S_{k\imath\jmath}$ and the contorsion in this algebra's notation, and the antisymmetric part of the frame variation is the object that would source them.
+
+**What is computed here and what is not.** The statement above is structural: it says which part of the frame variation can be antisymmetric and what it would mean. It is not a computation of the Dirac field's frame variation, and no number is quoted for it. That computation is one of the sectoral articles of this section, and its result is not assumed here.
+
+**One consistency requirement, and it is met.** In the torsion-free theory the antisymmetric part is removed by the Belinfante improvement, and the corpus's *Spin-Half Energy-Momentum Tensor* records the reason: the antisymmetric part of the canonical stress is the divergence of the spin tensor, a total divergence carries no charge, and the conserved object is the symmetric part. So a torsion-free reading of this section is obtained by discarding the antisymmetric part, and nothing in the dictionary depends on its being absent.
+
+## The Missing Half, Stated Exactly
+
+Everything so far is the second term of the stationary condition. The first term is where the section stops, and it is worth stating the absence in a form that a later reader can measure progress against.
+
+**What would be needed.** A functional $S_{\mathrm{grav}}[\tilde E_{\Phi}]$, built from the algebra's own operations, whose variation is
+
+$$
+\frac{\delta S_{\mathrm{grav}}}{\delta E_{\imath a}}=-\sqrt{|g|}\,\mathcal G_{\imath\jmath}\,(E\digamma_{\mathrm{met}})_{\jmath a},
+$$
+
+with $\mathcal G_{\imath\jmath}$ the Einstein tensor of the Gram metric. Given that, the stationary condition would be the Einstein equation, and the constant of proportionality would be the one place where $G$ could enter.
+
+**What is available.** The algebra supplies the objects, and the corpus has recorded them: the six-dimensional Lie subspace in which a connection and its curvature take values, the dual frame, the two-sided derivative for the material sector and the one-sided derivative for the field, and the Lichnerowicz square $(\tilde F_{\imath}D_{\imath})^{2}=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}$ that contains the scalar curvature. None of them is an action for the frame.
+
+**The precise sense of the absence.** The algebra holds the frame, the connection, the curvature and the source, and generates no functional of the frame. The word for that is not "impossible": a functional of the frame exists in general relativity, it is $\int\sqrt{|g|}R$, and it can be *written* in the framework's letters. What is absent is a reason, internal to the algebra, for that functional rather than another. This is what *The Action Problem* means by calling the action problem a pairing problem, and what the field-equations article means by "the non-linear equation, not reached".
+
+**Two things the absence does not touch.** It does not touch the source: the dictionary is exact whatever $S_{\mathrm{grav}}$ turns out to be. And it does not touch the balance: if a $S_{\mathrm{grav}}$ is ever produced, the stationary condition is already written, and the source side of it is already verified.
+
+## The One Number That Is Not Free
+
+A constant of proportionality between $\mathcal G_{\imath\jmath}$ and $\Theta_{\imath\jmath}$ is not supplied by the algebra, and it is worth being clear that it need not be. Once the response of a frame to a source is fixed to be the Einstein tensor, the constant is calibrated by one observation, and the calibration is the Newtonian limit: a static weak source produces $\Phi=-GM/r$ with the measured $G$, and no other constant does.
+
+That calibration is the subject of the companion article *The Newtonian Limit: Closing the Chain*, which carries the chain from a density $\rho$ through $\bar h_{00}=4GM/(c^{2}r)$ to $g_{00}=-(1-r_{s}/r)$ and reads $G$ off the result. The point belongs here in one sentence: **the framework's silence about the magnitude of $G$ is not a gap in the source side.** A theory that fixes the *form* of the response and leaves its normalisation to one measurement is in exactly the position general relativity is in, and it is the position the corpus's transcribed $8\pi G/c^{4}$ already occupies.
+
+## What This Article Establishes and What It Leaves
+
+**Established, and verified.**
+
+1. The source of the field equation is the variation of the matter action with respect to the frame, and it is a single exact dictionary: $\delta S=\int\sqrt{|g|}\Theta_{\imath\jmath}\langle\delta\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}$ with $\Theta$ the Hilbert tensor of the Gram metric, verified on two frames to $10^{-10}$.
+2. The dictionary inverts, so the frame variation and the rank-two source carry the same information.
+3. Six of the sixteen frame directions are invisible to the source, and that invisibility is the reason the source is a tensor of ten components rather than sixteen.
+4. A Lagrangian depending on the frame only through $g$ gives a symmetric $\Theta$; an antisymmetric part is possible only for a field that sees the frame intrinsically, and it is the torsion source.
+5. The corpus's negative statements about the gravitational side do not concern the source, and the two must not be run together.
+
+**Left open, and named.**
+
+1. The sectoral computations: the scalar, the Maxwell field and the Dirac field on a frame, each of which converts a known flat-space $\Theta$ into a frame-valued one. The dictionary says what the answer must be; the articles compute it.
+2. The action for the frame, which is the whole of the first term and is absent.
+3. The non-linear completion, which needs the second as a precondition.
+4. Whether the antisymmetric part of the Dirac field's frame variation reproduces the corpus's spin tensor with the correct constant, which is the quantitative half of the torsion route.
+
+The section's shape follows from that list. This article fixes the dictionary and the boundary; the sectoral articles fill in $\Theta$; and the last one runs the chain to Newton, where the framework's gravity becomes empirically indistinguishable from general relativity rather than merely analogous to it.
+
+## Summary
+
+The source of the gravitational field equation in the biquaternion framework is not a postulate and is not missing. It is the derivative of the matter action with respect to the frame, and the derivative is exact: $\delta S_{\mathrm{matter}}=\int d^{4}x\sqrt{|g|}\,\Theta_{\imath\jmath}\langle\delta\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}$, with $\Theta$ the Hilbert tensor of the Gram metric and $\sqrt{|g|}$ the volume density of the frame. Two independent frames confirm the formula to one part in $10^{10}$, and the formula inverts.
+
+The frame has sixteen components and the metric ten, and the difference is the pointwise Lorentz group. The source is blind to exactly those six directions, which is why it is a rank-two tensor and not a sixteen-component object, and why no single element of $\mathbb{B}$ — eight real dimensions — can hold it while a frame can.
+
+An antisymmetric part of the frame variation is possible only for a field that sees the frame beyond the metric, and it is the source of torsion; for the torsion-free theory it is removed by the Belinfante improvement, and the corpus's spin-half article supplies the reason.
+
+The half that is absent is the other term of the stationary condition: a functional of the frame whose variation is the Einstein tensor. Nothing in the algebra selects it, though everything in it can hold it, and the magnitude of the coupling is fixed by the Newtonian limit rather than by the algebra — which is where the framework is in the same position as general relativity, not worse.
+
+## Summary of Notation
+
+| symbol | meaning |
+| --- | --- |
+| $\tilde E_{\Phi,\imath}$ | frame field, four elements of $\mathbb{B}_{\Phi}$; the metric's carrier |
+| $E_{\imath a}$ | coordinate of $\tilde E_{\Phi,\imath}$ along the basis element $e_a$ |
+| $e_a=(ie_t,\vec e_x,\vec e_y,\vec e_z)$ | material basis used for the frame's components |
+| $(\digamma_{\mathrm{met}})_{ab}=\mathrm{diag}(-1,1,1,1)$ | array of the pairing on the basis $e_a$ |
+| $g_{\imath\jmath}=\langle\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}$ | the interval's array |
+| $G_{\imath\jmath}$ | matrix inverse of $g_{\imath\jmath}$ |
+| $\tilde F_{\Phi,\imath}=G_{\imath\jmath}\tilde E_{\Phi,\jmath}$ | dual frame |
+| $\sqrt{|g|}$ | volume density |
+| $\mathcal L$ | matter Lagrangian density before the volume factor |
+| $\Theta_{\imath\jmath}=G_{\imath\jmath}\mathcal L+2\partial\mathcal L/\partial g_{\imath\jmath}$ | the source, equal to $2\delta S_{\mathrm{matter}}/(\sqrt{|g|}\delta g_{\imath\jmath})$ |
+| $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ | six-dimensional Lie subspace of $\mathbb{B}$; the redundancy's algebra |
+
+## Further Reading
+
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame route, its three mechanisms of curvature, and its boundary.
+- [The Gram Matrix as the Only Metric](the-gram-matrix-as-the-only-metric.html), for $g=E\digamma_{\mathrm{met}}E^{\mathsf T}$ and the count sixteen against ten.
+- [The Action Problem](the-action-problem.html), for the perfect-fluid frame, the trace collapse of the single-element carrier, and the pairing formulation of the action problem.
+- [Spin-Half Energy-Momentum Tensor](the-spin-half-energy-momentum-tensor.html), for the symmetric and antisymmetric parts, the Belinfante relation and the Frenkel condition.
+- [Torsion, Contorsion and the Spin Connection in Biquaternionic Form](torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html), for the spin tensor that an antisymmetric frame variation would source.
+- [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the flat-space $\Theta$ that the sectoral articles carry onto a frame.
+- [The Einstein Field Equations in the Biquaternion Framework: The Linearised Dictionary and the Non-Linear Gap](the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.html), for the absent first term stated at length.
+- [The Newtonian Limit: Closing the Chain](the-newtonian-limit-closing-the-chain.html), for the calibration of the one constant and the chain to $\Phi=-GM/r$.
