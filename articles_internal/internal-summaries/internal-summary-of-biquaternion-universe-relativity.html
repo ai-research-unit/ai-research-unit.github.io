@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="internal-summary-of-biquaternion-universe-relativity"><strong>Internal Summary of Biquaternion Universe Relativity</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Universe Relativity</em>, the second largest category of the physics corpus with one hundred and one articles. It gives the objects, the formulas that carry the results, and the non-trivial claims. Proofs are omitted: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Universe Relativity</em>, the second largest category of the physics corpus with one hundred articles. It gives the objects, the formulas that carry the results, and the non-trivial claims. Proofs are omitted: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
 <p><strong>What the category does.</strong> It rewrites special relativity in the algebra, without matrices. The Lorentz group is the group of unit-norm biquaternions. The interval is the quaternionic norm. The sign is $i^{2}=-1$. It then adds what standard relativity does not have: the same group acting on the informational sector, where the boost is not a channel, the read radius is $\tanh\theta_{\mathrm{rpd}}$, and the inverse temperature is a rapidity.</p>
 <p><strong>The four menu subsections and what each settles.</strong></p>
 <div class="table-scroll"><table>
@@ -92,7 +92,7 @@
 </tr>
 <tr>
 <td>The Lorentz Transformation on the Material Sector</td>
-<td>four-vectors, the mass shell, the null cone, the observer's frame and measurements, Wigner's classification, the mechanics, Noether</td>
+<td>four-vectors, the mass shell, the null cone, the observer's frame and measurements, Wigner's classification, the mechanics and the eigenspinor</td>
 </tr>
 <tr>
 <td>The Lorentz Transformation on the Informational Sector</td>
@@ -445,7 +445,7 @@ U(\Lambda)|p,\sigma\rangle=\sum_{\sigma'}D_{\sigma\sigma'}\bigl(W(\Lambda,p)\big
 $$</p>
 <p><strong>The Poincaré group</strong> adds the translations; in the algebra the translation is the exponential of a nilpotent element, and the commutator of two such translations is a rotation of the little group.</p>
 <p><strong>Source.</strong> <code>articles_physics/wigners-classification-two-casimirs-three-orbits.md</code>, <code>articles_physics/the-little-group-of-a-massive-particle-su-2.md</code>, <code>articles_physics/the-little-group-of-a-null-momentum-e-2.md</code>, <code>articles_physics/the-poincare-group-and-the-biquaternion-frame.md</code>.</p>
-<h2 id="14-mechanics-and-noether">14. Mechanics and Noether</h2>
+<h2 id="14-mechanics">14. Mechanics</h2>
 <p><strong>Velocity, momentum, mass shell.</strong></p>
 <p>$$
 \tilde V_{\Phi}=\gamma\bigl(ic\,e_t+\vec v\bigr),\qquad \tilde V_{\Phi}\tilde V_{\Phi}^{\natural}=-c^{2},
@@ -457,18 +457,18 @@ $$</p>
 <p>$$
 \tilde U_{\Psi,\mathrm b}=\sqrt{-\frac{i}{c}\tilde V_{\Phi}^{\natural}},\qquad \tilde U_{\Psi,\mathrm b}^{2}=\gamma+i\gamma\frac{\vec v}{c}.
 $$</p>
-<p><strong>The action and its two forms.</strong></p>
+<p><strong>The action, named and not derived.</strong> The two displays below are the formulas this category lists at the end of <em>Relativistic Mechanics</em>; their variation, and the Euler–Lagrange machinery behind it, are in the Apparatus module, §<em>The Action and the Variation</em>. <strong>This category states the objects and their motion and derives no variation.</strong></p>
 <p>$$
 S=-mc\int\sqrt{-d\tilde R_\Phi\,d\tilde R_\Phi^{\natural}},\qquad
 \mathcal L=+\mathrm{Sc}\bigl[((\tilde\nabla_\Phi)^{\natural}\tilde\Xi^{*})(\tilde\nabla_\Phi\tilde\Xi)\bigr]+4\pi^{2}\nu_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr].
 $$</p>
-<p><strong>Noether, in the algebra.</strong></p>
+<p><strong>Noether, in the algebra, and filed in Apparatus.</strong></p>
 <p>$$
 \delta S=0\ \forall\text{ fields}\quad\Longrightarrow\quad \mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\bigr)=0\ \text{on shell},\qquad
 \tilde J_{\Phi}=i\bigl[(\tilde\nabla_\Phi\tilde\Xi^{*})\tilde\Xi-\tilde\Xi^{*}(\tilde\nabla_\Phi\tilde\Xi)\bigr].
 $$</p>
 <p><strong>The non-trivial claim.</strong> The conserved current is one biquaternion, and its scalar part is the continuity equation while its vector part is the spatial flux. The centre phase $\tilde\Xi\mapsto e^{i\theta_{\mathrm{cen}}}\tilde\Xi$ generates the charge.</p>
-<p><strong>Source.</strong> <code>articles_physics/relativistic-mechanics-in-biquaternionic-form.md</code>, <code>articles_physics/noethers-theorem-in-biquaternionic-form.md</code>, <code>articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.md</code>, <code>articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.md</code>.</p>
+<p><strong>Source.</strong> <code>articles_physics/relativistic-mechanics-in-biquaternionic-form.md</code>, <code>articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.md</code>, <code>articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.md</code>. <strong>The two that left:</strong> <code>noethers-theorem-in-biquaternionic-form</code> and <code>the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle</code> moved to the Apparatus module, whose summary carries the theorem and the stationary-action principle; the second is the article that §<em>The Action</em> of the mechanics article now points to.</p>
 <h2 id="15-the-informational-sector">15. The Informational Sector</h2>
 <p><strong>The state and the Born weight.</strong></p>
 <p>$$

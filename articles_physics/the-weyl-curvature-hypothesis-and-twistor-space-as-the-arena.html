@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Weyl Curvature Hypothesis and Twistor Space as the Arena — Biquaternion Universe</title>
+  <meta name="description" content="Two of Roger Penrose&#x27;s proposals belong together, and this section of the corpus is their home. The first is the Weyl curvature hypothesis of 1979: that…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-weyl-curvature-hypothesis-and-twistor-space-as-the-arena"><strong>The Weyl Curvature Hypothesis and Twistor Space as the Arena</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Two of Roger Penrose's proposals belong together, and this section of the corpus is their home.</strong> The first is the <strong>Weyl curvature hypothesis</strong> of 1979: that the gravitational field carried no Weyl curvature at the initial singularity, and that its growth since then is the arrow of time. The second is <strong>twistor space</strong>, proposed in 1967 as the arena from which spacetime itself emerges.</p>
+<p><strong>They are grouped here because both are statements about the whole of spacetime and not about a field inside it.</strong> A Weyl tensor is a property of a metric; a twistor is a point of a space that replaces the metric's arena. <strong>Neither is a matter sector</strong>, and neither can be filed under the particle content.</p>
+<p><strong>The verdict of this article is stated at the start, because it governs every section.</strong> The hypothesis is a <strong>boundary condition</strong> and the framework supplies no principle that selects it; twistor space is a <strong>different theory</strong> and the framework is not a version of it. <strong>In the framework's scale-factor route the hypothesis is not merely unproved but empty</strong>, because every metric in that route has zero Weyl curvature identically. That result is the sharpest thing this article has to report, and it is a negative one.</p>
+<h2 id="the-hypothesis-stated">The Hypothesis, Stated</h2>
+<p><strong>Two problems, one answer.</strong> Cosmology faces two facts that look unrelated. <strong>The universe is homogeneous and isotropic on its largest scales</strong>, to a precision of one part in $10^{5}$ in the microwave background, so that a Friedmann–Lemaître model describes it. <strong>And the second law of thermodynamics holds</strong>, so the universe had a low-entropy past. Penrose's proposal is that one fact explains the other, through a quantity that had not been counted as entropy: <strong>the Weyl curvature of the gravitational field</strong>.</p>
+<p><strong>The four claims of the hypothesis.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the initial condition</td>
+<td>the Weyl tensor vanished, or was negligible, at the initial singularity</td>
+</tr>
+<tr>
+<td>the growth</td>
+<td>it has risen monotonically since</td>
+</tr>
+<tr>
+<td>the mechanism</td>
+<td>structure formation — the clumping of matter — <em>is</em> that rise</td>
+</tr>
+<tr>
+<td>the consequence</td>
+<td>the cosmological arrow of time is the direction of that rise</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why Weyl and not Riemann.</strong> The Riemann tensor splits into a trace part and a trace-free part,
+$$
+R_{abcd}=C_{abcd}+\tfrac12\bigl(g_{ac}R_{bd}-g_{ad}R_{bc}+g_{bd}R_{ac}-g_{bc}R_{ad}\bigr)-\tfrac16 R\bigl(g_{ac}g_{bd}-g_{ad}g_{bc}\bigr),
+$$
+<strong>and only the trace-free piece $C_{abcd}$ survives in vacuum.</strong> The trace part is fixed locally by the matter through Einstein's equations; <strong>the Weyl part is the field's own degrees of freedom</strong> — tidal distortion and gravitational radiation. <strong>A homogeneous and isotropic metric has no tidal distortion and radiates nothing, so its Weyl tensor is zero</strong>; a lumpy one has both. That single fact is the whole of the hypothesis's physical content.</p>
+<p><strong>What it is a hypothesis about.</strong> Not a field equation — the Einstein equations hold either way. <strong>It is a statement about which solution of them the universe is</strong>, and specifically about the <strong>initial</strong> one. Penrose's own framing is that the Creator, faced with an enormous space of solutions, chose one of measure zero: <strong>his estimate of the fine-tuning is one part in $10^{10^{123}}$</strong>, a number whose exponent is itself astronomical. <strong>Nothing in this corpus produces such a number or checks it</strong>, and it is quoted here as Penrose's estimate and not as a computation.</p>
+<p><strong>The alternative it is posed against.</strong> The hypothesis is offered as a <strong>credible alternative to cosmic inflation</strong>, which explains the same homogeneity and isotropy by a period of accelerated expansion. <strong>The two are not the same claim.</strong> Inflation says the smoothness was <em>produced</em> by dynamics after the bang; the hypothesis says it was <em>there at the bang</em>, as a boundary condition, and that no dynamics is needed. <strong>A framework that can state one but not the other has a definite position, and this corpus is in that position</strong> — see the next two sections.</p>
+<p><strong>A third consequence, and the one that costs most.</strong> Generic solutions of the Einstein equations near a singularity are not isotropic. The <strong>BKL analysis</strong> shows that a generic spacelike singularity oscillates, with the metric's terms exchanging dominance chaotically, and the Weyl curvature diverges there faster than the Ricci part — the singularity is <strong>Weyl-dominated</strong>. <strong>So the hypothesis asserts that the actual big bang was not a generic singularity.</strong> That is its strength, because it is a sharp claim, and its weakness, because nothing in classical general relativity prefers the non-generic case.</p>
+<p><strong>The extension, stated once and not used below.</strong> In <strong>conformal cyclic cosmology</strong> the hypothesis becomes a matching condition between successive aeons, and the vanishing of the Weyl tensor at each aeon's start is what makes the join conformally smooth. <strong>The corpus does not develop that programme</strong>, and this paragraph exists so that a reader who has met the idea knows where it stands here.</p>
+<h2 id="the-two-computations-the-hypothesis-rests-on">The Two Computations the Hypothesis Rests On</h2>
+<p><strong>Both claims below are exact and both are recomputed here from the metric, not quoted.</strong></p>
+<p><strong>First: every Friedmann–Lemaître metric has zero Weyl curvature, for every scale factor.</strong> With the flat spatial slice and $a(t)$ arbitrary,</p>
+<p>$$
+g=\operatorname{diag}\Bigl(-1,\ a(t)^{2},\ a(t)^{2},\ a(t)^{2}\Bigr),
+$$</p>
+<p><strong>all 256 components of $C_{abcd}$ vanish identically</strong>, while the Ricci tensor does not: $R_{tt}=-3\ddot a/a$. <strong>The vanishing is therefore not the trivial vanishing of flat space</strong> — the spacetime is curved and its Weyl part is still zero. That is the defining property of a <strong>conformally flat</strong> metric, and every Friedmann–Lemaître metric has it, whatever the equation of state and whatever the scale factor does.</p>
+<p><strong>Second: a single mass has non-zero Weyl curvature, and the invariant is exact.</strong> For Schwarzschild,</p>
+<p>$$
+C_{abcd}C^{abcd}=\frac{48M^{2}}{r^{6}}\ \ \text{exactly},
+$$</p>
+<p><strong>checked here by raising all four indices of the computed $C_{abcd}$ numerically</strong>: at $M=1$, $r=5$ the sum comes to $3.072\times10^{-3}$, and $48/5^{6}=3.072\times10^{-3}$. <strong>The tensor is Petrov type D</strong>, so its Weyl spinor has one repeated principal null direction and one non-zero scalar, $\tilde\Xi_{2}$.</p>
+<p><strong>The two computations together are the hypothesis in numbers.</strong> Smooth $\Rightarrow$ zero; a mass $\Rightarrow$ $48M^{2}/r^{6}$; therefore <strong>any departure from homogeneity raises the invariant</strong>, and the rise the hypothesis speaks of is the growth of this number as matter clumps. <strong>The hypothesis is the statement that the first number was zero at the bang and the second is what it has become.</strong></p>
+<p><strong>What these two computations do not do.</strong> They show that the hypothesis is <em>statable</em> and <em>checkable</em> for a given metric. <strong>They do not show that the early universe had zero Weyl</strong>, and no computation in this corpus does.</p>
+<h2 id="what-the-framework-says-the-scale-factor-route-makes-the-hypothesis-empty">What the Framework Says: The Scale-Factor Route Makes the Hypothesis Empty</h2>
+<p><strong>The framework reaches a metric by two routes, and the two give opposite verdicts on the hypothesis.</strong></p>
+<p><strong>Route one is the local scale factor.</strong> The metric is</p>
+<p>$$
+g_{\mu\nu}=\lambda^{2}\,\eta_{\mu\nu},
+$$</p>
+<p><strong>with $\lambda$ a scalar function</strong> — the class <a href="curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> calls route one. <strong>Every member of this class is conformally flat, so its Weyl tensor vanishes identically at every time, for every $\lambda$.</strong> That is not a coincidence of the ansatz; it is what conformal flatness means, and the previous section computed it for the Friedmann–Lemaître case, which is the physically interesting member.</p>
+<p><strong>The consequence is severe and it is the main result of this article.</strong> In route one the Weyl curvature hypothesis is <strong>true by construction and therefore empty</strong>: it cannot distinguish an early universe from a late one, cannot explain why the bang was special, and cannot carry an arrow of time. <strong>A framework whose only metric is a scale factor times flat has no Weyl curvature to make a hypothesis about.</strong> Anyone who wants the hypothesis must leave route one; that is not a preference, it is a theorem about the class.</p>
+<p><strong>Route two is a field of frames.</strong> The metric is the pullback of the algebra's form along a frame field,
+$$
+g_{\mu\nu}=\bigl\langle \tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\bigr\rangle_{\natural},
+$$
+<strong>and this class is not conformally flat</strong>: its Weyl tensor is a functional of the frame field, non-zero in general. The <strong>Kerr–Schild sub-class</strong> is the sharpest member, and its members carry principal null congruences, so they are Weyl-non-zero by construction.</p>
+<p><strong>So route two is where the hypothesis can be stated, and route two is where the framework stops.</strong> The Weyl tensor is then a function of the frame field, and <strong>the hypothesis becomes a condition on that field's initial value</strong>. The framework does not supply it. <a href="the-newman-penrose-formalism-in-biquaternionic-form.html">The Newman–Penrose Formalism</a> records the gap precisely: <strong>the algebra hosts $\mathrm{sym}^{4}S$, the space the Weyl spinor lives in, but nothing in $\mathbb{B}$ determines which element of it a given spacetime produces.</strong> A boundary condition on an object the algebra does not generate is not derivable from the algebra.</p>
+<p><strong>What the framework does supply, and it is not nothing.</strong> It supplies the <strong>carrier</strong>: the Weyl spinor is $\mathrm{sym}^{4}S$-valued, complex dimension five, whose real and imaginary parts give the ten real components of $C_{abcd}$ — five self-dual and five anti-self-dual. <strong>The hypothesis is then a statement about one half of a five-complex-dimensional object</strong>, and the framework can say exactly which half is meant. <strong>That precision is the framework's contribution here, and it is a contribution of language, not of dynamics.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>route</th>
+<th>metric class</th>
+<th>Weyl tensor</th>
+<th>status of the hypothesis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>one, local scale factor</td>
+<td>$\lambda^{2}\eta$</td>
+<td>$C_{abcd}=0$ identically</td>
+<td>true by construction, hence empty</td>
+</tr>
+<tr>
+<td>two, field of frames</td>
+<td>$g=\langle \tilde E_\mu,\tilde E_\nu\rangle_\natural$</td>
+<td>$C\ne0$ in general</td>
+<td>a boundary condition, not derived</td>
+</tr>
+<tr>
+<td>two, Kerr–Schild sub-class</td>
+<td>$\delta+2h\ell\ell$</td>
+<td>non-zero, null-aligned</td>
+<td>statable, and not selected</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="twistor-space-as-the-arena">Twistor Space as the Arena</h2>
+<p><strong>If twistor space replaces spacetime as the arena, the result is not a reformulation of general relativity; it is a different theory.</strong> That sentence is the reason this material sits in a section of its own. <strong>A theory is its arena plus its fields plus its dynamics</strong>, and a programme that changes the first changes the theory.</p>
+<p><strong>The object.</strong> Twistor space is $T\cong\mathbb{C}^{4}$ with coordinates $Z^{\alpha}=(\omega^{A},\pi_{A'})$ — <strong>two Weyl spinors of opposite chirality</strong>, so $T=S\oplus\bar S$. <strong>Projective twistor space is $\mathbb{PT}=\mathbb{CP}^{3}$</strong>, the space of complex lines, and it carries a Hermitian form of inertia $(2,2)$ whose isometry group $\mathrm{SU}(2,2)$ is a <strong>quadruple cover of the conformal group</strong> $C(1,3)$ of compactified Minkowski space.</p>
+<p><strong>The correspondence, in one display.</strong> A point of complexified Minkowski space is a $2\times2$ matrix $x_{A\bar A}$, and it defines a line in $\mathbb{PT}$ by the <strong>incidence relation</strong></p>
+<p>$$
+\omega^{A}=i\,x^{A}{}_{\bar A}\,\pi^{\bar A}.
+$$</p>
+<p><strong>Two points are null-separated exactly when their lines meet</strong>, which happens exactly when $\det(x-y)=0$ — the Minkowski interval as the determinant of a $2\times2$ matrix. <strong>Spacetime points become lines, and the light cone becomes incidence</strong>: this is the Klein correspondence, and it is the geometric heart of the programme.</p>
+<p><strong>Why it is not merely a rewriting.</strong> Three of the programme's results have no counterpart in a metric-first formulation. <strong>The Penrose transform</strong> represents solutions of the massless field equations of helicity $h$ as sheaf cohomology classes $H^{1}\bigl(\mathbb{PT},\mathcal{O}(-2h-2)\bigr)$ — <strong>a field on spacetime becomes a cohomology class on a complex manifold</strong>, with no metric in the statement. <strong>The nonlinear graviton</strong> represents every half-flat Ricci-flat complex spacetime as a <strong>deformation of the complex structure</strong> of a region of $\mathbb{PT}$ — <strong>a spacetime becomes a complex manifold's deformation</strong>. <strong>The Ward correspondence</strong> does the same for self-dual Yang–Mills fields, as holomorphic vector bundles. <strong>None of these is a change of coordinates</strong>, and that is the precise sense in which twistor theory is a different theory and not a dictionary.</p>
+<p><strong>The limitation, and it is exactly this article's junction.</strong> The nonlinear graviton encodes <strong>half-flat</strong> spacetimes — those whose Weyl tensor is <strong>self-dual</strong> (or anti-self-dual, depending on the convention), the left-handed half. <strong>A construction that can only encode one half of $C_{abcd}$ cannot state the Weyl curvature hypothesis</strong>, which is a claim about the whole tensor and about its growth. <strong>The two Penrose proposals in this article therefore do not meet</strong>: the hypothesis needs the full Weyl tensor, and the arena that was built to encode Weyl curvature encodes one chirality of it. <strong>Penrose named the missing half the <em>googly problem</em></strong> — the word is from cricket — and his 2015 proposal, <strong>palatial twistor theory</strong>, attacks it by replacing the holomorphic functions on twistor space with a non-commutative algebra of them. <strong>No version of it is used in this corpus.</strong></p>
+<p><strong>The later descendants, named once.</strong> Ambitwistor space complexifies the light rays themselves; twistor string theory is a quantum theory of holomorphic maps of a Riemann surface into twistor space; the RSV formulae, BCFW recursion, the Grassmannian and the amplituhedron all descend from it and belong to the theory of scattering amplitudes. <strong>They are recorded here for completeness and are not used anywhere in the corpus.</strong></p>
+<h2 id="the-three-senses-of-the-word-in-this-corpus">The Three Senses of the Word in This Corpus</h2>
+<p><strong>The word <em>twistor</em> has carried three different objects in this corpus's literature, and grouping them here is the reason this section exists at all.</strong></p>
+<p><strong>The first is the classical object: incidence data of a complex null line.</strong> It is Penrose's twistor, a point of $T$, and the incidence relation above. <strong>Everything in the previous section is this sense.</strong></p>
+<p><strong>The second is Alexeyeva's algebraic twistor.</strong> It is a solution of the homogeneous biquaternionic biwave equation
+$$
+\vec\nabla_{+}B+\vec F\circ B=0,
+\qquad \vec F=-E-iH,
+$$
+<strong>with a constant complex vector coefficient.</strong> The solutions come in four families — non-stationary, $H$-, stationary and static — each of unit norm in the algebra, each with a generating scalar potential from which it is recovered by one first-order operator. <strong>One member is distinguished:</strong> the $H$-twistor's amplitude is a <strong>rank-one Hermitian idempotent</strong>, $-\sqrt2\,\tilde\Pi_{\mathrm{id},2}(\vec u_H)$, so it is the only one of the four whose amplitude is a pure state. <strong>These are field configurations on spacetime, not points of a conformal module</strong>, and the homonym must not be read as the classical sense.</p>
+<p><strong>The third is Kassandrov's congruence twistor.</strong> In the algebrodynamical programme the complex eikonal equation of the generalised Cauchy–Riemann conditions generates <strong>shear-free congruences of complex null rays</strong>, and the congruence's <strong>twistor field</strong> $\{\zeta,\tau\}$ is fixed by
+$$
+\bigl(Z-\mathcal Z(\kappa)\bigr)\zeta=0,
+\qquad
+\tau=Z\zeta,
+$$
+<strong>which is the incidence relation over complexified Minkowski space, with the charge's world line as the caustic.</strong> The parameter $\kappa$ is fixed by the complex null-cone equation $\det\lvert Z-\mathcal Z(\kappa)\rvert=0$, <strong>which over $\mathbb{C}$ has several roots</strong> — and the programme's physics is built on that multiplicity.</p>
+<p><strong>So the first and the third senses are the same object</strong> — incidence data of a complex null line — <strong>used in two settings, and only the second is a genuine homonym.</strong> The word's three senses are collected here so that a reader meets them once, in one place, rather than as scattered references across the corpus.</p>
+<h2 id="what-this-section-does-not-claim">What This Section Does Not Claim</h2>
+<p><strong>It does not derive the Weyl curvature hypothesis.</strong> The framework states it, shows where it can be stated, and shows that one of its two metric routes empties it. <strong>A boundary condition that the algebra does not generate is not derived by the algebra.</strong></p>
+<p><strong>It does not reproduce any twistor result.</strong> The Penrose transform, the nonlinear graviton, the Ward correspondence and the twistor-string formulae are described, not derived, and <strong>no display in this article is a twistor computation.</strong> The one thing checked is the Klein-correspondence identity $\det(x-y)=\text{interval}$, and it is checked because it is a two-line calculation.</p>
+<p><strong>It does not claim the framework is a version of twistor theory, or the reverse.</strong> The two share the spinor module $S=\mathbb{C}^{2}$ and the covering $\mathrm{SL}(2,\mathbb{C})\to SO^{+}(1,3)$, which is older than both. <strong>A shared module is not a shared theory</strong>, and the aims differ: one organises conformal and null structure by complex-projective methods, the other keeps the observable sector real.</p>
+<p><strong>It does not adopt conformal cyclic cosmology.</strong> The hypothesis's extension to aeons is recorded in one paragraph above and used nowhere.</p>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Friedmann–Lemaître Weyl tensor</td>
+<td>all 256 components of $C_{abcd}$, $a(t)$ symbolic</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Friedmann–Lemaître Ricci tensor</td>
+<td>$R_{tt}$</td>
+<td>$-3\ddot a/a\ne0$</td>
+</tr>
+<tr>
+<td>conformal flatness, route one</td>
+<td>$g=\lambda^{2}\eta$</td>
+<td>$C_{abcd}\equiv0$</td>
+</tr>
+<tr>
+<td>Schwarzschild Weyl invariant</td>
+<td>$C_{abcd}C^{abcd}$</td>
+<td>$48M^{2}/r^{6}$</td>
+</tr>
+<tr>
+<td>the same at $M=1$, $r=5$</td>
+<td>numerical</td>
+<td>$3.072\times10^{-3}$</td>
+</tr>
+<tr>
+<td>Schwarzschild Ricci</td>
+<td>all components</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the Weyl spinor's carrier</td>
+<td>$\dim_{\mathbb{C}}\mathrm{sym}^{4}S$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>real components of $C$</td>
+<td>$5$ complex, self-dual and anti-self-dual</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>projective twistor space</td>
+<td>$\dim_{\mathbb{C}}\mathbb{CP}^{3}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>the conformal cover</td>
+<td>$\mathrm{SU}(2,2)\to C(1,3)$</td>
+<td>fourfold</td>
+</tr>
+<tr>
+<td>the interval as a determinant</td>
+<td>$\det(x-y)$ against the Minkowski interval</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>the hypothesis's fine-tuning</td>
+<td>Penrose's estimate</td>
+<td>$10^{-10^{123}}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The Weyl curvature hypothesis is a boundary condition, and this is a corpus that has no principle for boundary conditions.</strong> It says the gravitational field carried no tidal distortion at the bang, that clumping has raised it since, and that the rise is the arrow of time. <strong>Its two supporting computations are exact</strong>: every Friedmann–Lemaître metric has zero Weyl curvature while remaining curved, and a single mass has $C_{abcd}C^{abcd}=48M^{2}/r^{6}$.</p>
+<p><strong>The framework's verdict is a split, and the split is the result.</strong> In the <strong>scale-factor route</strong> every metric is conformally flat, so the hypothesis is true by construction and empty — <strong>the framework in that route has no Weyl curvature to hypothesise about</strong>. In the <strong>frame route</strong> the Weyl tensor is non-zero and is a functional of a frame field the algebra does not generate, so the hypothesis is statable and not derivable. <strong>The framework supplies the carrier, $\mathrm{sym}^{4}S$, and not the value.</strong></p>
+<p><strong>Twistor space is a different theory and not a reformulation.</strong> Points become lines, the light cone becomes incidence, massless fields become cohomology classes, and half-flat spacetimes become deformations of a complex structure. <strong>Because the nonlinear graviton encodes one chirality of the Weyl tensor, the arena built to encode Weyl curvature cannot state the hypothesis about it</strong> — that is the googly problem, and it is where the two halves of this article fail to meet.</p>
+<p><strong>Three senses of the word are collected here and distinguished</strong>: the classical incidence twistor, Alexeyeva's algebraic twistor with its four families and its one idempotent amplitude, and Kassandrov's congruence twistor with its caustic world line. <strong>Two are the same object used twice; one is a homonym.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C_{abcd}$</td>
+<td>the Weyl tensor, the trace-free part of $R_{abcd}$</td>
+</tr>
+<tr>
+<td>$C_{abcd}C^{abcd}$</td>
+<td>its invariant, $48M^{2}/r^{6}$ for Schwarzschild</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>the local scale factor of route one, $g=\lambda^{2}\eta$</td>
+</tr>
+<tr>
+<td>$\tilde E_{\Phi,\mu}$</td>
+<td>the frame field of route two, $g_{\mu\nu}=\langle \tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$</td>
+</tr>
+<tr>
+<td>$T\cong\mathbb{C}^{4}$</td>
+<td>twistor space, $S\oplus\bar S$</td>
+</tr>
+<tr>
+<td>$Z^{\alpha}=(\omega^{A},\pi_{A'})$</td>
+<td>a twistor, two Weyl spinors of opposite chirality</td>
+</tr>
+<tr>
+<td>$\mathbb{PT}=\mathbb{CP}^{3}$</td>
+<td>projective twistor space</td>
+</tr>
+<tr>
+<td>$\omega^{A}=i x^{A}{}_{\bar A}\pi^{\bar A}$</td>
+<td>the incidence relation</td>
+</tr>
+<tr>
+<td>$\mathrm{sym}^{4}S$</td>
+<td>the carrier of the Weyl spinor, complex dimension $5$</td>
+</tr>
+<tr>
+<td>$\mathcal Z(\kappa)$</td>
+<td>the charge's complex world line in the algebrodynamical programme</td>
+</tr>
+<tr>
+<td>$\{\zeta,\tau\}$</td>
+<td>the congruence twistor field, $(Z-\mathcal Z)\zeta=0$, $\tau=Z\zeta$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a>. The two routes to a metric, and the statement that route one is a local scale factor.</li>
+<li><a href="the-newman-penrose-formalism-in-biquaternionic-form.html">The Newman–Penrose Formalism in Biquaternionic Form</a>. The null tetrad, the five Weyl scalars, and the gap: the algebra hosts $\mathrm{sym}^{4}S$ and does not determine it.</li>
+<li><a href="flrw-in-the-frame-route.html">FLRW in the Frame Route</a>. The conformal flatness of the slice metric, computed in the coordinates the frame route uses.</li>
+<li><a href="the-kerr-schild-sub-class-and-the-vacuum-wave.html">The Kerr–Schild Sub-class and the Vacuum Wave</a>. The family in which the frame route's metrics carry a principal null congruence.</li>
+<li><a href="twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a>. The comparison: the shared spinor module, the three module structures on $\mathbb{C}^{4}$, and the divergences in aim.</li>
+<li><a href="congruence-twistors-and-the-fields-they-generate.html">Congruence Twistors and the Fields They Generate</a>. The third sense of the word, developed.</li>
+<li><a href="the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html">The Algebrodynamical Programme</a>. Kassandrov's programme, where the congruence twistor does its work.</li>
+<li><a href="the-so4-route-to-the-euclidean-frame-an-alternative-to-the-imaginary-time-coordinate.html">The SO(4) Route to the Euclidean Frame</a>. Woit's Euclidean twistor unification, recorded there as an external construction.</li>
+<li>R. Penrose, "Singularities and time-asymmetry," in <em>General Relativity: An Einstein Centenary Survey</em> (Cambridge, 1979), 581–638, the hypothesis's source.</li>
+<li>R. Penrose, "Nonlinear gravitons and curved twistor theory," <em>General Relativity and Gravitation</em> <strong>7</strong> (1976) 31–52, for the half-flat construction and the googly problem.</li>
+<li>V. A. Belinskii, I. M. Khalatnikov and E. M. Lifshitz, "Oscillatory approach to a singular point in the relativistic cosmology," <em>Advances in Physics</em> <strong>19</strong> (1970) 525–573, for the generic Weyl-dominated singularity the hypothesis denies.</li>
+<li>R. Penrose, "Palatial twistor theory and the twistor googly problem," <em>Philosophical Transactions of the Royal Society A</em> <strong>373</strong> (2015) 20140237.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

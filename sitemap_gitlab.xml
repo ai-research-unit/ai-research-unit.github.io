@@ -285,6 +285,10 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-cartan-decomposition-every-lorentz-transformation-as-a-boost-and-a-rotation.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -334,10 +338,6 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-conformal-group-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/twistor-theory-and-biquaternions.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -437,14 +437,6 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/noethers-theorem-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -522,6 +514,14 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-sector-map-and-its-exact-parts.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/noethers-theorem-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -818,10 +818,6 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -2145,10 +2141,6 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/congruence-twistors-and-the-fields-they-generate.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-boost-of-an-electromagnetic-plane-wave-as-a-rotation-and-a-dilation.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -2198,10 +2190,6 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/nonlinear-maxwell-equations-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -2850,6 +2838,26 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-weyl-curvature-hypothesis-and-twistor-space-as-the-arena.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/twistor-theory-and-biquaternions.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-instanton-monad-the-euclidean-route-and-the-passages-moved-here.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/congruence-twistors-and-the-fields-they-generate.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
