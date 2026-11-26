@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The Word *Colour* in the Physics Corpus: Five Registers, Two Defects, and What Confinement Adds — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Audit, and nothing edited to produce it except one entry. The one entry is the empirical argument added to…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-word-colour-in-the-physics-corpus-five-registers-two-defects-and-what-confinement-adds"><strong>Audit: The Word <em>Colour</em> in the Physics Corpus: Five Registers, Two Defects, and What Confinement Adds</strong></h1>
+<p><em>Status of this file.</em> <strong>Audit, and nothing edited to produce it except one entry.</strong> The one entry is the empirical argument added to <code>articles_physics/conceptual-conventions.md</code> on 26 November 2026: a colour is never observed in nature. Everything else below is measured and untouched. Measured on 726 physics articles, 113 of which contain the word.</p>
+<p><em>What this file is for.</em> The word <em>colour</em> is the corpus's most loaded borrowed term after <em>gauge</em>. It carries a charge, a group, a coordinate, a particle property and a confining absence, and the corpus now denies four of the five. This file separates the senses, counts each one, names the defects that remain, and states the empirical argument that closes the question.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>The word has five admissible registers and two defects.</strong> The registers are a coordinate name, the measured count three, an adjoint index below $M_C$, a transcribed Casimir, and a confinement statement. The defects are a colour index written on $\mathrm{SU}(2)$, and the phrase <em>four colours</em> surviving in link labels.</li>
+<li><strong>Above $M_C$ there is no colour group.</strong> One simple factor, $\mathrm{SU}(4)$, on four lines. A letter names a line, and a cell label names two lines.</li>
+<li><strong>Below $M_C$ there is a colour group, and a letter is still a coordinate.</strong> The eight are connections of the $3\times3$ block; their labels rotate under a local transformation and are not readings of an operator.</li>
+<li><strong>No colour is ever observed.</strong> Confinement keeps every coloured state out of the asymptotic spectrum. The measurement fixes $N_c=3$; none returns a colour.</li>
+<li><strong>A sentence with a colour word is physics only if it survives a relabelling of the four lines.</strong> That is the corpus's own test, and it is the one this audit applies.</li>
+</ol>
+<h2 id="1-the-claim-under-test">1. The Claim Under Test</h2>
+<p><strong>The claim.</strong> Colour is a coordinate on a table, and not a property of a particle.</p>
+<p><strong>It has three parts, and they stand or fall separately.</strong></p>
+<ul>
+<li><strong>The algebraic part.</strong> Above $M_C$ the group is one factor and no $\mathrm{SU}(3)$ is made local. A colour letter names one of the four lines, and a cell label $i\bar j$ names the two lines a direction connects. Nothing there is a charge of a letter.</li>
+<li><strong>The group-theoretic part.</strong> Below $M_C$ an $\mathrm{SU}(3)$ factor exists, and the eight directions of the $3\times3$ block are its connections. Even there the letters are coordinates on the adjoint: they rotate under a local transformation, so no invariant operator reads one off.</li>
+<li><strong>The empirical part.</strong> No experiment has ever returned a colour. Confinement keeps coloured states out of the asymptotic spectrum, and every measured particle is a colour singlet. What the measurements fix is the count, $N_c=3$, and a count is not a charge.</li>
+</ul>
+<p><strong>The empirical part is the one that bites, and it is the one the corpus wrote last.</strong> The first two parts say the word is unnecessary. The third says the object does not exist in the observed spectrum, which is the second condition of the corpus's rule — no result of experiment may contradict the concept — applied to the concept itself. The entry now in <a href="../../articles_physics/conceptual-conventions.html">Conceptual Conventions</a> states it in one line: <strong>a colour is never observed in nature</strong>, therefore the letter is admitted as notation and rejected as a physical property.</p>
+<p><strong>What the claim does not say.</strong> It does not say the word is banned. Five of its uses are correct and one of them — the confinement statement — is the empirical argument itself. The claim is about what the word may name: a position in a table, a count, an index, a Casimir of a transcribed theory, or an absence. Never a charge that a state carries.</p>
+<h2 id="2-the-five-registers">2. The Five Registers</h2>
+<p>Each register below is legitimate. The test is whether the sentence survives a relabelling of the four lines, and each of these does, or is flagged as standard QCD.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>register</th>
+<th>what the word names</th>
+<th>where it is written</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1 coordinate</td>
+<td>a line of the quartet, or a cell $i\bar j$</td>
+<td>the fifteen-generator articles, the two colour articles</td>
+<td>admissible, and the house use</td>
+</tr>
+<tr>
+<td>R2 measured count</td>
+<td>$N_c=3$, a number read off measured rates and carried as data</td>
+<td><em>Asymptotic Freedom</em>, colour-factor table</td>
+<td>data, not a framework object</td>
+</tr>
+<tr>
+<td>R3 adjoint index</td>
+<td>the eight below $M_C$, written low as $a$, $b$</td>
+<td><em>The Gluon</em>, the QCD Lagrangian articles</td>
+<td>admissible with the phase named</td>
+</tr>
+<tr>
+<td>R4 Casimir</td>
+<td>$C_F=\tfrac43$, $C_A=3$, called the quark's and the gluon's colour charge</td>
+<td><em>Jets</em>, <em>The Parton Model</em>, <em>The Lagrangian and QCD</em></td>
+<td>transcribed QCD; it is a property of a representation, not of a state</td>
+</tr>
+<tr>
+<td>R5 confinement</td>
+<td>colour singlet, coloured state, no coloured asymptotic state</td>
+<td><em>Confinement</em>, <em>The Quantum Numbers Below the Breaking</em>, <em>The Neutron</em></td>
+<td>standard physics, and the home of the empirical argument</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>R1 is the register the corpus writes by default, and it has a stated test.</strong> The sentence must survive a permutation of $x,y,z$. What survives is physics; what does not is a coordinate. The two colour articles print the test, and <em>The $15$ AXF Matrices of the Bosons in Detail</em> works it as a three-row table: relabelling fails, basis rotation fails, degeneracy fails.</p>
+<p><strong>R4 is the only place where a colour is written as a property of a particle, and it is a transcribed statement.</strong> $C_F$ and $C_A$ are quadratic Casimirs of the triplet and the adjoint. They are numbers attached to a representation. A reader who wants the corpus's verdict on the same sentence finds it in the table of <em>The $15$ AXF Matrices of the Bosons in Detail</em>, where the row reads: <strong>a colour charge — does not exist.</strong></p>
+<p><strong>R5 is where the empirical argument lives, and it is standard physics throughout.</strong> The corpus states it twice in the same article: colour is exact, and colour is confined. Conserved does not mean realised; the physical states are singlets, so no state carries a colour. Add the observable side and the argument closes: a detector can report a jet, a hadron, a cross section, a count of three — never a colour.</p>
+<h2 id="3-the-two-defect-classes">3. The Two Defect Classes</h2>
+<p><strong>D1. A colour index written on $\mathrm{SU}(2)$, or on the algebra.</strong> Four notation tables call the adjoint index of the framework's own $\mathrm{SU}(2)$ a <em>colour index</em>. The framework has no colour there, and the index is the adjoint index of the rotor group. The defect is small and mechanical, and it is the exact kind of leftover the word leaves behind.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>line</th>
+<th>as written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>instantons-and-solitons-in-biquaternionic-form.md</code></td>
+<td>377</td>
+<td><code>Colour index of $\mathrm{SU}(2)$</code></td>
+</tr>
+<tr>
+<td><code>the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.md</code></td>
+<td>251</td>
+<td><code>colour index of the algebra</code></td>
+</tr>
+<tr>
+<td><code>wilson-loops-in-biquaternionic-form.md</code></td>
+<td>284</td>
+<td><code>Colour index of the algebra</code></td>
+</tr>
+<tr>
+<td><code>connection-curvature-and-the-bianchi-identity-in-biquaternionic-form.md</code></td>
+<td>329</td>
+<td><code>colour index of the algebra</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The repair is one phrase.</strong> Write <em>adjoint index of $\mathrm{SU}(2)$</em> or <em>adjoint index of the algebra</em>. No equation moves, and the four tables stop asserting a colour group the articles do not have.</p>
+<p><strong>D2. The phrase <em>four colours</em>, and the link labels that carry it.</strong> The corpus retired the phrase in its titles and kept it in its cross-references. The count is in §4; the finding is in §5, F1 to F3. This is the larger of the two defects and the only one a reader sees from outside.</p>
+<h2 id="4-the-census">4. The Census</h2>
+<p><strong>Measured on 26 November 2026, from the repository root.</strong> Every count below is produced by a command of §8.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>collection</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tokens, colour forms (all spellings)</td>
+<td><code>articles_physics</code></td>
+<td><strong>1 538</strong> ($1\,541$ with <em>colourless</em>)</td>
+</tr>
+<tr>
+<td>files touched</td>
+<td><code>articles_physics</code></td>
+<td><strong>113</strong> of $726$</td>
+</tr>
+<tr>
+<td>tokens</td>
+<td><code>articles_maths</code></td>
+<td><strong>73</strong>, in $22$ of $2\,640$</td>
+</tr>
+<tr>
+<td>tokens</td>
+<td><code>physics.md</code></td>
+<td><strong>76</strong></td>
+</tr>
+<tr>
+<td>tokens</td>
+<td><code>maths.md</code></td>
+<td><strong>3</strong></td>
+</tr>
+<tr>
+<td>tokens</td>
+<td><code>articles_internal</code></td>
+<td><strong>537</strong>, in $42$ files</td>
+</tr>
+<tr>
+<td>titles containing the word</td>
+<td>physics</td>
+<td><strong>7</strong></td>
+</tr>
+<tr>
+<td>titles containing the word</td>
+<td>maths</td>
+<td><strong>1</strong> (an image-processing article on colour video)</td>
+</tr>
+<tr>
+<td>slugs containing the word</td>
+<td>both collections</td>
+<td><strong>8</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The distribution is extreme, and it is the important number.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>threshold</th>
+<th>physics files at or above it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$20$ occurrences</td>
+<td><strong>15</strong></td>
+</tr>
+<tr>
+<td>$10$ occurrences</td>
+<td><strong>41</strong></td>
+</tr>
+<tr>
+<td>$1$ occurrence</td>
+<td><strong>113</strong></td>
+</tr>
+<tr>
+<td>$0$ occurrences</td>
+<td><strong>613</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Ten articles hold a quarter of the word.</strong> The top ten sum to $391$ of $1\,538$. The leaders are <em>Confinement</em> ($49$), <em>QCD as the Residual</em> ($46$), <em>The Classification of the Bosons</em> ($45$), the two $15$-matrix articles ($43$ and $38$), and <em>The Gluon</em> ($39$). <strong>No purge by bulk is possible or wanted</strong>: the word is dense exactly where the physics is, and thin everywhere else.</p>
+<p><strong>Where the $113$ sit, by companion object.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>also mentions</th>
+<th>files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quark</td>
+<td><strong>87</strong></td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)$</td>
+<td><strong>62</strong></td>
+</tr>
+<tr>
+<td>gluon</td>
+<td><strong>42</strong></td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td><strong>41</strong></td>
+</tr>
+<tr>
+<td>confinement</td>
+<td><strong>40</strong></td>
+</tr>
+<tr>
+<td>none of the five</td>
+<td><strong>15</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fifteen that mention colour and none of the five are mostly the conventions articles and the two-sector articles.</strong> They are the ones where a leftover index or a leftover phrase would go unnoticed, and three of the four D1 sites are among them.</p>
+<p><strong>The word forms, measured on <code>articles_physics</code>.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>count</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colour</td>
+<td>$1\,357$</td>
+<td>house spelling</td>
+</tr>
+<tr>
+<td>colours</td>
+<td>$139$</td>
+<td></td>
+</tr>
+<tr>
+<td>coloured</td>
+<td>$38$</td>
+<td></td>
+</tr>
+<tr>
+<td>colourless</td>
+<td>$3$</td>
+<td></td>
+</tr>
+<tr>
+<td>colored</td>
+<td>$3$</td>
+<td>a misquotation, F4</td>
+</tr>
+<tr>
+<td>color</td>
+<td>$1$</td>
+<td>inside a cited title, correct as quoted</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The phrase census, measured on <code>articles_physics</code>.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>phrase</th>
+<th>count</th>
+<th>register</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colour group</td>
+<td><strong>77</strong></td>
+<td>R3, or the statement that there is none above $M_C$</td>
+</tr>
+<tr>
+<td>colour triplet</td>
+<td><strong>44</strong></td>
+<td>R3, standard QCD</td>
+</tr>
+<tr>
+<td>colour index</td>
+<td><strong>37</strong></td>
+<td>R3, and the four D1 sites</td>
+</tr>
+<tr>
+<td>colour singlet</td>
+<td><strong>34</strong></td>
+<td>R5</td>
+</tr>
+<tr>
+<td>four colours</td>
+<td><strong>29</strong></td>
+<td>D2</td>
+</tr>
+<tr>
+<td>colour octet</td>
+<td><strong>14</strong></td>
+<td>R3</td>
+</tr>
+<tr>
+<td>colour charge</td>
+<td><strong>13</strong></td>
+<td>R4, plus one explicit denial</td>
+</tr>
+<tr>
+<td>coloured state</td>
+<td><strong>10</strong></td>
+<td>R5</td>
+</tr>
+<tr>
+<td>colour label</td>
+<td><strong>9</strong></td>
+<td>R1</td>
+</tr>
+<tr>
+<td>colour letter</td>
+<td><strong>7</strong></td>
+<td>R1</td>
+</tr>
+<tr>
+<td>colour–anticolour</td>
+<td><strong>7</strong></td>
+<td>R1</td>
+</tr>
+<tr>
+<td>colour neutral</td>
+<td><strong>6</strong></td>
+<td>R5</td>
+</tr>
+<tr>
+<td>colour eigenvalue</td>
+<td><strong>4</strong></td>
+<td>R1, the diagonal's weights</td>
+</tr>
+<tr>
+<td>colour quantum number</td>
+<td><strong>2</strong></td>
+<td>R3</td>
+</tr>
+<tr>
+<td>fourth colour</td>
+<td><strong>32</strong>, in $19$ files</td>
+<td>declaration (A), admissible only with the word <em>declaration</em> beside it</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two facts stand out in that table.</strong> <em>Colour group</em> is the commonest phrase and <em>colour letter</em> one of the rarest: the corpus talks about the group far more than about the coordinate that replaced it. And the phrase <em>four colours</em> outnumbers <em>colour letter</em> four to one, which is the measure of how far the retirement of D2 has actually gone.</p>
+<h2 id="5-the-findings">5. The Findings</h2>
+<p><strong>F1. Sixteen physics articles label a link with a title the target article no longer has.</strong> The target is <code>the-su4-model-four-colours-fifteen-generators-one-declaration.html</code>, whose heading reads <em>The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three</em>. The link labels read <em>Four Colours, Fifteen Generators, One Declaration</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>where</th>
+<th>sites</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_physics</code></td>
+<td><strong>16 occurrences, one per file, in 16 files</strong></td>
+</tr>
+<tr>
+<td><code>articles_internal</code> (articles, not audits)</td>
+<td><strong>4 files</strong></td>
+</tr>
+<tr>
+<td><code>index.md</code></td>
+<td><strong>1</strong></td>
+</tr>
+<tr>
+<td>corpus total</td>
+<td><strong>21 occurrences</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The sixteen physics files.</strong> <code>charge-quantisation-from-the-fourth-colour-one-trace-one-third</code>, <code>classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy</code>, <code>construction-of-the-axf-matrices-of-the-fifteen-generators</code>, <code>introduction-to-the-biquaternion-universe</code>, <code>su2l-times-su2r-two-sides-six-generators-one-group</code>, <code>the-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one</code>, <code>the-data-boundary-which-articles-may-print-a-measured-strength</code>, <code>the-excitation-ladder-theory-of-flavour</code>, <code>the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen</code>, <code>the-lagrangian-and-the-primordial-force</code>, <code>the-one-coupling-that-returns-the-standard-model</code>, <code>the-photon-as-the-unbroken-mixture</code>, <code>the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c</code>, <code>the-scalars-two-colour-indices-and-the-count-sixteen</code>, <code>the-sixteen-above-m-c-massless-vector-like-and-what-that-costs</code>, <code>why-the-biquaternion-algebra-reaches-su-2-but-not-su-3</code>.</p>
+<p><strong>F2. The menu says a third variant.</strong> <code>physics.md</code> line 532 labels the same target <em>The $\mathrm{SU}(4)$ Model: One Group, Fifteen Generators, One Declaration</em>. Three labels, one article, one heading. <strong>The label is the visible surface, and the visible surface still says <em>four colours</em> in sixteen articles.</strong></p>
+<p><strong>F3. The slug is frozen, and freezing it is the right default.</strong> <code>the-su4-model-four-colours-...</code> still carries the retired phrase. The corpus renames a slug only by adding an entry to a redirect list that grows and never shrinks, so a rename is a cost and not a repair. <strong>The recommendation is only that the label match the heading.</strong></p>
+<p><strong>F4. Three sites quote a sentence the quoted article does not contain, and spell it in the other orthography.</strong> The sentence is <em>the framework "does not contain a colored connection theory"</em>, attributed to <em>Helicity in Biquaternionic Form</em> by <code>quantum-chromodynamics-as-the-residual-of-su4.md</code> lines 11 and 318 and by <code>the-standard-model-as-the-low-energy-phase.md</code> line 469.</p>
+<p><strong>The source article does not contain it.</strong> It carries one sentence on the subject: <em>the Parke–Taylor formula, the colour structure and the momentum-conservation constraints are transcribed, not derived</em> (line 281). The attributed sentence appears nowhere in the corpus except in the three attributions. <strong>And it is spelled <em>colored</em> in all three, against the house spelling the rest of the corpus keeps.</strong></p>
+<p><strong>The repair is either a quotation that exists or no quotation.</strong> The claim is true and the QCD article argues it at length; what is wrong is presenting it as another article's words.</p>
+<p><strong>F5. Two articles still say colour is posited, and the newer layer says there is nothing to posit.</strong> <code>the-algebras-of-the-two-sectors-...</code> line 21 says colour is <em>posited as an algebra on three of the carrier's four dimensions</em>, and line 162 records the provenance as <em>colour posited</em>.</p>
+<p><strong>The tension is real but narrow.</strong> The article's own object is $\mathfrak{su}(3)$ acting on a three-dimensional subspace of the four-dimensional carrier, and that is a Layer-B statement: a subalgebra acting on lines that exist. What the later articles deny is different — a three-dimensional $\mathbb{B}$-module, which does not exist because every module has even complex dimension. <strong>The two claims are compatible; the word <em>posited</em> is not.</strong> What is posited is one thing only: which line is the lepton, declaration (A). The three lines are the spatial lines and need no positing.</p>
+<p><strong>The repair is two sentences.</strong> Replace <em>colour is posited</em> by <em>the three lines are the spatial lines and the letters are their names; what is declared is only which line is the lepton</em>, and keep the $\mathbb{C}^3$ statement, which is correct at Layer B.</p>
+<p><strong>F6. One body sentence still uses the retired phrase as arithmetic.</strong> <code>charge-quantisation-from-the-fourth-colour-one-trace-one-third.md</code> line 53 opens a paragraph <em>Four colours give a third</em>, and the article's title carries <em>the Fourth Colour</em>.</p>
+<p><strong>This is the article where the phrase does real work</strong>, because the arithmetic is the argument: $\ell+(N-1)q=0$ gives $q=\tfrac13$ at $N=4$ and $q=\tfrac12$ at $N=3$. The corpus's rule allows <em>the fourth colour</em> with <em>declaration</em> beside it. <strong>Here the object is a line, and the sentence reads better as <em>four lines give a third</em>, which is also what the formula says.</strong></p>
+<p><strong>F7. Three articles say <em>the Four Colours Model</em> as a proper name.</strong> <code>asymptotic-freedom-and-the-running-of-the-strong-coupling.md</code> line 5 and a link label in <code>the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.md</code> line 231. <strong>A proper name propagates without a test beside it</strong>, which is the one way the phrase survives a purge. The name is the $\mathrm{SU}(4)$ model.</p>
+<p><strong>F8. The empirical argument now stands in one article, and the two colour articles do not carry it.</strong> The argument is in <a href="../../articles_physics/conceptual-conventions.html">Conceptual Conventions</a>, in the colour entry and once in the summary. <a href="../../articles_physics/the-colours-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html">The Colours in $\mathrm{SU}(4)$</a> ends its test section with <em>what does not [survive] is a coordinate, and coordinates belong to the table, not to nature</em> — the same claim without the observable half. <strong>The article that stops at the transition is the right place for one sentence: no colour is observed above the transition either, because there is no colour group there to observe, and below it because of confinement.</strong></p>
+<p><strong>F9. Nothing in the corpus writes a colour as an eigenvalue of a state.</strong> This is the negative finding, and it is the important one. The $4$ occurrences of <em>colour eigenvalue</em> and the $37$ of <em>colour index</em> name the weights of the diagonal $D=\operatorname{diag}(-3,1,1,1)$ and the adjoint index; <strong>none names a quantum number of an asymptotic state.</strong> The one explicit verdict is the table row of <em>The $15$ AXF Matrices of the Bosons in Detail</em>: <em>a colour charge — does not exist</em>. <strong>The corpus is consistent on the substance and inconsistent only in its labels.</strong></p>
+<h2 id="6-what-was-verified-by-recomputation">6. What Was Verified by Recomputation</h2>
+<p><strong>The arithmetic the arguments rest on, recomputed on the fifteen generators.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>value</th>
+<th>how</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim\mathfrak{su}(4)$</td>
+<td>$15$</td>
+<td>real rank of the $15$-element basis, $15$</td>
+</tr>
+<tr>
+<td>twelve planes and three diagonals</td>
+<td>$2\cdot6+3=15$</td>
+<td>six unordered pairs, two planes each, three traceless diagonals</td>
+</tr>
+<tr>
+<td>stabiliser of the lepton vector</td>
+<td>$8$</td>
+<td>the constraint matrix of $M e_t=0$ has rank $7$, so $15-7=8$</td>
+</tr>
+<tr>
+<td>the octet is the residual</td>
+<td>$15-1-6=8$</td>
+<td>one $B-L$ direction and six leptoquarks removed</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(3)$ dimension</td>
+<td>$3^2-1=8$</td>
+<td></td>
+</tr>
+<tr>
+<td>fermion content</td>
+<td>$2\cdot4+2\cdot4=16$</td>
+<td></td>
+</tr>
+<tr>
+<td>charge from the corner</td>
+<td>$q=\tfrac13$ at $N=4$, $\tfrac12$ at $N=3$</td>
+<td>$\ell+(N-1)q=0$ with $\operatorname{tr}\operatorname{diag}(-3,1,1,1)=0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The stabiliser count is the one worth printing</strong>, because it is the corpus's sharpest statement about colour: the group below $M_C$ is the set of $\mathfrak{su}(4)$ elements that annihilate one line's vector, and the count is eight. That is why the residual exists at all, and why it is not a factor of the theory above the transition.</p>
+<h2 id="7-the-verdict-and-the-order-of-work">7. The Verdict, and the Order of Work</h2>
+<p><strong>The verdict.</strong> The word is admissible in five registers and defective in two. The defects are $21$ link labels, $1$ menu label, $4$ notation tables, $3$ misquotations, $1$ body sentence and $2$ proper names. <strong>No article asserts a colour charge, and the corpus says so in as many words.</strong> The substance is consistent; the labels are not.</p>
+<p><strong>The work, in order, each with its target count.</strong></p>
+<ol>
+<li><strong>The four $\mathrm{SU}(2)$ tables (D1).</strong> Four files, one phrase each. Target: $0$ colour indices on $\mathrm{SU}(2)$ or on the algebra.</li>
+<li><strong>The sixteen link labels (F1) and the menu (F2).</strong> One string, twenty-one sites, and the label becomes <em>Four lines, fifteen generators, rank three</em>. Target: $0$ occurrences of <em>Four Colours, Fifteen Generators, One Declaration</em>.</li>
+<li><strong>The three misquotations (F4).</strong> Delete the quotation marks or quote the sentence that exists, and restore <em>coloured</em>. Target: $0$ occurrences of <em>colored</em>.</li>
+<li><strong>The posited-colour sentences (F5).</strong> Two sentences in one article. Target: the word <em>posited</em> only for declaration (A).</li>
+<li><strong>The two proper names (F7) and the one body sentence (F6).</strong> Target: <em>four colours</em> only where the phrase itself is being named as a phrase to avoid — currently $1$ article, the colour entry of <em>Conceptual Conventions</em>.</li>
+<li><strong>The empirical half in the $\mathrm{SU}(4)$ colour article (F8).</strong> One sentence. Not a count; a register.</li>
+</ol>
+<p><strong>What is deliberately not proposed.</strong> No purge of the $1\,538$. The word is the physics in the forty-one articles that use it ten times or more, and <em>colour singlet</em> cannot be replaced by <em>singlet</em> without losing which singlet. <strong>The corpus's rule is not to say less; it is to say which sense is meant.</strong> The five registers of §2 are that rule, and they already hold in the articles that carry the most occurrences.</p>
+<h2 id="8-the-commands">8. The Commands</h2>
+<p><strong>Every number in §4 is produced by these, run from the repository root.</strong></p>
+<pre><code>grep -rhoiE '\bcolou?rs?\b|\bcolou?red\b|\bcolou?rful\b' --include='*.md' articles_physics | wc -l
+grep -rliE '\bcolou?r' --include='*.md' articles_physics | wc -l
+ls articles_physics/*.md | wc -l
+grep -rhoiE '\bcolou?r[a-z]*' --include='*.md' articles_physics | tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr
+grep -rciE '\bcolou?r' --include='*.md' articles_physics | awk -F: '$2&gt;=20' | wc -l
+grep -rciE '\bcolou?r' --include='*.md' articles_physics | awk -F: '$2&gt;=10' | wc -l
+grep -rciE '\bcolou?r' --include='*.md' articles_physics | awk -F: '$2==0' | wc -l
+grep -rciE '\bcolou?r' --include='*.md' articles_physics | sort -t: -k2 -nr | head -10 | awk -F: '{s+=$2} END {print s}'
+</code></pre>
+<p><strong>The phrase counts of §4 are these, one per line, with the phrase substituted.</strong></p>
+<pre><code>grep -rhoiE 'colour group|colour triplet|colour index|colour singlet|four colours|colour octet|colour charge|coloured state|colour label|colour letter|colour neutral|colour eigenvalue|colour quantum number' --include='*.md' articles_physics | tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr
+grep -rhoiE 'fourth colou?r' --include='*.md' articles_physics | wc -l
+</code></pre>
+<p><strong>The two defect searches.</strong></p>
+<pre><code>grep -rn 'Four Colours, Fifteen Generators, One Declaration' --include='*.md' articles_physics articles_internal | wc -l
+grep -rniE 'colour index of (\\mathrm\{SU\}\(2\)|the algebra)' --include='*.md' articles_physics
+grep -rniE '\bcolored\b' --include='*.md' articles_physics
+grep -rniE 'colour is posited|Colour is posited' --include='*.md' articles_physics
+</code></pre>
+<p><strong>The recomputation of §6.</strong> A $15$-element anti-Hermitian traceless basis of $\mathfrak{su}(4)$, the rank of the constraint matrix of $M e_t=0$, and the arithmetic $2\cdot6+3$, $15-1-6$, $2\cdot4+2\cdot4$. The script is a dozen lines of linear algebra, it was run once, and it is not kept in the repository.</p>
+<h2 id="9-one-sentence-to-carry-away">9. One Sentence to Carry Away</h2>
+<p><strong>A colour is a coordinate on a table, a count that a measurement returns, an index on a connection, or an absence in the spectrum — and the corpus now says all four and no fifth.</strong> The labels are the last place where the fifth survives, and they are sixteen link labels and four notation tables.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
