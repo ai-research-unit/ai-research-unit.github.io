@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Invariant Density: Which Pairing the Action Can Integrate — Biquaternion Universe</title>
+  <meta name="description" content="The claim. An action is a number. Under the integral it therefore needs a density that is a real scalar, that a local transformation cannot move, and that…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-invariant-density-which-pairing-the-action-can-integrate"><strong>The Invariant Density: Which Pairing the Action Can Integrate</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> An action is a number. Under the integral it therefore needs a density that is a real scalar, that a local transformation cannot move, and that has one sign. Three requirements, and one functional supplies all three: the matrix trace. This article states why, and it states the criterion that decides <em>which</em> trace — the module the field lives on. <strong>The pairing is not chosen by taste; it is read off the transformation law of the field.</strong></p>
+<p><strong>What is established.</strong> Four things. First, the cyclicity of the trace is the whole of the invariance of the curvature's square, and a pairing that is not cyclic has no invariant square to offer. Second, reality and the sign come from the Hermiticity type of the field, so the printed sign and the printed coefficient are one statement and not two. Third, on the biquaternion algebra, $2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ and the matrix trace are the <em>same functional</em>, so there is no conflict at the algebra's own size, and the reason the density is a trace is a statement about the module and not about a symmetry. Fourth, the coefficient $\tfrac12$ in the element form and $\tfrac14$ in the component form are forced by the normalisation of the basis, and a basis whose arrays carry two different trace norms forces a rescaling per array.</p>
+<p><strong>What is not new.</strong> The Yang–Mills density is four lines in any field-theory text. <strong>What the corpus adds is the ordering of the argument</strong>: the requirements first, the functional second, the module third, and the coefficient last. The three fragments existed before this article, in the <a href="the-lagrangian-and-the-non-abelian-connections.html">non-abelian Lagrangian</a>, in <a href="the-machinery-under-the-primordial-action-trace-curvature-ghosts-and-one-loop.html">the machinery under the primordial action</a> and in <a href="the-connection-carrier-of-the-material-sector-why-the-action-is-one-sided.html">the connection carrier</a>, each stated where it was used and none stated before its use. This article puts the three in one place, in the order a reader needs them, and it resolves the one point where the three fragments read differently.</p>
+<p><strong>Why it comes before the forces.</strong> Every force block writes an action, and every action needs this page. A reader who meets the trace argument inside a sector has to accept it from a position in which the sector's own notation is already doing work. <strong>The argument is six paragraphs long and it belongs to no sector.</strong></p>
+<h2 id="the-three-requirements">The Three Requirements</h2>
+<p><strong>A density is integrated, so it must be a number.</strong> The action is</p>
+<p>$$
+S=\int d^4r\;\mathcal{L}, \qquad \mathcal{L}\in\mathbb{R},
+$$</p>
+<p>with $d^4r$ the measure of the frame article and $\mathcal{L}$ a real scalar function. <strong>A biquaternion carries eight real numbers</strong>, so a candidate density that is an element and not a scalar is eight densities at once, and nothing in the theory says how to add them. <strong>Only the scalar part, and only its real part, survives the requirement</strong>, and that is why the corpus writes every Lagrangian as a scalar part or a trace and never as a bare element.</p>
+<p><strong>It must be invariant, because a local transformation is a redundancy and not a change.</strong> If $\tilde Q(R)$ is a group element that depends on the point, then the field's representative moves,</p>
+<p>$$
+F_{\imath\jmath}\longmapsto F_{\imath\jmath}^{\mathrm g}=\tilde QF_{\imath\jmath}\tilde Q^{-1},
+$$</p>
+<p>and the physical configuration does not. <strong>A density that changed under that map would make the action depend on the description</strong>, so the stationarity condition would select a representative and not a field. This is the same requirement the <a href="the-covariant-derivative-and-connection-in-biquaternionic-form.html">covariant derivative</a> meets by construction: the derivative was built so that $D_{\imath}\tilde{Ξ}$ transforms as $\tilde{Ξ}$ does, and the density is built so that the product of two such objects does not transform at all.</p>
+<p><strong>It must have one sign, because the energy is a square.</strong> In the Minkowski section the statement is that the Hamiltonian is bounded below; on the Euclidean section it is that $e^{-S_E}$ converges. <strong>Both are statements about the sign of a sum of squares</strong>, and both fail if the density is indefinite.</p>
+<p><strong>Why the quadratic and nothing else.</strong> Locality, invariance and dimension four leave one functional of the curvature alone. A cubic term vanishes because the trace of an odd number of generators is zero; a term with a derivative of the curvature has dimension five; a term with no curvature is a constant. <strong>So the density is the square, and the whole question is which square.</strong></p>
+<h2 id="cyclicity-is-the-whole-of-the-invariance">Cyclicity Is the Whole of the Invariance</h2>
+<p><strong>The computation is one line, and it is worth writing because it is the entire argument.</strong></p>
+<p>$$
+\operatorname{tr}\Bigl(\sum_{\imath,\jmath}F^{\mathrm g}_{\imath\jmath}F^{\mathrm g}_{\imath\jmath}\Bigr)
+=\operatorname{tr}\Bigl(\sum_{\imath,\jmath}\tilde QF_{\imath\jmath}\tilde Q^{-1}\tilde QF_{\imath\jmath}\tilde Q^{-1}\Bigr)
+=\operatorname{tr}\Bigl(\tilde Q\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr)\tilde Q^{-1}\Bigr)
+=\operatorname{tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr).
+$$</p>
+<p><strong>Three steps and each is a different fact.</strong> The first is the transformation law of the curvature. The second is that $\tilde Q^{-1}\tilde Q=e_t$, so the four factors collapse to two around the square. The third is cyclicity, $\operatorname{tr}(XY)=\operatorname{tr}(YX)$.</p>
+<p><strong>Only the third is at risk in a general pairing.</strong> The first two are properties of the group action and of associativity, and they hold in any associative algebra. <strong>The invariance of the square therefore rests entirely on the pairing being cyclic</strong>, and a pairing that is symmetric but not cyclic has no invariant square.</p>
+<p><strong>A pairing that fails, written out.</strong> Take the bilinear form that reads the scalar part of each factor separately,</p>
+<p>$$
+p(X,Y)=\operatorname{Sc}(X)\,\operatorname{Sc}(Y).
+$$</p>
+<p>It is bilinear, symmetric, real on real elements, and it has no invariant square. <strong>The reason is not subtle</strong>: $\operatorname{Sc}(\tilde QF\tilde Q^{-1})$ is not $\operatorname{Sc}(F)$ when $\tilde Q$ is not central, so the product of two such readings moves under the transformation even though each factor is built from the curvature. <strong>The failure is in the pairing and nowhere else</strong>, which is what makes cyclicity the operative property rather than a technical convenience.</p>
+<p><strong>The general statement.</strong> A pairing $p$ gives an invariant square under the adjoint action exactly when $p(\tilde QX\tilde Q^{-1},\tilde QY\tilde Q^{-1})=p(X,Y)$. <strong>That is the defining property of an invariant bilinear form on a Lie algebra</strong>, and on a matrix algebra the trace supplies it while the scalar part of each factor does not.</p>
+<h2 id="reality-and-where-the-sign-comes-from">Reality, and Where the Sign Comes From</h2>
+<p><strong>The density must be real, and no extra condition is needed for it.</strong> Let $F$ be anti-Hermitian, $F^{\dagger}=-F$, which is the case in the material sector where the connection takes values in $\mathbb{B}_\Phi$. Then $F^2$ is Hermitian, $(F^2)^{\dagger}=F^{\dagger}F^{\dagger}=F^2$, so its trace is real. <strong>Hermiticity of the field is inherited by its square, and the trace of a Hermitian matrix is real.</strong> Nothing was added.</p>
+<p><strong>Positivity is the same fact read one step further.</strong> An anti-Hermitian $F$ has purely imaginary eigenvalues $i\lambda$ with $\lambda$ real, so $F^2$ has eigenvalues $-\lambda^2\le 0$. Equivalently $-F^2=(-iF)^{\dagger}(-iF)$, the product of an operator with its adjoint. <strong>So $\operatorname{tr}(F^2)\le 0$, with equality only for $F=0$, and $-\operatorname{tr}(F^2)\ge 0$</strong>, and the density</p>
+<p>$$
+\mathcal{L}=-\tfrac12\operatorname{tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr)
+$$</p>
+<p>is non-negative. <strong>The minus sign is not a convention independent of the field's Hermiticity</strong>: it is the sign that turns the square of an anti-Hermitian object into a positive number.</p>
+<p><strong>The same number in the other convention.</strong> Let $t_a$ be Hermitian generators and $F_{a,\imath\jmath}$ real, and put $\mathbb{F}_{\imath\jmath}=\sum_a F_{a,\imath\jmath}t_a$. Then $\mathbb{F}$ is Hermitian and $\operatorname{tr}(\mathbb{F}^2)\ge0$, so the positive density is written with a plus,</p>
+<p>$$
+-\tfrac12\operatorname{tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr)
+=\tfrac12\operatorname{tr}\Bigl(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath}\Bigr)
+$$</p>
+<p>with $\mathbb{F}=iF$, the two differing by one factor of $i$ and by nothing else.</p>
+<p><strong>The rule this yields, and it is the rule the corpus needs.</strong> The printed sign belongs to the Hermiticity type of the object it multiplies. <strong>A density written $-\tfrac12\operatorname{tr}(FF)$ is a positive density for anti-Hermitian $F$; a density written $-\tfrac12\operatorname{tr}(\mathbb{FF})$ is a positive density for anti-Hermitian $\mathbb{F}$, and a negative one for Hermitian $\mathbb{F}$.</strong> Every display in the corpus that carries $\operatorname{tr}$ must therefore be read together with the line that fixes the Hermiticity of its generators, and the two displays that print $-\tfrac12\operatorname{tr}(\sum\mathbb{FF})$ and $-\tfrac14\sum_aF_aF_a$ with Hermitian $t_a$ are the second form. <strong>This is the one inconsistency between the three fragments, and it is a sign stated in one convention and read in the other.</strong></p>
+<p><strong>Where positivity is a statement at all.</strong> In the Minkowski section the contraction $\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}$ carries $\varepsilon_{\imath}=(1,-1,-1,-1)$ and is not positive definite: for a solution with $\vec E$ and $\vec B$ it reads $\vec E^2-\vec B^2$. <strong>So positivity is not a property of the Minkowski density</strong>; it is a property of the Euclidean section, where the contraction is with $\delta_{\imath\jmath}$ and the sum is a sum of squares. In Minkowski signature the correct requirement is the weaker one, that the Hamiltonian built from the density be bounded below, and the two requirements agree after the <a href="interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Wick rotation</a>. <strong>Every positivity claim in the corpus is a Euclidean claim, and it is worth saying so once rather than in each sector.</strong></p>
+<h2 id="the-element-pairing-and-the-trace-are-one-functional-at-two-by-two">The Element Pairing and the Trace Are One Functional at Two by Two</h2>
+<p><strong>The corpus carries two pairings, and at the algebra's own size they coincide.</strong> The informational reduction is $2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$, the coefficient of $e_t$ in the product doubled. The matrix trace is $\operatorname{tr}$. On $\mathbb{B}\cong M_2(\mathbb{C})$ the three imaginary units are traceless, so</p>
+<p>$$
+\operatorname{tr}\tilde Q=2\operatorname{Sc}\tilde Q
+\quad\Longrightarrow\quad
+\operatorname{tr}(\tilde Q_1\tilde Q_2)=2\operatorname{Sc}(\tilde Q_1\tilde Q_2).
+$$</p>
+<p><strong>One functional, two notations.</strong> So the sentence "the density is a trace and not the corpus's pairing" cannot mean that the two disagree on $2\times2$ matrices; on that size they are equal term by term, and their cyclicity is one and the same property.</p>
+<p><strong>What the sentence does mean, stated precisely.</strong> The field whose density is wanted is a matrix over $\mathbb{C}^4$ — fifteen $4\times4$ generators, or a quartets-valued spinor — and the biquaternion pairing has no argument of that size. <strong>The obstruction is the dimension of the module and not the symmetry of the pairing.</strong> The corpus's own machinery article says this in one line, and this section is the reason that line holds.</p>
+<p><strong>Two failures that a reader should be able to tell apart.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Failure</th>
+<th>What it looks like</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Symmetry</td>
+<td>the density moves when $\tilde Q$ depends on the point</td>
+<td>the pairing is not invariant under the adjoint action</td>
+</tr>
+<tr>
+<td>Definition</td>
+<td>the pairing has no argument</td>
+<td>the module is larger than the pairing's domain</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The corpus's case is the second, and only the second.</strong> A reader who conflates them will look for a symmetry violation where there is none, and will miss the real statement, which is that the algebra's pairing is available <em>on the algebra</em> and unavailable <em>on the module the force acts on</em>.</p>
+<p><strong>A partial trace is not a way out.</strong> One can take a $2\times2$ sub-block of a $4\times4$ matrix and trace over it. The result is not invariant: a transformation that mixes the sub-block with its complement moves the sub-block's trace while leaving the full trace alone. <strong>So the shortcut fails for the reason invariance always fails, and it is worth naming because it is the mistake a reader makes next.</strong></p>
+<h2 id="the-coefficient-a-normalised-basis-forces">The Coefficient a Normalised Basis Forces</h2>
+<p><strong>With a normalised basis the element form and the component form are the same number.</strong> Let $t_a$ satisfy</p>
+<p>$$
+\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab},
+$$</p>
+<p>and let $\mathbb{F}_{\imath\jmath}=\sum_a F_{a,\imath\jmath}t_a$ with real coefficients. Then</p>
+<p>$$
+\operatorname{tr}\Bigl(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath}\Bigr)
+=\sum_{a,b}\Bigl(\sum_{\imath,\jmath}F_{a,\imath\jmath}F_{b,\imath\jmath}\Bigr)\operatorname{tr}(t_at_b)
+=\tfrac12\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath},
+$$</p>
+<p>so</p>
+<p>$$
+-\tfrac12\operatorname{tr}\Bigl(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath}\Bigr)
+=-\tfrac14\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath}.
+$$</p>
+<p><strong>The $\tfrac14$ is not a choice of convention.</strong> It is what $\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$ forces, and it moves if the normalisation moves. <strong>The two displays that look like two conventions are one number read in two bases</strong>, and the basis is fixed by the requirement that the kinetic term of $A_{a,\imath}$ be canonical. <strong>The sign in the display is the one §<em>Reality, and Where the Sign Comes From</em> fixes</strong>: carried over from the anti-Hermitian reading it makes the density negative on Hermitian generators, and the positive density in this basis is the same expression with a plus. The coefficient and the sign are therefore two separate readings of the same table, and only the coefficient is forced by the normalisation.</p>
+<p><strong>Cross terms appear the moment the basis is not orthonormal.</strong> If $\operatorname{tr}(t_at_b)$ has off-diagonal entries, the density carries $\sum_{a\ne b}F_aF_b\operatorname{tr}(t_at_b)$ and is no longer diagonal in the fields. <strong>The orthonormality is therefore part of the derivation and not a tidying step.</strong></p>
+<p><strong>Two norms and one rescaling that cannot serve.</strong> A basis built from printed arrays whose trace norms differ cannot be normalised by one constant. The primordial block's arrays are exactly of this kind: fourteen with $\operatorname{tr}(G_a^{\dagger}G_a)=2$ and one, the corner, with $12$. <strong>One constant cannot bring both to $\tfrac12$</strong>, so the rescaling is per array,</p>
+<p>$$
+t_a=\frac{iG_a}{\sqrt{2n_a}}, \qquad n_a=\operatorname{tr}(G_a^{\dagger}G_a),
+$$</p>
+<p>and the factor between the two families is $\sqrt{6}$. <strong>A vertex read off $G_a$ instead of $t_a$ is wrong by that factor on the corner and right on the planes</strong>, and no overall rescaling repairs a mismatch that is not overall.</p>
+<p><strong>The sign is a second trap in the same place.</strong> The printed arrays are anti-Hermitian, so $\operatorname{tr}(G_a^2)=-n_a&lt;0$. <strong>A density written on $G_a$ has the wrong sign on every one of the generators</strong>, and the same table that fixes the norm fixes the sign. That is why the normalisation of a basis is one operation and not two: the length, the angle and the sign are all read from $\operatorname{tr}(G_a^{\dagger}G_b)$.</p>
+<p><strong>Why the off-diagonal entries need a rotation and not a rescaling.</strong> A norm fixes an array's length and says nothing about its angle, so two arrays can each be correctly normalised and still fail to be transverse. <strong>The corpus's basis has exactly two such pairs</strong>, and both pair the corner with a colour diagonal; the rotation that removes them is part of the normalisation. <strong>The general statement: orthonormality is a condition on the Gram matrix, and a diagonal rescaling can only fix its diagonal.</strong></p>
+<h2 id="when-the-local-group-acts-on-the-left">When the Local Group Acts on the Left</h2>
+<p><strong>The trace is invariant under conjugation and not under left multiplication.</strong> Two actions of one group element on one element,</p>
+<p>$$
+X\longmapsto \tilde QX\tilde Q^{-1} \qquad\text{and}\qquad X\longmapsto\tilde QX,
+$$</p>
+<p>are both linear and both invertible, and they behave differently under the trace.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Conjugation $\tilde QX\tilde Q^{-1}$</th>
+<th>Left product $\tilde QX$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>multiplicative in the parameter</td>
+<td>yes, an inner automorphism</td>
+<td>no, not an endomorphism</td>
+</tr>
+<tr>
+<td>preserves the trace</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>preserves the star</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>preserves Hermiticity</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The discriminator is a proof and not a numerical accident.</strong> The trace of a commutator vanishes, so conjugation preserves the trace for every $\tilde Q$. The left product changes it whenever $\tilde Q$ is not central, because $\operatorname{tr}(\tilde QX)=\operatorname{tr}(X\tilde Q)$ and that differs from $\operatorname{tr}(X)$ in general. <strong>The corpus checked the first line to a residual of $2\times10^{-15}$ over random elements and random rotors, and the check agrees with the proof</strong>; the proof is what makes it a discriminator.</p>
+<p><strong>What this means for a density.</strong> On the carrier, where the local transformation multiplies the matter field on the left, the trace of a square is <em>not</em> available as a density. <strong>The invariant there is built from the Hermitian form instead</strong>, $\operatorname{tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$, which is invariant because a left multiplication by a unitary element cancels against its adjoint. <strong>The pairing follows the transformation law of the field, and that is the criterion of the article</strong>: the adjoint action wants the trace of a product; the module action wants the Hermitian form.</p>
+<p><strong>Why this is the same criterion as the dimension argument.</strong> In both cases the question is what the field is an element of. <strong>A field in the algebra transforms by conjugation, so the algebra's own trace is available. A field in a module transforms by left multiplication, so only the module's inner product is available. A field in $\mathbb{C}^4$ under a transcribed group transforms by the defining representation, and the trace is again available — on $\mathbb{C}^4$.</strong> One criterion, three answers.</p>
+<h2 id="what-the-density-does-not-decide">What the Density Does Not Decide</h2>
+<p><strong>It fixes the form of the kinetic term and nothing else.</strong> Four statements it does not make.</p>
+<ul>
+<li><em>It fixes no group.</em> The density exists for any compact group whose generators can be traced; whether the algebra <em>contains</em> that group is the ceiling question, and the density is silent. The biquaternion algebra carries $\mathrm{U}(2)$, and $\mathrm{SU}(3)$ is transcribed.</li>
+<li><em>It fixes no running.</em> The coefficient of the classical density is one number; the beta function is a one-loop object computed from the fluctuation determinant.</li>
+<li><em>It fixes no mass gap, and no confinement.</em> Both are non-perturbative statements about the quantum theory.</li>
+<li><em>It fixes no potential.</em> The scalar potential is a separate functional of the scalar, restricted by invariance and dimension but not determined by them.</li>
+</ul>
+<p><strong>It does fix one thing that is often left implicit.</strong> The relative weight of the connection's kinetic term and the matter's kinetic term is not free once both are written on normalised bases; <strong>the single coupling of a gauge theory is the statement that the two weights are one number.</strong> That identity is what the words <em>one force</em> mean, and the density is where it becomes checkable.</p>
+<h2 id="summary">Summary</h2>
+<p>The density an action integrates must be a real scalar, invariant under the local transformation, and of one sign. <strong>One functional supplies all three, the matrix trace, and cyclicity is the whole of the invariance</strong>: the square of the curvature is invariant under $F\mapsto\tilde QF\tilde Q^{-1}$ exactly because $\operatorname{tr}(XY)=\operatorname{tr}(YX)$, and a pairing that is not cyclic has no invariant square.</p>
+<p>Reality and positivity follow from the Hermiticity type and not from extra conditions. <strong>With anti-Hermitian $F$ the square's trace is real and non-positive and the density carries a minus; with Hermitian generators and real coefficients the same number carries a plus.</strong> The sign is one statement with the Hermiticity, and every display must be read with the line that fixes it. <strong>Positivity itself is a Euclidean statement</strong>: in Minkowski signature the contraction is indefinite and the requirement is a bounded Hamiltonian.</p>
+<p>On $\mathbb{B}\cong M_2(\mathbb{C})$ the element pairing $2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ and the trace are the same functional, so there is no conflict at the algebra's size. <strong>The density is a trace because the force acts on a $\mathbb{C}^4$ module, and the algebra's pairing has no argument there</strong>; the obstruction is the module's dimension and not the pairing's symmetry.</p>
+<p>The coefficient is forced by the basis. <strong>$\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$ yields $\tfrac12$ in the element form and $\tfrac14$ in the component form</strong>, and a basis whose arrays carry two trace norms forces a rescaling per array, with a factor of six between the families. Off-diagonal Gram entries are removed by a rotation and not a rescaling.</p>
+<p>When the local group acts on the left, the trace is not available and the Hermitian form is. <strong>The pairing follows the transformation law of the field, and the trace discriminates the two actions exactly.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$</td>
+<td>The biquaternion algebra, $\cong M_2(\mathbb C)$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Phi,\mathbb{B}_\Psi$</td>
+<td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
+</tr>
+<tr>
+<td>$F_{\imath\jmath}$</td>
+<td>Curvature components, $\partial_{\imath}A_{\jmath}-\partial_{\jmath}A_{\imath}+[A_{\imath},A_{\jmath}]$</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_{\imath\jmath}=\sum_aF_{a,\imath\jmath}t_a$</td>
+<td>The same curvature expanded on the normalised basis</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}$</td>
+<td>The matrix trace on the module the field lives on</td>
+</tr>
+<tr>
+<td>$\operatorname{Sc}$</td>
+<td>The coefficient of $e_t$ in an element; $\operatorname{tr}\tilde Q=2\operatorname{Sc}\tilde Q$ on $M_2(\mathbb C)$</td>
+</tr>
+<tr>
+<td>$2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$</td>
+<td>The corpus's informational reduction; equal to $\operatorname{tr}(\tilde Q_1\tilde Q_2)$ at $2\times2$</td>
+</tr>
+<tr>
+<td>$t_a$</td>
+<td>Normalised generators, $\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$</td>
+</tr>
+<tr>
+<td>$G_a$</td>
+<td>Printed arrays, anti-Hermitian, $\operatorname{tr}(G_a^{\dagger}G_a)=n_a$</td>
+</tr>
+<tr>
+<td>$n_a$</td>
+<td>The array's own trace norm; $2$ on the fourteen, $12$ on the corner</td>
+</tr>
+<tr>
+<td>$\mathcal L$</td>
+<td>The density; $-\tfrac12\operatorname{tr}(\sum FF)$, equal to $-\tfrac14\sum_aF_aF_a$</td>
+</tr>
+<tr>
+<td>$d^4r$</td>
+<td>The measure of the frame article</td>
+</tr>
+<tr>
+<td>$\varepsilon_{\imath}=(1,-1,-1,-1)$</td>
+<td>The Minkowski weights of a spacetime contraction</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Mikio Nakahara, <em>Geometry, Topology and Physics</em> (CRC Press, 2nd ed. 2003), for invariant bilinear forms, the Killing form and the trace as the matrix case of it.</li>
+<li>Sidney Coleman, <em>Aspects of Symmetry</em> (Cambridge University Press, 1985), for the trace-versus-other-invariants argument and the sign conventions of Euclidean gauge actions.</li>
+<li>Michael E. Peskin and Daniel V. Schroeder, <em>An Introduction to Quantum Field Theory</em> (Addison-Wesley, 1995), for the normalisation $\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$ and the $\tfrac14$ that follows from it.</li>
+<li>Steven Weinberg, <em>The Quantum Theory of Fields</em>, vol. II (Cambridge University Press, 1996), for the construction of the Yang–Mills density from invariance and dimension alone.</li>
+<li>Chris J. Isham, <em>Modern Differential Geometry for Physicists</em> (World Scientific, 2nd ed. 1999), for the bundle-theoretic reading of the same one-line computation, in which the invariant form on the Lie algebra is the input and the trace is its matrix case.</li>
+<li>John C. Baez and Javier P. Muniain, <em>Gauge Fields, Knots and Gravity</em> (World Scientific, 1994), for the invariant pairing on a Lie algebra and its relation to the trace in a matrix representation.</li>
+<li>Michael F. Atiyah, <em>Geometry of Yang–Mills Fields</em> (Accademia Nazionale dei Lincei, 1979), for the invariant form as the input to the Chern–Weil construction.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
