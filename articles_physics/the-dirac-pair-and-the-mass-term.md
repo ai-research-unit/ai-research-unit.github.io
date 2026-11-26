@@ -6,7 +6,7 @@ A single Weyl spinor is a spin-$\tfrac12$ field of one chirality. It cannot carr
 
 This article states the two Weyl spinors and their actions, forms the Dirac pair, shows why the mass term couples the halves and why the coupling is a parity-respecting bilinear, fixes the chirality grading and its relation to helicity, and states the Majorana option and the sense in which it is a different pairing.
 
-The article assumes *The Two Commuting Complex Triples* and *P, T and the Representation Labels* for the representation labels, *The 2×2 Matrix Model: What It Computes and What It Cannot Show* for the algebra acting on a spinor, and the corpus's field articles for the equations. It does not restate the corpus's conventions for the spinor module, which are fixed in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; the mass's algebraic shape is settled in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, and this article defers to it.
+The article assumes *The Two Commuting Complex Triples* and *P, T and the Representation Labels* for the representation labels, *The $2\times2$ Matrix Model: Determinant and Trace, Two-to-One on the Group* for the algebra acting on a spinor, and the corpus's field articles for the equations. It does not restate the corpus's conventions for the spinor module, which are fixed in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; the mass's algebraic shape is settled in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, and this article defers to it.
 
 ## The Two Weyl Spinors
 
@@ -186,7 +186,7 @@ The corpus's article on the two kinds of mass records an algebra-level equation 
 
 ## Where the Equation Goes
 
-This article stops at the carrier and the coupling. The equation itself — the plane-wave solutions, the spin sums, the non-relativistic reduction and the interpretation of the four components — is *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*, which takes the pair and the mass term proved here as its starting point. The division is deliberate: what is representation theory belongs here, and what is a computation with solutions belongs there.
+This article stops at the carrier and the coupling. The equation itself — the plane-wave solutions, the spin sums, the non-relativistic reduction and the interpretation of the four components — is *The Dirac Equation in Biquaternionic Form: Solutions and the Non-Relativistic Limit*, which takes the pair and the mass term proved here as its starting point. The division is deliberate: what is representation theory belongs here, and what is a computation with solutions belongs there.
 
 ## Summary
 
@@ -211,4 +211,4 @@ A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two in
 - *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form* — the conjugation that the Majorana condition uses.
 - *Chiral Fermions in the Biquaternion Framework* — chirality in the algebra's own terms.
 - *P, T and the Representation Labels* — the exchange of the two spinor representations under parity.
-- *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* — the equation, its solutions and the non-relativistic reduction, which take this article's pair and mass term as their starting point.
+- *The Dirac Equation in Biquaternionic Form: Solutions and the Non-Relativistic Limit* — the equation, its solutions and the non-relativistic reduction, which take this article's pair and mass term as their starting point.

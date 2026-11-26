@@ -228,5 +228,5 @@ The group of unit-norm biquaternions is the set of elements whose quaternionic n
 - B. C. Hall, *Lie Groups, Lie Algebras, and Representations*, 2nd ed., Springer, 2015 — the matrix exponential, its surjectivity on $SL(2,\mathbb{C})$ and the structure of its fibres.
 - S. Lang, *$SL_2(\mathbb{R})$*, Addison-Wesley, 1975 — the same group and its decompositions treated as a working object, with the topology done explicitly.
 - P. Lounesto, *Clifford Algebras and Spinors*, 2nd ed., Cambridge University Press, 2001 — the unit-norm biquaternions as a Clifford group and the identification with $SL(2,\mathbb{C})$.
-- *The Lorentz Group in Biquaternionic Form — Structure and Representations*, §*The Group of Unit-Norm Biquaternions* — the survey's own statement of the closure, the inverse and the dimension.
+- *The Lorentz Group in Biquaternionic Form: Structure and Representations*, §*The Group of Unit-Norm Biquaternions* — the survey's own statement of the closure, the inverse and the dimension.
 - *The Two-Sheeted Cover and the Topology of the Group*, *The Exponential Map from Algebra to Group*, *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* — the three articles that take this group apart.

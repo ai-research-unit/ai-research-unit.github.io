@@ -91,7 +91,7 @@ Because it tells a reader where to look for the missing information. For a boost
 - The product of the boost magnitude and the rotation angle's sign, through $\mu\bar\mu$.
 - The determinant, which is fixed.
 - The trace, $\mu+\mu^{-1}$, and hence $\cosh$ or $\cos$ of the parameter.
-- Whether the element is elliptic, hyperbolic or parabolic in the classification of *The Lorentz Group in Biquaternionic Form — Structure and Representations*.
+- Whether the element is elliptic, hyperbolic or parabolic in the classification of *The Lorentz Group in Biquaternionic Form: Structure and Representations*.
 
 ### What It Does Not Determine
 

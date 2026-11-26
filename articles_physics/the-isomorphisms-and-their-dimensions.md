@@ -81,7 +81,7 @@ A reviewer must not "correct" the assignment by making the three images real, an
 
 It is an isomorphism of associative algebras, and it also carries the corpus's involution ${}^{*}$: the star of an element is the conjugate transpose of its image, $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$. Conjugating the entries on their own is a different operation and is no involution of the algebra: it negates the images of $\vec e_x$ and $\vec e_z$ and leaves $\mathsf{M}_2(\vec e_y)$, whose array is real, untouched, so it maps no element to an element. The remaining conjugations $\natural$, $\bar{\phantom{Q}}$ and ${}^{\flat}$ are carried by explicit formulas, which *Element and Operator Representations: The Three Actions* records and this block uses.
 
-The isomorphism is also not an isometry of the two quadratic forms that live on the two sides. On the algebra side the form is the biquaternion norm $N$. On the matrix side it is the determinant. Those two agree, which is the next statement, but neither is the Minkowski interval; that distinction is the subject of *The 2×2 Matrix Model: What It Computes and What It Cannot Show*.
+The isomorphism is also not an isometry of the two quadratic forms that live on the two sides. On the algebra side the form is the biquaternion norm $N$. On the matrix side it is the determinant. Those two agree, which is the next statement, but neither is the Minkowski interval; that distinction is the subject of *The $2\times2$ Matrix Model: Determinant and Trace, Two-to-One on the Group*.
 
 ### The Determinant Is the Norm
 

@@ -16,7 +16,7 @@ $$
 
 **What this article does.** It writes both pieces, counts the states and the vertices, derives why the Yukawa operator needs the matrix index, extracts the mass matrix after the condensate, and computes the one ratio the sector predicts — the ratio that falsifies it.
 
-**What it does not do.** It does not diagonalise the Yukawa matrix or run the masses; that is [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html)'s, and this article stops where that one begins. **Nor does it repeat the masslessness argument**, which is [The Sixteen Above $M_C$](the-sixteen-above-m-c-massless-vector-like-and-what-that-costs.html)'s.
+**What it does not do.** It does not diagonalise the Yukawa matrix or run the masses; that is [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html)'s, and this article stops where that one begins. **Nor does it repeat the masslessness argument**, which is [The Sixteen Above $M_C$](the-sixteen-above-m-c.html)'s.
 
 ## The Kinetic Term
 
@@ -40,7 +40,7 @@ with $t_{a}$ the fifteen generators in whichever representation the field sits i
 | $\bar{\mathbf4}$ | $2$ per copy value | $8$ | $-t_{a}^{T}$, $4\times4$ |
 | **total** | $16$ | $\mathbf{32}$ | |
 
-**Thirty-two states, sixteen fields, and the pair is what makes a mass possible.** A Dirac mass needs a left-handed and a right-handed field of the same charge, and the content supplies them in conjugate pairs — **which is why the corpus's choice not to write a bare mass is a choice and not a prohibition.** [The Sixteen Above $M_C$](the-sixteen-above-m-c-massless-vector-like-and-what-that-costs.html) states what that choice costs.
+**Thirty-two states, sixteen fields, and the pair is what makes a mass possible.** A Dirac mass needs a left-handed and a right-handed field of the same charge, and the content supplies them in conjugate pairs — **which is why the corpus's choice not to write a bare mass is a choice and not a prohibition.** [The Sixteen Above $M_C$](the-sixteen-above-m-c.html) states what that choice costs.
 
 **The current the kinetic term produces.**
 
@@ -163,6 +163,6 @@ $$
 ## Further Reading
 
 - [The Yukawa Sector of the $\mathrm{SU}(4)$ Model](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). The diagonalisation this article stops short of, and the falsification in full.
-- [The Sixteen Above $M_C$](the-sixteen-above-m-c-massless-vector-like-and-what-that-costs.html). Why the content is massless above the transition, and what the vector-like pairing costs.
+- [The Sixteen Above $M_C$](the-sixteen-above-m-c.html). Why the content is massless above the transition, and what the vector-like pairing costs.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). Both pieces inside the full display.
-- [The Primordial Coupling](the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html). $g_4$ at $M_X$, from which $v_{C}$ is computed here.
+- [The Primordial Coupling](the-primordial-coupling.html). $g_4$ at $M_X$, from which $v_{C}$ is computed here.

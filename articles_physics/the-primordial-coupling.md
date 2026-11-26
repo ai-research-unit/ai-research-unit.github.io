@@ -1,4 +1,4 @@
-# __The Primordial Coupling: $g_4$ as a Boundary Condition, and What Runs Above $M_C$__
+# __The Primordial Coupling: $b_0=\tfrac{26}{3}$, Asymptotic Freedom, and $\alpha_4$ Falling to $0.0165$__
 
 ## Introduction
 
@@ -244,4 +244,4 @@ The model has one connection coupling and this article computes what it does abo
 - [Why There Is No Confinement Above $M_C$](why-there-is-no-confinement-above-m-c.html). The mechanism, which cites this article for the number.
 - [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html). The census that fixes the scalar content the coefficient counts, and the article that establishes the multiplet is one Hermitian matrix and not a complex one.
 - [The Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter.html). What $\rho=1$ does and does not rest on here, which is a statement about the scalar sector and not about $g_4$.
-- [The Threshold Scales: $M_C$, $M_W$ and What Would Fix Them](the-threshold-scales-mc-mw-and-what-would-fix-them.html). The free scale this article takes from the leptoquark bound.
+- [The Threshold Scales: $M_C$, $M_W$ and What Would Fix Them](the-threshold-scales.html). The free scale this article takes from the leptoquark bound.

@@ -77,7 +77,7 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 - *A spectrum of bound states.* Glueballs and singlet composites need the theory to exist at the scale where they form. **At $1.8\ \mathrm{GeV}$ the relevant theory is the Standard Model's strong sector**, whose own bound states are the hadrons.
 - *A phase transition, or none.* QCD confines without a transition; the primordial theory would have to confine across one, and it does not reach the scale.
 
-**What replaces confinement above $M_C$ is a weakly coupled plasma of the model's own content.** Fifteen massless vectors, thirty-two fermion states, sixteen scalars, all perturbative, with $\alpha_4/\pi=0.018$ at the transition. **The tree-level rates of the block are legitimate for exactly this reason**, and [The Primordial Coupling](the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html) supplies the number.
+**What replaces confinement above $M_C$ is a weakly coupled plasma of the model's own content.** Fifteen massless vectors, thirty-two fermion states, sixteen scalars, all perturbative, with $\alpha_4/\pi=0.018$ at the transition. **The tree-level rates of the block are legitimate for exactly this reason**, and [The Primordial Coupling](the-primordial-coupling.html) supplies the number.
 
 ## The Analogy That Fails, and Why It Is Worth Stating
 
@@ -132,7 +132,7 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 
 ## Further Reading
 
-- [The Primordial Coupling](the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html). The coefficient, the solution and the Landau pole this article's numbers come from.
+- [The Primordial Coupling](the-primordial-coupling.html). The coefficient, the solution and the Landau pole this article's numbers come from.
 - [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). The QCD comparison row, and the coefficient $11-\tfrac23N_f$ set beside $\tfrac{20}{3}$.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What happens at $M_C$, where this article's phase ends.
 - [The $\mathrm{SU}(4)$ Instanton](the-su4-instanton-a-matrix-transcription-outside-the-algebra.html). The non-perturbative effect that exists without confinement.

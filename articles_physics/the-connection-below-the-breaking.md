@@ -1,4 +1,4 @@
-# __The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies__
+# __The Connection Below the Breaking: Three Pieces, Three Couplings, and One Relation from Orthogonality__
 
 ## Introduction
 
@@ -54,7 +54,7 @@ with $T^{A}$ the fifteen anti-Hermitian generators of $\mathfrak{su}(4)$. **No $
 
 **1.2 Fifteen and one.** Fifteen connections, because there are fifteen generators. One coupling, because there is one simple factor. A simple group has one coupling by definition — the generators of $\mathrm{SU}(4)$ cannot carry different couplings without breaking the invariance that makes them a basis of one algebra.
 
-**1.3 Why "fifteen and one" matters.** Any statement that separates couplings above $M_C$ — "the leptoquark coupling is different from the gluon coupling", "the weak coupling is a second parameter" — is false, because there is one parameter. **Below $M_C$ the four factors are not equal in status.** The strong group and $B-L$ are subalgebras of the algebra that carried $g_4$, so their couplings are $g_4$ by inheritance, exactly. The weak pair is not a subalgebra: it is born at $M_C$ with the index, and its two couplings are free parameters whose equality to $g_4$ is the corpus's threshold assumption and not a derivation — [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) says where that assumption fails.
+**1.3 Why "fifteen and one" matters.** Any statement that separates couplings above $M_C$ — "the leptoquark coupling is different from the gluon coupling", "the weak coupling is a second parameter" — is false, because there is one parameter. **Below $M_C$ the four factors are not equal in status.** The strong group and $B-L$ are subalgebras of the algebra that carried $g_4$, so their couplings are $g_4$ by inheritance, exactly. The weak pair is not a subalgebra: it is born at $M_C$ with the index, and its two couplings are free parameters whose equality to $g_4$ is the corpus's threshold assumption and not a derivation — [The Matching at $M_C$](matching-at-m-c.html) says where that assumption fails.
 
 **1.4 The reality condition.** Each connection is real, each generator anti-Hermitian in the physicists' convention or Hermitian with the $i$ absorbed, and the whole expression is anti-Hermitian: $D^\dagger=-D$. That is what makes $D_\mu$ a derivative rather than a field, and it is the reason the algebra's anti-Hermitian subspace is the one that carries the connection.
 

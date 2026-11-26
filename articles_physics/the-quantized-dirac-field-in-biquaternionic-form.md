@@ -341,7 +341,7 @@ Distributing the outer $i$ with $i^2=-1$ gives the equivalent numerator $-\tilde
 ## Companion Articles
 
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the mode expansion, the anticommutation relations and the normal-ordered observables whose quantization this article continues.
-- Companion article *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*, for the biquaternion plane waves $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ and the spin sums.
+- Companion article *The Dirac Equation in Biquaternionic Form: Solutions and the Non-Relativistic Limit*, for the biquaternion plane waves $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ and the spin sums.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the spin–statistics connection and the $2\pi$ sign that the grading and the anticommutator share.
 - Companion article *The Feynman Propagator in Biquaternionic Form*, for the momentum-space two-point function and the deformation of the mass shell.
 - Companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, for the invariant current and the fixed units its bilinear carries.

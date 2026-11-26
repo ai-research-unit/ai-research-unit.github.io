@@ -51,7 +51,7 @@ $$
 i\mathcal{M}=i\,\frac{g_4^{2}}{2M_X^{2}}\Bigl[(\bar q\,\gamma^{\imath}P_L\ell)(\bar q'\,\gamma_{\imath}P_L\ell')+(L\to R)\Bigr],
 $$
 
-**with the factor $\tfrac12$ carried in the corpus's operator; it is not a sum over the triplet index**, and the sum over the triplet index was disposed of in the paragraph above. The $V-A$ at each vertex is the model's: the left-handed block couples $P_{L}$, the right-handed block $P_{R}$, and both appear because both chiralities of the mixed plane exist. **The operator is the one the corpus prints in [the lepton-flavour article](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html), and the $L\to R$ line is not an afterthought**: it is the second of the two planes of the pair.
+**with the factor $\tfrac12$ carried in the corpus's operator; it is not a sum over the triplet index**, and the sum over the triplet index was disposed of in the paragraph above. The $V-A$ at each vertex is the model's: the left-handed block couples $P_{L}$, the right-handed block $P_{R}$, and both appear because both chiralities of the mixed plane exist. **The operator is the one the corpus prints in [the lepton-flavour article](lepton-flavour-in-the-su4-model.html), and the $L\to R$ line is not an afterthought**: it is the second of the two planes of the pair.
 
 **Why $K_L$ and not $K_S$.** The kaon is a pseudoscalar, so only the axial part of a $V-A$ current contributes, and the axial matrix element is odd under $K^{0}\leftrightarrow\bar K^{0}$. **With $K_S$ the symmetric combination and $K_L$ the odd one, the odd combination survives and the even one cancels**: the frame predicts $K_L\to\mu e$ and forbids $K_S\to\mu e$ at leading order, with a residue at the $|\epsilon_K|^{2}$ level near $10^{-20}$. **That is a selection rule of the algebra plus one fact about a kaon, and neither is adjustable.**
 
@@ -199,7 +199,7 @@ $$
 
 - [The Feynman Rules of the $\mathrm{SU}(4)$ Model](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The vertices these three diagrams use, and the normalisation that produced $C_F$.
 - [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The matrices behind the two leptoquark vertices, with their charges.
-- [Lepton Flavour in the $\mathrm{SU}(4)$ Model: Nothing Turns the Lepton](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The operator, the rate, the $K_L$–$K_S$ selection and the assumption about $U$ in full.
+- [Lepton Flavour in the $\mathrm{SU}(4)$ Model: No Generator Joins the Two Copies](lepton-flavour-in-the-su4-model.html). The operator, the rate, the $K_L$–$K_S$ selection and the assumption about $U$ in full.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The six states, the $B-L=\pm\tfrac43$, and the dimension-nine argument.
 - [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The $C_F$, $T_R$, $N_c$ bookkeeping in its own setting.
 - [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html). The contraction that turns a vertex into an amplitude.

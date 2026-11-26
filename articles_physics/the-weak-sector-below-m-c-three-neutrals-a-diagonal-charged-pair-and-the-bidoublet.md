@@ -1,4 +1,4 @@
-# __The Weak Sector Below $M_C$: Three Neutrals of Rank Two, a Diagonal Charged Pair, and the Bidoublet That Would Mix Them__
+# __The Weak Sector Below $M_C$: Three Neutrals of Rank Two, a Charged Pair, and $\rho=1$ at Tree Level__
 
 ## Introduction
 
@@ -322,7 +322,7 @@ what the doublet index supplies plus $B'$, counted from $M_C$ down.
 The grid, the ledger and the fates of all fifteen — the article this one is cut from.
 - [The Photon as the Unbroken Mixture: One Null Direction, Three Parents](the-photon-as-the-unbroken-mixture.html). The same null direction derived three
 ways.
-- [The Mass Matrix of the Fifteen Connection](the-mass-matrix-of-the-fifteen-connections-the-u3-kernel-and-the-sextet.html). What the model itself
+- [The Mass Matrix of the Fifteen Connection](the-mass-matrix-of-the-fifteen-connections.html). What the model itself
 fixing conditions, and why the weak directions have no row there.
 - [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-and-the-three-neutral-states.html). The angle that the null direction leaves free.
 - [The Scalar Content: One Quartet, One Doublet, Eight Survivors](the-scalar-content-one-matrix-and-ten-survivors.html). Why no field in

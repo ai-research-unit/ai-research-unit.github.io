@@ -119,7 +119,7 @@ $$
 \mathbf 8=\mathbf 1\oplus\mathbf 1'\oplus 3\cdot\mathbf 2 .
 $$
 
-**Four invariant directions against one.** The fifteen carry four $S_3$-invariant directions and the eight carry one; the three that are lost are exactly the directions along $t$. **A frame permuted by $S_3$ needs a line outside the permutation to absorb the trace, and the eight has no such line** — [The Symmetric Diagonal Frame of the Fifteen](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves this in two independent ways and is the reference for the whole section.
+**Four invariant directions against one.** The fifteen carry four $S_3$-invariant directions and the eight carry one; the three that are lost are exactly the directions along $t$. **A frame permuted by $S_3$ needs a line outside the permutation to absorb the trace, and the eight has no such line** — [The Symmetric Diagonal Frame of the Fifteen](the-symmetric-diagonal-frame-of-the-fifteen.html) proves this in two independent ways and is the reference for the whole section.
 
 **Five. What this means for the phrase $8+1+6$.** It names a **degeneration**, at one value of $v_t$, and writing it as a sum writes the limit as though it were a structure. **Above $M_C$ there is no $v_t$ to set and no line to delete**, so there is no eight: the fifteen are one adjoint, twelve planes and three diagonals, and this article is written entirely above that scale. **Below $M_C$ the vacuum itself picks the degenerate value**, and that is where the word *eight* earns its place.
 

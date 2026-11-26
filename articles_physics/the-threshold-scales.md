@@ -1,4 +1,4 @@
-# __The Threshold Scales: One Transition at $M_C$, One Measured Weak Scale, and What Would Fix $M_C$__
+# __The Threshold Scales: One Breaking, the Bound from $K_L\to\mu e$, and Four Routes to a Value__
 
 ## Introduction
 
@@ -27,7 +27,7 @@ $$
 
 **What the article does not establish.** No numerical value for $M_C$. The number attached to the bound, its inputs and its spread are in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html), and the process itself in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
-**Where the order comes from.** [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) owns the statement that the chain requires this ordering. This article owns the status of each number.
+**Where the order comes from.** [The Matching at $M_C$](matching-at-m-c.html) owns the statement that the chain requires this ordering. This article owns the status of each number.
 
 ## Two Scales, Two Statuses
 
@@ -67,7 +67,7 @@ $$
 
 ## Why There Is One Transition and Not Two
 
-**One vacuum, one breaking, two factors at once.** Argued in full in [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html); restated here because it changes what "the scales" means.
+**One vacuum, one breaking, two factors at once.** Argued in full in [The Matching at $M_C$](matching-at-m-c.html); restated here because it changes what "the scales" means.
 
 **5.1 The rank-one vacuum.** $Ξ$'s vacuum is a line in the carrier, and the model breaks once, at one scale. Above $M_C$ there is one factor, $\mathrm{SU}(4)$, of rank three and dimension fifteen; below it there are two, $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$, of dimension twelve and the same rank.
 
@@ -152,7 +152,7 @@ $$
 
 - [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html). The numbers attached to the bounds, and the failure of the running.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The process that sets $M_C$.
-- [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). Why the chain requires this ordering and why two of the scales coincide.
+- [The Matching at $M_C$](matching-at-m-c.html). Why the chain requires this ordering and why two of the scales coincide.
 - [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html). The running that turns a scale into a prediction.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The inversion of §*What Would Fix a Scale Rather Than Bound It*, read as a mass mechanism.
 - [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html). The ratio the chain does not explain.

@@ -1,4 +1,4 @@
-# __Matching at $M_C$: The Four Quantities That Cross, and Where the Masses Come From__
+# __Matching at $M_C$: Four Quantities Cross, and Every Mass Comes from the Vacuum That Made It__
 
 ## Introduction
 
@@ -29,7 +29,7 @@ $$
 
 **Not established.** The numerical value of the mega coupling. **It is fixed by a boundary condition the corpus already says fails, and that is the corpus's defect rather than one introduced here.** The migration is about origins rather than about unification.
 
-**Where the rest is.** The construction that produces the group at $M_C$ is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The breaking that produces the group factor is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The sextet's mass and bound are [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). **Everything below the matching is the existing corpus**, beginning with §*The Scale Ledger* below and continuing with [The Mass Matrix of the Fifteen Connections](the-mass-matrix-of-the-fifteen-connections-the-u3-kernel-and-the-sextet.html).
+**Where the rest is.** The construction that produces the group at $M_C$ is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The breaking that produces the group factor is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The sextet's mass and bound are [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). **Everything below the matching is the existing corpus**, beginning with §*The Scale Ledger* below and continuing with [The Mass Matrix of the Fifteen Connections](the-mass-matrix-of-the-fifteen-connections.html).
 
 ## The Interface: Four Quantities Cross, and One Number Is Matched
 

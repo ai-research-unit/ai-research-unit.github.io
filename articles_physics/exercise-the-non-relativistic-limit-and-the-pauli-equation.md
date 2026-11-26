@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is one of the worked exercises attached to the article *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*. That article states the two forms of the biquaternion Dirac equation, constructs the plane-wave solutions of the one-sided pair, and carries the pair into the non-relativistic regime far enough to exhibit the Pauli equation and the gyromagnetic factor $g=2$. This exercise takes the limiting procedure as given and executes it in full: every order that contributes to the first corrections is kept, every coefficient is derived, and every claim is checked.
+This is one of the worked exercises attached to the article *The Dirac Equation in Biquaternionic Form: Solutions and the Non-Relativistic Limit*. That article states the two forms of the biquaternion Dirac equation, constructs the plane-wave solutions of the one-sided pair, and carries the pair into the non-relativistic regime far enough to exhibit the Pauli equation and the gyromagnetic factor $g=2$. This exercise takes the limiting procedure as given and executes it in full: every order that contributes to the first corrections is kept, every coefficient is derived, and every claim is checked.
 
 Five problems are worked:
 
@@ -582,7 +582,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 - W. Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 2000), for a step-by-step Foldy–Wouthuysen elimination and Pauli limit.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the fine structure and the hydrogen spectrum.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the two forms and the mass term.
-- [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html), the parent of this exercise, for the Pauli limit at leading order.
+- [The Dirac Equation in Biquaternionic Form: Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html), the parent of this exercise, for the Pauli limit at leading order.
 - [The Foldy–Wouthuysen Transformation in Biquaternionic Form](the-foldy-wouthuysen-transformation-in-biquaternionic-form.html), for the transformation in the algebra.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the sector structure and the observables.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the gradient, its conjugate, the d'Alembertian and the covariant gradient.

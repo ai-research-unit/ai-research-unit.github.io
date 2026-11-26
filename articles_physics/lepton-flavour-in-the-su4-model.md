@@ -1,4 +1,4 @@
-# __Lepton Flavour in the $\mathrm{SU}(4)$ Model: Nothing Turns the Lepton, and the Matrix That Would Have To__
+# __Lepton Flavour in the $\mathrm{SU}(4)$ Model: No Generator Joins the Two Copies__
 
 ## Introduction
 
@@ -29,7 +29,7 @@ $$
 
 **The $\Delta F=0$ term exists and is unobservable.** The diagonal part of the operator shifts the short-distance $d$–$e$ and $s$–$\mu$ couplings by a relative amount of order $(v/M_X)^{2}=1/32$, **and no measurement reaches it**, because the same operator's off-diagonal part is what the experiments are built to see and the diagonal part is a renormalisation of a coupling.
 
-## Why Nothing Turns the Lepton
+## Why No Generator Joins the Two Copies
 
 **The split is temporal against spatial.** The quartet splits canonically as
 

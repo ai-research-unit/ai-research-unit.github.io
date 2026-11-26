@@ -1,4 +1,4 @@
-# __The Null Four-Momentum: What the Cone Derives and What Must Be Added__
+# __The Null Four-Momentum: The Cone Derives $c$, the Mass Term Is Added__
 
 ## Introduction
 

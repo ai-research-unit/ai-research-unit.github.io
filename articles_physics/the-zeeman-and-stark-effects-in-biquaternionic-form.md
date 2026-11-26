@@ -16,7 +16,7 @@ The notation is the series notation: $\tilde{S}_{\Psi,k} =\frac{h}{4\pi}i\vec e_
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the spin observable and its coupling to a field.
 - Companion article *Quantum Physics in Biquaternionic Form*, for the two-level algebra and the plain form.
-- Companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*, for the atomic levels and the electric-dipole matrix element.
+- Companion article *The Hydrogen Atom in Biquaternionic Form: The Non-Relativistic Case*, for the atomic levels and the electric-dipole matrix element.
 - Companion article *Exercise: Measuring Spin Along an Arbitrary Direction*, for the spin observable along an arbitrary axis.
 
 ## The Zeeman Effect
@@ -178,7 +178,7 @@ $$
 
 which defines the polarizability tensor $\alpha_{ij} = 2\sum_{n_{\mathrm{mag}}\neq 0}\frac{\langle 0|d_i|n_{\mathrm{mag}}\rangle\langle n_{\mathrm{mag}}|d_j|0\rangle}{E_{n_{\mathrm{mag}}}-E_0}$ through $\delta E_0 = -\tfrac12\alpha_{ij}E_iE_j$. The two-level formula $\alpha =\frac{2\,d^{2}}{hf_{\mathrm{frq},0}}$ is the single-term version with one intermediate state. In the algebra the sum is over the spectral resolutions of the intermediate states, and the structure of the expression is the standard one: the coupling enters twice, once in the matrix element and once in the energy denominator, and the overall sign is negative because the ground state is pushed down by the admixture of the excited states.
 
-For the hydrogen ground state the sum gives the standard result $\alpha_{\mathrm H} = \tfrac92 a_0^3$ in atomic units, i.e. $\alpha_{\mathrm H} = 4\pi\epsilon_0\cdot\tfrac92 a_0^3$ in SI; the $2p$ states dominate the sum, which is why the two-level truncation with the $1s$–$2p$ matrix element and the $1s$–$2p$ splitting already gives the correct order of magnitude. The framework does not evaluate the sum: the dipole matrix elements and the level spacings are data of the atomic problem, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*.
+For the hydrogen ground state the sum gives the standard result $\alpha_{\mathrm H} = \tfrac92 a_0^3$ in atomic units, i.e. $\alpha_{\mathrm H} = 4\pi\epsilon_0\cdot\tfrac92 a_0^3$ in SI; the $2p$ states dominate the sum, which is why the two-level truncation with the $1s$–$2p$ matrix element and the $1s$–$2p$ splitting already gives the correct order of magnitude. The framework does not evaluate the sum: the dipole matrix elements and the level spacings are data of the atomic problem, treated in the companion article *The Hydrogen Atom in Biquaternionic Form: The Non-Relativistic Case*.
 
 ### The Avoided Crossing
 

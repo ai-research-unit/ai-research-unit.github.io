@@ -135,7 +135,7 @@ The parent's two settings are different equations, and the variational principle
 
 **The operator setting.** $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi/2m+V$. The equation is the ordinary Schrödinger equation, a partial differential equation. The action is the same expression with the operator in the coupling and an integral over $r'_t$ and the three space coordinates, and its Euler–Lagrange equation is the same equation, now a field equation. Its solution is not a finite product of exponentials, and the closed form of the constant setting does not apply.
 
-**No transfer.** A statement about the constant setting is not a statement about the operator setting. The conserved energy of the previous section is a number in the first and a density in the second. The closed-form propagator of the first has no counterpart in the second. The variational principle is stated for the constant setting here; the operator setting's action is the standard field-theoretic one with a central operator, and its working out belongs to *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* and to the companion article's Madelung section.
+**No transfer.** A statement about the constant setting is not a statement about the operator setting. The conserved energy of the previous section is a number in the first and a density in the second. The closed-form propagator of the first has no counterpart in the second. The variational principle is stated for the constant setting here; the operator setting's action is the standard field-theoretic one with a central operator, and its working out belongs to *The Hydrogen Atom in Biquaternionic Form: The Non-Relativistic Case* and to the companion article's Madelung section.
 
 ## The Variation: The Two Writings from the Action
 
@@ -332,7 +332,7 @@ The article adds a compact statement, one derivation of the two currents, and a 
 - [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the stress tensor named in the fourth section.
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), for the general statement of the construction used twice here.
 - [The Non-Quantum Limit of the Action Principle and the Lagrangian](the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.html), for the action and the Legendre transform in the non-quantum setting.
-- [The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html), for the operator setting.
+- [The Hydrogen Atom in Biquaternionic Form: The Non-Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html), for the operator setting.
 - [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), for the anti-Hermiticity that the flow's unitarity is.
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the standard action and the standard variation.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the first-order Schrödinger action and its antisymmetrisation.

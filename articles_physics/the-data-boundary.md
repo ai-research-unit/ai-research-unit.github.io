@@ -1,4 +1,4 @@
-# __The Data Boundary: Which Articles May Print a Measured Strength, and Why__
+# __The Data Boundary: Two Claims, Sixteen Measured Strengths, and a Deletion Test__
 
 ## Introduction
 
@@ -116,4 +116,4 @@ The permission has four edges drawn, and the sharpest is the fourth: the low-ene
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The single claim, its arithmetic, its failure, and the Yukawa sector under the same test.
 - [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-and-the-three-neutral-states.html). The second claim: the mixing as a ratio, with the form the generators fix.
 - [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The frame, stated with every strength a symbol.
-- [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The chain, with the coupling block kept in the coupling article.
+- [The Matching at $M_C$](matching-at-m-c.html). The chain, with the coupling block kept in the coupling article.

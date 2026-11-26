@@ -138,7 +138,7 @@ One caution belongs here, because it is the reason the tensor product is an assu
 
 ## The Clebsch–Gordan Series
 
-Let $V_{s_{\mathrm{tot}}}$ denote the rotation multiplet of spin $s_{\mathrm{tot}}$, $s_{\mathrm{tot}}\in\tfrac12\mathbb{Z}_{\geq0}$, of complex dimension $2s_{\mathrm{tot}}+1$: the representation carried by $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ with $s_{\mathrm{tot},z}=-s_{\mathrm{tot}},\dots,s_{\mathrm{tot}}$, and the irreducible module of highest weight $2s_{\mathrm{tot}}$ in the labelling of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*. For the polynomial representations of the rotation group the decomposition of a tensor product — the **Clebsch–Gordan series** — is
+Let $V_{s_{\mathrm{tot}}}$ denote the rotation multiplet of spin $s_{\mathrm{tot}}$, $s_{\mathrm{tot}}\in\tfrac12\mathbb{Z}_{\geq0}$, of complex dimension $2s_{\mathrm{tot}}+1$: the representation carried by $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ with $s_{\mathrm{tot},z}=-s_{\mathrm{tot}},\dots,s_{\mathrm{tot}}$, and the irreducible module of highest weight $2s_{\mathrm{tot}}$ in the labelling of the companion article *The Lorentz Group in Biquaternionic Form: Structure and Representations*. For the polynomial representations of the rotation group the decomposition of a tensor product — the **Clebsch–Gordan series** — is
 
 $$
 \boxed{\;V_{s_1}\otimes V_{s_2}\;\cong\;\bigoplus_{s_{\mathrm{tot}}=|s_1-s_2|}^{s_1+s_2}V_{s_{\mathrm{tot}}}\;},
@@ -160,7 +160,7 @@ $$
 1\otimes1=2\oplus1\oplus0,\qquad 9=5+3+1 .
 $$
 
-This is the Clebsch–Gordan rule of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, whose representations of the rotation algebra are the same $V_{s_{\mathrm{tot}}}$; in its polynomial form the rule is the statement that $V_{1/2}^{\otimes2}\cong V_1\oplus V_0$ and $V_{1/2}^{\otimes3}\cong V_{3/2}\oplus2V_{1/2}$.
+This is the Clebsch–Gordan rule of the companion article *The Lorentz Group in Biquaternionic Form: Structure and Representations*, whose representations of the rotation algebra are the same $V_{s_{\mathrm{tot}}}$; in its polynomial form the rule is the statement that $V_{1/2}^{\otimes2}\cong V_1\oplus V_0$ and $V_{1/2}^{\otimes3}\cong V_{3/2}\oplus2V_{1/2}$.
 
 The coupled states are the linear combinations
 

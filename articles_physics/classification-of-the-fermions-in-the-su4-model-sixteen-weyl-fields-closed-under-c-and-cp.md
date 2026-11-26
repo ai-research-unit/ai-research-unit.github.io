@@ -1,4 +1,4 @@
-# __Classification of the Fermions in the $\mathrm{SU}(4)$ Model: One Generation, Sixteen Weyl Fields, Thirty-Two States, Closed Under $C$ and Under $CP$__
+# __Classification of the Fermions in the $\mathrm{SU}(4)$ Model: Sixteen Weyl Fields, Thirty-Two States, Closed Under $C$ and $CP$__
 
 ## Introduction
 

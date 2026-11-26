@@ -1,4 +1,4 @@
-# __The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case__
+# __The Hydrogen Atom in Biquaternionic Form: The Non-Relativistic Case__
 
 ## Introduction
 
@@ -256,7 +256,7 @@ A fifth, smaller point is worth a line. The corpus's biquaternion special-functi
 
 ## Where the Relativistic Case Differs
 
-The companion article *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case* would begin from the biquaternion Dirac equation with the Coulomb potential rather than from the Schrödinger equation. Four differences from the present treatment are structural, and each is already visible in the framework's angular-momentum machinery.
+The companion article *The Hydrogen Atom in Biquaternionic Form: The Relativistic Case* would begin from the biquaternion Dirac equation with the Coulomb potential rather than from the Schrödinger equation. Four differences from the present treatment are structural, and each is already visible in the framework's angular-momentum machinery.
 
 **The Hamiltonian ceases to be central.** The relativistic Coulomb problem couples the spin and the orbit, so the total angular momentum $\tilde S_{\Psi,\mathrm{tot},k}=L_{\mathrm{orb},k}+\tilde S_{\Psi,k}$ replaces the separate factors. The spin–orbit operator $\sum_{\imath\in\{x,y,z\}} L_{\mathrm{orb},k}\tilde S_{\Psi,k}$ has the eigenvalues given in the angular-momentum article,
 

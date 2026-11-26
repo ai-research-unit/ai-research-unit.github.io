@@ -1,4 +1,4 @@
-# __The Gap: What the Algebra Supplies and What It Does Not__
+# __The Gap: Three Native Objects and Three Transcribed, with $\mathrm{sym}^4S$ Outside the Algebra__
 
 ## Introduction
 

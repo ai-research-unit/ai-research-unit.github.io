@@ -12,7 +12,7 @@ The name records the first two conditions; the third is what makes the limit the
 
 The article is the frame around the two central-force articles that follow. It does three things. It fixes the kinematic setting — how the non-relativistic world is realized in the algebra and where each mechanical quantity sits. It develops the general central-force structure: the algebraic criterion for a force to be central, the identification of angular momentum with the commutator of position and momentum, the conservation law that follows, the reduction to a radial problem, and Binet's equation for the orbit. And it delimits the limit, recording what is excluded and what the informational sector contributes when it is reduced to a central scalar.
 
-The treatment is classical and non-quantum throughout. The companion articles *The Harmonic Oscillator in Biquaternionic Form* and *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* treat the operator versions of two of these systems; the states, the operators and the canonical commutator do not appear here, and the only bracket used is the classical Poisson bracket of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*.
+The treatment is classical and non-quantum throughout. The companion articles *The Harmonic Oscillator in Biquaternionic Form* and *The Hydrogen Atom in Biquaternionic Form: The Non-Relativistic Case* treat the operator versions of two of these systems; the states, the operators and the canonical commutator do not appear here, and the only bracket used is the classical Poisson bracket of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*.
 
 ## The Non-Relativistic Configuration
 

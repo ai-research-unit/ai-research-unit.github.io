@@ -26,7 +26,7 @@ The companion articles supply the pieces:
 - Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the composition of boosts and the frame four-velocity.
 - Companion article *Exercise: The Thomas Precession*, for the precession of a spin in an accelerated frame.
 - Companion article *Four-Vectors and the Interval*, for four-vectors and the biquaternion norm.
-- Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Cartan decomposition and the subgroups.
+- Companion article *The Lorentz Group in Biquaternionic Form: Structure and Representations*, for the Cartan decomposition and the subgroups.
 
 ## The Boost and Its Rotor
 

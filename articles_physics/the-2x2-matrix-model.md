@@ -1,4 +1,4 @@
-# __The 2×2 Matrix Model: What It Computes and What It Cannot Show__
+# __The $2\times2$ Matrix Model: Determinant and Trace, Two-to-One on the Group__
 
 ## Introduction
 

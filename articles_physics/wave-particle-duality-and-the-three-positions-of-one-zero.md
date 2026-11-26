@@ -18,7 +18,7 @@ The three names are three grades of the word "state", and the grade is a number.
 
 The strongest objection is that this is a taxonomy, and that the physics lives in the potential and in the self-energy. The objection is right about the potential and wrong about the taxonomy. The potential does not create the positions; it selects one. What the taxonomy supplies is the three exact boundaries between the positions, and each is realised: the edge of the gap at $\lvert \nu_t^{\prime}\rvert=\nu_m$, where the propagating description hands over to the bound one; the lower edge at $\nu_t^{\prime}=-\nu_m$, at which a level dives into the continuum; and the impossibility of a complex frequency at real momentum, which is the theorem behind the statement that a decay needs a continuum. None of those three is bookkeeping.
 
-What is used and what is new. *The Unstable State and the Complex Energy Pole in Biquaternionic Form* derives the width from the self-energy, places the pole on the second sheet, and proves that the pole is central. That article answers *how a lifetime arises*. This one answers *what the lifetime is a coordinate of*, and it does not re-derive the self-energy. *One-Dimensional Scattering in Biquaternionic Form* supplies the matching conditions, the transfer matrix and the amplitude $t=(1+i\beta)^{-1}$ whose zeros and poles this article reads. *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case* supplies the exact spectrum whose endpoint is the ceiling below. What is new here is the partition, the circle on which the bound positions lie, the ceiling that circle imposes, the impossible cell, and the reading of the width as the imaginary part of a position rather than as the output of an integral.
+What is used and what is new. *The Unstable State and the Complex Energy Pole in Biquaternionic Form* derives the width from the self-energy, places the pole on the second sheet, and proves that the pole is central. That article answers *how a lifetime arises*. This one answers *what the lifetime is a coordinate of*, and it does not re-derive the self-energy. *One-Dimensional Scattering in Biquaternionic Form* supplies the matching conditions, the transfer matrix and the amplitude $t=(1+i\beta)^{-1}$ whose zeros and poles this article reads. *The Hydrogen Atom in Biquaternionic Form: The Relativistic Case* supplies the exact spectrum whose endpoint is the ceiling below. What is new here is the partition, the circle on which the bound positions lie, the ceiling that circle imposes, the impossible cell, and the reading of the width as the imaginary part of a position rather than as the output of an integral.
 
 ## The One Zero
 
@@ -352,7 +352,7 @@ The partition is a partition of the centre. The symbol is central, so its zero i
 
 *The Three Wavenumbers of a Particle* for $\nu_t^{\prime}$, $\nu_{\Phi}$ and $\nu_m$, for the decay wave number, and for bound states as standing waves.
 
-*The Hydrogen Atom in Biquaternionic Form — The Relativistic Case* for the exact spectrum whose endpoint at $E=0$ is the ceiling, and for the dive at the lower continuum.
+*The Hydrogen Atom in Biquaternionic Form: The Relativistic Case* for the exact spectrum whose endpoint at $E=0$ is the ceiling, and for the dive at the lower continuum.
 
 *The First-Order Root of the Biquaternion Klein–Gordon Operator* for the root whose square is $\Box_\Phi-4\pi^{2}\nu_m^{2}$ and for the block determinant that makes it scalar, and hence for the same zero set.
 

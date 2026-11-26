@@ -46,7 +46,7 @@ The isomorphism is named once, for those two facts, and it is not used. This art
 
 ## The Two Halves
 
-**The two modules of the group.** The group of unit-norm elements has two inequivalent two-dimensional complex modules. The first is the simple module of the algebra, of label $(\tfrac12,0)$ in the classification of [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html). The second is its conjugate, of label $(0,\tfrac12)$. Both are of complex dimension two, and both are carried by the same complex vector space.
+**The two modules of the group.** The group of unit-norm elements has two inequivalent two-dimensional complex modules. The first is the simple module of the algebra, of label $(\tfrac12,0)$ in the classification of [The Lorentz Group in Biquaternionic Form: Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html). The second is its conjugate, of label $(0,\tfrac12)$. Both are of complex dimension two, and both are carried by the same complex vector space.
 
 **The conjugate action.** On the conjugate module the group acts through the coefficient bar,
 
@@ -408,7 +408,7 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the two-sided action on $\mathbb{B}_{\Phi}$ and the identification of the four-vector.
 - [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian observables and the two-state system.
-- [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html) — the classification $(\tfrac12,0)$ and $(0,\tfrac12)$ used here.
+- [The Lorentz Group in Biquaternionic Form: Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html) — the classification $(\tfrac12,0)$ and $(0,\tfrac12)$ used here.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the one-sided chiral pair and its two-sided Kravchenko form.
 - [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html) — the central sign of the complexification and the two halves.
 - [The Reflection and the Rotation in Biquaternionic Form](the-reflection-and-the-rotation-in-biquaternionic-form.html) — the discrete symmetries that exchange the two halves.

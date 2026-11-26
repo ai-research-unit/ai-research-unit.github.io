@@ -1,10 +1,10 @@
-# __Construction of the AXF Matrices of the Rotors of the Fifteen Generators: One Closed Form per Array, and Where the Half Angle Comes From__
+# __Construction of the AXF Matrices of the Rotors: One Closed Form per Array, Half Angles That Add__
 
 ## Introduction
 
 **This article exponentiates the fifteen arrays that [the construction article](construction-of-the-axf-matrices-of-the-fifteen-generators.html) builds, and prints the fifteen answers.** The construction article supplies the directions; this article supplies the motion along them, one closed form per array, in the same axis-free frame and with the same names. **The order is not the construction article's**, and it is explained in the next paragraph.
 
-**Three articles, three questions, and the division is deliberate.** [The construction article](construction-of-the-axf-matrices-of-the-fifteen-generators.html) answers *what is the array*. [The rotors article](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) answers *which space does it turn, and why is none of them a boost*. **This article answers only *what is the turned thing, written out*** — and it does so for all fifteen rather than for the few the theorem needs.
+**Three articles, three questions, and the division is deliberate.** [The construction article](construction-of-the-axf-matrices-of-the-fifteen-generators.html) answers *what is the array*. [The rotors article](the-rotors-of-the-fifteen-generators.html) answers *which space does it turn, and why is none of them a boost*. **This article answers only *what is the turned thing, written out*** — and it does so for all fifteen rather than for the few the theorem needs.
 
 **One structural fact makes all of this elementary, and it is worth stating before anything is computed: every one of the fifteen arrays squares to a diagonal matrix.** Fourteen of them square to a scalar multiple of a rank-two projector, and the corner squares to a diagonal with two distinct values. **Because the square is diagonal, the exponential is a two-term formula, and no eigen-decomposition is ever needed.**
 
@@ -272,7 +272,7 @@ $$
 
 **They are not the group.** Fifteen rotors are fifteen one-parameter curves, and the group is fifteen-dimensional. **A general element is $\exp\bigl(\sum_{a}\theta_{a}G_{a}\bigr)$, which for non-commuting generators is not the product $\prod_{a}\exp(\theta_{a}G_{a})$ and is not in general any one of the fifteen.** The three diagonal generators are the exception and the previous section used it: for the Cartan the product and the exponential of the sum coincide.
 
-**They are not rotations of space.** The quartet's three spatial indices $x,y,z$ are the carrier's, and [the rotors article](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) states the caveat in full: the group of the carrier is not the Lorentz group, and the identification of the carrier's triple with laboratory space is an extra input and not a result. **$R_{A_{xy}}(\theta)$ rotates the carrier's triple; whether the apparatus turns with it is a question this article does not touch.**
+**They are not rotations of space.** The quartet's three spatial indices $x,y,z$ are the carrier's, and [the rotors article](the-rotors-of-the-fifteen-generators.html) states the caveat in full: the group of the carrier is not the Lorentz group, and the identification of the carrier's triple with laboratory space is an extra input and not a result. **$R_{A_{xy}}(\theta)$ rotates the carrier's triple; whether the apparatus turns with it is a question this article does not touch.**
 
 **None of them is a boost.** $G_{a}$ is anti-hermitian for all fifteen, so $R_{a}(\theta)$ is unitary with unit-modulus eigenvalues and $\operatorname{tr}G_{a}^{2}$ is negative: **it takes the value $-2$ on the twelve planes and two spatial diagonals, $-12$ on the corner, and never a positive number.** A boost in the $tx$ plane has $K^{2}=E_{tt}+E_{xx}$, so $\operatorname{tr}K^{2}=+2$; **the sign alone separates the fifteen from every boost, and the smallest gap is the corner's $-12$ against the boost's $+2$.** The rotors article proves this three ways and this article does not re-prove it; the closed forms above are the strongest single illustration, since every one of them is a rotation or a phase and **no hyperbolic function appears in any of the fifteen.**
 
@@ -329,7 +329,7 @@ $$
 ## Further Reading
 
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). The arrays this article exponentiates, in the same order and the same basis.
-- [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). Which space each rotor turns, and the three proofs that none of them is a boost.
+- [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators.html). Which space each rotor turns, and the three proofs that none of them is a boost.
 - [The Relation between $\mathfrak{su}(4)$ and $\mathfrak{so}(4)$: the Twelve Real Arrays and the Nine Complex Ones](../articles_internal/structures/structure-SU4-SO4-relations.html). Why the order of this article is the split it is, and why the pairing $\{A_{jk},iS_{jk}\}$ is not a substitute.
 - [The Fifteen AXF Matrices of the Boson Rotors in Detail](the-15-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role.html). The same closed forms read one boson at a time: the entries, the fixed lines, and the role of each matrix.
 - [The Fifteen AXF Matrices of the Bosons in Detail](the-15-axf-matrices-of-the-bosons-in-detail.html). One subsection per array, with the printed matrix and the spectrum.

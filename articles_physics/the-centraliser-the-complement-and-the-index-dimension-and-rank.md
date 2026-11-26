@@ -25,7 +25,7 @@ $$
 
 **Not established.** Anything about dynamics. Whether the index *arrives with* the condensation or is *required by* it is a question this article states and does not answer. **It distinguishes the two readings and refuses to blur them**, which is the most a structural article can do.
 
-**Where the rest is.** The transition is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The mechanism is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The theorem that forecloses the other route is [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The scales are [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html).
+**Where the rest is.** The transition is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The mechanism is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The theorem that forecloses the other route is [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The scales are [The Matching at $M_C$](matching-at-m-c.html).
 
 ## The Three Operations, and What Each Requires
 

@@ -1,4 +1,4 @@
-# __The Sixteen Above $M_C$: Massless, Vector-Like, and What That Costs__
+# __The Sixteen Above $M_C$: Vector-Like by Theorem, Massless by Assumption, Anomaly-Free by Counting__
 
 ## Introduction
 
@@ -197,6 +197,6 @@ Above $M_C$ the sixteen are massless, vector-like and parity-symmetric, and the 
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The transition's single postulate — the two copies acted on by two different factors — which is what turns the label into chirality.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The action these sixteen fields sit in, and the place where $m_{ij}$ would have been written.
 - [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The two-index rule $X\otimes\mathbb{1}_{2}$ that makes the copy index invisible.
-- [The Primordial Coupling](the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html). The coefficient whose fermion term counts the sixteen as eight Dirac fields, which is the pairing this article describes.
+- [The Primordial Coupling](the-primordial-coupling.html). The coefficient whose fermion term counts the sixteen as eight Dirac fields, which is the pairing this article describes.
 - [The $\mathrm{SU}(4)$ Instanton](the-su4-instanton-a-matrix-transcription-outside-the-algebra.html). Why $\theta_4$ is admissible, periodic, and redundant above $M_C$ — the argument that keeps this phase free of $CP$ violation.
 - [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html). The vacuum whose vanishing makes the Yukawa contribute nothing.

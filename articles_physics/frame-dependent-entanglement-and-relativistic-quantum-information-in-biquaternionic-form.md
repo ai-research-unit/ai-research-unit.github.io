@@ -21,7 +21,7 @@ The companion articles supply the pieces:
 - Companion article *Exercise: The Reduced State of an Entangled Subsystem*, for the partial trace and the reduced state.
 - Companion article *Exercise: Entanglement Entropy and the Partial Trace*, for the Schmidt decomposition and the entropy of a reduced state.
 - Companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, for the tensor-product basis and the Bell idempotents.
-- Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the little-group rotations and the composition of boosts.
+- Companion article *The Lorentz Group in Biquaternionic Form: Structure and Representations*, for the little-group rotations and the composition of boosts.
 
 ## Entangled States in the Tensor Product
 

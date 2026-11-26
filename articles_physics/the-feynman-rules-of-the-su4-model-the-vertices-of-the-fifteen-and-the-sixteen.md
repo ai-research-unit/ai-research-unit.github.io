@@ -19,7 +19,7 @@
 $$
 M_{j}=E_{jj}-E_{tt},\qquad G_{j}=iM_{j},\qquad iD=i\sum_{j}M_{j},
 $$
-which the permutation of $x,y,z$ permutes and whose sum is $D$; [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) sets out the proof and the impossibility in $\mathfrak{su}(3)$.
+which the permutation of $x,y,z$ permutes and whose sum is $D$; [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen.html) sets out the proof and the impossibility in $\mathfrak{su}(3)$.
 
 **Nothing in the twelve-plane block moves**, because the change touches only the three diagonal directions: $iD=T_{x}+T_{y}+T_{z}$, $d_{2}=\tfrac12(T_{x}-T_{y})$, $d_{3}=\tfrac12(T_{y}-T_{z})$, with $T_{j}=iM_{j}$, and the bracket is bilinear in each slot, so the diagonal rows of every table below are the same table in another basis. **The one number that changes form is the writing of the corner**: $B'$ is the sum of the three frame directions, not a sixteenth array, and the ratio $1/\sqrt6$ belongs to $D$ and not to a member of the basis, so it is untouched. **The normalisation of the diagonal family is**
 $$

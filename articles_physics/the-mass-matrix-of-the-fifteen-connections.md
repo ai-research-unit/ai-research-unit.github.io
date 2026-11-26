@@ -1,4 +1,4 @@
-# __The Mass Matrix of the Fifteen Connections: The $\mathfrak{u}(3)$ Kernel, the Sextet at $32v^{2}$, and No Mixing__
+# __The Mass Matrix of the Fifteen Connections: A Nine-Dimensional Kernel, Six Leptoquarks at $32v^{2}$, Rank Six__
 
 ## Introduction
 

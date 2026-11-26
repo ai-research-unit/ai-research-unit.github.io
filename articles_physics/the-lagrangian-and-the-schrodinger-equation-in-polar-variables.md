@@ -490,7 +490,7 @@ The parameterisation absorbs the unit conditions, so no multiplier is needed for
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word as a bijection on the invertibles.
 - [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the invertibles and the cone.
 - [The Schrödinger equation in the Non-Quantum Limit](the-schrodinger-equation-in-the-non-quantum-limit.html), for Madelung's pair read as the first term of a series.
-- [The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html), for the operator setting in which the central pair is solved.
+- [The Hydrogen Atom in Biquaternionic Form: The Non-Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html), for the operator setting in which the central pair is solved.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the exception at a nodal line, where the action is multivalued.
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1927) 322–326, for the continuity equation and the Hamilton–Jacobi equation of a scalar wave, and for their variational principle.
 - Takehiko Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8** (1952) 143–182, for the fluid reading of the same pair.

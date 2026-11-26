@@ -49,7 +49,7 @@ The Dirac equation carries more structure than the other three objects and the c
 - [Parra's Four Options of the Dirac Equation and the Discrete Symmetries](parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html)
 - [The s-Vector Representation of the Dirac Spinor in Biquaternionic Form](the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html)
 - [Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form](triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html)
-- [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html)
+- [The Dirac Equation in Biquaternionic Form: Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html)
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html)
 - [Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation](exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html)
 - [Klein–Gordon from the Dirac Square in Biquaternionic Form](klein-gordon-from-the-dirac-square-in-biquaternionic-form.html)

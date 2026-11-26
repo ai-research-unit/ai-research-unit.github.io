@@ -53,7 +53,7 @@ $$
 \exp(\theta A_{xy})e_x=\cos\theta\,e_x-\sin\theta\,e_y,\qquad \exp(\theta A_{xy})e_t=e_t,\qquad \exp(\theta A_{xy})e_z=e_z ,
 $$
 
-and at $\theta=0.4$ the image of $e_x$ is $(0,\,0.9211,\,-0.3894,\,0)$. **Real and orthogonal, so it is a rotation of the quartet** and not a boost: [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) proves that no exponential of the fifteen arrays is a boost. **The star carries it to the mixed plane**, $\star A_{xy}=+A_{tz}$, and that is why the six planes split into three spatial and three mixed.
+and at $\theta=0.4$ the image of $e_x$ is $(0,\,0.9211,\,-0.3894,\,0)$. **Real and orthogonal, so it is a rotation of the quartet** and not a boost: [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators.html) proves that no exponential of the fifteen arrays is a boost. **The star carries it to the mixed plane**, $\star A_{xy}=+A_{tz}$, and that is why the six planes split into three spatial and three mixed.
 
 **The address.** The plane's two cells are the two orientations of one pair of rows, **and a real plane is antisymmetric, so the pair of oriented cells is one rotation and not two particles.** The address is written $r\bar g$ on one cell and $g\bar r$ on the other, **and the two writings are the two signs of the same entry** — which is the whole content of "a gluon carries a pair of indices": a pair, and not an ordered pair.
 

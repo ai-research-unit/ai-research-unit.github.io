@@ -127,7 +127,7 @@ $$
 
 **The second $60$ is the conjugate half**, where the vertex is $-t_{a}^{T}\otimes\mathbb{1}_{2}$ and every entry is reversed with a minus. **The two halves have the same count and the opposite sign**, which is the statement §*The Conjugate Half* makes precise.
 
-**What the first row forbids is lepton flavour.** No generator has an entry joining the lepton line to itself except the diagonal weight on it, so no connection vertex can turn one lepton into another. **That is [the lepton-flavour article](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html)'s structural result**, and here it is one row of a table.
+**What the first row forbids is lepton flavour.** No generator has an entry joining the lepton line to itself except the diagonal weight on it, so no connection vertex can turn one lepton into another. **That is [the lepton-flavour article](lepton-flavour-in-the-su4-model.html)'s structural result**, and here it is one row of a table.
 
 **What the second row forbids is a representative origin for $Q$.** The corner gives the same phase $-3i$ to both copies in the lepton cell and the same phase $+i$ to both copies in a spatial cell. **A matrix that is $\mathbb 1$ on the copy index cannot separate $\nu$ from $e$**, and the statement is exact: the two copy entries of every array are equal.
 
@@ -228,5 +228,5 @@ $$
 - [The Feynman Rules of the $\mathrm{SU}(4)$ Model](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The rule this article expands, and the normalisation that precedes it.
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The sixteen, the $B-L$ column, and the two copies.
 - [Charge Quantisation from the Fourth Line](charge-quantisation-from-the-fourth-line-one-trace-one-third.html). Why the corner is $-3$ and the three are $+1$.
-- [Lepton Flavour in the $\mathrm{SU}(4)$ Model](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The same prohibition, from the flavour side.
+- [Lepton Flavour in the $\mathrm{SU}(4)$ Model](lepton-flavour-in-the-su4-model.html). The same prohibition, from the flavour side.
 - [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). The $80$ nonzero brackets this article quotes.

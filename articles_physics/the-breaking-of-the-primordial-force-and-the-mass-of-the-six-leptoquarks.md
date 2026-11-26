@@ -73,7 +73,7 @@ and **none of them is the vacuum**. The vacuum is their sum,
 $$
 iD=T_x+T_y+T_z=\operatorname{diag}(-3i,i,i,i),
 $$
-so the direction that the condensation selects is not a member of the frame that the unbroken phase prints: **it is what the frame adds up to, and the coefficient of each of the three is one.** This is why the lepton line can appear at the transition without having been named above it, and why the corpus no longer needs a corner array to hold $B'$: $B'$ is the sum. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves that no such frame exists in $\mathfrak{su}(3)$, and that the fourth line is what makes it possible here.
+so the direction that the condensation selects is not a member of the frame that the unbroken phase prints: **it is what the frame adds up to, and the coefficient of each of the three is one.** This is why the lepton line can appear at the transition without having been named above it, and why the corpus no longer needs a corner array to hold $B'$: $B'$ is the sum. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen.html) proves that no such frame exists in $\mathfrak{su}(3)$, and that the fourth line is what makes it possible here.
 
 **The scale is free and the direction is not.** Any multiple of $D$ gives the same breaking. **So the condensate contributes one dimensionful number — its magnitude $v$ — and one discrete choice, the sign, which changes nothing because every mass is quadratic in $D$.** That is the entire freedom of the first step.
 
@@ -276,7 +276,7 @@ $$
 
 **What would restore it, stated as a reading and not as a result.** A condensate that vanishes restores the symmetry. Three routes do that: a temperature of order $M_C$; a field excursion that carries the scalar to the origin; or a region in which the scalar never condensed. **The corpus derives none of the three**, because the scalar potential is not in it. What the corpus establishes is the spectrum on either side of the transition, and that is enough to say what restoration would look like and what it would cost.
 
-**The observable is the sextet.** No generator of $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ carries a quark into a lepton: triality and $B-L$ are both conserved by the residual group, and the sextet is the only place in the fifteen where the two are traded. **So a leptoquark seen is not a particle added to the model; it is one of the fifteen acting**, and its rate is set by the coupling the model already has. The null searches at [the threshold article](the-threshold-scales-mc-mw-and-what-would-fix-them.html) bound $M_C$ from below, and **that bound is the statement that the unbroken phase has not yet been reached.**
+**The observable is the sextet.** No generator of $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ carries a quark into a lepton: triality and $B-L$ are both conserved by the residual group, and the sextet is the only place in the fifteen where the two are traded. **So a leptoquark seen is not a particle added to the model; it is one of the fifteen acting**, and its rate is set by the coupling the model already has. The null searches at [the threshold article](the-threshold-scales.html) bound $M_C$ from below, and **that bound is the statement that the unbroken phase has not yet been reached.**
 
 ## The Checks
 

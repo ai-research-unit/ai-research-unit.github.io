@@ -1,4 +1,4 @@
-# __The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit__
+# __The Dirac Equation in Biquaternionic Form: Solutions and the Non-Relativistic Limit__
 
 ## Introduction
 

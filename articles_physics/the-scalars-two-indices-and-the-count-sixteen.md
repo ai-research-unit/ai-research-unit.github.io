@@ -107,7 +107,7 @@ $$
 
 **The two tables agree, and the agreement is the check.** Six pairs above the diagonal give twelve real, plus four real diagonal entries: sixteen. **No component is double-counted and none is missing.**
 
-**Degrees of freedom and components are the same number here.** A real scalar has one degree of freedom per component, unlike a fermion, so sixteen components are sixteen degrees of freedom before any eating. **The vector case is where the two differ**, and [The Sixteen Above $M_C$](the-sixteen-above-m-c-massless-vector-like-and-what-that-costs.html) works that difference out for the fermions.
+**Degrees of freedom and components are the same number here.** A real scalar has one degree of freedom per component, unlike a fermion, so sixteen components are sixteen degrees of freedom before any eating. **The vector case is where the two differ**, and [The Sixteen Above $M_C$](the-sixteen-above-m-c.html) works that difference out for the fermions.
 
 ## What the Counting Does Not Fix
 

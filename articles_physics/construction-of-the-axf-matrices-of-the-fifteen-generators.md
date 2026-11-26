@@ -1,4 +1,4 @@
-# __Construction of the AXF Matrices of the Fifteen Generators: Every Direction of $\mathfrak{su}(4)$, Printed__
+# __Construction of the AXF Matrices of the Fifteen Generators: Fifteen Arrays and Six $\mathfrak{so}(4)$ Halves__
 
 ## Introduction
 
@@ -271,7 +271,7 @@ $$
 $$
 iM_x+iM_y+iM_z=iD=\begin{pmatrix}-3i & 0 & 0 & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & 0 & 0 & i\end{pmatrix}
 $$
-**The permutation of $x,y,z$ permutes the three of them**, because $W_{tt}$ is common to all three and each carries only its own $W_{jj}$; the sum, being fixed, is the direction the breaking singles out. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) takes this apart, including why $\mathfrak{su}(3)$ cannot do the same.
+**The permutation of $x,y,z$ permutes the three of them**, because $W_{tt}$ is common to all three and each carries only its own $W_{jj}$; the sum, being fixed, is the direction the breaking singles out. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen.html) takes this apart, including why $\mathfrak{su}(3)$ cannot do the same.
 
 **The factor $i$ on the diagonals is the factor the nine planes carry, and a construction that drops it produces a real Hermitian array that is not in $\mathfrak{su}(4)$.** Written without the $i$, $M_j=E_{jj}-E_{tt}$ is a real diagonal with entries $\pm1$ and $0$, and $D=\sum_jM_j$ is the real diagonal $\operatorname{diag}(-3,1,1,1)$; **the generators are $iM_j$, the generator of the trace direction is $iD$, and $D$ is the array that carries $B-L$**, with $B-L=\tfrac13D$ on $\mathbf4$.
 
@@ -416,7 +416,7 @@ $$
 
 ### Three Things the Arrays Do Not Do
 
-**They do not boost.** No exponential of the fifteen is a Lorentz boost. The generator of the boost in a plane is the Hermitian $-i$ times the cell, and it is not in the algebra; [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) proves it three ways.
+**They do not boost.** No exponential of the fifteen is a Lorentz boost. The generator of the boost in a plane is the Hermitian $-i$ times the cell, and it is not in the algebra; [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators.html) proves it three ways.
 
 **They do not identify the carrier with spacetime.** The quartet is a formal copy of the carrier, and a rotor of its three-space is a rotor of that three-space. The theorem and its consequence are in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html), §*The Carrier Is a Copy*.
 
@@ -495,7 +495,7 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 - [The Axis-Free Arrays of the Fifteen and the Six Halves](../articles_internal/the-axis-free-arrays-fifteen-generators-six-halves-and-a-cartan.html). The arrays of $L_{\vec e_a}$ and $R_{\vec e_a}$, their word support and the six relations.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [$M_2(\mathbb{C})$ Defining Representation](../articles_maths/m2c-defining-representation.html). The four-row and two-row frames.
 - [The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$](../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html). The fifteen in the operator basis, numbered $G_1$ to $G_{15}$.
-- [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html). What each array does when exponentiated, and why no boost is in the group.
+- [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators.html). What each array does when exponentiated, and why no boost is in the group.
 - [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). Every bracket of every array with every other, printed block by block, with the six rules that produce the table.
 - [Classification of the Bosons: Sixteen Cells, Fifteen Generators](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid and the ledger of the spectrum.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Where the four absent particles come from.

@@ -339,7 +339,7 @@ The conventions of the construction are those of the following companion article
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the rotor parametrisation.
 - Companion article *Algebra and Element Conventions*, for the algebra and basis, the conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*).
 - Companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, for the group as an algebraic object and its Lie algebra.
-- Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the representation theory of the group and its real forms.
+- Companion article *The Lorentz Group in Biquaternionic Form: Structure and Representations*, for the representation theory of the group and its real forms.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module on which the two-to-one sign is seen.
 
 ## Summary

@@ -119,7 +119,7 @@ $$
 | $3.73\times10^{-5}$ J | $0.730$ | $4.7\times10^{-12}$ | at the limit |
 | $4.81\times10^{-5}$ J | $0.718$ | $1.7\times10^{-12}$ | allowed, margin $2.8$ |
 
-The table takes $|U_{de}U_{s\imath}|=1$, the largest value; a smaller entry multiplies every rate by its fourth power and lowers the bound by its square root, and the identity branch gives zero at every mass. The bound is $M_X\gtrsim3.69\times10^{-5}$ J for that largest value and under that assumption, and it is a band of a factor of two rather than an order of magnitude, because the rate carries the fourth power of the mass. This is the only number in the model that a search can contradict, and it is a coupling's number: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$. The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are structural and are in [Lepton Flavour in the $\mathrm{SU}(4)$ Model](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html); the substitution that turns the channel into a mass bound is what this section adds.
+The table takes $|U_{de}U_{s\imath}|=1$, the largest value; a smaller entry multiplies every rate by its fourth power and lowers the bound by its square root, and the identity branch gives zero at every mass. The bound is $M_X\gtrsim3.69\times10^{-5}$ J for that largest value and under that assumption, and it is a band of a factor of two rather than an order of magnitude, because the rate carries the fourth power of the mass. This is the only number in the model that a search can contradict, and it is a coupling's number: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$. The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are structural and are in [Lepton Flavour in the $\mathrm{SU}(4)$ Model](lepton-flavour-in-the-su4-model.html); the substitution that turns the channel into a mass bound is what this section adds.
 
 ## The Boundary Condition, and Why It Fails
 
@@ -275,7 +275,7 @@ The Yukawa sector answers the same question by counting. The one-bidoublet condi
 ## Further Reading
 
 - [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The group, the sixteen, the chain and the declarations, with no coupling value.
-- [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The chain as three stabilisers, and the dimension budget that fixes the count of states.
+- [The Matching at $M_C$](matching-at-m-c.html). The chain as three stabilisers, and the dimension budget that fixes the count of states.
 - [The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators](the-weinberg-angle-and-the-three-neutral-states.html). The angle as a ratio, and the neutral current written symbolically.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The multiplet list and the states, with the mass ratios referred here.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). Why the larger group that would close the gap is not available on the carrier.

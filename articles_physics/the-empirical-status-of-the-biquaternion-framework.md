@@ -300,14 +300,14 @@ The main result is therefore negative, and meant to be: the framework currently 
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the exact reproduction of the single-qubit formalism.
 - [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html), for the transcription of the ten mechanical formulas.
 - [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html), for the tree-level $g=2$ and the absence of the anomaly.
-- [The Hydrogen Atom in Biquaternionic Form — The Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html), for the quoted spectrum and the missing derivation.
+- [The Hydrogen Atom in Biquaternionic Form: The Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html), for the quoted spectrum and the missing derivation.
 - [The Vacuum State and the Casimir Effect in Biquaternionic Form](the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.html), for a standard result reproduced and explicitly not modified.
 - [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for a reformulation with no discriminator.
 - [Gravitational Waves in Biquaternionic Form](gravitational-waves-in-biquaternionic-form.html), for the explicit statement that no deviation is predicted.
 - [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html), for what the algebra does and does not supply in quantization.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the framework's vector-like abelian sector and its absent prediction.
 - [The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis](the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.html), for the external programme that reads the dual field strength $-i\tilde F$ as an electro-gravimagnetic field and claims solenoidal-electric, electromass and cogravity effects; recorded there, attributed, and not endorsed here.
-- [Electromagnetism in Media — The Local Complex Structure at Work](electromagnetism-in-media-the-local-complex-structure-at-work.html), for the local complex structure as an interpretation of the standard medium parameter $c$.
+- [Electromagnetism in Media: The Local Complex Structure at Work](electromagnetism-in-media-the-local-complex-structure-at-work.html), for the local complex structure as an interpretation of the standard medium parameter $c$.
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), for the explicit statement that the scale and the couplings are inputs the algebra does not fix.
 - [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html), for a standard theorem transcribed rather than established.
 - [Entangled Subsystems in the Biquaternion Framework](entangled-subsystems-in-the-biquaternion-framework.html), for the reproduced correlation function and the standard Tsirelson bound.

@@ -56,7 +56,7 @@ requires four global coordinates, and requires in addition that the time directi
 
 **4. A global symmetry group.** $SU(2)$ is the group of invertibles of a fixed algebra. It is a global object. A curved manifold has no global group of that kind acting on it; what it has is a pointwise copy of the group at each point, if the frame is chosen.
 
-The framework is not silent about these limitations. *Introduction to the Biquaternion Universe* lists the extension to curved spacetime as an open question; *Why Complexify Spacetime?* observes that the $i r'_t$ convention "is tied to the existence of a global inertial frame"; and *Electromagnetism in Media — The Local Complex Structure at Work* states the position precisely: the algebra is "fixed while its embedding in physical spacetime is not." That last clause is the one this article takes seriously, because an embedding that varies from point to point is exactly where curvature would have to live.
+The framework is not silent about these limitations. *Introduction to the Biquaternion Universe* lists the extension to curved spacetime as an open question; *Why Complexify Spacetime?* observes that the $i r'_t$ convention "is tied to the existence of a global inertial frame"; and *Electromagnetism in Media: The Local Complex Structure at Work* states the position precisely: the algebra is "fixed while its embedding in physical spacetime is not." That last clause is the one this article takes seriously, because an embedding that varies from point to point is exactly where curvature would have to live.
 
 ## Curvature Cannot Be Carried by the Algebra
 
@@ -75,7 +75,7 @@ Finally, a piece of representation-theoretic bookkeeping locates where the work 
 
 ## Route One: The Local Scale Factor
 
-The framework's own route to a local structure is the local complex structure. Its content is stated in *Introduction to the Biquaternion Universe* and developed in *Electromagnetism in Media — The Local Complex Structure at Work*. In a medium with permittivity $\epsilon$ and permeability $\mu$, the speed of light is $c = 1/\sqrt{\epsilon\mu}$, a property of the medium at each point. The material time coordinate is $i r'_t$, so the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the factor $c$; the imaginary unit $i$ is fixed by the algebra and only the real scale attached to the imaginary axis is local. In the gradient, this means
+The framework's own route to a local structure is the local complex structure. Its content is stated in *Introduction to the Biquaternion Universe* and developed in *Electromagnetism in Media: The Local Complex Structure at Work*. In a medium with permittivity $\epsilon$ and permeability $\mu$, the speed of light is $c = 1/\sqrt{\epsilon\mu}$, a property of the medium at each point. The material time coordinate is $i r'_t$, so the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the factor $c$; the imaginary unit $i$ is fixed by the algebra and only the real scale attached to the imaginary axis is local. In the gradient, this means
 
 $$
 \partial/\partial R_t = -i\,\partial/\partial r'_t .
@@ -116,7 +116,7 @@ $$
 
 and this interval is genuinely curved whenever $c$ is not affine in the spatial coordinates. Its coefficient tuple in the coordinates $(t',r_x,r_y,r_z)$ is $(-c^2,1,1,1)$, and that tuple is the weight of one interval read in those coordinates, not a second metric: the metric of the series is the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$ on the four $Q_{\imath}$, and the sign in front of $d{t'}^2$ is the square of the $i$ in $Q_t=i q'_t$, carried through the change of coordinate.
 
-The two interpretations differ exactly by the terms containing $dc$, and they are not equivalent: one is flat and the other is not. Neither *Introduction to the Biquaternion Universe* nor *Electromagnetism in Media — The Local Complex Structure at Work* chooses between them, because the statements about the local $c$ are made at the level of the operator while the statements about the four-position are made at the level of the point. A reader can reasonably take either. This is left open here rather than resolved, because resolving it is a decision about what the framework means and not a computation.
+The two interpretations differ exactly by the terms containing $dc$, and they are not equivalent: one is flat and the other is not. Neither *Introduction to the Biquaternion Universe* nor *Electromagnetism in Media: The Local Complex Structure at Work* chooses between them, because the statements about the local $c$ are made at the level of the operator while the statements about the four-position are made at the level of the point. A reader can reasonably take either. This is left open here rather than resolved, because resolving it is a decision about what the framework means and not a computation.
 
 ### What the Restricted Class Cannot Do
 

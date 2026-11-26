@@ -249,7 +249,7 @@ $$
 \tan\frac{\theta_{\mathrm{axr}}}{2} = \frac{\sinh\frac{a}{2}\sinh\frac{b}{2}\,\lvert\vec u_1\times\vec u_2\rvert}{\cosh\frac{a}{2}\cosh\frac{b}{2}+\sinh\frac{a}{2}\sinh\frac{b}{2}\,(\vec u_1\cdot\vec u_2)} .
 $$
 
-Both identities were verified in double precision over $300$ random pairs, the first to $9.8\times10^{-13}$ and the second to $2.8\times10^{-13}$. The residual rotor is the Thomas-Wigner rotation of the physics articles, *The Lorentz Group in Biquaternionic Form — Structure and Representations*; the algebra records it as the statement that the boost set is a symmetric space and not a group, and the word records it as the escape into the rotor factor.
+Both identities were verified in double precision over $300$ random pairs, the first to $9.8\times10^{-13}$ and the second to $2.8\times10^{-13}$. The residual rotor is the Thomas-Wigner rotation of the physics articles, *The Lorentz Group in Biquaternionic Form: Structure and Representations*; the algebra records it as the statement that the boost set is a symmetric space and not a group, and the word records it as the escape into the rotor factor.
 
 The two axes are two directions of the vector subspace, $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$, and the question whether they commute is the question whether the word may be reordered. With both factors nontrivial, they commute exactly when they are parallel, and then the word is a single boost-rotation about the common axis; if one factor is central, the word is already order-free. The bracket is developed in *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*, §*The Two Exponents*.
 
@@ -605,7 +605,7 @@ The two products of the series are the product of two boosts, which is a boost t
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the four coordinate blocks, the intersections, the lattice of the fixed spaces and the action of the conjugations on the subspaces.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the three decompositions the conjugations cut out.
 - [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra, the four conjugations and the norm.
-- [The Lorentz Group in Biquaternionic Form — Structure and Representations](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Thomas-Wigner rotation of the product of two boosts and the double cover read on the rotor.
+- [The Lorentz Group in Biquaternionic Form: Structure and Representations](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Thomas-Wigner rotation of the product of two boosts and the double cover read on the rotor.
 - [Two-Sided Operators on the N-Regular Sector](two-sided-operators-on-the-n-regular-sector.html), for the two-sided operator as an operator, its kernel $U(1)$, its image $CO^{+}(1,3)$ and the factor-by-factor word.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group, its double cover and the reflections.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the symbols, the root convention and the $*$-unitary convention.

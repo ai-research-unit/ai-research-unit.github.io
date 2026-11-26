@@ -1,4 +1,4 @@
-# __The Symmetric Diagonal Frame of the Fifteen: Three Generators Permuted by $S_3$, and Why the Eight Cannot Repeat It__
+# __The Symmetric Diagonal Frame of the Fifteen: Rank Three, and the Fourth Line the Eight Lacks__
 
 ## Introduction
 

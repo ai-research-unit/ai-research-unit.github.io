@@ -32,7 +32,7 @@ $$
 
 **Not established.** The bound is a coupling statement and its coefficient is uncertain by a factor of a few. The states have not been seen, which is the weakest kind of failure and the most persistent. **And — the point of the article — nothing here produces a weak boson.** The six cannot: the charge theorem of [the companion article](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) rules it out, and this article records that the sextet's role is to break and to be heavy, not to give birth.
 
-**Where the rest is.** The transition that eats them is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Their mass relation and their bound in full are §*The Mass, and the Ratio That Comes With It* and §*The Bound: Two Hundred and Fifty Teraelectronvolts* below. Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition passes down instead of them is [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html).**
+**Where the rest is.** The transition that eats them is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Their mass relation and their bound in full are §*The Mass, and the Ratio That Comes With It* and §*The Bound: Two Hundred and Fifty Teraelectronvolts* below. Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition passes down instead of them is [The Matching at $M_C$](matching-at-m-c.html).**
 
 ## What "Integrated Out" Means, in Three Registers
 
@@ -224,4 +224,4 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The transition that eats the six.
 - [The Charge Theorem: The Sextet Cannot Be Recomposed Into the Weak Pair](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The theorem behind *What the Sextet Does Not Do*.
-- [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). What the transition gives the left–right model instead of a recombination.
+- [The Matching at $M_C$](matching-at-m-c.html). What the transition gives the left–right model instead of a recombination.

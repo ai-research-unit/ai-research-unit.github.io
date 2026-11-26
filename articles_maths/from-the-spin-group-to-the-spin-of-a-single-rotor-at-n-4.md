@@ -1,4 +1,4 @@
-# __From the Spin Group to the Spin of a Single Rotor at $n=4$: the Sign after $2\pi$ and the Return after $4\pi$__
+# __From the Spin Group to the Spin of a Single Rotor at $n=4$: the Sign after $2\pi$ and after $4\pi$__
 
 ## Introduction
 

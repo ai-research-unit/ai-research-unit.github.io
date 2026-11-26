@@ -260,7 +260,7 @@ $$
 
 **The chiral wall closes the argument, and this is where it differs from the reasons above.** From the group article: non-abelian chiral one-sided multiplication does not exist. The observed $SU(2)_L$ couples only to left-handed fields, so it is chiral non-abelian, so the algebra cannot supply it as a one-sided action. **That is the ceiling of this article restated at the pair**, and it is the reason the parity question cannot be settled by choosing a bigger group: the missing object is the tie between an operator side and a spinor letter, not a generator.
 
-**The chain, in the form [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html) owns.**
+**The chain, in the form [The Matching at $M_C$](matching-at-m-c.html) owns.**
 
 $$
 \mathrm{SU}(4)\ \xrightarrow[\ M_C\ ]{\ \langleΞ\rangle\ }\

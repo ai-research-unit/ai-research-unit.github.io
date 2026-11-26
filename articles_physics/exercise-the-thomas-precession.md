@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is one of the worked exercises in the relativity series. It applies the boost biquaternion and the rotor conjugation of *The Lorentz Transformation as a Biquaternionic Rotation*, the four-velocity and the four-force of *Relativistic Mechanics in Biquaternionic Form*, the Thomas–Wigner angle of *The Lorentz Group in Biquaternionic Form — Structure and Representations*, and the discrete composition carried out in *Exercise: Boosting a Four-Velocity and Rapidity Composition*. No new formalism is introduced.
+This is one of the worked exercises in the relativity series. It applies the boost biquaternion and the rotor conjugation of *The Lorentz Transformation as a Biquaternionic Rotation*, the four-velocity and the four-force of *Relativistic Mechanics in Biquaternionic Form*, the Thomas–Wigner angle of *The Lorentz Group in Biquaternionic Form: Structure and Representations*, and the discrete composition carried out in *Exercise: Boosting a Four-Velocity and Rapidity Composition*. No new formalism is introduced.
 
 The discrete Thomas–Wigner rotation is already in the corpus: the product of two non-collinear boost rotors is a boost times a rotation, and its angle is known. This exercise takes only the distinct part of the subject — the **continuous limit**. A particle that is accelerated has a different instantaneous rest frame at every instant. Two rest frames a lab-time interval $dr'_t$ apart are related by a Wigner rotation, and the limit $dr'_t\to0$ defines an angular velocity, the **Thomas precession** $\vec\omega_T$. The exercise derives that rate, fixes its direction by a computation on a geometry that can actually see the direction, and connects it to the factor $\tfrac12$ in the spin–orbit coupling.
 
@@ -319,7 +319,7 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 - [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the boost biquaternion as an element of $\mathbb{B}_{\Psi}$.
 - [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html), for the four-velocity, four-momentum, and four-force.
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor, the square-root relation, and the polar decomposition.
-- [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Wigner angle, its axis, and its leading approximation.
+- [The Lorentz Group in Biquaternionic Form: Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Wigner angle, its axis, and its leading approximation.
 - [Thomas Precession as a Biquaternion Rotor Effect](thomas-precession-as-a-biquaternion-rotor-effect.html), for the same rate obtained from the interval rotor directly rather than from the parents' angle formula.
 - [Exercise: Boosting a Four-Velocity and Rapidity Composition](exercise-boosting-a-four-velocity-and-rapidity-composition.html), for the discrete composition and the recorded direction gap in the parent.
 - [The Spinor Representation of the Lorentz Group in Biquaternionic Form](the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html), for the one-sided action of the rotors that carries the spin.

@@ -21,7 +21,7 @@ $$
 
 **What it does not establish.** A potential, a mass for any survivor, or a Yukawa matrix. It is a census, and the articles that need the numbers cite it rather than recounting them.
 
-**Where the neighbours are.** The breaking that eats the six is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The transition is [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The field that waits for the electroweak scale is [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). The operator the matrix index makes possible is [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html).
+**Where the neighbours are.** The breaking that eats the six is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The transition is [The Matching at $M_C$](matching-at-m-c.html). The field that waits for the electroweak scale is [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). The operator the matrix index makes possible is [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html).
 
 ## The Field
 
@@ -148,7 +148,7 @@ A count of components is not a count of particles. Sixteen real components are t
 
 **Six eaten, ten surviving.** The six are the $\mathbf3\oplus\bar{\mathbf3}$ block, one real component per broken generator; the ten are an octet, a singlet and the radial mode.
 
-**The sixteen is also the number the running uses.** A scalar multiplet of sixteen real components contributes $-\tfrac23$ to $b_0$ — the real-scalar weight $\tfrac16$ on the adjoint Dynkin index $4$ — and that is the term [The Primordial Coupling](the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html) subtracts. **Each doubling of the count doubles that term**: thirty-two real components would give $-\tfrac43$ and $b_0=8$, and sixty-four would give $-\tfrac83$ and $b_0=\tfrac{20}{3}$. **The census and the running are therefore one statement and not two**, and the coupling article tabulates the three side by side.
+**The sixteen is also the number the running uses.** A scalar multiplet of sixteen real components contributes $-\tfrac23$ to $b_0$ — the real-scalar weight $\tfrac16$ on the adjoint Dynkin index $4$ — and that is the term [The Primordial Coupling](the-primordial-coupling.html) subtracts. **Each doubling of the count doubles that term**: thirty-two real components would give $-\tfrac43$ and $b_0=8$, and sixty-four would give $-\tfrac83$ and $b_0=\tfrac{20}{3}$. **The census and the running are therefore one statement and not two**, and the coupling article tabulates the three side by side.
 
 ## Summary of Notation
 
@@ -166,4 +166,4 @@ A count of components is not a count of particles. Sixteen real components are t
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The six, named, and the masses they give.
 - [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html). The potential these sixteen components sit in.
 - [The Scalar's Two Indices](the-scalars-two-indices-and-the-count-sixteen.html). The same count from the representation side.
-- [The Primordial Coupling](the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c.html). The $b_0$ that needs $N_s=16$.
+- [The Primordial Coupling](the-primordial-coupling.html). The $b_0$ that needs $N_s=16$.

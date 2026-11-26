@@ -1,4 +1,4 @@
-# __The Lorentz Group in Biquaternionic Form — Structure and Representations__
+# __The Lorentz Group in Biquaternionic Form: Structure and Representations__
 
 ## Introduction
 

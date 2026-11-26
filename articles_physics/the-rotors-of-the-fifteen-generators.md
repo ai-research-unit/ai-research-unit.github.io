@@ -1,4 +1,4 @@
-# __The Rotors of the Fifteen Generators: Three Turn Space, Three Turn the Quartet, and No Boost Is in the Group__
+# __The Rotors of the Fifteen Generators: Three in Space, Three in the Quartet, Nine Complex, with No Boost__
 
 ## Introduction
 

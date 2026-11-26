@@ -34,7 +34,7 @@ No other convention enters, and no generator is rescaled.
 $$
 M_j=E_{jj}-E_{tt},\qquad t_j=\tfrac i2M_j,\qquad j=x,y,z,
 $$
-which the permutation of $x,y,z$ permutes and whose sum is the trace direction, as [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) sets out. **The two triples span the same three directions**, and the map between them is
+which the permutation of $x,y,z$ permutes and whose sum is the trace direction, as [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen.html) sets out. **The two triples span the same three directions**, and the map between them is
 $$
 iD=T_x+T_y+T_z,\qquad d_2=\tfrac12\bigl(T_x-T_y\bigr),\qquad d_3=\tfrac12\bigl(T_y-T_z\bigr),
 $$
@@ -367,4 +367,4 @@ $$
 - J. E. Humphreys, *Introduction to Lie Algebras and Representation Theory*, Springer, 1972 — structure constants, the Chevalley basis, and a table of brackets read as a presentation of the algebra.
 - H. Georgi, *Lie Algebras in Particle Physics*, Benjamin Cummings, 1982 — the physicists' conventions, the $\tfrac12$ of a weak generator, and the sign of $\epsilon_{abc}$.
 - R. Gilmore, *Lie Groups, Lie Algebras, and Some of Their Applications*, Wiley, 1974 — compact real forms, the splitting $\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, and the inertia that separates the two halves.
-- The corpus: [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html) for the exponential of each generator; [The Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the arrays themselves; [The Fifteen AXF Matrices of the Bosons in Detail](the-15-axf-matrices-of-the-bosons-in-detail.html) for one subsection per generator; [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the cell each array occupies; [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html) for the count that ends at fifteen.
+- The corpus: [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators.html) for the exponential of each generator; [The Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the arrays themselves; [The Fifteen AXF Matrices of the Bosons in Detail](the-15-axf-matrices-of-the-bosons-in-detail.html) for one subsection per generator; [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the cell each array occupies; [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html) for the count that ends at fifteen.

@@ -21,7 +21,7 @@ The companion articles supply the pieces:
 - Companion article *States, Observables and the Born Weight*, for the normalised Hermitian form, the Hermitian sector, and the Born rule.
 - Companion article *Quantum Physics in Biquaternionic Form*, for the state space, the idempotents, and the conjugation action.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module and its irreducibility.
-- Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Lie algebra, the Cartan decomposition, and the Wigner rotation.
+- Companion article *The Lorentz Group in Biquaternionic Form: Structure and Representations*, for the Lie algebra, the Cartan decomposition, and the Wigner rotation.
 
 ## Superselection Structures: The Standard Notion
 
