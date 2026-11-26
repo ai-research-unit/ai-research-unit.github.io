@@ -12,10 +12,6 @@ The Proca equation is the massive vector object, and it is the only one of the f
 
 - [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html)
 
-### Particles of spin 1/2
-
-- [Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom](biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html)
-
 ### Particles of spin 1
 
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html)
@@ -37,6 +33,10 @@ The Proca equation is the massive vector object, and it is the only one of the f
 - [The Fourier Transform and the Coupled Proca Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-coupled-proca-equation-in-biquaternionic-polar-variables.html)
 - [The Lagrangian and the Coupled Proca Equation in Momentum Space](the-lagrangian-and-the-coupled-proca-equation-in-momentum-space.html)
 - [Degenerate Solutions of the Biquaternionic Proca Equation](degenerate-solutions-of-the-biquaternionic-proca-equation.html)
+
+### Particles of spin 1/2
+
+- [Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom](biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html)
 
 ### Spin 1 origin: effects and non-quantum limits
 

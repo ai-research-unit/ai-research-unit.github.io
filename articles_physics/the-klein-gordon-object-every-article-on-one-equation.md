@@ -12,6 +12,10 @@ The corpus writes the same equation five ways — element, polar word, momentum 
 
 - [Introduction to the Spin-Zero Centre Subspace](the-spin-zero-centre-subspace.html)
 
+### Particles of spin 1/2
+
+- [Klein–Gordon from the Dirac Square in Biquaternionic Form](klein-gordon-from-the-dirac-square-in-biquaternionic-form.html)
+
 ### Particles of spin 0
 
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html)
@@ -35,10 +39,6 @@ The corpus writes the same equation five ways — element, polar word, momentum 
 - [Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module](spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.html)
 - [The First-Order Root of the Biquaternion Klein–Gordon Operator](the-first-order-root-of-the-biquaternion-klein-gordon-operator.html)
 - [The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form](the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html)
-
-### Particles of spin 1/2
-
-- [Klein–Gordon from the Dirac Square in Biquaternionic Form](klein-gordon-from-the-dirac-square-in-biquaternionic-form.html)
 
 ### Spin 0 origin: effects and non-quantum limits
 
