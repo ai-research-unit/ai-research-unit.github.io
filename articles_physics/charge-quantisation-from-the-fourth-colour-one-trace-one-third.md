@@ -197,7 +197,7 @@ $$
 
 **The first row is the frame's genuine answer**, and quotation three shows it twice: once in $D$, once in isospin. **The third row is a convention and is not arbitrary**: only the product of the array with the coupling enters physics, so the split between them is a choice, and the corpus states which choice it makes. **The fourth row is outside any group theory**: $e$ is a coupling, it runs, and its value at a scale is measured.
 
-**What would refute the claim.** Three ways, and naming them is part of the argument. If the fourth colour were not gauged, the trace would hold as algebra and say nothing about nature. If a fourth-colour-like resonance had the wrong $B-L$, the identification of the corner with the lepton line would be wrong. If a charge outside $\tfrac13\mathbb{Z}$ were found in the visible sector, the lattice derived from the two eigenvalues would be wrong.
+**What would refute the claim.** Three ways, and naming them is part of the argument. If the fourth colour were not made local, the trace would hold as algebra and say nothing about nature. If a fourth-colour-like resonance had the wrong $B-L$, the identification of the corner with the lepton line would be wrong. If a charge outside $\tfrac13\mathbb{Z}$ were found in the visible sector, the lattice derived from the two eigenvalues would be wrong.
 
 ## The Checks
 
@@ -253,7 +253,7 @@ Fifteen recomputations, all on the quoted array, at $\operatorname{tr}$ in the f
 - [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The declaration (A), which is the one input the quotations do not contain.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The array's address in the group, and why $B-L$ rather than hypercharge is what $\mathrm{SU}(4)$ supplies.
 - [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). Where $Y=T_{3R}+\tfrac12(B-L)$ comes from, and the mixing that leaves the corner's eigenvalue alone.
-- [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). The anomaly system solved in full: the three rays the comparison section trades against one trace.
+- [The Electroweak Symmetry group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). The anomaly system solved in full: the three rays the comparison section trades against one trace.
 - [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation.html). The four rows, and why they vanish identically here.
 - [The Quantum Numbers Below the Breaking: Colour, $B-L$, Weak Isospin and the Electric Charge](the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html). The exactness that quotation four establishes, read as a table of fates.
 - [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The chain whose first step the corner survives.

@@ -174,6 +174,6 @@ The kernel in a constant background has the free scale and an angle that carries
 - *Landau Levels in Biquaternionic Form*, for the constant magnetic field's spectrum.
 - E. Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* 40 (1927) 322–326, for the density–phase pair.
 - M. P. A. Fisher and W. Zwerger, "Quantum Brownian Motion in a Periodic Potential," *Physical Review B* 32 (1985) 6190, for the minimal-coupling form of a first-order action.
-- H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 2009), for the constant-background kernels and the gauge-invariant measure.
+- H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 2009), for the constant-background kernels and the invariant measure.
 - L. D. Faddeev and A. A. Slavnov, *Gauge Fields: An Introduction to Quantum Theory* (Benjamin, 1980), for the first-order integral's structure.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the polar form of a Clifford element and its central multipliers.

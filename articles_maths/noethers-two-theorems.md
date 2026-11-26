@@ -179,7 +179,7 @@ Three features of the theorem are worth stating before the examples, because eac
 
 **It makes the local symmetry carry no charge.** A local symmetry generally contains no rigid subgroup, because a transformation whose parameter is a function $\varepsilon(x)$ need not survive when $\varepsilon$ is restricted to a constant. When it does survive — when the algebraic part $b_{i\alpha}$ is nonzero — the rigid subgroup is a genuine first-kind symmetry and has its own conservation law, and the $\varepsilon$-coefficient of the identity is the statement that a certain total divergence vanishes off shell: the rigid current corrected by the term $\sum_{i,\mu}a_{i\mu\alpha} E_i$. That remark is made precise in the second example below. But when $b_{i\alpha}$ vanishes, the local symmetry has no rigid subgroup and produces no conservation law whatsoever. This is the case for the abelian gauge field, and it is the reason a gauge transformation is not a source of new currents.
 
-## Worked Example: the Abelian Gauge Field
+## Worked Example: the Abelian Connection
 
 A field of four components with an antisymmetric two-form is the classical illustration of the second theorem, and it is the one the corpus uses.
 
@@ -289,7 +289,7 @@ The corpus also states Noether's theorem on the Hamiltonian side, and the relati
 
 **Definition (Weyl).** A symmetry is of the **first kind** when its parameters are constants, and of the **second kind** when its parameters are functions of the coordinates. Equivalently, a first-kind symmetry is a rigid subgroup of the symmetry group of the action, and a second-kind symmetry is the local, or gauge, part.
 
-The names are frequently reversed in the literature and in informal use. The reversal is worth naming because it changes the theorem that is being invoked. A transformation written with an arbitrary function of position is **of the second kind**, and invoking "Noether's theorem" on it yields the second theorem, an identity, not a conservation law. A transformation written with a constant parameter is of the first kind, and only then does "Noether's theorem" yield a conserved current. The corpus's own gauge articles are of the second kind throughout: the localisation of the central $\mathrm{U}(1)$ in *The Gauge Principle in Biquaternionic Form* produces the connection and the covariant derivative — the degeneracy described by the second theorem — and not a new conserved current.
+The names are frequently reversed in the literature and in informal use. The reversal is worth naming because it changes the theorem that is being invoked. A transformation written with an arbitrary function of position is **of the second kind**, and invoking "Noether's theorem" on it yields the second theorem, an identity, not a conservation law. A transformation written with a constant parameter is of the first kind, and only then does "Noether's theorem" yield a conserved current. The corpus's own gauge articles are of the second kind throughout: the localisation of the central $\mathrm{U}(1)$ in *The Minimal Coupling in Biquaternionic Form* produces the connection and the covariant derivative — the degeneracy described by the second theorem — and not a new conserved current.
 
 ## Summary
 

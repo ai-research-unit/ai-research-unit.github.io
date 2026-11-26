@@ -43,7 +43,7 @@ so both mixed elements are nilpotents. The four elements satisfy the multiplicat
 
 **The diagonal is forced.** If a nonzero diagonal element is written $c\tilde\Pi_{\mathrm{id},s}$, then idempotence gives $c^{2}=c$, hence $c=1$. The diagonal elements of a Peirce basis are therefore the idempotents themselves; they are not a choice.
 
-**The mixed elements are a choice.** A nonzero $\vec\Pi_{\mathrm{nil},+-}$ can be rescaled, and the product normalization forces the reciprocal rescaling of $\vec\Pi_{\mathrm{nil},-+}$. That freedom is the gauge of §*The Gauge*.
+**The mixed elements are a choice.** A nonzero $\vec\Pi_{\mathrm{nil},+-}$ can be rescaled, and the product normalization forces the reciprocal rescaling of $\vec\Pi_{\mathrm{nil},-+}$. That freedom is the gauge of §*The Indefinite Form*.
 
 ## Existence: The Nilpotent Route
 
@@ -70,7 +70,7 @@ $$
 
 The mixed elements are nilpotents, and each idempotent is the product of the two in the appropriate order.
 
-**The gauge is the reciprocal scaling.** If $u$ is replaced by $\lambda u$, then $v$ is replaced by $\lambda^{-1}v$, and the pair remains a basis. Every $\lambda\in\mathbb{C}^{\times}$ gives a basis. This one-parameter scaling is the whole freedom of the construction; it is computed in §*The Gauge*.
+**The gauge is the reciprocal scaling.** If $u$ is replaced by $\lambda u$, then $v$ is replaced by $\lambda^{-1}v$, and the pair remains a basis. Every $\lambda\in\mathbb{C}^{\times}$ gives a basis. This one-parameter scaling is the whole freedom of the construction; it is computed in §*The Indefinite Form*.
 
 ## Coordinates
 
@@ -114,7 +114,7 @@ $$
 
 The identity is independent of the basis: a change of basis conjugates the coordinate matrix and leaves its determinant unchanged.
 
-## The Gauge
+## The Indefinite Form
 
 **A change of basis of the same family.** Every other basis of the same family has the form
 
@@ -216,7 +216,7 @@ A Peirce basis is exactly such a system. The coordinate map of §*Coordinates* s
 
 **Uniqueness up to conjugation.** Every two systems of $2\times2$ matrix units of $\mathbb{B}$ are conjugate by an invertible element, and the conjugating unit is unique up to the centre.
 
-**Proof.** For two systems of the same family, the two bases differ by the gauge of §*The Gauge*, and that gauge is conjugation by $U=t_{+}\tilde\Pi_{\mathrm{id},+}+t_{-}\tilde\Pi_{\mathrm{id},-}$; the conjugating unit is unique up to a common scalar, that is up to the centre. For two systems of different families, pass to the matrix model. A nontrivial idempotent of $M_{2}(\mathbb{C})$ is a rank-one projection; choose a basis of $\mathbb{C}^{2}$ in which its image is the first coordinate line and its kernel the second. The projection is then $E_{11}$, and the mixed units are determined up to the diagonal torus. Every automorphism of $M_{2}(\mathbb{C})$ is inner, so the conjugation descends to $\mathbb{B}$. The centralizer of a full system of matrix units is the centre. Each system is therefore conjugate to the standard one, and any two systems are conjugate to each other; the unit is unique up to the centre.
+**Proof.** For two systems of the same family, the two bases differ by the gauge of §*The Indefinite Form*, and that gauge is conjugation by $U=t_{+}\tilde\Pi_{\mathrm{id},+}+t_{-}\tilde\Pi_{\mathrm{id},-}$; the conjugating unit is unique up to a common scalar, that is up to the centre. For two systems of different families, pass to the matrix model. A nontrivial idempotent of $M_{2}(\mathbb{C})$ is a rank-one projection; choose a basis of $\mathbb{C}^{2}$ in which its image is the first coordinate line and its kernel the second. The projection is then $E_{11}$, and the mixed units are determined up to the diagonal torus. Every automorphism of $M_{2}(\mathbb{C})$ is inner, so the conjugation descends to $\mathbb{B}$. The centralizer of a full system of matrix units is the centre. Each system is therefore conjugate to the standard one, and any two systems are conjugate to each other; the unit is unique up to the centre.
 
 ## Dimensions
 

@@ -101,7 +101,7 @@ with $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ and $\ve
 
 **A warning about the types.** The central scalars of the temporal slot and of the spatial slots are not the same type: the temporal slot's share is real and the spatial slots' share is imaginary, because the material connection's temporal coefficient is imaginary and its spatial coefficients are real. A table that assigns the connection to "the central imaginary bracket" is therefore right for the spatial slots and wrong for the temporal one, and the article does not draw such a table.
 
-## The Gauge Transformation Is a Phase Translation
+## The Local Transformation Is a Phase Translation
 
 **The exact infinitesimal statement.** Let $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$ be a constant central unit and let $\tilde A_2=\digamma_{\mathrm{gau}}\tilde A$. Then
 
@@ -229,8 +229,8 @@ The connection is central per slot, so it merges with the scale and the phase br
 - [The Coupled Proca Equation in Biquaternionic Form](the-coupled-proca-equation-in-biquaternionic-form.html), the element form this article re-coordinatises.
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the free two-factor word, the two branches and the two brackets.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and its parameter count.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the same type statement in the first-order sector.
 - [The Lagrangian and the Coupled Proca Equation](the-lagrangian-and-the-coupled-proca-equation.html), for the action and the currents in the element form.
 - [The Lagrangian and the Coupled Proca Equation in Polar Variables](the-lagrangian-and-the-coupled-proca-equation-in-polar-variables.html), for the action in the chart.

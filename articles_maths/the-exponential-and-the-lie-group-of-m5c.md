@@ -276,7 +276,7 @@ a unipotent matrix.
 
 **Proof.** The exponential of $\mathfrak{n}$ is contained in $U$; the logarithm is its inverse; the simple nilpotents give the elementary generators.
 
-### The Gauge
+### The Indefinite Form
 
 **Proposition.** The gauge torus $T$ acts on the group by conjugation, $g\mapsto tgt^{-1}$; on the simple nilpotents,
 

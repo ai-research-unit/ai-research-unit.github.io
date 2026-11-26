@@ -15,7 +15,7 @@ break that, and the bidoublet that would supply one is computed in §*The Bidoub
 
 **What this article is, and what it is not.** It is the weak half of [Classification of the
 Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), cut out so that the grid article stays
-about the grid. **It is not part of the model's gauge content.** The model gauges fifteen directions, all of them $\mathfrak{su}(4)$ (*The Mass Matrix of
+about the grid. **It is not part of the model's gauge content.** The model fixing conditions fifteen directions, all of them $\mathfrak{su}(4)$ (*The Mass Matrix of
 the Fifteen Connections*); six of the seven fields here arrive at $M_C$ with the doublet index of the condensate (*Rank Five From Three*) and are counted
 from there down.
 
@@ -322,8 +322,8 @@ what the doublet index supplies plus $B'$, counted from $M_C$ down.
 The grid, the ledger and the fates of all fifteen — the article this one is cut from.
 - [The Photon as the Unbroken Mixture: One Null Direction, Three Parents](the-photon-as-the-unbroken-mixture.html). The same null direction derived three
 ways.
-- [The Mass Matrix of the Fifteen Gauge Bosons](the-mass-matrix-of-the-fifteen-gauge-bosons-the-u3-kernel-and-the-sextet.html). What the model itself
-gauges, and why the weak directions have no row there.
+- [The Mass Matrix of the Fifteen Connection](the-mass-matrix-of-the-fifteen-gauge-bosons-the-u3-kernel-and-the-sextet.html). What the model itself
+fixing conditions, and why the weak directions have no row there.
 - [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-and-the-three-neutral-states.html). The angle that the null direction leaves free.
 - [The Scalar Content: One Quartet, One Doublet, Eight Survivors](the-scalar-content-one-matrix-and-ten-survivors.html). Why no field in
 the minimal content carries both weak indices.

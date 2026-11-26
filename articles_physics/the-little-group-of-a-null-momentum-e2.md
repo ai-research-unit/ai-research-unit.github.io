@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A massless particle's little group is the stabiliser of a null momentum. It is not compact, and that single fact determines everything: the massless labels are one-dimensional instead of $(2j+1)$-dimensional, the spin's third component survives as the helicity while the other two components are gauged away, and a second, unphysical family of representations exists with a continuous label.
+A massless particle's little group is the stabiliser of a null momentum. It is not compact, and that single fact determines everything: the massless labels are one-dimensional instead of $(2j+1)$-dimensional, the spin's third component survives as the helicity while the other two components are removed by a choice of representative, and a second, unphysical family of representations exists with a continuous label.
 
 This article identifies the group, which is the double cover of the Euclidean group of the plane, exhibits its three generators and their brackets, explains what the two null rotations do and why they must act trivially on physical states, and states the helicity and continuous-spin alternatives.
 
@@ -95,7 +95,7 @@ The label $h$ is the **helicity**.
 
 The physical requirement is that a finite number of states sit over each momentum. Since $T_1$ and $T_2$ are non-compact, a representation in which they act nontrivially has a continuous spectrum and infinitely many states. So finiteness forces the translations to act trivially, and the representation collapses to $D_h$.
 
-### The Gauge Argument
+### The Argument from Locality
 
 There is a second route to the same conclusion, and it is the one used in field theory. A massless field has a local symmetry, and the local transformation shifts the polarisation along the momentum and along one transverse direction: the two directions that the null rotations move. So imposing the fixing condition is imposing $T_1=T_2=0$ on the physical states, and the surviving label is the eigenvalue of $J_z$.
 
@@ -189,7 +189,7 @@ $J_z$ commutes with nothing outside the little group, but its eigenvalue on a st
 
 ### The Two Labels of the Block
 
-The corpus's massless labels are $(0,h)$: a zero in the mass slot and a half-integer in the helicity slot. The zero is $C_1$'s value, and $h$ is the phase of $J_z$ on the one-dimensional fibre. Nothing else survives: the scale of the momentum is a gauge, the two shear parameters are gauged away, and the direction is the orbit's own coordinate.
+The corpus's massless labels are $(0,h)$: a zero in the mass slot and a half-integer in the helicity slot. The zero is $C_1$'s value, and $h$ is the phase of $J_z$ on the one-dimensional fibre. Nothing else survives: the scale of the momentum is a gauge, the two shear parameters are removed by a choice of representative, and the direction is the orbit's own coordinate.
 
 ## The Contrast With the Massive Case
 
@@ -215,7 +215,7 @@ The group $E(2)$ *is* a contraction of $SU(2)$: the Wigner–İnönü contractio
 
 ### What Is Continuous
 
-The one continuous thing is the momentum's scale along the null direction, and it is a pure gauge for a massless particle: a null momentum has no rest frame, so its scale cannot be measured by going to a rest frame, and the physical content is the direction and the helicity. So the massless labels are a direction and a half-integer, and that is the smallest label set in the block.
+The one continuous thing is the momentum's scale along the null direction, and it is a pure gradient for a massless particle: a null momentum has no rest frame, so its scale cannot be measured by going to a rest frame, and the physical content is the direction and the helicity. So the massless labels are a direction and a half-integer, and that is the smallest label set in the block.
 
 ## Summary
 

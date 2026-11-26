@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The standing of this article. Everything below is standard theory, written in the corpus's coordinates and notation. It is standard input, not a framework result. Colour is the sharpest boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), no compact gauge algebra inside $\mathbb{B}$ has real dimension above four and no $\mathbb{B}$-module has odd complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is transcribed, and this article is the one where the transcription has to confront the fact that its own perturbation series is divergent term by term.
+The standing of this article. Everything below is standard theory, written in the corpus's coordinates and notation. It is standard input, not a framework result. Colour is the sharpest boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), no compact algebra inside $\mathbb{B}$ has real dimension above four and no $\mathbb{B}$-module has odd complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is transcribed, and this article is the one where the transcription has to confront the fact that its own perturbation series is divergent term by term.
 
 Why this article is different from its neighbours. The previous three computed quantities that were finite. This one computes quantities whose individual terms are infinite. Every real-emission diagram at order $\alpha_s$ diverges when a gluon is soft or collinear, and every virtual diagram diverges at the same points; only their sum is finite. The article's subject is that cancellation, why it is guaranteed, what it costs, and what happens when it does not happen.
 
@@ -282,7 +282,7 @@ Two things, and both are kinematic.
 
 The null structure, again. The eikonal and the collinear factorisation both rest on a light-cone decomposition, and $\mathbb{B}$'s null objects — the nilpotent elements and their exact unipotent exponentials — host that decomposition, as [the parton-model article](the-parton-model-and-deep-inelastic-scattering.html) recorded. The unipotent element is a null rotation and not a boost: it rescales neither null component, so it is the carrier of the light-cone structure and not the dilation that makes $x$ scale invariant. The angular ordering is an interference effect between amplitudes emitted at different angles, and interference is what the algebra's two-sector structure is built to describe. So the algebra hosts the *kinematics of the emission* and the *form of the interference*, and nothing more.
 
-**The limitation, stated plainly.** The divergences are properties of a gauge theory's phase space, and the cancellation is a theorem about that phase space. Neither the phase space nor the theorem is an object of $\mathbb{B}$: the algebra has no $SU(3)$, no triplet, and no measure that would make $\int d^3\nu_{\Phi}/2E$ an algebraic operation. So the whole of this article is transcription.
+**The limitation, stated plainly.** The divergences are properties of a connection theory's phase space, and the cancellation is a theorem about that phase space. Neither the phase space nor the theorem is an object of $\mathbb{B}$: the algebra has no $SU(3)$, no triplet, and no measure that would make $\int d^3\nu_{\Phi}/2E$ an algebraic operation. So the whole of this article is transcription.
 
 The ledger.
 
@@ -355,4 +355,4 @@ The framework supplies the null direction and the form of the interference, and 
 - [Confinement and the Loss of Partonic Information in Biquaternionic Form](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html). Why the parton description is a description at a resolution, and what the asymptotic algebra can and cannot see.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The null direction and the interference between the two helicity halves that the angular ordering resembles.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The bound behind every row of the ledger.
-- [Lattice Gauge Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). The method that replaces the shower below the cutoff.
+- [Lattice Connection Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). The method that replaces the shower below the cutoff.

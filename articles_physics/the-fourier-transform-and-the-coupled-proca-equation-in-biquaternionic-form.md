@@ -17,7 +17,7 @@ The first bracket is the free Proca symbol with $\pi$ in place of $k$ — transl
 
 The translation is exact and it is the corpus's own identity. The parent proves $(\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\imath}\tilde\nabla_{\Phi,\mathrm{gco},\imath}^{2}+\frac{2\pi i\varkappa}{h}\tilde F_{\Phi}$, a decomposition of the covariant d'Alembertian into a symmetric sum of squares and a curvature. In frequency space the first piece is $-\pi^{2}$ and the second is the curvature term, so the identity is exactly the symbol's two terms and the article's first finding is that no third term exists.
 
-Two connections can agree in $\pi$ at a point and disagree in $F$ there, and the symbol's difference is $\frac{2\pi i\varkappa}{h}$ times the difference of the curvatures: for two connections used below, $\lvert F_{21}\rvert$ is $0$ and $0.9$ while $\pi$ agrees at the point of evaluation. **So the symbol is not a function of the momentum alone**, and that is the exact statement of what a Fourier description of a gauge theory loses.
+Two connections can agree in $\pi$ at a point and disagree in $F$ there, and the symbol's difference is $\frac{2\pi i\varkappa}{h}$ times the difference of the curvatures: for two connections used below, $\lvert F_{21}\rvert$ is $0$ and $0.9$ while $\pi$ agrees at the point of evaluation. **So the symbol is not a function of the momentum alone**, and that is the exact statement of what a Fourier description of a connection theory loses.
 
 The third finding is that the mass does not enter the obstruction. The mass term is $-\nu_m^{2}\delta$ on the amplitude space, which is inert under the curvature; the curvature term carries no $\nu_m$. So the obstruction and the mass are two independent additions to the Klein–Gordon symbol, and §*The Mass Does Not Enter the Obstruction* states the check.
 
@@ -27,7 +27,7 @@ No sector is exchanged. The coupled field is an element of $\mathbb{B}$, its tra
 
 ## Conventions
 
-The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The gradient and the covariant derivative are those of *Operator and Calculus Conventions* and *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, whose symbol rule for a covariant operator is quoted in derived form:
+The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The gradient and the covariant derivative are those of *Operator and Calculus Conventions* and *Connection and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, whose symbol rule for a covariant operator is quoted in derived form:
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath}\longmapsto i\pi_{\imath} ,
@@ -212,7 +212,7 @@ The mass does not enter the obstruction: the mass term is $-\nu_m^{2}\delta$, wh
 
 - *The Coupled Proca Equation in Biquaternionic Form*, for the carrier argument, the minimal substitution, the covariant field strength and the constant background.
 - *The Coupled Proca Equation in Biquaternionic Polar Variables*, for the same theory read in the chart, and for the local transformation as a phase translation.
-- *Gauge Fields and the Covariant Derivative*, for the commutator, the curvature and the square-splitting identity.
+- *Connection and the Covariant Derivative*, for the commutator, the curvature and the square-splitting identity.
 - *The Fourier Transform and the Proca Equation in Biquaternionic Form*, for the free symbol's determinant, rank and kernel.
 - *The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Form*, for the occupancy bench and the ladder's rungs.
 - *The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Form*, for the same ladder with a first-order operator.

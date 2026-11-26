@@ -68,7 +68,7 @@ which is the block's display and, with $q=-ϙ$, the standard force on a charge $
 
 The third variation is absent because there is no third field. The velocity is $\vec\pi/m$, a function of the phase and the potential. Promoting it to a field would add a multiplier equal to the momentum density, exactly as in the free companion, and the constraint it enforces would be $\vec v=\vec\pi/m$ with $\vec\pi$ now carrying $\vec A$. Nothing is gained, and the rotational case does not need the promotion, for the reason the next section gives.
 
-## The Constraints the Action Imposes: Gauge Invariance, Term by Term
+## The Constraints the Action Imposes: Local Invariance, Term by Term
 
 The density is invariant and not merely invariant up to a divergence. Under $S\mapsto S+ϙ\Gamma$ and $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$,
 
@@ -179,6 +179,6 @@ Local invariance. Exact in the density, term by term, with no boundary term. The
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1926) 322–326, for the fluid equations before a connection is added.
 - Takehiko Takabayasi, "On the formulation of the Schrödinger theory in terms of the hydrodynamical quantities," *Progress of Theoretical Physics* **8** (1952) 143–164, for the velocity treated as an independent variable, which is what the Clebsch structure is.
 - Fritz London, "Zur Theorie der Supraleitung," *Zeitschrift für Physik* **37** (1926) 915–925, for the phase's gauge behaviour and the current it implies.
-- Peter R. Holland, *The Theory of Motion* (Cambridge University Press, 1993), chapter 4, for the charged fluid's energy equation and the gauge dependence of its canonical energy.
+- Peter R. Holland, *The Theory of Motion* (Cambridge University Press, 1993), chapter 4, for the charged fluid's energy equation and the representative-dependent of its canonical energy.
 - Clifford Truesdell and Richard Toupin, "The classical field theories," in *Handbuch der Physik* III/1 (Springer, 1960), §157, for the Clebsch representation and the rank of a velocity field.
 - The companion articles: [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), the same action in the polar chart; [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html), the equations varied here; [The Lagrangian and the Schrödinger Fluid](the-lagrangian-and-the-schrodinger-fluid.html), the $ϙ=0$ case; [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html), for the representation the coupling supplies; and [The Lagrangian and the Charged Spin-Zero Fluid](the-lagrangian-and-the-charged-spin-zero-fluid.html), where the same substitution meets the mass shell.

@@ -31,7 +31,7 @@ The spin operator and the words built on it. The generator of the rotations is $
 
 The two marks on a glyph that is also an operator. An operator read through its element follows the element rule in full.
 
-- A glyph read with its scalar part, four components: the tilde. The canonical momentum $\tilde p=p_te_t+\vec p$, the Legendre conjugate of $\tilde q$; the biquaternionic gradient $\tilde\nabla_\Phi$ of §*The Gradient*; the gauge-covariant gradient $\tilde\nabla_{\mathrm{gco},\Phi}$ of §*The Gauge-Covariant Gradient*.
+- A glyph read with its scalar part, four components: the tilde. The canonical momentum $\tilde p=p_te_t+\vec p$, the Legendre conjugate of $\tilde q$; the biquaternionic gradient $\tilde\nabla_\Phi$ of §*The Gradient*; the covariant gradient $\tilde\nabla_{\mathrm{gco},\Phi}$ of §*The Covariant Gradient*.
 - A pure glyph, three components: the arrow. The momentum operator $\vec p=-i\,\frac{h}{2\pi}\,\vec\nabla_\Phi=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath} p_{\imath}$.
 
 The gradient decides the case cleanly: $\tilde\nabla_\Phi$ is not pure, because its $e_t$ term carries $-i\,\partial/\partial r'_t$, while $\vec\nabla_\Phi=\sum_{\imath\in\{x,y,z\}}\,\vec e_{\imath}\,\partial/\partial r_{\imath}$ is pure: it is the vector part of $\tilde\nabla_\Phi$, $\tilde\nabla_\Phi=-i\,e_t\partial/\partial r'_t+\vec\nabla_\Phi$, and the fixed glyph $\vec\nabla_\Phi$ of §*The Gradient* and the arrowed $\vec\nabla_\Phi$ name the one operator, the arrow being written where its purity is what the sentence names.
@@ -384,7 +384,7 @@ so the Krein norm of the gradient coincides with the plain bilinear norm. It is 
 
 The rule is one rule on both parts. A contraction never raises an index and never lowers one, on $\mathbb{B}_{\Phi}$ or on $\mathbb{B}_{\Psi}$, because the metric is the identity on both and a raised index would be the same index. What changes between the slices is only the coefficient the contraction carries: on $\mathbb{B}_{\Phi}$ the time component is multiplied by $-i$ and the three space components by $1$, while on $\mathbb{B}_{\Psi}$ the time component is multiplied by $1$ and the three space components by $-i$. A reader who checks a component formula written on either slice checks those four numbers and nothing else, and the check is complete, because the weight $\varepsilon$ belongs to the product, the coefficients belong to the slice, and the two never merge into a single symbol.
 
-### The Gauge-Covariant Gradient
+### The Covariant Gradient
 
 A derivative that differentiates a field charged under a connection is the gradient with a connection added. It carries the gradient's letter and **a label, not a letter of its own**:
 
@@ -424,7 +424,7 @@ $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\imath\in\{t,x,y,z\}}\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\imath}\bigr)^{2}+\frac{2\pi i\,ϙ}{h}\tilde F,
 $$
 
-with $\tilde F=\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_{\Phi})$ the curvature. The scalar part of the square is the covariant d'Alembertian and the vector part is the curvature; both are read in *The Covariant Derivative and Gauge Connection in Biquaternionic Form*.
+with $\tilde F=\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_{\Phi})$ the curvature. The scalar part of the square is the covariant d'Alembertian and the vector part is the curvature; both are read in *The Covariant Derivative and Connection in Biquaternionic Form*.
 
 The coupling, and the letter $\kappa$. A few articles write the same operator as $\tilde\nabla_\Phi+i\kappa\mathcal A$, with $\kappa$ the coupling and $\mathcal A$ the connection. That is one object under two spellings, $\kappa=\frac{2\pi ϙ}{h}$ and $\mathcal A=\tilde A_{\Phi}$. The series writes $\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}$, so that $\kappa$ stays free for the retarded denominator $\kappa=1-\vec u_R\cdot\vec\beta$ of *Algebra and Element Conventions*, which is not a coupling.
 

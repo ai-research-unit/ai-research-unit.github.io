@@ -1,11 +1,11 @@
-# __The Gauge Extension of the Central Phase: The Centre Bounds the Gauge Group__
+# __The Extension of the Central Phase: The Centre Bounds the Symmetry Group__
 
 ## Introduction
 
 The framework's continuous symmetry is the **central phase**, the group of central unitaries
 $\exp(i\theta_{\mathrm{cen}})e_t\cong \mathrm{U}(1)$. It is exact and it is global: being central, it multiplies every subspace and
 every element by the same factor, so it acts the same way at every point, and the corpus records the fact as
-the interpretation "centrality is globality". A gauge theory needs the opposite — a phase that may differ from
+the interpretation "centrality is globality". A connection theory needs the opposite — a phase that may differ from
 point to point, and a compensating connection that makes the difference covariant — and the question this
 article states is what, exactly, blocks the locality and what a gauge extension of the framework would have
 to be.
@@ -16,7 +16,7 @@ Algebra as the Classical Sector*; the ceiling $\mathrm{U}(2)$ is *Why the Biquat
 carries is *The Physical Interpretation of the 12 Products*; and the placement of the gauge row among the products is *The Heat Map
 of the Framework: Which Physics Hangs on Which Product*.
 
-## The Central Phase and the Gauge Principle
+## The Central Phase and the Minimal Coupling
 
 The central phase is the one-parameter subgroup $\theta_{\mathrm{cen}}\mapsto \exp(i\theta_{\mathrm{cen}})e_t$ of the centre. Three of its
 properties are the whole of its relevance.
@@ -34,11 +34,11 @@ $\partial/\partial x_{\imath} - iϙ\tilde{A}_{\Phi,\imath}$ is phase-covariant. 
 and the reason is structural rather than technical: a connection is a field valued in the Lie algebra of the
 group, and the Lie algebra of the central phase is the one-dimensional span of $ie_t$, which is central. A
 central generator produces a field that commutes with everything, so the "connection" it generates cannot
-couple to anything and the covariant derivative collapses to the ordinary one. A gauged central phase is
-therefore no gauge theory at all: an abelian connection needs a matter field that transforms
+couple to anything and the covariant derivative collapses to the ordinary one. A made local central phase is
+therefore no connection theory at all: an abelian connection needs a matter field that transforms
 non-trivially, and the framework's matter lives in modules on which a central phase acts by a scalar.
 
-## The Centre and the Gauge Group
+## The Centre and the Symmetry Group
 
 With the obstruction stated, the reason the symmetry group stays at $\mathrm{U}(2)$ follows. The intrinsic symmetry group of the
 algebra is the $*$-unitary slice $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$, the central product
@@ -74,7 +74,7 @@ $$
 m\equiv n\pmod 2\;},
 $$
 
-so a shift by $2\pi i$ in the phase and a shift by $2\pi$ in the rotation are each allowed alone, while a half-shift $\pi i$ must be accompanied by a half-turn $\pi\vec U$. The kernel is therefore not the rectangular lattice $2\pi i\mathbb{Z}e_t\oplus2\pi\mathbb{Z}\vec U$, and the two factors of $\mathrm{U}(1)\times SU(2)$ are not independent at the level of the exponent. The parity matching is the algebraic reason the central phase cannot be gauged by itself: a gauge shift of the phase alone is a kernel element, but a half-phase is not, and the obstruction is the same one that caps the group at $\mathrm{U}(2)$. The lattice is computed in *Biquaternion Elementary Functions* and read in *The Exponential, the Logarithm and the Generator*.
+so a shift by $2\pi i$ in the phase and a shift by $2\pi$ in the rotation are each allowed alone, while a half-shift $\pi i$ must be accompanied by a half-turn $\pi\vec U$. The kernel is therefore not the rectangular lattice $2\pi i\mathbb{Z}e_t\oplus2\pi\mathbb{Z}\vec U$, and the two factors of $\mathrm{U}(1)\times SU(2)$ are not independent at the level of the exponent. The parity matching is the algebraic reason the central phase cannot be made local by itself: a phase shift of the phase alone is a kernel element, but a half-phase is not, and the obstruction is the same one that caps the group at $\mathrm{U}(2)$. The lattice is computed in *Biquaternion Elementary Functions* and read in *The Exponential, the Logarithm and the Generator*.
 
 ## The Two Candidate Readings
 
@@ -84,14 +84,14 @@ chooses neither.
 Reading A — the central extension is the whole extension. The structure of the framework is the
 central product $\mathrm{U}(2)$ and nothing else, and the physically meaningful statement is that the framework's
 symmetry group is the extension of $SU(2)$ by the central phase. On this interpretation the framework is a
-$\mathrm{U}(2)$-gauge theory in which the abelian factor is the algebra's centre, hypercharge is the central phase and
+$\mathrm{U}(2)$-connection theory in which the abelian factor is the algebra's centre, hypercharge is the central phase and
 weak isospin is the module action, and the ceiling is a result about the symmetry group of the algebra rather
 than a defect. The interpretation is the framework's own position and is labelled as an interpretation: the algebra fixes
 the group and not the names of its factors.
 
 Reading B — the central phase is the trace of a local structure. The structure the framework
 should carry is a **local** one, and the central phase is the shadow of a connection that the algebra does
-not contain. On this interpretation the interesting object is the obstruction itself: a local phase gauge theory
+not contain. On this interpretation the interesting object is the obstruction itself: a local phase connection theory
 requires a non-central generator, the algebra has none, and the minimal carrier on which the obstruction
 lifts is the enlarged one. The interpretation makes the ceiling a **constructive programme** — which carrier, which
 module, which connection — and it is the interpretation under which the grand-unification articles work.
@@ -106,7 +106,7 @@ question is being asked.
 
 So the two readings survive, with one clause removed. Reading A remains true as a statement about the framework's group: the symmetry group is $\mathrm U(2)$, the abelian factor is the central phase, and the ceiling is exact. What it cannot also claim is that this phase *is* hypercharge. Reading B is untouched, since it already denies that the algebra contains the needed structure.
 
-Where the computation is. The refusal is computed, with the assignment table and the anomaly conditions, in [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html), §*Why the Assignment Is Not Derivable Here*. That article reaches the same conclusion from the other end: the framework supplies the algebra of the group and not the assignment, and one central charge cannot supply two numbers for one species.
+Where the computation is. The refusal is computed, with the assignment table and the anomaly conditions, in [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html), §*Why the Assignment Is Not Derivable Here*. That article reaches the same conclusion from the other end: the framework supplies the algebra of the group and not the assignment, and one central charge cannot supply two numbers for one species.
 
 ## What Is Not Claimed
 
@@ -162,6 +162,6 @@ does not contain.
   Cartan decomposition and the enlargements that pass it.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the central phase as
   one generator on remarkable subspaces.
-- [The Four Products: Composition, Probability, Causality and Gauge](the-four-products-composition-probability-causality-and-gauge.html), for the compact slice and the discrete
+- [The Four Products: Composition, Probability, Causality and the Indefinite Form](the-four-products-composition-probability-causality-and-gauge.html), for the compact slice and the discrete
   charge.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html), for the constructive interpretation of the obstruction.

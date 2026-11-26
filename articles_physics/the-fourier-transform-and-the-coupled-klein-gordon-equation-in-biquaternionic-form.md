@@ -243,8 +243,8 @@ The parent's measured complex symbol, $-8.8876+1.86i$, is reproduced exactly by 
 - *The Coupled Klein–Gordon Equation in Biquaternionic Form*, for the two equations, the anti-Hermitian writing, the covariant square and the prohibition.
 - *The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables*, for the same two symbols read in the word and for the ordering term the chart cannot write.
 - *The Lagrangian and the Coupled Klein–Gordon Equation in Momentum Space*, for the action's Euler–Lagrange operator and the reading of the fork from the functional.
-- *The Gauge Principle in Biquaternionic Form*, for the localization of the central phase and the sign of the coupling.
-- *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, for $\tilde\nabla_{\mathrm{gco},\Phi}$, the commutator and $\tilde F$.
+- *The Minimal Coupling in Biquaternionic Form*, for the localization of the central phase and the sign of the coupling.
+- *The Covariant Derivative and Connection in Biquaternionic Form*, for $\tilde\nabla_{\mathrm{gco},\Phi}$, the commutator and $\tilde F$.
 - *Landau Levels in Biquaternionic Form*, for the ladder that a constant field strength produces.
 - *Derivatives, Fields and Transforms*, for the symbol rule and the convolution theorem.
 - *Operator and Calculus Conventions*, for $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the sign of the d'Alembertian.

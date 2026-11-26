@@ -1,4 +1,4 @@
-# __The Gauge Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One__
+# __The Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One__
 
 ## Introduction
 
@@ -30,7 +30,7 @@ $$
 
 **What the article establishes.** The list of residual algebras with their dimensions; the module each acts on; the two derived abelian factors with their derivations; the sense in which the photon's algebra is one-dimensional; the three reductions of dimension and what each costs; and the boundary between what the algebra reaches and what the model posits.
 
-**What the article does not establish.** No coupling, no dynamics, no spectrum. The couplings are [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The states are [The Quantum Numbers Below the Breaking](the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html).
+**What the article does not establish.** No coupling, no dynamics, no spectrum. The couplings are [The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The states are [The Quantum Numbers Below the Breaking](the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html).
 
 **Where the ceiling is.** The reason $\mathrm{SU}(3)$ is posited and not derived is [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). That article is the boundary statement this one uses and does not repeat.
 
@@ -95,7 +95,7 @@ $$
 T_{3R}+\tfrac12(B-L),
 $$
 
-so $\mathfrak u(1)_Y$ is a one-dimensional subspace of $\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$ and not a factor of anything. **Geometrically it is the diagonal subgroup along which the two phases turn together, with the $B-L$ parameter at half the rate of the $T_{3R}$ one**, and the weight $\tfrac12$ is not a second parameter: it is one number written on two normalisations of one direction. That is why the coupling $g_Y$ is not independent at the breaking scale: it is fixed by $g_R$ and $g_{B-L}$ through the normalisation of the combination, and the relation is in [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html).
+so $\mathfrak u(1)_Y$ is a one-dimensional subspace of $\mathfrak{su}(2)_R\oplus\mathfrak u(1)_{B-L}$ and not a factor of anything. **Geometrically it is the diagonal subgroup along which the two phases turn together, with the $B-L$ parameter at half the rate of the $T_{3R}$ one**, and the weight $\tfrac12$ is not a second parameter: it is one number written on two normalisations of one direction. That is why the coupling $g_Y$ is not independent at the breaking scale: it is fixed by $g_R$ and $g_{B-L}$ through the normalisation of the combination, and the relation is in [The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html).
 
 **The counting, which is the sharp form of the same statement.** Four generators survive to the Standard Model, and they draw on five raw directions.
 
@@ -192,7 +192,7 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The ceiling, with the dimension count that produces it.
 - [$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group](su2l-times-su2r-two-sides-six-generators-one-group.html). The two weak copies and the parity exchange.
-- [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Hypercharge as an anomaly problem rather than a combination.
-- [The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The couplings these algebras carry.
+- [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Hypercharge as an anomaly problem rather than a combination.
+- [The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The couplings these algebras carry.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). The strong sector as the stabiliser's algebra.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The dimension of the last residual algebra, counted as the massless spectrum.

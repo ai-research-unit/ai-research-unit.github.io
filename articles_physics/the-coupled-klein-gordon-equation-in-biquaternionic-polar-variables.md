@@ -106,7 +106,7 @@ and the scalar and vector potentials are the two slots of one element, so the tw
 
 **What the type statement does not say.** It does not say that the potential cannot affect the frame. It says that the potential cannot affect the frame *through the additive term*, which is the only place the connection appears before the equation is used. The frame responds to the potential through the equation, because the equation relates the brackets to one another and a shift in one moves the others; the shift in the phase bracket moves the amplitude through the mass-shell relation, and the frame follows. The distinction is the difference between where the coupling sits and what it does, and the Proca companion draws the same distinction for the rotor.
 
-## The Gauge Transformation Is a Phase Translation
+## The Local Transformation Is a Phase Translation
 
 **The exact infinitesimal statement.** Let $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$ with $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ and let $\tilde\Xi_2=\digamma_{\mathrm{gau}}\tilde\Xi$. Then
 
@@ -293,7 +293,7 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 | $E=-\frac{h}{2\pi} c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ | The free four-momentum |
 | $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho}$ | The quantum potential; unchanged by the coupling |
 | $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec p-q\vec A)$ | The mechanical current |
-| $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ | The gauge phase translation |
+| $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ | The central phase translation |
 | $\tilde F$ | The field strength; one type in the algebra, four brackets in the chart |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 
@@ -305,8 +305,8 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 - [The Lagrangian and the Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html), for the free polar action and its metric.
 - [The Coupled Proca Equation in Biquaternionic Polar Variables](the-coupled-proca-equation-in-biquaternionic-polar-variables.html), for the same type statement in the vector sector.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and its parameter count.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Spin-Zero Fluid](the-spin-zero-fluid.html), for the fluid reading of the pair.
 - [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html), for the free flow's irrotationality that the coupling breaks.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the quantization of the circulation in units of $h$.

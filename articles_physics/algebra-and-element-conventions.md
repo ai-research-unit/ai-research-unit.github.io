@@ -386,7 +386,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
 $$
 
-used throughout the series and read on the four forms and their norms in *Product and Form Conventions*, §*The Involutions and the Four Forms* and *Norm and Pairing Conventions*, §*The Four Algebraic Norms and the $*$-Unitary Convention*. It is **multiplicative** and complex-valued in general, and it is not an analytic norm; its group of invertibles and its invertibility reading are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Group of Invertibles*.
+used throughout the series and read on the four forms and their norms in *Product and Form Conventions*, §*The Involutions and the Four Forms* and *Norm and Pairing Conventions*, §*The Four Algebraic Norms and the $*$-Unitary Convention*. It is 0 and complex-valued in general, and it is not an analytic norm; its group of invertibles and its invertibility reading are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Group of Invertibles*.
 
 Each of the four marks has a fixed space, and each of these is one of the **remarkable subspaces** of the algebra. Which involution defines which subspace, and which of them are anti-fixed, is recorded with the subspaces themselves, in *The Remarkable Subspaces* above.
 

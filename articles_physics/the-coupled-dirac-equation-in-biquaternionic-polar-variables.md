@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article substitutes the complete polar decomposition into the coupled Dirac equation and reads what the substitution makes visible. It is the polar companion of *The Coupled Dirac Equation in Biquaternionic Form*, and it depends on three articles: the element form of the coupled equation for the equation, *The Dirac Equation in Biquaternionic Polar Variables* for the word and the four brackets, and *The Covariant Derivative and Gauge Connection in Biquaternionic Form* for the connection.
+This article substitutes the complete polar decomposition into the coupled Dirac equation and reads what the substitution makes visible. It is the polar companion of *The Coupled Dirac Equation in Biquaternionic Form*, and it depends on three articles: the element form of the coupled equation for the equation, *The Dirac Equation in Biquaternionic Polar Variables* for the word and the four brackets, and *The Covariant Derivative and Connection in Biquaternionic Form* for the connection.
 
 The substitution. Write
 
@@ -91,7 +91,7 @@ i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_{\imath}}+\frac{2\pi i\,ϙ}{h}A
 \qquad\text{whenever}\qquad A_{\imath}=\frac{\partial\Lambda}{\partial R_{\imath}},
 $$
 
-so a pure-gauge potential is absorbed by a reparameterisation of the angle and by nothing else. That is the polar statement of local invariance, and it is a statement about the *angle* and not about the field.
+so a pure gradient potential is absorbed by a reparameterisation of the angle and by nothing else. That is the polar statement of local invariance, and it is a statement about the *angle* and not about the field.
 
 The momentum. With $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ and $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ the free reading, the coupled reading is
 
@@ -115,7 +115,7 @@ Which of the two is the momentum. The chart does not by itself decide whether $\
 
 The local character of the statement. The gradient of the angle is defined at each event, so the shift is a local statement and not an integrated one. This is the polar form's genuine addition over the element form: in the element form the potential appears as a term in the operator; here it appears as a shift of a gradient that can be read off at a point. The two are the same content and they are not the same display.
 
-**What the polar statement does not say.** It does not say that the phase is observable. The angle is a coordinate of the word and the gauge transformation moves it; only differences of the covariant wavevector along a path, and the curvature, are invariant. §*The Gauge-Invariant Reparameterisation* states which combinations survive.
+**What the polar statement does not say.** It does not say that the phase is observable. The angle is a coordinate of the word and the local transformation moves it; only differences of the covariant wavevector along a path, and the curvature, are invariant. §*The Invariant Reparameterisation* states which combinations survive.
 
 ## The Kinetic Velocity
 
@@ -159,7 +159,7 @@ The same translated hyperboloid as in the element form. The radius is $\nu_m$ an
 
 The strongest objection, and the answer. The objection is that the chart has merely renamed: the covariant wavevector is defined as the canonical one plus the potential, so saying that "the boost is carried by the covariant wavevector" is a definition and not a result. The objection is correct as far as it goes, and the answer is the one the parent gives for the mass shell: what the proposition fixes is the *direction of the reading*. Read from the potential to the frame, the coupling changes the boost, hence the velocity; read from the frame to the potential, the velocity is what survives when the potential is removed. The chart states the identity, and the physical naming is the corpus's convention and not a consequence of the algebra.
 
-## The Gauge-Invariant Reparameterisation
+## The Invariant Reparameterisation
 
 The angle is a coordinate, so the local transformation is a change of coordinate on the same field. The invariant content is what survives it.
 
@@ -218,7 +218,7 @@ Adds.
 - A local reading of the kinetic momentum: the potential shifts the phase gradient, and the shift is visible at each event (§*The Kinetic Momentum*).
 - One object for the whole classical substitution: $\frac{2\pi ϙ}{h}\tilde A_\Phi$ carries the scalar and the vector potential together, and the two signs cannot be chosen independently (§*The Kinetic Momentum*).
 - A direct statement of the kinetic velocity: the boost is named by the covariant wavevector, and the canonical one is the covariant one less the potential (§*The Kinetic Velocity*).
-- The gauge-invariant split of the field: the phase is the gauge-dependent part, the three frame factors are the gauge-invariant part (§*The Gauge-Invariant Reparameterisation*).
+- The invariant split of the field: the phase is the representative-dependent part, the three frame factors are the invariant part (§*The Invariant Reparameterisation*).
 - The type table, which says in advance where a central connection can act and where it cannot (§*The Coupling in Polar Variables*).
 
 Does not add.
@@ -283,12 +283,12 @@ The polar equation is the free pair in variables. It closes for a plane wave in 
 
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), the element form this article re-coordinatises.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the mass-shell proposition.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html), for the action and the current.
 - [The Lagrangian and the Coupled Dirac Equation in Polar Variables](the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html), where the constraint structure appears.
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the current as a pairing.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the spin's transport in a background.
 - [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html), for the spin-half-fluid reading of the four brackets.
-- [The Gauge Extension of the Central Phase: The Centre Bounds the Gauge Group](the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html), for the localization that produces the coupling.
+- [The Extension of the Central Phase: The Centre Bounds the Symmetry Group](the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html), for the localization that produces the coupling.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the covariant derivative in geometric algebra.
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the spin-half-fluid variables and their underdetermination.

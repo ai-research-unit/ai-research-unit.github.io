@@ -90,7 +90,7 @@ $$
 \tilde M_{\mathrm{kraus},2} = \sqrt{p}\,\tilde\Pi_{\mathrm{id},2}(\vec u),
 $$
 
-whose normalization $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = (1-p)e_t + p(\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2}) = e_t$ holds because the idempotents are Hermitian and complementary. The channel is **unital**: it fixes the maximally mixed state $\tilde{Ϛ}_{\Psi} = \tfrac12 e_t$, so it is not a depolarizing map that pushes states toward the centre; it is a map that pushes them toward an *axis*.
+whose normalization $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = (1-p)e_t + p(\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2}) = e_t$ holds because the idempotents are Hermitian and complementary. The channel is $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = (1-p)e_t + p(\tilde\Pi_{\mathrm{id},1} + \tilde\Pi_{\mathrm{id},2}) = e_t$: it fixes the maximally mixed state $\tilde{Ϛ}_{\Psi} = \tfrac12 e_t$, so it is not a depolarizing map that pushes states toward the centre; it is a map that pushes them toward an *axis*.
 
 On the Bloch vector the channel acts by
 

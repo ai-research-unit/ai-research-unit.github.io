@@ -88,13 +88,13 @@ The mechanical momentum is the invariant. The mechanical momentum and the energy
 
 The free symbol is recovered twice. Setting $\omicron_{\mathrm{pot}}=0$ and $\vec A=0$ returns the free symbol. Setting $ϙ=0$ returns it as well. The two limits agree, which is the check that the sign of $ϙ$ is the parent's and not a fresh choice.
 
-The translation is a translation in two variables and not a rotation. The frequency shifts and the wave vector shifts, and the two shifts are independent because the potential and the vector potential are independent components of the connection. A gauge transformation makes them dependent, and §*The Poles and Their Spacing* uses that.
+The translation is a translation in two variables and not a rotation. The frequency shifts and the wave vector shifts, and the two shifts are independent because the potential and the vector potential are independent components of the connection. A local transformation makes them dependent, and §*The Poles and Their Spacing* uses that.
 
 ## The Translation's Sign, Fixed by the Parent
 
 The parent's temporal slot. The equation has $i \frac{h}{2\pi}\partial_{t'}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\tilde\Xi$ on the left, so the phase's rate is $hf_{\mathrm{frq}}=-\rho_{\mathrm{chg}}\omicron_{\mathrm{pot}}$ plus the kinetic term and the symbol carries $+\rho_{\mathrm{chg}}\omicron_{\mathrm{pot}}$. **The sign is plus, and it follows from the $+$ in the covariant time derivative.**
 
-Why the sign is not free. The two signs of the two slots are one fact: the metric $i$ in $\partial/\partial R_t=-i\partial_{r'_t}$ multiplies the connection's temporal coefficient, which is itself imaginary, and the product is real with the sign the parent computes. A convention that flips one slot and not the other breaks the gauge covariance, and the parent's §*Gauge Covariance* would fail.
+Why the sign is not free. The two signs of the two slots are one fact: the metric $i$ in $\partial/\partial R_t=-i\partial_{r'_t}$ multiplies the connection's temporal coefficient, which is itself imaginary, and the product is real with the sign the parent computes. A convention that flips one slot and not the other breaks the covariance, and the parent's §*Covariance* would fail.
 
 The check. Taking the free symbol at $\omega-\frac{2\pi ϙ\omicron_{\mathrm{pot}}}{h}$ instead gives $hf_{\mathrm{frq}}-ϙ\omicron_{\mathrm{pot}}-\lvert h\,\vec\nu_{\Phi}-q\vec A\rvert^{2}/(2m)$, which differs from the parent's equation by $2ϙ\omicron_{\mathrm{pot}}$. The difference is not a normalisation: it is a sign error that the parent's own substitution forbids.
 

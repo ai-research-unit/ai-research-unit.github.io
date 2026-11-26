@@ -297,7 +297,7 @@ $$
 $$
 of dimension $1+3+3+9=16=4\times4$.
 
-**Polynomial representations and the $*$-unitary trick.** The finite-dimensional irreducibles of the complex group are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) ones: the matrix entries are polynomial in the entries of the group element, and such representations are the symmetric powers $V_s=\operatorname{sym}^{2s}(\mathbb{C}^2)$ of the defining module, of highest weight $2s$ and spin $s$. Restriction to the maximal compact subgroup $SU(2)$ is an equivalence of categories, the **$*$-unitary trick**,
+**Polynomial representations and the $*$-unitary trick.$*$polynomial$*$$*$-unitary trick**,
 $$
 \left\{\text{f.d. polynomial representations of }SL(2,\mathbb{C})\right\}\simeq\left\{\text{f.d. }{}^{*}\text{-unitary representations of }SU(2)\right\},
 $$
@@ -369,7 +369,7 @@ The defining spinor $(\tfrac12,0)$ is the simplest example: $\mathsf{M}_2(-e_t)=
 
 ## $*$-Unitary Representations
 
-A representation is **$*$-unitary** if it carries an invariant positive-definite Hermitian form. On the defining module $V_{1/2}=\mathbb{C}^2$ the standard Hermitian form is invariant under $SU(2)$, so $V_{1/2}$ is $*$-unitary for the compact form; it is **not** $*$-unitary for $SL(2,\mathbb{C})$, because the non-compact hyperbolic one-parameter subgroups — the boosts of the preceding sections — do not preserve any positive-definite form. More generally a non-compact simple group has no nontrivial finite-dimensional $*$-unitary representation, since the image would lie in a compact group. Hence the only finite-dimensional $*$-unitary representation of the Lorentz group is the trivial one, and no finite-dimensional representation carries a boost on a positive-definite state space.
+A representation is **$*$-unitary** if it carries an invariant positive-definite Hermitian form. On the defining module $V_{1/2}=\mathbb{C}^2$ the standard Hermitian form is invariant under $SU(2)$, so $V_{1/2}$ is $*$-unitary for the compact form; it is $*$ $*$-unitary for $SL(2,\mathbb{C})$, because the non-compact hyperbolic one-parameter subgroups — the boosts of the preceding sections — do not preserve any positive-definite form. More generally a non-compact simple group has no nontrivial finite-dimensional $*$-unitary representation, since the image would lie in a compact group. Hence the only finite-dimensional $*$-unitary representation of the Lorentz group is the trivial one, and no finite-dimensional representation carries a boost on a positive-definite state space.
 
 **Physical interpretation: why the Lorentz action is not $*$-unitary.** Unitarity is what selects the representations that carry a positive-definite probability, so the statement that the finite-dimensional representations of $SL(2,\mathbb{C})$ are not $*$-unitary is the statement that a boost cannot be implemented by a finite-dimensional $*$-unitary operator: a boost is unbounded, and a finite-dimensional $*$-unitary representation of a non-compact group would have compact image. The parameter that makes a boost unbounded is the rapidity, and it is exactly the parameter that a finite multiplet cannot carry.
 
@@ -382,7 +382,7 @@ and $N$ unipotent. For $n_{\mathrm{par}}\in\mathbb{Z}$ and $\digamma_{\mathrm{pa
 $$
 \pi_{m,\digamma_{\mathrm{par}}}=\operatorname{Ind}_P^G(\xi_{m,\digamma_{\mathrm{par}}}),
 $$
-the **principal series**: $*$-unitary by construction, irreducible for generic parameters and tempered for $\digamma_{\mathrm{par}}\in\mathbb{R}$, with $m$ a discrete parameter and $\digamma_{\mathrm{par}}$ a continuous one. Together with the **complementary series**, whose continuous parameter is purely imaginary and bounded, and the trivial representation, this is the $*$-unitary dual of $SL(2,\mathbb{C})$; the finite-dimensional polynomial representations are not in it, except for the trivial one. The compact subgroup $SU(2)$ supplies the finite-dimensional multiplets, and the passage from its discrete highest weights to the continuous parameter of the principal series is the complexification of the $*$-unitary dual.
+the **principal series**: $*$-unitary by construction, irreducible for generic parameters and tempered for $\digamma_{\mathrm{par}}\in\mathbb{R}$, with $m$ a discrete parameter and $\digamma_{\mathrm{par}}$ a continuous one. Together with the $\digamma_{\mathrm{par}}\in\mathbb{R}$, whose continuous parameter is purely imaginary and bounded, and the trivial representation, this is the $*$-unitary dual of $SL(2,\mathbb{C})$; the finite-dimensional polynomial representations are not in it, except for the trivial one. The compact subgroup $SU(2)$ supplies the finite-dimensional multiplets, and the passage from its discrete highest weights to the continuous parameter of the principal series is the complexification of the $*$-unitary dual.
 
 Physically the principal series is the mode content of a field on the mass shell: the discrete parameter $m$ is the spin about the boost axis and the continuous parameter $\digamma_{\mathrm{par}}$ the rapidity of the boost, and the non-compact symmetry is realised on an infinite-dimensional space rather than on the finite multiplet of a compact group.
 

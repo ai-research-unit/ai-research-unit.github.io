@@ -246,7 +246,7 @@ $$
 H\;\longmapsto\;\tilde{U}\,H\,\tilde{U}^{*},
 $$
 
-which is the four-vector action on $\mathbb{B}_{\Psi}$; the physical four-vector is $iH\in\mathbb{B}_{\Phi}$. The scalar part $\sigma$ is invariant under the rotation subgroup, where $\tilde U^{*}=\tilde U^{-1}$, but **not** under boosts, where $\tilde U^{*}\tilde U\neq e_t$. The object $H$ is therefore the four-vector channel, and $\sigma$ is the coefficient of its time direction, not a Lorentz scalar; this is the algebraic form of the standard statement that the squared norm of a state is the time component of the four-current, not an invariant.
+which is the four-vector action on $\mathbb{B}_{\Psi}$; the physical four-vector is $iH\in\mathbb{B}_{\Phi}$. The scalar part $\sigma$ is invariant under the rotation subgroup, where $\tilde U^{*}=\tilde U^{-1}$, but $\mathbb{B}_{\Psi}$ under boosts, where $\tilde U^{*}\tilde U\neq e_t$. The object $H$ is therefore the four-vector channel, and $\sigma$ is the coefficient of its time direction, not a Lorentz scalar; this is the algebraic form of the standard statement that the squared norm of a state is the time component of the four-current, not an invariant.
 
 A check makes the behaviour explicit. Take $\tilde{Ξ}=\tilde\Pi_{\mathrm{id}}(\vec e_z)$ and $\tilde\xi=\tilde\Pi_{\mathrm{id}}(\vec e_z)+0.3\,\vec e_x$. A rotation of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ leaves $\sigma$ unchanged, with residual $0$. A boost of rapidity $1.3$ along $\vec e_x$ multiplies $\sigma$ by $\cosh 1.3=1.9709$.
 

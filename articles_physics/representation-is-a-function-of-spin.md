@@ -12,7 +12,7 @@ What this article is not. It is not an argument that the framework is wrong. It 
 
 ## The Group and the Carriers
 
-The group. The compact gauge algebra available in the biquaternions is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of real dimension four, as [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) establishes. The non-abelian factor is the algebra of the rotation group, $\mathrm{Spin}(3)$, and the abelian factor is the central phase $\mathrm{U}(1)$.
+The group. The compact algebra available in the biquaternions is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of real dimension four, as [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) establishes. The non-abelian factor is the algebra of the rotation group, $\mathrm{Spin}(3)$, and the abelian factor is the central phase $\mathrm{U}(1)$.
 
 The carriers. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts on itself, and the fields of the three spins are carried by three different subspaces:
 
@@ -47,7 +47,7 @@ The operators, and the tie of each. Four families act on the algebra, and the fa
 
 The physics conventions name the last one $\mathrm{Sd}_{\tilde Q}$, "the two-sided operator, the congruence by the element"; the mathematics call it the Hermitian pair. This article uses $\mathrm{Sd}$.
 
-Which operator can act on a sector. One line each, and they are the only three facts a gauge-theory article needs.
+Which operator can act on a sector. One line each, and they are the only three facts a connection theory article needs.
 
 - $L_{\tilde A}$ maps a sector into itself only when $\tilde A$ is a real scalar. The check is one line: for $X$ anti-fixed, $(AX)^{*}=X^{*}A^{*}=-XA^{*}$, so $AX$ is anti-fixed only if $A$ commutes with every element of the sector, which forces $A$ real. Verified at random: $0$ of $200$ parameters preserve, and a real scalar does.
 - $\mathrm{Sd}_{\tilde Q}$ maps each sector into itself for every $\tilde Q$, because the dagger appears once in each slot: $(\tilde QX\tilde Q^{*})^{*}=\tilde QX^{*}\tilde Q^{*}=\mathrm{Sd}_{\tilde Q}(X^{*})$. Verified: $0$ of $200$ failures in either sector.
@@ -74,7 +74,7 @@ The generators. $T_a=\tfrac12\vec e_a$ with $[\vec e_a,\vec e_b]=2\varepsilon_{a
 
 The third column is not an extra assumption. It is read from the carrier, and the carrier is read from the spin. A reader who wants a different representation for a given spin is asking for a different algebra.
 
-**One row out of three matches.** The vector row is the adjoint, and the adjoint is what a Yang–Mills field needs: that is why the free kinematics and the self-couplings of [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) come out right, and why [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) can write the whole construction without an extra hypothesis.
+**One row out of three matches.** The vector row is the adjoint, and the adjoint is what a Yang–Mills field needs: that is why the free kinematics and the self-couplings of [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) come out right, and why [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) can write the whole construction without an extra hypothesis.
 
 ## The Scalar Row: Why There Is No Doublet
 
@@ -88,9 +88,9 @@ What survives. The abelian mechanism is untouched, because a central field can c
 
 The carrier is the ideal $S_+$, and it is one module, not two. The two chiral halves are the values of one operator — the letter law of [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), where $L$ and $R$ are the two values of the right multiplication by $\vec e_z$, not two separate spaces.
 
-The gauge action is left multiplication, and left multiplication does not read the letter. A left multiplication $(aQ)\vec e_z=a(Q\vec e_z)$ keeps the letter of its argument and applies the same element to both values. So a non-abelian local transformation acts on $L$ and $R$ with the same matrix, which is the definition of a vector-like coupling.
+The connection action is left multiplication, and left multiplication does not read the letter. A left multiplication $(aQ)\vec e_z=a(Q\vec e_z)$ keeps the letter of its argument and applies the same element to both values. So a non-abelian local transformation acts on $L$ and $R$ with the same matrix, which is the definition of a vector-like coupling.
 
-**A chiral gauge theory needs two different actions on the two values.** It needs the group to act on $L$ and to act differently, or not at all, on $R$. Left multiplication cannot do this: it is one operator, acting on one side, on a module that contains both letters. That is the whole obstruction, and it is a statement about the carrier and not about the completeness of the work.
+**A chiral connection theory needs two different actions on the two values.** It needs the group to act on $L$ and to act differently, or not at all, on $R$. Left multiplication cannot do this: it is one operator, acting on one side, on a module that contains both letters. That is the whole obstruction, and it is a statement about the carrier and not about the completeness of the work.
 
 The abelian case is the exception, and it is the one the corpus has. A right multiplication *can* return two different factors on the two values, which is why the framework carries a chiral $\mathrm{U}(1)$ — the charge element $b$ of [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) with $ϙ_L\neqϙ_R$ — and cannot carry a chiral $SU(2)$.
 
@@ -114,7 +114,7 @@ A second carrier for the same spin. If the algebra offered two inequivalent modu
 - Imported. Nothing. The table is a computation about the algebra.
 - Not supplied. Any way to decouple spin from representation, which is what the model's scalar and matter sectors require.
 
-Where this is applied. The scalar row is applied in [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) and in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html); the fermion row in [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html); the vector row in [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The carrier of the fermion is collected in [The Gauge Carrier of the Material Sector: Why the Action Is One-Sided](the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.html).
+Where this is applied. The scalar row is applied in [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) and in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html); the fermion row in [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html); the vector row in [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The carrier of the fermion is collected in [The Connection Carrier of the Material Sector: Why the Action Is One-Sided](the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.html).
 
 ## Summary of Notation
 
@@ -131,4 +131,4 @@ Where this is applied. The scalar row is applied in [The Higgs Mechanism in Biqu
 
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), for the dimension four of the compact algebra.
 - [The One-Sided Action and the Spin Representation](../articles_maths/the-one-sided-action-and-the-spin-representation.html), for the left action as the spin representation.
-- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html), for the covariant derivative acting by left multiplication.
+- [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html), for the covariant derivative acting by left multiplication.

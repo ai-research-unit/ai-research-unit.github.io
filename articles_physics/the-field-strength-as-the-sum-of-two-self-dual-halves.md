@@ -207,7 +207,7 @@ $$
 
 Over $\mathbb{C}$ the two actions are independent, and that is the sense in which the field strength is a sum of two independent halves. Over $\mathbb{R}$ they are tied by the reality condition, which is why a real field's two halves are not separately observable: only their combination $\vec E$ and $\vec B$ is, and the split is a change of basis in the field space and not a decomposition into two physical fields.
 
-## The Potential and the Gauge Shift
+## The Potential and the Phase Shift
 
 ### The Potential as a Vector
 
@@ -217,7 +217,7 @@ $$
 F=dA .
 $$
 
-### The Gauge Shift
+### The Phase Shift
 
 The potential is not unique. For any function $\chi$ of the coordinates,
 
@@ -310,7 +310,7 @@ The physical interpretation is that the electric and magnetic fields are the rea
 
 ## Summary
 
-A field strength is a two-form, hence an element of the Lorentz Lie algebra, with six real components. The Hodge dual squares to $-1$, so it is a complex structure whose $\pm i$ eigenspaces split the complexified field into a self-dual and an anti-self-dual half of three complex components each, the two three-dimensional complex representations $(1,0)$ and $(0,1)$ — the two commuting complex triples. The self-dual half is the Riemann–Silberstein vector $\vec N=\vec E+ic\vec B$, in which the four vacuum Maxwell equations collapse into $\vec\nabla_\Phi\cdot\vec N=0$ and $\vec\nabla_\Phi\times\vec N=\frac ic\partial_t\vec N$, one complex equation for the two helicities. The field transforms by the adjoint and not by the congruence, so the halves are preserved by the Lorentz action and are conjugate for a real field; over $\mathbb{C}$ they are independent. The field is the curvature $F=dA$ of a potential one-form, whose carrier is $(\tfrac12,\tfrac12)$, and the gauge shift $A\mapsto A+d\chi$ leaves $F$ alone because $d^{2}=0$; so the potential's carrier is quotiented by the exact forms while the field strength's carrier $(1,0)\oplus(0,1)$ is untouched by the shift. The pair of Maxwell equations is the single complex equation $d\mathcal{F}=0$ for $\mathcal{F}=F+i\star F$, whose real part is the Bianchi identity and whose imaginary part is the field equation.
+A field strength is a two-form, hence an element of the Lorentz Lie algebra, with six real components. The Hodge dual squares to $-1$, so it is a complex structure whose $\pm i$ eigenspaces split the complexified field into a self-dual and an anti-self-dual half of three complex components each, the two three-dimensional complex representations $(1,0)$ and $(0,1)$ — the two commuting complex triples. The self-dual half is the Riemann–Silberstein vector $\vec N=\vec E+ic\vec B$, in which the four vacuum Maxwell equations collapse into $\vec\nabla_\Phi\cdot\vec N=0$ and $\vec\nabla_\Phi\times\vec N=\frac ic\partial_t\vec N$, one complex equation for the two helicities. The field transforms by the adjoint and not by the congruence, so the halves are preserved by the Lorentz action and are conjugate for a real field; over $\mathbb{C}$ they are independent. The field is the curvature $F=dA$ of a potential one-form, whose carrier is $(\tfrac12,\tfrac12)$, and the phase shift $A\mapsto A+d\chi$ leaves $F$ alone because $d^{2}=0$; so the potential's carrier is quotiented by the exact forms while the field strength's carrier $(1,0)\oplus(0,1)$ is untouched by the shift. The pair of Maxwell equations is the single complex equation $d\mathcal{F}=0$ for $\mathcal{F}=F+i\star F$, whose real part is the Bianchi identity and whose imaginary part is the field equation.
 
 ## Summary of Notation
 

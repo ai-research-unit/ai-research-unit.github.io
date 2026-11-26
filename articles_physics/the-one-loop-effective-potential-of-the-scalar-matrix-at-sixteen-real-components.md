@@ -35,7 +35,7 @@ with $\chi_{i}$ the sixteen real components of the Hermitian matrix, $\mu$ the r
 **Three things are being assumed and each is named.**
 
 - *The background is constant.* Gradient terms are dropped, so the result is a potential and not an action.
-- *The tree potential is the whole of the tree level.* No other field has a background. **The gauge and ghost determinants then drop out**, because the identity background commutes with every generator and no vector mass depends on $\rho$; **the fermion determinant does not**, because the Yukawa turns the same background into a mass $y_{i}\rho/2$ for each of the sixteen Weyl fields. That term is computed in [The Machinery Under the Primordial Action](the-machinery-under-the-primordial-action-trace-curvature-ghosts-and-one-loop.html).
+- *The tree potential is the whole of the tree level.* No other field has a background. **The connection and ghost determinants then drop out**, because the identity background commutes with every generator and no vector mass depends on $\rho$; **the fermion determinant does not**, because the Yukawa turns the same background into a mass $y_{i}\rho/2$ for each of the sixteen Weyl fields. That term is computed in [The Machinery Under the Primordial Action](the-machinery-under-the-primordial-action-trace-curvature-ghosts-and-one-loop.html).
 - *The expansion is one loop.* Every statement below is first order in $\hbar$.
 
 **The Hessian is evaluated along one direction only, and the direction is chosen for a reason.** The identity, $Ξ_{0}=\frac{\rho}{2}\mathbb{1}$, is the phase's most symmetric point; **its little group is all of $\mathrm{SU}(4)$, so the Hessian's blocks are fixed by symmetry and no numerical diagonalisation is needed.**

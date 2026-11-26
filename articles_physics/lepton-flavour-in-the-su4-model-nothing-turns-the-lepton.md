@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**No gauge vertex changes a lepton's line, and the proof is three matrix statements.** The fifteen act on the sixteen as $X\otimes\mathbb 1_{2}$; the lepton is the temporal line $\mathbb C e_{t}$; and every array either annihilates $e_{t}$, multiplies it by a phase, or sends it into the colour triple. **None sends it to itself with a different label, and none sends it to a different lepton.**
+**No connection vertex changes a lepton's line, and the proof is three matrix statements.** The fifteen act on the sixteen as $X\otimes\mathbb 1_{2}$; the lepton is the temporal line $\mathbb C e_{t}$; and every array either annihilates $e_{t}$, multiplies it by a phase, or sends it into the colour triple. **None sends it to itself with a different label, and none sends it to a different lepton.**
 
 **Two sentences that are easy to confuse, and the article keeps them apart.**
 
@@ -21,7 +21,7 @@ $$
 \frac{g_4^{2}}{2M_X^{2}}\Bigl[(\bar q\,\gamma^{\imath}P_L\ell)(\bar q'\,\gamma_{\imath}P_L\ell')+(L\to R)\Bigr].
 $$
 
-**One coupling, so the two chiralities come with equal coefficients**, and that equality is exact here: the quartet and the conjugate quartet are gauged by the same $g_4$. **There is no $LR$ term**, because an $LR$ term would need a scalar that carries both chiralities, and $Ξ$ couples $\bar\xi\xi$ and not $\bar\xi\xi$ of the same chirality.
+**One coupling, so the two chiralities come with equal coefficients**, and that equality is exact here: the quartet and the conjugate quartet are made local by the same $g_4$. **There is no $LR$ term**, because an $LR$ term would need a scalar that carries both chiralities, and $Ξ$ couples $\bar\xi\xi$ and not $\bar\xi\xi$ of the same chirality.
 
 **The colour factor is one.** The quark legs sit on one colour line, the leptoquark propagator is diagonal in colour, and there is no sum over colours to make. **A colour factor of three would need the two vertices on different colour lines**, which is a different diagram.
 
@@ -65,7 +65,7 @@ $$
 
 | statement | status |
 | --- | --- |
-| no gauge vertex changes a lepton's generation | exact in this model, by the table above |
+| no connection vertex changes a lepton's generation | exact in this model, by the table above |
 | the leptoquark operator's two chiralities have equal coefficients | exact, one coupling |
 | the colour factor is one | exact, one colour line |
 | $M_X^{2}=32v^{2}$ | exact, the adjoint mass matrix |
@@ -136,7 +136,7 @@ $$
 | $\mathbb C e_{t}$ | the lepton line of the quartet |
 | $B_V$ | the colour triple, $\operatorname{span}\{e_{x},e_{y},e_{z}\}$ |
 | $M_X$ | the sextet's mass, $M_X^{2}=32v^{2}=16g_4^{2}v_C^{2}$ |
-| $g_4$ | the model's single gauge coupling |
+| $g_4$ | the model's single connection coupling |
 | $U_{de}$, $U_{s\mu}$ | mixing entries below $M_C$, not computed in the corpus |
 | $P_{L}$, $P_{R}$ | the chiral projectors of the two halves |
 | $f_K$ | the kaon decay constant, an imported hadronic number |
@@ -144,7 +144,7 @@ $$
 
 ## Further Reading
 
-- [The Fermion–Gauge Vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The selection rule this article applies, and the $128$ entries behind it.
+- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The selection rule this article applies, and the $128$ entries behind it.
 - [The Yukawa Sector of the $\mathrm{SU}(4)$ Model](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). The one matrix, the aligned mass basis, and the factor three.
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The sixteen, and the copy index that is not a generation.
 - [An Introduction to Flavour](an-introduction-to-flavour.html). Why an index the algebra cannot see is invisible to every gauge measurement.

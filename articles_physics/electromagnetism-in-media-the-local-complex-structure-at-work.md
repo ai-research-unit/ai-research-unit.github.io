@@ -193,7 +193,7 @@ $$
 $$
 with the coefficient $1/Z=\epsilon c$, so that $\epsilon c\,\partial\vec E/\partial r'_t=c\,\partial\vec D/\partial r'_t$; the imaginary part, $c\,\partial \vec B/\partial r'_t+\mathrm{rot}\,\vec E=0$, is Faraday's law $\mathrm{rot}\,\vec E=-c\,\partial\vec B/\partial r'_t$. One power of $i$ comes from the field's electric half and one from $\partial/\partial R_t$, and the product is the $-1$ that turns the curl term of the electric half into a time derivative. The two medium constants arrive in exactly two places: $c$ multiplies the magnetic half, and $Z$ multiplies the current. The biquaternionic Maxwell equation therefore has a form independent of the medium; the medium is carried by the definition of $\tilde{F}$, by the single factor $Z$, and by the operator $\partial/\partial R_t$.
 
-Two companion statements from the Maxwell article carry over unchanged. The first is the integrability condition $Z\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz gauge the potential biquaternion $\tilde{A}_{\Phi}=i\,a'_t+\vec A$ satisfies
+Two companion statements from the Maxwell article carry over unchanged. The first is the integrability condition $Z\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz fixing condition the potential biquaternion $\tilde{A}_{\Phi}=i\,a'_t+\vec A$ satisfies
 $$
 \Box_\Phi\tilde{A}_{\Phi}=-\mu\,\tilde J_{\Phi},
 \qquad

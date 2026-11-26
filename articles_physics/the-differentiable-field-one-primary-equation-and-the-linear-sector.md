@@ -26,7 +26,7 @@ The corpus is not uniform about what it postulates, and the distinction between 
 | The state space and the Born form | derived from $\mathbb{B}_{\Psi}$ | *States, Observables and the Born Weight* |
 | The Dirac equation | transcribed into the algebra | *The Dirac Equation in Biquaternionic Form* |
 | The Maxwell equations | transcribed, or obtained from a biquaternion wave equation | *Nonlinear Maxwell Equations in Biquaternionic Form* |
-| The minimal coupling | postulated, with a ceiling on the group | *The Gauge Principle in Biquaternionic Form* |
+| The minimal coupling | postulated, with a ceiling on the group | *The Minimal Coupling in Biquaternionic Form* |
 | $\frac{h}{2\pi}$ | imported, nowhere derived | — |
 
 The pattern is visible in one line: **the corpus derives the arena and imports the dynamics.** The interval, the group, the cone and the state space follow from the algebra; the equations of motion are written into it. The derivation route is an attempt to close that gap, and it closes it from the dynamics side rather than the kinematic one.
@@ -65,7 +65,7 @@ This also dissolves the most obvious objection to a nonlinear primary equation. 
 
 ### The Fields as Semi-Derivatives
 
-What plays the role of the field is not $\Sigma$ but the multiplier. The condition splits as $d\digamma_{\mathrm{frm}}=Ξ\,dZ\,\zeta$, with $Ξ$ the left semi-derivative carrying the gauge field and $\digamma_{\mathrm{frm}},\zeta$ two $SL(2,\mathbb{C})$-spinors; the system is eight equations for six unknowns, and the connection it generates is weakly self-dual — the self-dual part of its curvature vanishes on the solutions rather than identically — so that its Bianchi identity is the field equation. That construction is *The Algebrodynamical Programme*, §*The Generating System and the Gauge Fields*, and it is not repeated here.
+What plays the role of the field is not $\Sigma$ but the multiplier. The condition splits as $d\digamma_{\mathrm{frm}}=Ξ\,dZ\,\zeta$, with $Ξ$ the left semi-derivative carrying the connection and $\digamma_{\mathrm{frm}},\zeta$ two $SL(2,\mathbb{C})$-spinors; the system is eight equations for six unknowns, and the connection it generates is weakly self-dual — the self-dual part of its curvature vanishes on the solutions rather than identically — so that its Bianchi identity is the field equation. That construction is *The Algebrodynamical Programme*, §*The Generating System and the Connections*, and it is not repeated here.
 
 The point for this article is the direction of the implication. In the corpus's gauge articles the connection is introduced because a symmetry is made local, and the field strength is defined as its curvature; the minimal coupling is the postulate. Here the connection is what a differentiable function carries, the curvature is its integrability obstruction, and the field equations are identities. No minimal coupling is assumed.
 
@@ -95,7 +95,7 @@ The direction field of a null solution of Maxwell's equations is tangent to a ge
 
 ## What the Derivation Buys
 
-### Gauge Equations Without a Gauge Postulate
+### Connection Equations Without a Local Postulate
 
 The gain is not a new equation but a new status for the old ones. Maxwell and Yang–Mills become identities, and the minimal coupling becomes a theorem about the curvature of the connection a differentiable function carries. That is the strongest form the corpus's open question 1 could take: the dynamics is a consequence of the algebra and of one definition, and the definition is not adjustable without changing what a derivative means.
 
@@ -227,8 +227,8 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 - [The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase](the-celestial-sphere-of-the-null-cone-null-directions-chirality-and-the-phase.html), for the sphere of null directions and the little-group phase.
 - [Twistor Theory and Biquaternions](twistor-theory-and-biquaternions.html), for the incidence relation and the projective spinor ratio that the generating function is written in.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the cone as a topological object and its Lorentzian slices.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the postulate the derivation route replaces with a theorem.
-- [Gauge Curvature and the Bianchi Identity in Biquaternionic Form](gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html), for the Bianchi identity as a Jacobi identity and the form the field equations take.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the postulate the derivation route replaces with a theorem.
+- [Connection Curvature and the Bianchi Identity in Biquaternionic Form](gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html), for the Bianchi identity as a Jacobi identity and the form the field equations take.
 - [The Schrödinger equation in the Non-Quantum Limit](the-schrodinger-equation-in-the-non-quantum-limit.html), for the eikonal as the short-wavelength limit, the relation this article inverts.
 - [The Rotations, the Boosts and the Groups](../articles_internal/the-rotations-the-boosts-and-the-groups.html), for the statement that a boost is a motion and not an automorphism, which is the corpus's side of the fork.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the framework's own test of a structural hypothesis and its list of open questions.

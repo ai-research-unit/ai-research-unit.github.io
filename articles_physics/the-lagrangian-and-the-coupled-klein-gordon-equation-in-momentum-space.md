@@ -227,6 +227,6 @@ Both readings are real in the corpus's writing, so the reality of the symbol can
 - *The Coupled Klein–Gordon Equation in Biquaternionic Form*, for the two equations, the covariant square and the prohibition.
 - *Derivatives, Fields and Transforms*, for the symbol rule and the transform of a product.
 - *Norm and Pairing Conventions*, for the Hermitian form and the modulus squared.
-- *The Gauge Principle in Biquaternionic Form*, for the localization of the central phase and the sign of the coupling.
+- *The Minimal Coupling in Biquaternionic Form*, for the localization of the central phase and the sign of the coupling.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), Chapter 2, for the minimal substitution and the constant-potential shift.
 - L. D. Landau and E. M. Lifshitz, *The Classical Theory of Fields* (Pergamon, 4th ed., 1975), §17, for the coupling prescription in the standard language.

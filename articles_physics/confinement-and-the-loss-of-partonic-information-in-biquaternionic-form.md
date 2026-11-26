@@ -418,9 +418,9 @@ That is the shape of the result: a linear bag model becomes a **boundary singula
 - Companion article *The Renormalization Group in Biquaternionic Form*, for the one-loop running and the statement that the group, matter, action, measure and regulator are inputs.
 - Companion article *Decoherence as Idempotent Projection*, for the channel model of a loss onto a subalgebra and the full-dephasing limit.
 - Companion article *Relative Entropy and the Biquaternion Framework*, for the relative entropy and its monotonicity under completely positive maps.
-- Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the non-abelian connection and the generators realized in the informational sector.
+- Companion article *Non-Abelian Connections in Biquaternionic Form*, for the non-abelian connection and the generators realized in the informational sector.
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the chiral structure of the module and the vector-like character of the framework's symmetry group.
-- Companion article *Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form*, for the redundancy case against which this article's loss is defined.
+- Companion article *Redundancy and the Information in the Orbit in Biquaternionic Form*, for the redundancy case against which this article's loss is defined.
 - Companion article *The Higgs Mechanism as an Erasure of Information in Biquaternionic Form*, for the relocation case against which this article's loss is defined.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the spin–biquaternion dictionary of the bag model, and in particular for the distinction between the componentwise complex conjugation $\overline{\cdot}$ that the mass term carries and the algebra's real structure $\flat$.
 - Companion article *Biquaternion Regular Functions*, for the shifted operator $D_\alpha$, the boundary-value criterion $P_\alpha f = f$, and the function theory the bag reduction uses.
@@ -515,14 +515,14 @@ The angle is $\theta_{\mathrm{gau}}$, the integrated phase function: the charge 
 - V. V. Kravchenko, "On a Biquaternionic Bag Model," *Zeitschrift für Analysis und ihre Anwendungen* **14** (1995), no. 1, 3–14, DOI 10.4171/ZAA/658, for the real-linear dictionary from the source's four-component fields to biquaternions, the removal of the conjugation operator in the mass term, the reduction of the linear bag model to the boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$, and the invertibility and Fredholm questions for the shifted operator $D_\alpha$.
 - V. V. Kravchenko and M. V. Shapiro, *Integral Representations for Spatial Models of Mathematical Physics* (Pitman Research Notes in Mathematics 351, Addison-Wesley Longman, 1996), for the Teodorescu transform, the Cauchy-type operator and the operator of singular integration with a biquaternionic parameter, and the boundary-value criteria the bag reduction uses.
 - A. W. Thomas, "Chiral Symmetry and the Bag Model: A New Starting Point for Nuclear Physics," *Advances in Nuclear Physics* **13** (1984) 1–137, for the bag model itself, the confining region and its linear boundary condition.
-- John B. Kogut, "An Introduction to Lattice Gauge Theory and Spin Systems," *Reviews of Modern Physics* **51** (1979) 659–713, for the lattice formulation and the strong-coupling derivation of the area law.
-- K. Osterwalder and E. Seiler, "Gauge Field Theories on a Lattice," *Annals of Physics* **110** (1978) 440–471, for the statement that the area law implies a mass gap.
+- John B. Kogut, "An Introduction to Lattice Connection theory and Spin Systems," *Reviews of Modern Physics* **51** (1979) 659–713, for the lattice formulation and the strong-coupling derivation of the area law.
+- K. Osterwalder and E. Seiler, "Connection Theories on a Lattice," *Annals of Physics* **110** (1978) 440–471, for the statement that the area law implies a mass gap.
 - Alexander M. Polyakov, *Gauge Fields and Strings* (Harwood, 1987), for the flux tube, the string picture, and the large-distance behaviour of the loop.
 - Gerard 't Hooft, "On the Phase Transition Towards Permanent Quark Confinement," *Nuclear Physics B* **138** (1978) 1–25, for the confinement criterion and the behaviour of the loop in the two phases.
 - Yu. M. Makeenko and A. A. Migdal, "Exact Equation for the Loop Average in Multicolor QCD," *Physics Letters B* **88** (1979) 135–137, for the loop equation and its large-$N$ closure.
 - J. D. Bjorken and E. A. Paschos, "Inelastic Electron–Proton and Gamma–Proton Scattering and the Structure of the Nucleon," *Physical Review* **185** (1969) 1975–1982, for the parton picture and its scale dependence.
 - H. David Politzer, "Reliable Perturbative Results for Strong Interactions?", *Physical Review Letters* **30** (1973) 1346–1349, for asymptotic freedom and the running of the colour coupling.
-- David J. Gross and Frank Wilczek, "Ultraviolet Behavior of Non-Abelian Gauge Theories," *Physical Review Letters* **30** (1973) 1343–1346, for asymptotic freedom.
+- David J. Gross and Frank Wilczek, "Ultraviolet Behavior of Yang–Mills theory," *Physical Review Letters* **30** (1973) 1343–1346, for asymptotic freedom.
 - Roman W. Jackiw and Claudio Rebbi, "Vacuum Periodicity in a Yang–Mills Quantum Theory," *Physical Review Letters* **37** (1976) 172–175, for the topological vacuum structure of the confined phase.
 - Huzihiro Araki, "Relative entropy of states of von Neumann algebras," *Publications of the Research Institute for Mathematical Sciences* **11** (1976) 809–833, for relative entropy, monotonicity, and its behaviour under conditional expectations.
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the monotonicity of relative entropy under completely positive maps and the structure of channels that fix their image.

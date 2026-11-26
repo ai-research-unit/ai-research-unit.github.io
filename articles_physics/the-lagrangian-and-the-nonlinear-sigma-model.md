@@ -80,7 +80,7 @@ $$
 \frac{\partial j_{\jmath}}{\partial R_{\imath}}-\frac{\partial j_{\imath}}{\partial R_{\jmath}}+[j_{\imath},j_{\jmath}]=0 ,
 $$
 
-which is an identity for any group-valued field and holds for no other algebra-valued one-form. Flatness is what makes $j_{\imath}$ a pure gauge connection, and it is the source of every distinctive property of the model below.
+which is an identity for any group-valued field and holds for no other algebra-valued one-form. Flatness is what makes $j_{\imath}$ a pure connection, and it is the source of every distinctive property of the model below.
 
 **The action at two derivatives.** The one invariant at this order is the norm of the current,
 

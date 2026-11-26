@@ -92,9 +92,9 @@ J^{t}=q\,\rho_{\mathrm{chg}},
 \rho_{\mathrm{chg}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}} ,
 $$
 
-and the charge $Q=\int\mathrm{d}^{3}r\,J^{t}$. The same $q$ appears in the covariant derivative $\partial+\frac{2\pi iq}{h}A$ and in the gauge shift $A\mapsto A-\frac{h}{2\pi q}\partial\Lambda$. Three appearances, one symbol: that coincidence is what "one constant" means, and it is checkable by reading the three displays.
+and the charge $Q=\int\mathrm{d}^{3}r\,J^{t}$. The same $q$ appears in the covariant derivative $\partial+\frac{2\pi iq}{h}A$ and in the phase shift $A\mapsto A-\frac{h}{2\pi q}\partial\Lambda$. Three appearances, one symbol: that coincidence is what "one constant" means, and it is checkable by reading the three displays.
 
-Why the current is the source. The connection multiplies the current in the action, so the connection's variation returns the current; the matter equation's phase symmetry conserves the same bilinear. That is the classical statement of what a quantised theory would call the Ward identity's ancestor: the source of the field is the Noether current of the symmetry that the field gauges.
+Why the current is the source. The connection multiplies the current in the action, so the connection's variation returns the current; the matter equation's phase symmetry conserves the same bilinear. That is the classical statement of what a quantised theory would call the Ward identity's ancestor: the source of the field is the Noether current of the symmetry that the field fixing conditions.
 
 What the claim forbids. It forbids a second coupling constant, an arbitrary axial admixture, or a contact term between the two fields: each would break one of the three appearances of $q$. The corpus can therefore say that classical QED has one parameter, and it can say why.
 
@@ -118,7 +118,7 @@ What a quantisation would add, and this family does not. A Fock space; the canon
 
 ## Summary
 
-QED's classical content is one action: the Dirac action with the covariant derivative, plus the Maxwell term, with one constant appearing in the derivative, the current and the gauge shift. Its variations give the coupled Dirac equation and the inhomogeneous Maxwell equation, and the scalar part of the second is the continuity equation for the first. The vector current is conserved, the axial one is broken by the mass, and the stress is positive. Nothing in the article quantises anything, and that is its subject as much as its content.
+QED's classical content is one action: the Dirac action with the covariant derivative, plus the Maxwell term, with one constant appearing in the derivative, the current and the phase shift. Its variations give the coupled Dirac equation and the inhomogeneous Maxwell equation, and the scalar part of the second is the continuity equation for the first. The vector current is conserved, the axial one is broken by the mass, and the stress is positive. Nothing in the article quantises anything, and that is its subject as much as its content.
 
 $$
 S=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L\bigr]+\mathrm{Sc}\bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R\bigr]-2\pi\nu_m\,\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\Xi_L+\tilde\Xi_L^{*}\tilde\Xi_R\bigr]i\vec v+\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)\Bigr\}.

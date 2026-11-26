@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This article is the strong sector's application of a general expansion.** Steepest descent, the collective-coordinate measure, the theta vacuum, the dilute gas and the one-loop prefactor are stated with no sector attached in [The Euclidean Semiclassical Expansion and the Dilute Gas in Biquaternionic Form](the-euclidean-semiclassical-expansion-and-the-dilute-gas-in-biquaternionic-form.html). What is added here is the strong sector's content: the configurations are those of the colour gauge theory, the theta angle produced by the sum is the strong CP parameter, and the gaps recorded are the framework's.
+**This article is the strong sector's application of a general expansion.** Steepest descent, the collective-coordinate measure, the theta vacuum, the dilute gas and the one-loop prefactor are stated with no sector attached in [The Euclidean Semiclassical Expansion and the Dilute Gas in Biquaternionic Form](the-euclidean-semiclassical-expansion-and-the-dilute-gas-in-biquaternionic-form.html). What is added here is the strong sector's content: the configurations are those of the colour connection theory, the theta angle produced by the sum is the strong CP parameter, and the gaps recorded are the framework's.
 
 *The ADHM Construction and Biquaternion Instanton Data* parametrised the self-dual connections of the Euclidean theory, and *The Index Theorem and the Zero-Mode Count in Biquaternionic Form* counted the fermion modes they support. This article turns the instanton from a solution of a field equation into a contribution to a physical quantity. It develops the **semiclassical expansion** of the Euclidean path integral around instantons and collects those contributions into the **instanton gas**, the dilute-medium picture in which the theta dependence of the vacuum and the vacuum energy are computed.
 
@@ -34,7 +34,7 @@ $$
 Z \;=\; \int \mathcal D\mathcal A\;\exp(-S[\mathcal A]),
 $$
 
-where the measure, the gauge-fixing and the ghosts are the objects constructed in the companion path-integral articles; the instanton calculus takes that construction for granted. **Steepest descent, the saddle-point condition, the one-loop determinant and the treatment of the flat directions are the machinery of [The Euclidean Semiclassical Expansion and the Dilute Gas in Biquaternionic Form](the-euclidean-semiclassical-expansion-and-the-dilute-gas-in-biquaternionic-form.html).** What is added here is the framework's saddle: a self-dual configuration, whose classical action is fixed by the topology,
+where the measure, the choice of representative and the ghosts are the objects constructed in the companion path-integral articles; the instanton calculus takes that construction for granted. **Steepest descent, the saddle-point condition, the one-loop determinant and the treatment of the flat directions are the machinery of Gauge Fields: An Introduction to Quantum Theory.** What is added here is the framework's saddle: a self-dual configuration, whose classical action is fixed by the topology,
 
 $$
 S_{\mathrm{cl}}=\frac{8\pi^2}{g^2}|Ϙ| ,
@@ -56,7 +56,7 @@ $$
 \boxed{\;Z_{\mathrm{cl},1} \;\propto\; VT\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2)\;}.
 $$
 
-The one-loop determinant multiplies this by a power of the coupling and, through renormalisation, by the running of $g$ with the scale. The physical statement is the **dimensional transmutation** of the renormalisation group: the dimensionless coupling $g$ is replaced by the running coupling $g(\rho)$ evaluated at the instanton size, and the 't Hooft one-loop result for the pure gauge theory has the structure
+The one-loop determinant multiplies this by a power of the coupling and, through renormalisation, by the running of $g$ with the scale. The physical statement is the **dimensional transmutation** of the renormalisation group: the dimensionless coupling $g$ is replaced by the running coupling $g(\rho)$ evaluated at the instanton size, and the 't Hooft one-loop result for the pure connection theory has the structure
 
 $$
 Z_1 \;\propto\; VT\int_0^\infty \frac{d\rho}{\rho^5}\;\Bigl(\frac{8\pi^2}{g^2(\rho)}\Bigr)^{2N}\exp(-8\pi^2/g^2(\rho)) ,
@@ -131,7 +131,7 @@ $$
 \int_0^\infty\frac{d\rho}{\rho^5}\bigl(\text{one-loop factors}\bigr)
 $$
 
-is **infrared divergent** in the pure gauge theory at large $\rho$, because the one-loop factor grows with $\rho$ faster than the measure suppresses it; in $SU(2)$ pure Yang–Mills the integrand behaves as $\rho^{b_0-5}$ with $b_0=\tfrac{22}{3}$, so it grows, and the contribution of large instantons is not controlled by the semiclassical expansion. The dilute-gas picture is reliable only for instantons small compared with the QCD scale, where the running coupling is weak, and the large-size region requires either the full non-perturbative treatment or the additional suppression supplied by light fermions. This is the standard infrared problem of the instanton calculus, and it is reported here rather than resolved: the semiclassical expansion is an expansion in $\exp(-8\pi^2/g^2)$, and its breakdown at large size is the signal that the strong-coupling region is not accessible to it.
+is **infrared divergent** in the pure connection theory at large $\rho$, because the one-loop factor grows with $\rho$ faster than the measure suppresses it; in $SU(2)$ pure Yang–Mills the integrand behaves as $\rho^{b_0-5}$ with $b_0=\tfrac{22}{3}$, so it grows, and the contribution of large instantons is not controlled by the semiclassical expansion. The dilute-gas picture is reliable only for instantons small compared with the QCD scale, where the running coupling is weak, and the large-size region requires either the full non-perturbative treatment or the additional suppression supplied by light fermions. This is the standard infrared problem of the instanton calculus, and it is reported here rather than resolved: the semiclassical expansion is an expansion in $\exp(-8\pi^2/g^2)$, and its breakdown at large size is the signal that the strong-coupling region is not accessible to it.
 
 ## The One-Loop Prefactor and Dimensional Transmutation
 
@@ -149,7 +149,7 @@ b_0=\frac{11}{3}C_2(SU(2))-\frac{2}{3}\sum_{\text{Weyl}}T(R)
 =\frac{22}{3}-\frac{2N_f}{3}=\frac{22-2N_f}{3},
 $$
 
-using $C_2(SU(2))=2$, the Dynkin index $T(\text{defining})=\tfrac12$ of *The Index Theorem and the Zero-Mode Count in Biquaternionic Form*, and the companion renormalisation-group convention in which the subtraction is the sum over **Weyl** fermions: each Dirac flavour contributes two Weyl fermions, so the sum is $2N_f\cdot\tfrac12=N_f$ and the matter term is $-\tfrac{2}{3}N_f$, not $-\tfrac{1}{3}N_f$. For the pure gauge theory $b_0=22/3$ either way. Asymptotic freedom is lost at $N_f=11$ Dirac flavours, where this coefficient vanishes.
+using $C_2(SU(2))=2$, the Dynkin index $T(\text{defining})=\tfrac12$ of *The Index Theorem and the Zero-Mode Count in Biquaternionic Form*, and the companion renormalisation-group convention in which the subtraction is the sum over **Weyl** fermions: each Dirac flavour contributes two Weyl fermions, so the sum is $2N_f\cdot\tfrac12=N_f$ and the matter term is $-\tfrac{2}{3}N_f$, not $-\tfrac{1}{3}N_f$. For the pure connection theory $b_0=22/3$ either way. Asymptotic freedom is lost at $N_f=11$ Dirac flavours, where this coefficient vanishes.
 
 **Dimensional transmutation.** The running coupling can be traded for a scale $\Lambda$ by
 
@@ -233,7 +233,7 @@ $$
 
 with the one-loop determinant supplying the powers of the running coupling and realising dimensional transmutation. The sum over topological sectors produces the theta vacuum $\lvert\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta_{\mathrm{vac}})\lvert Ϙ\rangle$ and the partition function $Z(\theta_{\mathrm{vac}})=\sum_Ϙ \exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ$, which is periodic, $Z(\theta_{\mathrm{vac}}+2\pi)=Z(\theta_{\mathrm{vac}})$, and has vacuum energy $\mathcal E(\theta_{\mathrm{vac}})=\mathcal E_0-2K\cos\theta_{\mathrm{vac}}\,\exp(-8\pi^2/g^2)+\cdots$ and topological susceptibility $\xi_t=2K \exp(-8\pi^2/g^2)+\cdots$. Both were verified on an explicit finite instanton sum.
 
-The dilute instanton gas exponentiates the one-instanton weight into a pressure of charged objects and reproduces the vacuum energy and cluster decomposition, but its size integral is infrared divergent in the pure gauge theory and the approximation holds only for instantons small compared with the strong-coupling scale. The framework supplies the saddle, its action, its moduli and the abelian form of its topological density; the measure, the determinants, the running coupling and the physical identification are imported from the standard quantum field theory of the companion path-integral and renormalisation-group articles.
+The dilute instanton gas exponentiates the one-instanton weight into a pressure of charged objects and reproduces the vacuum energy and cluster decomposition, but its size integral is infrared divergent in the pure connection theory and the approximation holds only for instantons small compared with the strong-coupling scale. The framework supplies the saddle, its action, its moduli and the abelian form of its topological density; the measure, the determinants, the running coupling and the physical identification are imported from the standard quantum field theory of the companion path-integral and renormalisation-group articles.
 
 ## Summary of Notation
 
@@ -262,7 +262,7 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 - Gerard 't Hooft, "Computation of the quantum effects due to a four-dimensional pseudoparticle", *Physical Review D* 14 (1976) 3432–3450, for the one-instanton measure, the one-loop determinant and the theta dependence.
 - Alexander A. Belavin, Alexander M. Polyakov, Albert S. Schwartz and Yuri S. Tyupkin, "Pseudoparticle solutions of the Yang–Mills equations", *Physics Letters B* 59 (1975) 85–87, for the instanton saddle.
 - Sidney Coleman, "The uses of instantons", in *Aspects of Symmetry* (Cambridge University Press, 1985), for the theta vacuum, the dilute-gas picture and its interpretation.
-- Curtis G. Callan, Roger F. Dashen and David J. Gross, "The structure of the gauge theory vacuum", *Physics Letters B* 63 (1976) 334–340, for the theta vacuum and the cluster-decomposition argument.
+- Curtis G. Callan, Roger F. Dashen and David J. Gross, "The structure of the connection theory vacuum", *Physics Letters B* 63 (1976) 334–340, for the theta vacuum and the cluster-decomposition argument.
 - Edward Witten, "Instantons, the quark model, and the $1/N$ expansion", *Nuclear Physics B* 149 (1979) 285–320, for the theta dependence and the large-$N$ resolution of the vacuum energy.
 - Mikhail A. Shifman, ed., *Instantons in Gauge Theories* (World Scientific, 1994), for a collected account of the instanton calculus and its applications.
 - Michael F. Atiyah, Vladimir G. Drinfeld, Nigel J. Hitchin and Yuri I. Manin, "Construction of instantons", *Physics Letters A* 65 (1978) 185–187, for the moduli space whose measure the semiclassical integral uses.

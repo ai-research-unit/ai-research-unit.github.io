@@ -1,4 +1,4 @@
-# __Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses__
+# __Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses__
 
 ## Introduction
 
@@ -22,7 +22,7 @@ Three results that the single-particle articles do not state.
 - Why the photon is massless, structurally. Not because of a tuning: the eigenvalue is zero because the generator $Q=T_3+Y$ annihilates the vacuum. The zero is a consequence of the alignment of the vacuum with the charge, and it is the only reason the electromagnetic group survives.
 - The numbers, from three independent sets of inputs. From $g$, $g_{\mathrm Y}$ and $v$ at $M_Z$ the values are $80.24$ and $1.631\times10^{-25}\ \mathrm{kg}$. From $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $1.423\times10^{-25}\ \mathrm{kg}$ with $\alpha$ at the Z pole and $1.443\times10^{-25}\ \mathrm{kg}$ with $\alpha$ at zero momentum, against the measured $80.377$. The two brackets miss in opposite directions by about $8.0\times10^{-11}$ J, and $\delta r=0.0355$ reconciles them.
 
-The order. What the doublet must do; the potential and its minimum; the covariant derivative at the vacuum; the mass matrix; its eigenvalues and the two structural zeros; the counting of degrees of freedom; the unitary gauge and the physical spectrum; the scalar's own mass and couplings; the numbers; the $\rho$ parameter and custodial symmetry; the equivalence theorem; and the framework's position.
+The order. What the doublet must do; the potential and its minimum; the covariant derivative at the vacuum; the mass matrix; its eigenvalues and the two structural zeros; the counting of degrees of freedom; the unitary fixing condition and the physical spectrum; the scalar's own mass and couplings; the numbers; the $\rho$ parameter and custodial symmetry; the equivalence theorem; and the framework's position.
 
 ## What the Doublet Must Do
 
@@ -44,7 +44,7 @@ $$
 Y_{\mathrm{hch}}=\tfrac12 ,
 $$
 
-which is four real fields. The hypercharge is not free here: it is fixed by the invariance of the Yukawa couplings, and [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) derives it from $-Y_{L_L}+Y_{\mathrm{hch}}+Y_{e_R}=0$, that is $Y_{\mathrm{hch}}=Y_{L_L}-Y_{e_R}=+\tfrac12$.
+which is four real fields. The hypercharge is not free here: it is fixed by the invariance of the Yukawa couplings, and [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) derives it from $-Y_{L_L}+Y_{\mathrm{hch}}+Y_{e_R}=0$, that is $Y_{\mathrm{hch}}=Y_{L_L}-Y_{e_R}=+\tfrac12$.
 
 The same object in the companion articles. [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) writes this doublet as $\xi_{\mathrm{scl}}$ with components ${\xi_{\mathrm{scl}}}^\pm$ and ${\xi_{\mathrm{scl}}}^0$, and [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) writes the abelian scalar as $\tilde\Xi=\xi\,e_t$. The three names denote the same object at three levels of generality, and this article uses $\omicron_{\mathrm{pot}}$ throughout.
 
@@ -80,7 +80,7 @@ $$
 \mathrm{SU}(2)=\{\tilde u\in\mathbb{H}:\langle\tilde u\rangle_{\natural}=1\}=\mathrm{Spin}(3)=\mathrm{Sp}(1)=SU(2),
 $$
 
-of real dimension three. So the three Goldstones are coordinates on $\mathrm{SU}(2)$, the count is $3=\dim S^3=\dim\mathrm{SU}(2)=\dim SO(3)$, and unitary gauge is the choice of one point of the manifold. That much is a labelling, and it costs nothing: it does not say which carrier the sphere came from, and every statement so far survives it. The corpus's account of the group as an object rather than as a matrix display is [The Spin Group via 4×4 Real Matrices](../articles_maths/the-spin-group-via-4x4-real-matrices.html); the operator vocabulary used below is fixed in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html).
+of real dimension three. So the three Goldstones are coordinates on $\mathrm{SU}(2)$, the count is $3=\dim S^3=\dim\mathrm{SU}(2)=\dim SO(3)$, and unitary fixing condition is the choice of one point of the manifold. That much is a labelling, and it costs nothing: it does not say which carrier the sphere came from, and every statement so far survives it. The corpus's account of the group as an object rather than as a matrix display is [The Spin Group via 4×4 Real Matrices](../articles_maths/the-spin-group-via-4x4-real-matrices.html); the operator vocabulary used below is fixed in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html).
 
 Where the identification stops. The labelling earns its keep only if a rotor acts on that sphere by left multiplication, that is, only if some carrier of the algebra is left-stable and carries spin zero. Two computations settle whether one is, and both are one line.
 
@@ -89,7 +89,7 @@ Where the identification stops. The labelling earns its keep only if a rotor act
 
 The numbers are reproduced and the carrier is not. Three Goldstones and one surviving circle follow from the ideal, and the same three and one are what the Standard Model doublet gives. The carriers the rotor reaches by left multiplication are the algebra itself, the two minimal left ideals, and the centre; the ideals carry spin one-half, the centre is fixed, and neither is a spin-zero carrier on which the rotor acts non-trivially. That is the gap left visible in [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html), and what the two lines above add is that the gap is a computation on the sector split rather than a remark: the sphere the doublet traces is the rotor's own manifold, and the only carrier that carries the rotor action is the one that carries spin one-half.
 
-**What this does not claim.** The doublet is a carrier choice and is imported, not derived; the potential, $\digamma_{\mathrm{qtc}}$, $v$ and the normalisation of $\omicron_{\mathrm{pot}}$ are imported with it; unitary gauge is not $\tilde U=e_t$, because $e_t$ is the vacuum of the central scalar and not of the ideal. The identification of $S^3$ with $\mathrm{SU}(2)$ is a statement about a manifold, and it is the whole of what the paragraph above establishes.
+**What this does not claim.** The doublet is a carrier choice and is imported, not derived; the potential, $\digamma_{\mathrm{qtc}}$, $v$ and the normalisation of $\omicron_{\mathrm{pot}}$ are imported with it; unitary fixing condition is not $\tilde U=e_t$, because $e_t$ is the vacuum of the central scalar and not of the ideal. The identification of $S^3$ with $\mathrm{SU}(2)$ is a statement about a manifold, and it is the whole of what the paragraph above establishes.
 
 The choice is the breaking. Take
 
@@ -132,7 +132,7 @@ The three parameters are two. The pair $(\mu^2,\digamma_{\mathrm{qtc}})$ and the
 
 ## The Covariant Derivative at the Vacuum
 
-**The derivative.** With the normalisation of the doublet's representation, $\tau_a=\tfrac12\sigma_a$, and the hypercharge assigned as in [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html),
+**The derivative.** With the normalisation of the doublet's representation, $\tau_a=\tfrac12\sigma_a$, and the hypercharge assigned as in [The Electroweak Symmetry group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html),
 
 $$
 D_{\imath}\omicron_{\mathrm{pot}}=\frac{\partial\omicron_{\mathrm{pot}}}{\partial R_{\imath}}+i\,g\sum_a\tau_aW_{a,\imath}\omicron_{\mathrm{pot}}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath}\omicron_{\mathrm{pot}} ,
@@ -259,7 +259,7 @@ The count after. The same fields, now in the broken phase.
 
 A massive vector has three polarisations: two transverse and one longitudinal.
 
-**The balance is $12=12$, and it is not automatic.** The equality holds because exactly three scalar components ceased to be independent fields and exactly three gauge polarisations were gained. The two events are one event, seen from two sides. Had the group been broken to nothing, four connections would be massive and no photon would survive, and the count would still balance — the count does not determine the pattern, only its arithmetic.
+**The balance is $12=12$, and it is not automatic.** The equality holds because exactly three scalar components ceased to be independent fields and exactly three fixing condition polarisations were gained. The two events are one event, seen from two sides. Had the group been broken to nothing, four connections would be massive and no photon would survive, and the count would still balance — the count does not determine the pattern, only its arithmetic.
 
 Where each component went. The three eaten components are the two real parts of $\omicron_{\mathrm{pot}}^+$ and the imaginary part of $\omicron_{\mathrm{pot}}^0$. The fourth, the real part of $\omicron_{\mathrm{pot}}^0$ after the shift, is $h$. The identification is worth writing because it fixes which field is which:
 
@@ -271,7 +271,7 @@ Where each component went. The three eaten components are the two real parts of 
 
 The number of Goldstones equals the number of broken generators. The group has four generators and the surviving group has one, so three are broken, and three is the number of eaten components. This is the Goldstone theorem in its counting form, and the equality is the content of the previous table. The abelian case of [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) has one broken generator and one eaten mode, and the two articles are the same argument at two sizes.
 
-The would-be Goldstones are redundant directions. In a generic gauge the doublet is
+The would-be Goldstones are redundant directions. In a generic fixing condition the doublet is
 
 $$
 \omicron_{\mathrm{pot}}=\exp\left(i\sum_a\theta_{\mathrm{gld},a}\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
@@ -281,9 +281,9 @@ and the three fields $\xi_a$ are the would-be Goldstones. The angle is $\theta_{
 
 Why this is a statement about a field and not about a particle. The Goldstone mode never appears in the physical spectrum, and at the same time it is present in every gauge but the unitary one. The two statements are consistent because the mode is a gauge artefact: its presence or absence is a choice of coordinates on field space, and no observable depends on the choice. What is observable is the three polarisations of the massive vector, and those are counted in the second table.
 
-## The Unitary Gauge and the Physical Spectrum
+## The Unitary Fixing Condition and the Physical Spectrum
 
-The gauge. The unitary gauge is the choice in which the three Goldstones are set to zero and the doublet is $\frac{1}{\sqrt2}(0,v+h)^{T}$. Three fixing conditions, three eaten fields, and no ghosts in the spectrum at tree level.
+The gauge. The unitary fixing condition is the choice in which the three Goldstones are set to zero and the doublet is $\frac{1}{\sqrt2}(0,v+h)^{T}$. Three fixing conditions, three eaten fields, and no ghosts in the spectrum at tree level.
 
 The spectrum. Five particles come out of the four connections and the four scalar components:
 
@@ -334,7 +334,7 @@ The vintage of $M_H$. The value is $2.2299\times10^{-25}\ \mathrm{kg}$, the 2015
 
 The dimension of each coupling is the check. A triple scalar coupling has dimension one and is measured in joules; a quartic has dimension zero and is a pure number; a scalar-vector-vector coupling has dimension one. The table's units agree with the dimensions, which is a check on the powers of $v$ and not a deep statement.
 
-**What the unitary gauge hides.** The Goldstones are gone, and so is the manifest $SU(2)$ invariance: the gauge looks asymmetric, and the propagators of the massive vectors grow with energy in a way that requires the scalar exchange to cancel. That cancellation is a check on the whole sector, and [Gauge Fixing in the Electroweak Theory](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html) carries it. The unitary gauge is a convenient bookkeeping and a poor place to compute loops.
+**What the unitary fixing condition hides.** The Goldstones are gone, and so is the manifest $SU(2)$ invariance: the gauge looks asymmetric, and the propagators of the massive vectors grow with energy in a way that requires the scalar exchange to cancel. That cancellation is a check on the whole sector, and [Choice of representative in the Electroweak Theory](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html) carries it. The unitary fixing condition is a convenient bookkeeping and a poor place to compute loops.
 
 ## The Numbers
 
@@ -440,9 +440,9 @@ $$
 
 For one doublet with $T=\tfrac12$ and $T_3=-\tfrac12$ the numerator is $v^2\left(\tfrac34-\tfrac14\right)=\tfrac12v^2$ and the denominator is $2v^2\tfrac14=\tfrac12v^2$, giving one. For one triplet with $T=1$ and $T_3=-1$ the numerator is $v^2(2-1)=v^2$ and the denominator $2v^2$, giving one half. A triplet therefore pulls $\rho$ below one, and the measurement bounds its vacuum expectation value.
 
-Why $\rho=1$ is structural. The doublet, written as a $2\times2$ matrix $\omicron_{\mathrm{hgs}}=(\tilde\omicron_{\mathrm{pot}},\omicron_{\mathrm{pot}})$ whose columns are the doublet and its conjugate, has a potential that depends only on $\mathrm{tr}(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})$. The potential therefore has an $SU(2)_L\times SU(2)_R$ symmetry larger than the gauged one, and the vacuum $\langle\omicron_{\mathrm{hgs}}\rangle\propto\mathrm I$ breaks it to the diagonal $SU(2)_V$. That residual symmetry is custodial, and it is what makes the three connections' masses related.
+Why $\rho=1$ is structural. The doublet, written as a $2\times2$ matrix $\omicron_{\mathrm{hgs}}=(\tilde\omicron_{\mathrm{pot}},\omicron_{\mathrm{pot}})$ whose columns are the doublet and its conjugate, has a potential that depends only on $\mathrm{tr}(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})$. The potential therefore has an $SU(2)_L\times SU(2)_R$ symmetry larger than the made local one, and the vacuum $\langle\omicron_{\mathrm{hgs}}\rangle\propto\mathrm I$ breaks it to the diagonal $SU(2)_V$. That residual symmetry is custodial, and it is what makes the three connections' masses related.
 
-**The hypercharge breaks custodial symmetry explicitly.** The gauged hypercharge is the third generator of $SU(2)_R$, so switching it on distinguishes the third direction from the other two. The tree-level $\rho=1$ survives because the vacuum is custodially invariant; the breaking appears at one loop, in the difference between the $W$ and $Z$ self-energies, and it is one of the corrections inside $\delta r$.
+**The hypercharge breaks custodial symmetry explicitly.** The made local hypercharge is the third generator of $SU(2)_R$, so switching it on distinguishes the third direction from the other two. The tree-level $\rho=1$ survives because the vacuum is custodially invariant; the breaking appears at one loop, in the difference between the $W$ and $Z$ self-energies, and it is one of the corrections inside $\delta r$.
 
 The empirical bound, in the form that matters here. The measured $\rho$ is unity to about four parts in $10^4$, and that number bounds any additional multiplet's vacuum expectation value. A triplet at the electroweak scale would move $\rho$ by an amount of order $v_t^2/v^2$, so the bound is a bound on $v_t/v$ of a few per cent. The doublet is not merely the simplest choice; it is the one the measurement allows at the scale of the breaking.
 
@@ -450,9 +450,9 @@ The empirical bound, in the form that matters here. The measured $\rho$ is unity
 
 The statement. At energies large compared with the connection mass, an amplitude with a longitudinal $W$ or $Z$ in the initial or final state equals, up to corrections of order $M/E$, the amplitude with the corresponding Goldstone field. In the notation above, $\mathcal{M}(W_L\ldots)=\mathcal{M}(\xi\ldots)+O(M/E)$.
 
-Why it is true here. The Goldstone fields are the redundant directions that the mass term mixes with the longitudinal polarisation. In the $R_\xi$ gauges the mixing is proportional to the Goldstone mass, which is $M_W$ in unitary-weighted gauges; at high energy the mixing is small and the two states are effectively the same.
+Why it is true here. The Goldstone fields are the redundant directions that the mass term mixes with the longitudinal polarisation. In the $R_\xi$ makes the local mixing is proportional to the Goldstone mass, which is $M_W$ in unitary-weighted fixing conditions; at high energy the mixing is small and the two states are effectively the same.
 
-The use. The theorem converts a calculation in a gauge theory into a calculation in a scalar theory, which is the reason the longitudinal amplitudes of the Standard Model are computable. It is also the reason the sector is testable: the scattering of longitudinal connections at high energy would grow with energy if the scalar were absent, and the scalar exchange cancels the growth. The cancellation is exact only if the scalar's couplings are the ones in the table above, so a measurement of longitudinal scattering is a measurement of that table.
+The use. The theorem converts a calculation in a connection theory into a calculation in a scalar theory, which is the reason the longitudinal amplitudes of the Standard Model are computable. It is also the reason the sector is testable: the scattering of longitudinal connections at high energy would grow with energy if the scalar were absent, and the scalar exchange cancels the growth. The cancellation is exact only if the scalar's couplings are the ones in the table above, so a measurement of longitudinal scattering is a measurement of that table.
 
 The bound it gives. Without a scalar, the amplitude for $W_LW_L\to W_LW_L$ grows as $E^2/v^2$ and violates unitarity at about $2.1\times10^{-24}\ \mathrm{kg}$. The scalar's exchange cancels the growth, and the residual term is of order $M_H^2/v^2$. The scale $2.1\times10^{-24}\ \mathrm{kg}$ is therefore the scale at which something must appear if the sector is not as described, and it is the reason the scalar was expected below about $1.6\times10^{-7}$ J.
 
@@ -460,7 +460,7 @@ The bound it gives. Without a scalar, the amplitude for $W_LW_L\to W_LW_L$ grows
 
 ## What the Framework Supplies
 
-The abelian mechanism, whole. The framework constructs, for a single charged scalar and one abelian gauge field, everything the previous sections use: a potential whose minimum is away from the origin, a kinetic term that becomes a mass term at the vacuum, the mass $M_A=\kappa v$ with $\kappa$ the effective charge, a radial mode of mass $\sqrt{2\beta}\,v$, and a count that balances. [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) carries the construction, and nothing in it is imported except the potential's shape.
+The abelian mechanism, whole. The framework constructs, for a single charged scalar and one abelian connection, everything the previous sections use: a potential whose minimum is away from the origin, a kinetic term that becomes a mass term at the vacuum, the mass $M_A=\kappa v$ with $\kappa$ the effective charge, a radial mode of mass $\sqrt{2\beta}\,v$, and a count that balances. [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) carries the construction, and nothing in it is imported except the potential's shape.
 
 The distance to the electroweak case is exactly three items. Stated as a list, because the list is the boundary.
 
@@ -472,7 +472,7 @@ The distance to the electroweak case is exactly three items. Stated as a list, b
 
 **The singlet cannot break the group, and this is the sharpest statement.** A field in the centre commutes with every element of the algebra, so it is annihilated by the $SU(2)$ action. A vacuum invariant under a group does not break it. The framework's scalar gives a mass to the abelian factor and to nothing else, and no amount of rewriting changes that: the obstruction is the representation, not the mechanism.
 
-What the algebra does supply. A two-dimensional module, since $\mathbb{B}\cong M_2(\mathbb{C})$ acts on $\mathbb{C}^2$. A doublet-shaped object is therefore available. What is missing is the assignment of the two factors' actions on it, which is the content of [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) and which that article shows is imported.
+What the algebra does supply. A two-dimensional module, since $\mathbb{B}\cong M_2(\mathbb{C})$ acts on $\mathbb{C}^2$. A doublet-shaped object is therefore available. What is missing is the assignment of the two factors' actions on it, which is the content of [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) and which that article shows is imported.
 
 The one place the framework's formula matches. The abelian mass formula $M_A=\kappa v$ and the standard $M_W=gv/2$ are the same formula with $\kappa=g/2$. The factor of one half is the isospin of the scalar and not a property of the vector, and [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) records the identification. It is a genuine match of structure, and it is a match of one number with a reinterpreted charge, not a derivation.
 
@@ -484,11 +484,11 @@ The electroweak group is broken to $\mathrm{U}(1)_{\mathrm{em}}$ by one complex 
 
 The mass matrix in the basis $(W_1,W_2,W_3,B)$ is $\tfrac{v^2}{4}$ times a block-diagonal matrix with the charged block $g^2\mathrm I$ and the neutral block $\binom{g^2\ -gg_{\mathrm Y}}{-gg_{\mathrm Y}\ \ g_{\mathrm Y}^2}$. Its eigenvalues are $g^2v^2/4$ twice, zero once and $(g^2+g_{\mathrm Y}^2)v^2/4$ once, giving $M_W=gv/2$, $M_\gamma=0$ and $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}\,v/2=M_W/\cos\theta_W$. The zero eigenvalue is structural: the neutral block's determinant vanishes identically, because the direction along which $Q$ annihilates the vacuum is one-dimensional. The eigenvectors are the photon $A=\sin\theta_WW_3+\cos\theta_WB$ and the $Z=\cos\theta_WW_3-\sin\theta_WB$, so the mixing angle is the diagonalising angle and not an independent parameter. The trace sum rule $2M_W^2+M_Z^2=\tfrac{v^2}{4}(3g^2+g_{\mathrm Y}^2)$ is exact at tree level and closes on the numbers.
 
-The counting balances at twelve. Before the breaking, four massless vectors give eight polarisations and the four real scalar components give four. After, the photon gives two, the three massive vectors nine and the physical scalar one. Three scalar components ceased to be independent fields and three gauge polarisations were gained, and the two events are one. In the unitary gauge the spectrum is a massless photon, a $W$ pair, a $Z$ and one scalar, with couplings $g_{hWW}=2M_W^2/v$, $g_{hZZ}=2M_Z^2/v$, $g_{hhh}=3M_H^2/v$ and $g_{hhhh}=3M_H^2/v^2$, all fixed by the masses.
+The counting balances at twelve. Before the breaking, four massless vectors give eight polarisations and the four real scalar components give four. After, the photon gives two, the three massive vectors nine and the physical scalar one. Three scalar components ceased to be independent fields and three fixing condition polarisations were gained, and the two events are one. In the unitary fixing condition the spectrum is a massless photon, a $W$ pair, a $Z$ and one scalar, with couplings $g_{hWW}=2M_W^2/v$, $g_{hZZ}=2M_Z^2/v$, $g_{hhh}=3M_H^2/v$ and $g_{hhhh}=3M_H^2/v^2$, all fixed by the masses.
 
 Numerically the sector is over-determined and the over-determination is the test. From $g$, $g_{\mathrm Y}$ and $v$ the tree masses are $80.24$ and $1.631\times10^{-25}\ \mathrm{kg}$; from $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $1.423\times10^{-25}\ \mathrm{kg}$ against the measured $80.377$. Both routes miss by about $8.0\times10^{-11}$ J, in opposite directions, and the discrepancy is the one-loop correction: $\delta r=0.0355$, of which $+0.071$ is the running of $\alpha$ from zero momentum to $M_Z$ and about $-0.033$ is the top-quark and scalar loop contribution. The scale itself comes from the muon lifetime, $v=(\sqrt2G_F)^{-1/2}=4.38926\times10^{-25}\ \mathrm{kg}$, which is the electroweak counterpart of a pion decay constant. The same three inputs give $\Gamma(W\to e\xi_{\mathrm{neu}})=3.637\times10^{-11}\ \mathrm{J}$ at tree level against $223$ measured.
 
-The $\rho$ parameter is unity by identity for a doublet and deviates for larger multiplets, through the general formula $\rho=\sum v_i^2[T_i(T_i+1)-T_{3i}^2]/\sum 2v_i^2T_{3i}^2$, which gives one half for a triplet. The identity is the visible sign of a custodial $SU(2)$ symmetry of the potential that the vacuum preserves and the hypercharge gauging breaks. The measurement of $\rho$ to four parts in $10^4$ is therefore a bound on any additional multiplet's vacuum expectation value.
+The $\rho$ parameter is unity by identity for a doublet and deviates for larger multiplets, through the general formula $\rho=\sum v_i^2[T_i(T_i+1)-T_{3i}^2]/\sum 2v_i^2T_{3i}^2$, which gives one half for a triplet. The identity is the visible sign of a custodial $SU(2)$ symmetry of the potential that the vacuum preserves and the hypercharge making local breaks. The measurement of $\rho$ to four parts in $10^4$ is therefore a bound on any additional multiplet's vacuum expectation value.
 
 The framework supplies the abelian mechanism whole and stops at three items: the group, the representation and the hypercharge. Its scalar is central, hence a singlet, hence unable to break the non-abelian factor; its algebra nonetheless supplies a two-dimensional module in which a doublet could live, and what is missing there is the assignment of the two actions on it. The abelian mass formula $\kappa v$ equals $gv/2$ with $\kappa=g/2$, which is a match of structure and a reinterpretation of one charge, not a derivation. The electroweak sector is imported, and this article measures how much of it the import brings.
 
@@ -517,7 +517,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 
 ## Further Reading
 
-- [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Why $Y_{\mathrm{hch}}=\tfrac12$, which this article takes as given.
+- [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Why $Y_{\mathrm{hch}}=\tfrac12$, which this article takes as given.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The scalar sector in the assembled sum, and the sign rule that fixes the kinetic term.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html). The abelian case in full, whose gap this article fills for the electroweak group.
 - [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The mixing and the masses, here derived from the mass matrix.

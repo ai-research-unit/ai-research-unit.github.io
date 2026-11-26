@@ -10,7 +10,7 @@
 
 **What this article does.** It restates the mathematics in the form a physicist reads, and it states what the algebra does not supply. The proofs are in *Operator Chirality on the Biquaternion Algebra*, one click away, and nothing here is proved twice.
 
-**What it does not do.** It does not derive a gauge group, a matter content or a mass value. It does not claim that the two sides are two different kinds of field: they are not, and §*What the Algebra Does Not Supply* states that limit in full.
+**What it does not do.** It does not derive a symmetry group, a matter content or a mass value. It does not claim that the two sides are two different kinds of field: they are not, and §*What the Algebra Does Not Supply* states that limit in full.
 
 **The order of the article.** §*Operator Chirality in One Page* gives the definition and the dimensions. §*The Operator That Realises the Split* states the four properties of the basis operator and the two sides. §*The Dirac Equation Reads the Sides* shows what the sides do to the equation and where the mass sits. §*The Eight Objects the Physics Does Not Need* gives, for each object that usually carries the name, the physical reason it is not needed. §*What the Algebra Does Not Supply* records the one thing the basis operator does not buy.
 

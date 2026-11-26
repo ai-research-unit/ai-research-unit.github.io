@@ -140,7 +140,7 @@ What the chart is silent on, it is silent on for one reason: its functionals are
 - *The Lagrangian and the Coupled Klein–Gordon Equation in Momentum Space*, for the action's Euler–Lagrange operator and the ordering term.
 - *The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables*, for the mechanical momentum, the charge sign and the vorticity as a Legendre conjugate's curl.
 - *The Klein–Gordon Equation in Biquaternionic Polar Variables*, for the word, the amplitude equation and the quantum potential the coupling leaves untouched.
-- *The Gauge Principle in Biquaternionic Form*, for the localization of the central phase.
+- *The Minimal Coupling in Biquaternionic Form*, for the localization of the central phase.
 - *Landau Levels in Biquaternionic Form*, for the discrete spectrum a constant field strength produces.
 - *Derivatives, Fields and Transforms*, for the symbol rule and the transform of a product.
 - L. D. Landau and E. M. Lifshitz, *The Classical Theory of Fields* (Pergamon, 4th ed., 1975), §17, for the minimal substitution and the mechanical momentum.

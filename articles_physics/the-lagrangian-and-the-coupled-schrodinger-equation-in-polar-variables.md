@@ -28,7 +28,7 @@ and every other term of the Lagrangian is the free one, letter for letter. The f
 
 *Second, the shift is the whole of minimal coupling in a setting with no derivatives, and it is a shift of two numbers.* The unshifted pair $(h_t,\vec h_\Psi)$ is the canonical pair; the shifted one is the kinetic pair; the flow's two rates are built from the shifted one. So the coupled flow is the free flow with $h_t\to h_t-ϙ\omicron_{\mathrm{pot}}$ and $\vec h_\Psi\to\vec h_\Psi-q\vec A$, and no structural statement changes (§*The Variation: The Euler–Lagrange Equations*).
 
-*Third, the chart acquires a gauge direction, and the direction is $\theta_{\mathrm{pha}}$.* The gauge group translates the phase and leaves the other seven parameters alone, so the coupled chart has a direction along which the field and the connection together are unchanged. The free chart has no such direction: all eight parameters are physical. The consequence is the sharp statement of the coupled chart — the momentum conjugate to the gauge direction is $-\frac{h}{2\pi} N$, and $N$ is the charge that the connection sources (§*The Constraints the Action Imposes: The Gauge Direction of the Chart*).
+*Third, the chart acquires a gauge direction, and the direction is $\theta_{\mathrm{pha}}$.* The symmetry group translates the phase and leaves the other seven parameters alone, so the coupled chart has a direction along which the field and the connection together are unchanged. The free chart has no such direction: all eight parameters are physical. The consequence is the sharp statement of the coupled chart — the momentum conjugate to the redundant direction is $-\frac{h}{2\pi} N$, and $N$ is the charge that the connection sources (§*The Constraints the Action Imposes: The Redundant Direction of the Chart*).
 
 What is not claimed. No new prediction and no new solution. The polar Lagrangian is a substitution, not a new principle; the free article's closure argument — that the parameter equations are the equation's components and the Jacobian is invertible — is repeated with covariant letters and not replaced. The genuinely new statements are the four above: that the kinetic term is untouched, that the constraint structure is therefore untouched, that the potential shift is a two-number shift, and that the redundant direction of the chart is the phase.
 
@@ -197,7 +197,7 @@ The parameter basis is not the bracket basis. The eight parameters are coordinat
 What the coupling does to them. The connection is central and carries no velocity, so it shifts the potential's temporal slot and the potential's spatial slot and touches no bracket's kinetic term. In the chart that shows up as $V_{\mathrm{gco}}$ differing from $V$ by $-ϙ\omicron_{\mathrm{pot}}\cosh\theta_{\mathrm{rpd}}-ϙ(\vec A\cdot\vec u_{\mathrm b})\sinh\theta_{\mathrm{rpd}}$ and as nothing else changing. The kinetic term is untouched because the coupling has no type that reaches a velocity, and the three vanishing momenta are therefore the free chart's.
 
 The one place the coupling does reach a bracket. The potential's spatial slot is Hermitian, so it joins the boost bracket, and its temporal slot is real, so it joins the scale bracket. Neither reaches the phase bracket, and that is why the phase's equation is the continuity equation with no coupling term in it.
-## The Constraints the Action Imposes: The Gauge Direction of the Chart
+## The Constraints the Action Imposes: The Redundant Direction of the Chart
 
 The action of the symmetry group on the parameters. Under $\tilde\Xi\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde\Xi$,
 
@@ -345,8 +345,8 @@ The symmetry group translates $\theta_{\mathrm{pha}}$ and nothing else, so the c
 - [The Lagrangian and the Coupled Schrödinger Equation](the-lagrangian-and-the-coupled-schrodinger-equation.html), for the element-form action and the current as the connection's derivative.
 - [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the free flow.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word's bijection on which the closure rests.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator's two slots.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation that becomes the chart's redundant direction.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator's two slots.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation that becomes the chart's redundant direction.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the same chart in the spinor case, where the connection reaches all four brackets.
 - [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html), for the fluid reading of the central-field action.
 - [Landau Levels in Biquaternionic Form](landau-levels-in-biquaternionic-form.html), for the operator setting in a constant magnetic field, where the diamagnetic term is the whole spectrum.

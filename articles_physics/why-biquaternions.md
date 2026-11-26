@@ -298,7 +298,7 @@ The non-uniqueness is where the algebra says something the others cannot. Fabbri
 
 ## The Reach and the Ceiling
 
-### Gauge fields
+### Connections
 
 The vector units of the material sector span $\mathfrak{su}(2)$,
 
@@ -306,7 +306,7 @@ $$
 \mathrm{SU}(2)=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi},
 $$
 
-so a gauge field with values in $\mathfrak{su}(2)$ is a connection on the algebra itself, and instantons and solitons follow from the same product ([Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html), [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html)).
+so a connection with values in $\mathfrak{su}(2)$ is a connection on the algebra itself, and instantons and solitons follow from the same product ([Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html), [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html)).
 
 The ceiling is exact and it is stated as a result rather than a hope. The algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$, so colour with three values is outside the carrier ([Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html)). The weak isospin fits; the strong interaction does not, and no construction inside the algebra supplies the third colour.
 
@@ -322,7 +322,7 @@ The informational sector supplies the states and the entropy. The states are the
 
 ### Gravity
 
-The framework is flat so far, and the gravitational articles are a programme rather than a result. Linearised gravity and gravitational waves are written in the algebra, with the metric perturbation an element and the harmonic gauge a condition on its product ([Linearized Gravity in Biquaternionic Form](linearized-gravity-in-biquaternionic-form.html), [Gravitational Waves in Biquaternionic Form](gravitational-waves-in-biquaternionic-form.html)). The extension to curved spacetime, and the relation to the tetrad, remain open ([Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html)).
+The framework is flat so far, and the gravitational articles are a programme rather than a result. Linearised gravity and gravitational waves are written in the algebra, with the metric perturbation an element and the harmonic fixing condition a condition on its product ([Linearized Gravity in Biquaternionic Form](linearized-gravity-in-biquaternionic-form.html), [Gravitational Waves in Biquaternionic Form](gravitational-waves-in-biquaternionic-form.html)). The extension to curved spacetime, and the relation to the tetrad, remain open ([Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html)).
 
 ## The Price
 

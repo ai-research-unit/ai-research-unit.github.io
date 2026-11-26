@@ -283,7 +283,7 @@ is the Hopf bundle.
 
 **The element picture sees the phase and the operator picture does not.** This is why the polar word carries a phase and the two-sided operator does not, and it is why a phase cannot be an observable: no operator of the algebra's own action records it.
 
-The boundary. The fibre of the ray map and the stabiliser of an axis are different circles of $U(2)$ that meet only in $\{\pm\mathrm I_2\}$. They must not be identified fibre by fibre. And the holonomy of the Hopf connection is not derived here; it belongs to the entry on the gauge bundle.
+The boundary. The fibre of the ray map and the stabiliser of an axis are different circles of $U(2)$ that meet only in $\{\pm\mathrm I_2\}$. They must not be identified fibre by fibre. And the holonomy of the Hopf connection is not derived here; it belongs to the entry on the bundle.
 
 ### I.2.p — The Peirce Frame Is a Choice of Axis, and the Algebra Does Not Make It
 

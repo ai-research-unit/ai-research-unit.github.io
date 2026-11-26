@@ -56,7 +56,7 @@ $$
 \vec\Gamma_{\imath}\longmapsto\tilde U\vec\Gamma_{\imath}\tilde U^{-1}-\left(\partial_{\imath}\tilde U\right)\tilde U^{-1},
 $$
 
-which is the inhomogeneous law of a connection on the field. The two-sided derivative of the vector carries the corresponding two-sided law, with $\tilde U^{-1}$ on the right replaced by $\tilde U^{*}$ in the frame's own slot. A rotor field gives the pure-gauge example at once: $\vec\Gamma_{\imath}=-(\partial_{\imath}\tilde U)\tilde U^{-1}$ has vanishing curvature and is exactly the connection that makes a rotor-carried frame constant.
+which is the inhomogeneous law of a connection on the field. The two-sided derivative of the vector carries the corresponding two-sided law, with $\tilde U^{-1}$ on the right replaced by $\tilde U^{*}$ in the frame's own slot. A rotor field gives the pure gradient example at once: $\vec\Gamma_{\imath}=-(\partial_{\imath}\tilde U)\tilde U^{-1}$ has vanishing curvature and is exactly the connection that makes a rotor-carried frame constant.
 
 **One consequence worth stating early.** The inhomogeneous term $(\partial_{\imath}\tilde U)\tilde U^{-1}$ is what makes the field's equation invariant. A reader who has seen the two-sided derivative described as an unnecessary complication has usually not seen this line, because the law for the field is the ordinary Yang–Mills-type law and looks unremarkable. It is not the two-sided form in disguise; the two are different because the representations are different.
 

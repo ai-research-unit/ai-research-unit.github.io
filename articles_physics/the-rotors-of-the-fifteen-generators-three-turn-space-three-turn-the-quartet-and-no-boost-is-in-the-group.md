@@ -212,7 +212,7 @@ At $\theta=0.5$ the coefficients are $0.5403$ and $0.8415$, that is $\cos1$ and 
 
 **So the second claim has a true form and a false form.** True: left and right multiplication are the two triples of rotors, each a group of rotors of the carrier's four-space, and together they generate the spatial rotors through the paired action. False: either factor alone is a group of spatial rotors. The pair is what turns space.
 
-**And a gauged version would be a third thing.** If these six arrays were gauged, their exponentials on an isospin doublet would be rotations of a two-state space, the Bloch ball. **That is a statement about a different model**: this one gauges the fifteen and nothing else, and the doublet action is written downstream, where the weak pair is an index and not a piece of the algebra.
+**And a made local version would be a third thing.** If these six arrays were made local, their exponentials on an isospin doublet would be rotations of a two-state space, the Bloch ball. **That is a statement about a different model**: this one makes the local fifteen and nothing else, and the doublet action is written downstream, where the weak pair is an index and not a piece of the algebra.
 
 ## The Ledger of the Fifteen
 
@@ -279,7 +279,7 @@ Nine are not real matrices. They exponentiate to complex matrices that turn plan
 
 No exponential is a Lorentz boost. A boost preserves the algebra's norm and is not unitary; every element of the group is unitary; $\mathrm{SU}(4)$ and $\mathrm{SO}(4,\mathbb{C})$ meet exactly in $\mathrm{SO}(4)$. Three independent proofs, one sign, and a trace of the square that reads $-2$ against $+2$.
 
-Left and right multiplication are the two triples of rotors of the carrier's four-space, and they span the six real planes of $\mathfrak{so}(4)$ inside the fifteen. Neither triple is a group of spatial rotors; the spatial rotors are the pairs with the right parameter the inverse of the left, and that pairing is what turns the colour triple and fixes the lepton line. **They are a subalgebra and not a factor**: nothing of this model is gauged on them, and the weak pair below $M_C$ is an index that this algebra does not carry.
+Left and right multiplication are the two triples of rotors of the carrier's four-space, and they span the six real planes of $\mathfrak{so}(4)$ inside the fifteen. Neither triple is a group of spatial rotors; the spatial rotors are the pairs with the right parameter the inverse of the left, and that pairing is what turns the colour triple and fixes the lepton line. **They are a subalgebra and not a factor**: nothing of this model is made local on them, and the weak pair below $M_C$ is an index that this algebra does not carry.
 
 The roots are twelve, not fifteen, they are outside $\mathfrak{su}(4)$, and their exponentials are shears.
 

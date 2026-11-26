@@ -16,7 +16,7 @@ No sector is exchanged. The coupled field is an element of $\mathbb{B}$ with eig
 
 ## Conventions
 
-The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The covariant derivative is that of *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule for a covariant operator:
+The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The covariant derivative is that of *Connection and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule for a covariant operator:
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath}\longmapsto i\pi_{\imath} ,
@@ -181,7 +181,7 @@ The local transformation is the phase coordinate's motion, and on the symbol it 
 - *The Proca Equation in Biquaternionic Polar Variables*, for the free two-factor word, the branches and the bracket table.
 - *The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables*, for the free chart's parity table and the amplitude cone.
 - *The Fourier Transform and the Coupled Proca Equation in Biquaternionic Form*, for the same symbol in components, and for the obstruction's failure to be a function of $\pi$.
-- *Gauge Fields and the Covariant Derivative*, for the commutator, the curvature and the square splitting.
+- *Connection and the Covariant Derivative*, for the commutator, the curvature and the square splitting.
 - *Degenerate Solutions of the Biquaternionic Proca Equation*, for the lightlike set whose complexified vanishing is the partner's $\varrho=0$.
 - *Derivatives, Fields and Transforms*, for the symbol rule.
 - *Norm and Pairing Conventions*, for the norm's argument and the Hermitian pairing.

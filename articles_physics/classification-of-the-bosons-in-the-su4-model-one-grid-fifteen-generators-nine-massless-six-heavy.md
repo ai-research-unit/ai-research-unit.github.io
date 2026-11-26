@@ -35,7 +35,7 @@ $$
 \;}
 $$
 
-**The zero above $M_C$ is exact and not a truncation.** With no condensate there is no direction for the mass form $M^{2}=2v^{2}\bigl[D,[D,\cdot\,]\bigr]$ to act on, so it is the zero operator on all fifteen; and an unbroken gauge symmetry forbids a vector mass at every order, so no loop restores one. **A reader who quotes "nine massless" for the $\mathrm{SU}(4)$ phase has quoted the broken phase's number**, and §*The Sextet, Which Is the Six Cells of the Mixed Band* gives the transition that changes it.
+**The zero above $M_C$ is exact and not a truncation.** With no condensate there is no direction for the mass form $M^{2}=2v^{2}\bigl[D,[D,\cdot\,]\bigr]$ to act on, so it is the zero operator on all fifteen; and an unbroken local symmetry forbids a vector mass at every order, so no loop restores one. **A reader who quotes "nine massless" for the $\mathrm{SU}(4)$ phase has quoted the broken phase's number**, and §*The Sextet, Which Is the Six Cells of the Mixed Band* gives the transition that changes it.
 
 **The model.** One model: **the $\mathrm{SU}(4)$ model**, set out in [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). **The name is stated first because every name here belongs to that model and to nothing else.** It is not the Standard Model's particle list and not a general classification of everything the algebra could describe: **it is the boson content of one group, on one grid, with one declaration.**
 
@@ -131,7 +131,7 @@ and the vanishing of the trace is the same statement as the four diagonal entrie
 
 ## The Names, and Which Phase They Belong To
 
-**Every word in this grid is a name held on deposit, and the article says what each is on deposit for.** The cells are labelled *gluon* and *leptoquark* from the first display onward, and **no $\mathrm{SU}(3)$ is gauged above $M_C$**: the group is one simple factor, $\mathrm{SU}(4)$, and a subalgebra of a simple group is not a factor of the theory. **So above $M_C$ the fifteen have no group to be the connections of except $\mathrm{SU}(4)$ itself**, and "this gluon carries $r\bar g$" is not yet a statement about a charge.
+**Every word in this grid is a name held on deposit, and the article says what each is on deposit for.** The cells are labelled *gluon* and *leptoquark* from the first display onward, and **no $\mathrm{SU}(3)$ is made local above $M_C$**: the group is one simple factor, $\mathrm{SU}(4)$, and a subalgebra of a simple group is not a factor of the theory. **So above $M_C$ the fifteen have no group to be the connections of except $\mathrm{SU}(4)$ itself**, and "this gluon carries $r\bar g$" is not yet a statement about a charge.
 
 **What is true above $M_C$, stated only in $\mathrm{SU}(4)$ terms.**
 
@@ -179,7 +179,7 @@ $$
 32=2\cdot4^{2},
 $$
 
-where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which colour they carry. **The full matrix, its diagonal form and the eigenvalue count are [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
+where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which colour they carry. **The full matrix, its diagonal form and the eigenvalue count are ](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
 ## The Spectrum: Fifteen Generators, Fifteen Particles
 
@@ -239,7 +239,7 @@ so with the normalisation $\operatorname{tr}(X^{\dagger}Y)=2\delta$, **exactly h
 
 **The qualifier matters, and it is where the corpus changes register.** Inside $\mathfrak{su}(4)$ the composites are not new directions, and the algebra stays fifteen-dimensional. **At $M_C$ they are new fields all the same**, six redundant directions born with the copy index while the six leptoquarks acquire mass — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). So the count of massless vectors does not fall at the transition: six leave the kernel of $\operatorname{ad}(iD)$ and six arrive beside it.
 
-**What is left of the sentence, and it is the useful part.** Three of the six are the weak isospin the Standard Model keeps, and three belong to a factor the Standard Model does not keep, one direction of which is the raw material of hypercharge. **That sentence is about the four-factor phase, not about the fifteen**, and it is stated in [The Gauge Algebras of the Two Sectors](the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html).
+**What is left of the sentence, and it is the useful part.** Three of the six are the weak isospin the Standard Model keeps, and three belong to a factor the Standard Model does not keep, one direction of which is the raw material of hypercharge. **That sentence is about the four-factor phase, not about the fifteen**, and it is stated in [The Algebra of the Two Sectors](the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html).
 
 ## The Six Arrays of $\mathfrak{so}(4)$ Are Not on the Grid Either
 
@@ -294,9 +294,9 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 
 **Six of $Ξ$'s sixteen components are eaten by the sextet.** The condensate is $\langleΞ\rangle=v\operatorname{diag}(-3,1,1,1)$ in the Hermitian matrix, and the six leptoquarks that acquire $32v^{2}$ acquire it by eating the six components that point along their own planes. **The count is forced by the coset**: $15-9=6$, one real component per broken generator. **An eaten component has no name of its own: it is the third polarisation of the boson that ate it**, which is why the eaten six reappear on the gauge grid and not in the scalar list.
 
-**The other ten components of $Ξ$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the Hermitian matrix, and they are the ones the Higgs sector below $M_C$ is built from. **[The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) is the census of that ledger.** **The corpus's one caveat stands and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
+**The other ten components of $Ξ$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the Hermitian matrix, and they are the ones the Higgs sector below $M_C$ is built from. **$Ξ$ is the census of that ledger.** **The corpus's one caveat stands and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
 
-**The word to avoid is "the Higgs coupling".** This model leaves the gauge coupling symbolic and predicts none of it, fixes no scalar multiplet, and has no coupling claim in this sector to patch. **A sentence such as "the minimal sector gives $m_d=m_e$" imports the Pati–Salam literature's condition into a model whose ledger refuses it.**
+**The word to avoid is "the Higgs coupling".** This model leaves the connection coupling symbolic and predicts none of it, fixes no scalar multiplet, and has no coupling claim in this sector to patch. **A sentence such as "the minimal sector gives $m_d=m_e$" imports the Pati–Salam literature's condition into a model whose ledger refuses it.**
 
 ## Names That Collide, and the One-Word Fix
 
@@ -369,7 +369,7 @@ A plane is not an array. Three geometric pairs carry six arrays; the sextet is t
 
 A name is not a direction. The six $\mathfrak{so}(4)$ arrays are names on a rotated basis of a six-dimensional subspace, and they have no cells.
 
-A name is not a charge. *Gluon* names a boson of the $\mathrm{SU}(3)$ factor, and that factor is gauged only below $M_C$; above it the same eight are directions of $\mathfrak{su}(4)$, named by the lines they move. **The label $r\bar g$ on a cell is an index statement in both phases and a colour–anticolour statement in one.**
+A name is not a charge. *Gluon* names a boson of the $\mathrm{SU}(3)$ factor, and that factor is made local only below $M_C$; above it the same eight are directions of $\mathfrak{su}(4)$, named by the lines they move. **The label $r\bar g$ on a cell is an index statement in both phases and a colour–anticolour statement in one.**
 
 Massless is not unbroken forever. The nine are massless in this model; **$B'$ acquires a mass downstream, and the gluons never do.**
 

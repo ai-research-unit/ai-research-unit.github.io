@@ -95,5 +95,5 @@ so the theory trades a dimensionless coupling for a dimensionful parameter. This
 ## Further Reading
 
 - G. 't Hooft, "Computation of the Quantum Effects Due to a Four-Dimensional Pseudoparticle," *Physical Review D* **14** (1976) 3432, the measure and the prefactor.
-- C. G. Callan, R. Dashen and D. J. Gross, "The Structure of the Gauge Theory Vacuum," *Physics Letters B* **63** (1976) 334, the theta vacuum.
+- C. G. Callan, R. Dashen and D. J. Gross, "The Structure of the Connection theory Vacuum," *Physics Letters B* **63** (1976) 334, the theta vacuum.
 - S. Coleman, *Aspects of Symmetry*, Chapter 7, for the dilute gas.

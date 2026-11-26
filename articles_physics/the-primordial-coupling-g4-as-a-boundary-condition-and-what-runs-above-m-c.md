@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The model has one gauge coupling, and this article says where its value comes from, which way the running faces, and what the coefficient of that running is.
+The model has one connection coupling, and this article says where its value comes from, which way the running faces, and what the coefficient of that running is.
 
 **What was missing.** *The One Coupling That Returns the Standard Model* fixes $g_4$ from below, by matching the strong coupling at the leptoquark scale,
 
@@ -105,7 +105,7 @@ $$
 
 **Three quantities the representation decides and $b_0$ does not see.**
 
-- *How the gauge field acts on $Ξ$*: the commutator $[T_{a},Ξ]$, fixed by the matrix index, and not a multiplication.
+- *How the connection acts on $Ξ$*: the commutator $[T_{a},Ξ]$, fixed by the matrix index, and not a multiplication.
 - *How many directions are eaten at $M_C$*: six, one per broken generator of $\mathrm{SU}(4)$.
 - *How many components survive*: ten, of which eight are a colour octet.
 
@@ -207,7 +207,7 @@ $$
 
 ## Summary
 
-The model has one gauge coupling and this article computes what it does above $M_C$. **$b_0=\tfrac{26}{3}$**, from $\tfrac{44}{3}$ for the fifteen connections, $-\tfrac{16}{3}$ for the sixteen Weyl fields read as eight Dirac fields, and $-\tfrac23$ for the scalar, the last of which is the adjoint Dynkin index of a sixteen-component Hermitian multiplet taken at the weight of a real field.
+The model has one connection coupling and this article computes what it does above $M_C$. **$b_0=\tfrac{26}{3}$**, from $\tfrac{44}{3}$ for the fifteen connections, $-\tfrac{16}{3}$ for the sixteen Weyl fields read as eight Dirac fields, and $-\tfrac23$ for the scalar, the last of which is the adjoint Dynkin index of a sixteen-component Hermitian multiplet taken at the weight of a real field.
 
 **The running faces up.** $b_0>0$, so $\alpha_4$ falls from $0.0581$ at $M_X$ to $0.0165$ at the Planck scale, and the primordial phase is asymptotically free and weakly coupled everywhere it exists. **That is what makes the tree-level rates of the block legitimate and what forbids a confining primordial phase.**
 

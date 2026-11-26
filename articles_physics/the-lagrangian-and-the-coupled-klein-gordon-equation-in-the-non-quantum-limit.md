@@ -117,7 +117,7 @@ $$
 which divided by $2\varrho$ is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}+\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/\varrho$ — the parent's amplitude equation with the quantum potential on the right. **The two differ by the deleted block and by nothing else.**
 
 The constraint is the truncated theory's Hamiltonian. A degenerate Lagrangian of this shape has no momentum conjugate to the scale, and the Legendre transform returns the mechanical shell as the only constraint. **The limit has converted the scale from a dynamical field into the carrier of one constraint**, which is what "the density becomes auxiliary" means in covariant language.
-## The Constraints the Action Imposes: Gauge Invariance and the Deletion
+## The Constraints the Action Imposes: Local Invariance and the Deletion
 The invariants. The truncated action is built from two combinations, $\left(\partial_{r'_{t}}S+q\omicron_{\mathrm{pot}}/c\right)$ and $\vec\nabla_\Phi S-q\vec A$, and both are unchanged under the local phase translation with the potential's shift. The action is invariant term for term, the quadratic piece supplying the compensation for the potential's square.
 
 The deletion commutes with the transformation, and the reason is structural. The deleted block is built from the scale, the scale is inert under the symmetry group, and an invariant object removed from an invariant action leaves an invariant action. No computation is needed and none was done: the statement is a consequence of the block's content.

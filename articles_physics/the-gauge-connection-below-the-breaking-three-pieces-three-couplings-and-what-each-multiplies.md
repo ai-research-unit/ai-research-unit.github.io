@@ -1,4 +1,4 @@
-# __The Gauge Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies__
+# __The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies__
 
 ## Introduction
 
@@ -37,7 +37,7 @@ $$
 
 **What the article does not establish.** No numerical value. $g_4$, $g_L$, $g_R$ are symbols here, and the running that would give them values at a scale is [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html). Whether the running succeeds is [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html).
 
-**Where the algebras are.** [The Gauge Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One](the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html) lists the algebras this derivative is built from. The generic construction of a covariant derivative in the algebra is [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html).
+**Where the algebras are.** [The Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One](the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html) lists the algebras this derivative is built from. The generic construction of a covariant derivative in the algebra is [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html).
 
 ## One Derivative at the Top
 
@@ -234,8 +234,8 @@ The count jumps at $M_C$ and falls twice, and the jump is the point: one factor 
 
 ## Further Reading
 
-- [The Gauge Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One](the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html). The algebras and modules this derivative is built from.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html). The generic construction, before any model.
+- [The Algebras of the Two Sectors: Colour on Three Dimensions, Weak Isospin on Two, the Photon on One](the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html). The algebras and modules this derivative is built from.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html). The generic construction, before any model.
 - [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html). What the removal of the heavy pieces costs.
 - [The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators](the-weinberg-angle-and-the-three-neutral-states.html). The rotation $\theta_W$ and the neutral basis.
 - [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html). The running of these three couplings, and where it fails.

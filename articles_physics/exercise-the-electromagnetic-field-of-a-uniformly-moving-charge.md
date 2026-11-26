@@ -38,7 +38,7 @@ $$
 \qquad
 \tanh\theta_{\mathrm{rpd},b} = \frac{v_b}{c},
 $$
-**carries the laboratory to the frame moving with $+\vec v_b$**: applied to the rest four-velocity it produces velocity $-\vec v_b$, i.e. $\tilde U_{\vec v_b}(ic\,e_t)\tilde U_{\vec v_b}^{*}$ has velocity $-\vec v_b$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$, not by the four-vector rotor conjugation $\tilde U_{\mathrm{lor}}\tilde{F}\tilde U_{\mathrm{lor}}{}^{*}$, where $\tilde U_{\mathrm{lor}}$ is a general Lorentz rotor; that is the parent's Problem 5 and we use its result.
+**carries the laboratory to the frame moving with $+\vec v_b$**: applied to the rest four-velocity it produces velocity $-\vec v_b$, i.e. $\tilde U_{\vec v_b}(ic\,e_t)\tilde U_{\vec v_b}^{*}$ has velocity $-\vec v_b$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the $-\vec v_b$ $\tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$, not by the four-vector rotor conjugation $\tilde U_{\mathrm{lor}}\tilde{F}\tilde U_{\mathrm{lor}}{}^{*}$, where $\tilde U_{\mathrm{lor}}$ is a general Lorentz rotor; that is the parent's Problem 5 and we use its result.
 
 **New notation for this exercise.** Since the uniform case is naturally organized around the charge's *present* position, write the **present separation**
 $$

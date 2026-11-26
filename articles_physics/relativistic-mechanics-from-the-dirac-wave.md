@@ -36,7 +36,7 @@ $$
 
 so the gradient acts, to leading order, as multiplication by $2\pi i\tilde\Upsilon_{\Phi}$, with $\tilde\Upsilon_{\Phi}=\frac{\tilde P_{\Phi}}{h}$ the element of *The Three Wavenumbers of a Particle*. Its $e_{t}$ entry is real and its vector part imaginary, as the display shows. The limit is the statement that this term dominates.
 
-What a $k$ may stand for, and nothing else. Three wave numbers occur in this article, and each divides $\frac{h}{2\pi}$ out of a mass, a momentum or an energy: $\nu_m=\frac{m\,c}{h}$, $\vec\nu_{\Phi}=\frac{\vec p}{h}$, and the temporal one $\frac{\omega}{c}=\frac{2\pi E}{h\,c}$, which occurs once, in §*Case Checked*. No fourth use is made of one. The rewriting $\frac{2\pi}{h}=2\pi\nu_m/(m\,c)$ is available, and the companion uses it for the phase; it is not used here, because the mass cancels in that ratio for every $m$, so nothing is absorbed into the $\nu_m$ and the wave number would be decoration over a bare $\frac{h}{2\pi}$. A wave number appears below only where a mass, a momentum or an energy waits to be absorbed by it. The one place where the source's writing is quoted is the charge coupling, and §*The Gauge Field, and the Lorentz Force* says what the cancellation carries there.
+What a $k$ may stand for, and nothing else. Three wave numbers occur in this article, and each divides $\frac{h}{2\pi}$ out of a mass, a momentum or an energy: $\nu_m=\frac{m\,c}{h}$, $\vec\nu_{\Phi}=\frac{\vec p}{h}$, and the temporal one $\frac{\omega}{c}=\frac{2\pi E}{h\,c}$, which occurs once, in §*Case Checked*. No fourth use is made of one. The rewriting $\frac{2\pi}{h}=2\pi\nu_m/(m\,c)$ is available, and the companion uses it for the phase; it is not used here, because the mass cancels in that ratio for every $m$, so nothing is absorbed into the $\nu_m$ and the wave number would be decoration over a bare $\frac{h}{2\pi}$. A wave number appears below only where a mass, a momentum or an energy waits to be absorbed by it. The one place where the source's writing is quoted is the charge coupling, and §*The Connection, and the Lorentz Force* says what the cancellation carries there.
 
 ## Order Zero: the Mass Shell
 
@@ -62,7 +62,7 @@ which is the mass shell and the relativistic Hamilton–Jacobi equation: the pha
 
 The mass is recovered, not derived. The first line carries $m$ because $\nu_m$ did; the expansion adds only $E=-\partial_{t}S_{\tilde\Xi}$, $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$.
 
-## The Gauge Field, and the Lorentz Force
+## The Connection, and the Lorentz Force
 
 Minimal coupling replaces the gradient. The corpus's prescription of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* is $\tilde\nabla_\Phi\mapsto\tilde\nabla_{\mathrm{gco},\Phi}$ with
 

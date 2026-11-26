@@ -1,4 +1,4 @@
-# __Custodial Symmetry and the Rho Parameter: From Accidental to Gauged__
+# __Custodial Symmetry and the Rho Parameter: From Accidental to Local__
 
 ## Introduction
 
@@ -33,16 +33,16 @@ gives $\rho = 1$ for the doublet, $\rho > 1$ for a $T = 1$, $T_3 = 0$ triplet ad
 - Companion article *Goldstone's Theorem in Biquaternionic Form*, for the Goldstone direction and the decay constant.
 - Companion article *The Nonlinear Sigma Model in Biquaternionic Form*, for the left–right action, its invariant metric and its currents.
 - Companion article *The Chiral Theory and the Lagrangian: The Pion and the Decay Constant*, for the adjoint isospin action on a triplet and the relation of the custodial group to the chiral group.
-- Companion article *The Gauge Principle in Biquaternionic Form*, for the non-abelian gauge construction and its left-multiplication action on matter.
-- Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the field strength and the adjoint representation.
+- Companion article *The Minimal Coupling in Biquaternionic Form*, for the non-abelian connection construction and its left-multiplication action on matter.
+- Companion article *Non-Abelian Connections in Biquaternionic Form*, for the field strength and the adjoint representation.
 - Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the boundary that this article states — no doublet, no hypercharge, no chiral $SU(2)_L$.
 - Companion article *Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall*, for the vector-like obstruction and the electroweak quantum numbers.
 
-**Custodial symmetry is not accidental.** The global $\mathrm{SU}(2)$ the potential possesses is the **diagonal of a gauged pair**, $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ broken to its diagonal, so $\rho=1$ follows from a local symmetry and its breaking pattern rather than from a property of one scalar multiplet. **The measured value, the mass matrices and every coefficient below stand, and the reason the equality holds is the breaking pattern.** The tier is T3.
+**Custodial symmetry is not accidental.** The global $\mathrm{SU}(2)$ the potential possesses is the **diagonal of a made local pair**, $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ broken to its diagonal, so $\rho=1$ follows from a local symmetry and its breaking pattern rather than from a property of one scalar multiplet. **The measured value, the mass matrices and every coefficient below stand, and the reason the equality holds is the breaking pattern.** The tier is T3.
 
 ## The Custodial Symmetry of a Scalar Sector
 
-The custodial symmetry is a property of the scalar sector of a spontaneously broken gauge theory, and it is worth stating in its standard form before it is read in the framework.
+The custodial symmetry is a property of the scalar sector of a spontaneously broken connection theory, and it is worth stating in its standard form before it is read in the framework.
 
 **The scalar multiplet as a matrix.** A complex $SU(2)_L$ doublet of hypercharge $Y = \tfrac12$ has four real components. They may be arranged in a $2\times2$ matrix
 
@@ -65,7 +65,7 @@ $$
 = -\,\partial/\partial R_{\imath}\xi^{0*}\partial/\partial R_{\imath}{\xi_{\mathrm{scl}}}^0 - \partial/\partial R_{\imath}\xi^{+*}\partial/\partial R_{\imath}\xi^{+*} ,
 $$
 
-canonical for the two complex components, and if the hypercharge coupling is ignored it is invariant under the full $SU(2)_L\times SU(2)_R$, acting as $H\mapsto g_LHg_R^{*}$. This is the **custodial group**. The hypercharge interaction gauges the $T_3^R$ direction and therefore breaks $SU(2)_R$ explicitly, but only as a subgroup: $\mathrm{U}(1)_Y\subset SU(2)_R$, and the breaking is proportional to the hypercharge coupling $g_{\mathrm Y}$.
+canonical for the two complex components, and if the hypercharge coupling is ignored it is invariant under the full $SU(2)_L\times SU(2)_R$, acting as $H\mapsto g_LHg_R^{*}$. This is the **custodial group**. The hypercharge interaction makes the local $T_3^R$ direction and therefore breaks $SU(2)_R$ explicitly, but only as a subgroup: $\mathrm{U}(1)_Y\subset SU(2)_R$, and the breaking is proportional to the hypercharge coupling $g_{\mathrm Y}$.
 
 **The vacuum and the unbroken diagonal.** The electroweak vacuum has $\langle{\xi_{\mathrm{scl}}}^+\rangle = 0$ and $\langle{\xi_{\mathrm{scl}}}^0\rangle = v/\sqrt2$, so the matrix expectation is proportional to the identity,
 
@@ -119,7 +119,7 @@ $$
 
 or equivalently $\mathrm{Sc}(\tilde Q^{*}\tilde Q)$, which the two-sided action preserves because $\mathrm{Sc}(g_L\tilde Q g_R^{*}\overline{g_L\tilde Q g_R^{*}}) = \mathrm{Sc}(\tilde Q\tilde Q^{\natural}) = \langle\tilde Q,\tilde Q\rangle_{\natural}$: the scalar part of a product is invariant under a similarity, and the two outer factors cancel.
 
-**The left action and the sector structure.** The left multiplication by $g_L$ and the right multiplication by $g_R^{*}$ act on the four components of $\tilde Q$ as a pair of independent rotations. The left action is the framework's non-abelian gauge action of the companion articles, and the right action is the one that the framework's four-component objects have always carried: it is the same two-sided multiplication that the rotor conjugation of the Lorentz and gauge articles uses. The **diagonal** $g_L = g_R = g$ is the conjugation
+**The left action and the sector structure.** The left multiplication by $g_L$ and the right multiplication by $g_R^{*}$ act on the four components of $\tilde Q$ as a pair of independent rotations. The left action is the framework's non-abelian connection action of the companion articles, and the right action is the one that the framework's four-component objects have always carried: it is the same two-sided multiplication that the rotor conjugation of the Lorentz and gauge articles uses. The **diagonal** $g_L = g_R = g$ is the conjugation
 
 $$
 \tilde Q \;\longmapsto\; g\,\tilde Q\,g^{*} ,
@@ -127,7 +127,7 @@ $$
 
 which is the framework's similarity transformation, and it is the algebraic image of $SU(2)_V$.
 
-**The one sentence the article leaves implicit, stated.** With $g_L=g_R=g$ the map is $\tilde Q\mapsto g\tilde Q g^{*}=\mathrm{Sd}_g(\tilde Q)$, the **Hermitian pair**; and restricted to the vector part $\mathfrak{k}$ it is $\mathrm{Sd}_g(\vec v)=g\vec v g^{*}$, which for a unit rotor $g=\cos\tfrac{\omicron_{\mathrm{ang}}}{2}+\sin\tfrac{\omicron_{\mathrm{ang}}}{2}\vec u$ is the rotation of $\vec v$ about $\vec u$ by the full angle $\omicron_{\mathrm{ang}}$. So **the diagonal rotor acting by the sandwich is the spatial rotation**, and $\rho=1$ is the statement that the vacuum is invariant under it. That is why the parameter is exactly one: the custodial group here is not a symmetry that happens to survive — it is the rotation group itself, acting on the same carrier on which the gauge fields act, and a vacuum left fixed by a rotation is the definition of a spherically symmetric vacuum. The operator names and the half-angle/full-angle relation are fixed in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html).
+**The one sentence the article leaves implicit, stated.** With $g_L=g_R=g$ the map is $\tilde Q\mapsto g\tilde Q g^{*}=\mathrm{Sd}_g(\tilde Q)$, the $\tilde Q\mapsto g\tilde Q g^{*}=\mathrm{Sd}_g(\tilde Q)$; and restricted to the vector part $\mathfrak{k}$ it is $\mathrm{Sd}_g(\vec v)=g\vec v g^{*}$, which for a unit rotor $g=\cos\tfrac{\omicron_{\mathrm{ang}}}{2}+\sin\tfrac{\omicron_{\mathrm{ang}}}{2}\vec u$ is the rotation of $\vec v$ about $\vec u$ by the full angle $\omicron_{\mathrm{ang}}$. So **the diagonal rotor acting by the sandwich is the spatial rotation**, and $\rho=1$ is the statement that the vacuum is invariant under it. That is why the parameter is exactly one: the custodial group here is not a symmetry that happens to survive — it is the rotation group itself, acting on the same carrier on which the connections act, and a vacuum left fixed by a rotation is the definition of a spherically symmetric vacuum. The operator names and the half-angle/full-angle relation are fixed in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html).
 
 Two things follow and both are used below. The custodial symmetry is **exact** as an algebraic statement, so $\rho=1$ needs no tuning and no decoupling limit. And it is **not** an accident of the quaternion norm: it is the statement that the algebra's own similarity group is the rotation group, which is the identification this article has just made in another language.
 
@@ -225,7 +225,7 @@ $$
 
 where the sum runs over the components that acquire vacuum expectation values, with isospin $T_i$ and third component $T_{3i}$. The electroweak $\mathrm{U}(1)_Y$ breaks custodial symmetry explicitly, so the formula is exact only at tree level in the limit $g_{\mathrm Y}\to0$; the hypercharge and the multiplet splittings generate corrections at higher order.
 
-**The relation to the pion's isospin.** The same $SU(2)$ that appears here is the framework's compact group — $SU(2)$ under its biquaternion name, $\mathrm{SU}(2)=\mathrm{Spin}(3)$ — and the triplet $\vec\pi$ of the companion pion article transforms in its adjoint. The custodial triplet of would-be Goldstone modes and the pion triplet are both adjoints of the framework's $SU(2)$; the difference is that the custodial triplet is eaten by the gauge bosons while the pion triplet is physical, which is a statement about the gauging and the explicit breaking and not about the algebra. The framework's algebra carries both triplets; it does not by itself decide which is which.
+**The relation to the pion's isospin.** The same $SU(2)$ that appears here is the framework's compact group — $SU(2)$ under its biquaternion name, $\mathrm{SU}(2)=\mathrm{Spin}(3)$ — and the triplet $\vec\pi$ of the companion pion article transforms in its adjoint. The custodial triplet of would-be Goldstone modes and the pion triplet are both adjoints of the framework's $SU(2)$; the difference is that the custodial triplet is eaten by the connections while the pion triplet is physical, which is a statement about the making local and the explicit breaking and not about the algebra. The framework's algebra carries both triplets; it does not by itself decide which is which.
 
 ## Custodial Symmetry and the Chiral Lagrangian
 
@@ -241,7 +241,7 @@ The construction above is the standard custodial mechanism written in the framew
 
 **The framework's scalar is central.** The scalar of *The Higgs Mechanism in Biquaternionic Form* is $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{B}_{C}$, a central field carrying only the abelian central phase. It commutes with every element of $\mathbb{B}$ and is therefore a **singlet** of the compact $SU(2)\subset\mathbb{B}_{\Phi}$: the left and right actions both act trivially on it, $g\,\tilde{Ξ}\,g^{*} = \tilde{Ξ}$. A singlet cannot break a non-abelian symmetry, so the framework's scalar cannot be the doublet whose vacuum expectation value gives the $W$ and $Z$ their masses. The quaternion-valued field $\tilde Q$ of the previous sections is a **different object** from the framework's scalar: it is the natural carrier of the custodial action, and it is not the field that the framework's scalar sector builds.
 
-**The non-abelian action is vector-like.** Even granting a quaternion-valued scalar, the framework's non-abelian gauge action on matter is left multiplication, and on the framework's spinor module left multiplication acts on both chiral halves with the same representation. The companion articles show that this action is vector-like and that the $SU(2)$ doublet is pseudoreal, so the framework's $\mathrm{SU}(2)$ is not the chiral $SU(2)_L$: it cannot give the left-handed and right-handed fermions inequivalent representations. The custodial symmetry of the electroweak sector is a symmetry of a chiral gauge theory, and the framework's non-abelian structure does not reach the chiral gauge theory in the first place.
+**The non-abelian action is vector-like.** Even granting a quaternion-valued scalar, the framework's non-abelian connection action on matter is left multiplication, and on the framework's spinor module left multiplication acts on both chiral halves with the same representation. The companion articles show that this action is vector-like and that the $SU(2)$ doublet is pseudoreal, so the framework's $\mathrm{SU}(2)$ is not the chiral $SU(2)_L$: it cannot give the left-handed and right-handed fermions inequivalent representations. The custodial symmetry of the electroweak sector is a symmetry of a chiral connection theory, and the framework's non-abelian structure does not reach the chiral connection theory in the first place.
 
 **Hypercharge is not supplied.** The custodial group's right factor is broken to its $T_3^R$ subgroup by the hypercharge interaction, and the framework derives no hypercharge, no assignment of it, and no mixing angle. The $\rho$ parameter's custodial protection is a statement about the relative size of the charged and neutral mass matrices, and it presupposes an abelian factor whose charge assignment is fixed; the framework supplies the central abelian factor but not the assignment that makes it hypercharge.
 
@@ -261,7 +261,7 @@ The $\rho$ parameter is measured to be one within about a part in a thousand by 
 
 4. **Loop corrections to $\rho$.** The custodial-violating corrections are finite and calculable once the multiplet content is specified; whether the framework's trace structure reproduces the standard correction is a finite check that has not been performed.
 
-5. **The pion–custodial relation.** The custodial triplet and the pion triplet are both adjoints of the framework's $SU(2)$; whether the framework's gauging distinguishes them, or whether the distinction is entirely a matter of the hypercharge embedding, is not settled.
+5. **The pion–custodial relation.** The custodial triplet and the pion triplet are both adjoints of the framework's $SU(2)$; whether the framework's making local distinguishes them, or whether the distinction is entirely a matter of the hypercharge embedding, is not settled.
 
 6. **Empirical contact.** The framework predicts no value for $\rho$; whether any framework-specific deviation survives once the Standard Model content is supplied is the recurring open question.
 
@@ -282,7 +282,7 @@ $$
 \qquad g_{L,R}\in\mathbb{H}^1_{\mathbb{B}} ,
 $$
 
-with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ invariant under it; both invariances were verified numerically to better than $10^{-12}$. The framework therefore supplies the **action** and its invariant vacuum. It does not supply the **field**: its scalar is the central $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t$, a singlet of the compact $SU(2)$ that cannot break a non-abelian symmetry; its non-abelian gauge action on matter is vector-like and is not the chiral $SU(2)_L$; and it derives no hypercharge and no mixing angle. The custodial symmetry is thus present in the algebra and absent from the framework's scalar sector, and the framework makes no prediction for $\rho$ to compare with the measured value of one.
+with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ invariant under it; both invariances were verified numerically to better than $10^{-12}$. The framework therefore supplies the **action** and its invariant vacuum. It does not supply the **field**: its scalar is the central $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t$, a singlet of the compact $SU(2)$ that cannot break a non-abelian symmetry; its non-abelian connection action on matter is vector-like and is not the chiral $SU(2)_L$; and it derives no hypercharge and no mixing angle. The custodial symmetry is thus present in the algebra and absent from the framework's scalar sector, and the framework makes no prediction for $\rho$ to compare with the measured value of one.
 
 ## Summary of Notation
 
@@ -326,6 +326,6 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 - J. F. Donoghue, E. Golowich, and B. R. Holstein, *Dynamics of the Standard Model* (Cambridge, 1992), for the scalar sector, the $\rho$ parameter, and the electroweak precision observables.
 - G. Altarelli and M. W. Grunewald, "Precision electroweak tests of the Standard Model," *Physics Reports* **403–404** (2004) 189–201, for the measured $\rho$ parameter and the electroweak fit.
 - Particle Data Group (R. L. Workman et al.), "Review of Particle Physics," *Progress of Theoretical and Experimental Physics* **2022** (2022) 083C01, for the measured values of $M_W$, $M_Z$, $\theta_W$ and $\rho$.
-- H. Georgi, *Weak Interactions and Modern Particle Theory* (Benjamin/Cummings, 1984), for the chiral gauge theory and the scalar sector's electroweak quantum numbers.
+- H. Georgi, *Weak Interactions and Modern Particle Theory* (Benjamin/Cummings, 1984), for the chiral connection theory and the scalar sector's electroweak quantum numbers.
 - P. Langacker, *The Standard Model and Beyond* (CRC Press, 2010), for the electroweak symmetry breaking, the custodial symmetry, and the oblique corrections.
-- S. Weinberg, *The Quantum Theory of Fields*, Vol. 2: *Modern Applications* (Cambridge, 1996), for the spontaneous breaking of gauge symmetries and the vector-boson masses.
+- S. Weinberg, *The Quantum Theory of Fields*, Vol. 2: *Modern Applications* (Cambridge, 1996), for the spontaneous breaking of local symmetry and the vector-boson masses.

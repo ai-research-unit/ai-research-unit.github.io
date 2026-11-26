@@ -1,8 +1,8 @@
-# __The Gauge Carrier of the Material Sector: Why the Action Is One-Sided__
+# __The Connection Carrier of the Material Sector: Why the Action Is One-Sided__
 
 ## Introduction
 
-The carrier exists, and it is a side. The matter field of this framework is an element of the algebra, and the gauge action on it is left multiplication. That single fact decides everything else: what the carrier is, what the action preserves, and why the sector has a carrier but not a chiral one.
+The carrier exists, and it is a side. The matter field of this framework is an element of the algebra, and the connection action on it is left multiplication. That single fact decides everything else: what the carrier is, what the action preserves, and why the sector has a carrier but not a chiral one.
 
 The three results, and where they live. Each is stated in a mathematics article: the left family is multiplicative in its parameter, in [One-Sided Operators on a Clifford Algebra](../articles_maths/one-sided-operators-on-a-clifford-algebra.html); the single operator is not an endomorphism, in [The Signed Left Multiplication on a Ring](../articles_maths/the-signed-left-multiplication-on-a-ring.html); the left action on the spin group is the spin representation on a minimal left ideal, in [The One-Sided Action and the Spin Representation](../articles_maths/the-one-sided-action-and-the-spin-representation.html). A physics reader looking for the carrier of matter will not search the mathematics part, and this article collects the three where that reader will look.
 
@@ -10,7 +10,7 @@ The fourth result. A discrimination by the trace, which separates the two things
 
 ## The Carrier Is a Minimal Left Ideal
 
-Why an ideal and not a subspace. The gauge action is left multiplication, so the carrier must be closed under it. A left ideal is exactly a subspace closed under left multiplication, and a *minimal* left ideal is one with no proper such subspace. The carrier is therefore minimal by the demand that the representation be irreducible.
+Why an ideal and not a subspace. The connection action is left multiplication, so the carrier must be closed under it. A left ideal is exactly a subspace closed under left multiplication, and a *minimal* left ideal is one with no proper such subspace. The carrier is therefore minimal by the demand that the representation be irreducible.
 
 Its dimension. For $\mathbb{B}\cong M_2(\mathbb{C})$ the minimal left ideals have complex dimension two, so the carrier is $\mathbb{C}^2$ as a complex vector space. This is the spinor module, and the spin representation is what acts on it.
 
@@ -57,7 +57,7 @@ The numbers. Over two thousand random elements and random rotors the trace is pr
 
 ## What the Carrier Supplies and What It Does Not
 
-- Supplied. A carrier for spin-half matter, irreducible and uniquely determined; a gauge action that composes; and the trace criterion that identifies it as a module action rather than an automorphism.
+- Supplied. A carrier for spin-half matter, irreducible and uniquely determined; a connection action that composes; and the trace criterion that identifies it as a module action rather than an automorphism.
 - Imported. Nothing. The three results are computations about the algebra.
 - Not supplied. A chiral carrier. Because the action is left multiplication and left multiplication ignores the letter, both chiral values are carried by one module and acted on by one matrix. The carrier is therefore vector-like, and [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) records the consequence.
 

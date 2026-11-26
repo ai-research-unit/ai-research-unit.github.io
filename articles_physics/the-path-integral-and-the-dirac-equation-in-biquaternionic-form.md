@@ -246,7 +246,7 @@ The square of the operator is the scalar path integral. The worldline action has
 
 ## The Spin Factor in a Background Field
 
-The spin factor earns its name in a background electromagnetic field, and the calculation shows how the algebra organises the result. Minimal coupling adds the gauge term $\sum_{\imath} qA_{\imath}(x)\frac{dx_{\imath}}{d\tau}$ to the worldline action,
+The spin factor earns its name in a background electromagnetic field, and the calculation shows how the algebra organises the result. Minimal coupling adds the connection term $\sum_{\imath} qA_{\imath}(x)\frac{dx_{\imath}}{d\tau}$ to the worldline action,
 
 $$
 S[x] = \int_0^T d\tau\left[\frac{1}{4}\sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau} - 4\pi^{2}\nu_m^{2} + \sum_{\imath} qA_{\imath}(x)\frac{dx_{\imath}}{d\tau}\right],
@@ -351,13 +351,13 @@ It is worth stating what the square does not do in this setting. It does not rem
 
 ## The Measure and the Einbein
 
-The worldline integrals above are written with a proper-time parameter $T$ that has already been gauge-fixed, and the fixing is worth stating because it is the reason the four-dimensional propagator carries a proper-time integral at all. A relativistic worldline is reparametrisation invariant: the action
+The worldline integrals above are written with a proper-time parameter $T$ that has already been fixed-representative, and the fixing is worth stating because it is the reason the four-dimensional propagator carries a proper-time integral at all. A relativistic worldline is reparametrisation invariant: the action
 
 $$
 S[x,e] = \int_0^1 d\tau\left[\frac{1}{4e(\tau)}\sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau} - \frac{h^{2}}{4\pi^{2}}e(\tau)\,4\pi^{2}\nu_m^{2}\right]
 $$
 
-depends on the worldline only through its image, the auxiliary field $e(\tau)$ (the einbein) transforming as a density; the parameter $\tau$ has no physical meaning. In the path integral one does not fix $e$ but integrates over it, and the integral over the constant modes of $e$ is precisely the proper-time integral: writing $e(\tau) = T$ for the constant mode, the other modes can be gauged to zero and divide out the volume of the reparametrisation group, and the action becomes
+depends on the worldline only through its image, the auxiliary field $e(\tau)$ (the einbein) transforming as a density; the parameter $\tau$ has no physical meaning. In the path integral one does not fix $e$ but integrates over it, and the integral over the constant modes of $e$ is precisely the proper-time integral: writing $e(\tau) = T$ for the constant mode, the other modes can be set to zero by a choice of representative and divide out the volume of the reparametrisation group, and the action becomes
 
 $$
 S = \frac{1}{4T}\int_0^1 \sum_{\imath}\frac{dR_{\imath}}{d\tau}\frac{dR_{\imath}}{d\tau}\,d\tau - h^{2}\nu_m^{2} T ,
@@ -515,7 +515,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 - H. A. Gersch, "Feynman's relativistic chessboard as an Ising model," *International Journal of Theoretical Physics* **20** (1981) 491–501, for the checkerboard model and its continuum limit.
 - F. A. Berezin and M. S. Marinov, "Particle spin dynamics as the Grassmann variant of classical mechanics," *Annals of Physics* **104** (1977) 336–362, for the Grassmann worldline and the spin factor.
 - L. Brink, P. Di Vecchia and P. Howe, "A Lagrangian formulation of the classical and quantum dynamics of spinning particles," *Nuclear Physics B* **118** (1977) 76–94, for the supersymmetric worldline action.
-- J. Schwinger, "On gauge invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the proper-time representation.
+- J. Schwinger, "On local invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the proper-time representation.
 - M. G. Schmidt and C. Schubert, "The worldline path integral approach to Feynman graphs," in *Loops and Legs in Quantum Field Theory* (2000), and C. Schubert, "Perturbative quantum field theory in the string-inspired formalism," *Physics Reports* **355** (2001) 73–234, for the modern worldline formulation.
 - T. Jacobson and L. S. Schulman, "Quantum stochastics: the passage from a relativistic to a non-relativistic path integral," *Journal of Physics A: Mathematical and General* **17** (1984) 375–383, for the checkerboard continuum limit.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the Dirac propagator, its momentum-space form, and the propagator equation.

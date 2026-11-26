@@ -1,8 +1,8 @@
-# __The Mass Matrix of the Fifteen Gauge Bosons: The $\mathfrak{u}(3)$ Kernel, the Sextet at $32v^{2}$, and No Mixing__
+# __The Mass Matrix of the Fifteen Connections: The $\mathfrak{u}(3)$ Kernel, the Sextet at $32v^{2}$, and No Mixing__
 
 ## Introduction
 
-**The model gauges fifteen directions, and the matrix that gives them mass has two blocks.** Eight colour directions and one $B-L$ direction stay massless;
+**The model fixing conditions fifteen directions, and the matrix that gives them mass has two blocks.** Eight colour directions and one $B-L$ direction stay massless;
 six leptoquark directions take $32v^{2}$ at the transition. $8+1+6=15$.
 
 **The model.** One model: the $\mathrm{SU}(4)$ model, set out in [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One

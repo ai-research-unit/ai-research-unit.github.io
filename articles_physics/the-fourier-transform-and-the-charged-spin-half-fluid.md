@@ -112,7 +112,7 @@ At a mode the connection is constant, so $\tilde F=0$ and the companion's vortic
 | spinor | $ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ | shifts it | $\tilde F$ |
 | vector | $\varrho\,u_{\imath}$ with $u$ constant | shifts it and turns the chart | the coupled field strength |
 
-The scalar label has four numbers and no frame; the spinor label has four numbers and is the frame; the vector label has four numbers and *is* the field. So the spinor rung is the one rung whose label is exactly the frame, and that is why the rotor's independence of the gauge is a counting statement there and an algebraic one elsewhere.
+The scalar label has four numbers and no frame; the spinor label has four numbers and is the frame; the vector label has four numbers and *is* the field. So the spinor rung is the one rung whose label is exactly the frame, and that is why the rotor's independence of the fixing condition is a counting statement there and an algebraic one elsewhere.
 
 A gauge is a translation of a label, a translation cannot change a norm, and the norm is the invariant only when the label has nothing else in it. On the spinor rung the label has a great deal else in it — the whole frame — and the gauge still cannot touch it, because the frame is the label. That is the precise content of "a phase cannot rotate a rotor".
 

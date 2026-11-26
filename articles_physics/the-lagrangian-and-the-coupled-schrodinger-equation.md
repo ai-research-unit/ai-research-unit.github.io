@@ -20,7 +20,7 @@ with $D_{\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ and $\tilde A_\
 
 *Second, the connection enters the action in one place and the variation puts it in two.* The action carries the connection inside $D_{\imath}$ and inside $ϙ\omicron_{\mathrm{pot}}$; the equation carries it in the kinetic operator and in the potential. The two are one substitution seen from two sides, and the boundary-term identity that relates the gradient form to the operator form is what makes the variation produce the equation and not a different one (§*The Variation*).
 
-*Third, the local phase transformation leaves the action invariant exactly, with no boundary term.* The kinetic term gains $-ϙ\,\partial_{t'}\Gamma\,n$ and the potential term gains $+ϙ\,\partial_{t'}\Gamma\,n$, and the two gains are equal and opposite. The gradient term is invariant by covariance. So the invariance is term by term, and it is the clearest statement of why the covariant derivative and the potential are one object (§*The Constraints the Action Imposes: Gauge Invariance of the Action*).
+*Third, the local phase transformation leaves the action invariant exactly, with no boundary term.* The kinetic term gains $-ϙ\,\partial_{t'}\Gamma\,n$ and the potential term gains $+ϙ\,\partial_{t'}\Gamma\,n$, and the two gains are equal and opposite. The gradient term is invariant by covariance. So the invariance is term by term, and it is the clearest statement of why the covariant derivative and the potential are one object (§*The Constraints the Action Imposes: Local Invariance of the Action*).
 
 **What is not claimed.** The action is not new: it is the standard action of a non-relativistic charged scalar field, written in the algebra's letters. The current it delivers is the element-form companion's current, not a second one. No new prediction and no new solution. The article's content is the closure of the variational statement — the action's reality, the variation's exactness, the invariance's exactness, and the current's identity with the equation's — and the honest record of the one thing it does not do, which is the local energy flux.
 
@@ -109,7 +109,7 @@ which is the companion's equation, with $\vec\pi_{\imath}=-i \frac{h}{2\pi} D_{\
 
 **What the variation does not produce.** It does not produce a Maxwell equation. The connection is a fixed background here, and varying it would produce the inhomogeneous Maxwell equation with the current of §*The Noether Current* as source; that step belongs to the Maxwell article's action-and-source section and is not repeated. It also does not produce a constraint on the field's amplitude: the equation is linear, so the variation is a linear equation and the space of solutions is a vector space.
 
-## The Constraints the Action Imposes: Gauge Invariance of the Action
+## The Constraints the Action Imposes: Local Invariance of the Action
 
 **The transformation.** Let $\Gamma$ be a real function, $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$, and let the field and the connection transform as
 
@@ -256,8 +256,8 @@ The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in 
 - [The Coupled Schrödinger Equation in Biquaternionic Form](the-coupled-schrodinger-equation-in-biquaternionic-form.html), for the equation, the current and the two settings.
 - [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), where the same action is written in the chart and the redundant direction is named.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the carrier and the pairing the action is written with.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the central phase and the forced transformation law.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the covariance identities the invariance proof uses.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the central phase and the forced transformation law.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the covariance identities the invariance proof uses.
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), for the construction of the current from the symmetry.
 - [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the stress tensor and the improvement terms that §*The Two Settings: The Energy* leaves out.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the equation that this article's current sources.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *The Gauge Field Path Integral in Biquaternionic Form* specialises the functional integral to a connection and develops the Faddeev–Popov procedure for the **abelian** case: the orbit, the compensating determinant, and the Gaussian evaluation that yields the propagator. It records the non-abelian determinant only as a structure, $\mathcal{J}_{\mathrm{FP}}=\det(\partial/\partial R_{\imath} D_{\imath})$ up to the overall sign of a determinant, and leaves its development to the present subcategory. This is that development. The companion article *The Yang–Mills Equation in Biquaternionic Form* writes the classical non-abelian field equation $\sum_{\imath} D_{\imath} F_{\imath\jmath}=J_{\jmath}$ and its covariant conservation $\sum_{\jmath} D_{\jmath} J_{\jmath}=0$; the present article places that equation inside the path integral and asks what survives of it as an operator statement.
+The companion article *The Connection Path Integral in Biquaternionic Form* specialises the functional integral to a connection and develops the Faddeev–Popov procedure for the **abelian** case: the orbit, the compensating determinant, and the Gaussian evaluation that yields the propagator. It records the non-abelian determinant only as a structure, $\mathcal{J}_{\mathrm{FP}}=\det(\partial/\partial R_{\imath} D_{\imath})$ up to the overall sign of a determinant, and leaves its development to the present subcategory. This is that development. The companion article *The Yang–Mills Equation in Biquaternionic Form* writes the classical non-abelian field equation $\sum_{\imath} D_{\imath} F_{\imath\jmath}=J_{\jmath}$ and its covariant conservation $\sum_{\jmath} D_{\jmath} J_{\jmath}=0$; the present article places that equation inside the path integral and asks what survives of it as an operator statement.
 
 Three features distinguish the non-abelian procedure from the abelian one, and they organise everything below.
 
@@ -30,16 +30,16 @@ T_a=\tfrac12 \vec e_a ,\ \ [T_a,T_b]=\sum_c\varepsilon_{abc}T_c ,\ \ 2\,\mathrm{
 $$
 with the connection $\mathcal{A}_{\imath}=\sum_a\mathcal{A}_{\imath a} \vec e_a\in\mathrm{SU}(2)$, the coupling $\kappa=\frac{2\pi ϙ}{h}$, the covariant derivative $D_{\imath}=\partial/\partial R_{\imath}+i\kappa\mathcal{A}_{\imath}$, the curvature $F_{\imath\jmath}=\partial/\partial R_{\imath}\,\mathcal{A}_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal{A}_{\imath}+i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$, its adjoint law $F_{2,\imath\jmath}=\tilde UF_{\imath\jmath}\tilde U^{-1}$ for a unit real quaternion $\tilde U$, and the adjoint covariant derivative $D_{\imath} \tilde{Q}=\partial/\partial R_{\imath} \tilde{Q}+i\kappa[\mathcal{A}_{\imath},\tilde{Q}]$. The connection components are taken in the unnormalized basis $\vec e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12 \vec e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$, and in the Hermitian-generator realization $T_a=i\vec e_a\in\mathbb{B}_{\Psi}$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, with $f_{abc}=2\varepsilon_{abc}$ in that realization. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f_{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The constants are carried in every exponent, which reads $\frac{2\pi i}{h}S$ with $\frac{h}{2\pi}$ the action quantum; no unit is set to one.
 
-- Companion article *The Gauge Field Path Integral in Biquaternionic Form*, for the abelian Faddeev–Popov construction, the fixing parameter and the propagator.
+- Companion article *The Connection Path Integral in Biquaternionic Form*, for the abelian Faddeev–Popov construction, the fixing parameter and the propagator.
 - Companion article *The Yang–Mills Equation in Biquaternionic Form*, for the non-abelian curvature, the field equation and covariant conservation.
-- Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the connection, the adjoint transformation law and the Yang–Mills density.
+- Companion article *Non-Abelian Connections in Biquaternionic Form*, for the connection, the adjoint transformation law and the Yang–Mills density.
 - Companion article *BRST Symmetry in Biquaternionic Form*, for the nilpotent odd derivation, the fixing the representative fermion and the cohomological description of physical states.
-- Companion article *Gauge Curvature and the Bianchi Identity in Biquaternionic Form*, for the curvature conventions and the Bianchi identity.
+- Companion article *Connection Curvature and the Bianchi Identity in Biquaternionic Form*, for the curvature conventions and the Bianchi identity.
 - Companion article *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, for the adjoint action as the spin-one representation.
 - Companion article *The Functional Integral in Biquaternionic Form*, for the measure, the Gaussian evaluation and the Euclidean rotation.
 - Companion article *The Renormalization Group in Biquaternionic Form*, for the running of the non-abelian coupling.
 
-## The Non-Abelian Action and Its Gauge Orbit
+## The Non-Abelian Action and Its Orbit
 
 ### The Action and the Invariance
 
@@ -70,7 +70,7 @@ with $\mathrm{Vol}(\mathcal{G})$ the infinite volume of the group of local trans
 
 Throughout, $\theta_{\mathrm{ym}}:=S_{\mathrm{YM}}[\mathcal{A}]\frac{2\pi}{h}$ is real: the Yang--Mills action is $-\int d^4r\,\mathrm{Tr}\langle\tilde{\mathcal{F}},\tilde{\mathcal{F}}\rangle$, a real number for real potentials, so $\exp(i\theta_{\mathrm{ym}})$ is a phase of modulus one and the weight on each orbit is unitary.
 
-## Gauge Fixing and the Faddeev–Popov Determinant
+## Choice Of Representative and the Faddeev–Popov Determinant
 
 ### Inserting Unity
 
@@ -96,7 +96,7 @@ $$
 \qquad
 M_{ab}=\frac{\delta G_a}{\delta\Gamma_b},
 $$
-and the determinant is $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]=\det M$. For the **Lorenz gauge** $G_a=\sum_{\imath}\partial/\partial R_{\imath}\,\mathcal{A}_{\imath a}-\omega_a$, the variation is
+and the determinant is $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]=\det M$. For the **Lorenz fixing condition** $G_a=\sum_{\imath}\partial/\partial R_{\imath}\,\mathcal{A}_{\imath a}-\omega_a$, the variation is
 $$
 \mathcal{A}_{\imath a}\longmapsto\mathcal{A}_{\imath a}-(D_{\imath}\Gamma)_a ,
 \qquad
@@ -155,9 +155,9 @@ $$
 $$
 with $\Lambda^1$ generated by anticommuting $\varkappa_i$, and a ghost is written $c=\sum_a c_aT_a\otimes\varkappa$. The algebra supplies the generators $T_a$, the structure constants and the module; the odd coordinates are adjoined. This is the same statement the Fock companion makes for the ladder operators and the BRST companion makes for the doublet: the framework's algebra is even, and the odd sector is tensored on.
 
-### The Gauge-Fixed Action
+### The Fixed-representative Action
 
-Collecting the pieces, the gauge-fixed Yang–Mills action is
+Collecting the pieces, the fixed-representative Yang–Mills action is
 $$
 S=S_{\mathrm{YM}}+S_{\mathrm{gf}}+S_{\mathrm{gh}},
 \qquad
@@ -171,11 +171,11 @@ is the Yang–Mills path integral of the framework.
 
 Throughout this article $\theta_{\mathrm{act}}:=\frac{2\pi \mathrm{Re}\,S}{h}$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\frac{2\pi \mathrm{Im}\,S}{h}$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
-## The Propagator and Gauge-Parameter Independence
+## The Propagator and Independence Of The Fixing Parameter
 
 ### The Quadratic Form
 
-At quadratic order in the fields the gauge-fixed action is
+At quadratic order in the fields the fixed-representative action is
 $$
 S^{(2)}=\tfrac12\int d^4r\;\sum_{\imath,\jmath,a}\mathcal{A}_{\imath a}\left(\delta_{\imath\jmath}\Box_\Phi-(1-\tfrac1\zeta)\partial^2/\partial R_{\imath}\partial R_{\jmath}\right)\mathcal{A}_{\jmath a},
 $$
@@ -192,7 +192,7 @@ so that physical amplitudes are parameter independent. This is the content the c
 
 ### What the Non-Abelian Theory Adds
 
-Two additions are specific to the non-abelian case. The first is that the external current of the gauge field is itself charged, $J_{2,\jmath}=\tilde UJ_{\jmath} \tilde U^{-1}$, and is covariantly conserved, $\sum_{\jmath} D_{\jmath} J_{\jmath}=0$, so the identity $\sum_{\jmath} p_{\jmath} j_{\jmath}=0$ holds only after the commutator terms are included: ordinary conservation fails, $\partial/\partial R_{\jmath} J_{\jmath}=-i\kappa[\mathcal{A}_{\jmath},J_{\jmath}]$, as the Yang–Mills companion records. The Ward identity of the abelian theory therefore becomes a family of **Slavnov–Taylor identities**, one for each external leg, relating amplitudes with different numbers of ghosts and longitudinal gauge fields. The second addition is that the propagator is not the whole of the quadratic theory: the gauge-fixed action contains the cubic and quartic self-interactions of $\mathcal{A}$, and the ghost action contains the ghost–gauge coupling $i\kappa\sum_{a,b,c}f_{abc}\bar c_a\partial/\partial R_{\imath}(\mathcal{A}_{\imath b}c_c)$. The one-loop two-point function therefore receives, in addition to the gauge-field loop, the ghost loop and the gauge-field tadpole; their contributions are what make the non-abelian beta function differ from the abelian one. For the pure $\mathrm{SU}(2)$ theory the one-loop coefficient is
+Two additions are specific to the non-abelian case. The first is that the external current of the connection is itself charged, $J_{2,\jmath}=\tilde UJ_{\jmath} \tilde U^{-1}$, and is covariantly conserved, $\sum_{\jmath} D_{\jmath} J_{\jmath}=0$, so the identity $\sum_{\jmath} p_{\jmath} j_{\jmath}=0$ holds only after the commutator terms are included: ordinary conservation fails, $\partial/\partial R_{\jmath} J_{\jmath}=-i\kappa[\mathcal{A}_{\jmath},J_{\jmath}]$, as the Yang–Mills companion records. The Ward identity of the abelian theory therefore becomes a family of **Slavnov–Taylor identities**, one for each external leg, relating amplitudes with different numbers of ghosts and longitudinal connections. The second addition is that the propagator is not the whole of the quadratic theory: the fixed-representative action contains the cubic and quartic self-interactions of $\mathcal{A}$, and the ghost action contains the ghost–connection coupling $i\kappa\sum_{a,b,c}f_{abc}\bar c_a\partial/\partial R_{\imath}(\mathcal{A}_{\imath b}c_c)$. The one-loop two-point function therefore receives, in addition to the connection loop, the ghost loop and the connection tadpole; their contributions are what make the non-abelian beta function differ from the abelian one. For the pure $\mathrm{SU}(2)$ theory the one-loop coefficient is
 $$
 \beta_\kappa=-\frac{\kappa^3}{16\pi^2}b_0 ,
 \qquad
@@ -231,9 +231,9 @@ where $J_{\mathrm{gf}}$ and $J_{\mathrm{gh}}$ are the sources generated by $-\fr
 
 What the algebra adds here is an interpretation rather than a formula. The covariant divergence that the quantum equation averages is built from the commutator $\sum_{\imath}[\mathcal{A}_{\imath},F_{\imath\jmath}]$, and the commutator is the adjoint action of the material sector on itself; the current, being the covariant divergence of the curvature, transforms in the adjoint too, $J_{2,\jmath}=\tilde UJ_{\jmath} \tilde U^{-1}$; and the source is therefore a spin-one object of the material sector, exactly as the curvature is. The quantum equation is the stationarity of a functional whose internal index is the spin-one index of the adjoint action.
 
-## Gauge Slicing and the Gribov Ambiguity
+## Slicing The Representative and the Gribov Ambiguity
 
-The Faddeev–Popov identity presupposes that the fixing condition $G=0$ intersects each orbit exactly once: the insertion of unity is an identity for each orbit, and the argument that the determinant cancels the volume requires the set of solutions to be a single point per orbit. In the abelian theory on a topologically trivial background this holds for the Lorenz gauge, and the determinant is field-independent. In the non-abelian theory it fails, and the failure is structural.
+The Faddeev–Popov identity presupposes that the fixing condition $G=0$ intersects each orbit exactly once: the insertion of unity is an identity for each orbit, and the argument that the determinant cancels the volume requires the set of solutions to be a single point per orbit. In the abelian theory on a topologically trivial background this holds for the Lorenz fixing condition, and the determinant is field-independent. In the non-abelian theory it fails, and the failure is structural.
 
 The obstruction has two parts, one analytic and one topological. Analytically, for a generic non-abelian configuration the equation $G[\mathcal{A}^{\tilde U}]=0$, that is $\sum_{\imath}\partial/\partial R_{\imath}\,\mathcal{A}_{\imath}^{\tilde U}=0$, has more than one solution $\tilde U$; the extra solutions are the **Gribov copies**. The Faddeev–Popov operator $M_{ab}=-\partial\cdot D_{ab}$ is the Hessian of the fixing the representative functional, and the copies appear where it develops a zero eigenvalue; the set of configurations where this happens is the **Gribov horizon**. Topologically, the space of connections modulo local transformations is not covered by a single gauge slice: a continuous global fixing condition would be a section of a non-trivial bundle, and the standard argument of Singer shows that no such section exists for the non-abelian theory on the sphere or on any non-trivial bundle.
 
@@ -262,7 +262,7 @@ D_{\imath ab}=\partial/\partial R_{\imath}\,\delta_{ab}-i\kappa\sum_c f_{abc}\ma
 $$
 whereas in the abelian limit $f_{abc}=0$, $M=-\Box_\Phi$, and the determinant is field-independent. The determinant is written as a functional integral over anticommuting ghosts in the Grassmann envelope $\mathbb{B}\otimes\Lambda$, because $\mathbb{B}$ has no odd elements, and the resulting ghost action $S_{\mathrm{gh}}=-\int\sum_a\bar c_a\sum_{\imath}\partial/\partial R_{\imath}(D_{\imath} c)_a$ is the one the BRST companion takes as given.
 
-The gauge-fixed action $S=S_{\mathrm{YM}}+S_{\mathrm{gf}}+S_{\mathrm{gh}}$ has a quadratic part whose inversion gives the propagator
+The fixed-representative action $S=S_{\mathrm{YM}}+S_{\mathrm{gf}}+S_{\mathrm{gh}}$ has a quadratic part whose inversion gives the propagator
 $$
 D_{\imath\jmath}(p)=\frac{1}{\Pi}\left(\delta_{\imath\jmath}+(1-\zeta)\frac{p_{\imath} p_{\jmath}}{\Pi}\right),
 $$
@@ -315,14 +315,14 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 
 ## Further Reading
 
-- L. D. Faddeev and V. N. Popov, "Feynman diagrams for the Yang–Mills field," *Physics Letters B* **25** (1967) 29–30, for the gauge-fixing determinant and the ghost fields.
-- G. 't Hooft, "Renormalizable Lagrangians for massive Yang–Mills fields," *Nuclear Physics B* **35** (1971) 167–188, for the gauge-fixing and ghost structure in renormalizable form.
-- B. S. DeWitt, "Quantum theory of gravity. II. The manifestly covariant theory," *Physical Review* **162** (1967) 1195–1239, for the covariant background-field treatment of gauge fixing.
+- L. D. Faddeev and V. N. Popov, "Feynman diagrams for the Yang–Mills field," *Physics Letters B* **25** (1967) 29–30, for the choice of representative determinant and the ghost fields.
+- G. 't Hooft, "Renormalizable Lagrangians for massive Yang–Mills fields," *Nuclear Physics B* **35** (1971) 167–188, for the choice of representative and ghost structure in renormalizable form.
+- B. S. DeWitt, "Quantum theory of gravity. II. The manifestly covariant theory," *Physical Review* **162** (1967) 1195–1239, for the covariant background-field treatment of choice of representative.
 - L. D. Faddeev and A. A. Slavnov, *Gauge Fields: An Introduction to Quantum Theory* (Benjamin/Cummings, 1980), for the Faddeev–Popov procedure, the Slavnov–Taylor identities and the quantum equations of motion.
 - S. Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the non-abelian path integral, the ghosts, the one-loop beta function and the asymptotically free sign.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Schwinger–Dyson equations, the Ward and Slavnov–Taylor identities and the parameter-independence argument.
-- V. N. Gribov, "Quantization of non-Abelian gauge theories," *Nuclear Physics B* **139** (1978) 1–19, for the copies and the horizon of the gauge-fixing condition.
+- V. N. Gribov, "Quantization of Yang–Mills theory," *Nuclear Physics B* **139** (1978) 1–19, for the copies and the horizon of the choice of representative condition.
 - I. M. Singer, "Some remarks on the Gribov ambiguity," *Communications in Mathematical Physics* **60** (1978) 7–12, for the topological obstruction to a global gauge slice.
 - N. Vandersickel and D. Zwanziger, "The Gribov problem and QCD dynamics," *Physics Reports* **520** (2012) 175–251, for the fundamental domain, the horizon condition and the continuum confinement setting.
-- J. B. Kogut and L. Susskind, "Hamiltonian formulation of Wilson's lattice gauge theories," *Physical Review D* **11** (1975) 395–408, for the non-perturbative regulator in which the confining behaviour is established.
+- J. B. Kogut and L. Susskind, "Hamiltonian formulation of Wilson's lattice connection theory," *Physical Review D* **11** (1975) 395–408, for the non-perturbative regulator in which the confining behaviour is established.
 - M. F. Atiyah and I. M. Singer, "Dirac operators coupled to vector potentials," *Proceedings of the National Academy of Sciences* **81** (1984) 2597–2600, for the index theory of the covariant derivative in the adjoint representation.

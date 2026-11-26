@@ -4,7 +4,7 @@
 
 **The question.** The corpus writes $r\bar g$, $r\bar b$ and $b\bar\ell$ on the fifteen connections, and it calls them colours. **Are they charges?**
 
-**The answer.** No. **They are coordinates in a $4\times4$ table.** Above $M_C$ the group is one simple factor and no $\mathrm{SU}(3)$ is gauged, so a colour letter names a slot and nothing else. **It is not an eigenvalue, not a conserved number, and not an observable.**
+**The answer.** No. **They are coordinates in a $4\times4$ table.** Above $M_C$ the group is one simple factor and no $\mathrm{SU}(3)$ is made local, so a colour letter names a slot and nothing else. **It is not an eigenvalue, not a conserved number, and not an observable.**
 
 **What this article establishes.** The fifteen flat labels, with no broken-phase word among them: twelve ordered pairs and three diagonal directions. Why the labels mix under a local transformation. Why nothing can measure them above $M_C$. And the four facts that are real — the group, its dimension, its rank, and the common mass.
 
@@ -80,7 +80,7 @@ $$
 
 **Two arguments, and either one is enough.**
 
-### It Is Not Gauge Invariant
+### It Is Not Invariant
 
 **The connection is $A_\mu=\sum_{a}A_\mu^{a}t_{a}$, and the index $a$ is the label.** Under a local transformation,
 
@@ -194,4 +194,4 @@ $$
 - [The $\mathrm{SU}(4)$ Model: One Group, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html), for the group, the count of fifteen and the place of declaration (A).
 - [The Counts of the Fifteen: Sixteen Cells, Six Pairs, Twelve Arrays, Fifteen Generators](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html), for the cell, plane and array vocabulary used above.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), for the same grid read with names in every cell, and for what changes at the transition.
-- [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html), for the covariant derivative, the one coupling and the gauge transformation quoted above.
+- [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html), for the covariant derivative, the one coupling and the local transformation quoted above.

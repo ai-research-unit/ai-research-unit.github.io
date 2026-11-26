@@ -26,7 +26,7 @@ the Euler–Lagrange condition is the parent's equation. The first term is the s
 
 *Second, one term has no soliton.* A static configuration of the two-derivative action is scale invariant in three dimensions: shrinking it lowers its energy without bound, because a two-derivative energy in $d=3$ scales as $1/L$ and the target's topology gives no gap. The Derrick argument is re-derived here as a statement about the action, and it is the reason the second term exists.
 
-*Third, the second term is a commutator because the current is flat.* $[j_{\imath},j_{\jmath}]$ vanishes for a pure gauge field and it is precisely the flatness of $j_{\imath}$ that makes the commutator a measure of curvature rather than of the field's definition. The algebra gives the term its form; the standard classification gives it its uniqueness.
+*Third, the second term is a commutator because the current is flat.* $[j_{\imath},j_{\jmath}]$ vanishes for a pure connection and it is precisely the flatness of $j_{\imath}$ that makes the commutator a measure of curvature rather than of the field's definition. The algebra gives the term its form; the standard classification gives it its uniqueness.
 
 What is not new. The Skyrme model is standard, and its soliton, its topological charge and its baryon identification are imported. What the algebra supplies is that both terms are norms of one algebra-valued current and that the four-derivative combination is the norm of that current's commutator.
 
@@ -34,7 +34,7 @@ What is not new. The Skyrme model is standard, and its soliton, its topological 
 
 The conventions are restated here so that every sign below is checkable from this page. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; the field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ with $\tilde U^{-1}=\tilde U^{\natural}=\tilde U^{*}$. $\mathrm{Sc}(X)$ is the coefficient of $e_t$; $\langle X\rangle_\natural=\mathrm{Sc}(XX^{\natural})$.
 
-The static frame. Spatial coordinates are $\vec r=R_x\vec e_x+R_y\vec e_y+R_z\vec e_z$, the fields are static, $\partial\tilde U/\partial r'_t=0$, and configurations are pure gauge at spatial infinity, $\tilde U\to e_t$ as $|\vec r|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
+The static frame. Spatial coordinates are $\vec r=R_x\vec e_x+R_y\vec e_y+R_z\vec e_z$, the fields are static, $\partial\tilde U/\partial r'_t=0$, and configurations are pure gradient at spatial infinity, $\tilde U\to e_t$ as $|\vec r|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
 
 The two parameters. $f=f_\pi$ is the decay constant, dimension of mass; $e$ is dimensionless. The combination $1/e$ has dimension of length in the standard counting and sets the soliton's size; the ratio $f/e$ is not fixed by the action.
 
@@ -192,7 +192,7 @@ The three findings. One term is solitonless by the Derrick identity, and the sec
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ | Skyrme field, unit real quaternion, pure gauge at infinity |
+| $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ | Skyrme field, unit real quaternion, pure gradient at infinity |
 | $j_{\imath}=\tilde U^{\natural}\partial_{\imath}\tilde U$ | flat Maurer–Cartan current |
 | $f=f_\pi$ | decay constant |
 | $e$ | dimensionless Skyrme parameter |
@@ -207,4 +207,4 @@ The three findings. One term is solitonless by the Derrick identity, and the sec
 - [The Lagrangian and the Nonlinear Sigma Model](the-lagrangian-and-the-nonlinear-sigma-model.html) — the two-derivative term alone, and why it needs the second.
 - [The Chiral Theory and the Lagrangian: The Pion and the Decay Constant](the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html) — the pion reading of the first term.
 - [The Lagrangian and the Central Scalar Field](the-lagrangian-and-the-central-scalar-field.html) — the classical scalar action, for comparison of the wave-operator structure.
-- [Topological Charge, Self-Duality and the Bogomolny Bound](topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.html) — bounds of the same kind in the gauge sector.
+- [Topological Charge, Self-Duality and the Bogomolny Bound](topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.html) — bounds of the same kind in the sector.

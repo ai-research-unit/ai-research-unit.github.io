@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article couples the Proca field to an electromagnetic connection and reads what the coupling does to the field, to the equation, and to the algebra's own bookkeeping. It is the element-form companion of *The Coupled Proca Equation in Biquaternionic Polar Variables*, and it depends on *The Proca Equation in Biquaternionic Form* for the free equation, on *The Gauge Principle in Biquaternionic Form* for the localization of the central phase, and on *The Covariant Derivative and Gauge Connection in Biquaternionic Form* for the operator identity.
+This article couples the Proca field to an electromagnetic connection and reads what the coupling does to the field, to the equation, and to the algebra's own bookkeeping. It is the element-form companion of *The Coupled Proca Equation in Biquaternionic Polar Variables*, and it depends on *The Proca Equation in Biquaternionic Form* for the free equation, on *The Minimal Coupling in Biquaternionic Form* for the localization of the central phase, and on *The Covariant Derivative and Connection in Biquaternionic Form* for the operator identity.
 
 The equation.
 
@@ -98,7 +98,7 @@ For a purely electric potential $\tilde A_\Phi^{\natural}=+\tilde A_\Phi$; for a
 
 **The side is the left, and the mirror is the renaming.** Every coupling here acts on the left. The right-action equation on $\tilde A$ is the left-action equation on $\tilde A^{\natural}$, by the renaming identity $(\tilde A\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A^{\natural}$, so the two sides are one construction and not two.
 
-## Gauge Covariance
+## Covariance
 
 The local transformation.
 
@@ -246,7 +246,7 @@ that is $E\mapsto E+ϙ c\,a'_t$ with $E=hf_{\mathrm{frq}}$. The numerical check 
 
 **The vector potential is not a shift.** For a purely magnetic constant potential, $\tilde C$ is a pure vector and does not commute with the units; the determinant is no longer a function of $\omega^2$, the two transverse roots separate, and the longitudinal root is the one the constraint fixes. The article records the structure and not a closed formula: the roots are the zeros of a $4\times4$ determinant and this article does not solve it in general.
 
-What a constant potential is. It has zero curvature, so it is pure gauge up to a constant, so its whole effect is the reparameterisation of the phase. That is why the scalar case is an exact shift and why the vector case is a change of basis rather than a change of spectrum. The statement is the polar companion's §*The Gauge Transformation Is a Phase Translation*, read in the element form.
+What a constant potential is. It has zero curvature, so it is pure gauge up to a constant, so its whole effect is the reparameterisation of the phase. That is why the scalar case is an exact shift and why the vector case is a change of basis rather than a change of spectrum. The statement is the polar companion's §*The Local Transformation Is a Phase Translation*, read in the element form.
 
 ## The Current
 
@@ -327,7 +327,7 @@ The equation is standard. The algebra's contribution is the closure argument, th
 | $\tilde C=\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The coupling element of a constant background |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter of the framework |
-| $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Central gauge phase; $\Gamma$ real |
+| $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Central central phase; $\Gamma$ real |
 | $j_{\imath}=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A)$ | The charge current |
 
 ## Further Reading
@@ -335,8 +335,8 @@ The equation is standard. The algebra's contribution is the closure argument, th
 - [The Proca Equation: Massive Spin One in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the free equation, the field strength and the two polarizations.
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the two-factor word and the two brackets of the free field.
 - [The Coupled Proca Equation in Biquaternionic Polar Variables](the-coupled-proca-equation-in-biquaternionic-polar-variables.html), for the same statements in the chart.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), for the coupling that enters once rather than twice, and for the contrast between the two carriers.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the potential biquaternion and the four-current.
 - [The Lagrangian and the Coupled Proca Equation](the-lagrangian-and-the-coupled-proca-equation.html), for the action, the currents and the sign of the mass term.

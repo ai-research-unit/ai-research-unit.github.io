@@ -215,7 +215,7 @@ The origin of the count is the difference of carriers. The potential is a four-v
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the polar reading of a plane wave, where the frame is constant and the scale carries the oscillation.
 - [The Lagrangian and the Proca Equation](the-lagrangian-and-the-proca-equation.html), for the stress tensor whose trace is the same measure of the mass.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html), for $\vec N$, the dual, and the two invariants.
-- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the massless case and the gauge freedom that removes the third state.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the massless case and the redundancy that removes the third state.
 - [The Complex Potential of a Self-Dual Maxwell Field](the-complex-potential-of-a-self-dual-maxwell-field.html), for the programmes that impose duality purity and the change of carrier they require.
 - [Canonical Quantization of the Biquaternion Proca Field](canonical-quantization-of-the-biquaternion-proca-field.html), for the polarization projector and the massless limit's change of constraint class.
 - Iwo Białynicki-Birula and Zofia Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", *Journal of Physics A* **46** (2013) 053001, for the complex-vector description and its duality structure.

@@ -67,7 +67,7 @@ $$
 
 first order in the time derivative and second order in the space derivatives, exactly as the free one. Hence the integral is still a first-order integral, its value is $\det(A_{\mathrm{gco}})^{-1}$ times the exponent of the source term, and the power of the determinant is the free power. The coupling changes the operator and not its order, and that is the reason the coupled integral is as well defined as the free one.
 
-## Gauge Invariance and the Measure
+## Local Invariance and the Measure
 
 **The transformation is a central phase at each point.** With a real function $\Gamma(x)$,
 
@@ -119,7 +119,7 @@ $$
 
 which is the constant companion's $h_t\mapsto h_t-ϙ\omicron_{\mathrm{pot}}$ and $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$ read as a dispersion. The two shifts are the coupling's only content in the constant setting, and the potential's shift is linear because the equation is first order in time: there is no square to put it in.
 
-The translation factor is a phase and not a gauge choice. The second factor of the kernel is not removable by a gauge transformation of the endpoints, because a gauge transformation would also move $\omicron_{\mathrm{pot}}$ and because the factor's argument is the displacement. It is the integral's version of the statement that a constant vector potential is pure gauge in the equation and not in the kernel: the kernel is a matrix element between two positions, and the two positions are at different points, so the phase does not cancel.
+The translation factor is a phase and not a choice of representative. The second factor of the kernel is not removable by a local transformation of the endpoints, because a local transformation would also move $\omicron_{\mathrm{pot}}$ and because the factor's argument is the displacement. It is the integral's version of the statement that a constant vector potential is pure gradient in the equation and not in the kernel: the kernel is a matrix element between two positions, and the two positions are at different points, so the phase does not cancel.
 
 ## The Semiclassical Expansion
 

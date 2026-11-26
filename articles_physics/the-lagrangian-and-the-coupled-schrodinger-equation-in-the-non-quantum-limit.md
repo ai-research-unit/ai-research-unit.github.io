@@ -66,7 +66,7 @@ Which block is deleted, and how much it costs. The truncated action drops the gr
 
 Restoring it adds the quantum potential. The restored term enters the equation for $\vec u_{\mathrm b}$ and not the equation for the phase, and it enters with the density in the denominator. It is large where the density is small, so the truncated theory cannot describe a node, and the article's section on the nodal exception is where that boundary is stated.
 
-Why the truncation is invariant. The deleted block is built from $\nabla\varrho$, and $\varrho$ is invariant under the gauge shift of the phase. The block is therefore a gauge scalar and its deletion commutes with a local transformation, which is the property the first-order family lacks.
+Why the truncation is invariant. The deleted block is built from $\nabla\varrho$, and $\varrho$ is invariant under the phase shift of the phase. The block is therefore a scalar part and its deletion commutes with a local transformation, which is the property the first-order family lacks.
 
 Why it is not boost invariant. The block is a spatial gradient and not a four-gradient, so it distinguishes the slicing. The truncation of this family singles out a frame, and that is a real loss even though the error is small: a small non-covariant term is still a non-covariant term.
 
@@ -78,7 +78,7 @@ The covariant eikonal. The phase's variation of the truncated action gives the c
 
 The covariant continuity equation. The variation in the frame gives the continuity equation with the covariant divergence in place of the ordinary one. It survives unchanged for the same reason, and the two together are the truncated theory's whole content.
 
-The covariance. Every kept block is a covariant object and the deleted block was a gauge scalar, so the truncation commutes with a local transformation. The truncated theory is invariant, and the article says so in a section of its own because it is the property that fails for the first-order family.
+The covariance. Every kept block is a covariant object and the deleted block was a scalar part, so the truncation commutes with a local transformation. The truncated theory is invariant, and the article says so in a section of its own because it is the property that fails for the first-order family.
 
 The currents. Density and energy are the phase's conjugate quantities, and the current is the density times the phase's gradient. Their expressions survive verbatim, and the coupling enters them exactly where it entered the parent.
 
@@ -110,7 +110,7 @@ $$
 which divided by $-2\varrho$ is the parent's Hamilton–Jacobi equation with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The two differ by exactly the deleted term and by nothing else, and the potential's coefficient is the same in both.
 
 The quantum potential does not carry the connection, and the action shows why. The deleted term is $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, a function of the scale alone. The scale is invariant under the symmetry group, so its gradient is too, and the divergence that follows from it is $Q$ and nothing more. This is the variational form of the parent's first finding, which the equation route obtains by inspection.
-## The Constraints the Action Imposes: Gauge Invariance of the Truncated Action
+## The Constraints the Action Imposes: Local Invariance of the Truncated Action
 The transformation on the chart. With $\Gamma$ real, the phase is translated, the vector potential shifted, and the scalar potential shifted:
 
 $$
@@ -135,7 +135,7 @@ $$
 
 The two canceling pairs are the two terms that carry the time derivative. In the action the first term shifts by $-q \varrho^{2}\dot\Gamma$ and the potential-energy term by $+q \varrho^{2}\dot\Gamma$, term for term and pointwise, so no boundary term is produced and no integration by parts is needed. **The truncated action is invariant exactly**, and the parent's reading is the reason it must be: the symmetry group translates one coordinate of the word and leaves the other seven, so a term built from the scale and the invariant combination of the phase cannot see it.
 
-The limit and the gauge transformation commute. The deletion is the removal of a term built from the scale alone, so it removes a gauge invariant quantity. Deleting and gauging in either order gives the same action, and that is a one-line statement here and a computation in an equation-first account.
+The limit and the local transformation commute. The deletion is the removal of a term built from the scale alone, so it removes an invariant quantity. Deleting and making local in either order gives the same action, and that is a one-line statement here and a computation in an equation-first account.
 ## The Structural Consequence: Varying the Phase: the Covariant Transport, Unchanged
 The phase's variation of the truncated action.
 

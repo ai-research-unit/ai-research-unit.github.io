@@ -4,7 +4,7 @@
 
 The Proca field is the simplest field in the corpus whose functional integral exists as it stands. It is a real four-component field, it is commuting, its action is quadratic, and its mass term removes the one obstruction that the massless integral has. So the free integral is an ordinary Gaussian, its determinant can be computed exactly, and the answer contains the whole of the theory's particle content: the number three in the determinant's exponent is the three polarizations of the massive vector, and the eigenvalue that sits outside the cube is the ghost.
 
-Three facts organise the article, and the first is the one the massless case does not have. The mass term is what makes the integral exist. At $\nu_m=0$ the Proca operator has the four-dimensional kernel of pure gradients, the Gaussian's longitudinal eigenvalue vanishes, and the integral is the volume of the symmetry group — which is why the Maxwell integral needs the Faddeev–Popov construction of *The Gauge Field Path Integral in Biquaternionic Form* and the Proca one needs nothing. No fixing condition, no Faddeev–Popov determinant, no ghost field, no parameter. The mass does all of it, and it does it in one term.
+Three facts organise the article, and the first is the one the massless case does not have. The mass term is what makes the integral exist. At $\nu_m=0$ the Proca operator has the four-dimensional kernel of pure gradients, the Gaussian's longitudinal eigenvalue vanishes, and the integral is the volume of the symmetry group — which is why the Maxwell integral needs the Faddeev–Popov construction of *The Connection Path Integral in Biquaternionic Form* and the Proca one needs nothing. No fixing condition, no Faddeev–Popov determinant, no ghost field, no parameter. The mass does all of it, and it does it in one term.
 
 The second fact is the operator's split, and it is exact in the algebra's own letters. The Proca operator is $P=\Box_\Phi-4\pi^{2}\nu_m^{2}-\tilde\nabla_\Phi D$ with $D\tilde A_\Phi=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ the divergence. The object $D$ and the gradient $\tilde\nabla_\Phi$ are the two canonical operators the algebra supplies, so the longitudinal projector $P_L=\tilde\nabla_\Phi\Box_\Phi^{-1}D$ needs no frame, no polarisation vector and no choice. Then
 
@@ -255,12 +255,12 @@ The saddle is the classical field, whose transverse part propagates and whose lo
 - *The Proca Equation in Biquaternionic Polar Variables*, for the two-branch word and the logarithmic derivative.
 - *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form*, for the scalar field integral whose determinant this one cubes.
 - *The Path Integral and the Dirac Equation in Biquaternionic Form*, for the fermionic integral, where the statistics is the issue and here it is not.
-- *The Gauge Field Path Integral in Biquaternionic Form*, for the Faddeev–Popov construction that the massless limit would require.
+- *The Connection Path Integral in Biquaternionic Form*, for the Faddeev–Popov construction that the massless limit would require.
 - *The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form*, for the non-abelian case and the ghost fields.
 - *The Third Polarization and the Self-Dual Split of the Massive Field Strength*, for the third state's disappearance in the massless limit.
 - *Canonical Quantization of the Biquaternion Proca Field*, for the operator route to the same three states.
 - R. P. Feynman, "The Quantum Theory of Gravitation," *Acta Physica Polonica* 24 (1963) 697, for the massive vector propagator and its longitudinal term.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the Proca propagator, the determinant and the massless limit's singularity.
-- S. Weinberg, *The Quantum Theory of Fields I* (Cambridge, 1995), for the counting of states and the absence of a gauge parameter.
+- S. Weinberg, *The Quantum Theory of Fields I* (Cambridge, 1995), for the counting of states and the absence of a parameter.
 - M. Veltman, *Diagrammatica* (Cambridge, 1994), for the massive vector's longitudinal mode and its coupling to the divergence.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the material sector, its anti-Hermitian elements and the Helmholtz decomposition in the algebra.

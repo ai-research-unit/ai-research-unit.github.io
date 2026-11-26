@@ -66,7 +66,7 @@ $$
 \{\text{frames}\}\longrightarrow\{\text{roots}\},\qquad (E_{ij})\longmapsto\sum_{i}\omega_{i}E_{ii},
 $$
 
-and the fibre is the gauge of §*The Gauge* below.
+and the fibre is the gauge of §*The Indefinite Form* below.
 
 **The standard frame.** For the standard basis $v_{i}=e_{i}$ the frame is the standard matrix-unit frame $E_{ij}$, with $E_{ii}=\operatorname{diag}(0,\dots,1,\dots,0)$. Its root is $H_{0}=\operatorname{diag}(1,\omega,\omega^{2})$.
 
@@ -117,7 +117,7 @@ $$
 E_{13}'=E_{12}'E_{23}'=\lambda_{1}\lambda_{2}E_{13}.
 $$
 
-There is no independent scalar on $E_{13}$: the third scalar is the product of the first two. This is the cocycle of §*The Gauge*.
+There is no independent scalar on $E_{13}$: the third scalar is the product of the first two. This is the cocycle of §*The Indefinite Form*.
 
 **The two simple nilpotents are the simple root vectors.** In the basis of the root, $E_{12}$ and $E_{23}$ are the root vectors of the two simple roots of $\mathfrak{sl}_{3}$, and $E_{13}$ is the root vector of the highest root, whose weight is the sum of the two simple weights. The composite is therefore the highest-root vector, and its gauge weight is the product $\lambda_{1}\lambda_{2}$ of the two simple weights. The lower triangular pair $E_{21},E_{32}$ carries the negative roots, with the composite $E_{31}=E_{32}E_{21}$.
 
@@ -131,7 +131,7 @@ $$
 
 The products are checked directly: $N_{1}^{2}=N_{2}^{2}=0$, $N_{1}N_{2}=E_{13}$, $N_{2}N_{1}=0$. The algebra $\mathfrak{n}_{+}$ is the strictly upper triangular algebra, of dimension three; its cube is zero.
 
-## The Gauge
+## The Indefinite Form
 
 **Definition.** Let $t_{1},t_{2},t_{3}\in\mathbb{C}^{\times}$ and let $D=\operatorname{diag}(t_{1},t_{2},t_{3})$. The **gauge transformation** of the frame is
 
@@ -244,7 +244,7 @@ $$
 T=T_{GL}/(T_{GL}\cap\mathbb{C}^{\times}I)\cong(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2},
 $$
 
-which is a maximal torus of $PGL_{3}$, of dimension two. The gauge of §*The Gauge* is exactly this torus acting by conjugation on the frame; the root vectors $E_{ij}$ are the weight vectors, of weights $t_{i}/t_{j}$, and the simple nilpotents $E_{12},E_{23}$ carry the two simple roots. The composite $E_{13}$ carries the highest root, the sum of the two simple roots in the character lattice.
+which is a maximal torus of $PGL_{3}$, of dimension two. The gauge of §*The Indefinite Form* is exactly this torus acting by conjugation on the frame; the root vectors $E_{ij}$ are the weight vectors, of weights $t_{i}/t_{j}$, and the simple nilpotents $E_{12},E_{23}$ carry the two simple roots. The composite $E_{13}$ carries the highest root, the sum of the two simple roots in the character lattice.
 
 **The root system.** The weights $t_{i}/t_{j}$ for $i\neq j$ are the six roots of $A_{2}$, and the two simple ones are $\alpha_{1}=t_{1}/t_{2}$ and $\alpha_{2}=t_{2}/t_{3}$; the highest root is $\alpha_{1}\alpha_{2}=t_{1}/t_{3}$. The gauge parameters $\lambda_{1},\lambda_{2}$ are the values of the two simple roots, and the composite weight is their product. The root system is the classical $A_{2}$ of $PGL_{3}$; the frame is a point of the group, and the gauge is the torus that fixes the root.
 

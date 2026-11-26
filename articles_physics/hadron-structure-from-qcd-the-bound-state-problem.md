@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The standing of this article.** Everything below is standard theory, written in the corpus's coordinates and notation. It is **standard input**, not a framework result. Colour is the sharpest declared boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), no compact gauge algebra inside $\mathbb{B}$ has real dimension above four and no $\mathbb{B}$-module has odd complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is transcribed, and the article says so before it computes anything.
+**The standing of this article.** Everything below is standard theory, written in the corpus's coordinates and notation. It is **standard input**, not a framework result. Colour is the sharpest declared boundary in this corpus: by [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), no compact algebra inside $\mathbb{B}$ has real dimension above four and no $\mathbb{B}$-module has odd complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is transcribed, and the article says so before it computes anything.
 
 **What this article is actually about.** The previous four articles computed things that perturbation theory can reach: a running coupling, a set of densities, a set of cross sections, and a colour count. This one computes the one number that perturbation theory cannot reach, and it explains why. The proton's mass is the cleanest demonstration in physics that a quantum field theory can generate a scale it does not contain — and the demonstration is not a metaphor, it is a computation that agrees with the measured number to one per cent.
 
@@ -356,7 +356,7 @@ The framework represents the proton, the condensate, the anomaly and the winding
 - [The Proton in Biquaternionic Form](the-proton-in-biquaternionic-form.html). The effective field, the charge operator, and the compositeness the framework does not represent.
 - [The Neutron in Biquaternionic Form](the-neutron-in-biquaternionic-form.html). Neutrality, the magnetic moment, and the accounting.
 - [The Skyrme Model and the Topological Baryon in Biquaternionic Form](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html). The soliton route and its $30\%$ truncation error.
-- [Lattice Gauge Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). The formulation behind the numerical route.
+- [Lattice Connection Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). The formulation behind the numerical route.
 - [The Parton Model and Deep Inelastic Scattering](the-parton-model-and-deep-inelastic-scattering.html). The Gross–Llewellyn Smith sum rule, whose spin analogue is the Bjorken rule here.
 - [Jets, the QCD Cross Section and the Infrared Structure](jets-the-qcd-cross-section-and-the-infrared-structure.html). $\alpha_s$ from event shapes at the $Z$, and the resummation the moments do not need.
 - [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The Lagrangian whose trace is the anomaly.

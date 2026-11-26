@@ -8,7 +8,7 @@
 
 - **It fixes the fermion masses up to two numbers.** $y$ has eight real parameters, six of them are rotations that nothing in the model can see, and **two survive: the eigenvalues.**
 - **It ties the lepton mass to the quark mass, with a ratio of three.** The condensate is $v\operatorname{diag}(-3,1,1,1)$, so a fermion on the lepton line is three times heavier than a fermion on a colour line with the same eigenvalue. **$m_{\ell}=3m_{q}$ within a copy**, and that is the sector's one quantitative statement.
-- **It cannot produce a mixing angle or a phase.** One matrix, one mass basis, and no gauge vertex that changes the copy index. **The sector conserves $CP$ exactly**, and the reason is a count.
+- **It cannot produce a mixing angle or a phase.** One matrix, one mass basis, and no connection vertex that changes the copy index. **The sector conserves $CP$ exactly**, and the reason is a count.
 - **It cannot produce a hierarchy among the three generations, because the model has no generation index.** The copy index is a two-valued degeneracy, not a family label; **the three generations are not in this model.**
 
 **The honest verdict, stated first.** $m_{e}=3m_{d}$ is wrong by a factor $27$, so **the model's Yukawa sector is its sharpest falsifiable statement and it is falsified.** That is not an arithmetic error and it is not patched below: it is the boundary of the model, and it is the reason a second condensate and a second matrix are needed below $M_C$.
@@ -167,7 +167,7 @@ $$
 
 - [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The content, the condensate, and the ledger this sector sits in.
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). Why the model is closed under $C$ and $CP$, and where the copy index sits.
-- [The Fermion–Gauge Vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The proof that no vertex carries the copy index, which is the reason no phase survives.
+- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The proof that no vertex carries the copy index, which is the reason no phase survives.
 - [The Feynman Rules](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The Lagrangian this sector is one line of.
 - [An Introduction to Flavour](an-introduction-to-flavour.html). What a generation index would have to supply, and why this model has none.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The same condensate, read on the gauge side.

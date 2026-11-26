@@ -355,7 +355,7 @@ so $a$ is invariant and $c$ is not; the vanishing of $c$ is invariant, since $c=
 
 The physical reading is that a state has one invariant magnitude and one dirigible part. The diagonal coefficient is a complex number attached to the idempotent; the mixed part is an element of a line, which is a direction with a magnitude that the gauge can absorb. What is invariant is the magnitude of $a$ and the ray of ${\jmath}_+$, not the two numbers of a column.
 
-The probabilities are invariant only after the gauge is cut. The Hermitian norm $\tfrac12(|a|^{2}+|c|^{2})$ is invariant under the circle $|t|=1$ and not under the full $\mathbb{C}^{\times}$. So the two entries of a column carry the two probabilities in the Hermitian gauge, and in that gauge only. The modulus of the gauge is not a symmetry of the norm, and a computation that uses the full gauge and the norm together is inconsistent.
+The probabilities are invariant only after the fixing condition is cut. The Hermitian norm $\tfrac12(|a|^{2}+|c|^{2})$ is invariant under the circle $|t|=1$ and not under the full $\mathbb{C}^{\times}$. So the two entries of a column carry the two probabilities in the Hermitian gauge, and in that gauge only. The modulus of the fixing condition is not a symmetry of the norm, and a computation that uses the full gauge and the norm together is inconsistent.
 
 The Hermitian gauge is available when the family and the basis are Hermitian, and that is one case of the section and not the general one. In the general case there is no invariant norm and no probability, and the entry says so.
 

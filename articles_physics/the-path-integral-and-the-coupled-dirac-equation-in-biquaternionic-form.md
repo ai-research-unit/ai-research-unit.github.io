@@ -2,7 +2,7 @@
 
 ## Introduction
 
-*The Path Integral and the Dirac Equation in Biquaternionic Form* constructs the sum over worldlines that produces the free Dirac propagator. This article constructs the same sum for the coupled pair, with the gradient replaced by the covariant derivative of *The Gauge Principle in Biquaternionic Form*. The weight is $e^{\frac{2\pi iS}{h}}$, the output is the propagator, and the question is what the connection does to the sum over histories.
+*The Path Integral and the Dirac Equation in Biquaternionic Form* constructs the sum over worldlines that produces the free Dirac propagator. This article constructs the same sum for the coupled pair, with the gradient replaced by the covariant derivative of *The Minimal Coupling in Biquaternionic Form*. The weight is $e^{\frac{2\pi iS}{h}}$, the output is the propagator, and the question is what the connection does to the sum over histories.
 
 The coupled pair, and the covariant derivative.
 
@@ -20,8 +20,8 @@ The finding, in one sentence. The worldline integral sorts the connection into t
 
 Four consequences follow, and each is stated exactly or checked.
 
-- A potential with zero field strength is a boundary term along every path, so it multiplies every history by the same phase and factors out of the sum. The coupled kernel is then the free kernel times two endpoint phases, and nothing else changes. That is the path-integral form of "a constant potential is pure gauge".
-- The factoring holds only for a symmetric discretisation of the gauge term. A left-endpoint rule gives a defect linear in the step, and the defect is the lattice statement that the gauge term must be a coboundary to be removable.
+- A potential with zero field strength is a boundary term along every path, so it multiplies every history by the same phase and factors out of the sum. The coupled kernel is then the free kernel times two endpoint phases, and nothing else changes. That is the path-integral form of "a constant potential is pure gradient".
+- The factoring holds only for a symmetric discretisation of the connection term. A left-endpoint rule gives a defect linear in the step, and the defect is the lattice statement that the connection term must be a coboundary to be removable.
 - Two histories with the same endpoints differ by the flux through the loop they enclose. The connection is therefore invisible to one path and visible only between two, and this is the only channel by which the one-form reaches an amplitude.
 - The semiclassical evaluation gives the Lorentz path, a van Vleck determinant with no term linear in the field strength, and the spin transport along the Lorentz path.
 
@@ -41,13 +41,13 @@ $$
 
 and not the algebra product. The distinction is forced by the coordinates: the temporal slot of the position is $ir'_t$, and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so a product would carry a factor of $i$ that no local transformation produces. The one-form is a real number at each point of the worldline.
 
-The sign of the gauge term. The covariant derivative carries $+\frac{2\pi iϙ}{h}\tilde A_\Phi$. A field redefinition then removes a constant potential only with the phase $e^{-iϙ\tilde A_\Phi\cdot(\tilde R_\Phi-\tilde R_{\Phi,i})\frac{2\pi}{h}}$, as §*The Exact Kernel in a Field-Free Potential* shows by one differentiation. The worldline weight therefore carries the gauge term with a minus,
+The sign of the connection term. The covariant derivative carries $+\frac{2\pi iϙ}{h}\tilde A_\Phi$. A field redefinition then removes a constant potential only with the phase $e^{-iϙ\tilde A_\Phi\cdot(\tilde R_\Phi-\tilde R_{\Phi,i})\frac{2\pi}{h}}$, as §*The Exact Kernel in a Field-Free Potential* shows by one differentiation. The worldline weight therefore carries the connection term with a minus,
 
 $$
 S_{\mathrm{gco}}[x]=-\!ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi ,
 $$
 
-and this is the corpus's sign and not the textbook sign. *The Coupled Dirac Equation in Biquaternionic Form* records the reason: the parent's opposite convention $\partial_{\imath}-\frac{2\pi iϙ}{h}A_{\imath}$ is the same coupling with the opposite sign of $ϙ$, and this article inherits the gauge principle's sign and does not flip it. A reader who carries $+q\!\int\!A\cdot\mathrm{d}x$ from a textbook has the same physics and the opposite charge, and the free article's §*The Spin Factor in a Background Field* writes exactly that with a generic $q$: it is this article's term with $q=-ϙ$.
+and this is the corpus's sign and not the textbook sign. *The Coupled Dirac Equation in Biquaternionic Form* records the reason: the parent's opposite convention $\partial_{\imath}-\frac{2\pi iϙ}{h}A_{\imath}$ is the same coupling with the opposite sign of $ϙ$, and this article inherits the minimal coupling's sign and does not flip it. A reader who carries $+q\!\int\!A\cdot\mathrm{d}x$ from a textbook has the same physics and the opposite charge, and the free article's §*The Spin Factor in a Background Field* writes exactly that with a generic $q$: it is this article's term with $q=-ϙ$.
 
 The two kernels. The propagator is the pair $\mathcal S_L,\mathcal S_R$ of *The Path Integral and the Dirac Equation in Biquaternionic Form*, now satisfying the two lines with the covariant operators,
 
@@ -75,11 +75,11 @@ $$
 \mathcal S(x,x_2)=\int_0^\infty\mathrm{d}T\int_{x}^{x_2}\mathcal{D}x\;\mathcal{F}[x]\;\exp\!\Bigl(\frac{2\pi i}{h}\bigl(S_0[x]+S_{\mathrm{gco}}[x]\bigr)\Bigr),
 $$
 
-with $\mathcal{F}$ the spin factor. The odd variables are integrated at fixed $x(\tau)$, so the gauge term does not reach them: it is a functional of the material trajectory alone.
+with $\mathcal{F}$ the spin factor. The odd variables are integrated at fixed $x(\tau)$, so the connection term does not reach them: it is a functional of the material trajectory alone.
 
-**The gauge term is central, and that is the whole of its algebraic behaviour.** $S_{\mathrm{gco}}$ is a real number for every path. Its exponential is therefore a central element of modulus one, and multiplying the weight by a central element cannot reorder the path-ordered spin factor, cannot rescale it, and cannot rotate it. The connection multiplies the weight of a history; it does not enter the history's algebra. That one sentence is the worldline form of the polar companion's type table, and every statement below is a consequence of it.
+**The connection term is central, and that is the whole of its algebraic behaviour.** $S_{\mathrm{gco}}$ is a real number for every path. Its exponential is therefore a central element of modulus one, and multiplying the weight by a central element cannot reorder the path-ordered spin factor, cannot rescale it, and cannot rotate it. The connection multiplies the weight of a history; it does not enter the history's algebra. That one sentence is the worldline form of the polar companion's type table, and every statement below is a consequence of it.
 
-The two lines of the pair see conjugate gauge terms. The $L$ line's operator is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$, whose connection entry is $\tilde A_\Phi^{\natural}=A_te_t-\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}$. The two kernels therefore carry
+The two lines of the pair see conjugate connection terms. The $L$ line's operator is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$, whose connection entry is $\tilde A_\Phi^{\natural}=A_te_t-\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}$. The two kernels therefore carry
 
 $$
 S_{\mathrm{gco}}^{R}[x]=-\!ϙ\!\int\bigl(A_t\,\mathrm{d}r'_t+\textstyle\sum_{\imath\in\{x,y,z\}} A_{\imath}\,\mathrm{d}r_{\imath}\bigr),
@@ -87,30 +87,30 @@ S_{\mathrm{gco}}^{R}[x]=-\!ϙ\!\int\bigl(A_t\,\mathrm{d}r'_t+\textstyle\sum_{\im
 S_{\mathrm{gco}}^{L}[x]=-\!ϙ\!\int\bigl(A_t\,\mathrm{d}r'_t-\textstyle\sum_{\imath\in\{x,y,z\}} A_{\imath}\,\mathrm{d}r_{\imath}\bigr),
 $$
 
-by the two definitions and nothing else. For a purely electric potential the two gauge terms are equal, and the two lines accumulate the same phase. For a purely magnetic one they are opposite, and the two lines accumulate conjugate phases. The asymmetry is the conjugate operator's and not a choice, and it is the sum-over-histories reading of the element article's sentence that the conjugate entry is neither the negative of the entry nor a decomposition of it.
+by the two definitions and nothing else. For a purely electric potential the two connection terms are equal, and the two lines accumulate the same phase. For a purely magnetic one they are opposite, and the two lines accumulate conjugate phases. The asymmetry is the conjugate operator's and not a choice, and it is the sum-over-histories reading of the element article's sentence that the conjugate entry is neither the negative of the entry nor a decomposition of it.
 
-What the sum adds to the free one. One term in the exponent and nothing in the measure. The free article's §*The Spin Factor in a Background Field* already writes a gauge term and a curvature term; this article's contribution is to fix the gauge term's sign to the covariant derivative's and to work out what the sum then does, and the curvature term's placement on the spin is the free article's and is not redone here. The sorting of $A$ and $F$ is therefore not a new entry in the sum but a reading of where each of the two pieces already sits. Everything the one-form can do is decided by its cohomology on the space of paths, which is the subject of the next section.
+What the sum adds to the free one. One term in the exponent and nothing in the measure. The free article's §*The Spin Factor in a Background Field* already writes a connection term and a curvature term; this article's contribution is to fix the connection term's sign to the covariant derivative's and to work out what the sum then does, and the curvature term's placement on the spin is the free article's and is not redone here. The sorting of $A$ and $F$ is therefore not a new entry in the sum but a reading of where each of the two pieces already sits. Everything the one-form can do is decided by its cohomology on the space of paths, which is the subject of the next section.
 
 ## The One-Form and the Three Regimes
 
-The gauge term is the integral of a one-form along a curve, so its behaviour is decided by whether that one-form is closed and whether it is exact.
+The connection term is the integral of a one-form along a curve, so its behaviour is decided by whether that one-form is closed and whether it is exact.
 
-First regime: exact. The gauge term is a boundary term on every path. Let $\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$ for a real function $\Gamma$, so that the field strength vanishes. Then along any path
+First regime: exact. The connection term is a boundary term on every path. Let $\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$ for a real function $\Gamma$, so that the field strength vanishes. Then along any path
 
 $$
 -\!ϙ\!\int_{x_i}^{x_f}\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi
 =ϙ\bigl(\Gamma(x_f)-\Gamma(x_i)\bigr),
 $$
 
-by the fundamental theorem of calculus, for every path with the same endpoints. The gauge term is constant on the space of paths. It therefore factors out of the integral exactly, and the kernel is the free kernel times the two endpoint phases. No approximation enters: the statement is exact for every path.
+by the fundamental theorem of calculus, for every path with the same endpoints. The connection term is constant on the space of paths. It therefore factors out of the integral exactly, and the kernel is the free kernel times the two endpoint phases. No approximation enters: the statement is exact for every path.
 
-The check is a lattice check, and it is where the discretisation matters. A gauge term is a line integral, and a discretised worldline must choose a point of each segment at which to evaluate the potential. With the symmetric (midpoint) rule the telescoping is exact: over two hundred random eight-step paths with a quadratic $\Gamma$ the gauge term equals the boundary term to $2\times10^{-15}$. With the left-endpoint rule it does not: the defect is $6\times10^{1}$ at worst on the same paths, and on a fixed smooth path it halves as the step halves, $3.3\times10^{-1}$, $1.7\times10^{-1}$, $8.3\times10^{-2}$, $4.1\times10^{-2}$ for eight, sixteen, thirty-two and sixty-four steps.
+The check is a lattice check, and it is where the discretisation matters. A connection term is a line integral, and a discretised worldline must choose a point of each segment at which to evaluate the potential. With the symmetric (midpoint) rule the telescoping is exact: over two hundred random eight-step paths with a quadratic $\Gamma$ the connection term equals the boundary term to $2\times10^{-15}$. With the left-endpoint rule it does not: the defect is $6\times10^{1}$ at worst on the same paths, and on a fixed smooth path it halves as the step halves, $3.3\times10^{-1}$, $1.7\times10^{-1}$, $8.3\times10^{-2}$, $4.1\times10^{-2}$ for eight, sixteen, thirty-two and sixty-four steps.
 
-The rule is not a detail of the bookkeeping. The defect of the left-endpoint rule is $O(h)$ and path-dependent, so a lattice sum with that rule is not invariant at finite step and does not converge to an invariant limit without a counterterm. The symmetric rule makes the gauge term a coboundary exactly, at every step, on every path. That is the worldline version of the lattice-gauge statement that the link variable must sit on the link and not at its foot. **The two rules agree in the continuum and differ on the lattice, and the continuum statement is the one this article uses.**
+The rule is not a detail of the bookkeeping. The defect of the left-endpoint rule is $O(h)$ and path-dependent, so a lattice sum with that rule is not invariant at finite step and does not converge to an invariant limit without a counterterm. The symmetric rule makes the connection term a coboundary exactly, at every step, on every path. That is the worldline version of the lattice-gauge statement that the link variable must sit on the link and not at its foot. **The two rules agree in the continuum and differ on the lattice, and the continuum statement is the one this article uses.**
 
 Second regime: closed but not exact. The flux between two histories. Let $F=0$ in a region that is not simply connected. Then the one-form is closed and not exact, and its integral around a non-contractible loop is a nonzero number. On $\mathbb{R}^4$ no such loop exists, and the first regime covers every field-free potential. A region with a hole is a different matter, and the corpus's setting is $\mathbb{R}^4$: the statement below is about the structure of the sum and not about a physical solenoid.
 
-Third regime: not closed. The flux through the loop a path encloses. Let the field strength be nonzero. Take two histories with the same endpoints, $\gamma_1$ and $\gamma_2$. Their gauge terms differ by the integral around the closed loop $\gamma_1-\gamma_2$, and Stokes's theorem gives
+Third regime: not closed. The flux through the loop a path encloses. Let the field strength be nonzero. Take two histories with the same endpoints, $\gamma_1$ and $\gamma_2$. Their connection terms differ by the integral around the closed loop $\gamma_1-\gamma_2$, and Stokes's theorem gives
 
 $$
 S_{\mathrm{gco}}[\gamma_1]-S_{\mathrm{gco}}[\gamma_2]
@@ -120,7 +120,7 @@ $$
 
 with $\Sigma$ any surface the loop bounds. The relative weight of the two histories is therefore $e^{-\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h}}$ with $\digamma_{\mathrm{flx}}$ the flux. The connection is invisible to a single history and visible only between two, and the flux is the only channel by which the one-form reaches an amplitude.
 
-The check is exact for polygons. For a constant field strength in a two-dimensional model the gauge term of a polygonal loop equals the field strength times the enclosed area to $2\times10^{-16}$ over five random hexagons, and a two-path model with endpoints $(0,0)$ and $(2,0)$ gives a difference of $-0.480$ against a field-times-area of $-0.480$. Green's theorem is exact for a linear potential on a polygon, so the identity is algebraic and the number is a check on the arithmetic and the orientation.
+The check is exact for polygons. For a constant field strength in a two-dimensional model the connection term of a polygonal loop equals the field strength times the enclosed area to $2\times10^{-16}$ over five random hexagons, and a two-path model with endpoints $(0,0)$ and $(2,0)$ gives a difference of $-0.480$ against a field-times-area of $-0.480$. Green's theorem is exact for a linear potential on a polygon, so the identity is algebraic and the number is a check on the arithmetic and the orientation.
 
 What the three regimes say together. The connection has exactly two ways to change a sum over histories: through the endpoints, when the potential is exact, and through the enclosed flux, when it is not. Neither channel touches the spin factor, and neither touches the measure. A field with no flux is a change of variable on the space of paths and not a force.
 
@@ -141,7 +141,7 @@ $$
 \boxed{\;\mathcal S^{A}(x_f,x_i)=e^{-iϙ\tilde A_\Phi\cdot(\tilde R_{\Phi,f}-\tilde R_{\Phi,i})\frac{2\pi}{h}}\;\mathcal S^{0}(x_f,x_i)\;}
 $$
 
-for every constant potential, component by component, exactly. The result agrees with §*The One-Form and the Three Regimes*: a constant potential has zero field strength, its gauge term is a boundary term along every path, and the boundary term is this phase. The two routes to the statement are independent — one differentiates the operator, the other sums over paths — and they agree, which is the consistency the two articles owe each other.
+for every constant potential, component by component, exactly. The result agrees with §*The One-Form and the Three Regimes*: a constant potential has zero field strength, its connection term is a boundary term along every path, and the boundary term is this phase. The two routes to the statement are independent — one differentiates the operator, the other sums over paths — and they agree, which is the consistency the two articles owe each other.
 
 What the phase means. The exponent is $ϙ(A_t\Delta r'_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\Delta r_{\imath})\frac{2\pi}{h}$. Its temporal slot is the energy shift $E\mapsto E+ϙcA_t$ of the coupled equation, written as a phase over the elapsed coordinate time; its spatial slots are the momentum shift $\vec p\mapsto\vec p-q\vec A$, written as a phase over the displacement. The classical substitution of the element article is one phase in the sum, and the algebra states it with one sign because the scalar and vector potentials are the two slot types of one element.
 
@@ -163,13 +163,13 @@ which is the Lorentz equation with every index low, $\ddot R_{\imath}=-2ϙ\sum_{
 
 The check distinguishes the coefficient from its half. On a two-dimensional model with a constant field strength and a Euclidean metric, where the stationary point is a minimum and the comparison is unambiguous, the Euler–Lagrange residual of the path satisfying $\ddot R=-2ϙF\dot R$ falls as $1.7\times10^{-3}$, $4.3\times10^{-4}$, $1.1\times10^{-4}$, $2.7\times10^{-5}$ for ten, twenty, forty and eighty steps, which is second order. The path satisfying $\ddot R=-ϙF\dot R$ keeps a residual of $4.0\times10^{-1}$ at every resolution. The stationary path is the first and not the second, and the Euclidean case is used for the check only: the equation displayed above is the same algebra in the corpus's metric, and the coefficient two is independent of the signs.
 
-The phase is the classical action with the gauge term. At the stationary path
+The phase is the classical action with the connection term. At the stationary path
 
 $$
 \theta_{\mathrm{act}}=\frac{2\pi}{h}\bigl(S_0[x_{\mathrm{cl}}]+S_{\mathrm{gco}}[x_{\mathrm{cl}}]\bigr),
 $$
 
-and the gauge term's contribution is $-ϙ\!\int\!\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ evaluated on the Lorentz path. For an exact potential it is a boundary term and the phase is the free one plus the endpoint phases. For a field strength it is the flux through the surface between the Lorentz path and the straight line, and it is the part of the phase that the classical motion adds.
+and the connection term's contribution is $-ϙ\!\int\!\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ evaluated on the Lorentz path. For an exact potential it is a boundary term and the phase is the free one plus the endpoint phases. For a field strength it is the flux through the surface between the Lorentz path and the straight line, and it is the part of the phase that the classical motion adds.
 
 The determinant has no term linear in the field strength. The Gaussian fluctuations about the Lorentz path give the van Vleck factor, which is the inverse square root of the determinant of the second variation. That operator is the free one plus a term linear in $F$, the term being $-ϙ\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}\dot R_{\jmath}\delta R_{\imath}$ after integration by parts: a potential term and not a derivative one. Its contribution to the determinant's logarithm is $-\mathrm{tr}(GV)$, with $G$ the free Jacobi kernel, and $G$ is symmetric under the exchange of the two worldline times while $F$ is antisymmetric in its two indices, so the trace vanishes. **The determinant is even in the field strength**, and the amplitude has no first-order response to a weak field.
 
@@ -181,7 +181,7 @@ The rotor is the transport along the Lorentz path. The spin factor's curvature t
 
 ## Composition, and Why the Coupling Does Not Obstruct It
 
-The gauge term is additive over concatenation. For a path that passes through an intermediate point $y$,
+The connection term is additive over concatenation. For a path that passes through an intermediate point $y$,
 
 $$
 \int_{x_i}^{x_f}\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi
@@ -189,13 +189,13 @@ $$
 +\int_{y}^{x_f}\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi ,
 $$
 
-because a line integral along a concatenated curve is the sum of its pieces. The gauge term therefore splits at the intermediate point in exactly the way the free action splits, and the composition law of the proper-time kernels survives the coupling unchanged:
+because a line integral along a concatenated curve is the sum of its pieces. The connection term therefore splits at the intermediate point in exactly the way the free action splits, and the composition law of the proper-time kernels survives the coupling unchanged:
 
 $$
 \int\mathrm{d}^4y\;K^{\mathrm{gco}}_{T_1}(x,y)\,K^{\mathrm{gco}}_{T_2}(y,x_2)=K^{\mathrm{gco}}_{T_1+T_2}(x,x_2).
 $$
 
-The composition law is a statement about additivity and not about the algebra. The free article's composition argument uses the additivity of the kinetic and mass terms and the path ordering of the spin factor; the coupling adds a third additive term and changes neither of the other two. **A coupling that is the integral of a one-form composes**, and a coupling that were not a line integral — an interaction depending on the path's curvature, say — would not. That is the sharp form of the statement, and it is why the worldline formulation of gauge theory needs no special care at the composition step.
+The composition law is a statement about additivity and not about the algebra. The free article's composition argument uses the additivity of the kinetic and mass terms and the path ordering of the spin factor; the coupling adds a third additive term and changes neither of the other two. **A coupling that is the integral of a one-form composes**, and a coupling that were not a line integral — an interaction depending on the path's curvature, say — would not. That is the sharp form of the statement, and it is why the worldline formulation of connection theory needs no special care at the composition step.
 
 The flux is what composes additively in the amplitude. For two histories differing by a loop, the relative phase is the flux through the loop, and for two loops sharing an edge the fluxes add with the orientations. A chain of small loops therefore accumulates the phase linearly, and the composition of kernels at successive points is the statement that the phase accumulates along the path rather than at the junctions.
 
@@ -210,9 +210,9 @@ $$
 
 and leaves the corner weight alone. The corner is the mass insertion. The mass term carries no derivative, so the substitution that dresses the steps cannot reach it, and it is invariant under the local central phase without help — which is why the coupling is a repair of the kinetic term alone in *The Lagrangian and the Coupled Dirac Equation*. The corner is untouched and the step is dressed, and that is the discrete image of the sorting of the connection into the phase.
 
-The lattice gauge invariance is exact and needs no limit. Under $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$, each step's phase changes by the difference of $\frac{2\pi ϙ\Gamma}{h}$ at the step's two ends, and the product over the steps of a path telescopes to the two endpoint factors. The sum over paths is therefore invariant at every step size, with no continuum limit taken and no counterterm added. **The checkerboard is exactly gauge invariant, and the continuum integral is only formally so**, which is the correct order of the two statements and the reason the lattice formulation of gauge theory exists.
+The lattice local invariance is exact and needs no limit. Under $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$, each step's phase changes by the difference of $\frac{2\pi ϙ\Gamma}{h}$ at the step's two ends, and the product over the steps of a path telescopes to the two endpoint factors. The sum over paths is therefore invariant at every step size, with no continuum limit taken and no counterterm added. **The checkerboard is exactly invariant, and the continuum integral is only formally so**, which is the correct order of the two statements and the reason the lattice formulation of connection theory exists.
 
-What the discrete model shows that the continuum does not. The link phase is evaluated on the link, which is the symmetric rule of §*The One-Form and the Three Regimes*; a rule that evaluated the potential at the step's foot would break the telescoping and the lattice invariance with it. The checkerboard therefore exhibits, in a model with finitely many paths, the statement that the gauge term must be a coboundary term to be removable. The step phase is the coboundary and the corner is the mass, and the two are the two ingredients of the discrete propagator.
+What the discrete model shows that the continuum does not. The link phase is evaluated on the link, which is the symmetric rule of §*The One-Form and the Three Regimes*; a rule that evaluated the potential at the step's foot would break the telescoping and the lattice invariance with it. The checkerboard therefore exhibits, in a model with finitely many paths, the statement that the connection term must be a coboundary term to be removable. The step phase is the coboundary and the corner is the mass, and the two are the two ingredients of the discrete propagator.
 
 The two lines in one dimension. The checkerboard is a two-dimensional model, and its one field-strength component is the electric one. For a purely electric potential the conjugate entry $\tilde A_\Phi^{\natural}$ equals $\tilde A_\Phi$, so the two lines of the pair accumulate the same step phases and the two directions of motion are weighted alike. A potential with a spatial slot reverses the entry and gives the two lines conjugate phases. The one-dimensional model therefore realises the electric case of the conjugate-entry asymmetry and not the magnetic one, and the reason is that a magnetic field needs two spatial directions.
 
@@ -220,10 +220,10 @@ The two lines in one dimension. The checkerboard is a two-dimensional model, and
 
 Adds.
 
-- The worldline integral of the coupled pair, with the gauge term as one functional of the trajectory and with its sign fixed by the covariant derivative's own sign, checked by one differentiation.
+- The worldline integral of the coupled pair, with the connection term as one functional of the trajectory and with its sign fixed by the covariant derivative's own sign, checked by one differentiation.
 - The sorting of the connection into a one-form in the phase and a curvature in the spin factor, which is the structural statement of the article and the path-integral form of the polar companion's type table.
 - The exact factoring for every field-free potential, with the two endpoint phases, and the consequence that the modulus, the pole structure and the spin transport are unchanged by a constant potential.
-- The lattice statement that only a symmetric discretisation makes the gauge term a coboundary, with the defect of the left-endpoint rule measured at first order in the step.
+- The lattice statement that only a symmetric discretisation makes the connection term a coboundary, with the defect of the left-endpoint rule measured at first order in the step.
 - The flux between two histories as the only channel from the one-form to an amplitude, exact for polygons.
 - The Lorentz path from stationary phase, the determinant's evenness in the field strength, and the placement of the spin transport at the curvature.
 
@@ -235,7 +235,7 @@ Adds.
 
 2. The flux and the rotor at a caustic. The two channels — the phase through the flux, the rotor through the curvature — are independent in the semiclassical order computed here. Where classical paths cross, the van Vleck determinant diverges and the phase is stationary with respect to two paths at once. Whether the interference of the two paths' rotors is then a phase or a genuine rotation is not settled by the free or the constant-potential case.
 
-3. The non-abelian connection. Every statement above uses the centality of the components. A connection with coefficients in the algebra does not commute with the field, the gauge term does not factor at a constant potential, and the type table of the polar companion has no analogue. What replaces the sorting of $A$ and $F$ there is open, and the mixed-insertion obstruction of the element article is the place to start.
+3. The non-abelian connection. Every statement above uses the centality of the components. A connection with coefficients in the algebra does not commute with the field, the connection term does not factor at a constant potential, and the type table of the polar companion has no analogue. What replaces the sorting of $A$ and $F$ there is open, and the mixed-insertion obstruction of the element article is the place to start.
 
 4. The measure. The field version of this integral, over commuting biquaternion fields, has no constructed measure in four dimensions, as in the free article. The worldline integral's Trotter limit is well defined and the field integral's is not, and the coupled case inherits the gap without widening it.
 
@@ -260,14 +260,14 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 | $\tilde A_\Phi=A_te_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}$ | Potential biquaternion, real coefficients in the abelian case |
 | $\tilde A_\Phi^{\natural}=A_te_t-\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath}$ | Its conjugate; equal for a purely electric potential, opposite for a purely magnetic one |
 | $\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi=A_t\mathrm{d}r'_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\mathrm{d}r_{\imath}$ | The real one-form; the algebra product is not used |
-| $S_{\mathrm{gco}}[x]=-ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ | The gauge term of the worldline action; its sign follows the covariant derivative's |
+| $S_{\mathrm{gco}}[x]=-ϙ\!\int\tilde A_\Phi\cdot\mathrm{d}\tilde R_\Phi$ | The connection term of the worldline action; its sign follows the covariant derivative's |
 | $F_{\imath\jmath}=\partial A_{\jmath}/\partial R_{\imath}-\partial A_{\imath}/\partial R_{\jmath}$ | Field strength; the curvature, and the only object that reaches the spin factor |
 | $\digamma_{\mathrm{flx}}$ | Flux through the loop two histories enclose |
 | $\mathcal S_L,\mathcal S_R$ | The two components of the coupled propagator, elements of $\mathbb{B}$ |
 | $\mathcal S^{A},\mathcal S^{0}$ | The kernels in a constant potential and in no potential |
 | $\mathcal{F}[x]$ | Spin factor, the path-ordered algebra-valued weight |
 | $\Gamma$ | Real phase function; $\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$ for an exact potential |
-| $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Gauge angle |
+| $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Connection angle |
 | $\delta_{\imath\jmath}$ | The metric on the four slots, used in the Lorentz equation and in the kinetic normalisation |
 | $T$ | Proper time; $x(\tau)$ the worldline |
 | $\nu_m=\frac{mc}{h}$ | Mass parameter |
@@ -279,12 +279,12 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 - [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html), for the action used here and for the current that the action produces.
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), for the equation, the covariance proof, and the constant-potential solutions.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the type table that this article's sorting of $A$ and $F$ reproduces from the worldline side.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the covariant derivative, the gauge law and the sign convention inherited here.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the covariant derivative, the transformation law and the sign convention inherited here.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the composition of the rotor's rate with the frame's transport that gives the Larmor precession.
-- J. Schwinger, "On gauge invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the proper-time kernel in a constant field and the even determinant.
+- J. Schwinger, "On local invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the proper-time kernel in a constant field and the even determinant.
 - J. Schwinger, "Brownian motion of a quantum oscillator," *Journal of Mathematical Physics* **2** (1961) 407–432, for the proper-time method with a background field.
-- M. G. Schmidt and C. Schubert, "The worldline path integral approach to Feynman graphs," in *Loops and Legs in Quantum Field Theory* (2000), and C. Schubert, "Perturbative quantum field theory in the string-inspired formalism," *Physics Reports* **355** (2001) 73–234, for the worldline treatment of the gauge term and the spin factor in a background.
+- M. G. Schmidt and C. Schubert, "The worldline path integral approach to Feynman graphs," in *Loops and Legs in Quantum Field Theory* (2000), and C. Schubert, "Perturbative quantum field theory in the string-inspired formalism," *Physics Reports* **355** (2001) 73–234, for the worldline treatment of the connection term and the spin factor in a background.
 - F. A. Berezin and M. S. Marinov, "Particle spin dynamics as the Grassmann variant of classical mechanics," *Annals of Physics* **104** (1977) 336–362, for the spin factor and its field-strength coupling.
 - L. Brink, P. Di Vecchia and P. Howe, "A Lagrangian formulation of the classical and quantum dynamics of spinning particles," *Nuclear Physics B* **118** (1977) 76–94, for the supersymmetric worldline action used here.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the coupled Dirac propagator and the constant-potential solutions.
-- H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 5th edition, 2009), for the discretisation of the gauge term and the difference between the symmetric and the endpoint rules.
+- H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 5th edition, 2009), for the discretisation of the connection term and the difference between the symmetric and the endpoint rules.

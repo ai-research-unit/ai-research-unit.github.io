@@ -13,7 +13,7 @@ G=\mathrm{SU}(4),\qquad
 \;}
 $$
 
-**One group, fifteen generators, one declaration.** The fifteen split, *below the transition*, as eight of colour, one abelian direction and six leptoquarks. **Above the transition there is no colour group and no colour label**: there are four lines of one quartet, and the only statement the algebra does not make is which of the four lines is the lepton. **The labels themselves are coordinates, and [The Colours in $\mathrm{SU}(4)$](the-colours-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html) prints all fifteen and shows why none of them is a charge.**
+**One group, fifteen generators, one declaration.** The fifteen split, *below the transition*, as eight of colour, one abelian direction and six leptoquarks. **Above the transition there is no colour group and no colour label**: there are four lines of one quartet, and the only statement the algebra does not make is which of the four lines is the lepton. **The labels themselves are coordinates, and Gauge Fields: An Introduction to Quantum Theory prints all fifteen and shows why none of them is a charge.**
 
 **Why the group is one and not three.** The fifteen contains a real $\mathfrak{so}(4)$, spanned by the six real antisymmetric planes, and those six directions look like two weak triples. **They are not.** A factor is a group; a subalgebra is a subspace of the algebra, and reading a subalgebra as a factor is what names three groups where the algebra has one. **The six arrays are $\mathfrak{so}(4)$ in a rotated basis.** §*The Real $\mathfrak{so}(4)$ Inside the Fifteen* computes which one this is, and the next section of the corpus says what the weak force actually is.
 
@@ -23,7 +23,7 @@ $$
 
 **What it does not establish.** That the algebra derives the group — it derives the group *given* the carrier. That the lepton line is the fourth colour — that is declaration (A). That the model is chiral where it gauges — **it is not, and §*The Chiral Wall* shows that this is now a theorem about the model rather than a caveat about a representation.**
 
-**What is absent here.** No weak pair, no hypercharge, no photon, no $W$, no $Z$, no rank five. **Those arrive at $M_C$, where colour, one abelian factor and two weak factors describe what the vacuum leaves**, and that is the subject of the next section of the corpus. This article is the gauge content of the model above that scale, and it is complete as a statement of that content: **the scalar sector is [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html), and the fermion masses are [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html), whose verdict is that the ratio $m_\ell=3m_q$ is falsified.**
+**What is absent here.** No weak pair, no hypercharge, no photon, no $W$, no $Z$, no rank five. **Those arrive at $M_C$, where colour, one abelian factor and two weak factors describe what the vacuum leaves**, and that is the subject of the next section of the corpus. This article is the gauge content of the model above that scale, and it is complete as a statement of that content: **the scalar sector is $W$, and the fermion masses are $Z$, whose verdict is that the ratio $m_\ell=3m_q$ is falsified.**
 
 **Where the rest is.** The counts and the arrays are [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html) and [The Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The transition is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the weak force is, and why it is not a piece of the fifteen, is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The couplings are [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html).
 
@@ -102,7 +102,7 @@ $$
 2(+1)+2(-1)=0 .
 $$
 
-**Zero by pairing, not by a numerical accident.** The spectrum is vector-like in pairs, so the gauge anomaly cancels identically — and so does every mixed coefficient, because there is only one factor and nothing to mix with.
+**Zero by pairing, not by a numerical accident.** The spectrum is vector-like in pairs, so the anomaly cancels identically — and so does every mixed coefficient, because there is only one factor and nothing to mix with.
 
 **The cancellation here costs no trace computation**, because the spectrum is vector-like in pairs. **The three hypercharge traces are conditions elsewhere**: hypercharge and the weak factors enter at $M_C$, and $\operatorname{tr}Y=0$, $\operatorname{tr}Y^{3}=0$ and the even doublet count become conditions on the spectrum below that scale.
 
@@ -140,7 +140,7 @@ $$
 
 **No $W$, no $Z$ and no photon in this list**: those need the weak factors, which arrive at $M_C$ in the same condensation that gives the right-handed pair its mass, and they become massive at $M_W$. **The scalar sector is not in this table**: it is sixteen real components in *The Scalar Content*, six of them eaten by these six vectors.
 
-**What the model does not tie.** One gauge coupling above $M_C$, so there is no ratio between gauge couplings to fix. **That is not the absence of a matching problem; it turns the matching into a prediction**: the three couplings below $M_C$, and the four decades between the strong and the electroweak scales, are what one $g_4$ runs into, and they are treated in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). **The scalar and Yukawa couplings are separate parameters and this article fixes none of them.**
+**What the model does not tie.** One connection coupling above $M_C$, so there is no ratio between connection couplings to fix. **That is not the absence of a matching problem; it turns the matching into a prediction**: the three couplings below $M_C$, and the four decades between the strong and the electroweak scales, are what one $g_4$ runs into, and they are treated in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). **The scalar and Yukawa couplings are separate parameters and this article fixes none of them.**
 
 ## The Real $\mathfrak{so}(4)$ Inside the Fifteen
 
@@ -238,7 +238,7 @@ $$
 
 **The four-factor group is the group at $M_C$.** Colour, one abelian factor and the two weak factors are what the vacuum of the primordial force leaves, and the weak factors arrive at that scale. **It is a step of the transition, not a rival candidate**: an alternative would be a group chosen instead, and this one is arrived at.
 
-**The one-line reason the group is $\mathrm{SU}(4)$.** The full group of a four-dimensional complex carrier is $\mathrm{SU}(4)$, and the subgroup that fixes one line in it is $\mathrm{SU}(3)\times\mathrm{U}(1)$ modulo a discrete factor. **The stabiliser is a subgroup of $\mathrm{SU}(4)$, not an alternative to it** — it is what acts once the fourth direction is frozen out, and which of the two describes the world is a question about physics. **Whether the fourth direction is gauged is that question, and this model answers that it is.**
+**The one-line reason the group is $\mathrm{SU}(4)$.** The full group of a four-dimensional complex carrier is $\mathrm{SU}(4)$, and the subgroup that fixes one line in it is $\mathrm{SU}(3)\times\mathrm{U}(1)$ modulo a discrete factor. **The stabiliser is a subgroup of $\mathrm{SU}(4)$, not an alternative to it** — it is what acts once the fourth direction is frozen out, and which of the two describes the world is a question about physics. **Whether the fourth direction is made local is that question, and this model answers that it is.**
 
 ## The Uniqueness Result, Demoted
 
@@ -301,17 +301,17 @@ $$
 
 **Under one group the statement gets simpler and stronger.**
 
-**What a chiral gauge theory needs.** A gauge action that distinguishes left from right at the level of the *coupling* — an action of the group on one copy of the matter and not on its conjugate.
+**What a chiral connection theory needs.** A connection action that distinguishes left from right at the level of the *coupling* — an action of the group on one copy of the matter and not on its conjugate.
 
-**What this model has.** One copy index, ungauged, and one coupling multiplying the fifteen. **The gauged content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, vector-like in pairs.** A vector-like gauged sector has no chiral gauge coupling at all, and therefore:
+**What this model has.** One copy index, ungauged, and one coupling multiplying the fifteen. **The made local content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, vector-like in pairs.** A vector-like made local sector has no chiral connection coupling at all, and therefore:
 
-> **The model is not chiral where it gauges. This is not a caveat about a representation; it is a property of the model, proved by the same count that makes its anomaly vanish.**
+> **The model is not chiral where it fixing conditions. This is not a caveat about a representation; it is a property of the model, proved by the same count that makes its anomaly vanish.**
 
 **Where the chirality is.** Nowhere in this article, and the article says so. The copy index is a label the group does not see. **A single $\mathrm{SU}(2)$ acting on it would not change that**, because $\mathbf2\simeq\bar{\mathbf2}$ and $(\mathbf4,\mathbf2)\oplus(\bar{\mathbf4},\mathbf2)$ is its own conjugate — the count $2\cdot4\oplus2\cdot\bar4$ is vector-like under any group that acts on the copy index the same way in both terms. **A chiral content needs the two copies acted on by two different factors**, $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$, and **that split is a postulate of the transition rather than a consequence of this article** — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html) carries it as exactly one postulate and names it.
 
 **What would count as the algebra supplying chirality.** A one-sided action of the algebra on a chiral spinor module. **That remains the corpus's open problem, unchanged, and it is not solved here.** What has changed is that the model no longer pretends to have the answer in a representation: **it declares the copy index, and the declaration is honest because the index is visible.**
 
-**What is refused.** Writing the sixteen as a single multiplet of a larger group and calling the chirality derived, when the multiplet is real. **A real multiplet cannot be chiral**, and the sixteen becomes chiral only when the copy index splits into two separately gauged factors.
+**What is refused.** Writing the sixteen as a single multiplet of a larger group and calling the chirality derived, when the multiplet is real. **A real multiplet cannot be chiral**, and the sixteen becomes chiral only when the copy index splits into two separately made local factors.
 
 ## The Checks
 
@@ -340,7 +340,7 @@ A subalgebra is not a factor. $\mathfrak{so}(4)$ is six real dimensions inside t
 
 The copy index is not a group factor. It labels two copies of the quartet and carries no coupling; it becomes a factor only at the transition, and **the split of that factor into two weak factors is the transition's postulate and not this article's** (*The Sixteen*, *The Chiral Wall*).
 
-Vector-like is not a defect. It is why the anomaly vanishes by counting, and it is why the model has no chiral gauge coupling — the second being what the transition to $M_C$ exists to fix (*The Chiral Wall*).
+Vector-like is not a defect. It is why the anomaly vanishes by counting, and it is why the model has no chiral connection coupling — the second being what the transition to $M_C$ exists to fix (*The Chiral Wall*).
 
 One coupling is not a simplification of three. It is the absence of the two factors that carried the other two, and it turns the three low-energy couplings into a prediction: the matching at $M_C$ becomes a computation rather than a fit (*One Covariant Derivative*).
 
@@ -348,11 +348,11 @@ A theorem about another group is not evidence about this one. The Boyle–Farnsw
 
 ## Summary
 
-**One group.** $\mathrm{SU}(4)$, fifteen real dimensions, rank three, one gauge coupling. **No product, no second factor, and no rank five anywhere above $M_C$** — the four factors and the rank five are what the vacuum leaves at that scale, and they are not a piece of this group.
+**One group.** $\mathrm{SU}(4)$, fifteen real dimensions, rank three, one connection coupling. **No product, no second factor, and no rank five anywhere above $M_C$** — the four factors and the rank five are what the vacuum leaves at that scale, and they are not a piece of this group.
 
 **The count is fifteen, twice over.** Twelve plane arrays and three diagonals; or sixteen cells minus the trace. **The split is $8+1+6$**: colour, the abelian direction, and the six leptoquark planes.
 
-**The sixteen is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$** — two copies of the quartet and two of its conjugate, with the copy index as a label. **Vector-like in pairs, so the anomaly cancels by counting rather than by three traces**, and the model is not chiral where it gauges.
+**The sixteen is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$** — two copies of the quartet and two of its conjugate, with the copy index as a label. **Vector-like in pairs, so the anomaly cancels by counting rather than by three traces**, and the model is not chiral where it fixing conditions.
 
 **The fifteen already contains a real $\mathfrak{so}(4)$ of six dimensions and rank two**, spanned by the six antisymmetric planes and equal to $\mathfrak k_L\oplus\mathfrak k_R$. **It is the subalgebra that looks like two weak factors and is not.** It is a subalgebra, not a factor, and the condensate puts $32v^{2}$ on three of its planes and $0$ on the other three — **which is why the six arrays are not the weak bosons.**
 

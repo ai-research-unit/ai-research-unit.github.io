@@ -166,7 +166,7 @@ The numbers are these, and there are two problems.
 
 So a stop below $1.78\times10^{-24}\ \mathrm{kg}$, that is a supersymmetry-breaking scale of $1.6\times10^{-7}$ J, keeps the tuning under $30\%$, and a stop at $8.90\times10^{-24}\ \mathrm{kg}$ costs a factor of twenty. The LHC's stop searches reach about $1.34$–$2.34\times10^{-24}\ \mathrm{kg}$, at scales of $1.2$–$2.1\times10^{-7}$ J, in favourable topologies and have found nothing, so the natural region is excluded for the simplest models.
 
-The second problem is independent. In the minimal supersymmetric Standard Model the quartic is fixed by the gauge couplings,
+The second problem is independent. In the minimal supersymmetric Standard Model the quartic is fixed by the connection couplings,
 
 $$
 m_h^2=M_Z^2\cos^2 2\beta
@@ -176,7 +176,7 @@ $$
 
 against a measured $m_h=2.230\times10^{-25}$ kg. So the model requires large loop corrections from heavy stops to reach the measured mass, and those corrections are exactly the ones that reintroduce the tuning. The two requirements pull in opposite directions: *raise* $m_h$ needs heavy stops, *naturalness* needs light ones. This tension, not the absence of a discovery by itself, is what has made minimal supersymmetry uncomfortable.
 
-Split supersymmetry survives, with the scalars heavy and the gauginos light. It gives up naturalness for the scalar mass and keeps the gauge-coupling unification and the dark matter candidate. It is a coherent position, and it concedes the point.
+Split supersymmetry survives, with the scalars heavy and the gauginos light. It gives up naturalness for the scalar mass and keeps the connection coupling unification and the dark matter candidate. It is a coherent position, and it concedes the point.
 
 ## Response Two: Compositeness and the Pseudo-Goldstone
 
@@ -249,8 +249,8 @@ The framework says nothing about the tuning, and the reason it says nothing is e
 
 The statement has three parts.
 
-- There is no measure. [The gauge-group ceiling article](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) and [the lattice article](lattice-gauge-theory-and-the-biquaternion-path-integral.html) record between them that the path integral over $\mathbb{B}$-valued fields is a formal object, that the fermionic measure is not an algebraic operation, and that a cutoff is imposed from outside. So the framework's loop integrals are not defined and the quadratic term cannot be computed in it.
-- There is no second strong sector. Compositeness requires a new confining dynamics at $f\sim1.6\times10^{-7}\ \mathrm{J}$. The framework has exactly one strong sector available — the imported $SU(3)$ — and no second one. [The ceiling](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) is the reason: no compact gauge algebra of dimension above four, so no second confining group.
+- There is no measure. [The symmetry group ceiling article](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) and [the lattice article](lattice-gauge-theory-and-the-biquaternion-path-integral.html) record between them that the path integral over $\mathbb{B}$-valued fields is a formal object, that the fermionic measure is not an algebraic operation, and that a cutoff is imposed from outside. So the framework's loop integrals are not defined and the quadratic term cannot be computed in it.
+- There is no second strong sector. Compositeness requires a new confining dynamics at $f\sim1.6\times10^{-7}\ \mathrm{J}$. The framework has exactly one strong sector available — the imported $SU(3)$ — and no second one. [The ceiling](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) is the reason: no compact algebra of dimension above four, so no second confining group.
 - There is no vacuum selection. A landscape requires a space of vacua with a measure. The algebra has one vacuum, the identity of the field algebra, and no family of them.
 
 One structural observation is not silence. A dimensionless algebra cannot generate a dimensionful parameter by itself. [The hadron article](hadron-structure-from-qcd-the-bound-state-problem.html) established this and then established the resolution: QCD generates $\Lambda_{\mathrm{QCD}}$ non-perturbatively, by dimensional transmutation, with an essential singularity at $\alpha_s=0$. The electroweak sector has the same logical gap and no such mechanism. The Higgs mass is a *parameter*, not an anomaly's matrix element, and no conformal anomaly generates it.
@@ -366,7 +366,7 @@ Naturalness is a heuristic with one success (GIM) and one failure (weak-scale su
 ## Further Reading
 
 - [Hadron Structure from QCD: the Bound-State Problem](hadron-structure-from-qcd-the-bound-state-problem.html). The other end of the contrast: a scale that *is* generated, non-perturbatively, with no dimensionful parameter in the Lagrangian.
-- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The potential whose two parameters carry the tuning.
+- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The potential whose two parameters carry the tuning.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html). What the framework does represent of the scalar sector, and what it does not.
 - [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html). How the scalar mass and any new heavy state enter the fit, and why $T$ is the observable that measures them.
 - [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). Where $v$ and $M_H$ appear as two of the nineteen, both in the group with no arena.

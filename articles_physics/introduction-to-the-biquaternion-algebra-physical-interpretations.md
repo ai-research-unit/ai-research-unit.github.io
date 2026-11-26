@@ -78,7 +78,7 @@
 | I.3 | The Idempotents, the Ideals and the Peirce Decomposition, $7$ | Idempotents, Ideals and Observables |
 | I.4 | The Modules, $5$ | The Modules: What the Algebra Acts On |
 | I.5 | The Spectral Theory, $6$ | The Spectrum and the Two Modes |
-| I.6 | The Four General Products, $3$ | The Four Products: Composition, Probability, Causality and Gauge |
+| I.6 | The Four General Products, $3$ | The Four Products: Composition, Probability, Causality and the Indefinite Form |
 | I.7 | The Four Forms and Their Algebraic Norms, $1$ | The Four Forms and the Four Norms |
 | I.8 | Algebra with the H Norm, $1$ | The H Norm: Amplitude and Frame |
 | I.9 | Algebra with the N Norm, $5$ | The N Norm: Mass, Angle and the Cone |

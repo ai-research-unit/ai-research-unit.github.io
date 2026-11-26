@@ -203,7 +203,7 @@ Every number below is recorded in both languages, the algebra and a display of t
 
 *At generic on-shell momenta*, with three distinct nonzero spatial components so that no rest-frame degeneracy can hide a mismatch: the nullity is four; the trace and the divergence both vanish on the solution space to $10^{-15}$; and adjoining either condition leaves the nullity at four. With a real coefficient in place of $i\,m$ the momentum-space operator has nullity zero, which is the statement that the mass term must be imaginary.
 
-*At generic lightlike momenta*: the nullity is six, the four-dimensional space of pure-gauge modes $\tilde{Ξ}_{\imath}\propto\partial/\partial x_{\imath}\epsilon$ is a subspace, the divergence vanishes on the whole solution space, the trace does not, and adjoining the trace leaves four. The trace values of the solutions span a space of dimension two, which is the space of trace shifts the local transformation produces.
+*At generic lightlike momenta*: the nullity is six, the four-dimensional space of pure gradient modes $\tilde{Ξ}_{\imath}\propto\partial/\partial x_{\imath}\epsilon$ is a subspace, the divergence vanishes on the whole solution space, the trace does not, and adjoining the trace leaves four. The trace values of the solutions span a space of dimension two, which is the space of trace shifts the local transformation produces.
 
 *In the algebra*: the trace map has rank four on the sixteen complex components. On a null momentum the symbol of the gradient, $i h\,\tilde\Upsilon_{\Phi}=-h\,\nu_t^{\prime}\,e_t+i h\,\vec\nu_\Phi$, is a zero divisor. The null condition is its quaternion norm, $-\frac{h^{2}}{4\pi^{2}}\tilde\Upsilon_{\Phi}\tilde\Upsilon_{\Phi}^{\natural}=\frac{h^{2}}{4\pi^{2}}\bigl(\nu_t^{\prime\,2}-\lvert\vec\nu_\Phi\rvert^{2}\bigr)=0$, which is $\nu_t^{\prime\,2}=\lvert\vec\nu_\Phi\rvert^{2}$, that is $\varpi^{2}=c^{2}\,4\pi^{2}\nu_{\Phi}^{2}$ at $\nu_m=0$, and not $\nu_t^{\prime\,2}=-\lvert\vec\nu_\Phi\rvert^{2}$. Then left multiplication by $i h\,\tilde\Upsilon_{\Phi}$ has rank two and a two-dimensional kernel, checked on four independent null momenta. On a non-null momentum the same left multiplication has rank four and no kernel. That kernel is where the two helicities live, and it is the algebraic reason the massless count is the count it is.
 
@@ -225,9 +225,9 @@ $$
 
 The covariant form refers the same map to the four-momentum. The standard transverse condition of the theory is the condition above with the fixed direction replaced by the four-momentum $p_{\imath}$; at $p_{\imath}=(m,0,0,0)$ the two agree. In the biquaternion framework a boost is a rotor conjugation, so the covariant form is the rotor conjugate of the rest-frame map, and the algebra supplies the boost without a separate construction.
 
-## The Massless Case and the Gauge Freedom
+## The Massless Case and the Redundancy
 
-### The gauge transformation in the algebra
+### The local transformation in the algebra
 
 In the massless case the antisymmetrized equation and the trace constraint leave a redundancy, and in the biquaternion form the transformation is
 $$
@@ -237,7 +237,7 @@ where $\epsilon$ is a Dirac field and $\partial/\partial x_{\imath}$ is the coor
 
 ### Helicities and the two physical states
 
-**The physical content of the massless field is two states per wavevector**, the helicities $\pm\tfrac32$. There is no longitudinal or scalar helicity, and the count is the spin-$\tfrac32$ analogue of the two transverse helicities of the photon: in both cases the redundancy and the constraint together halve-and-halve the naive index content. The parallel is exact at the level of the representation theory. The photon's two-form is the antisymmetric square of the four-vector, $(1,0)\oplus(0,1)$; the massless Rarita–Schwinger field's two physical states are the two helicities of the $(1,\tfrac12)$ and $(\tfrac12,1)$ summands after the spin-$\tfrac12$ pieces are gauged away. In both cases the two physical states are the two conjugate summands of the representation content, which is why the self-dual split of the spin-one article has a counterpart here, and in both cases the massless limit is the case in which the lower states are removed by gauge rather than retained by a mass.
+**The physical content of the massless field is two states per wavevector**, the helicities $\pm\tfrac32$. There is no longitudinal or scalar helicity, and the count is the spin-$\tfrac32$ analogue of the two transverse helicities of the photon: in both cases the redundancy and the constraint together halve-and-halve the naive index content. The parallel is exact at the level of the representation theory. The photon's two-form is the antisymmetric square of the four-vector, $(1,0)\oplus(0,1)$; the massless Rarita–Schwinger field's two physical states are the two helicities of the $(1,\tfrac12)$ and $(\tfrac12,1)$ summands after the spin-$\tfrac12$ pieces are removed by a choice of representative. In both cases the two physical states are the two conjugate summands of the representation content, which is why the self-dual split of the spin-one article has a counterpart here, and in both cases the massless limit is the case in which the lower states are removed by gauge rather than retained by a mass.
 
 ## The Massive Case
 
@@ -245,7 +245,7 @@ For $m\neq0$ the mass term of the $\mu$-th equation is
 $$
 m\sum_{\jmath} \Gamma_{\imath\jmath}\,\tilde{Ξ}_{\jmath} ,
 $$
-left multiplication by the element of $\mathbb{B}$ tabulated in §*The Field in the Biquaternion Framework*, contracted with the corresponding component of the field. In the trace form of the equation it is simply the mass on each component, and the mass plays the same structural role as in the Proca and Dirac cases: it is linear in the field, it is what remains when the gauge freedom is absent, and it fixes the dispersion relation on the physical shell through the pair. In the rest frame the massive reduction above is the whole story: time component zero, the three spatial components transverse, four states.
+left multiplication by the element of $\mathbb{B}$ tabulated in §*The Field in the Biquaternion Framework*, contracted with the corresponding component of the field. In the trace form of the equation it is simply the mass on each component, and the mass plays the same structural role as in the Proca and Dirac cases: it is linear in the field, it is what remains when the redundancy is absent, and it fixes the dispersion relation on the physical shell through the pair. In the rest frame the massive reduction above is the whole story: time component zero, the three spatial components transverse, four states.
 
 **The massive case is also where the known difficulty lives.** The constraint analysis that produces $\tilde S_{\Psi}=0$ and $\sum_{\imath}\varepsilon_{\imath}\partial/\partial x_{\imath}\tilde{Ξ}_{\imath}=0$ is rigid when $m\neq0$, and its consequences for the interacting theory are the Velo–Zwanziger obstruction: minimal coupling to a background electromagnetic field makes some modes propagate faster than light, and the theory is not causal as a fixed-background field theory. The biquaternion formulation reproduces the free constraint structure exactly and says nothing different about the coupling, because the coupling is an additional structure that no rewriting of the free equation can supply. This is the analogue, for spin $\tfrac32$, of the statement recorded for the Proca field: the algebra represents the free field faithfully, and what the free algebra cannot decide is the interaction.
 
@@ -346,7 +346,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the biquaternion formulation replaces a display of generators.
 - William Rarita and Julian Schwinger, "On a theory of particles with half-integral spin", *Physical Review* 60 (1941) 61, for the original field equation for spin three-halves.
-- Steven Weinberg, *The Quantum Theory of Fields, Vol. III: Supersymmetry* (Cambridge, 2000), for the Rarita–Schwinger field, its gauge structure, and its role in supergravity.
+- Steven Weinberg, *The Quantum Theory of Fields, Vol. III: Supersymmetry* (Cambridge, 2000), for the Rarita–Schwinger field, its structure, and its role in supergravity.
 - Daniel Z. Freedman and Antoine Van Proeyen, *Supergravity* (Cambridge, 2012), for the spin-$\tfrac32$ field, its constraints, and the counting of its physical states.
 - Giorgio Velo and Daniel Zwanziger, "Noncausality and other defects of interaction Lagrangians for particles with spin one and higher", *Physical Review* 188 (1969) 2218, for the acausality of minimally coupled higher-spin fields.
 - Claude Itzykson and Jean-Bernard Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the free higher-spin equations and the constraint analysis.

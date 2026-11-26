@@ -160,7 +160,7 @@ Two of four, and the two are the momentum and the velocity. The potential joins 
 
 Why the two-bracket structure is the one to read the coupling from. It says in advance which physical quantities the potential can shift and which it must leave alone. The density is untouched because the potential is central; the spin direction is untouched for the same reason. The momentum and the velocity are shifted because the potential's two slots have exactly the two types those brackets carry. No computation of the potential's effect on the field is needed beyond the type table.
 
-The limit of the statement. The type table says where the potential acts; it does not say what the resulting motion is. For a constant potential the motion is a gauge phase and the shift is unobservable; for a non-constant one the shift is the Lorentz force at the level of the momentum, and the article does not derive the force from the brackets. That derivation belongs to the element companion's forces and to *Relativistic Mechanics from the Dirac Wave*.
+The limit of the statement. The type table says where the potential acts; it does not say what the resulting motion is. For a constant potential the motion is a central phase and the shift is unobservable; for a non-constant one the shift is the Lorentz force at the level of the momentum, and the article does not derive the force from the brackets. That derivation belongs to the element companion's forces and to *Relativistic Mechanics from the Dirac Wave*.
 ## The Constraints the Action Imposes: The Structure
 
 The action is first order in eight parameters, one of which has its velocity in the action. That single fact fixes the whole constraint structure.
@@ -202,7 +202,7 @@ No Lagrange multipliers for the unit conditions. This is the point on which the 
 
 No multipliers is not no constraints. The six equations above are constraints, and they are Euler–Lagrange equations of the same functional; they are not multipliers and they are not optional. A reader who takes "no multipliers" for "no constraints" has the wrong picture, and the distinction is the article's main technical point.
 
-What kind of constraints. They are primary: they follow from the momenta's vanishing, not from the equations of motion. Whether they are first class or second class — whether they generate gauge transformations or restrict the initial data — has not been determined. That determination requires the Poisson brackets of the constraints among themselves, and the brackets are the ones the four-bracket structure suggests and not the ones a canonical analysis of the parameters would give. The article does not carry the computation out, and §*Open Questions* says so.
+What kind of constraints. They are primary: they follow from the momenta's vanishing, not from the equations of motion. Whether they are first class or second class — whether they generate local transformations or restrict the initial data — has not been determined. That determination requires the Poisson brackets of the constraints among themselves, and the brackets are the ones the four-bracket structure suggests and not the ones a canonical analysis of the parameters would give. The article does not carry the computation out, and §*Open Questions* says so.
 
 ## The Structural Consequence: The Brackets Count the Constraints
 

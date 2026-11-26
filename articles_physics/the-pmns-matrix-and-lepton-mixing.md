@@ -361,7 +361,7 @@ The framework supplies the arena and transcribes the rest: no mechanism for the 
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html). The field, its two values, the charge conjugation, and the Majorana condition.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). Where a heavy scale would come from, and what it would do to the light masses.
 - [The Majorana Equation in Biquaternionic Form](the-majorana-equation-in-biquaternionic-form.html). The equation whose solutions are their own conjugates.
-- [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). The lepton doublet and singlet, and the hypercharge assignment the charged current acts on.
+- [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). The lepton doublet and singlet, and the hypercharge assignment the charged current acts on.
 - [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html). The vacuum angle, and the phase structure a baryon-number-violating saddle point would have to sit in.
 - [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html). The anomaly conditions the lepton and quark content must satisfy, and where a count of free parameters begins.
 - [The Parton Model and Deep Inelastic Scattering](the-parton-model-and-deep-inelastic-scattering.html). The convention discipline this article applies to the Majorana-phase normalisation.

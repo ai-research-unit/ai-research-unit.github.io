@@ -466,7 +466,7 @@ What the polar form does **not** add is the point of this article. It adjoins no
 
 1. **The conserved current.** The current the word supplies is $\rho_{\mathrm{num}}\tilde V_{\Phi}$, and the algebra's own bilinear is its mirror image. Which object of the algebra is conserved on solutions remains open, as the minimal-coupling article records. The polar form explains the failure and does not repair it.
 
-2. **The angle's status.** The angle is read by no bilinear, and it is a gauge angle under the central phase symmetry. Whether it is observable through an interference of two branches, where the norm's argument enters the beat, is not settled here.
+2. **The angle's status.** The angle is read by no bilinear, and it is a connection angle under the central phase symmetry. Whether it is observable through an interference of two branches, where the norm's argument enters the beat, is not settled here.
 
 3. **The connection terms.** The logarithmic derivative carries a boost connection and a rotor connection. Whether their combination has a geometric reading — a connection on the frame bundle of the algebra, with the mass term as curvature — is not attempted here.
 

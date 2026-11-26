@@ -27,7 +27,7 @@ $$
 
 because $\langle i e_t,i e_t\rangle_{\natural}=-1$, $\langle \vec e_i,\vec e_j\rangle_{\natural}=\delta_{ij}$, and the time leg is orthogonal to the spatial legs. The three cross terms vanish without any condition on $N$ or $a$: the algebra's form makes the time axis orthogonal to the spatial triple once, and no choice of the two functions can spoil it. This was checked numerically at $N=1.7$, $a=2.3$, where the Gram matrix came out as $\mathrm{diag}(-2.89,\,5.29,\,5.29,\,5.29)$.
 
-So a spatially flat FLRW metric with an arbitrary lapse and an arbitrary scale factor is the Gram matrix of a frame that can be written in one line. The lapse is pure gauge in this reading — a reparametrisation of the time coordinate multiplies $N$ by a function and leaves the geometry alone — so the frame carries one physical function and one gauge choice, which is exactly the count the metric has.
+So a spatially flat FLRW metric with an arbitrary lapse and an arbitrary scale factor is the Gram matrix of a frame that can be written in one line. The lapse is pure gradient in this reading — a reparametrisation of the time coordinate multiplies $N$ by a function and leaves the geometry alone — so the frame carries one physical function and one choice of representative, which is exactly the count the metric has.
 
 ## Spatial Curvature at No Extra Cost
 

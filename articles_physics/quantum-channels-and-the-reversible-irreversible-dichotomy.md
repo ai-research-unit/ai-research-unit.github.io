@@ -70,7 +70,7 @@ $$
 \boxed{\;Ξ(\tilde{Q}) = \sum_l \tilde M_{\mathrm{kraus},l}\,\tilde{Q}\,\tilde M_{\mathrm{kraus},l}^{*}\;} ,
 $$
 
-and it is trace preserving if and only if $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = e_t$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $Ξ^{*}(\tilde H_\Psi) = \sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde H_\Psi\tilde M_{\mathrm{kraus},l}$, and the normalization is exactly $Ξ^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(Ξ) = \sum_{j\imath} \tilde Q_{j\imath}\otimesΞ(\tilde Q_{j\imath})$, written on a basis $\{\tilde Q_{j\imath}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(Ξ) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
+and it is trace preserving if and only if $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = e_t$. A completely positive, trace-preserving map is a $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = e_t$; its dual is $Ξ^{*}(\tilde H_\Psi) = \sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde H_\Psi\tilde M_{\mathrm{kraus},l}$, and the normalization is exactly $Ξ^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(Ξ) = \sum_{j\imath} \tilde Q_{j\imath}\otimesΞ(\tilde Q_{j\imath})$, written on a basis $\{\tilde Q_{j\imath}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(Ξ) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
 
 The companion article already introduced this form for generalized measurements. The point here is that it describes *every* physical process, not only measurement.
 
@@ -121,7 +121,7 @@ the trigonometric form following from $\vec u_\Psi^2 = -e_t$. The elements satis
 
 ### The Generator Lies in $\mathbb{B}_{\Phi}$
 
-The generator of the group is $-\frac{2\pi i\,\tilde{H}_{\Psi}}{h\,c} \in  \mathbb{B}_{\Phi}$, since $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ implies $(-i H)^{*} = i\tilde H_\Psi^{*} = i\tilde H_\Psi = -(-i H)$. Because $i\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$, *every* element of $\mathbb{B}_{\Phi}$ is of this form, and the exponential map sends $\mathbb{B}_{\Phi}$ onto the $*$-unitary group. This is the cleanest expression of the complementarity that organizes the subject: **states and observables live in $\mathbb{B}_{\Psi}$, while the generators of their reversible evolution live in $\mathbb{B}_{\Phi}$.** The subspace $\mathbb{B}_{\Phi}$ is the Lie algebra of the $*$-unitary group under the commutator, and reversible dynamics is its action on $\mathbb{B}_{\Psi}$ by inner derivations.
+The generator of the group is $-\frac{2\pi i\,\tilde{H}_{\Psi}}{h\,c} \in  \mathbb{B}_{\Phi}$, since $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ implies $(-i H)^{*} = i\tilde H_\Psi^{*} = i\tilde H_\Psi = -(-i H)$. Because $i\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$, *every* element of $\mathbb{B}_{\Phi}$ is of this form, and the exponential map sends $\mathbb{B}_{\Phi}$ onto the $*$-unitary group. This is the cleanest expression of the complementarity that organizes the subject: $-\frac{2\pi i\,\tilde{H}_{\Psi}}{h\,c} \in  \mathbb{B}_{\Phi}$ The subspace $\mathbb{B}_{\Phi}$ is the Lie algebra of the $*$-unitary group under the commutator, and reversible dynamics is its action on $\mathbb{B}_{\Psi}$ by inner derivations.
 
 The fixed-point subspaces $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ mark two extremes. The scalar part $h_t e_t$ lies in $\mathbb{B}_{C}\cap\mathbb{B}_{\Psi} = \mathbb{R}e_t$, the centre; it generates the central phase $\exp(-i\theta_{\mathrm{evo}})$, which commutes with everything and cancels in the conjugation, affecting only the unobservable global phase. The scalar-free part $i\vec h_\Psi$ has $h_t = 0$, and then
 
@@ -139,7 +139,7 @@ $$
 
 not only onto the $*$-unitary slice (*Biquaternion Elementary Functions*, §*The Logarithm*; the algebra is $M_2(\mathbb{C})$, and the isomorphism carries one exponential to the other). Every invertible element therefore has a generator, but the generator is unique only up to the kernel of the exponential, and there exists a logarithm in $\mathbb{B}_{\Phi}$ exactly when the element is $*$-unitary. A boost has a logarithm, and that logarithm is not a Hamiltonian: it lies in $\mathbb{B}_{\Psi}$. The reversible/irreversible dichotomy is therefore not a dichotomy of generators but of Kraus rank.
 
-The kernel is explicit. For an element with $B\neq0$ the logarithms differ by the parity-matched lattice $\pi i m\,e_t+\pi n\,\vec U$ with $m\equiv n\pmod2$, so two generators of the same reversible process differ by a gauge shift and not by a physical parameter. *The Exponential, the Logarithm and the Generator* reads that ambiguity and its limits.
+The kernel is explicit. For an element with $B\neq0$ the logarithms differ by the parity-matched lattice $\pi i m\,e_t+\pi n\,\vec U$ with $m\equiv n\pmod2$, so two generators of the same reversible process differ by a phase shift and not by a physical parameter. *The Exponential, the Logarithm and the Generator* reads that ambiguity and its limits.
 
 ### Reversibility
 
@@ -230,7 +230,7 @@ The transverse components of the Bloch vector are multiplied by $1-p$, while the
 
 ### Limiting Cases, Measurement, and Irreversibility
 
-At $p = 0$ the channel is the identity, a reversible $*$-unitary evolution. At $p = 1$ it is **full dephasing**, $Ξ_{\mathrm{deph},1}(\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}(e_t + i(\vec u\cdot\vec s_{\Psi})\vec u)$, whose image is the diameter of the Bloch ball along $\vec u$; it is idempotent, $(Ξ_{\mathrm{deph},1})^2 = Ξ_{\mathrm{deph},1}$, and non-$*$-unitary. Full dephasing is **measure-and-forget**: measuring $\alpha = i\vec u$ and discarding the outcome leaves the average state
+At $p = 0$ the channel is the identity, a reversible $*$-unitary evolution. At $p = 1$ it is $p = 0$, $Ξ_{\mathrm{deph},1}(\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}(e_t + i(\vec u\cdot\vec s_{\Psi})\vec u)$, whose image is the diameter of the Bloch ball along $\vec u$; it is idempotent, $(Ξ_{\mathrm{deph},1})^2 = Ξ_{\mathrm{deph},1}$, and non-$*$-unitary. Full dephasing is **measure-and-forget**: measuring $\alpha = i\vec u$ and discarding the outcome leaves the average state
 
 $$
 p_+\,\tilde\Pi_{\mathrm{id},1} + p_-\,\tilde\Pi_{\mathrm{id},2} = Ξ_{\mathrm{deph},1}(\tilde{Ϛ}_{\Psi}),

@@ -354,7 +354,7 @@ $$
 = 2\partial/\partial x_{\imath}\Bigl[\varepsilon_{\imath\jmath k\rho}\bigl(B_{\jmath}\partial/\partial x_{\imath} B_\rho - N_{\jmath}\partial/\partial x_{\imath} N_\rho + 2mB_{\jmath} N_{\imath} j_\rho\bigr)\Bigr],
 $$
 
-a Chern–Pontryagin-type density equal to a total derivative of a Chern–Simons-type current. The Dirac Lagrangian can therefore be modified by that total derivative, which is the entry into the topologically massive connection of the companion article *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.
+a Chern–Pontryagin-type density equal to a total derivative of a Chern–Simons-type current. The Dirac Lagrangian can therefore be modified by that total derivative, which is the entry into the topologically massive connection of the companion article *Dual Equivalence of the Dirac and Topologically Massive Connections*.
 
 ## The U(1) Transformation and the De Moivre Theorem
 
@@ -433,7 +433,7 @@ so the preferred frame is not put in by hand in the final form, it is the algebr
 
 3. **The lattice consequence.** The source suggests, as "further speculation", that because the dualized Dirac equation is second order, and second-order Lagrangians have no fermion-doubling problem, the vector representation offers a route around the Nielsen–Ninomiya obstruction. The corpus's *Fermion Doubling and the Nielsen–Ninomiya Theorem* treats that obstruction as a lattice statement; whether the s-vector representation evades its hypotheses, or merely restates them in a different field variable, is open.
 
-4. **The interaction with a preferred frame.** If $u_{\imath}$ is physical, the construction singles out a preferred direction in the vacuum. Does the resulting theory violate Lorentz invariance observably, or is $k$ a gauge artifact of the description? The source does not say.
+4. **The interaction with a preferred frame.** If $u_{\imath}$ is physical, the construction singles out a preferred direction in the vacuum. Does the resulting theory violate Lorentz invariance observably, or is $k$ a artifact of the representative of the description? The source does not say.
 
 5. **Extension beyond four dimensions.** The construction uses the Lorentzian four-dimensional signs essentially — the source notes that a biquaternion description would not work if the dimension and the signs were different. What happens at the next triality dimension, eight, where the algebra is the octonions and the vector and the two part spaces coincide, is the Cartan case the corpus records in *Triality and Spin(8) with Inner Conjugation*.
 
@@ -504,7 +504,7 @@ What the construction supplies is a dictionary; what it does not supply is covar
 
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the trinomial unit basis and the neutral elements, the composition law $c_{\imath\jmath k}$ and the normed condition, the four-vectors $B_{\imath}, N_{\imath}$, the s-vector $G_{\imath} = B_{\imath} + iN_{\imath}$, the bilinear dictionary, the bosonic Dirac Lagrangian, the self-dual form of the massive equation, the $\mathrm{U}(1)$ transformation and the De Moivre theorem, and the dual map $B \leftrightarrow N$. The explicit matrices $\vec u_{\jmath}$ are its equations (16)–(18).
-- Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the restatement of the construction with the fuller cubic form, the braid-group "Dirac's game", the two parts $G_{R\imath}, G_{L\imath}$, the anti-self-dual two-form $H_{\imath\jmath}$, the chiral form of the equation of motion, and the parent-action duality carried in the companion article *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.
+- Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Connection," arXiv:hep-th/0602275 (2006), for the restatement of the construction with the fuller cubic form, the braid-group "Dirac's game", the two parts $G_{R\imath}, G_{L\imath}$, the anti-self-dual two-form $H_{\imath\jmath}$, the chiral form of the equation of motion, and the parent-action duality carried in the companion article *Dual Equivalence of the Dirac and Topologically Massive Connections*.
 - E. Cartan, *Leçons sur la théorie des spineurs* I, II (Hermann, Paris, 1938); English translation by R. Streater, *The Theory of Spinors* (Hermann, Paris, 1966), for the original triality of $\mathrm{Spin}(8)$.
 - C. C. Chevalley, *The Algebraic Theory of Spinors* (Columbia University Press, New York, 1954), for the neutral elements of a spin representation.
 - J. F. Adams, *Lectures on Exceptional Lie Groups* (University of Chicago Press, Chicago, 1996), for the generalized notion of triality and the dimensions $1, 2, 4, 8$.

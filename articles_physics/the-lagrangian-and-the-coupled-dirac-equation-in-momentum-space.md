@@ -124,7 +124,7 @@ with $\mathcal{Q}_{\mathrm{free}}$ the free article's form. Every exact statemen
 
 **What the relabelling is not is a local transformation of the field.** The translation moves the argument of the form; the field is untouched. The local transformation moves the field's phase and the argument together, and that is the companion's subject. The two are different operations and the article keeps them apart, because the temptation to call the translation a local transformation is strong and it is the one error this section exists to prevent.
 
-A functional that depends on $\tilde A_\Phi$ only through $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ cannot distinguish "the coupling is present and the momentum is shifted" from "the coupling is absent and the momentum is the shifted one". That is exactly right for a constant connection, which the parent proves is pure gauge: a constant potential is removable by a phase and the two descriptions are the same physical situation.
+A functional that depends on $\tilde A_\Phi$ only through $\tilde\Upsilon_{\Phi,\mathrm{gco}}$ cannot distinguish "the coupling is present and the momentum is shifted" from "the coupling is absent and the momentum is the shifted one". That is exactly right for a constant connection, which the parent proves is pure gradient: a constant potential is removable by a phase and the two descriptions are the same physical situation.
 
 The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$; the two summands examined below are its two slots.
 
@@ -248,7 +248,7 @@ Taking $\tilde\Xi_L=2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\tilde\Xi_R/\nu_m$ o
 
 At $k^{2}-4\pi^{2}\nu_m^{2}=2.740000$ the second residual was $5.58$ and $6.65$, and $\mathcal{Q}$ was $-16.908619$ and $-32.554945$. So the vanishing is the shell's and not an algebraic accident of the construction, which is what the two orders of magnitude are there to show.
 
-The parent says that "the value of the action on a solution is the free value, because a constant potential is pure gauge and the gauge factor's contribution cancels between the field and its conjugate". At a mode the sentence has a sharper form: the value is zero, and the free value is zero, and the two zeros are the same zero. The cancellation the parent attributes to the gauge factor is the cancellation of the four terms, and it happens with or without the potential.
+The parent says that "the value of the action on a solution is the free value, because a constant potential is pure gradient and the group factor's contribution cancels between the field and its conjugate". At a mode the sentence has a sharper form: the value is zero, and the free value is zero, and the two zeros are the same zero. The cancellation the parent attributes to the group factor is the cancellation of the four terms, and it happens with or without the potential.
 
 A functional that vanishes on every solution of the free theory and on every solution of the coupled theory cannot distinguish them, and the distinguishing information is in the *operator*, not in the value. That is why the propagator and not the action is the object that knows about the potential, and it is the parent's reason for computing the propagator separately.
 
@@ -317,7 +317,7 @@ $$
 
 is an equation between elements and not an equation between numbers. That is the precise sense in which the zero-pole relation stops: the free article's relation is between a number and its inverse, and here one of the two is not a number.
 
-The second variation is a central number if and only if the connection is pure gauge, and the gauge qualifier is not removable. A constant connection has $\tilde F=0$ and is removable by a phase, and in that gauge the symbol exists and the number is $\pi^{2}-\nu_m^{2}$. A connection with $\tilde F\neq0$ has no gauge in which the number exists, because $\tilde F$ is gauge invariant. So the number's existence and the connection's purity are one condition, and it is the same condition the companion states as "the multiplier case is the zero-curvature case".
+The second variation is a central number if and only if the connection is pure gradient, and the gauge qualifier is not removable. A constant connection has $\tilde F=0$ and is removable by a phase, and in that gauge the symbol exists and the number is $\pi^{2}-\nu_m^{2}$. A connection with $\tilde F\neq0$ has no gauge in which the number exists, because $\tilde F$ is invariant. So the number's existence and the connection's purity are one condition, and it is the same condition the companion states as "the multiplier case is the zero-curvature case".
 
 What this does not say is that the coupled theory has no dispersion relation. It says that the relation is an element equation whose scalar content has to be extracted, and that the extraction is the curvature's business. The article's claim is about the *form* of the second variation and not about the existence of a spectrum, and the Landau-level article is where a nonzero curvature's spectrum is actually computed.
 
@@ -384,11 +384,11 @@ On the shell the mode form vanishes — $3.6\times10^{-15}$ against $-32.554945$
 
 - *The Lagrangian and the Coupled Dirac Equation*, for the action, the derivation of the coupling, the currents and the two settings.
 - *The Lagrangian and the Dirac Equation in Momentum Space*, for the free mode form, the central scalar and the zero-pole relation this article extends.
-- *The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Form*, for the order of the coupling as an operator, the ladder of orders and the gauge law as a translation.
+- *The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Form*, for the order of the coupling as an operator, the ladder of orders and the transformation law as a translation.
 - *The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables*, for the same transform read in the word and the count of mixed modes.
 - *The Dirac Equation in Biquaternionic Form*, for the pair, the mass coefficient and the value-side product the current is not.
 - *The Path Integral and the Coupled Dirac Equation in Biquaternionic Form*, for the propagator whose denominator is read here as the pole.
-- *Gauge Fields and the Covariant Derivative*, for the covariant derivative, the curvature and the commutator checked here as an identity.
+- *Connection and the Covariant Derivative*, for the covariant derivative, the curvature and the commutator checked here as an identity.
 - *Norm and Pairing Conventions*, for the $\natural$-square, its centrality and the Hermitian pairing.
 - *Derivatives, Fields and Transforms*, for the transform and the symbol rule.
 - *Biquaternion Continuous Harmonic Analysis*, for the convolution theorem that bounds the constant-connection licence.

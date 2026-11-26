@@ -1,4 +1,4 @@
-# __The Gauge Field Path Integral in Biquaternionic Form__
+# __The Connection Path Integral in Biquaternionic Form__
 
 ## Introduction
 
@@ -13,11 +13,11 @@ The companion article *Canonical Quantization of the Biquaternion Maxwell Field*
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the canonical and Gupta–Bleuler routes to the same two physical polarizations.
 - Companion article *The Photon in Biquaternionic Form*, for the massless one-particle state and the helicity content of the transverse directions.
 - Companion article *The Path Integral in Biquaternionic Form*, for the sum-over-paths framework of the series.
-- Companion article *The Gauge Principle in Biquaternionic Form*, for the local transformation, the gauge scalar, and the covariant derivative.
+- Companion article *The Minimal Coupling in Biquaternionic Form*, for the local transformation, the scalar part, and the covariant derivative.
 
-## The Functional Integral for a Gauge Field
+## The Functional Integral for a Connection
 
-### The Integral and Its Gauge Invariance
+### The Integral and Its Local Invariance
 
 The vacuum amplitude for the free Maxwell field is
 
@@ -58,7 +58,7 @@ $$
 
 with $A_0$ and $A_{\imath}$ the real component fields, the coefficients being $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$. The gradient part of the local transformation is $\tilde\nabla_\Phi\Gamma=e_t\partial/\partial R_t\,\Gamma+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single phase function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single fixing condition suffices.
 
-## Gauge Fixing: The Faddeev–Popov Construction
+## Choice Of Representative: The Faddeev–Popov Construction
 
 ### The Delta Functional and the Determinant
 
@@ -80,7 +80,7 @@ $$
 \boxed{\;Z = \int\mathcal{D}\tilde{A}_{\Phi}\;\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]\;\delta\!\left(G[\tilde{A}_{\Phi}]\right)\;\exp(i\theta_{\mathrm{act}})\;},
 $$
 
-in which the gauge-group integral has been absorbed and only the gauge-fixed configurations contribute. This is the content of the construction: the infinite factor has been traded for a delta functional and a determinant, both of which depend on the gauge-fixing condition but neither of which depends on the volume of the gauge group.
+in which the symmetry group integral has been absorbed and only the fixed-representative configurations contribute. This is the content of the construction: the infinite factor has been traded for a delta functional and a determinant, both of which depend on the choice of representative condition but neither of which depends on the volume of the symmetry group.
 
 ### The Abelian Determinant
 
@@ -144,7 +144,7 @@ and it must be represented by ghost fields: the Gaussian representation of the d
 
 ### The Quadratic Action
 
-With the gauge fixed, the action is quadratic in the potential, and the integral is Gaussian. The four units are $e_t,\vec e_x,\vec e_y,\vec e_z$, their pairing is the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, and the momentum components are complex, the time one imaginary and the three space ones real, so the norm is $N=\sum_{\imath} p_{\imath} p_{\imath}$. Writing the gauge-fixed quadratic form in momentum space as
+With the fixed-representative, the action is quadratic in the potential, and the integral is Gaussian. The four units are $e_t,\vec e_x,\vec e_y,\vec e_z$, their pairing is the unit metric $\delta_{\imath\jmath}=(1,1,1,1)$, and the momentum components are complex, the time one imaginary and the three space ones real, so the norm is $N=\sum_{\imath} p_{\imath} p_{\imath}$. Writing the fixed-representative quadratic form in momentum space as
 
 $$
 S_2 = \tfrac12\int\frac{d^4p}{h^{4}}\;\tilde{A}_{\Phi,\imath}(-p)\,
@@ -196,9 +196,9 @@ $$
 
 and the orthogonality of the two projectors was verified together with their idempotency and their traces, three and one. The split is the whole content of the fixing parameter.
 
-### Gauge-Parameter Independence
+### Independence Of The Fixing Parameter
 
-Because the $\zeta$-dependence sits entirely in the longitudinal projector, it cancels between any two gauges when the propagator is contracted with a conserved current. The difference of the propagators at two parameters is proportional to $p_{\imath} p_{\jmath}$,
+Because the $\zeta$-dependence sits entirely in the longitudinal projector, it cancels between any two fixing conditions when the propagator is contracted with a conserved current. The difference of the propagators at two parameters is proportional to $p_{\imath} p_{\jmath}$,
 
 $$
 D_{\imath\jmath}(\zeta)-D_{\imath\jmath}(\zeta_2) = -\frac{\zeta-\zeta_2}{p^4}\,p_{\imath} p_{\jmath} ,
@@ -216,7 +216,7 @@ The transverse projector is the biquaternion object that the algebra supplies wi
 
 ### The Generating Functional with a Source
 
-The Gaussian integral is fixed in full by adding a source. With the gauge fixed, the action is $S_2+\int\sum_{\imath} J_{\imath} A_{\imath}$ and the integral
+The Gaussian integral is fixed in full by adding a source. With the fixed-representative, the action is $S_2+\int\sum_{\imath} J_{\imath} A_{\imath}$ and the integral
 
 $$
 Z[J] = \int\mathcal{D}\tilde{A}_{\Phi}\;\exp\left(iS_2[\tilde{A}_{\Phi}]+i\int d^4r\,\sum_{\imath} J_{\imath} A_{\imath}\right)
@@ -241,13 +241,13 @@ First, the measure is a measure on the material sector $\mathbb{B}_{\Phi}$, the 
 
 Second, the Faddeev–Popov determinant is a functional of the potential that is built from the algebra and the d'Alembertian. For the abelian case it is $\det(-\Box_\Phi)$, a power of the central scalar operator. For the non-abelian case it is $\det(\partial\cdot D)$, and the covariant derivative involves the structure constants of the algebra realized in the informational sector. The biquaternion content of the determinant is thus exhausted by two facts: the centrality of $\Box_\Phi$ and the realization of the algebra by the commutator.
 
-Third, the ghosts that represent the non-abelian determinant are Grassmann-odd, and the algebra has no odd elements; they live in the Grassmann envelope of the BRST construction. The path integral over the gauge field alone is an integral over $\mathbb{B}_{\Phi}$-valued configurations, but the full gauge-fixed integral is over the envelope.
+Third, the ghosts that represent the non-abelian determinant are Grassmann-odd, and the algebra has no odd elements; they live in the Grassmann envelope of the BRST construction. The path integral over the connection alone is an integral over $\mathbb{B}_{\Phi}$-valued configurations, but the full fixed-representative integral is over the envelope.
 
-The fixing condition itself has a natural biquaternionic form. The gauge scalar $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is what a local transformation shifts, $S\mapsto S-\Box_\Phi\Gamma$, and the covariant condition $\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}=0$ is the statement that this scalar vanishes. A choice of representative is therefore a choice of value for the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ at each point, and the delta functional $\delta(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega)$ is a delta on that scalar. The canonical companion arrives at the same condition as a constraint — the Gauss law, which is first class and generates the local transformations — and the path-integral route arrives at it as a fixing the representative function; the two are the same scalar, and the choice of gauge is the choice of its value.
+The fixing condition itself has a natural biquaternionic form. The scalar part $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is what a local transformation shifts, $S\mapsto S-\Box_\Phi\Gamma$, and the covariant condition $\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}=0$ is the statement that this scalar vanishes. A choice of representative is therefore a choice of value for the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ at each point, and the delta functional $\delta(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega)$ is a delta on that scalar. The canonical companion arrives at the same condition as a constraint — the Gauss law, which is first class and generates the local transformations — and the path-integral route arrives at it as a fixing the representative function; the two are the same scalar, and the choice of gauge is the choice of its value.
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The material sector as the space integrated over, with its decomposition into a scalar direction and a three-dimensional vector part; the field strength and the gauge scalar; the local transformation as a gradient shift and the invariance of the action; the centrality of $\Box_\Phi$, which makes the abelian Faddeev–Popov determinant a constant; the transverse projector $P$, its idempotency, its trace and its transversality; and the realization of the algebra in the informational sector, on which the non-abelian determinant depends.
+**Supplied by the algebra, and recomputed here.** The material sector as the space integrated over, with its decomposition into a scalar direction and a three-dimensional vector part; the field strength and the scalar part; the local transformation as a gradient shift and the invariance of the action; the centrality of $\Box_\Phi$, which makes the abelian Faddeev–Popov determinant a constant; the transverse projector $P$, its idempotency, its trace and its transversality; and the realization of the algebra in the informational sector, on which the non-abelian determinant depends.
 
 **Imported, and left visible.** The functional-integral framework itself (the subcategory on generalities); the Faddeev–Popov trick and the delta-functional insertion; the Nakanishi–Lautrup auxiliary field and the Gaussian average over the fixing the representative function; the Gaussian evaluation of the quadratic integral and the determinant factors; the ghost representation of the non-abelian determinant, with the Grassmann envelope; the parameter independence of amplitudes, which is the standard Ward-identity statement; and the non-abelian construction in its detail.
 
@@ -259,13 +259,13 @@ The fixing condition itself has a natural biquaternionic form. The gauge scalar 
 
 2. **The abelian determinant as a central operator.** For the Maxwell field the Faddeev–Popov determinant is $\det(-\Box_\Phi)$, a power of a central scalar. Is there a sense in which the whole abelian fixing the representative problem is the statement that $\Box_\Phi$ is central, so that the fixing the representative delta functional and the determinant are the only objects the algebra produces without extra input?
 
-3. **The fixing condition as a scalar part.** The natural fixing the representative function is $G[\tilde{A}_{\Phi}]=S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, the gauge scalar. Choosing a gauge is choosing a value for the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$. Is there a biquaternionic characterization of the gauges that are algebraically natural, and do they include the Lorentz-covariant gauges?
+3. **The fixing condition as a scalar part.** The natural fixing the representative function is $G[\tilde{A}_{\Phi}]=S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, the scalar part. Choosing a gauge is choosing a value for the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$. Is there a biquaternionic characterization of the fixing conditions that are algebraically natural, and do they include the Lorentz-covariant fixing conditions?
 
 4. **The origin of the parameter.** The parameter multiplies the longitudinal projector and cancels in physical amplitudes. Is there an algebraic statement of the cancellation — an identity in the algebra's bilinear form — that does not require the external currents to be conserved?
 
 5. **The non-abelian determinant and the realized algebras.** The determinant depends on the algebra through the structure constants. Since the algebras realizable inside $\mathbb{B}$ are constrained by the finite dimension, does the path integral's structure select among them, or is the selection entirely empirical?
 
-6. **Empirical content.** As everywhere, whether the connection path integral in biquaternionic form yields any prediction distinguishing the framework from standard gauge theory. It does not.
+6. **Empirical content.** As everywhere, whether the connection path integral in biquaternionic form yields any prediction distinguishing the framework from standard connection theory. It does not.
 
 ## Summary
 
@@ -273,7 +273,7 @@ The functional integral over a connection is ill-defined as it stands, because t
 
 In the biquaternion framework the potential is a material-sector four-vector, the measure is a product over the scalar and vector directions of $\mathbb{B}_{\Phi}$, and the local transformation is the gradient shift $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$. For the abelian field the Faddeev–Popov determinant is the determinant of the central scalar d'Alembertian, $\mathcal{J}_{\mathrm{FP}}=\det(-\Box_\Phi)$, independent of the potential; it is a constant and no ghosts appear. For the non-abelian field it is $\mathcal{J}_{\mathrm{FP}}=\det(\partial\cdot D)$, a functional of the potential through the algebra realized in the informational sector $\mathbb{B}_{\Psi}$, and it is represented by Grassmann-odd ghosts living in the envelope of the algebra. The division between the two cases is the abelian–non-abelian division, and the biquaternion content of the determinant is exhausted by the centrality of $\Box_\Phi$ and the realization of the algebra by the commutator.
 
-The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator $D_{\imath\jmath}=\frac{-1}{N}\bigl(\delta_{\imath\jmath}-(1-\zeta)p_{\imath} p_{\jmath}/N\bigr)$. The transverse projector $P_{\imath\jmath}=\delta_{\imath\jmath}-p_{\imath} p_{\jmath}/N$ is idempotent, of trace three off shell, and annihilates the momentum; the gauge parameter multiplies only the longitudinal projector. Because the difference of two propagators is proportional to $p_{\imath} p_{\jmath}$, it vanishes when contracted with a conserved current, and the gauge-parameter dependence drops out of physical amplitudes. On shell the longitudinal direction decouples for the massless field and the two transverse polarizations remain. What the algebra supplies is the carrier, the gauge transformation, the centrality that makes the abelian determinant constant, and the transverse projector; what it does not supply is the gauge group, the gauge parameter, the odd coordinates, the general functional-integral apparatus, or any empirical content.
+The fixed-representative quadratic action is Gaussian, and its inverse is the propagator $D_{\imath\jmath}=\frac{-1}{N}\bigl(\delta_{\imath\jmath}-(1-\zeta)p_{\imath} p_{\jmath}/N\bigr)$. The transverse projector $P_{\imath\jmath}=\delta_{\imath\jmath}-p_{\imath} p_{\jmath}/N$ is idempotent, of trace three off shell, and annihilates the momentum; the parameter multiplies only the longitudinal projector. Because the difference of two propagators is proportional to $p_{\imath} p_{\jmath}$, it vanishes when contracted with a conserved current, and the parameter dependence drops out of physical amplitudes. On shell the longitudinal direction decouples for the massless field and the two transverse polarizations remain. What the algebra supplies is the carrier, the local transformation, the centrality that makes the abelian determinant constant, and the transverse projector; what it does not supply is the symmetry group, the parameter, the odd coordinates, the general functional-integral apparatus, or any empirical content.
 
 ## Summary of Notation
 
@@ -292,7 +292,7 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | $B$ | Nakanishi–Lautrup field representing the delta functional |
 | $\zeta$ | Parameter; multiplies the longitudinal projector |
 | $\delta_{\imath\jmath}=(1,1,1,1)$, $N=\sum_{\imath} p_{\imath} p_{\imath}$ | Unit metric on the units $e_t,\vec e_x,\vec e_y,\vec e_z$; invariant momentum scalar |
-| $\mathcal F_{\mathrm{med},\imath\jmath}=-N\delta_{\imath\jmath}+(1-1/\zeta)p_{\imath} p_{\jmath}$ | Gauge-fixed quadratic form; $K=-N(P+L/\zeta)$ |
+| $\mathcal F_{\mathrm{med},\imath\jmath}=-N\delta_{\imath\jmath}+(1-1/\zeta)p_{\imath} p_{\jmath}$ | Fixed-representative quadratic form; $K=-N(P+L/\zeta)$ |
 | $D_{\imath\jmath}=\frac{-1}{N}\bigl(\delta_{\imath\jmath}-(1-\zeta)p_{\imath} p_{\jmath}/N\bigr)$ | Connection propagator; $D=\frac{-1}{N}(P+\zeta L)$ |
 | $P_{\imath\jmath}=\delta_{\imath\jmath}-p_{\imath} p_{\jmath}/N$, $P^2=P$, $\mathrm{tr}P=3$, $P_{\imath\jmath}p_{\jmath}=0$ | Transverse projector (verified) |
 | $L_{\imath\jmath}=p_{\imath} p_{\jmath}/N$, $L^2=L$, $\mathrm{tr}L=1$, $P+L=\delta$, $PL=LP=0$ | Longitudinal projector; carries the parameter |
@@ -301,11 +301,11 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 
 ## Further Reading
 
-- C. Becchi, A. Rouet and R. Stora, "Renormalization of Gauge Theories," *Annals of Physics* **98** (1976) 287–321, for the nilpotent symmetry of the gauge-fixed Lagrangian and the cohomological route.
-- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Non-Abelian Gauge Theories and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the physical-state condition and the cohomology of the BRST charge.
-- L. D. Faddeev and V. N. Popov, "Feynman Diagrams for the Yang–Mills Field," *Physics Letters B* **25** (1967) 29–30, for the gauge-fixing identity and the determinant.
-- Steven Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the functional-integral quantization of gauge fields, the gauge-fixing parameter, and the Ward identities.
-- Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Faddeev–Popov procedure, the gauge-fixed propagator, and the transverse projector.
+- C. Becchi, A. Rouet and R. Stora, "Renormalization of Connection theory," *Annals of Physics* **98** (1976) 287–321, for the nilpotent symmetry of the fixed-representative Lagrangian and the cohomological route.
+- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Yang–Mills theory and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the physical-state condition and the cohomology of the BRST charge.
+- L. D. Faddeev and V. N. Popov, "Feynman Diagrams for the Yang–Mills Field," *Physics Letters B* **25** (1967) 29–30, for the choice of representative identity and the determinant.
+- Steven Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the functional-integral quantization of connection, the choice of representative parameter, and the Ward identities.
+- Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Faddeev–Popov procedure, the fixed-representative propagator, and the transverse projector.
 - Claude Itzykson and Jean-Bernard Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the Gaussian functional integral, the determinant factors, and the covariant-gauge propagators.
 - L. D. Faddeev, "Feynman Integral for Singular Lagrangians," *Theoretical and Mathematical Physics* **1** (1969) 1–13, for the functional-integral treatment of gauge degeneracy.
-- John C. Taylor, *Gauge Theories of Weak Interactions* (Cambridge, 1976), for the gauge-parameter independence of physical amplitudes and the Ward–Slavnov–Taylor identities.
+- John C. Taylor, *Gauge Theories of Weak Interactions* (Cambridge, 1976), for the parameter independence of physical amplitudes and the Ward–Slavnov–Taylor identities.

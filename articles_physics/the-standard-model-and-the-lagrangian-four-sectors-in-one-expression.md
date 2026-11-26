@@ -59,7 +59,7 @@ The check that the two writings are one Lagrangian. With $A_t=iA_0$ and $F_{\ima
 
 The derivative. The corpus writes $\partial/\partial R_{\imath}$, and the time derivative of a material coordinate is $\partial/\partial r'_t=-i\,\partial/\partial R_t$. The two are never mixed in one display. A fermion bilinear's sign, which the rule does not fix because the bilinear carries the spin structure, is the subject of [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) and is quoted there rather than restated here.
 
-## The Gauge Sector
+## The Sector
 
 The field strengths. Each factor of the product carries one,
 
@@ -141,7 +141,7 @@ $$
 
 The value of $v$ is not computed here; it is entry 18 of the parameter table of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html), fixed by the Fermi constant.
 
-What the sector supplies. Three things, and they are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) rather than here: the masses $M_W=\tfrac12gv$ and $M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v$, the massless photon, and the scalar mass $M_H=\sqrt{2\varpi_{\mathrm{cpl}}}\,v$. Recomputed from the table, $\varpi_{\mathrm{cpl}}=M_H^2/(2v^2)=0.1291$ for $M_H=2.2303\times10^{-25}$ kg, and the three masses then follow from $g$, $g_{\mathrm Y}$, $v$ and $\varpi_{\mathrm{cpl}}$.
+What the sector supplies. Three things, and they are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) rather than here: the masses $M_W=\tfrac12gv$ and $M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v$, the massless photon, and the scalar mass $M_H=\sqrt{2\varpi_{\mathrm{cpl}}}\,v$. Recomputed from the table, $\varpi_{\mathrm{cpl}}=M_H^2/(2v^2)=0.1291$ for $M_H=2.2303\times10^{-25}$ kg, and the three masses then follow from $g$, $g_{\mathrm Y}$, $v$ and $\varpi_{\mathrm{cpl}}$.
 
 Four real components, three eaten. The doublet carries four real fields. Three are the Goldstones that the $W^+$, $W^-$ and $Z$ absorb as longitudinal polarisations; the fourth is the physical scalar. The degree-of-freedom count closes: twenty-eight before breaking, twenty-eight after.
 
@@ -207,7 +207,7 @@ What the display is. It is a Lagrangian density of dimension four, and every ter
 
 **The two structural facts visible in the sum.** First, every term carrying a derivative carries a connection, and no term carries a connection without a derivative; that is the statement that the connections enter only through covariant derivatives and field strengths. Second, the only term that is not a modulus squared or a product of two field strengths is the $\theta$ term, and it is a total derivative. Those two facts are what make the audit of the next section short.
 
-## The Gauge-Invariance Audit
+## The Local Invariance Audit
 
 What is checked. Each term of the sum is checked separately, under the three local transformations
 
@@ -233,7 +233,7 @@ and the analogous laws for $W_{\imath}$ with $U_L$ and for $B_{\imath}$ with the
 
 The three places where the audit could fail and does not.
 
-- The fermion kinetic term needs all three connections. If the covariant derivative carried only the hypercharge connection, the term would fail under $SU(2)_L$ and $SU(3)_c$. The invariance of this term is what forces the connections to be the same objects that appear in the three kinetic terms, and that is the content of calling the theory a gauge theory rather than three separate ones.
+- The fermion kinetic term needs all three connections. If the covariant derivative carried only the hypercharge connection, the term would fail under $SU(2)_L$ and $SU(3)_c$. The invariance of this term is what forces the connections to be the same objects that appear in the three kinetic terms, and that is the content of calling the theory a connection theory rather than three separate ones.
 - The up-type Yukawa needs the conjugate doublet. With $\omicron_{\mathrm{hgs}}$ in place of $\tilde\omicron_{\mathrm{hgs}}$, the total hypercharge would be $-1/6+1/2+2/3=+1$, and the term would not be invariant. The conjugate is forced.
 - The potential needs the modulus squared and nothing else. A term $\omicron_{\mathrm{hgs}}^T\omicron_{\mathrm{hgs}}$ or $\omicron_{\mathrm{hgs}}^\dagger\tau_a\omicron_{\mathrm{hgs}}$ would fail; only $\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}$ is a singlet. That is why the potential has two parameters and not more.
 
@@ -291,7 +291,7 @@ The status of the omissions. They are not defects of the assembly. The assembly 
 
 ## The Corpus's Own Action Beside the Standard One
 
-Three sectors out of four. The corpus writes a gauge action, a scalar action and a fermion action, and the first two are the standard ones term for term.
+Three sectors out of four. The corpus writes a connection action, a scalar action and a fermion action, and the first two are the standard ones term for term.
 
 | Standard object | Corpus object | Identity |
 |---|---|---|
@@ -309,7 +309,7 @@ The parameter ledger, stated once. Three of the four sectors are writable in the
 
 ## Summary
 
-The Standard Model Lagrangian is the sum of four sectors plus the vacuum-angle term: the three gauge kinetic terms $-\tfrac14\sum G G$, $-\tfrac14\sum W W$, $-\tfrac14\sum BB$; one fermion kinetic term per Weyl field, fifteen per generation, each built on the covariant gradient carrying the connection in that field's representation; the scalar kinetic term and the potential $-\sum_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^\dagger(D_{\imath}\omicron_{\mathrm{hgs}})+\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$; and the three Yukawa matrices with the conjugate doublet $\tilde\omicron_{\mathrm{hgs}}$ of hypercharge $-\tfrac12$ in the up-type term. The assembly is one notation and one sign rule.
+The Standard Model Lagrangian is the sum of four sectors plus the vacuum-angle term: the three fixing condition kinetic terms $-\tfrac14\sum G G$, $-\tfrac14\sum W W$, $-\tfrac14\sum BB$; one fermion kinetic term per Weyl field, fifteen per generation, each built on the covariant gradient carrying the connection in that field's representation; the scalar kinetic term and the potential $-\sum_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^\dagger(D_{\imath}\omicron_{\mathrm{hgs}})+\mu^2\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}}-\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})^2$; and the three Yukawa matrices with the conjugate doublet $\tilde\omicron_{\mathrm{hgs}}$ of hypercharge $-\tfrac12$ in the up-type term. The assembly is one notation and one sign rule.
 
 The sign rule is $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$, proved in one line from $X_t=iX_0$ and the metric of the interval. It converts the corpus's $-\tfrac12\sum\partial\xi\partial\xi$ into the standard $+\tfrac12\partial\xi\cdot\partial\xi$, converts its $-\tfrac14\sum FF$ into the standard $-\tfrac14F\cdot F$ with no change of sign, and leaves the two writings one Lagrangian: the abelian check gives $\sum_{\imath\jmath}F_{\imath\jmath}F_{\imath\jmath}=2(B^2-E^2)$ and hence $\tfrac12(E^2-B^2)$ on both sides.
 
@@ -343,7 +343,7 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 ## Further Reading
 
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The field content this expression is written for, and the nineteen that survive the count.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The connection, the covariant derivative and the curvature, from which the three kinetic terms are read.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The connection, the covariant derivative and the curvature, from which the three kinetic terms are read.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html). The fermion pair and the covariant gradient, whose component form this article quotes and does not restate.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html). The abelian case, which the scalar sector of this article generalises to the doublet.
 - [Stress–Energy Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html). The scalar action and the sign convention that fixes the dictionary.

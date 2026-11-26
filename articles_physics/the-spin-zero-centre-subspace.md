@@ -24,7 +24,7 @@ The third objection is that spin zero is a gap in the classification rather than
 
 The letters. The algebra is $\mathbb{B}$, real of dimension eight, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_{\imath}^{2}=-e_t$. The central imaginary is $i$, commuting with the units and satisfying $i^{2}=-e_t$; an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_{\imath}$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $\mathrm{Sc}$ is the scalar part. The centre is $\mathbb{B}_C=\mathbb{C}e_t$; the carrier is the real line $\mathbb{R}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$, the second being the material sector. The group of invertibles is $G=\{u:uu^{*}=e_t\}\cong\mathrm{U}(2)$, a unit real axis is $\vec u$, the generator is $A(\vec u)=\tfrac12\vec u$, and a rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A scalar field value is $\xi e_t$ with $\xi$ complex, and its polar form is $\xi=re^{i\vartheta}$.
 
-Boundaries. The carrier, the closure, the character theorem, the two numbers and the multiplicity are *Introduction to the Spin-Zero Centre Subspace*; the norm, the two real forms, the isotropic lines and the polar form are *The Spin-Zero Centre Subspace and N Norm Regularity*; the double eigenvalue, the degenerate cone and the sector placement are *The Spin-Zero Centre Subspace and Spectral Regularity*; the list of three carriers and the four closure rules are *From the Spin to the Carriers and the Closures*; the two predicates and the four sectors are *Relations between the N Norm and Spectral Regularity and Degeneracy*; the multiplicativity of the norm and its vanishing on the non-invertible elements are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. The physics is read from *Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module*, *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre*, *The Centre of the Biquaternion Algebra as the Classical Sector*, *The Gauge Extension of the Central Phase: The Centre Bounds the Gauge Group* and *The Higgs Mechanism in Biquaternionic Form*. The other two carriers are read in *Introduction to the Spin-Half Bispinors Spaces* and *Introduction to the Spin-One Anti-Hermitian Subspace*, and the doubling of the phase belongs to *The Quadratic Map and the Singular Sets*. No dynamics, no potential, no mass value and no quantum postulate appear below.
+Boundaries. The carrier, the closure, the character theorem, the two numbers and the multiplicity are *Introduction to the Spin-Zero Centre Subspace*; the norm, the two real forms, the isotropic lines and the polar form are *The Spin-Zero Centre Subspace and N Norm Regularity*; the double eigenvalue, the degenerate cone and the sector placement are *The Spin-Zero Centre Subspace and Spectral Regularity*; the list of three carriers and the four closure rules are *From the Spin to the Carriers and the Closures*; the two predicates and the four sectors are *Relations between the N Norm and Spectral Regularity and Degeneracy*; the multiplicativity of the norm and its vanishing on the non-invertible elements are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. The physics is read from *Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module*, *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre*, *The Centre of the Biquaternion Algebra as the Classical Sector*, *The Extension of the Central Phase: The Centre Bounds the Symmetry Group* and *The Higgs Mechanism in Biquaternionic Form*. The other two carriers are read in *Introduction to the Spin-Half Bispinors Spaces* and *Introduction to the Spin-One Anti-Hermitian Subspace*, and the doubling of the phase belongs to *The Quadratic Map and the Singular Sets*. No dynamics, no potential, no mass value and no quantum postulate appear below.
 
 ## The Source Table
 
@@ -66,7 +66,7 @@ The double cover on the scalar. $N(-Q_t)=N(Q_t)$, so the algebraic norm identifi
 
 The equation. The Klein–Gordon operator is central and real, so it preserves every real subspace and chooses no carrier; the restriction to the centre is free, and the three complex coefficients it discards are three further scalar fields.
 
-The failure of the covariant square. The square of a gauged gradient produces a pure-vector term proportional to the field strength, so the centre is not invariant under it; the component form of the same equation does preserve the centre.
+The failure of the covariant square. The square of a covariant gradient produces a pure-vector term proportional to the field strength, so the centre is not invariant under it; the component form of the same equation does preserve the centre.
 
 The two modes. The two real dimensions of the closure are the amplitude and the phase, and in the broken phase they are the radial mode and the angular one.
 
@@ -256,7 +256,7 @@ so the centre is invariant and the restricted equation is the ordinary complex K
 
 What the restriction discards. Three of the four complex coefficients. They are not spin-zero content: they are three further independent scalar fields, each of which solves the same equation with the same mass. The reduction from four to one is the statement that a biquaternion-valued Klein–Gordon field with one mass is four scalars, and that a spin-zero field is the case in which three of them are absent.
 
-**The covariant square fails, and the failure is informative.** With a gauged derivative whose coefficients are central, the square of the gradient acting on a central field is
+**The covariant square fails, and the failure is informative.** With a made local derivative whose coefficients are central, the square of the gradient acting on a central field is
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
@@ -299,7 +299,7 @@ The group is the centre times the sphere. The group of invertibles is $U=\{\tild
 
 Centrality is globality. Being central, the phase multiplies every element and every subspace by the same scalar, so it acts identically everywhere. There is no element on which it could act differently and no point at which a comparison could detect a variation. That is why the framework's continuous symmetry is global by structure and not by assumption.
 
-**Gauging the central phase gives no gauge theory.** A local phase needs a connection valued in the Lie algebra of the group, and the Lie algebra of the central phase is the span of $ie_t$, which is central. A central connection commutes with everything, so it couples to nothing and the covariant derivative collapses to the ordinary one. An abelian gauge theory needs matter that transforms nontrivially, and here the matter transforms by scalars.
+**Making local the central phase gives no connection theory.** A local phase needs a connection valued in the Lie algebra of the group, and the Lie algebra of the central phase is the span of $ie_t$, which is central. A central connection commutes with everything, so it couples to nothing and the covariant derivative collapses to the ordinary one. An abelian connection theory needs matter that transforms nontrivially, and here the matter transforms by scalars.
 
 The ceiling. A larger group needs generators outside the centre and outside the real triple; the anti-Hermitian sector has real dimension four and gives $\mathfrak{u}(2)$ exactly, so the algebra's intrinsic symmetry group stops there. The route past it is an enlarged carrier, $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, whose intrinsic group is $\mathrm{U}(2n)$.
 
@@ -315,11 +315,11 @@ $$
 \xi=\tfrac{1}{\sqrt{2}}\bigl(v+h\bigr)\,e^{i\vartheta_{\mathrm{gld}}},
 $$
 
-the radial field $h$ has the mass $m_h^{2}=2\beta v^{2}$ and the angular field has no potential at all. The angular mode is the would-be Goldstone boson, a coordinate on the circle of minima, and it is absorbed when the phase is gauged.
+the radial field $h$ has the mass $m_h^{2}=2\beta v^{2}$ and the angular field has no potential at all. The angular mode is the would-be Goldstone boson, a coordinate on the circle of minima, and it is absorbed when the phase is made local.
 
 What the carrier contributes. Three things, stated as the carrier's contribution and not as a derivation of the mechanism. The number of real modes is two, because the closure is two real dimensional. One of the two is a phase, because the added direction is $\mathbb{R}(ie_t)$ and a phase is what that direction is. And the phase is compact, because it is an angle, so the charge it labels is discrete. The potential, the value of $v$ and the masses are inputs; the counting and the periodicity are the algebra's.
 
-**A caution.** The mechanism needs a connection to absorb the angular mode, and the previous section showed that the central phase cannot be gauged inside $\mathbb{B}$. The broken phase of the corpus is therefore a reading of the scalar's two modes and not a derivation of the electroweak mechanism, which needs the enlarged carrier.
+**A caution.** The mechanism needs a connection to absorb the angular mode, and the previous section showed that the central phase cannot be made local inside $\mathbb{B}$. The broken phase of the corpus is therefore a reading of the scalar's two modes and not a derivation of the electroweak mechanism, which needs the enlarged carrier.
 
 ## The Interpretations
 
@@ -339,7 +339,7 @@ A scalar is a value and not a ray of the module. The simple module of the algebr
 
 Spin zero forbids intrinsic magnetism. No internal vector, hence no Zeeman, Stern–Gerlach or spin–orbit coupling of intrinsic origin, and no field strength out of which to build a magnetic field. The warrant is the rotational invariance of the value space. The boundary is that orbital magnetic effects are untouched.
 
-The central phase is global by structure and cannot be gauged. The phase is central, so it is uniform, and a connection valued in its Lie algebra commutes with everything and couples to nothing. The warrant is the centrality of $ie_t$. The boundary is that an enlarged carrier $M_n(\mathbb{B})$ restores the possibility.
+The central phase is global by structure and cannot be made local. The phase is central, so it is uniform, and a connection valued in its Lie algebra commutes with everything and couples to nothing. The warrant is the centrality of $ie_t$. The boundary is that an enlarged carrier $M_n(\mathbb{B})$ restores the possibility.
 
 The two modes of the vacuum are the two dimensions of the closure. The radial fluctuation and the angular one are the two real coordinates, and the angular one is compact because it is a phase. The warrant is the dimension count and the periodicity. The boundary is that the potential, the vacuum value and the masses are inputs.
 
@@ -355,7 +355,7 @@ The covariant square is not a scalar operator. Its extra term is a pure vector p
 - No quantisation. The Born rule, the Fock space and the statistics of the scalar are outside the entry, which states the carrier and the form and stops.
 - The triviality is one action's. The centre is fixed by the conjugation and not by left multiplication, and a statement about the trivial action is not a statement about the algebra's action as a whole.
 - The sector declaration is a convention. Material and informational are two real lines of one centre, exchanged by the central $i$.
-- The gauge ceiling stands. The central phase cannot be gauged inside $\mathbb{B}$, and the broken phase of the vacuum needs a carrier the algebra does not have.
+- The gauge ceiling stands. The central phase cannot be made local inside $\mathbb{B}$, and the broken phase of the vacuum needs a carrier the algebra does not have.
 - No non-abelian content. The scalar sector carries one abelian phase and no internal symmetry of its own.
 - Families and copies. The multiplicity two of the closure is a multiplicity of the space and not two carriers, and the two preimages of one norm are one field up to a sign.
 
@@ -410,6 +410,6 @@ Spin zero forbids an internal vector and everything built from one: the intrinsi
 - [Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module](spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.html), for the three obstructions that keep a scalar out of the state action.
 - [The Central Scalar Field: Classical Dynamics in the Biquaternion Centre](the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html), for the action, the static solution, the current and the absence of intrinsic magnetism.
 - [The Centre of the Biquaternion Algebra as the Classical Sector](the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html), for the real line as the classical limit.
-- [The Gauge Extension of the Central Phase: The Centre Bounds the Gauge Group](the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html), for centrality as globality and the ceiling at $\mathrm{U}(2)$.
+- [The Extension of the Central Phase: The Centre Bounds the Symmetry Group](the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html), for centrality as globality and the ceiling at $\mathrm{U}(2)$.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html), for the two modes of the broken vacuum.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the carrier whose norm vanishes and whose mass is a pairing, taken up in *Introduction to the Spin-Half Bispinors Spaces*.

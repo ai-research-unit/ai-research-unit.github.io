@@ -1,8 +1,8 @@
-# __The Lagrangian and the Non-Abelian Gauge Fields__
+# __The Lagrangian and the Non-Abelian Connections__
 
 ## Introduction
 
-This article writes the non-abelian connection as the extremum of the Yang–Mills action inside the material sector, and shows that the trace which makes the action invariant is a matrix trace and not the corpus's informational pairing. It is the action-first companion of *Non-Abelian Gauge Fields in Biquaternionic Form*, which builds the connection, the covariant derivative and the field strength; this article asks what functional has the Yang–Mills equation as its stationary condition, and which pairing is the one that makes it invariant.
+This article writes the non-abelian connection as the extremum of the Yang–Mills action inside the material sector, and shows that the trace which makes the action invariant is a matrix trace and not the corpus's informational pairing. It is the action-first companion of *Non-Abelian Connections in Biquaternionic Form*, which builds the connection, the covariant derivative and the field strength; this article asks what functional has the Yang–Mills equation as its stationary condition, and which pairing is the one that makes it invariant.
 
 The equation. The parent's equation is the Yang–Mills equation without sources,
 
@@ -76,7 +76,7 @@ which is the standard form, with $g$ absorbed into the normalization of $A_{a,\i
 
 The pairing. The pairing is the matrix trace, and it is not the informational reduction. $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on $\mathbb{B}\cong M_2(\mathbb{C})$ is a bilinear form invariant under $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{-1}$, $\tilde Q_2\mapsto\tilde Q\tilde Q_2\tilde Q^{-1}$; the corpus's reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a different functional, and it is not invariant under that pair of transformations.
 
-Why the difference matters. If the action used the reduction, its density would change under a local transformation and the theory would not be a gauge theory. The action works because of the trace's cyclicity, and the reduction does not have it. The two agree only in special cases — when one of the factors is a scalar — and the field strength is not a scalar.
+Why the difference matters. If the action used the reduction, its density would change under a local transformation and the theory would not be a connection theory. The action works because of the trace's cyclicity, and the reduction does not have it. The two agree only in special cases — when one of the factors is a scalar — and the field strength is not a scalar.
 
 The reality of the trace. For anti-Hermitian $F_{\imath\jmath}$, $\mathrm{Tr}(F_{\imath\jmath}F_{\imath\jmath})$ is real and non-positive, so $-\tfrac12\mathrm{Tr}(FF)$ is real and non-negative. The reality follows from the anti-Hermiticity and not from an extra condition, and the positivity is what makes the energy bounded below.
 
@@ -217,7 +217,7 @@ The three findings. The trace is the matrix trace and not the corpus's informati
 
 ## Further Reading
 
-- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the parent: the connection, the curvature, the Bianchi identity, the reality condition.
+- [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the parent: the connection, the curvature, the Bianchi identity, the reality condition.
 - [The Lagrangian and the Electromagnetic Field](the-lagrangian-and-the-electromagnetic-field.html) — the abelian case, where the coupling cancels.
 - [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html) — the $\mathrm{SU}(2)$ action with a scalar and masses.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) — the ceiling this article's action stops at.

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This is an exercise in the electromagnetism series. It takes the wave equation for the potential biquaternion that *Maxwell's Equations in the Biquaternionic Formulation* states in the Lorenz gauge, and it constructs, verifies, and uses the Green's function that solves that equation. The parent states the potential equation and refers the reader to the standard references for the kernel's precise form; the retarded kernel $G_{\Box,\Phi} = \frac{1}{4\pi R}\,\delta(r'_t - R)$ and the retarded convolution are stated, but not derived, in the companion article *Radiation from Accelerated Charges in Biquaternionic Form*, which uses the same kernel and says so explicitly — "We do not re-derive this structure; we only specialize it." This exercise supplies the missing derivation, checks the kernel on cases that did not suggest it, and states the boundary condition that selects the retarded kernel over the advanced one. It is the first step of the series that is purely about the *inverse* of the wave operator: the object that turns a source into a field.
+This is an exercise in the electromagnetism series. It takes the wave equation for the potential biquaternion that *Maxwell's Equations in the Biquaternionic Formulation* states in the Lorenz fixing condition, and it constructs, verifies, and uses the Green's function that solves that equation. The parent states the potential equation and refers the reader to the standard references for the kernel's precise form; the retarded kernel $G_{\Box,\Phi} = \frac{1}{4\pi R}\,\delta(r'_t - R)$ and the retarded convolution are stated, but not derived, in the companion article *Radiation from Accelerated Charges in Biquaternionic Form*, which uses the same kernel and says so explicitly — "We do not re-derive this structure; we only specialize it." This exercise supplies the missing derivation, checks the kernel on cases that did not suggest it, and states the boundary condition that selects the retarded kernel over the advanced one. It is the first step of the series that is purely about the *inverse* of the wave operator: the object that turns a source into a field.
 
-**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The potential biquaternion $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$; the four-current $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, whose normalised form is $Z\,\tilde J_{\Phi} = \frac{i\rho}{\epsilon}e_t + Z\,\vec J$; the Lorenz-gauge potential wave equation $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$; the field-strength biquaternion $\tilde{F} = i\vec E - c\vec B$; the medium speed $c = 1/\sqrt{\epsilon\mu}$ and its vacuum value $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. Throughout, $c$ is the speed of light in the medium and $\vec v$ is reserved for particle and frame velocities.
+**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The potential biquaternion $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$; the four-current $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, whose normalised form is $Z\,\tilde J_{\Phi} = \frac{i\rho}{\epsilon}e_t + Z\,\vec J$; the Lorenz-potential wave equation $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$; the field-strength biquaternion $\tilde{F} = i\vec E - c\vec B$; the medium speed $c = 1/\sqrt{\epsilon\mu}$ and its vacuum value $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. Throughout, $c$ is the speed of light in the medium and $\vec v$ is reserved for particle and frame velocities.
 
-**What is to be shown.** Five things. (1) The wave operator, its defining equation for the Green's function, and the convolution that solves the potential equation. (2) The retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(r'_t - R)$, derived from the light-cone delta with its Jacobian, and verified by applying $\Box_\Phi$ to it. (3) That the advanced kernel solves the same equation, so the retarded choice is a *boundary condition*, not an algebraic consequence. (4) The retarded potentials $\xi_{\mathrm{scp}}$ and $\vec A$ obtained by convolving the kernel with the source, together with the automatic Lorenz gauge. (5) The static limit, which reproduces the Coulomb and Biot–Savart solutions and matches the parent's static result. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.
+**What is to be shown.** Five things. (1) The wave operator, its defining equation for the Green's function, and the convolution that solves the potential equation. (2) The retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(r'_t - R)$, derived from the light-cone delta with its Jacobian, and verified by applying $\Box_\Phi$ to it. (3) That the advanced kernel solves the same equation, so the retarded choice is a *boundary condition*, not an algebraic consequence. (4) The retarded potentials $\xi_{\mathrm{scp}}$ and $\vec A$ obtained by convolving the kernel with the source, together with the automatic Lorenz fixing condition. (5) The static limit, which reproduces the Coulomb and Biot–Savart solutions and matches the parent's static result. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.
 
 **The result.** With $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, the retarded Green's function of the wave operator $\Box_\Phi = \Delta_\Phi + \partial^2/\partial R_t^2$ is
 $$
@@ -26,7 +26,7 @@ $$
 
 ## The Problem
 
-The parent fixes the potential wave equation in the Lorenz gauge,
+The parent fixes the potential wave equation in the Lorenz fixing condition,
 $$
 \Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}, \qquad \tilde J_{\Phi} = ic\rho\,e_t + \vec J,
 $$
@@ -192,7 +192,7 @@ The exercise's answer to "why is the physically relevant Green's function the re
 
 ## Problem 4: The Retarded Potentials from the Green's Function
 
-**Statement.** (a) Substitute the retarded kernel into the convolution and perform the time integral to obtain $\tilde{A}_{\Phi}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu}{4\pi}\int \frac{\tilde J_{\Phi}(\vec y,\,r'_t - R)}{R}\,d^3y$. (b) Extract the scalar and vector parts and confirm the standard retarded potentials, using $\mu c^2 = 1/\epsilon$. (c) Show that the retarded solution is automatically in the Lorenz gauge whenever the charge is conserved.
+**Statement.** (a) Substitute the retarded kernel into the convolution and perform the time integral to obtain $\tilde{A}_{\Phi}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu}{4\pi}\int \frac{\tilde J_{\Phi}(\vec y,\,r'_t - R)}{R}\,d^3y$. (b) Extract the scalar and vector parts and confirm the standard retarded potentials, using $\mu c^2 = 1/\epsilon$. (c) Show that the retarded solution is automatically in the Lorenz fixing condition whenever the charge is conserved.
 
 **Solution. (a) The retarded convolution.** With $G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y,\,r'_t-r'_{t,2}) = \frac{1}{4\pi R}\delta(r'_t - r'_{t,2} - R)$ and $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y|$,
 $$
@@ -216,7 +216,7 @@ where $\rho_{\mathrm{ret}} = \rho(\vec y, r'_t - R)$ and $\vec J_{\mathrm{ret}} 
 
 A word on the two retarded-time Jacobians, because the exercise's first trap and the radiation article's construction both involve one. The Jacobian used in Problem 2 is the one that converts the invariant delta on the light cone into $\delta(r'_t - R)$, and it produces the $1/(4\pi R)$ coefficient. When the source is a point charge on a worldline, a *second* Jacobian appears when the remaining source integral is localized on the worldline: there the argument $h(s) = s + |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_q(s)|/c - r'_t$ has $\frac{dh}{ds}(s) = 1 - \vec u_R\cdot\vec\beta$, which produces the Liénard–Wiechert denominator. The two Jacobians are different objects — one is the light-cone normalization of the kernel, the other the worldline localization of a moving source — and conflating them is a second way to lose a factor. This exercise treats the first; the second belongs to the radiation article.
 
-**(c) The Lorenz gauge is automatic.** Write the gauge scalar
+**(c) The Lorenz fixing condition is automatic.** Write the scalar part
 $$
 S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c}\partial/\partial r'_t\,\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A,
 $$
@@ -224,7 +224,7 @@ which is the biquaternionic form of $\sum_{\imath}\partial A_{\imath}/\partial R
 $$
 \Box_\Phi S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\,\Box_\Phi\tilde{A}_{\Phi}\right) = -\mu\,\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\right) = -\mu\left(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J\right) = 0,
 $$
-where the last equality is the conservation of charge, and where the derivatives commute because the coefficients are constant. Thus $S$ is a solution of the homogeneous wave equation. The retarded solution of $\Box_\Phi S = 0$ with no incoming radiation is $S = 0$: the retarded potentials automatically satisfy the Lorenz gauge. This is why the Lorenz-gauge wave equation and its retarded solution can be written together, as the companion article does, without a further fixing the representative step — the fixing condition is a consequence of charge conservation plus the retarded boundary condition, not an extra assumption. It is also a consistency check on the sign conventions: a sign error in $\tilde J_{\Phi}$ or in $(\tilde\nabla_\Phi)^{\natural}$ would have produced $\Box_\Phi S \neq 0$.
+where the last equality is the conservation of charge, and where the derivatives commute because the coefficients are constant. Thus $S$ is a solution of the homogeneous wave equation. The retarded solution of $\Box_\Phi S = 0$ with no incoming radiation is $S = 0$: the retarded potentials automatically satisfy the Lorenz fixing condition. This is why the Lorenz-gauge wave equation and its retarded solution can be written together, as the companion article does, without a further fixing the representative step — the fixing condition is a consequence of charge conservation plus the retarded boundary condition, not an extra assumption. It is also a consistency check on the sign conventions: a sign error in $\tilde J_{\Phi}$ or in $(\tilde\nabla_\Phi)^{\natural}$ would have produced $\Box_\Phi S \neq 0$.
 
 ## Problem 5: The Static Limit and the Coulomb–Biot–Savart Check
 
@@ -271,7 +271,7 @@ The parent and its companion are correct where they are defined, and the derivat
 
 4. **The kernel is that of a constant, non-dispersive medium.** All of the above holds with $c = 1/\sqrt{\epsilon\mu}$ constant, i.e. for a homogeneous, non-dispersive medium. In a dispersive medium the operator is not local in time and the simple retarded kernel does not apply; in a medium whose parameters vary in space the operator has variable coefficients and the free kernel is only the first term of a geometric-optics expansion. The parent's local complex structure makes $c$ a field, and the form of the kernel in that setting is not settled here. This is a genuine gap, not a bookkeeping point.
 
-5. **The equivalence of the first- and second-order formulations is inherited, not re-derived.** The parent states that $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$ and $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ are equivalent in the Lorenz gauge while noting that $Z\,\tilde{J}_{\Phi}$ and $\tilde J_{\Phi}$ differ by the impedance factor $Z$. This exercise uses only the second-order equation, with $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, and verifies it directly against the retarded potentials and the static limit; it does not re-derive the mapping between the two source normalizations.
+5. **The equivalence of the first- and second-order formulations is inherited, not re-derived.** The parent states that $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$ and $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ are equivalent in the Lorenz fixing condition while noting that $Z\,\tilde{J}_{\Phi}$ and $\tilde J_{\Phi}$ differ by the impedance factor $Z$. This exercise uses only the second-order equation, with $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, and verifies it directly against the retarded potentials and the static limit; it does not re-derive the mapping between the two source normalizations.
 
 ## Further Problems
 
@@ -305,7 +305,7 @@ $$
 \vec A = \frac{\mu}{4\pi}\int \frac{\vec J_{\mathrm{ret}}}{R}\,d^3y,
 \qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y|\;}
 $$
-with all sources at the retarded time $r'_t - R$; the retarded solution is automatically in the Lorenz gauge when charge is conserved, because $\Box_\Phi S = -\mu(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J) = 0$ and the retarded solution of the homogeneous equation with no incoming radiation vanishes. In the static limit the retarded potentials reduce to the Coulomb and Biot–Savart solutions, and for a point charge they reproduce the parent's static field exactly.
+with all sources at the retarded time $r'_t - R$; the retarded solution is automatically in the Lorenz fixing condition when charge is conserved, because $\Box_\Phi S = -\mu(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J) = 0$ and the retarded solution of the homogeneous equation with no incoming radiation vanishes. In the static limit the retarded potentials reduce to the Coulomb and Biot–Savart solutions, and for a point charge they reproduce the parent's static field exactly.
 
 ## Summary of Notation
 
@@ -332,7 +332,7 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $R = \lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y\rvert$ | Retarded separation (spatial) |
 | $r'_t - R$ | Retarded time |
-| $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Gauge scalar; $S = 0$ is the Lorenz gauge |
+| $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Scalar part; $S = 0$ is the Lorenz fixing condition |
 | $\vec u_R = \vec R/R$, $\vec\beta = \vec v/c$ | Unit retarded separation; dimensionless velocity (radiation article) |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Pairing formula |
 

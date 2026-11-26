@@ -10,7 +10,7 @@ At this rung the coupling adds no term to the action; it changes one variable. T
 
 *Third, the vorticity is the field strength, and the action says why it costs nothing.* The velocity's curl is the curl of a potential, so $\omega_{\imath\jmath}=ϙ F_{\imath\jmath}/m$ is an identity about the variables and not an equation about the flow. In the Clebsch language the connection supplies the second and third potentials, and their rank is the field's.
 
-This is the variational companion of [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and the fourth of the eight articles of this layer. It is the first in which the action's variables are gauge invariant by construction, and the first in which the fluid's vorticity is not a property of the flow.
+This is the variational companion of [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and the fourth of the eight articles of this layer. It is the first in which the action's variables are invariant by construction, and the first in which the fluid's vorticity is not a property of the flow.
 
 ## Conventions
 
@@ -70,7 +70,7 @@ which is the block's boxed law. The sign is fixed by the substitution's time slo
 
 Two fields, $\varrho$ and $S_{\tilde\Xi}$, or equivalently $\varrho$ and $W$; two equations; no multiplier. The constraint structure is not the coupling's business, and this is the rung at which that is cleanest: the first-order charged fluid has a redundancy and the relativistic one has a redundancy plus a shell, and neither has a subsidiary condition.
 
-## The Constraints the Action Imposes: Gauge Invariance as a Redundancy
+## The Constraints the Action Imposes: Local Invariance as a Redundancy
 
 Both arguments, $\varrho$ and $W_{\imath}$, are fixed by a local transformation, so $\mathcal L_{\mathrm{fl}}$ is fixed by construction and no boundary term arises.
 

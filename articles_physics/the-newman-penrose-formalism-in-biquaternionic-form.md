@@ -213,7 +213,7 @@ The idempotents are Hermitian: $\tilde\Pi_{\mathrm{id}}^{*}=\tilde\Pi_{\mathrm{i
 
 The factor $\sqrt2\,i$ is therefore doing work. A projector is Hermitian; multiplying by $i$ makes it anti-Hermitian; the tetrad leg is material precisely because of that factor. **The same $i$ that makes a boost generator Hermitian in the derivative article makes a projector into a real light ray.** Without it there is no real null vector anywhere in the construction, and a version of the tetrad written with Hermitian projectors would be a complex null frame with no real legs at all.
 
-## The Gauge in Which the Identification Holds
+## The Fixing Condition in Which the Identification Holds
 
 The statement "the tetrad **is** the Peirce basis, up to $\sqrt2\,i$" needs one qualification, and the qualification is a boost.
 

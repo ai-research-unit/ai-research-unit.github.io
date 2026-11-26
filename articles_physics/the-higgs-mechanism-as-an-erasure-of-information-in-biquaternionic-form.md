@@ -9,7 +9,7 @@ This article reads that mechanism information-theoretically. The word the title 
 - The phase of the scalar is **erased from the observable description**. Before the breaking the scalar has two real fields, the radial and the angular; after the breaking the angular field is not an independent physical field, and the observable scalar is a single real field. In this sense a continuous label — the phase on the circle of minima — is removed from the list of things an observable can read.
 - The information in the phase is **not destroyed**. It reappears as the longitudinal polarization of the connection, the degree of freedom that a massless vector does not have and a massive vector does. The total count is conserved and the mass $M_A$ is an invariant record of what the vacuum did.
 
-The reason the two statements do not contradict each other is the subject of the companion article on redundancy. The phase of the scalar is a **pure redundant direction**: a rotation of the phase is a gauge transformation, so two vacua differing by a phase are two descriptions of one configuration. What the Higgs mechanism erases is therefore a redundant label, not a physical degree of freedom. The erasure is of the description; the physics is re-encoded, reversibly, and leaves a record. This is what distinguishes the Higgs mechanism from confinement, the subject of the other companion: confinement removes partonic labels from the asymptotic algebra and leaves no gauge choice that recovers them, whereas the Higgs mechanism removes a gauge coordinate and records its effect in a mass.
+The reason the two statements do not contradict each other is the subject of the companion article on redundancy. The phase of the scalar is a **pure redundant direction**: a rotation of the phase is a local transformation, so two vacua differing by a phase are two descriptions of one configuration. What the Higgs mechanism erases is therefore a redundant label, not a physical degree of freedom. The erasure is of the description; the physics is re-encoded, reversibly, and leaves a record. This is what distinguishes the Higgs mechanism from confinement, the subject of the other companion: confinement removes partonic labels from the asymptotic algebra and leaves no choice of representative that recovers them, whereas the Higgs mechanism removes a redundant coordinate and records its effect in a mass.
 
 The article proceeds as follows. The symmetric phase is set up with its circle of degenerate vacua, and the informational status of the phase is fixed. The erasure is then shown to be the elimination of a redundant direction, with the invariant content of the vacuum isolated. The relocation of the information into the longitudinal mode and the mass is then derived, with the mass coefficient recomputed on a generic connection. The symmetry-breaking map is read as a channel — $*$-unitary on the full degrees of freedom and many-to-one only on the invariant ones — and compared with the loss of confinement and with the redundancy of the orbit. The vacuum is then read as a stable record, in the structure of einselection, and the Landauer comparison is drawn. A ledger separates the framework's own construction from the imports.
 
@@ -95,11 +95,11 @@ The rank of the Hessian and the dimension of its kernel are the two numbers the 
 
 For a general breaking of a group $G$ to a subgroup $H$, the count is the standard one of the Goldstone theorem. The number of flat directions, and hence of erased labels, equals the number of broken generators, $\dim(G/H)$; for the abelian model $G = \mathrm{U}(1)$ and $H = 1$, so $\dim(G/H) = 1$. The same number counts the connections that become massive, since each broken generator supplies one, so the connection masses stand in bijection with the erased labels. The count of massive *scalar* directions is a different number: it is the number of real scalar components less the number of Goldstone modes, so $2 - 1 = 1$ for the abelian model — the single radial mode. The abelian model displays a coincidence of the two counts, not a general rule: a complex doublet in the electroweak pattern, where three generators are broken, leaves $4 - 3 = 1$ massive scalar direction against three erased labels. What a general breaking leaves as its record is therefore not one number but the connection mass matrix together with the masses of the surviving scalars, and the open question of the non-abelian case is exactly whether the ranks of those matrices carry the same information here as they do in standard field theory.
 
-The important point for the erasure interpretation is that the flat direction is not merely unrecorded but **unrecordable**: a flat direction has no curvature, so no restoring force and no mass, and a gauge coordinate has no observable, so no measurement. The two properties coincide because the phase is both flat in the potential and a redundant direction, and it is their coincidence that makes the erasure costless.
+The important point for the erasure interpretation is that the flat direction is not merely unrecorded but **unrecordable**: a flat direction has no curvature, so no restoring force and no mass, and a redundant coordinate has no observable, so no measurement. The two properties coincide because the phase is both flat in the potential and a redundant direction, and it is their coincidence that makes the erasure costless.
 
-## The Erasure as the Elimination of a Gauge Direction
+## The Erasure as the Elimination of a Redundant Direction
 
-### The $*$-Unitary-Gauge Transformation
+### The $*$-Unitary-Local Transformation
 
 The elimination of the phase is an explicit local transformation. With the parametrization above, choose
 
@@ -113,9 +113,9 @@ $$
 \xi \;\longmapsto\; \exp(i\theta_{\mathrm{gau}})\xi = \tfrac{1}{\sqrt{2}}(v+h)\exp(i\theta_{\mathrm{gld}})\exp(-i\theta_{\mathrm{gld}}) = \tfrac{1}{\sqrt{2}}(v+h),
 $$
 
-Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
+Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the connection angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
 
-real. This is the **unitary gauge** of the abelian model. In it the scalar is a single real field $h$, and the angular field $\vartheta_{\mathrm{fld}}$ has been removed from the scalar. The removal is effected entirely by a local transformation, which is what makes the erased object a redundant label: it is the coordinate along the orbit of the vacuum, and the orbit's information content was fixed in the companion article to be nil.
+real. This is the **unitary fixing condition** of the abelian model. In it the scalar is a single real field $h$, and the angular field $\vartheta_{\mathrm{fld}}$ has been removed from the scalar. The removal is effected entirely by a local transformation, which is what makes the erased object a redundant label: it is the coordinate along the orbit of the vacuum, and the orbit's information content was fixed in the companion article to be nil.
 
 ### What the Transformation Does to the Connection
 
@@ -148,9 +148,9 @@ The accounting is a count of real, on-shell degrees of freedom in four dimension
 
 The balance $2+2 = 1+3$ is the conservation statement. One scalar mode ceased to be an independent physical field, and one gauge polarization was gained, and the two events are the same event. Nothing was created and nothing destroyed: the Goldstone mode was **moved**, and it moved into the connection as the longitudinal polarization. In information-theoretic terms the balance is a conservation of the number of local physical degrees of freedom, and it is the reason the article says "relocation" rather than "loss".
 
-### The Mass as the Gauge-Invariant Record
+### The Mass as the Invariant Record
 
-The physical content of the relocation is the mass, and its derivation is the derivation of a record. At the constant vacuum $\xi = v/\sqrt{2}$ — that is, in the unitary gauge of the previous section, in which $\mathcal{A}_{\imath} = A_{\imath}$ — the ordinary derivative vanishes and the covariant derivative is proportional to the connection,
+The physical content of the relocation is the mass, and its derivation is the derivation of a record. At the constant vacuum $\xi = v/\sqrt{2}$ — that is, in the unitary fixing condition of the previous section, in which $\mathcal{A}_{\imath} = A_{\imath}$ — the ordinary derivative vanishes and the covariant derivative is proportional to the connection,
 
 $$
 D_{\imath}\xi\Big|_{\mathrm{vac}} =\frac{2\pi i\,ϙ}{h}A_{\imath}\frac{v}{\sqrt{2}},
@@ -208,39 +208,39 @@ The test that separates relocation from loss is whether the erasure leaves an in
 
 ### Einselection and the Pointer Variable
 
-The broken vacuum is a **stable record**: a definite value of $|\xi|$, a definite mass spectrum, and a definite set of invariant observables. The phase and the radial field together form the two real variables of the scalar; the vacuum makes one of them ($h$) massive and the other ($\vartheta_{\mathrm{fld}}$) a gauge coordinate. The massive variable is the one whose measurement is stable; the gauge coordinate is the one that no measurement distinguishes. This is the structure of **einselection**: a preferred, stable set of variables — the pointer variables — emerges, and the complementary variables lose their sharpness. The closest written model in the corpus is the article on decoherence as idempotent projection, and the analogy is worth stating carefully.
+The broken vacuum is a **stable record**: a definite value of $|\xi|$, a definite mass spectrum, and a definite set of invariant observables. The phase and the radial field together form the two real variables of the scalar; the vacuum makes one of them ($h$) massive and the other ($\vartheta_{\mathrm{fld}}$) a redundant coordinate. The massive variable is the one whose measurement is stable; the redundant coordinate is the one that no measurement distinguishes. This is the structure of **einselection**: a preferred, stable set of variables — the pointer variables — emerges, and the complementary variables lose their sharpness. The closest written model in the corpus is the article on decoherence as idempotent projection, and the analogy is worth stating carefully.
 
 - In decoherence, the pointer basis is selected by the interaction with an environment, and the off-diagonal coherences decay because the environment records them.
 - Here, the stable variables are selected by the structure and the potential: the radial mode is stable because it is massive and invariant, and the phase is not a variable at all because it is gauge. No environment is involved; the selection is by the vacuum.
 
-The formal structure is shared — a preferred subalgebra, an idempotent-looking reduction of the description — but the mechanism is different. In one case an environment hides the information in correlations that exist; in the other there is no environment and the hidden variable is a gauge coordinate.
+The formal structure is shared — a preferred subalgebra, an idempotent-looking reduction of the description — but the mechanism is different. In one case an environment hides the information in correlations that exist; in the other there is no environment and the hidden variable is a redundant coordinate.
 
 ### The Landauer Comparison
 
 The word erasure has a precise meaning in the thermodynamics of computation, and it is worth drawing the comparison explicitly. **Landauer's principle** states that the erasure of one bit of information in a system in contact with a heat bath at temperature $T$ dissipates at least $k_B T\ln2$ of heat: erasing a record has a thermodynamic cost, because the information must go somewhere.
 
-The Higgs mechanism's erasure does not incur that cost, and the reason is the article's thesis. The object erased is a **gauge coordinate**, not a record. A gauge coordinate is not the kind of thing that must go somewhere; it was never a physical degree of freedom, and the "erasure" of a gauge coordinate is a change of description, not a physical process. What the mechanism does to the physical degrees of freedom is to **re-encode** them: the longitudinal mode is physical and exists in both descriptions, as the absorbed Goldstone mode before the choice of representative and as the third polarization after it. Re-encoding is reversible and costs no heat. The apparent paradox — a continuous label erased at no thermodynamic cost — dissolves once the label is identified as a coordinate along an orbit rather than a bit of record.
+The Higgs mechanism's erasure does not incur that cost, and the reason is the article's thesis. The object erased is a **redundant coordinate**, not a record. A redundant coordinate is not the kind of thing that must go somewhere; it was never a physical degree of freedom, and the "erasure" of a redundant coordinate is a change of description, not a physical process. What the mechanism does to the physical degrees of freedom is to **re-encode** them: the longitudinal mode is physical and exists in both descriptions, as the absorbed Goldstone mode before the choice of representative and as the third polarization after it. Re-encoding is reversible and costs no heat. The apparent paradox — a continuous label erased at no thermodynamic cost — dissolves once the label is identified as a coordinate along an orbit rather than a bit of record.
 
-One consequence is worth recording as a caution. If the phase were a *physical* (global) variable rather than a gauge coordinate, then the apparent erasure would be the **reset of a record** — a map taking the variable to a standard value whatever its prior value, which is exactly the operation Landauer's principle prices — and the mechanism would be genuinely dissipative. The framework's scalar is central and the phase is gauged, so this is not the case; the phase joins the orbit, and the orbit is where physical information is not. The erasure is free because it erases nothing.
+One consequence is worth recording as a caution. If the phase were a *physical* (global) variable rather than a redundant coordinate, then the apparent erasure would be the **reset of a record** — a map taking the variable to a standard value whatever its prior value, which is exactly the operation Landauer's principle prices — and the mechanism would be genuinely dissipative. The framework's scalar is central and the phase is made local, so this is not the case; the phase joins the orbit, and the orbit is where physical information is not. The erasure is free because it erases nothing.
 
 ## What the Framework Supplies and Does Not Supply
 
-**Supplied by the algebra, and recomputed here.** The complex central scalar $\tilde{Ξ} = \xi e_t$ with its single invariant combination $\xi^*\xi$, checked to be invariant under phase rotations; the degenerate circle of vacua and the $*$-unitary-gauge elimination of the phase by a local transformation, which is the redundancy the mechanism spends; the identification of the phase as the coordinate along that orbit, so that the relocation of the Goldstone mode into the longitudinal polarization is a relocation of a redundant direction; the Proca mass with $M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}$, recomputed on a generic connection and a generic parameter set; and the invariance of the relative entropy under the $*$-unitary re-encoding, checked on generic states. The informational reading — erasure of a gauge coordinate, conservation of the physical content, the mass as the record — is the article's interpretation, and it is the framework's own because the phase is central.
+**Supplied by the algebra, and recomputed here.** The complex central scalar $\tilde{Ξ} = \xi e_t$ with its single invariant combination $\xi^*\xi$, checked to be invariant under phase rotations; the degenerate circle of vacua and the $*$-unitary-gauge elimination of the phase by a local transformation, which is the redundancy the mechanism spends; the identification of the phase as the coordinate along that orbit, so that the relocation of the Goldstone mode into the longitudinal polarization is a relocation of a redundant direction; the Proca mass with $M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}$, recomputed on a generic connection and a generic parameter set; and the invariance of the relative entropy under the $*$-unitary re-encoding, checked on generic states. The informational reading — erasure of a redundant coordinate, conservation of the physical content, the mass as the record — is the article's interpretation, and it is the framework's own because the phase is central.
 
-**Transcribed from standard physics.** The Higgs mechanism itself; the Goldstone theorem, the count of would-be Goldstone bosons, and the degree-of-freedom balance $2+2 = 1+3$; the unitary gauge; the Proca mass form; the identification of the longitudinal polarization; and Landauer's principle. The physics companion derives the mechanism; this article reads it.
+**Transcribed from standard physics.** The Higgs mechanism itself; the Goldstone theorem, the count of would-be Goldstone bosons, and the degree-of-freedom balance $2+2 = 1+3$; the unitary fixing condition; the Proca mass form; the identification of the longitudinal polarization; and Landauer's principle. The physics companion derives the mechanism; this article reads it.
 
 **Not supplied.** A non-abelian or electroweak Higgs mechanism: the framework's scalar is a singlet of the $\mathrm{SU}(2)$ factor and a central scalar cannot break $SU(2)$; there is no electroweak doublet, no hypercharge assignment, and no constructed Yukawa coupling to the chiral fermions. The mass of the radial mode depends on the potential's coefficient $\beta$, which the framework does not fix. And there is no empirical consequence distinguishing the interpretation from standard scalar electrodynamics. These gaps are the physics companion's, and they are inherited here unchanged.
 
 **Companion articles.** The construction rests on the following written articles of the series.
 
 - Companion article *The Higgs Mechanism in Biquaternionic Form*, for the physics of the mechanism, the potential, the Proca mass, the Goldstone count, and the non-abelian gap.
-- Companion article *The Gauge Principle in Biquaternionic Form*, for the central complex scalar, the local central phase, and the connection.
-- Companion article *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, for the covariant derivative at the vacuum and the covariant square.
-- Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the $\mathrm{SU}(2)$ factor, the adjoint law, and the reality-condition gap.
+- Companion article *The Minimal Coupling in Biquaternionic Form*, for the central complex scalar, the local central phase, and the connection.
+- Companion article *The Covariant Derivative and Connection in Biquaternionic Form*, for the covariant derivative at the vacuum and the covariant square.
+- Companion article *Non-Abelian Connections in Biquaternionic Form*, for the $\mathrm{SU}(2)$ factor, the adjoint law, and the reality-condition gap.
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the chirality selection rule and the unconstructed Yukawa coupling.
 - Companion article *Decoherence as Idempotent Projection*, for the idempotent-projection model of a stable preferred description.
 - Companion article *Relative Entropy and the Biquaternion Framework*, for the relative entropy and its invariance under $*$-unitary re-encoding.
-- Companion article *Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form*, for the redundancy that this article's mechanism exploits.
+- Companion article *Redundancy and the Information in the Orbit in Biquaternionic Form*, for the redundancy that this article's mechanism exploits.
 - Companion article *Confinement and the Loss of Partonic Information in Biquaternionic Form*, for the genuine loss that this article's relocation is contrasted against.
 
 ## Open Questions
@@ -251,7 +251,7 @@ One consequence is worth recording as a caution. If the phase were a *physical* 
 
 3. **The non-abelian relocation.** For a non-abelian breaking the number of absorbed Goldstone modes equals the number of broken generators, and the record is a mass matrix rather than a mass. Does the informational interpretation — erasure of an orbit, conservation of the total, an invariant record — extend to the mass matrix, and can the framework supply the non-singlet scalar that would make the question concrete?
 
-4. **Landauer and the gauge coordinate.** The article argues that erasing a gauge coordinate costs nothing because the coordinate is not physical. Is there a framework-internal statement of this — an "information" of an orbit that is exactly zero, in the sense that the states of any two of its members are equal, so their relative entropy vanishes — and does it extend to the non-abelian orbit?
+4. **Landauer and the redundant coordinate.** The article argues that erasing a redundant coordinate costs nothing because the coordinate is not physical. Is there a framework-internal statement of this — an "information" of an orbit that is exactly zero, in the sense that the states of any two of its members are equal, so their relative entropy vanishes — and does it extend to the non-abelian orbit?
 
 5. **The vacuum as a record and the arrow of time.** The Higgs vacuum is a stable record selected by the structure rather than by an environment. Does the record structure have any dynamical content — a relaxation, a selection time — or is the vacuum selection in the framework purely kinematical, as it appears here?
 
@@ -265,7 +265,7 @@ The erased object is the phase of the scalar. It is a coordinate on the circle o
 
 The relocated content is the longitudinal mode, and the record is the mass. The degree-of-freedom count balances, $2+2 = 1+3$: one scalar mode became the third gauge polarization, and nothing was created or destroyed. The mass $M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}$ was recomputed on a generic connection and a generic parameter set, and the relative entropy was shown to be invariant under the $*$-unitary re-encoding. On the full degrees of freedom the symmetry-breaking map is $*$-unitary and information-preserving; on the invariant observables it is many-to-one, with the fibre being the orbit — whose information content is zero. The erasure is the quotient map, and its kernel is an orbit.
 
-This distinguishes the mechanism from the two neighbours. Unlike confinement, which removes partonic labels from the asymptotic algebra with no record surviving, the Higgs mechanism leaves an invariant record, the mass, and conserves the total count. Unlike a bare orbit, which has no physical consequence, the exploitation of the orbit generates the mass. The vacuum is then a stable record in the structure of einselection — the radial variable massive and observable, the phase a gauge coordinate — and the erasure costs no heat, in contrast with Landauer's principle, precisely because the object erased is a gauge coordinate rather than a bit of record. The mechanism's own construction is standard and is imported; the informational interpretation is the framework's, and it rests on the framework's central scalar.
+This distinguishes the mechanism from the two neighbours. Unlike confinement, which removes partonic labels from the asymptotic algebra with no record surviving, the Higgs mechanism leaves an invariant record, the mass, and conserves the total count. Unlike a bare orbit, which has no physical consequence, the exploitation of the orbit generates the mass. The vacuum is then a stable record in the structure of einselection — the radial variable massive and observable, the phase a redundant coordinate — and the erasure costs no heat, in contrast with Landauer's principle, precisely because the object erased is a redundant coordinate rather than a bit of record. The mechanism's own construction is standard and is imported; the informational interpretation is the framework's, and it rests on the framework's central scalar.
 
 ## Summary of Notation
 
@@ -282,10 +282,10 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $v$ | Vacuum expectation value; the invariant record of the breaking |
 | $h,\ \vartheta_{\mathrm{fld}}$ | Radial and angular (would-be Goldstone) fields |
 | $m_h^2 = 2\beta v^2$ | Radial-mode mass |
-| $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Connection and gauge law |
+| $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Connection and transformation law |
 | $D_{\imath} = \partial/\partial R_{\imath} + i\kappa A_{\imath}$, $\kappa =\frac{2\pi ϙ}{h}$ | Covariant derivative and coupling |
 | $\varepsilon=(1,-1,-1,-1)$ | Coordinate signs for contractions |
-| $\Gamma = -(\frac{h}{2\pi ϙ\,v})\vartheta_{\mathrm{fld}}$ | Phase function of the unitary gauge |
+| $\Gamma = -(\frac{h}{2\pi ϙ\,v})\vartheta_{\mathrm{fld}}$ | Phase function of the unitary fixing condition |
 | $\mathcal{A}_{\imath} = A_{\imath} + (\frac{h}{2\pi ϙ\,v})\partial/\partial R_{\imath}\,\vartheta_{\mathrm{fld}}$ | Invariant combination carrying the mass |
 | $M_A^2 =\frac{(2\pi)^{2} ϙ^{2}\,v^{2}}{h^{2}}$, $M_A =\frac{2\pi ϙ\,v}{h}$ | Connection (Proca) mass; the record |
 | $-\tfrac12 M_A^2\,\langle\tilde{A}_{\Phi}\rangle_{\natural}$ | Proca mass term |
@@ -300,13 +300,13 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 
 ## Further Reading
 
-- Peter W. Higgs, "Broken Symmetries and the Masses of Gauge Bosons," *Physical Review Letters* **13** (1964) 508–509, for the mechanism and the gauge-boson mass.
+- Peter W. Higgs, "Broken Symmetries and the Masses of Connection," *Physical Review Letters* **13** (1964) 508–509, for the mechanism and the connection mass.
 - F. Englert and R. Brout, "Broken Symmetry and the Mass of Gauge Vector Mesons," *Physical Review Letters* **13** (1964) 321–323, for the independent formulation.
 - Jeffrey Goldstone, Abdus Salam, and Steven Weinberg, "Broken Symmetries," *Physical Review* **127** (1962) 965–970, for the Goldstone theorem and the massless mode.
 - Steven Weinberg, "A Model of Leptons," *Physical Review Letters* **19** (1967) 1264–1266, for the electroweak realization and the doublet structure the framework lacks.
-- Steven Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the abelian and non-abelian Higgs mechanism, the unitary gauge, and the degree-of-freedom count.
+- Steven Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the abelian and non-abelian Higgs mechanism, the unitary fixing condition, and the degree-of-freedom count.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Proca mass, the absorbed Goldstone mode, and the counting of polarizations.
-- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Non-Abelian Gauge Theories and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the quartet mechanism and the statement that the Goldstone modes are unphysical in a covariant gauge.
+- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Yang–Mills theory and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the quartet mechanism and the statement that the Goldstone modes are unphysical in a covariant fixing condition.
 - Rolf Landauer, "Irreversibility and Heat Generation in the Computing Process," *IBM Journal of Research and Development* **5** (1961) 183–191, for the thermodynamic cost of erasing a bit.
 - Charles H. Bennett, "The Thermodynamics of Computation — A Review," *International Journal of Theoretical Physics* **21** (1982) 905–940, for reversible computation, erasure, and the distinction between re-encoding and dissipation.
 - Wojciech H. Zurek, "Decoherence, einselection, and the quantum origins of the classical," *Reviews of Modern Physics* **75** (2003) 715–775, for einselection and the emergence of a preferred, stable set of variables.

@@ -63,9 +63,9 @@ and variation with respect to the scalar gives the constraint $\tilde\nabla_\Phi
 
 **The counting.** A massless vector has two polarisations and a shift scalar has one; a massive vector has three. The count is preserved, and nothing is lost — the scalar's degree of freedom has become the longitudinal polarisation.
 
-## Gauge Fixing and the Relation to the Abelian Higgs
+## Choice Of Representative and the Relation to the Abelian Higgs
 
-**The unitary gauge.** Setting $\xi=0$ removes the scalar from the Lagrangian and leaves the Proca form, at the price of making the gauge non-manifest. This is why the mechanism is often described as "the scalar is gauged away": the description is correct in that gauge and misleading outside it.
+**The unitary fixing condition.** Setting $\xi=0$ removes the scalar from the Lagrangian and leaves the Proca form, at the price of making the gauge non-manifest. This is why the mechanism is often described as "the scalar is removed by a choice of representative": the description is correct in that gauge and misleading outside it.
 
 **The relation to the abelian Higgs.** The two Lagrangians are the same object. In the Higgs case a complex scalar acquires a vacuum expectation value $v$, the phase is the Goldstone, the radial field is the physical scalar, and the mass is $\mu=gv$. In the Stueckelberg case the scalar is not a Higgs, has no potential, and the mass is a parameter. The difference is interpretive and observable: the Higgs leaves a physical scalar and a symmetry-breaking vacuum, the Stueckelberg leaves neither.
 

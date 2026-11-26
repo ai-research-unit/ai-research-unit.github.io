@@ -116,7 +116,7 @@ $$
 $$
 The free case is the statement that the expectation of the free field solves the classical equation, and the interaction contributes the source term on the right. The algebra's content is that the operator acting is the central $\Box_\Phi-4\pi^{2}\nu_m^{2}$ of the series conventions, so that in momentum space the equation is the algebraic one $\mathcal M(\tilde P_{\Phi})\langle\tilde{Ξ}(k)\rangle=\cdots$ with $\mathcal  M(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$ and $\tilde P_{\Phi}=iE e_t+\vec p$ — the central mass-shell operator of *The Feynman Propagator in Biquaternionic Form* and of the functional-integral article. Nothing about the equation is new; what is new is the operator's address in the algebra, the centre, and the module on which the expectation is taken.
 
-### The Gauge Field and the Fermion
+### The Connection and the Fermion
 
 **The connection.** The Schwinger–Dyson statement of the quantum Yang–Mills equation is derived in full in *The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form*, and it is the same total-derivative argument with $\mathcal{O}[\mathcal{A}]$ in place of $F$:
 $$
@@ -181,7 +181,7 @@ $$
 $$
 the current divergence given by the variation of the inserted fields. The algebra supplies three things here and no more: the symmetry, because the centre is $\mathbb{C}$ and its unit circle is a continuous group; the current's address, in the material sector $\mathbb{B}_{\Phi}$; and the compactness of the identity, because the divergence is the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}$. What it does not supply is the invariance of the measure over $\mathbb{B}$-valued fields, which is the premise of the identity and is transcribed.
 
-**The abelian Ward identity.** In the gauge theory the central phase is the $\mathrm{U}(1)$ of the abelian connection $\tilde A_{\Phi}$ of *Maxwell's Equations in the Biquaternionic Formulation* and *Canonical Quantization of the Biquaternion Maxwell Field*. The Ward identity of that symmetry is the statement that the longitudinal part of the photon's vacuum polarisation vanishes and that the vertex renormalisation equals the wave-function renormalisation, $Z_1=Z_2$; in the framework these are standard results of the abelian theory, transcribed, and their content is the conservation of the current that the algebra locates in $\mathbb{B}_{\Phi}$. The non-abelian generalisation replaces the single identity by one per external leg and by the Slavnov–Taylor family, below.
+**The abelian Ward identity.** In the connection theory the central phase is the $\mathrm{U}(1)$ of the abelian connection $\tilde A_{\Phi}$ of *Maxwell's Equations in the Biquaternionic Formulation* and *Canonical Quantization of the Biquaternion Maxwell Field*. The Ward identity of that symmetry is the statement that the longitudinal part of the photon's vacuum polarisation vanishes and that the vertex renormalisation equals the wave-function renormalisation, $Z_1=Z_2$; in the framework these are standard results of the abelian theory, transcribed, and their content is the conservation of the current that the algebra locates in $\mathbb{B}_{\Phi}$. The non-abelian generalisation replaces the single identity by one per external leg and by the Slavnov–Taylor family, below.
 
 ### The Axial Identity and the Anomaly
 
@@ -267,9 +267,9 @@ The algebra's contribution is specific and limited. It supplies the functional d
 - F. J. Dyson, "The S matrix in quantum electrodynamics," *Physical Review* **75** (1949) 1736–1755, for the perturbative expansion of the equations.
 - J. C. Ward, "An identity in quantum electrodynamics," *Physical Review* **78** (1950) 182, for the abelian identity.
 - Y. Takahashi, "On the generalized Ward identity," *Il Nuovo Cimento* **6** (1957) 371–375, for the general form and the non-abelian extension.
-- J. C. Taylor, "Ward identities and charge renormalization of the Yang–Mills field," *Nuclear Physics B* **33** (1971) 436–444, and A. A. Slavnov, "Ward identities in gauge theories," *Theoretical and Mathematical Physics* **10** (1972) 99–104, for the non-abelian Slavnov–Taylor identities.
+- J. C. Taylor, "Ward identities and charge renormalization of the Yang–Mills field," *Nuclear Physics B* **33** (1971) 436–444, and A. A. Slavnov, "Ward identities in connection theory," *Theoretical and Mathematical Physics* **10** (1972) 99–104, for the non-abelian Slavnov–Taylor identities.
 - S. L. Adler, "Axial-vector vertex in spinor electrodynamics," *Physical Review* **177** (1969) 2426–2438, and J. S. Bell and R. Jackiw, "A PCAC puzzle: $\pi^0\to\gamma\gamma$ in the $\sigma$-model," *Il Nuovo Cimento A* **60** (1969) 47–61, for the axial anomaly.
-- K. Fujikawa, "Path-integral measure for gauge-invariant fermion theories," *Physical Review Letters* **42** (1979) 1195–1198, for the Jacobian derivation of the anomaly.
+- K. Fujikawa, "Path-integral measure for invariant fermion theories," *Physical Review Letters* **42** (1979) 1195–1198, for the Jacobian derivation of the anomaly.
 - W. A. Bardeen, "Anomalous Ward identities in spinor field theories," *Physical Review* **184** (1969) 1848–1857, for the consistency conditions of the anomalous identities.
 - J. Zinn-Justin, *Quantum Field Theory and Critical Phenomena* (Oxford, 2002), for the derivation of the Schwinger–Dyson and Ward–Takahashi equations from the functional integral and their role in renormalisation.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the master equation, the contact terms, and the Ward identities of QED.

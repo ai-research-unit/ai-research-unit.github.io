@@ -229,7 +229,7 @@ defines a geometry whose curvature vanishes identically and whose torsion is non
 $$
 \mathrm{Riem}_{k\imath\jmath\rho} = \partial \Gamma_{k\imath\rho}/\partial x_{\jmath} - \partial \Gamma_{k\imath\jmath}/\partial x_\rho + \Gamma_{k\jmath\sigma}\Gamma_{\sigma\imath\rho} - \Gamma_{k\rho\sigma}\Gamma_{\sigma\imath\jmath} ,
 $$
-one has $\mathrm{Riem}_{k\imath\jmath\rho}(\Gamma)=0$ for every tetrad. The reason is structural and exact: in the array $E$ of the tetrad the connection is the pure-gauge form $\Gamma_{\imath}=E^{-1}\partial E/\partial x_{\imath}$ of the zero connection, and $\partial/\partial x_{\imath}(EE^{-1})=0$ gives $\partial E^{-1}/\partial x_{\imath}=-E^{-1}(\partial E/\partial x_{\imath})E^{-1}$, hence $d\Gamma=-\Gamma\wedge\Gamma$ and $\mathrm{Riem}=d\Gamma+\Gamma\wedge\Gamma=0$ identically. The check is exact; no small-curvature approximation is involved.
+one has $\mathrm{Riem}_{k\imath\jmath\rho}(\Gamma)=0$ for every tetrad. The reason is structural and exact: in the array $E$ of the tetrad the connection is the pure gradient form $\Gamma_{\imath}=E^{-1}\partial E/\partial x_{\imath}$ of the zero connection, and $\partial/\partial x_{\imath}(EE^{-1})=0$ gives $\partial E^{-1}/\partial x_{\imath}=-E^{-1}(\partial E/\partial x_{\imath})E^{-1}$, hence $d\Gamma=-\Gamma\wedge\Gamma$ and $\mathrm{Riem}=d\Gamma+\Gamma\wedge\Gamma=0$ identically. The check is exact; no small-curvature approximation is involved.
 
 **The torsion is the contorsion relative to the Levi-Civita connection.** In the **Weitzenböck gauge** the full spin connection is set to zero, $\Omega_{ab\imath} = 0$, so the tetrad postulate forces the Levi-Civita part and the contorsion to cancel,
 

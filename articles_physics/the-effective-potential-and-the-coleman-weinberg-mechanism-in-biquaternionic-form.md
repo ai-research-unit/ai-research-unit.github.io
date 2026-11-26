@@ -34,7 +34,7 @@ The findings are the following, and they are separated at the outset in the corp
 - Companion article *The Conformal Anomaly in Biquaternionic Form*, for the anomalous part of the one-loop effective action.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the free scalar field and its Lagrangian.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the construction of the current from the central scalar action.
-- Companion article *The Gauge Principle in Biquaternionic Form*, for the gauging of the central phase.
+- Companion article *The Minimal Coupling in Biquaternionic Form*, for the making local of the central phase.
 
 ## The Invariant Potential and Its Symmetry
 
@@ -78,7 +78,7 @@ Two features of this potential matter for what follows. First, its **normalizati
 
 The effective potential is a restriction of the effective action, and the restriction is worth stating precisely because it fixes what the derivatives mean in the framework.
 
-**The Legendre transform, the loop expansion and the constant-field reduction are the machinery of [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html), stated there for a field with no sector attached.** The conventions are those of the companion article on the generating functional and the effective action, and the classical field is written $\tilde{Ξ}_{\mathrm{cl}}$. The one structural fact that is not general, and is imported from that companion, is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
+**The Legendre transform, the loop expansion and the constant-field reduction are the machinery of $\tilde{Ξ}_{\mathrm{cl}}$, stated there for a field with no sector attached.** The conventions are those of the companion article on the generating functional and the effective action, and the classical field is written $\tilde{Ξ}_{\mathrm{cl}}$. The one structural fact that is not general, and is imported from that companion, is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
 
 For a **constant** classical field $\tilde{Ξ}_{\mathrm{cl}} = \xi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by
 
@@ -113,7 +113,7 @@ S^{(2)}[\xi_c] = -\,\Box_\Phi + \mathcal{H}(\rho_c),
 \begin{pmatrix} 3\rho_c - v_0^2 & 0 \ 0 & \rho_c - v_0^2 \end{pmatrix},
 $$
 
-acting as a central scalar; the eigenvalues of $\mathcal{H}$ are the field-dependent masses of the two real components of the fluctuation in the background, and the Hessian is written at the background $\xi_2 = 0$. Evaluating $\Gamma_1$ on a constant background and dividing by the volume gives the Coleman–Weinberg form of the machinery, $\mathcal{V}_1(\rho)=\frac{1}{64\pi^2}\sum_i n_i m_i^4(\rho)[\ln(m_i^2(\rho)/\mu^2)-c_i]$, with $n_i$ the signed number of real degrees of freedom, $\mu$ the renormalization scale and $c_i$ a scheme constant ($c=\tfrac32$ for a real scalar, $c=\tfrac56$ for a connection in the Landau gauge). **The framework fixes the field content, and hence the list of masses that enter the sum; that list is the whole of the sector's contribution.**
+acting as a central scalar; the eigenvalues of $\mathcal{H}$ are the field-dependent masses of the two real components of the fluctuation in the background, and the Hessian is written at the background $\xi_2 = 0$. Evaluating $\Gamma_1$ on a constant background and dividing by the volume gives the Coleman–Weinberg form of the machinery, $\mathcal{V}_1(\rho)=\frac{1}{64\pi^2}\sum_i n_i m_i^4(\rho)[\ln(m_i^2(\rho)/\mu^2)-c_i]$, with $n_i$ the signed number of real degrees of freedom, $\mu$ the renormalization scale and $c_i$ a scheme constant ($c=\tfrac32$ for a real scalar, $c=\tfrac56$ for a connection in the Landau fixing condition). **The framework fixes the field content, and hence the list of masses that enter the sum; that list is the whole of the sector's contribution.**
 
 For the framework's central scalar the field content is the scalar itself and the central connection, and the two field-dependent masses are read off from the tree potential and from the Higgs mechanism of the companion article.
 
@@ -125,7 +125,7 @@ m_1^2(\rho) = \frac{\varpi_{\mathrm{cpl}}}{2}\left(3\rho - v_0^2\right),
 \qquad
 m_2^2(\rho) = \frac{\varpi_{\mathrm{cpl}}}{2}\left(\rho - v_0^2\right),
 $$
-the eigenvalues of the Hessian above. At the classical vacuum $v_0\neq0$ they are the radial mass $m_1^2 = \varpi_{\mathrm{cpl}} v_0^2$ and the Goldstone mass $m_2^2 = 0$; the Goldstone contribution is cancelled against the ghost and longitudinal gauge modes in the Landau gauge, and is not counted separately. In the scale-invariant case $v_0 = 0$ the symmetry is unbroken classically, there is no Goldstone mode, and both components are massive,
+the eigenvalues of the Hessian above. At the classical vacuum $v_0\neq0$ they are the radial mass $m_1^2 = \varpi_{\mathrm{cpl}} v_0^2$ and the Goldstone mass $m_2^2 = 0$; the Goldstone contribution is cancelled against the ghost and longitudinal gauge modes in the Landau fixing condition, and is not counted separately. In the scale-invariant case $v_0 = 0$ the symmetry is unbroken classically, there is no Goldstone mode, and both components are massive,
 $$
 m_1^2(\rho) = \frac{3\varpi_{\mathrm{cpl}}}{2}\rho,
 \qquad
@@ -221,7 +221,7 @@ Four statements summarise what the framework contributes to the effective potent
 
 2. **Is the one-loop coefficient $B$ observable?** The coefficient is fixed by the field content once the charges and the quartic coupling are fixed, but the charges and the quartic coupling are parameters. Whether the framework's trace structure constrains their ratio — and hence the size of the radiative correction — is open.
 
-3. **The Goldstone contribution at one loop.** The treatment above uses the Landau-gauge cancellation of the massless angular mode against the gauge and ghost modes. Whether the framework's own fixing the representative conventions, which the companion articles record as not fixed, change the bookkeeping is a finite check that has not been done here.
+3. **The Goldstone contribution at one loop.** The treatment above uses the Landau-gauge cancellation of the massless angular mode against the connection and ghost modes. Whether the framework's own fixing the representative conventions, which the companion articles record as not fixed, change the bookkeeping is a finite check that has not been done here.
 
 4. **The conformal anomaly's role.** The conformal anomaly is a genuine one-loop effect of the same determinant, and it is not included in the Coleman–Weinberg potential above. Whether the framework's central scalar has a conformal anomaly, and whether it modifies the radiative minimum, is the companion article's subject and is not settled here.
 
@@ -241,7 +241,7 @@ $$
 B = \frac{1}{64\pi^2}\left(12ϙ^4 + \frac52\varpi_{\mathrm{cpl}}^2\right) > 0 ,
 $$
 
-with the gauge and scalar loops of the framework's field content. It has a minimum at
+with the connection and scalar loops of the framework's field content. It has a minimum at
 
 $$
 \ln\frac{\langle \rho\rangle}{\mu^2} = -\frac12 - \frac{\varpi_{\mathrm{cpl}}}{4B},

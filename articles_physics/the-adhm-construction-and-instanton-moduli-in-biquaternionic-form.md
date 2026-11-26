@@ -4,7 +4,7 @@
 
 A topological sector is not one configuration but a family. The self-dual connections of charge $k$ form a manifold, the moduli space, and its dimension, its metric and its singularities are what the semiclassical expansion needs. The ADHM construction builds every such connection from a finite algebraic datum: two matrices and two vectors satisfying a pair of quadratic equations.
 
-The construction in general form, with no sector attached. It states the self-duality equation as a quaternionic condition, the ADHM equations, the dimension of the moduli space, the reduction to the BPST solution at charge one, and the twistor reading. The construction is a statement about $SU(N)$ gauge theory in four Euclidean dimensions; it names no force.
+The construction in general form, with no sector attached. It states the self-duality equation as a quaternionic condition, the ADHM equations, the dimension of the moduli space, the reduction to the BPST solution at charge one, and the twistor reading. The construction is a statement about $SU(N)$ connection theory in four Euclidean dimensions; it names no force.
 
 
 

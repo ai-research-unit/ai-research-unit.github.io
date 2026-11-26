@@ -27,7 +27,7 @@ whose vanishing is the flatness of the connection. The connection, the curvature
 
 **Definition.** For a vector bundle $E$ with structure group $G\subset GL(r)$ the same construction is written in a local trivialisation as a matrix of one-forms, $\nabla=d+A$, with the curvature $F=dA+A\wedge A$; the two descriptions agree through the associated bundle, and the adjoint bundle is the bundle of endomorphisms of $E$ of the appropriate type. The choice of the affine space $\mathcal{A}$ is the choice of the bundle, and it depends on the manifold and on the bundle but not on a metric.
 
-## The Gauge Group and Its Action
+## The Symmetry Group and Its Action
 
 **Definition.** The **gauge group** of a principal bundle $P$ is the group of automorphisms of $P$ covering the identity of $M$,
 

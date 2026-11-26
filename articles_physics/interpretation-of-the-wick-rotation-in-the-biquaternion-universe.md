@@ -185,7 +185,7 @@ The interpretation above suggests a classification of the applications of the Wi
 
 - The Euclidean path integral, in its role as a generating functional of correlation functions.
 - Finite-temperature field theory, in its equilibrium aspects: the Matsubara formalism and the thermal partition function.
-- Lattice gauge theory, in its static and equilibrium computations.
+- Lattice connection theory, in its static and equilibrium computations.
 - The correspondence between quantum field theory and statistical mechanics, as a formal identity of partition functions.
 - Stochastic quantization, as a stochastic process on the Euclidean sector.
 
@@ -271,7 +271,7 @@ The interpretation organizes the applications into a split between those that tr
 - J. Glimm and A. Jaffe, *Quantum Physics: A Functional Integral Point of View* (Springer, 1987), for the rigorous Euclidean approach to constructive quantum field theory.
 - K. Osterwalder and R. Schrader, "Axioms for Euclidean Green's functions," *Communications in Mathematical Physics* **31** (1973) 83–112, for the reconstruction of the Lorentzian theory from the Euclidean one, which is the warrant for reading the two slices as one continued quantity.
 - M. Le Bellac, *Thermal Field Theory* (Cambridge, 1996), for the finite-temperature imaginary-time formalism.
-- M. Creutz, *Quarks, Gluons and Lattices* (Cambridge, 1983), for lattice gauge theory.
+- M. Creutz, *Quarks, Gluons and Lattices* (Cambridge, 1983), for lattice connection theory.
 - A. M. Polyakov, *Gauge Fields and Strings* (Harwood, 1987), for instantons and non-perturbative effects.
 - R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta_\Phi u = 0$ und $\Delta_\Phi\Delta_\Phi u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the elliptic quaternionic analysis of the subspace $\mathbb{B}_{H}$.
 - Roger Penrose, *The Road to Reality* (Knopf, 2004), Chapters 18 and 33, for the complex structure of spacetime.

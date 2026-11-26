@@ -4,11 +4,11 @@
 
 **The object.** A classical symmetry can fail after quantisation. The classical current is conserved by the equations of motion; the one-loop diagram that computes its divergence is not zero; and the discrepancy is finite and unrenormalised. The **Fujikawa method** derives that failure from the path integral rather than from a diagram: the fermion measure is not invariant under the symmetry, the rotation of integration variables has a Jacobian, and the logarithm of that Jacobian is the anomaly.
 
-**What this article is.** The general derivation, with no sector attached. It states the Jacobian, its regulated evaluation, the coefficient, and the index relation. Two anomalies exist and they play opposite roles: the chiral anomaly, which breaks a symmetry that the classical action has, and the gauge anomaly, which would break the symmetry that makes the theory consistent. Both are read off the same determinant, and both are stated here in general form.
+**What this article is.** The general derivation, with no sector attached. It states the Jacobian, its regulated evaluation, the coefficient, and the index relation. Two anomalies exist and they play opposite roles: the chiral anomaly, which breaks a symmetry that the classical action has, and the anomaly, which would break the symmetry that makes the theory consistent. Both are read off the same determinant, and both are stated here in general form.
 
 **Where the applications are.** An anomaly is a property of whatever fermions circulate and of whatever representation they carry, so the application is always a sector calculation, and this category has one:
 
-- The electroweak sector, where the fifteen fields of a generation sit in chiral representations and the four conditions $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$ and $\sum_{\mathrm{colour}}Y=0$ are the statement that the gauge anomaly cancels. The application is [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html), which verifies all four generation by generation.
+- The electroweak sector, where the fifteen fields of a generation sit in chiral representations and the four conditions $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$ and $\sum_{\mathrm{colour}}Y=0$ are the statement that the anomaly cancels. The application is [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html), which verifies all four generation by generation.
 - The strong sector, where the same axial current is broken by the same mechanism and the survivor is the flavour-singlet current. The application is [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html), which uses the density this derivation produces.
 
 ## The Measure and the Chiral Rotation
@@ -81,6 +81,6 @@ The algebra enters at two points, and neither is the coefficient.
 
 ## Further Reading
 
-- K. Fujikawa, "Path-Integral Measure for Gauge-Invariant Fermion Theories," *Physical Review Letters* **42** (1979) 1195–1198, the method.
-- K. Fujikawa, "Path Integral for Gauge Theories with Fermions," *Physical Review D* **21** (1980) 2848, the coefficient.
+- K. Fujikawa, "Path-Integral Measure for Invariant Fermion Theories," *Physical Review Letters* **42** (1979) 1195–1198, the method.
+- K. Fujikawa, "Path Integral for Connection theory with Fermions," *Physical Review D* **21** (1980) 2848, the coefficient.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory*, Chapter 19, for the diagrammatic comparison.

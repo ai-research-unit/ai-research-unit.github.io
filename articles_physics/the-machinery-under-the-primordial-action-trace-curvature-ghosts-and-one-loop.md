@@ -260,7 +260,7 @@ $$
 **Three assumptions, each named.** The background is constant, so the result is a potential and not an action. Only the scalar has a background. The expansion is one loop in $\hbar$.
 
 
-### The Gauge and Ghost Determinants at the Identity Background
+### The Connection and Ghost Determinants at the Identity Background
 
 
 **Both drop out, and the reason is one commutator.**
@@ -411,7 +411,7 @@ $$
 **The trace is a trace on $\mathbb{C}^{4}$ and not the algebra's scalar part, for a reason of dimension and not of symmetry**: $2\operatorname{Sc}$ equals $\operatorname{tr}$ on $M_{2}(\mathbb{C})$, and the fifteen generators do not live there.
 
 
-**The gauge and ghost determinants drop out at the identity background because the identity commutes with every generator**, so no vector mass depends on $\rho$; that is a consequence and not an assumption.
+**The connection and ghost determinants drop out at the identity background because the identity commutes with every generator**, so no vector mass depends on $\rho$; that is a consequence and not an assumption.
 
 
 **The fermion determinant does not drop out, because the Yukawa gives the sixteen masses $y_{i}\rho/2$**, and its coefficient $-\frac{1}{64\pi^{2}}(y_{1}^{4}+y_{2}^{4})$ can make the total one-loop coefficient negative. **The scalar-only coefficient is a ceiling, and the sign condition is $y^{4}<18\lambda_{1}^{2}$.**
@@ -450,7 +450,7 @@ $$
 
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The display these four steps support, and the article whose assumptions are discharged here.
 
-- [The Lagrangian and the Non-Abelian Gauge Fields](the-lagrangian-and-the-non-abelian-gauge-fields.html). The $\mathrm{SU}(2)$ action written in the algebra, against which the transcription of §*The Ceiling* is measured.
+- [The Lagrangian and the Non-Abelian Connections](the-lagrangian-and-the-non-abelian-gauge-fields.html). The $\mathrm{SU}(2)$ action written in the algebra, against which the transcription of §*The Ceiling* is measured.
 
 - [The One-Loop Effective Potential of the Scalar Matrix](the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html). The Hessian and the coefficient this article supplies the fermionic half of.
 

@@ -70,7 +70,7 @@ $$
 \mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}+ϙ\omicron_{\mathrm{pot}},
 $$
 
-which are the kinetic momentum and the kinetic energy. Both are invariant under the gauge transformation of §*The Gauge Transformation Read on the Word*, term by term: the phase gradient shifts by $+\frac{2\pi ϙ}{h}\vec\nabla_\Phi\Gamma$ and $\vec A$ by $-\vec\nabla_\Phi\Gamma$; the phase rate shifts by $-\frac{2\pi ϙ}{h}\partial_{t'}\Gamma$ and $\omicron_{\mathrm{pot}}$ by $+\partial_{t'}\Gamma$.
+which are the kinetic momentum and the kinetic energy. Both are invariant under the local transformation of §*The Local Transformation Read on the Word*, term by term: the phase gradient shifts by $+\frac{2\pi ϙ}{h}\vec\nabla_\Phi\Gamma$ and $\vec A$ by $-\vec\nabla_\Phi\Gamma$; the phase rate shifts by $-\frac{2\pi ϙ}{h}\partial_{t'}\Gamma$ and $\omicron_{\mathrm{pot}}$ by $+\partial_{t'}\Gamma$.
 
 **The same statement for the general element, and its limit.** For a general element the bracket's central-imaginary part carries the phase rate and the boost's contribution, and the connection adds to the sum and cannot tell the two apart. That is not a defect: it is the exact statement that the potential shifts the phase and does not touch the rapidity, because the rapidity is the modulus of the Hermitian part and the added number is not Hermitian. The constant setting makes the same point in the flow's own numbers, and it is where the article turns next.
 
@@ -152,7 +152,7 @@ because $\vec\nabla_\Phi\times\nabla S$ vanishes identically. So the canonical f
 
 **The two limits of the same word.** In the constant setting the vector potential shifts the rotor's axis, and in the operator setting it enters the phase gradient. The two are one statement: the rotor's axis is the direction of the momentum, and the phase gradient is the momentum's value. What differs is which of them the equation uses, and that depends on whether the operator has spatial derivatives.
 
-## The Gauge Transformation Read on the Word
+## The Local Transformation Read on the Word
 
 **The transformation.** With $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $\Gamma$ real, the field becomes $\digamma_{\mathrm{gau}}\tilde\Xi$, and since $\digamma_{\mathrm{gau}}$ is central and commutes with every invertible element, the word's factors transform one at a time:
 
@@ -259,8 +259,8 @@ the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2
 - [The Coupled Schrödinger Equation in Biquaternionic Form](the-coupled-schrodinger-equation-in-biquaternionic-form.html), the element-form companion, for the equation, the sign bookkeeping of the two slots and the current.
 - [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), where the redundant direction of the chart is what the action's symmetry acts on.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the carrier, the two settings and the centrality of $i$.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the centre that this article reads as a translation of $\theta_{\mathrm{pha}}$.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator whose two slots the chart reads.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the centre that this article reads as a translation of $\theta_{\mathrm{pha}}$.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator whose two slots the chart reads.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same construction in the second-order case, where the chart's redundant direction is one coordinate among several.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the case in which the connection reaches all four brackets.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its bijection.

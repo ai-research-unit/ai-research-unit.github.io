@@ -378,7 +378,7 @@ The module is the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$. It 
 - **The module carries four invariant forms.** The quaternionic form is invariant under the whole group and pairs one value with the other; the Hermitian form $h$ is positive definite and invariant exactly on the compact $SU(2)$; the indefinite form $[\,\cdot\,|\,\cdot\,]$ is invariant exactly on the stabiliser of a direction, the group $SU(1,1)$; and $h$ with the conjugate action on the second factor pairs the two labels.
 - **The map to the Hermitian sector.** A pair of fields gives the Hermitian element $\tfrac12(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*})$, equivariant under the two-sided operator, and a single field gives a null Hermitian element whose scalar part is half its Hermitian norm. The vector action is the tensor square of the one-sided action.
 
-What the article does **not** supply is a dynamics. It supplies the carrier, the action, the invariant forms and the map to four-vectors; the Dirac equation, the mass terms and the gauge couplings are the subjects of the companion articles.
+What the article does **not** supply is a dynamics. It supplies the carrier, the action, the invariant forms and the map to four-vectors; the Dirac equation, the mass terms and the connection couplings are the subjects of the companion articles.
 
 ## Summary of Notation
 

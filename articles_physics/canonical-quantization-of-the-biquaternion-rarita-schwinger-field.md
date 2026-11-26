@@ -20,7 +20,7 @@ The article is organized as follows. The field and its frame are fixed first, an
 
 - Companion article *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*, for the classical equation, the chiral pair, and the rest-frame reduction.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the spinor carrier and the frame basis operators.
-- Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the massless gauge field whose gauge structure the massless Rarita–Schwinger case generalizes.
+- Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the massless connection whose structure the massless Rarita–Schwinger case generalizes.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the fermionic quantization of half-integer-spin fields.
 
 ## The Field, Its Constraint, and Transversality
@@ -435,7 +435,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 ## Further Reading
 
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
-- C. Becchi, A. Rouet and R. Stora, "Renormalization of Gauge Theories," *Annals of Physics* **98** (1976) 287–321, for the BRST symmetry that governs the gauge fixing of the massless field.
+- C. Becchi, A. Rouet and R. Stora, "Renormalization of Connection theory," *Annals of Physics* **98** (1976) 287–321, for the BRST symmetry that governs the choice of representative of the massless field.
 - W. Rarita and J. Schwinger, "On a Theory of Particles with Half-Integral Spin," *Physical Review* **60** (1941) 61, for the original vector-spinor equation and constraint.
 - Paul A. M. Dirac, "Generalized Hamiltonian Dynamics," *Canadian Journal of Mathematics* **2** (1950) 129–148, for the constraint analysis and the quantization with constraints.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. I: Foundations* (Cambridge, 1995), for the canonical quantization of fields with constraints and the spin–statistics connection.

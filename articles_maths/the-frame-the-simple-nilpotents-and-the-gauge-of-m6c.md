@@ -142,7 +142,7 @@ and so on. Each intermediate product is a matrix unit because the inner indices 
 
 **Remark.** The words *simple* and *composite* refer to the length of the chain from $i$ to $j$: the simple ones have length one, the composites have length $j-i\ge2$. The algebra has five simple nilpotents and ten composite ones in the positive set, and the same numbers in the negative set.
 
-## The Gauge
+## The Indefinite Form
 
 ### The Action on the Frame
 

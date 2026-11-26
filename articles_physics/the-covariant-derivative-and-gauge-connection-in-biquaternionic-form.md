@@ -1,4 +1,4 @@
-# __The Covariant Derivative and Gauge Connection in Biquaternionic Form__
+# __The Covariant Derivative and Connection in Biquaternionic Form__
 
 ## Introduction
 
@@ -21,7 +21,7 @@ together with the identification of the field strength with the curvature, $\til
 The article develops the two objects in four directions that the minimal coupling article did not pursue.
 
 - **The derivative as an operator.** $\tilde\nabla_{\mathrm{gco},\Phi}$ is a first-order differential operator, not an element of $\mathbb{B}$. It is a derivation on the algebra of fields, and the connection is precisely the difference between $\tilde\nabla_{\mathrm{gco},\Phi}$ and $\tilde\nabla_\Phi$: $[\tilde\nabla_{\mathrm{gco},\Phi,\imath}, f] = \partial/\partial R_{\imath} f$ for a scalar function $f$.
-- **The connection as an orbit.** Covariance does not merely hold for $\tilde\nabla_{\mathrm{gco},\Phi}$; it *determines* it. Requiring $\tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}$ for a central phase $\digamma_{\mathrm{gau}}$ forces the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection has no invariant local value — it can be gauged to zero at any one point — and only its curvature obstructs doing so on a neighbourhood.
+- **The connection as an orbit.** Covariance does not merely hold for $\tilde\nabla_{\mathrm{gco},\Phi}$; it *determines* it. Requiring $\tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}$ for a central phase $\digamma_{\mathrm{gau}}$ forces the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection has no invariant local value — it can be set to zero by a choice of representative at any one point — and only its curvature obstructs doing so on a neighbourhood.
 - **The curvature as a commutator that closes on the algebra.** The commutator $[\tilde\nabla_{\mathrm{gco},\Phi,\imath}, \tilde\nabla_{\mathrm{gco},\Phi,\jmath}]$ is multiplication by $\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$; unlike $\tilde\nabla_{\mathrm{gco},\Phi}$ itself, it is an element of $\mathbb{B}$.
 - **The covariant square.** With $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ the quaternion conjugate of $\tilde\nabla_{\mathrm{gco},\Phi}$, the exact operator identity splits into the covariant d'Alembertian in its scalar part and the curvature in its vector part:
 $$
@@ -108,7 +108,7 @@ and this is the precise sense in which the connection "compensates" for the ordi
 
 **4. $\tilde\nabla_{\mathrm{gco},\Phi}$ is not closed under multiplication, but its commutator is.** The composition $\tilde\nabla_{\mathrm{gco},\Phi,\imath} \tilde\nabla_{\mathrm{gco},\Phi,\jmath}$ is a second-order operator and is not an algebra element. The *commutator* $[\tilde\nabla_{\mathrm{gco},\Phi,\imath},\tilde\nabla_{\mathrm{gco},\Phi,\jmath}]$, on the other hand, is first order and in fact has no derivative at all: it is multiplication by an element of $\mathbb{B}$. That element is the curvature, treated in its own section below. This is the structural reason the connection strength is the commutator of covariant derivatives rather than any single $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$.
 
-## Gauge Covariance and What It Forces
+## Covariance and What It Forces
 
 The minimal coupling article proves the covariance of the construction (inherited here, not rederived): with $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ a central phase and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$, the covariant derivative built from $\tilde{A}_{\Phi,2}$ satisfies
 
@@ -116,7 +116,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}
 $$
 
-Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
+Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the connection angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
 for every field $\tilde{Ξ}$, so the equation $\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ} = 0$ holds in every gauge when it holds in one. For the present article the important point is the converse direction, which the minimal coupling article did not state: **covariance determines $\tilde\nabla_{\mathrm{gco},\Phi}$; the connection is forced, not chosen.**
 
@@ -158,7 +158,7 @@ The centrality of $\digamma_{\mathrm{gau}}$ is what makes the transformation law
 
 The reality of the phase function is inherited as well. A real $\Gamma$ keeps $\tilde{A}_{\Phi}$ in the material sector: $\tilde\nabla_\Phi\Gamma$ has an imaginary scalar coefficient and real vector coefficients, exactly the membership condition of $\mathbb{B}_{\Phi}$; a complex $\Gamma$ would move the connection out of it.
 
-## The Connection as a Gauge Orbit
+## The Connection as an Orbit
 
 The transformation law makes the connection's status precise.
 
@@ -168,7 +168,7 @@ $$
 S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_t + \mathrm{div}\,\vec A,
 $$
 
-transforms as $S_2 = S - \Box_\Phi\Gamma$, so $S$ is a pure-gauge quantity; the Lorenz gauge $S = 0$ is a choice, not a condition. This is the gauge scalar of the Maxwell article, inherited unchanged.
+transforms as $S_2 = S - \Box_\Phi\Gamma$, so $S$ is a pure gradient quantity; the Lorenz fixing condition $S = 0$ is a choice, not a condition. This is the scalar part of the Maxwell article, inherited unchanged.
 
 **Pure-connections are flat.** If $\tilde{A}_{\Phi} = \tilde\nabla_\Phi\Gamma$ for a scalar function $\Gamma$, then
 
@@ -307,7 +307,7 @@ $$
 
 which is $\Box_\Phi$ with the sign of $\Delta_\Phi$ reversed and a vector part added. The expression is derived here from the squares of the invertibles, and it was checked with residual $0$ on random polynomial scalar functions. The Laplacian enters with opposite signs because the spatial legs of $\tilde\nabla_\Phi$ square to $-e_t$ while $e_{\imath}^{\natural} e_{\imath} = e_t$ for every $\mu$, and the mixed derivatives leave a vector part wherever they do not vanish. Writing $\tilde\nabla_\Phi^2 = \Box_\Phi$ would therefore be wrong by $2\Delta_\Phi$ in the scalar part and by that vector part.
 
-**The minimal coupling** replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}$ by $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ in the pair, which is the coupled pair of *Gauge Covariance and What It Forces*. The replacement holds term by term because the coefficients $A_{\imath}$ are central and pass through the invertibles.
+**The minimal coupling** replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}$ by $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ in the pair, which is the coupled pair of *Covariance and What It Forces*. The replacement holds term by term because the coefficients $A_{\imath}$ are central and pass through the invertibles.
 
 ## What the Algebra Supplies, Transcribes, and Only Interprets
 
@@ -319,7 +319,7 @@ The boundary can be drawn as in the companion articles.
 
 **What is interpretation.** The bundle picture — connection as parallel transport, curvature as infinitesimal holonomy — is a consistent interpretation of the algebraic content. The one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ lies in the real-quaternion subspace and its loop integral is invariant by the fundamental theorem of calculus ($\oint d\Gamma = 0$); the geometric interpretation of those two facts is interpretation, and the identity $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} \tilde\nabla_{\mathrm{gco},\Phi} = \sum_{\imath}  \tilde\nabla_{\mathrm{gco},\Phi,\imath}^2 +\frac{2\pi i\,ϙ}{h}\tilde{F}$ is what makes the interpretation precise.
 
-## The Gauge Connection and the Gravitational Connection
+## The Connection and the Gravitational Connection
 
 The word "connection" is used in the framework for two different objects, and conflating them is an error worth naming.
 
@@ -351,7 +351,7 @@ A second external source goes further and puts the two objects into one. J. Fred
 
 6. **Fixing the representative.** The canonical-quantization article establishes that the framework cannot fix the gauge. The present article does not supply a selection principle either; the orbit of the connection is exactly as large as the local phases allow.
 
-7. **Empirical contact.** As everywhere in the framework, the open question is whether any of this yields a prediction distinguishing it from standard gauge theory. The construction above is a reformulation; the question of empirical contact is untouched by it.
+7. **Empirical contact.** As everywhere in the framework, the open question is whether any of this yields a prediction distinguishing it from standard connection theory. The construction above is a reformulation; the question of empirical contact is untouched by it.
 
 ## Summary
 
@@ -365,7 +365,7 @@ $$
 
 with $\tilde{A}_{\Phi} = \sum_{\imath} A_{\imath} e_{\imath} \in \mathbb{B}_{\Phi}$ the connection. It is not an element of the algebra; it is a derivation on fields, with Leibniz rule $\tilde\nabla_{\mathrm{gco},\Phi}(f\tilde{Ξ}) = f\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ} + (\tilde\nabla_\Phi f)\tilde{Ξ}$ and commutator $[\tilde\nabla_{\mathrm{gco},\Phi,\imath},f] = \partial/\partial R_{\imath} f$, so that the connection is exactly the difference $\tilde\nabla_{\mathrm{gco},\Phi,\imath} - \partial/\partial R_{\imath} =\frac{2\pi i\,ϙ}{h}A_{\imath}$.
 
-Covariance determines the connection rather than merely holding for it: the requirement $\tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}$ forces $\Omega_2 = \digamma_{\mathrm{gau}}\Omega\digamma_{\mathrm{gau}}^{-1} - (\tilde\nabla_\Phi\digamma_{\mathrm{gau}})\digamma_{\mathrm{gau}}^{-1}$, which for $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ is the inherited law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection is an orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ lies in the real-quaternion subspace and has an invariant loop integral.
+Covariance determines the connection rather than merely holding for it: the requirement $\tilde\nabla_{\mathrm{gco},\Phi,2}(\digamma_{\mathrm{gau}}\tilde{Ξ}) = \digamma_{\mathrm{gau}} \tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}$ forces $\Omega_2 = \digamma_{\mathrm{gau}}\Omega\digamma_{\mathrm{gau}}^{-1} - (\tilde\nabla_\Phi\digamma_{\mathrm{gau}})\digamma_{\mathrm{gau}}^{-1}$, which for $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ is the inherited law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection is an orbit, not a value: it can be set to zero by a choice of representative at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_{\imath} A_{\imath}\,dx_{\imath}$ lies in the real-quaternion subspace and has an invariant loop integral.
 
 The curvature is the commutator of covariant derivatives, $[\tilde\nabla_{\mathrm{gco},\Phi,\imath},\tilde\nabla_{\mathrm{gco},\Phi,\jmath}] =\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$, and contracts to the field strength $\tilde{F} =\frac{h}{4\pi \,i\,ϙ}\sum_{\imath\jmath}[\tilde\nabla_{\mathrm{gco},\Phi,\imath},\tilde\nabla_{\mathrm{gco},\Phi,\jmath}]e_{\imath}^{\natural} e_{\jmath}$. Unlike $\tilde\nabla_{\mathrm{gco},\Phi,\imath}$, the commutator is an element of the algebra. The covariant square separates cleanly,
 
@@ -405,7 +405,7 @@ The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco},\Phi}\
 | $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural} = (\tilde\nabla_\Phi)^{\natural}+\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}^{\natural}$ | Quaternion conjugate of $\tilde\nabla_{\mathrm{gco},\Phi}$ |
 | $\tilde{A}_{\Phi}^{\natural}$ | Quaternion conjugate of the connection, by *Product and Form Conventions* |
 | $[\tilde\nabla_{\mathrm{gco},\Phi,\imath}, f] = \partial/\partial R_{\imath} f$ | Derivation property |
-| $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2 = S - \Box_\Phi\Gamma$ | Gauge scalar; pure gauge |
+| $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2 = S - \Box_\Phi\Gamma$ | Scalar part; pure gradient |
 | $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\imath\jmath}F_{\imath\jmath}e_{\imath}^{\natural} e_{\jmath}$ | Field strength = curvature, invariant |
 | $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath}$ | Abelian curvature components |
 | $[\tilde\nabla_{\mathrm{gco},\Phi,\imath}, \tilde\nabla_{\mathrm{gco},\Phi,\jmath}] =\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$ | Curvature as commutator |
@@ -417,16 +417,16 @@ The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco},\Phi}\
 
 ## Further Reading
 
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the transformation law, the covariance, and the curvature identity inherited here.
-- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the potential, the field strength, the gauge scalar $S$, and the Maxwell equation.
-- [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the gauge-invariant content of $\tilde{F}$, which this article uses but does not develop.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the transformation law, the covariance, and the curvature identity inherited here.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the potential, the field strength, the scalar part $S$, and the Maxwell equation.
+- [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the invariant content of $\tilde{F}$, which this article uses but does not develop.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the massless field equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ and the minimal-coupling question.
 - [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) — the coupled Dirac equation, the left/right matter-representation question, and the companion that names the covariant-derivative article.
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the free scalar equation $(\Box_\Phi - 4\pi^{2}\nu_m^{2})\tilde{Ξ} = 0$ whose covariantization is the gap discussed here.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the covariant derivative read on the two parts named by the subscript, and the charge-operator representation.
-- [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html) — the framework's inability to fix the gauge, which bounds the gauge orbit treated here.
+- [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html) — the framework's inability to fix the gauge, which bounds the orbit treated here.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) and [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the sector decomposition, the four-vectors, and the pairing formula.
-- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article, and the record of the Lorentz-gauging / Euler–Lagrange ambiguity.
-- J. Fredsted, "Obtaining consistent Lorentz gauging for a gravitationally coupled fermion," arXiv:1906.12200v3 [physics.gen-ph] (2019), for the external result recorded in *The Gauge Connection and the Gravitational Connection*: the non-commutativity of internal-gauge localization (which this article's abelian construction enjoys) with the Euler–Lagrange variation when the gauge group is the Lorentz group, and the world-index formalism in which they commute again. Cited as an external claim and not adopted.
-- J. Fredsted, "Spinor fields without Lorentz frames in curved spacetime using complexified quaternions," arXiv:0811.1357v4 [math-ph] (2009), for the external construction, also recorded in *The Gauge Connection and the Gravitational Connection*, in which one algebra-valued connection carries both the local $\mathrm{U}(1)$ and the Lorentz connection; cited as evidence that the two connections of this section are not forbidden to be one, with no reason to identify them asserted here.
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the two-sided gravitational connection, distinct from the one-sided connection of this article, and the record of the Lorentz-making local / Euler–Lagrange ambiguity.
+- J. Fredsted, "Obtaining consistent Lorentz making local for a gravitationally coupled fermion," arXiv:1906.12200v3 [physics.gen-ph] (2019), for the external result recorded in *The Connection and the Gravitational Connection*: the non-commutativity of internal-gauge localization (which this article's abelian construction enjoys) with the Euler–Lagrange variation when the symmetry group is the Lorentz group, and the world-index formalism in which they commute again. Cited as an external claim and not adopted.
+- J. Fredsted, "Spinor fields without Lorentz frames in curved spacetime using complexified quaternions," arXiv:0811.1357v4 [math-ph] (2009), for the external construction, also recorded in *The Connection and the Gravitational Connection*, in which one algebra-valued connection carries both the local $\mathrm{U}(1)$ and the Lorentz connection; cited as evidence that the two connections of this section are not forbidden to be one, with no reason to identify them asserted here.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html) — the multiplication rule, the conjugations, and the centre.

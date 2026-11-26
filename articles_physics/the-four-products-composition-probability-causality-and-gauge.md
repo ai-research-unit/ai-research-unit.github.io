@@ -1,4 +1,4 @@
-# __The Four Products: Composition, Probability, Causality and Gauge__
+# __The Four Products: Composition, Probability, Causality and the Indefinite Form__
 
 ## Introduction
 
@@ -347,7 +347,7 @@ So the light cone is not closed under composition inside the sector: the sum of 
 
 The boundary. The metric is the quaternionic form, not the plain one, and the causal structure lives on $\mathbb{B}_{\Phi}$; on the whole algebra the zero set is the zero-divisor cone, which is larger than the light cone. No propagation equation and no speed is derived here.
 
-### I.6.h — Gauge: an Indefinite Form Is a Constraint, Not a State
+### I.6.h — The Indefinite Form: A Constraint Is Not a State
 
 Read: the quaternionic sesquilinear product has the Krein form as its scalar part, Hermitian and indefinite, of inertia $(2,6)$ on the real algebra and $(1,3)$ on each four-dimensional real-type subspace.
 
@@ -366,7 +366,7 @@ so the quaternion conjugation is the fundamental symmetry of the indefinite stru
 
 The physical reading is that a constraint is not a state. **A definite form counts states: it is positive, it normalises, and its rank-one elements are pure states.** An indefinite form fixes a redundancy: it distinguishes the two signs and leaves the normalisation to a choice of representative. On the material sector the Krein form is minus the interval, so the gauge form and the causal form are one form read with a sign, and on the informational sector they coincide.
 
-The boundary. The Krein form is a form, not a gauge theory. No group, no coupling and no field content is derived. What the algebra supplies is the inertia, the fundamental symmetry and the resulting orthogonality.
+The boundary. The Krein form is a form, not a connection theory. No group, no coupling and no field content is derived. What the algebra supplies is the inertia, the fundamental symmetry and the resulting orthogonality.
 
 ### I.6.i — The Obstruction Needs a Complex Witness
 
@@ -420,7 +420,7 @@ The sharpest case is the Jacobi failure of the gauge bracket. It is invisible on
 
 The boundary. The twelve are the operations of the complex space. A real form carries ten of them, and every statement of the source articles is a statement about the complex space unless it says otherwise.
 
-### I.6.m — In the Gauge Band an Idempotent Is Invertible
+### I.6.m — In the Indefinite Band an Idempotent Is Invertible
 
 Read: the equation $\tilde\Pi_{\mathrm{id}}\star\tilde\Pi_{\mathrm{id}}=\tilde\Pi_{\mathrm{id}}$ is relative to the product, so the word *idempotent* names a different set in each band; and in one of them the elements of that set are invertible.
 
@@ -440,11 +440,11 @@ $$
 \tilde\Pi_{\mathrm{id},d}\tilde\Pi_{\mathrm{id},d}^{\natural}=e_t,
 $$
 
-so $\tilde\Pi_{\mathrm{id},d}$ has inverse $\tilde\Pi_{\mathrm{id},d}^{\natural}$ and is not a zero divisor. The physical reading is the one this entry is built to give: an idempotent is an outcome only in the plain band, and the implication *idempotent, therefore irreversible* is a statement about that band and not about the algebra. In the gauge band the projection is reversible, and a reader who carries the vocabulary across the bands carries a falsehood with it.
+so $\tilde\Pi_{\mathrm{id},d}$ has inverse $\tilde\Pi_{\mathrm{id},d}^{\natural}$ and is not a zero divisor. The physical reading is the one this entry is built to give: an idempotent is an outcome only in the plain band, and the implication *idempotent, therefore irreversible* is a statement about that band and not about the algebra. In the indefinite band the projection is reversible, and a reader who carries the vocabulary across the bands carries a falsehood with it.
 
 The pair reading fails in the same band. The complement $e_t-\tilde\Pi_{\mathrm{id},d}=\tfrac32e_t-\tfrac{\sqrt3}{2}\vec u$ is not an idempotent of that product, so there is no complete orthogonal pair and no resolution of the unit into two outcomes. Only the plain band and the general plain sesquilinear band carry a complementation that preserves their family, which is why the two-outcome reading is made in I.6.b and I.6.d and nowhere else.
 
-The boundary. The statement is a statement about solution sets, and it is why the twelve rows of the root table cannot be read by one vocabulary. It derives no gauge theory and says nothing about whether a physical projection may be reversible; it says that in this band the algebra does not force the question.
+The boundary. The statement is a statement about solution sets, and it is why the twelve rows of the root table cannot be read by one vocabulary. It derives no connection theory and says nothing about whether a physical projection may be reversible; it says that in this band the algebra does not force the question.
 
 ## The Limits
 
@@ -474,7 +474,7 @@ The collapse on the real part is a loss of information, not a simplification. A 
 - The two central symmetrisations have no vector part, which is why the parent and its antisymmetric half share a vector part in those two families; the twelve vector parts fall into nine classes.
 - Exactly two of the twelve satisfy a classical identity, the Jordan product and the Lie bracket of the plain product, and they exist because the plain product is the only associative parent.
 - The Jacobi failures count $252$, $144$ and $72$ triples; the Jordan failures count $7$, $6$ and $4$ elements; the sparsest Jacobi failure needs a complex witness.
-- An idempotent belongs to a band: the gauge band's idempotents are $- \tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$, they are invertible in the algebra, and their complement is not one of them, so the pair reading does not reach that band.
+- An idempotent belongs to a band: the indefinite band's idempotents are $- \tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$, they are invertible in the algebra, and their complement is not one of them, so the pair reading does not reach that band.
 - The grid is a grid of products on $\mathbb{B}$, so entanglement is not a fifth row: a shared state is an element of $\mathbb{B}\otimes\mathbb{B}$ and the partial trace is a map on the tensor square.
 - The four forms have inertias $(0,4)$ or $(4,0)$, $(3,1)$ or $(1,3)$, $(4,0)$, $(1,3)$ on the two sectors, which is the algebraic content of the four names.
 - Probability is the only definite form, and its product has no clock: the central element squares to $+e_t$, there is no nilpotent of index two, and the cone appears at the third power.

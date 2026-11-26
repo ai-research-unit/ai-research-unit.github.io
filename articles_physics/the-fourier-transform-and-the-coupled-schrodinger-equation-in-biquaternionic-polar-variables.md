@@ -42,7 +42,7 @@ The transform is therefore covariant. A gauge-transformed field has a gauge-tran
 
 The chart's reading of the same line. The kernel's word has $\theta_{\mathrm{pha}}=\theta_{\mathrm{pwp}}$ and nothing else; the group factor has $\theta_{\mathrm{pha}}=\frac{2\pi ϙ\Gamma}{h}$ and nothing else. Two elements that each carry one coordinate commute, because a central unit is a function of the centre alone.
 
-What this does not say. It does not say that the transform is gauge invariant. The transform of a gauge-transformed field is a gauge-transformed transform, and the phase of the coefficients moves with $\Gamma$. **Covariance is the statement, and invariance is a different statement**; the invariants of §*The Invariants Are Not Functionals of the Symbol* are gauge invariant, and the coefficients are not.
+What this does not say. It does not say that the transform is invariant. The transform of a gauge-transformed field is a gauge-transformed transform, and the phase of the coefficients moves with $\Gamma$. **Covariance is the statement, and invariance is a different statement**; the invariants of §*The Invariants Are Not Functionals of the Symbol* are invariant, and the coefficients are not.
 
 The kernel's own word is unchanged by the coupling. The transform's kernel carries no charge, so the connection does not enter it. The coupling is entirely in the field and in the equation, and the transform is the same operation as in the free article.
 

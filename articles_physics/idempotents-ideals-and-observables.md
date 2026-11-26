@@ -317,7 +317,7 @@ The physical reading is that a chirality carries no multiplicative charge. A one
 
 The boundary. $\varsigma_{\mathrm{prc}}$ is complex-linear and it is a legitimate linear functional; only multiplicativity fails. A computation may use it freely as a linear map, and must not use it as a homomorphism. The trace of the matrix image is the same kind of object, and it fails in the same way.
 
-### I.3.i — The Gauge of a Peirce Basis Is the Phase of the State Vector
+### I.3.i — The Redundancy of a Peirce Basis Is the Phase of the State Vector
 
 Read: completing the cut to a basis needs one point in each mixed line, and the choice is free up to a complex parameter.
 
@@ -403,7 +403,7 @@ Two readings are labelled and not proved. The identification of the Hermitian id
 - The Peirce corners are four complex lines obeying $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$, and they are graded by parity.
 - The Peirce functional $\varsigma_{\mathrm{prc}}(\tilde Q)=Q_t-iQ_z$ is linear and not multiplicative, and its failure is the simplicity of the algebra.
 - The whole Peirce basis lies on the isotropic cone.
-- A Peirce basis is fixed up to a one-parameter complex gauge, and the gauge is the ray freedom of the state vector.
+- A Peirce basis is fixed up to a one-parameter complex gauge, and the fixing condition is the ray freedom of the state vector.
 - Every element factorises as $\tilde U(re_t+s\tilde Z)\tilde V^{*}$ with $r,s$ its singular values, independent of the root.
 - The two-outcome observables are the Hermitian roots; the pure states are the Hermitian idempotents; the mixed states are neither.
 

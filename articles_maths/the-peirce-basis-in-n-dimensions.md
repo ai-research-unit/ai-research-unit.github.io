@@ -57,7 +57,7 @@ $$
 
 So the coordinate of $XY$ in position $(k,q)$ is $\sum_{l}X_{kl}Y_{lq}$. In a Peirce basis the algebra reads as the array of its coordinates with the matrix product. This is a statement about coordinates, not a new object: the array is the element written in the chosen basis.
 
-## The Gauge
+## The Indefinite Form
 
 **Theorem.** Let $E$ and $E'$ be two Peirce bases of the same family. Then there are nonzero scalars $t_{1},\dots,t_{n}$ with
 

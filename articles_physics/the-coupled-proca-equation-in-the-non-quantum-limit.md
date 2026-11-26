@@ -43,7 +43,7 @@ $$
 
 with the same four types as the Dirac chart: real central, central imaginary, Hermitian, real vector part. The limit's order structure is therefore the Dirac family's, and the reason is that the carrier admits the same four factors.
 
-For $A_{\imath}=\partial_{\imath}\Lambda$ the covariant derivative acts as $i\partial_{\imath}(\theta_{\mathrm{pha}}+\frac{2\pi q}{h}\Lambda)$, so the entire effect of a pure gauge potential is a reparameterisation of one coordinate — the parent's section title and the reason the criterion must be written on the mechanical phase gradient.
+For $A_{\imath}=\partial_{\imath}\Lambda$ the covariant derivative acts as $i\partial_{\imath}(\theta_{\mathrm{pha}}+\frac{2\pi q}{h}\Lambda)$, so the entire effect of a pure gradient potential is a reparameterisation of one coordinate — the parent's section title and the reason the criterion must be written on the mechanical phase gradient.
 
 The second-order operator reads
 

@@ -158,7 +158,7 @@ $$
 
 **Remark.** **The flag and the frame are not the same data.** The flag is the chain of subspaces; the frame is a splitting of the flag into lines, and the simple nilpotents depend on the splitting, not only on the flag. This is the same distinction as the one between the root set $PGL_5/T$ and the flag variety $GL_5/B$: the fibre of splittings has dimension $10$. The simple nilpotents are the elementary maps of a splitting; a different splitting changes them by the gauge and by the unipotent part.
 
-## The Gauge
+## The Indefinite Form
 
 ### The Diagonal Gauge
 

@@ -20,7 +20,7 @@ $$
 \Gamma_{a,\imath}=-ig_{4}\gamma_{\imath}\bigl(t_{a}\otimes\mathbb{1}_{2}\bigr),
 $$
 
-**with $t_{a}$ the normalised generator of [the rules article](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html)'s normalisation section, and the heavy propagator in the limit $k^{2}\ll M_X^{2}$**
+**with $t_{a}$ the normalised generator of $t_{a}$'s normalisation section, and the heavy propagator in the limit $k^{2}\ll M_X^{2}$**
 $$
 \frac{i}{k^{2}-M_X^{2}}\ \longrightarrow\ \frac{-i}{M_X^{2}} .
 $$
@@ -51,7 +51,7 @@ $$
 i\mathcal{M}=i\,\frac{g_4^{2}}{2M_X^{2}}\Bigl[(\bar q\,\gamma^{\imath}P_L\ell)(\bar q'\,\gamma_{\imath}P_L\ell')+(L\to R)\Bigr],
 $$
 
-**with the factor $\tfrac12$ carried in the corpus's operator; it is not a colour sum**, and the colour sum was disposed of in the paragraph above. The $V-A$ at each vertex is the model's: the left-handed block couples $P_{L}$, the right-handed block $P_{R}$, and both appear because both chiralities of the mixed plane exist. **The operator is the one the corpus prints in [the lepton-flavour article](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html), and the $L\to R$ line is not an afterthought**: it is the second of the two planes of the pair.
+**with the factor $\tfrac12$ carried in the corpus's operator; it is not a colour sum**, and the colour sum was disposed of in the paragraph above. The $V-A$ at each vertex is the model's: the left-handed block couples $P_{L}$, the right-handed block $P_{R}$, and both appear because both chiralities of the mixed plane exist. **The operator is the one the corpus prints in $\tfrac12$, and the $L\to R$ line is not an afterthought**: it is the second of the two planes of the pair.
 
 **Why $K_L$ and not $K_S$.** The kaon is a pseudoscalar, so only the axial part of a $V-A$ current contributes, and the axial matrix element is odd under $K^{0}\leftrightarrow\bar K^{0}$. **With $K_S$ the symmetric combination and $K_L$ the odd one, the odd combination survives and the even one cancels**: the frame predicts $K_L\to\mu e$ and forbids $K_S\to\mu e$ at leading order, with a residue at the $|\epsilon_K|^{2}$ level near $10^{-20}$. **That is a selection rule of the algebra plus one fact about a kaon, and neither is adjustable.**
 
@@ -126,7 +126,7 @@ $$
 
 **Why it is $\tfrac43$ and not $3$ or $\tfrac12$.** The factor attached to an external quark line that emits a gluon is $C_F$, the quadratic Casimir of the triplet; $3$ is the number of colours, which appears when a colour sum is made and none is made here; $\tfrac12$ is $T_R$, the normalisation of the trace, which appears when the gluon is the external state. **A reader who mixes the three gets a diagram wrong by a factor of $\tfrac83$ or $\tfrac{2}{3}$, and the rule is: $C_F$ per external quark line, $T_R$ per quark loop, $N_c$ per colour sum.**
 
-**What the diagram does not test.** It does not test the mixed band, because no leptoquark appears, and **there is no weak sector to leave untested**: the model has no $\tau$, and the copy index is not gauged. **It tests exactly one thing: that the corner of $\mathrm{SU}(4)$ is an $\mathrm{SU}(3)$ with the standard Casimir**, and its value is a check on the normalisation rather than on the group.
+**What the diagram does not test.** It does not test the mixed band, because no leptoquark appears, and **there is no weak sector to leave untested**: the model has no $\tau$, and the copy index is not made local. **It tests exactly one thing: that the corner of $\mathrm{SU}(4)$ is an $\mathrm{SU}(3)$ with the standard Casimir**, and its value is a check on the normalisation rather than on the group.
 
 **The comparison that the three diagrams make together.**
 
@@ -198,7 +198,7 @@ $$
 ## Further Reading
 
 - [The Feynman Rules of the $\mathrm{SU}(4)$ Model](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The vertices these three diagrams use, and the normalisation that produced $C_F$.
-- [The Fermion–Gauge Vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The matrices behind the two leptoquark vertices, with their charges.
+- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The matrices behind the two leptoquark vertices, with their charges.
 - [Lepton Flavour in the $\mathrm{SU}(4)$ Model: Nothing Turns the Lepton](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The operator, the rate, the $K_L$–$K_S$ selection and the assumption about $U$ in full.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The six states, the $B-L=\pm\tfrac43$, and the dimension-nine argument.
 - [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The $C_F$, $T_R$, $N_c$ bookkeeping in its own setting.

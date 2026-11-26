@@ -178,7 +178,7 @@ for some axis $\vec u_x$, where $\theta_{\mathrm{blc}}$ is the angle through whi
 
 The AA phase is the statement that the spinor phase and the geometry of the loop are locked together for a spin-1/2: the geometric phase is one half of the oriented solid angle swept by the Bloch vector, $\gamma_{\mathrm{geo}} = -\tfrac12\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}$. For the equator loop the swept solid angle has magnitude $2\pi$ and the phase is $\pi$ — one half of the full turn of the vector, which is why the spinor returns only to minus itself after one period. In general the relation between the geometric phase and the holonomy is a lift of an $SO(3)$ element to $SU(2)$, and the factor $\tfrac12$ is the statement that the lift is two-to-one.
 
-### Gauge Freedom and the Pancharatnam Connection
+### Redundancy and the Pancharatnam Connection
 
 The AA phase is defined for a cyclic evolution, but the geometric phase can be extended to non-cyclic paths by the **Pancharatnam connection**: for two non-orthogonal states $|\tilde{Ξ}_{1}\rangle$, $|\tilde{Ξ}_{2}\rangle$, the relative phase is $\arg\langle\tilde{Ξ}_{1}|\tilde{Ξ}_{2}\rangle$, and the geometric phase of a sequence is the total Pancharatnam phase minus the dynamical phases. In the algebra the Pancharatnam connection is again the Hermitian form, read through the scalar part,
 

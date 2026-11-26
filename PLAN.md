@@ -282,7 +282,7 @@ This requires judgement and organization.
 
 
 ################################
-### RULES WHEN MANAGING SUB AGENTS 
+### RULES WHEN MANAGING SUB AGENTS
 ################################
 
 **DO NOT LAUNCH SUB AGENTS WITHOUT APPROVAL**

@@ -48,7 +48,7 @@ $$
 
 so in a Peirce basis the algebra reads as the array of coordinates with the matrix product. The array is the element, not a new object.
 
-## The Gauge
+## The Indefinite Form
 
 **Theorem.** Two Peirce bases of the same family differ by
 

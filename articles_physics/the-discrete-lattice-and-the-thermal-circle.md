@@ -141,5 +141,5 @@ named as a gap and not proposed as a formula.
   Biquaternion Framework*, for the KMS periodicity and the modular flow.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the central phase that
   the thermal circle realises.
-- [The Four Products: Composition, Probability, Causality and Gauge](the-four-products-composition-probability-causality-and-gauge.html), for the discrete charge from the compact
+- [The Four Products: Composition, Probability, Causality and the Indefinite Form](the-four-products-composition-probability-causality-and-gauge.html), for the discrete charge from the compact
   group.

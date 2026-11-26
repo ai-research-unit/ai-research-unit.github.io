@@ -159,7 +159,7 @@ and the imported share is $19/22=86.4\%$. So the framework is not more parsimoni
 
 A reformulation that added parameters without fixing any would be a strictly worse description on the counting measure, The defence of the reformulation is not that it is smaller; it is that its objects are *geometric* — that a coupling is a connection coefficient, that a mass is an eigenvalue, that a phase is a central term — and that geometry is worth something even when it fixes nothing.
 
-One place the framework's parameters could bite: if $ϙ$ were related to one of the three gauge couplings by a structural argument, the count would fall by one and the claim would be grade two — a relation. No such argument exists in the corpus, and the gauge article records that no relation binds $ϙ$ to a second coupling. So the relation count is zero.
+One place the framework's parameters could bite: if $ϙ$ were related to one of the three connection couplings by a structural argument, the count would fall by one and the claim would be grade two — a relation. No such argument exists in the corpus, and the gauge article records that no relation binds $ϙ$ to a second coupling. So the relation count is zero.
 
 The three counts, assembled:
 
@@ -297,7 +297,7 @@ The table gives each item and its provenance.
 | $\digamma_{\mathrm{qtc}}=0.1291$, $\mu=1.578\times10^{-25}$ kg | Computed here from $M_H$ and $v$ |
 | The typology into five kinds | This article's classification |
 | The counts $8$, $9$, $2$ and their shares | Computed here |
-| The framework's three parameters | Imported from the gauge and massive-equation articles |
+| The framework's three parameters | Imported from the connection and massive-equation articles |
 | $19+3=22$, imported share $86.4\%$ | Computed here |
 | The one unit and the eighteen ratios | This article's counting argument |
 | $m_t/m_e=3.4\times10^{5}$, $v/M_{\mathrm{Pl}}=2.0\times10^{-17}$ | Computed here |
@@ -309,7 +309,7 @@ The table gives each item and its provenance.
 
 ## Summary
 
-The Standard Model has nineteen free parameters: nine fermion masses, four mixing parameters, three gauge couplings, the vacuum angle, the electroweak scale and the scalar mass. Three conventions give $18$, $19$, $19$; the list is stable. One unit is unobservable, so the physical content is eighteen dimensionless ratios.
+The Standard Model has nineteen free parameters: nine fermion masses, four mixing parameters, three connection couplings, the vacuum angle, the electroweak scale and the scalar mass. Three conventions give $18$, $19$, $19$; the list is stable. One unit is unobservable, so the physical content is eighteen dimensionless ratios.
 
 The framework fixes none of the nineteen values, produces one relation of a restricted kind (ratios of masses, scale free), and supplies the arena for eight — the four mixing coordinates, the three coupling normalisations, the one central phase. Nine more are eigenvalues of operators it represents but cannot diagonalise, and two, $v$ and $M_H$, have no arena at all.
 
@@ -330,7 +330,7 @@ Four machines would reduce the count: a spectral principle (ten entries), a scal
 | $v$ | Higgs expectation value, $3.9449\times10^{-8}$ J |
 | $M_H$ | Higgs mass, $2.2299\times10^{-25}$ kg |
 | $\mu^2$, $\digamma_{\mathrm{qtc}}$ | The two parameters of the scalar potential |
-| $g_{\mathrm Y}$, $g$, $g_s$ | The three gauge couplings |
+| $g_{\mathrm Y}$, $g$, $g_s$ | The three connection couplings |
 | $\theta_{\mathrm{QCD}}$ | The QCD vacuum angle |
 | $\theta_{ij}$, $\delta$ | CKM angles and phase |
 | $ϙ$ | The framework's central charge parameter |

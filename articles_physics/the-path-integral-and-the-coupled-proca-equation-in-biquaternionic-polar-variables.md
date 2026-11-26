@@ -178,5 +178,5 @@ The constraint's square is displayed, its saddle is the covariant Lorenz conditi
 - E. Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1927) 322–326, for the magnitude–phase pair that the free chart lacks.
 - R. P. Feynman and A. R. Hibbs, *Quantum Mechanics and Path Integrals* (McGraw-Hill, 1965), for the radial measure and the Fresnel factor in a change of variables.
 - H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 2009), for the polar chart of a Gaussian and its Jacobian.
-- L. D. Faddeev and A. A. Slavnov, *Gauge Fields: An Introduction to Quantum Theory* (Benjamin, 1980), for the phase as the gauge coordinate.
+- L. D. Faddeev and A. A. Slavnov, *Gauge Fields: An Introduction to Quantum Theory* (Benjamin, 1980), for the phase as the redundant coordinate.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the polar decomposition of an element of a Clifford algebra into a Hermitian modulus and a unitary phase.

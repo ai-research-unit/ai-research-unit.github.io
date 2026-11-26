@@ -131,7 +131,7 @@ $$
 
 The $1$ is a normalisation, not an eigenvalue. It is the coefficient of $\vec\Pi_{\mathrm{nil}}$ in the sum $\tilde Q=Q_te+1\cdot\vec\Pi_{\mathrm{nil}}+0\cdot\vec X+Q_tf$, and it can be changed by rescaling the corner generator while the element stays fixed.
 
-The form is invariant and the gauge is real. The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$; the four products above are. Over forty random conjugations by invertibles of norm one, the transported Peirce form closed to $5.1\times10^{-14}$.
+The form is invariant and the fixing condition is real. The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$; the four products above are. Over forty random conjugations by invertibles of norm one, the transported Peirce form closed to $5.1\times10^{-14}$.
 
 ### The Powers, the Inverse and the Flow
 

@@ -38,7 +38,7 @@ So the integral runs over $\mathbb{B}$, and the free integral is its real slice.
 
 The mass term is what makes the enlarged carrier acceptable, and the two facts are one. On the eight-dimensional carrier the invariant length $|a'_t|^{2}-|\vec A|^{2}$ is real and invariant under the phase, and the mass term built from it is a genuine mass term. On the four-dimensional carrier the mass term $\langle\tilde A_\Phi\rangle_\natural$ is real because the field is real, and it is indefinite because the metric is. **The carrier that closes under the coupling is the carrier on which the mass term is invariant**, exactly as the coupled equation article proves from the equation's side.
 
-No fixing the representative determinant is introduced, because the connection is external. The article treats $\tilde A_\Phi$ as a fixed background. That keeps the integral Gaussian in the Proca field, keeps the measure flat, and puts the Faddeev–Popov question out of scope — *The Gauge Field Path Integral in Biquaternionic Form* is where a dynamical connection's integral is treated. The Proca mass term still lifts the longitudinal zero mode, so even a dynamical connection would not need fixing the representative of the Proca field; what it would need is fixing the representative of the connection, which is a different object.
+No fixing the representative determinant is introduced, because the connection is external. The article treats $\tilde A_\Phi$ as a fixed background. That keeps the integral Gaussian in the Proca field, keeps the measure flat, and puts the Faddeev–Popov question out of scope — *The Connection Path Integral in Biquaternionic Form* is where a dynamical connection's integral is treated. The Proca mass term still lifts the longitudinal zero mode, so even a dynamical connection would not need fixing the representative of the Proca field; what it would need is fixing the representative of the connection, which is a different object.
 
 ## The Exponent
 
@@ -220,13 +220,13 @@ The coupled field has a charge, because the enlarged carrier has a phase and the
 - *The Path Integral and the Proca Equation in Biquaternionic Form*, for the free integral, the split and the ghost.
 - *The Coupled Proca Equation in Biquaternionic Form*, for the carrier change, the doubled coupling and the covariant constraint.
 - *The Lagrangian and the Coupled Proca Equation*, for the action and its two traces.
-- *The Gauge Principle in Biquaternionic Form*, for the localisation of the central phase.
-- *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, for the operator identity used here.
+- *The Minimal Coupling in Biquaternionic Form*, for the localisation of the central phase.
+- *The Covariant Derivative and Connection in Biquaternionic Form*, for the operator identity used here.
 - *The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form*, for a coupled integral whose carrier does not change.
-- *The Gauge Field Path Integral in Biquaternionic Form*, for the Faddeev–Popov construction that a dynamical connection would need.
+- *The Connection Path Integral in Biquaternionic Form*, for the Faddeev–Popov construction that a dynamical connection would need.
 - *Landau Levels in Biquaternionic Form*, for the constant magnetic background's spectrum of the transverse factor.
 - *Pair Creation in a Bounded Region in Biquaternionic Form*, for the constant electric background.
-- J. Schwinger, "On Gauge Invariance and Vacuum Polarization," *Physical Review* **82** (1951) 664, for the background-field determinant and its gauge invariance.
+- J. Schwinger, "On Local invariance and Vacuum Polarization," *Physical Review* **82** (1951) 664, for the background-field determinant and its local invariance.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the massive vector in a background and the counting of modes.
 - L. D. Faddeev and A. A. Slavnov, *Gauge Fields: An Introduction to Quantum Theory* (Benjamin, 1980), for the external-versus-dynamical distinction.
 - S. Weinberg, *The Quantum Theory of Fields II* (Cambridge, 1996), for the effective action of a massive vector.

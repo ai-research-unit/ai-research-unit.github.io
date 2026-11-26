@@ -36,11 +36,11 @@ which is the standard Schrödinger equation of a charged scalar field, written w
 
 **Four findings, and the first is the reason the article exists.**
 
-*First, the current closes inside the algebra.* The phase symmetry of the free article survives the coupling, and its Noether current is the derivative bilinear with every derivative covariant. It is real, it is conserved, and it is gauge invariant, and it needs no ingredient from outside $\mathbb{B}$: no adjoint row, no fixed frame unit, no second carrier. This is where the scalar case differs from the spinor case. The coupled Dirac article records that the naive bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and not conserved, and that the conserved object is a triple product with two fixed frame units; the Schrödinger current has neither defect. The contrast is stated once, in §*The Conserved Current*, and cited thereafter.
+*First, the current closes inside the algebra.* The phase symmetry of the free article survives the coupling, and its Noether current is the derivative bilinear with every derivative covariant. It is real, it is conserved, and it is invariant, and it needs no ingredient from outside $\mathbb{B}$: no adjoint row, no fixed frame unit, no second carrier. This is where the scalar case differs from the spinor case. The coupled Dirac article records that the naive bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and not conserved, and that the conserved object is a triple product with two fixed frame units; the Schrödinger current has neither defect. The contrast is stated once, in §*The Conserved Current*, and cited thereafter.
 
 *Second, the coupling is one central operator in four slots and not four rules.* The connection's coefficients are complex scalars, so they commute with the units, pass through the field, and never reach a rotor. There is no ordering question, no commutator, and no relative sign to choose: the temporal slot and the three spatial slots are one substitution read four times (§*Conventions and the Sign Bookkeeping*).
 
-*Third, gauge covariance is exact for a general element.* The gauge factor is a central unit, so it multiplies the field on either side, and it cancels between the two factors of a bilinear. Every statement of covariance below therefore holds for $\tilde\Xi\in\mathbb{B}$ and not only for a central field; the algebra's non-commutativity is not used and is not needed (§*Gauge Covariance*).
+*Third, gauge covariance is exact for a general element.* The gauge factor is a central unit, so it multiplies the field on either side, and it cancels between the two factors of a bilinear. Every statement of covariance below therefore holds for $\tilde\Xi\in\mathbb{B}$ and not only for a central field; the algebra's non-commutativity is not used and is not needed (§*Covariance*).
 
 *Fourth, the constant setting's coupling is a shift of two numbers.* When $\tilde H_\Psi$ is a constant element and the connection is constant, the coupled equation is the free equation with
 
@@ -56,7 +56,7 @@ The two shifts are the canonical-to-kinetic dictionary of the older literature, 
 
 **One setting is not the other.** The free article distinguishes a constant-element setting, in which the equation is an ordinary differential equation with the closed-form propagator, from an operator setting, in which it is the ordinary Schrödinger equation. The coupling has a different face in each: a shift of two numbers in the first, a covariant Laplacian in the second. The two are kept apart below, and no result is transferred between them.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$; the density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ and the free article's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. Time is $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and $i \frac{h}{2\pi} c\,\partial_{r'_t}=i \frac{h}{2\pi}\,\partial_{t'}$; the article uses $t'$ and never mixes the two. The charge $ϙ$ is the gauge principle's coupling constant, a parameter the algebra does not fix; its value and its sign are inserted, as *The Electron in Biquaternionic Form* records.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$; the density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ and the free article's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. Time is $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and $i \frac{h}{2\pi} c\,\partial_{r'_t}=i \frac{h}{2\pi}\,\partial_{t'}$; the article uses $t'$ and never mixes the two. The charge $ϙ$ is the minimal coupling's coupling constant, a parameter the algebra does not fix; its value and its sign are inserted, as *The Electron in Biquaternionic Form* records.
 
 ## Conventions and the Sign Bookkeeping
 
@@ -140,7 +140,7 @@ The left side is the covariant time derivative times $i \frac{h}{2\pi}$; the rig
 
 **What the equation is not.** It is not the second-order covariant d'Alembertian restricted to a slowly varying field. The Klein–Gordon companion records that the covariant square of the quaternion-conjugate gradient differs from the sum of the covariant squares by a curvature term; nothing of that kind arises here, because the Schrödinger equation is first order in time and the kinetic operator is a sum of squares of first-order operators with no $\natural$ on the outside. The curvature enters the Schrödinger equation only through the commutator of two covariant derivatives, and that commutator is a multiplication by $\frac{2\pi iϙ}{h}(\partial_{\imath} A_\zeta-\partial_\zeta A_{\imath})$, which is the field strength and is not a differential operator at all. The commutation of $D_{\imath}$ and $D_\zeta$ is therefore a magnetic-field statement and never a constraint on the carrier.
 
-## Gauge Covariance
+## Covariance
 
 **The first derivative.** With primes marking the transformed objects and $D'_{\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A'_{\imath}$,
 
@@ -150,7 +150,7 @@ D'_{\imath}\big(\digamma_{\mathrm{gau}}\tilde\Xi\big)
 =\digamma_{\mathrm{gau}}\,D_{\imath}\tilde\Xi .
 $$
 
-The two gauge gradients cancel because one comes from the derivative of the central unit and the other from the transformation of the connection. Nothing else in the computation can cancel them, which is why the connection's transformation law is forced rather than chosen.
+The two fixing condition gradients cancel because one comes from the derivative of the central unit and the other from the transformation of the connection. Nothing else in the computation can cancel them, which is why the connection's transformation law is forced rather than chosen.
 
 **The second derivative, and the temporal slot.** Applying $D'_{\imath}$ once more multiplies by $\digamma_{\mathrm{gau}}$ again, since $\digamma_{\mathrm{gau}}$ is central and passes through; and the temporal slot behaves the same way, with $\omicron_{\mathrm{pot}}$'s shift opposite to $\vec A$'s and the sign in $D_t$ opposite to the sign in $D_{\imath}$. Hence
 
@@ -207,7 +207,7 @@ $$
 
 so the conservation of $J$ is the integrability condition of the connection's own equation. The article states the identification and does not re-derive the Maxwell side.
 
-**The contrast with the spinor case, stated once.** The coupled Dirac article records that the product $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant, of the density's sign, and not conserved: a product of the field with its conjugate carries no fixed unit, so the two chiral parts enter with the same sign, and the current needs them with opposite signs. The repaired object there is a triple product with two fixed frame units, which is the older literature's adjoint row in the algebra's spelling. Nothing of that structure appears here. The Schrödinger current is a derivative bilinear, the equation is first order in time, and the standard conservation argument applies without an adjoint row; the two factors are the field and the field, one differentiated and one not, and the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ supplies the reality. The scalar case closes and the spinor case does not, and the difference is the order of the equation rather than the algebra.
+**The contrast with the spinor case, stated once.** The coupled Dirac article records that the product $i\tilde\Psi\tilde\Psi^{*}$ is invariant, of the density's sign, and not conserved: a product of the field with its conjugate carries no fixed unit, so the two chiral parts enter with the same sign, and the current needs them with opposite signs. The repaired object there is a triple product with two fixed frame units, which is the older literature's adjoint row in the algebra's spelling. Nothing of that structure appears here. The Schrödinger current is a derivative bilinear, the equation is first order in time, and the standard conservation argument applies without an adjoint row; the two factors are the field and the field, one differentiated and one not, and the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ supplies the reality. The scalar case closes and the spinor case does not, and the difference is the order of the equation rather than the algebra.
 
 **What the current does not repair.** The sign of $n$ cannot be negative, because $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ is a sum of moduli and the density is a norm, not the temporal slot of a current; a second-order equation's density is the temporal slot of its current and can change sign with the energy, and this one cannot. The coupling does not enter that statement and does not need to.
 
@@ -272,7 +272,7 @@ with $\tilde\Xi\in\mathbb{B}$ one general element, $ϙ$ the coupling and $\tilde
 
 The field remains one element of $\mathbb{B}$ and the coupling changes nothing about the carrier, because the connection's coefficients are central and left multiplication by them is scalar multiplication. The theory is four copies of the standard charged scalar field sharing one connection.
 
-Covariance is exact and holds for a general element: the central unit cancels between the two factors of every bilinear, and the connection's transformation law is forced by the cancellation of the two gauge gradients.
+Covariance is exact and holds for a general element: the central unit cancels between the two factors of every bilinear, and the connection's transformation law is forced by the cancellation of the two fixing condition gradients.
 
 The current is
 

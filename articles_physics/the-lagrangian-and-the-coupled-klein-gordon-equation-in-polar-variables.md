@@ -24,7 +24,7 @@ Three results.
 
 *Second, the Euler–Lagrange equations are the parent's with one substitution, and the rank of the kinetic matrix does not change.* The potential shifts velocities by functions and adds a term proportional to $\lvert A\rvert^{2}$ with no velocity, so the Legendre transform stays regular, no constraint appears, and no multiplier is needed — the free polar article's exact equivalence by the invertible Jacobian survives the coupling intact.
 
-*Third, the interaction term's structure is visible in the chart and it is not the standard one-term coupling.* Expanding the kinetic term in powers of the connection gives a term linear in $A$ and a term quadratic in $A$; the quadratic term is what makes the action gauge invariant, and it is the term that a presentation writing the coupling as "current times potential" does not have. The chart exhibits the two terms separately, and §*The Action in Polar Variables* computes them.
+*Third, the interaction term's structure is visible in the chart and it is not the standard one-term coupling.* Expanding the kinetic term in powers of the connection gives a term linear in $A$ and a term quadratic in $A$; the quadratic term is what makes the action invariant, and it is the term that a presentation writing the coupling as "current times potential" does not have. The chart exhibits the two terms separately, and §*The Action in Polar Variables* computes them.
 
 Scope and settings. The connection is external and treated at the level of the action; the field is the scalar of the element companion. The central-field case is the Madelung variational principle with a potential, which is standard and closed. The general element is the eight-parameter chart, whose action is regular and whose equations are the Jacobian image of the element form's — also closed, because the free polar article's argument does not use the connection. What is *not* closed here is the same thing that is not closed in the free polar article: the explicit Jacobian in the general case. The article states what it computes and says so.
 
@@ -210,7 +210,7 @@ What the reconstruction does not give. The flow of the constrained system. The b
 
 ## The Noether Currents
 
-### The Charge, Its Sign and Its Gauge Invariance
+### The Charge, Its Sign and Its Local Invariance
 
 The charge is the phase rate times the density. The temporal component of the current in the chart is
 
@@ -313,8 +313,8 @@ and its two equations are the transport equation and the amplitude equation of t
 - [The Coupled Klein–Gordon Equation in Biquaternionic Form](the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the equation and the current.
 - [The Lagrangian and the Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html), for the free polar action, the metric and the Jacobian argument.
 - [The Lagrangian and the Klein–Gordon Equation](the-lagrangian-and-the-klein-gordon-equation.html), for the element action.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the covariant bracket and the curvature.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the covariant bracket and the curvature.
 - [The Spin-Zero Fluid](the-spin-zero-fluid.html), for the fluid reading.
 - [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html), for the free flow's irrotationality.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the winding and the circulation.

@@ -41,7 +41,7 @@ The difficulty is that **none of this gives a canonical structure**. Canonical q
 
 The natural variable, in short, is not the canonical variable. That is the structural difference from the Dirac case and the reason the rest of the article must pass through the potential.
 
-## Gauge Freedom and the Two Formulations
+## Redundancy and the Two Formulations
 
 The potential is not unique. Two potentials give the same field strength when they differ by
 
@@ -61,7 +61,7 @@ $$
 S_2=S-\Box_\Phi\Gamma,
 $$
 
-and the field strength is invariant, $\tilde{F}_2=\tilde{F}$. The companion article states plainly that $S$ "is a gauge artifact" and that the **Lorenz gauge** $S=0$ is "a choice of gauge, not a physical condition". In that gauge the potential obeys the second-order equation
+and the field strength is invariant, $\tilde{F}_2=\tilde{F}$. The companion article states plainly that $S$ "is a artifact of the representative" and that the **Lorenz fixing condition** $S=0$ is "a choice of gauge, not a physical condition". In that gauge the potential obeys the second-order equation
 
 $$
 \Box_\Phi\tilde{A}_{\Phi}=-\mu\tilde J_{\Phi},\qquad \tilde J_{\Phi}=ic\rho\,e_t+\vec J.
@@ -147,7 +147,7 @@ Two points about this interpretation must be kept separate.
 
 The first is a **structural observation**, and it is suggestive but convention-dependent. The potential $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ has an imaginary scalar part and a real vector part: it is an element of the material sector $\mathbb{B}_{\Phi}$. The conjugate momentum $\tilde\pi_{\mathrm{id}}$ has a vanishing (real) scalar part and a purely imaginary vector part: in the $i r'_t$ convention it is an element of the complementary sector $\mathbb{B}_{\Psi}$. The canonical pair thus straddles the two sectors that the framework distinguishes as material and informational — the same pairing of "configuration" and "operator" that the article on $\mathbb{B}_{\Psi}$ describes for its action on $\mathbb{B}_{\Phi}$. Whether this is a meaningful statement about the algebra or a consequence of writing the momentum with the $i r'_t$ derivative is not decided here, and it is recorded as an open question. In a real-time formulation the momentum of the same theory is real, and the placement reverses; the physical content is unchanged.
 
-The second is the **finding**. Nothing in the algebra selects a gauge. The invariant content of the theory is a functional of $\tilde{F}$ alone, and $\tilde{F}$ is invariant under every local transformation; so no invariant functional of $\tilde{A}_{\Phi}$ — no biquaternion norm, no trace, no conjugation built from the basis and $i$ — can break the degeneracy, because any such functional is a function of $\tilde{F}$. The Lorenz condition $S=0$ is available and is the framework's covariant choice, but the companion article itself declines to make it physical, and the algebra offers no principle that prefers it to $A_0=0$ (the temporal gauge) or to any other. The gauge must be fixed from outside the algebra. This is the sense in which the biquaternion framework cannot quantize Maxwell "automatically".
+The second is the **finding**. Nothing in the algebra selects a gauge. The invariant content of the theory is a functional of $\tilde{F}$ alone, and $\tilde{F}$ is invariant under every local transformation; so no invariant functional of $\tilde{A}_{\Phi}$ — no biquaternion norm, no trace, no conjugation built from the basis and $i$ — can break the degeneracy, because any such functional is a function of $\tilde{F}$. The Lorenz condition $S=0$ is available and is the framework's covariant choice, but the companion article itself declines to make it physical, and the algebra offers no principle that prefers it to $A_0=0$ (the temporal fixing condition) or to any other. The gauge must be fixed from outside the algebra. This is the sense in which the biquaternion framework cannot quantize Maxwell "automatically".
 
 ## Gupta–Bleuler Quantization
 
@@ -205,7 +205,7 @@ which makes the physical field transverse: the polarization sum annihilates ever
 
 This is the quantization, and it works: two transverse polarizations, no negative-norm physical states, a positive-definite physical inner product. But the machinery was imported. The subsidiary condition is a condition on the potential, and the framework does not supply it; the indefinite inner product with $\sigma_{\mathrm{met},0}=-1$ is a structure the algebra does not by itself demand. The one compensating observation is the one made above: the indefinite form $\sigma_{\mathrm{met}}$, with $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$, is the biquaternion norm of $\mathbb{B}_{\Phi}$, its one minus the square of the $i$ in $Q_t=i q'_t$, so the indefinite inner product is not a new object but the framework's own. Whether that identification has content beyond the coincidence of form is open.
 
-The alternatives should be named. The **Coulomb gauge** $\mathrm{div}\,\vec A=0$ removes the redundancy non-covariantly, leaves only the two transverse modes from the start, and gives a manifestly positive-definite norm, at the price of an instantaneous interaction and a loss of manifest Lorentz covariance. It is the same physical theory; it differs in which structure is imposed by hand. The framework's covariance preference points at Gupta–Bleuler, but the preference is not a derivation.
+The alternatives should be named. The **Coulomb fixing condition** $\mathrm{div}\,\vec A=0$ removes the redundancy non-covariantly, leaves only the two transverse modes from the start, and gives a manifestly positive-definite norm, at the price of an instantaneous interaction and a loss of manifest Lorentz covariance. It is the same physical theory; it differs in which structure is imposed by hand. The framework's covariance preference points at Gupta–Bleuler, but the preference is not a derivation.
 
 ## Comparison with the Scalar Field
 
@@ -230,11 +230,11 @@ The verdict is therefore not a ranking. **Maxwell is a transcription of standard
 
 ## What Is Standard and What Is Open
 
-**Standard, and transcribed here.** The single biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F}=-Z\,\tilde{J}_{\Phi}$ and the real/imaginary separation of the homogeneous and inhomogeneous equations; the local transformation and the transformation of $S$; the second-order potential equation in the Lorenz gauge; the first-order Palatini action and the two variations; the conjugate momenta $\pi_{\imath}=-F_{t\imath}$, the primary constraint $\pi_0\approx0$, the Gauss-law secondary constraint, and the first-class character of both; the degree-of-freedom count giving two field degrees of freedom; the Gupta–Bleuler mode expansion, commutators, subsidiary condition, zero-norm unphysical combination, transverse polarization sum, and positive-definite physical norm. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions of the companion articles.
+**Standard, and transcribed here.** The single biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F}=-Z\,\tilde{J}_{\Phi}$ and the real/imaginary separation of the homogeneous and inhomogeneous equations; the local transformation and the transformation of $S$; the second-order potential equation in the Lorenz fixing condition; the first-order Palatini action and the two variations; the conjugate momenta $\pi_{\imath}=-F_{t\imath}$, the primary constraint $\pi_0\approx0$, the Gauss-law secondary constraint, and the first-class character of both; the degree-of-freedom count giving two field degrees of freedom; the Gupta–Bleuler mode expansion, commutators, subsidiary condition, zero-norm unphysical combination, transverse polarization sum, and positive-definite physical norm. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions of the companion articles.
 
 **Open, and not settled here.**
 
-- **The principle that fixes the representative.** The framework gives no algebraic reason to prefer $S=0$ to any other gauge, or to prefer Gupta–Bleuler to the Coulomb gauge. Whether a biquaternionic principle exists is the central open question. The companion article's judgement that $S$ is a gauge artifact is a negative statement, not a mechanism.
+- **The principle that fixes the representative.** The framework gives no algebraic reason to prefer $S=0$ to any other gauge, or to prefer Gupta–Bleuler to the Coulomb fixing condition. Whether a biquaternionic principle exists is the central open question. The companion article's judgement that $S$ is a artifact of the representative is a negative statement, not a mechanism.
 - **The intrinsic Lagrangian and pairings.** The parent Dirac article records that the $\mathbb{B}$-intrinsic Lagrangian and conjugate momentum are not fixed by the algebra. The same is true here, and more sharply, because the natural variable $\tilde{F}$ has no canonical partner at all. Whether a real-scalar Lagrangian built from the trace and norm pairings reproduces the standard constraint structure is not shown.
 - **The biquaternion Fock space.** Whether there is a Fock space native to $\mathbb{B}$, rather than the exterior (fermionic) or symmetric (bosonic) algebra of a module's solution space, is the subject of the planned companion article on the Fock space.
 - **The photon.** Whether the two transverse polarizations have a native meaning in the algebra — for instance, in the vector part of the material sector — is the subject of the planned article on the photon.
@@ -269,7 +269,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$ | Four-current; the source enters as $Z\,\tilde J_{\Phi}$ |
 | $\tilde\nabla_\Phi\tilde{F}=-Z\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell equation |
 | $\Gamma$ | Phase function, $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ |
-| $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2=S-\Box_\Phi\Gamma$ | Gauge degree of freedom; Lorenz gauge $S=0$ |
+| $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2=S-\Box_\Phi\Gamma$ | Gauge degree of freedom; Lorenz fixing condition $S=0$ |
 | $\delta_{\imath\jmath}$ | Unit metric, all four coefficients $+1$; $\sum_{\imath,\jmath}\delta_{\imath\jmath}Q_{\imath} Q_{\jmath}$ is the biquaternion norm on $\mathbb{B}_{\Phi}$, with $Q_t=i q'_t$ |
 | $\mathcal{L}=-\tfrac14 \sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}$ | Maxwell Lagrangian density (potential formulation) |
 | $\pi_{\imath}=\partial\mathcal{L}/\partial(\partial/\partial R_t A_{\imath})=-F_{t\imath}$ | Conjugate momenta: $\pi_0\approx0$, $\vec\pi=-i\vec E$ |

@@ -1,4 +1,4 @@
-# __The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$__
+# __The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$__
 
 ## Introduction
 
@@ -40,7 +40,7 @@ which is $\mathrm{U}(2)$ and not $\mathrm{SU}(2)\times\mathrm{U}(1)$. Two conseq
 
 The names, the operators and the sector vocabulary are fixed once, in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html); the quotient itself is argued in [The Electroweak Pair](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html).
 
-Why the subscript $L$. The $SU(2)$ factor acts on left-handed fields and not on right-handed ones. Every left-handed doublet has $T=\tfrac12$; every right-handed field is a singlet. This asymmetry is the whole reason a chiral gauge theory has anomalies at all, and it is why the conditions of §*The Anomaly System* are a system rather than a tautology.
+Why the subscript $L$. The $SU(2)$ factor acts on left-handed fields and not on right-handed ones. Every left-handed doublet has $T=\tfrac12$; every right-handed field is a singlet. This asymmetry is the whole reason a chiral connection theory has anomalies at all, and it is why the conditions of §*The Anomaly System* are a system rather than a tautology.
 
 Why the abelian factor is chiral too. The hypercharge of a left-handed field and the hypercharge of its right-handed partner are different numbers. For the electron, $Y_L=-\tfrac12$ and $Y_R=-1$. A vector-like abelian factor would assign the same charge to both, and the corpus's own central phase does exactly that, which is the substance of §*Why the Assignment Is Not Derivable Here*.
 
@@ -96,7 +96,7 @@ The charge audit. Recomputing the seven charges from the two labels in exact rat
 
 ## The Anomaly System
 
-Why a chiral theory needs conditions. A gauge symmetry whose left- and right-handed couplings differ can be broken by the quantum measure. The failure is the triangle diagram with three gauge currents, and its coefficient is a sum over the left-handed Weyl fields minus the same sum over the right-handed ones. [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html) derives the coefficient, proves the three lemmas below and verifies the conditions on the observed assignment. This article organises the same material as a system to be solved, which that article does not do.
+Why a chiral theory needs conditions. A local symmetry whose left- and right-handed couplings differ can be broken by the quantum measure. The failure is the triangle diagram with three fixing condition currents, and its coefficient is a sum over the left-handed Weyl fields minus the same sum over the right-handed ones. [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html) derives the coefficient, proves the three lemmas below and verifies the conditions on the observed assignment. This article organises the same material as a system to be solved, which that article does not do.
 
 The coefficient. For generators $T_a$ acting on a left-handed Weyl field in the representation $R$,
 
@@ -229,7 +229,7 @@ The mixed $\mathrm{U}(1)$ question. If the model contained a second abelian fact
 
 ## The Witten Condition
 
-A second kind of anomaly. Besides the perturbative triangle anomaly there is a global obstruction: an $SU(2)$ gauge theory with an odd number of left-handed doublets is inconsistent, because the fermion determinant changes sign under a large local transformation. The condition is not a triangle coefficient and is not found by the computation above.
+A second kind of anomaly. Besides the perturbative triangle anomaly there is a global obstruction: an $SU(2)$ connection theory with an odd number of left-handed doublets is inconsistent, because the fermion determinant changes sign under a large local transformation. The condition is not a triangle coefficient and is not found by the computation above.
 
 The count. Each generation supplies four weak doublets: three from the colour triplet of $Q_L$ and one from $L_L$. Four is even. With three generations the count is twelve, also even.
 
@@ -262,7 +262,7 @@ The chain, stated once. The whole assignment follows from four steps, and no ste
 | three | the measured charges | the ray, and the scale by convention |
 | four | the invariance of the Yukawa terms | $Y_{\mathrm{hch}}=\tfrac12$, $Y_{\tilde\omicron_{\mathrm{hgs}}}=-\tfrac12$ |
 
-What follows from the last step. With $Y_{\mathrm{hch}}=\tfrac12$ the scalar's neutral component has $T_3=-\tfrac12$ and $Ϙ=0$, so the vacuum expectation value can sit in the neutral component and leave the photon massless. The tree-level relation $\rho=1$ follows from the doublet being a doublet. Both are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html), and the point here is that they follow from the assignment and not from an extra postulate.
+What follows from the last step. With $Y_{\mathrm{hch}}=\tfrac12$ the scalar's neutral component has $T_3=-\tfrac12$ and $Ϙ=0$, so the vacuum expectation value can sit in the neutral component and leave the photon massless. The tree-level relation $\rho=1$ follows from the doublet being a doublet. Both are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html), and the point here is that they follow from the assignment and not from an extra postulate.
 
 The neutrino charge. With $Y_L=-\tfrac12$ and $T_3=+\tfrac12$ the neutrino comes out neutral, and that is a consequence of the assignment rather than an input to it. A reader who takes the neutrality of the neutrino as the starting point will find that it is one equation short of the whole table.
 
@@ -270,9 +270,9 @@ The neutrino charge. With $Y_L=-\tfrac12$ and $T_3=+\tfrac12$ the neutrino comes
 
 Three facts about the framework, each established in a companion article.
 
-- The framework's abelian factor is the central phase. The gauge principle of [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) supplies the $*$-unitary part of the centre, which is $\mathrm{U}(1)$, and a charge parameter $ϙ$ that multiplies every coefficient of a state by the same phase.
+- The framework's abelian factor is the central phase. The minimal coupling of [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) supplies the $*$-unitary part of the centre, which is $\mathrm{U}(1)$, and a charge parameter $ϙ$ that multiplies every coefficient of a state by the same phase.
 - That phase is vector-like. Because the phase acts as a scalar, a state and its partner of the opposite chirality carry the same charge, so the cubic sum is $ϙ^3-ϙ^3=0$ identically, for every state and every charge. [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation.html) states this as the algebraic fact that the framework's abelian factor cannot be weak hypercharge.
-- The framework's compact factor is $SU(2)$ and not $SU(3)$. [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) proves that the algebra's intrinsic compact gauge algebra is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of real dimension four, and that no module of $\mathbb{B}$ carries a colour triplet.
+- The framework's compact factor is $SU(2)$ and not $SU(3)$. [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) proves that the algebra's intrinsic compact algebra is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of real dimension four, and that no module of $\mathbb{B}$ carries a colour triplet.
 
 The consequence. The framework reaches the *algebra* of the electroweak group, since $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ is exactly the algebra of $SU(2)_L\times\mathrm{U}(1)_Y$. It does not reach the *assignment*, for two reasons that are worth separating.
 
@@ -322,7 +322,7 @@ The framework reaches the algebra of the group and not the assignment. Its abeli
 
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The content this assignment is written for, and the charge table the solution reproduces.
 - [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html). The derivation of the triangle coefficient, the three lemmas, and the verification of the conditions on the observed spectrum.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The central phase and the charge parameter $ϙ$.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The central phase and the charge parameter $ϙ$.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The intrinsic compact algebra $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ and the colour ceiling.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why a central charge cannot be chiral, and the non-central case as the open question.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The covariant derivative and the Yukawa terms whose invariance fixes $Y_{\mathrm{hch}}$.

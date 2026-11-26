@@ -412,7 +412,7 @@ The further reading of this exercise is the parent and companion articles of thi
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, and the local complex structure.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the four-vectors, including the four-wavevector, and the light cone as the zero-divisor cone.
 - [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian subspace, the conjugation action, and the pairing formula.
-- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the field strength, the source, the gradient, the gauge structure, and the energy–momentum biquaternion.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the field strength, the source, the gradient, the structure, and the energy–momentum biquaternion.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the biquaternion norm, the Riemann–Silberstein vector, and the invariant classification of the field.
 - [Electromagnetism in Media — The Local Complex Structure at Work](electromagnetism-in-media-the-local-complex-structure-at-work.html) — the direct parent: the medium parameters, dispersion, interfaces, and the plane-wave conventions applied here.
 - [Exercise: The Electromagnetic Energy–Momentum Tensor](exercise-the-electromagnetic-energy-momentum-tensor.html) — the rank-two energy–momentum tensor built from $\tilde{F}$, whose four-component biquaternionic counterpart appears in Problem 3.

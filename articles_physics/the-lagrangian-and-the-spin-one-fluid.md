@@ -138,7 +138,7 @@ One difference from the spin-half fluid. There the torque was the new object; he
 
 ## Open Questions
 
-The massless limit. The action's derivative terms survive at $\nu_m=0$ and the fluid reading does not, because the field becomes pure gauge and $A=ru$ is then a gauge-dependent split. Whether some gauge-fixed chart makes the limit continuous is not settled.
+The massless limit. The action's derivative terms survive at $\nu_m=0$ and the fluid reading does not, because the field becomes pure gradient and $A=ru$ is then a representative-dependent split. Whether some fixed-representative chart makes the limit continuous is not settled.
 
 The constraint's class. Whether the unit condition and the transverse projection produce a second-class system with a Dirac bracket that closes is not computed here.
 

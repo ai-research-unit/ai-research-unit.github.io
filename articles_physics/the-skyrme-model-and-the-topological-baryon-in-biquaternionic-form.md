@@ -50,7 +50,7 @@ $$
 \tilde U^{-1} = \tilde U^{\natural} = \tilde U^{*} ,
 $$
 
-where the last identities hold because $\tilde U$ is a unit real quaternion. The field takes values in the manifold $\mathbb{S}^3$, and the analyses of this article are static: the energy functional is evaluated on configurations $\tilde U(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ that are pure gauge at spatial infinity, $\tilde U(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\to e_t$ as $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
+where the last identities hold because $\tilde U$ is a unit real quaternion. The field takes values in the manifold $\mathbb{S}^3$, and the analyses of this article are static: the energy functional is evaluated on configurations $\tilde U(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ that are pure gradient at spatial infinity, $\tilde U(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\to e_t$ as $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
 
 **The current.** The Maurer–Cartan form of the companion article is
 
@@ -64,7 +64,7 @@ $$
 \partial/\partial R_{\imath} j_{\jmath} - \partial/\partial R_{\jmath} j_{\imath} + \left[j_{\imath}, j_{\jmath}\right] = 0 .
 $$
 
-Flatness is what makes $j_{\imath}$ a pure gauge connection and what makes the topological density below a total derivative: it is the property that no other algebra-valued one-form has.
+Flatness is what makes $j_{\imath}$ a pure connection and what makes the topological density below a total derivative: it is the property that no other algebra-valued one-form has.
 
 **The two terms.** The model is the sum of two invariants of the flat current: the two-derivative chiral term, proportional to $\mathrm{Sc}(\bar j_{\imath} j_{\imath})$ with coefficient $f_\pi^2/2$, and the four-derivative **Skyrme term**, proportional to $\mathrm{Sc}([j_{\imath},j_{\jmath}][j_{\imath},j_{\jmath}])$ with coefficient $1/(16e^2)$ and $e$ a dimensionless parameter. The action, the variation that gives the field equation, the sign bookkeeping that makes the kinetic energy positive, and the derivative expansion to which both terms belong are written in [The Lagrangian and the Skyrme Model](the-lagrangian-and-the-skyrme-model.html); this article does not repeat the functional. What is used below is the shape of the two terms and the fact that the second is the unique four-derivative term at most quadratic in time derivatives, which is what makes the static energy functional well posed.
 

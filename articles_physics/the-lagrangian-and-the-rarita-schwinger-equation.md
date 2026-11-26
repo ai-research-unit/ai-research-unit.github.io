@@ -52,7 +52,7 @@ Why the check is not optional. The spin-$\tfrac32$ equation has the well-known p
 
 The count, in one line. Four vector components, each with two chiralities: eight complex data. The trace constraint removes two, the divergence constraint removes two, and the pair of first-order equations removes half of the rest; the rest frame leaves four complex parameters, the quartet the parent exhibits. An action that produced only the pair would leave the quartet's neighbours in place, and the count would be four higher.
 
-The massless case. At $\nu_m=0$ the redundancy removes two more, and the physical count is the two helicities of a massless spin-$\tfrac32$ particle. The action's invariance under the gauge shift is what makes the count come out right, and it is the third item in the action's list of debts.
+The massless case. At $\nu_m=0$ the redundancy removes two more, and the physical count is the two helicities of a massless spin-$\tfrac32$ particle. The action's invariance under the phase shift is what makes the count come out right, and it is the third item in the action's list of debts.
 
 What the constraints are not. They are not the Lorenz condition of the Proca article and not the phase continuity of the scalar: those remove a longitudinal mode of a vector, and these remove a vector-index trace. The difference is why the spin-$\tfrac32$ constraints need their own multipliers and cannot be inherited from the spin-one article.
 

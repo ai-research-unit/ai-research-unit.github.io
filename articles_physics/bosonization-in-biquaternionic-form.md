@@ -260,7 +260,7 @@ The non-abelian extension is stated and its status fixed.
 
 **Open.**
 
-- Whether the framework has a natural bosonization in the presence of its full four-dimensional structure — for instance whether a two-dimensional reduction of a biquaternion gauge theory bosonizes with a framework-specific level — is not addressed.
+- Whether the framework has a natural bosonization in the presence of its full four-dimensional structure — for instance whether a two-dimensional reduction of a biquaternion connection theory bosonizes with a framework-specific level — is not addressed.
 - The precise operator-algebraic isomorphism between the current's algebra and the centre's exponentiated algebra is stated but not proved; the article gives the correspondence and the counting, and cites the standard construction for the identity itself.
 - Whether the coefficient conjugation is forced by the reduction or is one of several equivalent real structures, and whether the framework's sector structure selects it, is not resolved here.
 
@@ -383,7 +383,7 @@ and the framework's contribution is to name the two sides: the fermion is an ele
 - S. Coleman, "Quantum sine-Gordon equation as the massive Thirring model," *Physical Review D* **11** (1975) 2088–2097, for the equivalence of the massive Thirring and sine-Gordon models.
 - S. Mandelstam, "Soliton operators for the quantized sine-Gordon equation," *Physical Review D* **11** (1975) 3026–3030, for the fermion operators in terms of the boson.
 - E. Witten, "Non-abelian bosonization in two dimensions," *Communications in Mathematical Physics* **92** (1984) 455–472, for non-abelian bosonization and the Wess–Zumino term.
-- J. Schwinger, "Gauge invariance and mass. II," *Physical Review* **128** (1962) 2425–2429, for the two-dimensional gauge theory with a massive bosonic spectrum.
+- J. Schwinger, "Local invariance and mass. II," *Physical Review* **128** (1962) 2425–2429, for the two-dimensional connection theory with a massive bosonic spectrum.
 - S. Coleman, R. Jackiw, and L. Susskind, "Charge shielding and quark confinement in the massive Schwinger model," *Annals of Physics* **93** (1975) 267–275, for the Schwinger model's spectrum and the anomaly's role.
 - J. von Delft and H. Schoeller, "Bosonization for beginners," *Annalen der Physik* **7** (1998) 225–305, for the dictionary, the normal-ordering constants, and the central-charge matching.
 - M. Stone (editor), *Bosonization* (World Scientific, 1994), for the collected original literature.

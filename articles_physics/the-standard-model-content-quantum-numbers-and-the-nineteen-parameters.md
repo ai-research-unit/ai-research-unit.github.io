@@ -22,7 +22,7 @@ $$
 
 **The order.** The symmetry group comes first, then the matter content, then the charge, then the anomaly conditions that constrain the charges, then the bosons and the scalar, then the nineteen parameters, then what the count leaves out, then what the algebra fixes.
 
-## The Gauge Group
+## The Symmetry Group
 
 **The group.** The symmetry group is the product
 
@@ -95,7 +95,7 @@ The neutrino is the upper component of $L_L$ and has no right-handed partner in 
 
 ## Why the Assignment Is Not Free: The Anomaly Conditions
 
-**The conditions.** A chiral gauge theory is consistent only if four conditions hold on the matter spectrum: the coefficients of the $SU(3)_c^2\,\mathrm{U}(1)_Y$, $SU(2)_L^2\,\mathrm{U}(1)_Y$, $\mathrm{U}(1)_Y^3$ and mixed gravitational anomalies must vanish. [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html) derives the conditions and states them; this article records only their solution, because the solution is what the charge table is.
+**The conditions.** A chiral connection theory is consistent only if four conditions hold on the matter spectrum: the coefficients of the $SU(3)_c^2\,\mathrm{U}(1)_Y$, $SU(2)_L^2\,\mathrm{U}(1)_Y$, $\mathrm{U}(1)_Y^3$ and mixed gravitational anomalies must vanish. [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html) derives the conditions and states them; this article records only their solution, because the solution is what the charge table is.
 
 **The four equations.** With the five hypercharges of one generation written $Y_Q,Y_u,Y_d,Y_L,Y_e$ as the table lists them, the conditions read
 
@@ -113,7 +113,7 @@ $$
 
 The first is the colour condition, the second the weak condition, the third the gravitational condition and the fourth the cubic condition. The fifth condition, $SU(3)_c^3$, vanishes identically: the colour content of the quarks is vector-like, and $2A(3)-A(3)-A(3)=0$ for the cubic colour coefficient $A(3)$.
 
-**The sign of the right-handed terms.** The three minus signs in front of $Y_u$, $Y_d$ and $Y_e$ are the table's values. A right-handed field written as a left-handed conjugate reverses its hypercharge, so the same four conditions in the conjugate variables $Y^{\mathrm c}_u=-Y_u$, $Y^{\mathrm c}_d=-Y_d$, $Y^{\mathrm c}_e=-Y_e$ carry plus signs throughout, and mixing the two writings gives a sum that does not vanish. [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) states both forms and the arithmetic of the mixture.
+**The sign of the right-handed terms.** The three minus signs in front of $Y_u$, $Y_d$ and $Y_e$ are the table's values. A right-handed field written as a left-handed conjugate reverses its hypercharge, so the same four conditions in the conjugate variables $Y^{\mathrm c}_u=-Y_u$, $Y^{\mathrm c}_d=-Y_d$, $Y^{\mathrm c}_e=-Y_e$ carry plus signs throughout, and mixing the two writings gives a sum that does not vanish. [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) states both forms and the arithmetic of the mixture.
 
 **The reduction.** The three linear equations solve for three of the five hypercharges in terms of the two quark hypercharges. With $a=Y_u$ and $b=Y_d$ they give
 
@@ -139,7 +139,7 @@ $$
 | $t=-1$ | the same with $u$ and $d$ exchanged | the same assignment, mislabelled |
 | $s=0$ | $k(0,1,-1,0,0)$ | excluded: it gives quark charges $\pm\tfrac12$ and lepton charges $\pm\tfrac12$ |
 
-**What the solution says.** The conditions fix the assignment up to one overall scale on each branch, and the observed charges select the branch and the scale. The derivation is carried out in full, with the matrix of the linear system and a factorisation of the cubic into its three factors, in [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html); the two routes are the same equation and the check is recorded there. Setting $k=\tfrac13$ gives $Y_Q=\tfrac16$, $Y_u=\tfrac23$, $Y_d=-\tfrac13$, $Y_L=-\tfrac12$ and $Y_e=-1$, which is the table. The scale is the normalisation, and the normalisation is fixed by the measured electron charge and not by the algebra.
+**What the solution says.** The conditions fix the assignment up to one overall scale on each branch, and the observed charges select the branch and the scale. The derivation is carried out in full, with the matrix of the linear system and a factorisation of the cubic into its three factors, in [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html); the two routes are the same equation and the check is recorded there. Setting $k=\tfrac13$ gives $Y_Q=\tfrac16$, $Y_u=\tfrac23$, $Y_d=-\tfrac13$, $Y_L=-\tfrac12$ and $Y_e=-1$, which is the table. The scale is the normalisation, and the normalisation is fixed by the measured electron charge and not by the algebra.
 
 **The verification.** The five conditions were recomputed in exact rational arithmetic on the assignment above, one generation at a time, in the left-handed convention:
 
@@ -153,7 +153,7 @@ $$
 
 The cubic term is the one worth displaying, because it vanishes by cancellation and not by smallness: $6(1/6)^3=\tfrac{1}{36}$, $-3(2/3)^3=-\tfrac89$, $-3(-1/3)^3=+\tfrac19$, $2(-1/2)^3=-\tfrac14$ and $-(-1)^3=+1$, and the five fractions sum to zero exactly.
 
-## The Gauge Bosons and the Scalar
+## The Connections and the Scalar
 
 **The connections.** The adjoint representation of the product gives $8+3+1=12$ connections. Before symmetry breaking all twelve are massless and the photon is not distinguished from the hypercharge field.
 
@@ -176,7 +176,7 @@ The two neutral fields mix through the Weinberg angle, $Z_{\imath}=\cos\theta_W 
 
 The three Goldstone fields are the two real components of $\omicron_{\mathrm{hgs}}^+$ and the imaginary part of $\omicron_{\mathrm{hgs}}^0$; the fourth real component is the scalar that remains.
 
-**The degree-of-freedom check.** The count closes before and after breaking. Before, twelve massless gauge fields carry two polarisations each, twenty-four, and the doublet carries four, for twenty-eight. After, the eight gluons carry sixteen, the photon two, the three massive bosons three each, nine, and the physical scalar one, for twenty-eight. The three Goldstone degrees of freedom have become the longitudinal polarisations of $W^+$, $W^-$ and $Z$. The computation is the subject of [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html).
+**The degree-of-freedom check.** The count closes before and after breaking. Before, twelve massless connections carry two polarisations each, twenty-four, and the doublet carries four, for twenty-eight. After, the eight gluons carry sixteen, the photon two, the three massive bosons three each, nine, and the physical scalar one, for twenty-eight. The three Goldstone degrees of freedom have become the longitudinal polarisations of $W^+$, $W^-$ and $Z$. The computation is the subject of [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html).
 
 ## The Nineteen Parameters
 
@@ -212,7 +212,7 @@ The three Goldstone fields are the two real components of $\omicron_{\mathrm{hgs
 
 - nine fermion masses, that is six quark masses and three charged-lepton masses;
 - four mixing parameters, three angles and one phase;
-- three gauge couplings;
+- three connection couplings;
 - one vacuum angle;
 - one electroweak scale;
 - one scalar mass.
@@ -223,7 +223,7 @@ The six entries sum to $9+4+3+1+1+1=19$.
 
 **The four of the mixing.** The four is a computation and not a convention. A $3\times3$ unitary matrix carries nine real parameters, three angles and six phases. Rephasing the quark fields absorbs $2N-1=5$ phases for $N=3$, leaving three angles and one phase. The count $9-5=4$ is the reason the phase is a parameter of the model and not a choice of basis.
 
-**Why the values are scheme-dependent.** The couplings run and the quark masses run, and the table mixes three conventions by necessity. The three gauge couplings are quoted at $\mu=M_Z$ in the $\overline{\mathrm{MS}}$ scheme; the light quarks $u$, $d$ and $s$ at $\mu=3.2\times10^{-10}$ J, because below the charm threshold that is where the lattice and sum-rule determinations live; the charm and bottom at their own mass, $\mu=m_c$ and $\mu=m_b$, because that is the scale at which their running stops being large; and the top on shell, because it decays before it hadronises and its mass is measured from the decay products. A reader who compares any of these with a table computed in another scheme will find a different number, and the difference for the top is the largest in the list: $1.6\times10^{-26}\ \mathrm{kg}$ between the on-shell value and $m_t(m_t)$. The three couplings satisfy the tree-level relations $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ and $\alpha_s=g_s^2/4\pi$; recomputing them from the table gives $e=0.313$ and $\alpha_s=0.1186$, so the table is internally consistent with $\alpha(M_Z)^{-1}=127.95$ and $\alpha_s(M_Z)=0.1179$ to the accuracy of the rounding.
+**Why the values are scheme-dependent.** The couplings run and the quark masses run, and the table mixes three conventions by necessity. The three connection couplings are quoted at $\mu=M_Z$ in the $\overline{\mathrm{MS}}$ scheme; the light quarks $u$, $d$ and $s$ at $\mu=3.2\times10^{-10}$ J, because below the charm threshold that is where the lattice and sum-rule determinations live; the charm and bottom at their own mass, $\mu=m_c$ and $\mu=m_b$, because that is the scale at which their running stops being large; and the top on shell, because it decays before it hadronises and its mass is measured from the decay products. A reader who compares any of these with a table computed in another scheme will find a different number, and the difference for the top is the largest in the list: $1.6\times10^{-26}\ \mathrm{kg}$ between the on-shell value and $m_t(m_t)$. The three couplings satisfy the tree-level relations $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ and $\alpha_s=g_s^2/4\pi$; recomputing them from the table gives $e=0.313$ and $\alpha_s=0.1186$, so the table is internally consistent with $\alpha(M_Z)^{-1}=127.95$ and $\alpha_s(M_Z)=0.1179$ to the accuracy of the rounding.
 
 **One worked use of the count.** The two mass formulas $M_W=\tfrac12 gv$ and $M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v$ are not parameters: they follow from entries 14, 15 and 18. Recomputing them from the table gives $M_W=1.430\times10^{-25}\ \mathrm{kg}$ and $M_Z=1.631\times10^{-25}\ \mathrm{kg}$, against the measured $1.4329\times10^{-25}$ and $1.62557\times10^{-25}\ \mathrm{kg}$. The two are computed from the unrounded couplings behind entries 14 and 15, $g=0.65174$ and $g_{\mathrm Y}=0.35742$, since multiplying the four-digit entries by $v/2$ moves the second decimal and nothing else. The residual is the radiative correction, which is not a parameter either. This is what a parameter count is for: it says which numbers are inputs and which are consequences, and the two masses are consequences.
 
@@ -239,7 +239,7 @@ The six entries sum to $9+4+3+1+1+1=19$.
 
 ## What the Algebra Fixes
 
-**Nothing in the list.** The framework's gauge principle supplies a central abelian factor with a charge parameter $ϙ$, a connection, a covariant derivative and a curvature; [The Standard Model under the Biquaternion Framework](the-standard-model-as-the-low-energy-phase.html) records that the parameter is free, that no relation binds it to a second coupling, and that no hypercharge assignment or scalar sector follows. The count above is therefore inherited whole.
+**Nothing in the list.** The framework's minimal coupling supplies a central abelian factor with a charge parameter $ϙ$, a connection, a covariant derivative and a curvature; [The Standard Model under the Biquaternion Framework](the-standard-model-as-the-low-energy-phase.html) records that the parameter is free, that no relation binds it to a second coupling, and that no hypercharge assignment or scalar sector follows. The count above is therefore inherited whole.
 
 **The framework's own parameters.** The algebra's parameters are not the model's. The minimal coupling carries $ϙ$, and the mass formula carries the mass $m$ and the constant $\nu_m$ of the massive equation; none of the three is one of the nineteen, and none of them is fixed by the algebra either. The framework is in the same position as the model it reformulates, with a different list.
 
@@ -251,11 +251,11 @@ The six entries sum to $9+4+3+1+1+1=19$.
 
 ## Summary
 
-The Standard Model is the gauge theory of $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$, with matter in the chiral representations of one generation — the quark doublet $Q_L$ of hypercharge $\tfrac16$, the two quark singlets $u_R$ and $d_R$ of hypercharge $\tfrac23$ and $-\tfrac13$, the lepton doublet $L_L$ of hypercharge $-\tfrac12$ and the charged-lepton singlet $e_R$ of hypercharge $-1$ — which is fifteen Weyl fields per generation and forty-five for three; a scalar doublet of hypercharge $\tfrac12$ with four real components; and twelve connections, eight gluons, $W^\pm$, $Z$ and the photon, which after breaking carry sixteen, nine and two polarisations against the twenty-four of the twelve massless fields.
+The Standard Model is the connection theory of $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$, with matter in the chiral representations of one generation — the quark doublet $Q_L$ of hypercharge $\tfrac16$, the two quark singlets $u_R$ and $d_R$ of hypercharge $\tfrac23$ and $-\tfrac13$, the lepton doublet $L_L$ of hypercharge $-\tfrac12$ and the charged-lepton singlet $e_R$ of hypercharge $-1$ — which is fifteen Weyl fields per generation and forty-five for three; a scalar doublet of hypercharge $\tfrac12$ with four real components; and twelve connections, eight gluons, $W^\pm$, $Z$ and the photon, which after breaking carry sixteen, nine and two polarisations against the twenty-four of the twelve massless fields.
 
 The charge is not independent of the three labels. It is $Ϙ=Y+T_3$, and the table reproduces the seven observed charges from the five hypercharges. The five are constrained, not chosen: the four anomaly conditions, with the colour condition and the weak condition and the gravitational condition linear and the cubic condition cubic, reduce through $Y_Q=\tfrac12(Y_u+Y_d)$, $Y_L=-\tfrac32(Y_u+Y_d)$ and $Y_e=-3(Y_u+Y_d)$ to the single equation $Y_u^3+Y_d^3=7(Y_u+Y_d)^3$, whose solutions form three rays, of which one carries the observed charges and one is excluded because it gives quark charges of $\pm\tfrac12$. The conditions were recomputed in exact rational arithmetic and vanish identically on the observed assignment; the overall scale is the normalisation and is fixed by the measured electron charge, not by the algebra.
 
-The model's free content is nineteen numbers: nine fermion masses, four mixing parameters, three gauge couplings, the QCD vacuum angle, the electroweak scale and the Higgs mass. The four of the mixing is $9-5$, the nine parameters of a $3\times3$ unitary matrix less the five phases that field rephasings absorb. The values are scheme- and scale-dependent, and the table quotes each with its scheme. The two boson masses are not among them; they follow from $g$, $g_{\mathrm Y}$ and $v$ at tree level, and the computed $1.431\times10^{-25}\ \mathrm{kg}$ and $1.631\times10^{-25}\ \mathrm{kg}$ sit against the measured $1.4329\times10^{-25}$ and $1.62557\times10^{-25}\ \mathrm{kg}$, with the residual difference a question of scheme and of the one-loop correction, which [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) works through rather than asserts. The neutrino masses, the axion and the three discrete inputs lie outside the count, and each extension has its own price.
+The model's free content is nineteen numbers: nine fermion masses, four mixing parameters, three connection couplings, the QCD vacuum angle, the electroweak scale and the Higgs mass. The four of the mixing is $9-5$, the nine parameters of a $3\times3$ unitary matrix less the five phases that field rephasings absorb. The values are scheme- and scale-dependent, and the table quotes each with its scheme. The two boson masses are not among them; they follow from $g$, $g_{\mathrm Y}$ and $v$ at tree level, and the computed $1.431\times10^{-25}\ \mathrm{kg}$ and $1.631\times10^{-25}\ \mathrm{kg}$ sit against the measured $1.4329\times10^{-25}$ and $1.62557\times10^{-25}\ \mathrm{kg}$, with the residual difference a question of scheme and of the one-loop correction, which [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) works through rather than asserts. The neutrino masses, the axion and the three discrete inputs lie outside the count, and each extension has its own price.
 
 The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$, the mass $m$, the constant $\nu_m$ — are a different list, equally free, and the spin–mass formula's ratios are normalised to the electron and fix no scale. The table therefore has a second use beside its first: it is the checklist against which any biquaternionic construction of the sector would be measured, and the count of what it leaves open is the count of what such a construction would have to close.
 
@@ -264,12 +264,12 @@ The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$
 | Symbol | Meaning |
 |---|---|
 | $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | The symmetry group; colour, weak isospin, hypercharge |
-| $g_s$, $g$, $g_{\mathrm Y}$ | The three gauge couplings; the reference checklist writes $g_3$, $g_2$, $g_1$ |
+| $g_s$, $g$, $g_{\mathrm Y}$ | The three connection couplings; the reference checklist writes $g_3$, $g_2$, $g_1$ |
 | $Q_L$, $u_R$, $d_R$, $L_L$, $e_R$ | The five multiplets of one generation |
 | $Y$ | Hypercharge, with $Ϙ=Y+T_3$; the reference writes $Y_W=2Y$ |
 | $T_3$ | Third weak-isospin eigenvalue, $\pm\tfrac12$ in a doublet, $0$ in a singlet |
 | $Ϙ$ | Electric charge in units of the elementary charge |
-| $ϙ$ | The framework's charge parameter of the gauge principle; the charge glyph of [Physics Units](physics-units-and-common-elements-conventions.html) |
+| $ϙ$ | The framework's charge parameter of the minimal coupling; the charge glyph of [Physics Units](physics-units-and-common-elements-conventions.html) |
 | $W_{a,\imath}$, $B_{\imath}$, $G_{a,\imath}$ | Weak, hypercharge and colour connections |
 | $W^\pm_{\imath}$, $Z_{\imath}$, $A_{\imath}$ | Charged, neutral massive and electromagnetic fields after mixing |
 | $\theta_W$ | Weinberg angle, $\tan\theta_W=g_{\mathrm Y}/g$ |

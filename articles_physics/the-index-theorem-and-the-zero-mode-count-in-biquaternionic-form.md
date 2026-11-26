@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Hopf fibration of the companion article *The Hopf Fibration and the Biquaternion Gauge Bundle* supplied the geometric home of the connection and two integers: the winding of a map from the three-sphere, which is the instanton number, and the Chern number of a circle bundle over the two-sphere, which is the magnetic charge. This article supplies the tool that turns those integers into a *count*. The Atiyah–Singer index theorem states that the difference between the number of positive-chirality and negative-chirality zero modes of a Dirac operator is a topological integral, and in the gauge-theoretic setting that integral is the same density whose integral gave the instanton charge in *Instantons and Solitons in Biquaternionic Form*. The charge that classifies the field and the number of fermion zero modes that the field supports are therefore the same number up to the Dynkin index of the representation: the index is $2T(R)$ times the charge, and for the defining representation of $\mathrm{SU}(2)$, where $2T=1$, the two coincide.
+The Hopf fibration of the companion article *The Hopf Fibration and the Biquaternion Bundle* supplied the geometric home of the connection and two integers: the winding of a map from the three-sphere, which is the instanton number, and the Chern number of a circle bundle over the two-sphere, which is the magnetic charge. This article supplies the tool that turns those integers into a *count*. The Atiyah–Singer index theorem states that the difference between the number of positive-chirality and negative-chirality zero modes of a Dirac operator is a topological integral, and in the gauge-theoretic setting that integral is the same density whose integral gave the instanton charge in *Instantons and Solitons in Biquaternionic Form*. The charge that classifies the field and the number of fermion zero modes that the field supports are therefore the same number up to the Dynkin index of the representation: the index is $2T(R)$ times the charge, and for the defining representation of $\mathrm{SU}(2)$, where $2T=1$, the two coincide.
 
 The framework enters through three points, two of which are its own and one of which is not.
 
@@ -15,7 +15,7 @@ The article states the theorem as the standard result it is, derives the special
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the operator whose index is taken.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module and its chirality.
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the topological background and its charge.
-- Companion article *The Hopf Fibration and the Biquaternion Gauge Bundle*, for the abelian bundle and its charge.
+- Companion article *The Hopf Fibration and the Biquaternion Bundle*, for the abelian bundle and its charge.
 - Companion article *The ADHM Construction and Biquaternion Instanton Data*, for the moduli whose dimension the adjoint index counts.
 - Companion article *Clifford Modules and the Twisted Cauchy–Riemann Operator*, for the theorem in its mathematical form.
 
@@ -89,7 +89,7 @@ $$
 
 The two are adjoints of one another in the Hermitian form, because the conjugate of the gradient is the operator that form pairs with it, $\tilde\nabla_\Phi^{*}=(\tilde\nabla_\Phi)^{\natural}$ (*Operator and Calculus Conventions*, §*The Gradient*, the conjugates of the gradient); the integration by parts carries a sign, and a sign moves no kernel. Nothing forces the two dimensions to agree, and that asymmetry is what the index measures.
 
-**The two Dirac equations.** The framework's equation is the chiral pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, each member acting from the left and the mass coupling the two parts; no single glyph is written for them. The mass is the pairing of the two parts and a zeroth-order term, and it does not move the index: the index of an elliptic first-order operator is fixed by its symbol, which the mass leaves untouched. The index computed below is therefore the index of the twisted operator, and the gauge-covariant gradient $\tilde D_R$ of the section above is its derivative.
+**The two Dirac equations.** The framework's equation is the chiral pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, each member acting from the left and the mass coupling the two parts; no single glyph is written for them. The mass is the pairing of the two parts and a zeroth-order term, and it does not move the index: the index of an elliptic first-order operator is fixed by its symbol, which the mass leaves untouched. The index computed below is therefore the index of the twisted operator, and the covariant gradient $\tilde D_R$ of the section above is its derivative.
 
 **The index.** The index is the difference
 
@@ -126,7 +126,7 @@ T(\text{defining})=\frac{2\cdot\tfrac34}{3}=\frac12 ,
 T(\text{adjoint})=\frac{3\cdot 2}{3}=2 .
 $$
 
-Both are computed from the same commutation relations $[T_a,T_b]=\varepsilon_{abc}T_c$ that define $\mathfrak{su}(2)\subset\mathbb{B}_{\Phi}$ in *Non-Abelian Gauge Fields in Biquaternionic Form*, with $T_a=\tfrac12 \vec e_a$, so the group theory here is the framework's group theory. The index formula then reads
+Both are computed from the same commutation relations $[T_a,T_b]=\varepsilon_{abc}T_c$ that define $\mathfrak{su}(2)\subset\mathbb{B}_{\Phi}$ in *Non-Abelian Connections in Biquaternionic Form*, with $T_a=\tfrac12 \vec e_a$, so the group theory here is the framework's group theory. The index formula then reads
 
 $$
 \begin{aligned}
@@ -151,7 +151,7 @@ $$
 \mathrm{ind}\,\tilde D_R \;=\; \int_M A_{\mathrm{aro}}(TM)\wedge\mathrm{ch}(E_R) - \frac{h+\varsigma_{\mathrm{aPS}}(0)}{2},
 $$
 
-where $h$ is the dimension of the space of boundary zero modes and $\varsigma_{\mathrm{aPS}}(0)$ is the eta invariant of the boundary Dirac operator. The correction is a boundary term, and it is the reason a background with a nontrivial boundary can support zero modes whose count is not given by the bulk integral alone. The framework's instanton boundary is the three-sphere of *The Hopf Fibration and the Biquaternion Gauge Bundle*, and the eta invariant is a spectral invariant of the operator restricted to that boundary; its evaluation is a standard analytic computation and is not an algebraic statement about $\mathbb B$.
+where $h$ is the dimension of the space of boundary zero modes and $\varsigma_{\mathrm{aPS}}(0)$ is the eta invariant of the boundary Dirac operator. The correction is a boundary term, and it is the reason a background with a nontrivial boundary can support zero modes whose count is not given by the bulk integral alone. The framework's instanton boundary is the three-sphere of *The Hopf Fibration and the Biquaternion Bundle*, and the eta invariant is a spectral invariant of the operator restricted to that boundary; its evaluation is a standard analytic computation and is not an algebraic statement about $\mathbb B$.
 
 ## The Density, the Charge, and the Total Derivative
 
@@ -192,7 +192,7 @@ so the abelian index density is the framework's own invariant $I_2$ up to a cons
 
 ## A Worked Case: the Abelian Index and the Charge-$n$ Zero Modes
 
-The index formula is worth exercising in the framework's abelian sector, where every ingredient is the algebra's. Take the two-sphere with a $\mathrm{U}(1)$ connection whose first Chern number is $n$; the associated line bundle has $c_1=n$, and the Hopf bundle of *The Hopf Fibration and the Biquaternion Gauge Bundle* is the case $n=1$. The twisted Dirac index is
+The index formula is worth exercising in the framework's abelian sector, where every ingredient is the algebra's. Take the two-sphere with a $\mathrm{U}(1)$ connection whose first Chern number is $n$; the associated line bundle has $c_1=n$, and the Hopf bundle of *The Hopf Fibration and the Biquaternion Bundle* is the case $n=1$. The twisted Dirac index is
 
 $$
 \mathrm{ind}\,\tilde D_n=\int_{S^2}A_{\mathrm{aro}}(TS^2)\wedge\mathrm{ch}(L)=\int_{S^2}c_1(L)=n ,
@@ -285,7 +285,7 @@ The index density is a total derivative whose integral equals the instanton char
 - Michael F. Atiyah and Isadore M. Singer, "The index of elliptic operators I", *Annals of Mathematics* 87 (1968) 484–530, for the index theorem and the index density.
 - Michael F. Atiyah, Vijay K. Patodi and Isadore M. Singer, "Spectral asymmetry and Riemannian geometry I", *Mathematical Proceedings of the Cambridge Philosophical Society* 77 (1975) 43–69, for the index theorem with boundary and the eta invariant.
 - Michael F. Atiyah, Nigel J. Hitchin and Isadore M. Singer, "Self-duality in four-dimensional Riemannian geometry", *Proceedings of the Royal Society A* 362 (1978) 425–461, for the instanton zero modes and the dimension formula.
-- Thomas Eguchi, Peter B. Gilkey and Andrew J. Hanson, "Gravitation, gauge theories and differential geometry", *Physics Reports* 66 (1980) 213–393, for the index density, the Chern character and the eta invariant in a physics setting.
+- Thomas Eguchi, Peter B. Gilkey and Andrew J. Hanson, "Gravitation, connection theory and differential geometry", *Physics Reports* 66 (1980) 213–393, for the index density, the Chern character and the eta invariant in a physics setting.
 - Arthur L. Besse, *Einstein Manifolds* (Springer, 1987), for the A-roof genus and the differential-geometric background.
 - Michael F. Atiyah, *Geometry of Yang–Mills Fields* (Accademia Nazionale dei Lincei, 1979), for the index theorem in the gauge-theoretic form used here.
 - Roman Jackiw and Claudio Rebbi, "Solitons with fermion number $1/2$", *Physical Review D* 13 (1976) 3398–3409, for the fermion number of the instanton zero modes.

@@ -217,7 +217,7 @@ so the scale of $E_{kl}$ is the product of the scales of the factors, and $\mu$ 
 
 **The gauge is not a second root.** The parameters $\lambda_k$ act on the nilpotents and on the off-diagonal units. They never act on the diagonal, on the idempotents, or on the root. A statement that depends on $\lambda$ is a statement about a frame, not about the algebra or the idempotents.
 
-### An Explicit Gauge Transformation
+### An Explicit Local Transformation
 
 In the standard frame, the gauge is the diagonal matrix
 

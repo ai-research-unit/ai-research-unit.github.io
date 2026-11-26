@@ -133,7 +133,7 @@ $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial \nu_{\Phi,k}=0$, so th
 
 A nonzero mixed derivative would mean that the frequency's conjugate depends on the wave vector, which is what a dispersion with a velocity-dependent mass would look like. The article's class has none, and the flatness of the second derivative is the class's mark.
 
-## The Constraints the Action Imposes: Gauge Invariance of the Symbol
+## The Constraints the Action Imposes: Local Invariance of the Symbol
 
 Under a local transformation $\tilde\Xi\mapsto e^{\frac{2\pi iϙ\Gamma}{h}}\tilde\Xi$, the connection moves as $\omicron_{\mathrm{pot}}\mapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma$ and $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. A mode's phase moves as $\theta\mapsto\theta+\frac{2\pi ϙ\Gamma}{h}$, so its frequency and wave vector move as
 
@@ -197,7 +197,7 @@ Composing the identity with the on-shell condition gives $E=0$ on a solution at 
 
 ## What the Principle Adds and What It Relabels: Under Coupling
 
-The identity is that the coupled symbol is the fixed-frequency coupled action. The sign is $E=-\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})$, verified with zero residual. The invariance is the cancellation of the gauge shift, verified to $8.9\times10^{-16}$.
+The identity is that the coupled symbol is the fixed-frequency coupled action. The sign is $E=-\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})$, verified with zero residual. The invariance is the cancellation of the phase shift, verified to $8.9\times10^{-16}$.
 
 The coupled action is real because each of its three terms is real, not because of a cancellation. That is a stronger statement than the free article's, and it is the reason a central connection cannot spoil the variational structure.
 

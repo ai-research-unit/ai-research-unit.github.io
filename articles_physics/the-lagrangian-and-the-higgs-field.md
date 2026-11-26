@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The question. The electroweak sector's scalar is the one field in the corpus whose action is written twice in two places and never as a family article. *The Lagrangian and the Electroweak Theory* writes the full gauge action with the doublet inside it, and *Electroweak Symmetry Breaking* reads the masses and the couplings off the mass matrix. Neither asks the spin-zero question on its own: what is the action of the scalar field, what does its variation give, and what does the potential fix that the masses do not. This article asks it.
+The question. The electroweak sector's scalar is the one field in the corpus whose action is written twice in two places and never as a family article. *The Lagrangian and the Electroweak Theory* writes the full connection action with the doublet inside it, and *Electroweak Symmetry Breaking* reads the masses and the couplings off the mass matrix. Neither asks the spin-zero question on its own: what is the action of the scalar field, what does its variation give, and what does the potential fix that the masses do not. This article asks it.
 
 The answer in five sentences. The scalar action is the Klein–Gordon action for a complex doublet with a potential $V=-\mu^{2}\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}+\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2}$, and the potential is a function of one variable, $r^{2}=2\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}$, so the four real components split into one radial direction that is curved and three angular directions that are flat. The variation gives $\Box\omicron_{\mathrm{hgs}}=\mu^{2}\omicron_{\mathrm{hgs}}-2\varpi_{\mathrm{cpl}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})\omicron_{\mathrm{hgs}}$, whose radial reading is the anharmonic oscillator and whose unitary reading is $\Box h+m_h^{2}h+3\varpi_{\mathrm{cpl}} vh^{2}+\varpi_{\mathrm{cpl}} h^{3}=0$. The mass is the curvature of the potential at its minimum, $m_h^{2}=2\varpi_{\mathrm{cpl}} v^{2}$, and the same $\varpi_{\mathrm{cpl}}$ fixes the cubic and quartic self-couplings at $6\varpi_{\mathrm{cpl}} v$ and $6\varpi_{\mathrm{cpl}}$, so one number is measured three times. The three flat directions are the would-be Goldstone modes, and that is the whole of what the scalar sector contributes to the breaking.
 
-Why this article exists apart from the sector article. Because the sector article's subject is the gauge action and its two phases, and the scalar's own structure is a different claim. Here the connections are spectators: the covariant derivative is replaced by the ordinary one, and the difference between the two actions is exactly the vector mass term, which the companion derives. What is left is a potential and its derivatives, and those are exact.
+Why this article exists apart from the sector article. Because the sector article's subject is the connection action and its two phases, and the scalar's own structure is a different claim. Here the connections are spectators: the covariant derivative is replaced by the ordinary one, and the difference between the two actions is exactly the vector mass term, which the companion derives. What is left is a potential and its derivatives, and those are exact.
 
 What is not done. No loop, no renormalisation, no running, no unitarity computation, no scattering amplitude and no decay rate. The value of $\varpi_{\mathrm{cpl}}$ is taken from the measured mass and is not derived. Nothing here is the Standard Model's quantised scalar sector, and the article says so at the point where the reader would expect it.
 
@@ -194,8 +194,8 @@ $$
 
 ## Further Reading
 
-- *The Lagrangian and the Electroweak Theory*, for the same scalar inside the full gauge action, its two phases and the vector masses.
-- *Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses*, for the mass matrix, the count and the couplings read from the masses rather than from the potential's derivatives.
+- *The Lagrangian and the Electroweak Theory*, for the same scalar inside the full connection action, its two phases and the vector masses.
+- *Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses*, for the mass matrix, the count and the couplings read from the masses rather than from the potential's derivatives.
 - *The Higgs Mechanism in Biquaternionic Form*, for the central scalar and the covariant derivative in the biquaternion algebra.
 - *The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form*, for the one-loop correction this article does not compute.
 - *The Landau Pole, Triviality and Vacuum Stability*, for the two bounds that follow from the running of $\varpi_{\mathrm{cpl}}$.

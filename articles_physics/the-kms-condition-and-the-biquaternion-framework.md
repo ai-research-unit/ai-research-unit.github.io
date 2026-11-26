@@ -215,7 +215,7 @@ The following directions seem promising.
 
 **5. The reach of the material-sector route.** The relation between the KMS condition and the Wick rotation is now fixed: the thermal formalism downstream of the condition is reached either by the rotation — the standard route — or, without one, in the material sector with the Hermitian form (*The Thermal Route and the Rotation* above, and *The Matsubara Thermal Formalism in Biquaternionic Form*). What remains open is not the relation but its reach: whether the material route survives where the rotation does not, namely the real-time and transport cases, where the Euclidean weight that makes the rotated integral converge is unavailable.
 
-**6. Numerical methods.** The imaginary-time formalism is the basis of lattice gauge theory and Monte Carlo computations. If the biquaternion framework provides a cleaner formulation of the KMS condition, might it suggest new numerical methods for finite-temperature QFT?
+**6. Numerical methods.** The imaginary-time formalism is the basis of lattice connection theory and Monte Carlo computations. If the biquaternion framework provides a cleaner formulation of the KMS condition, might it suggest new numerical methods for finite-temperature QFT?
 
 ## Summary
 

@@ -586,7 +586,7 @@ $$
 $$
 The five frame basis operators of this display, their products and their Clifford reading are in §*The Clifford Structure* and §*The Legacy Pauli Gamma Formulation*.
 
-**No entry is read without the frame.** Another gauge or another order of the four basis elements gives another matrix of the same operator; the block formula holds in this display alone, and it is the reason the display is kept: the $2\times2$ image taken twice is what a reader of the matrix literature recognises. The mathematics articles of the corpus are written in this display unless they name the coefficient basis, and the physics articles are written in the axis-free one; $C_{\Pi}$ carries the one to the other. The copy and the element are what the frame does not change.
+**No entry is read without the frame.** Another fixing condition or another order of the four basis elements gives another matrix of the same operator; the block formula holds in this display alone, and it is the reason the display is kept: the $2\times2$ image taken twice is what a reader of the matrix literature recognises. The mathematics articles of the corpus are written in this display unless they name the coefficient basis, and the physics articles are written in the axis-free one; $C_{\Pi}$ carries the one to the other. The copy and the element are what the frame does not change.
 
 ## The Switch Between the Two Frames
 

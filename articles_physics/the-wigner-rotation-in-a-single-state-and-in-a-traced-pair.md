@@ -32,7 +32,7 @@ This is the sharp form of the claim, and it is not the weak one. The weak form w
 
 Care is needed with the word "unobservable". A rotation of a spin is observable as a phase in an interference experiment, and the Wigner rotation is observable in the interference between momentum branches. What is not observable is a rotation *of a state on its own*, and the two statements differ by the presence of a second branch. The rest of the article is about that second branch.
 
-## The Gauge Statement
+## The Statement of the Redundancy
 
 **Rotating the state and the axes together changes nothing at all.** The image of $\vec s$ under a rotation of $0.9$ about $\vec n=(1,1,0)/\sqrt2$ is the rotated vector to $1.7\times10^{-16}$, and the modulus is unchanged to $0$. That is the content of "orientation is relational" in one line: only the angle between the state and something else is data.
 
@@ -93,7 +93,7 @@ This matters for how the result is stated in the literature. A boost is momentum
 
 ## Objections
 
-The objection is that this makes the Wigner rotation pure gauge, and it is observed. It is not pure gauge, and the objection conflates two absences. The rotation is unregistered by a single state, and it is registered by any comparison. Interference between two momentum branches is a comparison: the relative phase between them carries the rotation, and the corpus's Wigner angle is measured exactly there.
+The objection is that this makes the Wigner rotation pure gradient, and it is observed. It is not pure gradient, and the objection conflates two absences. The rotation is unregistered by a single state, and it is registered by any comparison. Interference between two momentum branches is a comparison: the relative phase between them carries the rotation, and the corpus's Wigner angle is measured exactly there.
 
 A second objection is that the $\lvert\cos\omicron_{\mathrm{ang}}\rvert$ result is about tracing and not about frames. That is what the article claims, and it is the reason the section exists. The rotation alone cannot change a concurrence; a rotation plus a discarded label can; the physics of frame-dependent entanglement is in the second term.
 

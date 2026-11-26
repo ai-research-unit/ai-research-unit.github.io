@@ -72,11 +72,11 @@ The third term has no derivative, and that is its function. It is the term a "cu
 
 For fixed connection the exponent is quadratic in the field. Every term of the split is quadratic in $\Xi$ and the coefficients are fixed numbers, so the functional integral is a Gaussian for every connection, with a quadratic form that carries the $A^{2}$ term as part of its coefficient. The coupling does not spoil the Gaussian; it moves the quadratic form.
 
-## The Measure and Gauge Invariance
+## The Measure and Local Invariance
 
 The transformation is a rotation at each point. Write $\tilde\Xi\mapsto e^{iϑ_{\mathrm{gau}}}\tilde\Xi$ with $ϑ_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ and $\Lambda$ real. At one point the field is two real numbers, and the transformation rotates the pair by the angle $ϑ_{\mathrm{gau}}(x)$. A rotation has unit determinant, so the flat measure $\prod_x\mathrm{d}\Xi_1\mathrm{d}\Xi_2$ is invariant with no Jacobian at all. The measure's invariance is the statement that a local phase is orthogonal.
 
-The lattice version, and the one technical requirement. On a lattice the covariant difference between neighbouring sites must carry the phase as an exponential and not as a linear term. A link $U_{j}=e^{i(\Lambda_{j}-\Lambda_{j+1})}$ makes the determinant of the quadratic form equal to the free one exactly: the ratio of determinants for a random pure-gauge link field on six sites is $1.00000000000000$. The linearised link $U_j=1+i(\Lambda_j-\Lambda_{j+1})$ gives a ratio of $22.15$ on the same configuration. **The invariance is exact for the Wilson link and approximate for the linear one**, and the difference is the difference between a local transformation of the lattice and its first-order shadow.
+The lattice version, and the one technical requirement. On a lattice the covariant difference between neighbouring sites must carry the phase as an exponential and not as a linear term. A link $U_{j}=e^{i(\Lambda_{j}-\Lambda_{j+1})}$ makes the determinant of the quadratic form equal to the free one exactly: the ratio of determinants for a random pure gradient link field on six sites is $1.00000000000000$. The linearised link $U_j=1+i(\Lambda_j-\Lambda_{j+1})$ gives a ratio of $22.15$ on the same configuration. **The invariance is exact for the Wilson link and approximate for the linear one**, and the difference is the difference between a local transformation of the lattice and its first-order shadow.
 
 What the invariance buys. The matter action, the mass term and the measure are each invariant, so the integral is a functional of the connection's orbit and not of the connection. The variational companion says the same thing about the action; the integral adds the measure, and the measure's invariance is what makes the statement a statement about the integral and not only about the integrand.
 
@@ -136,7 +136,7 @@ $$
 
 in every correlation function and not only on the solutions. This is the Ward identity of the central phase symmetry, and it is the integral's form of the variational companion's second-Noether argument. The companion derives the conservation from the equations; the integral derives it from the measure, and the integral's version is the stronger one because it does not require the field to be on shell.
 
-The check already quoted is the check of this section. The determinant of the quadratic form is unchanged by a pure-gauge link to machine precision, and that invariance is the differentiated identity's source. A generating functional whose determinant does not move under a pure-gauge link is a generating functional whose current is conserved.
+The check already quoted is the check of this section. The determinant of the quadratic form is unchanged by a pure gradient link to machine precision, and that invariance is the differentiated identity's source. A generating functional whose determinant does not move under a pure gradient link is a generating functional whose current is conserved.
 
 What the identity is not. It is not the statement that the current is the source of the connection's equation; that is the second variation of the total action, and it belongs to the variational companion. The integral states one half of the pair — that the current is conserved in every correlation function — and the other half is a classical statement about the connection.
 
@@ -218,9 +218,9 @@ The current is the first variation of the integral with respect to the connectio
 - [The Lagrangian and the Coupled Klein–Gordon Equation](the-lagrangian-and-the-coupled-klein-gordon-equation.html), for the coupled action, its variation in the field and in the connection, and the recorded discrepancy in the temporal slot.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Form](the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the covariant square's split, the prohibition on central fields in a nonzero field strength, and the two readings.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the amplitude and transport equations that the integral's saddles reproduce.
-- [The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same integral read in the chart, where the gauge transformation is a translation of one coordinate.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the covariant derivative and the sign convention.
-- [The Gauge Field Path Integral in Biquaternionic Form](the-gauge-field-path-integral-in-biquaternionic-form.html), for the integral over the connection, which this article holds fixed.
+- [The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same integral read in the chart, where the local transformation is a translation of one coordinate.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the covariant derivative and the sign convention.
+- [The Connection Path Integral in Biquaternionic Form](the-gauge-field-path-integral-in-biquaternionic-form.html), for the integral over the connection, which this article holds fixed.
 - J. Glimm and A. Jaffe, *Quantum Physics: A Functional Integral Point of View* (Springer, 1987), for the lattice definition of a scalar functional integral and the role of the link variable.
-- K. G. Wilson, "Confinement of Quarks", *Physical Review D* 10 (1974), 2445, for the lattice link variable and the exact gauge invariance it carries.
-- S. Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the background-field method and the Ward identities of an abelian gauge theory.
+- K. G. Wilson, "Confinement of Quarks", *Physical Review D* 10 (1974), 2445, for the lattice link variable and the exact local invariance it carries.
+- S. Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the background-field method and the Ward identities of an abelian connection theory.

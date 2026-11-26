@@ -20,7 +20,7 @@ $$
 
 **What the article claims.** That the photon is a particular combination of three neutral connections; that the combination's **direction** is fixed by two neutrality conditions and requires no choice; that the direction is the coefficient vector of $Q$, so the photon is the unique combination that carries zero charge on every vacuum; and that the section's other articles survive verbatim, their equations untouched.
 
-**What the article does not claim.** That the photon's dynamics changes. That photon mass or charge quantisation is modified. That the mixture is observable: it is not, at any energy, and *Why the Mixture Is Unobservable* says why. **And it does not compute the photon's coefficients in the three gauge fields**, because those coefficients carry the three couplings; they are in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). *Direction and Coordinates: Where This Article Stops* states that boundary.
+**What the article does not claim.** That the photon's dynamics changes. That photon mass or charge quantisation is modified. That the mixture is observable: it is not, at any energy, and *Why the Mixture Is Unobservable* says why. **And it does not compute the photon's coefficients in the three fixing condition fields**, because those coefficients carry the three couplings; they are in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). *Direction and Coordinates: Where This Article Stops* states that boundary.
 
 **Why the distinction matters.** The neutral sector has a shape and a size. The shape — three fields, one surviving combination, its direction — is fixed by the vacuum and is arithmetic. The size — how much of each field the photon contains — is fixed by the three couplings and moves when they do. **An article that prints the first as though it were the second smuggles a moving number into a fixed statement.** This article keeps the first and sends the second to the article that owns the couplings.
 
@@ -250,10 +250,10 @@ Three neutral connections are not three scalars. All three are connections, and 
 ## Further Reading
 
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model: Sixteen Cells, Fifteen Generators, Nine Massless and Six Heavy](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The chain, the neutral mass matrix, and the same triple in its own place.
-- [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The photon's coefficients in the three gauge fields, and the value of the angle they produce.
+- [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The photon's coefficients in the three connections, and the value of the angle they produce.
 - [Charge Quantisation from the Fourth Colour: One Trace, One Third](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The trace that fixes the $B-L$ eigenvalues, and the $B-L$ normalisation behind $\sqrt{2/3}$.
 - [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The group, the sixteen, and the covariant derivative whose neutral part is mixed here.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html). The category's own construction, which the mixture leaves intact (*The Photon and the Corpus's Own Electromagnetism*).
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html). $F$ as a bivector, and why a linear combination adds no term to it.
-- [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The same field in the category's own language, with its polarisation and helicity, and no gauge group.
+- [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The same field in the category's own language, with its polarisation and helicity, and no symmetry group.
 - [The $W$ and $Z$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The two massive neutrals the mixture leaves behind.

@@ -4,7 +4,7 @@
 
 **The object.** A field configuration can be classified by an integer that no continuous deformation changes. For a connection the integer is the integral of a density built from the field strength, and it is fixed by the behaviour of the field at infinity rather than by its shape. Configurations with nonzero charge are **instantons** in the Euclidean theory; the same charge in the Lorentzian theory would be carried by solitons, and the two cases differ in what makes a configuration stable.
 
-**What this article is.** The general theory, with no sector attached: the density, its primitivity, the self-duality condition, the bound that self-dual configurations saturate, and the reason the framework's own invariants supply the abelian density and not the non-abelian one. It is used by the strong sector, where the objects are the non-perturbative configurations of the colour gauge theory.
+**What this article is.** The general theory, with no sector attached: the density, its primitivity, the self-duality condition, the bound that self-dual configurations saturate, and the reason the framework's own invariants supply the abelian density and not the non-abelian one. It is used by the strong sector, where the objects are the non-perturbative configurations of the colour connection theory.
 
 **Where the applications are.**
 
@@ -81,7 +81,7 @@ with equality exactly when $F=\pm\star F$. The self-dual configurations are ther
 | $Q$ | the topological charge, an integer |
 | $\Omega_{\mathrm{CS}}$ | the Chern–Simons form |
 | $J_{\mathrm{CS},\imath}$ | the abelian Chern–Simons current |
-| $g$ | the gauge coupling |
+| $g$ | the connection coupling |
 
 ## Further Reading
 

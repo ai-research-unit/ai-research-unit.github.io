@@ -126,7 +126,7 @@ holds for the current as defined in this section, the companion's $J$ being this
 
 **What this establishes.** A coupling between a field and a connection exists exactly when the field has a conserved current, because the connection's equation must be integrable. For the scalar, the current is the phase symmetry's, the symmetry exists because the centre of the algebra is a $\mathrm{U}(1)$, and the coupling is the localization of that symmetry. The chain is the minimal coupling article's, and the coupled Klein–Gordon Lagrangian article supplies the one computation the chain needs at second order.
 
-## The Constraints the Action Imposes: Gauge Invariance of the Total Action
+## The Constraints the Action Imposes: Local Invariance of the Total Action
 
 **The matter term is invariant, exactly.** Under $\tilde\Xi\mapsto e^{\frac{2\pi iϙ\Lambda}{h}}\tilde\Xi$ and $A_{\imath}\mapsto A_{\imath}-\partial_{\imath}\Lambda$ the covariant derivative is covariant — the computation is the element companion's and it is exact for a general element — so each slot's squared modulus is invariant and the mass term is invariant. The invariance is not up to a divergence; it is an identity.
 
@@ -248,8 +248,8 @@ with $J_{\imath}=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},
 - [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same theory in the chart.
 - [The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-coupled-klein-gordon-equation-in-polar-variables.html), for the action in the chart.
 - [The Lagrangian and the Klein–Gordon Equation](the-lagrangian-and-the-klein-gordon-equation.html), for the free action and the conjugation checks.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator, the curvature and the second Noether theorem.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator, the curvature and the second Noether theorem.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the field term and the inhomogeneous equation.
 - [The Lagrangian and the Coupled Proca Equation](the-lagrangian-and-the-coupled-proca-equation.html), for the contrast where the potential is complex and the field term's normalisation is open.
 - [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html), for the contrast where the current needs an adjoint row.

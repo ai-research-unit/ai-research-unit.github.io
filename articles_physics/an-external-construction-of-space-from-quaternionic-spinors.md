@@ -225,7 +225,7 @@ Section 9.1 adds a Lagrange multiplier $\mathrm{Sd}_{\imath\jmath ab}$ enforcing
 $$
 \Gamma_{k\imath\jmath}=\sum_a e_{ak}\,\frac{\partial \exp(a){}_{\jmath}}{\partial x_{\imath}}
 $$
-is curvature-free by construction, and the teleparallel gauge is the one in which the whole connection is contorsion. Both were verified independently for this corpus in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form*, where the vanishing of the curvature and the non-vanishing of the torsion were checked exactly.
+is curvature-free by construction, and the teleparallel fixing condition is the one in which the whole connection is contorsion. Both were verified independently for this corpus in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form*, where the vanishing of the curvature and the non-vanishing of the torsion were checked exactly.
 
 One defect in that paragraph is checkable on the page and needs no computation. The display for the contorsion reads $N_{\mathrm{cont},\imath ab}=-\omega_{\imath ab}(e)=e_{a\jmath}\frac{\partial e_{b]\jmath}}{\partial r_{x[\imath}}-e_{b\jmath}\frac{\partial e_{a]\jmath}}{\partial r_{x[\imath}}$, and the line immediately below, which the same paragraph equates to it, reads $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ},\,C_{ab}\,\partial \tilde{Ξ}/\partial x_{\imath}\rangle=-e_{a\jmath}\frac{\partial e_{b]\jmath}}{\partial r_{x[\imath}}-e_{b\jmath}\frac{\partial e_{a]\jmath}}{\partial r_{x[\imath}}$. The second term changes sign between two consecutive displays of the same object, so at most one of them is right.
 
@@ -472,7 +472,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 
 - J. G. B. Northey, "An External Construction of Space: Unifying Dirac and Einstein–Cartan through Quaternionic Spinors", *International Journal of Quantum Foundations* **11** (2025) 444–469 — the paper this article records and reviews; all quotations are from it.
 - F. W. Hehl, P. von der Heyde, G. D. Kerlick and J. M. Nester, "General relativity with spin and torsion: foundations and prospects", *Reviews of Modern Physics* **48** (1976) 393–416, for the standard Einstein–Cartan–Sciama–Kibble objects the source claims to reproduce.
-- R. Aldrovandi and J. G. Pereira, *Teleparallel Gravity: An Introduction* (Springer, 2013), for the Weitzenböck connection and the teleparallel gauge used in the source's Section 9.1.
+- R. Aldrovandi and J. G. Pereira, *Teleparallel Gravity: An Introduction* (Springer, 2013), for the Weitzenböck connection and the teleparallel fixing condition used in the source's Section 9.1.
 - [Torsion, Contorsion and the Spin Connection in Biquaternionic Form](torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html), for the independently verified torsion, contorsion, spin-density and Weitzenböck identities against which the source's Eqs. (4)–(6) and Appendix B were checked.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the one-sided pair set against the source's two-sided equation, and for the boundary between the gradient and the contraction a frame imposes on it.
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the corpus's boundary statement that the algebra carries the frame and the connection without generating either.

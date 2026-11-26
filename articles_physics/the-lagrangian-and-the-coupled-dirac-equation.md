@@ -24,7 +24,7 @@ Three things are established.
 
 *Third, the current is settled.* The local phase's Noether current is conserved on solutions, and it is the pairing with two fixed frame units that the element form states and the Gordon article identifies. The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant, is of the density sign, and is not conserved. The action does not produce it and the equation does not conserve it. The positive statement and the counterexample are both in §*The Noether Currents: What the Action Produces and What It Does Not*.
 
-The two settings. The action is stated for a connection that may depend on the coordinates. The two settings of the framework are distinct and are kept apart here. In the constant setting the connection is a fixed element of $\mathbb{B}_\Phi$ with constant coefficients; the equation becomes algebraic in momentum space, the propagator is a finite product of exponentials up to the gauge factor, and a constant potential is pure gauge. In the operator setting the connection is an operator or a general function of position; the equation is a partial differential equation, the propagator is not a finite product, and the variational principle is the standard field-theoretic one. The article computes in the constant setting and states where the operator setting differs. Nothing is transferred between them.
+The two settings. The action is stated for a connection that may depend on the coordinates. The two settings of the framework are distinct and are kept apart here. In the constant setting the connection is a fixed element of $\mathbb{B}_\Phi$ with constant coefficients; the equation becomes algebraic in momentum space, the propagator is a finite product of exponentials up to the group factor, and a constant potential is pure gradient. In the operator setting the connection is an operator or a general function of position; the equation is a partial differential equation, the propagator is not a finite product, and the variational principle is the standard field-theoretic one. The article computes in the constant setting and states where the operator setting differs. Nothing is transferred between them.
 
 ## Conventions
 
@@ -71,7 +71,7 @@ $$
 \tilde\Xi=\exp\Bigl(-i\frac{2\pi ϙ}{h}\tilde A_\Phi\cdot R\Bigr)\tilde\Xi_{\mathrm{free}},
 $$
 
-with $\tilde\Xi_{\mathrm{free}}$ the free solution. The action's stationary points are the same set, and the value of the action on a solution is the free value, because a constant potential is pure gauge and the gauge factor's contribution cancels between the field and its conjugate.
+with $\tilde\Xi_{\mathrm{free}}$ the free solution. The action's stationary points are the same set, and the value of the action on a solution is the free value, because a constant potential is pure gradient and the group factor's contribution cancels between the field and its conjugate.
 
 The closed-form propagator, and what it is not. The propagator is a finite product of exponentials because the operator is a fixed element: the exponential of a fixed element can be computed by squaring, and no ordering problem arises. That is the whole reason the constant setting is closed, and it is the reason nothing in this setting transfers to the operator one.
 
@@ -111,7 +111,7 @@ the covariant wave equation with the curvature term. The coupling therefore chan
 
 Boundary terms. The variation of a field of compact support produces none. For fields periodic in the spatial directions no boundary term appears either, provided the phase function is periodic; a non-periodic phase function changes the boundary data and the action is then stationary only within a gauge class. That is the standard statement and the coupling does not alter it.
 
-## The Constraints the Action Imposes: The Two Gauges
+## The Constraints the Action Imposes: The Two Fixing Conditions
 
 **A first-order action has constrained momenta, and a coupled one has an orbit.** Two different objects are called a constraint in this family, and the article keeps them apart because confusing them is the commonest error in the coupled case.
 
@@ -144,7 +144,7 @@ $$
 +\frac{2\pi i\,ϙ}{h}\Bigl(\tilde\Xi_L^{*}\delta\tilde A_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\delta\tilde A_\Phi\tilde\Xi_R\Bigr),
 $$
 
-and the two brackets cancel for every field exactly when $\delta\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$, that is, when the connection obeys the gauge law with the sign the element companion uses. The covariant derivative is the unique repair of this shape, and the sign of the coupling is fixed by the sign of the gauge law. No further term can be added: a term without a derivative would have to be a function of $\tilde A_\Phi$ alone, and such a term is not invariant under the shift of the connection.
+and the two brackets cancel for every field exactly when $\delta\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$, that is, when the connection obeys the transformation law with the sign the element companion uses. The covariant derivative is the unique repair of this shape, and the sign of the coupling is fixed by the sign of the transformation law. No further term can be added: a term without a derivative would have to be a function of $\tilde A_\Phi$ alone, and such a term is not invariant under the shift of the connection.
 
 **What this settles that the equation alone could not.** The coupled equation can be written down with any operator in place of the gradient, and every such equation is an equation. Only the functional selects the operator whose equation is *the* equation of a locally phased field. The variational principle therefore does real work here: it converts "couple by this prescription" into "the prescription is what local invariance requires".
 
@@ -218,7 +218,7 @@ What is deliberately absent. There is no spin current in this section. The spin 
 
 Adds.
 
-- A derivation of the coupling rather than a prescription for it: the covariant derivative is the unique abelian repair of the localized phase, and the sign of the coupling follows from the sign of the gauge law.
+- A derivation of the coupling rather than a prescription for it: the covariant derivative is the unique abelian repair of the localized phase, and the sign of the coupling follows from the sign of the transformation law.
 - One current from one symmetry, in one computation, and the identification of three writings of it: the action's display, the chart's $\rho\tilde V_\Phi$, and the Gordon pairing.
 - A sharp statement of what the naive bilinear fails to be, with the mechanism: the two parts enter a product with one sign and a current with two.
 - The covariant stress tensor and its modified conservation, with the Lorentz force density as the compensating term.
@@ -248,7 +248,7 @@ $$
 S=\frac{h c}{4\pi}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
-and its variation gives the coupled pair. The mass term is invariant under a local central phase without help; the kinetic term is not; the repair is the covariant derivative with the gauge law's sign, and it is unique within the abelian class.
+and its variation gives the coupled pair. The mass term is invariant under a local central phase without help; the kinetic term is not; the repair is the covariant derivative with the transformation law's sign, and it is unique within the abelian class.
 
 The local phase's Noether current is the parent's display, and it is one object with three writings: the action's two-part display, the chart's $\rho\cosh\theta_{\mathrm{rpd}}$ and $\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b}$, and the Gordon pairing with two frame units. The time component is a sum over the parts and the spatial component is a difference, because the parts carry conjugate derivatives.
 
@@ -256,7 +256,7 @@ The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is invariant, of the density sign, 
 
 The covariant stress tensor is conserved when the connection is constant and its divergence is the Lorentz force density when the connection is not: matter alone is not conserved in a background.
 
-The constant setting is closed — a finite product of exponentials up to the gauge factor, a constant potential pure gauge, the action's value on a solution the free value, and no gap. The operator setting is not closed and inherits none of it.
+The constant setting is closed — a finite product of exponentials up to the group factor, a constant potential pure gradient, the action's value on a solution the free value, and no gap. The operator setting is not closed and inherits none of it.
 
 ## Summary of Notation
 
@@ -271,7 +271,7 @@ The constant setting is closed — a finite product of exponentials up to the ga
 | $\mathcal{L}$ | The Lagrangian density: the integrand of $S$ |
 | $J^{t},J_{\imath}$ | Noether current of the local phase; sum over parts, difference over parts |
 | $j_{\imath}$ | The same current as a pairing with two frame units |
-| $\tilde J_{\Phi,\mathrm{sp}}=i\tilde\Xi\tilde\Xi^{*}$ | The naive bilinear: gauge invariant, density sign, **not conserved** |
+| $\tilde J_{\Phi,\mathrm{sp}}=i\tilde\Xi\tilde\Xi^{*}$ | The naive bilinear: invariant, density sign, **not conserved** |
 | $T_{\imath\jmath}$ | Stress tensor; covariant gradient in the current |
 | $\rho$ | Density; $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$ in the chart |
 | $\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | The frame's idempotents; $\tilde\Xi_R=\tilde\Xi\Pi_-$, $\tilde\Xi_L=\tilde\Xi\Pi_+$ |
@@ -289,5 +289,5 @@ The constant setting is closed — a finite product of exponentials up to the ga
 - [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), for the symmetric improvement and the operator-setting comparison.
 - [Landau Levels in Biquaternionic Form](landau-levels-in-biquaternionic-form.html), for the spectrum a non-constant potential does produce.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the standard action, the Noether current and the stress tensor.
-- Julian Schwinger, "On gauge invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the functional-derivative reading of the current.
+- Julian Schwinger, "On local invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the functional-derivative reading of the current.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the variational treatment of the Dirac action in geometric algebra.

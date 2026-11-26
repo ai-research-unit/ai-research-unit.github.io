@@ -122,7 +122,7 @@ and neither of the last two terms vanishes for a general $\Gamma$. So the action
 
 **What the relation does.** With $S=0$, the temporal component of the equation contains no second time derivative of $a'_t$: it is the statement that $a'_t$ is determined by $\vec\nabla_\Phi\cdot\vec A$ and its rate. So the four components carry three propagating modes and one determined one, and the three are the two transverse polarisations and the longitudinal one that the mass term makes physical. The massless limit is the degenerate case, where $S=0$ becomes a choice of representative rather than a determination, and the longitudinal mode decouples.
 
-**The hand check.** Put $\tilde A_\Phi=a'_t e_t$ alone, spatially constant. Then $\tilde F=0$ and the equation reads $\nu_m^{2}a'_t e_t=0$, so $a'_t=0$: a purely temporal, constant potential is not a solution of the massive theory, though it is a pure gauge configuration of the massless one. The mass term is what removes it, and the count above is that removal stated in general.
+**The hand check.** Put $\tilde A_\Phi=a'_t e_t$ alone, spatially constant. Then $\tilde F=0$ and the equation reads $\nu_m^{2}a'_t e_t=0$, so $a'_t=0$: a purely temporal, constant potential is not a solution of the massive theory, though it is a pure gradient configuration of the massless one. The mass term is what removes it, and the count above is that removal stated in general.
 
 ## The Noether Currents: No Second Current
 
@@ -175,7 +175,7 @@ symmetric term by term: the improvement was needed to symmetrise the canonical f
 **Adds.**
 
 - One compact statement of the equation: one action, one variation, four real equations.
-- The Lorenz condition as a consequence of the equation, with the interpretation that the mass term is the obstruction to the gauge shift.
+- The Lorenz condition as a consequence of the equation, with the interpretation that the mass term is the obstruction to the phase shift.
 - The energy–momentum tensor in one derivation, with the four properties (symmetry, conservation, positivity, trace) proved from the equation and the trace's exact value $-\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ recorded.
 - The exhaustion of the currents: translations and Lorentz, and nothing else, because the carrier has no central phase.
 - The two exact-solution statements: the toroidal family, and the vanishing of the pure-gradient solutions.
@@ -198,7 +198,7 @@ $$
 
 whose Euler–Lagrange equation is $\tilde\nabla_\Phi\tilde F=4\pi^{2}\nu_m^2\tilde A_\Phi$, four real equations for the four components of the material sector. The coefficient of the field term is the Maxwell normalization, the relative sign of the mass term is fixed by positivity of the energy, and the pairing is the real part of the scalar part because only that pairing is real on $\tilde F\tilde F$ and reproduces the equation.
 
-The divergence of the equation forces the Lorenz condition, and the variational reading of that fact is that the mass term breaks the gauge shift which the field term alone would allow. The action has no internal symmetry, so its only currents are the energy–momentum and the angular momentum: the stress tensor is symmetric, conserved, positive in energy, and its trace is $-\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ exactly, so that it vanishes only for a null field. Plane waves extremize the action, a toroidal family does too, and no non-trivial pure gradient does — the last being the variational statement that the mass removes the redundancy.
+The divergence of the equation forces the Lorenz condition, and the variational reading of that fact is that the mass term breaks the phase shift which the field term alone would allow. The action has no internal symmetry, so its only currents are the energy–momentum and the angular momentum: the stress tensor is symmetric, conserved, positive in energy, and its trace is $-\nu_m^2\langle\tilde A_\Phi\rangle_\natural$ exactly, so that it vanishes only for a null field. Plane waves extremize the action, a toroidal family does too, and no non-trivial pure gradient does — the last being the variational statement that the mass removes the redundancy.
 
 ## Summary of Notation
 

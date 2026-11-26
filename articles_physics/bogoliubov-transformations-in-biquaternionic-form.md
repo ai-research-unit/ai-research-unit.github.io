@@ -174,7 +174,7 @@ $$
 \tilde H_\Psi \;\longmapsto\; \tilde U\,\tilde H_\Psi\,\tilde U^{*} ,
 \qquad \tilde Q\in \mathrm{U}(2),
 $$
-is the rotation of the Bloch vector. The orbit of a minimal idempotent is the vacuum manifold $S^2$ of *The Biquaternion Vacuum as a Minimal Idempotent*, and the stabilizer of a point is $\mathrm{U}(1)\times \mathrm{U}(1)$ (the gauge phase about the axis, plus the rotation about the axis). The state space of the one-mode truncation is thus acted on by $\mathrm{U}(2)/\big(\mathrm{U}(1)\times \mathrm{U}(1)\big)\cong S^2$, in exact parallel with the standard Bloch-sphere geometry.
+is the rotation of the Bloch vector. The orbit of a minimal idempotent is the vacuum manifold $S^2$ of *The Biquaternion Vacuum as a Minimal Idempotent*, and the stabilizer of a point is $\mathrm{U}(1)\times \mathrm{U}(1)$ (the central phase about the axis, plus the rotation about the axis). The state space of the one-mode truncation is thus acted on by $\mathrm{U}(2)/\big(\mathrm{U}(1)\times \mathrm{U}(1)\big)\cong S^2$, in exact parallel with the standard Bloch-sphere geometry.
 
 The distinction between the two paragraphs is the distinction between the **gauge subgroup** and the **state space**. The Bogoliubov transformations that preserve the mode structure are the gauge phases ($\mathrm{U}(1)$, inner, acting trivially on the states); the larger group $\mathrm{U}(2)$ acts on the vacua, and it is this larger group that carries the geometric content of the one-mode state space. Neither contains a continuous squeezing direction.
 

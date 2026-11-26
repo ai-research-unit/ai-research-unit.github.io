@@ -18,7 +18,7 @@ No sector is exchanged. The action is real, the form at a mode is a complex numb
 
 ## Conventions
 
-The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The covariant derivative is that of *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule
+The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The covariant derivative is that of *Connection and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi,\imath}\longmapsto i\pi_{\imath} ,
@@ -272,7 +272,7 @@ The charge carries no mass and the energy carries $\nu_m^{2}$: the charge's symb
 - *The Lagrangian and the Proca Equation in Momentum Space*, for the free form, its longitudinal coefficient and the absent frequency.
 - *The Fourier Transform and the Coupled Proca Equation in Biquaternionic Form*, for the coupled symbol and the obstruction.
 - *The Fourier Transform and the Coupled Proca Equation in Biquaternionic Polar Variables*, for the phase as a coordinate and the ledger of three absences.
-- *Gauge Fields and the Covariant Derivative*, for the covariant derivative's symbol and the curvature.
+- *Connection and the Covariant Derivative*, for the covariant derivative's symbol and the curvature.
 - *The Proca Equation in Biquaternionic Polar Variables*, for the chart's one equation among eight.
 - *The Lagrangian and the Dirac Equation in Momentum Space*, for a first-order form and a single-valued inversion.
 - *Norm and Pairing Conventions*, for the Hermitian pairing and the modulus pairing's distinct role.

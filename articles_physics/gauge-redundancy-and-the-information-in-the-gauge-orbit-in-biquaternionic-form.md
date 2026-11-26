@@ -1,4 +1,4 @@
-# __Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form__
+# __Redundancy and the Information in the Orbit in Biquaternionic Form__
 
 ## Introduction
 
@@ -30,9 +30,9 @@ $$
 \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r'_t}^2 ,
 $$
 
-the series convention. The connection is $\tilde{A}_{\Phi} = \sum_{\imath\in\{t,x,y,z\}}A_{\imath} e_{\imath} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$, with $A_0 = i\,a'_t$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real phase function $\Gamma$. The coupling is written $\kappa =\frac{2\pi ϙ}{h}$, so that $D = \tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi}$ and $D_{\imath} = \partial/\partial R_{\imath} + i\kappa A_{\imath}$. The gauge scalar is $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The plain form, read as the reduction formula $2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.
+the series convention. The connection is $\tilde{A}_{\Phi} = \sum_{\imath\in\{t,x,y,z\}}A_{\imath} e_{\imath} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$, with $A_0 = i\,a'_t$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real phase function $\Gamma$. The coupling is written $\kappa =\frac{2\pi ϙ}{h}$, so that $D = \tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi}$ and $D_{\imath} = \partial/\partial R_{\imath} + i\kappa A_{\imath}$. The scalar part is $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The plain form, read as the reduction formula $2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.
 
-## The Gauge Orbit as a Torsor
+## The Orbit as a Torsor
 
 The set $\mathcal{O}(\tilde{A}_{\Phi})$ is the image of the map
 
@@ -68,7 +68,7 @@ $$
 K = \sum_{\imath\in\{t,x,y,z\}}2\pi\nu_{\Phi,\imath} e_{\imath} .
 $$
 
-A pure-gauge mode with real scalar amplitude $g$ contributes $iKg$, so its image is the **real line spanned by $iK$** inside the four-dimensional fibre. The linear map from phase functions to connections therefore has rank one per mode (rank zero only for the constant mode $k = 0$, on which there is no redundancy). This was checked numerically: for generic wavevectors and a generic real amplitude, the four ratios of the components of $iKg$ to those of $K$ agreed to $2\times10^{-16}$.
+A pure gradient mode with real scalar amplitude $g$ contributes $iKg$, so its image is the **real line spanned by $iK$** inside the four-dimensional fibre. The linear map from phase functions to connections therefore has rank one per mode (rank zero only for the constant mode $k = 0$, on which there is no redundancy). This was checked numerically: for generic wavevectors and a generic real amplitude, the four ratios of the components of $iKg$ to those of $K$ agreed to $2\times10^{-16}$.
 
 The rank is the count of redundant directions per mode, and subtracting it from the four components of the connection gives the count of physical directions. That count is taken up in the next section.
 
@@ -84,7 +84,7 @@ $$
 \digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}}).
 $$
 
-Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
+Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the connection angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
 The three shifts are arranged so that the derivative of the transformed field in the transformed background is the transform of the derivative:
 
@@ -100,7 +100,7 @@ $$
 D_2 = \digamma_{\mathrm{gau}}\,D\,\digamma_{\mathrm{gau}}^{-1}.
 $$
 
-This is the algebraic content of the redundancy: the pair $(\tilde{A}_{\Phi},\tilde{Ξ})$ and the pair $(\tilde{A}_{\Phi,2},\tilde{Ξ}_{2})$ are related by the local $*$-unitary $\digamma_{\mathrm{gau}}$, and every quantity built from $D$ and $\tilde{Ξ}$ in a covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.
+This is the algebraic content of the redundancy: the pair $(\tilde{A}_{\Phi},\tilde{Ξ})$ and the pair $(\tilde{A}_{\Phi,2},\tilde{Ξ}_{2})$ are related by the local $*$-unitary $\digamma_{\mathrm{gau}}$, and every quantity built from $D$ and $\tilde{Ξ}$ in a covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about connection theory.
 
 Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\digamma_{\mathrm{gau}}$ is central, which is the abelian case the framework's own symmetry group supplies; for a non-abelian group $D_2 = \digamma_{\mathrm{gau}} D\digamma_{\mathrm{gau}}^{-1}$ holds with $\digamma_{\mathrm{gau}}$ a matrix-valued group element and $\digamma_{\mathrm{gau}}^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\digamma_{\mathrm{gau}}$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism of the algebra is the identity, and the transformation acts on the pair $(\tilde{A}_{\Phi},\tilde{Ξ})$ as the common central scalar $\digamma_{\mathrm{gau}}$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.
 
@@ -120,9 +120,9 @@ $$
 = \tilde{F},
 $$
 
-because $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma = \Box_\Phi\Gamma\,e_t$ is a pure scalar and has no vector part. The orbit is thus the fibre of the map $\tilde{A}_{\Phi}\mapsto\tilde{F}$: on any one orbit, the curvature is constant, and along the orbit nothing but the pure-gauge scalar changes.
+because $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma = \Box_\Phi\Gamma\,e_t$ is a pure scalar and has no vector part. The orbit is thus the fibre of the map $\tilde{A}_{\Phi}\mapsto\tilde{F}$: on any one orbit, the curvature is constant, and along the orbit nothing but the pure gradient scalar changes.
 
-The scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ is the gauge scalar
+The scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ is the scalar part
 
 $$
 S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A,
@@ -130,7 +130,7 @@ S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \
 S_2 = S - \Box_\Phi\Gamma ,
 $$
 
-so $S$ is pure gauge: its value can be changed at will along the orbit, and the Lorenz condition $S = 0$ is a choice of representative, not a physical statement. The two statements — $\tilde{F}$ invariant, $S$ pure gauge — are the two halves of a single fact: the orbit is the fibre, the curvature is the base, and the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ is the coordinate along the fibre.
+so $S$ is pure gradient: its value can be changed at will along the orbit, and the Lorenz condition $S = 0$ is a choice of representative, not a physical statement. The two statements — $\tilde{F}$ invariant, $S$ pure gradient — are the two halves of a single fact: the orbit is the fibre, the curvature is the base, and the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ is the coordinate along the fibre.
 
 Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_{\imath}$ with $x_0 = i r'_t$ and no restriction on the mode wavevectors. The vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ was unchanged by a local transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box_\Phi\Gamma$, to within $9\times10^{-16}$. The identity
 
@@ -149,12 +149,12 @@ $$
 \Gamma(\tilde{Q}) = \sum_{\imath\in\{t,x,y,z\}} A_{\imath}\,(x_{\imath} - x_{0\imath}),
 $$
 
-treating the $x_{\imath}$ as independent coordinates. Then $\partial/\partial R_{\imath}\,\Gamma = A_{\imath}$, so $\tilde\nabla_\Phi\Gamma = \tilde{A}_{\Phi}(\tilde{Q}_0)$ and the transformed connection $\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ vanishes at $\tilde{Q}_0$. The connection can therefore be gauged to zero at any one point, and consequently **no invariant local function of $\tilde{A}_{\Phi}$ exists**: every such function would have to be constant along the orbit, and the orbit passes through zero at the point. The first non-trivial invariant object is the curvature, and it is the obstruction to extending the elimination from a point to a neighbourhood.
+treating the $x_{\imath}$ as independent coordinates. Then $\partial/\partial R_{\imath}\,\Gamma = A_{\imath}$, so $\tilde\nabla_\Phi\Gamma = \tilde{A}_{\Phi}(\tilde{Q}_0)$ and the transformed connection $\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ vanishes at $\tilde{Q}_0$. The connection can therefore be set to zero by a choice of representative at any one point, and consequently **no invariant local function of $\tilde{A}_{\Phi}$ exists**: every such function would have to be constant along the orbit, and the orbit passes through zero at the point. The first non-trivial invariant object is the curvature, and it is the obstruction to extending the elimination from a point to a neighbourhood.
 
-The count of physical degrees of freedom now follows from the rank of the pure-gauge map.
+The count of physical degrees of freedom now follows from the rank of the pure gradient map.
 
 - The connection has **four real components** per point: the material-sector condition $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ makes $A_0 = i\,a'_t$ purely imaginary and $A_1, A_2, A_3$ real, so the field carries four real functions, not four complex ones, and its Fourier data is correspondingly four real amplitudes rather than four complex ones.
-- The phase function is one real function, and its gradient removes one real direction from the four per mode, as the rank of the pure-gauge map established above.
+- The phase function is one real function, and its gradient removes one real direction from the four per mode, as the rank of the pure gradient map established above.
 - Off shell the physical content is therefore $4 - 1 = 3$ real components per mode.
 - The field equation supplies one further constraint. The ${\jmath} = 0$ component of $\sum_{\imath}\varepsilon_{\imath}\,\partial F_{\imath\jmath}/\partial R_{\imath} = J_{\jmath}$ — the Gauss law — contains no second time derivative, so it constrains the initial data rather than evolving it, and it removes one of the three components, leaving $4 - 1 - 1 = 2$ per mode: the two transverse polarizations.
 
@@ -209,9 +209,9 @@ This is the precise sense in which the abelian orbit carries no information: the
 
 ## The Global Information of the Orbit: Holonomy
 
-The orbit is locally trivial — a single point can always be gauged away — but not globally, and the global obstruction is the only place the orbit's structure becomes a physical number.
+The orbit is locally trivial — a single point can always be removed by a choice of representative — but not globally, and the global obstruction is the only place the orbit's structure becomes a physical number.
 
-**Local elimination is always possible; global elimination is not.** As shown above, a connection can be gauged to zero at any point. It can be gauged to zero on a neighbourhood precisely when its curvature vanishes there, because a flat connection is locally a gradient. Globally, a flat connection need not be a gradient: its **holonomy** around a non-contractible loop is the obstruction. The holonomy is the path-ordered exponential of the connection around a closed curve,
+**Local elimination is always possible; global elimination is not.** As shown above, a connection can be set to zero by a choice of representative at any point. It can be set to zero by a choice of representative on a neighbourhood precisely when its curvature vanishes there, because a flat connection is locally a gradient. Globally, a flat connection need not be a gradient: its **holonomy** around a non-contractible loop is the obstruction. The holonomy is the path-ordered exponential of the connection around a closed curve,
 
 $$
 \boxed{\;\tilde U(C) = \mathcal{P}\exp\!\left(\frac{2\pi i\,ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath}\,dx_{\imath}\right)\;},
@@ -245,7 +245,7 @@ The subcategory treats three operations, and the present article is the one that
 
 The middle row is the subject of the companion article on confinement, and the bottom row of the companion article on the Higgs mechanism. What the table is meant to make visible is that the three are not variants of one another. Redundancy has an *informationally empty* fibre — the orbit is what a choice of representative quotients away, and choosing a gauge recovers the configuration. Loss has a fibre that is informationally non-empty — distinct partonic configurations yield the same asymptotic record, and no choice of representative recovers them. Relocation has an orbit as its fibre as well — so the fibre carries no state information either — but the mechanism's action on the orbit leaves a record, the mass, and conserves the count of local degrees of freedom. The biquaternion framework houses all three in the same algebra, and the algebra's sector split is what keeps them distinct.
 
-## Gauge Redundancy and the Informational Sector
+## Redundancy and the Informational Sector
 
 The framework's symmetry group is not put in by hand: it is the $*$-unitary part of the centre, $\mathrm{U}(1) = \{\exp(i\theta_{\mathrm{cen}})\}$. This has a consequence for the relation between the orbit and the informational sector that is worth isolating.
 
@@ -259,17 +259,17 @@ The framework's symmetry group is not put in by hand: it is the $*$-unitary part
 
 The boundary is drawn as in the companion articles.
 
-**Supplied by the algebra, and recomputed here.** The orbit is the image of the gradient map, an affine space modelled on the gradients, on which the gauge group acts freely and transitively modulo constants; the gradient map has rank one per Fourier mode, which is the first subtraction in the degree-of-freedom count; the curvature is orbit-invariant and the gauge scalar is pure gauge; a connection can be removed at a point, so no gauge-invariant local function of the connection exists; and the relative entropy is invariant along the orbit, with the abelian phase acting trivially on the Hermitian sector. All of these are exact and were checked.
+**Supplied by the algebra, and recomputed here.** The orbit is the image of the gradient map, an affine space modelled on the gradients, on which the symmetry group acts freely and transitively modulo constants; the gradient map has rank one per Fourier mode, which is the first subtraction in the degree-of-freedom count; the curvature is orbit-invariant and the scalar part is pure gradient; a connection can be removed at a point, so no invariant local function of the connection exists; and the relative entropy is invariant along the orbit, with the abelian phase acting trivially on the Hermitian sector. All of these are exact and were checked.
 
-**Transcribed from standard gauge theory.** The interpretation of the orbit as a fibre, of the connection as a section, and of the holonomy as monodromy is the standard bundle picture written in the algebra's notation. The algebra makes the invariance transparent; it does not force the geometric interpretation. The degree-of-freedom counting is the standard one for a massless vector field: the framework supplies its first step — the rank-one orbit — and the second step, the Gauss-law constraint, is imported with the field equation.
+**Transcribed from standard connection theory.** The interpretation of the orbit as a fibre, of the connection as a section, and of the holonomy as monodromy is the standard bundle picture written in the algebra's notation. The algebra makes the invariance transparent; it does not force the geometric interpretation. The degree-of-freedom counting is the standard one for a massless vector field: the framework supplies its first step — the rank-one orbit — and the second step, the Gauss-law constraint, is imported with the field equation.
 
-**Not supplied.** A principle that fixes the representative, which the canonical-quantization article records as absent; the non-abelian orbit, whose transformation law is the adjoint one and whose reality condition is open; and any empirical consequence distinguishing the interpretation from standard gauge theory. The orbit and its invariance are properties of any formulation of an abelian gauge theory; the framework's contribution is to locate the symmetry group in the centre of the algebra and to exhibit the orbit as the fibre of the curvature map.
+**Not supplied.** A principle that fixes the representative, which the canonical-quantization article records as absent; the non-abelian orbit, whose transformation law is the adjoint one and whose reality condition is open; and any empirical consequence distinguishing the interpretation from standard connection theory. The orbit and its invariance are properties of any formulation of an abelian connection theory; the framework's contribution is to locate the symmetry group in the centre of the algebra and to exhibit the orbit as the fibre of the curvature map.
 
 **Companion articles.** The construction rests on the following written articles of the series.
 
-- Companion article *The Gauge Principle in Biquaternionic Form*, for the connection, its transformation law, the local central phase, and the covariant derivative.
-- Companion article *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, for $D$ as an operator, its covariance, and the covariant square.
-- Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the adjoint transformation law and the non-abelian orbit.
+- Companion article *The Minimal Coupling in Biquaternionic Form*, for the connection, its transformation law, the local central phase, and the covariant derivative.
+- Companion article *The Covariant Derivative and Connection in Biquaternionic Form*, for $D$ as an operator, its covariance, and the covariant square.
+- Companion article *Non-Abelian Connections in Biquaternionic Form*, for the adjoint transformation law and the non-abelian orbit.
 - Companion article *Wilson Loops in Biquaternionic Form*, for the holonomy, the loop as a two-sector bilinear, and the small-loop expansion.
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the constraint structure and the absent principle that fixes the representative.
 - Companion article *States, Observables and the Born Weight*, for the state space, the trace, and the absence of an observable conjugate to the central phase.
@@ -285,15 +285,15 @@ The boundary is drawn as in the companion articles.
 
 3. **The orbit and the local complex structure.** The framework makes the complex structure local through the speed of light $c = 1/\sqrt{\epsilon\mu}$. Is the orbit — a local shift by a gradient — related to that local complex structure, or are the two local structures independent? No relation is established here.
 
-4. **The measure on the orbit.** The path integral of the gauge theory integrates over connections, hence over orbits. Does the biquaternion algebra supply a natural measure on the orbit, and is the Faddeev–Popov procedure its transcription? The non-abelian path-integral companion is the setting for the question.
+4. **The measure on the orbit.** The path integral of the connection theory integrates over connections, hence over orbits. Does the biquaternion algebra supply a natural measure on the orbit, and is the Faddeev–Popov procedure its transcription? The non-abelian path-integral companion is the setting for the question.
 
 5. **The holonomy as the orbit's invariant.** If the holonomy is the only invariant content beyond the curvature, is there a framework-internal characterization of it — an element of the algebra whose scalar part is the loop — that makes the pairing of the two sectors canonical?
 
-6. **Empirical content.** As everywhere in the framework, whether any of this yields a prediction distinguishing it from standard gauge theory. The orbit's information-theoretic properties are those of any abelian gauge theory, and no distinction is derived here.
+6. **Empirical content.** As everywhere in the framework, whether any of this yields a prediction distinguishing it from standard connection theory. The orbit's information-theoretic properties are those of any abelian connection theory, and no distinction is derived here.
 
 ## Summary
 
-The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real phase functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ shifts by $-\Box_\Phi\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.
+The orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real phase functions modulo constants: the gradient map has kernel the constants, so the symmetry group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is orbit-invariant while the scalar part $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ shifts by $-\Box_\Phi\Gamma$ and is pure gradient. The rank of the pure gradient map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.
 
 Information-theoretically the orbit is a **redundancy**, not a loss. A local transformation is implemented by the central phase $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$, which is $*$-unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,
 
@@ -303,7 +303,7 @@ $$
 
 For the framework's abelian group the statement is stronger still: because the phase is central and Hermitian, it acts on a state of $\mathbb{B}_{\Psi}$ by $\tilde{Ϛ}_{\Psi}\mapsto|\digamma_{\mathrm{gau}}|^2\tilde{Ϛ}_{\Psi} = \tilde{Ϛ}_{\Psi}$. The informational sector is not merely unable to distinguish the orbit; it is unchanged by it, and no observable is conjugate to the central phase.
 
-The orbit's only non-empty content is global. A connection can be gauged to zero at any point, and on a neighbourhood precisely when its curvature vanishes; the obstruction to doing so on a loop is the holonomy, whose trace is the Wilson loop. The information in the orbit is therefore its monodromy — the fibre-bundle structure that the local triviality leaves behind — and not any state information. Redundancy, loss and relocation are three different operations, and the orbit realizes the first: the fibre is quotiented away and a representative recovers the configuration, which is what distinguishes it from the confinement of the companion article and from the relocation of the Higgs mechanism.
+The orbit's only non-empty content is global. A connection can be set to zero by a choice of representative at any point, and on a neighbourhood precisely when its curvature vanishes; the obstruction to doing so on a loop is the holonomy, whose trace is the Wilson loop. The information in the orbit is therefore its monodromy — the fibre-bundle structure that the local triviality leaves behind — and not any state information. Redundancy, loss and relocation are three different operations, and the orbit realizes the first: the fibre is quotiented away and a representative recovers the configuration, which is what distinguishes it from the confinement of the companion article and from the relocation of the Higgs mechanism.
 
 ## Summary of Notation
 
@@ -323,24 +323,24 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\kappa =\frac{2\pi ϙ}{h}$ | Coupling |
 | $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$ | The orbit |
 | $\mathcal{G}/\mathbb{R}$ | Group of real phase functions modulo constants; the orbit's torsor group |
-| $K = \sum_{\imath} 2\pi\nu_{\Phi,\imath} e_{\imath}$ | Wavevector biquaternion of the mode $k = (2\pi\nu_t^{\prime},k_1,k_2,k_3)$; pure-gauge image is the real line $\mathbb{R}(iK)$ |
-| $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A$ | Gauge scalar, pure gauge: $S_2 = S - \Box_\Phi\Gamma$ |
+| $K = \sum_{\imath} 2\pi\nu_{\Phi,\imath} e_{\imath}$ | Wavevector biquaternion of the mode $k = (2\pi\nu_t^{\prime},k_1,k_2,k_3)$; pure gradient image is the real line $\mathbb{R}(iK)$ |
+| $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A$ | Scalar part, pure gradient: $S_2 = S - \Box_\Phi\Gamma$ |
 | $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\imath\jmath}F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$ | Field strength = curvature, orbit-invariant |
 | $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath}$ | Abelian curvature components |
 | $\tilde U(C) = \mathcal{P}\exp(i\theta_{\mathrm{gau}})$ | Holonomy; global obstruction |
 | $W(C) = 2\,\mathrm{Sc}\,\tilde U(C)$ | Wilson loop; two-sector bilinear |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$, $|\vec s_{\Psi}|\leq1$ | State of the informational sector (Bloch ball) |
-| $S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_1})$ | Relative entropy; orbit-invariant. Distinct from the gauge scalar $S$ above — the two share a letter and nothing else |
+| $S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_1})$ | Relative entropy; orbit-invariant. Distinct from the scalar part $S$ above — the two share a letter and nothing else |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading
 
 - Hermann Weyl, "Elektron und Gravitation," *Zeitschrift für Physik* **56** (1929) 330–352, for the origin of the local phase and the redundancy it introduces.
-- Chen-Ning Yang and Robert L. Mills, "Conservation of Isotopic Spin and Isotopic Gauge Invariance," *Physical Review* **96** (1954) 191–195, for the non-abelian transformation law and the adjoint orbit.
+- Chen-Ning Yang and Robert L. Mills, "Conservation of Isotopic Spin and Isotopic Local invariance," *Physical Review* **96** (1954) 191–195, for the non-abelian transformation law and the adjoint orbit.
 - P. A. M. Dirac, *Lectures on Quantum Mechanics* (Yeshiva University, 1964), for first-class constraints and the statement that the redundancy is not fixed by the equations of motion.
 - L. D. Faddeev and A. A. Slavnov, *Gauge Fields: Introduction to Quantum Theory* (Benjamin/Cummings, 1980), for the orbit, fixing the representative, and the Faddeev–Popov measure.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the counting of physical polarizations and the role of the Bianchi identity.
-- Steven Weinberg, *The Quantum Theory of Fields, Vol. I: Foundations* (Cambridge, 1995), for the gauge orbit as the fibre of the connection and the degree-of-freedom count.
+- Steven Weinberg, *The Quantum Theory of Fields, Vol. I: Foundations* (Cambridge, 1995), for the orbit as the fibre of the connection and the degree-of-freedom count.
 - Kenneth G. Wilson, "Confinement of Quarks," *Physical Review D* **10** (1974) 2445–2459, for the holonomy, the Wilson loop, and the obstruction interpretation.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the $*$-unitary invariance of relative entropy and the distinguishability measures of quantum states.
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for relative entropy, its monotonicity, and its invariance under $*$-unitary conjugation.

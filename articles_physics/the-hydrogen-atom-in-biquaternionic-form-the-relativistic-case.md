@@ -254,7 +254,7 @@ which was verified for $n \le 6$. So the framework's state space is not enlarged
 
 ## Minimal Coupling and the Massive Sector
 
-The Coulomb field is an electromagnetic field, and in a gauge theory it is introduced by minimal coupling. The framework's biquaternion Dirac equation carries a linear, chirality-off-diagonal mass pair, and the coupling is available at the algebra level: in the algebra reading the central phase passes through the mass term.
+The Coulomb field is an electromagnetic field, and in a connection theory it is introduced by minimal coupling. The framework's biquaternion Dirac equation carries a linear, chirality-off-diagonal mass pair, and the coupling is available at the algebra level: in the algebra reading the central phase passes through the mass term.
 
 Let $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ be a central phase, and let $\tilde A_{\Phi,2} = \tilde A_{\Phi} - \tilde\nabla_\Phi\Gamma$ be the transformed connection. The covariant derivative
 
@@ -262,7 +262,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi} = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde A_{\Phi}
 $$
 
-Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the gauge angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
+Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the connection angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
 
 transforms homogeneously,
 
@@ -375,7 +375,7 @@ The two replacements are the ones the literature makes under the names **restric
 
 ### What the balance does and does not give
 
-The condition supplies the basis, not the solution. It gives no radial function, no orbital dynamics, and no value for $\kappa$ or $\alpha$; the radial Dirac–Coulomb solution inside the algebra remains the gap named above, and a balanced basis is the workspace on which such a solution would be expanded rather than the solution itself. Nor is the condition an enlargement of the algebra: the balancing action is the momentum's vector part — the gradient's up to the constant $i$ — and the phase is the $\digamma_{\mathrm{gau}}$ of *The Covariant Derivative and Gauge Connection in Biquaternionic Form*; neither is a new element of $\mathbb{B}$.
+The condition supplies the basis, not the solution. It gives no radial function, no orbital dynamics, and no value for $\kappa$ or $\alpha$; the radial Dirac–Coulomb solution inside the algebra remains the gap named above, and a balanced basis is the workspace on which such a solution would be expanded rather than the solution itself. Nor is the condition an enlargement of the algebra: the balancing action is the momentum's vector part — the gradient's up to the constant $i$ — and the phase is the $\digamma_{\mathrm{gau}}$ of *The Covariant Derivative and Connection in Biquaternionic Form*; neither is a new element of $\mathbb{B}$.
 
 What it does give is the statement that the transcription, once discretized, carries the framework's non-relativistic relation and the framework's covariance by construction. Of the two, the relation is the corpus's own used as a condition, and the covariance is the corpus's own identity; the basis sets, and the numerical necessity of imposing them, are input.
 
@@ -579,7 +579,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\{f_{\imath}\}$ | Large-part functions of the finite basis; the small-part functions are their image under the balancing action |
 | $\tilde Q\mapsto\frac{1}{2\,m\,c}\vec p\,\tilde Q\,\vec e_z$ | Balancing action; the image of the large basis is the small basis (kinetic balance) |
 | $\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi})$ | Vector part of the covariant derivative; balancing operator with a field present (magnetic balance) |
-| $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$, $\tilde A_{\Phi,2} = \tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ | Central phase and connection transformation (*The Covariant Derivative and Gauge Connection in Biquaternionic Form*); the phase a basis function carries |
+| $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$, $\tilde A_{\Phi,2} = \tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ | Central phase and connection transformation (*The Covariant Derivative and Connection in Biquaternionic Form*); the phase a basis function carries |
 
 ## Further Reading
 
@@ -597,7 +597,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 - R. E. Stanton and S. Havriliak, "Kinetic balance: a partial solution to the problem of variational safety in Dirac calculations," *The Journal of Chemical Physics* **81** (1984) 1910–1918, for kinetic balance.
 - K. G. Dyall and K. Fægri Jr., *Introduction to Relativistic Quantum Chemistry* (Oxford University Press, 2007), for the balance conditions and the variational failure of an unbalanced basis.
 - F. London, "Théorie quantique des courants interatomiques dans les combinaisons aromatiques," *Journal de Physique et le Radium* **8** (1937) 397–409, for the field-dependent phase of the basis functions.
-- G. Aucar, T. Saue, H. J. Aa. Jensen, and L. Visscher, "On the origin and contribution of the diamagnetic term in four-component relativistic calculations of magnetic properties," *The Journal of Chemical Physics* **110** (1999) 6208–6218, for magnetic balance and gauge-invariant magnetic properties.
+- G. Aucar, T. Saue, H. J. Aa. Jensen, and L. Visscher, "On the origin and contribution of the diamagnetic term in four-component relativistic calculations of magnetic properties," *The Journal of Chemical Physics* **110** (1999) 6208–6218, for magnetic balance and invariant magnetic properties.
 - M. Repisky, S. Komorovsky, O. L. Malkina, and V. G. Malkin, "Restricted magnetically balanced basis applied for relativistic calculations of indirect nuclear spin–spin coupling tensors in the matrix Dirac–Kohn–Sham framework," *Chemical Physics* **356** (2009) 236–242.
 - S. Komorovsky, M. Repisky, O. L. Malkina, and V. G. Malkin, "Fully relativistic calculations of NMR shielding tensors using restricted magnetically balanced basis and gauge including atomic orbitals," *The Journal of Chemical Physics* **132** (2010) 154101.
 - Sylvia Kaviraj, Stanislav Komorovsky, Trond Saue, and Michal Repisky, "Biquaternion algebra with bilinear multiplication: a general, elegant, and computationally advantageous framework for relativistic electronic structure calculations on CPUs and GPUs," arXiv:2609.02081 [physics.chem-ph] (2026), for the balance conditions in biquaternionic form.

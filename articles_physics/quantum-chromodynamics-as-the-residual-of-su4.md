@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Quantum chromodynamics (QCD) is the Yang–Mills theory of the colour interaction: a gauge theory with group $SU(3)$, quarks in the fundamental three-dimensional representation, gluons in the adjoint, a coupling that becomes weak at short distances, and a spectrum from which the coloured states are absent — confinement. This article's finding is that the framework reaches the general machinery of a Yang–Mills theory and stops before colour: no $SU(3)$, no triplet, and no confinement mechanism is available on the present construction.
+Quantum chromodynamics (QCD) is the Yang–Mills theory of the colour interaction: a connection theory with group $SU(3)$, quarks in the fundamental three-dimensional representation, gluons in the adjoint, a coupling that becomes weak at short distances, and a spectrum from which the coloured states are absent — confinement. This article's finding is that the framework reaches the general machinery of a Yang–Mills theory and stops before colour: no $SU(3)$, no triplet, and no confinement mechanism is available on the present construction.
 
 The starting position is stated at the outset, because the finding depends on it and because it is easy to overstate.
 
-- The framework has a non-abelian gauge construction. It has a connection, a curvature with the commutator term, the adjoint transformation law, the Bianchi identity, and an invariant Yang–Mills density, developed inside the algebra for an algebra that is present in the material sector. This is established and is recalled in the next section.
+- The framework has a non-abelian connection construction. It has a connection, a curvature with the commutator term, the adjoint transformation law, the Bianchi identity, and an invariant Yang–Mills density, developed inside the algebra for an algebra that is present in the material sector. This is established and is recalled in the next section.
 - The framework records a chiral-fermion issue. The field $\tilde{Ξ}$ splits into the two values $L$ and $R$, and its mass bilinear is odd under their exchange; the symmetry group drawn from the algebra's centre is vector-like and cannot be chiral; and the interpretation of the separate conjugate-pairing (Majorana-type) term built on the algebra's real structure is open. This is established, and it is inherited here unchanged.
-- The framework has not constructed a colour theory. Nothing in the series derives $SU(3)$, and nothing derives any three-valued internal structure that could play the role of colour. The word "colour" occurs in the corpus only where standard QCD is being transcribed — in the renormalization-group article, which imports the $SU(3)$ one-loop coefficients, and in the helicity-formalism article, which states plainly that the framework "does not contain a colored gauge theory". No article derives a colour group, a quark colour triplet, a gluon octet, a confinement mechanism, or a colour coupling.
+- The framework has not constructed a colour theory. Nothing in the series derives $SU(3)$, and nothing derives any three-valued internal structure that could play the role of colour. The word "colour" occurs in the corpus only where standard QCD is being transcribed — in the renormalization-group article, which imports the $SU(3)$ one-loop coefficients, and in the helicity-formalism article, which states plainly that the framework "does not contain a colored connection theory". No article derives a colour group, a quark colour triplet, a gluon octet, a confinement mechanism, or a colour coupling.
 
 The discipline this forces on the article is the one the genre requires: **an article that quietly assumes a colour group has fabricated its premise.** The colour group is therefore carried as an open item throughout, never as a working assumption. Wherever a standard QCD statement is written down — $N_c=3$, $b_0 = 11 - \tfrac{2}{3}N_f$, the area law — it is flagged as standard input, not as a framework result.
 
@@ -26,9 +26,9 @@ What "unreachable" means, layer by layer. The three obstructions are Layer-A sta
 
 ## What the Framework Already Reaches
 
-### The non-abelian gauge construction
+### The non-abelian connection construction
 
-The read-list article *Non-Abelian Gauge Fields in Biquaternionic Form* builds the general non-abelian structure inside $\mathbb{B}$. Its results are established and are used here unchanged.
+The read-list article *Non-Abelian Connections in Biquaternionic Form* builds the general non-abelian structure inside $\mathbb{B}$. Its results are established and are used here unchanged.
 
 The vector part of the material sector, $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, closes under the commutator and is $\mathrm{SU}(2)$ in a non-standard normalization,
 
@@ -43,7 +43,7 @@ $$
 \mathcal{A}_{2,\imath} = \tilde U\,\mathcal{A}_{\imath}\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_{\imath} \tilde U)\,\tilde U^{-1},
 $$
 
-which reduces to the abelian law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Lambda$ when $\tilde U=e^{i\theta_{\mathrm{gau}}}$, with the gauge angle $\theta_{\mathrm{gau}}=\kappa\Lambda$ real because the charge and the parameter are real, is central. The field strength
+which reduces to the abelian law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Lambda$ when $\tilde U=e^{i\theta_{\mathrm{gau}}}$, with the connection angle $\theta_{\mathrm{gau}}=\kappa\Lambda$ real because the charge and the parameter are real, is central. The field strength
 
 $$
 F_{\imath\jmath} = \partial/\partial R_{\imath} \mathcal{A}_{\jmath} - \partial/\partial R_{\jmath} \mathcal{A}_{\imath} + i\kappa\,[\mathcal{A}_{\imath}, \mathcal{A}_{\jmath}],
@@ -57,7 +57,7 @@ is not invariant but transforms in the adjoint representation, $F_{2,\imath\jmat
 
 What this construction is, for the purposes of this article, is the **general machinery of a Yang–Mills theory**: everything that depends only on having a compact simple factor and a non-commuting connection is present. What it is not is a *colour* theory, because the factor it uses is $\mathrm{SU}(2)$ and the connection is $\mathrm{SU}(2)$-valued. The whole question of QCD is whether the framework can replace that factor by colour; the next section shows where that step stops.
 
-### The gauge algebra the algebra contains, and its ceiling
+### The algebra the framework contains, and its ceiling
 
 The available algebra is determined by the algebra, not chosen. The material sector decomposes as a Lie algebra under the commutator,
 
@@ -181,7 +181,7 @@ Four things that would be needed are all absent.
 
 - A non-perturbative formulation. The renormalization-group article is a perturbative calculation: a one-loop shell integration, one- and two-loop beta functions, and the Gaussian and Banks–Zaks fixed points. Asymptotic freedom is an ultraviolet statement; confinement is an infrared statement. A perturbative beta function, however accurately transcribed, has no bearing on it.
 - A Wilson loop, or something equivalent. The standard non-perturbative diagnostic is the Wilson loop $W(C) = \mathrm{Tr}\,\mathcal{P}\exp\!\oint_C \mathcal{A}$, whose large-loop behaviour $\langle W(C)\rangle \sim \exp(-\sigma A(C))$ is the area law, with $\sigma$ the string tension. No Wilson loop is defined anywhere in the series, and it cannot be defined without the measure the path-integral article places outside finite-dimensional $\mathbb{B}$.
-- An invariant regulator. The renormalization-group article records that the algebra's natural cutoff is central, sector-blind, and breaks local invariance, while dimensional regularisation leaves the four-dimensional algebra; a biquaternionic invariant regulator is itself an open problem. Non-perturbative gauge theory, on the lattice or otherwise, requires such a regulator, so confinement cannot even be posed before that gap is closed.
+- An invariant regulator. The renormalization-group article records that the algebra's natural cutoff is central, sector-blind, and breaks local invariance, while dimensional regularisation leaves the four-dimensional algebra; a biquaternionic invariant regulator is itself an open problem. Non-perturbative connection theory, on the lattice or otherwise, requires such a regulator, so confinement cannot even be posed before that gap is closed.
 - A principle that fixes the representative and a mass gap. The canonical-quantization article on the Maxwell field records that the framework cannot fix the gauge naturally, and no principle that fixes the representative is supplied. No mass gap — the statement that the spectrum has a lowest positive mass — is established or even formulated.
 
 The framework's closest structures are the zero divisor cone and the null four-vectors of $\mathbb{B}_{\Phi}$. It is worth saying why they do not help. The light cone is a statement about the biquaternion norm of a biquaternion; it classifies momenta and propagation directions. Confinement is a statement about the energy of a *configuration of colour sources* — a potential that grows with separation. A null direction is not an area law, and the fact that a massless field propagates on the light cone says nothing about the force between two colour charges. The zero-divisor structure is a genuine feature of the algebra, but reading confinement from it would be an analogy, not a derivation, and the analogy is not made here.
@@ -219,7 +219,7 @@ What would settle it. Three computations, in order of dependence:
 
 ## The Running Coupling and Asymptotic Freedom
 
-This is the one obstacle for which the series has already built the machinery and reached the non-abelian case, and the honest statement is therefore different from the preceding two. The renormalization-group article performs the one-loop shell integration for a non-abelian gauge coupling, obtains $\beta_g = -(g^3/16\pi^2)b_0$ with $b_0 = \tfrac{11}{3}C_2(G) - \tfrac{2}{3}\sum_{\text{Weyl}}T(r)$, recomputes $C_2(G)=N$ on $SU(2)$ and $SU(3)$, and reproduces the QCD values $b_0 = 11-\tfrac{2}{3}N_f$ for $SU(3)$ with $N_f$ Dirac flavours, the asymptotic-freedom threshold $N_f < \tfrac{33}{2}$, and the two-loop Banks–Zaks fixed point. The sign of the non-abelian beta function is the correct one and was checked on independent cases, which is the corpus's verification discipline.
+This is the one obstacle for which the series has already built the machinery and reached the non-abelian case, and the honest statement is therefore different from the preceding two. The renormalization-group article performs the one-loop shell integration for a non-abelian connection coupling, obtains $\beta_g = -(g^3/16\pi^2)b_0$ with $b_0 = \tfrac{11}{3}C_2(G) - \tfrac{2}{3}\sum_{\text{Weyl}}T(r)$, recomputes $C_2(G)=N$ on $SU(2)$ and $SU(3)$, and reproduces the QCD values $b_0 = 11-\tfrac{2}{3}N_f$ for $SU(3)$ with $N_f$ Dirac flavours, the asymptotic-freedom threshold $N_f < \tfrac{33}{2}$, and the two-loop Banks–Zaks fixed point. The sign of the non-abelian beta function is the correct one and was checked on independent cases, which is the corpus's verification discipline.
 
 What the article also records, in its own words, is that this is a **transcription**: the effective action, the measure, the regulator, the symmetry group, the matter content, and the value of the coupling are all inputs; the beta functions are standard field theory written in biquaternion notation and would not change if $\mathbb{B}$ were replaced by any other notation. Two framework-specific limitations follow directly.
 
@@ -236,7 +236,7 @@ The table collects the items of the article and sorts each into the three-way cl
 
 | Item | Status | Object or computation that would settle it |
 |---|---|---|
-| Non-abelian gauge construction: connection, curvature with $[\mathcal{A},\mathcal{A}]$, adjoint law, Bianchi identity, invariant Yang–Mills density | Established | — |
+| Non-abelian connection construction: connection, curvature with $[\mathcal{A},\mathcal{A}]$, adjoint law, Bianchi identity, invariant Yang–Mills density | Established | — |
 | Available compact algebra $\mathrm{U}(1)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$, the maximal compact subalgebra of $\mathbb{B}$ | Established | — |
 | No $\mathrm{SU}(3)$ subalgebra and no three-dimensional $\mathbb{B}$-module within the present construction | Established (within the $\mathbb{B}$-valued construction) | A positive internal construction with a principle selecting $N_c=3$, or a no-go covering all $\mathbb{B}$-invariant enlargements |
 | Colour group $SU(3)$ and the number of colours $N_c=3$ | **No route yet** | The two theorems above; positing is not a route |
@@ -265,7 +265,7 @@ Finally, the genre's standing caution applies here in its strongest form. *The E
 
 The finding of this article is that the biquaternion framework reaches the general machinery of a Yang–Mills theory and stops before colour.
 
-What is established is recalled: the non-abelian gauge construction, with a connection transforming in the adjoint, a curvature containing the commutator term and satisfying the Bianchi identity, and an invariant Yang–Mills density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$; the two values of the field, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; the vector-like character of the centre; and a renormalization-group article that does reach the non-abelian case and reproduces the standard one-loop beta function, $C_2(G)=N$, the QCD coefficient $b_0=11-\tfrac{2}{3}N_f$, and the asymptotic-freedom threshold — as a transcription.
+What is established is recalled: the non-abelian connection construction, with a connection transforming in the adjoint, a curvature containing the commutator term and satisfying the Bianchi identity, and an invariant Yang–Mills density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$; the two values of the field, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; the vector-like character of the centre; and a renormalization-group article that does reach the non-abelian case and reproduces the standard one-loop beta function, $C_2(G)=N$, the QCD coefficient $b_0=11-\tfrac{2}{3}N_f$, and the asymptotic-freedom threshold — as a transcription.
 
 What is not established is everything QCD-specific.
 
@@ -303,18 +303,18 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 
 ## Further Reading
 
-- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the connection, the adjoint curvature, the Bianchi identity, the gauge-invariant density, and the open matter-representation question this article inherits.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian origin of the connection and the reality-condition gap the non-abelian construction takes up.
+- [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the connection, the adjoint curvature, the Bianchi identity, the invariant density, and the open matter-representation question this article inherits.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian origin of the connection and the reality-condition gap the non-abelian construction takes up.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the splitting of the field into its two values, the vector-like centre, the mass selection rule, the linear chiral-coupling mass term, and the anomaly it leaves unformulated.
 - [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html) — the Adler–Bell–Jackiw divergence written in the framework's own elements, the anomaly density as the second field invariant $I_2=\vec E\cdot\vec B$, the 't Hooft vertex, and the Standard Model cancellation conditions; the coefficient is quoted rather than derived, and $\theta$ and strong $CP$ lie outside its scope.
 - [The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form](the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html) — the condensate as a dynamically generated coefficient of the same linear chiral pair, with the gap equation and the Goldstone counting transcribed.
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html) — the one-loop non-abelian beta function, $C_2(G)=N$, the QCD coefficient and threshold, and the article's own statement that these are transcribed with the group and matter as inputs; the source of the running-coupling item.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the abelian connection whose non-abelian extension is the parent's starting point.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the abelian connection whose non-abelian extension is the parent's starting point.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) and [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) — the field and its Lorentz action, the linear chiral mass term, and the real-structure origin of the two values.
 - [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html) — the framework's inability to fix the gauge, a prerequisite the confinement item needs.
 - [Modules over the Biquaternion Algebra](../articles_maths/the-category-of-modules-in-the-biquaternion-algebra.html) and [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the module structure and the compact-subalgebra facts behind the ceiling on the colour group.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) — the null cone and the bivector structure, the objects closest to the confinement and topological-charge items.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html) — the representation theory on which the adjoint and fundamental bookkeeping rests.
-- [Helicity in Biquaternionic Form](helicity-in-biquaternionic-form.html) — the corpus's explicit statement that the framework "does not contain a colored gauge theory"; the transcription boundary this article makes systematic.
+- [Helicity in Biquaternionic Form](helicity-in-biquaternionic-form.html) — the corpus's explicit statement that the framework "does not contain a colored connection theory"; the transcription boundary this article makes systematic.
 - [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html) — the standing empirical-equivalence result, the caution under which any biquaternionic QCD would labour.
 - [The Einstein Field Equations in the Biquaternion Framework: The Linearised Dictionary and the Non-Linear Gap](the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.html) — the companion article whose three-way classification and settling-object discipline this article follows.

@@ -64,7 +64,7 @@ $$
 
 **Second, from the potential.** $\operatorname{tr}Ξ^{2}$ and $\operatorname{tr}Ξ^{4}$ are real only for Hermitian $Ξ$. For a general complex matrix the invariant of degree two is $\operatorname{tr}Ξ^{†}Ξ$, which is not $\operatorname{tr}Ξ^{2}$, and every quartic would have to carry its own dagger. **The corpus's potential is written in the traces without daggers, and that writing is a statement that the field is Hermitian.**
 
-**And the count of equations follows the count of components.** Varying a Hermitian $Ξ$ and varying $Ξ^{†}$ give the same equation, not a conjugate pair, so the sixteen components give sixteen equations and not half of thirty-two. **That is [The Lagrangian and the Scalar Matrix](the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html)'s observation, and it is the third reason the same sixteen appears in every count of this field.**
+**And the count of equations follows the count of components.** Varying a Hermitian $Ξ$ and varying $Ξ^{†}$ give the same equation, not a conjugate pair, so the sixteen components give sixteen equations and not half of thirty-two. **That is $Ξ$'s observation, and it is the third reason the same sixteen appears in every count of this field.**
 
 ## The Two Labels
 
@@ -75,7 +75,7 @@ $$
 | the colour row | $1,\dots,4$ | yes, $Ξ\mapsto UΞ U^{\dagger}$ |
 | the colour column | $1,\dots,4$ | yes, the same transformation |
 
-**Two labels, both gauged, and that is the whole list.** There is no third index on $Ξ$: not a copy, not a family, not a colour–anticolour pair beyond the two already named.
+**Two labels, both made local, and that is the whole list.** There is no third index on $Ξ$: not a copy, not a family, not a colour–anticolour pair beyond the two already named.
 
 **Why no generator acts on a third index, stated as the declaration it is.** The symmetry group of the model is $\mathrm{SU}(4)$, and its fifteen generators act on the two colour indices and on nothing else. **The reason is not that a third index would need a sixteenth generator**: a $\mathrm{U}(1)$ acting on a new label would not have to enlarge $\mathrm{SU}(4)$ at all, and "fifteen is all the room there is" is a statement about the dimension of one factor, not about how many factors a model may have. **The reason is that the declaration names one factor.** A second factor acting on a new label is a different model, and this article counts this one.
 
@@ -143,7 +143,7 @@ $$
 
 **Sixteen real components: fifteen from the algebra and one from the trace.** The representation is $\mathbf{15}\oplus\mathbf1=\mathbf4\otimes\bar{\mathbf4}$ in the colour indices, forced by the existence of the mass operator and not chosen for convenience.
 
-**Two labels, both gauged.** No copy index, no family index on $Ξ$: the model's one ungauged label sits on the fermion and on the Yukawa matrix, and a copy index on $Ξ$ would be a different model with sixty-four components.
+**Two labels, both made local.** No copy index, no family index on $Ξ$: the model's one ungauged label sits on the fermion and on the Yukawa matrix, and a copy index on $Ξ$ would be a different model with sixty-four components.
 
 **Thirty-two is the number to avoid, and it is the one that looks right.** It is the count of a general complex $4\times4$, a different field from a Hermitian one, and **the coupling article reads the count straight off the beta coefficient**: sixteen real components give $b_0=\tfrac{26}{3}$, thirty-two give $8$, and a two-valued label on the matrix gives $\tfrac{20}{3}$ — **each rung of that ladder moves $b_0$ by more than the two-loop term the running omits**, which is why the count has to be this one and not one step up.
 

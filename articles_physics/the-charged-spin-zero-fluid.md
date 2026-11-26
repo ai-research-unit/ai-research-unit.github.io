@@ -101,7 +101,7 @@ $$
 \tilde V_\Phi=\frac{1}{m}\Bigl(\tilde\nabla_\Phi S_{\tilde\Xi}+ϙ\tilde A_\Phi\Bigr),
 $$
 
-whose one-form is closed iff the potential is pure gauge. **The free article's irrotationality is therefore the statement $F=0$**, and it is a statement about the connection the field is coupled to rather than about the field.
+whose one-form is closed iff the potential is pure gradient. **The free article's irrotationality is therefore the statement $F=0$**, and it is a statement about the connection the field is coupled to rather than about the field.
 
 A local transformation moves the two terms and not the sum. The angle and the potential shift in opposite directions, the mechanical momentum is fixed, and the velocity with it. So the velocity is an observable of the chart, which the free velocity was not. The free article records that its current was not invariant; this one is, and the reason is that the velocity now carries the potential the phase used to leave behind.
 
@@ -321,8 +321,8 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is inva
 - [The Spin-Zero Fluid](the-spin-zero-fluid.html), the free companion, whose twelve properties these twelve answer.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the word, the pair, the quantum potential and the nodal set.
 - [The Lagrangian and the Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html), for the action and the current in the chart.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the central connection and the curvature.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation that produces the coupling.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the central connection and the curvature.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation that produces the coupling.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the winding the flux is added to.
 - [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html), for the rank table this fluid fills differently.
 - [The Equation of State and the Barotropic Condition](the-equation-of-state-and-the-barotropic-condition.html), for the criterion the charged fluid still fails.

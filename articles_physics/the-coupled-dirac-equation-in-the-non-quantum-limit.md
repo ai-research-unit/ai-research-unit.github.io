@@ -50,13 +50,13 @@ so the rapidity is the kinetic one and the four-velocity is the trajectory's. Th
 
 The two frames and their relations. The canonical wavevector is $\tilde\Upsilon_\Phi=i(\frac{E}{h\,c})e_{t}+\frac{\vec p}{h}$; the mechanical one is $i(\frac{2\pi \mathcal E}{h\,c})e_{t}+\frac{2\pi \vec\pi}{h}$; and the two differ by the potential's slots. **The word's boost is the mechanical one's inverse square, the canonical one's is not**, and the difference is the whole content of the coupled polar chart.
 
-The gauge statement, in the parent's sharpest form. For a pure gauge potential $A_{\imath}=\partial_{\imath}\Lambda$, the coupled derivative acts as $i\partial_{\imath}(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda)$: the entire effect of the potential is a reparameterisation of one coordinate. That is why the criterion must live on the invariant combination and why the chart's gauge group is a translation.
+The gauge statement, in the parent's sharpest form. For a pure gradient potential $A_{\imath}=\partial_{\imath}\Lambda$, the coupled derivative acts as $i\partial_{\imath}(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda)$: the entire effect of the potential is a reparameterisation of one coordinate. That is why the criterion must live on the invariant combination and why the chart's symmetry group is a translation.
 
 ## The Criterion on the Mechanical Wavevector
 
 The parameter. $\epsilon=1/(\pi_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The frame's slots are the mechanical variables, so the momentum the criterion reads is the mechanical one.
 
-Why the canonical momentum fails. A criterion on $\vec p$ changes value under a local transformation, while $\vec\pi$ does not. A limit whose validity depends on the gauge is a statement about the chart.
+Why the canonical momentum fails. A criterion on $\vec p$ changes value under a local transformation, while $\vec\pi$ does not. A limit whose validity depends on the fixing condition is a statement about the chart.
 
 The order table, which is the free table.
 

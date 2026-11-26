@@ -20,7 +20,7 @@ Two later exercises use this article as their declared foundation: *Exercise: Th
 
 ## The Retarded Solution for a Point Source
 
-The Maxwell article establishes that in the Lorenz gauge the potential biquaternion satisfies the biquaternionic wave equation
+The Maxwell article establishes that in the Lorenz fixing condition the potential biquaternion satisfies the biquaternionic wave equation
 
 $$
 \Box_\Phi \tilde{A}_{\Phi} = -\mu\,\tilde J_{\Phi}, \qquad \tilde J_{\Phi} = ic\rho\,e_t + \vec J,
@@ -244,7 +244,7 @@ These are the source's formulas, transcribed into the conventions of this articl
 
 ## The Field of the Retarded Potential
 
-In the Lorenz gauge the gauge scalar $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ vanishes, so the field strength is obtained from the potential by the biquaternionic differentiation rule of the Maxwell article,
+In the Lorenz fixing condition the scalar part $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ vanishes, so the field strength is obtained from the potential by the biquaternionic differentiation rule of the Maxwell article,
 
 $$
 \tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right)

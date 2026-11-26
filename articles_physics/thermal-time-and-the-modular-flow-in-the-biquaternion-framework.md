@@ -24,7 +24,7 @@ The article proceeds as follows. The modular flow and its generator are recalled
 
 ### Tomita's Flow and Its Generator
 
-Let $M$ be a von Neumann algebra with a cyclic and separating vector $\Omega$, and let $S$ be the Tomita operator $S(\tilde Q_2\Omega)=\tilde Q_2^*\Omega$ with polar decomposition $S=J\mathcal{M}_{\mathrm{mod}}^{1/2}$. The **modular operator** $\mathcal{M}_{\mathrm{mod}}=S^*S$ is positive and nonsingular, and the **modular flow** is the one-parameter group of automorphisms
+Let $M$ be a von Neumann algebra with a cyclic and separating vector $\Omega$, and let $S$ be the Tomita operator $S(\tilde Q_2\Omega)=\tilde Q_2^*\Omega$ with polar decomposition $S=J\mathcal{M}_{\mathrm{mod}}^{1/2}$. The $M$ $\mathcal{M}_{\mathrm{mod}}=S^*S$ is positive and nonsingular, and the **modular flow** is the one-parameter group of automorphisms
 $$
 \sigma_{r'_{t}}\big(\tilde Q_2\big)=\mathcal{M}_{\mathrm{mod}}^{ir'_t}\tilde Q_2\,\mathcal{M}_{\mathrm{mod}}^{-ir'_t},
 \qquad r'_t\in\mathbb{R}.

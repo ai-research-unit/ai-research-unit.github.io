@@ -45,7 +45,7 @@ where $\vec e_{\mathrm{spt}(\imath)}$ is the unit the frame pairs with $x_{\imat
 
 **The two factors.** The vertex is therefore a product of two factors that do not mix: the generator above, read with the label $L$, and the mixing $V$. The framework supplies the first exactly — it is the algebra's own generator — and the second is an arbitrary $*$-unitary operator on $\mathcal{F}$. The only requirement is $V\in\mathrm{U}(N_g)$: it comes from the framework, because the flavour rotation must preserve the norm on $\mathcal{F}$, and it says nothing about which $V$. The companion articles write the same placement with the unit on the algebra factor, which states that the algebra factor is untouched; that is what the product with the number $V_{ab}$ says here. The sector does not select the pattern.
 
-**Why the mixing is a basis change.** The CKM matrix is a change of basis in flavour space, not a new interaction. In the framework this is transparent: the gauge interactions are the unit on the labels times the algebra's generator, so they are **generation-universal**, and the mixing arises only because the mass operators, which multiply by a number on the label and leave the element alone, are not diagonal in the same flavour basis. The framework's sector is flavour-blind; the flavour structure is created by the mass operators. This is the algebraic form of the Glashow–Iliopoulos–Maiani mechanism: flavour-changing neutral currents are absent because the gauge vertex is the unit on the labels.
+**Why the mixing is a basis change.** The CKM matrix is a change of basis in flavour space, not a new interaction. In the framework this is transparent: the gauge interactions are the unit on the labels times the algebra's generator, so they are **generation-universal**, and the mixing arises only because the mass operators, which multiply by a number on the label and leave the element alone, are not diagonal in the same flavour basis. The framework's sector is flavour-blind; the flavour structure is created by the mass operators. This is the algebraic form of the Glashow–Iliopoulos–Maiani mechanism: flavour-changing neutral currents are absent because the connection vertex is the unit on the labels.
 
 **The lepton sector, in parallel.** The same structure applies to the leptons, with the mixing matrix of the lepton sector playing the role of $V$ and the neutrino mass operators replacing the up-type quarks. The framework's structure on the labels is identical; the values differ because the mass matrices differ, and the two mixings are independent inputs. The companion article on the neutrino treats the lepton mixing; this article treats the quark sector and the framework features common to both.
 
@@ -230,7 +230,7 @@ the same expression with the leptonic angles and phase. The framework's structur
 | Item | Status |
 |---|---|
 | The CKM matrix as an operator on the generation label | **Supplied**; the algebra factor untouched |
-| Sector flavour universality and the GIM mechanism | **Supplied**; the gauge vertex is the unit in flavour space |
+| Sector flavour universality and the GIM mechanism | **Supplied**; the connection vertex is the unit in flavour space |
 | The count $(N_g-1)^2$, and $N_g\ge3$ for a CP phase | **Supplied** by the $*$-unitary group of the flavour factor; standard counting |
 | The non-centrality of the CP phase | **Supplied**; the centre is $\mathbb{B}_{C}\otimes I_{N_g}$ and acts on all generations alike |
 | The Jarlskog invariant as a flavour-factor commutator | **Supplied** in form; standard in content |
@@ -367,7 +367,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $V=X_u^\dagger X_d$ | CKM matrix from the diagonalisations |
 | $\tilde{Ξ}_{\mathrm u,a}$, $\tilde{Ξ}_{\mathrm d,b}$; $\tilde{Ξ}^{\dagger}$, with the factor $i\vec e_x$ | Up- and down-type quark fields, generation labels $a,b$; Dirac adjoint |
 | $\tilde{Ξ}^{\dagger}i(ie_{\imath}\tilde{Ξ}_{L}\vec e_{\mathrm{spt}(\imath)})\vec e_x\,V_{ab}$ | The charged-current term |
-| the unit on the labels | Gauge vertices; flavour universality (GIM) |
+| the unit on the labels | Connection vertices; flavour universality (GIM) |
 | $\mathbb{B}_{C}\otimes I_{N_g}$ | Centre of the multiplied algebra; generation-blind |
 | $\tfrac12N_g(N_g-1)$, $\tfrac12(N_g-1)(N_g-2)$ | Mixing angles; CP-violating phases |
 | $J=\mathrm{Im}(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*})$ | Jarlskog invariant |

@@ -8,7 +8,7 @@
 
 - **The vertex list.** The fifteen fields against the sixteen fermions, read entry by entry off the printed arrays. **There are $64$ nonzero entries on the quartet half and $64$ on the conjugate half, so $128$ in all**, and the split is $48+8+8$ per half: twelve planes, two colour diagonals, and the corner, each counted with its two copies.
 - **The normalisation.** The printed arrays are not orthonormal in the trace. **Thirteen have $\operatorname{tr}(G^{\dagger}G)=2$, the rotated colour diagonal has $6$ and the corner has $12$**, and one pair is not even orthogonal. A canonical kinetic term therefore forces a family-dependent rescaling, and that rescaling is the whole of §*The Normalisation, Before Any Rule*.
-- **The two-index rule.** Every fermion–gauge vertex is $X\otimes\mathbb 1_{2}$: an array on the quartet times the identity on the copy index. **A gauge rotation cannot tell the two copies apart**, and that one bracket decides the shape of the whole table.
+- **The two-index rule.** Every fermion–connection vertex is $X\otimes\mathbb 1_{2}$: an array on the quartet times the identity on the copy index. **A gauge rotation cannot tell the two copies apart**, and that one bracket decides the shape of the whole table.
 - **One coupling, and no ratio.** $g_4$ stays symbolic. **The model has no second coupling, so it has no coupling ratio to fix and no matching problem to inherit.**
 
 **What the article does not do.** It does not derive a fermion action from the algebra: the fermion kinetic term uses the quartet's connection acting on the quartet carrier, and the claim that it does is imported, not proved. **The matrices are exact; the dynamical statement that a fermion propagates with them is the imported half**, and it is marked as such in every section where it is used.
@@ -51,7 +51,7 @@ $$
 | $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{\mathrm{gh}}$ | fifteen ghosts | ghost–gauge |
 | $\mathcal{L}_{\mathrm{Yuk}}$ | fermions and $Ξ$ | Yukawa, one matrix in the family index |
 
-**The gauge block is where the corpus is strongest and the fermion block is where it is thinnest**, and the rules inherit the asymmetry. **The three-gauge vertices are exact**, computed from the bracket table; **the fermion–gauge vertex is exact as a matrix and imported as a dynamical statement.**
+**The gauge block is where the corpus is strongest and the fermion block is where it is thinnest**, and the rules inherit the asymmetry. **The three-connection vertices are exact**, computed from the bracket table; **the fermion–connection vertex is exact as a matrix and imported as a dynamical statement.**
 
 **The scalar is the Hermitian $4\times4$, and its size is the algebra's.** $\mathbf{15}\oplus\mathbf1$ is a traceless part of fifteen real entries plus a real trace: $15+1=16$ real components, and $\dim\mathrm{SU}(4)=15$ is where the fifteen comes from. The condensate is $\langleΞ\rangle=v\operatorname{diag}(-3,1,1,1)$, and $15-9=6$ of its components are eaten by the sextet. **The matrix index is not a choice**: $\bar\xiΞ\xi$ is a singlet only for $Ξ\in\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$, while $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ has no $\bar{\mathbf4}$. The count is [the classification](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html)'s, and [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) is the census behind it.
 
@@ -135,9 +135,9 @@ so the corner's coupling is weaker than a plane's by $2/\sqrt{24}=1/\sqrt6=0.408
 
 **The corner couples to every line and to none of them twice.** $iD$ is diagonal with entries $-3,1,1,1$, so it gives one vertex on each of the four lines and none off the diagonal. **That is why it is the direction the condensate can sit on**: a diagonal generator does not move a fermion between cells.
 
-## The Three-Gauge Vertices
+## The Three-Connection Vertices
 
-**Every three-gauge vertex is a structure constant, and the structure constants are the bracket table.**
+**Every three-connection vertex is a structure constant, and the structure constants are the bracket table.**
 
 $$
 \Gamma_{abc}^{\imath\jmath\ell}(k_{1},k_{2},k_{3})=g_{4}f_{abc}\bigl[(k_{1}-k_{2})^{\ell}g^{\imath\jmath}+(k_{2}-k_{3})^{\imath}g^{\jmath\ell}+(k_{3}-k_{1})^{\jmath}g^{\ell\imath}\bigr].
@@ -158,13 +158,13 @@ $$
 
 **The last two are the grading, and they are the reason the sextet is a sextet.** $D$ does not commute with a plane carrying a $t$ index; it maps the real plane to the imaginary one and back, with the same factor $-4$. **So the six mixed planes form three two-dimensional blocks of definite $D$-charge**, and the whole sextet is heavy for one reason.
 
-**The four-gauge vertex is the contact term $g_{4}^{2}f_{abc}f_{cde}$ and it is dense.** Every generator that appears in two triples contributes, and the count is not worth tabulating: **what matters is that it is fixed by the same $29$ triples and introduces no new number.**
+**The four-connection vertex is the contact term $g_{4}^{2}f_{abc}f_{cde}$ and it is dense.** Every generator that appears in two triples contributes, and the count is not worth tabulating: **what matters is that it is fixed by the same $29$ triples and introduces no new number.**
 
-## Ghosts, Gauge Fixing and the Scalar Vertices
+## Ghosts, Choice Of Representative and the Scalar Vertices
 
 **One fixing parameter, because there is one group.** The Feynman–'t Hooft choice $\mathcal{L}_{\mathrm{gf}}=-\tfrac{1}{2\xi}\sum_{a}(\partial_{\imath}A_{a,\imath})^{2}$ gives fifteen ghosts, one per generator, with masses $0$ on the nine and $\xi\,32v^{2}$ on the six. **A second fixing parameter would be a symptom of a second factor**, and the model has none.
 
-**The ghost–gauge vertex is $g_{4}f_{abc}k_{\imath}$**, with the momentum on the outgoing ghost. **The count of nonzero vertices is again $29$ triples**, and the vanishing ones vanish for the same reason.
+**The ghost–connection vertex is $g_{4}f_{abc}k_{\imath}$**, with the momentum on the outgoing ghost. **The count of nonzero vertices is again $29$ triples**, and the vanishing ones vanish for the same reason.
 
 **The scalar vertices come from the kinetic term and the potential, and the model fixes neither coupling.** The gauge–scalar two-point vertex is the mass matrix restricted to the six eaten directions; the three-point vertex is $-2ig_{4}$ times $\operatorname{tr}(\partial_{\imath}Ξ[t_{a},Ξ])$, **with the $2$ from the commutator's two orderings and the $i$ from the covariant derivative** — a vertex quoted as $g_4$ times the commutator is off by that factor. **The potential $V(Ξ)$ is written with two quadratics and four quartics, and the model predicts none of them**: $v$ is a ratio of coefficients, and the radial mass is the second derivative of $V$ along the condensate (*The Primordial Potential*). **The two quadratics that carry the trace shift no vector mass**, because the identity commutes with all fifteen generators.
 
@@ -201,7 +201,7 @@ $$
 
 ## Summary
 
-**One covariant derivative, one coupling, fifteen fields, sixteen fermions.** The fermion–gauge vertex is $X\otimes\mathbb 1_{2}$ and has $128$ nonzero entries; the three-gauge vertex is $f_{abc}$ with $29$ nonzero triples; the spectrum is nine massless and six at $32v^{2}$; and the scalar is a $4\times4$ Hermitian matrix with sixteen real components, six of them eaten by the sextet. **No copy index acts on the scalar**: the copy index is a fermion label, so it eats nothing.
+**One covariant derivative, one coupling, fifteen fields, sixteen fermions.** The fermion–connection vertex is $X\otimes\mathbb 1_{2}$ and has $128$ nonzero entries; the three-connection vertex is $f_{abc}$ with $29$ nonzero triples; the spectrum is nine massless and six at $32v^{2}$; and the scalar is a $4\times4$ Hermitian matrix with sixteen real components, six of them eaten by the sextet. **No copy index acts on the scalar**: the copy index is a fermion label, so it eats nothing.
 
 **The normalisation is the only place a convention can go wrong**, and it is fixed by two lengths: the corner is $\sqrt6$ longer than a plane and $c_{3}$ is $\sqrt3$ longer, so their couplings are $0.4082$ and $0.5774$ of a plane's after a canonical kinetic term.
 
@@ -226,7 +226,7 @@ $$
 - [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The group, the content, and the declaration this article transcribes.
 - [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). The $80$ nonzero brackets and the five rules that generate them.
 - [The Fifteen AXF Matrices of the Bosons in Detail](the-15-axf-matrices-of-the-bosons-in-detail.html). Every array, its entries, and its mass.
-- [The Fermion–Gauge Vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The $128$ entries, one generator at a time.
+- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The $128$ entries, one generator at a time.
 - [The Yukawa Sector of the $\mathrm{SU}(4)$ Model](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). Where the fermion masses come from.
 - [Three Diagrams of the $\mathrm{SU}(4)$ Model](three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html). Three rules from this list, drawn.
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The sixteen, the $B-L$ column, and the two copies.

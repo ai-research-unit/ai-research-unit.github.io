@@ -66,7 +66,7 @@ Why the current carries the $V-A$ structure. In the algebra the projection is th
 
 Why the $W$ is charged. $W^{+}_{\imath}$ carries one unit of electric charge and one unit of the weak ladder; its conjugate carries the opposite. The action is real because the two terms are conjugates of each other, and the factor $1/\sqrt2$ is the normalization of the ladder operators $\tau^{\pm}=(\tau_1\pm i\tau_2)/\sqrt2$.
 
-The gauge-fixed form. The mass term breaks the local $SU(2)_L$ of the $W$'s own sector, so the action above is written in the unitary gauge, where the $W$'s longitudinal mode is its third polarization and there is no Goldstone. In a covariant gauge the Goldstone returns and the same physics is distributed differently; that is the gauge-fixing article's, and this article uses the unitary form throughout because the vertex does not depend on the choice.
+The fixed-representative form. The mass term breaks the local $SU(2)_L$ of the $W$'s own sector, so the action above is written in the unitary fixing condition, where the $W$'s longitudinal mode is its third polarization and there is no Goldstone. In a covariant fixing condition the Goldstone returns and the same physics is distributed differently; that is the choice of representative article's, and this article uses the unitary form throughout because the vertex does not depend on the choice.
 
 The pairing. The pairing is the Dirac bilinear, and its reality is what makes the contact real. $J^{+}_{\imath} J^{-}_{\imath}=\lvert J^{+}_{\imath}\rvert^{2}$ is a squared modulus, real and non-negative term by term, so the contact action is real with a definite sign. The full action is real because the interaction term is a sum of a term and its conjugate.
 
@@ -86,7 +86,7 @@ The selection rule. The selection rule is $SU(2)_L$ and it selects one chirality
 
 ## The Variation: Solving for $W$ Gives the Contact
 
-The variation with respect to $W^{+}_{\imath}$. In the unitary gauge the equation is algebraic in momentum space,
+The variation with respect to $W^{+}_{\imath}$. In the unitary fixing condition the equation is algebraic in momentum space,
 
 $$
 \bigl(-k^2+M_W^2\bigr)W^{+}_{\imath}(k)=\frac{g}{2\sqrt2}J^{+}_{\imath}(k),
@@ -124,7 +124,7 @@ The expansion parameter. The contact is the leading term of an expansion in $k^2
 
 The unitarity bound. The contact amplitude grows with energy, and at some energy it violates unitarity. The bound is $\sqrt{s}\lesssim 4\pi M_W/g$, which is the scale at which the $W$ must be restored. The bound is a consequence of the contact's dimension and is the technical statement of the theory's upper limit.
 
-Why the $W$'s own constraint does not appear. In the unitary gauge the $W$'s three polarizations are all physical and its constraint has been used to remove the fourth; the eliminated field carried no constraint into the contact. In a covariant gauge the Goldstone would appear in the contact's corrections, and the corrections would be representative-dependent while the rates are not.
+Why the $W$'s own constraint does not appear. In the unitary fixing condition the $W$'s three polarizations are all physical and its constraint has been used to remove the fourth; the eliminated field carried no constraint into the contact. In a covariant fixing condition the Goldstone would appear in the contact's corrections, and the corrections would be representative-dependent while the rates are not.
 
 **The bound is below the Planck scale and above the weak scale.** The window in which the contact is both accurate and unitary is wide, from nuclear momenta to the $W$ mass, and that width is why the four-fermion theory was a complete description for forty years.
 
@@ -140,11 +140,11 @@ What the structure predicts. The ratio $\Gamma(\pi\to e\xi_{\mathrm{neu}})/\Gamm
 
 ## The Noether Currents: The Charged Current Is the Ladder Current
 
-The current's origin. Before breaking, the fermion sector is invariant under global $SU(2)_L$, and the Noether currents are $J_{a,\imath}=\bar{\tilde\Xi}\gamma_{\imath}\tau_{a}\tilde\Xi$. The ladder combinations $J^{\pm}_{\imath}=J_{1,\imath}\mp iJ_{2,\imath}$ are the charged currents, and the $W$'s interaction term is the gauging of exactly these.
+The current's origin. Before breaking, the fermion sector is invariant under global $SU(2)_L$, and the Noether currents are $J_{a,\imath}=\bar{\tilde\Xi}\gamma_{\imath}\tau_{a}\tilde\Xi$. The ladder combinations $J^{\pm}_{\imath}=J_{1,\imath}\mp iJ_{2,\imath}$ are the charged currents, and the $W$'s interaction term is the making local of exactly these.
 
 Conservation and its failure. The charged current is conserved in the massless limit and fails to be conserved when the fermions have mass, because a mass term couples the two chiralities and the current is one of them. The divergence is proportional to the mass, and that proportionality is the statement that the axial part alone is the one with the anomaly.
 
-The anomaly. The axial current's divergence contains the triangle anomaly, which cancels between the doublet's members in the Standard Model; the cancellation is the anomaly article's, and this article's contribution is that the current whose anomaly is at issue is the one the action gauges.
+The anomaly. The axial current's divergence contains the triangle anomaly, which cancels between the doublet's members in the Standard Model; the cancellation is the anomaly article's, and this article's contribution is that the current whose anomaly is at issue is the one the action fixing conditions.
 
 Energy–momentum. Translation invariance gives $T_{\imath\jmath}$ with the fermion and $W$ contributions; its trace is nonzero because of the mass, and the trace anomaly is again the quantum part.
 
@@ -195,4 +195,4 @@ The three findings. The contact is an exact Gaussian elimination followed by a m
 - [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html) — the action the eliminated field belongs to.
 - [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html) — the charged and neutral currents in one action.
 - [Møller Scattering in Biquaternionic Form](moller-scattering-in-biquaternionic-form.html) — the neutral-current counterpart of the elimination.
-- [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html) — the divergence of the axial current this action gauges.
+- [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html) — the divergence of the axial current this action fixing conditions.

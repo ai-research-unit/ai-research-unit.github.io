@@ -152,7 +152,7 @@ Therefore left multiplication by $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil}
 
 **The normalization is the gauge.** Without the product normalization, the two maps are defined only up to reciprocal scale: if $\vec\Pi_{\mathrm{nil},+-}$ is replaced by $\lambda\vec\Pi_{\mathrm{nil},+-}$, the first map is multiplied by $\lambda$ and the second by $\lambda^{-1}$. The ladder is therefore canonical on the family and gauge-dependent on the basis, as it must be.
 
-## The Gauge
+## The Indefinite Form
 
 **The action on coordinates.** Under the basis change of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*,
 

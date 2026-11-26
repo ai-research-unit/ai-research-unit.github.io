@@ -60,11 +60,11 @@ $$
 
 **and $16v^{2}$ is not a mass.** It is the average of a heavy direction and a massless one, so $T^{L}_{a}$ is a coherence and not a state: **no term of the mass matrix is diagonal in it, and the physical spectrum at $M_C$ has no particle with this array's quantum numbers.** The heavy half sits in the leptoquark, the massless half in the gluon, and the array is a rotation between two particles of different mass that exists only at the symmetric point.
 
-**What the six do carry, and it is not nothing.** They are the arrays in which the real $\mathfrak{so}(4)$ of the quartet is visible: $T^{L}$ closes with $+\epsilon_{abc}$, $T^{R}$ with $-\epsilon_{abc}$, and the two triples commute. **That is a true statement about a subalgebra and it is not a particle content.** The corpus keeps the computation in [Construction of the AXF Matrices](construction-of-the-axf-matrices-of-the-fifteen-generators.html) and in [The Commutation Table](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html), and the model's spectrum in the next section, where those six directions are gauged and named.
+**What the six do carry, and it is not nothing.** They are the arrays in which the real $\mathfrak{so}(4)$ of the quartet is visible: $T^{L}$ closes with $+\epsilon_{abc}$, $T^{R}$ with $-\epsilon_{abc}$, and the two triples commute. **That is a true statement about a subalgebra and it is not a particle content.** The corpus keeps the computation in [Construction of the AXF Matrices](construction-of-the-axf-matrices-of-the-fifteen-generators.html) and in [The Commutation Table](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html), and the model's spectrum in the next section, where those six directions are made local and named.
 
 ## The Fifteen, One Array at a Time
 
-### $B'$, the fifteenth gauge boson: $iD$, the corner, the one array with an entry of modulus three
+### $B'$, the fifteenth connection: $iD$, the corner, the one array with an entry of modulus three
 
 $$
 iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr)=\begin{pmatrix}-3i & 0 & 0 & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & 0 & 0 & i\end{pmatrix}

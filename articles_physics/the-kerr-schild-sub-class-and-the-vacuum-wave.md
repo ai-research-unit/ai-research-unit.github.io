@@ -93,7 +93,7 @@ so $T$ fixes $\tilde{\mathcal L}_{\Phi,\mathrm{null}}^{\perp}$ pointwise and she
 
 ## A Constant Direction, and a Vacuum Wave
 
-With $h$ and $\ell_{\imath}$ constant, $T$ is a constant invertible map and $g$ is $\delta_{\imath\jmath}$ in the chart $y_\alpha=T_\alpha{}_{\imath} Q_{\imath}$; the metric is flat. The remark is small, and it marks a limit of the frame route's flatness criterion: a frame that is pure rotor gauge is flat, but the converse fails. A constant shear is not a rotor, and it produces no curvature, because it is a change of chart rather than a change of frame. Flatness of the frame has at least these two independent sources, and the second is a diffeomorphism, the object the algebra does not have.
+With $h$ and $\ell_{\imath}$ constant, $T$ is a constant invertible map and $g$ is $\delta_{\imath\jmath}$ in the chart $y_\alpha=T_\alpha{}_{\imath} Q_{\imath}$; the metric is flat. The remark is small, and it marks a limit of the frame route's flatness criterion: a frame that is pure rotor is flat, but the converse fails. A constant shear is not a rotor, and it produces no curvature, because it is a change of chart rather than a change of frame. Flatness of the frame has at least these two independent sources, and the second is a diffeomorphism, the object the algebra does not have.
 
 With $\ell_{\imath}$ constant and $h$ varying, the same family is curved, and its member is the wave the neighbouring articles meet as a gravitational wave. Take $\ell_{\imath}$ with $2\pi\nu_t=-i$ and $k_3=1$, null since $4\pi^{2}\nu_t^2+k_3^2=-1+1=0$, and pass to the real null coordinates $u=r'_t+r_z$ and $v=r'_t-r_z$, in which $\ell_{\imath}\,dR_{\imath}=du$ and the metric reads
 
@@ -147,7 +147,7 @@ With a constant null direction and a varying profile the class is a plane-fronte
 ## Further Reading
 
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame route this class sits inside, and for the local-scale route it leaves behind.
-- [Gravitational Waves in Biquaternionic Form](gravitational-waves-in-biquaternionic-form.html), for the wave sector proper: the trace-reversed perturbation and the harmonic gauge.
+- [Gravitational Waves in Biquaternionic Form](gravitational-waves-in-biquaternionic-form.html), for the wave sector proper: the trace-reversed perturbation and the harmonic fixing condition.
 - [The Light Cone as the Biquaternion Zero-Divisor Cone](the-light-cone-as-the-biquaternion-zero-divisor-cone.html), for nullity as the zero-divisor condition.
 - [Zero Divisors as a Physical Locus in Biquaternionic Form](zero-divisors-as-a-physical-locus-in-biquaternionic-form.html), for the null cone as a locus and not merely an algebraic condition.
 - [The Algebrodynamical Programme](the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html), for the same deformation written with half the profile.

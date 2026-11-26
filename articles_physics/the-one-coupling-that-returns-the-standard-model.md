@@ -170,7 +170,7 @@ A single Weyl doublet moves $c_2$ by $\tfrac13$, so this asks for about thirty m
 
 ## The Yukawa Sector: The Same Question
 
-The gauge couplings are not the only ones that carry a scale. The Yukawa sector is where the same question bites next, and there it is answered by counting.
+The connection couplings are not the only ones that carry a scale. The Yukawa sector is where the same question bites next, and there it is answered by counting.
 
 **6.1 Two relations.** Two relations, and both were written with a scale attached:
 

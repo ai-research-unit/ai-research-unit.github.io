@@ -18,9 +18,9 @@ $$
 
 **What this article claims.** That the group is present in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ without an operator layer; that its two factors are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$, distinguished by the sign of one bracket; that the same group acts on two different modules, spacetime and internal, and that only the second is a group factor; that three of its four roles in physics are already realised; and that whether the fourth is realised is a question about the module and not about the algebra.
 
-**What this article does not claim.** That the algebra supplies a chiral gauge theory. It does not: one-sided multiplication is vector-like, and the tie between an operator side and a spinor letter is not in the algebra. That failure is the *chiral wall*, stated in [Electroweak Theory in the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and restated for the frame in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html); *One Group, Two Modules* and *What Would Settle It* quote it and do not re-derive it. **Nor does this article state any coupling value**; where the two factors' strengths would enter, it names the structure and stops.
+**What this article does not claim.** That the algebra supplies a chiral connection theory. It does not: one-sided multiplication is vector-like, and the tie between an operator side and a spinor letter is not in the algebra. That failure is the *chiral wall*, stated in [Electroweak Theory in the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and restated for the frame in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html); *One Group, Two Modules* and *What Would Settle It* quote it and do not re-derive it. **Nor does this article state any coupling value**; where the two factors' strengths would enter, it names the structure and stops.
 
-**Where the other question is answered.** Why the low-energy gauge group has one weak factor and not two is a question about hypercharge, about the multiplet assignment and about a breaking, and it is the Standard Model's chapter: [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html), §*Why the Standard Model Gauges One Side and Not Two*. **This article keeps the group; that section keeps the comparison.**
+**Where the other question is answered.** Why the low-energy symmetry group has one weak factor and not two is a question about hypercharge, about the multiplet assignment and about a breaking, and it is the Standard Model's chapter: [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html), §*Why the Standard Model Makes One Side Local and Not Two*. **This article keeps the group; that section keeps the comparison.**
 
 **One word, five jobs.** *Left* and *right* name, in this corpus, the slot an operator acts on, the label of an element, the helicity of a field, the multiplication side in a product, and — in $\mathrm{SU}(2)_L$ — a group factor. **Five meanings of two words is how this subject goes wrong**, so this article says *side* for the multiplication, *letter* for the chirality slot, and *factor* for the symmetry group.
 
@@ -181,7 +181,7 @@ $$
 | spacetime rotations | $\mathrm{Spin}(4)_{E}$, or $\mathrm{SL}(2,\mathbb{C})$ when tied | exact, local | nothing | the Lorentz group |
 | chiral symmetry of the strong sector | $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | exact in the two-flavour chiral limit | quark masses and the condensate | $\mathrm{SU}(2)_V$, the pions as Goldstones |
 | custodial symmetry of the scalar sector | $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, global and accidental | approximate | the mass splittings | $\mathrm{SU}(2)_V$, hence $\rho=1$ |
-| gauged electroweak left–right | $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | **not observed** | its own breaking scale | $\mathrm{SU}(2)_L$ |
+| made local electroweak left–right | $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | **not observed** | its own breaking scale | $\mathrm{SU}(2)_L$ |
 
 **Role one, spacetime.** The group is the rotation group of four dimensions and the Euclidean partner of the Lorentz group, related by the tie of *The Two Sides in the Algebra*. **The weak interaction's maximal parity violation is a statement about the internal factors and has nothing to do with this role**; a left–right model restores parity in the internal factor, not in spacetime.
 
@@ -195,7 +195,7 @@ $$
 
 The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g_L\tilde Qg_R^{*}$, a central vacuum is diagonal-invariant, and the two mass matrices come out proportional. The detail is in [Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter.html).
 
-**Role four, the gauge symmetry.** The only role not realised: the two sides promoted to local symmetries with their own gauge fields. **Nothing in the data requires it, and nothing excludes it above its breaking scale.** Why the observed theory stops at one factor is a question about hypercharge and the multiplet assignment, and it is answered in [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html), §*Why the Standard Model Gauges One Side and Not Two*.
+**Role four, the gauge symmetry.** The only role not realised: the two sides promoted to local symmetries with their own connections. **Nothing in the data requires it, and nothing excludes it above its breaking scale.** Why the observed theory stops at one factor is a question about hypercharge and the multiplet assignment, and it is answered in [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html), §*Why the Standard Model Makes One Side Local and Not Two*.
 
 **The lesson of the table.** The group is not an unused object. **Three of the four roles are realised: an exact global symmetry of the strong sector, an approximate one in the scalar sector, and the rotation group of the carrier.** The fourth is the only one nature does not exhibit at low energy, and the reason belongs to the Standard Model's chapter rather than to this one. **What the table settles here is narrower and enough: the group is native, and only its use is a choice.**
 
@@ -251,13 +251,13 @@ The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g
 
 The group is not the pair's group. $\mathrm{SU}(2)\times\mathrm{SU}(2)$ is a product of two factors; the electroweak pair of the Standard Model, $\mathrm{SU}(2)\times\mathrm{U}(1)$, is a different group with a different quotient structure, and [The Electroweak Pair](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html) is where that difference is computed.
 
-Native is not gauged. The group's presence at the element level is a fact about the algebra; a local symmetry is a fact about a module (*One Group, Two Modules*).
+Native is not made local. The group's presence at the element level is a fact about the algebra; a local symmetry is a fact about a module (*One Group, Two Modules*).
 
 Spacetime is not internal. The same group is $\mathrm{Spin}(4)_{E}$ on the carrier and an internal factor on the tensor factors, and the left–right model needs the second (*One Group, Two Modules*).
 
 Parity is broken by the module and not by the charges. The multiplet assignment is what breaks it; a charge bookkeeping symmetric under $L\leftrightarrow R$ is compatible with either choice, which is the point [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html) makes about the observed spectrum.
 
-Broken is not absent. A factor that is no longer gauged below a scale has not left the algebra; the breaking chain is the Standard Model's chapter, and it is where the survivor is identified.
+Broken is not absent. A factor that is no longer made local below a scale has not left the algebra; the breaking chain is the Standard Model's chapter, and it is where the survivor is identified.
 
 The chiral wall is a statement about the module. The group is licensed twice over; what is missing is the tie between an operator side and a spinor letter (*One Group, Two Modules*, *What Would Settle It*).
 
@@ -271,9 +271,9 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 
 **The two modules.** On the carrier the group is $\mathrm{Spin}(4)_{E}$, spacetime. On the tensor factors of $\mathbb{B}\otimes\mathbb{B}$ it is internal. The frame needs the second, and the algebra builds it as a module.
 
-**The four roles.** Spacetime rotations, exact; the chiral symmetry of the strong sector, approximate and spontaneously broken; the custodial symmetry of the scalar sector, approximate and giving $\rho=1$; the gauged left–right symmetry, not observed.
+**The four roles.** Spacetime rotations, exact; the chiral symmetry of the strong sector, approximate and spontaneously broken; the custodial symmetry of the scalar sector, approximate and giving $\rho=1$; the made local left–right symmetry, not observed.
 
-**Where the fourth role is decided.** Not here. Whether nature gauges the group, and why the low-energy theory gauges one factor of it, are questions about hypercharge, about the multiplet assignment and about a breaking; [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html) takes them up, and this article stops at the group the algebra supplies.
+**Where the fourth role is decided.** Not here. Whether nature makes the local group, and why the low-energy theory makes one local factor of it, are questions about hypercharge, about the multiplet assignment and about a breaking; [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html) takes them up, and this article stops at the group the algebra supplies.
 
 **The cost.** Two $\mathrm{SU}(2)$'s and a circle are free, because the alphabet is $\mathrm{SU}(2)$; colour costs a layer; a group needing a separate $\mathrm{SU}(3)$ with a commuting $\mathrm{SU}(2)$ is over budget.
 
@@ -294,7 +294,7 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 
 ## Further Reading
 
-- [The Standard Model as the Low-Energy Phase: The $\mathrm{U}(2)$ Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). Why the low-energy theory gauges one side and not two, and hypercharge as the broken factor's remnant.
+- [The Standard Model as the Low-Energy Phase: The $\mathrm{U}(2)$ Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). Why the low-energy theory makes one local side and not two, and hypercharge as the broken factor's remnant.
 - [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The frame that uses this group, where each factor comes from, and the ceiling that forces the tensor product.
 - [The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html). $\mathrm{SU}(2)\times\mathrm{U}(1)$ against the algebra's $\mathrm{U}(2)$, and the selection rule the quotient imposes.
 - [Electroweak Theory in the Biquaternion Framework: The $\mathrm{U}(2)$ Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html). The wall of *One Group, Two Modules* at its four levels, and the ledger of what each level would need.

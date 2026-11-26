@@ -61,7 +61,7 @@ and every other product of two basis elements vanishes.
 
 **Proof.** The product is bilinear, so it is determined on the basis, and the table gives it there.
 
-## The Gauge
+## The Indefinite Form
 
 **Theorem.** The pair $(\upsilon_{+},\upsilon_{-})$ is determined by $\upsilon_{+}$ up to the reciprocal rescaling
 

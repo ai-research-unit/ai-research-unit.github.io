@@ -109,7 +109,7 @@ Verified for rotation rotors on one hundred angles to $1.8\times10^{-15}$, and v
 
 Proof. $(U\tilde QU^{*})^{2}=U\tilde Q(U^{*}U)\tilde Q U^{*}$, which is $U\tilde Q^{2}U^{*}$ exactly when $U^{*}U=e_t$; a rotation rotor is real and satisfies it, and a boost rotor $B=\cosh\tfrac\xi_{\mathrm{pot}}2+i\sinh\tfrac\xi_{\mathrm{pot}}2\,\vec u_{\mathrm b}$ satisfies $B^{*}B=\cosh\xi_{\mathrm{pot}}\,e_t+i\sinh\xi_{\mathrm{pot}}\,\vec u_{\mathrm b}\neq e_t$ and does not.
 
-The step has a preferred frame, and the frame is the one in which it is taken. A rotation is an automorphism of the algebra, so it commutes with the square; a boost is not, so it does not. A discrete rule that reads "apply the square" is stated in one frame, and the boost of the rule is a different rule. This is exactly the situation of a lattice regularisation, where the lattice breaks the boost invariance and keeps the rotation invariance (*Lattice Gauge Theory and the Biquaternion Path Integral*), and the entry records it rather than repairing it: no repair exists inside the algebra, because the repair would be a boost-covariant square, and the square is fixed.
+The step has a preferred frame, and the frame is the one in which it is taken. A rotation is an automorphism of the algebra, so it commutes with the square; a boost is not, so it does not. A discrete rule that reads "apply the square" is stated in one frame, and the boost of the rule is a different rule. This is exactly the situation of a lattice regularisation, where the lattice breaks the boost invariance and keeps the rotation invariance (*Lattice Connection Theory and the Biquaternion Path Integral*), and the entry records it rather than repairing it: no repair exists inside the algebra, because the repair would be a boost-covariant square, and the square is fixed.
 
 ## The Singular Set
 
@@ -378,5 +378,5 @@ The biquaternion quadratic map is a discrete rule on the algebra and not a flow:
 - [Relational Time from the Sector Exchange: The Material and Informational Clocks](../articles_physics/relational-time-from-the-sector-exchange-the-material-and-informational-clocks.html), for the quarter turn of the central imaginary, which is a different clock.
 - [Introduction to the Spin-Half Bispinors Spaces](../articles_physics/the-spin-half-bispinor-spaces.html), for the two halves and the mass as their pairing.
 - [Introduction to the Spin-One Anti-Hermitian Subspace](../articles_physics/the-spin-one-anti-hermitian-subspace.html), for the triple that lies on the critical set.
-- [Lattice Gauge Theory and the Biquaternion Path Integral](../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html), for the frame that a discrete regularisation needs.
+- [Lattice Connection Theory and the Biquaternion Path Integral](../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html), for the frame that a discrete regularisation needs.
 

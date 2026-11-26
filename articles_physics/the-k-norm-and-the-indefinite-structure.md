@@ -588,7 +588,7 @@ The physics of the distinction is the distinction between an observable and a la
 
 The boundary. On each of the two sectors the weight is a function of the algebraic norm, so the distinction collapses there and the entry says so. The independence is a property of the complexification, and the readings that use it are readings of the full algebra and not of a chart.
 
-### I.11.k — The Isometry Group Is the Gauge Group of the Weight
+### I.11.k — The Isometry Group Is the Symmetry Group of the Weight
 
 Read: the transitivity of $\mathrm{U}(1,3)$ on the punctured null set, its preservation of the value, and its failure to preserve the spectral type.
 

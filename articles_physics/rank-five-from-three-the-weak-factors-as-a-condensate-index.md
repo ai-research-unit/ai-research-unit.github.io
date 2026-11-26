@@ -231,7 +231,7 @@ $$
 
 **The temptation, stated in its strongest form.** The sextet is six generators and the weak pair is six generators, so perhaps the six recompose into the pair. **Six for six. The dimension matches and nothing else does.**
 
-**Both theorems that close it are proved in [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html)**, with the mass table and the six bracket identities beside them, and repeating the proofs here would be repeating them for the third time in the corpus. In one line each:
+**Both theorems that close it are proved in Gauge Fields: An Introduction to Quantum Theory**, with the mass table and the six bracket identities beside them, and repeating the proofs here would be repeating them for the third time in the corpus. In one line each:
 
 - **Charge.** Every sextet member has $Q=\pm\tfrac23$, so two of them bind to $Q\in\{0,\pm\tfrac43\}$ and never to $\pm1$; the $\mathrm{SU}(4)$ singlet is neutral identically. **Six neutral vectors and no charged one, against the observed four charged and two neutral.**
 - **Size.** A bound state weighs at least its confinement scale, and here that scale is $M_C\gtrsim250$ TeV, so an $80$ GeV composite is out by more than three orders of magnitude.

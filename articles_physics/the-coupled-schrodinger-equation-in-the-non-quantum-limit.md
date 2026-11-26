@@ -68,7 +68,7 @@ $$
 L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert .
 $$
 
-**A criterion on the canonical gradient would fail local invariance, and the failure is not cosmetic.** Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi q\Gamma}{h}$ and $\vec A\to\vec A+\vec\nabla_\Phi\Gamma$, the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$ while $\vec\pi$ does not. A parameter defined on the canonical gradient would therefore change value under a local transformation, and a limit whose smallness depends on the gauge is not a statement about the field.
+**A criterion on the canonical gradient would fail local invariance, and the failure is not cosmetic.** Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi q\Gamma}{h}$ and $\vec A\to\vec A+\vec\nabla_\Phi\Gamma$, the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$ while $\vec\pi$ does not. A parameter defined on the canonical gradient would therefore change value under a local transformation, and a limit whose smallness depends on the fixing condition is not a statement about the field.
 
 The order table is the free table with one substitution.
 
@@ -232,7 +232,7 @@ Order two is the free quantum potential, with the free size and the free non-uni
 
 ## Further Reading
 
-- [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), the parent: the covariant logarithmic derivative, the pair, the gauge action on the word, and the circulation.
+- [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), the parent: the covariant logarithmic derivative, the pair, the connection action on the word, and the circulation.
 - [The Schrödinger Equation in the Non-Quantum Limit](the-schrodinger-equation-in-the-non-quantum-limit.html), the free companion: the same ordering with $\vec A=0$.
 - [The Lagrangian and the Coupled Schrödinger Equation in the Non-Quantum Limit](the-lagrangian-and-the-coupled-schrodinger-equation-in-the-non-quantum-limit.html), the same limit on the parent's action.
 - [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the word and the free pair.

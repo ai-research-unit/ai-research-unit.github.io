@@ -150,7 +150,7 @@ The same argument gives $\partial_{\imath}\tilde U\,\tilde U^{\natural}$ scalar-
 
 This was checked numerically along an explicit one-parameter rotation rotor with a finite-difference derivative: the scalar part of $\tilde U^{\natural}\partial_{\imath}\tilde U$ came out at the $10^{-11}$ level, which is the finite-difference noise floor, while the vector part was $\tfrac12\vec e_x$ as expected for a rotor of angle $t$ about $x$.
 
-**What the logarithmic derivative is not.** It is not a connection for an arbitrary frame, only for a frame that is pure rotor gauge of the rigid frame. For a general frame the logarithmic derivative of the frame does not exist as a single biquaternion, because the frame is four elements rather than one, and the connection must be supplied by a separate field. This is the precise content of the statement, repeated in the companion articles, that **the algebra supplies the home of the connection and not the connection**.
+**What the logarithmic derivative is not.** It is not a connection for an arbitrary frame, only for a frame that is pure rotor of the rigid frame. For a general frame the logarithmic derivative of the frame does not exist as a single biquaternion, because the frame is four elements rather than one, and the connection must be supplied by a separate field. This is the precise content of the statement, repeated in the companion articles, that **the algebra supplies the home of the connection and not the connection**.
 
 ## Conditions, Consequences, and Where the Framework Stops
 
@@ -176,7 +176,7 @@ The alternative proposal that a commutative connection suffices has a defensible
 
 **The indefensible extension.** A boost is a Lorentz transformation and the frame's covariance group contains it. If the derivative is required to be covariant under the full local Lorentz group, the commutator form fails on the boost half, and the failure is visible in one component: the time coefficient of a material element does not transform. There is no repair by choosing a different connection, because the missing term is not a connection term — it is the difference between two actions.
 
-**Why the proposal keeps recurring.** The commutator form is shorter to write, it is the standard expression in the gauge-theory literature for a field in the adjoint representation, and it agrees with the two-sided form on every example in which only rotations are varied. A summary written from the compact case generalises it, and the generalisation is wrong by exactly the boost half. That is the diagnosis, and it is a diagnosis of a generalisation and not of an arithmetic slip.
+**Why the proposal keeps recurring.** The commutator form is shorter to write, it is the standard expression in the connection theory literature for a field in the adjoint representation, and it agrees with the two-sided form on every example in which only rotations are varied. A summary written from the compact case generalises it, and the generalisation is wrong by exactly the boost half. That is the diagnosis, and it is a diagnosis of a generalisation and not of an arithmetic slip.
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# __Dual Equivalence of the Dirac and Topologically Massive Gauge Fields__
+# __Dual Equivalence of the Dirac and Topologically Massive Connections__
 
 ## Introduction
 
@@ -49,7 +49,7 @@ and the mixed term is a vector. The operator $\Box_\Phi$ has no such term becaus
 
 ## The Parent Action
 
-The action of this article is also written, varied and read for its consequences in [The Lagrangian and the Topologically Massive Gauge Field](the-lagrangian-and-the-topologically-massive-gauge-field.html), which carries the field slots — the action, the variation, the reality of the coefficients, the constraint count, the currents and the comparison with the family's other massive vectors. This section keeps the construction the duality needs and does not repeat that reading.
+The action of this article is also written, varied and read for its consequences in [The Lagrangian and the Topologically Massive Connection](the-lagrangian-and-the-topologically-massive-gauge-field.html), which carries the field slots — the action, the variation, the reality of the coefficients, the constraint count, the currents and the comparison with the family's other massive vectors. This section keeps the construction the duality needs and does not repeat that reading.
 
 ### The Fields
 
@@ -68,7 +68,7 @@ $$
 $$
 because $r'_t$ is symmetric under the exchange of the first and third slots while $\varepsilon$ is antisymmetric. The two readings must not be mixed, and the exchange isolates precisely the antisymmetric part of the structure constants — the part that survives against the field strength in §*Why the Mass Is Topological*. The Dirac Lagrangian quoted below keeps the source's own order, $\check c_{\jmath\imath k}$ with the starred derivative in the first slot, which is also the order of the companion's Lagrangian.
 
-$H_{\imath}$ is the dual potential: a complex four-vector, the auxiliary field of the four-dimensional parent action. In the three-dimensional version the auxiliary field is the complex potential $B_{\imath}$ in the axial gauge $\sum_{\imath}\varepsilon_{\imath} B_{\imath} j_{\imath}=0$, and the complex scalar $\xi$ is a spectator carried through both reductions unchanged.
+$H_{\imath}$ is the dual potential: a complex four-vector, the auxiliary field of the four-dimensional parent action. In the three-dimensional version the auxiliary field is the complex potential $B_{\imath}$ in the axial fixing condition $\sum_{\imath}\varepsilon_{\imath} B_{\imath} j_{\imath}=0$, and the complex scalar $\xi$ is a spectator carried through both reductions unchanged.
 
 $A_{\imath}$ is the electromagnetic potential, and it enters only through the covariant derivative
 $$
@@ -137,7 +137,7 @@ $$
 &-\tfrac{1}{2(m-a)}\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_{\imath}\bigl(\partial\xi/\partial x_{\imath}\bigr)\check c_{\imath\jmath k}F_{\jmath k}+\text{(scalar sector)}+\text{c.c.}+\partial Z_{2\imath}/\partial x_{\imath} .
 \end{aligned}
 $$
-The abbreviation *scalar sector* stands for the source's two terms in $\xi$ alone, $\tfrac{1}{2(m-a)}\sum_{\imath,\jmath}\partial\xi/\partial x_{\imath}\,p_{+,\imath\jmath}\,\partial\xi^*/\partial x_{\jmath}$ and $\tfrac i2\sum_{\imath}\xi^*j_{\imath}\tilde\nabla_{\Phi,\imath}^{-a}\xi$, which the elimination carries through unchanged; the potential $B$ is in the axial gauge $\sum_{\jmath} B_{\jmath} j_{\jmath}=0$. On the spin manifold, where the fields depend on the three coordinates of the slice orthogonal to $j$ and $\sum_{\jmath} j_{\jmath}\partial B_{\imath}/\partial x_{\jmath}=\sum_{\jmath} j_{\jmath}\partial\xi/\partial x_{\jmath}=0$, and at $a=0$, the two mixing terms — the $B^*\check cF$ term at the end of the first line and the $(\partial\xi)\check cF$ term that opens the second — combine into a surface term, and the Lagrangian reduces to
+The abbreviation *scalar sector* stands for the source's two terms in $\xi$ alone, $\tfrac{1}{2(m-a)}\sum_{\imath,\jmath}\partial\xi/\partial x_{\imath}\,p_{+,\imath\jmath}\,\partial\xi^*/\partial x_{\jmath}$ and $\tfrac i2\sum_{\imath}\xi^*j_{\imath}\tilde\nabla_{\Phi,\imath}^{-a}\xi$, which the elimination carries through unchanged; the potential $B$ is in the axial fixing condition $\sum_{\jmath} B_{\jmath} j_{\jmath}=0$. On the spin manifold, where the fields depend on the three coordinates of the slice orthogonal to $j$ and $\sum_{\jmath} j_{\jmath}\partial B_{\imath}/\partial x_{\jmath}=\sum_{\jmath} j_{\jmath}\partial\xi/\partial x_{\jmath}=0$, and at $a=0$, the two mixing terms — the $B^*\check cF$ term at the end of the first line and the $(\partial\xi)\check cF$ term that opens the second — combine into a surface term, and the Lagrangian reduces to
 $$
 \boxed{\;\mathcal{L}_G=-\tfrac{1}{4m}\sum_{\imath,k}\epsilon_{\imath}\epsilon_{\imath} F_{\imath k}F_{\imath k}+\tfrac14\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_{\imath}\,\check\varepsilon_{\jmath\imath k}\,B^*_{\jmath} F_{\imath k}+\text{(scalar sector)}+\text{c.c.}\;}
 $$
@@ -332,7 +332,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $G^{\mathrm R}_{\imath}$, $G^{\mathrm L}_{\imath}$ | The two chiral parts of the s-vector, of value plus one and minus one: elements, not a right and a left multiplication |
 | $G_{\imath}$ | s-Vector (complex four-vector), the Dirac field in the vector representation |
 | $H_{\imath}$ | Dual (potential) field of the four-dimensional parent action, complex four-vector |
-| $B_{\imath}$ | Complex potential of the three-dimensional version, axial gauge $\sum_{\imath}\varepsilon_{\imath} B_{\imath} j_{\imath}=0$ |
+| $B_{\imath}$ | Complex potential of the three-dimensional version, axial fixing condition $\sum_{\imath}\varepsilon_{\imath} B_{\imath} j_{\imath}=0$ |
 | $\xi$ | Complex scalar, $\xi=\sum_{\imath}\varepsilon_{\imath} G_{\imath} j_{\imath}$; $G_{\imath}=G_{\mathrm{tr},\imath}-j_{\imath}\xi$ with $G_{\mathrm{tr},\imath}=\sum_{\jmath}\varepsilon_{\jmath} p^+_{\imath\jmath}G_{\jmath}$ |
 | $p^\pm_{\imath\jmath}$ | Projectors; $p^+_{\imath\jmath}=\epsilon_{\imath}\delta_{\imath\jmath}+j_{\imath} j_{\jmath}$, $p^-_{\imath\jmath}=-j_{\imath} j_{\jmath}$, $p^+_{\imath\jmath}+p^-_{\imath\jmath}=\epsilon_{\imath}\delta_{\imath\jmath}$, with no sum on $\mu$ |
 | $A_{\imath}$ | Electromagnetic four-potential; it enters only the covariant derivative |
@@ -352,10 +352,10 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 
 ## Further Reading
 
-- Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the parent actions (55) and (77), their eliminations, the self-dual field strength, the topological reading of the mass, and the non-integrable phase. **The eliminations are quoted; the algebraic identities they use are recomputed.**
+- Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Connection," arXiv:hep-th/0602275 (2006), for the parent actions (55) and (77), their eliminations, the self-dual field strength, the topological reading of the mass, and the non-integrable phase. **The eliminations are quoted; the algebraic identities they use are recomputed.**
 - Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the s-vector representation, the bosonic Dirac Lagrangian, the self-dual form of the massive equation, and the bilinear dictionary on which the parent action is built.
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the rule this article follows in printing no array, and for what a display built on a declared axis costs.
 - S. Deser and R. Jackiw, *Physics Letters B* **139** (1984) 371, for the parent (master) action method itself.
-- S. Deser, R. Jackiw and S. Templeton, "Topologically massive gauge theories," *Annals of Physics* **140** (1982) 372, for the original topologically massive gauge theory in $2+1$ dimensions and its Chern–Simons mass.
-- H. Weyl, "Elektron und Gravitation," *Zeitschrift für Physik* **56** (1929) 330, and C. N. Yang, "Integral formalism for gauge fields," *Physical Review Letters* **33** (1974) 445, for the non-integrable phase factor that the mass generalises.
+- S. Deser, R. Jackiw and S. Templeton, "Topologically massive connection theory," *Annals of Physics* **140** (1982) 372, for the original topologically massive connection theory in $2+1$ dimensions and its Chern–Simons mass.
+- H. Weyl, "Elektron und Gravitation," *Zeitschrift für Physik* **56** (1929) 330, and C. N. Yang, "Integral formalism for connection," *Physical Review Letters* **33** (1974) 445, for the non-integrable phase factor that the mass generalises.
 - The companion corpus articles: [The s-Vector Representation of the Dirac Spinor in Biquaternionic Form](the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html), [Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form](triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html), [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), [Anyons and Braid Statistics in Biquaternionic Form](anyons-and-braid-statistics-in-biquaternionic-form.html), and [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html).

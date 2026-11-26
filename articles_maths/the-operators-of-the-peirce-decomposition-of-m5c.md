@@ -179,7 +179,7 @@ $$
 
 **Proof.** A product and sum of upper triangular matrices is upper triangular, so the upper generators cannot produce a lower matrix unit. The transposes produce the lower units.
 
-### The Gauge
+### The Indefinite Form
 
 **Proposition.** The gauge torus acts on the simple nilpotents by
 

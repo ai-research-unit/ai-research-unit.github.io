@@ -213,7 +213,7 @@ The algebra supplies the quantisation and not the dynamics. Three things are out
 
 The quantisation itself is kinematic and exact: it follows from the degree of a map and needs no approximation, no weak field and no small parameter.
 
-## The Class and the Gauge
+## The Class and the Indefinite Form
 
 ### The phase is a coordinate and the class is the object
 
@@ -226,11 +226,11 @@ Throughout, $\theta_{\mathrm{phs}}:=\frac{2\pi S_{\tilde\Xi}}{h}$ is the spinor 
 
 The corpus's Dirac article states the same thing from the other side: the central angle is read by no bilinear, and the current and the spin are both blind to it. What reads the angle is the winding, and the winding is the one place where the angle has a physical consequence — precisely because it is not the angle's value but the angle's failure to be single valued that is measured.
 
-### Gauge invariance, stated exactly
+### Local Invariance, stated exactly
 
 Under a local transformation the field multiplies by a unit central element and the winding is unchanged for a single-valued transformation. Take $\tilde\Xi\mapsto\tilde\Xi\,e^{i\theta_{\mathrm{gau}}(r)}e_t$ with $\chi$ a single-valued function. Then the phase is shifted by $\frac{h}{2\pi}\chi$, the circulation around a loop gains $\frac{h}{2\pi}\oint\nabla\chi\cdot d\vec l=0$, and $n$ is unchanged. A transformation with a multivalued $\chi$ is not a local transformation of the field on the loop: it changes the field's value at each point and it changes $n$. So the charge is invariant under the symmetry group of single-valued transformations, and it classifies the field's configurations rather than being a redundant label.
 
-**The node is where the gauge coordinate has no value, not where the field has no value.** That is why the node is a defect of the description and a feature of the state at the same time: the field is a perfectly good element of the algebra there — zero for the central scalar field — and it is the polar decomposition, and with it the phase, that fails.
+**The node is where the redundant coordinate has no value, not where the field has no value.** That is why the node is a defect of the description and a feature of the state at the same time: the field is a perfectly good element of the algebra there — zero for the central scalar field — and it is the polar decomposition, and with it the phase, that fails.
 
 ## The Cone, with an Example That Is Not Zero
 

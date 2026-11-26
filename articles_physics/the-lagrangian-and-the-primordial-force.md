@@ -6,7 +6,7 @@ This article writes the $\mathrm{SU}(4)$ action in one display, derives the equa
 
 The pieces of the action exist in the corpus as fragments. *The Feynman Rules of the Model* writes one covariant derivative and four pieces and then reads rules off them; the scalar census counts sixteen real components and says in as many words that it establishes no potential; the Yukawa sector diagonalises one matrix. **No article writes them in one display and derives from them.** This one does, and it is the article the block exists for: every other force block of the corpus carries its Lagrangian article, and the primordial force carried none.
 
-The parent is *The Lagrangian and the Non-Abelian Gauge Fields*, which writes $-\tfrac12\operatorname{tr}(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath})$ for $\mathrm{SU}(2)$ and proves that the trace which makes the density invariant is the matrix trace and not the corpus's informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. **That step does not change here.** What changes is the size of the matrix and the status of the result, and the status is the harder half.
+The parent is *The Lagrangian and the Non-Abelian Connections*, which writes $-\tfrac12\operatorname{tr}(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath})$ for $\mathrm{SU}(2)$ and proves that the trace which makes the density invariant is the matrix trace and not the corpus's informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. **That step does not change here.** What changes is the size of the matrix and the status of the result, and the status is the harder half.
 
 Three things are established.
 
@@ -20,7 +20,7 @@ $$
 +\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}+\mathcal{L}_{\mathrm{Yuk}} ,
 $$
 
-with one covariant derivative, $D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}t_{a}$, and one gauge coupling. **The coupling is the same $g_4$ in the gauge, fermion and scalar kinetic terms**, and that identity is the whole content of the words *one force*. **The display carries seven terms and four dynamical pieces**, the other three being the gauge-fixing, the ghosts and the Yukawa. **One force does not mean one parameter**: the scalar's six coefficients $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$, $\lambda_{1}$, $\lambda_{2}$, $\lambda_{3}$ and $\lambda_{4}$, the Yukawa matrix $y$, the gauge parameter $\zeta$ and the topological angle $\theta_{4}$ are nine more numbers, and §*What the Display Does Not Contain* lists them.
+with one covariant derivative, $D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}t_{a}$, and one connection coupling. **The coupling is the same $g_4$ in the gauge, fermion and scalar kinetic terms**, and that identity is the whole content of the words *one force*. **The display carries seven terms and four dynamical pieces**, the other three being the gauge-fixing, the ghosts and the Yukawa. **One force does not mean one parameter**: the scalar's six coefficients $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$, $\lambda_{1}$, $\lambda_{2}$, $\lambda_{3}$ and $\lambda_{4}$, the Yukawa matrix $y$, the parameter $\zeta$ and the topological angle $\theta_{4}$ are nine more numbers, and §*What the Display Does Not Contain* lists them.
 
 *Second, the equations and the count.* The stationarity condition is $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\jmath}=-g_4\,j_{a,\jmath}$, with the current built from the sixteen and the scalar matrix; the temporal component is a Gauss law per generator, fifteen in all; and the constraint algebra fixes the degrees of freedom to $15\times2$ for the connections, $32$ states for the fermions and $16$ real for the scalar.
 
@@ -58,7 +58,7 @@ $$
 | piece | field | what it supplies |
 | --- | --- | --- |
 | $-\tfrac14\sum F F$ | the fifteen | the propagator and both self-couplings |
-| fermion kinetic | the sixteen | the fermion–gauge vertex, one matrix per generator |
+| fermion kinetic | the sixteen | the fermion–connection vertex, one matrix per generator |
 | scalar kinetic | $Ξ$, sixteen real | the gauge–scalar vertex and the mass of the six |
 | $V(Ξ)$ | $Ξ$ | the scalar self-couplings |
 | $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{\mathrm{gh}}$ | fifteen ghosts | the fixing the representative and ghost vertices |
@@ -83,9 +83,9 @@ $$
 D_{\imath}\xi_{f}=\partial_{\imath}\xi_{f}-ig_4\sum_{a}A_{a,\imath}\,\begin{pmatrix}t_{a}\otimes\mathbb{1}_{2}&0\\0&-t_{a}^{T}\otimes\mathbb{1}_{2}\end{pmatrix}\xi_{f},
 $$
 
-**The two blocks are the quartet half and the conjugate half.** The $8\times8$ matrix is block-diagonal on the colour index and tensored with $\mathbb 1_{2}$ on the copy index, so each of the fifteen acts on the sixteen components as one sign on the $\mathbf4$ and the other on the $\bar{\mathbf4}$. The $\varepsilon_{\imath}$ on the Dirac contraction is the weight the corpus prints everywhere else, and it is what makes this a Minkowski Dirac operator and not a Euclidean one. **The minus in the lower block is not a convention**: the conjugate of a $\mathbf4$ transforms with $-t_{a}^{T}$, and *The Fermion–Gauge Vertex in the Quartet Basis* prints the $-t_{a}^{T}$ on its conjugate half for this reason. **That minus is also what makes the anomaly cancel**: the $\mathrm{SU}(4)^3$ index is $+1$ on each quartet and $-1$ on each antiquartet, and a vertex that forgot the sign would make the index $+4$ instead of $0$.
+**The two blocks are the quartet half and the conjugate half.** The $8\times8$ matrix is block-diagonal on the colour index and tensored with $\mathbb 1_{2}$ on the copy index, so each of the fifteen acts on the sixteen components as one sign on the $\mathbf4$ and the other on the $\bar{\mathbf4}$. The $\varepsilon_{\imath}$ on the Dirac contraction is the weight the corpus prints everywhere else, and it is what makes this a Minkowski Dirac operator and not a Euclidean one. **The minus in the lower block is not a convention**: the conjugate of a $\mathbf4$ transforms with $-t_{a}^{T}$, and *The Fermion–Connection vertex in the Quartet Basis* prints the $-t_{a}^{T}$ on its conjugate half for this reason. **That minus is also what makes the anomaly cancel**: the $\mathrm{SU}(4)^3$ index is $+1$ on each quartet and $-1$ on each antiquartet, and a vertex that forgot the sign would make the index $+4$ instead of $0$.
 
-**The copy index is untouched by every generator.** That is the one structural statement the fermion piece makes: the sixteen are $\xi^{\alpha}_{i}$ with the quartet index slow and the copy index fast, so each array acts as $X\otimes\mathbb{1}_{2}$ on the quartet half and $-X^{T}\otimes\mathbb{1}_{2}$ on the conjugate half, and the two-index rule of *The Fermion–Gauge Vertex in the Quartet Basis* is *recovered* here rather than assumed. **The piece contains no mass and no chirality projection**; both would need a second structure and the group supplies neither.
+**The copy index is untouched by every generator.** That is the one structural statement the fermion piece makes: the sixteen are $\xi^{\alpha}_{i}$ with the quartet index slow and the copy index fast, so each array acts as $X\otimes\mathbb{1}_{2}$ on the quartet half and $-X^{T}\otimes\mathbb{1}_{2}$ on the conjugate half, and the two-index rule of *The Fermion–Connection vertex in the Quartet Basis* is *recovered* here rather than assumed. **The piece contains no mass and no chirality projection**; both would need a second structure and the group supplies neither.
 
 **The scalar piece.** With $Ξ$ a Hermitian $4\times4$ transforming as $Ξ\mapsto UΞ U^{\dagger}$,
 
@@ -229,7 +229,7 @@ $$
 =\operatorname{tr}\Bigl(\sum_{\imath,\jmath}\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath}\Bigr).
 $$
 
-**The corpus's informational reduction does not have that property.** $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is bilinear, symmetric and real on the material sector, but it is not cyclic, so a density built from it would change under a local transformation and the theory would not be a gauge theory. **The two functionals agree only where one factor is a scalar**, and a field strength is not a scalar. The proof is *The Lagrangian and the Non-Abelian Gauge Fields*'s; it is cited here rather than repeated, and it is the sharpest technical statement in either article.
+**The corpus's informational reduction does not have that property.** $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is bilinear, symmetric and real on the material sector, but it is not cyclic, so a density built from it would change under a local transformation and the theory would not be a connection theory. **The two functionals agree only where one factor is a scalar**, and a field strength is not a scalar. The proof is *The Lagrangian and the Non-Abelian Connections*'s; it is cited here rather than repeated, and it is the sharpest technical statement in either article.
 
 **Reality and sign.** For anti-Hermitian $\mathbb{F}_{\imath\jmath}$, $\operatorname{tr}(\mathbb{F}_{\imath\jmath}\mathbb{F}_{\imath\jmath})$ is real, and $\operatorname{tr}(\mathbb{F}_{\imath\jmath}^{\dagger}\mathbb{F}_{\imath\jmath})=-\operatorname{tr}(\mathbb{F}^{2})$ is non-negative. **Reality is what the anti-Hermiticity buys, and that much is not a convention.** **Positivity is a different statement and it belongs to the Hamiltonian, not to the Lagrangian**: the density $-\tfrac12\operatorname{tr}(\sum\mathbb{F}\mathbb{F})$ is $\tfrac12\sum_{a}(E_{a}^{2}-B_{a}^{2})$ once the corpus's weights are applied to the summed pairs, so it changes sign between an electric and a magnetic configuration. **The energy that is bounded below is $\tfrac12\sum_{a}(E_{a}^{2}+B_{a}^{2})\ge0$**, and it is positive for the same reason.
 
@@ -284,7 +284,7 @@ and the count is a statement about this phase only.
 
 **The action above is correct as a Yang–Mills action for $\mathrm{SU}(4)$. It is not an algebra result, and the difference is measurable.**
 
-The dimension of the algebra's compact group is four. $\mathbb{B}\cong M_2(\mathbb{C})$ has compact part $\mathrm{U}(2)=\mathrm{SU}(2)\times\mathrm{U}(1)$, of real dimension $3+1=4$, and a Lie algebra of fifteen generators does not embed in a four-dimensional one. **The $\mathrm{SU}(2)$ action of *The Lagrangian and the Non-Abelian Gauge Fields* is written in the algebra because its three generators are three of the algebra's own directions. The $\mathrm{SU}(4)$ action is written on a $4\times4$ matrix representation that the algebra does not contain.**
+The dimension of the algebra's compact group is four. $\mathbb{B}\cong M_2(\mathbb{C})$ has compact part $\mathrm{U}(2)=\mathrm{SU}(2)\times\mathrm{U}(1)$, of real dimension $3+1=4$, and a Lie algebra of fifteen generators does not embed in a four-dimensional one. **The $\mathrm{SU}(2)$ action of *The Lagrangian and the Non-Abelian Connections* is written in the algebra because its three generators are three of the algebra's own directions. The $\mathrm{SU}(4)$ action is written on a $4\times4$ matrix representation that the algebra does not contain.**
 
 **What transcription costs, item by item.**
 
@@ -369,7 +369,7 @@ Six things are deliberately absent: a mass for the fifteen, the potential's coef
 
 ## Further Reading
 
-- [The Lagrangian and the Non-Abelian Gauge Fields](the-lagrangian-and-the-non-abelian-gauge-fields.html). The parent: the $\mathrm{SU}(2)$ action, the trace-versus-reduction proof, and the ceiling in its original form.
+- [The Lagrangian and the Non-Abelian Connections](the-lagrangian-and-the-non-abelian-gauge-fields.html). The parent: the $\mathrm{SU}(2)$ action, the trace-versus-reduction proof, and the ceiling in its original form.
 - [The Feynman Rules of the Model: The Vertices of the Fifteen and the Sixteen](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The rules this action produces, and the normalisation stated once more before any rule.
 - [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The content, the anomaly count and the one covariant derivative that this article writes an action for.
 - [Classification of the Bosons: Nine Massless and Six Heavy](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid, the cell names, and which of the fifteen is which.

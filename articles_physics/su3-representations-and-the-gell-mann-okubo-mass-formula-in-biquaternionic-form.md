@@ -208,7 +208,7 @@ The programme closes the system by identifying $m_0$ with the mass of the spin r
 
 ## The Biquaternion Reading
 
-The interpretation is short because the framework's own limit is known. The $\mathrm{SU}(3)$ representations, the Okubo operators $A_{i\imath}$, the $*$-unitary field $Z$ and the mass splitting are **not elements of the biquaternion algebra**. The companion *Gauge Group Ceiling* shows the algebra's compact structure stops at $\mathrm{SU}(2)$, so no $\mathfrak{su}(3)$ with an octet of generators can be built from $\mathbb{B}$; the Okubo matrices are $3\times3$, and the algebra of three-by-three matrices is not the biquaternion algebra. The $\mathrm{SU}(3)$ machinery is external, and the article's purpose is to record it accurately beside the framework's own statements, not to claim it.
+The interpretation is short because the framework's own limit is known. The $\mathrm{SU}(3)$ representations, the Okubo operators $A_{i\imath}$, the $*$-unitary field $Z$ and the mass splitting are $\mathrm{SU}(3)$. The companion *Symmetry group Ceiling* shows the algebra's compact structure stops at $\mathrm{SU}(2)$, so no $\mathfrak{su}(3)$ with an octet of generators can be built from $\mathbb{B}$; the Okubo matrices are $3\times3$, and the algebra of three-by-three matrices is not the biquaternion algebra. The $\mathrm{SU}(3)$ machinery is external, and the article's purpose is to record it accurately beside the framework's own statements, not to claim it.
 
 What the framework can host is the **structure of the splitting**. The Gell-Mann–Okubo formula separates a symmetric part $m_0$ from a symmetry-breaking part $\delta m$ built from the Cartan directions of the algebra; the framework knows the analogous separation — a central, $\mathrm{SU}(2)$-invariant part and a breaking part along a distinguished direction — in its own sector structure and in the hypercharge direction of the charge factor. Whether the hypercharge splitting has a biquaternion image is not established here; the honest statement is that the algebra hosts the singlet/triplet/doublet isospin reduction (since those are $\mathrm{SU}(2)$ representations) and not the octet of $\mathrm{SU}(3)$.
 
@@ -273,7 +273,7 @@ The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is 
 ## Further Reading
 
 - M. Gell-Mann, "Symmetries of baryons and mesons," *Physical Review* **125** (1962) 1067–1084, for the eightfold way and the mass formula.
-- Y. Ne'eman, "Derivation of strong interactions from a gauge invariance," *Nuclear Physics* **26** (1961) 222–229, for the independent proposal of the $\mathrm{SU}(3)$ classification.
+- Y. Ne'eman, "Derivation of strong interactions from a local invariance," *Nuclear Physics* **26** (1961) 222–229, for the independent proposal of the $\mathrm{SU}(3)$ classification.
 - S. Okubo, "Note on unitary symmetry in strong interactions," *Progress of Theoretical Physics* **27** (1962) 949–966, for the mass formula and the Okubo basis.
 - S. Okubo, *Introduction to Octonion and Other Non-Associative Algebras in Physics*, and *Lecture Notes in Physics* **94**, for the Okubo operators and the Zeeman analogy.
 - M. Gell-Mann and Y. Ne'eman, *The Eightfold Way* (Benjamin, 1964), for the octets, the decuplet and the mass relations.

@@ -107,7 +107,7 @@ Why the pairing is the content of the constraint. The middle piece of the Proca 
 The parameter basis is not the bracket basis. As in the free polar article, the eight parameters are coordinates and the four brackets are types, and the Jacobian between them mixes the roles: the rapidity's derivative carries part of the scale bracket, the rotor's derivative part of the boost bracket. The parameter equations are the same equations in a rotated basis, and the brackets remain the form in which each object has one type and one partner.
 
 What the coupling adds. The connection is central, so it passes through $\tilde A_\Phi^{-1}$ and adds $\frac{2\pi iϙ}{h}A_\Phi$ to the logarithmic derivative, with a real temporal slot and central imaginary spatial slots. It therefore reaches the scale and phase brackets, leaves the boost and rotor brackets alone, and — entering as a shift and not as a factor — does not change the type pairing that produces the constraint.
-## The Constraints the Action Imposes: The Gauge Transformation in the Chart
+## The Constraints the Action Imposes: The Local Transformation in the Chart
 
 The exact statement. For a constant central unit $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$,
 
@@ -213,7 +213,7 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 | $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, phase, boost, rotor |
 | $q=(\ln \varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r})$ | The eight parameters |
 | $\varrho>0$ | Scale; $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ |
-| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the gauge coordinate |
+| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the redundant coordinate |
 | $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})=R\,\varrho^{2}$, $R(0)=1$ | The mass term in the chart; $R$ the frame's scalar |
 | $(G^{-1})_{ab}(q)$ | The inverse of the chart's metric; the coefficient of the kinetic form |
 | $\tilde A_\Phi$, $A_{\imath}$ | The connection and its central components |
@@ -233,7 +233,7 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 - [The Lagrangian and the Coupled Dirac Equation in Polar Variables](the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html), for the first-order companion and its constrained system.
 - [The Lagrangian and the Schrödinger Equation in Polar Variables](the-lagrangian-and-the-schrodinger-equation-in-polar-variables.html), for the standard Madelung case and the contrast.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its parameter count.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
 - [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html), for the frame's brackets as fluid variables.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor, the frame and the sigma-model reading of the kinetic term.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the standard coupled massive vector field.

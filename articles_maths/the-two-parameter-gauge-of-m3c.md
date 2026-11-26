@@ -86,7 +86,7 @@ $$
 
 which is the inverse of the transformation of the coordinates. The two readings are the two sides of the same change of frame: the frame is rescaled, or the element is conjugated. The gauge-invariant statements below are the same in either reading.
 
-## The Gauge-Invariant Combinations
+## The Invariant Combinations
 
 **The diagonal is invariant.** The three numbers $\alpha_{11},\alpha_{22},\alpha_{33}$ are unchanged. They are the values of the three idempotents on $A$:
 

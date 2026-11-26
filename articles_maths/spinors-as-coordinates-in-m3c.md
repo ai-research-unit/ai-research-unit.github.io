@@ -32,7 +32,7 @@ so the column is multiplied by the matrix $A$. The column is the space on which 
 
 **The spinor is not the whole element.** The element is the full array, the sum of its $3$ columns. A column is the coordinate vector of the component of $X$ in the left space $M_3P_l$; that component is a matrix, but the column itself is not closed under multiplication.
 
-## The Gauge
+## The Indefinite Form
 
 **Proposition.** Under $E'_{kl}=t_kt_l^{-1}E_{kl}$ the coordinates transform by $X'_{kl}=t_k^{-1}t_lX_{kl}$, so after multiplying the column by $t_l^{-1}$ the entries transform by
 

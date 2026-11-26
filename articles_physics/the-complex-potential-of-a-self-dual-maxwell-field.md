@@ -48,7 +48,7 @@ $$
 \frac{\partial \Pi}{\partial h_t}+\vec\nabla_\Phi\cdot\vec C=0 .
 $$
 
-**The Cartesian split of the entries.** The four matrix entries are the covariant components in the null frame, and the passage to a Cartesian potential is fixed by the two components that were gauged away: $C_u=\Pi+C_z=0$ and $C_w=C_x-iC_y=0$ give
+**The Cartesian split of the entries.** The four matrix entries are the covariant components in the null frame, and the passage to a Cartesian potential is fixed by the two components that were removed by a choice of representative: $C_u=\Pi+C_z=0$ and $C_w=C_x-iC_y=0$ give
 
 $$
 \Pi=\tfrac12C_v,\qquad
@@ -87,7 +87,7 @@ $$
 
 which is the form in which the fixing condition joins the matrix picture.
 
-## The Two-Component Gauge and the Reduced System
+## The Two-Component Fixing Condition and the Reduced System
 
 In these coordinates the self-duality condition plus the Lorentz gauge admits a gauge in which only two components survive, $C_{\bar w}$ and $C_v$, the other two, $C_u$ and $C_w$, being zero. The removal is the source's: the residual redundancy of the system is $C_{\imath}\mapsto C_{\imath}+\partial\digamma_{\mathrm{gau}}/\partial x_{\imath}$ with $\Box_\Phi\digamma_{\mathrm{gau}}=0$, which preserves the Lorentz gauge, and a parameter with that freedom can always be chosen to satisfy $C_u=\partial\digamma_{\mathrm{gau}}/\partial u$, $C_w=\partial\digamma_{\mathrm{gau}}/\partial\bar w$, because the compatibility condition $\partial C_u/\partial \bar w=\partial C_w/\partial u$ for those two equations holds identically on the equations of motion. Subtraction then removes both components at once.
 
@@ -129,7 +129,7 @@ E_{+}:=E_{1}+iE_{2}=\frac{\partial C_{\bar w}}{\partial u},
 E_{-}:=E_{1}-iE_{2}=-\frac{\partial C_v}{\partial \bar w} ,
 $$
 
-that is, $E_{3}=-\partial^2G/\partial u\,\partial\bar w$, $E_{+}=\partial^2G/\partial u^2$, $E_{-}=-\partial^2G/\partial\bar w^2$, and the symmetric triple $(E_{+},E_{3},E_{-})$ is the spinor of the field strength. The spinorial content is the reason the reduction works: a duality-pure two-form is a symmetric two-spinor, three complex components, and after the gauge is fixed the potential has exactly three, which the single scalar supplies through its second derivatives.
+that is, $E_{3}=-\partial^2G/\partial u\,\partial\bar w$, $E_{+}=\partial^2G/\partial u^2$, $E_{-}=-\partial^2G/\partial\bar w^2$, and the symmetric triple $(E_{+},E_{3},E_{-})$ is the spinor of the field strength. The spinorial content is the reason the reduction works: a duality-pure two-form is a symmetric two-spinor, three complex components, and after the representative is fixed the potential has exactly three, which the single scalar supplies through its second derivatives.
 
 The assignment of the three second derivatives to the three components is the source's, and it is the *contravariant* reading of the spatial potential that makes it come out; with the covariant entries used here the first of the three reads $\partial C_v/\partial v$ instead of $-\partial C_v/\partial u$, and the two agree for static fields. What does not depend on the reading is the count: three components, one scalar, second derivatives.
 

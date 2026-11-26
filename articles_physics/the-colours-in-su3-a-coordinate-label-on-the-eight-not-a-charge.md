@@ -4,7 +4,7 @@
 
 **The question.** Below $M_C$ the corpus writes $r\bar g$ on eight gluons and calls them colours. **What are they, and why eight?**
 
-**The answer.** The labels are still coordinates, and for the first time they are coordinates of a group that is gauged. **Eight is $3^{2}-1$, the rank is two, and the ninth colour–anticolour slot is not a missing gluon.** It is the $B-L$ vector, and this model already contains it.
+**The answer.** The labels are still coordinates, and for the first time they are coordinates of a group that is made local. **Eight is $3^{2}-1$, the rank is two, and the ninth colour–anticolour slot is not a missing gluon.** It is the $B-L$ vector, and this model already contains it.
 
 **What this article establishes.** Why the residual group is $\mathrm{SU}(3)$ and not $\mathrm{SO}(3)$. The nine slots and the eight. The two diagonal gluons and the basis among them. That the excluded singlet is occupied, by the corner. And the four facts that are measurable against the labels that are not.
 
@@ -184,7 +184,7 @@ $$
 
 **A field carrying $r\bar g$ in one gauge carries a combination of all eight in another.** The label is a coordinate on the adjoint, and **a coordinate that a symmetry rotates away is not a property of a particle.**
 
-**What changed at $M_C$ is not the status of the label. It is the status of the group.** Above the transition the coordinates were coordinates of a basis with no factor attached; below it they are coordinates of a factor that is gauged and unbroken. **The map became a map of something.**
+**What changed at $M_C$ is not the status of the label. It is the status of the group.** Above the transition the coordinates were coordinates of a basis with no factor attached; below it they are coordinates of a factor that is made local and unbroken. **The map became a map of something.**
 
 **And that is why QCD may talk about colour at all.** The coordinate is conventional; the structure it coordinatises is measured. **The invariants are the measurable part**, and each is computed from the dimension and the rank with no reference to a letter:
 
@@ -273,7 +273,7 @@ $$
 
 **The two diagonal gluons are a space, not a pair.** The Cartan directions inside the colour block are exactly those with zero lepton-line entry, so the space is two-dimensional and that is invariant; the pair $(d_{2},d_{3})$ is a non-orthogonal basis of it, with $\operatorname{tr}(d_{2}^{\dagger}d_{3})=-1$ and Gram eigenvalues $1$ and $3$. **$d_{2}$ is exactly $i\lambda_{3}^{\mathrm{emb}}$ and the norms agree term by term**, so the conventions differ by a shear and not by a rescaling — a fact that misleads anyone who checks only the first entry.
 
-**The labels are coordinates below $M_C$ as they were above it.** What changed is that the group is now gauged, so the invariants computed from the coordinates are measurable. **The map became a map of something, and the territory is the group.**
+**The labels are coordinates below $M_C$ as they were above it.** What changed is that the group is now made local, so the invariants computed from the coordinates are measurable. **The map became a map of something, and the territory is the group.**
 
 ## Summary of Notation
 

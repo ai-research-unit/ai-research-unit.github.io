@@ -58,7 +58,7 @@ $$
 | $\bar\xi A\xi$ for $\xi\in\bar{\mathbf4}$ | $15$ | the conjugate matrices, the same count |
 | distinct Lorentz structures | $1$ | $\gamma_{\imath}$, no $\sigma_{\imath\jmath}$ at dimension four |
 
-**At dimension four there is no Pauli term and no dipole coupling**, because $\bar\xi\sigma_{\imath\jmath}F_{\imath\jmath}\xi$ has dimension five. **The kinetic term is therefore minimal and the gauge vertex is fixed by the representation alone**, with no free coefficient to adjust.
+**At dimension four there is no Pauli term and no dipole coupling**, because $\bar\xi\sigma_{\imath\jmath}F_{\imath\jmath}\xi$ has dimension five. **The kinetic term is therefore minimal and the connection vertex is fixed by the representation alone**, with no free coefficient to adjust.
 
 ## The Yukawa Operator
 
@@ -130,7 +130,7 @@ $$
 | --- | --- | --- |
 | the Weyl count | $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$ | $16$ |
 | the state count | $2$ per Weyl | $32$ |
-| the gauge vertices per representation | one per generator per field | $15$ |
+| the connection vertices per representation | one per generator per field | $15$ |
 | Lorentz structures at dimension four | $\gamma_{\imath}$ only | $1$ |
 | the Yukawa singlets | $\bar{\mathbf4}\otimes(\mathbf{15}\oplus\mathbf1)\otimes\mathbf4$ | exactly $1$, from the $\mathbf1$ |
 | the quartet's singlets | $\bar{\mathbf4}\otimes\mathbf4\otimes\mathbf4$ | $0$ |

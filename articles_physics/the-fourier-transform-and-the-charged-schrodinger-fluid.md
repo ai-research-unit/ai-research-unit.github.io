@@ -113,7 +113,7 @@ The denial. Every object is an element of $\mathbb{B}$ or a coefficient of one, 
 
 ## Open Questions
 
-1. Whether the vorticity has a spectral measure. The curvature is invariant and the mode count is not. Whether some spectral quantity — the second moment of the occupied modes, say — is a function of the curvature alone and not of the gauge is not settled, and the linear case suggests it may be, since its $1/\Delta k$ envelope is the transform of a constant field strength.
+1. Whether the vorticity has a spectral measure. The curvature is invariant and the mode count is not. Whether some spectral quantity — the second moment of the occupied modes, say — is a function of the curvature alone and not of the fixing condition is not settled, and the linear case suggests it may be, since its $1/\Delta k$ envelope is the transform of a constant field strength.
 
 2. A mode in a uniform field. A uniform $\vec B$ admits no mode, so the fluid's rotation in a uniform field is not analysable mode by mode at all. Whether the Landau levels of the standard theory are the right image of that statement in this chart, and whether the fluid's velocity is the drift or the gyration, is not established here and the article claims nothing about it.
 

@@ -20,7 +20,7 @@ $$
 
 which is Newton's law with the magnetic force, with the relativistic relation between momentum and velocity. Two identities carry it: the mixed derivatives of the action commute, and the mechanical four-momentum is a gradient minus a potential.
 
-The criterion must be written on the mechanical momentum, and here the argument is the free one. $\vec\pi=\vec\nabla_\Phi S-q\vec A$ is invariant and $\vec\nabla_\Phi S$ is not, so a parameter defined on the canonical gradient changes value under a local transformation. A limit whose smallness depends on the gauge is not a statement about the field.
+The criterion must be written on the mechanical momentum, and here the argument is the free one. $\vec\pi=\vec\nabla_\Phi S-q\vec A$ is invariant and $\vec\nabla_\Phi S$ is not, so a parameter defined on the canonical gradient changes value under a local transformation. A limit whose smallness depends on the fixing condition is not a statement about the field.
 
 The second parameter is the free one. $\delta=1/(2\pi\nu_mL)$ does not involve the connection, because the Compton wavelength is the field's and not the potential's. The coupling changes neither parameter.
 
@@ -71,7 +71,7 @@ The quantum potential is the free one, and the parent's reason is one line: it i
 
 The parameter. $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\frac{2\pi \lvert\vec\pi\rvert}{h}$ and $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The covariant derivative differentiates the phase's gradient minus the potential's contribution, so that combination is what is large and what the scale's gradient is measured against.
 
-Why the canonical gradient fails. Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi q\Gamma}{h}$ the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$, while $\vec A$ shifts by $\vec\nabla_\Phi\Gamma$ and the two cancel inside $\vec\pi$. A criterion on the canonical gradient would be representative-dependent, and a limit whose validity depends on the gauge is a statement about the chart and not about the field.
+Why the canonical gradient fails. Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\frac{2\pi q\Gamma}{h}$ the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$, while $\vec A$ shifts by $\vec\nabla_\Phi\Gamma$ and the two cancel inside $\vec\pi$. A criterion on the canonical gradient would be representative-dependent, and a limit whose validity depends on the fixing condition is a statement about the chart and not about the field.
 
 The order table is the free table with one substitution.
 
@@ -237,7 +237,7 @@ Order two is the free quantum potential, with the free size in both denominators
 
 ## Further Reading
 
-- [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), the parent: the exact factorisation, the pair, the gauge action on the chart and the mechanical current.
+- [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), the parent: the exact factorisation, the pair, the connection action on the chart and the mechanical current.
 - [The Klein–Gordon Equation in the Non-Quantum Limit](the-klein-gordon-equation-in-the-non-quantum-limit.html), the free companion: the two parameters and the two denominators.
 - [The Lagrangian and the Coupled Klein–Gordon Equation in the Non-Quantum Limit](the-lagrangian-and-the-coupled-klein-gordon-equation-in-the-non-quantum-limit.html), the same limit on the parent's action.
 - [The Coupled Schrödinger Equation in the Non-Quantum Limit](the-coupled-schrodinger-equation-in-the-non-quantum-limit.html), the non-relativistic companion, where the two vorticities coincide.

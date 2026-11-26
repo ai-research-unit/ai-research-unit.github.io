@@ -16,7 +16,7 @@ The companion reads the same transform in the word. *The Fourier Transform and t
 
 The denial is stated once. The transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued functions. It does not carry a material-sector field to an informational-sector field, and no display below claims that a coefficient's sector is a function's sector. The sector statements are statements about one element that multiplies, at one wave number or at one event.
 
-There is no new prediction and no new solution. The equation, its gauge law, its constant-potential solutions and its Larmor rate are the parent's. What the transform adds is the order of the coupling in the momentum-space reading and the reason that order is an invariant notion at its floor.
+There is no new prediction and no new solution. The equation, its transformation law, its constant-potential solutions and its Larmor rate are the parent's. What the transform adds is the order of the coupling in the momentum-space reading and the reason that order is an invariant notion at its floor.
 
 ## Conventions
 
@@ -116,17 +116,17 @@ It does not say that a non-constant coupling is a small correction, nor that the
 
 It does not extend to a position-dependent symbol. With a general $\tilde A_\Phi$ the momentum-space operator is a convolution, its kernel is the transform of the connection, and the notion of a symbol at a wave number is gone. The convolution is still self-adjoint for the Hermitian pairing, because the position-space multiplier is Hermitian at each event: on sixteen modes with a real temporal multiplier the matrix satisfied $\lVert C^{\dagger}-C\rVert/\lVert C\rVert=7.8\times10^{-17}$, while a non-Hermitian multiplier of the same size gave $1.3\times10^{0}$. Self-adjointness survives the loss of a symbol; locality does not.
 
-## The Gauge Law in Momentum Space
+## The Transformation Law in Momentum Space
 
-The gauge phase is $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ and the field transforms by a central phase. The parent's law is $\tilde\Xi_2=\digamma_{\mathrm{gau}}\tilde\Xi$ with $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$ and $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ for real $\Gamma$. The multiplier $\digamma_{\mathrm{gau}}$ is central and of unit modulus, so the transform sees it as one scalar function and nothing else.
+The central phase is $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ and the field transforms by a central phase. The parent's law is $\tilde\Xi_2=\digamma_{\mathrm{gau}}\tilde\Xi$ with $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$ and $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ for real $\Gamma$. The multiplier $\digamma_{\mathrm{gau}}$ is central and of unit modulus, so the transform sees it as one scalar function and nothing else.
 
-Finding 4. Local invariance is a translation in momentum space when the gauge phase is linear, and a phase is linear in the position exactly when its gradient is constant. For a linear $\theta_{\mathrm{gau}}$ the multiplication is a translation of the support by $\vec\nabla_\Phi\theta_{\mathrm{gau}}$, and the mode count is preserved. For a non-linear $\theta_{\mathrm{gau}}$ the multiplication is a convolution, and the mode count is not preserved.
+Finding 4. Local invariance is a translation in momentum space when the central phase is linear, and a phase is linear in the position exactly when its gradient is constant. For a linear $\theta_{\mathrm{gau}}$ the multiplication is a translation of the support by $\vec\nabla_\Phi\theta_{\mathrm{gau}}$, and the mode count is preserved. For a non-linear $\theta_{\mathrm{gau}}$ the multiplication is a convolution, and the mode count is not preserved.
 
 The linear case, with a count and a residual. One mode at index $11$ of $128$, multiplied by $\exp(i\theta_{\mathrm{gau}})$ with $\theta_{\mathrm{gau}}=\frac{2\pi ϙ}{h}\Gamma$ and $\Gamma$ linear, came back as one mode at index $24$ for a gauge gradient of thirteen modes and at index $40$ for one of twenty-nine. The residuals against the exact translated spectrum were $4.3\times10^{-15}$ and $1.9\times10^{-15}$ of the peak, and the occupied count was one of one hundred and twenty-eight in both cases.
 
-The non-linear case, with the same discipline. One mode multiplied by a quadratic gauge phase came back occupying $128$ of $128$ modes, with the largest single coefficient carrying $0.465$ of the total weight. No translation reproduces that spectrum, and the count is the check: a translation cannot change the number of occupied modes, and the number changed from one to all. **The qualification is therefore not decoration**: local invariance of the equation holds for every $\Gamma$, while the description of it as a translation holds only for a linear $\Gamma$.
+The non-linear case, with the same discipline. One mode multiplied by a quadratic central phase came back occupying $128$ of $128$ modes, with the largest single coefficient carrying $0.465$ of the total weight. No translation reproduces that spectrum, and the count is the check: a translation cannot change the number of occupied modes, and the number changed from one to all. **The qualification is therefore not decoration**: local invariance of the equation holds for every $\Gamma$, while the description of it as a translation holds only for a linear $\Gamma$.
 
-What the translation buys. For a linear gauge phase the covariant wave number is the canonical one shifted by a constant, the support moves rigidly, and every statement about the spectrum that depends on shape is unchanged. That is why the constant-potential case of the parent is solvable in closed form: the gauge that removes the potential is a translation, and a translation acts on a plane wave by multiplication.
+What the translation buys. For a linear central phase the covariant wave number is the canonical one shifted by a constant, the support moves rigidly, and every statement about the spectrum that depends on shape is unchanged. That is why the constant-potential case of the parent is solvable in closed form: the gauge that removes the potential is a translation, and a translation acts on a plane wave by multiplication.
 
 ## The Shift Translates and Cannot Resize
 
@@ -160,7 +160,7 @@ The companion's question is different, and this article does not answer it. *The
 
 ## Open Questions
 
-One question is left open, and it is about the operator setting. Whether the ladder survives when the symbol is operator-valued — that is, whether a covariant derivative with a position-dependent connection has a notion of order invariant under the gauge group rather than under a chosen gauge — is not settled here. The floor of the ladder is invariant, and the question is whether anything above the floor is. **The question is well posed because the object it asks about exists**: the convolution of §*When the Coupling Is a Multiplier* is a bounded operator on the mode space for a bounded connection, its kernel is the transform of the connection, and the order of a convolution is the decay of that kernel. Whether the decay has a gauge-invariant meaning is a question about the kernel and not about the transform, and it is not answered here.
+One question is left open, and it is about the operator setting. Whether the ladder survives when the symbol is operator-valued — that is, whether a covariant derivative with a position-dependent connection has a notion of order invariant under the symmetry group rather than under a chosen gauge — is not settled here. The floor of the ladder is invariant, and the question is whether anything above the floor is. **The question is well posed because the object it asks about exists**: the convolution of §*When the Coupling Is a Multiplier* is a bounded operator on the mode space for a bounded connection, its kernel is the transform of the connection, and the order of a convolution is the decay of that kernel. Whether the decay has an invariant meaning is a question about the kernel and not about the transform, and it is not answered here.
 
 ## Summary
 
@@ -168,7 +168,7 @@ In momentum space the coupled Dirac operator is the sum of a multiplier and the 
 
 The ladder of orders is the article's finding. A profile of degree $d$ gives an operator of order $d$: the linear bench fitted to $1.38\times10^{-16}$ with order one and failed by $4.13\times10^{-1}$ with order zero, the quadratic bench fitted to $2.35\times10^{-16}$ with order two and failed by $1.99\times10^{-1}$ with order one. The linear bench is the first rung that no gauge can remove, because a linear connection with a constant field strength is not a gradient, and its curvature was $0.9$ against $0.0$ for a constant connection.
 
-The shift of the wave number is a translation. At constant $\tilde A_\Phi$ the norm is $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'{}^{2}/\frac{h^{2}}{4\pi^{2}}$, exact over fifty draws, while the additive form of the same quantity deviated by up to $4.2$. Local invariance is a translation in momentum space when the gauge phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ is linear — one mode in, one mode out, residual $4.3\times10^{-15}$ — and a convolution when it is not, where one mode became one hundred and twenty-eight.
+The shift of the wave number is a translation. At constant $\tilde A_\Phi$ the norm is $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'{}^{2}/\frac{h^{2}}{4\pi^{2}}$, exact over fifty draws, while the additive form of the same quantity deviated by up to $4.2$. Local invariance is a translation in momentum space when the central phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ is linear — one mode in, one mode out, residual $4.3\times10^{-15}$ — and a convolution when it is not, where one mode became one hundred and twenty-eight.
 
 ## Summary of Notation
 
@@ -181,18 +181,18 @@ The shift of the wave number is a translation. At constant $\tilde A_\Phi$ the n
 | $p'=h\,\tilde\Upsilon_{\Phi,\mathrm{gco}}$ | The kinetic four-momentum |
 | $\langle 2\pi i\tilde\Upsilon_{\Phi,\mathrm{gco}}\rangle_\natural=p'{}^{2}/\frac{h^{2}}{4\pi^{2}}$ | The norm of the shifted symbol; the interval at the shifted argument |
 | $d$ | The degree of the connection's profile; the order of its momentum-space operator |
-| $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ | The gauge angle |
+| $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ | The connection angle |
 | $\mathcal{F}[fg]=\mathcal{F}[f]*\mathcal{F}[g]$ | The convolution theorem; cited from *Biquaternion Continuous Harmonic Analysis* |
 
 ## Further Reading
 
-- *The Coupled Dirac Equation in Biquaternionic Form*, for the covariant derivative, the gauge law, the anti-Hermitian writing of the connection and the constant-potential solutions.
+- *The Coupled Dirac Equation in Biquaternionic Form*, for the covariant derivative, the transformation law, the anti-Hermitian writing of the connection and the constant-potential solutions.
 - *The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables*, for the same transform read in the word and for the count of mixed modes.
 - *The Fourier Transform and the Dirac Equation in Biquaternionic Form*, for the free symbol, its Hermiticity and the light cone as the idempotent variety.
 - *The Lagrangian and the Dirac Equation in Momentum Space*, for the action's momentum-space quadratic form and the zero-pole relation.
 - *Derivatives, Fields and Transforms*, for the transform, its kernel and the symbol rule.
 - *Biquaternion Continuous Harmonic Analysis*, for the convolution theorem and its central-kernel hypothesis.
-- *The Gauge Principle in Biquaternionic Form*, for the localization of the central phase and the sign of the coupling.
+- *The Minimal Coupling in Biquaternionic Form*, for the localization of the central phase and the sign of the coupling.
 - *Wave–Particle Duality and the Fourier Transform*, for the transform as a change of description.
 - R. N. Bracewell, *The Fourier Transform and Its Applications* (McGraw-Hill, 3rd ed., 1999), for the convolution theorem, the derivative rule and the order of a convolution.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), Chapter 2, for the minimal substitution and its momentum-space reading in the standard language.

@@ -14,7 +14,7 @@
 
 **What exists.** One free action and sixteen coupled ones.
 
-- [The Lagrangian and the Electromagnetic Field](the-lagrangian-and-the-electromagnetic-field.html) — the free action, its sign, its reality, and Gauss's law as a constraint rather than a gauge choice.
+- [The Lagrangian and the Electromagnetic Field](the-lagrangian-and-the-electromagnetic-field.html) — the free action, its sign, its reality, and Gauss's law as a constraint rather than a choice of representative.
 - [The Lagrangian and the Coupled Klein–Gordon Equation](the-lagrangian-and-the-coupled-klein-gordon-equation.html) — minimal coupling for the scalar; the two equations cannot contradict because the current is conserved.
 - [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html) — minimal coupling for the spinor, and why the coupling is forced.
 - [The Lagrangian and the Coupled Proca Equation](the-lagrangian-and-the-coupled-proca-equation.html) — the massive vector coupled; the constraint survives and the mass does not move.
@@ -28,8 +28,8 @@
 **What exists.** One action, both of its phases, and the masses computed from it.
 
 - [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html) — the $SU(2)\times U(1)$ action, the unbroken and unitary displays, four Gauss constraints, and $m_W=gv/2$ as a product of one coupling and one vacuum value.
-- [The Electroweak Gauge Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) — the conventions the action uses.
-- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) — the breaking as a statement about a potential's minimum.
+- [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) — the conventions the action uses.
+- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) — the breaking as a statement about a potential's minimum.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html) — where the algebra stops.
 
 **What the sector's answer is.** Half-carried. The $\mathrm{U}(1)$ factor is exact in the algebra and the $SU(2)$ factor is carried only in part, which is why the action is written in components and the biquaternionic translation is claimed only where the algebra claims it. The breaking itself is classical and exact.

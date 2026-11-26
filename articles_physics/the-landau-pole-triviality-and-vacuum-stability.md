@@ -102,7 +102,7 @@ The coupling along the way, which is the more useful table.
 
 Why the pole is nevertheless worth printing. Because it is the only place in the model where a coupling's growth is *unbounded*, and because the reason is structural rather than accidental. A non-abelian coupling has a negative $b$ because the connections themselves carry charge and screen the other way; an abelian coupling has no such self-interaction, so its $\beta$ function is the sum of matter contributions alone and is necessarily positive for the matter the model contains. Section *Why Abelian Is Different* makes that exact.
 
-What the framework says about it, stated here so it is not repeated. The framework's gauge principle produces a *central* abelian factor — this is the ceiling's constructive half, recorded in [the gauge-group article](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) — and a central factor has no self-interaction by definition. So the positive $b_1$ is not a choice the framework could have made differently. That is a real structural statement and it is the strongest thing this article has to say on the subject.
+What the framework says about it, stated here so it is not repeated. The framework's minimal coupling produces a *central* abelian factor — this is the ceiling's constructive half, recorded in [the symmetry group article](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) — and a central factor has no self-interaction by definition. So the positive $b_1$ is not a choice the framework could have made differently. That is a real structural statement and it is the strongest thing this article has to say on the subject.
 
 ## Why Abelian Is Different
 
@@ -122,7 +122,7 @@ b_1=+\frac{41}{6}\ \text{(matter only)},\qquad
 b_2=-\frac{19}{6}=\underbrace{-\frac{22}{3}}_{\text{gauge+ghost}}+\underbrace{\frac{4}{3}N_g}_{\text{fermions}}+\underbrace{\frac16}_{\text{scalar}} ,
 $$
 
-where $N_g=3$. The non-abelian case has a large negative gauge term and a smaller positive matter term; the abelian case has no negative term at all.
+where $N_g=3$. The non-abelian case has a large negative connection term and a smaller positive matter term; the abelian case has no negative term at all.
 
 **Why the framework's abelian factor cannot escape this.** A central element commutes with everything, so the field strength built from a central connection has no commutator term — the curvature is $dA$ and not $dA+A\wedge A$ — and there is no self-coupling. No self-coupling means no antiscreening loop. So the sign of $b_1$ is a theorem about central factors, not a numerical accident.
 
@@ -174,7 +174,7 @@ The saturation, and the corpus's refusal. The measured $2.230\times10^{-25}$ kg 
 
 ## The Near Miss at the Planck Scale
 
-The observation. Run the three gauge couplings to the Planck scale with the one-loop coefficients above and they almost meet:
+The observation. Run the three connection couplings to the Planck scale with the one-loop coefficients above and they almost meet:
 
 | $\mu$ | $g_{\mathrm Y}$ | $g$ | $g_s$ | Spread |
 |---|---|---|---|---|
@@ -188,7 +188,7 @@ The numbers. At the Planck scale the three couplings are $0.476$, $0.504$ and $0
 
 Why this is worth a section. Because it is the strongest single hint that the Standard Model is a fragment of something larger, and because it is *quantitatively* strong: three couplings that start two orders of magnitude apart and converge to within $6\%$ at $1.6\times10^{9}$ J is not a coincidence that happens by chance. The standard reading is that a Grand Unified group completes the meeting at a scale near $1.6\times10^{6}$ J, and that the mismatch at the Planck scale is the footprint of the states that complete it.
 
-**What the framework can say, which is nothing.** [The ceiling article](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) established that no compact gauge algebra of dimension above four fits inside $\mathbb{B}$, so no Grand Unified group is available and the near miss has no completion here. This is the cleanest case in the corpus where an empirical hint points at precisely the structure the algebra forbids.
+**What the framework can say, which is nothing.** [The ceiling article](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) established that no compact algebra of dimension above four fits inside $\mathbb{B}$, so no Grand Unified group is available and the near miss has no completion here. This is the cleanest case in the corpus where an empirical hint points at precisely the structure the algebra forbids.
 
 What the near miss does not prove. That unification happens, that it happens at $1.6\times10^{6}$ J, or that a GUT exists. It says that the three couplings' trajectories converge, which is a fact about the spectrum the model happens to have. Supersymmetry changes the convergence point; a different matter content changes it too. The observation is robust; its interpretation is not.
 
@@ -210,7 +210,7 @@ The $\beta$ function, term by term, at the weak scale. With $y_t=\sqrt2\,m_t/v=0
 Why that makes the answer a precision question.
 
 - The residual is a large fraction of the largest term. $\lvert-4.18\rvert$ is $72\%$ of $\lvert-6y_t^4\rvert$, and the negative term exceeds the sum of the three positive ones by a factor $3.56$. So the sum is not a near-cancellation in the arithmetic sense — but it is a *difference*, and a $20\%$ correction to any one term changes it by $20$ to $35\%$, while the *scale* at which $\varpi_{\mathrm{cpl}}$ reaches zero depends exponentially on the sum.
-- The running of $\beta$ matters as much as $\beta$. $y_t$ falls from $0.991$ at $M_Z$ to $0.42$ at $M_{\mathrm{Pl}}$, so $-6y_t^4$ falls from $-5.81$ to $-0.19$ — a factor of $30$. $\beta_{\varpi_{\mathrm{cpl}}}$ is therefore not the weak-scale number throughout: it shrinks by an order of magnitude, and once $\varpi_{\mathrm{cpl}}$ is small the $+0.25$ gauge term is comparable to what remains of the top term. A one-loop estimate that holds $\beta$ fixed at its weak-scale value gives the wrong crossing scale by many orders of magnitude.
+- The running of $\beta$ matters as much as $\beta$. $y_t$ falls from $0.991$ at $M_Z$ to $0.42$ at $M_{\mathrm{Pl}}$, so $-6y_t^4$ falls from $-5.81$ to $-0.19$ — a factor of $30$. $\beta_{\varpi_{\mathrm{cpl}}}$ is therefore not the weak-scale number throughout: it shrinks by an order of magnitude, and once $\varpi_{\mathrm{cpl}}$ is small the $+0.25$ connection term is comparable to what remains of the top term. A one-loop estimate that holds $\beta$ fixed at its weak-scale value gives the wrong crossing scale by many orders of magnitude.
 - The scheme matters. $y_t$ is defined from the top mass, and the pole mass and the $\overline{\mathrm{MS}}$ mass differ by $\Delta m_t=1.427\times10^{-26}$ kg, which is a $5\%$ change in $y_t$ and a $20\%$ change in $y_t^4$. The instability scale is exponentially sensitive to precisely that.
 
 So the article quotes the higher-order result and labels it. The three-loop computation with $m_H=2.230\times10^{-25}$ kg and $m_t=3.079\times10^{-25}$ kg gives
@@ -381,7 +381,7 @@ The hypercharge coupling grows, because an abelian factor has no self-coupling a
 
 The quartic's growth bounds the Higgs mass from above at every cutoff: $1.344\times10^{-24}$ kg at $1.6\times10^{-7}$ J, $5.526\times10^{-25}$ kg at $1.6\times10^{-4}$ J, $2.567\times10^{-25}$ kg at the Planck scale. A larger cutoff gives a tighter bound, and at infinity the theory is free. The measured $2.230\times10^{-25}$ kg is $86.8\%$ of the Planck-scale ceiling.
 
-The three gauge couplings almost meet: $0.476$, $0.504$, $0.490$ at $M_{\mathrm{Pl}}$, a spread of $5.7\%$. They do not meet, and the framework cannot complete them, because the ceiling forbids any algebra above dimension four.
+The three connection couplings almost meet: $0.476$, $0.504$, $0.490$ at $M_{\mathrm{Pl}}$, a spread of $5.7\%$. They do not meet, and the framework cannot complete them, because the ceiling forbids any algebra above dimension four.
 
 The quartic itself turns negative, because $\beta_{\varpi_{\mathrm{cpl}}}$ is a difference of terms of order one: $-6y_t^4=-5.76$ against $+0.400+0.250+0.98$. That structure makes the answer a precision question, and the three-loop answer is $\varpi_{\mathrm{cpl}}=0$ at $1.6\times10^{1}$ J and $\varpi_{\mathrm{cpl}}(M_{\mathrm{Pl}})=-0.014$. A one-loop estimate gets the sign right and the scale wrong by orders of magnitude, which is why the corpus prints the order with the number.
 
@@ -412,7 +412,7 @@ The framework supplies one structural result — the sign of $b_1$ — one regul
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html). The exact flow equation, the regulator the algebra supplies, and the open question this article turns into a number.
 - [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $b_3=-7$ and the contrast with the abelian case.
 - [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html). The other consequence of the scalar sector's couplings, and the same discipline about what a bound means.
-- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The potential whose quartic is the subject of half this article.
+- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The potential whose quartic is the subject of half this article.
 - [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). $g_{\mathrm Y}$, $\varpi_{\mathrm{cpl}}$ and $m_H$ among the nineteen, and what kind of number each is.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Why neither a GUT nor a composite Higgs can be built here.
 - [The Path Integral in Biquaternionic Form](the-path-integral-in-biquaternionic-form.html). Why a bounce cannot be computed inside the algebra.

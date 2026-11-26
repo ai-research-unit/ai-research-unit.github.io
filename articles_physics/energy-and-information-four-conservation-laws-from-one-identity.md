@@ -173,7 +173,7 @@ The four rows are the whole thesis. The material pair and the informational pair
 
 ### Conservation Is Not Invariance
 
-The fourth column differs from row to row, and the difference separates conservation from invariance. **Conservation** means fixed by the dynamics, which is a $*$-unitary conjugation. **Invariance** means fixed by the change of frame, which is a unit-norm congruence. The two groups differ: *Norm and Pairing Conventions* keeps them apart, a boost being a unit element and not a $*$-unitary one.
+The fourth column differs from row to row, and the difference separates conservation from invariance. **Conservation** means fixed by the dynamics, which is a $*$-unitary conjugation. $*$ means fixed by the change of frame, which is a unit-norm congruence. The two groups differ: *Norm and Pairing Conventions* keeps them apart, a boost being a unit element and not a $*$-unitary one.
 
 A boost therefore fixes the quaternionic norm and moves the doubled scalar part. Applied to a four-momentum at rest, it gives the numbers below.
 

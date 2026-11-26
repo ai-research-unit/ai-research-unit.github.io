@@ -134,7 +134,7 @@ The two derivations of the plane are independent and they coincide. The parent d
 
 The fourth direction is not annihilated, and its eigenvalue is the mass. The wave number itself is an eigenvector with eigenvalue $-\nu_m^{2}$, verified to $1.1\times10^{-16}$. So the amplitude along $\nu_{\imath}$ is not removed by the operator; it is multiplied by $-\nu_m^{2}$, and the equation sets it to zero only through its coupling to the transverse part. That is what "the longitudinal mode is physical for a massive field" means in the symbol's language, and it is the exact counterpart of the massless case, where the same direction is annihilated outright.
 
-The polarisation count is read off the kernel and not off the rank. Three annihilated directions and one amplified direction, and the amplified one is the direction whose removal would leave two. The count is the kernel's dimension, and §*The Count, and the Two Ranks in the Corpus* shows that the same sentence gives two for the massless field once the gauge orbit is subtracted.
+The polarisation count is read off the kernel and not off the rank. Three annihilated directions and one amplified direction, and the amplified one is the direction whose removal would leave two. The count is the kernel's dimension, and §*The Count, and the Two Ranks in the Corpus* shows that the same sentence gives two for the massless field once the orbit is subtracted.
 
 ## The Count, and the Two Ranks in the Corpus
 

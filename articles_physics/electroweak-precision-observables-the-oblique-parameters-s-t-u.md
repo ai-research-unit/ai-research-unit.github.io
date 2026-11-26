@@ -36,7 +36,7 @@ The measured values say what a non-zero value would mean.
 | $T$ | $0.05\pm0.06$ | new states with a mass splitting inside an isospin multiplet |
 | $U$ | $0.02\pm0.06$ | new states whose custodial violation is momentum-dependent |
 
-The three are consistent with zero, and that is the sharpest statement in the sector: no new sector that couples obliquely to the gauge bosons sits at the electroweak scale. The sentence is weaker than it sounds, and §*What the Parameters Cannot See* says why.
+The three are consistent with zero, and that is the sharpest statement in the sector: no new sector that couples obliquely to the connections sits at the electroweak scale. The sentence is weaker than it sounds, and §*What the Parameters Cannot See* says why.
 
 $\rho$ appears elsewhere as the tree-level number $1$ and as the custodial invariant, and the statement "$\rho-1\approx\alpha T$" is used without the definition of $T$. Here are the definition, the count that produces it, and the numbers.
 
@@ -158,7 +158,7 @@ $$
 
 identically, so $T=0$ at tree level in the reference theory. That is not a prediction of the framework; it is the custodial symmetry of the doublet, computed from the tree-level masses and interpreted in the custodial-symmetry article.
 
-Hypercharge breaks the custodial symmetry explicitly, because it gauges one direction of $SU(2)_R$ and not the other two. The breaking is a loop effect in the reference theory and a tree-level effect for any new sector with a mass splitting inside a multiplet.
+Hypercharge breaks the custodial symmetry explicitly, because it makes one local direction of $SU(2)_R$ and not the other two. The breaking is a loop effect in the reference theory and a tree-level effect for any new sector with a mass splitting inside a multiplet.
 
 Five kinds of sector sit in this classification, and only one silence in it comes from degeneracy.
 
@@ -349,10 +349,10 @@ The framework supplies the transversality of the self-energy through the fixing 
 
 ## Further Reading
 
-- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The tree-level masses and $\rho=1$ that the subtraction of this article refers to.
+- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The tree-level masses and $\rho=1$ that the subtraction of this article refers to.
 - [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-and-the-three-neutral-states.html). The three angles and the scheme discipline that §*The Scheme, Stated Once* repeats.
-- [Gauge Fixing in the Electroweak Theory: $R_\xi$ Gauges, Ghosts and the Goldstone Equivalence Theorem](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html). The projectors $P$ and $L$ and the Ward identity that force the self-energy to be transverse.
-- [Custodial Symmetry and the Rho Parameter: From Accidental to Gauged](custodial-symmetry-and-the-rho-parameter.html). The group-theoretic content of the custodial relation, and the earlier use of $\alpha T\approx\rho-1$.
+- [Fixing the Representative in the Electroweak Theory: $R_\xi$ Conditions, Ghosts and the Goldstone Equivalence Theorem](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html). The projectors $P$ and $L$ and the Ward identity that force the self-energy to be transverse.
+- [Custodial Symmetry and the Rho Parameter: From Accidental to Local](custodial-symmetry-and-the-rho-parameter.html). The group-theoretic content of the custodial relation, and the earlier use of $\alpha T\approx\rho-1$.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The parameter table and the scheme column that $S$, $T$ and $U$ are not in.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The sign rule that puts a corpus action beside a standard one.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). The classification that the last section uses.

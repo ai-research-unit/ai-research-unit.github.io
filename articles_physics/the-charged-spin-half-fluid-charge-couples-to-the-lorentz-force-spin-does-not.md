@@ -339,7 +339,7 @@ The spin direction is invariant and coupling-blind, and the Larmor precession is
 - [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html), for the closure the charge does not supply.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the composition of the rotor's rate with the frame's transport.
 - [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html), for the rank hierarchy the vorticity proper sits in.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the central connection and the curvature.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the central connection and the curvature.
 - [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), the two companions.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the Lorentz group's rotor parametrisation.
 - Ingo Kirsch and Dirk Kreimer, *Spin Hydrodynamics* (lecture notes), for the Weyssenhoff–Raabe stress and the Frenkel condition in their relativistic form.

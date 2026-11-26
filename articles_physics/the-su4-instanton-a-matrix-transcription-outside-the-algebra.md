@@ -96,7 +96,7 @@ $$
 
 **The orientation count is $11$ and not $15$, and the difference is what the instanton does not use.** The count itself is the standard $4Nk$ at $k=1$, and the five removed are the four positions and the size. **The remaining eleven are not one coset**: the embedded $\mathrm{SU}(2)$ has stabiliser $\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ in $\mathrm{SU}(4)$ — dimension $3+3+1=7$ — so its orbit has dimension $15-7=8$, and the other three are the rotations of the instanton inside its own $\mathrm{SU}(2)$. **$8+3=11$, and $4+1+11=16$**, which is the table.
 
-**The instanton does not use all fifteen generators.** Its field strength lies in an $\mathrm{su}(2)$ subalgebra; **the connection can be brought to a gauge in which only three generators appear, and that is a choice of representative rather than a property of the solution** — in another gauge all fifteen components of $A_{\imath}$ can be nonzero while $F_{\imath\jmath}$ stays inside the $\mathrm{su}(2)$. **That is not a defect of the solution but its construction**, and it is worth stating because it bears on the article's main point: **the object that requires fifteen generators to be written at all uses three of them at a time.**
+**The instanton does not use all fifteen generators.** Its field strength lies in an $\mathrm{su}(2)$ subalgebra; **the connection can be brought to a gauge in which only three generators appear, and that is a choice of representative rather than a property of the solution** — in another fixing condition all fifteen components of $A_{\imath}$ can be nonzero while $F_{\imath\jmath}$ stays inside the $\mathrm{su}(2)$. **That is not a defect of the solution but its construction**, and it is worth stating because it bears on the article's main point: **the object that requires fifteen generators to be written at all uses three of them at a time.**
 
 **The embedding is a choice, and the choice is not unique.** $\mathrm{SU}(4)$ has more than one conjugacy class of $\mathrm{SU}(2)$ subgroups, distinguished by how the $\mathbf4$ decomposes: $\mathbf2\oplus\mathbf1\oplus\mathbf1$, $\mathbf3\oplus\mathbf1$, $\mathbf2\oplus\mathbf2$, and the irreducible $\mathbf4$ of the principal embedding. **The standard one is the block embedding $\mathbf2\oplus\mathbf1\oplus\mathbf1$, which is the most reducible and not the maximal one** — the principal embedding is what "maximal" would name — and the others are not computed here. **The action and the topological charge are the same for all of them**, because both know only the winding number; **the moduli count and the fluctuation spectrum are not**, and the table above is the block embedding's.
 
@@ -125,7 +125,7 @@ $$
 
 **Two anomalies are usually run together here, and only the second one concerns this term.**
 
-- *The gauge anomaly.* The triangle of three gauge currents vanishes for this content, because $\mathbf4$ and $\bar{\mathbf4}$ contribute oppositely and appear in equal number: $2A(\mathbf4)+2A(\bar{\mathbf4})=0$. **That is what makes the theory consistent**, and it is what *The $\mathrm{SU}(4)$ Model* proves by counting.
+- *The anomaly.* The triangle of three fixing condition currents vanishes for this content, because $\mathbf4$ and $\bar{\mathbf4}$ contribute oppositely and appear in equal number: $2A(\mathbf4)+2A(\bar{\mathbf4})=0$. **That is what makes the theory consistent**, and it is what *The $\mathrm{SU}(4)$ Model* proves by counting.
 - *The axial anomaly.* The divergence of the axial current is proportional to $(g_4^{2}/16\pi^{2})\operatorname{tr}(F\tilde F)\sum_{f}2T(R_{f})$, **and every term in that sum is positive.** The two chiralities of a Dirac field add here instead of cancelling, so the coefficient is eight times a single fundamental Dirac field's, and it is not zero.
 
 **So a chiral rotation does shift $\theta_4$, and above $M_C$ the shift costs nothing.** The sixteen are massless there: no Yukawa, because $\langle\Xi\rangle=0$, and no mass term, because the model sets $m=0$. A rotation that multiplies the $\mathbf4$ by $e^{i\alpha}$ and the $\bar{\mathbf4}$ by $e^{-i\alpha}$ then changes nothing in the Lagrangian except $\theta_4\to\theta_4+c\alpha$ with $c\ne0$, and $\alpha$ can be chosen to carry $\theta_4$ to zero. **Above $M_C$, then, $\theta_4$ is a coefficient of the Lagrangian and not a parameter of the phase.** The invariant is $\bar\theta_4=\theta_4+\arg\det m$, and setting $m=0$ fixes $\bar\theta_4$ at zero.
@@ -148,7 +148,7 @@ $$
 | the excited generators | an $\mathrm{su}(2)$ inside $\mathrm{su}(4)$ | $3$ of $15$, in one gauge |
 | the size cutoff | the phase's end | $\rho\lesssim1/M_C$ |
 | the $\theta_4$ period | $e^{2\pi i n}=1$ for integer $n$ | $2\pi$ |
-| the gauge anomaly | $2A(\mathbf4)+2A(\bar{\mathbf4})$ | $0$ |
+| the anomaly | $2A(\mathbf4)+2A(\bar{\mathbf4})$ | $0$ |
 | the axial coefficient | one per Weyl pair, all positive | $8$, not $0$ |
 
 ## Summary
@@ -157,7 +157,7 @@ $$
 
 **Sixteen moduli, eleven of them orientation**, because the solution is an $\mathrm{SU}(2)$ inside $\mathrm{SU}(4)$ and excites three generators at a time, in the gauge that shows it. **The size modulus is cut off at $1/M_C$**, by the phase ending and not by the integral.
 
-**$\theta_4$ is free in the Lagrangian with a $2\pi$ period, and redundant above $M_C$**: the gauge anomaly cancels, the axial one does not, and massless fermions let the rotation remove the angle. **The strong-$CP$ problem is neither solved nor inherited** — $\theta_4$ is not $\bar\theta$, and the Standard Model's is another article's.
+**$\theta_4$ is free in the Lagrangian with a $2\pi$ period, and redundant above $M_C$**: the anomaly cancels, the axial one does not, and massless fermions let the rotation remove the angle. **The strong-$CP$ problem is neither solved nor inherited** — $\theta_4$ is not $\bar\theta$, and the Standard Model's is another article's.
 
 **And the whole construction is transcribed.** Winding numbers need a group with a three-sphere's worth of topology; $\mathrm{U}(2)$ has dimension four and fifteen generators do not fit in it. **The instanton is the clearest case in the corpus of a transcribed object with no derived counterpart**, and stating that is more useful than deriving a number that the algebra cannot hold.
 

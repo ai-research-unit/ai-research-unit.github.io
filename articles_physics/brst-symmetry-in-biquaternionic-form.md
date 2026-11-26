@@ -2,27 +2,27 @@
 
 ## Introduction
 
-A massless gauge field has more components than physical states, and the excess is removed by a symmetry. The companion article *Canonical Quantization of the Biquaternion Maxwell Field* removes it by the Gupta–Bleuler route: a covariant mode expansion with an indefinite metric and a subsidiary condition that selects the physical subspace. That route exhibits the physical states but leaves the gauge fixing an external input — a choice of gauge that the biquaternion algebra does not make. The present article describes the other route, the one that makes the gauge fixing itself a symmetry: the **BRST symmetry** of the gauge-fixed theory.
+A massless connection has more components than physical states, and the excess is removed by a symmetry. The companion article *Canonical Quantization of the Biquaternion Maxwell Field* removes it by the Gupta–Bleuler route: a covariant mode expansion with an indefinite metric and a subsidiary condition that selects the physical subspace. That route exhibits the physical states but leaves the choice of representative an external input — a choice of gauge that the biquaternion algebra does not make. The present article describes the other route, the one that makes the choice of representative itself a symmetry: the **BRST symmetry** of the fixed-representative theory.
 
-The BRST construction promotes the gauge parameter to an anticommuting field, the Faddeev–Popov ghost, and introduces a nilpotent odd derivation $s$ under which the gauge field, the ghost, the antighost and the Nakanishi–Lautrup auxiliary field transform. The gauge-fixed Lagrangian is $s$-exact, the physical states are the cohomology of $s$, and the unitarity of the physical subspace follows from the nilpotency. This article carries that construction into the biquaternion framework, and its interest is not in the transcription — the construction is standard — but in two facts that the transcription makes visible.
+The BRST construction promotes the parameter to an anticommuting field, the Faddeev–Popov ghost, and introduces a nilpotent odd derivation $s$ under which the connection, the ghost, the antighost and the Nakanishi–Lautrup auxiliary field transform. The fixed-representative Lagrangian is $s$-exact, the physical states are the cohomology of $s$, and the unitarity of the physical subspace follows from the nilpotency. This article carries that construction into the biquaternion framework, and its interest is not in the transcription — the construction is standard — but in two facts that the transcription makes visible.
 
 First, the **nilpotency** $s^2=0$ rests on the Jacobi identity of the algebra, and in the biquaternion framework the algebra of a simple group is realized by the commutator inside the algebra: the generators lie in the informational sector $\mathbb{B}_{\Psi}$, their brackets are the adjoint action, and the Jacobi identity is a consequence of the **associativity** of quaternion multiplication. The nilpotency is therefore not an independent axiom in the framework; it is inherited from associativity. Second, the **ghost fields cannot live in $\mathbb{B}$**: the algebra is ungraded and every element of it is even, so it has no anticommuting elements, and the BRST doublet requires the Grassmann envelope $\mathbb{B}\otimes\Lambda$. This is the same kind of statement as the Fock companion's result that the ladder algebra is not native to $\mathbb{B}$, and it is stated here in the same spirit: the algebra supplies the module and the symmetry, and the odd coordinates must be adjoined.
 
-The article is organized as follows. The gauge-fixing problem and the ghost fields are stated, and the Grassmann envelope is introduced. The BRST transformation is written for the abelian and the non-abelian cases, and the nilpotency is derived and verified. The biquaternion assignment of the fields to the two sectors is made, and the role of associativity in the Jacobi identity is isolated. The gauge-fixing fermion is constructed and the gauge-fixed Lagrangian is exhibited as BRST-exact. The ghost-number grading, the BRST charge, the cohomological characterization of physical states and the quartet mechanism are then given, and the article closes with the accounting of what is standard and what is the framework's.
+The article is organized as follows. The choice of representative problem and the ghost fields are stated, and the Grassmann envelope is introduced. The BRST transformation is written for the abelian and the non-abelian cases, and the nilpotency is derived and verified. The biquaternion assignment of the fields to the two sectors is made, and the role of associativity in the Jacobi identity is isolated. The choice of representative fermion is constructed and the fixed-representative Lagrangian is exhibited as BRST-exact. The ghost-number grading, the BRST charge, the cohomological characterization of physical states and the quartet mechanism are then given, and the article closes with the accounting of what is standard and what is the framework's.
 
 The Faddeev–Popov procedure that produces the ghost Lagrangian from the path-integral measure is the subject of the companion subcategory on connections; here the ghost terms are taken as given, and the symmetry they carry is the subject. The massive case is the control case: the Proca field of the preceding article has no redundancy, hence no ghost sector and no BRST symmetry, and the contrast is stated where it matters.
 
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the fixing the representative, the Gupta–Bleuler route, and the constraint structure whose fixing the representative the BRST construction replaces.
-- Companion article *The Gauge Principle in Biquaternionic Form*, for the local transformation, the covariant derivative, and the algebra.
-- Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the non-abelian field strength and the structure constants.
+- Companion article *The Minimal Coupling in Biquaternionic Form*, for the local transformation, the covariant derivative, and the algebra.
+- Companion article *Non-Abelian Connections in Biquaternionic Form*, for the non-abelian field strength and the structure constants.
 - Companion article *The Yang–Mills Equation in Biquaternionic Form*, for the classical non-abelian equations of motion.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the argument that the ladder algebra, like the Grassmann coordinates, is not native to $\mathbb{B}$.
 
-## The Gauge-Fixing Problem and the Ghost Fields
+## The Choice Of Representative Problem and the Ghost Fields
 
-### The Gauge-Fixed Lagrangian
+### The Fixed-representative Lagrangian
 
-The Maxwell Lagrangian $\mathcal{L}_{\mathrm{M}}=-\tfrac14\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}$ is invariant under $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, and the kinetic operator is therefore not invertible: the propagator of the companion article exists only after a gauge is chosen. The gauge is fixed by adding to the Lagrangian a term that is not invariant but whose effect on physical quantities cancels, and the modern way to write that term introduces two auxiliary fields. The first is the Nakanishi–Lautrup field $B$, a Lorentz scalar of ghost number zero; the second is the pair of Faddeev–Popov ghosts $c$ and $\bar{c}$, anticommuting Lorentz scalars of opposite ghost number. For the abelian theory the fixing the representative and ghost terms are
+The Maxwell Lagrangian $\mathcal{L}_{\mathrm{M}}=-\tfrac14\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}F_{\imath\jmath}$ is invariant under $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, and the kinetic operator is therefore not invertible: the propagator of the companion article exists only after a gauge is chosen. The representative is fixed by adding to the Lagrangian a term that is not invariant but whose effect on physical quantities cancels, and the modern way to write that term introduces two auxiliary fields. The first is the Nakanishi–Lautrup field $B$, a Lorentz scalar of ghost number zero; the second is the pair of Faddeev–Popov ghosts $c$ and $\bar{c}$, anticommuting Lorentz scalars of opposite ghost number. For the abelian theory the fixing the representative and ghost terms are
 
 $$
 \mathcal{L}_{\mathrm{gf}} = B\,\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural} + \tfrac12\zeta B^2,
@@ -32,7 +32,7 @@ $$
 
 with $\zeta$ the parameter. The field $B$ is auxiliary — its equation of motion is $B=-\zeta^{-1}\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\zeta}(\partial\cdot A)^2$ fixing the representative — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the fixing term $\sum_a B_a\sum_{\imath}\partial A_{\imath a}/\partial R_{\imath}+\tfrac12\zeta\sum_a B_aB_a$ and the ghost term $-\sum_a\bar{c}_a\sum_{\imath}\partial(D_{\imath} c)_a/\partial R_{\imath}$, with $D_{\imath} c_a=\partial/\partial R_{\imath} c_a+g\sum_{b,c}f_{abc}A_{\imath b} c_c$.
 
-The gauge-fixed Lagrangian $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$ is no longer gauge invariant — the gauge invariance has been destroyed by the gauge-fixing term — but it carries a new invariance that replaces it.
+The fixed-representative Lagrangian $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$ is no longer invariant — the local invariance has been destroyed by the choice of representative term — but it carries a new invariance that replaces it.
 
 ### The Ghosts and the Grassmann Envelope
 
@@ -151,9 +151,9 @@ The chain is worth stating in full, because it is the framework's contribution t
 3. The Jacobi identity is what makes the non-abelian BRST transformation nilpotent.
 4. Nilpotency is what makes the physical-state condition $\mathcal{Q}|\mathrm{phys}\rangle=0$ consistent and the physical subspace positive.
 
-Therefore, to the extent that the gauge algebra is realized inside the biquaternion algebra, the nilpotency of the BRST operator — and with it the consistency of the gauge-fixed quantization — is inherited from the associativity of the algebra rather than imposed. This is a genuine algebraic statement, and it is the sharpest thing the framework says about BRST symmetry. What it does not do is select which gauge algebra is realized, or fix the gauge parameter; those remain inputs.
+Therefore, to the extent that the algebra is realized inside the biquaternion algebra, the nilpotency of the BRST operator — and with it the consistency of the fixed-representative quantization — is inherited from the associativity of the algebra rather than imposed. This is a genuine algebraic statement, and it is the sharpest thing the framework says about BRST symmetry. What it does not do is select which algebra is realized, or fix the parameter; those remain inputs.
 
-## The Gauge-Fixing Fermion and the BRST-Exact Lagrangian
+## The Choice Of Representative Fermion and the BRST-Exact Lagrangian
 
 The fixing the representative and ghost terms are not merely invariant under $s$; they are $s$-exact. Define the **fixing the representative fermion**
 
@@ -179,7 +179,7 @@ $$
 \boxed{\;\mathcal{L} = \mathcal{L}_{\mathrm{gauge}} + s\tilde{Ξ}\;}.
 $$
 
-Since $\mathcal{L}_{\mathrm{gauge}}$ is gauge invariant and hence $s$-invariant (the gauge transformation is $sA_{\imath a}=(D_{\imath} c)_a$ with $c$ the ghost), the whole gauge-fixed Lagrangian is $s$-invariant, and the invariance is automatic once $s^2=0$:
+Since $\mathcal{L}_{\mathrm{gauge}}$ is invariant and hence $s$-invariant (the local transformation is $sA_{\imath a}=(D_{\imath} c)_a$ with $c$ the ghost), the whole fixed-representative Lagrangian is $s$-invariant, and the invariance is automatic once $s^2=0$:
 
 $$
 s\mathcal{L} = s\mathcal{L}_{\mathrm{gauge}} + s^2\tilde{Ξ} = 0 .
@@ -187,7 +187,7 @@ $$
 
 The non-abelian case is the same computation with the covariant derivative, $s\tilde{Ξ}=\sum_a B_a\sum_{\imath}\partial A_{\imath a}/\partial R_{\imath}+\tfrac{\zeta}{2}\sum_a B_aB_a-\sum_a\bar{c}_a\sum_{\imath}\partial(D_{\imath} c)_a/\partial R_{\imath}$, so that the ghost Lagrangian is $-\sum_a\bar{c}_a\sum_{\imath}\partial(D_{\imath} c)_a/\partial R_{\imath}$ and the fixing the representative Lagrangian is $\sum_a B_a\sum_{\imath}\partial A_{\imath a}/\partial R_{\imath}+\tfrac{\zeta}{2}\sum_a B_aB_a$.
 
-The structure of the result is the reason BRST is the natural framework for gauge theories: the entire unphysical sector — fixing term and ghosts — is the image of $s$, and the physical content is what remains after the image is quotiented out. In the biquaternion framework the statement is that $\tilde{Ξ}$ is a Grassmann-odd element of the envelope, $s\tilde{Ξ}$ is its image, and the physical states are the cohomology of $s$, as below.
+The structure of the result is the reason BRST is the natural framework for connection theories: the entire unphysical sector — fixing term and ghosts — is the image of $s$, and the physical content is what remains after the image is quotiented out. In the biquaternion framework the statement is that $\tilde{Ξ}$ is a Grassmann-odd element of the envelope, $s\tilde{Ξ}$ is its image, and the physical states are the cohomology of $s$, as below.
 
 ## Ghost Number, the BRST Charge, and Cohomology
 
@@ -223,7 +223,7 @@ $$
 s\tilde{Q}_1 = [i\mathcal{Q},\tilde{Q}_1]_\pm\;},
 $$
 
-the bracket being a commutator for even $\tilde{Q}_1$ and an anticommutator for odd $\tilde{Q}_1$. The nilpotency $\mathcal{Q}^2=0$ is the operator statement of $s^2=0$, and the charge is the generator of the symmetry in the same sense that the ordinary gauge charge generates the local transformation. In the biquaternion framework the charge is a Grassmann-odd operator on the Fock space of the gauge and ghost fields; it is not an element of $\mathbb{B}$, for the same reason the ghosts are not.
+the bracket being a commutator for even $\tilde{Q}_1$ and an anticommutator for odd $\tilde{Q}_1$. The nilpotency $\mathcal{Q}^2=0$ is the operator statement of $s^2=0$, and the charge is the generator of the symmetry in the same sense that the ordinary gauge charge generates the local transformation. In the biquaternion framework the charge is a Grassmann-odd operator on the Fock space of the connection and ghost fields; it is not an element of $\mathbb{B}$, for the same reason the ghosts are not.
 
 ### Physical States
 
@@ -265,7 +265,7 @@ The Proca field of the preceding article has no redundancy, and the BRST constru
 
 ## Summary
 
-The BRST symmetry of a gauge theory promotes the gauge parameter to an anticommuting ghost field and introduces a nilpotent odd derivation $s$ under which the gauge field, the ghost, the antighost and the Nakanishi–Lautrup field transform. The gauge-fixed Lagrangian is BRST-exact, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}$ with $\tilde{Ξ}=\bar{c}(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B)$, and the physical states are the ghost-number-zero cohomology of the BRST charge, $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$. The unphysical content — the timelike and longitudinal components of the gauge field together with the ghost pair — forms the Kugo–Ojima quartet of zero-norm states.
+The BRST symmetry of a connection theory promotes the parameter to an anticommuting ghost field and introduces a nilpotent odd derivation $s$ under which the connection, the ghost, the antighost and the Nakanishi–Lautrup field transform. The fixed-representative Lagrangian is BRST-exact, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}$ with $\tilde{Ξ}=\bar{c}(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B)$, and the physical states are the ghost-number-zero cohomology of the BRST charge, $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$. The unphysical content — the timelike and longitudinal components of the connection together with the ghost pair — forms the Kugo–Ojima quartet of zero-norm states.
 
 In the biquaternion framework two things are added to the standard transcription. The first is the natural realization of the algebra inside the algebra: the generators lie in the informational sector $\mathbb{B}_{\Psi}$, the connection in the material sector $\mathbb{B}_{\Phi}$, and the structure constants are those of the commutator. The second, and the substantive one, is the origin of nilpotency. The Jacobi identity that makes the non-abelian BRST transformation nilpotent is a consequence of the associativity of quaternion multiplication, so that $s^2=0$ is inherited from associativity and not postulated. The nilpotency was verified explicitly on the Grassmann envelope with $\mathrm{SU}(2)$ structure constants and random connections, and the Jacobi combination was verified to vanish.
 
@@ -277,7 +277,7 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$; has nilpotents, but is ungraded and has no odd elements |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational and material sectors; connection in $\mathbb{B}_{\Phi}$, generators in $\mathbb{B}_{\Psi}$ |
-| $\tilde{A}_{\Phi}=iA_te_t+\vec A\in\mathbb{B}_{\Phi}$ | Gauge potential biquaternion |
+| $\tilde{A}_{\Phi}=iA_te_t+\vec A\in\mathbb{B}_{\Phi}$ | Potential biquaternion |
 | $a,b,c$; ${\imath},\jmath$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |
 | $T_a=i\vec e_a$, $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c$ | $\mathrm{SU}(2)$ generators realized by the commutator |
 | $f_{abc}$ | Structure constants; Jacobi identity required for nilpotency |
@@ -297,10 +297,10 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 
 ## Further Reading
 
-- C. Becchi, A. Rouet and R. Stora, "Renormalization of Gauge Theories," *Annals of Physics* **98** (1976) 287–321, for the original BRST transformation and its nilpotency.
-- I. V. Tyutin, "Gauge Invariance in Field Theory and Statistical Physics in Operator Formalism" (1975), Lebedev preprint, for the independent discovery of the same symmetry.
+- C. Becchi, A. Rouet and R. Stora, "Renormalization of Connection theory," *Annals of Physics* **98** (1976) 287–321, for the original BRST transformation and its nilpotency.
+- I. V. Tyutin, "Local invariance in Field Theory and Statistical Physics in Operator Formalism" (1975), Lebedev preprint, for the independent discovery of the same symmetry.
 - L. D. Faddeev and V. N. Popov, "Feynman Diagrams for the Yang–Mills Field," *Physics Letters B* **25** (1967) 29–30, for the ghost fields and the determinant.
-- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Non-Abelian Gauge Theories and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the quartet mechanism and the cohomological construction of the physical subspace.
-- Steven Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the BRST symmetry, the gauge-fixing fermion, and the Slavnov–Taylor identities.
+- T. Kugo and I. Ojima, "Local Covariant Operator Formalism of Yang–Mills theory and Quark Confinement Problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the quartet mechanism and the cohomological construction of the physical subspace.
+- Steven Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the BRST symmetry, the choice of representative fermion, and the Slavnov–Taylor identities.
 - Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Faddeev–Popov procedure, the ghost Lagrangian, and the BRST charge.
 - Marc Henneaux and Claudio Teitelboim, *Quantization of Gauge Systems* (Princeton, 1992), for the general theory of nilpotent charges and the cohomological reduction of constrained systems.

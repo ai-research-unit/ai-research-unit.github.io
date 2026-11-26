@@ -12,7 +12,7 @@ The polar reading is a per-mode reading, and that is a statement about the word.
 
 The companion classifies the order of the operator the transform produces. *The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Form* shows that the coupling is a multiplier exactly when the connection is constant, a first-order operator for a linear connection, and a convolution otherwise. This article counts what the same operator does to the mode basis. Neither article's answer depends on the other's.
 
-The denial and the inheritance. The transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued functions; it does not carry a material-sector field to an informational-sector field. The connection is the parent's anti-Hermitian $\tilde A_\Phi$, and the coupling element $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ is that same element multiplied by the central $i$. **There is no new prediction and no new solution**: the equation, the word, the gauge law and the constant-potential solutions are the parents'.
+The denial and the inheritance. The transform carries $\mathbb{B}$-valued functions to $\mathbb{B}$-valued functions; it does not carry a material-sector field to an informational-sector field. The connection is the parent's anti-Hermitian $\tilde A_\Phi$, and the coupling element $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ is that same element multiplied by the central $i$. **There is no new prediction and no new solution**: the equation, the word, the transformation law and the constant-potential solutions are the parents'.
 
 ## Conventions
 
@@ -30,7 +30,7 @@ $$
 
 The temporal slot is fixed once and then used. Because $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the plane wave's phase carries $-\nu_t'r_t'$, the temporal slot of the symbol is $+ik_t'$. On $\tilde\Xi=\tilde\Xi_0\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}=2\pi\vec\nu_\Phi\cdot\vec r-2\pi\nu_t'r_t'$ one has $\tilde\nabla_\Phi e^{i\theta_{\mathrm{pha}}}=2\pi i\tilde\Upsilon_\Phi e^{i\theta_{\mathrm{pha}}}$, which is the polar parent's identity and the only symbol statement used below.
 
-The coupled operator and the gauge phase. The parent's covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$, the gauge law is $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with the field transforming by $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$, and the gauge angle is
+The coupled operator and the central phase. The parent's covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$, the transformation law is $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with the field transforming by $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$, and the connection angle is
 
 $$
 \theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h},
@@ -86,21 +86,21 @@ What the mixing does to the word is nothing, and that is the point. A mixed stat
 
 What the mixing does to the spectrum is a relocation of weight. Each occupied mode carries its own amplitude and its own four constants, and the coupling distributes weight across modes without changing the per-mode structure that §*The Word of a Mode* describes. That is why the polar variables can be used in a background at all: the background changes which modes are present, not what a mode is.
 
-## Gauge Freedom and the Two Settings
+## Redundancy and the Two Settings
 
 Redundancy is the only rearrangement that leaves the equation fixed. The parent's transformation moves $\tilde\Xi$ by a central phase and $\tilde A_\Phi$ by a gradient, and the pair is form-invariant. In the word it moves $\theta_{\mathrm{pha}}$ and nothing else. In momentum space it moves the support, and how it moves it depends on one property of $\Gamma$.
 
-A linear gauge phase translates. With $\theta_{\mathrm{gau}}$ linear, the multiplication is a translation of the support by $\vec\nabla_\Phi\theta_{\mathrm{gau}}$, so the count of occupied modes is preserved and each mode keeps its amplitude up to the phase. The parent's constant-potential case is exactly this: the gauge that removes a constant connection is linear in $\Gamma$, and it acts on a plane wave by multiplication.
+A linear central phase translates. With $\theta_{\mathrm{gau}}$ linear, the multiplication is a translation of the support by $\vec\nabla_\Phi\theta_{\mathrm{gau}}$, so the count of occupied modes is preserved and each mode keeps its amplitude up to the phase. The parent's constant-potential case is exactly this: the gauge that removes a constant connection is linear in $\Gamma$, and it acts on a plane wave by multiplication.
 
-A non-linear gauge phase re-superposes. With $\theta_{\mathrm{gau}}$ quadratic the multiplication is a convolution, the count of occupied modes grows, and the spectrum is rearranged rather than moved. The equation is still form-invariant, so nothing observable has changed; what has changed is the mode decomposition, which is a description.
+A non-linear central phase re-superposes. With $\theta_{\mathrm{gau}}$ quadratic the multiplication is a convolution, the count of occupied modes grows, and the spectrum is rearranged rather than moved. The equation is still form-invariant, so nothing observable has changed; what has changed is the mode decomposition, which is a description.
 
-**The invariant object is the curvature, and it is what decides which case one is in.** A connection that is a gradient has zero field strength and can be gauged to zero, hence to a constant, hence to a multiplier. A connection with nonzero field strength cannot be gauged away in any $\Gamma$, and the mixing it produces is physical in the only sense the equation has.
+**The invariant object is the curvature, and it is what decides which case one is in.** A connection that is a gradient has zero field strength and can be set to zero by a choice of representative, hence to a constant, hence to a multiplier. A connection with nonzero field strength cannot be removed by a choice of representative in any $\Gamma$, and the mixing it produces is physical in the only sense the equation has.
 
 The two settings of the parent are the two cases of that distinction. The constant potential, solved in closed form, is the zero-curvature case: its connection is a gradient and its mixing is removable. The general static connection, whose constants of motion the parent lists, is the case in which the curvature need not vanish. The check is one line on each side: on a $32\times32$ grid of spacing $0.05$ the curvature component was $0.0\times10^{0}$ for a constant $\tilde A_t$ and $0.9$ for $\tilde A_t=i\,0.9\,x$.
 
 So "redundancy is the only source of mode mixing" has a precise reading. Every mixing pattern that a local transformation can remove is removed exactly when the curvature vanishes; the remainder is not a gauge artefact and no $\Gamma$ touches it. The sentence is not a claim that redundancy produces observable mixing, which it cannot, but that it is the only operation which changes the mixing without changing the equation.
 
-What the polar variables add to that sentence is where the change lands. A gauge transformation moves the angle, so the momentum-space translation it induces is a translation of the label; the amplitude's scale, boost and rotor are untouched. That is the same type table as §*The Word of a Mode*, read now as a statement about a symmetry rather than about a background.
+What the polar variables add to that sentence is where the change lands. A local transformation moves the angle, so the momentum-space translation it induces is a translation of the label; the amplitude's scale, boost and rotor are untouched. That is the same type table as §*The Word of a Mode*, read now as a statement about a symmetry rather than about a background.
 
 ## Limits
 
@@ -122,7 +122,7 @@ In momentum space a mode is a point and an element, and the element's word has f
 
 The coupling is the only source of mode mixing, and the mixing is the smoothness of the connection read in the mode basis. One mode in gave one mode out for a constant connection, seventeen for a smooth bump, sixty-three for a spike and all sixty-four for a linear one, whose envelope fell as $1/\Delta k$ with $\lvert G\rvert\cdot\lvert\Delta_\Phi\rvert=38.4$ to within $1.3\%$. A strong constant connection mixes nothing and a weak spiky one mixes everything.
 
-Redundancy is the only rearrangement that leaves the equation fixed, and it removes the mixing exactly when the connection is a pure gradient, which is exactly when the curvature vanishes: $0.0$ for a constant $\tilde A_t$ against $0.9$ for $\tilde A_t=i\,0.9x$. A linear gauge phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ translates the support and preserves the count; anything else re-superposes. The parent's two settings are the two cases of that one distinction.
+Redundancy is the only rearrangement that leaves the equation fixed, and it removes the mixing exactly when the connection is a pure gradient, which is exactly when the curvature vanishes: $0.0$ for a constant $\tilde A_t$ against $0.9$ for $\tilde A_t=i\,0.9x$. A linear central phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ translates the support and preserves the count; anything else re-superposes. The parent's two settings are the two cases of that one distinction.
 
 ## Summary of Notation
 
@@ -133,7 +133,7 @@ Redundancy is the only rearrangement that leaves the equation fixed, and it remo
 | $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | The covariant wave number; the mode's label |
 | $-\nu_m$ on the diagonal | The mass: diagonal in momentum, off-diagonal in the part label |
 | $\nu_m^{2}-k^{2}$ | The determinant of the symbol; its zero is the shell |
-| $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ | The gauge angle |
+| $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ | The connection angle |
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_\natural$ | The quaternionic norm; scale and angle |
 | $\tilde\Xi^{\natural}\tilde\Xi/N(\tilde\Xi)$ | The rotor read relative to the norm; invariant |
 | $\lvert G(k_0+\Delta_\Phi)\rvert\cdot\lvert\Delta_\Phi\rvert$ | The envelope of the linear connection's mixing |
@@ -142,10 +142,10 @@ Redundancy is the only rearrangement that leaves the equation fixed, and it remo
 
 - *The Coupled Dirac Equation in Biquaternionic Polar Variables*, for the coupled word, the type table of the four brackets, the kinetic momentum and the kinetic velocity.
 - *The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Form*, for the order of the momentum-space coupling and the constant-connection licence.
-- *The Coupled Dirac Equation in Biquaternionic Form*, for the covariant derivative, the gauge law and the constant-potential solutions.
+- *The Coupled Dirac Equation in Biquaternionic Form*, for the covariant derivative, the transformation law and the constant-potential solutions.
 - *The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables*, for the free case: the transform of the word and the four constants of a mode.
 - *The Dirac Equation in Biquaternionic Polar Variables*, for the word, its domain and the four brackets.
 - *Derivatives, Fields and Transforms*, for the transform, its kernel and the symbol rule.
 - *Biquaternion Continuous Harmonic Analysis*, for the convolution theorem and Plancherel's condition.
-- *The Gauge Principle in Biquaternionic Form*, for the localization of the central phase and the gauge angle.
+- *The Minimal Coupling in Biquaternionic Form*, for the localization of the central phase and the connection angle.
 - *Norm and Pairing Conventions*, for the two forms and the centrality of the quaternionic norm.

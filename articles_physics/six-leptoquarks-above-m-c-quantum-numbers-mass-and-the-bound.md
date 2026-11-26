@@ -32,7 +32,7 @@ $$
 
 **Not established.** The bound is a coupling statement and its coefficient is uncertain by a factor of a few. The states have not been seen, which is the weakest kind of failure and the most persistent. **And — the point of the article — nothing here produces a weak boson.** The six cannot: the charge theorem of [the companion article](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) rules it out, and this article records that the sextet's role is to break and to be heavy, not to give birth.
 
-**Where the rest is.** The transition that eats them is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Their mass relation and their bound in full are §*The Mass, and the Ratio That Comes With It* and §*The Bound: Two Hundred and Fifty Teraelectronvolts* below. Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition passes down instead of them is [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html).**
+**Where the rest is.** The transition that eats them is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Their mass relation and their bound in full are §*The Mass, and the Ratio That Comes With It* and §*The Bound: Two Hundred and Fifty Teraelectronvolts* below. Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition passes down instead of them is 2.**
 
 ## What "Integrated Out" Means, in Three Registers
 
@@ -130,7 +130,7 @@ $$
 
 **Six extra powers on the rate, and they are the whole of the model's survival.** The two-body mode $p\to e^{+}\pi^{0}$ has no gauge contribution at any order, because its final state is two quarks and a lepton while the sector supplies one quark-to-lepton conversion at a time. **The channel to look for is $p\to e^{+}e^{+}e^{-}$, and it is far below reach.**
 
-**The one field that would change it.** A colour antitriplet coupling to two quarks — a diquark — gives dimension six from a single exchange. **The fifteen does not contain one**: its colour triplet carries $B-L=\pm\tfrac43$ and a $qq$ pair carries $+\tfrac23$, so the coupling violates the gauged $B-L$. **A $(\mathbf{6},\mathbf1,\mathbf1)$ scalar would supply it, and the frame has none.** Add one and the bound becomes
+**The one field that would change it.** A colour antitriplet coupling to two quarks — a diquark — gives dimension six from a single exchange. **The fifteen does not contain one**: its colour triplet carries $B-L=\pm\tfrac43$ and a $qq$ pair carries $+\tfrac23$, so the coupling violates the made local $B-L$. **A $(\mathbf{6},\mathbf1,\mathbf1)$ scalar would supply it, and the frame has none.** Add one and the bound becomes
 
 $$
 M_\Sigma\gtrsim1.60\times10^{5}\ \mathrm{J}=10^{15}\ \mathrm{GeV}=10^{12}\ \mathrm{TeV},
@@ -198,7 +198,7 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 
 ## Summary
 
-**Identity.** $\mathfrak m=\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$: six states, $Q=\pm\tfrac23$, colour triplet or antitriplet, $B-L=\pm\tfrac43$. Forced by the gauged fourth colour, and the only coloured massive vectors in the theory — massive below $M_C$.
+**Identity.** $\mathfrak m=\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$: six states, $Q=\pm\tfrac23$, colour triplet or antitriplet, $B-L=\pm\tfrac43$. Forced by the made local fourth colour, and the only coloured massive vectors in the theory — massive below $M_C$.
 
 **Fate.** Massless above $M_C$, eaten at the transition, heavy below it. Two registers of one event, not two claims.
 

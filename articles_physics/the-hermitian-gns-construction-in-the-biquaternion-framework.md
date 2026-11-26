@@ -48,7 +48,7 @@ a left ideal because $\langle \tilde Q_1\tilde Q_3,\tilde Q_1\tilde Q_3\rangle_\
 > $$
 > \pi_\omega(\tilde Q_3)[\tilde Q_1] \;=\; [\tilde Q_3\tilde Q_1]
 > $$
-> is a well-defined $*$-representation of $\mathcal{A}$ on $\mathcal{H}_\omega$, the vector $\Omega_\omega=[e]$ is **cyclic** (the set $\pi_\omega(\mathcal{A})\Omega_\omega$ is dense), and $\omega(\tilde Q_3)=\langle\Omega_\omega|\pi_\omega(\tilde Q_3)|\Omega_\omega\rangle$. The triple $(\mathcal{H}_\omega,\pi_\omega,\Omega_\omega)$ is unique up to $*$-unitary equivalence.
+> is a well-defined $*$-representation of $\mathcal{A}$ on $\mathcal{H}_\omega$, the vector $\Omega_\omega=[e]$ is $*$ (the set $\pi_\omega(\mathcal{A})\Omega_\omega$ is dense), and $\omega(\tilde Q_3)=\langle\Omega_\omega|\pi_\omega(\tilde Q_3)|\Omega_\omega\rangle$. The triple $(\mathcal{H}_\omega,\pi_\omega,\Omega_\omega)$ is unique up to $*$-unitary equivalence.
 
 Two corollaries will be used constantly. First, $\omega$ is **pure** — not a nontrivial convex combination of other states — if and only if $\pi_\omega$ is **irreducible**. Second, the **cyclic vector is annihilated by the radical**:
 $$
@@ -115,7 +115,7 @@ and it vanishes exactly when $\tilde Q_3 \tilde\Pi_{\mathrm{id},+}=0$, i.e. when
 $$
 \boxed{\;\mathcal{H}_{\tilde\Pi_{\mathrm{id},+}} \;\cong\; \mathbb{B}\tilde\Pi_{\mathrm{id},+} \;\cong\; \mathbb{C}^2\;}.
 $$
-Evaluating the Gram matrix of the four basis elements in this state gives rank two: two of the four directions of the algebra are distinguished as pure-gauge, and the physical Hilbert space is the minimal left ideal — the one-particle module of *The Biquaternion Vacuum as a Minimal Idempotent*. The same conclusion follows from $\mathsf{M}_2(\tilde\Pi_{\mathrm{id},+})=\mathrm{diag}(1,0)$: the inner product $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+}\tilde Q_3^{*}\tilde Q_1)$ sees only the first column of the matrices.
+Evaluating the Gram matrix of the four basis elements in this state gives rank two: two of the four directions of the algebra are distinguished as pure gradient, and the physical Hilbert space is the minimal left ideal — the one-particle module of *The Biquaternion Vacuum as a Minimal Idempotent*. The same conclusion follows from $\mathsf{M}_2(\tilde\Pi_{\mathrm{id},+})=\mathrm{diag}(1,0)$: the inner product $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+}\tilde Q_3^{*}\tilde Q_1)$ sees only the first column of the matrices.
 
 **The trace state.** Take $\tilde{Ϛ}_{\Psi} = \tfrac12 e_t$. Then
 $$

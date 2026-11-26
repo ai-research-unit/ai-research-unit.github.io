@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article couples the biquaternion Klein–Gordon field to an electromagnetic connection and reads what the coupling does to the equation and to the algebra's own bookkeeping. It is the element-form companion of *The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables*, and it is the scalar member of a series whose vector and spinor members are *The Coupled Proca Equation in Biquaternionic Form* and *The Coupled Dirac Equation in Biquaternionic Form*. It depends on *The Klein–Gordon Equation in Biquaternionic Form* for the free equation and its current, on *The Gauge Principle in Biquaternionic Form* for the localization of the central phase, and on *The Covariant Derivative and Gauge Connection in Biquaternionic Form* for the operator identity that carries this article's central finding.
+This article couples the biquaternion Klein–Gordon field to an electromagnetic connection and reads what the coupling does to the equation and to the algebra's own bookkeeping. It is the element-form companion of *The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables*, and it is the scalar member of a series whose vector and spinor members are *The Coupled Proca Equation in Biquaternionic Form* and *The Coupled Dirac Equation in Biquaternionic Form*. It depends on *The Klein–Gordon Equation in Biquaternionic Form* for the free equation and its current, on *The Minimal Coupling in Biquaternionic Form* for the localization of the central phase, and on *The Covariant Derivative and Connection in Biquaternionic Form* for the operator identity that carries this article's central finding.
 
 **The equation.**
 
@@ -68,7 +68,7 @@ a real central number in the temporal slot and imaginary central numbers in the 
 
 **What the prescription is not.** It is not the replacement of $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}$ inside $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi$ and nothing else. That replacement is the natural guess, it is what the Proca and Dirac companions do, and §*The Covariant Square and What It Forbids* shows that it produces a different equation from the one the action produces. The distinction is the article's second finding and its technical core.
 
-## Gauge Covariance
+## Covariance
 
 **The transformation.** Let $\Lambda$ be a real scalar function and set
 
@@ -141,7 +141,7 @@ No central field is a solution of the covariant square's equation in a region of
 
 *Let the field leave the centre.* Keep the full equation in $\mathbb{B}$ and let the field acquire vector components. Then the equation is consistent and covariant, and its four coefficients are coupled by $\tilde F$: the curvature term is pure vector, so it converts a scalar coefficient into vector coefficients and the reverse. That theory is not the standard one, because the standard charged scalar has one component and no curvature coupling.
 
-**The check.** The identity was verified on a periodic lattice of $16^4$ points with a band-limited field and a periodic connection, in three configurations. With a constant connection — a pure gauge — the residual's vector part after subtracting the scalar equation is $5\times10^{-15}$ of the field, which is machine zero. With a constant field strength of magnitude $0.7$ in units of $ϙ$, with $2\pi\nu_m=1.3$, the scalar part of the residual equals $(\sum_{\imath} D_{\imath}^{2}-\nu_m^{2})\xi$ to $0.0$ and the vector part is nonzero and equal to $\frac{2\pi iϙ}{h}\xi\tilde F$ to $4\times10^{-15}$; the measured coefficient at a sampled point is $0.21+0.48i$ against a predicted $0.21+0.48i$. With a purely electric connection varying in space, the vector part appears along the direction of the electric field and nowhere else, again to $5\times10^{-15}$. The identity is exact and the numerical work only locates the terms.
+**The check.** The identity was verified on a periodic lattice of $16^4$ points with a band-limited field and a periodic connection, in three configurations. With a constant connection — a pure gradient — the residual's vector part after subtracting the scalar equation is $5\times10^{-15}$ of the field, which is machine zero. With a constant field strength of magnitude $0.7$ in units of $ϙ$, with $2\pi\nu_m=1.3$, the scalar part of the residual equals $(\sum_{\imath} D_{\imath}^{2}-\nu_m^{2})\xi$ to $0.0$ and the vector part is nonzero and equal to $\frac{2\pi iϙ}{h}\xi\tilde F$ to $4\times10^{-15}$; the measured coefficient at a sampled point is $0.21+0.48i$ against a predicted $0.21+0.48i$. With a purely electric connection varying in space, the vector part appears along the direction of the electric field and nowhere else, again to $5\times10^{-15}$. The identity is exact and the numerical work only locates the terms.
 
 ## The Two Coupled Equations
 
@@ -273,7 +273,7 @@ the same shift the Proca companion records, and for the same reason: the tempora
 
 **The vector potential is not a shift.** For $\vec A\ne0$ the spatial slots add imaginary central numbers and the dispersion relation becomes the Landau problem's: the transverse modes are raised into Landau levels, the spectrum is discrete in the plane perpendicular to $\vec A$, and the lowest level is not shifted. The computation is *Landau Levels in Biquaternionic Form*'s and is not repeated here; what the coupled scalar article records is that the same substitution produces both effects and that the difference between them is the difference between the temporal and the spatial slots.
 
-**What a constant background does not do.** It does not change the carrier split, does not create a source, and does not repair the sign of the density. A constant connection is a pure gauge only if it is a gradient — a constant vector potential is one, a constant scalar potential is not — and the article keeps the two cases apart for that reason: the constant vector potential can be removed at every point and the constant scalar potential cannot.
+**What a constant background does not do.** It does not change the carrier split, does not create a source, and does not repair the sign of the density. A constant connection is a pure gradient only if it is a gradient — a constant vector potential is one, a constant scalar potential is not — and the article keeps the two cases apart for that reason: the constant vector potential can be removed at every point and the constant scalar potential cannot.
 
 ## What the Coupling Adds and What It Does Not
 
@@ -354,8 +354,8 @@ The current is $J_{\imath}=\frac{i}{4\pi\nu_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tild
 - [The Lagrangian and the Klein–Gordon Equation](the-lagrangian-and-the-klein-gordon-equation.html), for the free action and its currents.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), the polar companion of this article.
 - [The Lagrangian and the Coupled Klein–Gordon Equation](the-lagrangian-and-the-coupled-klein-gordon-equation.html), for the total action, the two variations and the source.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature and the gap it records.
+- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature and the gap it records.
 - [The Coupled Proca Equation in Biquaternionic Form](the-coupled-proca-equation-in-biquaternionic-form.html), for the same coupling in the vector sector, where the carrier must change.
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), for the spinor sector, where the field strength does not enter the equation.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the connection, the field strength and the inhomogeneous equation.

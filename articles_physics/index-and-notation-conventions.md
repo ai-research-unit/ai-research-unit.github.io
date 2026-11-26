@@ -100,7 +100,7 @@ The twelve algebraic structures carry no code at all. A product is written by it
 
 **The factor letter is the digamma.** A scalar that multiplies a field or an element is written $\digamma$ with a subscript that names its sense, the shape the corpus already uses for a coefficient, $\digamma_{\mathrm{kin}}$ and $\digamma_{\mathrm{blt}}$. Four senses are fixed.
 
-- The group factor is $\digamma_{\mathrm{gau}}$: the central unit element that multiplies a field, $\tilde\Xi\mapsto\digamma_{\mathrm{gau}}\tilde\Xi$. It is the exponential of the gauge angle, $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$, and the angle is written $\theta$ with a long subscript and never as the factor.
+- The group factor is $\digamma_{\mathrm{gau}}$: the central unit element that multiplies a field, $\tilde\Xi\mapsto\digamma_{\mathrm{gau}}\tilde\Xi$. It is the exponential of the connection angle, $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$, and the angle is written $\theta$ with a long subscript and never as the factor.
 - The rescaling factor is $\digamma_{\mathrm{cfm}}$: the conformal factor of the metric, $g_{\imath\jmath}\mapsto\digamma_{\mathrm{cfm}}^{2}g_{\imath\jmath}$; the dilation of an element, $\tilde Q\mapsto\digamma_{\mathrm{cfm}}\tilde Q$; and any free scale of a solution.
 - The mixture weight of a convex combination is $\digamma_{\mathrm{mix}}$, as in $\digamma_{\mathrm{mix}}\vec a+(1-\digamma_{\mathrm{mix}})\vec b$.
 - The Lyapunov exponent is $\varkappa_{\mathrm{lyp}}$, with its direction as an argument, $\varkappa_{\mathrm{lyp}}(v)$.

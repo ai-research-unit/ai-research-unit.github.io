@@ -1,8 +1,8 @@
-# __The Lagrangian and the Topologically Massive Gauge Field__
+# __The Lagrangian and the Topologically Massive Connection__
 
 ## Introduction
 
-This article writes the topologically massive connection as one of the two eliminations of a single parent action, and shows that the mass it carries is topological because the term that carries it has one derivative and no metric. It is the action-first companion of *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*, which performs the two reductions and records the resulting pair of theories; this article asks what functional both theories come from, and why one functional can have two fields as its extremum.
+This article writes the topologically massive connection as one of the two eliminations of a single parent action, and shows that the mass it carries is topological because the term that carries it has one derivative and no metric. It is the action-first companion of *Dual Equivalence of the Dirac and Topologically Massive Connections*, which performs the two reductions and records the resulting pair of theories; this article asks what functional both theories come from, and why one functional can have two fields as its extremum.
 
 The equation. The parent's equation is the pair of linear relations obtained by varying the two fields,
 
@@ -134,15 +134,15 @@ The invertibility of the kinetic operator. The parent's kernel in $G$ is $(m-a)I
 
 **The statement.** The topological mass is fixed by the structure and not by a parameter in the potential. It cannot be tuned to zero without the theory changing its degree-of-freedom count, and it cannot be given a sign without choosing an orientation.
 
-Why it is called topological. The Chern–Simons term is the integral of a three-form built from the connection, and its variation is a boundary term; its value on a closed manifold is quantised. The mass it gives is therefore tied to the topology of the gauge bundle and not to a scalar's vacuum value.
+Why it is called topological. The Chern–Simons term is the integral of a three-form built from the connection, and its variation is a boundary term; its value on a closed manifold is quantised. The mass it gives is therefore tied to the topology of the bundle and not to a scalar's vacuum value.
 
 The consequence for the corpus's classification. The family's other masses come from a scalar's expectation or from a Dirac bilinear; this one comes from a term with no metric. It is the third kind of mass in the corpus, and its existence is a statement about three dimensions that has no four-dimensional analogue in the family.
 
 What the structure does not give. It does not give a four-dimensional topological mass; the Chern–Simons term exists only in odd dimensions. It does not explain why a theory would have one; it describes one that does.
 
-## The Noether Currents: The Gauge Current and the Chern–Simons Current
+## The Noether Currents: The Connection Current and the Chern–Simons Current
 
-The gauge current. The reduced action is invariant under $B_{\imath}\mapsto B_{\imath}+\partial_{\imath}\Lambda$ up to a boundary term, and the conserved current is the field strength's divergence, $\partial_{\jmath} F_{\jmath\imath}$, which vanishes on shell in the absence of sources. With a source the current is the source, as in the Maxwell article.
+The connection current. The reduced action is invariant under $B_{\imath}\mapsto B_{\imath}+\partial_{\imath}\Lambda$ up to a boundary term, and the conserved current is the field strength's divergence, $\partial_{\jmath} F_{\jmath\imath}$, which vanishes on shell in the absence of sources. With a source the current is the source, as in the Maxwell article.
 
 The Chern–Simons current. The topological term defines
 
@@ -154,7 +154,7 @@ whose divergence is $F\tilde F$; it is conserved identically in three dimensions
 
 Energy–momentum. Translation invariance gives $T_{\imath\jmath}$ with a contribution from each term, and the static energy is positive for one sign of $m$. The trace is nonzero because the Chern–Simons term is not conformally invariant, and that is the three-dimensional analogue of the mass term's trace in the vector articles.
 
-**What there is not.** No central phase, no second gauge current, no topological charge of the winding kind. The sector's current content is one gauge current and one identically conserved topological current.
+**What there is not.** No central phase, no second connection current, no topological charge of the winding kind. The sector's current content is one connection current and one identically conserved topological current.
 
 ## What the Principle Adds and What It Relabels
 
@@ -202,7 +202,7 @@ The three findings. The duality is exact because the parent is linear in one fie
 |---|---|
 | $G_{\imath}$ | complex four-vector, the s-vector of the Dirac field |
 | $H_{\imath}$ | dual potential, auxiliary field of the parent |
-| $B_{\imath}$ | three-dimensional gauge potential |
+| $B_{\imath}$ | three-dimensional potential |
 | $\check c_{\jmath\imath k}$ | chirality-odd structure-constant array |
 | $\check\varepsilon_{\jmath\imath k}$ | three-dimensional Levi-Civita of the slice |
 | $m$, $a$ | mass and second coupling; $m-a$ survives |
@@ -211,7 +211,7 @@ The three findings. The duality is exact because the parent is linear in one fie
 
 ## Further Reading
 
-- [Dual Equivalence of the Dirac and Topologically Massive Gauge Fields](dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html) — the parent: the four reductions, the three-dimensional form, the topological mass.
+- [Dual Equivalence of the Dirac and Topologically Massive Connections](dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html) — the parent: the four reductions, the three-dimensional form, the topological mass.
 - [The Lagrangian and the Proca Equation](the-lagrangian-and-the-proca-equation.html) — the plain massive vector, for the derivative-count comparison.
 - [The Lagrangian and the Stueckelberg Mechanism](the-lagrangian-and-the-stueckelberg-mechanism.html) — the other way to avoid the Proca obstruction.
 - [The Lagrangian and the Dirac Equation](the-lagrangian-and-the-dirac-equation.html) — the Dirac theory whose vector representation is one of the two reductions.

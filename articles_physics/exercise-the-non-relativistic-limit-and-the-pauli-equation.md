@@ -50,7 +50,7 @@ $$
 \sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\pi_{\imath}=-i\,\frac{h}{2\pi}\,D_{3}^{A},
 $$
 
-with $\pi_{\imath}=p_{\imath}-qA_{\imath}$ and $D_3^A=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}(\partial/\partial r_{\imath}-\frac{2\pi iqA_{\imath}}{h})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco},\Phi}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(\nu_t^{\prime}x_0-\vec\nu_\Phi\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element
+with $\pi_{\imath}=p_{\imath}-qA_{\imath}$ and $D_3^A=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}(\partial/\partial r_{\imath}-\frac{2\pi iqA_{\imath}}{h})$ the pure part of the covariant gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco},\Phi}$ in *The Covariant Derivative and the Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(\nu_t^{\prime}x_0-\vec\nu_\Phi\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element
 
 $$
 -2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi,
@@ -135,7 +135,7 @@ H=\beta mc^2+O+qΞ,
 OF=c\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\pi_{\imath}\,F\,\vec e_y=-i\,\frac{h}{2\pi}\,c\bigl(D_3^AF\bigr)\vec e_y .
 $$
 
-The mass term is the grading itself, multiplied by the mass. The kinetic operator $O$ is the pure part of the gauged gradient, multiplied on the right by $\vec e_y$. Both factors are present and both are needed: left multiplication by $\vec e_{\imath}$ with the derivative on one side, and the multiplier $\vec e_y$ on the other, so $O$ is a two-sided operator and not the left multiplication by an element. It is odd because $\vec e_y$ anticommutes with $\vec e_x$; it reverses the chirality because $\vec e_y$ anticommutes with $\vec e_z$ as well. The relations used below are four:
+The mass term is the grading itself, multiplied by the mass. The kinetic operator $O$ is the pure part of the covariant gradient, multiplied on the right by $\vec e_y$. Both factors are present and both are needed: left multiplication by $\vec e_{\imath}$ with the derivative on one side, and the multiplier $\vec e_y$ on the other, so $O$ is a two-sided operator and not the left multiplication by an element. It is odd because $\vec e_y$ anticommutes with $\vec e_x$; it reverses the chirality because $\vec e_y$ anticommutes with $\vec e_z$ as well. The relations used below are four:
 
 $$
 \beta^2=1,
@@ -170,7 +170,7 @@ O=c\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\pi_{\imath}\,(\cdot)\,\vec e_y\quad(
 E=qΞ\quad(\text{even},\ \beta E\beta=E),
 $$
 
-and the odd operator is the pure part of the gauged gradient, $\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\pi_{\imath}=-i\,\frac{h}{2\pi}\,D_{3}^{A}$, multiplied on the right by $\vec e_y$. Writing it as $\frac{h}{2\pi}\,c\,\vec \pi$, that is as the left multiplication by an element, would make it even; the right multiplier $\vec e_y$ is what makes it odd, and it is also what reverses the chirality.
+and the odd operator is the pure part of the covariant gradient, $\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\pi_{\imath}=-i\,\frac{h}{2\pi}\,D_{3}^{A}$, multiplied on the right by $\vec e_y$. Writing it as $\frac{h}{2\pi}\,c\,\vec \pi$, that is as the left multiplication by an element, would make it even; the right multiplier $\vec e_y$ is what makes it odd, and it is also what reverses the chirality.
 
 *Step 2: factoring out the rest energy.* Write $F=\exp(-i\theta_{\mathrm{rst}})\,G$ with $\theta_{\mathrm{rst}}=r'_t\,2\pi\nu_m$. The factor is the central element $\cos\theta_{\mathrm{rst}}-i\sin\theta_{\mathrm{rst}}$, which commutes with every operator of the reduction, so it can be cancelled on both sides. What is left of the mass term is $(\beta-1)mc^2$, which vanishes on the large part and is $-2mc^2$ on the small part, and the parent's two coupled equations follow:
 
@@ -209,7 +209,7 @@ S_1=-\frac{i}{2\,m\,c^{2}}\,\beta O
 =\frac{i}{4\pi\nu_m}\bigl(D_3^A\cdot\bigr)\vec e_z .
 $$
 
-The second form is the first one after $\beta O=-ic\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\pi_{\imath}(\cdot)\vec e_z$, the two multipliers of $\beta O$ being $i\vec e_x$ and $\vec e_y$, whose product is $i\vec e_z$; the third is the same operator written with the pure part of the gauged gradient, since $\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\pi_{\imath}=-i\,\frac{h}{2\pi}\,D_{3}^{A}$. The generator is two-sided as well, left by $\vec e_{\imath}$ and right by $\vec e_z$, and it is Hermitian, being the product of an anti-Hermitian left factor and an anti-Hermitian right multiplier with a Hermitian $\pi_{\imath}$ between them; so $iS_1$ is anti-Hermitian and the transformation is unitary. For static fields the generator is time-independent, and the transformed Hamiltonian is
+The second form is the first one after $\beta O=-ic\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\pi_{\imath}(\cdot)\vec e_z$, the two multipliers of $\beta O$ being $i\vec e_x$ and $\vec e_y$, whose product is $i\vec e_z$; the third is the same operator written with the pure part of the covariant gradient, since $\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\pi_{\imath}=-i\,\frac{h}{2\pi}\,D_{3}^{A}$. The generator is two-sided as well, left by $\vec e_{\imath}$ and right by $\vec e_z$, and it is Hermitian, being the product of an anti-Hermitian left factor and an anti-Hermitian right multiplier with a Hermitian $\pi_{\imath}$ between them; so $iS_1$ is anti-Hermitian and the transformation is unitary. For static fields the generator is time-independent, and the transformed Hamiltonian is
 
 $$
 e^{iS_1}He^{-iS_1}
@@ -555,8 +555,8 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\sigma_{\imath}\leftrightarrow i\vec e_{\imath}$ | Isomorphism, Pauli matrices |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The gradient and its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian |
-| $D_3=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\partial/\partial r_{\imath}$, $D_3^A$ | Pure part of the gradient, free and gauged |
-| $\tilde\nabla_\Phi-\frac{2\pi i\,q\,\tilde{A}_{\Phi}}{h}$, $\tilde A_{\Phi}=Ξ e_t-\vec A$ | The gauged gradient; minimal substitution |
+| $D_3=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\partial/\partial r_{\imath}$, $D_3^A$ | Pure part of the gradient, free and made local |
+| $\tilde\nabla_\Phi-\frac{2\pi i\,q\,\tilde{A}_{\Phi}}{h}$, $\tilde A_{\Phi}=Ξ e_t-\vec A$ | The covariant gradient; minimal substitution |
 | $-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi$ | Symbol of the gradient on a plane wave; $(-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})=4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2$ |
 | $F=F_L+F_R$; $\Gamma F=-iF\vec e_z$ | The field and its chirality, values $\mp1$ |
 | $\beta F=iF\vec e_x$, $\beta^2=1$, $\beta\Gamma=-\Gamma\beta$ | The mass grading; $\beta O=-O\beta$ |
@@ -585,4 +585,4 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 - [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html), the parent of this exercise, for the Pauli limit at leading order.
 - [The Foldy–Wouthuysen Transformation in Biquaternionic Form](the-foldy-wouthuysen-transformation-in-biquaternionic-form.html), for the transformation in the algebra.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the sector structure and the observables.
-- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the gradient, its conjugate, the d'Alembertian and the gauged gradient.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the gradient, its conjugate, the d'Alembertian and the covariant gradient.

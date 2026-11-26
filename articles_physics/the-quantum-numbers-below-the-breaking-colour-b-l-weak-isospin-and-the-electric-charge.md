@@ -80,7 +80,7 @@ $$
 
 **The charge that is the article's hardest case, because its number never moves while its symmetry does.**
 
-**4.1 Inside $\mathrm{SU}(4)$ it is a direction; the colour step promotes it to a factor with no interval attached.** $B-L$ is a Cartan generator of the simple group and carries no coupling of its own, so there is no scale above $M_C$ at which it is a separate gauge symmetry. The colour half of the transition leaves it in the residual group, $\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ at rank five and dimension fifteen ([Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html)). **That group has no interval of scales**: the doublet half of the same vacuum breaks it at once (§4.2), so the factor is a statement about the residual algebra and never about a range of energies.
+**4.1 Inside $\mathrm{SU}(4)$ it is a direction; the colour step promotes it to a factor with no interval attached.** $B-L$ is a Cartan generator of the simple group and carries no coupling of its own, so there is no scale above $M_C$ at which it is a separate local symmetry. The colour half of the transition leaves it in the residual group, $\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ at rank five and dimension fifteen ([Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html)). **That group has no interval of scales**: the doublet half of the same vacuum breaks it at once (§4.2), so the factor is a statement about the residual algebra and never about a range of energies.
 
 **4.2 The transition does two things to it, and they must be told apart.** The colour part of the vacuum, $iD$, commutes with $B-L$: the corner is in the stabiliser, so the six generators that become heavy do not include it, and the sextet's $\pm\tfrac43$ are eigenvalues of a generator the colour step leaves alone. **The doublet part of the same vacuum does not commute with it.** That vacuum lies on the lepton line, where $B-L=-1$ and $T_{3R}=+\tfrac12$, so $[B-L,Ξ_0]=-Ξ_0\neq0$. **By the criterion of §*The Criterion*, $B-L$ is not conserved below $M_C$** — and by §1.4 it is not approximately conserved either: it is not defined.
 
@@ -90,13 +90,13 @@ $$
 
 **4.5 The breaking is wanted twice over, and it costs no Goldstone.** A Majorana mass for the right-handed neutrino carries $B-L=-2$, so it needs a vacuum that breaks the charge — and the transition supplies one. **That is the seesaw's licence, and it is the same vev that breaks $\mathrm{SU}(2)_R$** ([The Seesaw Mechanism](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html)). And because the broken direction was a direction of a *gauge* group above $M_C$, the would-be Goldstone is eaten: it is the longitudinal mode of the $Z_R$, whose mass $\tfrac58g^2v_C^2$ is the neutral sector's ([The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html)).
 
-**4.6 Compared with the Standard Model.** There $B-L$ is an accidental global symmetry from the start and is never gauged, and it is broken only by the Weinberg operator at dimension five. **Here it is a redundant direction above $M_C$, broken at $M_C$, and accidental below it** — the exact opposite order of statuses, with the same low-energy consequence, because the residual violation below $M_C$ is again of dimension five and suppressed by the same scale.
+**4.6 Compared with the Standard Model.** There $B-L$ is an accidental global symmetry from the start and is never made local, and it is broken only by the Weinberg operator at dimension five. **Here it is a redundant direction above $M_C$, broken at $M_C$, and accidental below it** — the exact opposite order of statuses, with the same low-energy consequence, because the residual violation below $M_C$ is again of dimension five and suppressed by the same scale.
 
 ## $B$ and $L$ Separately
 
 **The charges that are not symmetries, and the reason the proton is stable anyway.**
 
-**5.1 The violation.** Above $M_C$ the leptoquark vertex couples a quark to a lepton, and the connection that mediates it carries $B-L=\pm\tfrac43$ and no baryon number. So $B$ alone and $L$ alone are explicitly broken by the gauge coupling; above $M_C$ only $B-L$ is a symmetry of the sector — and the vacuum breaks even that one, at the same scale, by §4.2.
+**5.1 The violation.** Above $M_C$ the leptoquark vertex couples a quark to a lepton, and the connection that mediates it carries $B-L=\pm\tfrac43$ and no baryon number. So $B$ alone and $L$ alone are explicitly broken by the connection coupling; above $M_C$ only $B-L$ is a symmetry of the sector — and the vacuum breaks even that one, at the same scale, by §4.2.
 
 **5.2 The size of the violation.** Below $M_C$ the mediator is gone and the violation appears as dimension-six operators suppressed by $1/M_C^{2}$. So $B$ and $L$ are violated at low energy by an amount that is small because $M_C$ is large, not because a symmetry protects them.
 
@@ -112,7 +112,7 @@ $$
 
 **6.2 The examples, and one that is not one.** Baryon number below $M_C$ is accidental: no renormalisable operator violates it once the leptoquarks are removed, and the leading violation is of dimension six. **Lepton number is not accidental here.** The right-handed neutrino is a gauge singlet below $M_C$, its Majorana mass carries $B-L=-2$, and the vacuum has already broken the charge that forbade it — so $L$ is broken at dimension three, with no suppression at all. **That is the seesaw, and it is why the neutrino mass is the one place the framework's broken charge shows.**
 
-**6.3 The warning.** An accidental charge has no reason to survive a change of content, and a model that relies on one is relying on the absence of a term rather than on a symmetry. **The proton's stability rests on one of these**, on $B$ below $M_C$, and §*$B$ and $L$ Separately* says why the resting is nevertheless firm: the forbidden vertex is forbidden by $B-L$, and $B-L$ is a direction of the gauge group above the scale that would supply a diquark.
+**6.3 The warning.** An accidental charge has no reason to survive a change of content, and a model that relies on one is relying on the absence of a term rather than on a symmetry. **The proton's stability rests on one of these**, on $B$ below $M_C$, and §*$B$ and $L$ Separately* says why the resting is nevertheless firm: the forbidden vertex is forbidden by $B-L$, and $B-L$ is a direction of the symmetry group above the scale that would supply a diquark.
 
 **6.4 The flavour charges.** The generation numbers are accidental in the same sense, and their violation is the Yukawa sector's business: [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html).
 
@@ -145,7 +145,7 @@ $$
 
 **8.1 Conserved and realised.** Colour is conserved and has no coloured asymptotic states. A charge can be exact and act trivially on the spectrum.
 
-**8.2 Gauged, broken, accidental.** $B-L$ is gauged above $M_C$ and broken at $M_C$; $B$ is accidental below $M_C$ and violated at dimension six; $L$ is broken at dimension three by the right-handed neutrino's mass. **Three statuses, and the third is the one that produces a measured number**, because a dimension-three term is not suppressed (the seesaw article has it).
+**8.2 Made local, broken, accidental.** $B-L$ is made local above $M_C$ and broken at $M_C$; $B$ is accidental below $M_C$ and violated at dimension six; $L$ is broken at dimension three by the right-handed neutrino's mass. **Three statuses, and the third is the one that produces a measured number**, because a dimension-three term is not suppressed (the seesaw article has it).
 
 **8.3 Broken and violated.** A broken gauge charge is not defined on the physical Hilbert space. A violated global charge is defined and its non-conservation is a computable rate. The words are not interchangeable, and §*The Criterion* is where the difference is made.
 
