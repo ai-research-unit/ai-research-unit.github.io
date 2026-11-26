@@ -94,7 +94,7 @@ $$
 \Theta_{\imath\jmath}=\partial_{\imath}\xi\,\partial_{\jmath}\xi+g_{\imath\jmath}\mathcal L .
 $$
 
-The two forms are related by two contractions with the metric, and *this is the index-placement remark the preceding article owed the reader*: the derivative with respect to the metric array is naturally a twice-contravariant object, the corpus keeps every index low, and the passage between them costs $g_{\imath a}g_{\jmath b}$. On the flat frame the two arrays coincide, which is why the flat-frame articles never had to say so; on a curved frame they differ at first order in $h_{\imath\jmath}$, and the sectoral articles work with the all-low form because $\rho$ and $p$ are read from it.
+The two forms are related by two contractions with the metric, and *this is the index-placement remark the preceding article states in its own letters*: the derivative with respect to the metric array is naturally a twice-contravariant object, the corpus keeps every index low, and the passage between them costs $g_{\imath a}g_{\jmath b}$. On the flat frame the two arrays coincide, which is why the flat-frame articles never had to say so; on a curved frame they differ at first order in $h_{\imath\jmath}$, and the sectoral articles work with the all-low form because $\rho$ and $p$ are read from it.
 
 **The verification.** The dictionary was checked on the frame
 

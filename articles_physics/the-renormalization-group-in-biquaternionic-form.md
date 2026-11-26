@@ -8,7 +8,7 @@ The question is a fair one to ask of this framework, because the three read-list
 
 The finding is stated at the outset, and it has the same shape as the parents'.
 
-- **What the algebra supplies.** A canonical home for the regulator. The **wave biquaternion** $\tilde{P}_{\Phi} = i(E/c)\,e_t + \vec p$ of the propagator article has the **biquaternion norm** $\langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -E^{2}/c^{2} + \vec p^2 = N$, which is a *central* element of $\mathbb{B}$ — a complex scalar times $e_t$ — and which becomes the Euclidean momentum squared $\nu_{\mathrm{eu}}^2 \ge 0$ under the Wick rotation of the path-integral article. A cutoff is therefore naturally a condition on a central scalar, $|\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}| \le \Lambda^2$, which in the Euclidean case is the real scalar $\nu_{\mathrm{eu}}^2 \le \Lambda^2$. The positivity of that scalar is carried by the **Hermitian form** of the same material element, $4\pi^{2}\nu_{\mathrm{eu}}^2 = \langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*}$ with $\tilde{P}_{\Phi,E} = ik_{\mathrm{eu},0}\,e_t+\vec p\in\mathbb{B}_{\Phi}$, and the rotation is not needed for it: the form is definite, and the article uses it for the cutoff. Because the value is a *real* central scalar — an element of $\mathbb{R}e_t$, the only central direction that commutes with the projections onto $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ (the imaginary central direction $ie_t$ instead exchanges the sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$) — the natural regulator is **sector-blind** and does not mix the two sectors. The RG scale, the couplings, and the beta functions are likewise central scalars, and the whole flow is a flow of central elements.
+- **What the algebra supplies.** A canonical home for the regulator. The **wave biquaternion** $\tilde{P}_{\Phi} = i(E/c)\,e_t + \vec p$ of the propagator article has the **biquaternion norm** $\langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -E^{2}/c^{2} + \vec p^2 = N$, which is a *central* element of $\mathbb{B}$ — a complex scalar times $e_t$ — and which becomes the Euclidean momentum squared $\nu_{\mathrm{eu}}^2 \ge 0$ under the Wick rotation of the path-integral article. A cutoff is therefore naturally a condition on a central scalar, $|\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}| \le \Lambda^2$, which in the Euclidean case is the real scalar $\nu_{\mathrm{eu}}^2 \le \Lambda^2$. The positivity of that scalar is carried by the **Hermitian form** of the same material element, $4\pi^{2}\nu_{\mathrm{eu}}^2 = \langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*}$ with $\tilde{P}_{\Phi,E} = 2\pi i\nu_{\mathrm{eu},0}\,e_t+\vec p\in\mathbb{B}_{\Phi}$ (elsewhere abbreviated $ik_{\mathrm{eu},0}e_t+\vec p$, with $k_{\mathrm{eu},0}=2\pi\nu_{\mathrm{eu},0}$), and the rotation is not needed for it: the form is definite, and the article uses it for the cutoff. Because the value is a *real* central scalar — an element of $\mathbb{R}e_t$, the only central direction that commutes with the projections onto $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ (the imaginary central direction $ie_t$ instead exchanges the sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$) — the natural regulator is **sector-blind** and does not mix the two sectors. The RG scale, the couplings, and the beta functions are likewise central scalars, and the whole flow is a flow of central elements.
 - **What it does not supply, and what is therefore transcribed.** The effective action itself. None of the read-list articles supplies a biquaternionic action, a biquaternionic measure, or a biquaternionic regulator; the path-integral article says explicitly that the measure is an analytic construction outside the finite-dimensional algebra. The shell integration, the regularisation scheme, the one-loop coefficients, and the fixed points developed below are standard field theory, written in the biquaternion notation. They are **not** derived from $\mathbb{B}$.
 - **The gap, left visible.** Whether the framework's regulator *respects* the two-sector structure is a framework-specific question with no inherited answer. The honest answer is partial: the central biquaternion-norm cutoff is diagonal in the two sectors and so does not mix them, which is one sense of respect; but it cannot assign the sectors different scales, and it is a sharp cutoff, which breaks local invariance. The symmetry-safe regulator — dimensional regularisation — is not a four-dimensional biquaternion construct at all. The two requirements are met by two different regulators, and no regulator supplied by the algebra meets both. This is stated as a gap, not smoothed over.
 
@@ -21,13 +21,19 @@ The **effective action** $\Gamma[\xi]$ is the generating functional of one-parti
 The exact statement of that dependence is the **Wetterich equation**,
 
 $$
-\boxed{\;\partial/\partial r'_t \Gamma_{\imath}[\xi] = \mathrm{Sc}\!\left[\Big(\Gamma_{\imath}^{(2)}[\xi] + R_{\imath}\Big)^{-1}\,\partial/\partial r'_t R_{\imath}\right],
-\qquad r'_t = \log\frac{k}{\Lambda}\;},
+\boxed{\;k\,\partial_k \Gamma_{\imath}[\xi] = \tfrac12\,\mathrm{STr}\!\left[\Big(\Gamma_{\imath}^{(2)}[\xi] + R_{\imath}\Big)^{-1}\,k\,\partial_k R_{\imath}\right]\;},
 $$
 
-where $\Gamma_{\imath}^{(2)}$ is the second functional derivative of $\Gamma_{\imath}$ with respect to $\xi$, $R_{\imath}$ is a **regulator** that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.
+where $\Gamma_{\imath}^{(2)}$ is the second functional derivative of $\Gamma_{\imath}$ with respect to $\xi$, $R_{\imath}$ is a **regulator** that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. The flow is counted by the dimensionless variable
 
-1. **The doubled scalar part is a functional trace.** The symbol $\mathrm{Tr}$ here is the trace over the infinite-dimensional field space: it stands for $\int \frac{d^4p}{h^{4}}\sum_{\text{internal indices}}$ with the argument evaluated on the field configuration. It is **not** the biquaternion reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of the read list. The biquaternion trace is taken over the two-dimensional fiber of $\mathbb{B}$; the functional trace is taken over the space of modes. They must not be conflated, and when the flow equation is read in the biquaternion framework the two appear side by side: the *fiber* trace is the algebra's, and the *mode* trace is analytic.
+$$
+\ell = \log\frac{\Lambda}{k},
+\qquad k\,\partial_k = -\partial_\ell ,
+$$
+
+which increases as the cutoff is lowered, so that a shell step is $\delta\ell = \log b > 0$; the symbol is the RG time, and it is neither the corpus's time coordinate $r'_t$ nor the Mandelstam variable $t$. Two features of this equation are the whole subject of the article.
+
+1. **The trace is a functional trace, not the fibre trace.** The symbol $\mathrm{STr}$ is the trace over the infinite-dimensional field space: it stands for $\int \frac{d^4p}{h^{4}}\,\mathrm{tr}$ with $\mathrm{tr}$ the trace over the fibre indices and a minus sign for every fermionic component. The factor $\tfrac12$ is the standard one; it is not a biquaternion factor and it is not supplied by the algebra. The symbol is **not** the biquaternion reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of the read list: that is the trace over *one* minimal left ideal of $\mathbb{B}$, a two-complex-dimensional space, and $4\,\mathrm{Sc}$ is the complex trace over the field's four-complex-dimensional fibre. The fibre trace is finite-dimensional and is the algebra's; the mode trace is infinite-dimensional and is analytic. When the flow equation is read in the biquaternion framework the two appear side by side, and they stay distinct: neither the $\tfrac12$ nor the supertrace sign comes from $\mathbb{B}$.
 2. **The regulator is an input.** The equation is exact for any admissible $R_{\imath}$, but $R_{\imath}$ is not determined by the theory. Different choices give different *trajectories* $\Gamma_{\imath}$ and the same *physics* at the fixed point, up to scheme-dependent redefinitions of the couplings. The regulator is the analytic datum the algebra does not supply.
 
 If $\Gamma_{\imath}$ is expanded in a basis of local operators with couplings $g_i(k)$,
@@ -44,7 +50,7 @@ $$
 
 for the **beta functions**, where $\mu$ is the renormalization scale. A **fixed point** $g^*$ is a simultaneous zero, $\beta_i(g^*) = 0$, at which the couplings stop running. Linearizing about it, $\beta_i \approx \sum_j M_{ij}(g_j - g^*_j)$ with $M_{ij} = \partial\beta_i/\partial g_j|_{g^*}$, the eigenvalues of $M$ classify the directions as **relevant** (negative, growing toward the infrared), **irrelevant** (positive, shrinking toward the infrared), or **marginal**. The fixed points and their stability, not the trajectories, are the scheme-independent content of the RG.
 
-**The scale is a central scalar.** In the biquaternion framework everything in the last two displays is a real number: the scale $\mu$, the couplings $g_i$ of a scalar or connection theory, and the beta functions are ordinary scalars, that is, real multiples of $e_t$, hence elements of the centre $\mathbb{B}_{C}$ and, being real, of the informational sector $\mathbb{B}_{\Psi}$. The flow therefore acts trivially on the algebra: it rescales central coefficients and does not by itself rotate one sector into the other. This is the first place the two-sector question arises, and it is treated on its own in a later section.
+**The scale is a central scalar.** In the biquaternion framework everything in the last two displays is a real number: the scale $\mu$, the couplings $g_i$ of a scalar or connection theory, and the beta functions are ordinary scalars, that is, real multiples of $e_t$, hence elements of the centre $\mathbb{B}_{C}$ and, being real, of the informational sector $\mathbb{B}_{\Psi}$. The flow therefore acts trivially on the algebra: it rescales central coefficients and does not by itself rotate one sector into the other. The reason is one line: each $\beta_i$ is a real number, so $\beta_i e_t\in\mathbb{R}e_t$, and $\mathbb{R}e_t$ commutes with the projections $P_\pm$; a flow $\dot g_i = \beta_i$ therefore rescales a central coefficient and never generates a component along $ie_t$, the only central direction that exchanges the sectors. This is the first place the two-sector question arises, and it is treated on its own in a later section.
 
 ## The Regulator and the Shell
 
@@ -56,7 +62,7 @@ $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = (iE/c)^2 + \vec p^2 = -E^{2}/c^{2} + \vec p^{\,2} = N .
 $$
 
-This is the object on which the mass shell is the single condition $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$, as the propagator article records. It has a property that matters here and is verified in the companion: for a general biquaternion $\tilde{Q} = 2\pi\nu_t^{\prime}e_t + 2\pi\nu_{\Phi x}\vec e_x + 2\pi\nu_{\Phi y}\vec e_y + 2\pi\nu_{\Phi z}\vec e_z$ with complex coefficients, the product $\tilde{Q}\tilde{Q}^{\natural} = 4\pi^{2}\nu_t^{\prime\,2} + k_1^2 + k_2^2 + k_3^2$ is a **complex scalar times $e_t$** — it has no vector part — and therefore lies in the centre and commutes with every element of $\mathbb{B}$. The biquaternion norm is central.
+This is the object on which the mass shell is the single condition $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$, as the propagator article records. It has a property that matters here and is verified in the companion: for a general biquaternion $\tilde{Q} = 2\pi\nu_t^{\prime}e_t + 2\pi\nu_{\Phi x}\vec e_x + 2\pi\nu_{\Phi y}\vec e_y + 2\pi\nu_{\Phi z}\vec e_z$ with complex coefficients, the product $\tilde{Q}\tilde{Q}^{\natural} = 4\pi^{2}\nu_t^{\prime\,2} + k_1^2 + k_2^2 + k_3^2$ is a **complex scalar times $e_t$** — it has no vector part — and therefore lies in the centre and commutes with every element of $\mathbb{B}$. The biquaternion norm is central. The sum carries plus signs because each coefficient is squared, not because the norm is non-negative: for the physical wave biquaternion, $q_0 = iE/c$, so the norm is $-E^{2}/c^{2} + \vec p^{\,2}$ and is negative for timelike momenta. The continuation that makes it positive is the Euclidean rotation of the next subsection, and the Hermitian form is the alternative that makes it positive without one.
 
 **The standard route: the Wick rotation, quoted.** Under the Wick rotation $E \to i \nu_{\mathrm{eu},0}$ (equivalently the identification $\mathbb{B}_{\Phi} \to \mathbb{B}_{H}$ of the companion article), the biquaternion norm becomes
 
@@ -114,30 +120,30 @@ The symmetry-safe alternative is **dimensional regularisation** (DR): the loop i
 The cleanest case is a single real scalar with a quartic self-interaction,
 
 $$
-S[\xi] = \int d^4r\left[\tfrac12(\partial\xi)^2 + \tfrac12 m^2\xi^2 + \frac{\varpi_{\mathrm{cpl}}}{4!}\xi^4\right],
+S[\xi] = \int d^4r\left[\tfrac12(\partial\xi)^2 + \tfrac12 m_0^2\xi^2 + \frac{\varpi_{\mathrm{cpl}}}{4!}\xi^4\right],
 $$
 
-whose coupling $\varpi_{\mathrm{cpl}}$ is marginal in $d = 4$ and whose beta function is the textbook one. The point of redoing it here is to show the shell integration explicitly, since a beta function stated without it is exactly the failure mode this subject invites.
+whose coupling $\varpi_{\mathrm{cpl}}$ is marginal in $d = 4$ and whose beta function is the textbook one. The mass enters as the invariant $m_0^{2}\equiv 4\pi^{2}\nu_m^{2}$ with $\nu_m = mc/h$ — the corpus's wave-number form, never a bare $m^{2}$ beside a wave number — and $k$ is the wave number of the loop momentum, in the same units as the cutoff $\Lambda$. The point of redoing it here is to show the shell integration explicitly, since a beta function stated without it is exactly the failure mode this subject invites.
 
-Split the field into slow and fast modes, $\xi = \xi_< + \xi_>$, where $\xi_>$ carries only momenta in the shell $\Lambda/b < |k| < \Lambda$. Integrating out $\xi_>$ at one loop gives the correction to the four-point function from the bubble diagram: with two vertices $-(\varpi_{\mathrm{cpl}})$ from $(\varpi_{\mathrm{cpl}}/4!)\xi^4$, the one-loop 1PI four-point function in the $s$, $r'_t$, and $u$ channels is
+Split the field into slow and fast modes, $\xi = \xi_< + \xi_>$, where $\xi_>$ carries only momenta in the shell $\Lambda/b < |k| < \Lambda$. Integrating out $\xi_>$ at one loop gives the correction to the four-point function from the bubble diagram: with two vertices $-(\varpi_{\mathrm{cpl}})$ from $(\varpi_{\mathrm{cpl}}/4!)\xi^4$, the one-loop 1PI four-point function in the $s$, $t$, and $u$ channels is
 
 $$
 \Gamma^{(4)}_{\text{1-loop}}(p) = \frac{1}{2}\cdot 3\,(-\varpi_{\mathrm{cpl}})^2\, I_>(p),
 \qquad
-I_>(p) = \int_{\text{shell}}\!\frac{d^4k}{(2\pi)^4}\,\frac{1}{\big(k^2+m^2\big)\big((k+p)^2+m^2\big)},
+I_>(p) = \int_{\text{shell}}\!\frac{d^4k}{(2\pi)^4}\,\frac{1}{\big(k^2+m_0^2\big)\big((k+p)^2+m_0^2\big)},
 $$
 
 where the factor $3$ counts the channels and $1/2$ is the symmetry factor of the bubble. At zero external momentum the shell integral is elementary. Using $\int d^4k = 2\pi^2 k^3\,dk$ and $u = k^2$,
 
 $$
-I_>(0) = \frac{1}{16\pi^2}\int_{\Lambda^2/b^2}^{\Lambda^2} \frac{u\,du}{(u+m^2)^2}
-= \frac{1}{16\pi^2}\left[\log\frac{\Lambda^2 + m^2}{\Lambda^2/b^2 + m^2} + m^2\!\left(\frac{1}{\Lambda^2 + m^2} - \frac{1}{\Lambda^2/b^2 + m^2}\right)\right].
+I_>(0) = \frac{1}{16\pi^2}\int_{\Lambda^2/b^2}^{\Lambda^2} \frac{u\,du}{(u+m_0^2)^2}
+= \frac{1}{16\pi^2}\left[\log\frac{\Lambda^2 + m_0^2}{\Lambda^2/b^2 + m_0^2} + m_0^2\!\left(\frac{1}{\Lambda^2 + m_0^2} - \frac{1}{\Lambda^2/b^2 + m_0^2}\right)\right].
 $$
 
-In the deep ultraviolet, $m^2 \ll \Lambda^2$, and the mass-dependent terms are suppressed:
+In the deep ultraviolet, $m_0^2 \ll \Lambda^2$, and the mass-dependent terms are suppressed:
 
 $$
-I_>(0) = \frac{1}{8\pi^2}\log b \;+\; O\!\left(\frac{m^2}{\Lambda^2}\right).
+I_>(0) = \frac{1}{8\pi^2}\log b \;+\; O\!\left(\frac{m_0^2}{\Lambda^2}\right).
 $$
 
 The coefficient $1/(8\pi^2)$ of the logarithm is the whole content of the one-loop renormalization of the quartic coupling, and it is **mass-independent**: the mass appears only in the power-suppressed terms. This is why the beta function of the marginal coupling is universal and why it is insensitive to the detailed spectrum.
@@ -156,7 +162,7 @@ $$
 \beta_{\varpi_{\mathrm{cpl}}} = \mu\frac{d\varpi_{\mathrm{cpl}}}{d\mu} = +\frac{3\varpi_{\mathrm{cpl}}^2}{16\pi^2}\;}.
 $$
 
-The relative sign is fixed by $\ell = \log(\Lambda_0/\Lambda)$: increasing $\ell$ lowers the cutoff, so $\mu\,d/d\mu = -d/d\ell$. The sign of the beta function is therefore **positive**, and its consequences are immediate. For $\varpi_{\mathrm{cpl}} > 0$, the coupling *grows* toward the ultraviolet and *shrinks* toward the infrared; the Gaussian fixed point $\varpi_{\mathrm{cpl}}^* = 0$ is infrared-attractive, and the coupling reaches a Landau pole at a finite ultraviolet scale, at $\ell = \ell_0 - 16\pi^2/(3\varpi_{\mathrm{cpl},0})$ measured from any reference point $\ell_0$. The one-loop formula is not to be continued past that pole toward the ultraviolet, and a careless continuation through it produces an artifact; toward the infrared the coupling decreases monotonically to zero, which is the same statement as the infrared-attractiveness of the Gaussian fixed point.
+The relative sign is fixed by $\ell = \log(\Lambda/k)$: increasing $\ell$ lowers the cutoff, so $\mu\,d/d\mu = k\,d/dk = -d/d\ell$. The sign of the beta function is therefore **positive**, and its consequences are immediate. For $\varpi_{\mathrm{cpl}} > 0$, the coupling *grows* toward the ultraviolet and *shrinks* toward the infrared; the Gaussian fixed point $\varpi_{\mathrm{cpl}}^* = 0$ is infrared-attractive, and the coupling reaches a Landau pole at a finite ultraviolet scale, at $\ell = \ell_0 - 16\pi^2/(3\varpi_{\mathrm{cpl},0})$ measured from any reference point $\ell_0$. The one-loop formula is not to be continued past that pole toward the ultraviolet, and a careless continuation through it produces an artifact; toward the infrared the coupling decreases monotonically to zero, which is the same statement as the infrared-attractiveness of the Gaussian fixed point.
 
 The same coefficient is obtained from **dimensional regularisation**, which is a useful cross-check of the regulator: the massless bubble in $d = 4-\epsilon$ is
 
@@ -219,7 +225,7 @@ N_f < \frac{33}{2} = 16.5,
 \qquad\text{that is}\qquad N_f \le 16 .
 $$
 
-The beta function changes sign at $N_f = 16.5$: below it the theory is asymptotically free, above it the coupling grows in the ultraviolet and the theory is infrared-free. This threshold is verified in the companion directly from the formula for $b_0$, on the values $N_f = 16$ and $N_f = 17$, not on the threshold itself.
+The beta function changes sign between $N_f = 16$ and $N_f = 17$: at $N_f = 16$ the theory is asymptotically free, at $N_f = 17$ the coupling grows in the ultraviolet and the theory is infrared-free. The half-integer value $33/2$ is the zero of the linear formula and is not a physical flavour number. This threshold is verified in the companion directly from the formula for $b_0$, on the values $N_f = 16$ and $N_f = 17$, not on the threshold itself.
 
 The abelian case is the third sign, and it falls on the scalar side. For quantum electrodynamics with one Dirac fermion, $b_0 = -\frac{4}{3}$ in the same normalization, so $\beta_e = +e^3/(12\pi^2) > 0$: the abelian connection coupling grows in the ultraviolet, like the scalar quartic coupling and unlike the non-abelian one. The distinction is a property of the symmetry group's adjoint Casimir, not of the algebra $\mathbb{B}$: nothing in the biquaternion framework selects $SU(N)$ over $\mathrm{U}(1)$, and the beta-function signs are those of the symmetry groups one chooses to write down.
 
@@ -282,7 +288,7 @@ This is the framework-specific question, and it deserves a direct answer rather 
 
 **The tension with local invariance.** The sharp biquaternion-norm cutoff is the regulator the algebra most naturally hosts, and it is the one that is sector-blind. It is also the one that breaks local invariance. The regulator that preserves local invariance, dimensional regularisation, is not a four-dimensional biquaternion object: it continues $d = 4 - \epsilon$, and there is no $\epsilon$-deformed biquaternion algebra in the corpus. The two desirable properties — living in the algebra's central structure and preserving local invariance — are therefore met by two different regulators, and no single regulator supplied by the framework meets both. A third possibility, a Pauli–Villars regulator, is invariant and lives in field space, but it too is external to the algebra and introduces auxiliary fields whose sector assignment is again a choice. The honest statement is that the framework's regulator is **sector-blind but not sector-distinguishing, and its algebraically natural choice conflicts with local invariance**; a genuinely biquaternionic, invariant regulator is an open problem, not a result.
 
-There is one further framework-specific remark worth recording as a question rather than a claim. The framework makes the complex structure local: $c = 1/\sqrt{\epsilon\mu_{\mathrm m}}$ varies with the medium, and the $i r'_t$ direction varies with it. The RG scale $\mu$ is also a local structure in the sense of being a function of the probe. Whether the medium-dependent local complex structure and the RG scale are related — whether a renormalization of $c$ or of the local complex structure is even meaningful — is not addressed by any read-list article, and enters the open questions below. The suggestion is recorded as a question because that is what it is.
+There is one further framework-specific remark worth recording as a question rather than a claim. The framework makes the complex structure local: $c = 1/\sqrt{\epsilon\mu_{\mathrm m}}$ varies with the medium, and the $i r'_t$ direction varies with it. The RG scale $\mu$ is also a local structure in the sense of being a function of the probe. Whether the medium-dependent local complex structure and the RG scale are related — whether a renormalization of $c$ or of the local complex structure is even meaningful — is not addressed by any read-list article, and enters the open questions below. The suggestion is recorded as a question because that is what it is. The computations above take $c$ constant; where $c$ varies, the cutoff and the beta functions inherit a medium dependence that this article does not track.
 
 ## What the Algebra Adds and What It Does Not
 
@@ -326,7 +332,7 @@ The renormalization group describes how the effective action depends on scale. I
 The beta functions are standard, and their signs are checked on independent cases. For the scalar quartic coupling, the explicit shell integration gives
 
 $$
-I_>(0) = \frac{1}{8\pi^2}\log b + O\!\left(\frac{m^2}{\Lambda^2}\right),
+I_>(0) = \frac{1}{8\pi^2}\log b + O\!\left(\frac{m_0^2}{\Lambda^2}\right),
 \qquad
 \delta\varpi_{\mathrm{cpl}} = -\frac{3\varpi_{\mathrm{cpl}}^2}{16\pi^2}\log b,
 \qquad
@@ -356,18 +362,20 @@ Three gaps are left visible. First, the framework supplies no action, so the bet
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; home of the scale, couplings, and beta functions |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace; image of the standard (Wick) route |
 | $\tilde{P}_{\Phi} = i(E/c)\,e_t + \vec p$ | Wave biquaternion; material for real $E$ |
-| $\tilde{P}_{\Phi,E} = ik_{\mathrm{eu},0}\,e_t + \vec p \in \mathbb{B}_{\Phi}$ | Euclidean wave biquaternion of the form route |
+| $\tilde{P}_{\Phi,E} = 2\pi i\nu_{\mathrm{eu},0}\,e_t + \vec p \in \mathbb{B}_{\Phi}$ | Euclidean wave biquaternion of the form route; $k_{\mathrm{eu},0}=2\pi\nu_{\mathrm{eu},0}$ |
 | $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = N$ | Biquaternion norm; central; cutoff invariant |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_{\imath} Q_{1\imath}\overline{Q_{2\imath}}$ | Hermitian form; real, positive definite; carries the positivity of the cutoff |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_{\imath} Q_{1,\imath}\,\overline{Q_{2,\imath}}$ | Hermitian form; $\mathrm{Sc}$ is half the $2\times2$ image trace; real and positive definite; carries the positivity of the cutoff |
 | $4\pi^{2}\nu_{\mathrm{eu}}^2 = \langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*} = \langle -2\pi\nu_{\mathrm{eu},0}\,e_t+\vec p\rangle_{\natural}$ (Euclidean) | Euclidean momentum squared; the two routes agree |
 | $\Lambda$, $b$, $\delta\ell = \log b$ | Cutoff, shell ratio, RG step toward the IR |
 | $\mu$ | Renormalization scale |
 | $\Gamma_{\imath}[\xi]$, $\Gamma_{\imath}^{(2)}$ | Wilsonian effective action and its second functional derivative |
 | $R_{\imath}$ | Regulator function |
-| $\partial/\partial r'_t\,\Gamma_{\imath} = \mathrm{Sc}[(\Gamma_{\imath}^{(2)}+R_{\imath})^{-1}\partial/\partial r'_t R_{\imath}]$ | Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace |
+| $k\,\partial_k\Gamma_{\imath} = \tfrac12\,\mathrm{STr}[(\Gamma_{\imath}^{(2)}+R_{\imath})^{-1}k\,\partial_k R_{\imath}]$ | Wetterich exact flow equation; $\mathrm{STr}$ is the functional supertrace over field space, not the fibre trace $2\,\mathrm{Sc}$ |
+| $\ell = \log(\Lambda/k)$, $k\partial_k = -\partial_\ell$ | RG time; increases toward the IR; not the time coordinate $r'_t$ |
 | $\beta_i = \mu\,dg_i/d\mu$ | Beta function |
 | $g^*$ | Fixed point, $\beta(g^*) = 0$ |
 | $\varpi_{\mathrm{cpl}}$ | Scalar quartic coupling, $(\varpi_{\mathrm{cpl}}/4!)\xi^4$ |
+| $m_0^2\equiv 4\pi^{2}\nu_m^{2}$, $\nu_m=mc/h$ | Mass invariant in wave-number form; the mass term of the scalar action and of the bubble |
 | $\epsilon = 4-d$ | Dimensional-regularisation parameter |
 | $g$ | Non-abelian connection coupling |
 | $b_0 = \tfrac{11}{3}C_2(G) - \tfrac{2}{3}\sum T(r)$ | One-loop representative coefficient |

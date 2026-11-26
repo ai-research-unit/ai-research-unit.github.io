@@ -61,9 +61,9 @@ The factor $\kappa^2$ is the ideal's two complex dimensions and $\kappa^4$ the f
 
 **The non-central case.** If $S^{(2)}$ is not central, it mixes the two chiralities (the minimal left ideals) and the determinant does not factor. The mass term's right-multiplication form is the standard instance: the Dirac operator
 $$
-\mathcal{F} = \tilde\nabla_\Phi + m ,
+\mathcal{F} = \tilde\nabla_\Phi + 2\pi\nu_m ,
 $$
-with $m$ the real mass, is a module operator whose determinant carries both a magnitude and a **phase**; the phase is the physically new object and is treated in a later section. The general principle is that the determinant of a central operator is a product of scalars and the determinant of a non-central one is not.
+with $2\pi\nu_m$ the mass in wave-number units, $\nu_m=\frac{mc}{h}$, is an operator on the fibre whose determinant carries both a magnitude and a **phase**; the phase is the physically new object and is treated in a later section. The general principle is that the determinant of a central operator is a product of scalars and the determinant of a non-central one is not.
 
 ## The Fundamental Determinant and the Biquaternion Norm
 
@@ -96,7 +96,7 @@ $$
 $$
 confirming the second. The eigenvalues of $\mathsf{M}_2(\tilde Q)$ are $1.520333+0.407233i$ and $-0.120333-0.007233i$, whose product is $-0.18-0.06i$, as required.
 
-**Interpretation of the result.** The determinant of an element of the framework's algebra is the biquaternion norm, so a vanishing determinant — a zero divisor — is a vanishing norm, i.e. an element of the zero-divisor cone. This is the algebraic reason the cone that *Four-Vectors and the Interval* treats is the light cone and the singular locus of the algebra at once. The regular-representation determinant being the square is the algebraic statement that the left and right actions see the same norm; there is no separate "left determinant" and "right determinant".
+**Interpretation of the result.** The determinant of an element of the framework's algebra is the biquaternion norm, so a vanishing determinant — a zero divisor — is a vanishing norm, i.e. an element of the zero-divisor cone. In the material reading $Q_t=i r'_t$ the condition is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2=0$, the light cone of *Four-Vectors and the Interval*, so there the singular locus and the light cone are the same set. Over the whole algebra the identification is not literal: $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ has real solutions forming a six-real-dimensional set for general complex coefficients, strictly larger than the three-dimensional light cone, and the light cone is the material-sector section of the zero-divisor cone. The regular-representation determinant being the square is the algebraic statement that the left and right actions see the same norm; there is no separate "left determinant" and "right determinant".
 
 ## The Determinant in the Gaussian Integral
 
@@ -109,6 +109,8 @@ $$
 $$
 the determinant taken on the field's eight real dimensions. The factor $-\tfrac12$ is the inverse square root appropriate to a real field (one self-conjugate under the pairing), and the power is fixed by the dimension rather than chosen: the determinant of a central operator is the eighth power of its value, so its inverse square root is the fourth power, $\kappa^{-4}$ per mode. Four real dimensions per sector give the power $-2$, and the two sectors multiply to $-4$.
 
+**The two routes agree, and that is the check on the count.** The complex Gaussian on the four complex dimensions gives $1/\det W=\kappa^{-4}$ and $\Gamma_1=\log\det W=4\log\kappa$; the real Gaussian on the eight real dimensions gives $(\kappa^{8})^{-1/2}=\kappa^{-4}$ and $\Gamma_1=\tfrac12\log\kappa^{8}=4\log\kappa$. For a central positive operator these are the same number, because $(\det_{\mathbb{R}})^{-1/2}=\lvert\det_{\mathbb{C}}\rvert^{-1}$; only the intermediate powers differ, and only in the normalisation of $Z_0$. What would *not* be consistent is $\kappa^{2}$ beside $\tfrac12\log\kappa^{2}$: that product is the count of one complex dimension — the centre — and the field is not the centre.
+
 **The one-loop action.** Expanding about a classical field as in the previous article,
 $$
 S[\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}] = S[\tilde{Ξ}_{\mathrm{cl}}]+\tfrac12\big\langle\delta\tilde{Ξ},S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]\delta\tilde{Ξ}\big\rangle+\cdots ,
@@ -117,7 +119,7 @@ the Gaussian integration of $\delta\tilde{Ξ}$ gives the one-loop effective acti
 $$
 \Gamma_1[\tilde{Ξ}_{\mathrm{cl}}] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] ,
 $$
-where $\mathrm{Tr}$ is the trace on the module. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.
+where $\mathrm{Tr}$ is the trace on the field's fibre. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.
 
 **The free case.** For the free biquaternion scalar, $S^{(2)}=W_{\mathrm{kinetic}}$ is central and mode-diagonal, and
 $$
@@ -125,7 +127,7 @@ $$
 = 4\sum_{\text{modes}}\log\big(4\pi^{2}\nu_{\mathrm{eu}}^2+4\pi^{2}\nu_m^{2}\big)
 \qquad\text{(Euclidean)},
 $$
-the exponent $8$ being the field's eight real dimensions, so that the $\tfrac12$ leaves four logarithms per mode — twice the free energy of a complex scalar, the eight-real count in its standard form. This is the biquaternion scalar's one-loop free energy; its divergence and renormalization are standard and are the subject of the renormalization-group article.
+the exponent $8$ being the field's eight real dimensions, so that the $\tfrac12$ leaves four logarithms per mode: eight times the free energy of a real scalar, whose own is $\tfrac12\log\kappa$, and four times that of a complex one, the eight-real count in its standard form. This is the biquaternion scalar's one-loop free energy; its divergence and renormalization are standard and are the subject of the renormalization-group article.
 
 ### The Determinant as a Product over Modes, and Its Ratio
 
@@ -139,7 +141,7 @@ in the Euclidean continuation, the exponent eight being the field's eight real d
 $$
 \frac{\det S^{(2)}_1}{\det S^{(2)}_2} = \frac{\prod_n \eta_n^{(1)}}{\prod_n \eta_n^{(2)}}
 $$
-is the Ray–Singer torsion of the pair when the operators are Laplacians on a manifold, and it is the finite, physical content of the determinant. In the framework the ratio is taken on a fixed module, and the algebra's contribution is the module's dimension, which fixes the size of each factor.
+is the finite, physical content of the determinant. It is the Ray–Singer torsion in the precise sense when the operators are the Laplacians of a de Rham complex on a fixed manifold, where the torsion is the alternating product $\prod_p(\det{}'\Delta_p)^{(-1)^{p}}$ and not the quotient of two Laplacians; for a general pair of Laplacians the quotient is the analytic torsion of the pair in the wider sense. In the framework the ratio is taken on a fixed fibre — the algebra — so the fibre's dimension cancels between numerator and denominator: the scheme-independent content does not depend on the component count, and only the unnormalised determinant does.
 
 ### The Determinant and the Propagator
 
@@ -193,7 +195,7 @@ with the phase $\theta_{\mathrm{pha},\mathcal{F}}$ the object of interest. For a
 $$
 \theta_{\mathrm{pha},\mathcal{F}(r'_t)} = \frac{\pi}{2}\,\digamma_{\mathrm{fac}}\big(\mathcal{F}(r'_t)\big) + \text{const},
 $$
-a spectral asymmetry counted by the heat-kernel regularized sum of signs of eigenvalues. This is standard (Atiyah–Patodi–Singer), and it is the analytic home of the framework's $\theta_{\mathrm{vac}}$ dependence: the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form* arises when the fermion determinant's phase depends on a background field through the eta invariant, so that $\exp(-S)$ acquires a topological phase. The biquaternion content is that the chiral structure whose asymmetry is counted is the two-minimal-left-ideal structure of the algebra, and that the mass term is the right-multiplication operator between them.
+a spectral asymmetry counted by the heat-kernel regularized sum of signs of eigenvalues, $\digamma_{\mathrm{fac}}=\zeta_{\mathcal{F}}(0)$ with $\zeta_{\mathcal{F}}(s)=\sum_n\mathrm{sign}(\eta_n)\lvert\eta_n\rvert^{-s}$. The factor $\pi/2$ with the plus sign is the convention in which $\det\mathcal{F}=\lvert\det\mathcal{F}\rvert\exp(i\frac{\pi}{2}\eta)$; the opposite convention writes $-i\frac{\pi}{2}\eta$, and the additive constant absorbs the scheme-dependent part. This is standard (Atiyah–Patodi–Singer), and it is the analytic home of the framework's $\theta_{\mathrm{vac}}$ dependence: the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form* arises when the fermion determinant's phase depends on a background field through the eta invariant, so that $\exp(-S)$ acquires a topological phase. The biquaternion content is that the chiral structure whose asymmetry is counted is the two-minimal-left-ideal structure of the algebra, and that the mass term is the right-multiplication operator between them.
 
 **Index and anomaly.** The magnitude's failure to be conformally invariant, and the phase's failure to be trivial, are two faces of the same configuration-space topology. The magnitude's conformal variation is the conformal anomaly of *The Conformal Anomaly in Biquaternionic Form*; the phase's topology is the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form*. Both are properties of a determinant of a module operator, and both are standard field theory written in the framework's notation.
 
@@ -207,7 +209,7 @@ $$
 \qquad
 \big\langle \sum_{\imath}\varepsilon_{\imath} T_{\imath\imath}\big\rangle = -\frac{1}{\sqrt{g}}\sum_{\imath,\jmath}g_{\imath\jmath}\frac{\delta\,\Gamma_1}{\delta g_{\imath\jmath}} ,
 $$
-the trace of the energy-momentum tensor being the conformal variation of the one-loop effective action. That this is non-vanishing for a conformally invariant classical theory is the **conformal anomaly**, and it is the statement that the regularization of the determinant breaks the classical symmetry. Its coefficient is the Seeley–DeWitt coefficient $a_{d/2}$, and in the biquaternion framework that coefficient carries the module's dimension and the sector structure. The computation and the interpretation of the anomaly are in *The Conformal Anomaly in Biquaternionic Form*; this article records the determinant-side origin.
+the trace of the energy-momentum tensor being the conformal variation of the one-loop effective action. That this is non-vanishing for a conformally invariant classical theory is the **conformal anomaly**, and it is the statement that the regularization of the determinant breaks the classical symmetry. Its coefficient is the Seeley–DeWitt coefficient $a_{d/2}$ — in $d=4$ the specific combination of the Weyl-squared $C^{2}$, Euler $E$ and $\Box R$ terms that the standard anomaly fixes — and in the biquaternion framework that coefficient carries the fibre's dimension and the sector structure. The computation and the interpretation of the anomaly are in *The Conformal Anomaly in Biquaternionic Form*; this article records the determinant-side origin.
 
 ## What Is Established and What Is Interpretation
 
@@ -223,22 +225,22 @@ the trace of the energy-momentum tensor being the conformal variation of the one
 - Reading the biquaternion norm as the determinant, so that zero divisors are exactly the singular elements, is the algebra's own statement. Reading the fermion determinant's phase as the analytic home of the $\theta_{\mathrm{vac}}$ vacuum is the standard Atiyah–Patodi–Singer picture applied to the framework's module.
 
 **Open.**
-- The framework has no independent normalization of the determinant; statements are scheme-independent only as ratios on a fixed module.
-- Whether the module's dimension and the sector structure produce anomaly coefficients differing from those of a complex scalar is a normalization question that the spin-0 and spin-1/2 articles must fix; this article does not.
+- The framework has no independent normalization of the determinant; statements are scheme-independent only as ratios on a fixed fibre, where the fibre's dimension cancels.
+- Whether the fibre's dimension and the sector structure produce anomaly coefficients differing from those of a complex scalar is a normalization question that the spin-0 and spin-1/2 articles must fix; this article does not.
 
 ## Summary
 
-The functional determinant of a biquaternion operator is a determinant on the module, and the algebra contributes two structural facts to it. The determinant of a single algebra element is the **biquaternion norm**,
+The functional determinant of a biquaternion operator is a determinant on the field's fibre, the algebra, and the algebra contributes two structural facts to it. The determinant of a single algebra element is the **biquaternion norm**,
 $$
 \det\mathsf{M}_2(\tilde Q) = \langle\tilde Q\rangle_{\natural} = \mathrm{Sc}\big(\tilde Q\tilde Q^{\natural}\big),
 $$
-so the singular elements are the zero divisors, i.e. the light cone; and left and right multiplication on the algebra both have determinant
+so the singular elements are the zero divisors, whose material-sector section is the light cone; and left and right multiplication on the algebra both have determinant
 $$
 \det L_{\tilde Q} = \det R_{\tilde Q} = \langle\tilde Q\rangle_{\natural}^2 .
 $$
 Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$, $\det\mathsf{M}_2(\tilde Q)=-0.180000-0.060000i$ and $\det L_{\tilde Q}=\det R_{\tilde Q}=0.0288000+0.0216000i=(\det\mathsf{M}_2(\tilde Q))^2$, with $\mathsf{M}_2(\tilde Q)$'s eigenvalues multiplying correctly.
 
-For a central fluctuation operator the module determinant is the square of the single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$, and the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a **phase**, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the conformal anomaly (*The Conformal Anomaly in Biquaternionic Form*) and the phase's topology is the $\theta_{\mathrm{vac}}$ vacuum (*The Theta Vacuum in Biquaternionic Form*). None of the regularization is the algebra's; the operator on which it acts is.
+For a central fluctuation operator the determinant on one minimal left ideal is the square of the single-complex-dimension value, $\det(\kappa e_t)|_{\text{ideal}}=\kappa^{2}$, and on the field's fibre it is the fourth power, $\det(\kappa e_t)|_{\mathbb{B}}=\kappa^{4}$; the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}=\tfrac12\log\kappa^{8}=4\log\kappa$ per mode, eight times that of a real scalar because the fibre has eight real dimensions; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a **phase**, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the conformal anomaly (*The Conformal Anomaly in Biquaternionic Form*) and the phase's topology is the $\theta_{\mathrm{vac}}$ vacuum (*The Theta Vacuum in Biquaternionic Form*). None of the regularization is the algebra's; the operator on which it acts is.
 
 ## Summary of Notation
 
@@ -250,15 +252,15 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$ | Determinant of an algebra element |
 | $L_{\tilde Q},R_{\tilde Q}$ | Left and right multiplication on the algebra |
 | $\det L_{\tilde Q}=\det R_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^2$ | Regular-representation determinant |
-| $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | Fluctuation operator on the module |
+| $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | Fluctuation operator on the field's fibre, the algebra |
 | $\delta\tilde{Ξ}$ | Fluctuation about the classical field, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |
 | $\det S^{(2)}$, $\mathrm{Tr}\log S^{(2)}$ | Functional determinant; one-loop action |
-| $\det(\kappa e_t)|_{\text{module}}=\kappa^2$ | Central operator's module determinant |
+| $\det(\kappa e_t)|_{\text{ideal}}=\kappa^{2}$, $\det(\kappa e_t)|_{\mathbb{B}}=\kappa^{4}$ | Central operator's determinant on one ideal and on the field's fibre; the Gaussian power is $\kappa^{-4}$ |
 | $(\det W_{\mathrm{kinetic}})^{-1/2}$ | Gaussian normalization |
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
 | $G_{\mathrm{prop}}(r'_t)=\mathrm{Tr}\,\exp(-r'_t S^{(2)})$, $K\sim(4\pi r'_t)^{-d/2}\sum a_n {r'_{t}}^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / conformal anomaly |
-| $\mathcal{F}=\begin{pmatrix}-2\pi\nu_m&\mathcal{F}_R\\ \mathcal{F}_L&-2\pi\nu_m\end{pmatrix}$ | Fermionic fluctuation operator: the mass-shifted pair in the chirality basis, with the two lines' derivative parts off the diagonal |
+| $\mathcal{F}=\begin{pmatrix}-2\pi\nu_m&\mathcal{F}_R\\ \mathcal{F}_L&-2\pi\nu_m\end{pmatrix}$ | Fermionic fluctuation operator in the chirality basis; $\mathcal{F}_R,\mathcal{F}_L$ are the derivative blocks $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ between the two minimal left ideals, and $-2\pi\nu_m$ the mass on the diagonal |
 | $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\theta_{\mathrm{pha},\mathcal{F}})$ | Complex (chiral) fermion determinant |
 | $\digamma_{\mathrm{fac}}(\mathcal{F})$ | Eta invariant; spectral asymmetry of the phase |
 

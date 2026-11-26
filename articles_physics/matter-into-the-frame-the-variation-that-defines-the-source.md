@@ -55,6 +55,8 @@ $$
 \langle\tilde F_{\Phi,\imath},\tilde F_{\Phi,\jmath}\rangle_{\natural}=G_{\imath\jmath}.
 $$
 
+**Two letters that clash, and the section's convention for them.** $G_{\imath\jmath}$ is the inverse Gram matrix throughout this section, and the symbol is needed for that; the Einstein tensor is therefore written $\mathcal G_{\imath\jmath}$. The corpus does not use one convention: $G_{\imath\jmath}$ is the Einstein tensor in the linearised-gravity articles and the inverse metric in *The Curved Dirac Operator and Its Square*. A reader moving between them should read the letter off the sentence, not off the symbol, and this section is consistent with itself: $G_{\imath\jmath}$ with its indices is the inverse Gram matrix, $\mathcal G_{\imath\jmath}$ is the Einstein tensor, and the bare $G$ is Newton's constant.
+
 **A correction to the parent article's display.** *Curved Spacetime and the Biquaternion Framework* writes the dual frame as $\tilde F_{\imath}=g_{\imath\jmath}\tilde E_{\Phi,\jmath}$. Read with $g_{\imath\jmath}$ as the array of the interval — which is how that article defines it — the display is right exactly when $g$ is its own inverse. In the flat frame $g=\digamma_{\mathrm{met}}$, it returns $-\tilde E_{\Phi,0}$ on the time leg and $+\tilde E_{\Phi,k}$ on the spatial legs, and those are the dual legs: $-ie_t$ is dual to $ie_t$ because $\langle-ie_t,ie_t\rangle_{\natural}=+1$. For the lapse leg $\tilde E_{\Phi,0}=iN e_t$ with $g_{00}=-N^{2}$ it returns $-iN^{3}e_t$ where the dual is $-ie_t/N$, and there it is wrong. The array intended is the inverse, and the label $G$ is used here so that the two cannot be confused. The parent's formula is right in substance — the dual frame is the frame contracted with an inverse metric — and it is the letter that is wrong outside the flat frame.
 
 ## The Question, Without a Source Term
@@ -62,7 +64,7 @@ $$
 The field equation of general relativity is usually written with a source on the right and a geometric object on the left,
 
 $$
-G_{\imath\jmath}=\frac{8\pi G}{c^{4}}T_{\imath\jmath},
+\mathcal G_{\imath\jmath}=\frac{8\pi G}{c^{4}}T_{\imath\jmath},
 $$
 
 and the two sides read as if two different sorts of thing were being equated. In a frame formulation that reading is wrong, and the correction is not a matter of taste.
@@ -138,6 +140,8 @@ $$
 So the frame variation determines the tensor and the tensor determines the frame variation. Nothing is lost in the passage, which is the formal statement that the frame is a parametrisation of the metric and not a richer object.
 
 **The dictionary needs no assumption about $\mathcal L$.** It is a chain rule, and it holds for any $\mathcal L$ that depends on the frame only through $g$: a scalar with a potential, a Maxwell field, a perfect fluid with an equation of state, a higher-derivative term. What changes from one to the next is $\Theta$, not the dictionary.
+
+**The indices are upstairs, and the sectoral articles write them downstairs.** Because $\Theta$ is defined here by the derivative with respect to $g_{\imath\jmath}$, it is the twice-contravariant array: $\Theta_{\imath\jmath}$ in this article's displays means $T^{\imath\jmath}$ of the standard literature, and a reader who lowers both labels has to pay $g_{\imath a}g_{\jmath b}$. On the flat frame the two arrays coincide and the distinction is invisible; on a curved frame they differ at first order in $h_{\imath\jmath}$. The sectoral articles of this section write the all-low form, $\Theta_{\imath\jmath}=\partial_{\imath}\xi\,\partial_{\jmath}\xi+g_{\imath\jmath}\mathcal L$, because $\rho$ and $p$ are read off it, and the two conventions are reconciled in *The Scalar Sector on a Frame*.
 
 ### The Verification
 

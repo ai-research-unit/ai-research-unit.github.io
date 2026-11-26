@@ -10,9 +10,9 @@ Three findings, and the numbers are given below.
 
 **The flat construction is exact.** On the flat frame $\Pi$ reproduces $-\frac{1}{2}\tilde F\tilde F^{*}$'s components: $\Pi_{00}=-W$, $\Pi_{0\jmath}=+\tfrac{1}{c}S_{\jmath}$, $\Pi_{\jmath0}=-\tfrac{1}{c}S_{\jmath}$, $\Pi_{\jmath\imath}=-\sigma_{\jmath\imath}$, with $\sigma$ the Maxwell stress. Entrywise, $\Pi$ and the metric stress differ by a sign that depends only on which slots carry the time index; the ratio is exactly $+1$ or $-1$ in every entry, verified on a field with $\vec E=(0.7,-0.3,0.5)$ and $\vec B=(0.2,0.9,-0.4)$.
 
-**The transport fails, and by leg lengths.** On a diagonal frame with leg scales $(1.07,1.03,0.97,1.05)$ the ratio $\Pi/T$ spreads over $\pm[1.10,1.32]$; on a general non-diagonal frame it spreads over $\pm[0.97,1.39]$. The spread is the product of the leg scales, and it is a spread rather than a constant because $\Pi$ and $T$ depend on the legs differently.
+**The transport fails, and by leg lengths.** On a diagonal frame with leg scales $(1.07,1.03,0.97,1.05)$ the ratio $\Pi/T$ takes values of modulus between $1.10$ and $1.65$; on a general non-diagonal frame the modulus ranges from $0.43$ to $1.94$, with two entries falling below unity. The ratio is not constant because $\Pi$ and $T$ depend on the legs differently, and the spread grows with the leg scales.
 
-**The trace is the diagnostic.** The metric stress is traceless on every frame — $\sum_{\imath\jmath}G^{\imath\jmath}T_{\imath\jmath}=0$ to $3\times10^{-16}$ in all three frames tested — while $\sum_{\imath\jmath}G^{\imath\jmath}\Pi_{\imath\jmath}=2W$ in all three, independent of the frame. An object whose trace is the energy density is not the electromagnetic stress; the departure is exactly the leg-length factor, and it is invisible in the flat frame because there the legs are units.
+**The trace is the diagnostic.** $\sum_{\imath\jmath}G^{\imath\jmath}\Pi_{\imath\jmath}=2W$ in all three frames, independent of the frame, while the metric stress is traceless for any antisymmetric $F$ whatever the frame. An object whose $g$-trace is twice the energy density is not the electromagnetic stress; the departure is the leg-length factor, and it is invisible in the flat frame because there the legs are units.
 
 **What survives.** The covariant statement survives, and it is the metric formula $T_{\imath\jmath}=F_{\imath a}F_{\jmath}{}^{a}-\tfrac14 g_{\imath\jmath}F_{ab}F^{ab}$, which needs $G$ and therefore lives in the frame's frame-measure and not in one algebra element. And the physics survives in a form worth stating: the electromagnetic stress is not a perfect fluid at all — it is a null dust with stress along the propagation direction and none across it — so the radiation equation of state $p=\rho/3$ is the isotropic average and not the local stress.
 
@@ -71,7 +71,7 @@ $$
 T_{\imath\jmath}\propto k_{\imath}k_{\jmath},
 $$
 
-up to the same sign pattern — verified: the ratio $T_{\imath\jmath}/(k_{\imath}k_{\jmath})$ is constant on a plane-wave field. So the local electromagnetic stress of radiation has pressure $\rho$ along the propagation direction and zero across it, and its trace vanishes. The familiar $p=\rho/3$ is the average over an isotropic ensemble of such null dusts, not a property of any one of them. This matters for the corpus's trace-collapse discussion, which speaks of "a radiation fluid with $p=\rho/3$": that fluid is the isotropised one, and the local stress it replaces is anisotropic.
+with constant exactly $W$ and no sign pattern: for $k$ the all-low wave covector $(-1,\hat n)$ of a wave with $\omega=1$, amplitude $0.7$ and $B=\hat n\times E$, the array $T-Wk_{\imath}k_{\jmath}$ has largest entry $6\times10^{-17}$, the eigenvalues of $T$ are $(0,0,0,2W)$ and its rank is $1$. So the local electromagnetic stress of radiation has pressure $\rho$ along the propagation direction and zero across it, and its trace vanishes. The familiar $p=\rho/3$ is the average over an isotropic ensemble of such null dusts, not a property of any one of them. This matters for the corpus's trace-collapse discussion, which speaks of "a radiation fluid with $p=\rho/3$": that fluid is the isotropised one, and the local stress it replaces is anisotropic.
 
 ## The Same Construction on a Frame
 
@@ -81,15 +81,15 @@ Now replace the units by the frame's legs, $e_{\imath}\mapsto\tilde E_{\Phi,\ima
 
 | frame | Gram matrix | $\max\lvert\Pi-\Pi^{\mathsf T}\rvert$ | ratio $\Pi/T$ range | $\sum G^{\imath\jmath}\Pi_{\imath\jmath}$ | $\sum G^{\imath\jmath}T_{\imath\jmath}$ |
 | --- | --- | --- | --- | --- | --- |
-| flat | $\digamma_{\mathrm{met}}$ | $1.38$ | exactly $\pm1$ | $+1.84$ | $3\times10^{-16}$ |
-| diagonal, legs $1.07,1.03,0.97,1.05$ | diagonal | $1.55$ | $\pm[1.10,1.32]$ | $+1.84$ | $2\times10^{-16}$ |
-| general, non-diagonal | non-diagonal | $1.46$ | $\pm[0.97,1.39]$ | $+1.84$ | $3\times10^{-16}$ |
+| flat | $\digamma_{\mathrm{met}}$ | $1.38$ | exactly $\pm1$ | $+1.84$ | $0$ |
+| diagonal, legs $1.07,1.03,0.97,1.05$ | diagonal | $1.55$ | $\lvert r\rvert\in[1.10,\,1.65]$ | $+1.84$ | $0$ |
+| general, non-diagonal | non-diagonal | $1.46$ | $\lvert r\rvert\in[0.43,\,1.94]$ | $+1.84$ | $0$ |
 
 **Three readings of the table.**
 
-*The ratio.* In the flat frame the ratio is exactly $\pm1$ in every entry: the construction is the stress up to the sign pattern of the dressing. In the diagonal frame the ratio spreads over $\pm[1.10,1.32]$, and in the general frame over $\pm[0.97,1.39]$. The spread is not a numerical artefact — it is the leg scales entering, and it grows with them.
+*The ratio.* In the flat frame the ratio is exactly $\pm1$ in every entry: the construction is the stress up to the sign pattern of the dressing. In the diagonal frame $\lvert\Pi/T\rvert$ lies between $1.10$ and $1.65$; in the general frame it lies between $0.43$ and $1.94$, and two of the sixteen entries fall below $1$. The spread is not a numerical artefact — it is the leg scales entering — and on a frame far enough from orthonormal the ratio crosses $1$ downwards, so the bilinear is not even a uniform rescaling of the stress.
 
-*The trace.* The metric stress is traceless in all three frames, as it must be, since $T_{\imath\jmath}$ is built from $F$ and $g$ and the electromagnetic stress is conformally invariant in four dimensions. $\Pi$'s trace is $+1.84=2W$ in all three, unchanged by the frame. An object whose $g$-trace equals twice the energy density on every frame is not a traceless tensor that happens to be mis-scaled; it is a different array, and the difference is structural.
+*The trace.* The final column is $0$ in all three frames, and it is worth being clear about what that does and does not show. $T_{\imath\jmath}=F_{\imath a}F_{\jmath}{}^{a}-\tfrac14g_{\imath\jmath}F^{2}$ is traceless identically, for any antisymmetric $F$ in any frame, so the column certifies that the object compared against is the metric formula and nothing more. The evidence about the field is elsewhere: for a plane wave the eigenvalues are $(0,0,0,2W)$ and the rank is $1$. $\Pi$'s $g$-trace, by contrast, is $+1.84=2W$ in all three frames, unchanged by the frame — which is the level at which the two arrays are simply different objects.
 
 *The symmetry.* $\Pi$ is not symmetric in any frame, including the flat one. The asymmetry is the dressing's, and it is a statement about index placement rather than about the frame.
 
@@ -107,14 +107,14 @@ $$
 T_{\imath\jmath}=F_{\imath a}F_{\jmath}{}^{a}-\tfrac14\,g_{\imath\jmath}\,F_{ab}F^{ab},
 $$
 
-which is traceless on every frame (verified to $3\times10^{-16}$ in all three) and reduces to the corpus's bilinear on the orthonormal frame up to the sign pattern. It needs $G_{\imath\jmath}$ for the contractions, so it is a metric formula written in the frame's letters and not a single element's scalar part. The passage from the corpus's bilinear to it is the passage from one algebra element to a frame, which is the same passage that the count $10>8$ forces on the source in general.
+which is traceless identically — for any antisymmetric $F$, in any frame — and reduces to the corpus's bilinear on the orthonormal frame up to the sign pattern. It needs $G_{\imath\jmath}$ for the contractions, so it is a metric formula written in the frame's letters and not a single element's scalar part. The passage from the corpus's bilinear to it is the passage from one algebra element to a frame, which is the same passage that the count $10>8$ forces on the source in general.
 
 ## What the Sector Establishes and What It Leaves
 
 **Established.**
 
 1. The corpus's bigeneral bilinear is exactly the electromagnetic stress on an orthonormal frame, up to a fixed sign pattern of index placement: ratio $\pm1$ entrywise, verified.
-2. It does not transport. On a frame with leg scales $1.03$–$1.07$ the ratio spreads over $\pm[1.10,1.32]$, and $\Pi$'s $g$-trace stays $2W$ while the stress's stays zero.
+2. It does not transport. On a frame with leg scales $1.03$–$1.07$ the ratio's modulus spreads over $[1.10,1.65]$; on a general frame it spans $[0.43,1.94]$. $\Pi$'s $g$-trace stays $2W$ while the stress's is identically zero.
 3. The metric formula $T_{\imath\jmath}=F_{\imath a}F_{\jmath}{}^{a}-\tfrac14g_{\imath\jmath}F^{2}$ is the transporting object, is traceless in every frame tested, and agrees with the bilinear on the orthonormal frame.
 4. The local electromagnetic stress is a null dust, rank one along the wave vector, and $p=\rho/3$ is its isotropic average.
 
@@ -128,7 +128,7 @@ which is traceless on every frame (verified to $3\times10^{-16}$ in all three) a
 
 The corpus's electromagnetic stress is a bigeneral quaternionic bilinear, and on the flat frame it is exact: $\Pi_{00}=-W$, $\Pi_{0\jmath}=\pm S_{\jmath}$, $\Pi_{\jmath\imath}=-\sigma_{\jmath\imath}$, entrywise the metric stress up to a sign pattern of index placement.
 
-On a frame it fails, and the failure is measurable. The bilinear is degree two in the legs and has no inverse metric; the legs are units only on an orthonormal frame; so the ratio to the stress spreads over $\pm[1.10,1.32]$ for leg scales near unity, and the bilinear's $g$-trace is $2W$ where the stress's is zero. The transporting object is the metric formula, which needs the inverse Gram matrix and is therefore a frame statement and not an element statement.
+On a frame it fails, and the failure is measurable. The bilinear is degree two in the legs and has no inverse metric; the legs are units only on an orthonormal frame; so the ratio to the stress spreads over moduli $1.10$ to $1.65$ for leg scales near unity and $0.43$ to $1.94$ on a general frame, and the bilinear's $g$-trace is $2W$ where the stress's is identically zero. The transporting object is the metric formula, which needs the inverse Gram matrix and is therefore a frame statement and not an element statement.
 
 The physics that survives the passage is worth more than the algebra that does not: the local stress of radiation is a null dust, rank one and anisotropic, and the radiation equation of state is its isotropic average. The Maxwell sector is thus the clearest case in which the corpus's algebraic packaging and its geometric content come apart, and the direction of the repair — from one element to a frame — is the same direction the source dictionary already took.
 

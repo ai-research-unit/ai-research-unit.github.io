@@ -58,6 +58,32 @@ Two things are worth saying about the comparison, because both are commonly got 
 
 What separates them is derivative order and variable: one derivative of a connection against two derivatives of a frame. The algebra sees neither.
 
+## Lovelock's Theorem: What Selects Two Derivatives
+
+The diagnosis of the preceding section is that the algebra cannot count derivatives, so nothing in it prefers the two that gravity needs. That diagnosis is right, and it is worth setting beside the sharpest external result on the question, because the comparison changes what a solution would have to look like.
+
+**The theorem.** In four dimensions the only symmetric rank-two tensor built from the metric and its first two derivatives, linear in the second derivative and divergence-free, is a combination of the Einstein tensor and the metric itself. Equivalently: the only local action of the form
+
+$$
+S=\int d^{4}x\,\sqrt{|\det G|}\,\mathcal L\bigl(g,\partial g,\partial^{2}g\bigr),
+$$
+
+invariant under diffeomorphisms and yielding field equations of second order, is
+
+$$
+S=\int d^{4}x\,\sqrt{|\det G|}\;\bigl(aR-2\Lambda\bigr)
+$$
+
+up to a total derivative, with $a$ and $\Lambda$ the only free numbers. In five or more dimensions the Gauss–Bonnet combination joins the list; in four it is itself a total derivative and contributes nothing, which is why four dimensions admit exactly one coefficient beyond the cosmological constant.
+
+**What the theorem does to the argument, and it is not what it is usually taken to do.** It does not derive the derivative count from nothing. The premise that does the work is *second-order field equations*, not *two derivatives of the metric*; in the metric formulation the two are the same condition, and the theorem is a statement about their equivalence. So the freedom is relocated rather than removed: an author who declines to say why two derivatives may instead say why second order, and Lovelock guarantees that the second answer is as good as the first and no better.
+
+**Three premises, and the corpus has none of them as a derived property.** The argument uses locality, diffeomorphism invariance and second order. Locality is not in doubt. Diffeomorphism invariance is the one *Conservation as a Consequence* records as absent: the corpus has no representation of $\mathrm{Diff}(M)$, and the conservation law that would follow from it is available only point by point, in Riemann normal coordinates. And second order is a condition on equations the corpus has not got, so it cannot be checked before the action is written. The theorem therefore does not close the action problem; it says precisely which three things a settling object must supply, and two of the three are already on the corpus's open list for other reasons.
+
+**The two things it does settle, and both are useful.** The first is that the functional is unique once the premises hold, so the phrase "the Einstein–Hilbert action" is licensed and an author who writes it is not choosing among rivals. The second is that the cosmological constant costs nothing: $\Lambda$ enters as an additive constant, so a framework that can write $\int\sqrt{|\det G|}\,R$ can write $\int\sqrt{|\det G|}\,(R-2\Lambda)$ without introducing a new object. $\Lambda$ is therefore not part of the action problem. It is a number the action problem, once solved, would carry — the same status as $G$, which is calibrated rather than derived.
+
+**What a no-go would now have to say.** The negative route sketched at the end of this article asks for a proof that no functional of the frame alone can produce a source with a traceless part. Lovelock sharpens the positive route in the same way: a candidate action does not have to be shown to be *algebraically natural*, only to satisfy the three premises, and the corpus's difficulty is that the second premise is a statement about the manifold's symmetry group rather than about the algebra's operations.
+
 ## Route One: the Scalar Curvature Read Off the Dirac Square
 
 There is one place in the corpus where a curvature scalar appears as an algebraic expression, and it is worth stating precisely, because it is the most promising route to an action written in the algebra's own terms.
@@ -124,6 +150,36 @@ so the Gram matrix is exactly $\mathrm{diag}(\rho,p,p,p)$: the two functions are
 
 What this does and does not settle. It settles the objection that the algebra cannot carry the traceless part: a frame carries it, exactly, and the count $10>8$ forbids only the single-element carrier, not the frame. It does not supply a source, because the frame is ten free functions — as much data as $T$ itself — and nothing in the algebra fixes them. The matter half of the action problem is therefore not a problem of *where to put* the two functions; it is the problem of a matter action whose variation produces that frame.
 
+## The Boundary Term: the Gibbons–Hawking–York Functional
+
+Requirement 4 of the list above — a boundary term that makes the variational principle well posed — is the one the corpus has never filled, and it is worth writing out because the failure is instructive rather than technical.
+
+**The problem in one line.** Varying the Hilbert action gives a bulk term and a surface term, and the surface term contains the *normal derivative* of the metric variation:
+
+$$
+\delta S_{\mathrm{EH}}
+=\frac{1}{16\pi G}\int_{\partial M}d^{3}x\,\sqrt{|\det h|}\;n_{\imath}\Bigl(\nabla_{\jmath}\,\delta g^{\imath\jmath}-g^{ab}\nabla^{\imath}\,\delta g_{ab}\Bigr)
++\text{(bulk)},
+$$
+
+with $n_{\imath}$ the unit normal and $h$ the induced Gram matrix of the three legs tangent to the boundary. Holding $\delta g_{\imath\jmath}=0$ on the boundary does not kill it, because the normal derivative is still free. So the Dirichlet condition — the single condition a second-order theory normally needs — is not enough, and the variational principle as written is not well posed.
+
+**The repair.** Add the Gibbons–Hawking–York term,
+
+$$
+S_{\mathrm{GHY}}=\frac{c^{4}}{8\pi G}\int_{\partial M}d^{3}x\,\sqrt{|\det h|}\;K,
+$$
+
+with $K$ the trace of the extrinsic curvature of the boundary in the ambient metric. Its variation cancels the normal-derivative piece exactly, leaving a surface term that vanishes under $\delta g_{\imath\jmath}\big|_{\partial M}=0$ alone. The coefficient is twice the Hilbert one, $c^{4}/8\pi G$ against $c^{4}/16\pi G$, and the corpus sets $c=1$ with $G$, so the two read $1/8\pi G$ and $1/16\pi G$.
+
+**The sign.** $K$ changes sign with the orientation of $n_{\imath}$, and the cancellation is exact only when the normal's convention matches the one used in the bulk variation. This is the one place in the construction where a bookkeeping choice fixes a sign, and it is the reason the term is frequently written with the opposite sign in the literature. The corpus's interval has the one minus on the time slot, so its spacelike normal is outward-pointing with $n_{\imath}n^{\imath}=+1$ on a boundary of constant time, and the sign above is the one that cancels.
+
+**What it settles, and what it costs.** With the term the action is stationary under Dirichlet, so requirement 4 can be met. The cost is that the term is built from the extrinsic curvature of the boundary, and that is a frame object the corpus has never constructed: on a frame route whose volume element is $\sqrt{|\det G|}$, the boundary term needs the induced Gram matrix of the three legs tangent to the boundary *and* the extrinsic curvature of the leg normal to it. The corpus has the Gram determinant and no boundary geometry at all. Requirement 4 is therefore not a technicality to be added later; it is a sixth object, of the same order of difficulty as the connection was.
+
+**Where the corpus already leans on it.** The entropy $A/4G$ is obtained from the Euclidean action, and on a Euclidean section of a vacuum solution the bulk term vanishes on shell while the York term survives and supplies $A/4G$ in full. *Black Hole Thermodynamics in Biquaternionic Form* cites Gibbons and Hawking for exactly this and does not write the functional. The citation is correct; the dependency is worth naming, because it means one of the corpus's sharper results rests on a boundary term the corpus does not possess.
+
+**What the corpus's other actions do, stated as a ledger.** A Klein–Gordon or Maxwell action carries no more than first derivatives of the field, so its surface term is $n^{\imath}\,\delta\phi\,\partial_{\imath}\phi$ and vanishes under $\delta\phi=0$ with no condition on the normal derivative. Those actions are well posed as written. The Hilbert action is not, and neither is any of its truncations. The corpus's Lagrangian articles are therefore correct to impose Dirichlet conditions without comment, and the gravity articles are not — a distinction no article currently draws.
+
 ## Beyond Having an Action: the Conformal Factor
 
 Suppose the action problem were solved and a functional were written whose variation is the Einstein equation. One problem would remain, and it belongs in this article because it is often mistaken for a detail.
@@ -147,7 +203,7 @@ The settling object is a single functional, and it has four requirements, each o
 1. **It is written in the algebra's operations**, with no object introduced that the corpus does not already construct: $\mathrm{Sc}$, the natural involution, the Gram determinant, the $\mathbb{B}$-valued connection and its curvature.
 2. **Its variation with respect to the frame reproduces the Einstein equation** in the vacuum case, including the correct coefficient, and its variation with respect to the connection reproduces metric compatibility and vanishing torsion — the Palatini structure, which the corpus is unusually well placed to write because it already has both variables as $\mathbb{B}$-valued objects.
 3. **Its matter part produces a source that is not traceless.** The carrier for such a source is the frame exhibited above; what the functional must still supply is the dynamics that fixes it.
-4. **It carries a boundary term** that makes the variational principle well posed on a region with a boundary.
+4. **It carries a boundary term** that makes the variational principle well posed on a region with a boundary — the object written out in the section below, which the corpus does not have.
 
 **A third route, recorded and not taken.** The diagnosis above is that the algebra has no derivative. The one external programme that attacks the diagnosis directly is the calculus of Jordan differential forms. It keeps the five relations of the exterior algebra — linearity, the Leibniz rule, commutativity with the elements, and antisymmetry of the product of forms — and replaces the sixth, which is implicit in the commutative case and is associativity, by the Jordan relation. The construction is stated and its properties derived in the source cited here, and it has not been carried to a bosonic action; its authors defer the field theory. It therefore settles nothing, and it is recorded for one reason. It locates the missing derivative in the same place this article does, and it says the derivative can be had by changing the algebra of forms rather than the algebra of coordinates.
 
@@ -158,6 +214,8 @@ A no-go would be equally valuable and is easier to state: a proof that no functi
 The action problem is one question — what functional of the frame and the connection has the Einstein equation as its variation — and this article's answer to why it is open is a single structural fact: **the algebra has no derivative, so it cannot count derivatives, and gravity is a two-derivative theory.** The algebra supplies every ingredient of an action (a scalar part, a Gram determinant as the volume element, a $\mathbb{B}$-valued connection, a curvature two-form) and supplies no principle that selects a derivative order, which is why the quadratic functional it most naturally suggests is Yang–Mills and not Einstein.
 
 Two candidate routes survive. The scalar curvature can be written as the trace of the squared Dirac operator plus the connection Laplacian, $R=\mathrm{tr}[(\tilde FD)^{2}+\Box]$, which makes the Hilbert action algebra-writable at the cost of presupposing the connection it uses. And the source can be carried as the Gram matrix of its own frame — the perfect-fluid case is written out above — which answers the traceless-part objection but leaves the matter action, and therefore the dynamics of that frame, to be found.
+
+Two external results sharpen the statement without settling it. Lovelock's theorem makes the Hilbert functional unique once locality, diffeomorphism invariance and second-order equations are assumed, which relocates the choice of derivative order onto a premise the corpus lacks for the same reason it lacks the rest; and the cosmological constant emerges as a free additive number rather than a new object. The Gibbons–Hawking–York term is the price of a well-posed variational principle, and it is a boundary object — induced Gram matrix plus extrinsic curvature — that the corpus has no construction for, which makes it a sixth missing object rather than a footnote to the fourth requirement.
 
 Even a solved action would leave the conformal factor and the measure open. The honest position is that this is the corpus's single hardest open object, that it is open for a reason that can be stated in one sentence, and that the negative route — a no-go for the traceless source — is the cheaper of the two attacks.
 
@@ -170,3 +228,5 @@ Even a solved action would leave the conformal factor and the measure open. The 
 - [Quantum Gravity in the Biquaternion Framework: The Two-Sided Obstruction and the Modular Temperature](quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.html), for the ordering argument that puts the action before any quantisation.
 - [Stress–Energy Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html) and [The Non-Quantum Limit of the Action Principle and the Lagrangian](the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.html), for the actions the corpus does have, which are the quadratic functionals this article contrasts with the Hilbert action.
 - *Curvature and Geodesics*, for the curvature conventions.
+- D. Lovelock, "The uniqueness of the Einstein field equations in a four-dimensional space," *Archive for Rational Mechanics and Analysis* **33** (1969) 54–70, and "The four-dimensionality of space and the Einstein tensor," *Journal of Mathematical Physics* **13** (1972) 874–876, for the uniqueness of the Einstein tensor and the status of the Gauss–Bonnet term in four dimensions.
+- J. W. York, "Role of conformal three-geometry in the dynamics of gravitation," *Physical Review Letters* **28** (1972) 1082–1085, and G. W. Gibbons and S. W. Hawking, "Action integrals and partition functions in quantum gravity," *Physical Review D* **15** (1977) 2752–2756, for the boundary term that makes the Hilbert action stationary under Dirichlet conditions, and for the Euclidean action whose on-shell value supplies the entropy.
