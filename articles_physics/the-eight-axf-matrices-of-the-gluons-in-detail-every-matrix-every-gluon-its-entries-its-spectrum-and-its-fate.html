@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Eight AXF Matrices of the Gluons in Detail: Every Matrix, Every Gluon, Its Entries, Its Spectrum and Its Fate — Biquaternion Universe</title>
+  <meta name="description" content="This article takes the eight arrays of the spatial block one at a time, in eight sections, one per array, and it is the strong-force counterpart of The…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-eight-axf-matrices-of-the-gluons-in-detail-every-matrix-every-gluon-its-entries-its-spectrum-and-its-fate"><strong>The Eight AXF Matrices of the Gluons in Detail: Every Matrix, Every Gluon, Its Entries, Its Spectrum and Its Fate</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This article takes the eight arrays of the spatial block one at a time, in eight sections, one per array, and it is the strong-force counterpart of <a href="the-15-axf-matrices-of-the-bosons-in-detail.html">The Fifteen AXF Matrices of the Bosons in Detail</a>.</strong> That article prints the fifteen and gives each its display, its cells, its spectrum and its fate. <strong>This one does the same for the eight, and it adds the one thing the fifteen do not need: the address of each array in the block, which is the pair of rows it turns or the two rows it weighs.</strong></p>
+<p><strong>Where the eight come from, in one sentence.</strong> <a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">Construction of the AXF Matrices of the Fifteen Generators</a> builds the fifteen as six planes through the lepton line, six planes inside the spatial block and three diagonal directions; <strong>the eight are the block's six planes and two of its three diagonal directions</strong>, and the count is $9-1=8$ on a $3\times3$ block exactly as it is $16-1=15$ on a $4\times4$ quartet.</p>
+<p><strong>The frame is the same frame and is not restated.</strong> The quartet is ordered $(t,x,y,z)$, $E_{jk}$ is the matrix unit in that order, the multiplication is $\vec e_x\vec e_y=\vec e_z$ cyclically, and the arrays are</p>
+<p>$$
+A_{jk}=E_{jk}-E_{kj},\qquad iS_{jk}=i\bigl(E_{jk}+E_{kj}\bigr),\qquad d_{2}=i\bigl(E_{xx}-E_{yy}\bigr),\qquad d_{3}=i\bigl(E_{yy}-E_{zz}\bigr).
+$$</p>
+<p><strong>Every array printed below is anti-Hermitian and traceless</strong>, so every one of them is a direction of $\mathfrak{su}(4)$ and not an operator on a complex vector space that happens to have the right size. <strong>That is the whole reason the eight can be printed at all</strong>: they are directions of the algebra the model has, and <a href="why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</a> is where the carrier's ceiling is stated.</p>
+<p><strong>What this article does not claim.</strong> The eight are directions of $\mathfrak{su}(4)$ at every scale. <strong>Above $M_C$ no $\mathrm{SU}(3)$ is a factor</strong>, so the eight are eight directions and there is no group for them to be the adjoint of; <strong>below $M_C$ the first breaking leaves the spatial block's eight directions as the connections of a real factor</strong>, and <em>gluon</em> is a fair name for them there. <strong>Nothing in this article derives that factor, and nothing here builds a three-dimensional module for it</strong> — that absence is <a href="quantum-chromodynamics-as-the-residual-of-su4.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$</a>'s subject, and this article does not soften it. <strong>What is derived is the arithmetic of the eight arrays, and the arithmetic is complete.</strong></p>
+<p><strong>One of three places where the word is discussed.</strong> The corpus retires the word from its vocabulary and keeps it in exactly three articles; <strong>this is the third of them, and its subject is the matrix.</strong> <strong>The three places are</strong>: <a href="conceptual-conventions.html">Conceptual Conventions</a>, which states the rule and the empirical ground; <a href="the-15-axf-matrices-of-the-bosons-in-detail.html">The Fifteen AXF Matrices of the Bosons in Detail</a>, where a reader meets the four line letters for the first time; and this article, where a reader who wants to know what a letter <em>addresses</em> on a matrix must be able to read the matrix. <strong>§6 states the discussion in full, and every other article of the corpus uses the vocabulary of §6 without repeating it.</strong></p>
+<p><strong>Every section is titled with the boson first and the array second</strong>, so the table of contents reads as the octet: <strong>six planes, three pairs, and the two Cartan directions</strong>, in the conventional order of the standard octet, where the two diagonal directions carry the labels $3$ and $8$ and the six planes take the rest.</p>
+<p><strong>The eight, indexed.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>gluon</th>
+<th>what it does to the three lines</th>
+<th>array</th>
+<th>cells</th>
+<th>spectrum</th>
+<th>$m^{2}$ above $M_C$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_{1}$</td>
+<td>real turn of the red–green plane</td>
+<td>$A_{xy}$</td>
+<td>$(x,y)$, $(y,x)$</td>
+<td>$0,0,\pm i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$g_{2}$</td>
+<td>complex turn of the red–green plane</td>
+<td>$iS_{xy}$</td>
+<td>$(x,y)$, $(y,x)$</td>
+<td>$0,0,\pm i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$g_{3}$</td>
+<td>red against green by opposite phases</td>
+<td>$d_{2}=i(E_{xx}-E_{yy})$</td>
+<td>$(x,x)$, $(y,y)$</td>
+<td>$0,0,\pm i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$g_{4}$</td>
+<td>real turn of the red–blue plane</td>
+<td>$A_{xz}$</td>
+<td>$(x,z)$, $(z,x)$</td>
+<td>$0,0,\pm i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$g_{5}$</td>
+<td>complex turn of the red–blue plane</td>
+<td>$iS_{xz}$</td>
+<td>$(x,z)$, $(z,x)$</td>
+<td>$0,0,\pm i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$g_{6}$</td>
+<td>real turn of the green–blue plane</td>
+<td>$A_{yz}$</td>
+<td>$(y,z)$, $(z,y)$</td>
+<td>$0,0,\pm i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$g_{7}$</td>
+<td>complex turn of the green–blue plane</td>
+<td>$iS_{yz}$</td>
+<td>$(y,z)$, $(z,y)$</td>
+<td>$0,0,\pm i$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$g_{8}$</td>
+<td>green against blue by opposite phases</td>
+<td>$d_{3}=i(E_{yy}-E_{zz})$</td>
+<td>$(y,y)$, $(z,z)$</td>
+<td>$0,0,\pm i$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One array per gluon, eight arrays, and the ledger is a bijection.</strong> Six planes give twelve cells in six pairs and two diagonal directions give four cells in two differences; <strong>the ninth cell of the block is the one the trace removes, and §5 shows that it is not a ninth gluon but the corner read on the block.</strong> The mass column is zero on all eight and it is zero for a reason that does not use the vacuum: <strong>every one of the eight commutes with $D=\operatorname{diag}(-3,1,1,1)$, so $[D,g_a]=0$ and the mass form $v^{2}\operatorname{tr}\bigl(g_a^{\dagger}[D,[D,g_a]]\bigr)$ vanishes identically.</strong> <a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">The Breaking of the Primordial Force</a> gives the other value, $32v^{2}$, to the six arrays that do not commute.</p>
+<p><strong>The lepton line, and the partition it makes.</strong> Every array below is supported on cells among $x,y,z$ and on no cell that touches $t$, <strong>so all eight annihilate $e_t$ and their rotors fix the lepton line for every angle</strong>. That is the $8+7$ partition of the fifteen: <strong>eight rotors that leave the lepton line where it is, and seven that do not</strong> — the corner, which multiplies it by a phase, and the six planes that move it into a spatial line. <a href="the-15-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role.html">The Fifteen AXF Matrices of the Boson Rotors in Detail</a> reads the same partition off the rotors; <strong>this article reads it off the cells, and the two readings are one statement.</strong></p>
+<h2 id="the-eight-one-array-at-a-time">The Eight, One Array at a Time</h2>
+<h3 id="math74-math75-the-real-turn-of-the-redgreen-plane">$g_{1}$: $A_{xy}$, the real turn of the red–green plane</h3>
+<p>$$
+A_{xy}=E_{xy}-E_{yx}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>The entries.</strong> Two cells inside the block, $+1$ at $(x,y)$ and $-1$ at $(y,x)$, and nothing on the lepton line, the diagonal or the blue line. <strong>Real antisymmetric, so anti-Hermitian as it stands</strong>, trace zero, norm $2$, spectrum $0,0,\pm i$.</p>
+<p><strong>The exponential.</strong> A rotation of the red–green plane that fixes the other two lines,</p>
+<p>$$
+\exp(\theta A_{xy})e_x=\cos\theta\,e_x-\sin\theta\,e_y,\qquad \exp(\theta A_{xy})e_t=e_t,\qquad \exp(\theta A_{xy})e_z=e_z ,
+$$</p>
+<p>and at $\theta=0.4$ the image of $e_x$ is $(0,\,0.9211,\,-0.3894,\,0)$. <strong>Real and orthogonal, so it is a rotation of the quartet</strong> and not a boost: <a href="the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Fifteen Generators</a> proves that no exponential of the fifteen arrays is a boost. <strong>The star carries it to the mixed plane</strong>, $\star A_{xy}=+A_{tz}$, and that is why the six planes split into three spatial and three mixed.</p>
+<p><strong>The address.</strong> The plane's two cells are the two orientations of one pair of rows, <strong>and a real plane is antisymmetric, so the pair of oriented cells is one rotation and not two particles.</strong> The address is written $r\bar g$ on one cell and $g\bar r$ on the other, <strong>and the two writings are the two signs of the same entry</strong> — which is the whole content of "a gluon carries a pair of indices": a pair, and not an ordered pair.</p>
+<p><strong>The boson, and the mass.</strong> $g_{1}$ is the first of the eight, <strong>massless at every step of the chain because $[A_{xy},D]=0$</strong>: the block's three diagonal entries of $D$ are equal, the plane's two eigenvalues are equal, and the mass form vanishes. <strong>Below $M_C$ the eight are the connections of the factor the first breaking leaves</strong>, and the rotor of $A_{xy}$ is one of its local transformations. <strong>Above $M_C$ there is no such factor, so the array is a direction and the name is held on deposit</strong> — <a href="classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html">Classification of the Bosons</a> prints the deposit.</p>
+<h3 id="math96-math97-the-complex-turn-of-the-same-plane">$g_{2}$: $iS_{xy}$, the complex turn of the same plane</h3>
+<p>$$
+iS_{xy}=i\bigl(E_{xy}+E_{yx}\bigr)=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>The entries.</strong> The same two cells, both $+i$, and nothing else. <strong>Imaginary symmetric, anti-Hermitian because $i$ times a real symmetric array is</strong>, trace zero, norm $2$, spectrum $0,0,\pm i$ — the spectrum of its real partner, entry for entry.</p>
+<p><strong>The exponential.</strong> A complex rotation of the same plane,
+$$
+\exp(\theta\, iS_{xy})e_x=\cos\theta\,e_x+i\sin\theta\,e_y ,
+$$
+giving $(0,\,0.9211,\,0.3894i,\,0)$ at $\theta=0.4$, with $e_t$ and $e_z$ fixed. <strong>Unitary and not orthogonal</strong>: the image of a real unit vector has an imaginary part, so this exponential does not act on the real quartet. <strong>That is the $6+9$ split of the fifteen read on one plane</strong>, and it is the same split this article's eight carry: <strong>six real planes and two imaginary diagonals here, against six real planes, six imaginary planes and three imaginary diagonals there.</strong></p>
+<p><strong>The address.</strong> $g_{2}$ sits on the same pair of cells as $g_{1}$ and is the second amplitude of the same address. <strong>The pair $\{g_{1},g_{2}\}$ is one complex field</strong>, because the two arrays are conjugates under transpose-and-$i$: a plane contributes one complex field and not two real ones. <strong>The address is therefore one address with two phases</strong>, and the count of gluons is the count of addresses and not the count of cells.</p>
+<p><strong>The boson, and the mass.</strong> Massless for the reason of $g_{1}$, $[iS_{xy},D]=0$, and <strong>the pair's two rotors differ by the $i$ on the cell pair</strong>, which is the statement that the real and imaginary amplitudes are the two phases of one field.</p>
+<h3 id="math116-math117-red-against-green-blue-fixed">$g_{3}$: $d_{2}=i(E_{xx}-E_{yy})$, red against green, blue fixed</h3>
+<p>$$
+d_{2}=i\bigl(E_{xx}-E_{yy}\bigr)=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>The entries.</strong> Two diagonal cells, $+i$ on red and $-i$ on green, and nothing on the lepton line or blue. <strong>Imaginary diagonal, anti-Hermitian, trace zero, norm $2$, spectrum $0,0,\pm i$.</strong></p>
+<p><strong>The exponential.</strong> Two opposite phases and two fixed lines,
+$$
+\exp(\theta d_{2})=\operatorname{diag}\bigl(1,\,e^{i\theta},\,e^{-i\theta},\,1\bigr),
+$$
+giving $0.9211+0.3894i$ on red and $0.9211-0.3894i$ on green at $\theta=0.4$. <strong>Nothing moves</strong>: the rotor is diagonal, so it commutes with every diagonal rotor, <strong>and that is the whole reason the Cartan of the octet is abelian.</strong></p>
+<p><strong>The address.</strong> The address is $r\bar r-g\bar g$: <strong>not a pair of rows but a difference of two</strong>, and that difference is what makes the array traceless on the block. <strong>The two signs are forced by the trace</strong>, and the third row is the one left out — which is why the two Cartan directions are written as two differences and not as two rows.</p>
+<p><strong>The boson, and the mass.</strong> $g_{3}$ is one of the two Cartan directions, <strong>massless and unbroken because $[d_{2},D]=0$</strong>, and among the eight it is one of the two that turn nothing. <strong>Its one arithmetic peculiarity is its partner</strong>: $\operatorname{tr}(d_{2}d_{3})=+1$, so the two Cartans are not orthogonal in the printed basis, and <strong>that single nonzero off-diagonal entry is the only one in the whole $15\times15$ Gram of the fifteen</strong> — <a href="the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html">The Commutation Table</a> prints it and <a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">The Feynman Rules of the $\mathrm{SU}(4)$ Model</a> says what it costs at normalisation.</p>
+<h3 id="math133-math134-the-real-turn-of-the-redblue-plane">$g_{4}$: $A_{xz}$, the real turn of the red–blue plane</h3>
+<p>$$
+A_{xz}=E_{xz}-E_{zx}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>The entries.</strong> Two cells, $+1$ at $(x,z)$ and $-1$ at $(z,x)$, and nothing on the lepton line, green or the diagonal. <strong>Real antisymmetric, trace zero, norm $2$, spectrum $0,0,\pm i$.</strong></p>
+<p><strong>The exponential.</strong> A rotation of the red–blue plane that fixes the lepton line and green,
+$$
+\exp(\theta A_{xz})e_x=\cos\theta\,e_x-\sin\theta\,e_z,\qquad \exp(\theta A_{xz})e_y=e_y ,
+$$
+giving $(0,\,0.9211,\,0,\,-0.3894)$ at $\theta=0.4$. <strong>The star sends it to the mixed plane through green</strong>, $\star A_{xz}=-A_{ty}$, with the minus sign that the Hodge star's cycle forces.</p>
+<p><strong>The address.</strong> $r\bar b$ and $b\bar r$ on the two cells, <strong>one rotation and two signs</strong>. <strong>Green is the row the array does not touch</strong>, and that absence is what distinguishes this plane from the other two.</p>
+<p><strong>The boson, and the mass.</strong> Massless, $[A_{xz},D]=0$, and <strong>the bracket with its imaginary partner is the one that needs both Cartan directions</strong>: $[g_{4},g_{5}]=2(g_{3}+g_{8})$, where every other plane's bracket lands on a single Cartan direction. <strong>That two-term answer is the one exception in the octet's bracket table</strong> and §4 prints it.</p>
+<h3 id="math150-math151-the-complex-turn-of-the-redblue-plane">$g_{5}$: $iS_{xz}$, the complex turn of the red–blue plane</h3>
+<p>$$
+iS_{xz}=i\bigl(E_{xz}+E_{zx}\bigr)=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>The entries.</strong> The same two cells, both $+i$. <strong>Imaginary symmetric, anti-Hermitian, trace zero, norm $2$, spectrum $0,0,\pm i$.</strong></p>
+<p><strong>The exponential.</strong> $\exp(\theta\, iS_{xz})e_x=\cos\theta\,e_x+i\sin\theta\,e_z$, giving $(0,\,0.9211,\,0,\,0.3894i)$ at $\theta=0.4$. <strong>Unitary and not orthogonal</strong>, like every imaginary array of the fifteen.</p>
+<p><strong>The address.</strong> $g_{5}$ shares its address with $g_{4}$, <strong>and the two are one complex field</strong>, so the red–blue plane contributes one gluon field with two phases and not two gluons.</p>
+<p><strong>The boson, and the mass.</strong> Massless, $[iS_{xz},D]=0$, and together with $g_{4}$ and the two Cartans it closes the $\mathfrak{su}(2)$-shaped triple that makes the plane one object: <strong>$A_{xz}$, $iS_{xz}$ and the combination $d_{2}+d_{3}$ are the three directions of an $\mathfrak{su}(2)$</strong>, which is the plane's own closure and not a new particle.</p>
+<h3 id="math168-math169-the-real-turn-of-the-greenblue-plane">$g_{6}$: $A_{yz}$, the real turn of the green–blue plane</h3>
+<p>$$
+A_{yz}=E_{yz}-E_{zy}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>The entries.</strong> Two cells, $+1$ at $(y,z)$ and $-1$ at $(z,y)$, and nothing on the lepton line, red or the diagonal. <strong>Real antisymmetric, trace zero, norm $2$, spectrum $0,0,\pm i$.</strong></p>
+<p><strong>The exponential.</strong> A rotation of the green–blue plane that fixes the lepton line and red, giving $(0,\,0,\,0.9211,\,-0.3894)$ on $e_y$ at $\theta=0.4$. <strong>The star sends it to the mixed plane through red</strong>, $\star A_{yz}=+A_{tx}$.</p>
+<p><strong>The address.</strong> $g\bar b$ and $b\bar g$, one rotation and two signs, <strong>with red the row the array does not touch</strong>.</p>
+<p><strong>The boson, and the mass.</strong> Massless, $[A_{yz},D]=0$, and its bracket lands on the second Cartan alone, $[g_{6},g_{7}]=2g_{8}$ — <strong>the mirror of $g_{1}$'s bracket, with green playing red's part.</strong></p>
+<h3 id="math186-math187-the-last-of-the-six-planes">$g_{7}$: $iS_{yz}$, the last of the six planes</h3>
+<p>$$
+iS_{yz}=i\bigl(E_{yz}+E_{zy}\bigr)=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i \\ 0 &amp; 0 &amp; i &amp; 0\end{pmatrix}
+$$</p>
+<p><strong>The entries.</strong> The same two cells, both $+i$. <strong>Imaginary symmetric, anti-Hermitian, trace zero, norm $2$, spectrum $0,0,\pm i$.</strong></p>
+<p><strong>The exponential.</strong> $\exp(\theta\, iS_{yz})e_y=\cos\theta\,e_y+i\sin\theta\,e_z$, giving $(0,\,0,\,0.9211,\,0.3894i)$ at $\theta=0.4$.</p>
+<p><strong>The address.</strong> The third and last pair of the block, <strong>one complex field with two phases</strong>, and the six planes are now counted three times two.</p>
+<p><strong>The boson, and the mass.</strong> Massless, $[iS_{yz},D]=0$. <strong>With $g_{7}$ the six planes are complete</strong>, and a reader who expects six rotation angles finds six turns and two phases instead: <strong>the octet's rotor content is three real turns, three complex turns and two diagonal phases.</strong></p>
+<h3 id="math197-math198-green-against-blue-red-fixed">$g_{8}$: $d_{3}=i(E_{yy}-E_{zz})$, green against blue, red fixed</h3>
+<p>$$
+d_{3}=i\bigl(E_{yy}-E_{zz}\bigr)=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -i\end{pmatrix}
+$$</p>
+<p><strong>The entries.</strong> Two diagonal cells, $+i$ on green and $-i$ on blue, nothing on the lepton line or red. <strong>Imaginary diagonal, anti-Hermitian, trace zero, norm $2$, spectrum $0,0,\pm i$.</strong></p>
+<p><strong>The exponential.</strong> $\exp(\theta d_{3})=\operatorname{diag}\bigl(1,\,1,\,e^{i\theta},\,e^{-i\theta}\bigr)$, two opposite phases on green and blue at $\theta=0.4$ and two fixed lines.</p>
+<p><strong>The address.</strong> $g\bar g-b\bar b$: <strong>a difference of two rows with the third left out</strong>, and with $g_{3}$ it gives the two independent phase directions of the block. <strong>The pair is a basis of the Cartan and not a pair of particles chosen from a list</strong>: $d_{2}$ and $d_{3}$ span the same two dimensions as any two independent differences, and the corpus's declared frame is this pair.</p>
+<p><strong>The boson, and the mass.</strong> $g_{8}$ is the second Cartan direction, massless and unbroken, <strong>and it commutes with the other seven</strong>, which is the abelian-ness of the torus. <strong>The two Cartans together exponentiate into a two-angle torus with no correction term</strong>, $\exp(\beta d_{2}+\gamma d_{3})=\operatorname{diag}(1,e^{i\beta},e^{i(\gamma-\beta)},e^{-i\gamma})$, and the composition is exact because two commuting matrices compose additively in the exponent.</p>
+<p><strong>The eight, counted and closed.</strong> Six planes, three pairs, two Cartans and one abelian torus: <strong>$6+2=8$ and $\dim\mathrm{SU}(3)=8$</strong>, and the equality is an equality of dimensions and not yet a derivation of the group. <strong>§5 shows where the ninth cell went and §4 shows that the eight close.</strong></p>
+<h2 id="the-eight-close-the-bracket-table">The Eight Close: the Bracket Table</h2>
+<p><strong>That the eight are a Lie algebra is a computation and it is three lines.</strong> The bracket of two of them is a commutator of matrices, so it is automatically antisymmetric and automatically satisfies Jacobi; <strong>what is not automatic is that it lands in the span, and it does</strong>: all $28$ brackets are combinations of the eight, and $27$ of the $28$ are nonzero.</p>
+<p><strong>The three plane brackets, and the one Cartan bracket.</strong></p>
+<p>$$
+[g_{1},g_{2}]=2g_{3},\qquad [g_{4},g_{5}]=2\bigl(g_{3}+g_{8}\bigr),\qquad [g_{6},g_{7}]=2g_{8},\qquad [g_{3},g_{8}]=0 .
+$$</p>
+<p><strong>The first and the third are the same statement on two planes</strong>, and the second is the exception that needs both Cartan directions: <strong>a plane through red and blue closes on the difference of its own pair, which is a combination of the two printed Cartans and of no single one of them.</strong> <strong>The fourth line is the torus</strong>: the two Cartans commute, and $[g_{3},g_{8}]=0$ is the only vanishing bracket of the twenty-eight.</p>
+<p><strong>What the structure constants are, and what they are not.</strong> In the printed basis the constants are the nine of the standard octet, and <strong>the printed basis is not the orthogonal one</strong>: $\operatorname{tr}(d_{2}d_{3})=+1$ while every other pair has $\operatorname{tr}(g_{a}^{\dagger}g_{b})=2\delta_{ab}$. <strong>A rotation of the two Cartan entries to an orthogonal pair makes the constants totally antisymmetric, and the rotation changes no number of the physics</strong> — the eigenvalues, the masses, the count and the closure are invariant. <strong>The corpus states this once, in <a href="the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html">The Commutation Table</a>, and this article accepts it.</strong></p>
+<p><strong>The vertices follow and are not independent.</strong> The field strength of the block is the commutator $G_{\imath\jmath}=\partial_{\imath}G_{\jmath}-\partial_{\jmath}G_{\imath}+g_s[G_{\imath},G_{\jmath}]$, so the three-gluon vertex carries one bracket and the four-gluon vertex two. <strong>An independent three-gluon coupling or an independent four-gluon coupling would mean a field strength that is not a commutator</strong>, and <a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html">The Lagrangian and Quantum Chromodynamics</a> makes that argument and checks it against the Ward identity. <strong>What this article adds is the arithmetic behind the bracket</strong>: the numbers $2$, $2$, $2$ and the two-term entry are the entries of the arrays above and not an independent input.</p>
+<h2 id="the-ninth-cell-is-not-a-gluon">The Ninth Cell Is Not a Gluon</h2>
+<p><strong>The block has nine cells, six planes in three pairs use twelve of them, and the diagonal has three cells for two generators.</strong> The count $9-1=8$ is the count of $16-1=15$ one size down, and <strong>the deletion is the same deletion</strong>: the trace.</p>
+<p><strong>Where the ninth direction goes, exactly.</strong> The block's identity is a real diagonal with $1$ on the three spatial cells and $0$ on the lepton cell, and <strong>it is not traceless in the quartet</strong> — its trace is $3$, not $0$ — so it is not a direction of $\mathfrak{su}(4)$. <strong>Its traceless part is the corner</strong>:</p>
+<p>$$
+\operatorname{diag}(0,1,1,1)=\tfrac34\,\mathbb 1+\tfrac14\,D,\qquad D=\operatorname{diag}(-3,1,1,1).
+$$</p>
+<p><strong>The identity is removed by tracelessness and what is left is a quarter of the corner</strong>, so <strong>the ninth cell of the block is not a ninth gluon: read in the quartet it is the direction the vacuum is built from</strong>, and it is $B-L$ up to the factor of three. $\operatorname{tr}_{\mathbf4}$ of the block's identity is the count of spatial lines, <strong>and that is the same $3$ that makes the corner entry $-3$</strong> — <a href="charge-quantisation-from-the-fourth-line-one-trace-one-third.html">Charge Quantisation from the Fourth Line</a> is that sentence in full.</p>
+<p><strong>What follows physically, stated without the word.</strong> A singlet vector of the block would be a direction that weights the three spatial lines equally, <strong>and such a direction exists in $\mathfrak{u}(3)$ and not in $\mathfrak{su}(4)$</strong>: in the quartet it always carries the lepton line with it. <strong>So the octet is eight and not nine for the same reason the fifteen are fifteen and not sixteen</strong>, and a ninth gluon is excluded by an arithmetic identity and not by a dynamical argument.</p>
+<p><strong>What the exclusion does not explain, and what it does.</strong> It explains the count. <strong>It does not explain why the strong residual is three lines rather than four or two</strong> — that is declaration (A), the lepton line being the temporal line, and the corpus says so in <a href="conceptual-conventions.html">Conceptual Conventions</a>. <strong>The two statements are different and the article keeps them apart</strong>: the arithmetic of eight is derived, the choice of three is declared.</p>
+<h2 id="the-three-letters-introduced-last">The Three Letters, Introduced Last</h2>
+<p><strong>Everything above was written with three line names and no colour word, and the word enters here for one reason: a reader who has seen the octet will ask what the letters address.</strong> The answer is an address, and that is the whole of what it is.</p>
+<p><strong>The carrier and its letters.</strong></p>
+<p>$$
+(t,x,y,z)\;\longleftrightarrow\;(\ell,r,g,b),\qquad E_{ij}\;\longleftrightarrow\;i\bar j .
+$$</p>
+<p>Four lines, four letters, one object. <strong>$E_{ij}$ moves line $j$ into line $i$, and its label reads <em>line $i$ on line anti-$j$</em></strong>; columns are sources and rows are targets, so the grid is the table of the array's entries, <strong>and the six planes of this article are the three unordered pairs of the three spatial rows.</strong></p>
+<p><strong>A letter is a coordinate of the table.</strong> The table has sixteen cells, the trace removes one direction, and fifteen remain; the spatial block has nine cells, the trace removes one direction, and eight remain. <strong>The letters name rows and columns. They are not eigenvalues, not conserved numbers, and not observables</strong>, and the word <em>colour</em> is standard physics' name for a property that such a letter would have if it named one — <strong>and no letter names one here.</strong></p>
+<p><strong>Three tests, and a charge fails all three.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>test</th>
+<th>what it asks</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>relabelling</td>
+<td>does the sentence survive a permutation of $x,y,z$?</td>
+<td>the letters do not; the count $8$ does</td>
+</tr>
+<tr>
+<td>basis rotation</td>
+<td>is the label invariant under a local transformation?</td>
+<td>no — $r\bar g$ rotates into combinations of the other addresses, and the eight rotate among themselves</td>
+</tr>
+<tr>
+<td>degeneracy</td>
+<td>does anything distinguish one address above $M_C$?</td>
+<td>no — all eight are massless and no factor is local there</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The octet's own numbers, read off the tests.</strong> $8=3^{2}-1$ is the count that survives; <strong>the addresses do not</strong>, because a local transformation moves one address into another and only the dimension is invariant. <strong>That is the precise sense in which the word is a name for a basis and not for a property</strong>, and it is why the strong sector's <em>observable</em> content is the group's dimension, its rank two, and the exclusion of the singlet.</p>
+<p><strong>Why three lines and not four, and it is not a colour statement.</strong> The spatial block is three rows because the quartet is four and one of the four is the lepton line. <strong>The count of spatial letters is three because one of the four is the temporal line</strong>, and that is declaration (A) — the model's one input about which line is which. <strong>No $\mathrm{SU}(3)$ is a factor of the theory above $M_C$</strong>: a subalgebra of a simple group is not a factor, and nothing makes it local there.</p>
+<p><strong>The empirical ground, and it is the strongest of the three.</strong> A colour is never observed in nature. <strong>Confinement, imported as standard physics, keeps every non-singlet state out of the asymptotic spectrum</strong>: no isolated quark and no isolated gluon is observed, and every particle that is returned by a detector is a singlet. <strong>So no measurement returns a colour</strong> — the measurements fix the count, three, and the dimension of the group, eight, and nothing else. <strong>A colour is not a property that a detector can report; it is an address on a table.</strong> <a href="confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information</a> states the same fact as the reason the asymptotic algebra is the singlet projection.</p>
+<p><strong>The ledger of the letters.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the eight arrays</td>
+<td>directions of $\mathfrak{su}(4)$, invariant, massless</td>
+</tr>
+<tr>
+<td>the letters $r,g,b$</td>
+<td>notation</td>
+</tr>
+<tr>
+<td>an address $i\bar j$</td>
+<td>a coordinate</td>
+</tr>
+<tr>
+<td>the count $8=3^{2}-1$</td>
+<td>invariant: the dimension of the block's derived algebra</td>
+</tr>
+<tr>
+<td>the exclusion of the ninth</td>
+<td>arithmetic: the trace on the quartet</td>
+</tr>
+<tr>
+<td>a colour as a property</td>
+<td>not observed, and not claimed</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Where the word may be used, and where it may not.</strong> <strong>Three articles and no others</strong>: this one, <a href="the-15-axf-matrices-of-the-bosons-in-detail.html">The Fifteen AXF Matrices of the Bosons in Detail</a>, and <a href="conceptual-conventions.html">Conceptual Conventions</a>. <strong>Every other article of the corpus says <em>the strong group</em>, <em>the triplet index</em>, <em>the spatial block</em> or <em>the count</em>, and a reader who wants the word's full status should read <a href="conceptual-conventions.html">Conceptual Conventions</a> first and come back here for the matrices.</strong> <strong>A picture is not a charge, and an address is not a property.</strong></p>
+<h2 id="the-checks">The Checks</h2>
+<p><strong>Sixteen checks, and each is a line of arithmetic.</strong></p>
+<ol>
+<li><strong>Count.</strong> Six planes in three pairs, two Cartan directions, $6+2=8$; the block's nine cells minus the trace give eight; the fifteen minus the corner and the six mixed planes give eight.</li>
+<li><strong>Anti-Hermiticity.</strong> $g_{a}^{\dagger}=-g_{a}$ for all eight, so all eight are directions of $\mathfrak{su}(4)$ and not Hermitian operators on the carrier.</li>
+<li><strong>Trace.</strong> $\operatorname{tr}g_{a}=0$ for all eight, one line each, and $d_{2}$ and $d_{3}$ are traceless because each is a difference.</li>
+<li><strong>Norm.</strong> $\operatorname{tr}(g_{a}^{\dagger}g_{b})=2\delta_{ab}$ except $\operatorname{tr}(d_{2}d_{3})=+1$, the single exception of the fifteen's Gram.</li>
+<li><strong>Spectrum.</strong> $0,0,\pm i$ for all eight — the six planes and the two diagonals alike, which is why the octet's mass column is one value.</li>
+<li><strong>The lepton line.</strong> $g_{a}e_t=0$ for all eight, so every rotor fixes $e_{t}$ at every angle.</li>
+<li><strong>The vacuum.</strong> $[g_{a},D]=0$ for all eight, so every mass form $v^{2}\operatorname{tr}\bigl(g_{a}^{\dagger}[D,[D,g_{a}]]\bigr)$ vanishes identically.</li>
+<li><strong>The brackets.</strong> All $28$ land in the span; $27$ are nonzero; $[g_{3},g_{8}]=0$ is the only zero.</li>
+<li><strong>The plane brackets.</strong> $[g_{1},g_{2}]=2g_{3}$, $[g_{4},g_{5}]=2(g_{3}+g_{8})$, $[g_{6},g_{7}]=2g_{8}$.</li>
+<li><strong>The torus.</strong> $\exp(\beta d_{2}+\gamma d_{3})=\operatorname{diag}\bigl(1,e^{i\beta},e^{i(\gamma-\beta)},e^{-i\gamma}\bigr)$, exact, with no correction term.</li>
+<li><strong>The real turns.</strong> $g_{1},g_{4},g_{6}$ are orthogonal exponentials and rotate the quartet; the other five are unitary and do not.</li>
+<li><strong>The star.</strong> $\star A_{xy}=+A_{tz}$, $\star A_{xz}=-A_{ty}$, $\star A_{yz}=+A_{tx}$: three spatial planes and three mixed planes, paired.</li>
+<li><strong>The ninth cell.</strong> $\operatorname{diag}(0,1,1,1)=\tfrac34\mathbb 1+\tfrac14D$, so the block's identity is the corner up to the removed identity: no ninth gluon.</li>
+<li><strong>The count of phases.</strong> Three real turns, three complex turns, two phases — six rotations and two phases, and not eight rotations.</li>
+<li><strong>The addresses.</strong> Six planes give six addresses in three pairs; the two Cartans give two differences; no address is used twice and none is missing.</li>
+<li><strong>The dimension.</strong> $\dim\mathrm{SU}(3)=8$ equals the count, and the equality is a dimension count and not a derivation of the group.</li>
+</ol>
+<p><strong>What the sixteen do not show, and the article says so once.</strong> They do not show that a local $\mathrm{SU}(3)$ exists above $M_C$ — it does not; they do not build a three-dimensional module — the carrier's modules have even complex dimension; and they do not confine anything — confinement is imported. <strong>What they show is that the eight arrays are eight, that they close, that they are massless, and that the address of each is a pair of rows.</strong> <strong>The rest is the strong sector's business, and <a href="quantum-chromodynamics-as-the-residual-of-su4.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$</a> is where the business is stated.</strong></p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-15-axf-matrices-of-the-bosons-in-detail.html">The Fifteen AXF Matrices of the Bosons in Detail</a> — the article this one is the counterpart of: the fifteen, one at a time, with the $32v^{2}$ and the zero.</li>
+<li><a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">Construction of the AXF Matrices of the Fifteen Generators</a> — the derivations of the six planes and the three diagonals, and the halving that makes the entries integers.</li>
+<li><a href="the-15-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role.html">The Fifteen AXF Matrices of the Boson Rotors in Detail</a> — the same eight read as rotors, with the cosine that stays, the sine that moves and the phase that multiplies.</li>
+<li><a href="the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html">The Commutation Table</a> — the brackets among all fifteen, the $80$ nonzero entries and the one Gram entry that is not a delta.</li>
+<li><a href="the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon: An Octet Outside the Biquaternion Algebra</a> — what the eight reach and what the carrier refuses: the octet's directions exist in the algebra and the module for them does not.</li>
+<li><a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html">The Lagrangian and Quantum Chromodynamics</a> — the vertex rules built on the brackets of §4, and the Ward identity that forbids an independent three-gluon coupling.</li>
+<li><a href="confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information</a> — why no non-singlet state is observed, which is the empirical ground of §6.</li>
+<li><a href="conceptual-conventions.html">Conceptual Conventions</a> — the rule that admits the word in three articles and the ground it stands on.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

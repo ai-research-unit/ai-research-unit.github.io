@@ -104,7 +104,7 @@ $$</p>
 <p>$$
 \mathbf 4=\mathbf 1\oplus\mathbf 3=\mathbb C e_t\oplus\operatorname{span}\{e_x,e_y,e_z\},
 $$</p>
-<p><strong>with $e_t$ the lepton and the other three the colours.</strong> The scalar carries one $\mathrm{SU}(4)$ index, so its value is a vector in the carrier, and the declaration says which of the four directions is available: <strong>the one that is not a colour.</strong></p>
+<p><strong>with $e_t$ the lepton and the other three the spatial lines.</strong> The scalar carries one $\mathrm{SU}(4)$ index, so its value is a vector in the carrier, and the declaration says which of the four directions is available: <strong>the one that is not a spatial line.</strong></p>
 <p><strong>In components.</strong> Write the vacuum as $D=\operatorname{diag}(\ell,q,q,q)$ in the basis $(e_t,e_x,e_y,e_z)$. The algebra is $\mathfrak{su}(4)$, so the trace vanishes:</p>
 <p>$$
 \ell+3q=0.
@@ -128,14 +128,14 @@ so the direction that the condensation selects is not a member of the frame that
 <p>$$
 \mathfrak{u}(3)=\{X\in\mathfrak{su}(4)\ :\ [iD,X]=0\},
 $$</p>
-<p><strong>the block-diagonal matrices acting on the three colour directions, traceless.</strong> Its dimension is $1+9-1=9$: one corner entry, a $3\times3$ block, and the trace condition removing one. <strong>That nine is the whole of the surviving sector, and it is computed, not assumed.</strong></p>
+<p><strong>the block-diagonal matrices acting on the three adjoint directions, traceless.</strong> Its dimension is $1+9-1=9$: one corner entry, a $3\times3$ block, and the trace condition removing one. <strong>That nine is the whole of the surviving sector, and it is computed, not assumed.</strong></p>
 <h2 id="the-adjoint-action-which-is-the-whole-theorem">The Adjoint Action, Which Is the Whole Theorem</h2>
 <p><strong>The object.</strong> For an array $X$ in the fifteen,</p>
 <p>$$
 \operatorname{ad}(iD)(X)=[iD,X].
 $$</p>
 <p><strong>The spectrum.</strong> On the plane arrays it is immediate, and the derivation takes three steps.</p>
-<p><strong>The colour planes commute.</strong> If $j,k\in\{x,y,z\}$ then $[iD,A_{jk}]=0$ and $[iD,iS_{jk}]=0$, because $D$ is a multiple of the identity on that block. <strong>That is six directions with eigenvalue zero, before any work.</strong></p>
+<p><strong>The spatial planes commute.</strong> If $j,k\in\{x,y,z\}$ then $[iD,A_{jk}]=0$ and $[iD,iS_{jk}]=0$, because $D$ is a multiple of the identity on that block. <strong>That is six directions with eigenvalue zero, before any work.</strong></p>
 <p><strong>The corner directions do not commute.</strong> For $a\in\{x,y,z\}$,</p>
 <p>$$
 [iD,A_{ta}]=(-3i-i)A_{ta}=-4i\,A_{ta},
@@ -158,7 +158,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>colour planes $A_{jk},iS_{jk}$, $j,k\in\{x,y,z\}$</td>
+<td>spatial planes $A_{jk},iS_{jk}$, $j,k\in\{x,y,z\}$</td>
 <td>$6$</td>
 <td>$0$</td>
 </tr>
@@ -182,17 +182,17 @@ $$</p>
 <p><strong>Two readings of one table, and both are used.</strong> The real reading says: <strong>nine directions are fixed and six are moved, and the six are moved by an operator with eigenvalues $\pm4$</strong>, so they pair into three rotation planes. The complex reading says: <strong>the six form two complex three-dimensional eigenspaces, conjugate to each other</strong>, so the sextet is a $\mathbf3$ and a $\bar{\mathbf3}$. <strong>The real pairing and the complex splitting are the same statement, which is why the leptoquarks come in three charge-conjugate pairs.</strong></p>
 <p><strong>The multiplicities, checked.</strong> $9+3+3=15$; $\operatorname{tr}\operatorname{ad}(iD)=0$ because the spectrum is symmetric; the kernel is nine-dimensional and the image six-dimensional. <strong>No number in the table is a choice.</strong></p>
 <h2 id="the-six-that-are-eaten-named">The Six That Are Eaten, Named</h2>
-<p><strong>Which six.</strong> The $(-4i)$ and $(+4i)$ eigenspaces are spanned by the planes that touch the lepton line and one colour:</p>
+<p><strong>Which six.</strong> The $(-4i)$ and $(+4i)$ eigenspaces are spanned by the planes that touch the lepton line and one spatial line:</p>
 <p>$$
 \mathfrak m=\operatorname{span}_{\mathbb C}\{A_{ta},iS_{ta}\ :\ a=x,y,z\},\qquad \dim_{\mathbb C}\mathfrak m=6 .
 $$</p>
-<p><strong>Under the unbroken $\mathrm{SU}(3)_c$ they split as a triplet and an antitriplet</strong>, because they carry one colour index:</p>
+<p><strong>Under the unbroken $\mathrm{SU}(3)_c$ they split as a triplet and an antitriplet</strong>, because they carry one index:</p>
 <p>$$
 \mathfrak m=\mathbf 3_{+4/3}\oplus\bar{\mathbf 3}_{-4/3},
 \qquad
 B-L=\pm\tfrac43,\qquad Q=\tfrac12(B-L)=\pm\tfrac23 .
 $$</p>
-<p><strong>The names.</strong> A triplet member with $Q=+\tfrac23$ or $-\tfrac23$ is a leptoquark, written $X$; its conjugate is written $\bar X$. <strong>Six states, three of charge $+\tfrac23$ and three of charge $-\tfrac23$</strong>, each carrying a colour index.</p>
+<p><strong>The names.</strong> A triplet member with $Q=+\tfrac23$ or $-\tfrac23$ is a leptoquark, written $X$; its conjugate is written $\bar X$. <strong>Six states, three of charge $+\tfrac23$ and three of charge $-\tfrac23$</strong>, each carrying a index.</p>
 <p><strong>Why they are eaten, counted in real components.</strong> Breaking fifteen generators to nine removes six, and the Goldstone theorem gives one real scalar degree of freedom per broken generator:</p>
 <p>$$
 15-9=6\ \text{broken}\quad\Longrightarrow\quad 6\ \text{real components eaten}.
@@ -209,7 +209,7 @@ $$</p>
 <p>$$
 M^{2}=\operatorname{diag}\bigl(\underbrace{32v^{2},\dots,32v^{2}}_{6},\underbrace{0,\dots,0}_{9}\bigr).
 $$</p>
-<p><strong>Why $32$, in one line.</strong> $32=2\times4^{2}$, and $4=1-(-3)$ is the difference between a colour eigenvalue and the lepton eigenvalue. <strong>A plane's mass is twice the square of the eigenvalue difference across it: a plane touching the lepton line sees the difference, a plane inside the colour triple does not, and a direction along a line cannot see one at all.</strong></p>
+<p><strong>Why $32$, in one line.</strong> $32=2\times4^{2}$, and $4=1-(-3)$ is the difference between a diagonal entry and the lepton eigenvalue. <strong>A plane's mass is twice the square of the eigenvalue difference across it: a plane touching the lepton line sees the difference, a plane inside the three lines does not, and a direction along a line cannot see one at all.</strong></p>
 <p><strong>The table, one row per kind of plane.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -222,12 +222,12 @@ $$</p>
 <tbody>
 <tr>
 <td>$A_{ta},iS_{ta}$</td>
-<td>lepton and colour</td>
+<td>lepton and spatial</td>
 <td>$32v^{2}$</td>
 </tr>
 <tr>
 <td>$A_{jk},iS_{jk}$</td>
-<td>colour and colour</td>
+<td>spatial and spatial</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -261,7 +261,7 @@ $$</p>
 M^{2}_{XY}=v^{2}\operatorname{tr}\bigl(X^{\dagger}\,\mathcal E(Y)\bigr),
 $$</p>
 <p>and in the basis with $\operatorname{tr}(X_a^{\dagger}X_b)=2\delta_{ab}$ the matrix is $2v^{2}$ times the matrix of $\mathcal E$. <strong>One commutator does not preserve the fifteen</strong>: $[A_{jk},D]=(\lambda_k-\lambda_j)S_{jk}$ is real symmetric, outside $\mathfrak{su}(4)$, and the second commutator returns $(\lambda_j-\lambda_k)^{2}A_{jk}$. The mass operator is defined on the fifteen; its square root is not.</p>
-<p><strong>The corner is the degenerate case.</strong> At $D=\operatorname{diag}(-3,1,1,1)$ the three colour entries are equal, so the six roots inside the colour triple vanish. The twelve differences become $\pm4$ three times each and $0$ six times; the square sends the two signs to the single number $32v^{2}$. <strong>The nine-and-six display is a statement about how degenerate the vacuum is</strong>, which is the same statement as "colour is unbroken".</p>
+<p><strong>The corner is the degenerate case.</strong> At $D=\operatorname{diag}(-3,1,1,1)$ the three spatial entries are equal, so the six roots inside the three lines vanish. The twelve differences become $\pm4$ three times each and $0$ six times; the square sends the two signs to the single number $32v^{2}$. <strong>The nine-and-six display is a statement about how degenerate the vacuum is</strong>, which is the same statement as "the strong group is unbroken".</p>
 <p><strong>A regular vacuum, as the check.</strong> At $d=(3,1,-1,-3)v$ the pairwise differences are $2,4,6$, so</p>
 <p>$$
 M^{2}=2v^{2}\cdot\{\underbrace{4,\dots,4}_{6},\underbrace{16,\dots,16}_{4},\underbrace{36,36}_{2}\},\qquad 0,0,0,
@@ -296,12 +296,12 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Eight gluons and one abelian vector.</strong> $\mathfrak{u}(3)=\mathfrak{su}(3)\oplus\mathfrak{u}(1)$ is $8+1=9$, and the corpus's $B'$ is the abelian one — <strong>the fourth-colour direction that survives because colour is a stabiliser and is therefore not broken.</strong></p>
+<p><strong>Eight gluons and one abelian vector.</strong> $\mathfrak{u}(3)=\mathfrak{su}(3)\oplus\mathfrak{u}(1)$ is $8+1=9$, and the corpus's $B'$ is the abelian one — <strong>the fourth-adjoint direction that survives because the strong group is a stabiliser and is therefore not broken.</strong></p>
 <p><strong>The rank does not move, and this is the structural fact to carry forward.</strong></p>
 <p>$$
 \operatorname{rank}\mathfrak{su}(4)=3\ \longrightarrow\ \operatorname{rank}\bigl(\mathfrak{su}(3)\oplus\mathfrak{u}(1)\bigr)=2+1=3 .
 $$</p>
-<p><strong>The breaking costs dimension and not rank.</strong> A condensate chooses a direction inside the maximal torus, so the torus survives; <strong>that is why colour plus one abelian factor is available as an endpoint and colour plus two weak factors is not.</strong> The second is a rank-five statement, and rank five is not reachable from rank three by any breaking at all — <strong>which is the content of the next two articles, and the reason the weak force cannot be a fragment of what breaks here.</strong></p>
+<p><strong>The breaking costs dimension and not rank.</strong> A condensate chooses a direction inside the maximal torus, so the torus survives; <strong>that is why the strong group plus one abelian factor is available as an endpoint and the block plus two weak factors is not.</strong> The second is a rank-five statement, and rank five is not reachable from rank three by any breaking at all — <strong>which is the content of the next two articles, and the reason the weak force cannot be a fragment of what breaks here.</strong></p>
 <h2 id="what-breaks-and-what-does-not">What Breaks and What Does Not</h2>
 <p><strong>Four rows, because four different things are true at once.</strong></p>
 <div class="table-scroll"><table>
@@ -333,20 +333,20 @@ $$</p>
 <td>it does not move</td>
 </tr>
 <tr>
-<td>the colour</td>
+<td>the strong group</td>
 <td>inside the fifteen</td>
 <td>a stabiliser factor</td>
 <td>it survives, and survives exactly</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The sentence to keep.</strong> <strong>The primordial force breaks into colour and one abelian factor, and the price of the breaking is six vectors at $32v^{2}$ and six real scalars absorbed.</strong> Everything else — the rank, the colour, the abelian direction, the vacuum — is unchanged.</p>
-<p><strong>And the sentence that must not be written.</strong> <em>The leptoquarks are destroyed and their debris becomes the weak force.</em> The charge theorem of <a href="the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html">the companion article</a> closes that reading: every member of the sextet has $Q=\pm\tfrac23$, so no combination of them reaches $Q=\pm1$. <strong>The breaking produces colour, one abelian factor, and six heavy vectors. It does not produce a weak doublet.</strong></p>
+<p><strong>The sentence to keep.</strong> <strong>The primordial force breaks into the strong group and one abelian factor, and the price of the breaking is six vectors at $32v^{2}$ and six real scalars absorbed.</strong> Everything else — the rank, the spatial block, the abelian direction, the vacuum — is unchanged.</p>
+<p><strong>And the sentence that must not be written.</strong> <em>The leptoquarks are destroyed and their debris becomes the weak force.</em> The charge theorem of <a href="the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html">the companion article</a> closes that reading: every member of the sextet has $Q=\pm\tfrac23$, so no combination of them reaches $Q=\pm1$. <strong>The breaking produces the strong group, one abelian factor, and six heavy vectors. It does not produce a weak doublet.</strong></p>
 <h2 id="the-breaking-is-a-statement-about-the-vacuum-not-about-the-theory">The Breaking Is a Statement About the Vacuum, Not About the Theory</h2>
 <p><strong>Nothing in this article removes a generator from the model.</strong> The fifteen arrays are the same fifteen above and below the transition; what changes is which of them the ground state commutes with. <strong>A condensate is a property of the vacuum, so the breaking is a property of one phase of the theory and not of its Lagrangian</strong>, and the Lagrangian is one $\mathrm{SU}(4)$ theory at every scale.</p>
 <p><strong>So the primordial force is not gone, and the word for what happens to it is breaking.</strong> Above $M_C$ the condensate is absent, the fifteen directions are all massless redundant directions, and the group is one simple factor. Below $M_C$ the same fifteen are read through a vacuum that commutes with nine of them and not with six. <strong>The two descriptions are one theory in two phases</strong>, and the passage between them is the vanishing of one scalar expectation value.</p>
 <p><strong>What would restore it, stated as a reading and not as a result.</strong> A condensate that vanishes restores the symmetry. Three routes do that: a temperature of order $M_C$; a field excursion that carries the scalar to the origin; or a region in which the scalar never condensed. <strong>The corpus derives none of the three</strong>, because the scalar potential is not in it. What the corpus establishes is the spectrum on either side of the transition, and that is enough to say what restoration would look like and what it would cost.</p>
-<p><strong>The observable is the sextet.</strong> No generator of $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ carries a quark into a lepton: colour triality and $B-L$ are both conserved by the residual group, and the sextet is the only place in the fifteen where the two are traded. <strong>So a leptoquark seen is not a particle added to the model; it is one of the fifteen acting</strong>, and its rate is set by the coupling the model already has. The null searches at <a href="the-threshold-scales-mc-mw-and-what-would-fix-them.html">the threshold article</a> bound $M_C$ from below, and <strong>that bound is the statement that the unbroken phase has not yet been reached.</strong></p>
+<p><strong>The observable is the sextet.</strong> No generator of $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ carries a quark into a lepton: triality and $B-L$ are both conserved by the residual group, and the sextet is the only place in the fifteen where the two are traded. <strong>So a leptoquark seen is not a particle added to the model; it is one of the fifteen acting</strong>, and its rate is set by the coupling the model already has. The null searches at <a href="the-threshold-scales-mc-mw-and-what-would-fix-them.html">the threshold article</a> bound $M_C$ from below, and <strong>that bound is the statement that the unbroken phase has not yet been reached.</strong></p>
 <h2 id="the-checks">The Checks</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -364,7 +364,7 @@ $$</p>
 </tr>
 <tr>
 <td>the kernel</td>
-<td>$[iD,X]=0$ on the colour block</td>
+<td>$[iD,X]=0$ on the spatial block</td>
 <td>$6+2+1=9$</td>
 </tr>
 <tr>
@@ -389,7 +389,7 @@ $$</p>
 </tr>
 <tr>
 <td>the sextet's shape</td>
-<td>one colour index, one lepton index</td>
+<td>one index, one lepton index</td>
 <td>$\mathbf3\oplus\bar{\mathbf3}$, $\dim 6$</td>
 </tr>
 <tr>
@@ -435,7 +435,7 @@ $$</p>
 <p>$32v^{2}$ is not a mass. It is the coefficient of $v^{2}$; the conversion is a coupling statement and lives elsewhere (<em>The Mass the Six Acquire</em>).</p>
 <p>The nine are not "the rest". They are exactly the centraliser of the vacuum, and there is a theorem behind the word exactly (<em>The Nine That Survive</em>).</p>
 <p>The rank is not reduced. Six dimensions leave and the torus stays; that is why the endpoint is $\mathrm{SU}(3)\times\mathrm{U}(1)$ and not something with fewer abelian directions (<em>What Breaks and What Does Not</em>).</p>
-<p><strong>The six halves are not bosons of the model.</strong> The corpus states it in the mass-matrix article and it is worth repeating: on the carrier each is one colour plane plus or minus one leptoquark plane, so it is a coherence of a massless direction and a heavy one, not a particle. <strong>That sentence is the seed of the whole migration</strong>: what breaks here is the parent of colour, the weak vectors arrive with the doublet index, and their masses come from a later breaking through a different vacuum.</p>
+<p><strong>The six halves are not bosons of the model.</strong> The corpus states it in the mass-matrix article and it is worth repeating: on the carrier each is one spatial plane plus or minus one leptoquark plane, so it is a coherence of a massless direction and a heavy one, not a particle. <strong>That sentence is the seed of the whole migration</strong>: what breaks here is the parent of the strong group, the weak vectors arrive with the doublet index, and their masses come from a later breaking through a different vacuum.</p>
 <h2 id="summary">Summary</h2>
 <p><strong>The transition is one direction.</strong> $iD=\operatorname{diag}(-3i,i,i,i)$, that is $D=\operatorname{diag}(-3,1,1,1)$ times $i$, forced by the lepton-line declaration and by the trace condition up to scale. <strong>The $i$ is what puts $\pm4i$ in the adjoint's spectrum</strong>: on the real matrix $\operatorname{diag}(-3,1,1,1)$ the eigenvalues are the real $\pm4$.</p>
 <p><strong>Its adjoint action is the whole theorem.</strong> $\operatorname{ad}(iD)$ has spectrum $0^{9}\oplus(\pm4i)^{3}$; the kernel is $\mathfrak{u}(3)=\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L}$, dimension nine; the $\pm4i$ eigenspace is the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, $Q=\pm\tfrac23$.</p>
@@ -469,7 +469,7 @@ $$</p>
 </tr>
 <tr>
 <td>$X,\bar X$</td>
-<td>a leptoquark and its conjugate, $Q=\pm\tfrac23$, colour $\mathbf3$ or $\bar{\mathbf3}$</td>
+<td>a leptoquark and its conjugate, $Q=\pm\tfrac23$, triplet $\mathbf3$ or $\bar{\mathbf3}$</td>
 </tr>
 <tr>
 <td>$v$</td>
