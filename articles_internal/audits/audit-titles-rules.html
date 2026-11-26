@@ -1,0 +1,2191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title Compliance Outside the First Category: A Census Against the Title Rules of the Plan — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Audit only. No title, no slug, no menu line and no cross-reference is edited here. The measurement covers the 3 333 articles the two…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="title-compliance-outside-the-first-category-a-census-against-the-title-rules-of-the-plan"><strong>Title Compliance Outside the First Category: A Census Against the Title Rules of the Plan</strong></h1>
+<p><em>Status of this file.</em> <strong>Audit only.</strong> No title, no slug, no menu line and no cross-reference is edited here. The measurement covers the 3 333 articles the two menus list outside their first category: 700 physics and 2 633 mathematics.</p>
+<p><em>What this file is for.</em> It answers one question: which articles carry a title that the PLAN's title rules forbid. It separates the two kinds of answer — the sentences the PLAN writes in the imperative, which a checker settles, from the reading test, which a reader settles — lists the first exhaustively, and counts the second.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>The rule is <code>PLAN.md</code> §RULES TO WRITE TITLES and §RULES DURING THE WRITING MODE</strong>, and it is written for a physics title. Its first sentence is <em>a physics title is a compressed abstract, not a chapter heading</em>.</li>
+<li><strong>A title is the first line <code># __…__</code> of the file.</strong> The word count drops mathematics between <code>$…$</code>, so a formula counts as one word.</li>
+<li><strong>A conjunction title is one whose main clause is "… and the/their/its …".</strong> It breaches the letter of the ban. Whether it breaches the intent depends on whether a result follows the colon, and §<em>Physics: The Conjunction Titles</em> separates the two.</li>
+<li><strong>The mathematics corpus is measured, not condemned.</strong> §<em>Mathematics</em> states the scope question and leaves the decision to the author.</li>
+<li><strong>No option renames a file by itself.</strong> A rename costs a URL, and the build has no redirect table.</li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The verdict.</strong> Outside the first category, 22 physics articles and 1 mathematics article break a sentence the PLAN writes in the imperative. A further 204 physics articles and 459 mathematics articles carry the conjunction pattern the section bans by name, and 30 more carry it with a result after the colon.</p>
+<p><strong>The corpus was written before the rule.</strong> Two habits predate it and the rule now forbids both. The first is the pair title, <em>The X and the Y</em>, which names two topics and no result. The second is the framework suffix, <em>… in Biquaternionic Form</em>, which names the carrier and never the result; 224 physics titles carry it.</p>
+<p><strong>The repairable set is small.</strong> Length, colon count, question marks, narrative subtitles, personified objects: 23 articles, 22 physics and 1 mathematics. Every one is listed with its slug, and none needs a change of subject, only of wording.</p>
+<p><strong>The expensive set is the idiom.</strong> The 234 physics conjunctions and the 465 mathematics conjunctions are not 699 mistakes in prose. They are the site's habit. Option A makes them compliant with one paragraph in the PLAN; Option D retitles them at the cost of 699 URLs.</p>
+<p><strong>What this file does not claim.</strong> It does not claim that a pair title is bad prose, and it does not claim that the physics is wrong. It does not claim that the mathematics corpus is out of compliance: the section names physics, and a reference article that names its subject has done what a reference title can do. And it does not claim that the count is complete: the first category is excluded by instruction, and it holds four titles of the same kinds (§<em>The First Category, Excluded</em>).</p>
+<h2 id="the-rule-restated">The Rule, Restated</h2>
+<p>The PLAN states five imperative sentences and one test. They are quoted here because the census is a census against these and nothing else.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the sentence</th>
+<th>what it forbids</th>
+<th>where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>a physics title is a compressed abstract, not a chapter heading</em></td>
+<td>a title that names a topic and stops</td>
+<td>§RULES TO WRITE TITLES</td>
+</tr>
+<tr>
+<td><em>Do not use definite-article constructions like "The Fifteen" or "The Quartet" as the subject</em></td>
+<td>a collective as the subject, when the reader cannot tell what object is meant</td>
+<td>§RULES TO WRITE TITLES</td>
+</tr>
+<tr>
+<td><em>The following title patterns are forbidden: "The X and the Y", "The X: [narrative clause]", "Nothing [verb]s the [noun]", "The X Printed"</em></td>
+<td>the four patterns, by name</td>
+<td>§RULES TO WRITE TITLES</td>
+</tr>
+<tr>
+<td><em>Physics titles are typically 8–20 words, one colon maximum … No second colon. No question marks. No exclamation.</em></td>
+<td>length, separators, punctuation</td>
+<td>§RULES TO WRITE TITLES</td>
+</tr>
+<tr>
+<td><em>the title names the object and the result … A physicist who reads only the title should know what is studied. If not, rewrite it.</em></td>
+<td>a title without a result</td>
+<td>§RULES DURING THE WRITING MODE</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading test has three questions.</strong> Could a physicist who has not read the abstract identify (a) the model or object, (b) the construction or result, and (c) the key number or property? A title that answers (a) alone is a topic title. The rule calls it a chapter heading and forbids it.</p>
+<p><strong>The rule states a target style.</strong> <em>Write titles in the style of Physical Review D / JHEP / Nuclear Physics B.</em> That sentence is why the ban on the pair title is not a matter of taste: the pair title is a review-chapter heading, and the journals named do not print one.</p>
+<h2 id="scope-and-method">Scope and Method</h2>
+<p><strong>The two menus are the definition of the corpus.</strong> An article is in scope when <code>physics.md</code> or <code>maths.md</code> links it under a category heading. <code>physics.md</code> has 15 <code>##</code> sections holding 727 links; the first holds 27 and is excluded, leaving 700. <code>maths.md</code> has 76 <code>##</code> headings, of which 7 are <code>PART</code> banners with no links and 69 are categories holding 2 645 links; the first holds 12 and is excluded, leaving 2 633.</p>
+<p><strong>Every in-scope slug resolved to a file.</strong> 3 333 of 3 333 opened, and every one begins with a <code># __…__</code> title line after an optional blank first line. No file was skipped and none was guessed from its name.</p>
+<p><strong>Three things are not counted as breaches.</strong> A colon followed by a list of contents is the corpus's normal result clause, and it is not a narrative clause. A formula inside <code>$…$</code> is one word, not fifteen. A hyphenated compound such as <em>Two-Sided</em> is one word, and it is not the collective <em>The Two</em>.</p>
+<p><strong>The measurement is of 2026-11-26, on the working tree.</strong> It is reproducible by the checker of §<em>How to Re-Measure</em>, which is thirty lines and reads the same two menus.</p>
+<h2 id="the-census">The Census</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rule</th>
+<th style="text-align: right;">physics, 700 in scope</th>
+<th style="text-align: right;">mathematics, 2 633 in scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a collective as the subject, with no object named</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>the pattern <em>The X and the Y</em>, no result clause</td>
+<td style="text-align: right;">204</td>
+<td style="text-align: right;">459</td>
+</tr>
+<tr>
+<td>of which the family <em>The Lagrangian and the X</em></td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>the pattern <em>The X and the Y</em> with a result after the colon</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>the narrative subtitle, <em>and Why / Where / What / How</em>, or <em>and No …</em></td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><em>Nothing [verb]s the [noun]</em></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><em>The X Printed</em></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>over 20 words</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>a second separator, the em dash</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>more than one colon</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>a question mark or an exclamation</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>under 5 words, the topic title</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">775</td>
+</tr>
+<tr>
+<td>the framework suffix <em>in Biquaternionic Form</em></td>
+<td style="text-align: right;">224</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><strong>distinct articles breaking an imperative sentence</strong></td>
+<td style="text-align: right;"><strong>22</strong></td>
+<td style="text-align: right;"><strong>1</strong></td>
+</tr>
+<tr>
+<td><strong>distinct articles breaking any rule, the reading test included</strong></td>
+<td style="text-align: right;"><strong>255</strong></td>
+<td style="text-align: right;"><strong>466</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The family <em>The Lagrangian and the X</em> numbers 59 titles in all.</strong> Fifty-five have no result clause and four carry one, so the four sit among the 30 of the row above.</p>
+<p><strong>Read the last two rows as the answer.</strong> Twenty-three articles need a repair under any reading of the rule. The rest of the file is the working: what breaks, where, and what a repair would cost.</p>
+<h2 id="physics-the-mechanical-breaches-twenty-two-articles">Physics: The Mechanical Breaches, Twenty-Two Articles</h2>
+<p>Every article below breaks at least one of the quantifiable sentences. None of them needs a change of subject; each needs a change of wording, and the repair is one line in the <code>.md</code> and one in <code>physics.md</code>.</p>
+<h3 id="the-narrative-subtitle-13">The narrative subtitle (13)</h3>
+<p>The PLAN forbids <em>The X: [narrative clause]</em>. Each subtitle here is a sentence that tells a story about the result instead of stating it. <em>What It Computes and What It Cannot Show</em> becomes <em>the computation and its limit</em>; <em>and What Runs Above $M_C$</em> becomes the running itself.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The 2×2 Matrix Model: What It Computes and What It Cannot Show</td>
+<td><code>the-2x2-matrix-model-what-it-computes-and-what-it-cannot-show</code></td>
+</tr>
+<tr>
+<td>The Primordial Coupling: $g_4$ as a Boundary Condition, and What Runs Above $M_C$</td>
+<td><code>the-primordial-coupling-g4-as-a-boundary-condition-and-what-runs-above-m-c</code></td>
+</tr>
+<tr>
+<td>The Sixteen Above $M_C$: Massless, Vector-Like, and What That Costs</td>
+<td><code>the-sixteen-above-m-c-massless-vector-like-and-what-that-costs</code></td>
+</tr>
+<tr>
+<td>The Rotors of the Fifteen Generators: Three Turn Space, Three Turn the Quartet, and No Boost Is in the Group</td>
+<td><code>the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group</code></td>
+</tr>
+<tr>
+<td>Construction of the AXF Matrices of the Rotors of the Fifteen Generators: One Closed Form per Array, and Where the Half Angle Comes From</td>
+<td><code>construction-of-the-axf-matrices-of-the-rotors-of-the-fifteen-generators</code></td>
+</tr>
+<tr>
+<td>The Symmetric Diagonal Frame of the Fifteen: Three Generators Permuted by $S_3$, and Why the Eight Cannot Repeat It</td>
+<td><code>the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it</code></td>
+</tr>
+<tr>
+<td>Matching at $M_C$: The Four Quantities That Cross, and Where the Masses Come From</td>
+<td><code>matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from</code></td>
+</tr>
+<tr>
+<td>The Mass Matrix of the Fifteen Connections: The $\mathfrak{u}(3)$ Kernel, the Sextet at $32v^{2}$, and No Mixing</td>
+<td><code>the-mass-matrix-of-the-fifteen-connections-the-u3-kernel-and-the-sextet</code></td>
+</tr>
+<tr>
+<td>The Threshold Scales: One Transition at $M_C$, One Measured Weak Scale, and What Would Fix $M_C$</td>
+<td><code>the-threshold-scales-mc-mw-and-what-would-fix-them</code></td>
+</tr>
+<tr>
+<td>The Data Boundary: Which Articles May Print a Measured Strength, and Why</td>
+<td><code>the-data-boundary-which-articles-may-print-a-measured-strength</code></td>
+</tr>
+<tr>
+<td>The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies</td>
+<td><code>the-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies</code></td>
+</tr>
+<tr>
+<td>The Null Four-Momentum: What the Cone Derives and What Must Be Added</td>
+<td><code>the-null-four-momentum-what-the-cone-derives-and-what-must-be-added</code></td>
+</tr>
+<tr>
+<td>The Gap: What the Algebra Supplies and What It Does Not</td>
+<td><code>what-the-algebra-supplies-and-what-it-does-not</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="nothing-verbs-the-noun-1"><em>Nothing [verb]s the [noun]</em> (1)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>This is the example the PLAN quotes.</strong> §RULES TO WRITE TITLES shows the model its own title, <em>Lepton Flavour: Nothing Turns the Lepton, and the Matrix That Would Have To</em>, and asks it to diagnose why the title is unsuitable. The corpus still prints it.</p>
+<h3 id="the-x-printed-1"><em>The X Printed</em> (1)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Construction of the AXF Matrices of the Fifteen Generators: Every Direction of $\mathfrak{su}(4)$, Printed</td>
+<td><code>construction-of-the-axf-matrices-of-the-fifteen-generators</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="over-20-words-3">Over 20 words (3)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Construction of the AXF Matrices of the Rotors of the Fifteen Generators: One Closed Form per Array, and Where the Half Angle Comes From</td>
+<td><code>construction-of-the-axf-matrices-of-the-rotors-of-the-fifteen-generators</code></td>
+</tr>
+<tr>
+<td>Classification of the Fermions in the $\mathrm{SU}(4)$ Model: One Generation, Sixteen Weyl Fields, Thirty-Two States, Closed Under $C$ and Under $CP$</td>
+<td><code>classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp</code></td>
+</tr>
+<tr>
+<td>The Weak Sector Below $M_C$: Three Neutrals of Rank Two, a Diagonal Charged Pair, and the Bidoublet That Would Mix Them</td>
+<td><code>the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="a-second-separator-the-em-dash-6">A second separator, the em dash (6)</h3>
+<p>The rule allows one colon. An em dash does the colon's work a second time, and it splits the title into a topic and a subtitle that the rule already spent its separator on.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lorentz Group in Biquaternionic Form — Structure and Representations</td>
+<td><code>the-lorentz-group-in-biquaternionic-form-structure-and-representations</code></td>
+</tr>
+<tr>
+<td>Electromagnetism in Media — The Local Complex Structure at Work</td>
+<td><code>electromagnetism-in-media-the-local-complex-structure-at-work</code></td>
+</tr>
+<tr>
+<td>Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</td>
+<td><code>maxwells-equations-in-chiral-media-the-quaternionic-reformulation</code></td>
+</tr>
+<tr>
+<td>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</td>
+<td><code>the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit</code></td>
+</tr>
+<tr>
+<td>The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</td>
+<td><code>the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case</code></td>
+</tr>
+<tr>
+<td>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</td>
+<td><code>the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="a-collective-as-the-subject-with-no-object-named-8">A collective as the subject, with no object named (8)</h3>
+<p>The PLAN forbids <em>The Fifteen</em> and <em>The Quartet</em> as the subject <em>where the reader cannot tell what physical object is meant</em>. These eight name the collective and no object. The other uses of <em>the Fifteen</em> in the corpus attach a noun — <em>the Fifteen Generators</em>, <em>the Fifteen Connections</em> — and are compliant.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Three Lines in $\mathrm{SU}(4)$: A Coordinate Label on the Fifteen, Not a Charge</td>
+<td><code>the-three-lines-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge</code></td>
+</tr>
+<tr>
+<td>The Counts of the Fifteen: Sixteen Cells, Six Pairs, Twelve Arrays, Fifteen Generators</td>
+<td><code>the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators</code></td>
+</tr>
+<tr>
+<td>The Feynman Rules of the $\mathrm{SU}(4)$ Model: The Vertices of the Fifteen and the Sixteen</td>
+<td><code>the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen</code></td>
+</tr>
+<tr>
+<td>The Fermion–Connection Vertex in the Quartet Basis: The Fifteen Read on the Sixteen</td>
+<td><code>the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Sixteen: The Kinetic Term and the Yukawa Coupling</td>
+<td><code>the-lagrangian-and-the-sixteen-kinetic-term-and-yukawa-coupling</code></td>
+</tr>
+<tr>
+<td>The Symmetric Diagonal Frame of the Fifteen: Three Generators Permuted by $S_3$, and Why the Eight Cannot Repeat It</td>
+<td><code>the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it</code></td>
+</tr>
+<tr>
+<td>The Three Lines in $\mathrm{SU}(3)$: A Coordinate Label on the Eight, Not a Charge</td>
+<td><code>the-three-lines-in-su3-a-coordinate-label-on-the-eight-not-a-charge</code></td>
+</tr>
+<tr>
+<td>The Sixteen Above $M_C$: Massless, Vector-Like, and What That Costs</td>
+<td><code>the-sixteen-above-m-c-massless-vector-like-and-what-that-costs</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The repair is mechanical.</strong> <em>the Fifteen</em> is the fifteen generators of SU(4); <em>the Eight</em> is the eight gluon generators of SU(3); <em>the Sixteen</em> is the sixteen Weyl fields of one generation; <em>the Quartet</em> is the four-dimensional defining space. Writing the object instead of the number costs a few words and passes the reading test.</p>
+<h2 id="physics-the-conjunction-titles-234-articles">Physics: The Conjunction Titles, 234 Articles</h2>
+<p><strong>The ban is on the main clause.</strong> A title whose main clause is <em>The X and the Y</em> names two topics and asserts nothing about either. 234 physics titles have that clause: 204 with no result at all, and 30 with a result after the colon, which breach the letter and keep the intent.</p>
+<h3 id="no-result-clause-the-55-lagrangian-titles">No result clause: the 55 <em>Lagrangian</em> titles</h3>
+<p>These are one family. Each is <em>The Lagrangian and the X</em>, and the article is the Lagrangian of X. The title states the object twice and the result never. Four more carry a result clause and appear in the last group of this section.</p>
+<h4 id="electroweak-force-5">Electroweak Force (5)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lagrangian and the Electroweak Theory</td>
+<td><code>the-lagrangian-and-the-electroweak-theory</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Higgs Field</td>
+<td><code>the-lagrangian-and-the-higgs-field</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Stueckelberg Mechanism</td>
+<td><code>the-lagrangian-and-the-stueckelberg-mechanism</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the W and Z Bosons</td>
+<td><code>the-lagrangian-and-the-w-and-z-bosons</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Weak Force</td>
+<td><code>the-lagrangian-and-the-weak-force</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="non-relativistic-approximation-of-quantum-theory-8">Non Relativistic Approximation of Quantum Theory (8)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lagrangian and the Coupled Schrödinger Equation</td>
+<td><code>the-lagrangian-and-the-coupled-schrodinger-equation</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Schrödinger Equation in Momentum Space</td>
+<td><code>the-lagrangian-and-the-coupled-schrodinger-equation-in-momentum-space</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Schrödinger Equation in Polar Variables</td>
+<td><code>the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Schrödinger Equation in the Non-Quantum Limit</td>
+<td><code>the-lagrangian-and-the-coupled-schrodinger-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Schrödinger Equation</td>
+<td><code>the-lagrangian-and-the-schrodinger-equation</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Schrödinger Equation in Momentum Space</td>
+<td><code>the-lagrangian-and-the-schrodinger-equation-in-momentum-space</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Schrödinger Equation in Polar Variables</td>
+<td><code>the-lagrangian-and-the-schrodinger-equation-in-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Schrödinger Equation in the Non-Quantum Limit</td>
+<td><code>the-lagrangian-and-the-schrodinger-equation-in-the-non-quantum-limit</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="quantum-fields-1">Quantum Fields (1)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lagrangian and the Goldstone Effective Action</td>
+<td><code>the-lagrangian-and-the-goldstone-effective-action</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="relativistic-non-quantum-approximation-9">Relativistic Non Quantum Approximation (9)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lagrangian and the Central Scalar Field</td>
+<td><code>the-lagrangian-and-the-central-scalar-field</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Dirac Equation in the Non-Quantum Limit</td>
+<td><code>the-lagrangian-and-the-coupled-dirac-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Klein–Gordon Equation in the Non-Quantum Limit</td>
+<td><code>the-lagrangian-and-the-coupled-klein-gordon-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Proca Equation in the Non-Quantum Limit</td>
+<td><code>the-lagrangian-and-the-coupled-proca-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Dirac Equation in the Non-Quantum Limit</td>
+<td><code>the-lagrangian-and-the-dirac-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Klein–Gordon Equation in the Non-Quantum Limit</td>
+<td><code>the-lagrangian-and-the-klein-gordon-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Pauli Equation</td>
+<td><code>the-lagrangian-and-the-pauli-equation</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Proca Equation in the Non-Quantum Limit</td>
+<td><code>the-lagrangian-and-the-proca-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Rarita–Schwinger Equation</td>
+<td><code>the-lagrangian-and-the-rarita-schwinger-equation</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="relativistic-quantum-fluid-mechanics-8">Relativistic Quantum Fluid Mechanics (8)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lagrangian and the Charged Schrödinger Fluid</td>
+<td><code>the-lagrangian-and-the-charged-schrodinger-fluid</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Charged Spin-Half Fluid</td>
+<td><code>the-lagrangian-and-the-charged-spin-half-fluid</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Charged Spin-One Fluid</td>
+<td><code>the-lagrangian-and-the-charged-spin-one-fluid</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Charged Spin-Zero Fluid</td>
+<td><code>the-lagrangian-and-the-charged-spin-zero-fluid</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Schrödinger Fluid</td>
+<td><code>the-lagrangian-and-the-schrodinger-fluid</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Spin-Half Fluid</td>
+<td><code>the-lagrangian-and-the-spin-half-fluid</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Spin-One Fluid</td>
+<td><code>the-lagrangian-and-the-spin-one-fluid</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Spin-Zero Fluid</td>
+<td><code>the-lagrangian-and-the-spin-zero-fluid</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="relativistic-quantum-theory-21">Relativistic Quantum Theory (21)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lagrangian and the Coupled Dirac Equation</td>
+<td><code>the-lagrangian-and-the-coupled-dirac-equation</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Dirac Equation in Momentum Space</td>
+<td><code>the-lagrangian-and-the-coupled-dirac-equation-in-momentum-space</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Dirac Equation in Polar Variables</td>
+<td><code>the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Klein–Gordon Equation</td>
+<td><code>the-lagrangian-and-the-coupled-klein-gordon-equation</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Klein–Gordon Equation in Momentum Space</td>
+<td><code>the-lagrangian-and-the-coupled-klein-gordon-equation-in-momentum-space</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables</td>
+<td><code>the-lagrangian-and-the-coupled-klein-gordon-equation-in-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Proca Equation</td>
+<td><code>the-lagrangian-and-the-coupled-proca-equation</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Proca Equation in Momentum Space</td>
+<td><code>the-lagrangian-and-the-coupled-proca-equation-in-momentum-space</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Coupled Proca Equation in Polar Variables</td>
+<td><code>the-lagrangian-and-the-coupled-proca-equation-in-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Dirac Equation</td>
+<td><code>the-lagrangian-and-the-dirac-equation</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Dirac Equation in Momentum Space</td>
+<td><code>the-lagrangian-and-the-dirac-equation-in-momentum-space</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Dirac Equation in Polar Variables</td>
+<td><code>the-lagrangian-and-the-dirac-equation-in-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Electromagnetic Field</td>
+<td><code>the-lagrangian-and-the-electromagnetic-field</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Interacting Scalar Field</td>
+<td><code>the-lagrangian-and-the-interacting-scalar-field</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Klein–Gordon Equation</td>
+<td><code>the-lagrangian-and-the-klein-gordon-equation</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Klein–Gordon Equation in Momentum Space</td>
+<td><code>the-lagrangian-and-the-klein-gordon-equation-in-momentum-space</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Klein–Gordon Equation in Polar Variables</td>
+<td><code>the-lagrangian-and-the-klein-gordon-equation-in-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Proca Equation</td>
+<td><code>the-lagrangian-and-the-proca-equation</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Proca Equation in Momentum Space</td>
+<td><code>the-lagrangian-and-the-proca-equation-in-momentum-space</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Proca Equation in Polar Variables</td>
+<td><code>the-lagrangian-and-the-proca-equation-in-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Topologically Massive Connection</td>
+<td><code>the-lagrangian-and-the-topologically-massive-connection</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="strong-force-3">Strong Force (3)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lagrangian and the Axion</td>
+<td><code>the-lagrangian-and-the-axion</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Nonlinear Sigma Model</td>
+<td><code>the-lagrangian-and-the-nonlinear-sigma-model</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Skyrme Model</td>
+<td><code>the-lagrangian-and-the-skyrme-model</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="no-result-clause-the-other-149">No result clause: the other 149</h3>
+<p>These are the pair titles proper. Some pair a model with its method, others pair two objects the article compares. All of them stop at the pairing.</p>
+<h4 id="electromagnetism-6">Electromagnetism (6)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Harmonic Elementary Particles and the Periodic System of Atoms</td>
+<td><code>harmonic-elementary-particles-and-the-periodic-system-of-atoms</code></td>
+</tr>
+<tr>
+<td>Null Electromagnetic Fields and the Shear-Free Congruence</td>
+<td><code>null-electromagnetic-fields-and-the-shear-free-congruence</code></td>
+</tr>
+<tr>
+<td>The Complex-Displaced Singularity and the Circle Electron</td>
+<td><code>the-complex-displaced-singularity-and-the-circle-electron</code></td>
+</tr>
+<tr>
+<td>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</td>
+<td><code>the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis</code></td>
+</tr>
+<tr>
+<td>The Parabolic Dirac Operator and the Fourier Reformulation of Maxwell's Equations</td>
+<td><code>the-parabolic-dirac-operator-and-the-fourier-reformulation-of-maxwells-equations</code></td>
+</tr>
+<tr>
+<td>The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral</td>
+<td><code>the-time-harmonic-maxwell-operator-and-the-quaternionic-cauchy-integral</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="electroweak-force-4">Electroweak Force (4)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Meson Mixing, Rare Decays and the Unitarity Triangle as a Closure Test</td>
+<td><code>meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test</code></td>
+</tr>
+<tr>
+<td>The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</td>
+<td><code>the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</td>
+<td><code>the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure</code></td>
+</tr>
+<tr>
+<td>The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</td>
+<td><code>the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="gravity-and-cosmology-6">Gravity and Cosmology (6)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Congruence Twistors and the Fields They Generate</td>
+<td><code>congruence-twistors-and-the-fields-they-generate</code></td>
+</tr>
+<tr>
+<td>Curved Spacetime and the Biquaternion Framework</td>
+<td><code>curved-spacetime-and-the-biquaternion-framework</code></td>
+</tr>
+<tr>
+<td>The Instanton Monad, the Euclidean Route, and the Passages Moved Here</td>
+<td><code>the-instanton-monad-the-euclidean-route-and-the-passages-moved-here</code></td>
+</tr>
+<tr>
+<td>The Kerr–Schild Sub-class and the Vacuum Wave</td>
+<td><code>the-kerr-schild-sub-class-and-the-vacuum-wave</code></td>
+</tr>
+<tr>
+<td>The Two-Sided Derivative and the Star Eigenvalue</td>
+<td><code>the-two-sided-derivative-and-the-star-eigenvalue</code></td>
+</tr>
+<tr>
+<td>Torsion, Contorsion and the Spin Connection in Biquaternionic Form</td>
+<td><code>torsion-contorsion-and-the-spin-connection-in-biquaternionic-form</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="non-relativistic-approximation-of-quantum-theory-22">Non Relativistic Approximation of Quantum Theory (22)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</td>
+<td><code>biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum</code></td>
+</tr>
+<tr>
+<td>Contextuality and the Kochen–Specker Theorem in Biquaternionic Form</td>
+<td><code>contextuality-and-the-kochen-specker-theorem-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</td>
+<td><code>exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum</code></td>
+</tr>
+<tr>
+<td>Mutually Unbiased Bases and the Biquaternion Algebra</td>
+<td><code>mutually-unbiased-bases-and-the-biquaternion-algebra</code></td>
+</tr>
+<tr>
+<td>No-Cloning and the Algebraic Obstruction in Biquaternionic Form</td>
+<td><code>no-cloning-and-the-algebraic-obstruction-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>POVMs and the Positive Cone in Biquaternionic Form</td>
+<td><code>povms-and-the-positive-cone-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Quantum Channels and the Reversible/Irreversible Dichotomy</td>
+<td><code>quantum-channels-and-the-reversible-irreversible-dichotomy</code></td>
+</tr>
+<tr>
+<td>Quantum Error Correction and the Stabilizer Formalism in Biquaternionic Form</td>
+<td><code>quantum-error-correction-and-the-stabilizer-formalism-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Spin Squeezing and the Tavis–Cummings Model in Biquaternionic Form</td>
+<td><code>spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Spin-1 Condensates and the Spinor Order Parameter in Biquaternionic Form</td>
+<td><code>spin-1-condensates-and-the-spinor-order-parameter-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Coulomb Path Integral and the Duru–Kleinert Transformation in Biquaternionic Form</td>
+<td><code>the-coulomb-path-integral-and-the-duru-kleinert-transformation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form</td>
+<td><code>the-fourier-transform-and-the-coupled-schrodinger-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Polar Variables</td>
+<td><code>the-fourier-transform-and-the-coupled-schrodinger-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Schrödinger Equation in Biquaternionic Form</td>
+<td><code>the-fourier-transform-and-the-schrodinger-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Schrödinger Equation in Biquaternionic Polar Variables</td>
+<td><code>the-fourier-transform-and-the-schrodinger-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Native Qubit and the Defining Module of the Biquaternion Algebra</td>
+<td><code>the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Form</td>
+<td><code>the-path-integral-and-the-coupled-schrodinger-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Polar Variables</td>
+<td><code>the-path-integral-and-the-coupled-schrodinger-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Schrödinger Equation in Biquaternionic Form</td>
+<td><code>the-path-integral-and-the-schrodinger-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Schrödinger Equation in Biquaternionic Polar Variables</td>
+<td><code>the-path-integral-and-the-schrodinger-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Unstable State and the Complex Energy Pole in Biquaternionic Form</td>
+<td><code>the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Von Neumann Entropy and the Biquaternion Norm</td>
+<td><code>von-neumann-entropy-and-the-biquaternion-norm</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="non-relativistic-non-quantum-approximation-14">Non Relativistic Non Quantum Approximation (14)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Central Forces and the Classical Kepler Problem in Biquaternionic Form</td>
+<td><code>central-forces-and-the-classical-kepler-problem-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Coarse-Graining and the Biquaternion Entropy Functional</td>
+<td><code>coarse-graining-and-the-biquaternion-entropy-functional</code></td>
+</tr>
+<tr>
+<td>Fisher Information and the Biquaternion Norm</td>
+<td><code>fisher-information-and-the-biquaternion-norm</code></td>
+</tr>
+<tr>
+<td>Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form</td>
+<td><code>hannays-angles-and-the-classical-geometric-phase-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form</td>
+<td><code>landauers-principle-and-the-material-informational-exchange-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form</td>
+<td><code>larmor-precession-and-the-classical-magnetic-moment-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Maxwell's Demon and the Informational Sector in Biquaternionic Form</td>
+<td><code>maxwells-demon-and-the-informational-sector-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</td>
+<td><code>pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Rigid-Body Dynamics and the Biquaternion Rotor</td>
+<td><code>rigid-body-dynamics-and-the-biquaternion-rotor</code></td>
+</tr>
+<tr>
+<td>Similitudes Between the Poisson Bracket and the Quantum Commutator</td>
+<td><code>similitudes-between-the-poisson-bracket-and-the-quantum-commutator</code></td>
+</tr>
+<tr>
+<td>The Classical Harmonic Oscillator and the Two-Sector Structure in Biquaternionic Form</td>
+<td><code>the-classical-harmonic-oscillator-and-the-two-sector-structure-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form</td>
+<td><code>the-multipole-expansion-and-the-quadrupole-interaction-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Non-Quantum Limit of the Action Principle and the Lagrangian</td>
+<td><code>the-non-quantum-limit-of-the-action-principle-and-the-lagrangian</code></td>
+</tr>
+<tr>
+<td>The Symplectic Form and the Biquaternion Norm Cone</td>
+<td><code>the-symplectic-form-and-the-biquaternion-norm-cone</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="primordial-force-1">Primordial Force (1)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Connection Curvature and the Bianchi Identity in Biquaternionic Form</td>
+<td><code>connection-curvature-and-the-bianchi-identity-in-biquaternionic-form</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="quantum-fields-16">Quantum Fields (16)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entanglement Entropy and the Replica Trick in Biquaternionic Form</td>
+<td><code>entanglement-entropy-and-the-replica-trick-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Excitation, Mode Function, and the Informational Sector</td>
+<td><code>excitation-mode-function-and-the-informational-sector</code></td>
+</tr>
+<tr>
+<td>Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</td>
+<td><code>fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form</td>
+<td><code>integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Lattice Connection Theory and the Biquaternion Path Integral</td>
+<td><code>lattice-connection-theory-and-the-biquaternion-path-integral</code></td>
+</tr>
+<tr>
+<td>Redundancy and the Information in the Orbit in Biquaternionic Form</td>
+<td><code>redundancy-and-the-information-in-the-orbit-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Relative Entropy and the Biquaternion Framework</td>
+<td><code>relative-entropy-and-the-biquaternion-framework</code></td>
+</tr>
+<tr>
+<td>The Discrete Lattice and the Thermal Circle</td>
+<td><code>the-discrete-lattice-and-the-thermal-circle</code></td>
+</tr>
+<tr>
+<td>The Generating Functional and the Effective Action in Biquaternionic Form</td>
+<td><code>the-generating-functional-and-the-effective-action-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</td>
+<td><code>the-grading-fermion-parity-and-the-two-sectors-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Index Theorem and the Zero-Mode Count in Biquaternionic Form</td>
+<td><code>the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form</td>
+<td><code>the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</td>
+<td><code>the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Superalgebra Reading and the Odd Extension in Biquaternionic Form</td>
+<td><code>the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Vacuum State and the Casimir Effect in Biquaternionic Form</td>
+<td><code>the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</td>
+<td><code>the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="relativistic-non-quantum-approximation-3">Relativistic Non Quantum Approximation (3)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Causality and the Light Cone as an Information Barrier in Biquaternionic Form</td>
+<td><code>causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Higher Multipoles and the Field-Strength Decomposition in Biquaternionic Form</td>
+<td><code>higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</td>
+<td><code>stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="relativistic-quantum-fluid-mechanics-6">Relativistic Quantum Fluid Mechanics (6)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Clebsch Potentials and the Rank of the Vorticity</td>
+<td><code>the-clebsch-potentials-and-the-rank-of-the-vorticity</code></td>
+</tr>
+<tr>
+<td>The Equation of State and the Barotropic Condition</td>
+<td><code>the-equation-of-state-and-the-barotropic-condition</code></td>
+</tr>
+<tr>
+<td>The Sign ε and the Rigidity Constraint on Σ₁₀</td>
+<td><code>the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10</code></td>
+</tr>
+<tr>
+<td>The Spin-Half Fluid and the Takabayasi Correspondence</td>
+<td><code>the-spin-half-fluid-and-the-takabayasi-correspondence</code></td>
+</tr>
+<tr>
+<td>The Vorticity Form and the Irrotational Condition</td>
+<td><code>the-vorticity-form-and-the-irrotational-condition</code></td>
+</tr>
+<tr>
+<td>Viscosity and the Rayleigh Dissipation Function</td>
+<td><code>viscosity-and-the-rayleigh-dissipation-function</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="relativistic-quantum-theory-39">Relativistic Quantum Theory (39)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</td>
+<td><code>antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</td>
+<td><code>biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom</code></td>
+</tr>
+<tr>
+<td>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</td>
+<td><code>bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation</code></td>
+</tr>
+<tr>
+<td>Conformal Invariance and the Massless Limit in Biquaternionic Form</td>
+<td><code>conformal-invariance-and-the-massless-limit-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Entanglement Monogamy and the CKW Inequality</td>
+<td><code>entanglement-monogamy-and-the-ckw-inequality</code></td>
+</tr>
+<tr>
+<td>Parra's Four Options of the Dirac Equation and the Discrete Symmetries</td>
+<td><code>parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries</code></td>
+</tr>
+<tr>
+<td>Spin Entropy and the Lorentz Group in Biquaternionic Form</td>
+<td><code>spin-entropy-and-the-lorentz-group-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</td>
+<td><code>the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation</code></td>
+</tr>
+<tr>
+<td>The Daviau Map and the Space Clifford Formulation of the Dirac Equation</td>
+<td><code>the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation</code></td>
+</tr>
+<tr>
+<td>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</td>
+<td><code>the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Form</td>
+<td><code>the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables</td>
+<td><code>the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Form</td>
+<td><code>the-fourier-transform-and-the-coupled-klein-gordon-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables</td>
+<td><code>the-fourier-transform-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Coupled Proca Equation in Biquaternionic Form</td>
+<td><code>the-fourier-transform-and-the-coupled-proca-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Coupled Proca Equation in Biquaternionic Polar Variables</td>
+<td><code>the-fourier-transform-and-the-coupled-proca-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Dirac Equation in Biquaternionic Form</td>
+<td><code>the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables</td>
+<td><code>the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form</td>
+<td><code>the-fourier-transform-and-the-klein-gordon-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Polar Variables</td>
+<td><code>the-fourier-transform-and-the-klein-gordon-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Proca Equation in Biquaternionic Form</td>
+<td><code>the-fourier-transform-and-the-proca-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables</td>
+<td><code>the-fourier-transform-and-the-proca-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</td>
+<td><code>the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Coupled Dirac Equation in Biquaternionic Form</td>
+<td><code>the-path-integral-and-the-coupled-dirac-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Coupled Dirac Equation in Biquaternionic Polar Variables</td>
+<td><code>the-path-integral-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form</td>
+<td><code>the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables</td>
+<td><code>the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Coupled Proca Equation in Biquaternionic Form</td>
+<td><code>the-path-integral-and-the-coupled-proca-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Coupled Proca Equation in Biquaternionic Polar Variables</td>
+<td><code>the-path-integral-and-the-coupled-proca-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Dirac Equation in Biquaternionic Form</td>
+<td><code>the-path-integral-and-the-dirac-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Dirac Equation in Biquaternionic Polar Variables</td>
+<td><code>the-path-integral-and-the-dirac-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Klein–Gordon Equation in Biquaternionic Form</td>
+<td><code>the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Klein–Gordon Equation in Biquaternionic Polar Variables</td>
+<td><code>the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Proca Equation in Biquaternionic Form</td>
+<td><code>the-path-integral-and-the-proca-equation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Path Integral and the Proca Equation in Biquaternionic Polar Variables</td>
+<td><code>the-path-integral-and-the-proca-equation-in-biquaternionic-polar-variables</code></td>
+</tr>
+<tr>
+<td>The Petiau System and the Quantisation of Mass in Biquaternionic Form</td>
+<td><code>the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Reflection and the Rotation in Biquaternionic Form</td>
+<td><code>the-reflection-and-the-rotation-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Third Polarization and the Self-Dual Split of the Massive Field Strength</td>
+<td><code>the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength</code></td>
+</tr>
+<tr>
+<td>Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</td>
+<td><code>triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="relativistic-quantum-thermodynamics-3">Relativistic Quantum Thermodynamics (3)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spin Conservation and the Frenkel Condition</td>
+<td><code>spin-conservation-and-the-frenkel-condition</code></td>
+</tr>
+<tr>
+<td>The KMS Condition and the Biquaternion Framework</td>
+<td><code>the-kms-condition-and-the-biquaternion-framework</code></td>
+</tr>
+<tr>
+<td>Thermal Time and the Modular Flow in the Biquaternion Framework</td>
+<td><code>thermal-time-and-the-modular-flow-in-the-biquaternion-framework</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="relativity-20">Relativity (20)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$, $T$ and the Representation Labels</td>
+<td><code>p-t-and-the-representation-labels</code></td>
+</tr>
+<tr>
+<td>Four-Vectors and the Interval</td>
+<td><code>four-vectors-and-the-interval</code></td>
+</tr>
+<tr>
+<td>Paravectors and the Geometry of Spacetime</td>
+<td><code>paravectors-and-the-geometry-of-spacetime</code></td>
+</tr>
+<tr>
+<td>States, Observables and the Born Weight</td>
+<td><code>states-observables-and-the-born-weight</code></td>
+</tr>
+<tr>
+<td>The Cartan Subalgebra, the Roots and the Three Real Forms</td>
+<td><code>the-cartan-subalgebra-the-roots-and-the-three-real-forms</code></td>
+</tr>
+<tr>
+<td>The Derivative, the Field and the Transform</td>
+<td><code>the-derivative-the-field-and-the-transform</code></td>
+</tr>
+<tr>
+<td>The Dirac Pair and the Mass Term</td>
+<td><code>the-dirac-pair-and-the-mass-term</code></td>
+</tr>
+<tr>
+<td>The Four Forms and the Four Norms</td>
+<td><code>the-four-forms-and-the-four-norms</code></td>
+</tr>
+<tr>
+<td>The Fubini–Study Geometry and the Biquaternion Norm</td>
+<td><code>the-fubini-study-geometry-and-the-biquaternion-norm</code></td>
+</tr>
+<tr>
+<td>The Group of Invertibles, the Cone and the Orders</td>
+<td><code>the-group-of-invertibles-the-cone-and-the-orders</code></td>
+</tr>
+<tr>
+<td>The K Norm and the Indefinite Structure</td>
+<td><code>the-k-norm-and-the-indefinite-structure</code></td>
+</tr>
+<tr>
+<td>The Poincaré Group and the Biquaternion Frame</td>
+<td><code>the-poincare-group-and-the-biquaternion-frame</code></td>
+</tr>
+<tr>
+<td>The Principal Series and the Complementary Series</td>
+<td><code>the-principal-series-and-the-complementary-series</code></td>
+</tr>
+<tr>
+<td>The Quadratic Map and the Singular Sets</td>
+<td><code>the-quadratic-map-and-the-singular-sets</code></td>
+</tr>
+<tr>
+<td>The Rest Frame and the Exceptional Point</td>
+<td><code>the-rest-frame-and-the-exceptional-point</code></td>
+</tr>
+<tr>
+<td>The Spectrum and the Two Modes</td>
+<td><code>the-spectrum-and-the-two-modes</code></td>
+</tr>
+<tr>
+<td>The Two-Sheeted Cover and the Topology of Boosts</td>
+<td><code>the-two-sheeted-cover-and-the-topology-of-boosts</code></td>
+</tr>
+<tr>
+<td>The Vacuum and the Nilpotent Ladder</td>
+<td><code>the-vacuum-and-the-nilpotent-ladder</code></td>
+</tr>
+<tr>
+<td>The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form</td>
+<td><code>the-wigner-rotation-and-the-information-content-of-a-boost-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Wave–Particle Duality and the Fourier Transform</td>
+<td><code>wave-particle-duality-and-the-fourier-transform</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="strong-force-8">Strong Force (8)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Confinement and the Loss of Partonic Information in Biquaternionic Form</td>
+<td><code>confinement-and-the-loss-of-partonic-information-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Electric–Magnetic Duality and the Modular Group in Biquaternionic Form</td>
+<td><code>electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Jets, the QCD Cross Section and the Infrared Structure</td>
+<td><code>jets-the-qcd-cross-section-and-the-infrared-structure</code></td>
+</tr>
+<tr>
+<td>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</td>
+<td><code>su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</td>
+<td><code>the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form</td>
+<td><code>the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Skyrme Model and the Topological Baryon in Biquaternionic Form</td>
+<td><code>the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</td>
+<td><code>the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="symmetry-breaking-1">Symmetry Breaking (1)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Number of Generations and the Biquaternion Algebra</td>
+<td><code>the-number-of-generations-and-the-biquaternion-algebra</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="a-result-clause-after-the-colon-the-30">A result clause after the colon: the 30</h3>
+<p>These satisfy the reading test and breach the letter of the ban. A repair here is a rewrite of the main clause, and the result clause can be kept word for word.</p>
+<h4 id="electroweak-force-2">Electroweak Force (2)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Custodial Symmetry and the Rho Parameter: From Accidental to Local</td>
+<td><code>custodial-symmetry-and-the-rho-parameter</code></td>
+</tr>
+<tr>
+<td>The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$</td>
+<td><code>the-electroweak-symmetry-group-and-the-hypercharge-assignment</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="non-relativistic-approximation-of-quantum-theory-1">Non Relativistic Approximation of Quantum Theory (1)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Biquaternion Framework and the Canonical Commutation Relation: An Independent Axiom</td>
+<td><code>the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="primordial-force-4">Primordial Force (4)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lagrangian and the Primordial Force: The $\mathrm{SU}(4)$ Action, One Coupling on Fifteen Generators</td>
+<td><code>the-lagrangian-and-the-primordial-force</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Scalar Matrix: One Field, One Commutator, Four Quartics</td>
+<td><code>the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Sixteen: The Kinetic Term and the Yukawa Coupling</td>
+<td><code>the-lagrangian-and-the-sixteen-kinetic-term-and-yukawa-coupling</code></td>
+</tr>
+<tr>
+<td>The Relativistic Particle and the Lagrangian: The Stationary-Action Principle</td>
+<td><code>the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="quantum-fields-2">Quantum Fields (2)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</td>
+<td><code>charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Lagrangian and the Second Quantisation: From the Action to the Commutator</td>
+<td><code>the-lagrangian-and-the-second-quantisation</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="relativistic-quantum-fluid-mechanics-8_1">Relativistic Quantum Fluid Mechanics (8)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Fourier Transform and the Charged Schrödinger Fluid: The Vorticity Is the Curvature</td>
+<td><code>the-fourier-transform-and-the-charged-schrodinger-fluid</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Charged Spin-Half Fluid: A Phase Cannot Rotate a Rotor</td>
+<td><code>the-fourier-transform-and-the-charged-spin-half-fluid</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Charged Spin-One Fluid: The Constraint Is the Amplitude</td>
+<td><code>the-fourier-transform-and-the-charged-spin-one-fluid</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Charged Spin-Zero Fluid: The Support Is the Translated Shell</td>
+<td><code>the-fourier-transform-and-the-charged-spin-zero-fluid</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Schrödinger Fluid: The Quantum Potential Is Interference</td>
+<td><code>the-fourier-transform-and-the-schrodinger-fluid</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Spin-Half Fluid: One Mode Occupies One Bracket of Four</td>
+<td><code>the-fourier-transform-and-the-spin-half-fluid-one-mode-occupies-one-bracket-of-four</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Spin-One Fluid: The Frame Carries No Momentum</td>
+<td><code>the-fourier-transform-and-the-spin-one-fluid</code></td>
+</tr>
+<tr>
+<td>The Fourier Transform and the Spin-Zero Fluid: The Mode Is a Unit Velocity</td>
+<td><code>the-fourier-transform-and-the-spin-zero-fluid</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="relativistic-quantum-theory-6">Relativistic Quantum Theory (6)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Composite Systems and the Multi-Qubit Extension: The Module Route and the Algebra Route</td>
+<td><code>composite-systems-and-the-multi-qubit-extension</code></td>
+</tr>
+<tr>
+<td>Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module</td>
+<td><code>spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module</code></td>
+</tr>
+<tr>
+<td>Wave–Particle Duality and the Count of Degrees of Freedom: The Symbol's Rank On and Off the Cone</td>
+<td><code>wave-particle-duality-and-the-count-of-degrees-of-freedom</code></td>
+</tr>
+<tr>
+<td>Wave–Particle Duality and the Galilean Limit: Why the Schrödinger Symbol Is Affine</td>
+<td><code>wave-particle-duality-and-the-galilean-limit</code></td>
+</tr>
+<tr>
+<td>Wave–Particle Duality and the Three Positions of One Zero: Bound States, Resonances and Decay</td>
+<td><code>wave-particle-duality-and-the-three-positions-of-one-zero</code></td>
+</tr>
+<tr>
+<td>Wave–Particle Duality and the Weight of a Level Set: Coarea, Exponential Type and the Projection That Cannot Be Local</td>
+<td><code>wave-particle-duality-and-the-weight-of-a-level-set</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="relativity-2">Relativity (2)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aberration and the Sky: The Boost as a Möbius Flow</td>
+<td><code>aberration-and-the-sky-the-boost-as-a-mobius-flow</code></td>
+</tr>
+<tr>
+<td>The Pauli Pair and the Gamma Frame: Which Statements Survive Conjugation</td>
+<td><code>the-pauli-pair-and-the-gamma-frame-which-statements-survive-conjugation</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="strong-force-2">Strong Force (2)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Asymptotic Freedom and the Running of the Strong Coupling: One Coefficient, One Line, One Scale</td>
+<td><code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code></td>
+</tr>
+<tr>
+<td>The Chiral Theory and the Lagrangian: The Pion and the Decay Constant</td>
+<td><code>the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="symmetry-breaking-3">Symmetry Breaking (3)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Centraliser, the Complement, and the Index: Dimension Falls at a Breaking, Rank Rises at an Arrival</td>
+<td><code>the-centraliser-the-complement-and-the-index-dimension-and-rank</code></td>
+</tr>
+<tr>
+<td>The Standard Model and the Lagrangian: Four Sectors in One Expression</td>
+<td><code>the-standard-model-and-the-lagrangian-four-sectors-in-one-expression</code></td>
+</tr>
+<tr>
+<td>The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators</td>
+<td><code>the-weinberg-angle-and-the-three-neutral-states</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="physics-the-titles-that-fail-the-reading-test">Physics: The Titles That Fail the Reading Test</h2>
+<p><strong>The reading test is the rule's own test, not a stricter one.</strong> It asks for the object, the result and the key number. The 22 articles above fail on a sentence; the articles below fail on the test, and the section counts them without listing them all.</p>
+<h3 id="the-framework-suffix-224-articles">The framework suffix, 224 articles</h3>
+<p><em>The Proca Equation in Biquaternionic Form</em> names the object and the carrier. It does not say what the article proves about the object. The sentence is true of 224 titles, which is 32 per cent of the physics corpus outside the first category, and it is the corpus's largest single title habit.</p>
+<p>Ten of them, in the categories where the habit is heaviest:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Photon in Biquaternionic Form</td>
+<td><code>the-photon-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Electron in Biquaternionic Form</td>
+<td><code>the-electron-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Proton in Biquaternionic Form</td>
+<td><code>the-proton-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Neutron in Biquaternionic Form</td>
+<td><code>the-neutron-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</td>
+<td><code>the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Skyrme Model and the Topological Baryon in Biquaternionic Form</td>
+<td><code>the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</td>
+<td><code>the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source</td>
+<td><code>cosmology-in-the-biquaternion-framework-the-carried-metric-and-the-missing-source</code></td>
+</tr>
+<tr>
+<td>Canonical Quantization of the Biquaternion Maxwell Field</td>
+<td><code>canonical-quantization-of-the-biquaternion-maxwell-field</code></td>
+</tr>
+<tr>
+<td>The Klein–Gordon Object: Every Article on One Equation</td>
+<td><code>the-klein-gordon-object-every-article-on-one-equation</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the counter-example the corpus already writes.</strong> <em>The Klein–Gordon Object: Every Article on One Equation</em> names the object and then a result — a catalogue — and it passes. Three titles do this (<em>the Proca object</em>, <em>the Dirac object</em>, <em>the Klein–Gordon object</em>), and they show the house style at its best.</p>
+<h3 id="topic-titles-under-five-words-17-articles">Topic titles under five words, 17 articles</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Idempotents, Ideals and Observables</td>
+<td><code>idempotents-ideals-and-observables</code></td>
+</tr>
+<tr>
+<td>Four-Vectors and the Interval</td>
+<td><code>four-vectors-and-the-interval</code></td>
+</tr>
+<tr>
+<td>The Massless Regime</td>
+<td><code>the-massless-regime</code></td>
+</tr>
+<tr>
+<td>Exercise: The Thomas Precession</td>
+<td><code>exercise-the-thomas-precession</code></td>
+</tr>
+<tr>
+<td>Shock Electromagnetic Waves</td>
+<td><code>shock-electromagnetic-waves</code></td>
+</tr>
+<tr>
+<td>Helicity in Biquaternionic Form</td>
+<td><code>helicity-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Zitterbewegung in Biquaternionic Form</td>
+<td><code>zitterbewegung-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>Decoherence as Idempotent Projection</td>
+<td><code>decoherence-as-idempotent-projection</code></td>
+</tr>
+<tr>
+<td>The Spin-One Fluid</td>
+<td><code>the-spin-one-fluid</code></td>
+</tr>
+<tr>
+<td>The Spin-Half Energy-Momentum Tensor</td>
+<td><code>the-spin-half-energy-momentum-tensor</code></td>
+</tr>
+<tr>
+<td>The Spin-Zero Fluid</td>
+<td><code>the-spin-zero-fluid</code></td>
+</tr>
+<tr>
+<td>The Schrödinger Fluid</td>
+<td><code>the-schrodinger-fluid</code></td>
+</tr>
+<tr>
+<td>The Current Algebra</td>
+<td><code>the-current-algebra</code></td>
+</tr>
+<tr>
+<td>Bosonization in Biquaternionic Form</td>
+<td><code>bosonization-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>The Local Entropy Current</td>
+<td><code>the-local-entropy-current</code></td>
+</tr>
+<tr>
+<td>Conservation as a Consequence</td>
+<td><code>conservation-as-a-consequence</code></td>
+</tr>
+<tr>
+<td>Twistor Theory and Biquaternions</td>
+<td><code>twistor-theory-and-biquaternions</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>These are the shortest titles in the corpus outside the first category,</strong> and most of them are sections of a larger study — <em>The Spin-Zero Fluid</em>, <em>The Current Algebra</em> — that a reader reaches from the parent article. A title of three words can pass the reading test when the object is famous; <em>The Massless Regime</em> does not.</p>
+<h2 id="mathematics-what-the-rule-reaches-and-what-it-does-not">Mathematics: What the Rule Reaches and What It Does Not</h2>
+<p><strong>The section names physics four times and mathematics never.</strong> Its first sentence is <em>a physics title is a compressed abstract</em>; the exemplars are Physical Review D, JHEP and Nuclear Physics B; the length is 8–20 words. Nothing in it is addressed to a mathematics article.</p>
+<p><strong>What the mathematics corpus does under the rule's mechanical sentences.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rule</th>
+<th style="text-align: right;">mathematics</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>narrative subtitle</td>
+<td style="text-align: right;">0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><em>Nothing [verb]s</em></td>
+<td style="text-align: right;">0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td><em>The X Printed</em></td>
+<td style="text-align: right;">0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>question or exclamation</td>
+<td style="text-align: right;">0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>more than one colon</td>
+<td style="text-align: right;">0</td>
+<td>clean</td>
+</tr>
+<tr>
+<td>over 20 words</td>
+<td style="text-align: right;">1</td>
+<td>one repair</td>
+</tr>
+<tr>
+<td><em>The X and the Y</em></td>
+<td style="text-align: right;">465</td>
+<td>the idiom</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one mechanical breach.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>From the Spin Group to the Spin of a Single Rotor at $n=4$: the Sign after $2\pi$ and the Return after $4\pi$</td>
+<td><code>from-the-spin-group-to-the-spin-of-a-single-rotor-at-n-4</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The 465 conjunctions are topic pairs.</strong> <em>Cardinality and the Axiom of Choice</em>, <em>The Special Linear Group and the Determinant</em>, <em>Nilpotent Elements and the Jordan–Chevalley Decomposition</em>: a reference article that treats two linked notions. Six of the 465 carry a result clause.</p>
+<h4 id="math376-1">$M_2(\mathbb{C})$ (1)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Two Halves and the Analysis: Smooth Structures at $n=2$</td>
+<td><code>the-two-halves-and-the-analysis-smooth-structures-at-n-2</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="math378-2">$M_4(\mathbb{C})$ (2)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in $M_4(\mathbb{C})$</td>
+<td><code>the-slot-and-the-summand-at-n-4</code></td>
+</tr>
+<tr>
+<td>The Two Halves and the Analysis: Smooth Structures and the Exponential at $n=4$</td>
+<td><code>the-two-halves-and-the-analysis-smooth-structures-and-the-exponential-at-n-4</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="biquaternions-1">Biquaternions (1)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators</td>
+<td><code>the-slot-and-the-summand</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="the-matrix-algebras-math387-1">The Matrix Algebras $M_n(\mathbb{C})$ (1)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Two Halves and the Analysis: Smooth Structures and the Exponential</td>
+<td><code>the-two-halves-and-the-analysis-smooth-structures-and-the-exponential</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="the-matrix-algebras-math388-1">The Matrix Algebras $M_n(\mathbb{R})$ (1)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Two Halves and the Analysis over $\mathbb{R}$: Smooth Structures and the Exponential</td>
+<td><code>the-two-halves-and-the-analysis-smooth-structures-and-the-exponential-over-r</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The 775 titles under five words are the deeper question.</strong> <em>Adic Spaces</em>, <em>Descent Theory</em>, <em>Tilting Theory</em>, <em>Sheaves on Sites</em>: these are the names of subjects, and a reference corpus needs them. A reader searching for <em>descent theory</em> finds it in three seconds, which is the reading test's first question, and the others do not apply to a reference article.</p>
+<p><strong>Ten of the 775, as the shape of the problem:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Slug</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adic Spaces</td>
+<td><code>adic-spaces</code></td>
+</tr>
+<tr>
+<td>Descent Theory</td>
+<td><code>descent-theory</code></td>
+</tr>
+<tr>
+<td>Tilting Theory</td>
+<td><code>tilting-theory</code></td>
+</tr>
+<tr>
+<td>Sheaves on Sites</td>
+<td><code>sheaves-on-sites</code></td>
+</tr>
+<tr>
+<td>Model Theory</td>
+<td><code>model-theory</code></td>
+</tr>
+<tr>
+<td>K-Theory of Rings</td>
+<td><code>k-theory-of-rings</code></td>
+</tr>
+<tr>
+<td>Derived Categories</td>
+<td><code>derived-categories</code></td>
+</tr>
+<tr>
+<td>Stable Homotopy Theory</td>
+<td><code>stable-homotopy-theory</code></td>
+</tr>
+<tr>
+<td>Crystalline Cohomology</td>
+<td><code>crystalline-cohomology</code></td>
+</tr>
+<tr>
+<td>Rigid Analytic Geometry</td>
+<td><code>rigid-analytic-geometry</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The verdict for mathematics is a decision, not a measurement.</strong> Either the PLAN gains one sentence saying that a reference article is named by its subject, or the 465 conjunction titles and the 775 topic titles are defects and the corpus has 1 240 of them. This file does not choose. Option A and Option E are the two.</p>
+<h2 id="the-first-category-excluded">The First Category, Excluded</h2>
+<p><strong>The exclusion is the author's instruction and it is a floor on the count.</strong> The first physics category, <em>Biquaternion Universe</em>, holds 27 articles, and four of them break a rule this file measures: <em>Why Biquaternions?</em>, <em>Why Complexify Spacetime?</em>, <em>The Temporal Dimension: Why the Temporal Unit Is the Identity</em>, and <em>What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</em>. The first mathematics category, <em>Introduction and Conventions</em>, holds 12 titles and breaks none.</p>
+<p><strong>The titles of the excluded category are better than the corpus average.</strong> <em>A Brief History of Biquaternions in Physics</em>, <em>The Empirical Status of the Biquaternion Framework</em>, <em>The Computational Cost of Biquaternion Arithmetic</em>: each names an object and a result. The idiom that this audit counts begins in the second category of each menu.</p>
+<h2 id="the-propagation-surface">The Propagation Surface</h2>
+<p><strong>A title change is four edits, and a rename adds two more.</strong> The surface below is measured, not estimated.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what carries the title</th>
+<th>where</th>
+<th>measured</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the heading line</td>
+<td>first line of the <code>.md</code>, <code># __Title__</code></td>
+<td>1 per article</td>
+</tr>
+<tr>
+<td>the menu entry</td>
+<td><code>physics.md</code> or <code>maths.md</code>, anchor text and <code>href</code></td>
+<td>1 per article</td>
+</tr>
+<tr>
+<td>the italic cross-reference</td>
+<td><code>*Title*</code> in the body of other articles</td>
+<td>241 mentions in 181 files, for the 59 Lagrangian titles alone</td>
+</tr>
+<tr>
+<td>the file name</td>
+<td><code>articles_physics/&lt;slug&gt;.md</code></td>
+<td>1 per rename</td>
+</tr>
+<tr>
+<td>the sitemaps</td>
+<td>written by <code>build.py</code> from the file list</td>
+<td>automatic</td>
+</tr>
+<tr>
+<td>the deploy</td>
+<td>rebuilt by <code>build.py</code>; the deploy folder is the author's</td>
+<td>automatic</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>There is no redirect table.</strong> <code>build.py</code> writes a sitemap from the files it finds and prunes what it does not; nothing maps an old slug to a new one. A rename therefore kills the old URL, and every inbound link from outside the site with it. The corpus has 49 renames behind it, recorded in <code>audit-titles.md</code> against a <code>LEGACY_COPIES</code> list, and <code>build.py</code> no longer holds that list: the name survives only in the earlier audit.</p>
+<p><strong>The italic cross-reference is the hidden cost.</strong> The corpus does not link by slug in the body; it names the article in italics, and the name must match the title exactly for the reader to find it. A retitle that is not followed by a sweep of the corpus leaves 241 references to a title that no longer exists, in the 59-title case.</p>
+<p><strong>The slug rule is one sentence, and it tolerates a dropped subtitle.</strong> <em>The slug is the title in lower case with hyphens in place of spaces and punctuation.</em> The corpus has always dropped the subtitle after the colon, so a retitle that keeps the main clause keeps its URL. That is what makes Option B cheap and Option D expensive.</p>
+<h2 id="the-options">The Options</h2>
+<p><strong>Option A — legalise the two idioms in the PLAN. One paragraph.</strong>
+Add one paragraph to §RULES TO WRITE TITLES naming the two constructions the corpus uses and licensing them: a pair title for an article that treats two linked objects, and the framework suffix for an article whose subject is the carrier. Cost: one edit in <code>PLAN.md</code>, no URL, no cross-reference. Effect: 204 physics and 465 mathematics conjunctions and 224 framework suffixes become compliant, and the 22 mechanical breaches stay breaches. Risk: the paragraph must not license a bare collective or a narrative subtitle, or it legalises what the author wrote the section to stop.</p>
+<p><strong>Option B — repair the 23 mechanical breaches. One pass.</strong>
+Retitle the 22 physics articles and the 1 mathematics article of §<em>Physics: The Mechanical Breaches</em>. Cost: 23 heading lines, 23 menu lines, and the cross-references, which the measurement puts near four per title. Renames: only where the slug carries the old subtitle, and the corpus's habit of dropping the subtitle means most keep their URL. Effect: no article then breaks a sentence the PLAN writes in the imperative. This is the option that pays.</p>
+<p><strong>Option C — repair the eight bare collectives.</strong>
+Rewrite <em>the Fifteen</em>, <em>the Eight</em>, <em>the Sixteen</em>, <em>the Quartet</em> into the objects they name. Cost: 8 titles, 8 menu lines, and the four titles that quote them in cross-references. It is the smallest option that removes an ambiguity a stranger cannot resolve.</p>
+<p><strong>Option D — retitle the 234 physics conjunctions.</strong>
+Every <em>The X and the Y</em> becomes <em>X: result</em>. Cost: 234 headings, 234 menu lines, 234 URLs unless the main clause is kept, and about 940 cross-references at the measured rate of four. Effect: the physics corpus reads like the journals the rule names. It is also the option that rewrites the shape of the site, and it cannot be done in one pass without a redirect table.</p>
+<p><strong>Option E — retitle the 465 mathematics conjunctions and the 775 topic titles. Refused.</strong>
+The rule does not name mathematics, and a reference corpus is searched by subject. Cost: 1 240 headings, 1 240 URLs, several thousand cross-references. The corpus would lose the property its readers use most.</p>
+<p><strong>Option F — gate the measure. Open.</strong>
+The checker of §<em>How to Re-Measure</em> is thirty lines. Wired into <code>build.py</code> beside the convention check, it reports the day a new title breaks a sentence, and it keeps the count from drifting back after a repair. It is the only option that makes the other four permanent.</p>
+<p><strong>The order that costs least.</strong> F, then B, then C, then A. The gate stops the drift; the 23 repairs clear the mechanical breaches; the 8 collectives remove the ambiguity; the paragraph settles the idiom. D and E are rewrites of the house style, and they belong to the author alone.</p>
+<h2 id="how-to-re-measure">How to Re-Measure</h2>
+<p>The checker reads the two menus, skips the first <code>##</code> section of each, opens every linked <code>.md</code>, and tests the heading line against the sentences of §<em>The Rule, Restated</em>.</p>
+<pre><code>python3 - &lt;&lt;'EOF'
+import re, os
+P = "/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit"
+def sections(menu):
+    out, cur = [], None
+    for line in open(os.path.join(P, menu), encoding="utf-8"):
+        if line.startswith("## "):
+            cur = {"name": line[3:].strip(), "items": []}; out.append(cur); continue
+        m = re.search(r'href="articles_(maths|physics)/([^"]+)\.html"', line)
+        if m and cur is not None:
+            cur["items"].append((m.group(1), m.group(2)))
+    return out[1:]                      # the first category is excluded
+def title(path):
+    for line in open(path, encoding="utf-8"):
+        line = line.strip()
+        if line: return re.match(r"^# __(.+)__$", line).group(1)
+def words(t):
+    return len(re.findall(r"[A-Za-z0-9&amp;/'-]+", re.sub(r"\$[^$]*\$", "M", t)))
+CONJ = re.compile(r"^(?:The )?[^:]*?\band (?:the|their|its)\b[^:]*$")
+NARR = re.compile(r"\band (Why|Where|What|How)\b|\b(and|or) (No|Not)\b")
+for menu in ("physics.md", "maths.md"):
+    for sec in sections(menu):
+        for coll, slug in sec["items"]:
+            t = title(os.path.join(P, f"articles_{coll}", slug + ".md"))
+            h, s = (t.split(":", 1) + [""])[:2]
+            why = []
+            if words(t) &gt; 20: why.append("over-20")
+            if "\u2014" in t: why.append("em-dash")
+            if CONJ.match(t) and ":" not in t: why.append("conjunction")
+            if ":" in t and CONJ.match(h): why.append("conjunction-head")
+            if NARR.search(s): why.append("narrative")
+            if t.startswith("Nothing"): why.append("nothing")
+            if "Printed" in t: why.append("printed")
+            if why: print(menu, sec["name"], "|", ",".join(why), "|", slug)
+EOF
+</code></pre>
+<p>The expected output is the rows of the tables above, 721 of them: 204 physics conjunctions, 459 mathematics conjunctions, 30 and 6 conjunction heads with a result clause, 13 narrative subtitles, 6 em-dash separators, 4 overlong titles, 1 <em>Nothing</em> and 1 <em>Printed</em>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The rule is written for physics and the corpus wrote another style.</strong> The measurement is exact and the judgement is the author's.</p>
+<ul>
+<li>Outside the first category, 3 333 articles were measured: 700 physics and 2 633 mathematics.</li>
+<li><strong>22 physics articles and 1 mathematics article break a sentence the PLAN writes in the imperative</strong>: 13 narrative subtitles, 1 <em>Nothing</em>, 1 <em>Printed</em>, 3 over 20 words, 6 em-dash separators, and one title that is two of these at once.</li>
+<li><strong>234 physics titles and 465 mathematics titles carry <em>The X and the Y</em></strong>, of which 204 and 459 have no result clause and 30 and 6 do.</li>
+<li><strong>224 physics titles end in <em>in Biquaternionic Form</em></strong>, the framework suffix that names the carrier and not the result; 3 titles of the same family — <em>the Proca object</em>, <em>the Dirac object</em>, <em>the Klein–Gordon object</em> — show the house style done right.</li>
+<li><strong>8 physics titles name a bare collective</strong> — <em>the Fifteen</em>, <em>the Eight</em>, <em>the Sixteen</em>, <em>the Quartet</em> — which the PLAN forbids by example.</li>
+<li><strong>The mathematics corpus is clean on every mechanical sentence but one</strong>: 0 narrative subtitles, 0 questions, 0 personifications, 0 double colons, and 1 title over 20 words.</li>
+<li><strong>The cost of a repair is four edits per title plus about four cross-references</strong>, and a rename adds a dead URL because the build has no redirect table.</li>
+<li><strong>Options: F gate, B the 23 mechanical repairs, C the 8 collectives, A the paragraph that licenses the idiom.</strong> D and E retitle 699 articles and are the author's decision alone.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>term</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the mechanical breach</td>
+<td>a title that breaks one of the five quantifiable sentences: length, separator, punctuation, narrative clause, personified object</td>
+</tr>
+<tr>
+<td>a conjunction title</td>
+<td>a title whose main clause is <em>The X and the Y</em></td>
+</tr>
+<tr>
+<td>a bare collective</td>
+<td><em>the Fifteen</em>, <em>the Eight</em>, <em>the Sixteen</em>, <em>the Quartet</em> used with no object to identify it</td>
+</tr>
+<tr>
+<td>the framework suffix</td>
+<td><em>in Biquaternionic Form</em>, <em>in the Biquaternion Framework</em>, which names the carrier</td>
+</tr>
+<tr>
+<td>the reading test</td>
+<td>the object, the result and the key number, named in the title</td>
+</tr>
+<tr>
+<td>the propagation surface</td>
+<td>the heading line, the slug, the menu anchor and <code>href</code>, the italic cross-reference, the sitemap</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>PLAN.md</code> §RULES TO WRITE TITLES, the rule this file measures.</li>
+<li><code>articles_internal/audits/audit-titles.md</code> — the earlier audit of the <em>agreement between title and file name</em>, a different question: it measures whether the slug spells the title, not whether the title obeys the writing rule.</li>
+<li><code>articles_internal/audits/audit-conventions-shape.md</code> — the same method applied to the shape of the conventions articles.</li>
+<li><code>build.py</code> — <code>sitemap_urls()</code>, <code>menu_order()</code>, <code>prune_orphans()</code>, the three functions that decide where a title appears and whether an old URL survives.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
