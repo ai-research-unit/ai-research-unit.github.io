@@ -130,7 +130,7 @@ A mass is an eigenvalue of a mass operator, and the framework represents the ope
 - The framework represents $m_e$ as a parameter of a mass term. True, and cheap.
 - The framework does not determine $m_e$. Also true, and this is the gap.
 
-The one proposal in the corpus that touches this group, [the spin–mass formula](the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.html), makes masses proportional to representation dimensions normalised to the electron. That fixes ratios, not the scale, and a mass parameter *is* a scale. So it is a relation of a restricted kind — a relation among the nine holding one of them fixed — and not a value.
+The one proposal that touches this group, the spin–mass formula of Varlamov, makes masses proportional to representation dimensions normalised to the electron. That fixes ratios, not the scale, and a mass parameter *is* a scale. So it is a relation of a restricted kind — a relation among the nine holding one of them fixed — and not a value.
 
 The electroweak scale $v$ and the scalar mass $M_H$ both require a mechanism that the algebra does not contain:
 
@@ -251,7 +251,7 @@ For every proposal in the corpus that touches a parameter, the question is which
 
 | Proposal | Entry touched | Grade claimed | Grade justified |
 |---|---|---|---|
-| The spin–mass formula | 1–9 | Relation | Relation among ratios, scale free; not a value |
+| Varlamov's mass formula | 1–9 | Relation | Relation among ratios, scale free; not a value |
 | The minimal coupling's $ϙ$ | 14–16 | Arena | Arena; no relation to a second coupling |
 | The theta-vacuum construction | 17 | Arena | Arena; no value, no mechanism for smallness |
 | The CKM as a flavour-factor operator | 10–13 | Arena | Arena; the group and the phase's necessity, not the point |
@@ -345,7 +345,6 @@ Four machines would reduce the count: a spectral principle (ten entries), a scal
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The arena for four of the nineteen, and why the phase cannot be removed.
 - [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html). The seven or eight that a neutrino mass adds, and the count as a discriminator.
 - [Meson Mixing, Rare Decays and the Unitarity Triangle as a Closure Test](meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html). The over-determination measured: five measurements, two parameters.
-- [The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form](the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.html). The corpus's one attempt at the spectral machine, and its restriction to ratios.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Why a spectral principle would have to live outside the algebra.
 - [Hadron Structure from QCD: the Bound-State Problem](hadron-structure-from-qcd-the-bound-state-problem.html). What a scale-generation mechanism looks like, and why no finite order produces one.
 - [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html). How the scalar mass enters a fit, and why $T$ is the parameter that measures the scale hierarchy.

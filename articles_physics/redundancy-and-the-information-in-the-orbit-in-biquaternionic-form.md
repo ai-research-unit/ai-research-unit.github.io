@@ -16,7 +16,7 @@ $$
 
 is the **orbit** of $\tilde{A}_{\Phi}$. This article asks what the orbit is, information-theoretically, and answers that the orbit is a **redundancy** rather than a loss: it is the fibre of the map from descriptions to physical configurations, it carries no state information, and every information measure of the theory is constant along it. What the orbit does carry is structure rather than state, and that structure is exactly what the holonomy of the connection records.
 
-The distinction this article draws is worth setting out at the start, because two neighbours in the subcategory depend on it. Three operations must be kept apart:
+The distinction this article draws is worth setting out at the start, because the two companion articles depend on it. Three operations must be kept apart:
 
 - **Redundancy.** Many descriptions, one configuration. The map is many-to-one, but the fibre is a group orbit, and a representative can be chosen — locally always, globally up to an obstruction. No information is created and none is destroyed; the description is merely overcomplete. This is the orbit.
 - **Loss.** Many configurations, one record. The map is many-to-one *after* the redundancy has been quotiented out, and no choice of description recovers the configuration. The information is inaccessible, not merely redundant. Confinement, treated in the companion article, is of this kind.
@@ -235,7 +235,7 @@ Information-theoretically this is the sharp statement of the article's thesis. T
 
 ## Redundancy and Loss: Three Operations Compared
 
-The subcategory treats three operations, and the present article is the one that fixes the meaning of the first. They are worth tabulating before the two companions develop the others, because the information-theoretic vocabulary is shared and the distinctions are easy to blur.
+The corpus treats three operations, and the present article is the one that fixes the meaning of the first. They are worth tabulating before the two companions develop the others, because the information-theoretic vocabulary is shared and the distinctions are easy to blur.
 
 | Operation | Map | Fibre | Reversibility | Information |
 |---|---|---|---|---|

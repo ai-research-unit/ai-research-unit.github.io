@@ -9,7 +9,7 @@ It is recorded with an explicit standing, stated at the outset so that it is not
 The article is organised as follows. A section gives the representations as traceless bisymmetric tensors and the degree formula. A section fixes the Okubo basis and the three $\mathfrak{su}(2)$ subalgebras. A section states the admissibility condition and lists the allowed degrees. A section reduces the octet into isospin multiplets. A section derives and then checks the Gell-Mann–Okubo mass formula. A closing section states the biquaternion interpretation.
 
 - Companion article *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form*, for the space $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ on which these representations act.
-- Companion article *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*, for the mass $m_0$ of the supermultiplet and the representation degrees on the spin lines.
+- External literature: V. V. Varlamov, for the mass formula $m^{(s)}=\mu_0(l+\tfrac12)(\bar l+\tfrac12)$ that supplies a value for $m_0$ and the representation degrees on the spin lines.
 - Companion articles *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* and *The Gluon: An Octet Inside the Carrier's Group*, for why $\mathrm{SU}(3)$ is external.
 - Corpus article *The Chiral Theory and the Lagrangian: The Pion and the Decay Constant*, for the octet's scalar sector and the Gell-Mann–Oakes–Renner relation, a different mass formula.
 - Corpus article *The CKM Matrix and CP Violation in Biquaternionic Form*, for the flavour-factor interpretation of the mixing that $\mathrm{SU}(3)$ does not carry.
@@ -227,7 +227,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 - The Okubo basis, the commutators, the three $\mathfrak{su}(2)$ subalgebras and the charge operator.
 - The Zeeman analogy, the $*$-unitary moment and field, and the derivation of the formula through the Casimirs.
-- The particle content of the octets and the identification of $m_0$ with the spin–mass formula's value.
+- The particle content of the octets and the identification of $m_0$ with the value of Varlamov's mass formula.
 
 **Gap, left visible.**
 
@@ -239,7 +239,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 1. **Does the hypercharge direction have a biquaternion image?** The corpus has a preferred direction, the $i r'_t$ axis of the material sector, and a central phase. Is the hypercharge splitting's distinguished direction one of these, or is the correspondence spurious? The localisation ceiling article implies the latter unless a larger algebra is used.
 
-2. **$m_0$ and the mass formula.** The identification of $m_0$ with the spin–mass formula's $m^{(s)}$ is a choice. Does the equality hold for the meson octets as well as the baryon octet, and does the companion mass formula's error (a few percent) propagate into the average?
+2. **$m_0$ and the mass formula.** The identification of $m_0$ with Varlamov's $m^{(s)}$ is a choice. Does the equality hold for the meson octets as well as the baryon octet, and does that formula's error (a few percent) propagate into the average?
 
 3. **The decuplet's equal spacing.** The decuplet $(3,0)$ obeys equal spacing, $m_\Omega-m_{Ζ^*}=m_{Ζ^*}-m_{\Sigma^*}=m_{\Sigma^*}-m_{\mathcal,\mathrm{dec}}{B}$, a different relation from the octet's. Is it a statement in I-spin or U-spin, and is the corpus's representation ring able to derive the two relations at once?
 
@@ -249,7 +249,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 ## Summary
 
-An irreducible representation of $\mathrm{SU}(3)$ is a traceless bisymmetric tensor labelled by $(n,n_{\mathrm{dyn}})$ with degree $N(n,n_{\mathrm{dyn}})=\frac12(n+1)(n_{\mathrm{dyn}}+1)(n+n_{\mathrm{dyn}}+2)$; the singlet is $(0,0)$, the triplets $(1,0)$ and $(0,1)$, the octet $(1,1)$ of degree $8$, the decuplet $(3,0)$ of degree $10$. Hadron supermultiplets are the admissible representations with $n-m\equiv0\pmod3$, degrees $1,8,10,27,28,35,\dots$. The octet reduces on $\mathrm{SU}(2)$ as $Ξ_3\oplusΞ_2\oplusΞ^{*}_2\oplusΞ_0$, the triplet, the nucleon doublet, its conjugate and the $\Lambda$. Within a supermultiplet the mass splits as $m=m_0+\alpha+\beta Y+\gamma(I(I+1)-\frac14Y^2)$ in the hypercharge direction, giving the Gell-Mann–Okubo relation $m_Ζ+m_N=\frac12(3m_\Lambda+m_\Sigma)$, which the physical masses satisfy to $0.58\%$. The centre $m_0$ is $\mathrm{SU}(3)$-invariant and is the companion spin–mass formula's value.
+An irreducible representation of $\mathrm{SU}(3)$ is a traceless bisymmetric tensor labelled by $(n,n_{\mathrm{dyn}})$ with degree $N(n,n_{\mathrm{dyn}})=\frac12(n+1)(n_{\mathrm{dyn}}+1)(n+n_{\mathrm{dyn}}+2)$; the singlet is $(0,0)$, the triplets $(1,0)$ and $(0,1)$, the octet $(1,1)$ of degree $8$, the decuplet $(3,0)$ of degree $10$. Hadron supermultiplets are the admissible representations with $n-m\equiv0\pmod3$, degrees $1,8,10,27,28,35,\dots$. The octet reduces on $\mathrm{SU}(2)$ as $Ξ_3\oplusΞ_2\oplusΞ^{*}_2\oplusΞ_0$, the triplet, the nucleon doublet, its conjugate and the $\Lambda$. Within a supermultiplet the mass splits as $m=m_0+\alpha+\beta Y+\gamma(I(I+1)-\frac14Y^2)$ in the hypercharge direction, giving the Gell-Mann–Okubo relation $m_Ζ+m_N=\frac12(3m_\Lambda+m_\Sigma)$, which the physical masses satisfy to $0.58\%$. The centre $m_0$ is $\mathrm{SU}(3)$-invariant and is the value of Varlamov's mass formula.
 
 The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is not an algebra of the biquaternion algebra, the symmetry group ceiling stops at $\mathrm{SU}(2)$, and the Okubo matrices are three-by-three. The article records the structure accurately, checks its numerical content, and states that the splitting pattern — not the group — is what borders the framework's own sector structure.
 
@@ -280,4 +280,4 @@ The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is 
 - Particle Data Group, *Review of Particle Physics*, for the hadron masses used in the checks.
 - V. V. Varlamov, "Spinor Structure and Internal Symmetries," *International Journal of Theoretical Physics* **54** (2015) 3533–3576 (arXiv:1409.1400), for the representation theory, the Zeeman analogy and the identification of $m_0$ recorded here.
 - A. Gsponer, "Explicit closed-form parametrization of SU(3) and SU(4) in terms of complex quaternions and elementary functions," arXiv:math-ph/0211056v2, 2002, for an $\mathrm{SU}(3)$ written as $3\times3$ matrices of biquaternions, i.e. on the enlarged carrier $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ and not in $\mathbb{B}$, which is consistent with the standing asserted above; the paper's Table 1, which offers a dictionary between its functions and the Gell-Mann parameters, is inconsistent as printed and is **not** transcribed here.
-- Companion articles: [The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form](the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.html); [The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form](the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.html); [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html); [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html); [The Chiral Theory and the Lagrangian: The Pion and the Decay Constant](the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html).
+- Companion articles: [The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form](the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.html); [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html); [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html); [The Chiral Theory and the Lagrangian: The Pion and the Decay Constant](the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html).

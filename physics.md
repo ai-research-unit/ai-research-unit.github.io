@@ -192,6 +192,9 @@
 <a href="articles_physics/the-quadratic-map-and-the-singular-sets.html">The Quadratic Map and the Singular Sets</a>
 <!-- the biquaternion quadratic map, the Mandelbrot and connectedness locus, the slices, the escape radius and the Green function, the singular Julia sets, the matrix element representation, the idempotent decomposition and the split fractal, the iterated function systems, the Hausdorff dimension and the Jacobian; read as the iteration that is the discrete dynamics of the algebra, the locus of bounded orbits, the zero-divisor cone as the singular set of the map, and the dimension as the measure of the boundary. -->
 
+<a href="articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html">The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe</a>
+<!-- the framework's own test of a structural hypothesis, the richness of the consequences, and the two uses of the algebra, translation of an equation taken as given and derivation of the equation from the algebra with a definition of the derivative as the only input; what the corpus takes as input, the ledger of the postulated and the derived, the algebra and the minimal-coupling principle and $\hbar$ imported, the interval and the Lorentz group and the state space derived, the Dirac and Maxwell equations transcribed, and the pattern of it, that the corpus derives the arena and imports the dynamics, with the remark that a translation is not wasted work when a derivation succeeds, since it is the dictionary in which the derivation is read; the primary equation stated once, $dF=L\,dZ\,R$, the rank-one criterion, $\det\mathsf D\Sigma=0$, $N(\nabla\Sigma)=0$ and the complex eikonal, so that the gradient of every component is a zero divisor, with the chain from the null gradient to the self-dual curvature and Maxwell and Yang–Mills as its Bianchi identities deferred to *The Algebrodynamical Programme* and the congruence side to *Null Electromagnetic Fields and the Shear-Free Congruence*, since the article states the condition and does not restate the construction; the inversion of the WKB relation, the corpus deriving the eikonal as a short-wavelength limit while the derivation route makes it exact and primary, the exact complex eikonal that the corpus already carries in Bateman's representation of a null Maxwell field, where it is assumed of the two generating functions rather than forced, with the Hermitian form of the Hamilton–Jacobi equation and its kinetic-energy right-hand side distinguished from the complex quadratic form and the homogeneity of the primary eikonal, and the finding that the inversion is a change of explanatory order and not of equations, both the eikonal and $\Box\Sigma=0$ holding for the same function, the algebraic constraint the source and the two differential equations its consequences, so that the non-linearity is inert and costs additivity rather than linearity; the fields as semi-derivatives, the spinor splitting $d\eta=\Phi\,dZ\,\xi$ with the construction deferred and the direction of the implication kept, the connection carried by a differentiable function and its curvature its integrability obstruction, so that no minimal-coupling principle is assumed; the three corpus objects the gradient meets necessarily, the zero-divisor cone as the light cone and the pure-state locus, the celestial sphere as the target of the gradient map with the little-group phase, and the shear-free congruence whose association is classical and whose construction is what the nonlinear system adds, with the table of the three; what the derivation buys, the connection equations as identities, the fixed amplitude and the singular locus that carries the field, the charge and the effective geometry at once; the scale argument stated with care, the eikonal scale covariant componentwise because homogeneous of degree two in the gradient, with $N(\lambda g)=\lambda^2N(g)$, the connection not scale covariant because its curvature carries the commutator, with $F(\lambda A)=\lambda F(A)+(\lambda^2-\lambda)[A,A]$ verified on 100 random matrix pairs, so that $F=iF^{*}$ admits $\lambda=1$ alone unless the commutator is itself anti-self-dual, an amplitude fixed by the algebra's product and not by $\hbar$, with the further step to the programme's integer $q=N/4$ recorded as the programme's own; what it costs, no action principle in an over-determined system and so no canonical quantisation of the kind the corpus's quantisation articles presuppose, no additivity, the eikonal being quadratic with $N(g_1+g_2)=2\langle g_1,g_2\rangle$ and a smallest value of $0.063$ against a median of $0.96$ over 100 random null pairs, so that the solution class is a nonlinear subset of the linear harmonic space and the linear structure is what the constraint is imposed on rather than what generates it; the real slice not natural, the automorphism rule $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$, the Hermitian form not invariant, and the opposite conclusions the two programmes draw; the fork, conjugation first against product first, with the primitive object, the real slice, the Hermitian form, the status of a boost, the status of the two sectors, the arena, the sign of time and the extra invariant in each column, and the third column the product-first route builds for itself, the phase extension, $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$ fixing $z_0$ and rotating the complex three-vector, the invariant $\sigma=z_1^2+z_2^2+z_3^2$, the Lagrange identity $\sigma\sigma^{*}=T^2-\lvert\vec X\rvert^2$ with $T=\vec z\cdot\vec z^{*}\ge0$ and $\vec X=i\vec z\times\vec z^{*}=2\vec p\times\vec q$, so that the interval is non-negative by construction and the arena is the causal domain only, the time positive definite and therefore future only, and the phase $\alpha$ of $\sigma$ a Lorentz-invariant fibre coordinate with nowhere to live in the macro-geometry, the source calling the identification informal; where the two agree, the same cone, the same twistor incidence and the same locus of states, so that the derivation is a candidate dynamics for the corpus's kinematics and not a rival of it. The companion mathematics article is *The Two-Sided Derivative over the Biquaternion Algebra*; the ledger is *Introduction to the Biquaternion Universe*, the postulate replaced is *The Minimal Coupling in Biquaternionic Form*, the identities are *Connection Curvature and the Bianchi Identity in Biquaternionic Form*, the limit inverted is *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, the eikonal assumed rather than forced is *Null Electromagnetic Fields and the Shear-Free Congruence*, and the fork is stated on the corpus's side in *Frames, Rotations and the Lorentz Group*. -->
+
 ### The Lorentz Transformation
 
 #### The transformation and the group
@@ -448,33 +451,42 @@
 
 ## Biquaternion Universe Primordial Force
 
-<!-- everything this block applies is in its first subsection: the action and the variation with the
-     theorem behind its conserved currents, the connection, the curvature, the invariant density, the
-     functional integral with its determinant, and the running of the coupling. Nothing after them
-     re-derives any of these. **This block is the unbroken phase only**: every article in it is a
-     statement above $M_C$, where all fifteen directions are massless. Two entries that used the six
-     heavy directions as propagating states — *Three Diagrams* and *Lepton Flavour* — sit in *Symmetry
-     Breaking*, because both need the vacuum and neither is a statement about this phase. Every entry
-     below has its article, and each entry's comment states the argument that article makes.
+<!-- everything this block applies is in its first section, which is apparatus and holds at every
+     scale: the action and the variation with the theorem behind its conserved currents, the
+     connection, the curvature, the invariant density, the functional integral with its determinant,
+     and the running of the coupling, then the same chain non-abelian. The block's own instance of
+     that machinery is restated in $\mathrm{SU}(4)$ notation in *The machinery under the action*,
+     below, so that the category can be read alone. **From *Generalities* downward the block is the
+     unbroken phase only**: every article from there on is a statement above $M_C$, where all fifteen
+     directions are massless. Two entries that used the six heavy directions as propagating states —
+     *Three Diagrams* and *Lepton Flavour* — sit in *Symmetry Breaking*, because both need the vacuum
+     and neither is a statement about this phase. Every entry below has its article, and each entry's
+     comment states the argument that article makes.
 
      The sections follow the multiplet and not the hadron spectrum, because above the transition the only label a
      state carries is its spin: the fifteen generators at spin one, the sixteen Weyl fields at spin one half, the
      quartet $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$ at spin zero. The group, its colours and the flavour vocabulary
-     are carrier-free and stand in *Generalities* with the coupling and the machinery. The gap the block closes is
+     are carrier-free and stand in *Generalities*, after the apparatus section above. The gap the block closes is
      stated by the corpus itself: the three pieces of the $\mathrm{SU}(4)$ action exist as fragments — a covariant
      derivative in the Feynman-rules article, no potential in the scalar census, one diagonalised Yukawa matrix —
      and they are assembled nowhere, while every other force block carries its Lagrangian article. -->
 
-### Generalities
+### Action and Force in the Biquaternion Universe
 
-#### Action and Force in the Biquaternion Universe
-
-<!-- the apparatus every force block performs and none of them owns: the action and the variation
-     with the theorem that turns a symmetry into a current, the connection a local symmetry forces, the
-     curvature and its Bianchi identity, the invariant density the action integrates, the functional
-     integral and the determinant, the running of the coupling, and last the order of the three
-     carriers that every spin band below is cut along. Read before any sector, because a reader who
-     meets one of them inside a sector reads it with that sector's notation already doing work. -->
+<!-- the generic form of what every force block performs, stated once and at no particular group:
+     the action and the variation with the theorem behind its conserved currents, the connection a
+     local symmetry forces, the curvature and its Bianchi identity, the invariant density the action
+     integrates, the functional integral with its determinant, the running of the coupling, and the
+     order of the three carriers that every spin band below is cut along. Then the same chain
+     non-abelian: the minimal coupling, the non-abelian connection, the action whose invariant is a
+     matrix trace, the Yang–Mills equation, the Yang–Mills path integral with its Faddeev–Popov
+     determinant and ghosts, the index theorem and its zero-mode count, and the orbit those
+     connections produce, read as redundancy and not as loss. Read before any sector, because a reader
+     who meets one of them inside a sector reads it with that sector's notation already doing work.
+     This block keeps its own instance: *The Machinery Under the Primordial Action* restates the
+     trace, the curvature and the ghosts in $\mathrm{SU}(4)$ notation, on purpose, so that the
+     category can be read without leaving it. The generic articles state the structure once; that one
+     states it as this block uses it. -->
 
 <a href="articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.html">The Relativistic Particle and the Lagrangian: The Stationary-Action Principle</a>
 <!-- the stationary-action principle; the relativistic particle; the relativistic field; symmetries of the action; invariance under the rotor; the biquaternion structure of the action. -->
@@ -502,6 +514,30 @@
 
 <a href="articles_physics/particle-spins-in-the-biquaternion-algebra-three-carriers-their-meaning-and-their-order.html">Particle Spins in the Biquaternion Algebra: Three Carriers, Their Meaning and Their Order</a>
 <!-- the three carriers and the criterion of cost; the real vector part as the seat of the algebra's non-commutativity, with the commutator closing on it and the product failing, and its adjoint rotation of weights $+1$, $0$, $-1$; the ideal as a frame, irreducible, four real dimensions, and moved by conjugation to a distinct ideal; the centre as the commutant, fixed pointwise; then the same order read on the particles, bosons on the vector part, fermions on the ideal, scalars as an invariant or a rotor, with the third polarization, the count $4=4$ and the graviton's symmetric square; and the limits, including the menu's $67$, $115$, $110$ and $15$ entries. -->
+
+
+<a href="articles_physics/the-minimal-coupling-in-biquaternionic-form.html">The Minimal Coupling in Biquaternionic Form</a>
+<!-- the global phase symmetry; making the symmetry local; the connection and the covariant derivative; the field strength as the curvature; the minimal-coupling principle and the Maxwell field; the non-abelian extension and where the gap is; the mass term and the axial symmetry. -->
+
+<a href="articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a>
+<!-- the Dirac operator and its index; the Atiyah–Singer theorem; the density, the charge and the total derivative; a worked case, the abelian index and the charge-$n$ zero modes; the index and the instanton moduli; the biquaternion reading and the rank-two limitation. -->
+
+<a href="articles_physics/non-abelian-connections-in-biquaternionic-form.html">Non-Abelian Connections in Biquaternionic Form</a>
+<!-- the representative algebra inside the material sector; the non-abelian connection and covariant derivative; the field strength is not locally invariant; the field strength as the commutator of covariant derivatives; the Bianchi identity and where Jacobi enters; the Yang–Mills action; the reality condition and the $ict$ direction. -->
+
+<a href="articles_physics/the-lagrangian-and-the-non-abelian-connections.html">The Lagrangian and the Non-Abelian Connections</a>
+<!-- the Yang–Mills action $-\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ on the $\mathfrak{su}(2)$ connection; the invariance one line of cyclicity, and the trace a matrix trace and not the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is not cyclic and would cost the invariance; the variation giving $D_\mu F_{\mu\nu}=0$, the Bianchi identity distinguished from it as integrability; the self-coupling as the square of a nonlinear curvature and the coupling's survival because the commutator carries one power of $g$; the Gauss law, its non-linearity and the two polarizations per generator; the current carrying the field it couples to; and the ceiling, $\mathrm{U}(1)$ and $\mathrm{SU}(2)$ exact and $\mathrm{SU}(3)$ unreachable. -->
+
+<a href="articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a>
+<!-- the non-abelian curvature and the adjoint covariant derivative; the Yang–Mills equation; covariant conservation of the current; the abelian limit; the Bianchi identity and the homogeneous half; the limits of the biquaternion packaging, and the external algebrodynamical claim in which the trace-free part of a biquaternion connection is fixed linearly by the electromagnetic potential ($N^a_{\ 0}=A_a$, $N^a_{\ b}=\delta_{ab}A_0-i\varepsilon_{abc}A_c$) and the electromagnetic field strength is the modulus of the triplet, $\sum_a(L^a_{\ \mu\nu})^2\propto(F^{\mathrm{em}}_{\mu\nu})^2$; the second route to a Yang–Mills-type matrix form — the biwave equation with a vector structural coefficient, its second-order operator, its non-stationary and stationary fundamental solutions with the characteristic surfaces by case, the stationary Helmholtz kernel and its weight, the variable conventions of $E$ and $H$ across the source's sections, and the matrix-form claim with what it does and does not say. -->
+
+<a href="articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a>
+<!-- the non-abelian action and its orbit; fixing and the Faddeev–Popov determinant; the ghost fields and the Grassmann envelope; the propagator and representative-parameter independence; the quantum Yang–Mills equation; representative slicing and the Gribov ambiguity. -->
+
+<a href="articles_physics/redundancy-and-the-information-in-the-orbit-in-biquaternionic-form.html">Redundancy and the Information in the Orbit in Biquaternionic Form</a>
+<!-- the orbit as a torsor; the orbit as the fibre of the curvature map; what the orbit carries, redundancy not state; information-theoretic invariance of the orbit; the global information of the orbit, holonomy; redundancy and loss, three operations compared. -->
+
+### Generalities
 
 #### The group and its colours
 
@@ -605,7 +641,7 @@
 <!-- one transition at M_C and one audit: the SU(4) group breaks into the four-factor group, which
      has no width, and the Standard Model is what remains below that scale once the heavy fields are
      removed; it is then counted against its own boundary. The toolbox the block opens with is
-     *The General Connection Machinery*, in the particle physics category below. -->
+     *Action and Force in the Biquaternion Universe*, the opening section of *Primordial Force* above. -->
 
 #### The Transition: One Vacuum, Four Factors, One Scale
 
@@ -681,6 +717,9 @@
 <a href="articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>
 <!-- standard input, and the article that turns the boundary into a number. the nineteen itemised and regrouped, $13+3+1+2=19$ with the flavour block at $68.4\%$ of the total and the observation that the boundary is concentrated where the algebra is emptiest; the three grades of fixing — a value, a relation, a constraint — kept apart because a framework that derives nothing may still relate or forbid something; then a typology of the nineteen by kind of mathematical object, four group coordinates, three connection normalisations, one central phase, ten eigenvalues and one scale, because the five kinds need five different machines; the arena count, eight with an arena (mixing, couplings, vacuum angle), nine with an eigenvalue and no spectral principle, two with nothing, shares $42.1\%$, $47.4\%$, $10.5\%$, and $M_H$ explained as the one entry whose kind and whose arena disagree; the framework's own three parameters $ϙ$, $m$, $k_m$ counted in the same language, giving $19+3=22$ and an imported share of $86.4\%$, so the reformulation is not more parsimonious and its defence is geometric rather than numerical; one unit removed leaving eighteen dimensionless ratios, with $m_t/m_e=3.4\times10^{5}$ and $v/M_{\mathrm{Pl}}=2.0\times10^{-17}$ printed as the two ratios nobody explains; the neutrino addition at $26$ or $27$ with the difference marked as a physical discriminator rather than a convention; the over-determination quantified, five measurements for two triangle parameters giving three degrees of freedom, and the framework's own score printed as twenty-two parameters against zero predictions not shared with the model; the test applied to the corpus's own proposals in one table, one relation of a restricted kind, five arenas, zero values, and the ceiling row noted as forbidding a representation and no number; and the four machines that would reduce the count — spectral, scale, flavour, threshold — each named as absent. -->
 
+<a href="articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a>
+<!-- the counting of generations in the Standard Model; how the framework carries a generation index; why the algebra does not fix $N_g$; the tensor structure and the trace; flavour symmetry and its breaking; the constraints that do touch $N_g$; the three imaginary units are not three generations. -->
+
 ##### The Open Problems
 
 <a href="articles_physics/the-hierarchy-problem-and-naturalness.html">The Hierarchy Problem and Naturalness</a>
@@ -724,63 +763,6 @@
 
 <a href="articles_physics/three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html">Three Diagrams of the $\mathrm{SU}(4)$ Model: The Kaon, the Proton Chain, and a Gluon Exchange</a>
 <!-- three diagrams, each exercising one part of the rules and each yielding a different kind of answer: **$K_L\to\mu e$** at tree level, two mixed-plane vertices joined by one heavy propagator, $d^{a}\to e^{-}$ and $s^{a}\to\mu^{-}$ on the same colour line, hence the colour factor one and not three because the propagator is diagonal in colour and there is no sum to make, the rate $3.5\times10^{-12}$ at $M_X=4.01\times10^{-5}$ J against the measured $4.7\times10^{-12}$, with the assumption about the generation matrix named and not hidden; **the proton chain**, three mixed-plane vertices on three distinct colour lines contracted with $\epsilon_{abc}$, no diquark coupling because the fifteen's triplets carry $\pm\tfrac43$ and a $qq$ pair carries $+\tfrac23$, the power $M_X^{-10}$ from the dimension-nine operator against $M_X^{-4}$ for dimension six, and the conclusion that the connection sector is not bounded by proton stability; **the gluon exchange**, the eight corner arrays, the one Gram-matrix rotation $c_{2}=d_{2}+d_{3}$ and $c_{3}=d_{2}-d_{3}$, the sum of squares $-\tfrac43$, the completeness relation and $C_F=\tfrac43$ computed from the printed matrices rather than quoted; one coupling, so no ratio of couplings enters anywhere, and the only mass scale is $M_X^{2}=8g_4^{2}v^{2}$; fifteen checks. -->
-
-## Biquaternion Universe Particle Physics
-
-<!-- the residue of the particle content, filed here because no single sector owns it: the general
-     connection machinery that every sector applies — the minimal coupling, the covariant derivative,
-     the curvature and its Bianchi identity, the index theorem, the non-abelian field, its action, the
-     Yang–Mills equation and its path integral — then the mass spectrum, which belongs to no sector,
-     and the orbit every one of those connections produces, read as redundancy rather than state.
-     Every sector's own application of the machinery sits with that sector: the strong and the
-     electroweak categories that follow carry their own informational section, and the
-     electromagnetic one, with a single carrier and no matter, carries none. -->
-
-### The General Connection Machinery
-
-<a href="articles_physics/the-minimal-coupling-in-biquaternionic-form.html">The Minimal Coupling in Biquaternionic Form</a>
-<!-- the global phase symmetry; making the symmetry local; the connection and the covariant derivative; the field strength as the curvature; the minimal-coupling principle and the Maxwell field; the non-abelian extension and where the gap is; the mass term and the axial symmetry. -->
-
-<a href="articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a>
-<!-- the Dirac operator and its index; the Atiyah–Singer theorem; the density, the charge and the total derivative; a worked case, the abelian index and the charge-$n$ zero modes; the index and the instanton moduli; the biquaternion reading and the rank-two limitation. -->
-
-<a href="articles_physics/non-abelian-connections-in-biquaternionic-form.html">Non-Abelian Connections in Biquaternionic Form</a>
-<!-- the representative algebra inside the material sector; the non-abelian connection and covariant derivative; the field strength is not locally invariant; the field strength as the commutator of covariant derivatives; the Bianchi identity and where Jacobi enters; the Yang–Mills action; the reality condition and the $ict$ direction. -->
-
-<a href="articles_physics/the-lagrangian-and-the-non-abelian-connections.html">The Lagrangian and the Non-Abelian Connections</a>
-<!-- the Yang–Mills action $-\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ on the $\mathfrak{su}(2)$ connection; the invariance one line of cyclicity, and the trace a matrix trace and not the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is not cyclic and would cost the invariance; the variation giving $D_\mu F_{\mu\nu}=0$, the Bianchi identity distinguished from it as integrability; the self-coupling as the square of a nonlinear curvature and the coupling's survival because the commutator carries one power of $g$; the Gauss law, its non-linearity and the two polarizations per generator; the current carrying the field it couples to; and the ceiling, $\mathrm{U}(1)$ and $\mathrm{SU}(2)$ exact and $\mathrm{SU}(3)$ unreachable. -->
-
-<a href="articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a>
-<!-- the non-abelian curvature and the adjoint covariant derivative; the Yang–Mills equation; covariant conservation of the current; the abelian limit; the Bianchi identity and the homogeneous half; the limits of the biquaternion packaging, and the external algebrodynamical claim in which the trace-free part of a biquaternion connection is fixed linearly by the electromagnetic potential ($N^a_{\ 0}=A_a$, $N^a_{\ b}=\delta_{ab}A_0-i\varepsilon_{abc}A_c$) and the electromagnetic field strength is the modulus of the triplet, $\sum_a(L^a_{\ \mu\nu})^2\propto(F^{\mathrm{em}}_{\mu\nu})^2$; the second route to a Yang–Mills-type matrix form — the biwave equation with a vector structural coefficient, its second-order operator, its non-stationary and stationary fundamental solutions with the characteristic surfaces by case, the stationary Helmholtz kernel and its weight, the variable conventions of $E$ and $H$ across the source's sections, and the matrix-form claim with what it does and does not say. -->
-
-<a href="articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a>
-<!-- the non-abelian action and its orbit; fixing and the Faddeev–Popov determinant; the ghost fields and the Grassmann envelope; the propagator and representative-parameter independence; the quantum Yang–Mills equation; representative slicing and the Gribov ambiguity. -->
-
-### The Mass Spectrum
-
-<!-- the mass readings and the generation count; the parameter ledger proper — the nineteen
-     parameters, the data boundary, the threshold scales — sits in From the SU(4) Model to the
-     Standard Model above. -->
-
-<a href="articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html">The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe</a>
-<!-- the framework's own test of a structural hypothesis, the richness of the consequences, and the two uses of the algebra, translation of an equation taken as given and derivation of the equation from the algebra with a definition of the derivative as the only input; what the corpus takes as input, the ledger of the postulated and the derived, the algebra and the minimal-coupling principle and $\hbar$ imported, the interval and the Lorentz group and the state space derived, the Dirac and Maxwell equations transcribed, and the pattern of it, that the corpus derives the arena and imports the dynamics, with the remark that a translation is not wasted work when a derivation succeeds, since it is the dictionary in which the derivation is read; the primary equation stated once, $dF=L\,dZ\,R$, the rank-one criterion, $\det\mathsf D\Sigma=0$, $N(\nabla\Sigma)=0$ and the complex eikonal, so that the gradient of every component is a zero divisor, with the chain from the null gradient to the self-dual curvature and Maxwell and Yang–Mills as its Bianchi identities deferred to *The Algebrodynamical Programme* and the congruence side to *Null Electromagnetic Fields and the Shear-Free Congruence*, since the article states the condition and does not restate the construction; the inversion of the WKB relation, the corpus deriving the eikonal as a short-wavelength limit while the derivation route makes it exact and primary, the exact complex eikonal that the corpus already carries in Bateman's representation of a null Maxwell field, where it is assumed of the two generating functions rather than forced, with the Hermitian form of the Hamilton–Jacobi equation and its kinetic-energy right-hand side distinguished from the complex quadratic form and the homogeneity of the primary eikonal, and the finding that the inversion is a change of explanatory order and not of equations, both the eikonal and $\Box\Sigma=0$ holding for the same function, the algebraic constraint the source and the two differential equations its consequences, so that the non-linearity is inert and costs additivity rather than linearity; the fields as semi-derivatives, the spinor splitting $d\eta=\Phi\,dZ\,\xi$ with the construction deferred and the direction of the implication kept, the connection carried by a differentiable function and its curvature its integrability obstruction, so that no minimal-coupling principle is assumed; the three corpus objects the gradient meets necessarily, the zero-divisor cone as the light cone and the pure-state locus, the celestial sphere as the target of the gradient map with the little-group phase, and the shear-free congruence whose association is classical and whose construction is what the nonlinear system adds, with the table of the three; what the derivation buys, the connection equations as identities, the fixed amplitude and the singular locus that carries the field, the charge and the effective geometry at once; the scale argument stated with care, the eikonal scale covariant componentwise because homogeneous of degree two in the gradient, with $N(\lambda g)=\lambda^2N(g)$, the connection not scale covariant because its curvature carries the commutator, with $F(\lambda A)=\lambda F(A)+(\lambda^2-\lambda)[A,A]$ verified on 100 random matrix pairs, so that $F=iF^{*}$ admits $\lambda=1$ alone unless the commutator is itself anti-self-dual, an amplitude fixed by the algebra's product and not by $\hbar$, with the further step to the programme's integer $q=N/4$ recorded as the programme's own; what it costs, no action principle in an over-determined system and so no canonical quantisation of the kind the corpus's quantisation articles presuppose, no additivity, the eikonal being quadratic with $N(g_1+g_2)=2\langle g_1,g_2\rangle$ and a smallest value of $0.063$ against a median of $0.96$ over 100 random null pairs, so that the solution class is a nonlinear subset of the linear harmonic space and the linear structure is what the constraint is imposed on rather than what generates it; the real slice not natural, the automorphism rule $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$, the Hermitian form not invariant, and the opposite conclusions the two programmes draw; the fork, conjugation first against product first, with the primitive object, the real slice, the Hermitian form, the status of a boost, the status of the two sectors, the arena, the sign of time and the extra invariant in each column, and the third column the product-first route builds for itself, the phase extension, $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$ fixing $z_0$ and rotating the complex three-vector, the invariant $\sigma=z_1^2+z_2^2+z_3^2$, the Lagrange identity $\sigma\sigma^{*}=T^2-\lvert\vec X\rvert^2$ with $T=\vec z\cdot\vec z^{*}\ge0$ and $\vec X=i\vec z\times\vec z^{*}=2\vec p\times\vec q$, so that the interval is non-negative by construction and the arena is the causal domain only, the time positive definite and therefore future only, and the phase $\alpha$ of $\sigma$ a Lorentz-invariant fibre coordinate with nowhere to live in the macro-geometry, the source calling the identification informal; where the two agree, the same cone, the same twistor incidence and the same locus of states, so that the derivation is a candidate dynamics for the corpus's kinematics and not a rival of it. The companion mathematics article is *The Two-Sided Derivative over the Biquaternion Algebra*; the ledger is *Introduction to the Biquaternion Universe*, the postulate replaced is *The Minimal Coupling in Biquaternionic Form*, the identities are *Connection Curvature and the Bianchi Identity in Biquaternionic Form*, the limit inverted is *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, the eikonal assumed rather than forced is *Null Electromagnetic Fields and the Shear-Free Congruence*, and the fork is stated on the corpus's side in *Frames, Rotations and the Lorentz Group*. -->
-
-<a href="articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a>
-<!-- the counting of generations in the Standard Model; how the framework carries a generation index; why the algebra does not fix $N_g$; the tensor structure and the trace; flavour symmetry and its breaking; the constraints that do touch $N_g$; the three imaginary units are not three generations. -->
-
-<a href="articles_physics/the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html">The Petiau System and the Quantisation of Mass in Biquaternionic Form</a>
-<!-- the mass term as a field; the Lanczos feedback system and its equivalence to a massive spin-1/2 equation; the Einstein–Mayer mass biquaternion and the two masses as the eigenvalues of $\tilde{E}\tilde{E}^\dagger$; the degenerate, idempotent and singular cases and the doublet readings; the Petiau closure and its exact reduction to Lanczos; the double-periodic Petiau waves and the modulus interpolation between de Broglie waves and solitons; the quartic Hamiltonian $H=C_0\mu^4k^2$; Barut's empirical formula and the $7.464$ moduli ratio, with their empirical status. -->
-
-<a href="articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.html">The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</a>
-<!-- the Bhabha–Gel'fand–Yaglom mass formula $m^{(s)}=\mu_0(l+\frac12)(\bar l+\frac12)=\frac{\mu_0}{4}\deg\tau^{l\bar l}$, mass proportional to the representation dimension; the determinant argument and the eigenvalues of $\Gamma^0$; the interlocking chains and the spin-$\frac12$ line of degrees $(j+1)(j+2)$; the spectrum with the electron as the anchor and the proton, $\Sigma$ and $\pi$ ratios recomputed against the PDG; the proton's chain neighbour beating the programme's own assignment; the $\pi^0$ coincidence and the division-ring reading; the gaps — no derivation of $\mu_0$ and no selection rule for the assignments. -->
-
-<a href="articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a>
-<!-- the Bhabha–Gel'fand–Yaglom wave equations for an arbitrary Lorentz representation; spintensors and the symmetric-degree formula, with the degree not naming the representation; the interlocking chains and the fields $(l,\bar l)\oplus(\bar l,l)$ of generalised spin $s=\lvert l-\bar l\rvert$; the determinant factorisation and the multi-mass spectrum, with the rest-frame eigenvalue step checked and its normalisation left open; the reduction to the bivector space $\mathbb{R}^6\cong\mathbb{C}^3$, its metric and the boost-first collective order $10,20,30,23,31,12$ that reproduces the printed diagonal; the proton chain and the Dirac limit in its two forms — the one-sided chiral pair, two first-order lines, and the two-sided cell equation $(\mathcal{D}-m)\psi=0$ with each line composed with its partner equal to $\Box$, the two linked by the chirality-odd cell; the bivector space as the corpus's field-strength space, with the module/algebra caveat; the gammas confined to the closing Gamma Formulation. -->
-
-### Focus on informational aspects
-
-<a href="articles_physics/redundancy-and-the-information-in-the-orbit-in-biquaternionic-form.html">Redundancy and the Information in the Orbit in Biquaternionic Form</a>
-<!-- the orbit as a torsor; the orbit as the fibre of the curvature map; what the orbit carries, redundancy not state; information-theoretic invariance of the orbit; the global information of the orbit, holonomy; redundancy and loss, three operations compared. -->
 
 ## Biquaternion Universe Strong Force
 
@@ -1370,6 +1352,9 @@
 
 <a href="articles_physics/the-dirac-object-every-article-on-one-equation.html">The Dirac Object: Every Article on One Equation</a>
 <!-- every article on the Dirac equation, grouped by category: the chiral pair, the two-sided form, the quaternionic reading and their readings, the coupled corner, the fluids and the quantisation; the count and why the spinor splits into three objects that look like one. -->
+
+<a href="articles_physics/the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html">The Petiau System and the Quantisation of Mass in Biquaternionic Form</a>
+<!-- the mass term as a field; the Lanczos feedback system and its equivalence to a massive spin-1/2 equation; the Einstein–Mayer mass biquaternion and the two masses as the eigenvalues of $\tilde{E}\tilde{E}^\dagger$; the degenerate, idempotent and singular cases and the doublet readings; the Petiau closure and its exact reduction to Lanczos; the double-periodic Petiau waves and the modulus interpolation between de Broglie waves and solitons; the quartic Hamiltonian $H=C_0\mu^4k^2$; Barut's empirical formula and the $7.464$ moduli ratio, with their empirical status. -->
 
 ### Particles of spin 0
 

@@ -196,7 +196,7 @@ The two statements are not in tension; they are the two sides of the quotient. T
 
 ### Comparison with Loss and with Redundancy
 
-The three cases of the subcategory can now be stated in one place.
+The three cases can now be stated in one place.
 
 - **Redundancy** (companion: orbit). The fibre is an orbit, non-trivial as a set but carrying no physical information; a representative recovers the configuration. Nothing is erased. This is the structure of the Higgs phase before the breaking, and it is what the mechanism exploits.
 - **Loss** (companion: confinement). The fibre of the physical map is non-trivial and its elements are distinct partonic configurations that the asymptotic algebra cannot see; no choice of representative recovers them, and no record survives. This is genuine erasure with a non-trivial kernel.
