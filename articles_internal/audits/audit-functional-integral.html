@@ -172,7 +172,7 @@ $$</p>
 <p><strong>Both companions use the other convention.</strong> <em>The Generating Functional</em> writes $W[\tilde J]=\tfrac12\langle\tilde J,W^{-1}\tilde J\rangle$ and $\Gamma=\tfrac12\langle\tilde\Xi,W\tilde\Xi\rangle$. <em>The Lagrangian and the Klein–Gordon Equation</em> fixes the action as $\int\mathrm{Sc}[(\partial\tilde\Xi)^{*}\partial\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi^{*}\tilde\Xi]$, which is $\tfrac12\int\langle\tilde\Xi,(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde\Xi\rangle$ with the same real form.</p>
 <p><strong>Repair.</strong> $S[\tilde\Xi]=\tfrac12\int d^{4}r\,\langle\tilde\Xi,W_{\mathrm{kinetic}}\tilde\Xi\rangle=\int d^{4}r\,\mathrm{Sc}(\tilde\Xi^{*}W_{\mathrm{kinetic}}\tilde\Xi)$, at lines 56, 80, 264, 291. Then $\exp(-S)$ is the weight, the free scalar section's $\tfrac12$ is the same $\tfrac12$, and the statement "reproduces the classical action" loses its caveat.</p>
 <p><strong>This also settles $A_{\mathrm{cph}}$.</strong> In $-\tfrac12\langle\tilde\Xi,K\tilde\Xi\rangle$ the matrix is $2K$; in $-\tfrac12\langle\tilde\Xi,W\tilde\Xi\rangle$ with $S$ defined as above, the matrix is $W$. The boxed formula's $(\det W)^{-1/2}$ is then correct and $A_{\mathrm{cph}}=W_{\mathrm{kinetic}}$. Write that; $A_{\mathrm{cph}}$ is used at nine sites (36, 100, 102, 104, 117, 118, 120, 245, 274) and defined at none.</p>
-<h2 id="defect-3-math83-and-math84-referee-3-and-two-math85-for-math86">Defect 3. $\mathrm{Sc}$ and $2\,\mathrm{Re}\,\mathrm{Sc}$ (referee 3), and Two $\natural$ for $^{*}$</h2>
+<h2 id="defect-3-math84-and-math85-referee-3-and-two-math86-for-math87">Defect 3. $\mathrm{Sc}$ and $2\,\mathrm{Re}\,\mathrm{Sc}$ (referee 3), and Two $\natural$ for $^{*}$</h2>
 <p><strong>The referee asked for $\mathrm{Sc}$ to become $2\,\mathrm{Re}\,\mathrm{Sc}$. The real defect is worse: two displays use the quaternion conjugate $\natural$, not the star.</strong> Line 243 writes the established action as $\int\mathrm{Sc}(\tilde\Xi^{\natural}W\tilde\Xi)$. Line 196 writes the Euclidean action as $\int\mathrm{Sc}(\tilde\Xi^{\natural}(-\Box_\Phi+m^{2})\tilde\Xi)$.</p>
 <p><strong>The corpus settles the pairing, and says why.</strong> <em>The Lagrangian and the Klein–Gordon Equation</em>: "the kinetic term of that action is the Hermitian bilinear $\mathrm{Sc}(\cdot^{*}\cdot)$, not the quaternionic bilinear $\mathrm{Sc}(\cdot^{\natural}\cdot)$; the second is complex and indefinite, and the difference is the first computation of the article", with $\mathrm{Sc}(A^{*}A)=\sum_{\imath}\lvert a_{\imath}\rvert^{2}$ and $\mathrm{Sc}(A^{\natural}A)=\sum_{\imath}a_{\imath}^{2}$.</p>
 <p><strong>Computed on a random field</strong> $\tilde\Xi=(1+2i,\,0.3-1.1i,\,-0.7+0.2i,\,1.4+0.5i)$, with central real $W=0.7$:</p>
@@ -416,6 +416,86 @@ $$</p>
 </ol>
 <p><strong>Checked after the patch.</strong> The $\mathrm{Sc}$-identity and the vanishing of the sixteen cross terms were re-verified numerically, and the numbers $3.12$, $8.9165$, $23.964$, $0.23824$ and the generating-functional values $0.322647$, $0.58533264$ were recomputed and stand. Every display delimiter and every matrix row was checked mechanically.</p>
 <p><strong>Not changed.</strong> The complex Gaussian of <em>The Schwinger–Dyson Equations</em> and the $m^{2}c^{2}$ convention of the wider corpus are left as they were, for a separate sweep.</p>
+<h2 id="the-functional-determinant-second-referee-pass">The Functional Determinant, Second Referee Pass</h2>
+<p>The referee report on <em>The Functional Determinant</em> rehearsed the same module-dimension objection, plus five smaller ones. What was done:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>item</th>
+<th>resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>module dimension and Gaussian convention</td>
+<td>one count throughout: ideal $\kappa^{2}$ (two complex), fibre $\kappa^{4}$ (four complex), real determinant $\kappa^{8}$, Gaussian power $\kappa^{-4}$; both routes shown to agree, $(\det_\mathbb{R})^{-1/2}=\lvert\det_\mathbb{C}\rvert^{-1}$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Grassmann sign</td>
+<td>minus sign in the exponent, and the standard convention quoted beside it</td>
+</tr>
+<tr>
+<td>3</td>
+<td>null cone vs light cone</td>
+<td>qualified: the full zero-divisor cone is six-real-dimensional, the light cone is its material-sector section</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$m^{2}$ vs $m^{2}c^{2}$</td>
+<td>the Dirac operator now reads $\mathcal{F}=\tilde\nabla_\Phi+2\pi\nu_m$ with $\nu_m=mc/h$; no bare $m$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>eta invariant factor</td>
+<td>convention stated: $\digamma_{\mathrm{fac}}=\zeta_{\mathcal F}(0)$ with signed zeta, $\det\mathcal F=\lvert\det\mathcal F\rvert e^{i\pi\eta/2}$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Ray–Singer scope</td>
+<td>restricted to the de Rham complex, alternating product, with the wider analytic-torsion reading named</td>
+</tr>
+<tr>
+<td>7</td>
+<td>anomaly coefficient</td>
+<td>$a_{2}$ in $d=4$ identified as the $C^{2}$, $E$, $\Box R$ combination</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One arithmetic error found in the cross-checks.</strong> Both articles said the free biquaternion scalar's one-loop free energy is "four times that of a real scalar and twice that of a complex one". The count is eight real components, so $\Gamma_1=4\log\kappa$ per mode against a real scalar's $\tfrac12\log\kappa$: the ratios are eight and four. Corrected in both articles.</p>
+<p><strong>Also corrected in the determinant article.</strong> Strictly, the Ray–Singer torsion is the alternating product over a de Rham complex, not the quotient of two Laplacians. The ratio sentence now says so, and the accompanying sentence now records that the fibre's dimension <em>cancels</em> in the ratio, which is why the scheme-independent content does not depend on the count. The notation table identifies $\mathcal{F}_R,\mathcal{F}_L$ as the derivative blocks $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$.</p>
+<h2 id="the-renormalization-group-referee-pass">The Renormalization Group, Referee Pass</h2>
+<p>The referee raised two blocking presentation defects and six minor ones. All were fixed in <code>the-renormalization-group-in-biquaternionic-form.md</code>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>item</th>
+<th>resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$r'_t$ used for the RG time $\log(k/\Lambda)$, colliding with the corpus's time coordinate</td>
+<td>RG time is now $\ell=\log(\Lambda/k)$ with $k\partial_k=-\partial_\ell$; the display uses the standard $k\partial_k$ form and never introduces an RG-time derivative</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Wetterich equation written with $\mathrm{Sc}$ and no $\tfrac12$</td>
+<td>now $k\partial_k\Gamma_{\imath}=\tfrac12\,\mathrm{STr}[(\Gamma_{\imath}^{(2)}+R_{\imath})^{-1}k\partial_k R_{\imath}]$, and the text states that the $\tfrac12$ and the supertrace sign are standard, not algebraic</td>
+</tr>
+<tr>
+<td>3</td>
+<td>"doubled scalar part is a functional trace"</td>
+<td>replaced: $\mathrm{STr}$ is the mode trace; $2\,\mathrm{Sc}$ is the trace over <em>one</em> minimal left ideal; $4\,\mathrm{Sc}$ is the complex trace over the fibre</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A defect the referee did not list, found while fixing 1.</strong> The article carried two opposite sign conventions for the flow parameter: $r'_t=\log(k/\Lambda)$ (UV-increasing) in the equation, and $\ell=\log(\Lambda_0/\Lambda)$ (IR-increasing) in the derivation of the quartic beta function. The two cannot both hold. Unified on $\ell=\log(\Lambda/k)$, IR-increasing, which is the convention the sign derivation already needed: $\delta\ell=\log b&gt;0$, $\mu\,d/d\mu=k\,d/dk=-\partial_\ell$, and $d\varpi_{\mathrm{cpl}}/d\ell=-3\varpi_{\mathrm{cpl}}^{2}/(16\pi^2)$ gives $\beta=+3\varpi_{\mathrm{cpl}}^{2}/(16\pi^2)$. The Landau-pole location was checked to remain consistent under the unified convention.</p>
+<p><strong>Also fixed.</strong> Mandelstam $r'_t\to t$ in the $s,t,u$ channel list (the same symbol was doing third duty). Bare $m^{2}$ in the bubble replaced by $m_0^{2}\equiv4\pi^{2}\nu_m^{2}$, $\nu_m=mc/h$, with a notation-table row, per the no-bare-$m^{2}$ convention. The norm display now carries the reminder that plus signs come from squaring, not from positivity, and that the physical norm is $-E^{2}/c^{2}+\vec p^{\,2}$. The $N_f$ sign change is stated as "between $N_f=16$ and $N_f=17$", with $33/2$ named as the zero of the linear formula rather than a flavour number. The sector-triviality claim now carries its one-line proof ($\beta_i e_t\in\mathbb{R}e_t$ commutes with $P_\pm$). $k_{\mathrm{eu},0}=2\pi\nu_{\mathrm{eu},0}$ is defined once and used consistently; the definition is noted in the intro bullet and the table. The open question on a medium-dependent $c$ now records that the computations assume $c$ constant.</p>
       </div>
     </main>
   </div>
