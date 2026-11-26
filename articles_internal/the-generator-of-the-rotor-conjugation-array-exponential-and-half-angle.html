@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Generator of the Rotor Conjugation: The Array $\mathsf K$, the Single Left Multiplication, and the Recovery of the Half Angle — Biquaternion Universe</title>
+  <meta name="description" content="The question. The two-sided operator of a rotor is. It is written with two factors, one per slot, and both factors carry the same parameter. Three…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-generator-of-the-rotor-conjugation-the-array-math0-the-single-left-multiplication-and-the-recovery-of-the-half-angle"><strong>The Generator of the Rotor Conjugation: The Array $\mathsf K$, the Single Left Multiplication, and the Recovery of the Half Angle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The two-sided operator of a rotor is $\mathrm{Sd}_{\tilde u_{\mathrm r}}(\tilde X)=\tilde u_{\mathrm r}\tilde X\tilde u_{\mathrm r}^{-1}$. It is written with two factors, one per slot, and both factors carry the same parameter. Three questions follow, and this note answers them in order. Which single array performs it, and in what sense one array replaces the two factors? What is the generator of that array, and does the generator carry the two properties the axis carries, anti-Hermitian and of zero trace? And starting from a generator written at the full angle of the array, how does one recover the two rotors, at the half angle, together with their matrices?</p>
+<p><strong>The answer in one display.</strong> With $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$ and $\mathsf K$ the array of the derivation by $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ divided by $\theta_{\mathrm{axr}}$,</p>
+<p>$$
+\Lambda_{\tilde u_{\mathrm r}}=\mathsf A\bigl(\mathrm{Sd}_{\tilde u_{\mathrm r}}\bigr)=\exp\bigl(\theta_{\mathrm{axr}}\,\mathsf K\bigr),
+\qquad
+\mathsf K=\begin{pmatrix}0&amp;0\\0&amp;[\vec u_{\mathrm r}]_\times\end{pmatrix},\qquad [\vec u_{\mathrm r}]_\times\vec v=\vec u_{\mathrm r}\times\vec v .
+$$</p>
+<p><strong>Six results.</strong> First, the pair of slots becomes one array, and that array multiplies the coordinate column on the left; that is the only sense in which a single left multiplication exists, and the note states the two senses in which it does not. Second, the array is block diagonal, one fixed line and one rotation, so the two rotors produce one rotation of the full angle. Third, the generator $\mathsf K$ is real, skew, of zero trace, of rank two, and it fixes the scalar line; it meets the two conditions the corpus puts on the generators of $\mathfrak{su}(n)$, anti-Hermitian and of zero trace, and it is the array of an inner derivation and not an element. Fourth, the array is the exponential of $\mathsf K$ at the full angle, with the closed form $I_4+\sin\theta_{\mathrm{axr}}\,\mathsf K+(1-\cos\theta_{\mathrm{axr}})\mathsf K^2$. Fifth, one formula covers the four factors of the polar word, and the character of the exponent decides whether the generator is a commutator or an anticommutator. Sixth, the rotor is recovered from the array by reading the angle and the axis, and the two signs of the element are the double cover; the half angle never appears in the array, and the note says exactly where it sits.</p>
+<p><strong>Boundaries.</strong> This note gives arrays, one generator and one reconstruction. It gives no dynamics and no group beyond the ones named. The two-sided operator itself, its spectrum as the four products and its image are <em>Two-Sided Operators on the N-Regular Sector</em>; the matrix reading of the same statements is <em>Two-Sided Operators on the N-Regular Sector in $M_2(\mathbb{C})$</em>; the one-sided companion, where the phase is visible, is <em>One-Sided Operators on the N-Regular Sector in $M_2(\mathbb{C})$</em>. The arrays of left and right multiplication are <em>The Axis-Free Arrays: Fifteen Generators, Six Halves, and a Cartan That Cannot Be Integer-Orthonormal</em>. The word rule that forbids calling an operator traceless is <em>Algebra and Element Conventions</em>.</p>
+<h2 id="conventions">Conventions</h2>
+<p><strong>The algebra and the display.</strong> The biquaternion algebra $\mathbb{B}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the product $\vec e_x\vec e_y=\vec e_z$, the squares $\vec e_k^2=-e_t$ and the central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$, with the Hermitian conjugate $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$ and the norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$. The matrix model is $\mathsf M_2(e_t)=\mathrm I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$, so $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.</p>
+<p><strong>The rotor and its axis.</strong> The rotor of the polar word is</p>
+<p>$$
+\tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)
+=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r},
+\qquad \theta_{\mathrm{axr}}\in[0,2\pi],\qquad \lvert\vec u_{\mathrm r}\rvert=1,
+$$</p>
+<p>with $\vec u_{\mathrm r}$ a real unit vector. It is $*$-unitary of norm one, $\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$.</p>
+<p><strong>The array of an endomorphism.</strong> For an endomorphism $T$ of a real four-dimensional subspace with the basis $\beta=(b_0,b_1,b_2,b_3)$, the array is $\mathsf A_\beta(T)_{\imath\jmath}=\bigl[Tb_\jmath\bigr]_\imath$, the $\jmath$-th column being the image of the $\jmath$-th basis vector. The array of a composite is the product of the arrays, $\mathsf A_\beta(T\circ T')=\mathsf A_\beta(T)\mathsf A_\beta(T')$. The array carries no tilde, because an array is not an element.</p>
+<p><strong>The three bases used, and they agree on the rotor.</strong> The coefficient basis is $\beta_{\mathrm{coef}}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, in which an element is its coefficient column. The Hermitian basis is $\beta_{\Psi}=(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ and the anti-Hermitian basis is $\beta_{\Phi}=(ie_t,\vec e_x,\vec e_y,\vec e_z)$. For a rotor the three arrays are identical, because $i$ is central and the rotor commutes with it: $\mathsf A(\mathrm{Sd}_{\tilde u_{\mathrm r}})$ on $\beta_{\Psi}$ and on $\beta_{\Phi}$ differs from the array on $\beta_{\mathrm{coef}}$ by $1.3\cdot10^{-16}$ and $1.1\cdot10^{-16}$ respectively. For the boost they are not identical, and §<em>The Two Sectors and the Boost</em> says how.</p>
+<p><strong>The two symbols this note adds.</strong> The array of the operator is written $\Lambda$, the same letter as $\Lambda_A$ of <em>Two-Sided Operators on the N-Regular Sector in $M_2(\mathbb{C})$</em>. The array of the generator is written $\mathsf K$ for the rotor and $\mathsf K_{\mathrm b}$ for the boost; no element carries these letters.</p>
+<h2 id="the-two-slots-and-the-one-array">The Two Slots and the One Array</h2>
+<h3 id="the-arrays-of-the-two-slots">The arrays of the two slots</h3>
+<p><strong>The composite, read slot by slot.</strong> The operator is $\mathrm{Sd}_{\tilde u_{\mathrm r}}=L_{\tilde u_{\mathrm r}}R_{\tilde u_{\mathrm r}^{-1}}$, the left multiplication acting on the column slot and the right multiplication on the row slot. Each of the two is an endomorphism of the algebra, so each has an array in the coefficient basis, and the array of the composite is their product,</p>
+<p>$$
+\Lambda=\mathsf A\bigl(L_{\tilde u_{\mathrm r}}\bigr)\mathsf A\bigl(R_{\tilde u_{\mathrm r}^{-1}}\bigr),
+\qquad
+\bigl\lvert\Lambda-\mathsf A\bigl(L_{\tilde u_{\mathrm r}}\bigr)\mathsf A\bigl(R_{\tilde u_{\mathrm r}^{-1}}\bigr)\bigr\rvert=6\cdot10^{-17}.
+$$</p>
+<p><strong>Both slot arrays are real.</strong> The rotor has real coefficients in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and every product of two basis vectors is plus or minus a basis vector, so every entry of both slot arrays is real. On the example of §<em>A worked example</em> the imaginary parts of the two arrays are $0$ and $1.1\cdot10^{-16}$.</p>
+<p><strong>The two arrays, printed.</strong> The example is $\theta_{\mathrm{axr}}=0.9$ about $\vec u_{\mathrm r}=(0.2,-0.6,0.77)$ normalised, that is $\vec u_{\mathrm r}=(0.2007138,-0.6021414,0.7727481)$, and $c=\cos\tfrac{\theta_{\mathrm{axr}}}{2}=0.9004471$, $s=\sin\tfrac{\theta_{\mathrm{axr}}}{2}=0.4349655$. Then</p>
+<p>$$
+\mathsf A\bigl(L_{\tilde u_{\mathrm r}}\bigr)=
+\begin{pmatrix}
+0.9004471&amp;-0.0873036&amp;0.2619108&amp;-0.3361188\\
+0.0873036&amp;0.9004471&amp;-0.3361188&amp;-0.2619108\\
+-0.2619108&amp;0.3361188&amp;0.9004471&amp;-0.0873036\\
+0.3361188&amp;0.2619108&amp;0.0873036&amp;0.9004471
+\end{pmatrix},
+$$</p>
+<p>$$
+\mathsf A\bigl(R_{\tilde u_{\mathrm r}^{-1}}\bigr)=
+\begin{pmatrix}
+0.9004471&amp;0.0873036&amp;-0.2619108&amp;0.3361188\\
+-0.0873036&amp;0.9004471&amp;-0.3361188&amp;-0.2619108\\
+0.2619108&amp;0.3361188&amp;0.9004471&amp;-0.0873036\\
+-0.3361188&amp;0.2619108&amp;0.0873036&amp;0.9004471
+\end{pmatrix}.
+$$</p>
+<p>The first row of the left array is $(c,-s\vec u_{\mathrm r}^{\mathsf T})$ and its first column is $(c,s\vec u_{\mathrm r})$, which is the statement $\tilde u_{\mathrm r}\vec e_j=-u_j e_t+\vec u_{\mathrm r}\times\vec e_j$. The two arrays differ only in the signs of the six entries of the first row and the first column outside the diagonal, and their product is the array below.</p>
+<h3 id="the-three-readings-of-one-operator-on-the-left">The three readings of "one operator on the left"</h3>
+<p><strong>The claim to be tested.</strong> The thesis is that the two rotors can be replaced by one operator on the left. Three readings of the sentence are possible, and only two of them are true.</p>
+<p><strong>The first reading, and it is true.</strong> An endomorphism of a four-real-dimensional space is the left multiplication of the coordinate column by one array. The operator $\mathrm{Sd}_{\tilde u_{\mathrm r}}$ is such an endomorphism, so in the coordinates $\mathbf x=(X_t,X_x,X_y,X_z)$ of an element $\tilde X$,</p>
+<p>$$
+\mathbf x\longmapsto\Lambda\,\mathbf x .
+$$</p>
+<p>One array, one left multiplication, two slots absorbed. This is trivially true of every endomorphism, and the content is therefore not the existence of the array but which array it is: block diagonal, with a fixed line and a rotation, as the next subsection proves.</p>
+<p><strong>The second reading, and it is false.</strong> The pair is not the left multiplication $L_{\tilde v}$ by a single element $\tilde v$ of the algebra. The proof is one line. If $\mathrm{Sd}_{\tilde u_{\mathrm r}}=L_{\tilde v}$ then evaluating at $e_t$ gives $\tilde v=\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$, so $\mathrm{Sd}$ would be the identity, and it is not: on a random element $\lvert\mathrm{Sd}(\tilde X)-\tilde X\rvert=2.38$. In array language, the first column of the array of any $L_{\tilde v}$ is the coefficient column of $\tilde v$, whereas the first column of $\Lambda$ is $(1,0,0,0)$, the column of $e_t$. Left multiplication by a non-central element never fixes $e_t$.</p>
+<p><strong>The third reading, and it is true where it is meant.</strong> On the vector part alone the pair is one rotation. The scalar part is fixed and the vector part is turned by the Rodrigues matrix of the full angle,</p>
+<p>$$
+\Lambda=\begin{pmatrix}1&amp;0\\0&amp;\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})\end{pmatrix},
+\qquad
+\bigl\lvert\Lambda-\operatorname{diag}\bigl(1,\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})\bigr)\bigr\rvert=1.1\cdot10^{-16},
+$$</p>
+<p>with $\mathsf R=I_3+\sin\theta_{\mathrm{axr}}[\vec u_{\mathrm r}]_\times+(1-\cos\theta_{\mathrm{axr}})[\vec u_{\mathrm r}]_\times^2$ the Rodrigues matrix of <em>Two-Sided Operators on the N-Regular Sector</em>, §<em>The Rotor</em>. One rotation replaces the two slots, and the object replaced is a pair of one-sided multiplications, not a pair of rotations.</p>
+<p><strong>Why one rotation can carry two factors at all.</strong> The two factors carry one parameter between them, since the right factor is the inverse of the left. A family $L_{\tilde v}R_{\tilde w}$ has eight real parameters; the diagonal subfamily $L_{\tilde u}R_{\tilde u^{-1}}$ has three, the three of the axis and the angle. The collapse of two slots into one array is therefore not a reduction of freedom: it is the observation that three parameters fit in one rotation, and that the rotation is the image of the diagonal subfamily under the map $\tilde u\mapsto\mathsf A(\mathrm{Sd}_{\tilde u})$, of kernel $\{\pm e_t\}$.</p>
+<p><strong>A remark on the two slots, and the sign.</strong> Keeping the order and swapping the two slots gives $\mathrm{Sd}_{\tilde u_{\mathrm r}^{-1}}$, the inverse rotation, because $L_{\tilde u^{-1}}R_{\tilde u}=\mathrm{Sd}_{\tilde u^{-1}}$. So the choice of slot is the sign of the angle, and the array cannot tell which slot carried which factor. That is another way to see that one array suffices.</p>
+<h3 id="the-array-of-the-rotor-conjugation">The array of the rotor conjugation</h3>
+<p><strong>Theorem.</strong> For a rotor $\tilde u_{\mathrm r}$ of axis $\vec u_{\mathrm r}$ and angle $\theta_{\mathrm{axr}}$,</p>
+<p>$$
+\mathsf A\bigl(\mathrm{Sd}_{\tilde u_{\mathrm r}}\bigr)=\begin{pmatrix}1&amp;0\\0&amp;\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})\end{pmatrix}.
+$$</p>
+<p><em>Proof.</em> A rotor is $*$-unitary of norm one, so $\tilde u_{\mathrm r}^{-1}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{*}$, and the operator is a conjugation, $\mathrm{Sd}(\tilde X)=\tilde u_{\mathrm r}\tilde X\tilde u_{\mathrm r}^{-1}$. A conjugation fixes the scalar part, since $\tilde u_{\mathrm r}e_t\tilde u_{\mathrm r}^{-1}=e_t$, so the first column and the first row of the array are the first column and the first row of the identity. On the vector part the conjugation is the classical quaternion rotation of angle twice the half angle, that is $\theta_{\mathrm{axr}}$, about the axis $\vec u_{\mathrm r}$, and its matrix is the Rodrigues matrix. The two statements together are the display.</p>
+<p><strong>The tensor form is the same statement in another basis.</strong> On the matrix units the operator is $\tilde u_{\mathrm r}\otimes\overline{\tilde u_{\mathrm r}}$, of spectrum $\{e^{i\theta_{\mathrm{axr}}},e^{-i\theta_{\mathrm{axr}}},1,1\}$. The coefficient array and the tensor array are similar, $\Lambda=T^{-1}\bigl(\tilde u_{\mathrm r}\otimes\overline{\tilde u_{\mathrm r}}\bigr)T$ to $1.1\cdot10^{-16}$, with $T$ the Pauli dictionary between the four matrix units and the four coefficient basis vectors. The block form is therefore not a different operator: it is the tensor form read where the scalar line is one of the coordinates.</p>
+<h2 id="the-generator-math105">The Generator $\mathsf K$</h2>
+<h3 id="the-three-constructions">The three constructions</h3>
+<p><strong>One array, three routes, and they agree.</strong> The generator is defined by any of the three constructions below, and all three give the same array on the example of §<em>A worked example</em>, to $0$ in the first and the second case and to $1.3\cdot10^{-15}$ in the third.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>route</th>
+<th>definition</th>
+<th>what it uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the block</td>
+<td>$\mathsf K=\operatorname{diag}\bigl(0,[\vec u_{\mathrm r}]_\times\bigr)$</td>
+<td>the axis alone, at unit scale</td>
+</tr>
+<tr>
+<td>the derivation, halved</td>
+<td>$\mathsf K=\tfrac12\mathsf A\bigl(\mathrm{ad}_{\vec u_{\mathrm r}}\bigr)$</td>
+<td>the inner derivation by the axis</td>
+</tr>
+<tr>
+<td>the logarithm</td>
+<td>$\mathsf K=\theta_{\mathrm{axr}}^{-1}\log\Lambda$</td>
+<td>the operator, at the full angle</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The block.</strong> With $[\vec u_{\mathrm r}]_\times\vec v=\vec u_{\mathrm r}\times\vec v$, that is</p>
+<p>$$
+[\vec u_{\mathrm r}]_\times=\begin{pmatrix}0&amp;-u_z&amp;u_y\\ u_z&amp;0&amp;-u_x\\ -u_y&amp;u_x&amp;0\end{pmatrix},
+\qquad
+\mathsf K=\begin{pmatrix}
+0&amp;0&amp;0&amp;0\\
+0&amp;0&amp;-u_z&amp;u_y\\
+0&amp;u_z&amp;0&amp;-u_x\\
+0&amp;-u_y&amp;u_x&amp;0
+\end{pmatrix}.
+$$</p>
+<h3 id="the-derivation-route">The derivation route</h3>
+<p><strong>The derivation by an element.</strong> For $\tilde A\in\mathbb{B}$ the inner derivation is $\mathrm{ad}_{\tilde A}=L_{\tilde A}-R_{\tilde A}$, that is $\mathrm{ad}_{\tilde A}(\tilde X)=\tilde A\tilde X-\tilde X\tilde A$. For a pure element the commutator is twice the vector product, $\vec A\vec X-\vec X\vec A=2\vec A\times\vec X$ for pure $\vec A$ and pure $\vec X$, and it annihilates the scalar part. Hence, for $\tilde A=a\vec u$, the derivation acts on the vector part by $2a[\vec u]_\times$ and by zero on the scalar line.</p>
+<p><strong>The array of the derivation, exactly.</strong> Take $\tilde A=\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, which is the exponent of the rotor. Then</p>
+<p>$$
+\mathsf A\bigl(\mathrm{ad}_{\tilde A}\bigr)=\theta_{\mathrm{axr}}\,\mathsf K,
+\qquad
+\bigl\lvert\mathsf A\bigl(\mathrm{ad}_{\tilde A}\bigr)-\theta_{\mathrm{axr}}\mathsf K\bigr\rvert=0 .
+$$</p>
+<p>The residual is exactly zero and not merely small, because every entry of the array is a signed permutation entry times $\theta_{\mathrm{axr}}u_k$. With the unit axis instead of the exponent, $\mathsf A(\mathrm{ad}_{\vec u_{\mathrm r}})=2\mathsf K$, and that factor two is the whole subject of §<em>Where the Half Angle Lives</em>.</p>
+<p><strong>The two slot arrays and the derivation.</strong> The derivation is the difference of the two slot operators, so its array is the difference of the two slot arrays,</p>
+<p>$$
+\mathsf A\bigl(\mathrm{ad}_{\tilde A}\bigr)=\mathsf A\bigl(L_{\tilde A}\bigr)-\mathsf A\bigl(R_{\tilde A}\bigr),
+\qquad
+\bigl\lvert\mathsf A(\mathrm{ad}_{\tilde A})-\bigl(\mathsf A(L_{\tilde A})-\mathsf A(R_{\tilde A})\bigr)\bigr\rvert=0 .
+$$</p>
+<p>This is the entry point of the whole note. The conjugation $\mathrm{Sd}_{\tilde u}=L_{\tilde u}R_{\tilde u^{-1}}$ is the product of the two slot arrays; the derivation is their difference; and the logarithm of the product is the difference times the angle, because the two slot arrays are the two halves of one exponential, as the next section shows.</p>
+<h2 id="the-properties-of-math127">The Properties of $\mathsf K$</h2>
+<h3 id="the-list">The list</h3>
+<p><strong>Six properties, each exact.</strong> All six hold for every unit axis, and on the example they hold with residual zero.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>property</th>
+<th>statement</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real</td>
+<td>$\mathsf K\in M_4(\mathbb{R})$</td>
+<td>the axis is real and the coefficient basis is real on the vector part</td>
+</tr>
+<tr>
+<td>anti-Hermitian</td>
+<td>$\mathsf K^{\dagger}=\mathsf K^{\mathsf T}=-\mathsf K$</td>
+<td>a real skew array; the transpose is the dagger because the array is real</td>
+</tr>
+<tr>
+<td>derived</td>
+<td>$\operatorname{tr}\mathsf K=0$</td>
+<td>the image of a derivation lies in the derived algebra $\ker\operatorname{tr}$ of $\mathfrak{gl}_4$</td>
+</tr>
+<tr>
+<td>fixes the scalar line</td>
+<td>$\mathsf K e_t=0$ and $e_t^{\mathsf T}\mathsf K=0$</td>
+<td>the derivation annihilates $e_t$ and so does the rotation</td>
+</tr>
+<tr>
+<td>of rank two</td>
+<td>$\operatorname{rank}\mathsf K=2$</td>
+<td>$[\vec u_{\mathrm r}]_\times$ has rank two, its kernel being the axis</td>
+</tr>
+<tr>
+<td>square and cube</td>
+<td>$\mathsf K^2=\operatorname{diag}\bigl(0,\vec u_{\mathrm r}\vec u_{\mathrm r}^{\mathsf T}-\mathrm I_3\bigr)$, $\mathsf K^3=-\mathsf K$</td>
+<td>$[\vec u]_\times^2=\vec u\vec u^{\mathsf T}-\mathrm I_3$ with $\lvert\vec u\rvert=1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The spectrum and the norm.</strong> The eigenvalues are $\{0,0,\pm i\}$ and the square has eigenvalues $\{0,0,-1,-1\}$, so $\mathsf K$ is semisimple with a two-dimensional kernel. Its Frobenius norm is that of $[\vec u_{\mathrm r}]_\times$, which is $\sqrt2$, verified to twelve digits; this is how the scale of $\mathsf K$ is read from the array alone.</p>
+<p><strong>What the two conditions buy.</strong> The two conditions are the two the corpus attaches to the generators of $\mathfrak{su}(n)$. Anti-Hermitian makes the exponential unitary, derived makes its determinant one, so $\Lambda=\exp(\theta_{\mathrm{axr}}\mathsf K)\in\mathrm{SU}(4)$; and being real it lies in $\mathrm{SO}(4)$ as well. Verified: $\lvert\Lambda^{\mathsf T}\Lambda-\mathrm I_4\rvert=2.2\cdot10^{-16}$ and $\det\Lambda=1$. Because $\mathsf K$ is real and skew it is a member of the six-dimensional space of real antisymmetric arrays, the family that <em>The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</em> lists first in its split $6+9$.</p>
+<p><strong>The same two conditions on the axis, one level down.</strong> The axis $\vec u_{\mathrm r}$ is scalar-free and anti-Hermitian, $\vec u_{\mathrm r}^{*}=-\vec u_{\mathrm r}$, and its matrix $\mathsf M_2(\vec u_{\mathrm r})=-i\vec u_{\mathrm r}\cdot\vec\sigma$ is anti-Hermitian, of trace zero and of determinant one. The two conditions are inherited and not repeated by accident: the adjoint of an anti-Hermitian element is anti-Hermitian for the Hilbert–Schmidt form, and the image of any derivation is derived.</p>
+<p><strong>A remark on the words.</strong> The corpus writes <em>scalar-free</em> for an element and reserves <em>traceless</em> for an array, and it forbids the sentence <em>the operator is traceless</em>. The correct sentences are therefore: $\vec u_{\mathrm r}$ is scalar-free and anti-Hermitian; $\mathsf K$ is a real skew array of zero trace; $\mathrm{Sd}_{\tilde u_{\mathrm r}}$ is an automorphism of the algebra; and the array of the derivation has zero trace because a derivation lands in the derived algebra. The statement <em>$\mathsf K$ is traceless</em> is admissible only as a statement about the array, which is what the table above says.</p>
+<p><strong>One thing $\mathsf K$ is not.</strong> It is not an element of $\mathbb{B}$, and it is not one of the sixteen words $e_\imath[\,]e_\jmath$ either. It is a linear combination $\tfrac12\bigl(\ell_{\vec u_{\mathrm r}}-r_{\vec u_{\mathrm r}}\bigr)$ of the left and the right arrays of the axis, $\ell_{\vec u}=\mathsf A(L_{\vec u})$ and $r_{\vec u}=\mathsf A(R_{\vec u})$, and that combination is well defined because the two arrays live in the same space of arrays.</p>
+<h2 id="the-exponential">The Exponential</h2>
+<h3 id="the-array-is-the-exponential-of-math170">The array is the exponential of $\mathsf K$</h3>
+<p><strong>Theorem.</strong> For every $\theta_{\mathrm{axr}}$,</p>
+<p>$$
+\Lambda_{\tilde u_{\mathrm r}}=\exp\bigl(\theta_{\mathrm{axr}}\mathsf K\bigr)
+=I_4+\sin\theta_{\mathrm{axr}}\,\mathsf K+\bigl(1-\cos\theta_{\mathrm{axr}}\bigr)\mathsf K^{2}.
+$$</p>
+<p><em>Proof.</em> The eigenvalues of $\theta_{\mathrm{axr}}\mathsf K$ are $0,0,\pm i\theta_{\mathrm{axr}}$, so the exponential is a trigonometric polynomial in $\mathsf K$; with $\mathsf K^2$ of eigenvalues $0,-1$ the polynomial is the display, which is Rodrigues' formula read at the array level. The exponential and the closed form agree with the array of the operator to $2.2\cdot10^{-16}$ and $1.1\cdot10^{-16}$.</p>
+<p><strong>An exact case.</strong> At $\theta_{\mathrm{axr}}=\tfrac{\pi}{2}$ about $\vec u_{\mathrm r}=\vec e_z$, the closed form is integral,</p>
+<p>$$
+\mathsf K=\begin{pmatrix}0&amp;0&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;0\end{pmatrix},
+\qquad
+\Lambda=\mathrm I_4+\mathsf K+\mathsf K^2=
+\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;0&amp;-1&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;1\end{pmatrix},
+$$</p>
+<p>and the element is the rotor $\tfrac{1}{\sqrt2}(e_t+\vec e_z)$, whose matrix is $\operatorname{diag}(e^{-i\pi/4},e^{i\pi/4})$. The array and the element agree to $2\cdot10^{-16}$.</p>
+<p><strong>The period, and it is not the period of the rotor.</strong> Because $\mathsf K$ is diagonalisable with the eigenvalues $0,0,\pm i$, the array has period $2\pi$ in $\theta_{\mathrm{axr}}$: $\Lambda(2\pi)=\mathrm I_4$ to $1.9\cdot10^{-16}$, while the rotor at the same angle is $-e_t$, that is $-\mathrm I_2$ to $9.5\cdot10^{-17}$. The array is blind to the sign of the element, which is the double cover seen at the level of the array and not at the level of the group. The principal logarithm is therefore $\theta_{\mathrm{axr}}\mathsf K$ only for $\theta_{\mathrm{axr}}\le\pi$; beyond $\pi$ it is $(\theta_{\mathrm{axr}}-2\pi)\mathsf K$.</p>
+<h3 id="one-formula-for-the-four-factors">One formula for the four factors</h3>
+<p><strong>The general statement.</strong> Let $\tilde Q=e^{\tilde A}$ be a single exponential, with $\tilde A^{*}$ its Hermitian conjugate. Then</p>
+<p>$$
+\mathrm{Sd}_{\tilde Q}=\exp\bigl(\mathsf A(D_{\tilde A})\bigr),
+\qquad
+D_{\tilde A}(\tilde X)=\tilde A\tilde X+\tilde X\tilde A^{*},
+$$</p>
+<p>because the curve $t\mapsto e^{t\tilde A}\tilde Xe^{t\tilde A^{*}}$ satisfies $\Phi'=D_{\tilde A}\Phi$ with $\Phi(0)=\tilde X$. Verified on seven random complex exponents $\tilde A$, with the worst residual $4.3\cdot10^{-13}$.</p>
+<p><strong>The four factors, and the character of the exponent decides.</strong> The formula contains the four factors of the polar word, and the only thing that changes from one row to the next is whether the exponent is anti-Hermitian, in which case $D_{\tilde A}$ is a commutator, or Hermitian, in which case it is an anticommutator.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>factor</th>
+<th>exponent $\tilde A$</th>
+<th>$D_{\tilde A}$</th>
+<th>array of $D_{\tilde A}$</th>
+<th>array of the operator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale $\varrho$</td>
+<td>$\ln\varrho\,e_t$, Hermitian and central</td>
+<td>$2\ln\varrho\,\mathrm{id}$</td>
+<td>$2\ln\varrho\,\mathrm I_4$</td>
+<td>$\varrho^2\mathrm I_4$</td>
+</tr>
+<tr>
+<td>phase $e^{i\theta_{\mathrm{pha}}}$</td>
+<td>$i\theta_{\mathrm{pha}}e_t$, anti-Hermitian and central</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\mathrm I_4$</td>
+</tr>
+<tr>
+<td>boost $\tilde U_{\mathrm b}$</td>
+<td>$i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, Hermitian</td>
+<td>$\tilde A\tilde X+\tilde X\tilde A$</td>
+<td>$\mathsf A(D_{\tilde A})$, symmetric</td>
+<td>$B_+$ on $\beta_{\Psi}$ and $B_-=B_+^{-1}$ on $\beta_{\Phi}$</td>
+</tr>
+<tr>
+<td>rotor $\tilde u_{\mathrm r}$</td>
+<td>$\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, anti-Hermitian</td>
+<td>$\mathrm{ad}_{\tilde A}$</td>
+<td>$\theta_{\mathrm{axr}}\mathsf K$, skew</td>
+<td>$\operatorname{diag}(1,\mathsf R)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two rows are exact: the array of $D_{\tilde A}$ is $2\ln\varrho\,\mathrm I_4$ for the scale and the zero array for the phase, both with residual $0$. The rotor row is the theorem above. The boost row is §<em>The Two Sectors and the Boost</em>.</p>
+<p><strong>The rotor is the commutator case, and this is why the array is a rotation.</strong> Because the exponent is anti-Hermitian, $D_{\tilde A}$ is the inner derivation, its array is skew, and the exponential of a skew array is orthogonal. A Hermitian exponent gives a symmetric array and a hyperbolic one-parameter group instead, which is the Cartan split: the rotor lies in the compact summand and the boost in the non-compact one.</p>
+<h3 id="the-logarithm-is-the-array-of-the-derivation-of-the-logarithm">The logarithm is the array of the derivation of the logarithm</h3>
+<p><strong>The identity.</strong> Since $\mathrm{Sd}_{\tilde u_{\mathrm r}}=\exp\bigl(\mathsf A(D_{\log\tilde u_{\mathrm r}})\bigr)$ and $D=\mathrm{ad}$ for a rotor, taking logarithms,</p>
+<p>$$
+\log\Lambda_{\tilde u_{\mathrm r}}=\mathsf A\bigl(\mathrm{ad}_{\log\tilde u_{\mathrm r}}\bigr),
+\qquad
+\bigl\lvert\log\Lambda-\theta_{\mathrm{axr}}\mathsf K\bigr\rvert=1.1\cdot10^{-15}.
+$$</p>
+<p>This is the cleanest statement of the correspondence. The generator of the operator is the array of the derivation by the rotor's own exponent. Nothing is doubled and nothing is halved at this level: the doubling appears one step later, when the derivation acts on the vector part, where it multiplies by two.</p>
+<p><strong>Why this does not contradict the absence of an element identity.</strong> The corpus states that in general $\exp(t\,\mathrm{Sd}_{\tilde Q})\neq\mathrm{Sd}_{\exp(t\tilde Q)}$, because the operator is quadratic in its parameter. The identity above is a different statement: it says that $\mathrm{Sd}_{e^{\tilde A}}$ is the exponential of the array of $D_{\tilde A}$, which is a statement about the array of the generator and not about exponentiating the array of the operator. For the scale the two differ, and the difference is the factor $\varrho^2$ against $\varrho$: exponentiating the operator's array gives $e^{t\varrho^{2}}$, while $\mathrm{Sd}$ of the exponentiated element gives $e^{2t\ln\varrho}$.</p>
+<h2 id="where-the-half-angle-lives">Where the Half Angle Lives</h2>
+<h3 id="the-ladder">The ladder</h3>
+<p><strong>Four rungs, and the factor two sits between the first and the third.</strong> The same rotation is described at four levels; the derivation doubles the rate and the generator halves it back, so the operator and the element differ by one halving.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>object</th>
+<th>what it carries</th>
+<th>the step</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the element $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$</td>
+<td>the exponent $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
+<td>the polar word carries the half</td>
+</tr>
+<tr>
+<td>2</td>
+<td>the derivation by the axis, $\mathrm{ad}_{\vec u_{\mathrm r}}$</td>
+<td>$2[\vec u_{\mathrm r}]_\times$ on the vector part</td>
+<td>the derivation doubles</td>
+</tr>
+<tr>
+<td>3</td>
+<td>the generator $\mathsf K=\tfrac12\mathsf A(\mathrm{ad}_{\vec u_{\mathrm r}})$</td>
+<td>$[\vec u_{\mathrm r}]_\times$</td>
+<td>the halving is undone</td>
+</tr>
+<tr>
+<td>4</td>
+<td>the operator $\Lambda=\exp\bigl(\theta_{\mathrm{axr}}\mathsf K\bigr)$</td>
+<td>$\theta_{\mathrm{axr}}\mathsf K$</td>
+<td>the full angle, and the half is nowhere</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The single sentence.</strong> The half angle is the exponent of the element; the derivation by the axis is twice its rate; $\mathsf K$ is half of that derivation's array; and therefore the operator runs at the full angle. The halving is not a convention and not a bookkeeping device: it is the statement that the inner derivation by a pure element is twice the vector product.</p>
+<p><strong>The check.</strong> Halving the array's exponent gives the array of the rotor of half the angle, $\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\mathsf K\bigr)=\Lambda_{\tilde u_{\mathrm r}(\theta_{\mathrm{axr}}/2)}$ to $1.1\cdot10^{-16}$. The element behind that operator has angle $\theta_{\mathrm{axr}}/4$. Going from the element to the array always doubles; going from the array back to an element always halves; and the two operations are not inverse to one another, because the array forgets the sign as well.</p>
+<p><strong>The contrast with the one-sided operator.</strong> The one-sided operator $L_{\tilde u_{\mathrm r}}$ carries the eigenvalues $e^{\pm i\theta_{\mathrm{axr}}/2}$, the half; the two-sided operator carries $e^{\pm i\theta_{\mathrm{axr}}}$, the full. That is the doubling rule of <em>Two-Sided Operators on the N-Regular Sector</em>, stated there as a proposition in §<em>The Exponential of the Two-Sided Operator</em>, and the ladder above is its array-level proof.</p>
+<h2 id="recovering-the-rotor-from-the-array">Recovering the Rotor from the Array</h2>
+<h3 id="the-algorithm">The algorithm</h3>
+<p><strong>Six steps.</strong> Given $\Lambda$ in the coefficient basis, with no other information, the rotor is recovered as follows. Every step is a statement about the array, and every step is verified on the example below.</p>
+<ol>
+<li>Read the $3\times3$ block, $\mathsf R=\Lambda_{1:3,1:3}$, and check that the first row and the first column are those of the identity. If they are not, $\Lambda$ is not the array of a rotor conjugation.</li>
+<li>The angle, on the principal branch, is $\theta_{\mathrm{axr}}=\arccos\tfrac12\bigl(\operatorname{tr}\mathsf R-1\bigr)$.</li>
+<li>The axis is read from the antisymmetric part, $\sin\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}=\bigl(\mathsf R_{32},\mathsf R_{13},\mathsf R_{21}\bigr)^{\mathsf T}$, that is $\vec u_{\mathrm r}=\tfrac{1}{\sin\theta_{\mathrm{axr}}}\,\tfrac12\bigl(\mathsf R-\mathsf R^{\mathsf T}\bigr)^{\vee}$, where the vee takes the three independent entries.</li>
+<li>The element is $\tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, and its negative is the second preimage.</li>
+<li>The matrices are $\mathsf M_2(\tilde u_{\mathrm r})=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,\mathrm I_2-i\sin\tfrac{\theta_{\mathrm{axr}}}{2}\bigl(u_x\sigma_1+u_y\sigma_2+u_z\sigma_3\bigr)$ and its negative.</li>
+<li>The generator is $\mathsf K=\theta_{\mathrm{axr}}^{-1}\log\Lambda$ if the angle is known, and otherwise the block of §<em>The three constructions</em>. If only the block is given, its three independent entries determine the axis outright, and the check $\lVert\mathsf K_{1:3,1:3}\rVert_{\mathrm F}=\sqrt2$ confirms that the axis is a unit vector.</li>
+</ol>
+<p><strong>From $\mathsf K$ alone.</strong> If only the generator is given, the axis is read from the block and no angle is stored in it: $\mathsf K$ is the generator at unit angle, and the angle belongs to the operator, $\Lambda=\exp(\theta\mathsf K)$ with the $\theta$ of step 2. The pair $(\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ is therefore the pair $(\theta,\vec u)$ of the array, the same two numbers; nothing is lost and nothing is doubled in this direction.</p>
+<h3 id="the-two-signs">The two signs</h3>
+<p><strong>The kernel is $\{\pm e_t\}$.</strong> Both signs of the element give the same array, $\mathrm{Sd}_{-\tilde u}=\mathrm{Sd}_{\tilde u}$, and the computation confirms it: the conjugation by $\mathsf M_2(\tilde u_{\mathrm r})$ and the conjugation by $-\mathsf M_2(\tilde u_{\mathrm r})$ reproduce $\Lambda$ to $1.1\cdot10^{-16}$ each, while $\lvert\mathsf M_2(\tilde u_{\mathrm r})+\mathsf M_2(-\tilde u_{\mathrm r})\rvert=0$. The two matrices are unitary of determinant one and they are negatives of one another, so the reconstruction returns a pair and never a single element. That is the double cover $\mathrm{SU}(2)\to\mathrm{SO}(3)$, read backwards from the array.</p>
+<h3 id="the-degenerate-angles">The degenerate angles</h3>
+<p><strong>Three angles where the axis or the element degenerates.</strong> They are the three cases in which one of the six steps has no answer or has more than one, and each has its own reading.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>angle</th>
+<th>array</th>
+<th>element</th>
+<th>how the axis is read</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\theta_{\mathrm{axr}}=0$</td>
+<td>$\mathrm I_4$</td>
+<td>$e_t$</td>
+<td>undefined: every axis gives the identity operator</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}}=\pi$</td>
+<td>$\operatorname{diag}\bigl(1,2\vec u_{\mathrm r}\vec u_{\mathrm r}^{\mathsf T}-\mathrm I_3\bigr)$, symmetric</td>
+<td>$\vec u_{\mathrm r}$ itself, scalar-free</td>
+<td>from the largest diagonal entry, since $\sin\theta_{\mathrm{axr}}=0$ and step 3 fails</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}}=2\pi$</td>
+<td>$\mathrm I_4$</td>
+<td>$-e_t$</td>
+<td>undefined, as at $0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>At $\theta_{\mathrm{axr}}=\pi$ the scalar part $\cos\tfrac{\pi}{2}$ vanishes and the rotor is pure: this is the single angle at which the element is scalar-free and anti-Hermitian as it stands, and it is the exception that the note on the axis mentions. At $0$ and at $2\pi$ the array is the identity and the two elements $e_t$ and $-e_t$ are the two preimages.</p>
+<h3 id="a-worked-example">A worked example</h3>
+<p><strong>The reconstruction, run on the example.</strong> The array of §<em>The two arrays, printed</em> has block $\mathsf R$ with $\operatorname{tr}\mathsf R=2.2432199$, so $\cos\theta_{\mathrm{axr}}=0.6216100$ and $\theta_{\mathrm{axr}}=0.9000000$ against the exact $0.9$. The antisymmetric part gives $\vec u_{\mathrm r}=(0.2007138,-0.6021414,0.7727481)$, differing from the axis used to build the array by $2.8\cdot10^{-17}$. The element is</p>
+<p>$$
+\tilde u_{\mathrm r}=0.9004471\,e_t+0.0873036\,\vec e_x-0.2619108\,\vec e_y+0.3361188\,\vec e_z ,
+$$</p>
+<p>and its matrix is</p>
+<p>$$
+\mathsf M_2(\tilde u_{\mathrm r})=
+\begin{pmatrix}
+0.9004471-0.3361188i &amp; 0.2619108-0.0873036i\\
+-0.2619108-0.0873036i &amp; 0.9004471+0.3361188i
+\end{pmatrix},
+$$</p>
+<p>unitary of determinant one. The array itself is</p>
+<p>$$
+\Lambda=\begin{pmatrix}
+1&amp;0&amp;0&amp;0\\
+0&amp;0.6368538&amp;-0.6510459&amp;-0.4129848\\
+0&amp;0.5595829&amp;0.7588045&amp;-0.3332908\\
+0&amp;0.5303623&amp;-0.0188417&amp;0.8475617
+\end{pmatrix},
+$$</p>
+<p>of spectrum $\{e^{0.9i},e^{-0.9i},1,1\}$ to nine digits, of determinant one, orthogonal to $2.2\cdot10^{-16}$, and preserving the form $G=\operatorname{diag}(1,-1,-1,-1)$ to $2.2\cdot10^{-16}$, which is the $\varrho=1$ case of $\Lambda^{\mathsf T}G\Lambda=\varrho^4G$ of <em>Two-Sided Operators on the N-Regular Sector in $M_2(\mathbb{C})$</em>.</p>
+<h2 id="the-two-sectors-and-the-boost">The Two Sectors and the Boost</h2>
+<p><strong>The rotor array is the same on the three bases.</strong> Because $i$ is central and the rotor commutes with it, the array of the rotor conjugation is the same on $\beta_{\mathrm{coef}}$, on $\beta_{\Psi}$ and on $\beta_{\Phi}$, to $1.3\cdot10^{-16}$. The vector part is carried by $i\vec b$ on the Hermitian sector and by $\vec b$ on the anti-Hermitian sector, and the sign difference is absorbed by the $i$.</p>
+<p><strong>The boost is not, and the two sectors are inverse to one another.</strong> The boost is a congruence and not a conjugation, $\mathrm{Sd}_{\tilde U_{\mathrm b}}(\tilde X)=\tilde U_{\mathrm b}\tilde X\tilde U_{\mathrm b}$, and its two sector arrays are $B_+$ and $B_-=B_+^{-1}$ of <em>Two-Sided Operators on the N-Regular Sector</em>, §<em>The Boost</em>. On the anti-Hermitian basis, with $\theta_{\mathrm{rpd}}=0.8$ about $(0.3,-0.5,0.81)$ normalised, the array is real to $1.5\cdot10^{-17}$ and</p>
+<p>$$
+\Lambda_{\tilde U_{\mathrm b}}=\exp\bigl(\mathsf A(D_{\tilde A})\bigr),\qquad
+D_{\tilde A}(\tilde X)=\tilde A\tilde X+\tilde X\tilde A,
+\qquad
+\bigl\lvert\exp\bigl(\mathsf A(D_{\tilde A})\bigr)-\Lambda_{\tilde U_{\mathrm b}}\bigr\rvert=4.4\cdot10^{-16},
+$$</p>
+<p>with the eigenvalues $e^{0.8},e^{-0.8},1,1$. The generator is traceless and of eigenvalues $\pm0.8,0,0$, but it is symmetric and not skew: it satisfies $\mathsf K_{\mathrm b}^{\mathsf T}G+G\mathsf K_{\mathrm b}=0$ exactly, and its exponential is $G$-orthogonal, $\lvert\Lambda^{\mathsf T}G\Lambda-G\rvert=8.9\cdot10^{-16}$, while it is not orthogonal at all, $\lvert\Lambda^{\mathsf T}\Lambda-\mathrm I_4\rvert=1.93$.</p>
+<p><strong>The contrast in one line.</strong> The rotor generator is anti-Hermitian and its exponential is a rotation; the boost generator is $G$-self-adjoint and its exponential is a hyperbolic rotation. The property <em>derived</em>, the vanishing of the trace, holds for both. The property <em>anti-Hermitian</em> holds only for the rotor, and that is why only the rotor's array is orthogonal.</p>
+<h2 id="what-fails-and-what-survives">What Fails and What Survives</h2>
+<p><strong>First objection: an array of a two-sided operator should be two-sided.</strong> It is. The array is the product of the two slot arrays, and the two-sidedness is in the factors. What is one-sided is the action of the product on the coordinate column, and that is the sense in which the two rotors become one operation on the left.</p>
+<p><strong>Second objection: then the pair should be a single left multiplication by an element.</strong> It is not, and the first column of the array is the obstruction: it is the column of $e_t$, while the first column of any $L_{\tilde v}$ is the column of $\tilde v$.</p>
+<p><strong>Third objection: the exponential should be injective, as it is for the rotors.</strong> It is not. The array has period $2\pi$ and the rotor has period $4\pi$, so the logarithm is defined only up to the period and the reconstruction returns two elements.</p>
+<p><strong>Fourth objection: the halving must be lost somewhere.</strong> It is not lost; it is moved. The element carries $\tfrac{\theta_{\mathrm{axr}}}{2}$, the derivation by the axis carries twice the rate, and $\mathsf K$ takes half of that, so the array carries $\theta_{\mathrm{axr}}$ exactly. The three numbers differ by the factor two of the inner derivation and by nothing else.</p>
+<p><strong>Fifth objection: the boost must obey the same statements.</strong> Only the statements that do not use anti-Hermiticity. The array is still real on the sector, still the exponential of the array of $D_{\tilde A}$, still of determinant one, and its generator still has zero trace; but the array is not orthogonal and its spectrum is real rather than a pair of conjugate phases.</p>
+<p><strong>Sixth objection: calling $\mathsf K$ traceless contradicts the conventions.</strong> It does if the word is applied to the operator. Applied to the array it is the statement $\operatorname{tr}\mathsf K=0$, which is exact, and the corpus's own sentence is <em>the array of the derivation has zero trace because a derivation lands in the derived algebra</em>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The pair of rotors is one array.</strong> $\mathrm{Sd}_{\tilde u_{\mathrm r}}=L_{\tilde u_{\mathrm r}}R_{\tilde u_{\mathrm r}^{-1}}$ has the array $\Lambda=\mathsf A(L_{\tilde u_{\mathrm r}})\mathsf A(R_{\tilde u_{\mathrm r}^{-1}})=\operatorname{diag}\bigl(1,\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})\bigr)$, and that array multiplies the coordinate column on the left. The pair is not a left multiplication by an element of the algebra, because the array fixes $e_t$ and no $L_{\tilde v}$ with $\tilde v\neq e_t$ does.</p>
+<p><strong>The generator is the block of the axis.</strong> $\mathsf K=\operatorname{diag}\bigl(0,[\vec u_{\mathrm r}]_\times\bigr)=\tfrac12\mathsf A\bigl(\mathrm{ad}_{\vec u_{\mathrm r}}\bigr)=\theta_{\mathrm{axr}}^{-1}\log\Lambda$, and all three routes agree.</p>
+<p><strong>$\mathsf K$ is anti-Hermitian and derived, like the axis.</strong> It is real and skew, of zero trace, of rank two, with $\mathsf K^2=\operatorname{diag}(0,\vec u\vec u^{\mathsf T}-\mathrm I_3)$ and $\mathsf K^3=-\mathsf K$, of spectrum $\{0,0,\pm i\}$ and Frobenius norm $\sqrt2$. Its exponential is unitary of determinant one and, because it is real, orthogonal.</p>
+<p><strong>The array is the exponential at the full angle.</strong> $\Lambda=\exp(\theta_{\mathrm{axr}}\mathsf K)=\mathrm I_4+\sin\theta_{\mathrm{axr}}\mathsf K+(1-\cos\theta_{\mathrm{axr}})\mathsf K^2$, of period $2\pi$, while the rotor is of period $4\pi$.</p>
+<p><strong>One formula covers the four factors.</strong> $\mathrm{Sd}_{e^{\tilde A}}=\exp\bigl(\mathsf A(D_{\tilde A})\bigr)$ with $D_{\tilde A}(\tilde X)=\tilde A\tilde X+\tilde X\tilde A^{*}$; an anti-Hermitian exponent makes $D$ a commutator and a skew array, a Hermitian exponent an anticommutator and a symmetric array. The logarithm of the array of a rotor is the array of the derivation by the rotor's own exponent.</p>
+<p><strong>The half angle sits between the element and the derivation.</strong> The element carries $\tfrac{\theta_{\mathrm{axr}}}{2}$, the derivation by the axis runs at twice the rate, and $\mathsf K$ halves it, so the array carries $\theta_{\mathrm{axr}}$. Halving the array's exponent gives the operator of the rotor of half the angle, whose element carries a quarter.</p>
+<p><strong>The rotor is recovered in six steps.</strong> Read the block, the trace for the angle, the antisymmetric part for the axis, then the element at the half angle, its matrix, and the generator. The two signs are the two preimages, and the three degenerate angles are $0$, $\pi$ and $2\pi$, at which the axis, or the element, is not determined.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
+<td>the two-sided operator of the corpus, $L_{\tilde Q}R_{\tilde Q^{*}}$</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}$, $\vec u_{\mathrm r}$, $\theta_{\mathrm{axr}}$</td>
+<td>the rotor, its real unit axis, its angle; $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$</td>
+</tr>
+<tr>
+<td>$\vec u_{\mathrm r}^{*}=\vec u_{\mathrm r}^{\natural}=-\vec u_{\mathrm r}$</td>
+<td>the axis is scalar-free and anti-Hermitian</td>
+</tr>
+<tr>
+<td>$\mathsf A_\beta(T)$</td>
+<td>the array of the endomorphism $T$ on the basis $\beta$, $\mathsf A_{\imath\jmath}=[Tb_\jmath]_\imath$</td>
+</tr>
+<tr>
+<td>$\beta_{\mathrm{coef}}$, $\beta_{\Psi}$, $\beta_{\Phi}$</td>
+<td>$(e_t,\vec e_x,\vec e_y,\vec e_z)$; $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$; $(ie_t,\vec e_x,\vec e_y,\vec e_z)$</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>$\mathsf A\bigl(\mathrm{Sd}_{\tilde u_{\mathrm r}}\bigr)=\operatorname{diag}\bigl(1,\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})\bigr)$; the same letter as $\Lambda_A$ of the $M_2(\mathbb{C})$ article</td>
+</tr>
+<tr>
+<td>$\mathsf K$</td>
+<td>$\operatorname{diag}\bigl(0,[\vec u_{\mathrm r}]_\times\bigr)$, the generator of the rotor array; $\Lambda=\exp(\theta_{\mathrm{axr}}\mathsf K)$</td>
+</tr>
+<tr>
+<td>$\mathsf K_{\mathrm b}$</td>
+<td>the generator of the boost array, $G$-self-adjoint and not skew</td>
+</tr>
+<tr>
+<td>$[\vec u]_\times$</td>
+<td>the skew array of the vector product, $[\vec u]_\times\vec v=\vec u\times\vec v$, of Frobenius norm $\sqrt2$</td>
+</tr>
+<tr>
+<td>$\mathsf R(\theta,\vec u)$</td>
+<td>the Rodrigues matrix $I_3+\sin\theta[\vec u]_\times+(1-\cos\theta)[\vec u]_\times^2$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde A}=L_{\tilde A}-R_{\tilde A}$</td>
+<td>the inner derivation, $\tilde X\mapsto\tilde A\tilde X-\tilde X\tilde A$; $\mathsf A(\mathrm{ad}_{\vec u})=2\mathsf K$</td>
+</tr>
+<tr>
+<td>$D_{\tilde A}(\tilde X)=\tilde A\tilde X+\tilde X\tilde A^{*}$</td>
+<td>the generator of the one-parameter group $\mathrm{Sd}_{e^{t\tilde A}}$; a commutator when $\tilde A$ is anti-Hermitian</td>
+</tr>
+<tr>
+<td>$G=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>the form preserved by the array up to the scale, $\Lambda^{\mathsf T}G\Lambda=\varrho^4G$</td>
+</tr>
+<tr>
+<td>$\mathsf A(L_{\tilde u})$, $\mathsf A(R_{\tilde u})$</td>
+<td>the arrays of the two slot operators; $\mathsf K=\tfrac12\bigl(\mathsf A(L_{\vec u_{\mathrm r}})-\mathsf A(R_{\vec u_{\mathrm r}})\bigr)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/two-sided-operators-on-the-n-regular-sector.html">Two-Sided Operators on the N-Regular Sector</a>, for the closed form of the word, the doubling rule, and the spectrum of the two-sided operator as the four products.</li>
+<li><a href="../articles_maths/two-sided-operators-on-the-n-regular-sector-in-m2c.html">Two-Sided Operators on the N-Regular Sector in $M_2(\mathbb{C})$</a>, for $\Lambda_A$ and the identity $\Lambda_A^{\mathsf T}G\Lambda_A=\varrho^4G$ that the rotation case of this note reproduces at $\varrho=1$.</li>
+<li><a href="../articles_maths/one-sided-operators-on-the-n-regular-sector-in-m2c.html">One-Sided Operators on the N-Regular Sector in $M_2(\mathbb{C})$</a>, for the half angle on the single slot, which the ladder of this note compares with the full angle on the two slots.</li>
+<li><em>The Axis-Free Arrays: Fifteen Generators, Six Halves, and a Cartan That Cannot Be Integer-Orthonormal</em>, in this folder, for the arrays of the sixteen words, the six real antisymmetric generators and the notation $\mathsf A(T)$.</li>
+<li><a href="../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html">The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$</a>, for the two conditions <em>anti-Hermitian</em> and <em>derived</em>, their split $6+9$, and the exponential as a rotor.</li>
+<li><a href="../articles_maths/the-anti-hermitian-derivations-of-the-biquaternion-algebra-as-su2.html">The Anti-Hermitian Derivations of the Biquaternion Algebra as $\mathfrak{su}(2)$</a>, for the inner derivation by a pure element, for its array $T_{\rho,\rho^{-1}}=L_\rho R_{\rho^{-1}}$ with $\rho=e^{\theta v/2}$, and for the spectrum $\{0,0,\pm i\}$ and the period $2\pi$ that the generator of this note shares with it.</li>
+<li><a href="../articles_maths/the-two-sided-operator-on-an-algebra.html">The Two-Sided Operator on an Algebra</a>, for $L_{\tilde u}R_{\tilde u^{-1}}$ as the inner automorphism and for the kernel $Z(A)^{\times}$ that is the two signs here.</li>
+<li><a href="../articles_maths/the-exponential-of-the-traceless-anti-hermitian-part-determinant-one-unitarity-and-the-rotation.html">The Exponential of the Traceless Anti-Hermitian Part: Determinant One, Unitarity, and the Rotation</a>, for the exponential of $\mathfrak{su}(2)$ and the statement that the rotor is not the rotation.</li>
+<li><a href="../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html">The Complete Polar Decomposition of an N-Regular Biquaternion</a>, for the four exponents, the uniqueness of the word and the branch of the angle.</li>
+<li><a href="../articles_maths/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for <em>scalar-free</em> against <em>traceless</em> and for the rule that no operator is called traceless.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
