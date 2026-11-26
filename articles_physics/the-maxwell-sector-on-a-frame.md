@@ -1,0 +1,156 @@
+# __The Maxwell Sector on a Frame__
+
+## Introduction
+
+The electromagnetic stress is the corpus's most algebraic object. It is a bigeneral quaternionic bilinear, $\Pi_{\imath\jmath}=\tfrac12\mathrm{Sc}(\tilde F e_{\imath}\tilde F^{*}e_{\jmath})$, and it produces all sixteen components from one expression with the four units supplying the two index directions. This article asks what happens to that construction when the units are replaced by a frame.
+
+The answer is the sharpest negative result in the section, and it is worth stating at once. **The construction is correct on an orthonormal frame and fails on every other.** The bilinear is homogeneous of degree two in the legs and contains no inverse metric; a frame's legs are units only when the Gram matrix is the flat one; so on any frame that is not orthonormal the construction returns an object scaled by the leg lengths, which is not the stress. This is not a defect of the corpus's flat-frame result — that result is exactly right — it is the statement that the algebraic packaging does not transport, and the object that does is the metric formula.
+
+Three findings, and the numbers are given below.
+
+**The flat construction is exact.** On the flat frame $\Pi$ reproduces $-\frac{1}{2}\tilde F\tilde F^{*}$'s components: $\Pi_{00}=-W$, $\Pi_{0\jmath}=+\tfrac{1}{c}S_{\jmath}$, $\Pi_{\jmath0}=-\tfrac{1}{c}S_{\jmath}$, $\Pi_{\jmath\imath}=-\sigma_{\jmath\imath}$, with $\sigma$ the Maxwell stress. Entrywise, $\Pi$ and the metric stress differ by a sign that depends only on which slots carry the time index; the ratio is exactly $+1$ or $-1$ in every entry, verified on a field with $\vec E=(0.7,-0.3,0.5)$ and $\vec B=(0.2,0.9,-0.4)$.
+
+**The transport fails, and by leg lengths.** On a diagonal frame with leg scales $(1.07,1.03,0.97,1.05)$ the ratio $\Pi/T$ spreads over $\pm[1.10,1.32]$; on a general non-diagonal frame it spreads over $\pm[0.97,1.39]$. The spread is the product of the leg scales, and it is a spread rather than a constant because $\Pi$ and $T$ depend on the legs differently.
+
+**The trace is the diagnostic.** The metric stress is traceless on every frame — $\sum_{\imath\jmath}G^{\imath\jmath}T_{\imath\jmath}=0$ to $3\times10^{-16}$ in all three frames tested — while $\sum_{\imath\jmath}G^{\imath\jmath}\Pi_{\imath\jmath}=2W$ in all three, independent of the frame. An object whose trace is the energy density is not the electromagnetic stress; the departure is exactly the leg-length factor, and it is invisible in the flat frame because there the legs are units.
+
+**What survives.** The covariant statement survives, and it is the metric formula $T_{\imath\jmath}=F_{\imath a}F_{\jmath}{}^{a}-\tfrac14 g_{\imath\jmath}F_{ab}F^{ab}$, which needs $G$ and therefore lives in the frame's frame-measure and not in one algebra element. And the physics survives in a form worth stating: the electromagnetic stress is not a perfect fluid at all — it is a null dust with stress along the propagation direction and none across it — so the radiation equation of state $p=\rho/3$ is the isotropic average and not the local stress.
+
+## Conventions
+
+The conventions are the preceding articles' and the electromagnetic ones are the corpus's, quoted here so that the comparison is checkable.
+
+The field strength is the pure vector $\tilde F=i\vec E-c\vec B\in\mathbb{B}$ with real $\vec E$ and $\vec B$, so that in the biquaternion's four slots $F_0=0$ and $F_k=iE_k-cB_k$. Its Hermitian conjugate is $\tilde F^{*}=i\vec E+c\vec B$, obtained from $\tilde F^{\natural}=-\tilde F$ by the complex conjugation that leaves $\vec E,\vec B$ real. The units are $e_{\imath}\in\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, the material basis's first four elements with $e_t$ written for the identity.
+
+The frame is $\tilde E_{\Phi,\imath}$ with Gram matrix $g_{\imath\jmath}$ and inverse $G_{\imath\jmath}$, as in the preceding articles. The frame's legs in the algebra are
+
+$$
+\tilde E_{\Phi,\imath}=iE_{\imath 0}e_t+E_{\imath 1}\vec e_x+E_{\imath 2}\vec e_y+E_{\imath 3}\vec e_z,
+$$
+
+the $i$ on the time component being what makes the leg anti-Hermitian and gives $\langle\tilde E_{\Phi,0},\tilde E_{\Phi,0}\rangle_{\natural}=-E_{00}^{2}$.
+
+**The energy density and the Maxwell stress.**
+
+$$
+W=\tfrac12\left(\epsilon\vec E^{2}+\mu^{-1}\vec B^{2}\right),
+\qquad
+\vec S=\vec E\times\vec H,
+\qquad
+\sigma_{\imath\jmath}=E_{\imath}E_{\jmath}+c^{2}B_{\imath}B_{\jmath}-W\delta_{\imath\jmath},
+$$
+
+with $c=1$ and $\epsilon=\mu=1$ below, so that $W=\tfrac12(\vec E^{2}+\vec B^{2})$ and $\vec S=\vec E\times\vec B$. **The indices.** The corpus's flat construction is a mixed array: the time slot carries the $i$ of $Q_t=iq'_{t}$ once when a single index is temporal and $i^{2}=-1$ when both are, which is why $\Pi$ is not symmetric as written and why the corpus says a dressing by that $i^{2}$ is needed. The metric stress $T_{\imath\jmath}$ is the all-low symmetric tensor.
+
+## The Construction and Its Flat-Frame Content
+
+**The bilinear.** With $\Pi_{\imath\jmath}=\tfrac12\mathrm{Sc}(\tilde F e_{\imath}\tilde F^{*}e_{\jmath})$, and $\mathrm{Sc}$ the scalar part of the biquaternion's four slots,
+
+$$
+\Pi_{\imath\jmath}=\tfrac12\,\mathrm{Sc}\!\left(\tilde F\,e_{\imath}\,\tilde F^{*}\,e_{\jmath}\right).
+$$
+
+**The flat-frame components, recomputed.** For $\vec E=(0.7,-0.3,0.5)$ and $\vec B=(0.2,0.9,-0.4)$ the algebra gives
+
+$$
+\Pi=\begin{pmatrix}
+-0.920&-0.330&0.380&0.690\\
+0.330&0.390&0.030&-0.270\\
+-0.380&0.030&0.020&0.510\\
+-0.690&-0.270&0.510&0.510
+\end{pmatrix},
+$$
+
+and the four blocks are the corpus's four blocks exactly: $\Pi_{00}=-W=-0.92$; $\Pi_{0\jmath}=S_{\jmath}=(-0.330,0.380,0.690)$ with $\vec S=\vec E\times\vec B$; $\Pi_{\jmath0}=-S_{\jmath}$; and $\Pi_{\jmath\imath}=-\sigma_{\jmath\imath}$, for instance $\Pi_{11}=+0.39=-\sigma_{xx}$ with $\sigma_{xx}=E_x^{2}+B_x^{2}-W=0.49+0.04-0.92=-0.39$.
+
+**What the array is and is not.** It is not symmetric: $\Pi_{01}=-0.330$ against $\Pi_{10}=+0.330$, a difference of $0.66$ that is the whole of the corpus's dressing remark. Compared with the metric stress computed on the same field, the entrywise ratio is exactly $+1$ or $-1$ in every entry where the stress does not vanish — verified across all sixteen entries, $\min=-1$, $\max=+1$, and no intermediate values — and the sign depends only on which slots carry the time index. That is what "the time slot carries the $i$" means numerically: the array differs from the stress by a sign pattern, not by a factor.
+
+**The physical reading, and it is a null dust.** For a plane wave with null wave vector $k$, the stress is rank one,
+
+$$
+T_{\imath\jmath}\propto k_{\imath}k_{\jmath},
+$$
+
+up to the same sign pattern — verified: the ratio $T_{\imath\jmath}/(k_{\imath}k_{\jmath})$ is constant on a plane-wave field. So the local electromagnetic stress of radiation has pressure $\rho$ along the propagation direction and zero across it, and its trace vanishes. The familiar $p=\rho/3$ is the average over an isotropic ensemble of such null dusts, not a property of any one of them. This matters for the corpus's trace-collapse discussion, which speaks of "a radiation fluid with $p=\rho/3$": that fluid is the isotropised one, and the local stress it replaces is anisotropic.
+
+## The Same Construction on a Frame
+
+Now replace the units by the frame's legs, $e_{\imath}\mapsto\tilde E_{\Phi,\imath}$, and take the scalar part. The result is a perfectly well-defined array, and the question is whether it is the stress.
+
+**Three frames were used**, all with the same field $\tilde F$:
+
+| frame | Gram matrix | $\max\lvert\Pi-\Pi^{\mathsf T}\rvert$ | ratio $\Pi/T$ range | $\sum G^{\imath\jmath}\Pi_{\imath\jmath}$ | $\sum G^{\imath\jmath}T_{\imath\jmath}$ |
+| --- | --- | --- | --- | --- | --- |
+| flat | $\digamma_{\mathrm{met}}$ | $1.38$ | exactly $\pm1$ | $+1.84$ | $3\times10^{-16}$ |
+| diagonal, legs $1.07,1.03,0.97,1.05$ | diagonal | $1.55$ | $\pm[1.10,1.32]$ | $+1.84$ | $2\times10^{-16}$ |
+| general, non-diagonal | non-diagonal | $1.46$ | $\pm[0.97,1.39]$ | $+1.84$ | $3\times10^{-16}$ |
+
+**Three readings of the table.**
+
+*The ratio.* In the flat frame the ratio is exactly $\pm1$ in every entry: the construction is the stress up to the sign pattern of the dressing. In the diagonal frame the ratio spreads over $\pm[1.10,1.32]$, and in the general frame over $\pm[0.97,1.39]$. The spread is not a numerical artefact — it is the leg scales entering, and it grows with them.
+
+*The trace.* The metric stress is traceless in all three frames, as it must be, since $T_{\imath\jmath}$ is built from $F$ and $g$ and the electromagnetic stress is conformally invariant in four dimensions. $\Pi$'s trace is $+1.84=2W$ in all three, unchanged by the frame. An object whose $g$-trace equals twice the energy density on every frame is not a traceless tensor that happens to be mis-scaled; it is a different array, and the difference is structural.
+
+*The symmetry.* $\Pi$ is not symmetric in any frame, including the flat one. The asymmetry is the dressing's, and it is a statement about index placement rather than about the frame.
+
+**Why the construction cannot transport, and this is the whole of it.** $\Pi_{\imath\jmath}$ is a product of the field with two legs and is homogeneous of degree two in the legs,
+
+$$
+\Pi_{\imath\jmath}\bigl(s_{\imath}\tilde E_{\Phi,\imath},s_{\jmath}\tilde E_{\Phi,\jmath}\bigr)=s_{\imath}s_{\jmath}\,\Pi_{\imath\jmath},
+$$
+
+whereas the stress involves the inverse metric and is not. The frame's legs are units exactly when $g_{\imath\jmath}=(\digamma_{\mathrm{met}})_{\imath\jmath}$: that is the definition of an orthonormal frame, and every other frame's legs carry lengths. So the algebraic bilinear is the stress on the orthonormal frames and on none of the others, and since all frames describe the same metric, the construction is correct precisely on the representative in which it is a coincidence.
+
+**The repair, and it is not algebraic.** The object that transports is
+
+$$
+T_{\imath\jmath}=F_{\imath a}F_{\jmath}{}^{a}-\tfrac14\,g_{\imath\jmath}\,F_{ab}F^{ab},
+$$
+
+which is traceless on every frame (verified to $3\times10^{-16}$ in all three) and reduces to the corpus's bilinear on the orthonormal frame up to the sign pattern. It needs $G_{\imath\jmath}$ for the contractions, so it is a metric formula written in the frame's letters and not a single element's scalar part. The passage from the corpus's bilinear to it is the passage from one algebra element to a frame, which is the same passage that the count $10>8$ forces on the source in general.
+
+## What the Sector Establishes and What It Leaves
+
+**Established.**
+
+1. The corpus's bigeneral bilinear is exactly the electromagnetic stress on an orthonormal frame, up to a fixed sign pattern of index placement: ratio $\pm1$ entrywise, verified.
+2. It does not transport. On a frame with leg scales $1.03$–$1.07$ the ratio spreads over $\pm[1.10,1.32]$, and $\Pi$'s $g$-trace stays $2W$ while the stress's stays zero.
+3. The metric formula $T_{\imath\jmath}=F_{\imath a}F_{\jmath}{}^{a}-\tfrac14g_{\imath\jmath}F^{2}$ is the transporting object, is traceless in every frame tested, and agrees with the bilinear on the orthonormal frame.
+4. The local electromagnetic stress is a null dust, rank one along the wave vector, and $p=\rho/3$ is its isotropic average.
+
+**Left open.**
+
+1. **The field equation on a frame.** Maxwell's equation $\tilde\nabla_{\Phi}\tilde F=-Z\tilde J_{\Phi}$ is the flat-frame form; its covariant generalisation needs the frame's connection and is transcribed, not derived, exactly as the gravitational equation is.
+2. **Minimal coupling.** Whether the field strength should be the exterior derivative of the potential on the frame, $F_{\imath\jmath}=\partial_{\imath}A_{\jmath}-\partial_{\jmath}A_{\imath}$, or the curvature of a connection, $\tilde F_{\imath\jmath}=\partial_{\imath}\tilde A_{\jmath}-\partial_{\jmath}\tilde A_{\imath}+[\tilde A_{\imath},\tilde A_{\jmath}]$, is settled in the corpus in favour of the first for the abelian case and is a choice, not a derivation.
+3. **The coupling to the frame's own geometry.** Whether $\tilde F$ couples to torsion is untouched here, and the corpus's torsion articles are where that would be decided.
+
+## Summary
+
+The corpus's electromagnetic stress is a bigeneral quaternionic bilinear, and on the flat frame it is exact: $\Pi_{00}=-W$, $\Pi_{0\jmath}=\pm S_{\jmath}$, $\Pi_{\jmath\imath}=-\sigma_{\jmath\imath}$, entrywise the metric stress up to a sign pattern of index placement.
+
+On a frame it fails, and the failure is measurable. The bilinear is degree two in the legs and has no inverse metric; the legs are units only on an orthonormal frame; so the ratio to the stress spreads over $\pm[1.10,1.32]$ for leg scales near unity, and the bilinear's $g$-trace is $2W$ where the stress's is zero. The transporting object is the metric formula, which needs the inverse Gram matrix and is therefore a frame statement and not an element statement.
+
+The physics that survives the passage is worth more than the algebra that does not: the local stress of radiation is a null dust, rank one and anisotropic, and the radiation equation of state is its isotropic average. The Maxwell sector is thus the clearest case in which the corpus's algebraic packaging and its geometric content come apart, and the direction of the repair — from one element to a frame — is the same direction the source dictionary already took.
+
+## Summary of Notation
+
+| symbol | meaning |
+| --- | --- |
+| $\tilde F=i\vec E-c\vec B$ | field-strength biquaternion |
+| $\tilde F^{*}=i\vec E+c\vec B$ | Hermitian conjugate |
+| $e_{\imath}$ | the units $e_t,\vec e_x,\vec e_y,\vec e_z$ |
+| $\Pi_{\imath\jmath}$ | $\tfrac12\mathrm{Sc}(\tilde F e_{\imath}\tilde F^{*}e_{\jmath})$, the flat-frame bilinear |
+| $W$ | $\tfrac12(\epsilon E^{2}+\mu^{-1}B^{2})$, the energy density |
+| $\vec S$ | $\vec E\times\vec H$, the Poynting vector |
+| $\sigma_{\imath\jmath}$ | the Maxwell stress |
+| $T_{\imath\jmath}$ | $F_{\imath a}F_{\jmath}{}^{a}-\tfrac14g_{\imath\jmath}F^{2}$, the transporting stress |
+| $g_{\imath\jmath},\ G_{\imath\jmath}$ | Gram matrix and its inverse |
+
+## Further Reading
+
+- [Exercise: The Electromagnetic Energy–Momentum Tensor](exercise-the-electromagnetic-energy-momentum-tensor.html), for the flat-frame bilinear, its component table, its tracelessness and the rank-one plane-wave form.
+- [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the bigeneral construction and the source term that couples it to matter.
+- [Matter Into the Frame: The Variation That Defines the Source](matter-into-the-frame-the-variation-that-defines-the-source.html), for the dictionary this sector is tested against and the count that forces the passage from an element to a frame.
+- [The Scalar Sector on a Frame](the-scalar-sector-on-a-frame.html), for the sector where the same dictionary works with no index structure at all.
+- [The Dirac Sector on a Frame](the-dirac-sector-on-a-frame.html), for the sector where the frame enters intrinsically and the antisymmetric part appears.
+- [The Action Problem](the-action-problem.html), for the trace collapse and the perfect-fluid frame that the radiation fluid's isotropic average fills.
