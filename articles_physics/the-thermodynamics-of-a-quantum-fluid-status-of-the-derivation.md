@@ -16,7 +16,7 @@ The entropy inequalities are real. [The Local Entropy Current](the-local-entropy
 
 ## The Category's Three Layers
 
-The category is ordered, and the order is a dependency chain rather than a sequence of topics. Each layer uses the layer above it and adds one object. The field's own stress and flow, which used to be the first of those layers, now form a separate category — *Biquaternion Relativistic Quantum Fluid Mechanics* — and the chain here begins where a state is put on the field.
+The category is ordered, and the order is a dependency chain rather than a sequence of topics. Each layer uses the layer above it and adds one object. The field's own stress and flow, which used to be the first of those layers, now form a separate category — *Biquaternion Universe Relativistic Quantum Fluid Mechanics* — and the chain here begins where a state is put on the field.
 
 The three articles that no longer open it are the whole of that block: [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), which writes $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$ and shows that the quantum potential is its divergence; [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), which assembles the Dirac field's triple — density, frame element, spin direction — and shows that its flow is not a gradient; and [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), which proves that the flow is irrotational except on the zero-divisor cone and that the circulation there is $h n/m$.
 
@@ -112,7 +112,7 @@ Why the four transcriptions are the category's spine. Each is the point at which
 
 ## The Modular Sector, and the Unmerged Second Article
 
-The category holds one modular-Hamiltonian article, and a second remains in *Biquaternion Quantum Fields*.
+The category holds one modular-Hamiltonian article, and a second remains in *Biquaternion Universe Quantum Fields*.
 
 [The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html) is the category's article: the generator of the modular flow, its verification in the algebra, the pairing formula and the Gibbs form. The second, [The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form](the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.html), sits in the neighbouring section and has not been merged into this one. The ledger states the fact and does not move the article: moving an entry is a menu decision and this article does not make menu decisions.
 
@@ -193,7 +193,7 @@ $\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546
 
 One Hermiticity declaration, made in [The Local Entropy Current](the-local-entropy-current.html) and inherited by every later inequality. No inequality in the category writes $\mathrm{Re}$ after it, and a reader who checks that single fact has checked the category's thermodynamic consistency.
 
-The second modular-Hamiltonian article remains in *Biquaternion Quantum Fields*. The ledger records it and does not move it.
+The second modular-Hamiltonian article remains in *Biquaternion Universe Quantum Fields*. The ledger records it and does not move it.
 
 Ten questions are open, and the ledger names them so that the next article need not re-argue where the last one stopped.
 

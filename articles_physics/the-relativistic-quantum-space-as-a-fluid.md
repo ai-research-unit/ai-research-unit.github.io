@@ -56,7 +56,7 @@ Both are the subjects of their own articles ([the Klein–Gordon equation in biq
 
 "Relativistic" is a property of the algebra and not an add-on. A Lorentz transformation is invertible acting by multiplication, $\tilde\Xi\mapsto\tilde M\tilde\Xi$ with $N(\tilde M)=1$, and the quaternionic norm $N=\langle\tilde\Xi\rangle_{\natural}$ is central, so it is carried into itself. The d'Alembertian is central. Nothing is added to make the equation covariant; the covariance is the multiplication.
 
-"Quantum" in this block is quantum-mechanical and not quantized. The constant $\frac{h}{2\pi}$ enters twice: through the wave number $\nu_m=\frac{mc}{h}$, and through the phase, which carries the action in units of $\frac{h}{2\pi}$. One field is present. There is no Fock space, no creation operator, no vacuum state and no trace. The block is first-quantized throughout, and the quantized field is the subject of *Biquaternion Quantum Fields*.
+"Quantum" in this block is quantum-mechanical and not quantized. The constant $\frac{h}{2\pi}$ enters twice: through the wave number $\nu_m=\frac{mc}{h}$, and through the phase, which carries the action in units of $\frac{h}{2\pi}$. One field is present. There is no Fock space, no creation operator, no vacuum state and no trace. The block is first-quantized throughout, and the quantized field is the subject of *Biquaternion Universe Quantum Fields*.
 
 ## Why a Fluid Is the Right Word
 
@@ -148,7 +148,7 @@ The domain restriction is not an approximation. Nothing in the block is expanded
 ### Not second quantization
 
 One element is not a field operator. The block has no Fock space, no creation or annihilation operator, no vacuum, no Wick theorem and no S-matrix. The quantized
-field, with its grading, its GNS construction and its scattering theory, is *Biquaternion Quantum Fields*, which opens with [The Biquaternion Vacuum as a Minimal
+field, with its grading, its GNS construction and its scattering theory, is *Biquaternion Universe Quantum Fields*, which opens with [The Biquaternion Vacuum as a Minimal
 Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), and no result of that block is used here.
 
 The word is a statement about single elements, not about operators. The polar decomposition applies to the field operator's classical values, and that extension is not made here. The fluid of this block is the fluid of a classical element obeying a quantum-mechanical wave equation.
@@ -156,7 +156,7 @@ The word is a statement about single elements, not about operators. The polar de
 ### Not thermodynamics
 
 A density and a velocity are not a thermal state. The block has no temperature, no entropy, no partition function and no equation of state at a point. A fluid needs
-a state as well as a kinematics, and the state is the subject of *Biquaternion Relativistic Quantum Thermodynamics*, which puts a density operator on the same field —
+a state as well as a kinematics, and the state is the subject of *Biquaternion Universe Relativistic Quantum Thermodynamics*, which puts a density operator on the same field —
 the construction is [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) — and takes the fluid limit of the result.
 
 The two blocks meet at one object and nowhere else. The stress tensor of the scalar field is an article of this block and it is also the object the thermal block's equation of state is built on. The meeting is recorded in both articles and is not a dependency of this one.

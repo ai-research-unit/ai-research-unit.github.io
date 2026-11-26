@@ -141,7 +141,7 @@ and the group fixes none of the six coefficients. **Two quartics and not one in 
 
 **The gauge-fixing and ghost pieces.** $\mathcal{L}_{\mathrm{gf}}=-\tfrac{1}{2\zeta}\sum_{a}\bigl(\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}A_{a,\imath}\bigr)^{2}$ with one parameter $\zeta$ for the whole group, and $\mathcal{L}_{\mathrm{gh}}=\sum_{a}\bar c_{a}\bigl(-\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}D_{\imath}\bigr)c_{a}$ with fifteen ghosts in the adjoint. **One parameter and not four**, which is the difference between this block and the electroweak one: there the four factors each carried a gauge parameter and the mixing made them unequal.
 
-**The Yukawa piece, named and not written.** One operator per scalar block and one matrix in the copy index,
+**The Yukawa piece, named and not written.** One contraction of the matrix and one matrix in the copy index,
 
 $$
 \mathcal{L}_{\mathrm{Yuk}}=y_{\alpha\beta}\,\bar\xi^{\alpha}Ξ\,\xi^{\beta}+\text{h.c.},
@@ -159,13 +159,17 @@ $$
 \bar{\mathbf4}\otimes(\mathbf{15}\oplus\mathbf1)\otimes\mathbf4\supset\mathbf1 .
 $$
 
-**There is exactly one invariant contraction, and it uses all sixteen components.** Write the contraction as $\bar\xi\,Ξ\,\xi$; since $\mathbf{15}$ and $\mathbf1$ are separate irreducible blocks, it splits into two operators,
+**There is exactly one invariant contraction, and it uses all sixteen components.** Write it as $\bar\xi^{\alpha}\,Ξ\,\xi^{\beta}$ with $\alpha,\beta$ the copy index. **The matrix $Ξ$ is not irreducible — it is $\mathbf{15}\oplus\mathbf1$ — so the same contraction can be read in two channels**,
 
 $$
-\mathcal{L}_{\mathrm{Yuk}}=y\,\bar\xi\,Ξ_{15}\,\xi+y'\,\bar\xi\,Ξ_{1}\,\xi+\text{h.c.},
+\bar\xi\,Ξ\,\xi=\bar\xi\,Ξ_{15}\,\xi+\bar\xi\,Ξ_{1}\,\xi,
+\qquad
+Ξ_{15}=Ξ-\tfrac14(\operatorname{tr}Ξ)\,\mathbb 1,
+\qquad
+Ξ_{1}=\tfrac14(\operatorname{tr}Ξ)\,\mathbb 1 .
 $$
 
-**so a complete ledger carries two coefficients and this one carries a single matrix $y$.** The model sets $y'$ to zero — a choice, stated here and not derived.
+**Each channel is an independent invariant, so the ledger could carry two coefficients; it carries one**, the matrix $y_{\alpha\beta}$ of the display above. **That is a choice as much as a count.** The trace channel is dropped because it vanishes on the condensate — see the next paragraph — so **no mass, no mixing and no mass relation can depend on a coefficient multiplying it**; what it would change is the coupling of the fluctuation $\delta\operatorname{tr}Ξ$ to a fermion pair, and nothing in the corpus uses that coupling. **A second coefficient with no consequence in the spectrum is a footnote and not a term**, which is why it is not written.
 
 **Where the mass then comes from is a sharper statement, and it is the one the rest of the block uses.** The vacuum is $Ξ_0=vD$ with
 
@@ -173,7 +177,7 @@ $$
 \operatorname{tr}D=-3+1+1+1=0 ,
 $$
 
-**so the singlet block vanishes at the minimum and the whole mass matrix is the adjoint block's**,
+**so the trace channel vanishes at the minimum and the whole mass matrix is the traceless channel's**,
 
 $$
 M_{\imath\jmath}=y\,v\,D_{\imath}\delta_{\imath\jmath},

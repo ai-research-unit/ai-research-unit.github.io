@@ -162,7 +162,7 @@ What does exist is a stress, and the stress is not a pressure. The quantum force
 
 The reader's check is the order of the derivatives. A barotropic pressure makes the force density $-\vec\nabla_\Phi p(\rho_{\mathrm{num}})=-p'(\rho_{\mathrm{num}})\vec\nabla_\Phi\rho_{\mathrm{num}}$, a term along the density's gradient and first order in it. The force density here is $\rho_{\mathrm{num}}\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and $Q_{\mathrm{qnt}}$ already carries two derivatives of $\ln\rho_{\mathrm{num}}$, so the force is third order. No function of the density's value can turn two derivatives into none.
 
-A thermal fluid at a point has an equation of state, because its state is a density operator with a temperature and the pressure is a functional of that state. The scalar fluid of this block has no temperature and no state; it has a density and an action. The equation of state appears in *Biquaternion Relativistic Quantum Thermodynamics* and it is not anticipated here.
+A thermal fluid at a point has an equation of state, because its state is a density operator with a temperature and the pressure is a functional of that state. The scalar fluid of this block has no temperature and no state; it has a density and an action. The equation of state appears in *Biquaternion Universe Relativistic Quantum Thermodynamics* and it is not anticipated here.
 
 ## The Criterion Applied
 
@@ -253,7 +253,7 @@ The mass shell is two-sheeted, and both sheets carry the same fluid.
 
 The two defects of the parent article are one mechanism, and this is it. The parent records that the Klein–Gordon charge density is not positive definite and that it has the sign of the energy. In the fluid's terms there is one density, positive, and one direction of flow, which can point either way in time. The second-order equation does not organize its solutions by particle number, and the fluid's two sheets are the two signs of that direction.
 
-The transport equation cannot tell the sheets apart. It is linear in $\partial S_{\tilde\Xi}/\partial r'_t$ and invariant under $S_{\tilde\Xi}\to-S_{\tilde\Xi}$, and both rows satisfy it with the same amplitude. The identification of particles needs a further structure, and that structure is the second quantization of *Biquaternion Quantum Fields*, not this block.
+The transport equation cannot tell the sheets apart. It is linear in $\partial S_{\tilde\Xi}/\partial r'_t$ and invariant under $S_{\tilde\Xi}\to-S_{\tilde\Xi}$, and both rows satisfy it with the same amplitude. The identification of particles needs a further structure, and that structure is the second quantization of *Biquaternion Universe Quantum Fields*, not this block.
 
 ## The Limits
 

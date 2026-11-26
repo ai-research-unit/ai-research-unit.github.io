@@ -87,18 +87,24 @@
    Prominence decreases with depth: the four bands are one ladder, and every
    signal a level carries — the fill, the accent bar and the text tone — is one
    notch softer than the level above, so the hierarchy is read without counting.
-     h2               chapter        ## Biquaternions      fill 22%, bar 8px
+   The chapter is the exception, and the reason the ladder starts at all: it is
+   inverted, a solid accent fill with white text, so the step from a chapter to
+   the category band under it is a change of kind and not one more notch. The
+   earlier pair of tints, 22% and 16%, moved every signal by a single notch and
+   collapsed at reading distance: two pale blue-grey bands, told apart only by
+   measuring them.
+     h2               chapter        ## Biquaternions      solid accent, white text, bar 8px
      h3 (no link)     category band  ### Theory            fill 16%, bar 4px
      h4               topic band     #### The Forms        fill grey #e8e8e8
      h5               sub-topic tag  ##### Form            fill grey #f0f0f0, leading square
      h6               field tag      ###### Common Theory  no fill, bar 1px, leading dash
      p > a (only)     article entry  <a …>Title</a>        blue link
-   The chapter and the category band take a tint of the accent #2a4a7f mixed
-   with white (22 and 16%); the topic and sub-topic bands take a neutral grey
-   instead, so the two label families are told apart by hue as well as by depth
-   — a grey fill is visible at a lightness where a blue tint of the same
-   lightness reads as almost nothing.
-   Against the page background #f7f6f2 the fill contrast falls 1.34, 1.20, 1.13,
+   The category band takes a tint of the accent #2a4a7f mixed with white (16%)
+   and the chapter takes the accent itself; the topic and sub-topic bands take a
+   neutral grey instead, so the two label families are told apart by hue as well
+   as by depth — a grey fill is visible at a lightness where a blue tint of the
+   same lightness reads as almost nothing.
+   Against the page background #f7f6f2 the fill contrast falls 8.14, 1.20, 1.13,
    1.05 down the ladder, and the fifth step has nowhere left to go: one notch
    softer than #f0f0f0 is the page itself. The deepest level, the field tag that
    subdivides a structure into *Common Theory*, *Specific Theory*, *Form*,
@@ -107,7 +113,9 @@
    the article-title size, so a label is never smaller than the entries it
    holds, and it is told from an entry by tone — grey against accent blue — and
    by weight, 700 against 600.
-   A chapter also gets the widest margin (4.5rem above,
+   White on the accent measures 8.8 to 1, so the inverted chapter keeps its
+   contrast without a heavier weight.
+   A chapter also gets the widest margin (5rem above,
    against 2.2rem for a category), so its band never sits as close to the text
    above it as the next level down.
    A heading is a label and nothing else: every `##`, `###`, `####`, `#####` and
@@ -129,25 +137,32 @@
    carries a `#######`, which markdown would not render as a heading anyway.
    The bands carry no `text-transform`: the level is told by size, by the
    accent bar and by the fill, so case in the source is shown as written. */
-/* Level 2 — the chapter band, top of the ladder: the deepest fill, the thickest
-   bar, the widest margin and the darkest text. When collapsed by the browser's
-   outline an h2 and the h3 under it can otherwise read alike, so the chapter
-   also takes the largest gap of the four. The menu-only fill replaces the
-   bottom rule the generic h2 carries, which would add a second edge below it. */
+/* Level 2 — the chapter band, the top of the ladder and its one inverted step:
+   a solid accent fill with white text, where every level below is a tint or a
+   grey carrying dark text. The inversion is what tells a chapter from the
+   category band under it; the earlier tints, 22% and 16%, did not. The band is
+   also the tallest (79px against 54px at the default font size), on a size step
+   of its own (1.95rem against 1.5rem),
+   so the level is read before the words are read. The size is written here and
+   not on `--size-h2`, because the token belongs to the article headings and the
+   menus take their own step. When collapsed by the browser's outline an h2 and
+   the h3 under it can otherwise read alike, so the chapter also takes the
+   largest gap of the four. The menu-only fill replaces the bottom rule the
+   generic h2 carries, which would add a second edge below it. */
 .menu .article-body > h2 {
   font-family: var(--font-ui);
-  font-size: var(--size-h2);
+  font-size: 1.95rem;
   font-weight: 700;
-  color: #1a1a1a;
-  background: #d0d7e3;
+  color: #ffffff;
+  background: #2a4a7f;
   border-bottom: none;
-  border-left: 8px solid #2a4a7f;
+  border-left: 8px solid #14243c;
   padding: 0.9rem 1.1rem;
-  margin-top: 4.5rem;
+  margin-top: 5rem;
   margin-bottom: 1.6rem;
 }
-/* Level 3 — the category band, one notch softer than the chapter: a lighter
-   fill, half the bar and a text tone below full black. */
+/* Level 3 — the category band, one notch softer than the chapter: a pale tint
+   where the chapter is solid, half the bar and a text tone below full black. */
 .menu .article-body > h3:not(:has(a)) {
   font-family: var(--font-ui);
   font-size: 1.5rem;
