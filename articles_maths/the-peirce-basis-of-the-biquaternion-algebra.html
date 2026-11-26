@@ -97,7 +97,7 @@ $$</p>
 $$</p>
 <p>so both mixed elements are nilpotents. The four elements satisfy the multiplication table of the four $2\times2$ matrix units, with $\tilde\Pi_{\mathrm{id},\pm}$ on the diagonal.</p>
 <p><strong>The diagonal is forced.</strong> If a nonzero diagonal element is written $c\tilde\Pi_{\mathrm{id},s}$, then idempotence gives $c^{2}=c$, hence $c=1$. The diagonal elements of a Peirce basis are therefore the idempotents themselves; they are not a choice.</p>
-<p><strong>The mixed elements are a choice.</strong> A nonzero $\vec\Pi_{\mathrm{nil},+-}$ can be rescaled, and the product normalization forces the reciprocal rescaling of $\vec\Pi_{\mathrm{nil},-+}$. That freedom is the gauge of §<em>The Gauge</em>.</p>
+<p><strong>The mixed elements are a choice.</strong> A nonzero $\vec\Pi_{\mathrm{nil},+-}$ can be rescaled, and the product normalization forces the reciprocal rescaling of $\vec\Pi_{\mathrm{nil},-+}$. That freedom is the gauge of §<em>The Indefinite Form</em>.</p>
 <h2 id="existence-the-nilpotent-route">Existence: The Nilpotent Route</h2>
 <p><strong>Theorem.</strong> Every nondegenerate complete family of two idempotents of $\mathbb{B}$ admits a Peirce basis. More precisely, for every nonzero $u\in\mathbb{B}_{+-}$ there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{\mathrm{id},+}$, and then $vu=\tilde\Pi_{\mathrm{id},-}$. The Peirce bases of the family are in bijection with the nonzero elements of $\mathbb{B}_{+-}$, and also with the nonzero elements of $\mathbb{B}_{-+}$.</p>
 <p><strong>Proof.</strong> Let $u\in\mathbb{B}_{+-}$ be nonzero. By the corner rule, left multiplication by $u$ maps $\mathbb{B}_{-+}$ into $\mathbb{B}_{++}$ and annihilates $\mathbb{B}_{++}$. The product $\mathbb{B}_{+-}\mathbb{B}_{-+}$ is nonzero by the lemma of <em>Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Peirce Decompositions</em>; since $\mathbb{B}_{-+}$ is a line, $u\mathbb{B}_{-+}\ne0$. A nonzero linear map between two lines is an isomorphism, so there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{\mathrm{id},+}$.</p>
@@ -113,7 +113,7 @@ $$</p>
 \tilde\Pi_{\mathrm{id},-}=\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}.
 $$</p>
 <p>The mixed elements are nilpotents, and each idempotent is the product of the two in the appropriate order.</p>
-<p><strong>The gauge is the reciprocal scaling.</strong> If $u$ is replaced by $\lambda u$, then $v$ is replaced by $\lambda^{-1}v$, and the pair remains a basis. Every $\lambda\in\mathbb{C}^{\times}$ gives a basis. This one-parameter scaling is the whole freedom of the construction; it is computed in §<em>The Gauge</em>.</p>
+<p><strong>The gauge is the reciprocal scaling.</strong> If $u$ is replaced by $\lambda u$, then $v$ is replaced by $\lambda^{-1}v$, and the pair remains a basis. Every $\lambda\in\mathbb{C}^{\times}$ gives a basis. This one-parameter scaling is the whole freedom of the construction; it is computed in §<em>The Indefinite Form</em>.</p>
 <h2 id="coordinates">Coordinates</h2>
 <p>Every element has a unique expansion</p>
 <p>$$
@@ -143,7 +143,7 @@ Q_{++}Q_{--}-Q_{+-}Q_{-+}=\langle\tilde Q\rangle_{\natural}
 =Q_{t}^{2}+Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}.
 $$</p>
 <p>The identity is independent of the basis: a change of basis conjugates the coordinate matrix and leaves its determinant unchanged.</p>
-<h2 id="the-gauge">The Gauge</h2>
+<h2 id="the-indefinite-form">The Indefinite Form</h2>
 <p><strong>A change of basis of the same family.</strong> Every other basis of the same family has the form</p>
 <p>$$
 \vec\Pi_{\mathrm{nil}}'{}_{+-}=t_{+}t_{-}^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
@@ -215,7 +215,7 @@ $$</p>
 $$</p>
 <p>A Peirce basis is exactly such a system. The coordinate map of §<em>Coordinates</em> sends it to the four elementary matrices, so a system of matrix units is the same data as an algebra isomorphism $\mathbb{B}\to M_{2}(\mathbb{C})$ in which the family is the standard diagonal pair.</p>
 <p><strong>Uniqueness up to conjugation.</strong> Every two systems of $2\times2$ matrix units of $\mathbb{B}$ are conjugate by an invertible element, and the conjugating unit is unique up to the centre.</p>
-<p><strong>Proof.</strong> For two systems of the same family, the two bases differ by the gauge of §<em>The Gauge</em>, and that gauge is conjugation by $U=t_{+}\tilde\Pi_{\mathrm{id},+}+t_{-}\tilde\Pi_{\mathrm{id},-}$; the conjugating unit is unique up to a common scalar, that is up to the centre. For two systems of different families, pass to the matrix model. A nontrivial idempotent of $M_{2}(\mathbb{C})$ is a rank-one projection; choose a basis of $\mathbb{C}^{2}$ in which its image is the first coordinate line and its kernel the second. The projection is then $E_{11}$, and the mixed units are determined up to the diagonal torus. Every automorphism of $M_{2}(\mathbb{C})$ is inner, so the conjugation descends to $\mathbb{B}$. The centralizer of a full system of matrix units is the centre. Each system is therefore conjugate to the standard one, and any two systems are conjugate to each other; the unit is unique up to the centre.</p>
+<p><strong>Proof.</strong> For two systems of the same family, the two bases differ by the gauge of §<em>The Indefinite Form</em>, and that gauge is conjugation by $U=t_{+}\tilde\Pi_{\mathrm{id},+}+t_{-}\tilde\Pi_{\mathrm{id},-}$; the conjugating unit is unique up to a common scalar, that is up to the centre. For two systems of different families, pass to the matrix model. A nontrivial idempotent of $M_{2}(\mathbb{C})$ is a rank-one projection; choose a basis of $\mathbb{C}^{2}$ in which its image is the first coordinate line and its kernel the second. The projection is then $E_{11}$, and the mixed units are determined up to the diagonal torus. Every automorphism of $M_{2}(\mathbb{C})$ is inner, so the conjugation descends to $\mathbb{B}$. The centralizer of a full system of matrix units is the centre. Each system is therefore conjugate to the standard one, and any two systems are conjugate to each other; the unit is unique up to the centre.</p>
 <h2 id="dimensions">Dimensions</h2>
 <p><strong>The family.</strong> A nondegenerate family is the same data as a nontrivial idempotent, by <em>Peirce Decompositions of the Biquaternion Algebra</em>, §<em>From One Idempotent to Its Complement</em>. In the matrix model a nontrivial idempotent is a rank-one projection: its image is a line, of one complex parameter, and its kernel is a complementary line, of one complex parameter. The family therefore has complex dimension two, that is real dimension four.</p>
 <p><strong>The basis.</strong> Fix the family. A basis is a nonzero element of one mixed line, by §<em>Existence: The Nilpotent Route</em>. A complex line with its zero removed has complex dimension one, that is real dimension two. The basis is the family together with this point, so the basis space has real dimension $4+2=6$.</p>

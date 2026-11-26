@@ -218,7 +218,7 @@ grep -rhoiE ']\([^)]*gauge[^)]*\)' --include='*.md' articles_physics | grep -oi 
 <tr>
 <td>137</td>
 <td>34.0</td>
-<td>The Gauge Field Path Integral in Biquaternionic Form</td>
+<td>The Connection Path Integral in Biquaternionic Form</td>
 </tr>
 <tr>
 <td>120</td>
@@ -475,7 +475,7 @@ grep -rhoiE ']\([^)]*gauge[^)]*\)' --include='*.md' articles_physics | grep -oi 
 </thead>
 <tbody>
 <tr>
-<td>The Gauge Principle in Biquaternionic Form</td>
+<td>The Minimal Coupling in Biquaternionic Form</td>
 <td>Minimal Coupling: Why the Derivative Must Carry the Connection</td>
 <td>unchanged</td>
 </tr>
@@ -485,7 +485,7 @@ grep -rhoiE ']\([^)]*gauge[^)]*\)' --include='*.md' articles_physics | grep -oi 
 <td>unchanged</td>
 </tr>
 <tr>
-<td>Non-Abelian Gauge Fields in Biquaternionic Form</td>
+<td>Non-Abelian Connections in Biquaternionic Form</td>
 <td>Non-Abelian Connections in Biquaternionic Form</td>
 <td>unchanged</td>
 </tr>
@@ -671,10 +671,28 @@ grep -rhoiE ']\([^)]*gauge[^)]*\)' --include='*.md' articles_physics | grep -oi 
 <td>$300$ files, $2\,157$ lines, every table and heading broken</td>
 <td>a pass that rebuilds a file from a match iterator on <code>.*</code> <strong>doubles every newline</strong>. Split on <code>\n</code>, join on <code>\n</code>, and compare the <code>&lt;h2&gt;</code>/<code>&lt;h3&gt;</code>/<code>&lt;table&gt;</code> counts against <code>git show HEAD:file</code> after <strong>every</strong> batch. That comparison caught the damage and nothing else did</td>
 </tr>
+<tr>
+<td>19</td>
+<td>a <strong>title in italics</strong> and an emphasised lemma in italics look identical</td>
+<td>$90$ page-title spans rewritten in one pass, out of $134$ changed</td>
+<td>the mask cannot tell them apart, and neither can the eye at speed. <strong>After every batch, diff every italic span against the previous commit</strong> and revert the ones whose text changed, keeping only the lemmas the pass meant to rewrite</td>
+</tr>
+<tr>
+<td>20</td>
+<td>the mask itself has to be checked</td>
+<td><code>**bold**</code> matched as an empty italic span; three files ended a pass holding a placeholder where a link target had been</td>
+<td>mask <strong>bold first</strong>, then italics with a <strong>non-empty body</strong>, and grep the result for the placeholder character. <strong>A masking bug is silent</strong>: the text looks right and the link is gone</td>
+</tr>
+<tr>
+<td>21</td>
+<td>the repository commits on its own</td>
+<td><code>ai-research-unit Update</code>, one such commit landed between batch 6 and the title repair</td>
+<td>a batch verified only at the end <strong>can be published mid-failure</strong>. Verify before the next write, not after the last one: the check of §10 belongs after every file, not after every batch</td>
+</tr>
 </tbody>
 </table></div>
-<p><strong>The nineteenth is not a trap but a discipline, and it is the one that matters.</strong> In <em>the-Centre</em> article the sentence <em>The spin $\mathbb{Z}_2$ is gauged, not superselecting</em> was ungrammatical before the pass and grammatical after it. <strong>A substitution that repairs the sentence is evidence the word was never doing work there.</strong> A substitution that requires a new clause is evidence the word was — and that site goes to the register of §6.5, not to the noun map.</p>
-<p><strong>Measured, after two mechanical passes and the repairs they needed.</strong> <code>articles_physics</code> stands at <strong>$6\,200 \rightarrow 2\,815$</strong>, with $333$ files edited and $3\,385$ occurrences removed. The residue of $2\,815$ classifies as:</p>
+<p><strong>The twenty-second is not a trap but a discipline, and it is the one that matters.</strong> In <em>the-Centre</em> article the sentence <em>The spin $\mathbb{Z}_2$ is gauged, not superselecting</em> was ungrammatical before the pass and grammatical after it. <strong>A substitution that repairs the sentence is evidence the word was never doing work there.</strong> A substitution that requires a new clause is evidence the word was — and that site goes to the register of §6.5, not to the noun map.</p>
+<p><strong>Measured, after two mechanical passes and the repairs they needed.</strong> <code>articles_physics</code> stands at <strong>$6\,200 \rightarrow 2\,919$</strong>, with $333$ files edited and $3\,281$ occurrences removed. The figure rose by $104$ between the two measurements, and the reason is trap 19: $90$ title spans had been rewritten and the repair put the word back. The residue of $2\,815$ classifies as:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -686,17 +704,17 @@ grep -rhoiE ']\([^)]*gauge[^)]*\)' --include='*.md' articles_physics | grep -oi 
 <tbody>
 <tr>
 <td>prose</td>
-<td>$1\,635$</td>
+<td>$1\,631$</td>
 <td>the reading list, one sentence at a time</td>
 </tr>
 <tr>
 <td>a page-title handle</td>
-<td>$412$</td>
+<td>$520$</td>
 <td>frozen until Stage C, and <strong>larger than §2 implied</strong></td>
 </tr>
 <tr>
 <td>a link target</td>
-<td>$393$</td>
+<td>$392$</td>
 <td>frozen, a permanent address</td>
 </tr>
 <tr>
@@ -716,14 +734,15 @@ grep -rhoiE ']\([^)]*gauge[^)]*\)' --include='*.md' articles_physics | grep -oi 
 </tr>
 </tbody>
 </table></div>
-<p><strong>The census of §2 is not revised here.</strong> It describes the corpus before the pass and it is what the estimate was built on; §11 records the count after each batch. <strong>The title-handle pool is the one number that moved against the estimate</strong>: §6.3 counted $206$ link targets and $153$ citation lines and treated titles as $32$ page names, but a page name recurs in prose, and it recurs $412$ times. Stage C therefore renames a title and sweeps its handles in one commit, or it does not rename.</p>
+<p><strong>The census of §2 is not revised here.</strong> It describes the corpus before the pass and it is what the estimate was built on; §11 records the count after each batch. <strong>The title-handle pool is the one number that moved against the estimate</strong>: §6.3 counted $206$ link targets and $153$ citation lines and treated titles as $32$ page names, but a page name recurs in prose, and it recurs <strong>$520$ times</strong>. Stage C therefore renames a title and sweeps its handles in one commit, or it does not rename.</p>
 <p><strong>What the map bought, and what it cost.</strong> It is right for the six largest families — <em>invariant</em>, <em>field</em>, <em>transformation</em>, <em>group</em>, <em>symmetry</em>, <em>freedom</em> — and it took them out of the prose almost entirely: $364$ <em>gauge-invariant</em>, $278$ <em>gauge field</em>, $277$ <em>gauge transformation</em>, $244$ <em>gauge group</em>, $129$ <em>gauge freedom</em> in one pass. It is wrong wherever the word names <strong>a class</strong> (<em>gauge theory</em>, <em>gauge coupling</em>), <strong>a count</strong> (<em>gauge direction</em>), or <strong>a factor</strong> (<em>gauge factor</em>), and each of those three produced a false sentence that had to be reverted.</p>
-<p><strong>Four of the eighteen traps were created by the pass itself</strong> — 14, 15, 16, 17 — and one, 18, was created by the script that applied it. That is the ratio to expect from a mechanical pass: it is fast, and it invents its own failure modes. <strong>The corpus found eleven; the keyboard found seven.</strong></p>
-<p><strong>The tail, re-measured.</strong> $1\,635$ prose sites in $341$ files; the largest is <em>Gauge-Fixing in the Electroweak Theory</em> at $40$, the median near $4$, and the last hundred files hold one or two each. <strong>The tail after the map is no longer a count problem — it is a reading problem</strong>, and it is now the same problem as Stage B, which is why §6.2's method takes over from here.</p>
+<p><strong>Six of the twenty-one traps were created by the pass itself</strong> — 14, 15, 16, 17 — and two, 18 and 20, by the script that applied it. That is the ratio to expect from a mechanical pass: it is fast, and it invents its own failure modes. <strong>The corpus found eleven; the keyboard found ten.</strong></p>
+<p><strong>The tail, re-measured.</strong> $1\,631$ prose sites in $348$ files; the largest is <em>Gauge-Fixing in the Electroweak Theory</em> at $40$, the median near $4$, and the last hundred files hold one or two each. <strong>The tail after the map is no longer a count problem — it is a reading problem</strong>, and it is now the same problem as Stage B, which is why §6.2's method takes over from here.</p>
 <h3 id="67-the-file-that-is-not-to-be-touched">6.7 The File That Is Not to Be Touched</h3>
 <p><strong><code>articles_physics/conceptual-conventions.md</code> carries $19$ occurrences and all nineteen are frozen by instruction.</strong> The file is not an article that uses the word. It is the article that states the defect: <em>The word "gauge" is doing too much work and carries 100 years of confusing baggage</em>, followed by a five-row table of what to write instead. <strong>Purging it would delete the finding and leave the purge without its argument.</strong></p>
 <p><strong>The rule, and it is written into every script as an exclusion by filename.</strong> Nothing in the file is renamed — not the heading <code>## Unpreferred Concepts</code>, not the table rows, not the italic <em>gauge</em> in the sentence that names the word. The file is in the frozen column of §6.5 and it is not counted as a failure or a success.</p>
 <p><strong>One operational reason, beyond the argument.</strong> The file is untracked in git. A <code>git checkout</code> sweep does not restore it, and an edit to it cannot be undone from history. <strong>A frozen file with no history is a file that must be excluded before the pass starts, not repaired after it.</strong></p>
+<p><strong>And a fourth file, not frozen but broken.</strong> Three articles in the collection — <em>The Nonlinear Sigma Model</em>, <em>The Two Scales of the Field</em>, <em>Meson Mixing</em> — carry a NUL placeholder where a link target used to be, and the damage is older than this pass: it is in <code>HEAD</code>. <strong>It is the failure mode of trap 20, committed by an earlier session.</strong> The link text survives and the target does not; <code>grep -c $'\x00'</code> finds them in one line, and a link check does not, because a NUL is not a link. They are recorded here and left alone: repairing them means reconstructing three targets, which is a separate job.</p>
 <p><strong>A conflict, recorded and not resolved here.</strong> The file's replacement table proposes the <strong>frame</strong> vocabulary: <em>local frame rotation</em>, <em>choice of frame</em>, <em>frame-rotation group</em>. §5 measured that <em>frame</em> already means the observer's frame $6\,924$ times in this corpus, and rejected the word on that collision. <strong>The two cannot both stand.</strong> Until the author decides, the tail pass uses the two words of that table that survive §5 — <em>connection</em> and <em>local transformation</em> — and it does not write <em>frame</em> anywhere. <strong>This is a decision above the pass, and the pass does not take it.</strong></p>
 <h3 id="65-strategy-e-what-stays-and-why">6.5 Strategy E — What Stays, and Why</h3>
 <p><strong>Three kinds of site are frozen and are not counted as failures:</strong></p>
@@ -824,7 +843,7 @@ grep -rhoiE ']\([^)]*gauge[^)]*\)' --include='*.md' articles_physics | grep -oi 
 <td>A′</td>
 <td>the six largest families, table-driven, $333$ files</td>
 <td>$6\,022$</td>
-<td>$2\,815$ — the residue of §6.6</td>
+<td>$2\,919$ — the residue of §6.6, after the title repair</td>
 <td>two passes, $2\,433$ lines edited</td>
 </tr>
 <tr>
@@ -911,8 +930,9 @@ $$</p>
 <p>| 5 | $301$ | $2\,912$ | $3\,110$ | $0$ |
 | 6 | $121$ | $295$ | $2\,815$ | $0$ |
 | — | $302$ | <em>failed</em> | structure destroyed, reverted, $0$ kept | $0$ |
-| — | $44$ | $0$ — repairs only | $2\,815$ | $0$ |</p>
-<p><strong>Corpus after six batches: $2\,815$ occurrences in $341$ files</strong>, from $6\,200$ in $403$; $333$ files edited. Batches 5 and 6 are the mechanical passes of §6.6; the two repair rows are the agreement pass of trap 14 and the doubled-word pass of trap 15.</p>
+| — | $44$ | $0$ — repairs only | $2\,815$ | $0$ |
+| — | $118$ | $0$ — $90$ titles put back | $2\,919$ | $0$ |</p>
+<p><strong>Corpus after six batches and four repairs: $2\,919$ occurrences in $348$ files</strong>, from $6\,200$ in $403$; $333$ files edited. Batches 5 and 6 are the mechanical passes of §6.6; the two repair rows are the agreement pass of trap 14 and the doubled-word pass of trap 15.</p>
 <p><strong>One batch was applied and thrown away.</strong> It edited $2\,157$ lines in $302$ files and broke the line structure of every one of them — trap 18. <strong>Nothing of it survived except the lesson</strong>, and the lesson is the only reason it is in the ledger. Every edited file renders with the same heading and table counts as before, and no link target in them is dead.</p>
 <p><strong>Three traps the tail holds, all found in the first twenty lines of work.</strong></p>
 <ol>

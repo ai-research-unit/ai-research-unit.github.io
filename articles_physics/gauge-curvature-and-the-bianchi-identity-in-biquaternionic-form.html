@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gauge Curvature and the Bianchi Identity in Biquaternionic Form — Biquaternion Universe</title>
-  <meta name="description" content="The companion article The Covariant Derivative and Gauge Connection in Biquaternionic Form recorded the identity in the abelian sector and closed by…">
+  <title>Connection Curvature and the Bianchi Identity in Biquaternionic Form — Biquaternion Universe</title>
+  <meta name="description" content="The companion article The Covariant Derivative and Connection in Biquaternionic Form recorded the identity in the abelian sector and closed by naming the…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -69,9 +69,9 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form"><strong>Gauge Curvature and the Bianchi Identity in Biquaternionic Form</strong></h1>
+        <h1 id="connection-curvature-and-the-bianchi-identity-in-biquaternionic-form"><strong>Connection Curvature and the Bianchi Identity in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The companion article <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em> recorded the identity $[D_{\imath}, D_{\jmath}] =\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$ in the abelian sector and closed by naming the biquaternion form of that identity as the subject of a planned companion. The companion <em>Non-Abelian Gauge Fields in Biquaternionic Form</em> let the connection take values in the vector part of the material sector, $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\} = \mathrm{SU}(2)$, and recorded in a single section that the curvature is the commutator of covariant derivatives and that the Bianchi identity follows from the Jacobi identity. This article takes those two statements as its whole subject and develops them.</p>
+<p>The companion article <em>The Covariant Derivative and Connection in Biquaternionic Form</em> recorded the identity $[D_{\imath}, D_{\jmath}] =\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$ in the abelian sector and closed by naming the biquaternion form of that identity as the subject of a planned companion. The companion <em>Non-Abelian Connections in Biquaternionic Form</em> let the connection take values in the vector part of the material sector, $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\} = \mathrm{SU}(2)$, and recorded in a single section that the curvature is the commutator of covariant derivatives and that the Bianchi identity follows from the Jacobi identity. This article takes those two statements as its whole subject and develops them.</p>
 <p>Two structural claims organise it.</p>
 <ul>
 <li><strong>The curvature is the failure of covariant derivatives to commute, and the commutator reduces to the algebra.</strong> The object $[D_{\imath},D_{\jmath}]$ is a priori a commutator of first-order differential operators — equivalently, in a matrix representation, a commutator of matrices acting on a module. It is not an element of $\mathbb{B}$; the operators $D_{\imath}$ are not either. The content is that the commutator is first order with <em>no derivative at all</em>: it is multiplication by the single element $i\kappa F_{\imath\jmath}$ of $\mathbb{B}$, whose non-abelian part is the algebra commutator $[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$. An infinite-dimensional operator commutator localises on the finite-dimensional algebra. That is the reduction.</li>
@@ -113,7 +113,7 @@ $$
 \qquad
 F_{\imath\jmath} = \partial/\partial R_{\imath}\,\mathcal{A}_{\jmath} - \partial/\partial R_{\jmath}\,\mathcal{A}_{\imath} + i\kappa\,[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}] \in \mathrm{SU}(2)\oplus i\,\mathrm{SU}(2) = \mathrm{SL}(2,\mathbb{C}).
 $$
-Acting on any field, $[D_{\imath},D_{\jmath}]\tilde{Ξ} = i\kappa\,F_{\imath\jmath}\tilde{Ξ}$. The commutator of the two first-order operators is therefore not a second-order operator and not even a first-order one: it has no derivative at all. It is <strong>multiplication by an element of the finite-dimensional algebra</strong> $\mathbb{B}$. This was recomputed exactly on generic non-commuting, position-dependent connections, for all six independent index pairs, with the residual identically zero; and the zeroth-order character was checked separately by verifying $[D_{\imath},D_{\jmath}](f\tilde{Ξ}) = f\,[D_{\imath},D_{\jmath}]\tilde{Ξ}$ for an arbitrary scalar function $f$.</p>
+Acting on any field, $[D_{\imath},D_{\jmath}]\tilde{Ξ} = i\kappa\,F_{\imath\jmath}\tilde{Ξ}$. The commutator of the two first-order operators is therefore not a second-order operator and not even a first-order one: it has no derivative at all. It is <strong>multiplication by an element of the finite-dimensional algebra</strong> $\mathbb{B}$. This was recomputed exactly on generic non-commuting, position-dependent connections, for all six independent index pairs, with the residual identically zero; and the zeroth-order character was checked separately by verifying $[D_{\imath},D_{\jmath}0 = f\,[D_{\imath},D_{\jmath}]\tilde{Ξ}$ for an arbitrary scalar function $f$.</p>
 <p>Two immediate properties fix the index structure.</p>
 <ul>
 <li><strong>Antisymmetry.</strong> $F_{\imath\jmath} = -F_{\jmath\imath}$, because both the derivative terms and the algebra commutator are antisymmetric in $\mu\jmath$. The curvature is a two-form index pair carrying one adjoint (algebra) index; it is not a collection of independent numbers, and the antisymmetry is the statement that only six of the sixteen components are independent.</li>
@@ -146,7 +146,7 @@ F_{\mathrm g,\imath\jmath} = \tilde U\,F_{\imath\jmath}\,\tilde U^{-1},
 $$
 which was verified both for an infinitesimal local $\tilde U = e_t + \varepsilon g$ with $g\in\mathrm{SU}(2)$ and for a finite constant $SU(2)$ element; in each case the residual vanished exactly. The trace $\mathrm{Tr}(F_{\imath\jmath})$ is invariant — here it vanishes identically, since the curvature is valued in the derived algebra — but the component is not: it is rotated by the group, and only invariant polynomials in $F$ are observables. Here and below $\mathrm{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ factor, not the informational pairing formula.</p>
 <h2 id="the-covariant-derivative-on-the-curvature-two-sided-not-one-sided">The Covariant Derivative on the Curvature: Two-Sided, Not One-Sided</h2>
-<p>The curvature carries two gauge indices — in the matrix representation, two matrix indices — and the group acts on them two-sidedly, by conjugation. The same is true of the covariant derivative acting on the curvature: because $F_{\imath\jmath}$ is an algebra element in the adjoint representation, and not a matter field in the defining representation, its covariant derivative is not the left multiplication used above.</p>
+<p>The curvature carries two fixing condition indices — in the matrix representation, two matrix indices — and the group acts on them two-sidedly, by conjugation. The same is true of the covariant derivative acting on the curvature: because $F_{\imath\jmath}$ is an algebra element in the adjoint representation, and not a matter field in the defining representation, its covariant derivative is not the left multiplication used above.</p>
 <p>For any algebra-valued field $\tilde{Q}$, define
 $$
 D_{\imath} \tilde{Q} = \partial/\partial R_{\imath} \tilde{Q} + i\kappa\,[\mathcal{A}_{\imath}, \tilde{Q}],
@@ -240,7 +240,7 @@ and it is that derivation property — equivalently the Leibniz rule for $D_{\im
 <h2 id="explicit-verification-on-a-non-abelian-connection">Explicit Verification on a Non-Abelian Connection</h2>
 <p>Everything above was checked by explicit substitution on $\mathrm{SU}(2)$ with the non-commuting generators $\vec e_x,\vec e_y,\vec e_z$ and the rule $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$, on connections with generic real polynomial coefficients in all four components. The following were confirmed.</p>
 <ul>
-<li><strong>The reduction.</strong> $[D_{\imath},D_{\jmath}]\tilde{Ξ} = i\kappa F_{\imath\jmath}\tilde{Ξ}$ for all six independent index pairs, and the commutator is zeroth order, $[D_{\imath},D_{\jmath}](f\tilde{Ξ}) = f[D_{\imath},D_{\jmath}]\tilde{Ξ}$.</li>
+<li><strong>The reduction.</strong> $[D_{\imath},D_{\jmath}]\tilde{Ξ} = i\kappa F_{\imath\jmath}\tilde{Ξ}$ for all six independent index pairs, and the commutator is zeroth order, $[D_{\imath},D_{\jmath}0 = f[D_{\imath},D_{\jmath}]\tilde{Ξ}$.</li>
 <li><strong>The Bianchi identity.</strong> The cyclic sum vanishes identically for all $64$ ordered triples, with individual terms of order unity, so the vanishing is a genuine cancellation and not a sum of zeros.</li>
 <li><strong>The Jacobi identification.</strong> The operator Jacobi sum equals $i\kappa$ times the Bianchi cyclic sum identically, and the three term classes of the coordinate proof (second derivatives, derivative-of-commutator, nested commutators) each vanish for the stated reason.</li>
 <li><strong>The non-vacuity controls.</strong> The wrong cyclic order is generically nonzero; the one-sided replacement $\partial/\partial R_{\imath} F_{\imath\jmath}+i\kappa\mathcal{A}_{\imath} F_{\imath\jmath}$ gives a generically nonzero cyclic sum; and $F_{\imath\jmath}$ differs from $i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$ for position-dependent connections.</li>
@@ -425,14 +425,14 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a> — the immediate parent; its abelian commutator identity $[D_{\imath},D_{\jmath}]=\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$ and its deferral of the Bianchi identity to this article.</li>
-<li><a href="non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a> — the non-abelian connection, the transformation law, the adjoint curvature, and the compactness gap this article inherits unchanged.</li>
-<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a> — the origin of the connection, the covariant derivative, and the curvature; the source of the remark that the homogeneous equations are the Bianchi identity of the connection.</li>
+<li><a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Connection in Biquaternionic Form</a> — the immediate parent; its abelian commutator identity $[D_{\imath},D_{\jmath}]=\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$ and its deferral of the Bianchi identity to this article.</li>
+<li><a href="non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Connections in Biquaternionic Form</a> — the non-abelian connection, the transformation law, the adjoint curvature, and the compactness gap this article inherits unchanged.</li>
+<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Minimal Coupling in Biquaternionic Form</a> — the origin of the connection, the covariant derivative, and the curvature; the source of the remark that the homogeneous equations are the Bianchi identity of the connection.</li>
 <li><a href="the-field-strength-biquaternion-and-its-invariants.html">The Field-Strength Biquaternion and Its Invariants</a> — the abelian field strength, its pure-vector character, and the biquaternion-norm apparatus that the non-abelian extension does not yet reproduce.</li>
 <li><a href="maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a> — the abelian field equation $\tilde\nabla_\Phi\tilde{F}=-Z\tilde{J}_{\Phi}$ whose homogeneous part is the Bianchi identity.</li>
 <li><a href="../articles_maths/lie-algebras-a-general-introduction.html">Lie Algebras: A General Introduction</a> — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.</li>
-<li><a href="curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> — the two-sided gravitational connection $D_{\imath}\tilde{Q}=\partial/\partial R_{\imath}\,\tilde{Q}+\vec\Gamma_{\imath}\tilde{Q}+\tilde{Q}\vec\Gamma_{\imath}^{*}$, distinct from the one-sided gauge connection of this article.</li>
-<li><a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a> — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.</li>
+<li><a href="curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> — the two-sided gravitational connection $D_{\imath}\tilde{Q}=\partial/\partial R_{\imath}\,\tilde{Q}+\vec\Gamma_{\imath}\tilde{Q}+\tilde{Q}\vec\Gamma_{\imath}^{*}$, distinct from the one-sided connection of this article.</li>
+<li><a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a> — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the algebra rests.</li>
 <li><a href="states-observables-and-the-born-weight.html">States, Observables and the Born Weight</a> — the Hermitian sector and the pairing formula distinguished here from the matrix trace.</li>
 <li><a href="algebra-and-element-conventions.html">Conventions in the Biquaternion Universe</a> and <a href="../articles_maths/quaternion-algebra.html">Quaternion Algebra</a> — the multiplication rule, the conjugations, and the centre used throughout.</li>
 </ul>

@@ -76,8 +76,8 @@
 <p>The article is organized as follows. The holonomy is defined for the abelian and the non-abelian cases and its local transformation is computed. The local invariance of the trace is verified, together with the abelian Stokes relation that equates the loop integral to the enclosed flux, and the non-abelian statement that the holonomy transforms by conjugation at the base point. The small-loop expansion is given, in which the loop exponentiates the field strength and the two Lorentz invariants of the Maxwell field appear as the real and imaginary scalar parts of $\tilde{F}^2$. The loop's role as an observable — its expectation value, the perimeter and area laws, and the rectangular-loop potential — is then stated, and the loop equation is recorded. The article closes with the accounting of what the algebra supplies and what is imported.</p>
 <ul>
 <li>Companion article <em>Canonical Quantization of the Biquaternion Maxwell Field</em>, for the connection, the constraint structure, and the transverse polarizations that the loop's small-expansion probes.</li>
-<li>Companion article <em>Non-Abelian Gauge Fields in Biquaternionic Form</em>, for the non-abelian connection, the field strength, and the generators realized in the informational sector.</li>
-<li>Companion article <em>The Gauge Principle in Biquaternionic Form</em>, for the local transformation and the covariant derivative.</li>
+<li>Companion article <em>Non-Abelian Connections in Biquaternionic Form</em>, for the non-abelian connection, the field strength, and the generators realized in the informational sector.</li>
+<li>Companion article <em>The Minimal Coupling in Biquaternionic Form</em>, for the local transformation and the covariant derivative.</li>
 <li>Companion article <em>The Photon in Biquaternionic Form</em>, for the massless one-particle state.</li>
 </ul>
 <h2 id="the-holonomy-of-the-connection">The Holonomy of the Connection</h2>
@@ -96,7 +96,7 @@ W(C) = \mathrm{Tr}\,\mathcal{P}\exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\
 = \mathrm{Tr}\,\mathcal{P}\exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath,a}\varepsilon_{\imath} A_{\imath a} T_a\,dx_{\imath}\right),
 $$</p>
 <p>where the generators $T_a$ are realized in the informational sector of the algebra. Without the trace, the holonomy is a group element $U(C)=\mathcal{P}\exp(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath})$; with the trace it is an invariant number. In the quaternion realization the generators are the imaginary units $i\vec e_a$, the group element is a unit quaternion $Q$, and the trace is $2Q_t$ — twice the scalar part. The Wilson loop is therefore, in the framework's own terms, the scalar part of the holonomy element of the informational sector, and the connection whose holonomy it is lies in the material sector. The loop is a bilinear object that joins the two sectors.</p>
-<h2 id="gauge-invariance-and-stokes-theorem">Gauge Invariance and Stokes' Theorem</h2>
+<h2 id="local-invariance-and-stokes-theorem">Local Invariance and Stokes' Theorem</h2>
 <h3 id="the-abelian-case">The Abelian Case</h3>
 <p>Under a local transformation $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, the line integral changes by</p>
 <p>$$
@@ -146,7 +146,7 @@ $$</p>
 <p>$$
 J_{\imath}(x) = \oint_C dx_{\imath}\;\delta^{(4)}(x-z(\tau)),
 $$</p>
-<p>the gauge-fixed Gaussian average gives</p>
+<p>the fixed-representative Gaussian average gives</p>
 <p>$$
 \langle W(C)\rangle = \left\langle\exp\left(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath}\right)\right\rangle
 = \exp\left(-\frac{i}{2}\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}\oint_C dx_{\imath}\oint_C dy_{\jmath}\;D_{\imath\jmath}(x-y)\right),
@@ -181,7 +181,7 @@ $$</p>
 <p>$$
 \boxed{\;\langle W(C)\rangle \sim \exp(-\sigma\,\mathrm{area}(C))\;},
 $$</p>
-<p>is the behaviour of a confining phase, where a flux tube forms and the coefficient $\sigma$ is the string tension. The rectangular loop of width $L$ and time extent $T$ gives the static potential between two heavy sources through $\langle W(C)\rangle\sim \exp(-iT\,V(L))$, so that an area law corresponds to a linearly rising $V(L)=\sigma L$ and a perimeter law to a screened potential. These statements are standard and are the reason the Wilson loop is the natural order parameter of the gauge theory; the lattice regularization in which the area law is established and the strong-coupling expansion that produces it belong to the companion subcategory on connections and are not repeated here.</p>
+<p>is the behaviour of a confining phase, where a flux tube forms and the coefficient $\sigma$ is the string tension. The rectangular loop of width $L$ and time extent $T$ gives the static potential between two heavy sources through $\langle W(C)\rangle\sim \exp(-iT\,V(L))$, so that an area law corresponds to a linearly rising $V(L)=\sigma L$ and a perimeter law to a screened potential. These statements are standard and are the reason the Wilson loop is the natural order parameter of the connection theory; the lattice regularization in which the area law is established and the strong-coupling expansion that produces it belong to the companion subcategory on connections and are not repeated here.</p>
 <h3 id="the-rectangular-loop-and-the-static-potential">The Rectangular Loop and the Static Potential</h3>
 <p>The most common loop is the rectangle of spatial width $L$ and temporal extent $T$, with $T\gg L$. For large $T$ the expectation value exponentiates the energy of the state that the loop creates,</p>
 <p>$$
@@ -212,7 +212,7 @@ $$</p>
 <h2 id="the-loop-the-two-sectors-and-the-algebra">The Loop, the Two Sectors, and the Algebra</h2>
 <p>The constructions of this article can be collected into a single statement about the framework. A Wilson loop is built from three operations, and each of them is an operation the algebra already provides.</p>
 <p>The first is the integration of a <strong>material</strong> one-form along a curve: the holonomy's logarithm, $\oint\sum_{\imath}\varepsilon_{\imath}\tilde{A}_{\Phi,\imath} dx_{\imath}$, is an element built from the material sector. The second is the <strong>exponentiation</strong> of that element into the group generated by the informational realization of the algebra; for $\mathrm{SU}(2)$ that group is the unit quaternions, and the exponentiation is the usual exponential of an imaginary quaternion, an element of $\mathbb{B}_{\Psi}$. The third is the <strong>trace</strong>, which in the quaternion realization is twice the scalar part; it is the operation that turns the group element into an invariant number. The loop is therefore the scalar part of the holonomy of a material connection in an informational group element, and its local invariance is the invariance of the scalar part under the adjoint action.</p>
-<p>Three consequences are worth stating separately. The untraced holonomy is an element of $\mathbb{B}_{\Psi}$ — a unit quaternion — and is not invariant; it transforms by the adjoint action, which is the conjugation of a quaternion by another. The traced loop is invariant because the scalar part is what the adjoint action preserves. And the abelian loop is the degenerate case in which the group element lies in the centre, so that the holonomy is a phase and the trace is trivial. The framework thus orders the three cases — central, adjoint, and the general representation — by the sector in which the group element lies, and the Wilson loop of a given gauge theory is a trace over exactly one of them.</p>
+<p>Three consequences are worth stating separately. The untraced holonomy is an element of $\mathbb{B}_{\Psi}$ — a unit quaternion — and is not invariant; it transforms by the adjoint action, which is the conjugation of a quaternion by another. The traced loop is invariant because the scalar part is what the adjoint action preserves. And the abelian loop is the degenerate case in which the group element lies in the centre, so that the holonomy is a phase and the trace is trivial. The framework thus orders the three cases — central, adjoint, and the general representation — by the sector in which the group element lies, and the Wilson loop of a given connection theory is a trace over exactly one of them.</p>
 <h2 id="what-the-algebra-supplies-and-what-it-imports">What the Algebra Supplies and What It Imports</h2>
 <p><strong>Supplied by the algebra, and recomputed here.</strong> The connection as a material-sector one-form and the holonomy as an element of the informational realization of the symmetry group; the trace of the holonomy as a scalar part, which is what makes the Wilson loop a number; the invariance of the abelian loop under the gradient shift, verified; the abelian Stokes relation between the loop and the enclosed flux, verified on a small plaquette; the conjugation transformation of the non-abelian holonomy and the invariance of twice its scalar part, verified for the quaternion realization; the small-loop expansion, verified to be the exponentiated field strength; and the centrality of $\tilde{F}^2$, whose two scalar parts are the two Lorentz invariants of the Maxwell field, verified in the $2\times2$ representation.</p>
 <p><strong>Imported, and left visible.</strong> The Wilson loop as an observable and its standard interpretation; the path-ordered exponential and the holonomy's transformation law; the area and perimeter laws and the string tension; the relation of the rectangular loop to the static potential; the lattice regularization and the strong-coupling argument that establishes confinement; the loop equation and the factorization assumption needed to close it; and the renormalization of the loop's perimeter divergence, which standard treatments handle with a mass renormalization of the external sources.</p>
@@ -235,7 +235,7 @@ $$</p>
 <p><strong>The perimeter divergence and the two sectors.</strong> The perimeter divergence of the loop is absorbed by a renormalization of the external sources, which live on the loop. Does the sector split offer a natural regularization of the divergence, or is it entirely a property of the sources?</p>
 </li>
 <li>
-<p><strong>Empirical content.</strong> As everywhere, whether any of this yields a prediction distinguishing the framework from standard gauge theory. The transcription given here does not.</p>
+<p><strong>Empirical content.</strong> As everywhere, whether any of this yields a prediction distinguishing the framework from standard connection theory. The transcription given here does not.</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
@@ -245,7 +245,7 @@ $$</p>
 <p>$$
 \tilde{F}^2=\left(|\vec E|^2-|\vec H|^2\right)e_t+2i\,\vec E\cdot\vec H\,e_t ,
 $$</p>
-<p>verified in the $2\times2$ representation, so that the two Lorentz invariants of the Maxwell field are the real and imaginary scalar parts of the single element $\tilde{F}^2$. The quantum loop $\langle W(C)\rangle$ is the order parameter of the gauge theory: a perimeter law signals screening and an area law confinement, with the rectangular loop giving the static potential. The loop equation is the Schwinger–Dyson constraint on the loop, standard and cited. What the algebra supplies is the carrier, the holonomy's group element, the trace as a scalar part, the conjugation law, the small-loop expansion, and the central element $\tilde{F}^2$; what it does not supply is the symmetry group, the string tension, the lattice regularization, or any empirical content.</p>
+<p>verified in the $2\times2$ representation, so that the two Lorentz invariants of the Maxwell field are the real and imaginary scalar parts of the single element $\tilde{F}^2$. The quantum loop $\langle W(C)\rangle$ is the order parameter of the connection theory: a perimeter law signals screening and an area law confinement, with the rectangular loop giving the static potential. The loop equation is the Schwinger–Dyson constraint on the loop, standard and cited. What the algebra supplies is the carrier, the holonomy's group element, the trace as a scalar part, the conjugation law, the small-loop expansion, and the central element $\tilde{F}^2$; what it does not supply is the symmetry group, the string tension, the lattice regularization, or any empirical content.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -326,7 +326,7 @@ $$</p>
 <li>Kenneth G. Wilson, "Confinement of Quarks," <em>Physical Review D</em> <strong>10</strong> (1974) 2445–2459, for the Wilson loop and the area law as the confinement criterion.</li>
 <li>Alexander M. Polyakov, <em>Gauge Fields and Strings</em> (Harwood, 1987), for the loop equation, the area law, and the string picture of confinement.</li>
 <li>Yu. M. Makeenko and A. A. Migdal, "Exact Equation for the Loop Average in Multicolor QCD," <em>Physics Letters B</em> <strong>88</strong> (1979) 135–137, for the loop equation and its large-$N$ closure.</li>
-<li>John B. Kogut, "An Introduction to Lattice Gauge Theory and Spin Systems," <em>Reviews of Modern Physics</em> <strong>51</strong> (1979) 659–713, for the lattice formulation in which the area law is established.</li>
+<li>John B. Kogut, "An Introduction to Lattice Connection theory and Spin Systems," <em>Reviews of Modern Physics</em> <strong>51</strong> (1979) 659–713, for the lattice formulation in which the area law is established.</li>
 <li>Michael E. Peskin and Daniel V. Schroeder, <em>An Introduction to Quantum Field Theory</em> (Addison-Wesley, 1995), for the Wilson loop, the static potential, and the renormalization of the perimeter divergence.</li>
 <li>Steven Weinberg, <em>The Quantum Theory of Fields, Vol. II: Modern Applications</em> (Cambridge, 1996), for the non-abelian holonomy and its transformation law.</li>
 <li>Gerard 't Hooft, "On the Phase Transition Towards Permanent Quark Confinement," <em>Nuclear Physics B</em> <strong>138</strong> (1978) 1–25, for the confinement criterion and the behaviour of the loop in the different phases.</li>
