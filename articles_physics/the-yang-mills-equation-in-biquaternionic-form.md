@@ -9,7 +9,7 @@ F_{\imath\jmath} = \partial/\partial R_{\imath} \mathcal{A}_{\jmath} - \partial/
 \qquad [D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath},
 $$
 
-and records, in its discussion of the Yang–Mills action, that the source-free field equation is $\sum_{\imath} D_{\imath} F_{\imath\jmath} = 0$ "in place of the abelian $\sum_{\imath}\partial/\partial R_{\imath} F_{\imath\jmath} = 0$". It does not develop that equation: the sourced equation, the current that appears on its right-hand side, and the conservation law that current obeys are all left open. This article takes them up.
+and records, in its discussion of the Yang–Mills action, that the source-free field equation is $\sum_{\imath} D_{\imath} F_{\imath\jmath} = 0$ "in place of the abelian $\sum_{\imath}\partial/\partial R_{\imath} F_{\imath\jmath} = 0$". It does not develop that equation: the sourced equation, the current that appears on its right-hand side, and the conservation law that current obeys are all left open. This article takes them up. It also takes up the functional whose variation produces the equation. A field equation met without the action behind it gives no reason to believe it is an equation of motion rather than an identity, so the former companion on the non-abelian Lagrangian is folded into §*The Yang–Mills Action* and §*The Variation*.
 
 The Yang–Mills equation is the non-abelian generalisation of the Maxwell source equation,
 
@@ -28,7 +28,8 @@ with the covariant derivative $D_{\imath} = \partial/\partial R_{\imath} + i\kap
 The division between what is established and what is interpretation is kept explicit.
 
 - **Established, and recomputed below.** The curvature identity $[D_{\imath},D_{\jmath}] = i\kappa F_{\imath\jmath}$; the Bianchi identity $D_{\imath} F_{\imath\jmath} + D_{\imath} F_{\jmath k} + D_{\jmath} F_{k\imath} = 0$; the Yang–Mills equation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = J_{\jmath}$ with the commutator term $i\kappa[\mathcal{A}_{\imath},F_{\imath\jmath}]$; the covariant conservation $\sum_{\imath} D_{\imath} J_{\imath} = 0$ and the failure of ordinary conservation; the reduction to Maxwell on a commuting generator set; and the adjoint transformation $J_{2,\jmath} = \tilde U J_{\jmath} \tilde U^{-1}$ of the source. Each was recomputed on a generic, non-constant $\mathrm{SU}(2)$-valued connection — all three generators, non-commuting — at four generic points, by exact polynomial arithmetic; no claim below rests on the abelian case.
-- **Interpretation.** Reading $\sum_{\imath} D_{\imath} F_{\imath\jmath}$ as the conserved current of a non-abelian connection, and the field equation as the Euler–Lagrange equation of $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$, is the standard interpretation of the algebra, placed in the framework's notation. It is labelled as interpretation where it occurs.
+- **Established, and recomputed below: the action.** The density $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$, with $\mathrm{Tr}$ the matrix trace on the $\mathrm{SU}(2)$ factor, is invariant because the trace is cyclic, and it is *not* the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is not cyclic and would cost the invariance. Its variation is $\delta S_{\mathrm{YM}} = 2\int d^4r\,\mathrm{Tr}(\sum_{\jmath}\delta\mathcal{A}_{\jmath} D_{\imath}F_{\imath\jmath})$, so stationarity is the field equation. The constraints are first class and leave two polarizations per generator; the currents are covariantly conserved and their ordinary divergence is not zero; and the ceiling at $\mathrm{U}(1)\oplus\mathrm{SU}(2)$ is a property of the algebra and not of the density.
+- **Interpretation.** Reading $\sum_{\imath} D_{\imath} F_{\imath\jmath}$ as the conserved current of a non-abelian connection, and the density as the standard Yang–Mills action, is the standard interpretation of the algebra, placed in the framework's notation. It is labelled as interpretation where it occurs.
 - **Gaps and defects, left visible.** The biquaternion packaging of the curvature that the parent articles use, $\mathcal{F} = \tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$, does not inherit the adjoint transformation as a single algebra conjugation, and the naive product $\vec\nabla_\Phi\!\cdot\!(\sum_{\jmath} F_{\imath\jmath}e_{\jmath})$ is not the covariant divergence of the field equation; both are stated precisely and neither is smoothed over. The framework's inability to fix the fixing condition is inherited unchanged and bounds the whole construction; no representative is chosen anywhere below.
 
 ## The Non-Abelian Curvature and the Adjoint Covariant Derivative
@@ -80,6 +81,86 @@ $$
 $$
 
 It collects the six independent curvature components against the quaternion-basis products $\bar{e}_{\imath} e_{\jmath}$. What this object does and does not inherit under a local transformation is treated in its own section below; the reader should not assume that the componentwise transformation law $F_{\imath\jmath}\mapsto \tilde UF_{\imath\jmath}\tilde U^{-1}$ promotes to a single conjugation of $\mathcal{F}$.
+
+## The Yang–Mills Action
+
+The field equation this article is about is the stationarity condition of one functional. The functional settles three things the equation alone cannot: which pairing makes the density invariant, where the coupling sits, and why the theory is interacting. This section writes it, and §*The Variation* takes its derivative.
+
+**The density, and the invariance in one line.** With $\mathrm{Tr}$ the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ restricted to the $\mathrm{SU}(2)$ factor,
+
+$$
+\mathcal{L}=-\tfrac12\,\mathrm{Tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr),
+\qquad
+S_{\mathrm{YM}}=\int d^4r\;\mathcal{L}.
+$$
+
+The curvature rotates in the adjoint, $F_{\mathrm g,\imath\jmath}=\tilde QF_{\imath\jmath}\tilde Q^{-1}$, so the density is unchanged, and the reason is one line:
+
+$$
+\mathrm{Tr}\Bigl(\sum_{\imath,\jmath}F_{\mathrm g,\imath\jmath}F_{\mathrm g,\imath\jmath}\Bigr)
+=\mathrm{Tr}\Bigl(\sum_{\imath,\jmath}\bigl(\tilde QF_{\imath\jmath}\tilde Q^{-1}\bigr)\bigl(\tilde QF_{\imath\jmath}\tilde Q^{-1}\bigr)\Bigr)
+=\mathrm{Tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr).
+$$
+
+Two facts and nothing else are used: the adjoint law of the field strength, and the cyclicity of the trace. In the abelian case the adjoint law degenerates to invariance and cyclicity is not needed; here cyclicity is the whole of the invariance.
+
+**The trace is the matrix trace, and it is not the informational reduction.** The corpus carries a second two-slot functional, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, inherited from the plain form. It is not cyclic. Substituted into the density it would leave the action changed by a local transformation, and the theory would no longer be a connection theory: the transformation that the connection was introduced to make local would move the action. The two functionals agree when one slot is a scalar, and a curvature is not a scalar. [The Invariant Density: Which Pairing the Action Can Integrate](the-invariant-density-which-pairing-the-action-can-integrate.html) states the three requirements on a density, proves cyclicity is the whole of the invariance, and exhibits a pairing that fails it; the point is cited here rather than repeated, because it is a statement about the module and belongs to no sector.
+
+**Why this term and no other.** At dimension four the only invariant built from the curvature alone is its square. A cubic term does not exist, since the trace of an odd number of generators vanishes. A term carrying one derivative of the curvature has dimension five. The overall coefficient is then fixed by the normalisation of the generators and by nothing else, and the normalisations the corpus uses — $T_a=\tfrac12 e_a$, $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ — are the ones that make the coefficient $\tfrac12$.
+
+**Why the commutator makes the theory interacting.** In the abelian case the curvature is linear in the connection, and the density is quadratic. Here $F_{\imath\jmath}$ contains $i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$, which is quadratic in $\mathcal{A}$; squaring $F$ therefore produces cubic and quartic terms. Those are the connection's self-coupling. Nothing was added: the self-coupling is the square of a curvature that is itself non-linear, and that non-linearity is the statement that the group is non-abelian.
+
+**The reality and the sign.** The density must be a real scalar and its sign must leave the energy bounded below. Both follow from the Hermiticity type of the field and from the normalisation of the basis, and neither is an extra condition imposed on the action. [The Invariant Density](the-invariant-density-which-pairing-the-action-can-integrate.html) carries the argument and fixes $\tfrac12$ in the element form and $\tfrac14$ in the component form.
+
+**Where the coupling sits, and why it cannot be removed.** Rescaling $\mathcal{A}_{\imath}\to\mathcal{A}_{\imath}/\kappa$ moves the coupling out of the commutator and into the overall coefficient as $1/\kappa^{2}$; the two placements are one theory. What matters is which term carries the coupling relative to the other. In the abelian case the coupling multiplies the whole density and cancels from the equation. Here the commutator carries one power of the coupling and the derivative carries none, so the ratio of the two terms is physical, and that ratio is the coupling. This is the sharpest structural difference between the two theories, and it is the reason the non-abelian coupling runs while the abelian one does not.
+
+### The Two Settings
+
+**The element setting.** The density as $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ with $F$ an algebra element. The invariance is one line and the trace-versus-reduction distinction is visible; the vertices are not.
+
+**The component setting.** The same density with the structure constants written out,
+
+$$
+\mathcal{L}=-\tfrac14\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath},
+\qquad
+F_{a,\imath\jmath}=\partial/\partial R_{\imath}\mathcal{A}_{a,\jmath}-\partial/\partial R_{\jmath}\mathcal{A}_{a,\imath}+g\sum_{b,c}\varepsilon_{abc}\mathcal{A}_{b,\imath}\mathcal{A}_{c,\jmath},
+$$
+
+with the coupling $g$ absorbed into the normalisation of $\mathcal{A}_{a}$. The vertices are visible and the coupling's place in the commutator is visible; the local invariance is not.
+
+The two settings hide each other's strengths. The passage between them is the passage between the trace and the structure constants, through $[T_a,T_b]=\varepsilon_{abc}T_c$ with $T_a=\tfrac12 e_a$. They differ in the reality of the coupling: with $g$ real the curvature is anti-Hermitian and the density is a sum of squares, while the element setting above carries $i\kappa$ inside the commutator and a curvature in $\mathrm{SU}(2)\oplus i\,\mathrm{SU}(2)$. The trade of $g$ for $i\kappa$ changes no vertex and no equation. Both settings are one action read two ways, and the component setting is the one in which "the coupling is a number" is literal.
+
+## The Variation: The Equation from the Curvature's Square
+
+Vary the connection, $\mathcal{A}_{\imath}\mapsto\mathcal{A}_{\imath}+\delta\mathcal{A}_{\imath}$, with $\delta\mathcal{A}_{\imath}$ an $\mathrm{SU}(2)$-valued element that vanishes on the boundary. The variation of the curvature is the covariant derivative of the variation,
+
+$$
+\delta F_{\imath\jmath}=D_{\imath}\,\delta\mathcal{A}_{\jmath}-D_{\jmath}\,\delta\mathcal{A}_{\imath}.
+$$
+
+That display is the whole content of "the curvature is a tensor": the variation of a tensor is a tensor, and the derivative that appears is the covariant one. The commutator terms of $\delta F$ have combined into exactly this, which is why the connection's inhomogeneous transformation law and the curvature's homogeneous one are the same statement.
+
+**The variation of the action.** Substituting, using the antisymmetry of $F_{\imath\jmath}$ and the cyclicity of the trace, and integrating by parts with the boundary term dropped,
+
+$$
+\delta S_{\mathrm{YM}}
+=-\int d^4r\;\mathrm{Tr}\Bigl(\sum_{\imath,\jmath}\delta F_{\imath\jmath}\,F_{\imath\jmath}\Bigr)
+=2\int d^4r\;\mathrm{Tr}\Bigl(\sum_{\jmath}\delta\mathcal{A}_{\jmath}\,D_{\imath}F_{\imath\jmath}\Bigr).
+$$
+
+The factor two comes from the two ways the variation meets the two curvature slots, and the two ways are equal by the trace's symmetry. The derivative that has been moved onto $F$ is covariant, because the integration by parts on an adjoint-valued field must use the adjoint covariant derivative and not the ordinary one; using the ordinary derivative would leave a non-covariant boundary term.
+
+**The equation.** Stationarity for every $\delta\mathcal{A}_{\jmath}$ gives
+
+$$
+\boxed{\;\sum_{\imath}D_{\imath}F_{\imath\jmath}=0\;}
+$$
+
+the source-free Yang–Mills equation. Three things are worth separating in it. The derivative is covariant, so the equation is covariant. The contraction is between the derivative's index and the curvature's first index, which is the placement §*The Yang–Mills Equation* fixes from a different direction. And the equation is not the Bianchi identity: the Bianchi identity is an identity of any curvature, while this is a condition on the connection.
+
+**The variation is the derivative of the density, and the density is not the equation.** This is the place where the two orders can be confused. The density is quadratic in a curvature that is quadratic in the connection; its variation is linear in the variation and linear in the equation. The equation is therefore not "the density set to zero": a configuration whose density vanishes pointwise need not be stationary, and a solution need not have vanishing density. Nor is the equation obtained by reading coefficients off the Lagrangian, because the variation acts on the connection inside $F$ and not on $F$ itself.
+
+**The source.** Away from matter the equation is the one boxed above. With matter the right-hand side is a current, and the current is not an independent object: it is the covariant divergence of the curvature, defined so that the equation holds identically. §*The Yang–Mills Equation* defines it that way, and §*The Noether Currents* shows that the current of the global symmetry is the same object.
 
 ## The Yang–Mills Equation
 
@@ -170,6 +251,46 @@ The ordinary divergence does not vanish. For a generic non-abelian connection it
 
 **Consistency, not an extra condition.** In the abelian case the analogous statement $\sum_{\imath,\jmath}\partial/\partial R_{\jmath}\,\partial/\partial R_{\imath} F_{\imath\jmath} = 0$ is automatic, and charge conservation is recovered from the field equation rather than imposed. In the non-abelian case the same logic gives the covariant law; the current defined by the field equation is covariantly conserved automatically, and no independent condition on $\rho$ and $\vec J$ is added. In this sense $\sum_{\jmath} D_{\jmath} J_{\jmath} = 0$ is the integrability condition of the Yang–Mills system, exactly as ordinary conservation is the integrability condition of Maxwell's system.
 
+## The Constraints the Action Imposes: Gauss's Law and Two Polarizations
+
+**The time component is not an evolution equation.** Writing the source-free equation at $\jmath=0$,
+
+$$
+\sum_{j}D_{j}F_{j0}=0,
+$$
+
+gives an equation with no time derivative of $\mathcal{A}_{0}$: it constrains the connection at each instant. This is the non-abelian Gauss law. Every component of the equation with $\jmath$ spatial is second order in time and evolves the three spatial components of $\mathcal{A}_{\imath}$.
+
+**The count.** A first-class constraint removes two components per generator, one as the constraint and one as the redundancy that a local transformation still has after the constraint is imposed. The remaining two per generator are the transverse polarizations of a massless spin-one field. For $\mathrm{SU}(2)$ that is $3\times(4-2)=6$ physical modes among the twelve components of $\mathcal{A}_{\imath}$. In the abelian case the same count holds, and the reason the count is the same is that the constraint's *class* is the same; what changes is the constraint's content.
+
+**Why the constraint is non-linear.** The Gauss law contains the connection, $D_{j}F_{j0}=\partial/\partial R_{j}F_{j0}+i\kappa[\mathcal{A}_{j},F_{j0}]$. In the abelian case it is a Poisson equation for the scalar potential, solved once and for all, and the propagation problem is then linear. Here it is a non-linear equation for $\mathcal{A}_{0}$ given the spatial components, and it has no closed-form solution. This is the technical content of "the connection carries the charge it couples to": the charge density that sources $\mathcal{A}_{0}$ depends on $\mathcal{A}_{0}$.
+
+**The consequence for quantisation.** A non-linear first-class constraint is why the non-abelian theory is not quantised by imposing the constraint on a Fock space built from free fields. The route is the path integral over the orbit, with the constraint's gauge-fixing and its field-dependent determinant. [The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form](the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html) carries that construction, and the field dependence of the determinant there is exactly the non-linearity found here.
+
+## The Noether Currents: The Colour Current and Its Own Source
+
+**The current.** The density is invariant under the *global* $\mathrm{SU}(2)$, so Noether's theorem gives a conserved current. In the component setting, with the coupling real,
+
+$$
+j_{a,\imath}=\sum_{b,c}\varepsilon_{abc}F_{b,\imath\jmath}\mathcal{A}_{c,\jmath}.
+$$
+
+Noether's theorem itself, and the reason the current is a bivector contracted into a vector, are the subject of [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html); here only the non-abelian structure of the result matters.
+
+**The current contains the connection.** The abelian current is built from $F$ alone. This one is bilinear and carries $\mathcal{A}_{c,\jmath}$ explicitly. That is not a defect of the formula; it is the statement that the connection is charged under the group it defines. A current built from $F$ alone cannot be the non-abelian current, because $F$ transforms in the adjoint and its square is a singlet.
+
+**Conservation is covariant.** The ordinary divergence $\sum_{\imath}\partial/\partial R_{\imath}j_{a,\imath}$ does not vanish, and the covariant one does, $\sum_{\imath}D_{\imath}j_{a,\imath}=0$. The difference is a term linear in the connection, and it is the same term that separates the covariant from the ordinary divergence in §*Covariant Conservation*. The identity of the two statements is not a coincidence: the current of the global symmetry is the source defined by the field equation, up to the sign and the normalisation conventions of the two derivations.
+
+**Energy–momentum.** Translation invariance gives
+
+$$
+T_{\imath\jmath}=\mathrm{Tr}\Bigl(\sum_{k}F_{\imath k}F_{\jmath k}\Bigr)-\tfrac14\delta_{\imath\jmath}\,\mathrm{Tr}\Bigl(\sum_{a,b}F_{ab}F_{ab}\Bigr),
+$$
+
+symmetric and traceless at the classical level. The tracelessness is the classical scale invariance of a density with no dimensionful parameter. Its violation in the quantum theory is the beta function, so the trace anomaly and the running coupling are one statement seen twice; [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html) takes the running, and [The Conformal Anomaly in Biquaternionic Form](the-conformal-anomaly-in-biquaternionic-form.html) takes the trace.
+
+**What the classical density does not give.** It gives no $\theta$ term, which is a total derivative and a separate coupling; it gives no mass gap, which is a non-perturbative question the density states but does not answer; and it gives no running, which is a one-loop object. Each of the three has its own article, and none of them is a correction to what is written here.
+
 ## The Abelian Limit
 
 The abelian case is the case of a **commuting generator set**: the connection takes values in a one-dimensional subalgebra, so that all its coefficients commute. Two settings realise it in the framework. The parent's abelian connection lies in the centre $\mathbb{B}_{C}$, whose imaginary scalar $ie_t$ commutes with every biquaternion; and any connection proportional to a single fixed generator, $\mathcal{A}_{\imath} = a_{\imath}(\tilde{Q})\,\vec e_x$, has commuting coefficients even though $\vec e_x$ is not central. The reduction to Maxwell is the same in both, and it is worth saying exactly which terms vanish and why.
@@ -246,6 +367,14 @@ N_{a0}=A_a, \qquad N_{ab}=\delta_{ab}A_0-i\sum_c\varepsilon_{abc}A_c .
 $$
 
 Its strength $L_{\imath\jmath}=\tfrac12\left(\partial/\partial R_{\imath}\,N_{\jmath}-\partial/\partial R_{\jmath}\,N_{\imath}\right)-[N_{\imath},N_{\jmath}]$ is self-dual on the solutions of the programme's primary equation, and the Bianchi identity then gives the Yang–Mills equation $\sum_{\jmath}\partial/\partial R_{\jmath} L_{\imath\jmath}=\sum_{\jmath}[N_{\jmath},L_{\imath\jmath}]$. The abelian–non-abelian link is a determinant: the curvature splits into a trace part proportional to the electromagnetic field strength $F_{\mathrm{em},\imath\jmath}=\partial/\partial R_{\imath} A_{\jmath}-\partial/\partial R_{\jmath} A_{\imath}$ and the trace-free $L_{\imath\jmath}$, and $\det \mathrm{Ric}_{\imath\jmath}=0$ — which holds because the non-trivial spinor lies in its kernel — makes the electromagnetic field strength the **modulus of the triplet**, $\sum_a(L_{a\imath\jmath})^2\propto(F_{\mathrm{em},\imath\jmath})^2$ (the constant is convention-dependent and is not reconciled; the superscript marks the abelian quantity, to be read apart from this article's $F_{\imath\jmath}$). Here the Yang–Mills field has **no independent existence**, being a function of the electromagnetic potential, which is a different relation between the two fields from any construction in this article. It is a claim of that programme, conditional on its nonlinear primary equation, recorded there and not adopted here.
+
+## The Ceiling Is in the Algebra and Not in the Action
+
+**The statement.** Everything above holds for any subalgebra of the algebra's compact part. It gives $\mathrm{U}(1)$ and $\mathrm{SU}(2)$ exactly. It gives nothing for $\mathrm{SU}(3)$.
+
+**Where the ceiling sits.** Not in the density. The functional $-\tfrac12\mathrm{Tr}(\sum F F)$ is form-invariant: written for a connection valued in any matrix algebra it defines a Yang–Mills action, and the strong-force articles do write one, in components and on a transcribed matrix connection. The obstruction is the carrier. The compact part of $\mathbb{B}$ has real dimension four and consists of $\mathrm{U}(1)\oplus\mathrm{SU}(2)$; a connection in $\mathfrak{su}(3)$ needs eight independent anti-Hermitian generators with $\mathrm{SU}(3)$ commutators, and the algebra supplies no such eight. The action can be written for a group the algebra cannot carry, and then it is a matrix transcription rather than an action on the algebra's own elements.
+
+**What follows for the four sectors.** The electromagnetic and weak densities are written on the algebra's elements; the strong density only in components, on the transcribed side of the ceiling; and the gravitational one as a quadratic density without a carrier. The asymmetry among the sectors is therefore a statement about the algebra, and the ceiling article argues it once: [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Nothing in this article weakens or repairs it, and a reader who wants a $\mathrm{SU}(3)$ action written on elements will not get one here.
 
 ## A Biwave Equation with a Vector Structural Coefficient
 
@@ -344,6 +473,10 @@ the outgoing and incoming spherical waves dressed by the exponential weight, and
 
 ## Summary
 
+The action of the non-abelian connection is $S_{\mathrm{YM}}=\int d^4r\,\mathcal{L}$ with $\mathcal{L}=-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$, the matrix trace on the $\mathrm{SU}(2)$ factor. The trace is the matrix trace and not the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is not cyclic; with the reduction in place of the trace the action would be moved by a local transformation and the theory would not be a connection theory. The invariance is one line, $\mathrm{Tr}(F_{\mathrm g}F_{\mathrm g})=\mathrm{Tr}(\tilde QF\tilde Q^{-1}\tilde QF\tilde Q^{-1})=\mathrm{Tr}(FF)$, and it uses the adjoint law of the field strength and the cyclicity of the trace and nothing else. At dimension four the square of the curvature is the only invariant: a cubic term vanishes by the trace of an odd number of generators, and a derivative term has dimension five.
+
+The variation is $\delta S_{\mathrm{YM}}=2\int d^4r\,\mathrm{Tr}(\sum_{\jmath}\delta\mathcal{A}_{\jmath}\,D_{\imath}F_{\imath\jmath})$, from $\delta F_{\imath\jmath}=D_{\imath}\delta\mathcal{A}_{\jmath}-D_{\jmath}\delta\mathcal{A}_{\imath}$, the antisymmetry of $F$, the cyclicity of the trace and an integration by parts. The derivative that the integration by parts moves onto $F$ is covariant, not ordinary, because the field is adjoint-valued. Stationarity is $\sum_{\imath}D_{\imath}F_{\imath\jmath}=0$, the source-free equation, with the contraction between the derivative index and the curvature's first index. The commutator makes $F$ quadratic in $\mathcal{A}$, so the density carries cubic and quartic terms, which are the self-coupling; the coupling sits in the commutator against a derivative term that carries none, so its ratio is physical and the coupling runs. The time component of the equation is a first-class constraint, the non-linear Gauss law, which leaves two polarizations per generator; the current of the global symmetry is bilinear in the connection and covariantly conserved, with a non-vanishing ordinary divergence; and the energy–momentum is symmetric and traceless classically, its trace anomaly being the beta function. The ceiling at $\mathrm{U}(1)\oplus\mathrm{SU}(2)$ is a property of the algebra that carries the connection and not of the density, which is form-invariant.
+
 The Yang–Mills equation in biquaternionic form is the covariant divergence equation
 
 $$
@@ -400,6 +533,12 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $\sum_{\jmath} \bigl(D_{\imath} F_{\imath\jmath}\bigr) e_{\jmath} = \mathcal{J}$ | Biquaternionic form of the field equation |
 | $\mathcal{F} = \tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar{e}_{\imath} e_{\jmath}$ | Curvature biquaternion (componentwise adjoint law) |
 | $-\tfrac12\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ | Invariant Yang–Mills density (matrix trace) |
+| $S_{\mathrm{YM}}=\int d^4r\,\mathcal{L}$ | Yang–Mills action |
+| $\delta F_{\imath\jmath}=D_{\imath}\delta\mathcal{A}_{\jmath}-D_{\jmath}\delta\mathcal{A}_{\imath}$ | Variation of the curvature; a covariant derivative of the variation |
+| $\delta S_{\mathrm{YM}}=2\int d^4r\,\mathrm{Tr}(\sum_{\jmath}\delta\mathcal{A}_{\jmath}D_{\imath}F_{\imath\jmath})$ | Variation of the action; stationarity is the field equation |
+| $\sum_{j}D_{j}F_{j0}=0$ | Non-abelian Gauss law; first-class constraint |
+| $j_{a,\imath}=\sum_{b,c}\varepsilon_{abc}F_{b,\imath\jmath}\mathcal{A}_{c,\jmath}$ | Noether current of the global $\mathrm{SU}(2)$ (component setting, real coupling) |
+| $T_{\imath\jmath}=\mathrm{Tr}(\sum_{k}F_{\imath k}F_{\jmath k})-\tfrac14\delta_{\imath\jmath}\mathrm{Tr}(\sum_{a,b}F_{ab}F_{ab})$ | Energy–momentum of the connection; traceless classically |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading (distinct from the matrix trace) |
 | $Z\,\tilde{J}_{\Phi}$, with $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$ | Parent's abelian source; plays the role of $-\mathcal{J}$ up to the parent's normalisation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
@@ -412,7 +551,9 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 
 ## Further Reading
 
-- [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html) — the immediate parent; the $\mathrm{SU}(2)$ factor, the curvature with its commutator, the adjoint transformation, the Bianchi identity, and the source-free equation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = 0$ that this article sources.
+- [The Invariant Density: Which Pairing the Action Can Integrate](the-invariant-density-which-pairing-the-action-can-integrate.html) — the three requirements on a density, cyclicity as the whole of the invariance, and the coefficients $\tfrac12$ and $\tfrac14$ that the normalisation forces.
+- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) — the ceiling: why the density is form-invariant while the carrier is not.
+- [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html) — the immediate parent; the $\mathrm{SU}(2)$ factor, the curvature with its commutator, the adjoint transformation, and the source-free equation $\sum_{\imath} D_{\imath} F_{\imath\jmath} = 0$ that this article sources.
 - [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html) — the abelian connection and covariant derivative, the curvature as a commutator that closes on the algebra, and the gap this article and its non-abelian companion take up.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian field equation $\tilde\nabla_\Phi\tilde{F} = -Z\,\tilde{J}_{\Phi}$, the source biquaternion, and the conservation law whose non-abelian generalisation is the subject here.
 - [The Minimal coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html) — the origin of the connection and the transformation law, and the preview of the non-abelian curvature used here.

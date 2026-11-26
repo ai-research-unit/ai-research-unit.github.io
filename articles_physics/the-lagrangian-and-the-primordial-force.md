@@ -371,7 +371,7 @@ Six things are deliberately absent: a mass for the fifteen, the potential's coef
 
 ## Further Reading
 
-- [The Lagrangian and the Non-Abelian Connections](the-lagrangian-and-the-non-abelian-connections.html). The parent: the $\mathrm{SU}(2)$ action, the trace-versus-reduction proof, and the ceiling in its original form.
+- [The Yang–Mills Equation in Biquaternionic Form](the-yang-mills-equation-in-biquaternionic-form.html). The parent: the $\mathrm{SU}(2)$ action, the trace-versus-reduction proof, and the ceiling in its original form.
 - [The Feynman Rules of the Model: The Vertices of the Fifteen and the Sixteen](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The rules this action produces, and the normalisation stated once more before any rule.
 - [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The content, the anomaly count and the one covariant derivative that this article writes an action for.
 - [Classification of the Bosons: Nine Massless and Six Heavy](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid, the cell names, and which of the fifteen is which.

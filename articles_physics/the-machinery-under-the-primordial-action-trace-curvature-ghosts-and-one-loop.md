@@ -450,7 +450,7 @@ $$
 
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The display these four steps support, and the article whose assumptions are discharged here.
 
-- [The Lagrangian and the Non-Abelian Connections](the-lagrangian-and-the-non-abelian-connections.html). The $\mathrm{SU}(2)$ action written in the algebra, against which the transcription of §*The Ceiling* is measured.
+- [The Yang–Mills Equation in Biquaternionic Form](the-yang-mills-equation-in-biquaternionic-form.html). The $\mathrm{SU}(2)$ action written in the algebra, against which the transcription of §*The Ceiling* is measured.
 
 - [The One-Loop Effective Potential of the Scalar Matrix](the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html). The Hessian and the coefficient this article supplies the fermionic half of.
 

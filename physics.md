@@ -451,48 +451,64 @@
 
 ## Biquaternion Universe Primordial Force
 
-<!-- everything this block applies is in its first section, which is apparatus and holds at every
-     scale: the action and the variation with the theorem behind its conserved currents, the
-     connection, the curvature, the invariant density, the functional integral with its determinant,
-     and the running of the coupling, then the same chain non-abelian. The block's own instance of
-     that machinery is restated in $\mathrm{SU}(4)$ notation in *The machinery under the action*,
-     below, so that the category can be read alone. **From *Generalities* downward the block is the
-     unbroken phase only**: every article from there on is a statement above $M_C$, where all fifteen
-     directions are massless. Two entries that used the six heavy directions as propagating states —
-     *Three Diagrams* and *Lepton Flavour* — sit in *Symmetry Breaking*, because both need the vacuum
-     and neither is a statement about this phase. Every entry below has its article, and each entry's
+<!-- everything this block applies is in the opening subsection of *Generalities*, which is apparatus
+     and holds at every scale: the action and the variation with the theorem behind its conserved
+     currents, the pairing the action integrates, the connection, the curvature with its Bianchi
+     identity, and the running of the coupling, then the same chain non-abelian, ending in the
+     Yang–Mills action and the equation its variation gives. The block's own instance of that machinery
+     is restated in $\mathrm{SU}(4)$ notation in *The machinery under the action*, below, so that the
+     category can be read alone. **From *The group and its colours* downward the block is the unbroken
+     phase only**: every article from there on is a statement above $M_C$, where all fifteen directions
+     are massless. Two entries that used the six heavy directions as propagating states — *Three
+     Diagrams* and *Lepton Flavour* — sit in *Symmetry Breaking*, because both need the vacuum and
+     neither is a statement about this phase. Every entry below has its article, and each entry's
      comment states the argument that article makes.
 
-     The sections follow the multiplet and not the hadron spectrum, because above the transition the only label a
-     state carries is its spin: the fifteen generators at spin one, the sixteen Weyl fields at spin one half, the
-     quartet $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$ at spin zero. The group, its colours and the flavour vocabulary
-     are carrier-free and stand in *Generalities*, after the apparatus section above. The gap the block closes is
-     stated by the corpus itself: the three pieces of the $\mathrm{SU}(4)$ action exist as fragments — a covariant
-     derivative in the Feynman-rules article, no potential in the scalar census, one diagonalised Yukawa matrix —
-     and they are assembled nowhere, while every other force block carries its Lagrangian article. -->
+     The sections after the apparatus follow the multiplet and not the hadron spectrum, because above the
+     transition the only label a state carries is its spin: the fifteen generators at spin one, the sixteen Weyl
+     fields at spin one half, the quartet $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$ at spin zero. The group, its
+     colours and the flavour vocabulary are carrier-free and stand in *Generalities*, after the apparatus
+     subsection above. The gap the block closes is stated by the corpus itself: the three pieces of the
+     $\mathrm{SU}(4)$ action exist as fragments — a covariant derivative in the Feynman-rules article, no
+     potential in the scalar census, one diagonalised Yukawa matrix — and they are assembled nowhere, while
+     every other force block carries its Lagrangian article. -->
 
-### Action and Force in the Biquaternion Universe
+### Generalities
 
-<!-- the generic form of what every force block performs, stated once and at no particular group:
-     the action and the variation with the theorem behind its conserved currents, the connection a
-     local symmetry forces, the curvature and its Bianchi identity, the invariant density the action
-     integrates, the functional integral with its determinant, the running of the coupling, and the
-     order of the three carriers that every spin band below is cut along. Then the same chain
-     non-abelian: the minimal coupling, the non-abelian connection, the action whose invariant is a
-     matrix trace, the Yang–Mills equation, the Yang–Mills path integral with its Faddeev–Popov
-     determinant and ghosts, the index theorem and its zero-mode count, and the orbit those
-     connections produce, read as redundancy and not as loss. Read before any sector, because a reader
-     who meets one of them inside a sector reads it with that sector's notation already doing work.
-     This block keeps its own instance: *The Machinery Under the Primordial Action* restates the
-     trace, the curvature and the ghosts in $\mathrm{SU}(4)$ notation, on purpose, so that the
-     category can be read without leaving it. The generic articles state the structure once; that one
-     states it as this block uses it. -->
+#### Action and Force in the Biquaternion Universe
+
+<!-- the generic form of what every force block performs, stated once and at no particular group, so that it
+     specialises to the $\mathrm{SU}(4)$ instance below and not away from it: the action and the variation with
+     the theorem behind its conserved currents, the pairing the action can integrate, the connection a local
+     symmetry forces, the curvature and its Bianchi identity, then the same chain non-abelian: the minimal
+     coupling, the non-abelian connection, the action whose invariant is a matrix trace together with the
+     Yang–Mills equation its variation gives, the constraints and the currents that action implies, and the
+     running of the coupling. It closes with the order of the three carriers that every spin band below is cut
+     along. Read before any sector, because a reader who meets one of them inside a sector reads it with that
+     sector's notation already doing work.
+
+     The quantum apparatus this chain needs is not here. The functional integral, its determinant, the index
+     count, the orbit read as redundancy, and the Yang–Mills path integral with Faddeev–Popov sit in
+     *Quantum Fields*, beside the generating functional, the Schwinger–Dyson equations, the connection path
+     integral and the ghosts that use them; the classical chain below does not depend on any of them, and the
+     dependency runs the other way. What stays here is the classical chain itself: the action, the pairing it
+     integrates, the connection, the curvature, and the equation each variation gives.
+
+     This block keeps its own instance: *The Machinery Under the Primordial Action* restates the trace, the
+     curvature and the ghosts in $\mathrm{SU}(4)$ notation, on purpose, so that the category can be read without
+     leaving it. The generic articles state the structure once; that one states it as this block uses it. -->
 
 <a href="articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.html">The Relativistic Particle and the Lagrangian: The Stationary-Action Principle</a>
 <!-- the stationary-action principle; the relativistic particle; the relativistic field; symmetries of the action; invariance under the rotor; the biquaternion structure of the action. -->
 
+<a href="articles_physics/the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a>
+<!-- the three requirements on a density; cyclicity as the whole of the invariance, with a pairing that fails written out; reality and the sign as one statement with the Hermiticity type; positivity as a Euclidean statement; the element pairing and the trace as one functional at $2\times2$, so the obstruction on $\mathbb{C}^4$ is dimension and not symmetry; the $\tfrac12$, the $\tfrac14$ and the factor six the normalisation forces; the left action, where the trace is unavailable and the Hermitian form is the density. -->
+
 <a href="articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a>
 <!-- the action and what a symmetry is; the current of the central phase; translation invariance and the conserved four-momentum; the energy–momentum of the field; Lorentz invariance and the angular-momentum bivector; what is inherited, added and interpretation. -->
+
+<a href="articles_physics/the-minimal-coupling-in-biquaternionic-form.html">The Minimal Coupling in Biquaternionic Form</a>
+<!-- the global phase symmetry; making the symmetry local; the connection and the covariant derivative; the field strength as the curvature; the minimal-coupling principle and the Maxwell field; the non-abelian extension and where the gap is; the mass term and the axial symmetry. -->
 
 <a href="articles_physics/the-covariant-derivative-and-connection-in-biquaternionic-form.html">The Covariant Derivative and Connection in Biquaternionic Form</a>
 <!-- the covariant derivative and its components; the covariant derivative as a derivation; local covariance and what it forces; the connection as a orbit; the curvature as the commutator of covariant derivatives; the covariant square and the curvature term; the representative and the gravitational connection; the making local/variation commutativity of the internal case and its failure for the standard gravitational coupling, and an external construction in which one algebra-valued connection carries both the local $U(1)$ and the Lorentz connection. -->
@@ -500,14 +516,11 @@
 <a href="articles_physics/connection-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Connection Curvature and the Bianchi Identity in Biquaternionic Form</a>
 <!-- the covariant derivative and the curvature it defines; the curvature as an algebra element, not a matrix commutator; the covariant derivative on the curvature, two-sided not one-sided; the Bianchi identity; the Bianchi identity as the Jacobi identity; explicit verification on a non-abelian connection; whether one biquaternion equation can carry the Bianchi identity. -->
 
-<a href="articles_physics/the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a>
-<!-- the three requirements on a density; cyclicity as the whole of the invariance, with a pairing that fails written out; reality and the sign as one statement with the Hermiticity type; positivity as a Euclidean statement; the element pairing and the trace as one functional at $2\times2$, so the obstruction on $\mathbb{C}^4$ is dimension and not symmetry; the $\tfrac12$, the $\tfrac14$ and the factor six the normalisation forces; the left action, where the trace is unavailable and the Hermitian form is the density. -->
+<a href="articles_physics/non-abelian-connections-in-biquaternionic-form.html">Non-Abelian Connections in Biquaternionic Form</a>
+<!-- the representative algebra inside the material sector; the non-abelian connection and covariant derivative; the field strength is not locally invariant; the adjoint law, verified on all six components, with the curvature as the commutator of covariant derivatives and the Bianchi identity cited from the curvature article and not repeated; the Yang–Mills action; the reality condition and the $ict$ direction. -->
 
-<a href="articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a>
-<!-- the functional integral and the path integral; the field and the central-scalar action; the Gaussian functional integral; sector factorization; the free scalar field; the Euclidean rotation; localisation to a causally complete region; the measure and the gap. -->
-
-<a href="articles_physics/the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a>
-<!-- the determinant of a module operator; the fundamental determinant and the biquaternion norm; the determinant in the Gaussian integral; regularisation; the fermionic determinant and its phase; the conformal variation of the determinant. -->
+<a href="articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a>
+<!-- the non-abelian curvature and the adjoint covariant derivative; the Yang–Mills action $-\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ and its invariance as one line of cyclicity, with the matrix trace distinguished from the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is not cyclic and would cost the invariance, and the square shown to be the only dimension-four invariant; the variation $\delta S=2\int d^4r\,\mathrm{Tr}(\sum_{\jmath}\delta\mathcal{A}_{\jmath}D_{\imath}F_{\imath\jmath})$, which is the integration by parts that must use the adjoint covariant derivative, and the source-free equation it gives; the sourced equation, with the placement of the commutator term that covariance and conservation force; covariant conservation of the current; the first-class constraint, the non-linear Gauss law and two polarizations per generator; the Noether current, bilinear in the connection because the connection carries the charge it couples to, and the symmetric traceless energy–momentum whose trace anomaly is the beta function; the abelian limit; the Bianchi identity as the homogeneous half; the limits of the biquaternion packaging, and the external algebrodynamical claim in which the trace-free part of a biquaternion connection is fixed linearly by the electromagnetic potential; the ceiling, located in the algebra and not in the density; and the biwave equation with a vector structural coefficient, its fundamental solutions by case and the matrix-form claim with what it does and does not say. -->
 
 <a href="articles_physics/the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a>
 <!-- the scale dependence of the effective action; the regulator and the shell; integrating out a shell and the scalar quartic coupling; the non-abelian connection coupling; fixed points and the flow equation; whether the regulator respects the two sectors. -->
@@ -515,29 +528,6 @@
 <a href="articles_physics/particle-spins-in-the-biquaternion-algebra-three-carriers-their-meaning-and-their-order.html">Particle Spins in the Biquaternion Algebra: Three Carriers, Their Meaning and Their Order</a>
 <!-- the three carriers and the criterion of cost; the real vector part as the seat of the algebra's non-commutativity, with the commutator closing on it and the product failing, and its adjoint rotation of weights $+1$, $0$, $-1$; the ideal as a frame, irreducible, four real dimensions, and moved by conjugation to a distinct ideal; the centre as the commutant, fixed pointwise; then the same order read on the particles, bosons on the vector part, fermions on the ideal, scalars as an invariant or a rotor, with the third polarization, the count $4=4$ and the graviton's symmetric square; and the limits, including the menu's $67$, $115$, $110$ and $15$ entries. -->
 
-
-<a href="articles_physics/the-minimal-coupling-in-biquaternionic-form.html">The Minimal Coupling in Biquaternionic Form</a>
-<!-- the global phase symmetry; making the symmetry local; the connection and the covariant derivative; the field strength as the curvature; the minimal-coupling principle and the Maxwell field; the non-abelian extension and where the gap is; the mass term and the axial symmetry. -->
-
-<a href="articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a>
-<!-- the Dirac operator and its index; the Atiyah–Singer theorem; the density, the charge and the total derivative; a worked case, the abelian index and the charge-$n$ zero modes; the index and the instanton moduli; the biquaternion reading and the rank-two limitation. -->
-
-<a href="articles_physics/non-abelian-connections-in-biquaternionic-form.html">Non-Abelian Connections in Biquaternionic Form</a>
-<!-- the representative algebra inside the material sector; the non-abelian connection and covariant derivative; the field strength is not locally invariant; the field strength as the commutator of covariant derivatives; the Bianchi identity and where Jacobi enters; the Yang–Mills action; the reality condition and the $ict$ direction. -->
-
-<a href="articles_physics/the-lagrangian-and-the-non-abelian-connections.html">The Lagrangian and the Non-Abelian Connections</a>
-<!-- the Yang–Mills action $-\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ on the $\mathfrak{su}(2)$ connection; the invariance one line of cyclicity, and the trace a matrix trace and not the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is not cyclic and would cost the invariance; the variation giving $D_\mu F_{\mu\nu}=0$, the Bianchi identity distinguished from it as integrability; the self-coupling as the square of a nonlinear curvature and the coupling's survival because the commutator carries one power of $g$; the Gauss law, its non-linearity and the two polarizations per generator; the current carrying the field it couples to; and the ceiling, $\mathrm{U}(1)$ and $\mathrm{SU}(2)$ exact and $\mathrm{SU}(3)$ unreachable. -->
-
-<a href="articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a>
-<!-- the non-abelian curvature and the adjoint covariant derivative; the Yang–Mills equation; covariant conservation of the current; the abelian limit; the Bianchi identity and the homogeneous half; the limits of the biquaternion packaging, and the external algebrodynamical claim in which the trace-free part of a biquaternion connection is fixed linearly by the electromagnetic potential ($N^a_{\ 0}=A_a$, $N^a_{\ b}=\delta_{ab}A_0-i\varepsilon_{abc}A_c$) and the electromagnetic field strength is the modulus of the triplet, $\sum_a(L^a_{\ \mu\nu})^2\propto(F^{\mathrm{em}}_{\mu\nu})^2$; the second route to a Yang–Mills-type matrix form — the biwave equation with a vector structural coefficient, its second-order operator, its non-stationary and stationary fundamental solutions with the characteristic surfaces by case, the stationary Helmholtz kernel and its weight, the variable conventions of $E$ and $H$ across the source's sections, and the matrix-form claim with what it does and does not say. -->
-
-<a href="articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a>
-<!-- the non-abelian action and its orbit; fixing and the Faddeev–Popov determinant; the ghost fields and the Grassmann envelope; the propagator and representative-parameter independence; the quantum Yang–Mills equation; representative slicing and the Gribov ambiguity. -->
-
-<a href="articles_physics/redundancy-and-the-information-in-the-orbit-in-biquaternionic-form.html">Redundancy and the Information in the Orbit in Biquaternionic Form</a>
-<!-- the orbit as a torsor; the orbit as the fibre of the curvature map; what the orbit carries, redundancy not state; information-theoretic invariance of the orbit; the global information of the orbit, holonomy; redundancy and loss, three operations compared. -->
-
-### Generalities
 
 #### The group and its colours
 
@@ -641,7 +631,7 @@
 <!-- one transition at M_C and one audit: the SU(4) group breaks into the four-factor group, which
      has no width, and the Standard Model is what remains below that scale once the heavy fields are
      removed; it is then counted against its own boundary. The toolbox the block opens with is
-     *Action and Force in the Biquaternion Universe*, the opening section of *Primordial Force* above. -->
+     *Action and Force in the Biquaternion Universe*, the opening subsection of *Generalities* above. -->
 
 #### The Transition: One Vacuum, Four Factors, One Scale
 
@@ -2080,11 +2070,11 @@
 
 ## Biquaternion Universe Quantum Fields
 
-<!-- the quantized field: sixty-two articles that second-quantize the same element the two neighbouring blocks read, with the vacuum as a minimal idempotent and the one-particle module as the minimal left ideal, then the general formalism, then spin zero, spin one half, spin one and above, and finally the informational aspects; the block sits between the fluid reading, which is single-particle and whose variables are the field's own, and the thermal state, whose density operator is a trace over this block's Fock space; the ordering of the three is the dependency and not a preference: the reading is a re-coordinatisation of one element, the field is that element's quantization, and the state is a trace over the quantized field, so that no article of the third block can be written before the second's Fock space exists; an entry is uncommented when its article exists; the one exception to the dependency is the modular structure of the third block, which is algebraic and could in principle precede this block, and that exception is stated there. -->
+<!-- the quantized field: sixty-nine articles that second-quantize the same element the two neighbouring blocks read, with the vacuum as a minimal idempotent and the one-particle module as the minimal left ideal, then the general formalism, then spin zero, spin one half, spin one and above, and finally the informational aspects; the block sits between the fluid reading, which is single-particle and whose variables are the field's own, and the thermal state, whose density operator is a trace over this block's Fock space; the ordering of the three is the dependency and not a preference: the reading is a re-coordinatisation of one element, the field is that element's quantization, and the state is a trace over the quantized field, so that no article of the third block can be written before the second's Fock space exists; an entry is uncommented when its article exists; the one exception to the dependency is the modular structure of the third block, which is algebraic and could in principle precede this block, and that exception is stated there. -->
 
 ### Generalities
 
-<!-- second quantisation and the field-theory apparatus, twenty-six articles: the vacuum as a minimal idempotent; Fock space; the grading and the superalgebra reading; the GNS construction; Wick's theorem; Bogoliubov transformations; the Wick rotation; the effective action and the generating functional; Schwinger–Dyson and Ward–Takahashi; the S-matrix and the LSZ reduction; the spin–statistics and CPT theorems; charge conjugation; the lattice and the thermal circle; the Unruh and Hawking effects; the renormalisation group; the conformal anomaly; the theta vacuum; bosonisation; the spectral triple; and the quantisation hub that indexes the group. -->
+<!-- second quantisation and the field-theory apparatus, twenty-nine articles: the vacuum as a minimal idempotent; Fock space; the grading and the superalgebra reading; the GNS construction; Wick's theorem; Bogoliubov transformations; the Wick rotation; the functional integral and its determinant; the index theorem and its zero-mode count; the generating functional and the effective action; Schwinger–Dyson and Ward–Takahashi; the S-matrix and the LSZ reduction; the spin–statistics and CPT theorems; charge conjugation; the lattice and the thermal circle; the Unruh and Hawking effects; the conformal anomaly; the theta vacuum; bosonisation; the spectral triple; and the quantisation hub that indexes the group. -->
 <a href="articles_physics/the-biquaternion-vacuum-as-a-minimal-idempotent.html">The Biquaternion Vacuum as a Minimal Idempotent</a>
 <!-- the vacuum as a state; idempotents and minimality; the one-mode vacuum; the vacuum is a zero divisor; the minimal left ideal and the one-particle module; the vacuum manifold; the field vacuum is not an idempotent. -->
 
@@ -2108,6 +2098,15 @@
 
 <a href="articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a>
 <!-- the three subspaces of $\mathbb{B}$; the standard Wick rotation as the coefficient map $W=\mathrm{diag}(-i,1,1,1)$; the two reality conditions on one algebra, $\flat=\bar{\cdot}\circ T$ with $W^{2}=T$ and $W$ a square root of the time reflection; why the compact slice is easier, the six rows of the table being one property under five names; why the change sometimes fails, by the analyticity of the continued quantity in the strip; the split of applications that transfer and those that resist, with the thermal objection answered; what is established and what is interpretation. -->
+
+<a href="articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a>
+<!-- the functional integral and the path integral; the field and the central-scalar action; the Gaussian functional integral; sector factorization; the free scalar field; the Euclidean rotation; localisation to a causally complete region; the measure and the gap. -->
+
+<a href="articles_physics/the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a>
+<!-- the determinant of a module operator; the fundamental determinant and the biquaternion norm; the determinant in the Gaussian integral; regularisation; the fermionic determinant and its phase; the conformal variation of the determinant. -->
+
+<a href="articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a>
+<!-- the Dirac operator and its index; the Atiyah–Singer theorem; the density, the charge and the total derivative; a worked case, the abelian index and the charge-$n$ zero modes; the index and the instanton moduli; the biquaternion reading and the rank-two limitation. -->
 
 <a href="articles_physics/the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action in Biquaternionic Form</a>
 <!-- the connected generating functional; the classical field and the Legendre transform; the effective action and the loop expansion; sector factorization of the effective action; the effective potential and the vacuum; the one-loop term and the determinant. -->
@@ -2184,6 +2183,12 @@
 
 <a href="articles_physics/the-connection-path-integral-in-biquaternionic-form.html">The Connection Path Integral in Biquaternionic Form</a>
 <!-- the functional integral for a connection field; fixing and the Faddeev–Popov construction; the Gaussian integral and the propagator; the measure, the ghosts and what is being summed over. -->
+
+<a href="articles_physics/redundancy-and-the-information-in-the-orbit-in-biquaternionic-form.html">Redundancy and the Information in the Orbit in Biquaternionic Form</a>
+<!-- the orbit as a torsor; the orbit as the fibre of the curvature map; what the orbit carries, redundancy not state; information-theoretic invariance of the orbit; the global information of the orbit, holonomy; redundancy and loss, three operations compared. -->
+
+<a href="articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a>
+<!-- the non-abelian action and its orbit; fixing and the Faddeev–Popov determinant; the ghost fields and the Grassmann envelope; the propagator and representative-parameter independence; the quantum Yang–Mills equation; representative slicing and the Gribov ambiguity. -->
 
 <a href="articles_physics/lattice-connection-theory-and-the-biquaternion-path-integral.html">Lattice Connection Theory and the Biquaternion Path Integral</a>
 <!-- why a regulator; the lattice carrier; the plaquette and the Wilson action; the lattice path integral; strong coupling, the area law and confinement; the continuum limit and the running coupling.  The algebra's own orders are read as a discrete spacetime lattice, the real slice Euclidean and the complex order lightlike. -->
