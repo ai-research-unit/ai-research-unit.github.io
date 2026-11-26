@@ -76,7 +76,7 @@
 <p>Why that is a result and not a tautology. In the free rung the vorticity vanishes and the mode basis is the whole of the physics, since the density, the velocity and the quantum layer are all readable mode by mode. Here the vorticity is non-zero and no mode carries it. The two rungs have the same Fourier basis and different physics, and the difference is a property of the connection, which is external to the field. The transform tells the two apart by one quantity: whether the profile of the connection is constant.</p>
 <p>Position in the block. This is the charged companion of <a href="the-fourier-transform-and-the-schrodinger-fluid.html">The Fourier Transform and the Schrödinger Fluid</a> and the Fourier companion of <a href="the-charged-schrodinger-fluid.html">The Charged Schrödinger Fluid: The Vorticity Is the Magnetic Field</a>. It repeats, at this rung, the mode-counting finding of <a href="the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables</a>, and it repeats it deliberately: the two rungs ask the same question and the answer is the same, with the vorticity named in place of the mode count.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The charged companion's: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_{\imath}+\frac{2\pi i\varkappa}{h}A_{\imath}$, and the local transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are</p>
+<p>The charged companion's: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_{\imath}+\frac{2\pi i\varkappa}{h}A_{\imath}$, and the local transformation $\digamma_{\mathrm{cph}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are</p>
 <p>$$
 \vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,
 \qquad
@@ -95,12 +95,12 @@ $$</p>
 \vec\nabla_\Phi\times\vec v=0 ,
 $$</p>
 <p>and the last equality is the article's first result. The velocity is constant and its curl is exactly zero, and the check on one hundred events gave $\max\lvert\nabla\times\vec v\rvert=2.5\times10^{-16}$ for a constant $\vec A$.</p>
-<p>The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\omicron_{\mathrm{pot}}=-\partial_{t'}\chi$ the local transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\chi}{h})$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\frac{2\pi \varkappa\vec A}{h}$.</p>
+<p>The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\omicron_{\mathrm{pot}}=-\partial_{t'}\chi$ the local transformation $\digamma_{\mathrm{cph}}=\exp(\frac{2\pi i\varkappa\chi}{h})$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is equivalent up to the choice of representative to a free mode with a translated wave number, and the translation is $\frac{2\pi \varkappa\vec A}{h}$.</p>
 <p>The two labels, and which one the fluid reads.</p>
 <p>$$
 \tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{\varkappa}{h}\tilde A_\Phi ,
 $$</p>
-<p>so the canonical label is the free one and the kinetic label is the free one plus the potential. The transform is a chart-dependent object here for the first time in this rung: transforming in the canonical variable puts the support on the free shell, transforming in the kinetic variable puts it on the translated shell, and the two differ by a gauge. §<em>Two Supports, One Field</em> of the charged Klein–Gordon Fourier companion carries the same distinction with the mass present.</p>
+<p>so the canonical label is the free one and the kinetic label is the free one plus the potential. The transform is a chart-dependent object here for the first time in this rung: transforming in the canonical variable puts the support on the free shell, transforming in the kinetic variable puts it on the translated shell, and the two differ by a representative. §<em>Two Supports, One Field</em> of the charged Klein–Gordon Fourier companion carries the same distinction with the mass present.</p>
 <h2 id="the-curvature-is-what-a-multiplier-cannot-carry">The Curvature Is What a Multiplier Cannot Carry</h2>
 <p>The identity is one line and the check is exact.</p>
 <p>$$
@@ -124,7 +124,7 @@ $$</p>
 <td>constant</td>
 <td>zero</td>
 <td>a delta</td>
-<td>one mode, no vorticity, gauge-removable</td>
+<td>one mode, no vorticity, representative-removable</td>
 </tr>
 <tr>
 <td>linear</td>
@@ -160,7 +160,7 @@ $$</p>
 $$</p>
 <p>That is exact and it is the only circulation a single mode has. The quantum of winding is inter-mode and the quantum of flux is not; the first needs a pair of waves and the second needs only a field. In the free rung both terms were absent at a mode; here one of the two survives, and the one that survives is the one the connection supplies.</p>
 <p>The statement is the Aharonov–Bohm phase, read on a loop. The flux term is the phase $\exp(\frac{2\pi i\varkappa\digamma_{\mathrm{flx}}}{h})$ that a mode acquires on going round, and it is there whether or not the field strength vanishes on the loop. A mode's loop datum is therefore a phase and not the integer, and the integer appears only when a second mode is added and a node exists.</p>
-<p>The objection, and the answer. The objection is that the flux term is a gauge artefact in a simply connected region with vanishing curvature, so a mode's circulation is removable. The answer is that it is removable iff $\digamma_{\mathrm{flx}}$ is a multiple of $h/\varkappa$ on the loops at issue, and that on a loop that links a flux the integral is not removable in any single-valued gauge. The quantum of flux is a statement about the topology of the region and the quantum of winding is a statement about the topology of the field, and a mode has only the first.</p>
+<p>The objection, and the answer. The objection is that the flux term is a representative artefact in a simply connected region with vanishing curvature, so a mode's circulation is removable. The answer is that it is removable iff $\digamma_{\mathrm{flx}}$ is a multiple of $h/\varkappa$ on the loops at issue, and that on a loop that links a flux the integral is not removable in any single-valued representative. The quantum of flux is a statement about the topology of the region and the quantum of winding is a statement about the topology of the field, and a mode has only the first.</p>
 <h2 id="two-supports-one-field">Two Supports, One Field</h2>
 <p>The transform of a solution is a measure on a support, and which support depends on the variable. In the canonical variable the support is the free shell $\mathcal E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$; in the kinetic variable it is the same shell translated by the potential. Since the two variables differ by a local transformation, and a local transformation of a linear phase translates the support, the two supports are the same set of physical states written in two charts.</p>
 <p>What that buys the fluid reading is one sentence. The velocity is $\vec\pi/m$, so it is the kinetic label over the mass; a mode's velocity is therefore read from the kinetic support and not from the canonical one. The chart in which the support is free is the chart in which the fluid is not, and the chart in which the fluid's velocity is the label is the chart in which the support is translated. The free companion's maxim that the canonical flow is irrotational and the kinetic flow is the field's is the same statement seen from the two charts.</p>
@@ -238,8 +238,8 @@ $$</p>
 <td>The winding of a loop around a nodal line; zero at a mode</td>
 </tr>
 <tr>
-<td>$\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$</td>
-<td>The gauge element; central</td>
+<td>$\digamma_{\mathrm{cph}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$</td>
+<td>The phase element; central</td>
 </tr>
 <tr>
 <td>$\mathrm{Sc}(\tilde Q)$</td>

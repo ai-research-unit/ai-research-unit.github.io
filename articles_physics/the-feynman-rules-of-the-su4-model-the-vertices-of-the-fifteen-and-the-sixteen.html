@@ -76,7 +76,7 @@
 <ul>
 <li><strong>The vertex list.</strong> The fifteen fields against the sixteen fermions, read entry by entry off the printed arrays. <strong>There are $64$ nonzero entries on the quartet half and $64$ on the conjugate half, so $128$ in all</strong>, and the split is $48+8+8$ per half: twelve planes, two colour diagonals, and the corner, each counted with its two copies.</li>
 <li><strong>The normalisation.</strong> The printed arrays are not orthonormal in the trace. <strong>Thirteen have $\operatorname{tr}(G^{\dagger}G)=2$, the rotated colour diagonal has $6$ and the corner has $12$</strong>, and one pair is not even orthogonal. A canonical kinetic term therefore forces a family-dependent rescaling, and that rescaling is the whole of §<em>The Normalisation, Before Any Rule</em>.</li>
-<li><strong>The two-index rule.</strong> Every fermion–connection vertex is $X\otimes\mathbb 1_{2}$: an array on the quartet times the identity on the copy index. <strong>A gauge rotation cannot tell the two copies apart</strong>, and that one bracket decides the shape of the whole table.</li>
+<li><strong>The two-index rule.</strong> Every fermion–connection vertex is $X\otimes\mathbb 1_{2}$: an array on the quartet times the identity on the copy index. <strong>A representative rotation cannot tell the two copies apart</strong>, and that one bracket decides the shape of the whole table.</li>
 <li><strong>One coupling, and no ratio.</strong> $g_4$ stays symbolic. <strong>The model has no second coupling, so it has no coupling ratio to fix and no matching problem to inherit.</strong></li>
 </ul>
 <p><strong>What the article does not do.</strong> It does not derive a fermion action from the algebra: the fermion kinetic term uses the quartet's connection acting on the quartet carrier, and the claim that it does is imported, not proved. <strong>The matrices are exact; the dynamical statement that a fermion propagates with them is the imported half</strong>, and it is marked as such in every section where it is used.</p>
@@ -84,7 +84,7 @@
 <p><strong>The coordinates, stated once.</strong> The derivative is $\partial/\partial R_{\imath}$, the metric is $\delta_{\imath\jmath}=(1,1,1,1)$, and every index is low: a contraction is a plain sum, $\sum_{\imath}X_{\imath}Y_{\imath}$, with no sign hidden in the metric.</p>
 <p><strong>The quartet index runs over $(t,x,y,z)$</strong>, and the three colour lines are $x,y,z$ under the names $r,g,b$ used in <a href="classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html">the fermion classification</a>. <strong>The two namings are one convention</strong>, and this article writes $x,y,z$ when it reads an array and $r,g,b$ when it names a particle.</p>
 <p><strong>The generators are anti-Hermitian and traceless, and the arrays are read by columns.</strong> The printed matrices are the $G_{a}$ of <a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html">the construction article</a>; a matrix unit $E_{\imath\jmath}$ has a $1$ in row $\imath$, column $\jmath$. <strong>The generators the rules are written in are Hermitian</strong>, $t_{a}=iG_{a}/\sqrt{2n_{a}}$ with $n_{a}=\operatorname{tr}(G_{a}^{\dagger}G_{a})$ equal to $2$ for the thirteen planes and diagonals and $12$ for the corner, the colour diagonal $c_{3}=d_{2}-d_{3}$ being taken at its own norm $6$, so that $t_{a}^{\dagger}=t_{a}$ and $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$; <a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a> fixes that passage once. <strong>The printed arrays carry the anti-Hermitian convention and the $i$ that makes them Hermitian is one step, the trace-norm rescaling the other, and a vertex read off a printed array without both is wrong by the product.</strong></p>
-<p><strong>The bookkeeping of the sixteen.</strong> The four Weyl fields of the quartet are $\xi_{i}$ with $i\in\{t,r,g,b\}$, the four of the conjugate quartet are $\bar\xi^{i}$, and each comes in two copies labelled by an index the model does not gauge. <strong>Sixteen fields, thirty-two states, and the copy index is a degeneracy and not a charge.</strong></p>
+<p><strong>The bookkeeping of the sixteen.</strong> The four Weyl fields of the quartet are $\xi_{i}$ with $i\in\{t,r,g,b\}$, the four of the conjugate quartet are $\bar\xi^{i}$, and each comes in two copies labelled by an index the model does not representative. <strong>Sixteen fields, thirty-two states, and the copy index is a degeneracy and not a charge.</strong></p>
 <h2 id="the-lagrangian-the-rules-come-from">The Lagrangian the Rules Come From</h2>
 <p><strong>One covariant derivative covers all fifteen fields.</strong></p>
 <p>$$
@@ -110,17 +110,17 @@ $$</p>
 <tr>
 <td>$-\tfrac14\sum FF$</td>
 <td>the fifteen</td>
-<td>three-gauge and four-gauge</td>
+<td>three-connection and four-connection</td>
 </tr>
 <tr>
 <td>fermion kinetic</td>
 <td>the sixteen</td>
-<td>fermion–gauge, one matrix per generator</td>
+<td>fermion–connection, one matrix per generator</td>
 </tr>
 <tr>
 <td>scalar kinetic</td>
 <td>$Ξ$, sixteen real components</td>
-<td>gauge–scalar, two- and three-point</td>
+<td>representative–scalar, two- and three-point</td>
 </tr>
 <tr>
 <td>$V(Ξ)$</td>
@@ -130,7 +130,7 @@ $$</p>
 <tr>
 <td>$\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{\mathrm{gh}}$</td>
 <td>fifteen ghosts</td>
-<td>ghost–gauge</td>
+<td>ghost–connection</td>
 </tr>
 <tr>
 <td>$\mathcal{L}_{\mathrm{Yuk}}$</td>
@@ -139,7 +139,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The gauge block is where the corpus is strongest and the fermion block is where it is thinnest</strong>, and the rules inherit the asymmetry. <strong>The three-connection vertices are exact</strong>, computed from the bracket table; <strong>the fermion–connection vertex is exact as a matrix and imported as a dynamical statement.</strong></p>
+<p><strong>The connection block is where the corpus is strongest and the fermion block is where it is thinnest</strong>, and the rules inherit the asymmetry. <strong>The three-connection vertices are exact</strong>, computed from the bracket table; <strong>the fermion–connection vertex is exact as a matrix and imported as a dynamical statement.</strong></p>
 <p><strong>The scalar is the Hermitian $4\times4$, and its size is the algebra's.</strong> $\mathbf{15}\oplus\mathbf1$ is a traceless part of fifteen real entries plus a real trace: $15+1=16$ real components, and $\dim\mathrm{SU}(4)=15$ is where the fifteen comes from. The condensate is $\langleΞ\rangle=v\operatorname{diag}(-3,1,1,1)$, and $15-9=6$ of its components are eaten by the sextet. <strong>The matrix index is not a choice</strong>: $\bar\xiΞ\xi$ is a singlet only for $Ξ\in\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$, while $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ has no $\bar{\mathbf4}$. The count is <a href="classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html">the classification</a>'s, and <a href="the-scalar-content-one-matrix-and-ten-survivors.html">The Scalar Content</a> is the census behind it.</p>
 <h2 id="the-normalisation-before-any-rule">The Normalisation, Before Any Rule</h2>
 <p><strong>The printed arrays are anti-Hermitian, and their trace norms come in two values.</strong></p>
@@ -284,14 +284,14 @@ $$</p>
 <td>$\mathbf{64}$</td>
 </tr>
 <tr>
-<td><strong>total nonzero fermion–gauge entries</strong></td>
+<td><strong>total nonzero fermion–connection entries</strong></td>
 <td></td>
 <td></td>
 <td>$\mathbf{128}$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The two-index rule, and it is one line.</strong> Every vertex is $X\otimes\mathbb 1_{2}$ with $X$ an array on the quartet. <strong>A gauge rotation acts on the quartet index only, so it cannot change the copy label</strong>, and the sixteen fermions therefore couple in two identical copies. <strong>Nothing in the model distinguishes them</strong>, and no rule below can.</p>
+<p><strong>The two-index rule, and it is one line.</strong> Every vertex is $X\otimes\mathbb 1_{2}$ with $X$ an array on the quartet. <strong>A representative rotation acts on the quartet index only, so it cannot change the copy label</strong>, and the sixteen fermions therefore couple in two identical copies. <strong>Nothing in the model distinguishes them</strong>, and no rule below can.</p>
 <p><strong>What each family does to a fermion line.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -377,7 +377,7 @@ $$</p>
 <h2 id="ghosts-choice-of-representative-and-the-scalar-vertices">Ghosts, Choice Of Representative and the Scalar Vertices</h2>
 <p><strong>One fixing parameter, because there is one group.</strong> The Feynman–'t Hooft choice $\mathcal{L}_{\mathrm{gf}}=-\tfrac{1}{2\xi}\sum_{a}(\partial_{\imath}A_{a,\imath})^{2}$ gives fifteen ghosts, one per generator, with masses $0$ on the nine and $\xi\,32v^{2}$ on the six. <strong>A second fixing parameter would be a symptom of a second factor</strong>, and the model has none.</p>
 <p><strong>The ghost–connection vertex is $g_{4}f_{abc}k_{\imath}$</strong>, with the momentum on the outgoing ghost. <strong>The count of nonzero vertices is again $29$ triples</strong>, and the vanishing ones vanish for the same reason.</p>
-<p><strong>The scalar vertices come from the kinetic term and the potential, and the model fixes neither coupling.</strong> The gauge–scalar two-point vertex is the mass matrix restricted to the six eaten directions; the three-point vertex is $-2ig_{4}$ times $\operatorname{tr}(\partial_{\imath}Ξ[t_{a},Ξ])$, <strong>with the $2$ from the commutator's two orderings and the $i$ from the covariant derivative</strong> — a vertex quoted as $g_4$ times the commutator is off by that factor. <strong>The potential $V(Ξ)$ is written with two quadratics and four quartics, and the model predicts none of them</strong>: $v$ is a ratio of coefficients, and the radial mass is the second derivative of $V$ along the condensate (<em>The Primordial Potential</em>). <strong>The two quadratics that carry the trace shift no vector mass</strong>, because the identity commutes with all fifteen generators.</p>
+<p><strong>The scalar vertices come from the kinetic term and the potential, and the model fixes neither coupling.</strong> The representative–scalar two-point vertex is the mass matrix restricted to the six eaten directions; the three-point vertex is $-2ig_{4}$ times $\operatorname{tr}(\partial_{\imath}Ξ[t_{a},Ξ])$, <strong>with the $2$ from the commutator's two orderings and the $i$ from the covariant derivative</strong> — a vertex quoted as $g_4$ times the commutator is off by that factor. <strong>The potential $V(Ξ)$ is written with two quadratics and four quartics, and the model predicts none of them</strong>: $v$ is a ratio of coefficients, and the radial mass is the second derivative of $V$ along the condensate (<em>The Primordial Potential</em>). <strong>The two quadratics that carry the trace shift no vector mass</strong>, because the identity commutes with all fifteen generators.</p>
 <p><strong>The eaten six and the surviving ten.</strong> Six components of $Ξ$ become the longitudinal polarisations of the sextet; <strong>the remaining ten are physical here</strong>, one radial mode and nine orthogonal to the vacuum. <strong>An eaten component has no propagator of its own</strong>, and a table that lists sixteen scalar propagators is listing six that do not exist.</p>
 <h2 id="what-the-rules-do-not-contain">What the Rules Do Not Contain</h2>
 <p><strong>No $W$, no $Z$, no photon.</strong> The model has one unbroken $\mathrm{U}(1)$ and eight gluons; <strong>the electroweak connections arrive at $M_C$, and so do their vertices.</strong> A rule set that printed a $Wff$ vertex would be printing a vertex of a different Lagrangian.</p>
@@ -405,12 +405,12 @@ $$</p>
 <td>$32$</td>
 </tr>
 <tr>
-<td>fermion–gauge entries per half</td>
+<td>fermion–connection entries per half</td>
 <td>$32\times2$ copies</td>
 <td>$64$</td>
 </tr>
 <tr>
-<td>fermion–gauge entries in all</td>
+<td>fermion–connection entries in all</td>
 <td>$64+64$</td>
 <td>$128$</td>
 </tr>
@@ -450,7 +450,7 @@ $$</p>
 <td>$80$</td>
 </tr>
 <tr>
-<td>nonzero three-gauge triples</td>
+<td>nonzero three-connection triples</td>
 <td>antisymmetric $f_{abc}$, orthonormal basis</td>
 <td>$29$ ($31$ printed)</td>
 </tr>
@@ -522,7 +522,7 @@ $$</p>
 <li><a href="the-su4-model-four-colours-fifteen-generators-one-declaration.html">The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration</a>. The group, the content, and the declaration this article transcribes.</li>
 <li><a href="the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html">The Commutation Table of the Fifteen Generators</a>. The $80$ nonzero brackets and the five rules that generate them.</li>
 <li><a href="the-15-axf-matrices-of-the-bosons-in-detail.html">The Fifteen AXF Matrices of the Bosons in Detail</a>. Every array, its entries, and its mass.</li>
-<li><a href="the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html">The Fermion–Connection vertex in the Quartet Basis</a>. The $128$ entries, one generator at a time.</li>
+<li><a href="the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html">The Fermion–Connection vertex in the Quartet Basis</a>. The $128$ entries, one generator at a time.</li>
 <li><a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">The Yukawa Sector of the $\mathrm{SU}(4)$ Model</a>. Where the fermion masses come from.</li>
 <li><a href="three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html">Three Diagrams of the $\mathrm{SU}(4)$ Model</a>. Three rules from this list, drawn.</li>
 <li><a href="classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html">The Classification of the Fermions</a>. The sixteen, the $B-L$ column, and the two copies.</li>

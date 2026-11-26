@@ -140,7 +140,7 @@ $$</p>
 $$</p>
 <p>by the fundamental theorem of calculus, for every path with the same endpoints. The connection term is constant on the space of paths. It therefore factors out of the integral exactly, and the kernel is the free kernel times the two endpoint phases. No approximation enters: the statement is exact for every path.</p>
 <p>The check is a lattice check, and it is where the discretisation matters. A connection term is a line integral, and a discretised worldline must choose a point of each segment at which to evaluate the potential. With the symmetric (midpoint) rule the telescoping is exact: over two hundred random eight-step paths with a quadratic $\Gamma$ the connection term equals the boundary term to $2\times10^{-15}$. With the left-endpoint rule it does not: the defect is $6\times10^{1}$ at worst on the same paths, and on a fixed smooth path it halves as the step halves, $3.3\times10^{-1}$, $1.7\times10^{-1}$, $8.3\times10^{-2}$, $4.1\times10^{-2}$ for eight, sixteen, thirty-two and sixty-four steps.</p>
-<p>The rule is not a detail of the bookkeeping. The defect of the left-endpoint rule is $O(h)$ and path-dependent, so a lattice sum with that rule is not invariant at finite step and does not converge to an invariant limit without a counterterm. The symmetric rule makes the connection term a coboundary exactly, at every step, on every path. That is the worldline version of the lattice-gauge statement that the link variable must sit on the link and not at its foot. <strong>The two rules agree in the continuum and differ on the lattice, and the continuum statement is the one this article uses.</strong></p>
+<p>The rule is not a detail of the bookkeeping. The defect of the left-endpoint rule is $O(h)$ and path-dependent, so a lattice sum with that rule is not invariant at finite step and does not converge to an invariant limit without a counterterm. The symmetric rule makes the connection term a coboundary exactly, at every step, on every path. That is the worldline version of the lattice-connection statement that the link variable must sit on the link and not at its foot. <strong>The two rules agree in the continuum and differ on the lattice, and the continuum statement is the one this article uses.</strong></p>
 <p>Second regime: closed but not exact. The flux between two histories. Let $F=0$ in a region that is not simply connected. Then the one-form is closed and not exact, and its integral around a non-contractible loop is a nonzero number. On $\mathbb{R}^4$ no such loop exists, and the first regime covers every field-free potential. A region with a hole is a different matter, and the corpus's setting is $\mathbb{R}^4$: the statement below is about the structure of the sum and not about a physical solenoid.</p>
 <p>Third regime: not closed. The flux through the loop a path encloses. Let the field strength be nonzero. Take two histories with the same endpoints, $\gamma_1$ and $\gamma_2$. Their connection terms differ by the integral around the closed loop $\gamma_1-\gamma_2$, and Stokes's theorem gives</p>
 <p>$$
@@ -306,7 +306,7 @@ $$</p>
 <td>Real phase function; $\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$ for an exact potential</td>
 </tr>
 <tr>
-<td>$\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$</td>
+<td>$\theta_{\mathrm{cph}}=\frac{2\pi ϙ\Gamma}{h}$</td>
 <td>Connection angle</td>
 </tr>
 <tr>
@@ -330,7 +330,7 @@ $$</p>
 <li><a href="the-lagrangian-and-the-coupled-dirac-equation.html">The Lagrangian and the Coupled Dirac Equation</a>, for the action used here and for the current that the action produces.</li>
 <li><a href="the-coupled-dirac-equation-in-biquaternionic-form.html">The Coupled Dirac Equation in Biquaternionic Form</a>, for the equation, the covariance proof, and the constant-potential solutions.</li>
 <li><a href="the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Coupled Dirac Equation in Biquaternionic Polar Variables</a>, for the type table that this article's sorting of $A$ and $F$ reproduces from the worldline side.</li>
-<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Minimal Coupling in Biquaternionic Form</a>, for the covariant derivative, the transformation law and the sign convention inherited here.</li>
+<li><a href="the-minimal-coupling-in-biquaternionic-form.html">The Minimal Coupling in Biquaternionic Form</a>, for the covariant derivative, the transformation law and the sign convention inherited here.</li>
 <li><a href="the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of $g=2$ in Biquaternionic Form</a>, for the composition of the rotor's rate with the frame's transport that gives the Larmor precession.</li>
 <li>J. Schwinger, "On gauge invariance and vacuum polarization," <em>Physical Review</em> <strong>82</strong> (1951) 664–679, for the proper-time kernel in a constant field and the even determinant.</li>
 <li>J. Schwinger, "Brownian motion of a quantum oscillator," <em>Journal of Mathematical Physics</em> <strong>2</strong> (1961) 407–432, for the proper-time method with a background field.</li>
