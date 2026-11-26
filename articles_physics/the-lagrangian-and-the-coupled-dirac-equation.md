@@ -22,7 +22,7 @@ Three things are established.
 
 *Second, the coupling is derived and not postulated.* The action has a local central phase symmetry only when the gradient is replaced by the covariant derivative; the connection absorbs exactly the derivative of the phase and nothing else. Minimal coupling is therefore the answer to a question asked of the action, and the question cannot be asked of the element *equation* alone: the equation accepts any operator, and only the functional decides which operator is admissible.
 
-*Third, the current is settled.* The local phase's Noether current is conserved on solutions, and it is the pairing with two fixed frame units that the element form states and the Gordon article identifies. The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant, is of the density sign, and is not conserved. The action does not produce it and the equation does not conserve it. The positive statement and the counterexample are both in §*The Noether Currents: What the Action Produces and What It Does Not*.
+*Third, the current is settled.* The local phase's Noether current is conserved on solutions, and it is the pairing with two fixed frame units that the element form states and the Gordon article identifies. The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is locally invariant, is of the density sign, and is not conserved. The action does not produce it and the equation does not conserve it. The positive statement and the counterexample are both in §*The Noether Currents: What the Action Produces and What It Does Not*.
 
 The two settings. The action is stated for a connection that may depend on the coordinates. The two settings of the framework are distinct and are kept apart here. In the constant setting the connection is a fixed element of $\mathbb{B}_\Phi$ with constant coefficients; the equation becomes algebraic in momentum space, the propagator is a finite product of exponentials up to the group factor, and a constant potential is pure gradient. In the operator setting the connection is an operator or a general function of position; the equation is a partial differential equation, the propagator is not a finite product, and the variational principle is the standard field-theoretic one. The article computes in the constant setting and states where the operator setting differs. Nothing is transferred between them.
 
@@ -109,7 +109,7 @@ $$
 
 the covariant wave equation with the curvature term. The coupling therefore changes the compatibility condition in exactly one place, the curvature, and nowhere else.
 
-Boundary terms. The variation of a field of compact support produces none. For fields periodic in the spatial directions no boundary term appears either, provided the phase function is periodic; a non-periodic phase function changes the boundary data and the action is then stationary only within a gauge class. That is the standard statement and the coupling does not alter it.
+Boundary terms. The variation of a field of compact support produces none. For fields periodic in the spatial directions no boundary term appears either, provided the phase function is periodic; a non-periodic phase function changes the boundary data and the action is then stationary only within a representative class. That is the standard statement and the coupling does not alter it.
 
 ## The Constraints the Action Imposes: The Two Fixing Conditions
 
@@ -125,19 +125,19 @@ What the article looks at. The orbit, because the symmetry is exact, and the con
 
 The action's free part is invariant under a *constant* central phase. Localizing the phase destroys the invariance, and the repair is unique.
 
-The mass term is safe. Under $\tilde\Xi\mapsto\digamma_{\mathrm{gau}}\tilde\Xi$ with $\digamma_{\mathrm{gau}}=\digamma_{\mathrm{gau}}(R)$ central, the mass term $\tilde\Xi_L^{*}\tilde\Xi_R$ becomes $\bar\digamma_{\mathrm{gau}}\digamma_{\mathrm{gau}}\,\tilde\Xi_L^{*}\tilde\Xi_R=\tilde\Xi_L^{*}\tilde\Xi_R$, since $\digamma_{\mathrm{gau}}$ commutes and has unit modulus. A mass term linear in two fields with one conjugate is invariant under a local central phase without any help.
+The mass term is safe. Under $\tilde\Xi\mapsto\digamma_{\mathrm{cph}}\tilde\Xi$ with $\digamma_{\mathrm{cph}}=\digamma_{\mathrm{cph}}(R)$ central, the mass term $\tilde\Xi_L^{*}\tilde\Xi_R$ becomes $\bar\digamma_{\mathrm{cph}}\digamma_{\mathrm{cph}}\,\tilde\Xi_L^{*}\tilde\Xi_R=\tilde\Xi_L^{*}\tilde\Xi_R$, since $\digamma_{\mathrm{cph}}$ commutes and has unit modulus. A mass term linear in two fields with one conjugate is invariant under a local central phase without any help.
 
-The kinetic term is not. The derivative acts on $\digamma_{\mathrm{gau}}$:
+The kinetic term is not. The derivative acts on $\digamma_{\mathrm{cph}}$:
 
 $$
-\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\bigl(\digamma_{\mathrm{gau}}\tilde\Xi_L\bigr)
-=\digamma_{\mathrm{gau}}\,\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L
-+\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\digamma_{\mathrm{gau}}\bigr)\tilde\Xi_L,
+\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\bigl(\digamma_{\mathrm{cph}}\tilde\Xi_L\bigr)
+=\digamma_{\mathrm{cph}}\,\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L
++\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\digamma_{\mathrm{cph}}\bigr)\tilde\Xi_L,
 $$
 
 and the second term is nonzero. The obstruction is therefore the derivative and only the derivative.
 
-The repair is unique within the abelian class. Demand that the action be invariant under $\tilde\Xi\mapsto\digamma_{\mathrm{gau}}\tilde\Xi$ with $\tilde A_\Phi\mapsto\tilde A_\Phi+\delta\tilde A_\Phi$. The kinetic terms acquire
+The repair is unique within the abelian class. Demand that the action be invariant under $\tilde\Xi\mapsto\digamma_{\mathrm{cph}}\tilde\Xi$ with $\tilde A_\Phi\mapsto\tilde A_\Phi+\delta\tilde A_\Phi$. The kinetic terms acquire
 
 $$
 \frac{2\pi i\,ϙ}{h}\Bigl(\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\Gamma\bigr)\tilde\Xi_L+\tilde\Xi_R^{*}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\tilde\Xi_R\Bigr)
@@ -266,7 +266,7 @@ The constant setting is closed — a finite product of exponentials up to the gr
 | $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^{3}r$ | Integration measure; $r'_t=ct'$ the material time |
 | $\tilde\nabla_{\mathrm{gco},\Phi},\ (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ | Covariant derivative and its $\natural$-image |
 | $\tilde A_\Phi,\ \tilde F$ | Potential biquaternion and curvature |
-| $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | Local central phase; $\Gamma$ real |
+| $\digamma_{\mathrm{cph}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | Local central phase; $\Gamma$ real |
 | $r_L,r_R$ | The two residuals; $r_L=r_R=0$ is the coupled pair |
 | $\mathcal{L}$ | The Lagrangian density: the integrand of $S$ |
 | $J^{t},J_{\imath}$ | Noether current of the local phase; sum over parts, difference over parts |
@@ -284,8 +284,8 @@ The constant setting is closed — a finite product of exponentials up to the gr
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), the equation in the chart.
 - [The Lagrangian and the Coupled Dirac Equation in Polar Variables](the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html), the same action in the chart, and the constraints.
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the pairing and the adjoint row's dictionary.
-- [The Minimal coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization and the pair of signs.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Minimal coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localization and the pair of signs.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), for the symmetric improvement and the operator-setting comparison.
 - [Landau Levels in Biquaternionic Form](landau-levels-in-biquaternionic-form.html), for the spectrum a non-constant potential does produce.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the standard action, the Noether current and the stress tensor.

@@ -262,7 +262,7 @@ The chain, stated once. The whole assignment follows from four steps, and no ste
 | three | the measured charges | the ray, and the scale by convention |
 | four | the invariance of the Yukawa terms | $Y_{\mathrm{hch}}=\tfrac12$, $Y_{\tilde\omicron_{\mathrm{hgs}}}=-\tfrac12$ |
 
-What follows from the last step. With $Y_{\mathrm{hch}}=\tfrac12$ the scalar's neutral component has $T_3=-\tfrac12$ and $Ϙ=0$, so the vacuum expectation value can sit in the neutral component and leave the photon massless. The tree-level relation $\rho=1$ follows from the doublet being a doublet. Both are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html), and the point here is that they follow from the assignment and not from an extra postulate.
+What follows from the last step. With $Y_{\mathrm{hch}}=\tfrac12$ the scalar's neutral component has $T_3=-\tfrac12$ and $Ϙ=0$, so the vacuum expectation value can sit in the neutral component and leave the photon massless. The tree-level relation $\rho=1$ follows from the doublet being a doublet. Both are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html), and the point here is that they follow from the assignment and not from an extra postulate.
 
 The neutrino charge. With $Y_L=-\tfrac12$ and $T_3=+\tfrac12$ the neutrino comes out neutral, and that is a consequence of the assignment rather than an input to it. A reader who takes the neutrality of the neutrino as the starting point will find that it is one equation short of the whole table.
 
@@ -270,7 +270,7 @@ The neutrino charge. With $Y_L=-\tfrac12$ and $T_3=+\tfrac12$ the neutrino comes
 
 Three facts about the framework, each established in a companion article.
 
-- The framework's abelian factor is the central phase. The minimal coupling of [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) supplies the $*$-unitary part of the centre, which is $\mathrm{U}(1)$, and a charge parameter $ϙ$ that multiplies every coefficient of a state by the same phase.
+- The framework's abelian factor is the central phase. The minimal coupling of [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html) supplies the $*$-unitary part of the centre, which is $\mathrm{U}(1)$, and a charge parameter $ϙ$ that multiplies every coefficient of a state by the same phase.
 - That phase is vector-like. Because the phase acts as a scalar, a state and its partner of the opposite chirality carry the same charge, so the cubic sum is $ϙ^3-ϙ^3=0$ identically, for every state and every charge. [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation.html) states this as the algebraic fact that the framework's abelian factor cannot be weak hypercharge.
 - The framework's compact factor is $SU(2)$ and not $SU(3)$. [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) proves that the algebra's intrinsic compact algebra is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of real dimension four, and that no module of $\mathbb{B}$ carries a colour triplet.
 
@@ -322,7 +322,7 @@ The framework reaches the algebra of the group and not the assignment. Its abeli
 
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The content this assignment is written for, and the charge table the solution reproduces.
 - [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html). The derivation of the triangle coefficient, the three lemmas, and the verification of the conditions on the observed spectrum.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The central phase and the charge parameter $ϙ$.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html). The central phase and the charge parameter $ϙ$.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The intrinsic compact algebra $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ and the colour ceiling.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why a central charge cannot be chiral, and the non-central case as the open question.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The covariant derivative and the Yukawa terms whose invariance fixes $Y_{\mathrm{hch}}$.

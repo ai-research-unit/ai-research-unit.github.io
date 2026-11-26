@@ -44,7 +44,7 @@ and in biquaternion form the corresponding density is $\mathrm{Sc}(\tilde F\star
 $$
 Ϙ = \frac{1}{16\pi^2}\int d^4r\;\mathrm{tr}\big(\sum_{\imath,\jmath}F_{\imath\jmath}\tilde F_{\imath\jmath}\big) \in\mathbb{Z},
 $$
-with $F_{\imath\jmath}$ the components of the curvature and the trace over the gauge index. That gauge trace is written $\mathrm{tr}$, lower case, to distinguish it from the framework's own scalar pairing $\mathrm{Tr}$; it is the same object *Instantons and Solitons in Biquaternionic Form* writes with the capital symbol, so the two articles' charges agree. In the framework's notation the curvature is $\mathcal{F}=\tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar e_{\imath} e_{\jmath}$, and the density is the trace of the product of $\mathcal{F}$ with its dual; the integral is an integer for a configuration that is pure gradient at infinity. This is standard (Belavin, Polyakov, Schwarz, and Tyupkin 1975; 't Hooft 1976), and the instanton article computes the explicit configuration and the value $Ϙ=1$ for the one-instanton solution. That value is inherited here.
+with $F_{\imath\jmath}$ the components of the curvature and the trace over the symmetry index. That symmetry trace is written $\mathrm{tr}$, lower case, to distinguish it from the framework's own scalar pairing $\mathrm{Tr}$; it is the same object *Instantons and Solitons in Biquaternionic Form* writes with the capital symbol, so the two articles' charges agree. In the framework's notation the curvature is $\mathcal{F}=\tfrac12\sum_{\imath\jmath}F_{\imath\jmath}\bar e_{\imath} e_{\jmath}$, and the density is the trace of the product of $\mathcal{F}$ with its dual; the integral is an integer for a configuration that is pure gradient at infinity. This is standard (Belavin, Polyakov, Schwarz, and Tyupkin 1975; 't Hooft 1976), and the instanton article computes the explicit configuration and the value $Ϙ=1$ for the one-instanton solution. That value is inherited here.
 
 **The $\theta_{\mathrm{vac}}$ term.** The topological term is
 $$
@@ -52,7 +52,7 @@ S_{\mathrm{vac}} = \frac{\theta_{\mathrm{vac}}}{16\pi^2}\int d^4r\;\mathrm{tr}\b
 $$
 a total derivative term that does not affect the equations of motion in any sector of fixed $Ϙ$ but weights the sectors relative to one another in the path integral. It is this weighting, and only this weighting, that the $\theta_{\mathrm{vac}}$ vacuum encodes. The term is P- and T-odd, and it is the unique marginal operator built from the connections that is a total derivative and does not change the perturbative theory.
 
-**Why the framework's contribution is only the value space.** Nothing in the construction of $Ϙ$ or $S_{\mathrm{vac}}$ uses a biquaternion-specific fact: the charge is a standard topological invariant, the dual is the standard Hodge dual, and the trace is the standard gauge trace. What the framework can supply is (i) the space in which the *phase* lives, which is its centre, and (ii) the statement that the determinant whose phase the angle is has a phase only when the operator is non-central. Both are taken up in the next two sections.
+**Why the framework's contribution is only the value space.** Nothing in the construction of $Ϙ$ or $S_{\mathrm{vac}}$ uses a biquaternion-specific fact: the charge is a standard topological invariant, the dual is the standard Hodge dual, and the trace is the standard symmetry trace. What the framework can supply is (i) the space in which the *phase* lives, which is its centre, and (ii) the statement that the determinant whose phase the angle is has a phase only when the operator is non-central. Both are taken up in the next two sections.
 
 ## The $\theta_{\mathrm{vac}}$ Vacuum and the Central Phase
 
@@ -196,7 +196,7 @@ at small $\theta_{\mathrm{vac}}$, so that a nonzero $\xi$ is what makes $\theta_
 **Open.**
 
 - Whether the framework has any statement about the *value* of $\theta_{\mathrm{vac}}$, beyond housing it in the centre, is not addressed; the framework fixes the value space and not the value, exactly as it fixes the algebra and not the temperature.
-- Whether a genuinely biquaternion-valued gauge configuration (as opposed to a connection written with biquaternion notation) produces a $\theta_{\mathrm{vac}}$ dependence with a framework-specific structure is not addressed; the instanton article's configurations are the standard ones.
+- Whether a genuinely biquaternion-valued representative configuration (as opposed to a connection written with biquaternion notation) produces a $\theta_{\mathrm{vac}}$ dependence with a framework-specific structure is not addressed; the instanton article's configurations are the standard ones.
 - The construction of the large-local transformation operator on the Fock module, and the precise sense in which it is implemented by the central phase, is left to the Fock and connection articles.
 
 ## Summary
@@ -217,7 +217,7 @@ its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$ |
 | $Ϙ$ | Topological charge, $\frac{1}{16\pi^2}\int d^4r\,\mathrm{tr}(\sum_{\imath,\jmath}F_{\imath\jmath}\tilde F_{\imath\jmath})\in\mathbb{Z}$; equals the second Chern number $\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$ |
-| $\mathrm{tr}$ | Gauge Lie-algebra trace in the fundamental representation, distinct from the framework's $\mathrm{Tr}$ |
+| $\mathrm{tr}$ | Representative Lie-algebra trace in the fundamental representation, distinct from the framework's $\mathrm{Tr}$ |
 | $\theta_{\mathrm{vac}}$ | Topological angle; $\theta_{\mathrm{vac}}\sim\theta_{\mathrm{vac}}+2\pi$; lives in the central circle |
 | $S_{\mathrm{vac}}=\theta_{\mathrm{vac}} Ϙ$ | Topological term; a total derivative |
 | $\vert\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(i\theta_{\mathrm{vac}} Ϙ)\vert Ϙ\rangle$ | $\theta_{\mathrm{vac}}$ vacuum; central weighting |

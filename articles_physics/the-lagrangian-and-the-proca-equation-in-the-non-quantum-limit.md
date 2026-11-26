@@ -86,7 +86,7 @@ Two variations of one display, and a third for the constraint. The chart's actio
 
 The boundary term. The amplitude's variation produces one, because its block carries two derivatives; on a region with fixed amplitude on the boundary it vanishes, and on a region that reaches infinity the fall-off kills it. The frame's variation produces none, because the frame enters algebraically through $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ and through no derivative of its own beyond the covariant one.
 
-Why the constraint is not a choice. The Lorenz condition is the scalar part of the connection's variation, so it is one of the Euler–Lagrange equations and not a fixing the representative. In the massless limit the same variation gives an identity instead, and that change of status is the article's *The Truncation and Its Error* read from the variation side.
+Why the constraint is not a choice. The Lorenz condition is the scalar part of the connection's variation, so it is one of the Euler–Lagrange equations and not a fixing. In the massless limit the same variation gives an identity instead, and that change of status is the article's *The Truncation and Its Error* read from the variation side.
 
 ## The Constraints the Action Imposes: The Constraint Survives the Truncation
 

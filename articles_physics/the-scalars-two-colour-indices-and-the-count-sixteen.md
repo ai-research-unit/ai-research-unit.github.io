@@ -79,9 +79,9 @@ $$
 
 **Why no generator acts on a third index, stated as the declaration it is.** The symmetry group of the model is $\mathrm{SU}(4)$, and its fifteen generators act on the two colour indices and on nothing else. **The reason is not that a third index would need a sixteenth generator**: a $\mathrm{U}(1)$ acting on a new label would not have to enlarge $\mathrm{SU}(4)$ at all, and "fifteen is all the room there is" is a statement about the dimension of one factor, not about how many factors a model may have. **The reason is that the declaration names one factor.** A second factor acting on a new label is a different model, and this article counts this one.
 
-**And the copy index is the case that shows the choice is a ledger entry and not a theorem.** The model does carry an ungauged two-valued label, $α=1,2$, and **it sits on the fermion and on the Yukawa matrix, not on $Ξ$**: $\mathcal L_Y=y_{αβ}\,\bar\xi^{α†}Ξ\xi^{β}$, with $Ξ$ a singlet under $α$. **A copy index on $Ξ$ would make the count sixty-four rather than sixteen, and that is a different model** — one with a scalar matrix per copy instead of one shared matrix. [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html) says why the index sits where it does. **Sixteen is the count of the declared field, and the declaration is what fixes it.**
+**And the copy index is the case that shows the choice is a ledger entry and not a theorem.** The model does carry an not made local two-valued label, $α=1,2$, and **it sits on the fermion and on the Yukawa matrix, not on $Ξ$**: $\mathcal L_Y=y_{αβ}\,\bar\xi^{α†}Ξ\xi^{β}$, with $Ξ$ a singlet under $α$. **A copy index on $Ξ$ would make the count sixty-four rather than sixteen, and that is a different model** — one with a scalar matrix per copy instead of one shared matrix. [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html) says why the index sits where it does. **Sixteen is the count of the declared field, and the declaration is what fixes it.**
 
-**The colour pair does double duty, and that is why the matrix is not extravagant.** The same two indices give the gauge–scalar vertex its commutator and the Yukawa operator its singlet. **The group acts by conjugation, $Ξ\mapsto UΞU^{†}$, so the covariant derivative is a commutator and not a multiplication**:
+**The colour pair does double duty, and that is why the matrix is not extravagant.** The same two indices give the representative–scalar vertex its commutator and the Yukawa operator its singlet. **The group acts by conjugation, $Ξ\mapsto UΞU^{†}$, so the covariant derivative is a commutator and not a multiplication**:
 
 $$
 D_μΞ=\partial_μΞ-ig_4[A_μ,Ξ],
@@ -143,7 +143,7 @@ $$
 
 **Sixteen real components: fifteen from the algebra and one from the trace.** The representation is $\mathbf{15}\oplus\mathbf1=\mathbf4\otimes\bar{\mathbf4}$ in the colour indices, forced by the existence of the mass operator and not chosen for convenience.
 
-**Two labels, both made local.** No copy index, no family index on $Ξ$: the model's one ungauged label sits on the fermion and on the Yukawa matrix, and a copy index on $Ξ$ would be a different model with sixty-four components.
+**Two labels, both made local.** No copy index, no family index on $Ξ$: the model's one not made local label sits on the fermion and on the Yukawa matrix, and a copy index on $Ξ$ would be a different model with sixty-four components.
 
 **Thirty-two is the number to avoid, and it is the one that looks right.** It is the count of a general complex $4\times4$, a different field from a Hermitian one, and **the coupling article reads the count straight off the beta coefficient**: sixteen real components give $b_0=\tfrac{26}{3}$, thirty-two give $8$, and a two-valued label on the matrix gives $\tfrac{20}{3}$ — **each rung of that ladder moves $b_0$ by more than the two-loop term the running omits**, which is why the count has to be this one and not one step up.
 

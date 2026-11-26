@@ -239,7 +239,7 @@ so with the normalisation $\operatorname{tr}(X^{\dagger}Y)=2\delta$, **exactly h
 
 **The qualifier matters, and it is where the corpus changes register.** Inside $\mathfrak{su}(4)$ the composites are not new directions, and the algebra stays fifteen-dimensional. **At $M_C$ they are new fields all the same**, six redundant directions born with the copy index while the six leptoquarks acquire mass — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). So the count of massless vectors does not fall at the transition: six leave the kernel of $\operatorname{ad}(iD)$ and six arrive beside it.
 
-**What is left of the sentence, and it is the useful part.** Three of the six are the weak isospin the Standard Model keeps, and three belong to a factor the Standard Model does not keep, one direction of which is the raw material of hypercharge. **That sentence is about the four-factor phase, not about the fifteen**, and it is stated in [The Algebra of the Two Sectors](the-gauge-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html).
+**What is left of the sentence, and it is the useful part.** Three of the six are the weak isospin the Standard Model keeps, and three belong to a factor the Standard Model does not keep, one direction of which is the raw material of hypercharge. **That sentence is about the four-factor phase, not about the fifteen**, and it is stated in [The Algebra of the Two Sectors](the-algebras-of-the-two-sectors-colour-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html).
 
 ## The Six Arrays of $\mathfrak{so}(4)$ Are Not on the Grid Either
 
@@ -284,7 +284,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 
 ## The Scalars, Which Are Not on the Grid
 
-**A scalar is a field whose value is a vector in a representation, not a direction in the algebra, so no scalar occupies a cell.** The sector is listed here for one reason: **the count of what the gauge grid does not hold.**
+**A scalar is a field whose value is a vector in a representation, not a direction in the algebra, so no scalar occupies a cell.** The sector is listed here for one reason: **the count of what the connection grid does not hold.**
 
 | field | representation | real components | belongs to |
 | --- | --- | --- | --- |
@@ -292,7 +292,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one colo
 | $H$ | the electroweak bidoublet | $8$ | the four-factor phase |
 | $\Sigma$ | the adjoint scalar, $(\mathbf{15},\mathbf2,\mathbf2)$ | $120$ | the four-factor phase, and not minimal |
 
-**Six of $Ξ$'s sixteen components are eaten by the sextet.** The condensate is $\langleΞ\rangle=v\operatorname{diag}(-3,1,1,1)$ in the Hermitian matrix, and the six leptoquarks that acquire $32v^{2}$ acquire it by eating the six components that point along their own planes. **The count is forced by the coset**: $15-9=6$, one real component per broken generator. **An eaten component has no name of its own: it is the third polarisation of the boson that ate it**, which is why the eaten six reappear on the gauge grid and not in the scalar list.
+**Six of $Ξ$'s sixteen components are eaten by the sextet.** The condensate is $\langleΞ\rangle=v\operatorname{diag}(-3,1,1,1)$ in the Hermitian matrix, and the six leptoquarks that acquire $32v^{2}$ acquire it by eating the six components that point along their own planes. **The count is forced by the coset**: $15-9=6$, one real component per broken generator. **An eaten component has no name of its own: it is the third polarisation of the boson that ate it**, which is why the eaten six reappear on the connection grid and not in the scalar list.
 
 **The other ten components of $Ξ$ survive here.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum in the Hermitian matrix, and they are the ones the Higgs sector below $M_C$ is built from. **[The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) is the census of that ledger.** **The corpus's one caveat stands and governs this article too**: the scalar content is the one place in the frame with no algebraic guidance at all.
 

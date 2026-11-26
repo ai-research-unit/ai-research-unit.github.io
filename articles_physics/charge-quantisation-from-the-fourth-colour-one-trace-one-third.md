@@ -164,13 +164,13 @@ $$
 \operatorname{tr}\bigl((T^{15})^{\dagger}T^{15}\bigr)=\tfrac{1}{24}\cdot 12=\tfrac12 .
 $$
 
-**The conversion between the last two is one number**, $B-L=\sqrt{\tfrac{8}{3}}\,T^{15}$, because $\tfrac43$ divided by $\tfrac12$ is $\tfrac83$. A reader who meets $T^{15}$ in a gauge article and $iD$ in the array articles is meeting one direction in two normalisations, and the ratio of the norms is the dictionary.
+**The conversion between the last two is one number**, $B-L=\sqrt{\tfrac{8}{3}}\,T^{15}$, because $\tfrac43$ divided by $\tfrac12$ is $\tfrac83$. A reader who meets $T^{15}$ in a connection article and $iD$ in the array articles is meeting one direction in two normalisations, and the ratio of the norms is the dictionary.
 
 | name | array | norm | where it is used |
 |---|---|---|---|
 | $iD$ | $\operatorname{diag}(-3i,i,i,i)$ | $12$ | the array articles, and this one |
 | $B-L$ | $\operatorname{diag}(-1,\tfrac13,\tfrac13,\tfrac13)$ | $\tfrac43$ | the charge statements, and this one |
-| $T^{15}$ | $\operatorname{diag}(-3,1,1,1)/\sqrt{24}$ | $\tfrac12$ | the gauge articles and the running |
+| $T^{15}$ | $\operatorname{diag}(-3,1,1,1)/\sqrt{24}$ | $\tfrac12$ | the connection articles and the running |
 
 **The displayed array in the corpus's own notation is $D$, not $iD$.** The physics articles print $D=\operatorname{diag}(-3,1,1,1)$ and the generator is $iD$; the difference is the factor that makes the array anti-Hermitian, which the boson articles discuss and on which no charge statement depends. **This article prints $D$ in its charge statements and $iD$ when it is speaking of the generator**, and that is the whole of the convention.
 
@@ -253,7 +253,7 @@ Fifteen recomputations, all on the quoted array, at $\operatorname{tr}$ in the f
 - [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The declaration (A), which is the one input the quotations do not contain.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The array's address in the group, and why $B-L$ rather than hypercharge is what $\mathrm{SU}(4)$ supplies.
 - [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). Where $Y=T_{3R}+\tfrac12(B-L)$ comes from, and the mixing that leaves the corner's eigenvalue alone.
-- [The Electroweak Symmetry group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). The anomaly system solved in full: the three rays the comparison section trades against one trace.
+- [The Electroweak Symmetry group and the Hypercharge Assignment](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html). The anomaly system solved in full: the three rays the comparison section trades against one trace.
 - [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation.html). The four rows, and why they vanish identically here.
 - [The Quantum Numbers Below the Breaking: Colour, $B-L$, Weak Isospin and the Electric Charge](the-quantum-numbers-below-the-breaking-colour-b-l-weak-isospin-and-the-electric-charge.html). The exactness that quotation four establishes, read as a table of fates.
 - [The Matching at $M_C$](matching-at-m-c-the-four-quantities-that-cross-and-where-the-masses-come-from.html). The chain whose first step the corner survives.

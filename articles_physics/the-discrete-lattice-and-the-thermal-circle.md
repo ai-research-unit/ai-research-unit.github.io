@@ -77,7 +77,7 @@ $$
 
 A central shift by $2\pi i k\,e_t$ and a rotation shift by $2\pi\ell\,\vec U$ are both allowed on their own. The half-shifts $\pi i e_t$ and $\pi\vec U$ occur only together, because the two eigenvalue logarithms must be shifted in step. The matching is the parity condition.
 
-This is the **gauge of the logarithm**, not a thermal spectrum. It is a lattice of generators, it depends on the element through the axis $\vec U$, and it is the ambiguity of one logarithm rather than a set of elements of the group. The Matsubara lattice is the character group of the compact thermal circle and is infinite and periodic. The lattice $L(\tilde Q)$ is a rank-two lattice inside the diagonal part and has no thermal reading. Identifying the two would turn a gauge ambiguity into a spectrum, and the parity matching is what blocks it.
+This is the **choice of representative for the logarithm**, not a thermal spectrum. It is a lattice of generators, it depends on the element through the axis $\vec U$, and it is the ambiguity of one logarithm rather than a set of elements of the group. The Matsubara lattice is the character group of the compact thermal circle and is infinite and periodic. The lattice $L(\tilde Q)$ is a rank-two lattice inside the diagonal part and has no thermal reading. Identifying the two would turn a representative ambiguity into a spectrum, and the parity matching is what blocks it.
 
 **The boundary.** The lattice is the kernel of the exponential on the diagonal part, so it is a statement about one element and one chosen logarithm. It is not a lattice of the algebra, not a lattice of the group, and not a temperature. The compact central phase gives the $2\pi i$ period of the scalar part. The rotation angle gives the $2\pi$ period of the vector part. The parity condition is what keeps the two periods compatible.
 
@@ -133,7 +133,7 @@ named as a gap and not proposed as a formula.
 
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the parity-matched lattice and its two cosets.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the kernel of the exponential and the eigenvalue formula.
-- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the kernel as a gauge of the logarithm and for the boundary that keeps it apart from the thermal circle.
+- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the kernel as a representative of the logarithm and for the boundary that keeps it apart from the thermal circle.
 - [Quaternion Orders and Finite Groups of Invertibles](../articles_maths/quaternion-orders-and-finite-groups-of-invertibles.html), for the orders, the finite groups of invertibles and the infinite group of invertibles of the complex order.
 - [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html), for the thermal circle, the Matsubara frequencies and the
   partition function.
@@ -141,5 +141,5 @@ named as a gap and not proposed as a formula.
   Biquaternion Framework*, for the KMS periodicity and the modular flow.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the central phase that
   the thermal circle realises.
-- [The Four Products: Composition, Probability, Causality and the Indefinite Form](the-four-products-composition-probability-causality-and-gauge.html), for the discrete charge from the compact
+- [The Four Products: Composition, Probability, Causality and the Indefinite Form](the-four-products-composition-probability-causality-and-the-indefinite-form.html), for the discrete charge from the compact
   group.

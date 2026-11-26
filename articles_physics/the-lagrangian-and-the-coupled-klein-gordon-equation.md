@@ -181,7 +181,7 @@ $$
 
 up to the current's normalisation, with $F_{\jmath\imath}=\partial_{\jmath} A_{\imath}-\partial_{\imath} A_{\jmath}$: the rate at which the field does work on the matter. The total tensor, matter plus field, is conserved, and that is the statement that the coupled system has no external source. The article states the matter identity and the total conservation and does not compute the field's tensor, which is the Maxwell article's.
 
-**What the stress tensor does not need.** No improvement term for symmetry, because the tensor is already symmetric; no improvement term for the trace, because the trace of the matter tensor is the mass term and the mass term is what the trace is expected to be; and no gauge repair, because the tensor is built from covariant derivatives. The free companion's stress discussion carries over with the substitution of the derivative and one new identity, the Lorentz force.
+**What the stress tensor does not need.** No improvement term for symmetry, because the tensor is already symmetric; no improvement term for the trace, because the trace of the matter tensor is the mass term and the mass term is what the trace is expected to be; and no representative repair, because the tensor is built from covariant derivatives. The free companion's stress discussion carries over with the substitution of the derivative and one new identity, the Lorentz force.
 
 ## What the Principle Adds and What It Relabels: And What It Does Not
 
@@ -248,8 +248,8 @@ with $J_{\imath}=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},
 - [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same theory in the chart.
 - [The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-coupled-klein-gordon-equation-in-polar-variables.html), for the action in the chart.
 - [The Lagrangian and the Klein–Gordon Equation](the-lagrangian-and-the-klein-gordon-equation.html), for the free action and the conjugation checks.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator, the curvature and the second Noether theorem.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the operator, the curvature and the second Noether theorem.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the field term and the inhomogeneous equation.
 - [The Lagrangian and the Coupled Proca Equation](the-lagrangian-and-the-coupled-proca-equation.html), for the contrast where the potential is complex and the field term's normalisation is open.
 - [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html), for the contrast where the current needs an adjoint row.

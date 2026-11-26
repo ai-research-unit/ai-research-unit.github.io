@@ -56,7 +56,7 @@ The sign convention. The curvature terms enter with $-\tfrac14$, the scalar kine
 The sector. Two curvatures and their squares,
 
 $$
-\mathcal{L}_{\mathrm{gauge}}=-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14\sum_{\imath,\jmath}B_{\imath\jmath}B_{\imath\jmath},
+\mathcal{L}_{\mathrm{con}}=-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14\sum_{\imath,\jmath}B_{\imath\jmath}B_{\imath\jmath},
 $$
 
 with no mass term. A mass term $\tfrac12M^2W_{\imath} W_{\imath}$ would break the local symmetry explicitly and make the theory non-renormalizable, so the action cannot contain the masses at this stage; they must come from somewhere else, and the next paragraph is that somewhere.
@@ -105,7 +105,7 @@ The mixing angle is not a new parameter: it is $\arctan(g_{\mathrm Y}/g)$, fixed
 
 Why the linear combination and not another. The mass matrix in the $(W_3,B)$ plane is $\frac{v^2}{8}\bigl(\begin{smallmatrix}g^2&-gg_{\mathrm Y}\\-gg_{\mathrm Y}&g_{\mathrm Y}^2\end{smallmatrix}\bigr)$, whose determinant is zero. A rank-one $2\times2$ matrix has one zero eigenvalue and one nonzero one, and the zero eigenvector is $(g_{\mathrm Y},g)$-normalized, which is the photon. The vanishing determinant is the statement that the unbroken subgroup is one-dimensional, and it is a consequence of the rank of the doublet's generator set and not of a tuning.
 
-**The pairing is the Hermitian norm, and it is what makes the scalar's kinetic term real and positive.** $\sum_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^{\dagger}(D_{\imath}\omicron_{\mathrm{hgs}})$ is a sum of squared norms, real and non-negative term by term. The gauge kinetic terms are real because $W_{a,\imath\jmath}$ and $B_{\imath\jmath}$ are real in components and their squares carry the corpus's sign rule.
+**The pairing is the Hermitian norm, and it is what makes the scalar's kinetic term real and positive.** $\sum_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^{\dagger}(D_{\imath}\omicron_{\mathrm{hgs}})$ is a sum of squared norms, real and non-negative term by term. The connection kinetic terms are real because $W_{a,\imath\jmath}$ and $B_{\imath\jmath}$ are real in components and their squares carry the corpus's sign rule.
 
 Why the scalar needs the dagger and the connections do not. The scalar is complex, so its kinetic term needs a conjugate to be real; the connections are real, so theirs does not. The asymmetry is a statement about the representations and not about the pairing.
 
@@ -113,7 +113,7 @@ Three coefficients: two couplings and one vacuum value. $g$ and $g_{\mathrm Y}$ 
 
 The potential's coefficients are not independent of them. $\digamma_{\mathrm{qtc}}$ sets the radial mass and $v$ sets the minimum; the combination $\sqrt{2\digamma_{\mathrm{qtc}}}\,v$ is the Higgs mass, and it is the one number of the sector that the action does not relate to the connection couplings. That independence is why the Higgs mass is a measurement and the $W$ and $Z$ masses are predictions.
 
-The selection rule is local $SU(2)_L\times\mathrm{U}(1)_Y$ invariance, and it forbids exactly two things. A gauge mass term is forbidden, which is why the masses come from the scalar; a bare fermion mass is forbidden, which is why the Yukawa couplings exist. Every term in the action is the most general one of dimension four invariant under the group, and the count of those terms is the count of parameters the sector has.
+The selection rule is local $SU(2)_L\times\mathrm{U}(1)_Y$ invariance, and it forbids exactly two things. A connection mass term is forbidden, which is why the masses come from the scalar; a bare fermion mass is forbidden, which is why the Yukawa couplings exist. Every term in the action is the most general one of dimension four invariant under the group, and the count of those terms is the count of parameters the sector has.
 
 Reality does not buy the masses, the mixing angle or $\rho=1$. Three things the reality of the action does not supply:
 
@@ -139,7 +139,7 @@ $$
 -D_{\imath} D_{\imath}\omicron_{\mathrm{hgs}}-\frac{\partial V}{\partial\omicron_{\mathrm{hgs}}^{\dagger}}=0 ,
 $$
 
-the made local Klein–Gordon equation with a potential. At the vacuum this equation is satisfied identically, which is the statement that the vacuum is stationary and that the masses computed above are consistent with it.
+the local Klein–Gordon equation with a potential. At the vacuum this equation is satisfied identically, which is the statement that the vacuum is stationary and that the masses computed above are consistent with it.
 
 **The self-consistency that the two variations must satisfy.** The current must be conserved, $D_{\imath} j_{a,\imath}=0$, or the equation for $W_{a,\imath}$ is inconsistent because the left side is divergenceless by the Bianchi identity. The conservation is not assumed: it follows from the scalar's equation combined with the antisymmetry of $W_{a,\imath\jmath}$, and it holds because the scalar's covariant derivative is the same object in both equations. A mass term written by hand would break this, which is the technical reason the masses must come from the scalar.
 
@@ -147,19 +147,19 @@ The check that would catch a factor. At the vacuum, $j_{a,\imath}=0$ for the unb
 
 ## The Constraints the Action Imposes: Four Gauss Laws and One Massless Mode
 
-The constraint structure. Each connection brings a first-class constraint, the Gauss law $D_j W_{a,0j}=j_{a,0}$, so four constraints act on eight gauge components, and the three Goldstones are not removed by the constraints but absorbed as longitudinal modes. Counting polarisation states before and after the breaking,
+The constraint structure. Each connection brings a first-class constraint, the Gauss law $D_j W_{a,0j}=j_{a,0}$, so four constraints act on eight representative components, and the three Goldstones are not removed by the constraints but absorbed as longitudinal modes. Counting polarisation states before and after the breaking,
 
 $$
 \underbrace{8}_{\text{four vectors, massless}}+\underbrace{4}_{\text{four scalars}}\;=\;\underbrace{9}_{\text{three massive vectors}}+\underbrace{2}_{\text{photon}}+\underbrace{1}_{\text{radial scalar}}\;=\;12 ,
 $$
 
-so no mode is lost and none is added: three of the four scalars become the longitudinal modes of the three vectors that acquire a mass, and what remains is three massive vectors of three modes each, a massless vector of two and one radial scalar. In particles rather than modes the same spectrum is five states, $W^{+}$, $W^{-}$, $Z$, $A$ and $h$. The count is the same in any gauge; the distribution is not.
+so no mode is lost and none is added: three of the four scalars become the longitudinal modes of the three vectors that acquire a mass, and what remains is three massive vectors of three modes each, a massless vector of two and one radial scalar. In particles rather than modes the same spectrum is five states, $W^{+}$, $W^{-}$, $Z$, $A$ and $h$. The count is the same in any representative; the distribution is not.
 
 Why the Goldstones are removed and not the modes. The scalar's four components are three Goldstones and one radial mode, and the three Goldstones become the longitudinal polarizations of the three massive connections. The bookkeeping is exact: three massless connections would have six polarizations in total counting the photon, and three massive ones have nine, so three polarizations must be supplied, and the Goldstones supply them.
 
 The one massless combination. The photon's masslessness is the vanishing eigenvalue of the mass matrix, and it is a constraint in the technical sense: the unbroken $\mathrm{U}(1)_{\mathrm{em}}$ generator annihilates the vacuum, so its Gauss law survives as a constraint and the corresponding field stays massless. That is the same mechanism as in the electromagnetic article, with the generator being the combination $Q=T_3+Y$.
 
-The check that the count is gauge independent. In the $R_\xi$ gauge the Goldstones are kept with $\xi$-dependent masses and the same twelve modes over the same five states appear; in the unitary fixing condition they are removed and the gauge propagators take their Proca form. The two descriptions differ in what is counted and agree in what is physical, which is the content of the fixing the representative article for this sector.
+The check that the count is independent of the representative. In the $R_\xi$ representative the Goldstones are kept with $\xi$-dependent masses and the same twelve modes over the same five states appear; in the unitary fixing condition they are removed and the representative propagators take their Proca form. The two descriptions differ in what is counted and agree in what is physical, which is the content of the fixing the representative article for this sector.
 
 ## The Structural Consequence: Masses Are Couplings Times a Vacuum Value
 
@@ -169,7 +169,7 @@ The ratio, and the isospin that fixes it. The two masses differ because the doub
 
 The abelian formula is the same formula. The corpus's charged-scalar formula $M_A=\kappa v$ for a $\mathrm{U}(1)$ charge $\kappa$ reproduces $M_W=gv/2$ with $\kappa=g/2$, which is the effective charge of the doublet's component. The two derivations agree, and the agreement is the check that the mass mechanism is one mechanism and not two.
 
-**What the structure predicts and what it does not.** It predicts the ratio $\rho=1$ and the relation $e=g\sin\theta_W$; it does not predict $v$, $g$ or $g_{\mathrm Y}$, which are three measurements written as two couplings and one scale. The count of the sector's parameters is the Yukawa article's, and this article's contribution to it is that the gauge masses add none.
+**What the structure predicts and what it does not.** It predicts the ratio $\rho=1$ and the relation $e=g\sin\theta_W$; it does not predict $v$, $g$ or $g_{\mathrm Y}$, which are three measurements written as two couplings and one scale. The count of the sector's parameters is the Yukawa article's, and this article's contribution to it is that the connection masses add none.
 
 ## The Noether Currents: The Electroweak Currents and the Sign of the Charge
 
@@ -219,7 +219,7 @@ The distinction that matters. The action is symmetric and the vacuum is not. Eve
 
 ## Summary
 
-The action. Gauge kinetic terms plus one scalar's covariant kinetic term and potential. Varying the connections gives the Yang–Mills equations with the scalar current as source; evaluating the scalar at its minimum turns the kinetic term into masses $M_W=gv/2$ and $M_Z=M_W/\cos\theta_W$.
+The action. Connection kinetic terms plus one scalar's covariant kinetic term and potential. Varying the connections gives the Yang–Mills equations with the scalar current as source; evaluating the scalar at its minimum turns the kinetic term into masses $M_W=gv/2$ and $M_Z=M_W/\cos\theta_W$.
 
 The three findings. The masses are not parameters but products of a coupling and the vacuum value, so the action needs no mass term and forbids one. The ratio $\rho=1$ is a consequence of the single doublet. The photon's masslessness is the zero eigenvalue of a rank-three mass matrix.
 
@@ -242,6 +242,6 @@ The boundary. Both lines are carried by the algebra, since the compact factor is
 
 - [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) — the parent: the mixing, the pole observables and the effective angle.
 - [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html) — the same action in element form, with the four Gauss constraints written out.
-- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) — the vacuum and the potential's minimum.
+- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html) — the vacuum and the potential's minimum.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) — this sector inside the assembled action.
-- [Fixing the Representative in the Electroweak Theory: $R_\xi$ Conditions, Ghosts and the Goldstone Equivalence Theorem](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html) — the representative-dependent bookkeeping of the same count.
+- [Fixing the Representative in the Electroweak Theory: $R_\xi$ Conditions, Ghosts and the Goldstone Equivalence Theorem](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html) — the representative-dependent bookkeeping of the same count.

@@ -56,7 +56,7 @@ whose massless case $\tilde\nabla_\Phi\tilde{F}=0$ is the source-free Maxwell eq
 
 ### The Lorenz Condition Is a Consequence
 
-For the Maxwell field the Lorenz condition $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=0$ is one gauge among many, and the whole difficulty of the massless quantization is that the algebra does not select it. For the Proca field it is not a choice of representative at all. Take the divergence of the field equation:
+For the Maxwell field the Lorenz condition $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=0$ is one representative among many, and the whole difficulty of the massless quantization is that the algebra does not select it. For the Proca field it is not a choice of representative at all. Take the divergence of the field equation:
 
 $$
 \bigl\langle\tilde\nabla_\Phi,\ \tilde\nabla_\Phi\tilde F-\mu^2\tilde A_{\Phi}\bigr\rangle_{\natural}
@@ -80,7 +80,7 @@ $$
 = \mu^2 S,
 $$
 
-so that operating on the biquaternion equation with $(\tilde\nabla_\Phi)^{\natural}$ and projecting to the scalar part gives $\mu^2 S=0$, hence $S=0$ for $\mu\neq0$. The left-hand side vanishes *algebraically* because $\tilde{F}$ has vanishing scalar part, which is the definition of the field strength, and because $\Box_\Phi$ is central and scalar. This is the genuinely algebraic content of the statement: the Lorenz condition is forced by the antisymmetry of the field strength together with the centrality of the d'Alembertian, and it is the mass term that makes it a condition on the field rather than on the gauge.
+so that operating on the biquaternion equation with $(\tilde\nabla_\Phi)^{\natural}$ and projecting to the scalar part gives $\mu^2 S=0$, hence $S=0$ for $\mu\neq0$. The left-hand side vanishes *algebraically* because $\tilde{F}$ has vanishing scalar part, which is the definition of the field strength, and because $\Box_\Phi$ is central and scalar. This is the genuinely algebraic content of the statement: the Lorenz condition is forced by the antisymmetry of the field strength together with the centrality of the d'Alembertian, and it is the mass term that makes it a condition on the field rather than on the representative.
 
 With $S=0$ the field equation reduces to the componentwise massive wave equation
 
@@ -182,7 +182,7 @@ $$
 \boxed{\;\frac{1}{2}\left(8-2\right) = 3\;}
 $$
 
-field degrees of freedom, against the massless count $\frac12(8-2\times2)=2$. The second-class system no longer generates a local transformation, and the constraint must be solved rather than used to fix a gauge.
+field degrees of freedom, against the massless count $\frac12(8-2\times2)=2$. The second-class system no longer generates a local transformation, and the constraint must be solved rather than used to fix a representative.
 
 The system is quantized by the Dirac procedure. The second-class constraints are imposed strongly, $\pi_{\mathrm{fop},0}=0$ and $A_0=-\mu^{-2}\sum_i\partial/\partial R_i\,\pi_{\mathrm{fop},i}$, and the canonical bracket is replaced by the Dirac bracket, whose only effect on the independent variables is to remove the constraint directions. After the reduction the three spatial components $A_i$ and their momenta are unconstrained, and the equal-time bracket is the canonical one on that three-dimensional space. In the notation of the Maxwell companion the two constraints are the scalar parts $\mathrm{Sc}(\tilde\pi_{\mathrm{id}})\approx0$ and $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\pi_{\mathrm{id}})-\mu^2A_0\approx0$ of the momentum biquaternion, so that the constraint structure is again written with the same scalar-part operator, now deformed by the mass.
 

@@ -301,7 +301,7 @@ What the algebra supplies and what is imported:
 
 Two things the algebra contributes are not transcription.
 
-- Transversality is structural. The self-energy must lie in the projector $P$, and $P$ is the object that makes the vector propagator invertible. So the same algebra that fixed the gauge produces the tensor structure of the vacuum polarisation, and no new machinery is needed.
+- Transversality is structural. The self-energy must lie in the projector $P$, and $P$ is the object that makes the vector propagator invertible. So the same algebra that fixed the representative produces the tensor structure of the vacuum polarisation, and no new machinery is needed.
 - The count is a dimension. The three parameters are the dimension of a quotient of the eight Taylor coefficients by five constraints, and a dimension is exactly what a linear-algebra framework can state without knowing the dynamics.
 
 What the algebra does not contribute is the numerical values, and the *existence* of the three parameters as measurements. The framework can say why three combinations survive; it cannot say what they are worth, because their worth is set by the particle content, and the particle content has no framework route.
@@ -349,9 +349,9 @@ The framework supplies the transversality of the self-energy through the fixing 
 
 ## Further Reading
 
-- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The tree-level masses and $\rho=1$ that the subtraction of this article refers to.
+- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html). The tree-level masses and $\rho=1$ that the subtraction of this article refers to.
 - [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-and-the-three-neutral-states.html). The three angles and the scheme discipline that §*The Scheme, Stated Once* repeats.
-- [Fixing the Representative in the Electroweak Theory: $R_\xi$ Conditions, Ghosts and the Goldstone Equivalence Theorem](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html). The projectors $P$ and $L$ and the Ward identity that force the self-energy to be transverse.
+- [Fixing the Representative in the Electroweak Theory: $R_\xi$ Conditions, Ghosts and the Goldstone Equivalence Theorem](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html). The projectors $P$ and $L$ and the Ward identity that force the self-energy to be transverse.
 - [Custodial Symmetry and the Rho Parameter: From Accidental to Local](custodial-symmetry-and-the-rho-parameter.html). The group-theoretic content of the custodial relation, and the earlier use of $\alpha T\approx\rho-1$.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The parameter table and the scheme column that $S$, $T$ and $U$ are not in.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The sign rule that puts a corpus action beside a standard one.

@@ -104,7 +104,7 @@ The multiplicities survive at $\nu_m=0$ only as a limit, and the limit is degene
 
 ## The Rank, On and Off the Shell
 
-**Off the shell the symbol is invertible and the kernel is empty.** At $2\pi\nu_t'=1$, $2\pi\vec\nu_\Phi=(0.3,0.2,0.1)$ and $2\pi\nu_m=0.7$ the singular values are $\{0.948946,\,0.37,\,0.37,\,0.191054\}$, so the rank is four and $\dim\ker\sigma=0$. The smallest singular value is $0.191$, not small: the symbol is comfortably invertible, and the propagator exists with no gauge ambiguity to fix.
+**Off the shell the symbol is invertible and the kernel is empty.** At $2\pi\nu_t'=1$, $2\pi\vec\nu_\Phi=(0.3,0.2,0.1)$ and $2\pi\nu_m=0.7$ the singular values are $\{0.948946,\,0.37,\,0.37,\,0.191054\}$, so the rank is four and $\dim\ker\sigma=0$. The smallest singular value is $0.191$, not small: the symbol is comfortably invertible, and the propagator exists with no representative ambiguity to fix.
 
 On the shell the rank is one. At $2\pi\nu_t'=\sqrt{0.63}$ the singular values are $\{0.77,0,0,0\}$, so the rank is one and the kernel is three-dimensional. The one surviving direction is the wave number itself, and the three annihilated directions span the Lorenz plane. The two statements are one computation:
 

@@ -18,7 +18,7 @@ $$
 
 with $\tau_{a}=\sigma_{a}/2$ the generators in the doublet, so that $T_3$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T_3+Y$. The potential is $V(\omicron_{\mathrm{hgs}})=-\mu^{2}\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}}+\digamma_{\mathrm{qtc}}(\omicron_{\mathrm{hgs}}^{\dagger}\omicron_{\mathrm{hgs}})^{2}$ with $\mu^{2}>0$ and $\digamma_{\mathrm{qtc}}>0$. The measure is $\mathrm{d}^{4}x$; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $(D_{\imath}\omicron_{\mathrm{hgs}})^{\dagger}D_{\imath}\omicron_{\mathrm{hgs}}=\sum_{\imath}\varepsilon_{\imath}(D_{\imath}\omicron_{\mathrm{hgs}})^{\dagger}D_{\imath}\omicron_{\mathrm{hgs}}$ carries the sign the mostly-minus literature carries; and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
 
-Two conventions, both settled by the corpus. The hypercharge here is $Y$, not the reference tables' $Y_W=2Y$: the corpus writes $Q=T_3+Y$ with $Y_{\mathrm{hch}}=+\tfrac12$, as [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) fixes it and as [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) uses it. Only the product $g_{\mathrm Y}Y$ enters any display, so a reader who arrives with $Y_W$ must halve every hypercharge and change no physical statement. The sign of the coupling in $D_{\imath}$ is likewise the corpus's, $+ig$; the opposite choice, $-ig$, is the same theory with $g\mapsto-g$, and every mass below is quadratic in $g$ and unchanged.
+Two conventions, both settled by the corpus. The hypercharge here is $Y$, not the reference tables' $Y_W=2Y$: the corpus writes $Q=T_3+Y$ with $Y_{\mathrm{hch}}=+\tfrac12$, as [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html) fixes it and as [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html) uses it. Only the product $g_{\mathrm Y}Y$ enters any display, so a reader who arrives with $Y_W$ must halve every hypercharge and change no physical statement. The sign of the coupling in $D_{\imath}$ is likewise the corpus's, $+ig$; the opposite choice, $-ig$, is the same theory with $g\mapsto-g$, and every mass below is quadratic in $g$ and unchanged.
 
 **One convention is a warning.** The corpus's biquaternion algebra carries the $U(1)$ connection exactly, and it carries the $SU(2)$ group exactly too: the compact factor is $SU(2)$ itself, the unit real quaternions $\mathrm{Spin}(3)=S^{3}$, so the connection the algebra writes is the one electroweak theory needs. What it does not carry is the way electroweak theory uses that group — a doublet chosen independently of the spin, and a chiral action on one letter. The electroweak articles state both halves. So the displays below are in the component dictionary, which is exact, and the biquaternionic translation is claimed only where the electroweak articles claim it.
 
@@ -64,19 +64,19 @@ $$
 
 and varying the fermions gives their covariant Dirac equations.
 
-The constraint. Take the time component of the gauge equations and the divergence of their spatial part. The $\mu=0$ components are Gauss's law for each generator, four constraints and not evolution equations; the divergence of the spatial equations reproduces them, because the currents are covariantly conserved by the matter equations. The non-Abelian case adds a term: the current's conservation is $D_{\imath} J_{a,\imath}=0$ with the connection in the derivative, and the constraint's consistency uses exactly that.
+The constraint. Take the time component of the connection equations and the divergence of their spatial part. The $\mu=0$ components are Gauss's law for each generator, four constraints and not evolution equations; the divergence of the spatial equations reproduces them, because the currents are covariantly conserved by the matter equations. The non-Abelian case adds a term: the current's conservation is $D_{\imath} J_{a,\imath}=0$ with the connection in the derivative, and the constraint's consistency uses exactly that.
 
-The boundary term. Each variation is first or second order as its parent is; the gauge variations are second order and their surface terms are killed by holding the field and its normal derivative fixed. The scalar's variation is second order and the same condition applies.
+The boundary term. Each variation is first or second order as its parent is; the local variations are second order and their surface terms are killed by holding the field and its normal derivative fixed. The scalar's variation is second order and the same condition applies.
 
 **What the variation does not give.** It does not give the ghost terms, the fixing terms or the BRST structure. Those belong to the quantised theory, which this family does not contain; the corpus's $R_\xi$ article states them for the standard theory and is not this family's.
 
 ## The Constraints the Action Imposes
 
-Four Gauss laws, one per generator, and one orbit. The unbroken action's constraints are the four $\mu=0$ gauge equations, $D_j W_{a,j0}=\rho_{a}$ and $\partial_j B^{j0}=\rho^{Y}$, conditions on the initial data for each generator. The orbit is the four-function local group, acting on the connections and the doublet together.
+Four Gauss laws, one per generator, and one orbit. The unbroken action's constraints are the four $\mu=0$ connection equations, $D_j W_{a,j0}=\rho_{a}$ and $\partial_j B^{j0}=\rho^{Y}$, conditions on the initial data for each generator. The orbit is the four-function local group, acting on the connections and the doublet together.
 
 The count, before and after. Before breaking: four connections, two polarisations each if massless — eight; one complex doublet, four real scalars; total twelve. After breaking: three massive vectors, three polarisations each — nine; one massless vector, two — two; one physical scalar — one; total twelve. The count is preserved, and the three that moved are the three would-be Goldstone modes, which became the longitudinal polarisations.
 
-Why the constraint is not the choice of representative. As in the Maxwell article, the constraint is the action's content and the choice of representative is a representative's selection. The unitary chart is a choice: it fixes the gauge by putting the Goldstone modes inside the vectors. A reader who confuses the two will think that the breaking removed degrees of freedom; the count above shows it did not.
+Why the constraint is not the choice of representative. As in the Maxwell article, the constraint is the action's content and the choice of representative is a representative's selection. The unitary chart is a choice: it fixes the representative by putting the Goldstone modes inside the vectors. A reader who confuses the two will think that the breaking removed degrees of freedom; the count above shows it did not.
 
 **What the massive vectors' constraint is.** A massive vector's time component is still constrained — the Proca article's statement — so the three polarisations are two transverse and one longitudinal, and the longitudinal one is the Goldstone mode in the chart. The corpus can therefore state the Higgs mechanism as a count and not as a metaphor.
 
@@ -145,8 +145,8 @@ $$
 ## Further Reading
 
 - *Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall*, for what the algebra carries and what it does not.
-- *Electroweak Symmetry Breaking: The Doublet, the Potential and the Connection Masses*, for the masses and the count this article derives from the action.
+- *Electroweak Symmetry Breaking: The Doublet, the Potential and the Vector-Boson Masses*, for the masses and the count this article derives from the action.
 - *The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$*, for the conventions.
-- *Choice of representative in the Electroweak Theory: R-xi Fixing conditions, Ghosts and the Goldstone Equivalence Theorem*, for the quantised structures this article does not contain.
+- *Fixing the Representative in the Electroweak Theory: R-xi Fixing conditions, Ghosts and the Goldstone Equivalence Theorem*, for the quantised structures this article does not contain.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. II*, for the quantised electroweak theory.
 - Chris Quigg, *Gauge Theories of the Strong, Weak and Electromagnetic Interactions*, for the classical breaking and the mass relation.

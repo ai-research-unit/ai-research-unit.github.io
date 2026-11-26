@@ -32,7 +32,7 @@ The second term is a pure vector, so a central field cannot satisfy the covarian
 
 *Third, the carrier survives the coupling, and the coupling's reach is two structural zeros.* The free equation is one complex equation on the centre because $\Box_\Phi$ is central, and the coupled equation is one complex equation for the same reason; a value that leaves the centre would give four charged scalars sharing one connection, and the connection cannot mix them either — what the curvature does instead is convert a scalar coefficient into vector ones, which is why the algebra's own covariant square is not an equation for the central field (§*The Field Equation and the Carrier*).
 
-*Fourth, the current the free article already has becomes the source of the inhomogeneous Maxwell equation, and becomes gauge invariant in the same step.* The pairing is the algebra's own, so no adjoint row is needed and no bilinear has to be repaired; the current is conserved by the equation, and its conservation is the integrability condition of the connection's equation (§*The Current*, §*The Source*).
+*Fourth, the current the free article already has becomes the source of the inhomogeneous Maxwell equation, and becomes locally invariant in the same step.* The pairing is the algebra's own, so no adjoint row is needed and no bilinear has to be repaired; the current is conserved by the equation, and its conservation is the integrability condition of the connection's equation (§*The Current*, §*The Source*).
 
 **What is not claimed.** No new solution, no new prediction, no new particle. The equation is the standard minimally coupled scalar equation and the statements are the standard ones; the algebra's contribution is that the coupling is one element rather than four rules, that the free theory's two writings separate only when the connection is switched on, and that the current and the source are one object read twice.
 
@@ -99,7 +99,7 @@ D_{\imath}'D_{\imath}'\big(e^{\frac{2\pi i\,ϙ\Lambda}{h}}\tilde\Xi\big)
 =e^{\frac{2\pi i\,ϙ\Lambda}{h}}D_{\imath} D_{\imath}\tilde\Xi ,
 $$
 
-because the two derivatives act on the same central unit and the cancellation of the gauge gradients repeats slot by slot. So $\Box_{\mathrm{gco},\Phi}$ is covariant, the mass term is invariant (two factors, opposite phases, both central), and the coupled equation is covariant. The commutator of two covariant derivatives is the curvature,
+because the two derivatives act on the same central unit and the cancellation of the gradients repeats slot by slot. So $\Box_{\mathrm{gco},\Phi}$ is covariant, the mass term is invariant (two factors, opposite phases, both central), and the coupled equation is covariant. The commutator of two covariant derivatives is the curvature,
 
 $$
 \big[D_{\imath},D_{\jmath}\big]=\frac{2\pi i\,ϙ}{h}\Big(\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath}\Big)=\frac{2\pi i\,ϙ}{h}F_{\imath\jmath},
@@ -354,8 +354,8 @@ The current is $J_{\imath}=\frac{i}{4\pi\nu_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tild
 - [The Lagrangian and the Klein–Gordon Equation](the-lagrangian-and-the-klein-gordon-equation.html), for the free action and its currents.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), the polar companion of this article.
 - [The Lagrangian and the Coupled Klein–Gordon Equation](the-lagrangian-and-the-coupled-klein-gordon-equation.html), for the total action, the two variations and the source.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature and the gap it records.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the operator identity with the curvature and the gap it records.
 - [The Coupled Proca Equation in Biquaternionic Form](the-coupled-proca-equation-in-biquaternionic-form.html), for the same coupling in the vector sector, where the carrier must change.
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), for the spinor sector, where the field strength does not enter the equation.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the connection, the field strength and the inhomogeneous equation.

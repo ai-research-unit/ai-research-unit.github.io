@@ -12,7 +12,7 @@ $$
 D_{\jmath} W^{+}_{\imath\jmath}-M_W^2 W^{+}_{\imath}=\frac{g}{2\sqrt2}J^{+}_{\imath} ,
 $$
 
-together with its conjugate, in a gauge where the kinetic term is the Proca one. The article asks what action has this equation and what becomes of it below the $W$'s mass.
+together with its conjugate, in a representative where the kinetic term is the Proca one. The article asks what action has this equation and what becomes of it below the $W$'s mass.
 
 Three things are established.
 
@@ -92,7 +92,7 @@ $$
 \bigl(-k^2+M_W^2\bigr)W^{+}_{\imath}(k)=\frac{g}{2\sqrt2}J^{+}_{\imath}(k),
 $$
 
-where the sign of the mass term makes the kernel invertible for every $k$ and the transverse projector is trivial because the mass term is a Stueckelberg term in this gauge. The solution is
+where the sign of the mass term makes the kernel invertible for every $k$ and the transverse projector is trivial because the mass term is a Stueckelberg term in this representative. The solution is
 
 $$
 W^{+}_{\imath}(k)=\frac{g}{2\sqrt2}\frac{J^{+}_{\imath}(k)}{M_W^2-k^2}.

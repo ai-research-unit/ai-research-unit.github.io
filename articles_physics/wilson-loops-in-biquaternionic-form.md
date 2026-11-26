@@ -272,7 +272,7 @@ verified in the $2\times2$ representation, so that the two Lorentz invariants of
 | $U(C)=\mathcal{P}\exp(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath})$ | Holonomy (group element), non-abelian |
 | $W(C)=\mathrm{Tr}\,\mathcal{P}\exp(\frac{2\pi ϙ}{h}\oint_C \sum_{\imath,a}\varepsilon_{\imath} A_{\imath a}T_a dx_{\imath})$ | Non-abelian Wilson loop |
 | $\mathcal{P}$ | Path ordering |
-| $T_a=i\vec e_a\in\mathbb{B}_{\Psi}$ | Gauge generators realized in the informational sector |
+| $T_a=i\vec e_a\in\mathbb{B}_{\Psi}$ | Symmetry generators realized in the informational sector |
 | $U(C)\mapsto Q\,U(C)\,Q^{-1}$ | Conjugation of the holonomy; trace invariant |
 | $\oint_C \sum_{\imath}\varepsilon_{\imath} A_{\imath} dx_{\imath}=\frac12\int_S \sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath} F_{\imath\jmath}d\Sigma_{\imath\jmath}$ | Stokes' theorem; loop equals enclosed flux |
 | $W=1+i \ell^2F_{\imath\jmath}+O(\ell^4)$ | Small-loop expansion; exponentiated field strength |

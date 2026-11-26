@@ -18,7 +18,7 @@
 
 | $[D_{\imath},D_{\jmath}]=-ig_{4}F_{\imath\jmath}$, adjoint covariance, Bianchi | the Gauss laws, the Feynman rules, the instanton | §*The Curvature* |
 
-| Faddeev–Popov gauge fixing, fifteen ghosts, one $\zeta$ | $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{\mathrm{gh}}$, the count $78$ | §*The Ghosts* |
+| Faddeev–Popov fixing, fifteen ghosts, one $\zeta$ | $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{\mathrm{gh}}$, the count $78$ | §*The Ghosts* |
 
 | the one-loop master formula and which determinants drop out | the $\rho^{4}\ln\rho^{2}$ coefficient | §*The Determinants* |
 
@@ -45,7 +45,7 @@ $$
 $$
 
 
-so the density is the same at every gauge. **The cyclicity is the whole of the invariance**, and a pairing that is not cyclic has no invariant square to offer.
+so the density is the same at every representative. **The cyclicity is the whole of the invariance**, and a pairing that is not cyclic has no invariant square to offer.
 
 
 **It is real, because the curvature is Hermitian.** With $t_{a}$ Hermitian and $F_{a,\imath\jmath}$ real, $\mathbb{F}$ is Hermitian, so $\mathbb{F}^{2}$ is Hermitian and its trace is real. **Positivity follows from the same fact**: the trace of the square of a nonzero Hermitian matrix is positive, which is what a kinetic term needs.
@@ -156,7 +156,7 @@ which follows from $[D_{\imath},[D_{\jmath},D_{\kappa}]]+\text{cyclic}=0$ and th
 **Covariant conservation.** $\sum_{\imath}\varepsilon_{\imath}D_{\imath}\mathbb{F}_{\imath\jmath}$ is not divergenceless in the ordinary sense, so the current it equals is conserved only with the connection term. **The conserved object is the covariant divergence, and above $M_{C}$ there is no charge**, only a current, because the charge is defined by a residual symmetry and the symmetry is broken.
 
 
-**Why no component of $\mathbb{F}_{\imath\jmath}$ is a number.** The six components mix under the adjoint action, so a statement about one of them is a statement in one gauge. **This is what forces every vertex and every mass to be read from invariants**, and it is the reason the block never quotes a single $F_{a,\imath\jmath}$ as a physical field.
+**Why no component of $\mathbb{F}_{\imath\jmath}$ is a number.** The six components mix under the adjoint action, so a statement about one of them is a statement in one representative. **This is what forces every vertex and every mass to be read from invariants**, and it is the reason the block never quotes a single $F_{a,\imath\jmath}$ as a physical field.
 
 
 **What survives the transcription and what does not.** The three statements above are properties of *any* connection: they hold for the fifteen exactly as they hold for the three of $\mathrm{SU}(2)$. **The curvature's algebra is free of the ceiling; the topological integrality is not**, and that distinction is what §*The Instanton* rests on.
@@ -165,7 +165,7 @@ which follows from $[D_{\imath},[D_{\jmath},D_{\kappa}]]+\text{cyclic}=0$ and th
 ## The Ghosts: One Parameter and Fifteen Grassmann Fields
 
 
-**The action as written fixes nothing about the gauge, so the path integral needs a fixing the representative insert and a determinant.**
+**The action as written fixes nothing about the representative, so the path integral needs a fixing insert and a determinant.**
 
 
 **One line of the Faddeev–Popov construction, in the block's notation.** Insert unity as
@@ -238,7 +238,7 @@ $$
 **The two subtractions are one subtraction.** Sixty components, less two per first-class constraint, leaves thirty; the ghost pair then contributes minus two per generator to the *loop* count and nothing to the on-shell one. **So a table that subtracts the ghosts from the on-shell vectors subtracts twice** and leaves no vector at all. **The $78$ is a count of this phase only**, and it is the number the block's census quotes.
 
 
-**The ghost operator is field-dependent, and the gauge determinant at the identity background is not.** That asymmetry is used in §*The Determinants*: the ghost loop depends on $\Xi$ through $[\Xi,\cdot]$, so at a background proportional to the identity it depends on nothing.
+**The ghost operator is field-dependent, and the Faddeev–Popov determinant at the identity background is not.** That asymmetry is used in §*The Determinants*: the ghost loop depends on $\Xi$ through $[\Xi,\cdot]$, so at a background proportional to the identity it depends on nothing.
 
 
 ## The Determinants: Three Drop Out and One Does Not
@@ -277,7 +277,7 @@ M^{2}_{ab}\;\propto\;\operatorname{tr}\bigl([\Xi_{0},t_{a}][\Xi_{0},t_{b}]\bigr)
 $$
 
 
-**because the identity commutes with every generator.** No vector acquires a mass that depends on $\rho$, so the gauge determinant is a field-independent constant, and the ghost determinant is too, for the same reason through the same commutator. **The assumption in the one-loop article is therefore not an assumption but a consequence of the background it chooses** — and it fails at any background not proportional to the identity, which is why that article restricts itself to the identity direction.
+**because the identity commutes with every generator.** No vector acquires a mass that depends on $\rho$, so the Faddeev–Popov determinant is a field-independent constant, and the ghost determinant is too, for the same reason through the same commutator. **The assumption in the one-loop article is therefore not an assumption but a consequence of the background it chooses** — and it fails at any background not proportional to the identity, which is why that article restricts itself to the identity direction.
 
 
 **The same commutator is why the vacuum's trace costs nothing in the sector**: a shift $\Xi_{0}\mapsto\Xi_{0}+c\,\mathbb{1}$ leaves every $[\Xi_{0},t_{a}]$ unchanged.
@@ -355,7 +355,7 @@ $$
 
 - *The curvature identities.* $[D,D]=-ig_{4}\mathbb{F}$ and the Bianchi identity are theorems about connections. **They are not transcribed**: they hold on $\mathbb{C}^{4}$ for the same reason they hold on $\mathbb{C}^{2}$, and no coefficient from a table enters them.
 
-- *The ghosts.* The Faddeev–Popov construction fixes the gauge of any theory with a first-class algebra. **Fifteen is a number inside it**, not a hypothesis of it.
+- *The ghosts.* The Faddeev–Popov construction fixes the representative of any theory with a first-class algebra. **Fifteen is a number inside it**, not a hypothesis of it.
 
 - *The one-loop formula.* Mode counting and one momentum integral. **It is transcription-free**, and the only input the block supplies is the Hessian.
 
@@ -390,7 +390,7 @@ $$
 
 | the Bianchi identity | $D_{[\imath}\mathbb{F}_{\jmath\kappa]}$ on the same connection | error $6.5\times10^{-14}$ |
 
-| $[\mathbb{1},t_{a}]=0$ | all fifteen | $0$, so the gauge mass matrix vanishes at $\Xi_{0}\propto\mathbb{1}$ |
+| $[\mathbb{1},t_{a}]=0$ | all fifteen | $0$, so the connection mass matrix vanishes at $\Xi_{0}\propto\mathbb{1}$ |
 
 | the scalar coefficient | $\frac{36\lambda_{1}^{2}}{64\pi^{2}}$ | $\frac{9\lambda_{1}^{2}}{16\pi^{2}}$ |
 
@@ -450,7 +450,7 @@ $$
 
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The display these four steps support, and the article whose assumptions are discharged here.
 
-- [The Lagrangian and the Non-Abelian Connections](the-lagrangian-and-the-non-abelian-gauge-fields.html). The $\mathrm{SU}(2)$ action written in the algebra, against which the transcription of §*The Ceiling* is measured.
+- [The Lagrangian and the Non-Abelian Connections](the-lagrangian-and-the-non-abelian-connections.html). The $\mathrm{SU}(2)$ action written in the algebra, against which the transcription of §*The Ceiling* is measured.
 
 - [The One-Loop Effective Potential of the Scalar Matrix](the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html). The Hessian and the coefficient this article supplies the fermionic half of.
 

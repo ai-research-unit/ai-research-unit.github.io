@@ -96,7 +96,7 @@ $$
 
 **The orientation count is $11$ and not $15$, and the difference is what the instanton does not use.** The count itself is the standard $4Nk$ at $k=1$, and the five removed are the four positions and the size. **The remaining eleven are not one coset**: the embedded $\mathrm{SU}(2)$ has stabiliser $\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ in $\mathrm{SU}(4)$ — dimension $3+3+1=7$ — so its orbit has dimension $15-7=8$, and the other three are the rotations of the instanton inside its own $\mathrm{SU}(2)$. **$8+3=11$, and $4+1+11=16$**, which is the table.
 
-**The instanton does not use all fifteen generators.** Its field strength lies in an $\mathrm{su}(2)$ subalgebra; **the connection can be brought to a gauge in which only three generators appear, and that is a choice of representative rather than a property of the solution** — in another fixing condition all fifteen components of $A_{\imath}$ can be nonzero while $F_{\imath\jmath}$ stays inside the $\mathrm{su}(2)$. **That is not a defect of the solution but its construction**, and it is worth stating because it bears on the article's main point: **the object that requires fifteen generators to be written at all uses three of them at a time.**
+**The instanton does not use all fifteen generators.** Its field strength lies in an $\mathrm{su}(2)$ subalgebra; **the connection can be brought to a representative in which only three generators appear, and that is a choice of representative rather than a property of the solution** — in another fixing condition all fifteen components of $A_{\imath}$ can be nonzero while $F_{\imath\jmath}$ stays inside the $\mathrm{su}(2)$. **That is not a defect of the solution but its construction**, and it is worth stating because it bears on the article's main point: **the object that requires fifteen generators to be written at all uses three of them at a time.**
 
 **The embedding is a choice, and the choice is not unique.** $\mathrm{SU}(4)$ has more than one conjugacy class of $\mathrm{SU}(2)$ subgroups, distinguished by how the $\mathbf4$ decomposes: $\mathbf2\oplus\mathbf1\oplus\mathbf1$, $\mathbf3\oplus\mathbf1$, $\mathbf2\oplus\mathbf2$, and the irreducible $\mathbf4$ of the principal embedding. **The standard one is the block embedding $\mathbf2\oplus\mathbf1\oplus\mathbf1$, which is the most reducible and not the maximal one** — the principal embedding is what "maximal" would name — and the others are not computed here. **The action and the topological charge are the same for all of them**, because both know only the winding number; **the moduli count and the fluctuation spectrum are not**, and the table above is the block embedding's.
 
@@ -145,7 +145,7 @@ $$
 | the action at $M_C$ | $2\pi/\alpha_4(M_C)$ at $0.05776$ | $108.8$ |
 | the moduli | $4N$ with $N=4$ | $16=4+1+11$ |
 | the orientation count | $15-\dim[\mathrm{SU}(2)^{2}\times\mathrm{U}(1)]+3$ | $15-7+3=11$ |
-| the excited generators | an $\mathrm{su}(2)$ inside $\mathrm{su}(4)$ | $3$ of $15$, in one gauge |
+| the excited generators | an $\mathrm{su}(2)$ inside $\mathrm{su}(4)$ | $3$ of $15$, in one representative |
 | the size cutoff | the phase's end | $\rho\lesssim1/M_C$ |
 | the $\theta_4$ period | $e^{2\pi i n}=1$ for integer $n$ | $2\pi$ |
 | the anomaly | $2A(\mathbf4)+2A(\bar{\mathbf4})$ | $0$ |
@@ -155,7 +155,7 @@ $$
 
 **The primordial phase has instantons with action $108.2$, and the exponential is $1.1\times10^{-47}$.** The number is fixed by the same coupling that runs in the rest of the block, and it is the largest exponent the block contains.
 
-**Sixteen moduli, eleven of them orientation**, because the solution is an $\mathrm{SU}(2)$ inside $\mathrm{SU}(4)$ and excites three generators at a time, in the gauge that shows it. **The size modulus is cut off at $1/M_C$**, by the phase ending and not by the integral.
+**Sixteen moduli, eleven of them orientation**, because the solution is an $\mathrm{SU}(2)$ inside $\mathrm{SU}(4)$ and excites three generators at a time, in the representative that shows it. **The size modulus is cut off at $1/M_C$**, by the phase ending and not by the integral.
 
 **$\theta_4$ is free in the Lagrangian with a $2\pi$ period, and redundant above $M_C$**: the anomaly cancels, the axial one does not, and massless fermions let the rotation remove the angle. **The strong-$CP$ problem is neither solved nor inherited** — $\theta_4$ is not $\bar\theta$, and the Standard Model's is another article's.
 

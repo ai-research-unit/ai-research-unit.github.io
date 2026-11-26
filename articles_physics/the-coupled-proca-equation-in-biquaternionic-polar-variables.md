@@ -103,17 +103,17 @@ with $E=-\frac{h}{2\pi} c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ and $\ve
 
 ## The Local Transformation Is a Phase Translation
 
-**The exact infinitesimal statement.** Let $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$ be a constant central unit and let $\tilde A_2=\digamma_{\mathrm{gau}}\tilde A$. Then
+**The exact infinitesimal statement.** Let $\digamma_{\mathrm{cph}}=\exp(i\vartheta_{\mathrm{cph}})$ be a constant central unit and let $\tilde A_2=\digamma_{\mathrm{cph}}\tilde A$. Then
 
 $$
-\tilde A_2=\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,
+\tilde A_2=\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{cph}})}\,
 \tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,
 \tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
 
-so the local transformation is the translation of $\theta_{\mathrm{pha}}$ by $\vartheta_{\mathrm{gau}}$ with the other seven parameters fixed. The identity is exact and the numerical check is exact to $10^{-16}$.
+so the local transformation is the translation of $\theta_{\mathrm{pha}}$ by $\vartheta_{\mathrm{cph}}$ with the other seven parameters fixed. The identity is exact and the numerical check is exact to $10^{-16}$.
 
-**Why it is exact.** $\digamma_{\mathrm{gau}}$ is central, so it passes to the left through the whole word and multiplies the leftmost factor; and the leftmost factor is the phase factor, whose argument is additive. No other factor is touched, because no other factor carries a central scalar.
+**Why it is exact.** $\digamma_{\mathrm{cph}}$ is central, so it passes to the left through the whole word and multiplies the leftmost factor; and the leftmost factor is the phase factor, whose argument is additive. No other factor is touched, because no other factor carries a central scalar.
 
 **What it says about the connection.** For a pure-connection, $A_{\imath}=\partial_{\imath}\Lambda$, the added term is $\frac{2\pi iϙ}{h}\partial_{\imath}\Lambda$, so
 
@@ -124,7 +124,7 @@ $$
 
 and the whole effect of the potential is absorbed by a reparameterisation of one coordinate. That is the polar statement of local invariance, and it is a statement about the angle and not about the field.
 
-**The finite statement and its one caveat.** For a finite shift the translated angle may leave the interval $(-\pi/2,\pi/2]$, and then the word's first factor is no longer in the chart's normal form: $e^{i(\vartheta+\vartheta_{\mathrm{gau}})}$ with the sum outside the range is invertible whose real part is negative, and the chart's phase factor is the one with positive real part. The excess is absorbed by the other factors, and the chart is therefore not closed under the symmetry group as a chart, although the field is. The article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates.
+**The finite statement and its one caveat.** For a finite shift the translated angle may leave the interval $(-\pi/2,\pi/2]$, and then the word's first factor is no longer in the chart's normal form: $e^{i(\vartheta+\vartheta_{\mathrm{cph}})}$ with the sum outside the range is invertible whose real part is negative, and the chart's phase factor is the one with positive real part. The excess is absorbed by the other factors, and the chart is therefore not closed under the symmetry group as a chart, although the field is. The article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates.
 
 **The contrast with the element form.** In the element form the local transformation multiplies the field by a central unit and that is that. In the chart the same operation is the motion of one coordinate, and the coordinate is the argument of the norm. The two statements are the same statement, and the second is the reason the operation is called a phase transformation.
 
@@ -220,7 +220,7 @@ The connection is central per slot, so it merges with the scale and the phase br
 | $\tilde A^{-1}\partial_{\imath}\tilde A$ | The four brackets: scale, phase, boost, rotor |
 | $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | Covariant wavevector; the one substitution |
 | $\kappa_t,\vec\kappa$ | Its components; $\frac{h}{2\pi} c\kappa_t=E+ϙca'_t$, $\frac{h}{2\pi}\vec\kappa=\vec p-q\vec A$ |
-| $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ |
+| $\digamma_{\mathrm{cph}}=\exp(i\vartheta_{\mathrm{cph}})$ | Central phase unit; $\vartheta_{\mathrm{cph}}=\frac{2\pi ϙ\Lambda}{h}$ |
 | $\tilde F$ | Curvature of the connection; scalar-free, so blind to the constraint |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 
@@ -229,8 +229,8 @@ The connection is central per slot, so it merges with the scale and the phase br
 - [The Coupled Proca Equation in Biquaternionic Form](the-coupled-proca-equation-in-biquaternionic-form.html), the element form this article re-coordinatises.
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the free two-factor word, the two branches and the two brackets.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and its parameter count.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the same type statement in the first-order sector.
 - [The Lagrangian and the Coupled Proca Equation](the-lagrangian-and-the-coupled-proca-equation.html), for the action and the currents in the element form.
 - [The Lagrangian and the Coupled Proca Equation in Polar Variables](the-lagrangian-and-the-coupled-proca-equation-in-polar-variables.html), for the action in the chart.

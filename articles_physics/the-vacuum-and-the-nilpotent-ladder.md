@@ -283,7 +283,7 @@ $$
 
 and the four corner identities together with $\vec X^{2}=0$ held with residuals of order $10^{-16}$ or exactly zero.
 
-**No Peirce decomposition relative to the element itself can exist.** Such a decomposition would place $\tilde Q$ in the diagonal corners $\mathbb{B}_{++}\oplus\mathbb{B}_{--}$, and the mixed-corner computation says it is nowhere else. The Peirce data therefore survive only as a decomposition of the algebra relative to somebody else's idempotent, and that idempotent is a gauge and not a function of the element.
+**No Peirce decomposition relative to the element itself can exist.** Such a decomposition would place $\tilde Q$ in the diagonal corners $\mathbb{B}_{++}\oplus\mathbb{B}_{--}$, and the mixed-corner computation says it is nowhere else. The Peirce data therefore survive only as a decomposition of the algebra relative to somebody else's idempotent, and that idempotent is a representative and not a function of the element.
 
 The eigenbasis fails for a reason that is visible in one formula.
 
@@ -744,7 +744,7 @@ The boundary. A null field is a value of the field at a point. Whether a field i
 
 Read: $\tilde F=\digamma_{\mathrm{scl}}\tilde F_0$ with $\lvert\digamma_{\mathrm{scl}}\rvert$ the amplitude, and $e^{i\omicron_{\mathrm{ang}}}\tilde F$ acting as $\vec E\mapsto\vec E\cos\omicron_{\mathrm{ang}}-c\vec B\sin\omicron_{\mathrm{ang}}$, $\vec B\mapsto\vec B\cos\omicron_{\mathrm{ang}}+(\vec E/c)\sin\omicron_{\mathrm{ang}}$.
 
-The two real dimensions of the fibre are two classical operations. The modulus scales both halves of the field and the argument rotates one into the other. Neither is a phase in the quantum sense, and neither is a gauge: they are the two things one may do to a null field and stay on the stratum.
+The two real dimensions of the fibre are two classical operations. The modulus scales both halves of the field and the argument rotates one into the other. Neither is a phase in the quantum sense, and neither is a representative: they are the two things one may do to a null field and stay on the stratum.
 
 The reading gives the bundle's fibre a physical content and closes the entry's count. Two real dimensions of base, two of fibre, four in total, and every one of the four is a named physical datum: direction, polarisation, amplitude, duality angle. Nothing in the description of a null field is left over, and nothing is double-counted.
 

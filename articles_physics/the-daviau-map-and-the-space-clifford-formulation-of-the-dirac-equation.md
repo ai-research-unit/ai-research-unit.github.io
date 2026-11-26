@@ -99,7 +99,7 @@ with the coefficients $(a,d,b,c,-e,f,-g,h)$ on the units $(e_t,\,i\vec e_x,\,i\v
 
 ## The Star Conjugation
 
-**The map.** The star of the source is real-linear, involutive and multiplicative, and it reverses the phase: for a complex $\digamma_{\mathrm{gau}}$, the star of $\digamma_{\mathrm{gau}}\tilde{Ξ}$ is $\bar\digamma_{\mathrm{gau}}$ times the star of $\tilde{Ξ}$. It is therefore an algebra automorphism that reverses the phase. It is not the identity, it is not the quaternion conjugation, and it is not the Hermitian conjugation of the algebra.
+**The map.** The star of the source is real-linear, involutive and multiplicative, and it reverses the phase: for a complex $\digamma_{\mathrm{cph}}$, the star of $\digamma_{\mathrm{cph}}\tilde{Ξ}$ is $\bar\digamma_{\mathrm{cph}}$ times the star of $\tilde{Ξ}$. It is therefore an algebra automorphism that reverses the phase. It is not the identity, it is not the quaternion conjugation, and it is not the Hermitian conjugation of the algebra.
 
 **Notation.** The source writes the star with an asterisk. This article writes it $\overline{\cdot}$, because it is the corpus's complex conjugation; the corpus's ${}^{*}$ is a different map (§*It is not the Hermitian conjugation*).
 

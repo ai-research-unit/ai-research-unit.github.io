@@ -7,7 +7,7 @@ The companion article *Canonical Quantization of the Biquaternion Dirac Field* c
 This article is that treatment for the electromagnetic field of *Maxwell's Equations in the Biquaternionic Formulation*. It has to answer a question the Dirac article could not pose, because there was nothing to compare it with: **does Maxwell behave better or worse than Dirac did?** The answer given here, stated at the outset, is that it behaves neither better nor worse in a simple ranking, but differently, and that the difference is instructive.
 
 - **Better in one respect.** Maxwell needs no new algebraic structure. The field is bosonic, so ordinary commutators suffice. No grading has to be imposed on the algebra, and the indefinite inner product that the covariant quantization requires is, up to convention, the one the material sector $\mathbb{B}_{\Phi}$ already carries, its one minus the square of the $i$ in $Q_t=i q'_t$. Where the Dirac case had to bolt on a $\mathbb{Z}/2$ structure the algebra does not supply, Maxwell bolts on nothing.
-- **Worse in another.** In the Dirac case the field appearing in the biquaternion equation is, through its spinor-module representative, the field that is canonically quantized: its momentum is tied to it by a second-class constraint. In the Maxwell case the natural variable is the **field strength** $\tilde{F}$, which is invariant and has no canonical partner; the equation for it is first order and cannot be obtained from a local Lagrangian in which $\tilde{F}$ alone is varied. Canonical quantization therefore forces a return to the potential $\tilde{A}_{\Phi}$, and with it a redundancy that the algebra does not resolve. The framework **cannot fix the gauge naturally**, and that is a finding, not an inconvenience to be smoothed over.
+- **Worse in another.** In the Dirac case the field appearing in the biquaternion equation is, through its spinor-module representative, the field that is canonically quantized: its momentum is tied to it by a second-class constraint. In the Maxwell case the natural variable is the **field strength** $\tilde{F}$, which is invariant and has no canonical partner; the equation for it is first order and cannot be obtained from a local Lagrangian in which $\tilde{F}$ alone is varied. Canonical quantization therefore forces a return to the potential $\tilde{A}_{\Phi}$, and with it a redundancy that the algebra does not resolve. The framework **cannot fix the representative naturally**, and that is a finding, not an inconvenience to be smoothed over.
 
 The article has the same standard/open division as its parent, and it is worth stating before the formalism.
 
@@ -55,13 +55,13 @@ $$
 S=\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right)
 $$
 
-is the gauge degree of freedom of the companion article: it transforms as
+is the redundant degree of freedom of the companion article: it transforms as
 
 $$
 S_2=S-\Box_\Phi\Gamma,
 $$
 
-and the field strength is invariant, $\tilde{F}_2=\tilde{F}$. The companion article states plainly that $S$ "is an artifact of the representative" and that the **Lorenz fixing condition** $S=0$ is "a choice of gauge, not a physical condition". In that gauge the potential obeys the second-order equation
+and the field strength is invariant, $\tilde{F}_2=\tilde{F}$. The companion article states plainly that $S$ "is an artifact of the representative" and that the **Lorenz fixing condition** $S=0$ is "a choice of representative, not a physical condition". In that representative the potential obeys the second-order equation
 
 $$
 \Box_\Phi\tilde{A}_{\Phi}=-\mu\tilde J_{\Phi},\qquad \tilde J_{\Phi}=ic\rho\,e_t+\vec J.
@@ -111,7 +111,7 @@ are **first class**: their Poisson bracket with each other vanishes, and each ge
 
 Counting degrees of freedom makes the point. The phase space of the four components of $A_{\imath}$ has $4\times2=8$ dimensions. A first-class constraint removes two phase-space dimensions — the constraint itself and the redundant direction it generates — so two first-class constraints remove four, leaving $8-4=4$ phase-space dimensions, that is, **two field degrees of freedom** at each point. These are the two transverse polarizations.
 
-The contrast with the Dirac field is exact and should be set beside it. There the conjugate momentum was $\pi=i\tilde{Ξ}^{\dagger}$, algebraically tied to the field by the **second-class** constraint $\xi=\pi-i\tilde{Ξ}^{\dagger}\approx0$; the momentum was not independent, and the redundancy was absent, but the bracketing had to become anticommutation. Here the momentum is independent in its spatial components, one entire component of it vanishes, and a divergence constraint appears; the constraint is first class, redundancy is present, and the bracketing stays commutation. Both theories have singular Legendre transforms. The singularity of the Dirac case forces a different bracket; the singularity of the Maxwell case forces a choice of gauge.
+The contrast with the Dirac field is exact and should be set beside it. There the conjugate momentum was $\pi=i\tilde{Ξ}^{\dagger}$, algebraically tied to the field by the **second-class** constraint $\xi=\pi-i\tilde{Ξ}^{\dagger}\approx0$; the momentum was not independent, and the redundancy was absent, but the bracketing had to become anticommutation. Here the momentum is independent in its spatial components, one entire component of it vanishes, and a divergence constraint appears; the constraint is first class, redundancy is present, and the bracketing stays commutation. Both theories have singular Legendre transforms. The singularity of the Dirac case forces a different bracket; the singularity of the Maxwell case forces a choice of representative.
 
 ## The Constraints in Biquaternion Notation
 
@@ -147,7 +147,7 @@ Two points about this interpretation must be kept separate.
 
 The first is a **structural observation**, and it is suggestive but convention-dependent. The potential $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ has an imaginary scalar part and a real vector part: it is an element of the material sector $\mathbb{B}_{\Phi}$. The conjugate momentum $\tilde\pi_{\mathrm{id}}$ has a vanishing (real) scalar part and a purely imaginary vector part: in the $i r'_t$ convention it is an element of the complementary sector $\mathbb{B}_{\Psi}$. The canonical pair thus straddles the two sectors that the framework distinguishes as material and informational — the same pairing of "configuration" and "operator" that the article on $\mathbb{B}_{\Psi}$ describes for its action on $\mathbb{B}_{\Phi}$. Whether this is a meaningful statement about the algebra or a consequence of writing the momentum with the $i r'_t$ derivative is not decided here, and it is recorded as an open question. In a real-time formulation the momentum of the same theory is real, and the placement reverses; the physical content is unchanged.
 
-The second is the **finding**. Nothing in the algebra selects a gauge. The invariant content of the theory is a functional of $\tilde{F}$ alone, and $\tilde{F}$ is invariant under every local transformation; so no invariant functional of $\tilde{A}_{\Phi}$ — no biquaternion norm, no trace, no conjugation built from the basis and $i$ — can break the degeneracy, because any such functional is a function of $\tilde{F}$. The Lorenz condition $S=0$ is available and is the framework's covariant choice, but the companion article itself declines to make it physical, and the algebra offers no principle that prefers it to $A_0=0$ (the temporal fixing condition) or to any other. The gauge must be fixed from outside the algebra. This is the sense in which the biquaternion framework cannot quantize Maxwell "automatically".
+The second is the **finding**. Nothing in the algebra selects a representative. The invariant content of the theory is a functional of $\tilde{F}$ alone, and $\tilde{F}$ is invariant under every local transformation; so no invariant functional of $\tilde{A}_{\Phi}$ — no biquaternion norm, no trace, no conjugation built from the basis and $i$ — can break the degeneracy, because any such functional is a function of $\tilde{F}$. The Lorenz condition $S=0$ is available and is the framework's covariant choice, but the companion article itself declines to make it physical, and the algebra offers no principle that prefers it to $A_0=0$ (the temporal fixing condition) or to any other. The representative must be fixed from outside the algebra. This is the sense in which the biquaternion framework cannot quantize Maxwell "automatically".
 
 ## Gupta–Bleuler Quantization
 
@@ -234,7 +234,7 @@ The verdict is therefore not a ranking. **Maxwell is a transcription of standard
 
 **Open, and not settled here.**
 
-- **The principle that fixes the representative.** The framework gives no algebraic reason to prefer $S=0$ to any other gauge, or to prefer Gupta–Bleuler to the Coulomb fixing condition. Whether a biquaternionic principle exists is the central open question. The companion article's judgement that $S$ is an artifact of the representative is a negative statement, not a mechanism.
+- **The principle that fixes the representative.** The framework gives no algebraic reason to prefer $S=0$ to any other representative, or to prefer Gupta–Bleuler to the Coulomb fixing condition. Whether a biquaternionic principle exists is the central open question. The companion article's judgement that $S$ is an artifact of the representative is a negative statement, not a mechanism.
 - **The intrinsic Lagrangian and pairings.** The parent Dirac article records that the $\mathbb{B}$-intrinsic Lagrangian and conjugate momentum are not fixed by the algebra. The same is true here, and more sharply, because the natural variable $\tilde{F}$ has no canonical partner at all. Whether a real-scalar Lagrangian built from the trace and norm pairings reproduces the standard constraint structure is not shown.
 - **The biquaternion Fock space.** Whether there is a Fock space native to $\mathbb{B}$, rather than the exterior (fermionic) or symmetric (bosonic) algebra of a module's solution space, is the subject of the planned companion article on the Fock space.
 - **The photon.** Whether the two transverse polarizations have a native meaning in the algebra — for instance, in the vector part of the material sector — is the subject of the planned article on the photon.
@@ -250,7 +250,7 @@ The Legendre transform is singular. The conjugate momenta are $\pi_{\imath}=-F_{
 
 Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}h^{3}\delta^{(3)}$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})|\tilde{Ξ}\rangle=0$ leaves the zero-norm combination $a_{\mathrm{fop},0}^{\dagger}-a_{\mathrm{fop},3}^{\dagger}$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{k=1}^2\epsilon_i^{(\mathrm{fop})}\epsilon_j^{(\mathrm{fop})}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the local symmetry, not from the number of components.
 
-The extension is a transcription of standard canonical quantization into the framework's notation, not a derivation of the quantized structure from $\mathbb{B}$. Unlike the Dirac case it requires no new grading, but unlike the Dirac case the natural variable is not the canonical one, and the gauge must be fixed from outside the algebra. The framework cannot quantize the Maxwell field automatically.
+The extension is a transcription of standard canonical quantization into the framework's notation, not a derivation of the quantized structure from $\mathbb{B}$. Unlike the Dirac case it requires no new grading, but unlike the Dirac case the natural variable is not the canonical one, and the representative must be fixed from outside the algebra. The framework cannot quantize the Maxwell field automatically.
 
 ## Summary of Notation
 
@@ -269,7 +269,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$ | Four-current; the source enters as $Z\,\tilde J_{\Phi}$ |
 | $\tilde\nabla_\Phi\tilde{F}=-Z\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell equation |
 | $\Gamma$ | Phase function, $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ |
-| $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2=S-\Box_\Phi\Gamma$ | Gauge degree of freedom; Lorenz fixing condition $S=0$ |
+| $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2=S-\Box_\Phi\Gamma$ | Redundant degree of freedom; Lorenz fixing condition $S=0$ |
 | $\delta_{\imath\jmath}$ | Unit metric, all four coefficients $+1$; $\sum_{\imath,\jmath}\delta_{\imath\jmath}Q_{\imath} Q_{\jmath}$ is the biquaternion norm on $\mathbb{B}_{\Phi}$, with $Q_t=i q'_t$ |
 | $\mathcal{L}=-\tfrac14 \sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}$ | Maxwell Lagrangian density (potential formulation) |
 | $\pi_{\imath}=\partial\mathcal{L}/\partial(\partial/\partial R_t A_{\imath})=-F_{t\imath}$ | Conjugate momenta: $\pi_0\approx0$, $\vec\pi=-i\vec E$ |

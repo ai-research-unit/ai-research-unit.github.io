@@ -145,7 +145,7 @@ the parent's equation, with the mass term's sign fixed by the dispersion relatio
 
 **The count.** One element $\tilde\Xi$, eight real components, one second-order equation per component, and momenta that are the velocities. The relation is invertible, so there is no primary constraint, no Dirac bracket and no constraint surface.
 
-**Why the absence is the reference case.** The Proca readings have the Lorenz condition, the gauge readings have their Gauss laws, the sigma model has its unit surface, and the first-order readings have their second-class pairs. **The scalar has none**, and each of those constraints is easiest to read against this article, where the canonical structure is the simplest in the family.
+**Why the absence is the reference case.** The Proca readings have the Lorenz condition, the representative readings have their Gauss laws, the sigma model has its unit surface, and the first-order readings have their second-class pairs. **The scalar has none**, and each of those constraints is easiest to read against this article, where the canonical structure is the simplest in the family.
 
 **The one thing that looks like a constraint and is not.** The reality of the density. Reality is a property of the functional and is checked term by term in the action section; it restricts nothing in the variation, and a complex density would be a different action and not an inadmissible configuration.
 

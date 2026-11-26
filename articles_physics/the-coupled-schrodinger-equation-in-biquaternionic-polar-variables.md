@@ -154,7 +154,7 @@ because $\vec\nabla_\Phi\times\nabla S$ vanishes identically. So the canonical f
 
 ## The Local Transformation Read on the Word
 
-**The transformation.** With $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $\Gamma$ real, the field becomes $\digamma_{\mathrm{gau}}\tilde\Xi$, and since $\digamma_{\mathrm{gau}}$ is central and commutes with every invertible element, the word's factors transform one at a time:
+**The transformation.** With $\digamma_{\mathrm{cph}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ and $\Gamma$ real, the field becomes $\digamma_{\mathrm{cph}}\tilde\Xi$, and since $\digamma_{\mathrm{cph}}$ is central and commutes with every invertible element, the word's factors transform one at a time:
 
 $$
 \varrho\longmapsto \varrho,
@@ -196,7 +196,7 @@ with $\Sigma$ any surface bounded by the loop. With $ϙ$ the negative of the ele
 
 **Does not add.** No new solution and no new constant of motion. The free article's frozen scale, frozen rapidity, phase rate and gap survive with shifted numbers and are not multiplied by the coupling. The word does not become a solution method for the coupled equation; it is a chart in which the equation's structure is visible.
 
-**The one thing the coupling changes in kind.** The free chart has no redundant direction: all eight parameters are physical. The coupled chart has one, and it is a direction along which the chart is degenerate — a whole line of parameters, one for each function $\Gamma$, describes the same field and the same connection up to gauge. That is the only structural change, and it is the one the variational companion uses.
+**The one thing the coupling changes in kind.** The free chart has no redundant direction: all eight parameters are physical. The coupled chart has one, and it is a direction along which the chart is degenerate — a whole line of parameters, one for each function $\Gamma$, describes the same field and the same connection up to representative. That is the only structural change, and it is the one the variational companion uses.
 
 ## Open Questions
 
@@ -251,7 +251,7 @@ the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2
 | $h_t$, $\vec h_\Psi$ | The canonical energy and momentum of the constant setting |
 | $h_t-ϙ\omicron_{\mathrm{pot}}$, $\vec h_\Psi-q\vec A$ | The kinetic energy and momentum |
 | $\digamma_{\mathrm{flx}}$ | The magnetic flux through a loop |
-| $\Gamma$, $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The phase function and factor |
+| $\Gamma$, $\digamma_{\mathrm{cph}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The phase function and factor |
 
 ## Further Reading
 
@@ -259,8 +259,8 @@ the covariant Madelung pair, with the quantum potential $Q=-\frac{h^{2}}{4\pi^{2
 - [The Coupled Schrödinger Equation in Biquaternionic Form](the-coupled-schrodinger-equation-in-biquaternionic-form.html), the element-form companion, for the equation, the sign bookkeeping of the two slots and the current.
 - [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), where the redundant direction of the chart is what the action's symmetry acts on.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the carrier, the two settings and the centrality of $i$.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the centre that this article reads as a translation of $\theta_{\mathrm{pha}}$.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator whose two slots the chart reads.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localisation of the centre that this article reads as a translation of $\theta_{\mathrm{pha}}$.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the operator whose two slots the chart reads.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same construction in the second-order case, where the chart's redundant direction is one coordinate among several.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the case in which the connection reaches all four brackets.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its bijection.

@@ -195,7 +195,7 @@ $$
 
 The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g_L\tilde Qg_R^{*}$, a central vacuum is diagonal-invariant, and the two mass matrices come out proportional. The detail is in [Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter.html).
 
-**Role four, the gauge symmetry.** The only role not realised: the two sides promoted to local symmetries with their own connections. **Nothing in the data requires it, and nothing excludes it above its breaking scale.** Why the observed theory stops at one factor is a question about hypercharge and the multiplet assignment, and it is answered in [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html), §*Why the Standard Model Makes One Side Local and Not Two*.
+**Role four, the local symmetry.** The only role not realised: the two sides promoted to local symmetries with their own connections. **Nothing in the data requires it, and nothing excludes it above its breaking scale.** Why the observed theory stops at one factor is a question about hypercharge and the multiplet assignment, and it is answered in [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html), §*Why the Standard Model Makes One Side Local and Not Two*.
 
 **The lesson of the table.** The group is not an unused object. **Three of the four roles are realised: an exact global symmetry of the strong sector, an approximate one in the scalar sector, and the rotation group of the carrier.** The fourth is the only one nature does not exhibit at low energy, and the reason belongs to the Standard Model's chapter rather than to this one. **What the table settles here is narrower and enough: the group is native, and only its use is a choice.**
 
@@ -271,7 +271,7 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 
 **The two modules.** On the carrier the group is $\mathrm{Spin}(4)_{E}$, spacetime. On the tensor factors of $\mathbb{B}\otimes\mathbb{B}$ it is internal. The frame needs the second, and the algebra builds it as a module.
 
-**The four roles.** Spacetime rotations, exact; the chiral symmetry of the strong sector, approximate and spontaneously broken; the custodial symmetry of the scalar sector, approximate and giving $\rho=1$; the made local left–right symmetry, not observed.
+**The four roles.** Spacetime rotations, exact; the chiral symmetry of the strong sector, approximate and spontaneously broken; the custodial symmetry of the scalar sector, approximate and giving $\rho=1$; the local left–right symmetry, not observed.
 
 **Where the fourth role is decided.** Not here. Whether nature makes the local group, and why the low-energy theory makes one local factor of it, are questions about hypercharge, about the multiplet assignment and about a breaking; [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html) takes them up, and this article stops at the group the algebra supplies.
 

@@ -227,7 +227,7 @@ The symbol is invariant in the invariant coordinates: the four shifts cancel, ve
 | $\sigma_{\mathrm{gco}}(\omega)=hf_{\mathrm{frq}}\,e_t-\tilde H^{\mathrm{gco}}_\Psi$ | The element symbol; the form's kernel |
 | $\sigma_{\mathrm{gco}}(\omega,2\pi\vec\nu_{\Phi})=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}-\lvert h\,\vec\nu_{\Phi}-q\vec A\rvert^{2}/(2m)$ | The scalar symbol; operator setting |
 | $\mathcal E=hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$, $\vec\pi=h\,\vec\nu_{\Phi}-q\vec A$ | The two invariants; the symbol's only arguments |
-| $\omega\mapsto\omega-\frac{2\pi ϙ}{h}\partial_{t'}\Gamma$, $2\pi\vec\nu_{\Phi}\mapsto2\pi\vec\nu_{\Phi}+\frac{ϙ}{h}\vec\nabla_\Phi\Gamma$ | The mode's gauge shifts; they cancel in the symbol |
+| $\omega\mapsto\omega-\frac{2\pi ϙ}{h}\partial_{t'}\Gamma$, $2\pi\vec\nu_{\Phi}\mapsto2\pi\vec\nu_{\Phi}+\frac{ϙ}{h}\vec\nabla_\Phi\Gamma$ | The mode's representative shifts; they cancel in the symbol |
 | $E=-\sigma_{\mathrm{gco}}(0,2\pi\vec\nu_{\Phi})$ | The energy as minus the symbol at zero frequency |
 | $\partial\sigma_{\mathrm{gco}}/\partial\omega=\frac{h}{2\pi}$ | The Legendre slope; unchanged by the coupling |
 | $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial \nu_{\Phi,k}=0$ | The vanishing mixed derivative; the class's mark |

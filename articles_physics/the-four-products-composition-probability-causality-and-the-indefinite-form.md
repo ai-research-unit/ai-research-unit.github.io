@@ -364,13 +364,13 @@ $$
 
 so the quaternion conjugation is the fundamental symmetry of the indefinite structure: its eigenspaces are the centre and the vector subspace, of complex dimensions one and three, of the two opposite signs and mutually orthogonal.
 
-The physical reading is that a constraint is not a state. **A definite form counts states: it is positive, it normalises, and its rank-one elements are pure states.** An indefinite form fixes a redundancy: it distinguishes the two signs and leaves the normalisation to a choice of representative. On the material sector the Krein form is minus the interval, so the gauge form and the causal form are one form read with a sign, and on the informational sector they coincide.
+The physical reading is that a constraint is not a state. **A definite form counts states: it is positive, it normalises, and its rank-one elements are pure states.** An indefinite form fixes a redundancy: it distinguishes the two signs and leaves the normalisation to a choice of representative. On the material sector the Krein form is minus the interval, so the connection form and the causal form are one form read with a sign, and on the informational sector they coincide.
 
 The boundary. The Krein form is a form, not a connection theory. No group, no coupling and no field content is derived. What the algebra supplies is the inertia, the fundamental symmetry and the resulting orthogonality.
 
 ### I.6.i — The Obstruction Needs a Complex Witness
 
-Read: the antisymmetric part of the gauge product, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, is not a Lie bracket, and its failure of the Jacobi identity is the sparsest of the three.
+Read: the antisymmetric part of the connection product, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, is not a Lie bracket, and its failure of the Jacobi identity is the sparsest of the three.
 
 The witness is necessarily complex. On real elements that bracket is the plain Lie bracket, which satisfies the identity; on the triple $(\vec e_x,\vec e_x,i\vec e_y)$ the cyclic sum is a nonzero multiple of $i\vec e_y$.
 
@@ -402,7 +402,7 @@ $$
 
 The consequence is a division of the twelve into the measurable and the generative. A measurement returns a scalar; only the symmetric half carries one. A transformation needs a direction; only the antisymmetric half carries one, and its value lies in the vector subspace.
 
-So each of the four jobs comes with a quantity and an order. Composition has a signed overlap and a rotation axis; probability has an expectation value and an interference term; causality has the interval and the boost obstruction; gauge has the indefinite calibration and the polarisation direction.
+So each of the four jobs comes with a quantity and an order. Composition has a signed overlap and a rotation axis; probability has an expectation value and an interference term; causality has the interval and the boost obstruction; the indefinite product has the calibration and the polarisation direction.
 
 The vector part makes the same point from the other side. Nine distinct vector parts exist among the twelve, and the three coincidences are exactly the cases where the symmetric half is central: where the quantity is a pure scalar, the parent and its antisymmetric half have the same direction, and a vector-only probe cannot distinguish them.
 
@@ -416,7 +416,7 @@ The two coincidences are not accidents of notation. For real elements the coeffi
 
 The physical reading is a limit on what a classical description can distinguish. **A real-valued formulation sees ten operations, and the two it cannot separate are separated only by the complex structure.** A property that holds for one member of a coincident pair and fails for the other is therefore invisible in the real formulation: the identity survives in one member and is lost in the other, and the real description reports both as the same object.
 
-The sharpest case is the Jacobi failure of the gauge bracket. It is invisible on real elements, so a real formulation reports the bracket as a Lie bracket. The complex structure is the carrier of the obstruction and not a convenience of the calculation.
+The sharpest case is the Jacobi failure of the connection bracket. It is invisible on real elements, so a real formulation reports the bracket as a Lie bracket. The complex structure is the carrier of the obstruction and not a convenience of the calculation.
 
 The boundary. The twelve are the operations of the complex space. A real form carries ten of them, and every statement of the source articles is a statement about the complex space unless it says otherwise.
 
@@ -479,7 +479,7 @@ The collapse on the real part is a loss of information, not a simplification. A 
 - The four forms have inertias $(0,4)$ or $(4,0)$, $(3,1)$ or $(1,3)$, $(4,0)$, $(1,3)$ on the two sectors, which is the algebraic content of the four names.
 - Probability is the only definite form, and its product has no clock: the central element squares to $+e_t$, there is no nilpotent of index two, and the cone appears at the third power.
 - Causality is the only multiplicative norm, and the causal type composes while the causal operation does not associate.
-- Gauge is the only indefinite Hermitian form, and its fundamental symmetry is the quaternion conjugation.
+- The indefinite product is the only indefinite Hermitian form, and its fundamental symmetry is the quaternion conjugation.
 - On the real part two pairs of the twelve coincide and the count falls to ten, which is why a real computation cannot see the complex obstruction.
 
 ## Summary of Notation

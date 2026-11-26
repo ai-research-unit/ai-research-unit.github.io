@@ -378,5 +378,5 @@ The biquaternion quadratic map is a discrete rule on the algebra and not a flow:
 - [Relational Time from the Sector Exchange: The Material and Informational Clocks](../articles_physics/relational-time-from-the-sector-exchange-the-material-and-informational-clocks.html), for the quarter turn of the central imaginary, which is a different clock.
 - [Introduction to the Spin-Half Bispinors Spaces](../articles_physics/the-spin-half-bispinor-spaces.html), for the two halves and the mass as their pairing.
 - [Introduction to the Spin-One Anti-Hermitian Subspace](../articles_physics/the-spin-one-anti-hermitian-subspace.html), for the triple that lies on the critical set.
-- [Lattice Connection Theory and the Biquaternion Path Integral](../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html), for the frame that a discrete regularisation needs.
+- [Lattice Connection Theory and the Biquaternion Path Integral](../articles_physics/lattice-connection-theory-and-the-biquaternion-path-integral.html), for the frame that a discrete regularisation needs.
 

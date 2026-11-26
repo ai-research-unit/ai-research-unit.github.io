@@ -102,7 +102,7 @@ The coupling along the way, which is the more useful table.
 
 Why the pole is nevertheless worth printing. Because it is the only place in the model where a coupling's growth is *unbounded*, and because the reason is structural rather than accidental. A non-abelian coupling has a negative $b$ because the connections themselves carry charge and screen the other way; an abelian coupling has no such self-interaction, so its $\beta$ function is the sum of matter contributions alone and is necessarily positive for the matter the model contains. Section *Why Abelian Is Different* makes that exact.
 
-What the framework says about it, stated here so it is not repeated. The framework's minimal coupling produces a *central* abelian factor — this is the ceiling's constructive half, recorded in [the symmetry group article](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) — and a central factor has no self-interaction by definition. So the positive $b_1$ is not a choice the framework could have made differently. That is a real structural statement and it is the strongest thing this article has to say on the subject.
+What the framework says about it, stated here so it is not repeated. The framework's minimal coupling produces a *central* abelian factor — this is the ceiling's constructive half, recorded in [the symmetry group article](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html) — and a central factor has no self-interaction by definition. So the positive $b_1$ is not a choice the framework could have made differently. That is a real structural statement and it is the strongest thing this article has to say on the subject.
 
 ## Why Abelian Is Different
 
@@ -119,7 +119,7 @@ The numbers, decomposed. For the Standard Model,
 
 $$
 b_1=+\frac{41}{6}\ \text{(matter only)},\qquad
-b_2=-\frac{19}{6}=\underbrace{-\frac{22}{3}}_{\text{gauge+ghost}}+\underbrace{\frac{4}{3}N_g}_{\text{fermions}}+\underbrace{\frac16}_{\text{scalar}} ,
+b_2=-\frac{19}{6}=\underbrace{-\frac{22}{3}}_{\text{connection+ghost}}+\underbrace{\frac{4}{3}N_g}_{\text{fermions}}+\underbrace{\frac16}_{\text{scalar}} ,
 $$
 
 where $N_g=3$. The non-abelian case has a large negative connection term and a smaller positive matter term; the abelian case has no negative term at all.
@@ -128,7 +128,7 @@ where $N_g=3$. The non-abelian case has a large negative connection term and a s
 
 What this costs the framework's picture. It means that the one coupling the framework supplies most naturally — the central abelian one, whose parameter $ϙ$ [the parameter-count article](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html) counts as entry 14 — is precisely the one that cannot be UV-complete on its own. The framework's most native object is its least UV-safe one. That is an honest observation and it has no remedy inside the algebra.
 
-The contrast with QCD, which is the corpus's reference case. [The asymptotic-freedom article](asymptotic-freedom-and-the-running-of-the-strong-coupling.html) records $b_3=-7$ and the resulting screening: $g_s$ falls from $1.221$ at $M_Z$ to $0.49$ at $M_{\mathrm{Pl}}$, a factor of $2.5$. The two couplings move in opposite directions from the same starting magnitude, and the difference is entirely the gauge self-interaction.
+The contrast with QCD, which is the corpus's reference case. [The asymptotic-freedom article](asymptotic-freedom-and-the-running-of-the-strong-coupling.html) records $b_3=-7$ and the resulting screening: $g_s$ falls from $1.221$ at $M_Z$ to $0.49$ at $M_{\mathrm{Pl}}$, a factor of $2.5$. The two couplings move in opposite directions from the same starting magnitude, and the difference is entirely the representative self-interaction.
 
 ## Triviality: a Fundamental Scalar Cannot Be Both Weak and Complete
 
@@ -320,7 +320,7 @@ Three statements, one of which is a structural result.
 
 **First, and this is the real one: the Landau pole is structural.** The framework's minimal coupling produces a central abelian factor. A central connection has no self-coupling, therefore no antiscreening, therefore $b_1>0$ for any matter content with the observed quantum numbers. So the hypercharge pole is not a numerical accident that a different model might avoid; it is what a central factor *is*. The consequence is uncomfortable: the framework's most native object, the abelian connection with its free parameter $ϙ$, is the one object that cannot be UV-complete alone. Nothing in the algebra repairs this, because the repair would require the abelian factor to become non-abelian, which is precisely what the ceiling forbids.
 
-Second: triviality is imported. The bound comes from the $\xi_{\mathrm{pot}}^4$ $\beta$ function, and the framework has no potential of its own from which a quartic's running could be derived. [The electroweak-symmetry-breaking article](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) records that the potential is standard input; so is its running.
+Second: triviality is imported. The bound comes from the $\xi_{\mathrm{pot}}^4$ $\beta$ function, and the framework has no potential of its own from which a quartic's running could be derived. [The electroweak-symmetry-breaking article](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html) records that the potential is standard input; so is its running.
 
 Third: the tunnelling calculation cannot be done here. A bounce is a saddle point of a Euclidean functional integral, and [the path-integral article](the-path-integral-in-biquaternionic-form.html) established that the measure lies outside $\mathbb{B}$. So the metastability statement is imported whole, and the framework neither confirms nor contradicts it.
 
@@ -412,7 +412,7 @@ The framework supplies one structural result — the sign of $b_1$ — one regul
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html). The exact flow equation, the regulator the algebra supplies, and the open question this article turns into a number.
 - [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $b_3=-7$ and the contrast with the abelian case.
 - [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html). The other consequence of the scalar sector's couplings, and the same discipline about what a bound means.
-- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The potential whose quartic is the subject of half this article.
+- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html). The potential whose quartic is the subject of half this article.
 - [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). $g_{\mathrm Y}$, $\varpi_{\mathrm{cpl}}$ and $m_H$ among the nineteen, and what kind of number each is.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Why neither a GUT nor a composite Higgs can be built here.
 - [The Path Integral in Biquaternionic Form](the-path-integral-in-biquaternionic-form.html). Why a bounce cannot be computed inside the algebra.

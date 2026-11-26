@@ -233,7 +233,7 @@ The interpretation is physical and the algebra does not force it. The corpus rea
 
 **The second condition is not a conservation law.** No charge, current or density is conserved by it, and it is not the divergence of anything. It is a linear constraint on the source at one frequency, and it is required only on the cone, so it has no global form.
 
-It is not a gauge statement. Redundancy is not used anywhere in this article, and the rank here is the rank of a symbol and not of a quotient by orbits. The corpus's treatment of structure belongs to *Maxwell's Equations in the Biquaternionic Formulation*, §*Structure*, and nothing there is invoked.
+It is not a connection statement. Redundancy is not used anywhere in this article, and the rank here is the rank of a symbol and not of a quotient by orbits. The corpus's treatment of structure belongs to *Maxwell's Equations in the Biquaternionic Formulation*, §*Structure*, and nothing there is invoked.
 
 It is not a statement about a particle. The condition constrains a classical source at a frequency point. Whether a quantum state of a photon is prepared in the surviving polarisation is a different question, and the companion article's limits apply here unchanged.
 

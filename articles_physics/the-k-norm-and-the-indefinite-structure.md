@@ -594,7 +594,7 @@ Read: the transitivity of $\mathrm{U}(1,3)$ on the punctured null set, its prese
 
 The group that preserves the weight is $\mathrm{U}(1,3)$, of real dimension sixteen, and it acts transitively on the wall. Every non-zero null element is carried to every other by an isometry, so inside the wall there is no invariant except the value, which is constant. The group is larger than the Lorentz group, and the extra directions are the ones that change the phase of the scalar part and rotate the three complex directions among themselves.
 
-The reading is that this group is the symmetry group of the frame and not the Lorentz group. Lorentz is the subgroup that preserves the material real slice. The whole of $\mathrm{U}(1,3)$ preserves the form, and a form-preserving transformation that is not Lorentz moves an element off the sector. The gauge reading is a name for the invariance of the weight, and it is not a derivation of a connection.
+The reading is that this group is the symmetry group of the frame and not the Lorentz group. Lorentz is the subgroup that preserves the material real slice. The whole of $\mathrm{U}(1,3)$ preserves the form, and a form-preserving transformation that is not Lorentz moves an element off the sector. The representative reading is a name for the invariance of the weight, and it is not a derivation of a connection.
 
 The transitivity is what forbids the spectral split, and the two statements are one theorem. Because the group is transitive on the wall, a function invariant under it is constant there; because the square of the vector part is not constant there, it is not an invariant of the weight. A classification by the weight can therefore have no second axis inside the wall.
 
@@ -622,7 +622,7 @@ No statistics is supplied. The indefinite inner product of operator theory comes
 
 No measurement theory is supplied. The state slice, the Born weight and the projection postulate belong to the informational sector's entry, and this entry refers to them and does not restate them. The K norm is the form of a relativistic state space and it is not a rule for outcomes; the rule for outcomes is the definite form's.
 
-No connection is supplied. The group $\mathrm{U}(1,3)$ is the isometry group of the form on the coefficient space. It is not promoted to a local symmetry, no connection is chosen, and no field strength is computed. The word *gauge* in I.11.k names an invariance and not a theory.
+No connection is supplied. The group $\mathrm{U}(1,3)$ is the isometry group of the form on the coefficient space. It is not promoted to a local symmetry, no connection is chosen, and no field strength is computed. The inherited term in I.11.k names an invariance and not a theory.
 
 No scale is fixed. The norm is homogeneous of degree two, so every non-zero element has a one-parameter family of rescalings that stay on its level set. Nothing in the form selects an invertible element, and the choice of a level set on which to normalise an element is a separate act. The physical readings use the mass shell, and the mass shell is a chart-dependent choice of level.
 
@@ -666,7 +666,7 @@ The two sectors are charts and not subalgebras with a physics of their own. The 
 | the adjoint | the K adjoint $T^{\dagger}=JT^{*}J$ exists everywhere; the polar decomposition exists exactly on the invertibles |
 | the level sets | $\{\mathrm{Kr}=c\}$ is $\mathrm{U}(1,3)/\mathrm{U}(3)$ for $c>0$ and $\mathrm{U}(1,3)/\mathrm{U}(1,2)$ for $c<0$, both of dimension $7$ |
 | the geometry | the positive family is the complex hyperbolic ball, its boundary the wall, the level sets the Bergman spheres |
-| the readings | weight, inertia, light cone, mass, mixedness, gauge frame, and the price of an indefinite state space |
+| the readings | weight, inertia, light cone, mass, mixedness, frame choice, and the price of an indefinite state space |
 
 ## Summary of Notation
 

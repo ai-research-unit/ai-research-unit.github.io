@@ -17,7 +17,7 @@
 
 **A Dirac mass needs a left-handed and a right-handed field of the same charge, and the sixteen supply them in pairs.** So a mass term $\bar\xi\xi$ is allowed by the local symmetry — **and it is not written.** The reason is a choice of the model's ledger and not a theorem: **$Ξ$ is what gives the sixteen their masses, and a bare mass would be a second source that the ledger does not carry.**
 
-**The consequence is the one that matters downstream.** Every fermion is massless in the symmetric phase, the electroweak-scale ratios are set by $y$ alone, and **there is no see-saw, because there is no gauge-singlet mass to give a right-handed neutrino.**
+**The consequence is the one that matters downstream.** Every fermion is massless in the symmetric phase, the electroweak-scale ratios are set by $y$ alone, and **there is no see-saw, because there is no symmetry singlet mass to give a right-handed neutrino.**
 
 **What replaces the usual "no mass term" argument.** In the Standard Model the mass term is forbidden because $\bar Q_L H d_R$ and $\bar Q_L\tilde H u_R$ are the only renormalisable options. **Here the argument is different and weaker**: the term is allowed and omitted, and the article says so rather than pretending the group forbids it.
 
@@ -44,7 +44,7 @@ $$
 
 **The count is $8-6=2$, and the six are not approximate.** A bi-unitary transformation $y\to W^{\dagger}yV$ with $W,V\in\mathrm{U}(2)$ can always be chosen to make $y$ diagonal with real non-negative entries — **the singular-value decomposition, and it exists for every $2\times2$ matrix.** So the sector's physical content is two numbers.
 
-**Those two numbers are masses and nothing else.** A mixing angle would need a vertex that changes $\alpha$, and §*What the Algebra Forbids* of [the vertex article](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html) shows that no generator has one. **An unobservable angle is not a parameter**, and the sector does not have one.
+**Those two numbers are masses and nothing else.** A mixing angle would need a vertex that changes $\alpha$, and §*What the Algebra Forbids* of [the vertex article](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html) shows that no generator has one. **An unobservable angle is not a parameter**, and the sector does not have one.
 
 ## After the Breaking: the Mass Matrix and the Factor Three
 
@@ -167,7 +167,7 @@ $$
 
 - [The $\mathrm{SU}(4)$ Model](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The content, the condensate, and the ledger this sector sits in.
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). Why the model is closed under $C$ and $CP$, and where the copy index sits.
-- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The proof that no vertex carries the copy index, which is the reason no phase survives.
+- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The proof that no vertex carries the copy index, which is the reason no phase survives.
 - [The Feynman Rules](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The Lagrangian this sector is one line of.
 - [An Introduction to Flavour](an-introduction-to-flavour.html). What a generation index would have to supply, and why this model has none.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The same condensate, read on the gauge side.
+- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The same condensate, read on the connection side.

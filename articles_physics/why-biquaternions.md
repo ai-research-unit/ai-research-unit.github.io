@@ -306,7 +306,7 @@ $$
 \mathrm{SU}(2)=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi},
 $$
 
-so a connection with values in $\mathfrak{su}(2)$ is a connection on the algebra itself, and instantons and solitons follow from the same product ([Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html), [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html)).
+so a connection with values in $\mathfrak{su}(2)$ is a connection on the algebra itself, and instantons and solitons follow from the same product ([Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html), [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html)).
 
 The ceiling is exact and it is stated as a result rather than a hope. The algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$, so colour with three values is outside the carrier ([Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html)). The weak isospin fits; the strong interaction does not, and no construction inside the algebra supplies the third colour.
 

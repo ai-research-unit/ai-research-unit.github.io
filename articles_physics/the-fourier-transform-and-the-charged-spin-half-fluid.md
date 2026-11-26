@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The whole of the coupling's action on a mode is a translation of its label, in all four slots, and a translation of a label cannot reach the rotor. That is the article's one sentence, and its reason is a counting argument rather than a type argument. The covariant label of a mode is $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$: a timelike element of $\mathbb{B}_\Phi$ of fixed norm, which is the boost multiplied by the mass wave number. The label therefore has room for the momentum and the frame, and no room for the rotor. The gauge acts on the label as a translation. So the gauge cannot turn the spin.
+The whole of the coupling's action on a mode is a translation of its label, in all four slots, and a translation of a label cannot reach the rotor. That is the article's one sentence, and its reason is a counting argument rather than a type argument. The covariant label of a mode is $\tilde\Upsilon_{\Phi,\mathrm{gco}}=i\nu_m\tilde U_{\Psi,\mathrm b}^{-2}$: a timelike element of $\mathbb{B}_\Phi$ of fixed norm, which is the boost multiplied by the mass wave number. The label therefore has room for the momentum and the frame, and no room for the rotor. The representative acts on the label as a translation. So the representative cannot turn the spin.
 
 The charged fluid's loop invariant is a Lorentz transformation times a phase; at a mode the frame is constant, so the Lorentz factor is the identity and the invariant is the phase alone. The product $\mathbb{C}^{*}\times SL(2,\mathbb{C})$ is therefore an inter-mode object: one factor is the diagonal's and the other is not, and no single mode exhibits both.
 
@@ -12,7 +12,7 @@ This is the charged companion of [The Fourier Transform and the Spin-Half Fluid]
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $ϙ$, the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, the local transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ with $\Gamma$ real, and
+The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $ϙ$, the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$, the local transformation $\digamma_{\mathrm{cph}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ with $\Gamma$ real, and
 
 $$
 \tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi ,
@@ -105,7 +105,7 @@ At a mode the connection is constant, so $\tilde F=0$ and the companion's vortic
 
 **Every charged rung of the block has one invariant object in the momentum-space reading, and it is the curvature.**
 
-| rung | the mode's label | what the gauge does | the invariant |
+| rung | the mode's label | what the representative does | the invariant |
 | --- | --- | --- | --- |
 | Schrödinger | $h\,\vec\nu_{\Phi}$ | shifts it | $\vec B$ |
 | Klein–Gordon | $h\,\tilde\Upsilon_\Phi$ | shifts it | $\tilde F$ |
@@ -114,11 +114,11 @@ At a mode the connection is constant, so $\tilde F=0$ and the companion's vortic
 
 The scalar label has four numbers and no frame; the spinor label has four numbers and is the frame; the vector label has four numbers and *is* the field. So the spinor rung is the one rung whose label is exactly the frame, and that is why the rotor's independence of the fixing condition is a counting statement there and an algebraic one elsewhere.
 
-A gauge is a translation of a label, a translation cannot change a norm, and the norm is the invariant only when the label has nothing else in it. On the spinor rung the label has a great deal else in it — the whole frame — and the gauge still cannot touch it, because the frame is the label. That is the precise content of "a phase cannot rotate a rotor".
+A representative is a translation of a label, a translation cannot change a norm, and the norm is the invariant only when the label has nothing else in it. On the spinor rung the label has a great deal else in it — the whole frame — and the representative still cannot touch it, because the frame is the label. That is the precise content of "a phase cannot rotate a rotor".
 
 ## Limits
 
-Constant coefficients. The translation reading of the gauge needs a constant connection. The counting argument of §*The Label, and the Rotor Outside It* does not: it is a statement about the carrier, and it holds for every profile.
+Constant coefficients. The translation reading of the representative needs a constant connection. The counting argument of §*The Label, and the Rotor Outside It* does not: it is a statement about the carrier, and it holds for every profile.
 
 A single mode against a general field. §*The Loop Invariant, One Factor at a Time* is exact at a mode. The general field's invariant is the product, and no statement is made about the size of either factor there.
 
@@ -136,7 +136,7 @@ The transform carries $\mathbb{B}_\Psi$-valued fields to $\mathbb{B}_\Psi$-value
 
 A mode is a point of the momentum space and a constant element of the spinor carrier. Its covariant label is $ik_m\tilde U_{\Psi,\mathrm b}^{-2}$: four numbers, of fixed norm, equal to the boost up to the mass wave number.
 
-The label has room for the momentum and the frame and no room for the rotor. The gauge acts on the label and on nothing else, so at a constant connection the whole effect of the coupling on a mode is a translation of four numbers, and a translation cannot reach the rotor. That is the counting form of the companion's type argument, and it holds for every profile and not only for the constant one.
+The label has room for the momentum and the frame and no room for the rotor. The representative acts on the label and on nothing else, so at a constant connection the whole effect of the coupling on a mode is a translation of four numbers, and a translation cannot reach the rotor. That is the counting form of the companion's type argument, and it holds for every profile and not only for the constant one.
 
 The loop invariant is a Lorentz transformation times a phase. At a mode the frame is constant, so the Lorentz factor is the identity and the invariant is the phase $\exp(\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h})$ alone. The frozen-frame sector is exactly the set of modes, so the product $\mathbb{C}^{*}\times SL(2,\mathbb{C})$ is an inter-mode object with one factor on the diagonal.
 
@@ -159,7 +159,7 @@ The vorticity is $ϙF/m$ and a constant connection has no curvature, so a mode i
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction |
 | $\mathcal H=\mathcal H_{SL(2,\mathbb{C})}\exp(\frac{2\pi iϙ\digamma_{\mathrm{flx}}}{h})$ | The loop invariant |
 | $\digamma_{\mathrm{flx}}$ | The flux through the loop's spanning surface |
-| $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The gauge element; central |
+| $\digamma_{\mathrm{cph}}=\exp(\frac{2\pi iϙ\Gamma}{h})$ | The phase element; central |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

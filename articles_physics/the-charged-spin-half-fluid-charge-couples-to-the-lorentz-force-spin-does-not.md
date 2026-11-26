@@ -218,7 +218,7 @@ The consequence, stated plainly. In this chart the magnetic moment is not a roto
 
 What the background does to the spin is indirect, and the composition is the whole of the physics. The field curves the boost, and the spin's transport follows the boost's. Where the trajectory bends, the frame in which the rotor's own rate is zero bends with it, and the observed precession is the rotor's own rate composed with the transport of the frame. That composition is what the standard theory calls Thomas precession, and [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html) carries out the expansion and shows the two contributions combining to the Larmor rate with the ratio two. **So the Larmor precession is second order in the chart's bookkeeping: not a torque on the spin, but a consequence of the frame's transport, which the field does control.**
 
-The exact statement of what is invariant. The spin's *kinematics* is exact and invariant: $\vec s$ is a function of the rotor alone, the rotor is invariant, so the spin direction is an observable of the chart with no gauge ambiguity. That is more than the element form states, and the coupling does not weaken it, since a central phase cannot touch the rotor. The spin's *dynamics* is the free one plus whatever the frame's transport induces, and the article claims no more.
+The exact statement of what is invariant. The spin's *kinematics* is exact and invariant: $\vec s$ is a function of the rotor alone, the rotor is invariant, so the spin direction is an observable of the chart with no representative ambiguity. That is more than the element form states, and the coupling does not weaken it, since a central phase cannot touch the rotor. The spin's *dynamics* is the free one plus whatever the frame's transport induces, and the article claims no more.
 
 ## What the Charge Cannot Close
 
@@ -339,7 +339,7 @@ The spin direction is invariant and coupling-blind, and the Larmor precession is
 - [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html), for the closure the charge does not supply.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the composition of the rotor's rate with the frame's transport.
 - [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html), for the rank hierarchy the vorticity proper sits in.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the central connection and the curvature.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the central connection and the curvature.
 - [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), the two companions.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the Lorentz group's rotor parametrisation.
 - Ingo Kirsch and Dirk Kreimer, *Spin Hydrodynamics* (lecture notes), for the Weyssenhoff–Raabe stress and the Frenkel condition in their relativistic form.

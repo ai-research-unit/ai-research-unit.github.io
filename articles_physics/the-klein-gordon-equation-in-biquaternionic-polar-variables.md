@@ -172,7 +172,7 @@ The second equation is a conservation law in divergence form. Dividing by $m$ an
 
 For a plane wave the equation is satisfied identically, since the amplitude is constant and the action is linear. For a general wave it constrains the pair, and it is the equation that fixes the amplitude once the action is given, or the action once the amplitude is given. The two equations are not independent: each contains both functions. The amplitude equation carries the second derivatives of the amplitude and the squared gradient of the action; the transport equation is first order in each and carries them only through the products $\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi}$ and $\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t$.
 
-**The divergence form is what the real amplitude buys.** With a complex amplitude the same separation leaves a source term in the transport equation, proportional to the imaginary part of the logarithm of the amplitude, and the conservation law reads as a production law. The gauge $\varrho>0$ real is the choice that removes it.
+**The divergence form is what the real amplitude buys.** With a complex amplitude the same separation leaves a source term in the transport equation, proportional to the imaginary part of the logarithm of the amplitude, and the conservation law reads as a production law. The representative $\varrho>0$ real is the choice that removes it.
 
 ## The Momentum and the Current
 

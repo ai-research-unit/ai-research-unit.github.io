@@ -297,7 +297,7 @@ $$
 
 The first law holds at this point: the three central-difference combinations $(\kappa/8\pi)\,\partial A/\partial M-1$, $(\kappa/8\pi)\,\partial A/\partial J+\Omega$, and $(\kappa/8\pi)\,\partial A/\partial Ϙ+Ξ$ vanish to better than $10^{-12}$ in a $30$-digit computation, and the same computation verifies the Smarr residual below to machine precision. The check uses the general charged and rotating case, not the Schwarzschild case from which the area law is easiest to guess.
 
-**Sign convention, stated once.** The angular-velocity and potential terms are positive because $\Omega$ and $Ξ$ are the horizon values in the gauge where they vanish at infinity and because adding angular momentum or charge of the same sign increases the mass. A reader using the opposite sign for $Ξ$ (potential of infinity relative to the horizon) or the opposite convention for the direction of rotation must flip the corresponding term; the geometric identities above fix the convention, since $\kappa$, $A$, and $r_\pm$ are sign-definite.
+**Sign convention, stated once.** The angular-velocity and potential terms are positive because $\Omega$ and $Ξ$ are the horizon values in the representative where they vanish at infinity and because adding angular momentum or charge of the same sign increases the mass. A reader using the opposite sign for $Ξ$ (potential of infinity relative to the horizon) or the opposite convention for the direction of rotation must flip the corresponding term; the geometric identities above fix the convention, since $\kappa$, $A$, and $r_\pm$ are sign-definite.
 
 ## The Smarr Relation, by Scaling
 

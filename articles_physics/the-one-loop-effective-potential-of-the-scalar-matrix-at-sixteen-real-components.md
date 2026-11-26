@@ -136,7 +136,7 @@ $$
 
 - *Other directions of the background.* At a background $Ξ_{0}\propto D$ the little group is $\mathrm{U}(3)$ and the Hessian's blocks are larger; **the coefficient there is a different number and this article does not compute it.** The identity was chosen because its blocks separate exactly.
 - *The two-loop term.* It is of order $\lambda^{3}$ and would shift the coefficient's logarithm; **it is omitted and the omission is declared rather than estimated.**
-- *The gauge and ghost determinants.* They are field-independent at the identity background, because $[\mathbb{1},t_{a}]=0$ for all fifteen, so no vector mass depends on $\Xi$ — **and that is a property of this background and not of the phase.** The fermion determinant is not dropped; it is the term added in §*The Coefficient*.
+- *The representative and ghost determinants.* They are field-independent at the identity background, because $[\mathbb{1},t_{a}]=0$ for all fifteen, so no vector mass depends on $\Xi$ — **and that is a property of this background and not of the phase.** The fermion determinant is not dropped; it is the term added in §*The Coefficient*.
 - *Resummation.* At $\rho\gg\mu$ the logarithm is large and the one-loop term must be resummed; **the corpus's other effective-potential articles say the same thing**, and none of them resums.
 
 ## The Checks

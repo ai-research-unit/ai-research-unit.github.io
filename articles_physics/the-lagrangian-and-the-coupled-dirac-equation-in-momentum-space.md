@@ -60,7 +60,7 @@ $$
 
 and with $\tilde A_\Phi\in\mathbb{B}_\Phi$ anti-Hermitian, which the parent writes as $\tilde A_\Phi^{*}=-\tilde A_\Phi$.
 
-The connection's $\natural$-behaviour is the parent's and it is used below. For $\tilde A_\Phi=i a_t e_t+\vec a$ with $a_t$ and $\vec a$ real, the $\natural$-image is $\tilde A_\Phi^{\natural}=i a_t e_t-\vec a$. So a purely electric connection is $\natural$-symmetric and a purely magnetic one is $\natural$-antisymmetric, which is the parent's split read as a symmetry of the element rather than of a gauge.
+The connection's $\natural$-behaviour is the parent's and it is used below. For $\tilde A_\Phi=i a_t e_t+\vec a$ with $a_t$ and $\vec a$ real, the $\natural$-image is $\tilde A_\Phi^{\natural}=i a_t e_t-\vec a$. So a purely electric connection is $\natural$-symmetric and a purely magnetic one is $\natural$-antisymmetric, which is the parent's split read as a symmetry of the element rather than of a representative.
 
 $\tilde\Upsilon_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $2\pi i\tilde\Upsilon_\Phi\in\mathbb{B}_\Psi$ and Hermitian; $\tilde A_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi\in\mathbb{B}_\Psi$ and Hermitian. The sum of two Hermitian elements is Hermitian, and that one sentence is the whole of the reality part of §*The Action*.
 
@@ -230,7 +230,7 @@ checked to $2.2\times10^{-16}$ over the four rows below.
 
 The second variation is $2.032500$ and $-0.127500$, so a scalar potential of $\pm0.5$ moves the number across zero; the wrong object is $5.322500$ and $1.902500$, and it does not cross. So the number's sign is a physical statement and the wrong object's sign is not, which is why the distinction between the two is not bookkeeping.
 
-A linear phase function translates the support of the field in momentum space and leaves $\pi$ where it was, because the shift of $\tilde A_\Phi$ and the shift of $k$ cancel in $\frac{h}{2\pi} k+ϙA$. So $\pi^{2}-\nu_m^{2}$ is a number attached to the mode and not to the gauge, and the free article's $\tilde\Upsilon_\Phi$-dependent statement was not.
+A linear phase function translates the support of the field in momentum space and leaves $\pi$ where it was, because the shift of $\tilde A_\Phi$ and the shift of $k$ cancel in $\frac{h}{2\pi} k+ϙA$. So $\pi^{2}-\nu_m^{2}$ is a number attached to the mode and not to the representative, and the free article's $\tilde\Upsilon_\Phi$-dependent statement was not.
 
 ### Zero, Pole and the On-Shell Action
 
@@ -317,7 +317,7 @@ $$
 
 is an equation between elements and not an equation between numbers. That is the precise sense in which the zero-pole relation stops: the free article's relation is between a number and its inverse, and here one of the two is not a number.
 
-The second variation is a central number if and only if the connection is pure gradient, and the gauge qualifier is not removable. A constant connection has $\tilde F=0$ and is removable by a phase, and in that gauge the symbol exists and the number is $\pi^{2}-\nu_m^{2}$. A connection with $\tilde F\neq0$ has no gauge in which the number exists, because $\tilde F$ is invariant. So the number's existence and the connection's purity are one condition, and it is the same condition the companion states as "the multiplier case is the zero-curvature case".
+The second variation is a central number if and only if the connection is pure gradient, and the symmetry qualifier is not removable. A constant connection has $\tilde F=0$ and is removable by a phase, and in that representative the symbol exists and the number is $\pi^{2}-\nu_m^{2}$. A connection with $\tilde F\neq0$ has no representative in which the number exists, because $\tilde F$ is invariant. So the number's existence and the connection's purity are one condition, and it is the same condition the companion states as "the multiplier case is the zero-curvature case".
 
 What this does not say is that the coupled theory has no dispersion relation. It says that the relation is an element equation whose scalar content has to be extracted, and that the extraction is the curvature's business. The article's claim is about the *form* of the second variation and not about the existence of a spectrum, and the Landau-level article is where a nonzero curvature's spectrum is actually computed.
 

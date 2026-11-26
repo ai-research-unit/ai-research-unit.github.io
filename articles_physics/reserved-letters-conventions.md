@@ -50,7 +50,7 @@ A convention is not a description. Nothing in the algebra forces $\theta$ rather
 
 **The glyph $c$ is the speed of light and nothing else.** It is the conversion between the temporal slot and the time in seconds, $t'=r'_t/c$, and a local value carries the label, $c_{\mathrm{loc}}$. The two writings of the temporal slot are in *Physics Units and Common Elements Conventions*, §*Physical Units*.
 
-**The coefficients of an element never carry it.** The four coefficients are lengths and no factor stands on any of them, so $c$ appears where a time in seconds is written and nowhere inside an element. A generic constant, or a coefficient of an equation that is not the speed of light, takes $\digamma$ with a label, $\digamma_{\mathrm{gau}}$. The letter is never a count, never a component of a vector and never the unit of a complex structure, which is $i$.
+**The coefficients of an element never carry it.** The four coefficients are lengths and no factor stands on any of them, so $c$ appears where a time in seconds is written and nowhere inside an element. A generic constant, or a coefficient of an equation that is not the speed of light, takes $\digamma$ with a label, $\digamma_{\mathrm{cph}}$. The letter is never a count, never a component of a vector and never the unit of a complex structure, which is $i$.
 
 ### Sectors: $\Phi$ and $\Psi$
 

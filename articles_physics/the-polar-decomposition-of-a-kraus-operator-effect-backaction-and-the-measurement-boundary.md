@@ -220,14 +220,14 @@ The formula is not $\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus},H}^{2}$ i
 
 ### The Effect Does Not Determine the Split
 
-The effect determines the singular values, not the factorization. If $\tilde U_{\mathrm{gau}}$ is $*$-unitary and $\tilde M_{\mathrm{kraus}}'=\tilde U_{\mathrm{gau}}\tilde M_{\mathrm{kraus}}$, then
+The effect determines the singular values, not the factorization. If $\tilde U_{\mathrm{cph}}$ is $*$-unitary and $\tilde M_{\mathrm{kraus}}'=\tilde U_{\mathrm{cph}}\tilde M_{\mathrm{kraus}}$, then
 
 $$
 \tilde M_{\mathrm{kraus}}'{}^{*}\tilde M_{\mathrm{kraus}}'=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde{\mathcal E}_{\Psi},
 \qquad
-\tilde M_{\mathrm{kraus},H}'=\tilde U_{\mathrm{gau}}\tilde M_{\mathrm{kraus},H}\tilde U_{\mathrm{gau}}^{*},
+\tilde M_{\mathrm{kraus},H}'=\tilde U_{\mathrm{cph}}\tilde M_{\mathrm{kraus},H}\tilde U_{\mathrm{cph}}^{*},
 \qquad
-\tilde M_{\mathrm{kraus},0}'=\tilde U_{\mathrm{gau}}\tilde M_{\mathrm{kraus},0}.
+\tilde M_{\mathrm{kraus},0}'=\tilde U_{\mathrm{cph}}\tilde M_{\mathrm{kraus},0}.
 $$
 
 The same effect therefore admits different strengths and different backactions. The canonical choice $\tilde M_{\mathrm{kraus}}=\sqrt{\tilde{\mathcal E}_{\Psi}}$ gives $\tilde M_{\mathrm{kraus},H}=\sqrt{\tilde{\mathcal E}_{\Psi}}$ and $\tilde M_{\mathrm{kraus},0}$ the projection onto $\operatorname{ran}\tilde{\mathcal E}_{\Psi}$; a physical Kraus operator need not be that choice. The polar decomposition is a decomposition of the amplitude, not a decomposition of the effect. This is the precise sense in which the effect is the probability functional and the amplitude carries more.

@@ -163,7 +163,7 @@ The algebra's contribution is an interpretation. The Coulomb potential is a **ce
 | $\langle \varsigma\rangle_{\natural}=\varsigma^{\natural}\varsigma=\lvert\vec\varsigma\rvert^2$ | Quaternion norm; equals $r$ |
 | $x_1,x_2,x_3$ in terms of $\varsigma$ | The Kustaanheimo–Stiefel map; $\varsigma\mapsto(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ |
 | $J^{\mathsf T}J=4N(\varsigma)(I-\vec u\vec u^{\mathsf T})$, $\vec u\propto(\varsigma_2,-\varsigma_1,-\varsigma_0,\varsigma_3)$ | Riemannian submersion; one redundant direction |
-| $\varsigma_2\,d\varsigma_1-\varsigma_1\,d\varsigma_2-\varsigma_0\,d\varsigma_3+\varsigma_3\,d\varsigma_0=0$ | KS constraint; the null (gauge) direction of the submersion |
+| $\varsigma_2\,d\varsigma_1-\varsigma_1\,d\varsigma_2-\varsigma_0\,d\varsigma_3+\varsigma_3\,d\varsigma_0=0$ | KS constraint; the null (representative) direction of the submersion |
 | $S\to\int ds\,[\,2m\lvert d\varsigma/ds\rvert^2-E \langle \varsigma\rangle_{\natural}-\kappa\,]$ | Transformed action; four-dimensional isotropic oscillator |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$, $r\,ds$ | Measures; the transformation's Jacobian is not supplied by the algebra |
 

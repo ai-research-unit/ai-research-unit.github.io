@@ -527,7 +527,7 @@ The readings. Spin one is the adjoint representation, so the carrier is the alge
 - [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane](the-self-dual-and-anti-self-dual-split-spin-1-from-the-bivector-plane.html), for the complex structure the sector acquires after complexification.
 - [The Generalized Bloch Ball for Spin 1](the-generalized-bloch-ball-for-spin-1-in-the-biquaternion-framework.html), for the state space of a spin-one object.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the massless case and the two polarizations.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the connection that takes values in the carrier.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the connection that takes values in the carrier.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), for the limit of that reading.
 - [Mass in Motion: The Region of Both Invariants](the-region-of-mass-in-motion.html), for the region the carrier occupies.
 - [Rotor, Spin, Pair and Carrier: A Survey of the Closure Block](rotor-spin-pair-and-carrier-a-survey-of-the-closure-block.html), for the sector named as the third carrier.

@@ -189,7 +189,7 @@ $$
 
 and $\tilde F$ is unchanged by the transformation, since a gradient can be absorbed and a field strength cannot. In the abelian case $\tilde F$ is the Maxwell biquaternion of *Maxwell's Equations in the Biquaternionic Formulation*.
 
-What the chart's invariants are, in one list. The radius $\varrho$; the rapidity $\theta_{\mathrm{rpd}}$ and the axis $\vec u_{\mathrm b}$; the rotor angle $\theta_{\mathrm{axr}}$ and its axis; the covariant wavevector $\tilde\Upsilon_{\Phi,\mathrm{gco}}$; and the curvature $\tilde F$. The angle $\theta_{\mathrm{pha}}$ is a coordinate and not an invariant, and its gauge class is the physical statement.
+What the chart's invariants are, in one list. The radius $\varrho$; the rapidity $\theta_{\mathrm{rpd}}$ and the axis $\vec u_{\mathrm b}$; the rotor angle $\theta_{\mathrm{axr}}$ and its axis; the covariant wavevector $\tilde\Upsilon_{\Phi,\mathrm{gco}}$; and the curvature $\tilde F$. The angle $\theta_{\mathrm{pha}}$ is a coordinate and not an invariant, and its representative class is the physical statement.
 
 **The field's frame factor is invariant and this is the chart's cleanest sentence.** Since the local transformation multiplies the word by a central scalar, the frame factors $\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}$ are untouched. The three things the chart calls frame — the boost, the rotor, and their product — are therefore exactly the invariant part of the field's decomposition, and the phase is exactly the representative-dependent part. That is a sharper statement than the element form can make, and it is the reason the polar chart is worth having.
 
@@ -209,7 +209,7 @@ What the background does to the spin is indirect. It curves the boost, and the s
 
 Why the chart cannot do more. The chart's variables are four brackets of four types, and the coupling is confined to two of them by type. A precession of the spin direction would have to be a term in the fourth bracket, and no central element can produce one. The polar chart therefore does not derive the spin's dynamics in a background; it locates the spin and the momentum in different brackets and leaves the coupling to the momentum. That is a real limit on what the polar equation says, and the article prefers to state it rather than to dress it up.
 
-What survives exactly. The spin's *kinematics* is exact and invariant: $\hat s$ is a function of the rotor alone, the rotor is invariant, and the spin direction is therefore an observable of the chart with no gauge ambiguity at all. That is more than the element form states, and it is the polar form's contribution to the spin question.
+What survives exactly. The spin's *kinematics* is exact and invariant: $\hat s$ is a function of the rotor alone, the rotor is invariant, and the spin direction is therefore an observable of the chart with no representative ambiguity at all. That is more than the element form states, and it is the polar form's contribution to the spin question.
 
 ## What the Polar Form Adds, and What It Does Not
 
@@ -229,7 +229,7 @@ Does not add.
 - No spin dynamics in a background, as §*The Spin Transport* states.
 - No closure of the general case: the four brackets are coupled and the chart does not close them.
 
-**The ledger in one paragraph.** The polar coupled equation is the element coupled equation with the word substituted, and the substitution buys three things: the potential as a shift of a gradient, the velocity as the kinetic one, and the field's split into a gauge part and an invariant part. It buys nothing else. In particular it does not buy a spin equation in the background, and it does not buy any statement about the constraint structure of the field, which is a property of the action and not of the equation. The article that follows this one in the coupled quartet substitutes the word into the *action* instead, and the constraint structure appears there.
+**The ledger in one paragraph.** The polar coupled equation is the element coupled equation with the word substituted, and the substitution buys three things: the potential as a shift of a gradient, the velocity as the kinetic one, and the field's split into a representative part and an invariant part. It buys nothing else. In particular it does not buy a spin equation in the background, and it does not buy any statement about the constraint structure of the field, which is a property of the action and not of the equation. The article that follows this one in the coupled quartet substitutes the word into the *action* instead, and the constraint structure appears there.
 
 ## Open Questions
 
@@ -283,12 +283,12 @@ The polar equation is the free pair in variables. It closes for a plane wave in 
 
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), the element form this article re-coordinatises.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the mass-shell proposition.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html), for the action and the current.
 - [The Lagrangian and the Coupled Dirac Equation in Polar Variables](the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html), where the constraint structure appears.
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the current as a pairing.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the spin's transport in a background.
 - [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html), for the spin-half-fluid reading of the four brackets.
-- [The Extension of the Central Phase: The Centre Bounds the Symmetry Group](the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html), for the localization that produces the coupling.
+- [The Extension of the Central Phase: The Centre Bounds the Symmetry Group](the-extension-of-the-central-phase-the-centre-bounds-the-symmetry-group.html), for the localization that produces the coupling.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the covariant derivative in geometric algebra.
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the spin-half-fluid variables and their underdetermination.

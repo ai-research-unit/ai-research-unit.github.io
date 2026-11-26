@@ -498,7 +498,7 @@ Read: a change of frame is a left multiplication $\tilde Q\mapsto\tilde U\tilde 
 
 The two differ in what they act on. A change of frame acts on the algebra and moves every element. The frame is a factor of one element and moves with it. Under a change of frame the amplitude conjugates and the frame multiplies on the left, and neither is quotiented away.
 
-The physical interpretation is that the polar decomposition is a decomposition and not a fixing the representative. A fixing the representative removes a redundancy and leaves a representative of a class. The polar decomposition keeps the element and splits it into two invariantly defined pieces. A reader who conflates the passive and the active sense will conclude that the frame is unphysical, and the conclusion is a category error.
+The physical interpretation is that the polar decomposition is a decomposition and not a fixing. a fixing removes a redundancy and leaves a representative of a class. The polar decomposition keeps the element and splits it into two invariantly defined pieces. A reader who conflates the passive and the active sense will conclude that the frame is unphysical, and the conclusion is a category error.
 
 The boundary. The two senses coincide only when the frame is central, and then only up to the sign that the double cover supplies.
 

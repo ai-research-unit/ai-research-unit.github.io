@@ -2,11 +2,11 @@
 
 ## Introduction
 
-**This article prints the fermion side of the gauge interaction: the fifteen arrays of $\mathfrak{su}(4)$ acting on the sixteen fields, entry by entry, with the quantum numbers of every entry.** It is the companion of [The Feynman Rules](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html), which states the rule $\Gamma^{a}_{\imath}=-ig_{4}\gamma_{\imath}(t_{a}\otimes\mathbb{1}_{2})$ and hands the matrices to this article.
+**This article prints the fermion side of the connection interaction: the fifteen arrays of $\mathfrak{su}(4)$ acting on the sixteen fields, entry by entry, with the quantum numbers of every entry.** It is the companion of [The Feynman Rules](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html), which states the rule $\Gamma^{a}_{\imath}=-ig_{4}\gamma_{\imath}(t_{a}\otimes\mathbb{1}_{2})$ and hands the matrices to this article.
 
 **Three questions it answers, and one it does not.**
 
-- **Where does each entry go?** Every one of the $128$ nonzero fermion–gauge entries is a coefficient joining one quartet line to one quartet line. **There are $64$ on the quartet half and $64$ on the conjugate half**, and the article names the four families, prints their matrices, and lists the pairs.
+- **Where does each entry go?** Every one of the $128$ nonzero fermion–connection entries is a coefficient joining one quartet line to one quartet line. **There are $64$ on the quartet half and $64$ on the conjugate half**, and the article names the four families, prints their matrices, and lists the pairs.
 - **What does each entry carry?** $B-L$ is read off the entry and computed for every family. **The fifteen carry $B-L$ and do not carry $T_{3}$**, and the article says exactly where that split sits and why the missing half is a wall and not an oversight.
 - **What does the algebra forbid?** No generator moves a fermion along the lepton line into another lepton line, no generator changes the copy index, and the six mixed planes are the only entries that change a line at all. **Each of the three is a statement with a proof, not a remark.**
 - **It does not derive the fermion Lagrangian.** The matrices are the corpus's; the dynamics is the transcription. **The dynamics is [the spin note](../articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.html)'s ledger**, and this article inherits it without softening it.
@@ -21,7 +21,7 @@ $$
 
 **The quartet index $i$ is slow and the copy index $\alpha$ is fast**, and every matrix below is printed in that order. **The sixteen are two quartets and two antiquartets**: eight fields in $\mathbf 4$ and eight in $\bar{\mathbf4}$.
 
-**The copy index is the weak-doublet slot, and the model does not gauge it.** $\alpha$ distinguishes the two members of a cell — for the lepton line the neutrino from the electron, for a colour line the up from the down — and **no generator of the fifteen carries an $\alpha$**: every array is $\mathbb 1$ on it. The consequence is the whole of §*What the Algebra Forbids*.
+**The copy index is the weak-doublet slot, and the model does not representative it.** $\alpha$ distinguishes the two members of a cell — for the lepton line the neutrino from the electron, for a colour line the up from the down — and **no generator of the fifteen carries an $\alpha$**: every array is $\mathbb 1$ on it. The consequence is the whole of §*What the Algebra Forbids*.
 
 **The convention of the whole article.**
 
@@ -41,7 +41,7 @@ B-L=\tfrac13 D=\operatorname{diag}\bigl(-1,\tfrac13,\tfrac13,\tfrac13\bigr),
 Q=\tau_{3}+\tfrac12(B-L),
 $$
 
-with $\tau_{3}=\pm\tfrac12$ on the copy index. **$B-L$ is a generator and $Q$ is not**: $B-L=\tfrac13D$ is one of the fifteen up to normalisation, while $Q$ mixes a diagonal of the fifteen with $\tau_{3}$, **and $\tau_{3}$ is not in the algebra.** A quantum number built from a generator and a non-generator is not a gauge charge, and that is the sentence the electroweak wall is made of.
+with $\tau_{3}=\pm\tfrac12$ on the copy index. **$B-L$ is a generator and $Q$ is not**: $B-L=\tfrac13D$ is one of the fifteen up to normalisation, while $Q$ mixes a diagonal of the fifteen with $\tau_{3}$, **and $\tau_{3}$ is not in the algebra.** A quantum number built from a generator and a non-generator is not a symmetry charge, and that is the sentence the electroweak wall is made of.
 
 **The four cells and their two charges each.**
 
@@ -128,7 +128,7 @@ $$
 
 **What the first row forbids is lepton flavour.** No generator has an entry joining the lepton line to itself except the corner's phase, so no connection vertex can turn one lepton into another. **That is [the lepton-flavour article](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html)'s structural result**, and here it is one row of a table.
 
-**What the second row forbids is a gauge origin for $Q$.** The corner gives the same phase $-3i$ to both copies in the lepton cell and the same phase $+i$ to both copies in a colour cell. **A matrix that is $\mathbb 1$ on the copy index cannot separate $\nu$ from $e$**, and the statement is exact: the two copy entries of every array are equal.
+**What the second row forbids is a representative origin for $Q$.** The corner gives the same phase $-3i$ to both copies in the lepton cell and the same phase $+i$ to both copies in a colour cell. **A matrix that is $\mathbb 1$ on the copy index cannot separate $\nu$ from $e$**, and the statement is exact: the two copy entries of every array are equal.
 
 **What the third row allows is the whole of the model's new physics.** Six entries join the lepton line to a colour line, each carries $B-L=\mp\tfrac43$, and each conserves $B-L$ at the vertex because the boson carries it away. **Six generators, three colours and the two plane types, and that is the leptoquark sector.**
 
@@ -205,7 +205,7 @@ $$
 
 **The fifteen act on the sixteen as $X\otimes\mathbb 1_{2}$, and the shadow they cast has $128$ nonzero entries.** Four families, one selection rule: the colour block does not see the lepton, the corner gives it a phase, and the six mixed planes move it to a colour line and carry $\mp\tfrac43$ away with them.
 
-**The copy index is where the model stops.** Every array is the identity on it, so no connection vertex can change it, and $Q$ therefore has a global half and a gauge half that never meet. **That is the chiral wall, stated as a matrix fact.**
+**The copy index is where the model stops.** Every array is the identity on it, so no connection vertex can change it, and $Q$ therefore has a global half and a connection half that never meet. **That is the chiral wall, stated as a matrix fact.**
 
 **The conjugate half is the same table with the sign flipped on every entry**, and the sextet's three-plus-three is that sign, read at the level of charges.
 
@@ -218,7 +218,7 @@ $$
 | $X\otimes\mathbb 1_{2}$ | an array on the quartet, uniform in the copy index |
 | $D=\operatorname{diag}(-3,1,1,1)$ | the condensate direction, and $B-L=\tfrac13D$ |
 | $\tau_{3}$ | the global isospin on the copy index, not a generator |
-| $Q=\tau_{3}+\tfrac12(B-L)$ | the electric charge, half global and half gauge |
+| $Q=\tau_{3}+\tfrac12(B-L)$ | the electric charge, half global and half representative |
 | $t_{a}$ | the normalised generator, $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ |
 | $\mp\tfrac43$ | the $B-L$ a mixed plane's boson carries |
 

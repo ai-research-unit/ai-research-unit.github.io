@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The quadratic part of the electroweak Lagrangian is not invertible, because it is flat along the orbits. A fixing the representative functional is what makes it invertible, and the functional that is chosen here does two things at once: it gives the would-be Goldstones a mass $\zeta M^2$ and it cancels the derivative mixing between each Goldstone and the vector that ate it. Both jobs are done by one term, and that is why the choice is the one it is.
+The quadratic part of the electroweak Lagrangian is not invertible, because it is flat along the orbits. a fixing functional is what makes it invertible, and the functional that is chosen here does two things at once: it gives the would-be Goldstones a mass $\zeta M^2$ and it cancels the derivative mixing between each Goldstone and the vector that ate it. Both jobs are done by one term, and that is why the choice is the one it is.
 
 $$
 \mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a=1,2}\left(\sum_{\imath}\frac{\partial W_{a,\imath}}{\partial R_{\imath}}-\zeta M_W\,\xi_{a}\right)^2-\frac{1}{2\zeta}\left(\sum_{\imath}\frac{\partial Z_{\imath}}{\partial R_{\imath}}-\zeta M_Z\,\xi^0\right)^2-\frac{1}{2\zeta_A}\left(\sum_{\imath}\frac{\partial A_{\imath}}{\partial R_{\imath}}\right)^2 .
@@ -125,11 +125,11 @@ For the measured masses $M_W=1.4327\times10^{-25}\ \mathrm{kg}$ and $M_Z=1.6258\
 | $3$ | $2.481\times10^{-25}$ | $2.816\times10^{-25}$ |
 | $10$ | $4.53\times10^{-25}$ | $5.141\times10^{-25}$ |
 
-At $\zeta=1$ the Goldstone is degenerate with the vector that ate it. $M_{\xi^\pm}=M_W$ and $M_{\xi^0}=M_Z$ exactly, by the definitions of the two masses. This is the Feynman–'t Hooft gauge, and the degeneracy is why it is the gauge in which loop calculations are shortest: the $\zeta$-dependent parts of the Connection and Goldstone propagators have poles at the same place, so they combine into single integrals.
+At $\zeta=1$ the Goldstone is degenerate with the vector that ate it. $M_{\xi^\pm}=M_W$ and $M_{\xi^0}=M_Z$ exactly, by the definitions of the two masses. This is the Feynman–'t Hooft condition, and the degeneracy is why it is the condition in which loop calculations are shortest: the $\zeta$-dependent parts of the Connection and Goldstone propagators have poles at the same place, so they combine into single integrals.
 
 The Goldstone mass is a function of the parameter, and it vanishes at $\zeta=0$ and diverges at $\zeta\to\infty$. A quantity that can be set to zero or to infinity by a choice of coordinates is not an observable. What is observable is that the Goldstone appears in no asymptotic state: it is not in the $S$-matrix, whatever its propagator's pole.
 
-The potential has no term linear in $\xi$ and none mixing $h$ with $\xi$, because the vacuum is the minimum along both directions. The functional therefore introduces no new mixing, which is a statement about the shape of the potential and not about the gauge.
+The potential has no term linear in $\xi$ and none mixing $h$ with $\xi$, because the vacuum is the minimum along both directions. The functional therefore introduces no new mixing, which is a statement about the shape of the potential and not about the representative.
 
 The physical spectrum is unchanged: it is the electroweak article's, three massive vectors, one massless photon, one scalar, twelve degrees of freedom. The Goldstones and ghosts are not extra particles; they are the price of a propagator, and they appear only inside loops.
 
@@ -159,7 +159,7 @@ $$
 M_{\mathrm{gh}}^2=\frac{\zeta v^2}{4}\begin{pmatrix}g^2 & -g\,g_{\mathrm Y}\\ -g_{\mathrm Y}\,g & g_{\mathrm Y}^2\end{pmatrix},
 $$
 
-whose determinant vanishes identically and whose trace is $\zeta M_Z^2$. Its eigenvalues are therefore $0$ and $\zeta M_Z^2$; verified at $\zeta=0.5$, $1$ and $3$, where the computed determinant stayed below $4.17\times10^{29}\ \mathrm{J\,m^{-3}}$ against a trace squared of order $2.09\times10^{45}$ J m$^{-3}$, that is zero to floating-point precision. The zero eigenvalue is the photon's ghost, and its existence is the statement that the residual symmetry is unbroken. A connection theory with a compact unbroken factor has a massless ghost per generator of that factor, and the count is a check on the breaking pattern rather than on the gauge.
+whose determinant vanishes identically and whose trace is $\zeta M_Z^2$. Its eigenvalues are therefore $0$ and $\zeta M_Z^2$; verified at $\zeta=0.5$, $1$ and $3$, where the computed determinant stayed below $4.17\times10^{29}\ \mathrm{J\,m^{-3}}$ against a trace squared of order $2.09\times10^{45}$ J m$^{-3}$, that is zero to floating-point precision. The zero eigenvalue is the photon's ghost, and its existence is the statement that the residual symmetry is unbroken. A connection theory with a compact unbroken factor has a massless ghost per generator of that factor, and the count is a check on the breaking pattern rather than on the representative.
 
 Three weights are attached to each ghost, and they are separate facts:
 
@@ -217,13 +217,13 @@ The other propagators, in the same notation:
 
 Three limits follow from the one formula.
 
-- At $\zeta=1$, $\frac{P+L}{\Pi-M^2}=\frac{\delta_{\imath\jmath}}{\Pi-M^2}$. The propagator is diagonal in the Lorentz indices, the Goldstone and ghost have mass $M$, and the $\zeta$-cancellation is between fields of equal mass. This is the Feynman–'t Hooft gauge.
-- At $\zeta=0$, $\frac{P_{\imath\jmath}}{\Pi-M^2}$, which is regular: the second term is $\zeta L_{\imath\jmath}/\Pi$ to leading order and vanishes with $\zeta$. The longitudinal term is absent, and the Goldstone and ghost become massless, their poles moving to $\Pi=0$. This is the Landau fixing condition: the best gauge for ultraviolet questions and the one in which the infrared structure of the Goldstone and ghost contributions has to be cancelled between them.
+- At $\zeta=1$, $\frac{P+L}{\Pi-M^2}=\frac{\delta_{\imath\jmath}}{\Pi-M^2}$. The propagator is diagonal in the Lorentz indices, the Goldstone and ghost have mass $M$, and the $\zeta$-cancellation is between fields of equal mass. This is the Feynman–'t Hooft condition.
+- At $\zeta=0$, $\frac{P_{\imath\jmath}}{\Pi-M^2}$, which is regular: the second term is $\zeta L_{\imath\jmath}/\Pi$ to leading order and vanishes with $\zeta$. The longitudinal term is absent, and the Goldstone and ghost become massless, their poles moving to $\Pi=0$. This is the Landau fixing condition: the best representative for ultraviolet questions and the one in which the infrared structure of the Goldstone and ghost contributions has to be cancelled between them.
 - At $\zeta\to\infty$, $\frac{P_{\imath\jmath}}{\Pi-M^2}-\frac{L_{\imath\jmath}}{M^2}$, which is $\frac{\delta_{\imath\jmath}+p_{\imath} p_{\jmath}/M^2}{\Pi-M^2}$, the Proca form. The sign of the second term flips in the limit, because $\Pi-\zeta M^2\to-\zeta M^2$ and the whole term tends to $-L/M^2$; the two forms then add to the transverse-plus-longitudinal numerator that *Canonical Quantization of the Biquaternion Proca Field* displays. The Goldstone and ghost masses diverge and those fields decouple. This is the unitary fixing condition, and it is the same object as the Proca field of the companion article.
 
 The unitary limit is exact. $\frac{P_{\imath\jmath}}{\Pi-M^2}-\frac{L_{\imath\jmath}}{M^2}$ equals $\frac{\delta_{\imath\jmath}+p_{\imath} p_{\jmath}/M^2}{\Pi-M^2}$ identically, entry by entry, and the reason is one line: $p_{\imath} p_{\jmath}=-\Pi L_{\imath\jmath}$, so $\frac{\delta+pp/M^2}{\Pi-M^2}=\frac{P}{\Pi-M^2}+\frac{L+pp/M^2}{\Pi-M^2}=\frac{P}{\Pi-M^2}-\frac{L}{M^2}$. The cancellation is algebraic and holds at every momentum, on shell or off. At finite $\zeta$ the deviation from the Proca form is $\frac{\Pi\,L_{\imath\jmath}}{M^2\left(\Pi-\zeta M^2\right)}$, of order $1/\zeta$ and not of order of the off-shellness: $2.0\times10^{-9}$ at $\Pi=2M^2$ and $\zeta=10^{9}$. The Proca propagator is therefore the $\zeta\to\infty$ limit and not a separate object.
 
-The third limit is not a gauge in which one can compute loops: the vector propagator tends to a constant, which is the subject of the next section but one. It is the right gauge for tree-level questions about the physical spectrum, and the wrong gauge for everything else. That asymmetry is the reason the $R_\xi$ family is used at all: it contains both limits and a good gauge in between.
+The third limit is not a representative in which one can compute loops: the vector propagator tends to a constant, which is the subject of the next section but one. It is the right representative for tree-level questions about the physical spectrum, and the wrong representative for everything else. That asymmetry is the reason the $R_\xi$ family is used at all: it contains both limits and a good representative in between.
 
 ## What the Parameter Cannot Change
 
@@ -245,23 +245,23 @@ Three things move with $\zeta$ — the Goldstone mass, the ghost mass and the po
 
 ## Power Counting and the Renormalisability Argument
 
-Every propagator falls as $1/\Pi$. In the $R_\xi$ gauge all five propagators of the table above behave as $\Pi^{-1}$ at large $\Pi$, including the longitudinal part of the vector, whose second term is $\frac{\zeta L}{\Pi-\zeta M^2}\sim\frac{\zeta L}{\Pi}$. With every internal line contributing $\Pi^{-1}$ and every vertex having dimension at most four, the superficial degree of divergence of a graph with $L$ loops is bounded independently of $L$:
+Every propagator falls as $1/\Pi$. In the $R_\xi$ representative all five propagators of the table above behave as $\Pi^{-1}$ at large $\Pi$, including the longitudinal part of the vector, whose second term is $\frac{\zeta L}{\Pi-\zeta M^2}\sim\frac{\zeta L}{\Pi}$. With every internal line contributing $\Pi^{-1}$ and every vertex having dimension at most four, the superficial degree of divergence of a graph with $L$ loops is bounded independently of $L$:
 
 $$
 D\le 4 .
 $$
 
-The unitary fixing condition does not have this property: at $\zeta\to\infty$ the vector propagator tends to $-\frac{L_{\imath\jmath}}{M^2}$, a constant, so an internal vector line contributes $\Pi^{0}$ instead of $\Pi^{-1}$, and the bound becomes $D\le 4+2I_V$ with $I_V$ the number of internal vector lines. The theory is not manifestly renormalisable in that gauge, although its $S$-matrix is the same.
+The unitary fixing condition does not have this property: at $\zeta\to\infty$ the vector propagator tends to $-\frac{L_{\imath\jmath}}{M^2}$, a constant, so an internal vector line contributes $\Pi^{0}$ instead of $\Pi^{-1}$, and the bound becomes $D\le 4+2I_V$ with $I_V$ the number of internal vector lines. The theory is not manifestly renormalisable in that representative, although its $S$-matrix is the same.
 
-| Gauge | Vector propagator at large $\Pi$ | Bound on $D$ | Manifest renormalisability |
+| Condition | Vector propagator at large $\Pi$ | Bound on $D$ | Manifest renormalisability |
 |---|---|---|---|
 | $R_\xi$, any finite $\zeta$ | $\Pi^{-1}$ | $4$ | yes |
 | Landau, $\zeta=0$ | $\Pi^{-1}$ | $4$ | yes |
 | unitary, $\zeta\to\infty$ | $\Pi^{0}$ | grows with $I_V$ | no |
 
-The two fixing conditions describe the same theory, so renormalisability is a property of the theory and not of the gauge. What the $R_\xi$ family supplies is a *proof*: in it, every counterterm is local with dimension at most four, and the divergences can be absorbed into the parameters of the Lagrangian. This is the argument of 't Hooft and Veltman, and it is the reason the electroweak theory was accepted as renormalisable in 1971 rather than after the discovery of the $W$ and $Z$.
+The two fixing conditions describe the same theory, so renormalisability is a property of the theory and not of the representative. What the $R_\xi$ family supplies is a *proof*: in it, every counterterm is local with dimension at most four, and the divergences can be absorbed into the parameters of the Lagrangian. This is the argument of 't Hooft and Veltman, and it is the reason the electroweak theory was accepted as renormalisable in 1971 rather than after the discovery of the $W$ and $Z$.
 
-The $\zeta$-dependent divergences of the gauge loop are cancelled by the Goldstone and ghost loops, and the cancellation is possible because the three propagators share the pole at $\Pi=\zeta M^2$ and the vertices carry no $\zeta$. At $\zeta=1$ the three poles coincide, which is why the cancellation is most transparent there; at general $\zeta$ it holds by the Slavnov–Taylor identities, which do not care where the pole is.
+The $\zeta$-dependent divergences of the connection loop are cancelled by the Goldstone and ghost loops, and the cancellation is possible because the three propagators share the pole at $\Pi=\zeta M^2$ and the vertices carry no $\zeta$. At $\zeta=1$ the three poles coincide, which is why the cancellation is most transparent there; at general $\zeta$ it holds by the Slavnov–Taylor identities, which do not care where the pole is.
 
 Local counterterms require that the ghost–connection vertices come from a local action, and they do, because the ghost action is $\bar c\,M c$ with $M$ a differential operator built from the covariant derivative. That locality is the Jacobi identity of the structure constants, which in the framework is the associativity of $\mathbb{B}$.
 
@@ -317,11 +317,11 @@ The theorem is the dynamical counterpart of the counting. The count is $12=12$: 
 
 ## The Numbers
 
-$M_W=1.4327\times10^{-25}\ \mathrm{kg}$ and $M_Z=1.6258\times10^{-25}\ \mathrm{kg}$. The tree-level values from the couplings $g=0.65174$ and $g_{\mathrm Y}=0.3574$ with $v=4.3893\times10^{-25}\ \mathrm{kg}$ are $1.4305\times10^{-25}$ and $1.6315\times10^{-25}\ \mathrm{kg}$; the difference is the radiative correction and is not a gauge effect.
+$M_W=1.4327\times10^{-25}\ \mathrm{kg}$ and $M_Z=1.6258\times10^{-25}\ \mathrm{kg}$. The tree-level values from the couplings $g=0.65174$ and $g_{\mathrm Y}=0.3574$ with $v=4.3893\times10^{-25}\ \mathrm{kg}$ are $1.4305\times10^{-25}$ and $1.6315\times10^{-25}\ \mathrm{kg}$; the difference is the radiative correction and is not an artefact of the representative.
 
 At the three standard makes the local Goldstone and ghost masses are these.
 
-| Gauge | $\zeta$ | $M_{\xi^\pm}=M_{c^\pm}$ (kg) | $M_{\xi^0}=M_{c^Z}$ (kg) |
+| Condition | $\zeta$ | $M_{\xi^\pm}=M_{c^\pm}$ (kg) | $M_{\xi^0}=M_{c^Z}$ (kg) |
 |---|---|---|---|
 | Landau | $0$ | $0$ | $0$ |
 | Feynman–'t Hooft | $1$ | $1.4327\times10^{-25}$ | $1.6258\times10^{-25}$ |
@@ -337,7 +337,7 @@ One number is zero and must be: the determinant of the neutral ghost mass matrix
 
 *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors* treats choice of representative as known in standard field theory but without a framework realisation, and it names the settling computation: reproduce the Faddeev–Popov or BV procedure in the algebra, or prove a no-go. That computation exists. *The Yang–Mills Path Integral and the Faddeev–Popov Procedure* derives the determinant, the ghost action and the fixed-representative propagator in the algebra, and *BRST Symmetry in Biquaternionic Form* constructs the nilpotent derivation and the choice of representative fermion. The procedure is realised, and the open question is the sharper one: whether a section has been selected.
 
-*Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall* asks for more: a biquaternionic gauge-fixing functional selecting a section, or a proof that physical content is orbit-invariant. The two demands differ — a route exists, a section has not been produced. §*What the Parameter Cannot Change* supplies only the abelian half of the second, since the drift test is a statement about amplitudes and not a construction of a section.
+*Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall* asks for more: a biquaternionic fixing functional selecting a section, or a proof that physical content is orbit-invariant. The two demands differ — a route exists, a section has not been produced. §*What the Parameter Cannot Change* supplies only the abelian half of the second, since the drift test is a statement about amplitudes and not a construction of a section.
 
 The framework's contribution, item by item:
 
@@ -377,7 +377,7 @@ The framework realises the fixing the representative procedure itself, not the s
 |---|---|
 | $\zeta$ | The parameter; $\xi$ of the literature |
 | $\zeta_A$ | The parameter of the photon's functional |
-| $\xi_{a}$, $\xi^\pm$, $\xi^0$ | The would-be Goldstone fields, written as the four real components of the doublet in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) |
+| $\xi_{a}$, $\xi^\pm$, $\xi^0$ | The would-be Goldstone fields, written as the four real components of the doublet in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html) |
 | $W_{a,\imath}$, $Z_{\imath}$, $A_{\imath}$ | The connections in the broken basis: the charged pair, the neutral massive one and the photon |
 | $\omicron_{\mathrm{pot}}$, $h$ | The scalar doublet and the physical scalar left after the Goldstones are eaten |
 | $v$ | $4.3893\times10^{-25}\ \mathrm{kg}$, the vacuum expectation value, entering $M_W=gv/2$ |
@@ -405,7 +405,7 @@ The framework realises the fixing the representative procedure itself, not the s
 
 - [The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form](the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html). The determinant, the ghost action and the fixed-representative propagator in the algebra, for the pure-connection theory this article extends.
 - [BRST Symmetry in Biquaternionic Form](brst-symmetry-in-biquaternionic-form.html). The nilpotent derivation, the choice of representative fermion and the cohomology that makes "physical" a well-defined word.
-- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The Goldstones, the counting $12=12$ and the unitary fixing condition whose limit this article writes.
+- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html). The Goldstones, the counting $12=12$ and the unitary fixing condition whose limit this article writes.
 - [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-and-the-three-neutral-states.html). The couplings and the masses that enter the $\zeta$-pole positions.
 - [Canonical Quantization of the Biquaternion Proca Field](canonical-quantization-of-the-biquaternion-proca-field.html). The massive vector's propagator and polarisation sum, which is the $\zeta\to\infty$ limit here.
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html). The running of the couplings that the ghosts and Goldstones enter, and the running of $\zeta$ itself.

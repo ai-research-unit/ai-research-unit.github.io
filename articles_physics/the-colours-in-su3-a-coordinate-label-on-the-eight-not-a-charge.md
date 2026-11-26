@@ -182,7 +182,7 @@ A_\mu\ \longmapsto\ U A_\mu U^{\dagger}+\tfrac{i}{g_3}U\partial_\mu U^{\dagger},
 A^{a}_\mu\ \longmapsto\ R^{ab}A^{b}_\mu+\text{inhomogeneous}.
 $$
 
-**A field carrying $r\bar g$ in one gauge carries a combination of all eight in another.** The label is a coordinate on the adjoint, and **a coordinate that a symmetry rotates away is not a property of a particle.**
+**A field carrying $r\bar g$ in one representative carries a combination of all eight in another.** The label is a coordinate on the adjoint, and **a coordinate that a symmetry rotates away is not a property of a particle.**
 
 **What changed at $M_C$ is not the status of the label. It is the status of the group.** Above the transition the coordinates were coordinates of a basis with no factor attached; below it they are coordinates of a factor that is made local and unbroken. **The map became a map of something.**
 

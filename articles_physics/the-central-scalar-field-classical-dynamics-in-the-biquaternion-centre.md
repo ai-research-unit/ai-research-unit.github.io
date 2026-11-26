@@ -320,7 +320,7 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 4. **The classical self-energy.** The divergence of the point-source field energy is the classical self-energy problem. Whether the framework has a preferred short-distance structure — a minimal length, a smeared source, or the algebra's own discreteness — that regulates it is not known.
 
-5. **The relation to the minimal coupling.** The central phase is a global symmetry of the central scalar field. Whether it can be removed by a choice of representative, and whether a made local central phase has a biquaternionic interpretation distinct from ordinary $\mathrm{U}(1)$ electromagnetism, is a question for the articles on the minimal coupling rather than for a classical scalar field.
+5. **The relation to the minimal coupling.** The central phase is a global symmetry of the central scalar field. Whether it can be removed by a choice of representative, and whether a local central phase has a biquaternionic interpretation distinct from ordinary $\mathrm{U}(1)$ electromagnetism, is a question for the articles on the minimal coupling rather than for a classical scalar field.
 
 6. **Coupling to the informational sector.** The field occupies the centre and therefore one scalar direction of each sector. Whether the scalar direction of $\mathbb{B}_{\Psi}$ couples to the informational structures of the framework, and how a scalar source would appear to an informational observer, is the central open question shared with the foundational article *Introduction to the Biquaternion Universe*.
 

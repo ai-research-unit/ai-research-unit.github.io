@@ -30,10 +30,10 @@ $$
 
 The temporal slot is fixed once and then used. Because $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the plane wave's phase carries $-\nu_t'r_t'$, the temporal slot of the symbol is $+ik_t'$. On $\tilde\Xi=\tilde\Xi_0\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}=2\pi\vec\nu_\Phi\cdot\vec r-2\pi\nu_t'r_t'$ one has $\tilde\nabla_\Phi e^{i\theta_{\mathrm{pha}}}=2\pi i\tilde\Upsilon_\Phi e^{i\theta_{\mathrm{pha}}}$, which is the polar parent's identity and the only symbol statement used below.
 
-The coupled operator and the central phase. The parent's covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$, the transformation law is $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with the field transforming by $\digamma_{\mathrm{gau}}=\exp(i\theta_{\mathrm{gau}})$, and the connection angle is
+The coupled operator and the central phase. The parent's covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$, the transformation law is $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with the field transforming by $\digamma_{\mathrm{cph}}=\exp(i\theta_{\mathrm{cph}})$, and the connection angle is
 
 $$
-\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h},
+\theta_{\mathrm{cph}}=\frac{2\pi ϙ\,\Gamma}{h},
 \qquad
 \Gamma\ \text{real}.
 $$
@@ -50,7 +50,7 @@ The kinetic bracket becomes the label. The polar parent's second bracket is $i\p
 
 The constant-$\tilde A_\Phi$ licence, stated where the multiplier is first used. The momentum-space reading in this section treats $\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ as a multiplier at each wave number. That is legitimate exactly when $\tilde A_\Phi$ is constant, and the licence is stated here, used here, and dropped at §*What Is Diagonal and What Mixes*, where the mixing is counted.
 
-The scale bracket has no share of the connection, and the check is exact. The parent's type table assigns the connection to the phase bracket and the boost bracket and to nothing else, because the scale bracket $\frac12\partial_{\imath}\ln \varrho^{2}$ is a real central scalar and a central imaginary element cannot produce one. In momentum space the corresponding statement is that the coupling cannot change the amplitude's density: over one hundred random amplitudes multiplied by a central phase, the norm changed exactly as $\langle\tilde\Xi_0\rangle_\natural\mapsto e^{2i\theta_{\mathrm{gau}}}\langle\tilde\Xi_0\rangle_\natural$ with deviation $4.2\times10^{-15}$, and the scale, read as the square root of the norm's modulus, changed by $0.0\times10^{0}$.
+The scale bracket has no share of the connection, and the check is exact. The parent's type table assigns the connection to the phase bracket and the boost bracket and to nothing else, because the scale bracket $\frac12\partial_{\imath}\ln \varrho^{2}$ is a real central scalar and a central imaginary element cannot produce one. In momentum space the corresponding statement is that the coupling cannot change the amplitude's density: over one hundred random amplitudes multiplied by a central phase, the norm changed exactly as $\langle\tilde\Xi_0\rangle_\natural\mapsto e^{2i\theta_{\mathrm{cph}}}\langle\tilde\Xi_0\rangle_\natural$ with deviation $4.2\times10^{-15}$, and the scale, read as the square root of the norm's modulus, changed by $0.0\times10^{0}$.
 
 The boost is untouched at a point, and the rotor's invariant is untouched up to the norm. The boost is read from $\tilde\Xi\tilde\Xi^{*}$, which is invariant under a central phase: over the same one hundred draws the change was $5.3\times10^{-15}$. The rotor is not read from $\tilde\Xi^{\natural}\tilde\Xi$ alone, because that product is $\varrho^{2}e^{2i\theta}$ times the unit $\tilde U_{\Psi,\mathrm b}^{-1}\tilde u_{\mathrm r}^{-1}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, in which both frames appear; but the ratio $\tilde\Xi^{\natural}\tilde\Xi/\langle\tilde\Xi\rangle_\natural$ is invariant, since $\natural$ does not conjugate coefficients and numerator and denominator are multiplied by the same square of the phase: over the same draws the ratio changed by $2.6\times10^{-16}$. Both statements are structural: a central element commutes with everything on its left, and $\natural$ is real-linear.
 
@@ -90,15 +90,15 @@ What the mixing does to the spectrum is a relocation of weight. Each occupied mo
 
 Redundancy is the only rearrangement that leaves the equation fixed. The parent's transformation moves $\tilde\Xi$ by a central phase and $\tilde A_\Phi$ by a gradient, and the pair is form-invariant. In the word it moves $\theta_{\mathrm{pha}}$ and nothing else. In momentum space it moves the support, and how it moves it depends on one property of $\Gamma$.
 
-A linear central phase translates. With $\theta_{\mathrm{gau}}$ linear, the multiplication is a translation of the support by $\vec\nabla_\Phi\theta_{\mathrm{gau}}$, so the count of occupied modes is preserved and each mode keeps its amplitude up to the phase. The parent's constant-potential case is exactly this: the gauge that removes a constant connection is linear in $\Gamma$, and it acts on a plane wave by multiplication.
+A linear central phase translates. With $\theta_{\mathrm{cph}}$ linear, the multiplication is a translation of the support by $\vec\nabla_\Phi\theta_{\mathrm{cph}}$, so the count of occupied modes is preserved and each mode keeps its amplitude up to the phase. The parent's constant-potential case is exactly this: the representative that removes a constant connection is linear in $\Gamma$, and it acts on a plane wave by multiplication.
 
-A non-linear central phase re-superposes. With $\theta_{\mathrm{gau}}$ quadratic the multiplication is a convolution, the count of occupied modes grows, and the spectrum is rearranged rather than moved. The equation is still form-invariant, so nothing observable has changed; what has changed is the mode decomposition, which is a description.
+A non-linear central phase re-superposes. With $\theta_{\mathrm{cph}}$ quadratic the multiplication is a convolution, the count of occupied modes grows, and the spectrum is rearranged rather than moved. The equation is still form-invariant, so nothing observable has changed; what has changed is the mode decomposition, which is a description.
 
 **The invariant object is the curvature, and it is what decides which case one is in.** A connection that is a gradient has zero field strength and can be set to zero by a choice of representative, hence to a constant, hence to a multiplier. A connection with nonzero field strength cannot be removed by a choice of representative in any $\Gamma$, and the mixing it produces is physical in the only sense the equation has.
 
 The two settings of the parent are the two cases of that distinction. The constant potential, solved in closed form, is the zero-curvature case: its connection is a gradient and its mixing is removable. The general static connection, whose constants of motion the parent lists, is the case in which the curvature need not vanish. The check is one line on each side: on a $32\times32$ grid of spacing $0.05$ the curvature component was $0.0\times10^{0}$ for a constant $\tilde A_t$ and $0.9$ for $\tilde A_t=i\,0.9\,x$.
 
-So "redundancy is the only source of mode mixing" has a precise reading. Every mixing pattern that a local transformation can remove is removed exactly when the curvature vanishes; the remainder is not a gauge artefact and no $\Gamma$ touches it. The sentence is not a claim that redundancy produces observable mixing, which it cannot, but that it is the only operation which changes the mixing without changing the equation.
+So "redundancy is the only source of mode mixing" has a precise reading. Every mixing pattern that a local transformation can remove is removed exactly when the curvature vanishes; the remainder is not a representative artefact and no $\Gamma$ touches it. The sentence is not a claim that redundancy produces observable mixing, which it cannot, but that it is the only operation which changes the mixing without changing the equation.
 
 What the polar variables add to that sentence is where the change lands. A local transformation moves the angle, so the momentum-space translation it induces is a translation of the label; the amplitude's scale, boost and rotor are untouched. That is the same type table as §*The Word of a Mode*, read now as a statement about a symmetry rather than about a background.
 
@@ -114,7 +114,7 @@ The denial, once more. Every object above is an element of $\mathbb{B}$ or a coe
 
 ## Open Questions
 
-One question is left open: whether the mixing count has an invariant refinement. The count of occupied modes depends on the basis and on the threshold, and the curvature is the only invariant the article can point to. Whether some spectral measure of the mixing — a weight, a spread, a decay rate — is a function of the curvature alone, and not of the gauge, is not settled here; the linear case suggests it, because its $1/\Delta k$ envelope is the transform of a constant field strength and nothing else.
+One question is left open: whether the mixing count has an invariant refinement. The count of occupied modes depends on the basis and on the threshold, and the curvature is the only invariant the article can point to. Whether some spectral measure of the mixing — a weight, a spread, a decay rate — is a function of the curvature alone, and not of the representative, is not settled here; the linear case suggests it, because its $1/\Delta k$ envelope is the transform of a constant field strength and nothing else.
 
 ## Summary
 
@@ -122,7 +122,7 @@ In momentum space a mode is a point and an element, and the element's word has f
 
 The coupling is the only source of mode mixing, and the mixing is the smoothness of the connection read in the mode basis. One mode in gave one mode out for a constant connection, seventeen for a smooth bump, sixty-three for a spike and all sixty-four for a linear one, whose envelope fell as $1/\Delta k$ with $\lvert G\rvert\cdot\lvert\Delta_\Phi\rvert=38.4$ to within $1.3\%$. A strong constant connection mixes nothing and a weak spiky one mixes everything.
 
-Redundancy is the only rearrangement that leaves the equation fixed, and it removes the mixing exactly when the connection is a pure gradient, which is exactly when the curvature vanishes: $0.0$ for a constant $\tilde A_t$ against $0.9$ for $\tilde A_t=i\,0.9x$. A linear central phase $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ translates the support and preserves the count; anything else re-superposes. The parent's two settings are the two cases of that one distinction.
+Redundancy is the only rearrangement that leaves the equation fixed, and it removes the mixing exactly when the connection is a pure gradient, which is exactly when the curvature vanishes: $0.0$ for a constant $\tilde A_t$ against $0.9$ for $\tilde A_t=i\,0.9x$. A linear central phase $\theta_{\mathrm{cph}}=\frac{2\pi ϙ\Gamma}{h}$ translates the support and preserves the count; anything else re-superposes. The parent's two settings are the two cases of that one distinction.
 
 ## Summary of Notation
 
@@ -133,7 +133,7 @@ Redundancy is the only rearrangement that leaves the equation fixed, and it remo
 | $\tilde\Upsilon_{\Phi,\mathrm{gco}}=\tilde\Upsilon_\Phi+\frac{ϙ}{h}\tilde A_\Phi$ | The covariant wave number; the mode's label |
 | $-\nu_m$ on the diagonal | The mass: diagonal in momentum, off-diagonal in the part label |
 | $\nu_m^{2}-k^{2}$ | The determinant of the symbol; its zero is the shell |
-| $\theta_{\mathrm{gau}}=\frac{2\pi ϙ\,\Gamma}{h}$ | The connection angle |
+| $\theta_{\mathrm{cph}}=\frac{2\pi ϙ\,\Gamma}{h}$ | The connection angle |
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_\natural$ | The quaternionic norm; scale and angle |
 | $\tilde\Xi^{\natural}\tilde\Xi/N(\tilde\Xi)$ | The rotor read relative to the norm; invariant |
 | $\lvert G(k_0+\Delta_\Phi)\rvert\cdot\lvert\Delta_\Phi\rvert$ | The envelope of the linear connection's mixing |

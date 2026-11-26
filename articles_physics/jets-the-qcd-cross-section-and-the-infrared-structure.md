@@ -355,4 +355,4 @@ The framework supplies the null direction and the form of the interference, and 
 - [Confinement and the Loss of Partonic Information in Biquaternionic Form](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html). Why the parton description is a description at a resolution, and what the asymptotic algebra can and cannot see.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The null direction and the interference between the two helicity halves that the angular ordering resembles.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The bound behind every row of the ledger.
-- [Lattice Connection Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). The method that replaces the shower below the cutoff.
+- [Lattice Connection Theory and the Biquaternion Path Integral](lattice-connection-theory-and-the-biquaternion-path-integral.html). The method that replaces the shower below the cutoff.

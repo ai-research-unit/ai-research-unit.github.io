@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The transform's kernel is a central unit, and the local transformation is a central unit too. So the two commute, and the transform of a gauge-transformed field is the gauge-transformed transform. That one sentence is the whole of the article's first section, and it fixes the chart's reading of the coupling: the symmetry group translates the phase and the transform commutes with the translation.
+The transform's kernel is a central unit, and the local transformation is a central unit too. So the two commute, and the transform of a locally transformed field is the locally transformed transform. That one sentence is the whole of the article's first section, and it fixes the chart's reading of the coupling: the symmetry group translates the phase and the transform commutes with the translation.
 
 The second finding is that the covariant bracket adds a real number to the phase's rate and nothing else. The polar coupled parent computes the covariant logarithmic derivative and finds the free one plus a central imaginary number in every slot. In frequency space that number becomes $ϙ\omicron_{\mathrm{pot}}$ added to $hf_{\mathrm{frq}}$. The connection touches one of the four brackets, and the other three are the free ones.
 
@@ -32,17 +32,17 @@ The substitution. $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+2\pi i\vec\nu_\Phi\cdot
 
 ## The Transform's Kernel in the Coupled Chart
 
-Both operations are central multiplications. The transform multiplies by $e^{-i\theta_{\mathrm{pwp}}}$, and a local transformation multiplies by $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$. Both are central units, so they commute:
+Both operations are central multiplications. The transform multiplies by $e^{-i\theta_{\mathrm{pwp}}}$, and a local transformation multiplies by $\digamma_{\mathrm{cph}}=e^{\frac{2\pi iϙ\Gamma}{h}}$. Both are central units, so they commute:
 
 $$
-\int\mathrm{d}t'\,e^{i\omega t'}\big(\digamma_{\mathrm{gau}}\tilde\Xi\big)=\digamma_{\mathrm{gau}}\int\mathrm{d}t'\,e^{i\omega t'}\tilde\Xi .
+\int\mathrm{d}t'\,e^{i\omega t'}\big(\digamma_{\mathrm{cph}}\tilde\Xi\big)=\digamma_{\mathrm{cph}}\int\mathrm{d}t'\,e^{i\omega t'}\tilde\Xi .
 $$
 
-The transform is therefore covariant. A gauge-transformed field has a gauge-transformed transform, with the same $\Gamma$ and the same $\digamma_{\mathrm{gau}}$. No link variable is needed and no Jacobian appears, and the reason is the centrality and not the constancy of $\Gamma$.
+The transform is therefore covariant. A locally transformed field has a locally transformed transform, with the same $\Gamma$ and the same $\digamma_{\mathrm{cph}}$. No link variable is needed and no Jacobian appears, and the reason is the centrality and not the constancy of $\Gamma$.
 
 The chart's reading of the same line. The kernel's word has $\theta_{\mathrm{pha}}=\theta_{\mathrm{pwp}}$ and nothing else; the group factor has $\theta_{\mathrm{pha}}=\frac{2\pi ϙ\Gamma}{h}$ and nothing else. Two elements that each carry one coordinate commute, because a central unit is a function of the centre alone.
 
-What this does not say. It does not say that the transform is invariant. The transform of a gauge-transformed field is a gauge-transformed transform, and the phase of the coefficients moves with $\Gamma$. **Covariance is the statement, and invariance is a different statement**; the invariants of §*The Invariants Are Not Functionals of the Symbol* are invariant, and the coefficients are not.
+What this does not say. It does not say that the transform is invariant. The transform of a locally transformed field is a locally transformed transform, and the phase of the coefficients moves with $\Gamma$. **Covariance is the statement, and invariance is a different statement**; the invariants of §*The Invariants Are Not Functionals of the Symbol* are invariant, and the coefficients are not.
 
 The kernel's own word is unchanged by the coupling. The transform's kernel carries no charge, so the connection does not enter it. The coupling is entirely in the field and in the equation, and the transform is the same operation as in the free article.
 
@@ -126,7 +126,7 @@ so it is linear in $\omicron_{\mathrm{pot}}$, linear and quadratic in $\vec A$, 
 
 The "semiclassical" phase is the phase. The phase accumulated over an interval is $-\frac{2\pi \mathcal E t'}{h}$ with $\mathcal E=hf_{\mathrm{frq}}+\rho_{\mathrm{chg}}\omicron_{\mathrm{pot}}$, exactly. There is no next order, and calling the constant-background phase semiclassical is a habit that this article declines.
 
-No amplitude–potential cross term. The symbol is the coefficient of a quadratic form in the mode, and the form is homogeneous of degree two in the mode's amplitude: over one hundred draws, multiplying the mode by a complex $\digamma_{\mathrm{gau}}$ multiplied the form by $\lvert\digamma_{\mathrm{gau}}\rvert^{2}$ to $4.5\times10^{-14}$. So the symbol is independent of the amplitude, and no term can couple the amplitude to the potential.
+No amplitude–potential cross term. The symbol is the coefficient of a quadratic form in the mode, and the form is homogeneous of degree two in the mode's amplitude: over one hundred draws, multiplying the mode by a complex $\digamma_{\mathrm{cph}}$ multiplied the form by $\lvert\digamma_{\mathrm{cph}}\rvert^{2}$ to $4.5\times10^{-14}$. So the symbol is independent of the amplitude, and no term can couple the amplitude to the potential.
 
 What a cross term would require. A term in $\varrho\vec A$ would need the symbol to depend on $\varrho$, which the homogeneity forbids. The absence is structural and not a cancellation, and it is the frequency-space form of the polar parent's statement that the quantum potential is untouched by a constant potential.
 
@@ -164,7 +164,7 @@ The fourth is the sign of $ϙ\omicron_{\mathrm{pot}}$ in the phase's rate. The p
 
 ## Summary
 
-The transform and the local transformation are both central multiplications, so they commute: the transform of a gauge-transformed field is the gauge-transformed transform, exactly, with no link variable. The covariant bracket adds the real number $ϙ\omicron_{\mathrm{pot}}$ to the phase's rate and leaves the other three brackets of the chart untouched. That is the frequency-space form of the statement that a central connection can only reach the phase.
+The transform and the local transformation are both central multiplications, so they commute: the transform of a locally transformed field is the locally transformed transform, exactly, with no link variable. The covariant bracket adds the real number $ϙ\omicron_{\mathrm{pot}}$ to the phase's rate and leaves the other three brackets of the chart untouched. That is the frequency-space form of the statement that a central connection can only reach the phase.
 
 The symbol is a model of the bracket: faithful where the bracket is constant, absent where it varies. The effective number of modes of a chirped unit was $1.00$, $5.80$ and $26.53$ at chirp rates $0$, $1$ and $4$, so the spread is the measure of the failure. The eigenvalues are $h_t-ϙ\omicron_{\mathrm{pot}}\pm\lvert\vec h_\Psi-q\vec A\rvert$, and the gap moves from $1.232882$ to $1.503329$ with the quoted vector potential while a scalar potential of $0.4$ leaves it at $1.232882$ and moves the rate by $-0.400000$.
 
@@ -174,7 +174,7 @@ The invariants $\vec\pi$ and $\mathcal E$ are invariant and field dependent, so 
 
 | Symbol | Meaning |
 | --- | --- |
-| $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The group factor; central, hence commuting with the kernel |
+| $\digamma_{\mathrm{cph}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The group factor; central, hence commuting with the kernel |
 | $e^{-i\theta_{\mathrm{pwp}}}$ | The transform's kernel; central, one coordinate |
 | $hf_{\mathrm{frq}}+ϙ\omicron_{\mathrm{pot}}$ | The covariant frequency; the invariant $\mathcal E$ on a mode |
 | $h\,\nu_{\Phi,k}+ϙ A_{\imath}$ | The mechanical momentum; the invariant $\vec\pi$ on a mode |

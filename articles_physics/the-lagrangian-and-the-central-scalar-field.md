@@ -130,7 +130,7 @@ whose time–time component is the energy density $\tfrac12(\dot\xi^2+\sum_j(\pa
 
 Why there is no vector current. A real field has no phase symmetry, so there is no conserved current of the $\mathrm{U}(1)$ kind. The corpus's charged-scalar article adds the complex structure and gets one; this article does not, and the absence is a statement about the field's reality.
 
-Why there is no topological current. A single scalar with no winding has no topological charge. The Skyrme and gauge articles have one because their fields are group-valued; the central scalar is not.
+Why there is no topological current. A single scalar with no winding has no topological charge. The Skyrme and connection articles have one because their fields are group-valued; the central scalar is not.
 
 The trace. $\sum_{\imath}\epsilon_{\imath} T_{\imath\imath}=4\pi^{2}\nu_m^2\xi^2-g\rho\xi$ up to a total derivative, nonzero for a massive field. The classical trace is the mass's measure, and the quantum trace anomaly is the quantum field theory articles'.
 

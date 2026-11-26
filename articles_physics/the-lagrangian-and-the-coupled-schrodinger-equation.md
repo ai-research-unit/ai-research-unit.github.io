@@ -111,17 +111,17 @@ which is the companion's equation, with $\vec\pi_{\imath}=-i \frac{h}{2\pi} D_{\
 
 ## The Constraints the Action Imposes: Local Invariance of the Action
 
-**The transformation.** Let $\Gamma$ be a real function, $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi iϙ\Gamma}{h})$, and let the field and the connection transform as
+**The transformation.** Let $\Gamma$ be a real function, $\digamma_{\mathrm{cph}}=\exp(\frac{2\pi iϙ\Gamma}{h})$, and let the field and the connection transform as
 
 $$
-\tilde\Xi\longmapsto\digamma_{\mathrm{gau}}\tilde\Xi,
+\tilde\Xi\longmapsto\digamma_{\mathrm{cph}}\tilde\Xi,
 \qquad
 \vec A\longmapsto\vec A-\vec\nabla_\Phi\Gamma,
 \qquad
 \omicron_{\mathrm{pot}}\longmapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma .
 $$
 
-**The gradient term.** $D_{\imath}\tilde\Xi\mapsto\digamma_{\mathrm{gau}} D_{\imath}\tilde\Xi$ by the covariance identity, and $\digamma_{\mathrm{gau}}$ is a central unit, so $|D_{\imath}\tilde\Xi|^{2}$ is invariant. The term contributes nothing to the variation of the action.
+**The gradient term.** $D_{\imath}\tilde\Xi\mapsto\digamma_{\mathrm{cph}} D_{\imath}\tilde\Xi$ by the covariance identity, and $\digamma_{\mathrm{cph}}$ is a central unit, so $|D_{\imath}\tilde\Xi|^{2}$ is invariant. The term contributes nothing to the variation of the action.
 
 **The kinetic term, and its gain.** With $\vartheta=\frac{2\pi ϙ\Gamma}{h}$ the two halves of the kinetic term become
 
@@ -247,7 +247,7 @@ The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in 
 | $ϙj_{\imath}$, $\rho_{\mathrm{chg}}=ϙn$ | The charge current and the charge density |
 | $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A)$ | The coupled Hamiltonian of the constant setting |
 | $e$ | The energy density of the operator setting |
-| $\Gamma$, $\digamma_{\mathrm{gau}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The phase function and factor |
+| $\Gamma$, $\digamma_{\mathrm{cph}}=e^{\frac{2\pi iϙ\Gamma}{h}}$ | The phase function and factor |
 | $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | The fields of the connection |
 
 ## Further Reading
@@ -256,8 +256,8 @@ The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in 
 - [The Coupled Schrödinger Equation in Biquaternionic Form](the-coupled-schrodinger-equation-in-biquaternionic-form.html), for the equation, the current and the two settings.
 - [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), where the same action is written in the chart and the redundant direction is named.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the carrier and the pairing the action is written with.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the central phase and the forced transformation law.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the covariance identities the invariance proof uses.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localisation of the central phase and the forced transformation law.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the covariance identities the invariance proof uses.
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), for the construction of the current from the symmetry.
 - [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the stress tensor and the improvement terms that §*The Two Settings: The Energy* leaves out.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the equation that this article's current sources.

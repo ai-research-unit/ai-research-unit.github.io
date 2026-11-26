@@ -30,7 +30,7 @@ $$
 \mathcal{L}_G=-\frac{1}{4m}\sum_{\imath,k}\epsilon_{\imath}\epsilon_{\imath} F_{\imath k}F_{\imath k}+\frac14\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_{\imath}\,\check\varepsilon_{\jmath\imath k}B^{*}_{\jmath} F_{\imath k}+\text{(scalar sector)} ,
 $$
 
-whose mass term has one derivative, one power of $m$ and one Levi-Civita symbol. A mass of that shape is not a mass added to the action: it is a term whose gauge variation is a total derivative, so the equations are invariant while the Lagrangian is not.
+whose mass term has one derivative, one power of $m$ and one Levi-Civita symbol. A mass of that shape is not a mass added to the action: it is a term whose local variation is a total derivative, so the equations are invariant while the Lagrangian is not.
 
 *Third, the duality is exact and not approximate.* The two eliminations are Gaussian and exact; the parent action is linear in $H$ and quadratic in $G$, so neither reduction requires an expansion. The equivalence is therefore stronger than the usual strong-weak dualities of the corpus, and this article states precisely what it buys.
 
@@ -211,7 +211,7 @@ The three findings. The duality is exact because the parent is linear in one fie
 
 ## Further Reading
 
-- [Dual Equivalence of the Dirac and Topologically Massive Connections](dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html) — the parent: the four reductions, the three-dimensional form, the topological mass.
+- [Dual Equivalence of the Dirac and Topologically Massive Connections](dual-equivalence-of-the-dirac-and-topologically-massive-connections.html) — the parent: the four reductions, the three-dimensional form, the topological mass.
 - [The Lagrangian and the Proca Equation](the-lagrangian-and-the-proca-equation.html) — the plain massive vector, for the derivative-count comparison.
 - [The Lagrangian and the Stueckelberg Mechanism](the-lagrangian-and-the-stueckelberg-mechanism.html) — the other way to avoid the Proca obstruction.
 - [The Lagrangian and the Dirac Equation](the-lagrangian-and-the-dirac-equation.html) — the Dirac theory whose vector representation is one of the two reductions.

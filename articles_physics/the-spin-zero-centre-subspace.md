@@ -256,7 +256,7 @@ so the centre is invariant and the restricted equation is the ordinary complex K
 
 What the restriction discards. Three of the four complex coefficients. They are not spin-zero content: they are three further independent scalar fields, each of which solves the same equation with the same mass. The reduction from four to one is the statement that a biquaternion-valued Klein–Gordon field with one mass is four scalars, and that a spin-zero field is the case in which three of them are absent.
 
-**The covariant square fails, and the failure is informative.** With a made local derivative whose coefficients are central, the square of the gradient acting on a central field is
+**The covariant square fails, and the failure is informative.** With a local derivative whose coefficients are central, the square of the gradient acting on a central field is
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
@@ -303,7 +303,7 @@ Centrality is globality. Being central, the phase multiplies every element and e
 
 The ceiling. A larger group needs generators outside the centre and outside the real triple; the anti-Hermitian sector has real dimension four and gives $\mathfrak{u}(2)$ exactly, so the algebra's intrinsic symmetry group stops there. The route past it is an enlarged carrier, $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, whose intrinsic group is $\mathrm{U}(2n)$.
 
-The reading. The scalar sector carries the framework's only exact continuous symmetry, and that symmetry is the one the algebra cannot gauge. The two statements are one statement read twice: the phase is central, so it is everywhere the same, and being everywhere the same it cannot be made local.
+The reading. The scalar sector carries the framework's only exact continuous symmetry, and that symmetry is the one the algebra cannot representative. The two statements are one statement read twice: the phase is central, so it is everywhere the same, and being everywhere the same it cannot be made local.
 
 ## The Vacuum and the Two Modes
 
@@ -355,7 +355,7 @@ The covariant square is not a scalar operator. Its extra term is a pure vector p
 - No quantisation. The Born rule, the Fock space and the statistics of the scalar are outside the entry, which states the carrier and the form and stops.
 - The triviality is one action's. The centre is fixed by the conjugation and not by left multiplication, and a statement about the trivial action is not a statement about the algebra's action as a whole.
 - The sector declaration is a convention. Material and informational are two real lines of one centre, exchanged by the central $i$.
-- The gauge ceiling stands. The central phase cannot be made local inside $\mathbb{B}$, and the broken phase of the vacuum needs a carrier the algebra does not have.
+- The localisation ceiling stands. The central phase cannot be made local inside $\mathbb{B}$, and the broken phase of the vacuum needs a carrier the algebra does not have.
 - No non-abelian content. The scalar sector carries one abelian phase and no internal symmetry of its own.
 - Families and copies. The multiplicity two of the closure is a multiplicity of the space and not two carriers, and the two preimages of one norm are one field up to a sign.
 
@@ -369,7 +369,7 @@ The closure adds one real dimension and it is the phase. In the polar form the a
 
 The equation does not choose. The Klein–Gordon operator is central and real, so it preserves every subspace and four scalars solve it as well as one; the spin chooses, and the restriction to the centre is free. The covariant square fails to preserve the centre, because its extra term is the field strength, a spin-one object, and a scalar cannot carry it. The carrier is therefore a criterion on the writing of an equation, not only on its solutions.
 
-Spin zero forbids an internal vector and everything built from one: the intrinsic magnetic moment, the Zeeman and Stern–Gerlach and spin–orbit couplings, and the field strength out of which a magnetic field is made. And the phase that the carrier carries is central, so it is the same at every point and cannot be made local. The scalar sector holds the framework's only exact continuous symmetry, and it holds the one symmetry the algebra cannot gauge.
+Spin zero forbids an internal vector and everything built from one: the intrinsic magnetic moment, the Zeeman and Stern–Gerlach and spin–orbit couplings, and the field strength out of which a magnetic field is made. And the phase that the carrier carries is central, so it is the same at every point and cannot be made local. The scalar sector holds the framework's only exact continuous symmetry, and it holds the one symmetry the algebra cannot representative.
 
 ## Summary of Notation
 
@@ -410,6 +410,6 @@ Spin zero forbids an internal vector and everything built from one: the intrinsi
 - [Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module](spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.html), for the three obstructions that keep a scalar out of the state action.
 - [The Central Scalar Field: Classical Dynamics in the Biquaternion Centre](the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html), for the action, the static solution, the current and the absence of intrinsic magnetism.
 - [The Centre of the Biquaternion Algebra as the Classical Sector](the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html), for the real line as the classical limit.
-- [The Extension of the Central Phase: The Centre Bounds the Symmetry Group](the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html), for centrality as globality and the ceiling at $\mathrm{U}(2)$.
+- [The Extension of the Central Phase: The Centre Bounds the Symmetry Group](the-extension-of-the-central-phase-the-centre-bounds-the-symmetry-group.html), for centrality as globality and the ceiling at $\mathrm{U}(2)$.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html), for the two modes of the broken vacuum.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the carrier whose norm vanishes and whose mass is a pairing, taken up in *Introduction to the Spin-Half Bispinors Spaces*.

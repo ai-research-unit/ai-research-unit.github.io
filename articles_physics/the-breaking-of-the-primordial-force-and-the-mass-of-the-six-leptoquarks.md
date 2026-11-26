@@ -151,7 +151,7 @@ $$
 
 ## The Mass the Six Acquire
 
-**The mass matrix.** From the gauge kinetic term evaluated on the vacuum,
+**The mass matrix.** From the connection kinetic term evaluated on the vacuum,
 
 $$
 \bigl(M^{2}\bigr)_{XY}=2v^{2}\operatorname{tr}\bigl([iD,X]^{\dagger}[iD,Y]\bigr)\Big/\operatorname{tr}(X^{\dagger}Y),

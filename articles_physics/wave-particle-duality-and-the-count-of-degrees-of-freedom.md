@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The number of polarisations a field has is one integer, and that integer is a rank. A massive vector field carries three polarisation states at each wave number and a massless one carries two. The count is usually made with a gauge argument and a constraint. It can be made once, for both, by asking how many directions of the amplitude the symbol of the gradient carries into the algebra. That number is three off the light cone and two on it, and the direction that is lost on the cone is exactly one circular polarisation.
+The number of polarisations a field has is one integer, and that integer is a rank. A massive vector field carries three polarisation states at each wave number and a massless one carries two. The count is usually made with a connection argument and a constraint. It can be made once, for both, by asking how many directions of the amplitude the symbol of the gradient carries into the algebra. That number is three off the light cone and two on it, and the direction that is lost on the cone is exactly one circular polarisation.
 
 The last step is the reading, not the theorem. What the algebra supplies is the rank of one linear map at one frequency point. That a rank is a count of polarisation states is the corpus's identification of an amplitude direction with a state, and it is imported here. The article proves the rank and marks the import in §*Three Counts, One Rank* and §*Limits*.
 
@@ -213,7 +213,7 @@ So the three directions are used in three different ways. One is annihilated on 
 
 The direction the symbol loses on the cone is circular, not longitudinal. A reader expects the massless field to lose the longitudinal direction, because a residual local transformation removes it, and that is the textbook sentence. Here the direction that leaves the image is $\varepsilon_{\mathrm{fop},+}$, a transverse circular direction. The longitudinal direction is annihilated at no frequency point, on the cone or off it: its image is $-i\,\nu_{\Phi}-\nu_t^{\prime}\vec u_\Phi$, non-zero because of the scalar part, and that scalar part is the constraint rather than a fourth surviving vector direction.
 
-The two statements are consistent, and the difference is what is being counted. The textbook count is of states after the gauge quotient. The rank counts amplitude directions before the quotient. The longitudinal direction is removed for both massive and massless fields by the constraint, which is why it leaves the vector part; its image remains in the algebra as the scalar constraint, and it is counted once in the rank at every frequency. The massless case then loses one circular direction, which is why the count is two and not three. The constraint and the cone together produce the massless count, and the rank separates them.
+The two statements are consistent, and the difference is what is being counted. The textbook count is of states after the representative quotient. The rank counts amplitude directions before the quotient. The longitudinal direction is removed for both massive and massless fields by the constraint, which is why it leaves the vector part; its image remains in the algebra as the scalar constraint, and it is counted once in the rank at every frequency. The massless case then loses one circular direction, which is why the count is two and not three. The constraint and the cone together produce the massless count, and the rank separates them.
 
 What that buys. The usual presentation gives the massless count as one subtraction from four. Here there is exactly one subtraction, and it happens on one surface: the rank falls by one on the cone and by nothing anywhere else. The constraint is not a subtraction at all in this bookkeeping — it is the scalar part of the third image, present at every frequency. The two mechanisms that the textbook count merges are therefore kept apart: one is a dimension, the other is a component of an image.
 
@@ -257,7 +257,7 @@ Where the longitudinal amplitude comes from. Off the cone the longitudinal direc
 
 A massless field sits on the cone at every wave number, and the rank is two, one less than off the cone. The kernel is one complex line, $\varepsilon_{\mathrm{fop},+}$, so the loss is exactly one circular polarisation. The Proca article obtains its two by removing the longitudinal direction with a residual local transformation, and the two counts agree while the bookkeeping differs: the rank's two dimensions are $\varepsilon_{\mathrm{fop},-}$ and the longitudinal image $-i\,\nu_{\Phi}-\nu_t^{\prime}\vec u_\Phi$, whereas the Proca pair is $\varepsilon_{\mathrm{fop},\pm}$. **The agreement is a count of dimensions, and this article claims no more than that.**
 
-The two arguments are independent, and that is the useful part. A reader who distrusts the gauge argument can count the rank; a reader who distrusts the algebra can count the amplitudes. When they agree the count is not in doubt, and the agreement is not circular, because neither argument refers to the other.
+The two arguments are independent, and that is the useful part. A reader who distrusts the connection argument can count the rank; a reader who distrusts the algebra can count the amplitudes. When they agree the count is not in doubt, and the agreement is not circular, because neither argument refers to the other.
 
 ### The graviton counts two by a different mechanism
 
@@ -267,7 +267,7 @@ What the two cases share is the shape of the answer, not the mechanism. In both,
 
 ### What the count does not derive
 
-No local invariance. The rank drop on the cone is not the statement that the massless field has a local symmetry. Local invariance is a statement about a transformation that leaves the equation fixed, and it is an input of the Maxwell and Proca articles. The rank reports the dimension of an image; the gauge argument reports an equivalence class. They meet in the count and they are not the same statement.
+No local invariance. The rank drop on the cone is not the statement that the massless field has a local symmetry. Local invariance is a statement about a transformation that leaves the equation fixed, and it is an input of the Maxwell and Proca articles. The rank reports the dimension of an image; the connection argument reports an equivalence class. They meet in the count and they are not the same statement.
 
 No Higgs mechanism. The passage from three to two as the mass is turned off is a discontinuity of the count, and the mechanism that makes it continuous is the Stueckelberg field, which the Proca article records. The rank sees the discontinuity and nothing else; it has no scalar to give the third direction to.
 

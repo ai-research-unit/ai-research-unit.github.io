@@ -158,7 +158,7 @@ The infinite-dimensional factor $\mathcal{H}_\infty$ is the third point. It is w
 
 ## Open Questions
 
-1. **Is there a biquaternion model of $\mathcal{H}_Q$?** The charge doublet and triplet are $\mathrm{SU}(2)$ representations, and the framework does reach $\mathrm{SU}(2)$. Is the charge factor of the fundamental doublet and triplet then *inside* $\mathbb{B}$ after all, with only the passage to $\mathrm{SU}(3)$ crossing the ceiling? The companion gauge-ceiling article separates these, and the question is whether the separation is sharp.
+1. **Is there a biquaternion model of $\mathcal{H}_Q$?** The charge doublet and triplet are $\mathrm{SU}(2)$ representations, and the framework does reach $\mathrm{SU}(2)$. Is the charge factor of the fundamental doublet and triplet then *inside* $\mathbb{B}$ after all, with only the passage to $\mathrm{SU}(3)$ crossing the ceiling? The companion localisation ceiling article separates these, and the question is whether the separation is sharp.
 
 2. **Superselection and the two sectors.** The corpus's material/informational separation is algebraic, not a superselection rule. Is it a coherent-subspace split in the programme's sense, and would that connect the framework's sector structure to the standard superselection rules of charge and spin?
 

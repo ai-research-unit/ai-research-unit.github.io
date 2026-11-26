@@ -31,7 +31,7 @@ $$
 
 where each $\tilde\pi_{\imath}$ is a central Hermitian operator (a multiple of $e_t$) and the sum is over the three spatial directions. Because $A_{\imath}$ and $\xi_{\mathrm{scp}}$ are ordinary real functions of position, they multiply the central element $e_t$, and the Hamiltonian is central. The mechanical momentum components act on the envelope and multiply by $e_t$, so they commute with the module. The magnetic field changes the Hamiltonian's spectrum by changing the operator algebra of the envelope; it does not touch the module.
 
-For a uniform field $\vec B=B\vec u_z$ the vector potential can be chosen in many fixing conditions, all related by $\vec A\to\vec A+\vec\nabla_\Phi\digamma_{\mathrm{gau}}$, and the spectrum is invariant. In the biquaternion interpretation the redundancy is a freedom in the central part of the operator algebra: $\digamma_{\mathrm{gau}}$ is a real scalar and $\vec\nabla_\Phi\digamma_{\mathrm{gau}}$ is a real quaternion, so the local transformation shifts $\tilde\pi$ by a real-vector multiple of $e_t$ and leaves the central structure untouched. The field strength, which is invariant, is the object with algebraic meaning.
+For a uniform field $\vec B=B\vec u_z$ the vector potential can be chosen in many fixing conditions, all related by $\vec A\to\vec A+\vec\nabla_\Phi\digamma_{\mathrm{cph}}$, and the spectrum is invariant. In the biquaternion interpretation the redundancy is a freedom in the central part of the operator algebra: $\digamma_{\mathrm{cph}}$ is a real scalar and $\vec\nabla_\Phi\digamma_{\mathrm{cph}}$ is a real quaternion, so the local transformation shifts $\tilde\pi$ by a real-vector multiple of $e_t$ and leaves the central structure untouched. The field strength, which is invariant, is the object with algebraic meaning.
 
 ### The field strength as a central commutator
 
@@ -179,9 +179,9 @@ $$
 
 whose right-hand side is a central **area**: the flux count of the fifth section is the statement that this area is the phase-space basis operator of one state. The two algebras are the same central oscillator algebra; the first is the energy, the second is the degeneracy.
 
-In the biquaternion interpretation $L_{\mathrm{orb},z}$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathrm{U}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric-gauge eigenstates are the angular-momentum eigenstates $L_{\mathrm{orb},z}=\frac{h}{2\pi}\,n_{\mathrm{mag}}$ within a Landau level, with $m$ bounded below by $-n$; the two fixing conditions are related by a local transformation and give the same spectrum and degeneracy.
+In the biquaternion interpretation $L_{\mathrm{orb},z}$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathrm{U}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric representative eigenstates are the angular-momentum eigenstates $L_{\mathrm{orb},z}=\frac{h}{2\pi}\,n_{\mathrm{mag}}$ within a Landau level, with $m$ bounded below by $-n$; the two fixing conditions are related by a local transformation and give the same spectrum and degeneracy.
 
-The lowest Landau level is especially transparent in this gauge. Writing $z=x+iy$, the states
+The lowest Landau level is especially transparent in this representative. Writing $z=x+iy$, the states
 
 $$
 \tilde{Ξ}_{0,n_{\mathrm{mag}}}\ \propto\ z^{\,n_{\mathrm{mag}}}\,\exp(-|z|^2/4\ell_B^2)\,\xi ,
@@ -189,7 +189,7 @@ $$
 n_{\mathrm{mag}}=0,1,2,\dots,
 $$
 
-all have energy $\frac12hf_{\mathrm{frq},c}$ and angular momentum $L_{\mathrm{orb},z}=\frac{h}{2\pi}\,n_{\mathrm{mag}}$, so the degeneracy of the lowest level is exhibited as the infinite tower of angular momenta. That these states have the lowest energy was verified numerically: applying the symmetric-gauge Hamiltonian $\frac{1}{2\,m}(\tilde\pi_x^2+\tilde\pi_y^2)$ to $\tilde{Ξ}_{0,n_{\mathrm{mag}}}$ for $m=0,1,2$ by finite differences gave $\frac12hf_{\mathrm{frq},c}\,\tilde{Ξ}_{0,n_{\mathrm{mag}}}$ with relative residual below $2\times10^{-8}$ at the sampled points. The tower has infinitely many members in the plane, but in a finite sample of area $A$ the normalisability of the Gaussian factor cuts it off at the flux count of the fifth section. The higher Landau levels are obtained by applying $a^\dagger$ to these states, which raises the energy and mixes the angular momenta within the fixed degeneracy.
+all have energy $\frac12hf_{\mathrm{frq},c}$ and angular momentum $L_{\mathrm{orb},z}=\frac{h}{2\pi}\,n_{\mathrm{mag}}$, so the degeneracy of the lowest level is exhibited as the infinite tower of angular momenta. That these states have the lowest energy was verified numerically: applying the symmetric representative Hamiltonian $\frac{1}{2\,m}(\tilde\pi_x^2+\tilde\pi_y^2)$ to $\tilde{Ξ}_{0,n_{\mathrm{mag}}}$ for $m=0,1,2$ by finite differences gave $\frac12hf_{\mathrm{frq},c}\,\tilde{Ξ}_{0,n_{\mathrm{mag}}}$ with relative residual below $2\times10^{-8}$ at the sampled points. The tower has infinitely many members in the plane, but in a finite sample of area $A$ the normalisability of the Gaussian factor cuts it off at the flux count of the fifth section. The higher Landau levels are obtained by applying $a^\dagger$ to these states, which raises the energy and mixes the angular momenta within the fixed degeneracy.
 
 ### The classical orbit and the magnetic length
 
@@ -255,7 +255,7 @@ This is the sharpest illustration in the subcategory of what "spin 0" buys. The 
 
 ## Open Questions
 
-**1. Is the flux degeneracy an algebraic invariant of the centre?** The count $AB/Ξ_0$ follows from the central commutator and the boundary conditions. Whether the framework gives an invariant algebraic derivation of the count without choosing a gauge is not established here.
+**1. Is the flux degeneracy an algebraic invariant of the centre?** The count $AB/Ξ_0$ follows from the central commutator and the boundary conditions. Whether the framework gives an invariant algebraic derivation of the count without choosing a representative is not established here.
 
 **2. Does the guiding-centre algebra have a sector interpretation?** The guiding-centre operators are central and commute with the Hamiltonian; their relation to the material and informational sectors is not explored.
 

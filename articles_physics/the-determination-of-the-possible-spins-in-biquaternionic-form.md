@@ -249,6 +249,6 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 - [The Spin-Half Path Integral in Biquaternionic Form](the-spin-half-path-integral-in-biquaternionic-form.html), for the coherent-state action, the saddle point and the topological term.
 - [The Spin–Statistics Theorem in Biquaternionic Form](the-spin-statistics-theorem-in-biquaternionic-form.html), for the theorem, its ingredients and the algebra's own fermionic mode.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the module, the symplectic form and the Lorentz action.
-- [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html), for the helicity operator, the self-dual split and the gauge reduction to two polarizations.
+- [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html), for the helicity operator, the self-dual split and the reduction by the redundancy to two polarizations.
 - [The Null Four-Momentum: What the Cone Derives and What Must Be Added](the-null-four-momentum-what-the-cone-derives-and-what-must-be-added.html), for the mass shell as a norm level set, the $N=0$ cone, and the verdict that masslessness is an input.
 - [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), for the massless spectrum carried by the cone.

@@ -74,7 +74,7 @@ The generators. $T_a=\tfrac12\vec e_a$ with $[\vec e_a,\vec e_b]=2\varepsilon_{a
 
 The third column is not an extra assumption. It is read from the carrier, and the carrier is read from the spin. A reader who wants a different representation for a given spin is asking for a different algebra.
 
-**One row out of three matches.** The vector row is the adjoint, and the adjoint is what a Yang–Mills field needs: that is why the free kinematics and the self-couplings of [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) come out right, and why [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) can write the whole construction without an extra hypothesis.
+**One row out of three matches.** The vector row is the adjoint, and the adjoint is what a Yang–Mills field needs: that is why the free kinematics and the self-couplings of [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) come out right, and why [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html) can write the whole construction without an extra hypothesis.
 
 ## The Scalar Row: Why There Is No Doublet
 
@@ -114,7 +114,7 @@ A second carrier for the same spin. If the algebra offered two inequivalent modu
 - Imported. Nothing. The table is a computation about the algebra.
 - Not supplied. Any way to decouple spin from representation, which is what the model's scalar and matter sectors require.
 
-Where this is applied. The scalar row is applied in [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) and in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html); the fermion row in [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html); the vector row in [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The carrier of the fermion is collected in [The Connection Carrier of the Material Sector: Why the Action Is One-Sided](the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.html).
+Where this is applied. The scalar row is applied in [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) and in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html); the fermion row in [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html); the vector row in [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The carrier of the fermion is collected in [The Connection Carrier of the Material Sector: Why the Action Is One-Sided](the-connection-carrier-of-the-material-sector-why-the-action-is-one-sided.html).
 
 ## Summary of Notation
 
@@ -131,4 +131,4 @@ Where this is applied. The scalar row is applied in [The Higgs Mechanism in Biqu
 
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), for the dimension four of the compact algebra.
 - [The One-Sided Action and the Spin Representation](../articles_maths/the-one-sided-action-and-the-spin-representation.html), for the left action as the spin representation.
-- [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html), for the covariant derivative acting by left multiplication.
+- [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html), for the covariant derivative acting by left multiplication.

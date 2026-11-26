@@ -439,4 +439,4 @@ The framework supplies the null direction, and with it the light-cone decomposit
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The null direction and the exact unipotent null rotations that the light-cone construction uses.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The reason the constituents are not objects of the algebra.
 - [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-and-the-three-neutral-states.html). The $Z$ exchange that corrects the photon-only cross section, and $F_3$'s parity-odd partner.
-- [Lattice Connection Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). The method that computes what the densities can only be fitted to.
+- [Lattice Connection Theory and the Biquaternion Path Integral](lattice-connection-theory-and-the-biquaternion-path-integral.html). The method that computes what the densities can only be fitted to.

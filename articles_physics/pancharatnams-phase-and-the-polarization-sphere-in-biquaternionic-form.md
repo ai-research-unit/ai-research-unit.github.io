@@ -192,14 +192,14 @@ $$
 (E_R,E_L)=\left(\cos\tfrac{\theta}{2},\ \sin\tfrac{\theta}{2}\,\exp(i\theta_{\mathrm{azm}})\right),
 $$
 
-normalised to $S_0=1$; the phase of the first component is a choice of gauge, and the second is the relative phase. The circular basis is the one in which the axes of the parametrisation are the axes of the sphere: the polar component of the Stokes vector is the difference of the two intensities and the equatorial pair is carried by their relative phase, so that, with the two circular senses named in the sign convention of $S_3$, the amplitude above carries exactly the Stokes vector $\vec u=(\sin\theta\cos\theta_{\mathrm{azm}},\sin\theta\sin\theta_{\mathrm{azm}},\cos\theta)$. Differentiating,
+normalised to $S_0=1$; the phase of the first component is a choice of representative, and the second is the relative phase. The circular basis is the one in which the axes of the parametrisation are the axes of the sphere: the polar component of the Stokes vector is the difference of the two intensities and the equatorial pair is carried by their relative phase, so that, with the two circular senses named in the sign convention of $S_3$, the amplitude above carries exactly the Stokes vector $\vec u=(\sin\theta\cos\theta_{\mathrm{azm}},\sin\theta\sin\theta_{\mathrm{azm}},\cos\theta)$. Differentiating,
 
 $$
 \langle J|\partial/\partial \theta J\rangle=0,\qquad
 \langle J|\partial/\partial \theta_{\mathrm{azm}} J\rangle=i\sin^2\tfrac{\theta}{2}.
 $$
 
-The **Pancharatnam connection** is the imaginary part of the overlap with the derivative. In the horizontal gauge, the gauge in which the amplitude accumulated along the azimuthal circles carries no phase beyond the connection, it is
+The **Pancharatnam connection** is the imaginary part of the overlap with the derivative. In the horizontal representative, the condition in which the amplitude accumulated along the azimuthal circles carries no phase beyond the connection, it is
 
 $$
 \boxed{\;\mathcal A=i\,\langle J|dJ\rangle
@@ -218,7 +218,7 @@ $$
 \mathrm{Im}\,\langle J|dJ/dr'_t\rangle=0
 $$
 
-along the transport. A family of states satisfying this condition is **horizontal** for the connection: it is the family obtained by Pancharatnam transport, and the prescription is the optical analogue of parallel transport. The connection $\mathcal A=i\langle J|dJ\rangle$ is the one-form whose integral gives the residual phase when the states are compared in a fixed gauge rather than along the horizontal transport.
+along the transport. A family of states satisfying this condition is **horizontal** for the connection: it is the family obtained by Pancharatnam transport, and the prescription is the optical analogue of parallel transport. The connection $\mathcal A=i\langle J|dJ\rangle$ is the one-form whose integral gives the residual phase when the states are compared in a fixed representative rather than along the horizontal transport.
 
 The residual phase is a property of closed circuits only. If the representatives are changed by the real re-phasing angle $\theta_{\mathrm{pha},k}$, $|J_{\imath}\rangle\to \exp(i\theta_{\mathrm{pha},k})|J_{\imath}\rangle$, the overlaps change by $\exp(i(\xi_{k+1}-\xi_{\imath}))$, and the product around a closed sequence is unchanged because the phases telescope. Hence the Pancharatnam phase of a circuit is invariant, while the phase $\arg\langle A|B\rangle$ of a pair is not: the physical content of a pair of states is the interference visibility $|\langle A|B\rangle|$, and the physical content of a circuit is the closed-loop phase. This is the same distinction that the symplectic article draws between the potential and the symplectic form: the local object is representative-dependent, the loop integral is not.
 
@@ -306,7 +306,7 @@ Pancharatnam's phase is the classical optical geometric phase, and in the biquat
 
 - A beam's polarization is described by its coherence biquaternion $\tilde{Ϛ}_{\Psi}=\frac12(S_0e_t+i \sum_{\imath\in\{x,y,z\}} S_{\imath}\vec e_{\imath})\in\mathbb{B}_{\Psi}$, with $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\frac14(S_0^2-\vec S^2)$ and degree of polarization $P^2=1-4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}/S_0^2$.
 - The fully polarized states are the cone $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=0$, which is the Poincaré sphere after normalisation and the Hermitian idempotent sphere of $\mathbb{B}_{\Psi}$; the unpolarized state is the centre and the partially polarized states the interior.
-- Pancharatnam's in-phase criterion, $\arg\langle A|B\rangle_{*}$, defines the connection $\mathcal A=i\langle J|dJ\rangle=-\frac12(1-\cos\theta)d\theta_{\mathrm{azm}}$ on the ray space, in the horizontal gauge of the amplitude written in the circular basis.
+- Pancharatnam's in-phase criterion, $\arg\langle A|B\rangle_{*}$, defines the connection $\mathcal A=i\langle J|dJ\rangle=-\frac12(1-\cos\theta)d\theta_{\mathrm{azm}}$ on the ray space, in the horizontal representative of the amplitude written in the circular basis.
 - The curvature is $\mathcal F=-\frac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}=-\frac12\,d\theta_{\mathrm{sol}}$, so the phase around a circuit is $-\frac12$ of the enclosed solid angle; the three-state rule is $\gamma_{\mathrm{Panch}}=-\arg(\langle A|B\rangle\langle B|C\rangle\langle C|A\rangle)=-\theta_{\mathrm{sol},ABC}/2$, and Girard's theorem gives $\theta_{\mathrm{sol},ABC}=\theta_{\mathrm{stk}}+\beta+\gamma-\pi$.
 - The dynamical counterpart (Hannay's angle) transports the Stokes vector rather than the amplitude and accumulates the full solid angle; the factor $\tfrac12$ is the double cover, the amplitude being the spinor of the Stokes vector.
 

@@ -6,7 +6,7 @@ The connection enters the parent's polar chart as a translation of one coordinat
 
 The parent supplies both equations, and the coupling is already inside them. [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html) writes the complete polar decomposition, puts the covariant derivative into the equation, and prints the two exact equations of the central field: a covariant continuity equation and a Hamilton–Jacobi equation with the connection and the same quantum potential as the free case. This article orders them.
 
-The gauge element is central, so it acts on one factor and only one: the angle is translated and the other seven parameters are inert,
+The phase element is central, so it acts on one factor and only one: the angle is translated and the other seven parameters are inert,
 
 $$
 \varrho\longmapsto \varrho,

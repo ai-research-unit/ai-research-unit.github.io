@@ -28,7 +28,7 @@ the stationarity conditions are the two equations above, and the action is invar
 
 *Second, the price is one scalar and no ghost.* The Stueckelberg scalar is a non-dynamical mode in the unitary fixing condition and an $\zeta$-dependent mode in the covariant fixing conditions; the Faddeev–Popov determinant of an abelian fixing is field independent, so there is no ghost. The unphysical sector is the smallest one a massive vector can have.
 
-*Third, the count is gauge independent and the distribution is not.* Four components of $A_{\imath}$ plus one scalar, minus one local symmetry, minus one mass-shell constraint, gives three physical modes in every gauge. What changes between fixing conditions is which modes are called physical.
+*Third, the count is independent of the representative and the distribution is not.* Four components of $A_{\imath}$ plus one scalar, minus one local symmetry, minus one mass-shell constraint, gives three physical modes in every representative. What changes between fixing conditions is which modes are called physical.
 
 The mechanism is standard, and it is the abelian case of what the electroweak sector does with a doublet. What the corpus contributes is the exact biquaternionic writing of the invariant combination and the comparison of the two choices of representative on one page.
 
@@ -38,7 +38,7 @@ The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1
 
 The scalar. $\xi$ is a real central scalar, dimensionless in this normalization, and the combination $A_{\imath}-\partial_{\imath}\xi/\mu$ is the invariant one. The parameter $\mu$ is the mass, with dimension of mass.
 
-The gauge. The Stueckelberg symmetry is $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Lambda$, $\xi\mapsto\xi+\mu\Lambda$, with $\Lambda$ a function of the coordinates. The unitary fixing condition is $\xi=0$; the covariant family is $G=\partial_{\imath} A_{\imath}-\zeta\mu^2\xi=0$ with $\zeta\in\mathbb{R}$.
+The choice of representative. The Stueckelberg symmetry is $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Lambda$, $\xi\mapsto\xi+\mu\Lambda$, with $\Lambda$ a function of the coordinates. The unitary fixing condition is $\xi=0$; the covariant family is $G=\partial_{\imath} A_{\imath}-\zeta\mu^2\xi=0$ with $\zeta\in\mathbb{R}$.
 
 The sign convention. The curvature term enters with $-\tfrac14$ and the mass term with $-\tfrac12$, as in the Proca article, so that the Hamiltonian is positive.
 
@@ -156,7 +156,7 @@ $$
 
 and its conservation, $\partial_{\imath} j_{\imath}=0$, is exactly the scalar's equation. The current is not an independent object: it is the mass term's argument, and its conservation is the constraint.
 
-The electromagnetic current, and its absence. There is no charged matter in the action, so there is no $\mathrm{U}(1)$ current beyond the shift current. Adding a charged field would gauge the shift symmetry, and the resulting current would be the source of $A_{\imath}$; the corpus's coupled articles do that and this one does not.
+The electromagnetic current, and its absence. There is no charged matter in the action, so there is no $\mathrm{U}(1)$ current beyond the shift current. Adding a charged field would representative the shift symmetry, and the resulting current would be the source of $A_{\imath}$; the corpus's coupled articles do that and this one does not.
 
 Energy–momentum. Translation invariance gives $T_{\imath\jmath}$ with contributions from the curvature and from the invariant combination, and the static energy is positive. The trace is nonzero because of the mass term, and the trace is the classical part of the anomaly.
 
@@ -186,7 +186,7 @@ The distinction that matters. The action is invariant and the physical content i
 
 The action. $S=\int d^4r\,[\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)-\tfrac12\mu^2\langle\tilde A_\Phi-\tilde\nabla_\Phi\xi/\mu\rangle_\natural]$, invariant under $A_{\imath}\mapsto A_{\imath}+\partial_{\imath}\Lambda$, $\xi\mapsto\xi+\mu\Lambda$. The variation gives the Proca equation and the deformed Lorenz condition, the second being the divergence of the first.
 
-The three findings. The mass term is invariant because the field strength cannot see a gradient of a scalar. The count is three modes in every gauge, with one scalar and no ghost in the abelian case. The mechanism adds a field and no parameter.
+The three findings. The mass term is invariant because the field strength cannot see a gradient of a scalar. The count is three modes in every representative, with one scalar and no ghost in the abelian case. The mechanism adds a field and no parameter.
 
 The boundary. The invariant combination and its biquaternionic form are the algebra's; the value of $\mu$, and the embedding of the scalar in a spontaneously broken theory, are not.
 
@@ -208,4 +208,4 @@ The boundary. The invariant combination and its biquaternionic form are the alge
 - [The Lagrangian and the Proca Equation](the-lagrangian-and-the-proca-equation.html) — the unitary-connection action, and the Lorenz condition as a consequence.
 - [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html) — the non-abelian case, where the scalar is a Goldstone of a broken symmetry.
 - [The Stueckelberg Mechanism for a Massive Abelian Vector in Biquaternionic Form](the-stueckelberg-mechanism-for-a-massive-abelian-vector-in-biquaternionic-form.html) — the Proca obstruction in the algebra.
-- [Fixing the Representative in the Electroweak Theory: $R_\xi$ Conditions, Ghosts and the Goldstone Equivalence Theorem](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html) — the $\zeta$-dependent propagator in the non-abelian case.
+- [Fixing the Representative in the Electroweak Theory: $R_\xi$ Conditions, Ghosts and the Goldstone Equivalence Theorem](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html) — the $\zeta$-dependent propagator in the non-abelian case.

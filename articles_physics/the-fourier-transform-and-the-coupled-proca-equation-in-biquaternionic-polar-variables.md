@@ -12,7 +12,7 @@ The third finding is that the returned phase and the symmetry group are one coor
 
 The fourth finding is the ledger of three. The free chart has no phase bracket, no charge and no redundancy; the coupled chart has all three; and the three are the same coordinate. The article states them as one sentence with three names, because the corpus's three separate absences are the reason the free Proca chart looks impoverished next to the Dirac one and the reason it is not.
 
-No sector is exchanged. The coupled field is an element of $\mathbb{B}$ with eight real parameters, its transform is $\mathbb{B}$-valued, and the chart is a coordinate system on the same element. There is no new solution and no new equation; the word, the gauge identity and the mass-term formulas are the parent's.
+No sector is exchanged. The coupled field is an element of $\mathbb{B}$ with eight real parameters, its transform is $\mathbb{B}$-valued, and the chart is a coordinate system on the same element. There is no new solution and no new equation; the word, the representative identity and the mass-term formulas are the parent's.
 
 ## Conventions
 
@@ -86,7 +86,7 @@ The constraint is still one real equation among the eight, as the parent says, a
 
 ## The Mass Is a Modulus in the Phase
 
-The parent proves it exactly: $\mathrm{Sc}(\tilde A^{\natural}\tilde A)$ is invariant under $\tilde A\mapsto\digamma_{\mathrm{gau}}\tilde A$ for a constant central unit $\digamma_{\mathrm{gau}}$, and the identity holds to fifteen digits. In the chart the invariance is the statement that the mass term is a function of the scale and of the frame angles and of nothing else, which is why the phase can be a coordinate when the mass is present.
+The parent proves it exactly: $\mathrm{Sc}(\tilde A^{\natural}\tilde A)$ is invariant under $\tilde A\mapsto\digamma_{\mathrm{cph}}\tilde A$ for a constant central unit $\digamma_{\mathrm{cph}}$, and the identity holds to fifteen digits. In the chart the invariance is the statement that the mass term is a function of the scale and of the frame angles and of nothing else, which is why the phase can be a coordinate when the mass is present.
 
 The mass term's symbol is $-\nu_m^{2}\delta_{\imath\jmath}$, which is a multiple of the identity in the amplitude space; a multiple of the identity commutes with every unitary and is annihilated by every generator of the phase rotation. **So the mass cannot break the phase symmetry and cannot supply the phase's equation**, and the parent's exact identity is the position-space face of that one sentence.
 
@@ -96,7 +96,7 @@ What the mass does not see is the phase, and what the symbol does not see is the
 
 ## The Symbol Is Blind to the Coordinate
 
-A local transformation moves one coordinate of the chart and one argument of the symbol, and the two motions are the same motion. The parent's identity is $\tilde A\mapsto\digamma_{\mathrm{gau}}\tilde A$ with $\digamma_{\mathrm{gau}}=e^{i\vartheta_{\mathrm{gau}}}$ central, and its effect on the word's first factor is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}}$. On the symbol the same transformation is $\pi_{\imath}\mapsto\pi_{\imath}+\frac{h}{2\pi}\partial_{\imath}\vartheta_{\mathrm{gau}}$, a translation of the argument, and the obstruction $F$ is unchanged.
+A local transformation moves one coordinate of the chart and one argument of the symbol, and the two motions are the same motion. The parent's identity is $\tilde A\mapsto\digamma_{\mathrm{cph}}\tilde A$ with $\digamma_{\mathrm{cph}}=e^{i\vartheta_{\mathrm{cph}}}$ central, and its effect on the word's first factor is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\vartheta_{\mathrm{cph}}$. On the symbol the same transformation is $\pi_{\imath}\mapsto\pi_{\imath}+\frac{h}{2\pi}\partial_{\imath}\vartheta_{\mathrm{cph}}$, a translation of the argument, and the obstruction $F$ is unchanged.
 
 Write $\sigma_{\mathrm{gco}}(\pi)$ for the symbol as a function of the shifted momentum; then under a local transformation $\sigma_{\mathrm{gco}}(\pi)\mapsto\sigma_{\mathrm{gco}}(\pi+\frac{h}{2\pi}\,\mathrm{d}\vartheta)$ and no other change occurs. **The symbol is a function and the transformation is an argument shift**, which is the frequency-space form of "the symmetry group acts on the chart by one coordinate's motion and on the equation by nothing".
 
@@ -136,7 +136,7 @@ The constraint's symbol being free does not make the constraint's solution free 
 
 The translation term is exact for a constant connection; the obstruction is a multiplier only where the curvature is constant. Every statement above about the imaginary part carries that condition.
 
-The local transformation's exactness rests on the centrality of $\digamma_{\mathrm{gau}}$, and the corpus's coupling is Abelian. A non-Abelian coupling would make the word's leftmost factor's motion non-central, and the phase coordinate's status would need redoing.
+The local transformation's exactness rests on the centrality of $\digamma_{\mathrm{cph}}$, and the corpus's coupling is Abelian. A non-Abelian coupling would make the word's leftmost factor's motion non-central, and the phase coordinate's status would need redoing.
 
 The parent records that a finite shift can take the phase factor out of its normal form and that the excess is absorbed by the other factors. The article's §*The Symbol Is Blind to the Coordinate* uses the infinitesimal identity and inherits the caveat.
 
@@ -170,7 +170,7 @@ The local transformation is the phase coordinate's motion, and on the symbol it 
 | $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{2\pi i\varkappa}{h}F-\pi_{\imath}\pi_{\jmath}$ | The coupled symbol; Hermitian, complex |
 | $\frac{2\pi i\varkappa}{h}F_{\Phi}$ | The imaginary part; the obstruction |
 | $-4\pi^{2}$ | The trace; the constraint's symbol, free of curvature |
-| $\digamma_{\mathrm{gau}}=e^{i\vartheta_{\mathrm{gau}}}$ | The constant central unit; the parameter |
+| $\digamma_{\mathrm{cph}}=e^{i\vartheta_{\mathrm{cph}}}$ | The constant central unit; the parameter |
 | $\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ | The mass term's frame factor; $\varrho^{2}$ on the trivial-rotor slice |
 | $\varrho>0$ | The N-regular set; the failure set is $\varrho=0$, codimension eight |
 | $0.00\times10^{0}$ | The free symbol's parity residual; unchanged by the coupling |

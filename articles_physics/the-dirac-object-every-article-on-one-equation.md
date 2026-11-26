@@ -56,7 +56,7 @@ The Dirac equation carries more structure than the other three objects and the c
 
 ### Particles of spin 1 and above
 
-- [Dual Equivalence of the Dirac and Topologically Massive Connections](dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html)
+- [Dual Equivalence of the Dirac and Topologically Massive Connections](dual-equivalence-of-the-dirac-and-topologically-massive-connections.html)
 
 ### Particles of spin 1/2
 

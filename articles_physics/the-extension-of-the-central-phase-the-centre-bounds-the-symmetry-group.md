@@ -7,13 +7,13 @@ $\exp(i\theta_{\mathrm{cen}})e_t\cong \mathrm{U}(1)$. It is exact and it is glob
 every element by the same factor, so it acts the same way at every point, and the corpus records the fact as
 the interpretation "centrality is globality". A connection theory needs the opposite — a phase that may differ from
 point to point, and a compensating connection that makes the difference covariant — and the question this
-article states is what, exactly, blocks the locality and what a gauge extension of the framework would have
+article states is what, exactly, blocks the locality and what a representative extension of the framework would have
 to be.
 
 The article owns the statement of the **extension problem**, the reason the centre caps it, and the two
 candidate interpretations. It owns no new theorem. The centre and its triviality are *The Centre of the Biquaternion
 Algebra as the Classical Sector*; the ceiling $\mathrm{U}(2)$ is *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*; the generator is *Special Element Conventions*, §*The Central Map and Its Restrictions*; the discrete charge the compact phase
-carries is *The Physical Interpretation of the 12 Products*; and the placement of the gauge row among the products is *The Heat Map
+carries is *The Physical Interpretation of the 12 Products*; and the placement of the connection row among the products is *The Heat Map
 of the Framework: Which Physics Hangs on Which Product*.
 
 ## The Central Phase and the Minimal Coupling
@@ -34,7 +34,7 @@ $\partial/\partial x_{\imath} - iϙ\tilde{A}_{\Phi,\imath}$ is phase-covariant. 
 and the reason is structural rather than technical: a connection is a field valued in the Lie algebra of the
 group, and the Lie algebra of the central phase is the one-dimensional span of $ie_t$, which is central. A
 central generator produces a field that commutes with everything, so the "connection" it generates cannot
-couple to anything and the covariant derivative collapses to the ordinary one. A made local central phase is
+couple to anything and the covariant derivative collapses to the ordinary one. A local central phase is
 therefore no connection theory at all: an abelian connection needs a matter field that transforms
 non-trivially, and the framework's matter lives in modules on which a central phase acts by a scalar.
 
@@ -106,11 +106,11 @@ question is being asked.
 
 So the two readings survive, with one clause removed. Reading A remains true as a statement about the framework's group: the symmetry group is $\mathrm U(2)$, the abelian factor is the central phase, and the ceiling is exact. What it cannot also claim is that this phase *is* hypercharge. Reading B is untouched, since it already denies that the algebra contains the needed structure.
 
-Where the computation is. The refusal is computed, with the assignment table and the anomaly conditions, in [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html), §*Why the Assignment Is Not Derivable Here*. That article reaches the same conclusion from the other end: the framework supplies the algebra of the group and not the assignment, and one central charge cannot supply two numbers for one species.
+Where the computation is. The refusal is computed, with the assignment table and the anomaly conditions, in [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html), §*Why the Assignment Is Not Derivable Here*. That article reaches the same conclusion from the other end: the framework supplies the algebra of the group and not the assignment, and one central charge cannot supply two numbers for one species.
 
 ## What Is Not Claimed
 
-- The article does not claim that the central phase is **gaugeable** in the sense of producing a
+- The article does not claim that the central phase is **able to be made local** in the sense of producing a
   propagating abelian connection. It claims that the framework's continuous symmetry is the central phase
   and that the algebra supplies no non-central generator with which to localise it.
 - It does not claim that the ceiling is **permanent**. The ceiling is a statement about $\mathbb{B}$; the
@@ -127,7 +127,7 @@ Where the computation is. The refusal is computed, with the assignment table and
   Biquaternion Algebra as the Classical Sector*.
 - Compactness is the discreteness of the charge. The interpretation is that the charge carried by the central
   phase is discrete because the phase is a circle, which is the same mechanism as the compact group of the
-  gauge ceiling. Owner: *The Physical Interpretation of the 12 Products*.
+  localisation ceiling. Owner: *The Physical Interpretation of the 12 Products*.
 - Non-centrality is non-locality's algebraic price. The interpretation is that a local symmetry costs a
   non-central generator, so the framework's globality is the price it pays for having a scalar centre, and
   the enlargement is the price it would pay to escape. Owners: *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* and *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*.
@@ -135,7 +135,7 @@ Where the computation is. The refusal is computed, with the assignment table and
 ## Summary
 
 The framework's continuous symmetry is the central phase $\exp(i\theta_{\mathrm{cen}})e_t\cong \mathrm{U}(1)$, central, compact and
-global, and it is the whole of the algebra's uniform symmetry. Its gauge extension is blocked by centrality:
+global, and it is the whole of the algebra's uniform symmetry. Its representative extension is blocked by centrality:
 a local phase needs a connection valued in a non-central generator, the algebra's only uniform generator is
 the central $ie_t$, and a central connection couples to nothing. The intrinsic symmetry group is the $*$-unitary
 slice $\mathrm{U}(2)=(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, whose abelian factor is the central phase and whose size is
@@ -162,6 +162,6 @@ does not contain.
   Cartan decomposition and the enlargements that pass it.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the central phase as
   one generator on remarkable subspaces.
-- [The Four Products: Composition, Probability, Causality and the Indefinite Form](the-four-products-composition-probability-causality-and-gauge.html), for the compact slice and the discrete
+- [The Four Products: Composition, Probability, Causality and the Indefinite Form](the-four-products-composition-probability-causality-and-the-indefinite-form.html), for the compact slice and the discrete
   charge.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html), for the constructive interpretation of the obstruction.

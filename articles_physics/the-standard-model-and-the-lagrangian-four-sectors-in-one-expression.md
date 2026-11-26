@@ -7,12 +7,12 @@
 **The answer.**
 
 $$
-\boxed{\;\mathcal L_{\mathrm{SM}}=\mathcal L_{\text{gauge}}+\mathcal L_{\text{fermion}}+\mathcal L_{\text{scalar}}+\mathcal L_{\text{Yukawa}},\qquad 60\to19\;}
+\boxed{\;\mathcal L_{\mathrm{SM}}=\mathcal L_{\text{connection}}+\mathcal L_{\text{fermion}}+\mathcal L_{\text{scalar}}+\mathcal L_{\text{Yukawa}},\qquad 60\to19\;}
 $$
 
 **The standing.** The expression is standard theory. It is transcribed, not derived, and no term in it follows from the biquaternion algebra. What the article adds to a textbook display is three things: one notation, one sign rule stated and proved, and one audit of local invariance carried out term by term.
 
-**Why assembling is not a transcription exercise.** A reader may object that the sum of four published pieces proves nothing, and the objection is correct as stated. The value of the assembly is what it makes possible. Local invariance is a property of the sum and not of the pieces: the fermion kinetic term is invariant only if the covariant derivative is built from the same three connections that the gauge kinetic terms carry, and the Yukawa sector is invariant only if the conjugate doublet is used with the right hypercharge. Those are statements about the assembly, and they are checked below, term by term, in one notation.
+**Why assembling is not a transcription exercise.** A reader may object that the sum of four published pieces proves nothing, and the objection is correct as stated. The value of the assembly is what it makes possible. Local invariance is a property of the sum and not of the pieces: the fermion kinetic term is invariant only if the covariant derivative is built from the same three connections that the connection kinetic terms carry, and the Yukawa sector is invariant only if the conjugate doublet is used with the right hypercharge. Those are statements about the assembly, and they are checked below, term by term, in one notation.
 
 **Two results, stated now.** The assembly yields two quantitative results that no single-sector article states.
 
@@ -28,7 +28,7 @@ $$
 | Sector | Symbol | Carries | Its parameters |
 |---|---|---|---|
 | Strong | $\mathcal{L}_{\mathrm{QCD}}$ | the colour connection | $g_s$, $\theta_{\mathrm{QCD}}$, six quark masses through the Yukawa sector |
-| Electroweak gauge and kinetic | $\mathcal{L}_{\mathrm{EW}}$ | the weak and hypercharge connections | $g$, $g_{\mathrm Y}$, and the fermion kinetic normalisations |
+| Electroweak representative and kinetic | $\mathcal{L}_{\mathrm{EW}}$ | the weak and hypercharge connections | $g$, $g_{\mathrm Y}$, and the fermion kinetic normalisations |
 | Scalar | $\mathcal{L}_{H}$ | all three connections, through $D_{\imath}\omicron_{\mathrm{hgs}}$ | $\mu^2$, $\varpi_{\mathrm{cpl}}$ |
 | Yukawa | $\mathcal{L}_{\mathrm{Yuk}}$ | no connection | the three coupling matrices |
 
@@ -78,7 +78,7 @@ The colour structure constants are $f_{abc}$ and the weak ones are $\varepsilon_
 The kinetic terms. Three, one per factor,
 
 $$
-\mathcal{L}_{\mathrm{gauge}}=-\tfrac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14\sum_{\imath,\jmath}B_{\imath\jmath}B_{\imath\jmath} .
+\mathcal{L}_{\mathrm{con}}=-\tfrac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}-\tfrac14\sum_{a,\imath,\jmath}W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14\sum_{\imath,\jmath}B_{\imath\jmath}B_{\imath\jmath} .
 $$
 
 The three coefficients are equal because each factor's connection is normalised so that its kinetic term has unit coefficient. That normalisation is what makes the three couplings independent numbers; a rescaling of any one field moves a constant between the kinetic term and the coupling, and the product $g_sF$ is what the physics sees.
@@ -141,7 +141,7 @@ $$
 
 The value of $v$ is not computed here; it is entry 18 of the parameter table of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html), fixed by the Fermi constant.
 
-What the sector supplies. Three things, and they are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) rather than here: the masses $M_W=\tfrac12gv$ and $M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v$, the massless photon, and the scalar mass $M_H=\sqrt{2\varpi_{\mathrm{cpl}}}\,v$. Recomputed from the table, $\varpi_{\mathrm{cpl}}=M_H^2/(2v^2)=0.1291$ for $M_H=2.2303\times10^{-25}$ kg, and the three masses then follow from $g$, $g_{\mathrm Y}$, $v$ and $\varpi_{\mathrm{cpl}}$.
+What the sector supplies. Three things, and they are computed in [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html) rather than here: the masses $M_W=\tfrac12gv$ and $M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v$, the massless photon, and the scalar mass $M_H=\sqrt{2\varpi_{\mathrm{cpl}}}\,v$. Recomputed from the table, $\varpi_{\mathrm{cpl}}=M_H^2/(2v^2)=0.1291$ for $M_H=2.2303\times10^{-25}$ kg, and the three masses then follow from $g$, $g_{\mathrm Y}$, $v$ and $\varpi_{\mathrm{cpl}}$.
 
 Four real components, three eaten. The doublet carries four real fields. Three are the Goldstones that the $W^+$, $W^-$ and $Z$ absorb as longitudinal polarisations; the fourth is the physical scalar. The degree-of-freedom count closes: twenty-eight before breaking, twenty-eight after.
 
@@ -271,7 +271,7 @@ The quark result. Ten is six masses plus three angles plus one phase. Rephasing 
 
 The lepton result. Three is three masses and no mixing, because the minimal model has no right-handed neutrino and the lepton mixing matrix is then unobservable: it can be rotated away into the charged-lepton fields.
 
-**The total.** The two flavour blocks give thirteen, and with the six of the gauge, scalar and vacuum sectors the count is nineteen, which is the table of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The reduction is $60\to19$, and the forty-one removed numbers are not small corrections: they are the entire freedom of choice of flavour basis.
+**The total.** The two flavour blocks give thirteen, and with the six of the representative, scalar and vacuum sectors the count is nineteen, which is the table of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The reduction is $60\to19$, and the forty-one removed numbers are not small corrections: they are the entire freedom of choice of flavour basis.
 
 What the count does not do. It does not say that the nineteen are independent in nature; it says that the Lagrangian has nineteen degrees of freedom once the field basis is fixed. Relations among the nineteen — a mass ratio, a mixing angle predicted from masses — would be physics beyond the count, and the model supplies none.
 
@@ -343,7 +343,7 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 ## Further Reading
 
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The field content this expression is written for, and the nineteen that survive the count.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The connection, the covariant derivative and the curvature, from which the three kinetic terms are read.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html). The connection, the covariant derivative and the curvature, from which the three kinetic terms are read.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html). The fermion pair and the covariant gradient, whose component form this article quotes and does not restate.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html). The abelian case, which the scalar sector of this article generalises to the doublet.
 - [Stress–Energy Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html). The scalar action and the sign convention that fixes the dictionary.

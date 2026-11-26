@@ -366,7 +366,7 @@ $$
 \underbrace{6}_{\text{mixed cells}}+\underbrace{9}_{3\times3}+\underbrace{1}_{(t,t)}=16 .
 $$
 
-**One array per generator, one boson per array.** The identification, with the cells each array moves and the mass each boson gets at tree level. **The names *gluon* and *leptoquark* in the last column are the broken phase's**, and [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html)'s §*The Names, and Which Phase They Belong To* says exactly what each is on deposit for: above $M_C$ no $\mathrm{SU}(3)$ is gauged, and the eight are named by the lines they connect.
+**One array per generator, one boson per array.** The identification, with the cells each array moves and the mass each boson gets at tree level. **The names *gluon* and *leptoquark* in the last column are the broken phase's**, and [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html)'s §*The Names, and Which Phase They Belong To* says exactly what each is on deposit for: above $M_C$ no $\mathrm{SU}(3)$ is made local, and the eight are named by the lines they connect.
 
 | array | the cells it moves | the boson | mass |
 | --- | --- | --- | --- |

@@ -38,7 +38,7 @@ gives $\rho = 1$ for the doublet, $\rho > 1$ for a $T = 1$, $T_3 = 0$ triplet ad
 - Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the boundary that this article states — no doublet, no hypercharge, no chiral $SU(2)_L$.
 - Companion article *Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall*, for the vector-like obstruction and the electroweak quantum numbers.
 
-**Custodial symmetry is not accidental.** The global $\mathrm{SU}(2)$ the potential possesses is the **diagonal of a made local pair**, $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ broken to its diagonal, so $\rho=1$ follows from a local symmetry and its breaking pattern rather than from a property of one scalar multiplet. **The measured value, the mass matrices and every coefficient below stand, and the reason the equality holds is the breaking pattern.** The tier is T3.
+**Custodial symmetry is not accidental.** The global $\mathrm{SU}(2)$ the potential possesses is the **diagonal of a local pair**, $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ broken to its diagonal, so $\rho=1$ follows from a local symmetry and its breaking pattern rather than from a property of one scalar multiplet. **The measured value, the mass matrices and every coefficient below stand, and the reason the equality holds is the breaking pattern.** The tier is T3.
 
 ## The Custodial Symmetry of a Scalar Sector
 
@@ -53,7 +53,7 @@ $$
 so that the electroweak group acts on the left and the hypercharge acts on the right,
 
 $$
-H \;\longmapsto\; \exp\bigl(i\sum_a\theta_{\mathrm{gau},a} T_{La}\bigr)\,H\,\exp(\,i\theta_{\mathrm{gau},R} T_3^{R}) ,
+H \;\longmapsto\; \exp\bigl(i\sum_a\theta_{\mathrm{cph},a} T_{La}\bigr)\,H\,\exp(\,i\theta_{\mathrm{cph},R} T_3^{R}) ,
 \qquad
 T_{La} = \frac{\tau_a}{2},\quad T_3^R = \frac{\tau_3}{2} .
 $$
@@ -119,7 +119,7 @@ $$
 
 or equivalently $\mathrm{Sc}(\tilde Q^{*}\tilde Q)$, which the two-sided action preserves because $\mathrm{Sc}(g_L\tilde Q g_R^{*}\overline{g_L\tilde Q g_R^{*}}) = \mathrm{Sc}(\tilde Q\tilde Q^{\natural}) = \langle\tilde Q,\tilde Q\rangle_{\natural}$: the scalar part of a product is invariant under a similarity, and the two outer factors cancel.
 
-**The left action and the sector structure.** The left multiplication by $g_L$ and the right multiplication by $g_R^{*}$ act on the four components of $\tilde Q$ as a pair of independent rotations. The left action is the framework's non-abelian connection action of the companion articles, and the right action is the one that the framework's four-component objects have always carried: it is the same two-sided multiplication that the rotor conjugation of the Lorentz and gauge articles uses. The **diagonal** $g_L = g_R = g$ is the conjugation
+**The left action and the sector structure.** The left multiplication by $g_L$ and the right multiplication by $g_R^{*}$ act on the four components of $\tilde Q$ as a pair of independent rotations. The left action is the framework's non-abelian connection action of the companion articles, and the right action is the one that the framework's four-component objects have always carried: it is the same two-sided multiplication that the rotor conjugation of the Lorentz and connection articles uses. The **diagonal** $g_L = g_R = g$ is the conjugation
 
 $$
 \tilde Q \;\longmapsto\; g\,\tilde Q\,g^{*} ,
@@ -143,7 +143,7 @@ $$
 g\,\frac{v}{\sqrt2}e_t\,g^{*} = \frac{v}{\sqrt2}\,e_t ,
 $$
 
-and the diagonal is unbroken. It is not invariant under a general left or right action, since $g_L\frac{v}{\sqrt2}e_tg_R^{*} = \frac{v}{\sqrt2}g_Lg_R^{*}$ equals the vacuum only when $g_L = g_R$; the axial directions are therefore broken, and their Goldstone bosons are the three would-be longitudinal gauge modes. The pivotal object is thus a central element, exactly as the Higgs mechanism's vacuum is central in the framework, and the difference is that the field carrying it is a general quaternion rather than a central scalar.
+and the diagonal is unbroken. It is not invariant under a general left or right action, since $g_L\frac{v}{\sqrt2}e_tg_R^{*} = \frac{v}{\sqrt2}g_Lg_R^{*}$ equals the vacuum only when $g_L = g_R$; the axial directions are therefore broken, and their Goldstone bosons are the three would-be longitudinal modes. The pivotal object is thus a central element, exactly as the Higgs mechanism's vacuum is central in the framework, and the difference is that the field carrying it is a general quaternion rather than a central scalar.
 
 ```text
 THE TWO-PARAMETER TWO-SIDED OPERATOR

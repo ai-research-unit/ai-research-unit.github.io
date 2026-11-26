@@ -208,7 +208,7 @@ The programme closes the system by identifying $m_0$ with the mass of the spin r
 
 ## The Biquaternion Reading
 
-The interpretation is short because the framework's own limit is known. The $\mathrm{SU}(3)$ representations, the Okubo operators $A_{i\imath}$, the $*$-unitary field $Z$ and the mass splitting are **not elements of the biquaternion algebra**. The companion *Gauge Group Ceiling* shows the algebra's compact structure stops at $\mathrm{SU}(2)$, so no $\mathfrak{su}(3)$ with an octet of generators can be built from $\mathbb{B}$; the Okubo matrices are $3\times3$, and the algebra of three-by-three matrices is not the biquaternion algebra. The $\mathrm{SU}(3)$ machinery is external, and the article's purpose is to record it accurately beside the framework's own statements, not to claim it.
+The interpretation is short because the framework's own limit is known. The $\mathrm{SU}(3)$ representations, the Okubo operators $A_{i\imath}$, the $*$-unitary field $Z$ and the mass splitting are **not elements of the biquaternion algebra**. The companion *Ceiling of the Symmetry Group* shows the algebra's compact structure stops at $\mathrm{SU}(2)$, so no $\mathfrak{su}(3)$ with an octet of generators can be built from $\mathbb{B}$; the Okubo matrices are $3\times3$, and the algebra of three-by-three matrices is not the biquaternion algebra. The $\mathrm{SU}(3)$ machinery is external, and the article's purpose is to record it accurately beside the framework's own statements, not to claim it.
 
 What the framework can host is the **structure of the splitting**. The Gell-Mann–Okubo formula separates a symmetric part $m_0$ from a symmetry-breaking part $\delta m$ built from the Cartan directions of the algebra; the framework knows the analogous separation — a central, $\mathrm{SU}(2)$-invariant part and a breaking part along a distinguished direction — in its own sector structure and in the hypercharge direction of the charge factor. Whether the hypercharge splitting has a biquaternion image is not established here; the honest statement is that the algebra hosts the singlet/triplet/doublet isospin reduction (since those are $\mathrm{SU}(2)$ representations) and not the octet of $\mathrm{SU}(3)$.
 
@@ -237,7 +237,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 ## Open Questions
 
-1. **Does the hypercharge direction have a biquaternion image?** The corpus has a preferred direction, the $i r'_t$ axis of the material sector, and a central phase. Is the hypercharge splitting's distinguished direction one of these, or is the correspondence spurious? The gauge-ceiling article implies the latter unless a larger algebra is used.
+1. **Does the hypercharge direction have a biquaternion image?** The corpus has a preferred direction, the $i r'_t$ axis of the material sector, and a central phase. Is the hypercharge splitting's distinguished direction one of these, or is the correspondence spurious? The localisation ceiling article implies the latter unless a larger algebra is used.
 
 2. **$m_0$ and the mass formula.** The identification of $m_0$ with the spin–mass formula's $m^{(s)}$ is a choice. Does the equality hold for the meson octets as well as the baryon octet, and does the companion mass formula's error (a few percent) propagate into the average?
 

@@ -310,7 +310,7 @@ so that the two coefficients are the form factors at zero momentum transfer, mul
     \qquad \tilde{G}_{a\imath\jmath}=\tfrac12\epsilon_{\imath\jmath\rho\sigma}G_{a\rho\sigma},
     $$
 
-    whose contribution to the neutron EDM is of order $d_n\sim\theta\times1.6\times10^{-37}\ \mathrm{C\,m}$; the bound on $d_n$ forces $|\theta|\lesssim10^{-10}$. The $\theta$ parameter belongs to the corpus's general gauge apparatus and is not developed here; the fermion-sector statement is that the EDM is where the $\theta$ problem is measured.
+    whose contribution to the neutron EDM is of order $d_n\sim\theta\times1.6\times10^{-37}\ \mathrm{C\,m}$; the bound on $d_n$ forces $|\theta|\lesssim10^{-10}$. The $\theta$ parameter belongs to the corpus's general connection apparatus and is not developed here; the fermion-sector statement is that the EDM is where the $\theta$ problem is measured.
 - **New physics.** Any new CP-violating phase in a theory of fermions and connections contributes to the EDMs, usually at the one- or two-loop level, and the bounds constrain the scale of that physics. This is the sense in which the EDM searches probe beyond the Standard Model.
 
 **The Standard Model prediction, and its smallness.** The Standard Model's CKM phase gives EDMs that are far below the current bounds; the electron EDM, in particular, is generated only at four loops and is unobservably small. The framework inherits this: its fermion sector carries the linear chiral mass and the antilinear real structure, neither of which contains a CP-odd phase, and the algebra's central objects are the volume element and the chirality basis operator, not a CP-violating angle. The framework therefore predicts no measurable EDM, and observes that any EDM would be evidence for a phase it does not contain.
@@ -364,7 +364,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 | The explicit $i$ in the EDM Lagrangian as the marker of the anti-Hermitian insertion | **Supplied** by the algebra |
 | The definition of the EDM and its $\mathbf{P}$-, $\mathbf{T}$-, $\mathbf{CP}$-odd character | **Transcribed**; standard |
 | The form-factor decomposition and the nonrelativistic limit | **Transcribed**; standard |
-| The CKM and $\theta$-term contributions, and their smallness | **Standard**; the $\theta$ parameter belongs to the general gauge apparatus |
+| The CKM and $\theta$-term contributions, and their smallness | **Standard**; the $\theta$ parameter belongs to the general connection apparatus |
 | The experimental bounds and the reach $\Lambda\gtrsim1.6\times10^{-4}\ \mathrm{J}$ | **Transcribed**; standard, with the arithmetic recomputed |
 | The value of $d$ for any particle | **Not supplied**; empirical |
 | A CP-violating phase, and its origin | **Not supplied**; the framework has none |
@@ -374,7 +374,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 
 1. **The placement's sharpness.** The identification of the Hermitian and anti-Hermitian insertions with the sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ is the framework's stated dictionary. For the EDM insertion the placement is exact: the insertion is the left multiplication by the element $-\vec e_{\imath}$ of $\mathbb{B}_{\Phi}$, and nothing is compared. The rotation insertion is the left multiplication by $i\vec e_{\imath}$, and the central imaginary times it is read in the material sector through $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$. The insertions that carry a right factor as well — the bare electric bivector and the pseudotensor — are placed by the rule on the two factors and not by an element of $\mathbb{B}$ alone; a sector assignment of a two-sided multiplication is a statement about the operator, and the article makes it as one.
 
-2. **The phase's sector.** A CP-odd phase multiplying the material-sector insertion is an imaginary coefficient. Whether the framework can distinguish phases that sit in the mass matrix from phases that sit in the dipole coefficients, and whether the abelian sector field strength of the framework supplies a $\theta$-like invariant, is not settled here and belongs partly to the general gauge apparatus.
+2. **The phase's sector.** A CP-odd phase multiplying the material-sector insertion is an imaginary coefficient. Whether the framework can distinguish phases that sit in the mass matrix from phases that sit in the dipole coefficients, and whether the abelian sector field strength of the framework supplies a $\theta$-like invariant, is not settled here and belongs partly to the general connection apparatus.
 
 3. **The composite EDMs.** The neutron and proton EDMs are matrix elements of quark and gluon CP-odd operators, and their computation is nonperturbative. The framework's proton and neutron articles supply no value; whether a biquaternion treatment of the bound-state problem can be given is open and lies outside the fermion sector.
 

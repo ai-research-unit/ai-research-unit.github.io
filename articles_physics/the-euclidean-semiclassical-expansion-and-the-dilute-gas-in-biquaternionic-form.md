@@ -25,7 +25,7 @@ the inner integral being the one-loop determinant, which contributes a prefactor
 
 ## Collective Coordinates and the Measure
 
-**The zero modes.** A saddle that is not isolated has flat directions: translations, rotations, scale and gauge orientation. Each flat direction corresponds to a zero eigenvalue of $S''$, and the Gaussian integral along it is not Gaussian.
+**The zero modes.** A saddle that is not isolated has flat directions: translations, rotations, scale and connection orientation. Each flat direction corresponds to a zero eigenvalue of $S''$, and the Gaussian integral along it is not Gaussian.
 
 **The Jacobian.** The cure is to change variables from the field to the collective coordinates plus the orthogonal fluctuations. The change of variables produces a Jacobian,
 

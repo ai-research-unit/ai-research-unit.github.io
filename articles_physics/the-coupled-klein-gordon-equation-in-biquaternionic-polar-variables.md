@@ -108,10 +108,10 @@ and the scalar and vector potentials are the two slots of one element, so the tw
 
 ## The Local Transformation Is a Phase Translation
 
-**The exact infinitesimal statement.** Let $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$ with $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ and let $\tilde\Xi_2=\digamma_{\mathrm{gau}}\tilde\Xi$. Then
+**The exact infinitesimal statement.** Let $\digamma_{\mathrm{cph}}=\exp(i\vartheta_{\mathrm{cph}})$ with $\vartheta_{\mathrm{cph}}=\frac{2\pi ϙ\Lambda}{h}$ and let $\tilde\Xi_2=\digamma_{\mathrm{cph}}\tilde\Xi$. Then
 
 $$
-\tilde\Xi_2=\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,
+\tilde\Xi_2=\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{cph}})}\,
 \tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,
 \tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
@@ -293,7 +293,7 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 | $E=-\frac{h}{2\pi} c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, $\vec p=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}$ | The free four-momentum |
 | $Q_{\mathrm{qnt}}=-\frac{hc}{8\pi^{2}\nu_m}\frac{\Box_\Phi \varrho}{\varrho}$ | The quantum potential; unchanged by the coupling |
 | $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec p-q\vec A)$ | The mechanical current |
-| $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ | The central phase translation |
+| $\vartheta_{\mathrm{cph}}=\frac{2\pi ϙ\Lambda}{h}$ | The central phase translation |
 | $\tilde F$ | The field strength; one type in the algebra, four brackets in the chart |
 | $\nu_m=\frac{mc}{h}$ | The mass wave number |
 
@@ -305,8 +305,8 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 - [The Lagrangian and the Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html), for the free polar action and its metric.
 - [The Coupled Proca Equation in Biquaternionic Polar Variables](the-coupled-proca-equation-in-biquaternionic-polar-variables.html), for the same type statement in the vector sector.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and its parameter count.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Spin-Zero Fluid](the-spin-zero-fluid.html), for the fluid reading of the pair.
 - [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html), for the free flow's irrotationality that the coupling breaks.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the quantization of the circulation in units of $h$.

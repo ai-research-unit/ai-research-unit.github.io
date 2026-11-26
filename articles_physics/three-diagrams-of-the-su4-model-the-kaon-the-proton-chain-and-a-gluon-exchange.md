@@ -91,7 +91,7 @@ $$
 
 **The consequence, and it is the reason proton decay does not bite.** At $M_X$ of order $10^{-5}$ J the three-vertex rate is unobservable at any conceivable experiment, so **the sector is not bounded by the proton's stability** — and the bound that does exist on $M_X$, the kaon one, comes from the two-vertex diagram above. **The corpus's strongest statement about the fourth colour is therefore not a proton-decay bound, and a reader who looks for one will find a null result where they expected a constraint.**
 
-**The channel that the frame forbids, stated once more because it is the one a reader will ask about.** $p\to e^{+}\pi^{0}$ needs a $\pi^{0}$ in the final state, a $\pi^{0}$ is two quarks, and two quarks in the final state need a diquark coupling at one of the vertices. **No field in the frame supplies one**, so the channel has no gauge contribution at any order, and the final state is three leptons.
+**The channel that the frame forbids, stated once more because it is the one a reader will ask about.** $p\to e^{+}\pi^{0}$ needs a $\pi^{0}$ in the final state, a $\pi^{0}$ is two quarks, and two quarks in the final state need a diquark coupling at one of the vertices. **No field in the frame supplies one**, so the channel has no connection contribution at any order, and the final state is three leptons.
 
 ## Diagram Three: Gluon Exchange, and the Colour Factor
 
@@ -172,7 +172,7 @@ $$
 
 **Three diagrams and three different pieces of arithmetic.** The kaon diagram turns two leptoquark vertices and one heavy propagator into $3.5\times10^{-12}$, and it does so only if a generation matrix the frame never writes is maximal — so the number is a corner of parameter space and not a prediction. **Its colour factor is one, for a reason that is easy to get wrong**: the two vertices sit on the same colour line and there is no sum to make.
 
-**The proton chain turns three vertices and the absence of a diquark into $M_X^{-10}$.** Six powers beyond the dimension-six shape, and the six are the difference of the two operator dimensions, doubled on the rate. **The consequence is negative and it is the corpus's most useful negative statement**: the fourth colour is not bounded by proton decay, and $p\to e^{+}\pi^{0}$ has no gauge contribution at any order.
+**The proton chain turns three vertices and the absence of a diquark into $M_X^{-10}$.** Six powers beyond the dimension-six shape, and the six are the difference of the two operator dimensions, doubled on the rate. **The consequence is negative and it is the corpus's most useful negative statement**: the fourth colour is not bounded by proton decay, and $p\to e^{+}\pi^{0}$ has no connection contribution at any order.
 
 **The gluon diagram turns the eight corner arrays into $C_F=\tfrac43$**, computed from the printed matrices after the one rotation the Gram matrix forces. **The factor is a check on the normalisation and not on the group**, and the rule that separates $C_F$, $T_R$ and $N_c$ is the one worth carrying away.
 
@@ -198,7 +198,7 @@ $$
 ## Further Reading
 
 - [The Feynman Rules of the $\mathrm{SU}(4)$ Model](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The vertices these three diagrams use, and the normalisation that produced $C_F$.
-- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The matrices behind the two leptoquark vertices, with their charges.
+- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The matrices behind the two leptoquark vertices, with their charges.
 - [Lepton Flavour in the $\mathrm{SU}(4)$ Model: Nothing Turns the Lepton](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html). The operator, the rate, the $K_L$–$K_S$ selection and the assumption about $U$ in full.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The six states, the $B-L=\pm\tfrac43$, and the dimension-nine argument.
 - [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The $C_F$, $T_R$, $N_c$ bookkeeping in its own setting.

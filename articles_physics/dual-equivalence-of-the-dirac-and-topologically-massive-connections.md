@@ -49,7 +49,7 @@ and the mixed term is a vector. The operator $\Box_\Phi$ has no such term becaus
 
 ## The Parent Action
 
-The action of this article is also written, varied and read for its consequences in [The Lagrangian and the Topologically Massive Connection](the-lagrangian-and-the-topologically-massive-gauge-field.html), which carries the field slots — the action, the variation, the reality of the coefficients, the constraint count, the currents and the comparison with the family's other massive vectors. This section keeps the construction the duality needs and does not repeat that reading.
+The action of this article is also written, varied and read for its consequences in [The Lagrangian and the Topologically Massive Connection](the-lagrangian-and-the-topologically-massive-connection.html), which carries the field slots — the action, the variation, the reality of the coefficients, the constraint count, the currents and the comparison with the family's other massive vectors. This section keeps the construction the duality needs and does not repeat that reading.
 
 ### The Fields
 
@@ -145,7 +145,7 @@ with
 $$
 \check\varepsilon_{\jmath\imath k}=\sum_\rho\varepsilon_{\jmath\imath k\rho}\,j_\rho
 $$
-the Levi-Civita symbol of the slice, nonzero only when all three indices lie on it. This is Maxwell plus a **Chern–Simons mass**: first order in the derivative, one power of the mass, one Levi-Civita symbol. The gauge equation is the topologically massive one,
+the Levi-Civita symbol of the slice, nonzero only when all three indices lie on it. This is Maxwell plus a **Chern–Simons mass**: first order in the derivative, one power of the mass, one Levi-Civita symbol. The connection equation is the topologically massive one,
 $$
 \sum_{\jmath}\epsilon_{\jmath}\,\partial/\partial x_{\jmath} F_{\jmath\imath}+\tfrac m2\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_{\imath}\,\check\varepsilon_{\imath\jmath k}F^*_{\jmath k}=0,
 $$
@@ -250,7 +250,7 @@ one factor of $i$ spent on $i^2=-1$. Read back, $\tilde{Ξ}_{L}=F$ and $\tilde{�
 $$
 i\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_{\imath}\,\check c_{\imath\jmath k}\,\tilde\nabla_{\jmath} G_{\imath}-m\,G^*_{\imath}=0,
 $$
-whose mass couples $G$ to $G^*$ and whose two chiral lines above are its two parts, $G^{\mathrm R}_{\imath}$ and $G^{\mathrm L}_{\imath}$. It is the equation whose mass relates the two parts: one line, one mass, two parts. So the elimination of $H_{\imath}$ returns the *pair*, not one equation, and the chirality of the mass is the same chirality that the gauge reduction carries into the Chern–Simons term.
+whose mass couples $G$ to $G^*$ and whose two chiral lines above are its two parts, $G^{\mathrm R}_{\imath}$ and $G^{\mathrm L}_{\imath}$. It is the equation whose mass relates the two parts: one line, one mass, two parts. So the elimination of $H_{\imath}$ returns the *pair*, not one equation, and the chirality of the mass is the same chirality that the reduction by the redundancy carries into the Chern–Simons term.
 
 ## The Mass as a Non-Integrable Phase
 
@@ -279,13 +279,13 @@ G^{\mathrm L}_{\imath}=G^{0\mathrm L}_{\imath}\exp\Bigl(i\theta_{\mathrm{wln}}\B
 $$
 which depends on the path from a fixed initial point, and $U_{\mathrm{vec}}$ is form-invariant under the map: it is the same function of the mapped fields as of the original ones, so the map is invertible and the massless and massive solutions correspond one to one. This is the source's **non-integrable phase**: the mass is not a scalar multiplying $\tilde{Ξ}^{\dagger}iC_0\tilde{Ξ}$ but a unit complex vector, a direction in the complexified tangent space, and the phase it generates is path-dependent and is not removable by a local transformation of the s-vector. Its real part is the vector current and its imaginary part the axial current, so the phase and the "scale" of the field are the two halves of one complex vector.
 
-The topological mass of the connection and the phase mass of the Dirac field are then the same object read in the two reductions: in both, the mass is a first-order coupling carried by a direction that the algebra supplies and that no local transformation removes. In the gauge reduction that direction is the neutral spacelike $j$, on which the Chern–Simons symbol is built; in the Dirac reduction it is the complex unit vector $U_{\mathrm{vec}}$, on which the phase is built. Both are directions the algebra fixes, not parameters put in by hand.
+The topological mass of the connection and the phase mass of the Dirac field are then the same object read in the two reductions: in both, the mass is a first-order coupling carried by a direction that the algebra supplies and that no local transformation removes. In the reduction by the redundancy that direction is the neutral spacelike $j$, on which the Chern–Simons symbol is built; in the Dirac reduction it is the complex unit vector $U_{\mathrm{vec}}$, on which the phase is built. Both are directions the algebra fixes, not parameters put in by hand.
 
 ## What the Equivalence Is and Is Not
 
 **It is** a duality of the strong–weak type. The source's reason is that a duality typically exchanges the regimes, $g\mapsto1/g$, so a weak-coupling description in one variable is a strong-coupling description in the other, and having the explicit map makes perturbation theory available on both sides. No other article in the corpus states a dual equivalence of this kind; *The Proca Equation: Massive Spin 1 in Biquaternionic Form* is the second-order counterpart, not a dual, because there the mass is a scalar term and no elimination produces it.
 
-**It is not** a new solution of either theory. The duality relates the *descriptions*, not the dynamics: a solution of the Dirac equation maps to a solution of the gauge equation and conversely, and no new physics follows from the map itself. What the duality supplies is a dictionary — Dirac mass to topological mass, Dirac current to field strength, Dirac chirality to the gauge dual pair — and a definition of the potential that makes no reference to a Bianchi identity.
+**It is not** a new solution of either theory. The duality relates the *descriptions*, not the dynamics: a solution of the Dirac equation maps to a solution of the connection equation and conversely, and no new physics follows from the map itself. What the duality supplies is a dictionary — Dirac mass to topological mass, Dirac current to field strength, Dirac chirality to the connection dual pair — and a definition of the potential that makes no reference to a Bianchi identity.
 
 **It is** classical. Both reductions are statements about actions and their variations; the source says "at least classically" and says nothing about the quantum theory.
 
@@ -293,7 +293,7 @@ The topological mass of the connection and the phase mass of the Dirac field are
 
 1. **The four-dimensional mass term.** In four dimensions the reduced Lagrangian carries the cubic form, not a Chern–Simons term; the Chern–Simons term appears only after the reduction to the spin manifold. The source's route to four dimensions is the promotion by the embedding vector $j$, so the four-dimensional topological mass is $j$-dependent. Whether there is a four-dimensional topological mass that does not single out a direction is open.
 
-2. **The spectator scalar.** The scalar $\xi$ is carried through both reductions unchanged and, at $a=0$ on the spin manifold, does not interact with $B$. In four dimensions it is not a spectator: it sources the "electric" and "magnetic" currents of the Maxwell-like pair. Whether the three-dimensional decoupling is a property of the theory or of the gauge $a=0$ is not settled.
+2. **The spectator scalar.** The scalar $\xi$ is carried through both reductions unchanged and, at $a=0$ on the spin manifold, does not interact with $B$. In four dimensions it is not a spectator: it sources the "electric" and "magnetic" currents of the Maxwell-like pair. Whether the three-dimensional decoupling is a property of the theory or of the representative $a=0$ is not settled.
 
 3. **The role of the triality.** The parent action is written in the s-vector variables, and the s-vector carries the triality (order-three ding) structure. Does the dual equivalence commute with the triality map $A\mapsto B\mapsto N\mapsto A$? If it does, the equivalence is triality-covariant, which would be a strong structural statement; if not, the triality breaks at the duality.
 
@@ -309,7 +309,7 @@ The Dirac Lagrangian in the vector representation and the Lagrangian of the thre
 $$
 \mathcal{L}_G=-\tfrac{1}{4m}\sum_{\imath,k}\epsilon_{\imath}\epsilon_{\imath} F_{\imath k}F_{\imath k}+\tfrac14\sum_{\imath,\jmath,k}\epsilon_{\imath}\epsilon_{\jmath}\epsilon_{\imath}\,\check\varepsilon_{\jmath\imath k}\,B^*_{\jmath} F_{\imath k},
 $$
-Maxwell plus a Chern–Simons mass, with $\check\varepsilon_{\jmath\imath k}=\sum_\rho\varepsilon_{\jmath\imath k\rho}j_\rho$ and the gauge equation $\sum_{\jmath}\epsilon_{\jmath}\,\partial F_{\jmath\imath}/\partial x_{\jmath}+\tfrac m2\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_{\imath}\check\varepsilon_{\imath\jmath k}F^*_{\jmath k}=0$. The same $m$ is, in the other reduction, the non-integrable phase of the Dirac field: a shift $mK_{\imath}$ of the covariant derivative, with $U_{\mathrm{vec}}$ the source's unit complex vector, integrated along a path.
+Maxwell plus a Chern–Simons mass, with $\check\varepsilon_{\jmath\imath k}=\sum_\rho\varepsilon_{\jmath\imath k\rho}j_\rho$ and the connection equation $\sum_{\jmath}\epsilon_{\jmath}\,\partial F_{\jmath\imath}/\partial x_{\jmath}+\tfrac m2\sum_{\jmath,k}\epsilon_{\jmath}\epsilon_{\imath}\check\varepsilon_{\imath\jmath k}F^*_{\jmath k}=0$. The same $m$ is, in the other reduction, the non-integrable phase of the Dirac field: a shift $mK_{\imath}$ of the covariant derivative, with $U_{\mathrm{vec}}$ the source's unit complex vector, integrated along a path.
 
 Three facts make the mechanism work. The first-order mass term changes only by a total derivative under the redundancy of the dual potential, which is what "topological" means here. Of the two parts of $\check c$, only the Levi-Civita one appears in the reduced Lagrangian of Eq. (88) — the $r'_t$ part cancels in the reduction — and a Levi-Civita contraction is a Chern–Simons term. And the two-form $H_{\imath\jmath}$ carries the same information as the s-vector — three complex components in the anti-self-dual $H_{[\imath\jmath]}$ and one in the trace $H_{(\imath\jmath)}=-\xi^*\epsilon_{\imath}\delta_{\imath\jmath}$, with no sum on $\mu$, which is four — so the auxiliary field of the reduction is the antisymmetric part of the biquaternion.
 
@@ -346,7 +346,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $\tilde{Ξ}^{\dagger}iC_0\tilde{Ξ}=\sum_{\jmath}\epsilon_{\jmath}(N_{\jmath} N_{\jmath}-B_{\jmath} B_{\jmath})$ | Dirac bilinear |
 | $U_{\mathrm{vec},\imath}$ | Complex vector of Eq. (100) carrying the mass as a non-integrable phase; normalised to $U_{\mathrm{vec}}\cdot U_{\mathrm{vec}}=1$ in the source |
 | $\varepsilon_{\imath\jmath k\rho}$ | Totally antisymmetric symbol, $\varepsilon_{0123}=1$ |
-| $m$, $a$ | Fermion mass (equated to the topological gauge mass) and the auxiliary real constant $a\ne m$ |
+| $m$, $a$ | Fermion mass (equated to the topological connection mass) and the auxiliary real constant $a\ne m$ |
 | $S_{GH}$, $S_{G\xi B}$ | The two parent actions, four- and three-dimensional |
 | $\mathcal{L}_D$, $\mathcal{L}_H$, $\mathcal{L}_{\xi B}$, $\mathcal{L}_G$ | Dirac, dual-potential, scalar-plus-potential and spin-manifold Lagrangians |
 

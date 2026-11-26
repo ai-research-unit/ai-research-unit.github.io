@@ -70,7 +70,7 @@ $$
 
 so at the bound $\Omega_{\jmath} h^2=0.00130$, which is $1.1\%$ of $\Omega_{\mathrm{DM}}h^2$. So [the neutrino article](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) settles the question in the negative with a number: neutrinos are a $1\%$ correction to the dark component and cannot be it. This is also why "hot dark matter" was abandoned in the 1980s — the same calculation, with the same conclusion, before the oscillations were measured.
 
-The real obstacle is a symmetry problem. Even a new neutral particle is not automatically stable. Stability requires a conserved quantum number, and the model's only exact global symmetries are $B-L$ (non-perturbatively conserved) and the accidental ones. So a dark matter candidate requires either a new symmetry or an accidental one, and an accidental symmetry is a statement about which operators are allowed by the gauge quantum numbers — which is a statement about a content the model does not have.
+The real obstacle is a symmetry problem. Even a new neutral particle is not automatically stable. Stability requires a conserved quantum number, and the model's only exact global symmetries are $B-L$ (non-perturbatively conserved) and the accidental ones. So a dark matter candidate requires either a new symmetry or an accidental one, and an accidental symmetry is a statement about which operators are allowed by the symmetry quantum numbers — which is a statement about a content the model does not have.
 
 ## The Neutral-Current Bound
 
@@ -177,7 +177,7 @@ The scorecard has four rows.
 | Condition | Present in the Standard Model? | Quantitatively adequate? |
 |---|---|---|
 | $B$ violation | Yes: the sphaleron, non-perturbative | Irrelevant: $B-L$ conserved exactly |
-| $C$ violation | Yes: the gauge interactions are chiral | Yes, in principle |
+| $C$ violation | Yes: the connection interactions are chiral | Yes, in principle |
 | $CP$ violation | Yes: the CKM phase, $J=3.13\times10^{-5}$ | No: eleven orders short |
 | Out of equilibrium | No: the phase transition is a crossover | No: fails outright |
 

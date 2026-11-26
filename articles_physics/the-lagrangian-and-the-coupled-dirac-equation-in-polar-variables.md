@@ -338,7 +338,7 @@ The polar variational principle's genuine gain is therefore structural and not d
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), the equation in the chart, without the action.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the mass-term proposition.
 - [The Lagrangian and the Dirac Equation](the-lagrangian-and-the-dirac-equation.html), for the free action's structure and the count of the pair.
-- [The Minimal coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization that produces the coupling.
+- [The Minimal coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localization that produces the coupling.
 - [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html), for the four brackets as the spin-half fluid's transport laws.
 - [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html), for the scalar limit in which the brackets collapse to two.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the spin's transport in a background.

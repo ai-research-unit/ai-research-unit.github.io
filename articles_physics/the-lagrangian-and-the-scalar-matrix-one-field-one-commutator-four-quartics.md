@@ -89,11 +89,11 @@ $$
 
 **The two quartics of the traceless part produce two different cubic terms in the equation of motion.** $ΞΞ^{\dagger}Ξ$ is a matrix product of three factors; $(\operatorname{tr}Ξ^{\dagger}Ξ)Ξ$ is a number times the field. **A potential with one quartic would have only the second kind**, and the difference is what makes the model's vacuum shape a dynamical question. **The two trace quartics add no third kind**: they produce $(\operatorname{tr}Ξ)^{2}Ξ$ and $(\operatorname{tr}Ξ)^{2}\operatorname{tr}Ξ^{2}\,\mathbb 1$, a rescaling and a shift, and neither is a matrix product.
 
-**The covariant derivative is the commutator, so the equation is a matrix equation with a connection.** Its flat-space limit is not a wave equation with a potential but a wave equation with a connection, and the difference is the whole of the gauge–scalar coupling.
+**The covariant derivative is the commutator, so the equation is a matrix equation with a connection.** Its flat-space limit is not a wave equation with a potential but a wave equation with a connection, and the difference is the whole of the representative–scalar coupling.
 
 ## The Constraint
 
-**The temporal component of the gauge equation is a Gauss law, and the scalar contributes to its charge.**
+**The temporal component of the connection equation is a Gauss law, and the scalar contributes to its charge.**
 
 $$
 \sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,t\imath}=j^{Ξ}_{a,t},
@@ -107,7 +107,7 @@ $$
 
 **The scalar current is quadratic in $Ξ$ above $M_C$ and linear below it**, because only below the transition is there a $\langleΞ\rangle$ to split off. **That shift is the whole mechanism of the vector masses**: with $Ξ=Ξ_{0}+\delta Ξ$ the quadratic term produces a piece linear in $\delta Ξ$, and a piece linear in the fluctuation is what a mass term is.
 
-**The current is conserved covariantly and not ordinarily.** $D_{\imath}j_{\imath}=0$ follows from the invariance of the action; $\partial_{\imath}j_{\imath}=0$ does not, because of the $[A_{\imath},j_{\imath}]$ term. **So no gauge charge exists above $M_C$**, exactly as in the strong sector, and the corpus's charge theorem below $M_C$ is a statement about the residual group and not about this one.
+**The current is conserved covariantly and not ordinarily.** $D_{\imath}j_{\imath}=0$ follows from the invariance of the action; $\partial_{\imath}j_{\imath}=0$ does not, because of the $[A_{\imath},j_{\imath}]$ term. **So no symmetry charge exists above $M_C$**, exactly as in the strong sector, and the corpus's charge theorem below $M_C$ is a statement about the residual group and not about this one.
 
 ## The Count of Components Against the Count of Equations
 

@@ -65,7 +65,7 @@ and variation with respect to the scalar gives the constraint $\tilde\nabla_\Phi
 
 ## Choice Of Representative and the Relation to the Abelian Higgs
 
-**The unitary fixing condition.** Setting $\xi=0$ removes the scalar from the Lagrangian and leaves the Proca form, at the price of making the gauge non-manifest. This is why the mechanism is often described as "the scalar is removed by a choice of representative": the description is correct in that gauge and misleading outside it.
+**The unitary fixing condition.** Setting $\xi=0$ removes the scalar from the Lagrangian and leaves the Proca form, at the price of making the representative non-manifest. This is why the mechanism is often described as "the scalar is removed by a choice of representative": the description is correct in that representative and misleading outside it.
 
 **The relation to the abelian Higgs.** The two Lagrangians are the same object. In the Higgs case a complex scalar acquires a vacuum expectation value $v$, the phase is the Goldstone, the radial field is the physical scalar, and the mass is $\mu=gv$. In the Stueckelberg case the scalar is not a Higgs, has no potential, and the mass is a parameter. The difference is interpretive and observable: the Higgs leaves a physical scalar and a symmetry-breaking vacuum, the Stueckelberg leaves neither.
 
@@ -77,7 +77,7 @@ and variation with respect to the scalar gives the constraint $\tilde\nabla_\Phi
 - **Imported.** The mechanism itself, the shift field and the counting. These are standard field theory, transcribed.
 - **Not supplied.** A broken symmetry. The framework's scalar is a singlet of its compact factor and a central scalar cannot break the compact group, so the Higgs route is not available and this is the route that is.
 
-**Where the application is.** [The Stueckelberg Mechanism in Biquaternionic Form](the-stueckelberg-mechanism-in-biquaternionic-form.html) carries the construction in the framework's notation, fixes the gauge, counts the degrees of freedom and states which parts of the algebra's reading carry over and which do not.
+**Where the application is.** [The Stueckelberg Mechanism in Biquaternionic Form](the-stueckelberg-mechanism-in-biquaternionic-form.html) carries the construction in the framework's notation, fixes the representative, counts the degrees of freedom and states which parts of the algebra's reading carry over and which do not.
 
 ## Summary of Notation
 

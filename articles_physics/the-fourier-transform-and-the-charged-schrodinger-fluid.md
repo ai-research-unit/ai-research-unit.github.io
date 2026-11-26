@@ -12,7 +12,7 @@ Position in the block. This is the charged companion of [The Fourier Transform a
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_{\imath}+\frac{2\pi i\varkappa}{h}A_{\imath}$, and the local transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
+The charged companion's: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_{\imath}+\frac{2\pi i\varkappa}{h}A_{\imath}$, and the local transformation $\digamma_{\mathrm{cph}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
 
 $$
 \vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,
@@ -38,7 +38,7 @@ $$
 
 and the last equality is the article's first result. The velocity is constant and its curl is exactly zero, and the check on one hundred events gave $\max\lvert\nabla\times\vec v\rvert=2.5\times10^{-16}$ for a constant $\vec A$.
 
-The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\omicron_{\mathrm{pot}}=-\partial_{t'}\chi$ the local transformation $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\chi}{h})$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\frac{2\pi \varkappa\vec A}{h}$.
+The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\omicron_{\mathrm{pot}}=-\partial_{t'}\chi$ the local transformation $\digamma_{\mathrm{cph}}=\exp(\frac{2\pi i\varkappa\chi}{h})$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is equivalent up to the choice of representative to a free mode with a translated wave number, and the translation is $\frac{2\pi \varkappa\vec A}{h}$.
 
 The two labels, and which one the fluid reads.
 
@@ -46,7 +46,7 @@ $$
 \tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{\varkappa}{h}\tilde A_\Phi ,
 $$
 
-so the canonical label is the free one and the kinetic label is the free one plus the potential. The transform is a chart-dependent object here for the first time in this rung: transforming in the canonical variable puts the support on the free shell, transforming in the kinetic variable puts it on the translated shell, and the two differ by a gauge. §*Two Supports, One Field* of the charged Klein–Gordon Fourier companion carries the same distinction with the mass present.
+so the canonical label is the free one and the kinetic label is the free one plus the potential. The transform is a chart-dependent object here for the first time in this rung: transforming in the canonical variable puts the support on the free shell, transforming in the kinetic variable puts it on the translated shell, and the two differ by a representative. §*Two Supports, One Field* of the charged Klein–Gordon Fourier companion carries the same distinction with the mass present.
 
 ## The Curvature Is What a Multiplier Cannot Carry
 
@@ -66,7 +66,7 @@ So the two cases are the two curvatures.
 
 | the connection | its curvature | its transform | what the fluid does |
 | --- | --- | --- | --- |
-| constant | zero | a delta | one mode, no vorticity, gauge-removable |
+| constant | zero | a delta | one mode, no vorticity, representative-removable |
 | linear | constant | a derivative of a delta | no mode survives; the vorticity is the constant |
 | smooth bump | localised | a narrow kernel | a few neighbours; a localised eddy |
 | a spike | a distribution | a nearly flat kernel | every mode; vorticity everywhere |
@@ -93,7 +93,7 @@ That is exact and it is the only circulation a single mode has. The quantum of w
 
 The statement is the Aharonov–Bohm phase, read on a loop. The flux term is the phase $\exp(\frac{2\pi i\varkappa\digamma_{\mathrm{flx}}}{h})$ that a mode acquires on going round, and it is there whether or not the field strength vanishes on the loop. A mode's loop datum is therefore a phase and not the integer, and the integer appears only when a second mode is added and a node exists.
 
-The objection, and the answer. The objection is that the flux term is a gauge artefact in a simply connected region with vanishing curvature, so a mode's circulation is removable. The answer is that it is removable iff $\digamma_{\mathrm{flx}}$ is a multiple of $h/\varkappa$ on the loops at issue, and that on a loop that links a flux the integral is not removable in any single-valued gauge. The quantum of flux is a statement about the topology of the region and the quantum of winding is a statement about the topology of the field, and a mode has only the first.
+The objection, and the answer. The objection is that the flux term is a representative artefact in a simply connected region with vanishing curvature, so a mode's circulation is removable. The answer is that it is removable iff $\digamma_{\mathrm{flx}}$ is a multiple of $h/\varkappa$ on the loops at issue, and that on a loop that links a flux the integral is not removable in any single-valued representative. The quantum of flux is a statement about the topology of the region and the quantum of winding is a statement about the topology of the field, and a mode has only the first.
 
 ## Two Supports, One Field
 
@@ -147,7 +147,7 @@ The field has two supports, the free shell in the canonical variable and the tra
 | $\digamma_{\mathrm{flx}}$ | The flux through a loop's spanning surface |
 | $\tilde\Upsilon_\Phi=\tilde\Upsilon_{\Phi,\mathrm{gco}}-\frac{\varkappa\tilde A_\Phi}{h}$ | The canonical label less the potential |
 | $n$ | The winding of a loop around a nodal line; zero at a mode |
-| $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | The gauge element; central |
+| $\digamma_{\mathrm{cph}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | The phase element; central |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

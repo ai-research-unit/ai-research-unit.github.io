@@ -30,7 +30,7 @@ Three things are established.
 
 *Third, the force becomes the Lorentz force and the quantum force stays.* The gradient of the coupled mass shell gives the free article's acceleration law with one term added, and the added term is $-ϙ(\vec E+\vec v\times\vec B)$ in the spatial slots. The quantum potential is in the equation exactly as it was, because it depends on $\varrho$ and its curvature and on nothing else.
 
-What is not here. No new solution, no new prediction, no new particle. The article's subject is the fluid reading of the standard minimally coupled scalar field, and its work is to say which of the free article's properties are properties of the scalar field and which are properties of the connection it is coupled to. The answer is short: the irrotationality and the gauge non-invariance of the velocity are the connection's, and the density, the quantum stress, the absence of an equation of state and the nodal set are the field's.
+What is not here. No new solution, no new prediction, no new particle. The article's subject is the fluid reading of the standard minimally coupled scalar field, and its work is to say which of the free article's properties are properties of the scalar field and which are properties of the connection it is coupled to. The answer is short: the irrotationality and the non-invariance under the local transformation of the velocity are the connection's, and the density, the quantum stress, the absence of an equation of state and the nodal set are the field's.
 
 Position in the block. This article is the charged companion of [The Spin-Zero Fluid](the-spin-zero-fluid.html). Its siblings are [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), and the three are compared side by side in §*The Three Charged Fluids*. The free article's own table of the three free fluids is in that article and in the two free companions, and the present table is its charged counterpart.
 
@@ -195,7 +195,7 @@ The potential moves the zero of the mechanical energy, and the charge density fo
 
 That surface is the pair-threshold, and the article claims the kinematics and no more. The number density $\varrho^{2}$ never changes sign and never vanishes there; what changes sign is the charge density, which is the number density times the mechanical phase rate. So the free article's "two defects are one defect" — the sign of the charge and the indefiniteness of the density — is unchanged in structure: the coupling moves the boundary and does not remove it. The field theory of the boundary, in which a negative-frequency branch stopped by a sufficiently strong electric potential is a pair-producing configuration, is [The Klein Paradox in Biquaternionic Form](the-klein-paradox-in-biquaternionic-form.html)'s subject, and the present article's contribution is the fluid statement: a fluid whose charge density is a positive number density times a mechanical phase rate has a charge-sign boundary wherever that rate vanishes, and a constant potential translates the boundary without abolishing it.
 
-The local transformation does not move the boundary. The bracket is invariant, so the surface $E+ϙc\,a'_t=0$ is an invariant set, and the worry that the threshold is a gauge artefact is answered in one line.
+The local transformation does not move the boundary. The bracket is invariant, so the surface $E+ϙc\,a'_t=0$ is an invariant set, and the worry that the threshold is a representative artefact is answered in one line.
 
 ## The Reverse Map
 
@@ -321,8 +321,8 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is inva
 - [The Spin-Zero Fluid](the-spin-zero-fluid.html), the free companion, whose twelve properties these twelve answer.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the word, the pair, the quantum potential and the nodal set.
 - [The Lagrangian and the Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html), for the action and the current in the chart.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the central connection and the curvature.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation that produces the coupling.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the central connection and the curvature.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localisation that produces the coupling.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the winding the flux is added to.
 - [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html), for the rank table this fluid fills differently.
 - [The Equation of State and the Barotropic Condition](the-equation-of-state-and-the-barotropic-condition.html), for the criterion the charged fluid still fails.

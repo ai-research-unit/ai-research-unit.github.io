@@ -268,13 +268,13 @@ Both routes give $-\frac{\pi^{2}\,h\,c}{480\pi \,a^{4}}$, and both were recomput
 | Photon Fock vacuum | Imported | no bosonic ladder in $\mathbb{B}$ |
 | Field mode algebra and Fock space | Imported | standard quantisation on a module |
 | Conducting plates and boundary conditions | Imported | no native description of a boundary |
-| Gauge removal of timelike/longitudinal | Imported | subsidiary condition; no algebraic principle |
+| Removal of timelike/longitudinal | Imported | subsidiary condition; no algebraic principle |
 | Regularisation / analytic continuation | Imported | algebra selects no regularisation |
 | The numerical Casimir coefficient | Standard | reproduced, not derived from $\mathbb{B}$ |
 
 **What the algebra supplies.** The one-mode vacuum and its expectation values; the central-scalar character of the zero-point energy; the transverse plane and the indefinite metric that fix the polarisation count. These are genuine and are the framework's specific content for this problem.
 
-**What the algebra does not supply.** The bosonic ladder (so the photon vacuum is not an algebra element); the boundary conditions imposed by the conductors; the regularisation that extracts the finite part of the divergent sum; and the gauge removal of the unphysical polarisations. It also supplies no modification of the numerical result: the Casimir force is reproduced.
+**What the algebra does not supply.** The bosonic ladder (so the photon vacuum is not an algebra element); the boundary conditions imposed by the conductors; the regularisation that extracts the finite part of the divergent sum; and the removal of the unphysical polarisations. It also supplies no modification of the numerical result: the Casimir force is reproduced.
 
 ## Boundaries, the Local Complex Structure, and the Lifshitz Direction
 
@@ -306,7 +306,7 @@ The **zero-point energy** of the free Maxwell field is a central scalar — the 
 
 That remainder was obtained by two independent regularisations. The **spectral zeta function** route continues $\zeta_3(s)$ from $s>\tfrac32$ through the pole of $\zeta(2s-2)$ at $s=\tfrac32$ to $s=-\tfrac12$, and gives, for one Dirichlet-type scalar degree of freedom, $-{\pi^{2}\,\frac{h}{2\pi}\,c}/({1440\,a^{3}})$. The **heat-kernel** route uses the Jacobi modular relation to write the exact difference between the bounded and free heat kernels, isolates the Casimir part as the exponentially small "winding" sum, and integrates it to the same value using $\zeta(4)=\pi^{4}/90$. The two routes use different special values and different manipulations; they agree.
 
-The **electromagnetic** result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\,\frac{h}{2\pi}\,c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\sigma_{\mathrm{met}}$ with the biquaternion norm of the material sector $\mathbb{B}_{\Phi}$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the gauge removal of the timelike and longitudinal directions is imported.
+The **electromagnetic** result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\,\frac{h}{2\pi}\,c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\sigma_{\mathrm{met}}$ with the biquaternion norm of the material sector $\mathbb{B}_{\Phi}$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the removal of the timelike and longitudinal directions is imported.
 
 The **force** per unit area, with the convention $F/A=-\partial/\partial a(E/A)$, is
 $$

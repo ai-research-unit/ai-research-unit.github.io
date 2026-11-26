@@ -12,9 +12,9 @@ $$
 C:\ \mathbf4_{\imath}\mapsto\bar{\mathbf4}_{\imath},
 $$
 
-sixteen fields, thirty-two states, **closed under $C$ and, since $P$ maps the list to itself, under $CP$.** The two copies of each quartet are an index, not a gauge doublet: **the model makes one local group and this is its fermion content.**
+sixteen fields, thirty-two states, **closed under $C$ and, since $P$ maps the list to itself, under $CP$.** The two copies of each quartet are an index, not a local doublet: **the model makes one local group and this is its fermion content.**
 
-**Why the count is a product and still a product.** A fermion carries one quartet value and one copy value, so the count is $4\times2$ per quartet type and $4\times2\times2$ with the conjugate type included. **The arithmetic is the old article's arithmetic and the meaning is not**: the second $2$ used to be a made local weak doublet, and here it is an index the group does not act on.
+**Why the count is a product and still a product.** A fermion carries one quartet value and one copy value, so the count is $4\times2$ per quartet type and $4\times2\times2$ with the conjugate type included. **The arithmetic is the old article's arithmetic and the meaning is not**: the second $2$ used to be a local weak doublet, and here it is an index the group does not act on.
 
 **What this article is.** The fermion side of the classification and its conjugation: the count, the two octets, the $B-L$ assignment read off the grid, the anomaly cancellation as a count, and the conjugation as a permutation of the field set.
 
@@ -70,7 +70,7 @@ $$
 
 **The model fixes $B-L$ and it does not fix $Q$.** $B-L$ is a generator of the algebra, so every entry of every quartet has a definite value of it. **$Q$ is not a generator of $\mathrm{SU}(4)$, and no combination of the fifteen is the electric charge of a fermion**, because the two copies of a quartet carry the same $B-L$ and the same colour and differ in nothing the group acts on.
 
-**What supplies the difference.** A weak factor: a made local $\mathrm{SU}(2)$ acting on the copy index, with $T_3=\pm\tfrac12$, gives
+**What supplies the difference.** A weak factor: a local $\mathrm{SU}(2)$ acting on the copy index, with $T_3=\pm\tfrac12$, gives
 
 $$
 Q=T_3+\tfrac12\bigl(B-L\bigr),
@@ -154,7 +154,7 @@ $$
 
 ## Distinctions That Are Easy to Lose
 
-An index is not a factor. The copy index $\imath=1,2$ is invisible to the group; a made local doublet is not.
+An index is not a factor. The copy index $\imath=1,2$ is invisible to the group; a local doublet is not.
 
 A label is not a representation. The three colour labels are the same on both sides of the conjugate pair; the representation is $\mathbf3$ on one side and $\bar{\mathbf3}$ on the other.
 

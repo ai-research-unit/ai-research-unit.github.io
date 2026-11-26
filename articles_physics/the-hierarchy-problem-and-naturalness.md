@@ -16,7 +16,7 @@ Three claims are refused at the outset.
 
 Four claims are then established, each with a number.
 
-- The sensitivity is real and it is quadratic. The one-loop shift is $\delta m_H^2=\frac{\Lambda^2}{16\pi^2}(2.49)$, the coefficient being the sum of a gauge part $0.239$, a top part $1.476$ and a quartic part $0.774$. The top dominates, as it does everywhere in the scalar sector.
+- The sensitivity is real and it is quadratic. The one-loop shift is $\delta m_H^2=\frac{\Lambda^2}{16\pi^2}(2.49)$, the coefficient being the sum of a representative part $0.239$, a top part $1.476$ and a quartic part $0.774$. The top dominates, as it does everywhere in the scalar sector.
 - The tuning is $\Lambda^2$-scaled and the stable window is narrow. $\Lambda=1.6\times10^{-7}\ \mathrm{J}$ costs nothing; $\Lambda=1.6\times10^{-6}\ \mathrm{J}$ costs a factor $10^2$; $\Lambda=M_{\mathrm{Pl}}$ costs $10^{32}$. Radiative stability requires new physics within about $8$ Higgs masses, that is around $1.6\times10^{-7}\ \mathrm{J}$.
 - Three standard responses exist, and each has a measured cost. Supersymmetry needs stops below about $1.6\times10^{-7}\ \mathrm{J}$ to keep the tuning under $10\%$, and the LHC has not found them. Compositeness needs $f\lesssim1.6\times10^{-7}\ \mathrm{J}$ for the same, and has not been found either. The landscape needs no new physics and cannot be tested by the same means.
 - The framework's answer is that it has no cutoff, and therefore no quadratic sensitivity, and therefore nothing to say. That is not a solution; it is a statement that the problem is imported whole. But it comes with one structural observation that is worth the section: a dimensionless algebra cannot generate a dimensionful parameter by itself, which is exactly the statement [the hadron article](hadron-structure-from-qcd-the-bound-state-problem.html) made about $\Lambda_{\mathrm{QCD}}$ — and there, the mechanism exists and is non-perturbative, while here it does not exist at all.
@@ -176,7 +176,7 @@ $$
 
 against a measured $m_h=2.230\times10^{-25}$ kg. So the model requires large loop corrections from heavy stops to reach the measured mass, and those corrections are exactly the ones that reintroduce the tuning. The two requirements pull in opposite directions: *raise* $m_h$ needs heavy stops, *naturalness* needs light ones. This tension, not the absence of a discovery by itself, is what has made minimal supersymmetry uncomfortable.
 
-Split supersymmetry survives, with the scalars heavy and the gauginos light. It gives up naturalness for the scalar mass and keeps the connection coupling unification and the dark matter candidate. It is a coherent position, and it concedes the point.
+Split supersymmetry survives, with the scalars heavy and the fermionic partners light. It gives up naturalness for the scalar mass and keeps the connection coupling unification and the dark matter candidate. It is a coherent position, and it concedes the point.
 
 ## Response Two: Compositeness and the Pseudo-Goldstone
 
@@ -249,7 +249,7 @@ The framework says nothing about the tuning, and the reason it says nothing is e
 
 The statement has three parts.
 
-- There is no measure. [The symmetry group ceiling article](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) and [the lattice article](lattice-gauge-theory-and-the-biquaternion-path-integral.html) record between them that the path integral over $\mathbb{B}$-valued fields is a formal object, that the fermionic measure is not an algebraic operation, and that a cutoff is imposed from outside. So the framework's loop integrals are not defined and the quadratic term cannot be computed in it.
+- There is no measure. [The symmetry group ceiling article](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) and [the lattice article](lattice-connection-theory-and-the-biquaternion-path-integral.html) record between them that the path integral over $\mathbb{B}$-valued fields is a formal object, that the fermionic measure is not an algebraic operation, and that a cutoff is imposed from outside. So the framework's loop integrals are not defined and the quadratic term cannot be computed in it.
 - There is no second strong sector. Compositeness requires a new confining dynamics at $f\sim1.6\times10^{-7}\ \mathrm{J}$. The framework has exactly one strong sector available — the imported $SU(3)$ — and no second one. [The ceiling](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) is the reason: no compact algebra of dimension above four, so no second confining group.
 - There is no vacuum selection. A landscape requires a space of vacua with a measure. The algebra has one vacuum, the identity of the field algebra, and no family of them.
 
@@ -321,7 +321,7 @@ The table gives each item and its provenance.
 | $\delta m_H^2=6.03\times10^{16}$ J$^2$ at $M_{\mathrm{Pl}}$ | Computed here |
 | The tuning table, $10^{32}$ at $M_{\mathrm{Pl}}$ | Computed here |
 | $\Lambda_{\mathrm{stable}}=1.60\times10^{-7}\ \mathrm{J}$ $=8.0\,m_H$ | Computed here |
-| Chiral and gauge protection of fermion and vector masses | Imported |
+| Chiral and representative protection of fermion and vector masses | Imported |
 | The MSSM bound $m_h\le M_Z$ | Imported; the number $1.6258\times10^{-25}$ kg quoted |
 | The stop-tuning table | Computed here |
 | The composite tuning $(f/v)^2$ | Computed here |
@@ -339,7 +339,7 @@ The divergence is a convention — dimensional regularisation gives no quadratic
 
 Radiative stability requires new physics within $8.0$ Higgs masses, that is $1.60\times10^{-7}\ \mathrm{J}$ or $4.05\,v$, and the LHC's null results have closed that window for states with Standard-Model-like couplings.
 
-Fermion and gauge masses are protected because a symmetry forbids the mass term and hence its correction. The scalar has no such symmetry, and that is the whole content of the problem.
+Fermion and connection masses are protected because a symmetry forbids the mass term and hence its correction. The scalar has no such symmetry, and that is the whole content of the problem.
 
 Three responses: supersymmetry needs stops below $1.6\times10^{-7}\ \mathrm{J}$ for $30\%$ tuning, and its tree-level bound $m_h\le1.6258\times10^{-25}$ kg pulls the other way; compositeness needs $f\lesssim1.6\times10^{-7}\ \mathrm{J}$, and its tuning is $(f/v)^2=16.5$ at $f=1.6\times10^{-7}\ \mathrm{J}$; the landscape needs no new physics and makes no collider prediction. A fourth, the Veltman condition, is arithmetically refuted: it requires $m_t=2.549\times10^{-25}$ kg against a measured $3.079\times10^{-25}$ kg.
 
@@ -366,7 +366,7 @@ Naturalness is a heuristic with one success (GIM) and one failure (weak-scale su
 ## Further Reading
 
 - [Hadron Structure from QCD: the Bound-State Problem](hadron-structure-from-qcd-the-bound-state-problem.html). The other end of the contrast: a scale that *is* generated, non-perturbatively, with no dimensionful parameter in the Lagrangian.
-- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The potential whose two parameters carry the tuning.
+- [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html). The potential whose two parameters carry the tuning.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html). What the framework does represent of the scalar sector, and what it does not.
 - [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html). How the scalar mass and any new heavy state enter the fit, and why $T$ is the observable that measures them.
 - [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). Where $v$ and $M_H$ appear as two of the nineteen, both in the group with no arena.

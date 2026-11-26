@@ -55,13 +55,13 @@ $$
 
 the standard dimension of the charge-$k$ moduli space of $SU(N)$.
 
-**The reading.** Every instanton carries four translational, four scale and three orientation parameters for each unit of charge, plus the parameters that come from the gauge orientation of the instanton in the group. The formula reproduces that count and fixes the measure.
+**The reading.** Every instanton carries four translational, four scale and three orientation parameters for each unit of charge, plus the parameters that come from the connection orientation of the instanton in the group. The formula reproduces that count and fixes the measure.
 
 The metric. The moduli space carries the metric induced by the field-space metric on the space of connections; the ADHM coordinates make it computable, and the hyper-Kähler structure of the manifold is visible in the quaternionic form of the equations.
 
 ## The Minimal Datum and the Charge-One Solution
 
-**The reduction.** At $k=1$ the matrices $B_i$ are numbers and the equations reduce to algebraic relations among them. Solving them and inserting the datum into the reconstruction formula gives the BPST solution with its scale, its position and its gauge orientation.
+**The reduction.** At $k=1$ the matrices $B_i$ are numbers and the equations reduce to algebraic relations among them. Solving them and inserting the datum into the reconstruction formula gives the BPST solution with its scale, its position and its connection orientation.
 
 The reconstruction. The connection is built from the null space of a linear operator constructed from the datum; the self-duality of the resulting connection is a consequence of the two equations, not an extra condition. This is the sense in which the construction is complete: every self-dual connection arises, and every datum gives one.
 

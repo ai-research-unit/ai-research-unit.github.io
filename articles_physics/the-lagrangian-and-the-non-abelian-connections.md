@@ -217,7 +217,7 @@ The three findings. The trace is the matrix trace and not the corpus's informati
 
 ## Further Reading
 
-- [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the parent: the connection, the curvature, the Bianchi identity, the reality condition.
+- [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html) — the parent: the connection, the curvature, the Bianchi identity, the reality condition.
 - [The Lagrangian and the Electromagnetic Field](the-lagrangian-and-the-electromagnetic-field.html) — the abelian case, where the coupling cancels.
 - [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html) — the $\mathrm{SU}(2)$ action with a scalar and masses.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) — the ceiling this article's action stops at.

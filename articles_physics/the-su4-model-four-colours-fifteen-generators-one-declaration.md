@@ -21,7 +21,7 @@ $$
 
 **What this article establishes.** That the group is $\mathrm{SU}(4)$ and the count is fifteen; that the fifteen split as $8+1+6$; that the matter content is the sixteen and that it is vector-like under the group, so its anomaly cancels by counting; that one coupling multiplies all fifteen generators; that the fifteen already contains a real $\mathfrak{so}(4)$ of six dimensions and rank two; that the sixteen is closed under $C$ and, since $P$ maps it to itself as well, under $CP$, so the content is real under both while the Lagrangian's phases remain free; and that the ceiling on any group commuting with the Lorentz action is $\mathrm{SU}(2)$, which is why the carrier is a copy.
 
-**What it does not establish.** That the algebra derives the group — it derives the group *given* the carrier. That the lepton line is the fourth colour — that is declaration (A). That the model is chiral where it gauges — **it is not, and §*The Chiral Wall* shows that this is now a theorem about the model rather than a caveat about a representation.**
+**What it does not establish.** That the algebra derives the group — it derives the group *given* the carrier. That the lepton line is the fourth colour — that is declaration (A). That the model is chiral where it makes local — **it is not, and §*The Chiral Wall* shows that this is now a theorem about the model rather than a caveat about a representation.**
 
 **What is absent here.** No weak pair, no hypercharge, no photon, no $W$, no $Z$, no rank five. **Those arrive at $M_C$, where colour, one abelian factor and two weak factors describe what the vacuum leaves**, and that is the subject of the next section of the corpus. This article is the connection content of the model above that scale, and it is complete as a statement of that content: **the scalar sector is [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html), and the fermion masses are [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html), whose verdict is that the ratio $m_\ell=3m_q$ is falsified.**
 
@@ -116,7 +116,7 @@ and its conjugate gave $+\tfrac29$ with the signs reversed, so the sum vanished.
 
 ## One Covariant Derivative
 
-**The whole gauge content is one line, and it is shorter than it used to be.**
+**The whole connection content is one line, and it is shorter than it used to be.**
 
 $$
 D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}t_{a} .
@@ -136,7 +136,7 @@ $$
 
 **Below $M_C$ there are nine massless and six massive, and that is the whole connection spectrum at that scale.** Above $M_C$ all fifteen are massless, no vacuum having formed — **and that includes the six leptoquarks, whose mass exists only once the condensate does.** The two columns are the point: **the sextet's column changes and the other two do not**, and a reader who reads "heavy" in the third row without the column heading has read the broken phase into the unbroken one.
 
-**And the middle column says *eight*, not *the gluons*, on purpose.** Above $M_C$ the group is one factor and **no $\mathrm{SU}(3)$ is gauged**, so *gluon* is a name the broken phase supplies: the eight are the six colour–colour off-diagonals plus the two colour diagonals, defined by the lines they move and not by a subgroup. **The $\mathrm{SU}(3)_c$ column is therefore a branching and not a pre-breaking content**, and §*The Names, and Which Phase They Belong To* of [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) states what changes at the transition and what does not — **the count $6+2=8$ never changes; only which group the two diagonals belong to does.**
+**And the middle column says *eight*, not *the gluons*, on purpose.** Above $M_C$ the group is one factor and **no $\mathrm{SU}(3)$ is made local**, so *gluon* is a name the broken phase supplies: the eight are the six colour–colour off-diagonals plus the two colour diagonals, defined by the lines they move and not by a subgroup. **The $\mathrm{SU}(3)_c$ column is therefore a branching and not a pre-breaking content**, and §*The Names, and Which Phase They Belong To* of [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) states what changes at the transition and what does not — **the count $6+2=8$ never changes; only which group the two diagonals belong to does.**
 
 **No $W$, no $Z$ and no photon in this list**: those need the weak factors, which arrive at $M_C$ in the same condensation that gives the right-handed pair its mass, and they become massive at $M_W$. **The scalar sector is not in this table**: it is sixteen real components in *The Scalar Content*, six of them eaten by these six vectors.
 
@@ -201,7 +201,7 @@ $$
 | the split $\mathbf 4=\mathbf 1\oplus\mathbf 3$ | $\mathbb C e_t\oplus B_V$ | derived, and the only canonical one |
 | the identification with the quark–lepton quartet | — | **declared, (A)** |
 | the sixteen | two copies of $\mathbf4$ and of $\bar{\mathbf4}$ | declared content, vector-like by construction |
-| the copy index | — | declared, and ungauged here |
+| the copy index | — | declared, and not made local here |
 | chirality | the copy index | declared |
 | any equality of couplings | — | not applicable: one coupling |
 
@@ -303,7 +303,7 @@ $$
 
 **What a chiral connection theory needs.** A connection action that distinguishes left from right at the level of the *coupling* — an action of the group on one copy of the matter and not on its conjugate.
 
-**What this model has.** One copy index, ungauged, and one coupling multiplying the fifteen. **The made local content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, vector-like in pairs.** A vector-like made local sector has no chiral connection coupling at all, and therefore:
+**What this model has.** One copy index, not made local, and one coupling multiplying the fifteen. **The local content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, vector-like in pairs.** A vector-like made local sector has no chiral connection coupling at all, and therefore:
 
 > **The model is not chiral where it fixing conditions. This is not a caveat about a representation; it is a property of the model, proved by the same count that makes its anomaly vanish.**
 
@@ -368,7 +368,7 @@ A theorem about another group is not evidence about this one. The Boyle–Farnsw
 | $\mathfrak m$ | the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$ |
 | $iD$ | $\operatorname{diag}(-3i,i,i,i)$, the abelian direction and the transition's vacuum |
 | $\mathbf{16}$ | the matter content, $\mathbf4\otimes\mathbf2\oplus\bar{\mathbf4}\otimes\mathbf2$ |
-| the copy index | the two-dimensional label on the quartet; ungauged here |
+| the copy index | the two-dimensional label on the quartet; not made local here |
 | $\mathfrak k_L,\mathfrak k_R$ | the two commuting triples from the two-sided action |
 | $\mathfrak{so}(4)$ | $\mathfrak k_L\oplus\mathfrak k_R=\operatorname{span}\{A_{ab}\}$, six real dimensions inside the fifteen |
 | $A_{ab},iS_{ab}$ | the real antisymmetric and imaginary symmetric plane arrays |

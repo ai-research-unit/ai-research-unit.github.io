@@ -413,7 +413,7 @@ $$
 
 The semisimple part is diagonal and the nilpotent part sits in one mixed corner. Compare the open stratum, where the element is $\operatorname{diag}(\eta_{+},\eta_{-})$ and both mixed corners are filled by the corner nilpotents: here one corner holds the defect and the other holds zero. The asymmetry is the defect.
 
-The block is the same for every admissible choice of $e$. The pair is a gauge and the block is the invariant; the only thing the gauge moves is the scale of the corner generator, and that is the $1$ in the corner. Over forty random conjugations the four products of the transported pair agreed with the transported defect to $5.1\times10^{-14}$.
+The block is the same for every admissible choice of $e$. The pair is a representative and the block is the invariant; the only thing the representative moves is the scale of the corner generator, and that is the $1$ in the corner. Over forty random conjugations the four products of the transported pair agreed with the transported defect to $5.1\times10^{-14}$.
 
 The standard representative makes the choice concrete.
 
@@ -881,7 +881,7 @@ The numerical checks are checks of identities, not of the reading. Every identit
 - The stratum splits into the semisimple scalar line $\Sigma_{10}^{\mathrm{s}}$ and the defective Jordan part $\Sigma_{10}^{\mathrm{J}}$; the split is by the minimal polynomial and is invisible to the two predicates.
 - The scalar line is exactly the centre minus the origin: $L_{\tilde Q}=R_{\tilde Q}=Q_t\mathrm{id}$, the eigenspace is the whole algebra, and every two-term writing is non-unique.
 - On the Jordan part the centraliser is the dual numbers, its only idempotents are $0$ and $e_t$, and no non-trivial Peirce decomposition is attached to the element.
-- A chosen idempotent gives the Peirce block $J_2(Q_t)$; the flag is the invariant and the splitting of the flag is the gauge.
+- A chosen idempotent gives the Peirce block $J_2(Q_t)$; the flag is the invariant and the splitting of the flag is the representative.
 - The one-sided eigenspaces have dimension two each and their joint eigenspace is the line $\mathbb{C}\vec\Pi_{\mathrm{nil}}$: no joint eigenbasis exists.
 - The powers are $Q_t^{n}e_t+nQ_t^{n-1}\vec\Pi_{\mathrm{nil}}$, the inverse is $Q_t^{-1}e_t-Q_t^{-2}\vec\Pi_{\mathrm{nil}}$, and the inverse has a double pole in the scalar part.
 - The flow stays in the stratum for every parameter and is $e^{\theta Q_t}(e_t+\theta\vec\Pi_{\mathrm{nil}})$; the Hermitian norm is $\lvert e^{\theta Q_t}\rvert^{2}(1+\lvert\theta\rvert^{2}\lVert\vec\Pi_{\mathrm{nil}}\rVert^{2})$.

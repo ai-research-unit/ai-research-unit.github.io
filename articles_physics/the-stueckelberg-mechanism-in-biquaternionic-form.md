@@ -112,11 +112,11 @@ $$
 \qquad\text{by}\qquad
 \Gamma=\xi .
 $$
-In this gauge the Lagrangian reduces to the Proca Lagrangian,
+In this representative the Lagrangian reduces to the Proca Lagrangian,
 $$
 \mathcal{L}_{\mathrm{S}}\big|_{\xi=0}=-\tfrac14\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}-\tfrac12\mu^2\sum_{\imath} A_{\imath} A_{\imath} ,
 $$
-and the count is the Proca count: four components of $A_{\imath}$, one constraint from the deformed Gauss law, three physical polarizations. The scalar is gone — it has been absorbed into the longitudinal polarization of the vector — and the theory is manifestly that of a massive vector. This is the gauge in which the mechanism is "invisible": it has done its work by making the mass term invariant, and the field that made it invariant has been removed by a choice of representative.
+and the count is the Proca count: four components of $A_{\imath}$, one constraint from the deformed Gauss law, three physical polarizations. The scalar is gone — it has been absorbed into the longitudinal polarization of the vector — and the theory is manifestly that of a massive vector. This is the condition in which the mechanism is "invisible": it has done its work by making the mass term invariant, and the field that made it invariant has been removed by a choice of representative.
 
 ### The Covariant $R_\zeta$ Fixing Conditions
 
@@ -138,11 +138,11 @@ which reduces to the Proca propagator of the companion article as $\zeta\to\inft
 
 ### The Degree-of-Freedom Count
 
-The count is the same in every gauge, and it is the count of the machinery with the framework's content inserted:
+The count is the same in every representative, and it is the count of the machinery with the framework's content inserted:
 $$
 \text{fields }(4+1)=5,\quad \text{local symmetry }-1,\quad \text{mass-term constraint }-1,\quad \text{physical }=3 .
 $$
-The local symmetry removes the scalar by fixing it to a function of the vector — in the unitary fixing condition to zero — and the mass term's constraint structure removes the timelike component of the vector. In the $R_\zeta$ gauge the same three modes are distributed as two transverse vector modes, one longitudinal mixture of vector and scalar, and an $\zeta$-dependent scalar that is not physical; the count is invariant, the distribution is not.
+The local symmetry removes the scalar by fixing it to a function of the vector — in the unitary fixing condition to zero — and the mass term's constraint structure removes the timelike component of the vector. In the $R_\zeta$ representative the same three modes are distributed as two transverse vector modes, one longitudinal mixture of vector and scalar, and an $\zeta$-dependent scalar that is not physical; the count is invariant, the distribution is not.
 
 ## The Relation to the Abelian Higgs
 
@@ -162,7 +162,7 @@ $$
 $$
 in the combination $A_{\imath}+\tfrac{1}{\kappa}\partial/\partial R_{\imath}\,\theta_{\mathrm{fld}}$, and it shifts under a local transformation. The Stueckelberg field is precisely this phase, and the Stueckelberg Lagrangian is what remains of the Higgs Lagrangian when the radial mode is **removed** — held at its vacuum value or given an infinite mass — so that only the phase, with its shift, survives:
 $$
-\xi=\frac{v}{\sqrt2}\exp(i\theta_{\mathrm{fld}})=\frac{v}{\sqrt2}\exp(-i\theta_{\mathrm{gau}}),
+\xi=\frac{v}{\sqrt2}\exp(i\theta_{\mathrm{fld}})=\frac{v}{\sqrt2}\exp(-i\theta_{\mathrm{cph}}),
 \qquad
 \theta_{\mathrm{fld}}=-\frac{\mu}{v}\,\xi ,
 $$
@@ -235,7 +235,7 @@ The mechanism as constructed is abelian. Its essential ingredient is that the sh
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The carrier: the Stueckelberg field as the central scalar $\tilde Q_5=\xi e_t\in\mathbb{B}_{C}$, and the vector as the material connection $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$. The local transformation and the invariant combination: $\tilde A_{\Phi,\mathrm u}=\tilde A_{\Phi}-\tilde\nabla_\Phi\xi$ is invariant under $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, $\xi_2=\xi-\Gamma$, checked on test fields. The invariant mass term as the biquaternion norm $-\tfrac12\mu^2\langle\tilde A_{\Phi,\mathrm u}\rangle_{\natural}$, with the sign of the Proca companion, and its reduction to Proca in the gauge $\xi=0$. The identification of the Stueckelberg scalar with the phase of the central scalar, hence with the would-be Goldstone mode of the abelian Higgs companion. The constraint structure: the scalar equation is the divergence of the vector equation, so the scalar is the longitudinal mode.
+**Supplied by the algebra, and recomputed here.** The carrier: the Stueckelberg field as the central scalar $\tilde Q_5=\xi e_t\in\mathbb{B}_{C}$, and the vector as the material connection $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$. The local transformation and the invariant combination: $\tilde A_{\Phi,\mathrm u}=\tilde A_{\Phi}-\tilde\nabla_\Phi\xi$ is invariant under $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, $\xi_2=\xi-\Gamma$, checked on test fields. The invariant mass term as the biquaternion norm $-\tfrac12\mu^2\langle\tilde A_{\Phi,\mathrm u}\rangle_{\natural}$, with the sign of the Proca companion, and its reduction to Proca in the representative $\xi=0$. The identification of the Stueckelberg scalar with the phase of the central scalar, hence with the would-be Goldstone mode of the abelian Higgs companion. The constraint structure: the scalar equation is the divergence of the vector equation, so the scalar is the longitudinal mode.
 
 **Imported, and left visible.** The Stueckelberg construction itself; the $R_\zeta$ fixing condition and the parameter independence of physical amplitudes; the degree-of-freedom count and the second-class constraint analysis, the latter from the Proca companion; the propagator and the $\zeta$-dependent scalar mass; the relation to the abelian Higgs and the limit in which the radial mode decouples; and the non-abelian extension with an adjoint scalar. All are standard and are cited as such.
 
@@ -251,7 +251,7 @@ is invariant — checked explicitly on test fields — and the Stueckelberg Lagr
 $$
 \mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\Phi,\mathrm u}\rangle_{\natural}
 $$
-is invariant for any $\Gamma$. Expanded and canonically normalized it is a massless vector, a massless scalar and a derivative mixing of strength $\mu$; the scalar's equation is the divergence of the vector's equation, so the scalar is the longitudinal mode. In the unitary fixing condition $\xi=0$ the Lagrangian reduces to Proca with three polarizations; in the $R_\zeta$ gauge $G=\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\zeta\mu^2\xi=0$ the scalar has an $\zeta$-dependent mass and the vector propagator
+is invariant for any $\Gamma$. Expanded and canonically normalized it is a massless vector, a massless scalar and a derivative mixing of strength $\mu$; the scalar's equation is the divergence of the vector's equation, so the scalar is the longitudinal mode. In the unitary fixing condition $\xi=0$ the Lagrangian reduces to Proca with three polarizations; in the $R_\zeta$ representative $G=\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\zeta\mu^2\xi=0$ the scalar has an $\zeta$-dependent mass and the vector propagator
 $$
 D_{\imath\jmath}(p)=-\frac{i}{N+\mu^{2}}\left(\delta_{\imath\jmath}+\frac{(\zeta-1)p_{\imath} p_{\jmath}}{N+\zeta\mu^{2}}\right)
 $$
@@ -276,10 +276,10 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $\mu$ | Stueckelberg mass (a parameter) |
 | $\sum_{\imath}\partial/\partial R_{\imath} F_{\imath\jmath}-\mu^2A_{\mathrm u,\jmath}=0$ | Vector equation of motion |
 | $\langle\tilde\nabla_\Phi,\tilde A_{\Phi,\mathrm u}\rangle_{\natural}=0$ | Scalar equation; the divergence of the vector equation |
-| $\xi=0$ | $*$-Unitary (Stueckelberg) gauge; reduces to Proca |
+| $\xi=0$ | $*$-Unitary (Stueckelberg) representative; reduces to Proca |
 | $G=\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\zeta\mu^2\xi$ | $R_\zeta$ fixing condition |
 | $\xi=\xi_{\mathrm{scl}}/\mu$ | Canonical normalization of the scalar |
-| $D_{\imath\jmath}(p)=-\dfrac{i}{N+\mu^{2}}\left(\delta_{\imath\jmath}+\dfrac{(\zeta-1)p_{\imath} p_{\jmath}}{N+\zeta\mu^{2}}\right)$ | Vector propagator in the $R_\zeta$ gauge; Proca at $\zeta\to\infty$ |
+| $D_{\imath\jmath}(p)=-\dfrac{i}{N+\mu^{2}}\left(\delta_{\imath\jmath}+\dfrac{(\zeta-1)p_{\imath} p_{\jmath}}{N+\zeta\mu^{2}}\right)$ | Vector propagator in the $R_\zeta$ representative; Proca at $\zeta\to\infty$ |
 | $m_\xi^2=\zeta\mu^2$ | Representative-dependent scalar mass |
 | $V=\beta(\xi^*\xi-v^2/2)^2$, $\vert\xi\vert=v/\sqrt2$ | Abelian Higgs potential and vacuum value |
 | $\mu=\kappa v=\frac{2\pi ϙ\,v}{h}$ | Higgs origin of the mass; $\kappa=\frac{2\pi ϙ}{h}$ |

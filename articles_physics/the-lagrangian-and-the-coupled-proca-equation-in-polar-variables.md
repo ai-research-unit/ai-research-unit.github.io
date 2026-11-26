@@ -109,11 +109,11 @@ The parameter basis is not the bracket basis. As in the free polar article, the 
 What the coupling adds. The connection is central, so it passes through $\tilde A_\Phi^{-1}$ and adds $\frac{2\pi iϙ}{h}A_\Phi$ to the logarithmic derivative, with a real temporal slot and central imaginary spatial slots. It therefore reaches the scale and phase brackets, leaves the boost and rotor brackets alone, and — entering as a shift and not as a factor — does not change the type pairing that produces the constraint.
 ## The Constraints the Action Imposes: The Local Transformation in the Chart
 
-The exact statement. For a constant central unit $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$,
+The exact statement. For a constant central unit $\digamma_{\mathrm{cph}}=\exp(i\vartheta_{\mathrm{cph}})$,
 
 $$
-\digamma_{\mathrm{gau}}\tilde A
-=\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\digamma_{\mathrm{cph}}\tilde A
+=\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{cph}})}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
 exactly, with the other seven parameters fixed: the local transformation is the translation of one coordinate. The numerical check is exact to $10^{-16}$.
@@ -219,7 +219,7 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 | $\tilde A_\Phi$, $A_{\imath}$ | The connection and its central components |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | The covariant derivative in the chart |
 | $\partial_{\imath}\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}A_{\imath}$ | The one gradient the connection shifts |
-| $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; translates $\theta_{\mathrm{pha}}$ |
+| $\digamma_{\mathrm{cph}}=\exp(i\vartheta_{\mathrm{cph}})$ | Central phase unit; translates $\theta_{\mathrm{pha}}$ |
 | $\rho_{\mathrm{chg}}=\partial\mathcal{L}/\partial(\partial_{r'_t}\theta_{\mathrm{pha}})$ | Charge density as the phase's conjugate momentum |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter |
@@ -233,7 +233,7 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 - [The Lagrangian and the Coupled Dirac Equation in Polar Variables](the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html), for the first-order companion and its constrained system.
 - [The Lagrangian and the Schrödinger Equation in Polar Variables](the-lagrangian-and-the-schrodinger-equation-in-polar-variables.html), for the standard Madelung case and the contrast.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its parameter count.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localization of the central phase.
 - [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html), for the frame's brackets as fluid variables.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor, the frame and the sigma-model reading of the kinetic term.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the standard coupled massive vector field.

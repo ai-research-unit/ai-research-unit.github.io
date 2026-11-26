@@ -77,7 +77,7 @@ The orbit. The action is invariant under the linearised diffeomorphism $h_{\imat
 
 The count. Ten components; four redundant directions; four constraints (the time-time and time-space equations, which are four conditions and not evolution equations); two remaining. The two are the transverse-traceless polarisations, and the parent's structural finding — that the single-biquaternion carrier is blind to exactly that part — is the statement that the algebra's naive carrier holds the trace and not the physics.
 
-**What the constraints are not.** They are not the de Donder condition. The de Donder condition $\partial_{\imath}\bar h_{k\imath}=0$ is a *choice of representative*, used above to shorten the variation; the constraints are the equations' own content and hold in every gauge. Mixing the two is the standard error, and the article separates them because the count depends on it.
+**What the constraints are not.** They are not the de Donder condition. The de Donder condition $\partial_{\imath}\bar h_{k\imath}=0$ is a *choice of representative*, used above to shorten the variation; the constraints are the equations' own content and hold in every representative. Mixing the two is the standard error, and the article separates them because the count depends on it.
 
 ## The Structural Consequence: The Count Needs Both, and the Algebra Sees Only One
 

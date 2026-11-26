@@ -195,7 +195,7 @@ $$
 ## Further Reading
 
 - *The Lagrangian and the Electroweak Theory*, for the same scalar inside the full connection action, its two phases and the vector masses.
-- *Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses*, for the mass matrix, the count and the couplings read from the masses rather than from the potential's derivatives.
+- *Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses*, for the mass matrix, the count and the couplings read from the masses rather than from the potential's derivatives.
 - *The Higgs Mechanism in Biquaternionic Form*, for the central scalar and the covariant derivative in the biquaternion algebra.
 - *The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form*, for the one-loop correction this article does not compute.
 - *The Landau Pole, Triviality and Vacuum Stability*, for the two bounds that follow from the running of $\varpi_{\mathrm{cpl}}$.

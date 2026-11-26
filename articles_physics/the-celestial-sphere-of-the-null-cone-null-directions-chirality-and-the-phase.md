@@ -107,7 +107,7 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 ## Further Reading
 
 - [Helicity in Biquaternionic Form](helicity-in-biquaternionic-form.html) — the massless momentum as a zero divisor, rank one as factorisability, the little group and the helicity weights.
-- [The Hopf Fibration and the Biquaternion Bundle](the-hopf-fibration-and-the-biquaternion-gauge-bundle.html) — the unit spinors over the sphere, the Hopf map and its winding numbers.
+- [The Hopf Fibration and the Biquaternion Bundle](the-hopf-fibration-and-the-biquaternion-bundle.html) — the unit spinors over the sphere, the Hopf map and its winding numbers.
 - [The Fubini–Study Geometry and the Biquaternion Norm](the-fubini-study-geometry-and-the-biquaternion-norm.html) — the metric of the projective line and the transition probability of the pure states.
 - [The Null Four-Momentum: What the Cone Derives and What Must Be Added](the-null-four-momentum-what-the-cone-derives-and-what-must-be-added.html) — the massless shell as the zero-divisor cone and the limits of the derivation.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html) — the central imaginary that carries a material element to the informational sector, where the rank-one Hermitian element lives.

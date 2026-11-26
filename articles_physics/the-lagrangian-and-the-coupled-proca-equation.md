@@ -67,16 +67,16 @@ $$
 
 which is the free article's mass term, sign included. The identity is exact. The coupled action is therefore an extension of the free one and not a replacement: set $ϙ=0$ and restrict to the material sector, and the free action returns with no residue.
 
-**The mass term is invariant.** Under $\tilde A\mapsto\digamma_{\mathrm{gau}}\tilde A$ with $\digamma_{\mathrm{gau}}$ central and $|\digamma_{\mathrm{gau}}|=1$,
+**The mass term is invariant.** Under $\tilde A\mapsto\digamma_{\mathrm{cph}}\tilde A$ with $\digamma_{\mathrm{cph}}$ central and $|\digamma_{\mathrm{cph}}|=1$,
 
 $$
 \mathrm{Sc}\bigl(\tilde A_2^{*}\tilde A_2^{\natural}\bigr)
-=\mathrm{Sc}\bigl(\bar\digamma_{\mathrm{gau}}\tilde A^{*}\digamma_{\mathrm{gau}}\tilde A^{\natural}\bigr)
-=\bar\digamma_{\mathrm{gau}}\digamma_{\mathrm{gau}}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)
+=\mathrm{Sc}\bigl(\bar\digamma_{\mathrm{cph}}\tilde A^{*}\digamma_{\mathrm{cph}}\tilde A^{\natural}\bigr)
+=\bar\digamma_{\mathrm{cph}}\digamma_{\mathrm{cph}}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)
 =\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr),
 $$
 
-because $\digamma_{\mathrm{gau}}$ is central, $\natural$ fixes it, and the two factors carry $\bar\digamma_{\mathrm{gau}}$ and $\digamma_{\mathrm{gau}}$. The check is exact to $10^{-15}$. This is the line the free article could not write: there the two factors of the mass term are the same factor, the phase would have to cancel against itself, and it cannot.
+because $\digamma_{\mathrm{cph}}$ is central, $\natural$ fixes it, and the two factors carry $\bar\digamma_{\mathrm{cph}}$ and $\digamma_{\mathrm{cph}}$. The check is exact to $10^{-15}$. This is the line the free article could not write: there the two factors of the mass term are the same factor, the phase would have to cancel against itself, and it cannot.
 
 **The field term is the Maxwell density on the material slice.** For a material field strength the component form of the free article applies unchanged, and
 
@@ -126,8 +126,8 @@ The element-form article proves that the curvature does not enter this trace, be
 **The consequence for the field term.** The symmetric pairing $\mathrm{Re\,Sc}(\tilde F\tilde F)$ is invariant under the phase only when the phase's square is one:
 
 $$
-\mathrm{Re\,Sc}\bigl(\digamma_{\mathrm{gau}}^{2}\tilde F\tilde F\bigr)\ne\mathrm{Re\,Sc}\bigl(\tilde F\tilde F\bigr)
-\qquad\text{for general }|\digamma_{\mathrm{gau}}|=1 ,
+\mathrm{Re\,Sc}\bigl(\digamma_{\mathrm{cph}}^{2}\tilde F\tilde F\bigr)\ne\mathrm{Re\,Sc}\bigl(\tilde F\tilde F\bigr)
+\qquad\text{for general }|\digamma_{\mathrm{cph}}|=1 ,
 $$
 
 and the drift over random draws is of the same order as the term itself. So the free article's field term is not the charged field's field term. The mass term has no such difficulty, and the asymmetry between the two terms is exact and is the article's first finding in its sharpest form.
@@ -140,7 +140,7 @@ $$
 \tilde F'=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\bigr),
 $$
 
-to $10^{-15}$ over random draws, because both halves acquire the same $\digamma_{\mathrm{gau}}$ and the conjugate half acquires $\bar\digamma_{\mathrm{gau}}$. That is the object a charged field term must be built from.
+to $10^{-15}$ over random draws, because both halves acquire the same $\digamma_{\mathrm{cph}}$ and the conjugate half acquires $\bar\digamma_{\mathrm{cph}}$. That is the object a charged field term must be built from.
 
 **What is not settled.** The invariant pairing's normalization is not the free article's, and on the material slice it does not reduce to $\tfrac12\mathrm{Re\,Sc}(\tilde F\tilde F)$ with a constant ratio: the ratio varies with the configuration. So the article cannot state the coupled field term in a form that is simultaneously invariant, real, of the Maxwell normalization, and reducing to the free one on the material slice. Something has to give, and the honest statement is that the algebra's single field strength is not the right carrier for a complex bivector's Lagrangian.
 
@@ -243,8 +243,8 @@ The constraint is the trace of the equation and the curvature does not enter it.
 - [The Lagrangian and the Coupled Proca Equation in Polar Variables](the-lagrangian-and-the-coupled-proca-equation-in-polar-variables.html), for the action in the chart.
 - [The Proca Equation: Massive Spin One in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the free field strength and the two polarizations.
 - [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html), for the first-order companion and for the current that is not a bilinear.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the four-current and the inhomogeneous equation.
 - [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), for the operator reading of $T_{\imath\jmath}$.
 - Alexandru Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," *Journal de Physique et le Radium* **7** (1936) 347–353.

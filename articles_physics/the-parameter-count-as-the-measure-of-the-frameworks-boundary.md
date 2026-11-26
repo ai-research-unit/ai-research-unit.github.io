@@ -31,10 +31,10 @@ Four claims follow.
 | 4–9 | $m_u$, $m_d$, $m_s$, $m_c$, $m_b$, $m_t$ | Quark masses | Flavour |
 | 10–12 | $\theta_{12}$, $\theta_{23}$, $\theta_{13}$ | CKM angles | Flavour |
 | 13 | $\delta$ | CKM phase | Flavour |
-| 14 | $g_{\mathrm Y}$ | Hypercharge coupling | Gauge |
-| 15 | $g$ | Weak coupling | Gauge |
-| 16 | $g_s$ | Strong coupling | Gauge |
-| 17 | $\theta_{\mathrm{QCD}}$ | Vacuum angle | Gauge |
+| 14 | $g_{\mathrm Y}$ | Hypercharge coupling | Condition |
+| 15 | $g$ | Weak coupling | Condition |
+| 16 | $g_s$ | Strong coupling | Condition |
+| 17 | $\theta_{\mathrm{QCD}}$ | Vacuum angle | Condition |
 | 18 | $v$ | Higgs expectation value | Scalar |
 | 19 | $M_H$ | Higgs mass | Scalar |
 
@@ -103,7 +103,7 @@ Each of the nineteen is one of five kinds of mathematical object, and the kinds 
 
 The counts add to nineteen, and the classification is exhaustive: a number in a Lagrangian is a coupling, a phase, an eigenvalue, or a scale, and the mixing angles are coordinates with no other home.
 
-The kinds matter more than the sectors. The sector split (flavour $13$, gauge $4$, scalar $2$) is about physics. The kind split is about what would have to be built. A group coordinate needs a group and a selection principle; a connection normalisation needs a connection and a normalisation principle; a central phase needs a topology and a value; an eigenvalue needs an operator and a spectral principle; a scale needs a mechanism that breaks dilatation invariance. Those are five different machines, and the framework has some of them and not others.
+The kinds matter more than the sectors. The sector split (flavour $13$, representative $4$, scalar $2$) is about physics. The kind split is about what would have to be built. A group coordinate needs a group and a selection principle; a connection normalisation needs a connection and a normalisation principle; a central phase needs a topology and a value; an eigenvalue needs an operator and a spectral principle; a scale needs a mechanism that breaks dilatation invariance. Those are five different machines, and the framework has some of them and not others.
 
 ## Eight With an Arena, Nine With an Eigenvalue, Two With Nothing
 
@@ -159,7 +159,7 @@ and the imported share is $19/22=86.4\%$. So the framework is not more parsimoni
 
 A reformulation that added parameters without fixing any would be a strictly worse description on the counting measure, The defence of the reformulation is not that it is smaller; it is that its objects are *geometric* — that a coupling is a connection coefficient, that a mass is an eigenvalue, that a phase is a central term — and that geometry is worth something even when it fixes nothing.
 
-One place the framework's parameters could bite: if $ϙ$ were related to one of the three connection couplings by a structural argument, the count would fall by one and the claim would be grade two — a relation. No such argument exists in the corpus, and the gauge article records that no relation binds $ϙ$ to a second coupling. So the relation count is zero.
+One place the framework's parameters could bite: if $ϙ$ were related to one of the three connection couplings by a structural argument, the count would fall by one and the claim would be grade two — a relation. No such argument exists in the corpus, and the connection article records that no relation binds $ϙ$ to a second coupling. So the relation count is zero.
 
 The three counts, assembled:
 
@@ -277,7 +277,7 @@ Four machines would reduce the count, and all are missing.
 
 The largest prize is the spectral one. A principle fixing the ten mass-like entries would take the count from $19$ to $9$ — a reduction of more than half — and it would be the single most consequential result available to any framework. It is also the hardest, for a reason the corpus has already established: a spectrum is a property of an operator on an infinite-dimensional space, and [the ceiling article](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) established that the algebra's modules have dimensions the physics does not use. A spectral principle would have to live somewhere the algebra does not reach.
 
-The cheapest prize is the coupling relation. Three couplings, one of which is the algebra's own $ϙ$. A relation $g_{\mathrm Y}=f(g)$ would be grade two, would reduce the count by one, and would be testable at the per-mille level by the electroweak fit. No such relation exists in the corpus, and the gauge article states why: the central charge is free and nothing binds it to a second one.
+The cheapest prize is the coupling relation. Three couplings, one of which is the algebra's own $ϙ$. A relation $g_{\mathrm Y}=f(g)$ would be grade two, would reduce the count by one, and would be testable at the per-mille level by the electroweak fit. No such relation exists in the corpus, and the connection article states why: the central charge is free and nothing binds it to a second one.
 
 No claim should be made that any of the four machines is "almost" there. The four are absent: the framework supplies the *arena* for four of the nineteen, the *operator* for nine more, and nothing for two, and the fixing of any of them requires machinery the articles have named and not built.
 

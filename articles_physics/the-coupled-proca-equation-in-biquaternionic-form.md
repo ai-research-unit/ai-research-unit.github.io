@@ -66,7 +66,7 @@ $$
 \tilde A_\Phi=A_te_t+\sum_{\imath\in\{x,y,z\}} A_{\imath}\vec e_{\imath},
 $$
 
-acting from the left. The sign pair is the minimal coupling's: $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$.
+acting from the left. The sign pair is the minimal coupling's: $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ and $\digamma_{\mathrm{cph}}=\exp(i\vartheta_{\mathrm{cph}})$, $\vartheta_{\mathrm{cph}}=\frac{2\pi ϙ\Gamma}{h}$.
 
 The connection is central per component in the abelian case. With $A_{\imath}$ scalar coefficients that commute with the units and with one another, the covariant derivative separates:
 
@@ -103,54 +103,54 @@ For a purely electric potential $\tilde A_\Phi^{\natural}=+\tilde A_\Phi$; for a
 The local transformation.
 
 $$
-\tilde A_2=\digamma_{\mathrm{gau}}\tilde A,
+\tilde A_2=\digamma_{\mathrm{cph}}\tilde A,
 \qquad
 \tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma,
 \qquad
-\digamma_{\mathrm{gau}}=\exp\bigl(i\vartheta_{\mathrm{gau}}\bigr),
+\digamma_{\mathrm{cph}}=\exp\bigl(i\vartheta_{\mathrm{cph}}\bigr),
 \qquad
 \Gamma\ \text{real},
 $$
 
-with $\digamma_{\mathrm{gau}}$ central and of unit modulus. The field transforms by multiplication and not by the inhomogeneous shift; the shift belongs to the connection. That division is the whole content of the phrase "the field is charged".
+with $\digamma_{\mathrm{cph}}$ central and of unit modulus. The field transforms by multiplication and not by the inhomogeneous shift; the shift belongs to the connection. That division is the whole content of the phrase "the field is charged".
 
-The chain rules. Because $\digamma_{\mathrm{gau}}$ is a central scalar function,
+The chain rules. Because $\digamma_{\mathrm{cph}}$ is a central scalar function,
 
 $$
-\tilde\nabla_\Phi\digamma_{\mathrm{gau}}=\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\digamma_{\mathrm{gau}},
+\tilde\nabla_\Phi\digamma_{\mathrm{cph}}=\frac{2\pi i\,ϙ}{h}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\digamma_{\mathrm{cph}},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\digamma_{\mathrm{gau}}=\frac{2\pi i\,ϙ}{h}\bigl((\tilde\nabla_\Phi)^{\natural}\Gamma\bigr)\digamma_{\mathrm{gau}},
+(\tilde\nabla_\Phi)^{\natural}\digamma_{\mathrm{cph}}=\frac{2\pi i\,ϙ}{h}\bigl((\tilde\nabla_\Phi)^{\natural}\Gamma\bigr)\digamma_{\mathrm{cph}},
 $$
 
-and $\natural$ leaves $\digamma_{\mathrm{gau}}$ alone, since $\natural$ negates the spatial units and fixes the coefficients.
+and $\natural$ leaves $\digamma_{\mathrm{cph}}$ alone, since $\natural$ negates the spatial units and fixes the coefficients.
 
 The first derivative is covariant.
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi,2}\bigl(\digamma_{\mathrm{gau}}\tilde A\bigr)
-=\tilde\nabla_\Phi\bigl(\digamma_{\mathrm{gau}}\tilde A\bigr)+\frac{2\pi i\,ϙ}{h}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Gamma\bigr)\digamma_{\mathrm{gau}}\tilde A
-=\digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde A .
+\tilde\nabla_{\mathrm{gco},\Phi,2}\bigl(\digamma_{\mathrm{cph}}\tilde A\bigr)
+=\tilde\nabla_\Phi\bigl(\digamma_{\mathrm{cph}}\tilde A\bigr)+\frac{2\pi i\,ϙ}{h}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Gamma\bigr)\digamma_{\mathrm{cph}}\tilde A
+=\digamma_{\mathrm{cph}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde A .
 $$
 
-The two $\tilde\nabla_\Phi\Gamma$ terms cancel and $\digamma_{\mathrm{gau}}$ passes to the left past the connection and past the field. The second derivative repeats the computation with $\natural$ throughout and gives $\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}(\digamma_{\mathrm{gau}}\tilde A)=\digamma_{\mathrm{gau}}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A$.
+The two $\tilde\nabla_\Phi\Gamma$ terms cancel and $\digamma_{\mathrm{cph}}$ passes to the left past the connection and past the field. The second derivative repeats the computation with $\natural$ throughout and gives $\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}(\digamma_{\mathrm{cph}}\tilde A)=\digamma_{\mathrm{cph}}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A$.
 
 The field strength is covariant.
 
 $$
-\tilde F_2=\digamma_{\mathrm{gau}}\tilde F,
+\tilde F_2=\digamma_{\mathrm{cph}}\tilde F,
 $$
 
 because $\mathrm{Vect}$ commutes with left multiplication by a central element and the antisymmetric part of a covariant gradient is covariant. This is the statement the free article had no occasion to make: the free field strength is invariant, the coupled one is *covariant*, and the difference is the charge.
 
-**The equation is covariant, massive as well as massless.** Both sides acquire one factor $\digamma_{\mathrm{gau}}$:
+**The equation is covariant, massive as well as massless.** Both sides acquire one factor $\digamma_{\mathrm{cph}}$:
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde F_2=\digamma_{\mathrm{gau}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde F,
+\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde F_2=\digamma_{\mathrm{cph}}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde F,
 \qquad
-4\pi^{2}\nu_m^2\tilde A_2=\digamma_{\mathrm{gau}}\,4\pi^{2}\nu_m^2\tilde A .
+4\pi^{2}\nu_m^2\tilde A_2=\digamma_{\mathrm{cph}}\,4\pi^{2}\nu_m^2\tilde A .
 $$
 
-The mass term is homogeneous because it is linear in the field; it is the *bilinear* mass term of the action that is invariant, and the two statements are consistent, since $\digamma_{\mathrm{gau}}\bar\digamma_{\mathrm{gau}}=1$. In the free article the mass term is quadratic in a real field and breaks the symmetry; here the field is complex, the mass term is quadratic in the field and its conjugate, and the symmetry survives. That single sign of bookkeeping is why a massive vector field can be coupled at all.
+The mass term is homogeneous because it is linear in the field; it is the *bilinear* mass term of the action that is invariant, and the two statements are consistent, since $\digamma_{\mathrm{cph}}\bar\digamma_{\mathrm{cph}}=1$. In the free article the mass term is quadratic in a real field and breaks the symmetry; here the field is complex, the mass term is quadratic in the field and its conjugate, and the symmetry survives. That single sign of bookkeeping is why a massive vector field can be coupled at all.
 
 ## The Field Strength Carries the Connection
 
@@ -175,7 +175,7 @@ $$
 
 The six real components of $\tilde F$ are the six field-strength components, and the medium normalization of the free article's display $\tilde F=i\vec E-c\vec B$ is carried by the coefficients.
 
-**The connection does not cancel, and this is the structural difference from the ordinary abelian curl.** For a neutral field strength built from a potential that shifts by a gradient, the connection terms cancel in the antisymmetric combination, because $D_{\imath} A_{\jmath}$ and $D_{\jmath} A_{\imath}$ carry the *same* connection coefficient. Here the potential is charged: it multiplies by $\digamma_{\mathrm{gau}}$ and the connection shifts, so the two statements are independent, and
+**The connection does not cancel, and this is the structural difference from the ordinary abelian curl.** For a neutral field strength built from a potential that shifts by a gradient, the connection terms cancel in the antisymmetric combination, because $D_{\imath} A_{\jmath}$ and $D_{\jmath} A_{\imath}$ carry the *same* connection coefficient. Here the potential is charged: it multiplies by $\digamma_{\mathrm{cph}}$ and the connection shifts, so the two statements are independent, and
 
 $$
 \tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)+\frac{2\pi i\,ϙ}{h}\mathrm{Vect}\bigl(\tilde A_\Phi^{\natural}\tilde A\bigr).
@@ -187,7 +187,7 @@ What the extra term is. It is the algebra's form of the term that distinguishes 
 
 The Bianchi identity is not available in the same form. For a neutral field strength the antisymmetric part of the gradient of the field strength vanishes identically, because partial derivatives commute. With the connection the corresponding statement carries the curvature, and this article does not need it: the Proca equation is first order in $\tilde F$ and does not use a Bianchi identity.
 
-What the free article's $\tilde F$ was. It was the same expression with the connection set to zero, and in that limit the extra term vanishes and the two terms of the display collapse. The free field strength is the $\vartheta_{\mathrm{gau}}=0$ slice of the coupled one, exactly as the free field is the real slice of the coupled one.
+What the free article's $\tilde F$ was. It was the same expression with the connection set to zero, and in that limit the extra term vanishes and the two terms of the display collapse. The free field strength is the $\vartheta_{\mathrm{cph}}=0$ slice of the coupled one, exactly as the free field is the real slice of the coupled one.
 
 ## The Lorenz Condition in Covariant Form
 
@@ -246,11 +246,11 @@ that is $E\mapsto E+ϙ c\,a'_t$ with $E=hf_{\mathrm{frq}}$. The numerical check 
 
 **The vector potential is not a shift.** For a purely magnetic constant potential, $\tilde C$ is a pure vector and does not commute with the units; the determinant is no longer a function of $\omega^2$, the two transverse roots separate, and the longitudinal root is the one the constraint fixes. The article records the structure and not a closed formula: the roots are the zeros of a $4\times4$ determinant and this article does not solve it in general.
 
-What a constant potential is. It has zero curvature, so it is pure gauge up to a constant, so its whole effect is the reparameterisation of the phase. That is why the scalar case is an exact shift and why the vector case is a change of basis rather than a change of spectrum. The statement is the polar companion's §*The Local Transformation Is a Phase Translation*, read in the element form.
+What a constant potential is. It has zero curvature, so it is pure representative up to a constant, so its whole effect is the reparameterisation of the phase. That is why the scalar case is an exact shift and why the vector case is a change of basis rather than a change of spectrum. The statement is the polar companion's §*The Local Transformation Is a Phase Translation*, read in the element form.
 
 ## The Current
 
-The phase symmetry exists now. The free article's §*No Second Current* argues that $\tilde A_\Phi\mapsto e^{i\alpha}\tilde A_\Phi$ leaves the material sector, since $i$ times an anti-Hermitian element is Hermitian. On the complex carrier the rotation is a symmetry of the equation: the mass term is invariant, the field strength is covariant with $\digamma_{\mathrm{gau}}$ constant, and the derivative is untouched.
+The phase symmetry exists now. The free article's §*No Second Current* argues that $\tilde A_\Phi\mapsto e^{i\alpha}\tilde A_\Phi$ leaves the material sector, since $i$ times an anti-Hermitian element is Hermitian. On the complex carrier the rotation is a symmetry of the equation: the mass term is invariant, the field strength is covariant with $\digamma_{\mathrm{cph}}$ constant, and the derivative is untouched.
 
 The Noether current.
 
@@ -322,12 +322,12 @@ The equation is standard. The algebra's contribution is the closure argument, th
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$ | Covariant derivative, left action |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\imath}=\partial/\partial R_{\imath}+\frac{2\pi iϙ}{h}A_{\imath}$ | Its central per-component form |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | Material time derivative |
-| $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; covariant with $\digamma_{\mathrm{gau}}$ |
+| $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; covariant with $\digamma_{\mathrm{cph}}$ |
 | $\tilde F_{\Phi}$ | Curvature of the connection |
 | $\tilde C=\frac{2\pi iϙ}{h}\tilde A_\Phi$ | The coupling element of a constant background |
 | $\nu_m=\frac{mc}{h}$ | Mass wave number |
 | $ϙ$ | Charge; a parameter of the framework |
-| $\digamma_{\mathrm{gau}}=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=\frac{2\pi ϙ\Gamma}{h}$ | Central central phase; $\Gamma$ real |
+| $\digamma_{\mathrm{cph}}=\exp(i\vartheta_{\mathrm{cph}})$, $\vartheta_{\mathrm{cph}}=\frac{2\pi ϙ\Gamma}{h}$ | Central phase; $\Gamma$ real |
 | $j_{\imath}=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A)$ | The charge current |
 
 ## Further Reading
@@ -335,8 +335,8 @@ The equation is standard. The algebra's contribution is the closure argument, th
 - [The Proca Equation: Massive Spin One in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the free equation, the field strength and the two polarizations.
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the two-factor word and the two brackets of the free field.
 - [The Coupled Proca Equation in Biquaternionic Polar Variables](the-coupled-proca-equation-in-biquaternionic-polar-variables.html), for the same statements in the chart.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the localization of the central phase.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), for the coupling that enters once rather than twice, and for the contrast between the two carriers.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the potential biquaternion and the four-current.
 - [The Lagrangian and the Coupled Proca Equation](the-lagrangian-and-the-coupled-proca-equation.html), for the action, the currents and the sign of the mass term.

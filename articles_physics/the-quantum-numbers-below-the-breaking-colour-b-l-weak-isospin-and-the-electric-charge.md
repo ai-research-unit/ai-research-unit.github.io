@@ -8,7 +8,7 @@
 
 $$
 \boxed{\;
-\text{a gauge charge is conserved}\iff\text{its generator annihilates the vacuum}
+\text{a symmetry charge is conserved}\iff\text{its generator annihilates the vacuum}
 \iff\text{it is in }\mathfrak h
 \iff\text{its boson is massless},
 \;}
@@ -35,7 +35,7 @@ $$
 
 **One condition, four equivalent statements, one proof.**
 
-**1.1 The statement.** Let $Q$ be a gauge generator and $Ξ_0$ the vacuum. Then $Q$ generates a symmetry of the vacuum if and only if $QΞ_0=0$.
+**1.1 The statement.** Let $Q$ be a symmetry generator and $Ξ_0$ the vacuum. Then $Q$ generates a symmetry of the vacuum if and only if $QΞ_0=0$.
 
 **1.2 The proof.** A symmetry of the vacuum means $e^{i\theta Q}Ξ_0=Ξ_0$ for all $\theta$, which for infinitesimal $\theta$ is $QΞ_0=0$. Conversely $QΞ_0=0$ integrates to the finite statement.
 
@@ -43,7 +43,7 @@ $$
 
 **1.4 The converse, and its warning.** A charge that does not annihilate the vacuum is not conserved. That is a strong statement: it says the corresponding current has a divergence proportional to the Goldstone field, and the charge is not a well-defined operator on the physical Hilbert space. The charge is not "approximately conserved"; it is not defined.
 
-**1.5 What the criterion does not cover.** It applies to gauge charges, and it is silent about global symmetries that are not gauged. Those are discussed in §*The Charges That Are Merely Accidental*, and their status is different in kind.
+**1.5 What the criterion does not cover.** It applies to symmetry charges, and it is silent about global symmetries that are not made local. Those are discussed in §*The Charges That Are Merely Accidental*, and their status is different in kind.
 
 ## The Table of Charges and Their Fates
 
@@ -84,11 +84,11 @@ $$
 
 **4.2 The transition does two things to it, and they must be told apart.** The colour part of the vacuum, $iD$, commutes with $B-L$: the corner is in the stabiliser, so the six generators that become heavy do not include it, and the sextet's $\pm\tfrac43$ are eigenvalues of a generator the colour step leaves alone. **The doublet part of the same vacuum does not commute with it.** That vacuum lies on the lepton line, where $B-L=-1$ and $T_{3R}=+\tfrac12$, so $[B-L,Ξ_0]=-Ξ_0\neq0$. **By the criterion of §*The Criterion*, $B-L$ is not conserved below $M_C$** — and by §1.4 it is not approximately conserved either: it is not defined.
 
-**4.3 What does annihilate the vacuum is hypercharge.** $Y=T_{3R}+\tfrac12(B-L)$ gives $\tfrac12-\tfrac12=0$ on that line, so $Y$ is the unbroken direction and $B-L$ alone is not. Below $M_C$ the exact gauge charges are colour, $Y$, and — below $v$ — $Q$. **The charge that survives in $B-L$'s place does so by accident**: $B$, because the renormalisable Lagrangian contains no operator that violates it once the leptoquarks are gone (§*The Charges That Are Merely Accidental*).
+**4.3 What does annihilate the vacuum is hypercharge.** $Y=T_{3R}+\tfrac12(B-L)$ gives $\tfrac12-\tfrac12=0$ on that line, so $Y$ is the unbroken direction and $B-L$ alone is not. Below $M_C$ the exact symmetry charges are colour, $Y$, and — below $v$ — $Q$. **The charge that survives in $B-L$'s place does so by accident**: $B$, because the renormalisable Lagrangian contains no operator that violates it once the leptoquarks are gone (§*The Charges That Are Merely Accidental*).
 
 **4.4 The eigenvalue is what does not move, and it is a different statement.** $B-L$ takes the same values at every scale — $-1$ on the lepton line, $\tfrac13$ on the three colour lines — because an eigenvalue is a property of an array and not of the vacuum, and no mixing between $W^{3}_{L}$, $W^{3}_{R}$ and $B'$ changes a diagonal entry of $B'$. **"The chain never renormalises $B-L$" is true; "$B-L$ is conserved below $M_C$" is false**, and the two are easy to run together because both are sentences about a number that stays put.
 
-**4.5 The breaking is wanted twice over, and it costs no Goldstone.** A Majorana mass for the right-handed neutrino carries $B-L=-2$, so it needs a vacuum that breaks the charge — and the transition supplies one. **That is the seesaw's licence, and it is the same vev that breaks $\mathrm{SU}(2)_R$** ([The Seesaw Mechanism](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html)). And because the broken direction was a direction of a *gauge* group above $M_C$, the would-be Goldstone is eaten: it is the longitudinal mode of the $Z_R$, whose mass $\tfrac58g^2v_C^2$ is the neutral sector's ([The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html)).
+**4.5 The breaking is wanted twice over, and it costs no Goldstone.** A Majorana mass for the right-handed neutrino carries $B-L=-2$, so it needs a vacuum that breaks the charge — and the transition supplies one. **That is the seesaw's licence, and it is the same vev that breaks $\mathrm{SU}(2)_R$** ([The Seesaw Mechanism](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html)). And because the broken direction was a direction of a *representative* group above $M_C$, the would-be Goldstone is eaten: it is the longitudinal mode of the $Z_R$, whose mass $\tfrac58g^2v_C^2$ is the neutral sector's ([The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html)).
 
 **4.6 Compared with the Standard Model.** There $B-L$ is an accidental global symmetry from the start and is never made local, and it is broken only by the Weinberg operator at dimension five. **Here it is a redundant direction above $M_C$, broken at $M_C$, and accidental below it** — the exact opposite order of statuses, with the same low-energy consequence, because the residual violation below $M_C$ is again of dimension five and suppressed by the same scale.
 
@@ -100,9 +100,9 @@ $$
 
 **5.2 The size of the violation.** Below $M_C$ the mediator is gone and the violation appears as dimension-six operators suppressed by $1/M_C^{2}$. So $B$ and $L$ are violated at low energy by an amount that is small because $M_C$ is large, not because a symmetry protects them.
 
-**5.3 Why there is no proton decay.** A proton decay operator needs a mediator that couples two quarks: a diquark. The gauge leptoquarks carry $B-L=\pm\tfrac43$, and a diquark coupling would need $B-L=\pm\tfrac23$, because two quarks have $B-L=\tfrac23$. The charge forbids the vertex, and the model contains no scalar with the right $B-L$ to supply it. The proton's stability is therefore a consequence of the charge of the leptoquarks, not of a baryon-number symmetry.
+**5.3 Why there is no proton decay.** A proton decay operator needs a mediator that couples two quarks: a diquark. The representative leptoquarks carry $B-L=\pm\tfrac43$, and a diquark coupling would need $B-L=\pm\tfrac23$, because two quarks have $B-L=\tfrac23$. The charge forbids the vertex, and the model contains no scalar with the right $B-L$ to supply it. The proton's stability is therefore a consequence of the charge of the leptoquarks, not of a baryon-number symmetry.
 
-**5.4 The honest qualification.** "No proton decay" means no dimension-six gauge-mediated decay in the minimal content. Operators of higher dimension, or new scalars, could change it, and the bound on $M_C$ from the operators that do exist is in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
+**5.4 The honest qualification.** "No proton decay" means no dimension-six connection-mediated decay in the minimal content. Operators of higher dimension, or new scalars, could change it, and the bound on $M_C$ from the operators that do exist is in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
 ## The Charges That Are Merely Accidental
 
@@ -110,7 +110,7 @@ $$
 
 **6.1 What "accidental" means.** A charge that is conserved because the renormalisable Lagrangian contains no operator violating it, given the field content and the local symmetries. It is not imposed; it follows.
 
-**6.2 The examples, and one that is not one.** Baryon number below $M_C$ is accidental: no renormalisable operator violates it once the leptoquarks are removed, and the leading violation is of dimension six. **Lepton number is not accidental here.** The right-handed neutrino is a gauge singlet below $M_C$, its Majorana mass carries $B-L=-2$, and the vacuum has already broken the charge that forbade it — so $L$ is broken at dimension three, with no suppression at all. **That is the seesaw, and it is why the neutrino mass is the one place the framework's broken charge shows.**
+**6.2 The examples, and one that is not one.** Baryon number below $M_C$ is accidental: no renormalisable operator violates it once the leptoquarks are removed, and the leading violation is of dimension six. **Lepton number is not accidental here.** The right-handed neutrino is a symmetry singlet below $M_C$, its Majorana mass carries $B-L=-2$, and the vacuum has already broken the charge that forbade it — so $L$ is broken at dimension three, with no suppression at all. **That is the seesaw, and it is why the neutrino mass is the one place the framework's broken charge shows.**
 
 **6.3 The warning.** An accidental charge has no reason to survive a change of content, and a model that relies on one is relying on the absence of a term rather than on a symmetry. **The proton's stability rests on one of these**, on $B$ below $M_C$, and §*$B$ and $L$ Separately* says why the resting is nevertheless firm: the forbidden vertex is forbidden by $B-L$, and $B-L$ is a direction of the symmetry group above the scale that would supply a diquark.
 
@@ -120,7 +120,7 @@ $$
 
 **One combination is violated by non-perturbative effects, and it is not $B-L$.**
 
-**7.1 The statement.** In the Standard Model the combination $B+L$ is violated by sphalerons while $B-L$ is not. The same holds here below $M_C$, because the field content and the symmetry group restricted to the Standard-Model factors are the same. **The anomalous statement is about the coefficients of the currents, not about the vacuum**, so the breaking of §4.2 does not touch it: the triangle coefficient of $B-L$ vanishes whether or not a vev carries the charge. What the breaking does change is the *kind* of protection — accidental rather than gauge — and the leading explicit violation is the dimension-five Weinberg operator, suppressed by the transition scale.
+**7.1 The statement.** In the Standard Model the combination $B+L$ is violated by sphalerons while $B-L$ is not. The same holds here below $M_C$, because the field content and the symmetry group restricted to the Standard-Model factors are the same. **The anomalous statement is about the coefficients of the currents, not about the vacuum**, so the breaking of §4.2 does not touch it: the triangle coefficient of $B-L$ vanishes whether or not a vev carries the charge. What the breaking does change is the *kind* of protection — accidental rather than representative — and the leading explicit violation is the dimension-five Weinberg operator, suppressed by the transition scale.
 
 **7.2 Why $B-L$ escapes.** Its current has vanishing anomaly coefficients. The triangle coefficient of $B-L$ cancels inside a generation for the same reason every other anomaly does, the trace $\operatorname{tr}_{\mathbf4}(B-L)=0$ over the four entries of the carrier. So the current is conserved even where it is only global, and the sphaleron has nothing to act on. Above $M_C$ the direction is inside a simple group and there is no separate current to discuss.
 
@@ -147,11 +147,11 @@ $$
 
 **8.2 Made local, broken, accidental.** $B-L$ is made local above $M_C$ and broken at $M_C$; $B$ is accidental below $M_C$ and violated at dimension six; $L$ is broken at dimension three by the right-handed neutrino's mass. **Three statuses, and the third is the one that produces a measured number**, because a dimension-three term is not suppressed (the seesaw article has it).
 
-**8.3 Broken and violated.** A broken gauge charge is not defined on the physical Hilbert space. A violated global charge is defined and its non-conservation is a computable rate. The words are not interchangeable, and §*The Criterion* is where the difference is made.
+**8.3 Broken and violated.** A broken symmetry charge is not defined on the physical Hilbert space. A violated global charge is defined and its non-conservation is a computable rate. The words are not interchangeable, and §*The Criterion* is where the difference is made.
 
 ## Summary
 
-**The criterion.** A gauge charge is conserved exactly when its generator annihilates the vacuum — the same condition as a massless boson.
+**The criterion.** A symmetry charge is conserved exactly when its generator annihilates the vacuum — the same condition as a massless boson.
 
 **The survivors.** $Q$ and colour, and with them $B$ by accident of the content. **$B-L$ is not one of them**: its eigenvalue is fixed at every scale, but the transition that breaks $\mathrm{SU}(2)_R$ breaks it, and the Majorana neutrino mass is the price and the payoff.
 
@@ -169,7 +169,7 @@ $$
 | $B-L$ | baryon number minus lepton number; a direction of $\mathrm{SU}(4)$, broken at $M_C$ |
 | $T_{3L}$, $T_{3R}$, $Y$ | the three broken Cartan charges |
 | $\mathfrak h$ | the algebra of conserved charges at a given stage |
-| $M^{2}_{XY}$ | the gauge mass matrix whose kernel is $\mathfrak h$ |
+| $M^{2}_{XY}$ | the connection mass matrix whose kernel is $\mathfrak h$ |
 | $\Delta B$, $\Delta L$ | the changes a leptoquark vertex would produce |
 
 ## Further Reading

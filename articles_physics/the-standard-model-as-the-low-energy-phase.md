@@ -37,12 +37,12 @@ The article *The Minimal Coupling in Biquaternionic Form* derives the framework'
 The centre of $\mathbb{B}$ is the complex scalar line $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and its $*$-unitary part is
 
 $$
-\mathrm{U}(1) \;=\; \{\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{cen}}) : \theta_{\mathrm{cen}} \in \mathbb{R}\} \;\subset\; \mathbb{B}_{C} .
+\mathrm{U}(1) \;=\; \{\digamma_{\mathrm{cph}} = \exp(i\theta_{\mathrm{cen}}) : \theta_{\mathrm{cen}} \in \mathbb{R}\} \;\subset\; \mathbb{B}_{C} .
 $$
 
 Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
-Because $\digamma_{\mathrm{gau}}$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ is invariant under the global phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$. Making the phase local, $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$, forces a connection with the transformation law
+Because $\digamma_{\mathrm{cph}}$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ is invariant under the global phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$. Making the phase local, $\digamma_{\mathrm{cph}} = \exp(i\theta_{\mathrm{cph}}\tilde{Q})$, forces a connection with the transformation law
 
 $$
 \tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
@@ -52,11 +52,11 @@ D = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi},
 D_{\imath} = \partial/\partial R_{\imath} +\frac{2\pi i\,ϙ}{h}A_{\imath},
 $$
 
-Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the connection angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
+Here $\theta_{\mathrm{cph}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the connection angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
 under which $D\tilde{Ξ}$ transforms by the phase factor. The field strength is the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ and satisfies the curvature identity $[D_{\imath},D_{\jmath}] =\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$. The abelian symmetry group is canonically attached to the algebra: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
 
-Two properties of this factor are as important for the article as the factor itself. First, the charge $ϙ$ is a parameter; the algebra does not fix it. Second, a central element acts as a scalar on the algebra: left multiplication by $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{cen}})$ multiplies every element by the same factor. A symmetry group drawn from the centre therefore assigns every element the same charge — it is vector-like and cannot distinguish left from right. This is established in *Chiral Fermions in the Biquaternion Framework*, and it is the reason the abelian factor as it stands cannot be weak hypercharge, which is chiral.
+Two properties of this factor are as important for the article as the factor itself. First, the charge $ϙ$ is a parameter; the algebra does not fix it. Second, a central element acts as a scalar on the algebra: left multiplication by $\digamma_{\mathrm{cph}} = \exp(i\theta_{\mathrm{cen}})$ multiplies every element by the same factor. A symmetry group drawn from the centre therefore assigns every element the same charge — it is vector-like and cannot distinguish left from right. This is established in *Chiral Fermions in the Biquaternion Framework*, and it is the reason the abelian factor as it stands cannot be weak hypercharge, which is chiral.
 
 ### The compact algebra inside the material sector
 
@@ -215,7 +215,7 @@ The electroweak part is developed on its own in *The Electroweak Pair in the Biq
 
 **The first reason is the charged current.** Reinstating parity would require a right-handed charged current of the same size as the observed one, and it is not there. The measured parity violation is maximal and not partial, so the two factors cannot be even approximately symmetric at the electroweak scale. This is the reason that is quoted, and it is the weakest of the four, because it is a statement about the vacuum rather than about the group.
 
-**The second is the right-handed neutrino.** For the right-handed electron to be a doublet it needs a partner, and the only candidate is a right-handed neutrino. That state is not required by the observed spectrum and has never been seen as a gauge state; it is allowed, and its mass is bounded from above only by cosmology. So the group costs a particle the low-energy content does not need.
+**The second is the right-handed neutrino.** For the right-handed electron to be a doublet it needs a partner, and the only candidate is a right-handed neutrino. That state is not required by the observed spectrum and has never been seen as a representative state; it is allowed, and its mass is bounded from above only by cosmology. So the group costs a particle the low-energy content does not need.
 
 **The third is structural, and it is the sharpest: the group forces the sixteen.** Electric charge in the frame is
 
@@ -232,7 +232,7 @@ $$
 hold on the sixteen and fail on the fifteen. The chain is then a sequence of implications rather than a choice:
 
 $$
-\text{gauge }\mathrm{SU}(2)_R\ \Longrightarrow\ \text{gauge }B-L\ \Longrightarrow\ \xi_{\mathrm{neu},R}\ \text{required}\ \Longrightarrow\ \text{matter is sixteen}.
+\text{representative }\mathrm{SU}(2)_R\ \Longrightarrow\ \text{representative }B-L\ \Longrightarrow\ \xi_{\mathrm{neu},R}\ \text{required}\ \Longrightarrow\ \text{matter is sixteen}.
 $$
 
 **A theory with half the group is free to be odd, and the observed one is odd.** The arithmetic is in [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation.html), and the count is in the content section below.
@@ -297,7 +297,7 @@ Not established: a chiral symmetry group. The framework's canonical symmetry gro
 
 ### Hypercharge is underived
 
-The Standard Model's hypercharge is a specific $\mathrm{U}(1)$ with a specific assignment table and a chiral action, and it is the ingredient that makes the electric charge $Ϙ = T_3 + Y$ and cancels the gauge and gravitational anomalies. The framework has a $\mathrm{U}(1)$ — the $*$-unitary centre — but the assignment table is not derivable from it, and no source in the series supplies one. The only abelian charge the framework possesses is a single parameter $ϙ$, the same for every element; the gauge principle supplies no second abelian direction, no non-central abelian action is available to it, and there is no anomaly computation from which an assignment could be inferred. **No route yet.** The eight-row check of §*Why the Standard Model Makes One Side Local and Not Two* does not change this: it is a consistency check inside an imported frame, and it begins from $B-L$ eigenvalues the frame assigns by hand.
+The Standard Model's hypercharge is a specific $\mathrm{U}(1)$ with a specific assignment table and a chiral action, and it is the ingredient that makes the electric charge $Ϙ = T_3 + Y$ and cancels the representative and gravitational anomalies. The framework has a $\mathrm{U}(1)$ — the $*$-unitary centre — but the assignment table is not derivable from it, and no source in the series supplies one. The only abelian charge the framework possesses is a single parameter $ϙ$, the same for every element; the minimal-coupling principle supplies no second abelian direction, no non-central abelian action is available to it, and there is no anomaly computation from which an assignment could be inferred. **No route yet.** The eight-row check of §*Why the Standard Model Makes One Side Local and Not Two* does not change this: it is a consistency check inside an imported frame, and it begins from $B-L$ eigenvalues the frame assigns by hand.
 
 ### The content is not selected — and what the framework supplies, counted
 
@@ -317,7 +317,7 @@ The Standard Model's masses come from one sector the sources this article builds
 
 The framework does point at what the sector would have to do. The mass selection rule says that a fermion with $ϙ_L\neq ϙ_R$ has no invariant bare mass, so a mass can arise only through a compensating field carrying the opposite charge $ϙ_L-ϙ_R$; the chiral article reads off the quantum numbers such a scalar must carry. That is a statement of the requirement, not a construction of the object. There is no dynamics that would give the scalar an expectation value, no potential whose minimum could break the symmetry, and no coupling to the sector that would give the weak bosons a mass. The framework's own mass term is the linear chiral pair, which conserves fermion number and breaks the axial symmetry; the algebra's real structure $\flat$ carries a separate conjugate pairing whose interpretation — Majorana-type or real-form Dirac — is open, and it is the pairing of a single fermion, not a symmetry-breaking sector.
 
-This is the largest single missing piece on the way from the gauge machinery to the Standard Model, and it is classified **no route yet**.
+This is the largest single missing piece on the way from the connection machinery to the Standard Model, and it is classified **no route yet**.
 
 ## The Items and Their Status
 
@@ -334,7 +334,7 @@ The table collects the article's items and sorts each into one of the three cate
 | Linear chiral mass with conserved vector $\mathrm{U}(1)$; real structure $\flat$ (antilinear) | Established; interpretation of $\flat$'s pairing (Majorana/Dirac) open | Decide the interpretation on the real structure |
 | Reality class of the non-abelian connection | **Known route** | Recompute the transformation for the mixed assignment ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_{\imath}$ Hermitian) and find a principle fixing the placement of $i$; or a no-go |
 | Non-abelian matter representation | **Known route** | Construct the action of the factor on the chosen matter field and verify $D_{2,\imath}(\tilde U\tilde{Ξ})=\tilde U D_{\imath}\tilde{Ξ}$ |
-| Gauge and gravitational anomalies of a chiral spectrum | **Known route** in standard field theory; no framework realisation | A biquaternion computation of the axial-current divergence or the triangle diagram |
+| Representative and gravitational anomalies of a chiral spectrum | **Known route** in standard field theory; no framework realisation | A biquaternion computation of the axial-current divergence or the triangle diagram |
 | Fixing the representative principle | **Known route** in standard field theory; no framework realisation | Reproduce the Faddeev–Popov or BV procedure in the algebra, or prove a no-go |
 | Electroweak mixing angle | **Known route, blocked** | Fix $\mathrm{U}(1)_Y$ and $SU(2)_L$ and the scalar from the framework's own structure, then compute the relative coupling |
 | $SU(2)_L$: chiral weak isospin | **No route yet** | A non-central compact action on the field under which the two values transform inequivalently; the chirality problem is upstream |
@@ -400,7 +400,7 @@ What is established is recalled: the abelian minimal coupling on the centre, wit
 What is not established is everything Standard-Model-specific.
 
 - **$\mathrm{U}(1)$.** The abelian group factor exists and is canonical, but it is vector-like on the field and supplies one charge, not a hypercharge assignment table. **No route yet.**
-- **$SU(2)$.** The compact algebra and its gauge machinery exist, but the factor acts vector-like, so it is not $SU(2)_L$; weak isospin is chiral and the chirality problem is unresolved. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, whose commutator algebra contains $\mathrm{SU}(2)$, is a coincidence of algebra, not a derivation of weak isospin. **No route yet.**
+- **$SU(2)$.** The compact algebra and its connection machinery exist, but the factor acts vector-like, so it is not $SU(2)_L$; weak isospin is chiral and the chirality problem is unresolved. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, whose commutator algebra contains $\mathrm{SU}(2)$, is a coincidence of algebra, not a derivation of weak isospin. **No route yet.**
 - **$SU(3)$.** Nothing derives a colour group or a three-valued internal structure; the dimension ceiling and the module-dimension parity forbid both on the present construction. **No route yet.**
 - **The product.** The framework's compact algebra $\mathrm{U}(2)$ is locally the electroweak direct sum $\mathrm{SU}(2)\oplus\mathrm{U}(1)$, but the abelian factor is vector-like, no hypercharge assignment is derived, and the relative coupling and mixing angle are unconstrained. The factors are present as a direct sum; the electroweak theory is not. The group-level statement — the quotient against the product, the parity lock, and the check of the observed hypercharge table — is *The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock*.
 - **The pair.** $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ is available at the element level and the observed group is its broken phase, with hypercharge as the survivor and the sixteen forced by the anomaly conditions. That chain is a comparison between two imported frames; it derives neither the group nor the assignment, and the charge formula being parity-symmetric is a statement about the numbers and not about the multiplets.
@@ -453,9 +453,9 @@ No section assumes a Standard Model structure. The three group factor are each s
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Group, the Two Sides, and Six Generators](su2l-times-su2r-two-sides-six-generators-one-group.html) — $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ built at the element level, its two modules, and the four roles it plays; §*Why the Standard Model Makes One Side Local and Not Two* above is where this audit uses it.
 - [The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html) — the electroweak part of this audit developed on its own: the algebra shared and the group not shared, the parity lock on the representations, the hypercharge table checked against it, and the pair's table of items.
-- [The Minimal coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian minimal coupling, the centre and its $*$-unitary part, the connection, the covariant derivative, and the origin of the $\mathrm{U}(1)$ factor this article follows.
-- [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the decomposition $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, the adjoint connection and curvature, the Bianchi identity, the invariant density, and the open reality-class gap.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the abelian connection whose non-abelian extension the parent builds.
+- [The Minimal coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html) — the abelian minimal coupling, the centre and its $*$-unitary part, the connection, the covariant derivative, and the origin of the $\mathrm{U}(1)$ factor this article follows.
+- [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html) — the immediate parent; the decomposition $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, the adjoint connection and curvature, the Bianchi identity, the invariant density, and the open reality-class gap.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html) — the abelian connection whose non-abelian extension the parent builds.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the field's chirality structure, the vector-like centre, the mass selection rule, the linear mass and the real structure, and the statement that the framework has no chiral symmetry group.
 
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) — the Dirac/Weyl/Majorana distinction, the real-structure interpretation, and the explicit statement that the chiral $SU(2)_L$ assignment is empirical input.

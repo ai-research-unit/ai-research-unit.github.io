@@ -97,7 +97,7 @@ One reading, stated and not adopted. That the parity lock be read as the framewo
 | A chiral action of the compact factor, $SU(2)_L$ and not the vector-like $\mathrm{SU}(2)$ | No route yet | A non-central action under which the two letters transform inequivalently |
 | The hypercharge values $Y$ of the multiplets | No route yet | A derivation of the table, or a no-go forcing it to be adjoined; the lock constrains parity only |
 | The relative coupling and the mixing angle $\theta_W$ | Blocked | A principle fixing the ratio of the two couplings on the framework's carrier |
-| The scalar of the pair, with its potential and its expectation value | Blocked | A gauge-charged scalar with a non-trivial invariant minimum |
+| The scalar of the pair, with its potential and its expectation value | Blocked | A connection-charged scalar with a non-trivial invariant minimum |
 | Empirical contact | Open | A prediction distinguishing the framework's group from the product |
 
 **The dependency, in one line.** The chiral action is upstream of everything: without it the compact factor is not weak isospin, and without weak isospin the pair is a direct sum of a vector-like phase and a vector-like rotation, which is a connection theory and not the electroweak theory. The lock is the one item independent of the chiral question, because it is a property of the group and not of the action.
@@ -133,10 +133,10 @@ The framework shares the Lie algebra of the electroweak pair, $\mathfrak{u}(2)=\
 - [$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group](su2l-times-su2r-two-sides-six-generators-one-group.html). The doubled group rather than the pair: where the two factors sit in the algebra, the two modules they can act on, and the four roles, of which only one is made local.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html) — the audit of the whole model, of which this article is the electroweak part.
 - [Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) — the sector's own boundary: the chiral obstacle, hypercharge, the scalar sector, fixing the representative.
-- [The Gauge Extension of the Central Phase: The Centre Bounds the Symmetry group](the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html) — the quotient, the kernel lattice, and the no-go that caps the group.
-- [The Electroweak Symmetry group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) — the table used in the check, the anomaly conditions and the three rays.
+- [The Extension of the Central Phase: The Centre Bounds the Symmetry group](the-extension-of-the-central-phase-the-centre-bounds-the-symmetry-group.html) — the quotient, the kernel lattice, and the no-go that caps the group.
+- [The Electroweak Symmetry group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html) — the table used in the check, the anomaly conditions and the three rays.
 - [Representation Is a Function of Spin](representation-is-a-function-of-spin.html) — why the representation is read from the carrier, and the one row in three that matches.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the two letters, the selection rule, and the absent chiral symmetry group.
-- [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the compact factor's full connection construction.
+- [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html) — the compact factor's full connection construction.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) — the ceiling, for the factor that is not there.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html) — why no larger group fixes the relative coupling.

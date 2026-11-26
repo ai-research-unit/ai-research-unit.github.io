@@ -15,7 +15,7 @@ What the article supplies, in four statements.
 
 The article is a reading and not a derivation. The covariant pair is [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), §*The Central Field in the Operator Setting*: the covariant continuity equation, the covariant Hamilton–Jacobi equation, and the statement that the quantum potential is unchanged. This article takes them and asks what the object is in fluid words.
 
-Conventions. The free companion's, and the coupled polar article's for the connection: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, so that $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$ and the potential energy enters as $-\varkappa\omicron_{\mathrm{pot}}$. Time is $t'$, the density is $\rho_{\mathrm{num}}=\varrho^{2}$, the action is $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The local transformation is $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real.
+Conventions. The free companion's, and the coupled polar article's for the connection: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, so that $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$ and the potential energy enters as $-\varkappa\omicron_{\mathrm{pot}}$. Time is $t'$, the density is $\rho_{\mathrm{num}}=\varrho^{2}$, the action is $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The local transformation is $\digamma_{\mathrm{cph}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real.
 
 ## The Word Collapses, and the Connection Joins the Phase
 
@@ -222,7 +222,7 @@ The stress identity, the absence of an equation of state and the non-dissipativi
 | $\vec\omega=\vec\nabla_\Phi\times\vec v$ | Vorticity; $\varkappa\vec B/m$ |
 | $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths |
 | $\digamma_{\mathrm{flx}}=\oint\vec A\cdot\mathrm{d}\vec l$ | Magnetic flux through a spanning surface |
-| $\digamma_{\mathrm{gau}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | Local transformation |
+| $\digamma_{\mathrm{cph}}=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ | Local transformation |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

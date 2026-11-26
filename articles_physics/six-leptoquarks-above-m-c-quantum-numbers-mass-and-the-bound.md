@@ -128,9 +128,9 @@ $$
 \Gamma\propto\frac{m_p^{11}}{M_X^{10}} .
 $$
 
-**Six extra powers on the rate, and they are the whole of the model's survival.** The two-body mode $p\to e^{+}\pi^{0}$ has no gauge contribution at any order, because its final state is two quarks and a lepton while the sector supplies one quark-to-lepton conversion at a time. **The channel to look for is $p\to e^{+}e^{+}e^{-}$, and it is far below reach.**
+**Six extra powers on the rate, and they are the whole of the model's survival.** The two-body mode $p\to e^{+}\pi^{0}$ has no connection contribution at any order, because its final state is two quarks and a lepton while the sector supplies one quark-to-lepton conversion at a time. **The channel to look for is $p\to e^{+}e^{+}e^{-}$, and it is far below reach.**
 
-**The one field that would change it.** A colour antitriplet coupling to two quarks — a diquark — gives dimension six from a single exchange. **The fifteen does not contain one**: its colour triplet carries $B-L=\pm\tfrac43$ and a $qq$ pair carries $+\tfrac23$, so the coupling violates the made local $B-L$. **A $(\mathbf{6},\mathbf1,\mathbf1)$ scalar would supply it, and the frame has none.** Add one and the bound becomes
+**The one field that would change it.** A colour antitriplet coupling to two quarks — a diquark — gives dimension six from a single exchange. **The fifteen does not contain one**: its colour triplet carries $B-L=\pm\tfrac43$ and a $qq$ pair carries $+\tfrac23$, so the coupling violates the local $B-L$. **A $(\mathbf{6},\mathbf1,\mathbf1)$ scalar would supply it, and the frame has none.** Add one and the bound becomes
 
 $$
 M_\Sigma\gtrsim1.60\times10^{5}\ \mathrm{J}=10^{15}\ \mathrm{GeV}=10^{12}\ \mathrm{TeV},
@@ -192,13 +192,13 @@ Heavy is not gone. The transition converts six massless directions into six vect
 
 The flavour bound is not a measurement. It is a floor on the scale, with a coefficient uncertain by a factor of a few (*The Bound*).
 
-Proton decay does not bind the sector. It binds it only if a diquark is added, and the fifteen has none; the leading gauge operator is dimension nine (*Why Proton Decay Does Not Bite*).
+Proton decay does not bind the sector. It binds it only if a diquark is added, and the fifteen has none; the leading connection operator is dimension nine (*Why Proton Decay Does Not Bite*).
 
 Matching dimensions is not matching physics. Six for six is a coincidence of dimension and a failure of charge (*What the Sextet Does Not Do*).
 
 ## Summary
 
-**Identity.** $\mathfrak m=\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$: six states, $Q=\pm\tfrac23$, colour triplet or antitriplet, $B-L=\pm\tfrac43$. Forced by the made local fourth colour, and the only coloured massive vectors in the theory — massive below $M_C$.
+**Identity.** $\mathfrak m=\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$: six states, $Q=\pm\tfrac23$, colour triplet or antitriplet, $B-L=\pm\tfrac43$. Forced by the local fourth colour, and the only coloured massive vectors in the theory — massive below $M_C$.
 
 **Fate.** Massless above $M_C$, eaten at the transition, heavy below it. Two registers of one event, not two claims.
 

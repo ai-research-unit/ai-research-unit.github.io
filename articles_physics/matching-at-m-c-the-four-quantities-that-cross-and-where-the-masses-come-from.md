@@ -29,7 +29,7 @@ $$
 
 **Not established.** The numerical value of the mega coupling. **It is fixed by a boundary condition the corpus already says fails, and that is the corpus's defect rather than one introduced here.** The migration is about origins rather than about unification.
 
-**Where the rest is.** The construction that produces the group at $M_C$ is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The breaking that produces the colour factor is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The sextet's mass and bound are [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). **Everything below the matching is the existing corpus**, beginning with §*The Scale Ledger* below and continuing with [The Mass Matrix of the Fifteen Gauge Bosons](the-mass-matrix-of-the-fifteen-gauge-bosons-the-u3-kernel-and-the-sextet.html).
+**Where the rest is.** The construction that produces the group at $M_C$ is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The breaking that produces the colour factor is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The sextet's mass and bound are [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). **Everything below the matching is the existing corpus**, beginning with §*The Scale Ledger* below and continuing with [The Mass Matrix of the Fifteen Connections](the-mass-matrix-of-the-fifteen-connections-the-u3-kernel-and-the-sextet.html).
 
 ## The Interface: Four Quantities Cross, and One Number Is Matched
 
@@ -170,7 +170,7 @@ $$
 | the mass, the bound and the diquark fork | [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) |
 | the scalar that does the breaking | [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) |
 
-**The two counts that are easy to confuse.** The scalar content is a quartet-doublet and a left doublet, $16+4=20$ real, with the quartet's own doublet index breaking the right factor; nine components are eaten at $M_C$ and three at $v$, $12$ in all, leaving $8$. **The fifteen of the grid are the model's whole gauge content**, and the six that arrive with the doublet index are not vectors of the group above $M_C$: they are the weak sector's, counted below it. The census is [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html)'s, counted once and cited here. **The vacuum $\operatorname{diag}(-3,1,1,1)$, the fifteen arrays, the eigenvalues, the counts and the bounds are the same throughout.**
+**The two counts that are easy to confuse.** The scalar content is a quartet-doublet and a left doublet, $16+4=20$ real, with the quartet's own doublet index breaking the right factor; nine components are eaten at $M_C$ and three at $v$, $12$ in all, leaving $8$. **The fifteen of the grid are the model's whole connection content**, and the six that arrive with the doublet index are not vectors of the group above $M_C$: they are the weak sector's, counted below it. The census is [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html)'s, counted once and cited here. **The vacuum $\operatorname{diag}(-3,1,1,1)$, the fifteen arrays, the eigenvalues, the counts and the bounds are the same throughout.**
 
 ## The Checks
 

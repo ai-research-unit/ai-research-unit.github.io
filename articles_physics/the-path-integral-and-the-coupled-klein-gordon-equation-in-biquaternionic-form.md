@@ -74,7 +74,7 @@ For fixed connection the exponent is quadratic in the field. Every term of the s
 
 ## The Measure and Local Invariance
 
-The transformation is a rotation at each point. Write $\tilde\Xi\mapsto e^{iϑ_{\mathrm{gau}}}\tilde\Xi$ with $ϑ_{\mathrm{gau}}=\frac{2\pi ϙ\Lambda}{h}$ and $\Lambda$ real. At one point the field is two real numbers, and the transformation rotates the pair by the angle $ϑ_{\mathrm{gau}}(x)$. A rotation has unit determinant, so the flat measure $\prod_x\mathrm{d}\Xi_1\mathrm{d}\Xi_2$ is invariant with no Jacobian at all. The measure's invariance is the statement that a local phase is orthogonal.
+The transformation is a rotation at each point. Write $\tilde\Xi\mapsto e^{iϑ_{\mathrm{cph}}}\tilde\Xi$ with $ϑ_{\mathrm{cph}}=\frac{2\pi ϙ\Lambda}{h}$ and $\Lambda$ real. At one point the field is two real numbers, and the transformation rotates the pair by the angle $ϑ_{\mathrm{cph}}(x)$. A rotation has unit determinant, so the flat measure $\prod_x\mathrm{d}\Xi_1\mathrm{d}\Xi_2$ is invariant with no Jacobian at all. The measure's invariance is the statement that a local phase is orthogonal.
 
 The lattice version, and the one technical requirement. On a lattice the covariant difference between neighbouring sites must carry the phase as an exponential and not as a linear term. A link $U_{j}=e^{i(\Lambda_{j}-\Lambda_{j+1})}$ makes the determinant of the quadratic form equal to the free one exactly: the ratio of determinants for a random pure gradient link field on six sites is $1.00000000000000$. The linearised link $U_j=1+i(\Lambda_j-\Lambda_{j+1})$ gives a ratio of $22.15$ on the same configuration. **The invariance is exact for the Wilson link and approximate for the linear one**, and the difference is the difference between a local transformation of the lattice and its first-order shadow.
 
@@ -219,8 +219,8 @@ The current is the first variation of the integral with respect to the connectio
 - [The Coupled Klein–Gordon Equation in Biquaternionic Form](the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the covariant square's split, the prohibition on central fields in a nonzero field strength, and the two readings.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the amplitude and transport equations that the integral's saddles reproduce.
 - [The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same integral read in the chart, where the local transformation is a translation of one coordinate.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the covariant derivative and the sign convention.
-- [The Connection Path Integral in Biquaternionic Form](the-gauge-field-path-integral-in-biquaternionic-form.html), for the integral over the connection, which this article holds fixed.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the covariant derivative and the sign convention.
+- [The Connection Path Integral in Biquaternionic Form](the-connection-path-integral-in-biquaternionic-form.html), for the integral over the connection, which this article holds fixed.
 - J. Glimm and A. Jaffe, *Quantum Physics: A Functional Integral Point of View* (Springer, 1987), for the lattice definition of a scalar functional integral and the role of the link variable.
 - K. G. Wilson, "Confinement of Quarks", *Physical Review D* 10 (1974), 2445, for the lattice link variable and the exact local invariance it carries.
 - S. Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the background-field method and the Ward identities of an abelian connection theory.

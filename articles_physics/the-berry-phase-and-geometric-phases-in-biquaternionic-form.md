@@ -43,7 +43,7 @@ $$
 
 The right-hand side is a line integral of a one-form on parameter space; it does not refer to the rate at which the path is traversed. Replacing $R(r'_t)$ by a reparametrization of the same curve leaves $\gamma_n$ unchanged, while the dynamical phase $-\frac{2\pi}{h}\int  E_n\,dr'_t$ scales with the duration. This is the precise sense in which the second phase is **geometric** and the first is not; the speed-independence is checked explicitly on the example below.
 
-The eigenstate is defined only up to a phase, so the integrand is not an invariant object by itself. Writing $|n\rangle \mapsto \exp(i\theta_{\mathrm{gau}}(R))|n\rangle$ for a real function $\theta_{\mathrm{gau}}$ whose phase factor $\exp(i\theta_{\mathrm{gau}})$ is single-valued, the phase acquired around a **closed** loop shifts by
+The eigenstate is defined only up to a phase, so the integrand is not an invariant object by itself. Writing $|n\rangle \mapsto \exp(i\theta_{\mathrm{cph}}(R))|n\rangle$ for a real function $\theta_{\mathrm{cph}}$ whose phase factor $\exp(i\theta_{\mathrm{cph}})$ is single-valued, the phase acquired around a **closed** loop shifts by
 
 $$
 \oint \nabla_R\alpha\cdot dR = 2\pi k , \qquad k \in \mathbb{Z},
@@ -137,12 +137,12 @@ $$
 
 The first term is the conjugate of the second (complex conjugation in $\mathbb{B}_{C}$ reverses the order inside the scalar part), so $\mathrm{Sc}(\tilde{Ξ}^{\dagger}\partial/\partial R_{\imath}\tilde{Ξ})$ is purely imaginary and $i$ times it is real. The connection is therefore a **real one-form** on parameter space. It is not an element of $\mathbb{B}_{\Phi}$ and not a biquaternion: it is a real number attached to each direction in parameter space.
 
-**Local transformation.** Let $\theta_{\mathrm{gau}}(R)$ be a real function and let $\tilde{Ξ} \mapsto \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ}$. Because $\exp(i\theta_{\mathrm{gau}})$ is central and $*$-unitary, it multiplies $\tilde{Ξ}$ from the left without ordering ambiguity, and
+**Local transformation.** Let $\theta_{\mathrm{cph}}(R)$ be a real function and let $\tilde{Ξ} \mapsto \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{cph}})\tilde{Ξ}$. Because $\exp(i\theta_{\mathrm{cph}})$ is central and $*$-unitary, it multiplies $\tilde{Ξ}$ from the left without ordering ambiguity, and
 
 $$
 \begin{aligned}
 \mathrm{Sc}\!\left(\tilde{Ξ}_{2}^{\dagger}\partial/\partial R_{\imath}\tilde{Ξ}_{2}\right)
-&= \mathrm{Sc}\!\left(\exp(-i\theta_{\mathrm{gau}})\tilde{Ξ}^{\dagger}\left(i\,\partial/\partial R_{\imath}\theta_{\mathrm{gau}}\,\exp(i\theta_{\mathrm{gau}})\tilde{Ξ} + \exp(i\theta_{\mathrm{gau}})\partial/\partial R_{\imath}\tilde{Ξ}\right)\right) \\
+&= \mathrm{Sc}\!\left(\exp(-i\theta_{\mathrm{cph}})\tilde{Ξ}^{\dagger}\left(i\,\partial/\partial R_{\imath}\theta_{\mathrm{cph}}\,\exp(i\theta_{\mathrm{cph}})\tilde{Ξ} + \exp(i\theta_{\mathrm{cph}})\partial/\partial R_{\imath}\tilde{Ξ}\right)\right) \\
 &= i\,\partial/\partial R_{\imath}\alpha\;\mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger}\tilde{Ξ}\right) + \mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger}\partial/\partial R_{\imath}\tilde{Ξ}\right).
 \end{aligned}
 $$
@@ -151,20 +151,20 @@ Dividing by the norm and multiplying by $i$ gives
 
 $$
 \boxed{\;\mathcal{A}_{2,\imath} = \mathcal{A}_{\imath} - \partial/\partial R_{\imath}\alpha\;}
-\qquad\text{for}\qquad \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ} .
+\qquad\text{for}\qquad \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{cph}})\tilde{Ξ} .
 $$
 
 This is the transformation law of an **abelian connection**. It is the same law as the electromagnetic local transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ of *The Minimal Coupling in Biquaternionic Form*, and the same law as the electromagnetic Berry connection of the standard theory. The rest of this section makes the analogy precise and states its limits.
 
 ### Why the Analogy Is Structural and Not Decorative
 
-The minimal coupling article derives its abelian connection from a precise algebraic object: the **centre** $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta_{\mathrm{cen}})\}$, with $\theta_{\mathrm{cen}}$ the real central angle. The phase $\digamma_{\mathrm{gau}} = \exp(i\theta_{\mathrm{gau}})$ it localizes is a **central $*$-unitary element**. The rephasing $\exp(i\theta_{\mathrm{gau}})$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,
+The minimal coupling article derives its abelian connection from a precise algebraic object: the **centre** $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta_{\mathrm{cen}})\}$, with $\theta_{\mathrm{cen}}$ the real central angle. The phase $\digamma_{\mathrm{cph}} = \exp(i\theta_{\mathrm{cph}})$ it localizes is a **central $*$-unitary element**. The rephasing $\exp(i\theta_{\mathrm{cph}})$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,
 
 $$
 \mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C}) \subset \mathbb{B}_{C} \subset \mathbb{B} ,
 $$
 
-Here $\theta_{\mathrm{gau}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the connection angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
+Here $\theta_{\mathrm{cph}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the connection angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
 
 and the same additive transformation law. In this precise sense the Berry connection is a connection **of the same type** as the one the framework supplies for electromagnetism. What differs is everything else:
 
@@ -177,7 +177,7 @@ and the same additive transformation law. In this precise sense the Berry connec
 | Transformation | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | $\mathcal{A}_2 = \mathcal{A} - d\alpha$ |
 | Curvature | $\tilde{F} = \mathrm{Vect}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right)$, $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath}$ | $\mathcal{F}_{\imath\jmath} = \partial/\partial R_{\imath}\mathcal{A}_{\jmath} - \partial/\partial R_{\jmath}\mathcal{A}_{\imath}$ |
 
-The two connections share their structure group, their transformation law, and their definition of curvature; they are not the same field. The Berry connection is not obtained from $\tilde{A}_{\Phi}$, does not live on spacetime, and is not $\mathbb{B}_{\Phi}$-valued. It is literally the standard Berry connection, and its relation to the framework's electromagnetic connection is an analogy — an exact analogy of gauge-theoretic type, but an analogy nonetheless. The question is returned to in the section *What the Framework Supplements and What Is Only Analogy*.
+The two connections share their structure group, their transformation law, and their definition of curvature; they are not the same field. The Berry connection is not obtained from $\tilde{A}_{\Phi}$, does not live on spacetime, and is not $\mathbb{B}_{\Phi}$-valued. It is literally the standard Berry connection, and its relation to the framework's electromagnetic connection is an analogy — an exact analogy of connection-theoretic type, but an analogy nonetheless. The question is returned to in the section *What the Framework Supplements and What Is Only Analogy*.
 
 ### The Integer Ambiguity
 
@@ -190,7 +190,7 @@ $$
 = \gamma - \oint_{\mathcal{C}} d\alpha .
 $$
 
-If $\exp(i\theta_{\mathrm{gau}})$ is single-valued on the loop, the last integral is $2\pi k$ for some integer $k$, the winding number of $\exp(i\theta_{\mathrm{gau}})$ around the loop. A single-valued rephasing of the eigenstate therefore shifts the closed-loop phase by $2\pi k$ and nothing more, so the **invariant content is the phase modulo $2\pi$**. This is the first of the article's traps, and it is now a statement about the transition functions of a $\mathrm{U}(1)$ bundle rather than about the arbitrariness of a wave function. The curvature below is the object that removes the ambiguity at the level of the integrand.
+If $\exp(i\theta_{\mathrm{cph}})$ is single-valued on the loop, the last integral is $2\pi k$ for some integer $k$, the winding number of $\exp(i\theta_{\mathrm{cph}})$ around the loop. A single-valued rephasing of the eigenstate therefore shifts the closed-loop phase by $2\pi k$ and nothing more, so the **invariant content is the phase modulo $2\pi$**. This is the first of the article's traps, and it is now a statement about the transition functions of a $\mathrm{U}(1)$ bundle rather than about the arbitrariness of a wave function. The curvature below is the object that removes the ambiguity at the level of the integrand.
 
 ## The Berry Curvature
 
@@ -284,13 +284,13 @@ The equator, $\theta_0 = \pi/2$, is the case $\gamma_+ = -\pi$; the half-angle f
 
 **Speed independence.** Replacing the uniform rotation $\theta_{\mathrm{azm}} = \omega r'_t/c$ by a non-uniform $\theta_{\mathrm{azm}}(r'_t) = 2\pi(r'_t/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_{\theta_{\mathrm{azm}}}\,d\theta_{\mathrm{azm}}$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\theta_{\mathrm{sol}}/2$ generally. The dynamical phase over the same period is $-\frac{2\pi}{h}\int_0^T  \frac{R}{2}\,dr'_t = -\frac{R\,T}{2\,\frac{h}{2\pi}}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".
 
-**The $2\pi$ ambiguity, exhibited.** The spin-down branch makes the patch structure visible. In the gauge adapted to the north pole the spin-down connection is
+**The $2\pi$ ambiguity, exhibited.** The spin-down branch makes the patch structure visible. In the representative adapted to the north pole the spin-down connection is
 
 $$
 \mathcal{A}_{\theta_{\mathrm{azm}}}^{(-)} = +\frac{1-\cos\theta}{2} ,
 $$
 
-giving $\gamma_- = +\theta_{\mathrm{sol}}/2$. In the gauge adapted to the south pole the same band has $\mathcal{A}_{\theta_{\mathrm{azm}}}^{(-)} = -\cos^2(\theta/2)$, which differs from the first by exactly $1$. Around the equator loop the two expressions give phases differing by $2\pi$: $+\pi$ against $-\pi$. Both are legitimate local descriptions of the same band, they differ by the non-single-valued phase $\exp(-i\theta_{\mathrm{azm}})$ on the overlap, and they define the same curvature, $+\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$. The physical content is the pair of statements $\gamma_- - \gamma_+ = \theta_{\mathrm{sol}}$ and $\gamma_\pm$ defined modulo $2\pi$; stating either phase as a single absolute real number requires choosing a patch, and the choice is not physical. This is the first trap of the introduction, made concrete.
+giving $\gamma_- = +\theta_{\mathrm{sol}}/2$. In the representative adapted to the south pole the same band has $\mathcal{A}_{\theta_{\mathrm{azm}}}^{(-)} = -\cos^2(\theta/2)$, which differs from the first by exactly $1$. Around the equator loop the two expressions give phases differing by $2\pi$: $+\pi$ against $-\pi$. Both are legitimate local descriptions of the same band, they differ by the non-single-valued phase $\exp(-i\theta_{\mathrm{azm}})$ on the overlap, and they define the same curvature, $+\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$. The physical content is the pair of statements $\gamma_- - \gamma_+ = \theta_{\mathrm{sol}}$ and $\gamma_\pm$ defined modulo $2\pi$; stating either phase as a single absolute real number requires choosing a patch, and the choice is not physical. This is the first trap of the introduction, made concrete.
 
 **What was checked, and on what case.** The spinor normalization $2\,\mathrm{Sc}(\tilde{Ξ}_{+}^{\dagger}\tilde{Ξ}_{+}) = 1$; the reproduction $\tilde{Ξ}_{+}\tilde{Ξ}_{+}^{\dagger} = \tilde\Pi_{\mathrm{id},1}(\vec u_R)$ of the idempotent; the eigenvalue equation $\tilde H_\Psi\tilde{Ξ}_{+} = \tfrac{R}{2}\tilde{Ξ}_{+}$; the spectral decomposition $\tilde H_\Psi = \tfrac{R}{2}\tilde\Pi_{\mathrm{id},1} - \tfrac{R}{2}\tilde\Pi_{\mathrm{id},2}$; the connection components above; the curvature; the two routes and their agreement on the five loops; the speed independence on a non-uniform reparametrization; and the $2\pi$ shift between the two patches of the spin-down band. All were recomputed in exact arithmetic from the quaternion multiplication rules, and the two-route agreement was in addition recomputed independently by numerical quadrature. No formula in this article rests on a single case chosen to fit it.
 
@@ -310,7 +310,7 @@ $$
 \boxed{\;C_+ = \frac{1}{2\pi}\int_{S^2}\mathcal{F} = -1\;}
 $$
 
-For the spin-down branch, in the gauge adapted to the north pole, the curvature is $+\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$ and $C_- = +1$. The two curvatures are equal and opposite at every point,
+For the spin-down branch, in the representative adapted to the north pole, the curvature is $+\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$ and $C_- = +1$. The two curvatures are equal and opposite at every point,
 
 $$
 \mathcal{F}^{(+)} + \mathcal{F}^{(-)} = 0 ,
@@ -392,7 +392,7 @@ $$
 
 and under the isomorphism this is the standard expression $i\langle\tilde{Ξ}|\partial/\partial R_{\imath}\tilde{Ξ}\rangle/\langle\tilde{Ξ}|\tilde{Ξ}\rangle$ on $\mathbb{C}^2$. No new field is introduced and no new phase is predicted: the biquaternion article and the standard article compute the same numbers, as the two-route check on the rotating field demonstrates. The framework's contribution to the *object* is notational.
 
-**The relation to the framework's own connection is an analogy.** The abelian connection $\tilde{A}_{\Phi}$ of *The Minimal Coupling in Biquaternionic Form* is a biquaternion-valued field on spacetime, obtained from localizing the central phase symmetry of a field equation. The Berry connection is a real one-form on parameter space, obtained from the rephasing freedom of an instantaneous eigenstate. They are of the same *gauge type* — same structure group $\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C})$, same transformation law, same curvature definition — but they are different objects on different base spaces, and the framework does not identify them. Anyone who reads the shared $\mathrm{U}(1)$ as an identity has read more than is there.
+**The relation to the framework's own connection is an analogy.** The abelian connection $\tilde{A}_{\Phi}$ of *The Minimal Coupling in Biquaternionic Form* is a biquaternion-valued field on spacetime, obtained from localizing the central phase symmetry of a field equation. The Berry connection is a real one-form on parameter space, obtained from the rephasing freedom of an instantaneous eigenstate. They are of the same *connection type* — same structure group $\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C})$, same transformation law, same curvature definition — but they are different objects on different base spaces, and the framework does not identify them. Anyone who reads the shared $\mathrm{U}(1)$ as an identity has read more than is there.
 
 What the framework does supply, beyond the rewriting, is a set of structural placements.
 
@@ -400,7 +400,7 @@ What the framework does supply, beyond the rewriting, is a set of structural pla
 - **One pairing for the Born rule and the connection.** Both $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\tilde H_\Psi^{*})$ and $\mathcal{A}_{\imath}$ are built from the Hermitian form of the state module, read through the scalar part; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.
 - **The structure group is already in the algebra.** The $\mathrm{U}(1)$ of the Berry phase is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same group, in the same algebra, that the minimal coupling article attaches to electromagnetism. The framework does not have to be supplied with a phase group; it has one.
 - **The connection requires the spinor, not the density matrix.** The lemma $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}}) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.
-- **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\tilde{Ξ}|d\tilde{Ξ}\rangle$ is the central scalar imaginary that also appears in $i r'_t$, in the central phase $\exp(i\theta_{\mathrm{gau}})$, and as the complex structure of the state module. The minimal coupling article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
+- **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\tilde{Ξ}|d\tilde{Ξ}\rangle$ is the central scalar imaginary that also appears in $i r'_t$, in the central phase $\exp(i\theta_{\mathrm{cph}})$, and as the complex structure of the state module. The minimal coupling article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
 - **The classical counterpart is the same holonomy.** Hannay's angle is the classical counterpart of the Berry phase, and *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form* derives it on the coadjoint orbit of a classical spin, where the angle is the accumulated twist of the rotor about the direction and the loop is the cycle of the slowly varied parameters. The quantum statement here and the classical statement there are one geometric fact on two state spaces: the Bloch sphere of $\mathbb{B}_{\Psi}$ and the orbit of a pure quaternion. The factor $\tfrac12$ of the half-solid-angle rule appears in both, and for the same reason — the rotor covers the rotation twice.
 
 **What is only transcribed.** The adiabatic theorem, the Berry phase formula, the Stokes relation, and the Chern-number quantisation are standard results carried into the algebra. The framework supplies the $\frac{h}{2\pi}$ from outside, as the corpus notes: until the single-valuedness of a phase is imposed, the algebra is a classical complexified structure. The integer $C = \pm 1$ is a fact about the degree of a map of $S^2$, not a fact about $\mathbb{B}$. For a single qubit this article reports a reformulation and no new physics.
@@ -437,12 +437,12 @@ $$
 \mathcal{A}_{\imath} = i\,\frac{\mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger}\partial/\partial R_{\imath}\tilde{Ξ}\right)}{\mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger}\tilde{Ξ}\right)} ,
 \qquad
 \mathcal{A}_{2,\imath} = \mathcal{A}_{\imath} - \partial/\partial R_{\imath}\alpha
-\quad\text{for}\quad \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ} ,
+\quad\text{for}\quad \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{cph}})\tilde{Ξ} ,
 \qquad
 \mathcal{F}_{\imath\jmath} = \partial/\partial R_{\imath}\mathcal{A}_{\jmath} - \partial/\partial R_{\jmath}\mathcal{A}_{\imath} .
 $$
 
-The structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$, the same $\mathrm{U}(1)$ that the minimal coupling article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The relation between the two connections is an exact **analogy of gauge type**, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.
+The structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$, the same $\mathrm{U}(1)$ that the minimal coupling article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The relation between the two connections is an exact **analogy of connection type**, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.
 
 On spin-1/2 in a slowly rotating field with the loop at polar angle $\theta_0$, the connection is $\mathcal{A} = -\tfrac{1-\cos\theta}{2}d\theta_{\mathrm{azm}}$, the curvature is $\mathcal{F} = -\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$, and both routes give $\gamma_+ = -\theta_{\mathrm{sol}}/2$ for every $\theta_0$, where $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ is the solid angle of the loop. The phase is independent of the speed of traversal, unlike the dynamical phase. The two spin branches have equal and opposite curvatures and Chern numbers $C_\pm = \mp 1$, summing to zero. Over a **closed** surface the flux is quantised as the Chern number and is robust under gap-preserving deformations; over an open cap it is the continuous solid angle, so the quantisation is specifically a closed-surface statement, and the surface must avoid the degeneracy point $\vec R = 0$ where the gap closes and the connection is singular. That point is a parameter-space degeneracy, and the flux it carries is quantised.
 
@@ -488,4 +488,4 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 - D. H. Gottlieb, "Eigenbundles, Quaternions, and Berry's Phase," arXiv:math/0304281 [math.AT] (2003), for the existence question treated as a homotopy-theoretic classification: the three cross-sections $s_1, s_2, s_3$ of the spectral bundle, recorded in the section above, and a 4 by 4 complex-quaternion realization used only as an example.
 - A. Shapere and F. Wilczek, *Geometric Phases in Physics* (World Scientific, 1989), for the collected theory and its applications.
 - M. Nakahara, *Geometry, Topology and Physics* (Institute of Physics, 2003), for connections, curvature, Chern numbers, and the fibre-bundle formulation.
-- The companion articles of this series: [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), [Four-Vectors and the Interval](four-vectors-and-the-interval.html), [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html), [Exercise: Spin Precession in a Magnetic Field](exercise-spin-precession-in-a-magnetic-field.html), [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), and [Quantum Gates and Circuits in Biquaternionic Form](quantum-gates-and-circuits-in-biquaternionic-form.html).
+- The companion articles of this series: [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), [Four-Vectors and the Interval](four-vectors-and-the-interval.html), [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html), [Exercise: Spin Precession in a Magnetic Field](exercise-spin-precession-in-a-magnetic-field.html), [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html), and [Quantum Gates and Circuits in Biquaternionic Form](quantum-gates-and-circuits-in-biquaternionic-form.html).

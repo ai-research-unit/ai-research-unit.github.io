@@ -51,7 +51,7 @@ $$
 
 **The reason is a count of entries, and it is worth stating in that form.** Each of the fifteen has at most one entry in the $t$ row and the $t$ column together, except the corner, which has one entry in each and no off-diagonal entry at all. **So the space of generators that act within $\mathbb C e_{t}$ is one-dimensional, spanned by $D$, and one dimension cannot produce a second lepton.**
 
-**The copy index does not help.** It is the weak-doublet slot, the algebra is $\mathbb 1$ on it, and **no generator joins $\alpha=1$ to $\alpha=2$** — the commutation statement $[\mathbb 1_{4}\otimes\tau_{3},X\otimes\mathbb 1_{2}]=0$ of [the vertex article](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). **Two leptons that differ only in the copy index are the two members of a doublet, not two generations.**
+**The copy index does not help.** It is the weak-doublet slot, the algebra is $\mathbb 1$ on it, and **no generator joins $\alpha=1$ to $\alpha=2$** — the commutation statement $[\mathbb 1_{4}\otimes\tau_{3},X\otimes\mathbb 1_{2}]=0$ of [the vertex article](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). **Two leptons that differ only in the copy index are the two members of a doublet, not two generations.**
 
 ## The Matrix That Would Have To
 
@@ -144,9 +144,9 @@ $$
 
 ## Further Reading
 
-- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-gauge-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The selection rule this article applies, and the $128$ entries behind it.
+- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The selection rule this article applies, and the $128$ entries behind it.
 - [The Yukawa Sector of the $\mathrm{SU}(4)$ Model](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). The one matrix, the aligned mass basis, and the factor three.
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The sixteen, and the copy index that is not a generation.
-- [An Introduction to Flavour](an-introduction-to-flavour.html). Why an index the algebra cannot see is invisible to every gauge measurement.
+- [An Introduction to Flavour](an-introduction-to-flavour.html). Why an index the algebra cannot see is invisible to every symmetry measurement.
 - [Three Diagrams of the $\mathrm{SU}(4)$ Model](three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html). The same operator, drawn, with the kaon rate and the colour factor.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The sextet in full, with its quantum numbers and the bound.

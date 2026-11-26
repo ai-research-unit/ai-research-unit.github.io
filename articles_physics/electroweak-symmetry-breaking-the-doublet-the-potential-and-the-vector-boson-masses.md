@@ -1,4 +1,4 @@
-# __Electroweak Symmetry Breaking: the Doublet, the Potential and the Connection Masses__
+# __Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses__
 
 ## Introduction
 
@@ -44,7 +44,7 @@ $$
 Y_{\mathrm{hch}}=\tfrac12 ,
 $$
 
-which is four real fields. The hypercharge is not free here: it is fixed by the invariance of the Yukawa couplings, and [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) derives it from $-Y_{L_L}+Y_{\mathrm{hch}}+Y_{e_R}=0$, that is $Y_{\mathrm{hch}}=Y_{L_L}-Y_{e_R}=+\tfrac12$.
+which is four real fields. The hypercharge is not free here: it is fixed by the invariance of the Yukawa couplings, and [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html) derives it from $-Y_{L_L}+Y_{\mathrm{hch}}+Y_{e_R}=0$, that is $Y_{\mathrm{hch}}=Y_{L_L}-Y_{e_R}=+\tfrac12$.
 
 The same object in the companion articles. [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) writes this doublet as $\xi_{\mathrm{scl}}$ with components ${\xi_{\mathrm{scl}}}^\pm$ and ${\xi_{\mathrm{scl}}}^0$, and [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) writes the abelian scalar as $\tilde\Xi=\xi\,e_t$. The three names denote the same object at three levels of generality, and this article uses $\omicron_{\mathrm{pot}}$ throughout.
 
@@ -132,7 +132,7 @@ The three parameters are two. The pair $(\mu^2,\digamma_{\mathrm{qtc}})$ and the
 
 ## The Covariant Derivative at the Vacuum
 
-**The derivative.** With the normalisation of the doublet's representation, $\tau_a=\tfrac12\sigma_a$, and the hypercharge assigned as in [The Electroweak Symmetry group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html),
+**The derivative.** With the normalisation of the doublet's representation, $\tau_a=\tfrac12\sigma_a$, and the hypercharge assigned as in [The Electroweak Symmetry group and the Hypercharge Assignment](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html),
 
 $$
 D_{\imath}\omicron_{\mathrm{pot}}=\frac{\partial\omicron_{\mathrm{pot}}}{\partial R_{\imath}}+i\,g\sum_a\tau_aW_{a,\imath}\omicron_{\mathrm{pot}}+i\,g_{\mathrm Y}Y_{\mathrm{hch}} B_{\imath}\omicron_{\mathrm{pot}} ,
@@ -279,11 +279,11 @@ $$
 
 and the three fields $\xi_a$ are the would-be Goldstones. The angle is $\theta_{\mathrm{gld},a}=\xi_a/v$, a real Goldstone field over the real vacuum expectation value. A local transformation with parameter $\Gamma_a=-\frac{2}{gv}\xi_a$ removes them, at the price of shifting the connections by $\partial\xi/\partial R_{\imath}$. The combination that is invariant is $W_{a,\imath}+\frac{2}{gv}\partial\xi_a/\partial R_{\imath}$, and it is that combination which carries the mass. The Goldstone is not destroyed: it becomes the longitudinal part of the field that absorbed it.
 
-Why this is a statement about a field and not about a particle. The Goldstone mode never appears in the physical spectrum, and at the same time it is present in every gauge but the unitary one. The two statements are consistent because the mode is a gauge artefact: its presence or absence is a choice of coordinates on field space, and no observable depends on the choice. What is observable is the three polarisations of the massive vector, and those are counted in the second table.
+Why this is a statement about a field and not about a particle. The Goldstone mode never appears in the physical spectrum, and at the same time it is present in every representative but the unitary one. The two statements are consistent because the mode is a representative artefact: its presence or absence is a choice of coordinates on field space, and no observable depends on the choice. What is observable is the three polarisations of the massive vector, and those are counted in the second table.
 
 ## The Unitary Fixing Condition and the Physical Spectrum
 
-The gauge. The unitary fixing condition is the choice in which the three Goldstones are set to zero and the doublet is $\frac{1}{\sqrt2}(0,v+h)^{T}$. Three fixing conditions, three eaten fields, and no ghosts in the spectrum at tree level.
+The choice of representative. The unitary fixing condition is the choice in which the three Goldstones are set to zero and the doublet is $\frac{1}{\sqrt2}(0,v+h)^{T}$. Three fixing conditions, three eaten fields, and no ghosts in the spectrum at tree level.
 
 The spectrum. Five particles come out of the four connections and the four scalar components:
 
@@ -334,7 +334,7 @@ The vintage of $M_H$. The value is $2.2299\times10^{-25}\ \mathrm{kg}$, the 2015
 
 The dimension of each coupling is the check. A triple scalar coupling has dimension one and is measured in joules; a quartic has dimension zero and is a pure number; a scalar-vector-vector coupling has dimension one. The table's units agree with the dimensions, which is a check on the powers of $v$ and not a deep statement.
 
-**What the unitary fixing condition hides.** The Goldstones are gone, and so is the manifest $SU(2)$ invariance: the gauge looks asymmetric, and the propagators of the massive vectors grow with energy in a way that requires the scalar exchange to cancel. That cancellation is a check on the whole sector, and [Choice of representative in the Electroweak Theory](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html) carries it. The unitary fixing condition is a convenient bookkeeping and a poor place to compute loops.
+**What the unitary fixing condition hides.** The Goldstones are gone, and so is the manifest $SU(2)$ invariance: the representative looks asymmetric, and the propagators of the massive vectors grow with energy in a way that requires the scalar exchange to cancel. That cancellation is a check on the whole sector, and [Fixing the Representative in the Electroweak Theory](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html) carries it. The unitary fixing condition is a convenient bookkeeping and a poor place to compute loops.
 
 ## The Numbers
 
@@ -440,9 +440,9 @@ $$
 
 For one doublet with $T=\tfrac12$ and $T_3=-\tfrac12$ the numerator is $v^2\left(\tfrac34-\tfrac14\right)=\tfrac12v^2$ and the denominator is $2v^2\tfrac14=\tfrac12v^2$, giving one. For one triplet with $T=1$ and $T_3=-1$ the numerator is $v^2(2-1)=v^2$ and the denominator $2v^2$, giving one half. A triplet therefore pulls $\rho$ below one, and the measurement bounds its vacuum expectation value.
 
-Why $\rho=1$ is structural. The doublet, written as a $2\times2$ matrix $\omicron_{\mathrm{hgs}}=(\tilde\omicron_{\mathrm{pot}},\omicron_{\mathrm{pot}})$ whose columns are the doublet and its conjugate, has a potential that depends only on $\mathrm{tr}(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})$. The potential therefore has an $SU(2)_L\times SU(2)_R$ symmetry larger than the made local one, and the vacuum $\langle\omicron_{\mathrm{hgs}}\rangle\propto\mathrm I$ breaks it to the diagonal $SU(2)_V$. That residual symmetry is custodial, and it is what makes the three connections' masses related.
+Why $\rho=1$ is structural. The doublet, written as a $2\times2$ matrix $\omicron_{\mathrm{hgs}}=(\tilde\omicron_{\mathrm{pot}},\omicron_{\mathrm{pot}})$ whose columns are the doublet and its conjugate, has a potential that depends only on $\mathrm{tr}(\omicron_{\mathrm{hgs}}^\dagger\omicron_{\mathrm{hgs}})$. The potential therefore has an $SU(2)_L\times SU(2)_R$ symmetry larger than the local one, and the vacuum $\langle\omicron_{\mathrm{hgs}}\rangle\propto\mathrm I$ breaks it to the diagonal $SU(2)_V$. That residual symmetry is custodial, and it is what makes the three connections' masses related.
 
-**The hypercharge breaks custodial symmetry explicitly.** The made local hypercharge is the third generator of $SU(2)_R$, so switching it on distinguishes the third direction from the other two. The tree-level $\rho=1$ survives because the vacuum is custodially invariant; the breaking appears at one loop, in the difference between the $W$ and $Z$ self-energies, and it is one of the corrections inside $\delta r$.
+**The hypercharge breaks custodial symmetry explicitly.** The local hypercharge is the third generator of $SU(2)_R$, so switching it on distinguishes the third direction from the other two. The tree-level $\rho=1$ survives because the vacuum is custodially invariant; the breaking appears at one loop, in the difference between the $W$ and $Z$ self-energies, and it is one of the corrections inside $\delta r$.
 
 The empirical bound, in the form that matters here. The measured $\rho$ is unity to about four parts in $10^4$, and that number bounds any additional multiplet's vacuum expectation value. A triplet at the electroweak scale would move $\rho$ by an amount of order $v_t^2/v^2$, so the bound is a bound on $v_t/v$ of a few per cent. The doublet is not merely the simplest choice; it is the one the measurement allows at the scale of the breaking.
 
@@ -472,7 +472,7 @@ The distance to the electroweak case is exactly three items. Stated as a list, b
 
 **The singlet cannot break the group, and this is the sharpest statement.** A field in the centre commutes with every element of the algebra, so it is annihilated by the $SU(2)$ action. A vacuum invariant under a group does not break it. The framework's scalar gives a mass to the abelian factor and to nothing else, and no amount of rewriting changes that: the obstruction is the representation, not the mechanism.
 
-What the algebra does supply. A two-dimensional module, since $\mathbb{B}\cong M_2(\mathbb{C})$ acts on $\mathbb{C}^2$. A doublet-shaped object is therefore available. What is missing is the assignment of the two factors' actions on it, which is the content of [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) and which that article shows is imported.
+What the algebra does supply. A two-dimensional module, since $\mathbb{B}\cong M_2(\mathbb{C})$ acts on $\mathbb{C}^2$. A doublet-shaped object is therefore available. What is missing is the assignment of the two factors' actions on it, which is the content of [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html) and which that article shows is imported.
 
 The one place the framework's formula matches. The abelian mass formula $M_A=\kappa v$ and the standard $M_W=gv/2$ are the same formula with $\kappa=g/2$. The factor of one half is the isospin of the scalar and not a property of the vector, and [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) records the identification. It is a genuine match of structure, and it is a match of one number with a reinterpreted charge, not a derivation.
 
@@ -517,7 +517,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 
 ## Further Reading
 
-- [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Why $Y_{\mathrm{hch}}=\tfrac12$, which this article takes as given.
+- [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html). Why $Y_{\mathrm{hch}}=\tfrac12$, which this article takes as given.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The scalar sector in the assembled sum, and the sign rule that fixes the kinetic term.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html). The abelian case in full, whose gap this article fills for the electroweak group.
 - [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The mixing and the masses, here derived from the mass matrix.

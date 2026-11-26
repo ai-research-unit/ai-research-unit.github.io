@@ -21,7 +21,7 @@ The single idea is that a splitting of the carrier is a choice and not a structu
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | ideals, the two-sided ideals, Artinian and semisimple, length two, the radical, the three regular modules, the submodules are the ideals, the endomorphisms of the regular object | [The Regular Module](../articles_maths/the-regular-module-in-the-biquaternion-algebra.html) |
-| the two minimal left ideals, all minimal left ideals, the simple module, the two spinor spaces, the canonical splitting, the ladder, the gauge, the invariants of a single spinor, the Peirce index, right multiplication, what the spinor is not | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
+| the two minimal left ideals, all minimal left ideals, the simple module, the two spinor spaces, the canonical splitting, the ladder, the representative, the invariants of a single spinor, the Peirce index, right multiplication, what the spinor is not | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
 | the root and the frame, the display polarizes for free, what the display is not | [The Pauli Module of the Biquaternion Algebra](../articles_maths/the-pauli-module-of-the-biquaternion-algebra.html) |
 | representations and modules, the category of left modules, projectivity and the parity of freeness, the standard bimodule, Morita equivalence, torsion, real structures, the lattice of left ideals, the projective line and the Möbius action | [The Category of Modules](../articles_maths/the-category-of-modules-in-the-biquaternion-algebra.html) |
 | the module and the two actions, the names of the elements, a splitting is a pair of points, the polarizations of the corpus, the axis-free frame, the swap, what the module carries instead, the conjugate pair, what the absence costs | [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html) |
@@ -135,7 +135,7 @@ $$
 
 so left multiplication by one nilpotent keeps the mixed part and kills the diagonal part, and the other does the reverse. Both maps are square-zero, and the two composites are the projections onto the two lines.
 
-The gauge acts on the coordinates and not on the element.
+The representative acts on the coordinates and not on the element.
 
 $$
 a'=a,\qquad c'=t^{-1}c,\qquad b'=tb,\qquad d'=d,\qquad t\in\mathbb{C}^{\times}.
@@ -345,7 +345,7 @@ This is the kinematics of the ladder and not the dynamics. It does not say when 
 
 Read: a spinor has an intrinsic form $a\tilde\Pi_{\mathrm{id},++}\jmath_+$ and the coordinate description $(a,c)$ is not intrinsic. Only the diagonal coefficient and the nilpotent element are.
 
-The gauge makes the difference exact.
+The representative makes the difference exact.
 
 $$
 a'=a,\qquad c'=t^{-1}c ,
@@ -353,11 +353,11 @@ $$
 
 so $a$ is invariant and $c$ is not; the vanishing of $c$ is invariant, since $c=0$ exactly when ${\jmath}_+=0$, but the value of a nonzero $c$ is not. Reading the pair $(a,c)$ as two amplitudes is therefore reading a coordinate.
 
-The physical reading is that a state has one invariant magnitude and one dirigible part. The diagonal coefficient is a complex number attached to the idempotent; the mixed part is an element of a line, which is a direction with a magnitude that the gauge can absorb. What is invariant is the magnitude of $a$ and the ray of ${\jmath}_+$, not the two numbers of a column.
+The physical reading is that a state has one invariant magnitude and one dirigible part. The diagonal coefficient is a complex number attached to the idempotent; the mixed part is an element of a line, which is a direction with a magnitude that the representative can absorb. What is invariant is the magnitude of $a$ and the ray of ${\jmath}_+$, not the two numbers of a column.
 
-The probabilities are invariant only after the fixing condition is cut. The Hermitian norm $\tfrac12(|a|^{2}+|c|^{2})$ is invariant under the circle $|t|=1$ and not under the full $\mathbb{C}^{\times}$. So the two entries of a column carry the two probabilities in the Hermitian gauge, and in that gauge only. The modulus of the fixing condition is not a symmetry of the norm, and a computation that uses the full gauge and the norm together is inconsistent.
+The probabilities are invariant only after the fixing condition is cut. The Hermitian norm $\tfrac12(|a|^{2}+|c|^{2})$ is invariant under the circle $|t|=1$ and not under the full $\mathbb{C}^{\times}$. So the two entries of a column carry the two probabilities in the Hermitian representative, and in that representative only. The modulus of the fixing condition is not a symmetry of the norm, and a computation that uses the full representative and the norm together is inconsistent.
 
-The Hermitian gauge is available when the family and the basis are Hermitian, and that is one case of the section and not the general one. In the general case there is no invariant norm and no probability, and the entry says so.
+The Hermitian representative is available when the family and the basis are Hermitian, and that is one case of the section and not the general one. In the general case there is no invariant norm and no probability, and the entry says so.
 
 ### I.4.j — The Line of Polarizations Is the Celestial Sphere
 

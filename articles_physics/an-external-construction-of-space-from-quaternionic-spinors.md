@@ -221,7 +221,7 @@ a coefficient $2\kappa=16\pi G$ where the printed target $G_{\imath\jmath}=8\pi 
 
 ## The Teleparallel Sector
 
-Section 9.1 adds a Lagrange multiplier $\mathrm{Sd}_{\imath\jmath ab}$ enforcing $\mathrm{Riem}_{\imath\jmath ab}(\omega)=0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega_{\imath ab}=0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $N_{\mathrm{cont},\imath ab}=-\omega_{\imath ab}(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection
+Section 9.1 adds a Lagrange multiplier $\mathrm{Sd}_{\imath\jmath ab}$ enforcing $\mathrm{Riem}_{\imath\jmath ab}(\omega)=0$, so that the geometry is teleparallel, and identifies the Weitzenböck frame $\omega_{\imath ab}=0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $N_{\mathrm{cont},\imath ab}=-\omega_{\imath ab}(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection
 $$
 \Gamma_{k\imath\jmath}=\sum_a e_{ak}\,\frac{\partial \exp(a){}_{\jmath}}{\partial x_{\imath}}
 $$

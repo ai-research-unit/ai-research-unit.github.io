@@ -355,7 +355,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian; hyperbolic on $Q_t=i q'_t$, elliptic on $Q_t=c\tau$ |
 | $\star$ | Hodge star on two-forms; $\star^2=+1$ Euclidean, $-1$ Lorentzian |
 | $\tilde{F}=i\vec E-c\vec B$ | Abelian field-strength biquaternion |
-| $F_{\imath\jmath}$ | Field-strength components (abelian in the Maxwell sections, non-abelian in the gauge sections) |
+| $F_{\imath\jmath}$ | Field-strength components (abelian in the Maxwell sections, non-abelian in the connection section) |
 | $I_1=\vec E^2-c^2\vec B^2,\ I_2=\vec E\cdot\vec B$ | The two field-strength invariants |
 | $\langle\tilde{F}\rangle_{\natural}=\tilde{F}\tilde{F}^{\natural}=-(I_1+2icI_2)$ | The biquaternion norm |
 | $\mathcal{A}_{\imath}=\sum_a\mathcal{A}_{\imath a}\vec e_a$ | Non-abelian connection, $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ |
@@ -376,14 +376,14 @@ This article has treated the localised finite-energy solutions of the biquaterni
 
 ## Further Reading
 
-- [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the connection, curvature, local transformation and invariant density used throughout the non-abelian sections.
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the covariant derivative $D_{\imath}$ and the connection.
+- [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html) — the connection, curvature, local transformation and invariant density used throughout the non-abelian sections.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html) — the covariant derivative $D_{\imath}$ and the connection.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian field strength, the invariants $I_1,I_2$ and the biquaternion norm $\langle\tilde{F}\rangle_{\natural}$.
 - [The Skyrme Model and the Topological Baryon in Biquaternionic Form](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html) — the same $\pi_3$ read as the baryon winding on the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$.
 - [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html) — the identification $\mathbb{B}_{\Phi}\leftrightarrow\mathbb{B}_{H}$ and the Euclidean slice.
 - [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html), [The Biquaternion Group of Invertibles as a Topological Group](../articles_maths/the-biquaternion-group-of-invertibles-as-a-topological-group.html) and [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) — the contractibility of $\mathbb{B}$, the group of invertibles and the null cone.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the field equation and the Riemann–Silberstein structure of the abelian sector.
-- [The Minimal coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the central $\mathrm{U}(1)$ and the local structure.
+- [The Minimal coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html) — the central $\mathrm{U}(1)$ and the local structure.
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the free scalar field that supplies no potential.
 - [Exercise: The Electromagnetic Energy–Momentum Tensor](exercise-the-electromagnetic-energy-momentum-tensor.html) — the rank-two limitation of a single biquaternion.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the sector in which the $\mathrm{SU}(2)$ factor and the Lorentzian star live.

@@ -146,7 +146,7 @@ Why the anomaly is not a defect. An anomalous current is one whose conservation 
 
 The topological current. The Chern–Simons current $J_{\mathrm{CS},\imath}$ is conserved identically, and the axion's coupling is its divergence contracted with $a$. The two currents' divergences are the same object, and that is the precise sense in which the anomaly and the coupling are one term.
 
-Energy–momentum. Translation invariance gives $T_{\imath\jmath}$ with the scalar and gauge contributions; the trace is nonzero because of the potential, and the potential's contribution is the vacuum energy.
+Energy–momentum. Translation invariance gives $T_{\imath\jmath}$ with the scalar and connection contribution; the trace is nonzero because of the potential, and the potential's contribution is the vacuum energy.
 
 **What there is not.** No second independent current; the axion's current is the shift's, and its anomaly is the sector's.
 

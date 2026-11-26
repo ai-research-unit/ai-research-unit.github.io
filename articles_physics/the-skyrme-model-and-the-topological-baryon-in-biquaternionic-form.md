@@ -113,7 +113,7 @@ $$
 
 is a minimum. With $E_4 = 0$ the function $E(\digamma_{\mathrm{skr}}) = E_2/\digamma_{\mathrm{skr}}$ has no minimum: it decreases without bound as $\digamma_{\mathrm{skr}}\to\infty$, so the configuration shrinks, and a purely two-derivative static soliton is unstable to collapse. The four-derivative term supplies the increasing branch and bounds the energy from below. This is Derrick's theorem (Derrick 1964) applied to the Skyrme model, and it is standard.
 
-**The energy functional.** In the static gauge the two terms give the Skyrme energy
+**The energy functional.** In the static frame the two terms give the Skyrme energy
 
 $$
 E = \int d^3r\left[\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\bar j_i j_i\right) - \frac{1}{16e^2}\,\mathrm{Sc}\!\left([j_i,j_j][j_i,j_j]\right)\right],

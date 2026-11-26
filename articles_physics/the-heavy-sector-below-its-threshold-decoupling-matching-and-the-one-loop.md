@@ -20,7 +20,7 @@ $$
 
 **What the article does not establish.** No numerical result of the running. The failure of the minimal content is stated here and computed in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html), which owns every number.
 
-**Where the neighbours are.** The derivative that is matched is [The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The scales are [The Threshold Scales: One Transition at $M_C$, One Measured Weak Scale, and What Would Fix $M_C$](the-threshold-scales-mc-mw-and-what-would-fix-them.html). The one-loop machinery in the algebra is [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html).
+**Where the neighbours are.** The derivative that is matched is [The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The scales are [The Threshold Scales: One Transition at $M_C$, One Measured Weak Scale, and What Would Fix $M_C$](the-threshold-scales-mc-mw-and-what-would-fix-them.html). The one-loop machinery in the algebra is [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html).
 
 ## Two Operations That Are Often Confused
 
@@ -77,7 +77,7 @@ g_{B-L}(M_C)=g_4(M_C),
 g(M_C)=g_L(M_C).
 $$
 
-At the same scale the two neutral couplings combine into hypercharge by the orthogonality relation of [The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). **Both steps are at $M_C$: the colour factor and the hypercharge factor are made by the same vacuum.** No correction, no logarithm: at tree level a coupling passes through a threshold unchanged.
+At the same scale the two neutral couplings combine into hypercharge by the orthogonality relation of [The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). **Both steps are at $M_C$: the colour factor and the hypercharge factor are made by the same vacuum.** No correction, no logarithm: at tree level a coupling passes through a threshold unchanged.
 
 **4.2 One loop.** The equality acquires a finite shift,
 
@@ -173,7 +173,7 @@ with $n_f$ and $n_s$ the number of Dirac fermions and real scalars in the repres
 
 - [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html). The running, the failure and its size.
 - [The Threshold Scales: One Transition at $M_C$, One Measured Weak Scale, and What Would Fix $M_C$](the-threshold-scales-mc-mw-and-what-would-fix-them.html). The scales this article matches at.
-- [The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-gauge-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The couplings that are matched.
+- [The Connection Below the Breaking: Three Pieces, Three Couplings, and What Each Multiplies](the-connection-below-the-breaking-three-pieces-three-couplings-and-what-each-multiplies.html). The couplings that are matched.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The dimension-six operators of the first threshold.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The dimension-five operator made at $M_C$.
 - [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html). The loop machinery used here, in the algebra.

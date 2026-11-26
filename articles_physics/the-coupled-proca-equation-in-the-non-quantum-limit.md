@@ -161,7 +161,7 @@ Order zero is the mechanical mass shell together with the transverse polarisatio
 
 ## Further Reading
 
-- [The Coupled Proca Equation in Biquaternionic Polar Variables](the-coupled-proca-equation-in-biquaternionic-polar-variables.html), the parent: the complex word, the norm, the gauge translation and the field's own tetrad.
+- [The Coupled Proca Equation in Biquaternionic Polar Variables](the-coupled-proca-equation-in-biquaternionic-polar-variables.html), the parent: the complex word, the norm, the translation and the field's own tetrad.
 - [The Proca Equation in the Non-Quantum Limit](the-proca-equation-in-the-non-quantum-limit.html), the companion, where the real carrier has no phase and no limit.
 - [The Coupled Dirac Equation in the Non-Quantum Limit](the-coupled-dirac-equation-in-the-non-quantum-limit.html), the spin-half companion with the same four brackets.
 - [The Klein–Gordon Equation in the Non-Quantum Limit](the-klein-gordon-equation-in-the-non-quantum-limit.html), the scalar companion with the same mass shell and the same rays.

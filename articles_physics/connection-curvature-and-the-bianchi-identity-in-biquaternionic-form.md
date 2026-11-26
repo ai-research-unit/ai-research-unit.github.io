@@ -274,7 +274,7 @@ The structural reason is that the Bianchi identity is a three-index antisymmetri
 
 ## Summary
 
-The gauge curvature of the biquaternionic framework is the commutator of covariant derivatives, and the commutator reduces to the algebra. For a connection $\mathcal{A}_{\imath} \in \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ and $D_{\imath} = \partial/\partial R_{\imath} + i\kappa\mathcal{A}_{\imath}$, with $\kappa =\frac{2\pi ϙ}{h}$,
+The connection curvature of the biquaternionic framework is the commutator of covariant derivatives, and the commutator reduces to the algebra. For a connection $\mathcal{A}_{\imath} \in \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ and $D_{\imath} = \partial/\partial R_{\imath} + i\kappa\mathcal{A}_{\imath}$, with $\kappa =\frac{2\pi ϙ}{h}$,
 
 $$
 [D_{\imath},D_{\jmath}] = i\kappa\,F_{\imath\jmath},
@@ -329,9 +329,9 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 
 ## Further Reading
 
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the immediate parent; its abelian commutator identity $[D_{\imath},D_{\jmath}]=\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$ and its deferral of the Bianchi identity to this article.
-- [Non-Abelian Connections in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the non-abelian connection, the transformation law, the adjoint curvature, and the compactness gap this article inherits unchanged.
-- [The Minimal Coupling in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the covariant derivative, and the curvature; the source of the remark that the homogeneous equations are the Bianchi identity of the connection.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html) — the immediate parent; its abelian commutator identity $[D_{\imath},D_{\jmath}]=\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$ and its deferral of the Bianchi identity to this article.
+- [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html) — the non-abelian connection, the transformation law, the adjoint curvature, and the compactness gap this article inherits unchanged.
+- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html) — the origin of the connection, the covariant derivative, and the curvature; the source of the remark that the homogeneous equations are the Bianchi identity of the connection.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian field strength, its pure-vector character, and the biquaternion-norm apparatus that the non-abelian extension does not yet reproduce.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian field equation $\tilde\nabla_\Phi\tilde{F}=-Z\tilde{J}_{\Phi}$ whose homogeneous part is the Bianchi identity.
 - [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.

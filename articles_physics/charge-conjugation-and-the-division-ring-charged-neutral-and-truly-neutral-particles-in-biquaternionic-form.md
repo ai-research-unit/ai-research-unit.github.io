@@ -186,7 +186,7 @@ Each statement below is a computation and not an analogy.
 
 **The two squares in higher-spin fields.** A one-sided action squares to minus the argument and a two-sided one to the argument itself. The corpus's higher-spin fields live in tensor powers of the algebra. Whether the distinction survives the tensor power, or whether the sign changes with the spin, is a test: take the two squares on a two-fold tensor power and compare.
 
-**Coupling to connections.** A connection adds a connection to the field, and the conjugated field is charged under the conjugated connection. In the real-division-ring case a connection and its conjugate are the same connection; in the other two they are not. The consequence for the classification is that a truly neutral field can carry no charge under a connection that its own conjugate does not share, which is a constraint on which fields can be truly neutral in a made local theory. The constraint is known in the physics and is not derived here.
+**Coupling to connections.** A connection adds a connection to the field, and the conjugated field is charged under the conjugated connection. In the real-division-ring case a connection and its conjugate are the same connection; in the other two they are not. The consequence for the classification is that a truly neutral field can carry no charge under a connection that its own conjugate does not share, which is a constraint on which fields can be truly neutral in a local theory. The constraint is known in the physics and is not derived here.
 
 ## The Legacy Pauli Gamma Formulation
 

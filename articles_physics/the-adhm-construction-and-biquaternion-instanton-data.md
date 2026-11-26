@@ -86,7 +86,7 @@ The three real components of $\mu_{\mathbb R}$ and the complex equation $\mu_{\m
 **The instanton data from the equations.** The theorem of Atiyah, Drinfeld, Hitchin and Manin is that there is a bijection
 
 $$
-\bigl\{\text{self-dual connections on }\mathbb R^4\text{ of charge }k\bigr\}\big/\text{gauge}
+\bigl\{\text{self-dual connections on }\mathbb R^4\text{ of charge }k\bigr\}\big/\text{connection}
 \;\longleftrightarrow\;
 \mu^{-1}(0)/\mathrm{U}(k),
 $$

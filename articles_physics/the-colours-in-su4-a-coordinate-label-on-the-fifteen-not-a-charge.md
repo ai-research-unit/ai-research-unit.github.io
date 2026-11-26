@@ -25,7 +25,7 @@
 
 **The first act is free.** Nothing in the model depends on calling the second line red rather than green, and a permutation of the three colour letters changes no number. **The second act is the corpus's one declared input**, and its content is which line is which — not that a colour group exists.
 
-**What neither act does is gauge anything.** The group acting on the quartet is $\mathrm{SU}(4)$, one factor, and its fifteen generators act on the four lines. **There is no second factor, and no colour subgroup that is a factor of the theory.** A reader who supplies one has added a premise the model does not contain.
+**What neither act does is representative anything.** The group acting on the quartet is $\mathrm{SU}(4)$, one factor, and its fifteen generators act on the four lines. **There is no second factor, and no colour subgroup that is a factor of the theory.** A reader who supplies one has added a premise the model does not contain.
 
 **That is the whole of the pre-breaking situation.** Four lines, fifteen directions between them, one group. **The letters name the lines; the labels below name the directions.**
 
@@ -88,7 +88,7 @@ $$
 A_\mu\ \longmapsto\ U A_\mu U^{\dagger}+\tfrac{i}{g_4}U\partial_\mu U^{\dagger},
 $$
 
-**so the components rotate among themselves**, $A_\mu^{a}\mapsto R^{ab}A_\mu^{b}$ plus the inhomogeneous term, with $R$ the adjoint rotation built from $U$. **A field carrying $r\bar g$ in one gauge carries a combination of all fifteen in another.** The only basis-independent numbers are the Casimirs, and the quadratic Casimir of the adjoint takes the same value on all fifteen.
+**so the components rotate among themselves**, $A_\mu^{a}\mapsto R^{ab}A_\mu^{b}$ plus the inhomogeneous term, with $R$ the adjoint rotation built from $U$. **A field carrying $r\bar g$ in one representative carries a combination of all fifteen in another.** The only basis-independent numbers are the Casimirs, and the quadratic Casimir of the adjoint takes the same value on all fifteen.
 
 **A charge is a number that an invariant operator can read off.** The label $r\bar g$ is an index of a basis in which the group mixes components. **Those are different kinds of object**, and calling the second a charge is the error this article exists to prevent.
 

@@ -99,7 +99,7 @@ The physical requirement is that a finite number of states sit over each momentu
 
 There is a second route to the same conclusion, and it is the one used in field theory. A massless field has a local symmetry, and the local transformation shifts the polarisation along the momentum and along one transverse direction: the two directions that the null rotations move. So imposing the fixing condition is imposing $T_1=T_2=0$ on the physical states, and the surviving label is the eigenvalue of $J_z$.
 
-That is why the massless count is two and not three for a spin-1 particle: the three polarisations of the massive case become two helicities plus one gauge mode, and the gauge mode is exactly the orbit of the null rotations.
+That is why the massless count is two and not three for a spin-1 particle: the three polarisations of the massive case become two helicities plus one redundant mode, and the redundant mode is exactly the orbit of the null rotations.
 
 ### The Invariance
 
@@ -189,7 +189,7 @@ $J_z$ commutes with nothing outside the little group, but its eigenvalue on a st
 
 ### The Two Labels of the Block
 
-The corpus's massless labels are $(0,h)$: a zero in the mass slot and a half-integer in the helicity slot. The zero is $C_1$'s value, and $h$ is the phase of $J_z$ on the one-dimensional fibre. Nothing else survives: the scale of the momentum is a gauge, the two shear parameters are removed by a choice of representative, and the direction is the orbit's own coordinate.
+The corpus's massless labels are $(0,h)$: a zero in the mass slot and a half-integer in the helicity slot. The zero is $C_1$'s value, and $h$ is the phase of $J_z$ on the one-dimensional fibre. Nothing else survives: the scale of the momentum is a representative, the two shear parameters are removed by a choice of representative, and the direction is the orbit's own coordinate.
 
 ## The Contrast With the Massive Case
 

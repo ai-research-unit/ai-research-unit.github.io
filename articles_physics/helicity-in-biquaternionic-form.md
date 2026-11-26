@@ -106,7 +106,7 @@ whose representative is the Hermitian element $i\,\frac{h}{2\pi}\,\vec u_{p}\in\
 
 **The self-dual split.** For the massless field the two nonzero labels are the two self-dual halves of the field strength. With $\vec N=\vec E+ic\vec B$ the self-dual half and $\vec N^*$ its conjugate, Faraday's law gives $\vec B=\vec u_\Phi\times\vec E$ and $\vec u_\Phi\times\varepsilon_{\mathrm{fop},\pm}=\mp i\varepsilon_{\mathrm{fop},\pm}$, so each half carries one sign of $\digamma_{\mathrm{hlc}}$ (*The Photon in Biquaternionic Form*, §*Helicity and the Self-Dual Split of the Field Strength*). That is the field-theoretic face of the same operator: the weight of the little group is the label of one of the two complex three-dimensional representations of the Lorentz group.
 
-**Spin two.** On the symmetric traceless square the spectrum is $\{-2,-1,0,1,2\}$ in units of $\frac{h}{2\pi}$, and the gauge and trace removals leave the two of $\pm2$ (*Canonical Quantization of the Biquaternion Graviton Field*, §*Helicity and the Massless Little Group*). The algebra supplies the five-dimensional carrier and the projector; it does not supply the removal.
+**Spin two.** On the symmetric traceless square the spectrum is $\{-2,-1,0,1,2\}$ in units of $\frac{h}{2\pi}$, and the redundancy and trace removals leave the two of $\pm2$ (*Canonical Quantization of the Biquaternion Graviton Field*, §*Helicity and the Massless Little Group*). The algebra supplies the five-dimensional carrier and the projector; it does not supply the removal.
 
 **General $s$.** On any carrier the spectrum is the weight string $\frac{h}{2\pi}\,h$ with $h\in\{-s,\dots,s\}$, and the largest $h$ is the spin. Nothing in the operator depends on the carrier: it is the same projection, on a different module.
 
@@ -275,7 +275,7 @@ In the algebra the mass is the off-diagonal pair that exchanges the two chiral p
 
 - **The momentum.** The algebra has no state and no momentum; $\vec p$ is a datum the state carries, and without it there is no axis and no operator.
 - **The mass.** Whether $m=0$ is an input. The framework represents the Proca field as readily as the Maxwell one, and the two differ in whether the label is invariant and whether the third value is physical.
-- **The gauge removal.** The deletion of the zero value of a massless vector field is a property of the orbit and not of the spectrum.
+- **The removal of the redundancy.** The deletion of the zero value of a massless vector field is a property of the orbit and not of the spectrum.
 - **The doubling.** Whether both helicities are present is a property of the field.
 - **The choice of carrier.** Which particle uses which carrier — the electron the fundamental module, the photon the adjoint — is physics and not algebra.
 - **The amplitude calculus.** The Parke–Taylor formula, the colour structure and the momentum-conservation constraints are transcribed, not derived.
@@ -307,7 +307,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 
 ## Further Reading
 
-- [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html), for the spin-one helicity operator, its three values and the gauge removal of the longitudinal state.
+- [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html), for the spin-one helicity operator, its three values and the removal of the longitudinal state.
 - [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the little group and the adjoint-action reading of $\digamma_{\mathrm{hlc}}$.
 - [Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation](exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html), for the helicity element $\tilde{Ζ}$, the two helicity lines and the mass that leaves them intact.
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the massive case, where the label is not invariant.

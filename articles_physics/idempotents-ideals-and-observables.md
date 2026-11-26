@@ -24,7 +24,7 @@ The single idea is that a measurement is a cut of the algebra and not an operato
 | the roots of one, the trivial and non-trivial roots, the roots of minus one, the idempotents and their classification, the halving map, the families, the idempotents in the six subspaces | [The Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
 | the idempotents at an axis, the two ideals, minimality, the decomposition of the algebra, the lattice of left ideals, simplicity, the sphere of axes | [The Minimal Left Ideals of the Biquaternion Algebra](../articles_maths/the-minimal-left-ideals-of-the-biquaternion-algebra.html) |
 | the Peirce decompositions, the biquaternion case, the corner rule, the two indices, the mixed components, the grading | [Peirce Decompositions of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
-| the definition of a Peirce basis, its existence, its coordinates, the gauge, the dimensions | [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html) |
+| the definition of a Peirce basis, its existence, its coordinates, the representative, the dimensions | [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html) |
 | the companion corner, the two nilpotents at an axis, the multiplication table of the four corners, the Peirce coordinates, the Peirce functional | [The Companion Nilpotents of the Biquaternion Algebra](../articles_maths/the-companion-nilpotents-of-the-biquaternion-algebra.html) |
 | the Peirce data of a root, the factorization theorem, its proof and uniqueness, the Peirce-diagonal reading, what is intrinsic and what is a choice | [The Special Decomposition of a Biquaternion under a Peirce Basis](../articles_maths/the-special-decomposition-of-a-biquaternion-under-a-peirce-basis.html) |
 
@@ -128,7 +128,7 @@ $$
 
 and $A_0$ is the commutative algebra $\mathbb{C}\times\mathbb{C}$ with unit $e_t$.
 
-The decomposition gives the lines and nothing else. It gives no element of a mixed line, no basis, no gauge and no spinor.
+The decomposition gives the lines and nothing else. It gives no element of a mixed line, no basis, no representative and no spinor.
 
 ### The Peirce Basis
 
@@ -148,7 +148,7 @@ $$
 
 The whole basis has vanishing norm. All four elements are rank-one in the matrix model, the norm is the determinant, so the Peirce basis lies entirely on the isotropic cone.
 
-The bases of one family form a torsor under a one-parameter complex gauge.
+The bases of one family form a torsor under a one-parameter complex representative.
 
 $$
 \vec\Pi_{\mathrm{nil}}'{}_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad \vec\Pi_{\mathrm{nil}}'{}_{-+}=t\,\vec\Pi_{\mathrm{nil},-+},\qquad t\in\mathbb{C}^{\times} ,
@@ -196,7 +196,7 @@ $$
 
 The middle factor is diagonal in the Peirce basis of the root, with coefficients $r+s$ and $r-s$, which are the two singular values of $\tilde Q$.
 
-The numbers are intrinsic and the presentation is a choice. For $r>s>0$ the two unitaries are unique up to the simultaneous right multiplication by $e^{i\theta_+}\tilde\Pi_{\mathrm{id},++e}^{i\theta_-}\tilde\Pi_{\mathrm{id},-}$; for $r=s>0$ the freedom is larger. The root, the Peirce basis and its gauge are all presentation.
+The numbers are intrinsic and the presentation is a choice. For $r>s>0$ the two unitaries are unique up to the simultaneous right multiplication by $e^{i\theta_+}\tilde\Pi_{\mathrm{id},++e}^{i\theta_-}\tilde\Pi_{\mathrm{id},-}$; for $r=s>0$ the freedom is larger. The root, the Peirce basis and its representative are all presentation.
 
 ## The Interpretations
 
@@ -331,7 +331,7 @@ The physical reading is the ray freedom. A state vector is defined up to a compl
 
 The bases form a torsor, so no basis is distinguished. The set of bases of one family is a principal homogeneous space for $\mathbb{C}^{\times}$: the action is free and transitive, so there is no canonical point.
 
-The boundary. This is one complex parameter and not the whole unitary freedom of the algebra. The larger freedom, in the special decomposition, is the pair of unitaries, and the two must not be confused: the gauge here moves the basis of a fixed cut, and the unitaries there move the element.
+The boundary. This is one complex parameter and not the whole unitary freedom of the algebra. The larger freedom, in the special decomposition, is the pair of unitaries, and the two must not be confused: the representative here moves the basis of a fixed cut, and the unitaries there move the element.
 
 ### I.3.j — The Nilpotent Is a Mode With No Rest Frame, and a Null Momentum Is Not a Nilpotent
 
@@ -373,7 +373,7 @@ $$
 
 The two numbers do not depend on the root. This is the theorem: $r$ and $s$ are the singular values, and every root gives the same pair. So the intrinsic data of the element is a pair of non-negative numbers with $r\ge s$, exactly as a two-level state has two eigenvalues and a matrix has two singular values.
 
-The root, the Peirce basis and its gauge are all presentation. They do not enter the numbers, they enter only the way the middle factor is displayed. This is the cleanest statement in the category of what an element *is* and what is a choice of frame.
+The root, the Peirce basis and its representative are all presentation. They do not enter the numbers, they enter only the way the middle factor is displayed. This is the cleanest statement in the category of what an element *is* and what is a choice of frame.
 
 The physical reading is a Schmidt decomposition. A pair $(r,s)$ with $r\ge s\ge0$ is a pair of amplitudes; their ratio is a population ratio; their normalisation is a scale. The unitaries are the two changes of frame, and the root labels the basis in which the off-diagonal entries vanish.
 
@@ -403,7 +403,7 @@ Two readings are labelled and not proved. The identification of the Hermitian id
 - The Peirce corners are four complex lines obeying $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$, and they are graded by parity.
 - The Peirce functional $\varsigma_{\mathrm{prc}}(\tilde Q)=Q_t-iQ_z$ is linear and not multiplicative, and its failure is the simplicity of the algebra.
 - The whole Peirce basis lies on the isotropic cone.
-- A Peirce basis is fixed up to a one-parameter complex gauge, and the fixing condition is the ray freedom of the state vector.
+- A Peirce basis is fixed up to a one-parameter complex representative, and the fixing condition is the ray freedom of the state vector.
 - Every element factorises as $\tilde U(re_t+s\tilde Z)\tilde V^{*}$ with $r,s$ its singular values, independent of the root.
 - The two-outcome observables are the Hermitian roots; the pure states are the Hermitian idempotents; the mixed states are neither.
 

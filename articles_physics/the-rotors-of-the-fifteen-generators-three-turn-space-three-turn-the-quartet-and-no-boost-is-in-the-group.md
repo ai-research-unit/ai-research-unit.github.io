@@ -212,7 +212,7 @@ At $\theta=0.5$ the coefficients are $0.5403$ and $0.8415$, that is $\cos1$ and 
 
 **So the second claim has a true form and a false form.** True: left and right multiplication are the two triples of rotors, each a group of rotors of the carrier's four-space, and together they generate the spatial rotors through the paired action. False: either factor alone is a group of spatial rotors. The pair is what turns space.
 
-**And a made local version would be a third thing.** If these six arrays were made local, their exponentials on an isospin doublet would be rotations of a two-state space, the Bloch ball. **That is a statement about a different model**: this one makes the local fifteen and nothing else, and the doublet action is written downstream, where the weak pair is an index and not a piece of the algebra.
+**And a local version would be a third thing.** If these six arrays were made local, their exponentials on an isospin doublet would be rotations of a two-state space, the Bloch ball. **That is a statement about a different model**: this one makes the local fifteen and nothing else, and the doublet action is written downstream, where the weak pair is an index and not a piece of the algebra.
 
 ## The Ledger of the Fifteen
 

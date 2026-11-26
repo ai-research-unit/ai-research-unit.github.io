@@ -50,7 +50,7 @@ so the rapidity is the kinetic one and the four-velocity is the trajectory's. Th
 
 The two frames and their relations. The canonical wavevector is $\tilde\Upsilon_\Phi=i(\frac{E}{h\,c})e_{t}+\frac{\vec p}{h}$; the mechanical one is $i(\frac{2\pi \mathcal E}{h\,c})e_{t}+\frac{2\pi \vec\pi}{h}$; and the two differ by the potential's slots. **The word's boost is the mechanical one's inverse square, the canonical one's is not**, and the difference is the whole content of the coupled polar chart.
 
-The gauge statement, in the parent's sharpest form. For a pure gradient potential $A_{\imath}=\partial_{\imath}\Lambda$, the coupled derivative acts as $i\partial_{\imath}(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda)$: the entire effect of the potential is a reparameterisation of one coordinate. That is why the criterion must live on the invariant combination and why the chart's symmetry group is a translation.
+The connection statement, in the parent's sharpest form. For a pure gradient potential $A_{\imath}=\partial_{\imath}\Lambda$, the coupled derivative acts as $i\partial_{\imath}(\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\Lambda)$: the entire effect of the potential is a reparameterisation of one coordinate. That is why the criterion must live on the invariant combination and why the chart's symmetry group is a translation.
 
 ## The Criterion on the Mechanical Wavevector
 
@@ -177,7 +177,7 @@ The order structure is the free one, and the equation being first order means th
 
 ## Further Reading
 
-- [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), the parent: the one addition, the kinetic velocity, the gauge reparameterisation and the spin-transport limitation.
+- [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), the parent: the one addition, the kinetic velocity, the reparameterisation and the spin-transport limitation.
 - [The Dirac Equation in the Non-Quantum Limit](the-dirac-equation-in-the-non-quantum-limit.html), the free companion: the four brackets and the three laws.
 - [The Coupled Dirac Equation in the Non-Quantum Limit](the-coupled-dirac-equation-in-the-non-quantum-limit.html), for the Lorentz force and the precession verified from the wave.
 - [Relativistic Mechanics from the Dirac Wave](relativistic-mechanics-from-the-dirac-wave.html), for the velocity's transport and the Thomas term.
