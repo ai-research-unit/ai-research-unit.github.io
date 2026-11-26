@@ -160,7 +160,7 @@ which is idempotent, Hermitian, and of trace $2k+1$.
 
 **Against the product of carriers.** The product of two summands is not a summand; it is a subspace whose projection on the summands is computed in *The Truncated Rule: the Product of Two Carriers Is Not a Carrier*. The decomposition is a decomposition of the space and not of the algebra as an algebra.
 
-**Against the module.** The module has label $\tfrac32$ and appears in the algebra only as a minimal left ideal, not as a summand, as *Where the Half-Integers Go in $M_4(\mathbb{C})$* explains.
+**Against the module.** The module has label $\tfrac32$ and appears in the algebra only as a minimal left ideal, not as a summand, as *Four Integer Labels and One Half-Integer Module: $\tfrac32$ Is a Weight, Not a Label* explains.
 
 ## Summary
 
@@ -189,4 +189,4 @@ At order $n$ the decomposition is $\bigoplus_{k=0}^{n-1}V_k$ with $\sum(2k+1)=n^
 - [The Four Weights of the Module and the Half Angle at $n=4$](the-four-weights-of-the-module-and-the-half-angle-at-n-4.html), for the weights of the module.
 - [The Truncated Rule: the Product of Two Carriers Is Not a Carrier](the-truncated-rule-the-product-of-two-carriers-at-n-4.html), for the product.
 - [The Clebsch–Gordan Decomposition of the Biquaternion Algebra](the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html), for the row at order two.
-- [Where the Half-Integers Go in $M_4(\mathbb{C})$](where-the-half-integers-go-in-m4c.html), for the label $\tfrac32$.
+- [Four Integer Labels and One Half-Integer Module: $\tfrac32$ Is a Weight, Not a Label](four-integer-labels-and-one-half-integer-module.html), for the label $\tfrac32$.

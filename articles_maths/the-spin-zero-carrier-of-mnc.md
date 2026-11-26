@@ -148,4 +148,4 @@ The spin-zero carrier is the line of scalars. It is the fixed space of the princ
 - [Introduction to the Spin-Zero Centre Subspace](the-spin-zero-centre-subspace.html), for the case $n=2$.
 - [The Spin-One Carrier of $M_n(\mathbb{C})$: the Three-Dimensional $V_1$](the-spin-one-carrier-of-mnc.html), for the neighbouring carrier.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the trace.
-- [Where the Half-Integers Go in $M_n(\mathbb{C})$](where-the-half-integers-go-in-mnc.html), for the labels that are not here.
+- [Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition](integer-labels-on-the-algebra-a-half-integer-on-the-module.html), for the labels that are not here.

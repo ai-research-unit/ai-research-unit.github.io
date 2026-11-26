@@ -6,7 +6,7 @@
 
 **The order of the article.** The first section states the identity $2j=n-1$ and derives the three invariants of the slot. The second lists the two rows side by side. The third proves the parallel and identifies what differs. The fourth treats the odd orders, where the slot is a summand. The fifth draws the boundary.
 
-**It assumes** *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$* and *Where the Half-Integers Go in $M_4(\mathbb{C})$*. The row at order two is *The Slot and the Summand*.
+**It assumes** *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$* and *Four Integer Labels and One Half-Integer Module: $\tfrac32$ Is a Weight, Not a Label*. The row at order two is *The Slot and the Summand*.
 
 **The result in one line.** The slot is $\tfrac{n-1}{2}$, its module has dimension $n$ and $n$ weights, and its top weight is $\tfrac{n-1}{2}$; at $n=4$ the slot is $\tfrac32$ and the summands are $0,1,2,3$.
 
@@ -121,8 +121,8 @@ At odd order the slot is an integer and is a summand, and the module is a carrie
 
 ## Further Reading
 
-- [Where the Half-Integers Go in $M_4(\mathbb{C})$](where-the-half-integers-go-in-m4c.html), for the half-integer.
+- [Four Integer Labels and One Half-Integer Module: $\tfrac32$ Is a Weight, Not a Label](four-integer-labels-and-one-half-integer-module.html), for the half-integer.
 - [The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$](the-clebsch-gordan-decomposition-of-m4c.html), for the summands.
-- [Why the Conjugation Labels Are Integer at $n=4$](why-the-conjugation-labels-are-integer-at-n-4.html), for the parity argument.
+- [The Conjugation Labels at $n=4$](the-conjugation-labels-at-n-4.html), for the parity argument.
 - [The Slot and the Summand](the-slot-and-the-summand.html), for the row at order two.
 - [The Law of the Module and the Chain of Carriers](the-law-of-the-module-and-the-chain-of-carriers.html), for the general order.

@@ -138,5 +138,5 @@ The framework shares the Lie algebra of the electroweak pair, $\mathfrak{u}(2)=\
 - [Representation Is a Function of Spin](representation-is-a-function-of-spin.html) — why the representation is read from the carrier, and the one row in three that matches.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the two letters, the selection rule, and the absent chiral symmetry group.
 - [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html) — the compact factor's full connection construction.
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) — the ceiling, for the factor that is not there.
+- [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html) — the ceiling, for the factor that is not there.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html) — why no larger group fixes the relative coupling.

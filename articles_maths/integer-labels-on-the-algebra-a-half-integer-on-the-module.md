@@ -1,4 +1,4 @@
-# __Where the Half-Integers Go in $M_n(\mathbb{C})$__
+# __Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition__
 
 ## Introduction
 

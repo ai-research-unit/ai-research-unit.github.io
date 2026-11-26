@@ -8,7 +8,7 @@
 
 **Why the article is needed.** The biquaternion article builds four closures with four different rules, and the rules are real-form constructions. At general $n$ the construction that produces the closures disappears, because the carriers are subspaces of the algebra by definition. What remains is the multiplicative closure, which the biquaternion article does not need and the general case does. A reader who looks for the four rules at $n=4$ will not find them, and should be told why.
 
-**Boundaries.** The decomposition is *The Spin Decomposition of $M_n(\mathbb{C})$*; the individual carriers are *The Spin-Zero Carrier of $M_n(\mathbb{C})$*, *The Spin-One Carrier of $M_n(\mathbb{C})$* and *Where the Half-Integers Go in $M_n(\mathbb{C})$*; the biquaternion original is *From the Spin to the Carriers and the Closures*.
+**Boundaries.** The decomposition is *The Spin Decomposition of $M_n(\mathbb{C})$*; the individual carriers are *The Spin-Zero Carrier of $M_n(\mathbb{C})$*, *The Spin-One Carrier of $M_n(\mathbb{C})$* and *Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition*; the biquaternion original is *From the Spin to the Carriers and the Closures*.
 
 **Conventions.** A *carrier* is a summand of $M_n$ under the principal copy. The *linear closure* of a carrier is the smallest invariant subspace containing the module; the *multiplicative closure* is the smallest subalgebra containing the carrier.
 

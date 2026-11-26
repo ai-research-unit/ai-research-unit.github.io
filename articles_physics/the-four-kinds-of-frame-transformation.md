@@ -6,7 +6,7 @@ Frames can be rotated, boosted, sheared, or screwed. The four words name the fou
 
 This article states the classification, gives the eigenvalues of each kind, says what each kind does to a frame and to the light cone, writes the four in the algebra, and isolates the two exceptional cases at $\tau=\pm2$.
 
-The article assumes *The Exponential Map from Algebra to Group* for the parametrisation, *When the Axes Commute: The Normal Transformations* for the normal class, *The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined* for what the spectrum does and does not fix, and *Composition of Two Boosts: The Commutator Table and Non-Additivity* for the non-commutativity that produces the fourth kind.
+The article assumes *The Exponential Map from Algebra to Group* for the parametrisation, *Boosts and Rotations Commute on Collinear Axes: The Normal Transformations* for the normal class, *The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined* for what the spectrum does and does not fix, and *Composition of Two Boosts: The Commutator Table and Non-Additivity* for the non-commutativity that produces the fourth kind.
 
 ## The Classifier
 
@@ -83,7 +83,7 @@ $$
 \mu=re^{i\theta_{\mathrm{axr}}/2},\qquad r>0,\ r\neq1,\ \theta_{\mathrm{axr}}\notin\{0,2\pi\},
 $$
 
-and the element is conjugate to a boost times a rotation about the *same* axis, with both parameters nonzero. That is the normal element of *When the Axes Commute: The Normal Transformations* in its non-degenerate case, and the name is the classical one for a screw motion.
+and the element is conjugate to a boost times a rotation about the *same* axis, with both parameters nonzero. That is the normal element of *Boosts and Rotations Commute on Collinear Axes: The Normal Transformations* in its non-degenerate case, and the name is the classical one for a screw motion.
 
 ### Why These Are All
 
@@ -219,5 +219,5 @@ The Lorentz group has four conjugacy classes, classified by the trace $\tau=2Q_t
 - S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press, 1978 — conjugacy classes of $SL(2,\mathbb{C})$ and their geometric meaning.
 - R. Penrose and W. Rindler, *Spinors and Space-Time*, Vol. 1, Cambridge University Press, 1984 — the action of Lorentz transformations on the celestial sphere and the fixed null directions.
 - *The Exponential Map from Algebra to Group* — the chart whose cut locus is the parabolic class.
-- *When the Axes Commute: The Normal Transformations* — the normal class, of which the loxodromic case is the non-degenerate part.
+- *Boosts and Rotations Commute on Collinear Axes: The Normal Transformations* — the normal class, of which the loxodromic case is the non-degenerate part.
 - *The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined* — what the eigenvalues of these four classes do and do not fix.

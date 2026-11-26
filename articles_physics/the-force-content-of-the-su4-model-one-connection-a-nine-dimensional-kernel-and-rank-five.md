@@ -307,7 +307,7 @@ equals the trace times the unit, so it is blind to the scalar-free part — whic
 
 ## Further Reading
 
-- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The carrier, the declaration and the content.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The carrier, the declaration and the content.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The display, its variation, and the statement that it is a transcription.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The adjoint spectrum, the kernel and the sextet.
 - [The Centraliser, the Complement, and the Index](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The three words *survives*, *breaks* and *arrives*.
@@ -321,4 +321,4 @@ equals the trace times the unit, so it is blind to the scalar-free part — whic
 - [The Lagrangian and Linearised Gravity](the-lagrangian-and-linearised-gravity.html). The quadratic action and its gaps.
 - [The Sector Hub](the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html). What the family reaches in each of the four sectors.
 - [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html). The ceiling and the four unbuilt sectors.
-- [Why There Is No Confinement Above $M_C$](why-there-is-no-confinement-above-m-c.html). The weakly coupled phase and the two mechanisms kept apart.
+- [No Confinement Above $M_C$: Eleven E-Folds of Perturbative Coupling](no-confinement-above-m-c.html). The weakly coupled phase and the two mechanisms kept apart.

@@ -286,7 +286,7 @@ The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). Why the three is accommodated and not derived.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The seven or eight parameters that a neutrino mass costs.
 - [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html). The vacuum angle and the mechanism that sets it to zero.
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Why the group factor of the first table lies outside the algebra.
+- [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html). Why the group factor of the first table lies outside the algebra.
 - [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html). What agreement with this content does and does not establish.
 
 The two companions this article names but does not carry — the QCD Lagrangian and the electroweak precision observables — are written, as articles 9 and 8 of the series, and the references above point to them.

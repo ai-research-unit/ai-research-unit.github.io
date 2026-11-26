@@ -1,4 +1,4 @@
-# __Which Spin Lives in Which Reading__
+# __Two Numbers and Two Readings: $\tfrac32$ for the Module, $3$ for the Largest Carrier__
 
 ## Introduction
 
@@ -6,11 +6,11 @@
 
 **The order of the article.** The two readings come first; the labels and their meaning second. The passage between the readings follows, then the mistaken uses, and the reading closes the article.
 
-**It assumes** *The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators*, *Why the Conjugation Labels Are Integer* and *The Four Carrier Lists*. **The row of the elements is** where the two numbers are $\tfrac12$ and $1$, and the same separation applies.
+**It assumes** *The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators*, *The Conjugation Labels Are Integer* and *The Four Carrier Lists*. **The row of the elements is** where the two numbers are $\tfrac12$ and $1$, and the same separation applies.
 
 **The result in one line.** The label $\tfrac32$ measures the module under the left action, the label $3$ measures the largest carrier under the conjugation action, and the two differ by a factor two, the square of the module.
 
-**Boundaries.** The labels of the two rows are *The Slot and the Summand*; the integrality of the second reading is *Why the Conjugation Labels Are Integer*; the four lists are *The Four Carrier Lists*.
+**Boundaries.** The labels of the two rows are *The Slot and the Summand*; the integrality of the second reading is *The Conjugation Labels Are Integer*; the four lists are *The Four Carrier Lists*.
 
 ## The Two Readings
 
@@ -113,6 +113,6 @@
 ## Further Reading
 
 - [The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators](the-slot-and-the-summand.html), for the module labels of the two rows.
-- [Why the Conjugation Labels Are Integer](why-the-conjugation-labels-are-integer.html), for the carrier labels.
+- [The Conjugation Labels Are Integer](the-conjugation-labels-are-integer.html), for the carrier labels.
 - [The Four Carrier Lists](the-four-carrier-lists-of-one-algebra.html), for the actions and their decompositions.
 - [The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$](the-spin-group-the-principal-copy-and-the-kernel.html), for the copy that carries both labels.

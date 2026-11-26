@@ -23,7 +23,7 @@ The article proceeds by deriving each of these interpretations and then stating 
 - Companion article *The Minimal Coupling in Biquaternionic Form*, for the connection and the covariant derivative.
 - Companion article *The Covariant Derivative and Connection in Biquaternionic Form*, for the non-abelian connection.
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the instanton boundary map.
-- Companion article *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the structure group and its ceiling.
+- Companion article *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators*, for the structure group and its ceiling.
 
 ## The Two Spheres Inside the Algebra
 

@@ -250,7 +250,7 @@ Fifteen recomputations, all on the quoted array, at $\operatorname{tr}$ in the f
 
 - [The Fifteen AXF Matrices of the Bosons in Detail: Every Matrix, Every Boson, Its Entries, Its Spectrum and Its Fate](the-15-axf-matrices-of-the-bosons-in-detail.html). The article this one quotes; its §$B'$ is the source of all five quotations.
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). Where $iD=i(W_{xx}+W_{yy}+W_{zz})$ is built from one sum and two differences, and why the factor $i$ is forced.
-- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The declaration (A), which is the one input the quotations do not contain.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The declaration (A), which is the one input the quotations do not contain.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The array's address in the group, and why $B-L$ rather than hypercharge is what $\mathrm{SU}(4)$ supplies.
 - [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). Where $Y=T_{3R}+\tfrac12(B-L)$ comes from, and the mixing that leaves the corner's eigenvalue alone.
 - [The Electroweak Symmetry group and the Hypercharge Assignment](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html). The anomaly system solved in full: the three rays the comparison section trades against one trace.

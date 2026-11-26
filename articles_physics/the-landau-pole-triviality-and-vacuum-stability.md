@@ -188,7 +188,7 @@ The numbers. At the Planck scale the three couplings are $0.476$, $0.504$ and $0
 
 Why this is worth a section. Because it is the strongest single hint that the Standard Model is a fragment of something larger, and because it is *quantitatively* strong: three couplings that start two orders of magnitude apart and converge to within $6\%$ at $1.6\times10^{9}$ J is not a coincidence that happens by chance. The standard reading is that a Grand Unified group completes the meeting at a scale near $1.6\times10^{6}$ J, and that the mismatch at the Planck scale is the footprint of the states that complete it.
 
-**What the framework can say, which is nothing.** [The ceiling article](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) established that no compact algebra of dimension above four fits inside $\mathbb{B}$, so no Grand Unified group is available and the near miss has no completion here. This is the cleanest case in the corpus where an empirical hint points at precisely the structure the algebra forbids.
+**What the framework can say, which is nothing.** [The ceiling article](the-compact-sector-of-the-biquaternions-is-u2.html) established that no compact algebra of dimension above four fits inside $\mathbb{B}$, so no Grand Unified group is available and the near miss has no completion here. This is the cleanest case in the corpus where an empirical hint points at precisely the structure the algebra forbids.
 
 What the near miss does not prove. That unification happens, that it happens at $1.6\times10^{6}$ J, or that a GUT exists. It says that the three couplings' trajectories converge, which is a fact about the spectrum the model happens to have. Supersymmetry changes the convergence point; a different matter content changes it too. The observation is robust; its interpretation is not.
 
@@ -339,7 +339,7 @@ Four possibilities, with their consequences.
 | A GUT at $1.6\times10^{6}$ J | The near miss is completed; $g_{\mathrm Y}$ runs into a non-abelian group, so no pole |
 | Supersymmetry | All three change: two Higgs doublets, a different quartic, and the couplings meet exactly |
 
-**Which of these the framework can express.** The last two, no: [the ceiling](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) forbids both a GUT group and a second confining sector, so neither a GUT nor compositeness is available. The first, yes in principle — new physics at $1.6\times10^{1}$ J is not a statement about the algebra — but the framework offers no candidate for it. The second, no, for the ceiling's reason.
+**Which of these the framework can express.** The last two, no: [the ceiling](the-compact-sector-of-the-biquaternions-is-u2.html) forbids both a GUT group and a second confining sector, so neither a GUT nor compositeness is available. The first, yes in principle — new physics at $1.6\times10^{1}$ J is not a statement about the algebra — but the framework offers no candidate for it. The second, no, for the ceiling's reason.
 
 The honest position. Of the four standard escapes, two are forbidden by the framework's own structure and two it cannot populate. That is a stronger statement than silence, and it is worth stating plainly: the framework's ceiling costs it exactly the escape routes that this article's three problems require.
 
@@ -414,7 +414,7 @@ The framework supplies one structural result — the sign of $b_1$ — one regul
 - [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html). The other consequence of the scalar sector's couplings, and the same discipline about what a bound means.
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html). The potential whose quartic is the subject of half this article.
 - [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). $g_{\mathrm Y}$, $\varpi_{\mathrm{cpl}}$ and $m_H$ among the nineteen, and what kind of number each is.
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Why neither a GUT nor a composite Higgs can be built here.
+- [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html). Why neither a GUT nor a composite Higgs can be built here.
 - [The Path Integral in Biquaternionic Form](the-path-integral-in-biquaternionic-form.html). Why a bounce cannot be computed inside the algebra.
 - [The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form](the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html). The object whose quartic changes sign, in the framework's language.
 - [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html). The conditions on the matter content that the $\beta$ coefficients inherit.

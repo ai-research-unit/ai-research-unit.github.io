@@ -440,7 +440,7 @@ The framework has no route to the angle, and the companion article says so. The 
 - [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html). Why $Q=T_3+Y$ holds, which this article uses to eliminate $Y$.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The neutral current in the assembled sum.
 - [Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html). The *no route yet* row and the two settling objects.
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The $\mathrm{U}(2)$ whose Cartan is the two-dimensional neutral space.
+- [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html). The $\mathrm{U}(2)$ whose Cartan is the two-dimensional neutral space.
 - [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html). The vector-like character of the framework's abelian factor, which blocks the chiral neutral current.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The couplings $g$ and $g_{\mathrm Y}$ in the count of nineteen.
 

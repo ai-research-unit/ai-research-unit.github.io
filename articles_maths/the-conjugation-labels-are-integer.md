@@ -1,4 +1,4 @@
-# __Why the Conjugation Labels Are Integer: the Kernel $\{\pm\mathrm I\}$__
+# __The Conjugation Labels Are Integer: Differences of the Module Weights__
 
 ## Introduction
 

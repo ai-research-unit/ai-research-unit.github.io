@@ -6,7 +6,7 @@ Two boosts do not compose to a boost. Their product is a boost times a rotation,
 
 This article prints the bracket table of the six generators, proves the identity $[\tilde X_\alpha,\tilde X_\beta]=2\vec e_\alpha\times\vec e_\beta$ that the table encodes, computes the product of two boosts exactly, identifies the rotation factor's axis and angle, and evaluates the angle in the two regimes a reader needs.
 
-The article assumes *The Six Generators and Their Commutators* for the table's derivation and sign conventions, *When the Axes Commute: The Normal Transformations* for the case in which the rotation vanishes, and *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* for the decomposition. It feeds *The Four Kinds of Frame Transformation* and the relativistic-velocity articles of the corpus.
+The article assumes *The Six Generators and Their Commutators* for the table's derivation and sign conventions, *Boosts and Rotations Commute on Collinear Axes: The Normal Transformations* for the case in which the rotation vanishes, and *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* for the decomposition. It feeds *The Four Kinds of Frame Transformation* and the relativistic-velocity articles of the corpus.
 
 ## The Bracket Table
 
@@ -278,4 +278,4 @@ The bracket table has three blocks; the third, $[K_a,K_b]=-\epsilon_{abc}J_c$, i
 - L. H. Thomas, "The motion of the spinning electron", *Nature* 117 (1926) 514 — the original observation that the composition of boosts is not a boost.
 - E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group", *Annals of Mathematics* 40 (1939) 149 — the rotation that appears when a boost is followed by another.
 - *The Six Generators and Their Commutators* — the table's derivation and signs.
-- *When the Axes Commute: The Normal Transformations* — the exact vanishing condition.
+- *Boosts and Rotations Commute on Collinear Axes: The Normal Transformations* — the exact vanishing condition.

@@ -497,7 +497,7 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 - [The Anti-Hermitian Derivations of $M_4(\mathbb{C})$ as $\mathfrak{su}(4)$](../articles_maths/the-anti-hermitian-derivations-of-m4c-as-su4.html). The fifteen in the operator basis, numbered $G_1$ to $G_{15}$.
 - [The Rotors of the Fifteen Generators](the-rotors-of-the-fifteen-generators.html). What each array does when exponentiated, and why no boost is in the group.
 - [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). Every bracket of every array with every other, printed block by block, with the six rules that produce the table.
-- [Classification of the Bosons: Sixteen Cells, Fifteen Generators](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid and the ledger of the spectrum.
+- [Classification of the Bosons: One Grid, Fifteen Generators](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid and the ledger of the spectrum.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Where the four absent particles come from.
-- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The declaration, the carrier, and the real $\mathfrak{so}(4)$ inside the fifteen.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The declaration, the carrier, and the real $\mathfrak{so}(4)$ inside the fifteen.
 - W. Fulton and J. Harris, *Representation Theory: A First Course*, Springer, 1991 — one-sided actions, the anti-homomorphism of the right action, and why the two commute.

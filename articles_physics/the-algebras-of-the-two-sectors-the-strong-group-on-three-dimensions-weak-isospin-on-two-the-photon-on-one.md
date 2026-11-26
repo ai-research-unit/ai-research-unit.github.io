@@ -32,7 +32,7 @@ $$
 
 **What the article does not establish.** No coupling, no dynamics, no spectrum. The couplings are [The Connection Below the Breaking: Three Pieces, Three Couplings, and One Relation from Orthogonality](the-connection-below-the-breaking.html). The states are [The Quantum Numbers Below the Breaking](the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html).
 
-**Where the ceiling is.** The reason $\mathrm{SU}(3)$ is posited and not derived is [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). That article is the boundary statement this one uses and does not repeat.
+**Where the ceiling is.** The reason $\mathrm{SU}(3)$ is posited and not derived is [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html). That article is the boundary statement this one uses and does not repeat.
 
 ## The Two Sectors and the Algebras They Use
 
@@ -63,7 +63,7 @@ $$
 
 **2.3 What the strong group cannot see.** $\mathfrak{su}(3)$ is blind to the lepton line and blind to both weak factors. That blindness is not an accident of the embedding: it is the content of $X e_t=0$, which says the algebra annihilates the fourth direction. Every statement about the block's blindness in the corpus reduces to that equation.
 
-**2.4 Why the algebra is posited.** The biquaternion algebra has three imaginary units and its rotors form $\mathrm{SU}(2)$. It has no eight-dimensional compact real form, so no amount of reading the algebra produces $\mathfrak{su}(3)$ acting on three complex dimensions. The strong algebra is therefore an input: the model declares a $\mathfrak{su}(3)$ on the triplet, and everything downstream is consistent with that declaration rather than derived from it. The full argument, with the dimension count that rules out the alternatives, is [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html).
+**2.4 Why the algebra is posited.** The biquaternion algebra has three imaginary units and its rotors form $\mathrm{SU}(2)$. It has no eight-dimensional compact real form, so no amount of reading the algebra produces $\mathfrak{su}(3)$ acting on three complex dimensions. The strong algebra is therefore an input: the model declares a $\mathfrak{su}(3)$ on the triplet, and everything downstream is consistent with that declaration rather than derived from it. The full argument, with the dimension count that rules out the alternatives, is [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html).
 
 ## Weak Isospin: Two Copies, Two Modules, One Algebra
 
@@ -159,7 +159,7 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 
 **7.1 The algebra and the module.** $\mathfrak{su}(2)_L$ and $\mathfrak{su}(2)_R$ are isomorphic; the sectors are not. Every statement that treats the two as interchangeable is a statement about the algebra alone and is silent about the physics.
 
-**7.2 Posited and derived.** The strong algebra is posited, the weak factors are read off the rotors, hypercharge and charge are derived from the two. Mixing these three provenances is the commonest error in reading the model, and the corpus's own summary of it is [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html).
+**7.2 Posited and derived.** The strong algebra is posited, the weak factors are read off the rotors, hypercharge and charge are derived from the two. Mixing these three provenances is the commonest error in reading the model, and the corpus's own summary of it is [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html).
 
 **7.3 $\mathfrak u(1)$ as a factor and $\mathfrak u(1)$ as a direction.** $B-L$ is a factor at $M_C$, where it is formed; below $M_C$ it is a global charge. $Y$ and $Q$ are never factors: they are directions in a product. A coupling can be assigned to a factor; a direction's coupling is a combination of the factors'.
 
@@ -190,7 +190,7 @@ It is the unique direction annihilated by both vacuum lines, which is why it sur
 
 ## Further Reading
 
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The ceiling, with the dimension count that produces it.
+- [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html). The ceiling, with the dimension count that produces it.
 - [$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group](su2l-times-su2r-two-sides-six-generators-one-group.html). The two weak copies and the parity exchange.
 - [The Electroweak Symmetry Group and the Hypercharge Assignment: The Group and the Derived $Y$](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html). Hypercharge as an anomaly problem rather than a combination.
 - [The Connection Below the Breaking: Three Pieces, Three Couplings, and One Relation from Orthogonality](the-connection-below-the-breaking.html). The couplings these algebras carry.

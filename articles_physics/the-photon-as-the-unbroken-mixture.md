@@ -249,10 +249,10 @@ Three neutral connections are not three scalars. All three are connections, and 
 
 ## Further Reading
 
-- [Classification of the Bosons in the $\mathrm{SU}(4)$ Model: Sixteen Cells, Fifteen Generators, Nine Massless and Six Heavy](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The chain, the neutral mass matrix, and the same triple in its own place.
+- [Classification of the Bosons in the $\mathrm{SU}(4)$ Model: One Grid, Fifteen Generators, Nine Massless and Six Heavy](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The chain, the neutral mass matrix, and the same triple in its own place.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The photon's coefficients in the three connections, and the value of the angle they produce.
 - [Charge Quantisation from the Fourth Line: One Trace, One Third](charge-quantisation-from-the-fourth-line-one-trace-one-third.html). The trace that fixes the $B-L$ eigenvalues, and the $B-L$ normalisation behind $\sqrt{2/3}$.
-- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The group, the sixteen, and the covariant derivative whose neutral part is mixed here.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The group, the sixteen, and the covariant derivative whose neutral part is mixed here.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html). The category's own construction, which the mixture leaves intact (*The Photon and the Corpus's Own Electromagnetism*).
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html). $F$ as a bivector, and why a linear combination adds no term to it.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The same field in the category's own language, with its polarisation and helicity, and no symmetry group.

@@ -40,7 +40,7 @@
 
 **Why not.** The algebra's compact group is $\mathrm{U}(2)$, and the spatial block needs $SU(3)$.
 
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) — the dimension ceiling.
+- [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html) — the dimension ceiling.
 - [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html) — why an embedding is not a derivation.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html) — what the transcription supplies and the family does not.
 

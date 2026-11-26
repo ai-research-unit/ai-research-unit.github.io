@@ -1,4 +1,4 @@
-# __Where the Rotor Leaves $M_4(\mathbb{C})$: the Even Subalgebra and $Cl(4)$__
+# __Rotors Are Even Words in $M_4(\mathbb{C})$: $M_2\oplus M_2$ and $\mathrm{Spin}(4)$__
 
 ## Introduction
 

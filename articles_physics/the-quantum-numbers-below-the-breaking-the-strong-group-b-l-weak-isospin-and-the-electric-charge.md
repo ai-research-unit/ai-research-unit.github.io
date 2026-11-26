@@ -27,7 +27,7 @@ $$
 
 **What the article establishes.** The criterion and its proof; the table of charges with the scale at which each is lost; the two charges that survive — the strong charge and the electric charge — with the different senses in which they survive; the exact status of $B-L$; the reason $B$ and $L$ separately are not symmetries and why the proton is stable anyway; the charges that are accidents of the field content; and the anomalous combination.
 
-**What the article does not establish.** No dynamics and no decay rate. The proton's stability is treated in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html), and the sphaleron statement in [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html).
+**What the article does not establish.** No dynamics and no decay rate. The proton's stability is treated in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html), and the sphaleron statement in [Three Gaps in the Standard Model: Dark Matter, Baryogenesis and the Sphaleron](three-gaps-in-the-standard-model.html).
 
 **Where the masses are.** [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) lists the bosons. This article is the same list read as charges.
 
@@ -124,7 +124,7 @@ $$
 
 **7.2 Why $B-L$ escapes.** Its current has vanishing anomaly coefficients. The triangle coefficient of $B-L$ cancels inside a generation for the same reason every other anomaly does, the trace $\operatorname{tr}_{\mathbf4}(B-L)=0$ over the four entries of the carrier. So the current is conserved even where it is only global, and the sphaleron has nothing to act on. Above $M_C$ the direction is inside a simple group and there is no separate current to discuss.
 
-**7.3 Why it matters.** Sphaleron violation of $B+L$ with $B-L$ conserved is the mechanism that makes leptogenesis possible and that erases a $B+L$ asymmetry. Its absence for $B-L$ is what leaves an asymmetry to survive. **Below $M_C$ the conservation is exact at the level of the anomaly and approximate at the level of the operators**, and the second half is the qualification §4.2 puts on the first. The details are [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html).
+**7.3 Why it matters.** Sphaleron violation of $B+L$ with $B-L$ conserved is the mechanism that makes leptogenesis possible and that erases a $B+L$ asymmetry. Its absence for $B-L$ is what leaves an asymmetry to survive. **Below $M_C$ the conservation is exact at the level of the anomaly and approximate at the level of the operators**, and the second half is the qualification §4.2 puts on the first. The details are [Three Gaps in the Standard Model: Dark Matter, Baryogenesis and the Sphaleron](three-gaps-in-the-standard-model.html).
 
 ## The Checks
 
@@ -177,5 +177,5 @@ $$
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The same criterion read as a mass spectrum.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The $B-L$ of the leptoquarks and the absent diquark channel.
 - [Charge Quantisation from the Fourth Line: One Trace, One Third](charge-quantisation-from-the-fourth-line-one-trace-one-third.html). Where the charge lattice comes from.
-- [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html). The anomalous combination and its consequences.
+- [Three Gaps in the Standard Model: Dark Matter, Baryogenesis and the Sphaleron](three-gaps-in-the-standard-model.html). The anomalous combination and its consequences.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). The strong charge exact and confined.

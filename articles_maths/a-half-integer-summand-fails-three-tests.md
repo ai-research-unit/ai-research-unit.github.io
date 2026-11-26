@@ -1,4 +1,4 @@
-# __What a Half-Integer Summand Would Require__
+# __A Half-Integer Summand Fails Three Tests: Weight, Casimir and Type__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 **The order of the article.** The requirement on the weights comes first; the requirement on the Casimir second. The requirement on the type follows, then the single reason, and the reading closes the article.
 
-**It assumes** *The Clebsch–Gordan Decomposition of the Operators*, *Why the Conjugation Labels Are Integer* and *The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$*. **The row of the elements is** where the same question asks for a carrier of label $\tfrac32$ in a four-dimensional algebra, and the same three requirements fail.
+**It assumes** *The Clebsch–Gordan Decomposition of the Operators*, *The Conjugation Labels Are Integer* and *The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$*. **The row of the elements is** where the same question asks for a carrier of label $\tfrac32$ in a four-dimensional algebra, and the same three requirements fail.
 
 **The result in one line.** A carrier of label $\tfrac52$ would need a weight $\tfrac52$ in the operator space, the Casimir eigenvalue $\tfrac{35}{4}$, and a quaternionic type; the largest weight is $3$, the eigenvalues are $12,6,2,0$, and the space is a square, so all three fail.
 
@@ -101,6 +101,6 @@
 ## Further Reading
 
 - [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the four labels present.
-- [Why the Conjugation Labels Are Integer](why-the-conjugation-labels-are-integer.html), for the integrality of the differences.
+- [The Conjugation Labels Are Integer](the-conjugation-labels-are-integer.html), for the integrality of the differences.
 - [The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$](the-spin-decomposition-four-carriers-and-the-weight-multiset.html), for the largest weight.
 - [The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms](the-quaternionic-structure-of-the-module-and-the-real-forms.html), for the type of a half-integer carrier.

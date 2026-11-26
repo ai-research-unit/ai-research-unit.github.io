@@ -12,7 +12,7 @@ What this article is not. It is not an argument that the framework is wrong. It 
 
 ## The Group and the Carriers
 
-The group. The compact algebra available in the biquaternions is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of real dimension four, as [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) establishes. The non-abelian factor is the algebra of the rotation group, $\mathrm{Spin}(3)$, and the abelian factor is the central phase $\mathrm{U}(1)$.
+The group. The compact algebra available in the biquaternions is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of real dimension four, as [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html) establishes. The non-abelian factor is the algebra of the rotation group, $\mathrm{Spin}(3)$, and the abelian factor is the central phase $\mathrm{U}(1)$.
 
 The carriers. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts on itself, and the fields of the three spins are carried by three different subspaces:
 
@@ -129,6 +129,6 @@ Where this is applied. The scalar row is applied in [The Higgs Mechanism in Biqu
 
 ## Further Reading
 
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), for the dimension four of the compact algebra.
+- [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html), for the dimension four of the compact algebra.
 - [The One-Sided Action and the Spin Representation](../articles_maths/the-one-sided-action-and-the-spin-representation.html), for the left action as the spin representation.
 - [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html), for the covariant derivative acting by left multiplication.

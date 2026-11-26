@@ -1,4 +1,4 @@
-# __Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)__
+# __The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators__
 
 ## Introduction
 
@@ -202,7 +202,7 @@ a quotient and not the product $SU(2)_L\times \mathrm{U}(1)_Y$. The two are loca
 
 It does not reach the first factor, $SU(3)_c$, at all. A field content in which the quarks carry a triplet index is therefore not obtainable from fields valued in $\mathbb B$ alone; the non-singlet sector requires an enlarged carrier, and the enlargement must supply a three-dimensional complex triplet space, which is exactly what $\mathbb B$-modules cannot do.
 
-**That last sentence is a Layer-A statement, and it is not a verdict on the frame.** Its scope is the group whose generators are *elements of the algebra*. When the group acts on a formal copy of the carrier — [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html), §*What Is Derived and What Is Declared* — the strong group is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_t)$, read off the split $\mathbb C e_t\oplus B_V$ and the carrier, and not off containment. **Both sentences are true and they are about different objects.** The ceiling forbids the strong group *inside* the algebra, and that stays forbidden; it does not speak to a strong group addressed by the endomorphisms and acting on a copy. **An address is not a containment**, and the distinction is the whole of *The $\mathrm{SU}(3)$ Wall, Restated*.
+**That last sentence is a Layer-A statement, and it is not a verdict on the frame.** Its scope is the group whose generators are *elements of the algebra*. When the group acts on a formal copy of the carrier — [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html), §*What Is Derived and What Is Declared* — the strong group is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_t)$, read off the split $\mathbb C e_t\oplus B_V$ and the carrier, and not off containment. **Both sentences are true and they are about different objects.** The ceiling forbids the strong group *inside* the algebra, and that stays forbidden; it does not speak to a strong group addressed by the endomorphisms and acting on a copy. **An address is not a containment**, and the distinction is the whole of *The $\mathrm{SU}(3)$ Wall, Restated*.
 
 **One part of the ceiling does carry over unchanged, and it must not be softened with the rest.** Chirality is not a question of dimension or of carriers: the algebra's product is two-sided, and no enlargement of the group supplies the one-sided action a chiral connection coupling needs. **That wall stands at both layers** — the group may be licensed, the matter representation may not be derived — and it is the wall the frame still quotes.
 

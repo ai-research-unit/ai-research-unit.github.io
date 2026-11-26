@@ -32,7 +32,7 @@
 
 **Proposition.** The action $\Phi_q(X)=\rho(q)X\rho(q)^{-1}$ is a real-linear action of $SU(2)$ by complex-linear maps, and its kernel is $\{\pm\mathrm I\}$.
 
-*Proof.* Conjugation by a matrix is complex-linear and invertible; it preserves the product, so it is an algebra automorphism; the kernel is computed as in *Why the Conjugation Labels Are Integer*.
+*Proof.* Conjugation by a matrix is complex-linear and invertible; it preserves the product, so it is an algebra automorphism; the kernel is computed as in *The Conjugation Labels Are Integer*.
 
 **Corollary.** The action is orthogonal for the Hermitian form $\operatorname{tr}(X^{\dagger}Y)$, and it preserves the real and imaginary parts of the entries.
 

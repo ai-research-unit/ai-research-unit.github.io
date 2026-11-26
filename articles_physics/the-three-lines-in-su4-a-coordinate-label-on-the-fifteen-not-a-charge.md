@@ -192,7 +192,7 @@ $$
 
 ## Further Reading
 
-- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html), for the group, the count of fifteen and the place of declaration (A).
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html), for the group, the count of fifteen and the place of declaration (A).
 - [The Counts of the Fifteen: Sixteen Cells, Six Pairs, Twelve Arrays, Fifteen Generators](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html), for the cell, plane and array vocabulary used above.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), for the same grid read with names in every cell, and for what changes at the transition.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html), for the covariant derivative, the one coupling and the local transformation quoted above.

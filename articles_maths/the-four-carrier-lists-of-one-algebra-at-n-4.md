@@ -10,7 +10,7 @@
 
 **The result in one line.** The same sixteen dimensions carry the four decompositions $7+5+3+1$, $1+15$, $1+3+3+9$ and $8+3+3+2$, each belonging to its own group.
 
-**Boundaries.** The article computes the four lists and identifies the group of each; it does not compute the Casimir of the three new groups, and it does not compare the lists element by element, which is *Which Spin Lives in Which Reading*.
+**Boundaries.** The article computes the four lists and identifies the group of each; it does not compute the Casimir of the three new groups, and it does not compare the lists element by element, which is *Two Numbers and Two Readings: $\tfrac32$ for the Module, $3$ for the Largest Carrier*.
 
 ## The Principal List
 
@@ -97,7 +97,7 @@ and each decomposition belongs to its own group.
 
 *Proof.* The comparison of the lists and the diagonal contents of the next article.
 
-**The boundary.** The article gives the four lists and their groups. The identification of each spin in each reading, and the diagonal contents of the factorised and block lists, is the subject of *Which Spin Lives in Which Reading*.
+**The boundary.** The article gives the four lists and their groups. The identification of each spin in each reading, and the diagonal contents of the factorised and block lists, is the subject of *Two Numbers and Two Readings: $\tfrac32$ for the Module, $3$ for the Largest Carrier*.
 
 ## The Four Readings in Detail
 
@@ -129,7 +129,7 @@ Each list is a decomposition of sixteen, and the four lists are different. A lab
 
 ## Further Reading
 
-- [Which Spin Lives in Which Reading at $n=4$](which-spin-lives-in-which-reading-at-n-4.html), for the table of spins.
+- [Spins $3$ to $\tfrac32$ by Reading at $n=4$: Principal and Factorised Lists](spins-by-reading-at-n-4.html), for the table of spins.
 - [The $\mathrm{SU}(2)$ of $M_4(\mathbb{C})$ Acting on Sixteen Dimensions](the-su2-of-m4c-acting-on-sixteen-dimensions.html), for the action itself.
 - [The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$](the-clebsch-gordan-decomposition-of-m4c.html), for the principal list.
 - [The Four Carrier Lists of One Algebra](the-four-carrier-lists-of-one-algebra.html), for the row at order two.

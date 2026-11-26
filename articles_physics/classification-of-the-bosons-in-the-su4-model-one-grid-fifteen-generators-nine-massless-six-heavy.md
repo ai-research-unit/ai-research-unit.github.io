@@ -1,4 +1,4 @@
-# __Classification of the Bosons in the $\mathrm{SU}(4)$ Model: Sixteen Cells, Fifteen Generators, Nine Massless and Six Heavy__
+# __Classification of the Bosons in the $\mathrm{SU}(4)$ Model: One Grid, Fifteen Generators, Nine Massless and Six Heavy__
 
 ## Introduction
 
@@ -37,7 +37,7 @@ $$
 
 **The zero above $M_C$ is exact and not a truncation.** With no condensate there is no direction for the mass form $M^{2}=2v^{2}\bigl[D,[D,\cdot\,]\bigr]$ to act on, so it is the zero operator on all fifteen; and an unbroken local symmetry forbids a vector mass at every order, so no loop restores one. **A reader who quotes "nine massless" for the $\mathrm{SU}(4)$ phase has quoted the broken phase's number**, and §*The Sextet, Which Is the Six Cells of the Mixed Band* gives the transition that changes it.
 
-**The model.** One model: **the $\mathrm{SU}(4)$ model**, set out in [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). **The name is stated first because every name here belongs to that model and to nothing else.** It is not the Standard Model's particle list and not a general classification of everything the algebra could describe: **it is the boson content of one group, on one grid, with one declaration.**
+**The model.** One model: **the $\mathrm{SU}(4)$ model**, set out in [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). **The name is stated first because every name here belongs to that model and to nothing else.** It is not the Standard Model's particle list and not a general classification of everything the algebra could describe: **it is the boson content of one group, on one grid, with one declaration.**
 
 **What is not in this model.** There is no $2\times2$ grid because there is no weak factor, and the neutral mixing that produces the photon needs two more neutral directions and a second vacuum. **The photon, the $Z$, the $W$'s and the $Z_R$ arrive at $M_C$**, and their classification is in the next section of the corpus. **This article classifies fifteen fields and it is complete when it has done so.**
 

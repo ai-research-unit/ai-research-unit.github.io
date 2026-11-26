@@ -8,7 +8,7 @@
 
 **Why the article is needed.** The rows $n=2$ and $n=4$ are the spinorial rows, and they are the ones the biquaternion series and its first generalisation treat. The rows $n=3$ and $n=5$ are tensorial, and their tables are short enough to write in full. Without them the reader has no example in which the half-integer is absent by construction, and the parity of $n$ looks like a technicality rather than a structural split.
 
-**Boundaries.** The decomposition is *The Spin Decomposition of $M_n(\mathbb{C})$*; the labels are *Where the Half-Integers Go in $M_n(\mathbb{C})$*; the even rows are *The Spin Content of $M_4(\mathbb{C})$*; the carrier tables are *The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$*.
+**Boundaries.** The decomposition is *The Spin Decomposition of $M_n(\mathbb{C})$*; the labels are *Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition*; the even rows are *The Spin Content of $M_4(\mathbb{C})$*; the carrier tables are *The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$*.
 
 **Conventions.** $j=\tfrac{n-1}{2}$, so $j=1$ at $n=3$ and $j=2$ at $n=5$. The weights of the module are $-j,\dots,j$.
 
@@ -145,7 +145,7 @@ For odd $n$ the principal copy factors through $SO(3)$, every label is an intege
 
 ## Further Reading
 - [The Spin Decomposition of $M_n(\mathbb{C})$: $n$ Carriers, One for Each Spin from $0$ to $n-1$](the-spin-decomposition-of-mnc.html), for the general theorem.
-- [Where the Half-Integers Go in $M_n(\mathbb{C})$](where-the-half-integers-go-in-mnc.html), for the parity argument in full.
+- [Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition](integer-labels-on-the-algebra-a-half-integer-on-the-module.html), for the parity argument in full.
 - [The Spin Content of $M_4(\mathbb{C})$](the-spin-content-of-m4c.html), for the even row $n=4$.
 - [The $SU(2)$ of $M_n(\mathbb{C})$ Acting on $n^2$ Dimensions](the-su2-of-mnc-acting-on-n-squared-dimensions.html), for the real action.
 - [The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$](the-carriers-the-closures-and-the-spin-of-mnc.html), for the counts.

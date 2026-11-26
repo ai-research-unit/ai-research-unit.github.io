@@ -1,4 +1,4 @@
-# __Why There Is No Confinement Above $M_C$__
+# __No Confinement Above $M_C$: Eleven E-Folds of Perturbative Coupling__
 
 ## Introduction
 

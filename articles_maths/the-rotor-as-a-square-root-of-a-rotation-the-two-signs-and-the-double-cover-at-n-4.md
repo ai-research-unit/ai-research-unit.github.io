@@ -6,7 +6,7 @@
 
 The article defines the rotor in the biquaternion algebra, proves that the two-sided action is a rotation and that the two signs give the same one, computes the covering and its kernel, exhibits the extraspecial group of order $32$ as the finite shadow of the cover, separates the two components of $O(4)$ from the connected $SO(4)$, and identifies the generator of $\pi_1(SO(4))=\mathbb{Z}_2$ with the belt.
 
-It assumes *Rotors Acting on the Bivector Space: the Adjoint Action at $n=4$* and *The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$*. The model at order two is *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover*; the frame that generates the even words is *Where the Rotor Leaves $M_4(\mathbb{C})$: the Even Subalgebra and $Cl(4)$*.
+It assumes *Rotors Acting on the Bivector Space: the Adjoint Action at $n=4$* and *The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$*. The model at order two is *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover*; the frame that generates the even words is *Rotors Are Even Words in $M_4(\mathbb{C})$: $M_2\oplus M_2$ and $\mathrm{Spin}(4)$*.
 
 ## The Rotor and the Two Signs
 
@@ -145,6 +145,6 @@ $SO(4)$ is connected and $O(4)$ has two components, separated by the sign of the
 
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for rotors, the two signs and the double cover.
 - [Rotors Acting on the Bivector Space: the Adjoint Action at $n=4$](rotors-acting-on-the-bivector-space-at-n-4-the-adjoint-action.html), for the action on the six-dimensional bivector space.
-- [Where the Rotor Leaves $M_4(\mathbb{C})$: the Even Subalgebra and $Cl(4)$](where-the-rotor-leaves-m4c-the-even-subalgebra-and-cl-4.html), for the even subalgebra and the frame.
+- [Rotors Are Even Words in $M_4(\mathbb{C})$: $M_2\oplus M_2$ and $\mathrm{Spin}(4)$](rotors-are-even-words-in-m4c.html), for the even subalgebra and the frame.
 - [Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$](simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4.html), for the two angles and the isoclinic families.
 - [The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover](the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover.html), for the case at order two.

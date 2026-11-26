@@ -54,7 +54,7 @@ Each row names the quantity and does not give its value. The value is in the art
 | [The Weak Force in Biquaternionic Form](the-weak-force-in-biquaternionic-form.html) | the same constant, with the boson mass, to reach the weak charge | the weak charge is a measured quantity, and its symbol is what the article derives |
 | [Meson Mixing, Rare Decays and the Unitarity Triangle](meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html) | the mixing parameters, as standard input | a closure test against measured flavour data |
 | [The Proton in Biquaternionic Form](the-proton-in-biquaternionic-form.html) | standard input, transcribed | the subject is a measured object |
-| [What the Standard Model Does Not Explain](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html) | standard input, transcribed | the article audits the model's open questions, not this one's strengths |
+| [Three Gaps in the Standard Model](three-gaps-in-the-standard-model.html) | standard input, transcribed | the article audits the model's open questions, not this one's strengths |
 | [Grand Unification in the Biquaternion Framework](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html) | the measured strengths, to test the meeting | the meeting of measured strengths is the test, and it fails on data |
 | [The Petiau System and the Quantisation of Mass](the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html) | the fine-structure value, inside an empirical leptonic formula | the formula is empirical, and the article says so |
 
@@ -115,5 +115,5 @@ The permission has four edges drawn, and the sharpest is the fourth: the low-ene
 
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The single claim, its arithmetic, its failure, and the Yukawa sector under the same test.
 - [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-and-the-three-neutral-states.html). The second claim: the mixing as a ratio, with the form the generators fix.
-- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The frame, stated with every strength a symbol.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The frame, stated with every strength a symbol.
 - [The Matching at $M_C$](matching-at-m-c.html). The chain, with the coupling block kept in the coupling article.

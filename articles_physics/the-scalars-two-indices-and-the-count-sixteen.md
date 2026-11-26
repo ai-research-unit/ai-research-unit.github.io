@@ -107,7 +107,7 @@ $$
 
 **The two tables agree, and the agreement is the check.** Six pairs above the diagonal give twelve real, plus four real diagonal entries: sixteen. **No component is double-counted and none is missing.**
 
-**Degrees of freedom and components are the same number here.** A real scalar has one degree of freedom per component, unlike a fermion, so sixteen components are sixteen degrees of freedom before any eating. **The vector case is where the two differ**, and [The Sixteen Above $M_C$](the-sixteen-above-m-c.html) works that difference out for the fermions.
+**Degrees of freedom and components are the same number here.** A real scalar has one degree of freedom per component, unlike a fermion, so sixteen components are sixteen degrees of freedom before any eating. **The vector case is where the two differ**, and [The Sixteen Weyl Fields Above $M_C$](the-sixteen-weyl-fields-above-m-c.html) works that difference out for the fermions.
 
 ## What the Counting Does Not Fix
 
@@ -161,4 +161,4 @@ $$
 - [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html). The same field counted with the eating, and the ten that survive.
 - [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html). The potential this count leaves undetermined, written.
 - [The Lagrangian and the Scalar Matrix](the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html). The kinetic term for this field, and the commutator its two indices force.
-- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The fifteen the count starts from.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The fifteen the count starts from.

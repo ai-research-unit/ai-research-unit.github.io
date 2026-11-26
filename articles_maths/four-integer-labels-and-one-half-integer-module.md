@@ -1,4 +1,4 @@
-# __Where the Half-Integers Go in $M_4(\mathbb{C})$__
+# __Four Integer Labels and One Half-Integer Module: $\tfrac32$ Is a Weight, Not a Label__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 **The order of the article.** The first section lists the labels of the algebra and of the module. The second explains why the algebra's labels cannot be half-integers. The third shows where the half-integers reappear as weights. The fourth shows where they reappear as eigenvalues, with the pair $(\tfrac12,\tfrac12)$ and the corners. The fifth draws the lesson and the boundary.
 
-**It assumes** *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$* for the labels, *The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$* for the ideal. The row at order two is *Where the Half-Integers Go in the Biquaternion Algebra*.
+**It assumes** *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$* for the labels, *The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$* for the ideal. The row at order two is *Half-Integer Weights Cancel in the Differences*.
 
 **The result in one line.** The algebra carries the integer labels $0,1,2,3$, the module carries $\tfrac32$, and a half-integer eigenvalue of an algebra element is not a half-integer label.
 
@@ -117,5 +117,5 @@ A half-integer eigenvalue is not a half-integer label. The distinction is the co
 - [The Slot and the Summand at $n=4$](the-slot-and-the-summand-at-n-4.html), for the identity $2j=n-1$.
 - [The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$](the-minimal-left-ideals-of-m4c.html), for the ideal.
 - [The Four Weights of the Module and the Half Angle at $n=4$](the-four-weights-of-the-module-and-the-half-angle-at-n-4.html), for the weights.
-- [Where the Half-Integers Go in the Biquaternion Algebra](where-the-half-integers-go-in-m4c.html), for the row at order two.
-- [Why the Conjugation Labels Are Integer at $n=4$](why-the-conjugation-labels-are-integer-at-n-4.html), for the argument from the difference of weights.
+- [Four Integer Labels and One Half-Integer Module](four-integer-labels-and-one-half-integer-module.html), for the row at order two.
+- [The Conjugation Labels at $n=4$](the-conjugation-labels-at-n-4.html), for the argument from the difference of weights.

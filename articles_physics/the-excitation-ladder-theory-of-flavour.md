@@ -265,4 +265,4 @@ The letter $\rho$ carries the mass ratio in this article and is given the subscr
 - [The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The misalignment between the flavour basis and the mass basis.
 - [Lepton Flavour in the $\mathrm{SU}(4)$ Model: No Generator Joins the Two Copies](lepton-flavour-in-the-su4-model.html). The operator's chiral structure, and the question of the generation matrix that the mass sector leaves open.
-- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The frame whose module the ladder multiplies.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The frame whose module the ladder multiplies.

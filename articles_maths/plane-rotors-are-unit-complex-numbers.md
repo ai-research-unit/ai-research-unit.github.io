@@ -1,4 +1,4 @@
-# __Where the Rotor Leaves $M_2$: the Even Subalgebra and $Cl(2)$__
+# __Plane Rotors Are Unit Complex Numbers: The Space Rotor Leaves $M_2(\mathbb{R})$__
 
 ## Introduction
 

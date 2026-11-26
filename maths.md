@@ -7033,16 +7033,16 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 
 ###### Where the Half-Integers Go
 
-<a href="articles_maths/where-the-half-integers-go-in-the-biquaternion-operators.html">Where the Half-Integers Go in the Biquaternion Operators</a>
+<a href="articles_maths/half-integer-weights-cancel-in-the-differences.html">Half-Integer Weights Cancel in the Differences: The Operator Space Is Integral</a>
 <!-- the two places a label may live: on a summand of the algebra under an action, and on the module the algebra acts on; the half-integer $\tfrac12$ on the module of the elements and the half-integer $\tfrac32$ on the module of the operators; the integer labels $0,1$ on the algebra of the elements and $0,1,2,3$ on the algebra of the operators; the rule that the label of the module is half its dimension minus one half, giving $\tfrac12$ at four dimensions and $\tfrac32$ at sixteen; the reason the labels of the summands are always integers, the kernel of the conjugation action; the two rows placed side by side; and the reading that the half-integer is the label of the space one acts on and never of the space one decomposes. -->
 
 <a href="articles_maths/the-slot-and-the-summand.html">The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators</a>
 <!-- the two words kept apart, the slot, the label of the module, and the summand, one term of the decomposition of the algebra; the slot of the elements $\tfrac12$ and of the operators $\tfrac32$; the summands of the elements $0,1$ and of the operators $0,1,2,3$; the arithmetic that relates them, the summand labels of a row being the integers from zero to twice the slot; the number of summands, two at the slot $\tfrac12$ and four at the slot $\tfrac32$; the table with the five labels of the two rows; the misuse to be avoided, calling the operators a space of spin $\tfrac32$ when what is meant is that they act on a module of that label; and the reading that every statement about spin in this row needs one of the two words to be right. -->
 
-<a href="articles_maths/why-the-conjugation-labels-are-integer.html">Why the Conjugation Labels Are Integer: the Kernel $\{\pm\mathrm I\}$</a>
+<a href="articles_maths/the-conjugation-labels-are-integer.html">The Conjugation Labels Are Integer: Differences of the Module Weights</a>
 <!-- the conjugation action of the group on the algebra and the parity of the exponent; the element $-\mathrm I$ acting as the identity on the algebra and as minus the identity on the module; the kernel $\{\pm\mathrm I\}$ and the descent of the action to the rotation group; the consequence that every irreducible summand of the algebra carries an integer label, since an action of the rotation group cannot see a half-integer; the proof in one line, the central element acting trivially and the weights therefore integral; the same argument on the operators, giving the labels $0,1,2,3$; the contrast with the left action, which does not descend and does carry the half-integer; and the reading that the two actions of one group differ by their kernels and that everything else follows from that difference. -->
 
-<a href="articles_maths/what-a-half-integer-summand-would-require.html">What a Half-Integer Summand Would Require</a>
+<a href="articles_maths/a-half-integer-summand-fails-three-tests.html">A Half-Integer Summand Fails Three Tests: Weight, Casimir and Type</a>
 <!-- the hypothesis of a summand of half-integer label and its first consequence, that the central element would have to act as minus the identity on a subspace of the algebra; the contradiction, since the central element acts by conjugation and conjugation by a scalar is the identity; the second route, an action that is not conjugation but left multiplication, which does carry the half-integer and is the module and not a summand; the third route, an algebra of odd dimension, excluded by the square $16$; the general statement at every order, the summand labels of the algebra of the operators being the integers from zero to the order minus one; the exceptional case of the elements at four dimensions, where the slot itself is the half-integer; and the reading that the absence of a half-integer summand is a theorem about the kernel and not an accident of the small case. -->
 
 ###### From the Spin to the Carriers and the Closures
@@ -7053,7 +7053,7 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <a href="articles_maths/the-four-carrier-lists-of-one-algebra.html">The Four Carrier Lists of One Algebra</a>
 <!-- the four groups that act on the sixteen and their four decompositions: the principal copy as $7+5+3+1$; the full group of units as a line and a fifteen; the two commuting copies as $1+3+3+9$; and the conjugation action as $2+9+5$; the commutant computation that makes the traceless part irreducible for the full group; the diagonal contents of each list checked against the Clebsch–Gordan rule; the reading that the same sixteen dimensions carry four different decompositions, so a label without a named group is meaningless; and the table of the four lists with the dimensions adding to sixteen in each row. -->
 
-<a href="articles_maths/which-spin-lives-in-which-reading.html">Which Spin Lives in Which Reading</a>
+<a href="articles_maths/two-numbers-and-two-readings.html">Two Numbers and Two Readings: $\tfrac32$ for the Module, $3$ for the Largest Carrier</a>
 <!-- the table of labels against the four readings of the space of the operators; the label three in the principal reading alone; the label two in the principal and in the conjugation reading; the labels one and zero in all four; the half-integer $\tfrac32$ on the module and on the minimal left ideal only, never among the summands; the diagonal contents checked against the Clebsch–Gordan rule; and the reading that the phrase the spins of the operators is resolved only by naming the group and the reading. -->
 
 <a href="articles_maths/the-copy-acting-on-sixteen-dimensions.html">The Copy Acting on Sixteen Dimensions</a>
@@ -7591,7 +7591,7 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <a href="articles_maths/simple-and-non-simple-rotations-one-angle-at-n-le-3-floor-n-2-planes-at-n-ge-4.html">Simple and Non-Simple Rotations: One Angle at $n\le3$, $\lfloor n/2\rfloor$ Planes at $n\ge4$</a>
 <!-- a rotation as simple when it turns one plane and fixes the orthogonal complement; every rotation simple at $n=2$ and $n=3$ and up to $\lfloor n/2\rfloor$ independent planes from $n=4$; the block form with the angles and the explicit non-simple example at $n=4$; the product of two simple rotations and the isoclinic case where the two angles agree; the parameter count $n(n-1)/2$ against the number of angles. -->
 
-<a href="articles_maths/where-the-rotor-leaves-mnr-the-even-subalgebra-and-cl-n.html">Where the Rotor Leaves $M_n(\mathbb{R})$: the Even Subalgebra and $Cl(n)$</a>
+<a href="articles_maths/the-rotor-leaves-mnr-for-cl-n.html">The Rotor Leaves $M_n(\mathbb{R})$ for $Cl(n)$: The Even Subalgebra at Dimension $2^{n-1}$</a>
 <!-- the rotor as an element of a clifford algebra rather than of $M_n(\mathbb{R})$ from the dimension where the even subalgebra outgrows $n^{2}$; the sandwich $X\mapsto RX\widetilde{R}$ landing back in $\mathbb{R}^{n}$ while $R$ itself ceases to be an $n\times n$ matrix; the dimensions of $Cl(n)$ and of its even part against $n^{2}$; the cases $n\le6$, where the rotor is a matrix, and the failure from $n=7$. -->
 
 <a href="articles_maths/the-exponential-of-the-symmetric-part-stretches-and-the-positive-cone.html">The Exponential of the Symmetric Part: Stretches and the Positive Cone</a>
@@ -7811,7 +7811,7 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <a href="articles_maths/simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4.html">Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$</a>
 <!-- the simplicity condition $\operatorname{rank}(Q-\mathrm{I})=2$ and $\dim\ker(Q-\mathrm{I})\ge n-2$; the one angle at $n=2$ and Euler\x27s axis theorem at $n=3$ with $\cos\theta=(\operatorname{tr}Q-1)/2$ and the conjugacy classes $[0,\pi]$; the two angles at $n=4$ with $e^{\pm i\theta_1},e^{\pm i\theta_2}$, no fixed vector, and the class triangle $0\le\theta_2\le\theta_1\le\pi$; the two commuting factors of $\mathfrak{so}(4)$ and the rank $\lfloor n/2\rfloor$ as the count of angles, with the simple rotations a nowhere dense union over planes; the class simplex $0\le\theta_m\le\dots\le\theta_1\le\pi$ and the case $n=2$ with the phase of the rotor. -->
 
-<a href="articles_maths/where-the-rotor-leaves-mnc-the-even-subalgebra-and-cl-n.html">Where the Rotor Leaves $M_n$: the Even Subalgebra and $Cl(n)$</a>
+<a href="articles_maths/the-rotor-leaves-mn-for-the-even-clifford-algebra.html">The Rotor Leaves $M_n$ for the Even Clifford Algebra: Dimension $2^{n-1}$ Against $n$</a>
 <!-- the rotor $e^{K}$ as a polynomial of degree below $n$ in $K$, with Rodrigues at $n=3$; the Clifford algebra $Cl(n)$ of dimension $2^{n}$ with the even and odd parts of dimension $2^{n-1}$, the isomorphism $Cl^{0}(n)\cong Cl(n-1)$ and the bivectors inside the even part; the rotors as the spin group $\mathrm{Spin}(n)$ and the cases $Cl^{0}(2)\cong\mathbb{C}$, $Cl^{0}(3)\cong\mathbb{H}$, $Cl^{0}(4)\cong\mathbb{H}\oplus\mathbb{H}$; the sandwich $v\mapsto RvR^{-1}$ preserving the Clifford relations and the two parities; the spinor dimension $2^{\lfloor n/2\rfloor}$, the comparison with $n$ and the reason the rotor is a subalgebra element of $M_n$ only up to $n=5$; the case $n=2$ as phases and the biquaternion reading. -->
 
 <a href="articles_maths/the-exponential-of-the-symmetric-part-stretches-and-the-positive-cone.html">The Exponential of the Symmetric Part: Stretches and the Positive Cone</a>
@@ -7872,7 +7872,7 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <a href="articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides-in-mnc.html">The Hermitian Pair of Operators Acting on Two Sides in $M_n(\mathbb{C})$</a>
 <!-- the self-adjoint two-sided operators $T_{A,B}$ and the conditions on the pair; the eigenvalues of $T_{A,B}$ for Hermitian parameters as the products $\lambda_i(A)\mu_j(B)$; the positive cone as the whole cone of positive operators, generated by the rank-one $\lvert X\rangle\langle X\lvert=T_{XX^{*},X^{*}X}$; the scalar ray. -->
 
-<a href="articles_maths/the-axis-free-representation-of-the-operators-of-mnc.html">The Axis-Free $M_{n^{2}}(\mathbb{C})$ Representation of the Operators of $M_n(\mathbb{C})$</a>
+<a href="articles_maths/the-axis-free-representation-of-the-operators-of-mnc.html">The Axis-Free $M_{n^2}(\mathbb{C})$ Representation of the Operators of $M_n(\mathbb{C})$</a>
 <!-- the column-stacking formulas $L_A=\mathrm I\otimes A$, $R_B=B^{\mathsf T}\otimes\mathrm I$, $T_{A,B}=B^{\mathsf T}\otimes A$; the row-stacking mirror; the anti-representation law that forces the transpose; when a single parameter lets it be moved into the frame, and why no uniform removal exists; the $n=2$ case where it looked removable. -->
 
 <a href="articles_maths/the-generalized-pauli-representation-of-the-operators-of-mnc.html">The Generalized Pauli Representation of the Operators of $M_n(\mathbb{C})$</a>
@@ -7908,7 +7908,7 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <a href="articles_maths/the-spin-zero-carrier-of-mnc.html">The Spin-Zero Carrier of $M_n(\mathbb{C})$: the Scalars</a>
 <!-- the unique $V_0=\mathbb{C}\mathrm I$ of dimension one; the Casimir vanishing on it and only on it; the projection $P_0=\tfrac{1}{n}\lvert\mathrm I\rangle\langle\mathrm I\lvert$ commuting with $L$ and $R$; the exact sequence $0\to V_0\to M_n\to\mathfrak{sl}_n\to0$; the position in the four readings at $n=4$. -->
 
-<a href="articles_maths/where-the-half-integers-go-in-mnc.html">Where the Half-Integers Go in $M_n(\mathbb{C})$</a>
+<a href="articles_maths/integer-labels-on-the-algebra-a-half-integer-on-the-module.html">Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition</a>
 <!-- the load-bearing negative result: the algebra carries integer labels at every $n$, the half-integer $j=(n-1)/2$ lives only in the module, and for even $n$ the module is not a submodule of the algebra; the difference of two half-integers as the reason; the four carrier lists at $n=4$ and the pair $(\tfrac12,\tfrac12)$. -->
 
 <a href="articles_maths/the-spin-one-carrier-of-mnc.html">The Spin-One Carrier of $M_n(\mathbb{C})$: the Three-Dimensional $V_1$</a>
@@ -7917,7 +7917,7 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <a href="articles_maths/the-carriers-the-closures-and-the-spin-of-mnc.html">The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$</a>
 <!-- the $n$ carriers against $n^{2}$ complex and $2n^{2}$ real dimensions; the linear closure as the carrier itself and the multiplicative closure as $1$ or $n^{2}$; the table for $n=2$ to $6$; the spin $n-1=2j$; why the four real-form closure rules of the biquaternion article have no general-$n$ analogue. -->
 
-<a href="articles_maths/the-su2-of-mnc-acting-on-n-squared-dimensions.html">The $\mathrm{SU}(2)$ of $M_n(\mathbb{C})$ Acting on $n^{2}$ Dimensions</a>
+<a href="articles_maths/the-su2-of-mnc-acting-on-n-squared-dimensions.html">The $SU(2)$ of $M_n(\mathbb{C})$ Acting on $n^2$ Dimensions</a>
 <!-- the principal $\mathrm{SU}(2)$ acting on the $2n^{2}$ real dimensions; the orbit dimensions $0,2,3$ and the orbit space of dimension $2n^{2}-3$; the generic orbit a copy of $\mathrm{SO}(3)$ or $\mathrm{SU}(2)$ inside the similarity class, of codimension $2n^{2}-2n-3$; why the four-real-dimensional picture does not extend. -->
 
 <a href="articles_maths/the-odd-rows-m3-and-m5.html">The Odd Rows: $M_3(\mathbb{C})$ and $M_5(\mathbb{C})$</a>
@@ -8118,7 +8118,7 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <a href="articles_maths/simple-rotations-at-n-2-why-there-is-only-one-angle.html">Simple Rotations at $n=2$: Why There Is Only One Angle</a>
 <!-- the simple rotation as a rotation in one plane, and the vacuity of the condition at order two; the antisymmetric line as the only plane and its exponential as the whole rotation group; the dimension count that forbids a second angle, with the comparison to the two angles of $\mathrm{SO}(4)$; the angle read from the trace $2\cos t$ and from $\sin t$; the single complex angle of the quadric; and the rotation circle inside the four-dimensional unitary group. -->
 
-<a href="articles_maths/where-the-rotor-leaves-m2c-the-even-subalgebra-and-cl-2.html">Where the Rotor Leaves $M_2$: the Even Subalgebra and $Cl(2)$</a>
+<a href="articles_maths/plane-rotors-are-unit-complex-numbers.html">Plane Rotors Are Unit Complex Numbers: The Space Rotor Leaves $M_2(\mathbb{R})$</a>
 <!-- the Clifford algebra $Cl(2)$ as $M_2(\mathbb{R})$ with the even part the copy of $\mathbb{C}$ spanned by $I$ and $J$; the rotor as a unit complex number in the centraliser of $J$; $Cl(3)$ as $M_2(\mathbb{C})$ with the Pauli assignment; the even part $\mathbb{H}$ inside $M_2(\mathbb{C})$ as the matrices $\begin{pmatrix}\alpha&\beta\\-\bar\beta&\bar\alpha\end{pmatrix}$; the absence of a real two-by-two model for the quaternions; and the two real forms of $M_2(\mathbb{C})$. -->
 
 <a href="articles_maths/the-exponential-of-sym-2-stretches-and-the-positive-cone.html">The Exponential of $\operatorname{Sym}_2$: Stretches and the Positive Cone</a>
@@ -8622,7 +8622,7 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <a href="articles_maths/simple-and-non-simple-rotations-at-n-4-two-angles-and-the-isoclinic-families.html">Simple and Non-Simple Rotations at $n=4$: the Two Angles and the Isoclinic Families</a>
 <!-- the two invariant planes and the two angles of a rotation of four-space, with the normal form $\operatorname{diag}(R_{\theta_1},R_{\theta_2})$; simplicity exactly when one angle vanishes or the two are opposite, the fixed space a plane in those cases and a point otherwise, the generic rotation neither simple nor isoclinic; $\lfloor n/2\rfloor$ angles, one at orders two and three and two from order four on; the angles as the parameters of the two summands of $\mathfrak{so}(4)$ and the isoclinic families as the rotations with one summand vanishing; the two families as three-spheres meeting in two points and multiplying to the whole group; and the circle inside one family as the Hopf action, the same construction at order eight giving the quaternionic Hopf fibration. -->
 
-<a href="articles_maths/where-the-rotor-leaves-m4c-the-even-subalgebra-and-cl-4.html">Where the Rotor Leaves $M_4(\mathbb{C})$: the Even Subalgebra and $Cl(4)$</a>
+<a href="articles_maths/rotors-are-even-words-in-m4c.html">Rotors Are Even Words in $M_4(\mathbb{C})$: $M_2\oplus M_2$ and $\mathrm{Spin}(4)$</a>
 <!-- the rotor as an even product of vectors and therefore an element of the even Clifford algebra of complex dimension eight; the isomorphism $\mathrm{Cl}(3,\mathbb{C})\cong M_2\oplus M_2\cong\mathbb{B}\oplus\mathbb{B}$, semisimple with two simple ideals of dimension four and a two-dimensional centre; the even part inside $M_4(\mathbb{C})$ as the commutant of the chirality, hence block diagonal of type $M_2\oplus M_2$, a subalgebra and not an ideal; the two one-sided biquaternion images as the two simple ideals in the Kronecker reading, meeting in the scalars and spanning seven dimensions, so that the two-sided products are exactly what the eighth direction and the rotor action require; and the invertible even elements as the scalars times $\mathrm{Spin}(4,\mathbb{C})\cong SL_2\times SL_2$. -->
 
 <a href="articles_maths/the-exponential-of-sym-4-stretches-and-the-positive-cone.html">The Exponential of the Symmetric Part: Stretches and the Positive Cone at $n=4$</a>
@@ -8749,16 +8749,16 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 
 ###### Where the Half-Integers Go at $n=4$
 
-<a href="articles_maths/where-the-half-integers-go-in-m4c.html">Where the Half-Integers Go in $M_4(\mathbb{C})$</a>
+<a href="articles_maths/four-integer-labels-and-one-half-integer-module.html">Four Integer Labels and One Half-Integer Module: $\tfrac32$ Is a Weight, Not a Label</a>
 <!-- the general statement at $n=4$: the module's label $\tfrac32$ and the algebra's labels $0,1,2,3$; the arithmetic, that the algebra's labels are differences of the module's weights and a difference of two half-integers is an integer; the half-integer appearing as the label of the minimal left ideal $M_4P$ and of the module, never as the label of a summand; the appearance of the pair $(\tfrac12,\tfrac12)$ in the factorised reading, of integer total spin; the two off-diagonal corners of the block reading; and the lesson that a half-integer in the algebra is a statement about a named group action. -->
 
 <a href="articles_maths/the-slot-and-the-summand-at-n-4.html">The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in $M_4(\mathbb{C})$</a>
 <!-- the parallel in one page: at $n=2$ the algebra is $S\otimes S^{*}$ with $S=V_{1/2}$ and at $n=4$ it is $V\otimes V^{*}$ with $V=V_{3/2}$; the slot as a factor and not a summand, so it is not the image of a projector of the algebra; the summands as the CG pieces, always integer; the same sentence holding at both rows with $\tfrac12$ replaced by $\tfrac32$; the left ideal as the place where the slot is visible inside the algebra; and the reason the biquaternion articles can speak of a spin-half subspace while the matrix articles speak of a spin-$\tfrac32$ ideal. -->
 
-<a href="articles_maths/why-the-conjugation-labels-are-integer-at-n-4.html">Why the Conjugation Labels Are Integer at $n=4$: the Kernel $\{\pm\mathrm I\}$</a>
+<a href="articles_maths/the-conjugation-labels-at-n-4.html">The Conjugation Labels at $n=4$: Integers $0,1,2,3$ from the Kernel</a>
 <!-- the conjugation action factoring through $SU(2)/\{\pm\mathrm I\}\cong SO(3)$; the irreducibles of $SO(3)$ as the integer spins, so that the labels of the summands are integers by the representation theory and not by a computation; the contrast with the module, where $-1$ acts as $-1$ and the label is a half-integer; the general form at every $n$; the odd-$n$ case, where the module's label is already an integer and the distinction disappears; and the check that the kernel is exactly $\{\pm\mathrm I\}$ and not larger. -->
 
-<a href="articles_maths/what-a-half-integer-summand-would-require-at-n-4.html">What a Half-Integer Summand Would Require at $n=4$</a>
+<a href="articles_maths/no-half-integer-summand-at-n-4.html">No Half-Integer Summand at $n=4$: Four Requirements Fail Together</a>
 <!-- the requirement: a summand $V_{k/2}$ with $k$ odd, of even dimension $k+1$, equal to $4$ for $k=3$; the obstruction, the decomposition being multiplicity-free with labels $0,\dots,3$; the distinction between an invariant subspace and a summand, and why a non-invariant subspace of the module's label is not a carrier; the counterexample that is not one, a four-dimensional subspace invariant under a proper subgroup; and the finite check on the sixteen dimensions that no fourth carrier of even dimension is available. -->
 
 ###### From the Spin to the Carriers and the Closures
@@ -8769,7 +8769,7 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <a href="articles_maths/the-four-carrier-lists-of-one-algebra-at-n-4.html">The Four Carrier Lists of One Algebra at $n=4$</a>
 <!-- the four groups acting by conjugation and their lists: the principal copy $7+5+3+1$; the full $U(4)$ as $\mathbb{C}\mathrm I$ and the irreducible $\mathfrak{sl}_4$ of dimensions $1+15$; the factorised copy on $\mathbb{C}^{2}\otimes\mathbb{C}^{2}$ as $1+3+3+9$; and the block copy on $S_+\oplus S_-$ as $8+3+3+2$; the commutant computation that makes the traceless part irreducible for $U(4)$; the diagonal contents of each list; and the reading that the same sixteen dimensions carry four different decompositions, so a label without a named group is meaningless. -->
 
-<a href="articles_maths/which-spin-lives-in-which-reading-at-n-4.html">Which Spin Lives in Which Reading at $n=4$</a>
+<a href="articles_maths/spins-by-reading-at-n-4.html">Spins $3$ to $\tfrac32$ by Reading at $n=4$: Principal and Factorised Lists</a>
 <!-- the table of spins against the four readings; spin $3$ in the principal reading alone; spin $2$ in the factorised reading alone; the half-integer $\tfrac32$ on the module and on the minimal left ideal only; spin $1$ in three readings; the half-integer pair $(\tfrac12,\tfrac12)$ in the two off-diagonal corners of the block reading; the diagonal contents checked against the Clebsch–Gordan rule, $(1,1)\cong V_2\oplus V_1\oplus V_0$ giving $V_2\oplus3V_1\oplus2V_0$ of dimensions $5+9+2$; and the reading that the ambiguity of the phrase "the spins of $M_4$" is resolved only by naming the group. -->
 
 <a href="articles_maths/the-su2-of-m4c-acting-on-sixteen-dimensions.html">The $\mathrm{SU}(2)$ of $M_4(\mathbb{C})$ Acting on Sixteen Dimensions</a>

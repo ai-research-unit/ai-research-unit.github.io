@@ -1,4 +1,4 @@
-# __Why the Conjugation Labels Are Integer at $n=4$: the Kernel $\{\pm\mathrm I\}$__
+# __The Conjugation Labels at $n=4$: Integers $0,1,2,3$ from the Kernel__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 **The order of the article.** The first section identifies the kernel. The second shows that the quotient is $SO(3)$ and that the algebra is an honest representation of it. The third proves that the labels are integers, once from the group and once from the weights. The fourth treats the odd orders, where the module descends as well. The fifth draws the boundary.
 
-**It assumes** *The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$* for the copy, and *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$*. The row at order two is *Why the Conjugation Labels Are Integer*.
+**It assumes** *The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$* for the copy, and *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$*. The row at order two is *The Conjugation Labels Are Integer*.
 
 **The result in one line.** $\ker\Phi=\{\pm\mathrm I\}$, the conjugation action factors through $SO(3)$, and every label of an $SO(3)$-module is an integer, so the carriers have the labels $0,1,2,3$.
 
@@ -117,7 +117,7 @@ At odd orders the module descends as well and is a carrier; the kernel remains $
 ## Further Reading
 
 - [The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$](the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html), for the copy.
-- [Where the Half-Integers Go in $M_4(\mathbb{C})$](where-the-half-integers-go-in-m4c.html), for the half-integer.
-- [What a Half-Integer Summand Would Require at $n=4$](what-a-half-integer-summand-would-require-at-n-4.html), for the obstruction.
-- [Why the Conjugation Labels Are Integer](why-the-conjugation-labels-are-integer.html), for the row at order two.
+- [Four Integer Labels and One Half-Integer Module: $\tfrac32$ Is a Weight, Not a Label](four-integer-labels-and-one-half-integer-module.html), for the half-integer.
+- [No Half-Integer Summand at $n=4$: Four Requirements Fail Together](no-half-integer-summand-at-n-4.html), for the obstruction.
+- [The Conjugation Labels Are Integer](the-conjugation-labels-are-integer.html), for the row at order two.
 - [The Slot and the Summand at $n=4$](the-slot-and-the-summand-at-n-4.html), for the vocabulary.

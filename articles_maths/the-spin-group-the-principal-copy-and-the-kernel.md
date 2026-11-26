@@ -10,7 +10,7 @@
 
 **The result in one line.** The three operators $L_{i\vec e_x},L_{i\vec e_y},L_{i\vec e_z}$ generate a copy of $\mathfrak{su}(2)$, the algebra is $\operatorname{Sym}^{3}S$ for a two-dimensional spinor space $S$, the group of the copy is $\mathrm{SU}(2)$ acting on the module with kernel $\{\pm\mathrm I\}$, and it acts on the algebra through the quotient.
 
-**Boundaries.** The weights of the module are *The Four Weights of the Module and the Half Angle*; the minimal left ideals are *The Minimal Left Ideals and the Module $V_{3/2}$*; the integer labels of the algebra are *Why the Conjugation Labels Are Integer*.
+**Boundaries.** The weights of the module are *The Four Weights of the Module and the Half Angle*; the minimal left ideals are *The Minimal Left Ideals and the Module $V_{3/2}$*; the integer labels of the algebra are *The Conjugation Labels Are Integer*.
 
 ## The Copy
 

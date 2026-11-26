@@ -58,7 +58,7 @@ The two spatial entries are the ones worth reading twice for the opposite reason
 - [Operator and Calculus Conventions](../articles_physics/operator-and-calculus-conventions.html). The operator that is its element, the Fock exception and the calculus.
 - [Physics Units and Common Elements Conventions](../articles_physics/physics-units-and-common-elements-conventions.html). The physical units and the common glyphs.
 - [Index and Notation Conventions](../articles_physics/index-and-notation-conventions.html). The marks and the subscripts.
-- [Conceptual Conventions](../articles_maths/conceptual-conventions.html). The same rule at the algebraic layer, where the three kinds of defect are stated in full.
+- [Conceptual Conventions](../articles_physics/conceptual-conventions.html). The same rule at the algebraic layer, where the three kinds of defect are stated in full.
 - [The Differentiable Field: One Primary Equation and the Linear Sector](../articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html). The ledger of the postulated, the derived and the imported, which classifies claims and not concepts.
 - [The AXF Matrices: Axis-Free, Integer Entries](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused). The defect in full, the covariance test, and the frames that are not defects.
 - [Biquaternion Physical Interpretation of Operator Chirality](../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html). The objects the physics does not need, and the limit of the copies.

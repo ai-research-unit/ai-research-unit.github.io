@@ -295,7 +295,7 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 ## Further Reading
 
 - [The Standard Model as the Low-Energy Phase: The $\mathrm{U}(2)$ Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). Why the low-energy theory makes one local side and not two, and hypercharge as the broken factor's remnant.
-- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The frame that uses this group, where each factor comes from, and the ceiling that forces the tensor product.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The frame that uses this group, where each factor comes from, and the ceiling that forces the tensor product.
 - [The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html). $\mathrm{SU}(2)\times\mathrm{U}(1)$ against the algebra's $\mathrm{U}(2)$, and the selection rule the quotient imposes.
 - [Electroweak Theory in the Biquaternion Framework: The $\mathrm{U}(2)$ Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html). The wall of *One Group, Two Modules* at its four levels, and the ledger of what each level would need.
 - [The Lie Algebra $\mathfrak{so}(4)$](../articles_maths/the-lie-algebra-skew-4-and-so-4.html). $\mathfrak{so}(4)=\Lambda^{2}_{+}\oplus\Lambda^{2}_{-}$, the self-dual basis, and the identification of $L(\vec e_{\imath})$ with $-\omega_{\imath}$ and $R(\vec e_{\imath})$ with $-\tau_{\imath}$.

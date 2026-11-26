@@ -1,4 +1,4 @@
-# __Which Spin Lives in Which Reading at $n=4$__
+# __Spins $3$ to $\tfrac32$ by Reading at $n=4$: Principal and Factorised Lists__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 **The order of the article.** The first section fixes the table of spins against the four readings. The second computes the diagonal contents. The third checks them against the Clebsch–Gordan rule and finds $V_2\oplus3V_1\oplus2V_0$ of dimensions $5+9+2$. The fourth identifies the half-integer pair. The fifth draws the lesson and the boundary.
 
-**It assumes** *The Four Carrier Lists of One Algebra at $n=4$* for the four lists and *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$* for the principal one. The row at order two is *Which Spin Lives in Which Reading*.
+**It assumes** *The Four Carrier Lists of One Algebra at $n=4$* for the four lists and *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$* for the principal one. The row at order two is *Two Numbers and Two Readings: $\tfrac32$ for the Module, $3$ for the Largest Carrier*.
 
 **The result in one line.** Spin $3$ occurs as a piece only in the principal reading, spin $2$ in the principal reading and as a diagonal content of the factorised one, spin $1$ in three readings, and the half-integer $\tfrac32$ only on the module and on the minimal left ideals.
 
@@ -115,5 +115,5 @@ A label without a group has no multiplicity. The phrase "the spins of $M_4(\math
 - [The Four Carrier Lists of One Algebra at $n=4$](the-four-carrier-lists-of-one-algebra-at-n-4.html), for the four lists.
 - [The $\mathrm{SU}(2)$ of $M_4(\mathbb{C})$ Acting on Sixteen Dimensions](the-su2-of-m4c-acting-on-sixteen-dimensions.html), for the action.
 - [The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$](the-clebsch-gordan-decomposition-of-m4c.html), for the principal list.
-- [Which Spin Lives in Which Reading](which-spin-lives-in-which-reading.html), for the row at order two.
+- [Two Numbers and Two Readings: $\tfrac32$ for the Module, $3$ for the Largest Carrier](two-numbers-and-two-readings.html), for the row at order two.
 - [The Spin Decomposition of $M_4(\mathbb{C})$](the-spin-decomposition-of-m4c.html), for the weights.

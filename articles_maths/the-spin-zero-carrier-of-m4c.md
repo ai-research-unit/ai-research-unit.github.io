@@ -52,7 +52,7 @@
 
 **Corollary.** The label zero is the only label that occurs in all four readings.
 
-*Proof.* The table of *Which Spin Lives in Which Reading*.
+*Proof.* The table of *Two Numbers and Two Readings: $\tfrac32$ for the Module, $3$ for the Largest Carrier*.
 
 **Corollary.** The scalars are the only piece of the four readings that is one-dimensional, and the only one contained in the symmetric half.
 
@@ -133,4 +133,4 @@ It occurs in all four readings of the algebra, it is the only one-dimensional pi
 - [The Spin-Zero Carrier and the Spectral Strata at $n=4$](the-spin-zero-carrier-and-the-spectral-strata-at-n-4.html), for the spectrum.
 - [The Spin-Zero Carrier and the Rank Strata at $n=4$](the-spin-zero-carrier-and-the-rank-strata-at-n-4.html), for the rank.
 - [The Spin-Zero Carrier of the Biquaternion Algebra](the-spin-zero-carrier-of-m4c.html), for the row at order two.
-- [Which Spin Lives in Which Reading at $n=4$](which-spin-lives-in-which-reading-at-n-4.html), for the four readings.
+- [Spins $3$ to $\tfrac32$ by Reading at $n=4$: Principal and Factorised Lists](spins-by-reading-at-n-4.html), for the four readings.

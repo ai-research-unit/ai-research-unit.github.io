@@ -1,4 +1,4 @@
-# __What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron__
+# __Three Gaps in the Standard Model: Dark Matter, Baryogenesis and the Sphaleron__
 
 ## Introduction
 

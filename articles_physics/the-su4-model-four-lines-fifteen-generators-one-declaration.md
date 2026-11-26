@@ -1,4 +1,4 @@
-# __The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three__
+# __The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three__
 
 ## Introduction
 

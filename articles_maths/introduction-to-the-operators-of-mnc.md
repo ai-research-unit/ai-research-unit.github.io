@@ -105,7 +105,7 @@ the last at any $n\ge2$. The fourth is never a point in $M_n$: at $n=2$ it is th
 
 **Then the sectors.** *The Operators on the Four Sectors* and *The Spectral Sectors and the Operators*.
 
-**Then the spin.** *From the Spin of a Pair of Operators to the Spin of $M_n(\mathbb{C})$*, *The Spin-Zero Carrier*, *Where the Half-Integers Go in $M_n(\mathbb{C})$*, *The Spin-One Carrier*, *The Carriers, the Closures and the Spin*, *The $SU(2)$ of $M_n(\mathbb{C})$ Acting on $n^2$ Dimensions*, and *The Odd Rows*.
+**Then the spin.** *From the Spin of a Pair of Operators to the Spin of $M_n(\mathbb{C})$*, *The Spin-Zero Carrier*, *Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition*, *The Spin-One Carrier*, *The Carriers, the Closures and the Spin*, *The $SU(2)$ of $M_n(\mathbb{C})$ Acting on $n^2$ Dimensions*, and *The Odd Rows*.
 
 ## The Five Questions
 

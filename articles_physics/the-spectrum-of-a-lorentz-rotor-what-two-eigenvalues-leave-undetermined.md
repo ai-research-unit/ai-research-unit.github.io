@@ -6,7 +6,7 @@ A Lorentz rotor has a spectrum, and the spectrum is much smaller than the rotor.
 
 This article states the count, exhibits the ambiguity as a family rather than as a curiosity, and says what data must be added to the spectrum to fix the frame. The conclusion matters because the block derives physical statements — the boost factor, the redshift, the aberration — from eigenvalues, and every such derivation is a statement about the spectrum and not about the frame.
 
-The article assumes *The Group of Unit-Norm Biquaternions* for the group, *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* for the factors, *The Two Eigenvalues Are the Two Weyl Weights* for the boost's spectrum, and *When the Axes Commute: The Normal Transformations* for the class of elements that are unitarily diagonalisable at all.
+The article assumes *The Group of Unit-Norm Biquaternions* for the group, *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* for the factors, *The Two Eigenvalues Are the Two Weyl Weights* for the boost's spectrum, and *Boosts and Rotations Commute on Collinear Axes: The Normal Transformations* for the class of elements that are unitarily diagonalisable at all.
 
 ## The Spectrum of a Rotor
 
@@ -379,6 +379,6 @@ The spectrum of a rotor is two eigenvalues whose product is one, that is two rea
 - S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press, 1978 — conjugacy classes of $SL(2,\mathbb{C})$ and the elliptic, hyperbolic and parabolic trichotomy.
 - P. Lounesto, *Clifford Algebras and Spinors*, 2nd ed., Cambridge University Press, 2001 — spectral decompositions in Clifford algebras, with the idempotents written explicitly.
 - *The Two Eigenvalues Are the Two Weyl Weights* — the spectrum of the boost family computed.
-- *When the Axes Commute: The Normal Transformations* — the class of elements for which a diagonalising unitary exists.
+- *Boosts and Rotations Commute on Collinear Axes: The Normal Transformations* — the class of elements for which a diagonalising unitary exists.
 - *The Complete Polar Decomposition of an N-Regular Biquaternion* — the source of the worked element and of the normal-case reading compared here.
 - *Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion* — the general case and the one-parameter family, in the mathematics corpus.

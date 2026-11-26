@@ -146,7 +146,7 @@ $V_1$ is the span of the three generators, the adjoint copy of the principal $\m
 ## Further Reading
 - [The Spin Decomposition of $M_n(\mathbb{C})$: $n$ Carriers, One for Each Spin from $0$ to $n-1$](the-spin-decomposition-of-mnc.html), for the decomposition and the generation theorem.
 - [The Spin-Zero Carrier of $M_n(\mathbb{C})$: the Scalars](the-spin-zero-carrier-of-mnc.html), for the neighbouring carrier.
-- [Where the Half-Integers Go in $M_n(\mathbb{C})$](where-the-half-integers-go-in-mnc.html), for the labels outside the list.
+- [Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition](integer-labels-on-the-algebra-a-half-integer-on-the-module.html), for the labels outside the list.
 - [The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$](the-carriers-the-closures-and-the-spin-of-mnc.html), for the closure table.
 - [The Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), for the case $n=2$.
 - [The Odd Rows: $M_3(\mathbb{C})$ and $M_5(\mathbb{C})$](the-odd-rows-m3-and-m5.html), for the rows where $V_1$ is not the top carrier.

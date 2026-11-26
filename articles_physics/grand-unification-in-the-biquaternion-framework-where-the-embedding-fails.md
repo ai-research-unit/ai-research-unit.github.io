@@ -15,7 +15,7 @@ into a single simple group $G_{\mathrm{GUT}}$, so that the three independent cou
 | $\text{rank}$ | $2+1+1=4$ | $4$ | $5$ | $6$ |
 | $\text{dimension}$ | $8+3+1=12$ | $24$ | $45$ | $78$ |
 
-The preceding article of this group, *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, proved that the biquaternion algebra's intrinsic compact structure is
+The preceding article of this group, *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators*, proved that the biquaternion algebra's intrinsic compact structure is
 
 $$
 \mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),
@@ -34,7 +34,7 @@ The article first sets the threshold that any unified group must clear, then loc
 - Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the programme this article constrains.
 - Companion article *Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall*, for the unification of the electroweak and abelian factors.
 - Companion article *Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated*, for the singlet programme.
-- Companion article *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the ceiling itself.
+- Companion article *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators*, for the ceiling itself.
 - Companion article *The Renormalization Group in Biquaternionic Form*, for the running of the couplings and the unification scale.
 
 ## The Threshold a Unified Group Must Clear
@@ -63,7 +63,7 @@ $$
 \dim_{\mathbb R}\mathrm{U}(2)=4<12\;}.
 $$
 
-It fails both numerical conditions, and it fails the structural one: $\mathrm{U}(2)$ does not contain $SU(3)_c$, by the dimension argument of *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, since $\dim\mathrm{SU}(3)=8>4=\dim\mathrm{U}(2)$. The framework is therefore below the grand-unification threshold on every count. No group of rank two and dimension four can contain the Standard-Model group, and the algebra supplies no larger intrinsic group.
+It fails both numerical conditions, and it fails the structural one: $\mathrm{U}(2)$ does not contain $SU(3)_c$, by the dimension argument of *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators*, since $\dim\mathrm{SU}(3)=8>4=\dim\mathrm{U}(2)$. The framework is therefore below the grand-unification threshold on every count. No group of rank two and dimension four can contain the Standard-Model group, and the algebra supplies no larger intrinsic group.
 
 ## The Framework's Own Unification: Electroweak and Abelian
 
@@ -196,7 +196,7 @@ Three consequences for the framework.
 
 The ceiling has a direct consequence for the particle programme, and it is worth stating plainly because it shapes the framework's existing articles.
 
-The Standard-Model symmetry group has three factors, and the framework reaches two of them intrinsically. The non-singlet sector is outside. Therefore a field valued in $\mathbb B$, or in a module of $\mathbb B$, cannot carry a triplet index, and the quarks and gluons do not exist as algebra-valued fields. What does exist is the singlet content: the hadrons, and more generally the operators invariant under the outside strong group. The framework's strong-interaction programme is accordingly a programme about the singlet sector, which is the content of the companion article *Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated* and of the ceiling article *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*. This is why the framework's connection articles treat the electroweak and abelian fields directly and the strong sector only through its composites, and why the informational interpretation of confinement in this corpus is an interpretation of information loss rather than a derivation of the strong group.
+The Standard-Model symmetry group has three factors, and the framework reaches two of them intrinsically. The non-singlet sector is outside. Therefore a field valued in $\mathbb B$, or in a module of $\mathbb B$, cannot carry a triplet index, and the quarks and gluons do not exist as algebra-valued fields. What does exist is the singlet content: the hadrons, and more generally the operators invariant under the outside strong group. The framework's strong-interaction programme is accordingly a programme about the singlet sector, which is the content of the companion article *Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated* and of the ceiling article *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators*. This is why the framework's connection articles treat the electroweak and abelian fields directly and the strong sector only through its composites, and why the informational interpretation of confinement in this corpus is an interpretation of information loss rather than a derivation of the strong group.
 
 The general structural statement is the following. **The biquaternion algebra unifies the electroweak and abelian connection interactions, because they are the two summands of its compact algebra $\mathrm{U}(2)$; it does not unify them with the strong interaction, because the strong group has rank and dimension beyond any group the algebra carries, and because the algebra's modules have even complex dimension while the triplet is irreducibly three-dimensional.** Grand unification, in the strict sense of a single simple group and a single coupling, is outside the framework's reach; it is reachable by enlarging the carrier to matrices over the algebra, at the cost of losing the canonicity of the symmetry group and of carrying unwanted factors. The framework's unification is electroweak, and this is a structural result about the algebra.
 

@@ -274,7 +274,7 @@ The Yukawa sector answers the same question by counting. The one-bidoublet condi
 
 ## Further Reading
 
-- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The group, the sixteen, the chain and the declarations, with no coupling value.
+- [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The group, the sixteen, the chain and the declarations, with no coupling value.
 - [The Matching at $M_C$](matching-at-m-c.html). The chain as three stabilisers, and the dimension budget that fixes the count of states.
 - [The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators](the-weinberg-angle-and-the-three-neutral-states.html). The angle as a ratio, and the neutral current written symbolically.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The multiplet list and the states, with the mass ratios referred here.

@@ -6,7 +6,7 @@
 
 **The order of the article.** The four actions come first; the lists second, one section each. The reading then puts the lists side by side.
 
-**It assumes** *The Copy Acting on Sixteen Dimensions*, *Why the Conjugation Labels Are Integer* and *The Clebsch–Gordan Decomposition of the Operators*. **The row of the elements is** where the same four actions give the four lists of the four-dimensional algebra.
+**It assumes** *The Copy Acting on Sixteen Dimensions*, *The Conjugation Labels Are Integer* and *The Clebsch–Gordan Decomposition of the Operators*. **The row of the elements is** where the same four actions give the four lists of the four-dimensional algebra.
 
 **The result in one line.** The principal copy gives four copies of the module, the rotor copy eight copies of the spinor, the full unit group gives the identity line and the traceless hyperplane, the pair of copies gives the four blocks of a chosen splitting of the module, and the two conjugations give the carriers $7+5+3+1$ and the pieces $2+9+5$.
 
@@ -131,6 +131,6 @@ The algebra carries two copies of the spin group, the principal copy and the rot
 ## Further Reading
 
 - [The Copy Acting on Sixteen Dimensions](the-copy-acting-on-sixteen-dimensions.html), for the left and the conjugation actions compared.
-- [Why the Conjugation Labels Are Integer](why-the-conjugation-labels-are-integer.html), for the arithmetic behind the list $7+5+3+1$.
+- [The Conjugation Labels Are Integer](the-conjugation-labels-are-integer.html), for the arithmetic behind the list $7+5+3+1$.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the unit group of the list $1+15$.
 - [The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$](the-spin-decomposition-four-carriers-and-the-weight-multiset.html), for the weights of the sixteen.

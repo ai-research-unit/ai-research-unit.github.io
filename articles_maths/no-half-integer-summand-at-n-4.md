@@ -1,4 +1,4 @@
-# __What a Half-Integer Summand Would Require at $n=4$__
+# __No Half-Integer Summand at $n=4$: Four Requirements Fail Together__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 **The order of the article.** The first section fixes what a half-integer summand would be. The second lists the four requirements and shows that each fails. The third separates the two notions that the failure is often confused with, invariance and being a summand. The fourth gives the counterexample that the algebra *does* contain objects of the module's shape, namely the ideals, and the weights that distinguish them. The fifth states the boundary.
 
-**It assumes** *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$*, *Why the Conjugation Labels Are Integer*, and *The Minimal Left Ideals of $M_4(\mathbb{C})$*. The row at order two is *What a Half-Integer Summand Would Require*.
+**It assumes** *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$*, *The Conjugation Labels Are Integer*, and *The Minimal Left Ideals of $M_4(\mathbb{C})$*. The row at order two is *A Half-Integer Summand Fails Three Tests: Weight, Casimir and Type*.
 
 **The result in one line.** A half-integer summand would need a carrier of dimension $2j+1$ with $2j$ odd, hence an even-dimensional invariant subspace, and every invariant subspace of the algebra has odd dimension.
 
@@ -110,8 +110,8 @@ The algebra does contain subspaces of dimension four, namely the minimal left id
 
 ## Further Reading
 
-- [Why the Conjugation Labels Are Integer: the Kernel $\{\pm\mathrm I\}$](why-the-conjugation-labels-are-integer-at-n-4.html), for the integrality.
+- [The Conjugation Labels Are Integer: Differences of the Module Weights](the-conjugation-labels-are-integer.html), for the integrality.
 - [The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$](the-minimal-left-ideals-of-m4c.html), for the ideals.
 - [The Four Carrier Lists of One Algebra at $n=4$](the-four-carrier-lists-of-one-algebra-at-n-4.html), for the invariant subspaces.
-- [What a Half-Integer Summand Would Require](what-a-half-integer-summand-would-require.html), for the row at order two.
+- [A Half-Integer Summand Fails Three Tests: Weight, Casimir and Type](a-half-integer-summand-fails-three-tests.html), for the row at order two.
 - [The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$](the-parity-rule-the-two-squares-of-the-module-at-n-4.html), for the parity statements.

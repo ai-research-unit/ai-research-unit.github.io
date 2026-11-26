@@ -1,4 +1,4 @@
-# __When the Axes Commute: The Normal Transformations__
+# __Boosts and Rotations Commute on Collinear Axes: The Normal Transformations__
 
 ## Introduction
 

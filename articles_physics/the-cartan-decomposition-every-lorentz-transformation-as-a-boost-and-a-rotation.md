@@ -12,7 +12,7 @@ with $\tilde U_\Psi$ a positive Hermitian element of unit norm and $\tilde u_{\m
 
 The word is the block's main coordinate system. It is what makes "three boost parameters and three rotation parameters" an honest statement, it is what the Cartan decomposition of the group *is*, and it is the object the non-uniqueness of the cover shows itself in.
 
-The article assumes *The Group of Unit-Norm Biquaternions* for the group, the compact subgroup and the exponential chart, *The Two Actions of One Group: Adjoint and Congruence* for the congruence, and *The Lorentz Transformation as a Biquaternionic Rotation* for the parametrisations of a boost and a rotation. It hands the axis-commuting case to *When the Axes Commute: The Normal Transformations* and the dimensions of the algebra to *The Isomorphisms and Their Dimensions*.
+The article assumes *The Group of Unit-Norm Biquaternions* for the group, the compact subgroup and the exponential chart, *The Two Actions of One Group: Adjoint and Congruence* for the congruence, and *The Lorentz Transformation as a Biquaternionic Rotation* for the parametrisations of a boost and a rotation. It hands the axis-commuting case to *Boosts and Rotations Commute on Collinear Axes: The Normal Transformations* and the dimensions of the algebra to *The Isomorphisms and Their Dimensions*.
 
 ## The Product Form
 
@@ -241,4 +241,4 @@ Every unit-norm biquaternion is uniquely a positive Hermitian factor times a uni
 - A. Knapp, *Lie Groups Beyond an Introduction*, 2nd ed., Birkhäuser, 2002 — the global Cartan decomposition and the uniqueness of the factors under positivity.
 - P. Lounesto, *Clifford Algebras and Spinors*, 2nd ed., Cambridge University Press, 2001 — the biquaternion version of the polar decomposition and the boost-rotation word.
 - *The Group of Unit-Norm Biquaternions* — the group and the two factors as sets.
-- *When the Axes Commute: The Normal Transformations* — the case in which the two words coincide.
+- *Boosts and Rotations Commute on Collinear Axes: The Normal Transformations* — the case in which the two words coincide.

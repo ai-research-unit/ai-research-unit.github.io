@@ -1,4 +1,4 @@
-# __Where the Rotor Leaves $M_n(\mathbb{R})$: the Even Subalgebra and $Cl(n)$__
+# __The Rotor Leaves $M_n(\mathbb{R})$ for $Cl(n)$: The Even Subalgebra at Dimension $2^{n-1}$__
 
 ## Introduction
 
@@ -104,7 +104,7 @@ so the image is a vector of the same length. The map is linear and injective, he
 
 **A caveat about the centre.** The kernel is $\{\pm1\}$ for every $n$, but the centre of $SU(2)$ is larger for even $n$: the volume element $\omega=e_1\cdots e_n$ is then even, it is a rotor, it commutes with every even element, and it satisfies $\omega X=-X\omega$ on vectors. So $\omega$ maps to $-\mathrm{I}$ and not to the identity: a larger centre does not enlarge the kernel, and the map stays two-to-one.
 
-## Where the Rotor Leaves $M_n(\mathbb{R})$
+## The Comparison: $2^{n-1}$ Against $n^{2}$
 
 **The comparison is $2^{n-1}$ against $n^2$.** A rotor lies in $Cl^0(n)$; a matrix lies in $M_n(\mathbb{R})$, of dimension $n^2$. An injective linear map $Cl^0(n)\to M_n(\mathbb{R})$ would need $2^{n-1}\le n^2$, and the values are
 

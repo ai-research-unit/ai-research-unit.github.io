@@ -1,4 +1,4 @@
-# __Why Gravitation Is Not a Force but a Curvature__
+# __Gravitation as Curvature: The Tidal Tensor Survives the Equivalence Principle__
 
 ## Introduction
 

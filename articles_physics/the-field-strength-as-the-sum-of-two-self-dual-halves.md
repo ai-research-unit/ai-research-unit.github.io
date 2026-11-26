@@ -1,4 +1,4 @@
-# __The Field Strength as $(1,0)\oplus(0,1)$__
+# __The Field Strength as the Sum of Two Self-Dual Halves: $(1,0)\oplus(0,1)$__
 
 ## Introduction
 

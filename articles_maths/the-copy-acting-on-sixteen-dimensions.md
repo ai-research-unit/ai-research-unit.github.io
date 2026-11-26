@@ -6,11 +6,11 @@
 
 **The order of the article.** The two actions come first; the isotypic theorem second. The four carriers of the conjugation follow, then the commutativity of the actions, and the reading closes.
 
-**It assumes** *Why the Conjugation Labels Are Integer*, *The Four Carrier Lists* and *The Clebsch–Gordan Decomposition of the Operators*. **The row of the elements is** where the same two actions act on the four-dimensional algebra, with the left action isotypic of multiplicity two and the conjugation splitting into two carriers.
+**It assumes** *The Conjugation Labels Are Integer*, *The Four Carrier Lists* and *The Clebsch–Gordan Decomposition of the Operators*. **The row of the elements is** where the same two actions act on the four-dimensional algebra, with the left action isotypic of multiplicity two and the conjugation splitting into two carriers.
 
 **The result in one line.** The left action has the single isotypic component of multiplicity four and the scalar Casimir $\tfrac{15}{4}$; the conjugation action has the four isotypic components of dimensions $7,5,3,1$ and the four Casimir values $12,6,2,0$.
 
-**Boundaries.** The integrality of the conjugation labels is *Why the Conjugation Labels Are Integer*; the four lists are *The Four Carrier Lists*; the actions themselves are *Operators Acting on Two Sides*.
+**Boundaries.** The integrality of the conjugation labels is *The Conjugation Labels Are Integer*; the four lists are *The Four Carrier Lists*; the actions themselves are *Operators Acting on Two Sides*.
 
 ## The Two Actions
 
@@ -138,7 +138,7 @@ $$
 
 ## Further Reading
 
-- [Why the Conjugation Labels Are Integer](why-the-conjugation-labels-are-integer.html), for the weights of the conjugation action.
+- [The Conjugation Labels Are Integer](the-conjugation-labels-are-integer.html), for the weights of the conjugation action.
 - [The Four Carrier Lists](the-four-carrier-lists-of-one-algebra.html), for the four actions and their decompositions.
 - [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the two-sided structure.
 - [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the four carriers.

@@ -154,6 +154,6 @@ Recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\v
 ## Further Reading
 
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). The fifteen arrays printed one to a display, and the three-step construction of the physics basis from the words.
-- [Classification of the Bosons: Sixteen Cells, Fifteen Generators, Nine Massless and Six Massive](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid, the block picture and the ledger of the spectrum.
+- [Classification of the Bosons: One Grid, Fifteen Generators, Nine Massless and Six Heavy](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid, the block picture and the ledger of the spectrum.
 - [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The count of generators read as a mass spectrum.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Why the rank of the unbroken group is three above the transition and three below.

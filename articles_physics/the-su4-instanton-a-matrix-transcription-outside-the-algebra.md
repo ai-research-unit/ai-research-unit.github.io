@@ -177,7 +177,7 @@ $$
 
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The term $\theta_4$ multiplies, and the trace-versus-pairing argument this article inherits.
 - [The Primordial Coupling](the-primordial-coupling.html). The $\alpha_4$ from which the action is computed.
-- [The Sixteen Above $M_C$](the-sixteen-above-m-c.html). The masslessness that makes $\theta_4$ removable, and the $m=0$ the removability is a statement about.
+- [The Sixteen Weyl Fields Above $M_C$](the-sixteen-weyl-fields-above-m-c.html). The masslessness that makes $\theta_4$ removable, and the $m=0$ the removability is a statement about.
 - [The Axion and the Peccei–Quinn Mechanism](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html). The parameter $\theta_4$ is not.
-- [Why There Is No Confinement Above $M_C$](why-there-is-no-confinement-above-m-c.html). The perturbative phase this non-perturbative sector sits in without changing.
-- [Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The ceiling this article places the instanton under.
+- [No Confinement Above $M_C$: Eleven E-Folds of Perturbative Coupling](no-confinement-above-m-c.html). The perturbative phase this non-perturbative sector sits in without changing.
+- [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$](the-compact-sector-of-the-biquaternions-is-u2.html). The ceiling this article places the instanton under.

@@ -1,4 +1,4 @@
-# __The One-Loop Effective Potential of the Scalar Matrix: The $\rho^{4}\ln\rho^{2}$ Coefficient for $\mathbf{15}\oplus\mathbf1$__
+# __The One-Loop Effective Potential of the Scalar Matrix at Sixteen Real Components: $0.0570\lambda_1^{2}$__
 
 ## Introduction
 

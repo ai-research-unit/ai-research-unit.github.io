@@ -1,4 +1,4 @@
-# __Where the Rotor Leaves $M_n$: the Even Subalgebra and $Cl(n)$__
+# __The Rotor Leaves $M_n$ for the Even Clifford Algebra: Dimension $2^{n-1}$ Against $n$__
 
 ## Introduction
 

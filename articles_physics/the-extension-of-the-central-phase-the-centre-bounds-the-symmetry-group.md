@@ -12,7 +12,7 @@ to be.
 
 The article owns the statement of the **extension problem**, the reason the centre caps it, and the two
 candidate interpretations. It owns no new theorem. The centre and its triviality are *The Centre of the Biquaternion
-Algebra as the Classical Sector*; the ceiling $\mathrm{U}(2)$ is *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*; the generator is *Special Element Conventions*, §*The Central Map and Its Restrictions*; the discrete charge the compact phase
+Algebra as the Classical Sector*; the ceiling $\mathrm{U}(2)$ is *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators*; the generator is *Special Element Conventions*, §*The Central Map and Its Restrictions*; the discrete charge the compact phase
 carries is *The Physical Interpretation of the 12 Products*; and the placement of the connection row among the products is *The Heat Map
 of the Framework: Which Physics Hangs on Which Product*.
 
@@ -130,7 +130,7 @@ Where the computation is. The refusal is computed, with the assignment table and
   localisation ceiling. Owner: *The Physical Interpretation of the 12 Products*.
 - Non-centrality is non-locality's algebraic price. The interpretation is that a local symmetry costs a
   non-central generator, so the framework's globality is the price it pays for having a scalar centre, and
-  the enlargement is the price it would pay to escape. Owners: *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* and *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*.
+  the enlargement is the price it would pay to escape. Owners: *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators* and *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*.
 
 ## Summary
 
@@ -158,7 +158,7 @@ does not contain.
 
 - [The Centre of the Biquaternion Algebra as the Classical Sector](the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html), for the computation of the centre, its
   five characterisations and its interpretation as the classical sector.
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), for the ceiling, the
+- [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html), for the ceiling, the
   Cartan decomposition and the enlargements that pass it.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the central phase as
   one generator on remarkable subspaces.

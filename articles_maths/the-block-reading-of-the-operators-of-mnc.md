@@ -81,7 +81,7 @@ $$
 
 **All four corners are four-dimensional.** $k=n-k=2$, so $d_{ij}=4$ for all four corners, and the operator space $M_4$ splits into four equal blocks of dimension $4$. This is the only $n$ at which the four corners are simultaneously equal and more than one-dimensional.
 
-**The half-integers.** Under the principal copy at $n=4$, the two diagonal corners carry integer spins and the two off-diagonal corners carry the half-integer labels. The block reading is the operator-level sight of the Peirce corners that carry the half-integers; the spin statement is in *Where the Half-Integers Go in $M_n(\mathbb{C})$*.
+**The half-integers.** Under the principal copy at $n=4$, the two diagonal corners carry integer spins and the two off-diagonal corners carry the half-integer labels. The block reading is the operator-level sight of the Peirce corners that carry the half-integers; the spin statement is in *Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition*.
 
 **What does not happen at $n=2$.** With $k=1$ the four corners are one-dimensional, the mixing is a $2\times2$ pattern, and every operator is already a block matrix of scalars. The biquaternion block reading is the shadow of this case.
 
@@ -146,6 +146,6 @@ A splitting into $U\oplus W$ splits $M_n$ into four corners of dimensions $k^2,k
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the algebra-level decomposition.
 - [Operator Chirality on $M_n(\mathbb{C})$](operator-chirality-on-mnc.html), for the symmetric and antisymmetric split.
 - [The Operators on the Four Sectors of $M_n(\mathbb{C})$](the-operators-on-the-four-sectors-of-mnc.html), for the sector reading.
-- [Where the Half-Integers Go in $M_n(\mathbb{C})$](where-the-half-integers-go-in-mnc.html), for the half-integer labels.
+- [Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition](integer-labels-on-the-algebra-a-half-integer-on-the-module.html), for the half-integer labels.
 - [The Spin Content of $M_4(\mathbb{C})$](the-spin-content-of-m4c.html), for the case $n=4$.
 - [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the case $n=2$.

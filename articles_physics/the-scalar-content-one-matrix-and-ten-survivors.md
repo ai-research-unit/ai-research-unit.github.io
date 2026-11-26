@@ -1,4 +1,4 @@
-# __The Scalar Content: One Matrix, Sixteen Components, Six Eaten, Ten Survivors__
+# __The Scalar Content: One Matrix, Sixteen Components, Six Eaten and Ten Survivors__
 
 ## Introduction
 

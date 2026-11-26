@@ -1,4 +1,4 @@
-# __Where the Half-Integers Go in the Biquaternion Operators__
+# __Half-Integer Weights Cancel in the Differences: The Operator Space Is Integral__
 
 ## Introduction
 
