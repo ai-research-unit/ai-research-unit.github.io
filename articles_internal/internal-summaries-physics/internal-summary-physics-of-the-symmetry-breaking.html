@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Universe Symmetry Breaking — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the menu section Biquaternion Universe Symmetry Breaking, thirty-four articles counted from the anchors of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-universe-symmetry-breaking"><strong>Internal Summary of the Biquaternion Universe Symmetry Breaking</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the menu section <em>Biquaternion Universe Symmetry Breaking</em>, thirty-four articles counted from the anchors of <code>physics.md</code> at the time of writing, in the menu's three subsections: from the $\mathrm{SU}(4)$ model to the Standard Model (thirty-one), the force content of the model (one), the leptoquark sector at work (two). It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the article named in the section.</p>
+<p><strong>What the part does.</strong> It is the <strong>transition</strong>, and the only place in the corpus where a bigger group becomes the Standard Model's three factors. Above $M_C$ one $\mathrm{SU}(4)$; at $M_C$ the vacuum $iD=\operatorname{diag}(-3,1,1,1)$ breaks it to $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ and the weak pair <em>arrives</em> with a doublet index; below, the assembled Standard Model, its nineteen parameters, and the audits that say which of them the framework touches.</p>
+<p><strong>The single structural fact.</strong></p>
+<p>$$
+\boxed{\;
+iD=\operatorname{diag}(-3i,i,i,i),\qquad
+\operatorname{ad}(iD):\quad 0^{9}\oplus(-4i)^{3}\oplus(+4i)^{3},\qquad
+15=9+3+3 ;
+\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The whole section is one piece of spectral theory plus one distinction of verbs. <strong>A subgroup that leaves: dimension falls, rank does not rise. An index that arrives: rank rises, and no subgroup was involved.</strong> The first is the breaking — $\dim$ falls from $15$ to $9$, the rank stays $3$ because $2+1=3$. The second is the birth of the weak factors, and it is not a breaking at all: rank $3\to5$ cannot come from any subalgebra, since conjugation preserves the dimension of the closure. The obstruction is stated in its sharpest form: $\dim[\mathfrak m,\mathfrak m]=9$ against $\dim[\mathfrak{so}(4),\mathfrak{so}(4)]=6$, so <strong>no $g$ carries the sextet to the weak pair</strong>.</p>
+<p><strong>The one-sentence version.</strong> One vacuum of one scalar breaks $\mathrm{SU}(4)$ to colour times $B-L$, eats six leptoquarks at $32v^{2}$, and leaves rank five only if the object that breaks the group also carries a doublet index — the one postulate of the whole chain.</p>
+<p><strong>The partition of the thirty-four articles.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Articles</th>
+<th>What it settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>From the $\mathrm{SU}(4)$ Model to the Standard Model</td>
+<td>31</td>
+<td>the vocabulary, the breaking and its mass matrix, the charge theorem and charge quantisation, matching, rank five from three, the weak sector and the angle, the one coupling, the thresholds, the Standard Model assembled and audited, the parameter count, the three gaps</td>
+</tr>
+<tr>
+<td>The Force Content of the Model</td>
+<td>1</td>
+<td>one connection, a nine-dimensional kernel, rank five</td>
+</tr>
+<tr>
+<td>The Leptoquark Sector at Work</td>
+<td>2</td>
+<td>lepton flavour with no generator joining the copies; the three diagrams and their rates</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three sum to thirty-four.</p>
+<p><strong>Two traps fixed at the top.</strong> <em>The sextet is massless above $M_C$ and heavy only through the condensate</em> — the phase, not the particle, carries the mass, and a reader who inverts the order gets the cosmology and the bound wrong. <em>"Emergent" is a word the section retired</em>: the weak factors are not a condensate's composite gauge field but an index that arrives, and the two theorems against the composite route are the reason the word went.</p>
+<h2 id="1-the-vocabulary-survives-breaks-arrives">1. The Vocabulary: Survives, Breaks, Arrives</h2>
+<p><strong>One verb per object.</strong> <em>Survives</em> for a subalgebra the vacuum annihilates; <em>breaks</em> for a complement it does not commute with; <em>arrives</em> for a factor borne by an index. Rank is monotone downwards inside an algebra and additive across factors, with the ledger $3\to3$ at the breaking and $3\to5$ at the birth.</p>
+<p><strong>The four dimensions that describe the relation.</strong> Span $12$, intersection $4=\operatorname{span}\{A_{xy},A_{xz},A_{yz},iD\}$, joint closure $15$, defect $3$. Why six keeps appearing: $8+1+6=8+1+3+3=15$, and closure is the whole difference.</p>
+<p><strong>The non-trivial claim.</strong> An index is what only a multiplet can carry, and that is why the transition needs a field with two indices rather than a cleverer condensate. The word "emergent" came from the composite route and was replaced because the route is closed by the two theorems of §8, not because the numbers changed.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-centraliser-the-complement-and-the-index-dimension-and-rank.md</code>.</p>
+<h2 id="2-the-frame-of-the-fifteen-and-the-line-it-lacks">2. The Frame of the Fifteen, and the Line It Lacks</h2>
+<p><strong>Three diagonal generators, one sum.</strong> $M_j=E_{jj}-E_{tt}$ with $G_j=iM_j$, closed under the six permutations of $x,y,z$ and of rank three, with the trace direction not a member of the frame but its sum: $\sum_jM_j=D$ with coefficient $+1$. Below $M_C$ the lepton line therefore appears as a <strong>recombination</strong> and not as a distinguished element.</p>
+<p>$$
+\text{Gram }2\ \text{on the diagonal and }1\ \text{off it},\qquad
+A_j=W_{jj}=\sum_kM_k-2M_j,\qquad
+\text{Gram}(A)=4\,\mathbb1 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The construction <strong>needs a line outside the permutation</strong>: the $-1$ on $\epsilon_t$ is what makes the triple traceless. In $\mathfrak{su}(3)$ the democratic triple $(1,1,-2)$ and its permutations sum to zero and have rank two, and the orthogonality of a size-three orbit reduces to $(v_t-3\beta)(v_t+\beta)=0$, whose two families are $A$ and $(3,-5,1,1)$. A reader who tries to build the frame inside the permutation gets rank two and no fourth line.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-symmetric-diagonal-frame-of-the-fifteen.md</code>.</p>
+<h2 id="3-the-breaking-and-the-six-leptoquarks">3. The Breaking and the Six Leptoquarks</h2>
+<p><strong>One line of spectral theory.</strong> The vacuum is forced by the lepton-line declaration and the trace condition, up to scale.</p>
+<p>$$
+\boxed{\;
+\ker\operatorname{ad}(iD)=\mathfrak{u}(3)=\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L},\qquad
+\text{the sextet is exactly the }\pm4i\text{ eigenspace}
+\;}
+$$</p>
+<p>$$
+\boxed{\;
+M^{2}=2v^{2}\bigl[D,[D,\cdot\,]\bigr]=\operatorname{diag}\bigl(\underbrace{32v^{2},\dots,32v^{2}}_{6},\underbrace{0,\dots,0}_{9}\bigr)
+\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> Six of the scalar's sixteen real components are eaten by the sextet and ten remain; six more are eaten later by the weak factors, so $16=6+10$ and $8=6+2$ and $15=9+6$ are one counting. The mass is $32=2(1-(-3))^{2}$, which is the eigenvalue spacing and not a coupling, and the physical normalisation is $M_X^2=\tfrac12g_4^2v_C^2$. No cross terms: the split is exact because the vacuum is a singlet of definite charge. The rank ledger is $3\to2+1=3$, and that single line forbids any rank rise at the breaking.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.md</code>.</p>
+<h2 id="4-the-three-lines-in-math95">4. The Three Lines in $\mathrm{SU}(3)$</h2>
+<p><strong>The second half of a pair.</strong> Why the residual is $\mathrm{SU}(3)$ and not $\mathrm{SO}(3)$: two diagonal bosons require rank two and a rank-one group has one. The strong group is never broken, $[D,X]=0$ on the spatial block, so the eight are exact zeros of the mass matrix.</p>
+<p><strong>The non-trivial claim.</strong> $9\to8$ is the <strong>same arithmetic</strong> as the companion article's $16\to15$, applied one size down: the nine slots of $3\otimes\bar3=8\oplus1$ are printed before anything is subtracted, six off-diagonal and three diagonal with the trace excluded. The two diagonal gluons are a space and not a pair — the lepton-line entry is $-3ia$, so the spatial-block Cartan is exactly the span of $d_2,d_3$, with $d_2=i\lambda_3^{\mathrm{emb}}$ exactly and $d_3$ a unit combination of both, equal individual norms and therefore no rescaling, Gram $\begin{pmatrix}2&amp;-1\\-1&amp;2\end{pmatrix}$.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-three-lines-in-su3-a-coordinate-label-on-the-eight-not-a-charge.md</code>.</p>
+<h2 id="5-the-scalar-census-and-the-charge-theorem">5. The Scalar Census and the Charge Theorem</h2>
+<p><strong>Counted once.</strong> $\Xi\in\mathbf{15}\oplus\mathbf1$ as a Hermitian $4\times4$ with sixteen real components, six of the $\mathbf3\oplus\bar{\mathbf3}$ block eaten at $M_C$ and ten surviving — an octet, a singlet and the radial mode.</p>
+<p>$$
+\boxed{\;
+\Xi\in\mathbf{15}\oplus\mathbf1:\ 16\ \text{real},\ 6\ \text{eaten},\ 10\ \text{survive};\qquad
+16=6+10
+\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The matrix index is <strong>forced by the representation</strong>: $\bar\xi\Xi\xi$ needs $\Xi\in\bar{\mathbf4}\otimes\mathbf4$, and $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ has no $\bar{\mathbf4}$. The electroweak doublet $H$ is a separate field and cannot be a component of a matrix on the triplet; no field carries both weak indices, which is why the charged block is diagonal and $\rho=1$ at tree level.</p>
+<p><strong>The negative half, two theorems and no construction.</strong></p>
+<p>$$
+\boxed{\;
+Q=\pm\tfrac23\ \text{on every member}\quad\Longrightarrow\quad
+\text{singlets have }Q\in2\mathbb Z\quad\Longrightarrow\quad Q=\pm1\text{ is unreachable}
+\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> $Q=\pm\tfrac23$ everywhere follows from $n-m\in3\mathbb Z$ together with singlet neutrality, hence $Q=2k$ and $Q=\pm1$ is unavailable — the parity route agrees. The best channel is computed rather than waved away: $\mathbf3_{+4/3}\otimes\bar{\mathbf3}_{-4/3}=\mathbf1_0\oplus\mathbf8_0$, the singlet neutral identically, $J=1$ giving three neutral states per chirality and six in all — and six neutral states still cannot make a doublet, because the mass table separates an identity from a particle, $32v^2$ against $0$, with the block $32v^2[[1,1],[1,1]]$ and eigenvalues $64v^2,0$. The $45^\circ$ the identities would impose is against $\sin^2\theta_W=0.23122$, a factor $2.16$.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-scalar-content-one-matrix-and-ten-survivors.md</code>, <code>articles_physics/the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.md</code>.</p>
+<h2 id="6-charge-quantisation-from-the-fourth-line">6. Charge Quantisation From the Fourth Line</h2>
+<p><strong>A chain of five quotations, each followed by what it forces.</strong> The trace $\ell+3q=0$ with $\ell=-3q$ and the corner forced once the shape is declared; the corner entry $-3$ as the count of spatial lines that sets the quantum $e/(N-1)$, attained by the down quark; $B-L=\tfrac13D$ with the seven-state charge table from the two isospin directions plus $\tfrac16D$; the proton–electron cancellation as two cancellations and a mixed row that vanishes term by term; $[iD,\Phi_0]=0$ giving $B-L$ exact at every scale, so the lattice cannot move.</p>
+<p>$$
+iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr)=\begin{pmatrix}-3i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i\end{pmatrix},
+\qquad
+\ell+3q=0\ \Longrightarrow\ \ell=-3q .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The exponential $e^{i\theta}\operatorname{diag}(e^{-4i\theta},1,1,1)$ has relative phase $N\theta$ and is central four times a turn — so the charge lattice is a statement about the centre and not about the spectrum. Two inputs are named once: the identification of the lepton line, and the hypercharge combination written as one isospin direction plus half of $B-L$. The three normalisations $iD$, $\tfrac13D$, $D/\sqrt{24}$ are derived, not chosen.</p>
+<p><strong>Source.</strong> <code>articles_physics/charge-quantisation-from-the-fourth-line-one-trace-one-third.md</code>.</p>
+<h2 id="7-the-six-leptoquarks-above-math147-and-the-bound">7. The Six Leptoquarks Above $M_C$, and the Bound</h2>
+<p><strong>The sextet as the off-diagonal block, massless above $M_C$ and made heavy only by the condensate.</strong> Three registers are kept apart — spectral, dynamical, effective — because "integrated out" means the third and each wrong reading is excluded by a different one.</p>
+<p><strong>The non-trivial claim.</strong> $B-L=\pm\tfrac43$ and $Q=\pm\tfrac23$ are forced by the index structure, and $M_X^2=\tfrac12g_4^2v_C^2$ against $M_{W_R}^2=\tfrac14g_R^2v_C^2$ gives $M_X/M_{W_R}=\sqrt2\,g_4/g_R$: the $\sqrt2$ is the group's and the ratio is free. The suppression is $(M_W/M_X)^2=1.0\times10^{-7}$; the $K_L\to\mu e$ bound is $3.69\times10^{-5}$ J rounded to $4.0\times10^{-5}$ J, that is $2.5\times10^2$ TeV. Proton decay is dimension nine with rate $\propto M_X^{-10}$, and the diquark fork is absent from the fifteen and worth $10^{12}$ TeV if added.</p>
+<p><strong>Source.</strong> <code>articles_physics/six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.md</code>.</p>
+<h2 id="8-matching-at-math162-and-rank-five-from-three">8. Matching at $M_C$, and Rank Five From Three</h2>
+<p><strong>The interface.</strong> Four quantities cross the boundary; the group is $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ at rank five and dimension fifteen; twelve vectors are massless at $M_C$ — the nine of the kernel and the three weak left — and nine are heavy — the six leptoquarks, $W_R^{\pm}$ and $Z_R$ — all at the one transition. The couplings to be matched are $g_4\to(g_3,g_{B-L})$, and the scale is $M_C\gtrsim250\ \mathrm{TeV}$ with $v$ the only other scale.</p>
+<p><strong>The non-trivial claim.</strong> $10^{13}$ GeV is a <strong>preference and not a threshold</strong>, and the two large scales must not be confused: the flavour floor and the unification preference are four decades apart. Every mass sits at its own vacuum's scale, and the two structural zeros are exact. The three absences are the weak group born at the matching, the photon formed after it, and the angle computed after it.</p>
+<p><strong>The construction, with three statements in three statuses.</strong> A subalgebra never outranks its algebra (theorem); the sextet cannot make the weak pair (theorem, twice); the transition's scalar carries a doublet index (the one postulate).</p>
+<p>$$
+\boxed{\;
+\text{the primordial force breaks; the object that breaks it carries a doublet index;}
+\;}
+\qquad
+\boxed{\;
+\text{the doublet index is the weak force: it arrives with the breaking, not out of it.}
+\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The rank ledger $2+1+1+1=5$ against an opening balance of $3$ leaves exactly two maximal-rank ways of spending three, and <strong>no breaking reaches rank five</strong> — wall and door, and the door is the story. The mechanism is one object with two indices, $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$: the $\mathrm{SU}(4)$ index breaking and the $\mathbf2$ index birthing, ranks adding across factors and never across an inclusion. The price is one postulate in a currency the corpus already spends, and five things are <strong>not</strong> postulated.</p>
+<p><strong>Source.</strong> <code>articles_physics/matching-at-m-c.md</code>, <code>articles_physics/rank-five-from-three-the-weak-factors-as-a-condensate-index.md</code>.</p>
+<h2 id="9-the-mass-matrix-of-the-fifteen-sorted">9. The Mass Matrix of the Fifteen, Sorted</h2>
+<p><strong>The fifteen sorted by the quantum numbers of the vacuum.</strong> Eight spatial, one $B-L$, six leptoquark: $8+1+6=15$, and the split is exact because every vacuum is a singlet of definite charge.</p>
+<p>$$
+\operatorname{ad}(iD):\quad 0^{9}\ \oplus\ (-4i)^{3}\ \oplus\ (+4i)^{3},
+\qquad
+15=9+6 ;
+\qquad
+M^{2}_{\text{lepto}}=32v^{2}\,\mathrm I_{6},\quad 32=2\cdot4^{2},\quad 4=1-(-3).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The spatial block is zero as a <strong>stabiliser statement</strong> and the $B-L$ row is zero for a second reason — the vacuum is its own direction — so the kernel is the nine of $\mathfrak{u}(3)$, and the two zeros have different proofs. The weak directions have no row at all: $W$, $Z$, $Z_R$ and the photon arrive at $M_C$ with the doublet index.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-mass-matrix-of-the-fifteen-connections.md</code>.</p>
+<h2 id="10-the-weak-sector-below-math186">10. The Weak Sector Below $M_C$</h2>
+<p><strong>Seven vector fields under five names.</strong> Six arrive with the doublet index and none is a generator, plus $B'$: $\{W^3_L,W^3_R,B'\}$ neutral and $\{W^\pm_L,W^\pm_R\}$ charged.</p>
+<p>$$
+\mathcal M^2=v_C^2\,a_1a_1^{\mathsf T}+v^2\,a_2a_2^{\mathsf T},
+\qquad
+a_1=\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr),\quad a_2=\bigl(-\tfrac12,0,\sqrt{\tfrac38}\bigr),
+$$</p>
+<p>$$
+a_1\times a_2\ \propto\ \bigl(\sqrt{\tfrac38},\ \sqrt{\tfrac38},\ \tfrac12\bigr)
+\quad\Longrightarrow\quad
+A_{\imath}\ \propto\ W^3_{L\imath}+W^3_{R\imath}+\sqrt{\tfrac23}\,B'_{\imath} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The neutral matrix is rank <strong>two</strong> because two rank-one terms are all there is, hence exactly one null direction — the photon — and two masses, $\tfrac25g^2v^2$ as a Schur complement and $\tfrac58g^2v_C^2$ as $|a_1|^2$. The charged block is diagonal, $M_W=\tfrac12g_Lv$ and $M_{W_R}=\tfrac12g_Rv_C$, with no off-diagonal because no scalar carries both weak indices; the two halves join in $\rho=M_W^2/(M_Z^2\cos^2\theta_W)=1$ exactly at tree level, and $M_X^2/M_{W_R}^2=2g_4^2/g_R^2$.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.md</code>.</p>
+<h2 id="11-the-weinberg-angle">11. The Weinberg Angle</h2>
+<p><strong>One condition, three denominators.</strong> The two neutral currents $J^3$ and $J^Y$ before mixing, and the single condition that fixes the angle: $g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$, i.e. the rotation that makes the photon pure charge, with $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$.</p>
+<p><strong>The non-trivial claim.</strong> The $Z$ bracket is $\sqrt{g^2+g_{\mathrm Y}^2}(J^3-\sin^2\theta_WJ^Q)$ in three lines, and the square is $g_{\mathrm Y}^2/(g^2+g_{\mathrm Y}^2)$: <strong>the $\sin^2$ is a residue, not a convention</strong>. The chiral decomposition $g_L=T_3-Q\sin^2$, $g_R=-Q\sin^2$, $g_V=T_3-2Q\sin^2$, $g_A=T_3$ is then exact, and the electron's $g_V=-0.0376$ is seven per cent of its $g_A$ — a near-cancellation at $\sin^2=\tfrac14$ that no tuning produced. The Paschos–Wolfenstein ratio of differences $R^-=g_L^2-g_R^2=\tfrac12-\sin^2\theta_W$ has its $\tfrac59\sin^4$ terms cancel exactly, worth $0.0297$, eleven per cent.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-weinberg-angle-and-the-three-neutral-states.md</code>.</p>
+<h2 id="12-the-one-coupling-that-returns-the-standard-model">12. The One Coupling That Returns the Standard Model</h2>
+<p><strong>The single coupling statement of the section, and the only one.</strong></p>
+<p>$$
+\boxed{\;\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}\quad\text{at }M_C\;}
+\qquad
+g_{B-L}^2=\tfrac38\,g_4^2\ \text{at }M_C,
+\qquad
+\text{denominators }1,\ 1,\ \tfrac23\ \text{summing to }\tfrac83 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The angle at the threshold is $\tfrac38$, and it is a <strong>trace identity</strong>, not a fit: three couplings reduce to one because the denominators add. The boundary condition fails at two scales four decades apart, the parity freeze blocks a third scale, and every coupling claim removed from the other articles of the section is registered here, with where each one went — so a reader can tell which sentences of the corpus were retired by this one.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-one-coupling-that-returns-the-standard-model.md</code>.</p>
+<h2 id="13-the-thresholds-and-the-heavy-sector">13. The Thresholds and the Heavy Sector</h2>
+<p><strong>One transition, one bound, four routes to a value.</strong> The two objects that would turn a bound into a value are the leptoquark search and a scalar census that fixes $v_C$. The minimal content's failure to run correctly is reported here and computed in §12.</p>
+<p><strong>The non-trivial claim.</strong> Three things are kept apart because only one is an approximation: <strong>breaking is exact and non-perturbative, decoupling is truncated in powers of $E/M$, matching is computed to finite loop order.</strong> A reader who treats the three as one order of approximation will misread the $M_C$ bound as an error bar.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-threshold-scales.md</code>, <code>articles_physics/the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.md</code>.</p>
+<h2 id="14-the-data-boundary">14. The Data Boundary</h2>
+<p><strong>One test, three categories.</strong> Does the sentence survive the deletion of every value? The claim register holds two articles in the coupling section; the data register holds sixteen, each with the quantity it prints and why the number is data; the hundred and thirty-four structural articles are named as a count and not as a list.</p>
+<p><strong>The non-trivial claim.</strong> Five tests govern a new article before it may print a value, and four abuses are forbidden — of which the sharpest is that <strong>the low-energy limit is shared with the Standard Model while a coupling statement is not</strong>. Without that distinction the section would be unable to say which of its numbers it owns.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-data-boundary.md</code>.</p>
+<h2 id="15-the-oblique-parameters">15. The Oblique Parameters</h2>
+<p><strong>A dimension, not a convention.</strong> Four self-energy functions with value and slope, two values killed by electromagnetic local invariance, three absorbed by $\alpha$, $G_F$, $M_Z$: the count is $8-2-3=3$.</p>
+<p><strong>The non-trivial claim.</strong> Transversality is the Ward identity of the electromagnetic article, $\Pi^{\mu\nu}_{\gamma\gamma}=P^{\mu\nu}\Pi_{\gamma\gamma}$, so the longitudinal projector is absent identically — the same $P$ that makes the propagator invertible makes the self-energy transverse. $\alpha T=\rho-1$, so <strong>the custodial $\rho$ is $T$'s numerator</strong>, with $T=0.05$ giving $\rho-1=3.6\times10^{-4}$, and the zeros of $T$ and $U$ are the value and the derivative of one relation $\Pi_{WW}(q^2)=\Pi_{W^3W^3}(q^2)$. $S$ is the $W^3$–$B$ mixing coefficient, whence a vector-like singlet, a hypercharge-only state and an exactly degenerate doublet all sit at zero: <strong>the parameters measure multiplet structure, not particle count</strong>.</p>
+<p><strong>Source.</strong> <code>articles_physics/electroweak-precision-observables-the-oblique-parameters-s-t-u.md</code>.</p>
+<h2 id="16-the-standard-model-as-the-low-energy-phase">16. The Standard Model as the Low-Energy Phase</h2>
+<p><strong>The audit the sector articles are cut from.</strong></p>
+<p>$$
+\boxed{\;\mathbb{B}_{\Phi} \;=\; \mathbb{R}(ie_t) \;\oplus\; \mathrm{SU}(2) \qquad \text{(direct sum of Lie algebras)}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The ceiling is a compact subalgebra of $\mathbb{B}$ of dimension at most four, and every module has even complex dimension. The three representative factors are each given with its source and what it reaches: $\mathrm{U}(1)$ present but not hypercharge, the $\mathrm{SU}(2)$ present but not weak isospin, $\mathrm{SU}(3)$ absent. The matter sector's chirality kinematics is exact and the chiral symmetry group is missing; hypercharge is underived and the content unselected; the scalar and symmetry-breaking sector is unbuilt. The table of items names the object each row needs, with the three upstream items and the two prerequisites.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-standard-model-as-the-low-energy-phase.md</code>.</p>
+<h2 id="17-the-standard-model-assembled-content-lagrangian-parameters">17. The Standard Model Assembled: Content, Lagrangian, Parameters</h2>
+<p><strong>The group and the content, as data.</strong></p>
+<p>$$
+\boxed{\;SU(3)_c\times SU(2)_L\times\mathrm{U}(1)_Y,\qquad
+15\ \text{Weyl fields per generation},\qquad
+12\ \text{connections},\qquad
+1\ \text{scalar doublet},\qquad
+19\ \text{parameters}\;}
+$$</p>
+<p><strong>Five multiplets and a count.</strong> $T_3$, $Y$ and $Q=Y+T_3$ with $15=6+3+3+2+1$; twelve vector bosons and the degree-of-freedom check $24+4=16+2+9+1$; the four anomaly conditions solved, three rays of hypercharge assignment of which one carries the observed charges; the nineteen parameters with scheme and scale on every row, regrouped $13+3+1+2$, and the variants $26$, $27$, $18$ for neutrino and axion extensions.</p>
+<p><strong>The non-trivial claim.</strong> <strong>The count of what the algebra fixes is none</strong>, and that sentence is the section's own verdict on its own audit. The nineteen are standard input; the framework's contribution is the relation of §12 and the refusals of §16.</p>
+<p><strong>Four sectors in one expression.</strong> The sign rule $-\sum_\mu X_\mu Y_\mu=X_\mu Y^\mu$ is proved once and used to identify the corpus's kinetic terms with the standard ones, with the abelian check $\sum FF=2(B^2-E^2)$; then the three curvatures, the fermion term, the scalar potential and its minimum, the three Yukawa matrices with the conjugate doublet of hypercharge $-\tfrac12$, and a local invariance audit term by term. Sixty parameters are written against nineteen physical, the removal graded $36\to10$ over $U(3)^3$ and $18\to3$ over $U(3)^2$.</p>
+<p><strong>The parameter count as the measure of the boundary.</strong> The nineteen are regrouped $13+3+1+2$ with the flavour block at $68.4\%$ of the total — <strong>the boundary is concentrated where the algebra is emptiest</strong>. Three grades of fixing are kept apart (a value, a relation, a constraint) because a framework that derives nothing may still relate or forbid something, and the typology by kind of object is four group coordinates, three connection normalisations, one central phase, ten eigenvalues and one scale, because five kinds need five different machines.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code>, <code>articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.md</code>, <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>.</p>
+<h2 id="18-generations-and-the-things-the-model-cannot-answer">18. Generations, and the Things the Model Cannot Answer</h2>
+<p><strong>The counting of generations.</strong> How the framework carries a generation index, why the algebra does not fix $N_g$, the tensor structure and the trace, flavour symmetry and its breaking, and the constraints that do touch $N_g$.</p>
+<p><strong>The non-trivial claim.</strong> <strong>The three imaginary units are not three generations.</strong> The index is a copy space and the copy space is a commutant, so no generator sees it; a reader who identifies the algebra's imaginary units with the generations has misread the module.</p>
+<p><strong>The hierarchy, and what is a convention.</strong></p>
+<p>$$
+\delta m_H^2=\frac{c}{16\pi^2}\Lambda^2,\qquad
+c:\ 0.239\ \text{representative},\ 1.476\ \text{top},\ 0.774\ \text{quartic},\ \text{sum }2.489,
+$$</p>
+<p><strong>The non-trivial claim.</strong> Dimensional regularisation gives <strong>no quadratic term at all</strong>, because the only locally invariant dimension-two operator is $\phi^{\dagger}\phi$ itself: the divergence is a convention while the sensitivity, a statement about heavy states, is not. The top is $59\%$ of the sum, as everywhere in the scalar sector. The tuning table runs from $1$ TeV (nothing) through $10$ TeV (one part in $100$) to $M_{\mathrm{Pl}}$ ($2.35\times10^{36}$ GeV$^2$).</p>
+<p><strong>The three one-loop coefficients and the pole.</strong></p>
+<p>$$
+b_1=+\tfrac{41}{6},\qquad b_2=-\tfrac{19}{6},\qquad b_3=-7,
+$$</p>
+<p><strong>The non-trivial claim.</strong> The hypercharge Landau pole sits at $1.8\times10^{41}$ GeV, that is $1.5\times10^{22}$ Planck masses, with $g_{\mathrm Y}$ climbing only from $0.357$ to $0.476$ on the way: a pole never reached but <strong>structural</strong>, because a central abelian factor has no self-coupling and therefore no antiscreening, so $b_1&gt;0$ is a theorem about central factors — <strong>the framework's most native object is its only one that cannot be UV-complete alone</strong>.</p>
+<p><strong>Three gaps, two exact failures and one success that forbids its own use.</strong></p>
+<p>$$
+\Omega_{\mathrm{DM}}h^2=0.1200\ \text{against}\ \Omega_b h^2=0.02237,\qquad \text{ratio }5.36;\qquad
+N_\nu=2.9963\pm0.0074 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The missing mass is a failure <strong>in the list of objects, not in the nineteen values</strong>, and there is no knob to turn because the spectrum is closed; the model's content accounts for $15.7\%$ of the budget. The cleanest exclusion in the model is the $Z$ width confirming three species to a part in three hundred, which shuts the door a fourth generation would need.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>, <code>articles_physics/the-hierarchy-problem-and-naturalness.md</code>, <code>articles_physics/the-landau-pole-triviality-and-vacuum-stability.md</code>, <code>articles_physics/three-gaps-in-the-standard-model.md</code>.</p>
+<h2 id="19-grand-unification-and-where-the-embedding-fails">19. Grand Unification, and Where the Embedding Fails</h2>
+<p><strong>The threshold a unified group must clear.</strong> The framework's own unification is electroweak and abelian; what a biquaternionic grand unification would require is stated, with the representation content and the <strong>even-dimension obstruction</strong> that blocks it.</p>
+<p><strong>The non-trivial claim.</strong> The obstruction is the same module-parity statement as the $\mathrm{SU}(3)$ ceiling, read at a larger group: the algebra's modules have even complex dimension, so no embedding that needs an odd-dimensional module can be built inside it. Grand unification fails here for the reason colour fails, not for a new one.</p>
+<p><strong>Source.</strong> <code>articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.md</code>.</p>
+<h2 id="20-what-the-sectors-inherit">20. What the Sectors Inherit</h2>
+<p><strong>The bookkeeping below the breaking, in four steps.</strong> The charges read off the same list the mass matrix gives, by one criterion: <strong>a generator that annihilates the vacuum is conserved and its boson is massless</strong>. The table of six charges with the scale at which each is lost: the strong group exact at every scale and $Q$ exact below $v$; $T_{3R}$ and $B-L$ lost at $M_C$; $T_{3L}$ and $Y$ at $v$.</p>
+<p><strong>The non-trivial claim.</strong> $B-L$ is kept as a <strong>fixed eigenvalue while its charge goes</strong>, because the lepton-line vev carries $B-L=-1$, and $B$ survives in its place by accident of the content. $L$ is broken at dimension three by the right-handed neutrino's mass, which is the seesaw's licence. The proton is stable because the leptoquarks carry $B-L=\pm\tfrac43$ and no diquark vertex is available.</p>
+<p><strong>The connection and the algebras.</strong> The frame's one covariant derivative is rewritten after each step, the fifteen, the three and the three separating into the pieces the residual groups keep, with every coupling left symbolic and no value printed. The strong group sits in $\mathrm{End}(\mathbb C^3)$, the weak factor on the doublet lines, and the photon on one dimension; the address each residual algebra has in $\mathrm{End}_{\mathbb C}(\mathbb B)$ is named, and what the reduction loses is stated, so the strong and electroweak sections open with the algebra they need already named.</p>
+<p><strong>The sector hub.</strong> Four sectors and four answers: the electromagnetic <strong>carried exactly</strong>, the electroweak <strong>partly</strong>, the strong <strong>not at all</strong> because the compact group is $\mathrm{U}(2)$, the gravitational <strong>by a frame and not an element</strong>.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.md</code>, <code>articles_physics/the-connection-below-the-breaking.md</code>, <code>articles_physics/the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.md</code>, <code>articles_physics/the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.md</code>.</p>
+<h2 id="21-the-force-content-of-the-model">21. The Force Content of the Model</h2>
+<p><strong>One connection, a nine-dimensional kernel, rank five.</strong> The section's single article asks what the model's force content is once the chain has run, and the answer is a count: fifteen directions, nine of which the vacuum annihilates, and a rank of five once the doublet index has arrived.</p>
+<p><strong>The non-trivial claim.</strong> There is no separate force per factor to be discovered below $M_C$: the four interactions of the low-energy phase are four readings of one connection, and the kernel's dimension is the statement that nine of the fifteen directions are still massless.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-force-content-of-the-su4-model-one-connection-a-nine-dimensional-kernel-and-rank-five.md</code>.</p>
+<h2 id="22-the-leptoquark-sector-at-work">22. The Leptoquark Sector at Work</h2>
+<p><strong>Why there is no flavour change, and why this model has no lepton flavour to change.</strong> The lepton is the temporal line $\mathbb C e_t$; the strong group is the eight generators of $\mathfrak{su}(3)$ that fix that line and rotate the spatial triple; of the fifteen generators of $\mathfrak{su}(4)$ none turns the lepton into a lepton — eight annihilate it, one phases it, six take it into the triple, so <strong>the space of generators acting inside the lepton line is one-dimensional, and one dimension cannot make a second lepton</strong>.</p>
+<p><strong>The non-trivial claim.</strong> What the model <em>does</em> fix about the operator is stated as carefully as what it does not: equal chirality coefficients from one coupling, group factor one because both vertices sit on one spatial line, and the assumption about the generation matrix named rather than hidden.</p>
+<p><strong>Three diagrams, three kinds of answer.</strong></p>
+<p>$$
+K_L\to\mu e:\quad \text{rate }3.5\times10^{-12}\ \text{at }M_X=4.01\times10^{-5}\ \mathrm{J}
+\quad\text{against the measured }4.7\times10^{-12}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> Each diagram exercises one part of the rules: the kaon decay at tree level, two mixed-plane vertices joined by one heavy propagator, with the group factor <strong>one and not three</strong> because the propagator is diagonal in the triplet index and there is no sum to make; the proton chain, three mixed-plane vertices on three distinct spatial lines contracted with $\epsilon_{abc}$, with no diquark coupling; and a gluon exchange, which tests the spatial block. The kaon rate lands within thirty per cent of the measured value, and the article says plainly which assumption that agreement rests on.</p>
+<p><strong>Source.</strong> <code>articles_physics/lepton-flavour-in-the-su4-model.md</code>, <code>articles_physics/three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>What the part refuses.</strong> A rank rise from any breaking; the weak pair out of a condensate of sextets; a composite $W$; a value for $M_C$ rather than a bound; a derivation of the nineteen parameters; four generations; a grand-unified embedding; a second lepton from the fifteen. Each refusal is a theorem or a stated postulate, never a gap left silent.</p>
+<p><strong>Five formulas to keep.</strong></p>
+<p>$$
+iD=\operatorname{diag}(-3i,i,i,i),\quad 15=9+3+3,\quad 15=9+6;\qquad
+M^2=\operatorname{diag}(32v^2\times6,\ 0\times9);
+$$</p>
+<p>$$
+\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}\ \text{at }M_C;\qquad
+\rho=1\ \text{at tree level};\qquad
+19=13+3+1+2 .
+$$</p>
+<p><strong>Five results to keep.</strong> A subgroup that leaves lowers dimension and never raises rank; an index that arrives raises rank and involves no subgroup; therefore the weak factors cannot come from the breaking, and the one postulate is that the breaking object carries the doublet index. The vacuum is forced by the lepton-line declaration plus tracelessness, so charge quantisation is the trace condition. The sextet is $\pm\tfrac23$ in charge and cannot be recomposed into a doublet, and the obstruction is a dimension count. The kaon rate lands at $3.5\times10^{-12}$ against $4.7\times10^{-12}$.</p>
+<p><strong>The ledger.</strong> The breaking, the mass matrix, the charge table, the matching, the coupling relation, the weak sector and the assembled Standard Model are built. The scale is bounded, not computed; the angle is related, not predicted; the nineteen are counted, not derived; and the three gaps — dark matter, baryogenesis, the sphaleron — are failures of the object list, which no value can repair.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(-3,1,1,1)$, the vacuum direction</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>the vacuum element, $15=9+6$ under $\operatorname{ad}$</td>
+</tr>
+<tr>
+<td>$\mathfrak m$</td>
+<td>the complement the vacuum does not commute with</td>
+</tr>
+<tr>
+<td>$M_C$</td>
+<td>the transition scale, $\gtrsim250\ \mathrm{TeV}$</td>
+</tr>
+<tr>
+<td>$v_C$, $v$</td>
+<td>the condensate scales of the transition and of the weak pair</td>
+</tr>
+<tr>
+<td>$M_X$</td>
+<td>the leptoquark mass, $\tfrac12g_4v_C$</td>
+</tr>
+<tr>
+<td>$B-L$</td>
+<td>the $U(1)$ of the kernel, $\tfrac13D$</td>
+</tr>
+<tr>
+<td>$\Phi$, $\Xi$</td>
+<td>the scalar matrix; $\Xi$ above $M_C$, $\Phi$ the transition's field</td>
+</tr>
+<tr>
+<td>$a_1$, $a_2$</td>
+<td>the two rank-one vectors of the neutral mass matrix</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>$M_W^2/(M_Z^2\cos^2\theta_W)$, equal to $1$ at tree level</td>
+</tr>
+<tr>
+<td>$T$, $S$, $U$</td>
+<td>the oblique parameters, $8-2-3=3$</td>
+</tr>
+<tr>
+<td>$N_g$</td>
+<td>the generation count, not fixed by the algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks</code>, <code>rank-five-from-three-the-weak-factors-as-a-condensate-index</code>, <code>the-one-coupling-that-returns-the-standard-model</code>, <code>the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet</code>. Negative results: <code>the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair</code>, <code>grand-unification-in-the-biquaternion-framework-where-the-embedding-fails</code>, <code>the-standard-model-as-the-low-energy-phase</code>. Audits: <code>the-data-boundary</code>, <code>the-parameter-count-as-the-measure-of-the-frameworks-boundary</code>, <code>three-gaps-in-the-standard-model</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

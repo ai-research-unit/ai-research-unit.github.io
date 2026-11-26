@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Universe Primordial Force — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the menu section Biquaternion Universe Primordial Force, thirty-seven articles counted from the anchors of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-universe-primordial-force"><strong>Internal Summary of the Biquaternion Universe Primordial Force</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the menu section <em>Biquaternion Universe Primordial Force</em>, thirty-seven articles counted from the anchors of <code>physics.md</code> at the time of writing, in the menu's four subsections: generalities (eighteen), particles of spin $1$ (twelve), particles of spin $1/2$ (three), particles of spin $0$ (four). It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the article named in the section.</p>
+<p><strong>What the part does.</strong> It is the corpus's <strong>constructive</strong> part and its only complete model above the transition: one compact group is declared on the quartet of lines, and everything else in the section is built from that declaration rather than imported — the connection, the coupling, the fifteen generators and their arrays, the rotors, the sixteen Weyl fields, the scalar matrix, the Yukawa matrix, the potential, the one-loop machinery. Beside the strong and electroweak sections, which are negative or transcribed throughout, this is where the framework spends its one constructive licence.</p>
+<p><strong>The single structural fact.</strong></p>
+<p>$$
+\boxed{\;
+G=\mathrm{SU}(4),\qquad
+\dim_{\mathbb R}\mathfrak g=15,\qquad
+\operatorname{rank}\mathfrak g=3,\qquad
+\underbrace{15}_{16-1}=\underbrace{12}_{\text{six pairs}\times2}+\underbrace{3}_{\text{diagonals}}
+\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The fifteen is a <strong>dimension minus a trace</strong>, not a coincidence: a generator is a traceless $4\times4$, so the count is $16-1$, and the same subtraction fixes the corner. The corner is the direction $iD=\operatorname{diag}(-3i,i,i,i)$ up to scale, and its $-3$ is the number of spatial lines; tracelessness <em>alone</em> fixes it, which is charge quantisation in one line. So the arithmetic $15=12+3$, the grid $1+6+9$ of cells and the $B-L$ normalisation are one statement, and a reader who changes the declaration changes the words attached to the entries while no number moves.</p>
+<p><strong>The one-sentence version.</strong> One group, one coupling, one declaration: $\mathrm{SU}(4)$ over the quartet $(\ell,r,g,b)$, fifteen generators, sixteen vector-like Weyl fields, one Hermitian scalar and one $2\times2$ Yukawa matrix, every direction massless until the vacuum forms.</p>
+<p><strong>The partition of the thirty-seven articles.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Articles</th>
+<th>What it settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generalities</td>
+<td>18</td>
+<td>the action and its density, Noether, the connection and the non-abelian import, the renormalisation group, the three carriers of spin, the four lines and fifteen generators, the coupling, the instanton refusal, the sixteen, the one-loop machinery, flavour</td>
+</tr>
+<tr>
+<td>Particles of spin $1$</td>
+<td>12</td>
+<td>the counts, the arrays, the commutation table, the rotors, the classification, the two detail articles, the Lagrangian, the Feynman rules, the fermion–connection vertex, no confinement</td>
+</tr>
+<tr>
+<td>Particles of spin $1/2$</td>
+<td>3</td>
+<td>the classification of the sixteen, the Yukawa matrix, the fermion Lagrangian</td>
+</tr>
+<tr>
+<td>Particles of spin $0$</td>
+<td>4</td>
+<td>the two indices and the count sixteen, the symmetric minimum, the scalar Lagrangian, the one-loop effective potential</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four sum to thirty-seven.</p>
+<p><strong>Three traps fixed at the top.</strong> <em>Massless above $M_C$ is a statement about a phase</em>, not about a spectrum: it is the unbroken phase's content, and the six get $32v^{2}$ only when the vacuum forms. <em>The words gluon and leptoquark are held on deposit</em>: no $\mathrm{SU}(3)$ is made local above $M_C$, so the names describe the branching below the transition and not a group acting above it. <em>The masslessness is two tunings, not one</em>, and the same masslessness removes the $\theta_4$ term, so the phase has no $CP$ violation at all rather than a suppressed one.</p>
+<h2 id="1-the-action-the-particle-and-the-density">1. The Action, the Particle and the Density</h2>
+<p><strong>The particle and the field, one principle.</strong> The relativistic particle, the relativistic field and the symmetries of the action are one construction, and the invariance is under the rotor, so the biquaternion structure of the action is not an add-on: the group acting on the element is the group that acts on the action.</p>
+<p><strong>The density is where the invariance lives.</strong> An action can be integrated only against a pairing, and three requirements fix which: cyclicity is the whole of the invariance, reality and the sign are one statement with the Hermiticity type, and positivity is a Euclidean statement.</p>
+<p>$$
+\text{the obstruction on }\mathbb{C}^{4}\text{ is dimension and not symmetry:}\qquad
+2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)\ \text{is not cyclic, and the matrix trace is.}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The algebra's own $2\,\mathrm{Sc}$ is the trace on $\mathbb{C}^{2}$ and has no $\mathbb{C}^{4}$ argument. That is why every non-abelian action in this section must carry the matrix trace, and why the informational reduction cannot be substituted for it: the substitution does not lose a factor, it loses local invariance. The factors $\tfrac12$, $\tfrac14$ and the six are then forced, not chosen.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.md</code>, <code>articles_physics/the-invariant-density-which-pairing-the-action-can-integrate.md</code>.</p>
+<h2 id="2-noether">2. Noether</h2>
+<p><strong>What the theorem gives, in the algebra.</strong> The current of the central phase, the four-momentum from translation invariance, the energy–momentum of the field and the angular-momentum bivector from Lorentz invariance — four currents from one mechanism, each classified as inherited, added or interpretation.</p>
+<p><strong>The non-trivial claim.</strong> The bivector is the algebra's native shape for a Lorentz current: the algebra carries bivectors, so the angular momentum of a field is not assembled from a tensor but read off the same product that gives the field strength.</p>
+<p><strong>Source.</strong> <code>articles_physics/noethers-theorem-in-biquaternionic-form.md</code>.</p>
+<h2 id="3-the-connection-the-abelian-import-and-the-non-abelian-import">3. The Connection: the Abelian Import and the Non-Abelian Import</h2>
+<p><strong>The one local symmetry that costs nothing.</strong> The centre is a phase group, so making it local needs no enlargement of the carrier: the connection is a connection on a bundle the algebra already carries, and the field strength is its curvature. This is the abelian minimal-coupling principle, and it is <strong>intrinsic</strong>.</p>
+<p><strong>The machinery, in four steps.</strong> The covariant derivative as a derivation; local covariance and what it forces; the connection as an orbit; the curvature as the commutator of covariant derivatives, with the covariant square producing the curvature term.</p>
+<p>$$
+[D_{\imath},D_{\jmath}]=-ig\,F_{\imath\jmath},
+\qquad
+\sum_{\text{cyclic}}[D_{\imath},[D_{\jmath},D_{k}]]=0\ \text{(Bianchi, from Jacobi)}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Bianchi identity in the algebra <strong>is</strong> the Jacobi identity, and the covariant derivative on the curvature is <strong>two-sided, not one-sided</strong> — a one-sided derivative reproduces the abelian statement and fails the non-abelian one. The identities are not transcribed; only the topological integrality is.</p>
+<p><strong>The non-abelian import, and where the gap is.</strong> Above the representative algebra the connection is non-abelian, the field strength is <strong>not</strong> locally invariant, the adjoint law holds on all six components, and the Yang–Mills action is invariant for exactly one reason: the cyclicity of the matrix trace. The reality condition and the $ict$ direction are what make the imported object sit in the material sector.</p>
+<p>$$
+S_{\mathrm{YM}}=-\tfrac12\int d^{4}r\ \mathrm{Tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr),
+\qquad
+\delta S=2\int d^{4}r\ \mathrm{Tr}\Bigl(\sum_{\jmath}\delta\mathcal A_{\jmath}\,D_{\imath}F_{\imath\jmath}\Bigr).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The square is the only dimension-four invariant available, and the variation must use the <strong>adjoint</strong> covariant derivative — the integration by parts is where covariance is won or lost. The Noether current is bilinear in the connection because the connection carries the charge it couples to; the energy–momentum is symmetric and traceless, and its trace anomaly is the beta function of §4.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-minimal-coupling-in-biquaternionic-form.md</code>, <code>articles_physics/the-covariant-derivative-and-connection-in-biquaternionic-form.md</code>, <code>articles_physics/connection-curvature-and-the-bianchi-identity-in-biquaternionic-form.md</code>, <code>articles_physics/non-abelian-connections-in-biquaternionic-form.md</code>, <code>articles_physics/the-yang-mills-equation-in-biquaternionic-form.md</code>.</p>
+<h2 id="4-the-renormalisation-group">4. The Renormalisation Group</h2>
+<p><strong>What runs, and what the regulator must respect.</strong> The scale dependence of the effective action; the regulator and the shell; integrating out a shell for the scalar quartic and for the non-abelian coupling; fixed points and the flow equation; and the one question the algebra adds — whether the regulator respects the two sectors.</p>
+<p><strong>The non-trivial claim.</strong> A regulator that treats the material and informational sectors differently would generate a flow between them, which no symmetry of the algebra forbids and no result of the corpus exhibits. The flow equation is therefore stated with the sector split as a constraint on the regulator, not as a property of it.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code>.</p>
+<h2 id="5-three-carriers-of-spin">5. Three Carriers of Spin</h2>
+<p><strong>The carriers and the criterion of cost.</strong> The real vector part is the seat of the algebra's non-commutativity — the commutator closes on it and the product fails there — and its adjoint rotation has weights $+1$, $0$, $-1$. The ideal is a frame, irreducible, four real dimensions, and conjugation moves it to a distinct ideal. The centre is the commutant, fixed pointwise.</p>
+<p><strong>The non-trivial claim.</strong> The order is forced, not chosen: <strong>bosons on the vector part, fermions on the ideal, scalars as an invariant or a rotor</strong>. The count $4=4$ matches the two carriers, the third polarization of a massive vector has nowhere to sit in the vector part, and the graviton's symmetric square is the only place the fourth rank goes. The limits are stated against the menu's own $67$, $115$, $110$ and $15$ entries.</p>
+<p><strong>Source.</strong> <code>articles_physics/particle-spins-in-the-biquaternion-algebra-three-carriers-their-meaning-and-their-order.md</code>.</p>
+<h2 id="6-four-lines-fifteen-generators-one-declaration">6. Four Lines, Fifteen Generators, One Declaration</h2>
+<p><strong>The declaration.</strong> One compact group and nothing beside it: the quartet $(t,x,y,z)$ as four lines of one multiplet, the lepton line a declaration, no strong group made local above $M_C$, one generator or none per cell, fifteen generators with no weak pair, and one covariant derivative with one coupling.</p>
+<p>$$
+2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}=16\ \text{Weyl},
+\qquad
+2(+1)+2(-1)=0\ \text{(the anomaly, cancelled by counting)} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The model is <strong>vector-like by theorem and massless by assumption</strong>: chirality sits entirely in the copy index, which is a commutant, so nothing in the algebra distinguishes left from right above $M_C$. The transition exists because of that failure, and the cancellation that costs no computation is the same fact read backwards — it yields no condition on the content.</p>
+<p><strong>A line letter is a coordinate label, not a charge.</strong> Twelve ordered pairs $E_{ij}=i\bar j$ because columns are sources and rows are targets, and three diagonal directions because $\sum_{i}i\bar i=\mathbb 1$ is not a generator — so the diagonal is $4-1$, and $4^{2}-1=15$ against $3^{2}-1=8$ one size down. Above $M_C$ the adjoint mass matrix vanishes identically, so all fifteen are degenerate and no rate distinguishes one label from another.</p>
+<p><strong>What is real against what is chosen.</strong> Real: the group, $15$, rank $3$, $m^{2}=0$ for all fifteen, the invariant $12+3$. Chosen: the letters, the declared lepton line, the partition $8+1+6$, and the words <em>gluon</em> and <em>leptoquark</em>. The words change with the declaration; no number moves.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-su4-model-four-lines-fifteen-generators-one-declaration.md</code>, <code>articles_physics/the-three-lines-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.md</code>.</p>
+<h2 id="7-the-primordial-coupling">7. The Primordial Coupling</h2>
+<p><strong>One coupling, fixed from below and never from above.</strong> $g_4^{2}=4\pi\alpha_s(M_X)$ at the matching scale, then integrated upward — the step the corpus had not taken.</p>
+<p>$$
+b_0=\tfrac{26}{3}=8.67,\qquad
+\alpha_4(M_X)=0.058,\qquad
+\alpha_4(M_P)=0.0165,\qquad
+\Delta\Bigl(\tfrac{1}{\alpha}\Bigr)=\frac{\tfrac{26}{3}-7}{2\pi}\ln\frac{M_X}{M_C}=0.265\,\ln\frac{M_X}{M_C}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> $b_0$ is a <strong>diagnostic of the scalar content</strong>, not a number: the Hermitian matrix gives $\tfrac{26}{3}$, a complex one $8$, a matrix with a two-valued label $\tfrac{20}{3}$, and each doubling of the real components doubles the term. The phase is asymptotically free and weakly coupled everywhere it exists; the two-loop term is about two per cent of the change; the pole at $885\ \mathrm{MeV}$ is arithmetic below the transition and not a prediction. A boundary condition is a value taken from experiment; a running is a computation, and the section keeps them apart.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-primordial-coupling.md</code>.</p>
+<h2 id="8-the-instanton-and-the-two-things-the-algebra-cannot-supply">8. The Instanton, and the Two Things the Algebra Cannot Supply</h2>
+<p><strong>What the transcription needs.</strong> The BPST solution carried from $\mathrm{SU}(2)$ to the fifteen by matrix transcription, with its moduli and the $\theta_4$ that weights the winding sectors.</p>
+<p><strong>The non-trivial claim.</strong> Two objects are missing and both are structural. The topological density $\mathrm{Tr}(F\wedge F)$ needs a <strong>second algebra slot</strong>, which the rank-two biquaternion norm does not have. And the norm of the biquaternion representative is <strong>not locally invariant</strong> under $F_{\imath\jmath}\mapsto\tilde UF_{\imath\jmath}\tilde U^{-1}$. Above $M_C$ the sixteen are massless, so $\theta_4$ is redundant and the phase has no $\theta_4$ dependence to suppress. The article's own sentence is that this is transcription and not derivation.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-su4-instanton-a-matrix-transcription-outside-the-algebra.md</code>.</p>
+<h2 id="9-the-sixteen-and-the-price-of-the-economy">9. The Sixteen, and the Price of the Economy</h2>
+<p><strong>The content of the unbroken phase.</strong> $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, massless because no vacuum has formed, anomaly-free by pairing rather than by three traces.</p>
+<p><strong>The non-trivial claim.</strong> The economy has a price, and it is the reason the transition exists: the model <strong>is not chiral where the symmetry acts</strong>. Masslessness is two tunings and not one, the same masslessness removes the $\theta_4$ term so there is no $CP$ violation at all, the chirality is the transition's postulate, and $g_*=58$ is the one place where the state count is a physical number.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-sixteen-weyl-fields-above-m-c.md</code>.</p>
+<h2 id="10-the-machinery-under-the-primordial-action">10. The Machinery Under the Primordial Action</h2>
+<p><strong>Four steps derived instead of cited.</strong> The cyclic trace on $\mathbb{C}^{4}$ with its two printed norms; the normalisation $\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$; the curvature's covariance and the Bianchi identity from Jacobi; the Faddeev–Popov insert with one $\zeta$, fifteen adjoint ghosts, and the count they and the fifteen Gauss laws produce together.</p>
+<p>$$
+\operatorname{tr}(G_{a}^{\dagger}G_{a})=2\ \text{(all fifteen)},\qquad
+\operatorname{tr}(D^{2})=12\ \text{(the vacuum direction)},\qquad
+15\ \text{ghosts}+15\ \text{Gauss laws}\Rightarrow 78 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The representative and ghost determinants <strong>drop out</strong> of the one-loop master formula because the identity commutes with every generator; the fermion determinant does not, because the Yukawa matrix does not. That asymmetry is the whole one-loop content of the model, and it is a statement about the commutant of the content rather than about the group.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-machinery-under-the-primordial-action-trace-curvature-ghosts-and-one-loop.md</code>.</p>
+<h2 id="11-the-grid-counts-and-arrays">11. The Grid: Counts and Arrays</h2>
+<p><strong>One vocabulary, four words.</strong> A <em>cell</em> is a position in the $4\times4$ grid, sixteen of them; a <em>plane</em> is an unordered pair of indices, six of them, three spatial and three mixed, carrying twelve arrays because each pair has a real and an imaginary one; an <em>array</em> is a printed $4\times4$ matrix; a <em>generator</em> is one of the fifteen.</p>
+<p>$$
+16=1+12+3,\qquad 12+3=15,\qquad
+\text{trace norms }2\ \text{and}\ 12,\qquad
+\text{the two cuts }8+1+6 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The printed fifteen is <strong>not an orthogonal basis</strong>: the whole $15\times15$ Gram matrix carries exactly one nonzero off-diagonal entry, $\langle d_{2},d_{3}\rangle=-1$, so the $\mathfrak{su}(3)$ Cartan needs one rotation before canonical normalisation, $c_{2}=d_{2}+d_{3}$ and $c_{3}=d_{2}-d_{3}$ of norms squared $2$ and $6$. Every normalisation downstream inherits that rotation, and a reader who skips it gets a factor wrong in the corner.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.md</code>, <code>articles_physics/construction-of-the-axf-matrices-of-the-fifteen-generators.md</code>.</p>
+<h2 id="12-the-commutation-table">12. The Commutation Table</h2>
+<p><strong>Every bracket, counted.</strong> $15\times15=225$ ordered, $105$ independent, $80$ nonzero, $25$ zero off the diagonal, printed block by block: the six real planes closed as $\mathfrak{so}(4)$, the nine imaginary arrays not closed, the six equal-plane brackets generating the Cartan, and the corner meeting twelve brackets at spacing $4$.</p>
+<p><strong>The non-trivial claim.</strong> <strong>Five rules reproduce all $120$ entries with no disagreement.</strong> The table is therefore not a computation to be trusted but a structure to be regenerated: a reader who knows the five rules never needs the printed table, and a reader who has only the table cannot tell a typo from a feature.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.md</code>.</p>
+<h2 id="13-the-rotors">13. The Rotors</h2>
+<p><strong>Every generator, its exponential, and the space that exponential turns.</strong> Three real spatial planes turn the carrier's triple, three mixed planes carry the lepton line into the spatial lines, nine complex arrays turn planes of the six.</p>
+<p>$$
+\mathrm{SU}(4)\cap\mathrm{SO}(4,\mathbb{C})=\mathrm{SO}(4),\qquad
+\text{no exponential of the fifteen is a boost.}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The absence of a boost is proved <strong>three ways</strong>, and any one of them is a check on the other two: unit-modulus eigenvalues; $\operatorname{tr}X^{2}\le0$ against $\operatorname{tr}K^{2}=+2$; compactness. Twelve roots lie outside the algebra. The six real planes are left and right rotors at once — a subalgebra, and not a factor.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-rotors-of-the-fifteen-generators.md</code>, <code>articles_physics/construction-of-the-axf-matrices-of-the-rotors.md</code>.</p>
+<h2 id="14-the-classification-of-the-bosons">14. The Classification of the Bosons</h2>
+<p><strong>One name in every cell.</strong> The grid over $t,x,y,z$ with $B'$ in the corner, $X^{\alpha}$ and $\bar X^{\alpha}$ in the mixed band, and $g_1\dots g_8$ in the spatial block.</p>
+<p>$$
+\boxed{\;
+\underbrace{6}_{\text{leptoquark sextet}}+\underbrace{8}_{\text{gluons}}+\underbrace{1}_{B-L}=15,
+\qquad
+16\ \text{cells}-1\ \text{trace}=15\ \text{bosons};
+\;}
+$$</p>
+<p>$$
+\boxed{\;
+15=9+6,\qquad
+9=\underbrace{8}_{\text{gluons}}+\underbrace{1}_{B'},\qquad
+6=\underbrace{6}_{\text{leptoquarks}} .
+\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The corner is <strong>forced by tracelessness</strong>, so charge quantisation is not imposed on the model — it is the trace condition read on the grid. The spectrum is stated for both phases: all fifteen massless above $M_C$, the sextet's zero exact and not approximate; below it the nine massless fall into two different reasons and the six sit at $32v^{2}$. The branching $15=\mathbf 8_0\oplus\mathbf 3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}\oplus\mathbf1_0$ is the partition of a fixed frame, not a dynamical result.</p>
+<p><strong>Source.</strong> <code>articles_physics/classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.md</code>.</p>
+<h2 id="15-the-detail-articles">15. The Detail Articles</h2>
+<p><strong>Every matrix, every boson, twice.</strong> The fifteen arrays one at a time, fifteen subsections, each title naming the boson before the array: display, cells, spectrum, fate — the twelve plane arrays and the two spatial diagonals at norm $2$ and spectrum $0,0,\pm i$, the corner $iD=\operatorname{diag}(-3i,i,i,i)$ at norm $12$.</p>
+<p>$$
+m^{2}(X)=v^{2}\operatorname{tr}\bigl(X^{\dagger}[D,[D,X]]\bigr)\in\{0,\ 32v^{2}\}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The companion volume prints the array and its rotor side by side, and the juxtaposition carries the physics: a rotor can carry a cosine that stays, a sine that moves or a phase that multiplies, <strong>a massless boson is a rotor that leaves the vacuum exactly where it was</strong>, and the corner is the only rotor that reaches the centre — four times a turn. The $8+7$ split by the lepton line and the $9+6$ split by the vacuum are two different cuts of the same fifteen, and neither refines the other.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-15-axf-matrices-of-the-bosons-in-detail.md</code>, <code>articles_physics/the-15-axf-matrices-of-the-boson-rotors-in-detail-every-matrix-every-boson-its-entries-its-role.md</code>.</p>
+<h2 id="16-the-lagrangian-and-the-force">16. The Lagrangian and the Force</h2>
+<p><strong>The action the block exists for.</strong></p>
+<p>$$
+\mathcal{L}
+=-\tfrac14\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath}
++\sum_{f}\bar\xi_{f}\Bigl(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}D_{\imath}\Bigr)\xi_{f}
++\operatorname{tr}\bigl(D_{\imath}\Xi\bigr)^{\dagger}\bigl(D_{\imath}\Xi\bigr)-V(\Xi)
++\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}+\mathcal{L}_{\mathrm{Yuk}} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The variation gives $D_{\imath}F_{\imath\jmath}=J_{\jmath}$ with a Gauss law <strong>per generator</strong> and $3\times15$ first-class constraints — so the force content of the model is one connection with fifteen constraints, not a family of forces. Every direction is massless in the phase where the display is written.</p>
+<p><strong>The Feynman rules.</strong> Which of the fifteen couples to which pair of the sixteen, with what group factor, at what normalisation and with which sign; one covariant derivative with one symbolic coupling and four pieces; a vertex budget of seven types; propagators nine massless and six at $32v^{2}$; the family rescaling $\tfrac12$ and $1/\sqrt{24}$, the corner weaker than a plane by $\sqrt{2/24}=0.2887$.</p>
+<p>$$
+t_{a}=\frac{iG_{a}}{\sqrt{2\,n_{a}}},\qquad
+n_{a}=2\ \text{(the fourteen)},\qquad
+n_{15}=12\ \text{(the corner)} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The normalisation must be settled <strong>before</strong> any rule, and the trace-norm table hides the oblique Gram entry of §11. The same rotation $c_{2},c_{3}$ appears again here, which is the check that the two articles are one construction.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-lagrangian-and-the-primordial-force.md</code>, <code>articles_physics/the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.md</code>.</p>
+<h2 id="17-the-fermionconnection-vertex">17. The Fermion–Connection Vertex</h2>
+<p><strong>The sixteen printed entry by entry.</strong> $\xi^{\alpha}_{i}$ with the quartet index slow and the copy index fast, so every array is $X\otimes\mathbb 1_{2}$: a reader reads the top-left block and stops.</p>
+<p><strong>The non-trivial claim.</strong> $B-L$ is carried by the <em>boson</em>: $\mp\tfrac43$ for the six that join the lepton line to a spatial line, so that $-1=\tfrac13-\tfrac43$ conserves it exactly. The selection rule is a <strong>count</strong> — eight of the fifteen annihilating $e_{t}$, one multiplying it, six taking it into the triple, $48+8+8=64$ entries per half and $128$ in all.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.md</code>.</p>
+<h2 id="18-no-confinement-above-math179">18. No Confinement Above $M_C$</h2>
+<p><strong>The negative statement the block owes.</strong> Nothing confines above $M_C$: the coupling there is $\alpha_s\approx0.08$ at $250\ \mathrm{TeV}$, so the phase is perturbative, and the group is broken at $M_C$ by $\Xi$, so no confining $\mathrm{SU}(4)$ phase occurs anywhere in the model's history.</p>
+<p><strong>The non-trivial claim.</strong> Two mechanisms are kept apart: <strong>a phase that never exists</strong> and <strong>a phase that confines</strong> are different absences. Eleven e-folds of perturbative coupling separate the transition from any strong dynamics. What the absence forbids: a deconfinement transition, a primordial plasma of free preons, a cosmological relic of the unbroken phase.</p>
+<p><strong>Source.</strong> <code>articles_physics/no-confinement-above-m-c.md</code>.</p>
+<h2 id="19-the-fermion-side-classification-and-yukawa">19. The Fermion Side: Classification and Yukawa</h2>
+<p><strong>Thirty-two states, sixteen fields.</strong> $2\cdot4+2\cdot\bar4=16$ Weyl fields as a product over the quartet index and a copy index, the sum of $B-L$ zero, the $\mathrm{SU}(4)^{3}$ anomaly cancelled by counting $2(+1)+2(-1)$; charge conjugation a permutation of the sixteen with $C^{2}=1$.</p>
+<p><strong>The non-trivial claim.</strong> The model is <strong>closed under $C$ and under $CP$</strong>, where the old chiral pair was closed under $CP$ only. $B-L$ is fixed and $Q$ is not, because the copy index carries no $T_3$ — so the charge table of the sixteen is one row, not two.</p>
+<p><strong>One operator, one matrix, two masses, no phase.</strong></p>
+<p>$$
+\mathcal{L}_{Y}=y_{\alpha\beta}\,\bar\xi^{\alpha\dagger}_{\,i}\,\Xi_{ij}\,\xi^{\beta}_{j}+\text{h.c.},
+\qquad
+M_{\alpha\beta}^{\ \ \ \imath\jmath}=y_{\alpha\beta}\,v\,D_{\imath}\,\delta_{\imath\jmath},
+\qquad D=\operatorname{diag}(-3,1,1,1).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The parameter count is $8-2-2-2=2$: rephasing and one $\mathrm{U}(2)$ rotation remove six of the eight and leave two eigenvalues. The mass matrix is diagonal in the quartet index and proportional to $y$ in the copy index, hence <strong>the factor three</strong>, $m_{\ell}=3m_{q}$, and the exact block degeneracy because the three spatial lines share the entry $+v$. Four distinct masses come from two numbers: $3v|y_{1}|$, $v|y_{1}|$, $3v|y_{2}|$, $v|y_{2}|$. The factor three is also the model's sharpest wrong number, and the article says so.</p>
+<p><strong>Source.</strong> <code>articles_physics/classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.md</code>, <code>articles_physics/the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.md</code>, <code>articles_physics/the-lagrangian-and-the-sixteen-kinetic-term-and-yukawa-coupling.md</code>.</p>
+<h2 id="20-the-scalar-matrix">20. The Scalar Matrix</h2>
+<p><strong>One field, two indices, sixteen real.</strong> A Hermitian $4\times4$ with a lower and an upper index: $15+1=16$ real components, fifteen from the traceless part (which is $\dim\mathrm{SU}(4)$) and one from the trace.</p>
+<p><strong>The non-trivial claim.</strong> The pair of indices is <strong>forced and not chosen</strong>: $\bar\xi\Xi\xi$ needs $\Xi\in\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$, while $\mathbf4\otimes\mathbf4=\mathbf{10}\oplus\mathbf6$ has no $\bar{\mathbf4}$. Thirty-two is the count for a general complex matrix and sixty-four for one carrying the copy index — both wrong here, because in this model the copy index sits on the fermion and on the Yukawa matrix and not on the scalar.</p>
+<p><strong>The potential, and why there is no breaking here.</strong> The minimum sits at $\Xi=0$ above $M_C$, so the group is exact, every direction is massless, and there is <strong>no breaking, no Goldstone and no mass</strong> in this phase. The vacuum $iD=\operatorname{diag}(-3,1,1,1)$ belongs to the transition, together with the nine eaten directions, and it <strong>cannot be read backwards</strong> into this phase.</p>
+<p><strong>One commutator, four quartics.</strong></p>
+<p>$$
+D_{\imath}\Xi=\partial_{\imath}\Xi-ig_4A_{a,\imath}[t_{a},\Xi],
+\qquad
+\operatorname{tr}\Xi^{4},\ \ (\operatorname{tr}\Xi^{2})^{2}\ \text{and the two that carry the trace.}
+$$</p>
+<p><strong>The non-trivial claim.</strong> A matrix has two quartics where a vector has one, and <strong>no condition removes the trace</strong>, so two more arrive with it. Sixteen real components against sixteen real equations; the kinetic normalisation is fixed by the trace norm $12$ of the corner direction.</p>
+<p><strong>The one-loop number.</strong></p>
+<p>$$
+\text{coefficient of }\rho^{2}\ln\rho\ \text{at sixteen real components: }0.0570\,\lambda_1^{2}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The functional determinant runs over the sixteen entries and the fifteen generators — multiplicity sixteen, trace over the adjoint — and the sign decides whether the symmetric minimum survives the correction. It is a one-loop number for a phase the corpus otherwise describes at tree level: no two-loop, no resummation, and the stability bound is read as a statement about $M_C$ and not about $\lambda$.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-scalars-two-indices-and-the-count-sixteen.md</code>, <code>articles_physics/the-primordial-potential-one-symmetric-minimum-above-m-c.md</code>, <code>articles_physics/the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.md</code>, <code>articles_physics/the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.md</code>.</p>
+<h2 id="21-flavour-two-articles-one-verdict">21. Flavour: Two Articles, One Verdict</h2>
+<p><strong>The phenomena first, with no theory of them.</strong> Generation, flavour and family kept apart; the index as a column and the flavour as a basis that can be misaligned; the sixteen rows and the twelve measured masses; the three handles — mass independent, lifetime and decay pattern derived from it.</p>
+<p><strong>The inertness lemma.</strong> A copy index of dimension $n$ multiplies the module as $S\to S\otimes\mathbb C^{n}$ with every generator $O\otimes\mathbb 1_{n}$, so the index space is a <strong>commutant</strong> and nothing in the algebra picks a direction inside it: at $n=2$, $[X\otimes\mathbb 1_{2},\mathbb 1_{4}\otimes M]=0$ for every $M$. Three consequences follow — no symmetry measurement distinguishes the copies, no boson changes the index because no generator carries $\alpha$, and the whole difference sits in the Yukawa matrix.</p>
+<p><strong>The non-trivial claim.</strong> The model has <strong>no mechanism of flavour at all</strong>; the measured three-column table is data, and its only mass statement, $m_{\ell}=3m_{q}$, is wrong by $27$. The second article tries the ladder and reports its failure in the corpus's own algebra: the ratio steps $206.77$ and $16.82$ shrink by $12.3$, and integer quanta miss by two and three orders of magnitude. Counted instead in the square root of the ratio, the steps $13.379$ and $58.968$ grow by $3.3326$, and what closes is Koide's relation,</p>
+<p>$$
+Q=\frac{1+\rho_2+\rho_3}{\left(1+\sqrt{\rho_2}+\sqrt{\rho_3}\right)^{2}}=\frac{2}{3},
+\qquad
+\rho_2=\frac{m_\mu}{m_e},\quad \rho_3=\frac{m_\tau}{m_e},
+$$</p>
+<p>with no mass unit in the display — a statement about two ratios and nothing else. <strong>The closure is not derived</strong>, and the section files it as a numerical fact the model cannot explain.</p>
+<p><strong>Source.</strong> <code>articles_physics/an-introduction-to-flavour.md</code>, <code>articles_physics/the-excitation-ladder-theory-of-flavour.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>What the part refuses.</strong> A derivation of the group's rank or of the number four; chirality above $M_C$; a second Yukawa; a seesaw or a neutrino mass; confinement in its own phase; an algebra invariant for the topological density. Each refusal is a stated boundary, and the boundaries are what make the one constructive licence usable.</p>
+<p><strong>Five formulas to keep.</strong></p>
+<p>$$
+G=\mathrm{SU}(4),\ \dim15,\ \operatorname{rank}3,\ 15=12+3;\qquad
+15=9+6,\quad 9=8+1,\quad 6=6;\qquad
+m^{2}=32v^{2}\ (\text{six}),\ 0\ (\text{nine});
+$$</p>
+<p>$$
+b_0=\tfrac{26}{3},\quad \alpha_4(M_P)=0.0165;\qquad
+m_{\ell}=3m_{q};\qquad
+Q=\tfrac{2}{3}\ \text{(Koide, not derived)}.
+$$</p>
+<p><strong>Five results to keep.</strong> The fifteen is $16-1$, and tracelessness forces the corner, which is charge quantisation. One coupling, one connection, fifteen first-class constraints. The printed fifteen is not orthogonal: one Gram entry, $\langle d_{2},d_{3}\rangle=-1$, forces the rotation $c_{2},c_{3}$. No exponential of the fifteen is a boost, proved three ways. The model is vector-like by theorem, so the transition is the only place chirality can enter.</p>
+<p><strong>The ledger.</strong> The group, the count, the arrays, the rotors, the commutation rules, the classification and the action are built. The coupling's value is imported at $M_X$ and run upward. Flavour, the number of generations, the scalar's quartic values and the chirality are not derived. Every number that comes from experiment is marked as such, and the $885\ \mathrm{MeV}$ pole is arithmetic outside the theory's claim.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$</td>
+<td>$\mathrm{SU}(4)$ above $M_C$, one compact group</td>
+</tr>
+<tr>
+<td>$15$</td>
+<td>the generators, $16-1$, twelve arrays plus three diagonals</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(-3,1,1,1)$, the lepton-line direction</td>
+</tr>
+<tr>
+<td>$X^{\alpha}$, $\bar X^{\alpha}$</td>
+<td>the mixed-band bosons, six, $B-L=\pm\tfrac43$</td>
+</tr>
+<tr>
+<td>$B'$</td>
+<td>the corner boson, the fifteenth direction, $\mathrm{U}(1)_{B-L}$</td>
+</tr>
+<tr>
+<td>$g_4$, $\alpha_4$</td>
+<td>the one coupling; $\alpha_4=g_4^{2}/4\pi$</td>
+</tr>
+<tr>
+<td>$b_0$</td>
+<td>one-loop coefficient, $\tfrac{26}{3}$ for this content</td>
+</tr>
+<tr>
+<td>$\xi^{\alpha}_{i}$</td>
+<td>the sixteen Weyl fields, quartet index slow, copy index fast</td>
+</tr>
+<tr>
+<td>$\Xi$</td>
+<td>the Hermitian scalar, $\mathbf{15}\oplus\mathbf1$, sixteen real components</td>
+</tr>
+<tr>
+<td>$y_{\alpha\beta}$</td>
+<td>the $2\times2$ Yukawa matrix on the copy index</td>
+</tr>
+<tr>
+<td>$M_C$</td>
+<td>the transition scale</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>the condensate scale, $v\operatorname{diag}(-3,1,1,1)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>the-su4-model-four-lines-fifteen-generators-one-declaration</code>, <code>the-lagrangian-and-the-primordial-force</code>, <code>classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy</code>, <code>the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks</code> (the first article of the companion section). Apparatus: <code>the-invariant-density-which-pairing-the-action-can-integrate</code>, <code>the-machinery-under-the-primordial-action-trace-curvature-ghosts-and-one-loop</code>, <code>the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen</code>. Refusals: <code>the-su4-instanton-a-matrix-transcription-outside-the-algebra</code>, <code>an-introduction-to-flavour</code>, <code>the-excitation-ladder-theory-of-flavour</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

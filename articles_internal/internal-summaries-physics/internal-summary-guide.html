@@ -74,7 +74,7 @@
 <p><strong>What this file is.</strong> A writing guide for the <code>internal-summary-*</code> family of <code>articles_internal</code>. It fixes the boundary, the skeleton, the paragraph grammar, the claim ledger, and above all the two rules of content: cut what a machine regenerates, quote what it cannot.</p>
 <p><strong>Who reads the output.</strong> An AI agent that must reason inside the corpus without reading the category. It has a small window and no memory of the articles. It does not need to be taught. It needs the objects it cannot guess, the equations it must reproduce, the claims that contradict the default, and the traps.</p>
 <p><strong>The rule that governs the genre.</strong> A summary is a <em>cache</em>, not a digest and not a lecture. It stores the information of the corpus at the lowest token cost, in the symbols of the corpus, so that any line can be audited in one fetch and any sharp claim can be quoted without opening the article.</p>
-<p><strong>How to use this guide.</strong> §1 and §2 give the two rules of content, and they outrank everything else. §3 fixes the boundary, §4 the shape, §5 to §8 the parts. §9 lists what must be quoted, §10 what must be cut, §11 the budget, §12 the traps, §13 the check pass.</p>
+<p><strong>How to use this guide.</strong> §1 and §2 give the two rules of content, and they outrank everything else. §3 fixes the boundary, §4 the shape, §5 to §8 the parts. §9 lists what must be quoted, §10 what must be cut, §11 the budget, §12 the traps. §13 and §14 are the two passes, in this order: the menu audit, which decides whether this file is the summary of a category the menu still names, and the check pass, which decides whether the file is well formed. The order is not a preference. A file can pass §14 and be the summary of a category that no longer exists.</p>
 <h2 id="1-internal-first-machine-first">1. Internal First, Machine First</h2>
 <p><strong>Internal.</strong> The file lives in <code>articles_internal/</code>, which <code>build.py</code> does not build and <code>maths.md</code> and <code>physics.md</code> do not list. It is not for the reader of the site. It carries no HTML link, no navigation, no introduction for a newcomer and no apology for jargon. A slug in backticks is enough.</p>
 <p><strong>Machine first.</strong> The reader is a model, not a person. It reads fast, it has no patience and no memory of the articles, and it already knows standard mathematics. Anything a competent model regenerates from a definition is dead weight in a summary, and dead weight costs exactly as many tokens as the load-bearing line beside it.</p>
@@ -88,16 +88,18 @@
 <p><strong>Consequence for balance.</strong> A category of forty articles with three sharp claims gives three claims and a table of objects. A category of eleven articles with thirty claims gives thirty claims. The length follows the claim density, not the article count. This is the opposite of the instinct of a human digest, and it is why the existing summaries range from four to sixteen sections for similar article counts.</p>
 <h2 id="3-fixing-the-boundary">3. Fixing the Boundary</h2>
 <p><strong>Three inputs, one output.</strong> A list of articles, a section of <code>maths.md</code> or <code>physics.md</code>, and a whole category produce the same file. Only the boundary comes from the input. Everything after this section is identical.</p>
+<p><strong>One file per <code>##</code> heading, and only per <code>##</code> heading.</strong> The menu's categories are its <code>##</code> lines; its <code>###</code> lines are the subsections <em>inside</em> a category and become sections of the file, never files of their own. Nothing in <code>articles_internal/</code> may hold a boundary that the menu does not name. The rule is stated here because it belongs to the boundary; it is checked in §13, because a single file cannot see its own category.</p>
+<p><strong>The re-cut, as it happened.</strong> The umbrella file <em>Biquaternion Universe Particle Physics</em> covered a <code>##</code> category of one hundred and ten anchors. The menu was re-cut: three of its subsections became categories of their own, its gauge machinery was absorbed by <em>Primordial Force</em>, its mass spectrum by <em>Symmetry Breaking</em>, and twenty-four of the one hundred and ten anchors left the menu altogether. The umbrella file had passed every check it was given, because its shape was never the defect. §13 gives the per-subsection numbers and the procedure that catches this.</p>
 <p><strong>Resolve the boundary physically.</strong> Do not trust the input string. Extract the anchors of the section:</p>
 <pre><code>awk '/^## /{sec=substr($0,4)} sec=="&lt;Category&gt;" &amp;&amp; /&lt;a href=/{print}' physics.md
 </code></pre>
 <p>The count of anchors is the article count. State it in words, as the existing files do: <em>twenty-nine articles</em>, <em>eighty-two articles</em>, <em>one hundred and one articles</em>.</p>
 <p><strong>Recompute the count at the time of writing.</strong> The menus drift: an article is added, a block moves, a subsection is renamed. Recompute the count from the anchors at every write, and recompute a count taken by subtraction as well. The family has already carried both kinds of stale number, and a stale count is a defect the next reader inherits.</p>
-<p><strong>Record the exceptions.</strong> Two kinds, both in the Introduction. Articles of the cluster absent from the menu: the gravity summary names five and says the listing is incomplete. Articles of another category read here: the same summary names two and says where they sit. Never silently widen or narrow the boundary.</p>
+<p><strong>Record the exceptions.</strong> Two kinds, both in the Introduction. Articles of the cluster absent from the menu: the gravity summary once named five, and it now names all five again in the paragraph that records the defect as closed, because the count moved when the menu changed. Articles of another category read here: the same summary names two and says where they sit. Never silently widen or narrow the boundary.</p>
 <p><strong>Coverage means claim coverage, not article coverage.</strong> Every article inside the boundary must be <em>reachable</em>: cited in a <code>**Source.**</code> line, named in a prose enumeration, or listed in Further Reading. It need not get a block. An article with no irrecoverable line is a member of a list, and that is the right fate for it. The check is mechanical:</p>
 <pre><code>grep -o 'articles_physics/[a-z0-9-]*\.md' &lt;file&gt; | sort -u | wc -l
 </code></pre>
-<p>The particle physics summary cites all ninety-three of its articles, in six lists of bare slugs, one list per part; a slug in backticks is the citation form. The defect to avoid is a sharp claim that no source line can audit.</p>
+<p>The relativity summary cites all one hundred of its articles, and the electromagnetic summary all twenty-eight: a slug in backticks is the citation form, in a <code>**Source.**</code> line, a member list or Further Reading. The defect to avoid is a sharp claim that no source line can audit.</p>
 <h2 id="4-the-skeleton">4. The Skeleton</h2>
 <p><strong>Six parts, always in this order.</strong> The fifteen existing summaries share it without exception.</p>
 <div class="table-scroll"><table>
@@ -147,13 +149,13 @@
 <p><strong>Six bold leads, in this order.</strong> They are the signature of the family, and an agent that sees them knows the contract.</p>
 <ul>
 <li><strong>What this file is.</strong> The boundary, the count, and the content: objects, boxed equations, non-trivial claims. Then the three sentences that never vary in meaning: no proofs; an agent re-derives them; every formula is copied from the source article named in the section.</li>
-<li><strong>What the category does.</strong> Two or three sentences. Separate what the category <em>develops</em> from what it <em>records</em> and what it <em>refuses</em>. The particle physics summary does this in a paragraph, and the separation runs through the file.</li>
+<li><strong>What the category does.</strong> Two or three sentences. Separate what the category <em>develops</em> from what it <em>records</em> and what it <em>refuses</em>. The primordial force summary does this in a paragraph — what it constructs, what it records, what it refuses — and the separation runs through the file.</li>
 <li><strong>The single structural fact.</strong> One display, usually boxed, that organises the category: the vacuum as a minimal idempotent, the metric as a Gram matrix of a frame, the field strength as one pure vector in two halves. It is the highest-value line in the file, because the agent cannot recover it from the objects alone. When no single fact organises the category, say so and give the spine of three or four lines, as the operators summary does.</li>
 <li><strong>The non-trivial claim.</strong> One paragraph under the structural fact, saying why the fact is not a restatement. Load-bearing, never omitted.</li>
 <li><strong>The one-sentence version.</strong> One sentence, no display. What the agent quotes when it has room for one line.</li>
 <li><strong>How to use it.</strong> Optional, and only when the reading order matters. The universe summary names the sections to read first and the section of traps to read before writing.</li>
 </ul>
-<p><strong>Add the subsection table when the menu has subsections.</strong> Two columns, the subsection and what it settles. Eight of the fifteen summaries carry one, seven in that two-column form and one with an article count added. The table is cheap and it doubles as the skeleton.</p>
+<p><strong>Add the subsection table when the menu has subsections.</strong> Two columns, the subsection and what it settles. Thirteen of the fifteen summaries carry one, nine in that two-column form and four with an article count added; the two that omit it keep their sections in menu order. The table is cheap and it doubles as the skeleton.</p>
 <p><strong>Add three optional leads, and only when true.</strong> <em>The price</em>, when the category buys its result with an obstruction. <em>The discipline of the category</em>, when the classification of claims is the content, as in gravity. <em>A defect to record</em>, when the menu or the corpus is incomplete.</p>
 <h2 id="6-the-sections">6. The Sections</h2>
 <p><strong>The per-item grammar.</strong> Four moves, in this order, for every item that carries an irrecoverable line:</p>
@@ -169,18 +171,18 @@ model would not produce, and what it costs.
 **Source.** `articles_physics/&lt;slug&gt;.md`, `articles_physics/&lt;slug&gt;.md`.
 </code></pre>
 <p><strong>The definition is optional; the claim is not.</strong> Drop the defining sentence whenever the name and the display fix the meaning. Never drop the claim paragraph. A block with a display and no claim is a textbook fragment, and the model already has the textbook.</p>
-<p><strong>One claim per item.</strong> If an item has no irrecoverable claim, it belongs in a one-line list inside the section. The particle physics summary lists its seven shared-machinery articles in a single sentence and spends its blocks on the ten articles of principle. That ratio is correct, not lazy.</p>
+<p><strong>One claim per item.</strong> If an item has no irrecoverable claim, it belongs in a one-line list inside the section. The symmetry-breaking summary names its two registers by count rather than by list, and spends its blocks on the articles of principle. That ratio is correct, not lazy.</p>
 <p><strong>The claim is stated against something.</strong> <em>The constraint is a consequence and not an extra condition.</em> <em>The algebra of one-sided operators is seven-dimensional, not eight.</em> A claim with no contrast is a definition in disguise, and a definition in disguise is a cut.</p>
-<p><strong>Box only the load-bearing display.</strong> <code>\boxed{}</code> marks the equation an agent must reproduce. The existing files use zero to fourteen boxes; the electromagnetism summary uses eight for twenty-nine articles, the universe summary none, because its load-bearing content is its tables. The box count is a budget, not a quota.</p>
+<p><strong>Box only the load-bearing display.</strong> <code>\boxed{}</code> marks the equation an agent must reproduce. The existing files use one to fourteen boxes; the electromagnetism summary uses eight for twenty-eight articles, the universe summary one, because its load-bearing content is its tables. The box count is a budget, not a quota.</p>
 <p><strong>Use <code>###</code> when a section passes four items.</strong> The intersection rule of the corpus applies unchanged: give every intersection a heading, define before tabulating.</p>
 <p><strong>Tables carry counts, dimensions and ledgers.</strong> Which subspace, which dimension, which role; which region, which invariant, which reading. A table is the cheapest way to store an enumeration, and the right way to store one.</p>
-<p><strong>Close the section with <code>**Source.**</code> when it maps to a set of articles.</strong> Backticked relative paths, <code>.md</code> extension, comma separated. Every one of the seventeen summaries now closes each mapped section this way; the particle physics summary is the one exception, and it uses <code>*Articles.*</code> with bare slugs, one list per part. Pick one form per file and hold it.</p>
+<p><strong>Close the section with <code>**Source.**</code> when it maps to a set of articles.</strong> Backticked relative paths, <code>.md</code> extension, comma separated. Every summary closes each mapped section this way. Where a part maps to a set too large to name twice, a member list of backticked bare slugs is the alternative. Pick one form per file and hold it.</p>
 <p><strong>Do not repeat a display.</strong> The same formula in three sections is a sign that the sections are one section.</p>
 <p><strong>Do not write the algebra out.</strong> No intermediate step of a derivation, no chain of substitutions, no expansion the model performs faster than it reads. The summary holds the endpoints and the obstruction, not the route.</p>
 <h2 id="7-the-claim-ledger">7. The Claim Ledger</h2>
 <p><strong>Four labels, kept apart.</strong> <em>Established</em>: proved inside the corpus. <em>Carried</em> or <em>transcribed</em>: written in the letters, not derived from them. <em>Imported</em>: taken from the literature, with the reference named. <em>Open</em> or <em>refused</em>: no construction exists, and the article says why.</p>
 <p><strong>The summary never promotes a claim.</strong> A transcribed formula is not upgraded to derived by appearing in a compressed file. The gravity summary states the rule and applies it to itself: even the linearised sector is carried.</p>
-<p><strong>Every summary says what its category refuses.</strong> A required part of <code>## Summary</code>, not a nuance. The relativity summary names two refusals: the dynamics is imported, and no spatial axis is canonical. The particle physics summary names one, with the dimension count that excludes colour. A refusal is the highest-value line in the file for a machine, because it stops a confident wrong derivation.</p>
+<p><strong>Every summary says what its category refuses.</strong> A required part of <code>## Summary</code>, not a nuance. The relativity summary names two refusals: the dynamics is imported, and no spatial axis is canonical. The symmetry-breaking summary names eight, each one a theorem or a stated postulate rather than an apology. A refusal is the highest-value line in the file for a machine, because it stops a confident wrong derivation.</p>
 <p><strong>An obstruction is a result and is written as one.</strong> A category that cannot reach a result is not a weaker category; it is a category with a proved boundary. Use the sentences of the article.</p>
 <h2 id="8-the-formulas">8. The Formulas</h2>
 <p><strong>Copied, never reconstructed.</strong> A display is copied from the article named beside it, with the same symbols, hats, primes and order of factors. A formula retyped from memory is a new formula.</p>
@@ -213,7 +215,7 @@ model would not produce, and what it costs.
 <ul>
 <li><em>One metric, $\delta_{{\imath}{\jmath}}=(1,1,1,1)$; no raised spacetime index anywhere.</em></li>
 <li><em>The Lorentzian sign comes from $i^{2}=-1$ and not from a metric.</em></li>
-<li><em>The five unlisted articles of the gravity cluster are absent from the menu; the listing is incomplete.</em></li>
+<li><em>All five articles the gravity cluster once reported as absent are now listed; the defect is closed and the boundary is the menu's thirty-eight.</em></li>
 <li><em>Colour is excluded by the dimension count, not merely missing from one construction.</em></li>
 </ul>
 <p><strong>The test for a candidate quote.</strong> It must be short, auditable against one article, and impossible to regenerate. A quote that passes all three is worth ten lines of prose about it.</p>
@@ -229,8 +231,8 @@ model would not produce, and what it costs.
 </ul>
 <p><strong>What looks like content and is not.</strong> A boxed identity that restates a definition. A table of symbols already defined in the body. A paragraph whose only verb is <em>is</em>. Each costs the tokens of a sharp claim and buys nothing.</p>
 <h2 id="11-length-density-and-the-budget">11. Length, Density and the Budget</h2>
-<p><strong>Measured on the seventeen existing files.</strong> Sizes run from 13 KB to 41 KB, lines from 178 to 612, numbered sections from 4 to 16, non-trivial claims from 1 to 16, boxed displays from 0 to 13, citation blocks from 4 to 16, total 5,639 lines.</p>
-<p><strong>Density is claim density, not article density.</strong> The electromagnetism summary gives every item a block and boxes eight displays for twenty-nine articles. The relativity summary gives the spine a block and the enumerations a table, at one hundred and one articles. The universe summary boxes nothing and carries sixteen sections of structure. Each is right for its claim count.</p>
+<p><strong>Measured on the eighteen existing files.</strong> Sizes run from 15 KB to 72 KB, lines from 229 to 1000, numbered sections from 4 to 22, non-trivial claims from 4 to 77, boxed displays from 1 to 14, citation blocks from 4 to 22, total 7,318 lines.</p>
+<p><strong>Density is claim density, not article density.</strong> The electromagnetism summary gives every item a block and boxes eight displays for twenty-eight articles. The relativity summary gives the spine a block and the enumerations a table, at one hundred and one articles. The universe summary boxes nothing and carries sixteen sections of structure. Each is right for its claim count.</p>
 <p><strong>Budget rule.</strong> One block per irrecoverable claim, one line per article that carries no claim, one table per enumeration of more than four objects. Nothing else. A section that exceeds it is either over-written or is really two sections.</p>
 <p><strong>The floor is the acceptance test.</strong> A file that fails the test is too short, whatever its length. A file that repeats itself is too long, whatever its length.</p>
 <p><strong>The acceptance test, restated for a machine.</strong> Given only the summary, an agent can name every object the boundary defines; write the result equations; avoid the traps; say what the category refuses; and know which claims are carried rather than established. Nothing else is required, and anything else is optional.</p>
@@ -247,8 +249,158 @@ model would not produce, and what it costs.
 <li><strong>The trap of the invented symbol.</strong> Introducing a glyph the articles do not use. <em>Fix:</em> the Notation table is a contract.</li>
 <li><strong>The trap of the silent exception.</strong> Leaving out an article that does not fit. <em>Fix:</em> name it in the Introduction with its reason.</li>
 </ul>
-<h2 id="13-the-check-pass">13. The Check Pass</h2>
-<p>Run these before handing the file over. Each is mechanical, and the shape is not visible while writing.</p>
+<h2 id="13-the-menu-audit">13. The Menu Audit</h2>
+<p><strong>What this section is for.</strong> The check pass of §14 validates a file against this guide. It cannot validate the premise: that the file is the file the menu asks for. A file can pass every grep, quote every article correctly, and still be the summary of a category that no longer exists. This section is the pass that decides the premise, and it runs first.</p>
+<p><strong>The failure it exists to catch, with the numbers.</strong> The family once carried an umbrella file, <em>Biquaternion Universe Particle Physics</em>, over a <code>##</code> category of the same name holding one hundred and ten anchors in six subsections: the general gauge machinery (eighteen), the strong force (twenty-four), the electroweak force (thirty), electromagnetism (thirty), the mass spectrum (five), focus on informational aspects (three). The menu was then re-cut. Some of those subsections were <strong>promoted</strong> to categories of their own — <em>Strong Force</em> (twenty-seven anchors now), <em>Electroweak Force</em> (thirty-one), <em>Electromagnetism</em> (twenty-eight); the gauge machinery was absorbed by <em>Primordial Force</em> and the mass spectrum by <em>Symmetry Breaking</em>; and <strong>twenty-four of the one hundred and ten anchors left the menu altogether</strong>. An audit run before the re-cut reported fourteen files, zero missing, all passing. Every sentence of that report was true of a menu that had ceased to exist. The count of categories had gone from thirteen to fifteen, and no per-file grep could see it, because the file's shape does not encode its category.</p>
+<p><strong>Rule zero: the set of files is the set of <code>##</code> headings.</strong> Not a superset, not a subset. Fifteen categories, fifteen files. Both directions are defects: an extra file holds a boundary the menu does not name, and a missing file leaves a category with no cache at all. This is the only rule in the guide whose violation is invisible in a single file, which is why it is checked over the family and not per file.</p>
+<p><strong>Step 1: parse at <code>##</code> and <code>###</code>, and nowhere else.</strong> A <code>##</code> line opens a category; a <code>###</code> line opens a subsection inside the current category; <code>####</code> and below are prose structure and carry no boundary. Anchors are the <code>&lt;a href="articles_physics/&lt;slug&gt;.html"&gt;</code> lines, and the heading they sit under is their assignment. The parse is the whole of the boundary: an anchor belongs to exactly one category, because it appears once under one heading. Nothing about the previous file, the previous audit or the article's subject enters here.</p>
+<pre><code>awk '/^## /{sec=substr($0,4)} sec=="&lt;Category&gt;" &amp;&amp; /&lt;a href=/{print}' physics.md
+</code></pre>
+<p><strong>Step 2: count, and make the counts add.</strong> The article count is the number of anchors, written in words in the Introduction. The subsection counts must sum to it; a subsection that is empty of anchors is still named, and a category whose anchors sit above its first <code>###</code> is stated as such rather than folded into a subsection. Recompute at every write, never from the previous file, and recompute by subtraction as well: a residual "and the rest" is a number nobody has looked at.</p>
+<p><strong>Step 3: map the file onto the category, in one of two shapes.</strong> Default: the numbered sections follow the menu's subsections, one section per subsection, in menu order. Alternative, when the claims do not partition that way: cut the sections by claim, and put the alignment in the Introduction as a table — subsection, article count, the sections that serve it. The strong and electroweak files are cut that way; every subsection appears in their table, including the ones served by a single section, and a section that serves two subsections appears in two rows. The table is not decoration: it is the only sentence in the file that asserts the alignment, so it carries the menu's own counts and can be checked against step 2.</p>
+<p><strong>Step 4: cover, and know what counts as a citation.</strong> A member is cited when its slug appears as <code>articles_physics/&lt;slug&gt;.md</code> or as a backticked bare slug. Prose mention without backticks does not count, because the grep is the reader and the grep cannot see it. Coverage is claim-optional and citation-mandatory: an article with no irrecoverable line belongs in a one-line list, and the list is a citation.</p>
+<p><strong>Step 5: diff in both directions, and read the two lists differently.</strong> <code>MISSING</code> is a hard failure: the file falls short of its category. Zero is the acceptance condition, and a non-zero count is a list to close, never a sentence to soften. <code>OUTSIDE</code> is a <em>report</em>, not a failure, and it is expected to be non-zero — a summary that records a cross-reference or a recorded exception has to name the article, and the family's current total is fifty-three. What is illegitimate is an <em>unclassified</em> reach: a slug outside the category that is neither an explicit cross-reference nor an exception recorded in the Introduction. Classify each line of the report; the count of outside entries is not a metric and must never be quoted as one.</p>
+<p>With a <code>map.txt</code> holding one <code>file&lt;TAB&gt;category</code> pair per line — a tab, because the category names carry spaces — the whole audit is one run:</p>
+<pre><code class="language-python">import re, sys
+menu = open('physics.md').read()
+cats, cur, sub = {}, None, None
+for line in menu.splitlines():
+    if line.startswith('## '):
+        cur, sub = line[3:].strip(), None
+        cats[cur] = {}
+    elif line.startswith('### '):
+        sub = line[4:].strip()
+    m = re.search(r'articles_physics/([a-z0-9-]+)\.html', line)
+    if m and cur:
+        cats[cur].setdefault(sub, []).append(m.group(1))
+
+pairs = [l.rstrip('\n').split('\t') for l in open('map.txt') if l.strip()]
+files = {f for f, _ in pairs}
+failures = 0
+for cat in cats:
+    if cat not in {c for _, c in pairs}:
+        print(f'MISSING FILE   {cat}'); failures += 1
+for f, cat in pairs:
+    if cat not in cats:
+        print(f'STALE CATEGORY {f} -&gt; {cat}'); failures += 1; continue
+    t = open(f).read()
+    cited = set(re.findall(r'articles_physics/([a-z0-9-]+)\.md', t))
+    cited |= {s for s in re.findall(r'`([a-z0-9]+(?:-[a-z0-9]+)+)`', t)
+              if not s.startswith('internal-summary')}   # a summary is not an article
+    bound = {s for v in cats[cat].values() for s in v}
+    missing, outside = sorted(bound - cited), sorted(cited - bound)
+    if missing: failures += 1
+    print(f'{cat:42s} BOUNDARY {len(bound):4d} CITED {len(bound &amp; cited):4d} '
+          f'MISSING {len(missing):3d} OUTSIDE {len(outside):3d}')
+    for label, slugs in (('MISSING', missing), ('OUTSIDE', outside)):
+        for s in slugs:
+            print(f'    {label:8s} {s}')
+print(f'{len(files)} files, {len(cats)} categories, {failures} failures')
+sys.exit(1 if failures else 0)
+</code></pre>
+<p><strong>What the run prints when the map is wrong.</strong> Two lines carry every family-level defect, and both are outside any single file:</p>
+<pre><code>MISSING FILE   Biquaternion Universe Gravity and Cosmology
+STALE CATEGORY internal-summary-physics-of-the-primordial-force.md -&gt; Biquaternion Universe Particle Physics
+</code></pre>
+<p>The first is a category with no cache. The second is a file whose category the menu does not name — the exact defect the umbrella file was, and the one that a run reporting "all files pass" will hide, because a file is only ever audited against the category its author believed in.</p>
+<p><strong>The run that closed the defect.</strong> Fifteen categories, fifteen files, seven hundred and twenty-seven anchors, zero missing, zero failures. Three of the fifteen lines, verbatim:</p>
+<pre><code>Biquaternion Universe                      BOUNDARY   27 CITED   27 MISSING   0 OUTSIDE  11
+Biquaternion Universe Primordial Force     BOUNDARY   37 CITED   37 MISSING   0 OUTSIDE   1
+Biquaternion Universe Symmetry Breaking    BOUNDARY   34 CITED   34 MISSING   0 OUTSIDE   0
+15 files, 15 categories, 0 failures
+</code></pre>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Category, as the menu names it</th>
+<th>Anchors</th>
+<th>File, as this folder names it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biquaternion Universe</td>
+<td>27</td>
+<td><code>internal-summary-physics-of-the-biquaternion-universe.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Relativity</td>
+<td>100</td>
+<td><code>…-of-biquaternion-universe-relativity.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Primordial Force</td>
+<td>37</td>
+<td><code>…-of-the-primordial-force.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Symmetry Breaking</td>
+<td>34</td>
+<td><code>…-of-the-symmetry-breaking.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Strong Force</td>
+<td>27</td>
+<td><code>…-of-the-strong-interaction.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Electroweak Force</td>
+<td>31</td>
+<td><code>…-of-the-electroweak-interaction.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Electromagnetism</td>
+<td>28</td>
+<td><code>…-of-the-biquaternion-electromagnetism.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Relativistic Quantum Theory</td>
+<td>134</td>
+<td><code>…-relativistic-quantum-theory.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Non Relativistic Approximation of Quantum Theory</td>
+<td>80</td>
+<td><code>…-non-relativistic-approximation-of-quantum-theory.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Relativistic Non Quantum Approximation</td>
+<td>30</td>
+<td><code>…-relativistic-non-quantum-approximation.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Non Relativistic Non Quantum Approximation</td>
+<td>25</td>
+<td><code>…-non-relativistic-non-quantum-approximation.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Relativistic Quantum Fluid Mechanics</td>
+<td>45</td>
+<td><code>…-relativistic-quantum-fluid-mechanics.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Quantum Fields</td>
+<td>69</td>
+<td><code>…-quantum-fields.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Relativistic Quantum Thermodynamics</td>
+<td>22</td>
+<td><code>…-relativistic-quantum-thermodynamics.md</code></td>
+</tr>
+<tr>
+<td>Biquaternion Universe Gravity and Cosmology</td>
+<td>38</td>
+<td><code>…-gravity-and-cosmology.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The names differ, deliberately: the folder names the <em>object</em> (the strong interaction), the menu names the <em>section</em> (Strong Force). What may not differ is the partition. The table is also the place to notice that the two largest categories carry one hundred and thirty-four and one hundred anchors, while ten of the fifteen categories carry under forty and still have a file of their own: a file is sized by its category and not by an idea of importance.</p>
+<p><strong>The three failure modes, and the repair of each.</strong> A <em>stale category</em>: the file's category is not a <code>##</code> heading. Repair is not renaming — the members must be re-assigned by the parse, and the file is then deleted or re-cut. The umbrella case is the worked example: twenty-four of its anchors no longer existed, so no retitling could have saved it, and the five categories that absorbed the rest already had files or needed one. A <em>missing file</em>: a category with no cache. Repair is to write it, from the anchors, not from the neighbouring files. A <em>split boundary</em>: two files covering the same anchors, which <code>OUTSIDE</code> exposes in both directions. Repair is to re-derive each from its own category; the parse assigns every anchor to exactly one, so there is always a unique right answer.</p>
+<p><strong>When the menu is re-cut, the order is fixed.</strong> Parse the new menu; list the files that exist; diff the two sets; repair the stale and the missing; only then touch prose. A file that is being re-cut is written from the anchors of the new category, never by editing the old text toward the new name: the two categories' memberships differ, and the sentences inherited from the old boundary are exactly the ones that will be wrong.</p>
+<p><strong>What the audit does not prove.</strong> It does not prove that a citation is apt: a slug in Further Reading is a reachable article, not a correctly used one. It does not prove that a claim is true, or that a display is quoted at the right scale. Those are the article-level check and the reading of §14. The audit proves one thing, and without it nothing else is worth proving: that this file is the summary of this category, in this menu, today.</p>
+<h2 id="14-the-check-pass">14. The Check Pass</h2>
+<p>Run these before handing the file over. Each is mechanical, and the shape is not visible while writing. The menu audit of §13 comes first: a well-formed file for a category the menu does not name is worse than a badly formed file for one that it does.</p>
 <pre><code>grep -c '^## ' &lt;file&gt;                      # skeleton: Introduction, N, Summary, Notation, Reading
 grep -n '^## \|^# ' &lt;file&gt;                 # numbered sections in order, no gap
 grep -c 'boxed' &lt;file&gt;                     # the box budget, against the claim count
@@ -263,9 +415,10 @@ awk '{n=gsub(/\$/,"&amp;"); if (n%2) print NR": odd number of dollars"}' &lt;fil
 <p><strong>A file that passes the greps and fails the reading is not done.</strong> The greps prove the shape; they cannot prove the density.</p>
 <h2 id="summary">Summary</h2>
 <p>An internal summary is a machine cache of a boundary of the corpus. It is internal: not built, not in the menus, no HTML. It is machine-first: no motivation, no easing, no restaged derivation, no standard definition.</p>
-<p>Two rules carry the genre. Cut every line a competent model regenerates from a definition and a name. Quote every line it cannot: the sharp claim, the structuring fact, the load-bearing equation, the declared convention, the trap, the refusal. Length follows claim density and not article count, which is why the existing files range from four to sixteen sections for similar article counts.</p>
-<p>Three disciplines keep it honest. Every quote is copied verbatim from a named article. Every count is recomputed at the time of writing. Every refusal is stated, because a proved boundary is the line that stops a confident wrong derivation.</p>
-<p>The fifteen files are the template. Read the electromagnetism summary for the item grammar, the relativity summary for the closing three and the sharp claims, the particle physics summary for the cut of a large category, and the gravity summary for the claim ledger and the record of a defect.</p>
+<p>Two rules carry the genre. Cut every line a competent model regenerates from a definition and a name. Quote every line it cannot: the sharp claim, the structuring fact, the load-bearing equation, the declared convention, the trap, the refusal. Length follows claim density and not article count, which is why the existing files range from four to twenty-two sections for similar article counts.</p>
+<p>Four disciplines keep it honest. The boundary is re-derived from the menu at every write, never remembered from the last audit, because the menu is the only authority on which category a file is the summary of. Every quote is copied verbatim from a named article. Every count is recomputed at the time of writing. Every refusal is stated, because a proved boundary is the line that stops a confident wrong derivation.</p>
+<p>The audit precedes the writing. A file that is the summary of a category the menu no longer names cannot be improved by better sentences, better quotes or a better Introduction; it has to be re-cut or deleted, and the members it held have to be found in the categories that now own them. This is the one defect the genre has actually suffered, and the one the guide therefore checks first.</p>
+<p>The fifteen physics files are the template, one per menu category. Read the electromagnetism summary for the item grammar, the relativity summary for the closing three and the sharp claims, the symmetry-breaking summary for the cut of a large category with a theorem in place of an argument, and the gravity summary for the claim ledger and the record of a defect.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -307,10 +460,22 @@ awk '{n=gsub(/\$/,"&amp;"); if (n%2) print NR": odd number of dollars"}' &lt;fil
 <td><em>claim density</em></td>
 <td>irrecoverable claims per article; the quantity that sets the length</td>
 </tr>
+<tr>
+<td><em>menu audit</em></td>
+<td>the §13 pass: parse the menu, count the anchors, diff files against categories</td>
+</tr>
+<tr>
+<td><code>BOUNDARY</code>, <code>CITED</code>, <code>MISSING</code>, <code>OUTSIDE</code></td>
+<td>per file: its category's anchors, those cited, those not cited, those cited from elsewhere</td>
+</tr>
+<tr>
+<td><em>stale category</em></td>
+<td>a file whose category is not a <code>##</code> heading in the menu; repair is re-cutting, not renaming</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
-<p>For the genre: <code>internal-summary-of-the-biquaternion-electromagnetism</code> for the item grammar and the Source lines; <code>internal-summary-of-biquaternion-universe-relativity</code> for the closing three and the sharp claims; <code>internal-summary-of-the-biquaternion-universe-particle-physics</code> for the cut and the subsection table; <code>internal-summary-of-the-biquaternion-universe-gravity-and-cosmology</code> for the claim ledger and the defect. For the prose and the conventions the summaries inherit: <code>conceptual-conventions</code> in this folder, then <code>product-and-form-conventions</code> and <code>index-and-notation-conventions</code> in <code>articles_physics</code>.</p>
+<p>For the genre: <code>internal-summary-of-the-biquaternion-electromagnetism</code> for the item grammar and the Source lines; <code>internal-summary-of-biquaternion-universe-relativity</code> for the closing three and the sharp claims; <code>internal-summary-physics-of-the-symmetry-breaking</code> for the cut and the subsection table; <code>internal-summary-of-the-biquaternion-universe-gravity-and-cosmology</code> for the claim ledger and the defect. For the prose and the conventions the summaries inherit: <code>conceptual-conventions</code> in this folder, then <code>product-and-form-conventions</code> and <code>index-and-notation-conventions</code> in <code>articles_physics</code>.</p>
       </div>
     </main>
   </div>

@@ -1856,7 +1856,7 @@
 </tbody>
 </table></div>
 <p><strong>The 465 conjunctions are topic pairs.</strong> <em>Cardinality and the Axiom of Choice</em>, <em>The Special Linear Group and the Determinant</em>, <em>Nilpotent Elements and the Jordan–Chevalley Decomposition</em>: a reference article that treats two linked notions. Six of the 465 carry a result clause.</p>
-<h4 id="math411-1">$M_2(\mathbb{C})$ (1)</h4>
+<h4 id="math466-1">$M_2(\mathbb{C})$ (1)</h4>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -1871,7 +1871,7 @@
 </tr>
 </tbody>
 </table></div>
-<h4 id="math413-2">$M_4(\mathbb{C})$ (2)</h4>
+<h4 id="math468-2">$M_4(\mathbb{C})$ (2)</h4>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -1905,7 +1905,7 @@
 </tr>
 </tbody>
 </table></div>
-<h4 id="the-matrix-algebras-math422-1">The Matrix Algebras $M_n(\mathbb{C})$ (1)</h4>
+<h4 id="the-matrix-algebras-math477-1">The Matrix Algebras $M_n(\mathbb{C})$ (1)</h4>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -1920,7 +1920,7 @@
 </tr>
 </tbody>
 </table></div>
-<h4 id="the-matrix-algebras-math423-1">The Matrix Algebras $M_n(\mathbb{R})$ (1)</h4>
+<h4 id="the-matrix-algebras-math478-1">The Matrix Algebras $M_n(\mathbb{R})$ (1)</h4>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -2358,16 +2358,85 @@
 </table></div>
 <p><strong>The one-loop case gained a number.</strong> Its title carried the symbol $\rho^{4}\ln\rho^{2}$ and now carries $0.0570\lambda_1^{2}$, which is the coefficient the article computes.</p>
 <h3 id="the-orphan-filed-as-internal">The orphan, filed as internal</h3>
-<p><code>the-exponential-of-the-traceless-anti-hermitian-part-su4-and-the-rotors-of-the-six-space</code> sat in <code>articles_maths</code> with no menu entry, so the build would have pruned it from the deploy. It is a draft of a $\mathrm{SU}(4)$ companion to a published article, not a public page, and it now lives in <code>articles_internal</code>.</p>
-<p><strong>Its ten sibling links were rewritten to <code>../articles_maths/…</code></strong>, the convention the other internal articles use, and all ten resolve. Nothing linked to it from the public collections, so no link was broken by the move. The public collections now hold no unlinked article.</p>
+<p><code>the-exponential-of-the-traceless-anti-hermitian-part-su4-and-the-rotors-of-the-six-space</code> sat in <code>articles_maths</code> with no menu entry, so the build would prune it from the deploy. It is a draft of a $\mathrm{SU}(4)$ companion to a published article, not a public page, and it now lives in <code>articles_internal</code> under a shorter slug:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>old location</th>
+<th>new location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_maths/the-exponential-of-the-traceless-anti-hermitian-part-su4-and-the-rotors-of-the-six-space</code></td>
+<td><code>articles_internal/the-exponential-of-the-traceless-anti-hermitian-part</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The slug was shortened in the same move.</strong> The corpus carries the main clause in the slug and drops the subtitle — <code>The Data Boundary: Two Claims…</code> is <code>the-data-boundary</code>, <code>Matching at $M_C$: Four Quantities…</code> is <code>matching-at-m-c</code> — and this slug kept the whole of its subtitle, $SU(4)$ and the six-space: 88 characters, against a median of 44 across the 3 366 public articles. It is now <code>the-exponential-of-the-traceless-anti-hermitian-part</code>, 52 characters, faithful to the main clause and to the reading of the sibling <code>the-exponential-of-sym-4-stretches-and-the-positive-cone</code>.</p>
+<p><strong>The title is unchanged</strong>, so the article is still told apart from the determinant-one article by its heading rather than by its filename. The new slug is a prefix of its sibling's, which is how the corpus names a family — <code>the-exponential-of-sym-2-…</code> beside <code>the-exponential-of-sym-4-…</code>, <code>…-lie-group-of-m3c</code> beside <code>…-of-m4c</code>:</p>
+<ul>
+<li><code>the-exponential-of-the-traceless-anti-hermitian-part</code> — <em>…: $SU(4)$ and the Rotors of the Six-Space</em></li>
+<li><code>the-exponential-of-the-traceless-anti-hermitian-part-determinant-one-unitarity-and-the-rotation</code> — <em>…: Determinant One, Unitarity and the Rotation</em></li>
+</ul>
+<p><strong>The public side of the migration is the deletion, and it is the only side git sees.</strong> <code>articles_internal/</code> is listed in <code>.gitignore</code> as <em>internal review work — confidential, never published, never committed</em>, so the move appears in the working tree as one deletion from <code>articles_maths</code> and nothing else. That is the intended outcome, not an unfinished rename: the tracked, deployed copy is gone, and the confidential copy is deliberately untracked.</p>
+<p><strong>Its ten sibling links were rewritten to <code>../articles_maths/…</code></strong>, the convention the other internal articles use, and all ten resolve. No article in the public collections linked to it — the two nearest neighbours, <code>the-anti-hermitian-derivations-of-the-biquaternion-algebra-as-su2</code> and <code>the-generator-of-the-rotor-conjugation-array-exponential-and-half-angle</code>, both cite the <em>determinant-one</em> article — so the move broke no link. The public collections now hold no unlinked article.</p>
+<p><strong>This settles R1 of <code>migration-SU.md</code> by declining it.</strong> That plan asked for the article to be inserted into <code>maths.md</code> under <em>The Exponential, the Rotor and the Polar Decomposition</em>. It is filed internal instead, and the plan now carries a note recording the decision and its reason, so the next reader of the plan does not re-open it.</p>
 <h3 id="the-propagation-the-renames-needed">The propagation the renames needed</h3>
 <p>Eighteen files were renamed in this pass, and the reference surface was wider than the headings and the menus.</p>
 <p><strong>Four kinds of reference were rewritten.</strong> The heading line of each article; the menu anchor and its <code>href</code>; every <code>[…](slug.html)</code> link in the public collections; and every italic citation of the form <em>Old Title</em> used inside a sibling's prose, of which seven named the conjugation article and five named the biquaternion-algebra article.</p>
-<p><strong>Nine physics articles carried a duplicated link text before this pass.</strong> Their link read <em>Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$: Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$</em>, with the same sentence twice. The first pass replaced only the half without the dollar signs and left the second half standing; both halves are now the single new title.</p>
-<p><strong>One link pointed at the wrong article.</strong> <em>No Half-Integer Summand at $n=4$</em> cited the general conjugation article by its title but linked the $n=4$ variant. The title and the link now agree, on the general article.</p>
-<p><strong>One link named a title that never existed.</strong> <em>Four Integer Labels and One Half-Integer Module</em> cited <em>Where the Half-Integers Go in the Biquaternion Algebra</em>, which is neither the old title (<em>…in the Biquaternion Operators</em>) nor the new one; it now carries the new title.</p>
+<p><strong>Nine physics articles carried a duplicated link text before this pass.</strong> They are <code>the-parameter-count-as-the-measure-of-the-frameworks-boundary</code>, <code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code>, <code>the-hierarchy-problem-and-naturalness</code>, <code>the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules</code>, <code>the-landau-pole-triviality-and-vacuum-stability</code>, <code>hadron-structure-from-qcd-the-bound-state-problem</code>, <code>jets-the-qcd-cross-section-and-the-infrared-structure</code>, <code>meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test</code> and <code>the-parton-model-and-deep-inelastic-scattering</code>. Their link read <em>Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$: Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$</em>, with the same sentence twice. The first pass replaced only the half without the dollar signs and left the second half standing; both halves are now the single new title.</p>
+<p><strong>One link pointed at the wrong article, and this pass made it.</strong> Propagating the new subtitle <em>Differences of the Module Weights</em> through the corpus rewrote a link in <em>No Half-Integer Summand at $n=4$</em> that had pointed at the $n=4$ variant, leaving the general title over the variant's <code>href</code>. The string does not exist anywhere in the pre-pass tree, so it is a defect of this pass and not an inherited one. Title and link now agree, on the general article.</p>
+<p><strong>One citation named a title that never existed, and it was already there.</strong> <em>Four Integer Labels and One Half-Integer Module</em> named <em>Where the Half-Integers Go in the Biquaternion Algebra</em> in its own introduction, which is neither the pre-pass title (<em>…in $M_4(\mathbb{C})$</em>) nor any title the article ever carried; the surrounding sentence cites two siblings correctly, so the phrase is a slip of long standing rather than a residue of this pass. It now names the article it sits in.</p>
 <p><strong>The move introduced and then removed one defect.</strong> The ten links inside the relocated article were rewritten by a pattern that appended <code>.html</code> to a name that already carried it, producing ten <code>….html.html</code> targets. They are correct now, and the public collections have no broken link.</p>
 <p><strong>Nineteen broken links remain, all in <code>articles_internal/archives/</code>.</strong> They are superseded drafts pointing at articles that were renamed or withdrawn before this audit began. The archive is not part of the menu, and the links were left as they stand.</p>
+<h3 id="the-six-cross-listings-differentiated">The six cross-listings, differentiated</h3>
+<p>Six articles appear twice in <code>maths.md</code>, under two different <code>##</code> sections, and the first reading of them — a copy-paste duplication — was wrong.</p>
+<p><strong>They are cross-listings, and each occurrence carries its own description.</strong> <em>The Symmetric and Antisymmetric Parts of a Product</em> sits in $M_n(\mathbb{R})$ under <em>The Product on the Two Halves</em> and again in $M_n(\mathbb{C})$ under the same subsection, and the comment above each link describes that section's reading: the transpose form with $S$ and $K$ in the real section, the expansion $AB=SS'+SK'+KS'+KK'$ with $\pi_{\pm}$ in the complex one. Two further pairs sit in $M_n(\mathbb{C})$ and $M_2(\mathbb{C})$, where the description above the second names the plane, $\pm e^{tJ/2}$ and the two eigenvalues.</p>
+<p><strong>No section-specific variant exists to point at instead.</strong> The sections name their articles with suffixes — <code>-over-r</code> in the real section, <code>-at-n-2</code> in the plane section — and the sibling entries carry them: <code>the-four-multiplication-tables-ss-sk-ks-kk-over-r</code>, <code>the-jordan-algebra-sym-n-r</code>, <code>the-symmetric-and-antisymmetric-parts-of-a-product-at-n-2</code>. For these six the suffixed variant does not exist in either direction: there is no <code>-over-r</code> form of the four real-section cases and no <code>-at-n-2</code> form of the two plane cases, only <code>-at-n-4</code>. The general article is therefore the correct target in both sections, and deleting either entry would drop a section's only reference to it.</p>
+<p><strong>The label was left alone, and the note sits outside the anchor.</strong> All 3 333 in-scope menu labels are exactly the article's heading — the invariant reads 0 mismatches — so a parenthetical inside the link would have been the only such label on the site. The marker is placed after <code>&lt;/a&gt;</code>, where it differentiates the two entries without touching the label:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>sections</th>
+<th>note on the second</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-symmetric-and-antisymmetric-parts-of-a-product</code></td>
+<td>$M_n(\mathbb{R})$, $M_n(\mathbb{C})$</td>
+<td>also under $M_n(\mathbb{R})$</td>
+</tr>
+<tr>
+<td><code>the-exponential-of-the-antisymmetric-part-one-parameter-rotations</code></td>
+<td>$M_n(\mathbb{R})$, $M_n(\mathbb{C})$</td>
+<td>also under $M_n(\mathbb{R})$</td>
+</tr>
+<tr>
+<td><code>rotors-acting-on-the-bivector-space-the-adjoint-action</code></td>
+<td>$M_n(\mathbb{R})$, $M_n(\mathbb{C})$</td>
+<td>also under $M_n(\mathbb{R})$</td>
+</tr>
+<tr>
+<td><code>the-exponential-of-the-symmetric-part-stretches-and-the-positive-cone</code></td>
+<td>$M_n(\mathbb{R})$, $M_n(\mathbb{C})$</td>
+<td>also under $M_n(\mathbb{R})$</td>
+</tr>
+<tr>
+<td><code>the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form</code></td>
+<td>$M_n(\mathbb{C})$, $M_2(\mathbb{C})$</td>
+<td>also under $M_n(\mathbb{C})$</td>
+</tr>
+<tr>
+<td><code>the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover</code></td>
+<td>$M_n(\mathbb{C})$, $M_2(\mathbb{C})$</td>
+<td>also under $M_n(\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Six lines of <code>maths.md</code> changed and nothing else.</strong> The note is the literal <code>&lt;em&gt;(also under $M_n(\mathbb{R})$)&lt;/em&gt;</code> after the closing anchor, rendered through <code>build.md_to_html</code> and confirmed to pass the <code>&lt;em&gt;</code> through with the math intact. The anchor text, the <code>href</code>, the description comments and the section order are untouched, so <code>menu_order</code> and the sitemap — both of which read only the <code>href</code> and deduplicate by slug — see the same corpus as before. The label-versus-heading check still reads 0 mismatches.</p>
 <h2 id="what-remains-after-the-second-pass">What Remains After the Second Pass</h2>
 <p><strong>One family of title still departs from the rule, and it is the largest.</strong> 234 physics titles and 465 mathematics titles carry the conjunction the PLAN bans by name, and 224 physics titles carry the <em>in Biquaternionic Form</em> suffix. Neither is a breach of an imperative sentence; both are the corpus's house style, and retiring either is a decision about the corpus and not a repair.</p>
 <p><strong>Short titles remain.</strong> 30 physics titles and 785 mathematics titles are under five words, and most are correct at that length — <em>Finite Simple Groups of Lie Type</em> is a section head, not a claim. They are counted in §<em>Mathematics: What the Rule Reaches and What It Does Not</em> and need no action.</p>
