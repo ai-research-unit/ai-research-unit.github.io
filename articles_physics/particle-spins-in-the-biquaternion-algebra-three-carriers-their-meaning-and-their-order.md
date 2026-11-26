@@ -138,7 +138,7 @@ so spin two is built from the spin-one carrier by a symmetric square and a remov
 
 ## What the Order Does Not Say
 
-**It does not rank the carriers by quantity.** $67$ spin-one entries, $115$ spin-$\tfrac12$ entries, $110$ spin-zero entries and $15$ other-spin entries in the menu, counted band by band. **The thinnest band is the one this article puts first, and the two thickest are the ones it puts second and third.**
+**It does not rank the carriers by quantity.** $69$ spin-one entries, $115$ spin-$\tfrac12$ entries, $110$ spin-zero entries and $14$ other-spin entries in the menu, counted band by band. **The thinnest band is the one the order puts last, and the first band is neither the thickest nor the thinnest.**
 
 **It does not make the vector a module.** The adjoint is not a carrier of amplitudes, and a state written on $\mathfrak{k}$ is not a state the framework has. **The order is an order of construction, not a licence to move a state onto the vector part.**
 
