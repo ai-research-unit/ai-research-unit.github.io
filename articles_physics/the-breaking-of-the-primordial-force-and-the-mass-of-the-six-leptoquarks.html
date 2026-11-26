@@ -113,6 +113,15 @@ $$</p>
 <p>$$
 D=\operatorname{diag}(-3,1,1,1),\qquad iD=\operatorname{diag}(-3i,i,i,i).
 $$</p>
+<p><strong>The vacuum is a recombination of the three diagonal generators, and this is the one place where that fact has content.</strong> Above $M_C$ the three diagonals are declared symmetric in the three vector units,
+$$
+T_x=i\bigl(E_{xx}-E_{tt}\bigr),\qquad T_y=i\bigl(E_{yy}-E_{tt}\bigr),\qquad T_z=i\bigl(E_{zz}-E_{tt}\bigr),
+$$
+and <strong>none of them is the vacuum</strong>. The vacuum is their sum,
+$$
+iD=T_x+T_y+T_z=\operatorname{diag}(-3i,i,i,i),
+$$
+so the direction that the condensation selects is not a member of the frame that the unbroken phase prints: <strong>it is what the frame adds up to, and the coefficient of each of the three is one.</strong> This is why the lepton line can appear at the transition without having been named above it, and why the corpus no longer needs a corner array to hold $B'$: $B'$ is the sum. <a href="the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html">The Symmetric Diagonal Frame</a> proves that no such frame exists in $\mathfrak{su}(3)$, and that the fourth line is what makes it possible here.</p>
 <p><strong>The scale is free and the direction is not.</strong> Any multiple of $D$ gives the same breaking. <strong>So the condensate contributes one dimensionful number — its magnitude $v$ — and one discrete choice, the sign, which changes nothing because every mass is quadratic in $D$.</strong> That is the entire freedom of the first step.</p>
 <p><strong>Why the number $4$ will appear later.</strong> The trace condition is not decoration: it is what turns "the scalar takes a value" into "the scalar takes the only value available". With $q$ fixed the corner is forced. <strong>The $4$ in $32=2\cdot4^{2}$ is exactly $q-\ell=1-(-3)$, the one departure from a multiple of the identity that a trace-free diagonal direction can have.</strong> Change the split of the quartet and the pattern of six and nine changes with it; keep the split and there is nothing left to choose.</p>
 <p><strong>The stabiliser.</strong> The set of arrays that annihilate the vacuum is</p>
@@ -137,7 +146,7 @@ $$</p>
 <p>$$
 [iD,A_{at}]=+4i\,A_{at},\qquad [iD,iS_{at}]=+4i\,iS_{at}.
 $$</p>
-<p><strong>The three diagonal directions are in the kernel.</strong> They are linear combinations of $iD$ itself and of the two trace-free colour diagonals, and $[iD,iD]=0$.</p>
+<p><strong>The three diagonal directions are in the kernel, and the frame makes that visible rather than accidental.</strong> $D$ is diagonal, so it commutes with every diagonal matrix, hence $[iD,T_j]=0$ for $j=x,y,z$ and $[iD,iD]=0$. <strong>The three symmetric directions survive the breaking individually</strong>, and what the broken phase calls $T^{c}_{3}$ and $T^{c}_{8}$ are the two differences inside that surviving triple while $B'$ is the surviving sum.</p>
 <p><strong>Adding it up.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -154,13 +163,8 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>the two trace-free colour diagonals</td>
-<td>$2$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>$iD$ itself</td>
-<td>$1$</td>
+<td>the three frame directions $T_j=iM_j$</td>
+<td>$3$</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -281,14 +285,14 @@ $$</p>
 <td>gluons</td>
 </tr>
 <tr>
-<td>$iD$</td>
+<td>$iD=T_x+T_y+T_z$</td>
 <td>$1$</td>
-<td>$B'$</td>
+<td>$B'$, the sum of the surviving frame</td>
 </tr>
 <tr>
-<td>the two trace-free colour diagonals</td>
-<td>counted in the eight</td>
-<td>$\lambda_3,\lambda_8$</td>
+<td>the three frame directions $T_j$</td>
+<td>$3$, of which two are in the eight</td>
+<td>$B'$ is the sum; $\lambda_3,\lambda_8$ are the two differences</td>
 </tr>
 </tbody>
 </table></div>
@@ -449,7 +453,11 @@ $$</p>
 <tbody>
 <tr>
 <td>$iD$</td>
-<td>the condensate $\operatorname{diag}(-3i,i,i,i)$, the vacuum direction</td>
+<td>the condensate $\operatorname{diag}(-3i,i,i,i)$, the vacuum direction, equal to $T_x+T_y+T_z$</td>
+</tr>
+<tr>
+<td>$T_j$</td>
+<td>$iM_j=i(E_{jj}-E_{tt})$, the three diagonal generators, the symmetric frame</td>
 </tr>
 <tr>
 <td>$\operatorname{ad}(iD)$</td>
@@ -477,7 +485,7 @@ $$</p>
 </tr>
 <tr>
 <td>$B'$</td>
-<td>the surviving abelian vector, the $iD$ direction</td>
+<td>the surviving abelian vector, the $iD$ direction, the sum of the three frame directions</td>
 </tr>
 </tbody>
 </table></div>

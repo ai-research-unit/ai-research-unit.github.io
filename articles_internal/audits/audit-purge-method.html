@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The Purge Method, Written Down So It Can Be Run Again — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Method record, and executed twice. This is the procedure that removed the word gauge from articles_physics, physics.md and…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-purge-method-written-down-so-it-can-be-run-again"><strong>Audit: The Purge Method, Written Down So It Can Be Run Again</strong></h1>
+<p><em>Status of this file.</em> <strong>Method record, and executed twice.</strong> This is the procedure that removed the word <em>gauge</em> from <code>articles_physics</code>, <code>physics.md</code> and <code>articles_internal</code>: 1 146 tokens in 287 physics articles, 210 in the physics menu, 703 in the internal notes. It left 150 protected tokens in physics, 7 in the internal notes outside <code>audits/</code>, and the maths corpus untouched. Nothing here is proposed. Every number is measured.</p>
+<p><em>What the file is for.</em> It states the seven stages, the four ordered rule lists, the protection set, and the battery of checks, in the order they must run, so that the same invariants can be verified again and the next word can be moved with the same method.</p>
+<p><em>The reader's contract, in six lines.</em></p>
+<ol>
+<li><strong>A name is renameable; a claim is not.</strong> The pass may rewrite how an object is called, never what is asserted of it.</li>
+<li><strong>Protect first, substitute second.</strong> A substitution never sees a span it may not touch, because that span is not in the string it is given.</li>
+<li><strong>Longest phrase first.</strong> A rule that fires on a bare word cannot be un-fired by a longer rule that runs after it.</li>
+<li><strong>The last rule is grammar, not vocabulary.</strong> The bare word survives only as a grammatical subject, and the fallback exists to place a noun there.</li>
+<li><strong>Slugs are renamed last, then every inbound link.</strong> A slug is a filename; it cannot be rewritten by a text rule, and it is the one part a reader sees in a url.</li>
+<li><strong>The pass is measured, not trusted.</strong> A fixed battery of counts decides whether it is finished, and the battery is independent of the rules.</li>
+</ol>
+<h2 id="1-the-decision">1. The Decision</h2>
+<p><strong>What a purge is.</strong> It is a renaming of one notion across a corpus, carried out by rule, with a proof that no sentence lost a claim. It is not a search and replace. Search and replace fails on this corpus three times over: three occurrences in four of the word are adjectives in front of a noun that already carries the meaning, one in four stands alone and needs a noun supplied, and the citations must survive verbatim.</p>
+<p><strong>The single test.</strong> After the pass, every changed line must satisfy two conditions. Its word count may change only where a rule adds a grammatical subject. Its rendered claim must be the one it carried before. The first condition is checked by machine. The second is checked by reading the changed tokens as a list of pairs, which is short enough to read in full.</p>
+<p><strong>Why the method is written down.</strong> A rule table that exists only in a temporary file cannot be audited, cannot be corrected after the fact, and cannot be reused. The two failures found in the first run — a plural noun treated as a verb, and a rule firing inside <code>supersymmetric</code> — were both invisible in the residual count and visible only in a re-read of the changed pairs. A recorded table is what makes that re-read possible.</p>
+<h2 id="2-the-shape-of-the-problem">2. The Shape of the Problem</h2>
+<p><strong>The word is mostly an adjective.</strong> Of the 1 146 tokens in the physics articles, the profile of the two words that follow each token is the whole argument. Its 716 distinct shapes open with <code>gauge principle in</code> 46, <code>gauge connection in</code> 34, <code>gauge boson masses</code> 19, <code>gauge group and</code> 17, <code>gauge fields in</code> 17, <code>gauge and the</code> 15, <code>gauge in which</code> 11, <code>gauge theory and</code> 10, <code>gauge quantum numbers</code> 10, <code>gauge invariance and</code> 9. A noun already follows in almost every shape, and that noun decides what goes in the adjective's place. Deleting the adjective is enough in most sites.</p>
+<p><strong>The word also stands alone.</strong> "Fix the gauge", "the gauge is", "a choice of gauge". Here a noun must be supplied, and it must be one the corpus already uses: <em>representative</em> for the object, <em>redundancy</em> for the freedom, <em>connection</em> for the field, <em>local symmetry</em> for the invariance.</p>
+<p><strong>Three surfaces, three mechanisms.</strong> Prose is rewritten by rule. Titles are rewritten by rule and then by hand, because a title is also a menu entry and an <code>H1</code>. Slugs are filenames: they are renamed by <code>mv</code> and every inbound link is rewritten afterwards, across the whole repository, including <code>articles_external</code>.</p>
+<p><strong>What must survive.</strong> The bibliography. A cited title is not corpus prose, and editing it falsifies the reference. The residual count therefore cannot reach zero, and a pass that reports zero has either skipped the citations or corrupted them.</p>
+<h2 id="3-stage-1-the-snapshot">3. Stage 1 — The Snapshot</h2>
+<p><strong>Copy before touching.</strong> The snapshot is the only evidence that a bad rule was bad. It is taken outside the repository, so it leaves no scratch file behind.</p>
+<pre><code>cp -a articles_physics /tmp/orig/articles_physics
+cp    physics.md       /tmp/physics_orig.md
+cp -a articles_internal /tmp/orig_internal
+</code></pre>
+<p><strong>Why a whole copy and not a git tag.</strong> The corpus is versioned by its own commits, but a purge is run over a working tree and compared line by line against what it was; the comparison needs the pre-pass text as files, addressable by name, not as a revision that has to be re-read.</p>
+<h2 id="4-stage-2-the-census">4. Stage 2 — The Census</h2>
+<p><strong>Two measurements, in this order.</strong></p>
+<ol>
+<li><strong>Per file, sorted.</strong> <code>grep -c</code> over the folder, sorted by count, descending. The distribution is skewed: a handful of articles carry a hundred tokens, most carry none, and the tail is what decides the batch order.</li>
+<li><strong>Collocation profile.</strong> For every token, the two words after it and the one before it, counted. This is what writes the rule table. A profile that says <code>group</code> 30, <code>field</code> 10, <code>theory</code> 8, <code>fixing</code> 6 has just told you the four rules that cover two thirds of the corpus.</li>
+</ol>
+<p><strong>Measured baselines for this corpus.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>area</th>
+<th>tokens before</th>
+<th>files</th>
+<th>tokens after</th>
+<th>files</th>
+<th>where they remain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_physics</code></td>
+<td>1 146</td>
+<td>287</td>
+<td>150</td>
+<td>90</td>
+<td>144 bibliography, 4 quoted phrases, 2 in the conventions article</td>
+</tr>
+<tr>
+<td><code>physics.md</code></td>
+<td>210</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>articles_internal</code> outside <code>audits/</code></td>
+<td>576</td>
+<td>75</td>
+<td>7</td>
+<td>6</td>
+<td>4 bibliography, 2 quoted from maths, 1 link target</td>
+</tr>
+<tr>
+<td><code>audits/</code></td>
+<td>127</td>
+<td>1</td>
+<td>216</td>
+<td>2</td>
+<td>exempt: the records, <code>audit-gauge.md</code> and this file</td>
+</tr>
+<tr>
+<td><code>articles_maths</code></td>
+<td>1 364</td>
+<td>—</td>
+<td>1 364</td>
+<td>—</td>
+<td>untouched by design</td>
+</tr>
+<tr>
+<td><code>articles_external</code></td>
+<td>0</td>
+<td>—</td>
+<td>0</td>
+<td>—</td>
+<td>nothing to remove</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-stage-3-the-protected-spans">5. Stage 3 — The Protected Spans</h2>
+<p><strong>The rule.</strong> A line is cut into gaps and spans. Spans are copied through byte for byte. Substitutions run on the gaps only, so no rule can reach into a span, and no rule has to know that spans exist.</p>
+<p><strong>The six spans.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>span</th>
+<th>pattern</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inline math</td>
+<td><code>$…$</code></td>
+<td>the claim lives here; a rename inside it changes a formula</td>
+</tr>
+<tr>
+<td>display math</td>
+<td><code>$$…$$</code></td>
+<td>same</td>
+</tr>
+<tr>
+<td>link target</td>
+<td><code>](…)</code></td>
+<td>a target is a filename, not prose</td>
+</tr>
+<tr>
+<td>anchor tag</td>
+<td><code>&lt;a href="…"&gt;</code></td>
+<td>the menus are written as raw tags</td>
+</tr>
+<tr>
+<td>double-quoted string</td>
+<td><code>"…"</code></td>
+<td>somebody else's words, including the words of a companion article</td>
+</tr>
+<tr>
+<td>cited work</td>
+<td><code>*Gauge Fields…*</code> and its siblings</td>
+<td>a bibliography title</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A seventh, coarser guard.</strong> A bibliography line is skipped whole before the line is even cut. The test is a bullet line that carries a year or <code>arXiv</code>. It catches the entry that has no protecting asterisks and no quotes.</p>
+<p><strong>Consequence, and it is deliberate.</strong> The 150 physics tokens that remain are almost all of one kind: a citation. They are the signature of a correct pass, not a residue of one.</p>
+<p><strong>One hazard.</strong> <code>grep</code> reports some articles as binary, because of a stray byte in the source, and then prints nothing for them: the residual count is then short by one, silently. The first physics pass reported 149 where the truth was 150. Every count in the battery is therefore taken with an explicit text read, not with a bare <code>grep -c</code> over a glob.</p>
+<h2 id="6-stage-4-the-ordered-rule-table">6. Stage 4 — The Ordered Rule Table</h2>
+<p><strong>Four lists, applied in this order to each gap.</strong> The order is the method. A later list cannot repair what an earlier list has already destroyed.</p>
+<ol>
+<li><strong>TITLES.</strong> Whole article titles, before any word rule can mangle them. <code>Gauge Curvature and the Bianchi Identity</code> becomes <code>Connection Curvature and the Bianchi Identity</code>; <code>Gauge Fixing in the Electroweak Theory</code> becomes <code>Fixing the Representative in the Electroweak Theory</code>.</li>
+<li><strong>NAMED.</strong> Fixed technical phrases that have one canonical replacement, because the corpus already owns the replacement word.</li>
+<li><strong>COMP.</strong> Compound nouns, hyphenated or spaced, longest first, so <code>gauge-fixing condition</code> is consumed before <code>gauge-fixing</code> before <code>gauge-fix</code>.</li>
+<li><strong>GEN.</strong> The bare word, with its grammar. <code>choice of gauge</code> and <code>fix the gauge</code> first; then the determiner plus the word, which yields <em>representative</em>; then the bare word alone.</li>
+</ol>
+<p><strong>The NAMED list, as decided.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>phrase</th>
+<th>replacement</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lorenz gauge, de Donder gauge, harmonic gauge</td>
+<td>Lorenz / de Donder / harmonic condition</td>
+<td>a condition selects a representative; it is not a family of them</td>
+</tr>
+<tr>
+<td>Coulomb gauge, Landau gauge, axial gauge</td>
+<td>… condition</td>
+<td>same</td>
+</tr>
+<tr>
+<td>Feynman–'t Hooft gauge</td>
+<td>Feynman–'t Hooft condition</td>
+<td>same</td>
+</tr>
+<tr>
+<td>unitary gauge</td>
+<td>unitary representative</td>
+<td>here the object is the representative itself</td>
+</tr>
+<tr>
+<td>$R_\xi$ gauge, $R_\zeta$ gauge</td>
+<td>$R_\xi$ condition, $R_\zeta$ condition</td>
+<td>the parameter names a condition</td>
+</tr>
+<tr>
+<td>Weitzenböck gauge</td>
+<td>Weitzenböck frame</td>
+<td>the corpus's own term for the frame</td>
+</tr>
+<tr>
+<td>static gauge, unit-boost gauge, rest-frame gauge</td>
+<td>static frame, unit-boost frame, choice of rest frame</td>
+<td>a frame, not a freedom</td>
+</tr>
+<tr>
+<td>Hermitian, symmetric, horizontal, separable, single-valued gauge</td>
+<td>… representative</td>
+<td>each names one member of an orbit</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The COMP list, in the four families it fell into.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>rule shape</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the field</td>
+<td><code>gauge field</code>, <code>gauge boson</code>, <code>gauge potential</code>, <code>gauge current</code></td>
+<td>connection field, vector boson, connection potential, connection current</td>
+</tr>
+<tr>
+<td>the group</td>
+<td><code>gauge group</code>, <code>gauge algebra</code>, <code>gauge generator</code>, <code>gauge charge</code>, <code>gauge representation</code>, <code>gauge singlet</code>, <code>gauge quantum numbers</code></td>
+<td>symmetry group, symmetry algebra, symmetry generator, symmetry charge, symmetry representation, symmetry singlet, symmetry quantum numbers</td>
+</tr>
+<tr>
+<td>the symmetry</td>
+<td><code>gauge symmetry</code>, <code>gauge transformation</code>, <code>gauge invariance</code>, <code>gauge covariant</code>, <code>gauge orbit</code>, <code>gauge freedom</code>, <code>gauge choice</code></td>
+<td>local symmetry, local transformation, local invariance, locally covariant, orbit, representative freedom, choice of representative</td>
+</tr>
+<tr>
+<td>the procedure</td>
+<td><code>gauge fixing</code>, <code>gauge-fix</code>, <code>gauge-fixed</code>, <code>gauge determinant</code>, <code>gauge volume</code>, <code>gauge slice</code></td>
+<td>fixing, fix the representative of, representative-fixed, Faddeev–Popov determinant, redundancy volume, representative slice</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The GEN list, and the grammar it encodes.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pattern</th>
+<th>replacement</th>
+<th>reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>choice of gauge</code></td>
+<td>choice of representative</td>
+<td>the freedom, named</td>
+</tr>
+<tr>
+<td><code>fix the gauge</code>, and its forms <code>fixes</code>, <code>fixed</code>, <code>fixing</code></td>
+<td>fix … the representative</td>
+<td>the object, named</td>
+</tr>
+<tr>
+<td>determiner + <code>gauge</code></td>
+<td>determiner + representative</td>
+<td>the object, named</td>
+</tr>
+<tr>
+<td>bare <code>gauge</code></td>
+<td>representative</td>
+<td>the fallback</td>
+</tr>
+<tr>
+<td><code>gauging</code></td>
+<td>making local</td>
+<td>a verb, and the corpus's own phrase</td>
+</tr>
+<tr>
+<td><code>gauged</code></td>
+<td>made local</td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>ungauged</code></td>
+<td>not made local</td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>gaugeable</code></td>
+<td>able to be made local</td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>gauges</code> (plural noun)</td>
+<td>representatives</td>
+<td>see §8, hazard 1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Measured effect of the table, as changed word pairs.</strong> <code>gauge</code> → <code>connection</code> 111, → <code>representative</code> 108, → <code>symmetry</code> 92, → <code>local</code> 31, → <code>vector</code> 20, <code>Gauge</code> → <code>Connection</code> 18, <code>gauge</code> → <code>minimal-coupling</code> 12, <code>gauge-fixing</code> → <code>fixing</code> 10. The spread is the point: no single word replaces the word, because the word was never naming one thing.</p>
+<h2 id="7-stage-5-case">7. Stage 5 — Case</h2>
+<p><strong>The rule.</strong> A match's replacement is cased from the match, not from the rule, and the case is read from the whole phrase:</p>
+<ul>
+<li>every word in capitals → the replacement in capitals;</li>
+<li>every word capitalised → the replacement in title case, with <code>of</code>, <code>the</code>, <code>and</code>, <code>in</code>, <code>to</code>, <code>for</code>, <code>with</code>, <code>on</code>, <code>a</code>, <code>an</code>, <code>or</code>, <code>as</code> left in lower case after the first word;</li>
+<li>otherwise → sentence case, capital only if the match began with one.</li>
+</ul>
+<p><strong>Why it is not cosmetic.</strong> Without it, a heading reads <code>The Symmetry trace</code> and a table cell reads <code>Representative-Dressed Fields</code> beside a lower-case neighbour. The table of contents of the site is assembled from these headings, so the case of a rule output is the case of a navigable entry.</p>
+<p><strong>Why it must be fixed early.</strong> Case is applied by every rule, so a correction to the case function invalidates every line the earlier passes touched. It was fixed on the third run, and the third run was a re-run from the snapshot rather than a patch, precisely for this reason.</p>
+<h2 id="8-stage-6-repair">8. Stage 6 — Repair</h2>
+<p><strong>Three collisions, each invisible in the residual count and visible in the pair census.</strong></p>
+<ol>
+<li><strong>A plural noun read as a verb.</strong> The rule <code>gauges → makes local</code> was written for "the theory gauges the symmetry" and fired on "across five gauges", which is a noun. The repair is the rule: the plural is a noun and takes <em>representatives</em>; the verb form is rare enough to be handled by hand.</li>
+<li><strong>A rule firing inside a longer word.</strong> <code>symmetric gauge → symmetric representative</code> fired inside <code>supersymmetric gauge theory</code>, which produced <code>representative theory</code> — a sentence about $\mathcal N=4$ that no longer named a connection theory. The repair is a negative lookahead, and the general lesson is that a spaced pattern must be anchored on a word boundary on the left.</li>
+<li><strong>A rule ordered after the rule that consumes it.</strong> <code>gauge-fix</code> ran before <code>gauge-fixed</code>, so <code>gauge-fixed</code> came out as <code>fix the representative ofed</code>. The repair is the order, and the general lesson is that every derived form is listed before its base form, or excluded by lookahead.</li>
+</ol>
+<p><strong>Four more, of the same family, each repaired in place.</strong> <code>the two makes local</code> (from a plural), <code>free and made local</code> in a table cell, <code>A vector-like made local sector</code>, and <code>the covariant makes local as two readings</code>. All four came from the verb rules producing a participle where an adjective was wanted.</p>
+<h2 id="9-stage-7-slugs-and-links">9. Stage 7 — Slugs and Links</h2>
+<p><strong>Order.</strong> The text is made right first. Then the file is renamed. Then every inbound link is rewritten. Renaming first would leave a corpus whose links point at files that no longer exist, and every later check would be noise.</p>
+<p><strong>The two lists.</strong> The physics pass renamed 22 slugs and then rewrote every file that pointed at one: 106 files on the first sweep, the rest on the wider one that included the two maths articles. The internal pass renamed 4 slugs — the tensor formalism of the connection sector, the locally covariant derivative, the non-hermitian adjoint outside the connection sector, the summary of the particle physics and connection fields — and relinked 2 files, one of them in <code>articles_external</code>.</p>
+<p><strong>The two guards.</strong> <code>missing</code> lists a link whose target does not exist. <code>unmapped</code> lists a file whose name still carries the word but which no rule renamed. Both must be empty, and both are printed rather than assumed.</p>
+<p><strong>What a slug may not become.</strong> It may not be invented. The renamed slug must be derived from the renamed title, because the menu, the <code>H1</code> and the url are three spellings of one entry, and the battery checks that the three agree.</p>
+<h2 id="10-the-battery">10. The Battery</h2>
+<p><strong>Nine checks, run in this order, each with a number that can be compared to the snapshot.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>check</th>
+<th>expectation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>residual outside protected spans, per area</td>
+<td>0 in physics prose, 0 in <code>physics.md</code>, 0 in internal prose</td>
+</tr>
+<tr>
+<td>2</td>
+<td>line count per file, against the snapshot</td>
+<td>equal, every file</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>$</code> count per line, against the snapshot</td>
+<td>equal, every changed line</td>
+</tr>
+<tr>
+<td>4</td>
+<td>changed word pairs, counted</td>
+<td>a short list, read in full, no pair that changes a claim</td>
+</tr>
+<tr>
+<td>5</td>
+<td>doubled words and spacing artefacts, new since the snapshot</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>menu link text against the article <code>H1</code></td>
+<td>equal, apart from the variants that predate the pass</td>
+</tr>
+<tr>
+<td>7</td>
+<td>broken links, repository wide</td>
+<td>the same links that were broken before</td>
+</tr>
+<tr>
+<td>8</td>
+<td>dangling <code>#anchors</code> in the internal notes</td>
+<td>0</td>
+</tr>
+<tr>
+<td>9</td>
+<td>residual in the built pages</td>
+<td>the citations only, matching check 1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Check 4 is the one that cannot be automated away.</strong> The census of pairs — <code>gauge → connection</code> 111, <code>→ representative</code> 108, <code>→ symmetry</code> 92 — is short enough to read, and it is where the three collisions of §8 were found. Checks 1, 2, 3 and 5 are the guards that make the read possible.</p>
+<p><strong>Checks 2 and 3 are the reason the pass may be trusted at all.</strong> A line count that moved means a rule merged or split a line. A <code>$</code> count that moved means a rule reached into math. Neither can be argued with.</p>
+<h2 id="11-what-the-method-cannot-do">11. What the Method Cannot Do</h2>
+<p><strong>It cannot reach zero.</strong> The citations remain, by design, and so do the two lines of <code>conceptual-conventions.md</code> whose subject is the word. A pass that reports 0 has damaged one of the two.</p>
+<p><strong>It cannot judge a quote.</strong> Four physics sentences quote a companion article: <code>"the framework cannot fix the gauge"</code> twice, <code>"physical amplitudes are gauge independent"</code>, <code>"the gauge representation is fixed by the spin"</code>. The protection set keeps them, and keeping them is correct while the companion still says that. Two of them no longer do: the companion now reads <code>the representative must be fixed from outside the algebra</code>. The quote is then stale, and staleness is a content question that no rule can see.</p>
+<p><strong>It cannot choose a word.</strong> <em>Frame</em> was rejected because the corpus already uses it for something else, and a replacement that collides is worse than the word it replaces. Each row of the NAMED and COMP tables is a decision of that kind, and the method records the decision without being able to derive it.</p>
+<p><strong>It cannot detect semantic drift on its own.</strong> <code>representative theory</code> for <code>gauge theory</code> reads as nonsense to a physicist and as a valid substitution to a regex. The pair census surfaced it only because a reader looked. Any future run needs that reader.</p>
+<h2 id="12-the-record-of-the-first-run">12. The Record of the First Run</h2>
+<p><strong>What was run.</strong> Three passes over the same snapshot, each with the same table, the last with the corrected case function and the repaired rule order. The physics corpus and its menu were rebuilt from the snapshot on the third run rather than patched, and <code>articles_maths</code> was never written to: two of its files changed by one link target each, when a physics article they point at was renamed.</p>
+<p><strong>What the site reported.</strong> 3 360 urls in each of the three sitemaps, before and after, because a rename moves a url without adding one. Each renamed slug leaves one deleted page and one written page in the deploy tree: 22 and 22 for the physics pass, 4 and 4 for the internal one. No menu entry was added or dropped.</p>
+<p><strong>What the counts say.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>measure</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>physics tokens removed</td>
+<td>996, from 287 files</td>
+</tr>
+<tr>
+<td>physics tokens remaining</td>
+<td>150, all protected</td>
+</tr>
+<tr>
+<td>menu tokens removed</td>
+<td>210</td>
+</tr>
+<tr>
+<td>internal tokens removed</td>
+<td>569</td>
+</tr>
+<tr>
+<td>internal tokens remaining</td>
+<td>7 outside <code>audits/</code>, plus the record files in <code>audits/</code></td>
+</tr>
+<tr>
+<td>maths tokens touched</td>
+<td>0 of 1 364</td>
+</tr>
+<tr>
+<td>slugs renamed</td>
+<td>22 physics, 4 internal</td>
+</tr>
+<tr>
+<td>files relinked</td>
+<td>106 physics, 2 maths (link target only), 2 cross-collection</td>
+</tr>
+<tr>
+<td>menu links verified</td>
+<td>716, 3 title variants that predate the pass</td>
+</tr>
+<tr>
+<td>broken links</td>
+<td>2, both predating the pass</td>
+</tr>
+<tr>
+<td>line-count changes</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>$</code>-count changes</td>
+<td>0</td>
+</tr>
+<tr>
+<td>new doubled words</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one number that is not zero and should not be.</strong> <code>audit-gauge.md</code> keeps its 127 tokens, and this file adds 89 of its own, because a method record has to spell out the word it moved. Both subjects are the purge, both sets of counts are its evidence, and rewriting them would delete the record they exist to preserve.</p>
+<h2 id="summary">Summary</h2>
+<p>The method is seven stages: snapshot, census, protect, ordered rules, case, repair, slugs. Its test is a battery of nine counts, of which two — line counts and <code>$</code> counts — are the ones that cannot be argued with, and one — the census of changed word pairs — is the one that needs a reader. It leaves the citations standing, leaves the maths untouched, and leaves the record of itself in place.</p>
+<p>The vocabulary it settled on is five words, and none of them is a synonym of the word it replaced: <em>connection</em> for the field, <em>representative</em> for the member of the orbit, <em>redundancy</em> for the freedom, <em>local symmetry</em> for the invariance, <em>condition</em> for what selects a representative. A purge that finds a single synonym has not understood the word it removed.</p>
+<h2 id="appendix-the-engine">Appendix: The Engine</h2>
+<p><strong>What this is.</strong> The four functions the stages of §5 to §7 need, without the rule table, which is the two tables above. It runs on the <code>.venv</code> interpreter of the repository, reads a file, writes it back only if it changed, and prints the residual of the result so that check 1 of the battery is read at the same moment as the write.</p>
+<pre><code class="language-python">import re, pathlib
+
+SPANS = [
+    r'\$\$[^$]*\$\$',                       # display math
+    r'\$[^$\n]*\$',                         # inline math
+    r'\]\([^)\n]*\)',                       # link target
+    r'&lt;a href="[^"]*"&gt;',                    # raw anchor tag
+    r'"[^"\n]*"',                           # quoted words
+    r'\*(?:Gauge Fields|Quantization of Gauge|Gauge Theories)[^*]*\*',  # cited works
+]
+
+def spans(line):
+    out = []
+    for pat in SPANS:
+        out += [m.span() for m in re.finditer(pat, line)]
+    out.sort()
+    held, end = [], -1
+    for a, b in out:                        # drop overlaps, keep the first
+        if a &gt;= end:
+            held.append((a, b)); end = b
+    return held
+
+SMALL = {'of', 'the', 'and', 'in', 'to', 'for', 'with', 'on', 'a', 'an', 'or', 'as'}
+
+def cap(match, new):
+    words = re.findall(r'[A-Za-z]+', match)
+    if not words:
+        return new
+    if len(words) &gt; 1 and all(w.isupper() for w in words):
+        return new.upper()
+    if len(words) &gt; 1 and all(w[0].isupper() for w in words):
+        parts = []
+        for i, tok in enumerate(re.split(r'(\s+)', new)):
+            if not tok.strip():
+                parts.append(tok); continue
+            w = '-'.join(p[:1].upper() + p[1:] for p in tok.split('-'))
+            parts.append(w.lower() if i and w.lower() in SMALL else w)
+        return ''.join(parts)
+    return new[0].upper() + new[1:] if words[0][0].isupper() else new
+
+def run(text, rules):
+    out, last = [], 0
+    for a, b in spans(text) + [(len(text), len(text))]:
+        seg = text[last:a]                  # the gap: the only writable part
+        for pat, rep in rules:
+            seg = re.sub(pat, lambda m: cap(m.group(0), rep), seg, flags=re.I)
+        out.append(seg)
+        out.append(text[a:b])               # the span: copied through
+        last = b
+    return ''.join(out)
+
+def purge(paths, rules, frozen=()):
+    for p in paths:
+        if p.name in frozen:
+            continue
+        text = p.read_text(errors='surrogateescape')
+        new = '\n'.join(
+            line if is_bibliography(line) else run(line, rules)
+            for line in text.split('\n'))
+        if new == text:
+            continue
+        p.write_text(new, errors='surrogateescape')
+        left = [m.group(0) for m in re.finditer(r'(?i)\bgaug\w*', new)]
+        print(f'{p.name}: {len(left)} left')
+</code></pre>
+<p><strong>The one function left out.</strong> <code>is_bibliography</code> is the coarse guard of §5, and it stands outside the engine on purpose: it decides whether a line is a citation before the line is cut, because the entry that has no protecting asterisks has no span to protect it.</p>
+<pre><code class="language-python">def is_bibliography(line):
+    s = line.lstrip()
+    return (s.startswith(('- ', '* ', '- [', '| [')) or bool(re.match(r'^\d+\. ', s))) \
+        and bool(re.search(r'\b(19|20)\d\d\b|arXiv', line))
+</code></pre>
+<p><strong>Why the loop is written this way.</strong> <code>run</code> is handed a gap, never a line. That is the whole of stage 3: a rule cannot damage a span because a rule never receives one. A version that protects by re-inserting placeholders has the same effect and one more failure mode, because a placeholder can collide with corpus text.</p>
+<p><strong>Two properties of the engine to know before writing a rule.</strong></p>
+<ol>
+<li><strong>A replacement is literal.</strong> The case function rebuilds the text from the match and the replacement, so a group reference such as <code>\1</code> is printed as the two characters, not expanded. Write one rule per form instead of one rule with a group, which is why the table of §6 lists <code>gauge-fixed</code> before <code>gauge-fix</code> rather than folding them into one pattern.</li>
+<li><strong>The case function reads the match, not the rule.</strong> A rule may therefore be written in lower case and still fire correctly on a capitalised heading, and a rule written in title case will be de-capitalised on a lower-case site. The rule table carries no capital letters for that reason, except where the corpus's own title is capitalised phrase by phrase.</li>
+</ol>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

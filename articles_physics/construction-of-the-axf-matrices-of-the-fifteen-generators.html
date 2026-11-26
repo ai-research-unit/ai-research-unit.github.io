@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="construction-of-the-axf-matrices-of-the-fifteen-generators-every-direction-of-math0-printed"><strong>Construction of the AXF Matrices of the Fifteen Generators: Every Direction of $\mathfrak{su}(4)$, Printed</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>Everything on this page is built from six arrays.</strong> The six are the axis-free arrays of left and right multiplication by the three vector units $\vec e_x,\vec e_y,\vec e_z$. With the two identities of the scalar unit they are eight arrays, and every one of the fifteen generators is one of three operations applied to them: <strong>halve one array</strong>, <strong>multiply one array by $i$</strong>, or <strong>add and subtract two arrays</strong> (three, once, for the corner). No array below is chosen, and no array below is a Pauli array or a gamma array. <strong>The six halved arrays are printed here too, and they are not generators</strong>: they are the six planes of $\mathfrak{so}(4)$, a real subalgebra of the fifteen, and §<em>Part I</em> states exactly what they are.</p>
+<p><strong>Everything on this page is built from six arrays.</strong> The six are the axis-free arrays of left and right multiplication by the three vector units $\vec e_x,\vec e_y,\vec e_z$. With the two identities of the scalar unit they are eight arrays, and every one of the fifteen generators is one of three operations applied to them: <strong>halve one array</strong>, <strong>multiply one array by $i$</strong>, or <strong>add and subtract two arrays</strong> (two, once, for each diagonal). No array below is chosen, and no array below is a Pauli array or a gamma array. <strong>The six halved arrays are printed here too, and they are not generators</strong>: they are the six planes of $\mathfrak{so}(4)$, a real subalgebra of the fifteen, and §<em>Part I</em> states exactly what they are.</p>
 <p><strong>The order of the article is the order of the construction.</strong> §<em>Part I</em> prints the six arrays of $\mathfrak{so}(4)$, which are the raw arrays halved. §<em>Part II</em> builds the fifteen of $\mathfrak{su}(4)$ in three steps: the eight arrays, the sixteen words, the six pairs. §<em>Part III</em> reads the result back: one table of properties, one boson per array, and the mass each one gets.</p>
 <p><strong>The counts, in one display.</strong>
 $$
@@ -326,19 +326,24 @@ $$</p>
 <p>$$
 A_{yz}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0\end{pmatrix},\qquad iS_{yz}=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i \\ 0 &amp; 0 &amp; i &amp; 0\end{pmatrix}
 $$</p>
-<p><strong>And the three diagonals, which are not paired by the rule.</strong> The diagonal words are $W_{jj}$, so they are taken whole, in one sum and two successive differences, and <strong>all three carry the factor $i$ of the nine</strong>:
+<p><strong>And the three diagonals, which the same rule produces.</strong> The diagonal takes the two words of the pair $\{t,j\}$ and their half difference, in the three words $W_{tt}$, $W_{jj}$, and <strong>all three carry the factor $i$ of the nine</strong>:
 $$
-iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr),\qquad
-d_2=\tfrac i2\bigl(W_{yy}-W_{xx}\bigr),\qquad
-d_3=\tfrac i2\bigl(W_{zz}-W_{yy}\bigr).
+M_j=\tfrac12\bigl(W_{tt}-W_{jj}\bigr),\qquad G_j=iM_j,\qquad j=x,y,z .
 $$
 $$
-iD=\begin{pmatrix}-3i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i\end{pmatrix}
+iM_x=\begin{pmatrix}-i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix},\qquad iM_y=\begin{pmatrix}-i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix},\qquad iM_z=\begin{pmatrix}-i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i\end{pmatrix}
 $$</p>
-<p>$$
-d_2=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix},\qquad d_3=\begin{pmatrix}0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -i\end{pmatrix}
-$$</p>
-<p><strong>The factor $i$ on the diagonals is the factor the nine planes carry, and a construction that drops it produces a real Hermitian array that is not in $\mathfrak{su}(4)$.</strong> Written without the $i$, $D=W_{xx}+W_{yy}+W_{zz}$ is the real diagonal $\operatorname{diag}(-3,1,1,1)$; <strong>the generator is $iD$, and $D$ is the array that carries $B-L$</strong>, with $B-L=\tfrac13D$ on $\mathbf4$.</p>
+<p><strong>The three are the frame, and the trace direction is their sum and not a fourth member.</strong>
+$$
+iM_x+iM_y+iM_z=iD=\begin{pmatrix}-3i &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; i\end{pmatrix}
+$$
+<strong>The permutation of $x,y,z$ permutes the three of them</strong>, because $W_{tt}$ is common to all three and each carries only its own $W_{jj}$; the sum, being fixed, is the direction the breaking singles out. <a href="the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html">The Symmetric Diagonal Frame</a> takes this apart, including why $\mathfrak{su}(3)$ cannot do the same.</p>
+<p><strong>The factor $i$ on the diagonals is the factor the nine planes carry, and a construction that drops it produces a real Hermitian array that is not in $\mathfrak{su}(4)$.</strong> Written without the $i$, $M_j=E_{jj}-E_{tt}$ is a real diagonal with entries $\pm1$ and $0$, and $D=\sum_jM_j$ is the real diagonal $\operatorname{diag}(-3,1,1,1)$; <strong>the generators are $iM_j$, the generator of the trace direction is $iD$, and $D$ is the array that carries $B-L$</strong>, with $B-L=\tfrac13D$ on $\mathbf4$.</p>
+<p><strong>The broken-phase names are combinations of the frame, and the two relations are the whole change of label.</strong>
+$$
+d_2=\tfrac i2\bigl(M_x-M_y\bigr),\qquad d_3=\tfrac i2\bigl(M_y-M_z\bigr),
+$$
+so the two colour diagonals $T^{c}_{3}$, $T^{c}_{8}$ are the two differences and $B'$ is the sum, exactly as before; what changes is that the frame does not put $iD$ in the list.</p>
 <p><strong>One array worked from end to end, because the mechanism is worth seeing once.</strong>
 $$
 \tfrac12\bigl(W_{tx}+W_{xt}\bigr)=\tfrac12\left[\begin{pmatrix}0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; -1 &amp; 0\end{pmatrix}+\begin{pmatrix}0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 1 &amp; 0\end{pmatrix}\right]=\begin{pmatrix}0 &amp; -1 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0\end{pmatrix}=-A_{tx}
@@ -359,7 +364,7 @@ $$
 <strong>The $\epsilon$ is a convention and not a sign of the algebra.</strong> $A_{bc}$ is written with $b&lt;c$ throughout, and $\epsilon_{abc}=+1$ when $(a,b,c)$ is a cyclic order of $(x,y,z)$. For $a=x$ and $a=z$ the cyclic pair is already ascending, so the second line reads with a minus; for $a=y$ the cyclic pair is $(z,x)$ and the ascending one is $(x,z)$, so the same array carries the opposite sign. <strong>Write the pairs in cyclic order and $\epsilon=+1$ everywhere; write them with $b&lt;c$ and $\epsilon$ is the price.</strong></p>
 <p><strong>Check one, in four cells.</strong> The two halves agree on the $\{t,a\}$ block, so their sum keeps it doubled and its half is the leptoquark plane; they differ on the $\{b,c\}$ block, so their difference keeps it doubled and its half is the colour plane. <strong>The half in the definition of $T$ is exactly what makes those two lines integral.</strong></p>
 <p><strong>Fifteen generators, six halves.</strong> The six relations are independent, so the six add no direction: the rank over $\mathbb{Q}(i)$ — equivalently over $\mathbb{R}$, the entries being Gaussian integers — is fifteen with them and fifteen without them, and each of the six is distinct from the fifteen. <strong>Both statements are needed and neither is a defect</strong>: one array per generator, and six arrays that are two-term sums of the other fifteen.</p>
-<p><strong>The normalisation, said once.</strong> The fifteen are Gaussian-integer arrays, every entry in $\{0,\pm1,\pm i,\pm3i\}$ — the only entry of modulus $\ne1$ is the $-3i$ of the corner — with $\operatorname{tr}(X^{\dagger}X)=2$, except the corner, which has $12$. The six are real half-integer arrays, entries in $\{0,\pm\tfrac12\}$, with $1$. <strong>No display mixes them</strong>, and every relation above holds with the halves as written.</p>
+<p><strong>The normalisation, said once.</strong> The fifteen are Gaussian-integer arrays, every entry in $\{0,\pm1,\pm i\}$, with $\operatorname{tr}(X^{\dagger}X)=2$ on all fifteen. <strong>The entry $-3$ survives only in the sum</strong>, $D=M_x+M_y+M_z$, which is not a generator of the list, and its norm $|D|^{2}=12$ is the norm of that sum and not of any member. The six are real half-integer arrays, entries in $\{0,\pm\tfrac12\}$, with $1$. <strong>No display mixes them</strong>, and every relation above holds with the halves as written.</p>
 <h2 id="part-iii-the-properties-of-the-fifteen-and-the-boson-in-each">Part III. The Properties of the Fifteen, and the Boson in Each</h2>
 <h3 id="one-table-of-properties">One Table of Properties</h3>
 <p><strong>Six families, and every numeric entry in the table is recomputed in §<em>The Checks</em>.</strong></p>
@@ -395,22 +400,22 @@ $$
 <td>complex, unitary, $\det=1$</td>
 </tr>
 <tr>
-<td>the corner</td>
-<td>$iD$, $1$</td>
-<td>$-3i$, $i$</td>
-<td>$4$</td>
-<td>$12$</td>
-<td>$-3i,i,i,i$</td>
-<td>four phases</td>
-</tr>
-<tr>
-<td>colour diagonals</td>
-<td>$d_2,d_3$, $2$</td>
+<td>diagonal frame</td>
+<td>$iM_x,iM_y,iM_z$, $3$</td>
 <td>$0,\pm i$</td>
 <td>$2$</td>
 <td>$2$</td>
 <td>$0,0,\pm i$</td>
 <td>two phases, two fixed lines</td>
+</tr>
+<tr>
+<td>the sum of the frame</td>
+<td>$iD=i\sum_jM_j$, not listed</td>
+<td>$-3i$, $i$</td>
+<td>$4$</td>
+<td>—</td>
+<td>$-3i,i,i,i$</td>
+<td>four phases</td>
 </tr>
 <tr>
 <td>left triple</td>
@@ -439,11 +444,15 @@ $$
 \exp\bigl(\theta T^{L}_{x}\bigr)e_t=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,e_x .
 $$
 <strong>At $\theta=0.4$ the first gives $(0.921061,\,-0.389418,\,0,\,0)$</strong>, and $\exp(\theta A_{tx})$ fixes $e_y$ and $e_z$. <strong>The half-angle in the second is the half in the definition of $T^{L}_{x}$ and nothing else.</strong> $T^{L}_{x}$ turns both its planes by $\tfrac{\theta}{2}$ in the same sense; $T^{R}_{x}$ turns $\{t,x\}$ by $\tfrac{\theta}{2}$ and $\{y,z\}$ by $-\tfrac{\theta}{2}$.</p>
-<p><strong>The Gram, and the one entry that is not orthogonal.</strong> The fifteen are pairwise orthogonal in the trace form except one entry,
+<p><strong>The Gram, and the three entries that are not orthogonal.</strong> The fifteen are pairwise orthogonal in the trace form except the three of the frame,
 $$
-\operatorname{tr}(d_2d_3)=+1,
+\operatorname{tr}\bigl(M_jM_k\bigr)=2\delta_{jk}+\bigl(1-\delta_{jk}\bigr),\qquad \operatorname{tr}\bigl(t_jt_k\bigr)=\tfrac12\delta_{jk}+\tfrac14\bigl(1-\delta_{jk}\bigr),
 $$
-<strong>which is the array form of the statement that a colour basis is a choice and the algebra is not.</strong> The six halves are not orthogonal to the fifteen, and cannot be: they are sums of them. Their overlap is exactly the two planes they are made of,
+<strong>which is the array form of the statement that a colour basis is a choice and the algebra is not, and the price of choosing the symmetric one.</strong> The orthogonal frame is the same three directions rotated by an integer matrix,
+$$
+A_j=W_{jj}=\sum_kM_k-2M_j,\qquad \operatorname{tr}\bigl(A_jA_k\bigr)=4\delta_{jk},\qquad \operatorname{tr}\bigl(-\tfrac{A_j}{\sqrt8}\,,\,-\tfrac{A_k}{\sqrt8}\bigr)=\tfrac12\delta_{jk},
+$$
+<strong>so the trace form is diagonal on $A$ and sheared on $M$, and the passage from one to the other is $J-2\mathbb 1$, which is invertible.</strong> The six halves are not orthogonal to the fifteen, and cannot be: they are sums of them. Their overlap is exactly the two planes they are made of,
 $$
 \operatorname{tr}\bigl(T^{L}_{a}A_{ta}\bigr)=1,\qquad \operatorname{tr}\bigl(T^{L}_{a}A_{bc}\bigr)=\epsilon_{abc},
 $$
@@ -515,16 +524,16 @@ with $\operatorname{tr}(T^{L}_{a}T^{L}_{b})=-\delta_{ab}$ and $\operatorname{tr}
 <td>six colour–colour arrays: the off-diagonal gluons below $M_C$</td>
 </tr>
 <tr>
-<td>the colour diagonal</td>
-<td>$3$ cells, $2$ generators</td>
-<td>$d_2,d_3$</td>
-<td>$T^{c}_{3}$, $T^{c}_{8}$</td>
+<td>the diagonal frame</td>
+<td>$4$ cells, $3$ generators</td>
+<td>$iM_j$</td>
+<td>the frame; below $M_C$ the two differences $T^{c}_{3}$, $T^{c}_{8}$ and the sum $B'$</td>
 </tr>
 <tr>
-<td>the corner</td>
+<td>the corner cell</td>
 <td>$1$</td>
-<td>$iD$</td>
-<td>$B'$, the $B-L$ boson</td>
+<td>none: the trace</td>
+<td>not a generator, and $iD$ is the sum of the frame</td>
 </tr>
 <tr>
 <td>not on the grid</td>
@@ -594,14 +603,20 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$d_2$, $d_3$</td>
-<td>the colour diagonal</td>
+<td>$iM_j$, $j=x,y,z$</td>
+<td>the diagonal, four cells</td>
+<td>the frame: above $M_C$ three symmetric directions</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$d_2=\tfrac i2(M_x-M_y)$, $d_3=\tfrac i2(M_y-M_z)$</td>
+<td>combinations of the frame</td>
 <td>$T^{c}_{3}$, $T^{c}_{8}$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$iD$</td>
-<td>$(t,t)$</td>
+<td>$iD=i\sum_jM_j$</td>
+<td>the sum of the frame</td>
 <td>$B'$</td>
 <td>$0$ at the first breaking; an ingredient of $\gamma$, $Z$, $Z_R$</td>
 </tr>
@@ -628,7 +643,7 @@ $$
 $$
 M^{2}=\operatorname{diag}\bigl(\underbrace{32v^{2},\dots,32v^{2}}_{6},\underbrace{0,\dots,0}_{9}\bigr).
 $$</p>
-<p><strong>Read $32$ off the eigenvalues.</strong> $32=2\times4^{2}$, and $4=1-(-3)$ is a colour eigenvalue minus the lepton eigenvalue. <strong>Colour is unbroken because $D$ is a multiple of the identity on the colour triple</strong>, and the corner is untouched because $[iD,D]=0$; the nine zeros are those two facts and nothing else.</p>
+<p><strong>Read $32$ off the eigenvalues.</strong> $32=2\times4^{2}$, and $4=1-(-3)$ is a colour eigenvalue minus the lepton eigenvalue. <strong>Colour is unbroken because $D$ is a multiple of the identity on the colour triple</strong>, and every diagonal direction is untouched because $[iM_j,D]=0$ for all three, so the corner is too; the nine zeros are those two facts and nothing else.</p>
 <p><strong>The matrix has its own article.</strong> <a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">The Breaking of the Primordial Force</a> derives the matrix from the double commutator, states the commutator lemma that produces it, names the nine-dimensional kernel as $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, and gives the spectrum at a general vacuum.</p>
 <h3 id="three-things-the-arrays-do-not-do">Three Things the Arrays Do Not Do</h3>
 <p><strong>They do not boost.</strong> No exponential of the fifteen is a Lorentz boost. The generator of the boost in a plane is the Hermitian $-i$ times the cell, and it is not in the algebra; <a href="the-rotors-of-the-fifteen-generators-three-turn-space-three-turn-the-quartet-and-no-boost-is-in-the-group.html">The Rotors of the Fifteen Generators</a> proves it three ways.</p>
@@ -734,7 +749,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\operatorname{tr}(X^{\dagger}X)$ of the fifteen</td>
-<td>$2$ on twelve, $12$ on $iD$</td>
+<td>$2$ on all fifteen</td>
+</tr>
+<tr>
+<td>$iM_x+iM_y+iM_z-iD$</td>
+<td>$0$, exact</td>
 </tr>
 <tr>
 <td>Gram of the fifteen off-diagonal</td>
@@ -809,11 +828,15 @@ $$</p>
 </tr>
 <tr>
 <td>$D=\operatorname{diag}(-3,1,1,1)$</td>
-<td>the corner's diagonal, with $B-L=\tfrac13D$</td>
+<td>$M_x+M_y+M_z$, the direction that carries $B-L=\tfrac13D$</td>
 </tr>
 <tr>
-<td>$iD,d_2,d_3$</td>
-<td>the three diagonal generators</td>
+<td>$iM_j$, $j=x,y,z$</td>
+<td>the three diagonal generators, the symmetric frame</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>$i\sum_jM_j$, the trace direction, not one of the fifteen</td>
 </tr>
 <tr>
 <td>$T^{L}_{a}=\tfrac12\ell_a$</td>
