@@ -54,7 +54,7 @@ The Dirac equation carries more structure than the other three objects and the c
 - [The Dirac Oscillator in Biquaternionic Form](the-dirac-oscillator-in-biquaternionic-form.html)
 - [Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation](bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html)
 
-### Particles of spin 1 and above
+### Particles of spin 1
 
 - [Dual Equivalence of the Dirac and Topologically Massive Connections](dual-equivalence-of-the-dirac-and-topologically-massive-connections.html)
 
@@ -62,7 +62,7 @@ The Dirac equation carries more structure than the other three objects and the c
 
 - [The Spin-Half Path Integral in Biquaternionic Form](the-spin-half-path-integral-in-biquaternionic-form.html)
 
-### Particles of spin 1 and above
+### Particles of higher spin
 
 - [Two Spin-Half Particles in Biquaternionic Form](two-spin-half-particles-in-biquaternionic-form.html)
 

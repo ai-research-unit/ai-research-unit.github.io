@@ -16,7 +16,7 @@ The Proca equation is the massive vector object, and it is the only one of the f
 
 - [Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom](biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html)
 
-### Particles of spin 1 and above
+### Particles of spin 1
 
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html)
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html)
@@ -38,14 +38,14 @@ The Proca equation is the massive vector object, and it is the only one of the f
 - [The Lagrangian and the Coupled Proca Equation in Momentum Space](the-lagrangian-and-the-coupled-proca-equation-in-momentum-space.html)
 - [Degenerate Solutions of the Biquaternionic Proca Equation](degenerate-solutions-of-the-biquaternionic-proca-equation.html)
 
-### Spin 1 and above origin: effects and non-quantum limits
+### Spin 1 origin: effects and non-quantum limits
 
 - [The Proca Equation in the Non-Quantum Limit](the-proca-equation-in-the-non-quantum-limit.html)
 - [The Lagrangian and the Proca Equation in the Non-Quantum Limit](the-lagrangian-and-the-proca-equation-in-the-non-quantum-limit.html)
 - [The Coupled Proca Equation in the Non-Quantum Limit](the-coupled-proca-equation-in-the-non-quantum-limit.html)
 - [The Lagrangian and the Coupled Proca Equation in the Non-Quantum Limit](the-lagrangian-and-the-coupled-proca-equation-in-the-non-quantum-limit.html)
 
-### Particles of spin 1 and above
+### Particles of spin 1
 
 - [The Spin-One Fluid](the-spin-one-fluid.html)
 - [The Lagrangian and the Spin-One Fluid](the-lagrangian-and-the-spin-one-fluid.html)
@@ -54,7 +54,7 @@ The Proca equation is the massive vector object, and it is the only one of the f
 - [The Lagrangian and the Charged Spin-One Fluid](the-lagrangian-and-the-charged-spin-one-fluid.html)
 - [The Fourier Transform and the Charged Spin-One Fluid: The Constraint Is the Amplitude](the-fourier-transform-and-the-charged-spin-one-fluid.html)
 
-### Particles of spin 1 and above
+### Particles of spin 1
 
 - [Canonical Quantization of the Biquaternion Proca Field](canonical-quantization-of-the-biquaternion-proca-field.html)
 
