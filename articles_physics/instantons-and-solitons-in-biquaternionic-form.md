@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This article is the strong sector's application of a general theory.** The density, its primitivity, the self-duality condition and the Bogomolny bound are stated with no sector attached in [Topological Charge, Self-Duality and the Bogomolny Bound in Biquaternionic Form](topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.html). What is added here is the strong sector's content: the objects are the non-perturbative configurations of the colour connection theory, and the question the article answers is what the framework's own invariants supply for them and what they do not.
+**This article is the strong sector's account of the general theory of topological charge.** It states the density and its primitivity, the self-duality condition and the Bogomolny bound, and it then does the part that no sector-free statement can do: it sets the objects in the framework's compact factor, exhibits the solution, and answers what the framework's own invariants supply for them and what they do not. The general statements are proved here rather than cited elsewhere, so the article can be read on its own; the sector's content is the non-perturbative configurations of the colour connection theory.
 
 The companion article *Non-Abelian Connections in Biquaternionic Form* closes with an open question: whether the biquaternion framework supplies a preferred connection with finite action and nonzero topological charge, and whether the zero-divisor structure of $\mathbb{B}_{\Phi}$ plays any role in it. This article takes that question up. Its subject is **localised finite-energy solutions** of the framework's field equations, and it treats the two families that the phrase covers separately, because they differ in three things at once — the sign of the star, boundary conditions, and what makes them stable.
 
@@ -183,13 +183,15 @@ $$
 
 so every self-dual finite-action field is automatically a source-free solution of the second-order equation. The non-abelian statement is the same with $\partial/\partial R_{\imath}$ replaced by the covariant derivative $D_{\imath}=\partial/\partial R_{\imath}+i\kappa[\mathcal{A}_{\imath},\;\cdot\;]$: the Bianchi identity is $D_{[\imath}F_{\jmath\rho]}=0$, equivalently $D_{\imath}\star F_{\imath\jmath}=0$, and self-duality turns it into the Yang–Mills equation $D_{\imath} F_{\imath\jmath}=0$. The economy is exact: a second-order equation has been replaced by a first-order one, and every solution of the first-order equation is a solution of the second-order one. The converse is false — not every solution is self-dual — so self-duality selects a distinguished subclass, the one that is also a minimiser, as the next paragraph shows.
 
-**Self-duality saturates the Bogomolny bound.** The pointwise identity $|F\mp\star F|^2=2\,\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})\mp2\,\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}\star F_{\imath\jmath})$ was verified symbolically on a generic Euclidean field strength, both signs; the left side is a sum of squares, so its integral is non-negative, and that integral is the completing-the-square argument of [Topological Charge, Self-Duality and the Bogomolny Bound in Biquaternionic Form](topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.html). With $\int\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}\star F_{\imath\jmath})=16\pi^2|Ϙ|$ and the Euclidean action $S=\frac{1}{2g^2}\int\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ of the non-abelian sector (Hermitian generators, $2\,\mathrm{Sc}(T_aT_b)=\tfrac12\delta_{ab}$),
+**Self-duality saturates the Bogomolny bound.** The pointwise identity $|F\mp\star F|^2=2\,\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})\mp2\,\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}\star F_{\imath\jmath})$ was verified symbolically on a generic Euclidean field strength, both signs; the left side is a sum of squares, so its integral is non-negative, and that integral is the completing-the-square argument. With $\int\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}\star F_{\imath\jmath})=16\pi^2|Ϙ|$ and the Euclidean action $S=\frac{1}{2g^2}\int\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ of the non-abelian sector (Hermitian generators, $2\,\mathrm{Sc}(T_aT_b)=\tfrac12\delta_{ab}$),
 
 $$
 \boxed{\;S\;\ge\;\frac{8\pi^2}{g^2}\,|Ϙ|\;},
 $$
 
 with equality if and only if $F=\pm\star F$. The bound is the Bogomolny argument transposed from the Lorentzian soliton to the Euclidean instanton: the *same* completing-the-square mechanism that will be described in Section *Solitons: What Stability Requires* is what makes the instanton the minimiser of the action in its topological sector. Two remarks complete the statement. First, the minimising configuration is stable within the sector: any finite-energy variation that keeps the boundary data fixed keeps $Ϙ$, and the bound says the action cannot fall below $\frac{8\pi^2}{g^2}|Ϙ|$, so the self-dual configuration is the bottom of its sector. Second, the bound is a lower bound, not an existence theorem; the existence of the minimiser is the separate content of the explicit solution of the next section.
+
+**What the bound buys.** Three things, and each is a reason the semiclassical expansion is possible at all. Existence can be shown by solving a first-order equation rather than a second-order one, which is what makes the BPST solution findable by hand. Stability in a fixed sector needs no potential, because the bound comes from the topology and the coupling and not from a scalar self-interaction. And the value of the action in a sector is fixed by the charge and the coupling alone, $S_{\text{min}}=8\pi^2|Ϙ|/g^2$, which is the number the weight $e^{-S}$ of the next article's dilute gas puts in its exponent.
 
 ## Do the Framework's Invariants Supply the Density?
 
@@ -389,3 +391,9 @@ This article has treated the localised finite-energy solutions of the biquaterni
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the sector in which the $\mathrm{SU}(2)$ factor and the Lorentzian star live.
 - [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the complementary sector.
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the gravitational background that the topological charge is independent of.
+
+The three papers the subject rests on.
+
+- A. A. Belavin, A. M. Polyakov, A. S. Schwarz and Yu. S. Tyupkin, "Pseudoparticle Solutions of the Yang–Mills Equations," *Physics Letters B* **59** (1975) 85–87, the BPST instanton.
+- E. B. Bogomolny, "Stability of Classical Solutions," *Soviet Journal of Nuclear Physics* **24** (1976) 449, the bound.
+- S. Coleman, *Aspects of Symmetry*, Chapter 7, for the topological charge and its consequences.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This article is the electroweak application of a general derivation.** The measure, the Jacobian and the regulated trace are stated with no sector attached in [The Path-Integral Anomaly and the Fujikawa Measure in Biquaternionic Form](the-path-integral-anomaly-and-the-fujikawa-measure-in-biquaternionic-form.html). What is added here is the electroweak content: the chiral spectrum of one generation, the representation each field carries, and the four conditions the anomaly must satisfy.
+**This article carries the Fujikawa derivation itself, and then runs it on one generation.** The measure, the Jacobian and the regulated trace are developed here rather than taken from a sector-free statement; what the sector adds is the content: the chiral spectrum of one generation, the representation each field carries, and the four conditions the anomaly must satisfy.
 
 The **Fujikawa method** derives the axial anomaly from the path integral rather than from a diagram. The observation is that the fermion measure is not invariant under a chiral rotation of the integration variables: the rotation is a linear change of variables whose Jacobian is a formal determinant, the determinant is infinite, and when it is regulated and evaluated it is not one. The anomaly is that Jacobian. The method makes the anomaly look like what it is — a property of the measure, not of the equations of motion — and it exhibits the coefficient as the weighted trace of the pseudoscalar against the heat kernel of the fermion operator.
 
@@ -112,7 +112,7 @@ Z[A] = \int \mathcal{D}\tilde{Ξ}\,\mathcal{D}\tilde{Ξ}^{\dagger}\;\exp\!\left(
 $$
 and the integral is Gaussian: it evaluates to the determinant of the operator,
 $$
-Z[A] = \det\begin{pmatrix}-2\pi\nu_m&\tilde D\ \tilde D^{\natural}&-2\pi\nu_m\end{pmatrix} .
+Z[A] = \det\begin{pmatrix}-2\pi\nu_m&\tilde D \\ \tilde D^{\natural} & -2\pi\nu_m\end{pmatrix} .
 $$
 The bosonic and fermionic measures, the Gaussian integration and the determinant are the subject of the corpus's fermionic path-integral article; that article constructs them and this one takes them as given. What the algebra supplies here is the operator whose determinant is taken: the two covariant gradients in one block array, whose determinant reduces to $\Box_\Phi-4\pi^{2}\nu_m^{2}$ on one value and whose value is the product over modes of $\det\ell_{-2\pi i\tilde\Upsilon_{\Phi}}=(4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2)^2$ for one chiral value — the square of the symbol of the d'Alembertian, which is the Dirac determinant — and the square of that for the pair, one factor for each value. The mass is the coefficient that the condensate of the companion article fixes.
 
@@ -160,7 +160,7 @@ j_{5\imath}=\tilde{Ξ}^{\dagger}\,\omega\,\vec e_{\imath}\,\tilde{Ξ},
 $$
 with the pseudoscalar between the two fields and the unit on the second factor. The vector current is the same bilinear without the pseudoscalar, $j_{\imath}=\tilde{Ξ}^{\dagger}\vec e_{\imath}\tilde{Ξ}$, and the two rotate into one another as a two-vector: recomputed at $\alpha=0.41$ on a random complex field, the vector current of the rotated field equals $\cos2\alpha\,j_{\imath}+\sin2\alpha\,j_{5\imath}$, and the axial current of the rotated field equals $-\sin2\alpha\,j_{\imath}+\cos2\alpha\,j_{5\imath}$, both to the five decimals printed. The *local* rotation is not a symmetry — it fails by exactly the current term displayed above, and that failure is what identifies the current. The Ward identity is the global statement read locally. The quantum question is whether the *measure* is invariant under the same change of variables. It is not, and the failure is the anomaly.
 
-**Why the measure can fail.** A change of integration variables multiplies the measure by the Jacobian determinant whatever the integrand is, so a symmetry of the action is a symmetry of the integral only if that determinant is one. **The general statement, its consequences and the coefficient it produces for a field of no particular sector are the machinery of [The Path-Integral Anomaly and the Fujikawa Measure in Biquaternionic Form](the-path-integral-anomaly-and-the-fujikawa-measure-in-biquaternionic-form.html).** What is added here is the operator inside the determinant: the framework's two covariant gradients, the side of the insertion, and the fact, proved in §*Why the Symbol Is Not an Algebra Trace*, that the weighted trace vanishes identically in $\mathbb{B}$. That is why the diagrammatic and path-integral derivations must agree, and it is why they agree on the general form and not on the framework's value.
+**Why the measure can fail.** A change of integration variables multiplies the measure by the Jacobian determinant whatever the integrand is, so a symmetry of the action is a symmetry of the integral only if that determinant is one. **The general statement, its consequences and the coefficient it produces for a field of no particular sector are the subject of §*The Measure and the Chiral Rotation* and §*The Jacobian and the Regulated Trace*.** What is added here is the operator inside the determinant: the framework's two covariant gradients, the side of the insertion, and the fact, proved in §*Why the Symbol Is Not an Algebra Trace*, that the weighted trace vanishes identically in $\mathbb{B}$. That is why the diagrammatic and path-integral derivations must agree, and it is why they agree on the general form and not on the framework's value.
 
 ## The Jacobian and the Regulated Trace
 
@@ -314,6 +314,8 @@ so the axial charge transported in a background is twice the index, the minus be
 
 **The index density.** The relation above can be written locally. The four-dimensional index density is proportional to $\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}$, the second Chern character of the connection, and its integral is the topological charge whose biquaternion form the companion article on instantons computes from $I_2$. The chain is therefore: the rotation inserts the pseudoscalar; the symbol's bivector sector, on the cone, keeps one null polarisation and annihilates the rest; the field-strength contraction turns that survivor into the second invariant; and the integral of the invariant is the winding of the material-sector connection. Every link but the second is a statement the algebra makes, and the second is the one §*Why the Symbol Is Not an Algebra Trace* withholds.
 
+**The chiral anomaly and the gauge anomaly.** Two anomalies are read off the same determinant, and they play opposite roles. The **chiral anomaly** is the failure of a symmetry the classical action has and the measure does not: the axial current is not conserved, and the non-conservation is a physical effect, one loop exact and unrenormalised. The **gauge anomaly** is the failure of a symmetry the consistency of the theory requires: a current coupled to a connection whose divergence does not vanish makes the longitudinal part of the connection propagate, and the theory loses unitarity and renormalisability unless the anomalous terms cancel between the fields that circulate. The Fujikawa computation gives both, because both are the trace of the same insertion against the same heat kernel; what distinguishes them is what the current couples to. The cancellation conditions of the second kind are a property of a spectrum and a representation, so they are stated there and not here — the electroweak count of one generation is the corpus's instance.
+
 ## The Chiral Rotation in the Biquaternion Language
 
 **The rotation is the axial symmetry of the linear chiral pair.** The rotation $\tilde{Ξ}\mapsto\tilde{Ξ} e^{\theta_{\mathrm{axr}}\omega}$ rotates the parts of the two values in opposite directions, because the multiplier is $-1$ on $\tilde{Ξ}_{L}$ and $+1$ on $\tilde{Ξ}_{R}$ in the grading sense, and multiplies them by $e^{+i\theta_{\mathrm{axr}}}$ and $e^{-i\theta_{\mathrm{axr}}}$ in the phase sense. It is the axial phase whose breaking was treated in the companion article on the condensate; there the breaking was spontaneous and belonged to the vacuum, here it is explicit and quantum-mechanical. The two are different phenomena acting on the same symmetry, and the framework keeps them distinct: the condensate supplies a coefficient to the linear chiral pair, and the anomaly violates the axial current even when the coefficient is zero.
@@ -382,7 +384,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\tilde{Ξ}_{L},\tilde{Ξ}_{R}$ | The two values: the eigenspaces of right multiplication by $\vec e_z$ with eigenvalues $-i$ and $+i$, each of complex dimension two |
 | $\mathrm{tr}$ | The trace of a complex-linear operator on the four coefficients of the field |
 | $\ell_h,\ \rho_\omega$ | Left multiplication by $h$, right multiplication by the pseudoscalar; $\rho_\omega$ is the measure's insertion, and $\ell_h\rho_\omega$ is the one two-sided shape the article uses |
-| $\begin{pmatrix}-\nu_m&\tilde D\ \tilde D^{\natural}&-\nu_m\end{pmatrix}$ | The two covariant lines of the pair in one block array; a matrix, not an element |
+| $\begin{pmatrix}-\nu_m & \tilde D \\ \tilde D^{\natural} & -\nu_m\end{pmatrix}$ | The two covariant lines of the pair in one block array; a matrix, not an element |
 | $\mathcal{H}=-(\tilde D\tilde D^{\natural})_E$ | The continued regulator operator, whose scalar part is $-\Box_\Phi$ |
 | $a(x)=-\dfrac{ϙ^2}{32\pi^2}\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}$ | Regulated trace density, the index density |
 | $A(x)=2a(x)=-\dfrac{ϙ^2}{16\pi^2}\epsilon_{\imath\jmath\rho\sigma}F_{\imath\jmath}F_{\rho\sigma}$ | Anomaly density (Fujikawa and Adler–Bell–Jackiw) |
@@ -390,7 +392,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\mathcal{D}\tilde{Ξ}\,\mathcal{D}\tilde{Ξ}^{\dagger}$ | Fermion measure of the functional integral |
 | $U=e^{\alpha\omega}=\cos\alpha\,\mathbb 1+\sin\alpha\,\omega$ | Chiral rotation; $\alpha$ a central scalar function |
 | $J=(\det U)^{-2}=\exp(-i\theta_{\mathrm{anm}})$ | Jacobian of the measure under the rotation |
-| $Z[A]=\det\begin{pmatrix}-2\pi\nu_m&\tilde D\ \tilde D^{\natural}&-2\pi\nu_m\end{pmatrix}$ | Fermion determinant |
+| $Z[A]=\det\begin{pmatrix}-2\pi\nu_m&\tilde D \\ \tilde D^{\natural} & -2\pi\nu_m\end{pmatrix}$ | Fermion determinant |
 | $\tilde{Ξ}^{\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}^*\xi\,i\vec e_x)$ | The Dirac bilinear, with its fixed right multiplier |
 | $j_{\imath}=\tilde{Ξ}^{\dagger}\vec e_{\imath}\tilde{Ξ}$ | Vector current |
 | $j_{5\imath}=\tilde{Ξ}^{\dagger}\omega\vec e_{\imath}\tilde{Ξ}$ | Axial current |

@@ -215,4 +215,4 @@ The three findings. The duality is exact because the parent is linear in one fie
 - [The Lagrangian and the Proca Equation](the-lagrangian-and-the-proca-equation.html) — the plain massive vector, for the derivative-count comparison.
 - [The Lagrangian and the Stueckelberg Mechanism](the-lagrangian-and-the-stueckelberg-mechanism.html) — the other way to avoid the Proca obstruction.
 - [The Lagrangian and the Dirac Equation](the-lagrangian-and-the-dirac-equation.html) — the Dirac theory whose vector representation is one of the two reductions.
-- [Topological Charge, Self-Duality and the Bogomolny Bound](topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.html) — topological terms and their conservation identities.
+- [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html) — topological terms and their conservation identities.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This article is the electroweak application of a general mechanism.** The mechanism — the constant-field reduction, the functional determinant, the coefficient of the logarithm, the condition for a radiatively generated minimum and the scale dependence — is stated with no sector attached in [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html). What is added here is the electroweak content: the doublet, its potential, the fields that circulate in the loop and the values they give.
+**This article carries the effective potential and the one-loop correction, and then works them for the electroweak scalar.** The mechanism — the constant-field reduction, the functional determinant, the coefficient of the logarithm, the condition for a radiatively generated minimum and the scale dependence — is developed here rather than taken from a sector-free statement; what the sector adds is the doublet, its potential, the fields that circulate in the loop and the values they give.
 
 The **effective potential** is the part of the quantum effective action that survives when the classical field is taken constant, and it is the object that decides where the vacuum of a quantum field theory lies. Its classical value is the potential written in the Lagrangian, and its **one-loop correction** is the logarithm of a functional determinant: integrating out the fluctuations about a constant background produces a term proportional to the fourth power of the fluctuation mass times the logarithm of that mass in units of the renormalization scale. That logarithm can move the minimum. When it does, the vacuum is not where the classical potential put it, and if the classical potential has no minimum away from the origin at all — if the theory is classically scale invariant — then a minimum can appear that is entirely radiative. This is the **Coleman–Weinberg mechanism**.
 
@@ -78,7 +78,14 @@ Two features of this potential matter for what follows. First, its **normalizati
 
 The effective potential is a restriction of the effective action, and the restriction is worth stating precisely because it fixes what the derivatives mean in the framework.
 
-**The Legendre transform, the loop expansion and the constant-field reduction are the machinery of [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html), stated there for a field with no sector attached.** The conventions are those of the companion article on the generating functional and the effective action, and the classical field is written $\tilde{Ξ}_{\mathrm{cl}}$. The one structural fact that is not general, and is imported from that companion, is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
+**The Legendre transform, the loop expansion and the constant-field reduction are the standard machinery, and this subsection states them.** The effective action $\Gamma[\xi]$ is the Legendre transform of the connected generating functional; when its argument is a constant classical field every derivative term vanishes, $\Gamma[\xi_c]=-\int d^4x\,\mathcal V_{\text{eff}}(\xi_c)$, and the tree value is the potential of the Lagrangian. The one-loop term is the trace of the logarithm of the second variation,
+
+$$
+\mathcal{V}_{1\text{-loop}} = \frac{1}{2}\,\mathrm{Tr}\ln\!\left(\frac{\delta^2 S}{\delta\xi^2}\Big|_{\xi_c}\right)
+= \frac{1}{64\pi^2}\sum_i n_i\,m_i^4(\xi_c)\left(\ln\frac{m_i^2(\xi_c)}{\mu^2}-c_i\right),
+$$
+
+for a field of mass $m^2(\xi_c)$ in four dimensions, with $c=\tfrac32$ for a real scalar. The correction is fixed by the **fourth power** of the fluctuation mass and by the logarithm of its ratio to the renormalisation scale; the sign is positive for a bosonic loop and negative for a fermionic one, so the counting of degrees of freedom enters only through the signed multiplicity $n_i$ of each mass. The conventions are those of the companion article on the generating functional and the effective action, and the classical field is written $\tilde{Ξ}_{\mathrm{cl}}$. The one structural fact that is not general, and is imported from that companion, is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
 
 For a **constant** classical field $\tilde{Ξ}_{\mathrm{cl}} = \xi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by
 
@@ -110,7 +117,7 @@ S^{(2)}[\xi_c] = -\,\Box_\Phi + \mathcal{H}(\rho_c),
 \xi = \frac{1}{\sqrt2}\left(\xi_1 + i\xi_2\right),
 \qquad
 \mathcal{H} = \frac{\varpi_{\mathrm{cpl}}}{2}
-\begin{pmatrix} 3\rho_c - v_0^2 & 0 \ 0 & \rho_c - v_0^2 \end{pmatrix},
+\begin{pmatrix} 3\rho_c - v_0^2 & 0 \\ 0 & \rho_c - v_0^2 \end{pmatrix},
 $$
 
 acting as a central scalar; the eigenvalues of $\mathcal{H}$ are the field-dependent masses of the two real components of the fluctuation in the background, and the Hessian is written at the background $\xi_2 = 0$. Evaluating $\Gamma_1$ on a constant background and dividing by the volume gives the Coleman–Weinberg form of the machinery, $\mathcal{V}_1(\rho)=\frac{1}{64\pi^2}\sum_i n_i m_i^4(\rho)[\ln(m_i^2(\rho)/\mu^2)-c_i]$, with $n_i$ the signed number of real degrees of freedom, $\mu$ the renormalization scale and $c_i$ a scheme constant ($c=\tfrac32$ for a real scalar, $c=\tfrac56$ for a connection in the Landau fixing condition). **The framework fixes the field content, and hence the list of masses that enter the sum; that list is the whole of the sector's contribution.**
@@ -182,6 +189,8 @@ Three features of the result are standard and are worth separating.
 1. **Dimensional transmutation.** The location of the minimum is $\langle \rho\rangle = \mu^2 \exp(-1/2)\exp\!\left(-\varpi_{\mathrm{cpl}}/(4B)\right)$, which depends on the dimensionless couplings $\varpi_{\mathrm{cpl}}$ and $ϙ$ only through the combination $\varpi_{\mathrm{cpl}}/B$, and is exponentially small when the couplings are perturbative. A dimensionless coupling has been traded for a dimensionful scale: the theory has no classical scale, and the scale of the vacuum is generated by the running of the couplings between $\mu$ and $\langle \rho\rangle$. This is the standard interpretation of the Coleman–Weinberg result.
 2. **The mass of the radial mode.** In the physical radial coordinate the curvature at the minimum is $m_h^2 = \frac{d^2\mathcal{V}}{d\xi_1^2} = \frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\rho)\cdot 2\rho = 4B\langle \rho\rangle$, so the Higgs mass is of the same radiatively generated order as the vacuum expectation value, $m_h^2/\langle\xi_1\rangle^2 = 2B$. The hierarchy between the two is a one-loop coefficient, not a small parameter.
 3. **The role of the connection loop.** For $\varpi_{\mathrm{cpl}} \ll ϙ^2$ the minimum is dominated by the connection contribution, $\ln(\langle \rho\rangle/\mu^2) \approx -\varpi_{\mathrm{cpl}}/(4B) \approx -\tfrac{4\pi^2\varpi_{\mathrm{cpl}}}{3 ϙ^4}$, the standard Coleman–Weinberg relation. The sign of the effect is the sign of $B$, and a purely scalar theory would have $B = \tfrac{5\varpi_{\mathrm{cpl}}^2}{128\pi^2} > 0$ as well; what the connection changes is not the sign but the relative size, and in the physically relevant regime it dominates.
+
+**The stability condition.** The coefficient that makes the breaking possible also fixes the behaviour at large field, and the two must be read together. At large $\rho$ the logarithm dominates the quartic, so with $B>0$ the one-loop term grows and the potential is bounded below; with $B<0$ it falls and no minimum survives at any scale. The boundedness of the tree potential is a separate condition of the same kind: if the coefficient of the highest power is negative the potential is unbounded below at large field, and no radiative correction rescues it. Applying either condition requires knowing which fields circulate at the largest mass, since it is the fourth power of that mass that sets the coefficient — which is why the field content, and not the algebra, decides the question.
 
 ## Renormalization-Scale Dependence
 
@@ -292,6 +301,7 @@ The loop integral, its regularization and its renormalization are standard and a
 ## Further Reading
 
 - S. Coleman and E. Weinberg, "Radiative corrections as the origin of spontaneous symmetry breaking," *Physical Review D* **7** (1973) 1888–1910, for the one-loop effective potential and the mechanism itself.
+- E. J. Weinberg, *Classical Solutions in Quantum Field Theory* (Cambridge, 2012), Chapter 3, for the constant-field reduction and the functional determinant.
 - R. Jackiw, "Functional evaluation of the effective potential," *Physical Review D* **9** (1974) 1686–1701, for the functional derivation, the proper-time form, and the convexification.
 - G. Jona-Lasinio, "Relativistic field theories with symmetry-breaking solutions," *Il Nuovo Cimento* **34** (1964) 1790–1795, for the effective potential and its role in symmetry breaking.
 - K. Symanzik, "Renormalizable models with broken symmetries," in *Renormalization of Yang–Mills Fields and Applications to Particle Physics* (CERN, 1972), for the effective action and the convexity of the Legendre transform.

@@ -328,7 +328,7 @@ Two structural statements, and neither is a number.
 
 **GIM is a statement about the flavour factor.** As above: $VV^{\dagger}=1$ is the definition of a change of basis on the generation label, so the constant term in the loop vanishes by unitarity, and the surviving term measures the non-centrality of the mass operator. This is a genuine framework-level reading. It supplies no value, but it supplies the *reason* the mechanism has the form it has, and it explains in one sentence why one generation gives nothing and three give a suppression.
 
-The triangle is a statement about $\mathrm{U}(3)$. The three-vector sum closing is the unitarity of the mixing group, and the area being CP violation is the statement that a $*$-unitary operator with one phase cannot be made real by rephasing. [The CKM article 0  derived both. What the framework supplies is therefore the *necessity* of a triangle, not its shape.
+The triangle is a statement about $\mathrm{U}(3)$. The three-vector sum closing is the unitarity of the mixing group, and the area being CP violation is the statement that a $*$-unitary operator with one phase cannot be made real by rephasing. [The CKM article](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) derived both. What the framework supplies is therefore the *necessity* of a triangle, not its shape.
 
 What it transcribes. Everything numerical: the box functions, the Inami–Lim results, the hadronic matrix elements, the measured frequencies, the rare-decay branching ratios, the five closure inputs and their errors.
 

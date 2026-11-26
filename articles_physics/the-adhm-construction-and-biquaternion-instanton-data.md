@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This article is the strong sector's application of a general construction.** The equations, the quotient and the dimension of the moduli space are stated with no sector attached in [The ADHM Construction and Instanton Moduli in Biquaternionic Form](the-adhm-construction-and-instanton-moduli-in-biquaternionic-form.html). What is added here is the strong sector's content: the framework's compact factor fixes the rank, and the quaternionic structure of the datum is the algebra's own left multiplication.
+**This article is the strong sector's account of the ADHM construction, and it carries the construction itself.** The equations, the quotient and the dimension of the moduli space are stated here, not cited elsewhere; what the sector adds is that the framework's compact factor fixes the rank, and that the quaternionic structure of the datum is the algebra's own left multiplication.
 
 *Instantons and Solitons in Biquaternionic Form* exhibited the BPST instanton as an explicit solution of the self-duality equation inside the compact factor $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$, fixed its charge and action, and recorded its moduli. *The Index Theorem and the Zero-Mode Count in Biquaternionic Form* counted the fermion zero modes that the instanton supports. Neither article says where the instanton's **data** comes from, or why a first-order self-duality equation should have any solutions at all beyond the one written down by hand. This article supplies that missing layer: the Atiyah–Drinfeld–Hitchin–Manin (ADHM) construction, which parametrises *all* self-dual connections on the Euclidean slice by a finite set of matrices satisfying two algebraic equations.
 
@@ -101,7 +101,7 @@ which is a pure gradient-like expression in the $x$-dependent kernel; the self-d
 
 ## The Dimension of the Moduli Space
 
-The dimension follows from counting the data, the constraints and the quotient — $4k^2+4kN$ real parameters, less $3k^2$ from the two equations, less $k^2$ from $\mathrm{U}(k)$; this is the general count of [The ADHM Construction and Instanton Moduli in Biquaternionic Form](the-adhm-construction-and-instanton-moduli-in-biquaternionic-form.html), and it leaves $4kN$. This agrees with the standard formula $\dim_{\mathbb R}\mathcal M_{\imath}=4k\,h^\vee$ for a simple group of dual Coxeter number $h^\vee$, since $h^\vee=N$ for $SU(N)$. For the framework's group factor $N=2$,
+The dimension follows from counting the data, the constraints and the quotient — $4k^2+4kN$ real parameters, less $3k^2$ from the two equations, less $k^2$ from $\mathrm{U}(k)$; this is the general count, and it leaves $4kN$. This agrees with the standard formula $\dim_{\mathbb R}\mathcal M_{\imath}=4k\,h^\vee$ for a simple group of dual Coxeter number $h^\vee$, since $h^\vee=N$ for $SU(N)$. For the framework's group factor $N=2$,
 
 $$
 \boxed{\;\dim_{\mathbb R}\mathcal M_{\imath} = 8k ,
@@ -110,6 +110,8 @@ $$
 $$
 
 the second after removing the three-dimensional global $SU(2)$ rotation that acts trivially on the physical configuration. Thus $k=1$ has the five moduli of the BPST solution — four translations and one dilatation — and $k=2$ has thirteen. The dimension count is a check on the construction, not a substitute for it: it says that the data can locally parametrise a space of the right size, and it fixes the count of collective coordinates that the semiclassical expansion integrates over.
+
+**The metric and the measure.** The moduli space is infinite-dimensional as a space of connections and finite-dimensional as a manifold, and the ADHM datum is what makes the finite description explicit. The metric on it is the one induced by the field-space metric on the space of connections; the ADHM coordinates make it computable, and the hyperkähler structure of the manifold is visible in the quaternionic form of the equations. Without the finite description there would be no measure to write on the moduli space, and the collective-coordinate integral of the semiclassical expansion would have no domain.
 
 ## The Minimal Datum and the BPST Instanton
 
@@ -224,6 +226,7 @@ Counting data, constraints and redundancy gives $\dim_{\mathbb R}\mathcal M_{\im
 - Michael F. Atiyah, *Geometry of Yang–Mills Fields* (Accademia Nazionale dei Lincei, 1979), for the instanton data and the twistor-theoretic viewpoint.
 - David Tong, *Connection theory* (lecture notes, University of Cambridge, 2018), for a pedagogical derivation of the ADHM construction and the explicit reconstruction formula.
 - Nicholas Manton and Paul Sutcliffe, *Topological Solitons* (Cambridge University Press, 2004), for the instanton moduli space, its dimension and its role in the semiclassical expansion.
+- N. Dorey, T. J. Hollowood, V. V. Khoze and M. P. Mattis, "The calculus of many instantons", *Physics Reports* 371 (2002) 231–459, for the moduli-space measure and the multi-instanton calculus.
 - Sidney Coleman, "The uses of instantons", in *Aspects of Symmetry* (Cambridge University Press, 1985), for the physical interpretation of the instanton data and moduli.
 - Mikio Nakahara, *Geometry, Topology and Physics* (CRC Press, 2nd ed. 2003), for the quaternionic structure of $\mathbb R^4$ and the self-duality equation.
 - E. Corrigan, D. B. Fairlie, S. Templeton and P. Goddard, "A Green's function for the general self-dual gauge field", *Nuclear Physics B* 140 (1978) 31–44, for the explicit reconstruction of the connection from the ADHM data.

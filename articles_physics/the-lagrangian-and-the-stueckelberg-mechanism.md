@@ -4,7 +4,7 @@
 
 This article writes the Stueckelberg action for a massive abelian vector and shows that its two ways of counting the same physics — the unitary fixing condition and the covariant fixing conditions — are two readings of one functional. It is the action-first companion of *The Stueckelberg Mechanism in Biquaternionic Form*, which states the mechanism and the degree-of-freedom count; this article asks what action makes a mass term invariant, and at what price.
 
-Its place in the sector. The vector here is abelian, so this functional is not a term of [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html): the sector masses its bosons with the Higgs and not with a shift field. The construction is filed beside the electroweak articles because that is where a massive vector is discussed, not because the sector uses it. The general statement, with no sector attached, is [The Stueckelberg Mechanism for a Massive Abelian Vector in Biquaternionic Form](the-stueckelberg-mechanism-for-a-massive-abelian-vector-in-biquaternionic-form.html).
+Its place in the sector. The vector here is abelian, so this functional is not a term of [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html): the sector masses its bosons with the Higgs and not with a shift field. The construction is filed beside the electroweak articles because that is where a massive vector is discussed, not because the sector uses it. The construction, stated without a sector and then read in the algebra, is [The Stueckelberg Mechanism in Biquaternionic Form](the-stueckelberg-mechanism-in-biquaternionic-form.html).
 
 The equation. The parent's equations are the Proca equation for $A_{\imath}$ and the equation for the scalar $\xi$,
 
@@ -207,5 +207,5 @@ The boundary. The invariant combination and its biquaternionic form are the alge
 - [The Stueckelberg Mechanism in Biquaternionic Form](the-stueckelberg-mechanism-in-biquaternionic-form.html) — the parent: the two fixing conditions, the propagator, the degree-of-freedom count.
 - [The Lagrangian and the Proca Equation](the-lagrangian-and-the-proca-equation.html) — the unitary-connection action, and the Lorenz condition as a consequence.
 - [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html) — the non-abelian case, where the scalar is a Goldstone of a broken symmetry.
-- [The Stueckelberg Mechanism for a Massive Abelian Vector in Biquaternionic Form](the-stueckelberg-mechanism-for-a-massive-abelian-vector-in-biquaternionic-form.html) — the Proca obstruction in the algebra.
+- [The Stueckelberg Mechanism in Biquaternionic Form](the-stueckelberg-mechanism-in-biquaternionic-form.html) — the Proca obstruction in the algebra.
 - [Fixing the Representative in the Electroweak Theory: $R_\xi$ Conditions, Ghosts and the Goldstone Equivalence Theorem](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html) — the $\zeta$-dependent propagator in the non-abelian case.

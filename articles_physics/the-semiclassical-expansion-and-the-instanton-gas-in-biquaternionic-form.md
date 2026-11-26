@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This article is the strong sector's application of a general expansion.** Steepest descent, the collective-coordinate measure, the theta vacuum, the dilute gas and the one-loop prefactor are stated with no sector attached in [The Euclidean Semiclassical Expansion and the Dilute Gas in Biquaternionic Form](the-euclidean-semiclassical-expansion-and-the-dilute-gas-in-biquaternionic-form.html). What is added here is the strong sector's content: the configurations are those of the colour connection theory, the theta angle produced by the sum is the strong CP parameter, and the gaps recorded are the framework's.
+**This article is the strong sector's account of the semiclassical expansion, and it carries the general machinery.** Steepest descent, the collective-coordinate measure, the theta vacuum, the dilute gas and the one-loop prefactor are developed here rather than cited elsewhere. What the sector supplies is the content: the configurations are those of the colour connection theory, the theta angle produced by the sum is the strong CP parameter, and the gaps recorded are the framework's.
 
 *The ADHM Construction and Biquaternion Instanton Data* parametrised the self-dual connections of the Euclidean theory, and *The Index Theorem and the Zero-Mode Count in Biquaternionic Form* counted the fermion modes they support. This article turns the instanton from a solution of a field equation into a contribution to a physical quantity. It develops the **semiclassical expansion** of the Euclidean path integral around instantons and collects those contributions into the **instanton gas**, the dilute-medium picture in which the theta dependence of the vacuum and the vacuum energy are computed.
 
@@ -34,7 +34,7 @@ $$
 Z \;=\; \int \mathcal D\mathcal A\;\exp(-S[\mathcal A]),
 $$
 
-where the measure, the choice of representative and the ghosts are the objects constructed in the companion path-integral articles; the instanton calculus takes that construction for granted. **Steepest descent, the saddle-point condition, the one-loop determinant and the treatment of the flat directions are the machinery of [The Euclidean Semiclassical Expansion and the Dilute Gas in Biquaternionic Form](the-euclidean-semiclassical-expansion-and-the-dilute-gas-in-biquaternionic-form.html).** What is added here is the framework's saddle: a self-dual configuration, whose classical action is fixed by the topology,
+where the measure, the choice of representative and the ghosts are the objects constructed in the companion path-integral articles; the instanton calculus takes that construction for granted. **Steepest descent, the saddle-point condition, the one-loop determinant and the treatment of the flat directions are the standard machinery.** What is added here is the framework's saddle: a self-dual configuration, whose classical action is fixed by the topology,
 
 $$
 S_{\mathrm{cl}}=\frac{8\pi^2}{g^2}|Ϙ| ,
@@ -44,7 +44,13 @@ by the saturated Bogomolny bound of *Instantons and Solitons in Biquaternionic F
 
 ## The One-Instanton Measure and Collective Coordinates
 
-The moduli space of the charge-one saddle is the five-dimensional family of *The ADHM Construction and Biquaternion Instanton Data*: four translations $x_{0\imath}$ and one dilatation $\rho$, the three global $SU(2)$ orientations being in the orbit. The collective-coordinate measure is the volume element of this space, and the classical part of the one-instanton contribution is
+The moduli space of the charge-one saddle is the five-dimensional family of *The ADHM Construction and Biquaternion Instanton Data*: four translations $x_{0\imath}$ and one dilatation $\rho$, the three global $SU(2)$ orientations being in the orbit. The collective-coordinate measure is the volume element of this space. In general, changing variables from the field to the coordinates $c_i$ of the saddle together with the orthogonal fluctuations multiplies the measure by a Jacobian,
+
+$$
+\boxed{\;\mathcal{D}\xi_{\mathrm{pot}}=\prod_i d c_i\ \sqrt{\det\left(\left\langle\frac{\partial\xi_{\mathrm{pot},0}}{\partial c_i},\frac{\partial\xi_{\mathrm{pot},0}}{\partial c_j}\right\rangle\right)}\ \mathcal{D}\xi_{\mathrm{pot},\perp}\;}
+$$
+
+so each zero mode becomes an integral over its coordinate with a measure fixed by the field-space metric, and the determinant is the overlap matrix of the tangent vectors. The classical part of the one-instanton contribution is
 
 $$
 Z_{\mathrm{cl},1} \;\propto\; \int d^4r_0\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2) ,

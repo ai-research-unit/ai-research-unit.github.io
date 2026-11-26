@@ -207,4 +207,4 @@ The three findings. One term is solitonless by the Derrick identity, and the sec
 - [The Lagrangian and the Nonlinear Sigma Model](the-lagrangian-and-the-nonlinear-sigma-model.html) — the two-derivative term alone, and why it needs the second.
 - [The Chiral Theory and the Lagrangian: The Pion and the Decay Constant](the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html) — the pion reading of the first term.
 - [The Lagrangian and the Central Scalar Field](the-lagrangian-and-the-central-scalar-field.html) — the classical scalar action, for comparison of the wave-operator structure.
-- [Topological Charge, Self-Duality and the Bogomolny Bound](topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.html) — bounds of the same kind in the sector.
+- [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html) — bounds of the same kind in the sector.

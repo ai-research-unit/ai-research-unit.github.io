@@ -178,5 +178,5 @@ $$
 
 - [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html). The tree potential this article corrects, and the boundedness cone.
 - [The Lagrangian and the Scalar Matrix](the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html). The kinetic term whose normalisation makes the sixteen components canonical.
-- [The Effective Potential and the One-Loop Correction](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html). The doublet's coefficient, computed by the same method.
+- [The Effective Potential and the Coleman–Weinberg Mechanism](the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html). The doublet's coefficient, computed by the same method.
 - [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html). Where the count of sixteen comes from.
