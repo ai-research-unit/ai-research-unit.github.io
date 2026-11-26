@@ -122,7 +122,7 @@ $$</p>
 <p><strong>The dimensions of the operator blocks.</strong> The corner $C_{ij}$ has dimension $d_{ij}$, and an operator mapping $C_{ij}$ to $C_{lm}$ is a $d_{lm}\times d_{ij}$ matrix. The four diagonal blocks of $L_A$ have sizes $k^2\times k^2$ and so on, and the off-diagonal blocks are rectangular.</p>
 <h2 id="the-case-math102-math103">The Case $n=4$, $k=2$</h2>
 <p><strong>All four corners are four-dimensional.</strong> $k=n-k=2$, so $d_{ij}=4$ for all four corners, and the operator space $M_4$ splits into four equal blocks of dimension $4$. This is the only $n$ at which the four corners are simultaneously equal and more than one-dimensional.</p>
-<p><strong>The half-integers.</strong> Under the principal copy at $n=4$, the two diagonal corners carry integer spins and the two off-diagonal corners carry the half-integer labels. The block reading is the operator-level sight of the Peirce corners that carry the half-integers; the spin statement is in <em>Where the Half-Integers Go in $M_n(\mathbb{C})$</em>.</p>
+<p><strong>The half-integers.</strong> Under the principal copy at $n=4$, the two diagonal corners carry integer spins and the two off-diagonal corners carry the half-integer labels. The block reading is the operator-level sight of the Peirce corners that carry the half-integers; the spin statement is in <em>Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition</em>.</p>
 <p><strong>What does not happen at $n=2$.</strong> With $k=1$ the four corners are one-dimensional, the mixing is a $2\times2$ pattern, and every operator is already a block matrix of scalars. The biquaternion block reading is the shadow of this case.</p>
 <h2 id="the-finite-check">The Finite Check</h2>
 <p>Computed with numpy for $n=2,3,4,5$ and every $1\le k\le n-1$: the four corner dimensions $k^2,k(n-k),k(n-k),(n-k)^2$ sum to $n^2$ in every case, and the corner multiplication table $C_{ij}C_{lm}\subseteq\delta_{jl}C_{im}$ was checked on random corner elements to $10^{-15}$.</p>
@@ -133,7 +133,7 @@ $$</p>
 <p><em>Proof.</em> $A$ acts on the row index and $B$ on the column index, and both preserve the decomposition of the index set into the first $p$ and the last $q$ indices. $\square$</p>
 <p><strong>The one-sided action.</strong> $L_A$ does not preserve the corners: the block $A_{12}$ sends the corner $(2,2)$ into the corner $(1,2)$, and the block $A_{21}$ sends $(1,1)$ into $(2,1)$.</p>
 <p><strong>The mixture.</strong> A general $T_{A,B}$ mixes the entries inside each corner, since $A$ and $B$ mix the indices within the two blocks, but it never moves an entry from one corner to another. The mixture of blocks comes from the one-sided families, not from the two-sided one.</p>
-<h2 id="the-case-math156">The Case $p=1$</h2>
+<h2 id="the-case-math155">The Case $p=1$</h2>
 <p><strong>The dimensions.</strong> For $p=1$ and $q=n-1$ the corners have dimensions $1$, $n-1$, $n-1$ and $(n-1)^2$.</p>
 <p><strong>The reading.</strong> The corner $(1,1)$ is one-dimensional and is the span of $E_{11}$; the corner $(2,2)$ is the algebra of the complement; the two off-diagonal corners are the two spaces of maps between the line and the complement, exchanged by the transpose.</p>
 <p><strong>The consequence.</strong> The block reading at $p=1$ is the reading in which the Peirce corners have the most unequal sizes, and it is the reading in which the two-sided action is the most visible: a two-sided operator acts on four blocks of very different sizes without moving between them.</p>
@@ -211,7 +211,7 @@ $$</p>
 <li><a href="the-peirce-decomposition-and-the-corner-recursion-of-mnc.html">The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</a>, for the algebra-level decomposition.</li>
 <li><a href="operator-chirality-on-mnc.html">Operator Chirality on $M_n(\mathbb{C})$</a>, for the symmetric and antisymmetric split.</li>
 <li><a href="the-operators-on-the-four-sectors-of-mnc.html">The Operators on the Four Sectors of $M_n(\mathbb{C})$</a>, for the sector reading.</li>
-<li><a href="where-the-half-integers-go-in-mnc.html">Where the Half-Integers Go in $M_n(\mathbb{C})$</a>, for the half-integer labels.</li>
+<li><a href="integer-labels-on-the-algebra-a-half-integer-on-the-module.html">Integer Labels on the Algebra, a Half-Integer on the Module: The Carrier Condition</a>, for the half-integer labels.</li>
 <li><a href="the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$</a>, for the case $n=4$.</li>
 <li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the case $n=2$.</li>
 </ul>
