@@ -92,7 +92,7 @@ The twelve algebraic structures carry no code at all. A product is written by it
 
 ## The Reserved Letter $\lambda$
 
-**The letter $\lambda$ carries the wavelength, and nothing else.** It is written in the three forms of *Physics Units and Common Elements Conventions*, $\lambda_m$, $\lambda_{\Phi}$ and $\lambda_t$. The three inherited names that once kept it now take their own letters: the Gell–Mann matrices are $\digamma_{\mathrm{gmn},a}$, the Wolfenstein parameter of the CKM matrix is $\digamma_{\mathrm{ckm},12}$, and the two-component twistor column of *Helicity in Biquaternionic Form* and *Congruence Twistors and the Fields They Generate* is $\varpi_{\mathrm{twz}}\in\mathbb{C}^{2}$, because a spinor is not a scalar.
+**The letter $\lambda$ carries the wavelength, and nothing else.** It is written in the three forms of *Physics Units and Common Elements Conventions*, $\lambda_m$, $\lambda_{\Phi}$ and $\lambda_t$. The three inherited names that once kept it now take their own letters: the Gell–Mann matrices are $\digamma_{\mathrm{gmn},a}$, the Wolfenstein parameter of the CKM matrix is $\digamma_{\mathrm{ckm},12}$, and the two-component spinor column of *Helicity in Biquaternionic Form* is $\varpi_{\mathrm{twz}}\in\mathbb{C}^{2}$, because a spinor is not a scalar.
 
 **Four letters carry the four scalar roles, and no other use of them is admitted.** An angle is $\theta$, real, and its subscript names it. A wave number is $\nu$, and the wavelength is $\lambda=1/\nu$. An eigenvalue is $\eta$, and a scalar factor is $\digamma$ with a subscript that names its sense. A scalar that is none of these takes a subscripted glyph of its own from the table below and never one of the four.
 
@@ -125,7 +125,7 @@ The twelve algebraic structures carry no code at all. A product is written by it
 | a Lagrange multiplier | $\digamma_{\mathrm{lgr}}$ |
 | a spectral parameter, $G(\digamma_{\mathrm{spc}})=(L-\digamma_{\mathrm{spc}})^{-1}$ | $\digamma_{\mathrm{spc}}$ |
 | a free parameter of a family, a worldline or a scaling | $\digamma_{\mathrm{prm}}$ |
-| the two-component twistor spinor of *Helicity in Biquaternionic Form* | $\varpi_{\mathrm{twz}}$ |
+| the two-component spinor of *Helicity in Biquaternionic Form* | $\varpi_{\mathrm{twz}}$ |
 | a weight of the Cartan subalgebra | $\varpi_{\mathrm{wgt}}$ |
 | the twelve Newman–Penrose scalars | $\varsigma_{\mathrm{nps}}$ |
 | the Peirce functional of a cut | $\varsigma_{\mathrm{prc}}$ |
@@ -146,7 +146,7 @@ The twelve algebraic structures carry no code at all. A product is written by it
 | a placeholder index name in a tuple | $\upsilon_{\mathrm{idx},1\dots3}$ |
 | a family of idempotents, parameterised | $\tilde\Pi_{\mathrm{id}}(\eta)$ |
 
-**The indexed form of λ is gone.** Every indexed λ that named a spectrum is now η, and every λ that named a scale or an operator is now a digamma with a long subscript. The letter λ is left with the wavelength, the Gell–Mann matrices, the Wolfenstein parameter and the twistor column, and nothing else.
+**The indexed form of λ is gone.** Every indexed λ that named a spectrum is now η, and every λ that named a scale or an operator is now a digamma with a long subscript. The letter λ is left with the wavelength, the Gell–Mann matrices, the Wolfenstein parameter and the spinor column, and nothing else.
 
 **The italic $\varphi$ and $\psi$ are not available for a scalar.** They are the material and the informational sector, and a sector is written as a subscript, $\tilde\Xi_\Phi$ and $\tilde\Xi_\Psi$, never as a bare scalar in a display. A phi or a psi standing alone in a formula is a defect.
 

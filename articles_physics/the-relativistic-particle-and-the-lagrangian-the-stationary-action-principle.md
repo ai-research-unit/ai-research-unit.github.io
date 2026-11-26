@@ -127,6 +127,24 @@ m\,\frac{du_{\imath}}{d\tau} = ϙ\sum_{\jmath} F_{\imath\jmath}v_{\jmath} ,
 $$
 with $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath}$ the field tensor. The component form is standard and is transcribed rather than re-derived. The **index-free biquaternion product** expression of the same force is a different matter: the companion *Relativistic Mechanics in Biquaternionic Form* records that the four-force is a material-sector element built from the field strength and the four-velocity, but that its explicit form as a product in $\mathbb{B}$ involves the representation theory of the algebra in the even subalgebra and is left open. This article respects that boundary: the action route gives the component equation, and the biquaternion product form is not asserted here.
 
+### The canonical momentum in a potential
+
+The interaction term separates the two momenta, and the variation says which is which. With the convention of [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), where the covariant derivative is $D_{\imath} = \partial_{\imath} + \frac{2\pi i\,ϙ}{h}A_{\imath}$, the action of a charge in a prescribed potential is
+$$
+S = -mc\int\sqrt{-\langle\,d\tilde R_\Phi/d\tau\rangle_{\natural}}\,d\tau \;+\; ϙ\int \mathrm{Sc}\!\left(\tilde{A}_{\Phi}\,\overline{d\tilde R_\Phi/d\tau}\right)d\tau ,
+$$
+whose Lagrangian is the free one plus the coupling,
+$$
+\mathrm{Lag} = -mc\sqrt{-\langle\,d\tilde R_\Phi/d\tau\rangle_{\natural}} \;+\; ϙ\left\langle \tilde{A}_{\Phi}, d\tilde R_\Phi/d\tau\right\rangle .
+$$
+The conjugate momentum is the element $\tilde P_{\Phi,\mathrm{can}}$ defined by $\delta\mathrm{Lag} = \langle\tilde P_{\Phi,\mathrm{can}},\delta(d\tilde R_\Phi/d\tau)\rangle$. The free term contributes $m\,d\tilde R_\Phi/d\tau = \tilde P_{\Phi}$ by the polarisation computed in §*The worldline Euler–Lagrange equation*, and the coupling contributes $ϙ\tilde A_{\Phi}$ directly, so
+$$
+\boxed{\;\tilde P_{\Phi,\mathrm{can}} = m\,d\tilde R_\Phi/d\tau + ϙ\tilde A_{\Phi} = \tilde P_{\Phi} + ϙ\tilde A_{\Phi}\;}.
+$$
+**Canonical is kinetic plus the potential**, and the split is forced by the variation rather than chosen: the free term is the kinetic momentum, the coupling adds the potential to it, and the two coincide only where $\tilde A_{\Phi}$ vanishes.
+
+**The sign is a convention on the potential and not a physical statement.** The reverse-product form $S_{\mathrm{int}} = -ϙ\int\mathrm{Sc}(\tilde A_{\Phi}^{\natural}d\tilde R_\Phi)$ used in §*The coupling to an external potential* carries the opposite sign and therefore gives $\tilde P_{\Phi,\mathrm{can}} = \tilde P_{\Phi} - ϙ\tilde A_{\Phi}$; the two readings are one equation under $\tilde A_{\Phi}\to-\tilde A_{\Phi}$, and the block uses the plus form throughout. The classical check is the laboratory-time interaction energy $-ϙ\xi + ϙ\vec A\cdot\vec v$, which the plus form reproduces with $\xi$ the scalar potential.
+
 ### The canonical four-momentum and the mass shell
 
 The momentum conjugate to $\tilde R_\Phi$ is $\tilde{P}_{\Phi} = \partial \mathrm{Lag}/\partial\left(d\tilde R_\Phi/d\tau\right) = m\tilde{V}_{\Phi}$, so that

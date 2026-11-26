@@ -145,19 +145,7 @@ Note on the biquaternion expression. The component formula above is standard and
 
 ## The Action
 
-The **relativistic action** for a free particle of rest mass $m$ is
-
-$$
-S = -mc\int\sqrt{-\,d\tilde R_\Phi\,d\tilde R_\Phi^{\natural}},
-$$
-
-where the square root is the ordinary real square root of the positive quantity $-d\tilde R_\Phi\,d\tilde R_\Phi^{\natural} = d{r'_{t}}^2 -(dr_x^2+dr_y^2+dr_z^2) = c^2\,d\tau^2$, with $\tau$ the proper time. Since $d\tau = dr'_t/(c\gamma)$, we have $c\,d\tau = dr'_t/\gamma$, and the action becomes
-
-$$
-S = -mc\int\frac{dr'_t}{\gamma} = -mc\int\sqrt{1 - \vec v^2/c^2}\,dr'_t,
-$$
-
-which is the standard relativistic action. The biquaternion form makes the invariant character of the action manifest: the integrand is built from the biquaternion norm of the displacement biquaternion, which is a Lorentz scalar.
+The action is one of the ten formulas listed at the end of this article and it is derived nowhere in it. The derivation, the variation that produces the worldline equation, and the Euler–Lagrange machinery are in [The Relativistic Particle and the Lagrangian: The Stationary-Action Principle](the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.html), §*The Relativistic Particle*. **Relativity states the objects and their motion; the action principle is apparatus**, and this article takes $\tilde P_{\Phi} = m\tilde V_{\Phi}$ as the definition of the four-momentum rather than as a consequence.
 
 ## The Conserved Current
 

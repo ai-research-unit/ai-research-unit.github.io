@@ -148,26 +148,6 @@ which that article verified to be self-dual and to satisfy the equation of motio
 
 This is the point at which the ADHM data and the framework meet. The relative-position matrix $B_1+iB_2$ is a complex matrix; its commutator $[B_1,B_2]$, whose vanishing would make the data simultaneously diagonalisable and the instantons independent, is precisely the quantity that a single quaternion cannot carry as a scalar. The complex equation $[B_1,B_2]+IJ=0$ is the statement that the obstruction to independence is cancelled by the boundary vectors $I$ and $J$, and it is the algebraic origin of the interaction between instantons. The biquaternion algebra accommodates the $k=1$ datum as a single $\rho$ and accommodates each $B_a$ as a complex number; the $k>1$ data require the matrix algebra $M_{\imath}(\mathbb C)\subset M_{\imath}(\mathbb B)$, which is the enlarged carrier discussed in *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*.
 
-## The Twistor Construction and the Quaternionic Geometry
-
-The ADHM equations are the algebraic shadow of a holomorphic-geometric statement, and the statement is quaternionic. The twistor space of the compactified four-space $S^4$ is the complex projective three-space $\mathbb{CP}^3$, which fibres over $S^4$,
-
-$$
-\mathbb{CP}^1\;\hookrightarrow\;\mathbb{CP}^3\;\longrightarrow\;S^4 ,
-$$
-
-with fibre $\mathbb{CP}^1\cong S^2$ over each point. The fibre is the space of complex structures compatible with the quaternionic structure of $\mathbb H_{\mathbb B}$: a point of $S^4$ is a quaternionic line, and the complex structures of that line are a $\mathbb{CP}^1$. This is the geometric form of the statement that $\mathbb H_{\mathbb B}$ admits a sphere of complex structures, and it is why the self-duality condition can be a holomorphic condition.
-
-The Penrose–Ward correspondence states that a self-dual connection on $S^4$ is equivalent to a holomorphic rank-two vector bundle $E$ on $\mathbb{CP}^3$, trivial on each real line, and that the instanton number is the second Chern number of $E$. The ADHM data are the algebraic description of $E$ as a **monad**, a three-term exact sequence of holomorphic bundles,
-
-$$
-0\;\longrightarrow\;\mathcal O(-1)^{\oplus k}\;\xrightarrow{\ \alpha\ }\;\mathcal O^{\oplus(2k+N)}\;\xrightarrow{\ \beta\ }\;\mathcal O(1)^{\oplus k}\;\longrightarrow\;0 ,
-$$
-
-with $\alpha$ linear in the twistor coordinate and $\beta$ linear in it as well. The composite $\beta\alpha=0$ is exactly the pair of ADHM equations, and the $\mathrm{U}(k)$ quotient is the freedom in choosing the monad; the bundle $E=\ker\beta/\mathrm{im}\,\alpha$ is the physical object, and the instanton at a point of $\mathbb R^4$ is recovered by restricting $E$ to the corresponding twistor line. Thus the quotient of this article and the holomorphic bundle are two descriptions of the same self-dual connection.
-
-Two features make the construction *native* to the framework's algebra. First, the fibre $\mathbb{CP}^1$ is the complex projectivisation of the quaternionic line, and the quaternionic line is precisely the defining module $S\cong\mathbb C^2$ of $\mathbb B\cong M_2(\mathbb C)$; the twistor fibration is therefore the projectivisation of the algebra's own module, not an auxiliary space. Second, the ADHM quotient is a **hyperkähler quotient**: the flat space of the data $B_1,B_2,I,J$ carries the three complex structures of the quaternions, the moment map is $(\mu_{\mathbb R},\mu_{\mathbb C})$, and the quotient by the level set at zero is again hyperkähler. Hyperkähler geometry is the differential geometry of the quaternionic structure, and the algebra's three imaginary units are the three complex structures. The moduli space of instantons is therefore a hyperkähler manifold whose complex structures are the algebra's, which is the deepest sense in which the ADHM construction is the framework's own. The construction and the correspondence are standard; the algebra's role is that its module and its imaginary units are the objects being projectivised and varied.
-
 ## The Biquaternion Reading
 
 The ADHM construction uses three structures, and all three are the framework's.
@@ -220,10 +200,10 @@ Counting data, constraints and redundancy gives $\dim_{\mathbb R}\mathcal M_{\im
 ## Further Reading
 
 - Michael F. Atiyah, Vladimir G. Drinfeld, Nigel J. Hitchin and Yuri I. Manin, "Construction of instantons", *Physics Letters A* 65 (1978) 185–187, for the original ADHM construction.
-- Michael F. Atiyah, Nigel J. Hitchin and Isadore M. Singer, "Self-duality in four-dimensional Riemannian geometry", *Proceedings of the Royal Society A* 362 (1978) 425–461, for the moduli-space dimension, the moment-map formulation and the twistor correspondence.
+- Michael F. Atiyah, Nigel J. Hitchin and Isadore M. Singer, "Self-duality in four-dimensional Riemannian geometry", *Proceedings of the Royal Society A* 362 (1978) 425–461, for the moduli-space dimension and the moment-map formulation.
 - Nigel J. Hitchin, Anders Karlhede, Ulf Lindström and Martin Roček, "Hyperkähler metrics and supersymmetry", *Communications in Mathematical Physics* 108 (1987) 535–589, for the hyperkähler quotient construction of the ADHM moduli space.
 - Simon K. Donaldson, "An application of gauge theory to four-dimensional topology", *Journal of Differential Geometry* 18 (1983) 279–315, for the analytic properties of the instanton moduli space used in the completeness statement.
-- Michael F. Atiyah, *Geometry of Yang–Mills Fields* (Accademia Nazionale dei Lincei, 1979), for the instanton data and the twistor-theoretic viewpoint.
+- Michael F. Atiyah, *Geometry of Yang–Mills Fields* (Accademia Nazionale dei Lincei, 1979), for the instanton data and the holomorphic viewpoint.
 - David Tong, *Connection theory* (lecture notes, University of Cambridge, 2018), for a pedagogical derivation of the ADHM construction and the explicit reconstruction formula.
 - Nicholas Manton and Paul Sutcliffe, *Topological Solitons* (Cambridge University Press, 2004), for the instanton moduli space, its dimension and its role in the semiclassical expansion.
 - N. Dorey, T. J. Hollowood, V. V. Khoze and M. P. Mattis, "The calculus of many instantons", *Physics Reports* 371 (2002) 231–459, for the moduli-space measure and the multi-instanton calculus.

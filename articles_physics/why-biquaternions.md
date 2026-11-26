@@ -380,7 +380,6 @@ So the domain of the word is an algebraic condition, checked at each point. At e
 
 7. **Quantisation of the factorisation.** The polar word is a classical factorisation of the field. Which part of it survives quantisation, and whether the four brackets become operators with a non-trivial commutator algebra, is open.
 
-8. **Twistor theory.** Twistor theory works in $\mathbb{C}^{4}$, which is the coefficient space of $\mathbb{B}$, and the congruence twistors of the corpus join the incidence relation to the shear-free congruence ([Congruence Twistors and the Fields They Generate](congruence-twistors-and-the-fields-they-generate.html)). How the biquaternion Dirac equation and the twistor equation relate is open.
 
 ## Physical Interpretation
 

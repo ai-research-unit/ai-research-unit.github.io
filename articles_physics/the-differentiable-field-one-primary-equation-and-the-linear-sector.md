@@ -47,7 +47,7 @@ $$
 
 so the biquaternion gradient of every component is a zero divisor of the algebra. That is the whole of the primary input.
 
-Everything else is a consequence, and the chain is short: a null gradient, hence a direction field; a direction field, hence a congruence of rays; a congruence that the twistor form of the solution makes shear-free and geodesic; a null congruence of that kind that is the principal direction of a null electromagnetic field; and an over-determined system whose integrability forces the self-duality of its curvature, whose Bianchi identity is Maxwell's equation for the trace part and the Yang–Mills equation for the trace-free part. The condition as an equation, the reason complexification is what makes it non-empty, the twistor solution, the generating system and the self-duality are all in *The Algebrodynamical Programme*; the congruence side is *Null Electromagnetic Fields and the Shear-Free Congruence*. This article does not restate them.
+Everything else is a consequence, and the chain is short: a null gradient, hence a direction field; a direction field, hence a congruence of rays; a congruence that the programme's form of the solution makes shear-free and geodesic; a null congruence of that kind that is the principal direction of a null electromagnetic field; and an over-determined system whose integrability forces the self-duality of its curvature, whose Bianchi identity is Maxwell's equation for the trace part and the Yang–Mills equation for the trace-free part. The condition as an equation, the reason complexification is what makes it non-empty, the generating solution, the generating system and the self-duality are all in *The Algebrodynamical Programme*; the congruence side is *Null Electromagnetic Fields and the Shear-Free Congruence*. This article does not restate them.
 
 ### The Eikonal as Primary, and the Inversion of the WKB Relation
 
@@ -186,8 +186,6 @@ Three agreements are worth naming, because they are what makes the derivation wo
 
 **The same cone.** The characteristic set of the corpus's four-dimensional gradient is the zero-divisor cone, since the determinant of its symbol matrix is the norm, and the primary equation says the gradient lies on that cone. The two frameworks are built on the same quadratic form; they differ in degree, not in cone.
 
-**The same twistor.** The general solution of the primary equation is generated, on the programme's account, by an arbitrary function of three components of a twistor, with the coordinate resolved from the incidence relation. *Twistor Theory and Biquaternions* writes that relation for a different purpose, the representation of massless fields. The object is shared; only its role differs.
-
 **The same locus of states.** The null cone on which the gradient lives is the locus on which the corpus's pure states sit. A theory whose fields live on the state locus is not a foreign body in this corpus, whatever its vocabulary.
 
 ## Summary
@@ -196,7 +194,7 @@ The corpus derives its arena and imports its dynamics. The derivation route inve
 
 The gains are three: connection equations without a representative postulate, a fixed amplitude whose isolation is where the programme locates the origin of its discrete charge, and a singular locus that carries the field, the charge and the effective geometry at once. The costs are three: no action principle, so no canonical quantisation; no additivity, so no linear state space on the solution class, although the class sits inside one; and a real slice that the theory's own invariance rule does not preserve.
 
-The last is the fork. Conjugation first gives the two sectors and the corpus's quantum reading, at the price of a structure the product does not preserve. Product first gives the derivation, and — carried through — an induced Minkowski-type arena with a positive-definite time and an invariant phase, at the price of the sectors. The two share the cone, the twistor and the locus of states, so they are not strangers; but they cannot both be fundamental, and the choice between them is the choice of what the biquaternion universe is a universe of.
+The last is the fork. Conjugation first gives the two sectors and the corpus's quantum reading, at the price of a structure the product does not preserve. Product first gives the derivation, and — carried through — an induced Minkowski-type arena with a positive-definite time and an invariant phase, at the price of the sectors. The two share the cone, the generating data and the locus of states, so they are not strangers; but they cannot both be fundamental, and the choice between them is the choice of what the biquaternion universe is a universe of.
 
 ## Summary of Notation
 
@@ -225,7 +223,6 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 - [The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry](the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html), for the generating system, the self-duality, the quantised charge and the induced geometry.
 - [Null Electromagnetic Fields and the Shear-Free Congruence](null-electromagnetic-fields-and-the-shear-free-congruence.html), for Bateman's representation, the Mariot–Robinson theorem and the static null field.
 - [The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase](the-celestial-sphere-of-the-null-cone-null-directions-chirality-and-the-phase.html), for the sphere of null directions and the little-group phase.
-- [Twistor Theory and Biquaternions](twistor-theory-and-biquaternions.html), for the incidence relation and the projective spinor ratio that the generating function is written in.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the cone as a topological object and its Lorentzian slices.
 - [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the postulate the derivation route replaces with a theorem.
 - [Connection Curvature and the Bianchi Identity in Biquaternionic Form](connection-curvature-and-the-bianchi-identity-in-biquaternionic-form.html), for the Bianchi identity as a Jacobi identity and the form the field equations take.

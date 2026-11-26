@@ -188,7 +188,7 @@ Four cautions belong with the ideas, because the failure mode of a programme of 
 
 **Third, the developed relativistic parts are largely classical or transcribed.** *The Dirac Equation in Biquaternionic Form* and *Relativistic Mechanics in Biquaternionic Form* treat the classical theory; the canonical quantisation of the spinor field is a transcription. The framework's relativistic quantum theory is not yet built from its own algebra.
 
-**Fourth, the framework sits in a crowded space.** Reformulations of quantum mechanics already exist: geometric algebra (Hestenes, Doran and Lasenby), algebraic quantum field theory (Haag and Kastler), operational quantum mechanics (Hardy, Chiribella), quantum information (Hardy, Barrett) and twistor theory. The framework has to say what it adds. Its own catalogue of what the algebra cannot do, *What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions*, is where the boundary is drawn; *Twistor Theory and Biquaternions* compares it with the nearest complex-geometric programme.
+**Fourth, the framework sits in a crowded space.** Reformulations of quantum mechanics already exist: geometric algebra (Hestenes, Doran and Lasenby), algebraic quantum field theory (Haag and Kastler), operational quantum mechanics (Hardy, Chiribella), quantum information (Hardy, Barrett). The framework has to say what it adds. Its own catalogue of what the algebra cannot do, *What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions*, is where the boundary is drawn.
 
 ## Physical Readings
 
@@ -282,4 +282,3 @@ Three interpretations cut across the difficulties. The arrow of process is the s
 - Companion article [Quantum Gravity in the Biquaternion Framework: The Two-Sided Obstruction and the Modular Temperature](quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.html), for the gravitational case of Programme 3.
 - Companion article [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html), for what would count as a test.
 - Companion article [What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions](what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html), for the boundary of the algebra drawn in full.
-- Companion article [Twistor Theory and Biquaternions](twistor-theory-and-biquaternions.html), for the comparison with the nearest complex-geometric programme.

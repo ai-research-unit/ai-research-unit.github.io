@@ -432,9 +432,7 @@ This is consistent with the program of the companion articles on the $i r'_t$ co
 
 3. **The local structure.** In a medium with varying electromagnetic properties, the boost biquaternion is a **field**. What are the consequences of treating the boost biquaternion as a field, and how does it couple to the electromagnetic field?
 
-4. **The relation to the twistor program.** Penrose's twistor theory uses the complexified spinor space $\mathbb{C}^4$, which is closely related to the biquaternion algebra. How does the biquaternion formulation of the Lorentz transformation relate to the twistor formulation?
-
-5. **The general transformation.** The article has focused primarily on pure boosts. What is the biquaternion form of the general Lorentz transformation (boost plus spatial rotation), and how does the non-Hermiticity of $\tilde U_{\mathrm{lor}}$ manifest physically?
+4. **The general transformation.** The article has focused primarily on pure boosts. What is the biquaternion form of the general Lorentz transformation (boost plus spatial rotation), and how does the non-Hermiticity of $\tilde U_{\mathrm{lor}}$ manifest physically?
 
 These questions are open.
 

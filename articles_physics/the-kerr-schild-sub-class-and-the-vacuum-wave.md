@@ -121,7 +121,7 @@ The instance is worth its algebra, and no more.
 
 **It is worth the vacuum wave**, because it is the one object in the category that a competing route provably cannot produce, and because the wave's profile is one harmonic function of two transverse coordinates.
 
-**What it is not worth is dynamics.** That a member is Ricci-flat is a property of the inserted function, checked and not produced. And the two objects that would carry the physical content sit outside the algebra: for the Kerr–Newman solution the null direction is the principal null congruence selected by the Kerr theorem, and $h$ is fixed by the Einstein–Maxwell equations. Both belong to the corpus elsewhere — the congruence to the twistor and algebrodynamical articles, the ring the solution carries to the article on the complex-displaced singularity — and in both the algebra enters as the language of the congruence, not as the source of the equation. On this sharper instance the article therefore repeats the conclusion of the frame route: **carrying is not deriving**.
+**What it is not worth is dynamics.** That a member is Ricci-flat is a property of the inserted function, checked and not produced. And the two objects that would carry the physical content sit outside the algebra: for the Kerr–Newman solution the null direction is the principal null congruence selected by the Kerr theorem, and $h$ is fixed by the Einstein–Maxwell equations. Both belong to the corpus elsewhere — the congruence to the algebrodynamical article, the ring the solution carries to the article on the complex-displaced singularity — and in both the algebra enters as the language of the congruence, not as the source of the equation. On this sharper instance the article therefore repeats the conclusion of the frame route: **carrying is not deriving**.
 
 ## Summary
 
@@ -151,7 +151,6 @@ With a constant null direction and a varying profile the class is a plane-fronte
 - [The Light Cone as the Biquaternion Zero-Divisor Cone](the-light-cone-as-the-biquaternion-zero-divisor-cone.html), for nullity as the zero-divisor condition.
 - [Zero Divisors as a Physical Locus in Biquaternionic Form](zero-divisors-as-a-physical-locus-in-biquaternionic-form.html), for the null cone as a locus and not merely an algebraic condition.
 - [The Algebrodynamical Programme](the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html), for the same deformation written with half the profile.
-- [Congruence Twistors and the Fields They Generate](congruence-twistors-and-the-fields-they-generate.html), for the principal null congruence that a Kerr–Newman member carries.
 - [The Complex-Displaced Singularity and the Circle Electron](the-complex-displaced-singularity-and-the-circle-electron.html), for the ring the member carries.
 - [Null Electromagnetic Fields and the Shear-Free Congruence](null-electromagnetic-fields-and-the-shear-free-congruence.html), for the null congruence as an algebraic object.
 - [Curvature and Geodesics](../articles_maths/curvature-and-geodesics.html), for the curvature convention in which $\mathrm{Ric}_{uu}$ is stated.
