@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Particle Spins in the Biquaternion Algebra: Three Carriers, Their Meaning and Their Order — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The algebra has three carriers and they are not on the same footing. One of them costs nothing: the real vector part, on which the algebra acts…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="particle-spins-in-the-biquaternion-algebra-three-carriers-their-meaning-and-their-order"><strong>Particle Spins in the Biquaternion Algebra: Three Carriers, Their Meaning and Their Order</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The algebra has three carriers and they are not on the same footing. One of them costs nothing: the real vector part $\mathfrak{k}\subset\mathbb{B}_{V}$, on which the algebra acts by conjugation, is there before any frame is chosen and stays the same subspace in every frame. The second costs one idempotent: the minimal left ideal $\mathbb{B}\tilde\Pi$ exists only once an axis is chosen, and the axis is a frame and not a datum. The third is the answer to a question about the first two: the centre is what the conjugation cannot move, and it is therefore named without any choice at all. <strong>The order in which the corpus can build its physics — the operator, then the state, then the invariant — is the order of what each carrier costs, and this article states the criterion, checks it on the three carriers, and reads the particle content in it.</strong></p>
+<p><strong>What is established.</strong> Five things. First, the non-commutativity of $\mathbb{B}$ is located exactly on $\mathfrak{k}$: the commutator of two vector elements is a vector element, while the product of two is not, and those two facts together are what makes $\mathfrak{k}$ a Lie algebra that is not a subalgebra. Second, the adjoint action of a rotor on $\mathfrak{k}$ is a rotation with weights $+1$, $0$, $-1$, so the carrier has three states, and the third polarization of a massive vector is one of its dimensions rather than an extra ingredient. Third, the ideal is not canonical: conjugation by a rotor sends it to a different ideal of the same dimension, and the intersection of the two is smaller than either. Fourth, the centre is the commutant of the whole algebra, two real dimensions, one complex, fixed pointwise by every unit element. Fifth, the three dimensions are $3$, $2$, $1$, which are $2s+1$ at $s=1$, $\tfrac12$, $0$, so the arithmetic of the carriers and the arithmetic of the spins are the same arithmetic.</p>
+<p><strong>What this article does not claim.</strong> It does not claim that the vector carrier is more important, or more numerous, or more fundamental in the sense of compositeness. The menu as it stands holds $67$ entries in the spin-one bands, $115$ in the spin-$\tfrac12$ bands and $110$ in the spin-zero bands. It does not claim that the adjoint carrier is a state: no amplitude lives on $\mathfrak{k}$, and a Hilbert space of vectors is not what the algebra offers. It does not claim that the algebra is built in time. <strong>What is ordered is not the algebra but the number of choices a statement costs, and that number is a fact about the algebra.</strong></p>
+<p><strong>Why it stands here and not in Relativity.</strong> Relativity carries the three subspaces and gives each its own introduction; it names no particle, and this article names photons, quarks and scalars. <strong>The particle content appears for the first time in the spin bands that open every force block below, and those bands belong to no single block — so the reading of them is stated once, here, between the last block that has no particles and the first block that has them.</strong></p>
+<p><strong>Why it follows the survey.</strong> The survey, in Relativity, fixes the catalogue: three carriers, no fourth, and the two repairs that the passage from a carrier to a subspace costs. What it does not do is rank them, and the ranking is what a reader needs before the first band, because each band writes its field on one of the three. <strong>One half of the question is Relativity's, the other half belongs to no sector, and this is where the second half is stated.</strong></p>
+<h2 id="the-three-carriers-and-the-criterion">The Three Carriers and the Criterion</h2>
+<p><strong>The catalogue, from the companion article on tensor products.</strong> The three carriers are the centre, the ideals and the material sector's scalar-free part:</p>
+<p>$$
+\mathbb{B}_{C}=\mathbb{C}e_t, \qquad S_{\pm}=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}, \qquad \mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k} .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Carrier</th>
+<th>Set</th>
+<th>Action</th>
+<th>Spin</th>
+<th>Real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre</td>
+<td>$\mathbb{C}e_t$</td>
+<td>conjugation; fixed</td>
+<td>$0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>ideals</td>
+<td>$\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$</td>
+<td>left multiplication</td>
+<td>$\tfrac12$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>vector part</td>
+<td>$\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z\subset\mathbb{B}_{V}$</td>
+<td>conjugation</td>
+<td>$1$ on $\mathfrak{k}$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The criterion.</strong> Ask of each carrier how much must be chosen before it can be named.</p>
+<ul>
+<li>The vector part is named by the algebra alone. Conjugation preserves it, so a statement about it does not depend on which unit element performs the conjugation.</li>
+<li>The ideal is named by an idempotent. Change the idempotent and the ideal changes, so a statement about it carries the frame that produced it.</li>
+<li>The centre is named by a property with no free parameter: it is the set of elements that commute with everything. No choice can move it and no choice is needed to define it.</li>
+</ul>
+<p><strong>Three answers: no choice, one choice, and the invariant of all choices.</strong> That is the order, and the rest of the article is the verification.</p>
+<h2 id="the-vector-part-is-where-the-algebra-fails-to-commute">The Vector Part Is Where the Algebra Fails to Commute</h2>
+<p><strong>Two vector units do not commute.</strong> In the framework's basis the product is $\vec e_x\vec e_y=\vec e_z$ and $\vec e_y\vec e_x=-\vec e_z$, so</p>
+<p>$$
+[\vec e_x,\vec e_y]=2\vec e_z .
+$$</p>
+<p><strong>The commutator closes on $\mathfrak{k}$ and the product does not.</strong> The bracket of any two elements of $\mathfrak{k}$ is again an element of $\mathfrak{k}$; this holds for all nine ordered pairs and is the statement that $\mathfrak{k}$ is a Lie algebra under the commutator. The product fails for exactly the three squares, $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$, which land on the Hermitian scalar and not on the vector part; the other six products stay inside. <strong>So $\mathfrak{k}$ is a Lie algebra that is not an associative subalgebra, and the three failures are the three squares.</strong></p>
+<p><strong>This is where the algebra's non-commutativity lives, and nowhere else.</strong> The centre commutes with everything, so $[Q_t e_t,\tilde Q]=[i q'_t e_t,\tilde Q]=0$ for every element $\tilde Q$; no failure of commutativity is located there. An algebra with no vector part is the centre, $\mathbb{C}$, commutative by definition and with nothing to rotate. <strong>The vector part is not a piece of the algebra that happens to be three-dimensional; it is the piece that makes the algebra non-commutative, and the non-commutativity is what the whole framework reads as a connection.</strong></p>
+<h2 id="the-adjoint-action-rotates-the-vector-part-without-choosing-anything">The Adjoint Action Rotates the Vector Part Without Choosing Anything</h2>
+<p><strong>The transformation law.</strong> A unit rotor $\tilde u=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u$ acts on the material sector by conjugation,</p>
+<p>$$
+\tilde R_\Phi\;\longmapsto\;\tilde u\,\tilde R_\Phi\,\tilde u^{*},
+$$</p>
+<p>and on the vector part this is a rotation. Three numbers fix that statement, and all three were verified on the matrix of the map in the basis $(\vec e_x,\vec e_y,\vec e_z)$: the trace is $1+2\cos\theta$, the determinant is $1$, and the axis $\vec u$ is fixed. <strong>The spectrum is therefore $1$, $e^{i\theta}$, $e^{-i\theta}$ — weights $+1$, $0$, $-1$ — and the carrier is spin one with its three states.</strong></p>
+<p><strong>The generators are the same three units.</strong> The inner derivation $\mathrm{ad}_{\vec e_z}(v)=[\vec e_z,v]$ acts on the complexified vector part with eigenvalues $-2i$ on $\vec e_x+i\vec e_y$, $+2i$ on $\vec e_x-i\vec e_y$ and $0$ on $\vec e_z$, so the one-parameter group it generates is the rotation above. <strong>The algebra does not need an imported representation of $SU(2)$: it contains three elements whose brackets are the rotation algebra, and the factor of two in that bracket is exactly the half angle carried by the rotor.</strong></p>
+<p><strong>Nothing is chosen.</strong> No idempotent, no axis, no basis and no frame enters the definition of $\mathfrak{k}$. Every rotor produces another rotation of the same subspace, and the subspace is the same subspace in each. <strong>That is the precise sense in which the vector part is canonical: it is $\mathfrak{k}$ in every frame, and a statement about it is a statement about the algebra.</strong></p>
+<p><strong>Why three matters.</strong> The dimension is $2\cdot 1+1$. A massive vector has three independent polarization directions, and the corpus does not add the third by hand: it is the number of dimensions the carrier has. The companion article on the third polarization reads the same fact from the field strength, where the longitudinal mode is the one the self-dual split cannot reach. <strong>The third state is a dimension of the carrier, and a carrier that had two dimensions could not have it.</strong></p>
+<h2 id="the-ideal-costs-one-idempotent-and-an-idempotent-is-a-frame">The Ideal Costs One Idempotent, and an Idempotent Is a Frame</h2>
+<p><strong>The construction.</strong> Let</p>
+<p>$$
+\tilde\Pi=\tfrac12\left(e_t+i\vec u\right),\qquad \vec u\cdot\vec u=1 ,
+$$</p>
+<p>with the axis taken along $\vec e_z$ for the check. It is idempotent, $\tilde\Pi^{2}=\tilde\Pi$, and the left ideal $\mathbb{B}\tilde\Pi$ is four real dimensions, two complex. <strong>Left multiplication acts on it irreducibly</strong>: the operators of left multiplication by the eight basis elements, written on a basis of the ideal, have a commutant of one complex dimension and no invariant subspace. That is the whole content of the spin-$\tfrac12$ carrier.</p>
+<p><strong>The dimension is $2\cdot\tfrac12+1$, and it is the reason there is no spin-one module.</strong> Every finite-dimensional module of $\mathbb{B}\cong M_2(\mathbb{C})$ is a direct sum of copies of the defining module, so its complex dimension is even. A three-dimensional module would need a unital algebra map $M_2(\mathbb{C})\to M_3(\mathbb{C})$; its image would be a unital simple subalgebra of $M_3(\mathbb{C})$, and the only one is $M_3(\mathbb{C})$ itself, of complex dimension nine. <strong>The counting argument the companion article gives — $1+2+3&gt;4$ — is the same obstruction stated on the weights.</strong></p>
+<p><strong>But conjugation does not preserve the ideal.</strong> Taking a rotor and conjugating the whole ideal gives another ideal of the same dimension, and the two are different subspaces: the span of the two has dimension eight, the whole algebra. <strong>So the ideal is not a property of the algebra; it is a property of the algebra together with a chosen axis.</strong> This is the proof of the sentence the corpus uses in its discussion of the state: the axis is a frame and not a datum.</p>
+<p><strong>Therefore the ideal is a carrier of states and not of operators.</strong> An operator statement is a statement about $\mathfrak{k}$ or about the algebra, and it can be made without choosing anything. A state statement needs the ideal, because an amplitude is a component, and a component is a coefficient in a basis of an ideal. <strong>The cost of a state is one idempotent, and it is paid once per frame.</strong></p>
+<h2 id="the-centre-is-what-no-frame-can-move">The Centre Is What No Frame Can Move</h2>
+<p><strong>The centre is the commutant, and its dimension was checked.</strong> Solving $[\tilde Q,\tilde X]=0$ for all eight basis elements $\tilde X$ leaves exactly two real dimensions, spanned by $e_t$ and $ie_t$. The corpus calls the centre the fixed line of the adjoint action; the computation says the same thing and adds the dimension, which is two over $\mathbb{R}$ and one over $\mathbb{C}$.</p>
+<p><strong>It is fixed pointwise by every unit element.</strong> Conjugation by a rotor or by a central phase leaves $e_t$ and $ie_t$ unchanged, element by element and not up to a rotation. <strong>So the centre is not a subspace that a frame rotates into itself, like $\mathfrak{k}$; it is a subspace that no frame touches at all.</strong> The distinction is the whole difference between spin one and spin zero in this framework.</p>
+<p><strong>The dimension is $2\cdot 0+1$, one complex.</strong> A single state, no multiplet, no axis and no polarization: a scalar has one component in every frame, and that is what the count says.</p>
+<p><strong>What the physics does with it.</strong> The vacuum value of the corpus's scalar sector is central, $\langle\tilde\Xi\rangle=\langle\xi\rangle e_t$, and the local redundancy that produces the connection is a localization of the central phase. <strong>A scalar has one thing to say — a phase and a magnitude — and the centre is exactly the carrier that can say it and nothing else.</strong></p>
+<h2 id="the-order-is-a-dependency-stated-in-one-place">The Order Is a Dependency, Stated in One Place</h2>
+<p><strong>The ideal presupposes an element, and an element presupposes the decomposition.</strong> $\tilde\Pi$ is an element of $\mathbb{B}$; naming it requires the algebra, and the algebra is understood through the conjugacy decomposition into centre and vector part. <strong>An axis is a direction in $\mathfrak{k}$, so the choice that produces the ideal is a choice made on the spin-one carrier.</strong></p>
+<p><strong>The centre presupposes the action.</strong> It is defined as the commutant, that is, as the set of elements the adjoint action leaves alone. Its definition quotes the action of the first carrier.</p>
+<p><strong>So the two later carriers are functions of the first: one is an orbit of a chosen point under it, the other is its fixed set.</strong> That is the dependency, and it is the reason the order is not a matter of taste.</p>
+<p><strong>The limit of the statement.</strong> The three carriers are co-defined; the algebra is not assembled in time, and nothing here says that $\mathfrak{k}$ is logically prior to the centre in every possible presentation. <strong>What is ordered is the cost of a statement, and the cost is $0$, $1$, $0$-but-only-as-an-invariant. A presentation that begins with the scalar must first choose a frame in order to say that the scalar does not depend on it.</strong></p>
+<h2 id="the-physics-in-the-same-order">The Physics in the Same Order</h2>
+<h3 id="the-operator-the-bosons-of-the-connection">The operator: the bosons of the connection</h3>
+<p><strong>Vector bosons are the carrier read as a field.</strong> The photon, $W^{+}$, $W^{-}$ and $Z$ are components of connections in $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$: the central slot carries the temporal component, $\mathfrak{k}$ the three spatial ones, and the transformation law is the conjugation above. In the $\mathrm{SU}(4)$ model the connection has fifteen directions, nine massless above $M_C$ and six heavy; the six are the leptoquarks, and the article that classifies them reads each of the fifteen as a cell of one grid. <strong>The gluons enter as a residual reading of the same fifteen, and the colours are a coordinate label on the fifteen rather than a charge.</strong></p>
+<p><strong>The mass of a vector is not a vector statement.</strong> The Proca mass is an input, written $k_m$ and put in by hand; above $M_C$ the $\mathrm{SU}(4)$ mass form is the commutator double bracket $2v^{2}[D,[D,\cdot\,]]$, which vanishes when the condensate does. <strong>The carrier supplies the three states and not their splitting, which is why the third polarization exists at every mass and why its energy depends on the mass.</strong></p>
+<p><strong>The graviton does not escape the order.</strong> Its carrier is the symmetric trace-free square of the material vector,</p>
+<p>$$
+\left(V\odot V\right)_{\mathrm{sym}}=0\oplus 2,\qquad 6=1+5 ,
+$$</p>
+<p>so spin two is built from the spin-one carrier by a symmetric square and a removal of the trace. <strong>The vector part is prior even to the spin that lies above it.</strong></p>
+<h3 id="the-state-the-fermions">The state: the fermions</h3>
+<p><strong>Fermions are the ideal read as a field.</strong> Sixteen Weyl fields in the $\mathrm{SU}(4)$ model, the quarks and the leptons, the electron and the neutrinos. <strong>Chirality is a property of the carrier and not of the algebra: left multiplication carries the chiral spinor $(\tfrac12,0)$, and its conjugate $(0,\tfrac12)$ is the conjugate module, with a conjugate-linear action, and not a complex module of $\mathbb{B}$ at all. The framework therefore has one chiral spinor carrier and reaches the other chirality by conjugation.</strong></p>
+<p><strong>The statistics sign is a property of the carrier as well.</strong> The exchange sign is $(-1)^{2s}$, and the algebra separates the two cases by the action of $-e_t$: it acts as $-1$ on the ideal and trivially on the centre and on $\mathfrak{k}$. <strong>The module and the adjoint sector track the two integrality classes, so the sign is read off the carrier and the spin–statistics theorem is not needed to see which side a field is on.</strong></p>
+<p><strong>The cost of a fermion mass is one more choice.</strong> The Yukawa sector is a single matrix and its diagonalisation, and the matrix is an input. <strong>A state can be written for free once a frame is fixed; a mass needs a second structure on the same frame, and that is where the framework's fermion sector stops.</strong></p>
+<p><strong>The electroweak block has no fermion action, and the reason is the order.</strong> The algebra owns the connection outright and the chiral matter by transcription; the action on doublets and singlets is one of the imported rows. <strong>A sector can be complete on the carrier it owns and incomplete on the one it borrows, and the electroweak block is exactly that.</strong></p>
+<h3 id="the-invariant-the-scalars">The invariant: the scalars</h3>
+<p><strong>Three scalars, three different relations to the centre.</strong> The Higgs doublet is imported with its representation, and its role in the corpus's own bookkeeping is the sharpest statement of the order: the connection gains a longitudinal mode and the scalar loses one, so the count balances at $4=4$. <strong>The scalar's degree of freedom becomes a state of the vector, which is the order of the carriers performed on a single field.</strong></p>
+<p><strong>The pion is a rotor.</strong> The chiral field is a unit quaternion and the chiral Lagrangian is built from its derivatives; the diagonal case $g_L=g_R=g_V$ is the adjoint action, so the pion's own action on the vector part is the conjugation that defines spin one. <strong>The strong sector's scalar is a group element acting on $\mathfrak{k}$, not an element of the centre, and the framework's one natively constructed scalar is therefore written on the spin-one carrier.</strong></p>
+<p><strong>The axion and the sigma belong to the same two families</strong>: a phase of the centre and a radial mode of the rotor. <strong>No scalar in the corpus is a fourth kind of object; each is either an invariant or a rotation.</strong></p>
+<h3 id="above-spin-math120-and-spin-two">Above: spin $\tfrac32$ and spin two</h3>
+<p><strong>The Rarita–Schwinger field is a module tensored with a vector index</strong>, with a constraint that removes the lower spin, and its equation is imported. <strong>Spin two is the symmetric square of the vector.</strong> Both live outside the base algebra for the same reason: a tensor product is not a subcarrier, and the closure of the three carriers is a statement about $\mathbb{B}$ alone.</p>
+<h2 id="what-the-order-does-not-say">What the Order Does Not Say</h2>
+<p><strong>It does not rank the carriers by quantity.</strong> $67$ spin-one entries, $115$ spin-$\tfrac12$ entries, $110$ spin-zero entries and $15$ other-spin entries in the menu, counted band by band. <strong>The thinnest band is the one this article puts first, and the two thickest are the ones it puts second and third.</strong></p>
+<p><strong>It does not make the vector a module.</strong> The adjoint is not a carrier of amplitudes, and a state written on $\mathfrak{k}$ is not a state the framework has. <strong>The order is an order of construction, not a licence to move a state onto the vector part.</strong></p>
+<p><strong>It does not say that every sector uses the carriers in equal measure.</strong> The electromagnetic block carries one carrier and no matter: no article in it puts a spin-$\tfrac12$ or a spin-$0$ field in an electromagnetic role, and the Dirac title that appears there is the parabolic operator, which reformulates Maxwell and describes no fermion. The strong block reads the non-abelian factor as the rotation group of space, and receives a scalar that is a rotor rather than a centre element. <strong>The order describes the carriers, and a sector may use one of them and not the others.</strong></p>
+<p><strong>It does not derive the Standard Model.</strong> The algebra lists three carriers; it does not say which particle occupies which, and the assignment of the fifteen and the sixteen is a declaration with a mass spectrum attached. <strong>The order says which carrier a sector's field must be written on, not which fields exist.</strong></p>
+<h2 id="consequences-for-reading-the-corpus">Consequences for Reading the Corpus</h2>
+<p><strong>The menu runs $1$, $\tfrac12$, $0$, then other spins, and this article is the argument for that arrangement.</strong> Every block that carries a spin band now opens on the vector, continues with the ideal, closes on the centre, and puts the tensor-product spins last, where they belong: they are not carriers of the algebra but products of it. <strong>Reading in that order has one advantage: each band uses only what the band above it has already established.</strong> The connection needs no idempotent, the state needs one, and the invariant needs the frame in order to be defined as what the frame cannot move.</p>
+<p><strong>The other enumerations have their own criteria.</strong> The tensor-product article's catalogue lists the centre first, the ideals second and the material sector third, because its subject is the isotypic decomposition of two actions and the enumeration follows the algebra's own order. The four object articles — those that list every article on one equation — mirror the menu band by band within each category, and they now run in the same order as the menu does. <strong>The catalogue is an enumeration by the algebra's own order; the object lists are a projection of the menu. Neither is an ordering by cost, and the three are compatible once the criterion is named.</strong></p>
+<p><strong>No article moves and no identity changes.</strong> The order is a reading order: it reorders what is already written, and it leaves every field where the sector that owns it has put it.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>Can the ideal be derived rather than chosen?</strong> A state is a coefficient in a frame, and a frame is an idempotent. Whether the framework can produce a frame dynamically — whether the axis can be an output of the dynamics rather than an input to the notation — is not settled here. <strong>A positive answer would move the cost of a state from one choice to zero, and the order would collapse to a single carrier.</strong></p>
+<p><strong>Is the centre's priority visible in the action?</strong> The vacuum is central and the mass form is built on it, so the centre does appear as a fixed point of the dynamics. <strong>Whether the central value is selected or assumed is the question the symmetry-breaking block answers in the negative: it is assumed.</strong></p>
+<p><strong>Why this triple and not another?</strong> The dimensions $1$, $2$, $3$ are $2s+1$ at $s=0$, $\tfrac12$, $1$, and the sequence stops there because the algebra is $M_2(\mathbb{C})$. <strong>A larger algebra would have a longer list and the order would still be by cost; whether the cost criterion extends to the tensor-product carriers is open.</strong></p>
+<p><strong>Is the menu's asymmetry a fact about the physics or about the writing?</strong> The scalar band is thinner than the fermion band by five entries and thicker than the vector band by forty-three. <strong>A band's size measures the corpus's attention and not the carrier's rank, and the two have not been compared anywhere.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>Three carriers and one order: the vector part, then the ideal, then the centre.</strong></p>
+<p><strong>The vector part is canonical.</strong> It is the set on which the algebra's non-commutativity lives, the commutator closes on it while the product does not, and conjugation by any unit element rotates it without moving it. Its three dimensions are $2\cdot1+1$, and the third polarization of a massive vector is one of them.</p>
+<p><strong>The ideal is a frame.</strong> It costs one idempotent, it is irreducible, its dimension is $2\cdot\tfrac12+1$, and conjugation sends it to a different ideal of the same dimension, so no statement about it is free of the axis that produced it.</p>
+<p><strong>The centre is the invariant of every frame.</strong> It is the commutant, two real dimensions, fixed pointwise, $2\cdot0+1$, and it is where the vacuum, the phase and the classical limit live.</p>
+<p><strong>The physics reads in the same order.</strong> Bosons are the vector carrier, fermions are the ideal, scalars are the centre or a rotor; the third polarization, the Goldstone bookkeeping at $4=4$ and the graviton's symmetric square are all statements about the first.</p>
+<p><strong>The order is a cost and not a rank.</strong> The thinnest band in the menu is the one that comes first.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}$</td>
+<td>the biquaternion algebra over $\mathbb{R}$, eight real dimensions; the centre two, the vector subspace six</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{C}=\mathbb{C}e_t$</td>
+<td>the centre, two real dimensions</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}\subset\mathbb{B}_{V}$</td>
+<td>the real vector part, three real dimensions, the spin-one carrier</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$</td>
+<td>the material sector, four real dimensions</td>
+</tr>
+<tr>
+<td>$S_{\pm}=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$</td>
+<td>the minimal left ideals, four real dimensions each</td>
+</tr>
+<tr>
+<td>$\tilde\Pi$</td>
+<td>an idempotent, the frame the ideal is built on</td>
+</tr>
+<tr>
+<td>$\tilde u$</td>
+<td>a unit rotor, $\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\vec e_{\imath}}$</td>
+<td>the inner derivation $[\vec e_{\imath},\cdot\,]$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="rotor-spin-pair-and-carrier-a-survey-of-the-closure-block.html">Rotor, Spin, Pair and Carrier: A Survey of the Closure Block</a>, for the catalogue, the closures and the proof that a fourth carrier does not exist.</li>
+<li><a href="the-spin-zero-centre-subspace.html">Introduction to the Spin-Zero Centre Subspace</a>, <a href="the-spin-half-bispinor-spaces.html">Introduction to the Spin-Half Bispinors Spaces</a> and <a href="the-spin-one-anti-hermitian-subspace.html">Introduction to the Spin-One Anti-Hermitian Subspace</a>, for the three carriers each read on its own.</li>
+<li><a href="higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html">Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</a>, for the isotypic decomposition behind the catalogue.</li>
+<li><a href="the-determination-of-the-possible-spins-in-biquaternionic-form.html">The Determination of the Possible Spins in Biquaternionic Form</a>, for the same three values read as Casimir labels.</li>
+<li><a href="the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html">The Centre of the Biquaternion Algebra as the Classical Sector</a>, for the commutant and the superselection structure.</li>
+<li><a href="spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.html">Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module</a>, for the spin-zero carrier's exclusion from the amplitude space.</li>
+<li><a href="integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html">Integer Spin Quantization and the Adjoint Action on the Material Sector</a>, for the quantization of the adjoint carrier.</li>
+<li><a href="the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.html">The Third Polarization and the Self-Dual Split of the Massive Field Strength</a>, for the longitudinal mode and the two helicities.</li>
+<li><a href="canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a>, for the three polarizations as oscillators.</li>
+<li><a href="the-covariant-derivative-and-connection-in-biquaternionic-form.html">The Covariant Derivative and Connection in Biquaternionic Form</a>, for the connection as the carrier's field.</li>
+<li><a href="the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html">The Chiral Theory and the Lagrangian: The Pion and the Decay Constant</a>, for the pion as a unit quaternion and the diagonal adjoint case.</li>
+<li><a href="the-nonlinear-sigma-model-in-biquaternionic-form.html">The Nonlinear Sigma Model in Biquaternionic Form</a>, for the group-valued scalar and its targets.</li>
+<li><a href="the-higgs-mechanism-in-biquaternionic-form.html">The Higgs Mechanism in Biquaternionic Form</a>, for the count $4=4$ that moves a scalar degree of freedom into a vector state.</li>
+<li><a href="classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html">Classification of the Bosons in the SU(4) Model</a>, for the fifteen directions, nine massless and six heavy.</li>
+<li><a href="classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html">Classification of the Fermions in the SU(4) Model</a>, for the sixteen Weyl fields and their discrete symmetries.</li>
+<li><a href="canonical-quantization-of-the-biquaternion-graviton-field.html">Canonical Quantization of the Biquaternion Graviton Field</a>, for the symmetric square $0\oplus 2$ and $6=1+5$.</li>
+<li><a href="the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</a>, for the first carrier that is not a subcarrier of $\mathbb{B}$.</li>
+<li><a href="the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a>, for the trace that turns a carrier into a number.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
