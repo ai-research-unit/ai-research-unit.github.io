@@ -81,7 +81,7 @@
   of dimension $2p(5-p)$, a fibre bundle over the Grassmannian $\operatorname{Gr}(p,5)$ whose fibre is the contractible affine space of complements;</li>
 <li>the full flag variety $GL_5/B$ has dimension $10$;</li>
 <li>the partial flags and their incidence relations organize the nested subspaces;</li>
-<li>the gauge torus is the diagonal fibre of the frame bundle $GL_5\to GL_5/B$.</li>
+<li>the frame torus is the diagonal fibre of the frame bundle $GL_5\to GL_5/B$.</li>
 </ul>
 <p>The rank-one case is the model. A rank-one idempotent is $P=v\ell$ with $\ell(v)=1$; the image is the line $[v]\in\mathbb{P}^4$, and the fibre over $[v]$ is the affine space of linear functionals $\ell$ with $\ell(v)=1$, of dimension $4$. The total space has dimension $4+4=8$. The idempotent is determined by the pair (line, transverse hyperplane), not by a nested flag: the kernel is a complement of the image, not a hyperplane containing it.</p>
 <p>The rank-$p$ case is the same picture with a $p$-plane: the idempotent is the projection onto a $p$-plane $L$ along a complementary $(5-p)$-plane $K$. The base is the Grassmannian $\operatorname{Gr}(p,5)$ of $L$, of dimension $p(5-p)$; the fibre over $L$ is the affine space of complements $K$, also of dimension $p(5-p)$; the total is $2p(5-p)$.</p>
@@ -159,7 +159,7 @@ M_5=P M_5 P\oplus P M_5(1-P)\oplus(1-P)M_5P\oplus(1-P)M_5(1-P),
 $$</p>
 <p>of dimensions $p^2$, $p(5-p)$, $p(5-p)$, $(5-p)^2$. The off-diagonal summands form the tangent space to the orbit of $P$, of dimension $2p(5-p)$; the diagonal summands form the stabilizer, of dimension $p^2+(5-p)^2$.</p>
 <p><strong>Proof.</strong> The four corners are the Peirce spaces; the multiplication table is the block multiplication. The tangent space to the conjugation orbit is $\{[X,P]:X\in\mathfrak{gl}_5\}$, which is the off-diagonal part; the stabilizer is the block diagonal part.</p>
-<p><strong>Corollary.</strong> The Peirce decomposition is the infinitesimal form of the affine bundle: the off-diagonal corners are the directions of the image and kernel, the diagonal corners the gauge directions.</p>
+<p><strong>Corollary.</strong> The Peirce decomposition is the infinitesimal form of the affine bundle: the off-diagonal corners are the directions of the image and kernel, the diagonal corners the frame directions.</p>
 <p><strong>Proof.</strong> The tangent directions change the image or the kernel; the stabilizer directions preserve the decomposition.</p>
 <p><strong>Remark.</strong> <strong>The geometry of the idempotents is the geometry of the Peirce decomposition.</strong> The idempotent is the projection onto the $1$-eigenspace along the $0$-eigenspace; the four corners are the four Peirce spaces; the orbit is the off-diagonal part; the stabilizer is the diagonal part. The rank stratification is the stratification by the dimension of the $1$-eigenspace.</p>
 <h2 id="the-full-flag-variety">The Full Flag Variety</h2>
@@ -215,21 +215,21 @@ $$</p>
 <p><strong>Corollary.</strong> The idempotents of rank $p$ are the open subset of $\operatorname{Gr}(p,5)\times\operatorname{Gr}(5-p,5)$ where the two subspaces are transverse; the closure contains the incident pairs.</p>
 <p><strong>Proof.</strong> The transverse condition is open; the boundary is the incident locus, where the subspaces meet nontrivially.</p>
 <p><strong>Remark.</strong> <strong>The geometry of the idempotents is the geometry of the transverse pairs, and the geometry of the flags is the geometry of the nested chains.</strong> The two are related by the incidence but are not the same. The idempotent of rank $p$ is the projection onto the first subspace along the second; the nested flag is the chain of subspaces. The affine bundle of complements is the difference.</p>
-<h2 id="the-gauge-and-the-frame-bundle">The Gauge and the Frame Bundle</h2>
+<h2 id="the-frame-group-and-the-frame-bundle">The Frame Group and the Frame Bundle</h2>
 <h3 id="the-frame-bundle">The Frame Bundle</h3>
 <p><strong>Definition.</strong> A <strong>frame</strong> of $\mathbb{C}^5$ is a basis $(v_1,\dots,v_5)$; the <strong>frame bundle</strong> is $\mathcal{F}=GL_5$, with the projection to the flag variety sending a basis to the flag it spans.</p>
 <p><strong>Theorem.</strong> The frame bundle $GL_5\to GL_5/B$ has fibre the Borel $B=T\ltimes U$; the structure group is $B$; the frame bundle is a principal $B$-bundle.</p>
 <p><strong>Proof.</strong> The fibre over the standard flag is the set of bases adapted to the flag, which is the Borel: the diagonal rescalings and the upper triangular changes.</p>
-<p><strong>Corollary.</strong> The diagonal torus $T$ is the gauge group of the frame; the unipotent $U$ is the group of triangular changes of the frame.</p>
+<p><strong>Corollary.</strong> The diagonal torus $T$ is the frame group of the frame; the unipotent $U$ is the group of triangular changes of the frame.</p>
 <p><strong>Proof.</strong> The diagonal changes rescale the basis vectors; the unipotent changes add higher vectors to lower ones; the semidirect product is the Borel.</p>
-<h3 id="the-gauge-fibre">The Gauge Fibre</h3>
-<p><strong>Theorem.</strong> The gauge torus $T\cong(\mathbb{C}^\times)^5$ acts on the frames by rescaling the basis vectors. The centre $\mathbb{C}^\times$ acts trivially on the flag and on the projection; the effective gauge group is $T/\mathbb{C}^\times\cong(\mathbb{C}^\times)^4$, of dimension $4$.</p>
-<p><strong>Proof.</strong> The rescaling $v_k\mapsto t_kv_k$ changes the frame but not the flag if the $t_k$ are nonzero; the common scaling of all $v_k$ changes nothing in the flag or the projection. The four ratios $t_k/t_{k+1}$ are the gauge parameters.</p>
-<p><strong>Corollary.</strong> The four gauge parameters are the simple-root directions of the torus; the composites are the products; there is no fifth independent scalar.</p>
+<h3 id="the-frame-fibre">The Frame Fibre</h3>
+<p><strong>Theorem.</strong> The frame torus $T\cong(\mathbb{C}^\times)^5$ acts on the frames by rescaling the basis vectors. The centre $\mathbb{C}^\times$ acts trivially on the flag and on the projection; the effective frame group is $T/\mathbb{C}^\times\cong(\mathbb{C}^\times)^4$, of dimension $4$.</p>
+<p><strong>Proof.</strong> The rescaling $v_k\mapsto t_kv_k$ changes the frame but not the flag if the $t_k$ are nonzero; the common scaling of all $v_k$ changes nothing in the flag or the projection. The four ratios $t_k/t_{k+1}$ are the frame parameters.</p>
+<p><strong>Corollary.</strong> The four frame parameters are the simple-root directions of the torus; the composites are the products; there is no fifth independent scalar.</p>
 <p><strong>Proof.</strong> The torus has dimension $5$; the centre has dimension $1$; the quotient has dimension $4$. The simple roots are the four ratios.</p>
-<p><strong>Corollary.</strong> The gauge is the fibre of the frame bundle modulo the centre; the frame bundle is the $T$-bundle over the flag variety with the four-parameter gauge fibre.</p>
-<p><strong>Proof.</strong> The frame bundle has fibre $B$; the diagonal part is $T$; the centre acts trivially on the flag; the effective gauge is $T/\mathbb{C}^\times$.</p>
-<p><strong>Remark.</strong> <strong>The gauge is the diagonal fibre of the frame bundle.</strong> The frame bundle $GL_5\to GL_5/B$ has the Borel as fibre; the diagonal torus is the gauge, the unipotent is the triangular change. The four parameters are the ratios of the diagonal scalings; they rescale the simple nilpotents and fix the root. The geometry of the idempotents and the flags is the geometry of the frames modulo the gauge.</p>
+<p><strong>Corollary.</strong> The frame group is the fibre of the frame bundle modulo the centre; the frame bundle is the $T$-bundle over the flag variety with the four-parameter frame fibre.</p>
+<p><strong>Proof.</strong> The frame bundle has fibre $B$; the diagonal part is $T$; the centre acts trivially on the flag; the effective frame group is $T/\mathbb{C}^\times$.</p>
+<p><strong>Remark.</strong> <strong>The frame group is the diagonal fibre of the frame bundle.</strong> The frame bundle $GL_5\to GL_5/B$ has the Borel as fibre; the diagonal torus is the frame group, the unipotent is the triangular change. The four parameters are the ratios of the diagonal scalings; they rescale the simple nilpotents and fix the root. The geometry of the idempotents and the flags is the geometry of the frames modulo the frame group.</p>
 <h2 id="summary">Summary</h2>
 <p>The idempotents of rank one form an affine bundle of rank $4$ over $\mathbb{P}^4$, of dimension $8$. The idempotents of rank $p$ form the homogeneous space</p>
 <p>$$
@@ -237,9 +237,9 @@ PGL_5/P(GL_p\times GL_{5-p}),
 $$</p>
 <p>of dimension $2p(5-p)$; they are the transverse pairs $(L,K)$ with $L\oplus K=\mathbb{C}^5$, and they fibre over $\operatorname{Gr}(p,5)$ with the contractible affine fibre of complements.</p>
 <p>$$
-\boxed{\ \dim\mathcal{I}_p=2p(5-p);\quad \dim GL_5/B=10;\quad \dim\operatorname{Gr}(p,5)=p(5-p);\quad \text{gauge}=(\mathbb{C}^\times)^4.\ }
+\boxed{\ \dim\mathcal{I}_p=2p(5-p);\quad \dim GL_5/B=10;\quad \dim\operatorname{Gr}(p,5)=p(5-p);\quad \text{frame group}=(\mathbb{C}^\times)^4.\ }
 $$</p>
-<p>The full flag variety $GL_5/B$ has dimension $10$; the nested partial flags have dimension $\sum d_i(d_{i+1}-d_i)$; the idempotents are the transverse pairs, not the nested flags. The Peirce decomposition splits the algebra into the four corners; the off-diagonal corners are the tangent space to the orbit, the diagonal corners the stabilizer. The gauge torus is the diagonal fibre of the frame bundle, of dimension $4$ modulo the centre.</p>
+<p>The full flag variety $GL_5/B$ has dimension $10$; the nested partial flags have dimension $\sum d_i(d_{i+1}-d_i)$; the idempotents are the transverse pairs, not the nested flags. The Peirce decomposition splits the algebra into the four corners; the off-diagonal corners are the tangent space to the orbit, the diagonal corners the stabilizer. The frame torus is the diagonal fibre of the frame bundle, of dimension $4$ modulo the centre.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -269,7 +269,7 @@ $$</p>
 <td>$\sum d_i(d_{i+1}-d_i)$</td>
 </tr>
 <tr>
-<td>Gauge torus</td>
+<td>Frame torus</td>
 <td>$4$ (effective)</td>
 </tr>
 <tr>
@@ -329,7 +329,7 @@ $$</p>
 <li><a href="the-peirce-decomposition-of-m5c.html">The Peirce Decomposition of $M_5(\mathbb{C})$</a>, for the four corners and the multiplication table.</li>
 <li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$</a>, for the orbits and the flag variety.</li>
 <li><a href="the-partial-flags-of-m5c.html">The Partial Flags of $M_5(\mathbb{C})$</a>, for the nested partial flags and their dimensions.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html">The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$</a>, for the gauge and the frame.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-frame-group-of-m5c.html">The Frame, the Simple Nilpotents and the Frame Group of $M_5(\mathbb{C})$</a>, for the frame group and the frame.</li>
 </ul>
       </div>
     </main>

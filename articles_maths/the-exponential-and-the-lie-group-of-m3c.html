@@ -84,7 +84,7 @@ $$</p>
 \det\exp X=e^{\operatorname{tr}X}.
 $$</p>
 <p>The real Lie algebra $\mathfrak{gl}_3$ has dimension $18$; the group $GL_3(\mathbb{C})$ has real dimension $18$; the $*$-unitary subgroup $U(3)$ has dimension $9$ and its Lie algebra $\mathfrak{u}(3)$ consists of the anti-Hermitian matrices; the special linear group $SL_3$ and its Lie algebra $\mathfrak{sl}_3$ have complex dimension $8$, and $\mathfrak{su}(3)$ has real dimension $8$.</p>
-<p>The article defines the exponential, computes it on the Jordan forms, proves the determinant and eigenvalue formulas, proves surjectivity and the failure of injectivity, describes the one-parameter subgroups and the Lie algebra, computes the root and the gauge in exponential coordinates, and works explicit matrices. The polar decomposition is <em>The Polar Decomposition of $M_3(\mathbb{C})$</em>; the combined exponential form is <em>The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates</em>; the analysis of the map is <em>Analysis on $M_3(\mathbb{C})$</em>.</p>
+<p>The article defines the exponential, computes it on the Jordan forms, proves the determinant and eigenvalue formulas, proves surjectivity and the failure of injectivity, describes the one-parameter subgroups and the Lie algebra, computes the root and the frame group in exponential coordinates, and works explicit matrices. The polar decomposition is <em>The Polar Decomposition of $M_3(\mathbb{C})$</em>; the combined exponential form is <em>The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates</em>; the analysis of the map is <em>Analysis on $M_3(\mathbb{C})$</em>.</p>
 <h2 id="definition-and-convergence">Definition and Convergence</h2>
 <p><strong>Definition.</strong> For $X\in M_3(\mathbb{C})$ the exponential is the sum of the series above.</p>
 <p><strong>Proposition.</strong> The series converges absolutely for every $X$, uniformly on compact sets, and defines a holomorphic map $\mathfrak{gl}_3\to M_3$.</p>
@@ -205,12 +205,12 @@ $$</p>
 \exp(\operatorname{ad}_X)(Y)=e^{X}Ye^{-X}.
 $$</p>
 <p><strong>Proof.</strong> The identity is the derivative at $t=0$ of $e^{tX}Ye^{-tX}$, and both sides satisfy the same differential equation with the same initial value.</p>
-<p><strong>The root and the gauge.</strong> For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, which are $*$-unitary,</p>
+<p><strong>The root and the frame group.</strong> For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, which are $*$-unitary,</p>
 <p>$$
 H=\exp K,\qquad
 K=\frac{2\pi i}{3}\big(P_2+2P_3\big),
 $$</p>
-<p>with $P_k$ the projector for $\omega_k$ and eigenvalues $0,2\pi i/3,4\pi i/3$. The matrix $K$ is anti-Hermitian. For a general root $H=SH_0S^{-1}$ the spectral logarithm $K=SK_0S^{-1}$ satisfies $H=\exp K$ but is anti-Hermitian only when $S$ can be chosen $*$-unitary, that is, when $H$ is normal; a non-normal root is not $*$-unitary. A gauge transformation $E\mapsto e^{t}Ee^{-t}$ with $t=\operatorname{diag}(t_1,t_2,t_3)$ traceless rescales the nilpotents:</p>
+<p>with $P_k$ the projector for $\omega_k$ and eigenvalues $0,2\pi i/3,4\pi i/3$. The matrix $K$ is anti-Hermitian. For a general root $H=SH_0S^{-1}$ the spectral logarithm $K=SK_0S^{-1}$ satisfies $H=\exp K$ but is anti-Hermitian only when $S$ can be chosen $*$-unitary, that is, when $H$ is normal; a non-normal root is not $*$-unitary. A frame transformation $E\mapsto e^{t}Ee^{-t}$ with $t=\operatorname{diag}(t_1,t_2,t_3)$ traceless rescales the nilpotents:</p>
 <p>$$
 e^{t}E_{ij}e^{-t}=e^{t_i-t_j}E_{ij},
 $$</p>
@@ -220,7 +220,7 @@ E_{12}\mapsto\lambda_1E_{12},\qquad
 E_{23}\mapsto\lambda_2E_{23},\qquad
 E_{13}\mapsto\lambda_1\lambda_2E_{13}.
 $$</p>
-<p>The product is forced by the additive parameters: $t_1-t_3=(t_1-t_2)+(t_2-t_3)$. The idempotents $P_k$ are eigenvectors of the gauge with eigenvalue $1$, so they do not depend on $\lambda$.</p>
+<p>The product is forced by the additive parameters: $t_1-t_3=(t_1-t_2)+(t_2-t_3)$. The idempotents $P_k$ are eigenvectors of the frame group with eigenvalue $1$, so they do not depend on $\lambda$.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p><strong>A nilpotent exponential.</strong> For</p>
 <p>$$
@@ -306,13 +306,13 @@ $$</p>
 <td>$6$</td>
 </tr>
 <tr>
-<td>gauge torus $T/\mathbb{C}^{\times}$</td>
+<td>frame torus $T/\mathbb{C}^{\times}$</td>
 <td>traceless diagonal</td>
 <td>$4$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The diagonal torus $T\cong(\mathbb{C}^{\times})^{3}$ has complex dimension $3$ and real dimension $6$; the gauge torus of the frame is $T/\mathbb{C}^{\times}$, of real dimension $4$ and complex dimension $2$.</p>
+<p>The diagonal torus $T\cong(\mathbb{C}^{\times})^{3}$ has complex dimension $3$ and real dimension $6$; the frame torus of the frame is $T/\mathbb{C}^{\times}$, of real dimension $4$ and complex dimension $2$.</p>
 <p><strong>The centre.</strong> The centre of $GL_3$ is $\mathbb{C}^{\times}I$, of real dimension $2$; the centre of $U(3)$ is $U(1)$, of real dimension $1$; the centre of $SU(3)$ is $\mu_3$, finite.</p>
 <p><strong>The adjoint group.</strong> $PGL_3=GL_3/\mathbb{C}^{\times}I$ has real dimension $16$ and complex dimension $8$, and its Lie algebra is $\mathfrak{sl}_3$. The exponential of $\mathfrak{sl}_3$ lands in $SL_3$, and the exponential of $\mathfrak{u}(3)$ lands in $U(3)$; the exponential of the traceless anti-Hermitian matrices lands in $SU(3)$.</p>
 <p><strong>The exponential is not a group homomorphism.</strong> In general $\exp(X+Y)\neq\exp X\exp Y$; the defect is the BCH series. The map is equivariant under conjugation,</p>
@@ -322,7 +322,7 @@ $$</p>
 <p>which is the statement that the exponential is natural for the adjoint action.</p>
 <p><strong>Proof.</strong> The series is invariant under conjugation term by term: $(SXS^{-1})^{n}=SX^{n}S^{-1}$.</p>
 <h2 id="summary">Summary</h2>
-<p>The exponential $\exp X=\sum X^{n}/n!$ is an entire surjection $\mathfrak{gl}_3(\mathbb{C})\to GL_3(\mathbb{C})$, with eigenvalues $e^{\lambda}$ and determinant $e^{\operatorname{tr}X}$. It is a local diffeomorphism at $X$ exactly when no two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. It is not injective: $\exp X=I$ exactly when $X$ is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$. Every invertible matrix has a logarithm, computed on the Jordan blocks by the finite series $(\log\lambda)I+N/\lambda-N^{2}/(2\lambda^{2})$. One-parameter subgroups are exactly the maps $t\mapsto e^{tX}$. The Lie algebra $\mathfrak{gl}_3$ has real dimension $18$; the subalgebras $\mathfrak{sl}_3$, $\mathfrak{u}(3)$, $\mathfrak{su}(3)$, $\mathfrak{so}(3)$ have dimensions $16$, $9$, $8$, $3$ over $\mathbb{R}$. For a $*$-unitary root $H$ one has $H=e^{K}$ with $K=\frac{2\pi i}{3}(P_2+2P_3)$ anti-Hermitian; a non-normal root is not $*$-unitary. The gauge rescales $E_{12},E_{23}$ by $e^{t_1-t_2},e^{t_2-t_3}$, forcing the composite $E_{13}$ to scale by the product.</p>
+<p>The exponential $\exp X=\sum X^{n}/n!$ is an entire surjection $\mathfrak{gl}_3(\mathbb{C})\to GL_3(\mathbb{C})$, with eigenvalues $e^{\lambda}$ and determinant $e^{\operatorname{tr}X}$. It is a local diffeomorphism at $X$ exactly when no two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. It is not injective: $\exp X=I$ exactly when $X$ is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$. Every invertible matrix has a logarithm, computed on the Jordan blocks by the finite series $(\log\lambda)I+N/\lambda-N^{2}/(2\lambda^{2})$. One-parameter subgroups are exactly the maps $t\mapsto e^{tX}$. The Lie algebra $\mathfrak{gl}_3$ has real dimension $18$; the subalgebras $\mathfrak{sl}_3$, $\mathfrak{u}(3)$, $\mathfrak{su}(3)$, $\mathfrak{so}(3)$ have dimensions $16$, $9$, $8$, $3$ over $\mathbb{R}$. For a $*$-unitary root $H$ one has $H=e^{K}$ with $K=\frac{2\pi i}{3}(P_2+2P_3)$ anti-Hermitian; a non-normal root is not $*$-unitary. The frame group rescales $E_{12},E_{23}$ by $e^{t_1-t_2},e^{t_2-t_3}$, forcing the composite $E_{13}$ to scale by the product.</p>
 <p>$$
 \boxed{\ \exp:\mathfrak{gl}_3\to GL_3\ \text{surjective, not injective};\quad \det e^{X}=e^{\operatorname{tr}X};\quad \dim_\mathbb{R}\mathfrak{gl}_3=18,\ \dim_\mathbb{R}\mathfrak{u}(3)=9,\ \dim_\mathbb{C}\mathfrak{sl}_3=8.\ }
 $$</p>

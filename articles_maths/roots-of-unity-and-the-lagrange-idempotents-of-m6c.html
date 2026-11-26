@@ -72,7 +72,7 @@
         <h1 id="roots-of-unity-and-the-lagrange-idempotents-of-math0"><strong>Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A single matrix carries the whole frame of $M_6(\mathbb{C})$: a root of unity $H$ with $H^6=I$ and six distinct eigenvalues. Its six eigenspaces are six lines, and the six Lagrange projectors onto them are idempotent, orthogonal and complete. The root is read as the sum $H=\sum_k\omega_kP_k$ of its idempotents with the sixth roots of unity as coefficients; the coefficients grade the algebra by $\mathbb{Z}/6$; and the cube $H^3$ is the chirality involution. <strong>No second object is primitive.</strong> The idempotents are functions of $H$ alone, and the root is the only input.</p>
-<p>The article fixes the root, the Lagrange formula, the grading and the root set, in that order. It assumes the algebra $M_6(\mathbb{C})$ — the basis $E_{ij}$, the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant — which is <em>The Matrix Algebra $M_6(\mathbb{C})$</em>. It uses no form, no norm and no topology. The Peirce decomposition that the six lines induce is <em>The Peirce Decomposition of $M_6(\mathbb{C})$</em>; the frame and its gauge are <em>The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</em>; the two chiralities are <em>The Two Chiralities of $M_6(\mathbb{C})$</em>; the spectral theory of an element with repeated eigenvalues, where the Lagrange formula degenerates, is <em>Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$</em>.</p>
+<p>The article fixes the root, the Lagrange formula, the grading and the root set, in that order. It assumes the algebra $M_6(\mathbb{C})$ — the basis $E_{ij}$, the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant — which is <em>The Matrix Algebra $M_6(\mathbb{C})$</em>. It uses no form, no norm and no topology. The Peirce decomposition that the six lines induce is <em>The Peirce Decomposition of $M_6(\mathbb{C})$</em>; the frame and its frame group are <em>The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$</em>; the two chiralities are <em>The Two Chiralities of $M_6(\mathbb{C})$</em>; the spectral theory of an element with repeated eigenvalues, where the Lagrange formula degenerates, is <em>Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$</em>.</p>
 <p>The construction is root-first. The biquaternion articles build the frame from two anticommuting roots of $+1$; here one root of order six supplies all six idempotents, and the order-two case is a specialisation, not a second ingredient. That contrast is stated in §<em>The Order-Two Case</em>.</p>
 <h2 id="the-sixth-roots-of-unity">The Sixth Roots of Unity</h2>
 <h3 id="the-roots">The Roots</h3>
@@ -347,12 +347,12 @@ $$</p>
 <p><strong>Proposition (the $6!$ of the labelling).</strong> A root is an ordered decomposition into six lines, the $k$-th line carrying the eigenvalue $\omega_k$. The symmetric group $S_6$, of order $6!=720$, acts freely by permuting the positions and hence the roots; the quotient is the space of unordered decompositions. Over that quotient the root set is a cover of degree $6!$.</p>
 <p><strong>Proof.</strong> Write the root as $(L_1,\dots,L_6)$ with $H|_{L_k}=\omega_kI$. Permuting the positions gives $(L_{\sigma(1)},\dots,L_{\sigma(6)})$, the root $\sum_k\omega_kP_{L_{\sigma(k)}}$, which differs from $H$ for $\sigma\neq\mathrm{id}$ because the six lines are distinct. The action is free. The fibre over the unordered set $\{L_1,\dots,L_6\}$ is the set of bijections from the six positions to the six lines, of cardinality $6!$.</p>
 <p><strong>Remark.</strong> The two numbers $30$ and $15$ are not in conflict. The root set has dimension $30$; the flag variety has dimension $15$; the fibre of the forgetful map is the $15$-dimensional space of splittings. The $6!$ is a discrete relabelling, not a continuous parameter: the root set is a $6!$-fold cover of the space of unordered decompositions. The map to the flag variety is defined on the root, where the eigenvalues order the lines; it does not descend to the unordered space.</p>
-<h3 id="the-root-and-the-gauge">The Root and the Gauge</h3>
-<p>The orbit count is the first half of the count of the frame. The frame of $M_6(\mathbb{C})$ is an ordered basis up to an overall scalar; the root fixes the six lines, and the gauge fixes one scale in each line. The root contributes $30$ parameters, the gauge $5$, and</p>
+<h3 id="the-root-and-the-frame-group">The Root and the Frame Group</h3>
+<p>The orbit count is the first half of the count of the frame. The frame of $M_6(\mathbb{C})$ is an ordered basis up to an overall scalar; the root fixes the six lines, and the fixes by a change of frame one scale in each line. The root contributes $30$ parameters, the frame group $5$, and</p>
 <p>$$
 30+5=35=\dim PGL_6 .
 $$</p>
-<p>The gauge is the subject of <em>The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</em>. The two counts meet because the frame is $PGL_6$ itself: a root is a point of $PGL_6/T$ and a gauge is a point of $T$.</p>
+<p>The frame group is the subject of <em>The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$</em>. The two counts meet because the frame is $PGL_6$ itself: a root is a point of $PGL_6/T$ and a frame group is a point of $T$.</p>
 <h2 id="the-order-two-case">The Order-Two Case</h2>
 <p><strong>The root of $+1$ is the order-two case of the same construction.</strong> Let $E\in M_2(\mathbb{C})$ satisfy $E^2=I_2$ with distinct eigenvalues $+1,-1$. The two Lagrange projectors are</p>
 <p>$$
@@ -360,7 +360,7 @@ P_+=\frac{I_2+E}{2},\qquad P_-=\frac{I_2-E}{2},
 $$</p>
 <p>idempotent, orthogonal, complete, and $E=P_+-P_-$. This is the frame of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, whose Peirce decomposition has four one-dimensional corners. <strong>No second root is needed.</strong> The six-root construction of this article reduces to it at $n=2$: two roots of unity, two projectors, one grading by $\mathbb{Z}/2$.</p>
 <p>For $n=6$ the same reduction is available for the involution $\Gamma=H^3$: its two projectors are $\Pi_\pm=(I\pm\Gamma)/2$, of ranks three. They are the coarse idempotents of §<em>The Chirality Involution</em>, not primitive idempotents, and the primitive ones remain the six $P_k$. The order-two case is thus a <strong>quotient</strong> of the order-six case, obtained by grouping the six lines into the even and the odd three.</p>
-<p><strong>Remark (why one root suffices).</strong> The biquaternion articles build their frame from a root of $+1$ and one nonzero element of a mixed Peirce line, the partner being fixed by the normalisation and the freedom being one reciprocal rescaling. In $M_6$ the root has six eigenvalues; the six lines are already distinct and the mixed units between them are indexed by pairs, so the relative scales form the $(6-1)$-parameter gauge. <strong>The root is the only primitive object; the gauge is a choice of frame inside it.</strong></p>
+<p><strong>Remark (why one root suffices).</strong> The biquaternion articles build their frame from a root of $+1$ and one nonzero element of a mixed Peirce line, the partner being fixed by the normalisation and the freedom being one reciprocal rescaling. In $M_6$ the root has six eigenvalues; the six lines are already distinct and the mixed units between them are indexed by pairs, so the relative scales form the $(6-1)$-parameter frame group. <strong>The root is the only primitive object; the frame group is a choice of frame inside it.</strong></p>
 <h2 id="summary">Summary</h2>
 <p>A root of $M_6(\mathbb{C})$ is a matrix $H$ with $H^6=I_6$ and six distinct eigenvalues. Its six eigenspaces are six lines, and the Lagrange projectors</p>
 <p>$$
@@ -372,7 +372,7 @@ $$</p>
 \boxed{\ \text{One root of order six gives the six primitive idempotents; no second object is primitive.}\ }
 $$</p>
 <p>The projectors grade the algebra by $\mathbb{Z}/6$, with six graded pieces $A_r$ of dimension six each, and the two quotients $\mathbb{Z}/2$ and $\mathbb{Z}/3$ are the only coarser gradings. The cube $\Gamma=H^3$ is the chirality involution: it has eigenvalues $+1$ and $-1$, each of multiplicity three, and its projectors are the sums $P_1+P_3+P_5$ and $P_2+P_4+P_6$.</p>
-<p>The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; the stabiliser is the five-dimensional torus, which is the gauge. The $6!$ relabellings of the six lines are discrete, and the flag variety is the $15$-dimensional image of the forgetful map.</p>
+<p>The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; the stabiliser is the five-dimensional torus, which is the frame group. The $6!$ relabellings of the six lines are discrete, and the flag variety is the $15$-dimensional image of the forgetful map.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -406,7 +406,7 @@ $$</p>
 <td>$PGL_6/T$, complex dimension $30$</td>
 </tr>
 <tr>
-<td>Gauge</td>
+<td>Frame group</td>
 <td>$T\cong(\mathbb{C}^\times)^5$, dimension $5$</td>
 </tr>
 <tr>
@@ -470,7 +470,7 @@ $$</p>
 <ul>
 <li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the product, the trace, the determinant and the group $PGL_6$.</li>
 <li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition of $M_6(\mathbb{C})$</a>, for the decomposition of $M_6$ by the six projectors and the coarse split by one of them.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</a>, for the nilpotents $E_{12},\dots,E_{56}$ and the five-parameter gauge.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-frame-group-of-m6c.html">The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$</a>, for the nilpotents $E_{12},\dots,E_{56}$ and the five-parameter frame group.</li>
 <li><a href="the-two-chiralities-of-m6c.html">The Two Chiralities of $M_6(\mathbb{C})$</a>, for the $3+3$ split and the mass block.</li>
 <li><a href="primitive-idempotents-and-minimal-left-ideals.html">Primitive Idempotents and Minimal Left Ideals</a>, for the general theory of the idempotents and the modules they generate.</li>
 <li><a href="idempotents-and-involutions-of-an-algebra.html">Idempotents and Involutions of an Algebra</a>, for the correspondence between idempotents and involutions in the general case.</li>

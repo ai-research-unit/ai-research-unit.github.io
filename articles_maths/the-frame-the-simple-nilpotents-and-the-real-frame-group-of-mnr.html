@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Frame, the Simple Nilpotents and the Real Gauge of $M_n(\mathbb{R})$ — Biquaternion Universe</title>
+  <title>The Frame, the Simple Nilpotents and the Real Frame Group of $M_n(\mathbb{R})$ — Biquaternion Universe</title>
   <meta name="description" content="A complete real frame carries a family of simple nilpotents with all, and over the coefficients live in copies of, which is a space with components.">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,10 +69,10 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-frame-the-simple-nilpotents-and-the-real-gauge-of-math0"><strong>The Frame, the Simple Nilpotents and the Real Gauge of $M_n(\mathbb{R})$</strong></h1>
+        <h1 id="the-frame-the-simple-nilpotents-and-the-real-frame-group-of-math0"><strong>The Frame, the Simple Nilpotents and the Real Frame Group of $M_n(\mathbb{R})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>A complete real frame carries a family of simple nilpotents $N=\sum_{k}c_{k}E_{k,k+1}$ with all $c_{k}\ne0$, and over $\mathbb{R}$ the coefficients live in $(n-1)$ copies of $\mathbb{R}^{\times}$, which is a space with $2^{n-1}$ components.</strong></p>
-<p>The article defines the frame, defines the simple nilpotents relative to it, proves that such an $N$ is nilpotent of index $n$ and rank $n-1$, computes the real gauge group of the frames, $\mathrm{GL}_{n}(\mathbb{R})$ with stabiliser the diagonal torus of dimension $n$, shows that the simple nilpotents over a fixed frame form a torus of dimension $n-1$ with $2^{n-1}$ components, shows that the gauge fixing $N$ is the one-dimensional group of scalars, and proves that every regular real nilpotent is conjugate to the shift $E_{12}+\cdots+E_{n-1,n}$. It assumes <em>The Peirce Basis and the Corners over $\mathbb{R}$</em> for the frame and its matrix units, and it complements <em>The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</em>, where the same counts are complex.</p>
+<p>The article defines the frame, defines the simple nilpotents relative to it, proves that such an $N$ is nilpotent of index $n$ and rank $n-1$, computes the real frame group of the frames, $\mathrm{GL}_{n}(\mathbb{R})$ with stabiliser the diagonal torus of dimension $n$, shows that the simple nilpotents over a fixed frame form a torus of dimension $n-1$ with $2^{n-1}$ components, shows that the fixing the frame $N$ is the one-dimensional group of scalars, and proves that every regular real nilpotent is conjugate to the shift $E_{12}+\cdots+E_{n-1,n}$. It assumes <em>The Peirce Basis and the Corners over $\mathbb{R}$</em> for the frame and its matrix units, and it complements <em>The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$</em>, where the same counts are complex.</p>
 <h2 id="the-frame">The Frame</h2>
 <p><strong>A frame is a complete family of orthogonal idempotents summing to the identity.</strong></p>
 <p>$$
@@ -107,12 +107,12 @@ $$</p>
 <p>and, conversely, an element satisfying these relations and lying in the sum of the corners $A_{k,k+1}$ is of the form above.</p>
 <p><em>Proof.</em> Multiply $N=\sum_{j}c_{j}E_{j,j+1}$ on the left by $E_{kk}$ and on the right by $E_{k+1,k+1}$; the table $E_{kk}E_{j,j+1}=\delta_{kj}E_{j,j+1}$ and $E_{j,j+1}E_{k+1,k+1}=\delta_{j,k}E_{j,j+1}$ leaves $c_{k}E_{k,k+1}$ on both sides.</p>
 <p><strong>The relations say that $N$ shifts the frame and kills the ends.</strong> $N$ maps $V_{k+1}$ to $V_{k}$ for $k\le n-1$, and it kills $V_{1}$; so $N$ is a chain map of the frame into itself, decreasing the index by one.</p>
-<p><strong>The coefficients are the gauge-dependent data.</strong> A different choice of the vectors $v_{k}$ changes the units by $E_{kl}\mapsto t_{k}t_{l}^{-1}E_{kl}$ and hence</p>
+<p><strong>The coefficients are the frame dependent data.</strong> A different choice of the vectors $v_{k}$ changes the units by $E_{kl}\mapsto t_{k}t_{l}^{-1}E_{kl}$ and hence</p>
 <p>$$
 c_{k}\longmapsto \frac{t_{k}}{t_{k+1}}c_{k},
 $$</p>
 <p>so the individual numbers $c_{k}$ are not attached to the frame; only their orbit under the diagonal group is.</p>
-<h2 id="the-real-gauge-of-the-frames">The Real Gauge of the Frames</h2>
+<h2 id="the-real-frame-group-of-the-frames">The Real Frame Group of the Frames</h2>
 <p><strong>Conjugation by $\mathrm{GL}_{n}(\mathbb{R})$ acts transitively on the frames.</strong> For two frames there is $S\in\mathrm{GL}_{n}(\mathbb{R})$ with $P'_{k}=SP_{k}S^{-1}$ for all $k$, built from two real bases adapted to the frames.</p>
 <p><strong>The stabiliser of the standard frame is the diagonal subgroup.</strong></p>
 <p>$$
@@ -135,13 +135,13 @@ $$</p>
 \varepsilon=(\operatorname{sgn}c_{1},\dots,\operatorname{sgn}c_{n-1})\in\{\pm1\}^{n-1}.
 $$</p>
 <p>Two simple nilpotents lie in the same component exactly when all their coefficients have the same signs.</p>
-<p><strong>The diagonal gauge acts transitively on the whole torus.</strong> The group $D$ acts by $c_{k}\mapsto t_{k}t_{k+1}^{-1}c_{k}$, and the map $D\to(\mathbb{R}^{\times})^{n-1}$, $t\mapsto(t_{1}t_{2}^{-1},\dots,t_{n-1}t_{n}^{-1})$, is surjective: given the ratios, choose $t_{1}$ and then $t_{k+1}=t_{k}(t_{k}t_{k+1}^{-1})^{-1}$. So all $2^{n-1}$ sign classes lie in one orbit of the frame-preserving gauge, and the components are a topological fact about $\mathbb{R}^{\times}$, not a dynamical one.</p>
+<p><strong>The diagonal frame group acts transitively on the whole torus.</strong> The group $D$ acts by $c_{k}\mapsto t_{k}t_{k+1}^{-1}c_{k}$, and the map $D\to(\mathbb{R}^{\times})^{n-1}$, $t\mapsto(t_{1}t_{2}^{-1},\dots,t_{n-1}t_{n}^{-1})$, is surjective: given the ratios, choose $t_{1}$ and then $t_{k+1}=t_{k}(t_{k}t_{k+1}^{-1})^{-1}$. So all $2^{n-1}$ sign classes lie in one orbit of the frame-preserving frame group, and the components are a topological fact about $\mathbb{R}^{\times}$, not a dynamical one.</p>
 <p><strong>The count is the orbit–stabiliser count inside $D$.</strong> The stabiliser is computed in the next section and has dimension $1$, so</p>
 <p>$$
 \dim D=n=\underbrace{(n-1)}_{\text{simple nilpotents}}+\underbrace{1}_{\text{stabiliser}}.
 $$</p>
-<h2 id="the-gauge-that-fixes-the-nilpotent">The Gauge that Fixes the Nilpotent</h2>
-<p><strong>The gauge transformations fixing a simple nilpotent are the scalar matrices.</strong></p>
+<h2 id="the-frame-group-that-fixes-the-nilpotent">The Frame Group that Fixes the Nilpotent</h2>
+<p><strong>The frame transformations fixing a simple nilpotent are the scalar matrices.</strong></p>
 <p>$$
 \{S\in D:SN=NS\}=\{t\,\mathrm{I}:t\in\mathbb{R}^{\times}\},
 $$</p>
@@ -160,14 +160,14 @@ $$</p>
 S^{-1}NS=N_{0}.
 $$</p>
 <p>The basis is real because $N$ and $v$ are real, so the conjugating matrix is in $\mathrm{GL}_{n}(\mathbb{R})$.</p>
-<p><strong>The canonical form is the statement that the frame's nilpotent has no moduli over $\mathbb{R}$.</strong> Every regular nilpotent has a real Jordan form with one block, and one block of size $n$ is the shift. The simple nilpotents of a fixed frame are the shifts of that frame, and the gauge carries any one of them to any other, so the coefficients $c_{k}$ are pure gauge.</p>
+<p><strong>The canonical form is the statement that the frame's nilpotent has no moduli over $\mathbb{R}$.</strong> Every regular nilpotent has a real Jordan form with one block, and one block of size $n$ is the shift. The simple nilpotents of a fixed frame are the shifts of that frame, and the frame group carries any one of them to any other, so the coefficients $c_{k}$ are pure frame group.</p>
 <p><strong>The theorem does not hold with a fixed frame.</strong> A regular nilpotent carries its own frame, the flag $\operatorname{im}N^{n-1}\subset\cdots\subset\operatorname{im}N\subset\mathbb{R}^{n}$ refined by lines, and that frame is what the conjugating matrix must respect; the freedom is the $n$-dimensional diagonal torus, and the $n-1$ coefficients are its coordinates.</p>
 <h2 id="the-checks-at-math165-and-math166">The Checks at $n=3$ and $n=4$</h2>
 <p><strong>The characteristic polynomial of a random regular nilpotent is $x^{n}$.</strong> Building $N=SN_{0}S^{-1}$ with $S$ a random real matrix with integer entries in a small range, the characteristic polynomial computed with numpy is $x^{3}$ at $n=3$ and $x^{4}$ at $n=4$, and the rank is $n-1$ in every trial. Building $N$ directly as $\sum_{k}c_{k}E_{k,k+1}$ with random nonzero $c_{k}$ gives the same answers.</p>
 <p><strong>The powers behave as predicted.</strong> At $n=4$ with all $c_{k}=1$ the ranks of $N^{0},N^{1},N^{2},N^{3},N^{4}$ are $4,3,2,1,0$, which is the sequence $n-j$; and $N^{4}=0$ while $N^{3}\ne0$.</p>
 <p><strong>The dimension count closes at every $n$.</strong> The frame variety has dimension $n^{2}-n$, the nilpotent torus over a frame has dimension $n-1$, and the diagonal stabiliser has dimension $n$; the identity $n^{2}-n+(n-1)+1=n^{2}$ is the dimension of $\mathrm{GL}_{n}(\mathbb{R})$.</p>
 <h2 id="summary">Summary</h2>
-<p>A frame of $M_{n}(\mathbb{R})$ is a complete family of orthogonal rank-one idempotents summing to $\mathrm{I}$, equivalently a real basis taken up to diagonal scaling. Relative to a frame with matrix units $E_{kl}$, a simple nilpotent is $N=\sum_{k=1}^{n-1}c_{k}E_{k,k+1}$ with all $c_{k}\ne0$; it obeys $E_{kk}N=NE_{k+1,k+1}$, has powers with entries on the successive superdiagonals, is nilpotent of index $n$, and has rank $n-1$, hence characteristic polynomial $x^{n}$. The real gauge is conjugation by $\mathrm{GL}_{n}(\mathbb{R})$, which acts transitively on the frames with stabiliser the diagonal torus $D\cong(\mathbb{R}^{\times})^{n}$ of dimension $n$, so the frame variety has dimension $n^{2}-n$: $6$ at $n=3$ and $12$ at $n=4$. Over a fixed frame the simple nilpotents form $(\mathbb{R}^{\times})^{n-1}$, of dimension $n-1$ and with $2^{n-1}$ components labelled by the signs of the coefficients, and the diagonal gauge acts transitively on that torus. The gauge fixing a simple nilpotent is the group of scalar matrices, of dimension $1$ and with $2$ components, so $n=(n-1)+1$ inside $D$. The canonical form is the shift $E_{12}+\cdots+E_{n-1,n}$, and every real regular nilpotent is conjugate to it, with a real conjugating matrix built from the Krylov basis $v,Nv,\dots,N^{n-1}v$; this is confirmed at $n=3$ and $n=4$ by the characteristic polynomial $x^{n}$ and the rank $n-1$.</p>
+<p>A frame of $M_{n}(\mathbb{R})$ is a complete family of orthogonal rank-one idempotents summing to $\mathrm{I}$, equivalently a real basis taken up to diagonal scaling. Relative to a frame with matrix units $E_{kl}$, a simple nilpotent is $N=\sum_{k=1}^{n-1}c_{k}E_{k,k+1}$ with all $c_{k}\ne0$; it obeys $E_{kk}N=NE_{k+1,k+1}$, has powers with entries on the successive superdiagonals, is nilpotent of index $n$, and has rank $n-1$, hence characteristic polynomial $x^{n}$. The real frame group is conjugation by $\mathrm{GL}_{n}(\mathbb{R})$, which acts transitively on the frames with stabiliser the diagonal torus $D\cong(\mathbb{R}^{\times})^{n}$ of dimension $n$, so the frame variety has dimension $n^{2}-n$: $6$ at $n=3$ and $12$ at $n=4$. Over a fixed frame the simple nilpotents form $(\mathbb{R}^{\times})^{n-1}$, of dimension $n-1$ and with $2^{n-1}$ components labelled by the signs of the coefficients, and the diagonal frame group acts transitively on that torus. The fixing the frame a simple nilpotent is the group of scalar matrices, of dimension $1$ and with $2$ components, so $n=(n-1)+1$ inside $D$. The canonical form is the shift $E_{12}+\cdots+E_{n-1,n}$, and every real regular nilpotent is conjugate to it, with a real conjugating matrix built from the Krylov basis $v,Nv,\dots,N^{n-1}v$; this is confirmed at $n=3$ and $n=4$ by the characteristic polynomial $x^{n}$ and the rank $n-1$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -217,7 +217,7 @@ $$</p>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for nilpotent matrices, Jordan forms over $\mathbb{R}$ and the Krylov basis.</li>
 <li>James E. Humphreys, <em>Linear Algebraic Groups</em> (Springer, 1975), for the diagonal torus, homogeneous spaces and the orbit–stabiliser count.</li>
 <li><a href="the-peirce-basis-and-the-corners-over-r.html">The Peirce Basis and the Corners over $\mathbb{R}$</a>, for the corners and the frame that the simple nilpotents use.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html">The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</a>, for the complex version of the same construction.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html">The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$</a>, for the complex version of the same construction.</li>
 <li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the matrix units and the transpose over $\mathbb{R}$.</li>
 </ul>
       </div>

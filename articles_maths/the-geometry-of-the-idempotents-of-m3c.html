@@ -71,8 +71,8 @@
       <div class="article-body">
         <h1 id="the-geometry-of-the-idempotents-of-math0"><strong>The Geometry of the Idempotents of $M_3(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The idempotents of rank one form an affine bundle of rank $2$ over $\mathbb{P}^{2}$, of complex dimension $4$; the idempotents of rank $p$ form the homogeneous space $PGL_3/P(GL_p\times GL_{3-p})$, of dimension $2p(3-p)$, a fibre bundle over the Grassmannian $\operatorname{Gr}(p,3)$ whose fibre is the contractible space of complements.</strong> For $p=1$ and $p=2$ the dimension is $4$; the two cases are exchanged by $E\mapsto I-E$. The full flag variety $GL_3/B$ has dimension $3$, and the partial flags are the Grassmannians. The gauge torus $T/\mathbb{C}^{\times}$ is the two-dimensional quotient of the diagonal torus inside the fibre of the frame bundle over the flag variety, and it rescales the nilpotents $E_{12},E_{23}$ while fixing the idempotents.</p>
-<p>An idempotent is a solution of $E^{2}=E$; it is a projection onto its image along its kernel. The geometry of the idempotents is therefore the geometry of pairs of complementary subspaces, and the rank stratification is the stratification by the dimension of the image. The article proves the orbit description, identifies the fibres, computes the dimensions, describes the incidence relations and the flag variety, and works explicit matrices. The Peirce decomposition is <em>The Peirce Decomposition of $M_3(\mathbb{C})$</em>; the frame and the gauge are <em>The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$</em>; the topology is <em>The Topology of $M_3(\mathbb{C})$</em>.</p>
+<p><strong>The idempotents of rank one form an affine bundle of rank $2$ over $\mathbb{P}^{2}$, of complex dimension $4$; the idempotents of rank $p$ form the homogeneous space $PGL_3/P(GL_p\times GL_{3-p})$, of dimension $2p(3-p)$, a fibre bundle over the Grassmannian $\operatorname{Gr}(p,3)$ whose fibre is the contractible space of complements.</strong> For $p=1$ and $p=2$ the dimension is $4$; the two cases are exchanged by $E\mapsto I-E$. The full flag variety $GL_3/B$ has dimension $3$, and the partial flags are the Grassmannians. The frame torus $T/\mathbb{C}^{\times}$ is the two-dimensional quotient of the diagonal torus inside the fibre of the frame bundle over the flag variety, and it rescales the nilpotents $E_{12},E_{23}$ while fixing the idempotents.</p>
+<p>An idempotent is a solution of $E^{2}=E$; it is a projection onto its image along its kernel. The geometry of the idempotents is therefore the geometry of pairs of complementary subspaces, and the rank stratification is the stratification by the dimension of the image. The article proves the orbit description, identifies the fibres, computes the dimensions, describes the incidence relations and the flag variety, and works explicit matrices. The Peirce decomposition is <em>The Peirce Decomposition of $M_3(\mathbb{C})$</em>; the frame and the frame group are <em>The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$</em>; the topology is <em>The Topology of $M_3(\mathbb{C})$</em>.</p>
 <h2 id="idempotents-and-complementary-pairs">Idempotents and Complementary Pairs</h2>
 <p><strong>Definition.</strong> An idempotent is a matrix $E\in M_3(\mathbb{C})$ with $E^{2}=E$. Its rank is the dimension of its image.</p>
 <p><strong>Proposition.</strong> Let $E$ be an idempotent of rank $p$. Then</p>
@@ -178,34 +178,34 @@ E'=\begin{pmatrix}1&amp;0&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix},
 F'=I-E'=\begin{pmatrix}0&amp;0&amp;0\\-1&amp;1&amp;0\\0&amp;0&amp;1\end{pmatrix},
 $$</p>
 <p>one has $E'F'=F'E'=0$ and $E'+F'=I$. The idempotents are complementary: the image of $E'$ is the kernel of $F'$ and the kernel of $E'$ is the image of $F'$. The pair is a decomposition of the identity, not a flag incidence.</p>
-<h2 id="the-gauge-and-the-frame-bundle">The Gauge and the Frame Bundle</h2>
+<h2 id="the-frame-group-and-the-frame-bundle">The Frame Group and the Frame Bundle</h2>
 <p><strong>The frame bundle.</strong> A frame is an ordered basis $(u_1,u_2,u_3)$ of $\mathbb{C}^{3}$, that is, a matrix $S\in GL_3$ whose columns are the frame vectors. The map</p>
 <p>$$
 GL_3\longrightarrow\operatorname{Flags},\qquad
 S\longmapsto\big(\langle u_1\rangle\subset\langle u_1,u_2\rangle\big),
 $$</p>
 <p>is a principal bundle with fibre the Borel $B$, of dimension $6$. The fibre over a flag is the set of frames adapted to the flag.</p>
-<p><strong>The gauge torus.</strong> Inside $B$ sits the diagonal torus</p>
+<p><strong>The frame torus.</strong> Inside $B$ sits the diagonal torus</p>
 <p>$$
 T=\{\operatorname{diag}(t_1,t_2,t_3):t_i\neq0\},
 $$</p>
-<p>which rescales the frame vectors without changing the flag. The scalar matrices $\mathbb{C}^{\times}I$ act trivially on the flag and on the idempotents, so the gauge group of the frame is</p>
+<p>which rescales the frame vectors without changing the flag. The scalar matrices $\mathbb{C}^{\times}I$ act trivially on the flag and on the idempotents, so the frame group of the frame is</p>
 <p>$$
 T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2},
 $$</p>
-<p>of complex dimension $2$ and real dimension $4$. The two gauge parameters are</p>
+<p>of complex dimension $2$ and real dimension $4$. The two frame parameters are</p>
 <p>$$
 \lambda_1=t_1/t_2,\qquad
 \lambda_2=t_2/t_3 .
 $$</p>
-<p><strong>The action on the nilpotents.</strong> In the frame adapted to the root $H$, the gauge acts by</p>
+<p><strong>The action on the nilpotents.</strong> In the frame adapted to the root $H$, the frame group acts by</p>
 <p>$$
 E_{12}\mapsto\lambda_1E_{12},\qquad
 E_{23}\mapsto\lambda_2E_{23},\qquad
 E_{13}\mapsto\lambda_1\lambda_2E_{13}.
 $$</p>
-<p>The product is forced by the composition: $t_1/t_3=(t_1/t_2)(t_2/t_3)$. The idempotents $P_k$ are invariant, because they are diagonal in the frame and the gauge rescales the frame vectors within their own lines. The gauge is therefore the fibre direction of the frame bundle that is invisible to the idempotents.</p>
-<p><strong>The gauge as a fibre.</strong> The fibration $GL_3\to\operatorname{Flags}$ has fibre $B$; the diagonal torus $T$ is the subgroup of the fibre that preserves the splitting of the flag into lines, and $T/\mathbb{C}^{\times}$ is the gauge torus. The gauge is not an extra symmetry of the idempotent variety: it is the ambiguity in choosing a frame over a flag, and the idempotents depend only on the flag data and the complementary kernels.</p>
+<p>The product is forced by the composition: $t_1/t_3=(t_1/t_2)(t_2/t_3)$. The idempotents $P_k$ are invariant, because they are diagonal in the frame and the frame group rescales the frame vectors within their own lines. The frame group is therefore the fibre direction of the frame bundle that is invisible to the idempotents.</p>
+<p><strong>The frame group as a fibre.</strong> The fibration $GL_3\to\operatorname{Flags}$ has fibre $B$; the diagonal torus $T$ is the subgroup of the fibre that preserves the splitting of the flag into lines, and $T/\mathbb{C}^{\times}$ is the frame torus. The frame group is not an extra symmetry of the idempotent variety: it is the ambiguity in choosing a frame over a flag, and the idempotents depend only on the flag data and the complementary kernels.</p>
 <p><strong>Proof.</strong> A diagonal matrix $t$ acts on the frame by $u_i\mapsto t_iu_i$; the flag $\langle u_1\rangle\subset\langle u_1,u_2\rangle$ is unchanged. The conjugation $tE_{ij}t^{-1}$ multiplies $E_{ij}$ by $t_i/t_j$, which gives the three rescalings. The idempotents $P_k$ have matrix units $E_{kk}$ on the diagonal, so they are fixed.</p>
 <h2 id="the-geometry-of-the-strata">The Geometry of the Strata</h2>
 <p><strong>The rank stratification.</strong> The idempotents stratify by rank:</p>
@@ -262,7 +262,7 @@ $$</p>
 \qquad
 \dim\mathcal{E}_p=2p(3-p),
 $$</p>
-<p>with $P_p$ the block diagonal $GL_p\times GL_{3-p}$. For $p=1$ the variety is an affine bundle of rank $2$ over $\mathbb{P}^{2}$, of dimension $4$; the fibre over a line $L$ is the affine space of complements to $L$, isomorphic to $\mathbb{C}^{2}$ and contractible. For $p=2$ the map $E\mapsto I-E$ identifies the geometry with the rank-one case. The strata of ranks $0,1,2,3$ are the four connected components of the idempotent variety, of dimensions $0,4,4,0$. The full flag variety $GL_3/B$ has dimension $3$, and the incidence variety of a line in a plane is the same flag variety, a $\mathbb{P}^{1}$-bundle over either $\mathbb{P}^{2}$. The gauge torus $T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2}$ has complex dimension $2$ and real dimension $4$; it rescales $E_{12},E_{23}$ by $\lambda_1,\lambda_2$ and $E_{13}$ by the forced product $\lambda_1\lambda_2$, while fixing the spectral idempotents $P_k$.</p>
+<p>with $P_p$ the block diagonal $GL_p\times GL_{3-p}$. For $p=1$ the variety is an affine bundle of rank $2$ over $\mathbb{P}^{2}$, of dimension $4$; the fibre over a line $L$ is the affine space of complements to $L$, isomorphic to $\mathbb{C}^{2}$ and contractible. For $p=2$ the map $E\mapsto I-E$ identifies the geometry with the rank-one case. The strata of ranks $0,1,2,3$ are the four connected components of the idempotent variety, of dimensions $0,4,4,0$. The full flag variety $GL_3/B$ has dimension $3$, and the incidence variety of a line in a plane is the same flag variety, a $\mathbb{P}^{1}$-bundle over either $\mathbb{P}^{2}$. The frame torus $T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2}$ has complex dimension $2$ and real dimension $4$; it rescales $E_{12},E_{23}$ by $\lambda_1,\lambda_2$ and $E_{13}$ by the forced product $\lambda_1\lambda_2$, while fixing the spectral idempotents $P_k$.</p>
 <p>$$
 \boxed{\ \mathcal{E}_p=GL_3/(GL_p\times GL_{3-p}),\quad \dim=2p(3-p);\quad \mathcal{E}_1\to\mathbb{P}^{2}\text{ affine } \mathbb{C}^{2}\text{-bundle};\quad \dim\mathrm{Flags}=3;\quad \dim(T/\mathbb{C}^{\times})=2.\ }
 $$</p>
@@ -337,7 +337,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\lambda_1,\lambda_2$</td>
-<td>gauge parameters $t_1/t_2$, $t_2/t_3$</td>
+<td>frame parameters $t_1/t_2$, $t_2/t_3$</td>
 </tr>
 </tbody>
 </table></div>
@@ -347,7 +347,7 @@ $$</p>
 <li>Joe Harris, <em>Algebraic Geometry: A First Course</em> (Springer, 1992), for the determinantal varieties and the incidence varieties.</li>
 <li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the geometry of the Grassmannians.</li>
 <li><a href="the-peirce-decomposition-of-m3c.html">The Peirce Decomposition of $M_3(\mathbb{C})$</a>, for the idempotents in the algebra.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html">The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$</a>, for the frame and the gauge parameters.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-frame-group-of-m3c.html">The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$</a>, for the frame and the frame parameters.</li>
 <li><a href="the-topology-of-m3c.html">The Topology of $M_3(\mathbb{C})$</a>, for the homotopy type of the idempotent varieties.</li>
 </ul>
       </div>

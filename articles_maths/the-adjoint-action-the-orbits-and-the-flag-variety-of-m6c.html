@@ -90,7 +90,7 @@ $$</p>
 \operatorname{Gr}(1,6)=\mathbb{P}^5,\qquad
 \dim\operatorname{Gr}(2,6)=2\cdot4=8 .
 $$</p>
-<p>The gauge is the fibre of the conjugation map over the root: the set of frames diagonalising $H$ is a torsor under the stabilizer $(\mathbb{C}^\times)^5$.</p>
+<p>The frame group is the fibre of the conjugation map over the root: the set of frames diagonalising $H$ is a torsor under the stabilizer $(\mathbb{C}^\times)^5$.</p>
 <p>The article assumes the roots of <em>Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$</em> and the projective linear group of <em>The Matrix Algebra $M_6(\mathbb{C})$</em>. It uses the language of algebraic groups but no topology beyond the dimension counts. The Jordan decomposition is <em>The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$</em>; the spectral strata are <em>The Sextic and the Spectral Strata of $M_6(\mathbb{C})$</em>; the Grassmannian geometry is <em>The Geometry of the Idempotents of $M_6(\mathbb{C})$</em>.</p>
 <h2 id="the-adjoint-action">The Adjoint Action</h2>
 <h3 id="definition">Definition</h3>
@@ -236,12 +236,12 @@ $$</p>
 $$</p>
 <p>of dimension $5$.</p>
 <p><strong>Proof.</strong> The centralizer in $GL_6$ is the diagonal torus $(\mathbb{C}^\times)^6$; the center $\mathbb{C}^\times I_6$ is the diagonal scalar, and the quotient is $(\mathbb{C}^\times)^5$.</p>
-<p><strong>Corollary (the stabilizer of the root).</strong> The stabilizer of the root $H$ is the gauge torus</p>
+<p><strong>Corollary (the stabilizer of the root).</strong> The stabilizer of the root $H$ is the frame torus</p>
 <p>$$
 (\mathbb{C}^\times)^5,
 $$</p>
-<p>the same group that rescales the simple nilpotents of <em>The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</em>.</p>
-<p><strong>Proof.</strong> $H$ has simple spectrum, so its centralizer is the diagonal torus modulo the center; the gauge is the same torus.</p>
+<p>the same group that rescales the simple nilpotents of <em>The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$</em>.</p>
+<p><strong>Proof.</strong> $H$ has simple spectrum, so its centralizer is the diagonal torus modulo the center; the frame group is the same torus.</p>
 <h3 id="the-orbitstabilizer-count">The Orbit–Stabilizer Count</h3>
 <p>All dimensions in this section are complex dimensions.</p>
 <p><strong>Theorem.</strong> For the cyclic element,</p>
@@ -265,17 +265,17 @@ $$</p>
 \dim\operatorname{Gr}(2,6)=8 .
 $$</p>
 <p><strong>Proof.</strong> The Borel subgroup of upper triangular matrices has $6$ diagonal and $15$ off-diagonal parameters, of dimension $21$; the quotient has dimension $36-21=15$. The Grassmannian $\operatorname{Gr}(k,6)$ has dimension $k(6-k)$: $1\cdot5=5$ and $2\cdot4=8$.</p>
-<h3 id="the-gauge-as-the-fibre">The Gauge as the Fibre</h3>
+<h3 id="the-frame-group-as-the-fibre">The Frame Group as the Fibre</h3>
 <p><strong>Theorem.</strong> The conjugation map</p>
 <p>$$
 PGL_6\longrightarrow\mathcal O_H,
 \qquad
 \bar g\longmapsto gHg^{-1},
 $$</p>
-<p>is a principal bundle with fibre the stabilizer $(\mathbb{C}^\times)^5$. The gauge group is the fibre over the root $H$.</p>
+<p>is a principal bundle with fibre the stabilizer $(\mathbb{C}^\times)^5$. The frame group is the fibre over the root $H$.</p>
 <p><strong>Proof.</strong> The fibre over $H$ is the set of $\bar g$ with $gHg^{-1}=H$, that is the stabilizer. The map is surjective onto the orbit by definition, and the stabilizer acts freely on the fibres.</p>
-<p><strong>Corollary (the frame picture).</strong> The set of ordered bases in which $H$ is diagonal is a torsor under $(\mathbb{C}^\times)^6$; modulo the overall scalar, the set of projective frames is a torsor under the gauge $(\mathbb{C}^\times)^5$. Choosing a projective frame is choosing a gauge.</p>
-<p><strong>Proof.</strong> If $g_0$ diagonalizes $H$, every other diagonalizing basis is $g_0t$ with $t$ in the centralizer $(\mathbb{C}^\times)^6$; the centralizer modulo the center is the gauge.</p>
+<p><strong>Corollary (the frame picture).</strong> The set of ordered bases in which $H$ is diagonal is a torsor under $(\mathbb{C}^\times)^6$; modulo the overall scalar, the set of projective frames is a torsor under the frame group $(\mathbb{C}^\times)^5$. Choosing a projective frame is choosing a frame group.</p>
+<p><strong>Proof.</strong> If $g_0$ diagonalizes $H$, every other diagonalizing basis is $g_0t$ with $t$ in the centralizer $(\mathbb{C}^\times)^6$; the centralizer modulo the center is the frame group.</p>
 <h2 id="the-flag-variety">The Flag Variety</h2>
 <h3 id="the-full-flag-variety">The Full Flag Variety</h3>
 <p><strong>Definition.</strong> A <strong>complete flag</strong> of $\mathbb{C}^6$ is a chain</p>
@@ -307,7 +307,7 @@ $$</p>
 \dim\mathcal F=5+4+3+2+1=15 .
 $$</p>
 <p><strong>Proof.</strong> Choose $V_1\in\mathbb{P}^5$ (dimension $5$); then $V_2/V_1$ is a line in $\mathbb{C}^6/V_1\cong\mathbb{C}^5$, so $V_2$ varies in a $\mathbb{P}^4$ (dimension $4$); then $V_3/V_2$ varies in a $\mathbb{P}^3$ (dimension $3$); then $V_4/V_3$ in a $\mathbb{P}^2$ (dimension $2$); then $V_5/V_4$ in a $\mathbb{P}^1$ (dimension $1$). The total is $15$.</p>
-<p><strong>Corollary (the eigenbasis).</strong> An ordered eigenbasis of a cyclic element with simple spectrum determines a complete flag: the first $k$ eigenvectors span $V_k$. The flag is independent of the scaling of the eigenvectors; the scalings are the gauge.</p>
+<p><strong>Corollary (the eigenbasis).</strong> An ordered eigenbasis of a cyclic element with simple spectrum determines a complete flag: the first $k$ eigenvectors span $V_k$. The flag is independent of the scaling of the eigenvectors; the scalings are the frame group.</p>
 <p><strong>Proof.</strong> The flag is the chain of spans; rescaling a vector does not change its span.</p>
 <h3 id="the-grassmannians">The Grassmannians</h3>
 <p><strong>Definition.</strong> The <strong>Grassmannian</strong> $\operatorname{Gr}(k,6)$ is the set of $k$-dimensional subspaces of $\mathbb{C}^6$.</p>
@@ -342,7 +342,7 @@ $$</p>
 <p><strong>Corollary (the dimensions).</strong> For $k=1$ the fibre has dimension $10$; for $k=2$ it has dimension $7$; for $k=3$ it has dimension $6$.</p>
 <p><strong>Proof.</strong> $\dim\mathcal F-\dim\operatorname{Gr}(k,6)$: $15-5=10$, $15-8=7$, $15-9=6$.</p>
 <p><strong>Remark (the Peirce reading).</strong> The image of a rank-$k$ idempotent is a point of $\operatorname{Gr}(k,6)$; the idempotent is a point of the total space of the complement bundle over the Grassmannian. The corners are the blocks relative to the plane and its complement; the stabilizer of the idempotent is the Levi $GL(V)\times GL(W)$, while the parabolic is the stabilizer of the image plane alone. <strong>The Grassmannian is the base of the Peirce fibration, not the whole space of idempotents.</strong></p>
-<h2 id="the-gauge-as-the-fibre-over-the-root">The Gauge as the Fibre over the Root</h2>
+<h2 id="the-frame-group-as-the-fibre-over-the-root">The Frame Group as the Fibre over the Root</h2>
 <h3 id="the-bundle">The Bundle</h3>
 <p><strong>Theorem.</strong> The map</p>
 <p>$$
@@ -350,7 +350,7 @@ $$</p>
 \qquad
 \pi(\bar g)=gHg^{-1},
 $$</p>
-<p>is a principal $(\mathbb{C}^\times)^5$-bundle. The gauge group is the fibre $\pi^{-1}(H)$.</p>
+<p>is a principal $(\mathbb{C}^\times)^5$-bundle. The frame group is the fibre $\pi^{-1}(H)$.</p>
 <p><strong>Proof.</strong> The fibre is the stabilizer; the action of the stabilizer on the fibre is free and transitive.</p>
 <p><strong>Corollary (the dimensions).</strong></p>
 <p>$$
@@ -358,9 +358,9 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> The dimension of a principal bundle is the sum of the base and the fibre.</p>
 <h3 id="the-root">The Root</h3>
-<p><strong>Theorem.</strong> The orbit $\mathcal O_H$ is the set of roots: the matrices with characteristic polynomial $t^6-1$ and simple spectrum. The fibre over $H$ is the gauge torus; the total space is the set of pairs (root, frame).</p>
+<p><strong>Theorem.</strong> The orbit $\mathcal O_H$ is the set of roots: the matrices with characteristic polynomial $t^6-1$ and simple spectrum. The fibre over $H$ is the frame torus; the total space is the set of pairs (root, frame).</p>
 <p><strong>Proof.</strong> The roots are conjugate to $H$; the fibre is the centralizer.</p>
-<p><strong>Corollary (the frame bundle).</strong> The total space of the bundle is the set of pairs $(H',g)$ with $H'=gHg^{-1}$; the projection forgets $g$. The gauge is the choice of the frame at the root.</p>
+<p><strong>Corollary (the frame bundle).</strong> The total space of the bundle is the set of pairs $(H',g)$ with $H'=gHg^{-1}$; the projection forgets $g$. The frame group is the choice of the frame at the root.</p>
 <p><strong>Proof.</strong> The pair is determined by $g$ modulo the stabilizer; the total space is $PGL_6$.</p>
 <h3 id="the-count">The Count</h3>
 <p><strong>Theorem.</strong> The three counts are</p>
@@ -372,7 +372,7 @@ $$</p>
 15=5+4+3+2+1 .
 $$</p>
 <p><strong>Proof.</strong> The first is the $PGL_6$ orbit–stabilizer count; the second the $GL_6$ count; the third the iterated bundle of the flag variety.</p>
-<p><strong>Remark (the root and the flag).</strong> The root fixes the spectrum; the orbit is the set of matrices with that spectrum; the gauge is the ambiguity of the eigenbasis; the flag is the chain of spans of the eigenbasis. <strong>The root, the orbit, the gauge and the flag are four readings of the same eigenbasis.</strong></p>
+<p><strong>Remark (the root and the flag).</strong> The root fixes the spectrum; the orbit is the set of matrices with that spectrum; the frame group is the ambiguity of the eigenbasis; the flag is the chain of spans of the eigenbasis. <strong>The root, the orbit, the frame group and the flag are four readings of the same eigenbasis.</strong></p>
 <h2 id="summary">Summary</h2>
 <p>The adjoint action of $PGL_6$ on $M_6(\mathbb{C})$ has the Jordan types as orbits. For the cyclic element with simple spectrum,</p>
 <p>$$
@@ -388,7 +388,7 @@ $$</p>
 <p>$$
 \boxed{\ 35=30+5,\qquad \dim GL_6/B=15,\qquad \operatorname{Gr}(1,6)=\mathbb{P}^5,\quad \dim\operatorname{Gr}(2,6)=8 .\ }
 $$</p>
-<p>The flag variety $GL_6/B$ has dimension $15$; the Grassmannians have dimensions $k(6-k)$; the full flag fibres over each Grassmannian. The conjugation map $PGL_6\to\mathcal O_H$ is a principal bundle with fibre the gauge torus $(\mathbb{C}^\times)^5$; the gauge is the fibre over the root.</p>
+<p>The flag variety $GL_6/B$ has dimension $15$; the Grassmannians have dimensions $k(6-k)$; the full flag fibres over each Grassmannian. The conjugation map $PGL_6\to\mathcal O_H$ is a principal bundle with fibre the frame torus $(\mathbb{C}^\times)^5$; the frame group is the fibre over the root.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -406,7 +406,7 @@ $$</p>
 <td>$30$</td>
 </tr>
 <tr>
-<td>Gauge stabilizer</td>
+<td>Frame group stabilizer</td>
 <td>$5$</td>
 </tr>
 <tr>
@@ -479,7 +479,7 @@ $$</p>
 <li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for $PGL_6$, the derivations and the automorphisms.</li>
 <li><a href="the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$</a>, for the Jordan decomposition and the Jordan type.</li>
 <li><a href="the-sextic-and-the-spectral-strata-of-m6c.html">The Sextic and the Spectral Strata of $M_6(\mathbb{C})$</a>, for the spectral strata and the centralizer.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</a>, for the gauge torus.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-frame-group-of-m6c.html">The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$</a>, for the frame torus.</li>
 <li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents of $M_6(\mathbb{C})$</a>, for the Grassmannian of the idempotents.</li>
 <li><a href="the-modules-and-the-minimal-left-ideals-of-m6c.html">The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$</a>, for the projective space of the minimal ideals.</li>
 <li><a href="the-adjoint-action-of-a-lie-algebra.html">The Adjoint Action of a Lie Algebra</a>, for the general theory of conjugacy classes.</li>

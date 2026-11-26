@@ -81,12 +81,12 @@ p &amp; \text{corners} &amp; \text{diagonal algebra}\\ \hline
 \end{array}
 $$</p>
 <p>The case $p=3$ is the tensor-product recursion $M_6\cong M_3\otimes M_2$, with diagonal corner $M_3\oplus M_3=M_3\otimes\mathbb{C}^2$. The case $p=2$ is the Levi recursion $M_2\oplus M_4$, the diagonal part of the parabolic preserving a $2$-plane. Both live in the same algebra, and both carry a mass block: a square $3\times3$ block in the first case, a rectangular $2\times4$ block in the second.</p>
-<p>The gauge of either corner is five-dimensional, split as</p>
+<p>The frame group of either corner is five-dimensional, split as</p>
 <p>$$
 \underbrace{2+2+1}_{p=3}=\underbrace{3+1+1}_{p=2}=5:
 $$</p>
 <p>the traceless torus of the first block, the traceless torus of the second block, and one relative scale.</p>
-<p>The article assumes the coarse Peirce decomposition of <em>The Peirce Decomposition of $M_6(\mathbb{C})$</em> and the gauge of <em>The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</em>. It uses no form and no topology. The mass block is developed in <em>The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$</em>; the full flag and the parabolic are <em>The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$</em>.</p>
+<p>The article assumes the coarse Peirce decomposition of <em>The Peirce Decomposition of $M_6(\mathbb{C})$</em> and the frame group of <em>The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$</em>. It uses no form and no topology. The mass block is developed in <em>The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$</em>; the full flag and the parabolic are <em>The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$</em>.</p>
 <h2 id="the-three-coarse-splits">The Three Coarse Splits</h2>
 <h3 id="the-corner-dimensions">The Corner Dimensions</h3>
 <p><strong>Theorem.</strong> Let $E\in M_6(\mathbb{C})$ be an idempotent of rank $p$, and $F=I_6-E$ its complement. Then</p>
@@ -190,8 +190,8 @@ $$</p>
 <p><strong>Proof.</strong> The rank of a $2\times4$ matrix is at most $2$, so its singular value decomposition has at most two nonzero singular values; the $*$-unitary groups act on the two sides.</p>
 <p><strong>Corollary (the mass has two channels).</strong> The rank-two split has two mass channels, the two singular values of $M$. The rank-three split has three, and the rank-one split has one.</p>
 <p><strong>Proof.</strong> The number of singular values is $\min(p,6-p)$, which is $1,2,3$ for $p=1,2,3$.</p>
-<h3 id="the-gauge-of-the-rank-two-corner">The Gauge of the Rank-Two Corner</h3>
-<p><strong>Proposition.</strong> The gauge of the corner is</p>
+<h3 id="the-frame-group-of-the-rank-two-corner">The Frame Group of the Rank-Two Corner</h3>
+<p><strong>Proposition.</strong> The frame group of the corner is</p>
 <p>$$
 L_{2}R_{4}=\left(\mathbb{C}^\times\right)^2\times\left(\mathbb{C}^\times\right)^4/\mathbb{C}^\times
 \cong\left(\mathbb{C}^\times\right)^5,
@@ -200,12 +200,12 @@ $$</p>
 <p>$$
 1+3+1=5 .
 $$</p>
-<p><strong>Proof.</strong> Write a diagonal gauge as $\operatorname{diag}(t_1,t_2,s_1,s_2,s_3,s_4)$. The overall scalar $(t,t,t,t,t,t)$ is quotiented out. The traceless part of the first block is the single ratio $t_1/t_2$; the traceless part of the second is the three ratios $s_1/s_2,s_2/s_3,s_3/s_4$; the remaining parameter is the relative scale $t/s$, where $t$ is the common scale of the first block and $s$ of the second. The dimensions add to $1+3+1=5$.</p>
-<p><strong>Corollary (the action on the mass block).</strong> Under the scalar part of the gauge, the mass block is multiplied by the relative scale:</p>
+<p><strong>Proof.</strong> Write a diagonal frame group as $\operatorname{diag}(t_1,t_2,s_1,s_2,s_3,s_4)$. The overall scalar $(t,t,t,t,t,t)$ is quotiented out. The traceless part of the first block is the single ratio $t_1/t_2$; the traceless part of the second is the three ratios $s_1/s_2,s_2/s_3,s_3/s_4$; the remaining parameter is the relative scale $t/s$, where $t$ is the common scale of the first block and $s$ of the second. The dimensions add to $1+3+1=5$.</p>
+<p><strong>Corollary (the action on the mass block).</strong> Under the scalar part of the frame group, the mass block is multiplied by the relative scale:</p>
 <p>$$
 M\longmapsto\frac{t}{s}M .
 $$</p>
-<p><strong>Proof.</strong> The gauge matrix is $\operatorname{diag}(tI_2,sI_4)$; conjugation sends the block $M$ to $tMs^{-1}=(t/s)M$.</p>
+<p><strong>Proof.</strong> The frame matrix is $\operatorname{diag}(tI_2,sI_4)$; conjugation sends the block $M$ to $tMs^{-1}=(t/s)M$.</p>
 <h2 id="the-rank-three-split-math117">The Rank-Three Split: $M_3\oplus M_3$</h2>
 <h3 id="the-corners_1">The Corners</h3>
 <p>Take $p=3$, $E=\operatorname{diag}(I_3,0_3)$, $F=\operatorname{diag}(0_3,I_3)$. The four corners are</p>
@@ -251,18 +251,18 @@ U,V\in U(3),\quad
 \Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3).
 $$</p>
 <p><strong>Proof.</strong> The singular value decomposition of a square matrix.</p>
-<p><strong>Corollary (the mass has three channels).</strong> The rank-three split has three mass channels, and the relative scale of the gauge multiplies all three singular values by the same factor.</p>
+<p><strong>Corollary (the mass has three channels).</strong> The rank-three split has three mass channels, and the relative scale of the frame group multiplies all three singular values by the same factor.</p>
 <p><strong>Proof.</strong> The singular values of $(t/s)M$ are $\lvert t/s\rvert\sigma_i$.</p>
-<h3 id="the-gauge-of-the-rank-three-corner">The Gauge of the Rank-Three Corner</h3>
-<p><strong>Proposition.</strong> The gauge of the corner splits as</p>
+<h3 id="the-frame-group-of-the-rank-three-corner">The Frame Group of the Rank-Three Corner</h3>
+<p><strong>Proposition.</strong> The frame group of the corner splits as</p>
 <p>$$
 2+2+1=5:
 $$</p>
 <p>the traceless torus of the first $M_3$ (dimension $2$), the traceless torus of the second $M_3$ (dimension $2$), and the relative scale (dimension $1$).</p>
-<p><strong>Proof.</strong> A diagonal gauge is $\operatorname{diag}(t_1,t_2,t_3,s_1,s_2,s_3)$; the overall scalar is quotiented out; the traceless ratios are $t_1/t_2,t_2/t_3$ and $s_1/s_2,s_2/s_3$; the relative scale is $t/s$.</p>
-<h2 id="the-gauge-of-the-two-corners">The Gauge of the Two Corners</h2>
+<p><strong>Proof.</strong> A diagonal frame group is $\operatorname{diag}(t_1,t_2,t_3,s_1,s_2,s_3)$; the overall scalar is quotiented out; the traceless ratios are $t_1/t_2,t_2/t_3$ and $s_1/s_2,s_2/s_3$; the relative scale is $t/s$.</p>
+<h2 id="the-frame-group-of-the-two-corners">The Frame Group of the Two Corners</h2>
 <h3 id="the-three-terms">The Three Terms</h3>
-<p><strong>Theorem.</strong> For every rank $p$, the gauge of the corner algebra $M_p\oplus M_{6-p}$ decomposes as</p>
+<p><strong>Theorem.</strong> For every rank $p$, the frame group of the corner algebra $M_p\oplus M_{6-p}$ decomposes as</p>
 <p>$$
 \underbrace{(p-1)}_{\text{first corner}}
 +\underbrace{(5-p)}_{\text{second corner}}
@@ -288,13 +288,13 @@ $$</p>
 \operatorname{diag}(tI_p,sI_{6-p}),\qquad t,s\in\mathbb{C}^\times,
 $$</p>
 <p>modulo the overall scalar; it is parameterised by $t/s\in\mathbb{C}^\times$ and is one-dimensional.</p>
-<p><strong>Proposition.</strong> The gauge torus is the direct product</p>
+<p><strong>Proposition.</strong> The frame torus is the direct product</p>
 <p>$$
 T\cong T_p\times T_{6-p}\times\mathbb{C}^\times_{\text{rel}},
 $$</p>
 <p>of dimension $(p-1)+(5-p)+1=5$.</p>
-<p><strong>Proof.</strong> A diagonal gauge has $p+(6-p)=6$ parameters. Divide by the overall scalar, which is the diagonal $(t,\dots,t)$, and split the remaining five into the traceless parts of the two blocks and the ratio of their common scales.</p>
-<p><strong>Remark (why the relative scale is not in either corner).</strong> The traceless tori act inside one block and fix the other. The relative scale acts on both blocks at once, with opposite signs in the logarithms, and it is the only gauge direction that multiplies the mass block. <strong>The relative scale is the gauge direction of the mass block.</strong></p>
+<p><strong>Proof.</strong> A diagonal frame group has $p+(6-p)=6$ parameters. Divide by the overall scalar, which is the diagonal $(t,\dots,t)$, and split the remaining five into the traceless parts of the two blocks and the ratio of their common scales.</p>
+<p><strong>Remark (why the relative scale is not in either corner).</strong> The traceless tori act inside one block and fix the other. The relative scale acts on both blocks at once, with opposite signs in the logarithms, and it is the only frame direction that multiplies the mass block. <strong>The relative scale is the frame direction of the mass block.</strong></p>
 <h2 id="the-block-embeddings">The Block Embeddings</h2>
 <h3 id="the-smaller-algebras-inside-math189">The Smaller Algebras Inside $M_6$</h3>
 <p><strong>Definition.</strong> For $k=1,\dots,5$ let $E_k=\operatorname{diag}(I_k,0_{6-k})$. The <strong>corner embedding</strong> of $M_k$ is</p>
@@ -325,7 +325,7 @@ $$</p>
 <h3 id="the-mixed-blocks-as-bimodules">The Mixed Blocks as Bimodules</h3>
 <p><strong>Proposition.</strong> The mixed corner $EMF$ is a left module over $EME\cong M_p$ and a right module over $FMF\cong M_{6-p}$, and it is isomorphic to the bimodule $\mathbb{C}^{p}\otimes(\mathbb{C}^{6-p})^*$ of $p\times(6-p)$ matrices. The corner $FME$ is the dual bimodule.</p>
 <p><strong>Proof.</strong> $A_{11}MN'$ and $M B_{22}$ are the left and right actions; the dimensions match, and the isomorphism is $u\otimes\digamma_{\mathrm{map}}\mapsto u\digamma_{\mathrm{map}}$.</p>
-<p><strong>Corollary (the mass block is a bimodule element).</strong> The mass block $M$ is not an element of either corner algebra; it is an element of the mixed bimodule. The gauge acts on it by the relative scale, and the corner unitaries act on it by left and right multiplication.</p>
+<p><strong>Corollary (the mass block is a bimodule element).</strong> The mass block $M$ is not an element of either corner algebra; it is an element of the mixed bimodule. The frame group acts on it by the relative scale, and the corner unitaries act on it by left and right multiplication.</p>
 <h3 id="the-two-recursions">The Two Recursions</h3>
 <p><strong>Theorem (the two recursions in one algebra).</strong> The same algebra $M_6(\mathbb{C})$ contains the two diagonal corner algebras</p>
 <p>$$
@@ -356,11 +356,11 @@ $$</p>
 \boxed{\ M_6\cong M_3\otimes M_2\ \text{contains}\ M_3\oplus M_3;\quad
 M_6\ \text{contains the Levi factor}\ M_2\oplus M_4 .\ }
 $$</p>
-<p>The gauge of every corner splits as</p>
+<p>The frame group of every corner splits as</p>
 <p>$$
 (p-1)+(5-p)+1=5,
 $$</p>
-<p>the two traceless corner tori and the relative scale. The relative scale is the gauge direction of the mass block.</p>
+<p>the two traceless corner tori and the relative scale. The relative scale is the frame direction of the mass block.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -402,7 +402,7 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Gauge split</th>
+<th>Frame group split</th>
 <th>$p=1$</th>
 <th>$p=2$</th>
 <th>$p=3$</th>
@@ -481,7 +481,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition of $M_6(\mathbb{C})$</a>, for the four corners and the corner multiplication.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</a>, for the five-dimensional gauge.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-frame-group-of-m6c.html">The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$</a>, for the five-dimensional frame group.</li>
 <li><a href="the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html">The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$</a>, for the polar decomposition of the mass block.</li>
 <li><a href="the-two-chiralities-of-m6c.html">The Two Chiralities of $M_6(\mathbb{C})$</a>, for the $3+3$ split of the carrier.</li>
 <li><a href="the-rank-two-and-rank-three-splits-of-m6c.html">The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$</a>, for the idempotent geometry of the two ranks.</li>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <title>The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
   <meta name="description" content="The root fixes the flag, and a frame fixes one vector in each line of the flag; the freedom in that choice is a torus with one parameter per simple…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,11 +69,11 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-frame-the-simple-nilpotents-and-the-gauge-of-math0"><strong>The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$</strong></h1>
+        <h1 id="the-frame-the-simple-nilpotents-and-the-frame-group-of-math0"><strong>The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The root fixes the flag, and a frame fixes one vector in each line of the flag; the freedom in that choice is a torus with one parameter per simple nilpotent.</strong> The root therefore gives the idempotents and the lines, and the gauge gives the vectors and the units. The two together are the frame.</p>
-<p>The article constructs the frame from a basis adapted to the spectral flag, states the matrix-unit rule, isolates the three simple nilpotents $E_{12},E_{23},E_{34}$, computes the gauge action and its cocycle, and counts the parameters: $12$ complex from the root and $3$ complex from the gauge, $15$ in all. The idempotents are gauge invariant. The gauge is not a second primitive: at $n=2$ an involution anticommuting with $H$ is exactly a point of the gauge, and for $n=4$ there is no single such element, only the three parameters.</p>
-<p>The idempotents are from <em>Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</em>; the corners are <em>The Peirce Decomposition of $M_4(\mathbb{C})$</em>; the principal $\mathfrak{sl}_2$ uses the nilpotents as ladder steps; the count of the root set is <em>The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</em>. The general construction is <em>The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$</em> for $M_n(\mathbb{C})$.</p>
+<p><strong>The root fixes the flag, and a frame fixes one vector in each line of the flag; the freedom in that choice is a torus with one parameter per simple nilpotent.</strong> The root therefore gives the idempotents and the lines, and the frame group gives the vectors and the units. The two together are the frame.</p>
+<p>The article constructs the frame from a basis adapted to the spectral flag, states the matrix-unit rule, isolates the three simple nilpotents $E_{12},E_{23},E_{34}$, computes the action of the frame group and its cocycle, and counts the parameters: $12$ complex from the root and $3$ complex from the frame group, $15$ in all. The idempotents are frame invariant. The frame group is not a second primitive: at $n=2$ an involution anticommuting with $H$ is exactly a point of the frame group, and for $n=4$ there is no single such element, only the three parameters.</p>
+<p>The idempotents are from <em>Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</em>; the corners are <em>The Peirce Decomposition of $M_4(\mathbb{C})$</em>; the principal $\mathfrak{sl}_2$ uses the nilpotents as ladder steps; the count of the root set is <em>The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</em>. The general construction is <em>The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$</em> for $M_n(\mathbb{C})$.</p>
 <h2 id="the-adapted-frame">The Adapted Frame</h2>
 <p><strong>Definition.</strong> A <strong>frame adapted to the root</strong> $H$ is a basis $(v_1,v_2,v_3,v_4)$ of $\mathbb{C}^4$ with</p>
 <p>$$
@@ -166,8 +166,8 @@ N_k\in\mathcal{A}_{k,k+1},\qquad k=1,2,3.
 $$</p>
 <p>The chain $N_1,N_2,N_3$ is the sequence of maps that steps down the flag. The composite $E_{kl}$ lies in $\mathcal{A}_{kl}$ and is the product of the simple nilpotents along the chain from $l$ to $k$.</p>
 <p><strong>The nilpotents are not polynomials in $H$.</strong> In the spectral frame a polynomial in $H$ is diagonal, because $H$ is diagonal; the $N_k$ are off-diagonal. They are therefore not part of the root data: they are frame data. This is the precise sense in which the root alone is not the frame.</p>
-<h2 id="the-gauge-action">The Gauge Action</h2>
-<p><strong>Definition.</strong> A <strong>gauge transformation</strong> of the frame is a rescaling</p>
+<h2 id="the-action-of-the-frame-group">The Action of the Frame Group</h2>
+<p><strong>Definition.</strong> A <strong>frame transformation</strong> of the frame is a rescaling</p>
 <p>$$
 v_k\longmapsto t_kv_k,\qquad t_k\in\mathbb{C}^{\times},\qquad k=1,2,3,4.
 $$</p>
@@ -175,12 +175,12 @@ $$</p>
 <p>$$
 E_{kl}=v_k\ell_l\longmapsto t_kt_l^{-1}E_{kl}.
 $$</p>
-<p><strong>Proposition.</strong> The gauge fixes the idempotents and the root:</p>
+<p><strong>Proposition.</strong> The fixes by a change of frame the idempotents and the root:</p>
 <p>$$
 P_k=E_{kk}\longmapsto E_{kk}=P_k,\qquad
 H=\sum_k\omega_kE_{kk}\longmapsto H.
 $$</p>
-<p>The diagonal $t_1=t_2=t_3=t_4$ acts trivially on every $E_{kl}$, so the effective gauge group is</p>
+<p>The diagonal $t_1=t_2=t_3=t_4$ acts trivially on every $E_{kl}$, so the effective frame group is</p>
 <p>$$
 T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^3.
 $$</p>
@@ -212,10 +212,10 @@ $$</p>
 <p>$$
 E_{kl}=E_{k,k+1}E_{k+1,k+2}\cdots E_{l-1,l},
 $$</p>
-<p>so the scale of $E_{kl}$ is the product of the scales of the factors, and $\mu$ is determined by them. Equivalently, the gauge action on the invertibles is the coboundary of the $0$-cochain $t$ in the torus, and a coboundary has no freedom beyond the cochain modulo constants.</p>
-<p><strong>The gauge is not a second root.</strong> The parameters $\lambda_k$ act on the nilpotents and on the off-diagonal units. They never act on the diagonal, on the idempotents, or on the root. A statement that depends on $\lambda$ is a statement about a frame, not about the algebra or the idempotents.</p>
+<p>so the scale of $E_{kl}$ is the product of the scales of the factors, and $\mu$ is determined by them. Equivalently, the action of the frame group on the invertibles is the coboundary of the $0$-cochain $t$ in the torus, and a coboundary has no freedom beyond the cochain modulo constants.</p>
+<p><strong>The frame group is not a second root.</strong> The parameters $\lambda_k$ act on the nilpotents and on the off-diagonal units. They never act on the diagonal, on the idempotents, or on the root. A statement that depends on $\lambda$ is a statement about a frame, not about the algebra or the idempotents.</p>
 <h3 id="an-explicit-local-transformation">An Explicit Local Transformation</h3>
-<p>In the standard frame, the gauge is the diagonal matrix</p>
+<p>In the standard frame, the frame group is the diagonal matrix</p>
 <p>$$
 D=\operatorname{diag}(t_1,t_2,t_3,t_4),
 $$</p>
@@ -282,10 +282,10 @@ $$</p>
 </tbody>
 </table></div>
 <p>The idempotents $E_{11},E_{22},E_{33},E_{44}$ have scale $1$, and the root $H_0$ is unchanged. The fourth ratio $1/30$ is not an independent parameter; it is fixed by the other three and by the condition that the product around the cycle is $1$.</p>
-<p><strong>A numerical check.</strong> With this gauge, $D H_0D^{-1}=H_0$ because $D$ is diagonal and $H_0$ is diagonal, and $D E_{kk}D^{-1}=E_{kk}$ for every $k$. The composite $E_{14}$ scales by $t_1/t_4=30$, which is the product $2\cdot3\cdot5$. Rescaling $E_{14}$ by any other number would violate $E_{14}=E_{12}E_{23}E_{34}$.</p>
+<p><strong>A numerical check.</strong> With this frame group, $D H_0D^{-1}=H_0$ because $D$ is diagonal and $H_0$ is diagonal, and $D E_{kk}D^{-1}=E_{kk}$ for every $k$. The composite $E_{14}$ scales by $t_1/t_4=30$, which is the product $2\cdot3\cdot5$. Rescaling $E_{14}$ by any other number would violate $E_{14}=E_{12}E_{23}E_{34}$.</p>
 <h2 id="the-count-of-the-frame">The Count of the Frame</h2>
 <p><strong>A frame modulo overall scale has $15$ complex dimensions.</strong> The set of bases of $\mathbb{C}^4$ is $GL_4(\mathbb{C})$, of complex dimension $16$. Two bases that differ by an overall scalar give the same matrix units, since $E_{kl}=v_k\ell_l$ is unchanged when all $v_k$ are multiplied by $t$ and all $\ell_l$ by $t^{-1}$. The frame modulo scale is therefore a point of $PGL_4(\mathbb{C})$, of complex dimension $15$.</p>
-<p><strong>The root and the gauge split the count.</strong> The map from frames to roots,</p>
+<p><strong>The root and the frame group split the count.</strong> The map from frames to roots,</p>
 <p>$$
 (v_1,v_2,v_3,v_4)\longmapsto H=\sum_{k=1}^{4}\omega_kE_{kk},
 $$</p>
@@ -295,20 +295,20 @@ $$</p>
 =
 \underbrace{12}_{\text{root}}
 +
-\underbrace{3}_{\text{gauge}} .
+\underbrace{3}_{\text{frame group}} .
 $$</p>
-<p>The root set is the base of the fibration, the gauge is the fibre, and the frame is the total space. The root count is <em>The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</em>; the gauge is the stabiliser of the root in $PGL_4$.</p>
+<p>The root set is the base of the fibration, the frame group is the fibre, and the frame is the total space. The root count is <em>The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</em>; the frame group is the stabiliser of the root in $PGL_4$.</p>
 <p><strong>The case $n=2$.</strong> For the biquaternion algebra $M_2(\mathbb{C})$,</p>
 <p>$$
 \underbrace{3}_{\text{frame}/\mathbb{C}^{\times}}
 =
 \underbrace{2}_{\text{root}}
 +
-\underbrace{1}_{\text{gauge}},
+\underbrace{1}_{\text{frame group}},
 $$</p>
-<p>all complex. In real dimensions the frame modulo scale has $6$, the root has $4$ and the gauge has $2$: the four real parameters of the biquaternion root and the two real parameters of the complex number $\lambda$. This is the six-dimensional basis of the biquaternion frame.</p>
-<h2 id="an-anticommuting-involution-is-a-gauge-point">An Anticommuting Involution Is a Gauge Point</h2>
-<p><strong>At $n=2$ an involution of the frame that anticommutes with $H$ is exactly a point of the gauge.</strong> In the frame $(v_1,v_2)$ with $H=\operatorname{diag}(1,-1)$, let $R$ satisfy</p>
+<p>all complex. In real dimensions the frame modulo scale has $6$, the root has $4$ and the frame group has $2$: the four real parameters of the biquaternion root and the two real parameters of the complex number $\lambda$. This is the six-dimensional basis of the biquaternion frame.</p>
+<h2 id="an-anticommuting-involution-is-a-frame-point">An Anticommuting Involution Is a Frame Point</h2>
+<p><strong>At $n=2$ an involution of the frame that anticommutes with $H$ is exactly a point of the frame group.</strong> In the frame $(v_1,v_2)$ with $H=\operatorname{diag}(1,-1)$, let $R$ satisfy</p>
 <p>$$
 R^2=I,\qquad RH=-HR.
 $$</p>
@@ -316,15 +316,15 @@ $$</p>
 <p>$$
 R=aE_{12}+a^{-1}E_{21},\qquad a\in\mathbb{C}^{\times}.
 $$</p>
-<p>Under the gauge $E_{12}\mapsto\lambda E_{12}$, $E_{21}\mapsto\lambda^{-1}E_{21}$, the element $R$ is carried to</p>
+<p>Under the frame group $E_{12}\mapsto\lambda E_{12}$, $E_{21}\mapsto\lambda^{-1}E_{21}$, the element $R$ is carried to</p>
 <p>$$
 a\lambda E_{12}+a^{-1}\lambda^{-1}E_{21},
 $$</p>
-<p>which is the same family with $a$ replaced by $a\lambda$. The gauge orbit of $R$ is the whole family, and the parameter $a$ is gauge, not root.</p>
+<p>which is the same family with $a$ replaced by $a\lambda$. The frame orbit of $R$ is the whole family, and the parameter $a$ is frame group, not root.</p>
 <p><strong>What $R$ carries and what it does not.</strong> It names one nonzero element in each mixed Peirce line, $R$ having nonzero entries exactly in $\mathcal{A}_{12}$ and $\mathcal{A}_{21}$, and it normalises the two reciprocally, so it is a shorthand for a normalised pair. It supplies no idempotent: those are $P_\pm=(I\pm H)/2$, produced by $H$ alone. The biquaternion articles state the same data as the choice of one nonzero element of a mixed line, with the partner fixed by the normalisation; the primitive is the root, and the choice is the basis.</p>
-<p><strong>For $n=4$ there is no single such element.</strong> Elements anticommuting with $H$ do exist: they occupy the two mixed blocks $\mathcal{A}_{13},\mathcal{A}_{31},\mathcal{A}_{24},\mathcal{A}_{42}$, and a general such element is a sum of two independent off-diagonal pairs. Under the gauge it sees only the two combinations $\lambda_1\lambda_2$ and $\lambda_2\lambda_3$, so its orbit has dimension two and it does not carry the third parameter. No single element therefore plays the role that $R$ plays at $n=2$; the gauge is a torus, and there is no second primitive.</p>
+<p><strong>For $n=4$ there is no single such element.</strong> Elements anticommuting with $H$ do exist: they occupy the two mixed blocks $\mathcal{A}_{13},\mathcal{A}_{31},\mathcal{A}_{24},\mathcal{A}_{42}$, and a general such element is a sum of two independent off-diagonal pairs. Under the frame group it sees only the two combinations $\lambda_1\lambda_2$ and $\lambda_2\lambda_3$, so its orbit has dimension two and it does not carry the third parameter. No single element therefore plays the role that $R$ plays at $n=2$; the frame group is a torus, and there is no second primitive.</p>
 <h2 id="summary">Summary</h2>
-<p>An adapted frame $(v_1,v_2,v_3,v_4)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\omega_kE_{kk}$. The simple nilpotents $N_1=E_{12}$, $N_2=E_{23}$, $N_3=E_{34}$ square to zero, generate the algebra together with the subdiagonal units (their conjugate transposes in an orthonormal frame), and every composite is their consecutive product. The gauge $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^3$ with one parameter $\lambda_k=t_k/t_{k+1}$ per simple nilpotent, subject to the cocycle that fixes the composites and to the relation $\lambda_1\lambda_2\lambda_3\lambda_4=1$. The frame modulo scale has $15$ complex dimensions, split as $12$ for the root and $3$ for the gauge; at $n=2$ this is $3=2+1$ complex, the $6=4+2$ real count of the biquaternion frame. An involution of the frame anticommuting with $H$ is a point of this gauge, not a second primitive.</p>
+<p>An adapted frame $(v_1,v_2,v_3,v_4)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\omega_kE_{kk}$. The simple nilpotents $N_1=E_{12}$, $N_2=E_{23}$, $N_3=E_{34}$ square to zero, generate the algebra together with the subdiagonal units (their conjugate transposes in an orthonormal frame), and every composite is their consecutive product. The frame group $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^3$ with one parameter $\lambda_k=t_k/t_{k+1}$ per simple nilpotent, subject to the cocycle that fixes the composites and to the relation $\lambda_1\lambda_2\lambda_3\lambda_4=1$. The frame modulo scale has $15$ complex dimensions, split as $12$ for the root and $3$ for the frame group; at $n=2$ this is $3=2+1$ complex, the $6=4+2$ real count of the biquaternion frame. An involution of the frame anticommuting with $H$ is a point of this frame group, not a second primitive.</p>
 <p>$$
 \boxed{\ 15=12+3,\qquad N_k\longmapsto\lambda_kN_k,\qquad E_{kl}\longmapsto\lambda_k\cdots\lambda_{l-1}E_{kl},\qquad \lambda_1\lambda_2\lambda_3\lambda_4=1.\ }
 $$</p>
@@ -349,7 +349,7 @@ $$</p>
 <td>$12$</td>
 </tr>
 <tr>
-<td>Gauge $(\mathbb{C}^{\times})^3$</td>
+<td>Frame group $(\mathbb{C}^{\times})^3$</td>
 <td>$3$</td>
 </tr>
 <tr>
@@ -357,7 +357,7 @@ $$</p>
 <td>$3$</td>
 </tr>
 <tr>
-<td>Independent gauge parameters</td>
+<td>Independent frame parameters</td>
 <td>$3$</td>
 </tr>
 </tbody>
@@ -389,11 +389,11 @@ $$</p>
 </tr>
 <tr>
 <td>$t_k$</td>
-<td>the gauge scale of $v_k$</td>
+<td>the frame group scale of $v_k$</td>
 </tr>
 <tr>
 <td>$\lambda_k=t_kt_{k+1}^{-1}$</td>
-<td>the gauge parameter on $N_k$</td>
+<td>the frame parameter on $N_k$</td>
 </tr>
 <tr>
 <td>$T$</td>
@@ -401,7 +401,7 @@ $$</p>
 </tr>
 <tr>
 <td>$D=\operatorname{diag}(t_1,t_2,t_3,t_4)$</td>
-<td>the gauge matrix in the standard frame</td>
+<td>the frame matrix in the standard frame</td>
 </tr>
 </tbody>
 </table></div>
@@ -414,7 +414,7 @@ $$</p>
 <li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m4c.html">Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</a>, for the root that fixes the flag.</li>
 <li><a href="the-peirce-decomposition-of-m4c.html">The Peirce Decomposition of $M_4(\mathbb{C})$</a>, for the corners that the invertibles span.</li>
 <li><a href="the-rank-two-split-of-m4c.html">The Rank-Two Split of $M_4(\mathbb{C})$</a>, for the coarse split and the mass block.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html">The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</a>, for the general construction at order $n$.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html">The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$</a>, for the general construction at order $n$.</li>
 <li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">Peirce Decompositions of the Biquaternion Algebra</a>, for the biquaternion frame and the parameter $\lambda$.</li>
 </ul>
       </div>

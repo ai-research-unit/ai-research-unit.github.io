@@ -72,8 +72,8 @@
         <h1 id="the-peirce-basis-and-the-corners-at-math0"><strong>The Peirce Basis and the Corners at $n=2$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>A rank-one idempotent $e$, one nonzero element $\upsilon_{+}$ of the corner $A_{12}$, and the partner $\upsilon_{-}$ fixed by $\upsilon_{+}\upsilon_{-}=e$ form a Peirce basis $(e,\upsilon_{+},\upsilon_{-},1-e)$ in which the multiplication is the multiplication of the matrix units.</strong></p>
-<p>The article builds the basis, states the eight nonzero products that define it, proves that the gauge freedom is exactly one reciprocal rescaling $\upsilon_{+}\mapsto\lambda\upsilon_{+}$, $\upsilon_{-}\mapsto\lambda^{-1}\upsilon_{-}$ with $\lambda\in\mathbb{C}^{\times}$, reads the corners in the basis, and identifies the basis with the system of matrix units $E_{11}$, $E_{12}$, $E_{21}$, $E_{22}$. It assumes <em>The Peirce Decomposition in Two Dimensions</em> and <em>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</em>, and it takes the nilpotent background from <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em>.</p>
-<p>It defers the frame in general dimension to <em>The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</em> and the recursion to <em>The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</em>.</p>
+<p>The article builds the basis, states the eight nonzero products that define it, proves that the frame freedom is exactly one reciprocal rescaling $\upsilon_{+}\mapsto\lambda\upsilon_{+}$, $\upsilon_{-}\mapsto\lambda^{-1}\upsilon_{-}$ with $\lambda\in\mathbb{C}^{\times}$, reads the corners in the basis, and identifies the basis with the system of matrix units $E_{11}$, $E_{12}$, $E_{21}$, $E_{22}$. It assumes <em>The Peirce Decomposition in Two Dimensions</em> and <em>Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum</em>, and it takes the nilpotent background from <em>The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$</em>.</p>
+<p>It defers the frame in general dimension to <em>The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$</em> and the recursion to <em>The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</em>.</p>
 <h2 id="the-frame">The Frame</h2>
 <p><strong>Definition.</strong> A <strong>frame</strong> at order two is a pair of orthogonal idempotents $e$ and $f=1-e$, each of rank one.</p>
 <p><strong>Proposition.</strong> The pair is determined by its first member, and any two frames are conjugate.</p>
@@ -108,11 +108,11 @@ $$</p>
 \upsilon_{+}\mapsto\lambda\upsilon_{+},\qquad \upsilon_{-}\mapsto\lambda^{-1}\upsilon_{-},\qquad \lambda\in\mathbb{C}^{\times}.
 $$</p>
 <p><strong>Proof.</strong> The product of the rescaled pair is $\lambda\lambda^{-1}\upsilon_{+}\upsilon_{-}=e$, so every such rescaling gives a companion pair; conversely, if $(\upsilon_{+}',\upsilon_{-}')$ is another pair then $\upsilon_{+}'=\lambda\upsilon_{+}$ for some $\lambda\ne0$ because the corner is a line, and the normalisation forces $\upsilon_{-}'=\lambda^{-1}\upsilon_{-}$.</p>
-<p><strong>Corollary.</strong> The gauge is one complex parameter, and the frame itself has no gauge freedom once $e$ is fixed.</p>
+<p><strong>Corollary.</strong> The frame group has one complex parameter, and the frame itself has no frame freedom once $e$ is fixed.</p>
 <p><strong>Proof.</strong> The idempotent $e$ is fixed and the complement is determined by it; only the choice of the generator of the mixed line and its reciprocal partner is free.</p>
-<p><strong>Corollary.</strong> The element $\upsilon_{+}\upsilon_{-}$ and the element $\upsilon_{-}\upsilon_{+}$ are gauge invariant, and the two products $\upsilon_{+}^{2}$ and $\upsilon_{-}^{2}$ vanish in every gauge.</p>
+<p><strong>Corollary.</strong> The element $\upsilon_{+}\upsilon_{-}$ and the element $\upsilon_{-}\upsilon_{+}$ are frame invariant, and the two products $\upsilon_{+}^{2}$ and $\upsilon_{-}^{2}$ vanish in every frame group.</p>
 <p><strong>Proof.</strong> The first two products are $e$ and $f$ independently of $\lambda$, and the squares vanish because the mixed spaces are square-zero.</p>
-<p><strong>The gauge is what remains of the diagonal matrix of the diagonalisation.</strong> A matrix that diagonalises an element is determined up to the diagonal rescalings, and at order two those rescalings act on the two mixed lines reciprocally.</p>
+<p><strong>The frame group is what remains of the diagonal matrix of the diagonalisation.</strong> A matrix that diagonalises an element is determined up to the diagonal rescalings, and at order two those rescalings act on the two mixed lines reciprocally.</p>
 <p><strong>Proof.</strong> Conjugating by a diagonal matrix $\operatorname{diag}(\lambda,\mu)$ multiplies $E_{12}$ by $\lambda\mu^{-1}$ and $E_{21}$ by $\mu\lambda^{-1}$; the normalisation $\upsilon_{+}\upsilon_{-}=e$ then forces $\mu=1$, leaving the single parameter $\lambda$.</p>
 <h2 id="the-system-of-matrix-units">The System of Matrix Units</h2>
 <p><strong>Theorem.</strong> The assignment $E_{11}\mapsto e$, $E_{12}\mapsto\upsilon_{+}$, $E_{21}\mapsto\upsilon_{-}$, $E_{22}\mapsto f$ extends to an algebra isomorphism $M_2(\mathbb{C})\to M_2(\mathbb{C})$, namely the conjugation by the matrix whose columns are the images of the standard basis.</p>
@@ -157,7 +157,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\lambda$</td>
-<td>the gauge parameter in $\mathbb{C}^{\times}$</td>
+<td>the frame parameter in $\mathbb{C}^{\times}$</td>
 </tr>
 <tr>
 <td>$x_{0},x_{+},x_{-},x_{1}$</td>
@@ -171,7 +171,7 @@ $$</p>
 <li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the frame and the gauge in the Peirce language.</li>
 <li><a href="the-peirce-decomposition-in-two-dimensions.html">The Peirce Decomposition in Two Dimensions</a>, for the four spaces that the basis linearises.</li>
 <li><a href="the-peirce-basis-of-the-biquaternion-algebra.html">The Peirce Basis of the Biquaternion Algebra</a>, for the same basis in the biquaternion language.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html">The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</a>, for the frame carried to the general order.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html">The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$</a>, for the frame carried to the general order.</li>
 </ul>
       </div>
     </main>

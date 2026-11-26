@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Audit: The Purge Method, Written Down So It Can Be Run Again — Biquaternion Universe</title>
-  <meta name="description" content="Status of this file. Method record, and executed twice. This is the procedure that removed the word gauge from articles_physics, physics.md and…">
+  <meta name="description" content="Status of this file. Method record, and executed three times. This is the procedure that removed the word gauge from articles_physics, physics.md and…">
   <link rel="stylesheet" href="../../assets/css/base.css">
   <link rel="stylesheet" href="../../assets/css/layout.css">
   <link rel="stylesheet" href="../../assets/css/article.css">
@@ -70,7 +70,7 @@
     <main class="article">
       <div class="article-body">
         <h1 id="audit-the-purge-method-written-down-so-it-can-be-run-again"><strong>Audit: The Purge Method, Written Down So It Can Be Run Again</strong></h1>
-<p><em>Status of this file.</em> <strong>Method record, and executed twice.</strong> This is the procedure that removed the word <em>gauge</em> from <code>articles_physics</code>, <code>physics.md</code> and <code>articles_internal</code>: 1 146 tokens in 287 physics articles, 210 in the physics menu, 703 in the internal notes. It left 150 protected tokens in physics, 7 in the internal notes outside <code>audits/</code>, and the maths corpus untouched. Nothing here is proposed. Every number is measured.</p>
+<p><em>Status of this file.</em> <strong>Method record, and executed three times.</strong> This is the procedure that removed the word <em>gauge</em> from <code>articles_physics</code>, <code>physics.md</code> and <code>articles_internal</code>: 1 146 tokens in 287 physics articles, 210 in the physics menu, 703 in the internal notes. It left 150 protected tokens in physics and 7 in the internal notes outside <code>audits/</code>. A third run then took the maths corpus from 1 364 tokens in 158 articles to 184 in 34, and it is recorded in §13 because it forced one change of vocabulary and one change of scope. Nothing here is proposed. Every number is measured.</p>
 <p><em>What the file is for.</em> It states the seven stages, the four ordered rule lists, the protection set, and the battery of checks, in the order they must run, so that the same invariants can be verified again and the next word can be moved with the same method.</p>
 <p><em>The reader's contract, in six lines.</em></p>
 <ol>
@@ -151,10 +151,10 @@ cp -a articles_internal /tmp/orig_internal
 <tr>
 <td><code>articles_maths</code></td>
 <td>1 364</td>
-<td>—</td>
-<td>1 364</td>
-<td>—</td>
-<td>untouched by design</td>
+<td>158</td>
+<td>184</td>
+<td>34</td>
+<td>standard terms in 25 kept files and 30 citations, see §13</td>
 </tr>
 <tr>
 <td><code>articles_external</code></td>
@@ -518,7 +518,7 @@ cp -a articles_internal /tmp/orig_internal
 </table></div>
 <p><strong>The one number that is not zero and should not be.</strong> <code>audit-gauge.md</code> keeps its 127 tokens, and this file adds 89 of its own, because a method record has to spell out the word it moved. Both subjects are the purge, both sets of counts are its evidence, and rewriting them would delete the record they exist to preserve.</p>
 <h2 id="summary">Summary</h2>
-<p>The method is seven stages: snapshot, census, protect, ordered rules, case, repair, slugs. Its test is a battery of nine counts, of which two — line counts and <code>$</code> counts — are the ones that cannot be argued with, and one — the census of changed word pairs — is the one that needs a reader. It leaves the citations standing, leaves the maths untouched, and leaves the record of itself in place.</p>
+<p>The method is seven stages: snapshot, census, protect, ordered rules, case, repair, slugs. Its test is a battery of nine counts, of which two — line counts and <code>$</code> counts — are the ones that cannot be argued with, and one — the census of changed word pairs — is the one that needs a reader. It leaves the citations standing, and leaves the record of itself in place. It does not leave a corpus untouched by default: the second corpus it is pointed at needs its own answer for what the word names, and §13 is that answer for mathematics.</p>
 <p>The vocabulary it settled on is five words, and none of them is a synonym of the word it replaced: <em>connection</em> for the field, <em>representative</em> for the member of the orbit, <em>redundancy</em> for the freedom, <em>local symmetry</em> for the invariance, <em>condition</em> for what selects a representative. A purge that finds a single synonym has not understood the word it removed.</p>
 <h2 id="appendix-the-engine">Appendix: The Engine</h2>
 <p><strong>What this is.</strong> The four functions the stages of §5 to §7 need, without the rule table, which is the two tables above. It runs on the <code>.venv</code> interpreter of the repository, reads a file, writes it back only if it changed, and prints the residual of the result so that check 1 of the battery is read at the same moment as the write.</p>
@@ -599,6 +599,108 @@ def purge(paths, rules, frozen=()):
 <li><strong>A replacement is literal.</strong> The case function rebuilds the text from the match and the replacement, so a group reference such as <code>\1</code> is printed as the two characters, not expanded. Write one rule per form instead of one rule with a group, which is why the table of §6 lists <code>gauge-fixed</code> before <code>gauge-fix</code> rather than folding them into one pattern.</li>
 <li><strong>The case function reads the match, not the rule.</strong> A rule may therefore be written in lower case and still fire correctly on a capitalised heading, and a rule written in title case will be de-capitalised on a lower-case site. The rule table carries no capital letters for that reason, except where the corpus's own title is capitalised phrase by phrase.</li>
 </ol>
+<h2 id="13-the-second-run-mathematics">13. The Second Run: Mathematics</h2>
+<p><strong>Why a second run is not a repetition.</strong> In physics the word was an adjective in front of a noun. In mathematics it is a defined object: <em>the gauge</em> is the group of rescalings of a normalised frame, of dimension $n-1$, and nine articles carried it in their titles. The method is the same seven stages; what changed is the name chosen and the line drawn around the standard uses.</p>
+<p><strong>The name.</strong> <em>Frame group</em>, with <em>frame torus</em>, <em>frame parameters</em>, <em>frame matrix</em>, <em>frame direction</em>, <em>frame point</em>, <em>frame fibre</em>, <em>frame freedom</em>, <em>frame orbit</em>, <em>frame invariance</em>, <em>frame transformation</em>, <em>action of the frame group</em>, <em>frame-fixed</em>, <em>fixing the frame</em>. It collides with nothing: <em>frame</em> is already the corpus's word for the object the group acts on, so the group is renamed by its own action rather than by an import from physics.</p>
+<p><strong>What the counts say.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>measure</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>maths tokens before</td>
+<td>1 364 in 158 articles</td>
+</tr>
+<tr>
+<td>maths tokens after</td>
+<td>184 in 34</td>
+</tr>
+<tr>
+<td>prose lines rewritten</td>
+<td>828</td>
+</tr>
+<tr>
+<td>menu lines rewritten, <code>maths.md</code></td>
+<td>59</td>
+</tr>
+<tr>
+<td>slugs renamed</td>
+<td>9</td>
+</tr>
+<tr>
+<td>files relinked</td>
+<td>46 maths, 1 internal</td>
+</tr>
+<tr>
+<td>free prose remaining</td>
+<td>152 tokens in 25 files, all standard terms</td>
+</tr>
+<tr>
+<td>citations remaining</td>
+<td>30 lines</td>
+</tr>
+<tr>
+<td>line-count changes, 2 639 files</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>$</code>-count changes, every line</td>
+<td>0</td>
+</tr>
+<tr>
+<td>new doubled words</td>
+<td>0</td>
+</tr>
+<tr>
+<td>urls, before and after</td>
+<td>3 360 and 3 361, the one page being a physics article added the same day</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The five senses that stay, and why each one stays.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sense</th>
+<th>where</th>
+<th>why it cannot move</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the gauge group of a principal bundle</td>
+<td><em>The Involution on the Space of Connections</em>, <em>Fibre Bundles</em>, the bundle list</td>
+<td>the article defines the standard object and cites Atiyah and Kobayashi–Nomizu for it</td>
+</tr>
+<tr>
+<td>the gauge action and the gauge-invariant ideals of a graph $C^*$-algebra</td>
+<td><em>Graph $C^*$-Algebras</em></td>
+<td>the Gauge-Invariant Uniqueness Theorem is a named result</td>
+</tr>
+<tr>
+<td>gauge equivalence and the gauge action on a Maurer–Cartan set</td>
+<td><em>$A_\infty$</em>, <em>Deformation Theory</em>, <em>Deformation Quantization</em></td>
+<td>the notation $\operatorname{MC}/\text{gauge}$ is standard in deformation theory</td>
+</tr>
+<tr>
+<td>the gauge of a convex set, the Minkowski functional</td>
+<td><em>Locally Convex Spaces</em>, <em>Norms and Seminorms</em>, <em>Bounded Operators</em>, <em>Support Function</em></td>
+<td>it is a different object that shares the word</td>
+</tr>
+<tr>
+<td>the conformal gauge, the gauge of a Fourier transform, gauge theory as a field name</td>
+<td><em>Dimension of the Boundary</em>, the operator-valued Fourier article, the topology lists</td>
+<td>standard in their own fields; renaming would misname a theorem or a subject</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One article needed its own answer.</strong> <em>The Eigenbasis of a Spectrally Regular Biquaternion</em> uses the word for a rule that selects a representative, set against a second rule it calls the chart. There the name is <em>frame choice</em>, not <em>frame group</em>, and the rule table was replaced by twenty explicit substitutions, because a group does not select a representative and the blanket rule would have said that it does.</p>
+<p><strong>Two repairs the blanket rule forced.</strong> <em>The gauge is not a symmetry of the array of numbers</em> became <em>the choice of frame is not a symmetry of the array of numbers</em>, because a group is a symmetry and only a choice is not. <em>The gauge is one complex parameter</em> became <em>has one complex parameter</em>, because a group has parameters and is not one. Both are the same defect as §8: a noun was supplied where the grammar wanted a different noun.</p>
+<p><strong>What the second run proves about the method.</strong> The battery did not change; the protection set grew by five standard senses and shrank nowhere; and the two invariants that cannot be argued with, line counts and <code>$</code> counts, held over all 2 639 files. The parts that had to be decided by hand were the two above: the name, and the boundary of the standard uses. No rule could have decided either.</p>
       </div>
     </main>
   </div>

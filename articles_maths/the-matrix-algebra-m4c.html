@@ -73,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>matrix algebra</strong> $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices under the product. It is the ambient algebra of this category: the root, the idempotents, the Peirce corners, the frame, the principal $\mathfrak{sl}_2$ and the chiralities are all structures on it. This article fixes the algebra itself: the matrix units, the trace, the determinant, the centre, the simplicity, the real dimension, the group of invertibles $GL_4(\mathbb{C})$ and the projective group $PGL_4(\mathbb{C})$.</p>
 <p>Throughout, $M_4=M_4(\mathbb{C})=\operatorname{End}(\mathbb{C}^4)$, $I$ is the identity, and $A^*=\bar A^{\mathsf T}$ is the conjugate transpose. No positive definite form, no norm and no topology are used; the positive definite trace form and the topology are <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em> and <em>The Topology of $M_4(\mathbb{C})$</em>. The element, its coordinates and the trace are <em>The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$</em>.</p>
-<p>The algebra is <strong>central simple</strong> of complex dimension $16$ and real dimension $32$. It has centre $\mathbb{C}I$, no proper two-sided ideal, and many zero divisors. Its group of invertibles is $GL_4(\mathbb{C})$, of complex dimension $16$; its projective group is $PGL_4(\mathbb{C})$, of complex dimension $15$. The group $PGL_4$ is the group of frames modulo overall scale, and it is the group that acts on the root and on the gauge in the articles that follow.</p>
+<p>The algebra is <strong>central simple</strong> of complex dimension $16$ and real dimension $32$. It has centre $\mathbb{C}I$, no proper two-sided ideal, and many zero divisors. Its group of invertibles is $GL_4(\mathbb{C})$, of complex dimension $16$; its projective group is $PGL_4(\mathbb{C})$, of complex dimension $15$. The group $PGL_4$ is the group of frames modulo overall scale, and it is the group that acts on the root and on the frame group in the articles that follow.</p>
 <p><strong>The full algebra and the regular model.</strong> The $M_4(\mathbb{C})_{\mathbb{B}_L}$ articles study the four-dimensional subalgebra of $M_4(\mathbb{C})$ that is the image of the left regular representation of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$. That image is not the full algebra: it is a copy of $M_2(\mathbb{C})$ inside $M_4(\mathbb{C})$, of complex dimension $4$, and its trace and determinant are the biquaternion trace and norm. The present article and the rest of this category treat the full sixteen-dimensional algebra. The distinction is stated precisely in §<em>The Full Algebra and the Regular Model</em>. A construction of the algebra from the two-sided operators on a smaller matrix algebra is §<em>A Construction from the Two-Sided Operators</em>; it is one route to the algebra, not a definition.</p>
 <h2 id="the-algebra-and-the-matrix-units">The Algebra and the Matrix Units</h2>
 <p><strong>Definition.</strong> Let $E_{ij}$ be the $4\times4$ matrix with entry $1$ in position $(i,j)$ and $0$ elsewhere. The sixteen matrices $E_{ij}$, $i,j=1,2,3,4$, are the <strong>matrix units</strong>.</p>
@@ -215,13 +215,13 @@ $$</p>
 A\longmapsto SAS^{-1},
 $$</p>
 <p>and the kernel of the action is exactly the scalars: if $SAS^{-1}=A$ for every $A$, then $S$ commutes with every matrix, hence $S\in\mathbb{C}^\times I$ by the centre theorem. The conjugation action preserves the trace, the determinant, the characteristic polynomial and the rank.</p>
-<p><strong>The projective group is the group of frames modulo scale.</strong> A frame is an ordered basis $(v_1,v_2,v_3,v_4)$ of $\mathbb{C}^4$. The group $GL_4$ acts simply transitively on frames. Two frames that differ by an overall scalar give the same matrix units $E_{ij}=v_i\ell_j$, because the scalar cancels between the vector and the dual functional. The group of frames modulo overall scale is therefore $PGL_4$. This is the group that acts on the root and on the gauge; the count of the frame is</p>
+<p><strong>The projective group is the group of frames modulo scale.</strong> A frame is an ordered basis $(v_1,v_2,v_3,v_4)$ of $\mathbb{C}^4$. The group $GL_4$ acts simply transitively on frames. Two frames that differ by an overall scalar give the same matrix units $E_{ij}=v_i\ell_j$, because the scalar cancels between the vector and the dual functional. The group of frames modulo overall scale is therefore $PGL_4$. This is the group that acts on the root and on the frame group; the count of the frame is</p>
 <p>$$
 \underbrace{15}_{PGL_4}
 =
 \underbrace{12}_{\text{root}}
 +
-\underbrace{3}_{\text{gauge}} .
+\underbrace{3}_{\text{frame group}} .
 $$</p>
 <p><strong>The standard flag and the Borel subgroup.</strong> The standard flag is</p>
 <p>$$

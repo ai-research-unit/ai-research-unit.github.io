@@ -79,8 +79,8 @@ $$</p>
 <p>$$
 M:\mathbb{C}^2_-\longrightarrow\mathbb{C}^2_+ .
 $$</p>
-<p>The chiral gauge acts by $M\mapsto U_LMU_R^{-1}$ with $U_L,U_R\in U(2)$. The singular values $\sigma_1,\sigma_2$ are the two invariants of the orbit; the determinant is a phase times their product; the rank counts the massless modes.</p>
-<p>The article defines the mass block, proves the singular value and polar decompositions, identifies the invariants and the orbits, explains the determinant phase and the rank, and states why the off-diagonal block is the only coupling of the chiralities. The rank-two split is <em>The Rank-Two Split of $M_4(\mathbb{C})$</em>; the chirality is <em>The Two Chiralities of $M_4(\mathbb{C})$</em>; the three-parameter gauge is <em>The Three-Parameter Gauge and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em>; the full polar decomposition is <em>The Polar Decomposition of $M_4(\mathbb{C})$</em>.</p>
+<p>The chiral frame group acts by $M\mapsto U_LMU_R^{-1}$ with $U_L,U_R\in U(2)$. The singular values $\sigma_1,\sigma_2$ are the two invariants of the orbit; the determinant is a phase times their product; the rank counts the massless modes.</p>
+<p>The article defines the mass block, proves the singular value and polar decompositions, identifies the invariants and the orbits, explains the determinant phase and the rank, and states why the off-diagonal block is the only coupling of the chiralities. The rank-two split is <em>The Rank-Two Split of $M_4(\mathbb{C})$</em>; the chirality is <em>The Two Chiralities of $M_4(\mathbb{C})$</em>; the three-parameter frame group is <em>The Three-Parameter Frame Group and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em>; the full polar decomposition is <em>The Polar Decomposition of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-mass-block">The Mass Block</h2>
 <p><strong>Definition.</strong> The <strong>mass block</strong> is the corner</p>
 <p>$$
@@ -113,8 +113,8 @@ $$</p>
 (N,M)\longmapsto NM.
 $$</p>
 <p>The products $MN$ and $NM$ are the only places where the two chiralities interact in the multiplication.</p>
-<h2 id="the-chiral-gauge">The Chiral Gauge</h2>
-<p><strong>Definition.</strong> The <strong>chiral gauge group</strong> is</p>
+<h2 id="the-chiral-frame-group">The Chiral Frame Group</h2>
+<p><strong>Definition.</strong> The <strong>chiral frame group</strong> is</p>
 <p>$$
 G_{\mathrm{ch}}=U(2)_L\times U(2)_R,
 $$</p>
@@ -132,7 +132,7 @@ $$</p>
 (U_LMU_R^{*})^*=U_RM^*U_L^{*}.
 $$</p>
 <p><strong>Proof.</strong> The determinant is multiplicative, and $\det U_R^{-1}=(\det U_R)^{-1}$. The adjoint reverses the order: $(U_LMU_R^*)^*=U_RM^*U_L^*$.</p>
-<p><strong>The compact gauge and the complex gauge.</strong> The group $G_{\mathrm{ch}}$ is compact. Its complexification is $GL(2)_L\times GL(2)_R$, acting by $M\mapsto SM T^{-1}$ with $S,T\in GL(2,\mathbb{C})$. The compact orbits are the singular value orbits; the complex orbits are the rank orbits. The two classifications are different, and the article uses both.</p>
+<p><strong>The compact frame group and the complex frame group.</strong> The group $G_{\mathrm{ch}}$ is compact. Its complexification is $GL(2)_L\times GL(2)_R$, acting by $M\mapsto SM T^{-1}$ with $S,T\in GL(2,\mathbb{C})$. The compact orbits are the singular value orbits; the complex orbits are the rank orbits. The two classifications are different, and the article uses both.</p>
 <h2 id="the-singular-value-decomposition">The Singular Value Decomposition</h2>
 <p><strong>Theorem (SVD).</strong> Every $M\in\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)$ has a decomposition</p>
 <p>$$
@@ -200,12 +200,12 @@ $$</p>
 <p>$$
 \lvert\det M\rvert=\sigma_1\sigma_2 .
 $$</p>
-<p>The argument is the <strong>chiral phase</strong> $\theta_U-\theta_V$. Under the chiral gauge,</p>
+<p>The argument is the <strong>chiral phase</strong> $\theta_U-\theta_V$. Under the chiral frame group,</p>
 <p>$$
 \det(U_LMU_R^*)=e^{i(\theta_L-\theta_R)}e^{i(\theta_U-\theta_V)}\sigma_1\sigma_2,
 $$</p>
-<p>so the phase shifts by the determinant phases of the gauge; the modulus $\sigma_1\sigma_2$ is invariant.</p>
-<p><strong>The special unitary gauge.</strong> Under $SU(2)_L\times SU(2)_R$, the determinant phases of the gauge are $1$, so $\det M$ is invariant. Its modulus is $\sigma_1\sigma_2$, and its phase is the chiral phase, an invariant of $M$ itself, not a gauge artefact. Under the full $U(2)_L\times U(2)_R$, only the modulus is invariant; the phase can be removed by the two determinant factors.</p>
+<p>so the phase shifts by the determinant phases of the frame group; the modulus $\sigma_1\sigma_2$ is invariant.</p>
+<p><strong>The special unitary frame group.</strong> Under $SU(2)_L\times SU(2)_R$, the determinant phases of the frame group are $1$, so $\det M$ is invariant. Its modulus is $\sigma_1\sigma_2$, and its phase is the chiral phase, an invariant of $M$ itself, not a frame group artefact. Under the full $U(2)_L\times U(2)_R$, only the modulus is invariant; the phase can be removed by the two determinant factors.</p>
 <p><strong>The rank and the masslessness.</strong> The rank of $M$ is the number of nonzero singular values:</p>
 <p>$$
 \operatorname{rank}M=
@@ -215,12 +215,12 @@ $$</p>
 0,&amp; M=0.
 \end{cases}
 $$</p>
-<p>The rank is <strong>the masslessness</strong>: rank $2$ is the generic massive case, rank $1$ has one massless mode, and rank $0$ is fully massless. The rank is invariant under the complex gauge and under the compact gauge. The set</p>
+<p>The rank is <strong>the masslessness</strong>: rank $2$ is the generic massive case, rank $1$ has one massless mode, and rank $0$ is fully massless. The rank is invariant under the complex frame group and under the compact frame group. The set</p>
 <p>$$
 \{M:\det M=0\}=\{M:\operatorname{rank}M\le1\}
 $$</p>
 <p>is the <strong>massless locus</strong>, a complex hypersurface of complex dimension $3$ in the four-dimensional mass block, with real codimension $2$. Its complement, the rank-two locus, is open and dense.</p>
-<p><strong>The orbits.</strong> The compact gauge orbits are classified by the unordered pair $\{\sigma_1,\sigma_2\}$ of singular values. The complex gauge orbits are classified by the rank. The two classifications fit together: the complex orbit of rank $\varrho$ contains the compact orbits with exactly $\varrho$ positive singular values.</p>
+<p><strong>The orbits.</strong> The compact frame orbits are classified by the unordered pair $\{\sigma_1,\sigma_2\}$ of singular values. The complex frame orbits are classified by the rank. The two classifications fit together: the complex orbit of rank $\varrho$ contains the compact orbits with exactly $\varrho$ positive singular values.</p>
 <h2 id="the-only-coupling-of-the-chiralities">The Only Coupling of the Chiralities</h2>
 <p><strong>The block-diagonal part preserves the chiralities.</strong> An element of $\mathcal{A}\oplus\mathcal{D}$ is block-diagonal. It maps each chirality to itself:</p>
 <p>$$
@@ -248,10 +248,10 @@ $$</p>
 <p>$$
 z=e^{i\theta}\lvert z\rvert .
 $$</p>
-<p>There is one singular value $\lvert z\rvert$, one phase $e^{i\theta}$, and the rank is $1$ for $z\ne0$ and $0$ for $z=0$. The two singular values of the four-dimensional mass block degenerate to one modulus; the chiral phase is the only phase. The comparison with the three-parameter gauge of the $M_4$ frame is <em>The Three-Parameter Gauge and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em>.</p>
+<p>There is one singular value $\lvert z\rvert$, one phase $e^{i\theta}$, and the rank is $1$ for $z\ne0$ and $0$ for $z=0$. The two singular values of the four-dimensional mass block degenerate to one modulus; the chiral phase is the only phase. The comparison with the three-parameter frame group of the $M_4$ frame is <em>The Three-Parameter Frame Group and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em>.</p>
 <p><strong>The general pattern.</strong> For $M_{2m}(\mathbb{C})$ with the chirality split into two $m$-dimensional planes, the mass block is $M_m(\mathbb{C})$, and its chiral polar decomposition has $m$ singular values. For $m=1$ there is one modulus; for $m=2$ there are two; for $m=3$ there are three. The two singular values of the $M_4$ mass block are the first nontrivial case.</p>
 <h2 id="summary">Summary</h2>
-<p>The mass block $\mathcal{B}=P_+M_4P_-\cong\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)\cong M_2(\mathbb{C})$ is the four-dimensional space of maps from the right chirality to the left. The chiral gauge $U(2)_L\times U(2)_R$ acts by $M\mapsto U_LMU_R^*$. Every $M$ has a singular value decomposition $M=U\Sigma V^*$ with two singular values $\sigma_1\ge\sigma_2\ge0$, and a chiral polar decomposition $M=WP$ with $W=UV^*$ $*$-unitary and $P=V\Sigma V^*$ positive semidefinite. The determinant is $e^{i(\theta_U-\theta_V)}\sigma_1\sigma_2$; its modulus is the product of the singular values, and its phase is the chiral phase. The rank counts the massless modes: rank $2$ is massive, rank $1$ has one massless mode, rank $0$ is fully massless. The massless locus is a complex hypersurface of dimension $3$ and real codimension $2$. The off-diagonal block is the only coupling of the chiralities; the diagonal part preserves them. At $n=2$ the mass block is a line and the polar decomposition is the polar form of a complex scalar.</p>
+<p>The mass block $\mathcal{B}=P_+M_4P_-\cong\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)\cong M_2(\mathbb{C})$ is the four-dimensional space of maps from the right chirality to the left. The chiral frame group $U(2)_L\times U(2)_R$ acts by $M\mapsto U_LMU_R^*$. Every $M$ has a singular value decomposition $M=U\Sigma V^*$ with two singular values $\sigma_1\ge\sigma_2\ge0$, and a chiral polar decomposition $M=WP$ with $W=UV^*$ $*$-unitary and $P=V\Sigma V^*$ positive semidefinite. The determinant is $e^{i(\theta_U-\theta_V)}\sigma_1\sigma_2$; its modulus is the product of the singular values, and its phase is the chiral phase. The rank counts the massless modes: rank $2$ is massive, rank $1$ has one massless mode, rank $0$ is fully massless. The massless locus is a complex hypersurface of dimension $3$ and real codimension $2$. The off-diagonal block is the only coupling of the chiralities; the diagonal part preserves them. At $n=2$ the mass block is a line and the polar decomposition is the polar form of a complex scalar.</p>
 <p>$$
 \boxed{\ M=U\Sigma V^*,\quad \sigma_1\ge\sigma_2\ge0,\quad \lvert\det M\rvert=\sigma_1\sigma_2,\quad \operatorname{rank}M\in\{0,1,2\},\quad \dim_\mathbb{C}\mathcal{B}=4.\ }
 $$</p>
@@ -276,7 +276,7 @@ $$</p>
 <td>$2$</td>
 </tr>
 <tr>
-<td>Chiral gauge $U(2)\times U(2)$</td>
+<td>Chiral frame group $U(2)\times U(2)$</td>
 <td>$4+4=8$ real</td>
 </tr>
 <tr>
@@ -316,7 +316,7 @@ $$</p>
 </tr>
 <tr>
 <td>$U_L,U_R$</td>
-<td>the chiral gauge unitaries</td>
+<td>the chiral frame group unitaries</td>
 </tr>
 <tr>
 <td>$\sigma_1,\sigma_2$</td>
@@ -344,7 +344,7 @@ $$</p>
 <li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the variational characterization of singular values and the operator norms.</li>
 <li><a href="the-rank-two-split-of-m4c.html">The Rank-Two Split of $M_4(\mathbb{C})$</a>, for the corners and the mass block.</li>
 <li><a href="the-two-chiralities-of-m4c.html">The Two Chiralities of $M_4(\mathbb{C})$</a>, for the chirality decomposition and the chiral blocks.</li>
-<li><a href="the-three-parameter-gauge-and-the-chiral-polar-decomposition-of-m4c.html">The Three-Parameter Gauge and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</a>, for the gauge and the scalar case.</li>
+<li><a href="the-three-parameter-frame-group-and-the-chiral-polar-decomposition-of-m4c.html">The Three-Parameter Frame Group and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</a>, for the frame group and the scalar case.</li>
 <li><a href="the-polar-decomposition-of-m4c.html">The Polar Decomposition of $M_4(\mathbb{C})$</a>, for the full $U(4)$ polar decomposition.</li>
 <li><a href="the-forms-the-norms-and-the-singular-set-of-m4c.html">The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</a>, for the norm and the determinant.</li>
 </ul>

@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-peirce-basis-of-the-reduced-biquaternion-algebra"><strong>The Peirce Basis of the Reduced Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The Peirce decomposition of the reduced biquaternion algebra has two diagonal lines and no mixed line. A Peirce basis is the pair of the two idempotents, $\Pi_{+}$ and $\Pi_{-}$, and it is canonical: there is no element to choose, no gauge and no freedom.</p>
+<p>The Peirce decomposition of the reduced biquaternion algebra has two diagonal lines and no mixed line. A Peirce basis is the pair of the two idempotents, $\Pi_{+}$ and $\Pi_{-}$, and it is canonical: there is no element to choose, no frame freedom and no freedom.</p>
 <p>This article states the basis, proves its uniqueness, gives the coordinates and records the degenerate dimension count. It assumes <em>The Peirce Decomposition of the Reduced Biquaternion Algebra</em>.</p>
 <h2 id="the-definition">The Definition</h2>
 <p><strong>Definition.</strong> A <strong>Peirce basis</strong> of $\mathbb{B}_{\mathrm{red}}$ relative to the family $\Pi_{+},\Pi_{-}$ is a family $E_{\sigma\tau}\in\mathbb{B}_{\sigma\tau}$, one element for each pair, with</p>
@@ -86,11 +86,11 @@ $$</p>
 <h2 id="existence-and-uniqueness">Existence and Uniqueness</h2>
 <p><strong>Theorem.</strong> The Peirce basis exists and is unique.</p>
 <p><strong>Proof.</strong> The diagonal line $\mathbb{B}_{++}=\mathbb{C}\Pi_{+}$ contains the two idempotents $0$ and $\Pi_{+}$; a basis element is nonzero, so it is $\Pi_{+}$. The same argument gives $E_{--}=\Pi_{-}$. The product rule holds because $\Pi_{+}\Pi_{-}=0$ and $\Pi_{\pm}^{2}=\Pi_{\pm}$. There is no other choice, because there is no other line.</p>
-<p><strong>There is no gauge.</strong> In the general theory two bases differ by $E_{\sigma\tau}\mapsto t_{\sigma}t_{\tau}^{-1}E_{\sigma\tau}$. Here the only entries are diagonal, and the replacement reads</p>
+<p><strong>There is no frame freedom.</strong> In the general theory two bases differ by $E_{\sigma\tau}\mapsto t_{\sigma}t_{\tau}^{-1}E_{\sigma\tau}$. Here the only entries are diagonal, and the replacement reads</p>
 <p>$$
 E_{\sigma\sigma}\longmapsto t_{\sigma}t_{\sigma}^{-1}E_{\sigma\sigma}=E_{\sigma\sigma}.
 $$</p>
-<p>The formula is defined but acts trivially. The effective gauge is the trivial group.</p>
+<p>The formula is defined but acts trivially. The effective frame group is the trivial group.</p>
 <h2 id="the-coordinates">The Coordinates</h2>
 <p>Every element is</p>
 <p>$$
@@ -108,17 +108,17 @@ $$</p>
 <h2 id="the-dimension-count">The Dimension Count</h2>
 <p><strong>The family.</strong> The idempotents of $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$ are $(0,0)$, $(1,0)$, $(0,1)$ and $(1,1)$. The nontrivial complete orthogonal pairs are $(\Pi_{+},\Pi_{-})$ and $(\Pi_{-},\Pi_{+})$, the same unordered family, with the two labelings exchanged by $j\mapsto-j$. The unordered family space is a single point.</p>
 <p><strong>The frame.</strong> The Peirce basis is unique, so the frame space is a single point.</p>
-<p><strong>The gauge.</strong> The gauge is trivial, of dimension $0$.</p>
+<p><strong>The frame group.</strong> The frame group is trivial, of dimension $0$.</p>
 <p><strong>The count.</strong></p>
 <p>$$
 0=0+0 .
 $$</p>
 <p>The automorphism group of $\mathbb{B}_{\mathrm{red}}$ is $\{1,\varsigma\}$ with $\varsigma(j)=-j$; it has order $2$ and swaps the two lines. It fixes the unordered family and acts on the two labelings. There is no continuous parameter, no torus and no projective family.</p>
 <h2 id="what-the-basis-is-not">What the Basis Is Not</h2>
-<p>The basis is not a choice. In the nondegenerate case the word <em>basis</em> names a selection inside each line, and the selection carries a gauge; here the selection is forced and the gauge is trivial. The word remains correct, because the two units satisfy the product rule and span the algebra, but it carries no freedom.</p>
+<p>The basis is not a choice. In the nondegenerate case the word <em>basis</em> names a selection inside each line, and the selection carries a frame group; here the selection is forced and the frame group is trivial. The word remains correct, because the two units satisfy the product rule and span the algebra, but it carries no freedom.</p>
 <p>The basis is not a second decomposition. The lines are the decomposition; the two idempotents are the only nonzero elements available.</p>
 <h2 id="summary">Summary</h2>
-<p>The Peirce basis of the reduced biquaternion algebra is the pair $\{\Pi_{+},\Pi_{-}\}$, and it is unique. Every element is $\breve Q=\breve Q_{+}\Pi_{+}+\breve Q_{-}\Pi_{-}$ with $\breve Q_{\pm}=u\pm v$, the coordinate array is diagonal, and the product is componentwise. The gauge is trivial, the dimension count is $0=0+0$, and the only symmetry is $j\mapsto-j$, which swaps the two lines.</p>
+<p>The Peirce basis of the reduced biquaternion algebra is the pair $\{\Pi_{+},\Pi_{-}\}$, and it is unique. Every element is $\breve Q=\breve Q_{+}\Pi_{+}+\breve Q_{-}\Pi_{-}$ with $\breve Q_{\pm}=u\pm v$, the coordinate array is diagonal, and the product is componentwise. The frame group is trivial, the dimension count is $0=0+0$, and the only symmetry is $j\mapsto-j$, which swaps the two lines.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -150,7 +150,7 @@ $$</p>
 <ul>
 <li><a href="the-peirce-decomposition-of-the-reduced-biquaternion-algebra.html">The Peirce Decomposition of the Reduced Biquaternion Algebra</a>, for the lines and their multiplication.</li>
 <li><a href="spinors-as-peirce-coordinates-in-the-reduced-biquaternion-algebra.html">Spinors as Peirce Coordinates in the Reduced Biquaternion Algebra</a>, for the degenerate spinor.</li>
-<li><a href="the-peirce-basis-in-n-dimensions.html">The Peirce Basis in $n$ Dimensions</a>, for the nondegenerate case and the gauge.</li>
+<li><a href="the-peirce-basis-in-n-dimensions.html">The Peirce Basis in $n$ Dimensions</a>, for the nondegenerate case and the frame group.</li>
 </ul>
       </div>
     </main>
