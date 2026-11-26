@@ -102,7 +102,7 @@ $$
 $$
 Taking the divergence of the vector equation gives $\partial/\partial R_{\jmath}\tilde\nabla_\Phi\tilde F-\mu^2\langle\tilde\nabla_\Phi,\tilde A_{\Phi,\mathrm u}\rangle_{\natural}=0$, and the first term vanishes identically by the antisymmetry of $F$, so the divergence of the vector equation **is** the scalar equation. The scalar field is therefore not an independent dynamical degree of freedom in the covariant equations; it is the longitudinal part of the vector, and the count of physical modes is the count of the massive vector. This is the algebraic statement that the Stueckelberg scalar is the would-be Goldstone mode.
 
-## Choice Of Representative and the Degree-of-Freedom Count
+## Choice of Representative and the Degree-of-Freedom Count
 
 ### The Stueckelberg ($*$-Unitary) Fixing Condition
 

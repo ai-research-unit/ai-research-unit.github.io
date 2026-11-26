@@ -160,7 +160,7 @@ $$
 
 **The four-connection vertex is the contact term $g_{4}^{2}f_{abc}f_{cde}$ and it is dense.** Every generator that appears in two triples contributes, and the count is not worth tabulating: **what matters is that it is fixed by the same $29$ triples and introduces no new number.**
 
-## Ghosts, Choice Of Representative and the Scalar Vertices
+## Ghosts, Choice of Representative and the Scalar Vertices
 
 **One fixing parameter, because there is one group.** The Feynman–'t Hooft choice $\mathcal{L}_{\mathrm{gf}}=-\tfrac{1}{2\xi}\sum_{a}(\partial_{\imath}A_{a,\imath})^{2}$ gives fifteen ghosts, one per generator, with masses $0$ on the nine and $\xi\,32v^{2}$ on the six. **A second fixing parameter would be a symptom of a second factor**, and the model has none.
 

@@ -58,7 +58,7 @@ $$
 
 with $A_0$ and $A_{\imath}$ the real component fields, the coefficients being $Q_t=i q'_t$ and $Q_{\imath}=q_{\imath}$. The gradient part of the local transformation is $\tilde\nabla_\Phi\Gamma=e_t\partial/\partial R_t\,\Gamma+\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\,\partial/\partial R_{\imath}\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single phase function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single fixing condition suffices.
 
-## Choice Of Representative: The Faddeev–Popov Construction
+## Choice of Representative: The Faddeev–Popov Construction
 
 ### The Delta Functional and the Determinant
 
@@ -196,7 +196,7 @@ $$
 
 and the orthogonality of the two projectors was verified together with their idempotency and their traces, three and one. The split is the whole content of the fixing parameter.
 
-### Independence Of The Fixing Parameter
+### Independence of the Fixing Parameter
 
 Because the $\zeta$-dependence sits entirely in the longitudinal projector, it cancels between any two fixing conditions when the propagator is contracted with a conserved current. The difference of the propagators at two parameters is proportional to $p_{\imath} p_{\jmath}$,
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A massless connection has more components than physical states, and the excess is removed by a symmetry. The companion article *Canonical Quantization of the Biquaternion Maxwell Field* removes it by the Gupta–Bleuler route: a covariant mode expansion with an indefinite metric and a subsidiary condition that selects the physical subspace. That route exhibits the physical states but leaves the choice of representative an external input — a choice of representative that the biquaternion algebra does not make. The present article describes the other route, the one that makes the choice of representative itself a symmetry: the **BRST symmetry** of the fixed-representative theory.
+A massless connection has more components than physical states, and the excess is removed by a symmetry. The companion article *Canonical Quantization of the Biquaternion Maxwell Field* removes it by the Gupta–Bleuler route: a covariant mode expansion with an indefinite metric and a subsidiary condition that selects the physical subspace. That route exhibits the physical states but leaves the choice of representative an external input — a choice of representative that the biquaternion algebra does not make. The present article describes the other route, the one that makes the choice of representative itself a symmetry: the **BRST symmetry** of the representative-fixed theory.
 
 The BRST construction promotes the parameter to an anticommuting field, the Faddeev–Popov ghost, and introduces a nilpotent odd derivation $s$ under which the connection, the ghost, the antighost and the Nakanishi–Lautrup auxiliary field transform. The fixed-representative Lagrangian is $s$-exact, the physical states are the cohomology of $s$, and the unitarity of the physical subspace follows from the nilpotency. This article carries that construction into the biquaternion framework, and its interest is not in the transcription — the construction is standard — but in two facts that the transcription makes visible.
 
@@ -18,7 +18,7 @@ The Faddeev–Popov procedure that produces the ghost Lagrangian from the path-i
 - Companion article *The Yang–Mills Equation in Biquaternionic Form*, for the classical non-abelian equations of motion.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the argument that the ladder algebra, like the Grassmann coordinates, is not native to $\mathbb{B}$.
 
-## The Choice Of Representative Problem and the Ghost Fields
+## The Choice of Representative Problem and the Ghost Fields
 
 ### The Fixed-representative Lagrangian
 
@@ -153,7 +153,7 @@ The chain is worth stating in full, because it is the framework's contribution t
 
 Therefore, to the extent that the algebra is realized inside the biquaternion algebra, the nilpotency of the BRST operator — and with it the consistency of the fixed-representative quantization — is inherited from the associativity of the algebra rather than imposed. This is a genuine algebraic statement, and it is the sharpest thing the framework says about BRST symmetry. What it does not do is select which algebra is realized, or fix the parameter; those remain inputs.
 
-## The Choice Of Representative Fermion and the BRST-Exact Lagrangian
+## The Choice of Representative Fermion and the BRST-Exact Lagrangian
 
 The fixing the representative and ghost terms are not merely invariant under $s$; they are $s$-exact. Define the **fixing the representative fermion**
 

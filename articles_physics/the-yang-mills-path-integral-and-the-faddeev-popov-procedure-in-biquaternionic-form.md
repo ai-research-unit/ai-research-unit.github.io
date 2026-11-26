@@ -70,7 +70,7 @@ with $\mathrm{Vol}(\mathcal{G})$ the infinite volume of the group of local trans
 
 Throughout, $\theta_{\mathrm{ym}}:=S_{\mathrm{YM}}[\mathcal{A}]\frac{2\pi}{h}$ is real: the Yang--Mills action is $-\int d^4r\,\mathrm{Tr}\langle\tilde{\mathcal{F}},\tilde{\mathcal{F}}\rangle$, a real number for real potentials, so $\exp(i\theta_{\mathrm{ym}})$ is a phase of modulus one and the weight on each orbit is unitary.
 
-## Choice Of Representative and the Faddeev–Popov Determinant
+## Choice of Representative and the Faddeev–Popov Determinant
 
 ### Inserting Unity
 
@@ -171,7 +171,7 @@ is the Yang–Mills path integral of the framework.
 
 Throughout this article $\theta_{\mathrm{act}}:=\frac{2\pi \mathrm{Re}\,S}{h}$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\frac{2\pi \mathrm{Im}\,S}{h}$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
-## The Propagator and Independence Of The Fixing Parameter
+## The Propagator and Independence of the Fixing Parameter
 
 ### The Quadratic Form
 

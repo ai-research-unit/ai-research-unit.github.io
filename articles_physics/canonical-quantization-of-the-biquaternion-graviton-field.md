@@ -172,7 +172,7 @@ $$
 
 The Fock space is built by acting on the vacuum with $a_r^\dagger$, and each application adds a graviton of momentum $\vec p$ and helicity $r$. The statistics is bosonic because the spin is integer: the framework's account of the spin–statistics relation is the subject of the companion article on the theorem, and it applies here with $s=2$, so the commutators are the ones above and not anticommutators. The equal-time commutator of the field operators is the transverse-traceless projection of the naive one, in the same way that the Rarita–Schwinger anticommutator was the projected one.
 
-### The Non-Transverse States and the Choice Of Representative
+### The Non-Transverse States and the Choice of Representative
 
 Covariant quantization cannot use the transverse-traceless fixing condition, because that representative is not manifestly Lorentz covariant. In a covariant fixing condition the field has ten components, and the non-transverse and trace modes are removed by the structure: the de Donder condition $\sum_{\imath}\partial/\partial R_{\imath}\bar{h}_{\imath\jmath}=0$ and the trace condition are imposed as constraints, and the indefinite-metric states that the covariant expansion introduces are removed by the subsidiary condition, as in the vector case. The fixing the representative requires Faddeev–Popov **vector** ghosts — one anticommuting vector field, in the vector representation of the algebra, in contrast to the abelian vector case where the determinant is a constant and there are no ghosts. The BRST structure is the standard one, with the parameter a vector; the ghost and antighost are vector fields, and the physical states are the ghost-number-zero cohomology.
 

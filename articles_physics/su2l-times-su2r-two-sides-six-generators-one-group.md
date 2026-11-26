@@ -181,7 +181,7 @@ $$
 | spacetime rotations | $\mathrm{Spin}(4)_{E}$, or $\mathrm{SL}(2,\mathbb{C})$ when tied | exact, local | nothing | the Lorentz group |
 | chiral symmetry of the strong sector | $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | exact in the two-flavour chiral limit | quark masses and the condensate | $\mathrm{SU}(2)_V$, the pions as Goldstones |
 | custodial symmetry of the scalar sector | $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, global and accidental | approximate | the mass splittings | $\mathrm{SU}(2)_V$, hence $\rho=1$ |
-| made local electroweak left–right | $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | **not observed** | its own breaking scale | $\mathrm{SU}(2)_L$ |
+| local electroweak left–right | $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | **not observed** | its own breaking scale | $\mathrm{SU}(2)_L$ |
 
 **Role one, spacetime.** The group is the rotation group of four dimensions and the Euclidean partner of the Lorentz group, related by the tie of *The Two Sides in the Algebra*. **The weak interaction's maximal parity violation is a statement about the internal factors and has nothing to do with this role**; a left–right model restores parity in the internal factor, not in spacetime.
 

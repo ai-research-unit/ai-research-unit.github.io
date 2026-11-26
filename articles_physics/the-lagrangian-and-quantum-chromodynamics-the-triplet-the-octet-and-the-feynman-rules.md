@@ -201,7 +201,7 @@ The boundary term. Both variations are second order in derivatives and their sur
 
 ## The Constraints the Action Imposes: Eight Gauss Laws and One Orbit
 
-### Choice Of Representative and the Ghost
+### Choice of Representative and the Ghost
 
 The choice of representative term. The corpus writes the parameter $\zeta$, as in [Fixing the Representative in the Electroweak Theory](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html), and the Feynman fixing condition is $\zeta=1$. The term
 

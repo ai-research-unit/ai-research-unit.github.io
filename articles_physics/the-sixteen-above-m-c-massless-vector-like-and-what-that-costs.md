@@ -193,7 +193,7 @@ Above $M_C$ the sixteen are massless, vector-like and parity-symmetric, and the 
 
 - [Classification of the Fermions in the $\mathrm{SU}(4)$ Model](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The count, the two octets, the $B-L$ assignment and the conjugation as a permutation.
 - [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The declaration of vector-likeness and the anomaly count that this article reads as a phase statement.
-- [The Chiral Wall, Which Is Now a Theorem](the-su4-model-four-colours-fifteen-generators-one-declaration.html). §*The Chiral Wall* of the declaration article: why the model is not chiral where it makes local, and where the chirality is instead.
+- [The Chiral Wall, Which Is Now a Theorem](the-su4-model-four-colours-fifteen-generators-one-declaration.html). §*The Chiral Wall* of the declaration article: why the model is not chiral where the symmetry acts, and where the chirality is instead.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The transition's single postulate — the two copies acted on by two different factors — which is what turns the label into chirality.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The action these sixteen fields sit in, and the place where $m_{ij}$ would have been written.
 - [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The two-index rule $X\otimes\mathbb{1}_{2}$ that makes the copy index invisible.

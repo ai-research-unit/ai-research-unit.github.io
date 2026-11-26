@@ -63,7 +63,7 @@ and variation with respect to the scalar gives the constraint $\tilde\nabla_\Phi
 
 **The counting.** A massless vector has two polarisations and a shift scalar has one; a massive vector has three. The count is preserved, and nothing is lost — the scalar's degree of freedom has become the longitudinal polarisation.
 
-## Choice Of Representative and the Relation to the Abelian Higgs
+## Choice of Representative and the Relation to the Abelian Higgs
 
 **The unitary fixing condition.** Setting $\xi=0$ removes the scalar from the Lagrangian and leaves the Proca form, at the price of making the representative non-manifest. This is why the mechanism is often described as "the scalar is removed by a choice of representative": the description is correct in that representative and misleading outside it.
 

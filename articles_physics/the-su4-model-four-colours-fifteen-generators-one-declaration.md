@@ -21,7 +21,7 @@ $$
 
 **What this article establishes.** That the group is $\mathrm{SU}(4)$ and the count is fifteen; that the fifteen split as $8+1+6$; that the matter content is the sixteen and that it is vector-like under the group, so its anomaly cancels by counting; that one coupling multiplies all fifteen generators; that the fifteen already contains a real $\mathfrak{so}(4)$ of six dimensions and rank two; that the sixteen is closed under $C$ and, since $P$ maps it to itself as well, under $CP$, so the content is real under both while the Lagrangian's phases remain free; and that the ceiling on any group commuting with the Lorentz action is $\mathrm{SU}(2)$, which is why the carrier is a copy.
 
-**What it does not establish.** That the algebra derives the group — it derives the group *given* the carrier. That the lepton line is the fourth colour — that is declaration (A). That the model is chiral where it makes local — **it is not, and §*The Chiral Wall* shows that this is now a theorem about the model rather than a caveat about a representation.**
+**What it does not establish.** That the algebra derives the group — it derives the group *given* the carrier. That the lepton line is the fourth colour — that is declaration (A). That the model is chiral where the symmetry acts — **it is not, and §*The Chiral Wall* shows that this is now a theorem about the model rather than a caveat about a representation.**
 
 **What is absent here.** No weak pair, no hypercharge, no photon, no $W$, no $Z$, no rank five. **Those arrive at $M_C$, where colour, one abelian factor and two weak factors describe what the vacuum leaves**, and that is the subject of the next section of the corpus. This article is the connection content of the model above that scale, and it is complete as a statement of that content: **the scalar sector is [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html), and the fermion masses are [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html), whose verdict is that the ratio $m_\ell=3m_q$ is falsified.**
 
@@ -303,7 +303,7 @@ $$
 
 **What a chiral connection theory needs.** A connection action that distinguishes left from right at the level of the *coupling* — an action of the group on one copy of the matter and not on its conjugate.
 
-**What this model has.** One copy index, not made local, and one coupling multiplying the fifteen. **The local content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, vector-like in pairs.** A vector-like made local sector has no chiral connection coupling at all, and therefore:
+**What this model has.** One copy index, not made local, and one coupling multiplying the fifteen. **The local content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, vector-like in pairs.** A vector-like local sector has no chiral connection coupling at all, and therefore:
 
 > **The model is not chiral where it fixing conditions. This is not a caveat about a representation; it is a property of the model, proved by the same count that makes its anomaly vanish.**
 
@@ -311,7 +311,7 @@ $$
 
 **What would count as the algebra supplying chirality.** A one-sided action of the algebra on a chiral spinor module. **That remains the corpus's open problem, unchanged, and it is not solved here.** What has changed is that the model no longer pretends to have the answer in a representation: **it declares the copy index, and the declaration is honest because the index is visible.**
 
-**What is refused.** Writing the sixteen as a single multiplet of a larger group and calling the chirality derived, when the multiplet is real. **A real multiplet cannot be chiral**, and the sixteen becomes chiral only when the copy index splits into two separately made local factors.
+**What is refused.** Writing the sixteen as a single multiplet of a larger group and calling the chirality derived, when the multiplet is real. **A real multiplet cannot be chiral**, and the sixteen becomes chiral only when the copy index splits into two separately local factors.
 
 ## The Checks
 

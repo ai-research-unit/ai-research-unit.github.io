@@ -555,7 +555,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $\mathsf{M}_2(\vec e_{\imath})=-i\sigma_{\imath}$, $\sigma_{\imath}\leftrightarrow i\vec e_{\imath}$ | Isomorphism, Pauli matrices |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The gradient and its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian |
-| $D_3=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\partial/\partial r_{\imath}$, $D_3^A$ | Pure part of the gradient, free and made local |
+| $D_3=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\partial/\partial r_{\imath}$, $D_3^A$ | Pure part of the gradient, free and local |
 | $\tilde\nabla_\Phi-\frac{2\pi i\,q\,\tilde{A}_{\Phi}}{h}$, $\tilde A_{\Phi}=Ξ e_t-\vec A$ | The covariant gradient; minimal substitution |
 | $-2\pi i\tilde\Upsilon_{\Phi}=2\pi\nu_t^{\prime}-2\pi i\vec\nu_\Phi$ | Symbol of the gradient on a plane wave; $(-2\pi i\tilde\Upsilon_{\Phi})^{\natural}(-2\pi i\tilde\Upsilon_{\Phi})=4\pi^{2}\nu_t^{\prime\,2}-\lvert2\pi\vec\nu_\Phi\rvert^2$ |
 | $F=F_L+F_R$; $\Gamma F=-iF\vec e_z$ | The field and its chirality, values $\mp1$ |

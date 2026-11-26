@@ -257,7 +257,7 @@ Three dependencies make this obstacle structural rather than technical.
 
 What would settle it. The object is a connection-charged scalar on the framework's carrier with a declared $SU(2)_L\times \mathrm{U}(1)_Y$ representation, an invariant potential with a non-trivial minimum, a covariant kinetic term whose expansion about that minimum produces the vector-boson masses, and a Yukawa coupling whose charge reproduces the selection rule. The computation is standard; what is not standard is the carrier and the quantum numbers, which are precisely the outputs of the two preceding obstacles. Classification: known route, blocked — on the chiral matter representation and on hypercharge, with a contingent branch if the mass interpretation is Majorana-type.
 
-## Choice Of Representative and the Physical Content of an Orbit
+## Choice of Representative and the Physical Content of an Orbit
 
 The fourth obstacle is not an object the electroweak sector needs but a condition on what may be said about it. The framework cannot fix the representative: the canonical-quantization article records it, the minimal coupling article lists a principle that fixes the representative among the things the algebra does not supply, and the non-abelian article adds the Gribov-type question of whether an orbit intersects a fixing surface more than once. Nothing in the read list addresses it.
 
