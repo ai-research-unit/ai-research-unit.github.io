@@ -16,9 +16,9 @@ $$
 1+2+1=4:
 $$
 
-one parameter for the $M_2$ corner, two for the $M_3$ corner, and one for the **relative scale** between the two corners. The relative scale is the direction that acts on the two summands with opposite weights, $\operatorname{diag}(\mu I_2,I_3)$ modulo scalars; it is the part of the gauge that is invisible to each corner separately. The four parameters are the same torus as the gauge of the frame, read through the block structure $2+3$.
+one parameter for the $M_2$ corner, two for the $M_3$ corner, and one for the **relative scale** between the two corners. The relative scale is the direction that acts on the two summands with opposite weights, $\operatorname{diag}(\mu I_2,I_3)$ modulo scalars; it is the part of the frame group that is invisible to each corner separately. The four parameters are the same torus as the frame group of the frame, read through the block structure $2+3$.
 
-The article assumes the matrix algebra of *The Matrix Algebra $M_5(\mathbb{C})$*, the Peirce decomposition of *The Peirce Decomposition of $M_5(\mathbb{C})$*, and the gauge of *The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$*. The corner dimensions and the two-sided Peirce table are developed in *The Rank-Two Split of $M_5(\mathbb{C})$*; the present article is the **recursion and the group**: the block embedding, the subalgebra $M_2\oplus M_3$, the two corner tori and the relative scale.
+The article assumes the matrix algebra of *The Matrix Algebra $M_5(\mathbb{C})$*, the Peirce decomposition of *The Peirce Decomposition of $M_5(\mathbb{C})$*, and the frame group of *The Frame, the Simple Nilpotents and the Frame Group of $M_5(\mathbb{C})$*. The corner dimensions and the two-sided Peirce table are developed in *The Rank-Two Split of $M_5(\mathbb{C})$*; the present article is the **recursion and the group**: the block embedding, the subalgebra $M_2\oplus M_3$, the two corner tori and the relative scale.
 
 ## The Rank-Two Projection
 
@@ -152,7 +152,7 @@ with $\mathcal{M}^2\subseteq M_2\oplus M_3$. The odd part is a bimodule, not an 
 
 **Proof.** The block parity is the parity of the number of off-diagonal blocks; the product rule preserves it. The mixed blocks $PMQ$ and $QMP$ are nonzero, so the algebra is larger than the direct product.
 
-## The Gauge $1+2+1=4$
+## The Frame Group $1+2+1=4$
 
 ### The Stabiliser of the Decomposition
 
@@ -201,7 +201,7 @@ It fixes both diagonal corners and rescales the two off-diagonal blocks reciproc
 
 **Proof.** Conjugate the block matrix by the block-diagonal matrix; the diagonal blocks commute with the scalars, and the off-diagonal blocks acquire $\mu$ or $\mu^{-1}$.
 
-**Remark.** **The relative scale is the part of the gauge that the two corners do not see.** The corner tori act inside $PM_5P$ and $QM_5Q$; the relative scale acts only on the off-diagonal blocks. In the frame of *The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$*, with the spectral indices $1,\dots,5$ split as $\{1,2\}|\{3,4,5\}$, the four parameters $\lambda_k=t_k/t_{k+1}$ are regrouped as
+**Remark.** **The relative scale is the part of the frame group that the two corners do not see.** The corner tori act inside $PM_5P$ and $QM_5Q$; the relative scale acts only on the off-diagonal blocks. In the frame of *The Frame, the Simple Nilpotents and the Frame Group of $M_5(\mathbb{C})$*, with the spectral indices $1,\dots,5$ split as $\{1,2\}|\{3,4,5\}$, the four parameters $\lambda_k=t_k/t_{k+1}$ are regrouped as
 
 $$
 \underbrace{\lambda_1}_{T(PGL_2)}\qquad
@@ -211,9 +211,9 @@ $$
 
 The parameters $\lambda_1$ and $\lambda_3,\lambda_4$ act inside the two corners; $\lambda_2=t_2/t_3$ is the relative scale between them. The count $1+2+1=4$ is the invariant statement; the assignment of the four $\lambda_k$ depends on where the cut between the blocks is placed.
 
-### The Gauge and the Root
+### The Frame Group and the Root
 
-**Proposition.** If $P=P_1+P_2$ is the sum of two spectral projectors of a root $H$, then the four-dimensional gauge torus of the root is the maximal torus of $P(GL_2\times GL_3)$. The gauge $1+2+1=4$ is the root gauge read through the block structure $2+3$.
+**Proposition.** If $P=P_1+P_2$ is the sum of two spectral projectors of a root $H$, then the four-dimensional frame torus of the root is the maximal torus of $P(GL_2\times GL_3)$. The frame group $1+2+1=4$ is the root frame group read through the block structure $2+3$.
 
 **Proof.** The spectral frame diagonalises $H$; the diagonal torus $T$ of the frame consists of the matrices $\operatorname{diag}(t_1,t_2,t_3,t_4,t_5)$ modulo scalars. It preserves the decomposition $\operatorname{span}(e_1,e_2)\oplus\operatorname{span}(e_3,e_4,e_5)$ because it preserves each line; hence $T\subseteq P(GL_2\times GL_3)$. Both tori have dimension $4$, so they are equal.
 
@@ -276,10 +276,10 @@ $$
 1+2+1=4,
 $$
 
-the $M_2$ corner torus, the $M_3$ corner torus and the relative scale $\operatorname{diag}(\mu I_2,I_3)$. The relative scale fixes both diagonal corners and rescales the off-diagonal blocks reciprocally. The four parameters are the gauge torus of the frame, read through the block structure $2+3$.
+the $M_2$ corner torus, the $M_3$ corner torus and the relative scale $\operatorname{diag}(\mu I_2,I_3)$. The relative scale fixes both diagonal corners and rescales the off-diagonal blocks reciprocally. The four parameters are the frame torus of the frame, read through the block structure $2+3$.
 
 $$
-\boxed{\ M_5\supset M_2\oplus M_3,\qquad \text{gauge }1+2+1=4,\qquad \text{off-diagonal }6+6=12.\ }
+\boxed{\ M_5\supset M_2\oplus M_3,\qquad \text{frame group }1+2+1=4,\qquad \text{off-diagonal }6+6=12.\ }
 $$
 
 | Object | Dimension |
@@ -313,6 +313,6 @@ $$
 - [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the algebra and its group of invertibles.
 - [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the coarse split $1+4+4+16$ and the corner isomorphisms.
 - [The Rank-Two Split of $M_5(\mathbb{C})$](the-rank-two-split-of-m5c.html), for the corners $4+6+6+9$ and the two-sided Peirce table.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the four-parameter gauge and the simple nilpotents.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m5c.html), for the four-parameter frame group and the simple nilpotents.
 - [The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the modules of the corner and of the whole algebra.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion model $M_2(\mathbb{C})$ inside the corner.

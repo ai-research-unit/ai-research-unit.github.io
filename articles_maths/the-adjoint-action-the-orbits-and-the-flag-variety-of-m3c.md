@@ -2,11 +2,11 @@
 
 ## Introduction
 
-**The projective group $PGL_3(\mathbb{C})$ acts on $M_3(\mathbb{C})$ by conjugation, and its orbits are the conjugacy classes, classified by the Jordan type.** The orbit of a regular element, with three distinct eigenvalues, has dimension $6$, and its stabiliser is the maximal torus $(\mathbb{C}^{\times})^{2}$, of dimension $2$; the count is $8=6+2$. The orbit of a scalar is a point, with stabiliser the whole group. The nilpotent orbits are the zero orbit, the minimal orbit of dimension $4$ and the principal orbit of dimension $6$. The full flag variety $GL_3/B$ has dimension $3$; the Grassmannians $\operatorname{Gr}(1,3)=\mathbb{P}^{2}$ and $\operatorname{Gr}(2,3)$ have dimension $2$; the gauge torus is the fibre of the frame bundle over the root orbit.
+**The projective group $PGL_3(\mathbb{C})$ acts on $M_3(\mathbb{C})$ by conjugation, and its orbits are the conjugacy classes, classified by the Jordan type.** The orbit of a regular element, with three distinct eigenvalues, has dimension $6$, and its stabiliser is the maximal torus $(\mathbb{C}^{\times})^{2}$, of dimension $2$; the count is $8=6+2$. The orbit of a scalar is a point, with stabiliser the whole group. The nilpotent orbits are the zero orbit, the minimal orbit of dimension $4$ and the principal orbit of dimension $6$. The full flag variety $GL_3/B$ has dimension $3$; the Grassmannians $\operatorname{Gr}(1,3)=\mathbb{P}^{2}$ and $\operatorname{Gr}(2,3)$ have dimension $2$; the frame torus is the fibre of the frame bundle over the root orbit.
 
-The article defines the action, classifies the orbits by the Jordan type and computes their dimensions by the orbit–stabiliser theorem, treats the regular elements and the gauge, describes the nilpotent orbits and their closures, and identifies the flag variety and the Grassmannians as the natural quotients of the group. Every dimension is computed twice: from the centraliser and from the geometry of the flags.
+The article defines the action, classifies the orbits by the Jordan type and computes their dimensions by the orbit–stabiliser theorem, treats the regular elements and the frame group, describes the nilpotent orbits and their closures, and identifies the flag variety and the Grassmannians as the natural quotients of the group. Every dimension is computed twice: from the centraliser and from the geometry of the flags.
 
-The Jordan form is *Spectral Theory and the Spectral Projectors of $M_3(\mathbb{C})$*; the spectral strata by root multiplicity are *The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$*; the root and its gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*; the geometry of the idempotents is *The Geometry of the Idempotents of $M_3(\mathbb{C})$*; the topology is *The Topology of $M_3(\mathbb{C})$*.
+The Jordan form is *Spectral Theory and the Spectral Projectors of $M_3(\mathbb{C})$*; the spectral strata by root multiplicity are *The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$*; the root and its frame group are *The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$*; the geometry of the idempotents is *The Geometry of the Idempotents of $M_3(\mathbb{C})$*; the topology is *The Topology of $M_3(\mathbb{C})$*.
 
 ## The Conjugation Action
 
@@ -117,13 +117,13 @@ of dimension $3$, so the orbit has dimension $6$. The orbit is the set of nilpot
 
 **The regular semisimple case.** When the three eigenvalues are distinct, the centraliser is the diagonal torus in the eigenbasis, and the stabiliser in $PGL_3$ is $(\mathbb{C}^{\times})^{2}$. The orbit is the set of matrices with the given characteristic polynomial and simple spectrum; it is the complement of the discriminant hypersurface inside the affine hypersurface $\{\chi_A=\chi\}$, of dimension $6$.
 
-**The gauge.** The root $H$, with $H^{3}=I$ and simple spectrum, is a regular semisimple element. Its orbit is the set of roots, of dimension $6$, and its stabiliser is the gauge torus $T\cong(\mathbb{C}^{\times})^{2}$. The frame bundle
+**The frame group.** The root $H$, with $H^{3}=I$ and simple spectrum, is a regular semisimple element. Its orbit is the set of roots, of dimension $6$, and its stabiliser is the frame torus $T\cong(\mathbb{C}^{\times})^{2}$. The frame bundle
 
 $$
 PGL_3\longrightarrow PGL_3/T\cong X,\qquad [S]\longmapsto SHS^{-1},
 $$
 
-has fibre $T$ over the root, and the gauge is the fibre. This is the orbit–stabiliser count $8=6+2$ of *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*, read as a principal bundle.
+has fibre $T$ over the root, and the frame group is the fibre. This is the orbit–stabiliser count $8=6+2$ of *The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$*, read as a principal bundle.
 
 **Worked example.** For $H=\operatorname{diag}(1,\omega,\omega^{2})$ the stabiliser in $GL_3$ is the diagonal torus $(\mathbb{C}^{\times})^{3}$, of dimension $3$; in $PGL_3$ it is the image, of dimension $2$. The orbit is $GL_3/T$, of dimension $6$, and the map $S\mapsto SHS^{-1}$ is the quotient map. The fibre over $H$ is the set of $S$ that commute with $H$, which is $T$ itself.
 
@@ -207,9 +207,9 @@ $$
 8=6+2,
 $$
 
-with $\mathcal{O}$ the root orbit and $G_x=T$ the gauge torus. For the scalar orbit it is $8=0+8$; for the semisimple type $2+1$ it is $8=4+4$; for the principal nilpotent it is $8=6+2$; for the minimal nilpotent it is $8=4+4$.
+with $\mathcal{O}$ the root orbit and $G_x=T$ the frame torus. For the scalar orbit it is $8=0+8$; for the semisimple type $2+1$ it is $8=4+4$; for the principal nilpotent it is $8=6+2$; for the minimal nilpotent it is $8=4+4$.
 
-**The gauge as the fibre.** The count $8=6+2$ says that the frame bundle $PGL_3\to X$ has fibre the torus $T$. The gauge group of *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$* is exactly this fibre, and the two gauge parameters $\lambda_{1},\lambda_{2}$ are coordinates on it. The composite nilpotent $E_{13}$ carries the product $\lambda_{1}\lambda_{2}$ because the fibre is a group: the product in $T$ is the product of the two weights.
+**The frame group as the fibre.** The count $8=6+2$ says that the frame bundle $PGL_3\to X$ has fibre the torus $T$. The frame group of *The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$* is exactly this fibre, and the two frame parameters $\lambda_{1},\lambda_{2}$ are coordinates on it. The composite nilpotent $E_{13}$ carries the product $\lambda_{1}\lambda_{2}$ because the fibre is a group: the product in $T$ is the product of the two weights.
 
 **The dimensions in one table.**
 
@@ -255,7 +255,7 @@ and the characteristic polynomial is unchanged. This is the concrete form of the
 
 ## Summary
 
-$PGL_3(\mathbb{C})$ acts on $M_3(\mathbb{C})$ by conjugation, of dimension $8$, and the orbits are the conjugacy classes, classified by the Jordan type. The regular semisimple orbit has dimension $6$ and stabiliser the maximal torus $(\mathbb{C}^{\times})^{2}$, so $8=6+2$; the gauge is the fibre of the frame bundle over the root orbit. The semisimple type $2+1$ and the minimal nilpotent orbit have dimension $4$; the scalar orbit has dimension $0$; the principal nilpotent orbit has dimension $6$. The nilpotent cone has dimension $6$ and three orbits, of dimensions $0,4,6$. The full flag variety $GL_3/B$ has dimension $3$, the Grassmannians $\operatorname{Gr}(1,3)=\mathbb{P}^{2}$ and $\operatorname{Gr}(2,3)$ have dimension $2$, and the flag is an incidence variety fibred over either Grassmannian with fibre $\mathbb{P}^{1}$. The root orbit maps to the flag variety with fibre $B/T$ of dimension $3$, and the dimension count $6=3+3$ is the orbit–stabiliser count read on the flag.
+$PGL_3(\mathbb{C})$ acts on $M_3(\mathbb{C})$ by conjugation, of dimension $8$, and the orbits are the conjugacy classes, classified by the Jordan type. The regular semisimple orbit has dimension $6$ and stabiliser the maximal torus $(\mathbb{C}^{\times})^{2}$, so $8=6+2$; the frame group is the fibre of the frame bundle over the root orbit. The semisimple type $2+1$ and the minimal nilpotent orbit have dimension $4$; the scalar orbit has dimension $0$; the principal nilpotent orbit has dimension $6$. The nilpotent cone has dimension $6$ and three orbits, of dimensions $0,4,6$. The full flag variety $GL_3/B$ has dimension $3$, the Grassmannians $\operatorname{Gr}(1,3)=\mathbb{P}^{2}$ and $\operatorname{Gr}(2,3)$ have dimension $2$, and the flag is an incidence variety fibred over either Grassmannian with fibre $\mathbb{P}^{1}$. The root orbit maps to the flag variety with fibre $B/T$ of dimension $3$, and the dimension count $6=3+3$ is the orbit–stabiliser count read on the flag.
 
 $$
 \boxed{\ \dim PGL_3=8;\quad \dim\mathcal{O}_{\mathrm{reg}}=6,\ \operatorname{Stab}=T,\ 8=6+2;\quad \dim\mathcal{F}=3;\quad \dim\operatorname{Gr}(1,3)=\dim\operatorname{Gr}(2,3)=2.\ }
@@ -279,7 +279,7 @@ $$
 | $B$ | the Borel subgroup of upper triangular matrices |
 | $\mathcal{F}=GL_3/B$ | the full flag variety |
 | $\operatorname{Gr}(p,3)$ | the Grassmannian of $p$-planes |
-| $T$ | the maximal torus, the gauge |
+| $T$ | the maximal torus, the frame group |
 | $\mathcal{N}$ | the nilpotent cone |
 
 ## Further Reading
@@ -288,6 +288,6 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the Jordan form and the centraliser of a matrix.
 - David Collingwood and William McGovern, *Nilpotent Orbits in Semisimple Lie Algebras* (Van Nostrand Reinhold, 1993), for the nilpotent orbits and their closures.
 - [The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the spectral strata.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the gauge torus.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m3c.html), for the frame torus.
 - [The Geometry of the Idempotents of $M_3(\mathbb{C})$](the-geometry-of-the-idempotents-of-m3c.html), for the idempotent varieties and the flag variety.
 - [The Topology of $M_3(\mathbb{C})$](the-topology-of-m3c.html), for the homotopy type of the flag variety.

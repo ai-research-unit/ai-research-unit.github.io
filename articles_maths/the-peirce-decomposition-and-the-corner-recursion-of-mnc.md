@@ -6,7 +6,7 @@
 
 The article states both cuts and the multiplication rule between the corners, proves the corner isomorphisms, and reads the recursion that orders the categories $M_3$, $M_4$, $M_5$, $M_6$. It also states what the decomposition is not: a direct-sum decomposition of the algebra into subspaces, not a list of spinors.
 
-The idempotents come from *Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$*; the vectors inside the corner lines and the gauge that acts on them are *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*.
+The idempotents come from *Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$*; the vectors inside the corner lines and the frame group that acts on them are *The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$*.
 
 ## The Spectral Flag
 
@@ -24,7 +24,7 @@ $$
 
 **The flag is spectral, not standard.** The standard flag of *The Matrix Algebra $M_n(\mathbb{C})$* is the case $V_k=\mathbb{C}e_k$, that is, $H=\operatorname{diag}(\omega_1,\dots,\omega_n)$. Every other root gives a flag in general position with respect to the standard one. The construction depends only on the flag, so it is invariant under a change of basis that keeps $H$.
 
-**Different roots, different flags.** The map $H\mapsto F$ is the projection $PGL_n(\mathbb{C})/T\to PGL_n(\mathbb{C})/B$ from the root set to the flag variety. Its fibre is the gauge of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*: the root fixes the flag, and the gauge fixes the vectors inside the lines.
+**Different roots, different flags.** The map $H\mapsto F$ is the projection $PGL_n(\mathbb{C})/T\to PGL_n(\mathbb{C})/B$ from the root set to the flag variety. Its fibre is the frame group of *The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$*: the root fixes the flag, and the fixes by a change of frame the vectors inside the lines.
 
 ## The Peirce Lines
 
@@ -161,7 +161,7 @@ The rank-one row is the full Peirce decomposition seen from one line: $1$ for th
 
 **At $n=2$ the full Peirce decomposition has four lines, and the coarse split of a rank-one idempotent is the same four lines.** The rank-one corners are $1+1+1+1$, and for $p=1$ the coarse split and the full split coincide: there is only one line to separate. This is a feature of $n=2$ and does not persist.
 
-**The diagonal lines carry canonical vectors and the mixed lines do not.** In the algebra $M_2(\mathbb{C})$, the corner $P_kM_2P_k$ is spanned by $P_k$ itself, which is canonical. The mixed corner $P_kM_2P_l$ is spanned by a matrix unit $E_{kl}$ defined only up to a scalar. The biquaternion articles read that scalar freedom as the gauge parameter $\lambda$, one complex number for the two mixed lines, acting as $E_{kl}\mapsto\lambda E_{kl}$ and $E_{lk}\mapsto\lambda^{-1}E_{lk}$. The idempotents $P_k$ do not depend on $\lambda$.
+**The diagonal lines carry canonical vectors and the mixed lines do not.** In the algebra $M_2(\mathbb{C})$, the corner $P_kM_2P_k$ is spanned by $P_k$ itself, which is canonical. The mixed corner $P_kM_2P_l$ is spanned by a matrix unit $E_{kl}$ defined only up to a scalar. The biquaternion articles read that scalar freedom as the frame parameter $\lambda$, one complex number for the two mixed lines, acting as $E_{kl}\mapsto\lambda E_{kl}$ and $E_{lk}\mapsto\lambda^{-1}E_{lk}$. The idempotents $P_k$ do not depend on $\lambda$.
 
 ## What the Decomposition Is Not
 
@@ -192,7 +192,7 @@ A root with simple spectrum gives a complete flag, and the Peirce corners $A_{kl
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Peirce decompositions, corner algebras and the multiplication table.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for block matrices, ranks and the spectral decomposition.
 - [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-mnc.html), for the idempotents that produce the flag.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the vectors inside the corner lines.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html), for the vectors inside the corner lines.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion case $n=2$, where the coarse and the fine splits coincide.
 - [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for the two mixed elements whose scalar freedom is the parameter $\lambda$.
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), the case $n=3$.

@@ -261,7 +261,7 @@ M=U_L\Sigma U_R^*,
 U_L,U_R\in U(3).
 $$
 
-They answer different questions: the first separates the scale and the phase of the full $6\times6$ matrix; the second separates the two chiral gauges of the $3\times3$ block.
+They answer different questions: the first separates the scale and the phase of the full $6\times6$ matrix; the second separates the two chiral frame groups of the $3\times3$ block.
 
 **Proof.** The first is the polar decomposition of $A$; the second is the SVD of $M$.
 
@@ -281,7 +281,7 @@ $$
 
 **Proof.** $6^2=36$ complex, $72$ real; Hermitian $36$ real; $M_3$ has $9$ complex, $18$ real; $U(3)$ has $9$ real, the product $18$.
 
-**Corollary (the two gauge groups).** The full form in exponential coordinates has the unitary gauge $U(6)$ of dimension $36$; the chiral decomposition has the gauge $U(3)\times U(3)$ of dimension $18$, the stabilizer of the chiral split.
+**Corollary (the two frame groups).** The full form in exponential coordinates has the unitary frame group $U(6)$ of dimension $36$; the chiral decomposition has the frame group $U(3)\times U(3)$ of dimension $18$, the stabilizer of the chiral split.
 
 **Proof.** The polar $*$-unitary factor ranges over $U(6)$; the chiral SVD uses the two unitaries of the two chiral planes.
 
@@ -295,7 +295,7 @@ $$
 
 **Proof.** The polar decomposition and the matrix logarithm are dimension-independent.
 
-**Remark (the split case).** The **split case** is the chiral split $3+3$: the two chiral halves are the eigenspaces of $\Gamma$, the mass block is the off-diagonal $3\times3$ block, and the chiral gauge is $U(3)\times U(3)$. The full polar decomposition does not see the split; the chiral decomposition sees only the mass block. **The two decompositions are the global Cartan decomposition and the block SVD; they coexist and are not the same.**
+**Remark (the split case).** The **split case** is the chiral split $3+3$: the two chiral halves are the eigenspaces of $\Gamma$, the mass block is the off-diagonal $3\times3$ block, and the chiral frame group is $U(3)\times U(3)$. The full polar decomposition does not see the split; the chiral decomposition sees only the mass block. **The two decompositions are the global Cartan decomposition and the block SVD; they coexist and are not the same.**
 
 ## Summary
 
@@ -326,7 +326,7 @@ In the $3+3$ chiral split the mass block $M=A_{+-}\in M_3(\mathbb{C})$ has the S
 | Reach | $GL_6$ |
 | Singular set | no exponential coordinates; Hermitian factor diverges |
 | Chiral split | $3+3$; mass block $3\times3$ |
-| Chiral gauge | $U(3)\times U(3)$ |
+| Chiral frame group | $U(3)\times U(3)$ |
 
 ## Summary of Notation
 

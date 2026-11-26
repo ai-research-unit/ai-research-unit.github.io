@@ -1,16 +1,16 @@
-# __The Three-Parameter Gauge and the Chiral Polar Decomposition of $M_4(\mathbb{C})$__
+# __The Three-Parameter Frame Group and the Chiral Polar Decomposition of $M_4(\mathbb{C})$__
 
 ## Introduction
 
-**The frame carries a three-parameter complex torus, one parameter per simple nilpotent, and the mass block carries a chiral polar decomposition with two singular values; the two are different structures.** The gauge is a complex rescaling of the frame; the polar decomposition is a factorization over the compact $*$-unitary group. The gauge has three complex parameters; the polar decomposition of the mass block has two real singular values and a $*$-unitary mixing, whose determinant contributes one phase. The article compares them and records the degeneration at $n=2$, where the gauge has a single parameter $\lambda$.
+**The frame carries a three-parameter complex torus, one parameter per simple nilpotent, and the mass block carries a chiral polar decomposition with two singular values; the two are different structures.** The frame group is a complex rescaling of the frame; the polar decomposition is a factorization over the compact $*$-unitary group. The frame group has three complex parameters; the polar decomposition of the mass block has two real singular values and a $*$-unitary mixing, whose determinant contributes one phase. The article compares them and records the degeneration at $n=2$, where the frame group has a single parameter $\lambda$.
 
-The article recalls the three-parameter gauge and its action on the mass block, proves the blockwise polar decomposition of a block-diagonal element and the antidiagonal case, states the general $U(4)$ polar factor, and compares the chiral polar decomposition with the single $\lambda$ of the biquaternion algebra.
+The article recalls the three-parameter frame group and its action on the mass block, proves the blockwise polar decomposition of a block-diagonal element and the antidiagonal case, states the general $U(4)$ polar factor, and compares the chiral polar decomposition with the single $\lambda$ of the biquaternion algebra.
 
-The frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the mass block is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*; the full polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the exponential form is *The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates*.
+The frame and the frame group are *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$*; the mass block is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*; the full polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the exponential form is *The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates*.
 
-## The Three-Parameter Gauge
+## The Three-Parameter Frame Group
 
-**The gauge torus.** Fix a frame $(v_1,v_2,v_3,v_4)$ and the matrix units
+**The frame torus.** Fix a frame $(v_1,v_2,v_3,v_4)$ and the matrix units
 
 $$
 E_{ij}=v_iv_j^{\vee}.
@@ -18,7 +18,7 @@ $$
 
 **The other basis.** The matrix units belong to the fixed frame $(v_1,v_2,v_3,v_4)$. The same frame is read on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where the four left and the four right multiplications are the signed permutation matrices of *$M_4(\mathbb{C})$ Axis-Free Representation*, and the sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
 
-The **gauge group** is the torus
+The **frame group** is the torus
 
 $$
 T=(\mathbb{C}^\times)^4/\mathbb{C}^\times\cong(\mathbb{C}^\times)^3,
@@ -80,15 +80,15 @@ $$
 
 the statement that the product around the cycle is $1$.
 
-**The count.** The root has $12$ complex parameters and the gauge has $3$, for
+**The count.** The root has $12$ complex parameters and the frame group has $3$, for
 
 $$
 12+3=15=\dim_\mathbb{C}PGL_4.
 $$
 
-The gauge is the fibre of the frame bundle over the root; the three parameters are the rescalings of the frame that leave the root's spectral data unchanged. The count is the orbit–stabiliser count of *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*.
+The frame group is the fibre of the frame bundle over the root; the three parameters are the rescalings of the frame that leave the root's spectral data unchanged. The count is the orbit–stabiliser count of *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*.
 
-## The Gauge on the Mass Block
+## The Frame Group on the Mass Block
 
 **The mass block in the frame basis.** The mass block is
 
@@ -105,7 +105,7 @@ $$
 
 where the rows are the chirality $+$ indices $1,3$ and the columns are the chirality $-$ indices $2,4$.
 
-**Proposition.** Under the gauge,
+**Proposition.** Under the frame group,
 
 $$
 E_{12}\longmapsto\lambda_1E_{12},\qquad
@@ -151,7 +151,7 @@ $$
 
 The weight of the determinant is $\lambda_1\lambda_3$, not the product $\lambda_1\lambda_2\lambda_3$ of all three. The middle parameter $\lambda_2$ cancels between the two terms. This is the mass-block form of the cocycle.
 
-**The gauge is complex, not $*$-unitary.** The parameters $\lambda_k$ are nonzero complex numbers. The gauge changes the singular values of $M$: for a diagonal mass matrix the two singular values are multiplied by $\lvert\lambda_1\rvert$ and $\lvert\lambda_3\rvert$. The compact subgroup
+**The frame group is complex, not $*$-unitary.** The parameters $\lambda_k$ are nonzero complex numbers. The frame group changes the singular values of $M$: for a diagonal mass matrix the two singular values are multiplied by $\lvert\lambda_1\rvert$ and $\lvert\lambda_3\rvert$. The compact subgroup
 
 $$
 U(1)^3=\{(\lambda_1,\lambda_2,\lambda_3):\lvert\lambda_k\rvert=1\}
@@ -275,15 +275,15 @@ W=UV^*:\mathbb{C}^2_-\to\mathbb{C}^2_+,\quad
 P=V\Sigma V^*:\mathbb{C}^2_-\to\mathbb{C}^2_- .
 $$
 
-The factor $W$ is the $*$-unitary phase, and $P$ is the mass modulus. The two singular values $\sigma_1,\sigma_2$ are the invariants of the compact chiral gauge; the phase of $\det M$ is the remaining invariant under the special unitary gauge.
+The factor $W$ is the $*$-unitary phase, and $P$ is the mass modulus. The two singular values $\sigma_1,\sigma_2$ are the invariants of the compact chiral frame group; the phase of $\det M$ is the remaining invariant under the special unitary frame group.
 
-**The gauge weights of the polar data.** Under the three-parameter gauge, the mass block transforms by $M\mapsto D_+MD_-^{-1}$ with $D_+=\operatorname{diag}(\lambda_1,\lambda_2^{-1})$ and $D_-=\operatorname{diag}(1,(\lambda_2\lambda_3)^{-1})$. The singular values are invariant exactly when the gauge lies in the compact subgroup $U(1)^3$, that is, when $\lvert\lambda_1\rvert=\lvert\lambda_2\rvert=\lvert\lambda_3\rvert=1$; a complex rescaling changes the moduli. The determinant transforms by $\lambda_1\lambda_3$. The chiral phase transforms by the phase of $\lambda_1\lambda_3$. The two singular values and the phase are therefore **not** the three gauge parameters: the gauge is complex, and it changes the moduli.
+**The frame group weights of the polar data.** Under the three-parameter frame group, the mass block transforms by $M\mapsto D_+MD_-^{-1}$ with $D_+=\operatorname{diag}(\lambda_1,\lambda_2^{-1})$ and $D_-=\operatorname{diag}(1,(\lambda_2\lambda_3)^{-1})$. The singular values are invariant exactly when the frame group lies in the compact subgroup $U(1)^3$, that is, when $\lvert\lambda_1\rvert=\lvert\lambda_2\rvert=\lvert\lambda_3\rvert=1$; a complex rescaling changes the moduli. The determinant transforms by $\lambda_1\lambda_3$. The chiral phase transforms by the phase of $\lambda_1\lambda_3$. The two singular values and the phase are therefore **not** the three frame parameters: the frame group is complex, and it changes the moduli.
 
-**The invariant count.** The mass block has complex dimension $4$, hence real dimension $8$. The three-parameter gauge has complex dimension $3$, hence real dimension $6$. The quotient has real dimension $2$. On the open dense locus where $bc\ne0$, the quotient is parametrised by one complex invariant, the cross ratio $ad/(bc)$ of the four entries; as two real invariants, it is the modulus and the argument of the cross ratio. The two singular values are two real invariants of the **compact** gauge, but they are not invariant under the complex gauge; the quotient invariants are the combinations that survive the complex rescalings. The phase of $\det M$ is not a quotient invariant.
+**The invariant count.** The mass block has complex dimension $4$, hence real dimension $8$. The three-parameter frame group has complex dimension $3$, hence real dimension $6$. The quotient has real dimension $2$. On the open dense locus where $bc\ne0$, the quotient is parametrised by one complex invariant, the cross ratio $ad/(bc)$ of the four entries; as two real invariants, it is the modulus and the argument of the cross ratio. The two singular values are two real invariants of the **compact** frame group, but they are not invariant under the complex frame group; the quotient invariants are the combinations that survive the complex rescalings. The phase of $\det M$ is not a quotient invariant.
 
 ## The Single $\lambda$ of $\mathbb{B}$
 
-**At $n=2$ the gauge is one-dimensional.** The biquaternion algebra is $\mathbb{B}=M_2(\mathbb{C})$. The frame is $(v_1,v_2)$, the gauge is
+**At $n=2$ the frame group is one-dimensional.** The biquaternion algebra is $\mathbb{B}=M_2(\mathbb{C})$. The frame is $(v_1,v_2)$, the frame group is
 
 $$
 T=(\mathbb{C}^\times)^2/\mathbb{C}^\times\cong\mathbb{C}^\times,
@@ -297,7 +297,7 @@ $$
 E_{12}\longmapsto\lambda E_{12}.
 $$
 
-The mass block is the line $\mathbb{C}E_{12}$, and the mass operator is a complex scalar $z$. The gauge acts by
+The mass block is the line $\mathbb{C}E_{12}$, and the mass operator is a complex scalar $z$. The frame group acts by
 
 $$
 z\longmapsto\lambda z.
@@ -309,23 +309,23 @@ $$
 z=e^{i\theta}\lvert z\rvert .
 $$
 
-The modulus $\lvert z\rvert$ is invariant under the compact gauge $U(1)\times U(1)$, and the phase $e^{i\theta}$ is removed by the compact gauge. The complex gauge $\lambda\in\mathbb{C}^\times$ is transitive on the nonzero masses: for $z\ne0$, choose $\lambda=1/z$ to send $z$ to $1$. The only invariant of the complex gauge is whether $z$ is zero.
+The modulus $\lvert z\rvert$ is invariant under the compact frame group $U(1)\times U(1)$, and the phase $e^{i\theta}$ is removed by the compact frame group. The complex frame group $\lambda\in\mathbb{C}^\times$ is transitive on the nonzero masses: for $z\ne0$, choose $\lambda=1/z$ to send $z$ to $1$. The only invariant of the complex frame group is whether $z$ is zero.
 
-**The comparison.** In $\mathbb{B}$ the gauge has one complex parameter $\lambda$, the mass block has one complex entry $z$, and the gauge is transitive on the nonzero locus. The polar decomposition has one modulus and one phase; the modulus is the compact invariant, and the phase is a gauge artefact. In $M_4$ the gauge has three complex parameters $\lambda_1,\lambda_2,\lambda_3$, the mass block has four complex entries, and the gauge is not transitive: its orbits have complex dimension $3$ and the quotient has complex dimension $1$. The polar decomposition has two singular values and one phase; the two singular values are compact invariants, and the phase is a compact artefact. The coincidence of counts at $n=2$ — one complex gauge parameter, one complex mass — does not persist: at $n=4$ the three gauge parameters are not the two singular values plus the phase.
+**The comparison.** In $\mathbb{B}$ the frame group has one complex parameter $\lambda$, the mass block has one complex entry $z$, and the frame group is transitive on the nonzero locus. The polar decomposition has one modulus and one phase; the modulus is the compact invariant, and the phase is a frame group artefact. In $M_4$ the frame group has three complex parameters $\lambda_1,\lambda_2,\lambda_3$, the mass block has four complex entries, and the frame group is not transitive: its orbits have complex dimension $3$ and the quotient has complex dimension $1$. The polar decomposition has two singular values and one phase; the two singular values are compact invariants, and the phase is a compact artefact. The coincidence of counts at $n=2$ — one complex frame parameter, one complex mass — does not persist: at $n=4$ the three frame parameters are not the two singular values plus the phase.
 
 **The single $\lambda$ is the degeneration.** The three parameters $\lambda_1,\lambda_2,\lambda_3$ degenerate to the single $\lambda$ when the chain has one step. The mass block degenerates from a $2\times2$ matrix to a scalar. The polar decomposition degenerates from two singular values to one modulus. The pattern is the $m=1$ case of the general $M_{2m}$:
 
 $$
-\underbrace{2m-1}_{\text{gauge}}\ \text{complex parameters},\qquad
+\underbrace{2m-1}_{\text{frame group}}\ \text{complex parameters},\qquad
 \underbrace{m}_{\text{singular values}}\ \text{real invariants},\qquad
 \underbrace{1}_{\text{phase}}\ \text{compact phase}.
 $$
 
-For $m=1$: one gauge parameter, one singular value, one phase. For $m=2$: three gauge parameters, two singular values, one phase.
+For $m=1$: one frame parameter, one singular value, one phase. For $m=2$: three frame parameters, two singular values, one phase.
 
 ## Summary
 
-The frame carries the three-parameter complex torus $(\mathbb{C}^\times)^3$, one parameter $\lambda_k$ per simple nilpotent $E_{k,k+1}$. The mass block $\mathcal{B}$ is spanned by $E_{12},E_{14},E_{32},E_{34}$ with gauge weights $\lambda_1,\lambda_1\lambda_2\lambda_3,\lambda_2^{-1},\lambda_3$; the determinant has weight $\lambda_1\lambda_3$. The blockwise polar decomposition of a block-diagonal element is the direct sum of the two chiral polar decompositions; the antidiagonal case reduces to the chiral phases and moduli of the two off-diagonal blocks; the general element has a $U(4)$ polar factor that mixes the chiralities. The mass block has the chiral polar decomposition $M=U\Sigma V^*=WP$, with two singular values and a chiral phase. The three complex gauge parameters are not the two real singular values and the phase: the gauge quotient of the mass block has complex dimension one, while the polar data have three real parameters. At $n=2$ the gauge has a single $\lambda$, the mass block is a line, and the polar decomposition is the polar form of a scalar; the coincidence of counts is the degeneration of the three-parameter case.
+The frame carries the three-parameter complex torus $(\mathbb{C}^\times)^3$, one parameter $\lambda_k$ per simple nilpotent $E_{k,k+1}$. The mass block $\mathcal{B}$ is spanned by $E_{12},E_{14},E_{32},E_{34}$ with frame group weights $\lambda_1,\lambda_1\lambda_2\lambda_3,\lambda_2^{-1},\lambda_3$; the determinant has weight $\lambda_1\lambda_3$. The blockwise polar decomposition of a block-diagonal element is the direct sum of the two chiral polar decompositions; the antidiagonal case reduces to the chiral phases and moduli of the two off-diagonal blocks; the general element has a $U(4)$ polar factor that mixes the chiralities. The mass block has the chiral polar decomposition $M=U\Sigma V^*=WP$, with two singular values and a chiral phase. The three complex frame parameters are not the two real singular values and the phase: the frame group quotient of the mass block has complex dimension one, while the polar data have three real parameters. At $n=2$ the frame group has a single $\lambda$, the mass block is a line, and the polar decomposition is the polar form of a scalar; the coincidence of counts is the degeneration of the three-parameter case.
 
 $$
 \boxed{\ T=(\mathbb{C}^\times)^3,\quad \det M\mapsto\lambda_1\lambda_3\det M,\quad M=U\Sigma V^*,\quad \sigma_1\ge\sigma_2\ge0,\quad \dim_\mathbb{C}\mathcal{B}=4. }
@@ -333,26 +333,26 @@ $$
 
 | Object | Complex dimension | Real dimension |
 |---|---|---|
-| Gauge torus $T$ | $3$ | $6$ |
+| Frame torus $T$ | $3$ | $6$ |
 | Mass block $\mathcal{B}$ | $4$ | $8$ |
-| Gauge orbit (generic) | $3$ | $6$ |
-| Gauge quotient (generic) | $1$ | $2$ |
+| Frame orbit (generic) | $3$ | $6$ |
+| Frame group quotient (generic) | $1$ | $2$ |
 | Chiral polar data | — | $2$ singular values $+1$ phase |
-| Biquaternion gauge | $1$ | $2$ |
+| Biquaternion frame group | $1$ | $2$ |
 | Biquaternion mass block | $1$ | $2$ |
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\lambda_1,\lambda_2,\lambda_3$ | the gauge parameters of the simple nilpotents |
-| $T=(\mathbb{C}^\times)^3$ | the gauge torus |
-| $D_+=\operatorname{diag}(\lambda_1,\lambda_2^{-1})$ | the left gauge matrix on the mass block |
-| $D_-=\operatorname{diag}(1,(\lambda_2\lambda_3)^{-1})$ | the right gauge matrix, entering as $D_-^{-1}$ |
+| $\lambda_1,\lambda_2,\lambda_3$ | the frame parameters of the simple nilpotents |
+| $T=(\mathbb{C}^\times)^3$ | the frame torus |
+| $D_+=\operatorname{diag}(\lambda_1,\lambda_2^{-1})$ | the left frame matrix on the mass block |
+| $D_-=\operatorname{diag}(1,(\lambda_2\lambda_3)^{-1})$ | the right frame matrix, entering as $D_-^{-1}$ |
 | $M=U\Sigma V^*$ | the chiral singular value decomposition |
 | $W=UV^*$ | the chiral phase |
 | $P=V\Sigma V^*$ | the mass modulus |
-| $\lambda$ | the single gauge parameter of $\mathbb{B}$ |
+| $\lambda$ | the single frame parameter of $\mathbb{B}$ |
 
 ## Further Reading
 
@@ -360,8 +360,8 @@ $$
 - [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators in the coefficient frame, their signs and their composition.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the polar decomposition, the singular value decomposition and the $*$-unitary group.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $U(4)$, $U(2)\times U(2)$ and the exponential.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the torus and the cocycle.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m4c.html), for the torus and the cocycle.
 - [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block and its polar decomposition.
 - [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the full $U(4)$ decomposition.
 - [The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates](the-polar-decomposition-of-m4c-in-exponential-coordinates.html), for the exponential form.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge and its comparison with the biquaternion case.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m4c.html), for the frame group and its comparison with the biquaternion case.

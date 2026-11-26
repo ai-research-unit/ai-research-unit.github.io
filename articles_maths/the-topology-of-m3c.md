@@ -12,7 +12,7 @@ $$
 
 The determinant hypersurface $\det A=0$ is star-shaped around the origin, hence contractible, and its complement is $GL_3$. The space of idempotents of rank $p$ is homotopy equivalent to the Grassmannian $\operatorname{Gr}(p,3)$; for $p=1$ and $p=2$ this is $\mathbb{P}^{2}$, with $\pi_2=\mathbb{Z}$ and Euler characteristic $3$. The full flag variety $GL_3/B$ is simply connected, of real dimension $6$, with $\pi_2=\mathbb{Z}^{2}$ and Euler characteristic $6$. The determinant line bundle over $GL_3$ is trivial, with first Chern class $0$, although the determinant map itself induces an isomorphism on $\pi_1$; the nontrivial determinant bundles live over the Grassmannians and the flag variety.
 
-The article computes the homotopy type of the algebra and the group, the homotopy groups and the cohomology of $U(3)$, the topology of the determinant hypersurface, the homotopy type of the idempotent varieties and the flag variety, and the first Chern classes of the determinant bundles. The polar decomposition is *The Polar Decomposition of $M_3(\mathbb{C})$*; the idempotent geometry is *The Geometry of the Idempotents of $M_3(\mathbb{C})$*; the frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
+The article computes the homotopy type of the algebra and the group, the homotopy groups and the cohomology of $U(3)$, the topology of the determinant hypersurface, the homotopy type of the idempotent varieties and the flag variety, and the first Chern classes of the determinant bundles. The polar decomposition is *The Polar Decomposition of $M_3(\mathbb{C})$*; the idempotent geometry is *The Geometry of the Idempotents of $M_3(\mathbb{C})$*; the frame and the frame group are *The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$*.
 
 ## The Algebra and the Group
 
@@ -257,4 +257,4 @@ $$
 - Phillip Griffiths and Joseph Harris, *Principles of Algebraic Geometry* (Wiley, 1978), for the Grassmannians, the flag varieties and the determinant bundles.
 - [The Geometry of the Idempotents of $M_3(\mathbb{C})$](the-geometry-of-the-idempotents-of-m3c.html), for the affine bundle and the flag incidence.
 - [The Polar Decomposition of $M_3(\mathbb{C})$](the-polar-decomposition-of-m3c.html), for the deformation retraction onto $U(3)$.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the gauge torus.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m3c.html), for the frame torus.

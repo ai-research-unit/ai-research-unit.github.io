@@ -267,7 +267,7 @@ $$
 \operatorname{diag}(e^{i\theta_1},e^{i\theta_2},e^{i\theta_3},e^{i\theta_4})
 $$
 
-form the maximal torus $T^4$ of $U(4)$, of real dimension $4$. The quotient by the diagonal $U(1)$ is the maximal torus of $PU(4)$, of dimension $3$, the compact form of the gauge torus of *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*.
+form the maximal torus $T^4$ of $U(4)$, of real dimension $4$. The quotient by the diagonal $U(1)$ is the maximal torus of $PU(4)$, of dimension $3$, the compact form of the frame torus of *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$*.
 
 **The nilpotent exponential.** For the simple nilpotents,
 
@@ -299,7 +299,7 @@ The biquaternion algebra's exponential is the same exponential on $2\times2$ mat
 
 ## Summary
 
-The exponential $e^X=\sum X^n/n!$ maps the Lie algebra $\mathfrak{gl}_4$ to the Lie group $GL_4$. It satisfies $e^{X+Y}=e^Xe^Y$ for commuting $X,Y$, $e^{-X}=(e^X)^{-1}$, $\det e^X=e^{\operatorname{tr}X}$, and $e^{SXS^{-1}}=Se^XS^{-1}$. Its differential at $0$ is the identity, so it is a local diffeomorphism near $0$; at $X$ the differential is $e^X(1-e^{-\operatorname{ad}_X})/\operatorname{ad}_X$, singular exactly when two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. The Baker–Campbell–Hausdorff series reconstructs the local group from the bracket. Over $\mathbb{C}$ the exponential is surjective onto $GL_4$ and not injective; the fibre over $I$ contains the conjugates of the diagonal matrices with eigenvalues in $2\pi i\mathbb{Z}$. The group $GL_4$ is connected, of real dimension $32$, with maximal compact $U(4)$, polar decomposition $GL_4\cong U(4)\times P_+$, and fundamental group $\mathbb{Z}$; it deformation retracts onto $U(4)$. The Lie algebras of $SL_4,U(4),SU(4)$ are $\mathfrak{sl}_4,\mathfrak{u}(4),\mathfrak{su}(4)$, of real dimensions $30,16,15$. The root generates the one-parameter subgroup $\operatorname{diag}(e^t,e^{it},e^{-t},e^{-it})$, the nilpotents generate unipotent subgroups, and the compact diagonal torus is the compact part of the gauge torus of the frame.
+The exponential $e^X=\sum X^n/n!$ maps the Lie algebra $\mathfrak{gl}_4$ to the Lie group $GL_4$. It satisfies $e^{X+Y}=e^Xe^Y$ for commuting $X,Y$, $e^{-X}=(e^X)^{-1}$, $\det e^X=e^{\operatorname{tr}X}$, and $e^{SXS^{-1}}=Se^XS^{-1}$. Its differential at $0$ is the identity, so it is a local diffeomorphism near $0$; at $X$ the differential is $e^X(1-e^{-\operatorname{ad}_X})/\operatorname{ad}_X$, singular exactly when two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. The Baker–Campbell–Hausdorff series reconstructs the local group from the bracket. Over $\mathbb{C}$ the exponential is surjective onto $GL_4$ and not injective; the fibre over $I$ contains the conjugates of the diagonal matrices with eigenvalues in $2\pi i\mathbb{Z}$. The group $GL_4$ is connected, of real dimension $32$, with maximal compact $U(4)$, polar decomposition $GL_4\cong U(4)\times P_+$, and fundamental group $\mathbb{Z}$; it deformation retracts onto $U(4)$. The Lie algebras of $SL_4,U(4),SU(4)$ are $\mathfrak{sl}_4,\mathfrak{u}(4),\mathfrak{su}(4)$, of real dimensions $30,16,15$. The root generates the one-parameter subgroup $\operatorname{diag}(e^t,e^{it},e^{-t},e^{-it})$, the nilpotents generate unipotent subgroups, and the compact diagonal torus is the compact part of the frame torus of the frame.
 
 $$
 \boxed{\ \exp:\mathfrak{gl}_4\to GL_4\ \text{surjective},\quad \det e^X=e^{\operatorname{tr}X},\quad d(\exp)_0=I,\quad GL_4\simeq U(4),\quad \pi_1(GL_4)=\mathbb{Z}. }
@@ -334,5 +334,5 @@ $$
 - [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the diffeomorphism $GL_4\cong U(4)\times P_+$.
 - [The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates](the-polar-decomposition-of-m4c-in-exponential-coordinates.html), for the ordering $e^He^{iK}$.
 - [The Topology of $M_4(\mathbb{C})$](the-topology-of-m4c.html), for the fundamental group and the homotopy type.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge torus and the nilpotents.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m4c.html), for the frame torus and the nilpotents.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis of the biquaternion algebra $\mathbb{B}$ and the four left multiplications, a second description of the same $4\times4$ matrices.

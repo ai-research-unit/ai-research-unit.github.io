@@ -100,7 +100,7 @@ $$
 \operatorname{Spec}(A)=\{\lambda_{1j}+i\lambda_{2j}:j=1,\dots,n\},
 $$
 
-so the spectrum of a normal matrix is the pointwise sum of two real spectra, read in the same order. The order is the choice of eigenbasis, and a different order gives the same spectrum as a multiset, which is why the spectrum is the invariant and the basis is the gauge.
+so the spectrum of a normal matrix is the pointwise sum of two real spectra, read in the same order. The order is the choice of eigenbasis, and a different order gives the same spectrum as a multiset, which is why the spectrum is the invariant and the basis is the frame group.
 
 **The theorem contains both of the extreme cases.** If $A$ is Hermitian then $\Lambda$ is real, and the theorem says that a Hermitian matrix is unitarily diagonalisable with a real diagonal; if $A$ is anti-Hermitian then $\Lambda$ is purely imaginary, and the theorem says that an anti-Hermitian matrix is unitarily diagonalisable with a purely imaginary diagonal. So the two spectral theorems are the two real and imaginary slices of the one theorem, and the common spectral theorem is the statement that the two slices fit together.
 

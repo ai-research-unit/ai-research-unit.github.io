@@ -4,7 +4,7 @@
 
 **One element of order $n$ with simple spectrum produces all $n$ idempotents of the frame.** This is the first step of the construction that the four matrix categories instantiate. No second element is needed, and no idempotent is chosen in advance: the root produces them by polynomial interpolation.
 
-The article states the interpolation, proves that the projectors are polynomials in the root, reads the $\mathbb{Z}/n$ grading that the root defines, counts the root set, and records the case $n=2$, which is the biquaternion root of $+1$. The Peirce decomposition that the idempotents produce is *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$*; the choice of vectors inside the resulting lines, and the gauge that acts on them, is *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*.
+The article states the interpolation, proves that the projectors are polynomials in the root, reads the $\mathbb{Z}/n$ grading that the root defines, counts the root set, and records the case $n=2$, which is the biquaternion root of $+1$. The Peirce decomposition that the idempotents produce is *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$*; the choice of vectors inside the resulting lines, and the frame group that acts on them, is *The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$*.
 
 ## The Root and Its Spectrum
 
@@ -42,9 +42,9 @@ and $HP_k=\omega_kP_k$. Conversely, if a family with these properties is given, 
 
 *Proof.* On the eigenspace of $\omega_m$, every factor $(H-\omega_lI)/(\omega_k-\omega_l)$ with $l\ne k$ acts as $(\omega_m-\omega_l)/(\omega_k-\omega_l)$; the product is $1$ when $m=k$ and $0$ otherwise, because one factor has numerator $0$ when $m=l\ne k$. Hence $P_k$ acts as the identity on the eigenspace of $\omega_k$ and as $0$ on the others. The three properties and $HP_k=\omega_kP_k$ follow. For the converse, $\sum_k\omega_kP_k$ acts as $\omega_m$ on the eigenspace of $P_m$, hence equals $H$, and the interpolation formula applied to that $H$ returns $P_k$.
 
-**The projectors are canonical.** They are polynomials in $H$ with coefficients depending only on $n$, so they are fixed by $H$ alone. In particular they do not depend on any choice of basis, on any gauge, or on any second element.
+**The projectors are canonical.** They are polynomials in $H$ with coefficients depending only on $n$, so they are fixed by $H$ alone. In particular they do not depend on any choice of basis, on any frame group, or on any second element.
 
-**Idempotents, not nilpotents.** Each $P_k$ satisfies $P_k^{2}=P_k$ and $P_k\ne0$; the rank of $P_k$ is $1$ because the eigenvalue $\omega_k$ is simple. The $P_k$ are the primitive idempotents of the frame. The nilpotents $E_{k,k+1}$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$* are different objects: they square to $0$, they are not polynomials in $H$, and they carry the gauge.
+**Idempotents, not nilpotents.** Each $P_k$ satisfies $P_k^{2}=P_k$ and $P_k\ne0$; the rank of $P_k$ is $1$ because the eigenvalue $\omega_k$ is simple. The $P_k$ are the primitive idempotents of the frame. The nilpotents $E_{k,k+1}$ of *The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$* are different objects: they square to $0$, they are not polynomials in $H$, and they carry the frame group.
 
 ## The $\mathbb{Z}/n$ Grading
 
@@ -114,7 +114,7 @@ $$
 (n^{2}-1)-n(n-1)=n-1,
 $$
 
-is the gauge of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*: one complex parameter per simple nilpotent. For $n=2$ the root contributes $4$ real dimensions and the gauge $2$, which is the six-dimensional basis of the biquaternion frame.
+is the frame group of *The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$*: one complex parameter per simple nilpotent. For $n=2$ the root contributes $4$ real dimensions and the frame group $2$, which is the six-dimensional basis of the biquaternion frame.
 
 ## The Root of $+1$ and the Biquaternion Case
 
@@ -126,9 +126,9 @@ $$
 
 These are exactly the idempotents $\tilde\Pi_{\mathrm{id},\pm}=(e_t\pm\tilde{Ζ})/2$ of the biquaternion article, with $H=\tilde{Ζ}$ and $I=e_t$. The root of $+1$ is therefore not a separate principle: it is the order-two case of one root of order $n$.
 
-**The biquaternion article reads the same construction in the same order.** It takes the root of $+1$, obtains the pair $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ by the halving map, and then chooses a nonzero element $u$ of a mixed Peirce line, the partner $v$ being determined by the normalisation $uv=\tilde\Pi_{\mathrm{id},+}$. The choice is the basis, its reciprocal rescaling is the gauge parameter $\lambda$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*, and the idempotents do not depend on it. One root, then one gauge point: the primitive data is the root at every $n$, and the biquaternion case $n=2$ needs nothing that the case $n\ge3$ does not.
+**The biquaternion article reads the same construction in the same order.** It takes the root of $+1$, obtains the pair $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ by the halving map, and then chooses a nonzero element $u$ of a mixed Peirce line, the partner $v$ being determined by the normalisation $uv=\tilde\Pi_{\mathrm{id},+}$. The choice is the basis, its reciprocal rescaling is the frame parameter $\lambda$ of *The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$*, and the idempotents do not depend on it. One root, then one frame point: the primitive data is the root at every $n$, and the biquaternion case $n=2$ needs nothing that the case $n\ge3$ does not.
 
-**What changes for $n>2$.** The gauge grows from one parameter to $n-1$, one per simple nilpotent, and the mixed elements are indexed by pairs. The root still produces all $n$ idempotents, and it produces the $n$ eigenlines at once.
+**What changes for $n>2$.** The frame group grows from one parameter to $n-1$, one per simple nilpotent, and the mixed elements are indexed by pairs. The root still produces all $n$ idempotents, and it produces the $n$ eigenlines at once.
 
 ## An Explicit Example: the Cyclic Shift
 
@@ -164,7 +164,7 @@ For $n=2$ this is $C=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $P_\pm=\tfrac12(I\pm
 
 ## Summary
 
-A root $H$ of order $n$ with simple spectrum is diagonalisable with the $n$ roots of unity as eigenvalues, and the Lagrange polynomials in $H$ produce $n$ primitive orthogonal idempotents $P_k$, complete and summing to $I$, with $H=\sum_k\omega_kP_k$. The root grades the algebra by $\mathbb{Z}/n$, with $M^{(r)}=\bigoplus_{k-l\equiv r}P_kM_nP_l$ and $M^{(r)}M^{(s)}\subseteq M^{(r+s)}$. The root set is $PGL_n(\mathbb{C})/T$ of complex dimension $n(n-1)$; the remaining $n-1$ complex dimensions of a frame are the gauge. At $n=2$ the root is the biquaternion root of $+1$, and the one-parameter gauge is the normalisation of the two companion nilpotents.
+A root $H$ of order $n$ with simple spectrum is diagonalisable with the $n$ roots of unity as eigenvalues, and the Lagrange polynomials in $H$ produce $n$ primitive orthogonal idempotents $P_k$, complete and summing to $I$, with $H=\sum_k\omega_kP_k$. The root grades the algebra by $\mathbb{Z}/n$, with $M^{(r)}=\bigoplus_{k-l\equiv r}P_kM_nP_l$ and $M^{(r)}M^{(s)}\subseteq M^{(r+s)}$. The root set is $PGL_n(\mathbb{C})/T$ of complex dimension $n(n-1)$; the remaining $n-1$ complex dimensions of a frame are the frame group. At $n=2$ the root is the biquaternion root of $+1$, and the one-parameter frame group is the normalisation of the two companion nilpotents.
 
 ## Summary of Notation
 
@@ -185,7 +185,7 @@ A root $H$ of order $n$ with simple spectrum is diagonalisable with the $n$ root
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for idempotents, orthogonal families and Peirce decompositions.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the ambient algebra and its groups.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the lines that the idempotents produce.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the vectors and the gauge that complete the root to a frame.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html), for the vectors and the frame group that complete the root to a frame.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion case at $n=2$.
 - [Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), the case $n=3$.
 - [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), the case $n=4$.

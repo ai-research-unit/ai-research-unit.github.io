@@ -136,10 +136,13 @@ $$
 | the split $2+1$ | invariant |
 | the direction that leaves, $iD$ | invariant up to scale |
 | the pair $(d_{2},d_{3})$ | a by-product of the chain order |
+| the pair $(M_{x}-M_{y},\,M_{y}-M_{z})$ | the declared frame, restricted to the colour block |
 | the pair $(\lambda_{3},\lambda_{8})$ | an orthogonal basis of the same plane |
 | the names "the two diagonal gluons" | a name for whichever pair is in use |
 
 **So the phrase "the two diagonal gluons" is not canonical, and the honest statement says so.** What is canonical is *the two-dimensional space of diagonal generators that act only on colour*. **A reader who wants a canonical pair should fix an orthogonal one; a reader who wants to reproduce the corpus's arrays should use $d_{2}$ and $d_{3}$ and carry the $-1$ in the Gram.** Neither choice is more physical.
+
+**In the declared frame the same plane has a natural pair.** The three diagonal arrays of the fifteen are $M_{j}=E_{jj}-E_{tt}$, and the two differences $M_{x}-M_{y}$ and $M_{y}-M_{z}$ are exactly the diagonal directions with no lepton entry, so they span the octet's Cartan without any subtraction. **They are orthogonal but not normalised**, $\operatorname{tr}\bigl((M_{x}-M_{y})^{2}\bigr)=6$, and $d_{2}$, $d_{3}$ are one more choice inside the same two-dimensional space, with the Gram entry $\operatorname{tr}(d_{2}d_{3})=+1$ as the price of making it. **The table's point survives the change of pair**: the space is canonical, the pair is not. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves the restriction and why no three-dimensional version exists in $\mathfrak{su}(3)$.
 
 **One asymmetry is worth naming, because it is why the corpus's choice looks half-familiar.** $d_{2}$ is exactly $i\lambda_{3}^{\mathrm{emb}}$: the chain starts at the $x$–$y$ difference, and that difference *is* Gell-Mann's third generator. **$d_{3}$ is where the shear enters**, because it takes the difference of the next pair rather than the trace-orthogonal complement. **A reader who checks only $d_{2}$ against $\lambda_{3}$ will conclude the two conventions agree, and will be right about that entry and wrong about the pair.**
 

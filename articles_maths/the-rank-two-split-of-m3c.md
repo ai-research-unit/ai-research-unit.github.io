@@ -309,4 +309,4 @@ The **mass block** $uv$ is the product of the two mixed corners; it can make $A$
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the trace and the determinant.
 - [The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m3c.html), for the singular set and its geometry.
 - [The Polar Decomposition of $M_3(\mathbb{C})$](the-polar-decomposition-of-m3c.html), for the Schur complement in the polar decomposition.
-- [The Two-Parameter Gauge of $M_3(\mathbb{C})$](the-two-parameter-gauge-of-m3c.html), for the gauge of the mixed entries.
+- [The Two-Parameter Frame Group of $M_3(\mathbb{C})$](the-two-parameter-frame-group-of-m3c.html), for the frame group of the mixed entries.

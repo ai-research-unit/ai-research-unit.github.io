@@ -50,7 +50,7 @@ $$
 
 ### The Chiral Transformation
 
-**Definition.** The **chiral gauge group** of the mass block is
+**Definition.** The **chiral frame group** of the mass block is
 
 $$
 U(3)_L\times U(3)_R,
@@ -101,7 +101,7 @@ $$
 \lvert\det M\rvert=\sigma_1\sigma_2\sigma_3 .
 $$
 
-The phase of $\det M$ is the phase of the $*$-unitary polar factor $UV^*$; under the chiral gauge it transforms by $\det U_L/\det U_R$ and can be gauged to $1$.
+The phase of $\det M$ is the phase of the $*$-unitary polar factor $UV^*$; under the chiral frame group it transforms by $\det U_L/\det U_R$ and can be reduced to $1$.
 
 **Proof.** The determinant is multiplicative, $\det\Sigma=\sigma_1\sigma_2\sigma_3$, and $\lvert\det U\rvert=\lvert\det V\rvert=1$. Under $M\mapsto U_LMU_R^{-1}$ the determinant is multiplied by $\det U_L/\det U_R$, a phase that can be any unit complex number.
 
@@ -222,7 +222,7 @@ $$
 
 ### The $2\times2$ Mass Block
 
-For $M_4(\mathbb{C})$ the chiral split is $2+2$, the mass block is a $2\times2$ matrix, and the chiral gauge is $U(2)\times U(2)$. The singular values are two,
+For $M_4(\mathbb{C})$ the chiral split is $2+2$, the mass block is a $2\times2$ matrix, and the chiral frame group is $U(2)\times U(2)$. The singular values are two,
 
 $$
 \sigma_1\ge\sigma_2\ge0,
@@ -242,7 +242,7 @@ and the determinant is a phase times $\sigma_1\sigma_2$.
 
 ### The Pattern
 
-**Theorem.** For the chiral split $m+m$ of $M_{2m}(\mathbb{C})$, the mass block is $m\times m$, the chiral gauge is $U(m)\times U(m)$, and the number of mass channels is $m$. The full-rank orbit has dimension
+**Theorem.** For the chiral split $m+m$ of $M_{2m}(\mathbb{C})$, the mass block is $m\times m$, the chiral frame group is $U(m)\times U(m)$, and the number of mass channels is $m$. The full-rank orbit has dimension
 
 $$
 2m^2-m,
@@ -266,20 +266,20 @@ and the orbit space is the cone $\sigma_1\ge\cdots\ge\sigma_m\ge0$.
 
 ## Summary
 
-The mass block of the $3+3$ chiral split is a $3\times3$ complex matrix $M=A_{+-}$, of $18$ real dimensions. The chiral gauge $U(3)\times U(3)$ acts by $M\mapsto U_LMU_R^{-1}$, and the orbits are classified by the three singular values $\sigma_1\ge\sigma_2\ge\sigma_3\ge0$.
+The mass block of the $3+3$ chiral split is a $3\times3$ complex matrix $M=A_{+-}$, of $18$ real dimensions. The chiral frame group $U(3)\times U(3)$ acts by $M\mapsto U_LMU_R^{-1}$, and the orbits are classified by the three singular values $\sigma_1\ge\sigma_2\ge\sigma_3\ge0$.
 
 $$
 \boxed{\ M=U_L\Sigma U_R^{-1},\qquad \Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3),\qquad \lvert\det M\rvert=\sigma_1\sigma_2\sigma_3 .\ }
 $$
 
-The determinant phase is gauge-dependent; the modulus is the product of the channels; the rank is the number of nonzero channels. The massless block is $M=0$, and the massless algebra is $M_3\oplus M_3$.
+The determinant phase is frame dependent; the modulus is the product of the channels; the rank is the number of nonzero channels. The massless block is $M=0$, and the massless algebra is $M_3\oplus M_3$.
 
 The full element has the $U(6)$ polar decomposition $A=UP$, with $U\in U(6)$ and $P>0$; the mass block of $A$ is $U_{++}P_{+-}+U_{+-}P_{--}$, a sum of two products of chiral blocks. The $U(6)$ polar factor and the $U(3)\times U(3)$ polar factors of $M$ are different objects.
 
 | Object | Data |
 |---|---|
 | Mass block | $M=A_{+-}$, $3\times3$, $18$ real |
-| Chiral gauge | $U(3)\times U(3)$, dimension $18$ |
+| Chiral frame group | $U(3)\times U(3)$, dimension $18$ |
 | Invariants | $\sigma_1,\sigma_2,\sigma_3$ |
 | Determinant | phase $\times\sigma_1\sigma_2\sigma_3$ |
 | Rank | number of nonzero channels |

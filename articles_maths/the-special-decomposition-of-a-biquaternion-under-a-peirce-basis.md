@@ -143,14 +143,14 @@ $$
 
 *Proof.* Left multiplication by $\vec\Pi_{\mathrm{nil},+-}$ is a nonzero linear map from the line $\mathbb{B}_{-+}$ to the line $\mathbb{B}_{++}$; it is nonzero because the product of the two mixed lines is nonzero, and it is therefore an isomorphism of complex lines. Hence there is a unique $\vec\Pi_{\mathrm{nil},-+}$ with $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$. The product $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}$ lies in $\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{\mathrm{id},-}$; writing it $\lambda\tilde\Pi_{\mathrm{id},-}$ and multiplying the first identity by $\vec\Pi_{\mathrm{nil},+-}$ on the right gives $\vec\Pi_{\mathrm{nil},+-}=\lambda\vec\Pi_{\mathrm{nil},+-}$, so $\lambda=1$. The nilpotence is $\vec\Pi_{\mathrm{nil},+-}^{2}\in\mathbb{B}_{++}\mathbb{B}_{+-}=0$, and likewise for the other.
 
-**The gauge.** If $\vec\Pi_{\mathrm{nil},+-}$ is replaced by $\mu\vec\Pi_{\mathrm{nil},+-}$ with $\mu\in\mathbb{C}^{\times}$, the partner is replaced by $\mu^{-1}\vec\Pi_{\mathrm{nil},-+}$, and the products are unchanged. This is the **gauge** of the basis,
+**The frame group.** If $\vec\Pi_{\mathrm{nil},+-}$ is replaced by $\mu\vec\Pi_{\mathrm{nil},+-}$ with $\mu\in\mathbb{C}^{\times}$, the partner is replaced by $\mu^{-1}\vec\Pi_{\mathrm{nil},-+}$, and the products are unchanged. This is the **frame group** of the basis,
 
 $$
 \vec\Pi_{\mathrm{nil},+-}\longmapsto\mu\,\vec\Pi_{\mathrm{nil},+-},\qquad
 \vec\Pi_{\mathrm{nil},-+}\longmapsto\mu^{-1}\vec\Pi_{\mathrm{nil},-+},\qquad \mu\in\mathbb{C}^{\times},
 $$
 
-and every two bases of the same pair differ by exactly one gauge transformation. The basis $\mathcal{B}(\vec{Ζ})$ is therefore unique up to the gauge, and the diagonal elements are the idempotents themselves and are not a choice. The companion article writes the same gauge with the parameter $t=\mu^{-1}$.
+and every two bases of the same pair differ by exactly one frame transformation. The basis $\mathcal{B}(\vec{Ζ})$ is therefore unique up to the frame group, and the diagonal elements are the idempotents themselves and are not a choice. The companion article writes the same frame group with the parameter $t=\mu^{-1}$.
 
 **Peirce coordinates.** Every element has a unique expansion
 
@@ -159,7 +159,7 @@ $$
 \qquad Q_{st}\in\mathbb{C}.
 $$
 
-Under the gauge the off-diagonal coordinates transform reciprocally, $Q_{+-}\mapsto\mu^{-1}Q_{+-}$ and $Q_{-+}\mapsto\mu Q_{-+}$, while $Q_{++}$ and $Q_{--}$ are unchanged.
+Under the frame group the off-diagonal coordinates transform reciprocally, $Q_{+-}\mapsto\mu^{-1}Q_{+-}$ and $Q_{-+}\mapsto\mu Q_{-+}$, while $Q_{++}$ and $Q_{--}$ are unchanged.
 
 ## The Theorem
 
@@ -255,7 +255,7 @@ If $r>s>0$, then $M$ is invertible and the identity gives $\tilde A=M\tilde B M^
 
 If $r=s>0$, then $r_+=2r$ and $r_-=0$. The equations with $(s,t)=(+,-)$ and $(-,+)$ give $B_{+-}=0$ and $A_{-+}=0$, so both elements have at most three Peirce components. A unitary with $A_{-+}=0$ is diagonal: writing $A=a\tilde\Pi_{\mathrm{id},++b}\tilde\Pi_{\mathrm{id},-+c}\vec\Pi_{\mathrm{nil},+-}$, the product $\tilde A\tilde A^{*}$ carries the mixed terms $a\bar c\,\vec\Pi_{\mathrm{nil},-+}$ and $c\bar b\,\vec\Pi_{\mathrm{nil},+-}$, which must vanish, so $c=0$ because $\lvert a\rvert=\lvert b\rvert=1$; and likewise for $\tilde B$. Hence $\tilde A=\operatorname{diag}(A_{++},A_{--})$ and $\tilde B=\operatorname{diag}(B_{++},B_{--})$, the equation $(+,+)$ gives $A_{++}=B_{++}$, and unitarity gives $\lvert A_{++}\rvert=\lvert A_{--}\rvert=\lvert B_{--}\rvert=1$.
 
-**Corollary (the residual freedom preserves the middle factor).** In each case of the theorem, $\tilde A M\tilde B^{*}=M$. Hence $\tilde U'(r e_t+s\vec{Ζ})\tilde V'{}^{*}=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$ with the middle factor unchanged, and the residual freedom is a subgroup of $\mathrm{U}(\mathbb{B})\times\mathrm{U}(\mathbb{B})$ acting on the right of the pair: simultaneously in the generic case, and with the two kernel phases independent in the rank-one case. It is not the gauge of the Peirce basis: the gauge rescales the mixed elements of $\mathcal{B}(\vec{Ζ})$ and leaves the unitaries alone, while the residual freedom acts on the unitaries and leaves the basis alone.
+**Corollary (the residual freedom preserves the middle factor).** In each case of the theorem, $\tilde A M\tilde B^{*}=M$. Hence $\tilde U'(r e_t+s\vec{Ζ})\tilde V'{}^{*}=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$ with the middle factor unchanged, and the residual freedom is a subgroup of $\mathrm{U}(\mathbb{B})\times\mathrm{U}(\mathbb{B})$ acting on the right of the pair: simultaneously in the generic case, and with the two kernel phases independent in the rank-one case. It is not the frame group of the Peirce basis: the frame group rescales the mixed elements of $\mathcal{B}(\vec{Ζ})$ and leaves the unitaries alone, while the residual freedom acts on the unitaries and leaves the basis alone.
 
 ## The Peirce-Diagonal Reading
 
@@ -302,7 +302,7 @@ $$
 
 and $\tilde W\tilde V^{*}=(\tilde V\tilde W^{*})^{*}$.
 
-**Corollary (the numbers are invariants of the element).** The numbers $r$, $s$, $r_+=r+s$ and $r_-=r-s$ are the same for every root. They are determined by $\tilde Q$ alone: $r_+$ and $r_-$ are its singular values, and $r=(r_++r_-)/2$, $s=(r_+-r_-)/2$. The unitary $\tilde W$ depends only on the two roots and not on the element, so the same $\tilde W$ serves every $\tilde Q$. The root, the Peirce basis, the gauge and the unitaries are a presentation; the coefficients are the invariant.
+**Corollary (the numbers are invariants of the element).** The numbers $r$, $s$, $r_+=r+s$ and $r_-=r-s$ are the same for every root. They are determined by $\tilde Q$ alone: $r_+$ and $r_-$ are its singular values, and $r=(r_++r_-)/2$, $s=(r_+-r_-)/2$. The unitary $\tilde W$ depends only on the two roots and not on the element, so the same $\tilde W$ serves every $\tilde Q$. The root, the Peirce basis, the frame group and the unitaries are a presentation; the coefficients are the invariant.
 
 The two columns below separate the two kinds of data.
 
@@ -310,7 +310,7 @@ The two columns below separate the two kinds of data.
 |---|---|
 | The numbers $r\ge s\ge0$ | The root $\vec{Ζ}$ |
 | The Peirce coefficients $r_+=r+s$, $r_-=r-s$, that is the singular values $\sigma_1,\sigma_2$ | The Peirce basis $\mathcal{B}(\vec{Ζ})$ |
-| The image line and the kernel line of $\tilde Q$, when $r>s>0$ | The gauge $\mu$ of $\mathcal{B}(\vec{Ζ})$ |
+| The image line and the kernel line of $\tilde Q$, when $r>s>0$ | The frame group $\mu$ of $\mathcal{B}(\vec{Ζ})$ |
 | | The unitaries $\tilde U,\tilde V$, and the residual freedom between them |
 | | The matrix representation used as a check |
 
@@ -421,7 +421,7 @@ This is the point of §*The Peirce-Diagonal Reading*: the idempotent systems mus
 
 The Peirce decomposition and the factorization have different boundaries, and they must not be conflated.
 
-**The Peirce side has no boundary.** A root always produces the idempotents $\tilde\Pi_{\mathrm{id},\pm}$, the four corners, the Peirce basis and the expansion of any element in it. The decomposition exists for every root and every element, and the basis is unique up to the gauge. Nothing degenerates.
+**The Peirce side has no boundary.** A root always produces the idempotents $\tilde\Pi_{\mathrm{id},\pm}$, the four corners, the Peirce basis and the expansion of any element in it. The decomposition exists for every root and every element, and the basis is unique up to the frame group. Nothing degenerates.
 
 **The factorization always exists and its uniqueness degenerates.** The scalars $r$ and $s$ are always defined, and the unitaries always exist, by the theorem. The ambiguity of the pair $(\tilde U,\tilde V)$ grows on two loci, and the two are different.
 
@@ -491,11 +491,11 @@ which is not diagonal in the Pauli frame. It is nonetheless Hermitian with spect
 
 ## Summary
 
-A root of $e_t$ is a pure Hermitian element $\vec{Ζ}$ with $\vec{Ζ}^{2}=e_t$; the roots are exactly $i\vec n$ with $\vec n$ a real unit vector. A root produces the idempotents $\tilde\Pi_{\mathrm{id},\pm}=(e_t\pm\vec{Ζ})/2$, the four Peirce lines, the Peirce basis $\mathcal{B}(\vec{Ζ})$, unique up to the reciprocal gauge, and the plane $\mathbb{C}[\vec{Ζ}]=\mathbb{B}_{++}\oplus\mathbb{B}_{--}$.
+A root of $e_t$ is a pure Hermitian element $\vec{Ζ}$ with $\vec{Ζ}^{2}=e_t$; the roots are exactly $i\vec n$ with $\vec n$ a real unit vector. A root produces the idempotents $\tilde\Pi_{\mathrm{id},\pm}=(e_t\pm\vec{Ζ})/2$, the four Peirce lines, the Peirce basis $\mathcal{B}(\vec{Ζ})$, unique up to the reciprocal frame group, and the plane $\mathbb{C}[\vec{Ζ}]=\mathbb{B}_{++}\oplus\mathbb{B}_{--}$.
 
 For every element and every root there are unitaries $\tilde U,\tilde V$ and real $r\ge s\ge0$ with $\tilde Q=\tilde U(r e_t+s\vec{Ζ})\tilde V^{*}$. The middle factor is Peirce-diagonal with coefficients $r_+=r+s$ and $r_-=r-s$, and the element is Peirce-diagonal relative to the rotated idempotent systems $\tilde U\tilde\Pi_{\mathrm{id},i}\tilde U^{*}$, $\tilde V\tilde\Pi_{\mathrm{id},j}\tilde V^{*}$. The proof transports the base case from the root carried by the element to the chosen root. The uniqueness of the pair $(\tilde U,\tilde V)$ degenerates at $s=0$ and at $r=s$, and at neither point does the Peirce decomposition degenerate.
 
-The numbers $r_+$ and $r_-$ are the singular values of the element, and $r=(r_++r_-)/2$, $s=(r_+-r_-)/2$; all four are independent of the root. The root, the basis, the gauge and the unitaries are a choice of presentation. The decomposition is special because it selects the diagonal Peirce component of a chosen root, and the numbers in that component are invariants of the element, not of the root.
+The numbers $r_+$ and $r_-$ are the singular values of the element, and $r=(r_++r_-)/2$, $s=(r_+-r_-)/2$; all four are independent of the root. The root, the basis, the frame group and the unitaries are a choice of presentation. The decomposition is special because it selects the diagonal Peirce component of a chosen root, and the numbers in that component are invariants of the element, not of the root.
 
 ## Summary of Notation
 
@@ -506,7 +506,7 @@ The numbers $r_+$ and $r_-$ are the singular values of the element, and $r=(r_++
 | $\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}$ | A Peirce corner, left index first |
 | $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$ | The mixed units of a Peirce basis |
 | $\mathcal{B}(\vec{Ζ})$ | The Peirce basis $(\tilde\Pi_{\mathrm{id},+},\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+},\tilde\Pi_{\mathrm{id},-})$ |
-| $\mu$ | The gauge parameter, $\vec\Pi_{\mathrm{nil},+-}\mapsto\mu\vec\Pi_{\mathrm{nil},+-}$, $\vec\Pi_{\mathrm{nil},-+}\mapsto\mu^{-1}\vec\Pi_{\mathrm{nil},-+}$ |
+| $\mu$ | The frame parameter, $\vec\Pi_{\mathrm{nil},+-}\mapsto\mu\vec\Pi_{\mathrm{nil},+-}$, $\vec\Pi_{\mathrm{nil},-+}\mapsto\mu^{-1}\vec\Pi_{\mathrm{nil},-+}$ |
 | $Q_{st}$ | The Peirce coordinates of $\tilde Q$ |
 | $r\ge s\ge0$ | The two real coefficients of the middle factor |
 | $r_+=r+s$, $r_-=r-s$ | The two Peirce coefficients |
@@ -518,7 +518,7 @@ The numbers $r_+$ and $r_-$ are the singular values of the element, and $r=(r_++
 ## Further Reading
 
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the four corners, the corner rule and the diagonal lines.
-- [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the existence of the mixed partner, the gauge and the torsor of bases.
+- [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the existence of the mixed partner, the frame group and the torsor of bases.
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the Hermitian factor and the partial isometry used in Lemma B.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$ and its action.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the element-dependent root compared in §*Relation to the Eigenbasis*.

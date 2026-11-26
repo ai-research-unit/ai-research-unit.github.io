@@ -211,7 +211,7 @@ $$
 $$
 the last by $\det\mathsf M_{2}(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and the general formula $\det T=(\det A\det B)^{2}$. The dimension of the cone is $7$, its projectivisation is $\mathbb{P}^{3}\times\mathbb{P}^{3}$ of dimension six, and the group of invertibles is $(\mathrm{GL}_{2}\times\mathrm{GL}_{2})/\mathbb{C}^{\times}$, of complex dimension $7$.
 
-**What is the same and what is not.** The cone, the fibre, the composition law, the rank formula, the trace formula and the determinant formula are the same statements at every $n$. The biquaternion articles add three things that the general case does not see: the Clifford frame and the sixteen basis operators, the gauge of the Peirce frame, and the two conjugate-linear involutions of the algebra. **The general article owns the counts; the biquaternion article owns the frame.**
+**What is the same and what is not.** The cone, the fibre, the composition law, the rank formula, the trace formula and the determinant formula are the same statements at every $n$. The biquaternion articles add three things that the general case does not see: the Clifford frame and the sixteen basis operators, the frame group of the Peirce frame, and the two conjugate-linear involutions of the algebra. **The general article owns the counts; the biquaternion article owns the frame.**
 
 ## Summary
 
@@ -243,4 +243,4 @@ The two one-sided copies are the two rulings of the cone and meet in the scalars
 - [The Regular Representation in Dimension $n$](the-regular-representation-in-dimension-n.html), for the tensor form and the ladder.
 - [The Length and the Two Ranks on $M_n(\mathbb{C})$](the-length-and-the-two-ranks-on-mnc.html), for the coefficient array which cuts the cone out by minors.
 - [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the abstract family at $n=2$.
-- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the sixteen basis operators and the Peirce gauge.
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the sixteen basis operators and the Peirce frame group.

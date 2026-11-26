@@ -90,7 +90,7 @@ is the real eigenspace decomposition of $\theta$.
 
 **The fixed algebra is $\mathbb{C}\times\mathbb{C}$.** Diagonal matrices multiply entrywise, so the fixed algebra is the product of two copies of $\mathbb{C}$; its two minimal idempotents are $E_{11}$ and $E_{22}$.
 
-**This is one point of the gauge, not a datum.** A reflection $R$ with $R^{2}=I$ and $R$ not scalar is a choice inside the conjugacy class of $D$; the biquaternion frame of *The Frame, the Simple Nilpotent and the Gauge of $M_2(\mathbb{C})$* does not depend on it, and no article of the corpus assumes such an $R$ as part of the definition.
+**This is one point of the frame group, not a datum.** A reflection $R$ with $R^{2}=I$ and $R$ not scalar is a choice inside the conjugacy class of $D$; the biquaternion frame of *The Frame, the Simple Nilpotent and the Frame Group of $M_2(\mathbb{C})$* does not depend on it, and no article of the corpus assumes such an $R$ as part of the definition.
 
 ## The Classification
 

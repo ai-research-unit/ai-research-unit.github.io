@@ -24,6 +24,8 @@ $$
 
 **with the parameter written $\theta$ once and never $\omega t$**, since this article is about the matrix and not about the clock.
 
+**The diagonal is written in the declared frame, and two of the sections below use the broken phase's names for it.** The three diagonal arrays of the fifteen are $iM_{j}=i(E_{jj}-E_{tt})$, $j=x,y,z$, and **the direction the vacuum is built from is their sum**, $iD=i(M_{x}+M_{y}+M_{z})$, which is printed here as the corner and is not a sixteenth array. **A basis that contains $iD$ is still a basis**: with $d_{2}$ and $d_{3}$ it spans the same three dimensions, the frame's pairwise differences being $M_{x}-M_{y}$ and $M_{y}-M_{z}$ and its sum being $D$. **No rotor below depends on that choice**, because a rotor is $\exp(\theta G)$ of a single array, and every array printed is either a plane or one diagonal direction. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves the frame, its orbit under the permutation of $x,y,z$, and why $\mathfrak{su}(3)$ cannot repeat it.
+
 **The reading rule, and it is the only one used below.** The $j$-th column of $R_{a}(\theta)$ is the image of the $j$-th basis vector. **A $1$ on the diagonal is a line the rotor does not touch. A $\cos\theta$ on the diagonal is a line it touches without moving. A $\sin\theta$ off the diagonal is a line it moves to its partner. A $e^{\pm i\theta}$ or a $i\sin\theta$ is a line it touches with a phase and no motion.**
 
 **Why $\theta$ and never a half angle.** None of the fifteen is half of another array, so none of the fifteen has a half angle in its rotor. **The $\tfrac12$ appears only when a composite is exponentiated**, and §*What the Rotor Entries Say That the Array Entries Do Not* says where the composites sit.
@@ -219,7 +221,9 @@ $$
 
 **The role.** $X^{b}$ is the blue amplitude, and **the sextet it completes is the only coloured massive set of the model**: six rotors, one mass, three colour lines, two amplitudes, and six charges that sum to zero. **The rotor language adds one fact to the ledger's**: all six have the same $\cos$ and the same $\sin$, so the sextet is degenerate at the symmetric point by the shape of the rotor and not by a symmetry of the potential.
 
-## The Six Off-Diagonal Gluons: The Rotors That Leave the Lepton Line Alone
+## The Six Colour-Plane Rotors: The Rotors That Leave the Lepton Line Alone
+
+**The six below are the cells of the $3\times3$ block, and above $M_C$ they are directions of one group and no particles.** **The word *gluon* is the broken phase's name for them**, available once $\mathrm{SU}(3)$ is a local factor; the rotors do not change with the name.
 
 **The complement of the previous section, and its statement is negative and exact: these six rotors fix $e_{t}$ for every $\theta$, and $e_{t}$ is the one line they all leave alone.** Each turns a colour plane; each has a real and an imaginary amplitude; **none of them moves the lepton line, which is what "colour is the stabiliser" means when it is written on a rotor.**
 
@@ -241,7 +245,7 @@ $$
 
 **The reading.** $\exp(\theta A_{xy})e_{x}=\cos\theta\,e_{x}-\sin\theta\,e_{y}$ with $e_{t}=e_{t}$ and $e_{z}=e_{z}$: **a rotation of the colour triple read inside the quartet.** At $\theta=\pi$ the rotor is the sign flip on the red–green plane, $\operatorname{diag}(1,-1,-1,1)$, **which is an involution of the group and not only a rotation of a plane: applied twice it gives the identity, and it is the element of order two a reader meets again at the centre.**
 
-**The role.** $g_{1}$ is a gluon, and its rotor is a symmetry of the vacuum in the exact sense of the comparison above: $[A_{xy},D]=0$, so $R_{A_{xy}}(\theta)Ξ_{0}R_{A_{xy}}(\theta)^{-1}=Ξ_{0}$ for every $\theta$. **The rotor is the local transformation of the unbroken colour group**, and the zero mass is that sentence and not a separate computation.
+**The role.** $g_{1}$ is a cell of the red–green plane, and its rotor is a symmetry of the vacuum in the exact sense of the comparison above: $[A_{xy},D]=0$, so $R_{A_{xy}}(\theta)Ξ_{0}R_{A_{xy}}(\theta)^{-1}=Ξ_{0}$ for every $\theta$. **The rotor is the local transformation of the unbroken colour group**, and the zero mass is that sentence and not a separate computation.
 
 ### $g_{2}$: $iS_{xy}$, the same plane with the phase
 
@@ -261,7 +265,7 @@ $$
 
 **The reading.** $\exp(\theta\,iS_{xy})e_{x}=\cos\theta\,e_{x}+i\sin\theta\,e_{y}$: **the same rotation with the moved amplitude phased**, and the circular lines $e_{x}\pm ie_{y}$ are multiplied by $e^{\mp i\theta}$.
 
-**The role.** $g_{2}$ is the second gluon of the red–green plane, and **the pair $\{g_{1},g_{2}\}$ is one complex colour field**: the two rotors differ by the $i$ on the off-diagonal pair, which is the statement that the two arrays are the two amplitudes of one cell pair. **A colour plane contributes one complex field and not two real ones**, which is why the six off-diagonal colour arrays carry three complex colour fields, one per plane.
+**The role.** $g_{2}$ is the second cell of the red–green plane, and **the pair $\{g_{1},g_{2}\}$ is one complex colour field**: the two rotors differ by the $i$ on the off-diagonal pair, which is the statement that the two arrays are the two amplitudes of one cell pair. **A colour plane contributes one complex field and not two real ones**, which is why the six off-diagonal colour arrays carry three complex colour fields, one per plane.
 
 ### $g_{4}$: $A_{xz}$, the real turn of the red–blue plane
 
@@ -281,7 +285,7 @@ $$
 
 **The reading.** $\exp(\theta A_{xz})e_{x}=\cos\theta\,e_{x}-\sin\theta\,e_{z}$ with the lepton and green lines fixed. **At $\theta=0.4$ the image of $e_{x}$ is $(0,\,0.9211,\,0,\,-0.3894)$**, real, orthogonal, and confined to the colour block.
 
-**The role.** $g_{4}$, a gluon of the red–blue plane, massless by the same commutator. **Its bracket with its own imaginary partner gives a diagonal combination and not a single diagonal**, $[A_{xz},iS_{xz}]=2i(E_{xx}-E_{zz})=2(d_{2}+d_{3})$: **the middle colour plane sees both Cartan directions**, which is why the colour block's three brackets are $2d_{2}$, $2(d_{2}+d_{3})$ and $2d_{3}$ and not three copies of one.
+**The role.** $g_{4}$, the real cell of the red–blue plane, massless by the same commutator. **Its bracket with its own imaginary partner gives a difference of two frame directions and not a single one**, $[A_{xz},iS_{xz}]=2i(E_{xx}-E_{zz})=2i(M_{x}-M_{z})$: **the middle colour plane sees both directions of the colour block's Cartan**, which is why the colour block's three brackets are $2i(M_{x}-M_{y})$, $2i(M_{x}-M_{z})$ and $2i(M_{y}-M_{z})$ and not three copies of one.
 
 ### $g_{5}$: $iS_{xz}$, the same plane with the phase
 
@@ -301,7 +305,7 @@ $$
 
 **The reading.** $\exp(\theta\,iS_{xz})e_{x}=\cos\theta\,e_{x}+i\sin\theta\,e_{z}$: **the phasing of the red–blue plane**, and the second of the three complex colour rotations.
 
-**The role.** $g_{5}$ is the second gluon of the red–blue plane, massless and unbroken. **The octet's rotor content is therefore three real rotations, three complex rotations and two diagonal phases**, and only the first three are rotations of the quartet — **a reader who expects eight rotation angles finds six turns and two phases.**
+**The role.** $g_{5}$ is the second cell of the red–blue plane, massless and unbroken. **The colour block's rotor content is therefore three real rotations, three complex rotations and two diagonal phases**, and only the first three are rotations of the quartet — **a reader who expects eight rotation angles finds six turns and two phases.**
 
 ### $g_{6}$: $A_{yz}$, the real turn of the green–blue plane
 
@@ -321,7 +325,7 @@ $$
 
 **The reading.** $\exp(\theta A_{yz})e_{y}=\cos\theta\,e_{y}-\sin\theta\,e_{z}$. **The rotor is a rotation of the last colour pair**, and its half-turn is the sign flip on that pair.
 
-**The role.** $g_{6}$, a gluon of the green–blue plane, massless. **Its bracket with its partner is the third single diagonal**, $[A_{yz},iS_{yz}]=2i(E_{yy}-E_{zz})=2d_{3}$, and **the three brackets together are the whole diagonal content of the octet.**
+**The role.** $g_{6}$, the real cell of the green–blue plane, massless. **Its bracket with its partner is the third of the three differences**, $[A_{yz},iS_{yz}]=2i(E_{yy}-E_{zz})=2i(M_{y}-M_{z})$, and **the three brackets together are the whole diagonal content of the colour block.**
 
 ### $g_{7}$: $iS_{yz}$, the last of the octet
 
@@ -341,7 +345,7 @@ $$
 
 **The reading.** $\exp(\theta\,iS_{yz})e_{y}=\cos\theta\,e_{y}+i\sin\theta\,e_{z}$. **With it the six off-diagonal colour rotors are complete**, three planes and two amplitudes each, and the count is the nine cells of the colour block minus the trace.
 
-**The role.** $g_{7}$ is a gluon, and **the six off-diagonal rotors plus the two diagonals below are the octet**: eight rotors, each fixing the lepton line, each commuting with $D$, each massless at every step of the chain.
+**The role.** $g_{7}$ is a cell of the green–blue plane, and **the six off-diagonal rotors plus the two diagonals below are the eight**: eight rotors, each fixing the lepton line, each commuting with $D$, each massless at every step of the chain. **Below $M_C$ the eight are the connections of an unbroken $\mathrm{SU}(3)$; above it they are a set of directions and no group is local.**
 
 ## The Two Colour Diagonals: The Rotors That Phase Two Colour Lines
 
@@ -450,7 +454,7 @@ Sixteen recomputations, with the quartet ordered $(t,x,y,z)$ and $\theta$ one re
 
 ## Summary
 
-**Fifteen matrices, fifteen rotors, one per boson, and every rotor is elementary because every array squares to a diagonal.** One corner, six leptoquarks, six off-diagonal gluons and two colour diagonals.
+**Fifteen matrices, fifteen rotors, one per boson, and every rotor is elementary because every array squares to a diagonal.** One corner direction that is the sum of three, six leptoquarks, six colour planes and three frame directions.
 
 **Three kinds of nonzero entry and no more.** A cosine that stays, a sine that moves, a phase that multiplies. **The six real planes carry the first two and are real for every $\theta$; the six imaginary planes carry the same pair with an $i$ and are real only at the half-turns; the corner and the two diagonals carry phases and no motion.**
 

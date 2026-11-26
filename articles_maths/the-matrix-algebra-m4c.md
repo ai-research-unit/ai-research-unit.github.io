@@ -6,7 +6,7 @@ The **matrix algebra** $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex ma
 
 Throughout, $M_4=M_4(\mathbb{C})=\operatorname{End}(\mathbb{C}^4)$, $I$ is the identity, and $A^*=\bar A^{\mathsf T}$ is the conjugate transpose. No positive definite form, no norm and no topology are used; the positive definite trace form and the topology are *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$* and *The Topology of $M_4(\mathbb{C})$*. The element, its coordinates and the trace are *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$*.
 
-The algebra is **central simple** of complex dimension $16$ and real dimension $32$. It has centre $\mathbb{C}I$, no proper two-sided ideal, and many zero divisors. Its group of invertibles is $GL_4(\mathbb{C})$, of complex dimension $16$; its projective group is $PGL_4(\mathbb{C})$, of complex dimension $15$. The group $PGL_4$ is the group of frames modulo overall scale, and it is the group that acts on the root and on the gauge in the articles that follow.
+The algebra is **central simple** of complex dimension $16$ and real dimension $32$. It has centre $\mathbb{C}I$, no proper two-sided ideal, and many zero divisors. Its group of invertibles is $GL_4(\mathbb{C})$, of complex dimension $16$; its projective group is $PGL_4(\mathbb{C})$, of complex dimension $15$. The group $PGL_4$ is the group of frames modulo overall scale, and it is the group that acts on the root and on the frame group in the articles that follow.
 
 **The full algebra and the regular model.** The $M_4(\mathbb{C})_{\mathbb{B}_L}$ articles study the four-dimensional subalgebra of $M_4(\mathbb{C})$ that is the image of the left regular representation of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$. That image is not the full algebra: it is a copy of $M_2(\mathbb{C})$ inside $M_4(\mathbb{C})$, of complex dimension $4$, and its trace and determinant are the biquaternion trace and norm. The present article and the rest of this category treat the full sixteen-dimensional algebra. The distinction is stated precisely in §*The Full Algebra and the Regular Model*. A construction of the algebra from the two-sided operators on a smaller matrix algebra is §*A Construction from the Two-Sided Operators*; it is one route to the algebra, not a definition.
 
@@ -230,14 +230,14 @@ $$
 
 and the kernel of the action is exactly the scalars: if $SAS^{-1}=A$ for every $A$, then $S$ commutes with every matrix, hence $S\in\mathbb{C}^\times I$ by the centre theorem. The conjugation action preserves the trace, the determinant, the characteristic polynomial and the rank.
 
-**The projective group is the group of frames modulo scale.** A frame is an ordered basis $(v_1,v_2,v_3,v_4)$ of $\mathbb{C}^4$. The group $GL_4$ acts simply transitively on frames. Two frames that differ by an overall scalar give the same matrix units $E_{ij}=v_i\ell_j$, because the scalar cancels between the vector and the dual functional. The group of frames modulo overall scale is therefore $PGL_4$. This is the group that acts on the root and on the gauge; the count of the frame is
+**The projective group is the group of frames modulo scale.** A frame is an ordered basis $(v_1,v_2,v_3,v_4)$ of $\mathbb{C}^4$. The group $GL_4$ acts simply transitively on frames. Two frames that differ by an overall scalar give the same matrix units $E_{ij}=v_i\ell_j$, because the scalar cancels between the vector and the dual functional. The group of frames modulo overall scale is therefore $PGL_4$. This is the group that acts on the root and on the frame group; the count of the frame is
 
 $$
 \underbrace{15}_{PGL_4}
 =
 \underbrace{12}_{\text{root}}
 +
-\underbrace{3}_{\text{gauge}} .
+\underbrace{3}_{\text{frame group}} .
 $$
 
 **The standard flag and the Borel subgroup.** The standard flag is

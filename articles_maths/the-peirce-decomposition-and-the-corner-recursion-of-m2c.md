@@ -6,7 +6,7 @@
 
 The article states the spectral flag at order two, the Peirce lines of a root with simple spectrum, the coarse split by a single idempotent with the dimensions $p^{2}$, $p(2-p)$, $(2-p)p$ and $(2-p)^{2}$, the corner isomorphisms, and the recursion, and it states what the decomposition is not. It assumes *The Peirce Decomposition in Two Dimensions*, *The Peirce Basis and the Corners at $n=2$* and *Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum*.
 
-It defers the full general-order recursion to *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$*, and the general frame to *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*.
+It defers the full general-order recursion to *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$*, and the general frame to *The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$*.
 
 ## The Spectral Flag at Order Two
 
@@ -139,5 +139,5 @@ Each corner is isomorphic to $M_1(\mathbb{C})=\mathbb{C}$, so the corner recursi
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the corner decomposition of a finite-dimensional algebra and the corner isomorphisms.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the recursive use of the Peirce decomposition.
 - [The Peirce Decomposition in Two Dimensions](the-peirce-decomposition-in-two-dimensions.html), for the four spaces and the index rule.
-- [The Peirce Basis and the Corners at $n=2$](the-peirce-basis-and-the-corners-at-n-2.html), for the corners and the gauge.
+- [The Peirce Basis and the Corners at $n=2$](the-peirce-basis-and-the-corners-at-n-2.html), for the corners and the frame group.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the recursion at general order.

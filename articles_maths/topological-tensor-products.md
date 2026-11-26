@@ -35,7 +35,7 @@ $$
 
 the infimum over all finite representations of $u$; this is a norm on $E \otimes F$ generating the projective topology, and its completion is $E\widehat{\otimes}_\pi F$.
 
-**Proof.** The formula defines a seminorm by the standard homogeneity and subadditivity computation, and it is the gauge of the convex balanced hull of $\{x \otimes y : \lVert x\rVert \leq 1, \lVert y\rVert \leq 1\}$; it is a norm because $\lVert x\otimes y\rVert_\pi = \lVert x\rVert\lVert y\rVert$ for elementary tensors and the norm is non-degenerate on the algebraic tensor product. The topology it generates is the projective topology by the universal property, since it is the finest norm making $\otimes$ a contraction.
+**Proof.** The formula defines a seminorm by the standard homogeneity and subadditivity computation, and it is the frame group of the convex balanced hull of $\{x \otimes y : \lVert x\rVert \leq 1, \lVert y\rVert \leq 1\}$; it is a norm because $\lVert x\otimes y\rVert_\pi = \lVert x\rVert\lVert y\rVert$ for elementary tensors and the norm is non-degenerate on the algebraic tensor product. The topology it generates is the projective topology by the universal property, since it is the finest norm making $\otimes$ a contraction.
 
 **Example (sequence identifications).** The projective tensor product of $\ell^1$ with a Banach space $E$ is the space of summable sequences in $E$:
 

@@ -129,7 +129,7 @@ is profinite, with $\mathbb{Z}$ dense in it.
 
 **Proposition.** The locally convex topology is the coarsest topology making $V$ a topological vector space and every $p \in \mathcal{P}$ continuous. It is Hausdorff if and only if for every $x \neq 0$ there is $p \in \mathcal{P}$ with $p(x) \neq 0$. A topological vector space is **locally convex**, meaning that every point has a neighbourhood basis of convex sets, exactly when its topology arises from a family of seminorms.
 
-*Proof.* The sets described form a neighbourhood basis for a group topology with the stated continuity; Hausdorffness is the separation statement, and the converse direction is a standard reconstruction of seminorms from a locally convex topology by gauge functions.
+*Proof.* The sets described form a neighbourhood basis for a group topology with the stated continuity; Hausdorffness is the separation statement, and the converse direction is a standard reconstruction of seminorms from a locally convex topology by frame group functions.
 
 ### Fréchet Spaces
 

@@ -1,10 +1,10 @@
-# __The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$__
+# __The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$__
 
 ## Introduction
 
-**A root fixes the flag, and a frame fixes one vector in each line of the flag; the freedom in that choice is a torus, one parameter per simple nilpotent.** The root therefore gives the idempotents and the lines, and the gauge gives the vectors and the units. The two together are the frame.
+**A root fixes the flag, and a frame fixes one vector in each line of the flag; the freedom in that choice is a torus, one parameter per simple nilpotent.** The root therefore gives the idempotents and the lines, and the frame group gives the vectors and the units. The two together are the frame.
 
-The article constructs the frame from a basis adapted to the spectral flag, states the matrix-unit rule, isolates the simple nilpotents $E_{k,k+1}$, computes the gauge action and its cocycle, and counts the parameters: $n(n-1)$ complex from the root and $n-1$ complex from the gauge. At $n=2$ the count is four real and two real, the six real dimensions of the biquaternion frame. The article also identifies the older "second root" with a point of the gauge, which is the precise correction of the biquaternion presentation.
+The article constructs the frame from a basis adapted to the spectral flag, states the matrix-unit rule, isolates the simple nilpotents $E_{k,k+1}$, computes the action of the frame group and its cocycle, and counts the parameters: $n(n-1)$ complex from the root and $n-1$ complex from the frame group. At $n=2$ the count is four real and two real, the six real dimensions of the biquaternion frame. The article also identifies the older "second root" with a point of the frame group, which is the precise correction of the biquaternion presentation.
 
 ## The Adapted Frame
 
@@ -58,7 +58,7 @@ The nilpotents $N_k$ are the **simple nilpotents** of the frame. There are $n-1$
 
 **The chain is the Peirce chain.** The nilpotent $N_k$ maps the line $V_{k+1}$ to the line $V_k$ and kills the other lines. In the Peirce notation of *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$*, $N_k$ is a nonzero element of $A_{k,k+1}$. The chain $N_1,\dots,N_{n-1}$ is the sequence of maps that steps down the flag.
 
-## The Gauge Action
+## The Action of the Frame Group
 
 **A rescaling of the frame vectors rescales the matrix units by the ratio of the two scales.** Replace $v_k$ by $t_kv_k$ with $t_k\in\mathbb{C}^{\times}$. The dual basis is replaced by $t_k^{-1}\ell_k$, so
 
@@ -84,7 +84,7 @@ $$
 T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1}.
 $$
 
-This is the **gauge group** of the frame.
+This is the **frame group** of the frame.
 
 **One parameter per simple nilpotent.** Put
 
@@ -104,7 +104,7 @@ $$
 E_{kl}\longmapsto\lambda_k\lambda_{k+1}\cdots\lambda_{l-1}\,E_{kl},\qquad k<l,
 $$
 
-and the inverse product for $k>l$. The composite $E_{kl}$ has no independent scale: its scale is the product of the consecutive ones. This is the **cocycle** of the gauge, and it is the reason the gauge has $n-1$ parameters rather than one per corner.
+and the inverse product for $k>l$. The composite $E_{kl}$ has no independent scale: its scale is the product of the consecutive ones. This is the **cocycle** of the frame group, and it is the reason the frame group has $n-1$ parameters rather than one per corner.
 
 **The cocycle forbids an extra parameter.** Suppose that in addition to the $t_k$ one tries to rescale a single composite $E_{kl}$, $k<l$, by an independent $\mu$. The product rule forces
 
@@ -112,22 +112,22 @@ $$
 E_{kl}=E_{k,k+1}\cdots E_{l-1,l},
 $$
 
-so the scale of $E_{kl}$ is the product of the scales of the factors, and $\mu$ is determined by them. Equivalently, the gauge action on the invertibles is the coboundary of the $0$-cochain $t$, and a coboundary has no freedom beyond the cochain modulo constants.
+so the scale of $E_{kl}$ is the product of the scales of the factors, and $\mu$ is determined by them. Equivalently, the action of the frame group on the invertibles is the coboundary of the $0$-cochain $t$, and a coboundary has no freedom beyond the cochain modulo constants.
 
-**The idempotents do not depend on the gauge.** The parameters $\lambda_k$ act on the nilpotents and on the off-diagonal units, never on the diagonal. In particular the projectors $P_k$ and the spectral decomposition $H=\sum_k\omega_kP_k$ are gauge invariant. A statement that depends on $\lambda$ is a statement about a frame, not about the algebra or the idempotents.
+**The idempotents do not depend on the frame group.** The parameters $\lambda_k$ act on the nilpotents and on the off-diagonal units, never on the diagonal. In particular the projectors $P_k$ and the spectral decomposition $H=\sum_k\omega_kP_k$ are frame invariant. A statement that depends on $\lambda$ is a statement about a frame, not about the algebra or the idempotents.
 
 ## The Count of the Frame
 
 **A frame modulo overall scale has $n^{2}-1$ complex dimensions.** The set of bases of $\mathbb{C}^{n}$ is $GL_n(\mathbb{C})$, of complex dimension $n^{2}$; two bases that differ by an overall scalar give the same matrix units, so the frame is a point of $PGL_n(\mathbb{C})$, of complex dimension $n^{2}-1$.
 
-**The root and the gauge split this count.** The map from frames to roots, $(v_k)\mapsto H=\sum_k\omega_kE_{kk}$, has fibre the torus $T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1}$: the frames that give the same root are exactly the rescalings of the $v_k$. Hence
+**The root and the frame group split this count.** The map from frames to roots, $(v_k)\mapsto H=\sum_k\omega_kE_{kk}$, has fibre the torus $T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1}$: the frames that give the same root are exactly the rescalings of the $v_k$. Hence
 
 $$
 \underbrace{n^{2}-1}_{\text{frame}/\,\mathbb{C}^{\times}}
 =
 \underbrace{n(n-1)}_{\text{root}}
 +
-\underbrace{n-1}_{\text{gauge}} .
+\underbrace{n-1}_{\text{frame group}} .
 $$
 
 **The case $n=2$ gives the six real dimensions.** For $n=2$,
@@ -136,18 +136,18 @@ $$
 n^{2}-1=3,\qquad n(n-1)=2,\qquad n-1=1,
 $$
 
-all complex. In real dimensions the frame modulo scale has $6$, the root has $4$ and the gauge has $2$: the four real parameters of the biquaternion root and the two real parameters of the complex number $\lambda$. This is the six-dimensional basis of the biquaternion frame.
+all complex. In real dimensions the frame modulo scale has $6$, the root has $4$ and the frame group has $2$: the four real parameters of the biquaternion root and the two real parameters of the complex number $\lambda$. This is the six-dimensional basis of the biquaternion frame.
 
 **The general case.** For $n=3,4,5,6$ the complex counts are
 
-| $n$ | frame $/\,\mathbb{C}^{\times}$ | root | gauge |
+| $n$ | frame $/\,\mathbb{C}^{\times}$ | root | frame group |
 |---|---|---|---|
 | $3$ | $8$ | $6$ | $2$ |
 | $4$ | $15$ | $12$ | $3$ |
 | $5$ | $24$ | $20$ | $4$ |
 | $6$ | $35$ | $30$ | $5$ |
 
-The root column is the dimension of $\mathcal{R}_n$ in *Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$*; the gauge column is $n-1$, one per simple nilpotent.
+The root column is the dimension of $\mathcal{R}_n$ in *Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$*; the frame group column is $n-1$, one per simple nilpotent.
 
 ## The Companion Nilpotents at $n=2$
 
@@ -159,9 +159,9 @@ $$
 
 These are the two companion nilpotents of *The Companion Nilpotents of the Biquaternion Algebra*, written in the frame. They satisfy $N_1^{2}=(N_1^{\mathsf T})^{2}=0$, $N_1N_1^{\mathsf T}=P_1$ and $N_1^{\mathsf T}N_1=P_2$. The last two identities are the biquaternion relations $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$ and $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-}$, and the general rule behind them is $E_{kl}E_{lk}=E_{kk}$.
 
-**The basis is the choice of one of the two elements.** Choosing $N_1$ fixes $N_1^{\mathsf T}$ by the normalisation, which is the bijection of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, §*Existence: The Nilpotent Route*. The gauge is the reciprocal rescaling $N_1\mapsto\lambda N_1$, $N_1^{\mathsf T}\mapsto\lambda^{-1}N_1^{\mathsf T}$, and it is the whole freedom.
+**The basis is the choice of one of the two elements.** Choosing $N_1$ fixes $N_1^{\mathsf T}$ by the normalisation, which is the bijection of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, §*Existence: The Nilpotent Route*. The frame group is the reciprocal rescaling $N_1\mapsto\lambda N_1$, $N_1^{\mathsf T}\mapsto\lambda^{-1}N_1^{\mathsf T}$, and it is the whole freedom.
 
-**An involution anticommuting with $H$ is one point of that gauge.** Let $R$ satisfy
+**An involution anticommuting with $H$ is one point of that frame group.** Let $R$ satisfy
 
 $$
 R^{2}=I,\qquad RH=-HR .
@@ -173,11 +173,11 @@ $$
 R=aE_{12}+a^{-1}E_{21},\qquad a\in\mathbb{C}^{\times}.
 $$
 
-Under the gauge $E_{12}\mapsto\lambda E_{12}$, $E_{21}\mapsto\lambda^{-1}E_{21}$, the element $R$ is carried to $a\lambda E_{12}+a^{-1}\lambda^{-1}E_{21}$, which is the same family with $a$ replaced by $a\lambda$. The orbit of $R$ is the whole gauge fibre, and the parameter $a$ is gauge, not a root.
+Under the frame group $E_{12}\mapsto\lambda E_{12}$, $E_{21}\mapsto\lambda^{-1}E_{21}$, the element $R$ is carried to $a\lambda E_{12}+a^{-1}\lambda^{-1}E_{21}$, which is the same family with $a$ replaced by $a\lambda$. The orbit of $R$ is the whole frame fibre, and the parameter $a$ is frame group, not a root.
 
 **What $R$ carries and what it does not.** It names one nonzero element in each mixed Peirce line, $R$ having nonzero entries exactly in $A_{12}$ and $A_{21}$, and it normalises the two reciprocally. It supplies no idempotent: those are $P_\pm=(I\pm H)/2$, produced by $H$ alone. So $R$ is a shorthand for a normalised pair $(N_1,N_1^{\mathsf T})$, and the pair is the basis. The biquaternion articles state the construction in the pair, as the choice of a nonzero element of the mixed line; they introduce no element beyond the root and the basis.
 
-**For $n>2$ there is no single such element.** The gauge has $n-1$ complex parameters, and the analogue of $R$ is the full torus of rescalings of the $v_k$. An element anticommuting with $H$ can be built at $n=4$, but its orbit has dimension two and does not carry the third parameter. No single element plays the role that $R$ plays at $n=2$, because the flag has more than two lines.
+**For $n>2$ there is no single such element.** The frame group has $n-1$ complex parameters, and the analogue of $R$ is the full torus of rescalings of the $v_k$. An element anticommuting with $H$ can be built at $n=4$, but its orbit has dimension two and does not carry the third parameter. No single element plays the role that $R$ plays at $n=2$, because the flag has more than two lines.
 
 ## An Explicit Frame for $n=3$
 
@@ -201,7 +201,7 @@ $$
 
 which is the cocycle at work: the scale of $E_{13}$ is the product of the scales of $N_1$ and $N_2$.
 
-**A gauge transformation.** Rescale $v_1\mapsto t_1v_1$, $v_2\mapsto t_2v_2$ and $v_3\mapsto t_3v_3$. Then
+**A frame transformation.** Rescale $v_1\mapsto t_1v_1$, $v_2\mapsto t_2v_2$ and $v_3\mapsto t_3v_3$. Then
 
 $$
 N_1\longmapsto\frac{t_1}{t_2}N_1=\lambda_1N_1,\qquad
@@ -218,7 +218,7 @@ The two parameters $\lambda_1,\lambda_2$ are independent; the third scale $\lamb
 
 ## Summary
 
-An adapted frame $(v_1,\dots,v_n)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\omega_kE_{kk}$. The simple nilpotents $N_k=E_{k,k+1}$, $n-1$ of them, square to zero and generate the frame; every composite is their product. The gauge $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^{n-1}$ with one parameter per simple nilpotent, subject to the cocycle that fixes the composites. The frame modulo scale has $n^{2}-1$ complex dimensions, split as $n(n-1)$ for the root and $n-1$ for the gauge; at $n=2$ this is $6=4+2$ real, the biquaternion count. An involution of the frame anticommuting with $H$ is a point of this gauge, not a second primitive.
+An adapted frame $(v_1,\dots,v_n)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\omega_kE_{kk}$. The simple nilpotents $N_k=E_{k,k+1}$, $n-1$ of them, square to zero and generate the frame; every composite is their product. The frame group $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^{n-1}$ with one parameter per simple nilpotent, subject to the cocycle that fixes the composites. The frame modulo scale has $n^{2}-1$ complex dimensions, split as $n(n-1)$ for the root and $n-1$ for the frame group; at $n=2$ this is $6=4+2$ real, the biquaternion count. An involution of the frame anticommuting with $H$ is a point of this frame group, not a second primitive.
 
 ## Summary of Notation
 
@@ -228,8 +228,8 @@ An adapted frame $(v_1,\dots,v_n)$ gives the matrix units $E_{kl}=v_k\ell_l$, wi
 | $\ell_k$ | the dual functional, $\ell_k(v_m)=\delta_{km}$ |
 | $E_{kl}=v_k\ell_l$ | the matrix unit of the frame |
 | $N_k=E_{k,k+1}$ | the simple nilpotent, $N_k^{2}=0$ |
-| $t_k$ | the gauge scale of $v_k$ |
-| $\lambda_k=t_kt_{k+1}^{-1}$ | the gauge parameter on $N_k$ |
+| $t_k$ | the frame group scale of $v_k$ |
+| $\lambda_k=t_kt_{k+1}^{-1}$ | the frame parameter on $N_k$ |
 | $T$ | the torus of rescalings, effective $(\mathbb{C}^{\times})^{n-1}$ |
 
 ## Further Reading
@@ -240,7 +240,7 @@ An adapted frame $(v_1,\dots,v_n)$ gives the matrix units $E_{kl}=v_k\ell_l$, wi
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the corners that the invertibles span.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion frame and the parameter $\lambda$.
 - [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for the pair $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$ that is $N_1,N_1^{\mathsf T}$ at $n=2$.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), the case $n=3$.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), the case $n=4$.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), the case $n=5$.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), the case $n=6$.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m3c.html), the case $n=3$.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m4c.html), the case $n=4$.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m5c.html), the case $n=5$.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m6c.html), the case $n=6$.

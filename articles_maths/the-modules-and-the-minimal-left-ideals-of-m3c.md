@@ -18,7 +18,7 @@ of a rank-one idempotent $P$, and identifies the module that carries the princip
 
 The article is the module-theoretic companion of *The Peirce Decomposition of $M_{3}(\mathbb{C})$*. The Peirce decomposition is a decomposition of the algebra into lines; the present article is about the modules over the algebra, which are different objects. In particular, a minimal left ideal is a three-dimensional module, not a one-dimensional Peirce line, and it is not a spinor. For $n=3$ the carrier is the highest-weight-$1$ module $\mathbb{C}^{3}=\operatorname{sym}^{2}(\mathbb{C}^{2})$; only the case $n=2$ has a two-dimensional spinorial module. The distinction is stated once here and used throughout the category.
 
-The construction is root-first. The idempotents $P_{1},P_{2},P_{3}$ are those of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*; the frame $E_{ij}$ and the gauge are those of *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$* and *The Two-Parameter Gauge of $M_3(\mathbb{C})$*.
+The construction is root-first. The idempotents $P_{1},P_{2},P_{3}$ are those of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*; the frame $E_{ij}$ and the frame group are those of *The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$* and *The Two-Parameter Frame Group of $M_3(\mathbb{C})$*.
 
 ## The Minimal Left Ideal
 
@@ -148,11 +148,11 @@ $$
 M_{3}P_{k}\longrightarrow M_{3}P_{l},\qquad x\longmapsto xE_{kl}.
 $$
 
-**The exchange is not canonical.** The matrix unit $E_{kl}$ is determined only up to the gauge
+**The exchange is not canonical.** The matrix unit $E_{kl}$ is determined only up to the frame group
 $$
 E_{kl}\longmapsto \frac{t_{k}}{t_{l}}E_{kl},
 $$
-as in *The Two-Parameter Gauge of $M_3(\mathbb{C})$*. The isomorphism is multiplied by the scalar $t_{k}/t_{l}$, so the set of isomorphisms $M_{3}P_{k}\to M_{3}P_{l}$ is a torsor under $\mathbb{C}^{\times}$. The choice of an isomorphism is a choice of normalized frame, not a canonical structure of the algebra. The three minimal left ideals are isomorphic, but not canonically isomorphic.
+as in *The Two-Parameter Frame Group of $M_3(\mathbb{C})$*. The isomorphism is multiplied by the scalar $t_{k}/t_{l}$, so the set of isomorphisms $M_{3}P_{k}\to M_{3}P_{l}$ is a torsor under $\mathbb{C}^{\times}$. The choice of an isomorphism is a choice of normalized frame, not a canonical structure of the algebra. The three minimal left ideals are isomorphic, but not canonically isomorphic.
 
 **The general minimal left ideal.** Every minimal left ideal of $M_{3}$ is of the form $M_{3}Q$ for a rank-one idempotent $Q$. Every rank-one idempotent is conjugate to $P_{1}$: if $Q$ has image the line $\mathbb{C}v$ and kernel a plane, choose $g\in GL_{3}$ with $g e_{1}=v$ and $g$ mapping the standard plane to the kernel; then $Q=gP_{1}g^{-1}$. The map
 $$
@@ -228,7 +228,7 @@ $$
 $$
 The Peirce line $A_{kl}$ is the line $\mathbb{C}e_{k}\otimes e_{l}^{*}$; the left ideal $M_{3}P_{k}$ is $\mathbb{C}^{3}\otimes e_{k}^{*}$; the right ideal $P_{k}M_{3}$ is $e_{k}\otimes(\mathbb{C}^{3})^{*}$.
 
-The three minimal left ideals $M_{3}P_{k}$ are isomorphic, but not canonically: the exchange $x\mapsto xE_{kl}$ is defined up to the gauge $E_{kl}\mapsto(t_{k}/t_{l})E_{kl}$, a $\mathbb{C}^{\times}$-torsor.
+The three minimal left ideals $M_{3}P_{k}$ are isomorphic, but not canonically: the exchange $x\mapsto xE_{kl}$ is defined up to the frame group $E_{kl}\mapsto(t_{k}/t_{l})E_{kl}$, a $\mathbb{C}^{\times}$-torsor.
 
 The Peirce carrier of a rank-one idempotent $P$ is
 $$
@@ -266,7 +266,7 @@ The carrier of the principal $\mathfrak{sl}_2$ is $M_{3}P_{1}\cong\mathbb{C}^{3}
 
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the nine lines and the coarse corners.
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the matrix units and the tensor product.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the normalized frame and the exchange.
-- [The Two-Parameter Gauge of $M_3(\mathbb{C})$](the-two-parameter-gauge-of-m3c.html), for the $\mathbb{C}^{\times}$-torsor of the exchange.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m3c.html), for the normalized frame and the exchange.
+- [The Two-Parameter Frame Group of $M_3(\mathbb{C})$](the-two-parameter-frame-group-of-m3c.html), for the $\mathbb{C}^{\times}$-torsor of the exchange.
 - [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the $n=2$ case and the spinorial module.
 - [Modules over an Algebra](modules-over-an-algebra.html), for the general theory of modules and simple modules.

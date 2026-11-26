@@ -210,11 +210,11 @@ Z(A)\cap GL_6\cong(\mathbb{C}^\times)^6,
 \text{image of }Z(A)\cap GL_6\text{ in }PGL_6\cong(\mathbb{C}^\times)^5 .
 $$
 
-The first is the algebra $\mathbb{C}^6$; the second is its group of invertibles, the torus of dimension six; the third is the gauge torus of dimension five.
+The first is the algebra $\mathbb{C}^6$; the second is its group of invertibles, the torus of dimension six; the third is the frame torus of dimension five.
 
 **Proof.** If the spectrum is simple, $A$ is diagonalizable and $\mathbb{C}[A]$ is the algebra of diagonal matrices in the eigenbasis, isomorphic to $\mathbb{C}^6$. Its units are the diagonal matrices with nonzero entries, $(\mathbb{C}^\times)^6$. The projective quotient removes the overall scalar, leaving $(\mathbb{C}^\times)^5$.
 
-**Corollary (the root).** For the root $H$ of *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$*, the centralizer in $GL_6$ is the maximal torus $(\mathbb{C}^\times)^6$, of dimension six, and the gauge is its projective quotient, of dimension five.
+**Corollary (the root).** For the root $H$ of *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$*, the centralizer in $GL_6$ is the maximal torus $(\mathbb{C}^\times)^6$, of dimension six, and the frame group is its projective quotient, of dimension five.
 
 **Proof.** $H$ has simple spectrum and $\chi_H=t^6-1$, so it is cyclic. Its centralizer is the diagonal torus in the eigenbasis.
 
@@ -369,7 +369,7 @@ $$
 \boxed{\ \dim S_\lambda=30+r,\qquad \text{simple spectrum }36,\qquad \text{one root }31 .\ }
 $$
 
-A cyclic element has centralizer $\mathbb{C}[A]\cong\mathbb{C}[t]/(m_A)$, of dimension $6$; with simple spectrum this is $\mathbb{C}^6$, whose group of invertibles is the maximal torus. Its orbit has dimension $30$. The root $H$ is cyclic, and its gauge is the projective centralizer of dimension $5$.
+A cyclic element has centralizer $\mathbb{C}[A]\cong\mathbb{C}[t]/(m_A)$, of dimension $6$; with simple spectrum this is $\mathbb{C}^6$, whose group of invertibles is the maximal torus. Its orbit has dimension $30$. The root $H$ is cyclic, and its frame group is the projective centralizer of dimension $5$.
 
 On the simple stratum the spectral projectors are the Lagrange projectors $P_i=\prod_{j\neq i}(A-\lambda_j)/(\lambda_i-\lambda_j)$; at a repeated root the individual projectors have poles, the cluster projectors extend, and the nilpotent part is the residue.
 

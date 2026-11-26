@@ -17,7 +17,7 @@ $$
 
 an operator between the space of operators and the target; on the dual it is the functional $f\mapsto f(u)$ that defines the state space, and on the operators it is the map whose norm is the order-unit norm of a positive operator. The two maps are transposes of each other, and together they are what the order unit *is* as an operator: a vector that probes the space and its operators.
 
-The article collects these facts and draws their consequences. The **order-unit norm** is the gauge of the interval $[-u,u]$, hence the operator norm induced by the evaluation at $u$; the **order topology** is the initial topology of the evaluation maps, so it is determined by the order unit alone; and the **state space** is the intersection of the positive cone of the dual with the level set $\mathrm{ev}_u = 1$, a weak-* compact base. The order unit is therefore not one more datum beside the order and the topology but the single element from which the other two are read, and this is the sense in which an **order-unit space** is a complete description of its ordered normed structure.
+The article collects these facts and draws their consequences. The **order-unit norm** is the frame group of the interval $[-u,u]$, hence the operator norm induced by the evaluation at $u$; the **order topology** is the initial topology of the evaluation maps, so it is determined by the order unit alone; and the **state space** is the intersection of the positive cone of the dual with the level set $\mathrm{ev}_u = 1$, a weak-* compact base. The order unit is therefore not one more datum beside the order and the topology but the single element from which the other two are read, and this is the sense in which an **order-unit space** is a complete description of its ordered normed structure.
 
 The order, the order-unit norm, the order topology and the state space are those of *Ordered Vector Spaces and the Order Unit*; the positivity of the maps is that of *Positive Operators on an Ordered Space*; the extreme points of the state space are *The Cone of Positive Operators* and *Cones, Extremal Rays and the Choquet Theory*; the weak-* topology and the polar are *Duality Theory*, and the bounded operators are *Bounded Operators and the Operator Norm*. The order-unit norm is the notation of *Jordan Algebras and the Positive Cone*. The multiplication operators of an ordered **algebra** — where the order unit is the algebra identity and acts by multiplication — are deferred to *The Left and Right Multiplication Operators on an Ordered Algebra* later in this category, and the Saks space and the order-unit semigroup are not entered.
 
@@ -61,9 +61,9 @@ and it is a base of the cone $E^*_+$.
 
 ## The Order-Unit Norm as an Operator Norm
 
-### The Gauge of the Order Interval
+### The Frame Group of the Order Interval
 
-**Proposition (the norm is the gauge).** The order-unit norm of *Ordered Vector Spaces and the Order Unit* is the **gauge** of the order interval $[-u,u]$,
+**Proposition (the norm is the frame group).** The order-unit norm of *Ordered Vector Spaces and the Order Unit* is the **frame group** of the order interval $[-u,u]$,
 
 $$
 \boxed{\;\|x\|_u = \inf\{\lambda>0 : x\in\lambda[-u,u]\}\;},
@@ -71,7 +71,7 @@ $$
 
 and the interval is the closed unit ball, convex, symmetric about the origin and absorbing.
 
-*Proof.* The set $\{\lambda>0 : x\in\lambda[-u,u]\}$ is exactly $\{\lambda>0 : -\lambda u\leq x\leq\lambda u\}$, which is the set in the definition of the norm; the gauge of a convex absorbing symmetric set is the norm of the set, and the interval has these properties because the cone is convex, pointed and has $u$ as an order unit.
+*Proof.* The set $\{\lambda>0 : x\in\lambda[-u,u]\}$ is exactly $\{\lambda>0 : -\lambda u\leq x\leq\lambda u\}$, which is the set in the definition of the norm; the frame group of a convex absorbing symmetric set is the norm of the set, and the interval has these properties because the cone is convex, pointed and has $u$ as an order unit.
 
 **Proposition (the order unit norm of a positive operator is the norm of its value at the unit).** For positive $T\in L_+(E,F)$,
 
@@ -91,13 +91,13 @@ $$
 \boxed{\;\|x\|_u = \sup\bigl\{\lvert f(x)\rvert : f\in S\bigr\}\;}.
 $$
 
-*Proof.* Positivity is detected by the states: an element $y$ lies in $E_+$ if and only if $f(y)\geq0$ for every $f\in S$, by the order-unit form of the Hahn–Banach separation theorem of *Duality Theory* applied to a point outside the cone. Hence for $x\in E$ and $\lambda>0$ the two inequalities $x\leq\lambda u$ and $-x\leq\lambda u$ are equivalent to $f(x)\leq\lambda$ and $-f(x)\leq\lambda$ for every state, that is, to $\lvert f(x)\rvert\leq\lambda$ for every state. Taking the infimum over $\lambda$ and using the gauge formula for the norm gives the displayed identity.
+*Proof.* Positivity is detected by the states: an element $y$ lies in $E_+$ if and only if $f(y)\geq0$ for every $f\in S$, by the order-unit form of the Hahn–Banach separation theorem of *Duality Theory* applied to a point outside the cone. Hence for $x\in E$ and $\lambda>0$ the two inequalities $x\leq\lambda u$ and $-x\leq\lambda u$ are equivalent to $f(x)\leq\lambda$ and $-f(x)\leq\lambda$ for every state, that is, to $\lvert f(x)\rvert\leq\lambda$ for every state. Taking the infimum over $\lambda$ and using the frame group formula for the norm gives the displayed identity.
 
 **Proposition (the state space as an operator level set).** With $S = \mathrm{ev}_u^{-1}(1)\cap E^*_+$ as above, the evaluation $f\mapsto f(x)$ embeds $E$ into the space of affine continuous functions on $S$, and it is an isometry onto its image when the norm is the order-unit norm. When $E$ is a Banach space in that norm the state space is weak-* compact and convex, so it has extreme points, the **pure states**, and the image of $E$ in the affine continuous functions on $S$ is norm closed and generally a proper subspace; it is all of the continuous affine functions exactly in the case in which $E$ is recovered from its state space, which is the Kadison representation theorem and is quoted here.
 
 *Proof.* The embedding is linear and its norm is the order-unit norm by the previous proposition. Compactness of $S$ is the Banach–Alaoglu theorem applied to the polar of the unit ball; convexity is the linearity of the defining conditions; the extreme points exist by the Krein–Milman theorem of *Convex Sets and the Convex Hull*. The identification of the image is the Kadison representation theorem; the integral representation behind it is *Cones, Extremal Rays and the Choquet Theory*.
 
-**Remark (the order unit is the whole structure).** The three data — the cone $E_+$, the order unit $u$, and the order-unit norm — determine one another: the cone is recovered as $\{x : \|x - \lambda u\|_u\leq\lambda \text{ for all large } \lambda\}$, the unit is recovered as the element of norm one that is interior to the cone, and the norm is the gauge of the interval. An **order-unit space** is thus a Banach space together with either of the three, and the passage between them is the content of this article.
+**Remark (the order unit is the whole structure).** The three data — the cone $E_+$, the order unit $u$, and the order-unit norm — determine one another: the cone is recovered as $\{x : \|x - \lambda u\|_u\leq\lambda \text{ for all large } \lambda\}$, the unit is recovered as the element of norm one that is interior to the cone, and the norm is the frame group of the interval. An **order-unit space** is thus a Banach space together with either of the three, and the passage between them is the content of this article.
 
 ## Worked Cases
 
@@ -111,7 +111,7 @@ For $E = H_n(\mathbb{R})$ with $u = 1$ the embedding is the inclusion of the sca
 
 ## Summary
 
-An order unit acts by two maps. The **embedding** $\iota_u:\mathbb{R}\to E$, $1\mapsto u$, is injective, positive and an order isomorphism onto its image; its **transpose** is the **evaluation** $\mathrm{ev}_u$, which on the dual is $f\mapsto f(u)$ and on the operators is $T\mapsto Tu$, positive in each case and with kernel the maps vanishing at $u$. The **order-unit norm** is the **gauge** of the interval $[-u,u]$ and the operator norm induced by the evaluation: $\|T\| = \|Tu\|_v$ for a positive operator, and $\|x\|_u = \sup\{\lvert f(x)\rvert : f\in S\}$ for every element. The **order topology** is the initial topology of the evaluations, so it is determined by the order unit alone; the **state space** is the level set $\mathrm{ev}_u = 1$ in the positive cone of the dual, a weak-* compact convex base whose extreme points are the pure states. The cone, the order unit and the norm determine one another, and an order-unit space is the resulting Banach space together with any one of them. The structure is *Ordered Vector Spaces and the Order Unit*, the positivity is *Positive Operators on an Ordered Space*, the extreme points are *The Cone of Positive Operators* and *Cones, Extremal Rays and the Choquet Theory*, the duality is *Duality Theory*, and the algebra case, where the order unit multiplies, is *The Left and Right Multiplication Operators on an Ordered Algebra* later in this category.
+An order unit acts by two maps. The **embedding** $\iota_u:\mathbb{R}\to E$, $1\mapsto u$, is injective, positive and an order isomorphism onto its image; its **transpose** is the **evaluation** $\mathrm{ev}_u$, which on the dual is $f\mapsto f(u)$ and on the operators is $T\mapsto Tu$, positive in each case and with kernel the maps vanishing at $u$. The **order-unit norm** is the **frame group** of the interval $[-u,u]$ and the operator norm induced by the evaluation: $\|T\| = \|Tu\|_v$ for a positive operator, and $\|x\|_u = \sup\{\lvert f(x)\rvert : f\in S\}$ for every element. The **order topology** is the initial topology of the evaluations, so it is determined by the order unit alone; the **state space** is the level set $\mathrm{ev}_u = 1$ in the positive cone of the dual, a weak-* compact convex base whose extreme points are the pure states. The cone, the order unit and the norm determine one another, and an order-unit space is the resulting Banach space together with any one of them. The structure is *Ordered Vector Spaces and the Order Unit*, the positivity is *Positive Operators on an Ordered Space*, the extreme points are *The Cone of Positive Operators* and *Cones, Extremal Rays and the Choquet Theory*, the duality is *Duality Theory*, and the algebra case, where the order unit multiplies, is *The Left and Right Multiplication Operators on an Ordered Algebra* later in this category.
 
 ## Summary of Notation
 
@@ -120,7 +120,7 @@ An order unit acts by two maps. The **embedding** $\iota_u:\mathbb{R}\to E$, $1\
 | $\iota_u:\mathbb{R}\to E$ | Embedding of the scalars at the order unit, $\iota_u(1) = u$ |
 | $\mathrm{ev}_u(T) = Tu$ | Evaluation at the order unit |
 | $\iota_u'(f) = f(u)$ | Transpose of the embedding, the evaluation on the dual |
-| $\|x\|_u = \inf\{\lambda>0 : x\in\lambda[-u,u]\}$ | Order-unit norm as the gauge of the interval |
+| $\|x\|_u = \inf\{\lambda>0 : x\in\lambda[-u,u]\}$ | Order-unit norm as the frame group of the interval |
 | $\|T\| = \|Tu\|_v$ | Norm of a positive operator is the norm of its value at the unit |
 | $\|x\|_u = \sup_{f\in S}\lvert f(x)\rvert$ | Norm as the supremum over the state space |
 | $S = \mathrm{ev}_u^{-1}(1)\cap E^*_+$ | State space, a weak-* compact base |

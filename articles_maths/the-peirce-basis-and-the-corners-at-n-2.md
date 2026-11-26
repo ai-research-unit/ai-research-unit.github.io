@@ -4,9 +4,9 @@
 
 **A rank-one idempotent $e$, one nonzero element $\upsilon_{+}$ of the corner $A_{12}$, and the partner $\upsilon_{-}$ fixed by $\upsilon_{+}\upsilon_{-}=e$ form a Peirce basis $(e,\upsilon_{+},\upsilon_{-},1-e)$ in which the multiplication is the multiplication of the matrix units.**
 
-The article builds the basis, states the eight nonzero products that define it, proves that the gauge freedom is exactly one reciprocal rescaling $\upsilon_{+}\mapsto\lambda\upsilon_{+}$, $\upsilon_{-}\mapsto\lambda^{-1}\upsilon_{-}$ with $\lambda\in\mathbb{C}^{\times}$, reads the corners in the basis, and identifies the basis with the system of matrix units $E_{11}$, $E_{12}$, $E_{21}$, $E_{22}$. It assumes *The Peirce Decomposition in Two Dimensions* and *Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum*, and it takes the nilpotent background from *The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$*.
+The article builds the basis, states the eight nonzero products that define it, proves that the frame freedom is exactly one reciprocal rescaling $\upsilon_{+}\mapsto\lambda\upsilon_{+}$, $\upsilon_{-}\mapsto\lambda^{-1}\upsilon_{-}$ with $\lambda\in\mathbb{C}^{\times}$, reads the corners in the basis, and identifies the basis with the system of matrix units $E_{11}$, $E_{12}$, $E_{21}$, $E_{22}$. It assumes *The Peirce Decomposition in Two Dimensions* and *Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum*, and it takes the nilpotent background from *The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$*.
 
-It defers the frame in general dimension to *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$* and the recursion to *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$*.
+It defers the frame in general dimension to *The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$* and the recursion to *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$*.
 
 ## The Frame
 
@@ -71,15 +71,15 @@ $$
 
 **Proof.** The product of the rescaled pair is $\lambda\lambda^{-1}\upsilon_{+}\upsilon_{-}=e$, so every such rescaling gives a companion pair; conversely, if $(\upsilon_{+}',\upsilon_{-}')$ is another pair then $\upsilon_{+}'=\lambda\upsilon_{+}$ for some $\lambda\ne0$ because the corner is a line, and the normalisation forces $\upsilon_{-}'=\lambda^{-1}\upsilon_{-}$.
 
-**Corollary.** The gauge is one complex parameter, and the frame itself has no gauge freedom once $e$ is fixed.
+**Corollary.** The frame group has one complex parameter, and the frame itself has no frame freedom once $e$ is fixed.
 
 **Proof.** The idempotent $e$ is fixed and the complement is determined by it; only the choice of the generator of the mixed line and its reciprocal partner is free.
 
-**Corollary.** The element $\upsilon_{+}\upsilon_{-}$ and the element $\upsilon_{-}\upsilon_{+}$ are gauge invariant, and the two products $\upsilon_{+}^{2}$ and $\upsilon_{-}^{2}$ vanish in every gauge.
+**Corollary.** The element $\upsilon_{+}\upsilon_{-}$ and the element $\upsilon_{-}\upsilon_{+}$ are frame invariant, and the two products $\upsilon_{+}^{2}$ and $\upsilon_{-}^{2}$ vanish in every frame group.
 
 **Proof.** The first two products are $e$ and $f$ independently of $\lambda$, and the squares vanish because the mixed spaces are square-zero.
 
-**The gauge is what remains of the diagonal matrix of the diagonalisation.** A matrix that diagonalises an element is determined up to the diagonal rescalings, and at order two those rescalings act on the two mixed lines reciprocally.
+**The frame group is what remains of the diagonal matrix of the diagonalisation.** A matrix that diagonalises an element is determined up to the diagonal rescalings, and at order two those rescalings act on the two mixed lines reciprocally.
 
 **Proof.** Conjugating by a diagonal matrix $\operatorname{diag}(\lambda,\mu)$ multiplies $E_{12}$ by $\lambda\mu^{-1}$ and $E_{21}$ by $\mu\lambda^{-1}$; the normalisation $\upsilon_{+}\upsilon_{-}=e$ then forces $\mu=1$, leaving the single parameter $\lambda$.
 
@@ -128,7 +128,7 @@ The pair $(\upsilon_{+},\upsilon_{-})$ is determined up to the reciprocal rescal
 | $e,f$ | the two idempotents of the frame, $f=1-e$ |
 | $\upsilon_{+},\upsilon_{-}$ | the companion pair, $\upsilon_{+}\upsilon_{-}=e$ |
 | $A_{12},A_{21}$ | the mixed corners |
-| $\lambda$ | the gauge parameter in $\mathbb{C}^{\times}$ |
+| $\lambda$ | the frame parameter in $\mathbb{C}^{\times}$ |
 | $x_{0},x_{+},x_{-},x_{1}$ | the Peirce coordinates |
 
 ## Further Reading
@@ -137,4 +137,4 @@ The pair $(\upsilon_{+},\upsilon_{-})$ is determined up to the reciprocal rescal
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the frame and the gauge in the Peirce language.
 - [The Peirce Decomposition in Two Dimensions](the-peirce-decomposition-in-two-dimensions.html), for the four spaces that the basis linearises.
 - [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the same basis in the biquaternion language.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the frame carried to the general order.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html), for the frame carried to the general order.

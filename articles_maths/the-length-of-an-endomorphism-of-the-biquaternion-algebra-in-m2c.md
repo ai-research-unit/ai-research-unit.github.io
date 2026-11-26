@@ -172,9 +172,9 @@ because a product composes with a product into a product.
 
 **The steps.** Compute $c(M)$, factor it at its rank, $c=\sum_{k\le r}u_kv_k^{\mathsf T}$, read each vector as an element, and sum the $r$ products. The reconstruction of a random array of rank four in this way has residual $1.7\cdot10^{-15}$.
 
-**The gauge.** A factorisation can be replaced by $c=\sum_k(Gu)_k(G^{-1}v)_k^{\mathsf T}$ for every invertible $r\times r$ array $G$, so the decompositions of an operator of length $r$ form a stratum, and a question about *the* terms is a question about a choice.
+**The frame group.** A factorisation can be replaced by $c=\sum_k(Gu)_k(G^{-1}v)_k^{\mathsf T}$ for every invertible $r\times r$ array $G$, so the decompositions of an operator of length $r$ form a stratum, and a question about *the* terms is a question about a choice.
 
-**The balanced choice.** The singular decomposition of the array, $c=U\Sigma W^{\dagger}$, fixes the gauge up to phases and permutations.
+**The balanced choice.** The singular decomposition of the array, $c=U\Sigma W^{\dagger}$, fixes the frame group up to phases and permutations.
 
 **The caution.** The factorisation is minimal only at the rank. A factorisation at the full size four gives four terms for every operator, including the ones of length one.
 

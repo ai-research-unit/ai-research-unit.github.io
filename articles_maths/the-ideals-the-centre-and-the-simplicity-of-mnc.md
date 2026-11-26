@@ -68,7 +68,7 @@ a sum of $n$ Peirce lines, one per value of the first index. So the minimal left
 
 ## Simplicity and Its Consequences
 
-**Every automorphism is inner.** An automorphism $\digamma_{\mathrm{map}}$ of $M_n(\mathbb{C})$ sends the minimal left ideal $L_V$ to another minimal left ideal, hence sends a line of the domain to a line and induces a projective transformation of $\mathbb{P}^{n-1}$. Lifting that transformation to a linear $S$ gives $\digamma_{\mathrm{map}}(A)=SAS^{-1}$, and $S$ is unique up to a central scalar. This is the Skolem–Noether theorem in the matrix case, and it is the reason the Peirce gauges of *The Peirce Basis and the Corners* exhaust the freedom of a frame.
+**Every automorphism is inner.** An automorphism $\digamma_{\mathrm{map}}$ of $M_n(\mathbb{C})$ sends the minimal left ideal $L_V$ to another minimal left ideal, hence sends a line of the domain to a line and induces a projective transformation of $\mathbb{P}^{n-1}$. Lifting that transformation to a linear $S$ gives $\digamma_{\mathrm{map}}(A)=SAS^{-1}$, and $S$ is unique up to a central scalar. This is the Skolem–Noether theorem in the matrix case, and it is the reason the Peirce frame groups of *The Peirce Basis and the Corners* exhaust the freedom of a frame.
 
 **Every derivation is inner, and the derivations form a space of dimension $n^{2}-1$.** A derivation is a linear $D$ with $D(AB)=D(A)B+AD(B)$. Every $D_A(X)=[A,X]$ is a derivation, and conversely every derivation is of that form: the map $A\mapsto D_A$ has kernel the centre, so
 
@@ -130,5 +130,5 @@ $M_n(\mathbb{C})$ has no proper nonzero two-sided ideal, and its centre is $\mat
 - James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for the derivations of a matrix algebra and the inner derivations as $\mathfrak{sl}_n$.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the centre, the simplicity and the singular set.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the corners and the warning that a sum of corners is not a sum of ideals.
-- [The Peirce Basis and the Corners](the-peirce-basis-in-n-dimensions.html), for the gauge that inner automorphisms exhaust.
+- [The Peirce Basis and the Corners](the-peirce-basis-in-n-dimensions.html), for the frame group that inner automorphisms exhaust.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the two columns at $n=2$.

@@ -6,7 +6,7 @@ A single matrix $H$ with $H^{3}=I$ and three distinct eigenvalues carries the wh
 
 The construction is **root-first**. One matrix $H$ is the primitive datum. The Lagrange formula is a polynomial in $H$, so every idempotent is a polynomial in $H$; no second root, no transverse element and no pair of roots enters. The case $n=2$ is the order-two case of the same formula: there the roots are $\pm1$ and the two idempotents are $(I\pm H)/2$, which is the biquaternion frame. The case $n=3$ needs the three cube roots and one $H$.
 
-The article assumes the algebra $M_{3}(\mathbb{C})$, its basis $E_{ij}$ and the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$ of *The Matrix Algebra $M_{3}(\mathbb{C})$*. The Peirce decomposition built on the idempotents is *The Peirce Decomposition of $M_3(\mathbb{C})$*; the gauge of the off-diagonal units is *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*; the spectral theory at a repeated root is *The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$*.
+The article assumes the algebra $M_{3}(\mathbb{C})$, its basis $E_{ij}$ and the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$ of *The Matrix Algebra $M_{3}(\mathbb{C})$*. The Peirce decomposition built on the idempotents is *The Peirce Decomposition of $M_3(\mathbb{C})$*; the frame group of the off-diagonal units is *The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$*; the spectral theory at a repeated root is *The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$*.
 
 ## The Cube Roots of Unity
 
@@ -309,7 +309,7 @@ $$
 
 They are idempotent, orthogonal and complete, $H=P_{+}-P_{-}$, and each has rank one. The algebra $M_{2}(\mathbb{C})$ is the biquaternion algebra $\mathbb{B}$, and this is its frame of two idempotents; the construction is the order-two case of the formula of §*The Lagrange Projectors*, with the two roots of $x^{2}-1$.
 
-**The contrast with $n=3$.** For $n=3$ the single root $H$ produces three idempotents, because the polynomial $x^{3}-1$ has three roots. No second root is needed, and none is introduced here. The biquaternion frame of *Peirce Decompositions of the Biquaternion Algebra* fixes the relative scale of its two mixed units by one gauge parameter, the reciprocal rescaling of the companion pair; that is a feature of the two-dimensional carrier, not a primitive datum of the $n=3$ construction. In $M_{3}(\mathbb{C})$ the three idempotents are already complete, and the only remaining freedom is the gauge of the off-diagonal units, treated in *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
+**The contrast with $n=3$.** For $n=3$ the single root $H$ produces three idempotents, because the polynomial $x^{3}-1$ has three roots. No second root is needed, and none is introduced here. The biquaternion frame of *Peirce Decompositions of the Biquaternion Algebra* fixes the relative scale of its two mixed units by one frame parameter, the reciprocal rescaling of the companion pair; that is a feature of the two-dimensional carrier, not a primitive datum of the $n=3$ construction. In $M_{3}(\mathbb{C})$ the three idempotents are already complete, and the only remaining freedom is the frame group of the off-diagonal units, treated in *The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$*.
 
 ## Summary
 
@@ -340,7 +340,7 @@ with each graded piece of dimension three; in the eigenbasis, $E_{kl}$ has degre
 | Rank of each | $1$ |
 | Spectrum of $H$ | $\{1,\omega,\omega^{2}\}$ |
 | $\dim_{\mathbb{C}}$ of the root orbit | $6$ |
-| $\dim_{\mathbb{C}}$ of the gauge torus | $2$ |
+| $\dim_{\mathbb{C}}$ of the frame torus | $2$ |
 | $\dim_{\mathbb{C}}$ of the full flag variety | $3$ |
 
 The root orbit is $PGL_{3}/T$, of dimension $6$; it is a $3!$-fold cover of the space of unordered eigenline decompositions. The flag variety is a quotient of the ordered triple space (equivalently, of the root orbit) with three-dimensional fibres; the unordered space does not map canonically to it. The order-two case is the biquaternion frame, with two idempotents $(I\pm H)/2$; the order-three case is the frame of this category.

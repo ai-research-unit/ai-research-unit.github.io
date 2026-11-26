@@ -4,9 +4,9 @@
 
 A complete orthogonal family of two idempotents $\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}$ cuts the biquaternion algebra into four complex lines $\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}$. The diagonal lines are spanned by the idempotents, and those vectors are canonical. The mixed lines have no canonical nonzero element.
 
-A **Peirce basis** is a choice of one nonzero element in each mixed line, normalized so that the two elements multiply to the two idempotents. The diagonal elements are then forced. The choice of one mixed element determines the other: for every nonzero $u\in\mathbb{B}_{+-}$ there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{\mathrm{id},+}$, and then $vu=\tilde\Pi_{\mathrm{id},-}$. The remaining freedom is a nonzero complex scale, the **gauge**. A basis is therefore a family together with a point of the gauge torsor.
+A **Peirce basis** is a choice of one nonzero element in each mixed line, normalized so that the two elements multiply to the two idempotents. The diagonal elements are then forced. The choice of one mixed element determines the other: for every nonzero $u\in\mathbb{B}_{+-}$ there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{\mathrm{id},+}$, and then $vu=\tilde\Pi_{\mathrm{id},-}$. The remaining freedom is a nonzero complex scale, the **frame group**. A basis is therefore a family together with a point of the frame group torsor.
 
-The article defines the basis, proves existence by the nilpotent route, computes the gauge, the coordinates, the product and the determinant, states the torsor and its stabilizer, gives the matrix-unit reading, counts the real dimensions, treats the Hermitian gauge, and gives the standard family as an example.
+The article defines the basis, proves existence by the nilpotent route, computes the frame group, the coordinates, the product and the determinant, states the torsor and its stabilizer, gives the matrix-unit reading, counts the real dimensions, treats the Hermitian frame group, and gives the standard family as an example.
 
 ## Definition
 
@@ -43,7 +43,7 @@ so both mixed elements are nilpotents. The four elements satisfy the multiplicat
 
 **The diagonal is forced.** If a nonzero diagonal element is written $c\tilde\Pi_{\mathrm{id},s}$, then idempotence gives $c^{2}=c$, hence $c=1$. The diagonal elements of a Peirce basis are therefore the idempotents themselves; they are not a choice.
 
-**The mixed elements are a choice.** A nonzero $\vec\Pi_{\mathrm{nil},+-}$ can be rescaled, and the product normalization forces the reciprocal rescaling of $\vec\Pi_{\mathrm{nil},-+}$. That freedom is the gauge of §*The Indefinite Form*.
+**The mixed elements are a choice.** A nonzero $\vec\Pi_{\mathrm{nil},+-}$ can be rescaled, and the product normalization forces the reciprocal rescaling of $\vec\Pi_{\mathrm{nil},-+}$. That freedom is the frame group of §*The Indefinite Form*.
 
 ## Existence: The Nilpotent Route
 
@@ -70,7 +70,7 @@ $$
 
 The mixed elements are nilpotents, and each idempotent is the product of the two in the appropriate order.
 
-**The gauge is the reciprocal scaling.** If $u$ is replaced by $\lambda u$, then $v$ is replaced by $\lambda^{-1}v$, and the pair remains a basis. Every $\lambda\in\mathbb{C}^{\times}$ gives a basis. This one-parameter scaling is the whole freedom of the construction; it is computed in §*The Indefinite Form*.
+**The frame group is the reciprocal scaling.** If $u$ is replaced by $\lambda u$, then $v$ is replaced by $\lambda^{-1}v$, and the pair remains a basis. Every $\lambda\in\mathbb{C}^{\times}$ gives a basis. This one-parameter scaling is the whole freedom of the construction; it is computed in §*The Indefinite Form*.
 
 ## Coordinates
 
@@ -128,7 +128,7 @@ with the diagonal elements unchanged.
 
 **Proof.** Each primed mixed element is a nonzero multiple of the unprimed one, say $\vec\Pi_{\mathrm{nil}}'{}_{+-}=c_{+}\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil}}'{}_{-+}=c_{-}\vec\Pi_{\mathrm{nil},-+}$. The product normalization gives $c_{+}c_{-}=1$. Set $t_{+}=c_{+}$ and $t_{-}=1$; then $c_{+}=t_{+}t_{-}^{-1}$ and $c_{-}=t_{-}t_{+}^{-1}$. The converse is a direct check.
 
-**The effective gauge.** Put $t=t_{-}t_{+}^{-1}$. Then
+**The effective frame group.** Put $t=t_{-}t_{+}^{-1}$. Then
 
 $$
 \vec\Pi_{\mathrm{nil}}'{}_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
@@ -141,11 +141,11 @@ $$
 G=(\mathbb{C}^{\times})^{2}/\mathbb{C}^{\times}\cong\mathbb{C}^{\times},
 $$
 
-of real dimension two. The parameter $t$ is the single complex gauge parameter of the biquaternion case.
+of real dimension two. The parameter $t$ is the single complex frame parameter of the biquaternion case.
 
 **The bases form a torsor.** Fix the family. The set $\mathcal{B}(F)$ of its Peirce bases is a $G$-torsor: the action is free and transitive.
 
-- *Free:* if a gauge element fixes both mixed elements, then $t_{+}t_{-}^{-1}=1$ and $t_{-}t_{+}^{-1}=1$, so $t_{+}=t_{-}$; the class in $G$ is the identity.
+- *Free:* if a frame group element fixes both mixed elements, then $t_{+}t_{-}^{-1}=1$ and $t_{-}t_{+}^{-1}=1$, so $t_{+}=t_{-}$; the class in $G$ is the identity.
 - *Transitive:* given two bases, their first mixed elements are nonzero multiples, $u'=cu$; set $t_{+}=c$, $t_{-}=1$, and the product normalization forces the second mixed element to be $c^{-1}v$, which is the transformed basis.
 
 Equivalently, the map $u\mapsto$ the basis with first element $u$ is a bijection
@@ -171,7 +171,7 @@ $$
 
 The map $U\mapsto(a,b)$ is an isomorphism from the stabilizer of the family in $\mathbb{B}^{\times}$ onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$. The centre of $\mathbb{B}$ is $\mathbb{C}e_{t}$, and the centre of the group of invertibles is the diagonal $a=b$. The quotient is $G$. An invertible element fixes a basis exactly when $a=b$, that is exactly when it is central. Two bases of the same family are conjugate by an invertible element, unique up to the centre.
 
-**Coordinates under the gauge.** With $t=t_{-}t_{+}^{-1}$,
+**Coordinates under the frame group.** With $t=t_{-}t_{+}^{-1}$,
 
 $$
 Q'_{++}=Q_{++},\qquad
@@ -182,13 +182,13 @@ $$
 
 The product and the determinant are unchanged: the same element is read in another basis.
 
-**Gauge fixing.** A gauge fixing is a point of the torsor, that is a nonzero element of one mixed line. The nonvanishing and the product normalization are part of the definition of a basis and do not fix the scale. The Hermitian condition restricts the gauge but does not fix it; see below.
+**Fixing the frame.** A fixing the frame is a point of the torsor, that is a nonzero element of one mixed line. The nonvanishing and the product normalization are part of the definition of a basis and do not fix the scale. The Hermitian condition restricts the frame group but does not fix it; see below.
 
-**The Hermitian gauge.** Suppose the family is Hermitian, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$, with the positive definite Hermitian form of the algebra. Then:
+**The Hermitian frame group.** Suppose the family is Hermitian, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$, with the positive definite Hermitian form of the algebra. Then:
 
 - A Hermitian basis exists. Choose a nonzero $u\in\mathbb{B}_{+-}$. Then $u^{*}\in\mathbb{B}_{-+}$ and $uu^{*}\in\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}$. The element $uu^{*}$ is Hermitian and nonzero, and $\mathrm{Sc}(uu^{*})>0$ by positive definiteness; write $uu^{*}=\lambda\tilde\Pi_{\mathrm{id},+}$ with $\lambda>0$, since $\mathrm{Sc}(\tilde\Pi_{\mathrm{id},+})=\frac12$. Replace $u$ by $\lambda^{-1/2}u$; then $uu^{*}=\tilde\Pi_{\mathrm{id},+}$. Now $u^{*}u\in\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{\mathrm{id},-}$ is nonzero, because $u(u^{*}u)=0$ would give $(uu^{*})u=u=0$; write $u^{*}u=\mu\tilde\Pi_{\mathrm{id},-}$. Then $u=uu^{*}u=\mu u$, so $\mu=1$. Thus $\vec\Pi_{\mathrm{nil},+-}=u$ and $\vec\Pi_{\mathrm{nil},-+}=u^{*}$ are a Hermitian basis.
-- The Hermitian bases are the bases with $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$. Under the gauge, this condition reads $t\vec\Pi_{\mathrm{nil},-+}=\bar t^{-1}\vec\Pi_{\mathrm{nil},-+}$, so $t\bar t=1$. The Hermitian bases are therefore a $U(1)$-torsor, of real dimension one.
-- The Hermitian condition does not fix a basis; a circle of bases remains. A gauge fixing in the Hermitian case is a point of that circle.
+- The Hermitian bases are the bases with $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$. Under the frame group, this condition reads $t\vec\Pi_{\mathrm{nil},-+}=\bar t^{-1}\vec\Pi_{\mathrm{nil},-+}$, so $t\bar t=1$. The Hermitian bases are therefore a $U(1)$-torsor, of real dimension one.
+- The Hermitian condition does not fix a basis; a circle of bases remains. A fixing the frame in the Hermitian case is a point of that circle.
 
 ## Systems of Matrix Units
 
@@ -216,7 +216,7 @@ A Peirce basis is exactly such a system. The coordinate map of §*Coordinates* s
 
 **Uniqueness up to conjugation.** Every two systems of $2\times2$ matrix units of $\mathbb{B}$ are conjugate by an invertible element, and the conjugating unit is unique up to the centre.
 
-**Proof.** For two systems of the same family, the two bases differ by the gauge of §*The Indefinite Form*, and that gauge is conjugation by $U=t_{+}\tilde\Pi_{\mathrm{id},+}+t_{-}\tilde\Pi_{\mathrm{id},-}$; the conjugating unit is unique up to a common scalar, that is up to the centre. For two systems of different families, pass to the matrix model. A nontrivial idempotent of $M_{2}(\mathbb{C})$ is a rank-one projection; choose a basis of $\mathbb{C}^{2}$ in which its image is the first coordinate line and its kernel the second. The projection is then $E_{11}$, and the mixed units are determined up to the diagonal torus. Every automorphism of $M_{2}(\mathbb{C})$ is inner, so the conjugation descends to $\mathbb{B}$. The centralizer of a full system of matrix units is the centre. Each system is therefore conjugate to the standard one, and any two systems are conjugate to each other; the unit is unique up to the centre.
+**Proof.** For two systems of the same family, the two bases differ by the frame group of §*The Indefinite Form*, and that frame group is conjugation by $U=t_{+}\tilde\Pi_{\mathrm{id},+}+t_{-}\tilde\Pi_{\mathrm{id},-}$; the conjugating unit is unique up to a common scalar, that is up to the centre. For two systems of different families, pass to the matrix model. A nontrivial idempotent of $M_{2}(\mathbb{C})$ is a rank-one projection; choose a basis of $\mathbb{C}^{2}$ in which its image is the first coordinate line and its kernel the second. The projection is then $E_{11}$, and the mixed units are determined up to the diagonal torus. Every automorphism of $M_{2}(\mathbb{C})$ is inner, so the conjugation descends to $\mathbb{B}$. The centralizer of a full system of matrix units is the centre. Each system is therefore conjugate to the standard one, and any two systems are conjugate to each other; the unit is unique up to the centre.
 
 ## Dimensions
 
@@ -224,12 +224,12 @@ A Peirce basis is exactly such a system. The coordinate map of §*Coordinates* s
 
 **The basis.** Fix the family. A basis is a nonzero element of one mixed line, by §*Existence: The Nilpotent Route*. A complex line with its zero removed has complex dimension one, that is real dimension two. The basis is the family together with this point, so the basis space has real dimension $4+2=6$.
 
-**The gauge.** The effective gauge is $\mathbb{C}^{\times}$, of real dimension two. It is the fibre of the map from bases to families. The count is
+**The frame group.** The effective frame group is $\mathbb{C}^{\times}$, of real dimension two. It is the fibre of the map from bases to families. The count is
 
 $$
 \underbrace{4}_{\text{family}}+\underbrace{2}_{\text{mixed element}}=\underbrace{6}_{\text{basis}},
 \qquad
-\underbrace{6}_{\text{basis}}-\underbrace{2}_{\text{gauge}}=\underbrace{4}_{\text{family}}.
+\underbrace{6}_{\text{basis}}-\underbrace{2}_{\text{frame group}}=\underbrace{4}_{\text{family}}.
 $$
 
 The family is the input and the mixed element is the choice.
@@ -258,14 +258,14 @@ $$
 \vec\Pi_{\mathrm{nil},+-}^{2}=\vec\Pi_{\mathrm{nil},-+}^{2}=0.
 $$
 
-The gauge transformation is
+The frame transformation is
 
 $$
 \vec\Pi_{\mathrm{nil}}'{}_{+-}=t^{-1}\vec\Pi_{\mathrm{nil},+-},\qquad
 \vec\Pi_{\mathrm{nil}}'{}_{-+}=t\vec\Pi_{\mathrm{nil},-+},
 $$
 
-for $t\in\mathbb{C}^{\times}$. The standard basis is Hermitian, $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$; the Hermitian gauges are the circle $|t|=1$, so the standard basis is one point of a $U(1)$-family and not a canonical one.
+for $t\in\mathbb{C}^{\times}$. The standard basis is Hermitian, $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$; the Hermitian representatives are the circle $|t|=1$, so the standard basis is one point of a $U(1)$-family and not a canonical one.
 
 The coordinate matrix of an element is
 
@@ -280,7 +280,7 @@ with determinant $Q_{++}Q_{--}-Q_{+-}Q_{-+}=\langle\tilde Q\rangle_{\natural}$.
 
 ## Summary
 
-A Peirce basis of a nondegenerate complete family $\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}$ is a pair of nonzero mixed elements $\vec\Pi_{\mathrm{nil},+-}\in\mathbb{B}_{+-}$ and $\vec\Pi_{\mathrm{nil},-+}\in\mathbb{B}_{-+}$ with $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$ and $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-}$. The diagonal elements are the idempotents and are forced. Existence is the nilpotent route: every nonzero element of one mixed line has a unique partner in the other, and the two idempotents are the two products. The bases are a $\mathbb{C}^{\times}$-torsor, equivalently the nonzero elements of one mixed line; the gauge is the reciprocal scaling, free and transitive. In the group of invertibles the stabilizer of a basis is the centre. The Hermitian condition restricts the gauge to $U(1)$ and does not fix it. The coordinate matrix is a $2\times2$ matrix model, and its determinant is the quaternionic norm. The dimensions are $6=4+2$ real.
+A Peirce basis of a nondegenerate complete family $\tilde\Pi_{\mathrm{id},+},\tilde\Pi_{\mathrm{id},-}$ is a pair of nonzero mixed elements $\vec\Pi_{\mathrm{nil},+-}\in\mathbb{B}_{+-}$ and $\vec\Pi_{\mathrm{nil},-+}\in\mathbb{B}_{-+}$ with $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}=\tilde\Pi_{\mathrm{id},+}$ and $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}=\tilde\Pi_{\mathrm{id},-}$. The diagonal elements are the idempotents and are forced. Existence is the nilpotent route: every nonzero element of one mixed line has a unique partner in the other, and the two idempotents are the two products. The bases are a $\mathbb{C}^{\times}$-torsor, equivalently the nonzero elements of one mixed line; the frame group is the reciprocal scaling, free and transitive. In the group of invertibles the stabilizer of a basis is the centre. The Hermitian condition restricts the frame group to $U(1)$ and does not fix it. The coordinate matrix is a $2\times2$ matrix model, and its determinant is the quaternionic norm. The dimensions are $6=4+2$ real.
 
 ## Summary of Notation
 
@@ -291,14 +291,14 @@ A Peirce basis of a nondegenerate complete family $\tilde\Pi_{\mathrm{id},+},\ti
 | $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$ | The mixed units of a basis |
 | $Q_{st}$ | The Peirce coordinates |
 | $\mathcal{B}(F)$ | The set of bases of the family $F$ |
-| $G=(\mathbb{C}^{\times})^{2}/\mathbb{C}^{\times}$ | The effective gauge group |
-| $t_{+},t_{-},t$ | The gauge parameters, with $t=t_{-}t_{+}^{-1}$ |
+| $G=(\mathbb{C}^{\times})^{2}/\mathbb{C}^{\times}$ | The effective frame group |
+| $t_{+},t_{-},t$ | The frame parameters, with $t=t_{-}t_{+}^{-1}$ |
 | $\langle\tilde Q\rangle_{\natural}$ | The quaternionic norm |
 
 ## Further Reading
 
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the family, the four lines and the product rule.
 - [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the coordinates of the two spinor spaces; the matrix model and the coordinate isomorphism.
-- [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general gauge $(\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}$.
+- [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general frame group $(\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}$.
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the inner automorphisms used in §*Systems of Matrix Units*.
 - [Idempotents](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification of the idempotents and the standard pair.

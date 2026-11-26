@@ -253,7 +253,7 @@ The Hermitian factor is $H_\epsilon=\operatorname{diag}(0,\log\epsilon,\log\epsi
 
 **The singular values.** In the right exponential form $A=e^{iK'}e^{H'}$, the singular values of $A$ are $e^{h_k}$, where $h_k$ are the eigenvalues of $H'$. The polar decomposition writes the singular values as exponentials of the Hermitian eigenvalues; the $*$-unitary factor carries the phases. At a zero singular value the logarithm diverges, which is the analytic form of the degeneration.
 
-## The Root, the Frame and the Gauge
+## The Root, the Frame and the Frame Group
 
 **The root.** A root $H$ with $H^{3}=I$ and simple spectrum is diagonalisable, with spectral projectors $P_k$ and eigenvalues $\omega_k$. It is $*$-unitary exactly when it is normal, equivalently when the projectors $P_k$ are Hermitian. For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, which are $*$-unitary, the right polar decomposition is $H=H\cdot I$ and the polar decomposition is
 
@@ -271,9 +271,9 @@ S=e^{H}e^{iK},\qquad
 H=\log(SS^{*})^{1/2},\quad e^{iK}=(SS^{*})^{-1/2}S .
 $$
 
-The gauge torus $T$ acts on the frame by $S\mapsto ST$, and the two Hermitian exponents do not transform separately: the decomposition of $ST$ mixes $H$ and $K$ unless $T$ is $*$-unitary.
+The frame torus $T$ acts on the frame by $S\mapsto ST$, and the two Hermitian exponents do not transform separately: the decomposition of $ST$ mixes $H$ and $K$ unless $T$ is $*$-unitary.
 
-**The gauge parameters.** In the additive coordinates $t=\operatorname{diag}(t_1,t_2,t_3)$, the nilpotents rescale as
+**The frame parameters.** In the additive coordinates $t=\operatorname{diag}(t_1,t_2,t_3)$, the nilpotents rescale as
 
 $$
 E_{12}\mapsto e^{t_1-t_2}E_{12},\qquad
@@ -281,7 +281,7 @@ E_{23}\mapsto e^{t_2-t_3}E_{23},\qquad
 E_{13}\mapsto e^{t_1-t_3}E_{13}.
 $$
 
-The Hermitian exponent of the frame is the real part of $t$ in the appropriate trivialisation; the phase exponent is the imaginary part. The idempotents are invariant under the gauge, so they do not appear in $H$ or $K$ as gauge-dependent factors.
+The Hermitian exponent of the frame is the real part of $t$ in the appropriate trivialisation; the phase exponent is the imaginary part. The idempotents are invariant under the frame group, so they do not appear in $H$ or $K$ as frame dependent factors.
 
 ## Comparison with the Split Case
 

@@ -61,7 +61,7 @@ $$
 
 **Proof.** Each is conjugate to $E_{12}$ by the theorem, and conjugacy is transitive. This is where the dimension pays: at order three the nilpotent orbits are two, indexed by the partitions $3$ and $2+1$, while at order two only the partition $2$ survives.
 
-**The companion pairs.** The two matrices $\begin{pmatrix}0&1\\ 0&0\end{pmatrix}$ and $\begin{pmatrix}0&0\\ 1&0\end{pmatrix}$ are conjugate by the swap of the two basis vectors, which is $\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ of square $I$ and determinant $-1$. In the biquaternion language these are $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$, and the conjugating swap is one point of the gauge of *The Companion Nilpotents of the Biquaternion Algebra*.
+**The companion pairs.** The two matrices $\begin{pmatrix}0&1\\ 0&0\end{pmatrix}$ and $\begin{pmatrix}0&0\\ 1&0\end{pmatrix}$ are conjugate by the swap of the two basis vectors, which is $\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ of square $I$ and determinant $-1$. In the biquaternion language these are $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$, and the conjugating swap is one point of the frame group of *The Companion Nilpotents of the Biquaternion Algebra*.
 
 ## The Jordan–Chevalley Decomposition
 

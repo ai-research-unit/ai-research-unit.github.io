@@ -1,4 +1,4 @@
-# __The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$__
+# __The Frame, the Simple Nilpotents and the Frame Group of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -14,11 +14,11 @@ $$
 E_{ij}\longmapsto\frac{t_i}{t_j}E_{ij},
 $$
 
-which is conjugation by the diagonal matrix $D_t=\sum_it_iE_{ii}$. The scalars act trivially, so the effective group is the torus $(\mathbb{C}^\times)^4$. Writing $\lambda_k=t_k/t_{k+1}$ for the four simple nilpotents, the composite $E_{ij}$ is rescaled by the product $\lambda_i\lambda_{i+1}\cdots\lambda_{j-1}$. The product around the closed chain is one, and there is **no fifth independent scalar**: the four $\lambda_k$ are the whole gauge, one per simple nilpotent, and the composites are fixed by the cocycle.
+which is conjugation by the diagonal matrix $D_t=\sum_it_iE_{ii}$. The scalars act trivially, so the effective group is the torus $(\mathbb{C}^\times)^4$. Writing $\lambda_k=t_k/t_{k+1}$ for the four simple nilpotents, the composite $E_{ij}$ is rescaled by the product $\lambda_i\lambda_{i+1}\cdots\lambda_{j-1}$. The product around the closed chain is one, and there is **no fifth independent scalar**: the four $\lambda_k$ are the whole frame group, one per simple nilpotent, and the composites are fixed by the cocycle.
 
-The gauge leaves every idempotent of the frame untouched, $D_tE_{ii}D_t^{-1}=E_{ii}$, and in particular it leaves the Lagrange projectors $P_k$ untouched. **It rescales the nilpotents, not the idempotents.** This is the precise sense in which the frame is a choice of coordinates inside a fixed root, and why the count of the frame is the count of the root plus the count of the gauge: $20+4=24=\dim PGL_5$.
+The frame group leaves every idempotent of the frame untouched, $D_tE_{ii}D_t^{-1}=E_{ii}$, and in particular it leaves the Lagrange projectors $P_k$ untouched. **It rescales the nilpotents, not the idempotents.** This is the precise sense in which the frame is a choice of coordinates inside a fixed root, and why the count of the frame is the count of the root plus the count of the frame group: $20+4=24=\dim PGL_5$.
 
-The article assumes the root, the idempotents $P_k$ and the Peirce lines $A_{kl}$ of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$* and *The Peirce Decomposition of $M_5(\mathbb{C})$*. It uses no form, no involution and no topology. The rank-two split and the partial flags are later articles; the adjoint action, where the gauge appears as a stabiliser, is *The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$*.
+The article assumes the root, the idempotents $P_k$ and the Peirce lines $A_{kl}$ of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$* and *The Peirce Decomposition of $M_5(\mathbb{C})$*. It uses no form, no involution and no topology. The rank-two split and the partial flags are later articles; the adjoint action, where the frame group appears as a stabiliser, is *The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$*.
 
 ## The Frame
 
@@ -56,7 +56,7 @@ because $v_j^{\vee}(v_k)=\delta_{jk}$. The sum $\sum_iE_{ii}$ acts on $v_j$ as $
 
 **Proof.** $E_{ii}^2=E_{ii}$ by the product rule, $E_{ii}E_{jj}=0$ for $i\ne j$, and the sum is $I$. The image of $E_{ii}$ is the line $\mathbb{C}v_i$, and its kernel contains every $v_j$ with $j\ne i$.
 
-**Remark.** The frame is a **complete system of matrix units**, and the five diagonal units are a complete family of orthogonal rank-one idempotents. A root supplies such a family, the Lagrange projectors $P_k$; a frame supplies the vectors inside the lines. The two data are related by $E_{kk}=P_k$ for $k=1,\dots,5$ when the frame is **spectral**, that is, when $v_k$ spans $\operatorname{im}P_k$ and the dual functional is the left eigenfunctional. A general frame need not be spectral; the matrix units and the gauge are defined for every frame, and the specialization to the spectral frame is made where the root is used.
+**Remark.** The frame is a **complete system of matrix units**, and the five diagonal units are a complete family of orthogonal rank-one idempotents. A root supplies such a family, the Lagrange projectors $P_k$; a frame supplies the vectors inside the lines. The two data are related by $E_{kk}=P_k$ for $k=1,\dots,5$ when the frame is **spectral**, that is, when $v_k$ spans $\operatorname{im}P_k$ and the dual functional is the left eigenfunctional. A general frame need not be spectral; the matrix units and the frame group are defined for every frame, and the specialization to the spectral frame is made where the root is used.
 
 ### The Frame and the Root
 
@@ -66,13 +66,13 @@ $$
 H=\sum_{k=1}^{5}\omega_kE_{kk},\qquad E_{kk}=P_k,
 $$
 
-and the matrix of $H$ is $\operatorname{diag}(\omega_1,\dots,\omega_5)$. The root determines the lines $L_k$, hence the diagonal units $E_{kk}=P_k$; it does **not** determine the vectors $v_k$, hence not the off-diagonal units $E_{ij}$ with $i\ne j$. The off-diagonal units are exactly what the gauge moves.
+and the matrix of $H$ is $\operatorname{diag}(\omega_1,\dots,\omega_5)$. The root determines the lines $L_k$, hence the diagonal units $E_{kk}=P_k$; it does **not** determine the vectors $v_k$, hence not the off-diagonal units $E_{ij}$ with $i\ne j$. The off-diagonal units are exactly what the frame group moves.
 
 **Proposition.** Let $H$ be a root and let $\mathcal{V}$ be a spectral frame. A matrix $g\in GL_5(\mathbb{C})$ preserves $H$ by conjugation, $gHg^{-1}=H$, if and only if $g$ is diagonal in the frame, $g=\sum_it_iE_{ii}$ with $t_i\ne0$. The stabiliser of $H$ in $PGL_5$ is therefore the torus $T$ of the diagonal matrices modulo scalars, of dimension $4$.
 
 **Proof.** In the spectral frame $H=\operatorname{diag}(\omega_1,\dots,\omega_5)$ with distinct entries. The equation $gH=Hg$ reads $g_{ij}\omega_j=\omega_i g_{ij}$ for $i,j=1,\dots,5$; for $i\ne j$ this forces $g_{ij}=0$. Hence $g$ is diagonal and invertible, so all $t_i=g_{ii}$ are nonzero. The scalars are the intersection with the centre, and the quotient has dimension $5-1=4$.
 
-**Corollary.** The gauge group of the spectral frame is the stabiliser of the root. The frame is a point of $PGL_5$; the root is its image in $PGL_5/T$; the gauge is the fibre $T$. The count is
+**Corollary.** The frame group of the spectral frame is the stabiliser of the root. The frame is a point of $PGL_5$; the root is its image in $PGL_5/T$; the frame group is the fibre $T$. The count is
 
 $$
 \dim PGL_5=\dim(PGL_5/T)+\dim T=20+4=24 .
@@ -156,11 +156,11 @@ $$
 
 **Proof.** $N_kv_{k+1}=E_{k,k+1}v_{k+1}=v_k$, and $N_kv_j=v_k\delta_{k+1,j}$, which vanishes for $j\ne k+1$. The image lies in $V_k$.
 
-**Remark.** **The flag and the frame are not the same data.** The flag is the chain of subspaces; the frame is a splitting of the flag into lines, and the simple nilpotents depend on the splitting, not only on the flag. This is the same distinction as the one between the root set $PGL_5/T$ and the flag variety $GL_5/B$: the fibre of splittings has dimension $10$. The simple nilpotents are the elementary maps of a splitting; a different splitting changes them by the gauge and by the unipotent part.
+**Remark.** **The flag and the frame are not the same data.** The flag is the chain of subspaces; the frame is a splitting of the flag into lines, and the simple nilpotents depend on the splitting, not only on the flag. This is the same distinction as the one between the root set $PGL_5/T$ and the flag variety $GL_5/B$: the fibre of splittings has dimension $10$. The simple nilpotents are the elementary maps of a splitting; a different splitting changes them by the frame group and by the unipotent part.
 
 ## The Indefinite Form
 
-### The Diagonal Gauge
+### The Diagonal Frame Group
 
 **Definition.** For $t=(t_1,\dots,t_5)\in(\mathbb{C}^\times)^5$, let
 
@@ -168,13 +168,13 @@ $$
 D_t=\sum_{i=1}^{5}t_iE_{ii}\in GL_5(\mathbb{C}).
 $$
 
-The **gauge transformation** of parameter $t$ is the conjugation
+The **frame transformation** of parameter $t$ is the conjugation
 
 $$
 A\longmapsto D_tAD_t^{-1}.
 $$
 
-**Proposition.** The gauge acts on the matrix units by
+**Proposition.** The frame group acts on the matrix units by
 
 $$
 D_tE_{ij}D_t^{-1}=\frac{t_i}{t_j}E_{ij},
@@ -184,13 +184,13 @@ and it fixes every diagonal unit: $D_tE_{ii}D_t^{-1}=E_{ii}$.
 
 **Proof.** $D_tE_{ij}=t_iE_{ij}$ and $E_{ij}D_t^{-1}=t_j^{-1}E_{ij}$, because $E_{ij}$ is an eigenvector of the left multiplication by $D_t$ with eigenvalue $t_i$ and of the right multiplication with eigenvalue $t_j$. For $i=j$ the two eigenvalues are equal.
 
-**Corollary.** The gauge fixes every idempotent of the form $P_S=\sum_{i\in S}E_{ii}$ for $S\subseteq\{1,\dots,5\}$, and in particular it fixes the five spectral projectors $P_k=E_{kk}$ if the frame is spectral. **The gauge rescales the off-diagonal units and leaves the diagonal idempotents unchanged.**
+**Corollary.** The fixes by a change of frame every idempotent of the form $P_S=\sum_{i\in S}E_{ii}$ for $S\subseteq\{1,\dots,5\}$, and in particular it fixes the five spectral projectors $P_k=E_{kk}$ if the frame is spectral. **The frame group rescales the off-diagonal units and leaves the diagonal idempotents unchanged.**
 
 **Proof.** The diagonal idempotents are sums of diagonal units, and each diagonal unit is fixed.
 
 ### The Effective Torus
 
-**Proposition.** The kernel of the map $t\mapsto D_t$ into $GL_5$ is the diagonal of the scalars, $\{(\lambda,\dots,\lambda):\lambda\in\mathbb{C}^\times\}\cong\mathbb{C}^\times$. The effective gauge group is therefore
+**Proposition.** The kernel of the map $t\mapsto D_t$ into $GL_5$ is the diagonal of the scalars, $\{(\lambda,\dots,\lambda):\lambda\in\mathbb{C}^\times\}\cong\mathbb{C}^\times$. The effective frame group is therefore
 
 $$
 (\mathbb{C}^\times)^5/\mathbb{C}^\times\cong(\mathbb{C}^\times)^4,
@@ -200,17 +200,17 @@ a complex torus of dimension $4$.
 
 **Proof.** $D_t$ is the scalar matrix $\lambda I$ exactly when all $t_i=\lambda$. The quotient of the five-dimensional torus by the one-dimensional diagonal has dimension $4$.
 
-**Corollary.** The gauge has four complex parameters, not five. The failure of the fifth parameter to be independent is the statement that the overall scale of the frame is immaterial: rescaling every $v_i$ by the same $\lambda$ rescales every $E_{ij}$ by $\lambda/\lambda=1$.
+**Corollary.** The frame group has four complex parameters, not five. The failure of the fifth parameter to be independent is the statement that the overall scale of the frame is immaterial: rescaling every $v_i$ by the same $\lambda$ rescales every $E_{ij}$ by $\lambda/\lambda=1$.
 
 ### The Four Parameters
 
-**Definition.** For $k=1,2,3,4$, the **gauge parameter of the simple nilpotent** $N_k=E_{k,k+1}$ is
+**Definition.** For $k=1,2,3,4$, the **frame parameter of the simple nilpotent** $N_k=E_{k,k+1}$ is
 
 $$
 \lambda_k=\frac{t_k}{t_{k+1}}\in\mathbb{C}^\times .
 $$
 
-**Theorem.** The map $t\mapsto(\lambda_1,\lambda_2,\lambda_3,\lambda_4)$ identifies the effective gauge group with $(\mathbb{C}^\times)^4$, and the action on the simple nilpotents is
+**Theorem.** The map $t\mapsto(\lambda_1,\lambda_2,\lambda_3,\lambda_4)$ identifies the effective frame group with $(\mathbb{C}^\times)^4$, and the action on the simple nilpotents is
 
 $$
 N_k\longmapsto\lambda_kN_k .
@@ -242,35 +242,35 @@ Hence the four simple parameters are independent and the fifth ratio is their in
 
 **Proof.** The identities are the multiplicativity of the ratios. The product around the cycle telescopes. If one tries to add a fifth parameter $\mu$ rescaling all $E_{ij}$ by $\mu$, it would have to equal $t_i/t_j$ for all pairs, which forces $t_i=\mu t_j$ for all $i,j$, hence all $t_i$ equal after a common rescaling, hence $\mu=1$. The fifth direction is the scalar, which acts trivially.
 
-**Remark.** **The gauge parameters are attached to the four simple nilpotents, one per edge of the chain, never to the five idempotents.** The idempotents are fixed by the gauge; the four $\lambda_k$ move the four elementary steps. The composites $E_{13},E_{14},E_{15}$ and the lower units are not independent: their scalings are the products along the chain. This is the content of the cocycle.
+**Remark.** **The frame parameters are attached to the four simple nilpotents, one per edge of the chain, never to the five idempotents.** The idempotents are fixed by the frame group; the four $\lambda_k$ move the four elementary steps. The composites $E_{13},E_{14},E_{15}$ and the lower units are not independent: their scalings are the products along the chain. This is the content of the cocycle.
 
 ## The Count of the Frame
 
-### The Root Plus the Gauge
+### The Root Plus the Frame Group
 
-**Theorem.** The frame is the pair of a root and a gauge:
+**Theorem.** The frame is the pair of a root and a frame group:
 
 $$
 \{\text{frames}\}/\mathbb{C}^\times\cong PGL_5,\qquad
 \{\text{roots}\}\cong PGL_5/T,\qquad
-\{\text{gauges}\}\cong T .
+\{\text{frame groups}\}\cong T .
 $$
 
 The dimensions are
 
 $$
-\underbrace{20}_{\text{root}}+\underbrace{4}_{\text{gauge}}=\underbrace{24}_{\text{frame}} .
+\underbrace{20}_{\text{root}}+\underbrace{4}_{\text{frame group}}=\underbrace{24}_{\text{frame}} .
 $$
 
-**Proof.** A frame modulo a common scalar is an element of $PGL_5$; the root is the image under $g\mapsto gH_0g^{-1}$; the fibre is the stabiliser $T$, which is the gauge. The dimensions are those of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$*: $24-4=20$ for the root and $4$ for the torus. The sum is $24$.
+**Proof.** A frame modulo a common scalar is an element of $PGL_5$; the root is the image under $g\mapsto gH_0g^{-1}$; the fibre is the stabiliser $T$, which is the frame group. The dimensions are those of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$*: $24-4=20$ for the root and $4$ for the torus. The sum is $24$.
 
-**Corollary.** The four gauge parameters are the four coordinates of the fibre of the frame bundle $PGL_5\to PGL_5/T$. They are not additional degrees of freedom of the algebra, the root or the idempotents: they are the redundancy of the choice of a vector in each spectral line.
+**Corollary.** The four frame parameters are the four coordinates of the fibre of the frame bundle $PGL_5\to PGL_5/T$. They are not additional degrees of freedom of the algebra, the root or the idempotents: they are the redundancy of the choice of a vector in each spectral line.
 
 **Remark.** **The count $20+4=24$ is the whole count of the frame, and it is not $20+5$.** The naive count of five vector rescalings overcounts by the common scalar, which acts trivially. The correct count is four, the dimension of $T$. The four $\lambda_k$ are a convenient set of coordinates on $T$; the five $t_i$ are redundant by the common scale.
 
-### The Real Gauge
+### The Real Frame Group
 
-The trace form of *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$* is positive definite, and in an **orthonormal** spectral frame the gauge parameters of the $*$-unitary structure satisfy $|t_k|=1$. The compact gauge is then the real torus $U(1)^4$, of real dimension $4$. The complex gauge $(\mathbb{C}^\times)^4$ is the algebraic gauge; the real torus is the subgroup that preserves the Hermitian structure. The four complex parameters have eight real dimensions, the four phases four, and the four moduli of the $t_k$ (the radial parts) are the non-$*$-unitary part of the algebraic gauge. The distinction is used in *The Polar Decomposition of $M_5(\mathbb{C})$* and *The Exponential and the Lie Group of $M_5(\mathbb{C})$*.
+The trace form of *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$* is positive definite, and in an **orthonormal** spectral frame the frame parameters of the $*$-unitary structure satisfy $|t_k|=1$. The compact frame group is then the real torus $U(1)^4$, of real dimension $4$. The complex frame group $(\mathbb{C}^\times)^4$ is the algebraic frame group; the real torus is the subgroup that preserves the Hermitian structure. The four complex parameters have eight real dimensions, the four phases four, and the four moduli of the $t_k$ (the radial parts) are the non-$*$-unitary part of the algebraic frame group. The distinction is used in *The Polar Decomposition of $M_5(\mathbb{C})$* and *The Exponential and the Lie Group of $M_5(\mathbb{C})$*.
 
 **Proof.** A diagonal matrix $D_t$ is $*$-unitary exactly when $|t_k|=1$ for every $k$; the quotient by the common scalar has real dimension $4$. The complex torus $(\mathbb{C}^\times)^4$ has real dimension $8$, and the modulus map $(\mathbb{C}^\times)^4\to(\mathbb{R}_{>0})^4$ is the four-dimensional non-$*$-unitary part.
 
@@ -292,7 +292,7 @@ $$
 E_{13}=N_1N_2,\qquad E_{14}=N_1N_2N_3,\qquad E_{15}=N_1N_2N_3N_4 .
 $$
 
-### A Numerical Gauge
+### A Numerical Frame Group
 
 Take $\lambda_1=2$, $\lambda_2=3$, $\lambda_3=5$, $\lambda_4=7$. The frame parameters are $t_1=1$, $t_2=\lambda_1^{-1}=1/2$, $t_3=(\lambda_1\lambda_2)^{-1}=1/6$, $t_4=1/30$, $t_5=1/210$, so
 
@@ -320,13 +320,13 @@ $$
 
 and the fifth ratio $t_5/t_1=1/210$ is the inverse product, not an independent parameter.
 
-**Remark.** The uniform choice $\lambda_1=\lambda_2=\lambda_3=\lambda_4=\lambda$ is the one-parameter subgroup $t_k=\lambda^{-(k-1)}$; it rescales $E_{ij}$ by $\lambda^{j-i}$. It is a single direction inside the four-dimensional gauge, not a fifth parameter. The general gauge is the four-dimensional torus, and the uniform direction is its diagonal.
+**Remark.** The uniform choice $\lambda_1=\lambda_2=\lambda_3=\lambda_4=\lambda$ is the one-parameter subgroup $t_k=\lambda^{-(k-1)}$; it rescales $E_{ij}$ by $\lambda^{j-i}$. It is a single direction inside the four-dimensional frame group, not a fifth parameter. The general frame group is the four-dimensional torus, and the uniform direction is its diagonal.
 
 ## Summary
 
 A frame is an ordered basis, and it produces the matrix units $E_{ij}=v_iv_j^{\vee}$ with the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The simple nilpotents $N_k=E_{k,k+1}$, $k=1,2,3,4$, are square-zero, and every composite is a product of consecutive simple ones, $E_{ij}=N_iN_{i+1}\cdots N_{j-1}$ for $i<j$.
 
-The gauge is the conjugation by $D_t=\sum_it_iE_{ii}$; it acts by $E_{ij}\mapsto(t_i/t_j)E_{ij}$, fixes every diagonal idempotent, and has effective group $(\mathbb{C}^\times)^4$. The four parameters are
+The frame group is the conjugation by $D_t=\sum_it_iE_{ii}$; it acts by $E_{ij}\mapsto(t_i/t_j)E_{ij}$, fixes every diagonal idempotent, and has effective group $(\mathbb{C}^\times)^4$. The four parameters are
 
 $$
 \lambda_k=\frac{t_k}{t_{k+1}},\qquad k=1,2,3,4,
@@ -335,18 +335,18 @@ $$
 one per simple nilpotent. The composites are rescaled by the products, the cycle product is one, and there is no fifth independent scalar.
 
 $$
-\boxed{\ \text{The gauge is }(\mathbb{C}^\times)^4\text{, with one parameter per simple nilpotent }E_{k,k+1};\text{ it fixes the idempotents and the composites are fixed by the cocycle.}\ }
+\boxed{\ \text{The frame group is }(\mathbb{C}^\times)^4\text{, with one parameter per simple nilpotent }E_{k,k+1};\text{ it fixes the idempotents and the composites are fixed by the cocycle.}\ }
 $$
 
-The frame is the root plus the gauge: $20+4=24=\dim PGL_5$. The root is the base $PGL_5/T$, the gauge is the fibre $T$, and the frame modulo scalars is $PGL_5$.
+The frame is the root plus the frame group: $20+4=24=\dim PGL_5$. The root is the base $PGL_5/T$, the frame group is the fibre $T$, and the frame modulo scalars is $PGL_5$.
 
 | Object | Count or dimension |
 |---|---|
 | Frame modulo scalars | $\dim PGL_5=24$ |
 | Root | $\dim PGL_5/T=20$ |
-| Gauge torus $T$ | $4$ |
+| Frame torus $T$ | $4$ |
 | Simple nilpotents | $4$, $E_{12},E_{23},E_{34},E_{45}$ |
-| Gauge parameters $\lambda_k$ | $4$, one per simple nilpotent |
+| Frame parameters $\lambda_k$ | $4$, one per simple nilpotent |
 | Independent scalar parameters | $4$, not $5$ |
 | Composite $E_{ij}$ scaling | $\prod_{k=i}^{j-1}\lambda_k$ |
 
@@ -358,11 +358,11 @@ The frame is the root plus the gauge: $20+4=24=\dim PGL_5$. The root is the base
 | $v_j^{\vee}$ | The dual functional, $v_j^{\vee}(v_i)=\delta_{ij}$ |
 | $E_{ij}=v_iv_j^{\vee}$ | The matrix units of the frame |
 | $N_k=E_{k,k+1}$ | The simple nilpotent of the step $k\to k+1$, $k=1,\dots,4$ |
-| $D_t=\sum_it_iE_{ii}$ | The diagonal gauge matrix |
+| $D_t=\sum_it_iE_{ii}$ | The diagonal frame matrix |
 | $t=(t_1,\dots,t_5)$ | The frame rescaling, defined modulo a common scalar |
-| $\lambda_k=t_k/t_{k+1}$ | The gauge parameter of the simple nilpotent $N_k$ |
+| $\lambda_k=t_k/t_{k+1}$ | The frame parameter of the simple nilpotent $N_k$ |
 | $\lambda_{ij}=t_i/t_j$ | The scaling of the unit $E_{ij}$ |
-| $T$ | The diagonal torus modulo scalars, the gauge group |
+| $T$ | The diagonal torus modulo scalars, the frame group |
 | $PGL_5/T$ | The root set, the base of the frame bundle |
 
 ## Further Reading
@@ -370,10 +370,10 @@ The frame is the root plus the gauge: $20+4=24=\dim PGL_5$. The root is the base
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for systems of matrix units, the Peirce decomposition and the inner automorphisms of a full matrix algebra.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the elementary matrices, the matrix units and the diagonal similarity $E_{ij}\mapsto(t_i/t_j)E_{ij}$.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the systems of matrix units adapted to an algebra with involution and the unitary gauge.
-- [Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the root, its spectral lines and the idempotents fixed by the gauge.
-- [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the lines $A_{kl}$ whose generators are moved by the gauge.
+- [Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the root, its spectral lines and the idempotents fixed by the frame group.
+- [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the lines $A_{kl}$ whose generators are moved by the frame group.
 - [The Rank-Two Split of $M_5(\mathbb{C})$](the-rank-two-split-of-m5c.html), for the corners $4+6+6+9$ and the two-sided Peirce table.
-- [The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the gauge as the stabiliser of the root and the frame bundle $PGL_5\to PGL_5/T$.
-- [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the unitary gauge $U(1)^4$ and the positive definite trace form.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the frame group as the stabiliser of the root and the frame bundle $PGL_5\to PGL_5/T$.
+- [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the unitary frame group $U(1)^4$ and the positive definite trace form.
 - [The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the action of the matrix units on the carrier.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the general construction at order $n$.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html), for the general construction at order $n$.

@@ -4,7 +4,7 @@
 
 A Peirce basis turns an element of $M_4(\mathbb{C})$ into a $4\times4$ array of coordinates. A **column** of that array is a tuple of $4$ scalars, and this tuple is the **spinor** of the family in the basis. The column is the coordinate form of an element of the left space $M_4P_l\cong\mathbb{C}^{4}$; left multiplication acts on it by the matrix of the element.
 
-The choice of column rather than row is fixed by the action. This article defines the spinor, computes the gauge action, gives the projective reading, the Hermitian norm and the chiral split, and states the weight of the chain. It assumes *The Peirce Decomposition of $M_4(\mathbb{C})$* and *The Peirce Basis of $M_4(\mathbb{C})$*.
+The choice of column rather than row is fixed by the action. This article defines the spinor, computes the action of the frame group, gives the projective reading, the Hermitian norm and the chiral split, and states the weight of the chain. It assumes *The Peirce Decomposition of $M_4(\mathbb{C})$* and *The Peirce Basis of $M_4(\mathbb{C})$*.
 
 ## The Column
 
@@ -52,9 +52,9 @@ $$
 [Ξ_{\mathrm{wfn}}]=[Ξ_{\mathrm{wfn},1}:\cdots:Ξ_{\mathrm{wfn},4}].
 $$
 
-On the open set where every entry is nonzero, the gauge acts transitively: given $[Ξ_{\mathrm{wfn}}]$ and $[\digamma_{\mathrm{map}}]$, the scalars $t_k=Ξ_{\mathrm{wfn},k}/\digamma_{\mathrm{map},k}$ send one to the other. So the orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is its zero pattern.
+On the open set where every entry is nonzero, the frame group acts transitively: given $[Ξ_{\mathrm{wfn}}]$ and $[\digamma_{\mathrm{map}}]$, the scalars $t_k=Ξ_{\mathrm{wfn},k}/\digamma_{\mathrm{map},k}$ send one to the other. So the orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is its zero pattern.
 
-**Invariants need a cycle.** A product of coordinates around a closed cycle is gauge invariant:
+**Invariants need a cycle.** A product of coordinates around a closed cycle is frame invariant:
 
 $$
 X_{k_1k_2}X_{k_2k_3}\cdots X_{k_mk_1}\longmapsto\Bigl(\prod_r t_{k_r}^{-1}t_{k_{r+1}}\Bigr)X_{k_1k_2}\cdots X_{k_mk_1}=X_{k_1k_2}\cdots X_{k_mk_1}.
@@ -64,13 +64,13 @@ A single column has no invariant of this kind unless it closes through a row of 
 
 ## The Hermitian Norm
 
-If the family and the basis are Hermitian, the gauge is $|t_k|=1$, and
+If the family and the basis are Hermitian, the frame group is $|t_k|=1$, and
 
 $$
 \sum_{k=1}^{4}|Ξ_{\mathrm{wfn},k}|^{2}\longmapsto\sum_{k=1}^{4}|Ξ_{\mathrm{wfn},k}|^{2}.
 $$
 
-The norm is gauge invariant, and the orbit is the set of spinors with the same moduli.
+The norm is frame invariant, and the orbit is the set of spinors with the same moduli.
 
 ## The Chiral Split
 
@@ -104,11 +104,11 @@ The Peirce spinor carries no half-angle. A half-angle requires two further choic
 
 ## What a Spinor Is Not
 
-A spinor is not an arbitrary element of $M_4(\mathbb{C})$; it is one column of the coordinates of an element. It is not a Peirce line; it is a tuple of coordinates on $4$ of them. It is not gauge invariant; only the element and its cycle invariants are. It is not the pair of all columns; that is the element.
+A spinor is not an arbitrary element of $M_4(\mathbb{C})$; it is one column of the coordinates of an element. It is not a Peirce line; it is a tuple of coordinates on $4$ of them. It is not frame invariant; only the element and its cycle invariants are. It is not the pair of all columns; that is the element.
 
 ## Summary
 
-The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{4 l})$ up to scale. The gauge sends $Ξ_{\mathrm{wfn},k}\mapsto t_k^{-1}Ξ_{\mathrm{wfn},k}$, with effective group $(\mathbb{C}^{\times})^{4-1}$; projectively the orbit is fixed by the zero pattern; in the Hermitian gauge the norm is invariant. Under the chain the column is the highest-weight-$\tfrac32$ space, so the number of components is $4=2s+1$. A balanced chiral split exists only for even $n$, and the half-angle is a path-and-lift parameter, not a Peirce object.
+The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{4 l})$ up to scale. The frame group sends $Ξ_{\mathrm{wfn},k}\mapsto t_k^{-1}Ξ_{\mathrm{wfn},k}$, with effective group $(\mathbb{C}^{\times})^{4-1}$; projectively the orbit is fixed by the zero pattern; in the Hermitian frame group the norm is invariant. Under the chain the column is the highest-weight-$\tfrac32$ space, so the number of components is $4=2s+1$. A balanced chiral split exists only for even $n$, and the half-angle is a path-and-lift parameter, not a Peirce object.
 
 ## Summary of Notation
 
@@ -116,7 +116,7 @@ The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$,
 |---|---|
 | $X_{kl}$ | The Peirce coordinate |
 | $Ξ_{\mathrm{wfn}}^{(l)}$ | The column of index $l$, a spinor |
-| $t_k$ | A gauge parameter |
+| $t_k$ | A frame parameter |
 | $J_3$ | The chain generator |
 | $s$ | The spin, $(4-1)/2$ |
 
@@ -125,5 +125,5 @@ The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$,
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the transpose as the quaternion conjugation.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the matrix units, the sixteen two-sided operators and the caveat on the two bases.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the lines.
-- [The Peirce Basis of $M_4(\mathbb{C})$](the-peirce-basis-of-m4c.html), for the units and the gauge.
+- [The Peirce Basis of $M_4(\mathbb{C})$](the-peirce-basis-of-m4c.html), for the units and the frame group.
 - [Spinors as Peirce Coordinates in $n$ Dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for the general statement.

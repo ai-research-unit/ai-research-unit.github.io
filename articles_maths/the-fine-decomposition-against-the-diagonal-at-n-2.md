@@ -98,7 +98,7 @@ $$
 
 **Corollary.** $\operatorname{adj}(A)$ is obtained from $A$ by the involution $\tau_{J}$ of *The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$*, and $\operatorname{adj}A=A$ exactly for the matrices with $a=d$ and $b=c=0$.
 
-## The Diagonal, the Two Halves and the Gauge
+## The Diagonal, the Two Halves and the Frame Group
 
 **The symmetric half meets each corner in a real line.** For symmetric $S$ in the standard frame, the corner $A_{11}$ part is $aE_{11}$ with $a$ real and the corner $A_{12}$ part is $bE_{12}$ with $b$ real; so $\operatorname{Sym}_2\cap A_{kl}$ is a real line for each pair.
 
@@ -106,13 +106,13 @@ $$
 
 **Corollary.** $\operatorname{Sym}_2$ has real dimension $4$ inside the eight real dimensions, distributed as one real dimension in each of the four corners.
 
-**The change of frame is the gauge.** Conjugating the family by $g\in\mathrm{GL}_2(\mathbb{C})$ sends $P_{k}$ to $gP_{k}g^{-1}$ and sends the corner $A_{kl}$ to $gA_{kl}g^{-1}$; the decomposition changes but the algebra of the four lines does not.
+**The change of frame is the frame group.** Conjugating the family by $g\in\mathrm{GL}_2(\mathbb{C})$ sends $P_{k}$ to $gP_{k}g^{-1}$ and sends the corner $A_{kl}$ to $gA_{kl}g^{-1}$; the decomposition changes but the algebra of the four lines does not.
 
 **Proposition.** Two complete families are conjugate, and the set of complete families modulo conjugation is a point; the stabiliser of the standard family is the group of diagonal matrices modulo scalars, of dimension $2$.
 
 **Proof.** Two decompositions of $\mathbb{C}^{2}$ into two ordered lines differ by a linear map taking one pair of lines to the other, and that map is unique up to a map preserving each line, which is diagonal.
 
-**The gauge is the rescaling of the frame.** The census of the biquaternion frame in *The Peirce Basis of the Biquaternion Algebra* has one freedom only, the reciprocal rescaling $u\mapsto\lambda u$, $v\mapsto\lambda^{-1}v$; in the matrix language that is the residual diagonal freedom $g=\operatorname{diag}(\lambda,\lambda^{-1})$ modulo the scalars, which is one dimension removed from the two above.
+**The frame group is the rescaling of the frame.** The census of the biquaternion frame in *The Peirce Basis of the Biquaternion Algebra* has one freedom only, the reciprocal rescaling $u\mapsto\lambda u$, $v\mapsto\lambda^{-1}v$; in the matrix language that is the residual diagonal freedom $g=\operatorname{diag}(\lambda,\lambda^{-1})$ modulo the scalars, which is one dimension removed from the two above.
 
 ## Summary
 
@@ -138,4 +138,4 @@ The product rule is $A_{kl}A_{lm}\subseteq A_{km}$ with the mixed product zero, 
 - Yuri A. Drozd and Vladimir V. Kirichenko, *Finite Dimensional Algebras* (Springer, 1994), for fine gradings by finite abelian groups.
 - [The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$](the-ideals-the-centre-and-the-simplicity-of-m2c.html), for the minimal left and right ideals that the corners refine.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the four corners in the biquaternion language.
-- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the frame, the matrix units and the gauge on the biquaternion side.
+- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the frame, the matrix units and the frame group on the biquaternion side.

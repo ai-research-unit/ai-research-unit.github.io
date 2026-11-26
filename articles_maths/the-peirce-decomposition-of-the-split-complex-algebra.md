@@ -131,7 +131,7 @@ $$
 
 ## What the Decomposition Does Not Give
 
-The decomposition gives two lines, each spanned by its idempotent, and no mixed line. It gives no off-diagonal element to choose, no gauge, no coordinate mixing and no two-component spinor. The basis is canonical and the spinor is a single scalar; these are the degenerate forms of the two constructions, and they are treated in the next two articles.
+The decomposition gives two lines, each spanned by its idempotent, and no mixed line. It gives no off-diagonal element to choose, no frame freedom, no coordinate mixing and no two-component spinor. The basis is canonical and the spinor is a single scalar; these are the degenerate forms of the two constructions, and they are treated in the next two articles.
 
 ## Summary
 

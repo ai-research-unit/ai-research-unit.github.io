@@ -4,7 +4,7 @@
 
 Six orthogonal rank-one idempotents cut $M_6(\mathbb{C})$ into $36$ lines, one for each ordered pair. This article states the cut for an arbitrary complete family, proves that the lines are one-dimensional and sum directly, and gives the multiplication rule. It then specialises to the family of a root $H$ with $H^{6}=I$ and simple spectrum.
 
-The article is the family-level part of the trilogy. *The Peirce Basis of $M_6(\mathbb{C})$* chooses one element in each line and computes the gauge; *Spinors as Coordinates in $M_6(\mathbb{C})$* reads the columns of the array. The root and its projectors are *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$*; the flag and the adjoint orbits are *The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$*.
+The article is the family-level part of the trilogy. *The Peirce Basis of $M_6(\mathbb{C})$* chooses one element in each line and computes the frame group; *Spinors as Coordinates in $M_6(\mathbb{C})$* reads the columns of the array. The root and its projectors are *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$*; the flag and the adjoint orbits are *The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$*.
 
 ## The Family
 
@@ -88,7 +88,7 @@ The matrix $F=[v_1|\cdots|v_6]$ is the Fourier matrix, unitary, and $F^{*}HF$ is
 
 ## Dimensions and the Case
 
-The cut has $36$ lines. The family space, the set of ordered $6$-tuples of lines summing to $\mathbb{C}^{6}$, has dimension $6^{2}-6=30$; the gauge has dimension $6-1=5$; the frame space has dimension $6^{2}-1=35$. These numbers are computed in *The Peirce Basis of $M_6(\mathbb{C})$*.
+The cut has $36$ lines. The family space, the set of ordered $6$-tuples of lines summing to $\mathbb{C}^{6}$, has dimension $6^{2}-6=30$; the frame group has dimension $6-1=5$; the frame space has dimension $6^{2}-1=35$. These numbers are computed in *The Peirce Basis of $M_6(\mathbb{C})$*.
 
 For $n=6$ the power $H^{3}$ is an involution: in the eigenbasis $H^{3}=\operatorname{diag}(1,-1,1,-1,1,-1)$. It is $\operatorname{Ad}_S$ with $S=\operatorname{diag}(1,-1,1,-1,1,-1)$, and the columns split $3+3$. The fixed algebra is $M_3(\mathbb{C})\oplus M_3(\mathbb{C})$, of complex dimension $18$, and the $-1$ eigenspace has dimension $18$.
 
@@ -106,7 +106,7 @@ as a direct sum of irreducible $\mathfrak{sl}_2$-spaces of dimensions $3,5,\dots
 
 ## What the Cut Does Not Give
 
-The cut gives the lines and their product. It gives no element in a mixed line, no basis, no gauge and no coordinate. The diagonal is canonical; the mixed lines are not. The selection of one element per line and its freedom are *The Peirce Basis of $M_6(\mathbb{C})$*. The coordinate columns and their reading as spinors are *Spinors as Coordinates in $M_6(\mathbb{C})$*.
+The cut gives the lines and their product. It gives no element in a mixed line, no basis, no frame freedom and no coordinate. The diagonal is canonical; the mixed lines are not. The selection of one element per line and its freedom are *The Peirce Basis of $M_6(\mathbb{C})$*. The coordinate columns and their reading as spinors are *Spinors as Coordinates in $M_6(\mathbb{C})$*.
 
 ## Summary
 
@@ -129,5 +129,5 @@ A complete family of $6$ nonzero idempotents in $M_6(\mathbb{C})$ has rank one a
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the algebra and its matrix units.
 - [Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m6c.html), for the projectors of the root.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the flag and the orbits.
-- [The Peirce Basis of $M_6(\mathbb{C})$](the-peirce-basis-of-m6c.html), for the selection of the units and the gauge.
+- [The Peirce Basis of $M_6(\mathbb{C})$](the-peirce-basis-of-m6c.html), for the selection of the units and the frame group.
 - [Spinors as Coordinates in $M_6(\mathbb{C})$](spinors-as-coordinates-in-m6c.html), for the columns of the array.

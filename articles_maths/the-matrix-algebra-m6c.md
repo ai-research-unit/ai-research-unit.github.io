@@ -4,7 +4,7 @@
 
 $M_6(\mathbb{C})$ is the algebra of complex $6\times6$ matrices, of complex dimension $36$ and real dimension $72$. It has centre $\mathbb{C}I_6$, it is simple, its commutator subspace is the trace-zero hyperplane $\mathfrak{sl}_6$, and its group of invertibles is $GL_6(\mathbb{C})$, of dimension $36$, with projective quotient $PGL_6(\mathbb{C})$, of dimension $35$.
 
-This article fixes the ambient algebra: the matrix units, the trace and the determinant, the centre, the simplicity, the commutator subalgebra, the real structure of Hermitian and anti-Hermitian parts, and the two-sided module structure. It is the foundation on which the frame of *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$* and the coordinates of *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$* are built.
+This article fixes the ambient algebra: the matrix units, the trace and the determinant, the centre, the simplicity, the commutator subalgebra, the real structure of Hermitian and anti-Hermitian parts, and the two-sided module structure. It is the foundation on which the frame of *The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$* and the coordinates of *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$* are built.
 
 No form and no topology are used here. The positive definite trace form is *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$*; the exponential and the Lie group are *The Exponential and the Lie Group of $M_6(\mathbb{C})$*; the modules are *The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$*.
 
@@ -372,7 +372,7 @@ The real structure is $M_6=\mathfrak{u}(6)\oplus\mathrm i\mathfrak{u}(6)$, with 
 
 ## Further Reading
 
-- [The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the frame, the matrix units and the gauge.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m6c.html), for the frame, the matrix units and the frame group.
 - [The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m6c.html), for the coordinates and the scalar-traceless split.
 - [The Involution and the Hermitian Structure of $M_6(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m6c.html), for the positive definite trace form and the real forms.
 - [The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the column ideals and the simple modules.

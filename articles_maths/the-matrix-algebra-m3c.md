@@ -235,7 +235,7 @@ $$
 
 **Proof.** Every class $[A]\in PGL_{3}$ has a representative of determinant $1$: multiply $A$ by a scalar $\lambda$ with $\lambda^{3}=(\det A)^{-1}$. Two such representatives differ by a scalar $\mu$ with $\mu^{3}=1$, so the quotient is $SL_{3}/\mu_{3}$. The dimension is $\dim SL_{3}=8$. The quotient by the finite group $\mu_{3}$ does not change the dimension.
 
-**The action on the algebra.** $PGL_{3}$ acts on $M_{3}(\mathbb{C})$ by conjugation, $[g]\cdot A=gAg^{-1}$; the scalar matrices act trivially, so the action is well defined. The orbits are the conjugacy classes, and their classification by Jordan type is *The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$*. The stabiliser of a root with simple spectrum is the maximal torus $(\mathbb{C}^{\times})^{2}$, of dimension two; this is the gauge of *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
+**The action on the algebra.** $PGL_{3}$ acts on $M_{3}(\mathbb{C})$ by conjugation, $[g]\cdot A=gAg^{-1}$; the scalar matrices act trivially, so the action is well defined. The orbits are the conjugacy classes, and their classification by Jordan type is *The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$*. The stabiliser of a root with simple spectrum is the maximal torus $(\mathbb{C}^{\times})^{2}$, of dimension two; this is the frame group of *The Frame, the Simple Nilpotents and the Frame Group of $M_3(\mathbb{C})$*.
 
 ## The Reading over the Real Numbers
 

@@ -82,7 +82,7 @@ has $\Sigma_r$ of complex dimension $r(2n-r)$; the open stratum $\Sigma_{n-1}$ i
 
 **The projective group is $PGL_n(\mathbb{C})=GL_n(\mathbb{C})/\mathbb{C}^{\times}I$, of complex dimension $n^{2}-1$.** It acts on $M_n(\mathbb{C})$ by conjugation, $A\mapsto SAS^{-1}$, and the kernel of the action is exactly the scalars. The conjugation action preserves the trace, the determinant, the characteristic polynomial and the rank, and its orbits are the Jordan types.
 
-**The projective group is the group of the frame.** A frame is an ordered basis $(v_1,\dots,v_n)$ of $\mathbb{C}^{n}$, and $GL_n(\mathbb{C})$ acts simply transitively on frames; two frames that differ by an overall scalar give the same matrix units $E_{ij}=v_iv_j^{\vee}$. The group of frames modulo the overall scalar is therefore $PGL_n(\mathbb{C})$, and this is the group that will act on the root and on the gauge in the articles that follow.
+**The projective group is the group of the frame.** A frame is an ordered basis $(v_1,\dots,v_n)$ of $\mathbb{C}^{n}$, and $GL_n(\mathbb{C})$ acts simply transitively on frames; two frames that differ by an overall scalar give the same matrix units $E_{ij}=v_iv_j^{\vee}$. The group of frames modulo the overall scalar is therefore $PGL_n(\mathbb{C})$, and this is the group that will act on the root and on the frame group in the articles that follow.
 
 ## The Standard Flag
 

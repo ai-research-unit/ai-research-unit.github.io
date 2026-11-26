@@ -277,7 +277,7 @@ $$
 S=UP,\qquad U\in U(3),\quad P\in\operatorname{Herm}_{>0}(3).
 $$
 
-The gauge torus $T$ acts on the frame by $S\mapsto ST$, and the two factors of the polar decomposition do not transform separately: the polar decomposition of $ST$ is the polar decomposition of $PT$, which mixes the positive factor and the $*$-unitary factor unless $T$ is $*$-unitary. The gauge is not a polar factor.
+The frame torus $T$ acts on the frame by $S\mapsto ST$, and the two factors of the polar decomposition do not transform separately: the polar decomposition of $ST$ is the polar decomposition of $PT$, which mixes the positive factor and the $*$-unitary factor unless $T$ is $*$-unitary. The frame group is not a polar factor.
 
 **The Cartan decomposition.** The decomposition $GL_3(\mathbb{C})=U(3)\cdot\exp(\operatorname{Herm}(3))$ is the Cartan decomposition of the real group $GL_3(\mathbb{C})$ with respect to the involution $\mathrm{J}(X)=-X^{*}$. The fixed subgroup is $U(3)$, the $-1$ eigenspace is $\operatorname{Herm}(3)$, and the symmetric space $GL_3/U(3)\cong\operatorname{Herm}_{>0}(3)$ is the space of positive definite Hermitian matrices, of real dimension $9$ and rank $3$.
 

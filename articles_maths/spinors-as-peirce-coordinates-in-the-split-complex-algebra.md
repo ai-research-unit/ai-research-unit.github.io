@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In the split-complex algebra the Peirce coordinates are the two idempotent coordinates $Q_{+}$ and $Q_{-}$. A column of the coordinate array has one nonzero entry, because the mixed Peirce lines vanish. A spinor is therefore a single real scalar, and it carries no gauge, no chirality and no half-angle.
+In the split-complex algebra the Peirce coordinates are the two idempotent coordinates $Q_{+}$ and $Q_{-}$. A column of the coordinate array has one nonzero entry, because the mixed Peirce lines vanish. A spinor is therefore a single real scalar, and it carries no frame freedom, no chirality and no half-angle.
 
 This article states the coordinates, the columns and the degenerate spinor. It assumes *The Peirce Decomposition of the Split-Complex Algebra* and *The Peirce Basis of the Split-Complex Algebra*.
 
@@ -32,7 +32,7 @@ $$
 
 equivalently the single nonzero scalar $Q_{+}$ or $Q_{-}$.
 
-**There is no gauge.** The basis $\{\Pi_{+},\Pi_{-}\}$ is canonical, so the coordinates are determined by the element and no rescaling is available. The overall factor of a column is not a gauge parameter here; it is simply the value of the scalar. The spinor is the coordinate itself, not a projective class.
+**There is no frame freedom.** The basis $\{\Pi_{+},\Pi_{-}\}$ is canonical, so the coordinates are determined by the element and no rescaling is available. The overall factor of a column is not a frame parameter here; it is simply the value of the scalar. The spinor is the coordinate itself, not a projective class.
 
 **The two columns are the two factors.** The column of index $+$ is the coordinate on $\mathbb{R}\Pi_{+}$, and the column of index $-$ is the coordinate on $\mathbb{R}\Pi_{-}$. The pair $(Q_{+},Q_{-})$ is the element $Q$; a column is one of its two coordinates.
 
@@ -44,15 +44,15 @@ A chiral split of a column requires two entries of the same column, one for each
 
 ## No Half-Angle
 
-The family is a single unordered pair, with no continuous parameter: the only nontrivial idempotents are $\Pi_{+}$ and $\Pi_{-}$, and the only symmetry is $j\mapsto-j$. There is no path of families, no torus of gauges and no lift to a double cover. A half-angle has no place in this layer.
+The family is a single unordered pair, with no continuous parameter: the only nontrivial idempotents are $\Pi_{+}$ and $\Pi_{-}$, and the only symmetry is $j\mapsto-j$. There is no path of families, no torus of rescalings and no lift to a double cover. A half-angle has no place in this layer.
 
 ## What a Spinor Is Not
 
-A spinor is not an element of $\mathbb{C}_{\mathrm{spl}}$; the element is the pair of the two coordinates. It is not a two-component object; it is a single scalar attached to one diagonal line. It is not a projective class, because there is no gauge. It is a coordinate in the canonical Peirce basis.
+A spinor is not an element of $\mathbb{C}_{\mathrm{spl}}$; the element is the pair of the two coordinates. It is not a two-component object; it is a single scalar attached to one diagonal line. It is not a projective class, because there is no frame freedom. It is a coordinate in the canonical Peirce basis.
 
 ## Summary
 
-The Peirce coordinates of the split-complex algebra are $Q_{\pm}=q\pm q'$, and the two columns are $(Q_{+},0)$ and $(0,Q_{-})$. A spinor is one of these columns, equivalently the single scalar $Q_{+}$ or $Q_{-}$. The basis is canonical, the gauge is trivial, there is no chiral split and no half-angle. The pair $(Q_{+},Q_{-})$ is the element, not a spinor.
+The Peirce coordinates of the split-complex algebra are $Q_{\pm}=q\pm q'$, and the two columns are $(Q_{+},0)$ and $(0,Q_{-})$. A spinor is one of these columns, equivalently the single scalar $Q_{+}$ or $Q_{-}$. The basis is canonical, the frame group is trivial, there is no chiral split and no half-angle. The pair $(Q_{+},Q_{-})$ is the element, not a spinor.
 
 ## Summary of Notation
 

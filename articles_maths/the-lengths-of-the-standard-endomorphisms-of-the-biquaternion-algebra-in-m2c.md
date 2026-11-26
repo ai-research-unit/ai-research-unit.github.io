@@ -49,7 +49,7 @@ $$
 
 **Why every row is one.** Each row is a product, and the array of a product is an outer product of rank one unless a multiplier vanishes. The Hermitian pair is a product because its second slot is the fixed matrix $A^{\dagger}$; the star is applied to the parameter and not to the variable, so the operator is complex-linear.
 
-**The adjoint action and the gauge.** $\mathrm{Ad}_A$ has an array of rank one and operator rank four. The two numbers answer different questions, and length one does not imply invertibility. The Peirce gauge, the rescaling $E_{ij}\mapsto(t_i/t_j)E_{ij}$, is conjugation by $t_1P_1+t_2P_2$, which is the one-parameter diagonal torus inside the adjoint action.
+**The adjoint action and the frame group.** $\mathrm{Ad}_A$ has an array of rank one and operator rank four. The two numbers answer different questions, and length one does not imply invertibility. The Peirce frame group, the rescaling $E_{ij}\mapsto(t_i/t_j)E_{ij}$, is conjugation by $t_1P_1+t_2P_2$, which is the one-parameter diagonal torus inside the adjoint action.
 
 **The corner maps.** With $P_1=\operatorname{diag}(1,0)$ and $P_2=\operatorname{diag}(0,1)$, the corner map $X\mapsto P_iXP_j$ reads one entry of the matrix and is a projection of rank one. It is a single product, and the four corners sum to the identity, also of length one.
 

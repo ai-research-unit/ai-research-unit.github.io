@@ -6,7 +6,7 @@
 
 **Three questions it answers, and one it does not.**
 
-- **Where does each entry go?** Every one of the $128$ nonzero fermion–connection entries is a coefficient joining one quartet line to one quartet line. **There are $64$ on the quartet half and $64$ on the conjugate half**, and the article names the four families, prints their matrices, and lists the pairs.
+- **Where does each entry go?** Every one of the $120$ nonzero fermion–connection entries is a coefficient joining one quartet line to one quartet line. **There are $60$ on the quartet half and $60$ on the conjugate half**, and the article names the four families, prints their matrices, and lists the pairs.
 - **What does each entry carry?** $B-L$ is read off the entry and computed for every family. **The fifteen carry $B-L$ and do not carry $T_{3}$**, and the article says exactly where that split sits and why the missing half is a wall and not an oversight.
 - **What does the algebra forbid?** No generator moves a fermion along the lepton line into another lepton line, no generator changes the copy index, and the six mixed planes are the only entries that change a line at all. **Each of the three is a statement with a proof, not a remark.**
 - **It does not derive the fermion Lagrangian.** The matrices are the corpus's; the dynamics is the transcription. **The dynamics is [the spin note](../articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.html)'s ledger**, and this article inherits it without softening it.
@@ -101,14 +101,14 @@ $$
 
 **and the shape is the whole two-index rule.** The array moves $t_{1}\leftrightarrow x_{1}$ and $t_{2}\leftrightarrow x_{2}$ and annihilates every other pair. **No entry mixes $\alpha=1$ with $\alpha=2$**, because the copy index is acted on by the identity.
 
-## The Selection Rule, and the Count $48+8+8$
+## The Selection Rule, and the Count $48+12$
 
 **Dividing the fifteen by what each does to $e_{t}$ is the one classification that matters for physics.**
 
 | class | count | action on $e_{t}$ | consequence |
 | --- | --- | --- | --- |
-| colour planes and colour Cartan | $8$ | $0$ | no coupling of a colour boson to a lepton |
-| corner $iD$ | $1$ | $-3i\,e_{t}$ | the lepton's $B-L$, and no change of line |
+| colour planes, and the two differences of frame directions that cancel the lepton entry | $8$ | $0$ | no coupling of a colour direction to a lepton |
+| the corner direction $iD$, the sum of the three frame arrays | $1$ | $-3i\,e_{t}$ | the lepton's $B-L$, and no change of line |
 | mixed planes $A_{ta}$, $iS_{ta}$ | $6$ | into the colour triple | the leptoquarks, and the only change of line |
 
 **The count is exhaustive and each row is a computation.** A colour plane $A_{ab}$ has its two nonzero entries in rows and columns $a,b$, both inside the triple, so its $t$ column is zero. **The corner is diagonal, so it cannot move a line, and its $t$ entry is $-3i$.** The six mixed planes have their entries in the $t$ row and the $a$ column, so each sends $e_{t}$ to a multiple of $e_{a}$ and nothing else.
@@ -117,16 +117,17 @@ $$
 
 $$
 \underbrace{48}_{\text{twelve planes}\times2\times2}
-+\underbrace{8}_{\text{two diagonals}\times2\times2}
-+\underbrace{8}_{\text{corner}\times4\times2}
-=\underbrace{64}_{\text{one half}},
++\underbrace{12}_{\text{three frame directions}\times2\times2}
+=\underbrace{60}_{\text{one half}},
 \qquad
-64+64=\mathbf{128}.
+60+60=\mathbf{120}.
 $$
 
-**The second $64$ is the conjugate half**, where the vertex is $-t_{a}^{T}\otimes\mathbb{1}_{2}$ and every entry is reversed with a minus. **The two halves have the same count and the opposite sign**, which is the statement §*The Conjugate Half* makes precise.
+**A printed list that takes $iD$ as a member gives $48+8+8=64$ instead, and its extra $8$ belongs to a sum**: $iD$'s four entries sit on the same four diagonal cells that the three frame directions already occupy, two each. **The count of vertex positions is therefore a basis statement; the selection rule below is not.**
 
-**What the first row forbids is lepton flavour.** No generator has an entry joining the lepton line to itself except the corner's phase, so no connection vertex can turn one lepton into another. **That is [the lepton-flavour article](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html)'s structural result**, and here it is one row of a table.
+**The second $60$ is the conjugate half**, where the vertex is $-t_{a}^{T}\otimes\mathbb{1}_{2}$ and every entry is reversed with a minus. **The two halves have the same count and the opposite sign**, which is the statement §*The Conjugate Half* makes precise.
+
+**What the first row forbids is lepton flavour.** No generator has an entry joining the lepton line to itself except the diagonal weight on it, so no connection vertex can turn one lepton into another. **That is [the lepton-flavour article](lepton-flavour-in-the-su4-model-nothing-turns-the-lepton.html)'s structural result**, and here it is one row of a table.
 
 **What the second row forbids is a representative origin for $Q$.** The corner gives the same phase $-3i$ to both copies in the lepton cell and the same phase $+i$ to both copies in a colour cell. **A matrix that is $\mathbb 1$ on the copy index cannot separate $\nu$ from $e$**, and the statement is exact: the two copy entries of every array are equal.
 
@@ -188,22 +189,22 @@ $$
 
 | check | statement | result |
 | --- | --- | --- |
-| entries per half | $48+8+8$ | $64$ |
-| entries in all | $64+64$ | $128$ |
-| quartet entries of the fifteen | $12\cdot2+2\cdot2+4$ | $32$ |
+| entries per half | $48+12$ | $60$ |
+| entries in all | $60+60$ | $120$ |
+| quartet entries of the fifteen | $12\cdot2+3\cdot2$ | $30$ |
 | nonzero brackets | of the $105$ pairs | $80$ |
 | mixed planes | three colours, two plane types | $6$ |
-| corner entries | one per line, diagonal | $4$ |
+| corner entries | four diagonal cells, a sum of three arrays | $4$ |
 | $B-L$ transfer, mixed plane | $-1=\tfrac13-\tfrac43$ | $-1$ |
 | $B-L$ per generation | $2(-1)+6(\tfrac13)$ | $0$ |
 | $Q$ per generation | $0-1+3(\tfrac23)-3(\tfrac13)$ | $0$ |
 | copy-index mixing | $[X\otimes\mathbb 1_{2},\mathbb 1_{4}\otimes\tau_{3}]=0$ | exact |
 | trace of $D$ | $-3+1+1+1$ | $0$ |
-| transposed count | nonzero entries of $t_{a}^{T}$ | $64$ |
+| transposed count | nonzero entries of $t_{a}^{T}$ | $60$ |
 
 ## Summary
 
-**The fifteen act on the sixteen as $X\otimes\mathbb 1_{2}$, and the shadow they cast has $128$ nonzero entries.** Four families, one selection rule: the colour block does not see the lepton, the corner gives it a phase, and the six mixed planes move it to a colour line and carry $\mp\tfrac43$ away with them.
+**The fifteen act on the sixteen as $X\otimes\mathbb 1_{2}$, and the shadow they cast has $120$ nonzero entries.** Three families and a sum, one selection rule: the colour block does not see the lepton, the corner gives it a phase, and the six mixed planes move it to a colour line and carry $\mp\tfrac43$ away with them.
 
 **The copy index is where the model stops.** Every array is the identity on it, so no connection vertex can change it, and $Q$ therefore has a global half and a connection half that never meet. **That is the chiral wall, stated as a matrix fact.**
 

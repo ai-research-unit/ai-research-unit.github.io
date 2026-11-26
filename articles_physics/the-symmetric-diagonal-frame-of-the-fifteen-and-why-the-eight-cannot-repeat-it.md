@@ -249,25 +249,36 @@ $$
 
 so that the kinetic term is canonical, which requires $\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$ and therefore requires the $G_a$ to be mutually orthogonal.
 
-The twelve off-diagonal arrays have $n_a=2$ and are orthogonal. The frame has $n_j=2$ as well, so all fifteen printed arrays share one norm, and the canonical generators $t_j=iG_j/2=-\tfrac12M_j$ are Hermitian. But the three are not orthogonal:
+The twelve off-diagonal arrays have $n_a=2$ and are orthogonal. The frame has $n_j=2$ as well, so all fifteen printed arrays share one norm and all fifteen are anti-Hermitian; the canonical generators
+$$
+t^{(M)}_j=\frac{iG_j}{2}=-\tfrac12M_j,\qquad \operatorname{tr}\bigl(t^{(M)}_jt^{(M)}_j\bigr)=\tfrac12,
+$$
+are Hermitian, as $i$ times an anti-Hermitian array must be. But the three are not orthogonal:
 
 $$
-\operatorname{tr}\bigl(t_jt_k\bigr)=\tfrac12\delta_{jk}+\tfrac14\bigl(1-\delta_{jk}\bigr).
+\operatorname{tr}\bigl(t^{(M)}_jt^{(M)}_k\bigr)=\tfrac12\delta_{jk}+\tfrac14\bigl(1-\delta_{jk}\bigr).
 $$
 
 The kinetic term is therefore not diagonal in the frame, and one rotation is needed to reach canonical form. It is the integer rotation to the orthogonal sibling:
 
 $$
-A_j=\sum_kM_k-2M_j,\qquad t^{(A)}_j=-\frac{A_j}{\sqrt{8}},\qquad \operatorname{tr}\bigl(t^{(A)}_jt^{(A)}_k\bigr)=\tfrac12\delta_{jk}.
+A_j=\sum_kM_k-2M_j,\qquad t^{(A)}_j=\frac{i\,(iA_j)}{\sqrt{8}}=-\frac{A_j}{\sqrt{8}},\qquad \operatorname{tr}\bigl(t^{(A)}_jt^{(A)}_k\bigr)=\tfrac12\delta_{jk}.
 $$
 
 With the orthogonal form the three diagonal generators have $n_a=4$ and the twelve have $n_a=2$, so the rescaling of the structure constants $F^{c}{}_{ab}=\sqrt{n_c/2n_an_b}\,f^{c}{}_{ab}$ is not uniform across the fifteen, exactly as before the change.
 
-The trace direction is a combination, and its coefficient is not one:
+The trace direction is a combination, and its coefficient is not one. Because $D=\sum_jM_j$ and $|D|^2=12$, the canonical generator of the vacuum direction is
 
 $$
-t_{15}=\frac{1}{\sqrt6}\sum_{j=x,y,z}t_j,\qquad \operatorname{tr}\bigl(t_{15}t_{15}\bigr)=\tfrac12 .
+t_{15}=\frac{i\,(iD)}{\sqrt{24}}=-\frac{D}{\sqrt{24}},\qquad \operatorname{tr}\bigl(t_{15}t_{15}\bigr)=\tfrac12,
 $$
+
+and in the two frame sets it reads
+
+$$
+t_{15}=\frac{1}{\sqrt6}\sum_jt^{(M)}_j=\frac{1}{\sqrt3}\sum_jt^{(A)}_j .
+$$
+**The coefficients differ because the two sets are normalised differently, and both give $\operatorname{tr}(t_{15}t_{15})=\tfrac12$: $\bigl|-\tfrac12D\bigr|^2=3$ and $\bigl|-D/\sqrt8\bigr|^2=\tfrac32$.** **A sum of three of the fifteen is not one of the fifteen, and this is the only coefficient in the normalisation that is a sum's rather than a single array's.**
 
 Verified. Every statement about $D$ survives unchanged, because those statements concern $\operatorname{ad}(D)$ and not the frame: $|D|^2=12$, the eigenvalues $0$ nine times and $\pm4i$ three times each, $32v^2=2(1-(-3))^2v^2$ and $M_X^2=16g_4^2v_C^2$. The frame is bookkeeping; the direction is physics.
 

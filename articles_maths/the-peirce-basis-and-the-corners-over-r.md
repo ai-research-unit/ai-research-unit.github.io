@@ -4,7 +4,7 @@
 
 **A real frame cuts $M_{n}(\mathbb{R})$ into $n^{2}$ real corners, the corners multiply by the matrix-unit table, and the residual freedom is conjugation by an invertible real matrix, so the frame variety has dimension $n^{2}-n$.**
 
-The article states the corners, proves that they sum directly to the algebra, states the products $E_{ij}E_{kl}=\delta_{jk}E_{il}$, defines a system of matrix units over $\mathbb{R}$, reads the corners as joint eigenspaces of two commuting families of operators, and computes the real gauge. Frames of equal ranks are conjugate by $\mathrm{GL}_{n}(\mathbb{R})$, the stabiliser is the diagonal subgroup $D$, and the frame variety is $\mathrm{GL}_{n}(\mathbb{R})/D$, of dimension $n^{2}-n$. It assumes *The Peirce Basis in $n$ Dimensions*, which runs the same list over $\mathbb{C}$, and defers the symmetric half of the corners to *The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra*.
+The article states the corners, proves that they sum directly to the algebra, states the products $E_{ij}E_{kl}=\delta_{jk}E_{il}$, defines a system of matrix units over $\mathbb{R}$, reads the corners as joint eigenspaces of two commuting families of operators, and computes the real frame group. Frames of equal ranks are conjugate by $\mathrm{GL}_{n}(\mathbb{R})$, the stabiliser is the diagonal subgroup $D$, and the frame variety is $\mathrm{GL}_{n}(\mathbb{R})/D$, of dimension $n^{2}-n$. It assumes *The Peirce Basis in $n$ Dimensions*, which runs the same list over $\mathbb{C}$, and defers the symmetric half of the corners to *The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra*.
 
 ## The Frame
 
@@ -98,7 +98,7 @@ $$
 
 **The eigenvalues are the real numbers $0$ and $1$.** Each $L_{k}$ and $R_{k}$ is $\mathbb{R}$-linear with spectrum $\{0,1\}$, so the joint eigenspaces of a real frame are real subspaces, and no complex number enters the cut.
 
-## The Real Gauge
+## The Real Frame Group
 
 **Two frames with the same rank vector differ by conjugation by an invertible real matrix.** There is $S\in\mathrm{GL}_{n}(\mathbb{R})$ with
 
@@ -118,7 +118,7 @@ $$
 
 of dimension $n$.
 
-**The gauge acts on the units by ratios.** Conjugation sends $E_{kl}=v_{k}\ell_{l}$ to $(Sv_{k})(\ell_{l}S^{-1})$; for diagonal $S$ with entries $t_{k}$,
+**The frame group acts on the units by ratios.** Conjugation sends $E_{kl}=v_{k}\ell_{l}$ to $(Sv_{k})(\ell_{l}S^{-1})$; for diagonal $S$ with entries $t_{k}$,
 
 $$
 E_{kl}\longmapsto t_{k}t_{l}^{-1}E_{kl},
@@ -177,7 +177,7 @@ A frame of $M_{n}(\mathbb{R})$ is an ordered family of orthogonal real idempoten
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Peirce corners, systems of matrix units and their uniqueness up to conjugation.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for idempotents, adapted bases and simultaneous diagonalisation over $\mathbb{R}$.
-- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the complex version of the same table and the gauge on the units.
+- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the complex version of the same table and the frame group on the units.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the matrix units and the transpose over $\mathbb{R}$.
 - [The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra](the-peirce-decomposition-of-sym-n-r-as-a-jordan-algebra.html), for the symmetric half of the corners.
-- [The Frame, the Simple Nilpotents and the Real Gauge of $M_n(\mathbb{R})$](the-frame-the-simple-nilpotents-and-the-real-gauge-of-mnr.html), for the nilpotents attached to a frame.
+- [The Frame, the Simple Nilpotents and the Real Frame Group of $M_n(\mathbb{R})$](the-frame-the-simple-nilpotents-and-the-real-frame-group-of-mnr.html), for the nilpotents attached to a frame.

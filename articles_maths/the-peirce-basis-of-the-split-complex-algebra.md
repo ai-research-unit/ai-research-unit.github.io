@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Peirce decomposition of the split-complex algebra has two diagonal lines and no mixed line. A Peirce basis is therefore the pair of the two idempotents, $\Pi_{+}$ and $\Pi_{-}$, and it is canonical: there is no element to choose, no gauge and no freedom. This article states the basis, proves its uniqueness, gives the coordinates and records the degenerate dimension count.
+The Peirce decomposition of the split-complex algebra has two diagonal lines and no mixed line. A Peirce basis is therefore the pair of the two idempotents, $\Pi_{+}$ and $\Pi_{-}$, and it is canonical: there is no element to choose, no frame freedom and no freedom. This article states the basis, proves its uniqueness, gives the coordinates and records the degenerate dimension count.
 
 It assumes *The Peirce Decomposition of the Split-Complex Algebra*. The spinors are *Spinors as Peirce Coordinates in the Split-Complex Algebra*.
 
@@ -28,13 +28,13 @@ So the Peirce basis is the pair $\{\Pi_{+},\Pi_{-}\}$.
 
 **Proof.** The diagonal line $\mathbb{C}_{\mathrm{spl},++}=\mathbb{R}\Pi_{+}$ contains the two idempotents $0$ and $\Pi_{+}$; a basis element is nonzero, so it is $\Pi_{+}$. The same argument gives $E_{--}=\Pi_{-}$. The product rule is satisfied because $\Pi_{+}\Pi_{-}=0$ and $\Pi_{\pm}^{2}=\Pi_{\pm}$. There is no other choice, because there is no other line.
 
-**There is no gauge.** In the general theory two bases of the same family differ by $E_{\sigma\tau}\mapsto t_{\sigma}t_{\tau}^{-1}E_{\sigma\tau}$. Here the only entries are diagonal, and the replacement reads
+**There is no frame freedom.** In the general theory two bases of the same family differ by $E_{\sigma\tau}\mapsto t_{\sigma}t_{\tau}^{-1}E_{\sigma\tau}$. Here the only entries are diagonal, and the replacement reads
 
 $$
 E_{\sigma\sigma}\longmapsto t_{\sigma}t_{\sigma}^{-1}E_{\sigma\sigma}=E_{\sigma\sigma}.
 $$
 
-The formula is defined but acts trivially. The effective gauge is the trivial group.
+The formula is defined but acts trivially. The effective frame group is the trivial group.
 
 ## The Coordinates
 
@@ -64,7 +64,7 @@ which is the matrix product of the diagonal arrays. The coordinates are the idem
 
 **The frame.** The Peirce basis is unique, so the frame space is a single point.
 
-**The gauge.** The gauge is trivial, of dimension $0$.
+**The frame group.** The frame group is trivial, of dimension $0$.
 
 **The count.** The orbit–stabiliser count degenerates:
 
@@ -76,13 +76,13 @@ The automorphism group of $\mathbb{C}_{\mathrm{spl}}$ is $\{1,\varsigma\}$ with 
 
 ## What the Basis Is Not
 
-The basis is not a choice. In the nondegenerate case the word *basis* names a selection inside each line, and the selection carries a gauge; here the selection is forced, and the gauge is trivial. The word is still correct, because the two units satisfy the product rule and span the algebra, but it carries no freedom.
+The basis is not a choice. In the nondegenerate case the word *basis* names a selection inside each line, and the selection carries a frame group; here the selection is forced, and the frame group is trivial. The word is still correct, because the two units satisfy the product rule and span the algebra, but it carries no freedom.
 
 The basis is not a second decomposition. The lines are the decomposition; the two idempotents are the only nonzero elements available.
 
 ## Summary
 
-The Peirce basis of the split-complex algebra is the pair $\{\Pi_{+},\Pi_{-}\}$, and it is unique. Every element is $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ with $Q_{\pm}=q\pm q'$, the coordinate array is diagonal, and the product is componentwise. The gauge is trivial, the dimension count is $0=0+0$, and the only symmetry is $j\mapsto-j$, which swaps the two lines.
+The Peirce basis of the split-complex algebra is the pair $\{\Pi_{+},\Pi_{-}\}$, and it is unique. Every element is $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ with $Q_{\pm}=q\pm q'$, the coordinate array is diagonal, and the product is componentwise. The frame group is trivial, the dimension count is $0=0+0$, and the only symmetry is $j\mapsto-j$, which swaps the two lines.
 
 ## Summary of Notation
 
@@ -97,4 +97,4 @@ The Peirce basis of the split-complex algebra is the pair $\{\Pi_{+},\Pi_{-}\}$,
 
 - [The Peirce Decomposition of the Split-Complex Algebra](the-peirce-decomposition-of-the-split-complex-algebra.html), for the lines and their multiplication.
 - [Spinors as Peirce Coordinates in the Split-Complex Algebra](spinors-as-peirce-coordinates-in-the-split-complex-algebra.html), for the degenerate spinor.
-- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the nondegenerate case and the gauge.
+- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the nondegenerate case and the frame group.

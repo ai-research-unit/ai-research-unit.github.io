@@ -29,7 +29,7 @@ $$
 \dim\operatorname{Gr}(2,6)=2\cdot4=8 .
 $$
 
-The gauge is the fibre of the conjugation map over the root: the set of frames diagonalising $H$ is a torsor under the stabilizer $(\mathbb{C}^\times)^5$.
+The frame group is the fibre of the conjugation map over the root: the set of frames diagonalising $H$ is a torsor under the stabilizer $(\mathbb{C}^\times)^5$.
 
 The article assumes the roots of *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$* and the projective linear group of *The Matrix Algebra $M_6(\mathbb{C})$*. It uses the language of algebraic groups but no topology beyond the dimension counts. The Jordan decomposition is *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$*; the spectral strata are *The Sextic and the Spectral Strata of $M_6(\mathbb{C})$*; the Grassmannian geometry is *The Geometry of the Idempotents of $M_6(\mathbb{C})$*.
 
@@ -150,15 +150,15 @@ of dimension $5$.
 
 **Proof.** The centralizer in $GL_6$ is the diagonal torus $(\mathbb{C}^\times)^6$; the center $\mathbb{C}^\times I_6$ is the diagonal scalar, and the quotient is $(\mathbb{C}^\times)^5$.
 
-**Corollary (the stabilizer of the root).** The stabilizer of the root $H$ is the gauge torus
+**Corollary (the stabilizer of the root).** The stabilizer of the root $H$ is the frame torus
 
 $$
 (\mathbb{C}^\times)^5,
 $$
 
-the same group that rescales the simple nilpotents of *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$*.
+the same group that rescales the simple nilpotents of *The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$*.
 
-**Proof.** $H$ has simple spectrum, so its centralizer is the diagonal torus modulo the center; the gauge is the same torus.
+**Proof.** $H$ has simple spectrum, so its centralizer is the diagonal torus modulo the center; the frame group is the same torus.
 
 ### The Orbit–Stabilizer Count
 
@@ -195,7 +195,7 @@ $$
 
 **Proof.** The Borel subgroup of upper triangular matrices has $6$ diagonal and $15$ off-diagonal parameters, of dimension $21$; the quotient has dimension $36-21=15$. The Grassmannian $\operatorname{Gr}(k,6)$ has dimension $k(6-k)$: $1\cdot5=5$ and $2\cdot4=8$.
 
-### The Gauge as the Fibre
+### The Frame Group as the Fibre
 
 **Theorem.** The conjugation map
 
@@ -205,13 +205,13 @@ PGL_6\longrightarrow\mathcal O_H,
 \bar g\longmapsto gHg^{-1},
 $$
 
-is a principal bundle with fibre the stabilizer $(\mathbb{C}^\times)^5$. The gauge group is the fibre over the root $H$.
+is a principal bundle with fibre the stabilizer $(\mathbb{C}^\times)^5$. The frame group is the fibre over the root $H$.
 
 **Proof.** The fibre over $H$ is the set of $\bar g$ with $gHg^{-1}=H$, that is the stabilizer. The map is surjective onto the orbit by definition, and the stabilizer acts freely on the fibres.
 
-**Corollary (the frame picture).** The set of ordered bases in which $H$ is diagonal is a torsor under $(\mathbb{C}^\times)^6$; modulo the overall scalar, the set of projective frames is a torsor under the gauge $(\mathbb{C}^\times)^5$. Choosing a projective frame is choosing a gauge.
+**Corollary (the frame picture).** The set of ordered bases in which $H$ is diagonal is a torsor under $(\mathbb{C}^\times)^6$; modulo the overall scalar, the set of projective frames is a torsor under the frame group $(\mathbb{C}^\times)^5$. Choosing a projective frame is choosing a frame group.
 
-**Proof.** If $g_0$ diagonalizes $H$, every other diagonalizing basis is $g_0t$ with $t$ in the centralizer $(\mathbb{C}^\times)^6$; the centralizer modulo the center is the gauge.
+**Proof.** If $g_0$ diagonalizes $H$, every other diagonalizing basis is $g_0t$ with $t$ in the centralizer $(\mathbb{C}^\times)^6$; the centralizer modulo the center is the frame group.
 
 ## The Flag Variety
 
@@ -261,7 +261,7 @@ $$
 
 **Proof.** Choose $V_1\in\mathbb{P}^5$ (dimension $5$); then $V_2/V_1$ is a line in $\mathbb{C}^6/V_1\cong\mathbb{C}^5$, so $V_2$ varies in a $\mathbb{P}^4$ (dimension $4$); then $V_3/V_2$ varies in a $\mathbb{P}^3$ (dimension $3$); then $V_4/V_3$ in a $\mathbb{P}^2$ (dimension $2$); then $V_5/V_4$ in a $\mathbb{P}^1$ (dimension $1$). The total is $15$.
 
-**Corollary (the eigenbasis).** An ordered eigenbasis of a cyclic element with simple spectrum determines a complete flag: the first $k$ eigenvectors span $V_k$. The flag is independent of the scaling of the eigenvectors; the scalings are the gauge.
+**Corollary (the eigenbasis).** An ordered eigenbasis of a cyclic element with simple spectrum determines a complete flag: the first $k$ eigenvectors span $V_k$. The flag is independent of the scaling of the eigenvectors; the scalings are the frame group.
 
 **Proof.** The flag is the chain of spans; rescaling a vector does not change its span.
 
@@ -319,7 +319,7 @@ with fibre the product of the flag varieties of $V_k$ and $\mathbb{C}^6/V_k$.
 
 **Remark (the Peirce reading).** The image of a rank-$k$ idempotent is a point of $\operatorname{Gr}(k,6)$; the idempotent is a point of the total space of the complement bundle over the Grassmannian. The corners are the blocks relative to the plane and its complement; the stabilizer of the idempotent is the Levi $GL(V)\times GL(W)$, while the parabolic is the stabilizer of the image plane alone. **The Grassmannian is the base of the Peirce fibration, not the whole space of idempotents.**
 
-## The Gauge as the Fibre over the Root
+## The Frame Group as the Fibre over the Root
 
 ### The Bundle
 
@@ -331,7 +331,7 @@ $$
 \pi(\bar g)=gHg^{-1},
 $$
 
-is a principal $(\mathbb{C}^\times)^5$-bundle. The gauge group is the fibre $\pi^{-1}(H)$.
+is a principal $(\mathbb{C}^\times)^5$-bundle. The frame group is the fibre $\pi^{-1}(H)$.
 
 **Proof.** The fibre is the stabilizer; the action of the stabilizer on the fibre is free and transitive.
 
@@ -345,11 +345,11 @@ $$
 
 ### The Root
 
-**Theorem.** The orbit $\mathcal O_H$ is the set of roots: the matrices with characteristic polynomial $t^6-1$ and simple spectrum. The fibre over $H$ is the gauge torus; the total space is the set of pairs (root, frame).
+**Theorem.** The orbit $\mathcal O_H$ is the set of roots: the matrices with characteristic polynomial $t^6-1$ and simple spectrum. The fibre over $H$ is the frame torus; the total space is the set of pairs (root, frame).
 
 **Proof.** The roots are conjugate to $H$; the fibre is the centralizer.
 
-**Corollary (the frame bundle).** The total space of the bundle is the set of pairs $(H',g)$ with $H'=gHg^{-1}$; the projection forgets $g$. The gauge is the choice of the frame at the root.
+**Corollary (the frame bundle).** The total space of the bundle is the set of pairs $(H',g)$ with $H'=gHg^{-1}$; the projection forgets $g$. The frame group is the choice of the frame at the root.
 
 **Proof.** The pair is determined by $g$ modulo the stabilizer; the total space is $PGL_6$.
 
@@ -367,7 +367,7 @@ $$
 
 **Proof.** The first is the $PGL_6$ orbit–stabilizer count; the second the $GL_6$ count; the third the iterated bundle of the flag variety.
 
-**Remark (the root and the flag).** The root fixes the spectrum; the orbit is the set of matrices with that spectrum; the gauge is the ambiguity of the eigenbasis; the flag is the chain of spans of the eigenbasis. **The root, the orbit, the gauge and the flag are four readings of the same eigenbasis.**
+**Remark (the root and the flag).** The root fixes the spectrum; the orbit is the set of matrices with that spectrum; the frame group is the ambiguity of the eigenbasis; the flag is the chain of spans of the eigenbasis. **The root, the orbit, the frame group and the flag are four readings of the same eigenbasis.**
 
 ## Summary
 
@@ -391,13 +391,13 @@ $$
 \boxed{\ 35=30+5,\qquad \dim GL_6/B=15,\qquad \operatorname{Gr}(1,6)=\mathbb{P}^5,\quad \dim\operatorname{Gr}(2,6)=8 .\ }
 $$
 
-The flag variety $GL_6/B$ has dimension $15$; the Grassmannians have dimensions $k(6-k)$; the full flag fibres over each Grassmannian. The conjugation map $PGL_6\to\mathcal O_H$ is a principal bundle with fibre the gauge torus $(\mathbb{C}^\times)^5$; the gauge is the fibre over the root.
+The flag variety $GL_6/B$ has dimension $15$; the Grassmannians have dimensions $k(6-k)$; the full flag fibres over each Grassmannian. The conjugation map $PGL_6\to\mathcal O_H$ is a principal bundle with fibre the frame torus $(\mathbb{C}^\times)^5$; the frame group is the fibre over the root.
 
 | Object | Dimension |
 |---|---|
 | $PGL_6$ | $35$ |
 | Cyclic orbit | $30$ |
-| Gauge stabilizer | $5$ |
+| Frame group stabilizer | $5$ |
 | $GL_6$ | $36$ |
 | Flag variety | $15$ |
 | $\operatorname{Gr}(1,6)=\mathbb{P}^5$ | $5$ |
@@ -422,7 +422,7 @@ The flag variety $GL_6/B$ has dimension $15$; the Grassmannians have dimensions 
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for $PGL_6$, the derivations and the automorphisms.
 - [The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m6c.html), for the Jordan decomposition and the Jordan type.
 - [The Sextic and the Spectral Strata of $M_6(\mathbb{C})$](the-sextic-and-the-spectral-strata-of-m6c.html), for the spectral strata and the centralizer.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the gauge torus.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m6c.html), for the frame torus.
 - [The Geometry of the Idempotents of $M_6(\mathbb{C})$](the-geometry-of-the-idempotents-of-m6c.html), for the Grassmannian of the idempotents.
 - [The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the projective space of the minimal ideals.
 - [The Adjoint Action of a Lie Algebra](the-adjoint-action-of-a-lie-algebra.html), for the general theory of conjugacy classes.

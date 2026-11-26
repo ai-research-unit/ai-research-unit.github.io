@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The Peirce decomposition of $M_{n}(\mathbb{C})$ relative to a complete family of $n$ idempotents gives $n^{2}$ lines and no element inside the mixed ones. A **Peirce basis** is a choice of one nonzero element in each line, normalised so that the chosen elements multiply by the matrix-unit rule. The basis is not part of the decomposition: the decomposition is canonical given the family, while the basis is a choice, and the freedom of the choice is the **Peirce gauge**.
+The Peirce decomposition of $M_{n}(\mathbb{C})$ relative to a complete family of $n$ idempotents gives $n^{2}$ lines and no element inside the mixed ones. A **Peirce basis** is a choice of one nonzero element in each line, normalised so that the chosen elements multiply by the matrix-unit rule. The basis is not part of the decomposition: the decomposition is canonical given the family, while the basis is a choice, and the freedom of the choice is the **Peirce frame group**.
 
-The article proves that a Peirce basis exists, that it is unique up to the gauge, and that the gauge is a torus of dimension $n-1$. It identifies the basis with a system of matrix units, proves that two such systems are conjugate by an invertible element unique up to the centre, gives the coordinates of an element in the basis, the dimension count of the families and of the frames, and the projective reading of the construction. It assumes *The Peirce Decomposition in $n$ Dimensions*.
+The article proves that a Peirce basis exists, that it is unique up to the frame group, and that the frame group is a torus of dimension $n-1$. It identifies the basis with a system of matrix units, proves that two such systems are conjugate by an invertible element unique up to the centre, gives the coordinates of an element in the basis, the dimension count of the families and of the frames, and the projective reading of the construction. It assumes *The Peirce Decomposition in $n$ Dimensions*.
 
 ## The Definition
 
@@ -75,13 +75,13 @@ $$
 
 hence $c_{kl}c_{lq}=c_{kq}$. Since $E'_{11}=c_{11}P_{1}$ is idempotent and nonzero, $c_{11}=1$. Setting $t_{k}=c_{k1}$ gives $c_{kl}=c_{k1}c_{1l}=t_{k}c_{1l}$. From $c_{1l}c_{l1}=c_{11}=1$ and $c_{l1}=t_{l}$, we get $c_{1l}=t_{l}^{-1}$. So $c_{kl}=t_{k}t_{l}^{-1}$. The converse is a direct check of the product rule. 
 
-**The gauge group.** The scalars $t_{k}$ form $(\mathbb{C}^{\times})^{n}$, but a common scalar acts trivially, since $(\lambda t_{k})(\lambda t_{l})^{-1}=t_{k}t_{l}^{-1}$. The effective group is
+**The frame group.** The scalars $t_{k}$ form $(\mathbb{C}^{\times})^{n}$, but a common scalar acts trivially, since $(\lambda t_{k})(\lambda t_{l})^{-1}=t_{k}t_{l}^{-1}$. The effective group is
 
 $$
 (\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1},
 $$
 
-the **Peirce gauge**. It acts on the coordinates by
+the **Peirce frame group**. It acts on the coordinates by
 
 $$
 X'_{kl}=t_{k}^{-1}t_{l}X_{kl},
@@ -89,13 +89,13 @@ $$
 
 because $X'_{kl}E'_{kl}=X_{kl}E_{kl}$ and $E'_{kl}=t_{k}t_{l}^{-1}E_{kl}$.
 
-**The Hermitian case.** If the family is Hermitian, $P_{k}^{*}=P_{k}$, a Hermitian Peirce basis has $E_{lk}=E_{kl}^{*}$. In the form $E_{kl}=v_{k}v_{l}^{*}$, with $v_{k}$ a unit vector, this is automatic, and the gauge is restricted to $|t_{k}|=1$. The gauge group is then $(S^{1})^{n-1}$.
+**The Hermitian case.** If the family is Hermitian, $P_{k}^{*}=P_{k}$, a Hermitian Peirce basis has $E_{lk}=E_{kl}^{*}$. In the form $E_{kl}=v_{k}v_{l}^{*}$, with $v_{k}$ a unit vector, this is automatic, and the frame group is restricted to $|t_{k}|=1$. The frame group is then $(S^{1})^{n-1}$.
 
 ## The Corners
 
 **A Peirce corner is a line $A_{kl}$, and the basis takes one element from each of the $n^{2}$ corners.** The word is the one used in the biquaternion articles, where the four lines $\mathbb{B}_{++},\mathbb{B}_{+-},\mathbb{B}_{-+},\mathbb{B}_{--}$ are called the four corners. In $M_{n}(\mathbb{C})$ there are $n^{2}$ of them.
 
-**The diagonal corners and the off-diagonal corners behave differently.** The diagonal corner $A_{kk}=\mathbb{C}P_{k}$ contains exactly two idempotents, $0$ and $P_{k}$, and the basis takes the nonzero one: $E_{kk}=P_{k}$, canonical once the family is fixed. An off-diagonal corner $A_{kl}$, $k\ne l$, contains no idempotent, since $A_{kl}^{2}=0$; the basis takes a nilpotent $E_{kl}$, and the choice is free up to the gauge. So the basis is fixed on the $n$ diagonal corners and chosen on the $n^{2}-n$ off-diagonal ones.
+**The diagonal corners and the off-diagonal corners behave differently.** The diagonal corner $A_{kk}=\mathbb{C}P_{k}$ contains exactly two idempotents, $0$ and $P_{k}$, and the basis takes the nonzero one: $E_{kk}=P_{k}$, canonical once the family is fixed. An off-diagonal corner $A_{kl}$, $k\ne l$, contains no idempotent, since $A_{kl}^{2}=0$; the basis takes a nilpotent $E_{kl}$, and the choice is free up to the frame group. So the basis is fixed on the $n$ diagonal corners and chosen on the $n^{2}-n$ off-diagonal ones.
 
 **The product of two basis elements names a third corner.** The rule $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ says that the product of the element of the corner $(k,l)$ with the element of the corner $(p,q)$ is the element of the corner $(k,q)$ when $l=p$, and is zero otherwise. In the corner language of *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$*, the corners are the summands $A_{kl}=\operatorname{Hom}(V_{l},V_{k})$ and the composites are the products of maps.
 
@@ -121,7 +121,7 @@ A Peirce basis is exactly such a system: the definition of §*The Definition* an
 
 - the **family space**, the set of ordered $n$-tuples of lines $V_{1},\dots,V_{n}$ with $V_{1}\oplus\cdots\oplus V_{n}=\mathbb{C}^{n}$;
 - the **frame space**, the set of Peirce bases;
-- the **gauge**, the fibre of the map from frames to families over a fixed family.
+- the **frame group**, the fibre of the map from frames to families over a fixed family.
 
 **The dimensions.** The family space is an open subset of $(\mathbb{P}^{n-1})^{n}$, so
 
@@ -129,27 +129,27 @@ $$
 \dim_{\mathbb{C}}(\text{families})=n(n-1)=n^{2}-n .
 $$
 
-The gauge is $(\mathbb{C}^{\times})^{n-1}$, of dimension $n-1$. The frame space is the total space, of dimension
+The frame group is $(\mathbb{C}^{\times})^{n-1}$, of dimension $n-1$. The frame space is the total space, of dimension
 
 $$
 (n^{2}-n)+(n-1)=n^{2}-1 .
 $$
 
-**The orbit and the stabiliser.** The group $PGL_{n}(\mathbb{C})$ acts on the family space, and it acts transitively: a family is a projective frame, and $PGL_{n}$ sends one projective frame to any other. The family is therefore the orbit, and its dimension is $n^{2}-n$. The stabiliser of a family is the diagonal torus modulo the scalars, of dimension $n-1$: an element of $PGL_{n}$ that fixes each line acts on the $n$ lines by $n$ scalars, and the common scalar is the identity of $PGL_{n}$. The gauge is this stabiliser. The count is the orbit–stabiliser count of the frame space:
+**The orbit and the stabiliser.** The group $PGL_{n}(\mathbb{C})$ acts on the family space, and it acts transitively: a family is a projective frame, and $PGL_{n}$ sends one projective frame to any other. The family is therefore the orbit, and its dimension is $n^{2}-n$. The stabiliser of a family is the diagonal torus modulo the scalars, of dimension $n-1$: an element of $PGL_{n}$ that fixes each line acts on the $n$ lines by $n$ scalars, and the common scalar is the identity of $PGL_{n}$. The frame group is this stabiliser. The count is the orbit–stabiliser count of the frame space:
 
 $$
 \dim PGL_{n}=n^{2}-1=(n^{2}-n)+(n-1).
 $$
 
-For $n=3$ it reads $8=6+2$: the frame space has dimension $8$, the family $6$, and the gauge $2$. The family is the orbit, and the gauge is the stabiliser.
+For $n=3$ it reads $8=6+2$: the frame space has dimension $8$, the family $6$, and the frame group $2$. The family is the orbit, and the frame group is the stabiliser.
 
-**The projective reading.** A family is $n$ points of $\mathbb{P}^{n-1}$ in general position, that is, a projective frame. A Peirce basis is a lift of that projective frame to a basis of $\mathbb{C}^{n}$, and the gauge is the freedom of the lift: each point may be rescaled independently, with the common rescaling of all $n$ points acting trivially. The decomposition is the projective data; the basis is the lift.
+**The projective reading.** A family is $n$ points of $\mathbb{P}^{n-1}$ in general position, that is, a projective frame. A Peirce basis is a lift of that projective frame to a basis of $\mathbb{C}^{n}$, and the frame group is the freedom of the lift: each point may be rescaled independently, with the common rescaling of all $n$ points acting trivially. The decomposition is the projective data; the basis is the lift.
 
-**The biquaternion layer.** For $n=2$ the same count is $3=2+1$ in complex dimensions, that is, $6=4+2$ in real dimensions. The family has four real parameters and the gauge two. The extra datum used in the biquaternion articles is a point of the gauge, not an extra parameter.
+**The biquaternion layer.** For $n=2$ the same count is $3=2+1$ in complex dimensions, that is, $6=4+2$ in real dimensions. The family has four real parameters and the frame group two. The extra datum used in the biquaternion articles is a point of the frame group, not an extra parameter.
 
 ## What the Basis Is Not
 
-The basis is not canonical. Two bases of the same family differ by the gauge, and the gauge is nontrivial for $n\ge2$.
+The basis is not canonical. Two bases of the same family differ by the frame group, and the frame group is nontrivial for $n\ge2$.
 
 The basis is not a second decomposition. The lines are the decomposition; the $E_{kl}$ are one element per line, and the choice does not change the lines.
 
@@ -157,7 +157,7 @@ The basis exists only when the components are lines. A coarse family, with a com
 
 ## Summary
 
-A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_{k}$. It exists for every complete family of $n$ idempotents of $M_{n}(\mathbb{C})$, and it is unique up to the gauge $E_{kl}\mapsto t_{k}t_{l}^{-1}E_{kl}$, a torus of dimension $n-1$. A basis is the same data as a system of matrix units, and two systems are conjugate by an invertible element unique up to the centre. In the basis the coordinates multiply by the matrix product, and the coordinates change by $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$. The family space has dimension $n^{2}-n$, the gauge $n-1$, and the frame space $n^{2}-1$, which is the orbit–stabiliser count of $PGL_{n}$; for $n=3$ it is $8=6+2$.
+A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_{k}$. It exists for every complete family of $n$ idempotents of $M_{n}(\mathbb{C})$, and it is unique up to the frame group $E_{kl}\mapsto t_{k}t_{l}^{-1}E_{kl}$, a torus of dimension $n-1$. A basis is the same data as a system of matrix units, and two systems are conjugate by an invertible element unique up to the centre. In the basis the coordinates multiply by the matrix product, and the coordinates change by $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$. The family space has dimension $n^{2}-n$, the frame group $n-1$, and the frame space $n^{2}-1$, which is the orbit–stabiliser count of $PGL_{n}$; for $n=3$ it is $8=6+2$.
 
 ## Summary of Notation
 
@@ -167,7 +167,7 @@ A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{
 | $A_{kl}=P_{k}M_{n}P_{l}$ | The Peirce line |
 | $E_{kl}$ | The chosen element of $A_{kl}$ |
 | $X_{kl}$ | The Peirce coordinate of $X$ |
-| $t_{k}$ | A gauge parameter, $t_{k}\ne0$ |
+| $t_{k}$ | A frame parameter, $t_{k}\ne0$ |
 | $V_{k}=\operatorname{im}P_{k}$ | The line of the $k$-th idempotent |
 | $PGL_{n}$ | The projective linear group, of dimension $n^{2}-1$ |
 
@@ -179,5 +179,5 @@ A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the case $n=2$ of §*Systems of Matrix Units*.
 - [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for the normalised pair $\vec\Pi_{\mathrm{nil},+-},\vec\Pi_{\mathrm{nil},-+}$.
 - [Spinors as Peirce Coordinates in $n$ Dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for the rows of the coordinate array.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the frame and the nilpotents.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html), for the frame and the nilpotents.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html), for the orbit–stabiliser count at $n=3$.

@@ -649,7 +649,7 @@ is a fibre bundle with fibre $S^{1}$, and its fibres are the phase circles $u\ma
 
 **The two statements look alike and are not.** In the first the phase acts on the two slots with opposite exponents, so the phase is a symmetry of the parametrisation and the two rulings stay independent. In the second the phase acts on the single slot and cancels against its own conjugate, so **the second ruling is not a ruling at all**: the row is the conjugate of the column, the phase is quotiented, and the projectivised cone is one $\mathbb{P}^{1}$ and not a product.
 
-**Remark (the flag and the collapse).** In the Hermitian reading the second ruling is the conjugate of the first, so the phase is quotiented and the flag disappears from the description; in the bilinear reading the phase is compensated in the second slot and survives as the half-plane of the column. **The same circle is a gauge in one reading and a flag in the other.**
+**Remark (the flag and the collapse).** In the Hermitian reading the second ruling is the conjugate of the first, so the phase is quotiented and the flag disappears from the description; in the bilinear reading the phase is compensated in the second slot and survives as the half-plane of the column. **The same circle is a frame group in one reading and a flag in the other.**
 
 ## Summary
 

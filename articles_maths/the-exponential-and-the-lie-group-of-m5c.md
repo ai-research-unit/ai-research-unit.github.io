@@ -36,7 +36,7 @@ $$
 e^{tE_{k,k+1}}=I+tE_{k,k+1},
 $$
 
-because $E_{k,k+1}^2=0$. The gauge torus acts by conjugation and rescales the nilpotents.
+because $E_{k,k+1}^2=0$. The frame torus acts by conjugation and rescales the nilpotents.
 
 The article develops the exponential, its convergence, the group law for commuting matrices, the Lie algebra and the Lie bracket, the local diffeomorphism and the surjectivity, the standard subgroups and the exponential of the root and the nilpotents. It assumes the trace, the determinant, the Hermitian structure and the spectral theorem. The polar decomposition and the polar decomposition in exponential coordinates are the next articles.
 
@@ -278,7 +278,7 @@ a unipotent matrix.
 
 ### The Indefinite Form
 
-**Proposition.** The gauge torus $T$ acts on the group by conjugation, $g\mapsto tgt^{-1}$; on the simple nilpotents,
+**Proposition.** The frame torus $T$ acts on the group by conjugation, $g\mapsto tgt^{-1}$; on the simple nilpotents,
 
 $$
 tE_{k,k+1}t^{-1}=\frac{t_k}{t_{k+1}}E_{k,k+1},
@@ -292,13 +292,13 @@ $$
 
 The four parameters $\lambda_k=t_k/t_{k+1}$ rescale the four simple nilpotents; the composites rescale by the products; there is no fifth independent scalar.
 
-**Proof.** The conjugation of a matrix unit by a diagonal matrix multiplies it by the ratio of the diagonal entries; the exponential is equivariant. The four ratios are the gauge parameters; the product around a cycle is $1$.
+**Proof.** The conjugation of a matrix unit by a diagonal matrix multiplies it by the ratio of the diagonal entries; the exponential is equivariant. The four ratios are the frame parameters; the product around a cycle is $1$.
 
-**Corollary.** The gauge is an inner automorphism of $GL_5$; it preserves the group and the exponential, and it rescales the nilpotent directions. The exponential of the gauge-fixed root is the same root, because the root is fixed by the torus.
+**Corollary.** The frame group is an inner automorphism of $GL_5$; it preserves the group and the exponential, and it rescales the nilpotent directions. The exponential of the frame-fixed root is the same root, because the root is fixed by the torus.
 
 **Proof.** Conjugation by $t\in T$ is inner; the root is diagonal and commutes with $T$; the nilpotents are the weight vectors.
 
-**Remark.** **The exponential is the group-level expression of the Lie algebra data.** The root $H$ gives the one-parameter subgroup $e^{tH}$; the simple nilpotents give the elementary unipotents $I+tE_{k,k+1}$; the gauge rescales the nilpotent directions. The composites are the products of the elementary unipotents, and the cocycle fixes them. The exponential of the upper triangular algebra is the Borel group, and the exponential of the nilpotent algebra is the unipotent radical.
+**Remark.** **The exponential is the group-level expression of the Lie algebra data.** The root $H$ gives the one-parameter subgroup $e^{tH}$; the simple nilpotents give the elementary unipotents $I+tE_{k,k+1}$; the frame group rescales the nilpotent directions. The composites are the products of the elementary unipotents, and the cocycle fixes them. The exponential of the upper triangular algebra is the Borel group, and the exponential of the nilpotent algebra is the unipotent radical.
 
 ## Summary
 
@@ -308,7 +308,7 @@ $$
 \boxed{\ \exp:\mathfrak{gl}_5\to GL_5\text{ is surjective, locally invertible};\quad \det(e^A)=e^{\operatorname{tr}A};\quad e^{tE_{k,k+1}}=I+tE_{k,k+1}.\ }
 $$
 
-The Lie algebra $\mathfrak{gl}_5$ has the commutator bracket; the one-parameter subgroups are $e^{tX}$; the standard subalgebras $\mathfrak{sl}_5,\mathfrak{u}(5),\mathfrak{su}(5),\mathfrak{n},\mathfrak{t}$ exponentiate to $SL_5,U(5),SU(5),U,T$. The root gives $e^{tH}=\sum_ke^{t\omega_k}P_k$; the simple nilpotents give the elementary unipotents; the gauge rescales the four nilpotent directions.
+The Lie algebra $\mathfrak{gl}_5$ has the commutator bracket; the one-parameter subgroups are $e^{tX}$; the standard subalgebras $\mathfrak{sl}_5,\mathfrak{u}(5),\mathfrak{su}(5),\mathfrak{n},\mathfrak{t}$ exponentiate to $SL_5,U(5),SU(5),U,T$. The root gives $e^{tH}=\sum_ke^{t\omega_k}P_k$; the simple nilpotents give the elementary unipotents; the frame group rescales the four nilpotent directions.
 
 | Object | Lie algebra | Group |
 |---|---|---|

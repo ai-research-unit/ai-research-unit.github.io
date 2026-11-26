@@ -176,6 +176,6 @@ A frame in $M_n(\mathbb{R})$ is a family $P_1,\dots,P_n$ of orthogonal idempoten
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Peirce decompositions, frames and the multiplication rule.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for Peirce decompositions relative to idempotents in central simple algebras.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the lines and the products over the complex field.
-- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the choice of one element per line and the gauge.
+- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the choice of one element per line and the frame group.
 - [Lagrange Idempotents of a Real Matrix with Simple Real Spectrum](lagrange-idempotents-of-a-real-matrix-with-simple-real-spectrum.html), for a frame produced by a single matrix.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the matrix units and the two halves.

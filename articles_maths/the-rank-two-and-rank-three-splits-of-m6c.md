@@ -16,7 +16,7 @@ $$
 
 The corner algebras are $P M_6P\cong M_2$, $Q M_6Q\cong M_4$ in the first case and $P M_6P\cong M_3$, $Q M_6Q\cong M_3$ in the second. The mixed corners are the mass blocks: of dimension $8=2\cdot4$ in the rank-two split, and of dimension $9=3\cdot3$ in the rank-three split.
 
-This article states the two splits, proves the corner isomorphisms, and writes the two-sided Peirce tables. It is the detailed companion of *The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$*, which treats the gauge decomposition and the block embeddings; the gauge is not repeated here.
+This article states the two splits, proves the corner isomorphisms, and writes the two-sided Peirce tables. It is the detailed companion of *The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$*, which treats the frame group decomposition and the block embeddings; the frame group is not repeated here.
 
 It assumes the coarse Peirce decomposition of *The Peirce Decomposition of $M_6(\mathbb{C})$* and the algebra $M_6(\mathbb{C})$ of *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form and no topology. The mass block's polar decomposition is *The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$*; the chiral split is *The Two Chiralities of $M_6(\mathbb{C})$*.
 
@@ -369,7 +369,7 @@ and both corner products are surjective in the rank-three split, while in the ra
 ## Further Reading
 
 - [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), for the general corner multiplication and the rank-one split.
-- [The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$](the-m3-m3-and-m2-m4-corners-of-m6c.html), for the gauge decomposition and the block embeddings.
+- [The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$](the-m3-m3-and-m2-m4-corners-of-m6c.html), for the frame group decomposition and the block embeddings.
 - [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the rank-three split by $\Pi_+$.
 - [The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
 - [The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the corner modules.

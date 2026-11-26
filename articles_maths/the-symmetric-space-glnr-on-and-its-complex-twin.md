@@ -18,7 +18,7 @@ of dimension $n(n+1)/2$.
 
 *Proof.* The map is constant on the right cosets of $\mathrm{O}(n)$, since $(AQ)^{\mathsf T}(AQ)=A^{\mathsf T}Q^{\mathsf T}QA=A^{\mathsf T}A$, and its fibres are exactly the cosets, since $A^{\mathsf T}A=B^{\mathsf T}B$ implies $BA^{-1}$ orthogonal. It is onto the cone by the spectral theorem, smooth, and its inverse $P\mapsto P^{1/2}$ read as a coset is smooth. So it is a diffeomorphism.
 
-**The orbit map is the polar decomposition.** Writing $A=QP$ with $Q\in\mathrm{O}(n)$ and $P$ positive definite, the coset $A\mathrm{O}(n)$ is the set of all orthogonal left factors, and $P$ is the invariant. So the symmetric space is the space of stretch factors, and the rotation is the gauge that is divided out.
+**The orbit map is the polar decomposition.** Writing $A=QP$ with $Q\in\mathrm{O}(n)$ and $P$ positive definite, the coset $A\mathrm{O}(n)$ is the set of all orthogonal left factors, and $P$ is the invariant. So the symmetric space is the space of stretch factors, and the rotation is the frame group that is divided out.
 
 **The action of the group is transitive and the stabiliser is compact.** $\mathrm{GL}_n(\mathbb{R})$ acts on the quotient by left multiplication, the action is transitive by construction, and the stabiliser of the origin is $\mathrm{O}(n)$, which is compact. So the quotient is a homogeneous space with a compact isotropy group, which is the setting where an invariant metric exists.
 

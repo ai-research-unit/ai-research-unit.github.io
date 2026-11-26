@@ -274,13 +274,13 @@ $$
 
 The only eigenvalue is $0$; the coefficient $1$ of the nilpotent is a normalisation, not an eigenvalue. The pair $(e,f)$ is not unique, but the displayed sum does not depend on the choice, because $e+f=e_t$ and $\tilde Q$ itself is the nilpotent generator. At the origin $\tilde Q=0$, and the nilpotent generator vanishes.
 
-**The standard nilpotent.** The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$: they are a gauge, and the Peirce form above is the invariant statement. For
+**The standard nilpotent.** The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$: they are a frame group, and the Peirce form above is the invariant statement. For
 
 $$
 \boxed{\ \tilde Q=\vec\Pi_{\mathrm{nil}}=c(\vec e_x+i\vec e_y),\qquad c\neq0\ }
 $$
 
-one choice of gauge is
+one choice of frame group is
 
 $$
 \boxed{\ e=\frac12(e_t+i\vec e_z)\ }

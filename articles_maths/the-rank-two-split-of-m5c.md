@@ -12,7 +12,7 @@ the algebra $PM_5P\cong M_2(\mathbb{C})$ of the two-dimensional image, the algeb
 
 This article develops the **split**: the corner dimensions, the corner isomorphisms, the mass block and its pairings, and the two-sided Peirce table. The group side of the same decomposition — the block stabiliser $P(GL_2\times GL_3)$, the two corner tori and the relative scale $1+2+1=4$ — is *The $M_2\oplus M_3$ Corner of $M_5(\mathbb{C})$*. The two articles describe the same projection from the two sides, the algebra and the group; the present one is the algebra.
 
-The article assumes the matrix algebra, the Peirce decomposition and the gauge. The corners are the $p=2$ case of the general rank-$p$ split; the $p=1$ case is the coarse split $1+4+4+16$ of *The Peirce Decomposition of $M_5(\mathbb{C})$*, and the rank-two split is the next case of the recursion $M_{p+q}\supset M_p\oplus M_q$. The two diagonal corners are the previous categories: $M_2(\mathbb{C})$ is the biquaternion matrix model, and $M_3(\mathbb{C})$ is the three-dimensional matrix algebra.
+The article assumes the matrix algebra, the Peirce decomposition and the frame group. The corners are the $p=2$ case of the general rank-$p$ split; the $p=1$ case is the coarse split $1+4+4+16$ of *The Peirce Decomposition of $M_5(\mathbb{C})$*, and the rank-two split is the next case of the recursion $M_{p+q}\supset M_p\oplus M_q$. The two diagonal corners are the previous categories: $M_2(\mathbb{C})$ is the biquaternion matrix model, and $M_3(\mathbb{C})$ is the three-dimensional matrix algebra.
 
 ## The Projection and the Block Form
 
@@ -328,6 +328,6 @@ The two-sided Peirce table has the block pattern $(i,j)(j,k)\subseteq(i,k)$, wit
 - [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the algebra and its dimensions.
 - [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the coarse split $1+4+4+16$ and the fine Peirce lines.
 - [The $M_2\oplus M_3$ Corner of $M_5(\mathbb{C})$](the-m2-m3-corner-of-m5c.html), for the block stabiliser, the two corner tori and the relative scale $1+2+1=4$.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge parameters regrouped by the block structure.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m5c.html), for the frame parameters regrouped by the block structure.
 - [The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the modules of the corners and the bimodule.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion algebra in the $M_2$ corner.

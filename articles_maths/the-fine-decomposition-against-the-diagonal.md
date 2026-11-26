@@ -50,7 +50,7 @@ $$
 \alpha_1,\dots,\alpha_{n-1},\qquad \mathbb{C}E_{k,k+1}=M^{(\alpha_k)},
 $$
 
-and the matrix units $E_{k,k+1}$ are exactly the simple nilpotents $N_k$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*. Every other root vector is a product of consecutive simple ones, which is the root-system form of the statement that every unit of the frame is a product of simple nilpotents. The number $n-1$ of simple roots is the number of simple nilpotents and the number of parameters of the gauge.
+and the matrix units $E_{k,k+1}$ are exactly the simple nilpotents $N_k$ of *The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$*. Every other root vector is a product of consecutive simple ones, which is the root-system form of the statement that every unit of the frame is a product of simple nilpotents. The number $n-1$ of simple roots is the number of simple nilpotents and the number of parameters of the frame group.
 
 ## The Refinement of the Two Halves
 
@@ -103,9 +103,9 @@ $$
 S=\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad K=E_{12}-E_{21}=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
 $$
 
-a symmetric and an antisymmetric line. The one positive root is $\alpha_{12}$, its vector is the simple nilpotent $N_1=E_{12}$, and the count $n-1=1$ is the number of gauge parameters.
+a symmetric and an antisymmetric line. The one positive root is $\alpha_{12}$, its vector is the simple nilpotent $N_1=E_{12}$, and the count $n-1=1$ is the number of frame parameters.
 
-**The biquaternion frame is the grading plus the gauge.** The idempotents $\tilde\Pi_{\mathrm{id},\pm}$ are the two diagonal weight lines, the companion nilpotents $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$ are the two off-diagonal weight lines, and the freedom of a frame is the freedom of choosing a vector in each line, which is the gauge $(\mathbb{C}^{\times})^{n-1}$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*. At $n=2$ that is one complex parameter, the reciprocal rescaling of the two nilpotents.
+**The biquaternion frame is the grading plus the frame group.** The idempotents $\tilde\Pi_{\mathrm{id},\pm}$ are the two diagonal weight lines, the companion nilpotents $\vec\Pi_{\mathrm{nil},+-}$ and $\vec\Pi_{\mathrm{nil},-+}$ are the two off-diagonal weight lines, and the freedom of a frame is the freedom of choosing a vector in each line, which is the frame group $(\mathbb{C}^{\times})^{n-1}$ of *The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$*. At $n=2$ that is one complex parameter, the reciprocal rescaling of the two nilpotents.
 
 ## Summary
 
@@ -132,5 +132,5 @@ The diagonal subalgebra $\mathfrak{h}$ has dimension $n$ and is a maximal torus;
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the fine decomposition of an algebra into lines and the coordinate form of Peirce.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric](the-two-halves-over-r-symmetric-and-antisymmetric.html), for the split that this grading refines.
 - [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-anti-hermitian.html), for the complex version of the refinement.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the simple nilpotents as simple root vectors.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html), for the simple nilpotents as simple root vectors.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general-flag version of the grading.

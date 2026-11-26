@@ -201,7 +201,7 @@ where $\mathbb{C}^\times I$ is the group of nonzero scalar matrices, the centre 
 
 **Proof.** The centre of $GL_5$ is $\mathbb{C}^\times I$, of complex dimension $1$; the quotient has dimension $25-1=24$. The map $SL_5\to PGL_5$ is surjective: every class $[A]$ has a representative with determinant $1$, namely $A/(\det A)^{1/5}$ for any chosen fifth root, and two such representatives differ by a fifth root of unity. The kernel is $\mu_5$.
 
-**Remark.** **The dimension $24$ is the complex dimension.** The real dimension of $PGL_5(\mathbb{C})$ is $48$, not $24$. The root set of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$* is $PGL_5/T$, of complex dimension $20$; the gauge torus $T$ is complex dimension $4$; the sum is $24$. The real dimensions are $40$, $8$ and $48$.
+**Remark.** **The dimension $24$ is the complex dimension.** The real dimension of $PGL_5(\mathbb{C})$ is $48$, not $24$. The root set of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$* is $PGL_5/T$, of complex dimension $20$; the frame torus $T$ is complex dimension $4$; the sum is $24$. The real dimensions are $40$, $8$ and $48$.
 
 ### The Counting Table
 
@@ -212,7 +212,7 @@ where $\mathbb{C}^\times I$ is the group of nonzero scalar matrices, the centre 
 | $SL_5(\mathbb{C})$ | $24$ | $48$ |
 | $PGL_5(\mathbb{C})$ | $24$ | $48$ |
 | $PGL_5/T$ (root set) | $20$ | $40$ |
-| $T$ (gauge) | $4$ | $8$ |
+| $T$ (frame group) | $4$ | $8$ |
 
 ## The Hermitian and Anti-Hermitian Parts
 
@@ -343,5 +343,5 @@ The trace is linear, cyclic and nondegenerate as a complex bilinear pairing; the
 - [The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m5c.html), for the coordinates, the trace pairing and the Jordan decomposition.
 - [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the conjugate transpose, the positive definite trace form and the $*$-unitary group.
 - [Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the first structure built on the algebra.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the matrix units and the diagonal gauge.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m5c.html), for the matrix units and the diagonal frame group.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the general algebra at order $n$.

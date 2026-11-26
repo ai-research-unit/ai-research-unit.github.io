@@ -2,11 +2,11 @@
 
 ## Introduction
 
-**The projective group $PGL_4(\mathbb{C})$ acts on $M_4(\mathbb{C})$ by conjugation, and the orbits are the Jordan types.** The orbit of the root is the regular semisimple orbit $PGL_4/T$, of dimension $12$; its stabiliser is the gauge torus $T\cong(\mathbb{C}^\times)^3$; the orbit–stabiliser count is $15=12+3$. The full flag variety $GL_4/B$ has dimension $6$, the Grassmannians are $\operatorname{Gr}(1,4)=\mathbb{P}^3$ of dimension $3$ and $\operatorname{Gr}(2,4)$ of dimension $4$, and the gauge is the fibre of the frame bundle over the root orbit.
+**The projective group $PGL_4(\mathbb{C})$ acts on $M_4(\mathbb{C})$ by conjugation, and the orbits are the Jordan types.** The orbit of the root is the regular semisimple orbit $PGL_4/T$, of dimension $12$; its stabiliser is the frame torus $T\cong(\mathbb{C}^\times)^3$; the orbit–stabiliser count is $15=12+3$. The full flag variety $GL_4/B$ has dimension $6$, the Grassmannians are $\operatorname{Gr}(1,4)=\mathbb{P}^3$ of dimension $3$ and $\operatorname{Gr}(2,4)$ of dimension $4$, and the frame group is the fibre of the frame bundle over the root orbit.
 
-The article describes the adjoint action, the orbit–stabiliser theorem, the Jordan classification, the root orbit and the gauge, the flag variety and the Grassmannians, and the nilpotent orbits.
+The article describes the adjoint action, the orbit–stabiliser theorem, the Jordan classification, the root orbit and the frame group, the flag variety and the Grassmannians, and the nilpotent orbits.
 
-The root and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the operators are *The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$*; the topology of the flag variety is *The Topology of $M_4(\mathbb{C})$*.
+The root and the frame group are *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$*; the Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the operators are *The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$*; the topology of the flag variety is *The Topology of $M_4(\mathbb{C})$*.
 
 ## The Adjoint Action
 
@@ -62,7 +62,7 @@ because the scalar centraliser is divided out on both sides.
 
 **The centraliser.** The centraliser of $A$ in $GL_4$ is the group of invertible matrices commuting with $A$. For a semisimple element with eigenvalue multiplicities $m_1,\dots,m_r$ it is $\prod_k GL_{m_k}$, of dimension $\sum_k m_k^2$. For a semisimple element with distinct eigenvalues it is the torus $(\mathbb{C}^\times)^4$, of dimension $4$; modulo scalars, the stabiliser in $PGL_4$ is $(\mathbb{C}^\times)^3$, of dimension $3$. For a general element, the dimension is computed from the Jordan type of $A$.
 
-## The Root Orbit and the Gauge
+## The Root Orbit and the Frame Group
 
 **The root.** Let $H$ be a root with four distinct eigenvalues $1,i,-1,-i$. Its stabiliser in $PGL_4$ is the maximal torus
 
@@ -84,25 +84,25 @@ $$
 
 The twelve complex parameters are the root count of *Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$*.
 
-**The gauge is the stabiliser.** The gauge torus of *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$* is exactly the stabiliser $T$. The frame bundle
+**The frame group is the stabiliser.** The frame torus of *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$* is exactly the stabiliser $T$. The frame bundle
 
 $$
 PGL_4\longrightarrow PGL_4/T=\mathcal{O}_H
 $$
 
-has fibre $T$, and the gauge is that fibre. The count
+has fibre $T$, and the frame group is that fibre. The count
 
 $$
 \underbrace{15}_{\text{frame group}}
 =
 \underbrace{12}_{\text{orbit}}
 +
-\underbrace{3}_{\text{gauge}}
+\underbrace{3}_{\text{frame group}}
 $$
 
-is the orbit–stabiliser count. The gauge is the fibre over the root, not a quotient of the algebra.
+is the orbit–stabiliser count. The frame group is the fibre over the root, not a quotient of the algebra.
 
-**The three parameters.** The torus $T$ has three parameters, one per simple nilpotent $E_{12},E_{23},E_{34}$, as in *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*. The fourth ratio is the inverse of the product, and there is no fourth independent scalar. The gauge acts on the root orbit by moving the frame; it acts on the matrix units by $E_{ij}\mapsto(t_i/t_j)E_{ij}$.
+**The three parameters.** The torus $T$ has three parameters, one per simple nilpotent $E_{12},E_{23},E_{34}$, as in *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$*. The fourth ratio is the inverse of the product, and there is no fourth independent scalar. The frame group acts on the root orbit by moving the frame; it acts on the matrix units by $E_{ij}\mapsto(t_i/t_j)E_{ij}$.
 
 **The two bases.** The count is made in the matrix units $E_{ij}$, the basis of the statement. The same algebra is read on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where the four left matrices and the sixteen two-sided products $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are *$M_4(\mathbb{C})$ Axis-Free Representation* and *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
 
@@ -272,7 +272,7 @@ The closure order is the order of the nilpotent orbits; the zero orbit is the un
 
 ## Summary
 
-The projective group $PGL_4(\mathbb{C})$ acts on $M_4(\mathbb{C})$ by conjugation, with kernel the scalars and Lie algebra $\mathfrak{sl}_4$. The orbits are the Jordan types, and the orbit–stabiliser theorem gives $\dim\mathcal{O}_A=15-\dim Z_{PGL_4}(A)$. The root $H$ with four distinct eigenvalues is the regular semisimple element; its stabiliser is the gauge torus $T\cong(\mathbb{C}^\times)^3$, its orbit is $PGL_4/T$ of dimension $12$, and the count is
+The projective group $PGL_4(\mathbb{C})$ acts on $M_4(\mathbb{C})$ by conjugation, with kernel the scalars and Lie algebra $\mathfrak{sl}_4$. The orbits are the Jordan types, and the orbit–stabiliser theorem gives $\dim\mathcal{O}_A=15-\dim Z_{PGL_4}(A)$. The root $H$ with four distinct eigenvalues is the regular semisimple element; its stabiliser is the frame torus $T\cong(\mathbb{C}^\times)^3$, its orbit is $PGL_4/T$ of dimension $12$, and the count is
 
 $$
 15=12+3.
@@ -286,7 +286,7 @@ $$
 \operatorname{Gr}(3,4)=\mathbb{P}^3,\quad \dim3.
 $$
 
-The nilpotent orbits are classified by the partitions of $4$, with dimensions $12,10,8,6,0$ for $[4],[3,1],[2,2],[2,1,1],[1,1,1,1]$, and the closure order is the dominance order. The gauge is the stabiliser of the root, the fibre of the frame bundle over the root orbit.
+The nilpotent orbits are classified by the partitions of $4$, with dimensions $12,10,8,6,0$ for $[4],[3,1],[2,2],[2,1,1],[1,1,1,1]$, and the closure order is the dominance order. The frame group is the stabiliser of the root, the fibre of the frame bundle over the root orbit.
 
 $$
 \boxed{\ \dim PGL_4=15,\quad \dim\mathcal{O}_H=12,\quad \dim T=3,\quad 15=12+3,\quad \dim\mathcal{F}=6,\quad \dim\operatorname{Gr}(2,4)=4. }
@@ -296,7 +296,7 @@ $$
 |---|---|
 | $PGL_4$ | $15$ |
 | Root orbit $PGL_4/T$ | $12$ |
-| Gauge torus $T$ | $3$ |
+| Frame torus $T$ | $3$ |
 | Full flag variety $\mathcal{F}$ | $6$ |
 | Unipotent fibre $B/T$ | $6$ |
 | $\operatorname{Gr}(1,4)=\mathbb{P}^3$ | $3$ |
@@ -311,7 +311,7 @@ $$
 |---|---|
 | $PGL_4$ | the projective general linear group |
 | $\mathcal{O}_A$ | the conjugacy class of $A$ |
-| $T$ | the maximal torus, the gauge |
+| $T$ | the maximal torus, the frame group |
 | $B$ | the Borel subgroup of upper triangular matrices |
 | $\mathcal{F}=GL_4/B$ | the full flag variety |
 | $\operatorname{Gr}(k,4)$ | the Grassmannian of $k$-planes |
@@ -325,7 +325,7 @@ $$
 - James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for Borel subgroups, parabolic subgroups and flag varieties.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the flag variety, the Grassmannians and the Weyl group.
 - David Collingwood and William McGovern, *Nilpotent Orbits in Semisimple Lie Algebras* (Van Nostrand Reinhold, 1993), for the partition classification and the closure order.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge torus.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m4c.html), for the frame torus.
 - [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root orbit and the spectral flag.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the adjoint action and the derivations.
 - [The Geometry of the Idempotents of $M_4(\mathbb{C})$](the-geometry-of-the-idempotents-of-m4c.html), for the idempotent varieties and the flag variety.

@@ -400,7 +400,7 @@ The scalar stratum is a central character with no direction. The nilpotent strat
 
 ## Global versus Element-Attached
 
-**What is canonical.** For a regular element, the pair of eigenspaces $\{E_+,E_-\}$ is unique, and the eigenvalues are determined up to the exchange of the two branches. The vectors inside each eigenspace are a gauge: multiplying a vector of $E_+$ by a non-zero scalar and a vector of $E_-$ by another leaves the eigenspaces unchanged. The normalised Peirce basis of *The Eigenbasis of a Spectrally Regular Biquaternion* fixes that gauge; the root-adapted basis of §*The Eigenbasis Is a Fourier Basis* fixes it differently.
+**What is canonical.** For a regular element, the pair of eigenspaces $\{E_+,E_-\}$ is unique, and the eigenvalues are determined up to the exchange of the two branches. The vectors inside each eigenspace are a frame group: multiplying a vector of $E_+$ by a non-zero scalar and a vector of $E_-$ by another leaves the eigenspaces unchanged. The normalised Peirce basis of *The Eigenbasis of a Spectrally Regular Biquaternion* fixes that frame group; the root-adapted basis of §*The Eigenbasis Is a Fourier Basis* fixes it differently.
 
 **Every element expands in the basis of a given regular element.** The four vectors of Proposition 2 form a basis of $\mathbb{B}$, so every biquaternion has coordinates in it; the spectral decomposition of the given element is diagonal in those coordinates. This is the sense in which a regular element supplies a frame for the whole algebra — a frame attached to the element, not a frame of the algebra.
 

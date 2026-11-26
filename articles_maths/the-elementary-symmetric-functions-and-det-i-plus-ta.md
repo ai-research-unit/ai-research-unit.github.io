@@ -170,5 +170,5 @@ The elementary symmetric functions $e_k(A)$, the sum of the principal $k\times k
 - Israel M. Gelfand, *Lectures on Linear Algebra* (Dover, 1989), for the elementary symmetric functions of the spectrum and their generating polynomial.
 - David Cox, John Little and Donal O'Shea, *Ideals, Varieties, and Algorithms* (Springer, 2015), for the invariant ring of the conjugation action and the algebraic independence of the generators.
 - [The Element: Rank, Trace, Determinant, Characteristic Polynomial](the-element-rank-trace-determinant-characteristic-polynomial.html), for the four invariants and the coefficient form of $\chi_A$.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the degree count $n(n+1)/2$ against the frame count.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html), for the degree count $n(n+1)/2$ against the frame count.
 - [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the indefinite norm $N$ that is not the determinant.

@@ -6,7 +6,7 @@
 
 **The two bases.** The description on the matrix units is made in the basis $E_{ij}$, and the four families are the moves of its two indices. The same four families act on the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$: the one-sided operators are the signed permutation matrices $L_{\mathrm{axf},e_\mu}$ and $R_{\mathrm{axf},e_\nu}$, the two-sided operator is their product $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, and $\operatorname{ad}$ is the commutator of those matrices. The four left matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*; the sixteen products are *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
 
-The article defines the four operators, computes their matrices and their action on the Peirce corners, proves the derivation and automorphism theorems, and explains the two-sided operator as a map of corners. The Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the adjoint action is *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*; the frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*.
+The article defines the four operators, computes their matrices and their action on the Peirce corners, proves the derivation and automorphism theorems, and explains the two-sided operator as a map of corners. The Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the adjoint action is *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*; the frame and the frame group are *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$*.
 
 ## The Four Operators
 

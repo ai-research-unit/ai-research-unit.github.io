@@ -152,9 +152,9 @@ and the Jordan form is diagonal. For a general matrix, the minimal polynomial is
 
 **Proof.** $H$ is diagonal with entries of modulus $1$, so $H^*H=I$; it is normal. The spectral projectors of a diagonal matrix are the diagonal units $E_{kk}$, which are orthogonal. Conjugation sends the projectors to $gE_{kk}g^{-1}$; this is self-adjoint iff $gE_{kk}g^{-1}=g^{-*}E_{kk}g^*$ for all $k$, which holds iff $g^*g$ is diagonal, i.e., the columns of $g$ are mutually orthogonal.
 
-**Corollary.** The root orbit has a distinguished point $H$ at which the spectral projectors are orthogonal; at a general point, the projectors are the conjugate idempotents and need not be orthogonal for the standard form. The algebraic spectral decomposition is gauge-covariant; the Hilbert-space orthogonality is not.
+**Corollary.** The root orbit has a distinguished point $H$ at which the spectral projectors are orthogonal; at a general point, the projectors are the conjugate idempotents and need not be orthogonal for the standard form. The algebraic spectral decomposition is frame covariant; the Hilbert-space orthogonality is not.
 
-**Proof.** The conjugation by $g$ is the gauge; it preserves the idempotent identities but not, in general, the self-adjointness. The standard point $H$ is the diagonal representative.
+**Proof.** The conjugation by $g$ is the frame group; it preserves the idempotent identities but not, in general, the self-adjointness. The standard point $H$ is the diagonal representative.
 
 **Remark.** **The Lagrange projectors and the orthogonal spectral projectors are the same only for normal matrices.** The root $H$ is $*$-unitary, so at the standard point they coincide with $E_{kk}$; a general matrix with simple spectrum has Lagrange projectors that are not orthogonal. The spectral theorem is a theorem about normal matrices; the Lagrange decomposition is a theorem about any simple spectrum. The two must not be conflated.
 

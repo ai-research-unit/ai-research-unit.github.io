@@ -2,12 +2,12 @@
 
 ## Introduction
 
-**The group is one group, the coupling is one coupling, and the rules follow from three lines.** The fifteen are the generators of $\mathfrak{su}(4)$; the sixteen are two quartets and two antiquartets of Weyl fields; one covariant derivative couples them. **Everything below is transcription plus one rotation and three rescalings**, and the rescaling is the only place a convention can go wrong.
+**The group is one group, the coupling is one coupling, and the rules follow from three lines.** The fifteen are the generators of $\mathfrak{su}(4)$; the sixteen are two quartets and two antiquartets of Weyl fields; one covariant derivative couples them. **Everything below is transcription plus one integer rotation and one rescaling**, and the rescaling is the only place a convention can go wrong.
 
 **Four things carry the weight.**
 
-- **The vertex list.** The fifteen fields against the sixteen fermions, read entry by entry off the printed arrays. **There are $64$ nonzero entries on the quartet half and $64$ on the conjugate half, so $128$ in all**, and the split is $48+8+8$ per half: twelve planes, two colour diagonals, and the corner, each counted with its two copies.
-- **The normalisation.** The printed arrays are not orthonormal in the trace. **Thirteen have $\operatorname{tr}(G^{\dagger}G)=2$, the rotated colour diagonal has $6$ and the corner has $12$**, and one pair is not even orthogonal. A canonical kinetic term therefore forces a family-dependent rescaling, and that rescaling is the whole of §*The Normalisation, Before Any Rule*.
+- **The vertex list.** The fifteen fields against the sixteen fermions, read entry by entry off the printed arrays. **There are $60$ nonzero entries on the quartet half and $60$ on the conjugate half, so $120$ in all**, and the split is $48+12$ per half: twelve planes at two entries each and three frame directions at two, each counted with its two copies. **A printed list that takes $iD$ as a member gives $48+8+8=64$ instead, and $8$ of those belong to a sum of three arrays, not to a sixteenth.**
+- **The normalisation.** The printed arrays are not orthonormal in the trace. **All fifteen have $\operatorname{tr}(G^{\dagger}G)=2$ and three pairs among the diagonal are not orthogonal**, so a canonical kinetic term forces one integer rotation and one rescaling of the diagonal family; that is the whole of §*The Normalisation, Before Any Rule*. **The corner is not one of the fifteen**, and the $1/\sqrt6$ of an older basis belonged to a sum, not to a member.
 - **The two-index rule.** Every fermion–connection vertex is $X\otimes\mathbb 1_{2}$: an array on the quartet times the identity on the copy index. **A representative rotation cannot tell the two copies apart**, and that one bracket decides the shape of the whole table.
 - **One coupling, and no ratio.** $g_4$ stays symbolic. **The model has no second coupling, so it has no coupling ratio to fix and no matching problem to inherit.**
 
@@ -23,9 +23,9 @@ which the permutation of $x,y,z$ permutes and whose sum is $D$; [The Symmetric D
 
 **Nothing in the twelve-plane block moves**, because the change touches only the three diagonal directions: $iD=T_{x}+T_{y}+T_{z}$, $d_{2}=\tfrac12(T_{x}-T_{y})$, $d_{3}=\tfrac12(T_{y}-T_{z})$, with $T_{j}=iM_{j}$, and the bracket is bilinear in each slot, so the diagonal rows of every table below are the same table in another basis. **The one number that changes form is the writing of the corner**: $B'$ is the sum of the three frame directions, not a sixteenth array, and the ratio $1/\sqrt6$ belongs to $D$ and not to a member of the basis, so it is untouched. **The normalisation of the diagonal family is**
 $$
-t_{j}=-\frac{A_{j}}{\sqrt8},\quad A_{j}=\sum_{k}M_{k}-2M_{j};\qquad t_{15}=\frac{iD}{\sqrt{24}},
+t_{j}=-\frac{A_{j}}{\sqrt8},\quad A_{j}=\sum_{k}M_{k}-2M_{j};\qquad t_{15}=-\frac{D}{\sqrt{24}},
 $$
-which replaces $t_{c_{3}}$ of the older passage and gives $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ on all fifteen, as [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) states it. **The rules, the multiplicities and the $128$ entries do not move.**
+which replaces $t_{c_{3}}$ of the older passage and gives $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ on all fifteen, as [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) states it. **The rules, the multiplicities and the $120$ entries do not move.**
 
 ## Conventions
 
@@ -71,34 +71,35 @@ $$
 
 ## The Normalisation, Before Any Rule
 
-**The printed arrays are anti-Hermitian, and their trace norms come in two values.**
+**The printed arrays are anti-Hermitian, and in the declared frame all fifteen have the same trace norm.**
 
 | family | arrays | $\operatorname{tr}(G^{\dagger}G)$ | norm |
 | --- | --- | --- | --- |
 | the twelve planes $A_{\imath\jmath}$, $iS_{\imath\jmath}$ | $12$ | $2$ | $\sqrt2$ |
-| the two colour diagonals $d_{2}$, $d_{3}$ | $2$ | $2$ | $\sqrt2$ |
-| the corner $iD$ | $1$ | $12$ | $2\sqrt3$ |
+| the three frame directions $iM_{x}$, $iM_{y}$, $iM_{z}$ | $3$ | $2$ | $\sqrt2$ |
+| the corner $iD=i(M_{x}+M_{y}+M_{z})$ | a sum, not a member | $12$ | $2\sqrt3$ |
 
-**One pair is not orthogonal, and it is the only one.** The Gram matrix of the fifteen has exactly one nonzero off-diagonal entry, $\langle d_{2},d_{3}\rangle=-1$; every other pair is orthogonal. **So the printed fifteen are a basis and not an orthonormal frame**, and the Gram is positive definite with eigenvalues $1$, twelve copies of $2$, $3$ and $12$.
+**Three pairs are not orthogonal, and they are the only three.** The Gram of the fifteen has exactly three nonzero off-diagonal entries, $\langle M_{j},M_{k}\rangle=1$ for $j\ne k$; every other pair is orthogonal. **So the printed fifteen are a basis and not an orthonormal frame**, and the Gram is positive definite with eigenvalues $2$ twelve times, $4$, $1$ and $1$, and determinant $2^{14}$.
 
-**The repair is one rotation and then three rescalings.**
-
-$$
-c_{2}=d_{2}+d_{3},\qquad c_{3}=d_{2}-d_{3},\qquad
-\langle c_{2},c_{2}\rangle=2,\quad \langle c_{3},c_{3}\rangle=6,\quad \langle c_{2},c_{3}\rangle=0 .
-$$
-
-**After the rotation the fifteen are orthogonal, with norm $2$ for thirteen of them, $6$ for $c_{3}$ and $12$ for the corner.** A canonical kinetic term $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ then fixes
+**The repair is one integer rotation, and then one rescaling.**
 
 $$
-t_{a}=\frac{iG_{a}}{2}\ \ (13\ \text{arrays}),\qquad
-t_{c_{3}}=\frac{i(d_{2}-d_{3})}{\sqrt{12}}\ \ (c_{3}),\qquad
-t_{15}=\frac{iG_{15}}{\sqrt{24}}\ \ (\text{the corner}),
+A_{j}=\sum_{k}M_{k}-2M_{j},\qquad \langle A_{j},A_{k}\rangle=4\delta_{jk},
 $$
 
-so the corner's coupling is weaker than a plane's by $2/\sqrt{24}=1/\sqrt6=0.4082$, and $c_{3}$'s by $1/\sqrt3$. **Those numbers are consequences of the trace, not of the group**: the corner is the one diagonal removed from the fundamental and is longer than a plane by $\sqrt6$, and $c_{3}$ by $\sqrt3$.
+**so after the rotation the fifteen are orthogonal, with norm $2$ for the twelve planes and $4$ for the three $A_{j}$.** A canonical kinetic term $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ then fixes
 
-**Why this matters for every rule below.** A vertex read off the printed array is off by this factor, and a cross section read off a vertex is off by its square. **Relative to the printed arrays the coefficient is $1/2$ for the planes, $1/\sqrt{12}$ for $c_{3}$ and $1/\sqrt{24}$ for the corner**; relative to one another the three families stand as $1:\tfrac{1}{\sqrt3}:\tfrac{1}{\sqrt6}$ for the plane, $c_{3}$ and the corner. **The table below states the corner's ratio once, so that no other table has to repeat it.**
+$$
+t_{a}=\frac{iG_{a}}{2}\ \ (12\ \text{planes}),\qquad
+t_{j}=\frac{i\,(iA_{j})}{\sqrt{8}}=-\frac{A_{j}}{\sqrt{8}}\ \ (3\ \text{diagonals}),
+$$
+
+so the diagonal's coupling is weaker than a plane's by $2/\sqrt8=1/\sqrt2=0.7071$. **That number is a consequence of the trace and not of the group**: $A_{j}$ has norm $4$ where a plane has $2$.
+
+**The corner carries none of it.** $B'$ is $D=M_{x}+M_{y}+M_{z}$, and its norm $12$ is the norm of a sum of three arrays of norm $2$. **In the frame the vacuum direction is not a basis vector**, so no generator carries a factor $1/\sqrt6$: that factor belonged to a basis that wrote a sum as a member. **Where $B'$ appears below it is as the combination of the three diagonal connections that the mass matrix singles out**, and its normalisation follows from the three rather than from a fourth array.
+
+**Why this matters for every rule below.** A vertex read off the printed array is off by the rescaling, and a cross section read off a vertex is off by its square. **Relative to the printed arrays the coefficient is $1/2$ for the planes and $1/\sqrt8=0.3536$ for the diagonal sibling**; relative to one another the two families stand as $1:\tfrac{1}{\sqrt2}$. **The entry counts are read in a basis and are therefore basis-dependent**: the fifteen give $30$ nonzero fermion entries per half, $60$ in all, while a printed list that includes $iD$ gives $32$ and $64$. **The selection rule — which pairs of lines a family joins — is what does not depend on the basis.**
+
 
 ## Propagators
 
@@ -115,7 +116,7 @@ so the corner's coupling is weaker than a plane's by $2/\sqrt{24}=1/\sqrt6=0.408
 
 **There is no mixing matrix to invert.** A four-factor propagator section would have to rotate four neutral fields and produce a photon and a $Z$; **here the mass matrix is already diagonal in the basis of planes, and the rotation is the identity.** The mixing below $M_C$ is downstream, and it is not in this Lagrangian.
 
-**Two of the nine are massless for two different reasons, and the difference is not cosmetic.** The eight gluons are massless because their generators commute with $D$, which is an exact statement about the stabiliser. **The corner is massless because it is $D$ itself**: $[D,[D,iD]]=0$ for any diagonal, so the direction of the condensate cannot be lifted by the condensate. **A ninth massless field that is massless for a different reason is the one place where a counting argument can go wrong.**
+**Two of the nine are massless for two different reasons, and the difference is not cosmetic.** The eight of the colour block are massless because their generators commute with $D$, which is an exact statement about the stabiliser; **below $M_C$ those eight are the gluons, and above it they are eight directions and the word is not used**. **The corner is massless because it is $D$ itself**: $[D,[D,iD]]=0$ for any diagonal, so the direction of the condensate cannot be lifted by the condensate. **A ninth massless field that is massless for a different reason is the one place where a counting argument can go wrong.**
 
 **The sextet's mass is the same number for all six.** $32v^{2}$ comes from $2(1-(-3))^{2}=(4)^{2}\cdot2$: a plane that carries one $t$ index costs $2(1+3)^{2}$ and a plane that carries two colour indices costs zero. **The value is verified per plane** in [the detail article](the-15-axf-matrices-of-the-bosons-in-detail.html).
 
@@ -128,11 +129,12 @@ so the corner's coupling is weaker than a plane's by $2/\sqrt{24}=1/\sqrt6=0.408
 | family | quartet entries per array | arrays | with the copy index |
 | --- | --- | --- | --- |
 | the twelve planes | $2$ | $12$ | $48$ |
-| the two colour diagonals | $2$ | $2$ | $8$ |
-| the corner $iD$ | $4$ | $1$ | $8$ |
-| **the quartet half** | | | $\mathbf{64}$ |
-| **the conjugate half, $-t_{a}^{T}$** | the same | the same | $\mathbf{64}$ |
-| **total nonzero fermion–connection entries** | | | $\mathbf{128}$ |
+| the three frame directions | $2$ | $3$ | $12$ |
+| **the quartet half** | | | $\mathbf{60}$ |
+| **the conjugate half, $-t_{a}^{T}$** | the same | the same | $\mathbf{60}$ |
+| **total nonzero fermion–connection entries** | | | $\mathbf{120}$ |
+
+**A printed list that takes $iD$ as a member gives $48+8+8=64$ per half instead of $48+12$, and the difference is the whole of this table's dependence on a basis**: $iD$'s four entries sit on the same four diagonal cells that the three frame directions already occupy, two each. **The count of vertex positions therefore moves with the basis while the selection rule does not**, and the rule — which pairs of lines a family joins — is the statement below worth carrying.
 
 **The two-index rule, and it is one line.** Every vertex is $X\otimes\mathbb 1_{2}$ with $X$ an array on the quartet. **A representative rotation acts on the quartet index only, so it cannot change the copy label**, and the sixteen fermions therefore couple in two identical copies. **Nothing in the model distinguishes them**, and no rule below can.
 
@@ -140,9 +142,9 @@ so the corner's coupling is weaker than a plane's by $2/\sqrt{24}=1/\sqrt6=0.408
 
 | family | the array | the lines it joins | the charge it carries |
 | --- | --- | --- | --- |
-| planes $A_{ab}$, $a,b$ both colour | $2$ entries, colour–colour | quark to quark | gluon, $B-L=0$ |
+| planes $A_{ab}$, $a,b$ both colour | $2$ entries, colour–colour | quark to quark | a gluon below $M_C$, $B-L=0$ |
 | planes $A_{ta}$, $iS_{ta}$ | $2$ entries, $t$ to colour | lepton to quark | $B-L=\mp\tfrac43$, $Q=\mp\tfrac23$ |
-| colour diagonals $d_{2}$, $d_{3}$ | $2$ entries, colour–colour | quark to quark | gluon, $B-L=0$ |
+| colour-block diagonals | $2$ entries, colour–colour | quark to quark | a gluon below $M_C$, $B-L=0$ |
 | the corner $iD$ | $4$ entries, diagonal | lepton to lepton, quark to quark | $B-L=0$ |
 
 **The leptoquark vertex conserves $B-L$ exactly, and the arithmetic is one line.** The lepton line carries $B-L=-1$, the colour line $+\tfrac13$, and the boson $-\tfrac43$: $-1=\tfrac13-\tfrac43$. **The charge is read off the commutator** $[iD,E_{ta}]=-4iE_{ta}$, so the boson's $D$-eigenvalue is $-4$ and its $B-L$ is $-4/3$ under $B-L=\tfrac13D$.
@@ -186,7 +188,7 @@ $$
 
 ## What the Rules Do Not Contain
 
-**No $W$, no $Z$, no photon.** The model has one unbroken $\mathrm{U}(1)$ and eight gluons; **the electroweak connections arrive at $M_C$, and so do their vertices.** A rule set that printed a $Wff$ vertex would be printing a vertex of a different Lagrangian.
+**No $W$, no $Z$, no photon.** The model has one unbroken $\mathrm{U}(1)$ and, below $M_C$, eight gluons; **the electroweak connections arrive at $M_C$, and so do their vertices.** A rule set that printed a $Wff$ vertex would be printing a vertex of a different Lagrangian.
 
 **No fermion masses and no mixing angles.** The sixteen Weyl fields are massless until the condensate gives them a Yukawa matrix, and that matrix is [the Yukawa article](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). **No CKM matrix and no PMNS matrix**: both need two factors and a second condensate.
 
@@ -199,13 +201,13 @@ $$
 | check | statement | result |
 | --- | --- | --- |
 | generator count | $\dim\mathfrak{su}(4)=15$ | $15$ |
-| nonzero array entries | twelve planes $2$ each, two diagonals $2$ each, corner $4$ | $32$ |
-| fermion–connection entries per half | $32\times2$ copies | $64$ |
-| fermion–connection entries in all | $64+64$ | $128$ |
-| trace norms | thirteen at $2$, $c_{3}$ at $6$, the corner at $12$ | $2$, $6$, $12$ |
-| off-diagonal Gram | one pair, $\langle d_{2},d_{3}\rangle=-1$ | $-1$ |
-| orthogonal basis | $c_{2}=d_{2}+d_{3}$, $c_{3}=d_{2}-d_{3}$ | norms $2$, $6$ |
-| corner rescaling | $2/\sqrt{24}=1/\sqrt6$ | $0.408$ |
+| nonzero array entries | twelve planes $2$ each, three frame directions $2$ each | $30$, or $34$ counting the corner |
+| fermion–connection entries per half | $30\times2$ copies | $60$ |
+| fermion–connection entries in all | $60+60$ | $120$ |
+| trace norms | fifteen at $2$; the corner's sum at $12$ | $2$, $12$ |
+| off-diagonal Gram | three pairs, $\langle M_{j},M_{k}\rangle=+1$ | $+1$ |
+| orthogonal basis | $A_{j}=\sum_{k}M_{k}-2M_{j}$ | norm $4$ each |
+| diagonal rescaling | $1/\sqrt8$ against $1/2$ | $0.707$ |
 | spectrum | $15=9+6$ | nine at $0$, six at $32v^{2}$ |
 | stabiliser | $[D,t_{a}]=0$ on the nine | $9$ |
 | nonzero brackets | of $105$ pairs | $80$ |
@@ -215,7 +217,7 @@ $$
 
 ## Summary
 
-**One covariant derivative, one coupling, fifteen fields, sixteen fermions.** The fermion–connection vertex is $X\otimes\mathbb 1_{2}$ and has $128$ nonzero entries; the three-connection vertex is $f_{abc}$ with $29$ nonzero triples; the spectrum is nine massless and six at $32v^{2}$; and the scalar is a $4\times4$ Hermitian matrix with sixteen real components, six of them eaten by the sextet. **No copy index acts on the scalar**: the copy index is a fermion label, so it eats nothing.
+**One covariant derivative, one coupling, fifteen fields, sixteen fermions.** The fermion–connection vertex is $X\otimes\mathbb 1_{2}$ and has $120$ nonzero entries; the three-connection vertex is $f_{abc}$ with $29$ nonzero triples; the spectrum is nine massless and six at $32v^{2}$; and the scalar is a $4\times4$ Hermitian matrix with sixteen real components, six of them eaten by the sextet. **No copy index acts on the scalar**: the copy index is a fermion label, so it eats nothing.
 
 **The normalisation is the only place a convention can go wrong**, and it is fixed by two lengths: the corner is $\sqrt6$ longer than a plane and $c_{3}$ is $\sqrt3$ longer, so their couplings are $0.4082$ and $0.5774$ of a plane's after a canonical kinetic term.
 
@@ -240,7 +242,7 @@ $$
 - [The $\mathrm{SU}(4)$ Model: Four Colours, Fifteen Generators, One Declaration](the-su4-model-four-colours-fifteen-generators-one-declaration.html). The group, the content, and the declaration this article transcribes.
 - [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). The $80$ nonzero brackets and the five rules that generate them.
 - [The Fifteen AXF Matrices of the Bosons in Detail](the-15-axf-matrices-of-the-bosons-in-detail.html). Every array, its entries, and its mass.
-- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The $128$ entries, one generator at a time.
+- [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The $120$ entries, one generator at a time.
 - [The Yukawa Sector of the $\mathrm{SU}(4)$ Model](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). Where the fermion masses come from.
 - [Three Diagrams of the $\mathrm{SU}(4)$ Model](three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html). Three rules from this list, drawn.
 - [The Classification of the Fermions](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The sixteen, the $B-L$ column, and the two copies.

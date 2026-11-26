@@ -4,7 +4,7 @@
 
 A single matrix carries the whole frame of $M_6(\mathbb{C})$: a root of unity $H$ with $H^6=I$ and six distinct eigenvalues. Its six eigenspaces are six lines, and the six Lagrange projectors onto them are idempotent, orthogonal and complete. The root is read as the sum $H=\sum_k\omega_kP_k$ of its idempotents with the sixth roots of unity as coefficients; the coefficients grade the algebra by $\mathbb{Z}/6$; and the cube $H^3$ is the chirality involution. **No second object is primitive.** The idempotents are functions of $H$ alone, and the root is the only input.
 
-The article fixes the root, the Lagrange formula, the grading and the root set, in that order. It assumes the algebra $M_6(\mathbb{C})$ — the basis $E_{ij}$, the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant — which is *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form, no norm and no topology. The Peirce decomposition that the six lines induce is *The Peirce Decomposition of $M_6(\mathbb{C})$*; the frame and its gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$*; the two chiralities are *The Two Chiralities of $M_6(\mathbb{C})$*; the spectral theory of an element with repeated eigenvalues, where the Lagrange formula degenerates, is *Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$*.
+The article fixes the root, the Lagrange formula, the grading and the root set, in that order. It assumes the algebra $M_6(\mathbb{C})$ — the basis $E_{ij}$, the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant — which is *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form, no norm and no topology. The Peirce decomposition that the six lines induce is *The Peirce Decomposition of $M_6(\mathbb{C})$*; the frame and its frame group are *The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$*; the two chiralities are *The Two Chiralities of $M_6(\mathbb{C})$*; the spectral theory of an element with repeated eigenvalues, where the Lagrange formula degenerates, is *Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$*.
 
 The construction is root-first. The biquaternion articles build the frame from two anticommuting roots of $+1$; here one root of order six supplies all six idempotents, and the order-two case is a specialisation, not a second ingredient. That contrast is stated in §*The Order-Two Case*.
 
@@ -381,15 +381,15 @@ $$
 
 **Remark.** The two numbers $30$ and $15$ are not in conflict. The root set has dimension $30$; the flag variety has dimension $15$; the fibre of the forgetful map is the $15$-dimensional space of splittings. The $6!$ is a discrete relabelling, not a continuous parameter: the root set is a $6!$-fold cover of the space of unordered decompositions. The map to the flag variety is defined on the root, where the eigenvalues order the lines; it does not descend to the unordered space.
 
-### The Root and the Gauge
+### The Root and the Frame Group
 
-The orbit count is the first half of the count of the frame. The frame of $M_6(\mathbb{C})$ is an ordered basis up to an overall scalar; the root fixes the six lines, and the gauge fixes one scale in each line. The root contributes $30$ parameters, the gauge $5$, and
+The orbit count is the first half of the count of the frame. The frame of $M_6(\mathbb{C})$ is an ordered basis up to an overall scalar; the root fixes the six lines, and the fixes by a change of frame one scale in each line. The root contributes $30$ parameters, the frame group $5$, and
 
 $$
 30+5=35=\dim PGL_6 .
 $$
 
-The gauge is the subject of *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$*. The two counts meet because the frame is $PGL_6$ itself: a root is a point of $PGL_6/T$ and a gauge is a point of $T$.
+The frame group is the subject of *The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$*. The two counts meet because the frame is $PGL_6$ itself: a root is a point of $PGL_6/T$ and a frame group is a point of $T$.
 
 ## The Order-Two Case
 
@@ -403,7 +403,7 @@ idempotent, orthogonal, complete, and $E=P_+-P_-$. This is the frame of the biqu
 
 For $n=6$ the same reduction is available for the involution $\Gamma=H^3$: its two projectors are $\Pi_\pm=(I\pm\Gamma)/2$, of ranks three. They are the coarse idempotents of §*The Chirality Involution*, not primitive idempotents, and the primitive ones remain the six $P_k$. The order-two case is thus a **quotient** of the order-six case, obtained by grouping the six lines into the even and the odd three.
 
-**Remark (why one root suffices).** The biquaternion articles build their frame from a root of $+1$ and one nonzero element of a mixed Peirce line, the partner being fixed by the normalisation and the freedom being one reciprocal rescaling. In $M_6$ the root has six eigenvalues; the six lines are already distinct and the mixed units between them are indexed by pairs, so the relative scales form the $(6-1)$-parameter gauge. **The root is the only primitive object; the gauge is a choice of frame inside it.**
+**Remark (why one root suffices).** The biquaternion articles build their frame from a root of $+1$ and one nonzero element of a mixed Peirce line, the partner being fixed by the normalisation and the freedom being one reciprocal rescaling. In $M_6$ the root has six eigenvalues; the six lines are already distinct and the mixed units between them are indexed by pairs, so the relative scales form the $(6-1)$-parameter frame group. **The root is the only primitive object; the frame group is a choice of frame inside it.**
 
 ## Summary
 
@@ -422,7 +422,7 @@ $$
 
 The projectors grade the algebra by $\mathbb{Z}/6$, with six graded pieces $A_r$ of dimension six each, and the two quotients $\mathbb{Z}/2$ and $\mathbb{Z}/3$ are the only coarser gradings. The cube $\Gamma=H^3$ is the chirality involution: it has eigenvalues $+1$ and $-1$, each of multiplicity three, and its projectors are the sums $P_1+P_3+P_5$ and $P_2+P_4+P_6$.
 
-The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; the stabiliser is the five-dimensional torus, which is the gauge. The $6!$ relabellings of the six lines are discrete, and the flag variety is the $15$-dimensional image of the forgetful map.
+The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; the stabiliser is the five-dimensional torus, which is the frame group. The $6!$ relabellings of the six lines are discrete, and the flag variety is the $15$-dimensional image of the forgetful map.
 
 | Object | Data |
 |---|---|
@@ -432,7 +432,7 @@ The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; 
 | Grading | $M_6=\bigoplus_{r\in\mathbb{Z}/6}A_r$, $\dim A_r=6$ |
 | Chirality | $\Gamma=H^3$, $3+3$ split |
 | Root set | $PGL_6/T$, complex dimension $30$ |
-| Gauge | $T\cong(\mathbb{C}^\times)^5$, dimension $5$ |
+| Frame group | $T\cong(\mathbb{C}^\times)^5$, dimension $5$ |
 | Total frame | $30+5=35=\dim PGL_6$ |
 
 ## Summary of Notation
@@ -454,7 +454,7 @@ The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; 
 
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the product, the trace, the determinant and the group $PGL_6$.
 - [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), for the decomposition of $M_6$ by the six projectors and the coarse split by one of them.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the nilpotents $E_{12},\dots,E_{56}$ and the five-parameter gauge.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m6c.html), for the nilpotents $E_{12},\dots,E_{56}$ and the five-parameter frame group.
 - [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the $3+3$ split and the mass block.
 - [Primitive Idempotents and Minimal Left Ideals](primitive-idempotents-and-minimal-left-ideals.html), for the general theory of the idempotents and the modules they generate.
 - [Idempotents and Involutions of an Algebra](idempotents-and-involutions-of-an-algebra.html), for the correspondence between idempotents and involutions in the general case.

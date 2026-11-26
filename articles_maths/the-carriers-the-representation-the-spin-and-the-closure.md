@@ -919,7 +919,7 @@ The scalar term is $2i\operatorname{Im}(\alpha\bar\beta)$, and it vanishes exact
 - [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the infinite family of bispinor spaces
 - [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), for the vector part, the cross product operator and the split $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$
 - [The Minimal Left Ideals of the Biquaternion Algebra](the-minimal-left-ideals-of-the-biquaternion-algebra.html), for the idempotents, the minimality and the splitting of the algebra
-- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the gauge and the system of Peirce units
+- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the frame group and the system of Peirce units
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the four corners and the diagonal part
 - [The Regular Module in the Biquaternion Algebra](the-regular-module-in-the-biquaternion-algebra.html), for the algebra read as a module over itself
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the centre, the pure part and the two Hermitian halves

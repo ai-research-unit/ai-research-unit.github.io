@@ -4,7 +4,7 @@
 
 **Choose an orthonormal pair of spinors $Ξ_{\mathrm{wfn}}$ and $\eta$; then the Peirce coordinates of a matrix $x$ are the four matrix elements $x_{0}=Ξ_{\mathrm{wfn}}^{*}xΞ_{\mathrm{wfn}}$, $x_{+}=Ξ_{\mathrm{wfn}}^{*}x\eta$, $x_{-}=\eta^{*}xΞ_{\mathrm{wfn}}$, $x_{1}=\eta^{*}x\eta$, and the Peirce formula is the change of basis $x=U\begin{pmatrix}x_{0}&x_{+}\\ x_{-}&x_{1}\end{pmatrix}U^{*}$ with $U=(Ξ_{\mathrm{wfn}},\eta)$ unitary.**
 
-The article builds the rank-one Hermitian idempotent of a spinor, obtains the Peirce frame from an orthonormal pair, proves that the Peirce coordinates are the matrix elements in that frame, reads the gauge freedom as the phase of the spinor, and interprets the sphere of Hermitian idempotents as a Hopf fibration over the projective line. It assumes *The Peirce Basis and the Corners at $n=2$*, *The Peirce Decomposition and the Two Halves at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
+The article builds the rank-one Hermitian idempotent of a spinor, obtains the Peirce frame from an orthonormal pair, proves that the Peirce coordinates are the matrix elements in that frame, reads the frame freedom as the phase of the spinor, and interprets the sphere of Hermitian idempotents as a Hopf fibration over the projective line. It assumes *The Peirce Basis and the Corners at $n=2$*, *The Peirce Decomposition and the Two Halves at $n=2$* and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*.
 
 It defers the spectral theorem to *The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents*.
 
@@ -61,13 +61,13 @@ and the four numbers are the entries of $U^{*}xU$.
 
 **Proof.** The trace and the determinant are invariant under the unitary change of basis $U^{*}xU$.
 
-## The Gauge and the Phase
+## The Frame Group and the Phase
 
 **Proposition.** Replacing $Ξ_{\mathrm{wfn}}$ by $e^{i\theta}Ξ_{\mathrm{wfn}}$ and $\eta$ by $e^{i\digamma_{\mathrm{map}}}\eta$ leaves $e$ and $f$ unchanged and multiplies $\upsilon_{+}$ by $e^{i(\theta-\digamma_{\mathrm{map}})}$ and $\upsilon_{-}$ by $e^{-i(\theta-\digamma_{\mathrm{map}})}$.
 
 **Proof.** The idempotent $e_{Ξ_{\mathrm{wfn}}}$ is unchanged because the phase cancels between the spinor and its conjugate; the nilpotent $Ξ_{\mathrm{wfn}}\eta^{*}$ collects the phase of $Ξ_{\mathrm{wfn}}$ and the inverse phase of $\eta$.
 
-**Corollary.** The gauge of *The Peirce Basis and the Corners at $n=2$* is realised here by the relative phase, and the modulus of the rescaling is fixed by the normalisation of the spinors.
+**Corollary.** The frame group of *The Peirce Basis and the Corners at $n=2$* is realised here by the relative phase, and the modulus of the rescaling is fixed by the normalisation of the spinors.
 
 **Proof.** The relative phase $e^{i(\theta-\digamma_{\mathrm{map}})}$ is exactly the reciprocal rescaling with $\lambda$ of modulus one; the modulus is not free because both spinors are unit vectors.
 
@@ -107,7 +107,7 @@ and the four numbers are the entries of $U^{*}xU$.
 
 A nonzero spinor $Ξ_{\mathrm{wfn}}$ gives the rank-one Hermitian idempotent $e_{Ξ_{\mathrm{wfn}}}=Ξ_{\mathrm{wfn}}Ξ_{\mathrm{wfn}}^{*}/\|Ξ_{\mathrm{wfn}}\|^{2}$, and an orthonormal pair of spinors gives the Peirce frame $e$, $\upsilon_{+}=Ξ_{\mathrm{wfn}}\eta^{*}$, $\upsilon_{-}=\etaΞ_{\mathrm{wfn}}^{*}$, $f$.
 
-The Peirce coordinates of a matrix are its four matrix elements in the spinor basis, $x_{0}=Ξ_{\mathrm{wfn}}^{*}xΞ_{\mathrm{wfn}}$, $x_{+}=Ξ_{\mathrm{wfn}}^{*}x\eta$, $x_{-}=\eta^{*}xΞ_{\mathrm{wfn}}$, $x_{1}=\eta^{*}x\eta$, and the Peirce formula is the unitary change of basis. The gauge is the relative phase of the two spinors, with the modulus fixed by normalisation, and the sphere of Hermitian idempotents is the base of the Hopf fibration.
+The Peirce coordinates of a matrix are its four matrix elements in the spinor basis, $x_{0}=Ξ_{\mathrm{wfn}}^{*}xΞ_{\mathrm{wfn}}$, $x_{+}=Ξ_{\mathrm{wfn}}^{*}x\eta$, $x_{-}=\eta^{*}xΞ_{\mathrm{wfn}}$, $x_{1}=\eta^{*}x\eta$, and the Peirce formula is the unitary change of basis. The frame group is the relative phase of the two spinors, with the modulus fixed by normalisation, and the sphere of Hermitian idempotents is the base of the Hopf fibration.
 
 ## Summary of Notation
 

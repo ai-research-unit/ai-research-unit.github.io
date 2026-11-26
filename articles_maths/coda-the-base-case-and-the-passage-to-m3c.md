@@ -4,7 +4,7 @@
 
 **Order two is the base case of the family $M_n(\mathbb{C})$: everything the series proves in general is visible there in coordinates, and everything that the general theory cannot see is confined to the small numbers that order two makes small, the one-dimensional antisymmetric part, the single rotation plane, the sphere of Hermitian idempotents and the projective line of flags.**
 
-The article collects the shape of the base case, separates the statements that hold at every order from the accidents of order two, records where order three departs from the pattern, and hands the reader to the series on $M_3(\mathbb{C})$. It assumes the whole preceding sequence, in particular *The Frame, the Simple Nilpotent and the Gauge of $M_2(\mathbb{C})$*, *The Polar Decomposition from the Two Halves at $n=2$* and *The Symmetric Space $\mathrm{GL}_2/O(2)$ and Its Complex Twin*.
+The article collects the shape of the base case, separates the statements that hold at every order from the accidents of order two, records where order three departs from the pattern, and hands the reader to the series on $M_3(\mathbb{C})$. It assumes the whole preceding sequence, in particular *The Frame, the Simple Nilpotent and the Frame Group of $M_2(\mathbb{C})$*, *The Polar Decomposition from the Two Halves at $n=2$* and *The Symmetric Space $\mathrm{GL}_2/O(2)$ and Its Complex Twin*.
 
 It follows the biquaternion article *Introduction to the Algebra of Biquaternions* for the same base case in the older language.
 
@@ -20,7 +20,7 @@ It follows the biquaternion article *Introduction to the Algebra of Biquaternion
 
 **Proof.** The characteristic polynomial has degree two, so its two coefficients are the trace and the determinant, and the rank is read from the vanishing of the determinant.
 
-**Corollary.** The Peirce decomposition has two idempotents, four corners and a gauge of one reciprocal rescaling.
+**Corollary.** The Peirce decomposition has two idempotents, four corners and a frame group of one reciprocal rescaling.
 
 **Proof.** The corners of a pair of complementary idempotents are the four blocks of the matrix in the corresponding basis, and the freedom in the choice of the basis is a single rescaling of one block against its partner.
 
@@ -106,7 +106,7 @@ It follows the biquaternion article *Introduction to the Algebra of Biquaternion
 
 ## Summary
 
-The base case is an algebra of real dimension eight with three-dimensional and one-dimensional real halves, four-dimensional complex halves, two eigenvalues and a single reciprocal rescaling in the gauge. Its product rule, trace, determinant and rank govern all of its spectral statements, and its Peirce decomposition has four corners.
+The base case is an algebra of real dimension eight with three-dimensional and one-dimensional real halves, four-dimensional complex halves, two eigenvalues and a single reciprocal rescaling in the frame group. Its product rule, trace, determinant and rank govern all of its spectral statements, and its Peirce decomposition has four corners.
 
 The statements that use only the trace, the determinant and the bracket hold at every order, and include the Peirce decomposition, the triangular decomposition, the corner recursion and the polar decomposition. The accidents of order two are the one-dimensional antisymmetric part, the simplicity of every rotation, the Lorentzian cone and the sphere of Hermitian idempotents; at order three each of these fails, and the passage to the next case replaces them by the three-dimensional orthogonal algebra, non-simple rotations, a cubic cone and two Grassmannians of projections.
 
@@ -124,6 +124,6 @@ The statements that use only the trace, the determinant and the bracket hold at 
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Peirce decompositions in general.
 - Pavel Etingof and others, *Introduction to Representation Theory* (American Mathematical Society, 2011), for the family of matrix algebras.
-- [The Frame, the Simple Nilpotent and the Gauge of $M_2(\mathbb{C})$](the-frame-the-simple-nilpotent-and-the-gauge-of-m2c.html), for the frame and its gauge in the base case.
+- [The Frame, the Simple Nilpotent and the Frame Group of $M_2(\mathbb{C})$](the-frame-the-simple-nilpotent-and-the-frame-group-of-m2c.html), for the frame and its frame group in the base case.
 - [The Polar Decomposition from the Two Halves at $n=2$](the-polar-decomposition-from-the-two-halves-at-n-2.html), for the decomposition that generalises.
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the next case of the family.

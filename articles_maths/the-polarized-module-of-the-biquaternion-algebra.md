@@ -4,9 +4,9 @@
 
 **The subject.** The carrier of the left action of $\mathbb{B}$ is four complex dimensional and splits into two planes in many ways and canonically in none; *The Unpolarized Module of the Biquaternion Algebra* established that, and this article makes one choice and reads what the choice yields. A **polarization** of the carrier is a pair of distinct points of its projective line, that is an unordered pair of complementary minimal left ideals. Once such a pair is named, the carrier is the direct sum of two submodules of dimension two, each carrying a copy of the simple module $S$, and every statement the corpus makes about a spinor, a Weyl component or a Peirce coordinate is written in this chart.
 
-**What the choice buys.** The two halves are left ideals, they are minimal, and every minimal left ideal is one of their kind: $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ for a primitive idempotent $\tilde\Pi_{\mathrm{id}}$. The algebra is their direct sum as a left module, and the whole family of minimal left ideals is a projective line, so the choice made here is one point of a family and not a structure of the algebra. Inside one half the Peirce family splits the space canonically into a diagonal line and a mixed line; a Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the gauge is the freedom that remains; the ladder is left multiplication by the mixed units; and the intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line.
+**What the choice buys.** The two halves are left ideals, they are minimal, and every minimal left ideal is one of their kind: $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ for a primitive idempotent $\tilde\Pi_{\mathrm{id}}$. The algebra is their direct sum as a left module, and the whole family of minimal left ideals is a projective line, so the choice made here is one point of a family and not a structure of the algebra. Inside one half the Peirce family splits the space canonically into a diagonal line and a mixed line; a Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the frame group is the freedom that remains; the ladder is left multiplication by the mixed units; and the intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line.
 
-**What the choice costs.** The choice is a point of a projective line, so a statement proved in it is a statement about the point until its invariance is shown, and a change of point destroys exactly the statements that are not invariant. The cost is paid once and stated here rather than in each section: the adapted bases, the coordinates and the gauge are chart data.
+**What the choice costs.** The choice is a point of a projective line, so a statement proved in it is a statement about the point until its invariance is shown, and a change of point destroys exactly the statements that are not invariant. The cost is paid once and stated here rather than in each section: the adapted bases, the coordinates and the frame group are chart data.
 
 **What the choice does not buy.** The polarization is **not** a chirality. The two halves are both copies of $S$, so the pair is a **copy index**: it distinguishes the halves and does not distinguish their nature, and an automorphism of the module carries one pair of points into any other. The word chirality belongs to the conjugate pair, which is not a splitting of this carrier at all and is treated in *The Unpolarized Module of the Biquaternion Algebra*, §*The Conjugate Pair*. A reader who takes the Peirce pair for the two chiralities counts a choice of basis as a structure of the algebra, which is the error the three-article arrangement is meant to prevent.
 
@@ -150,7 +150,7 @@ $$
 
 Therefore left multiplication by $\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},+-}$ is the projection of $S_{+}$ onto $\mathbb{B}_{-+}$, and left multiplication by $\vec\Pi_{\mathrm{nil},+-}\vec\Pi_{\mathrm{nil},-+}$ is the projection of $S_{+}$ onto $\mathbb{C}\tilde\Pi_{\mathrm{id},+}$. Each composite is idempotent; neither is the identity on $S_{+}$. The two maps are the two steps of the ladder.
 
-**The normalization is the gauge.** Without the product normalization, the two maps are defined only up to reciprocal scale: if $\vec\Pi_{\mathrm{nil},+-}$ is replaced by $\lambda\vec\Pi_{\mathrm{nil},+-}$, the first map is multiplied by $\lambda$ and the second by $\lambda^{-1}$. The ladder is therefore canonical on the family and gauge-dependent on the basis, as it must be.
+**The normalization is the frame group.** Without the product normalization, the two maps are defined only up to reciprocal scale: if $\vec\Pi_{\mathrm{nil},+-}$ is replaced by $\lambda\vec\Pi_{\mathrm{nil},+-}$, the first map is multiplied by $\lambda$ and the second by $\lambda^{-1}$. The ladder is therefore canonical on the family and frame dependent on the basis, as it must be.
 
 ## The Indefinite Form
 
@@ -167,11 +167,11 @@ $$
 a'=a,\qquad c'=t^{-1}c,\qquad b'=tb,\qquad d'=d.
 $$
 
-The diagonal coefficients are gauge-invariant; the mixed coefficients carry the reciprocal factors. The spinor element is unchanged; only its coordinates change.
+The diagonal coefficients are frame invariant; the mixed coefficients carry the reciprocal factors. The spinor element is unchanged; only its coordinates change.
 
-**The gauge is not a symmetry of the spinor.** The gauge is a change of basis of the same family. It does not move the spinor in the algebra; it moves the coordinate description. A statement about a spinor is gauge-covariant when it is independent of $t$.
+**The frame group is not a symmetry of the spinor.** The frame group is a change of basis of the same family. It does not move the spinor in the algebra; it moves the coordinate description. A statement about a spinor is frame covariant when it is independent of $t$.
 
-**The Hermitian gauge.** If the family and the basis are Hermitian, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$ and $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$, then the allowed gauge is $|t|=1$. The Hermitian norm of a positive spinor is
+**The Hermitian frame group.** If the family and the basis are Hermitian, $\tilde\Pi_{\mathrm{id},\pm}^{*}=\tilde\Pi_{\mathrm{id},\pm}$ and $\vec\Pi_{\mathrm{nil},-+}=\vec\Pi_{\mathrm{nil},+-}^{*}$, then the allowed frame group is $|t|=1$. The Hermitian norm of a positive spinor is
 
 $$
 \mathrm{Sc}(Ξ_{\mathrm{wfn},+}Ξ_{\mathrm{wfn},+}^{*})
@@ -196,7 +196,7 @@ $$
 a\in\mathbb{C},\quad \nu_{+}\in\mathbb{B}_{-+},
 $$
 
-with $a$ and $\nu_{+}$ intrinsic. The coordinate $c$ in a chosen basis is not intrinsic: $\nu_{+}=c\vec\Pi_{\mathrm{nil},-+}$ and $c$ is multiplied by $t^{-1}$ under the gauge.
+with $a$ and $\nu_{+}$ intrinsic. The coordinate $c$ in a chosen basis is not intrinsic: $\nu_{+}=c\vec\Pi_{\mathrm{nil},-+}$ and $c$ is multiplied by $t^{-1}$ under the frame group.
 
 **The invariant conditions.** The following conditions are independent of the basis:
 
@@ -205,9 +205,9 @@ with $a$ and $\nu_{+}$ intrinsic. The coordinate $c$ in a chosen basis is not in
 - $a=0$ and $\nu_{+}=0$: the spinor is zero.
 - $a\ne0$: the spinor has a nonzero diagonal part; the ratio $c/a$ is a coordinate on the mixed line and is not invariant, since it is multiplied by $t^{-1}$.
 
-**What is not invariant.** The pair $(a,c)$ is not invariant; only $a$ and the element $\nu_{+}$ are. The vanishing of $c$ is invariant, because $c=0$ exactly when $\nu_{+}=0$; the value of a nonzero $c$ is not. In the Hermitian gauge the norm $\frac12(|a|^{2}+|c|^{2})$ is invariant; it is not an invariant of the gauge $\mathbb{C}^{\times}$ without the Hermitian condition.
+**What is not invariant.** The pair $(a,c)$ is not invariant; only $a$ and the element $\nu_{+}$ are. The vanishing of $c$ is invariant, because $c=0$ exactly when $\nu_{+}=0$; the value of a nonzero $c$ is not. In the Hermitian frame group the norm $\frac12(|a|^{2}+|c|^{2})$ is invariant; it is not an invariant of the frame group $\mathbb{C}^{\times}$ without the Hermitian condition.
 
-**The negative spinor.** The same statements hold for $Ξ_{\mathrm{wfn},-}=\nu_{-}+d\tilde\Pi_{\mathrm{id},-}$, with $d$ and $\nu_{-}$ intrinsic and $b$ gauge-dependent: $b'=tb$.
+**The negative spinor.** The same statements hold for $Ξ_{\mathrm{wfn},-}=\nu_{-}+d\tilde\Pi_{\mathrm{id},-}$, with $d$ and $\nu_{-}$ intrinsic and $b$ frame dependent: $b'=tb$.
 
 ## The Peirce Index
 
@@ -272,7 +272,7 @@ $$
 \eta\vec\Pi_{\mathrm{nil},-+}\vec\Pi_{\mathrm{nil},-+}=0.
 $$
 
-The exchange depends on the basis: under the gauge the first map is multiplied by $t^{-1}$ and the second by $t$.
+The exchange depends on the basis: under the frame group the first map is multiplied by $t^{-1}$ and the second by $t$.
 
 **The star does not exchange the spaces.** If the family is Hermitian, then
 
@@ -320,7 +320,7 @@ $$
 Ξ_{\mathrm{wfn},-}=b\vec\Pi_{\mathrm{nil},+-}+d\tilde\Pi_{\mathrm{id},-}.
 $$
 
-The gauge acts by
+The frame group acts by
 
 $$
 a'=a,\qquad c'=t^{-1}c,\qquad b'=tb,\qquad d'=d.
@@ -351,7 +351,7 @@ $$
 
 The two spinor spaces $S_\pm=\mathbb{B}\tilde\Pi_{\mathrm{id},\pm}$ are the two Peirce carriers, and in this algebra they are the two minimal left ideals, of complex dimension two; the algebra is their direct sum as a left module, $\mathbb{B}=S_+\oplus S_-$. Every left ideal is a direct sum of minimal left ideals, every minimal left ideal is $\mathbb{B}\tilde\Pi_{\mathrm{id}}$ for a primitive idempotent, and all of them are isomorphic to the simple module $\mathbb{C}^2$, on which $i$ acts as the scalar $i$. The family of them is a projective line, so the pair of points that this article fixes is a choice and not a structure.
 
-A spinor is an element of one of the two spaces. The family splits each space canonically into a diagonal line and a mixed line, $S_{+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{B}_{-+}$ and $S_{-}=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}$. A Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the gauge is the reciprocal scaling of the two mixed units. The ladder is left multiplication by the mixed units, and its composites are the two projections. The intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line; the mixed coordinate is gauge-dependent. The Peirce index is the right index. Right multiplication preserves a spinor space under a corner condition and exchanges the two spaces by the mixed units; the star does not exchange them.
+A spinor is an element of one of the two spaces. The family splits each space canonically into a diagonal line and a mixed line, $S_{+}=\mathbb{C}\tilde\Pi_{\mathrm{id},+}\oplus\mathbb{B}_{-+}$ and $S_{-}=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_{\mathrm{id},-}$. A Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the frame group is the reciprocal scaling of the two mixed units. The ladder is left multiplication by the mixed units, and its composites are the two projections. The intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line; the mixed coordinate is frame dependent. The Peirce index is the right index. Right multiplication preserves a spinor space under a corner condition and exchanges the two spaces by the mixed units; the star does not exchange them.
 
 The index that the choice supplies is a copy index and not a chirality: the two halves are isomorphic, so no observation inside the algebra distinguishes them, and the pair is moved by the automorphisms of the module. Chirality is carried by the conjugate pair and by the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, not by this splitting.
 
@@ -367,7 +367,7 @@ The index that the choice supplies is a copy index and not a chirality: the two 
 | $\mathcal{C}_\pm$ | the couple of Peirce vectors spanning $S_\pm$ |
 | $a,c$ | the coordinates of a positive spinor |
 | $b,d$ | the coordinates of a negative spinor |
-| $t$ | the gauge parameter, with $\lvert t\rvert=1$ in the Hermitian case |
+| $t$ | the frame parameter, with $\lvert t\rvert=1$ in the Hermitian case |
 | $\mathbb{B}_{st}=\tilde\Pi_{\mathrm{id},s}\mathbb{B}\tilde\Pi_{\mathrm{id},t}$ | the four Peirce lines |
 
 ## Further Reading
@@ -377,7 +377,7 @@ The index that the choice supplies is a copy index and not a chirality: the two 
 - [The Regular Module in the Biquaternion Algebra](the-regular-module-in-the-biquaternion-algebra.html), for the ideals as submodules and the simplicity of the algebra.
 - [The Category of Modules in the Biquaternion Algebra](the-category-of-modules-in-the-biquaternion-algebra.html), for the classification of all modules and the lattice of left ideals.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the family, the four lines and the product rule.
-- [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the gauge and the coordinates.
+- [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the frame group and the coordinates.
 - [Primitive Idempotents and Minimal Left Ideals](primitive-idempotents-and-minimal-left-ideals.html), for the general criterion.
 - [The Commutator Operator](the-commutator-operator.html), for the right multiplication and the exchange as operators.
 - [Idempotents](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification of the idempotents and the standard pair.

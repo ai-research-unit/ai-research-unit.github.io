@@ -2,11 +2,11 @@
 
 ## Introduction
 
-**The idempotents of rank $p$ in $M_4(\mathbb{C})$ form the homogeneous space $PGL_4/P(GL_p\times GL_{4-p})$, of complex dimension $2p(4-p)$; for $p=1$ this is an affine bundle of rank $3$ over $\mathbb{P}^3$, of dimension $6$.** The fibre over a $p$-plane is the affine space of complements, which is contractible; the idempotents of rank $p$ are therefore homotopy equivalent to the Grassmannian $\operatorname{Gr}(p,4)$. The full flag variety $GL_4/B$ has dimension $6$; the partial flags and their incidence relations organise the complements, and the gauge torus is the fibre of the frame bundle over the root orbit.
+**The idempotents of rank $p$ in $M_4(\mathbb{C})$ form the homogeneous space $PGL_4/P(GL_p\times GL_{4-p})$, of complex dimension $2p(4-p)$; for $p=1$ this is an affine bundle of rank $3$ over $\mathbb{P}^3$, of dimension $6$.** The fibre over a $p$-plane is the affine space of complements, which is contractible; the idempotents of rank $p$ are therefore homotopy equivalent to the Grassmannian $\operatorname{Gr}(p,4)$. The full flag variety $GL_4/B$ has dimension $6$; the partial flags and their incidence relations organise the complements, and the frame torus is the fibre of the frame bundle over the root orbit.
 
-The article describes the rank-one idempotents and their affine bundle, the general rank-$p$ homogeneous space, the tangent space and the rank stratification, the relation to the flag variety and the Grassmannians, and the gauge.
+The article describes the rank-one idempotents and their affine bundle, the general rank-$p$ homogeneous space, the tangent space and the rank stratification, the relation to the flag variety and the Grassmannians, and the frame group.
 
-The Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the rank-two split is *The Rank-Two Split of $M_4(\mathbb{C})$*; the root and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the adjoint action and the flag variety are *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*; the topology is *The Topology of $M_4(\mathbb{C})$*.
+The Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the rank-two split is *The Rank-Two Split of $M_4(\mathbb{C})$*; the root and the frame group are *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$*; the adjoint action and the flag variety are *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*; the topology is *The Topology of $M_4(\mathbb{C})$*.
 
 ## Rank-One Idempotents
 
@@ -323,30 +323,30 @@ $$
 
 The full flag maps to it with fibres the product of the full flag varieties of the subquotients $U$, $V/U$ and $\mathbb{C}^4/V$. The standard incidence correspondences are the projections to the two Grassmannians; the fibres are Grassmannians of the subquotients. These are the nested-flag analogues of the transverse-pair bundle of the idempotents.
 
-**The gauge as the fibre of the frame bundle.** The projection
+**The frame group as the fibre of the frame bundle.** The projection
 
 $$
 GL_4\longrightarrow\mathbb{P}^3,\qquad
 S\longmapsto S e_1,
 $$
 
-is a principal bundle with fibre the parabolic stabiliser of the line. The maximal torus $T\cong(\mathbb{C}^\times)^3$ of $PGL_4$ is the gauge torus; the frame bundle over the root orbit,
+is a principal bundle with fibre the parabolic stabiliser of the line. The maximal torus $T\cong(\mathbb{C}^\times)^3$ of $PGL_4$ is the frame torus; the frame bundle over the root orbit,
 
 $$
 PGL_4\longrightarrow PGL_4/T,
 $$
 
-has fibre $T$, and the gauge is that fibre. The count is
+has fibre $T$, and the frame group is that fibre. The count is
 
 $$
 \underbrace{15}_{\text{frame group}}
 =
 \underbrace{12}_{\text{root orbit}}
 +
-\underbrace{3}_{\text{gauge}}.
+\underbrace{3}_{\text{frame group}}.
 $$
 
-The idempotents $E_{ii}$ of a frame are the coordinate projections; the gauge rescales the frame and acts on the off-diagonal nilpotents, while the diagonal idempotents are invariant.
+The idempotents $E_{ii}$ of a frame are the coordinate projections; the frame group rescales the frame and acts on the off-diagonal nilpotents, while the diagonal idempotents are invariant.
 
 ## The Biquaternion Case
 
@@ -385,7 +385,7 @@ $$
 \dim_\mathbb{C}\mathcal{I}_p=2p(4-p).
 $$
 
-For $p=1$ this is an affine bundle of rank $3$ over $\mathbb{P}^3$, of dimension $6$; for $p=2$ it is an affine bundle of rank $4$ over $\operatorname{Gr}(2,4)$, of dimension $8$; for $p=3$ it is the dual affine bundle over $\mathbb{P}^3$, of dimension $6$. The fibre over a $p$-plane is the affine space of complements, of dimension $p(4-p)$, contractible; the orthogonal projections form the zero section $\operatorname{Gr}(p,4)$, and $\mathcal{I}_p$ is homotopy equivalent to $\operatorname{Gr}(p,4)$. The tangent space at $P$ is the sum of the two off-diagonal Peirce corners $\{X:XP+PX=X\}$, of dimension $2p(4-p)$; the rank strata are clopen components, with $\overline{\mathcal{I}_p}=\mathcal{I}_p$ because $\operatorname{rank}P=\operatorname{tr}P$ is locally constant. The full flag variety $GL_4/B$ has dimension $6$ and is simply connected; the idempotents are transverse pairs of a $p$-plane and a $(4-p)$-plane, not nested flags. The gauge torus $T\cong(\mathbb{C}^\times)^3$ is the fibre of the frame bundle over the root orbit, and $15=12+3$.
+For $p=1$ this is an affine bundle of rank $3$ over $\mathbb{P}^3$, of dimension $6$; for $p=2$ it is an affine bundle of rank $4$ over $\operatorname{Gr}(2,4)$, of dimension $8$; for $p=3$ it is the dual affine bundle over $\mathbb{P}^3$, of dimension $6$. The fibre over a $p$-plane is the affine space of complements, of dimension $p(4-p)$, contractible; the orthogonal projections form the zero section $\operatorname{Gr}(p,4)$, and $\mathcal{I}_p$ is homotopy equivalent to $\operatorname{Gr}(p,4)$. The tangent space at $P$ is the sum of the two off-diagonal Peirce corners $\{X:XP+PX=X\}$, of dimension $2p(4-p)$; the rank strata are clopen components, with $\overline{\mathcal{I}_p}=\mathcal{I}_p$ because $\operatorname{rank}P=\operatorname{tr}P$ is locally constant. The full flag variety $GL_4/B$ has dimension $6$ and is simply connected; the idempotents are transverse pairs of a $p$-plane and a $(4-p)$-plane, not nested flags. The frame torus $T\cong(\mathbb{C}^\times)^3$ is the fibre of the frame bundle over the root orbit, and $15=12+3$.
 
 $$
 \boxed{\ \dim_\mathbb{C}\mathcal{I}_p=2p(4-p),\quad \mathcal{I}_1\to\mathbb{P}^3\ \text{affine rank }3,\quad \mathcal{I}_p\simeq\operatorname{Gr}(p,4),\quad \dim_\mathbb{C}\mathcal{F}=6. }
@@ -400,7 +400,7 @@ $$
 | $\mathcal{I}_4$ | $0$ |
 | $\operatorname{Gr}(p,4)$ | $p(4-p)$ |
 | Full flag variety | $6$ |
-| Gauge torus | $3$ |
+| Frame torus | $3$ |
 
 ## Summary of Notation
 
@@ -410,7 +410,7 @@ $$
 | $P(GL_p\times GL_{4-p})$ | the projective parabolic stabiliser, with Levi $GL_p\times GL_{4-p}$ |
 | $\operatorname{Gr}(p,4)$ | the Grassmannian of $p$-planes |
 | $\mathcal{F}=GL_4/B$ | the full flag variety |
-| $T$ | the gauge torus |
+| $T$ | the frame torus |
 | $B$ | the complement coordinate of an idempotent |
 
 ## Further Reading

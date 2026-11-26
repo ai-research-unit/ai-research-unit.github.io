@@ -219,7 +219,7 @@ $$
 
 identically in $\Pi$; the general solution carries the four relations and the reason no numerical error enters them.
 
-For $\Sigma=G$, these are the rows of the condition $\mathsf D\Sigma=\digamma_{\mathrm{map}}Ξ_{\mathrm{wfn}}$ with the right factor the spinor $(1,G)$ and the left factor $\digamma_{\mathrm{map}}=(\partial G/\partial\upsilon,\partial G/\partial p)$: the right semi-derivative of a twistor-generated solution is the twistor spinor in the gauge $Ξ_{\mathrm{wfn},0}=1$. Multiplying the first by $\partial G/\partial p$ and the second by $\partial G/\partial\upsilon$ gives the eikonal; subtracting their cross-derivatives gives
+For $\Sigma=G$, these are the rows of the condition $\mathsf D\Sigma=\digamma_{\mathrm{map}}Ξ_{\mathrm{wfn}}$ with the right factor the spinor $(1,G)$ and the left factor $\digamma_{\mathrm{map}}=(\partial G/\partial\upsilon,\partial G/\partial p)$: the right semi-derivative of a twistor-generated solution is the twistor spinor in the frame group $Ξ_{\mathrm{wfn},0}=1$. Multiplying the first by $\partial G/\partial p$ and the second by $\partial G/\partial\upsilon$ gives the eikonal; subtracting their cross-derivatives gives
 
 $$
 0=\frac{\partial}{\partial w}\left(\frac{\partial G}{\partial v}-G\frac{\partial G}{\partial p}\right)-\frac{\partial}{\partial v}\left(\frac{\partial G}{\partial w}-G\frac{\partial G}{\partial\upsilon}\right)
@@ -268,7 +268,7 @@ so that $\partial G/\partial w=G\,\partial G/\partial\upsilon$ and $\partial G/\
 
 **The count.** The arbitrary datum is the function $\Pi$ of three arguments, and the composed $f$ adds no freedom, since it is one function of one argument. That is the count a single first-order equation in four variables requires, which is the reason the construction is a reduction of the eikonal rather than a family of special solutions inside it.
 
-The three arguments of $\Pi$ are the independent components of a projective twistor in the affine gauge $Ξ_{\mathrm{wfn},0}=1$: with $\pi=(1,G)$ the two components $\kappa_0,\kappa_1$ are those of $\omega=Z\pi$, so the pair $(\omega,\pi)$ obeys the Klein–Penrose incidence relation and $\Pi=0$ is an equation on a twistor. *Twistor Theory and Biquaternions* writes the same relation as $\omega=i\,x\pi$, the factor $i$ being the corpus's rescaling of the vector coordinates; the reading of $G$ as a projective spinor ratio is there as well and is not repeated.
+The three arguments of $\Pi$ are the independent components of a projective twistor in the affine frame group $Ξ_{\mathrm{wfn},0}=1$: with $\pi=(1,G)$ the two components $\kappa_0,\kappa_1$ are those of $\omega=Z\pi$, so the pair $(\omega,\pi)$ obeys the Klein–Penrose incidence relation and $\Pi=0$ is an equation on a twistor. *Twistor Theory and Biquaternions* writes the same relation as $\omega=i\,x\pi$, the factor $i$ being the corpus's rescaling of the vector coordinates; the reading of $G$ as a projective spinor ratio is there as well and is not repeated.
 
 ### What the Class Contains
 

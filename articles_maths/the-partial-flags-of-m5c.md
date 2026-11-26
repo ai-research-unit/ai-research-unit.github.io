@@ -31,7 +31,7 @@ $$
 
 the root set is a ten-dimensional bundle over the ten-dimensional full flag variety. The root set is not the flag variety, and the difference is exactly the splitting data that the root remembers and the flag forgets.
 
-This article develops the flags, the partial flags, the incidence and the dimension counts, and then compares them with the root set. It assumes the root and the gauge of the preceding articles; it uses no form and no topology. The full flag variety is the model for the **ordered** structures of the root; the partial flag of the rank-two projection is the Grassmannian $\mathrm{Gr}(2,5)$ of *The Rank-Two Split of $M_5(\mathbb{C})$*, read geometrically.
+This article develops the flags, the partial flags, the incidence and the dimension counts, and then compares them with the root set. It assumes the root and the frame group of the preceding articles; it uses no form and no topology. The full flag variety is the model for the **ordered** structures of the root; the partial flag of the rank-two projection is the Grassmannian $\mathrm{Gr}(2,5)$ of *The Rank-Two Split of $M_5(\mathbb{C})$*, read geometrically.
 
 ## Flags and Partial Flags
 
@@ -265,6 +265,6 @@ The root set $PGL_5/T$ is the space of ordered splittings into five lines; it is
 - Michel Demazure and Pierre Gabriel, *Groupes algébriques, Tome I* (North-Holland, 1970), for the flag varieties, the parabolic subgroups and the incidence correspondences.
 - Phillip Griffiths and Joseph Harris, *Principles of Algebraic Geometry* (Wiley, 1978), for the Grassmannians, the incidence varieties and their dimensions.
 - [Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the root set and its dimension $20$.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the frame bundle and the four-parameter gauge.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m5c.html), for the frame bundle and the four-parameter frame group.
 - [The Rank-Two Split of $M_5(\mathbb{C})$](the-rank-two-split-of-m5c.html), for the rank-two projection and the Grassmannian of its image.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the conjugacy class of the root and the flag-variety picture.

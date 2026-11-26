@@ -144,7 +144,7 @@ The left index is written first. The summands are **Peirce components**, and the
 
 The decomposition is **canonical**: it depends on the family and on nothing else. A component is called a **line** when it is one-dimensional. The word **fine** is used only for a maximal family, when every component is a line. The word **complete** refers only to $\sum_i\Pi_{\mathrm{id},i}=1$. The word **full** is not used.
 
-**The basis and the gauge.** A **Peirce basis** is a choice of one nonzero element in each line, with
+**The basis and the frame group.** A **Peirce basis** is a choice of one nonzero element in each line, with
 
 $$
 E_{ij}E_{jq}=E_{iq},\qquad E_{ii}=\Pi_{\mathrm{id},i} .
@@ -152,13 +152,13 @@ $$
 
 It exists only when the components are lines, it is not canonical, and every statement using it says so: "in a Peirce basis", "in the basis adapted to the family".
 
-The **Peirce gauge** is the replacement
+The **Peirce frame group** is the replacement
 
 $$
 E_{ij}\longmapsto t_it_j^{-1}E_{ij},\qquad t_i\ne0,
 $$
 
-which leaves the family, the components and the products fixed. With a star, $\lvert t_i\rvert=1$ and the gauge is a torus of phases.
+which leaves the family, the components and the products fixed. With a star, $\lvert t_i\rvert=1$ and the frame group is a torus of phases.
 
 A **Peirce frame** is a Peirce basis together with the data that selects it.
 
@@ -170,7 +170,7 @@ $$
 \psi=(\psi_1,\dots,\psi_n),\qquad \psi_j=Q_{ij}\ \text{for fixed } i .
 $$
 
-When a spinor is treated as an object of its own, its entries are written $\psi_j$; they are the coordinates $Q_{ij}$ of one row. The gauge acts on a spinor by $\psi_j\mapsto t_j\psi_j$, up to the common factor $t_i$, which is its overall phase. The word at this level names the tuple and never an element of $A$; the carrier element is the elementary spinor of §*The Spinor Convention*, and the tuple is its coordinate form.
+When a spinor is treated as an object of its own, its entries are written $\psi_j$; they are the coordinates $Q_{ij}$ of one row. The frame group acts on a spinor by $\psi_j\mapsto t_j\psi_j$, up to the common factor $t_i$, which is its overall phase. The word at this level names the tuple and never an element of $A$; the carrier element is the elementary spinor of §*The Spinor Convention*, and the tuple is its coordinate form.
 
 **Glyphs of the invertibles.**
 
@@ -198,7 +198,7 @@ $E_{ij}$ is written only when the objects are matrices. In an abstract algebra t
 | $Q_{ij}$, $\psi_j$ | A Peirce coordinate, and the entry of a spinor |
 | $Ζ$ | A root of unity, by the case rule |
 
-**The summary sentence.** The family gives the components, the decomposition is canonical, the basis is chosen, the gauge is its freedom, and the spinor is a tuple of coordinates in that basis.
+**The summary sentence.** The family gives the components, the decomposition is canonical, the basis is chosen, the frame group is its freedom, and the spinor is a tuple of coordinates in that basis.
 
 ### The Biquaternion Peirce Convention
 
@@ -216,7 +216,7 @@ $$
 
 The left index is written first. The summands are Peirce components and the array is the Peirce table. The components multiply by the rule: the second index of the first factor must equal the first index of the second, otherwise the product is zero. So $A_{ij}A_{jq}\subseteq A_{iq}$, and $A_{ij}A_{pq}=0$ when $j\ne p$. The decomposition is canonical: it depends on the family and on nothing else.
 
-**The basis and the gauge.** The diagonal units are the idempotents themselves,
+**The basis and the frame group.** The diagonal units are the idempotents themselves,
 
 $$
 \tilde\Pi_{\mathrm{id},1}\in A_{11},\qquad \tilde\Pi_{\mathrm{id},2}\in A_{22},
@@ -228,13 +228,13 @@ $$
 \tilde\Pi_{\mathrm{nil},12}\in A_{12},\qquad \tilde\Pi_{\mathrm{nil},21}\in A_{21}.
 $$
 
-A Peirce basis is a choice of these two units, and every statement using it says so. The gauge is
+A Peirce basis is a choice of these two units, and every statement using it says so. The frame group is
 
 $$
 \tilde\Pi_{\mathrm{nil},ij}\longmapsto t_it_j^{-1}\tilde\Pi_{\mathrm{nil},ij},\qquad t_1,t_2\ne0,
 $$
 
-which leaves the family, the components and the products fixed. With a star, $\lvert t_i\rvert=1$ and the gauge is a torus of phases.
+which leaves the family, the components and the products fixed. With a star, $\lvert t_i\rvert=1$ and the frame group is a torus of phases.
 
 **Coordinates and spinors.** An element is
 
@@ -248,7 +248,7 @@ $$
 \psi_1=(\tilde Q_{11},\tilde Q_{12}),\qquad \psi_2=(\tilde Q_{21},\tilde Q_{22}).
 $$
 
-The gauge acts on a spinor by $\psi_j\mapsto t_j\psi_j$, up to the common factor $t_i$ of the row, which is its overall phase. The word spinor belongs to this level only.
+The frame group acts on a spinor by $\psi_j\mapsto t_j\psi_j$, up to the common factor $t_i$ of the row, which is its overall phase. The word spinor belongs to this level only.
 
 **Glyphs of the invertibles.**
 
@@ -272,9 +272,9 @@ No generic $E$ is written outside the matrix model, and no tilde on a pure eleme
 | $\tilde\Pi_{\mathrm{nil},12}$, $\tilde\Pi_{\mathrm{nil},21}$ | The mixed Peirce units, nilpotents |
 | $E_{ij}$ | A matrix unit, only in the matrix model |
 | $\tilde Q_{ij}$, $\psi_j$ | A Peirce coordinate, and the entry of a spinor |
-| $t_1$, $t_2$ | The gauge parameters |
+| $t_1$, $t_2$ | The frame parameters |
 
-**The summary sentence.** The family gives the four components, the decomposition is canonical, the two mixed units are chosen, the gauge is their freedom, and the spinor is a pair of coordinates in one row.
+**The summary sentence.** The family gives the four components, the decomposition is canonical, the two mixed units are chosen, the frame group is their freedom, and the spinor is a pair of coordinates in one row.
 
 ## The Spin and Spinor Convention
 

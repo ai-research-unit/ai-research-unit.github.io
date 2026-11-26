@@ -334,7 +334,7 @@ when $A_{--}$ is invertible.
 
 **Proof.** The trace is the sum of the traces of the diagonal blocks. The determinant is the Schur complement formula of *The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$*.
 
-### The Gauge on the Mass Block
+### The Frame Group on the Mass Block
 
 **Definition.** The **relative chiral scale** is the class of
 
@@ -354,7 +354,7 @@ The traceless diagonal tori of the two chiral blocks act by left and right multi
 
 **Proof.** Conjugation by $\operatorname{diag}(tI_3,sI_3)$ sends the block $M$ to $tMs^{-1}=(t/s)M$; the traceless parts act inside $M_3(V_+)$ and $M_3(V_-)$, hence by left and right multiplication on $M$.
 
-**Corollary (the gauge invariant of the mass block).** The singular values of $M$ are all multiplied by $\lvert t/s\rvert$; their ratios are invariant under the relative scale, and the left and right $*$-unitary actions do not change them.
+**Corollary (the frame invariant of the mass block).** The singular values of $M$ are all multiplied by $\lvert t/s\rvert$; their ratios are invariant under the relative scale, and the left and right $*$-unitary actions do not change them.
 
 **Proof.** The singular values of $(t/s)M$ are $\lvert t/s\rvert$ times those of $M$; left and right multiplication by unitaries preserves them.
 

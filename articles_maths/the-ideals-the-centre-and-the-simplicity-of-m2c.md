@@ -66,7 +66,7 @@ of complex dimension $2$.
 
 **Proof.** The first consists of the matrices with second column zero and the second of those with first column zero; such a matrix has both columns zero, and every matrix is the sum of its two columns read as matrices.
 
-**The biquaternion reading.** For a complete family $P_{+},P_{-}=I-P_{+}$ the two minimal left ideals are $M_2P_+$ and $M_2P_-$, and in the Peirce basis they are the two columns $\mathbb{B}_{++}\oplus\mathbb{B}_{-+}$ and $\mathbb{B}_{+-}\oplus\mathbb{B}_{--}$. A minimal left ideal is the image of a $\tilde\Pi_{\mathrm{id},+}$ of the corpus, and the choice of $P$ inside its line is the gauge of the frame; the corners are *The Minimal Left Ideals of the Biquaternion Algebra*.
+**The biquaternion reading.** For a complete family $P_{+},P_{-}=I-P_{+}$ the two minimal left ideals are $M_2P_+$ and $M_2P_-$, and in the Peirce basis they are the two columns $\mathbb{B}_{++}\oplus\mathbb{B}_{-+}$ and $\mathbb{B}_{+-}\oplus\mathbb{B}_{--}$. A minimal left ideal is the image of a $\tilde\Pi_{\mathrm{id},+}$ of the corpus, and the choice of $P$ inside its line is the frame group of the frame; the corners are *The Minimal Left Ideals of the Biquaternion Algebra*.
 
 ## The Socle
 

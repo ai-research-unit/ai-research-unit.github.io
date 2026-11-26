@@ -149,5 +149,5 @@ The spectral partition refines the four sectors by the multiplicity pattern, wit
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the characteristic polynomial.
 - [Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-reduced-biquaternion-algebra.html), for the case $n=2$.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the idempotent strata.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the nilpotent orbits.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html), for the nilpotent orbits.
 - [The Classification of the Structures of the Operators of $M_n(\mathbb{C})$](classification-of-the-structures-of-the-operators-of-mnc.html), for where these questions sit.

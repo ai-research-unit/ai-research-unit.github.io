@@ -6,7 +6,7 @@
 
 The article states the spectral resolution $H=\sum_k\omega_kP_k$, proves the interpolation formula, gives the four explicit polynomials, reads the $\mathbb{Z}/4$ grading that conjugation by $H$ defines, identifies the chirality involution $\Gamma=H^2$, and counts the root set. It specializes the general construction of *Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$* to $n=4$.
 
-The Peirce decomposition that the idempotents produce is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the vectors inside the resulting lines and the gauge that acts on them are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the two chiralities are *The Two Chiralities of $M_4(\mathbb{C})$*; the orbit of the root and the flag variety are *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*. The algebra itself is *The Matrix Algebra $M_4(\mathbb{C})$*. No form, no norm and no topology are used.
+The Peirce decomposition that the idempotents produce is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the vectors inside the resulting lines and the frame group that acts on them are *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$*; the two chiralities are *The Two Chiralities of $M_4(\mathbb{C})$*; the orbit of the root and the flag variety are *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*. The algebra itself is *The Matrix Algebra $M_4(\mathbb{C})$*. No form, no norm and no topology are used.
 
 ## The Fourth Roots of Unity
 
@@ -173,11 +173,11 @@ The coefficients are the columns of the discrete Fourier matrix of order four. T
 
 ### Rank, Trace and Canonicality
 
-**Proposition.** Each $P_k$ has rank $1$ and trace $1$. The projectors depend only on $H$: they are fixed by the polynomial formula, with no choice of basis, no choice of gauge and no second element.
+**Proposition.** Each $P_k$ has rank $1$ and trace $1$. The projectors depend only on $H$: they are fixed by the polynomial formula, with no choice of basis, no choice of frame group and no second element.
 
 **Proof.** The image of $P_k$ is the line $V_k$, so the rank is $1$. The trace of a projector is its rank, because in a basis adapted to the decomposition $\mathbb{C}^4=\bigoplus_mV_m$ the matrix of $P_k$ is the coordinate matrix $E_{kk}$. The formula involves $H$ and the constants $\omega_k$ alone.
 
-**Corollary.** The four projectors are the primitive idempotents of the frame. They are not nilpotents: $P_k^2=P_k\ne0$. The nilpotents $E_{12},E_{23},E_{34}$ of *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$* are different elements; they square to $0$, they are not polynomials in $H$, and they carry the gauge.
+**Corollary.** The four projectors are the primitive idempotents of the frame. They are not nilpotents: $P_k^2=P_k\ne0$. The nilpotents $E_{12},E_{23},E_{34}$ of *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$* are different elements; they square to $0$, they are not polynomials in $H$, and they carry the frame group.
 
 ## The Standard Model
 
@@ -229,7 +229,7 @@ $$
 P_kv_m=\delta_{km}v_k,\qquad \ell_k(v_m)=\delta_{km}.
 $$
 
-The frame $(v_1,\dots,v_4)$ is the subject of *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*. The root fixes the four lines; the frame fixes a vector in each line.
+The frame $(v_1,\dots,v_4)$ is the subject of *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$*. The root fixes the four lines; the frame fixes a vector in each line.
 
 ### A Non-Diagonal Root
 
@@ -424,9 +424,9 @@ $$
 
 These are the idempotents $\tilde\Pi_{\mathrm{id},\pm}=(e_t\pm\tilde{Ζ})/2$ of *The Peirce Decomposition of $M_4(\mathbb{C})$*, with $H=\tilde{Ζ}$ and $I=e_t$. The order-two root is the biquaternion root of $+1$; it is the case $n=2$ of the order-four construction, not a separate principle.
 
-**One root and one gauge point suffice at $n=2$.** The biquaternion article produces the two idempotents from the root of $+1$ and then chooses a nonzero element $u$ of one mixed Peirce line, the partner $v$ being fixed by $uv=\tilde\Pi_{\mathrm{id},+}$. The choice is the basis; its reciprocal rescaling is the gauge parameter $\lambda$ of *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*, and at $n=2$ it is one complex number. Nothing beyond the root and that one parameter enters. For $n=4$ the gauge has three parameters, one per simple nilpotent.
+**One root and one frame point suffice at $n=2$.** The biquaternion article produces the two idempotents from the root of $+1$ and then chooses a nonzero element $u$ of one mixed Peirce line, the partner $v$ being fixed by $uv=\tilde\Pi_{\mathrm{id},+}$. The choice is the basis; its reciprocal rescaling is the frame parameter $\lambda$ of *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$*, and at $n=2$ it is one complex number. Nothing beyond the root and that one parameter enters. For $n=4$ the frame group has three parameters, one per simple nilpotent.
 
-**The count in the two cases.** For $n=2$ the root set is $PGL_2/T$, of complex dimension $2$, and the gauge is one complex dimension; the frame modulo scale has dimension $3$, which is six real dimensions. For $n=4$ the root set is $PGL_4/T$, of complex dimension $12$, and the gauge is three complex dimensions; the frame modulo scale has dimension $15$.
+**The count in the two cases.** For $n=2$ the root set is $PGL_2/T$, of complex dimension $2$, and the frame group is one complex dimension; the frame modulo scale has dimension $3$, which is six real dimensions. For $n=4$ the root set is $PGL_4/T$, of complex dimension $12$, and the frame group is three complex dimensions; the frame modulo scale has dimension $15$.
 
 ## The Root Set
 
@@ -469,10 +469,10 @@ $$
 is a fibre bundle with fibre $B/T\cong U$, the unipotent radical, of dimension $6$. It is not a finite cover. The degree $4!$ is the degree over the unordered decomposition, and the six dimensions of the unipotent fibre separate that quotient from the flag variety. The stable count is
 
 $$
-\underbrace{12}_{\text{root}}+\underbrace{3}_{\text{gauge}}=\underbrace{15}_{\text{frame}/\mathbb{C}^\times},
+\underbrace{12}_{\text{root}}+\underbrace{3}_{\text{frame group}}=\underbrace{15}_{\text{frame}/\mathbb{C}^\times},
 $$
 
-the decomposition of *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*.
+the decomposition of *The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$*.
 
 ## Summary
 
@@ -488,7 +488,7 @@ $$
 P_k=\frac14\sum_{m=0}^{3}\omega_k^{-m}H^m .
 $$
 
-Conjugation by $H$ grades the algebra by $\mathbb{Z}/4$, with four graded pieces of dimension four; the even part is the centraliser of $\Gamma=H^2$, of dimension eight, and the odd part is the mass block. The involution $\Gamma=H^2$ is the chirality, with the $2+2$ split of the carrier. The root set is $PGL_4/T$, of complex dimension $12$; the gauge contributes three, and the frame modulo scale has dimension $15$. At $n=2$ the construction is the biquaternion root of $+1$, and the old second root is a point of the gauge, not a second primitive.
+Conjugation by $H$ grades the algebra by $\mathbb{Z}/4$, with four graded pieces of dimension four; the even part is the centraliser of $\Gamma=H^2$, of dimension eight, and the odd part is the mass block. The involution $\Gamma=H^2$ is the chirality, with the $2+2$ split of the carrier. The root set is $PGL_4/T$, of complex dimension $12$; the frame group contributes three, and the frame modulo scale has dimension $15$. At $n=2$ the construction is the biquaternion root of $+1$, and the old second root is a point of the frame group, not a second primitive.
 
 $$
 \boxed{\ \text{One root } H \text{ of order four with simple spectrum produces all four idempotents, and } H=\sum_k\omega_kP_k. \ }
@@ -502,7 +502,7 @@ $$
 | Chirality | $\Gamma=H^2=P_1-P_2+P_3-P_4$ |
 | Graded pieces | $\dim_\mathbb{C}\mathcal{M}^{(r)}=4$, $r=0,1,2,3$ |
 | Root set | $PGL_4/T$, $\dim_\mathbb{C}=12$ |
-| Gauge | $(\mathbb{C}^\times)^3$, $\dim_\mathbb{C}=3$ |
+| Frame group | $(\mathbb{C}^\times)^3$, $\dim_\mathbb{C}=3$ |
 | Frame modulo scale | $PGL_4$, $\dim_\mathbb{C}=15$ |
 
 ## Summary of Notation
@@ -531,9 +531,9 @@ $$
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the ambient algebra and its groups.
 - [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-mnc.html), for the general construction at order $n$.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the lines that the idempotents produce.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the vectors inside the lines and the gauge.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html), for the vectors inside the lines and the frame group.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion case $n=2$ and the parameter $\lambda$.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra of this category.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the sixteen corners of the frame.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the frame of $M_4(\mathbb{C})$ and its three gauge parameters.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m4c.html), for the frame of $M_4(\mathbb{C})$ and its three frame parameters.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the involution $\Gamma$ and the $2+2$ split.

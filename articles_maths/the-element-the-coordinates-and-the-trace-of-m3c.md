@@ -70,11 +70,11 @@ A=\tfrac12(A+A^{\mathsf T})+\tfrac12(A-A^{\mathsf T}),
 $$
 the symmetric and the antisymmetric parts. The trace of $B_{A}$ with respect to an orthonormal basis is $\operatorname{tr}A$, and the determinant is the volume form of the form. The Hermitian form is a different object: it uses the conjugate transpose $A^{*}$, not the transpose, and it is treated in *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*.
 
-**The gauge of the coordinates.** A change of normalized frame $E_{ij}\mapsto(t_{i}/t_{j})E_{ij}$ changes the coordinates by
+**The frame group of the coordinates.** A change of normalized frame $E_{ij}\mapsto(t_{i}/t_{j})E_{ij}$ changes the coordinates by
 $$
 \alpha_{ij}\longmapsto\frac{t_{j}}{t_{i}}\alpha_{ij},
 $$
-as in *The Two-Parameter Gauge of $M_3(\mathbb{C})$*. The trace, the determinant and the characteristic polynomial are invariant; the individual off-diagonal coordinates are not. The nine coordinates are a coordinate system on the algebra, not a canonical list of nine numbers attached to $A$.
+as in *The Two-Parameter Frame Group of $M_3(\mathbb{C})$*. The trace, the determinant and the characteristic polynomial are invariant; the individual off-diagonal coordinates are not. The nine coordinates are a coordinate system on the algebra, not a canonical list of nine numbers attached to $A$.
 
 ## The Scalar and Traceless Parts
 
@@ -303,6 +303,6 @@ The trace pairing is symmetric, nondegenerate and invariant, with Gram matrix $\
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the coordinates in a general frame.
 - [The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the characteristic polynomial.
 - [The Involution and the Hermitian Structure of $M_3(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m3c.html), for the positive definite Hermitian form.
-- [The Two-Parameter Gauge of $M_3(\mathbb{C})$](the-two-parameter-gauge-of-m3c.html), for the gauge of the coordinates.
+- [The Two-Parameter Frame Group of $M_3(\mathbb{C})$](the-two-parameter-frame-group-of-m3c.html), for the frame group of the coordinates.
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the Jordan form.
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for the determinant as an alternating form.

@@ -102,7 +102,7 @@ Thus in flat space of signature $(1,3)$ the sixteen components of the multivecto
 
 ## Minimal Coupling
 
-Coupling to a gauge field replaces the ordinary derivative by the covariant one, $\sum_\mu dx_\mu\vee\partial/\partial x_\mu \to \sum_\mu dx_\mu\vee D_\mu$, and the equation acquires a source:
+Coupling to a connection field replaces the ordinary derivative by the covariant one, $\sum_\mu dx_\mu\vee\partial/\partial x_\mu \to \sum_\mu dx_\mu\vee D_\mu$, and the equation acquires a source:
 
 $$
 (d-\delta+m)\Phi = iA\vee\Phi ,
@@ -170,7 +170,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 The Dirac–Kähler equation $(d-\delta+m)\Phi=0$ is the geometric analogue of the Dirac equation: it is an equation for a multivector field, defined on any pseudo-Riemannian manifold by the exterior calculus alone. The Laplace–de Rham operator $d-\delta$ is a square root of the Laplacian, $(d-\delta)^2=\square$, and the equation therefore implies the Klein–Gordon equation $(\square-m^2)\Phi=0$ componentwise. Equipping the exterior algebra with the Clifford product $dx_\mu\vee dx_\nu = dx_\mu\wedge dx_\nu + \delta_{\mu\nu}$ makes $d-\delta$ the Clifford multiplication $\sum_\mu dx_\mu\vee\partial/\partial x_\mu$.
 
-In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(c_H)^T_{ab}dx_H$ turns the equation into four Dirac equations linked by an internal $\mathrm{SO}(2,4)$ symmetry that does not commute with the Lorentz group; the four copies are coherent superpositions of forms of different degree. Minimal coupling adds the gauge field through $\sum_\mu dx_\mu\vee D_\mu$, and the coupled equation is again four coupled Dirac equations. The natural discretization on a simplicial complex is equivalent to the staggered fermion, making the continuum Dirac–Kähler field the continuum limit of the staggered lattice fermion; the Nielsen–Ninomiya obstruction still applies. The zero modes are the harmonic forms, guaranteed by cohomology and in contrast to the Dirac operator. On a curved Lorentzian manifold the fourfold split fails, and what survives is the square-root property, at the cost of Lorentz covariance suppressed by powers of the Planck mass. Finally, the biquaternion algebra is the even part of $\mathrm{Cl}_{1,3}$ and is contained in the Dirac–Kähler multivector, but the Dirac–Kähler operator is odd and does not restrict to a biquaternion equation.
+In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(c_H)^T_{ab}dx_H$ turns the equation into four Dirac equations linked by an internal $\mathrm{SO}(2,4)$ symmetry that does not commute with the Lorentz group; the four copies are coherent superpositions of forms of different degree. Minimal coupling adds the connection field through $\sum_\mu dx_\mu\vee D_\mu$, and the coupled equation is again four coupled Dirac equations. The natural discretization on a simplicial complex is equivalent to the staggered fermion, making the continuum Dirac–Kähler field the continuum limit of the staggered lattice fermion; the Nielsen–Ninomiya obstruction still applies. The zero modes are the harmonic forms, guaranteed by cohomology and in contrast to the Dirac operator. On a curved Lorentzian manifold the fourfold split fails, and what survives is the square-root property, at the cost of Lorentz covariance suppressed by powers of the Planck mass. Finally, the biquaternion algebra is the even part of $\mathrm{Cl}_{1,3}$ and is contained in the Dirac–Kähler multivector, but the Dirac–Kähler operator is odd and does not restrict to a biquaternion equation.
 
 ## Summary of Notation
 
@@ -185,7 +185,7 @@ In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(c_
 | $c_\mu$ | Generators $c_0=iL_{e_t}R_{\vec e_x}$, $c_k=iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}Ξ_{\mathrm{wfn}}=aΞ_{\mathrm{wfn}} b$ |
 | $c_H$ | Product of the generators indexed by $H$; one basis operator up to a phase |
 | $\mathrm{SO}(2,4)$ | Internal symmetry mixing the four copies |
-| $A = e\sum_\mu A_\mu dx_\mu$ | Abelian gauge potential, minimally coupled |
+| $A = e\sum_\mu A_\mu dx_\mu$ | Abelian connection potential, minimally coupled |
 | $\Delta,\nabla,\hat\Delta,\hat\nabla$ | Boundary, coboundary and their duals |
 | $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$ | Biquaternion algebra as the even part |
 

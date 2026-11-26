@@ -1,12 +1,12 @@
-# __The Frame, the Simple Nilpotent and the Gauge of $M_2(\mathbb{C})$__
+# __The Frame, the Simple Nilpotent and the Frame Group of $M_2(\mathbb{C})$__
 
 ## Introduction
 
-**At order two a frame is an idempotent of rank one together with a nonzero element of one mixed corner, a simple nilpotent is a rank-one matrix with square zero, and the gauge that remains after the idempotent is fixed is the single group $\mathbb{C}^{\times}$ of reciprocal rescalings.**
+**At order two a frame is an idempotent of rank one together with a nonzero element of one mixed corner, a simple nilpotent is a rank-one matrix with square zero, and the frame group that remains after the idempotent is fixed is the single group $\mathbb{C}^{\times}$ of reciprocal rescalings.**
 
-The article separates the three data of a frame, namely the idempotent, the simple nilpotent and the normalisation, computes the stabilisers and the orbit dimensions, proves that all frames are conjugate, and identifies the gauge with the stabiliser of the ordered frame. It assumes *The Peirce Basis and the Corners at $n=2$*, *The Peirce Decomposition and the Corner Recursion of $M_2(\mathbb{C})$* and *Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum*.
+The article separates the three data of a frame, namely the idempotent, the simple nilpotent and the normalisation, computes the stabilisers and the orbit dimensions, proves that all frames are conjugate, and identifies the frame group with the stabiliser of the ordered frame. It assumes *The Peirce Basis and the Corners at $n=2$*, *The Peirce Decomposition and the Corner Recursion of $M_2(\mathbb{C})$* and *Lagrange Idempotents of a $2\times2$ Matrix with Simple Spectrum*.
 
-It defers the general-order frame to *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*. The orbit count here is self-contained.
+It defers the general-order frame to *The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$*. The orbit count here is self-contained.
 
 ## The Three Data of a Frame
 
@@ -66,23 +66,23 @@ $$
 
 **Proof.** The orbit dimension is the dimension of the group minus the dimension of the stabiliser, $4-2=2$ and $4-1=3$.
 
-**Corollary.** The gauge is the quotient of the stabiliser of the idempotent by the stabiliser of the frame, and that quotient is the group $\mathbb{C}^{\times}$ of reciprocal rescalings.
+**Corollary.** The frame group is the quotient of the stabiliser of the idempotent by the stabiliser of the frame, and that quotient is the group $\mathbb{C}^{\times}$ of reciprocal rescalings.
 
 **Proof.** Both stabilisers consist of diagonal matrices, of dimension two and one respectively; the quotient is one-dimensional and acts on the mixed line by rescaling, with the partner rescaled reciprocally to keep the normalisation.
 
 ## The Normalisation
 
-**The normalisation $\upsilon_{+}\upsilon_{-}=e$ is what pins the gauge, and it is the only place where a choice is made.**
+**The normalisation $\upsilon_{+}\upsilon_{-}=e$ is what pins the frame group, and it is the only place where a choice is made.**
 
 **Proposition.** The rescaling $\upsilon_{+}\mapsto\lambda\upsilon_{+}$ forces $\upsilon_{-}\mapsto\lambda^{-1}\upsilon_{-}$, and the two products $\upsilon_{+}\upsilon_{-}$ and $\upsilon_{-}\upsilon_{+}$ are invariant.
 
 **Proof.** The product of the rescaled pair is $\lambda\lambda^{-1}\upsilon_{+}\upsilon_{-}=e$, and the second product is $\lambda^{-1}\lambda\upsilon_{-}\upsilon_{+}=f$; both are unchanged.
 
-**Corollary.** The gauge is a torsor over $\mathbb{C}^{\times}$, with no preferred point, so a frame is a point of the bundle and not a canonical object.
+**Corollary.** The frame group is a torsor over $\mathbb{C}^{\times}$, with no preferred point, so a frame is a point of the bundle and not a canonical object.
 
 **Proof.** Any two normalisations differ by a unique rescaling, and no rescaling is distinguished by the algebra alone.
 
-**Corollary.** The modulus of the rescaling can be fixed by requiring $\operatorname{tr}(\upsilon_{-}\upsilon_{+})=\operatorname{tr}e$ together with a Hermitian condition, which selects a circle inside the gauge.
+**Corollary.** The modulus of the rescaling can be fixed by requiring $\operatorname{tr}(\upsilon_{-}\upsilon_{+})=\operatorname{tr}e$ together with a Hermitian condition, which selects a circle inside the frame group.
 
 **Proof.** The trace condition is automatic, and the Hermitian condition $\upsilon_{-}=\upsilon_{+}^{*}$ is preserved exactly by the rescalings of modulus one.
 
@@ -92,19 +92,19 @@ $$
 
 **Proof.** The corpus builds the pair $\tilde\Pi_{\mathrm{id},\pm}=\tfrac12(e_t\pm\tilde{Ζ})$ from the root, which is the idempotent of the frame; and the companion nilpotents are the generators of the mixed corners normalised so that their product is $\tilde\Pi_{\mathrm{id},+}$.
 
-**Corollary.** The gauge of the corpus is the same one complex parameter, and the normalisation is the same product condition.
+**Corollary.** The frame group of the corpus is the same one complex parameter, and the normalisation is the same product condition.
 
 **Proof.** The corpus states the freedom as one reciprocal rescaling $\lambda\in\mathbb{C}^{\times}$, which is the structure proved here.
 
 **Corollary.** The correction recorded in the corpus applies here: the frame is built from the root and the idempotent pair, and no second anticommuting root is assumed.
 
-**Proof.** The construction of the frame uses one idempotent, one nilpotent and one normalisation, and the involution that models the root is one point of the gauge, not a primitive datum.
+**Proof.** The construction of the frame uses one idempotent, one nilpotent and one normalisation, and the involution that models the root is one point of the frame group, not a primitive datum.
 
 ## Summary
 
 A frame at order two is an idempotent of rank one, a nonzero element of one mixed corner and the unique normalised partner, and it is determined by the idempotent together with a point of a punctured line. A simple nilpotent is a rank-one matrix with square zero; it fixes a line but not an idempotent, and all simple nilpotents are conjugate.
 
-The stabilisers have complex dimensions two, two, two and one for the idempotent, the pair, the nilpotent and the ordered frame, so the orbits have dimensions two, two and three. The gauge after fixing the idempotent is $\mathbb{C}^{\times}$ of reciprocal rescalings, and the normalisation $\upsilon_{+}\upsilon_{-}=e$ is the only choice made.
+The stabilisers have complex dimensions two, two, two and one for the idempotent, the pair, the nilpotent and the ordered frame, so the orbits have dimensions two, two and three. The frame group after fixing the idempotent is $\mathbb{C}^{\times}$ of reciprocal rescalings, and the normalisation $\upsilon_{+}\upsilon_{-}=e$ is the only choice made.
 
 ## Summary of Notation
 
@@ -113,7 +113,7 @@ The stabilisers have complex dimensions two, two, two and one for the idempotent
 | $e,f$ | the idempotent and its complement |
 | $\upsilon_{+},\upsilon_{-}$ | the mixed generators of the frame |
 | $N$ | a simple nilpotent, $N^{2}=0$, $N\ne0$ |
-| $\lambda$ | the gauge parameter in $\mathbb{C}^{\times}$ |
+| $\lambda$ | the frame parameter in $\mathbb{C}^{\times}$ |
 | $\operatorname{Stab}$ | the stabiliser in $\mathrm{GL}_2(\mathbb{C})$ under conjugation |
 
 ## Further Reading
@@ -122,4 +122,4 @@ The stabilisers have complex dimensions two, two, two and one for the idempotent
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the Jordan form of a nilpotent matrix at order two.
 - [The Peirce Basis and the Corners at $n=2$](the-peirce-basis-and-the-corners-at-n-2.html), for the basis and the structure constants.
 - [The Peirce Decomposition and the Corner Recursion of $M_2(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-m2c.html), for the corner language used here.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the frame at general order.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-mnc.html), for the frame at general order.

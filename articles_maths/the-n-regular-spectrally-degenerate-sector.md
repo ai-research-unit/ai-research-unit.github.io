@@ -313,13 +313,13 @@ $$
 
 The diagonal entries carry the eigenvalue $Q_t$; the nilpotent generator is the off-diagonal term, and its coefficient $1$ is a normalisation, not an eigenvalue. The pair $(e,f)$ is not unique, but the displayed sum does not depend on the choice, because $e+f=e_t$ and $\vec\Pi_{\mathrm{nil}}=\tilde Q-Q_t e_t$. On the scalar line $\vec\Pi_{\mathrm{nil}}=0$ the element is $\tilde Q=Q_te_t$, and the sum collapses to $Q_t\,e+Q_t\,f$.
 
-**The standard representative.** The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$: they are a gauge, and the Peirce form above is the invariant statement. For the standard element
+**The standard representative.** The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$: they are a frame group, and the Peirce form above is the invariant statement. For the standard element
 
 $$
 \boxed{\ \tilde Q=Q_te_t+c(\vec e_x+i\vec e_y),\qquad \vec\Pi_{\mathrm{nil}}=c(\vec e_x+i\vec e_y),\qquad c\neq0\ }
 $$
 
-one choice of gauge is
+one choice of frame group is
 
 $$
 \boxed{\ e=\frac12(e_t+i\vec e_z)\ }

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-A Peirce basis turns an element of $M_{n}(\mathbb{C})$ into an $n\times n$ array of coordinates. A column of that array is an $n$-tuple of scalars, and this tuple is what the corpus calls a **spinor** of the family in the basis. The definition is a definition of coordinates: the spinor is not an element of the algebra, not a line of the decomposition and not an invariant object. It depends on the family, on the basis, and on the gauge.
+A Peirce basis turns an element of $M_{n}(\mathbb{C})$ into an $n\times n$ array of coordinates. A column of that array is an $n$-tuple of scalars, and this tuple is what the corpus calls a **spinor** of the family in the basis. The definition is a definition of coordinates: the spinor is not an element of the algebra, not a line of the decomposition and not an invariant object. It depends on the family, on the basis, and on the frame group.
 
-The article defines the Peirce coordinates and the spinor, computes the action of the gauge on a spinor, gives the projective reading, the Hermitian norm and the condition under which a column splits into two chiralities, and states where a half-angle can enter. It assumes the two preceding articles, *The Peirce Decomposition in $n$ Dimensions* and *The Peirce Basis in $n$ Dimensions*.
+The article defines the Peirce coordinates and the spinor, computes the action of the frame group on a spinor, gives the projective reading, the Hermitian norm and the condition under which a column splits into two chiralities, and states where a half-angle can enter. It assumes the two preceding articles, *The Peirce Decomposition in $n$ Dimensions* and *The Peirce Basis in $n$ Dimensions*.
 
 ## The Coordinates
 
@@ -40,9 +40,9 @@ so the column $(X_{1l},\dots,X_{nl})$ is multiplied by the matrix $A$. The colum
 
 **The column is attached to the right index.** The index $l$ names the right idempotent $P_{l}$, that is, the line on the right of every entry of the column. The entries $X_{1l},\dots,X_{nl}$ lie on the lines $A_{1l},\dots,A_{nl}$, one per left idempotent.
 
-## The Gauge Action
+## The Action of the Frame Group
 
-**Proposition.** Under the gauge $E'_{kl}=t_{k}t_{l}^{-1}E_{kl}$, the coordinates transform by
+**Proposition.** Under the frame group $E'_{kl}=t_{k}t_{l}^{-1}E_{kl}$, the coordinates transform by
 
 $$
 X'_{kl}=t_{k}^{-1}t_{l}X_{kl},
@@ -56,7 +56,7 @@ $$
 
 **Proof.** The coordinate law was proved in *The Peirce Basis in $n$ Dimensions*: $X'_{kl}=t_{k}^{-1}t_{l}X_{kl}$. Multiplying the column by $t_{l}$ removes the factor $t_{l}$ and leaves the factor $t_{k}^{-1}$ on the $k$-th entry.
 
-**The effective gauge on a spinor is $(n-1)$-dimensional.** The scalars $t_{1},\dots,t_{n}$ act on the entries by independent rescalings, and a common rescaling of all entries is the overall factor of the column, which is not part of the spinor. The effective group is therefore $(\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1}$.
+**The effective frame group on a spinor is $(n-1)$-dimensional.** The scalars $t_{1},\dots,t_{n}$ act on the entries by independent rescalings, and a common rescaling of all entries is the overall factor of the column, which is not part of the spinor. The effective group is therefore $(\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1}$.
 
 ## The Projective Reading
 
@@ -66,11 +66,11 @@ $$
 [Ξ_{\mathrm{wfn}}]=[Ξ_{\mathrm{wfn},1}:\cdots:Ξ_{\mathrm{wfn},n}].
 $$
 
-The gauge acts on this point by the diagonal torus $(\mathbb{C}^{\times})^{n-1}$, and the action is not trivial. A single spinor therefore carries very little gauge-invariant information.
+The frame group acts on this point by the diagonal torus $(\mathbb{C}^{\times})^{n-1}$, and the action is not trivial. A single spinor therefore carries very little frame invariant information.
 
-**The orbit is determined by the zero entries.** On the open set where every entry is nonzero, the torus acts transitively: given $[Ξ_{\mathrm{wfn}}]$ and $[\digamma_{\mathrm{map}}]$ with all entries nonzero, the scalars $t_{k}=Ξ_{\mathrm{wfn},k}/\digamma_{\mathrm{map},k}$ send one to the other. So the gauge orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is the set of indices $l$ for which $Ξ_{\mathrm{wfn},l}=0$. In particular, no ratio $Ξ_{\mathrm{wfn},j}/Ξ_{\mathrm{wfn},l}$ is gauge invariant: it is multiplied by $t_{j}/t_{l}$.
+**The orbit is determined by the zero entries.** On the open set where every entry is nonzero, the torus acts transitively: given $[Ξ_{\mathrm{wfn}}]$ and $[\digamma_{\mathrm{map}}]$ with all entries nonzero, the scalars $t_{k}=Ξ_{\mathrm{wfn},k}/\digamma_{\mathrm{map},k}$ send one to the other. So the frame orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is the set of indices $l$ for which $Ξ_{\mathrm{wfn},l}=0$. In particular, no ratio $Ξ_{\mathrm{wfn},j}/Ξ_{\mathrm{wfn},l}$ is frame invariant: it is multiplied by $t_{j}/t_{l}$.
 
-**Invariants need a cycle.** A product of coordinates around a closed cycle is gauge invariant:
+**Invariants need a cycle.** A product of coordinates around a closed cycle is frame invariant:
 
 $$
 X_{k_{1}k_{2}}X_{k_{2}k_{3}}\cdots X_{k_{m}k_{1}}
@@ -81,9 +81,9 @@ $$
 
 A single coordinate is not invariant, and a column alone has no invariant product of this kind unless it closes through a row of another element. The invariant content of the construction lies in the element $X$, not in one of its rows.
 
-## The Hermitian Gauge and the Norm
+## The Hermitian Frame Group and the Norm
 
-If the family is Hermitian and the basis is Hermitian, the gauge is $|t_{k}|=1$. In that case
+If the family is Hermitian and the basis is Hermitian, the frame group is $|t_{k}|=1$. In that case
 
 $$
 \sum_{l=1}^{n}\lvertΞ_{\mathrm{wfn},l}\rvert^{2}
@@ -92,7 +92,7 @@ $$
 =\sum_{l=1}^{n}\lvertΞ_{\mathrm{wfn},l}\rvert^{2},
 $$
 
-so the Hermitian norm of a spinor is gauge invariant. The gauge orbit of a spinor is then the set of spinors with the same moduli $\lvertΞ_{\mathrm{wfn},1}\rvert,\dots,\lvertΞ_{\mathrm{wfn},n}\rvert$, and a spinor is described by its point of the sphere modulo the torus of phases.
+so the Hermitian norm of a spinor is frame invariant. The frame orbit of a spinor is then the set of spinors with the same moduli $\lvertΞ_{\mathrm{wfn},1}\rvert,\dots,\lvertΞ_{\mathrm{wfn},n}\rvert$, and a spinor is described by its point of the sphere modulo the torus of phases.
 
 No other quadratic invariant exists: a quadratic form in the entries is invariant under $(\mathbb{C}^{\times})^{n-1}$ only when it is a sum of terms $\lvertΞ_{\mathrm{wfn},l}\rvert^{2}$ with equal coefficients, that is, a multiple of the norm.
 
@@ -108,11 +108,11 @@ So a chirality is a choice of signs $\varepsilon_{1},\dots,\varepsilon_{n}$, one
 
 ## What a Spinor Is Not
 
-A spinor is not the whole element of $M_{n}(\mathbb{C})$, not a Peirce line, and not an invariant of the algebra. It is the coordinate column of the component of $X$ in the left space $M_{n}P_{l}$, taken up to the overall factor of the column. Changing the basis changes it by the gauge; changing the family changes the decomposition and the tuple. The invariant object is the element $X$; the spinor is one row of its description.
+A spinor is not the whole element of $M_{n}(\mathbb{C})$, not a Peirce line, and not an invariant of the algebra. It is the coordinate column of the component of $X$ in the left space $M_{n}P_{l}$, taken up to the overall factor of the column. Changing the basis changes it by the frame group; changing the family changes the decomposition and the tuple. The invariant object is the element $X$; the spinor is one row of its description.
 
 ## Summary
 
-The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{nl})$ up to a common factor. The gauge sends $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$, so a spinor transforms by $Ξ_{\mathrm{wfn},k}\mapsto t_{k}^{-1}Ξ_{\mathrm{wfn},k}$ up to the overall factor, with effective group $(\mathbb{C}^{\times})^{n-1}$. Projectively, the orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is its zero pattern; invariant products are cycles of coordinates. In the Hermitian gauge the norm is invariant. A chiral split of a column requires an extra sign function on the lines, balanced only for even $n$.
+The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{nl})$ up to a common factor. The frame group sends $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$, so a spinor transforms by $Ξ_{\mathrm{wfn},k}\mapsto t_{k}^{-1}Ξ_{\mathrm{wfn},k}$ up to the overall factor, with effective group $(\mathbb{C}^{\times})^{n-1}$. Projectively, the orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is its zero pattern; invariant products are cycles of coordinates. In the Hermitian frame group the norm is invariant. A chiral split of a column requires an extra sign function on the lines, balanced only for even $n$.
 
 ## Summary of Notation
 
@@ -120,7 +120,7 @@ The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$,
 |---|---|
 | $X_{kl}$ | The Peirce coordinate of $X$ in position $(k,l)$ |
 | $Ξ_{\mathrm{wfn}}^{(l)}$ | The column of index $l$, a spinor |
-| $t_{k}$ | A gauge parameter, $t_{k}\ne0$ |
+| $t_{k}$ | A frame parameter, $t_{k}\ne0$ |
 | $\Gamma$ | A grading, an automorphism with $\Gamma^{2}=1$ commuting with the family |
 | $\varepsilon_{k}=\pm1$ | The sign of $\Gamma$ on the line $V_{k}$ |
 | $H$ | A root of $1$ of order two, when the family is so parametrised |
@@ -128,6 +128,6 @@ The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$,
 ## Further Reading
 
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the lines and the family.
-- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the choice of the units and the gauge.
+- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the choice of the units and the frame group.
 - [The Peirce Coordinates](peirce-coordinates-and-companion-nilpotents.html), for the coordinates in the one-idempotent case.
 - [The Two-Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the chiral split at $n=4$.

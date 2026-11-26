@@ -118,7 +118,7 @@ $$
 K_1\mapsto K_1D,\qquad K_2\mapsto D^{-1}K_2,\qquad |D_{ii}|=1,
 $$
 
-is a symmetry of the decomposition with $n$ parameters. The computation confirms the invariance at $n=3$ on random phases, and it shows that the decomposition is a coordinate system on the group only after the gauge is fixed.
+is a symmetry of the decomposition with $n$ parameters. The computation confirms the invariance at $n=3$ on random phases, and it shows that the decomposition is a coordinate system on the group only after the frame group is fixed.
 
 **The dimension count matches.** The group has real dimension $2n^{2}$, the unitary group $n^{2}$, and the cone $n^{2}$, so
 
@@ -126,7 +126,7 @@ $$
 \dim\mathrm{GL}_n(\mathbb{C})=n^{2}+n^{2}=2n^{2},
 $$
 
-which was checked at $n=2,3,4$: $8,18,32$. So the product of the two factors accounts for the whole dimension, and the one-sided form $K\exp(\mathfrak{p})$ is a diffeomorphism while the two-sided form has the redundancy of the gauge.
+which was checked at $n=2,3,4$: $8,18,32$. So the product of the two factors accounts for the whole dimension, and the one-sided form $K\exp(\mathfrak{p})$ is a diffeomorphism while the two-sided form has the redundancy of the frame group.
 
 ## The Two Halves and the Compact Real Form
 
@@ -176,7 +176,7 @@ so the middle factor is the pair of stretches of *The Exponential of the Symmetr
 
 ## Summary
 
-The map $\theta(X)=-X^{*}$ is an involution of $\mathfrak{gl}_n$ with fixed part $\mathfrak{u}(n)$ and anti-fixed part the Hermitian matrices, and the Cartan form $B_\theta(X,Y)=\operatorname{Re}\operatorname{tr}(XY^{*})$ is positive definite and makes the two summands orthogonal, so the pair $(\mathrm{GL}_n(\mathbb{C}),\mathrm{U}(n))$ is a symmetric pair. Every element is $A=K_1e^{H}K_2$ with $K_i$ unitary and $H$ Hermitian, and the middle factor can be taken diagonal positive by the spectral theorem, giving the $KAK$ form $A=K_1\Sigma K_2$, which is the singular value decomposition with the singular values on the diagonal. The diagonal is unique up to permutation and the phases of the two unitary factors are a free gauge, the dimension count $n^{2}+n^{2}=2n^{2}$ accounts for the group, and the group is diffeomorphic to $\mathrm{U}(n)\times\operatorname{Herm}_n$, so its noncompactness sits entirely in the cone.
+The map $\theta(X)=-X^{*}$ is an involution of $\mathfrak{gl}_n$ with fixed part $\mathfrak{u}(n)$ and anti-fixed part the Hermitian matrices, and the Cartan form $B_\theta(X,Y)=\operatorname{Re}\operatorname{tr}(XY^{*})$ is positive definite and makes the two summands orthogonal, so the pair $(\mathrm{GL}_n(\mathbb{C}),\mathrm{U}(n))$ is a symmetric pair. Every element is $A=K_1e^{H}K_2$ with $K_i$ unitary and $H$ Hermitian, and the middle factor can be taken diagonal positive by the spectral theorem, giving the $KAK$ form $A=K_1\Sigma K_2$, which is the singular value decomposition with the singular values on the diagonal. The diagonal is unique up to permutation and the phases of the two unitary factors are a free frame group, the dimension count $n^{2}+n^{2}=2n^{2}$ accounts for the group, and the group is diffeomorphic to $\mathrm{U}(n)\times\operatorname{Herm}_n$, so its noncompactness sits entirely in the cone.
 
 ## Summary of Notation
 

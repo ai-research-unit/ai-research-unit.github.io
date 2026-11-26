@@ -4,7 +4,7 @@
 
 Three orthogonal rank-one idempotents cut $M_3(\mathbb{C})$ into $9$ lines, one for each ordered pair. This article states the cut for an arbitrary complete family, proves that the lines are one-dimensional and sum directly, and gives the multiplication rule. It then specialises to the family of a root $H$ with $H^{3}=I$ and simple spectrum.
 
-The article is the family-level part of the trilogy. *The Peirce Basis of $M_3(\mathbb{C})$* chooses one element in each line and computes the gauge; *Spinors as Coordinates in $M_3(\mathbb{C})$* reads the columns of the array. The root and its projectors are *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*; the flag and the adjoint orbits are *The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$*.
+The article is the family-level part of the trilogy. *The Peirce Basis of $M_3(\mathbb{C})$* chooses one element in each line and computes the frame group; *Spinors as Coordinates in $M_3(\mathbb{C})$* reads the columns of the array. The root and its projectors are *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*; the flag and the adjoint orbits are *The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$*.
 
 ## The Family
 
@@ -88,7 +88,7 @@ The matrix $F=[v_1|\cdots|v_3]$ is the Fourier matrix, unitary, and $F^{*}HF$ is
 
 ## Dimensions and the Case
 
-The cut has $9$ lines. The family space, the set of ordered $3$-tuples of lines summing to $\mathbb{C}^{3}$, has dimension $3^{2}-3=6$; the gauge has dimension $3-1=2$; the frame space has dimension $3^{2}-1=8$. These numbers are computed in *The Peirce Basis of $M_3(\mathbb{C})$*.
+The cut has $9$ lines. The family space, the set of ordered $3$-tuples of lines summing to $\mathbb{C}^{3}$, has dimension $3^{2}-3=6$; the frame group has dimension $3-1=2$; the frame space has dimension $3^{2}-1=8$. These numbers are computed in *The Peirce Basis of $M_3(\mathbb{C})$*.
 
 For $n=3$ the order of $H$ is $3$, so no power of $H$ is an involution. A grading that commutes with the family is $\operatorname{Ad}_S$ with $S=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3)$ and $\sigma_k=\pm1$; its sign pattern has $p$ plus signs and $3-p$ minus signs. The balanced split does not exist. The possible splits are $1+2$, and each depends on the choice of $S$. The decomposition itself supplies no chirality.
 
@@ -106,7 +106,7 @@ as a direct sum of irreducible $\mathfrak{sl}_2$-spaces of dimensions $3,5,\dots
 
 ## What the Cut Does Not Give
 
-The cut gives the lines and their product. It gives no element in a mixed line, no basis, no gauge and no coordinate. The diagonal is canonical; the mixed lines are not. The selection of one element per line and its freedom are *The Peirce Basis of $M_3(\mathbb{C})$*. The coordinate columns and their reading as spinors are *Spinors as Coordinates in $M_3(\mathbb{C})$*.
+The cut gives the lines and their product. It gives no element in a mixed line, no basis, no frame freedom and no coordinate. The diagonal is canonical; the mixed lines are not. The selection of one element per line and its freedom are *The Peirce Basis of $M_3(\mathbb{C})$*. The coordinate columns and their reading as spinors are *Spinors as Coordinates in $M_3(\mathbb{C})$*.
 
 ## Summary
 
@@ -129,5 +129,5 @@ A complete family of $3$ nonzero idempotents in $M_3(\mathbb{C})$ has rank one a
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the algebra and its matrix units.
 - [Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), for the projectors of the root.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html), for the flag and the orbits.
-- [The Peirce Basis of $M_3(\mathbb{C})$](the-peirce-basis-of-m3c.html), for the selection of the units and the gauge.
+- [The Peirce Basis of $M_3(\mathbb{C})$](the-peirce-basis-of-m3c.html), for the selection of the units and the frame group.
 - [Spinors as Coordinates in $M_3(\mathbb{C})$](spinors-as-coordinates-in-m3c.html), for the columns of the array.

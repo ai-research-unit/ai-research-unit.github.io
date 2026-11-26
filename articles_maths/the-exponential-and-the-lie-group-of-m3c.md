@@ -22,7 +22,7 @@ $$
 
 The real Lie algebra $\mathfrak{gl}_3$ has dimension $18$; the group $GL_3(\mathbb{C})$ has real dimension $18$; the $*$-unitary subgroup $U(3)$ has dimension $9$ and its Lie algebra $\mathfrak{u}(3)$ consists of the anti-Hermitian matrices; the special linear group $SL_3$ and its Lie algebra $\mathfrak{sl}_3$ have complex dimension $8$, and $\mathfrak{su}(3)$ has real dimension $8$.
 
-The article defines the exponential, computes it on the Jordan forms, proves the determinant and eigenvalue formulas, proves surjectivity and the failure of injectivity, describes the one-parameter subgroups and the Lie algebra, computes the root and the gauge in exponential coordinates, and works explicit matrices. The polar decomposition is *The Polar Decomposition of $M_3(\mathbb{C})$*; the combined exponential form is *The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates*; the analysis of the map is *Analysis on $M_3(\mathbb{C})$*.
+The article defines the exponential, computes it on the Jordan forms, proves the determinant and eigenvalue formulas, proves surjectivity and the failure of injectivity, describes the one-parameter subgroups and the Lie algebra, computes the root and the frame group in exponential coordinates, and works explicit matrices. The polar decomposition is *The Polar Decomposition of $M_3(\mathbb{C})$*; the combined exponential form is *The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates*; the analysis of the map is *Analysis on $M_3(\mathbb{C})$*.
 
 ## Definition and Convergence
 
@@ -213,14 +213,14 @@ $$
 
 **Proof.** The identity is the derivative at $t=0$ of $e^{tX}Ye^{-tX}$, and both sides satisfy the same differential equation with the same initial value.
 
-**The root and the gauge.** For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, which are $*$-unitary,
+**The root and the frame group.** For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, which are $*$-unitary,
 
 $$
 H=\exp K,\qquad
 K=\frac{2\pi i}{3}\big(P_2+2P_3\big),
 $$
 
-with $P_k$ the projector for $\omega_k$ and eigenvalues $0,2\pi i/3,4\pi i/3$. The matrix $K$ is anti-Hermitian. For a general root $H=SH_0S^{-1}$ the spectral logarithm $K=SK_0S^{-1}$ satisfies $H=\exp K$ but is anti-Hermitian only when $S$ can be chosen $*$-unitary, that is, when $H$ is normal; a non-normal root is not $*$-unitary. A gauge transformation $E\mapsto e^{t}Ee^{-t}$ with $t=\operatorname{diag}(t_1,t_2,t_3)$ traceless rescales the nilpotents:
+with $P_k$ the projector for $\omega_k$ and eigenvalues $0,2\pi i/3,4\pi i/3$. The matrix $K$ is anti-Hermitian. For a general root $H=SH_0S^{-1}$ the spectral logarithm $K=SK_0S^{-1}$ satisfies $H=\exp K$ but is anti-Hermitian only when $S$ can be chosen $*$-unitary, that is, when $H$ is normal; a non-normal root is not $*$-unitary. A frame transformation $E\mapsto e^{t}Ee^{-t}$ with $t=\operatorname{diag}(t_1,t_2,t_3)$ traceless rescales the nilpotents:
 
 $$
 e^{t}E_{ij}e^{-t}=e^{t_i-t_j}E_{ij},
@@ -234,7 +234,7 @@ E_{23}\mapsto\lambda_2E_{23},\qquad
 E_{13}\mapsto\lambda_1\lambda_2E_{13}.
 $$
 
-The product is forced by the additive parameters: $t_1-t_3=(t_1-t_2)+(t_2-t_3)$. The idempotents $P_k$ are eigenvectors of the gauge with eigenvalue $1$, so they do not depend on $\lambda$.
+The product is forced by the additive parameters: $t_1-t_3=(t_1-t_2)+(t_2-t_3)$. The idempotents $P_k$ are eigenvectors of the frame group with eigenvalue $1$, so they do not depend on $\lambda$.
 
 ## Worked Examples
 
@@ -314,9 +314,9 @@ which is $*$-unitary with determinant $1$, hence in $SU(3)$.
 | $SU(3)$ | $\mathfrak{su}(3)$ | $8$ |
 | $SO(3)$ | $\mathfrak{so}(3)$ | $3$ |
 | diagonal torus $T\cong(\mathbb{C}^{\times})^{3}$ | diagonal | $6$ |
-| gauge torus $T/\mathbb{C}^{\times}$ | traceless diagonal | $4$ |
+| frame torus $T/\mathbb{C}^{\times}$ | traceless diagonal | $4$ |
 
-The diagonal torus $T\cong(\mathbb{C}^{\times})^{3}$ has complex dimension $3$ and real dimension $6$; the gauge torus of the frame is $T/\mathbb{C}^{\times}$, of real dimension $4$ and complex dimension $2$.
+The diagonal torus $T\cong(\mathbb{C}^{\times})^{3}$ has complex dimension $3$ and real dimension $6$; the frame torus of the frame is $T/\mathbb{C}^{\times}$, of real dimension $4$ and complex dimension $2$.
 
 **The centre.** The centre of $GL_3$ is $\mathbb{C}^{\times}I$, of real dimension $2$; the centre of $U(3)$ is $U(1)$, of real dimension $1$; the centre of $SU(3)$ is $\mu_3$, finite.
 
@@ -334,7 +334,7 @@ which is the statement that the exponential is natural for the adjoint action.
 
 ## Summary
 
-The exponential $\exp X=\sum X^{n}/n!$ is an entire surjection $\mathfrak{gl}_3(\mathbb{C})\to GL_3(\mathbb{C})$, with eigenvalues $e^{\lambda}$ and determinant $e^{\operatorname{tr}X}$. It is a local diffeomorphism at $X$ exactly when no two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. It is not injective: $\exp X=I$ exactly when $X$ is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$. Every invertible matrix has a logarithm, computed on the Jordan blocks by the finite series $(\log\lambda)I+N/\lambda-N^{2}/(2\lambda^{2})$. One-parameter subgroups are exactly the maps $t\mapsto e^{tX}$. The Lie algebra $\mathfrak{gl}_3$ has real dimension $18$; the subalgebras $\mathfrak{sl}_3$, $\mathfrak{u}(3)$, $\mathfrak{su}(3)$, $\mathfrak{so}(3)$ have dimensions $16$, $9$, $8$, $3$ over $\mathbb{R}$. For a $*$-unitary root $H$ one has $H=e^{K}$ with $K=\frac{2\pi i}{3}(P_2+2P_3)$ anti-Hermitian; a non-normal root is not $*$-unitary. The gauge rescales $E_{12},E_{23}$ by $e^{t_1-t_2},e^{t_2-t_3}$, forcing the composite $E_{13}$ to scale by the product.
+The exponential $\exp X=\sum X^{n}/n!$ is an entire surjection $\mathfrak{gl}_3(\mathbb{C})\to GL_3(\mathbb{C})$, with eigenvalues $e^{\lambda}$ and determinant $e^{\operatorname{tr}X}$. It is a local diffeomorphism at $X$ exactly when no two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. It is not injective: $\exp X=I$ exactly when $X$ is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$. Every invertible matrix has a logarithm, computed on the Jordan blocks by the finite series $(\log\lambda)I+N/\lambda-N^{2}/(2\lambda^{2})$. One-parameter subgroups are exactly the maps $t\mapsto e^{tX}$. The Lie algebra $\mathfrak{gl}_3$ has real dimension $18$; the subalgebras $\mathfrak{sl}_3$, $\mathfrak{u}(3)$, $\mathfrak{su}(3)$, $\mathfrak{so}(3)$ have dimensions $16$, $9$, $8$, $3$ over $\mathbb{R}$. For a $*$-unitary root $H$ one has $H=e^{K}$ with $K=\frac{2\pi i}{3}(P_2+2P_3)$ anti-Hermitian; a non-normal root is not $*$-unitary. The frame group rescales $E_{12},E_{23}$ by $e^{t_1-t_2},e^{t_2-t_3}$, forcing the composite $E_{13}$ to scale by the product.
 
 $$
 \boxed{\ \exp:\mathfrak{gl}_3\to GL_3\ \text{surjective, not injective};\quad \det e^{X}=e^{\operatorname{tr}X};\quad \dim_\mathbb{R}\mathfrak{gl}_3=18,\ \dim_\mathbb{R}\mathfrak{u}(3)=9,\ \dim_\mathbb{C}\mathfrak{sl}_3=8.\ }

@@ -26,7 +26,7 @@ $$
 \mathcal E_p\cong PGL_6/P(GL_p\times GL_{6-p}),
 $$
 
-a fibre bundle over $\operatorname{Gr}(p,6)$ with the contractible fibre of complements. The full flag variety $GL_6/B$ has dimension $15$; the partial flags and their incidence relations organise the idempotents, and the gauge is the fibre of the frame bundle.
+a fibre bundle over $\operatorname{Gr}(p,6)$ with the contractible fibre of complements. The full flag variety $GL_6/B$ has dimension $15$; the partial flags and their incidence relations organise the idempotents, and the frame group is the fibre of the frame bundle.
 
 The article assumes the Grassmannians and the orbit–stabilizer count of *The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$* and the Peirce decomposition of *The Peirce Decomposition of $M_6(\mathbb{C})$*. It uses the elementary geometry of homogeneous spaces. The idempotents of the biquaternion algebra are *The Square Roots of One and the Idempotents of the Biquaternion Algebra*; the spectral geometry is *The Sextic and the Spectral Strata of $M_6(\mathbb{C})$*.
 
@@ -264,7 +264,7 @@ $$
 
 **Remark (idempotent versus flag).** An idempotent of rank $p$ is more than its image: it also chooses the kernel, a complement. **The Grassmannian records the image; the idempotent records the splitting; the flag records the refinement.**
 
-## The Gauge and the Frame Bundle
+## The Frame Group and the Frame Bundle
 
 ### The Frame Bundle
 
@@ -280,7 +280,7 @@ sending a frame to the flag of its coordinate spans.
 
 **Proof.** Two frames give the same flag iff they differ by an upper triangular change of basis, that is by an element of $B$.
 
-**Corollary (the gauge).** The **gauge** is the maximal torus of $B$ modulo the center,
+**Corollary (the frame group).** The **frame group** is the maximal torus of $B$ modulo the center,
 
 $$
 (\mathbb{C}^\times)^5,
@@ -290,11 +290,11 @@ of dimension $5$. It acts on the frame by rescaling the basis vectors.
 
 **Proof.** The diagonal torus of $GL_6$ is $(\mathbb{C}^\times)^6$; modulo the center $\mathbb{C}^\times I_6$ it is $(\mathbb{C}^\times)^5$. The rescaling of the frame preserves the flag.
 
-### The Gauge as the Fibre
+### The Frame Group as the Fibre
 
-**Theorem.** Over the root $H$, the eigenframe bundle is a principal $(\mathbb{C}^\times)^6$-bundle; modulo the overall scale it is a principal $(\mathbb{C}^\times)^5$-bundle, and the gauge is its fibre.
+**Theorem.** Over the root $H$, the eigenframe bundle is a principal $(\mathbb{C}^\times)^6$-bundle; modulo the overall scale it is a principal $(\mathbb{C}^\times)^5$-bundle, and the frame group is its fibre.
 
-**Proof.** The eigenbases of $H$ are the frames in which $H$ is diagonal; two such frames differ by independent rescalings, the torus $(\mathbb{C}^\times)^6$. The overall scale acts trivially on the projective frame, so the gauge is $(\mathbb{C}^\times)^6/\mathbb{C}^\times\cong(\mathbb{C}^\times)^5$.
+**Proof.** The eigenbases of $H$ are the frames in which $H$ is diagonal; two such frames differ by independent rescalings, the torus $(\mathbb{C}^\times)^6$. The overall scale acts trivially on the projective frame, so the frame group is $(\mathbb{C}^\times)^6/\mathbb{C}^\times\cong(\mathbb{C}^\times)^5$.
 
 **Corollary (the dimensions).**
 
@@ -304,11 +304,11 @@ $$
 \dim B=21=15+6 .
 $$
 
-The Borel has dimension $21$; its maximal torus has dimension $6$; the unipotent radical has dimension $15$; the gauge is the torus modulo the center, of dimension $5$.
+The Borel has dimension $21$; its maximal torus has dimension $6$; the unipotent radical has dimension $15$; the frame group is the torus modulo the center, of dimension $5$.
 
 **Proof.** The Borel is the semidirect product of the torus (dimension $6$) and the unipotent radical (dimension $15$); the flag variety has dimension $15$.
 
-**Remark (the three fibres).** The frame bundle over the flag variety has fibre the Borel ($21$); the eigenframe bundle over the root has fibre the torus ($6$, or $5$ projectively); the idempotent bundle over the Grassmannian has fibre the affine space of complements ($p(6-p)$). **The gauge is the torus fibre; the flag fibre is the Borel; the idempotent fibre is the complement.**
+**Remark (the three fibres).** The frame bundle over the flag variety has fibre the Borel ($21$); the eigenframe bundle over the root has fibre the torus ($6$, or $5$ projectively); the idempotent bundle over the Grassmannian has fibre the affine space of complements ($p(6-p)$). **The frame group is the torus fibre; the flag fibre is the Borel; the idempotent fibre is the complement.**
 
 ## Summary
 
@@ -328,7 +328,7 @@ $$
 
 For $p=1$ the variety is an affine bundle of rank $5$ over $\mathbb{P}^5$; for $p=3$ it has dimension $18$; for $p=6$ it is the single identity.
 
-The full flag variety $GL_6/B$ has dimension $15$, with the iterated bundle $5+4+3+2+1$. The partial flags are the Grassmannians and their incidences; an idempotent determines the two-step flag of its image, and the complete flag refines it. The gauge $(\mathbb{C}^\times)^5$ is the fibre of the frame bundle over the root; the Borel is the fibre over the flag.
+The full flag variety $GL_6/B$ has dimension $15$, with the iterated bundle $5+4+3+2+1$. The partial flags are the Grassmannians and their incidences; an idempotent determines the two-step flag of its image, and the complete flag refines it. The frame group $(\mathbb{C}^\times)^5$ is the fibre of the frame bundle over the root; the Borel is the fibre over the flag.
 
 | Object | Dimension |
 |---|---|
@@ -339,7 +339,7 @@ The full flag variety $GL_6/B$ has dimension $15$, with the iterated bundle $5+4
 | $\operatorname{Gr}(p,6)$ | $p(6-p)$ |
 | Full flag variety | $15$ |
 | Borel $B$ | $21$ |
-| Gauge $(\mathbb{C}^\times)^5$ | $5$ |
+| Frame group $(\mathbb{C}^\times)^5$ | $5$ |
 
 ## Summary of Notation
 
@@ -358,7 +358,7 @@ The full flag variety $GL_6/B$ has dimension $15$, with the iterated bundle $5+4
 - [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), for the corners of an idempotent.
 - [The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$](the-rank-two-and-rank-three-splits-of-m6c.html), for the rank-two and rank-three idempotents.
 - [The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the projective space of the minimal ideals.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the gauge torus.
+- [The Frame, the Simple Nilpotents and the Frame Group of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-frame-group-of-m6c.html), for the frame torus.
 - [Grassmannians and Stiefel Manifolds](grassmannians-and-stiefel-manifolds.html), for the general theory of $\operatorname{Gr}(p,n)$.
 - [Flag Manifolds](flag-manifolds.html), for the general theory of $GL_n/B$ and the incidence.
 - [Idempotents](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the rank-one case.
