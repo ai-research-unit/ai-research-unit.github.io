@@ -220,7 +220,7 @@ $$</p>
 <p><strong>What the second term of that pair buys.</strong> It is what allows a minimum whose direction is not decided by the quadratic term alone, so the vacuum's <em>shape</em> — in particular whether the traceless part of $Ξ$ is a rank-one projector and not a multiple of the identity — is a dynamical question rather than a declared one. <strong>The corpus's vacuum is that shape</strong>, $Ξ\propto D$ with $D=\operatorname{diag}(-3,1,1,1)$, which is $-4$ times the traceless part of the rank-one projector $\operatorname{diag}(1,0,0,0)$. <strong>The matrix is not itself rank one</strong> — it is invertible, with four nonzero eigenvalues — and it is the traceless part alone that the two quartics see.</p>
 <p><strong>What it costs.</strong> Six free numbers in a block whose virtue is that it has one coupling. <strong>The gauge sector has one parameter and the scalar sector has six</strong>, and the asymmetry is not a defect of the writing: it is the number of invariants a matrix admits once no condition is put on it.</p>
 <p><strong>The gauge-fixing and ghost pieces.</strong> $\mathcal{L}_{\mathrm{gf}}=-\tfrac{1}{2\zeta}\sum_{a}\bigl(\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}A_{a,\imath}\bigr)^{2}$ with one parameter $\zeta$ for the whole group, and $\mathcal{L}_{\mathrm{gh}}=\sum_{a}\bar c_{a}\bigl(-\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}D_{\imath}\bigr)c_{a}$ with fifteen ghosts in the adjoint. <strong>One parameter and not four</strong>, which is the difference between this block and the electroweak one: there the four factors each carried a gauge parameter and the mixing made them unequal.</p>
-<p><strong>The Yukawa piece, named and not written.</strong> One operator per scalar block and one matrix in the copy index,</p>
+<p><strong>The Yukawa piece, named and not written.</strong> One contraction of the matrix and one matrix in the copy index,</p>
 <p>$$
 \mathcal{L}_{\mathrm{Yuk}}=y_{\alpha\beta}\,\bar\xi^{\alpha}Ξ\,\xi^{\beta}+\text{h.c.},
 $$</p>
@@ -232,16 +232,20 @@ $$</p>
 \qquad
 \bar{\mathbf4}\otimes(\mathbf{15}\oplus\mathbf1)\otimes\mathbf4\supset\mathbf1 .
 $$</p>
-<p><strong>There is exactly one invariant contraction, and it uses all sixteen components.</strong> Write the contraction as $\bar\xi\,Ξ\,\xi$; since $\mathbf{15}$ and $\mathbf1$ are separate irreducible blocks, it splits into two operators,</p>
+<p><strong>There is exactly one invariant contraction, and it uses all sixteen components.</strong> Write it as $\bar\xi^{\alpha}\,Ξ\,\xi^{\beta}$ with $\alpha,\beta$ the copy index. <strong>The matrix $Ξ$ is not irreducible — it is $\mathbf{15}\oplus\mathbf1$ — so the same contraction can be read in two channels</strong>,</p>
 <p>$$
-\mathcal{L}_{\mathrm{Yuk}}=y\,\bar\xi\,Ξ_{15}\,\xi+y'\,\bar\xi\,Ξ_{1}\,\xi+\text{h.c.},
+\bar\xi\,Ξ\,\xi=\bar\xi\,Ξ_{15}\,\xi+\bar\xi\,Ξ_{1}\,\xi,
+\qquad
+Ξ_{15}=Ξ-\tfrac14(\operatorname{tr}Ξ)\,\mathbb 1,
+\qquad
+Ξ_{1}=\tfrac14(\operatorname{tr}Ξ)\,\mathbb 1 .
 $$</p>
-<p><strong>so a complete ledger carries two coefficients and this one carries a single matrix $y$.</strong> The model sets $y'$ to zero — a choice, stated here and not derived.</p>
+<p><strong>Each channel is an independent invariant, so the ledger could carry two coefficients; it carries one</strong>, the matrix $y_{\alpha\beta}$ of the display above. <strong>That is a choice as much as a count.</strong> The trace channel is dropped because it vanishes on the condensate — see the next paragraph — so <strong>no mass, no mixing and no mass relation can depend on a coefficient multiplying it</strong>; what it would change is the coupling of the fluctuation $\delta\operatorname{tr}Ξ$ to a fermion pair, and nothing in the corpus uses that coupling. <strong>A second coefficient with no consequence in the spectrum is a footnote and not a term</strong>, which is why it is not written.</p>
 <p><strong>Where the mass then comes from is a sharper statement, and it is the one the rest of the block uses.</strong> The vacuum is $Ξ_0=vD$ with</p>
 <p>$$
 \operatorname{tr}D=-3+1+1+1=0 ,
 $$</p>
-<p><strong>so the singlet block vanishes at the minimum and the whole mass matrix is the adjoint block's</strong>,</p>
+<p><strong>so the trace channel vanishes at the minimum and the whole mass matrix is the traceless channel's</strong>,</p>
 <p>$$
 M_{\imath\jmath}=y\,v\,D_{\imath}\delta_{\imath\jmath},
 $$</p>
