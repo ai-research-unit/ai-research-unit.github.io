@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Scalar Sector on a Frame — Biquaternion Universe</title>
+  <meta name="description" content="This is the first of the section&#x27;s three sectoral articles, and it is the shortest test of the dictionary. The preceding article stated that the source of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-scalar-sector-on-a-frame"><strong>The Scalar Sector on a Frame</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is the first of the section's three sectoral articles, and it is the shortest test of the dictionary. The preceding article stated that the source of the field equation is the derivative of the matter action with respect to the frame; this one takes the simplest matter action the corpus owns, puts it on a frame, and computes that derivative.</p>
+<p>The scalar is the right place to start for a reason that is structural rather than practical. The corpus's central scalar field has no spin, no gauge freedom and no internal index. Its stress is therefore built from one object, the gradient, and every question about the frame's entry into a matter action reduces to the metric's entry, without the third route — the intrinsic legs and the spin connection — entering at all. If the dictionary fails here it fails everywhere; it does not fail here.</p>
+<p>Two results, of different sizes.</p>
+<p><strong>The stress, and the equation of state as a ratio of squared leg norms.</strong> For a homogeneous field on a frame,</p>
+<p>$$
+\Theta^{\imath\jmath}=\partial^{\imath}\phi\,\partial^{\jmath}\phi+g^{\imath\jmath}\mathcal L,
+\qquad
+\rho=\tfrac12\dot\phi^{2}+V,
+\qquad
+p=\tfrac12\dot\phi^{2}-V,
+\qquad
+w=\frac{p}{\rho}=\frac{\dot\phi^{2}-2V}{\dot\phi^{2}+2V},
+$$</p>
+<p>so that $w\to+1$ for a kinetic-dominated field and $w\to-1$ for a potential-dominated one, and $w$ passes through $+1/3$ exactly when $\dot\phi^{2}=4V$. The last value is where the corpus's trace collapse annihilates the source, and the scalar shows that this happens at one point of its trajectory and not on a set.</p>
+<p><strong>The dictionary is confirmed on the sector that has no spin.</strong> The frame derivative was computed by finite differences on a non-diagonal frame and agrees with $\sqrt{|g|}\,\Theta^{\imath\jmath}(E\digamma_{\mathrm{met}})_{\jmath a}$ to $1.3\times10^{-10}$ relative, with the antisymmetric part of the recovered tensor at $1.2\times10^{-10}$ — that is, zero to the accuracy of the difference quotient.</p>
+<p>The article also records what the scalar cannot settle. The potential $V$ is a free function; the coupling of $\phi$ to the frame is transcription; and the scalar's own action contains no term that the algebra generates, so the sector confirms the dictionary and adds nothing to the action problem.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The conventions are the preceding article's and none is redefined. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the material sector is $\mathbb{B}_{\Phi}$ with basis $e_0=ie_t$, $e_1=\vec e_x$, $e_2=\vec e_y$, $e_3=\vec e_z$, and the pairing is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ with array $(\digamma_{\mathrm{met}})_{ab}=\mathrm{diag}(-1,1,1,1)$.</p>
+<p>The frame is $\tilde E_{\Phi,\imath}$ with $g_{\imath\jmath}=\langle\tilde E_{\Phi,\imath},\tilde E_{\Phi,\jmath}\rangle_{\natural}$, its inverse is $G_{\imath\jmath}$, its dual is $\tilde F_{\Phi,\imath}=G_{\imath\jmath}\tilde E_{\Phi,\jmath}$, and the volume density is $\sqrt{|g|}$.</p>
+<p>The field is real and central: $\tilde\Xi=\xi e_t$ with $\xi$ a real function, so it lies in the centre and the biquaternionic d'Alembertian acts on it componentwise. Its gradient is</p>
+<p>$$
+\tilde\nabla_{\Phi}\xi=\sum_{\imath}\tilde F_{\Phi,\imath}\,\frac{\partial\xi}{\partial x_{\imath}},
+$$</p>
+<p>the dual frame appearing because the derivative carries a lower index and the frame's legs are the basis. This is the only place where the frame enters, and it enters twice — once through $\tilde F_{\Phi,\imath}$, once through $\sqrt{|g|}$ — which is the whole content of the scalar's dependence.</p>
+<p><strong>The sign rule.</strong> The kinetic term carries $-\tfrac12$, so that with the interval's one minus the time derivative contributes positively:</p>
+<p>$$
+-\tfrac12\,g^{\imath\jmath}\partial_{\imath}\xi\,\partial_{\jmath}\xi
+=-\tfrac12\left(-\dot\xi^{2}+\lvert\nabla\xi\rvert^{2}\right)
+=\tfrac12\dot\xi^{2}-\tfrac12\lvert\nabla\xi\rvert^{2}.
+$$</p>
+<p>That is the corpus's sign rule and it is the reason the energy is bounded below. The potential is $V(\xi)=\tfrac12m_{\Phi}^{2}\xi^{2}$ in the corpus's normalisation, with $m_{\Phi}=2\pi\nu_m$, and is left general as $V$ where nothing depends on the form.</p>
+<h2 id="the-action-on-a-frame">The Action on a Frame</h2>
+<p>The scalar action is the corpus's, with the frame carrying the metric:</p>
+<p>$$
+S_{\mathrm{scal}}[\xi;\tilde E_{\Phi}]
+=\int d^{4}x\,\sqrt{|g|}\left[-\tfrac12\,g^{\imath\jmath}\,\partial_{\imath}\xi\,\partial_{\jmath}\xi-V(\xi)\right].
+$$</p>
+<p>In the algebra's letters the kinetic term is the norm of the gradient,</p>
+<p>$$
+-\tfrac12\,g^{\imath\jmath}\partial_{\imath}\xi\,\partial_{\jmath}\xi
+=-\tfrac12\,\mathrm{Sc}\left(\bigl(\tilde\nabla_{\Phi}\xi\bigr)^{\natural}\tilde\nabla_{\Phi}\xi\right),
+$$</p>
+<p>because the dual frame is orthonormal to the frame and $\langle\tilde F_{\Phi,\imath},\tilde F_{\Phi,\jmath}\rangle_{\natural}=G_{\imath\jmath}$ contracts the two derivatives with the inverse metric exactly. The element form and the coordinate form are the same functional; the article keeps the coordinate form because the Euler–Lagrange equation and the derivative are both read more easily in it.</p>
+<p><strong>Where the frame enters.</strong> $\sqrt{|g|}$ in the measure, $G_{\imath\jmath}$ in the contraction, and nothing else. The field $\xi$ has no internal index, so it does not see the legs, and it has no spin, so it does not see a connection. This is the sharpest form of the scalar's simplicity: its action depends on $\tilde E_{\Phi}$ only through the Gram matrix, which is exactly the hypothesis under which the preceding article's dictionary was derived.</p>
+<h2 id="the-stress-of-the-scalar-field">The Stress of the Scalar Field</h2>
+<p><strong>The variation.</strong> Varying the action with respect to $\xi$ gives the Euler–Lagrange equation</p>
+<p>$$
+\frac{1}{\sqrt{|g|}}\partial_{\imath}\left(\sqrt{|g|}\,g^{\imath\jmath}\partial_{\jmath}\xi\right)-V'(\xi)=0,
+$$</p>
+<p>which is $\Box_{g}\xi-V'(\xi)=0$ with $\Box_{g}$ the Laplace–Beltrami operator of the frame's metric. On the flat frame it is the corpus's $\Box_{\Phi}\xi-m_{\Phi}^{2}\xi=0$, the central scalar equation of <em>The Lagrangian and the Central Scalar Field</em>.</p>
+<p><strong>The stress.</strong> Varying with respect to the frame, or equivalently differentiating with respect to $g_{\imath\jmath}$, gives</p>
+<p>$$
+\boxed{\;\Theta^{\imath\jmath}=\partial^{\imath}\xi\,\partial^{\jmath}\xi+g^{\imath\jmath}\mathcal L\;}
+\qquad
+\mathcal L=-\tfrac12\,g^{ab}\partial_{a}\xi\,\partial_{b}\xi-V(\xi),
+$$</p>
+<p>and with both indices lowered,</p>
+<p>$$
+\Theta_{\imath\jmath}=\partial_{\imath}\xi\,\partial_{\jmath}\xi+g_{\imath\jmath}\mathcal L .
+$$</p>
+<p>The two forms are related by two contractions with the metric, and <em>this is the index-placement remark the preceding article owed the reader</em>: the derivative with respect to the metric array is naturally a twice-contravariant object, the corpus keeps every index low, and the passage between them costs $g_{\imath a}g_{\jmath b}$. On the flat frame the two arrays coincide, which is why the flat-frame articles never had to say so; on a curved frame they differ at first order in $h_{\imath\jmath}$, and the sectoral articles work with the all-low form because $\rho$ and $p$ are read from it.</p>
+<p><strong>The verification.</strong> The dictionary was checked on the frame</p>
+<p>$$
+E=\begin{pmatrix}1.08&amp;0.03&amp;0&amp;0\\0.02&amp;1.04&amp;0.05&amp;0\\0&amp;0.02&amp;1.06&amp;0\\0.01&amp;0&amp;0.03&amp;1.03\end{pmatrix},
+$$</p>
+<p>with the prescribed gradient $\partial_{\imath}\xi=(0.6,-0.4,0.3,0.5)$ and $V=0.7$, evaluating $\delta S/\delta E_{\imath a}$ by central differences of the pointwise density:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>relative error of $\delta S/\delta E_{\imath a}=\sqrt{\lvert g\rvert}\,\Theta^{\imath\jmath}(E\digamma_{\mathrm{met}})_{\jmath a}$</td>
+<td>$1.3\times10^{-10}$</td>
+</tr>
+<tr>
+<td>antisymmetric part of the recovered $\Theta^{\imath\jmath}$</td>
+<td>$1.1\times10^{-10}$</td>
+</tr>
+<tr>
+<td>antisymmetric part of the recovered $\Theta_{\imath\jmath}$</td>
+<td>$1.2\times10^{-10}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The third row is the one worth reading. The scalar's stress is symmetric because its Lagrangian depends on the frame only through the symmetric $g$, so the frame variation is automatically blind to the antisymmetric direction — and the number confirms that the dictionary produces that blindness rather than being imposed to have it.</p>
+<h2 id="the-equation-of-state-as-a-ratio-of-leg-norms">The Equation of State as a Ratio of Leg Norms</h2>
+<p>Take the field homogeneous in the frame's time, $\xi=\xi(r'_{t})$, and read the stress in an orthonormal frame, $g_{\imath\jmath}=(\digamma_{\mathrm{met}})_{\imath\jmath}$. Then</p>
+<p>$$
+\mathcal L=\tfrac12\dot\xi^{2}-V,
+\qquad
+\Theta_{00}=\dot\xi^{2}+(-1)\mathcal L=\tfrac12\dot\xi^{2}+V\equiv\rho,
+\qquad
+\Theta_{\imath\jmath}=(1)\mathcal L\,\delta_{\imath\jmath}=\left(\tfrac12\dot\xi^{2}-V\right)\delta_{\imath\jmath}\equiv p\,\delta_{\imath\jmath}.
+$$</p>
+<p>So the two independent functions of a perfect fluid are the field's kinetic and potential energies, and the equation of state is their ratio,</p>
+<p>$$
+w=\frac{p}{\rho}=\frac{\dot\xi^{2}-2V}{\dot\xi^{2}+2V},
+$$</p>
+<p>a function of one variable, $\dot\xi^{2}/V$, ranging over $(-1,+1)$.</p>
+<p><strong>Why the orthonormal frame is the one to read it in, and how it connects to the fluid frame.</strong> $\rho$ and $p$ are functions, and in an orthonormal frame they are the two diagonal entries of $\Theta$. <em>The Action Problem</em> builds a frame whose Gram matrix <em>is</em> $\mathrm{diag}(\rho,p,p,p)$ — time leg $-\sqrt\rho\,e_t$, spatial legs $\sqrt p\,\vec e_{\imath}$ — and that is a different statement, about a frame whose metric is the stress, not about the stress in a fixed metric. The two readings agree on the numbers and differ in what they claim: the first says the fluid's two functions are the diagonal entries of the stress in the frame the fluid defines; the second says the frame's leg lengths are $\sqrt{\rho}$ and $\sqrt{p}$, which is why the traceless part is carried by the frame's shape and not by its trace. Both are used below, and neither is a derivation of the other.</p>
+<p><strong>The limits, and they are the two extremes a scalar can reach.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>regime</th>
+<th>$w$</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>potential-dominated, $\dot\xi^{2}\ll V$</td>
+<td>$-1$</td>
+<td>a cosmological-constant-like source: tension equal to energy density</td>
+</tr>
+<tr>
+<td>kinetic-dominated, $V\ll\dot\xi^{2}$</td>
+<td>$+1$</td>
+<td>a stiff fluid: pressure equal to energy density</td>
+</tr>
+<tr>
+<td>$\dot\xi^{2}=4V$</td>
+<td>$+1/3$</td>
+<td>the radiation value</td>
+</tr>
+</tbody>
+</table></div>
+<p>The middle column is exhaustive as a range and not as a list: <strong>no scalar equation of state lies outside $(-1,+1)$</strong>, because $w$ is a ratio of $(\dot\xi^{2}-2V)$ to $(\dot\xi^{2}+2V)$ with both terms non-negative. A fluid with $w&gt;1$, which is what a scalar with a negative potential would give, is outside the sector; a fluid with $w&lt;-1$ would need a negative kinetic term.</p>
+<p><strong>Why $w=+1/3$ is the interesting entry.</strong> The corpus records, in <em>The Action Problem</em>, that the natural single-biquaternion packaging of a symmetric stress collapses to its trace and annihilates a radiation fluid entirely. The scalar supplies the exact condition for that annihilation:</p>
+<p>$$
+-\rho+3p=\left(\tfrac12\dot\xi^{2}+V\right)\!-3\!\left(\tfrac12\dot\xi^{2}-V\right)=\dot\xi^{2}-4V,
+$$</p>
+<p>which vanishes at $\dot\xi^{2}=4V$ and only there, and at that point $w=p/\rho=V/3V=1/3$. So the trace collapse is not a defect of the scalar sector; it bites at one point of the trajectory, and at that point the sector is a radiation fluid. Everywhere else the scalar survives the collapse with a nonzero trace, and the collapse destroys information about the split between $\dot\xi^{2}$ and $V$ only when the split is the radiation one.</p>
+<p>That is a sharpening of the corpus's statement worth stating plainly: <strong>the trace carries $-\rho+3p$, and a source is invisible to the trace exactly when its equation of state is the radiation one.</strong> The single-element carrier is lossy for every fluid except at $w=1/3$, where it is blind, and blind sources are precisely the ones the trace cannot see.</p>
+<h2 id="what-the-sector-establishes-and-what-it-leaves">What the Sector Establishes and What It Leaves</h2>
+<p><strong>Established.</strong></p>
+<ol>
+<li>The scalar action on a frame, its Euler–Lagrange equation, and its stress $\Theta_{\imath\jmath}=\partial_{\imath}\xi\partial_{\jmath}\xi+g_{\imath\jmath}\mathcal L$, all three transcribed consistently and checked by the frame derivative to $1.3\times10^{-10}$.</li>
+<li>The equation of state as a ratio of kinetic to potential energy, its range $(-1,1)$, and its three named points.</li>
+<li>The trace $-\rho+3p=\dot\xi^{2}-4V$ and the exact condition for the corpus's trace collapse to annihilate the source, which is $w=1/3$.</li>
+<li>The index-placement remark: the frame derivative is twice-contravariant, the all-low tensor costs two contractions with $g$, and the two coincide only on a frame that is flat.</li>
+</ol>
+<p><strong>Left open.</strong> The potential $V$ is a free function; the algebra does not select it, being unable to build a self-interaction from structure constants the central operator does not have. The coupling of the scalar to the frame is transcription — the parent articles' sign rule makes it the standard action, and nothing in the algebra prefers it. And the sector says nothing about the gravitational side, which is the same half-open item every article of this section records.</p>
+<h2 id="summary">Summary</h2>
+<p>The scalar on a frame is the dictionary's simplest test and it passes: the action depends on the frame only through the Gram matrix, the frame derivative equals $\sqrt{|g|}\Theta^{\imath\jmath}(E\digamma_{\mathrm{met}})_{\jmath a}$ to $1.3\times10^{-10}$, and the stress is the corpus's standard one, symmetric by construction.</p>
+<p>The equation of state is a ratio of squared quantities, $w=(\dot\xi^{2}-2V)/(\dot\xi^{2}+2V)$, so a scalar fluid spans $(-1,+1)$ and no more. Its trace is $\dot\xi^{2}-4V$ and vanishes exactly at $w=1/3$, which is where the corpus's single-element packaging loses the source entirely. The scalar therefore shows that the trace collapse is not a general obstruction but a condition: it removes the radiation equation of state and nothing else.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\xi$</td>
+<td>real central scalar, $\tilde\Xi=\xi e_t$</td>
+</tr>
+<tr>
+<td>$V(\xi)$</td>
+<td>potential, $\tfrac12m_{\Phi}^{2}\xi^{2}$ in the corpus's normalisation</td>
+</tr>
+<tr>
+<td>$\mathcal L$</td>
+<td>$-\tfrac12 g^{ab}\partial_a\xi\partial_b\xi-V$</td>
+</tr>
+<tr>
+<td>$\Theta^{\imath\jmath}$</td>
+<td>$g^{\imath\jmath}\mathcal L+\partial^{\imath}\xi\partial^{\jmath}\xi$, the frame derivative</td>
+</tr>
+<tr>
+<td>$\Theta_{\imath\jmath}$</td>
+<td>the all-low form, $g_{\imath a}g_{\jmath b}\Theta^{ab}$</td>
+</tr>
+<tr>
+<td>$\rho,\ p$</td>
+<td>$\Theta_{00}$ and $\Theta_{\imath\jmath}/\delta_{\imath\jmath}$ in the fluid frame</td>
+</tr>
+<tr>
+<td>$w$</td>
+<td>$p/\rho$</td>
+</tr>
+<tr>
+<td>$\Box_g$</td>
+<td>Laplace–Beltrami operator of the frame's metric</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="matter-into-the-frame-the-variation-that-defines-the-source.html">Matter Into the Frame: The Variation That Defines the Source</a>, for the dictionary this article tests and the index-placement remark it makes precise.</li>
+<li><a href="the-lagrangian-and-the-central-scalar-field.html">The Lagrangian and the Central Scalar Field</a>, for the central scalar action whose Euler–Lagrange equation appears here as the frame's Laplace–Beltrami equation.</li>
+<li><a href="the-action-problem.html">The Action Problem</a>, for the perfect-fluid frame with leg scales $\sqrt\rho$ and $\sqrt p$ that this article's equation of state fills, and for the trace collapse.</li>
+<li><a href="the-maxwell-sector-on-a-frame.html">The Maxwell Sector on a Frame</a>, for the sector where the same dictionary is applied to a field with spin one, and where the algebraic packaging fails.</li>
+<li><a href="the-newtonian-limit-closing-the-chain.html">The Newtonian Limit: Closing the Chain</a>, for the chain that a $\rho$ of this kind feeds.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

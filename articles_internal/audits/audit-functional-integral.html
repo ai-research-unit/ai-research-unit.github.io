@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: *The Functional Integral in Biquaternionic Form*, and Ten Items of the Referee — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Review only. No article was modified. Every number below was recomputed in a throwaway script outside the repository.">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-functional-integral-in-biquaternionic-form-and-ten-items-of-the-referee"><strong>Audit: <em>The Functional Integral in Biquaternionic Form</em>, and Ten Items of the Referee</strong></h1>
+<p><em>Status of this file.</em> <strong>Review only. No article was modified.</strong> Every number below was recomputed in a throwaway script outside the repository.</p>
+<p><em>The article.</em> <code>articles_physics/the-functional-integral-in-biquaternionic-form.md</code>, 302 lines.</p>
+<p><em>What the file is for.</em> It checks the referee's ten items against the article and against the corpus conventions, classifies each as a genuine defect or as wording, records four defects the referee did not raise, and ends with a patch list and a decision.</p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The verdict.</strong> The referee is right on all ten items. Nine are genuine defects. The tenth, the mass notation, is a defect of units rather than of algebra, and it is shared with two companion articles. The referee's central diagnosis is correct: the article defines a $\mathbb{B}$-valued field with four complex coefficients and then counts its determinant as if the field had two.</p>
+<p><strong>The article's best result survives.</strong> The sector orthogonality is correct. Checked exhaustively over the sixteen basis pairs, $\max\lvert2\,\mathrm{Re}\,\mathrm{Sc}(a^{*}Wb)\rvert=0$ with $a\in\mathbb{B}_{\Phi}$, $b\in\mathbb{B}_{\Psi}$ and $W$ central real. The one-line proof is available and the article's sixteen-element check is redundant beside it.</p>
+<p><strong>The finite-dimensional verification is correct.</strong> Every number stands.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>recomputation</th>
+<th>outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\det A_{\mathrm{cph}}=3.12$</td>
+<td>cofactor expansion of the $3\times3$</td>
+<td>$3.1199999$</td>
+</tr>
+<tr>
+<td>$Z_0=8.9165$</td>
+<td>$(2\pi)^{3/2}(\det A)^{-1/2}$</td>
+<td>$8.91646$</td>
+</tr>
+<tr>
+<td>$Z[J]=23.964$</td>
+<td>$Z_0\exp(\tfrac12J^{T}A^{-1}J)$, $J=(0.4,-0.7,1.1)$</td>
+<td>$23.96362$, $J^{T}A^{-1}J=1.97728$</td>
+</tr>
+<tr>
+<td>$W[J]-W[0]=J^{2}/(2a)$</td>
+<td>$a=1.7$, $J=0.9$</td>
+<td>$0.238235$</td>
+</tr>
+<tr>
+<td>sector cross terms vanish</td>
+<td>all $16$ basis pairs, $2\,\mathrm{Re}\,\mathrm{Sc}(a^{*}Wb)$</td>
+<td>exactly $0$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q,\tilde Q_1\rangle$ is Hilbert–Schmidt</td>
+<td>$2\,\mathrm{Re}\,\mathrm{Sc}(Q^{*}Q_1)$ against $\mathrm{Re}\,\mathrm{tr}(\mathsf M(Q)^{\dagger}\mathsf M(Q_1))$</td>
+<td>equal, $-0.700000$ both</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Everything in the referee's list is confirmed, and six items are worse than stated.</strong> They are collected below in the order of the article, not in the order of the referee's list, because the first one decides the rest.</p>
+<h2 id="defect-1-the-fields-dimension-referee-1">Defect 1. The Field's Dimension (referee 1)</h2>
+<p><strong>The article carries two incompatible counts and states the correct one only twice.</strong></p>
+<p>The correct statements are the corpus's. In $\mathbb{B}\cong M_2(\mathbb{C})$ an element has <strong>four complex coefficients, eight real</strong>. Each sector is <strong>four-real-dimensional</strong> and is <em>not</em> a complex subspace: <em>The Two Sectors</em> states that multiplication by $i$ exchanges the sectors and that no nontrivial complex subspace lies inside one of them. The corpus fixes the contrast in <em>The Spin-Half Bispinor Spaces</em>: two complex components is the ideal, the Weyl spinor; four is the algebra, the Dirac spinor.</p>
+<p>The article's correct statements, line 179 and the summary, say four complex, eight real, four real per sector.</p>
+<p>The article's wrong statements say two complex, four times:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>text</th>
+<th>what it should say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>102</td>
+<td>"exactly the counting that a biquaternion field's two-complex-dimensional mode supplies"</td>
+<td>eight real per mode</td>
+</tr>
+<tr>
+<td>108</td>
+<td>"a field valued in $\mathbb{B}$ has, at each mode, two complex components — the dimension of the spinor module $\mathbb{B}\tilde\Pi_{\mathrm{id}}\cong\mathbb{C}^{2}$"</td>
+<td>four complex. $\mathbb{C}^2$ is the ideal, not the algebra</td>
+</tr>
+<tr>
+<td>113</td>
+<td>"each mode contributes its two complex dimensions"</td>
+<td>four complex, eight real</td>
+</tr>
+<tr>
+<td>177</td>
+<td>"since the module has two complex dimensions the free determinant is $\prod(\dots)^{2}$ and the prefactor is $\prod(\dots)^{-1}$"</td>
+<td>$\prod(\dots)^{8}$, prefactor $\prod(\dots)^{-4}$</td>
+</tr>
+<tr>
+<td>228</td>
+<td>"four complex coefficients, two per sector"</td>
+<td>four real per sector</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The determinant power is not a matter of convention here, it is arithmetic.</strong> With the article's own exponent $-\tfrac12\langle\tilde\Xi,K\tilde\Xi\rangle$ and $K$ central, the exponent is $-K\sum_{a=1}^{8}x_a^{2}$ on the eight real coordinates. Then</p>
+<p>$$
+\int e^{-K\sum x_a^{2}}\prod_{a}dx_a=\Big(\frac{\pi}{K}\Big)^{4},
+$$</p>
+<p>so the prefactor per mode is $K^{-4}$, equivalently $(\det W)^{-1/2}$ with $\det$ on the eight real dimensions. Per sector it is $K^{-2}$, and the product of the two sectors is $K^{-4}$, which agrees with the factorisation. The article's $K^{-1}$ is short by $K^{-3}$.</p>
+<p><strong>The article contradicts itself on this.</strong> Line 245 states the formula with $(2\pi)^{N/2}(\det A_{\mathrm{cph}})^{-1/2}$ and "$N$ the real dimension of the module". That formula is right, and with $N=8$ it gives $K^{-4}$. Line 177 gives $K^{-1}$. One of the two must go.</p>
+<p><strong>Repair.</strong> Keep the $\mathbb{B}$-valued field. It is what the definition, the summary, and the corpus's Dirac spinor say. Delete the four "two complex" statements, state the count once at the definition, and put the determinant power at $K^{-4}$ per mode and $K^{-2}$ per sector.</p>
+<h2 id="defect-2-the-action-and-the-exponent-referee-2">Defect 2. The Action and the Exponent (referee 2)</h2>
+<p><strong>The action is twice the quadratic form in the exponent.</strong> Line 80 and line 264 define $S=\int\langle\tilde\Xi,W\tilde\Xi\rangle$, with the pairing $2\,\mathrm{Re}\,\mathrm{Sc}$. The Gaussian at line 110 weighs $\exp(-\tfrac12\langle\tilde\Xi,K\tilde\Xi\rangle)$. So the weight is $\exp(-S/2)$, not $\exp(-S)$. Line 120 half-admits it: "the classical action of the free field up to the factor $\tfrac12$".</p>
+<p><strong>Both companions use the other convention.</strong> <em>The Generating Functional</em> writes $W[\tilde J]=\tfrac12\langle\tilde J,W^{-1}\tilde J\rangle$ and $\Gamma=\tfrac12\langle\tilde\Xi,W\tilde\Xi\rangle$. <em>The Lagrangian and the Klein–Gordon Equation</em> fixes the action as $\int\mathrm{Sc}[(\partial\tilde\Xi)^{*}\partial\tilde\Xi-4\pi^{2}\nu_m^{2}\tilde\Xi^{*}\tilde\Xi]$, which is $\tfrac12\int\langle\tilde\Xi,(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde\Xi\rangle$ with the same real form.</p>
+<p><strong>Repair.</strong> $S[\tilde\Xi]=\tfrac12\int d^{4}r\,\langle\tilde\Xi,W_{\mathrm{kinetic}}\tilde\Xi\rangle=\int d^{4}r\,\mathrm{Sc}(\tilde\Xi^{*}W_{\mathrm{kinetic}}\tilde\Xi)$, at lines 56, 80, 264, 291. Then $\exp(-S)$ is the weight, the free scalar section's $\tfrac12$ is the same $\tfrac12$, and the statement "reproduces the classical action" loses its caveat.</p>
+<p><strong>This also settles $A_{\mathrm{cph}}$.</strong> In $-\tfrac12\langle\tilde\Xi,K\tilde\Xi\rangle$ the matrix is $2K$; in $-\tfrac12\langle\tilde\Xi,W\tilde\Xi\rangle$ with $S$ defined as above, the matrix is $W$. The boxed formula's $(\det W)^{-1/2}$ is then correct and $A_{\mathrm{cph}}=W_{\mathrm{kinetic}}$. Write that; $A_{\mathrm{cph}}$ is used at nine sites (36, 100, 102, 104, 117, 118, 120, 245, 274) and defined at none.</p>
+<h2 id="defect-3-math83-and-math84-referee-3-and-two-math85-for-math86">Defect 3. $\mathrm{Sc}$ and $2\,\mathrm{Re}\,\mathrm{Sc}$ (referee 3), and Two $\natural$ for $^{*}$</h2>
+<p><strong>The referee asked for $\mathrm{Sc}$ to become $2\,\mathrm{Re}\,\mathrm{Sc}$. The real defect is worse: two displays use the quaternion conjugate $\natural$, not the star.</strong> Line 243 writes the established action as $\int\mathrm{Sc}(\tilde\Xi^{\natural}W\tilde\Xi)$. Line 196 writes the Euclidean action as $\int\mathrm{Sc}(\tilde\Xi^{\natural}(-\Box_\Phi+m^{2})\tilde\Xi)$.</p>
+<p><strong>The corpus settles the pairing, and says why.</strong> <em>The Lagrangian and the Klein–Gordon Equation</em>: "the kinetic term of that action is the Hermitian bilinear $\mathrm{Sc}(\cdot^{*}\cdot)$, not the quaternionic bilinear $\mathrm{Sc}(\cdot^{\natural}\cdot)$; the second is complex and indefinite, and the difference is the first computation of the article", with $\mathrm{Sc}(A^{*}A)=\sum_{\imath}\lvert a_{\imath}\rvert^{2}$ and $\mathrm{Sc}(A^{\natural}A)=\sum_{\imath}a_{\imath}^{2}$.</p>
+<p><strong>Computed on a random field</strong> $\tilde\Xi=(1+2i,\,0.3-1.1i,\,-0.7+0.2i,\,1.4+0.5i)$, with central real $W=0.7$:</p>
+<p>$$
+\mathrm{Sc}(\tilde\Xi^{*}W\tilde\Xi)=6.328\quad(\text{real}),
+\qquad
+\mathrm{Sc}(\tilde\Xi^{\natural}W\tilde\Xi)=-1.372+3.122\,i .
+$$</p>
+<p>So the $\natural$ displays are complex, and line 198's "for the free theory $S_E\ge0$" is false as written. With $^{*}$ it is true: the Euclidean integrand is $K\sum\lvert Q_{\imath}\rvert^{2}$.</p>
+<p><strong>Line 243 is self-contradictory in one sentence.</strong> It says "the Hermitian form, read through the trace, is the scalar extraction" and then writes $\mathrm{Sc}(\tilde\Xi^{\natural}W\tilde\Xi)$.</p>
+<p><strong>Repair.</strong> Replace $\natural$ by $^{*}$ at lines 196, 243 and 244. No $\mathrm{Re}$ is then needed, because $\mathrm{Sc}(\tilde\Xi^{*}W\tilde\Xi)$ is real for central real $W$; the real part is what remains, and it is already real. If the author prefers the explicit real form, write $2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Xi^{*}W\tilde\Xi)$, consistently, and keep it at every site.</p>
+<h2 id="defect-4-the-gaussian-formulae-referee-4-and-a-factor-two-the-referee-did-not-see">Defect 4. The Gaussian Formulae (referee 4), and a Factor Two the Referee Did Not See</h2>
+<p><strong>The complex display is wrong by a factor two in the source exponent, not only in the free energy.</strong> Line 99 gives</p>
+<p>$$
+\int d^{n}\xi\,\exp(-\tfrac12\xi^{\dagger}K\xi+J^{\dagger}\xi+\xi^{\dagger}J)
+=\frac{(2\pi)^{n}}{\det A}\exp(J^{\dagger}A^{-1}J).
+$$</p>
+<p><strong>Checked numerically</strong>, $n=1$, $k=1.2$, $J=0.5$, by quadrature on a $4000^{2}$ grid: the integral is $7.94245$. The right-hand side with $\exp(2J^{\dagger}K^{-1}J)$ is $7.94245$. The display's $\exp(J^{\dagger}K^{-1}J)$ is $6.44877$. The factor $\tfrac12$ in the exponent doubles the source term; it does not leave it alone.</p>
+<p><strong>So the three statements must be separated.</strong></p>
+<p>$$
+\int d^{n}\xi\,e^{-\xi^{\dagger}K\xi+J^{\dagger}\xi+\xi^{\dagger}J}=\frac{(2\pi)^{n}}{\det K}e^{J^{\dagger}K^{-1}J},
+\qquad W-W_0=J^{\dagger}K^{-1}J ,
+$$</p>
+<p>$$
+\int d^{n}x\,e^{-\frac12 x^{T}Kx+J^{T}x}=(2\pi)^{n/2}(\det K)^{-1/2}e^{\frac12J^{T}K^{-1}J},
+\qquad W-W_0=\tfrac12J^{T}K^{-1}J .
+$$</p>
+<p><strong>The biquaternion field takes the real form</strong>, because its quadratic form is built from a real pairing. So $\tfrac12$ is right for the biquaternion Gaussian and for lines 111, 245 and 294. Lines 99-105 carry the complex display with a real-field free energy, and that is the mixing the referee names.</p>
+<p><strong>Repair.</strong> Print the two formulas apart, with their own free energies, and say in one clause that the biquaternion integral is the real one. Keep $\tfrac12$ in the biquaternion box.</p>
+<h2 id="defect-5-the-measure-referee-5-and-a-duplicated-index">Defect 5. The Measure (referee 5), and a Duplicated Index</h2>
+<p><strong>The measure displays one differential per complex coefficient.</strong> Line 224 writes $\prod_{x}\prod_{\imath}d\Xi_{\imath}(x)$ with $\Xi_{\imath}$ complex. The regulated measure on a complex coefficient is two real differentials:</p>
+<p>$$
+\mathcal{D}\tilde\Xi=\prod_{x}\prod_{\imath}d(\mathrm{Re}\,\Xi_{\imath})\,d(\mathrm{Im}\,\Xi_{\imath})
+=\prod_{x}\prod_{\imath}d\Xi_{\imath}\,d\Xi_{\imath}^{*} .
+$$</p>
+<p><strong>The mode-space product has a duplicated index.</strong> Line 226 writes $\prod_{\imath\in\{x,y,z\}}\prod_{\imath\in\{t,x,y,z\}}d\Xi_{\imath}(k)$: the same letter $\imath$ is bound twice in nested products, and the first product is not over modes. It should be $\prod_{k}\prod_{\imath}$.</p>
+<p><strong>Repair.</strong> Both, and one clause that the number of real differentials is eight per site, four per sector.</p>
+<h2 id="defect-6-the-fermionic-sign-referee-6-and-three-corrupted-matrices">Defect 6. The Fermionic Sign (referee 6), and Three Corrupted Matrices</h2>
+<p><strong>The sign is wrong against the corpus.</strong> Line 234 writes $\exp(+\tilde\Xi^{\dagger}iR\,\mathcal{F}\tilde\Xi)=\det\mathcal{F}$. <em>The Fermionic Path Integral</em> boxes the convention $\int\prod d\tilde\Xi^{\dagger}d\tilde\Xi\,\exp(-\tilde\Xi^{\dagger}M\tilde\Xi)=\det M$, verified there for a general complex $2\times2$ matrix. With the plus sign the result is $\det(-iR\mathcal{F})$, which is $\det\mathcal{F}$ only after the constant is restored. Since $R$ is an involution, the clean repair is to write the minus sign and keep $\det\mathcal{F}$.</p>
+<p><strong>Three matrices are corrupted.</strong> Lines 117, 236 and 298 separate rows with one backslash followed by a space instead of <code>\\</code>. This is the fault class of <code>audit-damaged-formulas.md</code>: "a matrix whose rows are separated by one backslash parses without complaint and renders as one row". The $3\times3$ $A_{\mathrm{cph}}$ published in the verification, and both copies of $\mathcal{F}$, currently render as a single row. The verification's numbers are right; its display of the matrix is not.</p>
+<p><strong>Repair.</strong> <code>\\</code> in all three, and a row-count check before the article is declared final.</p>
+<h2 id="defect-7-causal-completeness-referee-7">Defect 7. Causal Completeness (referee 7)</h2>
+<p><strong>The equivalence is not true, and the article leans on it twice.</strong> Line 208: "equivalently, when the boundary data on $\partial O$ determine the field throughout the region". Line 210: "Because $O_{\mathrm{cc}}=O$, the boundary data propagate to a definite interior configuration".</p>
+<p><strong>The first is a property of the causal complement; the second is a property of the field equation.</strong> $O_{\mathrm{cc}}=O$ says nothing about a well-posed Cauchy or characteristic problem. Determinism needs global hyperbolicity and a Cauchy surface, or a characteristic initial value problem on the null boundary. A double cone and a wedge are both causally complete and both globally hyperbolic, so the two coincide in the article's two examples; they do not coincide in general.</p>
+<p><strong>It also crosses the article's own boundary.</strong> The article's thesis is that the algebra supplies the interval and microcausality, while the region, the measure and the net are transcribed. Determinism from boundary data is a statement about the dynamics, so it is transcribed too, and the article should not present it as a consequence of $O_{\mathrm{cc}}=O$.</p>
+<p><strong>Repair.</strong> Replace "equivalently" by "in the two examples here, which are also globally hyperbolic, the boundary data fix the field"; and change line 210 to "the composition law is the path-integral statement, and it presupposes that the field equation has a well-posed boundary-value problem on $O$."</p>
+<h2 id="defect-8-units-referee-8">Defect 8. Units (referee 8)</h2>
+<p><strong>Three mass symbols stand within four lines.</strong> Line 160 uses $m^{2}$; line 163 uses $4\pi^{2}\nu_{\mathrm{eu}}^{2}+m^{2}$ and then $m^{2}c^{2}$; line 113 and line 293 use $m^{2}c^{2}$; the operator everywhere else uses $4\pi^{2}\nu_m^{2}$.</p>
+<p><strong>With the corpus's units they are not the same number.</strong> The corpus measures length in $r'_t=ct$ and fixes $\nu_m=mc/h$, so $4\pi^{2}\nu_m^{2}=(mc/\hbar)^{2}$ has dimensions of inverse length squared, and $m^{2}$ does not, unless $\hbar=c=1$. The article declares $\nu_m=mc/h$ at line 91 and never declares natural units.</p>
+<p><strong>Repair.</strong> Write $4\pi^{2}\nu_m^{2}$ in the Lorentzian displays and $4\pi^{2}\nu_{\mathrm{eu}}^{2}$ in the Euclidean ones, and drop $m^{2}$ and $m^{2}c^{2}$. If natural units are wanted, say so once; the corpus does not.</p>
+<p><strong>The same slip is in <em>The Functional Determinant</em>, whose one-loop display uses $m^{2}c^{2}$ beside $\tilde P_\Phi\tilde P_\Phi^{\natural}$.</strong> One decision covers both.</p>
+<h2 id="defect-9-notation-referee-9-and-10">Defect 9. Notation (referee 9 and 10)</h2>
+<p><strong>Two symbols carry four definitions in one article.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>site</th>
+<th>definition</th>
+<th>corpus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22, 288</td>
+<td>$\langle\tilde Q,\tilde Q_1\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q^{*}\tilde Q_1)$</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, <em>Product and Form Conventions</em></td>
+</tr>
+<tr>
+<td>78</td>
+<td>$\langle\tilde Q,\tilde Q_1\rangle_{*}=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q^{*}\tilde Q_1)$</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$</td>
+</tr>
+<tr>
+<td>300</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$</td>
+<td>agrees with the corpus</td>
+</tr>
+<tr>
+<td>300</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
+<td>agrees with the corpus, and contradicts 288</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the table contradicts itself</strong>: row 288 and row 300 define the same glyph differently, and the two differ by the factor $2$ and by a real part. The corpus has one convention for each of the four brackets, and the article's line 22 and line 78 both depart from it. Note also that the corpus's Hermitian form puts the star on the second slot, and the article's real form puts it on the first; they agree in value only by cyclicity plus the real part.</p>
+<p><strong>The word "plain" is used for the wrong object, twice.</strong> Line 56 and line 87: "The plain form, read as the plain pairing, is what makes the exponent a number". The corpus's plain pairing is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is complex; it is exactly what does <em>not</em> produce a real action. The operation the article means is the Hermitian pairing, $2\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q^{*}\tilde Q_1)$.</p>
+<p><strong>Repair.</strong> One subscript for the real form, used everywhere, for example $\langle\cdot,\cdot\rangle_{\mathbb{R}}$, defined once as $2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Xi^{*}\cdot)$; the plain bracket left to the corpus's meaning; and "the real part of the Hermitian pairing" in place of "the plain form" at 56, 87 and 20. Add $A_{\mathrm{cph}}$ to the table, or replace it by $W_{\mathrm{kinetic}}$ everywhere.</p>
+<h2 id="four-further-defects">Four Further Defects</h2>
+<p><strong>A. Line 244 states a false vanishing.</strong> "For a central kinetic operator the cross terms $\mathrm{Sc}(\tilde\Xi^{\natural}_-\tilde\Xi_{+})$ vanish identically over the sector bases." They do not. On the basis pair $\tilde\Xi_-=ie_t$, $\tilde\Xi_+=e_t$ the value is $iW$, and the maximum over the sixteen pairs is $0.7i$ in the check above. Only the real part vanishes, which is what the summary at line 268 says. The sentence must read "$2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Xi^{*}_-\tilde\Xi_{+})$ vanishes", and then line 268's "leftover complex cross part is purely imaginary" is the same statement made once.</p>
+<p><strong>B. "And central", line 268.</strong> A complex scalar part is central in $\mathbb{B}$ by definition, so the clause adds nothing to the real-part argument, and it is the only clause in the article that suggests a nonzero cross term survives. Drop it, or say "purely imaginary, and therefore absent from the real action".</p>
+<p><strong>C. The propagator display has no transform.</strong> Line 171 writes $\langle\xi(x)\xi(y)\rangle=1/(4\pi^{2}\nu_{\mathrm{eu}}^{2}+m^{2})$. The left side depends on $x-y$; the right side is a momentum-space kernel. It should be the Fourier integral with the $i\epsilon$ in the Lorentzian continuation, as the referee says.</p>
+<p><strong>D. Line 113's reason for the sign immunity.</strong> "A sign that leaves the determinant unchanged on the two-complex-dimensional module." A sign flip leaves a determinant unchanged on any module of even dimension, real or complex. The clause is right and its reason is wrong; delete the reason.</p>
+<h2 id="where-the-referee-is-right-without-qualification">Where the Referee Is Right Without Qualification</h2>
+<ul>
+<li><strong>The three established contributions are correctly separated</strong> from the transcribed ones, and the gap sentence is honest. Nothing to change.</li>
+<li><strong>The path-integral versus functional-integral distinction</strong> is correct, including the third kind, the boundary-value functional, and its restricted probability reading.</li>
+<li><strong>The sector-factorization statement is correct</strong> and is the article's algebraic result. The proof can be shortened to one line: for $a\in\mathbb{B}_{\Phi}$ and $b\in\mathbb{B}_{\Psi}$, $(ab)^{*}=b^{*}a^{*}=-ba$, so $\mathrm{Sc}(ab)=-\overline{\mathrm{Sc}(ab)}$ is purely imaginary and its real part vanishes.</li>
+<li><strong>The Euclidean rotation section</strong> is correct and consistent with <em>Interpretation of the Wick Rotation</em>.</li>
+</ul>
+<h2 id="conceptual-remarks-not-defects">Conceptual Remarks, Not Defects</h2>
+<p><strong>The factorisation is weaker than its framing.</strong> Once the action is the real form, the quadratic form is diagonal in the eight real coefficients, and the sectors are an orthogonal decomposition of $\mathbb{R}^{8}$ preserved by $W$. Block diagonality then holds for <em>any</em> orthogonal decomposition that $W$ preserves; the algebra's content is that $W$ is central, so it is scalar on every sector. The article's contrast with the non-central Dirac mass is the part that carries content, and it deserves the emphasis the referee asks for.</p>
+<p><strong>The sectors are not independent fields, and the article says so.</strong> Line 179 is right: $\mathbb{B}_{\Phi}=i\mathbb{B}_{\Psi}$, so $Z_0=Z_-Z_+$ is a change of variables in one integral, not a product over two fields. One clause at the boxed factorisation would prevent the misreading that the biquaternion scalar is two complex scalars.</p>
+<p><strong>The Lorentzian sign.</strong> With $W=\Box_\Phi-4\pi^{2}\nu_m^{2}$ and the Hermitian pairing, $\int\mathrm{Sc}(\tilde\Xi^{*}W\tilde\Xi)$ is minus the action of <em>The Lagrangian and the Klein–Gordon Equation</em>. The equation of motion is the same and the Euclidean weight is positive, so nothing breaks; but a reader comparing the two articles sees opposite overall signs, and one clause should say which sign convention the phase $\exp(i\theta_{\mathrm{act}})$ uses.</p>
+<h2 id="what-propagates-beyond-this-article">What Propagates Beyond This Article</h2>
+<p><strong>Three items cannot be settled inside this article alone.</strong></p>
+<ol>
+<li>
+<p><strong>The determinant power.</strong> The companion <em>The Functional Determinant</em> fixes $\det(\kappa e_t)|_{\text{module}}=\kappa^{2}$, $\Gamma_1=\tfrac12\sum\log(\tilde P_\Phi\tilde P_\Phi^{\natural}+m^{2}c^{2})^{2}=\sum\log(\dots)$, and a prefactor $\kappa^{-1}$. Those three are consistent with a module of <strong>one</strong> complex dimension. If the module is $\mathbb{C}^{2}$ (the ideal, four real), the prefactor is $\kappa^{-2}$ and $\Gamma_1=2\sum\log$. If the field is the algebra (eight real), it is $\kappa^{-4}$ and $4\sum\log$. The article under review follows the companion at $\kappa^{-1}$ and states the eight-real count at line 179. One of the two articles must move; the choice is the author's, and it changes no physics, only the normalisation of $Z_0$.</p>
+</li>
+<li>
+<p><strong>The complex Gaussian at line 99</strong> is used by <em>The Generating Functional</em> and <em>The Schwinger–Dyson Equations</em> through the same $A_{\mathrm{cph}}$. If it is corrected here, the same correction is due there, and $A_{\mathrm{cph}}$ should be defined once, in one article, and cited.</p>
+</li>
+<li>
+<p><strong>The mass symbol.</strong> See Defect 8.</p>
+</li>
+</ol>
+<h2 id="strategy">Strategy</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>site</th>
+<th>change</th>
+<th>priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>102, 108, 113, 177, 228</td>
+<td>one count: four complex, eight real, four real per sector; delete "two complex" and the spinor-module identification of the field</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>56, 80, 264, 291</td>
+<td>$S=\tfrac12\int\langle\tilde\Xi,W\tilde\Xi\rangle=\int\mathrm{Sc}(\tilde\Xi^{*}W\tilde\Xi)$</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>196, 243, 244</td>
+<td>$\natural\mapsto{}^{*}$; then no $\mathrm{Re}$ is needed</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>177, 245, 293</td>
+<td>determinant power $K^{-4}$ per mode, $K^{-2}$ per sector; make line 177 agree with line 245</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>99-106</td>
+<td>print the complex and the real Gaussian apart, with $J^{\dagger}K^{-1}J$ and $\tfrac12J^{T}K^{-1}J$</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>117, 236, 298</td>
+<td><code>\\</code> for the row separators; row-count check</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td>234</td>
+<td>minus sign in the Grassmann exponent</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>224-226</td>
+<td>two real differentials per complex coefficient; $\prod_{k}\prod_{\imath}$</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td>208, 210</td>
+<td>"equivalently" out; determinism is a property of the field equation, not of $O_{\mathrm{cc}}=O$</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>244</td>
+<td>real part vanishes, not the complex value</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>11</td>
+<td>22, 78, 288, 300</td>
+<td>one subscript for the real form; leave the corpus's plain bracket alone</td>
+<td><strong>required</strong></td>
+</tr>
+<tr>
+<td>12</td>
+<td>56, 87, 20</td>
+<td>"the real part of the Hermitian pairing", not "the plain form"</td>
+<td>advised</td>
+</tr>
+<tr>
+<td>13</td>
+<td>160-163, 113, 293</td>
+<td>$4\pi^{2}\nu_m^{2}$ or $4\pi^{2}\nu_{\mathrm{eu}}^{2}$ everywhere; declare units once or not at all</td>
+<td>advised</td>
+</tr>
+<tr>
+<td>14</td>
+<td>171</td>
+<td>the Fourier integral and the $i\epsilon$</td>
+<td>advised</td>
+</tr>
+<tr>
+<td>15</td>
+<td>68, 71, 134</td>
+<td>$\tilde\Xi_-\in\mathbb{B}_{\Phi}$, $\tilde\Xi_+\in\mathbb{B}_{\Psi}$</td>
+<td>advised</td>
+</tr>
+<tr>
+<td>16</td>
+<td>113</td>
+<td>drop the "two-complex-dimensional" reason for the sign immunity</td>
+<td>cosmetic</td>
+</tr>
+<tr>
+<td>17</td>
+<td>268</td>
+<td>drop "and central"</td>
+<td>cosmetic</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Items 1 to 11 are corrections.</strong> Items 1, 3, 4 and 6 change a displayed formula. Items 2 and 5 change a normalisation. No numerical check in the article changes; the verification's numbers (3.12, 8.9165, 23.964, 0.23824) are right as printed, and only the display of $A_{\mathrm{cph}}$ around them is damaged.</p>
+<p><strong>Items 1, 4 and 13 need a decision before they are written</strong>, because each touches a companion article: <em>The Functional Determinant</em> for the power and the mass symbol, <em>The Generating Functional</em> and <em>The Schwinger–Dyson Equations</em> for $A_{\mathrm{cph}}$.</p>
+<p><strong>Nothing was changed in the corpus.</strong> The article stands as it was reviewed.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
