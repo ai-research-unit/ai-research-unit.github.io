@@ -73,21 +73,21 @@
 <p><strong>Verdict: one real numerical error, one real physics gap, one false positive, and one item where the review's arithmetic is wrong.</strong> The structural claims all survive.</p>
 <h2 id="1-finding-one-math1-was-double-counted">1. Finding One: $g_*$ Was Double-Counted</h2>
 <p><strong>The article said</strong> $g_*=\underbrace{30}_{\text{the fifteen}}\times2+\ldots=60+28=88$.</p>
-<p><strong>The label and the number disagree.</strong> Fifteen gauge fields with two polarisations each are thirty states, and thirty states contribute thirty to $g_*$ — the definition is $g_*=\sum_B g_i+\tfrac78\sum_F g_i$ with $g_i$ already counting helicities. Writing $30\times2$ counts the polarisations twice.</p>
+<p><strong>The label and the number disagree.</strong> Fifteen connection fields with two polarisations each are thirty states, and thirty states contribute thirty to $g_*$ — the definition is $g_*=\sum_B g_i+\tfrac78\sum_F g_i$ with $g_i$ already counting helicities. Writing $30\times2$ counts the polarisations twice.</p>
 <p>$$
 15\times2+32\times\tfrac78=30+28=58 .
 $$</p>
 <p><strong>The cross-check that settles it</strong>: the Standard Model gives $28+90\times\tfrac78=106.75$, with the ninety being 45 Weyl fields at two states each — the same convention in which sixteen Weyl fields are thirty-two states, which the article's own table uses. <strong>So the article's $32$ is the helicity count and its $30$ must be one too.</strong></p>
 <p><strong>Fixed in three places</strong>: the display, the checks row, and the notation row. <strong>The review found this and then contradicted itself</strong> — its Strengths item 5 calls $60+28=88$ correct, and its issue 6 calls it wrong. <strong>The issue is right.</strong></p>
 <h2 id="2-finding-two-math12-was-missing-from-the-math13-argument">2. Finding Two: $\theta_4$ Was Missing From the $CP$ Argument</h2>
-<p><strong>The article argued</strong> "no $CP$ violation above $M_C$" from $C$ and $P$ separately holding in the gauge sector.</p>
+<p><strong>The article argued</strong> "no $CP$ violation above $M_C$" from $C$ and $P$ separately holding in the connection sector.</p>
 <p><strong>The inference does not cover the one term that is $CP$-odd.</strong> $\theta_4\operatorname{tr}(F\tilde F)$ is $P$-odd and $C$-even, so $C\cdot P$ does not remove it: a product argument only kills what is odd under exactly one of the two.</p>
 <p><strong>What does remove it is the article's own first claim.</strong> The fermions are massless above $M_C$, so the axial rotation that shifts $\theta_4$ costs nothing and the angle is removable. <strong>The article's own premise therefore upgrades its conclusion</strong>, and the missing sentence was the bridge.</p>
 <p><strong>The review reached the right gap and the wrong fix.</strong> It proposed "no <em>perturbative</em> $CP$ violation; $\theta_4$ effects are $e^{-S}\sim10^{-47}$". That is the old instanton article's position, and the instanton article now says the opposite: the angle is <strong>redundant, not suppressed</strong>, so there is no $\theta_4$ dependence to weight. <strong>A caveat at $10^{-47}$ would have been weaker than the truth.</strong></p>
 <p><strong>Added as a sixth bullet</strong>, with the sign of the argument — $P$-odd, $C$-even — and a pointer to the instanton article.</p>
 <h2 id="3-finding-three-the-mass-matrix-count">3. Finding Three: The Mass Matrix Count</h2>
 <p><strong>The article said</strong> "the group does not forbid it; the model sets $m=0$".</p>
-<p><strong>True, and the count of tunings was missing.</strong> $m_{ij}$ has four complex entries; the copy index is ungauged, so rotations among the two $\mathbf4$ copies against the two $\bar{\mathbf4}$ copies are symmetries, and the invariants of $m$ are its two singular values. <strong>So $m=0$ is two conditions, not one.</strong></p>
+<p><strong>True, and the count of tunings was missing.</strong> $m_{ij}$ has four complex entries; the copy index is not made local, so rotations among the two $\mathbf4$ copies against the two $\bar{\mathbf4}$ copies are symmetries, and the invariants of $m$ are its two singular values. <strong>So $m=0$ is two conditions, not one.</strong></p>
 <p><strong>The review says four real tunings, or two complex.</strong> Both are wrong: $2\times2$ complex is four complex entries, and the physical count is two, not four, because of the field redefinitions. <strong>The review's sentence would have introduced a new error while fixing a real gap.</strong></p>
 <p><strong>Written as</strong>: four complex entries, two singular values, two masses set to zero.</p>
 <h2 id="4-finding-four-the-math39-bullet-is-correct">4. Finding Four: The $C$ Bullet Is Correct</h2>
@@ -105,7 +105,7 @@ $$</p>
 <tbody>
 <tr>
 <td>"nothing in the Lagrangian refers to $i$"</td>
-<td>fixed to "nothing in the <em>gauge</em> Lagrangian", with the mass term named as the exception</td>
+<td>fixed to "nothing in the <em>connection</em> Lagrangian", with the mass term named as the exception</td>
 </tr>
 <tr>
 <td>ledger row "no generation constraint" marked cost</td>

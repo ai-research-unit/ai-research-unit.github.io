@@ -119,7 +119,7 @@
 <tr>
 <td>register, boundary, ledger, frame-scorecard as bookkeeping</td>
 <td>"the ledger shows", "the register records", "the boundary is respected"</td>
-<td>the noun refers to the corpus's own accounting, not to a physical object or a gauge-invariant statement</td>
+<td>the noun refers to the corpus's own accounting, not to a physical object or a locally invariant statement</td>
 </tr>
 <tr>
 <td>revision history</td>
@@ -166,7 +166,7 @@
 <ul>
 <li><strong>Zero <code>**</code> in the finished file.</strong> This is the single mechanical target of the pass.</li>
 <li><strong>The title keeps whatever form the file already has.</strong> <code># Title</code> stays; <code># __Title__</code> stays. A cleaning never changes the title's markup, because <code>build.py</code> reads the first heading with <code>re.match(r"#\s*__(.+?)__\s*$", s)</code> and a title that loses its underscores changes the page title.</li>
-<li><strong>A bold lead-in becomes a plain sentence, and the paragraph continues.</strong> <code>**1.1 The group and the content.** The gauge group is</code> becomes <code>1.1 The group and the content. The gauge group is</code>. The label is kept because it is the section's number; only the weight goes.</li>
+<li><strong>A bold lead-in becomes a plain sentence, and the paragraph continues.</strong> <code>**1.1 The group and the content.** The symmetry group is</code> becomes <code>1.1 The group and the content. The symmetry group is</code>. The label is kept because it is the section's number; only the weight goes.</li>
 <li><strong>A bold phrase inside a sentence loses the asterisks and keeps the words.</strong> If the emphasis was carrying a claim — <code>**with** $Y=T_{3R}+\tfrac12(B-L)$</code> — the claim must survive in plain words, so rewrite the clause rather than stripping it: "and with $Y=T_{3R}+\tfrac12(B-L)$".</li>
 <li><strong>Italic is allowed sparingly</strong>, for a quoted rule or a quoted verdict, never as a substitute for bold emphasis.</li>
 <li><strong>Nothing inside <code>$...$</code> is touched.</strong> <code>build.py</code> protects math with a regex before Markdown conversion, so <code>_</code> and <code>*</code> inside math never became bold; keep them exactly as they are.</li>
