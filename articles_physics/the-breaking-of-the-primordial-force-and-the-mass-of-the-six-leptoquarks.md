@@ -65,6 +65,16 @@ $$
 D=\operatorname{diag}(-3,1,1,1),\qquad iD=\operatorname{diag}(-3i,i,i,i).
 $$
 
+**The vacuum is a recombination of the three diagonal generators, and this is the one place where that fact has content.** Above $M_C$ the three diagonals are declared symmetric in the three vector units,
+$$
+T_x=i\bigl(E_{xx}-E_{tt}\bigr),\qquad T_y=i\bigl(E_{yy}-E_{tt}\bigr),\qquad T_z=i\bigl(E_{zz}-E_{tt}\bigr),
+$$
+and **none of them is the vacuum**. The vacuum is their sum,
+$$
+iD=T_x+T_y+T_z=\operatorname{diag}(-3i,i,i,i),
+$$
+so the direction that the condensation selects is not a member of the frame that the unbroken phase prints: **it is what the frame adds up to, and the coefficient of each of the three is one.** This is why the lepton line can appear at the transition without having been named above it, and why the corpus no longer needs a corner array to hold $B'$: $B'$ is the sum. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves that no such frame exists in $\mathfrak{su}(3)$, and that the fourth line is what makes it possible here.
+
 **The scale is free and the direction is not.** Any multiple of $D$ gives the same breaking. **So the condensate contributes one dimensionful number — its magnitude $v$ — and one discrete choice, the sign, which changes nothing because every mass is quadratic in $D$.** That is the entire freedom of the first step.
 
 **Why the number $4$ will appear later.** The trace condition is not decoration: it is what turns "the scalar takes a value" into "the scalar takes the only value available". With $q$ fixed the corner is forced. **The $4$ in $32=2\cdot4^{2}$ is exactly $q-\ell=1-(-3)$, the one departure from a multiple of the identity that a trace-free diagonal direction can have.** Change the split of the quartet and the pattern of six and nine changes with it; keep the split and there is nothing left to choose.
@@ -103,15 +113,14 @@ $$
 [iD,A_{at}]=+4i\,A_{at},\qquad [iD,iS_{at}]=+4i\,iS_{at}.
 $$
 
-**The three diagonal directions are in the kernel.** They are linear combinations of $iD$ itself and of the two trace-free colour diagonals, and $[iD,iD]=0$.
+**The three diagonal directions are in the kernel, and the frame makes that visible rather than accidental.** $D$ is diagonal, so it commutes with every diagonal matrix, hence $[iD,T_j]=0$ for $j=x,y,z$ and $[iD,iD]=0$. **The three symmetric directions survive the breaking individually**, and what the broken phase calls $T^{c}_{3}$ and $T^{c}_{8}$ are the two differences inside that surviving triple while $B'$ is the surviving sum.
 
 **Adding it up.**
 
 | block | directions | eigenvalue of $\operatorname{ad}(iD)$ |
 | --- | --- | --- |
 | colour planes $A_{jk},iS_{jk}$, $j,k\in\{x,y,z\}$ | $6$ | $0$ |
-| the two trace-free colour diagonals | $2$ | $0$ |
-| $iD$ itself | $1$ | $0$ |
+| the three frame directions $T_j=iM_j$ | $3$ | $0$ |
 | $A_{ta},iS_{ta}$ | $6$ | $-4i$ on three, $+4i$ on three |
 | **total** | $15$ | $0^{9}\oplus(-4i)^{3}\oplus(+4i)^{3}$ |
 
@@ -231,8 +240,8 @@ that is $8v^{2}$ six times, $32v^{2}$ four times, $72v^{2}$ twice and three zero
 | surviving direction | count | name |
 | --- | --- | --- |
 | $A_{jk},iS_{jk}$ for $j,k\in\{x,y,z\}$ | $8$ | gluons |
-| $iD$ | $1$ | $B'$ |
-| the two trace-free colour diagonals | counted in the eight | $\lambda_3,\lambda_8$ |
+| $iD=T_x+T_y+T_z$ | $1$ | $B'$, the sum of the surviving frame |
+| the three frame directions $T_j$ | $3$, of which two are in the eight | $B'$ is the sum; $\lambda_3,\lambda_8$ are the two differences |
 
 **Eight gluons and one abelian vector.** $\mathfrak{u}(3)=\mathfrak{su}(3)\oplus\mathfrak{u}(1)$ is $8+1=9$, and the corpus's $B'$ is the abelian one — **the fourth-colour direction that survives because colour is a stabiliser and is therefore not broken.**
 
@@ -318,14 +327,15 @@ The rank is not reduced. Six dimensions leave and the torus stays; that is why t
 
 | symbol | meaning |
 | --- | --- |
-| $iD$ | the condensate $\operatorname{diag}(-3i,i,i,i)$, the vacuum direction |
+| $iD$ | the condensate $\operatorname{diag}(-3i,i,i,i)$, the vacuum direction, equal to $T_x+T_y+T_z$ |
+| $T_j$ | $iM_j=i(E_{jj}-E_{tt})$, the three diagonal generators, the symmetric frame |
 | $\operatorname{ad}(iD)$ | the map $X\mapsto[iD,X]$, whose spectrum squares into the mass matrix |
 | $\mathfrak m$ | the sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, the $\pm4i$ eigenspace |
 | $X,\bar X$ | a leptoquark and its conjugate, $Q=\pm\tfrac23$, colour $\mathbf3$ or $\bar{\mathbf3}$ |
 | $v$ | the magnitude of the condensate, the unit of the adjoint mass matrix |
 | $v_C$ | the condensate in the normalisation $Ξ_0=v_CD$, where $M_X^{2}=16g_4^{2}v_C^{2}$, that is $v_C=\sqrt2\,v/g_4$ |
 | $\mathfrak{u}(3)$ | $\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L}$, the kernel, dimension $9$ |
-| $B'$ | the surviving abelian vector, the $iD$ direction |
+| $B'$ | the surviving abelian vector, the $iD$ direction, the sum of the three frame directions |
 
 ## Further Reading
 

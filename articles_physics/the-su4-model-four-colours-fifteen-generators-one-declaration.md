@@ -37,7 +37,7 @@ $$
 | --- | --- | --- |
 | real antisymmetric planes $A_{jk}$ | $6$ | one per unordered pair |
 | imaginary symmetric planes $iS_{jk}$ | $6$ | one per unordered pair |
-| trace-free diagonals | $3$ | $iD$ and two colour diagonals |
+| trace-free diagonals | $3$ | $iM_{x}$, $iM_{y}$, $iM_{z}$, the symmetric frame |
 | **total** | $\mathbf{15}$ | $\mathfrak{su}(4)$ |
 
 **Six pairs, two arrays per pair, three diagonals: $12+3=15$.** The count is not a choice. There are $\binom42=6$ pairs of four indices; each pair carries a real and an imaginary array; and a trace-free diagonal has three dimensions.
@@ -66,7 +66,7 @@ $$
 
 **Read the split as a fate list.** The eight survive every breaking of the model as gluons. The one survives as the $B-L$ vector and later mixes. **The six are the only coloured massive vectors in the theory — massive below $M_C$, and massless above it, like every other vector of the fifteen**, and they are what a leptoquark search looks for.
 
-**The rank.** A maximal torus of $\mathfrak{su}(4)$ has dimension three. It is spanned by $iD=\operatorname{diag}(-3i,i,i,i)$ and the two trace-free colour diagonals. **Rank three, and no breaking of this group reaches rank five** — not because of dynamics, but because a subalgebra never outranks its algebra. **That single line is why two weak factors cannot be pieces of this one.**
+**The rank.** A maximal torus of $\mathfrak{su}(4)$ has dimension three. It is spanned by the three diagonal generators $iM_{j}=i(E_{jj}-E_{tt})$, which the permutation of $x,y,z$ permutes, and $iD=i\sum_{j}M_{j}$ is a direction in it and not a fourth generator ([The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html)). **Rank three, and no breaking of this group reaches rank five** — not because of dynamics, but because a subalgebra never outranks its algebra. **That single line is why two weak factors cannot be pieces of this one.**
 
 ## The Sixteen, and the Copy Index
 
@@ -332,7 +332,7 @@ $$
 | $\mathfrak{so}(4)$ inside the fifteen | $\operatorname{span}\{A_{ab}\}$ | $\dim6$, rank $2$, closed |
 | $[\mathfrak k_L,\mathfrak k_R]$ | all nine pairs | $0$ |
 | the condensate on $\mathfrak{so}(4)$ | $2(1-(-3))^{2}$ on $A_{ta}$, $0$ on $A_{jk}$ | $32v^{2}$ and $0$ |
-| the trace norms | $\operatorname{tr}(A^{2})$, $\operatorname{tr}(iD)^{2}$ | $-2$, $-12$ |
+| the trace norms | $\operatorname{tr}(A^{2})$, $\operatorname{tr}(M_{j}^{2})$, $\operatorname{tr}(D^{2})$ | $-2$, $-2$, $-12$ |
 
 ## Distinctions That Are Easy to Lose
 

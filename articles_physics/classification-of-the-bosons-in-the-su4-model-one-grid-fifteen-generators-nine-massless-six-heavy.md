@@ -67,8 +67,7 @@ $$
 | --- | --- | --- | --- | --- |
 | the $t$ row and column, off the corner | $3+3=6$ | $6$ | $X^{r},X^{g},X^{b}$ and $\bar X^{r},\bar X^{g},\bar X^{b}$ | the leptoquark sextet |
 | the $3\times3$ colour block | $9$ | $8$ | $g_{1}\dots g_{8}$ | the gluon octet |
-| the $(t,t)$ corner | $1$ | $1$ | $B'$ | the $B-L$ boson |
-| the four diagonal cells | $4$ | $3$ | $B'$, $T^{c}_{3}$, $T^{c}_{8}$ | the Cartan, after the trace is removed |
+| the four diagonal cells | $4$ | $3$ | $M_{x},M_{y},M_{z}$ | the Cartan: three generators, each on two cells, the corner shared by all three; the trace removed |
 
 $$
 \underbrace{6}_{\text{mixed cells}}+\underbrace{9}_{3\times3}+\underbrace{1}_{(t,t)}=16 ,
@@ -76,7 +75,7 @@ $$
 \underbrace{6}_{\text{leptoquarks}}+\underbrace{8}_{\text{gluons}}+\underbrace{1}_{B-L}=15 .
 $$
 
-**That display is the whole of the model's decomposition, and it is a picture of $15=8+1+6$.** The three colour planes $\{r,g\},\{r,b\},\{g,b\}$ hold the six off-diagonal gluons, two per plane. **The three mixed planes $\{t,r\},\{t,g\},\{t,b\}$ hold the six leptoquarks, two per plane.** The $3\times3$ colour block's diagonal holds the two Cartan directions of colour, and the $(t,t)$ corner holds the one generator that makes the trace vanish. **Those two names are the broken phase's, and §*The Names, and Which Phase They Belong To* below says exactly what they are on deposit for.**
+**That display is the whole of the model's decomposition, and it is a picture of $15=8+1+6$.** The three colour planes $\{r,g\},\{r,b\},\{g,b\}$ hold the six off-diagonal gluons, two per plane. **The three mixed planes $\{t,r\},\{t,g\},\{t,b\}$ hold the six leptoquarks, two per plane.** The $3\times3$ colour block's diagonal and the $(t,t)$ corner together hold the three Cartan directions, and **no single generator holds the corner**: each of the three occupies the corner and one colour cell, which is why there are four diagonal cells and three diagonal generators. **The sum of the three, $D=M_x+M_y+M_z$, is the direction that makes the trace vanish, and it is a sum and not a member.** **Those two names are the broken phase's, and §*The Names, and Which Phase They Belong To* below says exactly what they are on deposit for.**
 
 ## How to Read a Cell
 
@@ -107,7 +106,7 @@ $$
 
 **The labels of the grid are the corpus's four algebra labels.** $t$ is $e_t$, the temporal unit, and $x,y,z$ are $e_x,e_y,e_z$; so the row written $t$ is the temporal line and the three written $x,y,z$ are the colour directions. **The change of letter is declaration (A) and nothing more: the lepton line is the temporal line.**
 
-**The corner is forced, and that is charge quantisation.** Read the diagonal cells as the four eigenvalues of the corner's generator, so that the grid's diagonal is
+**The corner is forced, and that is charge quantisation.** Read the diagonal cells as the four eigenvalues of the vacuum direction $D=M_x+M_y+M_z$, so that the grid's diagonal is
 
 $$
 B-L\ \longrightarrow\ \operatorname{diag}(-3,\,1,\,1,\,1)=D .
@@ -204,18 +203,18 @@ $$
 
 **The only coloured massive states.** The six leptoquarks are the only coloured massive states in the theory. **Colour is never broken**, so the objects that carry colour and mass at once are exactly the six that mix the lepton line with the colour lines.
 
-## The Seven Cells Touching the $t$ Index
+## The Nine Generators Touching the $t$ Index
 
-**One arrangement fact, and it is the grid's own.** Seven generators have a nonzero entry in the $t$ row or the $t$ column. **In the grid they are visible without any computation**: everything in the $t$ row, everything in the $t$ column, and the corner.
+**One arrangement fact, and it is the grid's own.** Nine generators have a nonzero entry in the $t$ row or the $t$ column. **In the grid they are visible without any computation**: everything in the $t$ row, everything in the $t$ column, and the three diagonal directions, each of which occupies the corner and one colour cell.
 
 | what it does with the $t$ line | cells | count | names |
 | --- | --- | --- | --- |
-| acts on it as a phase | $(t,t)$ | $1$ | $B'$ |
 | carries it out into colour | the $t$ column below the corner | $3$ | $X^{r},X^{g},X^{b}$ |
 | carries colour into it | the $t$ row right of the corner | $3$ | $\bar X^{r},\bar X^{g},\bar X^{b}$ |
-| neither | the $3\times3$ colour block | $8$ | $g_{1}\dots g_{8}$ |
+| reads it without moving it | the corner, shared by all three | $3$ | $M_{x},M_{y},M_{z}$; their sum is $B'$ |
+| does not touch it | the $3\times3$ colour block | $8$ | $g_{1}\dots g_{8}$ |
 
-$1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So the sextet is exactly the set of connections that can change the lepton number, the corner measures it, and the eight gluons are the block that cannot.**
+$3+3+3=9$, and the last $3$ is the diagonal. **So the sextet is exactly the set of connections that can change the lepton number, the three diagonal directions read it, and the eight gluons are the block that cannot.** **The count of nine is the frame's; in the colour-adapted basis the reading set is written as one array $iD$ and two colour diagonals, and $7$ is that basis' arithmetic, not the algebra's.** What is invariant is the function: six move the lepton line, three read it, eight neither.
 
 > **What this is not.** The $t$ index is the algebra's time unit, so "touching the $t$ index" is the algebra's own statement. **It does not follow that these seven are spacetime objects**: they are internal redundant directions that happen to touch the coordinate $e_t$, and the identification of the four coordinates with colour is the declaration.
 
@@ -223,7 +222,7 @@ $1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So t
 
 **The first misreading is a count.** "The fifteen are the strong interaction, and the six of the two $\mathrm{SU}(2)$'s are the weak one" is wrong in both halves, and the two errors are of different kinds.
 
-Of the fifteen, **eight are gluons, one is the $B-L$ boson $B'$ and six are leptoquarks**. Seven of the fifteen are therefore not the strong interaction, and the correct sentence is exact: *eight of the fifteen are the gluons; one is the $B-L$ boson, the corner array $iD$; six are leptoquarks.*
+Of the fifteen, **eight are gluons, one is the $B-L$ boson $B'$ and six are leptoquarks**. Seven of the fifteen are therefore not the strong interaction, and the correct sentence is exact: *eight of the fifteen are the gluons; one is the $B-L$ boson, the sum $D=M_x+M_y+M_z$ of the three diagonal arrays; six are leptoquarks.* **The seven is a count of functions and not of arrays: the three diagonal arrays supply the eight's two Cartan directions and $B'$ at once.**
 
 **The second error is that the six are not one object.** The six of the mixed band are not the six of the two $\mathrm{SU}(2)$'s. Each half is a combination of one mixed plane and one colour plane,
 
@@ -377,7 +376,7 @@ Fifteen, and not twenty-one at this scale. **The four particles $W^{\pm}$, $Z$ a
 
 ## Summary
 
-**One grid, sixteen cells, fifteen generators, three blocks.** Six leptoquarks in the mixed band, eight gluons in the colour square, $B'$ in the corner, and the trace removed by the definition of $\mathrm{SU}(4)$.
+**One grid, sixteen cells, fifteen generators, three blocks.** Six leptoquarks in the mixed band, eight gluons in the colour square, $B'$ in the diagonal, and the trace removed by the definition of $\mathrm{SU}(4)$. **The diagonal holds three generators, not one, and $B'$ is their sum.**
 
 **The corner is forced and that is charge quantisation.** $B-L=\tfrac13\operatorname{diag}(-3,1,1,1)$, with $-3$ equal to minus the colour trace, and the vanishing trace is the same statement.
 
@@ -387,14 +386,15 @@ Fifteen, and not twenty-one at this scale. **The four particles $W^{\pm}$, $Z$ a
 
 **The photon, the $Z$, the $W$'s and the $Z_R$ are absent, and their absence is the frame.** They need two weak factors, three neutral directions, a second vacuum and a mixing angle — **all of them born at the transition, none of them a cell of this grid.**
 
-**Seven cells touch the lepton line**, and that seven is the sextet plus the corner: **exactly the bosons that can change the lepton number, and the one that measures it.**
+**Nine generators touch the lepton line**, six that carry it into colour and three that read it: **exactly the connections that can change the lepton number, and the diagonal directions that measure it.** **The seven of the colour-adapted basis is the same physics written with $B'$ as one array; the frame prints it as three.**
 
 ## Summary of Notation
 
 | symbol | meaning |
 | --- | --- |
-| $B'$, $C$ | the $(t,t)$ field, the $B-L$ vector |
-| $D=\operatorname{diag}(-3,1,1,1)$ | the corner's generator, traceless |
+| $B'$, $C$ | the $B-L$ vector, the sum of the three diagonal directions |
+| $D=\operatorname{diag}(-3,1,1,1)$ | $M_x+M_y+M_z$, the traceless direction the breaking selects |
+| $M_{j}=E_{jj}-E_{tt}$ | the three diagonal generators, the symmetric frame |
 | $X^{\alpha}$, $\bar X^{\alpha}$ | the leptoquark and its reverse amplitude, $\alpha=r,g,b$ |
 | $g_{1}\dots g_{8}$ | the gluon octet |
 | $T^{c}_{3}$, $T^{c}_{8}$ | the two colour Cartans |

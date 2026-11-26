@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Everything on this page is built from six arrays.** The six are the axis-free arrays of left and right multiplication by the three vector units $\vec e_x,\vec e_y,\vec e_z$. With the two identities of the scalar unit they are eight arrays, and every one of the fifteen generators is one of three operations applied to them: **halve one array**, **multiply one array by $i$**, or **add and subtract two arrays** (three, once, for the corner). No array below is chosen, and no array below is a Pauli array or a gamma array. **The six halved arrays are printed here too, and they are not generators**: they are the six planes of $\mathfrak{so}(4)$, a real subalgebra of the fifteen, and §*Part I* states exactly what they are.
+**Everything on this page is built from six arrays.** The six are the axis-free arrays of left and right multiplication by the three vector units $\vec e_x,\vec e_y,\vec e_z$. With the two identities of the scalar unit they are eight arrays, and every one of the fifteen generators is one of three operations applied to them: **halve one array**, **multiply one array by $i$**, or **add and subtract two arrays** (two, once, for each diagonal). No array below is chosen, and no array below is a Pauli array or a gamma array. **The six halved arrays are printed here too, and they are not generators**: they are the six planes of $\mathfrak{so}(4)$, a real subalgebra of the fifteen, and §*Part I* states exactly what they are.
 
 **The order of the article is the order of the construction.** §*Part I* prints the six arrays of $\mathfrak{so}(4)$, which are the raw arrays halved. §*Part II* builds the fifteen of $\mathfrak{su}(4)$ in three steps: the eight arrays, the sixteen words, the six pairs. §*Part III* reads the result back: one table of properties, one boson per array, and the mass each one gets.
 
@@ -259,21 +259,27 @@ $$
 A_{yz}=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0\end{pmatrix},\qquad iS_{yz}=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & i \\ 0 & 0 & i & 0\end{pmatrix}
 $$
 
-**And the three diagonals, which are not paired by the rule.** The diagonal words are $W_{jj}$, so they are taken whole, in one sum and two successive differences, and **all three carry the factor $i$ of the nine**:
+**And the three diagonals, which the same rule produces.** The diagonal takes the two words of the pair $\{t,j\}$ and their half difference, in the three words $W_{tt}$, $W_{jj}$, and **all three carry the factor $i$ of the nine**:
 $$
-iD=i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr),\qquad
-d_2=\tfrac i2\bigl(W_{yy}-W_{xx}\bigr),\qquad
-d_3=\tfrac i2\bigl(W_{zz}-W_{yy}\bigr).
+M_j=\tfrac12\bigl(W_{tt}-W_{jj}\bigr),\qquad G_j=iM_j,\qquad j=x,y,z .
 $$
 $$
-iD=\begin{pmatrix}-3i & 0 & 0 & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & 0 & 0 & i\end{pmatrix}
+iM_x=\begin{pmatrix}-i & 0 & 0 & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0\end{pmatrix},\qquad iM_y=\begin{pmatrix}-i & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0\end{pmatrix},\qquad iM_z=\begin{pmatrix}-i & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & i\end{pmatrix}
 $$
 
+**The three are the frame, and the trace direction is their sum and not a fourth member.**
 $$
-d_2=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & -i & 0 \\ 0 & 0 & 0 & 0\end{pmatrix},\qquad d_3=\begin{pmatrix}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & 0 & 0 & -i\end{pmatrix}
+iM_x+iM_y+iM_z=iD=\begin{pmatrix}-3i & 0 & 0 & 0 \\ 0 & i & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & 0 & 0 & i\end{pmatrix}
 $$
+**The permutation of $x,y,z$ permutes the three of them**, because $W_{tt}$ is common to all three and each carries only its own $W_{jj}$; the sum, being fixed, is the direction the breaking singles out. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) takes this apart, including why $\mathfrak{su}(3)$ cannot do the same.
 
-**The factor $i$ on the diagonals is the factor the nine planes carry, and a construction that drops it produces a real Hermitian array that is not in $\mathfrak{su}(4)$.** Written without the $i$, $D=W_{xx}+W_{yy}+W_{zz}$ is the real diagonal $\operatorname{diag}(-3,1,1,1)$; **the generator is $iD$, and $D$ is the array that carries $B-L$**, with $B-L=\tfrac13D$ on $\mathbf4$.
+**The factor $i$ on the diagonals is the factor the nine planes carry, and a construction that drops it produces a real Hermitian array that is not in $\mathfrak{su}(4)$.** Written without the $i$, $M_j=E_{jj}-E_{tt}$ is a real diagonal with entries $\pm1$ and $0$, and $D=\sum_jM_j$ is the real diagonal $\operatorname{diag}(-3,1,1,1)$; **the generators are $iM_j$, the generator of the trace direction is $iD$, and $D$ is the array that carries $B-L$**, with $B-L=\tfrac13D$ on $\mathbf4$.
+
+**The broken-phase names are combinations of the frame, and the two relations are the whole change of label.**
+$$
+d_2=\tfrac i2\bigl(M_x-M_y\bigr),\qquad d_3=\tfrac i2\bigl(M_y-M_z\bigr),
+$$
+so the two colour diagonals $T^{c}_{3}$, $T^{c}_{8}$ are the two differences and $B'$ is the sum, exactly as before; what changes is that the frame does not put $iD$ in the list.
 
 **One array worked from end to end, because the mechanism is worth seeing once.**
 $$
@@ -301,7 +307,7 @@ $$
 
 **Fifteen generators, six halves.** The six relations are independent, so the six add no direction: the rank over $\mathbb{Q}(i)$ — equivalently over $\mathbb{R}$, the entries being Gaussian integers — is fifteen with them and fifteen without them, and each of the six is distinct from the fifteen. **Both statements are needed and neither is a defect**: one array per generator, and six arrays that are two-term sums of the other fifteen.
 
-**The normalisation, said once.** The fifteen are Gaussian-integer arrays, every entry in $\{0,\pm1,\pm i,\pm3i\}$ — the only entry of modulus $\ne1$ is the $-3i$ of the corner — with $\operatorname{tr}(X^{\dagger}X)=2$, except the corner, which has $12$. The six are real half-integer arrays, entries in $\{0,\pm\tfrac12\}$, with $1$. **No display mixes them**, and every relation above holds with the halves as written.
+**The normalisation, said once.** The fifteen are Gaussian-integer arrays, every entry in $\{0,\pm1,\pm i\}$, with $\operatorname{tr}(X^{\dagger}X)=2$ on all fifteen. **The entry $-3$ survives only in the sum**, $D=M_x+M_y+M_z$, which is not a generator of the list, and its norm $|D|^{2}=12$ is the norm of that sum and not of any member. The six are real half-integer arrays, entries in $\{0,\pm\tfrac12\}$, with $1$. **No display mixes them**, and every relation above holds with the halves as written.
 
 ## Part III. The Properties of the Fifteen, and the Boson in Each
 
@@ -313,8 +319,8 @@ $$
 | --- | --- | --- | --- | --- | --- | --- |
 | real plane $\{j,k\}$ | $A_{jk}$, $6$ | $0,\pm1$ | $2$ | $2$ | $0,0,\pm i$ | a real rotation of the plane $\{j,k\}$ |
 | imaginary plane $\{j,k\}$ | $iS_{jk}$, $6$ | $0,\pm i$ | $2$ | $2$ | $0,0,\pm i$ | complex, unitary, $\det=1$ |
-| the corner | $iD$, $1$ | $-3i$, $i$ | $4$ | $12$ | $-3i,i,i,i$ | four phases |
-| colour diagonals | $d_2,d_3$, $2$ | $0,\pm i$ | $2$ | $2$ | $0,0,\pm i$ | two phases, two fixed lines |
+| diagonal frame | $iM_x,iM_y,iM_z$, $3$ | $0,\pm i$ | $2$ | $2$ | $0,0,\pm i$ | two phases, two fixed lines |
+| the sum of the frame | $iD=i\sum_jM_j$, not listed | $-3i$, $i$ | $4$ | — | $-3i,i,i,i$ | four phases |
 | left triple | $T^{L}_{a}$, $3$ | $0,\pm\tfrac12$ | $4$ | $1$ | $\pm\tfrac i2$ twice | a real rotation by $\tfrac{\theta}{2}$ of two planes |
 | right triple | $T^{R}_{a}$, $3$ | $0,\pm\tfrac12$ | $4$ | $1$ | $\pm\tfrac i2$ twice | the same, one plane reversed |
 
@@ -327,11 +333,15 @@ $$
 $$
 **At $\theta=0.4$ the first gives $(0.921061,\,-0.389418,\,0,\,0)$**, and $\exp(\theta A_{tx})$ fixes $e_y$ and $e_z$. **The half-angle in the second is the half in the definition of $T^{L}_{x}$ and nothing else.** $T^{L}_{x}$ turns both its planes by $\tfrac{\theta}{2}$ in the same sense; $T^{R}_{x}$ turns $\{t,x\}$ by $\tfrac{\theta}{2}$ and $\{y,z\}$ by $-\tfrac{\theta}{2}$.
 
-**The Gram, and the one entry that is not orthogonal.** The fifteen are pairwise orthogonal in the trace form except one entry,
+**The Gram, and the three entries that are not orthogonal.** The fifteen are pairwise orthogonal in the trace form except the three of the frame,
 $$
-\operatorname{tr}(d_2d_3)=+1,
+\operatorname{tr}\bigl(M_jM_k\bigr)=2\delta_{jk}+\bigl(1-\delta_{jk}\bigr),\qquad \operatorname{tr}\bigl(t_jt_k\bigr)=\tfrac12\delta_{jk}+\tfrac14\bigl(1-\delta_{jk}\bigr),
 $$
-**which is the array form of the statement that a colour basis is a choice and the algebra is not.** The six halves are not orthogonal to the fifteen, and cannot be: they are sums of them. Their overlap is exactly the two planes they are made of,
+**which is the array form of the statement that a colour basis is a choice and the algebra is not, and the price of choosing the symmetric one.** The orthogonal frame is the same three directions rotated by an integer matrix,
+$$
+A_j=W_{jj}=\sum_kM_k-2M_j,\qquad \operatorname{tr}\bigl(A_jA_k\bigr)=4\delta_{jk},\qquad \operatorname{tr}\bigl(-\tfrac{A_j}{\sqrt8}\,,\,-\tfrac{A_k}{\sqrt8}\bigr)=\tfrac12\delta_{jk},
+$$
+**so the trace form is diagonal on $A$ and sheared on $M$, and the passage from one to the other is $J-2\mathbb 1$, which is invertible.** The six halves are not orthogonal to the fifteen, and cannot be: they are sums of them. Their overlap is exactly the two planes they are made of,
 $$
 \operatorname{tr}\bigl(T^{L}_{a}A_{ta}\bigr)=1,\qquad \operatorname{tr}\bigl(T^{L}_{a}A_{bc}\bigr)=\epsilon_{abc},
 $$
@@ -354,8 +364,8 @@ with $\operatorname{tr}(T^{L}_{a}T^{L}_{b})=-\delta_{ab}$ and $\operatorname{tr}
 | --- | --- | --- | --- |
 | the $t$ row and column, off the corner | $6$ | $A_{ta}$, $iS_{ta}$ | the leptoquark sextet $X^{a}$, $\bar X^{a}$ |
 | the $3\times3$ colour block, off the diagonal | $6$ | $A_{bc}$, $iS_{bc}$ | six colour–colour arrays: the off-diagonal gluons below $M_C$ |
-| the colour diagonal | $3$ cells, $2$ generators | $d_2,d_3$ | $T^{c}_{3}$, $T^{c}_{8}$ |
-| the corner | $1$ | $iD$ | $B'$, the $B-L$ boson |
+| the diagonal frame | $4$ cells, $3$ generators | $iM_j$ | the frame; below $M_C$ the two differences $T^{c}_{3}$, $T^{c}_{8}$ and the sum $B'$ |
+| the corner cell | $1$ | none: the trace | not a generator, and $iD$ is the sum of the frame |
 | not on the grid | — | $T^{L}_{a}$ | no particle: half heavy, half massless |
 | not on the grid | — | $T^{R}_{a}$ | no particle: half heavy, half massless |
 
@@ -376,8 +386,9 @@ $$
 | $A_{xy}$, $iS_{xy}$ | $(x,y)$ and $(y,x)$ | the gluon pair $g_{1}$, $g_{2}$ | $0$ |
 | $A_{xz}$, $iS_{xz}$ | $(x,z)$ and $(z,x)$ | the gluon pair $g_{4}$, $g_{5}$ | $0$ |
 | $A_{yz}$, $iS_{yz}$ | $(y,z)$ and $(z,y)$ | the gluon pair $g_{6}$, $g_{7}$ | $0$ |
-| $d_2$, $d_3$ | the colour diagonal | $T^{c}_{3}$, $T^{c}_{8}$ | $0$ |
-| $iD$ | $(t,t)$ | $B'$ | $0$ at the first breaking; an ingredient of $\gamma$, $Z$, $Z_R$ |
+| $iM_j$, $j=x,y,z$ | the diagonal, four cells | the frame: above $M_C$ three symmetric directions | $0$ |
+| $d_2=\tfrac i2(M_x-M_y)$, $d_3=\tfrac i2(M_y-M_z)$ | combinations of the frame | $T^{c}_{3}$, $T^{c}_{8}$ | $0$ |
+| $iD=i\sum_jM_j$ | the sum of the frame | $B'$ | $0$ at the first breaking; an ingredient of $\gamma$, $Z$, $Z_R$ |
 | $T^{L}_{a}$, $T^{R}_{a}$ | four cells each: one mixed plane and one colour plane | **no boson** | $32v^{2}$ on one half, $0$ on the other |
 
 **Two conventions live in that table, and both are named.** **Which of a plane's two amplitudes carries which of the pair's two names is a choice** — the two names of a mirrored pair could be exchanged without changing a number. **And the real and imaginary amplitudes of one plane are the two components of one complex field**, so calling $A_{tx}$ the particle and $iS_{tx}$ the antiparticle is the $i$ convention and not a physical distinction. **What is not a choice is the count**: fifteen arrays, two amplitudes per plane, one boson per amplitude — **and the six $\mathfrak{so}(4)$ arrays outside the count, which are coherences of a heavy and a massless direction and therefore not bosons at all.**
@@ -399,7 +410,7 @@ $$
 M^{2}=\operatorname{diag}\bigl(\underbrace{32v^{2},\dots,32v^{2}}_{6},\underbrace{0,\dots,0}_{9}\bigr).
 $$
 
-**Read $32$ off the eigenvalues.** $32=2\times4^{2}$, and $4=1-(-3)$ is a colour eigenvalue minus the lepton eigenvalue. **Colour is unbroken because $D$ is a multiple of the identity on the colour triple**, and the corner is untouched because $[iD,D]=0$; the nine zeros are those two facts and nothing else.
+**Read $32$ off the eigenvalues.** $32=2\times4^{2}$, and $4=1-(-3)$ is a colour eigenvalue minus the lepton eigenvalue. **Colour is unbroken because $D$ is a multiple of the identity on the colour triple**, and every diagonal direction is untouched because $[iM_j,D]=0$ for all three, so the corner is too; the nine zeros are those two facts and nothing else.
 
 **The matrix has its own article.** [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) derives the matrix from the double commutator, states the commutator lemma that produces it, names the nine-dimensional kernel as $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, and gives the spectrum at a general vacuum.
 
@@ -439,7 +450,8 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 | $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$, $A_{bc}=-\epsilon_{abc}(T^{L}_{a}-T^{R}_{a})$ | $6/6$ exact |
 | inversion of $T^{L}$, $T^{R}$ from $A_{ta}$, $A_{bc}$, with $\epsilon_{abc}$ | $6/6$ exact |
 | $iN_{xx}+iN_{yy}+iN_{zz}=iD$ | exact |
-| $\operatorname{tr}(X^{\dagger}X)$ of the fifteen | $2$ on twelve, $12$ on $iD$ |
+| $\operatorname{tr}(X^{\dagger}X)$ of the fifteen | $2$ on all fifteen |
+| $iM_x+iM_y+iM_z-iD$ | $0$, exact |
 | Gram of the fifteen off-diagonal | one entry, $+1$ |
 | eight colour generators fix $e_t$ / six mixed move it | $8/8$ / $6/6$ |
 | eight colour generators closed under the bracket | $64/64$ |
@@ -467,8 +479,9 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 | $iS_{jk}=i(E_{jk}+E_{kj})$ | the imaginary generator of the same plane |
 | $W_{\mu\nu}=\ell_\mu r_\nu$ | a word, a signed permutation, $\operatorname{tr}(W^{\mathsf T}W')=4\delta$ |
 | $N_{jk}=\ell_jr_k$ | the nine vector-vector words |
-| $D=\operatorname{diag}(-3,1,1,1)$ | the corner's diagonal, with $B-L=\tfrac13D$ |
-| $iD,d_2,d_3$ | the three diagonal generators |
+| $D=\operatorname{diag}(-3,1,1,1)$ | $M_x+M_y+M_z$, the direction that carries $B-L=\tfrac13D$ |
+| $iM_j$, $j=x,y,z$ | the three diagonal generators, the symmetric frame |
+| $iD$ | $i\sum_jM_j$, the trace direction, not one of the fifteen |
 | $T^{L}_{a}=\tfrac12\ell_a$ | one of the three left halves, a plane of $\mathfrak{so}(4)$ |
 | $T^{R}_{a}=\tfrac12r_a$ | one of the three right halves, a plane of $\mathfrak{so}(4)$ |
 | $P^{\pm}_{\mu\nu}$ | half-sum and half-difference of a pair of words |

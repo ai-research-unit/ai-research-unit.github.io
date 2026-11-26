@@ -23,8 +23,13 @@ $$
 **A cell is a position and not a generator.** The cell $(i,j)$ is the matrix unit $E_{ij}$; it is not an element of the algebra. **The algebra is the traceless anti-Hermitian part**, so a generator is a combination of cells: an off-diagonal generator occupies two cells, $A_{jk}=E_{jk}-E_{kj}$ or $iS_{jk}=i(E_{jk}+E_{kj})$, and a diagonal generator is a combination of diagonal cells. With $N_{xx},N_{yy},N_{zz}$ the colour diagonal cells and $E_{tt}$ the corner,
 
 $$
-iD=i\bigl(N_{xx}+N_{yy}+N_{zz}\bigr)-3iE_{tt}.
+iM_x=i\bigl(N_{xx}-E_{tt}\bigr),\qquad iM_y=i\bigl(N_{yy}-E_{tt}\bigr),\qquad iM_z=i\bigl(N_{zz}-E_{tt}\bigr),
 $$
+**three generators, each on two diagonal cells, one of them the corner.** Their sum is the trace direction, and it is not a fourth generator:
+$$
+iM_x+iM_y+iM_z=iD=i\bigl(N_{xx}+N_{yy}+N_{zz}\bigr)-3iE_{tt}.
+$$
+**So the corner cell is used by all three and held by none.**
 
 **The four diagonal cells against the three diagonal generators.** The grid has four diagonal cells and the algebra has three diagonal generators, because the trace is removed. **Four cells span a four-dimensional space, its traceless part is three-dimensional**, and that is the arithmetic behind "remove the trace": one cell, one dimension, no coincidence.
 
@@ -66,14 +71,13 @@ of them: **three mixed**, $\{t,x\}$, $\{t,y\}$, $\{t,z\}$, and **three colour**,
 | --- | --- | --- | --- |
 | $A_{jk}$ | $6$ | $2$ | $0,0,\pm i$ |
 | $iS_{jk}$ | $6$ | $2$ | $0,0,\pm i$ |
-| $d_2$, $d_3$ | $2$ | $2$ | $0,0,\pm i$ |
-| $iD$ | $1$ | $12$ | $-3i$ and $i$ three times |
+| $iM_x,iM_y,iM_z$ | $3$ | $2$ | $0,0,\pm i$ |
 
 **Fifteen arrays, fifteen generators, and here the two counts agree** — because the fifteen arrays are a basis. **That agreement is the point of using this basis**, and it is the one register in which the count of printed names and the dimension are the same number.
 
-**The entry twelve is arithmetic about the corner.** $\operatorname{tr}(D^{2})=9+1+1+1=12$: nine from the lepton line and one from each colour line. **It is the only array with a norm above two, and the excess is the fourth colour's weight squared.**
+**The entry twelve is arithmetic about the sum.** $\operatorname{tr}(D^{2})=9+1+1+1=12$: nine from the lepton line and one from each colour line. **No array of the fifteen has that norm; the sum does.** The three generators each have norm two, and $12$ is what three of them add up to, $3\cdot 2+3\cdot 2\cdot 1=12$ across the frame's Gram, since their mutual overlap is one.
 
-**A normalisation that will matter later.** Every plane array has norm two and every diagonal except $iD$ has norm two; $iD$ has norm twelve. **A mass quoted per generator is basis-independent; a mass quoted per array carries the array's normalisation.** The adjoint mass matrix is written per generator for that reason.
+**A normalisation that will matter later.** Every one of the fifteen has norm two in the symmetric frame — the twelve planes and the three diagonals alike. **The trace direction has norm twelve and is not among them.** **A mass quoted per generator is basis-independent; a mass quoted per array carries the array's normalisation.** The adjoint mass matrix is written per generator for that reason.
 
 ## The Direction: Fifteen, and Two Bases
 
@@ -81,7 +85,7 @@ of them: **three mixed**, $\{t,x\}$, $\{t,y\}$, $\{t,z\}$, and **three colour**,
 
 **The maths basis** is the words: the sixteen products $W_{\mu\nu}=L(e_{\mu})R(e_{\nu})$ are a basis of $M_4(\mathbb R)$; **delete the one that is the identity, $W_{tt}=\mathrm I_4$, and multiply the other fifteen by $i$.** Each of the fifteen has $\operatorname{tr}(G^{\dagger}G)=4$ and moves four cells, because a word is a product of two signed permutations and has one non-zero entry in every row.
 
-**The physics basis** is the six pairs summed and differenced, plus the three diagonals. **Its arrays have norm two on the planes and each one moves two cells.** The change of basis is the pair resolution, and [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) constructs it in three steps.
+**The physics basis** is the six pairs summed and differenced, plus the three diagonals. **Its arrays have norm two on the planes and each one moves two cells.** **Its three diagonals are $M_j=E_{jj}-E_{tt}$, which the permutation of $x,y,z$ permutes**, and the three diagonals of the maths basis are $W_{jj}=\sum_kM_k-2M_j$, the same three directions sheared by an integer matrix and orthogonal. The change of basis is the pair resolution, and [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) constructs it in three steps.
 
 **One generator, two arrays.** $A_{tx}$ in the physics basis is $-\tfrac12(W_{tx}+W_{xt})$ in the maths basis. **Both are the same generator, both are printed in the corpus, and the norms differ by the factor two that the halving introduces.**
 
@@ -117,7 +121,8 @@ Recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\v
 | the rank of the fifteen arrays | real rank of the $15\times32$ matrix | $15$ |
 | the grid in blocks | $1+6+9$ | $16$ |
 | the generators in the same blocks | $1+6+8$ | $15$ |
-| the trace norms | $\operatorname{tr}(G^{\dagger}G)$ for $A_{jk}$, $iD$, $iS_{jk}$ | $2$, $12$, $2$ |
+| the trace norms | $\operatorname{tr}(G^{\dagger}G)$ for $A_{jk}$, $iM_j$, $iS_{jk}$ | $2$, $2$, $2$ |
+| the norm of the sum | $\operatorname{tr}(D^{2})$ with $D=\sum_jM_j$ | $12$ |
 | the corner | $16-1$ cells minus the trace | $15$ |
 | the rank of $\mathfrak{su}(4)$ | maximal torus | $3$ |
 
@@ -141,7 +146,8 @@ Recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\v
 | $A_{jk}=E_{jk}-E_{kj}$ | the real array of the plane $\{j,k\}$ |
 | $iS_{jk}=i(E_{jk}+E_{kj})$ | the imaginary array of the same plane |
 | $D=\operatorname{diag}(-3,1,1,1)$ | the vacuum direction, traceless, $B-L=\tfrac13D$ |
-| $iD$, $d_2$, $d_3$ | the three diagonal generators |
+| $iM_j$, $j=x,y,z$ | the three diagonal generators, the symmetric frame |
+| $iD$ | $i\sum_jM_j$, the trace direction, not one of the fifteen |
 | $W_{\mu\nu}=L(e_\mu)R(e_\nu)$ | a word, one of the sixteen products |
 | cell, pair, array, generator | the four counts, in the sense of this article |
 

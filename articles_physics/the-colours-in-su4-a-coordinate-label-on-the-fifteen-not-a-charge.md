@@ -70,7 +70,7 @@ $$
 
 **and $\mathfrak{su}(4)$ is traceless, so the identity direction is not a generator.** The trace-free combinations that remain are three. **That is the whole content of "one fewer on the diagonal": the count is $4^{2}-1$, and the removed direction is the one the $S$ in $\mathrm{SU}$ removes.**
 
-**The corpus's three are $iD$, $d_2$ and $d_3$**, with $D=\operatorname{diag}(-3,1,1,1)$ up to normalisation. **That basis is a choice; the dimension three is not.** A reader who prefers $\operatorname{diag}(1,-1,0,0)$, $\operatorname{diag}(1,1,-2,0)$ and $\operatorname{diag}(1,1,1,-3)$ has the same three-dimensional space in another basis, and every number computed from it is unchanged.
+**The corpus's three are $iM_x$, $iM_y$ and $iM_z$**, with $M_j=E_{jj}-E_{tt}$, and the trace direction $D=\operatorname{diag}(-3,1,1,1)$ is their sum up to normalisation. **That basis is a choice; the dimension three is not.** **This one is chosen because it is symmetric in $x,y,z$: the permutation of the three vector labels permutes the three of them and fixes no member**, and the fourth line is what makes the choice possible at all, as [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves. A reader who prefers $i\bigl(W_{xx}+W_{yy}+W_{zz}\bigr)$, $\tfrac i2\bigl(W_{yy}-W_{xx}\bigr)$ and $\tfrac i2\bigl(W_{zz}-W_{yy}\bigr)$ has the same three-dimensional space in another basis, and every number computed from it is unchanged.
 
 **The diagonal directions carry no root.** A Cartan generator has weight zero: it measures the shift a root produces and produces none itself. **"The colour of a diagonal boson" is therefore the zero label**, which is another way of saying that the three are the measuring rods and the twelve are the moves.
 
@@ -134,7 +134,7 @@ $$
 | the letters $r,g,b,\ell$ | notation |
 | which line is called $\ell$ | declaration (A) |
 | the label $i\bar j$ of a given cell | a coordinate |
-| the three combinations $iD$, $d_2$, $d_3$ | one basis of the Cartan |
+| the three combinations $iM_x$, $iM_y$, $iM_z$ | one basis of the Cartan, the symmetric one |
 | the partition $15=8+1+6$ | a branching, and it needs the declaration |
 | the words gluon, leptoquark, $B-L$ boson | names of cells, relative to that declaration |
 
@@ -183,7 +183,8 @@ $$
 | $(\ell,r,g,b)$ | the same four lines in colour letters |
 | $E_{ij}$ | the direction moving line $j$ into line $i$, with $i\ne j$ |
 | $i\bar j$ | the colour label of $E_{ij}$ |
-| $d_2$, $d_3$, $iD$ | the three trace-free diagonal directions, in the corpus's basis |
+| $iM_j$, $j=x,y,z$ | the three trace-free diagonal directions, the symmetric frame |
+| $iD$ | $i\sum_jM_j$, the trace direction, not one of the fifteen |
 | $D$ | $\operatorname{diag}(-3,1,1,1)$ up to normalisation, the direction the vacuum takes below $M_C$ |
 | $\Xi_0$ | the scalar's vacuum value, zero above $M_C$ |
 | $M_C$ | the scale of the transition |

@@ -24,11 +24,35 @@ No other convention enters, and no generator is rescaled.
 | --- | --- | --- |
 | real planes | $6$ | $A_{jk}$, one for each of the six pairs of indices |
 | imaginary planes | $6$ | $iS_{jk}$, the same six pairs |
-| the corner | $1$ | $iD=i\operatorname{diag}(-3,1,1,1)$ |
-| colour diagonals | $2$ | $d_2=i\operatorname{diag}(0,1,-1,0)$, $d_3=i\operatorname{diag}(0,0,1,-1)$ |
+| trace direction | $1$ | $iD=i\operatorname{diag}(-3,1,1,1)=i\sum_jM_j$, printed as the third diagonal |
+| colour diagonals | $2$ | $d_2=i\operatorname{diag}(0,1,-1,0)=\tfrac i2(M_x-M_y)$, $d_3=\tfrac i2(M_y-M_z)$ |
 **The four blocks hold twelve planes and three diagonals, and nothing else.** **The six arrays $T^{L}_{a}$, $T^{R}_{a}$ are not rows of this table.** Each is half a sum or difference of two planes, so its brackets are the brackets of Part I, and §*The Six Arrays Outside the Table* says why they are printed elsewhere.
 
 **The three diagonals are one family.** They are the diagonal generators of $\mathfrak{su}(4)$, and their eigenvalues are all that a bracket with a diagonal reads.
+
+**The diagonal basis of the tables, and the declared frame.** The tables below are printed in the three directions $iD$, $d_2$, $d_3$, which is the basis of the diagonal in which the broken phase names its bosons. **The declared basis of the fifteen is the symmetric frame**,
+$$
+M_j=E_{jj}-E_{tt},\qquad t_j=\tfrac i2M_j,\qquad j=x,y,z,
+$$
+which the permutation of $x,y,z$ permutes and whose sum is the trace direction, as [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) sets out. **The two triples span the same three directions**, and the map between them is
+$$
+iD=T_x+T_y+T_z,\qquad d_2=\tfrac12\bigl(T_x-T_y\bigr),\qquad d_3=\tfrac12\bigl(T_y-T_z\bigr),
+$$
+with $T_j=iM_j$, and in the other direction
+$$
+T_x=\tfrac13\,iD+\tfrac43\,d_2+\tfrac23\,d_3,\qquad
+T_y=\tfrac13\,iD-\tfrac23\,d_2+\tfrac23\,d_3,\qquad
+T_z=\tfrac13\,iD-\tfrac23\,d_2-\tfrac43\,d_3 .
+$$
+**The determinant of the first map is $\tfrac14$, so the change is invertible and no direction is lost or gained.** Because the bracket is bilinear in each slot, **every one of the $225$ entries in the frame is obtained by applying that map to each index**, and nothing in the twelve-by-twelve block moves at all.
+
+**The diagonal rows are one rule, and in the frame they carry no fraction.** Writing $\lambda^{(j)}$ for the eigenvalues of $M_j$, so that $\lambda^{(j)}=(-1,1,0,0)$ for $j=x$ and its permutation for the other two,
+$$
+\bigl[iM_j,A_{kl}\bigr]=\bigl(\lambda^{(j)}_k-\lambda^{(j)}_l\bigr)\,iS_{kl},
+\qquad
+\bigl[iM_j,iS_{kl}\bigr]=-\bigl(\lambda^{(j)}_k-\lambda^{(j)}_l\bigr)\,A_{kl},
+$$
+**and the bracket of two diagonals vanishes.** The differences take the values $0$, $\pm1$ and $\pm2$, so **the diagonal rows of the table are integer and single-array in the frame**, where the printed colour-adapted basis produces halves and thirds; the trace direction is the sum and its differences take $\pm4$ on the mixed planes and $0$ on the colour ones, which is the same statement as the corner meeting twelve brackets at spacing $4$. Verified on all $48$ diagonal-plane brackets, exact, no disagreement; the $66$ plane-plane brackets are untouched by the change of diagonal basis.
 
 **Only one order is printed.** Since $[Y,X]=-[X,Y]$, the $210$ off-diagonal brackets are $105$ brackets and their negatives, and every table below lists a pair once, with the two arrays in the order of the block list above. The fifteen self-brackets are not printed at all: they are zero by antisymmetry, and they are counted in §*The Forty Zeros*.
 

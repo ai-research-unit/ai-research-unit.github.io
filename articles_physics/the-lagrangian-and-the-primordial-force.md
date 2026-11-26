@@ -26,7 +26,7 @@ with one covariant derivative, $D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}
 
 *Third, the status, and it is the point of the article.* $\mathrm{SU}(2)$ is written *in* the algebra; $\mathrm{SU}(4)$ is written *on* it. The compact group of $\mathbb{B}$ is $\mathrm{U}(2)$, of real dimension four, and fifteen generators do not fit inside four. **So the action below is a transcription and not a derivation**, and it stands with $\mathrm{SU}(3)$ on the transcribed side of the ceiling, not with $\mathrm{SU}(2)$ on the derived side. *Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$* owns the argument; this article states where its display falls in it.
 
-What is not new. The Yang–Mills action with matter is standard, and its derivation is a page of any text. What the corpus contributes is the identification of the fifteen printed arrays with a set $t_{a}$ satisfying $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ — one rotation and three rescalings, done in §*The Normalisation* — the trace-versus-pairing distinction, and the ceiling statement.
+What is not new. The Yang–Mills action with matter is standard, and its derivation is a page of any text. What the corpus contributes is the identification of the fifteen printed arrays with a set $t_{a}$ satisfying $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ — one integer rotation and one rescaling, done in §*The Normalisation* — the trace-versus-pairing distinction, and the ceiling statement.
 
 ## Conventions
 
@@ -34,17 +34,18 @@ The conventions are restated so that every sign below is checkable from this pag
 
 **The algebra and the coordinates.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$, $\imath=x,y,z$; the material sector is $\mathbb{B}_\Phi$, where the time coefficient is imaginary, $Q_t=iq'_t$. The coordinates are $R_{\imath}=(R_t,R_x,R_y,R_z)$, the derivatives are $\partial_{\imath}=\partial/\partial R_{\imath}$, and the measure is $d^4r$. **Every index is low and every sum carries its weight**, as in *Index and Notation Conventions*: $\sum_{\imath}\varepsilon_{\imath}$ for a spacetime contraction with $\varepsilon_{\imath}=(1,-1,-1,-1)$, and the unit metric $\delta_{\imath\jmath}$ raises nothing.
 
-**The generators.** Two sets, and the difference between them is one factor of $i$ and one rescaling. $G_{a}$, $a=1,\dots,15$, are the printed arrays of the boson block — the twelve planes $A_{\imath\jmath}$ and $iS_{\imath\jmath}$, the two colour diagonals $d_{2}$ and $d_{3}$ and the corner $iD$ — taken anti-Hermitian, $G_{a}^{\dagger}=-G_{a}$ and $\operatorname{tr}G_{a}=0$. $t_{a}$ are the normalised Hermitian generators of §*The Normalisation*, $t_{a}=iG_{a}/2$ for the thirteen arrays of norm $2$, $t_{c_{3}}=i(d_{2}-d_{3})/\sqrt{12}$ and $t_{15}=iG_{15}/\sqrt{24}$, so that $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$. **The action is written in $t_{a}$**; the printed $G_{a}$ are what the count, the trace norms and the commutation table are computed from. The cell names are the grid's, and *Classification of the Bosons* fixes them.
+**The generators.** Two sets, and the difference between them is one factor of $i$ and one rescaling. $G_{a}$, $a=1,\dots,15$, are the printed arrays of the boson block — the twelve planes $A_{\imath\jmath}$ and $iS_{\imath\jmath}$ and the three diagonal directions $M_{j}=E_{jj}-E_{tt}$ — taken anti-Hermitian, $G_{a}^{\dagger}=-G_{a}$ and $\operatorname{tr}G_{a}=0$, with the vacuum direction $iD=i\sum_{j}M_{j}$ their sum and not a sixteenth array. $t_{a}$ are the normalised Hermitian generators of §*The Normalisation*, $t_{a}=iG_{a}/2$ for the twelve planes, $t_{j}=-A_{j}/\sqrt{8}$ for the three diagonal directions with $A_{j}=\sum_{k}M_{k}-2M_{j}$ (the printed generator there is $iA_{j}$, so the minus is the factor $i$ of the convention folded in), and $t_{15}=iD/\sqrt{24}$, so that $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$. **The action is written in $t_{a}$**; the printed $G_{a}$ are what the count, the trace norms and the commutation table are computed from. The cell names are the grid's, and *Classification of the Bosons* fixes them.
 
 **The bracket.** $[G_{a},G_{b}]=\sum_{c}f^{c}_{\ ab}G_{c}$ in the printed basis, and $[t_{a},t_{b}]=i\sum_{c}F^{c}_{\ ab}t_{c}$ in the Hermitian one, with
 
 $$
 F^{c}{}_{ab}=\sqrt{\frac{n_{c}}{2\,n_{a}n_{b}}}\;f^{c}{}_{ab},\qquad
 t_{a}=\frac{iG_{a}}{\sqrt{2\,n_{a}}},\qquad
-n_{a}:=\operatorname{tr}\bigl(G_{a}^{\dagger}G_{a}\bigr)=2\ \text{(the fourteen)},\ 12\ \text{(the corner)} .
+n_{a}:=\operatorname{tr}\bigl(G_{a}^{\dagger}G_{a}\bigr)=2\ \text{(all fifteen)},\qquad
+n_{15}=\operatorname{tr}\bigl(D^{2}\bigr)=12\ \text{(the vacuum direction, not one of the fifteen)} .
 $$
 
-**So the coefficients are not the same numbers, and the difference is two things rather than one**: the $i$, which is the Hermiticity of $t_{a}$ against the anti-Hermiticity of $G_{a}$, and the trace norm $n_{a}$, which is the normalisation. **Two instances, both checkable from the table.** For three planes $n_{c}/2n_{a}n_{b}=\tfrac14$: $[A_{tx},A_{ty}]=-A_{xy}$ has $f=-1$ and $F=-\tfrac12$. For the corner in and a plane out, $n_{c}/2n_{a}n_{b}=2/48=\tfrac{1}{24}$: $[iD,A_{tx}]=-4iS_{tx}$ has $f=-4$ and $F=-4/\sqrt{24}=-0.8165$. **The two numbers differ because the corner's norm is six times a plane's**, and the rescaling is not a relabelling: a vertex read off an $f$ is wrong by that factor. **The $i$ decides the sign structure of every vertex that touches the scalar** (§*The Scalar Piece*); **the rescaling is what turns the same vertex into a number.** The coefficients are real and antisymmetric in $a$ and $b$, read off the commutation table: of the $105$ independent pairs, $80$ brackets are nonzero, and the number of distinct index triples is $31$ in the printed basis and $29$ once the two colour diagonals are rotated to the orthonormal pair. **They are not totally antisymmetric in all three indices as they stand**, because $d_{2}$ and $d_{3}$ are not orthogonal: total antisymmetry belongs to the lowered $f_{abc}$ and holds only in the orthonormal basis.
+**So the coefficients are not the same numbers, and the difference is two things rather than one**: the $i$, which is the Hermiticity of $t_{a}$ against the anti-Hermiticity of $G_{a}$, and the trace norm $n_{a}$, which is the normalisation. **Two instances, both checkable from the table.** For three planes $n_{c}/2n_{a}n_{b}=\tfrac14$: $[A_{tx},A_{ty}]=-A_{xy}$ has $f=-1$ and $F=-\tfrac12$. For the vacuum direction in and a plane out, $n_{c}/2n_{a}n_{b}=2/48=\tfrac{1}{24}$: $[iD,A_{tx}]=-4iS_{tx}$ has $f=-4$ and $F=-4/\sqrt{24}=-0.8165$. **The two numbers differ because the vacuum direction's norm is six times a plane's**, and the rescaling is not a relabelling: a vertex read off an $f$ is wrong by that factor. **The $i$ decides the sign structure of every vertex that touches the scalar** (§*The Scalar Piece*); **the rescaling is what turns the same vertex into a number.** The coefficients are real and antisymmetric in $a$ and $b$, read off the commutation table: of the $105$ independent pairs, $80$ brackets are nonzero, and the number of distinct index triples is $31$ in the printed basis and $29$ once the two colour diagonals are rotated to the orthonormal pair. **They are not totally antisymmetric in all three indices as they stand**, because $d_{2}$ and $d_{3}$ are not orthogonal: total antisymmetry belongs to the lowered $f_{abc}$ and holds only in the orthonormal basis.
 
 
 **The traces.** $\operatorname{tr}$ is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ enlarged to the $4\times4$ matrices that represent $\mathfrak{su}(4)$; $\mathrm{Sc}$ is the coefficient of $e_t$ in an element of $\mathbb{B}$. **The two are different functionals and only the first is used in the action**, for the reason §*The Trace and Not the Reduction* gives.
@@ -71,7 +72,7 @@ $$
 =\tfrac12\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath},
 $$
 
-so $-\tfrac12\operatorname{tr}(\sum FF)=-\tfrac14\sum_{a}FF$. **The coefficient is not a choice**: it is fixed once the generators are normalised, and the normalisation is fixed by the requirement that the kinetic term of $A_{a,\imath}$ be canonical. **Written with the printed $G_{a}$ instead, the trace norms are $2$ and $12$ and the coefficient is not $\tfrac14$** — which is why every vertex in this block is read from $t_{a}$ and not from $G_{a}$.
+so $-\tfrac12\operatorname{tr}(\sum FF)=-\tfrac14\sum_{a}FF$. **The coefficient is not a choice**: it is fixed once the generators are normalised, and the normalisation is fixed by the requirement that the kinetic term of $A_{a,\imath}$ be canonical. **Written with the printed $G_{a}$ instead, the trace norms are $2$ on the fifteen and $12$ on the vacuum direction, and the coefficient is not $\tfrac14$** — which is why every vertex in this block is read from $t_{a}$ and not from $G_{a}$.
 
 **Why nothing else appears at dimension four.** The invariant, parity-even, dimension-four functionals of the fifteen alone are the square of the curvature and nothing else. A cubic term vanishes because $\operatorname{tr}$ of an odd number of generators is zero, and a term with a derivative of the curvature has dimension five. **One further term exists and is not written**: the topological density $\operatorname{tr}(\mathbb{F}\wedge\mathbb{F})$, whose integral is quantised and whose coefficient $\theta_4$ is a free parameter of the Lagrangian and not a function of the group. It is named here and left to *The $\mathrm{SU}(4)$ Instanton*, **which also shows that it is redundant above $M_C$**, where the sixteen are massless and a chiral rotation removes it. **It is also the one dimension-four term the group allows that is odd under $CP$**, and that is worth one sentence because the corpus says elsewhere that the sixteen is closed under $CP$: the closure is a statement about the field list, a $CP$ map exists and permutes it, while the Lagrangian's $CP$ is a statement about the values of the mass phases $\arg\det m$ and of the Yukawa phases, and neither is fixed by the group. **So the model can be $CP$-conserving and it is not $CP$-symmetric by construction**, and the difference is a measurement rather than a convention.
 
@@ -189,34 +190,33 @@ which is the matrix *The Yukawa Sector* diagonalises, and which gives $m_\ell=3m
 
 **What the fermion copy index adds.** $y_{\alpha\beta}$ is a $2\times2$ matrix on the two Weyl fields that share a colour index, so the pair is mixed by the Yukawa and not by the sector. **Two eigenvalues, one diagonalisation, and the condensate's two entries $(-3v_C,+v_C)$ multiplying them**, which is the arithmetic of the mass relation and belongs to the article that computes it.
 
-## The Normalisation, and Why the Corner Is Different
+## The Normalisation, and Why the Frame Is Sheared
 
-**The printed arrays are anti-Hermitian and their trace norms take two values.**
+**The printed arrays are anti-Hermitian, and in the symmetric frame every one of the fifteen has the same trace norm.**
 
 | family | arrays | $\operatorname{tr}\bigl(G^{\dagger}G\bigr)$ | $\operatorname{tr}\bigl(G^{2}\bigr)$ |
 | --- | --- | --- | --- |
 | the twelve planes, $A_{\imath\jmath}$ and $iS_{\imath\jmath}$ | $12$ | $2$ | $-2$ |
-| the colour diagonals $d_{2}$, $d_{3}$ | $2$ | $2$ | $-2$ |
-| the corner $iD$ | $1$ | $12$ | $-12$ |
+| the three frame directions $M_{j}=E_{jj}-E_{tt}$ | $3$ | $2$ | $-2$ |
+| the sum $iD=i\sum_{j}M_{j}$ | not among the fifteen | $12$ | $-12$ |
 
-**One pair among the fifteen is not orthogonal, and it is the only one.** $\operatorname{tr}(d_{2}d_{3})=+1$, so the Gram entry $\langle d_{2},d_{3}\rangle=-\operatorname{tr}(d_{2}d_{3})=-1$ while every other pair vanishes. **The printed fifteen are a basis and not an orthonormal frame**, and the Gram has eigenvalues $1$, twelve copies of $2$, $3$ and $12$.
+**The one defect of the frame is obliqueness, and it is the price of the symmetry.** $\operatorname{tr}(M_{j}M_{k})=2\delta_{jk}+(1-\delta_{jk})$, so the three directions are at $60^{\circ}$ and the Gram of the fifteen has eigenvalues twelve copies of $2$, one $4$ on the sum direction and $1$ twice. **The fifteen are a basis and not an orthonormal frame**, for a reason of the basis and not of the group: the permutation of $x,y,z$ cannot fix an orthogonal triple, because an orthogonal triple in this space is a triple of differences and any two of them share the sum direction.
 
-**The repair is one rotation and then three rescalings.**
-
+**The repair is one integer rotation and one rescaling.**
 $$
-c_{2}=d_{2}+d_{3},\qquad c_{3}=d_{2}-d_{3},\qquad
-\langle c_{2},c_{2}\rangle=2,\quad\langle c_{3},c_{3}\rangle=6,\quad\langle c_{2},c_{3}\rangle=0 .
+A_{j}=\sum_{k}M_{k}-2M_{j},\qquad
+\operatorname{tr}\bigl(A_{j}A_{k}\bigr)=4\delta_{jk},\qquad
+A_{j}=W_{jj},
 $$
-
-After the rotation the fifteen are orthogonal, with norm $2$ for thirteen of them, $6$ for $c_{3}$ and $12$ for the corner. **The rotation is not a convenience**: it is what makes the two colour phases orthogonal, and $c_{3}$ pays for it with a norm three times a plane's. **A canonical kinetic term $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ then fixes**
-
+**which is the orthogonal sibling of the frame, obtained by the invertible integer matrix $J-2\mathbb 1$.** A canonical kinetic term $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ then fixes
 $$
-t_{a}=\frac{iG_{a}}{2}\ \ (13\ \text{arrays}),\qquad
-t_{c_{3}}=\frac{i(d_{2}-d_{3})}{\sqrt{12}}\ \ (c_{3}),\qquad
-t_{15}=\frac{iG_{15}}{\sqrt{24}}\ \ (\text{the corner}).
+t_{a}=\frac{iG_{a}}{2}\ \ (12\ \text{planes}),\qquad
+t_{j}=-\frac{A_{j}}{\sqrt{8}}\ \ (3\ \text{diagonal directions}),\qquad
+t_{15}=\frac{iD}{\sqrt{24}}\ \ (\text{the vacuum direction}).
 $$
+**Check.** For a plane, $\operatorname{tr}(t_{a}t_{a})=-\tfrac14(-2)=\tfrac12$; for a frame direction, $\operatorname{tr}(t_{j}t_{j})=\tfrac{1}{8}\cdot 4=\tfrac12$; for the sum, $\operatorname{tr}(t_{15}t_{15})=\tfrac{12}{24}=\tfrac12$. **All three families give one half, which is the statement that the normalisation succeeds — and it succeeds with three coefficients, not two, as before.** **What the frame buys is that the diagonal coefficient is one number instead of two**: the old basis needed $c_{3}=d_{2}-d_{3}$ with a norm of its own, and the symmetric frame needs only the single integer rotation $A_{j}$.
 
-**Check.** For the corner, $\operatorname{tr}(t_{15}t_{15})=-\tfrac{1}{24}\operatorname{tr}(G_{15}G_{15})=\tfrac{12}{24}=\tfrac12$; for a plane, $\operatorname{tr}(t_{a}t_{a})=-\tfrac14(-2)=\tfrac12$; and for $c_{3}$, $-\tfrac{1}{12}(-6)=\tfrac12$. **All three families give one half, which is the statement that the normalisation succeeds — and it succeeds with three coefficients, not two.** The corner's coefficient is smaller than a plane's by $2/\sqrt{24}=1/\sqrt6$, and $c_{3}$'s by $2/\sqrt{12}=1/\sqrt3$; **both factors are consequences of the trace and not of the group**, the corner's length being $\sqrt6$ times a plane's and $c_{3}$'s $\sqrt3$ times.
+**The $1/\sqrt6$ is the sum's, and it does not move.** $\sqrt{12/2}=\sqrt6$: the vacuum direction is longer than a plane by that factor, because its entries are $-3$ and $1$ where a plane's are $\pm1$. **That is a property of $D$ and not of the frame**, so every vertex that touches $B'$ carries the same $1/\sqrt6$ as before, and the change of diagonal basis leaves it untouched.
 
 **Why the rescaling is not cosmetic.** A vertex read off a printed array is off by this factor, and a cross section read off a vertex is off by its square. **The factor is stated once, here, so that the articles that print a vertex restate it rather than re-derive it.**
 
@@ -313,26 +313,28 @@ The dimension of the algebra's compact group is four. $\mathbb{B}\cong M_2(\math
 | --- | --- |
 | $\operatorname{tr}\bigl(G^{\dagger}G\bigr)$ for a plane | $2$ |
 | $\operatorname{tr}\bigl(G^{\dagger}G\bigr)$ for $d_{2}$ and $d_{3}$ | $2$, $2$ |
-| $\operatorname{tr}\bigl(G^{\dagger}G\bigr)$ for the corner $iD$ | $12$ |
+| $\operatorname{tr}\bigl(G^{\dagger}G\bigr)$ for the twelve planes and the three frame directions | $2$ |
+| $\operatorname{tr}\bigl(D^{2}\bigr)$ for $D=M_x+M_y+M_z$ | $12$ |
 | $\operatorname{tr}(d_{2}d_{3})$, the one nonzero off-diagonal of the Gram | $+1$ |
 | $\langle c_{2},c_{2}\rangle$ with $c_{2}=d_{2}+d_{3}$ | $2$ |
 | $\langle c_{3},c_{3}\rangle$ with $c_{3}=d_{2}-d_{3}$ | $6$ |
 | $\langle c_{2},c_{3}\rangle$ | $0$ |
 | $\operatorname{tr}(t_{a}t_{a})$ for a plane, $t_{a}=iG_{a}/2$ | $\tfrac12$ |
-| $\operatorname{tr}(t_{15}t_{15})$ for the corner, $t_{15}=iG_{15}/\sqrt{24}$ | $\tfrac12$ |
+| $\operatorname{tr}(t_{j}t_{j})$ for a frame direction, $t_{j}=-A_{j}/\sqrt{8}$ | $\tfrac12$ |
+| $\operatorname{tr}(t_{15}t_{15})$ for the vacuum direction, $t_{15}=iD/\sqrt{24}$ | $\tfrac12$ |
 | nonzero brackets of the fifteen | $80$ of $105$ |
 | nonzero brackets $f^{c}_{\ ab}$ | $80$, over $31$ distinct triples in the printed basis |
 | $[A_{tx},A_{ty}]=-A_{xy}$ in both bases | $f=-1$, $F^{c}_{\ ab}=-\tfrac12$ |
 | $[iD,A_{tx}]=-4iS_{tx}$ in both bases | $f=-4$, $F^{c}_{\ ab}=-4/\sqrt{24}=-0.8165$ |
 | $F^{c}_{\ ab}$ against $\sqrt{n_{c}/2n_{a}n_{b}}\,f^{c}_{\ ab}$, every bracket | worst error $0$ |
 
-**The normalisation is what makes the display's coefficient $\tfrac14$ and not a parameter**, and the corner's length is what makes the ratio $1/\sqrt6$ appear in every vertex that touches $B'$.
+**The normalisation is what makes the display's coefficient $\tfrac14$ and not a parameter**, and the vacuum direction's length is what makes the ratio $1/\sqrt6$ appear in every vertex that touches $B'$.
 
 ## Summary
 
 The $\mathrm{SU}(4)$ Lagrangian is one coupling on fifteen generators and seven terms: the curvature's square, the sixteen's kinetic term, the scalar matrix's kinetic term and its potential, and the fixing the representative, ghost and Yukawa pieces. **One $g_4$ enters the curvature and both covariant derivatives**, and that identity, not any vertex, is what the words *one force* mean. **The other nine numbers — $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$, the four quartics, $y$, $\zeta$ and $\theta_{4}$ — are parameters and not the couplings of a second and third force.** **The scalar sector's six are the price of a field that carries no condition**: the trace adds one quadratic and two quartics, and the identity part of the vacuum is invisible to the force, so none of the masses moves.
 
-The normalisation is one rotation and three rescalings. The printed fifteen fail to be orthogonal in exactly one place, $\operatorname{tr}(d_{2}d_{3})=+1$; the rotation $c_{2}=d_{2}+d_{3}$, $c_{3}=d_{2}-d_{3}$ repairs it, with norms $2$ and $6$; and $t_{a}=iG_{a}/2$, $t_{c_{3}}=i(d_{2}-d_{3})/\sqrt{12}$, $t_{15}=iG_{15}/\sqrt{24}$ then give $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ for all fifteen. The corner is longer than a plane by $\sqrt6$, so every vertex that touches $B'$ carries the factor $1/\sqrt6$, and that factor comes from the trace and not from the group.
+The normalisation is one integer rotation and one rescaling. The printed fifteen fail to be orthogonal in the three diagonal directions, $\operatorname{tr}(M_{j}M_{k})=2\delta_{jk}+(1-\delta_{jk})$; the rotation $A_{j}=\sum_{k}M_{k}-2M_{j}$ repairs it, with norm $4$; and $t_{a}=iG_{a}/2$, $t_{j}=-A_{j}/\sqrt{8}$, $t_{15}=iD/\sqrt{24}$ then give $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ for all fifteen. The vacuum direction is longer than a plane by $\sqrt6$, so every vertex that touches $B'$ carries the factor $1/\sqrt6$, and that factor comes from the trace and not from the group.
 
 The variation gives one equation and fifteen constraints. $D_{\imath}F_{a,\imath\jmath}=-g_4j_{a,\jmath}$ with a fermion term and a scalar term, the scalar one vanishing at $\langleΞ\rangle=0$; the temporal component is a Gauss law per generator; thirty degrees of freedom survive for the connections, thirty-two states for the fermions and sixteen real for the scalar, and **the ghosts contribute nothing on shell, so the total is seventy-eight.**
 
@@ -349,10 +351,11 @@ Six things are deliberately absent: a mass for the fifteen, the potential's coef
 | $A_{a,\imath}$, $F_{a,\imath\jmath}$ | Connection and field strength of generator $a$, $a=1,\dots,15$ |
 | $g_4$ | The primordial coupling, one value for the whole group |
 | $T_{a}$, $t_{a}$ | The printed array, and its rescaled form with $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ |
-| $G_{a}$ | The printed anti-Hermitian array; the action is written in $t_{a}=iG_{a}/2$, $t_{c_{3}}=i(d_{2}-d_{3})/\sqrt{12}$, $t_{15}=iG_{15}/\sqrt{24}$ |
+| $G_{a}$ | The printed anti-Hermitian array; the action is written in $t_{a}=iG_{a}/2$, $t_{j}=-A_{j}/\sqrt{8}$, $t_{15}=iD/\sqrt{24}$ |
 | $d_{2}$, $d_{3}$ | The two colour diagonals; $\operatorname{tr}(d_{2}d_{3})=+1$ |
 | $c_{2}$, $c_{3}$ | The rotated diagonals $d_{2}\pm d_{3}$, orthogonal, norms $2$ and $6$ |
-| $iD$ | The corner, $\operatorname{diag}(-3i,i,i,i)$, trace norm $12$ |
+| $iD$ | The vacuum direction, $\operatorname{diag}(-3i,i,i,i)=i\sum_{j}M_{j}$, trace norm $12$ |
+| $M_{j}$, $A_{j}$ | The frame $E_{jj}-E_{tt}$ and its orthogonal sibling $W_{jj}=\sum_{k}M_{k}-2M_{j}$ |
 | $f^{c}_{\ ab}$ | Structure constants, $[G_{a},G_{b}]=\sum_{c}f^{c}_{\ ab}G_{c}$ and $[t_{a},t_{b}]=i\sum_{c}f^{c}_{\ ab}t_{c}$ |
 | $\xi_{f}$, $\bar\xi_{f}$ | The sixteen Weyl fields, $f=1,\dots,16$ |
 | $Ξ$ | The scalar, a Hermitian $4\times4$, $16$ real components |

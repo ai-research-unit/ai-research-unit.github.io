@@ -10,6 +10,8 @@
 
 **Every section is titled with the boson first and the array second**, so the table of contents reads as the boson content of the model: **the corner, the six leptoquarks with their charges, and the eight gluons.** That is the whole list.
 
+**The diagonal sections are printed in the colour-adapted basis.** Three sections below write $iD$, $d_{2}$ and $d_{3}$, which is the basis in which the broken phase names its bosons. **The declared basis of the diagonal is the symmetric frame** $M_{j}=E_{jj}-E_{tt}$, permuted by the permutation of $x,y,z$, with $iD=i\sum_{j}M_{j}$ their sum; [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) proves the choice and the impossibility in $\mathfrak{su}(3)$. **The arrays of the twelve planes, their entries, their spectra and their masses are identical in the two bases**; only the three diagonal sections read differently, and their displays are unchanged because $iD$, $d_{2}$ and $d_{3}$ remain linear combinations of the frame.
+
 **Why an array and not a name.** An array is a matrix; a boson is a particle. **The passage from one to the other is the article's subject, and it is short**: the entries say which cells the generator moves, the spectrum says what its exponential does to the quartet, and the mass says what the vacuum does to it. **Each subsection makes those three statements and stops.**
 
 **The fifteen, indexed.**

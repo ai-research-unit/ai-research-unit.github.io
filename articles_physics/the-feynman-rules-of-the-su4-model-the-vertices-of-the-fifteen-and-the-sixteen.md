@@ -13,6 +13,20 @@
 
 **What the article does not do.** It does not derive a fermion action from the algebra: the fermion kinetic term uses the quartet's connection acting on the quartet carrier, and the claim that it does is imported, not proved. **The matrices are exact; the dynamical statement that a fermion propagates with them is the imported half**, and it is marked as such in every section where it is used.
 
+## The Frame These Tables Are Expressed In
+
+**The tables below were computed in the colour-adapted diagonal basis**, one trace direction $iD$ and two differences $d_{2}$, $d_{3}$, and they are printed that way. **The declared basis of the diagonal is the symmetric frame**,
+$$
+M_{j}=E_{jj}-E_{tt},\qquad G_{j}=iM_{j},\qquad iD=i\sum_{j}M_{j},
+$$
+which the permutation of $x,y,z$ permutes and whose sum is $D$; [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen-and-why-the-eight-cannot-repeat-it.html) sets out the proof and the impossibility in $\mathfrak{su}(3)$.
+
+**Nothing in the twelve-plane block moves**, because the change touches only the three diagonal directions: $iD=T_{x}+T_{y}+T_{z}$, $d_{2}=\tfrac12(T_{x}-T_{y})$, $d_{3}=\tfrac12(T_{y}-T_{z})$, with $T_{j}=iM_{j}$, and the bracket is bilinear in each slot, so the diagonal rows of every table below are the same table in another basis. **The one number that changes form is the writing of the corner**: $B'$ is the sum of the three frame directions, not a sixteenth array, and the ratio $1/\sqrt6$ belongs to $D$ and not to a member of the basis, so it is untouched. **The normalisation of the diagonal family is**
+$$
+t_{j}=-\frac{A_{j}}{\sqrt8},\quad A_{j}=\sum_{k}M_{k}-2M_{j};\qquad t_{15}=\frac{iD}{\sqrt{24}},
+$$
+which replaces $t_{c_{3}}$ of the older passage and gives $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ on all fifteen, as [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html) states it. **The rules, the multiplicities and the $128$ entries do not move.**
+
 ## Conventions
 
 **The coordinates, stated once.** The derivative is $\partial/\partial R_{\imath}$, the metric is $\delta_{\imath\jmath}=(1,1,1,1)$, and every index is low: a contraction is a plain sum, $\sum_{\imath}X_{\imath}Y_{\imath}$, with no sign hidden in the metric.
