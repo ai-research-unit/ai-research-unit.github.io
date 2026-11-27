@@ -193,6 +193,25 @@ are both linear and both invertible, and they behave differently under the trace
 
 **It does fix one thing that is often left implicit.** The relative weight of the connection's kinetic term and the matter's kinetic term is not free once both are written on normalised bases; **the single coupling of a gauge theory is the statement that the two weights are one number.** That identity is what the words *one force* mean, and the density is where it becomes checkable.
 
+## Where This Article Sits
+
+**The pairing is the third of six filters, and this article is the section's hub.** The filters run in the order in which each one's domain is supplied by the one before it, and a density is what survives all six.
+
+| # | filter | the question | article |
+|---|---|---|---|
+| 1 | **the carrier roster** | which fields exist at all | [The Carrier Roster](the-carrier-roster-three-spins-and-no-fourth.html) |
+| 2 | **the group's acceptance** | which carrier this force can put a field on | [What a Group Can Accept](what-a-group-can-accept-a-carrier-must-transform-in-a-representation.html) |
+| 3 | **the pairing** | can the density be integrated at all | this article |
+| 4 | **closure of the term list** | which candidates exist to be tested | [The Closure of the Term List](the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html) |
+| 5 | **invariance** | which candidates survive | [Which Terms Survive](which-terms-survive-invariance-as-a-linear-condition-on-a-density.html), and its sharpest instance, [One Obstruction, Four Groups](one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html) |
+| 6 | **the residue** | what invariance leaves undecided | [What Invariance Cannot Decide](what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html) |
+
+**And one filter that is not in the sequence at all.** [The Inverse Problem of the Calculus of Variations](the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html) asks of the *equation* what every filter above asks of the *term*, and its hypothesis mentions no group. [Two Filters That Never Meet](two-filters-that-never-meet-invariance-and-helmholtz.html) states why the two do not constrain each other.
+
+**What this article hands forward, in one sentence.** The pairing decides whether a density is a *scalar*; it does not decide whether a term is *allowed*, because a term can be perfectly integrable and still not be invariant — and that is [the next filter but one](which-terms-survive-invariance-as-a-linear-condition-on-a-density.html)'s question. **The two questions are different, and the corpus's phrases for them have been running together.**
+
+**Where the article stood before the section existed.** It was the first entry inside *The Lagrangian*, and the reason it is now its own section's hub is that every claim here is a precondition of writing a Lagrangian rather than a property of one. **Nothing in the article changed when it moved except this section**, which exists to say what it is the hub of.
+
 ## Summary
 
 The density an action integrates must be a real scalar, invariant under the local transformation, and of one sign. **One functional supplies all three, the matrix trace, and cyclicity is the whole of the invariance**: the square of the curvature is invariant under $F\mapsto\tilde QF\tilde Q^{-1}$ exactly because $\operatorname{tr}(XY)=\operatorname{tr}(YX)$, and a pairing that is not cyclic has no invariant square.
