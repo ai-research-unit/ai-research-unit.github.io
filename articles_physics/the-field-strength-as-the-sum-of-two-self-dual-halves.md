@@ -233,7 +233,7 @@ $$
 
 and $d^{2}=0$ is the statement that mixed partial derivatives commute. So the shift is a symmetry of the theory and not of the potential, and the physical content is the equivalence class.
 
-### The Potential as a Connection and the Field Strength as Its Curvature
+### The Potential and the Field Tensor It Determines
 
 A one-form $A$ assigns to each direction of a curve a rate: $A(\dot x)$ is the component of $A$ along the motion. That is what a connection does, and the field strength is its curvature, the antisymmetric part of the derivative of the connection:
 
@@ -241,7 +241,7 @@ $$
 F_{\imath\jmath}=\partial_{\imath} A_{\jmath}-\partial_{\jmath} A_{\imath} .
 $$
 
-For an abelian connection the curvature is invariant, which is the calculation of the previous subsection; for a non-abelian one the curvature would acquire a commutator $[A_{\imath},A_{\jmath}]$ and would transform in the adjoint. The abelian case is the one the block uses, and the absence of the commutator is the reason the field strength's carrier is the bivector and not a tensor product of two vector carriers.
+In the abelian case the field tensor is invariant, which is the calculation of the previous subsection; a non-abelian one would acquire a commutator $[A_{\imath},A_{\jmath}]$ and would transform in the adjoint. The abelian case is the one the block uses, and the absence of the commutator is the reason the field strength's carrier is the bivector and not a tensor product of two vector carriers.
 
 ### Why the Two Carriers Behave Differently Under the Shift
 

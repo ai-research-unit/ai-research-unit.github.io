@@ -29,7 +29,7 @@ $$
 
 lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = i\,\mathrm{Sc}[(\Box_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box_\Phi\tilde{Ξ})]$, which vanishes whenever the field obeys the Klein–Gordon equation, the sign of $\tilde{J}_{\Phi}$ being the one for which the charge density of a positive-frequency wave is positive; the same current for the Dirac field, whose components are $j_{\imath}=\mathrm{Sc}(\tilde{Ξ}^*e_{\imath}\tilde{Ξ}\,b_{\imath})$ with $b_t=e_t$ and $b_{\imath}=\vec e_z$, conserved at every mass, while the axial current is conserved only at $m=0$; the free-particle four-momentum $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$ is the Noether charge of translation invariance, and the **total** four-momentum of an isolated system is conserved; and a translation acts on a plane wave by the central unit-modulus phase $\exp(-i\theta_{\mathrm{pwp}})$. What is standard, what is only transcribed, and what is interpretation is separated in its own section below.
 
-The angle is $\theta_{\mathrm{pwp}}=\frac{p\cdot x}{h}=\omega r'_t/c-2\pi\vec\nu_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\frac{h}{2\pi}$, so the angle is real, and the wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$.
+The angle is the Minkowski pairing of the four-momentum with the position, $\theta_{\mathrm{pwp}}=\omega r'_t/c-2\pi\vec\nu_\Phi\cdot\vec r$: both factors are real, so the angle is real, and the wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$.
 
 **Two defects in the read list, handled rather than repeated.** First, the four-force of the parent is defined by the **proper**-time derivative, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$, so the sum $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}$ across bodies is *not* the rate of change of the total four-momentum unless all the Lorentz factors agree; *Exercise: Four-Momentum Conservation in a Collision* reports this, and the conservation law is stated correctly below. Second, the translation of a plane wave is by a **central phase**, $\exp(-i\theta_{\mathrm{pwp}})$, and the $i$ is not optional: the same scalar in a real exponential, $\exp(\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}))$, is a dilation and not a phase at all.
 
@@ -56,11 +56,7 @@ The symbols and the signs are fixed once, here, so that the derivations below ca
 
 **The pairings.** $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, the bilinear form, complex and indefinite of realified inertia $(4,4)$; $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the Hermitian form, real and positive definite of realified inertia $(8,0)$. The field Lagrangian uses the second.
 
-**The units.** $m$ a mass, $c$ the speed of light in the medium ($c_0$ in vacuum), $h$ the Planck constant, $\vec v$ a particle or frame velocity, $d^{4}r=dr'_t\,dx\,dy\,dz$. The mass enters the field theory as the **mass wave number**
-$$
-\nu_m=\frac{mc}{h},\qquad m_0:=2\pi\nu_m=\frac{mc}{\hbar},\qquad \frac{1}{2\pi\nu_m}=\frac{\hbar}{mc},
-$$
-so that $m_0^{2}$ carries the dimensions of $\Box_\Phi$.
+**The units.** $m$ a mass, $c$ the speed of light in the medium ($c_0$ in vacuum), $\vec v$ a particle or frame velocity, $d^{4}r=dr'_t\,dx\,dy\,dz$. The mass enters as an inverse length, the **mass parameter** $m_0:=mc$, whose square carries the dimensions of $\Box_\Phi$, and the **mass wave number** is $\nu_m:=m_0/(2\pi)$.
 
 **The plane wave.** $\theta_{\mathrm{pwp}}=\omega r'_t/c-2\pi\vec\nu_\Phi\cdot\vec r\in\mathbb{R}$ and $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$, with $\omega$ an angular frequency and $\vec\nu_\Phi$ a spatial wave number. With $\tilde P_{\Phi}=i\frac{\omega}{c}e_t+2\pi\vec\nu_\Phi$ this is $\tilde\Xi\propto\exp(-i\theta_{\mathrm{pwp}})=\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde R_\Phi^{\natural}))$, and the mass shell is $\omega^{2}=c^{2}4\pi^{2}\vec\nu_\Phi^{2}+m_0^{2}c^{2}$.
 
@@ -127,7 +123,7 @@ $$
 \left(\Box_\Phi - 4\pi^{2}\nu_m^{2}\right)\tilde{Ξ} = 0,
 $$
 
-the overall sign of $\mathcal{L}$ being immaterial for the equation and fixed here by the positivity of the energy density. Both the action and the equation are those of the read list; $\mathcal{L}$ is exhibited only because a Noether current is read off a Lagrangian. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
+the overall sign of $\mathcal{L}$ being immaterial for the equation and fixed here by the positivity of the energy density. Both the action and the equation are those of the read list; $\mathcal{L}$ is exhibited only because a Noether current is read off a Lagrangian. Here $\nu_m$ is the mass wave number, the inverse of the mass length up to $2\pi$.
 
 ### Symmetries of the Action and of the Equations
 
@@ -253,7 +249,7 @@ The last case is the honest statement of the theorem: the current is conserved *
 
 ### Relation to the Current Already in the Corpus
 
-*The Klein–Gordon Equation in Biquaternionic Form* posits the current with $\rho =\frac{i\,h}{4\pi \,m\,c^{2}}(\tilde{Ξ}^{*}\partial/\partial r'_t\tilde{Ξ} - \tilde{Ξ}\partial/\partial r'_t\tilde{Ξ}^{*})$ and $\vec j = -\frac{i\,c}{4\pi\nu_m}(\tilde{Ξ}^{*}\vec\nabla_\Phi\tilde{Ξ} - \tilde{Ξ}\vec\nabla_\Phi\tilde{Ξ}^{*})$. Comparing component by component, that current equals $+\frac{c}{4\pi\nu_m}\tilde{J}_{\Phi}$: the Noether derivation reproduces the current the parent states, and fixes the normalization only up to the constant $\frac{c}{4\pi\nu_m}$ that a current may always be multiplied by. What the derivation adds is **why** that combination is the conserved one, and that it is forced by the phase symmetry rather than chosen.
+*The Klein–Gordon Equation in Biquaternionic Form* posits the current with $\rho =\frac{i}{2\,m\,c^{2}}(\tilde{Ξ}^{*}\partial/\partial r'_t\tilde{Ξ} - \tilde{Ξ}\partial/\partial r'_t\tilde{Ξ}^{*})$ and $\vec j = -\frac{i\,c}{4\pi\nu_m}(\tilde{Ξ}^{*}\vec\nabla_\Phi\tilde{Ξ} - \tilde{Ξ}\vec\nabla_\Phi\tilde{Ξ}^{*})$. Comparing component by component, that current equals $+\frac{c}{4\pi\nu_m}\tilde{J}_{\Phi}$: the Noether derivation reproduces the current the parent states, and fixes the normalization only up to the constant $\frac{c}{4\pi\nu_m}$ that a current may always be multiplied by. What the derivation adds is **why** that combination is the conserved one, and that it is forced by the phase symmetry rather than chosen.
 
 **Relation to the Maxwell source.** In the Maxwell article the source conservation is $Z\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ with $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$. Expanding, $Z\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = \partial/\partial r'_t\,\rho/\epsilon + Z\,\mathrm{div}\,\vec J$, so the Maxwell integrability condition is the same continuity equation as the conservation of $\tilde{J}_{\Phi}$ above. The electric four-current of the material sector is the Noether current of the central phase; the redundancy localized in *The Minimal Coupling in Biquaternionic Form* is the localization of the symmetry that produces it.
 
@@ -308,7 +304,7 @@ $$
 \langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural} = \sum_{\imath}\frac{\partial j_{5\imath}}{\partial R_{\imath}} = 2im\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\vec e_y\bigr),
 $$
 
-using $\vec e_z\vec e_x=\vec e_y$, and this vanishes only at $m=0$. **The $m$ in this display is the mass wave number of §*Conventions*, $m=2\pi\nu_m$, i.e. the mass in the units $\hbar=c=1$**; with the units restored the right-hand side reads $2i(2\pi\nu_m)\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi\vec e_y)$, which has the dimensions of a divergence of a density, $\ell^{-1}$ times the density, as it must. The same statement without the units on show: the axial rotation multiplies each part by a phase opposite to the other's, and on the algebra it is a right multiplication,
+using $\vec e_z\vec e_x=\vec e_y$, and this vanishes only at $m=0$. **The $m$ in this display is the mass wave number of §*Conventions*, $m=2\pi\nu_m$, i.e. the mass in the units of the gradient**; with the units restored the right-hand side reads $2i(2\pi\nu_m)\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi\vec e_y)$, which has the dimensions of a divergence of a density, $\ell^{-1}$ times the density, as it must. The same statement without the units on show: the axial rotation multiplies each part by a phase opposite to the other's, and on the algebra it is a right multiplication,
 
 $$
 \tilde{Ξ}\ \longmapsto\ \tilde{Ξ}\,(\cos\theta_{\mathrm{axr}}+\sin\theta_{\mathrm{axr}}\,\vec e_z),
@@ -385,7 +381,7 @@ The naive sum of the parent's four-forces is not zero even though the total four
 A free field is a plane wave, and a translation acts on it by a central phase. With the series' phase convention $\tilde{Ξ} = \tilde{Ξ}_0\exp(-i\theta_{\mathrm{pwp}})$, whose phase is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = 2\pi\vec\nu_\Phi\cdot\vec r-\omega r'_t/c$, and with $\tilde P_{\Phi}\in\mathbb{B}_{\Phi}$ and $\tilde R_\Phi\mapsto\tilde R_\Phi+\tilde{R}_{\Phi,0}$,
 
 $$
-\tilde{Ξ}\big|_{\tilde R_\Phi+\tilde{R}_{\Phi,0}} = \exp\!\bigl(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})\frac{2\pi}{h}\bigr)\,\tilde{Ξ}\big|_{\tilde R_\Phi},
+\tilde{Ξ}\big|_{\tilde R_\Phi+\tilde{R}_{\Phi,0}} = \exp\!\bigl(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})\bigr)\,\tilde{Ξ}\big|_{\tilde R_\Phi},
 \qquad
 \tilde{Ξ}_0\ \text{constant}.
 $$
@@ -481,7 +477,7 @@ the last equality being the Poynting theorem. The factor $i$ is uniform across t
 
 ### A Caution on the $i r'_t$ Convention
 
-The energy density is not $\mathcal{L}_{\mathrm{scl},\xi}$ and is not obtained from it by a flat sum: $T_{00}=\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2+4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$ while $\mathcal{L}_{\mathrm{scl},\xi}=-\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2+4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$, with the mass wave number $\nu_m=\frac{mc}{h}$ and its reciprocal $\nu_m=\frac{mc}{h}$. The gradient and $\Box_\Phi$ live in the $Q_{\imath}$ frame, where $Q_0=i q'_t$; the tensor lives in $x_{\imath}=(r'_{t},r_x,r_y,r_z)$, where the time component is real and the minus is written on the time derivative. Mixing the two charts produces the wrong sign on the time derivative, and the mismatch is the same $1/i^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real coordinates. This is the same caution the energy–momentum exercise records for the trace.
+The energy density is not $\mathcal{L}_{\mathrm{scl},\xi}$ and is not obtained from it by a flat sum: $T_{00}=\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2+4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$ while $\mathcal{L}_{\mathrm{scl},\xi}=-\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\vec\nabla_\Phi\xi_{\mathrm{scl}}|^2+4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$, with the mass wave number $\nu_m=\frac{mc}{2\pi}$ and its reciprocal $\frac{1}{\nu_m}$. The gradient and $\Box_\Phi$ live in the $Q_{\imath}$ frame, where $Q_0=i q'_t$; the tensor lives in $x_{\imath}=(r'_{t},r_x,r_y,r_z)$, where the time component is real and the minus is written on the time derivative. Mixing the two charts produces the wrong sign on the time derivative, and the mismatch is the same $1/i^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real coordinates. This is the same caution the energy–momentum exercise records for the trace.
 
 ## Lorentz Invariance and the Angular-Momentum Bivector
 
@@ -635,7 +631,7 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $\tilde{\mathcal F}_{\mathrm{frc},a} = d\tilde{P}_{\Phi,a}/d\tau_a$ | Four-force (proper-time derivative; not summable) |
 | $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{B}_{C}$ | Complex biquaternion scalar field |
 | $\mathcal{L} = \sum_{\imath}(\partial{\xi_{\mathrm{scl}}}^{*}/\partial R_{\imath})(\partial\xi_{\mathrm{scl}}/\partial R_{\imath}) + 4\pi^{2}\nu_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$ | Field Lagrangian density, $Q$ frame; its overall sign is the one for which $T_{00}>0$ |
-| $\nu_m=\frac{mc}{h}$, $m_0=2\pi\nu_m=\frac{mc}{\hbar}$ | Mass wave number, and the mass in the units of $\Box_\Phi$; $m_0^{2}$ is the coefficient of the mass term |
+| $\nu_m$, $m_0=2\pi\nu_m=mc$ | Mass wave number, and the mass parameter, the mass in the units of $\Box_\Phi$; $m_0^{2}$ is the coefficient of the mass term |
 | $A_{\imath\jmath} = (\partial_\imath{\xi_{\mathrm{scl}}}^{*})(\partial_\jmath\xi_{\mathrm{scl}})+(\partial_\jmath{\xi_{\mathrm{scl}}}^{*})(\partial_\imath\xi_{\mathrm{scl}})$ | The derivative part of the canonical tensor, before the $\varepsilon_\imath\delta_{\imath\jmath}\mathcal{L}$ term |
 | $\theta_{\mathrm{pwp}} = \omega r'_t/c-2\pi\vec\nu_\Phi\cdot\vec r$ | Plane-wave angle; $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$, $\omega^{2}=c^{2}4\pi^{2}\vec\nu_\Phi^{2}+m_0^{2}c^{2}$ |
 | $\rho = \frac{i}{c}\left({\xi_{\mathrm{scl}}}^{*}\dot\xi_{\mathrm{scl}}-\xi_{\mathrm{scl}}\dot{\xi_{\mathrm{scl}}}^{*}\right)=\frac{2\omega}{c^{2}}\lvert\xi_{\mathrm{scl}}\rvert^{2}$ | Charge density, $J_t=ic\rho$; positive on a positive-frequency wave |

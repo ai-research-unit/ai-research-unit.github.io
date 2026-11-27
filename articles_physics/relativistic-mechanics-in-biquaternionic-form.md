@@ -145,7 +145,7 @@ Note on the biquaternion expression. The component formula above is standard and
 
 ## The Action
 
-The action is one of the ten formulas listed at the end of this article and it is derived nowhere in it. The derivation, the variation that produces the worldline equation, and the Euler–Lagrange machinery are in [The Relativistic Particle and the Lagrangian: The Stationary-Action Principle](the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.html), §*The Relativistic Particle*. **Relativity states the objects and their motion; the action principle is apparatus**, and this article takes $\tilde P_{\Phi} = m\tilde V_{\Phi}$ as the definition of the four-momentum rather than as a consequence.
+The action is one of the eight formulas listed at the end of this article and it is derived nowhere in it. The derivation, the variation that produces the worldline equation, and the Euler–Lagrange machinery are in [The Relativistic Particle and the Lagrangian: The Stationary-Action Principle](the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.html), §*The Relativistic Particle*. **Relativity states the objects and their motion; the action principle is apparatus**, and this article takes $\tilde P_{\Phi} = m\tilde V_{\Phi}$ as the definition of the four-momentum rather than as a consequence.
 
 ## The Conserved Current
 
@@ -175,39 +175,13 @@ $$
 
 The condition is the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi} = 0$. The full equation $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi} = 0$ is stronger, because the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ does not vanish in general: it involves the spatial derivatives of $\rho$ and $\vec j$, and it does not correspond to a standard physical conservation law. So the continuity equation is the scalar projection of the biquaternion conservation law.
 
-## The Klein–Gordon Equation
+## The Wave Equations, and Where They Are Treated
 
-The **Klein–Gordon equation** for a relativistic scalar field $\tilde{Ξ}$ of mass $m$ is
+The mechanics above closes without a field equation. The mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}c^{2}$ is the kinematic statement, and it is what the four-momentum of a particle obeys whether or not a field is written for it.
 
-$$
-\left(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (2\pi\nu_m)^{2}\right)\tilde{Ξ} = 0.
-$$
+The two free wave equations that a field of mass $m$ obeys, the Klein–Gordon equation for a scalar and the Dirac pair for a spinor, are not kinematics and are not stated here. They belong to *Biquaternion Universe Free of Force*, which writes them in *The Klein–Gordon Equation in Biquaternionic Form* and *The Dirac Equation in Biquaternionic Form*, together with their polar and momentum-space forms, their fluids and their propagators. This article uses none of them and fixes no mass coefficient.
 
-Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is the d'Alembertian in the biquaternion form, and $\nu_m = \frac{m\,c}{h}$ is the mass wave number, with $\frac{h}{2\pi}$ the action of one radian of phase. Expanding,
-
-$$
-\Box_\Phi\tilde{Ξ} = (2\pi\nu_m)^{2}\tilde{Ξ},
-$$
-
-which is the standard Klein–Gordon equation $(\Box_\Phi-4\pi^{2}\nu_m^{2})\tilde{Ξ}=0$, with $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$ on the material coordinate. The biquaternion form is compact and manifestly Lorentz-covariant.
-
-## The Dirac Equation
-
-The **Dirac equation** for a relativistic spinor field $\tilde{Ξ}$ of mass $m$ is the linear, chirality-off-diagonal pair
-
-$$
-\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R},
-$$
-
-where $\tilde{Ξ} = \tilde{Ξ}_{L} + \tilde{Ξ}_{R}$ carries one component per chirality. In the massless case ($m = 0$), the pair decouples into the two one-sided equations
-
-$$
-\tilde\nabla_\Phi\tilde{Ξ}_{R} = 0, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 0,
-$$
-
-the first of which is identical in form to the source-free biquaternion Maxwell equation. The mass term $\nu_m\tilde{Ξ}_{L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde\nabla_\Phi\tilde{Ξ} = 2\pi\nu_m\tilde{Ξ}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus, so it is not a mass term. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
-
-## Summary of the Ten Formulas
+## Summary of the Eight Formulas
 
 | Quantity | Biquaternion formula | Constraint |
 |---|---|---|
@@ -219,10 +193,7 @@ the first of which is identical in form to the source-free biquaternion Maxwell 
 | Four-force | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$ | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0$ |
 | Action | $S = -mc\int\sqrt{-\,d\tilde R_\Phi\,d\tilde R_\Phi^{\natural}}$ | — |
 | Current | $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$ | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ |
-| Klein–Gordon | $(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (2\pi\nu_m)^{2})\tilde{Ξ} = 0$ | — |
-| Dirac | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = 2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 2\pi\nu_m\tilde{Ξ}_{R}$ | — |
 
-Here $\frac{1}{2\pi\nu_m}$ is the mass length.
 
 ## Structural Observations
 
@@ -231,8 +202,6 @@ The four-vectors live in $\mathbb{B}_{\Phi}$. The four-position, four-velocity, 
 **The mass-shell relation is a norm condition.** The statement $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$ is the statement that the **biquaternion norm** of the four-momentum is a fixed negative constant. Massless particles satisfy $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = 0$, which is the condition that the four-momentum lies on the **zero divisor cone** of the algebra (see the companion article on biquaternion zero divisors). So the light cone of Minkowski space is, in the biquaternion language, the **material-sector part of the zero divisor set** of the algebra.
 
 The conserved current is a scalar projection of the biquaternion conservation law. The continuity equation is the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi} = 0$. The full biquaternion equation is stronger, and the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ does not have an independent physical interpretation as a conservation law.
-
-The wave equations are factorization. The Klein–Gordon and Dirac equations are related by the factorization $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$. The Dirac equation is the first-order factor of the Klein–Gordon equation, and the mass term is the term that distinguishes the massive case from the massless one. This factorization is the biquaternion form of the standard Dirac factorization of the Klein–Gordon operator.
 
 ## The Tensor-Dynamics Reading, and the Question of Extra Terms
 
@@ -270,14 +239,13 @@ These questions are open.
 
 ## Summary
 
-The ten basic formulas of relativistic mechanics — four-position, invariant interval, four-velocity, four-momentum, mass-shell relation, four-force, action, current, Klein–Gordon, and Dirac — can all be expressed in the biquaternion algebra $\mathbb{B}$ using the $i r'_t$ convention. The biquaternion formulation makes the following structural facts explicit:
+The eight basic formulas of relativistic mechanics, four-position, invariant interval, four-velocity, four-momentum, mass-shell relation, four-force, action and current, can all be expressed in the biquaternion algebra $\mathbb{B}$ using the $i r'_t$ convention. The biquaternion formulation makes the following structural facts explicit:
 
 - The invariant interval is the biquaternion norm of the four-position displacement biquaternion.
 - The four-velocity, four-momentum, four-force, four-potential, and four-current lie in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.
 - The mass-shell relation is the biquaternion-norm condition $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$.
 - The light cone is the material-sector part of the zero-divisor set of the algebra.
 - The conserved current is characterized by the scalar part of the quaternion-conjugate gradient vanishing.
-- The wave equations are the factorization of the d'Alembertian.
 
 These identities are algebraic, not physical. They are the reason the biquaternion algebra is the natural home of relativistic mechanics, and they are the starting point for the biquaternion formulation of Lorentz transformations, fields, and interactions developed in the companion articles. The biquaternion expression of the Lorentz force remains to be worked out and is flagged as an open question.
 

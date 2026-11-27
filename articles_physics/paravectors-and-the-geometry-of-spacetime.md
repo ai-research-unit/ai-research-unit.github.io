@@ -363,23 +363,7 @@ $$
 
 The paravector calculus is therefore the calculus of *one-sided* basis operators of a three-dimensional Clifford set, and that is exactly what the boost rule of this article uses.
 
-**The two Dirac equations.** The corpus carries two, and the paravector reading sits against both. The first is **one-sided** and chiral,
-
-$$
-L_{\tilde\nabla_\Phi}\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
-\qquad
-L_{(\tilde\nabla_\Phi)^{\natural}}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
-$$
-
-a pair of lines in which the gradient acts from the left on each chiral half and the mass is the off-diagonal pairing that mixes them. The second is **two-sided**,
-
-$$
-\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F=2\pi\nu_m\,i\,\overline F\,\vec e_z ,
-\qquad
-D_3=\sum_{\imath\in\{x,y,z\}}\vec e_{\imath}\frac{\partial}{\partial R_{\imath}},
-$$
-
-a single equation on $\mathbb{B}$ whose left side is one-sided and whose mass term is a right multiplication by $\vec e_z$ accompanied by the componentwise complex conjugation. The distinction is not decoration. In the first equation the basis operator that carries the split is $\gamma_5$, and on the Dirac module its two eigenspaces are the two halves of the field; in the second equation no eigenspace decomposition is taken, and the same element enters by multiplication in the mass term. The first is one-sided in the operator and doubled in the field; the second is two-sided in the operator and single in the field. Here $\frac{1}{2\pi\nu_m}$ is the mass length.
+**The two forms of the free equation.** The corpus carries two, and the paravector reading sits against both. The first is **one-sided** and chiral: a pair of lines in which the gradient acts from the left on each chiral half and the mass is the off-diagonal pairing that mixes them. The second is **two-sided**: a single equation on $\mathbb{B}$ whose left side is one-sided and whose mass term is a right multiplication by $\vec e_z$ accompanied by the componentwise complex conjugation. Both forms are written out in *Biquaternion Universe Free of Force*.
 
 The paravector reading supplies the one-sided half: a paravector multiplying from the left is a basis operator $L_p$, and the whole of the boost rule is one-sided. What it does not supply is the doubling. A chirality is a side, and a sign is available on any carrier a basis operator acts on: a basis operator separates that carrier into two eigenspaces when it squares to the identity, and it does so because it is an involution, not because it anticommutes with anything. Anticommutation is a property of a pair of basis operators and not a condition a chirality has to meet, and as a criterion it is empty: it would have to hold against $L(e_t)=\mathrm I$, and only the zero operator anticommutes with the identity. The pseudoscalar of the algebra of physical space is the central $i$; it squares to $-1$, multiplies every element by the same scalar, and separates nothing. The two objects are often confused, and the confusion has a visible cause: in the basis operator formulation $\gamma_5^{2}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ while $\gamma_5$ anticommutes with the four generating basis operators, and in the element formulation $i^2=-e_t$ while $i$ commutes with everything. A central scalar and a side cannot be the same object, and it is the reason the paravector literature writes one Dirac equation where the basis operator formulation writes two. The full account is in *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, §*The Two Equations of the Corpus*.
 

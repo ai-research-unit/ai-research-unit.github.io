@@ -90,7 +90,7 @@ The common shorthand "the two Casimirs label the orbit" is a compression of this
 
 | orbit | $C_1$ | $C_2$ |
 |---|---|---|
-| timelike | $m^{2}c^{2}$ | $\frac{h^{2}}{4\pi^{2}}m^{2}c^{2}j(j+1)$, with $j$ the spin |
+| timelike | $m^{2}c^{2}$ | $m^{2}c^{2}\,j(j+1)$, with $j$ the spin |
 | null | $0$ | $0$ for all physical representations |
 | spacelike | $-\mu^{2}$ | takes both signs |
 

@@ -598,7 +598,7 @@ The reading is that this group is the symmetry group of the frame and not the Lo
 
 The transitivity is what forbids the spectral split, and the two statements are one theorem. Because the group is transitive on the wall, a function invariant under it is constant there; because the square of the vector part is not constant there, it is not an invariant of the weight. A classification by the weight can therefore have no second axis inside the wall.
 
-The boundary. No connection, no connection and no curvature is constructed. The group is the isometry group of one form on one algebra, and the identification of it with a physical symmetry group is not made.
+The boundary. No local structure and no curvature is constructed. The group is the isometry group of one form on one algebra, and the identification of it with a physical symmetry group is not made.
 
 ### I.11.l — The Indefinite Cone Is Not a State Space
 
@@ -622,7 +622,7 @@ No statistics is supplied. The indefinite inner product of operator theory comes
 
 No measurement theory is supplied. The state slice, the Born weight and the projection postulate belong to the informational sector's entry, and this entry refers to them and does not restate them. The K norm is the form of a relativistic state space and it is not a rule for outcomes; the rule for outcomes is the definite form's.
 
-No connection is supplied. The group $\mathrm{U}(1,3)$ is the isometry group of the form on the coefficient space. It is not promoted to a local symmetry, no connection is chosen, and no field strength is computed. The inherited term in I.11.k names an invariance and not a theory.
+No symmetry is varied. The group $\mathrm{U}(1,3)$ is the isometry group of the form on the coefficient space. It is the isometry group of the form and nothing more, and no field content is computed. The inherited term in I.11.k names an invariance and not a theory.
 
 No scale is fixed. The norm is homogeneous of degree two, so every non-zero element has a one-parameter family of rescalings that stay on its level set. Nothing in the form selects an invertible element, and the choice of a level set on which to normalise an element is a separate act. The physical readings use the mass shell, and the mass shell is a chart-dependent choice of level.
 

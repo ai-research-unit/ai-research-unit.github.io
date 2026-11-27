@@ -71,7 +71,7 @@ $$
 \langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\delta r'_{\mathrm{ret},t}\,\delta r'_{t,\mathrm{adv}} .
 $$
 
-A signal therefore satisfies $\delta r'_{\mathrm{ret},t} = 0$ or $\delta r'_{t,\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P_{\Phi} =\frac{h}{2\pi}\,(i\omega/c\,e_t + 2\pi\vec\nu_\Phi)$ propagating along $\vec u_\Phi$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
+A signal therefore satisfies $\delta r'_{\mathrm{ret},t} = 0$ or $\delta r'_{t,\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P_{\Phi} = i\omega/c\,e_t + 2\pi\vec\nu_\Phi$ propagating along $\vec u_\Phi$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
 Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{Q}^{\natural}\right) = 2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c = -\omega\left(r'_t - \frac{\vec u_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t}/c,

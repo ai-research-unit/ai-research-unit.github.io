@@ -92,23 +92,15 @@ Parity exchanges the two chiralities, so a bilinear that pairs them is parity-in
 
 The converse is the reason a *single* Weyl spinor cannot have a Dirac mass: there is no second chirality in the field content to pair with, and the only available self-pairing is the antilinear one of the Majorana option.
 
-### The Two Equations
+### The Coupled Pair
 
-The coupled system in the corpus's notation is
+The mass is the term that converts one chirality into the other: an equation for one half carries the other half on its right-hand side, and the coefficient is the same in both lines. The two halves decouple exactly when that coefficient vanishes, which is the massless case.
 
-$$
-\tilde\nabla_\Phi\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
-\qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R,
-$$
+The two first-order lines that express this, with the gradient acting on each half and the mass multiplying the other, are written in *The Dirac Equation in Biquaternionic Form*, where the coefficient is fixed. This article states the pairing, which is algebraic, and leaves the equation, which is dynamics, to the free layer.
 
-with $\nu_m=\frac{mc}{h}$ the mass wave number. Each equation is first order and each carries the other chirality on its right-hand side: the mass is the term that converts one into the other as the field propagates.
+### The Mass as a Coefficient
 
-That is the algebraic form of "a massive particle's chirality flips as it moves": the free equation is a rotation of the pair, and its rate is $\nu_m$.
-
-### The Mass as a Frequency
-
-The mass wave number is the frequency of that rotation, and the rotation's period is the Compton wavelength. So the mass is not a coupling constant in the usual sense but a *rate*: a massless field's two halves propagate independently, and a massive field's two halves rotate into each other with a fixed frequency. In the massless limit the frequency goes to zero and the two halves decouple.
+The mass is not a coupling constant in the usual sense but the *coefficient that ties the halves*: a massless field's two halves are independent, and a massive field's two halves are locked to each other, with the coefficient fixed by the mass and by nothing else in the algebra. In the massless limit the coefficient vanishes and the two halves decouple.
 
 ### What the Mass Is Not
 
@@ -142,15 +134,7 @@ That is why the two words must not be used interchangeably, and why the block's 
 
 ### The Massless Limit
 
-As $\nu_m\to0$ the two equations decouple:
-
-$$
-\tilde\nabla_\Phi\tilde\Xi_R=0,
-\qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=0,
-$$
-
-and each half is separately a good field. So the Weyl spinors are the massless limit of the pair, and the pair is the massive completion. The limit is continuous in the equations and discontinuous in the particle content: a massless particle has one helicity, a massive one has two.
+As $m\to0$ the two members of the pair decouple, and each half is separately a good field. So the Weyl spinors are the massless limit of the pair, and the pair is the massive completion. The limit is continuous in the equations and discontinuous in the particle content: a massless particle has one helicity, a massive one has two.
 
 ### The Particle Content
 
@@ -190,7 +174,7 @@ This article stops at the carrier and the coupling. The equation itself — the 
 
 ## Summary
 
-A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two inequivalent spinor representations and is, in the algebra, the algebra itself as a four-dimensional complex space. The mass term is the off-diagonal bilinear $m\Psi^{\dagger}\gamma_{0}\Psi=2m\mathrm{Re}(\xi^{\dagger}\upsilon_{\mathrm{spr}})$, verified to vanish on the diagonal and to pair the two halves, and it is parity-allowed because parity exchanges the halves. In the field equations the mass is the rate at which one chirality converts into the other, with frequency $\nu_m=\frac{mc}{h}$, and the massless limit decouples the two. Chirality is the $\gamma^{5}$ eigenvalue and coincides with helicity only for a massless particle. The Majorana option is the antilinear self-pairing, available for a single Weyl spinor and physically realised, and it is a different pairing from the Dirac one, built on a different real structure.
+A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two inequivalent spinor representations and is, in the algebra, the algebra itself as a four-dimensional complex space. The mass term is the off-diagonal bilinear $m\Psi^{\dagger}\gamma_{0}\Psi=2m\mathrm{Re}(\xi^{\dagger}\upsilon_{\mathrm{spr}})$, verified to vanish on the diagonal and to pair the two halves, and it is parity-allowed because parity exchanges the halves. In the field equations the mass is the coefficient at which one chirality converts into the other, and the massless limit decouples the two. Chirality is the $\gamma^{5}$ eigenvalue and coincides with helicity only for a massless particle. The Majorana option is the antilinear self-pairing, available for a single Weyl spinor and physically realised, and it is a different pairing from the Dirac one, built on a different real structure.
 
 ## Summary of Notation
 
@@ -200,7 +184,7 @@ A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two in
 | $\Psi=(\xi,\upsilon_{\mathrm{spr}})$ | the Dirac pair |
 | $\gamma^{5}$ | the chirality grading, $\mathrm{diag}(-1,-1,+1,+1)$ |
 | $P_{\pm}=\tfrac12(1\pm\gamma^{5})$ | the chirality projectors |
-| $\nu_m=\frac{mc}{h}$ | the mass wave number |
+| $m$ | the mass, the coefficient that pairs the two chiralities |
 | $\Psi_{c}$ | the charge conjugate |
 
 ## Further Reading

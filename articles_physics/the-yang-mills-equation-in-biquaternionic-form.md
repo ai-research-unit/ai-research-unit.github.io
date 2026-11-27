@@ -516,7 +516,7 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $T_a = \tfrac12 e_a$, $2\,\mathrm{Sc}(T_aT_b) = -\tfrac12\delta_{ab}$ | Normalized generators; matrix trace |
 | $\tilde U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde U^{-1} = \bar{\tilde U} = \tilde U^\dagger$ |
 | $\mathcal{A}_{\imath} = \sum_a\mathcal{A}_{\imath a} e_a \in \mathrm{SU}(2)$, $\mathcal{A} = \sum_{\imath}\mathcal{A}_{\imath} e_{\imath}$ | Non-abelian connection |
-| $\kappa =\frac{2\pi ϙ}{h}$ | Coupling |
+| $\kappa$ | Coupling, not fixed by the algebra |
 | $D_{\imath} = \partial/\partial R_{\imath} + i\kappa\mathcal{A}_{\imath}$, $D = \tilde\nabla_\Phi + i\kappa\mathcal{A}$ | Covariant derivative (left multiplication on matter) |
 | $\mathcal{A}_{2,\imath} = \tilde U\mathcal{A}_{\imath} \tilde U^{-1} + \frac{i}{\kappa}(\partial/\partial R_{\imath} \tilde U)\tilde U^{-1}$ | Adjoint local transformation of the connection |
 | $F_{\imath\jmath} = \partial/\partial R_{\imath}\,\mathcal{A}_{\jmath} - \partial/\partial R_{\jmath}\,\mathcal{A}_{\imath} + i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$ | Non-abelian curvature |

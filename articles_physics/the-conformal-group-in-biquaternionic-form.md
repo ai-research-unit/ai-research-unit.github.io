@@ -308,13 +308,9 @@ reduce to a conformal map of vectors. For Minkowski space the entries live in $\
 
 The same passage adds, and this is **speculative**, a **physical interpretation** of the dilations: the authors argue that an extended object in this arena changes size "as a result of free motion, without presence of any forces or such fields as assumed in Weyl theory", moving dilationally *because of inertia* rather than because a compensating connection has been introduced, and they cite their own earlier work for the proposal. That is a proposal about why scale changes occur, not a derivation, and it is recorded here as the programme's claim, not as a result of the algebra.
 
-## The Field Equation and the Mass
+## The Symmetry and the Mass
 
-The group is the symmetry of an equation, and the equation has not yet been named. It is the gradient equation of the series (*Operator and Calculus Conventions*, §*The Gradient*). At $m=0$ it is first order in one field,
-$$
-\tilde\nabla_\Phi\tilde{Ξ}=0,
-$$
-and every derivative in it is the gradient defined in the introduction. This is the equation the fifteen parameters leave invariant: a conformal map carries a solution to a solution times a power of the conformal factor, and the mass term is the only obstruction. It is also the reason a conformal group enters the physics at all: Maxwell's equations are the massless case.
+The group is the symmetry of an equation, and the equation itself belongs to *Biquaternion Universe Free of Force*. It is the free gradient equation of the series (*Operator and Calculus Conventions*, §*The Gradient*), first order in one field at zero mass. This is the equation the fifteen parameters leave invariant: a conformal map carries a solution to a solution times a power of the conformal factor, and the mass term is the only obstruction. It is also the reason a conformal group enters the physics at all: Maxwell's equations are the massless case.
 
 The mass cannot be a term of the same kind. The square of the gradient is not scalar: the unit $e_t$ is the identity of the algebra, so it commutes with the three spatial units, and the two orders of a mixed derivative add, not cancel,
 $$
@@ -326,12 +322,7 @@ $$
 $$
 The square of the gradient is not the d'Alembertian, and the claim that it is must not be made.
 
-The massive equation is the chiral pair, one equation per chirality,
-$$
-\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},\qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
-$$
-both members acting from the left on their own field, so no glyph names a side. Applying $(\tilde\nabla_\Phi)^{\natural}$ to the first member and substituting the second returns $\Box_\Phi\tilde{Ξ}_{R}=4\pi^{2}\nu_m^{2}\tilde{Ξ}_{R}$, so the pair is one dynamics on two fields: the mass couples the halves, and each half obeys the d'Alembertian at mass $m$. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
+The massive law is a pair of first-order lines, one per chirality, both acting from the left on their own field, so no glyph names a side. Composing the two returns a second-order scalar operator on each half, so the pair is one dynamics on two fields: the mass couples the halves, and each half obeys the d'Alembertian at mass $m$. The pair itself is written out in *Biquaternion Universe Free of Force*.
 
 This is the operator form of the boundary drawn above. The massless law is first order in one field and the massive law is first order in two; no rewriting puts the mass into a first-order equation for one field, and the mass is exactly what breaks the conformal invariance. The algebra is large enough for both, and the passage from one to the other is the price the boundary charges.
 
@@ -345,7 +336,7 @@ $$
 $$
 which reproduces $Q_{2\imath}=(Q_{\imath}+a_{\imath} x^2)/(1+2a\cdot x+a^2x^2)$.
 
-What it does not carry: the group. The algebra is eight real dimensions and its unit-norm subgroup six, against the conformal group's fifteen; the six Lorentz generators are elements of $\mathbb{B}$, the dilation is realized by a non-invertible element, and its generator is a non-inner, nonzero-trace linear map; the four translations are affine and the four special conformal transformations are fractional. The transformations realized linearly or affinely on $\mathbb{B}_{\Phi}$ form the eleven-dimensional similitude group, and the four remaining generators are exactly the nonlinear part. The standard homes of the full group are larger — an entry algebra of twice the real dimension of $\mathbb{B}$, a conformal rotor algebra four times it, or $SU(2,2)$ acting on a $\mathbb{C}^4$ equipped with a $(2,2)$ Hermitian form that the biquaternion norm is not — and §*Larger Homes in the Literature* names each. The conformal group is expressed by the algebra — by its biquaternion norm's zero set, its inverse, and its four-vector module — and is not contained in it. The operator content is the gradient: the massless law is $\tilde\nabla_\Phi\tilde{Ξ}=0$, and the mass couples the two chirality halves, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$. The square of the gradient is not scalar, so no first-order equation for one field carries the mass.
+What it does not carry: the group. The algebra is eight real dimensions and its unit-norm subgroup six, against the conformal group's fifteen; the six Lorentz generators are elements of $\mathbb{B}$, the dilation is realized by a non-invertible element, and its generator is a non-inner, nonzero-trace linear map; the four translations are affine and the four special conformal transformations are fractional. The transformations realized linearly or affinely on $\mathbb{B}_{\Phi}$ form the eleven-dimensional similitude group, and the four remaining generators are exactly the nonlinear part. The standard homes of the full group are larger — an entry algebra of twice the real dimension of $\mathbb{B}$, a conformal rotor algebra four times it, or $SU(2,2)$ acting on a $\mathbb{C}^4$ equipped with a $(2,2)$ Hermitian form that the biquaternion norm is not — and §*Larger Homes in the Literature* names each. The conformal group is expressed by the algebra — by its biquaternion norm's zero set, its inverse, and its four-vector module — and is not contained in it. The operator content is the gradient: the massless law is one first-order line on one field, and the mass couples the two chirality halves in a pair of lines, one per half. The square of the gradient is not scalar, so no first-order equation for one field carries the mass.
 
 What the algebra does carry, by contrast, is the compactification, and it carries it on a different form. The space on which the conformal group acts globally is the $*$-unitary group $\mathrm{U}(2)$ of *Norm and Pairing Conventions* — and not the unit-norm group $SL(2,\mathbb{C})$. Each sector charts it by a Cayley transform poled in the other sector, $\tilde{U}_{\mathrm{C}}=(\tilde{Q}-p)(\tilde{Q}+p)^{-1}$ with $p=ie_t$ for $\mathbb{B}_{\Psi}$ and $p=e_t$ for $\mathbb{B}_{\Phi}$, and the chart transition between the two is the star. The boundary is the chord $e_t-\tilde{U}_{\mathrm{C}}$ becoming a zero divisor; the light cone of the origin is the corresponding locus for $e_t+\tilde{U}_{\mathrm{C}}$; and where both vanish the boundary is the sphere $i\vec n$, $\vec n\in S^{2}$ — the half-turns, which are the differences $\tilde\Pi_{\mathrm{id},1}(\vec n)-\tilde\Pi_{\mathrm{id},2}(\vec n)$ of the two complementary pure states. The sphere at infinity of a sector is the Bloch sphere of that sector read as generators. What the construction does not give is a reason to prefer the compactified space, or an action of the conformal group inside $\mathbb{B}$: the compactification is available to the algebra, not forced by it.
 
@@ -369,11 +360,11 @@ The algebra, its units, the scalar imaginary, the sectors, the norm and its pola
 | $I\circ T_{\tilde Q_3}\circ I$ | Special conformal transformation |
 | $SO^+(2,4)$, $SU(2,2)$ | Connected conformal group, of dimension $15$, and its double cover |
 | $c$ | Speed of light in the medium, entering the corpus's $Q_t=i q'_t$ |
-| $\tilde{Ξ}_{R}$, $\tilde{Ξ}_{L}$ | Chirality halves of the gradient pair, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R}$ |
+| $\tilde{Ξ}_{R}$, $\tilde{Ξ}_{L}$ | Chirality halves of the field, the two members of the massive pair |
 
 ## Further Reading
 
-- [The First-Order Root of the Biquaternion Klein–Gordon Operator](the-first-order-root-of-the-biquaternion-klein-gordon-operator.html), for the massless gradient equation, for the square of the gradient that is not the d'Alembertian, and for the chiral pair that carries the mass.
+- [The First-Order Root of the Biquaternion Klein–Gordon Operator](the-first-order-root-of-the-biquaternion-klein-gordon-operator.html) in *Biquaternion Universe Free of Force*, for the massless gradient equation, for the square of the gradient that is not the d'Alembertian, and for the chiral pair that carries the mass.
 - Philippe Di Francesco, Pierre Mathieu, and David Sénéchal, *Conformal Field Theory* (Springer, 1997), for the conformal algebra, its generators, and the $SO(d,2)$ form of the conformal group.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the conformal group and the generators of dilations and special conformal transformations in the standard physics convention.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 2 (Cambridge, 1986), for the conformal compactification of Minkowski space and its relation to null geometry.

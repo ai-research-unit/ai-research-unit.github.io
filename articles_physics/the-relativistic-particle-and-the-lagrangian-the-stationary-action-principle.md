@@ -47,11 +47,7 @@ $$
 | quaternionic, bilinear | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_2\bigr)$ | $N=\sum_{\imath}Q_{\imath}^{2}$ | $(4,4)$, indefinite |
 | Hermitian | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)$ | $H=\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ | $(8,0)$, definite |
 
-**The units.** $m$ is a mass, $c$ a speed, $h$ the Planck constant, $ϙ$ a charge, and $d^{4}r=dr'_t\,dx\,dy\,dz$. The mass enters the field theory through the **mass wave number**
-$$
-\nu_m=\frac{mc}{h} , \qquad 2\pi\nu_m=\frac{mc}{\hbar} , \qquad \frac{1}{2\pi\nu_m}=\frac{\hbar}{mc} ,
-$$
-the last being the reduced Compton length; $(2\pi\nu_m)^{2}$ therefore carries the dimensions of the d'Alembertian and is written $m_0^{2}$ where the algebra is long. A plane wave carries a spatial wave number $\vec\nu_\Phi$ and an angular frequency $\omega$, and its angle is $\theta_{\mathrm{pwp}}=2\pi\vec\nu_\Phi\cdot\vec r-\omega r'_t/c$, real because $\omega$ and $\vec\nu_\Phi$ are.
+**The units.** $m$ is a mass, $c$ a speed, $ϙ$ a charge, and $d^{4}r=dr'_t\,dx\,dy\,dz$. The mass enters the field theory as an inverse length, the **mass parameter** $m_0:=mc$, whose square carries the dimensions of the d'Alembertian, and the **mass wave number** $\nu_m:=m_0/(2\pi)$ counts the same parameter per radian, with inverse $1/m_0$ the reduced length. A plane wave carries a spatial wave number $\vec\nu_\Phi$ and an angular frequency $\omega$, and its angle is $\theta_{\mathrm{pwp}}=2\pi\vec\nu_\Phi\cdot\vec r-\omega r'_t/c$, real because $\omega$ and $\vec\nu_\Phi$ are.
 
 ## The Stationary-Action Principle
 
@@ -229,7 +225,7 @@ with $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\par
 
 ### The canonical momentum in a potential
 
-The interaction term separates the two momenta, and the variation says which is which. With the convention just fixed, and the covariant derivative $D_{\imath}=\partial_{\imath}+\frac{2\pi i\,ϙ}{h}A_{\imath}$ of [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), the action of a charge in a prescribed potential is
+The interaction term separates the two momenta, and the variation says which is which. With the convention just fixed, and the covariant derivative $D_{\imath}=\partial_{\imath}+i\kappa A_{\imath}$, with $\kappa$ the coupling of [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), the action of a charge in a prescribed potential is
 $$
 S=-mc\int\sqrt{-\langle \tilde V_{\Phi}\rangle_{\natural}}\,d\tau-ϙ\int\mathrm{Sc}\bigl(\tilde{A}_{\Phi}\,\overline{\tilde V_{\Phi}}\bigr)\,d\tau ,
 \qquad \tilde V_{\Phi}:=\frac{d\tilde R_\Phi}{d\tau} ,
@@ -478,7 +474,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $\mathsf{K}_{\imath\rho\jmath\sigma} = \mathrm{Sc}(e_{\imath}^{\natural}e_\rho e_\jmath e_\sigma)$ | Kinetic tensor of a general element; $64$ of $256$ entries nonzero, $48$ with $\rho\neq\sigma$, not $\delta_{\imath\jmath}\delta_{\rho\sigma}$ |
 | $S_{\mathrm{int}} = -ϙ\int\mathrm{Sc}(\tilde A_\Phi\,\overline{d\tilde R_\Phi})$ | Coupling of a charge to an external potential; $=-ϙ\int(a'_t c\,dr'_t-\vec A\cdot d\vec r)$ |
 | $\tilde P_{\Phi,\mathrm{can}} = \tilde P_{\Phi}+ϙ\tilde A_{\Phi}$ | Canonical four-momentum, in the convention of the coupling |
-| $m_0 = 2\pi\nu_m = mc/\hbar$ | Mass wave number, the mass in the units of the d'Alembertian |
+| $m_0 = 2\pi\nu_m = mc$ | The mass parameter, the mass in the units of the d'Alembertian |
 | $R_t = ir'_t$, $\partial/\partial R_t = -i\partial/\partial r'_t$ | Imaginary temporal coordinate and the sign it carries |
 | $(\Box_\Phi - (2\pi\nu_m)^{2})\tilde{Ξ} = 0$, $\frac{1}{2\pi\nu_m}$ | Klein–Gordon equation from the variation |
 | $\tilde{F} = i\vec E - c\vec B$ | Field-strength biquaternion |

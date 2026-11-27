@@ -314,7 +314,7 @@ The axis of the pair is not part of the amplitude. It is the vector part of the 
 
 On a closed circuit the phases telescope and the product of the overlaps is invariant. That product is the Pancharatnam phase, and for a circuit bounding a solid angle $\Omega$ it is half the solid angle, with the half being the mark of the double cover.
 
-The physical reading is that the algebra owns the pairing and the modulus, and the phase belongs to a loop. The pair's phase is representative-dependent; only the loop is an invariant. The connection, the curvature and the half-solid-angle rule are not derived here.
+The physical reading is that the algebra owns the pairing and the modulus, and the phase belongs to a loop. The pair's phase is representative-dependent; only the loop is an invariant. The half-solid-angle rule is not derived here.
 
 The boundary. A single overlap has no invariant phase. The statement is about a closed circuit and a chosen representative on each ray.
 
@@ -366,11 +366,11 @@ so the quaternion conjugation is the fundamental symmetry of the indefinite stru
 
 The physical reading is that a constraint is not a state. **A definite form counts states: it is positive, it normalises, and its rank-one elements are pure states.** An indefinite form fixes a redundancy: it distinguishes the two signs and leaves the normalisation to a choice of representative. On the material sector the Krein form is minus the interval, so the connection form and the causal form are one form read with a sign, and on the informational sector they coincide.
 
-The boundary. The Krein form is a form, not a connection theory. No group, no coupling and no field content is derived. What the algebra supplies is the inertia, the fundamental symmetry and the resulting orthogonality.
+The boundary. The Krein form is a form and not a field theory. No group, no coupling and no field content is derived. What the algebra supplies is the inertia, the fundamental symmetry and the resulting orthogonality.
 
 ### I.6.i — The Obstruction Needs a Complex Witness
 
-Read: the antisymmetric part of the connection product, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, is not a Lie bracket, and its failure of the Jacobi identity is the sparsest of the three.
+Read: the antisymmetric part of the mixed product, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, is not a Lie bracket, and its failure of the Jacobi identity is the sparsest of the three.
 
 The witness is necessarily complex. On real elements that bracket is the plain Lie bracket, which satisfies the identity; on the triple $(\vec e_x,\vec e_x,i\vec e_y)$ the cyclic sum is a nonzero multiple of $i\vec e_y$.
 
@@ -416,7 +416,7 @@ The two coincidences are not accidents of notation. For real elements the coeffi
 
 The physical reading is a limit on what a classical description can distinguish. **A real-valued formulation sees ten operations, and the two it cannot separate are separated only by the complex structure.** A property that holds for one member of a coincident pair and fails for the other is therefore invisible in the real formulation: the identity survives in one member and is lost in the other, and the real description reports both as the same object.
 
-The sharpest case is the Jacobi failure of the connection bracket. It is invisible on real elements, so a real formulation reports the bracket as a Lie bracket. The complex structure is the carrier of the obstruction and not a convenience of the calculation.
+The sharpest case is the Jacobi failure of that bracket. It is invisible on real elements, so a real formulation reports the bracket as a Lie bracket. The complex structure is the carrier of the obstruction and not a convenience of the calculation.
 
 The boundary. The twelve are the operations of the complex space. A real form carries ten of them, and every statement of the source articles is a statement about the complex space unless it says otherwise.
 
@@ -444,7 +444,7 @@ so $\tilde\Pi_{\mathrm{id},d}$ has inverse $\tilde\Pi_{\mathrm{id},d}^{\natural}
 
 The pair reading fails in the same band. The complement $e_t-\tilde\Pi_{\mathrm{id},d}=\tfrac32e_t-\tfrac{\sqrt3}{2}\vec u$ is not an idempotent of that product, so there is no complete orthogonal pair and no resolution of the unit into two outcomes. Only the plain band and the general plain sesquilinear band carry a complementation that preserves their family, which is why the two-outcome reading is made in I.6.b and I.6.d and nowhere else.
 
-The boundary. The statement is a statement about solution sets, and it is why the twelve rows of the root table cannot be read by one vocabulary. It derives no connection theory and says nothing about whether a physical projection may be reversible; it says that in this band the algebra does not force the question.
+The boundary. The statement is a statement about solution sets, and it is why the twelve rows of the root table cannot be read by one vocabulary. It derives no field theory and says nothing about whether a physical projection may be reversible; it says that in this band the algebra does not force the question.
 
 ## The Limits
 

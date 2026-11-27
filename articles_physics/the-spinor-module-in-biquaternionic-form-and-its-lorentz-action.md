@@ -296,27 +296,13 @@ The one-sided action is not a device of this article. It is the multiplication o
 
 1. **The informational sector.** The companion article [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) identifies $\mathbb{B}_{\Psi}$ with the Hermitian observables of a two-state system. The module constructed here is the carrier on which those observables act, but the identification of a **state** with an element of the module is not made in this article. A pure state is an element of the form $\tilde X\tilde X^{*}$ up to a positive factor, and the field $\tilde X$ is a square root of it, defined up to a phase. Whether the phase is physical, and whether the informational sector requires the double cover or only its image in $SO^{+}(1,3)$, is left open.
 
-2. **The covariance of the biquaternion Dirac equation.** The companion article [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) carries two equations, and they are not the same operator. The corpus's own equation is the **one-sided chiral pair**
-
-    $$
-    \tilde\nabla_\Phi\tilde{Ξ}_{R}=2\pi\nu_m\tilde{Ξ}_{L},
-    \qquad
-    (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=2\pi\nu_m\tilde{Ξ}_{R},
-    $$
-
-    in which the gradient acts by left multiplication on the field $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}\in\mathbb{B}$ and the mass is the term that carries one value to the other. Kravchenko's equation is the **two-sided** single equation on $\mathbb{B}$,
-
-    $$
-    \mathcal{N}F=\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-2\pi\nu_mi\,\overline{F}\,\vec e_z=0,
-    $$
-
-    in which the derivative acts on the left, the mass acts on the right through $\vec e_z$, and the conjugation supplies the antilinear part. The two are related by the dictionary, but the transformation law of the biquaternion-valued field $\tilde{Ξ}$ is still open. A natural candidate is the one-sided action defined here; its compatibility with the mass term requires the relation between that action and the conjugate module to be fixed by a convention. The one-sided pair is the definition; the two-sided form is a representation in which the mass is a right multiplication. Here $\nu_m=\frac{mc}{h}$ is the mass wave number, the inverse of the mass length.
+2. **The covariance of the free field equation.** The companion article [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) carries two forms, and they are not the same operator. The corpus's own is the **one-sided chiral pair**: the gradient acts by left multiplication on the field $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}\in\mathbb{B}$, and the mass is the term that carries one value to the other. Kravchenko's is the **two-sided** single equation on $\mathbb{B}$, in which the derivative acts on the left, the mass acts on the right through $\vec e_z$, and the conjugation supplies the antilinear part. The two are related by the dictionary, but the transformation law of the biquaternion-valued field $\tilde{Ξ}$ is still open. A natural candidate is the one-sided action defined here; its compatibility with the mass term requires the relation between that action and the conjugate module to be fixed by a convention. The one-sided pair is the definition; the two-sided form is a representation in which the mass is a right multiplication. Both are written out in *Biquaternion Universe Free of Force*.
 
 3. **The alternating pairing within a value.** The quaternionic form vanishes on each value and pairs the two values; an alternating scalar built from two fields of one value, the $\varepsilon$ of the older display, is not among the four forms of *Product and Form Conventions* and is not constructed here. Its expression in elements of the algebra is a matter of convention.
 
 4. **Majorana fields and the real structure.** A Majorana field is fixed by a real structure commuting with the action. The module has such a structure only after a choice of conjugation, and the choice is not unique. The companion article [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) treats the physical case; the representation-theoretic classification of the possible real structures is not attempted here.
 
-5. **Curved spacetime.** The construction is flat-spacetime representation theory. The soldering of the module to a curved manifold — a spin structure, a covariant derivative, and the conversion of the constant action into local frames — is the subject of the companion articles on the Einstein equation and on gravity, and is not repeated here.
+5. **Curved spacetime.** The construction is flat-spacetime representation theory. The soldering of the module to a curved manifold, and the promotion of the constant coefficients to local fields, is the subject of the companion articles on the Einstein equation and on gravity, and is not repeated here.
 
 6. **The indefinite form and the physical signs.** The forms $\langle\cdot,\cdot\rangle_{\natural}$, $h$ and $[\,\cdot\,|\,\cdot\,]$ are three different invariant forms on the same two-dimensional complex space. Only the last has an indefinite inertia, and that inertia is the one that matches the Lorentzian geometry of $\mathbb{R}^{1,2}$. Which of the three is the "physical" one is a question about the interpretation of the module, not about its representation theory; the article records all three and leaves the choice to the applications.
 

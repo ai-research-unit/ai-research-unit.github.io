@@ -147,17 +147,11 @@ $$
 \det\mathsf D_{\imath}=(\Box_\Phi-\eta)^{2},
 $$
 
-and the equation $\mathsf D_{\imath}Ξ_{\mathrm{wfn}}=0$ has the chiral form
-
-$$
-D_+Ξ_{\mathrm{wfn},+}=c\,Ξ_{\mathrm{wfn},-},\qquad D_-Ξ_{\mathrm{wfn},-}=-c\,Ξ_{\mathrm{wfn},+},
-$$
-
-two first-order equations in two components, each coupling one chiral half to the other through the constant $c$. The scalar shift and the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)=\Box_\Phi-\kappa^{2}$ give the same statement with a real parameter.
+and the equation $\mathsf D_{\imath}Ξ_{\mathrm{wfn}}=0$ has the chiral form: two first-order equations in two components, each coupling one chiral half to the other through the constant $c$. The scalar shift and the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)=\Box_\Phi-\kappa^{2}$ give the same statement with a real parameter.
 
 **The reading.** The root is the propagation. A second-order wave equation says that a disturbance propagates at a speed fixed by the symbol; a first-order root says the same thing as a transport, with the two chiralities transported independently and the shift coupling them. The two halves are the two minimal left ideals $S_{\pm}$, and the coupling constant is the shift, so the algebra states in one place why a massless field has two decoupled chiral halves and a massive one has two coupled halves. The corpus's Dirac equation has exactly this structure, and its mass term is the one place where the field is multiplied on the right rather than on the left: the derivative acts on one side, the mass on the other, and the algebra's two-sidedness is what makes a mass term possible at all.
 
-**What the reading does not say.** It does not identify $c$ with a mass, and it does not supply the constant that relates the shift to an energy. The root's parameter is a parameter of an operator; the identification with $2\pi\nu_m$ is an input of the corpus and is recorded as imported, not derived.
+**What the reading does not say.** It does not identify $c$ with a mass, and it does not supply the constant that relates the shift to an energy. The root's parameter is a parameter of an operator; the identification of the root's parameter with a mass is an input of the corpus and is recorded as imported, not derived.
 
 ## The Regular Field
 
@@ -185,7 +179,7 @@ $$
 
 whose scalar part is the constraint on the source and whose vector part is the dynamical equation; the componentwise identification is in *Maxwell's Equations in the Biquaternionic Formulation*, §*The Three-Vector Form*. This is the sharpest agreement in the corpus between the two routes: the equations that were transcribed into the algebra in the electromagnetism block are the differentiability condition of the material sector, written without a transcription.
 
-**On the informational sector.** The $i$ moves from the time slot to the three space slots. The condition is then first order in the real time and second order in the imaginary spatial coordinates, which is the algebraic shape of a Schrödinger equation: one real time derivative, an $i$ on the spatial operator, and a second-order spatial symbol. No $\frac{h}{2\pi}$ appears, and the identification of the rate with an energy is not made here. What the algebra supplies is the shape, and the shape is what the two sectors differ by.
+**On the informational sector.** The $i$ moves from the time slot to the three space slots. The condition is then first order in the real time and second order in the imaginary spatial coordinates, which is the algebraic shape of a Schrödinger equation: one real time derivative, an $i$ on the spatial operator, and a second-order spatial symbol. No dimensioned constant appears, and the identification of the rate with an energy is not made here. What the algebra supplies is the shape, and the shape is what the two sectors differ by.
 
 **On the cone.** The characteristic set is the null cone, so the initial-value problem on $\mathbb{B}_\Phi$ requires data on a surface that is not characteristic, and the Cauchy problem on the light-like surfaces is not determined by the same data. On $\mathbb{B}_H$ there is no cone, the symbol is definite, and the operator is elliptic; on $\mathbb{B}_{iH}$ it is elliptic with the opposite sign.
 
@@ -462,7 +456,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The word action names an integral and not a variational principle.** III.1.h identifies the representation formula with the action because both integrate the field against a kernel and both carry the strength. It does not claim that the volume term is a Lagrangian density, and the distinction is not cosmetic: a variational principle would supply the dynamics that this entry does not have.
 
-**No constant is derived.** $\frac{h}{2\pi}$ does not appear in the analysis, and the identification of the root's shift with a mass, of the flow's rate with an energy, and of the kernel's pole with a shell are inputs of the corpus. The algebra supplies the shape of each identification and none of the numbers.
+**No constant is derived.** No dimensioned constant enters the analysis, and the identification of the root's shift with a mass, of the flow's rate with an energy, and of the kernel's pole with a shell are inputs of the corpus. The algebra supplies the shape of each identification and none of the numbers.
 
 **The integral theory is stated on one subspace.** The Cauchy formula, its consequences and the residue theorem are theorems on $\mathbb{B}_{H}$, where the norm is definite. On the indefinite sectors the kernel is not the Euclidean one, the domains must avoid the cone, and the integral theory is open; the corpus records this as an open question and not as a result.
 
@@ -482,7 +476,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The characteristic set is the zero-divisor cone.** The determinant of the symbol of the gradient is the norm of the covector, so the first-order and the second-order operators have one characteristic set, and it is the light cone. The causal structure of the theory and the failure of invertibility of the algebra are one fact.
 
-**Regularity is the field equation.** $\tilde\nabla_\Phi\tilde\Xi=0$ is four equations; left and right regularity differ by the sign of the curl; on the material sector the four are the free Maxwell pair; on the informational sector the same system has one real time derivative and an $i$ on the spatial operations. Every regular field is harmonic, and regularity is strictly stronger.
+**Regularity is the homogeneous condition.** $\tilde\nabla_\Phi\tilde\Xi=0$ is four equations; left and right regularity differ by the sign of the curl; on the material sector the four are the free Maxwell pair; on the informational sector the same system has one real time derivative and an $i$ on the spatial operations. Every regular field is harmonic, and regularity is strictly stronger.
 
 **The two-sided condition is a second, quadratic equation.** $dF=L\,dZ\,R$ is the rank-one condition on each component's derivative array, and the determinant of that array is a quarter of the norm of the gradient, so the condition is the complex eikonal and its gradient is null everywhere. It has the same characteristic set as the linear condition and neither contains the other.
 
@@ -508,7 +502,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 | the Euclidean Laplacian | $\Box_\Phi$ | $\sum_{\imath}\partial^2/\partial q_{\imath}^2$ on $\mathbb{B}_{H}$ |
 | the norm of an element | $N=\langle\tilde Q\rangle_{\natural}$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
 | the symbol | $S(\xi)$ | $\sum_{\imath}\xi_{\imath}\mathsf M_2(e_{\imath})$, with $\det S=N(\xi)$ |
-| the regular field | $\tilde\nabla_\Phi\tilde\Xi=0$ | the free field equation |
+| the regular field | $\tilde\nabla_\Phi\tilde\Xi=0$ | the regularity condition |
 | the right-regular field | $\tilde\Xi\tilde\nabla_\Phi=0$ | the same system with $+\operatorname{rot}$ |
 | the two-sided derivative | $dF=L\,dZ\,R$ | the semi-derivatives $L$ and $R$, defined up to a central scalar |
 | the derivative array | $\mathsf D\Sigma$ | the $2\times2$ array of the four coordinate derivatives of a component |

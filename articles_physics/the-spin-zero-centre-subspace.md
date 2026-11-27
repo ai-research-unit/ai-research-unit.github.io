@@ -16,7 +16,7 @@ The fifth claim is that the closure adds exactly one degree of freedom, and that
 
 The sixth claim is that the centre is the only carrier that carries a continuous phase. A central phase $\exp(i\vartheta)$ multiplies the centre into itself for every $\vartheta$, because a central element commutes with everything; the same test on the material sector succeeds only at $\vartheta\equiv0$ and $\vartheta\equiv\pi$. Verified on a random anti-Hermitian element: the anti-Hermitian defect after multiplication by $\exp(i\vartheta)$ is $0$ at the two ends of the range and between $1.9$ and $6.4$ in between. Charge is therefore a property of this carrier and not of the others, and it is continuous here and discrete there.
 
-The first objection is that a trivial representation is not worth an article. It is worth one because four separate pieces of physics hang on the triviality: the absence of an intrinsic magnetic moment, the globality of the central phase, the freedom of the Klein–Gordon restriction, and the two-mode structure of the broken vacuum. None of them is a consequence of the *dimension* of the carrier; all four are consequences of the action being the identity.
+The first objection is that a trivial representation is not worth an article. It is worth one because four separate pieces of physics hang on the triviality: the absence of an intrinsic magnetic moment, the globality of the central phase, the freedom of the central restriction, and the two-mode structure of the broken vacuum. None of them is a consequence of the *dimension* of the carrier; all four are consequences of the action being the identity.
 
 The second objection is that the norm should be $\lvert Q_t\rvert^{2}$ and the article's $Q_t^{2}$ is a mistake. The two are different objects and both are needed. The algebraic norm is $N(Q_te_t)=Q_t^{2}$, complex-valued, multiplicative, and zero exactly on the non-invertible elements; its argument is twice the phase of the field. The modulus is the Hermitian square $XX^{*}=\lvert Q_t\rvert^{2}$, real and non-negative. The first is the algebra's own quadratic form and the second is the form a probability needs, and the entry keeps the two apart throughout.
 
@@ -64,9 +64,9 @@ The phase. A central phase preserves the centre for every angle and preserves th
 
 The double cover on the scalar. $N(-Q_t)=N(Q_t)$, so the algebraic norm identifies a value with its negative and cannot see the sign of the amplitude.
 
-The equation. The Klein–Gordon operator is central and real, so it preserves every real subspace and chooses no carrier; the restriction to the centre is free, and the three complex coefficients it discards are three further scalar fields.
+The operator. The second-order operator is central and real, so it preserves every real subspace and chooses no carrier; the restriction to the centre is free, and the three complex coefficients it discards are three further scalar fields.
 
-The failure of the covariant square. The square of a covariant gradient produces a pure-vector term proportional to the field strength, so the centre is not invariant under it; the component form of the same equation does preserve the centre.
+The central square. The gradient with central coefficients squares to a central operator, so the centre is invariant under it and the restricted operator is the plain d'Alembertian on one complex coefficient.
 
 The two modes. The two real dimensions of the closure are the amplitude and the phase, and in the broken phase they are the radial mode and the angular one.
 
@@ -210,7 +210,7 @@ $$
 
 Verified for seven angles across the range. The same test on the material sector succeeds only at the two ends: for a random anti-Hermitian element multiplied by $\exp(i\vartheta)$, the anti-Hermitian defect is $0$ at $\vartheta=0$ and $\vartheta=\pi$ and between $1.9$ and $6.4$ at the interior angles. The centre carries a continuous phase; the material sector carries a sign.
 
-**The reading. A charge is a phase, and a phase that acts on a value is a one-parameter group of multiplications.** The carrier that admits the whole circle is the centre; the carrier that admits only $\pm1$ is the material sector; and the spin-half carrier admits the circle but through a projector, through the idempotent of its axis, which is why its charge is a different object. This is the algebraic content of the sentence that a scalar field is the field that can carry a continuous charge without a connection.
+**The reading. A charge is a phase, and a phase that acts on a value is a one-parameter group of multiplications.** The carrier that admits the whole circle is the centre; the carrier that admits only $\pm1$ is the material sector; and the spin-half carrier admits the circle but through a projector, through the idempotent of its axis, which is why its charge is a different object. This is the algebraic content of the sentence that a scalar field is the field whose value can carry the circle of phases outright.
 
 The phase of the vacuum. The same circle is the set of minima of a scalar potential: if $V$ depends on $\lvert\xi\rvert$ alone, every point of $\lvert\xi\rvert=v/\sqrt{2}$ is a minimum and the phase is a coordinate along the circle of vacua. The algebra does not supply the potential, but it supplies the shape of the coordinate: a compact circle, hence a discrete label for the charge, and a radial direction that is not a phase at all. Both facts are used in the section on the vacuum.
 
@@ -232,7 +232,7 @@ The current, and the same statement in the physics. The conserved current of a c
 
 The classical sector. A real central scalar is also the corpus's classical sector: the value is a real number, the rotation fixes it, and the field has no internal degree of freedom for a preparation to select. The imaginary line is what makes the field charged, and the charge is what makes it non-classical in the sense the corpus uses the word. This is a reading of the sector split inside one carrier, and the entry states it as a reading and not as a theorem.
 
-## The Carrier and the Klein–Gordon Equation
+## The Carrier and the Central Operator
 
 The operator is central. The second-order operator of the algebra is
 
@@ -240,9 +240,9 @@ $$
 \Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural},
 $$
 
-a central scalar with real coefficients: the four diagonal terms return $+e_t$ and the six mixed terms arrive in cancelling pairs. Being central it multiplies all four complex coefficients of a field by the same scalar, so it preserves every subspace closed under real scalars and the equation splits into four decoupled copies of one scalar equation.
+a central scalar with real coefficients: the four diagonal terms return $+e_t$ and the six mixed terms arrive in cancelling pairs. Being central it multiplies all four complex coefficients of a field by the same scalar, so it preserves every subspace closed under real scalars and the equation splits into four decoupled copies of one scalar equation, one per complex coefficient.
 
-The equation chooses nothing. A biquaternion-valued solution of the Klein–Gordon equation is four scalar fields sharing one mass, and the equation is equally satisfied by a field with four complex coefficients and by a field with one. Nothing in the operator prefers either, and the entry states that as the sharpest negative result of the section: the equation cannot select a carrier, so a second principle must.
+The operator chooses nothing. A biquaternion-valued field that obeys the central operator is four scalar fields sharing one mass, and the operator is equally satisfied by a field with four complex coefficients and by a field with one. Nothing in the operator prefers either, and the entry states that as the sharpest negative result of the section: the operator cannot select a carrier, so a second principle must.
 
 The spin chooses. A spin-zero field has one complex value at each event, and the algebra's copy of one complex number is the centre. The choice is made by the dimension of the value and by the action that fixes it, and it is a choice among subspaces the equation already permits.
 
@@ -252,26 +252,13 @@ $$
 \Box_\Phi(\xi e_t)=(\Box_\Phi\xi)\,e_t\in\mathbb{B}_C ,
 $$
 
-so the centre is invariant and the restricted equation is the ordinary complex Klein–Gordon equation. Closure is not an extra condition; it is one line, and the line is the centrality.
+so the centre is invariant and the restricted operator is the ordinary complex d'Alembertian. Closure is not an extra condition; it is one line, and the line is the centrality.
 
-What the restriction discards. Three of the four complex coefficients. They are not spin-zero content: they are three further independent scalar fields, each of which solves the same equation with the same mass. The reduction from four to one is the statement that a biquaternion-valued Klein–Gordon field with one mass is four scalars, and that a spin-zero field is the case in which three of them are absent.
+What the restriction discards. Three of the four complex coefficients. They are not spin-zero content: they are three further independent scalar fields, each of which the same operator carries at the same mass. The reduction from four to one is the statement that a biquaternion-valued field of one mass is four scalars, and that a spin-zero field is the case in which three of them are absent.
 
-**The covariant square fails, and the failure is informative.** With a local derivative whose coefficients are central, the square of the gradient acting on a central field is
+**The square of the gradient is central, and that settles the carrier.** The derivative has central coefficients, so its square preserves the centre, and the operator it gives acts on the centre alone. Every coefficient of that operator is a central scalar, so no term of it can move a central field out of the centre. The carrier is fixed by one fact, and no further condition is needed.
 
-$$
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
-=\Big(\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\xi\Big)e_t+\frac{2\pi i\,ϙ}{h}\,\xi\,\tilde F ,
-$$
-
-and the second term is a pure vector, so the centre is not invariant under that operator whenever the field strength does not vanish. The component form
-
-$$
-\sum_{\imath}\tilde\nabla_{\mathrm{gco},\Phi,\imath}^{2}\tilde\Xi=4\pi^{2}\nu_m^{2}\tilde\Xi
-$$
-
-does preserve the centre, because each derivative is central. The two writings, which agree identically when no connection is present, are separated by the coupling, and the carrier keeps the component form.
-
-The reading. The carrier is a criterion on the writing of an equation and not only on its solution space. The covariant square of the gradient is not the operator of a spin-zero field, because its extra term is a spin-one object: a scalar cannot carry the field strength. A theory that wrote the scalar equation in the operator-square form would have claimed, silently, that its field could carry a vector.
+The reading. The carrier is a criterion on the writing of an equation and not only on its solution space. A scalar has no vector part, so the operator that acts on it must be built from central coefficients; an operator carrying a vector part would claim, silently, that its field could carry a vector. The writing that respects the carrier is the one whose every coefficient is central.
 
 ## What Spin Zero Forbids
 
@@ -281,11 +268,11 @@ No scalar ray in the module. The algebra's simple module is $\mathbb{C}^{2}$, an
 
 No intrinsic magnetic moment. A magnetic moment needs either an intrinsic spin or an internal current distribution, and a single complex scalar has neither. The Zeeman coupling, the Stern–Gerlach splitting and the spin–orbit coupling are all couplings of an internal vector, and the carrier does not have one. The statement is algebraic and exact: the obstruction is the vanishing of the vector part, not a smallness of it.
 
-No magnetic field. The field equation is one scalar equation, so there is no connection, no field-strength tensor and no electric–magnetic split. The static solution of a central scalar source is a scalar potential with no vector counterpart, and the moving solution has a scalar Liénard–Wiechert form. The absence of magnetism here is not a limit and not an approximation; the theory has no object out of which a magnetic field could be built.
+No magnetic field. The field is one complex coefficient, so there is no field-strength tensor and no electric–magnetic split. The static solution of a central scalar source is a scalar potential with no vector counterpart, and the moving solution has a scalar Liénard–Wiechert form. The absence of magnetism here is not a limit and not an approximation; the theory has no object out of which a magnetic field could be built.
 
 The force is central. Because the value is rotationally invariant, the potential it generates is a central scalar, and the force on a test source is a vector parallel to the position. The link from the value space to the centrality of the force is algebraic, and it is the same fact as the first of the three.
 
-One qualification. The orbital magnetic effects of a moving charge are present for any charged particle and are not intrinsic magnetism. The three statements above are about intrinsic moments and about the existence of a connection, and they do not deny the orbital effects.
+One qualification. The orbital magnetic effects of a moving charge are present for any charged particle and are not intrinsic magnetism. The three statements above are about intrinsic moments and about the field strength such a moment would need, and they do not deny the orbital effects.
 
 ## The Centre and the Group
 
@@ -299,11 +286,11 @@ The group is the centre times the sphere. The group of invertibles is $U=\{\tild
 
 Centrality is globality. Being central, the phase multiplies every element and every subspace by the same scalar, so it acts identically everywhere. There is no element on which it could act differently and no point at which a comparison could detect a variation. That is why the framework's continuous symmetry is global by structure and not by assumption.
 
-**Making local the central phase gives no connection theory.** A local phase needs a connection valued in the Lie algebra of the group, and the Lie algebra of the central phase is the span of $ie_t$, which is central. A central connection commutes with everything, so it couples to nothing and the covariant derivative collapses to the ordinary one. An abelian connection theory needs matter that transforms nontrivially, and here the matter transforms by scalars.
+**The central phase cannot be varied from event to event.** A phase that changed from one event to the next would need a compensating object that changed with it, and the algebra supplies none for the centre: the generator is $ie_t$, which is central, so any such object would commute with every element and compensate nothing. The phase is therefore uniform, and its uniformity is a consequence of centrality rather than a postulate.
 
 The ceiling. A larger group needs generators outside the centre and outside the real triple; the anti-Hermitian sector has real dimension four and gives $\mathfrak{u}(2)$ exactly, so the algebra's intrinsic symmetry group stops there. The route past it is an enlarged carrier, $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, whose intrinsic group is $\mathrm{U}(2n)$.
 
-The reading. The scalar sector carries the framework's only exact continuous symmetry, and that symmetry is the one the algebra cannot representative. The two statements are one statement read twice: the phase is central, so it is everywhere the same, and being everywhere the same it cannot be made local.
+The reading. The scalar sector carries the framework's only exact continuous symmetry, and that symmetry is the one the algebra cannot represent. The two statements are one statement read twice: the phase is central, so it is everywhere the same, and being everywhere the same it cannot vary from event to event.
 
 ## The Vacuum and the Two Modes
 
@@ -315,11 +302,11 @@ $$
 \xi=\tfrac{1}{\sqrt{2}}\bigl(v+h\bigr)\,e^{i\vartheta_{\mathrm{gld}}},
 $$
 
-the radial field $h$ has the mass $m_h^{2}=2\beta v^{2}$ and the angular field has no potential at all. The angular mode is the would-be Goldstone boson, a coordinate on the circle of minima, and it is absorbed when the phase is made local.
+the radial field $h$ has the mass $m_h^{2}=2\beta v^{2}$ and the angular field has no potential at all. The angular mode is the would-be Goldstone boson, a coordinate on the circle of minima, and it is absorbed only by a carrier that gives the phase an event dependence, which the algebra does not supply.
 
 What the carrier contributes. Three things, stated as the carrier's contribution and not as a derivation of the mechanism. The number of real modes is two, because the closure is two real dimensional. One of the two is a phase, because the added direction is $\mathbb{R}(ie_t)$ and a phase is what that direction is. And the phase is compact, because it is an angle, so the charge it labels is discrete. The potential, the value of $v$ and the masses are inputs; the counting and the periodicity are the algebra's.
 
-**A caution.** The mechanism needs a connection to absorb the angular mode, and the previous section showed that the central phase cannot be made local inside $\mathbb{B}$. The broken phase of the corpus is therefore a reading of the scalar's two modes and not a derivation of the electroweak mechanism, which needs the enlarged carrier.
+**A caution.** The mechanism needs the angular mode to be absorbed by an object the centre does not contain, and the previous section showed that no such object exists inside $\mathbb{B}$: the central phase is uniform. The broken phase of the corpus is therefore a reading of the scalar's two modes and not a derivation of the electroweak mechanism, which needs the enlarged carrier.
 
 ## The Interpretations
 
@@ -339,13 +326,13 @@ A scalar is a value and not a ray of the module. The simple module of the algebr
 
 Spin zero forbids intrinsic magnetism. No internal vector, hence no Zeeman, Stern–Gerlach or spin–orbit coupling of intrinsic origin, and no field strength out of which to build a magnetic field. The warrant is the rotational invariance of the value space. The boundary is that orbital magnetic effects are untouched.
 
-The central phase is global by structure and cannot be made local. The phase is central, so it is uniform, and a connection valued in its Lie algebra commutes with everything and couples to nothing. The warrant is the centrality of $ie_t$. The boundary is that an enlarged carrier $M_n(\mathbb{B})$ restores the possibility.
+The central phase is uniform by structure. The phase is central, so it is the same at every event, and no element of the algebra distinguishes one event from another in it. The warrant is the centrality of $ie_t$. The boundary is that an enlarged carrier $M_n(\mathbb{B})$ enlarges the symmetry group.
 
 The two modes of the vacuum are the two dimensions of the closure. The radial fluctuation and the angular one are the two real coordinates, and the angular one is compact because it is a phase. The warrant is the dimension count and the periodicity. The boundary is that the potential, the vacuum value and the masses are inputs.
 
-**The equation chooses nothing; the spin chooses.** The Klein–Gordon operator is central, so it preserves every real subspace, and four scalars solve it as well as one. The warrant is the centrality, exact. The boundary is that the selection is by dimension and action, and the equation of the chosen carrier is a separate statement.
+**The operator chooses nothing; the spin chooses.** The second-order operator is central, so it preserves every real subspace, and four scalars obey it as well as one. The warrant is the centrality, exact. The boundary is that the selection is by dimension and action, and the equation of the chosen carrier is a separate statement.
 
-The covariant square is not a scalar operator. Its extra term is a pure vector proportional to the field strength, so it leaves the centre whenever the field strength is nonzero; the component form does not. The warrant is the two writings. The boundary is that the two agree when no connection is present, so the distinction is invisible in the free theory.
+The square of the gradient is a scalar operator. Its coefficients are central, so it preserves the centre for every configuration of the field. The warrant is the centrality of each coefficient. The boundary is that the carrier is fixed by the operator and not by its solutions, of which four exist and one is kept.
 
 ## The Limits
 
@@ -355,7 +342,7 @@ The covariant square is not a scalar operator. Its extra term is a pure vector p
 - No quantisation. The Born rule, the Fock space and the statistics of the scalar are outside the entry, which states the carrier and the form and stops.
 - The triviality is one action's. The centre is fixed by the conjugation and not by left multiplication, and a statement about the trivial action is not a statement about the algebra's action as a whole.
 - The sector declaration is a convention. Material and informational are two real lines of one centre, exchanged by the central $i$.
-- The localisation ceiling stands. The central phase cannot be made local inside $\mathbb{B}$, and the broken phase of the vacuum needs a carrier the algebra does not have.
+- The ceiling stands. The central phase is uniform inside $\mathbb{B}$, and the broken phase of the vacuum needs a carrier the algebra does not have.
 - No non-abelian content. The scalar sector carries one abelian phase and no internal symmetry of its own.
 - Families and copies. The multiplicity two of the closure is a multiplicity of the space and not two carriers, and the two preimages of one norm are one field up to a sign.
 
@@ -365,11 +352,11 @@ The carrier of spin zero is the real line $\mathbb{R}e_t$, of real dimension one
 
 The two predicates are extreme and opposite. The norm is $N(\xi e_t)=\xi^{2}$, whose zero locus in the centre is the origin alone, so every nonzero central element is invertible and the centre is a copy of the complex field inside the algebra. Its real part has inertia $(1,1)$ with the isotropic lines $\mathbb{R}(e_t\pm ie_t)$, on which the norm is $\pm2i$ and not zero. The vector part vanishes identically, so the two eigenvalues coincide and the whole centre is spectrally degenerate. Away from the origin the carrier lies in $\Sigma_{10}$: a mass and no spectrum.
 
-The closure adds one real dimension and it is the phase. In the polar form the amplitude is the carrier and the angle is the added direction, and $N=r^{2}e^{2i\vartheta}$ makes the phase of the norm twice the phase of the field. A central phase preserves the centre for every angle; the material sector keeps only $\pm1$. Charge is the phase, and the centre is the carrier that carries a continuous one.
+The closure adds one real dimension and it is the phase. In the polar form the amplitude is the carrier and the angle is the added direction, and $N=r^{2}e^{2i\vartheta}$ makes the phase of the norm twice the phase of the field. A central phase preserves the centre for every angle; the material sector keeps only $\pm1$. The phase is the label the carrier carries, and the centre is the carrier that carries a continuous one.
 
-The equation does not choose. The Klein–Gordon operator is central and real, so it preserves every subspace and four scalars solve it as well as one; the spin chooses, and the restriction to the centre is free. The covariant square fails to preserve the centre, because its extra term is the field strength, a spin-one object, and a scalar cannot carry it. The carrier is therefore a criterion on the writing of an equation, not only on its solutions.
+The operator does not choose. The second-order operator is central and real, so it preserves every subspace and four scalars obey it as well as one; the spin chooses, and the restriction to the centre is free. The square of the gradient preserves the centre, because every coefficient is central, and a scalar cannot carry a vector part in any term. The carrier is therefore a criterion on the writing of an equation, not only on its solutions.
 
-Spin zero forbids an internal vector and everything built from one: the intrinsic magnetic moment, the Zeeman and Stern–Gerlach and spin–orbit couplings, and the field strength out of which a magnetic field is made. And the phase that the carrier carries is central, so it is the same at every point and cannot be made local. The scalar sector holds the framework's only exact continuous symmetry, and it holds the one symmetry the algebra cannot representative.
+Spin zero forbids an internal vector and everything built from one: the intrinsic magnetic moment, the Zeeman and Stern–Gerlach and spin–orbit couplings, and the magnetic field out of which a moment is read. And the phase that the carrier carries is central, so it is the same at every event. The scalar sector holds the framework's only exact continuous symmetry, and it holds the one symmetry the algebra cannot representative.
 
 ## Summary of Notation
 
@@ -395,7 +382,6 @@ Spin zero forbids an internal vector and everything built from one: the intrinsi
 | $\Sigma_{ij}$ | the four sectors of the two predicates |
 | $\xi=re^{i\vartheta}$ | the value of a scalar field and its polar form |
 | $\Box_\Phi$ | the central second-order operator |
-| $\tilde F$ | the field strength, a pure vector |
 
 ## Further Reading
 
@@ -406,7 +392,7 @@ Spin zero forbids an internal vector and everything built from one: the intrinsi
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the placement of the carriers among them.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the multiplicativity of the norm and its vanishing on the non-invertible elements.
 - [Rotor, Spin, Pair and Carrier: A Survey of the Closure Block](rotor-spin-pair-and-carrier-a-survey-of-the-closure-block.html), for the article this one is the first case of.
-- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the equation this carrier holds, the centrality of the operator and the freedom of the restriction.
+- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), in *Biquaternion Universe Free of Force*, for the free equation this carrier holds, the centrality of the operator and the freedom of the restriction.
 - [Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module](spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.html), for the three obstructions that keep a scalar out of the state action.
 - [The Central Scalar Field: Classical Dynamics in the Biquaternion Centre](the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html), for the action, the static solution, the current and the absence of intrinsic magnetism.
 - [The Centre of the Biquaternion Algebra as the Classical Sector](the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html), for the real line as the classical limit.

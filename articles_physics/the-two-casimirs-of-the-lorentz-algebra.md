@@ -210,7 +210,7 @@ $$
 P^{2}=\sum_{\imath}\varepsilon_{\imath} P_{\imath} P_{\imath},\qquad W^{2}=\sum_{\imath}\varepsilon_{\imath} W_{\imath} W_{\imath},
 $$
 
-with $\tilde W_{\imath}=\tfrac12\sum_{\jmath,\sigma}\varepsilon_{\jmath}\varepsilon_\sigma\,\epsilon_{\imath\jmath\rho\sigma}\tilde P_{\jmath}\tilde M_{\rho\sigma}$ the Pauli–Lubanski vector. On a massive one-particle space $\tilde P^{2}=m^{2}c^{2}$ and $\tilde W^{2}=-\frac{h^{2}}{4\pi^{2}}m^{2}c^{2}s(s+1)$, so the pair is the mass and the spin.
+with $\tilde W_{\imath}=\tfrac12\sum_{\jmath,\sigma}\varepsilon_{\jmath}\varepsilon_\sigma\,\epsilon_{\imath\jmath\rho\sigma}\tilde P_{\jmath}\tilde M_{\rho\sigma}$ the Pauli–Lubanski vector. On a massive one-particle space $\tilde P^{2}=m^{2}c^{2}$ and $\tilde W^{2}=-m^{2}c^{2}\,s(s+1)$, the spin generators being dimensionless, so the pair is the mass and the spin and the two Casimirs share the dimension of $P^{2}$.
 
 ### Why They Are Different Objects
 

@@ -97,7 +97,7 @@ The physical requirement is that a finite number of states sit over each momentu
 
 ### The Argument from Locality
 
-There is a second route to the same conclusion, and it is the one used in field theory. A massless field has a local symmetry, and the local transformation shifts the polarisation along the momentum and along one transverse direction: the two directions that the null rotations move. So imposing the fixing condition is imposing $T_1=T_2=0$ on the physical states, and the surviving label is the eigenvalue of $J_z$.
+There is a second route to the same conclusion, and it is the one used in field theory. A massless field carries fewer physical states than components, and the freedom that removes the extra ones shifts the polarisation along the momentum and along one transverse direction: the two directions that the null rotations move. So imposing the fixing condition is imposing $T_1=T_2=0$ on the physical states, and the surviving label is the eigenvalue of $J_z$.
 
 That is why the massless count is two and not three for a spin-1 particle: the three polarisations of the massive case become two helicities plus one redundant mode, and the redundant mode is exactly the orbit of the null rotations.
 
@@ -201,7 +201,7 @@ The corpus's massless labels are $(0,h)$: a zero in the mass slot and a half-int
 | compact? | yes | no |
 | labels | $(m,j)$ | $(0,h)$ |
 | states per momentum | $2j+1$ | one per helicity sign |
-| second Casimir | $m^{2}c^{2}\frac{h^{2}}{4\pi^{2}}j(j+1)$ | $0$ |
+| second Casimir | $m^{2}c^{2}\,j(j+1)$ | $0$ |
 
 The compactness is the whole difference. A compact little group has finite-dimensional unitary representations with a discrete label; a non-compact one has mostly infinite-dimensional ones, and the finite-dimensional survivors are one-dimensional.
 

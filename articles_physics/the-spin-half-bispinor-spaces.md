@@ -370,20 +370,12 @@ What it says. The invariant length of a bispinor is not a length of either half.
 
 **The interpretation: a single chirality has no invariant length.** Put $X_-=0$. Then $N(X)=0$ whatever $X_+$ is, and the statement is uniform: no element of one ideal is norm-regular. This is the algebraic fact behind every statement in the corpus about a mass term being odd in the value. A term built from one ideal alone cannot produce a nonzero invariant, because the invariant is the pairing and one factor is missing.
 
-The interpretation: the mass is the pairing. In the Dirac pair of the archive the two equations are
+The interpretation: the mass is the pairing. In the Dirac pair the two first-order equations relate the two chirality halves through a single coefficient, the mass, and that coefficient is the constant that ties the two components. The lines themselves are in *The Dirac Equation in Biquaternionic Form*, and what matters here is their shape. The entry's statement and the equation's statement are the same statement in two notations: the operator acts inside one ideal, since it is an element and an element is a left multiplier, and the mass is the only term that ties the two ideals together. At zero mass the pair decouples into two independent equations, one for each chirality, and each is consistent on its own because the operator preserves the ideal. That is why a massless fermion can be described by a two-component field and a massive one cannot.
+
+The mass number is diagonal in the value. The mass enters as the central scalar $m$, and a central scalar holds both slots, so it cannot move a value. In the projectors of the chirality operator,
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_R=2\pi\nu_m\tilde\Xi_L,
-\qquad
-\bigl(\tilde\nabla_\Phi\bigr)^{\natural}\tilde\Xi_L=2\pi\nu_m\tilde\Xi_R,
-$$
-
-and the mass coefficient $\nu_m=\frac{mc}{h}$ is the constant that relates the two components. The entry's statement and the equation's statement are the same statement in two notations: the operator acts inside one ideal, since it is an element and an element is a left multiplier, and the mass is the only term that ties the two ideals together. At $\nu_m=0$ the pair decouples into two independent equations, one for each chirality, and each is consistent on its own because the operator preserves the ideal. That is why a massless fermion can be described by a two-component field and a massive one cannot.
-
-The mass number is diagonal in the value. The mass enters as the central scalar $\nu_m$, and a central scalar holds both slots, so it cannot move a value. In the projectors of the chirality operator,
-
-$$
-P_+(\nu_m\mathrm I)P_-=0\quad\text{for every }\nu_m .
+P_+(m\mathrm I)P_-=0\quad\text{for every }m .
 $$
 
 The norm says that a mass pairs the two closures; this says that the pairing does not move the value.
@@ -392,7 +384,7 @@ The interpretation: local invariance of a mass. A mass term that pairs the two i
 
 The interpretation: why the pairing is symmetric. The polar form $B$ is symmetric, so $B(X_+,X_-)=B(X_-,X_+)$ and the exchange of the two names changes nothing. There is no sign to track, and no antisymmetric structure enters the mass. The fermionic minus sign belongs to the action of a full turn and to the exchange of two particles, not to this pairing; the entry states that separation because the two are easy to conflate.
 
-Why the mass is not a fifth force and not a scalar. The mass coefficient is central, so it commutes with everything and multiplies both ideals by the same number. It is a number and not an element of a sector: it does not sit in $\mathbb{B}_\Psi$, it does not sit in $\mathbb{B}_\Phi$, and no connection couples to it. The algebra gives the shape of the pairing and gives no value: $\nu_m$ is a parameter, and the entry states that as a boundary rather than as a gap.
+Why the mass is not a fifth force and not a scalar. The mass coefficient is central, so it commutes with everything and multiplies both ideals by the same number. It is a number and not an element of a sector: it does not sit in $\mathbb{B}_\Psi$, it does not sit in $\mathbb{B}_\Phi$, and no connection couples to it. The algebra gives the shape of the pairing and gives no value: the mass is a parameter, and the entry states that as a boundary rather than as a gap.
 
 ## The Sector Question
 
@@ -453,7 +445,7 @@ The light cone. The degenerate plane of the ideal has a physical name too. Its g
 
 4. The two ideals are the two spinor chiralities. The eigenspaces of $-iR_{\vec u}$ are the two minimal left ideals of the axis, verified to $10^{-15}$ at three axes. A field valued in one ideal is a Weyl field; the projection $Ξ_{\mathrm{wfn}}\mapstoΞ_{\mathrm{wfn}}\tilde\Pi_{\mathrm{id},\pm}$ is the chiral projection; and the fact that the operator is a right multiplication while the action is a left multiplication is why chirality and the action commute.
 
-5. Mass is the pairing of the two spinor chiralities. The norm on the bispinor is $2B(X_+,X_-)$ and on a single ideal it is zero. So a mass term has to pair the two, and the archive's Dirac pair with the coefficient $\nu_m$ between the two components is that pairing written as an equation. A massless field can be one ideal; a massive field cannot.
+5. Mass is the pairing of the two spinor chiralities. The norm on the bispinor is $2B(X_+,X_-)$ and on a single ideal it is zero. So a mass term has to pair the two, and the archive's Dirac pair, with the mass as the coefficient between the two components, is that pairing written as an equation. A massless field can be one ideal; a massive field cannot.
 
 6. A mass term ties two charges. A pairing of the two ideals ties their two charges together, which is the archive's selection rule: a bare Dirac mass needs equal charges and a chiral fermion is massless in the unbroken phase. The entry reads the rule as the shape of the pairing and not as a separate postulate.
 
@@ -467,13 +459,13 @@ The light cone. The degenerate plane of the ideal has a physical name too. Its g
 
 11. The two closures are two physical objects. Two complex components are a Weyl field; four are a Dirac field. The algebra contains both, and the difference between them is not a size but a pair: the first is an ideal and the second is the algebra read through a Peirce basis. A theory that uses one ideal per chirality and a theory that uses the whole algebra are two theories of the same algebra, and the mass decides which one is available.
 
-12. **What is not claimed.** No spin-statistics theorem: the minus sign of a full turn is established, and the antisymmetry of a two-particle state under exchange is a separate statement the corpus makes in its own article and does not derive here. No mass value: $\nu_m$ is a parameter. No derivation of the Born rule: the weight is quoted from the informational sector. No identification of chirality with the material-informational split: the entry states the correction. No claim that the infinity of the family is a problem: it is the statement that the algebra has no preferred frame.
+12. **What is not claimed.** No spin-statistics theorem: the minus sign of a full turn is established, and the antisymmetry of a two-particle state under exchange is a separate statement the corpus makes in its own article and does not derive here. No mass value: the mass is a parameter. No derivation of the Born rule: the weight is quoted from the informational sector. No identification of chirality with the material-informational split: the entry states the correction. No claim that the infinity of the family is a problem: it is the statement that the algebra has no preferred frame.
 
 ## The Limits
 
 **No dynamics.** Left multiplication by an element is not an equation of motion. The entry describes the carrier, the closures and the invariants; the operator that acts on a field, its square and its solutions belong to the Dirac articles. A reader who wants the propagator will not find it here, and the entry says so rather than sketching one.
 
-**No mass value.** The pairing has the shape of a mass term and no number. The coefficient $\nu_m=\frac{mc}{h}$ is a parameter, the algebra gives no equation that would fix it, and the mass spectrum of the framework is not a result of the carrier theory.
+**No mass value.** The pairing has the shape of a mass term and no number. The coefficient $m$ is a parameter, the algebra gives no equation that would fix it, and the mass spectrum of the framework is not a result of the carrier theory.
 
 **No proof of minimality from first principles.** The minimality of the ideal is proved from the structure of the algebra as a full matrix algebra, which is an established result of the corpus and not re-derived here. The dimension count does the work and the matrix-algebra input is cited.
 
@@ -483,7 +475,7 @@ The light cone. The degenerate plane of the ideal has a physical name too. Its g
 
 No quantum postulate. The entries of the informational sector supply the weights and the state space, and the entry quotes them. Nothing here postulates a Hilbert space, a collapse or a probability rule.
 
-**No claim about the shape of the family beyond its indexing.** Axes give planes, pairs and ideals; the sphere indexes the axes, the projective plane indexes the pairs, and the entry stops there. Whether the family should be read as a bundle with a connection is a question the corpus does not settle and this entry does not open.
+**No claim about the shape of the family beyond its indexing.** Axes give planes, pairs and ideals; the sphere indexes the axes, the projective plane indexes the pairs, and the entry stops there. Whether the family should be read as a bundle with a local structure is a question the corpus does not settle and this entry does not open.
 
 ## Summary
 
@@ -518,7 +510,7 @@ The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_
 | $\gamma(\vec u)=-iR_{\vec u}$ | the chirality operator of the axis |
 | $\bar{\cdot}$, ${}^{*}$ | coefficient conjugation (automorphism) and Hermitian conjugation (antiautomorphism) |
 | $S_{\vec s}=\tfrac12(e_t+i\vec s_{\Psi})$ | a state of the informational sector, $\lvert\vec s_{\Psi}\rvert\le1$ |
-| $\nu_m=\frac{mc}{h}$ | the mass coefficient of the Dirac pair |
+| $m$ | the mass coefficient of the Dirac pair |
 | $\mathcal N$, $\mathcal S$ | the null cone and the spectral-degenerate cone |
 
 ## Further Reading

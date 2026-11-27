@@ -70,11 +70,10 @@ $$
 with real coefficient functions $\mathcal{A}_{\imath a}$. The parent's covariant derivative is generalized in the only way that keeps its form,
 
 $$
-D_{\imath} = \partial/\partial R_{\imath} + i\kappa\,\mathcal{A}_{\imath}, \qquad D = \tilde\nabla_\Phi + i\kappa\,\mathcal{A},
-\qquad \kappa =\frac{2\pi ϙ}{h},
+D_{\imath} = \partial/\partial R_{\imath} + i\kappa\,\mathcal{A}_{\imath}, \qquad D = \tilde\nabla_\Phi + i\kappa\,\mathcal{A} ,
 $$
 
-acting on a matter field $\tilde{Ξ}$ by left multiplication, $D_{\imath}\tilde{Ξ} = \partial/\partial R_{\imath}\,\tilde{Ξ} + i\kappa\,\mathcal{A}_{\imath}\tilde{Ξ}$. The coupling $\kappa$ plays the role of the abelian $\frac{2\pi i\,ϙ}{h}$; the factor $i$ is kept explicit, as in the parent, so that the reality discussion below can be stated cleanly.
+acting on a matter field $\tilde{Ξ}$ by left multiplication, $D_{\imath}\tilde{Ξ} = \partial/\partial R_{\imath}\,\tilde{Ξ} + i\kappa\,\mathcal{A}_{\imath}\tilde{Ξ}$. The coupling $\kappa$ plays the role of the abelian $i\kappa$; the factor $i$ is kept explicit, as in the parent, so that the reality discussion below can be stated cleanly.
 
 Now let the field transform by a **local, non-central** element of the group,
 
@@ -317,7 +316,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $a,b,c$ | indices of the algebra, written low |
 | $\tilde Q(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde Q^{-1}=\bar{\tilde Q}=\tilde Q^\dagger$ |
 | $\mathcal{A}_{\imath} = \sum_a\mathcal{A}_{\imath a} e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_{\imath}\mathcal{A}_{\imath} e_{\imath}$ |
-| $\kappa =\frac{2\pi ϙ}{h}$ | Coupling |
+| $\kappa$ | Coupling, not fixed by the algebra |
 | $D_{\imath} = \partial/\partial R_{\imath} + i\kappa\mathcal{A}_{\imath}$ | Covariant derivative, $D=\tilde\nabla_\Phi+i\kappa\mathcal{A}$ |
 | $\mathcal{A}_{\mathrm g,\imath} = \tilde Q\mathcal{A}_{\imath} \tilde Q^{-1} + \frac{i}{\kappa}(\partial/\partial R_{\imath} \tilde Q)\tilde Q^{-1}$ | Non-abelian transformation of the connection |
 | $B_{\imath} = (\partial/\partial R_{\imath} \tilde Q)\tilde Q^{-1}$ | Maurer–Cartan form; $\partial/\partial R_{\imath} B_{\jmath} - \partial/\partial R_{\jmath} B_{\imath} = [B_{\imath},B_{\jmath}]$ |
@@ -335,7 +334,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 
 - [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html) — the immediate parent; its abelian connection, its curvature-commutator identity, its orbit analysis, and the gap this article takes up.
 - [Connection Curvature and the Bianchi Identity in Biquaternionic Form](connection-curvature-and-the-bianchi-identity-in-biquaternionic-form.html) — the curvature as the commutator of covariant derivatives, the differential Bianchi identity, the Jacobi identity behind it, and the two-sided covariant derivative; the material this article cites rather than repeats.
-- [The Minimal coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html) — the origin of the connection and the abelian transformation law, and the preview $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath} +\frac{2\pi i\,ϙ}{h}[A_{\imath},A_{\jmath}]$ that is made exact here.
+- [The Minimal coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html) — the origin of the connection and the abelian transformation law, and the preview $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\partial R_{\jmath} A_{\imath} +i\kappa[A_{\imath},A_{\jmath}]$ that is made exact here.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian potential, field strength and scalar part that the non-abelian construction generalizes.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian invariants and the biquaternion norm, whose non-abelian extension is posed as an open question.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the covariant derivative on the spinor module and the charge operator $Ϙ$, the setting for the matter-representation question.

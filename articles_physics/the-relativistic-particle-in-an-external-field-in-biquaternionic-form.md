@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A particle of rest mass $m$ and charge $ϙ$ moving in a prescribed electromagnetic field is the simplest interacting system of classical relativistic mechanics. In the four-vector language its equation of motion is the Lorentz force, $dP_{\imath}/d\tau = ϙ\sum_{\jmath} F_{\imath\jmath}v_{\jmath}$, and the field enters the dynamics through one prescription: **minimal coupling**, the replacement of the free four-momentum by $P \to P - ϙ\tilde{A}_{\Phi}$. This article develops that prescription inside the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, in the notation of the read-list articles, and makes explicit a distinction that is easy to pass over:
+A particle of rest mass $m$ and charge $ϙ$ moving in a prescribed electromagnetic field is the simplest interacting system of classical relativistic mechanics. In the four-vector language its equation of motion is the Lorentz force, $dP_{\imath}/d\tau = ϙ\sum_{\jmath} F_{\imath\jmath}v_{\jmath}$, and the field enters the dynamics through one prescription: **the coupling**, the replacement of the free four-momentum by $P \to P - ϙ\tilde{A}_{\Phi}$. This article develops that prescription inside the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, in the notation of the read-list articles, and makes explicit a distinction that is easy to pass over:
 
 - **The canonical four-momentum is not the kinetic four-momentum once the potential is nonzero.** The two differ by $ϙ\tilde{A}_{\Phi}$. The kinetic momentum is invariant and is the object that satisfies the free mass-shell relation $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$; the canonical momentum is representative-dependent and is the object that appears in the Hamiltonian. In the free limit the two coincide, and only there.
 - **The prescription has a Lagrangian face as well as an algebraic one.** Written as the replacement of the canonical four-momentum in the mass-shell relation it reads $\langle\tilde P_{\Phi,\mathrm{can}} - ϙ\tilde{A}_{\Phi}\rangle_{\natural} = -m^2c^2$. Written as a prescription on the action it produces the canonical momentum $\tilde P_{\Phi,\mathrm{can}} = \tilde{P}_{\Phi} + ϙ\tilde{A}_{\Phi}$ directly, as the momentum conjugate to the four-position. The two faces are the same statement. **The action face is derived in *Action in the Biquaternion Universe***, in [The Relativistic Particle and the Lagrangian: The Stationary-Action Principle](the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.html), §*The canonical momentum in a potential*; this article states it and uses it.
@@ -33,7 +33,7 @@ $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2,
 $$
 
-equivalently $E^2 = \vec p^2c^2 + m^2c^4$. In the free theory the momentum that appears in the mass-shell relation is the particle's kinetic (mechanical) momentum, and it is also the canonical momentum conjugate to the four-position, because there is no potential to shift it. Minimal coupling is precisely the statement that this coincidence fails once $\tilde{A}_{\Phi}\neq 0$.
+equivalently $E^2 = \vec p^2c^2 + m^2c^4$. In the free theory the momentum that appears in the mass-shell relation is the particle's kinetic (mechanical) momentum, and it is also the canonical momentum conjugate to the four-position, because there is no potential to shift it. The coupling is precisely the statement that this coincidence fails once $\tilde{A}_{\Phi}\neq 0$.
 
 ## The Minimal-Coupling Prescription
 
@@ -41,7 +41,7 @@ The prescription is stated on the mass-shell relation and then translated into t
 
 ### The mass-shell form
 
-**Minimal coupling replaces the canonical four-momentum by $\tilde P_{\Phi,\mathrm{can}} - ϙ\tilde{A}_{\Phi}$ in the mass-shell relation:**
+**The interaction replaces the canonical four-momentum by $\tilde P_{\Phi,\mathrm{can}} - ϙ\tilde{A}_{\Phi}$ in the mass-shell relation:**
 
 $$
 \boxed{\;\left\langle\tilde P_{\Phi,\mathrm{can}} - ϙ\tilde{A}_{\Phi}\right\rangle_{\natural} = -m^2c^2\;}.
@@ -97,7 +97,7 @@ The action form of the prescription, and the variation that gives the conjugate 
 
 Once $\tilde{A}_{\Phi}\neq 0$, two four-vectors that coincide in the free theory separate, and the difference is physical.
 
-**Representative behaviour.** Under a local transformation of the connection, $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ with $\Gamma$ a real scalar, the kinetic momentum is unchanged,
+**Representative behaviour.** Under a shift of the potential by a gradient, $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ with $\Gamma$ a real scalar, the kinetic momentum is unchanged,
 
 $$
 \tilde{P}_{\Phi,\mathrm{kin},2} = \tilde P_{\Phi,\mathrm{can},2} - ϙ\tilde{A}_{\Phi,2} = \left(\tilde P_{\Phi,\mathrm{can}} - ϙ\tilde\nabla_\Phi\Gamma\right) - ϙ\left(\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\right) = \tilde P_{\Phi,\mathrm{can}} - ϙ\tilde{A}_{\Phi} = \tilde{P}_{\Phi,\mathrm{kin}},
@@ -273,13 +273,13 @@ With that convention the four-velocity, the four-momentum, and the four-force al
 **Supplied by the algebra.**
 
 - *A single home for the four-vectors of the problem.* The four-position, four-velocity, kinetic four-momentum, canonical four-momentum, four-potential, and four-force all lie in the same four-dimensional real subspace $\mathbb{B}_{\Phi}$, and the minimal-coupling shift $\tilde P_{\Phi,\mathrm{can}} = \tilde{P}_{\Phi,\mathrm{kin}} + ϙ\tilde{A}_{\Phi}$ is an equation inside that subspace.
-- *A constraint, not an extra postulate.* The mass-shell relation $\langle\tilde{P}_{\Phi,\mathrm{kin}}\rangle_{\natural} = -m^2c^2$ is the biquaternion-norm condition on $\mathbb{B}_{\Phi}$; with minimal coupling it *is* the relativistic Hamiltonian, and it delivers both the canonical/kinetic relation and the form of the energy in one equation.
+- *A constraint, not an extra postulate.* The mass-shell relation $\langle\tilde{P}_{\Phi,\mathrm{kin}}\rangle_{\natural} = -m^2c^2$ is the biquaternion-norm condition on $\mathbb{B}_{\Phi}$; with the coupling it *is* the relativistic Hamiltonian, and it delivers both the canonical/kinetic relation and the form of the energy in one equation.
 - *A canonical momentum from the action.* The conjugate momentum $\tilde P_{\Phi,\mathrm{can}} = \tilde{P}_{\Phi} + ϙ\tilde{A}_{\Phi}$ follows from the first variation of the biquaternion action with the pairing $\langle\tilde{A}_{\Phi},d\tilde R_\Phi/d\tau\rangle$, with no index apparatus.
 - *The form of the force.* The contraction $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = ϙ\sum_{\jmath} F_{\imath\jmath}U_{\jmath}$ reassembles into the $\mathbb{B}_{\Phi}$-valued four-force, and it agrees with the projection formula $ -ϙ\,P_{\mathbb{B}_{\Phi}}(\tilde{V}_{\Phi}\tilde{F})/c$ of the Lorentz-force article.
 
 **Only transcribed.** The minimal-coupling *principle* itself — that the canonical four-momentum should be replaced by $\tilde P_{\Phi,\mathrm{can}} - ϙ\tilde{A}_{\Phi}$ — is not derived from the algebra; it is the standard prescription carried into it, and the algebra supplies a home and a compact expression rather than a reason. The sign conventions are inherited from the parent articles and are conventions, not results. The non-relativistic limit likewise reproduces the Newtonian Lorentz force, as it must, and does not test the relativistic part of the construction.
 
-**Interpretation.** Reading $\tilde{A}_{\Phi}$ as a connection and $\tilde{P}_{\Phi,\mathrm{kin}} = \tilde P_{\Phi,\mathrm{can}} - ϙ\tilde{A}_{\Phi}$ as the horizontal (covariant) momentum is a geometric interpretation of an algebraic statement; the algebra supplies the statement, and the bundle picture is a consistent interpretation of it, as in the minimal coupling and covariant-derivative articles. The claim here is not that the algebra forces the geometric interpretation.
+**Interpretation.** Reading $\tilde{A}_{\Phi}$ as a potential and $\tilde{P}_{\Phi,\mathrm{kin}} = \tilde P_{\Phi,\mathrm{can}} - ϙ\tilde{A}_{\Phi}$ as the momentum the potential carries is a geometric interpretation of an algebraic statement; the algebra supplies the statement, and the bundle picture is a consistent interpretation of it. The claim here is not that the algebra forces the geometric interpretation.
 
 **Gaps, left visible.** The extension to a *dynamical* field (in which $\tilde{A}_{\Phi}$ obeys its own equation and the particle back-reacts) is not treated; that is a field-theoretic problem. The many-body conservation law is not treated (it belongs to the exercise and to *Noether's Theorem in Biquaternionic Form*). The relation of the classical canonical momentum to the quantized momentum of the canonical-quantization articles is not pursued.
 
@@ -293,9 +293,9 @@ With that convention the four-velocity, the four-momentum, and the four-force al
 
 4. **Choice of representative and integrability.** In the uniform magnetic field the Landau fixing condition makes two canonical components conserved. Is there a biquaternion-natural criterion for the representative — a condition on $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ or on the field strength — that selects the separable representative for a given field, and is it the same as the standard one?
 
-5. **The sign of the charge and the corpus's conventions.** The classical relation $\tilde P_{\Phi,\mathrm{can}} = \tilde{P}_{\Phi,\mathrm{kin}} + ϙ\tilde{A}_{\Phi}$ and the corpus's covariant derivative $D = \tilde\nabla_\Phi +\frac{2\pi i\,ϙ}{h}\tilde{A}_{\Phi}$ have been aligned here by the standard classical signs. Is there a corpus-wide convention that fixes the relative sign of the phase $\digamma_{\mathrm{cph}} = \exp(i\theta_{\mathrm{cph}})$ and the classical canonical momentum once and for all, or is it irreducibly a choice of the sign of $ϙ$?
+5. **The sign of the charge and the corpus's conventions.** The classical relation $\tilde P_{\Phi,\mathrm{can}} = \tilde{P}_{\Phi,\mathrm{kin}} + ϙ\tilde{A}_{\Phi}$ and the corpus's derivative with the potential, $\tilde\nabla_\Phi +2\pi i\,ϙ\tilde{A}_{\Phi}$, have been aligned here by the standard classical signs. Is there a corpus-wide convention that fixes the relative sign of the phase $\digamma_{\mathrm{cph}} = \exp(i\theta_{\mathrm{cph}})$ and the classical canonical momentum once and for all, or is it irreducibly a choice of the sign of $ϙ$?
 
-Here $\theta_{\mathrm{cph}}:=ϙ\,\frac{2\pi \Gamma}{h}$ is the connection angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
+Here $\theta_{\mathrm{cph}}:=2\pi\,ϙ\,\Gamma$ is the coupling angle: the charge $ϙ$ and the phase function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
 
 6. **Empirical content.** As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from standard relativistic electrodynamics. The construction as presented is a reformulation.
 
@@ -359,6 +359,6 @@ The algebra supplies the common home $\mathbb{B}_{\Phi}$ of the four-vectors, th
 - Herbert Goldstein, Charles Poole, and John Safko, *Classical Mechanics* (Addison-Wesley, 2002), for the Lagrangian and Hamiltonian formulation of a charged particle in an external field.
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1958), for the minimal substitution and the canonical-momentum convention in the quantum theory.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the spacetime-algebra treatment of the Lorentz force and the covariant derivative.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor formulation of Lorentz transformations and the geometric interpretation of minimal coupling.
+- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor formulation of Lorentz transformations and the geometric interpretation of the coupling.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the identification of the biquaternion algebra with the even subalgebra of $\mathrm{Cl}_{1,3}$.
 - Companion articles: [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html); [The Lorentz Force in Biquaternion Form](the-lorentz-force-in-biquaternion-form.html); [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html); [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html); [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html); [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html); [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html); [Exercise: Four-Momentum Conservation in a Collision](exercise-four-momentum-conservation-in-a-collision.html); [The Relativistic Two-Body Problem in Biquaternionic Form](the-relativistic-two-body-problem-in-biquaternionic-form.html); [Four-Vectors and the Interval](four-vectors-and-the-interval.html); [States, Observables and the Born Weight](states-observables-and-the-born-weight.html).

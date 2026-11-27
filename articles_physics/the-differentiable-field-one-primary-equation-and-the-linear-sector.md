@@ -6,7 +6,7 @@ The framework states its own test. *Introduction to the Biquaternion Universe* a
 
 There are two ways to use $\mathbb{B}$ in physics, and they are not the same claim.
 
-**Translation.** Take an equation of physics as given, write it in the algebra, and read what the algebra adds: a geometric meaning, a unification of notation, a constraint that was invisible. The Maxwell equations, the Dirac equation and the minimal coupling enter this way, and most of the corpus is of this kind.
+**Translation.** Take an equation of physics as given, write it in the algebra, and read what the algebra adds: a geometric meaning, a unification of notation, a constraint that was invisible. The Maxwell equations and the Dirac equation enter this way, and most of the corpus is of this kind.
 
 **Derivation.** Take the algebra and a definition of the derivative as the only input, ask what a differentiable function must obey, and read the equations of physics as consequences of the answer. Nothing is transcribed, because there is nothing to transcribe from: the field equations become the integrability conditions of one condition on one function.
 
@@ -26,7 +26,7 @@ The corpus is not uniform about what it postulates, and the distinction between 
 | The state space and the Born form | derived from $\mathbb{B}_{\Psi}$ | *States, Observables and the Born Weight* |
 | The Dirac equation | transcribed into the algebra | *The Dirac Equation in Biquaternionic Form* |
 | The Maxwell equations | transcribed, or obtained from a biquaternion wave equation | *Nonlinear Maxwell Equations in Biquaternionic Form* |
-| The minimal coupling | postulated, with a ceiling on the group | *The Minimal Coupling in Biquaternionic Form* |
+| The coupling of a field to a potential | postulated, with a ceiling on the group | *The Minimal Coupling in Biquaternionic Form* |
 | $\frac{h}{2\pi}$ | imported, nowhere derived | — |
 
 The pattern is visible in one line: **the corpus derives the arena and imports the dynamics.** The interval, the group, the cone and the state space follow from the algebra; the equations of motion are written into it. The derivation route is an attempt to close that gap, and it closes it from the dynamics side rather than the kinematic one.
@@ -47,7 +47,7 @@ $$
 
 so the biquaternion gradient of every component is a zero divisor of the algebra. That is the whole of the primary input.
 
-Everything else is a consequence, and the chain is short: a null gradient, hence a direction field; a direction field, hence a congruence of rays; a congruence that the programme's form of the solution makes shear-free and geodesic; a null congruence of that kind that is the principal direction of a null electromagnetic field; and an over-determined system whose integrability forces the self-duality of its curvature, whose Bianchi identity is Maxwell's equation for the trace part and the Yang–Mills equation for the trace-free part. The condition as an equation, the reason complexification is what makes it non-empty, the generating solution, the generating system and the self-duality are all in *The Algebrodynamical Programme*; the congruence side is *Null Electromagnetic Fields and the Shear-Free Congruence*. This article does not restate them.
+Everything else is a consequence, and the chain is short: a null gradient, hence a direction field; a direction field, hence a congruence of rays; a congruence that the programme's form of the solution makes shear-free and geodesic; a null congruence of that kind that is the principal direction of a null electromagnetic field; and an over-determined system whose integrability forces the self-duality of its field tensor, whose Bianchi identity is Maxwell's equation for the trace part and the Yang–Mills equation for the trace-free part. The condition as an equation, the reason complexification is what makes it non-empty, the generating solution, the generating system and the self-duality are all in *The Algebrodynamical Programme*; the congruence side is *Null Electromagnetic Fields and the Shear-Free Congruence*. This article does not restate them.
 
 ### The Eikonal as Primary, and the Inversion of the WKB Relation
 
@@ -65,9 +65,9 @@ This also dissolves the most obvious objection to a nonlinear primary equation. 
 
 ### The Fields as Semi-Derivatives
 
-What plays the role of the field is not $\Sigma$ but the multiplier. The condition splits as $d\digamma_{\mathrm{frm}}=Ξ\,dZ\,\zeta$, with $Ξ$ the left semi-derivative carrying the connection and $\digamma_{\mathrm{frm}},\zeta$ two $SL(2,\mathbb{C})$-spinors; the system is eight equations for six unknowns, and the connection it generates is weakly self-dual — the self-dual part of its curvature vanishes on the solutions rather than identically — so that its Bianchi identity is the field equation. That construction is *The Algebrodynamical Programme*, §*The Generating System and the Connections*, and it is not repeated here.
+What plays the role of the field is not $\Sigma$ but the multiplier. The condition splits as $d\digamma_{\mathrm{frm}}=Ξ\,dZ\,\zeta$, with $Ξ$ the left semi-derivative carrying the field and $\digamma_{\mathrm{frm}},\zeta$ two $SL(2,\mathbb{C})$-spinors; the system is eight equations for six unknowns, and the field it generates is weakly self-dual — the self-dual part of its field tensor vanishes on the solutions rather than identically — so that its Bianchi identity is the field equation. That construction is *The Algebrodynamical Programme*, §*The Generating System and the Connections*, and it is not repeated here.
 
-The point for this article is the direction of the implication. In the corpus's connection articles the connection is introduced because a symmetry is made local, and the field strength is defined as its curvature; the minimal coupling is the postulate. Here the connection is what a differentiable function carries, the curvature is its integrability obstruction, and the field equations are identities. No minimal coupling is assumed.
+The point for this article is the direction of the implication. In the corpus's other articles the potential is introduced to compensate a symmetry that varies from event to event, and the coupling is the postulate. Here the potential is what a differentiable function carries, its integrability obstruction is the field tensor, and the field equations are identities. No coupling is assumed.
 
 ## The Three Corpus Objects the Gradient Meets
 
@@ -95,9 +95,9 @@ The direction field of a null solution of Maxwell's equations is tangent to a ge
 
 ## What the Derivation Buys
 
-### Connection Equations Without a Local Postulate
+### The Field Equations Without a Local Postulate
 
-The gain is not a new equation but a new status for the old ones. Maxwell and Yang–Mills become identities, and the minimal coupling becomes a theorem about the curvature of the connection a differentiable function carries. That is the strongest form the corpus's open question 1 could take: the dynamics is a consequence of the algebra and of one definition, and the definition is not adjustable without changing what a derivative means.
+The gain is not a new equation but a new status for the old ones. Maxwell and Yang–Mills become identities, and the coupling becomes a theorem about the obstruction a differentiable function carries. That is the strongest form the corpus's open question 1 could take: the dynamics is a consequence of the algebra and of one definition, and the definition is not adjustable without changing what a derivative means.
 
 ### A Fixed Scale, and What It Does Not Settle
 
@@ -105,7 +105,7 @@ The scale question is the one place where the derivation has real physical conte
 
 **The eikonal alone is scale covariant.** Its condition is homogeneous of degree two in the gradient, so a component may be multiplied by any constant and the condition survives. It is immediate from the polar form, $N(\digamma_{\mathrm{scl}} g)=\digamma_{\mathrm{scl}}^2N(g)$ for every complex $\digamma_{\mathrm{scl}}$. Nothing about a single component's amplitude is fixed by differentiability.
 
-**The connection is not.** The curvature of a connection is $dA+[A,A]$, one term linear in the potential and one quadratic in it. Scaling the potential therefore does not scale the curvature:
+**The field tensor is not.** It is $dA+[A,A]$, one term linear in the potential and one quadratic in it. Scaling the potential therefore does not scale the field tensor:
 
 $$
 F(\digamma_{\mathrm{scl}} A)=\digamma_{\mathrm{scl}}\,F(A)+(\digamma_{\mathrm{scl}}^2-\digamma_{\mathrm{scl}})\,[A,A] .
@@ -113,7 +113,7 @@ $$
 
 The two terms scale differently, so a solution of the self-duality relation $F=iF^{*}$ survives a rescaling only for $\digamma_{\mathrm{cfm}}=1$ — or for a commutator term that is itself (anti)self-dual in the same sense, which a generic potential does not have. The admissible amplitudes are isolated, not continuous.
 
-**That is where a fixed amplitude can come from, and it is not a quantum assumption.** A linear theory cannot prefer one amplitude, because its solution space is a vector space and every multiple of a solution is a solution. A theory whose field equations carry a quadratic term can, and here does: the amplitude of the connection is pinned by the self-duality condition rather than left free, and the pinning is a property of the algebra's product and not of $\frac{h}{2\pi}$. Nothing in the algebra knows about $\frac{h}{2\pi}$.
+**That is where a fixed amplitude can come from, and it is not a quantum assumption.** A linear theory cannot prefer one amplitude, because its solution space is a vector space and every multiple of a solution is a solution. A theory whose field equations carry a quadratic term can, and here does: the amplitude of the potential is pinned by the self-duality condition rather than left free, and the pinning is a property of the algebra's product and not of $\frac{h}{2\pi}$. Nothing in the algebra knows about $\frac{h}{2\pi}$.
 
 The step from a fixed amplitude to a **discrete** charge is the programme's, and it is a further claim, not a corollary of the scaling identity. The programme's value $q=N/4$, with $N$ an integer winding number — the source's letter, colliding with the norm's $N$ above — is stated there with two reasons of its own, one topological and one dynamical, and with a pointer to a general theorem in its later papers; *The Algebrodynamical Programme*, §*Particle-Like Solutions and the Self-Quantized Charge*, records it with that attribution.
 
@@ -127,7 +127,7 @@ The singular locus of a solution is the branch set of the generating function, $
 
 The generating system is over-determined, eight equations for six unknowns, and the over-determination is what denies it a variational principle of the usual kind. A Lagrangian is what canonical quantisation needs, and the corpus's quantisation articles — *Canonical Quantization of the Biquaternion Graviton Field*, *The Path Integral in Biquaternionic Form* — presuppose one. The derivation route buys its explanatory power at the price of the method by which the rest of the corpus quantises. Any quantisation of it must be a quantisation of a constrained system, and the programme itself says that this requires new methods.
 
-The programme's own position is less absolute than that: the primary system admits no Lagrangian, while the **secondary** connections associated with it do, since they are ordinary field equations once the congruence is given. So the action exists one storey down. That is not enough for canonical quantisation of the primary field, and it is more than nothing.
+The programme's own position is less absolute than that: the primary system admits no Lagrangian, while the **secondary** fields associated with it do, since they are ordinary field equations once the congruence is given. So the action exists one storey down. That is not enough for canonical quantisation of the primary field, and it is more than nothing.
 
 ### No Superposition
 
@@ -190,9 +190,9 @@ Three agreements are worth naming, because they are what makes the derivation wo
 
 ## Summary
 
-The corpus derives its arena and imports its dynamics. The derivation route inverts the second half: one condition, the factorisation of the differential, and the field equations as its integrability conditions. The condition is that the gradient of every component of a differentiable function is a zero divisor; the eikonal is the coordinate form of that statement; the fields are the semi-derivatives; self-duality is the integrability condition; Maxwell and Yang–Mills are the Bianchi identities of the resulting curvature.
+The corpus derives its arena and imports its dynamics. The derivation route inverts the second half: one condition, the factorisation of the differential, and the field equations as its integrability conditions. The condition is that the gradient of every component of a differentiable function is a zero divisor; the eikonal is the coordinate form of that statement; the fields are the semi-derivatives; self-duality is the integrability condition; Maxwell and Yang–Mills are the Bianchi identities of the resulting field tensor.
 
-The gains are three: connection equations without a representative postulate, a fixed amplitude whose isolation is where the programme locates the origin of its discrete charge, and a singular locus that carries the field, the charge and the effective geometry at once. The costs are three: no action principle, so no canonical quantisation; no additivity, so no linear state space on the solution class, although the class sits inside one; and a real slice that the theory's own invariance rule does not preserve.
+The gains are three: field equations without a representative postulate, a fixed amplitude whose isolation is where the programme locates the origin of its discrete charge, and a singular locus that carries the field, the charge and the effective geometry at once. The costs are three: no action principle, so no canonical quantisation; no additivity, so no linear state space on the solution class, although the class sits inside one; and a real slice that the theory's own invariance rule does not preserve.
 
 The last is the fork. Conjugation first gives the two sectors and the corpus's quantum reading, at the price of a structure the product does not preserve. Product first gives the derivation, and — carried through — an induced Minkowski-type arena with a positive-definite time and an invariant phase, at the price of the sectors. The two share the cone, the generating data and the locus of states, so they are not strangers; but they cannot both be fundamental, and the choice between them is the choice of what the biquaternion universe is a universe of.
 
@@ -211,7 +211,7 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 | $Ξ$ | The left semi-derivative in the spinor splitting $d\digamma_{\mathrm{frm}}=Ξ\,dZ\,\zeta$ |
 | $\digamma_{\mathrm{frm}}$, $\zeta$ | The two $SL(2,\mathbb{C})$-spinors of that splitting |
 | $\Pi$, $G$ | The generating function and the projective coordinate it resolves |
-| $F_{\imath\jmath}$, $A_{\imath}$ | The curvature and the potential of the connection the condition carries |
+| $F_{\imath\jmath}$, $A_{\imath}$ | The field tensor and the potential the condition carries |
 | $q$ | The electric charge, $q=N/4$ in the programme's units, $N$ the winding number and not the norm |
 | $\sigma$ | The automorphism invariant $z_1^2+z_2^2+z_3^2$ of the complex three-vector |
 | $T$, $\vec X$ | The induced time $\vec z\cdot\vec z^{*}$ and space $i\,\vec z\times\vec z^{*}$ |
@@ -224,8 +224,6 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 - [Null Electromagnetic Fields and the Shear-Free Congruence](null-electromagnetic-fields-and-the-shear-free-congruence.html), for Bateman's representation, the Mariot–Robinson theorem and the static null field.
 - [The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase](the-celestial-sphere-of-the-null-cone-null-directions-chirality-and-the-phase.html), for the sphere of null directions and the little-group phase.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the cone as a topological object and its Lorentzian slices.
-- [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), for the postulate the derivation route replaces with a theorem.
-- [Connection Curvature and the Bianchi Identity in Biquaternionic Form](connection-curvature-and-the-bianchi-identity-in-biquaternionic-form.html), for the Bianchi identity as a Jacobi identity and the form the field equations take.
 - [The Schrödinger equation in the Non-Quantum Limit](the-schrodinger-equation-in-the-non-quantum-limit.html), for the eikonal as the short-wavelength limit, the relation this article inverts.
 - [The Rotations, the Boosts and the Groups](../articles_internal/the-rotations-the-boosts-and-the-groups.html), for the statement that a boost is a motion and not an automorphism, which is the corpus's side of the fork.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the framework's own test of a structural hypothesis and its list of open questions.

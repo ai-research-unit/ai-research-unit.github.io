@@ -4,7 +4,7 @@
 
 This is one of the exercises in the relativity series. It is a set of worked problems in the relativistic Doppler effect, using the framework and the notation of the companion articles *Relativistic Mechanics in Biquaternionic Form* and *The Lorentz Transformation as a Biquaternionic Rotation*. Those two articles are the parents of this exercise: they set up the four-vectors of $\mathbb{B}_{\Phi}$ and the boost rotor that acts on them, and what follows applies them to the light of a moving source. Nothing new is introduced, and every result below is obtained from the tools already defined there.
 
-**What is assumed.** The algebra, the sectors and the biquaternion norm are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. The four-wavevector $\tilde P_{\Phi} =\frac{h}{2\pi}\,(i\omega/c\,e_t + 2\pi\vec\nu_\Phi)$ from the table of four-vectors in *Four-Vectors and the Interval*. The rotor conjugation $\tilde{Q} \mapsto \tilde U_{\Psi,\mathrm b}\tilde{Q}\tilde U_{\Psi,\mathrm b}^{*}$ by the Lorentz rotor $\tilde U_{\Psi,\mathrm b}$, with $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural} = e_t$, and the boost biquaternion
+**What is assumed.** The algebra, the sectors and the biquaternion norm are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. The four-wavevector $\tilde P_{\Phi} = i\omega/c\,e_t + 2\pi\vec\nu_\Phi$ from the table of four-vectors in *Four-Vectors and the Interval*. The rotor conjugation $\tilde{Q} \mapsto \tilde U_{\Psi,\mathrm b}\tilde{Q}\tilde U_{\Psi,\mathrm b}^{*}$ by the Lorentz rotor $\tilde U_{\Psi,\mathrm b}$, with $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural} = e_t$, and the boost biquaternion
 $$
 \tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
 \qquad
@@ -44,7 +44,7 @@ For light in a medium of local speed $c = 1/\sqrt{\epsilon\mu}$ the dispersion r
 $$
 \langle\tilde P_{\Phi}\rangle_{\natural} = 0 :
 $$
-the four-wavevector of light is a **null** element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *Four-Vectors and the Interval* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P_{\Phi}\rangle_{\natural}  = -(2\pi\nu_m)^{2}$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec\nu_\Phi$, through the angle $\theta$, and on $\beta$ — not on the magnitude $\nu_{\Phi}$. Here $\frac{1}{2\pi\nu_m}$ is the mass length.
+the four-wavevector of light is a **null** element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *Four-Vectors and the Interval* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: for a massive particle the norm is $\langle\tilde P_{\Phi}\rangle_{\natural}  = -m^{2}c^{2}$, a fixed negative value, whereas for light it vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec\nu_\Phi$, through the angle $\theta$, and on $\beta$, not on the magnitude $\nu_{\Phi}$.
 
 **Solution (b).** Fix the plane-wave convention $\propto \exp(i\theta_{\mathrm{inv}})$ with the invariant angle $\theta_{\mathrm{inv}}=Ξ$ real because it is a frequency times a time minus a wave vector times a position, and with
 $$
@@ -314,7 +314,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 
 ## Summary
 
-1. **Four-wavevector.** $\tilde P_{\Phi} =\frac{h}{2\pi}\,(i\omega/c\,e_t + 2\pi\vec\nu_\Phi)$ is an element of $\mathbb{B}_{\Phi}$ with $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + 4\pi^{2}\nu_{\Phi}^2$; for light $2\pi\nu_{\Phi} = \omega/c$ and $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = 2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c$ is invariant under rotor conjugation.
+1. **Four-wavevector.** $\tilde P_{\Phi} = i\omega/c\,e_t + 2\pi\vec\nu_\Phi$ is an element of $\mathbb{B}_{\Phi}$ with $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + 4\pi^{2}\nu_{\Phi}^2$; for light $2\pi\nu_{\Phi} = \omega/c$ and $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = 2\pi\vec\nu_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c$ is invariant under rotor conjugation.
 
 2. **Frequency invariant.** An observer of four-velocity $\tilde{V}_{\Phi}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P_{\Phi}\tilde{V}_{\Phi}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
 
@@ -341,7 +341,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position |
-| $\tilde P_{\Phi} =\frac{h}{2\pi}\,(i\omega/c\,e_t + 2\pi\vec\nu_\Phi)$ | Four-wavevector, $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ for light |
+| $\tilde P_{\Phi} = i\omega/c\,e_t + 2\pi\vec\nu_\Phi$ | Four-wavevector, $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ for light |
 | $\tilde{V}_{\Phi} = \gamma_b(ic\,e_t + \vec v_b)$ | Observer four-velocity, $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | Boost biquaternion (Hermitian, unit norm) |
 | $\theta_{\mathrm{rpd}}$ | Rapidity, $\tanh\theta_{\mathrm{rpd}} = v_b/c$ |

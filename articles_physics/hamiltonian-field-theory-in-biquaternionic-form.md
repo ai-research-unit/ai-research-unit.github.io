@@ -13,7 +13,7 @@ The conventions are those of the read list: the algebra, the invertibles, the se
 $$
 \mathcal{L}=-\mathrm{Sc}\!\left[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right]-4\pi^{2}\nu_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]
 =|\partial\xi/\partial r'_t|^2-|\vec\nabla_\Phi\xi|^2-4\pi^{2}\nu_m^{2}|\xi|^2,
-\qquad \nu_m=\frac{mc}{h},
+\qquad \nu_m=\frac{mc}{2\pi},
 $$
 
 and the equation of motion is $\left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde{Ξ}=0$, that is $\partial^2\xi/\partial {r'_{t}}^2=c^2(\Delta_\Phi\xi-4\pi^{2}\nu_m^{2}\xi)$.
@@ -56,7 +56,7 @@ and the transform is called **regular** when $\mathbb H$ is an isomorphism of mo
 
 | rung | value space $\mathcal M$ | conjugate momentum | Hessian | constraint structure | bracket |
 |---|---|---|---|---|---|
-| Schrödinger | $\mathbb C$ (central) | $i\frac{h}{2\pi}\tilde\Xi^{*}$ | rank zero: the density is first order in the velocity | none; four word momenta vanish identically | the canonical bracket on $(\tilde\Xi,\tilde\Pi_{\mathrm{id}})$ |
+| Schrödinger | $\mathbb C$ (central) | $i\tilde\Xi^{*}$ | rank zero: the density is first order in the velocity | none; four word momenta vanish identically | the canonical bracket on $(\tilde\Xi,\tilde\Pi_{\mathrm{id}})$ |
 | Klein–Gordon | $\mathbb C$ (central) | $\pi=\left(\partial\xi/\partial r'_{t}\right)^{*}$ | the identity: **regular** | none | the field Poisson bracket |
 | Dirac | the spinor module | the first-order bilinear; $\pi-i\tilde\Xi^{\dagger}\approx0$ | rank zero: first order throughout | eight second-class, four degrees of freedom | the Dirac bracket, then the anticommutator |
 | Proca | the complex vector part | $\pi^{0}=0$; $\pi^{\imath}=-F^{0\imath*}$ | rank three of four | two second-class, three degrees of freedom | the Dirac bracket |
@@ -215,7 +215,7 @@ The canonical bracket is read in the algebra as the scalar part of a pairing. Si
 
 **The other four columns of the dictionary are named here and computed in their bands; none of them is derived in this article.** The reason to name them is that the scalar column's three results — a density that is a Hermitian form, equations that are the field equation, a bracket that is the standard one — are *not* transported by substitution, and a reader who assumes they are will get each of the three wrong at the rungs where the Hessian fails.
 
-- **The Schrödinger column.** The field is first order, so the conjugate is $i\frac{h}{2\pi}\tilde\Xi^{*}$ and the density is the coordinate rather than a function of it. The density and the phase are the pair, the bracket is the canonical one on that pair, and the four momenta of the polar word $r$, $\theta_{\mathrm{rpd}}$, $\varrho$ and $\theta_{\mathrm{rpa}}$ vanish identically — the vanishing is a property of the chart and not a constraint. The polar Lagrangian article writes the chart and the vanishing momenta; the energy is the Hamiltonian of the parent equation.
+- **The Schrödinger column.** The field is first order, so the conjugate is $i\tilde\Xi^{*}$ and the density is the coordinate rather than a function of it. The density and the phase are the pair, the bracket is the canonical one on that pair, and the four momenta of the polar word $r$, $\theta_{\mathrm{rpd}}$, $\varrho$ and $\theta_{\mathrm{rpa}}$ vanish identically — the vanishing is a property of the chart and not a constraint. The polar Lagrangian article writes the chart and the vanishing momenta; the energy is the Hamiltonian of the parent equation.
 - **The Dirac column.** The first-order action gives eight real second-class conditions, the Dirac bracket replaces the Poisson bracket, and the promotion of that bracket is the *anticommutator* and not the commutator. The Hamiltonian, the normal-ordering constant and the mode algebra are *Canonical Quantization of the Biquaternion Dirac Field*'s, and the constraint analysis is the Dirac–Bergmann article's; the present article contributes only the row.
 - **The Proca column.** Rank three of four: the primary $\pi^{0}=0$ and the Gauss law are second class, the Dirac bracket is the replacement, and the three remaining degrees of freedom are the two transverse and one longitudinal mode. The Hamiltonian and the constraint structure are *Canonical Quantization of the Biquaternion Proca Field*'s.
 - **The connection column.** For the Maxwell field the two constraints per generator are first class, the Gauss laws generate the gauge transformations, and the bracket exists only after a gauge fixing or as a Dirac bracket on the gauge-invariant functionals. *Canonical Quantization of the Biquaternion Maxwell Field* owns the construction.
@@ -292,7 +292,7 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 | $\mathbb H=\delta^{2}L/\delta\left(\partial_{t}X\right)^{2}$ | the Hessian; the transform is regular when it is an isomorphism, and its kernel is the constraint count |
 | $\tilde{Ξ}=\xi\,e_t$ | The central scalar field, $\xi:\mathbb{R}^{1,3}\to\mathbb{C}$, $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$ |
 | $\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\vec\nabla_\Phi\xi|^2-4\pi^{2}\nu_m^{2}|\xi|^2$ | The Lagrangian density, the sign fixed by *Noether's Theorem in Biquaternionic Form* |
-| $1/(2\pi\nu_m)$ | The length of one radian of the mass phase, $\frac{1}{2\pi\nu_m}$, the range of the force; its reciprocal $2\pi\nu_m=\frac{2\pi mc}{h}$ is the angular mass wave number, the mass parameter of the Klein–Gordon equation |
+| $1/(2\pi\nu_m)$ | The length of one radian of the mass phase, $\frac{1}{2\pi\nu_m}$, the range of the force; its reciprocal $2\pi\nu_m=m_0$ is the angular mass wave number, the mass parameter of the Klein–Gordon equation |
 | $\pi=\partial\mathcal{L}/\partial\left(\partial\xi/\partial r'_t\right)=\left(\partial\xi/\partial r'_t\right)^{\,*}$ | The conjugate momentum field, and $\pi^\dagger=\partial\xi/\partial r'_t$ its conjugate |
 | $\tilde\Pi_{\mathrm{id}}=\pi\,e_t\in\mathbb{B}_{C}$ | The conjugate momentum field as a central biquaternion |
 | $\mathcal{H}=\pi\partial\xi/\partial r'_t+\pi^\dagger\left(\partial\xi/\partial r'_t\right)^{\,*}-\mathcal{L}$ | The Hamiltonian density; it is $|\partial\xi/\partial r'_t|^2+|\vec\nabla_\Phi\xi|^2+4\pi^{2}\nu_m^{2}|\xi|^2$ and equals the energy density $T_{00}$ |

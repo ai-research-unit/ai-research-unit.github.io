@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *The Covariant Derivative and Connection in Biquaternionic Form* recorded the identity $[D_{\imath}, D_{\jmath}] =\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$ in the abelian sector and closed by naming the biquaternion form of that identity as the subject of a planned companion. The companion *Non-Abelian Connections in Biquaternionic Form* let the connection take values in the vector part of the material sector, the real Lie algebra $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, and recorded in a single section that the curvature is the commutator of covariant derivatives and that the Bianchi identity follows from the Jacobi identity. This article takes those two statements as its whole subject and develops them.
+The companion article *The Covariant Derivative and Connection in Biquaternionic Form* recorded the identity $[D_{\imath}, D_{\jmath}] =i\kappa F_{\imath\jmath}$ in the abelian sector and closed by naming the biquaternion form of that identity as the subject of a planned companion. The companion *Non-Abelian Connections in Biquaternionic Form* let the connection take values in the vector part of the material sector, the real Lie algebra $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, and recorded in a single section that the curvature is the commutator of covariant derivatives and that the Bianchi identity follows from the Jacobi identity. This article takes those two statements as its whole subject and develops them.
 
 Two structural claims organise it.
 
@@ -25,9 +25,10 @@ $$
 with real coefficient functions, and let the covariant derivative act on a matter field by left multiplication,
 $$
 D_{\imath} = \partial/\partial R_{\imath} + i\kappa\,\mathcal{A}_{\imath}, \qquad
-D_{\imath}\tilde{Ξ} = \partial/\partial R_{\imath}\,\tilde{Ξ} + i\kappa\,\mathcal{A}_{\imath}\tilde{Ξ} ,
-\qquad \kappa =\frac{2\pi ϙ}{h}.
+D_{\imath}\tilde{Ξ} = \partial/\partial R_{\imath}\,\tilde{Ξ} + i\kappa\,\mathcal{A}_{\imath}\tilde{Ξ} .
 $$
+
+The number $\kappa$ is the coupling. It is a parameter of the connection, not something the algebra supplies, and the conversion from a charge to it belongs to the rung where the action quantum is declared.
 This is the formal statement of the connection, before any reality condition is imposed; the obstruction to a single Hermitian-conjugation eigenspace across all four components, a property of the $i r'_t$ derivative and not of the algebra, is inherited unchanged from the companion and is carried as open question 3 below.
 This is the one-sided, non-abelian connection of the companion article; its transformation law under a local $\tilde U(\tilde{Q}) \in SU(2)$ is
 $$
@@ -282,7 +283,7 @@ The structural reason is that the Bianchi identity is a three-index antisymmetri
 
 ## Summary
 
-The connection curvature of the biquaternionic framework is the commutator of covariant derivatives, and the commutator reduces to the algebra. For a connection $\mathcal{A}_{\imath} \in \mathfrak{su}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ and $D_{\imath} = \partial/\partial R_{\imath} + i\kappa\mathcal{A}_{\imath}$, with $\kappa =\frac{2\pi ϙ}{h}$,
+The connection curvature of the biquaternionic framework is the commutator of covariant derivatives, and the commutator reduces to the algebra. For a connection $\mathcal{A}_{\imath} \in \mathfrak{su}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ and $D_{\imath} = \partial/\partial R_{\imath} + i\kappa\mathcal{A}_{\imath}$, with $\kappa =\kappa$,
 
 $$
 [D_{\imath},D_{\jmath}] = i\kappa\,F_{\imath\jmath},
@@ -320,7 +321,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $T_a=\tfrac12 \vec e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ |
 | $\tilde U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde U^{-1}=\bar{\tilde U}=\tilde U^\dagger$ |
 | $\mathcal{A}_{\imath} = \sum_a\mathcal{A}_{\imath a} \vec e_a \in \mathfrak{su}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_{\imath}\mathcal{A}_{\imath} e_{\imath}$ |
-| $\kappa =\frac{2\pi ϙ}{h}$ | Coupling |
+| $\kappa$ | Coupling, not fixed by the algebra |
 | $D_{\imath} = \partial/\partial R_{\imath} + i\kappa\mathcal{A}_{\imath}$ | Covariant derivative on matter (one-sided, left) |
 | $\partial/\partial R_t = -i\partial/\partial r'_t$ | $i r'_t$ time derivative |
 | $F_{\imath\jmath} = \partial/\partial R_{\imath}\,\mathcal{A}_{\jmath}-\partial/\partial R_{\jmath}\,\mathcal{A}_{\imath}+i\kappa[\mathcal{A}_{\imath},\mathcal{A}_{\jmath}]$ | Curvature components, antisymmetric, valued in $\mathfrak{sl}(2,\mathbb{C})$ as a real Lie algebra |
@@ -339,7 +340,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 
 ## Further Reading
 
-- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html) — the immediate parent; its abelian commutator identity $[D_{\imath},D_{\jmath}]=\frac{2\pi i\,ϙ}{h}F_{\imath\jmath}$ and its deferral of the Bianchi identity to this article.
+- [The Covariant Derivative and Connection in Biquaternionic Form](the-covariant-derivative-and-connection-in-biquaternionic-form.html) — the immediate parent; its abelian commutator identity $[D_{\imath},D_{\jmath}]=i\kappa F_{\imath\jmath}$ and its deferral of the Bianchi identity to this article.
 - [Non-Abelian Connections in Biquaternionic Form](non-abelian-connections-in-biquaternionic-form.html) — the non-abelian connection, the transformation law, the adjoint curvature, and the compactness gap this article inherits unchanged.
 - [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html) — the origin of the connection, the covariant derivative, and the curvature; the source of the remark that the homogeneous equations are the Bianchi identity of the connection.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian field strength, its pure-vector character, and the biquaternion-norm apparatus that the non-abelian extension does not yet reproduce.

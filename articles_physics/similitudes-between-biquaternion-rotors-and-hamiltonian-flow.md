@@ -222,9 +222,8 @@ The same distinction appears in the companion treatment of the Lorentz group: th
 
 ## Where the Resemblance Breaks (4): Free Motion and Translation
 
-The most basic non-rotor Hamiltonian flow is free motion. On the phase plane $(q,p)$ with $H = p^2\frac{h}{2\pi (mc) c}/(2\frac{h}{2\pi})$, the flow is the **shear**
+The most basic non-rotor Hamiltonian flow is free motion. On the phase plane $(q,p)$ with $H=p^{2}/(2mc^{2})$, the flow is the **shear**
 
-Here $\frac{1}{2\pi\nu_m}$ is the mass length.
 
 $$
 (q, p) \;\longmapsto\; \left(q + \frac{p}{m}r'_t,\; p\right),

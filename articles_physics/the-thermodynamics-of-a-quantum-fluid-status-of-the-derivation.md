@@ -3,8 +3,8 @@
 **Status, 2026-11-27.** The category this article audits is dissolved. Seventeen of its articles are now the section
 `### From the Fluid Equations to the Thermodynamic Equations` in *Biquaternion Universe Fluid Physics and Thermodynamics* — the state and its
 functionals, the kinetic bridge, the local thermal state and the three tests, the departures from equilibrium, and this
-ledger; five are in `#### Thermality` under *Biquaternion Universe Relativity*, where the parameter is defined
-geometrically and algebraically; four are in *Horizons and Their Thermodynamics* under *Biquaternion Universe Gravity and
+ledger; and the five that define thermality, `#### Thermality`, now open that section, where the parameter is
+defined geometrically and algebraically; four are in *Horizons and Their Thermodynamics* under *Biquaternion Universe Gravity and
 Cosmology*; and one, the Reeh–Schlieder theorem, is with the state space in *The Ladder and the State Space*. The audit
 below keeps the numbering of the former category, which counts twenty-two rows because it was written before the last
 five articles were added: the counts are the record's, not the section's, and no argument here depends on either the
@@ -208,7 +208,7 @@ $\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546
 One Hermiticity declaration, made in [The Local Entropy Current](the-local-entropy-current.html) and inherited by every later inequality. No inequality in the category writes $\mathrm{Re}$ after it, and a reader who checks that single fact has checked the category's thermodynamic consistency.
 
 The second modular-Hamiltonian article stands beside the first no longer: the geometric one, which generates a Gibbs
-weight, sits in `#### Thermality` under *Biquaternion Universe Relativity*, and the gravitational one, which is the
+weight, sits in `#### Thermality`, the first subsection of the same section, and the gravitational one, which is the
 entanglement Hamiltonian of a wedge, sits in *Horizons and Their Thermodynamics* under *Biquaternion Universe Gravity and
 Cosmology*. The ledger records the separation and does not merge the two.
 

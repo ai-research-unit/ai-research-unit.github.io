@@ -10,7 +10,7 @@
 
 **Locality.** The density at a point depends on the fields and finitely many of their derivatives. **This is what makes the candidate set finite at each degree**: without it, a term could carry any number of derivatives and the list would not close.
 
-**Dimension.** With $\hbar=c=1$, a derivative has dimension one, a vector field one, a scalar one, a fermion $\tfrac32$, and the density must have dimension four. **A term's dimension is the sum over its factors**, so
+**Dimension.** With $c=1$ and the action carrying no dimension, a derivative has dimension one, a vector field one, a scalar one, a fermion $\tfrac32$, and the density must have dimension four. **A term's dimension is the sum over its factors**, so
 
 $$
 d=k+\sum_i p_i\,\delta_i ,

@@ -225,7 +225,7 @@ which is the cyclotron frequency, and the velocity turns with it. For an electro
 
 4. **The representative of the rest frame.** The residual rotation $\tilde U\to\tilde U\tilde u$ is a redundancy in the classical problem and a physical degree of freedom once spin is included. Is there a series convention for fixing it, and does it correspond to the Thomas–Wigner rotation of the companion exercise?
 
-5. **The rate as a connection.** The rate $\vec\Omega_{\mathrm{LT}}$ is an element of $\mathbb{B}_{V}$, the same subspace that carries the field strength. Is the eigenspinor flow a parallel transport in a connection whose curvature is the field, and does that interpretation connect to the curved-spacetime articles?
+5. **The rate as a potential.** The rate $\vec\Omega_{\mathrm{LT}}$ is an element of $\mathbb{B}_{V}$, the same subspace that carries the field strength. Is the eigenspinor flow a parallel transport in a connection whose curvature is the field, and does that interpretation connect to the curved-spacetime articles?
 
 These questions are open.
 
