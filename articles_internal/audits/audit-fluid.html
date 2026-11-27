@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Applied Migration: the Fluid Block and Its Two Articles Now Say &quot;Fluid Physics&quot; — Biquaternion Universe</title>
-  <meta name="description" content="Status of this file. APPLIED on 2026-11-27. The tree at dc73e8ae7 was read, measured, and then edited: 213 occurrences replaced, 3 files renamed, 3…">
+  <title>Applied Migration: the Fluid Block Now Says &quot;Fluid Physics&quot; — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. APPLIED, 2026-11-27. Baseline dc73e8ae7; the change is commit 7549cb8b2, made by the repository&#x27;s own commit process. The deploy…">
   <link rel="stylesheet" href="../../assets/css/base.css">
   <link rel="stylesheet" href="../../assets/css/layout.css">
   <link rel="stylesheet" href="../../assets/css/article.css">
@@ -69,182 +69,235 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="applied-migration-the-fluid-block-and-its-two-articles-now-say-fluid-physics"><strong>Applied Migration: the Fluid Block and Its Two Articles Now Say "Fluid Physics"</strong></h1>
-<p><em>Status of this file.</em> <strong>APPLIED on 2026-11-27.</strong> The tree at <code>dc73e8ae7</code> was read, measured, and then edited: 213 occurrences replaced, 3 files renamed, 3 sitemaps rewritten. Nothing is committed, and the deploy folder has not been rebuilt. The corpus — <code>physics.md</code>, <code>maths.md</code>, <code>index.md</code>, <code>articles_physics/</code>, <code>articles_internal/</code>, <code>articles_maths/</code> — now contains <strong>zero</strong> occurrences of the old term outside citations of further readings.</p>
-<p><em>What this file is for.</em> It records what changed, in what order, with what evidence, so the change can be verified, reviewed, or reversed. It replaces the earlier review-mode audit, whose recommendation (label only) the author overrode in favour of the maximum migration.</p>
-<p><em>The decision, in five lines.</em></p>
+        <h1 id="applied-migration-the-fluid-block-now-says-fluid-physics"><strong>Applied Migration: the Fluid Block Now Says "Fluid Physics"</strong></h1>
+<p><em>Status of this file.</em> <strong>APPLIED, 2026-11-27.</strong> Baseline <code>dc73e8ae7</code>; the change is commit <strong><code>7549cb8b2</code></strong>, made by the repository's own commit process. The deploy folder was rebuilt in the same pass. Two old URLs are dead (§9).</p>
+<p><em>What this file is for.</em> What changed, how it was done, and how to recheck it. It is written so the work can be repeated on a different term, and so the new vocabulary cannot drift back unnoticed.</p>
+<p><strong>A note on spelling.</strong> This record never writes the retired term. It calls it <em>the old name</em> throughout. That is deliberate: the instruction was zero occurrences anywhere in the corpus, internal articles included, and this file is an internal article that gets published. The old name is recoverable at any time from the baseline commit:</p>
+<pre><code class="language-sh">git show dc73e8ae7:physics.md | grep '^## Biquatern' | grep -i fluid   # the old block heading
+</code></pre>
+<p><em>The method in five lines.</em></p>
 <ol>
-<li><strong>Maximum migration was instructed.</strong> Every section heading, category name, article title, slug, and body sentence was renamed; only cited works were left alone.</li>
-<li><strong>Three files were renamed</strong>, so two published URLs changed.</li>
-<li><strong>Thirteen citations and three verbatim quotations were preserved</strong> — a rename may not rewrite a book's title or another author's sentence.</li>
-<li><strong>The two dated-audit exceptions of the earlier plan were withdrawn</strong> by the same instruction; the audits now carry the new vocabulary.</li>
-<li><strong>One file still spells the old term: this one</strong>, in the reversal key at the end. A migration record that cannot name what it replaced cannot be undone.</li>
+<li><strong>Two scopes, not one.</strong> The corpus was converted wholesale; <code>articles_external/</code> only where it carries our own titles and slugs, because it also carries other authors' sentences.</li>
+<li><strong>Protected vocabulary first.</strong> Citations and quotations were masked with sentinels before any replacement ran, then restored. A plain <code>sed</code> would have rewritten a book's title.</li>
+<li><strong>Order matters.</strong> Hyphenated before spaced; capitalised alongside lowercase; adjectives in a separate pass.</li>
+<li><strong>Renames are part of the migration.</strong> Three files moved, so two published addresses changed, so the build had to run and prune.</li>
+<li><strong>The commit is the record.</strong> Reversal is <code>git revert 7549cb8b2</code>; nothing here respells what was removed.</li>
 </ol>
-<h2 id="1-what-the-instruction-changed">1. What the Instruction Changed</h2>
-<p>The earlier audit proposed three scopes and recommended the narrowest. The author chose the widest: no occurrence of the old discipline name anywhere in the physics and maths corpus, in article bodies as well as labels, with citations of further readings as the only exception. That turned the two open questions of the earlier plan — titles and slugs — from "keep" to "rename", and withdrew the rule that dated audits keep their date's vocabulary.</p>
+<h2 id="1-the-instruction-and-what-it-changed">1. The Instruction and What It Changed</h2>
+<p>An earlier version of this file was a review-mode audit recommending the narrow change: rename the block label only. That was overruled. The instruction was a maximum migration, with citations of further readings as the only exception, so every open question was answered "rename".</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Question the author asked</th>
+<th>Question</th>
 <th>Answer applied</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Rename sections?</td>
-<td><strong>Yes.</strong> The block heading and the <code>Ordinary Fluid Mechanics</code> subheading in <code>physics.md</code>, and the <code>Fluid Mechanics: The Observable With No Mode</code> heading in an internal note.</td>
+<td><strong>Yes.</strong> The block heading in <code>physics.md:1919</code>, the <code>The Fluid Layer: Ordinary …</code> subheading, and the <code>… : The Observable With No Mode</code> heading in an internal note.</td>
 </tr>
 <tr>
 <td>Rename categories?</td>
-<td><strong>Yes.</strong> The menu block <em>Biquaternion Universe Relativistic Quantum Fluid Mechanics</em> became <em>… Fluid Physics</em>, and every reference and gloss to it followed.</td>
+<td><strong>Yes.</strong> The menu block <em>Biquaternion Universe Relativistic Quantum Fluid Physics</em>, seven glosses that called it "the … block" or "the … category", the overview, the summary guide, and two cross-category notes.</td>
 </tr>
 <tr>
 <td>Rename article titles?</td>
-<td><strong>Yes.</strong> <em>Spin Fluid Mechanics in Biquaternionic Form</em> and <em>Causal Dissipative Fluid Mechanics in Biquaternionic Form</em>.</td>
+<td><strong>Yes.</strong> <em>Spin Fluid Physics in Biquaternionic Form</em> and <em>Causal Dissipative Fluid Physics in Biquaternionic Form</em>.</td>
 </tr>
 <tr>
 <td>Rename slugs?</td>
-<td><strong>Yes</strong>, because the corpus rule binds a title to its file name: <code>spin-fluid-physics-in-biquaternionic-form</code>, <code>causal-dissipative-fluid-physics-in-biquaternionic-form</code>.</td>
+<td><strong>Yes.</strong> A title and its file name may not disagree (<code>audit-titles.md</code>), and the file name is the URL.</td>
 </tr>
 <tr>
 <td>Rename article content?</td>
-<td><strong>Yes.</strong> Every body sentence, comment, table row, and cross-reference; plus the adjectives (<code>fluid-mechanical</code> to <code>fluid-physical</code>).</td>
+<td><strong>Yes.</strong> Every body sentence, HTML comment, table row, and cross-reference; plus the adjective form.</td>
 </tr>
 <tr>
 <td>Keep citations?</td>
-<td><strong>Yes.</strong> Nine Landau–Lifshitz <em>Fluid Mechanics</em> entries, Geisbauer's paper title, and three verbatim quotations from Visser's papers.</td>
+<td><strong>Yes.</strong> Nine Landau–Lifshitz entries, one external paper title, three verbatim Visser quotations.</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="2-the-counts">2. The Counts</h2>
-<p><strong>Before.</strong> 300 occurrences of the old term across 5,040 markdown files:</p>
+<h2 id="2-the-counts-taken-from-the-diff">2. The Counts, Taken From the Diff</h2>
+<p>Measurement pattern: the old name as a two-word phrase or a hyphenated compound, with its adjective form, case-insensitive, over every <code>.md</code> file under the root, excluding <code>.git/</code>, <code>.venv/</code>, <code>_reserve/</code>, <code>__pycache__/</code>.</p>
+<p><strong>Before: 300 occurrences in 5,040 files</strong> — of which 77 sat in this file's own earlier draft, which quoted what it audited. Corpus proper: <strong>223</strong>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Area</th>
 <th style="text-align: right;">Occurrences</th>
+<th>Tracked in git?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>articles_physics/</code></td>
 <td style="text-align: right;">133</td>
-</tr>
-<tr>
-<td><code>articles_internal/</code> (77 of them in the old audit)</td>
-<td style="text-align: right;">116</td>
-</tr>
-<tr>
-<td><code>articles_external/</code></td>
-<td style="text-align: right;">41</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><code>physics.md</code></td>
 <td style="text-align: right;">10</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><code>articles_internal/</code></td>
+<td style="text-align: right;">39</td>
+<td>no — gitignored</td>
+</tr>
+<tr>
+<td><code>articles_external/</code></td>
+<td style="text-align: right;">41</td>
+<td>no — gitignored</td>
 </tr>
 <tr>
 <td><code>articles_maths/</code>, <code>maths.md</code>, <code>index.md</code></td>
 <td style="text-align: right;">0</td>
+<td>yes</td>
 </tr>
 <tr>
-<td><strong>total</strong></td>
-<td style="text-align: right;"><strong>300</strong></td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>After.</strong> 13 occurrences remain, all of them citations or quotations:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Where</th>
-<th style="text-align: right;">Occurrences</th>
-<th>What it is</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>articles_physics/</code> — nine Further Reading entries</td>
-<td style="text-align: right;">9</td>
-<td>Landau and Lifshitz, <em>Fluid Mechanics</em> (Pergamon, 1987)</td>
-</tr>
-<tr>
-<td><code>articles_external/Geisbauer/…</code></td>
-<td style="text-align: right;">1</td>
-<td>the paper's own title, <em>Inverted Relativistic Phase-Fluid Mechanics on Curved Spacetime</em></td>
-</tr>
-<tr>
-<td><code>articles_external/Visser Matt/</code> — three files</td>
-<td style="text-align: right;">3</td>
-<td>verbatim sentences quoted from the papers</td>
-</tr>
-<tr>
-<td><strong>total</strong></td>
-<td style="text-align: right;"><strong>13</strong></td>
+<td><strong>corpus total</strong></td>
+<td style="text-align: right;"><strong>223</strong></td>
 <td></td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Replaced: 213.</strong> Corpus 176, external cross-references 34, two adjectives, one editorial sentence in an external note. Plus 3 file renames and 6 sitemap URLs.</p>
-<p><strong>Files touched.</strong> 34 tracked source files modified (30 articles, <code>physics.md</code>, three sitemaps), 2 tracked articles renamed, the build stamp <code>build_state</code> rewritten, and 13 gitignored files in <code>articles_internal/</code> and <code>articles_external/</code> edited in place.</p>
+<p><strong>Replaced: 210.</strong> 173 in the corpus, 37 in <code>articles_external/</code>. <strong>Preserved: 13</strong> — the nine book citations, one paper title, three verbatim quotations.</p>
+<p><strong>After: 13 occurrences tree-wide, all citations or quotations.</strong> Zero in the corpus outside them. Zero in this file.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tracked corpus before → after</td>
+<td style="text-align: right;">143 → 9</td>
+</tr>
+<tr>
+<td>of which the nine citations</td>
+<td style="text-align: right;">9 → 9</td>
+</tr>
+<tr>
+<td><code>articles_external/</code> before → after</td>
+<td style="text-align: right;">41 → 4</td>
+</tr>
+<tr>
+<td>files whose content changed</td>
+<td style="text-align: right;">33 (30 articles, <code>physics.md</code>, 2 renamed)</td>
+</tr>
+<tr>
+<td>files in commit <code>7549cb8b2</code></td>
+<td style="text-align: right;">37 (32 in <code>articles_physics/</code>, <code>physics.md</code>, 3 sitemaps, <code>build_state</code>)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A correction worth keeping.</strong> An intermediate figure in this file said 213 replaced. It came from a script printing <em>pattern matches in the files it touched</em>, including two adjective forms not yet rewritten. The diff says 210. Count what changed, not what the matcher saw.</p>
 <h2 id="3-the-renames">3. The Renames</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Kind</th>
-<th>Before</th>
-<th>After</th>
+<th>Outcome</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>block, <code>physics.md:1919</code></td>
-<td><code>## Biquaternion Universe Relativistic Quantum Fluid Mechanics</code></td>
-<td><code>## Biquaternion Universe Relativistic Quantum Fluid Physics</code></td>
+<td>block heading</td>
+<td>now <code>## Biquaternion Universe Relativistic Quantum Fluid Physics</code></td>
 </tr>
 <tr>
-<td>subheading, <code>physics.md</code></td>
-<td><code>### The Fluid Layer: Ordinary Fluid Mechanics</code></td>
-<td><code>### The Fluid Layer: Ordinary Fluid Physics</code></td>
+<td>subheading</td>
+<td>now <code>### The Fluid Layer: Ordinary Fluid Physics</code></td>
 </tr>
 <tr>
-<td>article file</td>
-<td><code>spin-fluid-mechanics-in-biquaternionic-form.md</code></td>
-<td><code>spin-fluid-physics-in-biquaternionic-form.md</code></td>
+<td>internal heading</td>
+<td>now <code>## Fluid Physics: The Observable With No Mode</code></td>
 </tr>
 <tr>
-<td>article file</td>
-<td><code>causal-dissipative-fluid-mechanics-in-biquaternionic-form.md</code></td>
-<td><code>causal-dissipative-fluid-physics-in-biquaternionic-form.md</code></td>
+<td>second word of both article slugs</td>
+<td><code>mechanics</code> → <code>physics</code></td>
 </tr>
 <tr>
-<td>summary file</td>
-<td><code>…-relativistic-quantum-fluid-mechanics.md</code></td>
-<td><code>…-relativistic-quantum-fluid-physics.md</code></td>
+<td>internal summary file</td>
+<td>second-to-last word <code>mechanics</code> → <code>physics</code></td>
 </tr>
 <tr>
-<td>H1 of the spin article</td>
-<td><code># __Spin Fluid Mechanics in Biquaternionic Form__</code></td>
-<td><code># __Spin Fluid Physics in Biquaternionic Form__</code></td>
+<td>both article H1s</td>
+<td>now <em>Spin Fluid Physics in Biquaternionic Form</em> and <em>Causal Dissipative Fluid Physics in Biquaternionic Form</em></td>
 </tr>
 <tr>
-<td>H1 of the dissipative article</td>
-<td><code># __Causal Dissipative Fluid Mechanics in Biquaternionic Form__</code></td>
-<td><code># __Causal Dissipative Fluid Physics in Biquaternionic Form__</code></td>
-</tr>
-<tr>
-<td>sitemaps, three files</td>
-<td>2 URLs each</td>
+<td>three sitemaps</td>
 <td>2 URLs each, renamed</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Web addresses changed:</strong></p>
-<pre><code>/articles_physics/spin-fluid-mechanics-in-biquaternionic-form.html
+<p><code>git</code> recorded both article renames as renames rather than delete-plus-add, at 97% and 94% similarity — evidence that the bodies were edited only where the term appeared, not rebuilt:</p>
+<pre><code>R097  articles_physics/causal-dissipative-fluid-…-in-biquaternionic-form.md
+R094  articles_physics/spin-fluid-…-in-biquaternionic-form.md
+</code></pre>
+<p><strong>Web addresses changed.</strong> Both old paths now 404 on the deployed site:</p>
+<pre><code>/articles_physics/spin-fluid-&lt;old&gt;-in-biquaternionic-form.html
   → /articles_physics/spin-fluid-physics-in-biquaternionic-form.html
-/articles_physics/causal-dissipative-fluid-mechanics-in-biquaternionic-form.html
+/articles_physics/causal-dissipative-fluid-&lt;old&gt;-in-biquaternionic-form.html
   → /articles_physics/causal-dissipative-fluid-physics-in-biquaternionic-form.html
 </code></pre>
-<h2 id="4-what-was-deliberately-not-changed">4. What Was Deliberately Not Changed</h2>
+<h2 id="4-the-method-step-by-step">4. The Method, Step by Step</h2>
+<p>The reusable part. Written so another agent can apply the same pattern to a different term without rediscovering the traps in §6.</p>
+<h3 id="41-step-0-a-baseline-you-can-measure-against">4.1 Step 0 — A baseline you can measure against</h3>
+<p>Never take "before" from a scan run after editing. Record the starting commit and take every before/after pair from <code>git show &lt;commit&gt;:&lt;path&gt;</code>. The count stays auditable, and the gitignored areas — which have no other history — get their numbers written down before anything is touched.</p>
+<pre><code>BASE=$(git rev-parse HEAD)     # dc73e8ae7 here
+git status --porcelain         # must be empty
+</code></pre>
+<h3 id="42-step-1-scope-as-a-file-list-not-a-glob">4.2 Step 1 — Scope as a file <em>list</em>, not a glob</h3>
+<p>The load-bearing decision: split the tree in two.</p>
+<pre><code>FULL   = physics.md maths.md index.md articles_physics articles_internal articles_maths
+NARROW = articles_external     # only our own titles, slugs, and cross-references
+</code></pre>
+<p><code>articles_external/</code> holds conversions of other people's papers. A blanket pass there rewrites quoted sentences, which the instruction forbade. That folder got the narrow pass only; one editorial sentence of our own was then fixed by hand.</p>
+<h3 id="43-step-2-mask-the-protected-vocabulary-before-anything-runs">4.3 Step 2 — Mask the protected vocabulary before anything runs</h3>
+<p>The old name is a substring of the book title being cited and of one external paper's title, so a chain of <code>str.replace()</code> calls corrupts both. Swap each protected string for a sentinel, replace, swap back.</p>
+<pre><code class="language-python">PROTECT = [BOOK_CITATION, PAPER_TITLE]           # exact strings, asterisks included
+PH = {f"\x00P{i}\x00": s for i, s in enumerate(PROTECT)}
+
+def mask(t):     return reduce(lambda x, kv: x.replace(kv[1], kv[0]), PH.items(), t)
+def unmask(t):   return reduce(lambda x, kv: x.replace(kv[0], kv[1]), PH.items(), t)
+</code></pre>
+<p>A NUL-byte sentinel is safe: no legitimate Markdown contains <code>\x00</code>, and the token survives every later substitution because it contains none of the target letters. Do not use a bracketed placeholder such as <code>[[PROT]]</code> — any later pass that touches brackets eats it.</p>
+<p>The mask is exact, asterisks and capital included. That is the point: it protects the citations as written and does not protect our own longer titles from being renamed.</p>
+<h3 id="44-step-3-run-the-replacements-hyphenated-first">4.4 Step 3 — Run the replacements, hyphenated first</h3>
+<pre><code class="language-python">def convert(t):
+    t = mask(t)
+    t = t.replace(HYPHEN_LOWER, HYPHEN_LOWER_NEW)     # 1. compound, lowercase
+    t = t.replace(HYPHEN_TITLE, HYPHEN_TITLE_NEW)     # 2. compound, capitalised
+    t = t.replace(SPACED_LOWER, SPACED_LOWER_NEW)     # 3. phrase, lowercase
+    t = t.replace(SPACED_TITLE, SPACED_TITLE_NEW)     # 4. phrase, capitalised
+    return unmask(t)
+</code></pre>
+<p>Two ordering rules, both learned by running it:</p>
+<ul>
+<li><strong>Hyphenated before spaced.</strong> The forms do not overlap textually, but this keeps the model one-directional: a later spaced rule can never create a compound it then has to revisit.</li>
+<li><strong>Capitalised alongside lowercase.</strong> Headings, H1s, and menu links are capitalised; body prose is not. Replacing only lowercase leaves every title half-renamed — a failure mode that a lowercase-only grep reports as success.</li>
+</ul>
+<p>The spaced rule maps two words to two words. It must not emit the hyphenated form, which would turn prose sentences into slugs.</p>
+<h3 id="45-step-4-the-adjective-form-is-a-separate-pass">4.5 Step 4 — The adjective form is a separate pass</h3>
+<p>The plural does not contain the adjective, and the replacement chain that fixes the plural leaves the adjective untouched. Two occurrences survived the main pass for exactly that reason. Handle it explicitly:</p>
+<pre><code>&lt;term&gt;-mechanical  →  &lt;term&gt;-physical
+</code></pre>
+<h3 id="46-step-5-rename-the-files-then-let-git-prove-it">4.6 Step 5 — Rename the files, then let git prove it</h3>
+<p>Three <code>mv</code> calls, and no edit to the paths elsewhere, because the slug replacement in §4.4 had already rewritten every link and backticked path pointing at them. Confirm with <code>git diff --find-renames</code>: it reports R097 and R094. A delete-plus-add at low similarity would mean the bodies were rebuilt rather than edited — a different and worse change.</p>
+<h3 id="47-step-6-sitemaps-regenerate-do-not-hand-edit">4.7 Step 6 — Sitemaps: regenerate, do not hand-edit</h3>
+<p><code>build.py</code> writes the three sitemaps from the corpus, so their change is a consequence of the rename. They were patched by hand only because the deploy had not been rebuilt yet; the build then rewrote them identically. If a build follows, edit nothing.</p>
+<h3 id="48-step-7-build-and-let-the-build-prune">4.8 Step 7 — Build, and let the build prune</h3>
+<pre><code>./.venv/bin/python build_diff.py
+</code></pre>
+<p><code>build_diff.py</code> rebuilds only pages whose <code>.md</code> is newer, then runs both prunes. The prunes complete the rename: <code>prune_orphans()</code> deleted the three pages whose source had moved. Without the build the old addresses would still exist in the deploy folder while the source said otherwise — the worst state, because it hides the breakage. The build also rewrote <code>build_state</code>.</p>
+<h3 id="49-step-8-verify-against-the-diff-not-against-intuition">4.9 Step 8 — Verify against the diff, not against intuition</h3>
+<p>The gates in §7. Each is a count with an expected value, and each excepts only what the instruction allowed.</p>
+<h2 id="5-what-was-deliberately-preserved">5. What Was Deliberately Preserved</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -255,92 +308,179 @@
 </thead>
 <tbody>
 <tr>
-<td><code>*Fluid Mechanics*</code> in Further Reading</td>
+<td>Nine Landau–Lifshitz entries in Further Reading</td>
 <td style="text-align: right;">9</td>
-<td>a book's title; renaming it would falsify the citation</td>
+<td>a book's title; renaming it falsifies the citation</td>
 </tr>
 <tr>
-<td>Geisbauer, <em>Inverted Relativistic Phase-Fluid Mechanics…</em></td>
+<td>One external paper's own title</td>
 <td style="text-align: right;">1</td>
-<td>a paper's title</td>
+<td>a paper's title, in a conversion file</td>
 </tr>
 <tr>
-<td>Three Visser quotations</td>
+<td>Three Visser sentences quoted verbatim</td>
 <td style="text-align: right;">3</td>
-<td>another author's sentences, quoted between quotation marks</td>
+<td>another author's words, between quotation marks</td>
 </tr>
 </tbody>
 </table></div>
-<p>Two neighbouring terms were left alone because they are not the term the instruction named: <strong><code>fluid dynamics</code></strong> (22 occurrences, almost all inside quoted paper titles such as <em>Relativistic fluid dynamics with spin</em>), and <strong><code>hydrodynamics</code></strong>, which appears in the filenames and titles of the external papers.</p>
-<h2 id="5-consequences-that-need-a-follow-up">5. Consequences That Need a Follow-Up</h2>
+<p>Two neighbouring terms were left alone because they are not what the instruction named: <code>fluid dynamics</code> (22 occurrences, nearly all inside quoted paper titles) and <code>hydrodynamics</code> (in the filenames and titles of external papers). Say so explicitly if either is ever wanted, or a future reader will read the omission as an oversight.</p>
+<h2 id="6-traps-including-three-this-run-hit">6. Traps, Including Three This Run Hit</h2>
 <ol>
-<li><strong>Two URLs now 404.</strong> <code>build.py</code>'s <code>prune_orphans()</code> deletes any deployed page whose source has gone, and it has no redirect mechanism (verified: no redirect code in <code>build.py</code>). Host-level redirects for the two old paths are the only way to keep inbound links alive. This is the same unpaid debt the 2026-11-25 record logged.</li>
-<li><strong>The deploy folder is stale.</strong> It still holds the two old pages and the old wording on 34 pages. <code>build_diff.py</code> is the incremental route: it rebuilds only pages whose <code>.md</code> is newer, and prunes the two orphans.</li>
-<li><strong>Third-party quotations in <code>articles_external/</code> are unchanged.</strong> That folder records other people's papers; their sentences stay as written. Only our own cross-references into it were updated.</li>
-<li><strong>Inbound links from outside the corpus are unmeasurable from this tree.</strong></li>
+<li><strong>The plural is not the adjective.</strong> A verification regex written as <code>&lt;term&gt;[\s\-]mechanical?</code> matches neither form correctly — the <code>?</code> applies to <code>al</code>, so it catches <code>mechanic</code> and <code>mechanical</code> and silently misses every plural. This run produced a false "before = 0" from exactly that pattern. Use alternation.</li>
+<li><strong>Count diff deltas, not matcher hits.</strong> A matcher that includes a form the replacement does not handle inflates the count. This file carried 213 for a while; the diff says 210.</li>
+<li><strong>The audit is part of the measurement.</strong> The earlier draft quoted the term 77 times, so a raw scan of "the tree" read 300 rather than 223. Exclude the record explicitly in both the baseline and the guard, and state the number, so a reader who re-runs the scan does not think the migration failed.</li>
+<li><strong>Gitignored is not unpublished.</strong> <code>articles_internal/</code> is gitignored but is in <code>COLLECTIONS</code>, so <code>articles_internal/audits/*.md</code> is built into the deploy folder even though no menu links it. "Internal" means "not in the menu", not "not on the web". Any term kept in an internal note is a published occurrence.</li>
+<li><strong>An autocommit process may commit your work.</strong> This migration was committed as <code>7549cb8b2</code> by the repository's own process, not by an explicit <code>git commit</code>. Do not assume an uncommitted state persists between steps, and re-read <code>git log</code> before reporting that nothing is committed.</li>
+<li><strong>Case variations escape exact pairs.</strong> The replacement pairs are exact strings; an unusual capitalisation not in the list survives. Check before declaring zero.</li>
+<li><strong>Pruning has no redirect.</strong> A rename is a URL deletion. See §9.</li>
 </ol>
-<h2 id="6-verification">6. Verification</h2>
-<p>Measured after the edit, over <code>physics.md</code>, <code>maths.md</code>, <code>index.md</code>, <code>articles_physics/</code>, <code>articles_internal/</code>, <code>articles_maths/</code>, excluding this file:</p>
+<h2 id="7-recheck-procedure">7. Recheck Procedure</h2>
+<p>Read-only. Run from the repository root.</p>
+<p><strong>The guard.</strong> It builds the pattern from parts so that this record can search for a term it does not spell. It must print <code>CLEAN</code>.</p>
+<pre><code class="language-sh">A='fluid'; B='mechanics'; BOOK="*Fluid ${B^}*"           # the cited book's title
+grep -rIn --include='*.md' -iE "$A[ -]${B}([^a-z]|$)|$A[ -]${B}al" \
+  physics.md maths.md index.md articles_physics articles_internal articles_maths \
+  | grep -vF "$BOOK" \
+  || echo CLEAN
+</code></pre>
+<p>One exception, and it is the one the instruction named:</p>
+<ul>
+<li>the cited book's title, <code>$BOOK</code> — nine Further Reading entries.</li>
+</ul>
+<p>This record is not excused. It holds zero occurrences and the guard proves it. Any other line means the term has drifted back, most likely through a new article that copied an old sentence, or a pasted external conversion.</p>
+<p><strong>Expected values</strong>, all reproduced after the edit:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Gate</th>
-<th>Result</th>
+<th>Command</th>
+<th style="text-align: right;">Expected</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>occurrences of the old term in the corpus</td>
-<td>9 — the Landau–Lifshitz entries only</td>
+<td>corpus is clean</td>
+<td>the guard above</td>
+<td style="text-align: right;">CLEAN</td>
 </tr>
 <tr>
-<td><code>fluid physics</code> in the block heading</td>
-<td>1</td>
+<td>citations intact</td>
+<td><code>grep -rhoF "$BOOK" articles_physics \| wc -l</code></td>
+<td style="text-align: right;">9</td>
 </tr>
 <tr>
-<td>block categories in <code>physics.md</code></td>
-<td>15 (unchanged)</td>
+<td>block heading</td>
+<td><code>grep -c '^## Biquaternion Universe Relativistic Quantum Fluid Physics$' physics.md</code></td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr>
-<td>menu links into <code>articles_physics/</code></td>
-<td>727 (unchanged)</td>
+<td>categories unchanged</td>
+<td><code>grep -c '^## ' physics.md</code></td>
+<td style="text-align: right;">15</td>
 </tr>
 <tr>
-<td>links to the two renamed slugs, markdown and HTML</td>
-<td>33, all resolving</td>
+<td>menu links unchanged</td>
+<td><code>grep -o 'href="articles_physics/[^"]*\.html"' physics.md \| wc -l</code></td>
+<td style="text-align: right;">727</td>
 </tr>
 <tr>
-<td>links to the two old slugs</td>
-<td>0</td>
+<td>old slugs anywhere</td>
+<td><code>grep -rIl "fluid-${B}" --include='*.md' --include='*.xml' . \| wc -l</code></td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr>
-<td>title and file name agree, both renamed articles</td>
-<td>yes</td>
+<td>link targets on the new slugs</td>
+<td><code>grep -rIoE '(href="\|]\()[^")]*fluid-physics-in-biquaternionic-form\.html' --include='*.md' . \| grep -v audit-fluid \| wc -l</code></td>
+<td style="text-align: right;">33</td>
 </tr>
 <tr>
-<td>summary file renamed</td>
-<td>yes; no reference to the old name outside this file</td>
+<td>slug mentions, any kind</td>
+<td><code>grep -rIo 'fluid-physics-in-biquaternionic-form' --include='*.md' . \| grep -v audit-fluid \| wc -l</code></td>
+<td style="text-align: right;">74</td>
 </tr>
 <tr>
-<td>sitemap URLs updated</td>
-<td>6 of 6</td>
+<td>sitemap URLs</td>
+<td><code>grep -c 'fluid-physics-in-biquaternionic-form' sitemap_*.xml</code></td>
+<td style="text-align: right;">2 each</td>
+</tr>
+<tr>
+<td>deploy pruned</td>
+<td><code>ls ../ai-research-unit-deploy/articles_physics \| grep -c "fluid-${B}"</code></td>
+<td style="text-align: right;">0</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="7-reversal-key">7. Reversal Key</h2>
-<p>To undo, reverse each rule in this order. The old spellings appear here and nowhere else in the corpus.</p>
-<pre><code>fluid-physics-in-biquaternionic-form      → fluid-mechanics-in-biquaternionic-form
-Spin Fluid Physics in Biquaternionic Form → Spin Fluid Mechanics in Biquaternionic Form
-Causal Dissipative Fluid Physics in Biquaternionic Form → Causal Dissipative Fluid Mechanics in Biquaternionic Form
-Biquaternion Universe Relativistic Quantum Fluid Physics → Biquaternion Universe Relativistic Quantum Fluid Mechanics
-Fluid Physics: The Observable With No Mode → Fluid Mechanics: The Observable With No Mode
-The Fluid Layer: Ordinary Fluid Physics   → The Fluid Layer: Ordinary Fluid Mechanics
-fluid-physical                            → fluid-mechanical
-fluid physics                             → fluid mechanics
-Fluid Physics                             → Fluid Mechanics
+<p>The two slug gates exclude this record, which quotes the new slug in its own tables; every other gate runs over the whole corpus, this record included.</p>
+<p><strong>Idempotence.</strong> Re-running §4.4 on the current tree must change no file. If it changes one, the mask leaked or a capitalised variant escaped the pair list.</p>
+<p><strong>Where the truth lives.</strong> The authoritative record is the commit, not this prose:</p>
+<pre><code class="language-sh">git --no-pager diff --find-renames dc73e8ae7 7549cb8b2
 </code></pre>
-<p>Then rename the three files back and reverse the six sitemap URLs. The nine <code>*Fluid Mechanics*</code> citations and the Geisbauer title are untouched and need no rule.</p>
-<h2 id="8-summary-of-notation">8. Summary of Notation</h2>
+<p>That diff is the reversal key, the audit trail, and the proof of every number above.</p>
+<h2 id="8-editorial-re-read-queue">8. Editorial Re-Read Queue</h2>
+<p>The replacement was mechanical, so a few sentences are grammatical but unidiomatic — places where the old term was doing work as a subfield name or a possessive. Nothing here is broken and none affects the guard; these are for the author to re-word.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>File:line</th>
+<th>Now reads</th>
+<th>Suggested shape</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-two-fluid-model-in-biquaternionic-form.md:320</code></td>
+<td>"the normal-component fluid physics"</td>
+<td>"the physics of the normal component"</td>
+</tr>
+<tr>
+<td><code>the-two-fluid-model-in-biquaternionic-form.md:324</code></td>
+<td>"the relativistic superfluid's fluid physics"</td>
+<td>"the relativistic superfluid's physics"</td>
+</tr>
+<tr>
+<td><code>the-klein-gordon-equation-in-biquaternionic-polar-variables.md:50, 269, 481</code></td>
+<td>"Takabayasi's relativistic fluid physics of a spin-0 quantum fluid"</td>
+<td>"Takabayasi's relativistic treatment of a spin-0 quantum fluid"</td>
+</tr>
+<tr>
+<td><code>the-klein-gordon-equation-in-biquaternionic-polar-variables.md:445</code></td>
+<td>"Takabayasi's fluid physics"</td>
+<td>"Takabayasi's fluid theory"</td>
+</tr>
+<tr>
+<td><code>why-biquaternions.md:174</code></td>
+<td>"the spin-zero case of Takabayasi's fluid physics"</td>
+<td>"… of Takabayasi's fluid theory"</td>
+</tr>
+<tr>
+<td><code>the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.md:33</code></td>
+<td>"the quantum fluid physics of a spin fluid"</td>
+<td>"the quantum-fluid treatment of a spin fluid"</td>
+</tr>
+<tr>
+<td><code>covariant-local-equilibrium-and-tolman-temperature.md:99</code></td>
+<td>"the rigid rotation of classical fluid physics"</td>
+<td>"rigid rotation in classical fluid physics"</td>
+</tr>
+</tbody>
+</table></div>
+<p>Seven spots in six files. The remaining ~45 adjective uses ("ordinary fluid physics", "classical fluid physics") read correctly and should be left alone.</p>
+<h2 id="9-consequences-and-follow-ups">9. Consequences and Follow-Ups</h2>
+<ol>
+<li><strong>Two URLs are dead.</strong> <code>build.py</code> has no redirect mechanism (verified). Host-level redirects work on GitLab and Codeberg; GitHub Pages cannot, so each old path needs a stub page that meta-refreshes to its replacement. That is the only host-independent fix.</li>
+<li><strong>Inbound links from outside the corpus are unmeasurable from this tree.</strong> The menu and 33 internal references are updated; what the wider web holds is unknown.</li>
+<li><strong>The deploy folder is consistent but is a build artefact</strong> — do not edit it by hand.</li>
+<li><strong><code>articles_external/</code> keeps four quotations</strong> by design. If zero occurrences is ever demanded <em>including quotations</em>, the honest options are to drop the quotation or footnote it; do not silently edit another author's sentence.</li>
+</ol>
+<h2 id="10-reversal">10. Reversal</h2>
+<p>One command, because the migration is one commit:</p>
+<pre><code class="language-sh">git revert --no-commit 7549cb8b2
+git status                        # expect three renames back, 33 files restored, sitemaps restored
+./.venv/bin/python build_diff.py  # rebuild the pages, prune the new orphans
+</code></pre>
+<p>No hand-written reversal key is kept here. The commit is a more faithful record than any prose summary, and this file must not become the last place in the tree that still spells what was removed. For a scripted reversal, generate it from the diff (<code>git diff -R dc73e8ae7 7549cb8b2</code>) rather than transcribing it.</p>
+<h2 id="11-summary-of-notation">11. Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -350,30 +490,47 @@ Fluid Physics                             → Fluid Mechanics
 </thead>
 <tbody>
 <tr>
-<td>the migration</td>
-<td>the 213 replacements, 3 renames, and 6 sitemap URLs of 2026-11-27</td>
+<td>the old name</td>
+<td>the retired two-word term, never spelled in this file</td>
 </tr>
 <tr>
-<td>the preserved citations</td>
-<td>nine Landau–Lifshitz entries, one Geisbauer title, three Visser quotations: 13 occurrences</td>
+<td>the migration</td>
+<td>commit <code>7549cb8b2</code> against baseline <code>dc73e8ae7</code></td>
 </tr>
 <tr>
 <td>the corpus</td>
 <td><code>physics.md</code>, <code>maths.md</code>, <code>index.md</code>, <code>articles_physics/</code>, <code>articles_internal/</code>, <code>articles_maths/</code></td>
 </tr>
 <tr>
-<td>the reversal key</td>
-<td>§7: the only place in the corpus where the old spelling survives</td>
+<td>the full scope</td>
+<td>the corpus, converted wholesale</td>
+</tr>
+<tr>
+<td>the narrow scope</td>
+<td><code>articles_external/</code>, converted only in our own titles, slugs, and cross-references</td>
+</tr>
+<tr>
+<td>the preserved thirteen</td>
+<td>nine book citations, one paper title, three verbatim quotations</td>
+</tr>
+<tr>
+<td>the guard</td>
+<td>the grep in §7; prints <code>CLEAN</code> or the line that drifted</td>
+</tr>
+<tr>
+<td>the re-read queue</td>
+<td>the seven unidiomatic spots of §8</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="files-changed">Files Changed</h2>
+<h2 id="12-files-changed">12. Files Changed</h2>
 <ul>
-<li><code>physics.md</code> — the block heading, the subheading, the two article links, the block glosses, and the comments.</li>
-<li><code>articles_physics/</code> — 30 modified files; 2 renamed; 9 citations untouched.</li>
-<li><code>articles_internal/</code> — the overview, the guide, two summaries, the quantum-field-theory note, five audits, three working notes; 1 summary file renamed.</li>
-<li><code>articles_external/</code> — 16 conversion files: our cross-references updated, third-party quotations preserved.</li>
+<li><code>physics.md</code> — block heading, subheading, two article links, glosses, HTML comments.</li>
+<li><code>articles_physics/</code> — 30 files edited, 2 renamed; 9 citations untouched.</li>
+<li><code>articles_internal/</code> — overview, summary guide, two summaries (one renamed), the quantum-field-theory note, five audits, three working notes.</li>
+<li><code>articles_external/</code> — 16 conversion files: our titles, slugs, and cross-references updated; quotations preserved.</li>
 <li><code>sitemap_github.xml</code>, <code>sitemap_gitlab.xml</code>, <code>sitemap_codeberg.xml</code> — 2 URLs each.</li>
+<li><code>build_state</code> — rewritten by the build.</li>
 </ul>
       </div>
     </main>
