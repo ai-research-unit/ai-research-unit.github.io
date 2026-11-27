@@ -18,8 +18,8 @@
 - [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html)
 - [Canonical Quantization of the Biquaternion Proca Field](canonical-quantization-of-the-biquaternion-proca-field.html)
 - [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html)
-- [Canonical Quantization of the Biquaternion Rarita–Schwinger Field](canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html)
-- [Canonical Quantization of the Biquaternion Graviton Field](canonical-quantization-of-the-biquaternion-graviton-field.html)
+- [Canonical Quantization of the Rarita–Schwinger Field from the Vector Carrier and the Dirac Field](../articles_internal/archives/canonical-quantization-of-the-rarita-schwinger-field-from-the-vector-carrier-and-the-dirac-field.html)
+- [Canonical Quantization of the Biquaternion Graviton Field](../articles_internal/archives/canonical-quantization-of-the-biquaternion-graviton-field.html)
 
 ## The Ladder and the State Space
 

@@ -47,6 +47,9 @@
 <a href="articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a>
 <!-- how an obstruction is certified; obstructions of commutativity and the centre; of the quadratic forms; of finite dimension and zero divisors; of the sector structure; of dynamics and interpretation; of the module action; of the brackets; the catalogue in one table; the reading of the remedy for the missing canonical commutation relation through the Fourier transform, where the algebra stays finite while the carrier grows, the transform presenting the module as a direct integral of copies of the finite algebra, root-independently, with the central clock diagonalising the translations so that momentum is the fibre label and position the derivative across the fibres. physical readings. -->
 
+<a href="articles_physics/the-compact-sector-of-the-biquaternions-is-u2.html">The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators</a>
+<!-- the algebra's own compact structure; why $SU(3)$ cannot fit; the Cartan decomposition and the maximal compact subalgebra; what would be needed to pass the ceiling, the matrix enlargement $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$-where the embedded $\mathrm{SU}(3)$ elements have explicit closed forms in biquaternion parameters; the ceiling and the Standard Model. -->
+
 <a href="articles_physics/the-computational-cost-of-biquaternion-arithmetic.html">The Computational Cost of Biquaternion Arithmetic</a>
 <!-- the question of what one product costs; the coefficient count and the real count; the naive $64$ and the slices at $16$; the bilinear product as four Hadamard products and four corner products; Gauss's three-multiplication rule and the count $24$, reported optimal; the same counts for matrix-valued biquaternions; the complex image, its trace as twice the trace of the scalar component, and the time-reversal symmetric and antisymmetric block forms of the two halves; the Hadamard-type unitary reduction of a block-anti-diagonal Hermitian problem to two of half the dimension; why the split the arithmetic respects is $\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$ and not $\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$; the source's CPU and GPU benchmarks and the diagonalisation-cost breakdown; the doubling of the 32-bit dimension limit; what is not claimed. physical readings. -->
 
@@ -1026,13 +1029,19 @@
      subsection. **The subsection also carries the closure's variational principle**, *The Free-Energy Functional at
      Finite Temperature*: the Legendre transform of $\log Z$, whose stationarity is the field equation at $\beta$
      and whose value is the pressure, so that Euler's relation, Gibbs–Duhem and the Maxwell relations are one
-     functional's calculus and the three tests of the local state are its properties. -->
+     functional's calculus and the three tests of the local state are its properties. **The subsection also carries the
+     entropy functional**, *Coarse-Graining and the Biquaternion Entropy Functional*: the state space of the informational
+     sector, the entropy as a function of the biquaternion norm alone, and monotonicity under coarse-graining, which is the
+     second law that *The Local Entropy Current* states below as one divergence and cites here rather than re-derives. -->
 
 <a href="articles_physics/the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>
 <!-- the partition function and the thermal state; the trace as a scalar extraction; the thermal operator and the partition function; what the trace discards; imaginary time and where the material sector enters; whether there is a genuine modification.  The logarithm of the norm is read as a chemical potential, the total potential being $\log\lvert N\rvert+V$. -->
 
 <a href="articles_physics/the-free-energy-functional-at-finite-temperature.html">The Free-Energy Functional at Finite Temperature</a>
 <!-- the closure's missing variational principle: $\Gamma_\beta[\varrho]=W_\beta[J]-\int J\varrho$ as the effective action at temperature, its stationarity the field equation at $\beta$ and its value the pressure; Euler, Gibbs–Duhem and the Maxwell relations as one functional's calculus; the three tests of the local state as its integrability, consistency and truncated determinacy; the one-loop $V_{\mathrm{eff}}=V_0+\tfrac12\mathrm{STr}\log\hat K$ with the minimum as the state, the curvature as the thermal mass and the deviation as the quantum pressure, so that $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ is a truncation and not a definition; the two faces, the thermal circle and the closed time path; what it does not give — transport, a closed exact form, a first-order transition, a renormalisation. -->
+
+<a href="articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.html">Coarse-Graining and the Biquaternion Entropy Functional</a>
+<!-- the state space of the informational sector; the entropy functional; the entropy as a function of the biquaternion norm; coarse-graining on the informational sector; monotonicity under coarse-graining; fine and coarse, Liouville and the second law; preparations and partitions. -->
 
 <a href="articles_physics/quantum-thermodynamics-in-biquaternionic-form.html">Quantum Thermodynamics in Biquaternionic Form</a>
 <!-- the Gibbs state and the convergence of $Z$; thermodynamic quantities as functionals of the state; the variational characterisation; Legendre structure and thermodynamic identities; low- and high-temperature limits; the KMS condition as the characterisation of the same state. -->
@@ -1208,7 +1217,7 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/the-excitation-ladder-theory-of-flavour.html">The Excitation Ladder Theory of Flavour</a>
 <!-- flavour as a level of combined excitation and not a charge, kept out of the classification article on purpose so that the grids stay clean; the structural reason no quantum number can separate the rungs, the tripling as a tensor product with the algebra trivial on the second factor, and rung 1 stable by conservation and not by dynamics; the ladder counted in mass and its failure, the two steps $206.77$ and $16.82$ shrinking by $12.3$ and integer quanta off by two and three orders of magnitude, with the corpus's own algebra unable to produce any ladder because it is kinematics; the ladder counted in the square root of the mass ratio, the steps $13.379$ and $44.589$ growing by $3.3326$, the change of variable and the three variables compared; the closure, Koide's $Q=0.6666605$ against $2/3$ at $6.1\times10^{-6}$, written only in the two ratios $\rho_2=m_\mu/m_e$ and $\rho_3=m_\tau/m_e$, $Q=(1+\rho_2+\rho_3)/(1+\sqrt{\rho_2}+\sqrt{\rho_3})^{2}=2/3$, with no mass unit in the display, the three roots $1$, $14.379$ and $58.968$ on the cosine of coefficient $\sqrt2$, $\theta=132.732^{\circ}$, and why a fourth member repeats the first; the rung count, the generalisation to $N$ rungs, the vanishing of the cosine sum for every $N\ge2$ so that two numbers always suffice, the economy $N-2$ predictions, the fit table from $N=3$ to $N=8$ with three rungs at $6.1\times10^{-4}$ and every other count off by a factor of three, and the sharp consequence that extra rungs fill the gaps and not the top, $45.7$ and $425.5$ MeV for $N=4$; the early universe, the Boltzmann abundance table from $2$ MeV to $10$ GeV, the approach to parity and never past it, detailed balance, and the difference between lit and existing; the fourth rung, chiral excluded at any mass by $H\to gg$ and $H\to\gamma\gamma$ against a medium level decoupling as $1/m$, with the four bounds and what each one bites; the three debts, dispersion relation, composition rule and width rule, and why the corpus can pay none of them; the ledger of what is explained and what is absent; four falsifiers; and thirteen checks. -->
 
-### Particles of spin 1
+### Spin 1
 
 #### The content
 
@@ -1272,7 +1281,7 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/no-confinement-above-m-c.html">No Confinement Above $M_C$: Eleven E-Folds of Perturbative Coupling</a>
 <!-- the negative statement the block owes a reader who has met the strong sector: nothing confines above $M_C$; the coupling there, $\alpha_s\approx0.08$ at $250\ \mathrm{TeV}$, so the phase is perturbative; the group broken at $M_C$ by $\Phi$, so that no confining $\mathrm{SU}(4)$ phase occurs anywhere in the model's history; the contrast with $\mathrm{SU}(3)_c$, where confinement is the residual's long-distance regime and is described in *Confinement and the Loss of Partonic Information*; the two mechanisms kept apart, a phase that never exists and a phase that confines; and the ledger, what the absence forbids and what it leaves open, no deconfinement transition, no primordial plasma of free preons, no cosmological relic of the unbroken phase. -->
 
-### Particles of spin 1/2
+### Spin 1/2
 
 #### The content
 
@@ -1295,7 +1304,7 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 #### The applications
 
-### Particles of spin 0
+### Spin 0
 
 #### The content
 
@@ -1323,27 +1332,25 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 ## Biquaternion Universe Symmetry Breaking
 
-<!-- the transition, in seven steps: the vocabulary of survives, breaks and arrives, and the frame
+<!-- the transition: the vocabulary of survives, breaks and arrives, and the frame
      the breaking is stated in; the breaking itself, one vacuum $iD=\operatorname{diag}(-3,1,1,1)$ taken
      by one scalar, which leaves $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ and puts the six leptoquarks
      at $32v^{2}$; the two theorems that fix what the breaking cannot do, the charge theorem on the
      sextet and the rank lemma against the composite route, and the postulate that closes the gap, an
      index that arrives with the doublet; then the matching, the mass matrix, the one coupling and the
-     thresholds; then the Standard Model as the phase below the scale, assembled and audited against
-     its own nineteen parameters and its four open problems; then what the sectors inherit, the charges,
-     the algebras, the connection and the reach; and closes on the force content of the model and the
-     leptoquark sector at work. The rule that governs which articles may print a number stands first. -->
-
-### The Rule of the Section
-
-<a href="articles_physics/the-data-boundary.html">The Data Boundary: Two Claims, Sixteen Measured Strengths, and a Deletion Test</a>
-<!-- the register that makes the coupling rule checkable: the three categories defined by one test — does the sentence survive the deletion of every value; the claim register, two articles, the first the part's own coupling statement and the second the angle in the electroweak part; the data register, sixteen articles with the quantity each prints and why the number is data; the structural remainder named as a rule and not as a list; the five tests a new article must pass before it may print a value; and the four abuses the boundary forbids, of which the sharpest is that the low-energy limit is shared with the Standard Model while a coupling statement is not. -->
+     thresholds, which end the transition at the heavy sector; and closes on the force content of the
+     model, the leptoquark sector at work and the Goldstone mode. What the breaking returns is assembled
+     and audited against its own parameters in *Biquaternion Universe The Standard Model Assembly*,
+     which stands after the sectors because the assembly counts them. The rule that governs which
+     articles may print a number stands at the head of that category, since it governs the register
+     the assembly keeps. -->
 
 ### From the SU(4) Model to the Standard Model
 
-<!-- one transition at M_C and one audit: the SU(4) group breaks into the four-factor group, which
+<!-- one transition at M_C: the SU(4) group breaks into the four-factor group, which
      has no width, and the Standard Model is what remains below that scale once the heavy fields are
-     removed; it is then counted against its own parameters. The toolbox the block opens with is
+     removed. What remains is assembled and counted against its own parameters in *Biquaternion Universe
+     The Standard Model Assembly*, after the sectors. The toolbox the block opens with is
      *Action in the Biquaternion Universe*, the first section of the category *Biquaternion Universe
      Action* above. -->
 
@@ -1389,51 +1396,6 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html">The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop</a>
 <!-- breaking exact and non-perturbative, decoupling truncated in powers of $E/M$, matching computed to finite loop order; which of the three is an approximation and which is not; the single transition at $M_C$ with one measured weak scale below it; and the failure of the minimal content to run correctly, reported here and computed in *The One Coupling That Returns the Standard Model*. -->
-
-#### The Standard Model, Audited
-
-<a href="articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>
-<!-- the group $SU(3)\times SU(2)_L\times\mathrm{U}(1)_Y$ and the three measured strengths, as data; the five multiplets with $T_3$, $Y$ and $Ϙ=Y+T_3$, counted $15=6+3+3+2+1$; the twelve vector bosons and the degree-of-freedom check $24+4=16+2+9+1$; the scalar doublet and its components; the four anomaly conditions solved, three rays of hypercharge assignment of which one carries the observed charges; the nineteen parameters with scheme and scale on every row; the count $9+4+3+1+1+1$ and the regrouping $3+1+2+13$; the neutrino and axion variants $26$, $27$, $18$; and the count of what the algebra fixes, which is none. -->
-
-<a href="articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian: Four Sectors in One Expression</a>
-<!-- the four sectors and why there are four; the sign rule $-\sum_\mu X_\mu Y_\mu=X_\mu Y^\mu$ proved once and used to identify the corpus's kinetic terms with the standard ones, with the abelian check $\sum F F=2(B^2-E^2)$; the three curvatures and their kinetic terms; the fermion term and the covariant gradient; the scalar potential and its minimum; the three Yukawa matrices with the conjugate doublet of hypercharge $-\tfrac12$ and the hypercharge audit; the sum; the local invariance audit term by term; sixty parameters written against nineteen physical, the removal graded $36\to10$ over $U(3)^3$ and $18\to3$ over $U(3)^2$; the dimension-five neutrino operator, gravity and the dark sector as the three omissions; and the corpus's own action beside the standard one, sector by sector. -->
-
-<a href="articles_physics/the-standard-model-as-the-low-energy-phase.html">The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors</a>
-<!-- the audit of the whole model, where the sector articles are cut from it; what the framework already reaches, the abelian factor on the centre and the compact factor in the material sector; the ceiling, a compact subalgebra of $\mathbb{B}$ of dimension at most four and every module of even complex dimension; the three representative factors, each with its source and what it reaches, $\mathrm{U}(1)$ present but not hypercharge, the $\mathrm{SU}(2)$ present but not weak isospin, $SU(3)$ absent; the matter sector, the chirality kinematics exact and the chiral symmetry group missing, the hypercharge underived and the content unselected; the scalar and symmetry-breaking sector unbuilt; the table of items with the object each row needs, the three upstream items and the two prerequisites; and the electroweak pair itself, which is the companion article in the electroweak part. -->
-
-<a href="articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>
-<!-- standard input, and the article that turns the boundary into a number. the nineteen itemised and regrouped, $13+3+1+2=19$ with the flavour block at $68.4\%$ of the total and the observation that the boundary is concentrated where the algebra is emptiest; the three grades of fixing — a value, a relation, a constraint — kept apart because a framework that derives nothing may still relate or forbid something; then a typology of the nineteen by kind of mathematical object, four group coordinates, three connection normalisations, one central phase, ten eigenvalues and one scale, because the five kinds need five different machines; the arena count, eight with an arena (mixing, couplings, vacuum angle), nine with an eigenvalue and no spectral principle, two with nothing, shares $42.1\%$, $47.4\%$, $10.5\%$, and $M_H$ explained as the one entry whose kind and whose arena disagree; the framework's own three parameters $ϙ$, $m$, $k_m$ counted in the same language, giving $19+3=22$ and an imported share of $86.4\%$, so the reformulation is not more parsimonious and its defence is geometric rather than numerical; one unit removed leaving eighteen dimensionless ratios, with $m_t/m_e=3.4\times10^{5}$ and $v/M_{\mathrm{Pl}}=2.0\times10^{-17}$ printed as the two ratios nobody explains; the neutrino addition at $26$ or $27$ with the difference marked as a physical discriminator rather than a convention; the over-determination quantified, five measurements for two triangle parameters giving three degrees of freedom, and the framework's own score printed as twenty-two parameters against zero predictions not shared with the model; the test applied to the corpus's own proposals in one table, one relation of a restricted kind, five arenas, zero values, and the ceiling row noted as forbidding a representation and no number; and the four machines that would reduce the count — spectral, scale, flavour, threshold — each named as absent. -->
-
-<a href="articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a>
-<!-- the counting of generations in the Standard Model; how the framework carries a generation index; why the algebra does not fix $N_g$; the tensor structure and the trace; flavour symmetry and its breaking; the constraints that do touch $N_g$; the three imaginary units are not three generations. -->
-
-##### The Open Problems
-
-<a href="articles_physics/the-hierarchy-problem-and-naturalness.html">The Hierarchy Problem and Naturalness</a>
-<!-- standard input, and the article that separates the divergence from the sensitivity. the one-loop shift $\delta m_H^2=(c/16\pi^2)\Lambda^2$ with coefficients $0.239$ representative, $1.476$ top, $0.774$ quartic, summing to $2.489$, the top at $59\%$ as everywhere in the scalar sector; then the point most accounts lose — dimensional regularisation gives no quadratic term at all, because the only locally invariant dimension-two operator is $\phi^{\dagger}\phi$ itself, so the divergence is a convention while the sensitivity, a statement about heavy states, is not; the tuning table from $1$ TeV (nothing) through $10$ TeV (one part in $100$) to $M_{\mathrm{Pl}}$ ($2.35\times10^{36}$ GeV$^2$ against $7.82\times10^{3}$, one part in $3.0\times10^{32}$); the stability edge at $\Lambda=996$ GeV $=8.0\,m_H=4.05\,v$, and the observation that the LHC has closed that window for Standard-Model-like couplings, so the tension is a closed window and not a discovery failure; why only the scalar — chiral symmetry protects the fermion and local symmetry the vector, and $\phi^{\dagger}\phi$ is a singlet under everything, so the problem is the absence of a symmetry and is exact in that form; supersymmetry with the cancellation $\delta m_H^2\propto(m_B^2-m_F^2)$, a stop table in which $1$ TeV costs $30\%$ and $5$ TeV a factor of twenty, and the independent tension that $m_h\le M_Z=91.2$ GeV at tree level in the MSSM pulls the stops heavy while naturalness pulls them light; compositeness with $\Delta=(f/v)^2$, $4.1$ at $f=500$ GeV and $16.5$ at $1$ TeV, and the link to the hadron article where the same mechanism is known to work; the landscape, which predicts nothing and so is not a third theory competing on the same data, and which needs a measure nobody has; Veltman's condition as a fourth response that is arithmetically refuted — it needs $m_t=143$ GeV against $172.7$; then what the algebra says, which is nothing, for three exact reasons (no measure so no cutoff, no second confining sector because of the ceiling, one vacuum so no landscape), followed by the article's one real contribution, the contrast between the two scales: $\Lambda_{\mathrm{QCD}}$ is generated non-perturbatively and $v$ is not, so the tuning is the statement that the electroweak sector has no counterpart of the mechanism the strong sector does have; and naturalness recorded as a heuristic with a score of one success (GIM) and one failure (weak-scale supersymmetry), the corpus refusing to use it as evidence in either direction. -->
-
-<a href="articles_physics/the-landau-pole-triviality-and-vacuum-stability.html">The Landau Pole, Triviality and Vacuum Stability</a>
-<!-- standard input, and three questions collected into one calculation. the three one-loop coefficients $b_1=+41/6$, $b_2=-19/6$, $b_3=-7$ with the signs doing all the work; the hypercharge Landau pole at $1.8\times10^{41}$ GeV, that is $1.5\times10^{22}$ Planck masses, with $g_{\mathrm Y}$ climbing only from $0.357$ to $0.476$ on the way — a pole never reached, but structural, because a central abelian factor has no self-coupling and therefore no antiscreening, so $b_1>0$ is a theorem about central factors and the framework's most native object is its only one that cannot be UV-complete alone; then triviality, $1/\lambda(\mu)=1/\lambda(v)-24\ln(\mu/v)/16\pi^2$, giving a quartic pole at $3.4\times10^{24}$ GeV but a much sharper *bound*, $m_H<\sqrt{16\pi^2/(12\ln(\Lambda/v))}\,v$ — $754$ GeV at $1$ TeV, $464$ at $10$ TeV, $310$ at $10^6$ GeV, $144$ at $M_{\mathrm{Pl}}$, so a larger cutoff gives a *tighter* bound and at infinity the theory is free, with the measured $125.09$ GeV at $86.8\%$ of the Planck-scale ceiling, printed and refused as a hint; the near miss of the three measured strengths, $0.476$, $0.504$, $0.490$ at $M_{\mathrm{Pl}}$, a spread of $0.028$ or $5.7\%$ of the mean, with the exact statement that the framework forbids the completion; then the fate of $\lambda$, with $\beta_\lambda$ printed term by term ($+0.400$, $-5.81$, $+0.250$, $+0.981$, sum $-4.18$, $\beta=-0.0265$) and the methodological point that this is a *difference* of terms of order one whose exponential is the crossing scale, so the answer is a precision question and the one-loop estimate gets the sign right and the scale wrong by orders; the three-loop answer quoted as imported, $\lambda=0$ at $10^{11}$ GeV and $\lambda(M_{\mathrm{Pl}})=-0.014$; then the three distinct statements — absolute stability, metastability, instability — and the bounce calculation $S_E=8\pi^2/(3|\lambda|)=1880$ against a threshold near $440$, so $e^{S_E}=10^{816}$ against $H_0^{-4}=10^{167}$, a margin of $10^{649}$, which is the difference between "not the global minimum" and "unstable"; the metastability window in the top mass, $171.3$ GeV for absolute stability and $178$ for a lifetime exceeding the age, with the measurement $172.69\pm0.30$ sitting $1.39$ GeV or $4.6\sigma$ inside it; the same statement in the Higgs mass, $m_h^{\mathrm{crit}}\approx129.5$ GeV and a window $[129.5,144]$, with the measured value $4.4$ GeV below it — recorded and not interpreted, because the window is conditional on the Standard Model holding to $M_{\mathrm{Pl}}$ and $\lambda$ crosses zero eight orders below it; then the renormalisation-group input and the observation that the framework's single central-norm cutoff spans $42$ orders of magnitude and cannot be any one sector's physical cutoff; and what the algebra says — the sign of $b_1$ as its one structural result, triviality and the bounce both imported, and the honest conclusion that the space of strengths lies outside the algebra entirely. -->
-
-<a href="articles_physics/three-gaps-in-the-standard-model.html">Three Gaps in the Standard Model: Dark Matter, Baryogenesis and the Sphaleron</a>
-<!-- standard input, and the article that separates two exact failures from one success that forbids its own use. the missing mass at $\Omega_{\mathrm{DM}}h^2=0.1200$ against $\Omega_b h^2=0.02237$, a ratio of $5.36$, with the model's matter content accounting for $15.7\%$ of the budget and no knob to turn because the spectrum is closed — the failure is in the list of objects, not in the nineteen values; the inventory examined one by one, neutrinos at $1.1\%$ of the dark density at the mass bound, the Higgs at $10^{-22}$ s, the neutron at $880$ s; the cleanest exclusion in the model, $N_\nu=2.9963\pm0.0074$ from the $Z$ width, confirming three species to a part in three hundred and shutting the fourth-generation door twice; direct detection at $2.6\times10^{-47}$ cm$^2$, which is $1.5\times10^{14}$ below a weak cross-section, so the simplest WIMP is excluded by fourteen orders and the surviving models need a heavy mediator or a cancellation; then the matter excess $\eta=6.1\times10^{-10}$, one baryon per $1.6\times10^{9}$ photons, which cannot be an initial condition because inflation erases it; the Jarlskog invariant $J=3.13\times10^{-5}$ computed from the Wolfenstein inputs and the statement that the $\eta\sim10^{-20}$ it produces is short by eleven orders, with the reason (three loop factors and $J$ already give $10^{-11}$); the Sakharov scorecard in which the model satisfies all three conditions nominally and fails each quantitatively — $B$ violated but $B-L$ conserved exactly so the answer from a symmetric start is zero and not merely small, $CP$ violated but in the wrong sector at the wrong size, out-of-equilibrium failing outright; the anomaly identity $\partial_\mu j^\mu_B=N_g g^2F\tilde F/32\pi^2$ with $\Delta B=\Delta L=3$ and the classification of every mechanism by where it violates $B-L$; the sphaleron itself, $E_{\mathrm{sph}}=4\pi v B(\lambda/g^2)/g=9.0$ TeV at $B=1.90$, with the rate table $10^{-39}$ at $T=100$ GeV, $10^{-24}$ near $T_c$, and exactly zero today, hence a proton lifetime above $10^{160}$ years; then instanton against sphaleron, Euclidean against Minkowski, solution against saddle point, self-dual against not, and the exact reason the corpus hosts the first and not the second: the biquaternion topological machinery is a self-duality machinery and the sphaleron admits no algebraic shortcut; the phase transition as a crossover for any $m_H>72$ GeV, with $125.09$ GeV sitting $74\%$ above the threshold and $T_c=159.5$ GeV established on the lattice, so the third Sakharov condition fails outright rather than marginally; leptogenesis as the one route the corpus can build, with $B=28L/79$ and the reason it exists at all — the Majorana and seesaw articles needed those objects for other purposes, and the lepton phases are not constrained by the quark sector's eleven-orders failure; and finally what the framework does not supply, item by item: no dark matter candidate, no sphaleron, no first-order transition, no $B-L$ violation at a high scale. -->
-
-<a href="articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html">Grand Unification in the Biquaternion Framework: Where the Embedding Fails</a>
-<!-- the threshold a unified group must clear; the framework's own unification, electroweak and abelian; what a biquaternionic grand unification would require; the representation content and the even-dimension obstruction. -->
-
-#### What the Sectors Inherit
-
-<a href="articles_physics/the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html">The Quantum Numbers Below the Breaking: The Strong Group, $B-L$, Weak Isospin and the Electric Charge</a>
-<!-- the charges read off the same list the mass matrix gives, by one criterion: a generator that annihilates the vacuum is conserved and its boson is massless. the table of six charges with the scale at which each is lost; the strong group exact at every scale and $Q$ exact below $v$; $T_{3R}$ and $B-L$ lost at $M_C$, $T_{3L}$ and $Y$ at $v$; $B-L$ kept as a fixed eigenvalue while its charge goes, because the lepton-line vev carries $B-L=-1$, and $B$ surviving in its place by accident of the content; $L$ broken at dimension three by the right-handed neutrino's mass, which is the seesaw's licence; the proton stable because the leptoquarks carry $B-L=\pm\tfrac43$ and no diquark vertex is available; the anomaly of $B-L$ vanishing, so $B+L$ is erased by sphalerons and $B-L$ is not; the three distinctions a reader loses first, conserved against realised, made local against broken against accidental, broken against violated. -->
-
-<a href="articles_physics/the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Algebras of the Two Sectors: The Strong Group on Three Dimensions, Weak Isospin on Two, the Photon on One</a>
-<!-- which algebra and which module each sector is built in once the chain has run, the strong group in $\mathrm{End}(\mathbb C^3)$ and the weak factor on the doublet lines, the address each residual algebra has in $\mathrm{End}_{\mathbb C}(\mathbb B)$, and what the reduction loses, so that the two sector sections open with the algebra they need already named. -->
-
-<a href="articles_physics/the-connection-below-the-breaking.html">The Connection Below the Breaking: Three Pieces, Three Couplings, and One Relation from Orthogonality</a>
-<!-- the frame's one covariant derivative rewritten after each step, the fifteen, the three and the three separating into the pieces the residual groups keep, with every coupling left symbolic and no value printed, and with what each piece multiplies stated so that the strong and electroweak sections inherit their notation instead of inventing it. -->
-
-<a href="articles_physics/the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html">The Sector Hub: What the Lagrangian Family Reaches in Each Sector</a>
-<!-- four sectors and four answers: the electromagnetic carried exactly, the electroweak partly, the strong not at all because the compact group is U(2), and the gravitational by a frame and not an element; the table that puts the four in two independent columns. -->
 
 ### The Force Content of the Model
 
@@ -1501,16 +1463,13 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.html">Electric–Magnetic Duality and the Modular Group in Biquaternionic Form</a>
 <!-- duality of the free field and its internal character; the complex coupling and the modular group; the charge lattice and the quantisation condition; the modular action on the charge lattice; the biquaternion reading, continuous duality and a discrete group. -->
 
-<a href="articles_physics/the-compact-sector-of-the-biquaternions-is-u2.html">The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators</a>
-<!-- the algebra's own compact structure; why $SU(3)$ cannot fit; the Cartan decomposition and the maximal compact subalgebra; what would be needed to pass the ceiling, the matrix enlargement $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$-where the embedded $\mathrm{SU}(3)$ elements have explicit closed forms in biquaternion parameters; the ceiling and the Standard Model. -->
-
 <a href="articles_physics/quantum-chromodynamics-as-the-residual-of-su4.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated</a>
 <!-- what the framework already reaches; the strong group and why nothing derives a three; confinement and the absent mechanism; the chiral-fermion issue; the running strength and asymptotic freedom, as data; the ledger; the object each row needs. -->
 
 <a href="articles_physics/the-theta-vacuum-in-biquaternionic-form.html">The Theta Vacuum in Biquaternionic Form</a>
 <!-- the topological charge and the $\theta$ term; the $\theta$ vacuum and the central phase; the angle as the phase of a determinant; periodicity and the parity reading; the index, the eta invariant and the central integer; the partition function and the topological susceptibility. -->
 
-### Particles of spin 1
+### Spin 1
 
 #### The content
 
@@ -1554,7 +1513,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/jets-the-qcd-cross-section-and-the-infrared-structure.html">Jets, the QCD Cross Section and the Infrared Structure</a>
 <!-- standard input, and the one article whose own perturbative terms are individually infinite. the ratio $R=3\sum Q_f^2[1+\alpha_s/\pi+\dots]$ as a staircase $2$, $10/3$, $11/3$, $5$ at the quark thresholds, with the corrections evaluated at 34 GeV and $M_Z$ and the point that $R$ is a blunt instrument — a four per cent correction makes a two per cent measurement a $\delta\alpha_s$ of $0.06$, and inverting $R=3.9$ against $R_0=11/3$ gives $0.20$ where the running demands $0.14$, so $R$ counts lines rather than measuring the strength; jets as definitions, with the fixed-cone versus sequential distinction and the generalised $k_T$ distance; the three-jet rate $\frac{2\alpha_sC_F}{\pi}\ln^2(1/y)$ tabulated at four resolutions up to $1.53$ at $y=0.02$, where a rate above one is not a rate and the truncation is invalid rather than imprecise; the soft ($dE/E$) and collinear ($d\theta/\theta$) divergences as the volume of the region where $n$ and $n+1$ partons are indistinguishable; Bloch--Nordsieck and KLN as the statement that a hard process is never observed in isolation, with the $+1$ in $1+\alpha_s/\pi$ identified as what is left after two infinities are subtracted; the splitting functions with their sum rules computed, $\int P_{qq}=0$ exactly, $\int zP_{qq}=-16/9$, $\int zP_{gq}=+16/9$, $\int P_{qg}=1/3$, and $\int z[P_{qq}+P_{gq}]=0$ to $10^{-16}$ as energy conservation that no one imposed; the eikonal and the double logarithm, $W=0.84$ at $M_Z$ with $Q_0=5$ GeV, so the expansion parameter is $\alpha_s\ln^2$ and is of order one; the Sudakov form factor with the two-jets fraction falling from $0.93$ at $40$ GeV to $0.43$ at $5$ GeV, and the table showing that improving one logarithm to $\ln(Q/\Lambda)$ moves the exponent from $0.84$ to $1.78$, a factor of two that is the size of the leading correction; the shower as that exponent plus a random number generator, ordered in angle for coherence; hadronisation at $0.5$ GeV$/Q$, ten per cent at $M_Z$ and seventy per cent at $14$ GeV; and infrared safety as the criterion that decides whether an observable has a perturbative expansion at all. -->
 
-### Particles of spin 1/2
+### Spin 1/2
 
 #### The content
 
@@ -1586,7 +1545,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a>
 <!-- the proton as a spin-half biquaternion Dirac field; the charge operator on the field; which generator carries the electric charge; what the framework does not supply, compositeness and the strong group; spin, statistics and the magnetic moment. -->
 
-### Particles of spin 0
+### Spin 0
 
 #### The content
 
@@ -1667,7 +1626,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/electroweak-precision-observables-the-oblique-parameters-s-t-u.html">Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$</a>
 <!-- **the count $8-2-3=3$**: four self-energy functions with value and slope, two values killed by electromagnetic local invariance, three absorbed by $\alpha$, $G_F$, $M_Z$, and the three survivors as a dimension and not a convention; **transversality as article 7's Ward identity**, $\Pi^{\mu\nu}_{\gamma\gamma}=P^{\mu\nu}\Pi_{\gamma\gamma}$, so that the longitudinal projector is absent identically and the same $P$ that makes the propagator invertible makes the self-energy transverse; $\alpha T=\rho-1$, so that **the custodial article's $\rho$ is $T$'s numerator**, with $T=0.05$ giving $\rho-1=3.6\times10^{-4}$ and the zeros of $T$ and $U$ as the value and the derivative of one relation $\Pi_{WW}(q^2)=\Pi_{W^3W^3}(q^2)$; **$S$ read as the $W^3$--$B$ mixing coefficient**, whence a vector-like singlet, a hypercharge-only state and an exactly degenerate doublet all sit at zero, and the parameters measure multiplet structure and not particle count; the Veltman bracket with **two limits of different kind** — $m_1^2$ for a hierarchy, $(\Delta m^2)^2/(3m^2)$ for a near-degenerate pair, so that the popular $\Delta\rho\simeq N_cG_F\Delta m^2/(8\sqrt2\pi^2)$ overestimates by two orders of magnitude, and the five-row table of exact values beside it, the top--bottom $T=1.27$ sitting *inside* the reference; the measured $0.00\pm0.07$, $0.05\pm0.06$, $0.02\pm0.06$ with **an $S$--$T$ correlation near $+0.9$**, so that the uncertainties cannot be combined in quadrature; **the pre-2012 Higgs bound** from $dS/d\ln M_H=1/(6\pi)$, the one precision prediction that came true; **the scheme, quantified** — $4s_W^2c_W^2/\alpha$ is $91.0$ or $97.4$, a $7$ per cent shift on $S$ — and the oblique truncation named as a hypothesis with a date on it. -->
 
-### Particles of spin 1
+### Spin 1
 
 #### The content
 
@@ -1708,7 +1667,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 #### The applications
 
-### Particles of spin 1/2
+### Spin 1/2
 
 #### The content
 
@@ -1752,7 +1711,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html">Meson Mixing, Rare Decays and the Unitarity Triangle as a Closure Test</a>
 <!-- standard input, and the one article in the corpus that exhibits a consistency check instead of a list of inputs. the two-level system with $\Delta m=2|M_{12}|$, $x=\Delta m/\Gamma$ and $\chi=x^2/2(1+x^2)$ computed for three systems — $\Delta m/m$ spanning $7.0\times10^{-15}$ to $2.2\times10^{-12}$, $\chi_d=0.186$ and $\chi_s=0.4993$ against a ceiling of $0.5$, so the $B_s$ forgets its flavour before it decays; GIM stated as an identity rather than a trick, the constant term cancelling because $VV^{\dagger}=1$ and the survivor proportional to the failure of the mass operator to be central on the flavour factor, which is the article's one framework-level contribution to the physics; the charm prediction read backwards out of $\Delta m_K$ in 1974 giving $m_c\approx1.5$ GeV against the current mass $1.27$ GeV, with the $D$ meson's $1.87$ GeV identified as the wrong quantity to compare and the link made to the current/constituent distinction of the hadron article; the kaon system with $|\varepsilon_K|=2.228\times10^{-3}$ proportional to the triangle's height, and $\varepsilon'/\varepsilon$ recorded as the one number that does not close, measured $1.66\times10^{-3}$ against a lattice $1.4\times10^{-4}$; the two $B$ systems with $\Delta m_{B_s}/\Delta m_{B_d}=35.06$ giving $|V_{ts}/V_{td}|=4.83$ and hence $R_t$ without any tree decay; rare decays $b\to s\gamma$ at $0.988$ of prediction and $B_s\to\mu\mu$ at $0.913$, plus the 2014--2021 $b\to s\ell\ell$ anomalies and their 2022 dissolution as the argument for the corpus's number-first discipline; the triangle with $R_b=0.3866$, $R_t=0.9117$, angles $91.6^\circ$, $22.7^\circ$, $65.7^\circ$, area $0.1762$ by Heron and $0.1762$ by $\bar\eta/2$; and the closure test proper — five measurements by four kinds of physics, $R_t$ from loops at $0.914$ against $0.9117$ from the fit, $\sin2\beta=0.7128$ against $0.699\pm0.017$, the law of cosines checked to four decimals as an arithmetic identity and explicitly distinguished from the physical test; then what closure proves (self-consistency) and does not (uniqueness, or the origin of the four Wolfenstein parameters). -->
 
-### Particles of spin 0
+### Spin 0
 
 #### The content
 
@@ -1785,6 +1744,72 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html">The Higgs Mechanism as an Erasure of Information in Biquaternionic Form</a>
 <!-- the symmetric phase and the information in its vacuum; the flat directions of the potential; the erasure as the elimination of a representative direction; where the information goes, the longitudinal mode and the mass; the symmetry-breaking map as a channel; the vacuum as a stable record. -->
+
+## Biquaternion Universe The Standard Model Assembly
+
+<!-- the model the breaking returns, assembled and then counted against itself. The rule that governs
+     which articles may print a number stands first, with its two registers: the single claim and the
+     sixteen articles that print a measured strength, and the five tests a new article must pass — the
+     register is here because the assembly is what prints and counts the values. Then the content, the
+     quantum numbers and the nineteen parameters with scheme and scale on every row; the Lagrangian in
+     four sectors and the low-energy phase with its $\mathrm{U}(2)$ ceiling; the parameter count as the
+     measure of the framework's boundary; the generations, the hierarchy and the Landau pole; the three
+     gaps of dark matter, baryogenesis and the sphaleron; and where grand unification fails. Then what
+     the sectors inherit from the breaking: the six charges with the scale at which each is lost, the
+     $\mathfrak{su}(3)$ and $\mathfrak{su}(2)$ algebras on the two sectors, the connection below the
+     breaking with one relation among its three couplings, closed by the hub that states what the
+     Lagrangian family reaches in each sector. It stands after the sectors it assembles, because the
+     assembly counts them, and nothing here is an input to the breaking. -->
+
+### The Rule of the Section
+
+<a href="articles_physics/the-data-boundary.html">The Data Boundary: Two Claims, Sixteen Measured Strengths, and a Deletion Test</a>
+<!-- the register that makes the coupling rule checkable: the three categories defined by one test — does the sentence survive the deletion of every value; the claim register, two articles, the first the part's own coupling statement and the second the angle in the electroweak part; the data register, sixteen articles with the quantity each prints and why the number is data; the structural remainder named as a rule and not as a list; the five tests a new article must pass before it may print a value; and the four abuses the boundary forbids, of which the sharpest is that the low-energy limit is shared with the Standard Model while a coupling statement is not. -->
+
+### The Standard Model, Audited
+
+<a href="articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>
+<!-- the group $SU(3)\times SU(2)_L\times\mathrm{U}(1)_Y$ and the three measured strengths, as data; the five multiplets with $T_3$, $Y$ and $Ϙ=Y+T_3$, counted $15=6+3+3+2+1$; the twelve vector bosons and the degree-of-freedom check $24+4=16+2+9+1$; the scalar doublet and its components; the four anomaly conditions solved, three rays of hypercharge assignment of which one carries the observed charges; the nineteen parameters with scheme and scale on every row; the count $9+4+3+1+1+1$ and the regrouping $3+1+2+13$; the neutrino and axion variants $26$, $27$, $18$; and the count of what the algebra fixes, which is none. -->
+
+<a href="articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian: Four Sectors in One Expression</a>
+<!-- the four sectors and why there are four; the sign rule $-\sum_\mu X_\mu Y_\mu=X_\mu Y^\mu$ proved once and used to identify the corpus's kinetic terms with the standard ones, with the abelian check $\sum F F=2(B^2-E^2)$; the three curvatures and their kinetic terms; the fermion term and the covariant gradient; the scalar potential and its minimum; the three Yukawa matrices with the conjugate doublet of hypercharge $-\tfrac12$ and the hypercharge audit; the sum; the local invariance audit term by term; sixty parameters written against nineteen physical, the removal graded $36\to10$ over $U(3)^3$ and $18\to3$ over $U(3)^2$; the dimension-five neutrino operator, gravity and the dark sector as the three omissions; and the corpus's own action beside the standard one, sector by sector. -->
+
+<a href="articles_physics/the-standard-model-as-the-low-energy-phase.html">The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors</a>
+<!-- the audit of the whole model, where the sector articles are cut from it; what the framework already reaches, the abelian factor on the centre and the compact factor in the material sector; the ceiling, a compact subalgebra of $\mathbb{B}$ of dimension at most four and every module of even complex dimension; the three representative factors, each with its source and what it reaches, $\mathrm{U}(1)$ present but not hypercharge, the $\mathrm{SU}(2)$ present but not weak isospin, $SU(3)$ absent; the matter sector, the chirality kinematics exact and the chiral symmetry group missing, the hypercharge underived and the content unselected; the scalar and symmetry-breaking sector unbuilt; the table of items with the object each row needs, the three upstream items and the two prerequisites; and the electroweak pair itself, which is the companion article in the electroweak part. -->
+
+<a href="articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>
+<!-- standard input, and the article that turns the boundary into a number. the nineteen itemised and regrouped, $13+3+1+2=19$ with the flavour block at $68.4\%$ of the total and the observation that the boundary is concentrated where the algebra is emptiest; the three grades of fixing — a value, a relation, a constraint — kept apart because a framework that derives nothing may still relate or forbid something; then a typology of the nineteen by kind of mathematical object, four group coordinates, three connection normalisations, one central phase, ten eigenvalues and one scale, because the five kinds need five different machines; the arena count, eight with an arena (mixing, couplings, vacuum angle), nine with an eigenvalue and no spectral principle, two with nothing, shares $42.1\%$, $47.4\%$, $10.5\%$, and $M_H$ explained as the one entry whose kind and whose arena disagree; the framework's own three parameters $ϙ$, $m$, $k_m$ counted in the same language, giving $19+3=22$ and an imported share of $86.4\%$, so the reformulation is not more parsimonious and its defence is geometric rather than numerical; one unit removed leaving eighteen dimensionless ratios, with $m_t/m_e=3.4\times10^{5}$ and $v/M_{\mathrm{Pl}}=2.0\times10^{-17}$ printed as the two ratios nobody explains; the neutrino addition at $26$ or $27$ with the difference marked as a physical discriminator rather than a convention; the over-determination quantified, five measurements for two triangle parameters giving three degrees of freedom, and the framework's own score printed as twenty-two parameters against zero predictions not shared with the model; the test applied to the corpus's own proposals in one table, one relation of a restricted kind, five arenas, zero values, and the ceiling row noted as forbidding a representation and no number; and the four machines that would reduce the count — spectral, scale, flavour, threshold — each named as absent. -->
+
+<a href="articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a>
+<!-- the counting of generations in the Standard Model; how the framework carries a generation index; why the algebra does not fix $N_g$; the tensor structure and the trace; flavour symmetry and its breaking; the constraints that do touch $N_g$; the three imaginary units are not three generations. -->
+
+##### The Open Problems
+
+<a href="articles_physics/the-hierarchy-problem-and-naturalness.html">The Hierarchy Problem and Naturalness</a>
+<!-- standard input, and the article that separates the divergence from the sensitivity. the one-loop shift $\delta m_H^2=(c/16\pi^2)\Lambda^2$ with coefficients $0.239$ representative, $1.476$ top, $0.774$ quartic, summing to $2.489$, the top at $59\%$ as everywhere in the scalar sector; then the point most accounts lose — dimensional regularisation gives no quadratic term at all, because the only locally invariant dimension-two operator is $\phi^{\dagger}\phi$ itself, so the divergence is a convention while the sensitivity, a statement about heavy states, is not; the tuning table from $1$ TeV (nothing) through $10$ TeV (one part in $100$) to $M_{\mathrm{Pl}}$ ($2.35\times10^{36}$ GeV$^2$ against $7.82\times10^{3}$, one part in $3.0\times10^{32}$); the stability edge at $\Lambda=996$ GeV $=8.0\,m_H=4.05\,v$, and the observation that the LHC has closed that window for Standard-Model-like couplings, so the tension is a closed window and not a discovery failure; why only the scalar — chiral symmetry protects the fermion and local symmetry the vector, and $\phi^{\dagger}\phi$ is a singlet under everything, so the problem is the absence of a symmetry and is exact in that form; supersymmetry with the cancellation $\delta m_H^2\propto(m_B^2-m_F^2)$, a stop table in which $1$ TeV costs $30\%$ and $5$ TeV a factor of twenty, and the independent tension that $m_h\le M_Z=91.2$ GeV at tree level in the MSSM pulls the stops heavy while naturalness pulls them light; compositeness with $\Delta=(f/v)^2$, $4.1$ at $f=500$ GeV and $16.5$ at $1$ TeV, and the link to the hadron article where the same mechanism is known to work; the landscape, which predicts nothing and so is not a third theory competing on the same data, and which needs a measure nobody has; Veltman's condition as a fourth response that is arithmetically refuted — it needs $m_t=143$ GeV against $172.7$; then what the algebra says, which is nothing, for three exact reasons (no measure so no cutoff, no second confining sector because of the ceiling, one vacuum so no landscape), followed by the article's one real contribution, the contrast between the two scales: $\Lambda_{\mathrm{QCD}}$ is generated non-perturbatively and $v$ is not, so the tuning is the statement that the electroweak sector has no counterpart of the mechanism the strong sector does have; and naturalness recorded as a heuristic with a score of one success (GIM) and one failure (weak-scale supersymmetry), the corpus refusing to use it as evidence in either direction. -->
+
+<a href="articles_physics/the-landau-pole-triviality-and-vacuum-stability.html">The Landau Pole, Triviality and Vacuum Stability</a>
+<!-- standard input, and three questions collected into one calculation. the three one-loop coefficients $b_1=+41/6$, $b_2=-19/6$, $b_3=-7$ with the signs doing all the work; the hypercharge Landau pole at $1.8\times10^{41}$ GeV, that is $1.5\times10^{22}$ Planck masses, with $g_{\mathrm Y}$ climbing only from $0.357$ to $0.476$ on the way — a pole never reached, but structural, because a central abelian factor has no self-coupling and therefore no antiscreening, so $b_1>0$ is a theorem about central factors and the framework's most native object is its only one that cannot be UV-complete alone; then triviality, $1/\lambda(\mu)=1/\lambda(v)-24\ln(\mu/v)/16\pi^2$, giving a quartic pole at $3.4\times10^{24}$ GeV but a much sharper *bound*, $m_H<\sqrt{16\pi^2/(12\ln(\Lambda/v))}\,v$ — $754$ GeV at $1$ TeV, $464$ at $10$ TeV, $310$ at $10^6$ GeV, $144$ at $M_{\mathrm{Pl}}$, so a larger cutoff gives a *tighter* bound and at infinity the theory is free, with the measured $125.09$ GeV at $86.8\%$ of the Planck-scale ceiling, printed and refused as a hint; the near miss of the three measured strengths, $0.476$, $0.504$, $0.490$ at $M_{\mathrm{Pl}}$, a spread of $0.028$ or $5.7\%$ of the mean, with the exact statement that the framework forbids the completion; then the fate of $\lambda$, with $\beta_\lambda$ printed term by term ($+0.400$, $-5.81$, $+0.250$, $+0.981$, sum $-4.18$, $\beta=-0.0265$) and the methodological point that this is a *difference* of terms of order one whose exponential is the crossing scale, so the answer is a precision question and the one-loop estimate gets the sign right and the scale wrong by orders; the three-loop answer quoted as imported, $\lambda=0$ at $10^{11}$ GeV and $\lambda(M_{\mathrm{Pl}})=-0.014$; then the three distinct statements — absolute stability, metastability, instability — and the bounce calculation $S_E=8\pi^2/(3|\lambda|)=1880$ against a threshold near $440$, so $e^{S_E}=10^{816}$ against $H_0^{-4}=10^{167}$, a margin of $10^{649}$, which is the difference between "not the global minimum" and "unstable"; the metastability window in the top mass, $171.3$ GeV for absolute stability and $178$ for a lifetime exceeding the age, with the measurement $172.69\pm0.30$ sitting $1.39$ GeV or $4.6\sigma$ inside it; the same statement in the Higgs mass, $m_h^{\mathrm{crit}}\approx129.5$ GeV and a window $[129.5,144]$, with the measured value $4.4$ GeV below it — recorded and not interpreted, because the window is conditional on the Standard Model holding to $M_{\mathrm{Pl}}$ and $\lambda$ crosses zero eight orders below it; then the renormalisation-group input and the observation that the framework's single central-norm cutoff spans $42$ orders of magnitude and cannot be any one sector's physical cutoff; and what the algebra says — the sign of $b_1$ as its one structural result, triviality and the bounce both imported, and the honest conclusion that the space of strengths lies outside the algebra entirely. -->
+
+<a href="articles_physics/three-gaps-in-the-standard-model.html">Three Gaps in the Standard Model: Dark Matter, Baryogenesis and the Sphaleron</a>
+<!-- standard input, and the article that separates two exact failures from one success that forbids its own use. the missing mass at $\Omega_{\mathrm{DM}}h^2=0.1200$ against $\Omega_b h^2=0.02237$, a ratio of $5.36$, with the model's matter content accounting for $15.7\%$ of the budget and no knob to turn because the spectrum is closed — the failure is in the list of objects, not in the nineteen values; the inventory examined one by one, neutrinos at $1.1\%$ of the dark density at the mass bound, the Higgs at $10^{-22}$ s, the neutron at $880$ s; the cleanest exclusion in the model, $N_\nu=2.9963\pm0.0074$ from the $Z$ width, confirming three species to a part in three hundred and shutting the fourth-generation door twice; direct detection at $2.6\times10^{-47}$ cm$^2$, which is $1.5\times10^{14}$ below a weak cross-section, so the simplest WIMP is excluded by fourteen orders and the surviving models need a heavy mediator or a cancellation; then the matter excess $\eta=6.1\times10^{-10}$, one baryon per $1.6\times10^{9}$ photons, which cannot be an initial condition because inflation erases it; the Jarlskog invariant $J=3.13\times10^{-5}$ computed from the Wolfenstein inputs and the statement that the $\eta\sim10^{-20}$ it produces is short by eleven orders, with the reason (three loop factors and $J$ already give $10^{-11}$); the Sakharov scorecard in which the model satisfies all three conditions nominally and fails each quantitatively — $B$ violated but $B-L$ conserved exactly so the answer from a symmetric start is zero and not merely small, $CP$ violated but in the wrong sector at the wrong size, out-of-equilibrium failing outright; the anomaly identity $\partial_\mu j^\mu_B=N_g g^2F\tilde F/32\pi^2$ with $\Delta B=\Delta L=3$ and the classification of every mechanism by where it violates $B-L$; the sphaleron itself, $E_{\mathrm{sph}}=4\pi v B(\lambda/g^2)/g=9.0$ TeV at $B=1.90$, with the rate table $10^{-39}$ at $T=100$ GeV, $10^{-24}$ near $T_c$, and exactly zero today, hence a proton lifetime above $10^{160}$ years; then instanton against sphaleron, Euclidean against Minkowski, solution against saddle point, self-dual against not, and the exact reason the corpus hosts the first and not the second: the biquaternion topological machinery is a self-duality machinery and the sphaleron admits no algebraic shortcut; the phase transition as a crossover for any $m_H>72$ GeV, with $125.09$ GeV sitting $74\%$ above the threshold and $T_c=159.5$ GeV established on the lattice, so the third Sakharov condition fails outright rather than marginally; leptogenesis as the one route the corpus can build, with $B=28L/79$ and the reason it exists at all — the Majorana and seesaw articles needed those objects for other purposes, and the lepton phases are not constrained by the quark sector's eleven-orders failure; and finally what the framework does not supply, item by item: no dark matter candidate, no sphaleron, no first-order transition, no $B-L$ violation at a high scale. -->
+
+<a href="articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html">Grand Unification in the Biquaternion Framework: Where the Embedding Fails</a>
+<!-- the threshold a unified group must clear; the framework's own unification, electroweak and abelian; what a biquaternionic grand unification would require; the representation content and the even-dimension obstruction. -->
+
+### What the Sectors Inherit
+
+<a href="articles_physics/the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html">The Quantum Numbers Below the Breaking: The Strong Group, $B-L$, Weak Isospin and the Electric Charge</a>
+<!-- the charges read off the same list the mass matrix gives, by one criterion: a generator that annihilates the vacuum is conserved and its boson is massless. the table of six charges with the scale at which each is lost; the strong group exact at every scale and $Q$ exact below $v$; $T_{3R}$ and $B-L$ lost at $M_C$, $T_{3L}$ and $Y$ at $v$; $B-L$ kept as a fixed eigenvalue while its charge goes, because the lepton-line vev carries $B-L=-1$, and $B$ surviving in its place by accident of the content; $L$ broken at dimension three by the right-handed neutrino's mass, which is the seesaw's licence; the proton stable because the leptoquarks carry $B-L=\pm\tfrac43$ and no diquark vertex is available; the anomaly of $B-L$ vanishing, so $B+L$ is erased by sphalerons and $B-L$ is not; the three distinctions a reader loses first, conserved against realised, made local against broken against accidental, broken against violated. -->
+
+<a href="articles_physics/the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Algebras of the Two Sectors: The Strong Group on Three Dimensions, Weak Isospin on Two, the Photon on One</a>
+<!-- which algebra and which module each sector is built in once the chain has run, the strong group in $\mathrm{End}(\mathbb C^3)$ and the weak factor on the doublet lines, the address each residual algebra has in $\mathrm{End}_{\mathbb C}(\mathbb B)$, and what the reduction loses, so that the two sector sections open with the algebra they need already named. -->
+
+<a href="articles_physics/the-connection-below-the-breaking.html">The Connection Below the Breaking: Three Pieces, Three Couplings, and One Relation from Orthogonality</a>
+<!-- the frame's one covariant derivative rewritten after each step, the fifteen, the three and the three separating into the pieces the residual groups keep, with every coupling left symbolic and no value printed, and with what each piece multiplies stated so that the strong and electroweak sections inherit their notation instead of inventing it. -->
+
+<a href="articles_physics/the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html">The Sector Hub: What the Lagrangian Family Reaches in Each Sector</a>
+<!-- four sectors and four answers: the electromagnetic carried exactly, the electroweak partly, the strong not at all because the compact group is U(2), and the gravitational by a frame and not an element; the table that puts the four in two independent columns. -->
 
 ## Biquaternion Universe Electromagnetism
 
@@ -1941,7 +1966,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html">Conformal Invariance and the Massless Limit in Biquaternionic Form</a>
 <!-- the conformal group and the massless scalar equation at weight one, with the Maxwell and massless Dirac cases following as extensions; conformal covariance; the conformal two-point function; the massless limit; the dilation Ward identity and the improved trace; the Maxwell case; the massless Dirac field.  The norm is read as a conformal (Weyl) factor and $\log\lvert N\rvert$ as a dilation potential. -->
 
-### Particles of spin 1
+### Spin 1
 
 <!-- the eight rungs of the ladder, emitted in full and empty where this section has nothing for them; it fills five, and
      rung one is empty because the content is the carrier, stated in *Introduction to the Spin-One Anti-Hermitian Subspace*
@@ -2082,7 +2107,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-lagrangian-and-the-topologically-massive-connection.html">The Lagrangian and the Topologically Massive Connection</a>
 <!-- one parent functional, linear in $H_\mu$ and quadratic in the s-vector $G_\mu$, with two exact eliminations: varying $H$ gives the Dirac theory in the vector representation, varying $G$ gives Maxwell plus Chern–Simons; the duality exact because one field enters linearly and the other quadratically; the topological mass readable as a derivative count, one derivative and one power of $m$ and one Levi-Civita symbol, so its local variation is a boundary term; one degree of freedom in three dimensions and the invertibility condition $m\neq a$; the Chern–Simons current conserved identically; the four- and three-dimensional settings compared; and the family's three kinds of vector mass separated by the derivative count. -->
 
-### Particles of spin 1/2
+### Spin 1/2
 
 #### The content
 
@@ -2325,7 +2350,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a>
 <!-- the three conjugations of the spinor module and the division ring $\mathrm{F}=\mathbb{R},\mathbb{C},\mathbb{H}$; the pseudo-automorphism of the complex Clifford algebra and the discrete symmetry group $\{\mathrm{Id},\star,e,e\star\}$; particles and antiparticles as the two summands of $\Delta=S\oplus\bar{S}$; the charge states $+1,0,\bar{0}$ and the truly neutral particle; $C$, $P$, $T$ as elements of the symmetry group and the CPT composition; the division-ring obstruction to a uniform charge-conjugation operator; what the algebra supplies and does not. -->
 
-### Particles of spin 0
+### Spin 0
 
 #### The content
 
@@ -2488,29 +2513,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/scalar-pair-creation-in-biquaternionic-form.html">Scalar Pair Creation in Biquaternionic Form</a>
 <!-- the background and the mode equation; in and out regions and the Bogoliubov transformation; the number of created pairs and the vacuum persistence amplitude; an exactly solvable case, the sudden quench; the biquaternion reading. -->
 
-### Particles of other spins
-
-#### The content
-
-<a href="articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html">Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</a>
-<!-- the three carriers of the base algebra named first, with the invariants $N$ and $B^2$ that each of them fixes; the algebra and its defining module; what a module can carry, that is a finite multiple of spin one-half and nothing else, and why that is a statement about modules and not about the algebra's spins; the dimension obstruction and its insufficiency, with the four-vector's weight content $1\oplus0$ as the deciding datum; the spin-zero carrier as the centre, native and not a gap, with $\Lambda^2S\cong\mathbb{C}$ and $\mathrm{End}_\mathbb{B}(S)$ as its two other descriptions, and the Einstein–Mayer claim of one equation for spins $0,\tfrac12,1,\tfrac32$ read as a claim about a tensor carrier; tensor products and the generation of higher spin, $S^{\otimes n}$, $\mathrm{sym}^{2s}(S)=(s,0)$ and the constraints that remove the admixture; the explicit cases of spin one, three-halves and two; the tensor powers of the algebra; why there is no fourth carrier — two actions, three isotypic components, and the multiplication map that kills the spin-two summand of $\mathbb{B}\otimes\mathbb{B}$; the adjoint action as a carrier and not a defect, and the impossibility of a spin-one module; the same catalogue in the Clifford algebra, $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$. The two commuting $\mathbb{H}$-actions are read as the two spinor index families, the failure of full bilinearity the obstruction to their independence. -->
-
-#### The action
-
-#### The field equation and its solutions
-
-<a href="articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</a>
-<!-- the standard Rarita–Schwinger field; the field in the biquaternion framework; the rest-frame reduction; the transverse condition on the vector index; the massless case and the representative freedom; the massive case; comparison with spin one and spin one-half. -->
-
-#### The fluid's equations and their solutions
-
-#### The quantum apparatus
-
-<a href="articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a>
-<!-- the field, its constraint and transversality; connection structure, massless and massive; canonical quantization; the propagator and its fixing; consistency of the coupled theory; the pattern across the spins. -->
-
-#### The applications
-
 ### Focus on informational aspects
 
 <a href="articles_physics/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html">The Material-Informational Split as a Superselection Structure in Biquaternionic Form</a>
@@ -2571,7 +2573,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.html">The Biquaternion Framework and the Canonical Commutation Relation: An Independent Axiom</a>
 <!-- what the relation encodes: a configuration continuum, the Weyl form as a distinct condition rather than a rewriting of the commutator form, Stone-von Neumann stated for the Weyl form; the trace obstruction in the framework and its general form, then a second and independent norm obstruction from $[Q,P^n]=i\hbar nP^{n-1}$, so that no bounded pair holds the relation in any dimension; the observable algebra as an internal algebra with no position operator and the spin analogy; independence stated precisely and its one-directional character; the rotation bracket the framework does carry, with the Robertson-Schrodinger inequality it implies and the spin case $s\ge\lvert m\rvert$, an equality at $s=\tfrac12$; the relation's two halves on a field carrier, the position-momentum bracket blind to every shift by a function of position and the momentum-momentum bracket the field strength, with the field strength nameable as a central element of $\mathbb{B}$ and neither half generable; position and momentum entering as the argument of the field and the dual variable of the transform, with the assembly of the carrier root-independent; the clock-and-shift pair as the $\mathbb{Z}/N$ Weyl relation; no theory ever rejected by the relation, the composition objection being the historical one; the continuum as an import and the two readings; what the independence does not say. physical readings. -->
 
-### Particles of spin 1
+### Spin 1
 
 #### The content
 
@@ -2594,12 +2596,18 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/spin-1-condensates-and-the-spinor-order-parameter-in-biquaternionic-form.html">Spin-1 Condensates and the Spinor Order Parameter in Biquaternionic Form</a>
 <!-- the spin-one condensate in mean-field theory; the spinor as a vector in the symmetric sector; ferromagnetic and polar states from the algebra; the energy functional in the framework. -->
 
-### Particles of spin 1/2
+### Spin 1/2
 
 #### The content
 
 <a href="articles_physics/the-majorana-representation-in-biquaternionic-form.html">The Majorana Representation in Biquaternionic Form</a>
 <!-- the stereographic coordinate; the Majorana polynomial; rotational covariance; the multi-spin-1/2 case; the geometric phase of the star; the geometry of two stars. -->
+
+<a href="articles_physics/addition-of-angular-momenta-and-clebsch-gordan-coefficients-in-biquaternionic-form.html">Addition of Angular Momenta and Clebsch–Gordan Coefficients in Biquaternionic Form</a>
+<!-- the angular-momentum algebra in biquaternion form; coupling two independent systems; the Clebsch–Gordan series; the coupling of two fundamental systems and of two triplets; the transformation inside the algebra; the recursion relations and the Condon–Shortley phase. -->
+
+<a href="articles_physics/the-wigner-eckart-theorem-and-tensor-operators-in-biquaternionic-form.html">The Wigner–Eckart Theorem and Tensor Operators in Biquaternionic Form</a>
+<!-- tensor operators, definition and conventions; the adjoint action as the algebra's own tensor operator; the Wigner–Eckart theorem; verification in the coupled two-spin space; examples; the trace form and the Born rule. -->
 
 #### The action
 
@@ -2659,7 +2667,13 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a>
 <!-- the one-site case; the many-site map; the map as an algebra isomorphism and its grading; consequences for the chain. -->
 
-### Particles of spin 0
+<a href="articles_physics/two-spin-half-particles-in-biquaternionic-form.html">Two Spin-Half Particles in Biquaternionic Form</a>
+<!-- the two-qubit algebra; the total spin operators; the coupling term and the coupled projectors; the four coupled states as idempotents; the exchange operator and the antisymmetry of the singlet; the Heisenberg coupling; partial traces and reduced states; the relation to the Bell basis; the observation that a single quaternion is a product state and not a singlet. -->
+
+<a href="articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.html">Anyons and Braid Statistics in Biquaternionic Form</a>
+<!-- the braid group and the failure of the permutation group; the flux–charge composite and the Aharonov–Bohm phase; the Chern–Simons origin of fractional statistics; non-abelian anyons; the two-sector statement. -->
+
+### Spin 0
 
 #### The content
 
@@ -2788,32 +2802,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html">Zero Divisors as a Physical Locus in Biquaternionic Form</a>
 <!-- the algebraic locus; the locus in momentum space, in configuration space and in state space; null solutions of the free equation; what stops at the locus. -->
 
-### Particles of other spins
-
-#### The content
-
-<a href="articles_physics/addition-of-angular-momenta-and-clebsch-gordan-coefficients-in-biquaternionic-form.html">Addition of Angular Momenta and Clebsch–Gordan Coefficients in Biquaternionic Form</a>
-<!-- the angular-momentum algebra in biquaternion form; coupling two independent systems; the Clebsch–Gordan series; the coupling of two fundamental systems and of two triplets; the transformation inside the algebra; the recursion relations and the Condon–Shortley phase. -->
-
-<a href="articles_physics/the-wigner-eckart-theorem-and-tensor-operators-in-biquaternionic-form.html">The Wigner–Eckart Theorem and Tensor Operators in Biquaternionic Form</a>
-<!-- tensor operators, definition and conventions; the adjoint action as the algebra's own tensor operator; the Wigner–Eckart theorem; verification in the coupled two-spin space; examples; the trace form and the Born rule. -->
-
-#### The action
-
-#### The field equation and its solutions
-
-#### The fluid's equations and their solutions
-
-#### The quantum apparatus
-
-#### The applications
-
-<a href="articles_physics/two-spin-half-particles-in-biquaternionic-form.html">Two Spin-Half Particles in Biquaternionic Form</a>
-<!-- the two-qubit algebra; the total spin operators; the coupling term and the coupled projectors; the four coupled states as idempotents; the exchange operator and the antisymmetry of the singlet; the Heisenberg coupling; partial traces and reduced states; the relation to the Bell basis; the observation that a single quaternion is a product state and not a singlet. -->
-
-<a href="articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.html">Anyons and Braid Statistics in Biquaternionic Form</a>
-<!-- the braid group and the failure of the permutation group; the flux–charge composite and the Aharonov–Bohm phase; the Chern–Simons origin of fractional statistics; non-abelian anyons; the two-sector statement. -->
-
 ### Focus on informational aspects
 
 <a href="articles_physics/the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html">The Native Qubit and the Defining Module of the Biquaternion Algebra</a>
@@ -2931,7 +2919,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 #### The applications
 
-### Spin ½ origin: effects and non-quantum limits
+### Spin 1/2 origin: effects and non-quantum limits
 
 #### The content
 
@@ -3001,29 +2989,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html">The Central Scalar Field: Classical Dynamics in the Biquaternion Centre</a>
 <!-- the centre as the scalar's value space; the classical action and the field equation; plane waves and the range of the field; the static central solution; the field energy and the stress–energy; the test particle and the reduction to the central-force problem; why there is no intrinsic magnetism. -->
 
-### Other spins origin: effects and non-quantum limits
-
-#### The content
-
-#### The action
-
-<a href="articles_physics/the-lagrangian-and-the-rarita-schwinger-equation.html">The Lagrangian and the Rarita–Schwinger Equation</a>
-<!-- the action named and not written; the three debts, the index-chirality contraction, the two multipliers and the massless invariance; the count the constraints control; the boundary of the family's variational method at spin three-halves. -->
-
-#### The field equation and its solutions
-
-#### The fluid's equations and their solutions
-
-#### The quantum apparatus
-
-#### The applications
-
-<a href="articles_physics/the-relativistic-quadrupole-in-biquaternionic-form.html">The Relativistic Quadrupole in Biquaternionic Form</a>
-<!-- the quadrupole as a higher multipole; the retarded field of a localised source; the relativistic transformation of the quadrupole; the quadrupole field and its radiation; the quadrupole in the algebra. -->
-
-<a href="articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html">Higher Multipoles and the Field-Strength Decomposition in Biquaternionic Form</a>
-<!-- the multipole series of a localised source; the field-strength biquaternion and its two decompositions; the multipole tower and the two decompositions; covariance of the decomposition; the lowest orders. -->
-
 ### Focus on informational aspects
 
 <a href="articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a>
@@ -3075,7 +3040,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-elastic-displacement-field-in-a-classical-solid-three-polarizations-at-two-speeds.html">The Elastic Displacement Field in a Classical Solid: Three Polarizations at Two Speeds</a>
 <!-- the displacement as a material vector and the adjoint carrier; the gradient decomposed into dilatation, local rotation and shear, $3\otimes3=1\oplus3\oplus5$; the symmetric and antisymmetric products of the derivative with the field; the energy as bulk modulus times the squared dilatation plus shear modulus times the squared shear, with the local rotation free; the two branches and the two speeds; the polarization triad as a basis of the adjoint; the Poisson ratio as the single number in the ratio of the speeds and the incompressible limit as the removal of the third mode. -->
 
-### Effects with intrinsic magnetism (spin ½ origin)
+### Effects with intrinsic magnetism (spin 1/2 origin)
 
 #### The content
 
@@ -3166,33 +3131,7 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-foucault-pendulum-and-classical-holonomy-in-biquaternionic-form.html">The Foucault Pendulum and Classical Holonomy in Biquaternionic Form</a>
 <!-- inertial and rotating frames; the pendulum in the rotating frame; the geometric meaning, geodesic turning and holonomy; the rotor and the double cover; the relation to other geometric phases. Spin 0 in origin by its carrier, but the content is a holonomy statement: the article continues the geometric-phase chain that runs through Hannay's angles. -->
 
-### Effects with higher multipole origins (other spins origin)
-
-#### The content
-
-#### The action
-
-#### The field equation and its solutions
-
-#### The fluid's equations and their solutions
-
-#### The quantum apparatus
-
-#### The applications
-
-<a href="articles_physics/the-multipole-expansion-and-the-quadrupole-interaction-in-biquaternionic-form.html">The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form</a>
-<!-- the multipole expansion of a localised source; the multipole tower and the rotation group; the biquaternion transcription of the fields; the monopole and the dipole as algebra elements; the quadrupole tensor and its interaction; why the quadrupole is not an algebra element. -->
-
-<a href="articles_physics/the-vibrating-ellipsoid-and-higher-multipole-oscillations-in-biquaternionic-form.html">The Vibrating Ellipsoid and Higher-Multipole Oscillations in Biquaternionic Form</a>
-<!-- the rigid-body rotor; the ellipsoid and its normal modes; the quadrupole moment of a deformed ellipsoid; the rotating ellipsoid and the $2\Omega$ oscillation; higher multipoles as an oscillating tower; the velocity field and the mode energy. -->
-
-<a href="articles_physics/multipole-moments-at-every-order-the-biquaternion-algebra-cannot-index-the-tower.html">Multipole Moments at Every Order: The Biquaternion Algebra Cannot Index the Tower</a>
-<!-- the two facts; three representation-theoretic roles of the algebra; the truncating product and the truncating gradient; where the tower actually lives; two infinities, one field; the no-go statement; the capacity of the algebra and its enlargements. -->
-
 ### Focus on informational aspects
-
-<a href="articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.html">Coarse-Graining and the Biquaternion Entropy Functional</a>
-<!-- the state space of the informational sector; the entropy functional; the entropy as a function of the biquaternion norm; coarse-graining on the informational sector; monotonicity under coarse-graining; fine and coarse, Liouville and the second law; preparations and partitions. -->
 
 <a href="articles_physics/fisher-information-and-the-biquaternion-norm.html">Fisher Information and the Biquaternion Norm</a>
 <!-- the biquaternion norm on states; the classical Fisher information; Fisher information in the informational sector; the reciprocity and its meaning; Fisher information as the Hessian of relative entropy; the Fisher–Rao geometry of the Bloch ball; the quantum bound. -->
@@ -3280,9 +3219,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.html">Quantum Gravity in the Biquaternion Framework: The Two-Sided Obstruction and the Modular Temperature</a>
 <!-- what quantisation of the gravitational sector would require; why the representative quantisation does not transfer, one-sided against two-sided; established, what the quantisation programme can build on; obstacles with a known route; obstacles with no route yet; the modular route to a horizon temperature; the ledger; the gaps in order. -->
-
-<a href="articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html">Canonical Quantization of the Biquaternion Graviton Field</a>
-<!-- the linearized field and its local symmetry; the count of degrees of freedom; helicity and the massless little group; canonical quantization; the propagator and the coupled theory. -->
 
 ### The Source: Matter Into the Frame
 

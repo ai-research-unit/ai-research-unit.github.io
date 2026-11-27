@@ -431,4 +431,4 @@ The three closures are not a decomposition. The carriers are one algebra read th
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the central operator and the restriction to the centre.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the left multiplier and the two ideals.
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the sector as the space of a four-vector.
-- [Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth](higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html), for what the closure does not forbid.
+- [Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth](../articles_internal/archives/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html), for what the closure does not forbid.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The rule.** This part keeps one coupling statement, and it is in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The rule that follows is easy to state and hard to apply: no article outside that one may carry a value, a boundary condition, a running, a matching, or a ratio called exact.
+**The rule.** The corpus keeps one coupling statement, and it is in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The rule that follows is easy to state and hard to apply: no article outside that one may carry a value, a boundary condition, a running, a matching, or a ratio called exact.
 
 **The difficulty.** Much of the corpus is Standard Model physics transcribed, and transcribed physics arrives with numbers. A rule that forbade those numbers would forbid the corpus's own subject matter. So the rule needs a boundary, and a boundary written only in prose cannot be checked.
 
@@ -109,7 +109,7 @@ The permission has four edges drawn, and the sharpest is the fourth: the low-ene
 | structural | a statement checked by the algebra, carrying no value |
 | claim | a statement imposing a value, a boundary condition, a running, a matching or an exact ratio |
 | data | a measured value, printed where a comparison needs it |
-| the coupling article | *The One Coupling That Returns the Standard Model*, in this part |
+| the coupling article | *The One Coupling That Returns the Standard Model*, in the Symmetry Breaking part |
 
 ## Further Reading
 

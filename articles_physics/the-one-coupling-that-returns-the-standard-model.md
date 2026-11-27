@@ -98,7 +98,7 @@ $$
 and the solution exists only while the bracket is positive. Two consequences follow at once:
 
 - $g_R$ comes out below $g_L$, between $0.62$ and $0.73$ of it over the admissible region, so the fourth line's right-handed sector is weaker than its left-handed one at the threshold.
-- The ratio $M_X/M_{W_R}$ lies between $2.2$ and $3.1$, not at $\sqrt2$, and a leptoquark floor of $3.2\times10^{-5}$ J therefore corresponds to a $W_R$ floor of $1.1$ to $1.4\times10^{-5}$ J rather than to $160$.
+- The ratio $M_X/M_{W_R}=8\,g_4/g_R$ — $8$ at equal couplings and rising with $g_4/g_R$ — lies between $12$ and $18$ over the admissible region, so a leptoquark floor of $3.2\times10^{-5}$ J corresponds to a $W_R$ floor of $1.8$ to $2.6\times10^{-6}$ J. The $W_R$ bound is an order of magnitude weaker than the leptoquark bound, and that is the sense in which the $W_R$ is the lighter of the two.
 
 **3.3 What it confirms.** The relation reproduces $\alpha_{\mathrm{em}}$, $\alpha_s$ and $\sin^2\theta_W$ at $M_Z$ exactly and for any admissible pair of scales, because each is built from those three numbers at $M_Z$ and run up. Those three are data at $M_Z$ — $\alpha^{-1}(M_Z)=127.95$ and $\sin^2\theta_W=0.23122$ among them — and the relation is imposed on top of them. A statement that reproduces its own inputs is a consistency condition, and a consistency condition confirms nothing.
 
@@ -226,7 +226,7 @@ The last column is where the scale enters, and it enters twice: once in the rati
 | the separation | the two scales | four decades, so no single scale is both |
 | the parity freeze | $c_{2L}$ against $c_{2R}$ above $M_C$ | equal, so the gap does not run |
 | the required asymmetry | $2\pi\times44.6/27$ | about $10$, or thirty doublets |
-| the ratio of masses | $\sqrt2\,g_4/g_R$ | $2.2$ to $3.1$ |
+| the ratio of masses | $8\,g_4/g_R$ | $12$ to $18$ |
 
 ## Distinctions That Are Easy to Lose
 
@@ -248,7 +248,7 @@ The Standard Model is recovered from the fourth line by one equation, $\frac{1}{
 
 The arithmetic is exact and short. The denominators are $1$, $1$ and $\tfrac23$; they sum to $\tfrac83$; the angle at the threshold is $\tfrac38$; and the same sum read from the generator algebra gives the identical result.
 
-What it does not fix is stated in the same place. The scale is free above a leptoquark floor, $g_R$ is an output rather than a prediction, the mass ratio is $\sqrt2\,g_4/g_R$ rather than $\sqrt2$, and a value of $g_R$ that moves with the scale cannot be tested.
+What it does not fix is stated in the same place. The scale is free above a leptoquark floor, $g_R$ is an output rather than a prediction, the mass ratio is $8\,g_4/g_R$ and moves with the couplings, and a value of $g_R$ that moves with the scale cannot be tested.
 
 The unified case fails, and it fails as arithmetic. $\tfrac38$ is exact where the strong coupling is $13\%$ short, and the strong coupling is exact where the angle is $16\%$ high. The two conditions hold four decades apart.
 

@@ -311,7 +311,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 - [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the little group and the adjoint-action reading of $\digamma_{\mathrm{hlc}}$.
 - [Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation](exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html), for the helicity element $\tilde{Ζ}$, the two helicity lines and the mass that leaves them intact.
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the massive case, where the label is not invariant.
-- [Canonical Quantization of the Biquaternion Graviton Field](canonical-quantization-of-the-biquaternion-graviton-field.html), for the spin-two spectrum and the two physical states.
+- [Canonical Quantization of the Biquaternion Graviton Field](../articles_internal/archives/canonical-quantization-of-the-biquaternion-graviton-field.html), for the spin-two spectrum and the two physical states.
 - [The Determination of the Possible Spins in Biquaternionic Form](the-determination-of-the-possible-spins-in-biquaternionic-form.html), for the little-group classification and the statement that the reduction from $2s+1$ to two is the fixing condition.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the spin operator whose projection this is.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chirality basis operator and its invariance.

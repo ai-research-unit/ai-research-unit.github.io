@@ -274,7 +274,7 @@ Eighteen recomputations, at tree level, with $v_C=10\,v$ where a numerical value
 | the minimal charged block | two fields, one weak index each | $\operatorname{diag}(\tfrac14g_L^{2}v^{2},\tfrac14g_R^{2}v_{C}^{2})$, off-diagonal $0$ |
 | the physical $W$ | eigenvector of a diagonal block | $W_L$ exactly, no $W_R$ admixture |
 | $\rho$ in the minimal content | $\tfrac14g_L^{2}v^{2}$ over $\tfrac14(g_L^{2}+g_Y^{2})v^{2}\cos^{2}\theta_W$ | $1$ exactly |
-| the charged mass ratio | $M_X^{2}/M_{W_R}^{2}$ | $2g_4^{2}/g_R^{2}$ |
+| the charged mass ratio | $M_X^{2}/M_{W_R}^{2}=16g_4^{2}v_C^{2}\big/\tfrac14g_R^{2}v_C^{2}$ | $64g_4^{2}/g_R^{2}$, that is $(8g_4/g_R)^{2}$ |
 | the extension's determinant | $\det$ of the $2\times2$ | $(\tfrac14g_Lg_R)^{2}(\kappa^{2}-\kappa'^{2})^{2}$ |
 | the extension's null direction | $\kappa=\kappa'$ | rank one, $(g_R,-g_L)$, eigenvalue $0$ |
 | the extension's eigenvalues | $\beta=0.3$, equal couplings | $0.1088$, $0.3912$, against $\tfrac14(1\mp\sin0.6)$ |
