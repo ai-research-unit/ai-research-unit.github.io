@@ -9,7 +9,7 @@ Three statements follow, and the article takes them in order. The reading is exa
 What the reading does not do is stated near the end. It is not second quantization, not thermodynamics, not a hidden-variable ontology, and not a superfluid in the condensed-matter sense. Each of those four is a distinct subject with its own article elsewhere in the corpus, and the fluid of this block is none of them.
 
 The block has thirty-five entries and this is the first. It is the first of twenty-six on the one element; between it and the rest of those twenty-six lies the
-fluid layer, nine articles on ordinary fluid mechanics: the Euler and continuity equations in biquaternionic form, the vorticity form, viscosity and the dissipation
+fluid layer, nine articles on ordinary fluid physics: the Euler and continuity equations in biquaternionic form, the vorticity form, viscosity and the dissipation
 function, the equation of state, the reverse Madelung map with its direction, its Clebsch hierarchy and its one exceptional linear case. The nine state a fluid's data
 and the obstructions to a wave reading — eight of them with no element of the algebra and no field at all — so that the reading that follows rests on a base stated
 in advance.
@@ -169,7 +169,7 @@ The guidance equation is a reading and not a postulate. That $\vec p=\frac{h}{2\
 
 ### Not a superfluid
 
-The words agree and the objects do not. In condensed matter a quantum fluid is a many-body state with a macroscopic wave function, an order parameter and a spectrum of excitations. Here there is one element, and the "wave function" is the field itself. The vocabulary of the block — density, velocity, vorticity, circulation, spin — is the vocabulary of fluid mechanics, and it is used because the algebra supplies those variables, not because a condensate is present.
+The words agree and the objects do not. In condensed matter a quantum fluid is a many-body state with a macroscopic wave function, an order parameter and a spectrum of excitations. Here there is one element, and the "wave function" is the field itself. The vocabulary of the block — density, velocity, vorticity, circulation, spin — is the vocabulary of fluid physics, and it is used because the algebra supplies those variables, not because a condensate is present.
 
 The one place the vocabulary pays is the nodal set. The quantisation of circulation around a nodal line is a theorem about this field, and it is the same theorem that a superfluid's circulation obeys. That agreement is stated in [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) as an agreement of formulas, with the physical difference named.
 
@@ -191,7 +191,7 @@ The four factors are of four algebraic types: real central, central imaginary, H
 
 The domain is the set of invertibles, asked at each event. The word exists iff $N(\tilde\Xi)\neq0$, and the complement is the zero-divisor cone. The cone is the nodal set for a scalar field and strictly larger for a spinor field, where the fields of definite value and the one-sided plane waves lie on it with a density that never vanishes. On the cone the two-factor decomposition survives and the four-factor word does not.
 
-The block is thirty-five entries in six groups: the framework, which is this article; the fluid layer, which is nine articles on ordinary fluid mechanics, eight of them with no element of the algebra;
+The block is thirty-five entries in six groups: the framework, which is this article; the fluid layer, which is nine articles on ordinary fluid physics, eight of them with no element of the algebra;
 the scalar ladder, which is the first-order pair below the spin-zero fluid and then that fluid with its stress, its nodal set and its charged companion; the spinor
 fluid with its frame, its stress and its charged companion; the vector fluid with its charged companion — each of the four rungs carrying its Lagrangian article in the fluid variables at its end, so that the eight Lagrangian articles stand beside the eight fluids they vary; and the algebra that reads all of them, with the choices the
 word leaves open, the sign $\varepsilon$, the locking on the degenerate sector and the boundary at which it fails.

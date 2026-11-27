@@ -96,7 +96,7 @@ which follows from the $(t,\upsilon_{\mathrm{rnd}})$ entry $-i\partial_{r'_t}(\g
 
 ### What rigidity does not constrain
 
-Vorticity is free. The condition constrains the symmetric part of the gradient and says nothing about the antisymmetric part. With $\gamma$ held constant a flow can be rigid and vortical at once, and the rigid rotation of classical fluid mechanics is the example: for $\vec v=\Omega\,\vec e_z\times\vec r$ and constant $\gamma$, the conditions (b) hold because $\partial_x(\gamma v_y)=\gamma\Omega$ and $\partial_y(\gamma v_x)=-\gamma\Omega$ sum to zero, and (a) and (c) hold because nothing depends on time and $\gamma$ does not vary.
+Vorticity is free. The condition constrains the symmetric part of the gradient and says nothing about the antisymmetric part. With $\gamma$ held constant a flow can be rigid and vortical at once, and the rigid rotation of classical fluid physics is the example: for $\vec v=\Omega\,\vec e_z\times\vec r$ and constant $\gamma$, the conditions (b) hold because $\partial_x(\gamma v_y)=\gamma\Omega$ and $\partial_y(\gamma v_x)=-\gamma\Omega$ sum to zero, and (a) and (c) hold because nothing depends on time and $\gamma$ does not vary.
 
 But a rotation cannot hold $\gamma$ constant, so the relativistic rigid rotation is not rigid. The unit norm $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ forces $\gamma=1/\sqrt{1-\Omega^{2}r^{2}/c^{2}}$ for the rotating flow, and that $\gamma$ varies with the radius. Then the diagonal entries of (b) fail, $\partial_x(\gamma v_x)=-\Omega y\,\partial_x\gamma\ne0$, and (c) fails too whenever the flow is stationary: with $\partial_{r'_t}=0$ it forces $\partial_{r_k}\gamma=0$. Two independent entries of the condition are therefore violated, not one. A relativistic rigid rotation is *accelerating* — the centripetal acceleration is real — and the classical rigid body is a non-relativistic artefact that the unit norm excludes.
 
@@ -216,13 +216,13 @@ So the two statements — mechanical rigidity in the flat frame, and the Killing
 
 The corpus quotes Tolman's law from the local thermal structure and does not derive it from the rigidity condition. That is the transcription this article is. Article 11 derives the law on its own local metric, reads it as $T\,c=\text{const}$, and checks it numerically at two points; this article takes that result as a quoted input. The rigidity condition then does one job and one job only: it says which velocity fields are compatible with local equilibrium. It does not produce the temperature law, and no display in this article pretends that it does.
 
-The division is worth stating as a rule, because it protects the articles that follow. The velocity enters the kinematics, the temperature enters the state, and the two meet in the stress and the entropy current — not in the equilibrium condition. An article that needs the temperature in a differential equation about the flow is an article about dissipation, and dissipation is the subject of [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html), where the relaxation time and the gradient terms appear.
+The division is worth stating as a rule, because it protects the articles that follow. The velocity enters the kinematics, the temperature enters the state, and the two meet in the stress and the entropy current — not in the equilibrium condition. An article that needs the temperature in a differential equation about the flow is an article about dissipation, and dissipation is the subject of [Causal Dissipative Fluid Physics in Biquaternionic Form](causal-dissipative-fluid-physics-in-biquaternionic-form.html), where the relaxation time and the gradient terms appear.
 
 ## What the Letters Add
 
 ### Nothing to the physics
 
-**The transcription adds no physics, and it is worth being explicit about what it does not add.** The rigidity condition is the Killing equation of the relativistic fluid theory; it is in Landau and Lifshitz, it is in Eckart, and it is in every covariant formulation of fluid mechanics since. The pointwise temperature is the KMS temperature read as a period; it is in the KMS article of this corpus and in the standard literature. Tolman's law is Tolman's. Nothing in this article is new, and nothing in it is presented as new.
+**The transcription adds no physics, and it is worth being explicit about what it does not add.** The rigidity condition is the Killing equation of the relativistic fluid theory; it is in Landau and Lifshitz, it is in Eckart, and it is in every covariant formulation of fluid physics since. The pointwise temperature is the KMS temperature read as a period; it is in the KMS article of this corpus and in the standard literature. Tolman's law is Tolman's. Nothing in this article is new, and nothing in it is presented as new.
 
 ### The one thing it adds: a spelling that the next articles can share
 

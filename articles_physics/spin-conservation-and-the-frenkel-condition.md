@@ -156,7 +156,7 @@ and the implication is the one the polar form uses: the empty scalar slot is wha
 
 The two facts together are the article's main structural statement: the corpus imposes neither the direction nor the condition. The direction is the rotor's image of the frame's declared axis, and the condition is the dual's antisymmetry. The spin is carried by a rotation, a rotation is a real unitary element, and the image of a spatial direction under a rotation is a spatial direction. A framework in which the spin lived in the field's eight parameters without a rotor would have to impose $\mathcal{F}$ by hand; this one gets it from the decomposition.
 
-What the pair does not say, and the article is explicit. It does not say that every field satisfies $\mathcal{F}$ in the sense of the *macroscopic* polarization of [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html). The polar word's $\hat s$ is one element's spin direction; the fluid's polarization is the average of many, and the average of directions with empty scalar slots is a direction with an empty scalar slot only if the averaging is done in one frame. In another frame the averaged polarization can acquire a temporal part, and that is a statement about the average and not about the algebra.
+What the pair does not say, and the article is explicit. It does not say that every field satisfies $\mathcal{F}$ in the sense of the *macroscopic* polarization of [Spin Fluid Physics in Biquaternionic Form](spin-fluid-physics-in-biquaternionic-form.html). The polar word's $\hat s$ is one element's spin direction; the fluid's polarization is the average of many, and the average of directions with empty scalar slots is a direction with an empty scalar slot only if the averaging is done in one frame. In another frame the averaged polarization can acquire a temporal part, and that is a statement about the average and not about the algebra.
 
 ### The condition's preservation
 
@@ -240,7 +240,7 @@ $$
 
 which tends to $\tfrac12$ at low speed and to $\gamma$ at high speed. Evaluated: at $\beta_{\mathrm{vel}}=0.01$ the factor is $0.500\,038$, at $0.1$ it is $0.503\,782$, at $0.5$ it is $0.618\,802$ and at $0.9$ it is $1.597\,725$. The factor is a kinematic consequence of composing boosts and belongs to the Lorentz group's structure rather than to the spin's dynamics; the corpus writes it here for completeness and does not use it in the conservation law.
 
-Does not supply: the averaging that turns one element's spin into a fluid's polarization. The polar word's $\hat s$ is one element's direction; the polarization of [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html) is an average, and whether the average preserves the Frenkel condition in every frame is the question that the previous section marks as open.
+Does not supply: the averaging that turns one element's spin into a fluid's polarization. The polar word's $\hat s$ is one element's direction; the polarization of [Spin Fluid Physics in Biquaternionic Form](spin-fluid-physics-in-biquaternionic-form.html) is an average, and whether the average preserves the Frenkel condition in every frame is the question that the previous section marks as open.
 
 ## What Is Established and What Is Interpretation
 
@@ -298,4 +298,4 @@ The honest limits are three. The connection's equation is not derived here; the 
 - L. Rosenfeld, "Sur le tenseur d'impulsion-énergie," *Mémoires de l'Académie Royale de Belgique* 18 (1940) 1–30, for the same improvement in the field-theoretic setting.
 - L. H. Thomas, "The motion of the spinning electron," *Nature* 117 (1926) 514, for the precession factor quoted here.
 - C. Møller, *The Theory of Relativity* (Oxford, 1972), for the spin tensor's transformation properties, which the preservation discussion follows.
-- The companion articles: [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), and [Spin Fluid Mechanics in Biquaternionic Form](spin-fluid-mechanics-in-biquaternionic-form.html).
+- The companion articles: [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), and [Spin Fluid Physics in Biquaternionic Form](spin-fluid-physics-in-biquaternionic-form.html).

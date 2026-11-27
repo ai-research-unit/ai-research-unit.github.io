@@ -587,7 +587,7 @@ The density $\tilde{\mathcal F}$ is not the per-particle $\tilde{\mathcal F}_{\P
 
 ## The Lamb-Vector Reading of the Force Law
 
-The force law of this article is a relativistic fact: $\vec f = ϙ(\vec E+\vec v\times\vec B)$ is what the field does to a charge, and the derivation above takes that law as given. A second interpretation of its *form* comes from fluid mechanics, and it belongs next to the first, because the corpus's magnetic-field material explains magnetism as a relativistic effect of the electric field, while the fluid correspondence offers an independent interpretation in which magnetism is vorticity.
+The force law of this article is a relativistic fact: $\vec f = ϙ(\vec E+\vec v\times\vec B)$ is what the field does to a charge, and the derivation above takes that law as given. A second interpretation of its *form* comes from fluid physics, and it belongs next to the first, because the corpus's magnetic-field material explains magnetism as a relativistic effect of the electric field, while the fluid correspondence offers an independent interpretation in which magnetism is vorticity.
 
 The bridge is the **Lamb vector** $\vec\ell = \vec\omega\times\vec v_b$ of a fluid of velocity $\vec v_b$ and vorticity $\vec\omega = \vec\nabla_\Phi\times\vec v_b$, introduced in *Maxwell's Equations in the Biquaternionic Formulation*. It is bilinear in a velocity and a curl, and it is the pairing of a flow with its own rotation. The magnetic term of the Lorentz force density, $\vec j\times\vec B$, is bilinear in a current and a curl, and the electric term $\rho_E\vec E$ pairs a charge density with the irrotational part of the field. Under the dictionary
 

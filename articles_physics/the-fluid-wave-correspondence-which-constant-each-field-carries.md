@@ -66,10 +66,10 @@ Each row names a field, the status of a wave equivalent in it, and the reason th
 
 | Field | Wave equivalent | Reason |
 |---|---|---|
-| Irrotational inviscid barotropic fluid mechanics | yes, nonlinear | the reverse map; $V$ from $p_{\mathrm{th}}$ |
+| Irrotational inviscid barotropic fluid physics | yes, nonlinear | the reverse map; $V$ from $p_{\mathrm{th}}$ |
 | The same, pressureless | yes, linear | the free wave equation; no pressure to hold |
 | Irrotational inviscid, pressure not a function of the density | a linear equation with an external potential | the potential is of position, not of the density |
-| rotational fluid mechanics | no | vorticity, two data with no target |
+| rotational fluid physics | no | vorticity, two data with no target |
 | Viscous flow, Navier–Stokes | no wave; a diffusion equation in $1$D | dissipation has no action |
 | Baroclinic flow | no | the state needs two variables |
 | Geophysical flows, shallow water | no; KdV in a limit | rotational, baroclinic, weakly nonlinear |
@@ -84,7 +84,7 @@ The first ten rows are fluids that carry a fluid equation as their fundamental l
 
 ## The Reasons
 
-**rotational fluid mechanics has no wave equivalent because the vorticity has no target.** The Helmholtz decomposition splits the velocity into a gradient and a curl, and the curl's two independent components are data that a scalar wave function cannot hold. A fluid with vorticity conserves and amplifies a quantity that the field does not contain.
+**rotational fluid physics has no wave equivalent because the vorticity has no target.** The Helmholtz decomposition splits the velocity into a gradient and a curl, and the curl's two independent components are data that a scalar wave function cannot hold. A fluid with vorticity conserves and amplifies a quantity that the field does not contain.
 
 The Clebsch pair supplies the two missing functions, and the wave function has exactly two and spends them on the modulus and the phase of the same flow. A rotational flow is therefore representable and unassignable at once: the pair exists and there is nowhere to put it. The same count is what makes the spin-half fluid possible, because a bispinor carries four factors and the velocity's frame is one of them; the three functions are then carried by a factor rather than by two potentials, and whether that leaves the vorticity of rank two is the question the Clebsch article states and does not answer. That is the content of [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html), and it is why the rotational row of the table is a row about scalars.
 
@@ -124,11 +124,11 @@ A fluid equation can be linearised, and when it is, the linear equation is eithe
 
 ## What This Means for the Block
 
-**The fluid layer is a reading of the field, not a model of a fluid.** The block's title says fluid mechanics because its variables are a fluid's, and the previous five articles have measured how far that vocabulary reaches. It reaches exactly as far as the field's data reach, and it stops where the pressure, the vorticity and the viscosity begin.
+**The fluid layer is a reading of the field, not a model of a fluid.** The block's title says fluid physics because its variables are a fluid's, and the previous five articles have measured how far that vocabulary reaches. It reaches exactly as far as the field's data reach, and it stops where the pressure, the vorticity and the viscosity begin.
 
 [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html) denies that the reading is a superfluid and denies that it is a linear wave equivalent. The two denials are the two halves of this article's conclusion: the reading is not a superfluid because a superfluid's fluid is derived from an order parameter, and it is not a wave equivalent because the wave equation comes first. The block's order is the reverse of the order that would make either denial a problem.
 
-The vocabulary of circulation, vorticity and spin can be borrowed from fluid mechanics, because those are the variables the algebra supplies. The vocabulary of pressure, temperature and dissipation cannot, because those are variables the algebra does not supply. The block borrows the first and not the second, and this article is the statement of why the line falls where it does.
+The vocabulary of circulation, vorticity and spin can be borrowed from fluid physics, because those are the variables the algebra supplies. The vocabulary of pressure, temperature and dissipation cannot, because those are variables the algebra does not supply. The block borrows the first and not the second, and this article is the statement of why the line falls where it does.
 
 ## What Is Established and What Is Interpretation
 

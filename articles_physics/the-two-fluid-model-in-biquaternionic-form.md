@@ -14,7 +14,7 @@ $$
 
 and the whole of the model is the statement that they are two, that only one of them carries the entropy current of [The Local Entropy Current](the-local-entropy-current.html), and that they exchange momentum.
 
-The condensation is what makes the split necessary. The polar form of [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html) describes a state with one flow and one rotor; a thermal state has, in addition, the excitations that the thermal circle supports, and those excitations carry the entropy and obey the dissipative equations. The two-fluid model is therefore not a new theory but the statement that the field's state has two pieces whose fluid mechanics differ, and the article's job is to write the two pieces and their coupling in the corpus's letters.
+The condensation is what makes the split necessary. The polar form of [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html) describes a state with one flow and one rotor; a thermal state has, in addition, the excitations that the thermal circle supports, and those excitations carry the entropy and obey the dissipative equations. The two-fluid model is therefore not a new theory but the statement that the field's state has two pieces whose fluid physics differ, and the article's job is to write the two pieces and their coupling in the corpus's letters.
 
 The zero-temperature limit is the article's check. At $T\to0$ the normal density vanishes, the entropy density vanishes with it, the normal flow becomes undefined because there is nothing to carry it, and the equations reduce exactly to the polar-form article's. That limit is shown explicitly and in full, because a two-fluid model that does not reduce to the one-fluid model is not a model of the same substance.
 
@@ -236,7 +236,7 @@ Fourth, the entropy current. $\tilde J_{\Phi,\mathrm{ent}}\to0$, the second law 
 
 **The limit is exact in the densities and singular in the flow, and the singularity is physical.** The normal velocity is undefined at $T=0$ because there is nothing that moves; a reader who insists on a value is asking for the velocity of an absence. The polar-form article has one flow, and the two-fluid model's second flow does not tend to it — it ceases to exist, which is a stronger and correct statement.
 
-The other end of the range, $x_{\mathrm{sup}}\to0$, is the ordinary fluid. There the condensate's density vanishes, the friction vanishes with the product, the phase coupling has no condensate to couple to, and the equations are the single-fluid dissipative equations of [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html). Both ends are limits of the same two-fluid equations, which is the check that the model interpolates and does not merely add.
+The other end of the range, $x_{\mathrm{sup}}\to0$, is the ordinary fluid. There the condensate's density vanishes, the friction vanishes with the product, the phase coupling has no condensate to couple to, and the equations are the single-fluid dissipative equations of [Causal Dissipative Fluid Physics in Biquaternionic Form](causal-dissipative-fluid-physics-in-biquaternionic-form.html). Both ends are limits of the same two-fluid equations, which is the check that the model interpolates and does not merely add.
 
 A table of the entropy density against the normal fraction, with the illustrative law $s_{\mathrm{ent}}=s_{0}\,x_{\mathrm{nrm}}^{2/3}$, which is the behaviour of a non-relativistic excitation gas:
 
@@ -265,7 +265,7 @@ The framework's contribution. The two flows are elements with a common normalisa
 
 Interpretation, and marked as such. That the entropy density is a function of the normal fraction alone, with the illustrative $x_{\mathrm{nrm}}^{2/3}$ of the table, is the corpus's reading of the excitation-gas result and not a derivation. That the phase coupling's frequency is damped by the friction is stated as a structure and not solved.
 
-**Not claimed.** That the split has been derived from the field's equation of motion — it has not. That the friction coefficient has been computed — it has not. That the two-fluid equations have been shown to be causal — that is [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html)'s subject, and the two-fluid model's relaxation structure is not written here. That the model applies to a specific laboratory system — it does not claim to.
+**Not claimed.** That the split has been derived from the field's equation of motion — it has not. That the friction coefficient has been computed — it has not. That the two-fluid equations have been shown to be causal — that is [Causal Dissipative Fluid Physics in Biquaternionic Form](causal-dissipative-fluid-physics-in-biquaternionic-form.html)'s subject, and the two-fluid model's relaxation structure is not written here. That the model applies to a specific laboratory system — it does not claim to.
 
 ## Summary
 
@@ -317,9 +317,9 @@ The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\r
 - W. Israel, "Relativistic Thermodynamics, Thermofield Statistics and Superfluids," *Journal of Non-Equilibrium Thermodynamics* **11** (1986) 295, for the two-fluid thermodynamics in a relativistic setting, which is this article's background.
 - L. D. Landau, "Theory of the superfluidity of helium II," *Physical Review* **60** (1941) 356–358, for the original two-fluid model.
 - L. Tisza, "Transport phenomena in helium II," *Nature* **141** (1938) 913, for the two-fluid hypothesis.
-- I. M. Khalatnikov, *An Introduction to the Theory of Superfluidity* (Benjamin, 1965), for the mutual friction and the normal-component fluid mechanics.
+- I. M. Khalatnikov, *An Introduction to the Theory of Superfluidity* (Benjamin, 1965), for the mutual friction and the normal-component fluid physics.
 - W. F. Vinen, "Mutual friction in a heat current in liquid helium II," *Proceedings of the Royal Society A* **240** (1957) 114–127, for the friction coefficient's experimental form.
 - B. D. Josephson, "Possible new effects in superconductive tunnelling," *Physics Letters* **1** (1962) 251–253, for the phase coupling and the AC frequency.
 - P. W. Anderson, "Considerations on the flow of superfluid helium," *Reviews of Modern Physics* **38** (1966) 298–310, for the Josephson relation in the neutral superfluid.
-- D. T. Son, "Hydrodynamics of relativistic systems with broken continuous symmetries," *International Journal of Modern Physics A* **16** (2001) 1284–1286, for the relativistic superfluid's fluid mechanics.
-- The companion articles: [The Local Entropy Current](the-local-entropy-current.html), [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html), [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), and [Causal Dissipative Fluid Mechanics in Biquaternionic Form](causal-dissipative-fluid-mechanics-in-biquaternionic-form.html).
+- D. T. Son, "Hydrodynamics of relativistic systems with broken continuous symmetries," *International Journal of Modern Physics A* **16** (2001) 1284–1286, for the relativistic superfluid's fluid physics.
+- The companion articles: [The Local Entropy Current](the-local-entropy-current.html), [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html), [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), and [Causal Dissipative Fluid Physics in Biquaternionic Form](causal-dissipative-fluid-physics-in-biquaternionic-form.html).

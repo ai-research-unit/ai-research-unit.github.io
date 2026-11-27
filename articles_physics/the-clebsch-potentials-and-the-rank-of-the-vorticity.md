@@ -147,7 +147,7 @@ $$
 
 conserved for a barotropic inviscid flow and not for a general one.
 
-For a medium with an orientation the invariant is built from the spin and the vorticity together. The helicity of the spinning fluid is conserved when the spin current's divergence vanishes, and in the relativistic case the corresponding charge is the one the axial current carries. The spin-fluid-mechanics literature states the identification, and it is quoted here as the classical counterpart and not derived, because the derivation needs the spin current's equation, which is [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html).
+For a medium with an orientation the invariant is built from the spin and the vorticity together. The helicity of the spinning fluid is conserved when the spin current's divergence vanishes, and in the relativistic case the corresponding charge is the one the axial current carries. The spin-fluid-physics literature states the identification, and it is quoted here as the classical counterpart and not derived, because the derivation needs the spin current's equation, which is [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html).
 
 **The change from a topological invariant to a differential one is the right expectation and not a loss.** A rank-zero flow has a topological invariant because its velocity is one function with a period; a rank-two flow has a differential invariant because its velocity is three functions with none. The potential flow is special in having a topological charge, and that specialness is why its circulation is a conserved quantity of the flow and not of the medium.
 

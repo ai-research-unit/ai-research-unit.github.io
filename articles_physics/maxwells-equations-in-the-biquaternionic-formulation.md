@@ -419,7 +419,7 @@ The scalar field $S$ has no independent physical meaning. It is an artifact of t
 
 ## The Fluid Form of the Equations
 
-A second interpretation of the same equations, older than the relativistic one and independent of it, comes from fluid mechanics. It is a formal correspondence with a specific provenance, not an alternative derivation, and its limits are stated with it.
+A second interpretation of the same equations, older than the relativistic one and independent of it, comes from fluid physics. It is a formal correspondence with a specific provenance, not an alternative derivation, and its limits are stated with it.
 
 The bridge is the **Lamb vector**. For an incompressible fluid of velocity $\vec v_f$, vorticity $\vec\omega = \vec\nabla_\Phi\times\vec v_f$, pressure $p$ and mass density $\rho_f$ — the fluid density, not the charge density $\rho$ of the electromagnetic sections — the convective acceleration obeys the identity
 

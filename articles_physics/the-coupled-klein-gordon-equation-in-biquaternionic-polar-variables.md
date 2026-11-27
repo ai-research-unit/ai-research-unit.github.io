@@ -255,7 +255,7 @@ and the second term is the field strength conjugated by the field.
 
 **Whether the constant-polarization case is the whole of the chart's reach.** The article uses the fact that a constant polarization factors through the central connection, and it uses the central field as the two-function case. Whether an intermediate case exists — a polarization that varies on a scale slow compared with the phase, so that its derivatives enter at a different order — is the chart's version of a WKB question and is not attempted.
 
-**The operator setting.** The article treats the connection as an external field with a varying profile but keeps the amplitude and the action as the primary objects; the operator setting, in which the equation is a PDE for a field, is the standard quantum-fluid-mechanics problem with a magnetic field. Whether the chart's vorticity statement survives there with $\vec B$ a function, and whether the flux quantization becomes a statement about the field's nodal lines, is not answered here.
+**The operator setting.** The article treats the connection as an external field with a varying profile but keeps the amplitude and the action as the primary objects; the operator setting, in which the equation is a PDE for a field, is the standard quantum-fluid-physics problem with a magnetic field. Whether the chart's vorticity statement survives there with $\vec B$ a function, and whether the flux quantization becomes a statement about the field's nodal lines, is not answered here.
 
 ## Summary
 
