@@ -146,7 +146,7 @@ $$
 =\varepsilon_{k\jmath\ell\zeta}\,\hat s_{\ell}\,v_{\Phi,\zeta}v_{\Phi,\jmath}/c=0,
 $$
 
-because $\varepsilon$ is antisymmetric in the pair $\zeta\jmath$ and $v_{\Phi,\zeta}v_{\Phi,\jmath}$ is symmetric in it. That one line is the Frenkel condition, and it holds for every field with a non-zero flow and every direction $\hat s$: **the condition is not imposed on the field, it is a property of the bivector the word supplies**, and the algebra's contribution is the one-line proof rather than the assertion. In the flow's rest frame the identity reads $\hat s_{t,\imath}=0$: the components whose plane contains the time direction vanish, and there are three of them, the electric part of an antisymmetric array in four dimensions, with the three spatial-plane components left as the spin density.
+because $\varepsilon$ is antisymmetric in the pair $\zeta\jmath$ and $v_{\Phi,\zeta}v_{\Phi,\jmath}$ is symmetric in it. That one line is the Frenkel condition, and it holds for every field whose word carries a rotor and has a non-zero flow, and for every direction $\hat s$: **the condition is not imposed on the field, it is a property of the bivector the word supplies**, and the algebra's contribution is the one-line proof rather than the assertion. In the flow's rest frame the identity reads $\hat s_{t,\imath}=0$: the components whose plane contains the time direction vanish, and there are three of them, the electric part of an antisymmetric array in four dimensions, with the three spatial-plane components left as the spin density.
 
 $$
 \mathrm{Sc}\left(\tilde S_{\Psi}\right)=0
