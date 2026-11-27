@@ -802,7 +802,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-force-content-of-the-su4-model-one-connection-a-nine-dimensional-kernel-and-rank-five.html</loc>
@@ -1257,6 +1257,14 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-spin-one-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-charged-spin-one-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-proca-equation-massive-spin-1-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1297,6 +1305,14 @@
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-one-fluid.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-one-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-path-integral-and-the-proca-equation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1329,15 +1345,19 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-spin-one-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-charged-spin-one-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-connections.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-topologically-massive-connection.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-dirac-object-every-article-on-one-equation.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -1370,6 +1390,14 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-coupled-dirac-equation-in-momentum-space.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-spin-half-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-charged-spin-half-fluid.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -1437,6 +1465,22 @@
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-energy-momentum-tensor.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-path-integral-and-the-dirac-equation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1466,6 +1510,14 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-spin-half-fluid-one-mode-occupies-one-bracket-of-four.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-charged-spin-half-fluid.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -1557,10 +1609,6 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-klein-gordon-object-every-article-on-one-equation.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1594,6 +1642,22 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-coupled-klein-gordon-equation-in-momentum-space.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-spin-zero-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-charged-spin-zero-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-schrodinger-fluid.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-charged-schrodinger-fluid.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -1637,6 +1701,30 @@
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-zero-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-zero-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-schrodinger-fluid.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-schrodinger-fluid.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-nodal-set-and-quantized-circulation.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1666,6 +1754,22 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-spin-zero-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-charged-spin-zero-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-schrodinger-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-charged-schrodinger-fluid.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -1810,10 +1914,6 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-schrodinger-object-every-article-on-one-equation.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -2325,118 +2425,6 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-spin-one-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-charged-spin-one-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-one-fluid.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-one-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-spin-one-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-charged-spin-one-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-spin-half-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-charged-spin-half-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-energy-momentum-tensor.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-spin-half-fluid-one-mode-occupies-one-bracket-of-four.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-charged-spin-half-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-spin-zero-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-charged-spin-zero-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-schrodinger-fluid.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-charged-schrodinger-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-zero-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-zero-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-schrodinger-fluid.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-schrodinger-fluid.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-nodal-set-and-quantized-circulation.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-spin-zero-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-charged-spin-zero-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-schrodinger-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-charged-schrodinger-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-current-algebra.html</loc>
     <lastmod>2026-11-27</lastmod>
   </url>
@@ -2578,7 +2566,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html</loc>
@@ -2978,10 +2966,6 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-proca-object-every-article-on-one-equation.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>

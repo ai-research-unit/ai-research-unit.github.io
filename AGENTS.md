@@ -92,7 +92,7 @@ symbolically (sympy) before being called correct. Keep the script when a display
   **the action precedes the equation everywhere**, because the equation is what its variation gives. A section that
   lists an equation above the Lagrangian that produces it contradicts the block above it.
 - **The six rungs, applied inside every spin section, in this fixed order:** `#### The content` (carriers, matrices,
-  counts) · `The action` · `The field equation and its solutions` · `The fluid's equations and its solutions` ·
+  counts) · `The action` · `The field equation and its solutions` · `The fluid's equations and their solutions` ·
   `The quantum apparatus` (path integral, Fourier transform, canonical quantisation) · `The applications`
   (the physics done with the equation: atoms, scattering, condensates, anomalies), plus `Neighbouring objects`
   where occupied. Same names everywhere — a reader who knows the ladder finds the same rung in the same place in
@@ -107,6 +107,14 @@ symbolically (sympy) before being called correct. Keep the script when a display
   Do not "tidy" an empty rung away: the emptiness is the information. Sections outside the spin bands are not
   laddered — the Action category is the chain itself, read downwards, and banding it would put a rung inside
   itself.
+- **The fluid articles live in the spin bands, not in the fluid category.** Every article about one carrier's fluid —
+  its Lagrangian in the fluid's own variables, its fluid equations, its solutions (stress tensor, nodal set,
+  energy-momentum tensor), its transform of a mode — sits in the band of the corresponding spin section in
+  *Biquaternion Universe Relativistic Quantum Theory*: under `The action`, `The fluid's equations and their solutions`,
+  `The quantum apparatus` respectively. The spin-specific sections of *Relativistic Quantum Fluid Physics* were
+  emptied by this rule and removed; that category keeps only what holds at no particular spin — the framework article
+  and the criterion, the classical fluid layer, and the algebra of the reading. Do not re-open a per-spin section
+  there.
 - `####` is the menu's topic band (`assets/css/article.css`), so banding needs no CSS. `menu_sections()` in `build.py`
   splits on `##` only, so bands are invisible to the generated overview and the sitemap. **No build change is needed.**
 - **A duplicate entry in a menu is a defect no link checker can see** (both copies resolve). Check for it after any

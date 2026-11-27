@@ -84,4 +84,3 @@ Four sectors, four answers. The electromagnetic sector is carried exactly, the e
 
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html), for the four sectors assembled in one expression.
 - [The Quantisation Hub: The Sixteen Articles That Import the Promotion](the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html), for the column the table marks absent in all four rows.
-- [The Biquaternion Object Hubs](the-klein-gordon-object-every-article-on-one-equation.html), for the same articles reached from their objects.
