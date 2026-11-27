@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit Action: Is the General Category General? — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Review, then applied — §9 is the record of the editorial pass. No article was modified at the time of writing; the actions of §§4–5…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-action-is-the-general-category-general"><strong>Audit Action: Is the General Category General?</strong></h1>
+<p><em>Status of this file.</em> <strong>Review, then applied — §9 is the record of the editorial pass.</strong> No article was
+modified at the time of writing; the actions of §§4–5 were executed afterwards, one row at a time, and §9 states
+which row was executed as recommended, which was executed differently and why, and what the category counts after
+the pass. The audit covers the 68 articles of
+<code>## Biquaternion Universe Action</code> in <code>physics.md</code>, read in the seven sections of the menu. Every verdict is
+read from an article's scope sentence and from the carrier symbols in its displayed results; every quotation is
+cited by file and line. The audit does not check numerical correctness — the referee audits do that — and it does
+not re-derive the physics. It checks one thing: <strong>whether a result that the category presents as general is
+actually readable at every rung.</strong></p>
+<p><em>What the file is for.</em> It states the test, applies it to all 68 articles, names the eight articles that need an
+action beyond a scope sentence — three rewrites, three moves, two record updates — and the eight that need a scope
+sentence, identifies the three thermal articles that need the rung dictionary, and proposes the dictionary itself:
+the one new piece of apparatus that would stop the scalar default from returning.</p>
+<p><em>The reader's contract, in five lines.</em></p>
+<ol>
+<li><strong>The test is substitution, not intention.</strong> A result is general when it still parses after the carrier is
+   replaced by a Proca field and by an $\mathrm{SU}(4)$ matrix field. An author's intention to be general is not
+   evidence.</li>
+<li><strong>An example is not a failure; a general slot filled by an example is.</strong> A general article may work the
+   scalar case, provided the slot is not the one the category presents as general. The defect is the <em>slot</em>, not
+   the example and not the labelling.</li>
+<li><strong>Conditional generality is acceptable.</strong> A tool that applies to every gauge connection, every spin-carrying
+   fluid, or every theory in two dimensions is general over a declared class. The condition must be in the first
+   paragraph and in the section title.</li>
+<li><strong>A move is preferred to a rewrite when the article is an instance by nature.</strong> A one-rung model is not made
+   general by adding a paragraph; it is made honest by living in its rung's band.</li>
+<li><strong>The audit edits nothing.</strong> It names the file, the line, the verdict and the action, so that a later pass can
+   execute one row at a time.</li>
+</ol>
+<h2 id="1-the-claim-under-test">1. The Claim Under Test</h2>
+<p>The category's menu states its own contract in three places, and the audit takes those three sentences as the
+standard.</p>
+<ul>
+<li><strong>The chain is carrier-independent.</strong> <code>physics.md:554</code>: <em>"The chain is stated at no particular group so that it
+  specialises to the $\mathrm{SU}(4)$ instance below and not away from it."</em></li>
+<li><strong>The thermal closure is stated once and instanced per band.</strong> <code>physics.md:695</code>: <em>"the closure of a fluid into a
+  substance, stated once and applied in each band's fluid slot."</em> And <code>physics.md:707</code>: <em>"The band's slot follows
+  its fluid slot and carries the instance."</em></li>
+<li><strong>The quantum continuation carries no carrier of its own.</strong> <code>physics.md:545</code>: <em>"It carries no carrier of its
+  own; the six canonical quantisations sit in the band of the field each one quantises."</em></li>
+</ul>
+<p>The five rungs are fixed by <em>Five Steps from a Lagrangian to Fluid Equations</em>, whose five-by-five matrix is the
+category's gold standard:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>field</th>
+<th>action order</th>
+<th>polar word</th>
+<th>fluid output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger</td>
+<td>central scalar, first order</td>
+<td>1</td>
+<td>$\varrho e^{i\theta}\varepsilon e_t$</td>
+<td>Euler with the quantum force</td>
+</tr>
+<tr>
+<td>Klein–Gordon</td>
+<td>central scalar</td>
+<td>2</td>
+<td>$\varrho e^{i\theta}\varepsilon e_t$</td>
+<td>Euler with $\gamma^{-1}$</td>
+</tr>
+<tr>
+<td>Dirac</td>
+<td>spinor module</td>
+<td>1</td>
+<td>$\varrho e^{i\theta}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>the spin fluid's acceleration</td>
+</tr>
+<tr>
+<td>Proca</td>
+<td>vector</td>
+<td>2</td>
+<td>$\varepsilon i\varrho\tilde U_{\Psi,\mathrm b}$</td>
+<td>Euler, projected</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>matrix</td>
+<td>2</td>
+<td>$U_{\mathrm{frm}}PU_{\mathrm{frm}}^{\dagger}$</td>
+<td>the momentum balance</td>
+</tr>
+</tbody>
+</table></div>
+<p>The matrix's source is <code>articles_physics/five-steps-from-a-lagrangian-to-fluid-equations.md:171-183</code>. Read down a
+column, it is one rung's derivation; read across a row, it is one step at five rungs. <strong>A general article in this
+category should be readable as a row of that matrix.</strong> That is the test.</p>
+<h2 id="2-the-verdict-scale">2. The Verdict Scale</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>code</th>
+<th>meaning</th>
+<th>what it looks like</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>U</strong></td>
+<td>universal</td>
+<td>no carrier in the stated result; examples are labelled</td>
+<td>none</td>
+</tr>
+<tr>
+<td><strong>U1</strong></td>
+<td>universal with one worked carrier</td>
+<td>the general statement is carrier-free, but the only computed case is scalar, spinor or electromagnetic</td>
+<td>add a scope sentence and a pointer to the other rungs</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>conditional, declared</td>
+<td>general over a named class: gauge connections, spin-carrying fluids, one-mode truncations, two dimensions</td>
+<td>keep; ensure the condition is in the first paragraph</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>scalar-bound</td>
+<td>a general slot whose working object is the central scalar (or its non-relativistic reduction), while the category presents the slot as general and downstream general articles use it. The article may say so; the defect is the slot, not the concealment</td>
+<td>rewrite in place, or move and write a new general article</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td>instance</td>
+<td>one rung or one model by design; it says so</td>
+<td>move to the rung's band, or label the section as an instance section</td>
+</tr>
+<tr>
+<td><strong>R</strong></td>
+<td>record</td>
+<td>a status, ledger or index article; not a step of the chain</td>
+<td>move internal, or update to the current section</td>
+</tr>
+<tr>
+<td><strong>X</strong></td>
+<td>cross-cutting</td>
+<td>an essay, prohibition or external programme; not a step</td>
+<td>keep; place in <em>Other aspects</em> if it is not a step</td>
+</tr>
+</tbody>
+</table></div>
+<p>The audit is deliberately asymmetric: <strong>C is not a defect, and U1 is not a defect.</strong> The category needs
+conditional tools, and every general article needs a first worked case. The defects are <strong>S</strong> (a carrier-specific
+construction in a general slot), <strong>I</strong> (an instance presented in a general section) and <strong>R</strong> (a record presented
+as a step).</p>
+<h2 id="3-the-verdict-table">3. The Verdict Table</h2>
+<p>The table is the audit's body. The section headings are the menu's seven sections. The evidence column quotes the
+carrier sentence or names the condition; <code>—</code> means the stated result contains no carrier.</p>
+<h3 id="31-the-lagrangian-5-articles">3.1 The Lagrangian (5 articles)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>verdict</th>
+<th>evidence</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><em>The Invariant Density</em></td>
+<td><strong>U</strong></td>
+<td>the three requirements — cyclicity, reality, positivity — are pairing-level; the $2\times2$ trace and the element pairing are one functional; the trace at the matrix rung is stated</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2</td>
+<td><em>The Relativistic Particle and the Stationary-Action Principle</em></td>
+<td><strong>U</strong></td>
+<td>the scope is relativistic, and the general element gives four coupled equations (<code>:111</code>); the non-relativistic action is explicitly elsewhere</td>
+<td>—</td>
+</tr>
+<tr>
+<td>3</td>
+<td><em>Hamiltonian Field Theory</em></td>
+<td><strong>S</strong></td>
+<td><code>hamiltonian-field-theory-in-biquaternionic-form.md:5</code>: <em>"for the field the corpus actually uses — the central scalar field of the Klein–Gordon articles"</em>; the regular Legendre transform is true only for the scalar; the Dirac and Maxwell constraints are named as the contrast, but their Hamiltonians are not constructed</td>
+<td><strong>rewrite</strong> (§4.1)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><em>The Inverse Problem: Helmholtz's Conditions</em></td>
+<td><strong>U</strong></td>
+<td>the criterion is a property of the equation, not of the carrier; the damped oscillator is an example</td>
+<td>—</td>
+</tr>
+<tr>
+<td>5</td>
+<td><em>The Dirac–Bergmann Algorithm</em></td>
+<td><strong>U</strong></td>
+<td>the count $N_{\mathrm{dof}}=(N_{\mathrm{phase}}-2f-s)/2$ is tabulated for the scalar, Maxwell, Proca, Dirac and primordial rungs; Proca's mass converts a first-class pair into a second-class one</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="32-from-the-action-to-the-field-equation-9-articles">3.2 From the Action to the Field Equation (9 articles)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>verdict</th>
+<th>evidence</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td><em>Noether's Theorem</em></td>
+<td><strong>U1</strong></td>
+<td>the theorem is general; the worked cases are the central phase, the Dirac field and Maxwell; Proca and the matrix trace current are not worked</td>
+<td>add a five-rung pointer row</td>
+</tr>
+<tr>
+<td>7</td>
+<td><em>Stress–Energy, Conservation Laws and the Field Action</em></td>
+<td><strong>U1</strong></td>
+<td>the canonical tensor is general; the worked cases are the scalar and the electromagnetic field</td>
+<td>add a pointer table to the spinor, Proca and matrix tensors</td>
+</tr>
+<tr>
+<td>8</td>
+<td><em>Belinfante–Rosenfeld</em></td>
+<td><strong>U</strong></td>
+<td>the antisymmetric part is the divergence of the spin density; the spin fluid is named as the class that keeps it</td>
+<td>—</td>
+</tr>
+<tr>
+<td>9</td>
+<td><em>The Minimal Coupling</em></td>
+<td><strong>C</strong></td>
+<td>condition: a global phase symmetry. The article makes it local; it does not claim a gauge symmetry where none exists</td>
+<td>keep; the condition is stated</td>
+</tr>
+<tr>
+<td>10</td>
+<td><em>The Covariant Derivative and Connection</em></td>
+<td><strong>C</strong></td>
+<td>condition: a local symmetry</td>
+<td>keep</td>
+</tr>
+<tr>
+<td>11</td>
+<td><em>Connection Curvature and the Bianchi Identity</em></td>
+<td><strong>C</strong></td>
+<td>condition: a connection</td>
+<td>keep</td>
+</tr>
+<tr>
+<td>12</td>
+<td><em>Non-Abelian Connections</em></td>
+<td><strong>C</strong></td>
+<td>condition: a non-abelian local symmetry</td>
+<td>keep</td>
+</tr>
+<tr>
+<td>13</td>
+<td><em>The Yang–Mills Equation</em></td>
+<td><strong>C</strong></td>
+<td>condition: a connection; the trace pairing is chosen for cyclicity</td>
+<td>keep</td>
+</tr>
+<tr>
+<td>14</td>
+<td><em>Particle Spins: Three Carriers</em></td>
+<td><strong>U</strong></td>
+<td>the three carriers are the algebra's vector part, ideal and centre — not three rungs; the classification is algebra-level</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="33-from-the-field-equation-to-the-fluid-4-articles">3.3 From the Field Equation to the Fluid (4 articles)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>verdict</th>
+<th>evidence</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15</td>
+<td><em>Criterion for a Fluid Equation</em></td>
+<td><strong>U</strong></td>
+<td>the test is one polar coordinate's Euler–Lagrange equation; the count and the rank condition are stated for the five rungs</td>
+<td>—</td>
+</tr>
+<tr>
+<td>16</td>
+<td><em>Five Steps from a Lagrangian to Fluid Equations</em></td>
+<td><strong>U</strong></td>
+<td>the five-by-five matrix is explicit; the scalar, spinor, vector and matrix columns are all filled</td>
+<td>—</td>
+</tr>
+<tr>
+<td>17</td>
+<td><em>The Spare Derivative in the Polar Chart</em></td>
+<td><strong>U</strong></td>
+<td>the manufacturing is a differentiation, a projection or an algebraic derivative, according to the rung</td>
+<td>—</td>
+</tr>
+<tr>
+<td>18</td>
+<td><em>Base-Valued versus Internal Flow Velocity</em></td>
+<td><strong>U</strong></td>
+<td>the discriminator is where the velocity lives, not the group; all five rungs are sorted</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="34-from-the-fluid-equations-to-thermodynamics-equations-20-articles">3.4 From the Fluid Equations to Thermodynamics Equations (20 articles)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>verdict</th>
+<th>evidence</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>19</td>
+<td><em>The Partition Function</em></td>
+<td><strong>U</strong></td>
+<td>the Hermitian Hamiltonian and the scalar-part trace are algebra-level; the non-Hermitian extension is a stated boundary</td>
+<td>—</td>
+</tr>
+<tr>
+<td>20</td>
+<td><em>The Free-Energy Functional</em></td>
+<td><strong>U1</strong></td>
+<td>the Legendre transform is general; the order parameter is the scalar amplitude $\varrho$, <code>the-free-energy-functional-at-finite-temperature.md:33</code></td>
+<td>add a sentence for a matrix order parameter and a pointer to the matrix effective potential</td>
+</tr>
+<tr>
+<td>21</td>
+<td><em>Quantum Thermodynamics</em></td>
+<td><strong>U</strong></td>
+<td>the Gibbs state and the functionals are stated for a density operator; the two-level case is the algebra's finite model</td>
+<td>—</td>
+</tr>
+<tr>
+<td>22</td>
+<td><em>The Matsubara Thermal Formalism</em></td>
+<td><strong>U</strong></td>
+<td>the construction lives in the material sector and does not depend on the field's spin</td>
+<td>—</td>
+</tr>
+<tr>
+<td>23</td>
+<td><em>Equilibrium Partition Function in a Moving Frame</em></td>
+<td><strong>U</strong></td>
+<td>the boost is a change of frame; the rest-frame article is the special case</td>
+<td>—</td>
+</tr>
+<tr>
+<td>24</td>
+<td><em>The Schwinger–Keldysh Formalism</em></td>
+<td><strong>U</strong></td>
+<td>the closed-time-path contour and the doubled field are carrier-free</td>
+<td>—</td>
+</tr>
+<tr>
+<td>25</td>
+<td><em>The Discrete Lattice and the Thermal Circle</em></td>
+<td><strong>X</strong></td>
+<td>a comparison of two discreteness disciplines, not a step of the closure</td>
+<td>keep; optional move to <em>Other aspects</em></td>
+</tr>
+<tr>
+<td>26</td>
+<td><em>The Wigner Function</em></td>
+<td><strong>S</strong></td>
+<td><code>the-wigner-function-in-biquaternionic-form.md:24</code>: <em>"For a complex-valued field $\Xi$ on $\mathbb{R}^{3}$ — the central case of the corpus's field, in which the vector part is zero"</em>; the spin and matrix Wigner objects are not defined</td>
+<td><strong>rewrite</strong> (§4.3)</td>
+</tr>
+<tr>
+<td>27</td>
+<td><em>Relativistic Wigner Function and Quantum Kinetics</em></td>
+<td><strong>S</strong></td>
+<td><code>relativistic-wigner-function-and-quantum-kinetics.md:17</code>: <em>"the Hamiltonian of the scalar field's non-relativistic reduction"</em>; the title says relativistic, the body is the non-relativistic scalar expansion</td>
+<td><strong>retitle and move</strong>, or rewrite the relativistic case (§4.3)</td>
+</tr>
+<tr>
+<td>28</td>
+<td><em>The Local Thermal State of a Fluid</em></td>
+<td><strong>C</strong></td>
+<td>the article is honest: <code>the-local-thermal-state-of-a-fluid.md:224</code> says the triple is complete <em>"for a one-component fluid"</em> and <em>"a fluid with several conserved charges needs one density per charge"</em>; the condition is one-component</td>
+<td>keep; the section needs the rung dictionary (§4.2)</td>
+</tr>
+<tr>
+<td>29</td>
+<td><em>The Chemical Potential Is the Phase's Frequency</em></td>
+<td><strong>U1</strong></td>
+<td>the identification is general for a single central phase; the claim that the state has three independent fields is the one-component count (<code>the-chemical-potential-is-the-phases-frequency.md:5</code>)</td>
+<td>add the multi-component scope; the matrix rung has several potentials</td>
+</tr>
+<tr>
+<td>30</td>
+<td><em>The Equation of State</em></td>
+<td><strong>C</strong></td>
+<td><code>the-equation-of-state-in-biquaternion-form.md:31</code>: <em>"For a one-component fluid the pair $(\rho_{\mathrm{num}},\beta)$ specifies the state"</em>; the condition is declared</td>
+<td>keep; add the multi-component pointer</td>
+</tr>
+<tr>
+<td>31</td>
+<td><em>The Local Entropy Current</em></td>
+<td><strong>U</strong></td>
+<td>the current is a fluid current; the Hermiticity declaration is carrier-free</td>
+<td>—</td>
+</tr>
+<tr>
+<td>32</td>
+<td><em>Covariant Local Equilibrium and Tolman Temperature</em></td>
+<td><strong>U</strong></td>
+<td>a transcription of the rigidity condition; the velocity is an element with a low index</td>
+<td>—</td>
+</tr>
+<tr>
+<td>33</td>
+<td><em>The Closed-Time-Path Action</em></td>
+<td><strong>U</strong></td>
+<td>the doubled field and the influence functional are carrier-free</td>
+<td>—</td>
+</tr>
+<tr>
+<td>34</td>
+<td><em>Causal Dissipative Fluid Physics</em></td>
+<td><strong>U</strong></td>
+<td>Israel–Stewart is a general fluid theory; the article says it is a transcription</td>
+<td>—</td>
+</tr>
+<tr>
+<td>35</td>
+<td><em>Spin Fluid Physics</em></td>
+<td><strong>C</strong></td>
+<td>condition: a fluid whose elements carry spin; the spin element is the rotor's, i.e. the spin-half carrier (<code>:22</code>)</td>
+<td>keep; add a sentence that the Proca spin is a separate representation</td>
+</tr>
+<tr>
+<td>36</td>
+<td><em>Spin Conservation and the Frenkel Condition</em></td>
+<td><strong>C</strong></td>
+<td>the derivation is the Dirac rotor's equation; the article says it does not supply the spin's value or gyromagnetic ratio</td>
+<td>keep with a banner, or move to the spin-half band with a cross-link</td>
+</tr>
+<tr>
+<td>37</td>
+<td><em>The Two-Fluid Model</em></td>
+<td><strong>I</strong></td>
+<td>the model is the scalar condensate: <em>"The polar form of The Klein–Gordon Equation ... describes a state with one flow and one rotor"</em> (<code>:17</code>); <em>"There is one field $\tilde\Xi$"</em> (<code>:39</code>)</td>
+<td><strong>move</strong> to the KG band or the non-relativistic/condensed-matter category; if kept, retitle as the scalar condensate</td>
+</tr>
+<tr>
+<td>38</td>
+<td><em>The Thermodynamics of a Quantum Fluid: Status</em></td>
+<td><strong>R</strong></td>
+<td><code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.md:3</code>: <em>"The category this article audits is dissolved"</em>; <code>:16</code>: <em>"four of its twenty-two articles"</em>; the current section has 20</td>
+<td><strong>move internal or update</strong> (§4.6)</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="35-from-the-fluid-to-the-force-2-articles">3.5 From the Fluid to the Force (2 articles)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>verdict</th>
+<th>evidence</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>39</td>
+<td><em>Differentiating a First-Order Transport Law</em></td>
+<td><strong>U</strong></td>
+<td>the three kinds of term are a property of a divergence equation; the scope is stated in the first paragraph</td>
+<td>—</td>
+</tr>
+<tr>
+<td>40</td>
+<td><em>A Matrix-Valued Charge Cannot Be Contracted</em></td>
+<td><strong>I</strong></td>
+<td><code>a-matrix-valued-charge-cannot-be-contracted-three-couplings-and-the-inner-derivation.md:5</code>: <em>"the corpus's matrix rung does neither"</em>; <code>:13</code>: <em>"it is the one that carries the matrix-valued case"</em></td>
+<td><strong>move</strong> to <em>Biquaternion Universe Primordial Force</em> beside <em>The Primordial Force Law and the Two Wong Terms</em>, or rename the section as the general block and its matrix instance (§4.5)</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="36-from-the-field-equation-to-the-quantum-field-25-articles">3.6 From the Field Equation to the Quantum Field (25 articles)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>verdict</th>
+<th>evidence</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>41</td>
+<td><em>The Lagrangian and the Second Quantisation</em></td>
+<td><strong>C</strong></td>
+<td>condition: the relativistic one-particle actions; the article names Klein–Gordon, Dirac and Proca, and the connections; the matrix and Schrödinger actions are not in the route table</td>
+<td>add a matrix/Schrödinger row, or declare the bridge's scope to the relativistic field bands</td>
+</tr>
+<tr>
+<td>42</td>
+<td><em>The Quantisation Hub</em></td>
+<td><strong>R</strong></td>
+<td><code>the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.md:13</code> puts the renormalization group in <em>From the Action to the Field Equation</em>; the menu moved it to <em>The Euclidean Reading, the Anomaly and the Index</em></td>
+<td><strong>update</strong> the cross-reference; add a sentence that the section has 25 articles and the sixteen are the import list</td>
+</tr>
+<tr>
+<td>43</td>
+<td><em>The Biquaternion Vacuum</em></td>
+<td><strong>U</strong></td>
+<td>the minimal idempotent is algebra-level</td>
+<td>—</td>
+</tr>
+<tr>
+<td>44</td>
+<td><em>Fock Space and Creation/Annihilation Operators</em></td>
+<td><strong>C</strong></td>
+<td>the algebra hosts exactly one fermionic mode; the article states this as a capacity count, not a carrier choice</td>
+<td>keep; the condition is the finite algebra, not a field</td>
+</tr>
+<tr>
+<td>45</td>
+<td><em>The Grading and Fermion Parity</em></td>
+<td><strong>U</strong></td>
+<td>the grading is an inner automorphism of the algebra</td>
+<td>—</td>
+</tr>
+<tr>
+<td>46</td>
+<td><em>The Superalgebra Reading</em></td>
+<td><strong>U</strong></td>
+<td>the graded commutator and the odd extension are algebra-level</td>
+<td>—</td>
+</tr>
+<tr>
+<td>47</td>
+<td><em>The Hermitian GNS Construction</em></td>
+<td><strong>U</strong></td>
+<td>the state, the GNS data and the Hermitian pairing are algebra-level</td>
+<td>—</td>
+</tr>
+<tr>
+<td>48</td>
+<td><em>Bogoliubov Transformations</em></td>
+<td><strong>U</strong></td>
+<td>the one-mode transformation is inside the algebra; the many-mode case is stated as the coset</td>
+<td>—</td>
+</tr>
+<tr>
+<td>49</td>
+<td><em>The Reeh–Schlieder Theorem</em></td>
+<td><strong>U</strong></td>
+<td>the theorem is standard; the finite algebra realizes the cyclic half and the separating half only for faithful states, and the article says so</td>
+<td>—</td>
+</tr>
+<tr>
+<td>50</td>
+<td><em>The Wick Theorem</em></td>
+<td><strong>U1</strong></td>
+<td>the exact identity is for a single fermionic mode; the standard theorem is transcribed</td>
+<td>add the one-mode scope sentence</td>
+</tr>
+<tr>
+<td>51</td>
+<td><em>The Functional Integral</em></td>
+<td><strong>U1</strong></td>
+<td>the quadratic action is general; the sector factorization is proved for a <em>central</em> kinetic operator; the worked free case is scalar</td>
+<td>add a sentence for the non-central (Proca, matrix) kinetic operator</td>
+</tr>
+<tr>
+<td>52</td>
+<td><em>The Functional Determinant</em></td>
+<td><strong>U</strong></td>
+<td>the determinant is of a module operator; the scalar and fermionic cases are worked</td>
+<td>—</td>
+</tr>
+<tr>
+<td>53</td>
+<td><em>The Generating Functional and the Effective Action</em></td>
+<td><strong>U</strong></td>
+<td>the Legendre transform and the loop expansion are carrier-free</td>
+<td>—</td>
+</tr>
+<tr>
+<td>54</td>
+<td><em>Schwinger–Dyson and Ward–Takahashi</em></td>
+<td><strong>U</strong></td>
+<td>the total-derivative argument is general; the scalar, spinor and connection cases are stated</td>
+<td>—</td>
+</tr>
+<tr>
+<td>55</td>
+<td><em>The S-Matrix</em></td>
+<td><strong>C</strong></td>
+<td><code>the-s-matrix-in-biquaternionic-form.md:17</code>: <em>"Conditional on the one-mode identification of the Fock article"</em>; the field S-matrix is outside $\mathbb{B}$</td>
+<td>keep; add a first-paragraph scope sentence</td>
+</tr>
+<tr>
+<td>56</td>
+<td><em>The LSZ Reduction Formula</em></td>
+<td><strong>U1</strong></td>
+<td>the scalar and spin cases are worked; the matrix amputation is not</td>
+<td>add a sentence for the matrix action</td>
+</tr>
+<tr>
+<td>57</td>
+<td><em>The Spin–Statistics Theorem</em></td>
+<td><strong>U1</strong></td>
+<td>the theorem is general; the algebra's contribution is the one-mode fermionic realization, and the gap is stated</td>
+<td>add a scope sentence</td>
+</tr>
+<tr>
+<td>58</td>
+<td><em>Bosonization</em></td>
+<td><strong>I</strong></td>
+<td><code>bosonization-in-biquaternionic-form.md:5</code>: <em>"fermions in two spacetime dimensions"</em>; <code>:15</code>: <em>"The two-dimensional arena is a restriction"</em>; it is outside the hub's sixteen</td>
+<td><strong>move</strong> to <em>Other aspects</em> or a special-topics list; if kept, retitle with <em>in Two Dimensions</em> and put it after the general objects (§4.4)</td>
+</tr>
+<tr>
+<td>59</td>
+<td><em>The Renormalization Group</em></td>
+<td><strong>U</strong></td>
+<td>the flow is a property of the measure; the scalar quartic and the non-abelian coupling are worked as examples</td>
+<td>—</td>
+</tr>
+<tr>
+<td>60</td>
+<td><em>Interpretation of the Wick Rotation</em></td>
+<td><strong>U</strong></td>
+<td>the change of real slice is a property of the algebra</td>
+<td>—</td>
+</tr>
+<tr>
+<td>61</td>
+<td><em>The Conformal Anomaly</em></td>
+<td><strong>U</strong></td>
+<td>the anomaly is a property of the determinant; the coefficient counts the fibre</td>
+<td>—</td>
+</tr>
+<tr>
+<td>62</td>
+<td><em>The Index Theorem</em></td>
+<td><strong>U</strong></td>
+<td>the index density is the framework's invariant; the abelian and non-abelian cases are worked</td>
+<td>—</td>
+</tr>
+<tr>
+<td>63</td>
+<td><em>BRST Symmetry</em></td>
+<td><strong>C</strong></td>
+<td>condition: a connection with a redundancy; the massive Proca case is the control with no ghost sector</td>
+<td>keep</td>
+</tr>
+<tr>
+<td>64</td>
+<td><em>The Connection Path Integral</em></td>
+<td><strong>C</strong></td>
+<td>condition: a connection; the article says it specializes the functional integral</td>
+<td>keep</td>
+</tr>
+<tr>
+<td>65</td>
+<td><em>Redundancy and the Information in the Orbit</em></td>
+<td><strong>C</strong></td>
+<td>condition: a connection</td>
+<td>keep</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="37-other-aspects-3-articles">3.7 Other aspects (3 articles)</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>verdict</th>
+<th>evidence</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>66</td>
+<td><em>The Spectral Triple of the Biquaternion Algebra</em></td>
+<td><strong>X</strong></td>
+<td>an external programme — non-commutative geometry — not a step of the chain</td>
+<td>keep</td>
+</tr>
+<tr>
+<td>67</td>
+<td><em>The Three Scales: $c$, $\hbar$ and $k_B$</em></td>
+<td><strong>X</strong></td>
+<td>a cross-cutting essay on the shape of the chain</td>
+<td>keep</td>
+</tr>
+<tr>
+<td>68</td>
+<td><em>Ostrogradsky, or Why No Rung Goes Past Two Derivatives</em></td>
+<td><strong>X</strong></td>
+<td>a prohibition the chain obeys, not a step</td>
+<td>keep</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="38-the-distribution">3.8 The distribution</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>verdict</th>
+<th style="text-align: right;">count</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>U</strong></td>
+<td style="text-align: right;">33</td>
+<td>1, 2, 4, 5, 8, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 31, 32, 33, 34, 39, 43, 45, 46, 47, 48, 49, 52, 53, 54, 59, 60, 61, 62</td>
+</tr>
+<tr>
+<td><strong>U1</strong></td>
+<td style="text-align: right;">8</td>
+<td>6, 7, 20, 29, 50, 51, 56, 57</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td style="text-align: right;">15</td>
+<td>9, 10, 11, 12, 13, 28, 30, 35, 36, 41, 44, 55, 63, 64, 65</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td style="text-align: right;">3</td>
+<td>3, 26, 27</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td style="text-align: right;">3</td>
+<td>37, 40, 58</td>
+</tr>
+<tr>
+<td><strong>R</strong></td>
+<td style="text-align: right;">2</td>
+<td>38, 42</td>
+</tr>
+<tr>
+<td><strong>X</strong></td>
+<td style="text-align: right;">4</td>
+<td>25, 66, 67, 68</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Fifty-two articles need no change.</strong> Fifteen are correctly conditional and four are cross-cutting. Eight need
+a scope sentence or a pointer. <strong>Eight need an action beyond a scope sentence</strong>: three rewrites (the scalar-bound
+articles), three moves (the instances), and two record updates (the ledger and the hub).</p>
+<h2 id="4-the-findings">4. The Findings</h2>
+<h3 id="41-the-load-bearing-scalar-hamiltonian-field-theory">4.1 The load-bearing scalar: <em>Hamiltonian Field Theory</em></h3>
+<p>This is the audit's first finding because it is the only one where a carrier restriction propagates into three
+later sections.</p>
+<p><strong>The evidence.</strong> The article opens by restricting itself:</p>
+<blockquote>
+<p><em>"This article performs that transcription for the field the corpus actually uses — the central scalar field of
+the Klein–Gordon articles."</em> — <code>hamiltonian-field-theory-in-biquaternionic-form.md:5</code></p>
+</blockquote>
+<p>The article is not hiding its scope: line 5 states it, and the contrast with the Dirac and Maxwell constraints
+is explicit. The defect is the slot, not the honesty. The menu gives this article to three general sections, and
+the article's title is <em>Hamiltonian Field Theory</em>, not <em>The Scalar Hamiltonian</em>; a reader who arrives from the
+menu has no reason to expect the scalar restriction.</p>
+<p>The restriction is not a passing choice. The conjugate momentum is $\pi=(\partial\xi/\partial r'_t)^{*}$; the
+Legendre transform is <em>"regular"</em>; the phase space is the full space of pairs $(\xi,\pi)$; the density is the
+Hermitian form of a central scalar; the bracket is the bracket of two complex numbers at each point; the sector
+split is the split of one central complex scalar into two real scalars. Every displayed result is the scalar
+case. The article knows the others exist — it names the Dirac second-class constraint and the Maxwell
+first-class constraints — but it does not construct their Hamiltonians, and it says the interesting brackets lie
+beyond the scalar case.</p>
+<p><strong>Why it matters.</strong> The menu says three later sections take this article as given:</p>
+<blockquote>
+<p><em>"gives the conjugate momentum, the regularity of the Legendre transform and the field Poisson bracket, which
+three later sections take as given — the thermal state, the promotion's postulate and the fluid's energy — and
+which none of them derives."</em> — <code>physics.md:584</code></p>
+</blockquote>
+<p>If the article is the scalar case, then those three sections inherit the scalar case. The thermal state's
+"density and flow" are the scalar's; the promotion's postulate is the scalar's canonical bracket; the fluid's
+energy is the scalar's $T_{00}$. The category's claim that the chain specialises to $\mathrm{SU}(4)$ cannot be
+sustained at this slot.</p>
+<p><strong>The substitution test.</strong> Replace the scalar by a Proca field. The conjugate momentum is constrained: the
+Lorenz condition is a second-class constraint, the Legendre transform is not regular, and the Dirac bracket is
+required. Replace it by the $\mathrm{SU}(4)$ matrix field. The momentum is matrix-valued; the Legendre transform
+is on a matrix; the bracket is on a non-commutative algebra; the "sum of three squares" is a trace. The article's
+central claim — <em>"the Legendre transform is regular"</em> — is false at both rungs. It is true only at the scalar
+rung, and the article does not say "at the scalar rung" in the result; it says it in the scope sentence, and then
+the result is used generally.</p>
+<p><strong>Action: rewrite in place.</strong> The rewrite is not a new article. It adds a generic section before the scalar
+work:</p>
+<ol>
+<li><strong>The Legendre transform on a module.</strong> Define the conjugate momentum as the variational derivative of the
+   density with respect to the velocity field, for a field valued in a module over $\mathbb{B}$. State that the
+   transform is regular iff the Hessian is non-degenerate on the module.</li>
+<li><strong>The regularity table.</strong> Scalar: regular. Proca: singular; the Lorenz condition is second class; the Dirac
+   bracket. Dirac: singular; the first-order structure gives a second-class pair. Connection: singular; the Gauss
+   law is first class. $\mathrm{SU}(4)$: the Hessian on the matrix module; the constraint count.</li>
+<li><strong>The bracket on functionals of an element.</strong> The scalar bracket is the first column; the matrix bracket is
+   the commutator; the Proca bracket is the Dirac bracket on the constrained surface.</li>
+<li><strong>Keep the scalar sections as the worked instance</strong>, with a one-line label: <em>"the scalar column of the table."</em></li>
+</ol>
+<p>The rewrite preserves every existing display; it changes the article's claim from "this is the Hamiltonian
+formalism" to "this is the Hamiltonian formalism, and the scalar is its first column." The alternative — move the
+article to the Klein–Gordon band and write a new general article — is more expensive and splits a slot the menu
+says is load-bearing. <strong>Rewrite is the recommendation.</strong></p>
+<h3 id="42-the-thermal-closure-is-one-component">4.2 The thermal closure is one-component</h3>
+<p>This is the audit's systemic finding. The one-component articles are honest about it; the section's promise is
+not.</p>
+<p><strong>The evidence.</strong> <em>The Local Thermal State</em> states the limitation explicitly:</p>
+<blockquote>
+<p><em>"That the triple is the complete local state ... is true of a one-component fluid in local equilibrium and it
+is not a theorem about every fluid; a fluid with several conserved charges needs one density per charge, and
+the article says so rather than generalising."</em> — <code>the-local-thermal-state-of-a-fluid.md:224</code></p>
+</blockquote>
+<p>The density is defined through the scalar polar form:</p>
+<blockquote>
+<p><em>"The polar form of the scalar field gives the density as the coefficient of the temporal slot of the
+current."</em> — <code>the-local-thermal-state-of-a-fluid.md:25</code></p>
+</blockquote>
+<p><em>The Chemical Potential</em> inherits the count:</p>
+<blockquote>
+<p><em>"The chemical potential is not an independent datum, which is why the local thermal state has three
+independent fields and not four."</em> — <code>the-chemical-potential-is-the-phases-frequency.md:5</code></p>
+</blockquote>
+<p><em>The Equation of State</em> states the one-component condition:</p>
+<blockquote>
+<p><em>"For a one-component fluid the pair $(\rho_{\mathrm{num}},\beta)$ specifies the state."</em> —
+<code>the-equation-of-state-in-biquaternion-form.md:31</code></p>
+</blockquote>
+<p><strong>Why it matters.</strong> The category's thermal section is supposed to be <em>"stated once and applied in each band's
+fluid slot"</em> (<code>physics.md:695</code>). But the matrix band's fluid is not a one-component fluid. Its field is
+$\Xi=U_{\mathrm{frm}}PU_{\mathrm{frm}}^{\dagger}$ with four eigenvalues $\rho_1,\dots,\rho_4$ and a
+twelve-parameter frame. Its state is not $(\rho_{\mathrm{num}},\beta)$; it is at least the four densities, the
+frame, and the temperature. Its chemical potential is not one number; the central phase gives one, and the
+$\mathrm{U}(1)^4$ redundancy that commutes with $P$ gives the others. Its pressure is the trace of a matrix
+stress, not a function of one density. The "three fields" count is the scalar's, and the matrix band's thermal
+slot cannot be an instance of it.</p>
+<p>The same is true, less sharply, at the Proca rung: the vector fluid has a density, a flow, and a spin
+polarization. <em>Spin Fluid Physics</em> adds one polarization variable, but its spin element is the Dirac rotor's
+(<code>spin-fluid-physics-in-biquaternionic-form.md:22</code>), and the Proca spin is a different representation. The
+"departures" catalogue is therefore a partial multi-component catalogue: spin (spin-half), two-fluid (scalar
+condensate), Israel–Stewart (any fluid). The matrix rung's frame is not covered.</p>
+<p><strong>The substitution test.</strong> Take the thermal state of a $\mathrm{SU}(4)$ fluid. The density is a matrix; the
+pressure is its trace; the chemical potential is a matrix; the entropy current is still a vector. The article's
+$\Gamma_\beta[\varrho]$ with a scalar $\varrho$ cannot be the effective action of that state. The Legendre
+transform is over a matrix source, and the stationarity condition is a matrix equation. The article's <em>form</em> —
+one functional, whose stationarity is the state and whose value is the pressure — survives; its <em>variables</em> do
+not.</p>
+<p><strong>Action: add a rung dictionary, and decide whether <em>The Local Thermal State</em> or the dictionary carries the
+general definition.</strong> The dictionary is the single new piece of apparatus this audit recommends. It is a table,
+not an article:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>invariant density</th>
+<th>flow</th>
+<th>pressure</th>
+<th>chemical potential</th>
+<th>independent thermal data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger</td>
+<td>$\lVert\tilde\Xi\rVert^{2}$</td>
+<td>$\vec\nabla_\Phi S/m$</td>
+<td>$p(\rho,\beta)$</td>
+<td>$\mu=-\partial_{t'}S$</td>
+<td>$(\rho,\beta)$; one charge</td>
+</tr>
+<tr>
+<td>Klein–Gordon</td>
+<td>$\lVert\tilde\Xi\rVert^{2}$</td>
+<td>$\partial_\imath S/m$</td>
+<td>$p(\rho,\beta)$</td>
+<td>$\mu=-\partial_{t'}S$</td>
+<td>$(\rho,\beta)$; one charge</td>
+</tr>
+<tr>
+<td>Dirac</td>
+<td>$\tilde\Xi^{\dagger}\tilde\Xi$ (a spin density)</td>
+<td>the frame direction</td>
+<td>the trace of the stress</td>
+<td>$\mu$ plus the spin potential</td>
+<td>density, spin polarization, $\beta$</td>
+</tr>
+<tr>
+<td>Proca</td>
+<td>the vector's invariant norm</td>
+<td>$A_\imath/\varrho$</td>
+<td>the trace of the stress</td>
+<td>$\mu$ plus the spin potential</td>
+<td>density, polarization, $\beta$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>the four eigenvalues of $P$</td>
+<td>the internal $\Omega_\imath=U_{\mathrm{frm}}^{\dagger}D_\imath U_{\mathrm{frm}}$</td>
+<td>$\mathrm{Tr}$ of the matrix stress</td>
+<td>a matrix: the central phase plus the $\mathrm{U}(1)^4$ potentials</td>
+<td>four densities, the frame, $\beta$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The counts in the last column are illustrative and should be fixed by the band; the point is that the scalar
+column is the first, not the only one. The dictionary belongs in <em>The Lagrangian</em>, after <em>The Invariant Density</em>,
+because it is the same kind of object: a statement of what the general symbols mean at each rung. Every thermal
+article can then say <em>"the scalar column is worked here; the other columns are in the dictionary."</em></p>
+<p>If the article is to remain the section's opening definition, the rewrite is small: replace <em>"the density is the
+amplitude squared"</em> with <em>"the density is the invariant norm of the band's element"</em>, add the dictionary
+pointer, and keep the one-component sections as the worked column. If the dictionary carries the general
+definition, the article can stay as the one-component column with a pointer. The article's honesty at line 224 is
+the model; the section's comment is what needs the correction.</p>
+<p><strong>The alternative — move the thermal section to the Klein–Gordon band — is not recommended.</strong> The section's
+general results — the free-energy functional, the three tests, the entropy current, the CTP action,
+Israel–Stewart — are genuinely carrier-free. Moving them would lose the closure. The right fix is to make the
+one-component articles declare their column and add the dictionary.</p>
+<h3 id="43-the-kinetic-bridge-is-scalar">4.3 The kinetic bridge is scalar</h3>
+<p>The kinetic bridge is load-bearing: the fluid's quantum pressure is read from the Wigner object's
+$\hbar$-expansion. If the object is scalar, the quantum pressure is scalar.</p>
+<p><strong>The evidence.</strong> <em>The Wigner Function</em> defines the standard function for the central case:</p>
+<blockquote>
+<p><em>"For a complex-valued field $\Xi$ on $\mathbb{R}^{3}$ — the central case of the corpus's field, in which the
+vector part is zero."</em> — <code>the-wigner-function-in-biquaternionic-form.md:24</code></p>
+</blockquote>
+<p>The article is honest about the case: the scalar is named as <em>"the central case"</em>, and the element definition
+that follows is general — $\tilde W_\Xi$ is an element of $\mathbb{B}$. But the standard function, the marginals
+and the closure are the scalar's: the zeroth moment is $\lVert\tilde\Xi\rVert^{2}$ and the first is the current
+times the mass. For a spinor, the Wigner object is a matrix in spin space, and its zeroth moment is the spin
+density matrix, not a scalar density. For the matrix rung, it is a matrix in the algebra, and the marginal is a
+matrix. The article does not define those objects.</p>
+<p><em>Relativistic Wigner Function and Quantum Kinetics</em> has a second problem: its title says relativistic, and its
+body uses the non-relativistic reduction. The body is honest about it; the title is not:</p>
+<blockquote>
+<p><em>"Write the Hamiltonian of the scalar field's non-relativistic reduction as the element built from the
+operator $\hat H=\lvert\hat{\vec p}\rvert^{2}/2m+V(\hat r)$."</em> —
+<code>relativistic-wigner-function-and-quantum-kinetics.md:17</code></p>
+</blockquote>
+<p>The $\hbar$-expansion of the non-relativistic scalar Wigner function is a legitimate article; it is not a
+relativistic Wigner article, and it is not a general kinetic bridge.</p>
+<p><strong>The substitution test.</strong> Take a Dirac field. The Wigner transform is a $4\times4$ matrix (or a $2\times2$
+matrix in the chiral basis); its marginals are the density matrix and the current, and the spin part is a
+separate moment. The scalar definition's <em>"zeroth moment is the density"</em> does not transfer. Take the $\mathrm{SU}(4)$
+matrix field. The Wigner object is a matrix; the marginal is a matrix; the quantum pressure is a trace. The
+scalar bridge cannot produce the matrix fluid's quantum pressure.</p>
+<p><strong>Action.</strong> Two options, in order of preference:</p>
+<ol>
+<li><strong>Rewrite <em>The Wigner Function</em> for a general element.</strong> Define $\tilde W_\Xi$ as the Wigner transform of the
+   band's element, with the internal index left open; take the trace over the internal index for the scalar
+   marginal; state that the spin and matrix cases keep the index. Add the spin case as a worked example. This is
+   a medium rewrite, but it preserves the bridge's slot.</li>
+<li><strong>Retitle and move <em>Relativistic Wigner</em>.</strong> The current article is <em>The $\hbar$ Expansion of the Scalar Wigner
+   Function</em>; it belongs in the non-relativistic category, beside the Wigner article's non-relativistic
+   reduction. If a relativistic Wigner article is wanted, it is a separate article and must use the relativistic
+   Hamiltonian, not $p^{2}/2m+V$.</li>
+</ol>
+<p>The second is the cheaper action and the more honest one. The first is the one that keeps the category's promise.</p>
+<h3 id="44-the-two-dimensional-special-topic-bosonization">4.4 The two-dimensional special topic: <em>Bosonization</em></h3>
+<p><strong>The evidence.</strong> The article is explicit:</p>
+<blockquote>
+<p><em>"Bosonization is the statement that a theory of fermions in two spacetime dimensions is the same theory as a
+theory of bosons."</em> — <code>bosonization-in-biquaternionic-form.md:5</code></p>
+<p><em>"The two-dimensional arena is a restriction, and the framework must be reduced to it."</em> — <code>:15</code></p>
+</blockquote>
+<p>It is also outside the hub's list: the menu's comment says <em>"the hub's eight, one of which the section above
+carries, and bosonization beside them"</em> (<code>physics.md:921</code>). The eight are the objects every later computation
+uses; bosonization is beside them, not among them. The category's own menu already treats it as an appendage.</p>
+<p><strong>Why it matters.</strong> The section <em>The Objects Built on the Ladder</em> is the list of general objects. Bosonization is
+a two-dimensional equivalence between a fermion and a boson; it does not apply to a four-dimensional Proca field,
+and it does not apply to the $\mathrm{SU}(4)$ matrix field. It is a special topic, not a general tool. A reader
+who takes the section's title seriously will expect a tool that works at every rung.</p>
+<p><strong>Action: move.</strong> The natural home is <em>Other aspects</em>, beside <em>The Spectral Triple of the Biquaternion Algebra</em>,
+which is also an external programme. If the corpus wants a special-topics list, this is its first entry. If it
+stays in the quantum section, retitle it <em>Bosonization in Two Dimensions in Biquaternionic Form</em> and put it after
+the general objects, with a one-sentence scope. The move is preferred: the section's title is <em>Objects Built on
+the Ladder</em>, and bosonization is not built on the ladder; it is a duality between two theories.</p>
+<h3 id="45-the-one-rung-instance-in-the-general-force-section-a-matrix-valued-charge">4.5 The one-rung instance in the general force section: <em>A Matrix-Valued Charge</em></h3>
+<p><strong>The evidence.</strong> The article says exactly what it is:</p>
+<blockquote>
+<p><em>"The corpus's matrix rung does neither, and this article's claim is that it cannot: at that rung there is no
+charge to contract, and what appears in place of a contraction is a commutator."</em> —
+<code>a-matrix-valued-charge-cannot-be-contracted-three-couplings-and-the-inner-derivation.md:5</code></p>
+<p><em>"It is one of the two articles in From the Fluid to the Force that state the general form of a force block, and
+it is the one that carries the matrix-valued case."</em> — <code>:13</code></p>
+</blockquote>
+<p>The other article in the section, <em>Differentiating a First-Order Transport Law</em>, is general. This one is the
+$\mathrm{SU}(4)$ instance. The section is therefore a general article plus an instance, presented under a general
+title.</p>
+<p><strong>Why it matters.</strong> The user's test is precisely this: <em>"the tools should apply as well in the case of Proca than
+in the case of SU4."</em> This tool applies only in the case of $\mathrm{SU}(4)$. It is a correct and valuable
+article; it is not a general tool. The section's title <em>From the Fluid to the Force</em> suggests a general force
+block, and the menu's comment says <em>"what a force block owes in inventory"</em> — which is general — but the
+matrix-charge article is the instance that fills one column.</p>
+<p><strong>Action: move, or rename the section.</strong> The cleaner move is to <em>Biquaternion Universe Primordial Force</em>, beside
+<em>The Primordial Force Law and the Two Wong Terms</em>, where the $\mathrm{SU}(4)$ force law already lives. The article
+cites that law (<code>:15</code>), and the primordial category is where the matrix rung's force apparatus belongs. If it
+stays, rename the section <em>The General Force Block and Its Matrix Instance</em> and add a one-line banner to the
+article: <em>"the $\mathrm{SU}(4)$ column; the general block is the companion article."</em> The move is preferred
+because the category's general section should not depend on one rung's representation.</p>
+<h3 id="46-the-historical-ledger-the-thermodynamics-of-a-quantum-fluid-status">4.6 The historical ledger: <em>The Thermodynamics of a Quantum Fluid: Status</em></h3>
+<p><strong>The evidence.</strong> The article is a status record for a category that no longer exists:</p>
+<blockquote>
+<p><em>"The category this article audits is dissolved. Seventeen of its articles are now the section ... in
+Biquaternion Universe Action."</em> — <code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.md:3</code></p>
+<p><em>"four of its twenty-two articles transcribe ... and the remaining eighteen..."</em> — <code>:16</code></p>
+</blockquote>
+<p>The current section has twenty articles, not twenty-two; the "four transcriptions" and "eighteen" are the old
+category's counts; the article itself says <em>"the counts are the record's, not the section's"</em> (<code>:10</code>). It is a
+ledger, not a step of the chain.</p>
+<p><strong>Why it matters.</strong> The category's chain is a sequence of tools; a ledger of a dissolved category is not a tool.
+It is useful as history, and it is honest about being history, but it sits in the published section as if it
+were the closure's final step. A reader who reaches it expecting the status of the <em>current</em> section gets the
+status of a different, larger category.</p>
+<p><strong>Action: move internal, or update.</strong> The clean move is to <code>articles_internal/</code> (not published), where the other
+status notes live. If it stays published, retitle it <em>The Thermodynamics Section: Status of the Derivation</em>,
+update the counts to the current twenty, and change <em>"the category this article audits is dissolved"</em> to <em>"the
+category this article audited is now this section."</em> The first is preferred: the section does not need a
+historical ledger in its chain.</p>
+<h3 id="47-cross-reference-drift-not-a-generality-failure-but-found">4.7 Cross-reference drift (not a generality failure, but found)</h3>
+<p>Three stale references were found while checking scope. They are not verdicts; they are edits.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>where</th>
+<th>says</th>
+<th>should say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.md:13</code></td>
+<td>the renormalization group is in <em>From the Action to the Field Equation</em></td>
+<td>it is in <em>The Euclidean Reading, the Anomaly and the Index</em>; the menu moved it (<code>physics.md</code>, main comment)</td>
+</tr>
+<tr>
+<td><code>the-quantisation-hub...:5</code></td>
+<td><em>"The sixteen articles"</em></td>
+<td>the section has 25 articles; the sixteen are the import list, not the section count. Add one sentence.</td>
+</tr>
+<tr>
+<td><code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.md:3,16</code></td>
+<td>22 articles, 4 transcriptions, 18 framework</td>
+<td>20 articles in the current section; the old counts are the record's</td>
+</tr>
+</tbody>
+</table></div>
+<p>The hub's title is not wrong — the sixteen are a real list — but the reader needs the distinction. The ledger's
+counts are the record's, and the article says so; the problem is that the record is presented as the section's
+status.</p>
+<h3 id="48-what-is-correctly-narrower-and-should-not-be-fixed">4.8 What is correctly narrower, and should not be "fixed"</h3>
+<p>The audit's most important negative finding: <strong>the articles that are narrower than the five rungs are not
+defects.</strong> They are the category's way of handling classes that are genuinely narrower, and they say so.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>articles</th>
+<th>condition</th>
+<th>why it is correct</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>local symmetry</td>
+<td>9–13</td>
+<td>a global symmetry made local</td>
+<td>a scalar without a global phase has no minimal coupling; the article says so</td>
+</tr>
+<tr>
+<td>gauge redundancy</td>
+<td>63–65</td>
+<td>a connection with a redundancy</td>
+<td>Proca has no ghost sector; the massive case is the control</td>
+</tr>
+<tr>
+<td>spin-carrying fluid</td>
+<td>35–36</td>
+<td>a fluid whose elements carry spin</td>
+<td>the spin element is the rotor's; the article says so</td>
+</tr>
+<tr>
+<td>one-mode truncation</td>
+<td>44, 55</td>
+<td>the finite algebra hosts one fermionic mode</td>
+<td>the field-level object is outside $\mathbb{B}$; the articles say so</td>
+</tr>
+<tr>
+<td>one-mode realization</td>
+<td>50, 57</td>
+<td>the algebra's exact computation is the one-mode case</td>
+<td>the theorem is general; the realization is labelled, and a scope sentence is the only action</td>
+</tr>
+</tbody>
+</table></div>
+<p>The failure mode is not "this article is narrower than the category" — the three scalar-bound articles say so
+too. It is "this article is narrower than the category, the category gives it a general slot, and a later general
+article uses it as general." The five classes above are correctly placed; the scalar-bound articles are
+correctly labelled but wrongly slotted.</p>
+<h2 id="5-the-action-list-in-priority-order">5. The Action List, in Priority Order</h2>
+<h3 id="51-actions-by-priority">5.1 Actions by priority</h3>
+<p><strong>The eight actions beyond a scope sentence.</strong> These are the three <strong>S</strong> (rewrite), the three <strong>I</strong> (move) and
+the two <strong>R</strong> (move or update) rows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>priority</th>
+<th>article</th>
+<th>action</th>
+<th>why</th>
+<th>effort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P1</strong></td>
+<td><em>Hamiltonian Field Theory</em></td>
+<td>rewrite in place: generic Legendre transform + regularity table + bracket on a module; scalar as the first column</td>
+<td>load-bearing for three later sections; currently scalar-only</td>
+<td>high</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td><em>The Wigner Function</em></td>
+<td>rewrite for a general element; add the spin case</td>
+<td>the kinetic bridge's marginals are scalar</td>
+<td>medium</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td><em>Relativistic Wigner Function</em></td>
+<td>retitle <em>The $\hbar$ Expansion of the Scalar Wigner Function</em> and move to the non-relativistic category, or rewrite the relativistic case</td>
+<td>the title says relativistic; the body is non-relativistic scalar</td>
+<td>low (move)</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td><em>The Two-Fluid Model</em></td>
+<td>move to the KG band or the non-relativistic/condensed-matter category; if kept, retitle as the scalar condensate</td>
+<td>the model is one scalar field's state, not a general fluid</td>
+<td>low</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td><em>A Matrix-Valued Charge</em></td>
+<td>move to <em>Biquaternion Universe Primordial Force</em> beside <em>The Primordial Force Law and the Two Wong Terms</em></td>
+<td>the article is the $\mathrm{SU}(4)$ column, not a general tool</td>
+<td>low</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td><em>Bosonization</em></td>
+<td>move to <em>Other aspects</em> or a special-topics list; if kept, retitle <em>in Two Dimensions</em> and put it after the general objects</td>
+<td>a 2D duality, not a general object built on the ladder</td>
+<td>low</td>
+</tr>
+<tr>
+<td><strong>P3</strong></td>
+<td><em>The Thermodynamics Ledger</em></td>
+<td>move internal, or update to the current twenty-article section</td>
+<td>a record of a dissolved category, not a step</td>
+<td>low</td>
+</tr>
+<tr>
+<td><strong>P3</strong></td>
+<td><em>The Quantisation Hub</em></td>
+<td>update the RG cross-reference; add the section-count sentence</td>
+<td>stale cross-reference</td>
+<td>low</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three thermal articles at section priority.</strong> These are <strong>C</strong> or <strong>U1</strong> at the article level, but the
+section's promise cannot be kept without them. The action is the rung dictionary plus a scope sentence, not a
+rewrite of each article.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>priority</th>
+<th>article</th>
+<th>action</th>
+<th>why</th>
+<th>effort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P1</strong></td>
+<td><em>The Local Thermal State</em></td>
+<td>keep the one-component article; add the rung dictionary; define the general density by the invariant norm</td>
+<td>the section claims to apply to every band; the matrix band is not one-component</td>
+<td>high</td>
+</tr>
+<tr>
+<td><strong>P1</strong></td>
+<td><em>The Chemical Potential</em></td>
+<td>add the multi-component scope; the matrix rung has several potentials</td>
+<td>inherits the one-component count</td>
+<td>medium</td>
+</tr>
+<tr>
+<td><strong>P1</strong></td>
+<td><em>The Equation of State</em></td>
+<td>keep; add the multi-component pointer</td>
+<td>inherits the one-component pair $(\rho,\beta)$</td>
+<td>low</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="52-scope-sentences-and-pointers-eight-articles">5.2 Scope sentences and pointers (eight articles)</h3>
+<p>These need one sentence at the top and, where useful, one pointer. They are not rewrites. The Chemical Potential
+row also carries the dictionary action of §5.1; for it the sentence is the minimum, not the whole fix.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>sentence to add</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Noether's Theorem</em></td>
+<td><em>"The scalar, Dirac and Maxwell cases are worked; the Proca and matrix currents are the same construction with the trace pairing, and are stated in their bands."</em></td>
+</tr>
+<tr>
+<td><em>Stress–Energy</em></td>
+<td><em>"The scalar and electromagnetic tensors are worked; the spinor, Proca and matrix tensors are in their bands."</em> + a pointer table</td>
+</tr>
+<tr>
+<td><em>The Free-Energy Functional</em></td>
+<td><em>"The order parameter is a scalar amplitude; for a matrix rung it is a matrix and the trace replaces the scalar."</em></td>
+</tr>
+<tr>
+<td><em>The Chemical Potential</em></td>
+<td><em>"The one-component identification is worked; a fluid with several conserved charges has one potential per charge."</em></td>
+</tr>
+<tr>
+<td><em>The Wick Theorem</em></td>
+<td><em>"The exact identity is the one-mode identity; the field-level theorem is standard and transcribed."</em></td>
+</tr>
+<tr>
+<td><em>The Functional Integral</em></td>
+<td><em>"The factorization is proved for a central kinetic operator; for a non-central operator the integral is on the module and the determinant is the module determinant."</em></td>
+</tr>
+<tr>
+<td><em>The LSZ Reduction</em></td>
+<td><em>"The scalar and spin cases are worked; the matrix amputation is the matrix action."</em></td>
+</tr>
+<tr>
+<td><em>The Spin–Statistics Theorem</em></td>
+<td><em>"The theorem is general; the algebra's realization is the one-mode fermionic case."</em></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="53-what-needs-no-action-fifty-two-articles">5.3 What needs no action (fifty-two articles)</h3>
+<p>The 33 <strong>U</strong>, the 15 <strong>C</strong> and the 4 <strong>X</strong>. The list is the table's rows; the point is that the
+field-equation-to-fluid chain — the field equation, the fluid criterion, the five steps, the force block — is
+genuinely general, and the Lagrangian's invariant-density and stationary-action articles are general too. The
+defects are concentrated in one slot of the Lagrangian (the Hamiltonian), in the two continuations (thermal and
+kinetic), and in the appendages (the 2D duality, the matrix instance, the ledger). That is a much better result
+than a category-wide failure, and it should be stated as such.</p>
+<h2 id="6-the-systemic-recommendation-a-rung-dictionary">6. The Systemic Recommendation: A Rung Dictionary</h2>
+<p><strong>The proposal.</strong> Add one table, not one article, to <em>The Lagrangian</em>, after <em>The Invariant Density</em>. Call it
+<em>The Rung Dictionary</em>. It has five columns (the rungs) and rows for the objects every general article uses:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>row</th>
+<th>Schrödinger</th>
+<th>Klein–Gordon</th>
+<th>Dirac</th>
+<th>Proca</th>
+<th>$\mathrm{SU}(4)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the field</td>
+<td>$\tilde\Xi=\varrho e^{i\theta}\varepsilon e_t$</td>
+<td>$\varrho e^{i\theta}\varepsilon e_t$</td>
+<td>$\varrho e^{i\theta}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$\varepsilon i\varrho\tilde U_{\Psi,\mathrm b}$</td>
+<td>$U_{\mathrm{frm}}PU_{\mathrm{frm}}^{\dagger}$</td>
+</tr>
+<tr>
+<td>the invariant density</td>
+<td>$\lVert\tilde\Xi\rVert^{2}$</td>
+<td>$\lVert\tilde\Xi\rVert^{2}$</td>
+<td>$\tilde\Xi^{\dagger}\tilde\Xi$</td>
+<td>the vector norm</td>
+<td>the four eigenvalues of $P$</td>
+</tr>
+<tr>
+<td>the flow</td>
+<td>$\vec\nabla_\Phi S/m$</td>
+<td>$\partial_\imath S/m$</td>
+<td>the frame direction</td>
+<td>$A_\imath/\varrho$</td>
+<td>the internal $\Omega_\imath$</td>
+</tr>
+<tr>
+<td>the conjugate momentum</td>
+<td>$\pi=\partial\mathcal{L}/\partial\dot{\tilde\Xi}$</td>
+<td>the scalar $\pi$</td>
+<td>the first-order bilinear</td>
+<td>the constrained vector momentum</td>
+<td>the matrix momentum</td>
+</tr>
+<tr>
+<td>the Legendre transform</td>
+<td>regular</td>
+<td>regular</td>
+<td>singular (second class)</td>
+<td>singular (second class)</td>
+<td>singular on the constrained surface</td>
+</tr>
+<tr>
+<td>the pressure</td>
+<td>$p(\rho,\beta)$</td>
+<td>$p(\rho,\beta)$</td>
+<td>the trace of the stress</td>
+<td>the trace of the stress</td>
+<td>the trace of the matrix stress</td>
+</tr>
+<tr>
+<td>the chemical potential</td>
+<td>$\mu=-\partial_{t'}S$</td>
+<td>$\mu=-\partial_{t'}S$</td>
+<td>$\mu$ + spin potential</td>
+<td>$\mu$ + spin potential</td>
+<td>a matrix: central phase + $\mathrm{U}(1)^4$</td>
+</tr>
+<tr>
+<td>the thermal data</td>
+<td>$(\rho,\beta)$</td>
+<td>$(\rho,\beta)$</td>
+<td>density, spin, $\beta$</td>
+<td>density, polarization, $\beta$</td>
+<td>four densities, frame, $\beta$</td>
+</tr>
+<tr>
+<td>the kinetic order</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the pairing</td>
+<td>Hermitian</td>
+<td>Hermitian</td>
+<td>the spinor pairing</td>
+<td>the vector pairing</td>
+<td>the trace</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why a dictionary and not a new article.</strong> The category already has the five-by-five matrix in <em>Five Steps</em>
+for the fluid side. The thermal and quantum sides need the same object, and a table is enough. An article would
+repeat the matrix and add prose; the corpus's own style is to state the matrix once and cite it. The dictionary
+is the natural companion to <em>The Invariant Density</em> and <em>Five Steps</em>.</p>
+<p><strong>What it fixes.</strong> Every <strong>U1</strong> article can then say <em>"the scalar column is worked here; the other columns are
+in the dictionary."</em> The <strong>S</strong> articles (Hamiltonian, Wigner) can use the dictionary's rows for the Legendre
+transform and the Wigner marginal. The <strong>C</strong> and <strong>I</strong> articles (spin fluid, Frenkel, two-fluid) can point to the
+column they inhabit. The dictionary does not make the one-component articles general; it makes their scope
+visible and gives the band slots a common target.</p>
+<p><strong>What it does not fix.</strong> The matrix rung's thermal state is still a research problem: the four densities, the
+frame, the matrix chemical potential and the matrix pressure need a dynamics, and the dictionary can only name
+the slots. The audit does not claim the matrix thermodynamics is solved; it claims the category should not say
+it is solved by the one-component articles.</p>
+<h2 id="7-what-this-audit-does-not-claim">7. What This Audit Does Not Claim</h2>
+<ul>
+<li><strong>It does not claim every article must compute every rung.</strong> A general article may work one column. The claim
+  is that the <em>statement</em> must be readable at every rung, and the column must be labelled.</li>
+<li><strong>It does not claim the conditional articles are failures.</strong> The gauge, spin, one-mode-truncation and
+  finite-level articles are the category's correct way of handling narrower classes. They are marked <strong>C</strong>, not
+  <strong>S</strong>; the one-mode <em>realizations</em> are <strong>U1</strong>, with a scope sentence as their only action.</li>
+<li><strong>It does not check the physics.</strong> The numerical and algebraic correctness of the articles is the referee
+  audits' business. This audit reads scope.</li>
+<li><strong>It did not edit.</strong> Every action in §§3–5 is a recommendation, and the file was review only when written.
+  The editorial pass that followed is recorded in §9 and is separable: a reader who disagrees with an execution
+  can read the verdict and the recommendation without it.</li>
+<li><strong>It does not treat the menu's comments as infallible.</strong> Where the menu's comment and the article disagree
+  (the thermal section's "every band" and the article's "one-component"), the audit reports both and recommends
+  the article's honesty be promoted to the section.</li>
+</ul>
+<h2 id="8-verification">8. Verification</h2>
+<p><strong>The count.</strong> 68 articles in seven sections: 5 + 9 + 4 + 20 + 2 + 25 + 3. The article list was extracted from
+<code>physics.md</code> by the menu's <code>&lt;a href&gt;</code> entries and checked against the <code>articles_physics/</code> files; the section
+counts are the menu's.</p>
+<p><strong>The evidence.</strong> Every verdict that rests on a specific scope sentence quotes it with a line number; the
+<strong>C</strong> and <strong>X</strong> verdicts are read from the section's declared condition and title. The quotations were read from
+the files, not from a secondary summary. The key lines are:</p>
+<ul>
+<li><code>hamiltonian-field-theory-in-biquaternionic-form.md:5</code> — the central scalar.</li>
+<li><code>the-local-thermal-state-of-a-fluid.md:25,224</code> — the scalar polar density; the one-component limitation.</li>
+<li><code>the-chemical-potential-is-the-phases-frequency.md:5</code> — the three-field count.</li>
+<li><code>the-equation-of-state-in-biquaternion-form.md:31</code> — the one-component pair.</li>
+<li><code>the-wigner-function-in-biquaternionic-form.md:24</code> — the central case.</li>
+<li><code>relativistic-wigner-function-and-quantum-kinetics.md:17</code> — the non-relativistic scalar reduction.</li>
+<li><code>bosonization-in-biquaternionic-form.md:5,15</code> — two dimensions; the restriction.</li>
+<li><code>a-matrix-valued-charge-cannot-be-contracted-three-couplings-and-the-inner-derivation.md:5,13</code> — the matrix
+  rung.</li>
+<li><code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.md:3,16</code> — the dissolved category; the counts.</li>
+<li><code>the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.md:13</code> — the stale RG location.</li>
+<li><code>the-lagrangian-and-the-second-quantisation.md:5</code> — the KG/Dirac/Proca scope.</li>
+</ul>
+<p><strong>The menu's promises.</strong> <code>physics.md:545</code> (no carrier of its own), <code>:554</code> (no particular group), <code>:695</code> (stated
+once, applied per band), <code>:707</code> (the band's slot carries the instance).</p>
+<p><strong>The method.</strong> For each article: read the introduction and the scope paragraph; search the displayed results for
+the carrier symbols (<code>\xi</code>, <code>\varrho</code>, <code>\tilde\Xi</code>, <code>\tilde U</code>, <code>P</code>, <code>U_{\mathrm{frm}}</code>, <code>\mathrm{SU}(4)</code>,
+<code>\mathrm{Proca}</code>, <code>\mathrm{Dirac}</code>); apply the substitution test; assign the code. The codes are in §2. The
+table is in §3. The actions are in §4–§5.</p>
+<p><strong>The result, in one line.</strong> The field-equation-to-fluid chain is general; the Hamiltonian slot is scalar; the
+thermal continuation is one-component; the kinetic bridge is scalar; the quantum continuation is one-mode but
+carrier-general. Eight articles need an action beyond a scope sentence, eight need a scope sentence, and
+fifty-two need nothing. The single most valuable new object is the rung dictionary, because it turns the
+category's scalar default into a visible column and makes the five-rung claim checkable article by article.</p>
+<h2 id="9-applied-what-was-executed-and-what-the-category-counts-now">9. Applied: What Was Executed, and What the Category Counts Now</h2>
+<p><strong>The pass, in one line.</strong> Every <strong>S</strong> and <strong>I</strong> verdict was acted on (six of six), every <strong>U1</strong> article received
+its scope sentence (eight of eight), both <strong>R</strong> records were repaired, and the dictionary was written. <strong>One
+recommendation was deliberately not executed</strong>: the optional move of <em>The Discrete Lattice and the Thermal Circle</em>
+(25), which the audit itself marked optional and which is a comparison of two disciplines rather than a misfiled
+step.</p>
+<p><strong>The count after the pass.</strong> 69 articles in seven sections — 6 + 9 + 4 + 20 + 2 + 24 + 4. The dictionary adds one
+to <em>The Lagrangian</em>; bosonization moves one out of the quantum section into <em>Other aspects</em>, so that section reads
+24 and not 25. <strong>The two numbers the audit's §8 gave are therefore superseded, and the reason for each is a
+single article.</strong></p>
+<h3 id="91-executed-as-recommended">9.1 Executed as recommended</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>verdict</th>
+<th>article</th>
+<th>what was done</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td><strong>S</strong></td>
+<td><em>Hamiltonian Field Theory</em></td>
+<td>new <code>## The Generic Case: The Legendre Transform on a Module</code> (module and dual module, $\Pi=\delta L/\delta(\partial_{t}X)$, the Hessian, the regularity table at the five rungs, the bracket as the inverse Hessian, the Dirac bracket where it fails); <code>## The Other Four Columns</code> promoted from <code>###</code> and reordered; <code>## What the Transcription Does and Does Not Give</code> and <code>## Summary</code> reframed per column, with the generic statement first and the Klein–Gordon column labelled as the worked one; three notation rows added.</td>
+</tr>
+<tr>
+<td>26</td>
+<td><strong>S</strong></td>
+<td><em>The Wigner Function</em></td>
+<td>the zeroth marginal restated as the element $\tilde\Xi^{*}\tilde\Xi$ with $\mathrm{Sc}$ taken, in the introduction, in the definition and in the derivation; new <code>## The Internal Index</code> with the four columns — nothing at the central rungs, the spin density at the Dirac rung, the polarization one rank higher at the Proca rung, the four partial densities at the matrix rung — and the pressure as the scalar part of the second moment.</td>
+</tr>
+<tr>
+<td>27</td>
+<td><strong>S</strong></td>
+<td><em>Relativistic Wigner Function</em></td>
+<td>retitled <strong><em>The $\hbar$ Expansion of the Wigner Function: The Kinetic Equation and Its Relativistic Bookkeeping</em></strong>, with a scope paragraph separating the two halves: the expansion is the non-relativistic reduction's and fills the scalar column, the bookkeeping of the drift, the flow and the shell is relativistic, and the four-dimensional transform with the shell built in is named as not written.</td>
+</tr>
+<tr>
+<td>37</td>
+<td><strong>I</strong></td>
+<td><em>The Two-Fluid Model</em></td>
+<td>kept, with the scope banner the audit's rule 4 asks for: one amplitude, two densities, no internal index, and the spin axis named as the spin-fluid articles'.</td>
+</tr>
+<tr>
+<td>40</td>
+<td><strong>I</strong></td>
+<td><em>A Matrix-Valued Charge Cannot Be Contracted</em></td>
+<td>kept, with a new <code>## The Column This Article Works, and the Columns It Does Not</code>, which states the trichotomy as general and names the other three columns' fillers.</td>
+</tr>
+<tr>
+<td>58</td>
+<td><strong>I</strong></td>
+<td><em>Bosonization</em></td>
+<td>retitled <strong><em>Bosonization in Two Dimensions</em></strong>, a two-dimensionality banner in the first paragraph, and moved from <em>The Objects Built on the Ladder</em> to <em>Other aspects</em>, with the objects' list corrected to eight.</td>
+</tr>
+<tr>
+<td>38</td>
+<td><strong>R</strong></td>
+<td><em>The Thermodynamics of a Quantum Fluid: Status</em></td>
+<td>the status paragraph now states the section's own count (twenty), says the twenty-two are the record's rows, and defines <em>the category</em> and <em>the section</em> as two different objects.</td>
+</tr>
+<tr>
+<td>42</td>
+<td><strong>R</strong></td>
+<td><em>The Quantisation Hub</em></td>
+<td>the renormalization group's location corrected to <em>The Euclidean Reading, the Anomaly and the Index</em> (in both the article and the menu's comment, which was wrong in the same way), and the section's count stated (twenty-four) with the sixteen declared to be an import list and not a census.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>U1</strong></td>
+<td><em>Noether's Theorem</em></td>
+<td>a scope paragraph: the theorem universal, the pairing column-dependent, the scalar and Dirac columns worked, the rest named.</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>U1</strong></td>
+<td><em>Stress–Energy</em></td>
+<td>a scope paragraph: the two columns worked are the two ends of the ladder, and the column-dependent object is the improvement term.</td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>U1</strong></td>
+<td><em>The Free-Energy Functional</em></td>
+<td>a scope paragraph: the functional general, the trace the rung's, the matrix rung's effective potential named as unwritten.</td>
+</tr>
+<tr>
+<td>29</td>
+<td><strong>U1</strong></td>
+<td><em>The Chemical Potential</em></td>
+<td>a scope paragraph: the identification general over words with a phase, the count three the one-component column's, the four matrix potentials named.</td>
+</tr>
+<tr>
+<td>50</td>
+<td><strong>U1</strong></td>
+<td><em>The Wick Theorem</em></td>
+<td>a scope paragraph: the contraction is the rung's two-point function and becomes an internal-space matrix at the rungs with an index.</td>
+</tr>
+<tr>
+<td>51</td>
+<td><strong>U1</strong></td>
+<td><em>The Functional Integral</em></td>
+<td>a scope paragraph: the measure over the rung's module, the determinant the module's, the matrix rung's representative-and-ghost structure cited.</td>
+</tr>
+<tr>
+<td>56</td>
+<td><strong>U1</strong></td>
+<td><em>The LSZ Reduction Formula</em></td>
+<td>a scope paragraph: the four operations general, the scalar reduction worked and the spin stated, the vector and matrix reductions not written — with the Gauss law as the structural reason at the matrix rung.</td>
+</tr>
+<tr>
+<td>57</td>
+<td><strong>U1</strong></td>
+<td><em>The Spin–Statistics Theorem</em></td>
+<td>a scope paragraph: the two classes the algebra hosts decided, the matrix rung's Dirac-bracket promotion declared out of scope.</td>
+</tr>
+<tr>
+<td>30</td>
+<td><strong>C</strong></td>
+<td><em>The Equation of State</em></td>
+<td>the multi-component pointer added: the pair is the scalar column's, the further arguments are the dictionary's rows, and homogeneity, positivity and Gibbs–Duhem do not change when they are added.</td>
+</tr>
+<tr>
+<td>35</td>
+<td><strong>C</strong></td>
+<td><em>Spin Fluid Physics</em></td>
+<td>the sentence the audit asked for: the Dirac spin is the rotor's, the Proca spin is the antisymmetric part of the bilinear, one index against two, and the two are not identified.</td>
+</tr>
+<tr>
+<td>36</td>
+<td><strong>C</strong></td>
+<td><em>Spin Conservation and the Frenkel Condition</em></td>
+<td>the banner: every display is the Dirac rotor's; no value, no gyromagnetic ratio, no other rung's spin; the Proca and matrix cases named.</td>
+</tr>
+<tr>
+<td>41</td>
+<td><strong>C</strong></td>
+<td><em>The Lagrangian and the Second Quantisation</em></td>
+<td>the bridge's scope declared: the route's rows are the relativistic one-particle actions, the Schrödinger row is canonical and needs no separate Peierls step, the matrix row is absent because its promotion is not written.</td>
+</tr>
+<tr>
+<td>55</td>
+<td><strong>C</strong></td>
+<td><em>The S-Matrix</em></td>
+<td>the first-paragraph scope sentence: the object is the one-mode truncation and the spin-$\tfrac12$ column's, with the field's S-matrix declared outside the algebra.</td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>X</strong></td>
+<td><em>The Discrete Lattice</em></td>
+<td>not moved. The audit marked the move optional; the article is a comparison of two discreteness disciplines, and it is a reasonable occupant where it is.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="92-executed-differently-from-the-recommendation-and-why">9.2 Executed differently from the recommendation, and why</h3>
+<p><strong>1. The dictionary is a page and not a table inside <em>The Lagrangian</em>.</strong> §6 asked for one table inserted after
+<em>The Invariant Density</em>. The table grew to thirteen rows (the audit proposed ten) because the constraint count, the
+bracket and the force slot are rows a general article substitutes, and a thirteen-by-five table with the scope
+rules that make it usable does not sit inside another article without swallowing it. <strong>The intent of §6 is kept and
+the form is changed</strong>: it is one table, in one place, cited by the articles it serves, and it is the sixth entry of
+<em>The Lagrangian</em> where §6 wanted it. Its three limits — the matrix thermodynamics, the two spin representations, the
+group-content question — are its closing section, so that the table cannot be read as a claim that the matrix rung
+is solved.</p>
+<p><strong>2. Article 40 was kept rather than moved.</strong> §4.5 offered a move to <em>Biquaternion Universe Primordial Force</em>,
+beside <em>The Primordial Force Law</em>. The article's first half is a classification of couplings that holds at every
+rung, and moving it into the $\mathrm{SU}(4)$ block would have made the general statement look like the block's
+instance — the defect the audit names, in the other direction. <strong>The scope section does what the move would have
+done and keeps the general statement general</strong>: the trichotomy is declared universal, the matrix column is named as
+the one worked, and the other three columns' fillers are stated.</p>
+<p><strong>3. Article 37 was kept rather than moved.</strong> §4.4 preferred a move to the Klein–Gordon band. The article is cited
+by the thermal section's ledger and by <em>The Local Thermal State</em>, and moving it would have left the two-fluid
+description of a one-component fluid in a section whose other articles are general. <strong>The banner is the audit's own
+rule-4 alternative</strong> — <em>"if kept, retitle as the scalar condensate"</em> — and the title was left as it stood because
+it names the model and the new first paragraph names its carrier, which is the pairing the audit asks for.</p>
+<p><strong>4. Article 27 was retitled rather than moved.</strong> §4.3 offered <em>"retitle and move, or rewrite the relativistic
+case"</em>. The article does have a relativistic section — the flow element, the shell constraint, the off-shell
+broadening — so the honest repair was to separate the two halves in the title and in a scope paragraph, and to move
+nothing. <strong>The alternative, a move to the scalar band, would have hidden the relativistic section.</strong></p>
+<h3 id="93-verification-of-the-pass">9.3 Verification of the pass</h3>
+<p><strong>Links.</strong> Every relative link in the 23 modified articles resolves to a file under <code>articles_physics/</code>
+(0 broken); <code>physics.md</code> has 748 <code>href</code> targets and 0 missing files, and no article is listed
+twice.</p>
+<p><strong>Delimiters.</strong> The inline and display math in all 23 modified files is balanced (the <code>$$</code> count is even in each,
+and the residual <code>$</code> count after removing the display pairs is even in each).</p>
+<p><strong>Counts.</strong> The seven sections of <em>Biquaternion Universe Action</em> read 6 + 9 + 4 + 20 + 2 + 24 + 4 = 69 from the
+menu's entries, and the 69 files exist.</p>
+<p><strong>Cross-references.</strong> The three references into the dictionary — <em>the pairing row</em> (Noether, Stress–Energy), <em>the
+thermal-data row</em> (the two-fluid article, the local thermal state, the equation of state), <em>the chemical-potential
+row</em> (the chemical potential article), <em>the pressure row</em> (the Wigner article) — name rows the table has. The
+references into <em>The Other Four Columns</em> (from the dictionary's Further Reading) name a section the Hamiltonian
+article has.</p>
+<h3 id="94-what-the-pass-did-not-do">9.4 What the pass did not do</h3>
+<ul>
+<li><strong>The matrix rung's thermodynamics is still open.</strong> The dictionary names four densities, a frame and four
+  potentials; nothing computes them. The audit's §6 said the table would make the gap visible and not close it, and
+  that is what happened.</li>
+<li><strong>The matrix rung's Hamiltonian is still unwritten.</strong> Article 3's <code>## The Other Four Columns</code> names the gap
+  rather than filling it, because filling it needs the ghost sector and the constraint algebra that the machinery
+  article builds for the determinant and not for the bracket.</li>
+<li><strong>The Proca and matrix Wigner elements are still unwritten.</strong> Article 26 states their rank and location and says
+  in the same breath that the construction is not in the corpus.</li>
+<li><strong>Article 25's optional move was declined</strong>, as recorded above.</li>
+<li><strong>The menu's comments are updated where a claim changed</strong> (the Hamiltonian, the two Wigner articles, the two
+  thermal articles, the matrix charge, the objects' list, <em>Other aspects</em>, the hub), and left alone where they were
+  already accurate. A reader who compares an old comment to a new article will find the comment changed only where
+  the article's scope changed.</li>
+</ul>
+<p><strong>The result, in one line.</strong> The category's general statements are now labelled where they are general and
+column-labelled where they are not; the scalar default is a visible column with a table behind it; the three
+instances live where their rung lives or carry a banner saying why they do not; and the two records that had drifted
+count what they now count.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

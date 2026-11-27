@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rung Dictionary: What the General Symbols Mean at Each Rung — Biquaternion Universe</title>
+  <meta name="description" content="The category&#x27;s articles are general, and the worked case is usually the scalar. That is not a defect — a general statement needs a first column — but it…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-rung-dictionary-what-the-general-symbols-mean-at-each-rung"><strong>The Rung Dictionary: What the General Symbols Mean at Each Rung</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The category's articles are general, and the worked case is usually the scalar.</strong> That is not a defect — a general statement needs a first column — but it leaves a reader unable to tell, from a general article alone, what its symbols denote at the other four rungs. This page is the one table that answers the question. It is the companion of the five-by-five matrix in <a href="five-steps-from-a-lagrangian-to-fluid-equations.html">Five Steps from a Lagrangian to Fluid Equations</a>: <strong>that matrix is the fluid side, read across as five steps; this table is the object side, read across as five columns of one symbol.</strong></p>
+<p><strong>What the table is for, in three uses.</strong></p>
+<ol>
+<li><strong>A general article says which column it works.</strong> <em>"The scalar column is worked here; the other columns are in the dictionary"</em> is a complete scope sentence, and it is the sentence the one-carrier articles of this category were missing.</li>
+<li><strong>A reader substitutes a rung.</strong> Take any general display, replace each symbol by its row entry at the rung of interest, and the display either parses or fails. The failure is the information: it names the object the rung does not have.</li>
+<li><strong>A new Lagrangian is placed.</strong> A sixth column is filled by answering the same ten rows, and a row that cannot be filled is the rung's obstruction — the way the Proca rung cannot fill the "unconstrained momentum" row and the matrix rung cannot fill the "base-valued flow" row.</li>
+</ol>
+<p><strong>What the table is not.</strong> It is not a derivation and it does not replace the band articles. <strong>The entries state the <em>kind</em> of object each symbol denotes, not its formula</strong>; the formulas live in the articles the last row names. A reader who wants the Klein–Gordon conjugate momentum in closed form goes to <em>Hamiltonian Field Theory in Biquaternionic Form</em>; a reader who wants to know what "the conjugate momentum" means at the Dirac rung reads the fourth column below.</p>
+<h2 id="the-table">The Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>Schrödinger</th>
+<th>Klein–Gordon</th>
+<th>Dirac</th>
+<th>Proca</th>
+<th>$\mathrm{SU}(4)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>the field (S2's word)</strong></td>
+<td>$\varrho e^{i\theta}\varepsilon e_t$</td>
+<td>$\varrho e^{i\theta}\varepsilon e_t$</td>
+<td>$\varrho e^{i\theta}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$\varepsilon i\varrho\tilde U_{\Psi,\mathrm b}$</td>
+<td>$U_{\mathrm{frm}}PU_{\mathrm{frm}}^{\dagger}$</td>
+</tr>
+<tr>
+<td><strong>the invariant density</strong></td>
+<td>$\lVert\tilde\Xi\rVert^{2}$; in the word, $2r^{2}\cosh\theta_{\mathrm{rpd}}$</td>
+<td>$\lVert\tilde\Xi\rVert^{2}$</td>
+<td>$\tilde\Xi^{\dagger}\tilde\Xi$: scalar part the number density, the rest the spin density</td>
+<td>$\sum_{\imath}\varepsilon_{\imath}A^{*}_{\imath}A_{\imath}$</td>
+<td>the four eigenvalues $\rho_{1},\dots,\rho_{4}$ of $P$</td>
+</tr>
+<tr>
+<td><strong>the flow</strong></td>
+<td>$\vec\nabla_\Phi S/m$, a gradient</td>
+<td>$\partial_{\imath}S/m$, a four-gradient</td>
+<td>the frame's direction, transported by the rotor</td>
+<td>the direction $u_{\imath}=A_{\imath}/\varrho$</td>
+<td>the internal $\Omega_{\imath}=U_{\mathrm{frm}}^{\dagger}D_{\imath}U_{\mathrm{frm}}$</td>
+</tr>
+<tr>
+<td><strong>the conjugate momentum</strong></td>
+<td>$i\frac{h}{2\pi}\tilde\Xi^{*}$: no independent momentum</td>
+<td>$\pi=\left(\partial\xi/\partial r'_t\right)^{*}$, an independent field</td>
+<td>the first-order bilinear; $\pi-i\tilde\Xi^{\dagger}\approx0$ is a constraint</td>
+<td>$\pi^{0}=0$; $\pi^{\imath}=-F^{0\imath*}$, three independent components</td>
+<td>$\Pi=\left(D_{t}\Xi\right)^{\dagger}$ in the matter directions; the connection's momenta constrained</td>
+</tr>
+<tr>
+<td><strong>the Legendre transform</strong></td>
+<td>vanishing Hessian; the kinetic matrix replaces it</td>
+<td>regular on the pair $(\xi,\pi)$</td>
+<td>vanishing Hessian; first order throughout</td>
+<td>rank three of four: one primary constraint</td>
+<td>regular in the matter directions, singular in the fifteen connection directions</td>
+</tr>
+<tr>
+<td><strong>the constraint count</strong></td>
+<td>none; the four momenta $p_{r},p_{\theta_{\mathrm{rpd}}}$ vanish</td>
+<td>none</td>
+<td>eight second-class: four degrees of freedom</td>
+<td>two second-class: three degrees of freedom</td>
+<td>fifteen first-class: fifteen degrees of freedom</td>
+</tr>
+<tr>
+<td><strong>the bracket</strong></td>
+<td>the canonical bracket on $(\tilde\Xi,i\frac{h}{2\pi}\tilde\Xi^{*})$</td>
+<td>the field Poisson bracket, integrated over space</td>
+<td>the Dirac bracket, then the anticommutator</td>
+<td>the Dirac bracket on the constrained surface</td>
+<td>the bracket with the trace pairing, projected by the Gauss laws</td>
+</tr>
+<tr>
+<td><strong>the pressure</strong></td>
+<td>$p(\rho_{\mathrm{num}},\beta)$</td>
+<td>$p(\rho_{\mathrm{num}},\beta)$</td>
+<td>the trace of the stress; the spin part is separate</td>
+<td>the trace of the stress; the polarization part is separate</td>
+<td>$\mathrm{Tr}$ of the matrix stress</td>
+</tr>
+<tr>
+<td><strong>the chemical potential</strong></td>
+<td>$\mu_{\mathrm{chm}}=-\partial_{t'}S$</td>
+<td>$\mu_{\mathrm{chm}}=-\partial_{t'}S$</td>
+<td>$\mu_{\mathrm{chm}}$ plus the spin potential</td>
+<td>$\mu_{\mathrm{chm}}$ plus the polarization potential</td>
+<td>four, one per diagonal phase of $\mathrm{U}(1)^{4}$</td>
+</tr>
+<tr>
+<td><strong>the independent thermal data</strong></td>
+<td>$(\rho_{\mathrm{num}},\beta)$</td>
+<td>$(\rho_{\mathrm{num}},\beta)$</td>
+<td>density, spin polarization, $\beta$</td>
+<td>density, polarization, $\beta$</td>
+<td>four densities, the frame, $\beta$</td>
+</tr>
+<tr>
+<td><strong>the force slot</strong></td>
+<td>Euler, with the quantum force</td>
+<td>Euler, with $\gamma^{-1}$</td>
+<td>the spin fluid's acceleration</td>
+<td>Euler, projected onto two components</td>
+<td>a momentum balance; the commutator, not a contraction</td>
+</tr>
+<tr>
+<td><strong>the pairing</strong></td>
+<td>$\mathrm{Sc}(\tilde Q^{*}\tilde Q)$</td>
+<td>$\mathrm{Sc}(\tilde Q^{*}\tilde Q)$</td>
+<td>the spinor form $\tilde\Xi^{\dagger}\tilde\Xi$</td>
+<td>the vector form $\sum_{\imath}\varepsilon_{\imath}A^{*}_{\imath}A_{\imath}$</td>
+<td>$\mathrm{Tr}$</td>
+</tr>
+<tr>
+<td><strong>where it is computed</strong></td>
+<td><em>Schrödinger fluid equations</em></td>
+<td><em>Klein–Gordon fluid equations</em></td>
+<td><em>Spin-half fluid equations</em></td>
+<td><em>Charged spin-one fluid equations</em></td>
+<td><em>The $\mathrm{SU}(4)$ Fluid Equations from the Primordial Action</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read a row and the rungs differ; read a column and it is one rung's data.</strong> The two hardest rows are the two ends. <strong>The flow row fails at the matrix rung for the reason S5 records</strong>: the flow is internal, so it is a connection and not a velocity, and what the row's substitution produces is a balance. <strong>The conjugate-momentum row fails at the Dirac and Proca rungs for the reason the Dirac–Bergmann algorithm records</strong>: there is no unconstrained momentum to write, and what replaces it is a constraint plus a Dirac bracket.</p>
+<h2 id="how-a-general-article-uses-the-table">How a General Article Uses the Table</h2>
+<p><strong>A universal article</strong> — one whose stated result contains no carrier — uses the rows as definitions and needs no column. The invariant-density article is the model: the three requirements it states are requirements on the <em>pairing</em>, and the pairing row is filled differently at each rung without the requirements changing.</p>
+<p><strong>A one-carrier article</strong> states its column and points here. <em>"The scalar column is worked here"</em> is accurate for the Hamiltonian, the Wigner function and the thermal state, and it is the sentence that turns an honest limitation into a usable general article.</p>
+<p><strong>An article that is a column by design</strong> says so in its own title or first paragraph, and the table's last row points the reader to it. The two-fluid model, the spin fluid and the Frenkel condition are in this class; they are not failures of generality, they are columns.</p>
+<p><strong>An article whose condition is a declared class</strong> — a gauge connection, a spin-carrying fluid, a one-mode truncation, two dimensions — is general over that class, and the table does not apply to it row by row. The condition is the article's, and the dictionary does not override it.</p>
+<h2 id="what-the-table-does-not-decide">What the Table Does Not Decide</h2>
+<p><strong>It does not supply the matrix rung's thermodynamics.</strong> The row entries name four densities, a frame and four potentials, and naming them is not an equation of state. <strong>The matrix state's dynamics — how the four densities and the frame respond to a temperature — is a research problem and this table does not solve it.</strong> It makes the problem visible, which is the reason the thermal section needs the table: the one-component articles can now say <em>which</em> column they are, and the matrix column is seen to be open rather than covered.</p>
+<p><strong>It does not unify the Proca and Dirac spin.</strong> The two rows carry a polarization, and the two polarizations are not the same representation: the Dirac one is the rotor's, the Proca one is the vector's. A reader who copies the spin-half potential into the vector column gets an object of the wrong type, and the row's wording is what prevents the copy.</p>
+<p><strong>It does not decide which groups the algebra contains.</strong> The density row is available for any compact group whose generators can be traced; whether $\mathbb{B}$ <em>contains</em> the group is the ceiling question, stated in <a href="the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density</a> and not answered here.</p>
+<p><strong>It does not fix the coefficients.</strong> The entries are kinds; the normalisations, the signs and the factors of $2\pi$ are the band articles' and are cited in the last row.</p>
+<h2 id="summary">Summary</h2>
+<p>The category's general statements are read at five rungs, and the dictionary is the one table that says what each symbol denotes at each. <strong>Its three uses are the scope sentence, the substitution test and the placement of a new column; its three limits are the matrix thermodynamics, the two spin representations and the group-content question.</strong> The table makes the category's scalar default a visible column rather than an unstated one, and it gives every band slot a common target.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varrho$, $\theta$</td>
+<td>the word's amplitude and phase, S2's parameters</td>
+</tr>
+<tr>
+<td>$\tilde U_{\Psi,\mathrm b}$, $\tilde u_{\mathrm r}$</td>
+<td>the rotor and the direction of the spinor word</td>
+</tr>
+<tr>
+<td>$U_{\mathrm{frm}}$, $P$</td>
+<td>the frame of the matrix word and its diagonal density</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}$</td>
+<td>the proper density, $\lVert\tilde\Xi\rVert^{2}$ at the central rungs</td>
+</tr>
+<tr>
+<td>$\Omega_{\imath}$</td>
+<td>the matrix rung's internal flow, $U_{\mathrm{frm}}^{\dagger}D_{\imath}U_{\mathrm{frm}}$</td>
+</tr>
+<tr>
+<td>$p(\rho_{\mathrm{num}},\beta)$</td>
+<td>the thermal pressure of the one-component column</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{chm}}$</td>
+<td>the chemical potential, $-\partial_{t'}S$</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}$</td>
+<td>the trace pairing of the matrix rung</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="five-steps-from-a-lagrangian-to-fluid-equations.html">Five Steps from a Lagrangian to Fluid Equations</a>, companion article, for the same five columns read as five steps.</li>
+<li><a href="the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a>, companion article, for the pairing row's derivation and the group-content question.</li>
+<li><a href="hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a>, companion article, for the conjugate-momentum and Legendre rows, with the scalar column worked.</li>
+<li><a href="the-dirac-bergmann-algorithm-first-and-second-class-constraints.html">The Dirac–Bergmann Algorithm: First- and Second-Class Constraints</a>, companion article, for the constraint-count row at the five rungs.</li>
+<li><a href="the-chemical-potential-is-the-phases-frequency.html">The Chemical Potential Is the Phase's Frequency</a>, companion article, for the chemical-potential row and the four matrix potentials.</li>
+<li><a href="the-local-thermal-state-of-a-fluid.html">The Local Thermal State of a Fluid</a>, companion article, for the thermal-data row's scalar column.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
