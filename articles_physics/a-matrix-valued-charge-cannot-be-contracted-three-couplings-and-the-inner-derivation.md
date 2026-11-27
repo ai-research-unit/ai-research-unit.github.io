@@ -12,6 +12,16 @@
 
 **The article's place in the chain.** It is one of the two articles in *From the Fluid to the Force* that state the general form of a force block, and it is the one that carries the matrix-valued case. [Five Steps from a Lagrangian to Fluid Equations](five-steps-from-a-lagrangian-to-fluid-equations.html) states the skeleton; this article states what the matrix rung's force slot is filled by.
 
+## The Column This Article Works, and the Columns It Does Not
+
+**The trichotomy is general and the worked case is the matrix column.** The three couplings are classified by what each consumes, and the classification holds at every rung; what the article computes is the rung at which the first two are unavailable, because that is where the classification has content. **The other columns are named here and not worked**, and the naming is what keeps the article from reading as a statement about matrices dressed as a statement about couplings.
+
+- **The scalar and Proca rungs.** The force is a contraction of the field strength with the velocity — one free spacetime index returned from two consumed — and the Proca rung adds the polarization term, a second contraction of the same kind. Both are the trichotomy's second entry with an internal index attached, and neither needs the commutator, because the object acted on is a number or a vector and a contraction returns one.
+- **The Dirac rung.** The same contraction, with the spin tensor in place of one of the velocity factors: the Lorentz force plus the Pauli term, again two indices consumed and one returned. The spin is a rotor, and the rotor's equation is a transport and not a force — which is why the Dirac rung's spin term is written beside the force block and not in it.
+- **The matrix rung, worked here.** The object the field acts on must come back matrix-valued, so the operation that consumes the matrix index cannot be used. That is the whole of the article's claim, and it is why the commutator appears where the contraction was.
+
+**What this does not say.** It does not say that the lower rungs' forces are the matrix one's limit — they are not, and the article's own finding is that a two-density truncation reproduces the abelian force law exactly and the non-abelian one not at all. **It says that the slot has a different filler at each rung, and that the filler is forced by what the balance must return.**
+
 ## Conventions
 
 The algebra is $\mathbb{B}$ with its commutator, and at the matrix rung the field is $\Xi=U_{\mathrm{frm}}PU_{\mathrm{frm}}^{\dagger}$ with $P=\mathrm{diag}(\rho_{1},\dots,\rho_{4})$ and $U_{\mathrm{frm}}\in\mathrm{SU}(4)$. The field strength is $\mathbb{F}$, a Hermitian element of the algebra — **Hermitian, with real eigenvalues, in the corpus's convention**, and this is stated because the sign of every subsequent difference depends on it.

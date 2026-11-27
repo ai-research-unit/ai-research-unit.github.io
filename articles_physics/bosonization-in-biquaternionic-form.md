@@ -1,8 +1,10 @@
-# __Bosonization in Biquaternionic Form__
+# __Bosonization in Two Dimensions in Biquaternionic Form__
 
 ## Introduction
 
 Bosonization is the statement that a theory of fermions in two spacetime dimensions is the same theory as a theory of bosons. The equivalence is exact and non-perturbative: the massless Dirac field is equivalent to a free scalar field, the massive Thirring model is equivalent to the sine-Gordon model, and the correspondence extends to the current algebra, the stress tensor, and the solitons of the bosonic side, which are the fermions of the fermionic side. The construction is standard (Coleman 1975; Mandelstam 1975; and, in the non-abelian case, Witten 1984), and its two-dimensionality is not an accident: it is tied to the current algebra. A massless two-component field carries two chiral currents, and their algebra closes on the derivative of a single real scalar; the central charges match, $c_{\text{Dirac}}=2\times\tfrac12=1=c_{\text{boson}}$. The equivalence is not a naive component count — a real scalar has one real component — but an identity of the operator algebras built on the two sides.
+
+**The article is a two-dimensional special topic and it says so before it begins.** Bosonization exists in $1+1$ dimensions and nowhere else, and its two-dimensionality is a theorem about the current algebra rather than a choice of arena. **So this article is not a step of the chain and it does not fill a rung**: it is an equivalence between two rungs — a fermion and a boson — read in the algebra's letters, and the framework's contribution is a statement about which two objects are identified, not a derivation of the equivalence. A reader who wants the general machinery of the category will not find it here; a reader who wants to know what the algebra adds to a standard exact result will.
 
 This article asks what the biquaternion framework contributes to that statement. The findings are the following.
 

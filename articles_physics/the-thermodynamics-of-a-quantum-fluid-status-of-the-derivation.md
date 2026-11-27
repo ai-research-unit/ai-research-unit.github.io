@@ -8,7 +8,10 @@ geometrically and algebraically; four are in *Horizons and Their Thermodynamics*
 Cosmology*; and one, the Reeh–Schlieder theorem, is with the state space in *The Ladder and the State Space*. The audit
 below keeps the numbering of the former category, which counts twenty-two rows because it was written before the last
 five articles were added: the counts are the record's, not the section's, and no argument here depends on either the
-dissolution or the five.
+dissolution or the five. **The section's own count is twenty**, and the difference is not a discrepancy to be
+repaired but a date: the table is the audit of a category that no longer exists, and a reader who wants the section's
+inventory counts the entries in the section. Where this article says *the category* it means the record's rows; where
+it says *the section* it means the twenty.
 
 
 ## Introduction

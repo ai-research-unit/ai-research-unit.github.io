@@ -2,9 +2,11 @@
 
 ## Introduction
 
-The companion article *The Lagrangian and Hamiltonian Mechanics* ends where the finite-dimensional theory ends: one configuration biquaternion $\tilde q$, one momentum biquaternion $\tilde p$, one phase-space biquaternion $\tilde q+i\tilde p$, and a Poisson bracket on the functions of that finite collection of numbers. A field is not a finite collection of numbers. Its configuration is a *function* of the position, and the variational derivative replaces the partial derivative: the Legendre transform acts on a density, the momentum conjugate to the field is itself a function of the position, and the bracket that survives is a bracket on functionals. This article performs that transcription for the field the corpus actually uses — the central scalar field of the Klein–Gordon articles — and states plainly what the algebra supplies and what it does not.
+The companion article *The Lagrangian and Hamiltonian Mechanics* ends where the finite-dimensional theory ends: one configuration biquaternion $\tilde q$, one momentum biquaternion $\tilde p$, one phase-space biquaternion $\tilde q+i\tilde p$, and a Poisson bracket on the functions of that finite collection of numbers. A field is not a finite collection of numbers. Its configuration is a *function* of the position, and the variational derivative replaces the partial derivative: the Legendre transform acts on a density, the momentum conjugate to the field is itself a function of the position, and the bracket that survives is a bracket on functionals. This article performs that transcription twice: **once in general**, for a field valued in a module over the algebra, where the transform, its regularity and the bracket are stated with no carrier named; and **once in full for the central scalar field** of the Klein–Gordon articles, which is the Klein–Gordon column of the dictionary's five and the case three later sections of this category take as given.
 
-Two objects are built here, and they answer two different questions. The first is the **Hamiltonian density** $\mathcal H$, the Legendre transform of the Lagrangian density, which is also the energy density of the companion article on stress–energy; the second is the **field Poisson bracket**, the bracket on functionals of the field and its conjugate momentum, together with the continuity equation that the density satisfies along the motion. Their sum is the classical Hamiltonian field theory in biquaternion form. The article then says where the algebra's contribution stops: for a central field the bracket is the standard one, and the biquaternion content is the packaging of the density and the flux rather than a change of the bracket. The genuinely different Hamiltonian formalism for a field — the covariant one, in which the conjugate object is a *quadruple* of momenta rather than one momentum field — is named at the end and developed in the mathematical corpus.
+The order is deliberate. **The general case is what the slot owes; the scalar is what is worked.** A reader who needs the scalar formulas reads from §*The Scalar Column: The Standard Hamiltonian Field Theory* onward, and loses nothing by starting there; a reader who needs to know what the slot means at another rung reads §*The Generic Case* and §*The Other Four Columns*, and finds in them the two statements the scalar case cannot supply — that regularity is a property of a Hessian on a module, and that the failure of regularity is a constraint whose count the later sections quote.
+
+Two objects are built here, and they answer two different questions. The first is the **Hamiltonian density** $\mathcal H$, the Legendre transform of the Lagrangian density, which is also the energy density of the companion article on stress–energy; the second is the **field Poisson bracket**, the bracket on functionals of the field and its conjugate momentum, together with the continuity equation that the density satisfies along the motion. Their sum is the classical Hamiltonian field theory in biquaternion form. The article then says where the algebra's contribution stops: at a rung whose Hessian is a multiple of the identity the bracket is the standard one, and the biquaternion content is the packaging of the density and the flux rather than a change of the bracket — and at the rungs whose Hessian is not, the bracket is the Dirac bracket and the count of constraints is what the change costs. The genuinely different Hamiltonian formalism for a field — the covariant one, in which the conjugate object is a *quadruple* of momenta rather than one momentum field — is named at the end and developed in the mathematical corpus.
 
 The conventions are those of the read list: the algebra, the invertibles, the sectors, the material coordinate, the $i r'_t$ metric, the d'Alembertian and the conjugations are those of *Algebra and Element Conventions*, *Physics Units and Common Elements Conventions* and *Operator and Calculus Conventions*, and none is restated here. The central scalar field is $\tilde{Ξ}(\tilde R_\Phi)=\xi(\tilde R_\Phi)e_t$ with $\tilde R_\Phi\in\mathbb{B}_{\Phi}$, its Lagrangian density is the one fixed by *Noether's Theorem in Biquaternionic Form* and used by *Canonical Quantization of the Biquaternion Klein–Gordon Field*,
 
@@ -24,7 +26,66 @@ The companion articles are:
 - Companion article *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*, for the energy–momentum biquaternion and the electromagnetic packaging that the scalar field's density and flux repeat.
 - Companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field*, for the quantum theory that takes this classical canonical structure over without modification, and for the constraint analysis of the Dirac and Maxwell fields that this article contrasts with.
 
-## The Standard Hamiltonian Field Theory
+## The Generic Case: The Legendre Transform on a Module
+
+**The carrier is a module, and the transform is a map between a module and its dual.** At every rung of the ladder the field takes its values in some space $\mathcal M$ over the algebra — the centre for the scalar rungs, the spinor module for the Dirac rung, the four-component complex vector space for the Proca rung, the Hermitian matrices for the matrix rung — and the Lagrangian density is a real function of the field, of its four derivatives and of the position. **The conjugate momentum is then not a number but an element of the dual module**, defined by the variational derivative
+
+$$
+\Pi=\frac{\delta L}{\delta\left(\partial_{t}X\right)}\in\mathcal M^{*},
+\qquad
+\left\langle\Pi,\delta X\right\rangle=\frac{d}{d\epsilon}L\left[X,\partial_{t}X+\epsilon\,\delta X\right]\Big|_{\epsilon=0},
+$$
+
+where $\left\langle\cdot,\cdot\right\rangle$ is the pairing the rung supplies — the Hermitian form for the scalar rungs, the spinor form for the Dirac rung, the weighted sum for the Proca rung, the trace for the matrix rung, exactly the row the dictionary calls *the pairing*. **The Legendre transform is the same display at every rung**,
+
+$$
+\mathcal H=\left\langle\Pi,\partial_{t}X\right\rangle-L,
+$$
+
+and so is the pair of Hamilton equations, $\partial_{t}X=\delta H/\delta\Pi$ and $\partial_{t}\Pi=-\delta H/\delta X$. What differs between the rungs is not the transform but the **Hessian**,
+
+$$
+\mathbb H=\frac{\delta^{2}L}{\delta\left(\partial_{t}X\right)\delta\left(\partial_{t}X\right)}:\ \mathcal M\longrightarrow\mathcal M^{*},
+$$
+
+and the transform is called **regular** when $\mathbb H$ is an isomorphism of modules. **That is the whole of the generic statement, and it is worth stating in this abstract form because the scalar case makes it look automatic.** At the central rung $\mathbb H$ is the identity map on $\mathbb C$ and regularity is invisible; at four of the five rungs it is not, and the failure is the constraint.
+
+### The Regularity Table
+
+**The table records, for each rung, what the Hessian is, whether it is invertible, and what replaces the inverse when it is not.** The constraint counts are the ones [The Dirac–Bergmann Algorithm](the-dirac-bergmann-algorithm-first-and-second-class-constraints.html) derives; the momentum entries are the ones each band's article writes.
+
+| rung | value space $\mathcal M$ | conjugate momentum | Hessian | constraint structure | bracket |
+|---|---|---|---|---|---|
+| Schrödinger | $\mathbb C$ (central) | $i\frac{h}{2\pi}\tilde\Xi^{*}$ | rank zero: the density is first order in the velocity | none; four word momenta vanish identically | the canonical bracket on $(\tilde\Xi,\tilde\Pi_{\mathrm{id}})$ |
+| Klein–Gordon | $\mathbb C$ (central) | $\pi=\left(\partial\xi/\partial r'_{t}\right)^{*}$ | the identity: **regular** | none | the field Poisson bracket |
+| Dirac | the spinor module | the first-order bilinear; $\pi-i\tilde\Xi^{\dagger}\approx0$ | rank zero: first order throughout | eight second-class, four degrees of freedom | the Dirac bracket, then the anticommutator |
+| Proca | the complex vector part | $\pi^{0}=0$; $\pi^{\imath}=-F^{0\imath*}$ | rank three of four | two second-class, three degrees of freedom | the Dirac bracket |
+| $\mathrm{SU}(4)$ | Hermitian $4\times4$ and the connection | $\Pi=\left(D_{t}\Xi\right)^{\dagger}$; the connection's momenta constrained | regular on the sixteen matter directions, singular on the fifteen connection directions | fifteen first-class Gauss laws, fifteen degrees of freedom | the bracket with the trace pairing, projected by the Gauss laws |
+
+**Read the table by column and the four failures are four different things, and only one of them is a gauge symmetry.** The Schrödinger rung's vanishing Hessian is a *first-order* action: the density is a coordinate and its conjugate is fixed by the action rather than by a constraint, and the Legendre transform is carried by the kinetic matrix instead of the second variation — which is why the Schrödinger articles speak of a kinetic metric and not of a mass matrix. **The Dirac rung's vanishing Hessian is also first order, and there the consequence is a genuine constraint pair**, because the spinor's conjugate is not free to be eliminated: the four components carry eight real second-class conditions. **The Proca rung's rank-three Hessian is a constraint of the same second-class kind**, and its two conditions are the primary $\pi^{0}=0$ and the Gauss law, which is why the Proca fluid's Euler equation is two of the frame's components and not all four. **The connection's rank-three Hessian is the one first-class failure**: its kernel is the gauge orbit, the Gauss laws generate the gauge transformations, and no gauge-invariant quantity depends on the eliminated direction. **A reader who treats all four as "the Legendre transform is singular" has the right formal statement and the wrong physics**, and the table is the four-way split.
+
+### The Bracket Without a Carrier
+
+**The canonical bracket is the inverse of the Hessian read as a bivector on the phase space.** For a module-valued field the phase space is the space of pairs $(X,\Pi)$ with $\Pi\in\mathcal M^{*}$, and the bracket of two functionals is
+
+$$
+\{A,B\}=\int d^{3}r\left(
+\left\langle\frac{\delta A}{\delta X},\frac{\delta B}{\delta\Pi}\right\rangle
+-\left\langle\frac{\delta A}{\delta\Pi},\frac{\delta B}{\delta X}\right\rangle
+\right),
+$$
+
+with the pairing evaluated at the point. **Three consequences, and the third is the one a reader is most likely to get wrong.**
+
+- **Where the Hessian is a multiple of the identity the bracket is the standard one**, and its value on two linear functionals is the pairing itself. The scalar column is this case, and it is why the scalar canonical structure can be handed to the quantization article untouched.
+- **Where the Hessian is singular the display above is not a bracket on the whole phase space**; the Dirac–Bergmann algorithm restricts it to the constraint surface, and the restricted object is the Dirac bracket. **The second-class cases are where the Dirac bracket is a genuine replacement** — the Dirac and Proca rungs — and the first-class case is where a gauge fixing is needed before a bracket exists at all.
+- **The bracket is not the commutator.** The commutator is the algebra's product defect, and it enters the *equation of motion* of a matrix-valued observable, as [A Matrix-Valued Charge Cannot Be Contracted](a-matrix-valued-charge-cannot-be-contracted-three-couplings-and-the-inner-derivation.html) shows. It enters the bracket only through the non-commutativity of the two variational derivatives inside the pairing. **A reader who writes "the matrix bracket is the commutator" has conflated the force slot with the bracket slot**, and the dictionary keeps them as separate rows for that reason.
+
+**What the module statement buys, in three items.** First, *regularity* has a definite meaning at every rung — invertibility of a module map — so the phrase "the Legendre transform is regular" is a claim and not a formula. Second, *the constraint count is the kernel of the Hessian*, so the Dirac–Bergmann table is not an independent piece of bookkeeping but the rank statement of this section's $\mathbb H$. Third, *the scalar column's completeness is explained*: its Hessian is the identity, its kernel is empty, its bracket is the standard one, and the algebra's contribution there is the packaging rather than the dynamics. **The rest of the article fills that column.**
+
+## The Scalar Column: The Standard Hamiltonian Field Theory
+
+**The column this section fills is the Klein–Gordon column of the dictionary's five, and the one every later section of this category uses.** Its Hessian is the identity and its bracket is unconstrained, so the standard formalism transcribes without qualification; the other four columns are named in §*The Other Four Columns* and computed in their bands.
 
 ### The Conjugate Momentum Field
 
@@ -109,7 +170,7 @@ $$
 
 time-independent, the statement that the flux of the companion stress–energy article is a conserved current.
 
-## The Biquaternionic Transcription
+## The Scalar Column in the Algebra
 
 ### The Field and Its Conjugate Momentum
 
@@ -150,6 +211,18 @@ The static limit makes the arrangement visible. For a time-independent field the
 
 The canonical bracket is read in the algebra as the scalar part of a pairing. Since $\xi$ and $\pi$ are the coefficients of central elements, the bracket of the algebra's central directions is the bracket of the two complex numbers, and the field bracket above is its integral over space. The biquaternion content of the brackets is therefore not a new bracket but the **sector bookkeeping** of the fields being bracketed: $\tilde{Ξ}\in\mathbb{B}_{C}$ while its gradient is not, and the momentum $\tilde\Pi_{\mathrm{id}}$ is central whereas the momentum of a bivector-valued field would lie in $\mathbb{B}_{\Phi}$ or $\mathbb{B}_{\Psi}$. The scalar field brackets with itself in the centre, and this is the classical face of the fact, recorded by the quantization article, that the scalar field's canonical structure is taken over from the classical theory without modification.
 
+## The Other Four Columns
+
+**The other four columns of the dictionary are named here and computed in their bands; none of them is derived in this article.** The reason to name them is that the scalar column's three results — a density that is a Hermitian form, equations that are the field equation, a bracket that is the standard one — are *not* transported by substitution, and a reader who assumes they are will get each of the three wrong at the rungs where the Hessian fails.
+
+- **The Schrödinger column.** The field is first order, so the conjugate is $i\frac{h}{2\pi}\tilde\Xi^{*}$ and the density is the coordinate rather than a function of it. The density and the phase are the pair, the bracket is the canonical one on that pair, and the four momenta of the polar word $r$, $\theta_{\mathrm{rpd}}$, $\varrho$ and $\theta_{\mathrm{rpa}}$ vanish identically — the vanishing is a property of the chart and not a constraint. The polar Lagrangian article writes the chart and the vanishing momenta; the energy is the Hamiltonian of the parent equation.
+- **The Dirac column.** The first-order action gives eight real second-class conditions, the Dirac bracket replaces the Poisson bracket, and the promotion of that bracket is the *anticommutator* and not the commutator. The Hamiltonian, the normal-ordering constant and the mode algebra are *Canonical Quantization of the Biquaternion Dirac Field*'s, and the constraint analysis is the Dirac–Bergmann article's; the present article contributes only the row.
+- **The Proca column.** Rank three of four: the primary $\pi^{0}=0$ and the Gauss law are second class, the Dirac bracket is the replacement, and the three remaining degrees of freedom are the two transverse and one longitudinal mode. The Hamiltonian and the constraint structure are *Canonical Quantization of the Biquaternion Proca Field*'s.
+- **The connection column.** For the Maxwell field the two constraints per generator are first class, the Gauss laws generate the gauge transformations, and the bracket exists only after a gauge fixing or as a Dirac bracket on the gauge-invariant functionals. *Canonical Quantization of the Biquaternion Maxwell Field* owns the construction.
+- **The matrix column.** The matter directions are regular and the fifteen connection directions are not: the Gauss laws are first class, and the count is the Dirac–Bergmann table's sixty phase-space components, fifteen primary and fifteen secondary, fifteen degrees of freedom. **The corpus does not write the $\mathrm{SU}(4)$ Hamiltonian, and nothing in this category needs it** — the matrix rung's equations are used in their Euler–Lagrange form, and the Hamiltonian appears only as the count. That is a gap and it is recorded as one, not concealed by a substitution.
+
+**What is not claimed, stated once.** This article does not claim that the scalar column's formulas hold at the other four; it claims that the *slot* has a definite meaning at each of them, and that the meaning is the Hessian and the bracket. **A reader who wants a column's formula goes to the article named in its bullet; a reader who wants to know what the column's slot is reads the table.**
+
 ## The Sector Reading of the Hamiltonian Density
 
 The field of spin zero is the field of the centre, and the centre is the direct sum of the two sectors' scalar lines, $\mathbb{B}_{C}=T_{\mathrm i}\oplus T_{\mathrm m}$ with $T_{\mathrm i}=\mathbb{R}e_t$ and $T_{\mathrm m}=\mathbb{R}(ie_t)$. Writing the complex scalar as two real scalars, one in each sector's scalar direction,
@@ -188,17 +261,19 @@ are the four-fold statement of the Klein–Gordon equation. Nothing is singled o
 
 ## What the Transcription Does and Does Not Give
 
-What the algebra gives the Hamiltonian field theory is short and definite.
+**For this column**, what the algebra gives the Hamiltonian field theory is short and definite. The generic statement above is the other half of the answer and is column-independent: regularity is invertibility of the Hessian, and the constraint count is its kernel.
 
 - **The Hamiltonian density is a Hermitian form.** The kinetic, gradient and mass contributions are each the scalar part of a form built from the field and its gradient, and the assembled density is $\mathrm{Sc}[(\tilde\nabla_\Phi\tilde{Ξ})^{*}(\tilde\nabla_\Phi\tilde{Ξ})]+4\pi^{2}\nu_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$. The form is the algebra's own Hermitian pairing, not a transcription of a foreign object, and the $i r'_t$ convention makes its kinetic term positive.
 - **The energy density and the flux are one sector element.** They are the scalar and vector parts of the Hermitian biquaternion $\tilde\Sigma_{\Psi}=\mathcal{H}e_t+\frac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $\tilde\nabla_\Phi\tilde\Sigma_{\Psi}=0$ on shell — the same element, in the same sector and the same arrangement, that the electromagnetic field's energy–momentum occupies.
 - **The sector split is the energy–charge split.** The two real scalars in the two sectors' scalar directions contribute to the energy with the same sign and to the charge with opposite signs, and the split of the density is the field version of the phase-space biquaternion's real and imaginary parts.
 
-What the algebra does not give, and what a reader should not expect, is a modification of the bracket. The scalar field is central, its conjugate momentum is central, and the bracket on functionals of the pair is the standard one; the Jacobi identity holds for the same local reason it holds for a finite system, and no algebraic anomaly appears. The interesting brackets — those in which the algebra's non-commutativity and the sector structure are load-bearing — are those of the fields that carry an index, and those lie beyond the scalar case: the Dirac field on the spinor module, whose conjugate momentum is constrained, and the connections, whose conjugate momenta are constrained and which are naturally described in the covariant formalism named above. The scalar field is the case in which the Hamiltonian transcription is complete and uninteresting, which is exactly why it is the case in which the classical canonical structure can be handed to the quantization article untouched.
+What the algebra does not give, and what a reader should not expect, is a modification of the bracket. The scalar field is central, its conjugate momentum is central, and the bracket on functionals of the pair is the standard one; the Jacobi identity holds for the same local reason it holds for a finite system, and no algebraic anomaly appears. **This is a statement about the Klein–Gordon column and not about the slot**: the brackets in which the algebra's non-commutativity and the sector structure are load-bearing are those of the fields that carry an index — the Dirac field on the spinor module, whose conjugate momentum is constrained, and the connections, whose conjugate momenta are constrained — and those columns are the ones §*The Other Four Columns* names, each with the article that computes it. The scalar field is the case in which the Hamiltonian transcription is complete and uninteresting, which is exactly why it is the case in which the classical canonical structure can be handed to the quantization article untouched.
 
 ## Summary
 
-The Hamiltonian field theory of the central scalar field is built from three objects.
+**The generic statement.** A field takes its values in a module $\mathcal M$ over the algebra; its conjugate momentum is an element of the dual module defined by the variational derivative against the rung's pairing; the Legendre transform is $\mathcal H=\left\langle\Pi,\partial_{t}X\right\rangle-L$ at every rung; and the transform is regular when the Hessian $\mathbb H:\mathcal M\to\mathcal M^{*}$ is an isomorphism. **The five columns are read off one table**: the Klein–Gordon column is the regular one, the Schrödinger and Dirac columns are first order with a vanishing Hessian, the Proca column is rank three of four, and the connection columns are singular exactly on the gauge directions. Where the Hessian is singular the bracket is the Dirac bracket, and the constraint count is the kernel's dimension — the Dirac–Bergmann table, not a separate bookkeeping.
+
+**The Klein–Gordon column** is built from three objects.
 
 **The conjugate momentum and the density.** The momentum field is $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$ and its conjugate $\pi^\dagger=\partial\xi/\partial r'_t$; the Legendre transform is regular, so the phase space is unconstrained. The Hamiltonian density is $\mathcal{H}=\pi\partial\xi/\partial r'_t+\pi^\dagger\left(\partial\xi/\partial r'_t\right)^{\,*}-\mathcal{L}=|\partial\xi/\partial r'_t|^2+|\vec\nabla_\Phi\xi|^2+4\pi^{2}\nu_m^{2}|\xi|^2$, which is not minus the Lagrangian density and is the energy density $T_{00}$ of the translation current. In the algebra it is the Hermitian form $\mathcal{H}=\mathrm{Sc}[(\tilde\nabla_\Phi\tilde{Ξ})^{*}(\tilde\nabla_\Phi\tilde{Ξ})]+4\pi^{2}\nu_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$, positive because the $i r'_t$ convention puts the kinetic term in with a plus.
 
@@ -212,6 +287,9 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 
 | Symbol | Meaning |
 |---|---|
+| $\mathcal M$, $\mathcal M^{*}$ | the value space of a field and its dual, the rung's pairing understood (the dictionary's columns) |
+| $\Pi=\delta L/\delta\left(\partial_{t}X\right)$ | the conjugate momentum as an element of the dual module; a number only where the pairing is the standard one |
+| $\mathbb H=\delta^{2}L/\delta\left(\partial_{t}X\right)^{2}$ | the Hessian; the transform is regular when it is an isomorphism, and its kernel is the constraint count |
 | $\tilde{Ξ}=\xi\,e_t$ | The central scalar field, $\xi:\mathbb{R}^{1,3}\to\mathbb{C}$, $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$ |
 | $\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\vec\nabla_\Phi\xi|^2-4\pi^{2}\nu_m^{2}|\xi|^2$ | The Lagrangian density, the sign fixed by *Noether's Theorem in Biquaternionic Form* |
 | $1/(2\pi\nu_m)$ | The length of one radian of the mass phase, $\frac{1}{2\pi\nu_m}$, the range of the force; its reciprocal $2\pi\nu_m=\frac{2\pi mc}{h}$ is the angular mass wave number, the mass parameter of the Klein–Gordon equation |

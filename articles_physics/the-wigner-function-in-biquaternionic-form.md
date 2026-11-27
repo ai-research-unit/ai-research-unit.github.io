@@ -9,7 +9,7 @@ $$
 \tilde\Xi^{*}\!\left(r-\frac{\vec s}{2}\right)\tilde\Xi\!\left(r+\frac{\vec s}{2}\right),
 $$
 
-an element of $\mathbb{B}$ at each point of the $(r,\vec p)$ space. Its zeroth moment in $\vec p$ is $\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$, its first moment is the current density times the mass, and its $h\to0$ limit is the phase-space density of the polar-form fluid on the mass shell.
+an element of $\mathbb{B}$ at each point of the $(r,\vec p)$ space. Its zeroth moment in $\vec p$ is the element $\tilde\Xi^{*}\tilde\Xi$, whose scalar part is $\rho_{\mathrm{num}}$; its first moment is the current density times the mass; and its $h\to0$ limit is the phase-space density of the polar-form fluid on the mass shell. **The scalar extraction is what makes the two marginals column-independent** — the definition contains no carrier — and §*The Internal Index* states what the element carries beyond its scalar part at the rungs that have one.
 
 The angle is $\theta_{\mathrm{spa}}=2\pi\vec\nu_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
 
@@ -62,7 +62,7 @@ where $\tilde\Xi^{*}$ is the conjugate the polar-form article uses, and the prod
 
 Three properties follow immediately and they are the ones the article uses.
 
-- The $s\to0$ point is the density. At $\vec s=0$ the product is $\tilde\Xi^{*}(r)\tilde\Xi(r)=\lVert\tilde\Xi\rVert^{2}$, so the density is present in the definition before any integration.
+- The $s\to0$ point is the density. At $\vec s=0$ the product is the element $\tilde\Xi^{*}(r)\tilde\Xi(r)$, whose scalar part is $\lVert\tilde\Xi\rVert^{2}$, so the density is present in the definition before any integration. **The scalar part and the element coincide only when the field is central**, and the difference is the subject of §*The Internal Index*.
 - The element is an element. No matrix is introduced and no basis is chosen; the object is the product of two field values, and its decomposition into parts is the algebra's decomposition.
 - The definition is pointwise in the frame. No derivative appears, so no frame choice and no metric enters. This is why the definition can be carried to the curved bookkeeping of [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html) without change, provided the relative coordinate $\vec s$ is taken along a geodesic and the offset is by half the proper length.
 
@@ -95,10 +95,10 @@ so that
 $$
 \int d^{3}p\;\tilde W_\Xi=\int d^{3}s\;\delta^{3}(\vec s)\,
 \tilde\Xi^{*}\!\left(r-\frac{\vec s}{2}\right)\tilde\Xi\!\left(r+\frac{\vec s}{2}\right)
-=\tilde\Xi^{*}(r)\tilde\Xi(r)=\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}(r).
+=\mathrm{Sc}\bigl[\tilde\Xi^{*}(r)\tilde\Xi(r)\bigr]=\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}(r).
 $$
 
-The display is exact and needs no approximation. The right-hand side is the amplitude squared, which the conventions write as $\lVert\tilde\Xi\rVert^{2}$ and never as a bare letter; it is real and non-negative by the definition of the norm, and it is the density the fluid articles call $\rho_{\mathrm{num}}$. So the momentum marginal of the Wigner element *is* the proper density, and a reader who wants the density of the fluid at an event can obtain it by integrating the Wigner element over momentum at that event.
+The display is exact and needs no approximation, and **the step that carries a general element to a number is $\mathrm{Sc}$, which is the whole of the column-independence**: the momentum marginal is the element $\tilde\Xi^{*}\tilde\Xi$ at the event, and the density is its scalar part. At a rung whose field carries an index the element is not a number, and what its remaining parts are is tabled below. The right-hand side is the amplitude squared, which the conventions write as $\lVert\tilde\Xi\rVert^{2}$ and never as a bare letter; it is real and non-negative by the definition of the norm, and it is the density the fluid articles call $\rho_{\mathrm{num}}$. So the momentum marginal of the Wigner element *is* the proper density, and a reader who wants the density of the fluid at an event can obtain it by integrating the Wigner element over momentum at that event.
 
 What the display does not say. It does not say that the Wigner element is non-negative, so it does not say that a phase-space density exists. A positive marginal is compatible with a distribution that is negative somewhere, and the negativity is the subject of a later section. The marginal statement is the weakest of the properties and the one that survives unconditionally.
 
@@ -170,6 +170,19 @@ The marginals were checked numerically on a Gaussian packet, and the residuals a
 | $1/(\pi \frac{h}{2\pi})$ | $0.318\,309\,886\,183\,790\,7$ |
 
 The fourth and fifth rows are the exact value of a Gaussian's Wigner function at its centre, $1/(\pi \frac{h}{2\pi})$, and the agreement is to the last digit a double can hold. The peak value is the check that the normalisation is right: an error of $\pi$ or of $2\pi$ in the normalisation moves it and nothing else in the table does.
+
+## The Internal Index
+
+**The definition contains no carrier; the reading of its zeroth moment does.** At the central rungs $\tilde\Xi^{*}\tilde\Xi=\lVert\tilde\Xi\rVert^{2}e_t$, the element is the density, and the quadrature decomposition of §*What the Element Carries* is complete. At every rung whose field carries an index the same product is an object in the internal space, and the density is its scalar part. **The four entries below are what the definition delivers — none of them is a construction, and only the first is worked anywhere in this article.**
+
+- **The central rungs.** $\tilde\Xi^{*}\tilde\Xi$ is a central number times $e_t$; there is no remainder, the Wigner element is one complex number per phase-space point, and the two quadratures exhaust it. The Schrödinger and Klein–Gordon columns are this case, and it is the column the rest of the article fills.
+- **The Dirac rung.** The field takes its values in the spinor module, and $\tilde\Xi^{\dagger}\tilde\Xi$ is Hermitian: its scalar part is the number density and its non-scalar part the **spin density** — the vector part in the algebra's own reading, the traceless part in the module's, and the two agree on the spin-$\tfrac12$ carrier. The Wigner element then carries two functions, and the fluid's density is the first. **The second is not a decoration**: the spin-half fluid's equations are the scalar part's equations plus a transport equation for the non-scalar part, which is [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html)'s subject and the reason the spin fluid's vorticity is sourced by rotor gradients.
+- **The Proca rung.** For the complex vector the product $\tilde\Xi^{*}\tilde\Xi$ is already a number, and the internal content sits one rank higher: the object the rung supplies is the bilinear $A^{*}_{\imath}A_{\jmath}$, whose $\varepsilon$-weighted trace is the density and whose antisymmetric part is the **polarization**. So the Proca Wigner element carries its phase-space polarization in the *first* moment and not in the zeroth — the opposite of the Dirac rung — and a reader who transposes the Dirac entry gets the wrong rank. [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) writes the polarization's fluid equation.
+- **The matrix rung.** $\tilde\Xi$ is Hermitian and $\tilde\Xi^{*}\tilde\Xi=\Xi^{2}$ is a $4\times4$ matrix whose trace is the total density and whose eigenvalues are the four partial densities. The Wigner element is matrix-valued, and its eigenvalues are the four phase-space densities. **Negativity is then a statement per eigenvalue**, and Hudson's theorem has no single-matrix form.
+
+**The consequence the fluid articles need.** The second moment of the Wigner element is an internal tensor, and the fluid's quantum pressure is its scalar part. **The anisotropic part is a separate observable that the one-component column cannot see**, and it is where the spin fluid's extra stress lives. So the pressure is column-independent only as the scalar part of the second moment, which is the Wigner face of the dictionary's pressure row.
+
+**Not claimed.** That the positivity of the matrix-valued Wigner distribution has been characterised — it has not. That the Dirac or the Proca Wigner element has been constructed in these letters — neither has, and the standard matrix statements are where to go. **What is claimed is the rank and the location of the internal content at each rung**, which is what a general article owes and what the scalar column alone cannot supply.
 
 ## What the Element Carries
 
@@ -303,7 +316,7 @@ One awkwardness the algebra produces, recorded rather than hidden. The product $
 
 ## What Is Established and What Is Interpretation
 
-Established. The definition of the biquaternionic Wigner element, and its reduction to the standard transform in the fixed-unit case. The zeroth and first moments as density and current, the first stated on the scalar part and justified by the vanishing of the commutator's scalar part. The temporal moment with the element's $i$ restored. The quadrature decomposition, exact in the fixed-unit case. The classical limit $\rho_{\mathrm{num}}\delta^{3}(\vec p-\vec\nabla_\Phi S_{\tilde\Xi})$ to leading order in the offset. The Gaussian identity $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m$. The numerical checks: marginal residuals $7.1\times10^{-7}$ and $4.0\times10^{-6}$, the peak value $1/(\pi \frac{h}{2\pi})$ to the last digit a double holds, $\mathrm{Var}(p)=0.999\,978\,2$ against $\frac{h^{2}}{4\pi^{2}}/(4\sigma^{2})=1$, $Q_{\mathrm{qnt}}(r_0)=0.997\,781\,1$, and the negativity minimum $-0.113\,359\,879\,579\,893\,8$ with $1.89\%$ of the grid negative.
+Established. The definition of the biquaternionic Wigner element, and its reduction to the standard transform in the fixed-unit case. The column table of the zeroth moment: the scalar part is the density at all four rungs, and the remainder is the spin density at the Dirac rung, the polarization at the Proca rung (one rank higher) and the four partial densities at the matrix rung. The zeroth and first moments as density and current, the first stated on the scalar part and justified by the vanishing of the commutator's scalar part. The temporal moment with the element's $i$ restored. The quadrature decomposition, exact in the fixed-unit case. The classical limit $\rho_{\mathrm{num}}\delta^{3}(\vec p-\vec\nabla_\Phi S_{\tilde\Xi})$ to leading order in the offset. The Gaussian identity $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m$. The numerical checks: marginal residuals $7.1\times10^{-7}$ and $4.0\times10^{-6}$, the peak value $1/(\pi \frac{h}{2\pi})$ to the last digit a double holds, $\mathrm{Var}(p)=0.999\,978\,2$ against $\frac{h^{2}}{4\pi^{2}}/(4\sigma^{2})=1$, $Q_{\mathrm{qnt}}(r_0)=0.997\,781\,1$, and the negativity minimum $-0.113\,359\,879\,579\,893\,8$ with $1.89\%$ of the grid negative.
 
 Interpretation. That the Wigner element is the object that mediates between the quantum state and the fluid, and that the fluid description is the $h\to0$ projection of it. Both are standard readings; the article's contribution is the letters in which they are written and the explicit separation of what is imported from what is supplied.
 
@@ -313,7 +326,7 @@ Not claimed. That the Wigner element is non-negative — it is not, and the nega
 
 The biquaternionic Wigner function is the standard $x$–$p$ transform of the field taken in the algebra, $\tilde W_\Xi(r,\vec p)=h^{-3}\int d^{3}s\,e^{-i\theta_{\mathrm{spa}}}\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, with the conjugate at the lower offset and the momentum kernel of the corpus's Fourier convention. Both choices are fixed by the requirement that a plane wave of momentum $\vec p_0$ sit at $\vec p=\vec p_0$, which is the check that catches the sign error a real wave function cannot catch.
 
-Its zeroth moment in momentum is the norm, $\int d^{3}p\,\tilde W_\Xi=\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$, exactly. Its first moment is the mass times the current,
+Its zeroth moment in momentum is the element $\tilde\Xi^{*}\tilde\Xi$ at the event, whose scalar part is the norm, $\int d^{3}p\,\tilde W_\Xi=\mathrm{Sc}[\tilde\Xi^{*}\tilde\Xi]=\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$, exactly; the remainder is the internal content, tabled in §*The Internal Index*. Its first moment is the mass times the current,
 
 $$
 \mathrm{Sc}\int d^{3}p\;p_{\imath}\,\tilde W_\Xi

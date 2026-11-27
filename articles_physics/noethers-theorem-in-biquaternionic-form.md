@@ -4,6 +4,8 @@
 
 Noether's theorem connects two things a physical theory supplies separately: its **symmetries** and its **conservation laws**. Every continuous symmetry of an action corresponds to a conserved quantity, and in a field theory to a conserved current. The theorem is not specific to any algebra, so writing it biquaternionically does not by itself produce a conservation law that was not already there. What the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ fixes is the **form** the theorem takes: which subspace the conserved objects live in, how a symmetry acts on a biquaternion-valued field, and which biquaternion expressions are the currents.
 
+**The theorem is universal; the columns are not.** The identity behind every display below — the current's divergence is the field equation contracted with the symmetry variation — holds for any carrier, and what the rung fixes is the *pairing* the current is read with: the Hermitian form for the complex scalar, the spinor bilinear for the Dirac field, the weighted vector sum for the Proca field, the trace for the matrix rung. **Two columns are worked here, the scalar and the Dirac; the other three are named in [The Rung Dictionary](the-rung-dictionary-what-the-general-symbols-mean-at-each-rung.html) and computed in their band articles**, and a reader who needs them should not read a scalar display as a general one — the order of the factors in the bilinear is what changes, and at a rung whose values do not commute it changes the current.
+
 The two ends of the theorem are both already in the read list. *Relativistic Mechanics in Biquaternionic Form* gives the free-particle action
 
 $$

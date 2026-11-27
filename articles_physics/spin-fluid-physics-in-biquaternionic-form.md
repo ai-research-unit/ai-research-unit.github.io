@@ -21,6 +21,8 @@ so the differential relations cannot close the equations. The equality holds onl
 
 The fluid's stress is [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html)'s, the entropy current and its Hermiticity declaration are [The Local Entropy Current](the-local-entropy-current.html)'s, the spin element is the rotor's, which is [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html)'s, and the conservation law the spin obeys is [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html)'s. The article adds the polarization as a thermodynamic variable, its diffusion and its relaxation, and the closure caution.
 
+**The spin here is the rotor's, and the Proca spin is a different representation.** The condition the article declares — a fluid whose elements carry spin — is satisfied at the Dirac rung by the polar decomposition's fourth factor, a rotation, and at the Proca rung by a *polarization vector* that is not a rotor and does not obey the same equation: the Proca spin is the antisymmetric part of the bilinear $A^{*}_{\imath}A_{\jmath}$, a two-form, and its transport is [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html)'s. **A reader who carries this article's polarization equation to the Proca rung will get the rank wrong** — one index here, two there — and the algebra does not identify them, because the rotor is a unit element and the polarization is a vector in the module.
+
 ## The Spin Polarization and the Spin Potential
 
 ### The polarization element

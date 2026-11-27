@@ -18,6 +18,8 @@ $$
 
 with a factor $Z^{-1/2}$ per external leg. Four operations are at work: Fourier transform each leg with its plane-wave phase, amputate it by the wave operator, put every external momentum on the mass shell, and divide by $\sqrt Z$ per leg. The companion article *The S-Matrix in Biquaternionic Form* uses this reduction and records that it is not rederived there; this article supplies the derivation in the framework's terms.
 
+**The formula is general; the external legs are the rung's.** The four operations — transform, amputate, put on shell, divide by $\sqrt Z$ — act on whatever the rung's field is: the amputation operator is the rung's mass-shell operator, the external wavefunction is the rung's plane wave, and the residue is a matrix in the internal space as soon as the field carries an index. **The scalar reduction is worked here and the spin reduction is stated**, because those are the two columns the S-matrix article uses. **The vector and matrix rungs' reductions are not written**, and at the matrix rung the reason is structural: the fifteen Gauss laws mean that not every external leg is a physical state, so the amputation and the on-shell condition do not commute with the constraint.
+
 The findings are these.
 
 - **Established (algebra).** The mass shell is the zero set of the **central mass-shell operator**
