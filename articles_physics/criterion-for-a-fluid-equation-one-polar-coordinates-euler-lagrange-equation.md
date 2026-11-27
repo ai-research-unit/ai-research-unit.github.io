@@ -175,6 +175,25 @@ $$
 
 **The razor is the covariant derivative.** A local parameter does not pass through $\partial_{\imath}$, so it forces a connection; a constant one passes through, so it forces nothing. $\mathrm{SU}(4)_{R}$ is rigid and never appears in $D_{\imath}$; $U_{\mathrm{frm}}$ appears only inside $\Omega$; $U_{\mathrm{gau}}$ is local and is what $D_{\imath}$ is built to absorb. **Same group, three roles, and only one forces a connection** — which is why the subscript is not decoration.
 
+## The Criterion at the Classical Layer
+
+**The criterion did not begin at a quantum rung, and it is worth reading where its clauses have ordinary names.** The classical equations are the base — *The Fluid Layer: Ordinary Fluid Physics* in *Biquaternion Universe Non Relativistic Non Quantum Approximation* — and every clause of the four-item form is a statement about them, with a classical violation that has been known for two centuries.
+
+| clause | at the classical layer | the classical failure |
+| --- | --- | --- |
+| one coordinate's equation, not a combination | two coordinates, density and velocity, two equations | the vorticity equation: the curl of Euler, a consequence and never a third equation of motion |
+| the velocity is a gradient | the rank of the vorticity is $0$ | a rotational flow: three Clebsch functions in place of one potential |
+| every force is a gradient | a barotropic fluid with a potential body force | the baroclinic torque, $\vec\nabla\rho\times\vec\nabla p\neq0$ |
+| the potential's effect is a function of the density | a constant-pressure wave equation is linear | a Korteweg stress, which makes it nonlinear |
+
+**The second row is the one that generalises, and the general form is a statement about rank.** "The velocity is a gradient" is the rank-zero member of a family. A two-form in four dimensions has rank $0$, $2$ or $4$; rank zero needs one potential, rank two needs a pair and hence three functions, and rank four needs two pairs. A classical fluid with no independent orientation is the rank-two case and its Clebsch representation is exactly three functions; a medium with an independent triad — a Cosserat medium — can reach rank four, and the classical fluid is the *constrained* Cosserat case in which the triad is tied to the velocity gradient. So the clause is not "irrotational" but "the vorticity has a rank the potentials can carry", and the potential flow is the lowest member rather than the general one.
+
+**The third row is the equation of state's clause, and it is where a classical fluid most often leaves the criterion.** A barotropic fluid makes the pressure a function of the density and the force a gradient; a baroclinic one does not, and the torque it leaves over is what generates vorticity. This is the same statement as the reading's: a fluid read from a field has one thermodynamic datum and therefore no baroclinicity to leave over, and a fluid that carries a second one is outside the image. The two statements are one statement read at two rungs.
+
+**The fourth row separates two things that the word "fluid" runs together.** Whether the pressure is a function of the density decides whether the wave equation is linear; it does not decide whether the object is a fluid. An ordinary fluid with a constant pressure and an ordinary fluid with a Korteweg stress are the same fluid physics with two laws of state, and the linear/nonlinear split follows the law of state and nothing else. The Gross–Pitaevskii equation is the second case and the free scalar the first, and neither is more of a fluid than the other.
+
+**So the criterion is a statement about derivations that happens to be easiest to state at the classical layer.** It is not a quantum criterion applied downward, and it is not a classical criterion lifted upward: it is the same four questions, and every quantum rung answers them with the same four answers and the same four failures, the names being the only thing that changes.
+
 ## The Ladder
 
 ### The Table

@@ -142,6 +142,18 @@ a divergence of a matrix-valued flux equated to a matrix-valued source. **It is 
 
 **That the balance's three terms are settled here.** The curvature, transport and product-rule assignments are [The Primordial Force Law's](the-primordial-force-law-and-the-two-wong-terms.html), and this article uses them without re-deriving them.
 
+## Three Limits the Test Has to Survive
+
+**The test is one line, and there are three places where the line cannot be drawn in the obvious way. Each is a limit of the classical base rather than of any group, and the three are worth stating together because the corpus's ordinary fluids supply them.** The classical equations are *The Fluid Layer: Ordinary Fluid Physics* in *Biquaternion Universe Non Relativistic Non Quantum Approximation*.
+
+**The massless limit answers "no" by having no velocity to sort.** At $m=0$ there is no rest frame, so the boost chart does not exist, and the velocity that the test asks about is not a section of anything — it is not defined. The reading's two charts fail together there: the label chart fails on the null cone and the value chart diverges, and what survives is a null current rather than a flow. So the test's verdict is neither "base-valued" nor "internal"; the question is not reached, and this is one of the few places in the corpus where the honest answer to a two-way test is that the object has left its domain.
+
+**In one spatial dimension the test is vacuous in its first clause.** A one-form in one dimension is always closed, so every flow is a gradient and every flow is irrotational; the rank clause of the criterion is satisfied by every field, and the S5 answer is "base-valued" before the field is inspected. What decides the verdict there is the pressure alone: with no pressure the equation is Hopf's, with a diffusive term it is Burgers', with a dispersion it is Korteweg–de Vries, and the last is the only one with a soliton. So the test must be applied in two or more spatial dimensions to discriminate, and a one-dimensional verdict is a verdict about the law of state and not about the velocity.
+
+**The condensate is the case where the two answers coincide and the objects still differ.** The Gross–Pitaevskii velocity is $(\hbar/m)\vec\nabla\theta$: a gradient, base-valued, and its equation is a law. But the condensate has a healing length, a length set by the interaction and the density at which the order parameter recovers, and the reading's field has no such length because it has no interaction and no density to recover to. The formulas agree and the objects do not, and the healing length is the test that shows it: a prediction the reading cannot make is the sharpest evidence that the agreement is of formulas and not of objects.
+
+**None of the three limits is about a group, and that is the point of stating them here.** One is decided by the mass, one by the dimension, one by the interaction; the test sorts the output in all three, and the rung and the group never enter. A reader who expects S5 to be a statement about non-abelian structure will find instead that the three cases in which it needs care are the three in which a classical number, not an algebra, decides.
+
 ## Open Questions
 
 **Is there a rung that passes the first clause and fails the second?** That would be a rung with a distinguished base direction whose velocity's value is nevertheless internal — a field that singles out a direction in the base but whose flow lives in the fibre. **The corpus has no such rung, and the article's clause structure exists to make the possibility statable.** If one were found, the article's verdict rule — "fails either clause, balance" — would predict a balance, and whether that prediction is right is untested.

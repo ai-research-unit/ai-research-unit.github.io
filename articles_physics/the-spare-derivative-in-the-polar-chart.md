@@ -173,6 +173,30 @@ $$
 
 **The general statement, and it is the article's conclusion in one line.** *The order of a coordinate's equation is decided by whether the action contains the coordinate, and the acceleration law is manufactured from the coordinates it does not contain.* A rung's force slot is therefore a statement about the action's algebraic term: the more coordinates the algebraic term touches, the fewer spare derivatives the rung has, and the weaker its acceleration law's warrant.
 
+## The Classical Layer: Where There Is Nothing to Spend
+
+**The ordinary fluid is the case in which S4 has a first-order equation and still manufactures nothing, and the reason is worth stating because it fixes what "manufactured" means.** The classical equations are the base — *The Fluid Layer: Ordinary Fluid Physics* in *Biquaternion Universe Non Relativistic Non Quantum Approximation* — and they are written on a flow element whose temporal slot carries the constant $ic$:
+
+$$
+\tilde V_\Phi=i c\,e_t+\vec v .
+$$
+
+There is no phase coordinate in that element and therefore no coordinate whose equation sits one order below anything. What the classical fluid has instead is a *trajectory*, and the derivative along it is the pairing
+
+$$
+\bigl\langle\tilde V_\Phi,\tilde\nabla_\Phi f\bigr\rangle_{\natural}=\partial_{t'}f+\vec v\cdot\nabla f=\mathrm{D}_{\mathrm{mat}}f ,
+$$
+
+which is the material derivative for every differentiable $f$ and every flow. Euler's equation is then $\mathrm{D}_{\mathrm{mat}}\tilde V_\Phi=-\vec\nabla_\Phi p_{\mathrm{th}}/\rho_{\mathrm{mass}}+\vec f_{\mathrm{ext}}$, and it holds because the left-hand side *is* the acceleration of the markers by definition. So the manufacturing step at the classical layer returns a definition, and the whole content of the equation is on the right-hand side. That is the degenerate case of S4, and it is why a classical fluid needs the pressure as an extra datum: nothing in the algebra supplies it.
+
+**The difference from the field is the constant on the temporal slot, and it is the whole difference.** When the slot carries a phase, its time derivative is a frequency, the guidance relation is first order in that phase, and differentiating it produces a second-order equation with a force slot to fill. When the slot carries $ic$, the first-order statement is continuity — a divergence of a current — and differentiating a divergence does not produce an acceleration law. The spare derivative is not scarce in the first case and not present at all in the second, and this is the same fact as the empty temporal slot of the count.
+
+**The algebra's product says the same thing from the other side.** The quaternion product of the flow with the gradient is $c\partial_{r'_t}f-\vec v\cdot\nabla f$, the material derivative with the convective term reversed, and that is why the fluid's natural bilinear is the pairing $\langle\cdot,\cdot\rangle_{\natural}$ and not the product. The product is the operation that, acting on an element, manufactures a law from a first-order statement; a classical fluid cannot use it, and the object that can is the one the fluid will be replaced by.
+
+**Viscosity is the second classical statement, and it is the opposite failure.** The dissipative term has a fixed sign under $t'\mapsto-t'$ while any term manufactured from an action is even under it, so no differentiation of a first-order transport law can produce it; the force is inserted on the right-hand side, with Rayleigh's dissipation function as the symbol of the insertion. So the classical layer exhibits both boundaries of S4 — a first-order equation with nothing below it, and a term with nothing above it — and the two are one absence seen twice: there is no action whose phase could be the spare coordinate.
+
+**The one-dimensional linearisations do not restore a spare derivative, and it is worth saying so because they look as if they do.** Hopf's transformation carries Burgers' equation into the heat equation, and the Korteweg–de Vries soliton into a linear problem at the other end; both are changes of variable, not variations, and the Burgers case works only for potential flow, because the vector identity it uses is the gradient of the scalar one and a rotational flow is untouched by it. A change of variable that solves an equation is not a spare derivative that produces one, and the criterion of this section is about production.
+
 ## The Order Table Across the Ladder
 
 **The article's accounting is one table, and the table is the reason the ladder's five fluids look as different as they do.** Read down a row and it is one rung's order structure; read across a column and it is one order property at five rungs.
