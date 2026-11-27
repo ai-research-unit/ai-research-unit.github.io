@@ -522,30 +522,34 @@
      the object itself — one real scalar density, the pairing that makes it real, the stationary-action principle that
      turns the density into an equation, the general shape every rung's Lagrangian has, and the one claim that shape buys:
      across the five rungs only the kinetic term's order and the algebraic term's content change, and nothing else does.
-     *From the Action to the Field Equation* gives the classical apparatus every force block applies — Noether's theorem,
-     the connection a local symmetry forces, the curvature and its Bianchi identity, the same chain non-abelian, the
-     running of the coupling — and closes on the three carriers every spin band is cut along. *From the Field Equation to
-     the Fluid* states the test that decides when an equation deserves the name — one coordinate's Euler–Lagrange equation
-     in the polar chart and not a combination constructed on the field equation, one of warrant and not of content — and
-     then performs the five-step derivation under it, once, at no particular group: the action, the polar word, the type
-     decomposition with one equation per coordinate, the order reduction that puts a force in the derivatives of the
-     phase's equation, and the base-versus-internal test that decides whether the result is a law or a balance. *From the
+     *From the Action to the Field Equation* gives the classical apparatus every force block applies — Noether's theorem
+     and the stress–energy of translation, the connection a local symmetry forces, the curvature and its Bianchi
+     identity, the same chain non-abelian, and the Yang–Mills equation its variation gives — and closes on the three
+     carriers every spin band is cut along. The renormalisation group is not in that arrow: it belongs to the measure,
+     and it sits with the other three measure results in *The Euclidean Reading, the Anomaly and the Index*.
+     *From the Field Equation to the Fluid* states the test that decides when an equation deserves the name — one
+     coordinate's Euler–Lagrange equation in the polar chart and not a combination constructed on the field equation,
+     one of warrant and not of content — and then performs the five-step derivation under it, once, at no particular
+     group: the action, the polar word, the type decomposition with one equation per coordinate, the order reduction
+     that puts a force in the derivatives of the phase's equation, and the base-versus-internal test that decides
+     whether the result is a law or a balance. *From the
      Fluid Equations to Thermodynamics Equations* then closes that fluid into a substance: the thermal parameter and the
      state it selects, the three tests that decide whether the closure is local — determinacy, consistency and
      integrability — and the departures when a test fails. It changes no band's equation; it reads the band's fluid
      thermally, which is why its rung follows the fluid slot and is empty until that slot is filled. *From the
-     Fluid to the Force* takes the last two steps and states them as their own subject: what differentiating a first-order
-     transport law produces, why a matrix-valued charge forces a commutator in place of a pairing, and what a force block
-     owes in inventory. *From the Field Equation to the Quantum Field* is the second continuation of the same equation and
-     is independent of the fluid one: the promotion of the bracket to a commutator, stated as a postulate imported once
-     and used afterwards, then the ladder the postulate needs, the objects built on the ladder, the three results read off
+     Fluid to the Force* takes the force side of the last two steps and states it as its own subject: what
+     differentiating a first-order transport law produces, why a matrix-valued charge forces a commutator in place of a
+     pairing, and what a force block owes in inventory. *From the Field Equation to the Quantum Field* is the second
+     continuation of the same equation and is independent of the fluid one: the promotion of the bracket to a commutator, stated as a postulate imported once
+     and used afterwards, then the ladder the postulate needs, the objects built on the ladder, the four results read off
      the measure, and the promotion applied to the connection. It carries no carrier of its own; the six canonical
      quantisations sit in the band of the field each one quantises, in *Biquaternion Universe Relativistic Quantum Theory*
      and in the sectors, and the section's hub article is the index that says which carrier took which. **The Lagrangian is
      the premise, the criterion is what grades the result, the skeleton section is the method, the section on the other
-     side is its output, the thermodynamics is what turns that output into a substance, and the promotion is what every
-     sector's quantum apparatus imports.** Every sector below — primordial, strong, electroweak, electromagnetic — is a
-     declension of that skeleton, and a declension either passes all five steps or names the step it breaks.
+     side is its output, the thermodynamics is what turns that output into a substance, the force section is what turns
+     the same output into the balance every sector is named for, and the promotion is what every sector's quantum
+     apparatus imports.** Every sector below — primordial, strong, electroweak, electromagnetic — is a declension of
+     that skeleton, and a declension either passes all five steps or names the step it breaks.
 
      The chain is stated at no particular group so that it specialises to the $\mathrm{SU}(4)$ instance below and not away
      from it. A reader who meets the apparatus inside a sector reads it with that sector's notation already doing work; the
@@ -561,7 +565,7 @@
 
 ### The Lagrangian
 
-<!-- the object, stated before the arrows that use it, because all three arrows start from it and none of them
+<!-- the object, stated before the arrows that use it, because every arrow below starts from it and none of them
      re-derives it. What a Lagrangian is here: one real scalar density, and the reason "real" and "scalar" are
      requirements rather than conveniences — a biquaternion-valued expression is not a scalar until it is
      paired, so the choice of pairing is part of the definition of the Lagrangian and not a later convention.
@@ -575,7 +579,16 @@
      derives; nor that it is deduced from anything more primitive than the symmetries the corpus asks of it.
      Where the sector Lagrangians live: the family "The Lagrangian and ..." sits inside each sector block, one
      article per object per rung, and *The Sector Hub* states which sectors that family reaches and which it
-     does not. -->
+     does not. The section closes on the same density read in the other chart: *Hamiltonian Field Theory in
+     Biquaternionic Form* gives the conjugate momentum, the regularity of the Legendre transform and the field
+     Poisson bracket, which three later sections take as given — the thermal state, the promotion's postulate and
+     the fluid's energy — and which none of them derives. **The two that continue the chart the Hamiltonian closes are
+     both written now.** *The Inverse Problem of the Calculus of Variations: Helmholtz's Conditions* runs the arrow
+     backwards — from an equation to the action it must have come from — and is why the corpus's sentence that the
+     viscous term has no action is a theorem: the criterion of the fluid block asks of one polar coordinate what
+     Helmholtz asks of a whole system. And *The Dirac–Bergmann Algorithm* is the property the Hamiltonian article's
+     regularity supplies when it fails: the primary and secondary constraints, the first- and second-class split, the
+     Dirac bracket, and the count that the fluid's closure test has been quoting in components. -->
 
 <a href="articles_physics/the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a>
 <!-- the three requirements on a density; cyclicity as the whole of the invariance, with a pairing that fails written out; reality and the sign as one statement with the Hermiticity type; positivity as a Euclidean statement; the element pairing and the trace as one functional at $2\times2$, so the obstruction on $\mathbb{C}^4$ is dimension and not symmetry; the $\tfrac12$, the $\tfrac14$ and the factor six the normalisation forces; the left action, where the trace is unavailable and the Hermitian form is the density. -->
@@ -583,21 +596,44 @@
 <a href="articles_physics/the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.html">The Relativistic Particle and the Lagrangian: The Stationary-Action Principle</a>
 <!-- the stationary-action principle; the relativistic particle; the relativistic field; symmetries of the action; invariance under the rotor; the biquaternion structure of the action. -->
 
+<a href="articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a>
+<!-- the conjugate momentum field and the regularity of the Legendre transform; the Hamiltonian density and its equality with the energy density; the Hamiltonian field equations; the field Poisson bracket and its local Jacobi identity; the continuity equation and the energy flux; the density and flux as one Hermitian biquaternion; the sector reading of the density and the energy–charge contrast; the point of contact with the covariant (De Donder–Weyl) formalism; what the transcription does and does not give. -->
+
+<a href="articles_physics/the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html">The Inverse Problem of the Calculus of Variations: Helmholtz's Conditions</a>
+<!-- the inverse question stated before the test; self-adjointness of the linearisation as the whole of the criterion; the three conditions for a second-order system, each read in one line; the damped oscillator failing the damping condition for every nonzero damping; the Caldirola–Kanai multiplier, and why an algebraic damping is repairable where a viscous one is not; the three grades of the inverse problem, the criterion as Helmholtz at unit multiplier and one named coordinate, and what the theorem does not decide — sign, stability, and the single-history reading of dissipation. -->
+
+<a href="articles_physics/the-dirac-bergmann-algorithm-first-and-second-class-constraints.html">The Dirac–Bergmann Algorithm: First- and Second-Class Constraints</a>
+<!-- the singular Hessian and where each field's primary constraint comes from; the consistency condition, its three outcomes and the stopping rule; first class as redundancy and second class as restriction, in one bracket; the Dirac bracket as the Poisson bracket projected on the constraint surface, and what it buys and costs; the count $N_{\mathrm{dof}}=(N_{\mathrm{phase}}-2f-s)/2$ with the corpus's five rungs as its values, the Proca mass converting a first-class pair into a second-class one; what the fluid calls these — the closure test as the count, the family of fluids as the orbit, the state slot as the secondary constraint solved, the frame–gauge split as the class split. -->
+
 ### From the Action to the Field Equation
 
 <!-- the first arrow, run from the Lagrangian rather than from nothing: Noether's theorem, so that the
-     conservation laws are downstream of the symmetry and not assumed; then the making-local of a global
-     symmetry, which forces a connection, a covariant derivative and a curvature; the Bianchi identity read as
-     the Jacobi identity; the same chain non-abelian, where the field strength stops being locally invariant
-     and the equation has to carry its commutator; the renormalisation group for the one coupling's scale
-     dependence; and the closure on the three carriers — vector part, ideal, centre — along which every spin
-     band below is cut. **This arrow takes the Lagrangian as given and never re-derives it**: its subject is
-     what the variation of that one density produces. A reader who wants to know why the force slot has the
-     form it has should read this arrow first; a reader who wants to know why the fluid has the slots it has
-     should read the middle one first. -->
+     conservation laws are downstream of the symmetry and not assumed, and its translation case, which is the
+     stress–energy of the field — the one conservation law every later section reads rather than re-derives,
+     since the fluid's closure takes its two coefficients, the energy density and the pressure, from a stress
+     tensor stated here; then the making-local of a global symmetry, which forces a connection, a covariant
+     derivative and a curvature; the Bianchi identity read as the Jacobi identity; the same chain non-abelian,
+     where the field strength stops being locally invariant and the equation has to carry its commutator; and the
+     closure on the three carriers — vector part, ideal, centre — along which every spin band below is cut. The
+     renormalisation group is not here: it is a statement about the measure and sits in *The Euclidean Reading,
+     the Anomaly and the Index* below. **This arrow takes the Lagrangian as given and never re-derives it**: its
+     subject is what the variation of that one density produces. A reader who wants to know why the force slot has
+     the form it has should read this arrow first; a reader who wants to know why the fluid has the slots it has
+     should read the middle one first. **The link between the stress–energy stated here and the pressure the
+     closure imports is written, and it is *Belinfante–Rosenfeld: Why the Canonical Stress Tensor Is Not
+     Symmetric*.** For a field with spin the canonical tensor is not symmetric, the antisymmetric part is the
+     divergence of the spin density, and the improvement built from that density is what the fluid reads as its
+     stress and gravity as its source. So the section's stress–energy entry gives the canonical tensor and this one
+     gives the tensor the later sections actually use. -->
 
 <a href="articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a>
 <!-- the action and what a symmetry is; the current of the central phase; translation invariance and the conserved four-momentum; the energy–momentum of the field; Lorentz invariance and the angular-momentum bivector; what is inherited, added and interpretation. -->
+
+<a href="articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a>
+<!-- the field action in biquaternion form; Noether's theorem and the stress–energy of translation; the scalar field stress–energy; the electromagnetic stress–energy as a bigeneral quaternionic bilinear; the conservation law for field and matter. -->
+
+<a href="articles_physics/belinfante-rosenfeld-why-the-canonical-stress-tensor-is-not-symmetric.html">Belinfante–Rosenfeld: Why the Canonical Stress Tensor Is Not Symmetric</a>
+<!-- the canonical tensor and the one-line identity that its antisymmetric part is minus the divergence of the spin density; the improvement as a superpotential, conservation and the total four-momentum preserved by the antisymmetry; symmetry demanded by three readers and agreed — gravity, the fluid's surface element, the biquaternion's four-component time row; the superpotential freedom that survives, and the conformal improvement showing even the symmetric tensor is not unique; a stress at a point as unambiguous only relative to a constitutive statement; the spin fluid as the class that keeps the asymmetric part, the Frenkel condition as its superpotential choice, and the Korteweg stress as constitutive and not bookkeeping. -->
 
 <a href="articles_physics/the-minimal-coupling-in-biquaternionic-form.html">The Minimal Coupling in Biquaternionic Form</a>
 <!-- the global phase symmetry; making the symmetry local; the connection and the covariant derivative; the field strength as the curvature; the minimal-coupling principle and the Maxwell field; the non-abelian extension and where the gap is; the mass term and the axial symmetry. -->
@@ -614,14 +650,8 @@
 <a href="articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a>
 <!-- the non-abelian curvature and the adjoint covariant derivative; the Yang–Mills action $-\tfrac12\int d^4r\,\mathrm{Tr}(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath})$ and its invariance as one line of cyclicity, with the matrix trace distinguished from the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is not cyclic and would cost the invariance, and the square shown to be the only dimension-four invariant; the variation $\delta S=2\int d^4r\,\mathrm{Tr}(\sum_{\jmath}\delta\mathcal{A}_{\jmath}D_{\imath}F_{\imath\jmath})$, which is the integration by parts that must use the adjoint covariant derivative, and the source-free equation it gives; the sourced equation, with the placement of the commutator term that covariance and conservation force; covariant conservation of the current; the first-class constraint, the non-linear Gauss law and two polarizations per generator; the Noether current, bilinear in the connection because the connection carries the charge it couples to, and the symmetric traceless energy–momentum whose trace anomaly is the beta function; the abelian limit; the Bianchi identity as the homogeneous half; the limits of the biquaternion packaging, and the external algebrodynamical claim in which the trace-free part of a biquaternion connection is fixed linearly by the electromagnetic potential; the ceiling, located in the algebra and not in the density; and the biwave equation with a vector structural coefficient, its fundamental solutions by case and the matrix-form claim with what it does and does not say. -->
 
-<a href="articles_physics/the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a>
-<!-- the scale dependence of the effective action; the regulator and the shell; integrating out a shell and the scalar quartic coupling; the non-abelian connection coupling; fixed points and the flow equation; whether the regulator respects the two sectors. -->
-
 <a href="articles_physics/particle-spins-in-the-biquaternion-algebra-three-carriers-their-meaning-and-their-order.html">Particle Spins in the Biquaternion Algebra: Three Carriers, Their Meaning and Their Order</a>
 <!-- the three carriers and the criterion of cost; the real vector part as the seat of the algebra's non-commutativity, with the commutator closing on it and the product failing, and its adjoint rotation of weights $+1$, $0$, $-1$; the ideal as a frame, irreducible, four real dimensions, and moved by conjugation to a distinct ideal; the centre as the commutant, fixed pointwise; then the same order read on the particles, bosons on the vector part, fermions on the ideal, scalars as an invariant or a rotor, with the third polarization, the count $4=4$ and the graviton's symmetric square; and the limits, including the menu's $67$, $115$, $110$ and $15$ entries. -->
-
-<a href="articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a>
-<!-- spectral triples and their axioms; the biquaternion candidate in cells; the order of the gradient commutator, the first-order condition and the grading; the real structure and the KO-dimension; the spectral dimension and the heat kernel; the distance formula and the metric as output; inner fluctuations, connection fields and the spectral action; the almost-commutative triple and the finite geometry; what is established and what is interpretation; the gamma formulation. -->
 
 ### From the Field Equation to the Fluid
 
@@ -677,7 +707,16 @@
      being the content rather than the defect. The band's slot follows its fluid slot and carries the instance; it
      is emitted in the six bands that have fluid equations and will be emitted in the others as they acquire them.
      The order is the order of the closure: the state, the bridge that makes it local data, the closure and its
-     tests, the departures when the tests fail, and the ledger. -->
+     tests, the departures when the tests fail, and the ledger. **The two articles the section owed, both inputs it names and does not
+     derive, are written.** *The Free-Energy Functional at Finite
+     Temperature* is the potential whose stationarity is the state and whose value is the pressure: it turns the
+     equation of state from a stipulation into a variation, it makes Euler, Gibbs–Duhem and the Maxwell relations one
+     functional's calculus, and it shows the three tests to be its integrability, its consistency and its truncated
+     determinacy. *The Chemical Potential Is the Phase's Frequency* identifies $\mu_{\mathrm{chm}}=-\partial_{t'}S
+     =\frac{h}{2\pi}\omega_\mu$, the last parameter the closure writes without deriving and the same object every
+     charged band couples to, and thereby justifies the count of three. The closure above can now be read as
+     generated rather than stipulated; its three tests did not depend on the two, and they now have a derivation
+     behind them. -->
 
 #### The State and Its Functionals
 
@@ -687,10 +726,16 @@
      trace taken in a moving frame; and the Schwinger–Keldysh contour, the one formalism here that keeps a real-time
      history and is therefore the one that can be read kinetically. What the algebra supplies is the central scalar
      and the direction of the trace; what it does not supply is a spectrum, and no temperature is derived in this
-     subsection. -->
+     subsection. **The subsection also carries the closure's variational principle**, *The Free-Energy Functional at
+     Finite Temperature*: the Legendre transform of $\log Z$, whose stationarity is the field equation at $\beta$
+     and whose value is the pressure, so that Euler's relation, Gibbs–Duhem and the Maxwell relations are one
+     functional's calculus and the three tests of the local state are its properties. -->
 
 <a href="articles_physics/the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>
 <!-- the partition function and the thermal state; the trace as a scalar extraction; the thermal operator and the partition function; what the trace discards; imaginary time and where the material sector enters; whether there is a genuine modification.  The logarithm of the norm is read as a chemical potential, the total potential being $\log\lvert N\rvert+V$. -->
+
+<a href="articles_physics/the-free-energy-functional-at-finite-temperature.html">The Free-Energy Functional at Finite Temperature</a>
+<!-- the closure's missing variational principle: $\Gamma_\beta[\varrho]=W_\beta[J]-\int J\varrho$ as the effective action at temperature, its stationarity the field equation at $\beta$ and its value the pressure; Euler, Gibbs–Duhem and the Maxwell relations as one functional's calculus; the three tests of the local state as its integrability, consistency and truncated determinacy; the one-loop $V_{\mathrm{eff}}=V_0+\tfrac12\mathrm{STr}\log\hat K$ with the minimum as the state, the curvature as the thermal mass and the deviation as the quantum pressure, so that $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ is a truncation and not a definition; the two faces, the thermal circle and the closed time path; what it does not give — transport, a closed exact form, a first-order transition, a renormalisation. -->
 
 <a href="articles_physics/quantum-thermodynamics-in-biquaternionic-form.html">Quantum Thermodynamics in Biquaternionic Form</a>
 <!-- the Gibbs state and the convergence of $Z$; thermodynamic quantities as functionals of the state; the variational characterisation; Legendre structure and thermodynamic identities; low- and high-temperature limits; the KMS condition as the characterisation of the same state. -->
@@ -728,10 +773,16 @@
      thermal part that obeys the identities and a quantum part that does not; the three tests, each stated so that
      it can fail; Gibbs–Duhem's relation in the corpus's variable with its sign; the potential behind the response
      functions, whose absence is what a fitted equation of state hides; and Tolman's law, which is the statement
-     that the temperature is a field and that in equilibrium it trades against the local light speed. -->
+     that the temperature is a field and that in equilibrium it trades against the local light speed. **The
+     conjugate that the count calls dependent is named by one article**: *The Chemical Potential Is the Phase's
+     Frequency*, $\mu_{\mathrm{chm}}=-\partial_{t'}S=\frac{h}{2\pi}\omega_\mu$, which is why the triple is three
+     and not four, and which reads the fugacity as the phase's advance around one turn of the thermal circle. -->
 
 <a href="articles_physics/the-local-thermal-state-of-a-fluid.html">The Local Thermal State of a Fluid</a>
 <!-- $\rho_{\mathrm{num}}(x)$, $p_{\mathrm{th}}(x)$ and $\tilde V_\Phi(x)$ at the pointwise temperature; the flow written as the element, low index; what a local equation of state requires. -->
+
+<a href="articles_physics/the-chemical-potential-is-the-phases-frequency.html">The Chemical Potential Is the Phase's Frequency</a>
+<!-- $\mu_{\mathrm{chm}}=-\partial_{t'}S=\frac{h}{2\pi}\omega_\mu$ with $\omega_\mu=-\partial_{t'}\theta_{\mathrm{pha}}$, the temporal partner of the guidance relation, so that the chemical potential is read from the configuration and is not an independent field — the reason the state's count is three; the constant each slot carries, tabled; the neutral field with no phase and $\mu=0$, the matrix rung with four diagonal phases and four potentials; the twist of the thermal circle, $\beta\omega_\mu=\mu_{\mathrm{chm}}/(k_BT)$, as the fugacity's exponent, so that the holonomy and the frequency are one number; Gibbs–Duhem's two derivatives and their opposite signs; Euler's relation as homogeneity, and the mass as the zero of $\mu$. -->
 
 <a href="articles_physics/the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>
 <!-- $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ in the proper density and $\beta$; $\beta$ as the circumference of the imaginary-time circle, a length; the gradient correction to the pressure. -->
@@ -749,8 +800,15 @@
      potential, and the conjugate relation that fails off equilibrium; the Frenkel and Weyssenhoff conditions as the
      statement of which spin current is the physical one; and the two-fluid model, where one substance has two
      velocities and a mutual friction. None of these is a new law: each is the first-order correction of a closure
-     written without it, which is why they sit after it and not in it. -->
+     written without it, which is why they sit after it and not in it. **The subsection now opens with the
+     formalism the corrections presuppose**, *The Closed-Time-Path Action: One Action on Two Branches*: the doubled
+     field, the influence functional whose real part is the Rayleigh dissipation and whose imaginary part is the
+     noise, and the Keldysh rotation that makes the retarded, advanced and noise components of one kernel — which is
+     what makes two claims elsewhere compatible rather than contradictory, that a viscous flow has no action on one
+     history and that its action on two exists. The four articles after it state the corrections. -->
 
+<a href="articles_physics/the-closed-time-path-action-one-action-on-two-branches.html">The Closed-Time-Path Action: One Action on Two Branches</a>
+<!-- the contour, the doubled field and the final-time identification; the generating functional as a difference of the branches' actions, and $Z[J,J]=1$ as the identity that makes the doubling bookkeeping; the variation on each branch, and the influence functional an environment leaves behind — nonlocal, and where every dissipative term lives; the Keldysh rotation into mean field and difference, the retarded and advanced kernels and the Keldysh noise, with the fluctuation–dissipation theorem as the statement that the third is fixed by the first two; the Rayleigh function as the real part of the influence functional; why Helmholtz's theorem is respected — no action on one history, an action on two — and the price, a doubled field, a pair of histories, an irreducible noise; the three doublings of the corpus tabled and kept apart. -->
 <a href="articles_physics/causal-dissipative-fluid-physics-in-biquaternionic-form.html">Causal Dissipative Fluid Physics in Biquaternionic Form</a>
 <!-- Israel-Stewart-type corrections; the relaxation time and causal propagation; positivity and stability as the closing section; transcription. -->
 
@@ -775,7 +833,7 @@
 
 ### From the Fluid to the Force
 
-<!-- the last two steps of the skeleton taken as their own subject, because the force is what every sector
+<!-- the force side of the last two steps taken as its own subject, because the force is what every sector
      below is named for and the general form is nowhere stated as a generality. The balance and its three
      terms, the operation that a matrix-valued charge forces in place of a pairing, and the inventory a force
      block owes. Read after the five steps and after the thermodynamic closure, and before any sector, because a
@@ -899,13 +957,19 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 #### The Euclidean Reading, the Anomaly and the Index
 
-<!-- the three results that are read off a determinant rather than a commutator, and that therefore belong beside
-     the action and not beside any one carrier. The Wick rotation as a coefficient map on the algebra, with the two
-     reality conditions it induces and the square root of the time reflection it is; the conformal anomaly as the
-     variation of the determinant, with the multiplicity of the fibre and the heat-kernel coefficients; and the
-     index theorem with its zero-mode count, where the rank-two limitation of the algebra is stated rather than
-     hidden. Each is a statement about the measure, and the measure is the action's own object, which is why the
-     three sit here and not with a field. -->
+<!-- the four results that belong beside the action rather than beside any one carrier, three read off a
+     determinant and one read off its flow. The renormalisation group goes first because it is the scale on which the
+     other three are defined: the scale dependence of the effective action, the regulator and the shell, and the fixed
+     points of the flow — a statement about the measure and not about the classical variation, which is why it is
+     here and no longer in *From the Action to the Field Equation*. Then the Wick rotation as a coefficient map on
+     the algebra, with the two reality conditions it induces and the square root of the time reflection it is; the
+     conformal anomaly as the variation of the determinant, with the multiplicity of the fibre and the heat-kernel
+     coefficients; and the index theorem with its zero-mode count, where the rank-two limitation of the algebra is
+     stated rather than hidden. Each is a statement about the measure, and the measure is the action's own object,
+     which is why the four sit here and not with a field. -->
+
+<a href="articles_physics/the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a>
+<!-- the scale dependence of the effective action; the regulator and the shell; integrating out a shell and the scalar quartic coupling; the non-abelian connection coupling; fixed points and the flow equation; whether the regulator respects the two sectors. -->
 
 <a href="articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a>
 <!-- the three subspaces of $\mathbb{B}$; the standard Wick rotation as the coefficient map $W=\mathrm{diag}(-i,1,1,1)$; the two reality conditions on one algebra, $\flat=\bar{\cdot}\circ T$ with $W^{2}=T$ and $W$ a square root of the time reflection; why the compact slice is easier, the six rows of the table being one property under five names; why the change sometimes fails, by the analyticity of the continued quantity in the strip; the split of applications that transfer and those that resist, with the thermal objection answered; what is established and what is interpretation. -->
@@ -936,26 +1000,42 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 ### Other aspects
 
-<!-- a catch-all, and empty by design until something belongs in it. What would go here: apparatus that the
-     four arrows above assume but do not own — a result about the algebra or the density that every arrow uses
-     and none of them derives, a construction that cuts across the rungs instead of sitting at one of them, or
-     an external programme the corpus borrows from without yet having absorbed. What would not go here: a
-     sector's instance of the chain, which belongs in that sector below; a step of the skeleton, which belongs
-     in *From the Field Equation to the Fluid*, or to *From the Field Equation to the Quantum Field*, where the
-     functional integral, the determinant and the index count sit, or to the sector that instantiates a procedure, where
-     the Faddeev–Popov one does. **The section stays empty
-     rather than being filled to look complete**: an entry here should be a statement that has no better home,
-     and the corpus does not have one of those yet. -->
+<!-- the catch-all, and it has an occupant now. What belongs here: apparatus that the arrows above assume and
+     do not own — a result about the algebra or the density that every arrow uses and none derives, a construction
+     that cuts across the rungs instead of sitting at one of them, or an external programme the corpus borrows
+     without having absorbed. The one entry is the third kind: *The Spectral Triple of the Biquaternion Algebra* is
+     non-commutative geometry, and it is read here as the algebraic interpretation of the corpus's own objects — the
+     algebra, the Hermitian completion and a Dirac operator — and not as a claim the corpus makes. What does not
+     belong here: a sector's instance of the chain, which belongs in that sector below; a step of the skeleton,
+     which belongs in *From the Field Equation to the Fluid* or in *From the Field Equation to the Quantum Field*,
+     where the functional integral, the determinant and the index count sit; or a procedure's instantiation, where
+     the Faddeev–Popov one sits in the strong sector. **The category's shape is now stated as a result**:
+     *The Three Scales* gives one constant per arrow that crosses a unit — $c$, $\frac{h}{2\pi}$ and $k_B$ — and
+     says why the chain crosses exactly three times and carries no fourth, the absence of Newton's $G$ being the
+     same statement as the absence of a gravitational rung. **The section's second result is the prohibition the
+     chain obeys**, *Ostrogradsky, or Why No Rung Goes Past Two Derivatives*: a nondegenerate density past one
+     derivative gives a linear Hamiltonian and an unbounded energy; no rung has one, and the second-order
+     *appearances* — the quantum potential's $\nabla^{2}\varrho/\varrho$, the Korteweg stress — are first-order
+     densities whose variation raises the equation's order, so the test is to count derivatives in the density and
+     not in the equation. **Nothing here is owed.** -->
+
+<a href="articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a>
+<!-- spectral triples and their axioms; the biquaternion candidate in cells; the order of the gradient commutator, the first-order condition and the grading; the real structure and the KO-dimension; the spectral dimension and the heat kernel; the distance formula and the metric as output; inner fluctuations, connection fields and the spectral action; the almost-commutative triple and the finite geometry; what is established and what is interpretation; the gamma formulation. It stands in *Other aspects* and not in the arrow above, because it is an external programme read against the corpus's objects and not a step of the chain. -->
+
+<a href="articles_physics/the-three-scales-c-hbar-and-k-b-as-the-three-continuations.html">The Three Scales: $c$, $\hbar$ and $k_B$ as the Three Continuations</a>
+<!-- what a constant is in this corpus — an exchange rate between two labels the algebra does not distinguish, so that setting it to one is a chart and not a physical statement; $c$ between the temporal and spatial coefficients of one bivector, with $c\to\infty$ the Galilean limit; $\frac{h}{2\pi}$ between the algebra's angle and the reading's action, with $\hbar\to0$ the ray limit; $k_B$ between a period and a temperature, and the asymmetry that it marks no regime because a temperature is a rate, so the third continuation's parameter is $\beta$; the combination that carries all three, $c\beta=\frac{hc}{2\pi k_BT}$, the thermal circle's circumference in length and the relativistic thermal wavelength, with the table of which object is blind to which constant; why exactly three — one per arrow that crosses a unit, and no fourth because $G$ would need a gravitational arrow. -->
+
+<a href="articles_physics/ostrogradsky-or-why-no-rung-goes-past-two-derivatives.html">Ostrogradsky, or Why No Rung Goes Past Two Derivatives</a>
+<!-- the theorem's three lines — two momenta for one coordinate, an independent $\dot q$, a Hamiltonian linear in $p_1$ and so unbounded — and the count of $2N$ canonical data with a ghost per pair beyond the first; the sharper reading here, the ghost's negative scalar part and negative norm as one display; the ladder of densities with the corpus's instances and the fourth row empty; why the second-order appearances are not second-order actions — the quantum potential's $\nabla^{2}\varrho/\varrho$ and the Korteweg stress from gradient energies first order in each factor, with the test of counting derivatives in the density; the two escapes, degeneracy after the Dirac field and the cutoff after the $\frac{h^{2}}{4\pi^{2}}$ corrections, neither an evasion; the lattice's doublers as the discrete face of the trade; and the condition a future four-derivative rung would have to meet. -->
 
 ## Biquaternion Universe Primordial Force
 
 <!-- everything this block applies is in the category *Biquaternion Universe Action*, above, which is
      apparatus and holds at every scale: the action and the variation with the theorem behind its conserved
      currents, the pairing the action integrates, the connection, the curvature with its Bianchi
-     identity, and the running of the coupling, then the same chain non-abelian, ending in the
-     Yang–Mills action and the equation its variation gives. The block's own instance of that machinery
-     is restated in $\mathrm{SU}(4)$ notation in *The machinery under the action*, below, so that the
-     category can be read alone. **From *The group and its lines* downward the block is the unbroken
+     identity, then the same chain non-abelian, ending in the Yang–Mills action and the equation its variation
+     gives. The block's own instance of that machinery is restated in $\mathrm{SU}(4)$ notation in *The machinery
+     under the action*, below, so that the category can be read alone. **From *The group and its lines* downward the block is the unbroken
      phase only**: every article from there on is a statement above $M_C$, where all fifteen directions
      are massless. Two entries that used the six heavy directions as propagating states — *Three
      Diagrams* and *Lepton Flavour* — sit in *Symmetry Breaking*, because both need the vacuum and
@@ -1237,6 +1317,14 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <!-- one connection, three statuses and one absence, argued from the tests rather than from the names: one $g_4$ in three kinetic terms as the content of the word *one*, with the transcription onto $\mathrm{SU}(4)$ stated as the price; the strong group as the kernel, $\operatorname{ad}(iD)$ with spectrum $0^9\oplus(\pm4i)^3$, $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$, the coupling matched to $g_4$ at $M_C$, $\theta_4$ free and redundant above it and not $\bar\theta$ below, with the correction that the degeneracy is into the spatial block *and* one abelian factor and the rank does not move; the two theorems that foreclose the debris reading, the rank lemma $5>3$ with the two maximal-rank rows that each spend three, and the charge theorem with every sextet member at $Q=\pm\frac23$ and the pair channel $\mathbf1_0\oplus\mathbf8_0$; the index that replaces debris, $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$ with rank additive across factors and the doublet index named as the one postulate; the two senses of *residual*, group-theoretic for the strong group and effective for the contact, with $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$ accurate to $1.55\times10^{-6}$ at $100$ MeV and the disanalogy with the nuclear force stated; gravity outside the connection, curvature not in the algebra, the frame carrier and the counting $16=10+6$ against a biquaternion's eight, the quadratic action present and the dynamics absent; the three objections answered, *gravity is a gauge theory*, *the others are geometry too*, and *the graviton is a spin-two force*; the ledger $3\to5\to4\to3$ and the correction that four is a low-energy bookkeeping; the five gaps; and sixteen checks. -->
 
 <a href="articles_physics/the-force-content-of-the-su4-model-one-connection-a-nine-dimensional-kernel-and-rank-five.html">The Force Content of the $\mathrm{SU}(4)$ Model: One Connection, a Nine-Dimensional Kernel, and Rank Five</a>
+<!-- one connection, three statuses and one absence, argued from the tests rather than from the names: what
+*one* means in the display, and the price of transcribing it onto $\mathrm{SU}(4)$; the strong group as the kernel
+$\operatorname{ad}(iD)$, with the spectrum, the stabiliser reading, the coupling matched at $M_C$ and $\theta_4$
+redundant above it; the two theorems that foreclose the weak pair as debris, the rank lemma $5>3$ and the charge
+theorem on the sextet; the doublet index as the one postulate the reading needs; the two senses of *residual*, and
+why the weak force fits only the effective one, with the numerical agreement stated; gravity outside the
+connection, curvature not in the algebra, and the counting $16=10+6$ against a biquaternion's eight; the three
+objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen checks. -->
 
 ### The Leptoquark Sector at Work
 
@@ -2678,7 +2766,7 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 ### Generalities
 
-<!-- the non-quantum limit, in seven articles: the relativistic particle; the mechanics that follows from the Dirac wave; the light cone as the zero-divisor cone; the null four-momentum that the cone derives and what must be added to it; stress–energy, conservation and the field action; Hamiltonian field theory; and the limit of the whole model. -->
+<!-- the non-quantum limit, in five articles: the relativistic particle; the mechanics that follows from the Dirac wave; the light cone as the zero-divisor cone; the null four-momentum that the cone derives and what must be added to it; and the limit of the whole model. Stress–energy and Hamiltonian field theory are not limits of anything and are no longer counted here: they are the general statements about the one action, and they sit in *Biquaternion Universe Action*. -->
 <a href="articles_physics/the-relativistic-particle-in-biquaternionic-form.html">The Relativistic Particle in Biquaternionic Form</a>
 <!-- the worldline and the biquaternion norm; the four-velocity and the rapidity; the four-momentum and the mass shell; composition of velocities; the free action; the non-relativistic limit; what the algebra supplies and what it transcribes. -->
 
@@ -2691,12 +2779,6 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/the-null-four-momentum.html">The Null Four-Momentum: The Cone Derives $c$, the Mass Term Is Added</a>
 <!-- the four-momentum as an element of the material sector and the mass shell as a norm condition, for a massless particle of any spin, the photon being the leading case; mass as the value of the invariant; the four consequences the cone derives — the massless shell is the zero-divisor cone and is the only level set that is a cone, the propagation speed is $c$ and is frame-independent by the multiplicativity of the norm, a null four-momentum has no rest frame, and a massless particle moves at $c$ for every momentum; the four things it does not derive — the value $m=0$, the existence of any mass scale, since the cone is scale-invariant and the algebra contains no preferred scale, the physical selection of the null branch over the massive one, and the reduction to two transverse polarizations; the null momentum as a scaled idempotent of the informational sector, so the material cone is the scaled image of the projector sphere; and the accounting of derived, inserted and outside. -->
 
-<a href="articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a>
-<!-- the field action in biquaternion form; Noether's theorem and the stress–energy of translation; the scalar field stress–energy; the electromagnetic stress–energy as a bigeneral quaternionic bilinear; the conservation law for field and matter. -->
-
-<a href="articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a>
-<!-- the conjugate momentum field and the regularity of the Legendre transform; the Hamiltonian density and its equality with the energy density; the Hamiltonian field equations; the field Poisson bracket and its local Jacobi identity; the continuity equation and the energy flux; the density and flux as one Hermitian biquaternion; the sector reading of the density and the energy–charge contrast; the point of contact with the covariant (De Donder–Weyl) formalism; what the transcription does and does not give. -->
-
 <a href="articles_physics/the-non-quantum-limit-of-the-biquaternion-model.html">The Non-Quantum Limit of the Biquaternion Model</a>
 <!-- the question, whether a limit of the same kind as the non-relativistic one removes the quantum, answered yes on the solutions and no on the algebra; the algebra carries no $\hbar$, which appears in three places and always as one product — the mass term $k_m=\frac{m\,c}{\hbar}$ with $-\langle\tilde K_\Phi\rangle_\natural=k_m^2$, the phase $\frac{S}{\hbar}=\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^\natural)$, and the bracket $[x,p]=\frac{m\,c\,i}{k_m}$ — and the three rows do not agree, the bracket turning Poisson while the propagator stiffens, so one knob cannot deliver both; the naive $\hbar\to0$ at fixed spatial wave number shown not to be a quantum limit at all, since $\frac{k_\Phi}{k_m}=\gamma\beta$ and $\frac{k_t^{\prime}}{k_m}=\gamma$ both collapse the triangle onto the mass side, that is the rest frame, a member of the $\beta$ family the companion article already owns; every internal ratio shown to be one number, since the three wave numbers form a right triangle with one shape parameter, so that $\frac{k_\Phi}{k_m}=\gamma\beta$, $\frac{k_t^{\prime}}{k_m}=\gamma$ and $\frac{k_\Phi}{k_t^{\prime}}=\beta$ are functions of $\beta$ alone and no internal ratio can carry a second limit; the one dimensionless number the model offers, $\epsilon=\frac{1}{k_\Phi L}$, with $L$ from the problem, and the four candidates tabulated — $\beta$ the other limit, $\epsilon$ this one, $\frac{1}{k_m L}$ the validity of the one-particle description and a change of theory rather than an approximation, and $\frac{\Omega}{k_m}=\gamma-1=\frac{\beta^2}{2}$ the other limit again — so two parameters remain and there is no third, the two criteria differing by $\frac{k_m}{k_\Phi}=99.995$ so that $1/k_m$ would place the boundary at $386\ \mathrm{fm}$ where it lies at $38.6\ \mathrm{pm}$; why the mass is not the quantum, $k_m\to0$ giving the photon and a more wave-like theory, and a single plane wave being semiclassical already; the route named as the phase, with Ehrenfest's theorem and the path integral as the two alternatives and the reason for the choice given, the phase route alone staying inside the algebra point by point since the measure and the path space are the gaps the path integral article records; the rule, the real part of the momentum keeping $\nabla S$ and the imaginary part carrying $-\frac{m\,c\,i}{k_m}\nabla\ln A$, with the two ratios of order $\epsilon$ and $\epsilon^2$, the second the quantum potential over the kinetic energy; the derivation carried through from the biquaternionic Schrödinger equation $\frac{m\,c^2 i}{k_m}\partial_{r_t'}\tilde\Xi=\tilde H_\Psi\tilde\Xi$, which is $i\hbar\partial_t\psi=H\psi$ with $r_t'=c\,t$, through the amplitude–phase substitution to the two real equations, where $Q$ is the third term of the first and the second never contained it, so that dropping $Q$ at $\lvert Q\rvert/(\lvert\nabla S\rvert^2/2m)=\epsilon^2$ leaves Hamilton–Jacobi and continuity intact, and the gradient of the first gives $\partial_t\vec p+(\vec v\cdot\nabla)\vec p=-\nabla V$, hence $\vec p=\nabla S$, $\vec v=\vec p/m$ and $m\ddot{\vec r}=-\nabla V$, with $E=-\partial_t S$ read off the phase rather than tuned, and the two qualifications that the limit gives a flow and its density rather than one trajectory and that the ray picture ends at a caustic where $A$ diverges; and the five-row table against the $\beta$ rule, where the object, the parts, the location of the parameter, the dropped pieces and the error itself all differ; the error as an operator, the Gaussian waist giving $\rho=\epsilon^2\lvert\frac{x^2}{4\sigma^2}-\frac12\rvert$, vanishing at $\sqrt2\sigma$, growing as $x^2$, reaching one at $x\simeq\frac{2\sigma}{\epsilon}$ for every $\epsilon$, against the bounded monotone $\frac{\gamma+1}{2\gamma^2}$ of the other limit which has no position in it; what the limit does not do — act on the algebra, the obstruction O21 forbidding a permanent classical sector, commute with superposition, so that the limit of a sum is not the sum of the limits, remove the phase, or give a state; the numbers, the three lengths for the electron at $\beta=0.01$, the hundred-point Gaussian check and the hundred lengths of $\epsilon k_\Phi L=1$, and the macroscopic end where the phase length reaches the Planck length at $6.52\ \mathrm{kg\,m\,s^{-1}}$ so that the criterion is true and empty; and the note on what is not new, the formal character of the $\hbar\to0$ limit being already recorded in the similitudes article and the stationary-phase and amplitude–phase forms in two companions, against which the four claims added here are the reason the limit must be formal, the criterion as one inverse length, the refusal of $1/k_m$, and the identification of the partition the limit removes — the divide being a count, Subset III being the mode function with no excitation attached, of which the vector light beam is the example, a superposition of two rays being one excitation across two modes and a single ray being one partition carrying the excitation with no second partition to sort, so that $\epsilon\to0$ removes the second, classical optics performing the same wave-to-ray passage and therefore not settling the question, while the centre is named as the canonical classical sector and the limit shown not to land there but on a state-dependent slice, which is the contextual mechanism O21 asks for with $L$ as the context made quantitative.  the limit and the approximation as two objects and one number, the limit being the formal passage and the approximation the passage stopped at a stated order with a remainder of order $\epsilon^{N+1}$; the ordering of the three terms, phase gradient at $1$, amplitude gradient at $\epsilon$ and quantum potential at $\epsilon^{2}$; the mass-order rule, that a first-order equation puts the mass below the derivative so the eikonal is read on the square, checked on the Dirac determinant; the sector table, six families admitting the limit and the free Proca field refusing it because its word is a scale and a boost with no phase;-->
 
@@ -2707,12 +2789,10 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 #### The action
 
 <a href="articles_physics/the-lagrangian-and-the-proca-equation-in-the-non-quantum-limit.html">The Lagrangian and the Proca Equation in the Non-Quantum Limit</a>
-<!-- the mass term's cost $\tfrac12k_m^{2}\lvert A\rvert^{2}$ as the whole longitudinal action at every frequency; representative freedom as the vanishing of a coefficient and not the breaking of a symmetry; the primary constraint as an absent $\omega^{2}$, its temporal coefficient $0.315000000$ at $k_t'=0.5$, $1.2$ and $2.0$ while the spatial ones move; zero, pole and degeneracy as one locus -->
-<!-- the limit taken on the action, where the criterion is a comparison of the action's own terms and no sensitivity argument is needed; the parent's chart action, the sign of its mass term as the branch, its rank-three Hessian, its multiplier-free normalisation and its contrast with the first-order companions; the necessity of the mode, stated in the action's language rather than the equation's; the truncated action $\int\tfrac12[\lvert k\cdot a\rvert^{2}-(k^{2}-k_m^{2})\lvert a\rvert^{2}]$, algebraic in the amplitude and first order in nothing; the amplitude variation as the order-$\epsilon^{-2}$ group and the Hessian as minus the Proca symbol, with the determinant $-k_m^{2}(k^{2}-k_m^{2})^{3}$ and the measured eigenvalues; the phase variation as $\partial_\mu(\lvert a\rvert^{2}k^{\mu})=0$, the Noether charge of the amplitude-phase redundancy of the decomposition, hence a Gauss law and not an additional equation, which is why it survives a truncation that deletes every derivative of the amplitude; the truncation's four primary constraints $p_a=0$ and the demotion of the amplitude to a polarisation against the promotion of the phase to the only dynamical field; the count three before and three after, with the number of constraints created equal to the dimension of the amplitude, one for a scalar and four for a vector; the two-valued inversion and the two sheets it leaves unselected; and what the route adds and what it does not. -->
+<!-- the mass term's cost $\tfrac12k_m^{2}\lvert A\rvert^{2}$ as the whole longitudinal action at every frequency; representative freedom as the vanishing of a coefficient and not the breaking of a symmetry; the primary constraint as an absent $\omega^{2}$, its temporal coefficient $0.315000000$ at $k_t'=0.5$, $1.2$ and $2.0$ while the spatial ones move; zero, pole and degeneracy as one locus; the limit taken on the action, where the criterion is a comparison of the action's own terms and no sensitivity argument is needed; the parent's chart action, the sign of its mass term as the branch, its rank-three Hessian, its multiplier-free normalisation and its contrast with the first-order companions; the necessity of the mode, stated in the action's language rather than the equation's; the truncated action $\int\tfrac12[\lvert k\cdot a\rvert^{2}-(k^{2}-k_m^{2})\lvert a\rvert^{2}]$, algebraic in the amplitude and first order in nothing; the amplitude variation as the order-$\epsilon^{-2}$ group and the Hessian as minus the Proca symbol, with the determinant $-k_m^{2}(k^{2}-k_m^{2})^{3}$ and the measured eigenvalues; the phase variation as $\partial_\mu(\lvert a\rvert^{2}k^{\mu})=0$, the Noether charge of the amplitude-phase redundancy of the decomposition, hence a Gauss law and not an additional equation, which is why it survives a truncation that deletes every derivative of the amplitude; the truncation's four primary constraints $p_a=0$ and the demotion of the amplitude to a polarisation against the promotion of the phase to the only dynamical field; the count three before and three after, with the number of constraints created equal to the dimension of the amplitude, one for a scalar and four for a vector; the two-valued inversion and the two sheets it leaves unselected; and what the route adds and what it does not. -->
 
 <a href="articles_physics/the-lagrangian-and-the-coupled-proca-equation-in-the-non-quantum-limit.html">The Lagrangian and the Coupled Proca Equation in the Non-Quantum Limit</a>
-<!-- the two terms of the action transforming differently under a constant phase, the ratio's argument $2\alpha$ modulo $2\pi$; the constraint as a determination and a division; the longitudinal coefficient surviving the coupling unchanged; the primary constraint surviving as an absent power of $\omega$; the charge massless and the energy mass-squared -->
-<!-- the coupled action on the mode with the truncation written on $\pi$ and not on the canonical gradient, because the shift is not small and only $\pi$ is locally invariant, so that the truncation is locally invariant for a structural reason; the parent's metric untouched by the connection, so that deleting the two-derivative group and shifting one gradient are two operations on different objects; the mass's frame factor $w$ with the parent's $0.7648$ independent of rapidity for collinear axes and $0.7648$, $0.7010$, $0.4401$ at rapidities $0$, $1$, $2$ for perpendicular ones, a coefficient of order zero and not a correction; the truncated density with the curvature's antisymmetric traceless form $K$; the amplitude variation, its real projection $(\pi^{2}-k_m^{2}w)\lvert a\rvert^{2}=\lvert\pi\cdot a\rvert^{2}$ and its Hessian as the Fourier symbol with a traceless shift; the phase variation $\partial_\mu[(\pi\cdot a)a^{\mu}-\pi^{\mu}\lvert a\rvert^{2}]=0$ as the Gauss law of the decomposition's redundancy and as the covariant transport once the constraint holds; the longitudinal part as what the redundancy absorbs, which is the chart's own account of the count three; the four vanishing momenta and the promotion of the phase; the traceless perturbation not moving the rank, so that the count is three with or without the field and only the directions change; and the parent's open item about the chart's own Hessian left open, every statement here being made about the truncated Hessian instead. -->
+<!-- the two terms of the action transforming differently under a constant phase, the ratio's argument $2\alpha$ modulo $2\pi$; the constraint as a determination and a division; the longitudinal coefficient surviving the coupling unchanged; the primary constraint surviving as an absent power of $\omega$; the charge massless and the energy mass-squared; the coupled action on the mode with the truncation written on $\pi$ and not on the canonical gradient, because the shift is not small and only $\pi$ is locally invariant, so that the truncation is locally invariant for a structural reason; the parent's metric untouched by the connection, so that deleting the two-derivative group and shifting one gradient are two operations on different objects; the mass's frame factor $w$ with the parent's $0.7648$ independent of rapidity for collinear axes and $0.7648$, $0.7010$, $0.4401$ at rapidities $0$, $1$, $2$ for perpendicular ones, a coefficient of order zero and not a correction; the truncated density with the curvature's antisymmetric traceless form $K$; the amplitude variation, its real projection $(\pi^{2}-k_m^{2}w)\lvert a\rvert^{2}=\lvert\pi\cdot a\rvert^{2}$ and its Hessian as the Fourier symbol with a traceless shift; the phase variation $\partial_\mu[(\pi\cdot a)a^{\mu}-\pi^{\mu}\lvert a\rvert^{2}]=0$ as the Gauss law of the decomposition's redundancy and as the covariant transport once the constraint holds; the longitudinal part as what the redundancy absorbs, which is the chart's own account of the count three; the four vanishing momenta and the promotion of the phase; the traceless perturbation not moving the rank, so that the count is three with or without the field and only the directions change; and the parent's open item about the chart's own Hessian left open, every statement here being made about the truncated Hessian instead. -->
 
 #### The field equation and its solutions
 
@@ -2921,8 +3001,7 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <!-- the formula of the map defined on every barotropic irrotational inviscid flow while the equivalence holds only on the image; the forward map as exact and general away from the surfaces where the density vanishes, the continuity equation as the imaginary part and the Hamilton–Jacobi equation with $Q_{\mathrm{kor}}=-\sigma_{\mathrm{dsp}}^{2}\Delta\sqrt{\rho_{\mathrm{num}}}/(2\sqrt{\rho_{\mathrm{num}}})$ as the real part, checked symbolically in one and in three dimensions, with $V=h$ as the specific enthalpy fixed up to a constant; the reverse map on barotropic irrotational inviscid flows, its nonlinear term fixed by $\mathrm{d}p_{\mathrm{th}}=\rho_{\mathrm{mass}}\mathrm{d}V$; the class as the image of the forward map and not the class of ordinary fluids, an ordinary fluid's inversion obeying an equation with an external potential; linearity exactly when the pressure is constant, so that the free linear equation is the pressureless second-gradient fluid; the polytropic family $\gamma=1,4/3,5/3,2$, logarithmic, power-law and cubic; superposition failing because the map is a bijection of states and not a linear map of solutions, while the free equation's own fluid is nonlinear too; $\sigma_{\mathrm{dsp}}$ supplied by the map and not found in the fluid; the worked failure, the incompressible point source that is irrotational, inviscid and gradient-forced and whose inversion obeys the free equation plus $-\sigma_{\mathrm{dsp}}^{2}\alpha_{\mathrm{src}}^{2}\psi/(2r^{4})$; the Korteweg stress that the image carries and that no ordinary fluid has; and the gate to the quantized blocks, where the same map identifies the constant with the action per mass. -->
 
 <a href="articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.html">The Fluid–Wave Correspondence: Which Constant Each Field Carries</a>
-<!-- the direction settled field by field, stated from the fluid's side: the criterion as four clauses with their status, the pressure part a gradient exactly when the flow is isentropic by Gibbs–Duhem and barotropicity only its sufficient form, and the insufficiency stated as a condition on the potential rather than on the flow; the potential an energy and not a rate, with the Hopf–Cole transformation as the same map at an imaginary constant; and the table of thirteen rows with the reason for each -->
-<!-- the two directions with their status, the forward exact and general and the reverse conditional with a nonlinear output; the three conditions of the folk statement derived as one criterion, that the velocity and every force be gradients, with the pressure part a gradient exactly when the flow is isentropic by Gibbs–Duhem and barotropicity only its sufficient form, and with the insufficiency stated as a condition on the potential rather than on the flow; the potential an energy and not a rate, the Hopf–Cole transformation being the same map with $\hbar=-2im\nu_{\mathrm{kin}}$; a table of thirteen rows with the reason for each, the irrotational inviscid non-barotropic row being the one that passes the three conditions and still fails; no hidden linear wave equation in the nine rows that carry a fluid equation as their law, the applied cases adding rotation, baroclinicity and dissipation to the obstruction; the three reversed cases, wave dark matter, condensates and relativistic quantum plasmas, where the wave equation is fundamental and the fluid derived; and the verdicts that the reading's two denials are one statement, the reading being a re-coordinatisation of the field and so neither a superfluid's fluid nor a source of wave equations. -->
+<!-- the direction settled field by field, stated from the fluid's side: the criterion as four clauses with their status, the pressure part a gradient exactly when the flow is isentropic by Gibbs–Duhem and barotropicity only its sufficient form, and the insufficiency stated as a condition on the potential rather than on the flow; the potential an energy and not a rate, with the Hopf–Cole transformation as the same map at an imaginary constant; and the table of thirteen rows with the reason for each; the two directions with their status, the forward exact and general and the reverse conditional with a nonlinear output; the three conditions of the folk statement derived as one criterion, that the velocity and every force be gradients, with the pressure part a gradient exactly when the flow is isentropic by Gibbs–Duhem and barotropicity only its sufficient form, and with the insufficiency stated as a condition on the potential rather than on the flow; the potential an energy and not a rate, the Hopf–Cole transformation being the same map with $\hbar=-2im\nu_{\mathrm{kin}}$; a table of thirteen rows with the reason for each, the irrotational inviscid non-barotropic row being the one that passes the three conditions and still fails; no hidden linear wave equation in the nine rows that carry a fluid equation as their law, the applied cases adding rotation, baroclinicity and dissipation to the obstruction; the three reversed cases, wave dark matter, condensates and relativistic quantum plasmas, where the wave equation is fundamental and the fluid derived; and the verdicts that the reading's two denials are one statement, the reading being a re-coordinatisation of the field and so neither a superfluid's fluid nor a source of wave equations. -->
 
 <a href="articles_physics/the-clebsch-potentials-and-the-rank-of-the-vorticity.html">The Clebsch Potentials and the Rank of the Vorticity</a>
 <!-- what a rotational flow costs, in the fluid layer's own terms: the Clebsch representation $v_{\Phi,\mu}=\partial_\mu\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\partial_\mu\beta_{\mathrm{clb}}$ with $\omega=\mathrm{d}\alpha_{\mathrm{clb}}\wedge\mathrm{d}\beta_{\mathrm{clb}}$, so that the gradient is the rank-zero member of a family indexed by the rank of the vorticity; the rank classification with its test $\omega\wedge\omega=(\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}})\mathrm{d}V$ and $\det\omega=(\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}})^{2}$, checked symbolically, and every two-form simple in three dimensions so that no Galilean flow reaches rank four; the medium with an orientation as the second generalisation, a Cosserat or micropolar medium in its relativistic Weyssenhoff–Raabe form, with two vorticities, the wryness $\kappa_{\mu\nu}$ the curl of the orientation field, and an antisymmetric stress whose antisymmetric part is a torque $\tau_i=\varepsilon_{ijk}\sigma_{jk}$ fixed by the couple stress through $\partial_j\mu_{\mathrm{cpl},ij}=-\tau_i$; the count of a Cosserat medium as seven data plus the internal energy, one density, three velocity and three orientation functions, so that the ordinary fluid is the constrained case in which the orientation is locked to the velocity gradient and a potential flow the case of no orientation at all; the four-clause criterion restated at general rank, the first two clauses merging into one and the third splitting into the longitudinal part and the couple stress's transverse part; and the invariant changing with the rank, the potential's period at rank zero and the helicity at rank two, with the spin contribution quoted and left uncomputed -->
