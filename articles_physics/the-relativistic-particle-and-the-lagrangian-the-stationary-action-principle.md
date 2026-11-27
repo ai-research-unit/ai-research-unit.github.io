@@ -225,7 +225,7 @@ with $F_{\imath\jmath} = \partial/\partial R_{\imath} A_{\jmath} - \partial/\par
 
 ### The canonical momentum in a potential
 
-The interaction term separates the two momenta, and the variation says which is which. With the convention just fixed, and the covariant derivative $D_{\imath}=\partial_{\imath}+i\kappa A_{\imath}$, with $\kappa$ the coupling of [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), the action of a charge in a prescribed potential is
+The interaction term separates the two momenta, and the variation says which is which. With the convention just fixed, and the covariant derivative of [The Minimal Coupling in Biquaternionic Form](the-minimal-coupling-in-biquaternionic-form.html), the action of a charge in a prescribed potential is
 $$
 S=-mc\int\sqrt{-\langle \tilde V_{\Phi}\rangle_{\natural}}\,d\tau-ϙ\int\mathrm{Sc}\bigl(\tilde{A}_{\Phi}\,\overline{\tilde V_{\Phi}}\bigr)\,d\tau ,
 \qquad \tilde V_{\Phi}:=\frac{d\tilde R_\Phi}{d\tau} ,
@@ -350,9 +350,9 @@ so stationarity for variations vanishing on the surface is $\sum_{\imath}\partia
 
 The Dirac and massless Maxwell actions are first order, and their Lagrangians are built from the gradient rather than from the d'Alembertian. **The explicit functional is the companion's**, and it is worth writing here because it is the one place where the two parts of an element carry different derivatives:
 $$
-S_{\mathrm{Dirac}}=\frac{h c}{4\pi}\int d^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,\tilde\nabla_\Phi\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr] ,
+S_{\mathrm{Dirac}}=\mathcal{N}\int d^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,\tilde\nabla_\Phi\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr] ,
 $$
-with $\tilde\Xi=\tilde\Xi_L+\tilde\Xi_R$ the two parts of one element. The two kinetic terms are diagonal in the parts and carry conjugate gradients; the mass term is off-diagonal, which is what makes it a chirality flip rather than a modulus.
+with $\tilde\Xi=\tilde\Xi_L+\tilde\Xi_R$ the two parts of one element. The prefactor $\mathcal{N}$ is an overall normalisation of the density: it multiplies the action and not the equation, and its value belongs to the quantum: it is fixed where the action quantum is declared, and nowhere earlier. The two kinetic terms are diagonal in the parts and carry conjugate gradients; the mass term is off-diagonal, which is what makes it a chirality flip rather than a modulus.
 
 **The variation is the same two steps**, and it returns the first-order pair. Varying $\tilde\Xi_L^{*}$ and $\tilde\Xi_R^{*}$ independently, and using that each gradient is self-adjoint for the Hermitian pairing up to a divergence — the $i$ inside $\partial_{R_t}$ is what makes the temporal term self-adjoint without disturbing the spatial ones — gives
 $$

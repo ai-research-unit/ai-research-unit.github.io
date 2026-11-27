@@ -206,7 +206,7 @@ $$
 \tilde{F} =\frac{1}{2i\kappa}\sum_{\imath,\jmath\in\{t,x,y,z\}}[D_{\imath}, D_{\jmath}]\,\bar{e}_{\imath} e_{\jmath} .
 $$
 
-The field strength is the **commutator of two covariant derivatives**, contracted with the biquaternion basis. This is the precise sense in which "the field strength is the curvature": the curvature measures the failure of covariant derivatives to commute, and in the algebra that failure is packaged into the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$. The overall constant in the two boxed formulas depends on the convention for $ϙ$ and on the normalization of $\tilde{A}_{\Phi}$; the structural content is the identity of the objects, not the numerical factor.
+The field strength is the **commutator of two covariant derivatives**, contracted with the biquaternion basis. This is the precise sense in which "the field strength is the curvature": the curvature measures the failure of covariant derivatives to commute, and in the algebra that failure is packaged into the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$. The overall constant in the two boxed formulas depends on the convention for $\kappa$ and on the normalization of $\tilde{A}_{\Phi}$; the structural content is the identity of the objects, not the numerical factor.
 
 ### The homogeneous equations are an identity, not an equation of motion
 

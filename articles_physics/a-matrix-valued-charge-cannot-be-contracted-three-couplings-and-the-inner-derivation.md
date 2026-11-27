@@ -10,7 +10,7 @@
 
 **What the article is not.** It is not a claim that Wong's equations are wrong, or that the trace pairing is illegitimate. **Wong's equations are correct and the trace pairing is the right contraction where a contraction exists.** The article's claim is about the rung where no contraction exists, and the trichotomy is what makes the claim precise.
 
-**The article's place in the chain.** It is one of the two articles in *From the Fluid to the Force* that state the general form of a force block, and it is the one that carries the matrix-valued case. [Five Steps from a Lagrangian to Fluid Equations](five-steps-from-a-lagrangian-to-fluid-equations.html) states the skeleton; this article states what the matrix rung's force slot is filled by.
+**The article's place in the chain.** It is one of the two articles in *From the Field Equation to the Force* — the force section of *Biquaternion Universe Action* — that state the general form of a force block, and it is the one that carries the matrix-valued case. [Five Steps from a Lagrangian to Fluid Equations](five-steps-from-a-lagrangian-to-fluid-equations.html) states the skeleton; this article states what the matrix rung's force slot is filled by.
 
 ## The Column This Article Works, and the Columns It Does Not
 

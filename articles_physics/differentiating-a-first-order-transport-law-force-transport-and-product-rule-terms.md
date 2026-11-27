@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**A transport law is first order, and every force in this corpus is obtained by differentiating one.** That sentence is the whole of the corpus's route from a conservation law to an acceleration law, and it is where the corpus has made its one recorded error. The error was not in the derivation. It was in the *naming*: a display called a product-rule term a force term, and the display had to be repaired.
+**Every force in this corpus is obtained by differentiating a first-order statement once, and a transport law is the form that statement takes wherever a chart supplies a flow.** That sentence is the whole of the corpus's route from a conservation law to an acceleration law, and it is where the corpus has made its one recorded error. The error was not in the derivation. It was in the *naming*: a display called a product-rule term a force term, and the display had to be repaired.
 
 **The article's subject is the repair, stated as a general procedure.** Differentiate a first-order transport law and three kinds of term appear. One is the acceleration — the second derivative of the transported quantity. One is the transport — the quantity being carried along a flow that changes. One is the product rule — a term that exists because the differentiation was applied to a product and both factors vary. **The third kind is the one that gets mislabelled, and this article states three tests that separate it from the first, gives the corpus's own case, and states the prohibition.**
 

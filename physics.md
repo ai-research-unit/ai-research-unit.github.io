@@ -447,7 +447,10 @@
      *From the Action to the Field Equation* gives the classical apparatus every force block applies — Noether's theorem
      and the stress–energy of translation, the connection a local symmetry forces, the curvature and its Bianchi
      identity, the same chain non-abelian, and the Yang–Mills equation its variation gives — and closes on the three
-     carriers every spin band is cut along. The renormalisation group is not in that arrow: it belongs to the measure,
+     carriers every spin band is cut along. *From the Field Equation to the Force* differentiates the field
+     equation's polar statement once and fixes which of the terms that produces may be called a force — the three
+     kinds, the three tests, and the matrix rung where a contraction is replaced by the commutator; it is the step
+     every sector performs. The renormalisation group is not in that arrow: it belongs to the measure,
      and it sits with the other three measure results in *The Euclidean Reading, the Anomaly and the Index*.
      *From the Field Equation to the Quantum Field* is the second arrow and the one the sectors import: the promotion of
      the bracket to a commutator, stated as a postulate and used afterwards, then the ladder the postulate needs, the objects built on the ladder, the four results read off
@@ -458,9 +461,11 @@
      apparatus imports.** Every sector below — primordial, strong, electroweak, electromagnetic — is a declension of that
      chain, and a declension either passes the five steps or names the step it breaks.
      **The category holds no fluid and no thermal content, and that is a rule and not an accident.** The polar chart, the
-     criterion that grades an equation as a fluid's, the five-step skeleton, the thermal closure and the balance they
-     produce are *Biquaternion Universe Fluid Physics and Thermodynamics*, the category immediately below; they are
-     consequences a reader may take up or leave, and the chain above reaches its end without them.
+     criterion that grades an equation as a fluid's, the five-step skeleton and the thermal closure are *Biquaternion
+     Universe Fluid Physics and Thermodynamics*, the category immediately below; they are a reading a reader may take
+     up or leave, and the chain above reaches its end without them. The force is not a fluid quantity either: the
+     balance of *From the Field Equation to the Force* is the derivative of the field equation's own phase relation,
+     and the chart only supplies names for its terms when a sector chooses to read them as a flow.
 
      The chain is stated at no particular group so that it specialises to the $\mathrm{SU}(4)$ instance below and not away
      from it. A reader who meets the apparatus inside a sector reads it with that sector's notation already doing work; the
@@ -638,6 +643,36 @@
 
 <a href="articles_physics/particle-spins-in-the-biquaternion-algebra-three-carriers-their-meaning-and-their-order.html">Particle Spins in the Biquaternion Algebra: Three Carriers, Their Meaning and Their Order</a>
 <!-- the three carriers and the criterion of cost; the real vector part as the seat of the algebra's non-commutativity, with the commutator closing on it and the product failing, and its adjoint rotation of weights $+1$, $0$, $-1$; the ideal as a frame, irreducible, four real dimensions, and moved by conjugation to a distinct ideal; the centre as the commutant, fixed pointwise; then the same order read on the particles, bosons on the vector part, fermions on the ideal, scalars as an invariant or a rotor, with the third polarization, the count $4=4$ and the graviton's symmetric square; and the limits, including the menu's $67$, $115$, $110$ and $15$ entries. -->
+
+### From the Field Equation to the Force
+
+<!-- the third arrow, and the one every sector applies: differentiate the first-order statement that the field
+     equation's polar form gives, and read the force. The chain has four links — the action, the field equation, the
+     split into a density relation and a phase relation, and the derivative of the phase relation — and only the
+     fourth is the force. **No fluid equation is needed at any link.** What is differentiated is the guidance
+     relation, which is algebraic; a transport law is one of the forms that statement takes where the chart supplies
+     a flow, and a thermal closure is never involved. The section stands here, in the classical chain, because every
+     force block below — primordial, strong, electroweak, electromagnetic — derives its force this way, and because
+     the discipline it fixes is the one the corpus's recorded error broke: which of the terms that one
+     differentiation produces may be called a force. -->
+
+<a href="articles_physics/differentiating-a-first-order-transport-law-force-transport-and-product-rule-terms.html">Differentiating a First-Order Transport Law: Force, Transport and Product-Rule Terms</a>
+<!-- the three kinds of term that one differentiation produces — the acceleration, the transport, and the product
+     rule — and the three tests that separate them (vanishing source, uniform inertia, uniform flow), each with the
+     configuration in which it cannot be run; the matrix rung, where the transport term is the commutator and the
+     product-rule term is $\Omega_{kl}\partial_{\imath}q_{kl}$; the corpus's recorded mislabelling of a product-rule
+     term as a force and its repair, with check F the numerical witness; the checklist a new display must pass; and
+     the statement of where the classification stops, so that the three kinds are not read as a claim about every
+     differentiated equation. -->
+
+<a href="articles_physics/a-matrix-valued-charge-cannot-be-contracted-three-couplings-and-the-inner-derivation.html">A Matrix-Valued Charge Cannot Be Contracted: Three Couplings and the Operation the Matrix Rung Uses Instead</a>
+<!-- the trichotomy by what each coupling consumes: Wong's trace pairing (an algebra index), the classical spinning
+     particle's two-form pairing (two spacetime indices), and the matrix rung's operation, which consumes no index
+     because a contraction cannot return a matrix, so the force slot is the commutator, the algebra's inner
+     derivation; the cyclicity the trace pairing needs and the matrix rung does not have; the two eigenvalue
+     splittings — the inertia $q_{kl}=\rho_{k}-\rho_{l}$ and the force weight $f_{k}-f_{l}$ — and why confusing
+     them is the error the article prevents; the four differences from Wong as a logical chain; and the six-line
+     inventory a force block owes its reader. -->
 
 ### From the Field Equation to the Quantum Field
 
@@ -837,9 +872,7 @@
      halves — the eight variables and the loci at which they fail, then the criterion that grades an equation as a fluid's
      and the five steps performed once for the whole ladder — because a skeleton cannot be stated before its subject.
      *From the Fluid Equations to the Thermodynamic Equations* closes that fluid into a substance: the thermal parameter
-     and the state it selects, the three tests, and the departures. *From the Fluid to the Force* takes the force side of
-     the last two steps and states the balance a force block owes. The force comes last because a sector's force article
-     assumes the chart, the five steps and the closure.
+     and the state it selects, the three tests, and the departures.
      **The quantisation is assumed, not restated.** The promotion of the bracket in *Biquaternion Universe Action*
      precedes this category, and a thermal state is not definable without it: the closure to thermodynamics and
      every thermal parameter below take the quantum as given. That is why this category follows the action and
@@ -1143,25 +1176,6 @@
 
 <a href="articles_physics/the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.html">The Thermodynamics of a Quantum Fluid: Status of the Derivation</a>
 <!-- the ledger; framework content against the four transcription articles — the moving-frame partition function, the curved-spacetime KMS, the Tolman temperature and the causal dissipative fluid — which carry their source's argument and not this section's; the two modular-Hamiltonian articles, now one geometric and one gravitational, still unmerged; the questions the section leaves open, and why it stops where it does. -->
-
-### From the Fluid to the Force
-
-<!-- the force side of the last two steps taken as its own subject, because the force is what every sector
-     below is named for and the general form is nowhere stated as a generality. The balance and its three
-     terms, the operation that a matrix-valued charge forces in place of a pairing, and the inventory a force
-     block owes. Read after the five steps and after the thermodynamic closure, and before any sector, because a
-     sector's force article assumes all three. -->
-
-<a href="articles_physics/differentiating-a-first-order-transport-law-force-transport-and-product-rule-terms.html">Differentiating a First-Order Transport Law: Force, Transport and Product-Rule Terms</a>
-<!-- the second arrow's general form: differentiate a first-order transport law once and exactly three kinds of term appear — the acceleration (second order in the transported quantity), the transport (the flow carrying, which becomes the commutator when the quantity is matrix-valued), and the product rule (the flow's own variation times the quantity); the three tests that separate them — the vanishing test, the uniform-inertia test, the uniform-flow test — and the honest statement that a fourth, gauge invariance, does not discriminate because the product-rule term is built from gauge-covariant objects; the corpus's one recorded error, a product-rule term displayed as a force term, with what made it invisible in every configuration and what caught it; the five-line checklist whose fifth line asks that a display state each term's kind and not only its position; and the boundary of the classification, with the source's rate named as a fourth kind outside it. -->
-
-<a href="articles_physics/a-matrix-valued-charge-cannot-be-contracted-three-couplings-and-the-inner-derivation.html">A Matrix-Valued Charge Cannot Be Contracted: Three Couplings and the Operation the Matrix Rung Uses Instead</a>
-<!-- the trichotomy as the general statement and the matrix rung as the column it works, with the other three columns named: the contraction of the field strength with the velocity at the scalar and Proca rungs, the same with the spin tensor at the Dirac rung, and the commutator only where the balance must return a matrix. -->
-
-<!-- the matrix-valued case: a contraction consumes an index and the balance's source must stay matrix-valued, so at the matrix rung there is no charge to contract and the operation is the commutator, the algebra's inner derivation; the trichotomy of couplings by what each consumes — Wong's trace pairing (an algebra index), the classical spinning particle's two-form pairing (two spacetime indices), and the commutator (nothing); why the trace pairing needs cyclicity and the informational scalar fails it, while the commutator is covariant without an invariant form; the two eigenvalue splittings that must not be conflated — the inertia $q_{kl}=
-ho_k-
-ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from Wong as a logical chain; and the six-line inventory a force block owes its reader, ending with the verdict. -->
-
 
 ## Biquaternion Universe Free of Force
 
