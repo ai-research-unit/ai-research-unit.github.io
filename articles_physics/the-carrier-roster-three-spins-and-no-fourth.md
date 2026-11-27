@@ -2,25 +2,45 @@
 
 ## Introduction
 
-**The claim.** The biquaternion algebra carries exactly three carriers — the centre, the minimal left ideals, and the material sector — and their representation-space dimensions are $1$, $2$ and $3$. That roster is complete, and it is fixed by the algebra alone. **No force is named in its derivation, and no group can extend it.** A sector may decline to use a carrier, and a sector may fail to reach one; neither can add a fourth.
+**The claim.** The biquaternion algebra carries exactly three carriers — **the line $\mathbb{R}e_t$, the plane $\Sigma(\vec u)$, and the vector part $\mathfrak{k}$** — and their representation-space dimensions are $1$, $2$ and $3$. That roster is complete, and it is fixed by the algebra alone. **No force is named in its derivation, and no group can extend it.** A sector may decline to use a carrier, and a sector may fail to reach one; neither can add a fourth.
+
+**The names are not this article's, and they are not negotiable.** They are the ones *Biquaternion Universe Relativity* uses, in the block *The Sectors and the Carriers*, and this article inherits them: [the survey of the block](rotor-spin-pair-and-carrier-a-survey-of-the-closure-block.html), and the three introductions to the [spin-zero](the-spin-zero-centre-subspace.html), [spin-half](the-spin-half-bispinor-spaces.html) and [spin-one](the-spin-one-anti-hermitian-subspace.html) subspaces. **Each of those articles defines one carrier and its closure, and the distinction it draws — carrier versus closure — is the one this article's table must preserve.** Where the two vocabularies could drift, this article follows the earlier category, because the earlier category is where the objects are defined and this section only puts them to work.
 
 **Why the roster comes before the groups.** A reader who meets the carrier list inside a sector — where the sector's own indices are already doing work — has to accept it as a fact about that sector. It is not. It is a fact about $\mathbb{B}$, and it is what makes the phrase *this force has no scalar* or *this force has no spinor* a statement with content: the roster says what is available, and the sector's group says what it can accept. **Those are two different filters, and the corpus has been running them as one.**
 
-**What this article does, and what it does not.** It states the roster at no rung, states why it is complete, and states the sense in which the completion is a boundary of the algebra rather than a gap in the corpus. It does not classify the particles — that is [the determination of the possible spins](the-determination-of-the-possible-spins-in-biquaternionic-form.html), which reads the same three carriers as the scalar, the spinor and the vector — and it does not derive the tensor-product closure, which is [higher spin from tensor products](higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html). **The division of labour is deliberate**: those two articles sit inside *Relativistic Quantum Theory* and state the roster at that rung. This one states it as the first filter on any integrand, before any rung exists.
+**What this article does, and what it does not.** It states the roster at no rung, states why it is complete, and states the sense in which the completion is a boundary of the algebra rather than a gap in the corpus. It does not classify the particles — that is [the determination of the possible spins](the-determination-of-the-possible-spins-in-biquaternionic-form.html) — and it does not derive the tensor-product closure, which is [higher spin from tensor products](higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html). **It does not re-derive the carriers either**: the definitions are *Relativity*'s, and this article cites them. **The division of labour is deliberate**: those articles sit inside *Relativistic Quantum Theory* and *Biquaternion Universe Relativity*, where the objects are built and the roster is stated at that rung. This one states it as the first filter on any integrand, before any rung exists, and the only thing it adds is the filter's job.
 
 ## The Three Carriers
 
-**The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, and its regular module decomposes into three pieces under the two actions that matter.**
+**The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, and it carries three subspaces, each with the action that makes it a carrier.** The naming is the corpus's own, taken from *From the Spin to the Carriers and the Closures* in the mathematics category and read physically in *Rotor, Spin, Pair and Carrier*: **a carrier is a subspace together with its action, and its closure is a different object.**
 
-| carrier | subspace | dimension | spin | invariant that fixes it |
-|---|---|---|---|---|
-| the centre | $\mathbb{B}_C=\mathbb{C}e_t$ | $1$ | $0$ | the norm $N$ |
-| the minimal left ideals | $\mathbb{B}_\Psi$ pairs | $2$ | $\tfrac12$ | the ideal's own frame |
-| the material sector | $\mathbb{B}_\Phi$, scalar-free part | $3$ | $1$ | $B^2$, the bivector's square |
+| carrier | subspace | $\dim_\mathbb{R}$ | spin | action | its closure |
+|---|---|---|---|---|---|
+| **the line** | $\mathbb{R}e_t$ | $1$ | $0$ | trivial | the centre $\mathbb{B}_C=\mathbb{C}e_t$, dim $2$ |
+| **the plane** | $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$ | $2$ | $\tfrac12$ | left multiplication by the circle about $\vec u$ | the spinor space $S_+\cong\mathbb{C}^2$, dim $4$; then the bispinor space, dim $8$ |
+| **the vector part** | $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ | $3$ | $1$ | conjugation | the anti-Hermitian space $\mathbb{B}_\Phi$, the material sector, dim $4$ |
 
-**The two actions are not the same action, and that is why the count is three and not one.** The centre and the traceless part of the material sector are read under **conjugation**, $\tilde Q\mapsto\tilde g\tilde Q\tilde g^{-1}$; the ideals are read under **left multiplication**, $\tilde\Xi\mapsto\tilde g\tilde\Xi$. A carrier is a subspace together with the action that moves it, and the roster is the list of pairs. **Counted as spaces alone the algebra is one eight-dimensional thing; counted as carriers it is three.**
+**The first column names the carrier and the last names its closure, and the two lists are not one list.** The carrier dimensions are $1$, $2$, $3$ and the closure dimensions are $2$, $4$, $8$, $4$; the identity $2s+1=\dim_\mathbb{R}$ holds on the **carrier** column. **The corpus states the distinction in one sentence and every later confusion about the roster is a failure to keep it: "a statement about a carrier and a statement about its closure are different statements."** The centre is not the spin-zero carrier — it is where that carrier closes. The material sector is not the spin-one carrier — $\mathfrak{k}$ is, and $\mathbb{B}_\Phi$ is what it closes into. And $S_+$ is not the spin-half carrier; the **plane** is, and $S_+$ is the smallest real subspace containing it that is invariant under the whole rotation group.
+
+**The three actions are three different actions, and that is why the count is three and not one.** Trivial on the line, left multiplication on the plane ($\tilde\Xi\mapsto\tilde g\tilde\Xi$), conjugation on the vector part ($\tilde Q\mapsto\tilde g\tilde Q\tilde g^{-1}$). **Counted as spaces alone the algebra is one eight-dimensional thing; counted as carriers it is three.**
+
+**One caution that belongs at the table and not in a footnote: the plane is a carrier only for the circle about its own axis.** Left multiplication by a transverse axis sends $\tilde\Pi_{\mathrm{id},+}(\vec u_r)$ out of $\Sigma(\vec u_r)$, so no real two-dimensional subspace is invariant under the whole rotation group, and the smallest invariant one has dimension four. **That is precisely why the closure exists, and it is why the entry describing the ideals says that the axis is a frame and not a datum.** The transverse direction is the ideal's own frame — $\{\tilde\Pi_{\mathrm{id},+},\ \vec u_2\tilde\Pi_{\mathrm{id},+}\}$ — and that frame is what the closure adds, not what the carrier is.
 
 **The dimensions are representation-space dimensions, and they are the numbers a group must match.** $1$ for the scalar, $2$ for the spinor, $3$ for the vector. This is the whole content of the sentence *the representation is a function of the spin*: the carrier's dimension is fixed by the algebra, so the spin is fixed by the carrier, so a field cannot be assigned a spin and then fitted to a representation. **The order runs from the algebra outward.**
+
+## What the Roster Does Not Classify: The Derivative
+
+**The carrier fixes where a field takes its values, and it does not fix where the derivative lives.** This one sentence settles a confusion the roster invites, and the corpus's three free equations are the evidence: **Klein–Gordon, Dirac and Proca all differentiate with the same operator, the gradient $\tilde\nabla_\Phi$.**
+
+$$
+\tilde\nabla_\Phi \ \text{is one operator, in the sector } \mathbb{B}_\Phi,\ \text{first order, acting by left multiplication, and } \tilde\nabla_\Phi(\tilde\nabla_\Phi)^\natural=\Box_\Phi .
+$$
+
+**Read the subscript.** It is $\Phi$ in all three equations — the same sector, the same element, the same left action. What differs between the three is the **value space** the field takes and the order of the equation in that value: Klein–Gordon applies the gradient twice to a field in the centre, Dirac applies it once to a pair in the ideals, Proca applies it to a vector part with its own auxiliary condition. **The operator is shared; the carrier is what is chosen.**
+
+**Why this matters for the roster, and where the temptation to get it wrong comes from.** It is tempting to write the spin-half row as *the derivative in the ideal* and the spin-zero row as *the derivative in the centre*. **Both are wrong, and the corpus's own wording says so**: the gradient is an element of $\mathbb{B}$, it lives in the material sector, and it multiplies on the left whatever it meets — including a field whose values are in the centre or in the ideals. **A carrier tells you what the field is; the gradient tells you what acts on it, and the two are independent.** Assuming they are not is the error that makes the roster look like a table of equations rather than a table of objects.
+
+**One consequence worth stating, because it is the sense in which the three spins are one theory and not three.** Since the derivative is shared and only the value space differs, the three free equations are **three readings of one operator on three carriers** — which is exactly how *Rotor, Spin, Pair and Carrier* reaches them: the Klein–Gordon, Dirac and Proca operators select the same three spaces the representation theory produces, and the two routes agree. **The roster is what makes that agreement possible; it is not a consequence of it.**
 
 ## Why There Is No Fourth
 
@@ -57,7 +77,9 @@
 
 ## Summary
 
-The biquaternion algebra carries exactly three carriers: the centre at dimension $1$ and spin $0$, the minimal left ideals at dimension $2$ and spin $\tfrac12$, and the material sector at dimension $3$ and spin $1$. **The roster is fixed by the algebra before any force is named, it is complete, and no group can extend it.**
+The biquaternion algebra carries exactly three carriers, and the names are the corpus's own: **the line $\mathbb{R}e_t$, dimension $1$, spin $0$, trivial action**; **the plane $\Sigma(\vec u)$, dimension $2$, spin $\tfrac12$, left multiplication about its own axis**; **the vector part $\mathfrak{k}$, dimension $3$, spin $1$, conjugation.** **Their closures are different objects and a different list** — the centre (dim $2$), the spinor space then the bispinor space (dim $4$, then $8$), and the anti-Hermitian space $\mathbb{B}_\Phi$ (dim $4$). The identity $2s+1=\dim_\mathbb{R}$ holds on the carrier column, and only there.
+
+**The roster is fixed by the algebra before any force is named, it is complete, and no group can extend it.** What it does not fix is the derivative: **Klein–Gordon, Dirac and Proca all use the one gradient $\tilde\nabla_\Phi$, in the material sector and acting on the left**, so the carrier chooses the field's value space and not the operator that acts on it.
 
 The completion is argued three ways: the tensor products close on the three plus the symmetric square of the vector; the dimension count at $M_2(\mathbb{C})$ offers no fourth irreducible piece; and the boundary is the object's and not the method's — the corpus has a *named* Rarita–Schwinger action because there is no spin-$\tfrac32$ carrier, not because no one derived one.
 
@@ -70,15 +92,29 @@ The absence is of a fundamental carrier. **A composite such as the symmetric squ
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | The biquaternion algebra, $\cong M_2(\mathbb C)$ |
-| $\mathbb{B}_C$ | The centre, $\mathbb{C}e_t$; dimension $1$; spin $0$ |
-| $\mathbb{B}_\Psi$ | The informational sector, the minimal left ideals; dimension $2$; spin $\tfrac12$ |
-| $\mathbb{B}_\Phi$ | The material sector, anti-Hermitian; scalar-free part of dimension $3$; spin $1$ |
-| $N$ | The norm of the centre, the invariant that fixes the scalar carrier |
-| $B^2$ | The square of the bivector, the invariant that fixes the vector carrier |
+| $\mathbb{R}e_t$ | **The spin-zero carrier**: the line, dimension $1$, trivial action |
+| $\Sigma(\vec u)$ | **The spin-half carrier**: the plane $\mathbb{C}\tilde\Pi_{\mathrm{id},+}(\vec u)$, dimension $2$, left multiplication about $\vec u$ |
+| $\mathfrak{k}$ | **The spin-one carrier**: the vector part, dimension $3$, conjugation |
+| $\tilde\Pi_{\mathrm{id},\pm}$ | The idempotents of an axis, $\tfrac12(e_t\pm i\vec u)$; the Peirce pair of the plane |
+| $\mathbb{B}_C$ | The **closure** of the line: the centre, $\mathbb{C}e_t$, dimension $2$ |
+| $S_+=\mathbb{B}\tilde\Pi_{\mathrm{id},+}$ | The **closure** of the plane: the spinor space, dimension $4$; the bispinor space is its second step, dimension $8$ |
+| $\mathbb{B}_\Psi$ | The informational sector, $\{X^*=X\}$, the pair of left ideals |
+| $\mathbb{B}_\Phi$ | The material sector, anti-Hermitian, dimension $4$; the **closure** of $\mathfrak{k}$ |
+| $\tilde\nabla_\Phi$ | The gradient: one operator, in $\mathbb{B}_\Phi$, first order, left multiplication; shared by Klein–Gordon, Dirac and Proca |
+| $\tilde g$ | A unit element acting by conjugation or by left multiplication |
 | $e_t$ | The identity of $\mathbb{B}$ |
 | $\tilde g$ | A unit element acting by conjugation or by left multiplication |
 
 ## Further Reading
+
+**The defining articles, in the category that precedes this one.** *Biquaternion Universe Relativity* carries the carriers as objects, one article per spin, and this section inherits its names and its dimensions rather than restating them.
+
+- [Rotor, Spin, Pair and Carrier: A Survey of the Closure Block](rotor-spin-pair-and-carrier-a-survey-of-the-closure-block.html) — the survey of the block, and the source of the three carrier names, the $1,2,3$ dimensions and the *carrier versus closure* distinction used here.
+- [Introduction to the Spin-Zero Centre Subspace](the-spin-zero-centre-subspace.html) — the line $\mathbb{R}e_t$ and its closure, the centre.
+- [Introduction to the Spin-Half Bispinor Spaces](the-spin-half-bispinor-spaces.html) — the plane, the two ideals as the two chiralities, and "the axis is a frame and not a datum".
+- [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html) — the vector part $\mathfrak{k}$ and its closure, the material sector.
+
+**The roster at this section's level, and the filters that follow.**
 
 - [The Determination of the Possible Spins in Biquaternionic Form](the-determination-of-the-possible-spins-in-biquaternionic-form.html) — the same roster read as the scalar, the spinor and the vector, inside *Relativistic Quantum Theory*.
 - [Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth](higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html) — the tensor-product closure and the symmetric square.

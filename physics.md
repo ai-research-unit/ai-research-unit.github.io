@@ -584,7 +584,12 @@
      *The Invariant Density* is the hub and the third filter: the three requirements on a density, cyclicity as the whole
      of the invariance of a square, and the pairing read off the transformation law of the field rather than chosen.
      *The Carrier Roster* is the first filter and the only one that can be applied before a group is chosen: three
-     carriers, dimensions $1$, $2$, $3$, and no fourth, complete before any force is named. *What a Group Can Accept* is
+     carriers, dimensions $1$, $2$, $3$, and no fourth, complete before any force is named — **the line $\mathbb{R}e_t$,
+     the plane $\Sigma(\vec u)$ and the vector part $\mathfrak{k}$**, named as *Biquaternion Universe Relativity* names
+     them in its block *The Sectors and the Carriers*, with their closures (the centre, the spinor space and the material
+     sector) kept apart from them, because the closure dimensions $2$, $4$, $4$ are not the carrier dimensions $1$, $2$,
+     $3$. The derivative is not a carrier: **Klein–Gordon, Dirac and Proca all use the one gradient $\tilde\nabla_\Phi$**
+     in the material sector, left multiplication, so the carrier fixes the field's value space and not the operator. *What a Group Can Accept* is
      the second, and the one that makes the first claim concrete: a carrier becomes a field only when the group has a
      representation of its dimension and reality type, so each group picks its own subset of the three — a sector's spin
      roster is the group's decision inside the algebra's bound — and an empty slot in a sector menu has four causes of
@@ -602,9 +607,11 @@
      That Never Meet* states the non-interference and the four grades — unit multiplier invertible, variational and not
      invertible, constant local multiplier, not variational at all — of which only the last is Helmholtz's veto. **The
      section stands before *The Lagrangian* because every claim in it is a precondition of writing one**, and because
-     the question it answers is asked of a density that does not yet exist. The carrier roster is stated at no rung
-     here and at its own rung in *Relativistic Quantum Theory* and *Electroweak Force*; those two articles are
-     cross-referenced and not moved, because a filter article must state its subject before any rung exists. -->
+     the question it answers is asked of a density that does not yet exist. The carrier roster is defined in
+     *Biquaternion Universe Relativity* — *Rotor, Spin, Pair and Carrier* and the three introductions to the spin-zero,
+     spin-half and spin-one subspaces — and read at its own rung in *Relativistic Quantum Theory* and *Electroweak
+     Force*; those articles are cited and not moved, because a filter article must state its subject before any rung
+     exists, **and because the category that defines an object is not the category that puts it to work**. -->
 
 <a href="articles_physics/the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a>
 <!-- the three requirements on a density; cyclicity as the whole of the invariance, with a pairing that fails written out; reality and the sign as one statement with the Hermiticity type; positivity as a Euclidean statement; the element pairing and the trace as one functional at $2\times2$, so the obstruction on $\mathbb{C}^4$ is dimension and not symmetry; the $\tfrac12$, the $\tfrac14$ and the factor six the normalisation forces; the left action, where the trace is unavailable and the Hermitian form is the density; the hub paragraph that places the section's six filters and hands the admissibility question forward. -->

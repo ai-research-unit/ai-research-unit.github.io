@@ -14,12 +14,14 @@
 
 **Two things must match, and they are independent.**
 
-- **The dimension.** The carrier's representation-space dimension is $1$, $2$ or $3$. A group with no $n$-dimensional representation cannot accept that carrier.
-- **The reality type.** The carrier is anti-Hermitian, Hermitian, or an ideal. The representation must respect that: a real carrier needs a real or pseudo-real representation, and a complex one needs a complex representation. **The corpus's anti-Hermitian material sector is why its connections are anti-Hermitian**, and a group whose generators cannot be taken anti-Hermitian in that module is not admissible however right its dimension.
+- **The dimension.** The carrier's representation-space dimension is $1$, $2$ or $3$ — $1$ for the line $\mathbb{R}e_t$, $2$ for the plane $\Sigma(\vec u)$, $3$ for the vector part $\mathfrak{k}$. A group with no $n$-dimensional representation cannot accept that carrier.
+- **The reality type, read off the carrier's own sector.** The three carriers do not sit in one algebra-element type, so there is no single "reality type of a carrier" to match. **Each carrier is read in the sector that defines it**, and that is what the representation must respect: the vector part $\mathfrak{k}$ lies in the material sector $\mathbb{B}_\Phi$, which is anti-Hermitian, so its representation must admit anti-Hermitian generators — **the corpus's anti-Hermitian material sector is why its connections are anti-Hermitian**; the plane $\Sigma$ lies inside the informational sector $\mathbb{B}_\Psi$, so its representation is the one-sided left action and its reality type is the one a left ideal carries, which is what makes the electroweak fermion's chirality a problem rather than a choice; the line is the trivial carrier, so its representation is the trivial one.
+
+**A caution, and it is the naming caught in a trap.** The carriers are **the line, the plane and the vector part** — the names *Biquaternion Universe Relativity* defines, with their closures being the centre, the spinor space and the material sector. **The three closure spaces are not the three carriers and do not have the carriers' dimensions** ($2$, $4$ and $4$, against the carriers' $1$, $2$ and $3$). A table that writes "the material sector, dimension $3$" has put a closure's name on a carrier's dimension, and the sector table below would then be matching groups against the wrong numbers.
 
 **The consequence is a finite table, and the table is the sector's spin content.**
 
-| force | group | $n=1$ (spin $0$) | $n=2$ (spin $\tfrac12$) | $n=3$ (spin $1$) |
+| force | group | $n=1$: the line (spin $0$) | $n=2$: the plane (spin $\tfrac12$) | $n=3$: the vector part (spin $1$) |
 |---|---|---|---|---|
 | primordial | $\mathrm{SU}(4)$ | accepted, as a **matrix** | accepted, fundamental | accepted, adjoint |
 | strong | $\mathrm{SU}(3)$ | **declined** — no fundamental singlet | accepted, triplet | accepted, octet |
@@ -83,7 +85,8 @@ Read off the condition, the four sectors are: $\mathrm{SU}(3)$ declines the scal
 | $G$ | The force's group: $\mathrm{SU}(4)$, $\mathrm{SU}(3)$, $\mathrm{SU}(2)\times\mathrm{U}(1)$, $\mathrm{U}(1)$ |
 | $\mathcal L_{\mathrm{matter}}$ | The electroweak fermion term, named and not expanded |
 | $g_s$ | The strong coupling, a measurement and not a representation-theoretic datum |
-| $\mathbb{B}_\Phi$ | The material sector, anti-Hermitian; the reality type a representation must respect |
+| $\mathbb{R}e_t$, $\Sigma(\vec u)$, $\mathfrak{k}$ | The three carriers: line, plane, vector part; dimensions $1$, $2$, $3$ |
+| $\mathbb{B}_\Psi$, $\mathbb{B}_\Phi$ | The sectors the plane and the vector part lie in; the reality type a representation must respect |
 
 ## Further Reading
 
