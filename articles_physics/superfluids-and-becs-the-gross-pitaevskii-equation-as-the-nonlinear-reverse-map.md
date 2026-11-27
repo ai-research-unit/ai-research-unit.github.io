@@ -10,7 +10,7 @@ The constant is written $\frac{h}{2\pi}$ here because the medium is a condensate
 
 A uniform condensate with repulsive interaction gives the chemical potential and the healing length; a trapped condensate gives the Thomas–Fermi profile and its radius; an attractive condensate gives a bright soliton whose amplitude and width are fixed by its chemical potential. Each is exact, each is checked by substitution, and each is a place where the fluid's variables can be read off the order parameter.
 
-The vocabulary of superfluidity agrees with the block's and the objects do not: the block's field is one element with no condensate, no broken symmetry and no many-body state. The agreement of formulas is real and the difference of objects is real, and the article states both.
+The vocabulary of superfluidity agrees with the reading's and the objects do not: the reading's field is one element with no condensate, no broken symmetry and no many-body state. The agreement of formulas is real and the difference of objects is real, and the article states both.
 
 ## The Order Parameter and the Fluid
 
@@ -95,23 +95,23 @@ In the one condensed-matter system where a Schrödinger-like equation is fundame
 
 The condensate fraction, the healing length around a defect, the Thomas–Fermi radius and the soliton's width are all measured, and each is a measurement of the order parameter's parameters. None of them is a measurement of a pressure in a fluid that was known beforehand.
 
-Superfluid helium is described by a normal component and a superfluid component, with the superfluid component's flow irrotational and its circulation quantised in units of $c/\nu_m$. The description is derived from the condensate's order parameter, and [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html) is the block's account of the two-fluid construction. The circulation's unit is the same $c/\nu_m$ that the field's nodal set gives, and the agreement is an agreement of formulas with two different objects behind them.
+Superfluid helium is described by a normal component and a superfluid component, with the superfluid component's flow irrotational and its circulation quantised in units of $c/\nu_m$. The description is derived from the condensate's order parameter, and [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html) is the reading's account of the two-fluid construction. The circulation's unit is the same $c/\nu_m$ that the field's nodal set gives, and the agreement is an agreement of formulas with two different objects behind them.
 
 ## The Caveat
 
-**The block's denial is about the object and not about the formulas.** [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html) denies that its reading is a superfluid. The denial is exact and it is worth restating in this article's terms: a superfluid is a many-body state with a broken symmetry, an order parameter and a spectrum of excitations; the block's field is one element at each event, with no many-body state, no symmetry to break and no excitations of its own.
+**The reading's denial is about the object and not about the formulas.** [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html) denies that its reading is a superfluid. The denial is exact and it is worth restating in this article's terms: a superfluid is a many-body state with a broken symmetry, an order parameter and a spectrum of excitations; the reading's field is one element at each event, with no many-body state, no symmetry to break and no excitations of its own.
 
 Both write a complex function as a modulus times a phase, both read the phase's gradient as a velocity, and both find the circulation quantised when the phase winds. That sharing is why the vocabulary transfers, and it is not evidence that the objects are the same.
 
-A condensate's healing length is a physical length set by $g$ and $\rho_0$; the block's field has no healing length, because it has no interaction and no density to heal to. So the two descriptions agree in the formulas that use only $\frac{h}{2\pi}$ and $m$ and diverge in the formulas that use $g$.
+A condensate's healing length is a physical length set by $g$ and $\rho_0$; the reading's field has no healing length, because it has no interaction and no density to heal to. So the two descriptions agree in the formulas that use only $\frac{h}{2\pi}$ and $m$ and diverge in the formulas that use $g$.
 
 ## What Is Established and What Is Interpretation
 
 Established. That the Gross–Pitaevskii equation's Madelung pair is the reverse map's pair with $p_{\mathrm{th}}=\frac12g\rho_{\mathrm{num}}^{2}$, by comparison of the two. That the uniform state, the sound speed, the healing length, the Thomas–Fermi profile and the bright soliton are exact solutions of the stated equations, each checked by substitution. That $g=4\pi \frac{h^{2}}{4\pi^{2}}a_{\mathrm{sc}}/m$ for a dilute gas. That the linear Schrödinger equation is the $g=0$ limit.
 
-Interpretation. That the direction of explanation is the order parameter to the fluid, and that this is the section's thesis in a physical case. That the agreement of the quantum of circulation with the field's is an agreement of formulas and not of objects is the block's reading, and the healing-length test is what makes it more than a preference.
+Interpretation. That the direction of explanation is the order parameter to the fluid, and that this is the section's thesis in a physical case. That the agreement of the quantum of circulation with the field's is an agreement of formulas and not of objects is the reading's claim, and the healing-length test is what makes it more than a preference.
 
-Not claimed. It is not claimed that every superfluid is a dilute Bose gas; helium is strongly interacting and its two-fluid model is not the Gross–Pitaevskii equation. It is not claimed that the block's field is a condensate in any limit; it is not, and the section's thesis does not need it to be. It is not claimed that the bright soliton is stable in three dimensions without a trap; in three dimensions an attractive condensate collapses, and the soliton is a one-dimensional object.
+Not claimed. It is not claimed that every superfluid is a dilute Bose gas; helium is strongly interacting and its two-fluid model is not the Gross–Pitaevskii equation. It is not claimed that the reading's field is a condensate in any limit; it is not, and the section's thesis does not need it to be. It is not claimed that the bright soliton is stable in three dimensions without a trap; in three dimensions an attractive condensate collapses, and the soliton is a one-dimensional object.
 
 ## Summary
 
@@ -123,9 +123,9 @@ The uniform state fixes the chemical potential $\mu_{\mathrm{chm}}=g\rho_0$, the
 
 The linear Schrödinger equation is the $g=0$ limit, and the fluid's pressure vanishes in the same limit. So in the one case where a Schrödinger-like equation is fundamental the equation is the nonlinear one.
 
-The direction is the order parameter to the fluid. The historical two-fluid model of helium is the same direction, and its quantum of circulation is the $c/\nu_m$ that the block's nodal set also gives.
+The direction is the order parameter to the fluid. The historical two-fluid model of helium is the same direction, and its quantum of circulation is the $c/\nu_m$ that the reading's nodal set also gives.
 
-The block's denial stands: the sharing is of formulas, not of objects, and the healing length is the formula where the two part company.
+The reading's denial stands: the sharing is of formulas, not of objects, and the healing length is the formula where the two part company.
 
 ## Summary of Notation
 

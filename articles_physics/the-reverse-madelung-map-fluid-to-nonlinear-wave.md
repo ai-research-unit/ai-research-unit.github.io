@@ -218,7 +218,7 @@ That is why a first-order fluid is not in the image, stated in the language of m
 
 Three names for one equation, and they are the same statement in three literatures. The map's output is the nonlinear Schrödinger equation in wave theory, the Gross–Pitaevskii equation in the theory of a dilute condensate, and the cubic nonlinear wave equation of a Korteweg fluid in continuum mechanics. The mathematics is one object; the constant $\sigma_{\mathrm{dsp}}$ and the sign of $g$ are what the three readings differ in.
 
-The reading in which the constant is an action per unit mass is the spin-zero block's, and it is a case of this map and not a different one. [The Spin-Zero Fluid](the-spin-zero-fluid.html) carries it, with the constant identified there as $\frac{c}{2\pi\nu_m}$ and the second-gradient term named the quantum potential. Nothing in the present article depends on that identification, and the map is stated here for the classical case so that the identification reads as an application.
+The reading in which the constant is an action per unit mass is the spin-zero band's, and it is a case of this map and not a different one. [The Spin-Zero Fluid](the-spin-zero-fluid.html) carries it, with the constant identified there as $\frac{c}{2\pi\nu_m}$ and the second-gradient term named the quantum potential. Nothing in the present article depends on that identification, and the map is stated here for the classical case so that the identification reads as an application.
 
 ## The Count, Restated
 

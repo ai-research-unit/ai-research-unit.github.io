@@ -4,18 +4,13 @@
 
 The claim of this article is that the object of the relativistic quantum theory of this corpus is a fluid, and that the fluid is not a model laid over the theory but the algebra's own factorisation of one element. The object is one element $\tilde\Xi$ of $\mathbb{B}$ at each event. Its polar word writes that element as four factors. Each factor is a variable a fluid is described by: a density, a velocity, a spin direction and an action. The word consumes every real datum of the element, so the reading adds no field and loses no datum.
 
-Three statements follow, and the article takes them in order. The reading is exact where it exists, because the word is a bijection on the invertibles of the algebra. The reading has a domain, because the word exists iff $N(\tilde\Xi)\neq0$, and the locus where it fails is the zero-divisor cone. The reading has a price, and the price is that domain: every statement of this block is a statement about the $N$-regular field.
+Three statements follow, and the article takes them in order. The reading is exact where it exists, because the word is a bijection on the invertibles of the algebra. The reading has a domain, because the word exists iff $N(\tilde\Xi)\neq0$, and the locus where it fails is the zero-divisor cone. The reading has a price, and the price is that domain: every statement of this reading is a statement about the $N$-regular field.
 
-What the reading does not do is stated near the end. It is not second quantization, not thermodynamics, not a hidden-variable ontology, and not a superfluid in the condensed-matter sense. Each of those four is a distinct subject with its own article elsewhere in the corpus, and the fluid of this block is none of them.
+What the reading does not do is stated near the end. It is not second quantization, not thermodynamics, not a hidden-variable ontology, and not a superfluid in the condensed-matter sense. Each of those four is a distinct subject with its own article elsewhere in the corpus, and the fluid of this reading is none of them.
 
-The block has thirty-five entries and this is the first. It is the first of twenty-six on the one element; between it and the rest of those twenty-six lies the
-fluid layer, nine articles on ordinary fluid physics: the Euler and continuity equations in biquaternionic form, the vorticity form, viscosity and the dissipation
-function, the equation of state, the reverse Madelung map with its direction, its Clebsch hierarchy and its one exceptional linear case. The nine state a fluid's data
-and the obstructions to a wave reading — eight of them with no element of the algebra and no field at all — so that the reading that follows rests on a base stated
-in advance.
+The fluid family has thirty-five articles and this is the first of them. It is the first of the twenty-six that read the one element; the nine that state an ordinary fluid's data and the obstructions to a wave reading are the fluid layer of *From the Field Equation to the Fluid*, in *Biquaternion Universe Action* — the Euler and continuity equations in biquaternionic form, the vorticity form, viscosity and the dissipation function, the equation of state, the reverse Madelung map with its direction, its Clebsch hierarchy and its one exceptional linear case — eight of them with no element of the algebra and no field at all, so that the reading rests on a base stated in advance and stated where the skeleton is.
 
-This article states the framework of the twenty-five that follow the fluid layer: the object, the word, the four variables, the domain and the four denials. The rest is grouped by
-spin, and the scalar group is a ladder. [The Schrödinger Fluid](the-schrodinger-fluid.html) and [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html)
+This article states the framework of the twenty-five that read the element: the object, the word, the four variables, the domain and the four denials. Those twenty-five are grouped by spin in *Biquaternion Universe Relativistic Quantum Theory*, where each carrier's action, equation, fluid and apparatus stand in one band; the scalar group is a ladder. [The Schrödinger Fluid](the-schrodinger-fluid.html) and [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html)
 take the first-order rung, on which the boost and the rotor are both absent, the density is the conserved one and no norm constrains the velocity.
 [The Spin-Zero Fluid](the-spin-zero-fluid.html) takes the scalar case, in which the word collapses to two factors, with [The Quantum Stress Tensor of the
 Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) for its energy and flux and [The Nodal Set and Quantized
@@ -37,7 +32,7 @@ $$
 
 with the basis $e_t=1$ and $\vec e_{\imath}^{2}=-e_t$. Nothing stands behind the element. There is no column, no spinor index, no separate state space, no minimal left ideal, no projector and no Clifford algebra. The field is the element and the operator is an element.
 
-The two equations of the block are the algebra's own operators acting on that element. The scalar case is the biquaternionic Klein–Gordon equation
+The two equations of the reading are the algebra's own operators acting on that element. The scalar case is the biquaternionic Klein–Gordon equation
 
 $$
 \left(\Box_\Phi-4\pi^{2}\nu_m^{2}\right)\tilde\Xi=0,
@@ -56,7 +51,7 @@ Both are the subjects of their own articles ([the Klein–Gordon equation in biq
 
 "Relativistic" is a property of the algebra and not an add-on. A Lorentz transformation is invertible acting by multiplication, $\tilde\Xi\mapsto\tilde M\tilde\Xi$ with $N(\tilde M)=1$, and the quaternionic norm $N=\langle\tilde\Xi\rangle_{\natural}$ is central, so it is carried into itself. The d'Alembertian is central. Nothing is added to make the equation covariant; the covariance is the multiplication.
 
-"Quantum" in this block is quantum-mechanical and not quantized. The constant $\frac{h}{2\pi}$ enters twice: through the wave number $\nu_m=\frac{mc}{h}$, and through the phase, which carries the action in units of $\frac{h}{2\pi}$. One field is present. There is no Fock space, no creation operator, no vacuum state and no trace. The block is first-quantized throughout, and the quantized field is the subject of *Biquaternion Universe Quantum Fields*.
+"Quantum" in this reading is quantum-mechanical and not quantized. The constant $\frac{h}{2\pi}$ enters twice: through the wave number $\nu_m=\frac{mc}{h}$, and through the phase, which carries the action in units of $\frac{h}{2\pi}$. One field is present. There is no Fock space, no creation operator, no vacuum state and no trace. The reading is first-quantized throughout, and the quantized field is the subject of *Biquaternion Universe Quantum Fields*.
 
 ## Why a Fluid Is the Right Word
 
@@ -103,7 +98,7 @@ The factor of two in the angle is not decoration. The field carries $e^{i\theta_
 
 ## The Two Cases
 
-The block has two cases, and they differ in how many factors survive and in whether the resulting system closes.
+The reading has two cases, and they differ in how many factors survive and in whether the resulting system closes.
 
 | | scalar case | spinor case |
 | --- | --- | --- |
@@ -139,27 +134,27 @@ For the spinor field the cone is strictly larger than the nodal set. Two familie
 What survives on the cone is the two-factor decomposition. Every element factors as $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a partial isometry, and that factorisation is defined on the whole algebra. The four-factor word is the finer decomposition, and it is the one a fluid needs, because only it separates the velocity from the spin.
 
 The cone has its own article. Its geometry, why the two families above lie on it while the field is at its loudest, and the three places where the reading is a limit
-rather than an identity are [The Domain of the Polar Decomposition: Invertible Elements and the Zero-Divisor Cone](the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone.html); this section states only what the rest of the block uses.
+rather than an identity are [The Domain of the Polar Decomposition: Invertible Elements and the Zero-Divisor Cone](the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone.html); this section states only what the rest of the reading uses.
 
-The domain restriction is not an approximation. Nothing in the block is expanded in a small parameter and nothing is dropped at a boundary. A field that reaches the cone has no fluid description at the event where it reaches it, and the articles say so at each statement rather than in a footnote.
+The domain restriction is not an approximation. Nothing in the reading is expanded in a small parameter and nothing is dropped at a boundary. A field that reaches the cone has no fluid description at the event where it reaches it, and the articles say so at each statement rather than in a footnote.
 
 ## What the Presentation Is Not
 
 ### Not second quantization
 
-One element is not a field operator. The block has no Fock space, no creation or annihilation operator, no vacuum, no Wick theorem and no S-matrix. The quantized
+One element is not a field operator. The reading has no Fock space, no creation or annihilation operator, no vacuum, no Wick theorem and no S-matrix. The quantized
 field, with its grading, its GNS construction and its scattering theory, is *Biquaternion Universe Quantum Fields*, which opens with [The Biquaternion Vacuum as a Minimal
 Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), and no result of that block is used here.
 
-The word is a statement about single elements, not about operators. The polar decomposition applies to the field operator's classical values, and that extension is not made here. The fluid of this block is the fluid of a classical element obeying a quantum-mechanical wave equation.
+The word is a statement about single elements, not about operators. The polar decomposition applies to the field operator's classical values, and that extension is not made here. The fluid of this reading is the fluid of a classical element obeying a quantum-mechanical wave equation.
 
 ### Not thermodynamics
 
-A density and a velocity are not a thermal state. The block has no temperature, no entropy, no partition function and no equation of state at a point. A fluid needs
+A density and a velocity are not a thermal state. The reading has no temperature, no entropy, no partition function and no equation of state at a point. A fluid needs
 a state as well as a kinematics, and the state is the subject of *Biquaternion Universe Relativistic Quantum Thermodynamics*, which puts a density operator on the same field —
 the construction is [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) — and takes the fluid limit of the result.
 
-The two blocks meet at one object and nowhere else. The stress tensor of the scalar field is an article of this block and it is also the object the thermal block's equation of state is built on. The meeting is recorded in both articles and is not a dependency of this one.
+The reading and the thermal block meet at one object and nowhere else. The stress tensor of the scalar field is an article of this reading and it is also the object the thermal block's equation of state is built on. The meeting is recorded in both articles and is not a dependency of this one.
 
 ### Not a hidden-variable ontology
 
@@ -169,7 +164,7 @@ The guidance equation is a reading and not a postulate. That $\vec p=\frac{h}{2\
 
 ### Not a superfluid
 
-The words agree and the objects do not. In condensed matter a quantum fluid is a many-body state with a macroscopic wave function, an order parameter and a spectrum of excitations. Here there is one element, and the "wave function" is the field itself. The vocabulary of the block — density, velocity, vorticity, circulation, spin — is the vocabulary of fluid physics, and it is used because the algebra supplies those variables, not because a condensate is present.
+The words agree and the objects do not. In condensed matter a quantum fluid is a many-body state with a macroscopic wave function, an order parameter and a spectrum of excitations. Here there is one element, and the "wave function" is the field itself. The vocabulary of the reading — density, velocity, vorticity, circulation, spin — is the vocabulary of fluid physics, and it is used because the algebra supplies those variables, not because a condensate is present.
 
 The one place the vocabulary pays is the nodal set. The quantisation of circulation around a nodal line is a theorem about this field, and it is the same theorem that a superfluid's circulation obeys. That agreement is stated in [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) as an agreement of formulas, with the physical difference named.
 
@@ -177,7 +172,7 @@ The one place the vocabulary pays is the nodal set. The quantisation of circulat
 
 Established. That the field is one element with eight real data and no hidden structure. That the word is a bijection between the $N$-regular elements and the eight parameters, so the fluid's variables are a re-coordinatisation. That the four factors are of four algebraic types and that each is read by a different bilinear. That the current reads the scale and the boost and the spin reads the scale and the rotor, with the phase in neither. That the word exists exactly on the invertibles, and that the cone is the nodal set in the scalar case and strictly larger in the spinor case. That the two-factor decomposition survives on the cone.
 
-Interpretation. That this reading deserves the name of a fluid. The count and the types make it a canonical re-coordinatisation; they do not by themselves make the variables a fluid's. The physical identification — scale as density, boost as velocity, rotor as spin, phase gradient as momentum — is the programme's step, and it is taken here once and used throughout the block. It is supported by the limits: in the non-relativistic limit the pair becomes the Madelung system, and in the tensor formulation of the spinor case the same variables appear under other names.
+Interpretation. That this reading deserves the name of a fluid. The count and the types make it a canonical re-coordinatisation; they do not by themselves make the variables a fluid's. The physical identification — scale as density, boost as velocity, rotor as spin, phase gradient as momentum — is the programme's step, and it is taken here once and used throughout the reading. It is supported by the limits: in the non-relativistic limit the pair becomes the Madelung system, and in the tensor formulation of the spinor case the same variables appear under other names.
 
 Not claimed. It is not claimed that the fluid is the fundamental object and the field derived from it. The order is the reverse: the element is given and the fluid is read from it. Nor is it claimed that every solution has a fluid description; the cone is the exception, and it is populated.
 
@@ -191,10 +186,7 @@ The four factors are of four algebraic types: real central, central imaginary, H
 
 The domain is the set of invertibles, asked at each event. The word exists iff $N(\tilde\Xi)\neq0$, and the complement is the zero-divisor cone. The cone is the nodal set for a scalar field and strictly larger for a spinor field, where the fields of definite value and the one-sided plane waves lie on it with a density that never vanishes. On the cone the two-factor decomposition survives and the four-factor word does not.
 
-The block is thirty-five entries in six groups: the framework, which is this article; the fluid layer, which is nine articles on ordinary fluid physics, eight of them with no element of the algebra;
-the scalar ladder, which is the first-order pair below the spin-zero fluid and then that fluid with its stress, its nodal set and its charged companion; the spinor
-fluid with its frame, its stress and its charged companion; the vector fluid with its charged companion — each of the four rungs carrying its Lagrangian article in the fluid variables at its end, so that the eight Lagrangian articles stand beside the eight fluids they vary; and the algebra that reads all of them, with the choices the
-word leaves open, the sign $\varepsilon$, the locking on the degenerate sector and the boundary at which it fails.
+The family is thirty-five articles in three places. This one opens the seven that state the algebra of the reading — the bilinears and their non-closure, the choices the word leaves open, the sign $\varepsilon$, the locking on the degenerate sector, the domain, the two scales and the massless corner — and those seven stand with it in *The Biquaternion Universe and Its Objects*, in *Biquaternion Universe Relativity*. The nine on ordinary fluid physics are the fluid layer of *From the Field Equation to the Fluid*, in *Biquaternion Universe Action*, eight of them with no element of the algebra and no field at all. The remaining nineteen are the fluids themselves, grouped by spin in *Biquaternion Universe Relativistic Quantum Theory*: the scalar ladder, which is the first-order pair below the spin-zero fluid and then that fluid with its stress, its nodal set and its charged companion; the spinor fluid with its frame, its stress and its charged companion; the vector fluid with its charged companion — each of the four rungs carrying its Lagrangian article in the fluid variables at its end, so that the eight Lagrangian articles stand beside the eight fluids they vary.
 
 ## Summary of Notation
 
@@ -227,7 +219,7 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 
 ## Further Reading
 
-- Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter, Part I. General theory," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the tensor formulation of the spin-half fluid that the spinor case of this block corresponds to.
+- Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter, Part I. General theory," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the tensor formulation of the spin-half fluid that the spinor case of this reading corresponds to.
 - David Hestenes, *Space–Time Algebra* (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the reading of the Dirac field as a density, an angle and a rotor.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the fluid formulation and its relativistic extension.
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1926) 322–326, for the non-relativistic pair that the scalar case reduces to.

@@ -8,7 +8,7 @@ A fluid can also carry an orientation, and that is a second and independent gene
 
 The article separates two questions that the word "rotational" runs together. One is whether the velocity carries a potential representation, and that is a question about the *rank* of the vorticity two-form. The other is whether the medium carries an orientation, and that is a question about the *degrees of freedom* at a point. The two are independent: a rotational flow is rank two and carries no orientation, and a medium can carry an orientation while its velocity is a gradient.
 
-Both generalisations are classical, and both are older than the field theory that needs them. Clebsch wrote the potential representation of a rotational velocity in 1857, the Cosserats wrote the medium with an independent triad in 1909, and Eringen gave the micropolar fluid its modern form. The field reading of the next blocks is where the two meet: a bispinor has an orientation among its data, and its velocity is not a gradient, so its fluid is the case that both generalisations describe at once.
+Both generalisations are classical, and both are older than the field theory that needs them. Clebsch wrote the potential representation of a rotational velocity in 1857, the Cosserats wrote the medium with an independent triad in 1909, and Eringen gave the micropolar fluid its modern form. The field reading of the sections that follow is where the two meet: a bispinor has an orientation among its data, and its velocity is not a gradient, so its fluid is the case that both generalisations describe at once.
 
 ## What Actually Fails
 
@@ -123,7 +123,7 @@ The reduction is in two independent steps, and the table separates them.
 | classical rotational fluid | a Clebsch field | none | $2$ in three dimensions | symmetric |
 | Cosserat medium | a Clebsch field or any field | an independent triad | $0$, $2$ or $4$ | antisymmetric |
 
-The middle row is the one the fluid layer of this block carries. Euler and continuity, the vorticity form, viscosity, the equation of state and the reverse maps are all written for a medium with a velocity and no triad, so their vorticity is a property of the flow alone. A Cosserat medium differs from them in the second and fourth columns, and a potential flow differs from both in the first.
+The middle row is the one the fluid layer carries. Euler and continuity, the vorticity form, viscosity, the equation of state and the reverse maps are all written for a medium with a velocity and no triad, so their vorticity is a property of the flow alone. A Cosserat medium differs from them in the second and fourth columns, and a potential flow differs from both in the first.
 
 This is the sense in which a potential flow is not the general case but its lowest member. It has the smallest possible value of every entry in the table. A reader who meets it first and then meets a medium with an orientation has not met a contradiction, and the count of the two is consistent once the table is read.
 

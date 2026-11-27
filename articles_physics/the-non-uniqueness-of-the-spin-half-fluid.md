@@ -69,7 +69,7 @@ The velocity is the boost's or the phase gradient's, and the two agree only in f
 
 The two are the same four-vector when the field is on shell, and they are defined on different data. The boost's velocity is read from the frame, the phase gradient's from the action, and the field equation is what ties them. Off shell the two are independent, which is why a fluid built on one is not the same object as a fluid built on the other.
 
-This is the second place where the word does not decide. The word carries both objects: the boost is a factor and the phase is a factor. The identification of one of them with "the velocity" is the reading's step, and it is taken differently in the two cases of this block.
+This is the second place where the word does not decide. The word carries both objects: the boost is a factor and the phase is a factor. The identification of one of them with "the velocity" is the reading's step, and it is taken differently in the two cases of this reading.
 
 ### The Spin
 

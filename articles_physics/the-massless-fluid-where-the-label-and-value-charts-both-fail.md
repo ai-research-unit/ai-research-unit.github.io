@@ -22,7 +22,7 @@ $$
 N(\tilde\Upsilon_\Phi)=-\nu_t'{}^{2}+\lvert\vec\nu_\Phi\rvert^{2}\in\mathbb{R},
 $$
 
-the mass shell being $N(\tilde\Upsilon_\Phi)=-\nu_m^{2}$, that is $\nu_t'{}^{2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$ [Four-Vectors and the Interval](four-vectors-and-the-interval.html). $\nu_m$ is the mass in wave-number units, the block's $2\pi\nu_m$. The **label cone** is $N(\tilde\Upsilon_\Phi)=0$, that is $\nu_t'=\lvert\vec\nu_\Phi\rvert$.
+the mass shell being $N(\tilde\Upsilon_\Phi)=-\nu_m^{2}$, that is $\nu_t'{}^{2}=\lvert\vec\nu_\Phi\rvert^{2}+\nu_m^{2}$ [Four-Vectors and the Interval](four-vectors-and-the-interval.html). $\nu_m$ is the mass in wave-number units, the corpus's $2\pi\nu_m$. The **label cone** is $N(\tilde\Upsilon_\Phi)=0$, that is $\nu_t'=\lvert\vec\nu_\Phi\rvert$.
 
 The two symbols. The scalar rung's operator $\Box_\Phi-4\pi^{2}\nu_m^{2}$ has the scalar symbol
 
@@ -66,7 +66,7 @@ $$
 \underbrace{N(\tilde\Upsilon_\Phi)=0}_{\text{label cone}}\qquad\text{and}\qquad \underbrace{N(\tilde\Upsilon_\Phi)=-\nu_m^{2}}_{\text{pole set}} .
 $$
 
-The mass is their spacing, and nothing else is. For $\nu_m\neq0$ no label satisfies both equations, since the two require $N(\tilde\Upsilon_\Phi)$ to be two different numbers; for $\nu_m=0$ the two level sets are one set. This is the whole content of the parameter: not that the mass term shifts the dispersion, which is obvious, but that it is the only quantity in the block whose vanishing makes the two failures coincide in the label space.
+The mass is their spacing, and nothing else is. For $\nu_m\neq0$ no label satisfies both equations, since the two require $N(\tilde\Upsilon_\Phi)$ to be two different numbers; for $\nu_m=0$ the two level sets are one set. This is the whole content of the parameter: not that the mass term shifts the dispersion, which is obvious, but that it is the only quantity in the reading whose vanishing makes the two failures coincide in the label space.
 
 Checked at four labels. The third column is the scalar symbol, the fourth says whether the propagator exists:
 
@@ -81,7 +81,7 @@ The last row is the point of the table. A label on the cone with a nonzero mass 
 
 ## The Two Families That Approach Two Different Sets
 
-"Massless" names two different things in this block, and they are kept apart here. The first is a four-momentum whose invariant mass has gone to zero. The second is a field whose equation has lost its mass term. They approach different sets, they carry different fluid data, and only the first has a density that vanishes.
+"Massless" names two different things in this reading, and they are kept apart here. The first is a four-momentum whose invariant mass has gone to zero. The second is a field whose equation has lost its mass term. They approach different sets, they carry different fluid data, and only the first has a density that vanishes.
 
 | the family | family one: the four-momentum | family two: the field |
 | --- | --- | --- |
@@ -138,7 +138,7 @@ $$
 
 which contains no mass at all. At fixed energy the rate of momentum transfer is the same at every mass: **the Bohm potential diverges and the Bohm force does not.** A reader who quotes "$Q_{\mathrm{qnt}}$ diverges" as the statement that the guidance fails near the wall has quoted the potential and not the force.
 
-The velocity defect is the fastest divergence in the block. Since $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ and $Q_{\mathrm{qnt}}\propto1/m$, the defect grows as $1/m^{2}$: $-0.021$ at $2\pi\nu_m=1\ \mathrm{fm^{-1}}$, $-0.083$ at $2\ \mathrm{fm^{-1}}$ and $-0.333$ at $4\ \mathrm{fm^{-1}}$, a factor four for each halving. So the velocity is invertible only at a mode, and its departure from the unit is the quantity that fails first.
+The velocity defect is the fastest divergence in the reading. Since $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ and $Q_{\mathrm{qnt}}\propto1/m$, the defect grows as $1/m^{2}$: $-0.021$ at $2\pi\nu_m=1\ \mathrm{fm^{-1}}$, $-0.083$ at $2\ \mathrm{fm^{-1}}$ and $-0.333$ at $4\ \mathrm{fm^{-1}}$, a factor four for each halving. So the velocity is invertible only at a mode, and its departure from the unit is the quantity that fails first.
 
 ### What the Approach Does, Said in Fluid Words
 
@@ -365,7 +365,7 @@ The label chart's failure is a projection and not a divergence. Its least-square
 | $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, $\sum_{\imath} Q_{\imath}^{2}$, complex, multiplicative |
 | $\langle\tilde Q\rangle_{*}$ | the Euclidean size, $\sum_{\imath}\lvert Q_{\imath}\rvert^{2}$ |
 | $\tilde\Upsilon_\Phi=i\nu_t'e_t+\vec\nu_\Phi$ | the label, with imaginary time coefficient |
-| $\nu_m$ | the mass in wave-number units, the block's $2\pi\nu_m$ |
+| $\nu_m$ | the mass in wave-number units, the corpus's $2\pi\nu_m$ |
 | $N(\tilde\Upsilon_\Phi)=-\nu_t'{}^{2}+\lvert\vec\nu_\Phi\rvert^{2}$ | the label's norm (plain $N$); the mass shell is $-\nu_m^{2}$ |
 | $\mathcal N(\tilde\Upsilon_\Phi)$ | the scalar symbol (script $\mathcal N$), $\nu_t'{}^{2}-\lvert\vec\nu_\Phi\rvert^{2}-\nu_m^{2}$, equal to $-N-\nu_m^{2}$ |
 | $\Sigma(\tilde\Upsilon_\Phi)$ | the algebra-valued symbol of the first-order rung |

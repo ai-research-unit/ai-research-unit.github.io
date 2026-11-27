@@ -109,7 +109,7 @@ The ladder from five to two has three rungs and two conditions. Each rung remove
 
 **Two rungs and not one, because neither condition implies the other.** A barotropic fluid can be rotational; an irrotational fluid can be baroclinic. The ladder is a conjunction, and the later article's map is defined on the bottom rung only.
 
-An amplitude has two real data, a modulus and an argument, and the bottom rung has the density and the potential. The correspondence of counts is the whole of the reverse map's scope, and the articles of the next blocks are where the amplitude's other components are given names.
+An amplitude has two real data, a modulus and an argument, and the bottom rung has the density and the potential. The correspondence of counts is the whole of the reverse map's scope, and the articles of the categories that follow are where the amplitude's other components are given names.
 
 ## What Is Established and What Is Interpretation
 
@@ -162,4 +162,4 @@ The ladder from five data to two has two rungs, and neither condition implies th
 - George K. Batchelor, *An Introduction to Fluid Dynamics* (Cambridge University Press, 1967), §3.5, for barotropic and baroclinic flows.
 - François Golse, "The Boltzmann equation and its hydrodynamic limits," in *Handbook of Mathematical Fluid Dynamics*, vol. II (North-Holland, 2003), for the closure problem that barotropicity short-circuits.
 - The companion articles: [The Euler and Continuity Equations in Biquaternionic Form](the-euler-and-continuity-equations-in-biquaternionic-form.html), [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html), [Viscosity and the Rayleigh Dissipation Function](viscosity-and-the-rayleigh-dissipation-function.html), [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html).
-- The application of both terms to a quantum medium is in the spin-zero block of the index, where the second-gradient term is the quantum potential and its stress is computed.
+- The application of both terms to a quantum medium is in the spin-zero band of the index, where the second-gradient term is the quantum potential and its stress is computed.

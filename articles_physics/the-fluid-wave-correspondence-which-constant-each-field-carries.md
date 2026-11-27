@@ -44,7 +44,7 @@ Given the two, the Hamilton–Jacobi equation is a definition and not an assumpt
 
 A gradient has no curl, so $\vec\nabla_\Phi\times\vec v=\vec 0$ is necessary, and on a simply connected domain it is sufficient. On a domain with a hole it is sufficient up to the period, which is the winding of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html).
 
-A rotational velocity is not without potentials: the Clebsch form writes it with three functions, $\vec v=\vec\nabla_\Phi\xi_{\mathrm{pot},\mathrm{clb}}/m+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}/m$, and the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ carries the whole vorticity. So what the reverse map needs is not the absence of vorticity but a vorticity whose rank the target can hold, and a single complex unknown holds one rank and no more. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the hierarchy, and states the medium whose data do carry a pair: the spinning fluid of the Dirac block.
+A rotational velocity is not without potentials: the Clebsch form writes it with three functions, $\vec v=\vec\nabla_\Phi\xi_{\mathrm{pot},\mathrm{clb}}/m+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}/m$, and the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ carries the whole vorticity. So what the reverse map needs is not the absence of vorticity but a vorticity whose rank the target can hold, and a single complex unknown holds one rank and no more. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the hierarchy, and states the medium whose data do carry a pair: the spinning fluid of the Dirac band.
 
 The force has three parts and each can fail to be a gradient on its own. The pressure part is a gradient exactly when the flow is isentropic, by the Gibbs–Duhem relation of [The Equation of State and the Barotropic Condition](the-equation-of-state-and-the-barotropic-condition.html), and barotropicity is the *stronger* hypothesis that makes it a gradient whatever the entropy field does. The viscous part is a gradient only in special flows — the unidirectional one is the case — and in general it is not, which is the inviscid condition. The external part is a gradient exactly when the external field is conservative.
 
@@ -100,7 +100,7 @@ A stellar interior is barotropic to excellent accuracy, and it is neither irrota
 
 ## The Three Reversed Cases
 
-An ultralight scalar field obeys the Klein–Gordon equation, and its non-relativistic limit is a Schrödinger equation with a self-interaction. The fluid — density, velocity, quantum pressure — is the Madelung reading of that field, and [The Spin-Zero Fluid](the-spin-zero-fluid.html) is the block's account of it.
+An ultralight scalar field obeys the Klein–Gordon equation, and its non-relativistic limit is a Schrödinger equation with a self-interaction. The fluid — density, velocity, quantum pressure — is the Madelung reading of that field, and [The Spin-Zero Fluid](the-spin-zero-fluid.html) is the reading's account of it.
 
 A dilute condensate obeys the Gross–Pitaevskii equation; its density and phase obey the Madelung pair; and the pair is what the two-fluid model of the condensate is built from. The linear Schrödinger equation is the non-interacting limit of the Gross–Pitaevskii equation, not the fundamental law.
 
@@ -124,11 +124,11 @@ A fluid equation can be linearised, and when it is, the linear equation is eithe
 
 ## What This Means for the Block
 
-**The fluid layer is a reading of the field, not a model of a fluid.** The block's title says fluid physics because its variables are a fluid's, and the previous five articles have measured how far that vocabulary reaches. It reaches exactly as far as the field's data reach, and it stops where the pressure, the vorticity and the viscosity begin.
+**The fluid layer is a reading of the field, not a model of a fluid.** The layer's title says fluid physics because its variables are a fluid's, and the previous five articles have measured how far that vocabulary reaches. It reaches exactly as far as the field's data reach, and it stops where the pressure, the vorticity and the viscosity begin.
 
-[The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html) denies that the reading is a superfluid and denies that it is a linear wave equivalent. The two denials are the two halves of this article's conclusion: the reading is not a superfluid because a superfluid's fluid is derived from an order parameter, and it is not a wave equivalent because the wave equation comes first. The block's order is the reverse of the order that would make either denial a problem.
+[The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html) denies that the reading is a superfluid and denies that it is a linear wave equivalent. The two denials are the two halves of this article's conclusion: the reading is not a superfluid because a superfluid's fluid is derived from an order parameter, and it is not a wave equivalent because the wave equation comes first. The reading's order is the reverse of the order that would make either denial a problem.
 
-The vocabulary of circulation, vorticity and spin can be borrowed from fluid physics, because those are the variables the algebra supplies. The vocabulary of pressure, temperature and dissipation cannot, because those are variables the algebra does not supply. The block borrows the first and not the second, and this article is the statement of why the line falls where it does.
+The vocabulary of circulation, vorticity and spin can be borrowed from fluid physics, because those are the variables the algebra supplies. The vocabulary of pressure, temperature and dissipation cannot, because those are variables the algebra does not supply. The reading borrows the first and not the second, and this article is the statement of why the line falls where it does.
 
 ## What Is Established and What Is Interpretation
 
@@ -154,7 +154,7 @@ In the fields that use ordinary fluid equations there is no hidden linear wave e
 
 The three exceptions run the other way. In wave dark matter, in condensates and in relativistic quantum plasmas the wave equation is fundamental and the fluid is derived. The direction of explanation follows the constants, and the constants are in the wave equation.
 
-The block's two denials are one statement: the reading is a re-coordinatisation of the field, so it is neither a superfluid's fluid nor a source of wave equations.
+The reading's two denials are one statement: the reading is a re-coordinatisation of the field, so it is neither a superfluid's fluid nor a source of wave equations.
 
 ## Summary of Notation
 

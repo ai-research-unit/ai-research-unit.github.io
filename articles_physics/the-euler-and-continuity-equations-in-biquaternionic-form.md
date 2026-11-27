@@ -6,7 +6,7 @@ An ordinary fluid carries five real numbers at each point, and none of them is a
 
 Euler's equation is a vector equation, the algebra has a vector part, and any notation that can write a vector can write Euler. A translation that changes nothing has explained nothing.
 
-The field of the block is one element of $\mathbb{B}$ at each event, and that element carries eight real data. The fluid carries five. The difference is not a defect of the writing; it is the distance between a fluid and a wave equation, and it is the subject of the eight articles that follow this one. The count is exact, it is stated here once, and every later article names which of the five data it discards and why.
+The field of the reading is one element of $\mathbb{B}$ at each event, and that element carries eight real data. The fluid carries five. The difference is not a defect of the writing; it is the distance between a fluid and a wave equation, and it is the subject of the eight articles that follow this one. The count is exact, it is stated here once, and every later article names which of the five data it discards and why.
 
 The algebra's complex structure is not used anywhere in this article. That absence is the first measurement. The fluid's equations are one real scalar equation and one real vector equation; a wave equation is one complex equation whose unknown occupies all four slots of the element. A reader who expects the second will not find it here, and the reason is structural: the temporal slot of the flow element is the constant $ic$, so the scalar slot carries no unknown for an equation to act on.
 
@@ -62,15 +62,15 @@ $$
 \gamma=\frac{1}{\sqrt{1-\lvert\vec v\rvert^{2}/c^{2}}} .
 $$
 
-So the Galilean flow element is not invertible element, and its norm is the reciprocal square of the Lorentz factor rather than $-c^{2}$. The block's relativistic articles normalise the flow to $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the element they use is
+So the Galilean flow element is not invertible element, and its norm is the reciprocal square of the Lorentz factor rather than $-c^{2}$. The relativistic articles normalise the flow to $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the element they use is
 
 $$
 \tilde V_{\Phi,\mathrm{rel}}=\gamma\,\tilde V_\Phi=i c\gamma\,e_t+\gamma\vec v .
 $$
 
-Multiplying an element by a central real scalar multiplies all four coefficients, so the difference between the two writings is a single number at each point. Euler's equation below is Galilean, so it is written on the unnormalised element; the block's relativistic articles write it on the normalised one. An article that mixed the two would carry a factor $\gamma$ that no term accounts for, and this one does not mix them.
+Multiplying an element by a central real scalar multiplies all four coefficients, so the difference between the two writings is a single number at each point. Euler's equation below is Galilean, so it is written on the unnormalised element; the relativistic articles write it on the normalised one. An article that mixed the two would carry a factor $\gamma$ that no term accounts for, and this one does not mix them.
 
-The velocity is the vector part and not the spatial part of a four-vector. This is the distinction that the block's relativistic articles make and that a classical fluid does not have. For the Galilean element, $\vec v$ is the vector part; for the normalised one, $\gamma\vec v$ is. The two are not related by a relabelling, because $\gamma$ is a function of position, and §*The Vorticity* of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) draws the consequence for the curl.
+The velocity is the vector part and not the spatial part of a four-vector. This is the distinction the relativistic articles make and that a classical fluid does not have. For the Galilean element, $\vec v$ is the vector part; for the normalised one, $\gamma\vec v$ is. The two are not related by a relabelling, because $\gamma$ is a function of position, and §*The Vorticity* of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) draws the consequence for the curl.
 
 ## The Material Derivative Is a Pairing
 
@@ -105,7 +105,7 @@ $$
 
 holds, and the continuity equation is its vanishing. The check is the same expansion: the temporal slot gives $(-i\partial_{r'_t})(ic\rho_{\mathrm{num}})=+c\partial_{r'_t}\rho_{\mathrm{num}}$, and the three spatial slots give the divergence.
 
-The rest of the product is not an equation of the fluid, and it is worth naming so that nobody imposes it. The element $\tilde\nabla_\Phi\tilde J_\Phi$ has a vector part as well as a scalar part, and its vanishing would be the statement that the current is harmonic in a stronger sense than conservation. A fluid conserves markers; it does not require its current to be harmonic. So the continuity equation is one component of one element identity, and the block never writes the other three as a law.
+The rest of the product is not an equation of the fluid, and it is worth naming so that nobody imposes it. The element $\tilde\nabla_\Phi\tilde J_\Phi$ has a vector part as well as a scalar part, and its vanishing would be the statement that the current is harmonic in a stronger sense than conservation. A fluid conserves markers; it does not require its current to be harmonic. So the continuity equation is one component of one element identity, and the reading never writes the other three as a law.
 
 ## Euler Is One Element Equation
 

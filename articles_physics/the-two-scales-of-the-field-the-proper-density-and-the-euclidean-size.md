@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The fluid block calls one number the density and never asks what the field's size is. The polar word writes $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and every article of the block reads the scale $\varrho$ as the density, $\rho_{\mathrm{num}}=\varrho^{2}$. The element also has a second number, the Euclidean size $\langle\tilde\Xi\rangle_{*}=\sum_{\imath}\lvert\Xi_{\imath}\rvert^{2}$, which the algebra supplies without a chart and which no article of the block uses.
+The fluid reading calls one number the density and never asks what the field's size is. The polar word writes $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and every article of the reading reads the scale $\varrho$ as the density, $\rho_{\mathrm{num}}=\varrho^{2}$. The element also has a second number, the Euclidean size $\langle\tilde\Xi\rangle_{*}=\sum_{\imath}\lvert\Xi_{\imath}\rvert^{2}$, which the algebra supplies without a chart and which no article of the reading uses.
 
 The two numbers are not equal, and their ratio is the boost. Off the null cone,
 
@@ -14,7 +14,7 @@ $$
 
 so the proper density is the Euclidean size divided by the fluid's own Lorentz factor. The ratio is exact and not an approximation, and it is the same rapidity the velocity is built from.
 
-Three consequences, and they are the article. First, the Euclidean size is not a second and looser notion of density: at the spinor rung it is the time component of the block's own number current over $c$, up to the algebra's $i$, so the two numbers are the invariant length and the time component of one four-vector. Second, at the scalar rungs the ratio is identically one, because a central element has no second real dimension to be non-parallel to; that is why the block could be written below the spinor rung and exhibit none of this. Third, on the null cone the ratio has no value and diverges along every approach to it, while the Euclidean size stays at the field's full size: the chart's density vanishes where the field does not.
+Three consequences, and they are the article. First, the Euclidean size is not a second and looser notion of density: at the spinor rung it is the time component of the reading's own number current over $c$, up to the algebra's $i$, so the two numbers are the invariant length and the time component of one four-vector. Second, at the scalar rungs the ratio is identically one, because a central element has no second real dimension to be non-parallel to; that is why the reading could be written below the spinor rung and exhibit none of this. Third, on the null cone the ratio has no value and diverges along every approach to it, while the Euclidean size stays at the field's full size: the chart's density vanishes where the field does not.
 
 What is new here, stated plainly. The identity $\langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2}$ is Lagrange's identity in $\mathbb{R}^{4}$, applied to the real and imaginary four-vectors of the coefficients; it is classical, and no algebraic theorem is claimed. The contribution is interpretive and organizational: the corpus has one number under two names, $\varrho^{2}$ and $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, and two articles spell it differently without a stated relation. This article supplies the relation, identifies which name belongs to which quantity, and records what each name does at the cone. Two further statements are proved here and are not quotations: the transformation law of §*Transformation Properties*, which shows that the Euclidean size is the time component and the modulus the invariant length, and the factor of two between the spinor and vector carriers of §*The Factor of Two, and the Two Carriers*.
 
@@ -36,7 +36,7 @@ $$
 
 with $\theta_{\mathrm{rpd}}\ge0$ the rapidity. The half-angle in the exponent is the subject of §*The Factor of Two, and the Two Carriers*.
 
-The two names for the density. The block's fluid articles write $\rho_{\mathrm{num}}=\varrho^{2}$ and call it the **proper density**. The polar-variable articles write $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and call it the density [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html). This article shows that the first is the invariant length of the current over $c$ and the second its time component over $c$, and proposes no change of letters: **the two names stay, and the relation between them is the subject.**
+The two names for the density. The fluid articles write $\rho_{\mathrm{num}}=\varrho^{2}$ and call it the **proper density**. The polar-variable articles write $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and call it the density [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html). This article shows that the first is the invariant length of the current over $c$ and the second its time component over $c$, and proposes no change of letters: **the two names stay, and the relation between them is the subject.**
 
 Units. The field $\tilde\Xi$ carries the amplitude's units, $\varrho$ and $\langle\tilde\Xi\rangle_{*}$ their square, $\rho_{\mathrm{num}}$ and $n$ the invertibles of a number density, and $j_0$ density times velocity. No numerical value in this article depends on the invertibles, all statements being ratios or identities between quantities of the same dimension.
 
@@ -151,13 +151,13 @@ $$
 
 which is $\gamma_\xi_{\mathrm{pot}}\bigl(u_{t}+\beta_\xi_{\mathrm{pot}}\,\vec u_{\xi_{\mathrm{pot}}}\cdot\vec u\bigr)$ for the four-velocity $u_{\imath}=(\cosh\theta_{\mathrm{rpd}},\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b})$, its temporal component first and all indices low, scaled by $\varrho^{2}$. The two special cases are the memorable ones: for a boost along the flow, $\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\cosh(\theta_{\mathrm{rpd}}+\xi_{\mathrm{pot}})$, the rapidity adding; for a boost perpendicular to it, $\langle\tilde\Xi'\rangle_{*}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}\cosh\xi_{\mathrm{pot}}$, the two Lorentz factors multiplying. *Proof and residuals: §*Appendix: The Algebra*, §*The Boost Composition*.*
 
-So the ratio is the flow's Lorentz factor and transforms as one. $\langle\tilde\Xi\rangle_{*}/\lvert N\rvert=\cosh\theta_{\mathrm{rpd}}$ is the time component of the four-velocity, and the sentence "the Euclidean size is the coordinate density" is the statement that a coordinate density is a time component. $\lvert N\rvert$ is a scalar of the theory; $\langle\cdot\rangle_{*}$ is not, and the phrase "the field's size" is therefore misleading wherever it appears in the block: the field has no Lorentz-invariant Euclidean size, it has an invariant modulus and a frame-dependent time component.
+So the ratio is the flow's Lorentz factor and transforms as one. $\langle\tilde\Xi\rangle_{*}/\lvert N\rvert=\cosh\theta_{\mathrm{rpd}}$ is the time component of the four-velocity, and the sentence "the Euclidean size is the coordinate density" is the statement that a coordinate density is a time component. $\lvert N\rvert$ is a scalar of the theory; $\langle\cdot\rangle_{*}$ is not, and the phrase "the field's size" is therefore misleading wherever it appears in the reading: the field has no Lorentz-invariant Euclidean size, it has an invariant modulus and a frame-dependent time component.
 
 Verified on five angles and three boosts. With $\varrho=1$, $\theta_{\mathrm{rpd}}=1.0986$, $\xi_{\mathrm{pot}}=0.7$, the measured $\langle\tilde\Xi'\rangle_{*}$ and the displayed law agree to $1.3\times10^{-15}$ at $\chi=0^{\circ},30^{\circ},60^{\circ},90^{\circ},180^{\circ}$, and $\lvert N\rvert$ stays at $1$ to $2\times10^{-16}$ throughout.
 
 ## The Element's Size Is the Current's Time Component
 
-At the spinor rung the Euclidean size is already in the block, under another name. The current is $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ with $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), where
+At the spinor rung the Euclidean size is already in the reading, under another name. The current is $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ with $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), where
 
 $$
 \tilde U_{\Psi,\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b},
@@ -194,7 +194,7 @@ $$
 
 The reason is dimensional and not dynamical. A central element's eight real coordinates occupy a two-dimensional real subspace, and the real and imaginary parts lie on the same real line through the origin, so the parallelogram they span has no area. No boost exists in one complex dimension, so $\cosh\theta_{\mathrm{rpd}}=1$ identically and the Schrödinger and Klein–Gordon rungs have one scale and not two.
 
-That is why the block could be written for the scalar rungs and say nothing about this. Every statement about the two scales is invisible below the spinor rung, and the three quantities that separate them — the boost, the velocity and the $\gamma$ — are exactly the ones the first-order rung does not have. The two scales appear when the element stops being central and not before, which is the same threshold at which the block's fluid equations acquire the spin terms that keep them from closing. *Why they do not close is [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), §on the non-closure of the three bilinears, and is not re-derived here.*
+That is why the reading could be written for the scalar rungs and say nothing about this. Every statement about the two scales is invisible below the spinor rung, and the three quantities that separate them — the boost, the velocity and the $\gamma$ — are exactly the ones the first-order rung does not have. The two scales appear when the element stops being central and not before, which is the same threshold at which the reading's fluid equations acquire the spin terms that keep them from closing. *Why they do not close is [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), §on the non-closure of the three bilinears, and is not re-derived here.*
 
 ## On the Cone the Ratio Has No Value
 
@@ -298,7 +298,7 @@ No statement about measurement. The two numbers are properties of the element. W
 
 ## Summary
 
-The field has two numbers and the block uses one. The modulus of the quaternionic norm is the proper density, $\rho_{\mathrm{num}}=\varrho^{2}$; the Euclidean size is $\langle\tilde\Xi\rangle_{*}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; their ratio is the flow's Lorentz factor.
+The field has two numbers and the reading uses one. The modulus of the quaternionic norm is the proper density, $\rho_{\mathrm{num}}=\varrho^{2}$; the Euclidean size is $\langle\tilde\Xi\rangle_{*}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; their ratio is the flow's Lorentz factor.
 
 The identity is Lagrange's in four dimensions. $\langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2}$ with $A$ the area of the parallelogram of real and imaginary parts. **No new algebra is claimed**; what is supplied is the relation between two names the corpus already uses and the inventory of what each name does at the cone.
 
@@ -435,7 +435,7 @@ These are checks, not proofs. The proofs are the five claims above; the numbers 
 
 ## Further Reading
 
-The block this article clarifies. [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html) fixes the word and the reading of $\varrho$; [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) supplies the current and the non-closure of the bilinears; [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html) the correspondence the density serves; [The Domain of the Polar Decomposition: Invertible Elements and the Zero-Divisor Cone](the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone.html) and [The Massless Regime](the-massless-regime.html) the two ends of the cone.
+The reading this article clarifies. [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html) fixes the word and the reading of $\varrho$; [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) supplies the current and the non-closure of the bilinears; [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html) the correspondence the density serves; [The Domain of the Polar Decomposition: Invertible Elements and the Zero-Divisor Cone](the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone.html) and [The Massless Regime](the-massless-regime.html) the two ends of the cone.
 
 The algebra. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) for the four norms and their names; [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) for the two cases and what each costs; [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html) for the ratio of the two invariants as a rapidity in the vector case; [Four-Vectors and the Interval](four-vectors-and-the-interval.html) for the imaginary time coefficient.
 

@@ -52,6 +52,8 @@ From time to time, update the article "Introduction to the Biquaternion Algebra 
 From time to time, strip the proof-end marks :
 grep -rnE '(\$\\square\$|\\\(\\square\\\)|\$\\blacksquare\$)[ \t]*$' articles_maths articles_physics | wc -l   # expect 0
 
+Do not remove the titles of empty sections.
+
 ################################
 ### RULES DURING THE CHATTING MODE
 ################################
