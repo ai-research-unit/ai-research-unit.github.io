@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: Does Each Category Have Its Own Lagrangian? — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. A review, not an edit. No article, menu, plan or build file was modified. Every count and line number below is checked against…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-does-each-category-have-its-own-lagrangian"><strong>Audit: Does Each Category Have Its Own Lagrangian?</strong></h1>
+<p><em>Status of this file.</em> <strong>A review, not an edit.</strong> No article, menu, plan or build file was modified. Every count and line number below is checked against <code>physics.md</code> and the article named, as they stand on 2026-11-27.</p>
+<p><em>The question.</em> The corpus files Lagrangian articles under spin headings. Does each category have a Lagrangian particular to its spin? Dirac, Proca and Klein–Gordon plainly do. The doubt is $\mathrm{SU}(4)$, $\mathrm{SU}(3)$ and the electroweak sector, where the organising object is a gauge group and not a spin.</p>
+<p><em>The answer in one paragraph.</em> <strong>The free-field categories have a spin-specific family. The gauge sectors do not.</strong> For spins $0$, $\tfrac12$ and $1$ the corpus writes a functional whose Euler–Lagrange equation is the parent equation, and the functional changes with the spin: second order for Klein–Gordon and Proca, first order for Dirac, first order in time for Schrödinger. The gauge sectors are the other way round: one model Lagrangian carries terms of several spins, and the spin headings file the terms by the carrier each article writes on. $\mathrm{SU}(4)$ has one transcribed action with a spin-$1$, a spin-$\tfrac12$ and a spin-$0$ piece. QCD has one transcribed action with a spin-$1$ gluon and a spin-$\tfrac12$ quark, plus native spin-$0$ chiral actions that are not QCD. The electroweak sector has one action with spin-$1$ and spin-$0$ terms; its spin-$\tfrac12$ term is named and not expanded. So the right question is not "is there a Lagrangian for this spin" but "is there a derived, transcribed or effective action for this carrier, and which spin does its term carry".</p>
+<h2 id="1-two-senses-of-the-question">1. Two Senses of the Question</h2>
+<p><strong>Sense one: a functional for a carrier of spin $s$.</strong> The object is a field of a definite spin, and the question is which action has that field's equation as its Euler–Lagrange equation. Klein–Gordon answers for spin $0$, Dirac for spin $\tfrac12$, Proca for spin $1$. The functional is genuinely spin-specific: the carrier, the derivative order and the bilinear form change with the spin.</p>
+<p><strong>Sense two: a model Lagrangian for a sector.</strong> The object is a gauge group, a representation content and a symmetry-breaking pattern. The question is which action describes the sector. The answer is one action with several terms, each term carrying a different spin. $\mathrm{SU}(4)$, QCD and the electroweak action are of this kind.</p>
+<p>The corpus uses the same word for both. Most of the apparent inconsistency comes from that. A sector action is not indexed by spin; it is indexed by the group and the content, and the spin is a property of each term.</p>
+<p><strong>A second distinction, needed before the tables.</strong> Spin fixes the carrier and the derivative order. It does not fix the functional by itself. Spin $0$ has Klein–Gordon, second order and relativistic, and Schrödinger, first order in time. Spin $1$ has Maxwell, massless, and Proca, massive. Spin $\tfrac12$ has Dirac, relativistic, and Pauli, its non-relativistic limit. The functional is indexed by spin <em>and</em> stage <em>and</em> mass. The general Action section states the same rule: across the five rungs only the order of the kinetic term and the content of the algebraic term change, and nothing else does (<code>physics.md:524</code>, <code>physics.md:574</code>).</p>
+<h2 id="2-the-verdict-scale">2. The Verdict Scale</h2>
+<p>Five statuses are used below. They are the vocabulary the corpus needs and does not yet use consistently.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>status</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Derived</strong></td>
+<td>The functional is built from the algebra's own elements and operations. The parent equation is the algebra's.</td>
+</tr>
+<tr>
+<td><strong>Transcribed</strong></td>
+<td>The functional is standard theory written in the corpus's coordinates. No term follows from the algebra.</td>
+</tr>
+<tr>
+<td><strong>Effective</strong></td>
+<td>The functional is a low-energy expansion on an algebra-native carrier, with imported coefficients.</td>
+</tr>
+<tr>
+<td><strong>Named</strong></td>
+<td>The functional is written in the literature's notation and not in the algebra.</td>
+</tr>
+<tr>
+<td><strong>Absent</strong></td>
+<td>No functional is written. The slot may be empty because the action is elsewhere, because no action is owed, or because a representation is missing.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The distinction between <em>derived</em> and <em>transcribed</em> is the one the Sector Hub's one-line answers compress. The distinction between <em>transcribed</em> and <em>effective</em> is the one the Strong Force's two layers make necessary. The distinction between <em>named</em> and <em>absent</em> is the one the Rarita–Schwinger article keeps.</p>
+<p>Two qualifiers are used in the table. <em>Piece</em> means a term of a larger action; it is not a sixth status. <em>Mixed</em> means part derived and part transcribed; it is used for the electroweak vector sector, where the adjoint kinematics are the algebra's and the hypercharge assignment is imported.</p>
+<h2 id="3-the-categories-at-a-glance">3. The Categories at a Glance</h2>
+<p>There are thirteen top-level categories. Seven have spin bands and twenty-five action slots between them; six have no bands. The three gauge categories have three bands each, nine slots. The four approximation categories have four bands each, sixteen slots.</p>
+<p>A $0/0$ row means the category has no <code>#### The action</code> heading. It does not mean the category has no action. Electromagnetism, Symmetry Breaking, Gravity and the Action category carry their actions outside the spin bands.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>category</th>
+<th>spin bands</th>
+<th>action slots filled / total</th>
+<th>what the category actually has</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biquaternion Universe</td>
+<td>no</td>
+<td>0 / 0</td>
+<td>the programme and its algebra; no field content</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Relativity</td>
+<td>no</td>
+<td>0 / 0</td>
+<td>kinematics; no action claimed</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>no</td>
+<td>0 / 0</td>
+<td>the general theory of the Lagrangian; the non-abelian connection action; five rungs</td>
+<td>general, carrier-independent</td>
+</tr>
+<tr>
+<td>Primordial Force ($\mathrm{SU}(4)$)</td>
+<td>3</td>
+<td>3 / 3</td>
+<td>one transcribed action; gauge, fermion and scalar pieces</td>
+<td>one sector action, transcribed</td>
+</tr>
+<tr>
+<td>Symmetry Breaking</td>
+<td>no</td>
+<td>0 / 0</td>
+<td>one Standard Model Lagrangian, four sectors</td>
+<td>one sector action, transcribed</td>
+</tr>
+<tr>
+<td>Strong Force ($\mathrm{SU}(3)$)</td>
+<td>3</td>
+<td>2 / 3</td>
+<td>transcribed QCD; native chiral actions, three plus the pion specialisation</td>
+<td>mixed: transcribed and effective</td>
+</tr>
+<tr>
+<td>Electroweak Force</td>
+<td>3</td>
+<td>2 / 3</td>
+<td>one sector action; vector and scalar written; matter named</td>
+<td>mixed: transcribed and named</td>
+</tr>
+<tr>
+<td>Electromagnetism</td>
+<td>no</td>
+<td>0 / 0</td>
+<td>one free action and sixteen coupled actions, filed in RQT</td>
+<td>spin family, derived</td>
+</tr>
+<tr>
+<td>Relativistic Quantum Theory</td>
+<td>4</td>
+<td>3 / 4</td>
+<td>derived Klein–Gordon, Dirac, Proca and Maxwell</td>
+<td>spin family, derived</td>
+</tr>
+<tr>
+<td>Non-Relativistic Approximation of Quantum Theory</td>
+<td>4</td>
+<td>1 / 4</td>
+<td>derived Schrödinger at spin $0$</td>
+<td>spin family, partial</td>
+</tr>
+<tr>
+<td>Relativistic Non Quantum Approximation</td>
+<td>4</td>
+<td>4 / 4</td>
+<td>limits of the RQT actions; Rarita–Schwinger named only</td>
+<td>spin family, inherited</td>
+</tr>
+<tr>
+<td>Non-Relativistic Non Quantum Approximation</td>
+<td>4</td>
+<td>0 / 4</td>
+<td>classical effects; no action owed</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Gravity and Cosmology</td>
+<td>no</td>
+<td>0 / 0</td>
+<td>one quadratic action; exact action absent</td>
+<td>one sector action, partial</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Action category is not empty of actions.</strong> It holds the general Lagrangian subsection, the non-abelian connection article with the Yang–Mills action (<code>articles_physics/non-abelian-connections-in-biquaternionic-form.md</code>), and the second-quantisation article. None is spin-specific. They are the carrier-independent machinery that the sector actions use.</p>
+<p><strong>The architecture is not uniform.</strong> The four approximation categories use the spin band as a genuine classification of parent equations. The three gauge categories use it as a filing device for terms. The six categories without bands are of four kinds: the programme, the kinematics, the general theory of the action, and the model-level actions. A reader who treats all thirteen as the same architecture will read a filing decision as a physics claim.</p>
+<h2 id="4-the-twenty-five-action-slots">4. The Twenty-Five Action Slots</h2>
+<p>The table below is the complete list of <code>#### The action</code> headings in <code>physics.md</code>, in menu order. "Links" is the number of visible article links inside the slot. The status is the one defined in §2.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>slot and line</th>
+<th>links</th>
+<th>status</th>
+<th>what is there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Primordial Force &gt; spin $1$ (<code>physics.md:1135</code>)</td>
+<td>1</td>
+<td>Transcribed</td>
+<td>the full $\mathrm{SU}(4)$ action; gauge, fermion and scalar pieces in one display</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Primordial Force &gt; spin $\tfrac12$ (<code>physics.md:1178</code>)</td>
+<td>2</td>
+<td>Transcribed, piece</td>
+<td>the fermion kinetic term and the Yukawa coupling; the Yukawa article is the diagonalisation, not a second action</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Primordial Force &gt; spin $0$ (<code>physics.md:1204</code>)</td>
+<td>1</td>
+<td>Transcribed, piece</td>
+<td>the scalar matrix; one field, one commutator, four quartics</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Strong Force &gt; spin $1$ (<code>physics.md:1422</code>)</td>
+<td>1</td>
+<td>Transcribed</td>
+<td>QCD: gluon, quark, gauge fixing and ghosts</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Strong Force &gt; spin $\tfrac12$ (<code>physics.md:1463</code>)</td>
+<td>0</td>
+<td>None: inside QCD</td>
+<td>no standalone quark action; the quark term is in row 4</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Strong Force &gt; spin $0$ (<code>physics.md:1489</code>)</td>
+<td>4</td>
+<td>Effective</td>
+<td>nonlinear sigma model, chiral pion, Skyrme, axion; native carriers, imported coefficients</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Electroweak &gt; spin $1$ (<code>physics.md:1576</code>)</td>
+<td>4</td>
+<td>Transcribed and mixed</td>
+<td>$W$ and $Z$, the weak force, Stueckelberg, the electroweak theory</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Electroweak &gt; spin $\tfrac12$ (<code>physics.md:1617</code>)</td>
+<td>0</td>
+<td>None: chiral wall</td>
+<td>the matter term is named in row 7 and written in the Standard Model transcription</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Electroweak &gt; spin $0$ (<code>physics.md:1655</code>)</td>
+<td>1</td>
+<td>Transcribed, piece</td>
+<td>the Higgs action; the scalar block of row 7</td>
+</tr>
+<tr>
+<td>10</td>
+<td>RQT &gt; spin $1$ (<code>physics.md:1853</code>)</td>
+<td>9</td>
+<td>Derived</td>
+<td>Proca family, Maxwell, spin-one fluids</td>
+</tr>
+<tr>
+<td>11</td>
+<td>RQT &gt; spin $\tfrac12$ (<code>physics.md:1991</code>)</td>
+<td>9</td>
+<td>Derived</td>
+<td>Dirac family, QED, spin-half fluids</td>
+</tr>
+<tr>
+<td>12</td>
+<td>RQT &gt; spin $0$ (<code>physics.md:2234</code>)</td>
+<td>12</td>
+<td>Derived; one effective</td>
+<td>Klein–Gordon family, interacting scalar, spin-zero and Schrödinger fluids; the Goldstone entry is effective</td>
+</tr>
+<tr>
+<td>13</td>
+<td>RQT &gt; other spins (<code>physics.md:2394</code>)</td>
+<td>0</td>
+<td>None: elsewhere</td>
+<td>Rarita–Schwinger action is named only and filed in RNQ other spins</td>
+</tr>
+<tr>
+<td>14</td>
+<td>NRQM &gt; spin $1$ (<code>physics.md:2480</code>)</td>
+<td>0</td>
+<td>None: elsewhere and not owed</td>
+<td>Proca action is in RQT and RNQ; the spin-one condensate is an energy functional</td>
+</tr>
+<tr>
+<td>15</td>
+<td>NRQM &gt; spin $\tfrac12$ (<code>physics.md:2500</code>)</td>
+<td>0</td>
+<td>None: elsewhere</td>
+<td>Pauli action is in RNQ; the articles here are states and measurements</td>
+</tr>
+<tr>
+<td>16</td>
+<td>NRQM &gt; spin $0$ (<code>physics.md:2565</code>)</td>
+<td>8</td>
+<td>Derived</td>
+<td>Schrödinger family, including the non-quantum limit</td>
+</tr>
+<tr>
+<td>17</td>
+<td>NRQM &gt; other spins (<code>physics.md:2697</code>)</td>
+<td>0</td>
+<td>None: not owed</td>
+<td>anyons, two-spin-half, the qubit; no action claimed</td>
+</tr>
+<tr>
+<td>18</td>
+<td>RNQ &gt; spin $1$ (<code>physics.md:2808</code>)</td>
+<td>2</td>
+<td>Limit</td>
+<td>Proca non-quantum and its coupled form</td>
+</tr>
+<tr>
+<td>19</td>
+<td>RNQ &gt; spin $\tfrac12$ (<code>physics.md:2834</code>)</td>
+<td>3</td>
+<td>Limit</td>
+<td>Dirac non-quantum, Pauli, the coupled Dirac limit</td>
+</tr>
+<tr>
+<td>20</td>
+<td>RNQ &gt; spin $0$ (<code>physics.md:2869</code>)</td>
+<td>3</td>
+<td>Limit</td>
+<td>central scalar, Klein–Gordon non-quantum, the coupled limit</td>
+</tr>
+<tr>
+<td>21</td>
+<td>RNQ &gt; other spins (<code>physics.md:2904</code>)</td>
+<td>1</td>
+<td>Named only</td>
+<td>the Rarita–Schwinger action</td>
+</tr>
+<tr>
+<td>22</td>
+<td>NRNQ &gt; vector (<code>physics.md:2961</code>)</td>
+<td>0</td>
+<td>None: not owed</td>
+<td>elastic displacement and vector effects</td>
+</tr>
+<tr>
+<td>23</td>
+<td>NRNQ &gt; intrinsic magnetism (<code>physics.md:2978</code>)</td>
+<td>0</td>
+<td>None: not owed</td>
+<td>Larmor, Einstein–de Haas, $g-2$</td>
+</tr>
+<tr>
+<td>24</td>
+<td>NRNQ &gt; no intrinsic magnetism (<code>physics.md:3001</code>)</td>
+<td>0</td>
+<td>None: not owed</td>
+<td>Euler, vorticity, viscosity; viscosity has no action</td>
+</tr>
+<tr>
+<td>25</td>
+<td>NRNQ &gt; higher multipole (<code>physics.md:3069</code>)</td>
+<td>0</td>
+<td>None: not owed</td>
+<td>multipole expansion and the vibrating ellipsoid</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Counts.</strong> Twenty-five slots; fifteen filled, ten empty. The fifteen filled slots hold sixty-one links. Sixty of those links are Lagrangian-titled articles; the sixty-first is <em>The Yukawa Sector of the $\mathrm{SU}(4)$ Model</em> in row 2. Two more Lagrangian-titled articles sit outside the action slots, which is why the corpus has sixty-two files beginning <code>the-lagrangian</code>.</p>
+<h2 id="5-the-spin-specific-family-is-real-and-the-written-family-ends-at-spin-one">5. The Spin-Specific Family Is Real, and the Written Family Ends at Spin One</h2>
+<p><strong>The family is derived, and its order changes with the spin.</strong> Klein–Gordon writes one action whose Euler–Lagrange equation is the parent (<code>articles_physics/the-lagrangian-and-the-klein-gordon-equation.md:5</code>). Dirac writes one action whose variation gives the parent pair (<code>articles_physics/the-lagrangian-and-the-dirac-equation.md:5</code>). Proca writes one action whose variation gives the Proca equation (<code>articles_physics/the-lagrangian-and-the-proca-equation.md:5</code>). Schrödinger writes one action whose variation gives the parent (<code>articles_physics/the-lagrangian-and-the-schrodinger-equation.md:5</code>). Pauli derives its action from the Dirac action by the non-relativistic limit (<code>articles_physics/the-lagrangian-and-the-pauli-equation.md:5</code>). Maxwell writes one free action, one term, and gets both halves of Maxwell from it (<code>articles_physics/the-lagrangian-and-the-electromagnetic-field.md:5</code>).</p>
+<p><strong>The order is the spin's signature.</strong> Klein–Gordon and Proca are second order. Dirac is first order. Schrödinger is first order in time. The general Action section states the rule once: across the five rungs only the order of the kinetic term and the content of the algebraic term change (<code>physics.md:524</code>, <code>physics.md:574</code>). This is the precise sense in which the Lagrangian "depends on the spin". The spin fixes the carrier and the derivative order. It does not fix the rest.</p>
+<p><strong>The written family ends at spin $1$; the next case is named only.</strong> The Rarita–Schwinger article opens with the plain statement: the family has the equation and does not have the action (<code>articles_physics/the-lagrangian-and-the-rarita-schwinger-equation.md:5</code>). Its ledger marks the standard action as "named and not written" (<code>articles_physics/the-lagrangian-and-the-rarita-schwinger-equation.md:113</code>). The reason is one missing object: an element or a pair of elements of $\mathbb{B}$ that contracts the vector index with the field's chiral structure and is not simply the frame. The article states what the action must contain, what the variation would have to reproduce, and why the absence is not an oversight. So the claim "every spin has its Lagrangian" is false at $\tfrac32$, and the corpus says so.</p>
+<p><strong>The next written case is spin $2$, and it is quadratic only.</strong> Linearised gravity has a quadratic action, the second variation of the Einstein–Hilbert action, written on the frame perturbation (<code>articles_physics/the-lagrangian-and-linearised-gravity.md:5</code>). The exact action is not written. The exact-gravity ledger says "gravitational, quadratic: yes" and "gravitational, exact: not yet" (<code>articles_physics/the-exact-gravitational-action-the-functional-the-boundary-term-and-the-variation.md:13</code>). The article's own summary is that the gravitational sector has one action and needs its exact form, its boundary term and its coefficients (<code>articles_physics/the-exact-gravitational-action-the-functional-the-boundary-term-and-the-variation.md:234</code>). So spin $2$ has a quadratic action, not an exact one.</p>
+<p><strong>Spin does not uniquely fix the functional.</strong> Spin $0$ has Klein–Gordon and Schrödinger. Spin $1$ has Maxwell and Proca. Spin $\tfrac12$ has Dirac and Pauli. The stage and the mass are independent inputs. A table of "one Lagrangian per spin" would therefore be wrong even inside the derived family. The correct statement is: each spin has a family of actions, and the family is indexed by spin, stage and mass.</p>
+<h2 id="6-the-gauge-sectors-are-one-action-not-one-per-spin">6. The Gauge Sectors Are One Action, Not One per Spin</h2>
+<h3 id="61-math208">6.1 $\mathrm{SU}(4)$</h3>
+<p><strong>One action, three pieces.</strong> <em>The Lagrangian and the Primordial Force</em> writes the action in one display: $-\tfrac14\sum F_{\imath\jmath}F_{\imath\jmath}$ traced over the fifteen with one coupling, then the boson, fermion and scalar pieces together (<code>articles_physics/the-lagrangian-and-the-primordial-force.md:5</code>). The spin-$1$ article is the whole display. The spin-$\tfrac12$ article writes the fermion kinetic term and the Yukawa coupling (<code>articles_physics/the-lagrangian-and-the-sixteen-kinetic-term-and-yukawa-coupling.md:7</code>). The spin-$0$ article writes the scalar matrix (<code>articles_physics/the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.md:5</code>). These are not three independent Lagrangians. They are one Lagrangian and two expansions of its pieces.</p>
+<p><strong>The action is transcribed, not derived.</strong> The article's third point is the status: $\mathrm{SU}(2)$ is written <em>in</em> the algebra; $\mathrm{SU}(4)$ is written <em>on</em> it. The compact group of $\mathbb{B}$ is $\mathrm{U}(2)$, of real dimension four, and fifteen generators do not fit inside four. "So the action below is a transcription and not a derivation" (<code>articles_physics/the-lagrangian-and-the-primordial-force.md:27</code>). The spin dependence is real, but it is the derivative order and the representation of each piece, not a property of the gauge group.</p>
+<p><strong>The answer for $\mathrm{SU}(4)$.</strong> Yes, there is a term for each of the three spins. No, there is not a separate Lagrangian per spin. The whole is one transcribed action, and the three menu articles are three views of it.</p>
+<h3 id="62-math218">6.2 $\mathrm{SU}(3)$</h3>
+<p><strong>QCD is one transcribed action with two spin terms.</strong> Everything below the QCD article's introduction is standard theory, written in the corpus's coordinates; it is standard input, not a framework result (<code>articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.md:5</code>). The Lagrangian is $-\tfrac14\sum GG$ plus a quark term plus gauge fixing plus ghosts (<code>articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.md:438</code>). The gluon term is spin $1$. The quark term is spin $\tfrac12$. They are in one article, and the article is filed at spin $1$ because the gauge field is its subject.</p>
+<p><strong>The spin-$\tfrac12$ slot is empty because the quark is inside the spin-$1$ article.</strong> There is no standalone colour-carrying spin-$\tfrac12$ action. This is not a gap in the way the Rarita–Schwinger absence is a gap: the term exists, in the transcribed QCD display. What does not exist is a separate article that puts a functional on the quark alone.</p>
+<p><strong>The spin-$0$ actions are effective, not QCD.</strong> Four articles sit in the strong spin-$0$ slot: the nonlinear sigma model, the chiral theory of the pion, the Skyrme model and the axion. The first, third and fourth are the three actions the strong internal note counts; the chiral theory is the pion specialisation, the fourth just outside the family. All four are written on the algebra's own chiral field, and their coefficients are imported. The strong internal note states the boundary exactly: three actions exist without a colour label, and "none is an action of QCD" (<code>articles_internal/internal-summaries-physics/internal-summary-physics-of-the-strong-interaction.md:481</code>). So the strong category has two layers: a transcribed fundamental QCD action and native low-energy effective actions. It has no native gluon action.</p>
+<p><strong>The answer for $\mathrm{SU}(3)$.</strong> Yes, there is a QCD Lagrangian, and it carries a spin-$1$ and a spin-$\tfrac12$ term. No, there is not a family of strong Lagrangians indexed by spin. The spin-$0$ articles are a different layer, not the spin-$0$ part of QCD.</p>
+<h3 id="63-electroweak">6.3 Electroweak</h3>
+<p><strong>One sector action, written in two phases.</strong> <em>The Lagrangian and the Electroweak Theory</em> writes the one Lagrangian in its unbroken and broken phases. The article is explicit about the limit: the corpus has the group, the hypercharge assignment, the doublet, the potential, the connection masses, the quotient and the parity lock, but "it does not have the electroweak Lagrangian in one display" before this article, and it has no quantised electroweak theory at all (<code>articles_physics/the-lagrangian-and-the-electroweak-theory.md:5</code>).</p>
+<p><strong>The matter term is named and not expanded.</strong> The display carries $\mathcal{L}_{\mathrm{matter}}$, "the fermion kinetic terms with their covariant derivatives and the Yukawa couplings, which this article names and does not expand" (<code>articles_physics/the-lagrangian-and-the-electroweak-theory.md:33</code>). That is the spin-$\tfrac12$ term. It is not absent from the action; it is absent from the display.</p>
+<p><strong>Three of the four spin-$1$ articles are one action and its readings.</strong> $W$ and $Z$ are the connection and scalar part of the sector's complete action (<code>articles_physics/the-lagrangian-and-the-w-and-z-bosons.md:5</code>). The weak-force article is the charged-current term of the same action, with the neutral sector dropped (<code>articles_physics/the-lagrangian-and-the-weak-force.md:5</code>). The electroweak-theory article is the sector action itself. The Stueckelberg article is a neighbouring abelian model, filed beside the sector because that is where a massive vector is discussed, not because the sector uses it (<code>articles_physics/the-lagrangian-and-the-stueckelberg-mechanism.md:5</code>). The Higgs article is the scalar block (<code>articles_physics/the-lagrangian-and-the-higgs-field.md:5</code>). So the slot does not hold five independent Lagrangians: it holds one sector action, three of its readings, one neighbouring model and one scalar block.</p>
+<p><strong>The answer for the electroweak sector.</strong> Yes, there is one Lagrangian, and it carries spin-$1$ and spin-$0$ terms. Yes, it has a spin-$\tfrac12$ term, but that term is named and not expanded. No, there is no standalone spin-$\tfrac12$ electroweak Lagrangian. The reason is the chiral wall, and §8 states it.</p>
+<h2 id="7-the-strong-no-action-sentence-is-scoped">7. The Strong "No Action" Sentence Is Scoped</h2>
+<p><strong>The sentence.</strong> The Sector Hub says: "The strong sector has no action and cannot have one in this algebra" (<code>articles_physics/the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.md:7</code>). The exact-gravity ledger repeats it: "strong | none, and cannot be" (<code>articles_physics/the-exact-gravitational-action-the-functional-the-boundary-term-and-the-variation.md:12</code>).</p>
+<p><strong>The counter-evidence in the same corpus.</strong> The strong menu has a QCD Lagrangian article (<code>physics.md:1422</code>) and four chiral Lagrangian articles (<code>physics.md:1489</code>). The QCD article says it is transcribed, not derived (<code>articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.md:5</code>). The strong internal note counts "one spin-$1$, transcribed" and "three spin-$0$ in the family and a fourth just outside it" (<code>articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.md:7</code>). So the category does have actions.</p>
+<p><strong>The reconciliation.</strong> The hub's sentence is true only under an unstated scope: there is no <em>derived gluon action in the algebra's own variables</em>. It is false under the literal reading: there are Lagrangian articles in the strong category. The physics is not in dispute. The status language is.</p>
+<p><strong>The fix is one sentence, not a rewrite.</strong> In the hub and in the exact-gravity ledger, the strong row should read: "no derived gluon action; the category carries a transcribed QCD Lagrangian and native chiral effective actions". If the author prefers to keep the strong claim, it needs the clause "in the algebra's own variables" after the word <em>action</em>. The same clause resolves the apparent conflict with the QCD article without changing a single equation.</p>
+<h2 id="8-the-electroweak-spin-math244-slot-is-the-chiral-wall">8. The Electroweak Spin-$\tfrac12$ Slot Is the Chiral Wall</h2>
+<p><strong>The slot is empty.</strong> <code>physics.md:1617</code> has no links. The sector action names $\mathcal{L}_{\mathrm{matter}}$ and does not expand it (<code>articles_physics/the-lagrangian-and-the-electroweak-theory.md:33</code>).</p>
+<p><strong>The reason is the letter law.</strong> A left multiplication applies the same element to both chiral parts of the field. An action that applies the same element to both parts cannot give them separate charges, whatever the element is. Independent charges need the right slot and an element of two unequal values; a central multiplier gives the same factor on both sides. The electroweak internal note states the result: "The three obstructions of the part are one obstruction stated at three spins" (<code>articles_internal/internal-summaries-physics/internal-summary-physics-of-the-electroweak-interaction.md:95</code>). The scalar row is trivial, the vector row is the adjoint and works, and the fermion row fails. The spin-$\tfrac12$ slot is the fermion row.</p>
+<p><strong>The Standard Model transcription writes the term.</strong> <em>The Standard Model and the Lagrangian</em> writes the four sectors in one expression, including the fermion term and the Yukawa matrices (<code>articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.md:5</code>). Its standing is explicit: the expression is standard theory, transcribed, not derived (<code>articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.md:13</code>). So the spin-$\tfrac12$ term exists at the Standard Model level. It does not exist as a framework article, and the reason is structural.</p>
+<p><strong>The answer for the electroweak spin-$\tfrac12$ slot.</strong> It is not an oversight and it is not a filing accident. The corpus can write the term only by transcription, and it does so in the Standard Model article. A standalone electroweak spin-$\tfrac12$ Lagrangian would either be the transcription again or would require the right-slot construction the algebra does not have.</p>
+<h2 id="9-the-sixty-two-titles-are-not-sixty-two-lagrangians">9. The Sixty-Two Titles Are Not Sixty-Two Lagrangians</h2>
+<p><strong>The count.</strong> Sixty-two files begin <code>the-lagrangian</code>. Sixty of them are linked inside the twenty-five action slots. Two are outside: <em>The Lagrangian and the Second Quantisation</em> (<code>physics.md:894</code>) and <em>The Lagrangian and the Topologically Massive Connection</em> (<code>physics.md:1978</code>). Neither changes a category verdict. The first is the general action-to-quantum step in the Action category. The second is a neighbouring $2+1$-dimensional model in the RQT spin-$1$ band. A sixty-third action-bearing article is not titled <code>the-lagrangian</code>: <em>Non-Abelian Connections in Biquaternionic Form</em> contains the Yang–Mills action (<code>articles_physics/non-abelian-connections-in-biquaternionic-form.md</code>). The internal note counts it as the one Lagrangian article of the connection-structure section (<code>articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.md:7</code>). It is general, not spin-specific, and it is the machinery the $\mathrm{SU}(4)$ and QCD transcriptions use.</p>
+<p><strong>The titles overcount the actions.</strong> The twelve links in the RQT spin-$0$ slot are not twelve independent Lagrangians. They are the Klein–Gordon action in element, polar, momentum and coupled forms; the spin-zero and Schrödinger fluid readings; the interacting scalar; and the Goldstone effective action. The nine Proca links and the nine Dirac links are similar. The corpus says so at the top of the articles. The Klein–Gordon pair are "the same functional written in two coordinate systems" (<code>articles_physics/the-lagrangian-and-the-klein-gordon-equation.md:5</code>). The Dirac pair differ more, because the polar action carries constraints the element action does not, but they are the same theory (<code>articles_physics/the-lagrangian-and-the-dirac-equation.md:5</code>). The coupled and momentum articles add a source or change the chart; they do not add a new parent.</p>
+<p><strong>The audit counts actions, not titles.</strong> The number of distinct actions is the number of parent equations plus the number of sector actions, not sixty-two. A reader who counts titles will conclude that the corpus has a Lagrangian for every occasion. It does not. It has a small number of actions written many times.</p>
+<h2 id="10-the-empty-slots-are-four-kinds">10. The Empty Slots Are Four Kinds</h2>
+<p><strong>The grid.</strong> The four approximation categories form a $2\times2$ grid: relativistic or non-relativistic, quantum or non-quantum. The action is written at the stage where the parent equation lives, and the other stages inherit it, omit it, or name it. The grid makes the empty slots readable.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>spin</th>
+<th>relativistic quantum</th>
+<th>relativistic non-quantum</th>
+<th>non-relativistic quantum</th>
+<th>non-relativistic non-quantum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>Proca, Maxwell (derived)</td>
+<td>Proca limit</td>
+<td>none: condensate energy functional</td>
+<td>none: vector effects</td>
+</tr>
+<tr>
+<td>$\tfrac12$</td>
+<td>Dirac, QED (derived)</td>
+<td>Dirac limit, Pauli (derived limit)</td>
+<td>none: states and measurements</td>
+<td>none: magnetism</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>Klein–Gordon, central scalar (derived)</td>
+<td>central scalar, Klein–Gordon limit</td>
+<td>Schrödinger (derived)</td>
+<td>none: fluid and elastic effects</td>
+</tr>
+<tr>
+<td>other</td>
+<td>none: Rarita–Schwinger named in RNQ</td>
+<td>Rarita–Schwinger named only</td>
+<td>none: anyons</td>
+<td>none: multipoles</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four kinds of empty slot.</strong> <em>Elsewhere</em>: the action is in another section (Pauli in RNQ, Rarita–Schwinger in RNQ, Proca in RQT). <em>Not owed</em>: the band's subject is a state, a measurement or a classical effect, and no action is claimed (NRQM spin $\tfrac12$ and other spins; all four NRNQ bands). <em>Wall</em>: the algebra cannot carry the representation (strong spin $\tfrac12$ as a colour triplet; electroweak spin $\tfrac12$ as a chiral doublet). <em>Named only</em>: the Rarita–Schwinger action.</p>
+<p><strong>Only two of the ten empty slots are framework gaps.</strong> The electroweak spin-$\tfrac12$ slot is a gap, and it is written only by transcription in the Standard Model article. The RQT other-spins slot is a gap, and the Rarita–Schwinger article records it as an absence. The strong spin-$\tfrac12$ slot is not a gap: the quark term is in the QCD article. The three NRQM empty slots and the four NRNQ empty slots are filing decisions or principled absences. In particular, the NRNQ viscosity article is covered by the Helmholtz theorem: the viscous term has no action (<code>articles_physics/the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.md:5</code>). Filling that slot would contradict a theorem.</p>
+<h2 id="11-the-rule">11. The Rule</h2>
+<p><strong>The band records the spin of the field whose action the article writes, not the spin content of the force.</strong> The internal spin note states the rule (<code>articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.md:5</code>). The electroweak part writes vector actions because its business is the mass of a vector. The strong part writes scalar actions because the one object the algebra owns in that sector is a unit quaternion. The rule is not a filing accident: moving the Higgs article to spin $1$ would make it false, and moving QCD to spin $0$ would make it false (<code>articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.md:87</code>).</p>
+<p><strong>A sector Lagrangian is a sum over representations.</strong> Each term carries the spin of the field in that representation. The gauge group fixes which representations exist. The spin fixes the derivative order and the bilinear structure of each term. The two questions are independent, and the corpus's tables should ask them separately.</p>
+<p><strong>The precise answer to the author's examples.</strong> Dirac, Proca and Klein–Gordon each have a derived action whose form depends on the spin. $\mathrm{SU}(4)$ has one transcribed action with three spin pieces. $\mathrm{SU}(3)$ has one transcribed QCD action with spin-$1$ and spin-$\tfrac12$ terms, plus native spin-$0$ effective actions that are not QCD. The electroweak sector has one action with spin-$1$ and spin-$0$ terms, and a spin-$\tfrac12$ term that is named and not expanded. There is no separate Lagrangian per spin in any of the three gauge sectors. There is one Lagrangian per sector, with a spin-dependent term structure.</p>
+<h2 id="12-what-the-audit-recommends">12. What the Audit Recommends</h2>
+<p><strong>1. Adopt the five-status vocabulary.</strong> Every action-bearing article and every sector ledger should say <em>derived</em>, <em>transcribed</em>, <em>effective</em>, <em>named</em> or <em>absent</em>. The words "has an action" and "has no action" are too coarse for a corpus that contains all five.</p>
+<p><strong>2. Add a scope sentence to the strong row.</strong> The Sector Hub and the exact-gravity ledger should say "no derived gluon action" rather than "no action", and should name the transcribed QCD action and the native chiral effective actions. This is a one-sentence change in two places.</p>
+<p><strong>3. Add cross-references to the two empty spin-$\tfrac12$ slots.</strong> The strong slot should point to the quark term in the QCD article. The electroweak slot should point to the named matter term in the electroweak action and to the Standard Model transcription. A reader who lands on the empty slot should not conclude that the term does not exist.</p>
+<p><strong>4. Label the $\mathrm{SU}(4)$ spin-$\tfrac12$ and spin-$0$ articles as pieces.</strong> They are expansions of the one action, not independent functionals. The label can be a sentence in the introduction, not a menu change.</p>
+<p><strong>5. Decide the Rarita–Schwinger placement.</strong> The action article sits in RNQ other spins, while the RQT other-spins slot is empty. Either move the action article to the RQT slot or add a cross-reference from it. The absence is real; the filing should not make it look like a different absence.</p>
+<p><strong>6. Do not fill the NRNQ slots.</strong> The absence is principled. The viscosity case is a theorem, and the other three bands are effects, not field theories.</p>
+<p><strong>7. If a single answer table is wanted, put it in the Action category.</strong> A "Lagrangian ledger" with columns sector, spin, term, status and article would answer the author's question once. It should not be repeated in each sector. The Action category is the carrier-independent home for it.</p>
+<p><strong>8. No article edits without approval.</strong> These are proposals. The audit does not change a menu, an article or a build file.</p>
+<h2 id="13-verification">13. Verification</h2>
+<p><strong>Counts.</strong>
+- Thirteen top-level categories in <code>physics.md</code>.
+- Seven categories with spin bands: Primordial Force, Strong Force, Electroweak Force, RQT, NRQM, RNQ, NRNQ.
+- Twenty-five <code>#### The action</code> slots; fifteen filled, ten empty.
+- Sixty-one links in the slots; sixty Lagrangian-titled, one not (<em>The Yukawa Sector</em>).
+- Sixty-two files beginning <code>the-lagrangian</code>; two outside the slots (<em>Second Quantisation</em>, <em>Topologically Massive Connection</em>). A sixty-third action-bearing article, <em>Non-Abelian Connections</em>, is not titled <code>the-lagrangian</code> and sits in the Connection Structure.
+- The internal spin note's sector counts match the menu: electroweak $4+1+0$; strong $1+0+3$ in the family plus the pion article just outside it. The menu counts for the four approximation categories are RQT $9+9+12+0$, RNQ $2+3+3+1$, NRQM $0+0+8+0$, NRNQ $0+0+0+0$.</p>
+<p><strong>Citations.</strong> Every status claim in §5–§8 has a line citation to the article's own introduction or ledger. The menu line numbers are from <code>physics.md</code> as it stands. The article line numbers are from the files as they stand.</p>
+<p><strong>No edits.</strong> Only this file was created. No article, menu, plan, build file or memory file was modified.</p>
+<h2 id="14-what-this-audit-does-not-claim">14. What This Audit Does Not Claim</h2>
+<p><strong>It does not claim the physics is wrong.</strong> The QCD Lagrangian, the electroweak action, the chiral effective actions and the gravitational quadratic action are all correctly described in their own articles. The audit is about the status language, not the equations.</p>
+<p><strong>It does not claim every empty slot should be filled.</strong> Eight of the ten empty slots are elsewhere, not owed, or inside another article. Only the electroweak chiral fermion and the Rarita–Schwinger action are framework gaps, and the first is written by transcription in the Standard Model article.</p>
+<p><strong>It does not claim spin uniquely fixes the Lagrangian.</strong> Klein–Gordon and Schrödinger are both spin $0$. Maxwell and Proca are both spin $1$. Dirac and Pauli are both spin $\tfrac12$. Spin is one input among three: spin, stage and mass.</p>
+<p><strong>It does not claim the strong sector has a native action.</strong> It has a transcribed QCD action and native effective actions. The native gluon action is forbidden by the compact-sector theorem, and the audit does not dispute that.</p>
+<p><strong>It does not propose article text.</strong> It proposes a vocabulary and a set of scope sentences. Writing them is a separate pass, under the author's approval.</p>
+<h2 id="appendix-a-the-genuine-lagrangians-enumerated">Appendix A — The Genuine Lagrangians, Enumerated</h2>
+<h3 id="a1-the-correction-and-the-evidence-for-it">A.1 The correction, and the evidence for it</h3>
+<p><strong>The previous list over-counted, and the corpus says so in its own words.</strong> Each polar Lagrangian is a substitution of the polar word into its element-form action, not a second action.</p>
+<ul>
+<li><em>The Lagrangian and the Proca Equation in Polar Variables</em>: "This article substitutes the polar word of the material sector into the Proca action and reads the result. It is the polar <strong>companion</strong> of <em>The Lagrangian and the Proca Equation</em>" (<code>articles_physics/the-lagrangian-and-the-proca-equation-in-polar-variables.md:5</code>). Its own verdict: "the Euler–Lagrange equations in the chart vanish <strong>if and only if</strong> the element-form equation holds, and their content is the field equation and nothing else" (<code>...:106</code>); and "The polar variational principle is a <strong>coordinate change</strong> of a standard variational problem … <strong>It is not a new principle</strong>, and the article claims nothing of the kind" (<code>...:237</code>).</li>
+<li><em>The Lagrangian and the Dirac Equation in Polar Variables</em>: "This article substitutes the same word into the <em>action</em> … The action is the element-form companion's" (<code>...:5</code>).</li>
+<li><em>The Lagrangian and the Schrödinger Equation in Polar Variables</em>: "This article substitutes the same word into the <em>action</em>" (<code>...:5</code>).</li>
+<li><em>The Klein–Gordon</em> polar article: "substitutes the complete polar decomposition into the Klein–Gordon action and reads the result" (<code>...:5</code>).</li>
+</ul>
+<p><strong>The Action category states the rule once, generally.</strong> <em>Five Steps from a Lagrangian to Fluid Equations</em> gives S2 as "the polar word as a <strong>bijection on the invertibles</strong>, $1+1+3+3=8$", and its relabel list is explicit: "<strong>The polar substitution gives the coordinates and not the slots</strong>" and "the fluid equations are the field equation rewritten — <strong>same content, different warrant, and a smaller domain</strong>" (<code>articles_physics/five-steps-from-a-lagrangian-to-fluid-equations.md:301</code>, <code>:265</code>).</p>
+<p><strong>So the polar form is developed once, as a method, and then applied.</strong> That is exactly the author's reading, and it is correct. A polar Lagrangian is a chart, not a functional.</p>
+<p><strong>The fluid articles are the same functional in a third dress.</strong> <em>The Lagrangian and the Spin-Half Fluid</em> says it outright: "<strong>The action is the element action of</strong> <em>The Lagrangian and the Dirac Equation in Polar Variables</em>, and the spatial derivatives are set to zero" (<code>articles_physics/the-lagrangian-and-the-spin-half-fluid.md:25</code>). <em>The Lagrangian and the Spin-One Fluid</em>: "the action written in it is <strong>the Proca action and nothing else</strong>" (<code>articles_physics/the-lagrangian-and-the-spin-one-fluid.md:5</code>).</p>
+<p><strong>One further collapse, found while checking.</strong> The article titled <em>in the non-quantum limit</em> for the Dirac field displays the polar functional <strong>verbatim</strong> — same two lines, same four factors (<code>articles_physics/the-lagrangian-and-the-dirac-equation-in-the-non-quantum-limit.md</code> against <code>...-in-polar-variables.md</code>). The first-order action loses nothing in the classical limit, so for spin $\tfrac12$ the non-quantum rung adds no functional. For the second-order actions it does: there the limit drops the density's second derivative and flips the gradient energy's sign.</p>
+<h3 id="a2-the-rule-revised">A.2 The rule, revised</h3>
+<p><strong>A functional is genuine when it changes the fields, the terms, or the order of the equations.</strong> It is not genuine when it changes only the chart, the variable names, or the Fourier frame.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operation</th>
+<th>genuine?</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>element $\to$ polar</td>
+<td><strong>no</strong></td>
+<td>a bijection on the invertibles; same equations by change of variables</td>
+</tr>
+<tr>
+<td>element $\to$ momentum space</td>
+<td><strong>no</strong></td>
+<td>a Fourier transform; the symbol is the same functional</td>
+</tr>
+<tr>
+<td>element $\to$ frequency domain</td>
+<td><strong>no</strong></td>
+<td>a Fourier transform in time only</td>
+</tr>
+<tr>
+<td>polar $\to$ fluid variables $(\rho,S,u)$</td>
+<td><strong>no</strong></td>
+<td>the same coordinates renamed; the fluid articles say the action is the polar one</td>
+</tr>
+<tr>
+<td>add a connection</td>
+<td><strong>yes</strong></td>
+<td>a second field enters; two fields in one functional</td>
+</tr>
+<tr>
+<td>add an interaction or a mass</td>
+<td><strong>yes</strong></td>
+<td>the algebraic term changes, so the equation gains a power</td>
+</tr>
+<tr>
+<td>take a rung limit</td>
+<td><strong>yes, when it drops a term</strong></td>
+<td>the density's second derivative goes, or the gradient goes; the order changes</td>
+</tr>
+<tr>
+<td>freeze coordinates (homogeneous, central sector)</td>
+<td><strong>yes, weakly</strong></td>
+<td>the domain shrinks; the field content shrinks with it</td>
+</tr>
+<tr>
+<td>rename a phase (unbroken / broken, $r$ / $h$)</td>
+<td><strong>no</strong></td>
+<td>the same functional with the scalar shifted</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="a3-what-collapses-and-what-does-not">A.3 What collapses, and what does not</h3>
+<p><strong>The collapse removes 28 of the 67 displays.</strong> Forty displays appear below and reduce to twelve actions; the other twenty-seven stand alone. Twenty-seven plus twelve is thirty-nine.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>displays that are one action</th>
+<th>count</th>
+<th>why one</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>free Klein–Gordon</td>
+<td>element, polar, momentum</td>
+<td>3</td>
+<td>chart and Fourier frame</td>
+</tr>
+<tr>
+<td>coupled Klein–Gordon</td>
+<td>element, polar, momentum</td>
+<td>3</td>
+<td>chart and Fourier frame</td>
+</tr>
+<tr>
+<td>free Dirac</td>
+<td>element, polar, momentum, "non-quantum"</td>
+<td>4</td>
+<td>the fourth reproduces the second verbatim</td>
+</tr>
+<tr>
+<td>coupled Dirac</td>
+<td>element, polar, momentum</td>
+<td>3</td>
+<td>chart and Fourier frame</td>
+</tr>
+<tr>
+<td>free Proca</td>
+<td>element, polar, momentum, spin-one fluid</td>
+<td>4</td>
+<td>the fluid article says the action is the Proca one</td>
+</tr>
+<tr>
+<td>coupled Proca</td>
+<td>element, polar, momentum, charged spin-one fluid</td>
+<td>4</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>free Schrödinger</td>
+<td>element, polar, momentum, frequency, Schrödinger fluid</td>
+<td>5</td>
+<td>chart, Fourier frame, fluid variables</td>
+</tr>
+<tr>
+<td>coupled Schrödinger</td>
+<td>element, polar, momentum, charged Schrödinger fluid</td>
+<td>4</td>
+<td>chart, Fourier frame, fluid variables</td>
+</tr>
+<tr>
+<td>scalar fluid, relativistic</td>
+<td>the non-quantum-limit display and the spin-zero fluid display</td>
+<td>2</td>
+<td>the same functional in $(\rho,S)$</td>
+</tr>
+<tr>
+<td>coupled scalar fluid</td>
+<td>the non-quantum-limit display and the charged spin-zero fluid display</td>
+<td>2</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>spin-half fluid, charged spin-half fluid</td>
+<td>fold into free and coupled Dirac</td>
+<td>2</td>
+<td>homogeneous truncation of the polar form</td>
+</tr>
+<tr>
+<td>electroweak, unbroken and broken</td>
+<td>one action, two phases</td>
+<td>2</td>
+<td>the same functional, the vacuum inserted</td>
+</tr>
+<tr>
+<td>Higgs, full and physical</td>
+<td>one action, two radial charts</td>
+<td>2</td>
+<td>the same functional, $r\to v+h$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two $\mathrm{SU}(4)$ pieces are outside this count.</strong> They are terms of the one $\mathrm{SU}(4)$ display, and they are subtracted before the 67, not after.</p>
+<p><strong>The result.</strong> $67 - 28 = 39$, where the Appendix previously claimed 69.</p>
+<h3 id="a4-the-thirty-nine-actions">A.4 The thirty-nine actions</h3>
+<h4 id="a41-spin-math300-relativistic-7">A.4.1 Spin $0$, relativistic — 7</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>action</th>
+<th>what makes it distinct</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Free Klein–Gordon</td>
+<td>second-order $\Box_\Phi$; the parent. Element, polar and momentum are one action</td>
+<td><code>the-lagrangian-and-the-klein-gordon-equation</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Interacting scalar</td>
+<td>adds $-\tfrac{\varpi_{\mathrm{cpl}}}{4}N^{2}$; the equation gains a cubic</td>
+<td><code>the-lagrangian-and-the-interacting-scalar-field</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Coupled Klein–Gordon</td>
+<td>a second field, the connection; Maxwell term carried in the same functional</td>
+<td><code>the-lagrangian-and-the-coupled-klein-gordon-equation</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Scalar fluid, relativistic</td>
+<td>the density and the phase only; the gradient energy is the d'Alembertian and is <strong>indefinite</strong></td>
+<td><code>...-klein-gordon-equation-in-the-non-quantum-limit</code>, <code>the-lagrangian-and-the-spin-zero-fluid</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Scalar fluid, classical</td>
+<td>the density gradient dropped: the shell alone</td>
+<td><code>...-klein-gordon-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Coupled scalar fluid</td>
+<td>potential and connection inside the phase's derivative</td>
+<td><code>...-coupled-klein-gordon-equation-in-the-non-quantum-limit</code>, <code>the-lagrangian-and-the-charged-spin-zero-fluid</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Coupled scalar fluid, classical</td>
+<td>no density gradient</td>
+<td>same article</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="a42-spin-math303-6">A.4.2 Spin $\tfrac12$ — 6</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>action</th>
+<th>what makes it distinct</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8</td>
+<td>Free Dirac</td>
+<td>first order, two chiral parts, mass as a cross term. Element, polar, momentum and the "non-quantum" display are one action</td>
+<td><code>the-lagrangian-and-the-dirac-equation</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Coupled Dirac</td>
+<td>the connection acts on both chiral parts</td>
+<td><code>the-lagrangian-and-the-coupled-dirac-equation</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Coupled Dirac, $S_{\mathrm{op}}$</td>
+<td>the polar functional read in differential forms, with the gradient terms kept</td>
+<td><code>...-coupled-dirac-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Coupled Dirac, $S_{\mathrm{box}}$</td>
+<td>the same with the gradients dropped</td>
+<td>same article</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Quantum electrodynamics</td>
+<td>Dirac pair and Maxwell term in one functional: a genuine third field content</td>
+<td><code>the-lagrangian-and-quantum-electrodynamics</code></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Pauli</td>
+<td>adds $\tfrac{q}{m}\vec S\cdot\vec B$; the spin couples to the field alone</td>
+<td><code>the-lagrangian-and-the-pauli-equation</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="a43-spin-math307-6">A.4.3 Spin $1$ — 6</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>action</th>
+<th>what makes it distinct</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>14</td>
+<td>Free Proca</td>
+<td>$\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)-\tfrac12 4\pi^{2}\nu_m^{2}\langle\tilde A_\Phi\rangle_\natural$; the mass term is the Lorenz condition. Element, polar, momentum and the spin-one fluid are one action</td>
+<td><code>the-lagrangian-and-the-proca-equation</code></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Coupled Proca</td>
+<td>$\tilde F$ from $\tilde\nabla_{\mathrm{gco}}$</td>
+<td><code>the-lagrangian-and-the-coupled-proca-equation</code></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Proca fluid, non-quantum</td>
+<td>$\tfrac12\sum\varepsilon(\partial\varrho)^{2}-\tfrac12 4\pi^{2}\nu_m^{2}\varrho^{2}$; the only layer with no $\tfrac{h}{2\pi}$</td>
+<td><code>...-proca-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Coupled Proca fluid</td>
+<td>$\kappa^{\mathrm{kin}}$ in place of the derivative</td>
+<td><code>...-coupled-proca-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>18</td>
+<td>Maxwell, free</td>
+<td>one term, no mass; the abelian limit taken</td>
+<td><code>the-lagrangian-and-the-electromagnetic-field</code></td>
+</tr>
+<tr>
+<td>19</td>
+<td>Stueckelberg</td>
+<td>$-\tfrac14\sum FF-\tfrac12\mu^{2}\sum(A-\tfrac{1}{i}\partial\xi)^{2}$; a shift enters the mass term</td>
+<td><code>the-lagrangian-and-the-stueckelberg-mechanism</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="a44-spin-math315-non-relativistic-4">A.4.4 Spin $0$, non-relativistic — 4</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>action</th>
+<th>what makes it distinct</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>Free Schrödinger</td>
+<td>first order in time. Element, polar, momentum, frequency and the Schrödinger fluid are one action</td>
+<td><code>the-lagrangian-and-the-schrodinger-equation</code>, <code>the-lagrangian-and-the-schrodinger-fluid</code></td>
+</tr>
+<tr>
+<td>21</td>
+<td>Coupled Schrödinger</td>
+<td>covariant time and space derivatives; the polar form is the charged fluid</td>
+<td><code>the-lagrangian-and-the-coupled-schrodinger-equation</code>, <code>the-lagrangian-and-the-charged-schrodinger-fluid</code></td>
+</tr>
+<tr>
+<td>22</td>
+<td>Schrödinger, classical rung</td>
+<td>the second-order-in-density term dropped</td>
+<td><code>...-schrodinger-equation-in-the-non-quantum-limit</code></td>
+</tr>
+<tr>
+<td>23</td>
+<td>Coupled Schrödinger, classical</td>
+<td>$S_{\mathrm{cpl}}$ and $S_{\mathrm{cl}}$; the charge enters the phase gradient only</td>
+<td><code>...-coupled-schrodinger-equation-in-the-non-quantum-limit</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="a45-strong-sector-5">A.4.5 Strong sector — 5</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>action</th>
+<th>what makes it distinct</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>24</td>
+<td>Nonlinear sigma model</td>
+<td>$-\tfrac{f^{2}}{2}\int\mathrm{Sc}(\bar j_\imath j_\imath)$ on a unit element; principal chiral</td>
+<td><code>the-lagrangian-and-the-nonlinear-sigma-model</code></td>
+</tr>
+<tr>
+<td>25</td>
+<td>Chiral pion</td>
+<td>the same model at the pion's normalisation, plus a mass term</td>
+<td><code>the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant</code></td>
+</tr>
+<tr>
+<td>26</td>
+<td>Skyrme</td>
+<td>adds $\tfrac{1}{16e^{2}}\mathrm{Sc}([j,j][j,j])$: fourth order, a different equation</td>
+<td><code>the-lagrangian-and-the-skyrme-model</code></td>
+</tr>
+<tr>
+<td>27</td>
+<td>Axion</td>
+<td>$\tfrac12(\partial a)^{2}-V(a)+\tfrac{a}{f_a}\tfrac{g_s^{2}}{32\pi^{2}}F\tilde F$</td>
+<td><code>the-lagrangian-and-the-axion</code></td>
+</tr>
+<tr>
+<td>28</td>
+<td>QCD</td>
+<td>$-\tfrac14\sum GG+\bar\Xi(i\gamma D-m)\Xi+\mathcal L_{\mathrm{gf}}+\mathcal L_{\mathrm{gh}}$; transcribed</td>
+<td><code>the-lagrangian-and-quantum-chromodynamics-...</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="a46-sectors-7">A.4.6 Sectors — 7</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>action</th>
+<th>what makes it distinct</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>29</td>
+<td>$\mathrm{SU}(4)$</td>
+<td>gauge, fermion, scalar, Yukawa, gauge fixing, ghosts over fifteen generators; transcribed</td>
+<td><code>the-lagrangian-and-the-primordial-force</code></td>
+</tr>
+<tr>
+<td>30</td>
+<td>Electroweak</td>
+<td>$-\tfrac14WW-\tfrac14BB+(D\omicron)^{\dagger}D\omicron-V+\mathcal L_{\mathrm{matter}}$; one action in both phases</td>
+<td><code>the-lagrangian-and-the-electroweak-theory</code></td>
+</tr>
+<tr>
+<td>31</td>
+<td>$W$ and $Z$</td>
+<td>the broken-phase vector and scalar blocks with $M_W=gv/2$ explicit</td>
+<td><code>the-lagrangian-and-the-w-and-z-bosons</code></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Weak force</td>
+<td>the charged current alone; the neutral sector dropped, so a smaller field content</td>
+<td><code>the-lagrangian-and-the-weak-force</code></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Fermi effective</td>
+<td>$-\tfrac{G_F}{\sqrt2}J^{+}J^{-}$; the vector eliminated</td>
+<td>same article</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Higgs</td>
+<td>$\partial\omicron^{\dagger}\partial\omicron-V$; one action, the radial and physical charts are one</td>
+<td><code>the-lagrangian-and-the-higgs-field</code></td>
+</tr>
+<tr>
+<td>35</td>
+<td>Standard Model</td>
+<td>$\mathcal L_{\mathrm{QCD}}+\mathcal L_{\mathrm{EW}}+\mathcal L_{H}+\mathcal L_{\mathrm{Yuk}}$; four sectors; transcribed</td>
+<td><code>the-standard-model-and-the-lagrangian-four-sectors-in-one-expression</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="a47-action-category-and-gravity-4-plus-one-named">A.4.7 Action category and gravity — 4, plus one named</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>action</th>
+<th>what makes it distinct</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>36</td>
+<td>Yang–Mills</td>
+<td>$-\tfrac12\int\mathrm{Tr}(\sum FF)$; general, not spin-specific</td>
+<td><code>non-abelian-connections-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>37</td>
+<td>Second quantisation</td>
+<td>$\tfrac12\int\xi\mathcal D\xi$ plus sources; the action-to-propagator step</td>
+<td><code>the-lagrangian-and-the-second-quantisation</code></td>
+</tr>
+<tr>
+<td>38</td>
+<td>Topologically massive connection</td>
+<td>the $2+1$-dimensional Chern–Simons-like functional</td>
+<td><code>the-lagrangian-and-the-topologically-massive-connection</code></td>
+</tr>
+<tr>
+<td>39</td>
+<td>Linearised gravity</td>
+<td>$S^{(2)}$ and its de Donder form; one action, two charts</td>
+<td><code>the-lagrangian-and-linearised-gravity</code></td>
+</tr>
+<tr>
+<td>—</td>
+<td>Rarita–Schwinger</td>
+<td>displayed in the literature's notation, marked <strong>named</strong>, not written</td>
+<td><code>the-lagrangian-and-the-rarita-schwinger-equation</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="a5-the-totals">A.5 The totals</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>count</th>
+<th>number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>files named <code>the-lagrangian*</code></td>
+<td>62</td>
+</tr>
+<tr>
+<td>action-bearing articles</td>
+<td>64</td>
+</tr>
+<tr>
+<td>action displays</td>
+<td>67</td>
+</tr>
+<tr>
+<td><strong>genuine actions</strong></td>
+<td><strong>39</strong></td>
+</tr>
+<tr>
+<td>distinct source equations and models</td>
+<td>18 (12 parents + 6 model actions)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>By family.</strong> Klein–Gordon 7; Dirac 6; vector 6; Schrödinger 4; strong 5; sectors 7; action and gravity 4. Total 39.</p>
+<p><strong>What the correction removed, in one line each.</strong> Eight polar displays (four free, four coupled), eight Fourier-frame displays (four momentum, three frequency, one counting), six fluid displays that are their polar actions, two homogeneous truncations, two phase-naming duplicates, and two $\mathrm{SU}(4)$ pieces that were never actions.</p>
+<p><strong>The compressed answer to the author's question.</strong> There are 39 distinct actions, and they descend from 18 sources: twelve parent equations — Klein–Gordon, Dirac, Proca, Maxwell, Schrödinger, Pauli, Rarita–Schwinger, linearised gravity, and the four fluid parents — and six model actions — $\mathrm{SU}(4)$, QCD, electroweak, Standard Model, Yang–Mills, Skyrme-type chiral. The rest of the 39 are couplings, interactions, limits and reductions of those.</p>
+<p><strong>What the rungs contribute.</strong> Ten of the 39 exist only at a non-quantum or non-relativistic rung: 4, 5, 6, 7, 10, 11, 16, 17, 22, 23. They are genuine because the limit drops a term — the density's second derivative, or the gradient altogether — and that is a change of equation, not a change of chart.</p>
+<p><strong>What is genuinely absent.</strong> The exact gravitational action, the native $\mathrm{SU}(3)$ gluon action, the electroweak chiral-fermion action, and the Rarita–Schwinger action. Four.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus has two Lagrangian architectures, and the author's doubt is the seam between them.</strong> The free-field categories are spin-specific: Klein–Gordon, Dirac, Proca, Schrödinger and Pauli each have a derived action, and the action's order changes with the spin. The gauge sectors are not: $\mathrm{SU}(4)$, QCD and the electroweak action are one model Lagrangian each, with terms of several spins. The spin bands in the gauge sectors file the terms by the carrier each article writes on. $\mathrm{SU}(4)$ has a transcribed action with three spin pieces. QCD has a transcribed action with a spin-$1$ gluon and a spin-$\tfrac12$ quark, plus native spin-$0$ chiral actions that are not QCD. The electroweak sector has a spin-$1$ and a spin-$0$ action, and a spin-$\tfrac12$ term named and not expanded. The strong sector's "no action" sentence is true only for the derived gluon action; read literally, it conflicts with the QCD and chiral articles. The fix is a five-status vocabulary and a scope sentence, not a rewrite. The written spin-specific family ends at spin $1$: at spin $\tfrac32$ the action is named and not written, and at spin $2$ only the quadratic action is written.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>articles_internal/internal-note-on-the-spin-of-the-lagrangian-articles.md</code> — the filing rule and the counts.</li>
+<li><code>articles_internal/internal-summaries-physics/internal-summary-physics-of-the-strong-interaction.md</code> — the strong ceiling and the three chiral actions.</li>
+<li><code>articles_internal/internal-summaries-physics/internal-summary-physics-of-the-electroweak-interaction.md</code> — the three obstructions at three spins.</li>
+<li><code>articles_physics/the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.md</code> — the four sector answers.</li>
+<li><code>articles_physics/the-exact-gravitational-action-the-functional-the-boundary-term-and-the-variation.md</code> — the sector ledger and the exact-action gap.</li>
+<li><code>articles_physics/the-lagrangian-and-the-primordial-force.md</code> — the $\mathrm{SU}(4)$ transcription.</li>
+<li><code>articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.md</code> — the QCD transcription.</li>
+<li><code>articles_physics/the-lagrangian-and-the-electroweak-theory.md</code> — the electroweak action and the named matter term.</li>
+<li><code>articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.md</code> — the four-sector transcription.</li>
+<li><code>articles_physics/the-lagrangian-and-the-rarita-schwinger-equation.md</code> — the named-only action.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
