@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Universe Fluid Physics and Thermodynamics — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the menu section Biquaternion Universe Fluid Physics and Thermodynamics, thirty-four articles counted from the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-universe-fluid-physics-and-thermodynamics"><strong>Internal Summary of the Biquaternion Universe Fluid Physics and Thermodynamics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the menu section <em>Biquaternion Universe Fluid Physics and Thermodynamics</em>, thirty-four articles counted from the anchors of <code>physics.md</code> at the time of writing (2026-11-27). The menu cuts it into <strong>three <code>###</code> sections</strong> — <em>From the Element to the Fluid Equations</em> (12), <em>From the Fluid Equations to the Thermodynamic Equations</em> (20) and <em>From the Fluid to the Force</em> (2) — and the parse knows no finer boundary. Inside them the <code>####</code> blocks are the working decomposition, eight of them: <em>The Polar Chart</em> (8) and <em>The Skeleton</em> (4); <em>The State and Its Functionals</em> (7), <em>The Kinetic Bridge</em> (2), <em>The Local Thermal State and the Three Tests</em> (5), <em>The Departures from Equilibrium</em> (5) and <em>The Ledger</em> (1); and the force section's two articles, which carry no <code>####</code> of their own.</p>
+<p><strong>Why the category exists, and it is the one thing to know before reading it.</strong> This category was the last three sections of <em>Biquaternion Universe Action</em> until 2026-11-27, when they were cut out and made a category of their own. The rule applied is not the one that dissolved the two thermal categories earlier the same day: it is the separation of <strong>what the Lagrangian forces from what it merely permits</strong>. The integrand, the density, its variation and the promotion of the bracket to a commutator are forced — remove one and nothing follows. The chart, its thermal closure and the balance it yields are permitted: the chain reaches its end, and no band's equation changes, if a reader stops at the promotion. <strong>A construction optional to its own chain is a category and not a section</strong>, because a section is what a reader must pass through and this block is what a reader may decline.</p>
+<p><strong>What the part does.</strong> It states the two consequences of a Lagrangian that the field chain does not need. The first is a <strong>reading</strong>: the element at each event is re-coordinated into a density, a phase, a velocity and a spin, and the reading is graded by a criterion that decides when an equation deserves the name of a fluid's. The second is a <strong>closure</strong>: the density, the frame and the pressure are closed into a local thermal state, with three tests that can each fail. A third object follows from the first two — the <strong>balance</strong>, which is what differentiating a first-order transport law produces.</p>
+<p><strong>The single structural fact.</strong></p>
+<p>$$
+\boxed{\;
+\underbrace{1}_{\varrho}\;+\;\underbrace{1}_{e^{i\theta_{\mathrm{pha}}}}\;+\;\underbrace{3}_{\text{rapidity},\,\hat n}\;+\;\underbrace{3}_{\text{angle},\,\hat m}
+\;=\;8\;=\;\dim_{\mathbb R}\mathbb B ,
+\qquad N(\tilde\Xi)\neq0
+\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The count closing is what makes the whole category optional. A reading that uses every datum of the element and leaves nothing free is a <strong>change of coordinates</strong>, not a model: it cannot add a term to any band's equation, and that is why it can be lifted out of the category that states the element without loss. The cost is exact and is not zero — the word exists only on the invertibles, so the reading is a coordinatisation of an open set and not of the algebra.</p>
+<p><strong>The one-sentence version.</strong> Read the element as four factors, grade an equation by whether it is one coordinate's Euler–Lagrange equation in that chart, close the result into a local thermal state, and differentiate once for the balance — and no band's equation changes anywhere along the way.</p>
+<p><strong>The partition of the thirty-four articles.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Articles</th>
+<th>What it settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>From the Element to the Fluid Equations</td>
+<td>12</td>
+<td><strong>The Polar Chart (8):</strong> the eight variables and the four algebraic types; the three bilinears and the two factors that never meet; the fibres of the word and the three choices it leaves; the sign $\varepsilon$ and the rigidity of $\Sigma_{10}$; the domain and the zero-divisor cone; the proper density against the Euclidean size; the massless corner. <strong>The Skeleton (4):</strong> the criterion (count, derivation, closure); S1–S5 at no particular group; the spare derivative and the manufactured acceleration; base-valued against internal velocity</td>
+</tr>
+<tr>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>20</td>
+<td><strong>The State and Its Functionals (7):</strong> $Z=2\,\mathrm{Sc}(e^{-\beta H})$, the free energy as a variational principle, the Gibbs state, Matsubara, the moving frame, Schwinger–Keldysh, the thermal circle. <strong>The Kinetic Bridge (2):</strong> the Wigner element and the Moyal expansion. <strong>The Local Thermal State and the Three Tests (5):</strong> the triple $(\rho_{\mathrm{num}},p_{\mathrm{th}},\tilde V_\Phi)$, $\mu_{\mathrm{chm}}$ as the phase's rate, the equation of state, the entropy current, rigidity and Tolman. <strong>The Departures from Equilibrium (5):</strong> the closed-time-path action, Israel–Stewart, the spin fluid, the Frenkel condition, the two-fluid model. <strong>The Ledger (1):</strong> what the section transcribes and what it identifies</td>
+</tr>
+<tr>
+<td>From the Fluid to the Force</td>
+<td>2</td>
+<td>the three kinds of term a transport law yields; why a matrix-valued charge forces a commutator</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three sum to twelve, twenty and two, and to thirty-four.</p>
+<p><strong>Three traps fixed at the top.</strong></p>
+<ol>
+<li><strong>The category owns no theorem and predicts no number.</strong> Every result read here is proved one click away in a mathematics article, and the entry names the section used. Where an interpretation would need a result mathematics does not contain, the interpretation is not written. The numbers that do appear — $\gamma=3$ at a quarter turn of the spin angle, $0.9428c$ for the helical state — are <strong>algebraic evaluations of the chart</strong>, not predictions, and no experiment is consulted anywhere in the category.</li>
+<li><strong>Nothing here changes a band's equation.</strong> The hub's four denials hold throughout: the reading is <strong>not second quantization</strong>, <strong>not thermodynamics of the field</strong>, <strong>not an ontology</strong>, and <strong>not a superfluid</strong>. It is a chart, then a state on the chart.</li>
+<li><strong>No carrier appears in this category.</strong> The charge, the spin and the equation of each rung are stated where that carrier is, and each band's own fluid slot — its density, its frame, its stress — declines this chart for one carrier and stays with that carrier; thirty such slots remain in the menu. The ordinary equations, with no element of the algebra and no field, are <em>The fluid's equations and their solutions</em> in <em>Biquaternion Universe Non Relativistic Non Quantum Approximation</em>. This category is the general layer those instances decline.</li>
+</ol>
+<h2 id="1-the-chart-and-its-warrant">1. The Chart and Its Warrant</h2>
+<p><strong>The element has eight real data and no structure behind it.</strong> The polar word writes it as four factors — a scale, a phase, a boost (a rapidity and a unit axis) and a rotor (an angle and a unit axis) — and the four factors are the variables of a fluid.</p>
+<p>$$
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\bigl(\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+\hat n\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\bigr)\bigl(\cos\tfrac{\theta_{\mathrm{axr}}}{2}+\hat m\sin\tfrac{\theta_{\mathrm{axr}}}{2}\bigr)
+$$</p>
+<p><strong>The four factors are of four algebraic types</strong> — real central, central imaginary, Hermitian positive, real unitary — and the types are why the readings below separate. The current reads the scale and the boost. The spin reads the scale and the rotor. <strong>The phase is read by neither</strong>; it is read only by the argument of the quaternionic norm.</p>
+<p><strong>The warrant for the word "fluid" is the count, and the count is the whole warrant.</strong> $1+1+3+3=8$ against the element's eight real components: a re-description that uses every datum and leaves nothing free is a change of coordinates.</p>
+<p><strong>Source.</strong> <code>the-relativistic-quantum-space-as-a-fluid</code>.</p>
+<h2 id="2-the-three-bilinears-and-the-two-factors-that-never-meet">2. The Three Bilinears, and the Two Factors That Never Meet</h2>
+<p><strong>Each bilinear reads two factors and kills the other two</strong> by a conjugation that inverts them: the current reads the scale and the boost, the spin the scale and the rotor, the norm the scale and the phase doubled. Three independent readings against four factors.</p>
+<p><strong>The phase and the spin never appear in one bilinear.</strong> That absence is the algebra's own statement of what the corpus repeatedly denies — that a spin is not a rotation of the phase — and it is a fact about the four types, not a convention.</p>
+<p><strong>The product does not add a reading.</strong> $i\tilde\Xi\tilde\Xi^{*}$ re-reads the scale and the boost with the spatial part reversed, and the reversal is the star conjugation cancelling the rotor. The current's square is $-c^{2}\rho_{\mathrm{num}}^{2}$, so its length is the density and the velocity is a unit direction in the algebra's own metric.</p>
+<p><strong>The norm's argument runs at twice the field's phase</strong>, which fixes the phase's range to a half turn and makes a two-branch superposition beat at the difference of its rates while its norm does not.</p>
+<p><strong>Source.</strong> <code>the-current-algebra</code>.</p>
+<h2 id="3-what-the-word-leaves-open-fibres-and-three-choices">3. What the Word Leaves Open: Fibres and Three Choices</h2>
+<p><strong>The map from eight parameters to one element is injective on the stated ranges except at two loci</strong> — a vanishing rapidity and a vanishing rotor angle — where a circle of parameter choices returns one element. The fluid variables are constant on those circles, so <strong>the fibres cost the fluid nothing</strong>; what they cost is uniqueness of the parameters, which the category never claims.</p>
+<p><strong>The ranges do real work.</strong> A signed amplitude would identify $(\varrho,\theta_{\mathrm{pha}})$ with $(-\varrho,\theta_{\mathrm{pha}}+\pi)$; the corpus's choice of a positive amplitude and a half-turn phase range removes that identification, and a reader who relaxes it gets the same fluid with a doubled chart.</p>
+<p><strong>On top of the word a fluid needs three choices, each constrained and none forced:</strong> which density is conserved, how the current splits into a transport and a bound part, and which subsidiary condition closes the spin's transport. <strong>The sign $\varepsilon$ is not a fourth choice</strong>; it is a function of four parameters, taken up in §4.</p>
+<p><strong>Source.</strong> <code>the-non-uniqueness-of-the-spin-half-fluid</code>.</p>
+<h2 id="4-math57-and-the-degenerate-sector">4. $\varepsilon$ and the Degenerate Sector</h2>
+<p><strong>The sign is a coordinate, not a label.</strong> $\varepsilon$ is the element's scalar part divided by the modulus of its norm; it is real on the orthogonal locus, complex off it, and it vanishes at a rotor angle of a half turn with orthogonal axes. The square of the vector part obeys</p>
+<p>$$
+\frac{B^{2}}{\varrho^{2}e^{2i\theta_{\mathrm{pha}}}}=1-\lvert\varepsilon\rvert^{2}+2i\kappa\,c_bc_as_bs_a ,
+$$</p>
+<p>so the modulus of the sign controls the real part and <strong>the orientation of the two frames controls the imaginary part</strong>.</p>
+<p><strong>The sector $\Sigma_{10}$ is strictly smaller than the surface it lies on.</strong> The sector is exactly $\varepsilon=\pm1$, equivalently the orthogonal locus with $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\pm1$; the surface $\lvert\varepsilon\rvert=1$ is seven-dimensional against the sector's six, and on it the sign's phase is free where in the sector it is a multiple of $\pi$.</p>
+<p><strong>On the degenerate sector the two angles lock.</strong> With $B^{2}=0$ and $N\neq0$ the frames' axes are necessarily orthogonal, the sector has six real parameters against the generic eight, and the motion has <strong>one independent angle</strong>:</p>
+<p>$$
+\gamma=2\sec^{2}\tfrac{\theta_{\mathrm{axr}}}{2}-1 ,
+$$</p>
+<p>rest at zero, $\gamma=3$ at a quarter turn, $\gamma=7$ at a third of a turn, and the speed of light at a half turn, where no finite rapidity solves the identity. In the aligned configuration the spin's component along the motion is $\sin\theta_{\mathrm{axr}}$, so the fully helical state sits at $\gamma=3$ and $0.9428c$ and the maximally transverse states at the two ends.</p>
+<p><strong>The lock is a constraint on the state and not on the group.</strong> It is what makes "the spin determines the speed" a statement of this chart rather than a dynamical law.</p>
+<p><strong>Source.</strong> <code>the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10</code>, <code>spin-velocity-locking-on-the-degenerate-sector</code>.</p>
+<h2 id="5-the-domain-invertibles-and-the-zero-divisor-cone">5. The Domain: Invertibles and the Zero-Divisor Cone</h2>
+<p><strong>The word exists exactly on the elements of nonzero quaternionic norm</strong>, and the complement is the zero-divisor cone: a complex hypersurface of real codimension two, invariant under central scaling. The domain is a condition <strong>at each event</strong>, not a restriction on the field space.</p>
+<p><strong>Two families of fields lie on the cone with a non-vanishing density</strong>: the elements of definite value, which are the chiral fields at any amplitude, and the one-sided plane waves with a null wavevector. For the scalar field the cone coincides with the nodal set; for the spinor field it is strictly larger.</p>
+<p><strong>What survives on the cone</strong> is the two-factor decomposition into a Hermitian factor and a partial isometry, which separates the scale from the direction and <strong>not</strong> the velocity from the spin.</p>
+<p><strong>The flows do not preserve the domain.</strong> The Klein–Gordon and Dirac flows do not, checked at two times each; the Schrödinger flow does. So the chart is a chart of a locus of states and not of a trajectory — the honest statement, and the one the category makes rather than a claim of global existence.</p>
+<p><strong>Source.</strong> <code>the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone</code>.</p>
+<h2 id="6-the-two-scales-of-the-field">6. The Two Scales of the Field</h2>
+<p><strong>The field has two numbers and the reading uses one.</strong> The modulus of the quaternionic norm is the proper density, $\rho_{\mathrm{num}}=\varrho^{2}$; the Euclidean size is $\langle\tilde\Xi\rangle_{*}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; and their ratio is the flow's Lorentz factor.</p>
+<p>$$
+\langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2}
+$$</p>
+<p>with $A$ the area of the parallelogram of the real and imaginary parts. <strong>The identity is Lagrange's in four dimensions, and no new algebra is claimed</strong>; what is supplied is the relation between two names the corpus already uses and the inventory of what each name does at the cone.</p>
+<p><strong>The two are one four-vector's length and time component.</strong> $\lvert N\rvert$ is invariant under a boost and $\langle\cdot\rangle_{*}$ transforms as $u_0$, verified at five angles to $1.3\times10^{-15}$. The density is what a fluid conserves; the Euclidean size is what the measure integrates.</p>
+<p><strong>Source.</strong> <code>the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size</code>.</p>
+<h2 id="7-the-massless-corner-where-both-charts-fail">7. The Massless Corner, Where Both Charts Fail</h2>
+<p><strong>At every positive mass the fluid exists in full; at zero mass on the cone it does not</strong>, and what the corner holds is a null current with a direction, an intensity and a sign. The mass carries the first into the second, and <strong>the passage is a limit and not a value</strong>.</p>
+<p><strong>The two failures are level sets of one function $\nu_m^{2}$ apart.</strong> The fluid chart fails on the value cone $N(\tilde\Xi)=0$; the Fourier chart fails on the pole set $N(\tilde\Upsilon_\Phi)=-\nu_m^{2}$; the mass is the height between them, and $\nu_m=0$ is the one value at which they are one set.</p>
+<p><strong>At that value the two failures are one factorisation.</strong> The null symbol's kernel is $\tilde\Pi_{\mathrm{id}}\mathbb{B}$, and because $N$ is multiplicative with $N(\tilde\Pi_{\mathrm{id}})=0$, every element of the kernel is on the value cone: the set the label chart cannot read is the set the value chart cannot read.</p>
+<p><strong>Source.</strong> <code>the-massless-fluid-where-the-label-and-value-charts-both-fail</code>.</p>
+<h2 id="8-the-criterion">8. The Criterion</h2>
+<p><strong>An equation is a fluid equation when it is one coordinate's Euler–Lagrange equation in the polar chart of the field, and not a combination constructed on the field's own equation.</strong> The criterion is about derivations and not vocabulary: the phase is a coordinate, its variation is the conservation of its momentum, and nothing was multiplied by the field's conjugate.</p>
+<p><strong>It changes no content — both roads reach the same equations — and what it changes is which equation is prior.</strong> Its use is therefore structural and heuristic, and <strong>a reader who takes it for a founding principle will over-read it</strong>.</p>
+<p><strong>Three tests make a rung, nested and not orthogonal.</strong> The <strong>count</strong> asks whether the field's real data equal the fluid's — necessary and not sufficient. The <strong>derivation</strong> asks whether each equation is one coordinate's variation. The <strong>closure</strong> asks whether the set is complete, so that no coordinate is left without an equation.</p>
+<p><strong>Source.</strong> <code>criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation</code>.</p>
+<h2 id="9-the-five-steps">9. The Five Steps</h2>
+<p><strong>The derivation is stated once, at no particular group</strong>, and every sector's declension either passes the five steps or names the step it breaks.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Step</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>the action is a pairing of logarithmic derivatives plus one algebraic term</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>the polar word factorises the field into real parameters and is a bijection on the invertibles</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>the parts of the logarithmic derivative have distinct types, the pairing is diagonal on them so the kinetic term is a sum of squares, and one variation per coordinate fills one slot per type</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>the phase and the frame enter only through derivatives, so their equations are one order lower and leave a derivative available; the acceleration law is manufactured from them and never varied</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>whether the velocity is a section of the base decides whether that slot holds a law or a balance</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The asymmetry of the steps is a receipt and not drift.</strong> S2 is the whole of the polar chart, because a step whose content is a chart has to be written as the chart; S1 and S3 are sections of this article; S4 and S5 have one article each.</p>
+<p><strong>Source.</strong> <code>five-steps-from-a-lagrangian-to-fluid-equations</code>.</p>
+<h2 id="10-the-spare-derivative">10. The Spare Derivative</h2>
+<p><strong>The acceleration law of every fluid in this corpus is manufactured, not varied, and the manufacturing consumes a derivative the polar word left spare.</strong> The word makes the phase and the frame cyclic: they appear in the action only through their derivatives, so their Euler–Lagrange equations are conservation laws one order below the field equation's. <strong>The scale is not cyclic</strong>, because the algebraic term depends on it, so its equation has the field equation's order. A first-order equation leaves one derivative unspent, and the acceleration law is made from it.</p>
+<p><strong>Three operations do the manufacturing, and the rung decides which.</strong> At the gradient rungs the guidance relation $\vec v=\vec\nabla S/m$ is differentiated and the quantum Hamilton–Jacobi equation substituted, giving Euler with the quantum force; where the velocity is a direction rather than a gradient, the derivative is projected instead.</p>
+<p><strong>Source.</strong> <code>the-spare-derivative-in-the-polar-chart</code>.</p>
+<h2 id="11-base-valued-against-internal-velocity">11. Base-Valued against Internal Velocity</h2>
+<p><strong>Whether a rung's fluid ends in a force law or a momentum balance is decided by where its velocity lives</strong>, and the test asks two questions: is there a distinguished base vector to be the flow, and is the velocity's value at each point tangent to the base? <strong>The gradient and frame rungs answer yes twice and end in force laws; the matrix rung answers no twice and ends in a balance.</strong></p>
+<p><strong>The object at the matrix rung is a connection, not a velocity.</strong> It assigns one algebra element per base direction, so it has no single direction and cannot be differentiated along itself: the material derivative $u^{\imath}\partial_{\imath}$ does not exist there, and <strong>its absence — not any property of the group — is what makes the manufactured equation a divergence of a flux rather than an acceleration.</strong></p>
+<p><strong>The discriminator is not abelian-ness.</strong> That is the trap the test exists to close.</p>
+<p><strong>Source.</strong> <code>base-valued-versus-internal-flow-velocity-a-test-separating-force-laws-from-momentum-balances</code>.</p>
+<h2 id="12-the-state-and-its-functionals">12. The State and Its Functionals</h2>
+<p><strong>The partition function is an interpretation of a scalar part, not a new object.</strong> For a Hermitian Hamiltonian $\tilde H_\Psi=h_t e_t+i\vec h_\Psi$ the thermal operator is itself an element of $\mathbb{B}_\Psi$ — a scalar Boltzmann weight times a boost biquaternion — and twice its scalar part is the matrix trace of its $2\times2$ image:</p>
+<p>$$
+e^{-\beta H}=e^{-\beta h_t}\Bigl(\cosh(\beta\lvert\vec h_\Psi\rvert)e_t-i\sinh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi\Bigr),
+\qquad
+Z=2\,\mathrm{Sc}\bigl(e^{-\beta H}\bigr)=2e^{-\beta h_t}\cosh(\beta\lvert\vec h_\Psi\rvert).
+$$</p>
+<p>The Gibbs state is $\tilde\varpi_{\Psi,\beta}=e^{-\beta H}/Z$ with $\mathrm{Sc}(\tilde\varpi_\Psi)=\tfrac12$, read through the Hermitian form, so <strong>every thermal average is twice a scalar part</strong>.</p>
+<p><strong>The free energy is the variational principle the closure was missing.</strong> It is the Legendre transform of $\log Z$ at inverse temperature; <strong>its stationarity is the field equation at temperature</strong> and its value is the thermodynamic potential, $\Omega_\beta=-p_{\mathrm{th}}V_0=\Gamma_\beta[\varrho_*]$. Its derivatives are the response functions, so <strong>Euler's relation is its homogeneity, Gibbs–Duhem its chain rule, and the Maxwell relations the symmetry of its second derivatives</strong>. And the three tests of §14 are three properties of this one object: integrability is that it exists, consistency that the response functions are its derivatives, determinacy that its derivative expansion is truncated at a stated order.</p>
+<p><strong>Matsubara is the same computation on the material direction.</strong> The compactified direction is $ir'_t$; the standard route is the Wick rotation $r'_t\to-i\tau$, which reads the wave biquaternion as $-\omega_n e_t+\vec p$ with a definite norm. This category uses the <strong>material-sector route</strong>, in which the computation never leaves $\mathbb{B}_\Phi$ and positivity is carried by the Hermitian form rather than by the rotated metric — <strong>the two routes give the same propagator and the same frequencies</strong>.</p>
+<p><strong>A moving thermal state is specified by one element.</strong> $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma(ie_t+\vec\beta_{\mathrm{vel}})$, of norm $-\beta^{2}$: the period carried along the flow. <strong>The boost lengthens the norm not at all and tilts the direction</strong> — which is why a moving thermometer reads what it reads.</p>
+<p><strong>The Schwinger–Keldysh branch factor is external to $\mathbb{B}$.</strong> The contour doubles every field into a plus and a minus branch, and $\mathcal{V}_{\mathrm{CTP}}=\mathcal{V}_{\mathrm{field}}\otimes\mathbb{C}^{2}_{\mathrm{br}}$ with the branch factor <strong>not</strong> to be identified with the algebra's own $M_2(\mathbb{C})$ nor with the material/informational decomposition. The Keldysh rotation then splits the quadratic action into a retarded, an advanced and a noise component, the first two being one kernel's two orderings.</p>
+<p><strong>Every discreteness in the corpus is the Pontryagin dual of a compactness</strong>, and the four instances are tabled: the compact central phase, the compact internal group, the thermal circle and the compact unit sphere. The two disciplines — algebraic and thermal — <strong>meet in the central phase, which is the thermal circle at finite temperature</strong>.</p>
+<p><strong>Source.</strong> <code>the-partition-function-in-biquaternionic-form</code>, <code>the-free-energy-functional-at-finite-temperature</code>, <code>quantum-thermodynamics-in-biquaternionic-form</code>, <code>the-matsubara-thermal-formalism-in-biquaternionic-form</code>, <code>the-discrete-lattice-and-the-thermal-circle</code>, <code>equilibrium-partition-function-in-a-moving-frame</code>, <code>the-schwinger-keldysh-formalism-in-biquaternionic-form</code>.</p>
+<h2 id="13-the-kinetic-bridge">13. The Kinetic Bridge</h2>
+<p><strong>The Wigner element is the ordinary $x$–$p$ transform taken in the algebra.</strong> $\tilde W_\Xi=h^{-3}\int d^{3}s\,e^{-i\theta_{\mathrm{spa}}}\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, with the conjugate at the lower offset and the corpus's Fourier kernel; <strong>both choices are fixed by requiring a plane wave of momentum $\vec p_0$ to sit at $\vec p=\vec p_0$</strong>, which is the check that catches the sign error a real wave function cannot catch. Its zeroth moment in momentum is the element $\tilde\Xi^{*}\tilde\Xi$ at the event, whose scalar part is the density.</p>
+<p><strong>The kinetic equation is exact and its generator is the Moyal bracket.</strong> Expanding the sine gives the classical drift at order zero and a single correction at second order in $\hbar$; for a Hamiltonian at most quadratic in momentum the next term is $V'''\partial_p^{3}W$, so <strong>the expansion terminates rather than being truncated</strong> — the bridge is a derivation and not an approximation scheme.</p>
+<p><strong>Source.</strong> <code>the-wigner-function-in-biquaternionic-form</code>, <code>relativistic-wigner-function-and-quantum-kinetics</code>.</p>
+<h2 id="14-the-local-thermal-state-and-the-three-tests">14. The Local Thermal State and the Three Tests</h2>
+<p><strong>The local thermal state is a triple at each event</strong>, $\bigl(\rho_{\mathrm{num}}(x),p_{\mathrm{th}}(x),\tilde V_\Phi(x)\bigr)$ at the pointwise period $\beta(x)=h/(2\pi k_BT(x))$, with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$, $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ and $\tilde V_\Phi=\tilde P_\Phi/m$, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, every index low. <strong>The temperature is a field at each event — a pointwise period, not a pointwise metric.</strong></p>
+<p><strong>The count is three and not four because the chemical potential is the phase's rate:</strong></p>
+<p>$$
+\mu_{\mathrm{chm}}=-\partial_{t'}S=\frac{h}{2\pi}\omega_\mu ,
+\qquad \omega_\mu=-\partial_{t'}\theta_{\mathrm{pha}} .
+$$</p>
+<p><strong>It is the temporal component of the same gradient whose spatial components are the momentum</strong>, so it is read from the configuration and is not an independent field. A real field has no phase and no chemical potential; <strong>the matrix rung has four, one per diagonal phase</strong>. Around the thermal circle the phase does not return to itself: it advances by $\beta\omega_\mu$.</p>
+<p><strong>The equation of state separates a thermal part from a quantum part.</strong> $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, with $p_{\mathrm{th}}=p_{\mathrm{th}}(\rho_{\mathrm{num}},\beta)$ and the quantum part a functional of the density field. The period is <strong>quoted</strong> as $\beta=mc/(2\pi\nu_mk_BT)$ — a length — and nothing about it is derived here. The thermal part closes through $p_{\mathrm{th}}=n_{\mathrm{num}}(\partial w_{\mathrm{fl}}/\partial n_{\mathrm{num}})_{s_{\mathrm{ent}}}-w_{\mathrm{fl}}$, which returns $p=\tfrac23w$ for a non-relativistic degenerate gas.</p>
+<p><strong>The entropy current is declared Hermitian</strong>, $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$, all four coefficients real. <strong>Hermiticity is exactly the condition under which $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J)=\partial_{\imath}J_{\imath}$ is a real number</strong>, which is why the declaration is the corpus's mechanism for making entropy inequalities meaningful.</p>
+<p><strong>Rigidity is the vanishing of the symmetric part of the velocity's gradient</strong>,</p>
+<p>$$
+\frac{\partial v_{\Phi,\jmath}}{\partial R_{\imath}}+\frac{\partial v_{\Phi,\imath}}{\partial R_{\jmath}}=0 ,
+$$</p>
+<p>with three consequences: the Lorentz factor does not vary in time, the spatial current density has neither expansion nor shear, and the flow's acceleration is locked to the rapidity gradient so that <strong>a static rigid flow is inertial</strong>. Vorticity is what survives rigidity. Tolman's law, $Tc=\text{const}$, is <strong>quoted from another article and not re-derived here</strong>; in the corpus's letters it relates the temperature to the local complex structure $c=1/\sqrt{\epsilon\mu}$ and not to a metric coefficient.</p>
+<p><strong>Source.</strong> <code>the-local-thermal-state-of-a-fluid</code>, <code>the-chemical-potential-is-the-phases-frequency</code>, <code>the-equation-of-state-in-biquaternion-form</code>, <code>the-local-entropy-current</code>, <code>covariant-local-equilibrium-and-tolman-temperature</code>.</p>
+<h2 id="15-the-departures-from-equilibrium">15. The Departures from Equilibrium</h2>
+<p><strong>A dissipative equation has no action on one history and has one on two.</strong> The closed-time-path action is the difference of the branches' actions plus an influence functional; its generating functional equals one at coincident sources, and its variation gives the field equation on each branch. <strong>For a closed system nothing dissipative appears</strong>; the dissipation is what an environment leaves behind and it is nonlocal in time.</p>
+<p><strong>The Israel–Stewart corrections replace three algebraic relations by three relaxation equations</strong>, $\tau_\Pi\dot\Pi+\Pi=-\zeta\theta$ and its shear and heat twins, with six coefficients instead of three and a system second order in time for the fluxes — which is what removes the parabolic signal speed of the first-order theory.</p>
+<p><strong>A spin fluid has two intensive variables.</strong> The spin potential is conjugate to the spin polarization, whose element is the rotor's generator conjugated into the fluid's frame, and the first law gains one term, $dw_{\mathrm{fl}}=Tds_{\mathrm{ent}}+\mu_{\mathrm{chm}}d\rho_{\mathrm{num}}+\tfrac12\omega_{k\jmath}dS_{\Psi,k,k\jmath}$, so the equation of state gains one argument. <strong>Spin conservation is the rotor's equation of motion</strong>, and the divergence of the spin current is a torque that vanishes when the connection turns about the spin's axis — which is the corpus's form of the Frenkel condition, <strong>automatic here rather than imposed</strong>.</p>
+<p><strong>The two-fluid model is a split of one density.</strong> $\rho_{\mathrm{num}}=\rho_{\mathrm{num,sup}}+\rho_{\mathrm{num,nrm}}$ with two flow elements, each of the same norm; the relative element $\tilde W_\Phi=\tilde V_{\Phi,\mathrm{nrm}}-\tilde V_{\Phi,\mathrm{sup}}$ <strong>vanishes exactly when the two components move together, which is the equilibrium condition and the state in which no entropy is produced</strong>.</p>
+<p><strong>Source.</strong> <code>the-closed-time-path-action-one-action-on-two-branches</code>, <code>causal-dissipative-fluid-physics-in-biquaternionic-form</code>, <code>spin-fluid-physics-in-biquaternionic-form</code>, <code>spin-conservation-and-the-frenkel-condition</code>, <code>the-two-fluid-model-in-biquaternionic-form</code>.</p>
+<h2 id="16-the-ledger">16. The Ledger</h2>
+<p><strong>The section's own count is twenty</strong>, and the ledger keeps the numbering of the dissolved category it came from, which counts twenty-two: the difference is not a discrepancy to be repaired but the record of a re-cut.</p>
+<p><strong>Four of the twenty are transcriptions</strong> — each carrying the sentence that it is standard physics in the corpus's letters with no framework interpretation — and <strong>the other sixteen add identifications the algebra makes available</strong>, several of them inherited from the fluid block: the velocity is a boost, the spin a rotor, the spin's conservation the rotor's equation, the Frenkel condition automatic.</p>
+<p><strong>Source.</strong> <code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation</code>.</p>
+<h2 id="17-from-the-fluid-to-the-force">17. From the Fluid to the Force</h2>
+<p><strong>A first-order transport law, differentiated once, produces three kinds of term</strong>: the <strong>acceleration</strong>, the second derivative of the transported quantity and the only term that makes the equation second order; the <strong>transport</strong>, the flow carrying the quantity, which takes the commutator's form when the quantity is matrix-valued; and the <strong>product rule</strong>, which is what the differentiation produces because it was applied to a product whose factors both vary, and <strong>is never a force term</strong>. Three tests separate them, each a configuration in which one term vanishes.</p>
+<p><strong>Three couplings appear in the corpus and they differ in what they consume.</strong> Wong's equations contract an algebraic charge with the field strength by the trace pairing and get a covector force; the classical spinning particle contracts an internal two-form with the field's two-form and gets a scalar coupling; <strong>the matrix rung contracts nothing</strong>, because its charge is the field's own basis, and what it uses instead is the commutator — the algebra's inner derivation.</p>
+<p><strong>The contraction is unavailable for an index-counting reason</strong>, not a dynamical one: the balance's source must stay matrix-valued, and an operation that consumes an index cannot deliver one.</p>
+<p><strong>Source.</strong> <code>differentiating-a-first-order-transport-law-force-transport-and-product-rule-terms</code>, <code>a-matrix-valued-charge-cannot-be-contracted-three-couplings-and-the-inner-derivation</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One reading, one closure, one balance, and no band's equation changed.</strong> The element is re-coordinated into a density, a phase, a velocity and a spin; $1+1+3+3=8$ is the reason the reading is a coordinatisation and not a model, and $N(\tilde\Xi)\neq0$ is the reason it is a coordinatisation of an open set. Each bilinear reads two factors and the phase and the spin never meet in one. A fluid equation is one coordinate's Euler–Lagrange equation in the chart, and the five steps produce them once for the whole ladder, with the acceleration law manufactured from the derivative the cyclicity left spare. The density, the frame and the pressure then close into a local thermal state whose three tests are three properties of one free energy; where a test fails the departures are the closed-time-path action for dissipation, the relaxation equations for causality, and the spin and two-fluid models for the extra variable.</p>
+<p><strong>The category's discipline, stated once.</strong> It owns no theorem — every result read is proved in a mathematics article, and each entry names the section — and it predicts no number: the numbers that appear are evaluations of the chart. It identifies a physical object with an algebraic structure and leaves dynamics, constants and experiment to the physics categories.</p>
+<p><strong>The boundary, stated once.</strong> No carrier appears here. Each band declines this chart for its own carrier and keeps its own fluid slot; the ordinary equations stay in <em>Biquaternion Universe Non Relativistic Non Quantum Approximation</em>; and the apparatus this category uses — the action, the variation, the conserved current — is stated once in <em>Biquaternion Universe Action</em>, above.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varrho$</td>
+<td>the scale, the amplitude of the polar word, positive</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}$</td>
+<td>the phase, a coordinate on a half turn</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}$, $\hat n$</td>
+<td>the rapidity and unit axis of the boost</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}}$, $\hat m$</td>
+<td>the angle and unit axis of the rotor</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)$</td>
+<td>the quaternionic norm; the word exists iff $N\neq0$</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>the sign, $\mathrm{Sc}(\tilde\Xi)/\lvert N(\tilde\Xi)\rvert$; a coordinate, not a label</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>the sector $\varepsilon=\pm1$; six-dimensional against the seven-dimensional $\lvert\varepsilon\rvert=1$</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}$</td>
+<td>the proper density, $\varrho^{2}=\lvert N\rvert$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{*}$</td>
+<td>the Euclidean size, $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi$</td>
+<td>the velocity element, $\tilde P_\Phi/m$, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$</td>
+</tr>
+<tr>
+<td>$\beta$, $\Theta$</td>
+<td>the period $h/(2\pi k_BT)$; the thermal parameter $\beta\lvert\vec h_\Psi\rvert$</td>
+</tr>
+<tr>
+<td>$p_{\mathrm{th}}$, $p_{\mathrm{qnt}}$</td>
+<td>the thermal pressure and the quantum pressure; $p_{\mathrm{eff}}$ their sum</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{chm}}$</td>
+<td>the chemical potential, $-\partial_{t'}S$, the phase's rate</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{ent}}$, $\tilde J_{\Phi,\mathrm{ent}}$</td>
+<td>the entropy density and the Hermitian entropy current</td>
+</tr>
+<tr>
+<td>$\tilde W_\Xi$</td>
+<td>the Wigner element, the $x$–$p$ transform taken in the algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>the-relativistic-quantum-space-as-a-fluid</code> (the hub, and the index of the eight), <code>criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation</code> (what grades an equation), <code>five-steps-from-a-lagrangian-to-fluid-equations</code> (the method), <code>the-local-thermal-state-of-a-fluid</code> (the closure).</p>
+<p>Where the results are proved: the polar decomposition and the norm in the mathematics category, which the chart's entries name section by section; the corpus states no theorem of its own here.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

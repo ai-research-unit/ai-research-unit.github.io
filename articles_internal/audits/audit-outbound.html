@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit Outbound: Forward References and the Reading Order — Biquaternion Universe</title>
+  <meta name="description" content="Status. Analysis 2026-11-27 on baseline 6ee5793e6, and the migration has begun: §12 logs the order of operations and the edits applied so far (Packages 2…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-outbound-forward-references-and-the-reading-order"><strong>Audit Outbound: Forward References and the Reading Order</strong></h1>
+<p><em>Status.</em> Analysis 2026-11-27 on baseline <code>6ee5793e6</code>, and the migration has begun: §12 logs the order of operations and the edits applied so far (Packages 2 and 4, verified; Package 3 withdrawn after checking the RQT spin matrices). Sections 2–9 remain the baseline snapshot. The raw edge list is <code>articles_internal/audits/audit-outbound-edges.tsv</code> (781 rows, one per body-layer forward link at baseline). The scope is every local link in <code>articles_physics/*.md</code>; the order of <code>physics.md</code> is taken as the reading order. Links to <code>articles_maths/</code> are counted but excluded from the forward test, because the maths corpus has its own order.</p>
+<p><em>The one-line answer.</em> The corpus is not a backward-only sequence. Forty-four percent of its internal physics links point forward, and its prose links are split almost exactly fifty-fifty. Most of that is deliberate: Further Reading accounts for 64% of the forward links, and a handful of hub articles account for most of the rest. The audit does not find a physical contradiction. It finds five load-bearing deferrals and one systematic top-down order: the synthesis is placed before the detail it cites. That is the thing to fix if the corpus is meant to be read front to back.</p>
+<h2 id="1-the-answer-in-one-page">1. The Answer in One Page</h2>
+<ol>
+<li><strong>Do not try to remove every forward link.</strong> The body-link graph has a 151-article strongly connected component. No reordering alone can remove the forward links inside it; you would have to cut links or accept the web. The corpus is a reference web with a menu order, not a proof sequence.</li>
+<li><strong>If you want a linear order, adopt one rule: no body link that skips a category.</strong> There are 260 such links, from 79 articles, and they are the ones that make a reader jump over whole sections. Adjacent-category links and same-category links to the next few articles can stay.</li>
+<li><strong>Move the five foundations first.</strong> The compact-sector ceiling (281), the entropy functional (706), the weak sector and electroweak breaking (318, 338), and the quantum-fluid instances (450, 523, 524) are clearly used before they are defined. The general fluid machinery (688–694) is the fifth case, but it needs a check of 190 first: it may be a legitimate limit pointer rather than a deferral. Moving the clear cases removes more forward links than any editing campaign, and it makes the claims verifiable where they are made.</li>
+<li><strong>Convert optional pointers to plain text, not delete the sentence.</strong> Many forward links are "the case is worked in X" or "the full argument is in Y". Keep the title, drop the hyperlink. The prose still reads; the jump disappears.</li>
+<li><strong>Keep Further Reading and the indexes.</strong> Further Reading is a bibliography, not a reading-order dependency. The Quantisation Hub (155), Sector Hub (271), and category introductions (182, 191) are navigational indexes; their forward links are their job. The audit treats them as exempt and says so.</li>
+</ol>
+<h2 id="2-the-counts">2. The Counts</h2>
+<p>The corpus has 755 physics articles in 14 categories. The parse found 5,758 outbound links in those articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>target kind</th>
+<th style="text-align: right;">links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>physics article in the same corpus</td>
+<td style="text-align: right;">4,961</td>
+</tr>
+<tr>
+<td>maths article</td>
+<td style="text-align: right;">778</td>
+</tr>
+<tr>
+<td>internal other</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td>other relative</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td style="text-align: right;"><strong>5,758</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Of the 4,961 physics-internal links, 2,772 point backward, 2,186 point forward, and 3 are self-links. The forward share is 44.1%.</p>
+<p>The forward links are not evenly distributed across article sections.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>section</th>
+<th style="text-align: right;">forward</th>
+<th style="text-align: right;">backward</th>
+<th style="text-align: right;">self</th>
+<th style="text-align: right;">forward share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Further Reading</td>
+<td style="text-align: right;">1,405</td>
+<td style="text-align: right;">2,003</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">41.2%</td>
+</tr>
+<tr>
+<td>Body prose</td>
+<td style="text-align: right;">763</td>
+<td style="text-align: right;">756</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50.2%</td>
+</tr>
+<tr>
+<td>Summary</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">57.7%</td>
+</tr>
+<tr>
+<td>Source table</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">60.0%</td>
+</tr>
+<tr>
+<td><strong>all physics-internal</strong></td>
+<td style="text-align: right;"><strong>2,186</strong></td>
+<td style="text-align: right;"><strong>2,772</strong></td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>44.1%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The prose links are the ones that matter for reading. They are 50/50. A corpus written as a linear derivation would have a strong backward bias in prose; this one does not.</p>
+<p>The 781 “body-layer” links used below are the non-Further-Reading links: 763 body, 15 summary, 3 source table. They are the links that carry the argument rather than the bibliography.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>measure</th>
+<th style="text-align: right;">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>body-layer forward links</td>
+<td style="text-align: right;">781</td>
+</tr>
+<tr>
+<td>distinct source→target pairs</td>
+<td style="text-align: right;">615</td>
+</tr>
+<tr>
+<td>source articles</td>
+<td style="text-align: right;">184 of 755</td>
+</tr>
+<tr>
+<td>articles with no body-layer forward link</td>
+<td style="text-align: right;">571</td>
+</tr>
+<tr>
+<td>target articles</td>
+<td style="text-align: right;">270</td>
+</tr>
+<tr>
+<td>links in the top 20 targets</td>
+<td style="text-align: right;">226 (29%)</td>
+</tr>
+<tr>
+<td>links from the top 20 sources</td>
+<td style="text-align: right;">298 (38%)</td>
+</tr>
+<tr>
+<td>articles with 1–2 forward links</td>
+<td style="text-align: right;">84</td>
+</tr>
+<tr>
+<td>articles with 3–5 forward links</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td>articles with 6–10 forward links</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td>articles with more than 10 forward links</td>
+<td style="text-align: right;">14</td>
+</tr>
+</tbody>
+</table></div>
+<p>The concentration is real but not extreme. The problem is not that every article is a hub. It is that 14 articles carry more than ten forward links each, and the largest categories are net forward senders.</p>
+<p>The menu gap distribution shows how far the jumps go.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>menu gap</th>
+<th style="text-align: right;">body-layer links</th>
+<th style="text-align: right;">cross-category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>2–5</td>
+<td style="text-align: right;">132</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>6–20</td>
+<td style="text-align: right;">172</td>
+<td style="text-align: right;">44</td>
+</tr>
+<tr>
+<td>21–50</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">79</td>
+</tr>
+<tr>
+<td>51–100</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">80</td>
+</tr>
+<tr>
+<td>101–200</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr>
+<td>201+</td>
+<td style="text-align: right;">156</td>
+<td style="text-align: right;">156</td>
+</tr>
+</tbody>
+</table></div>
+<p>A gap of 1–5 is local reading. A gap of 50 or more is a long jump, often across several categories. There are 292 links with a gap of 50 or more; 156 of them jump more than 200 articles.</p>
+<h2 id="3-the-category-balance">3. The Category Balance</h2>
+<p>The decisive table is the category balance. In this table “body” means body-layer (non-Further-Reading). “Forward out” is the number of body-layer links from a category to a later article; “forward in” is the number it receives from an earlier article. The last column is the net: positive means the category is a net sender, negative means it is a net receiver.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>category</th>
+<th style="text-align: right;">articles</th>
+<th style="text-align: right;">body out</th>
+<th style="text-align: right;">body in</th>
+<th style="text-align: right;">fwd out</th>
+<th style="text-align: right;">fwd in</th>
+<th style="text-align: right;">net fwd</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BU / Programme</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;"><strong>+34</strong></td>
+</tr>
+<tr>
+<td>BU / Relativity</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">+5</td>
+</tr>
+<tr>
+<td>BU / Action</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;"><strong>+25</strong></td>
+</tr>
+<tr>
+<td>BU / Fluid Physics and Thermodynamics</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">323</td>
+<td style="text-align: right;">202</td>
+<td style="text-align: right;">158</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;"><strong>+95</strong></td>
+</tr>
+<tr>
+<td>BU / Primordial Force</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">173</td>
+<td style="text-align: right;">138</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;"><strong>+51</strong></td>
+</tr>
+<tr>
+<td>BU / Symmetry Breaking</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">234</td>
+<td style="text-align: right;">187</td>
+<td style="text-align: right;">143</td>
+<td style="text-align: right;">89</td>
+<td style="text-align: right;"><strong>+54</strong></td>
+</tr>
+<tr>
+<td>BU / Strong Force</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;"><strong>−42</strong></td>
+</tr>
+<tr>
+<td>BU / Electroweak Force</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">118</td>
+<td style="text-align: right;">151</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;"><strong>−64</strong></td>
+</tr>
+<tr>
+<td>BU / Electromagnetism</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">−6</td>
+</tr>
+<tr>
+<td>BU / Relativistic Quantum Theory</td>
+<td style="text-align: right;">191</td>
+<td style="text-align: right;">298</td>
+<td style="text-align: right;">340</td>
+<td style="text-align: right;">137</td>
+<td style="text-align: right;">213</td>
+<td style="text-align: right;"><strong>−76</strong></td>
+</tr>
+<tr>
+<td>BU / Non-Relativistic Quantum</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">−17</td>
+</tr>
+<tr>
+<td>BU / Relativistic Non-Quantum</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>BU / Non-Relativistic Non-Quantum</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;"><strong>−42</strong></td>
+</tr>
+<tr>
+<td>BU / Gravity and Cosmology</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">−17</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pattern.</strong> The early general and synthesis categories are net forward senders: Fluid +95, Symmetry +54, Primordial +51, Programme +34, Action +25. The detailed categories are net receivers: Relativistic Quantum Theory −76, Electroweak −64, Strong −42, Non-Relativistic Non-Quantum −42. This is a top-down order: the general claim is stated first, the detailed support later. It is a coherent pedagogical choice. It is also the source of the forward links you are seeing.</p>
+<p><strong>Why the body counts are small in Relativity and Electromagnetism.</strong> Further Reading is not uniformly distributed. Relativity has 365 Further Reading links and 35 body links; Electromagnetism has 123 Further Reading links and 2 body links. The body balance is a statement about argument links, not about total references. A category can be quiet in the body and still cite heavily in the bibliography.</p>
+<p><strong>The Fluid outlier.</strong> Fluid has 34 articles and 323 body-layer outbound links, 9.5 per article. No other category is close. Its first half states the general chain; its second half states the thermodynamic closure. Both halves cite instances and definitions that sit in Relativistic Quantum Theory or in the late Non-Relativistic Non-Quantum block. That is why Fluid alone contributes 158 forward links.</p>
+<p><strong>What the balance cannot tell you.</strong> A net-sender category may be a legitimate overview, and a net-receiver category may be a legitimate detail article. The balance shows direction, not error. The next sections separate the deliberate pointers from the load-bearing deferrals.</p>
+<h2 id="4-where-the-forward-links-are">4. Where the Forward Links Are</h2>
+<h3 id="41-the-cross-category-skips">4.1 The cross-category skips</h3>
+<p>A link “skips a category” when the target’s category is at least two positions later in the menu. There are 260 such body-layer links, from 79 source articles to 108 target articles. They are 33% of the 781 body-layer forward links. The top flows account for two thirds of them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>flow</th>
+<th style="text-align: right;">links</th>
+<th style="text-align: right;">share</th>
+<th style="text-align: right;">cumulative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fluid → Relativistic Quantum Theory</td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">28.1%</td>
+<td style="text-align: right;">28.1%</td>
+</tr>
+<tr>
+<td>Symmetry Breaking → Electroweak</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">21.9%</td>
+<td style="text-align: right;">50.0%</td>
+</tr>
+<tr>
+<td>Relativistic Quantum Theory → Non-Relativistic Non-Quantum</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">8.5%</td>
+<td style="text-align: right;">58.5%</td>
+</tr>
+<tr>
+<td>Fluid → Non-Relativistic Non-Quantum</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6.2%</td>
+<td style="text-align: right;">64.6%</td>
+</tr>
+<tr>
+<td>Programme → Relativistic Quantum Theory</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">4.2%</td>
+<td style="text-align: right;">68.8%</td>
+</tr>
+<tr>
+<td>Symmetry Breaking → Relativistic Quantum Theory</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3.5%</td>
+<td style="text-align: right;">72.3%</td>
+</tr>
+<tr>
+<td>Action → Relativistic Quantum Theory</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2.3%</td>
+<td style="text-align: right;">74.6%</td>
+</tr>
+<tr>
+<td>Fluid → Gravity and Cosmology</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2.3%</td>
+<td style="text-align: right;">76.9%</td>
+</tr>
+<tr>
+<td>Primordial Force → Strong Force</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1.9%</td>
+<td style="text-align: right;">78.8%</td>
+</tr>
+<tr>
+<td>Relativity → Relativistic Quantum Theory</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1.5%</td>
+<td style="text-align: right;">80.4%</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first four flows are 65% of all category-skipping links. Two of them are the Fluid block; one is the Symmetry-to-Electroweak split; one is the Relativistic-to-Non-Relativistic limit. They are different problems and need different fixes.</p>
+<h3 id="42-the-top-forward-heavy-articles">4.2 The top forward-heavy articles</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">idx</th>
+<th style="text-align: right;">forward links</th>
+<th>role</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Why Biquaternions?</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">33</td>
+<td>programme survey</td>
+<td>exempt: overview</td>
+</tr>
+<tr>
+<td>Three Gaps in the Standard Model</td>
+<td style="text-align: right;">266</td>
+<td style="text-align: right;">23</td>
+<td>gap audit</td>
+<td>exempt: audit/hub</td>
+</tr>
+<tr>
+<td>The Relativistic Quantum Space as a Fluid</td>
+<td style="text-align: right;">182</td>
+<td style="text-align: right;">22</td>
+<td>category introduction</td>
+<td>exempt: roadmap</td>
+</tr>
+<tr>
+<td>The SU(4) Model: Four Lines, Fifteen Generators</td>
+<td style="text-align: right;">216</td>
+<td style="text-align: right;">20</td>
+<td>model declaration</td>
+<td>exempt: hub</td>
+</tr>
+<tr>
+<td>The Data Boundary</td>
+<td style="text-align: right;">245</td>
+<td style="text-align: right;">19</td>
+<td>corpus-wide data register</td>
+<td><strong>split or link from the section</strong></td>
+</tr>
+<tr>
+<td>The Standard Model: Content, Quantum Numbers</td>
+<td style="text-align: right;">259</td>
+<td style="text-align: right;">17</td>
+<td>inventory</td>
+<td>exempt: hub</td>
+</tr>
+<tr>
+<td>The Invariant Density</td>
+<td style="text-align: right;">132</td>
+<td style="text-align: right;">16</td>
+<td>section opener</td>
+<td>examine: mostly same-section</td>
+</tr>
+<tr>
+<td>The Quantisation Hub</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">16</td>
+<td>explicit index</td>
+<td>exempt: index</td>
+</tr>
+<tr>
+<td>The Fifteen AXF Matrices of the Bosons</td>
+<td style="text-align: right;">230</td>
+<td style="text-align: right;">15</td>
+<td>detail article</td>
+<td><strong>trim: forward to the breaking</strong></td>
+</tr>
+<tr>
+<td>The Local Entropy Current</td>
+<td style="text-align: right;">206</td>
+<td style="text-align: right;">13</td>
+<td>ordinary article</td>
+<td><strong>load-bearing: 706</strong></td>
+</tr>
+<tr>
+<td>The Sector Hub</td>
+<td style="text-align: right;">271</td>
+<td style="text-align: right;">13</td>
+<td>explicit index</td>
+<td>exempt: index</td>
+</tr>
+<tr>
+<td>Criterion for a Fluid Equation</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">12</td>
+<td>general method</td>
+<td><strong>load-bearing: 688–694</strong></td>
+</tr>
+<tr>
+<td>Five Steps from a Lagrangian to Fluid Equations</td>
+<td style="text-align: right;">191</td>
+<td style="text-align: right;">11</td>
+<td>summary/hub</td>
+<td>exempt: hub</td>
+</tr>
+<tr>
+<td>Curved Spacetime and the Biquaternion Framework</td>
+<td style="text-align: right;">711</td>
+<td style="text-align: right;">11</td>
+<td>gravity opener</td>
+<td>exempt: roadmap</td>
+</tr>
+<tr>
+<td>The Wigner Function</td>
+<td style="text-align: right;">201</td>
+<td style="text-align: right;">10</td>
+<td>bridge article</td>
+<td>examine</td>
+</tr>
+<tr>
+<td>The Local Thermal State of a Fluid</td>
+<td style="text-align: right;">203</td>
+<td style="text-align: right;">10</td>
+<td>ordinary article</td>
+<td>examine</td>
+</tr>
+<tr>
+<td>Composite Systems and the Multi-Qubit Extension</td>
+<td style="text-align: right;">550</td>
+<td style="text-align: right;">10</td>
+<td>hub</td>
+<td>exempt: hub</td>
+</tr>
+<tr>
+<td>Covariant Local Equilibrium and Tolman Temperature</td>
+<td style="text-align: right;">207</td>
+<td style="text-align: right;">9</td>
+<td>ordinary article</td>
+<td><strong>load-bearing: 450, 742</strong></td>
+</tr>
+<tr>
+<td>The Parameter Count</td>
+<td style="text-align: right;">262</td>
+<td style="text-align: right;">9</td>
+<td>audit/hub</td>
+<td>exempt: audit</td>
+</tr>
+<tr>
+<td>Representation Is a Function of Spin</td>
+<td style="text-align: right;">314</td>
+<td style="text-align: right;">9</td>
+<td>bridge article</td>
+<td>examine</td>
+</tr>
+</tbody>
+</table></div>
+<p>Fourteen articles carry more than ten forward links. Six are explicit surveys, indexes, or category introductions. The ordinary articles in the list are the ones to edit: 206, 190, 207, 230, 201, 203, 314.</p>
+<h3 id="43-the-top-late-targets">4.3 The top late targets</h3>
+<p>The target side is more revealing. These are articles that receive body-layer links from much earlier sources.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>target</th>
+<th style="text-align: right;">idx</th>
+<th>category</th>
+<th style="text-align: right;">body in</th>
+<th style="text-align: right;">sources</th>
+<th style="text-align: right;">earliest source</th>
+<th style="text-align: right;">long-jump in</th>
+<th>why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Spin-Half Fluid of the Dirac Field</td>
+<td style="text-align: right;">450</td>
+<td>RQT</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">14</td>
+<td>the spinor instance used by Fluid</td>
+</tr>
+<tr>
+<td>The Quantum Stress Tensor of the Scalar Field</td>
+<td style="text-align: right;">523</td>
+<td>RQT</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">182</td>
+<td style="text-align: right;">14</td>
+<td>the stress tensor used by Fluid thermodynamics</td>
+</tr>
+<tr>
+<td>The Nodal Set and Quantized Circulation</td>
+<td style="text-align: right;">524</td>
+<td>RQT</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">12</td>
+<td>the nodal theorem used by Fluid and overview</td>
+</tr>
+<tr>
+<td>The Clebsch Potentials and the Rank of the Vorticity</td>
+<td style="text-align: right;">694</td>
+<td>NRNQ</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">184</td>
+<td style="text-align: right;">10</td>
+<td>general vorticity result placed in a late limit</td>
+</tr>
+<tr>
+<td>The Weak Sector Below $M_C$</td>
+<td style="text-align: right;">318</td>
+<td>Electroweak</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">229</td>
+<td style="text-align: right;">10</td>
+<td>the weak half of the boson classification</td>
+</tr>
+<tr>
+<td>Coarse-Graining and the Entropy Functional</td>
+<td style="text-align: right;">706</td>
+<td>NRNQ</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">9</td>
+<td>the entropy functional used by the second law</td>
+</tr>
+<tr>
+<td>The Spin-Zero Fluid</td>
+<td style="text-align: right;">519</td>
+<td>RQT</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">182</td>
+<td style="text-align: right;">9</td>
+<td>the scalar instance used by Fluid</td>
+</tr>
+<tr>
+<td>The Klein–Gordon Equation in Polar Variables</td>
+<td style="text-align: right;">510</td>
+<td>RQT</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">6</td>
+<td>the polar form used by Fluid</td>
+</tr>
+<tr>
+<td>Electroweak Symmetry Breaking</td>
+<td style="text-align: right;">338</td>
+<td>Electroweak</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">245</td>
+<td style="text-align: right;">6</td>
+<td>the EWSB working-out used by the SM derivation</td>
+</tr>
+<tr>
+<td>The Compact Sector Is $\mathfrak{u}(2)$</td>
+<td style="text-align: right;">281</td>
+<td>Strong Force</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td>the SU(3) ceiling, a foundational limit</td>
+</tr>
+<tr>
+<td>The Dirac Equation in Polar Variables</td>
+<td style="text-align: right;">434</td>
+<td>RQT</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">183</td>
+<td style="text-align: right;">4</td>
+<td>the spinor polar form used by Fluid</td>
+</tr>
+<tr>
+<td>The Gordon Decomposition</td>
+<td style="text-align: right;">471</td>
+<td>RQT</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td>the current split used by Fluid</td>
+</tr>
+<tr>
+<td>The Euler and Continuity Equations</td>
+<td style="text-align: right;">688</td>
+<td>NRNQ</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">5</td>
+<td>general fluid machinery</td>
+</tr>
+<tr>
+<td>The Equation of State and Barotropic Condition</td>
+<td style="text-align: right;">691</td>
+<td>NRNQ</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">3</td>
+<td>general fluid closure</td>
+</tr>
+<tr>
+<td>The Reverse Madelung Map</td>
+<td style="text-align: right;">692</td>
+<td>NRNQ</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">3</td>
+<td>general fluid–wave correspondence</td>
+</tr>
+<tr>
+<td>The Fluid–Wave Correspondence</td>
+<td style="text-align: right;">693</td>
+<td>NRNQ</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">4</td>
+<td>general fluid–wave correspondence</td>
+</tr>
+<tr>
+<td>Viscosity and the Rayleigh Function</td>
+<td style="text-align: right;">690</td>
+<td>NRNQ</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">139</td>
+<td style="text-align: right;">4</td>
+<td>general dissipation</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Long-jump in” counts only sources at least 50 articles earlier. The total “body in” is larger because adjacent-category links are included.</p>
+<h2 id="5-four-kinds-of-forward-link">5. Four Kinds of Forward Link</h2>
+<p>The 2,186 forward links are not one phenomenon. They divide into four kinds, and only the fourth is a defect.</p>
+<h3 id="51-bibliographic-1405-links">5.1 Bibliographic: 1,405 links</h3>
+<p>These are Further Reading entries. They are 64% of all forward links and 41% of all Further Reading links. They are a bibliography, not a dependency. If you want zero forward links in the built page, convert these entries to plain text or split the bibliography into “before” and “after”. If you keep them, they should not be counted as a reading-order problem.</p>
+<h3 id="52-hub-and-index-pointers-the-surveys-and-roadmaps">5.2 Hub and index pointers: the surveys and roadmaps</h3>
+<p>These are the explicit indexes: <code>why-biquaternions</code> (2), <code>the-quantisation-hub</code> (155), <code>the-sector-hub</code> (271), <code>the-relativistic-quantum-space-as-a-fluid</code> (182), <code>five-steps-from-a-lagrangian-to-fluid-equations</code> (191), and the category openers. Their forward links are their function. The menu comments say so: the Quantisation Hub is “the index of that distribution” and “every link below leads to the section that owns the article” (<code>the-quantisation-hub...md:7–9</code>); the Sector Hub is “one page for the question a sector reader asks” (<code>the-sector-hub...md:5–7</code>). Removing these links would break the navigation, not improve the order.</p>
+<p>Two of these are orphans in the body graph. The Data Boundary (245), the Quantisation Hub (155), and the Sector Hub (271) have zero incoming body-layer links. They point forward but nothing points to them. They are entry points, not part of the chain. That is acceptable for an index. It is a problem for the Data Boundary, which is a rule that the section’s articles should cite.</p>
+<h3 id="53-general-to-instance-pointers-the-fluid-block">5.3 General-to-instance pointers: the Fluid block</h3>
+<p>The Fluid category states a general chain and points to the per-carrier instances in Relativistic Quantum Theory. The menu’s own design note says the chain is stated at no particular group so that it specialises to the SU(4) instance (<code>physics.md:554–556</code>), and the audit of the Action category records the same “stated once, instanced per band” contract. The Fluid → RQT links are the largest block (73), but they are the intended architecture, not an accident. The reader jumps because the general article comes first. The fix is not to delete the links; it is to decide whether you want the general article first. If you do, a roadmap table at 182 is better than twenty scattered links. If you do not, the instances must come before the general chain, which is a category reorder.</p>
+<h3 id="54-load-bearing-deferrals">5.4 Load-bearing deferrals</h3>
+<p>A load-bearing deferral is a specific article that uses a definition, a theorem, or a result that exists only in a later article. These are the real defects. They are not bibliography, not an index, and not a general-to-instance pointer. The next section lists the five clusters.</p>
+<h2 id="6-the-five-load-bearing-deferrals">6. The Five Load-Bearing Deferrals</h2>
+<h3 id="61-the-entropy-functional-is-defined-after-the-second-law-that-uses-it">6.1 The entropy functional is defined after the second law that uses it</h3>
+<p><code>The Local Entropy Current</code> (206) states the second law of the fluid. It says, in its own words, that the entropy functional and its monotonicity belong to <code>Coarse-Graining and the Biquaternion Entropy Functional</code> (706):</p>
+<ul>
+<li><code>the-local-entropy-current.md:21</code>: “It does not absorb the entropy functional... That article owns the functional... its dependence on the biquaternion norm alone, its vanishing on the zero-divisor cone, and its monotonicity under coarse-graining. This article cites all of that and repeats none of it.”</li>
+<li><code>the-local-entropy-current.md:97</code>: the state’s monotonicity is 706’s “and is cited here rather than re-derived.”</li>
+<li><code>the-local-entropy-current.md:168</code>: “The functional and its monotonicity belong to [706].”</li>
+<li><code>the-local-entropy-current.md:206</code>: “The functional of [706] is cited and not duplicated.”</li>
+</ul>
+<p>This is not a bibliography entry. It is the foundation of the second law, and it sits 500 articles later. <code>The Two-Fluid Model</code> (212) then cites both 206 and 706 (<code>the-two-fluid-model-in-biquaternionic-form.md:23, 86, 96</code>), so the consumer is at 212 and one of its producers is at 706.</p>
+<p><strong>Verdict:</strong> move 706 before 206, or split the definitional sections (<code>§The State Space</code>, <code>§The Entropy Functional</code>, <code>§Monotonicity</code>) into an earlier article. The physical content is not in question; the proof order is.</p>
+<h3 id="62-the-quantum-fluid-instances-are-used-before-they-are-defined">6.2 The quantum-fluid instances are used before they are defined</h3>
+<p><code>The Two-Fluid Model</code> (212) says what it cites and does not repeat: the stress-energy element is 523’s, the entropy current is 206’s, the equation of state is 205’s (<code>the-two-fluid-model-in-biquaternionic-form.md:23</code>). <code>The Thermodynamics of a Quantum Fluid</code> (213) says the three articles that “no longer open it” are 523, 450, and 524 (<code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.md:35</code>). The Fluid articles 201–213 are therefore consumers of 450, 523, and 524, all of which sit in Relativistic Quantum Theory.</p>
+<p>The same pattern appears earlier. <code>The Current Algebra</code> (183) says the phase-as-coordinate statement “is developed for the scalar case in” 524 (<code>the-current-algebra.md:65</code>). <code>The Relativistic Quantum Space as a Fluid</code> (182) points to 519, 523, 524, 449, 450, 451, 452, 405, 406 for the instances (<code>the-relativistic-quantum-space-as-a-fluid.md:15–16</code>).</p>
+<p><strong>Verdict:</strong> move the instance block (450, 519, 523, 524, 510, 434, 471) before the Fluid thermodynamics articles that consume them, or add a “quantum-fluid instances” subsection at the start of the Fluid thermodynamics, before 201, that owns the definitions. The current order is general → consumer → instance.</p>
+<h3 id="63-the-general-fluid-machinery-is-in-the-late-non-relativistic-limit">6.3 The general fluid machinery is in the late non-relativistic limit</h3>
+<p><code>Criterion for a Fluid Equation</code> (190) is a general method article. It links to <code>The Euler and Continuity Equations</code> (688), <code>The Equation of State and the Barotropic Condition</code> (691), <code>The Reverse Madelung Map</code> (692), <code>The Fluid–Wave Correspondence</code> (693), <code>The Clebsch Potentials</code> (694), and <code>Viscosity and the Rayleigh Function</code> (690). These six are in the Non-Relativistic Non-Quantum category at 688–694. The links are 5–6 per target and come from 190, 192, 193, 208, 211, and 214.</p>
+<p>If 688–694 are strictly the classical limit, the forward pointer is legitimate: the general relativistic article points to its limit. But 190 is the criterion for a fluid equation, not a limit article. The audit cannot tell from links alone whether 190’s criterion is independent of 688–694. If it is independent, label the six as “the classical limit”. If it is not, the definitions must move into Fluid.</p>
+<p><strong>Verdict:</strong> check 190’s derivation. If it uses the Euler/continuity or Clebsch results, move those sections into Fluid. If not, add a scope sentence that says the six are the classical limit, and keep the links as limit pointers.</p>
+<h3 id="64-the-compact-sector-ceiling-is-in-the-strong-force-category">6.4 The compact-sector ceiling is in the Strong Force category</h3>
+<p><code>The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$</code> (281) proves that the algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$. It is a theorem about $\mathbb{B}$, not about QCD. Its own introduction says it is the companion of <code>Non-Abelian Connections</code> (152) and <code>Instantons and Solitons</code> (219), and that the result is “a result, not a failure” (<code>the-compact-sector...md:3–16</code>). It sits in Strong Force / Generalities at 281.</p>
+<p>It is cited from 11 body-layer links in 8 source articles: 2, 152, 260, 262, 264, 265, 269, 271. The earliest body source is <code>why-biquaternions</code> (2), which uses it for the programme’s ceiling. The early obstruction catalogue <code>What the Biquaternion Algebra Cannot Do</code> (12) names the ceiling in its no-go set but does not link it: “the ceiling is the result of <em>The Compact Sector...</em>” (<code>what-the-biquaternion-algebra-cannot-do...md:400</code>). The catalogue is at 12; the proof is at 281.</p>
+<p>This is the clearest “should be before” case in the corpus. The ceiling is a foundational limit. The early catalogue’s formal entries O2 and O13 are proved where they stand, but the dedicated compact-sector theorem is the proof a reader needs for the no-go reading, and it is 269 articles later. A reader of the Limits section cannot verify that reading without jumping to Strong Force; a reader of Strong Force may think the group is derived until 281.</p>
+<p><strong>Verdict:</strong> move 281 to <code>Limits, Cost &amp; Empirical Status</code>, after the obstruction catalogue (12), and link it from the catalogue’s no-go entry. Alternatively, move it to Action after <code>Non-Abelian Connections</code> (152), but the Limits placement is better because the result is a limit, not a gauge construction.</p>
+<h3 id="65-the-standard-model-derivation-is-split-across-symmetry-breaking-and-electroweak">6.5 The Standard Model derivation is split across Symmetry Breaking and Electroweak</h3>
+<p>The Symmetry Breaking category is “From the SU(4) Model to the Standard Model.” It states the breaking and the SM content. But the low-energy electroweak working-out is in the Electroweak category:</p>
+<ul>
+<li><code>The Weak Sector Below $M_C$</code> (318) is “the weak half of Classification of the Bosons, cut out so that the grid article stays about the grid” (<code>the-weak-sector...md:3–16</code>). It receives 10 body-layer links from 7 sources, earliest 229.</li>
+<li><code>Electroweak Symmetry Breaking</code> (338) is “the full working-out that The Higgs Mechanism names as its own gap” (<code>electroweak-symmetry-breaking...md:3–14</code>). It receives 13 body-layer links from 10 sources, earliest 245.</li>
+<li>The Symmetry articles say “the computation is the subject of” 338 (<code>the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md:179</code>, again at <code>:258</code>) and “their masses are computed below the transition, in” 318 (<code>the-mass-matrix-of-the-fifteen-connections.md:11</code>). The scalar-content article says the field “that waits for the electroweak scale” is 318 (<code>the-scalar-content-one-matrix-and-ten-survivors.md:24</code>).</li>
+</ul>
+<p>The 57 links from Symmetry Breaking to Electroweak are the second-largest category-skipping flow. They are not a bibliography. They are the SM derivation’s missing half.</p>
+<p><strong>Verdict:</strong> move 318 into Symmetry Breaking after the boson classification (229) and before the scalar content (249); move 338 after 318 and before the Standard Model content (259). Alternatively, move the Electroweak category before Strong Force and before the “Standard Model content” articles. The first is surgical; the second changes the category order. The audit cannot tell whether the split is a presentation choice or a circular dependency. If the EW articles are independent transcriptions, the claim is merely split. If they use the SU(4) breaking as an input, the argument is circular. A referee pass should read the dependency direction, not just the links.</p>
+<h2 id="7-what-should-move">7. What Should Move</h2>
+<p>The table ranks the moves by the number of forward links they remove and by the conceptual payoff. “Body in” is the total number of body-layer links from earlier articles; “sources” is the number of distinct earlier source articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>target</th>
+<th>now</th>
+<th>proposed position</th>
+<th style="text-align: right;">body in</th>
+<th style="text-align: right;">sources</th>
+<th>evidence</th>
+<th style="text-align: right;">inbound forward links resolved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Compact Sector Is $\mathfrak{u}(2)$</td>
+<td>281, Strong Force</td>
+<td>Limits, after 12, or Action after 152</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">8</td>
+<td>catalogue line 400; intro 3–16</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td>Coarse-Graining and the Entropy Functional</td>
+<td>706, NRNQ</td>
+<td>before 206, ideally Relativity informational after 125</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td>206:21, 97, 168, 206</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td>The Weak Sector Below $M_C$</td>
+<td>318, Electroweak</td>
+<td>Symmetry Breaking, after 229, before 249</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7</td>
+<td>318:3–16; 249:24; 255:11</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>Electroweak Symmetry Breaking</td>
+<td>338, Electroweak</td>
+<td>Symmetry Breaking, after 318, before 259; or Electroweak before Strong</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">10</td>
+<td>338:3–14; 259:179, 258</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>The Quantum Stress Tensor</td>
+<td>523, RQT</td>
+<td>Fluid, before 212/213</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">14</td>
+<td>212:23; 213:35</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td>The Nodal Set and Quantized Circulation</td>
+<td>524, RQT</td>
+<td>Fluid, before 212/213</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">15</td>
+<td>213:35; 183:65</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td>The Spin-Half Fluid</td>
+<td>450, RQT</td>
+<td>Fluid, before 212/213</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">13</td>
+<td>212:23; 213:35</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr>
+<td>The Spin-Zero Fluid</td>
+<td>519, RQT</td>
+<td>Fluid, before 212/213</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">7</td>
+<td>182:15–16; 213:35</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td>The KG Polar Equation</td>
+<td>510, RQT</td>
+<td>Fluid, before 206/212</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td>190, 205, 206, 212</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>The Dirac Polar Equation</td>
+<td>434, RQT</td>
+<td>Fluid, before 207/211</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td>183, 185, 207, 211</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>The Gordon Decomposition</td>
+<td>471, RQT</td>
+<td>Fluid, before 212</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td>212:23</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>Euler and Continuity</td>
+<td>688, NRNQ</td>
+<td>Fluid, or label as the classical limit</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td>190, 192, 193</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Equation of State and Barotropic</td>
+<td>691, NRNQ</td>
+<td>Fluid, or label as the classical limit</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td>190</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Reverse Madelung Map</td>
+<td>692, NRNQ</td>
+<td>Fluid, or label as the classical limit</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td>190</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>Fluid–Wave Correspondence</td>
+<td>693, NRNQ</td>
+<td>Fluid, or label as the classical limit</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td>190</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Viscosity and Rayleigh</td>
+<td>690, NRNQ</td>
+<td>Fluid, or label as the classical limit</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td>190, 208</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>The Data Boundary register</td>
+<td>245, Symmetry</td>
+<td>keep the rule; split the 16-row register to an appendix</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td>245:1–12, 38–62</td>
+<td style="text-align: right;">19</td>
+</tr>
+</tbody>
+</table></div>
+<p>The counts overlap: moving 523, 524, and 450 removes links from several of the same sources. The table is a priority list, not a sum.</p>
+<p><strong>What not to move.</strong> <code>The Carrier Roster</code> (133) is a deliberate division-of-labour case. Its introduction says the definitions are Relativity’s, the determination of spins is RQT’s, and “the division of labour is deliberate” (<code>the-carrier-roster...md:11</code>). The cross-category forward links to the determination (378) and the tensor-product closure (542) are not a defect; they are the roster’s scope boundary. The adjacent link to 134 is same-category. Leave it, or label the two long links as “determination” rather than “see”.</p>
+<h2 id="8-the-citation-cycle">8. The Citation Cycle</h2>
+<p>The body-layer graph is not a DAG. A Tarjan pass finds 10 strongly connected components with more than one article. The largest contains <strong>151 articles</strong>, spans indices 2–742, and includes 12 of the 14 categories. It contains 438 of the 781 body-layer forward links (56%). The other nine components are small: 5 articles at 550–556, 4 at 241–244, and pairs at 195/204, 222/223, 321/325, 415/416, 461/462, 533/534, 535/536.</p>
+<p>The giant component includes the core: <code>why-biquaternions</code> (2), the Action general articles (132–152), the Fluid general and thermodynamic articles (182–213), the SU(4) model (216), the Symmetry articles (245–271), the compact sector (281), the electroweak articles (318, 338), the RQT fluid instances (450, 523, 524), and the late fluid machinery (694). Removing any single hub does not break it. Removing <code>why-biquaternions</code> leaves 150 articles; removing the Data Boundary leaves 151; removing the compact sector leaves 150.</p>
+<p>Two concrete cycles:</p>
+<ul>
+<li><code>The Spin-Half Fluid</code> (450) → <code>The Nodal Set</code> (524) → <code>The Domain of the Polar Decomposition</code> (187) → <code>Why Biquaternions?</code> (2) → <code>The Spin-Half Fluid</code> (450).</li>
+<li><code>The Compact Sector</code> (281) → <code>The SU(4) Model</code> (216) → <code>The Scalar Content</code> (249) → <code>The Weak Sector Below $M_C$</code> (318) → <code>The Weinberg Angle</code> (309) → <code>Electroweak Symmetry Breaking</code> (338) → <code>The Standard Model Lagrangian</code> (260) → <code>Stress–Energy Conservation</code> (146) → <code>The Rung Dictionary</code> (141) → <code>Five Steps</code> (191) → <code>The Domain</code> (187) → <code>Why Biquaternions?</code> (2) → <code>The Compact Sector</code> (281).</li>
+</ul>
+<p>These are citation cycles, not proof cycles. A “see also” back-link is enough to close one. The audit cannot certify that any cycle is logically circular. It can say that the corpus has no linear topological order at the body-link level, and that a reader following links can loop.</p>
+<p><strong>Consequence for the “remove all forward links” goal.</strong> You cannot remove all forward links by reordering. Inside the 151-article component, every order has forward edges. You must either cut links or accept that the component is a web. The menu order is one possible spine through the web; the body links are annotations on it.</p>
+<h2 id="9-what-this-says-about-the-theory">9. What This Says About the Theory</h2>
+<p>The audit does not re-derive the physics and does not certify correctness. It reads the link structure. Four conclusions follow.</p>
+<h3 id="91-the-order-is-synthesis-first-not-derivation-first">9.1 The order is synthesis-first, not derivation-first</h3>
+<p>The category balance shows the early categories are net senders and the detailed categories are net receivers. The corpus states the general result first and the detailed support later. This is a legitimate top-down pedagogy, but it has a cost: at the point where a claim is made, the reader cannot verify it. The cost is visible in the five deferrals above.</p>
+<h3 id="92-the-su3-ceiling-is-a-boundary-not-a-defect-but-it-is-buried">9.2 The SU(3) ceiling is a boundary, not a defect, but it is buried</h3>
+<p>The algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$. That is a precise, honest result. The presentation risk is that the proof sits in the Strong Force category, while the early programme uses it and the obstruction catalogue names it. A reader may think the strong group is derived until article 281. The fix is a move, not a rewrite. This is the single most important theory-presentation issue the audit found.</p>
+<h3 id="93-the-standard-model-derivation-is-not-self-contained-at-the-point-of-claim">9.3 The Standard Model derivation is not self-contained at the point of claim</h3>
+<p>The Symmetry Breaking category says the SU(4) model returns the Standard Model. The electroweak content that makes the claim concrete — the weak sector, EWSB, the Weinberg angle, the W/Z masses, the anomalies, the CKM/PMNS matrices — is in the Electroweak category. The 57 links are the evidence. The audit cannot tell whether this is a split presentation or a circular argument. The check is a referee pass on the dependency direction: does any EW article use the SU(4) breaking as an input? If yes, the “derivation” is circular. If no, it is merely split. The audit flags the place; it does not settle the question.</p>
+<h3 id="94-the-fluid-thermodynamics-is-a-set-of-modules-with-scattered-owners">9.4 The fluid thermodynamics is a set of modules with scattered owners</h3>
+<p>The Fluid thermodynamics articles are written as a modular chain: 206 owns the entropy current, 523 owns the stress tensor, 205 owns the equation of state, 706 owns the entropy functional, 450/524 own the spinor and nodal instances. Each article says what it “cites and does not repeat.” This is good modular writing. But the modules are not in dependency order. The consumer (212) is at 212; one producer (706) is at 706. The second law is stated before its functional. This is a proof-order inversion, not a physics error.</p>
+<h3 id="95-no-contradiction-was-found-in-the-links-themselves">9.5 No contradiction was found in the links themselves</h3>
+<p>The audit found no physics-internal link that points to a missing physics article, no unresolved physics target, and no self-contradictory pair. The 151-article component is a citation web, not a contradiction. The defects are ordering defects. That is good news: they are fixable by moving articles and changing link policy, not by redoing the physics.</p>
+<h2 id="10-recommendations">10. Recommendations</h2>
+<blockquote>
+<p><strong>The ordered execution plan is §12.</strong> This section gives the reasons; §12 gives the sequence, the exact menu edits, and the verification log. Sections 2–9 describe the baseline <code>6ee5793e6</code>; they are not rewritten after each move, and §12 records the deltas.</p>
+</blockquote>
+<h3 id="101-choose-the-reading-model-first">10.1 Choose the reading model first</h3>
+<p>The corpus cannot be both a strict linear treatise and a densely cross-linked web. The current menu is a linear order, but the body links are a web. The first decision is which one is primary.</p>
+<ul>
+<li><strong>Linear treatise.</strong> Adopt the rule “no body-layer link that skips a category.” Remove or plain-text the 260 category-skipping links. Keep same-category forward links and adjacent-category links. This is the least destructive way to make the menu order authoritative.</li>
+<li><strong>Reference web.</strong> Keep the links, but label them. Add a “forward” marker or a “see later” phrase in the prose, or a CSS class on the link. The reader then knows the jump is intentional. The audit’s counts become descriptive, not defects.</li>
+<li><strong>Hybrid (recommended).</strong> Keep Further Reading and the explicit indexes; forbid category-skipping body links in ordinary articles; allow them only in hubs and in a “roadmap” block at the start of a category.</li>
+</ul>
+<h3 id="102-apply-the-no-skip-rule">10.2 Apply the no-skip rule</h3>
+<p>The rule is mechanical and checkable:</p>
+<blockquote>
+<p>A body-layer link may point forward only to an article in the same category or in the immediately following category. A link that skips a category must be in Further Reading, in an explicit hub, or in a roadmap table.</p>
+</blockquote>
+<p>The baseline violation list is the 260 rows in <code>audit-outbound-edges.tsv</code> with <code>category_gap &gt;= 2</code>. The 79 source articles are the edit list. The top 10 sources account for 111 of the 260 (43%); the top 30 account for 196 (75%). Start with the largest sources: 2 (20 skips), 182 (19), 266 (12), 190 (11), 271 (11), 259 (9), 245 (8), 183 (7), 207 (7), 212 (7), 213 (7). The tail is long enough that the rule is easier to enforce than to fix article by article.</p>
+<h3 id="103-move-the-five-foundations">10.3 Move the five foundations</h3>
+<p>Do these in order. Each is a menu reorder, not an article rewrite, and each requires approval under the plan’s “do not modify the plan without approval” rule.</p>
+<ol>
+<li><strong>281 → Limits, after 12.</strong> Link it from the catalogue’s no-go entry at line 400. This makes the SU(3) ceiling visible before the strong-force category and removes 11 forward links.</li>
+<li><strong>706 → before 206.</strong> Put the entropy functional in the informational sector or at the start of the Fluid thermodynamics. This makes the second law verifiable at 206 and removes 9 forward links.</li>
+<li><strong>318 and 338 → Symmetry Breaking.</strong> Put 318 after the boson classification (229) and before the scalar content (249); put 338 after 318 and before the Standard Model content (259). Or move Electroweak before Strong Force. This makes the SM derivation self-contained and removes 23 forward links.</li>
+<li><strong>450, 519, 523, 524, 510, 434, 471 → before the Fluid articles that consume them.</strong> The cleanest version is a “quantum-fluid instances” subsection at the start of the Fluid thermodynamics, before 201, with the per-carrier definitions. This removes roughly 50–60 forward links, depending on overlap.</li>
+<li><strong>688–694 → Fluid, or label as the classical limit.</strong> Check 190’s derivation first. If it uses them, move them; if not, add a scope sentence and keep the links as limit pointers.</li>
+</ol>
+<h3 id="104-convert-optional-pointers-to-plain-text">10.4 Convert optional pointers to plain text</h3>
+<p>Not every forward link is load-bearing. Many are “the case is worked in X” or “the companion article is Y”. Replace the Markdown link with the title in plain text, or with an italic title and no anchor. The prose still reads; the reader no longer jumps. This is the cheapest way to reduce the clickable forward graph without touching the menu.</p>
+<p>Do not do this to a link that carries a definition. The sentence “the stress-energy element is [523]’s” is load-bearing; removing the link without moving 523 leaves the reader stranded. The audit’s <code>context_before</code> column is there to help decide.</p>
+<h3 id="105-keep-the-bibliography-and-the-indexes">10.5 Keep the bibliography and the indexes</h3>
+<p>Further Reading is 1,405 forward links. It is a bibliography. Removing it would be a loss, not a fix. If the concern is the built page’s link graph, split the bibliography into “Before” and “After” or “See also”, and let the reader see the direction. The Quantisation Hub, Sector Hub, and category introductions are indexes; keep them, but add a back-link from the section’s first article so they are not orphans.</p>
+<h3 id="106-split-the-data-boundary">10.6 Split the Data Boundary</h3>
+<p>The Data Boundary (245) is a rule for the section: it stands first by design (<code>physics.md:1337–1340</code>). Its 16-row data register is corpus-wide: it lists articles in Strong, Electroweak, RQT, and elsewhere. That is why it has 19 forward links and zero incoming links. Do not move the rule. Split the article: keep the three-category test and the five tests at 245, move the 16-row register to an appendix or to the Limits section, and link the register from the section’s articles. The rule stays where the menu says it belongs; the register stops being an orphan.</p>
+<h3 id="107-add-a-guardrail-proposal-only">10.7 Add a guardrail (proposal only)</h3>
+<p>A build-time check can enforce the no-skip rule without changing any article. The check reads the same parse as this audit and fails if a body-layer link has <code>category_gap &gt;= 2</code> and is not in an allowlist of hubs. The allowlist would contain 2, 155, 182, 191, 245, 271, and the category openers. The baseline is the TSV. This is a build-file change, so it needs approval; it is listed here as a proposal, not applied.</p>
+<h2 id="11-method-and-limits">11. Method and Limits</h2>
+<p><strong>Parse.</strong> Every <code>.md</code> in <code>articles_physics/</code> was read. Links of the form <code>](target.html)</code> were extracted with their section headings. Targets were resolved against the 755 slugs. The 778 maths links, 18 internal-other links, and 1 other-relative link were counted but excluded from the forward test.</p>
+<p><strong>Order.</strong> The index of an article is its position in <code>physics.md</code>. “Forward” means target index greater than source index. “Category gap” is the difference between the target’s H2 position and the source’s H2 position in the 14-category order. A gap of 0 is same-category; 1 is the next category; 2 or more skips at least one category.</p>
+<p><strong>Section classes.</strong> Further Reading is detected by the heading. Summary and Summary of Notation are separate. Source table is a table keyed by “source”. Everything else is body. The body-layer count (781) is all non-Further-Reading links; the body-proper count (763) excludes summary and source tables.</p>
+<p><strong>SCC.</strong> Tarjan’s algorithm on the body-layer graph, 755 nodes and 1,169 distinct edges (1,537 links with duplicate source→target pairs collapsed). The 151-article component is the largest; the graph has 591 components in total. The condensation has 329 edges, of which 134 point backward in menu order. The SCC is a citation graph, not a proof graph: a “see also” back-link is enough to join two articles.</p>
+<p><strong>Context.</strong> The <code>context_before</code> column in the TSV is the 220 characters before the link. The audit used it to distinguish “cites and does not repeat” from “see also”. It did not classify all 781 links semantically; the five deferrals are the ones where the context states the dependency explicitly.</p>
+<p><strong>What the audit does not do.</strong> It does not check the physics, the numerical correctness, or the consistency of the equations. It does not read the maths corpus’s order. It does not treat every forward link as a defect. It does not propose article rewrites beyond the scope sentences and the moves. It does not modify the plan.</p>
+<p><strong>Reproducibility.</strong> Baseline <code>6ee5793e6</code>. The parse and analysis scripts were transient in <code>/tmp/audit_out/</code> and are not part of the repository. The TSV is the durable output.</p>
+<h2 id="12-the-migration-order-of-operations-and-log">12. The Migration: Order of Operations and Log</h2>
+<h3 id="120-status-and-conventions">12.0 Status and conventions</h3>
+<p><em>Reading model chosen:</em> <strong>linear with exemptions.</strong> The menu order is the reading order; a body-layer forward link is allowed inside a category and into the next one; anything longer must be in Further Reading, in an allowlisted index, or written as plain text. <strong>Two exemptions are structural and are named here rather than discovered later.</strong> The first is the next-category window above. The second is the <em>directory article</em>: an article whose declared job is to enumerate a block — a framework, a criterion, a hub, a map — may link forward into the block it enumerates, because a directory that could not point would have no content. Thirteen directories carry 52% of the residual skips (§12.6), and the test that admits one is stated there: it points, and no skipping link points at it.</p>
+<p><em>Index convention.</em> Indices in this document are 0-based positions in the menu (the <code>data.json</code> convention); in §12 they are baseline indices unless the sentence says “now at”. The menu position is the index plus one, so article “206” is the 207th <code>&lt;a&gt;</code> in <code>physics.md</code>. The menu is edited by moving the anchor and its <code>&lt;!-- --&gt;</code> comment block as one paragraph; the corpus separates paragraphs by blank lines.</p>
+<p><em>Baseline of the log.</em> <code>6ee5793e6</code>. Sections 2–9 above are the baseline snapshot. The counts in this section come from a re-parse of <code>articles_physics/*.md</code> against the menu, and reproduce the baseline to within one link (the audit's <code>data.json</code> parse and this one differ on a handful of links with titles or anchors).</p>
+<h3 id="121-the-order-of-operations">12.1 The order of operations</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>step</th>
+<th>why here</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Decide the model: linear-with-exemptions or web-with-labels</td>
+<td>everything downstream depends on it</td>
+<td><strong>done</strong> — linear with exemptions</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>Package 2: the three free moves (706 before 206; 281 after the catalogue; 434/471 placed with the instances)</td>
+<td>mechanical, reversible, no category surgery</td>
+<td><strong>done</strong> (two menu moves; the third is folded into Package 3, see below)</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>Package 4: split 259–271 out of Symmetry Breaking into “The Standard Model Assembly”, placed after Electroweak and before Electromagnetism</td>
+<td>largest single gain; 8 articles to re-point; subsumes the 318/338 problem</td>
+<td><strong>done</strong> for the structure (13 articles, 2 new <code>###</code>, new <code>##</code> comment, 2 rewritten comments); 14 body pointers in 9 articles left as the re-point backlog</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td>Package 3: the quantum-fluid instances block (450, 510, 519, 523, 524, 434, 471) into Fluid, after 191</td>
+<td>depends on 706 having moved first</td>
+<td><strong>held</strong> — the seven articles are members of the RQT spin matrices; see §12.7, item 3</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td>Package 5: The Data Boundary — moved whole into the Assembly head, not split (§12.5)</td>
+<td>it is the only zero-inbound rule in the corpus, so the move costs nothing</td>
+<td><strong>done</strong> (717/224/251 → 703/213/240)</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td>Package 1: the no-skip rule, its exemption class, and the residual triage</td>
+<td>last, because the earlier steps delete most of its work</td>
+<td><strong>partly</strong> — rule and exemption class stated (§12.0, §12.6); 102 residual links classified, not rewritten</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td>Verify: recompute the three numbers</td>
+<td>closing gate</td>
+<td><strong>done</strong> — 703 / 213 / 240 after Package 5; the “0 skips” half of this step is withdrawn in §12.7</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="122-package-2-applied">12.2 Package 2, applied</h3>
+<p>Five edits, all reversible, all in <code>physics.md</code> except two one-clause article fixes.</p>
+<ol>
+<li><strong>The compact-sector theorem (281) moved from Strong Force / Generalities to the Limits section, immediately after the obstruction catalogue (12).</strong> The article is now at index 13, not 281. The <code>### Limits, Cost &amp; Empirical Status</code> section comment does not exist, so no comment was rewritten; the Strong Force category comment still says the sector states the ceiling, which remains true because <em>Quantum Chromodynamics as the Residual of SU(4): The SU(3) Wall, Restated</em> restates it in place.</li>
+<li><strong>The entropy functional (706) moved from Non-Relativistic Non-Quantum / Focus on informational aspects to Fluid / The State and Its Functionals, immediately after <em>The Free-Energy Functional at Finite Temperature</em>.</strong> It is now at index 197. The subsection comment gained a clause naming it and saying it is the second law that <em>The Local Entropy Current</em> cites rather than re-derives.</li>
+<li><strong>The catalogue now links the ceiling.</strong> <code>what-the-biquaternion-algebra-cannot-do…md:400</code> wrote the theorem’s title in italics with no anchor; the no-go entry now links it. With the theorem at 13 and the catalogue at 12, the link is backward.</li>
+<li><strong>The entropy article now names its category.</strong> <code>coarse-graining…md:23</code> said the von Neumann and POVM material belongs to “the informational subcategory of the sibling quantum category”. That phrase was true of the article’s old home in Non-Relativistic Non-Quantum; in Fluid there is no sibling quantum category, so it now reads “the informational subcategory of <em>Relativistic Quantum Theory</em>”.</li>
+<li><strong>The third “free” move was not performed.</strong> 434, 471 and the five instance articles are already ordered 434 &lt; 450 &lt; 471 &lt; 510 &lt; 519 &lt; 523 &lt; 524, so “next to the instances” is a no-op on its own; it only has content together with the block move of Package 3. Performing it now would have left the instances split across two categories while the machinery that consumes them stayed at 201–213.</li>
+</ol>
+<p><strong>The one accepted regression.</strong> The compact-sector article cites the SU(4) model. With the theorem at 13 and the model at 218, that citation is now a forward link and a category skip. This is the predicted cost of the move (as proposed: 281 cites only 216, so it adds one forward link); the alternative is to leave the ceiling at 281, which costs ten forward links and leaves the programme citing a theorem the reader cannot reach. The net is 17 resolved against 1 created. If the single link is unacceptable, it can be plain-texted; the sentence at <code>the-compact-sector…md:205</code> names the article, so the prose survives without the anchor.</p>
+<p><strong>A constraint discovered, and now a rule for the remaining steps.</strong> 133 article files use positional language (“the preceding article”, “the next article in the category”). The sharpest instance is <code>the-equation-of-state-in-biquaternion-form.md:164</code>: “the next article in the category, [The Local Entropy Current]”. That is why 706 was inserted upstream, after the free-energy functional, and not between 205 and 206. <strong>Rule: never insert an article between two articles joined by a “next/preceding article” sentence.</strong> Any further move must be checked against the positional sentences of its new neighbours; a grep for <code>next article|preceding article|previous article|following article</code> in the two neighbours is the check.</p>
+<h3 id="123-package-4-applied">12.3 Package 4, applied</h3>
+<p>The split was sitting in the menu already: the block 259–271 is exactly two <code>####</code> subsections, <em>The Standard Model, Audited</em> (259–267) and <em>What the Sectors Inherit</em> (268–271), both under <code>### From the SU(4) Model to the Standard Model</code>. They were cut whole and re-headlined as <code>###</code> under a new <code>##</code> category:</p>
+<pre><code>## Biquaternion Universe The Standard Model Assembly   (after Electroweak, before Electromagnetism)
+  ### The Standard Model, Audited      9 articles   (now 330–338)
+  ### What the Sectors Inherit         4 articles   (now 339–342)
+</code></pre>
+<p>Edits: one new <code>##</code> block with a comment in the menu’s style; two <code>####</code> promoted to <code>###</code>; the Symmetry Breaking <code>##</code> comment rewritten (it enumerated the audit and the inheritance, and its “in seven steps” count no longer held); the <code>### From the SU(4) Model to the Standard Model</code> comment rewritten (“one transition at M_C and one audit” → “one transition at M_C”, with a pointer to the Assembly). The Symmetry category now ends at the heavy sector and closes on the force content, the leptoquark sector and the Goldstone mode, all of which stayed.</p>
+<p><strong>Residual: 14 body pointers from 9 articles now cross into the Assembly from three or more categories back.</strong> They are the re-point backlog, not a defect of the split:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>source</th>
+<th style="text-align: right;">idx</th>
+<th style="text-align: right;">links</th>
+<th>target</th>
+<th>where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reading-an-extra-component (Gürsey)</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">1</td>
+<td>low-energy phase</td>
+<td>L93</td>
+</tr>
+<tr>
+<td>the-excitation-ladder-theory-of-flavour</td>
+<td style="text-align: right;">225</td>
+<td style="text-align: right;">1</td>
+<td>number of generations</td>
+<td>L50</td>
+</tr>
+<tr>
+<td>classification-of-the-bosons-in-the-su4-model</td>
+<td style="text-align: right;">231</td>
+<td style="text-align: right;">1</td>
+<td>algebras of the two sectors</td>
+<td>L243</td>
+</tr>
+<tr>
+<td>the-15-axf-matrices…</td>
+<td style="text-align: right;">233</td>
+<td style="text-align: right;">1</td>
+<td>quantum numbers below the breaking</td>
+<td>L465</td>
+</tr>
+<tr>
+<td>the-data-boundary</td>
+<td style="text-align: right;">247</td>
+<td style="text-align: right;">4</td>
+<td>register rows</td>
+<td>L48, 49, 57, 58</td>
+</tr>
+<tr>
+<td>charge-quantisation-from-the-fourth-line</td>
+<td style="text-align: right;">253</td>
+<td style="text-align: right;">1</td>
+<td>quantum numbers below the breaking</td>
+<td>L124</td>
+</tr>
+<tr>
+<td>the-threshold-scales</td>
+<td style="text-align: right;">259</td>
+<td style="text-align: right;">1</td>
+<td>hierarchy problem</td>
+<td>L90</td>
+</tr>
+<tr>
+<td>the-heavy-sector-below-its-threshold</td>
+<td style="text-align: right;">260</td>
+<td style="text-align: right;">2</td>
+<td>connection below the breaking</td>
+<td>L23, 80</td>
+</tr>
+<tr>
+<td>the-lagrangian-and-quantum-chromodynamics</td>
+<td style="text-align: right;">275</td>
+<td style="text-align: right;">2</td>
+<td>content; assembled Lagrangian</td>
+<td>L15, 29</td>
+</tr>
+</tbody>
+</table></div>
+<p>Sixteen further body links into the Assembly come from Electroweak articles; those are adjacent-category and allowed. The eight intra-Assembly forward links are the hub structure and are allowlisted in Package 1. The four Data Boundary rows are the case for Package 5: the register belongs with the articles whose values it lists, which is what the split of 245 does. The remaining ten are one-sentence pointers and can be plain-texted in italics, the corpus’s convention for an unlinked mention.</p>
+<h3 id="124-verification-after-packages-2-and-4">12.4 Verification after Packages 2 and 4</h3>
+<p>Like-for-like, same parser, old menu against new menu, with the article files as they now stand:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>measure</th>
+<th style="text-align: right;">baseline</th>
+<th style="text-align: right;">after Package 2</th>
+<th style="text-align: right;">after Package 4</th>
+<th style="text-align: right;">total delta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>body-layer forward links</td>
+<td style="text-align: right;">781</td>
+<td style="text-align: right;">765</td>
+<td style="text-align: right;">717</td>
+<td style="text-align: right;">−64</td>
+</tr>
+<tr>
+<td>category-skipping body links (gap ≥ 2)</td>
+<td style="text-align: right;">261</td>
+<td style="text-align: right;">252</td>
+<td style="text-align: right;">224</td>
+<td style="text-align: right;">−37</td>
+</tr>
+<tr>
+<td>long jumps (menu gap ≥ 50)</td>
+<td style="text-align: right;">293</td>
+<td style="text-align: right;">281</td>
+<td style="text-align: right;">251</td>
+<td style="text-align: right;">−42</td>
+</tr>
+<tr>
+<td>distinct body edges</td>
+<td style="text-align: right;">1,165</td>
+<td style="text-align: right;">1,165</td>
+<td style="text-align: right;">1,165</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>forward edges</td>
+<td style="text-align: right;">615</td>
+<td style="text-align: right;">605</td>
+<td style="text-align: right;">568</td>
+<td style="text-align: right;">−47</td>
+</tr>
+<tr>
+<td>articles</td>
+<td style="text-align: right;">755</td>
+<td style="text-align: right;">755</td>
+<td style="text-align: right;">755</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>SCCs</td>
+<td style="text-align: right;">590</td>
+<td style="text-align: right;">590</td>
+<td style="text-align: right;">590</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>giant SCC</td>
+<td style="text-align: right;">152</td>
+<td style="text-align: right;">152</td>
+<td style="text-align: right;">152</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Package 2, account by link.</strong> Seventeen body links became backward: 10 to the compact-sector theorem, from <em>Yang–Mills Equation</em>, <em>The Standard Model and the Lagrangian</em>, <em>The Sector Hub</em>, <em>The Parameter Count</em>, <em>The Landau Pole</em> (×2), <em>The Hierarchy Problem</em> (×2), <em>The Algebras of the Two Sectors</em> (×2); and 7 to the entropy functional, from <em>The Local Entropy Current</em> (×4), <em>The Nodal Set</em>, <em>The Quantum Stress Tensor</em>, <em>The Two-Fluid Model</em>. One link was created, the theorem’s citation of the SU(4) model.</p>
+<p><strong>Package 4, account by link.</strong> Sixty-seven body links became backward: 42 into Electroweak and 25 into Strong, which is the substance of §9.3 — the assembly was citing the sectors it summarizes, and the move reverses the direction. Nineteen links were created: 17 from Electroweak articles now citing the assembly that follows them, 2 from Strong. Net −48. The Electroweak links are adjacent-category and legal under the model; this is the intended shape, a sector citing the assembly that counts it.</p>
+<p>The giant SCC is unchanged, as expected: the moves resolve local deferrals, not the web. New positions of the articles named in this section: 281 → 13, 706 → 197, <em>The Local Entropy Current</em> 206 → 208, <em>The Two-Fluid Model</em> 212 → 214, <em>The SU(4) Model</em> 216 → 218, <em>The Quantum Stress Tensor</em> 523 → 524, <em>The Nodal Set</em> 524 → 525, the Assembly 330–342.</p>
+<h3 id="125-package-5-applied-as-a-move">12.5 Package 5, applied as a move</h3>
+<p><strong>Not split.</strong> The Data Boundary was going to be cut in two: the rule in place, the register elsewhere. Reading it whole showed the cut would destroy the article. The register is not an appendix to the rule; it is the evidence for the article's own two counts — <em>two articles claim, sixteen print a strength</em> — which the <code>## Summary</code> repeats, which the <code>## The Checks</code> table verifies row by row, and which the <code>## Summary of Notation</code> names. A split leaves one article asserting a count and another holding the list that justifies it, and the checks table then checks nothing. A second reason: an article whose only content is a sixteen-row table has no claim of its own, and every article in this corpus argues one.</p>
+<p><strong>Moved instead.</strong> The whole article left Symmetry Breaking, with its <code>### The Rule of the Section</code> heading, and became the opening of <em>The Standard Model Assembly</em>, ahead of <em>The Standard Model, Audited</em>. The register belongs where the values are printed, and that is the assembly: five of its sixteen rows are assembly articles. The article had no inbound link from any other article (checked against all 755 files), so the move costs nothing upstream — the only reference to it was its menu entry.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>measure</th>
+<th style="text-align: right;">before Package 5</th>
+<th style="text-align: right;">after Package 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>body-layer forward links</td>
+<td style="text-align: right;">717</td>
+<td style="text-align: right;"><strong>703</strong></td>
+</tr>
+<tr>
+<td>category-skipping body links</td>
+<td style="text-align: right;">224</td>
+<td style="text-align: right;"><strong>213</strong></td>
+</tr>
+<tr>
+<td>long jumps (gap ≥ 50)</td>
+<td style="text-align: right;">251</td>
+<td style="text-align: right;"><strong>240</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Two clauses were rewritten, both in the article: “This part keeps one coupling statement” → “The corpus keeps one coupling statement”, and the notation row that placed the coupling article “in this part” → “in the Symmetry Breaking part”. Both were true before the move and false after it.</p>
+<p>Tested and rejected, with the measurements that rejected them:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>move</th>
+<th style="text-align: right;">forward</th>
+<th style="text-align: right;">skips</th>
+<th style="text-align: right;">long</th>
+<th>judgement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nothing (baseline)</td>
+<td style="text-align: right;">703</td>
+<td style="text-align: right;">213</td>
+<td style="text-align: right;">240</td>
+<td>—</td>
+</tr>
+<tr>
+<td>305, <em>The Weak Sector Below $M_C$</em>, into Symmetry</td>
+<td style="text-align: right;">704</td>
+<td style="text-align: right;"><strong>205</strong></td>
+<td style="text-align: right;">235</td>
+<td><strong>rejected</strong>: the article is the head of the Electroweak category's carrier census — the weak spectrum first, then $W$, $Z$ and $W_R$ at spin one, the fermions at spin one half, the Higgs at spin zero. Eight skips are the price of that census, and the census is the better design.</td>
+</tr>
+<tr>
+<td>183, <em>The Relativistic Quantum Space as a Fluid</em>, into RQT</td>
+<td style="text-align: right;">705</td>
+<td style="text-align: right;">213</td>
+<td style="text-align: right;">242</td>
+<td><strong>rejected</strong>: five Fluid articles cite it; it is the framework they are instances of.</td>
+</tr>
+<tr>
+<td>the whole Fluid category after RQT</td>
+<td style="text-align: right;"><strong>643</strong></td>
+<td style="text-align: right;"><strong>156</strong></td>
+<td style="text-align: right;">189</td>
+<td><strong>rejected on physics, not on numbers</strong>: it is the largest gain available anywhere (−57 skips) and it inverts the corpus's own claim. The fluid is primary; the quantum theory is the quantised case of it. This table is the clearest evidence that the skip count is not a fitness score.</td>
+</tr>
+<tr>
+<td>the whole Fluid category after Electromagnetism</td>
+<td style="text-align: right;">695</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">243</td>
+<td>rejected for the same reason.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="126-what-the-213-skips-are-made-of">12.6 What the 213 skips are made of</h3>
+<p>The residual is not a long tail of carelessness. Half of it is thirteen articles of one kind, and the kind is deliberate.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">idx</th>
+<th style="text-align: right;">skips</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>why-biquaternions</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">19</td>
+<td>the corpus map, first article of the menu</td>
+</tr>
+<tr>
+<td>the-relativistic-quantum-space-as-a-fluid</td>
+<td style="text-align: right;">183</td>
+<td style="text-align: right;">19</td>
+<td>the framework of the twenty-five RQT articles</td>
+</tr>
+<tr>
+<td>criterion-for-a-fluid-equation</td>
+<td style="text-align: right;">191</td>
+<td style="text-align: right;">11</td>
+<td>the criterion the fluid derivations satisfy</td>
+</tr>
+<tr>
+<td>the-sector-hub</td>
+<td style="text-align: right;">342</td>
+<td style="text-align: right;">8</td>
+<td>the four sector answers compared</td>
+</tr>
+<tr>
+<td>the-current-algebra</td>
+<td style="text-align: right;">184</td>
+<td style="text-align: right;">7</td>
+<td>the algebra the quantum treatment runs on</td>
+</tr>
+<tr>
+<td>covariant-local-equilibrium-and-tolman-temperature</td>
+<td style="text-align: right;">209</td>
+<td style="text-align: right;">7</td>
+<td>the thermodynamic framework for the quantum case</td>
+</tr>
+<tr>
+<td>the-thermodynamics-of-a-quantum-fluid (status)</td>
+<td style="text-align: right;">215</td>
+<td style="text-align: right;">7</td>
+<td>the status of the derivation, enumerated</td>
+</tr>
+<tr>
+<td>the-quantisation-hub</td>
+<td style="text-align: right;">156</td>
+<td style="text-align: right;">6</td>
+<td>the sixteen articles that import the promotion</td>
+</tr>
+<tr>
+<td>the-wigner-function-in-biquaternionic-form</td>
+<td style="text-align: right;">203</td>
+<td style="text-align: right;">6</td>
+<td>the phase-space route, enumerated</td>
+</tr>
+<tr>
+<td>the-two-fluid-model</td>
+<td style="text-align: right;">214</td>
+<td style="text-align: right;">6</td>
+<td>the two-fluid case, enumerated</td>
+</tr>
+<tr>
+<td>the-15-axf-matrices-of-the-bosons-in-detail</td>
+<td style="text-align: right;">232</td>
+<td style="text-align: right;">5</td>
+<td>every matrix, every boson, its role</td>
+</tr>
+<tr>
+<td>five-steps-from-a-lagrangian-to-fluid-equations</td>
+<td style="text-align: right;">192</td>
+<td style="text-align: right;">5</td>
+<td>the recipe, stated before its instances</td>
+</tr>
+<tr>
+<td>the-two-scales-of-the-field</td>
+<td style="text-align: right;">189</td>
+<td style="text-align: right;">5</td>
+<td>the two densities, defined before use</td>
+</tr>
+</tbody>
+</table></div>
+<p>Thirteen articles carry 111 of the 213 skips (52%). Every one of them is a <strong>directory</strong>: its job is to say what exists and where it is worked out. Not one of them receives a skipping link from another article, which is what a directory looks like — it points, and is not pointed at. A rule that forbade a directory to point forward would forbid directories. These are the exemption class named in §12.0, and the test that admits them is the one they pass: a directory is not itself summarized by anything further down the menu.</p>
+<p>The other 102 skips sit in 62 articles, between one and four each. Their shape:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>flow</th>
+<th style="text-align: right;">links</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RQT → Non-Relativistic Non-Quantum Approximation</td>
+<td style="text-align: right;">20</td>
+<td>the approximations follow the exact theory; forward by construction</td>
+</tr>
+<tr>
+<td>Fluid → RQT</td>
+<td style="text-align: right;">13</td>
+<td>the fluid derivation is completed in the quantum treatment; a deferral, not an inversion</td>
+</tr>
+<tr>
+<td>Symmetry Breaking → Electroweak</td>
+<td style="text-align: right;">8</td>
+<td>the carrier census pointers of §12.5</td>
+</tr>
+<tr>
+<td>Fluid → Non-Relativistic Non-Quantum</td>
+<td style="text-align: right;">6</td>
+<td>the fluid picture's non-relativistic case</td>
+</tr>
+<tr>
+<td>Relativity → RQT</td>
+<td style="text-align: right;">4</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>Symmetry Breaking → the Assembly</td>
+<td style="text-align: right;">4</td>
+<td>the re-point backlog of §12.3</td>
+</tr>
+<tr>
+<td>everything else</td>
+<td style="text-align: right;">47</td>
+<td>one or two per article, spread over eleven flows</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The finding the numbers support.</strong> No major theory flaw is hidden by the forward links: the audit of §§2–9 found no missing physics target, no unresolved link and no self-contradictory pair, and the residuals above are organisational, not physical. What the forward links <em>did</em> hide was two real ordering faults, and both were found and fixed by reading, not by counting: the assembly citing the sectors it summarizes (§9.3, fixed by Package 4), and the coupling rule sitting in the section whose values it governs (§12.5, fixed here). The pattern to watch is not “a link points later” but “a summary points forward at the thing it summarizes”, because that is the signature of an article placed before its own material. The hub articles escape that test: they summarize a <em>block</em> they are not part of, and they are cited by nothing that skips.</p>
+<h3 id="127-the-blocking-problems">12.7 The blocking problems</h3>
+<p>Five things the audit cannot settle alone, and each is stated with the number that makes it a decision rather than a preference.</p>
+<p><strong>1. The 176-link triage is a reading task, not a counting task.</strong> Each link needs one judgement: does the source sentence <em>use</em> the target, or <em>mention</em> it? A move fixes a use; plain text fixes a mention; an allowlist entry admits a ledger. The classification in §12.6 narrows it to 62 articles and four flows, but the per-sentence reading of 102 links is the author's work or a delegated pass with the author's intent stated first. <strong>Blocked on intent, not on tooling.</strong></p>
+<p><strong>2. Where the rule lives.</strong> The corpus has eleven conventions articles and none of them is about links: they are algebra, products, norms, elements, frames, matrices, operators, indices, units and concepts. The no-skip rule is a rule of composition, and its natural home is a twelfth conventions article — <em>Link and Reading-Order Conventions</em> — which would be article 756, needing a menu slot in the conventions block and a full article in the house format. <strong>Not written: adding a conventions article is an editorial decision about the corpus's front matter, not a fix to a link.</strong> The rule stands in §12.0 of this audit until that decision is taken.</p>
+<p><strong>3. Package 3 (the fluid instances) cannot be done as stated.</strong> The seven articles are cells of the RQT spin matrices (§12.5 of the earlier draft, and the measurements above): the spin-0 fluid cell holds eight articles and four of them are on the list; the spin-½ fluid cell would lose its only entry. A split is the only route — each article would give up its “instance” half to a Fluid article and keep its “method” half — and that is seven articles rewritten, not seven menu lines moved. <strong>Blocked on effort, and the gain is 25 links.</strong></p>
+<p><strong>4. “Zero skips” is not attainable, and chasing it damages the corpus.</strong> The Fluid-after-RQT move gives 156 skips and the wrong physics. The 305 move gives 205 skips and breaks a census. The honest target is: 111 hub skips declared exempt, 102 residual skips triaged link by link, and a number that stops falling while the design is still improving. <strong>A metric that rewards inverting the ontology is the wrong metric</strong>, and the audit records that rather than the target it printed before.</p>
+<p><strong>5. What a split cannot fix.</strong> An article split helps when its own sections belong in different places. Only one article in the corpus answers that test — 305, whose <em>The Bidoublet Extension</em> half belongs with the $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ article and whose weak-spectrum half belongs to the transition. The seam is real and the split is clean, and it buys eight links. <strong>Not done here: it costs a new article of substance for a 4% gain on one flow, and the census it would empty is the argument of its own category.</strong></p>
+<h3 id="128-what-this-audit-did-not-touch">12.8 What this audit did not touch</h3>
+<p>No build file, no template, no <code>PLAN.md</code>, no git operation, no deploy folder. Files changed: <code>physics.md</code> (two Package 2 moves, the Assembly category with its <code>##</code> comment, the Data Boundary block moved with its heading, four comments rewritten or extended) and three articles — the catalogue’s one link, the entropy article’s one clause, the Data Boundary’s two positional clauses. The audit files themselves are in <code>articles_internal/audits/</code>, which is gitignored. Backups of the two pre-migration states are outside the repository (<code>/tmp/physics.md.bak</code>, <code>/tmp/physics.p2.md</code>).</p>
+<h2 id="appendix-a-top-forward-sources">Appendix A. Top Forward Sources</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">rank</th>
+<th style="text-align: right;">idx</th>
+<th>article</th>
+<th style="text-align: right;">forward</th>
+<th>category</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td>Why Biquaternions?</td>
+<td style="text-align: right;">33</td>
+<td>Programme</td>
+<td>survey</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">266</td>
+<td>Three Gaps in the Standard Model</td>
+<td style="text-align: right;">23</td>
+<td>Symmetry</td>
+<td>audit</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">182</td>
+<td>The Relativistic Quantum Space as a Fluid</td>
+<td style="text-align: right;">22</td>
+<td>Fluid</td>
+<td>introduction</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">216</td>
+<td>The SU(4) Model</td>
+<td style="text-align: right;">20</td>
+<td>Primordial</td>
+<td>declaration</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">245</td>
+<td>The Data Boundary</td>
+<td style="text-align: right;">19</td>
+<td>Symmetry</td>
+<td>register</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">259</td>
+<td>The Standard Model Content</td>
+<td style="text-align: right;">17</td>
+<td>Symmetry</td>
+<td>inventory</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">132</td>
+<td>The Invariant Density</td>
+<td style="text-align: right;">16</td>
+<td>Action</td>
+<td>section opener</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">155</td>
+<td>The Quantisation Hub</td>
+<td style="text-align: right;">16</td>
+<td>Action</td>
+<td>index</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">230</td>
+<td>The Fifteen AXF Matrices</td>
+<td style="text-align: right;">15</td>
+<td>Primordial</td>
+<td>detail</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">206</td>
+<td>The Local Entropy Current</td>
+<td style="text-align: right;">13</td>
+<td>Fluid</td>
+<td>consumer</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">271</td>
+<td>The Sector Hub</td>
+<td style="text-align: right;">13</td>
+<td>Symmetry</td>
+<td>index</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">190</td>
+<td>Criterion for a Fluid Equation</td>
+<td style="text-align: right;">12</td>
+<td>Fluid</td>
+<td>general method</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">191</td>
+<td>Five Steps from a Lagrangian to Fluid Equations</td>
+<td style="text-align: right;">11</td>
+<td>Fluid</td>
+<td>summary</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">711</td>
+<td>Curved Spacetime and the Biquaternion Framework</td>
+<td style="text-align: right;">11</td>
+<td>Gravity</td>
+<td>opener</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">201</td>
+<td>The Wigner Function</td>
+<td style="text-align: right;">10</td>
+<td>Fluid</td>
+<td>bridge</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">203</td>
+<td>The Local Thermal State of a Fluid</td>
+<td style="text-align: right;">10</td>
+<td>Fluid</td>
+<td>consumer</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">550</td>
+<td>Composite Systems and the Multi-Qubit Extension</td>
+<td style="text-align: right;">10</td>
+<td>RQT</td>
+<td>hub</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">207</td>
+<td>Covariant Local Equilibrium and Tolman Temperature</td>
+<td style="text-align: right;">9</td>
+<td>Fluid</td>
+<td>consumer</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">262</td>
+<td>The Parameter Count</td>
+<td style="text-align: right;">9</td>
+<td>Symmetry</td>
+<td>audit</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">314</td>
+<td>Representation Is a Function of Spin</td>
+<td style="text-align: right;">9</td>
+<td>Electroweak</td>
+<td>bridge</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="appendix-b-top-late-targets">Appendix B. Top Late Targets</h2>
+<p>The table in §4.3 is the full list used by the audit. The raw in-degree for every target can be computed from the TSV by grouping on <code>target_idx</code>.</p>
+<h2 id="appendix-c-the-edge-list">Appendix C. The Edge List</h2>
+<p><code>articles_internal/audits/audit-outbound-edges.tsv</code> has 781 rows and 13 columns:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>column</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>source_idx</code></td>
+<td>menu index of the source article</td>
+</tr>
+<tr>
+<td><code>source_category</code></td>
+<td>source H2</td>
+</tr>
+<tr>
+<td><code>source_slug</code></td>
+<td>source file stem</td>
+</tr>
+<tr>
+<td><code>source_title</code></td>
+<td>source H1</td>
+</tr>
+<tr>
+<td><code>target_idx</code></td>
+<td>menu index of the target</td>
+</tr>
+<tr>
+<td><code>target_category</code></td>
+<td>target H2</td>
+</tr>
+<tr>
+<td><code>target_slug</code></td>
+<td>target file stem</td>
+</tr>
+<tr>
+<td><code>target_title</code></td>
+<td>target H1</td>
+</tr>
+<tr>
+<td><code>menu_gap</code></td>
+<td>target index minus source index</td>
+</tr>
+<tr>
+<td><code>category_gap</code></td>
+<td>category position difference; 0 same, 1 next, 2+ skips</td>
+</tr>
+<tr>
+<td><code>section</code></td>
+<td>section heading in which the link appears</td>
+</tr>
+<tr>
+<td><code>link_text</code></td>
+<td>the anchor text</td>
+</tr>
+<tr>
+<td><code>context_before</code></td>
+<td>220 characters before the link</td>
+</tr>
+</tbody>
+</table></div>
+<p>Filter <code>category_gap &gt;= 2</code> for the 260 category-skipping links. Filter <code>menu_gap &gt;= 50</code> for the 292 long jumps. Filter <code>section</code> not containing “Further Reading” is already applied; the TSV is the body-layer set.</p>
+<h2 id="appendix-d-the-category-flow-matrix">Appendix D. The Category Flow Matrix</h2>
+<p>The full body-layer flow matrix, from source category (row) to target category (column), can be regenerated from the TSV. The top rows are in §4.1. The matrix is not printed here because it is 14×14 and the top ten flows are the actionable part.</p>
+<hr />
+<p><em>End of audit. No article was modified. The next step, if approved, is the menu reorder in §10.3 and the no-skip edit list in §10.2.</em></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
