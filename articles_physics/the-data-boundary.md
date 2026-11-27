@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The rule.** This category keeps one coupling statement, and it is in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The rule that follows is easy to state and hard to apply: no article outside that one may carry a value, a boundary condition, a running, a matching, or a ratio called exact.
+**The rule.** This part keeps one coupling statement, and it is in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The rule that follows is easy to state and hard to apply: no article outside that one may carry a value, a boundary condition, a running, a matching, or a ratio called exact.
 
-**The difficulty.** A third of the category is Standard Model physics transcribed, and transcribed physics arrives with numbers. A rule that forbade those numbers would forbid the corpus's own subject matter. So the rule needs a boundary, and a boundary written only in prose cannot be checked.
+**The difficulty.** Much of the corpus is Standard Model physics transcribed, and transcribed physics arrives with numbers. A rule that forbade those numbers would forbid the corpus's own subject matter. So the rule needs a boundary, and a boundary written only in prose cannot be checked.
 
 This article states that boundary. It carries no strength value of its own: a page that quoted the numbers it classifies would be the first entry in its own table.
 
@@ -17,7 +17,7 @@ The test is a single question: does the sentence survive the deletion of every s
 | category | test | what it may print | where |
 |---|---|---|---|
 | **structural** | survives | symbols, generators, multiplicities, charges, anomaly identities | everywhere |
-| **claim** | does not survive | the value, the boundary condition, the running, the matching | the coupling section only |
+| **claim** | does not survive | the value, the boundary condition, the running, the matching | one article per part, and no more |
 | **data** | survives only because a measurement supplies the value | the measured number, marked as measured, with its source | the articles whose subject *is* the comparison |
 
 **The middle row.** A structural statement is checked by the algebra — a trace identity catches an error in it. A claim is checked by nothing in the algebra: it is imposed, so an error in it is invisible until an experiment, and it moves when the scale moves. That is why it is kept in one place.
@@ -26,14 +26,14 @@ The test is a single question: does the sentence survive the deletion of every s
 
 ## The Claim Register: Two Articles
 
-Both stand inside the coupling section of the menu, and the section exists for them.
+The first stands inside the coupling section of the menu, which exists for it; the second stands in the electroweak part, where the angle is a claim about two strengths and not a measured number.
 
 | article | what it claims |
 |---|---|
 | [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html) | the matching at the second threshold, the trace identity behind it, the one scale, the leptoquark floor, the four-decade failure of the unified case, and the Yukawa conditions with their measured comparison |
 | [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-and-the-three-neutral-states.html) | the mixing as a ratio of two strengths, the form the generators fix, and the rotation that makes the photon pure charge |
 
-Nothing in the category may state the first article's equation, and nothing may state the second's measured angle as a prediction of this model. Both are linked from the menu, and neither is duplicated.
+Nothing may state the first article's equation, and nothing may state the second's measured angle as a prediction of this model. Both are linked from the menu, and neither is duplicated.
 
 ## The Data Register: Sixteen Articles
 
@@ -58,7 +58,7 @@ Each row names the quantity and does not give its value. The value is in the art
 | [Grand Unification in the Biquaternion Framework](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html) | the measured strengths, to test the meeting | the meeting of measured strengths is the test, and it fails on data |
 | [The Petiau System and the Quantisation of Mass](the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html) | the fine-structure value, inside an empirical leptonic formula | the formula is empirical, and the article says so |
 
-The category holds one hundred and fifty-five articles: two claims, sixteen data, and the remaining one hundred and thirty-seven structural. They state a group, a carrier, a multiplet list, a charge, an anomaly identity, a boson count, a dimension budget or a diagram, with every strength a symbol and no value attached. They are not listed here because the list would be the category.
+Two of the corpus's articles make a claim, sixteen print a measured strength, and every other article is structural. They state a group, a carrier, a multiplet list, a charge, an anomaly identity, a boson count, a dimension budget or a diagram, with every strength a symbol and no value attached. They are not listed here because the list would be the corpus.
 
 ## The Five Tests a New Article Must Pass
 
@@ -86,12 +86,12 @@ An article may print a strength value only if all five hold. If one fails, the v
 
 | claim | check | result |
 |---|---|---|
-| the register is complete | every menu entry in the category tested for a strength value | two claims, sixteen data, one hundred and thirty-seven structural |
+| the register is complete | every menu entry in the corpus tested for a strength value | two claims, sixteen data, every other entry structural |
 | the register obeys its own rule | the article searched for a numeric strength | none |
-| the claim articles are in the coupling section | menu position | both, and only they |
+| the claim articles sit where the rule allows | menu position | the first in the transition's own coupling article, the second in the electroweak part |
 | the definition is distinguished from a value | the charge–angle relation read three ways | definition structural, value data, prediction a claim |
 | a computed coefficient is admitted | the strong coefficient checked for a measurement | computed from group data, so admitted |
-| the structural count is arithmetical | $152-2-16$ | $134$ |
+| the totals are consistent | the menu count less the two claims and the sixteen data | the structural remainder, no entry in two rows |
 | the categories are exhaustive | the test applied to each row | every article falls in exactly one |
 
 ## Summary
@@ -109,7 +109,7 @@ The permission has four edges drawn, and the sharpest is the fourth: the low-ene
 | structural | a statement checked by the algebra, carrying no value |
 | claim | a statement imposing a value, a boundary condition, a running, a matching or an exact ratio |
 | data | a measured value, printed where a comparison needs it |
-| the coupling section | *The Standard Model as the Low-Energy Phase: The One Coupling That Returns It* |
+| the coupling article | *The One Coupling That Returns the Standard Model*, in this part |
 
 ## Further Reading
 
