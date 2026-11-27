@@ -353,34 +353,34 @@ $$</p>
 <p>The reading. The closure adds the time slot. A spin-one field's value has three states, and the material sector has four real dimensions; the fourth is the temporal direction $ie_t$, and it is the generator of the central phase and not a state. The constraint of the theory removes it, and the carrier that survives the constraint is the vector part again. This is why the spin-one closure is the only one whose dimension does not equal $2s+1$: the fourth slot is not a state.</p>
 <p><strong>The exact statement of the mismatch.</strong> On the centre the real dimension of the closure is $2$ and $2s+1=1$; on the ideal the real dimension is $4$ and $2s+1=2$; on the material sector the real dimension is $4$ and $2s+1=3$. In the first two cases the closure is complex and its complex dimension is $2s+1$; in the third the closure is a real form, so no complex dimension exists and the identity has no reading at all. The identity is therefore a statement about the carrier, and every attempt to read it directly on the closure either doubles it or fails.</p>
 <h2 id="the-carrier-and-the-field-equation">The Carrier and the Field Equation</h2>
-<p>The question the dynamics asks. An equation is an operator acting on a field, and a subspace carries the solutions of the equation when the operator maps that subspace into itself for every field in it. The three carriers are the three answers, and the answers are reached from the dynamics without using the representation theory.</p>
+<p>The question the dynamics asks. A free field equation is an operator acting on a field, and a subspace carries its solutions when the operator maps that subspace into itself for every field in it. The three carriers are the three answers, and the answers are reached from the operator without using the representation theory. The equations themselves are written in <em>Biquaternion Universe Free of Force</em>; the table records the operator and the space it preserves.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>equation</th>
+<th>operator</th>
 <th>field</th>
 <th>spin</th>
 <th>the space</th>
-<th>the operator preserves it by</th>
+<th>it preserves the space by</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Klein–Gordon</td>
+<td>the second-order scalar operator</td>
 <td>$\tilde\Xi$</td>
 <td>$0$</td>
 <td>the centre</td>
 <td>being a central real scalar</td>
 </tr>
 <tr>
-<td>Dirac</td>
+<td>the gradient</td>
 <td>$\tilde\Xi_L,\tilde\Xi_R$</td>
 <td>$\tfrac12$</td>
 <td>$S_+,S_-$ and their sum</td>
 <td>multiplying on the left</td>
 </tr>
 <tr>
-<td>Proca</td>
+<td>the vector operator with its constraint</td>
 <td>$\tilde A_\Phi$</td>
 <td>$1$</td>
 <td>the material sector, then the vector part</td>
@@ -388,9 +388,9 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The scalar case, and why the equation chooses nothing. The Klein–Gordon operator is central and real, so it multiplies all four complex coefficients by the same number and preserves every subspace closed under real scalars. The equation is therefore satisfied by a field with four independent complex coefficients and by a field with one, and nothing in the equation prefers either. The spin prefers one: a spin-zero field has one complex value at each event, and the carrier of one complex number is the centre. The restriction of the field to the centre costs nothing in the equation, because the operator is central.</p>
-<p>The spinor case, and why the sector cannot hold it. The Dirac operator is the gradient, an element multiplying on the left, so it preserves exactly the left ideals. No nonzero subspace of the material sector is a left ideal, and the proof is one line: if $W\subseteq\mathbb{B}_\Phi$ were a nonzero left ideal, then $iW\subseteq W$ because $i$ is central, but $i\mathbb{B}_\Phi=\mathbb{B}_\Psi$, so $iW\subseteq\mathbb{B}_\Phi\cap\mathbb{B}_\Psi=\{0\}$ and $W=\{0\}$. Verified: a random left multiple of a random anti-Hermitian element leaves the sector by $22.4$. A spin-half field therefore cannot be confined to the material sector, whatever the frame, and this is a theorem and not an opinion.</p>
-<p>The vector case, and why the sector is the space. The Proca potential is an element of the material sector, the operator is built from one material gradient, and the sector is preserved by the two-sided action and by real central multiplication. The sector is therefore the space the field takes values in, and the vector part inside it is the carrier of the spin; the difference of one dimension is the constraint, which removes the temporal slot.</p>
+<p>The scalar case, and why the operator chooses nothing. The second-order operator is central and real, so it multiplies all four complex coefficients by the same number and preserves every subspace closed under real scalars. It is therefore satisfied by a field with four independent complex coefficients and by a field with one, and nothing in the operator prefers either. The spin prefers one: a spin-zero field has one complex value at each event, and the carrier of one complex number is the centre. The restriction of the field to the centre costs nothing in the equation, because the operator is central.</p>
+<p>The spinor case, and why the sector cannot hold it. The operator of a half-integer field is the gradient, an element multiplying on the left, so it preserves exactly the left ideals. No nonzero subspace of the material sector is a left ideal, and the proof is one line: if $W\subseteq\mathbb{B}_\Phi$ were a nonzero left ideal, then $iW\subseteq W$ because $i$ is central, but $i\mathbb{B}_\Phi=\mathbb{B}_\Psi$, so $iW\subseteq\mathbb{B}_\Phi\cap\mathbb{B}_\Psi=\{0\}$ and $W=\{0\}$. Verified: a random left multiple of a random anti-Hermitian element leaves the sector by $22.4$. A spin-half field therefore cannot be confined to the material sector, whatever the frame, and this is a theorem and not an opinion.</p>
+<p>The vector case, and why the sector is the space. The vector potential is an element of the material sector, the operator is built from one material gradient, and the sector is preserved by the two-sided action and by real central multiplication. The sector is therefore the space the field takes values in, and the vector part inside it is the carrier of the spin; the difference of one dimension is the constraint, which removes the temporal slot.</p>
 <p>The two routes agree. The representation theory says three carriers of dimensions one, two and three. The dynamics says a central operator, a left multiplier and a sector. The two lists are the same list, and the agreement is not an accident: both are asking which subspaces the algebra's own actions preserve.</p>
 <p><strong>One asymmetry the three closures do have, and it is a property of ideals rather than of subspaces.</strong> Each closure survives <em>its own</em> operator, but only one survives an <em>arbitrary</em> left multiplication, which is what a general coupling would exert. A left multiplier $L_X$ with arbitrary $X$ carries the centre out of itself, since $X(Q_te_t)=Q_tX$ is central only if $X$ is, and it carries the traceless part out of itself for the same reason at one order higher; an ideal, by contrast, is closed under every $L_X$ by definition. <strong>So the bispinor space is the only one of the three whose home is stable against a coupling operator the algebra can supply, and the other two are stable only against the specific operators their equations use.</strong> The limit: this is a statement about left multiplication, and a coupling that acts by the two-sided action or by conjugation is a different question, answered by the invariance of the corresponding subspace.</p>
 <h2 id="why-the-three-are-not-a-direct-sum">Why the Three Are Not a Direct Sum</h2>
@@ -400,7 +400,7 @@ $$</p>
 <h2 id="the-interpretations">The Interpretations</h2>
 <p>The spin is the top of a ladder. The spin of a carrier is its largest weight, and the weights of an irreducible carrier are $s,s-1,\dots,-s$, so the carrier has $2s+1$ of them and that number is its real dimension. The warrant is the criterion and the three computations. The boundary is that this is the rotation spin: the Lorentz label of a field is a pair of spins, and the massless case uses helicity.</p>
 <p>A field takes values in the closure, not in the carrier. The carrier is what the action sees; the closure is what the equation cannot push the field out of. The warrant is the first repair: the plane fails invariance by $2.24$ in the Euclidean norm, and the smallest invariant space containing it has dimension four. The boundary is that the closure is a subspace condition and not an equation of motion: it says where the field may live, not how it moves.</p>
-<p>The carrier fixes the dimension of the value, and the equation does not. The Klein–Gordon operator is central, so it preserves every subspace and chooses nothing; the spin chooses. The warrant is the centrality, which is exact. The boundary is that the choice is by dimension and by action, and the equation of a given spin is a separate statement.</p>
+<p>The carrier fixes the dimension of the value, and the operator does not. The second-order operator is central, so it preserves every subspace and chooses nothing; the spin chooses. The warrant is the centrality, which is exact. The boundary is that the choice is by dimension and by action, and the equation of a given spin is a separate statement.</p>
 <p>One value has no norm; the mass is a pairing. The norm vanishes on the ideal at every element, and the norm of a pair is twice the cross pairing. The warrant is the identity $N(\tilde\Xi_L+\tilde\Xi_R)=2\,\mathrm{Sc}(\tilde\Xi_L\tilde\Xi_R^{\natural})$ to $4.4\times10^{-15}$ and the vanishing to $1.4\times10^{-15}$. The boundary is that the pairing is a shape and not a number, and that the two Peirce ideals are copies and not chiralities.</p>
 <p>The axis is a frame, not a datum. The idempotents exist at every unit axis, the spectrum does not depend on the axis, and the family of bispinor spaces is indexed by the real projective plane. The warrant is the lemma that the operators at two axes are similar and the theorem that the algebra singles out no axis. The boundary is that a choice of quantisation axis is a choice of basis; nothing in the algebra makes one axis preferred.</p>
 <p>A full turn is $(-1)^{2s}$. The operator of the full turn is $+\mathrm{id}$ on the integer carriers and $-\mathrm{id}$ on the half-integer one, so the half-integer carrier is an action of the double cover and the integer carriers are actions of the rotation group. The warrant is the eigenvalue $e^{2\pi i\eta}$ at $\eta=\pm\tfrac12$, verified as $\rho_{\mathrm{rep}}(-e_t)=-\mathrm{id}$ on the plane to $8.7\times10^{-17}$. The boundary is that the sign is a statement about the action and not about statistics.</p>
@@ -570,9 +570,9 @@ $$</p>
 <li><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the polar form of the norm and the inertias.</li>
 <li><a href="../articles_maths/representations-of-groups.html">Representations of Groups</a>, for complete reducibility and the highest-weight string.</li>
 <li><a href="../articles_internal/the-rotations-the-boosts-and-the-groups.html">The Rotations, the Boosts and the Groups</a>, for the actions whose carriers these are.</li>
-<li><a href="the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a>, for the central operator and the restriction to the centre.</li>
-<li><a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>, for the left multiplier and the two ideals.</li>
-<li><a href="the-proca-equation-massive-spin-1-in-biquaternionic-form.html">The Proca Equation: Massive Spin 1 in Biquaternionic Form</a>, for the sector as the space of a four-vector.</li>
+<li><a href="the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a> in <em>Biquaternion Universe Free of Force</em>, for the central operator and the restriction to the centre.</li>
+<li><a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a> in <em>Biquaternion Universe Free of Force</em>, for the left multiplier and the two ideals.</li>
+<li><a href="the-proca-equation-massive-spin-1-in-biquaternionic-form.html">The Proca Equation: Massive Spin 1 in Biquaternionic Form</a> in <em>Biquaternion Universe Free of Force</em>, for the sector as the space of a four-vector.</li>
 <li><a href="../articles_internal/archives/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html">Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</a>, for what the closure does not forbid.</li>
 </ul>
       </div>
