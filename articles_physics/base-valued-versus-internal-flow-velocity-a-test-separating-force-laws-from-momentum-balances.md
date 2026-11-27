@@ -144,7 +144,7 @@ a divergence of a matrix-valued flux equated to a matrix-valued source. **It is 
 
 ## Three Limits the Test Has to Survive
 
-**The test is one line, and there are three places where the line cannot be drawn in the obvious way. Each is a limit of the classical base rather than of any group, and the three are worth stating together because the corpus's ordinary fluids supply them.** The classical equations are *The Fluid Layer: Ordinary Fluid Physics* in *Biquaternion Universe Non Relativistic Non Quantum Approximation*.
+**The test is one line, and there are three places where the line cannot be drawn in the obvious way. Each is a limit of the classical base rather than of any group, and the three are worth stating together because the corpus's ordinary fluids supply them.** The classical equations are *The fluid's equations and their solutions* in *Biquaternion Universe Non Relativistic Non Quantum Approximation*.
 
 **The massless limit answers "no" by having no velocity to sort.** At $m=0$ there is no rest frame, so the boost chart does not exist, and the velocity that the test asks about is not a section of anything — it is not defined. The reading's two charts fail together there: the label chart fails on the null cone and the value chart diverges, and what survives is a null current rather than a flow. So the test's verdict is neither "base-valued" nor "internal"; the question is not reached, and this is one of the few places in the corpus where the honest answer to a two-way test is that the object has left its domain.
 

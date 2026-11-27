@@ -229,7 +229,7 @@ The four terms are not four approximations to one object. They lie in four invar
 
 ## The Classical Layer: The Count the Skeleton Has to Reproduce
 
-**An ordinary fluid is the skeleton's degenerate case, and stating it fixes what the skeleton means.** The classical equations are not derived here — they are the base, written before any field was read as a fluid, and they sit in *The Fluid Layer: Ordinary Fluid Physics* in *Biquaternion Universe Non Relativistic Non Quantum Approximation*. What belongs here is the one comparison that S2 makes possible, because the comparison is a count and the count is the test.
+**An ordinary fluid is the skeleton's degenerate case, and stating it fixes what the skeleton means.** The classical equations are not derived here — they are the base, written before any field was read as a fluid, and they sit in *The fluid's equations and their solutions* in *Biquaternion Universe Non Relativistic Non Quantum Approximation*. What belongs here is the one comparison that S2 makes possible, because the comparison is a count and the count is the test.
 
 | Object | Data at a point | Removed by |
 | --- | --- | --- |

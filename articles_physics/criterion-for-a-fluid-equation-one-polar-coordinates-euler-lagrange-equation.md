@@ -177,7 +177,7 @@ $$
 
 ## The Criterion at the Classical Layer
 
-**The criterion did not begin at a quantum rung, and it is worth reading where its clauses have ordinary names.** The classical equations are the base — *The Fluid Layer: Ordinary Fluid Physics* in *Biquaternion Universe Non Relativistic Non Quantum Approximation* — and every clause of the four-item form is a statement about them, with a classical violation that has been known for two centuries.
+**The criterion did not begin at a quantum rung, and it is worth reading where its clauses have ordinary names.** The classical equations are the base — *The fluid's equations and their solutions* in *Biquaternion Universe Non Relativistic Non Quantum Approximation* — and every clause of the four-item form is a statement about them, with a classical violation that has been known for two centuries.
 
 | clause | at the classical layer | the classical failure |
 | --- | --- | --- |

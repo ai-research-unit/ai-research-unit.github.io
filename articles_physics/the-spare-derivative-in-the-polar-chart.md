@@ -175,7 +175,7 @@ $$
 
 ## The Classical Layer: Where There Is Nothing to Spend
 
-**The ordinary fluid is the case in which S4 has a first-order equation and still manufactures nothing, and the reason is worth stating because it fixes what "manufactured" means.** The classical equations are the base — *The Fluid Layer: Ordinary Fluid Physics* in *Biquaternion Universe Non Relativistic Non Quantum Approximation* — and they are written on a flow element whose temporal slot carries the constant $ic$:
+**The ordinary fluid is the case in which S4 has a first-order equation and still manufactures nothing, and the reason is worth stating because it fixes what "manufactured" means.** The classical equations are the base — *The fluid's equations and their solutions* in *Biquaternion Universe Non Relativistic Non Quantum Approximation* — and they are written on a flow element whose temporal slot carries the constant $ic$:
 
 $$
 \tilde V_\Phi=i c\,e_t+\vec v .
