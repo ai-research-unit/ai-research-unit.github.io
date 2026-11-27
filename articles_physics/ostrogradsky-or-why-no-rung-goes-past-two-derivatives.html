@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ostrogradsky, or Why No Rung Goes Past Two Derivatives — Biquaternion Universe</title>
+  <meta name="description" content="The claim. A nondegenerate Lagrangian that depends on a field&#x27;s second derivative — or any higher one — has a Hamiltonian that is linear in one of its…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="ostrogradsky-or-why-no-rung-goes-past-two-derivatives"><strong>Ostrogradsky, or Why No Rung Goes Past Two Derivatives</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> A nondegenerate Lagrangian that depends on a field's second derivative — or any higher one — has a Hamiltonian that is linear in one of its momenta, and a linear Hamiltonian is unbounded below. <strong>That is Ostrogradsky's theorem</strong>, and it is why every rung of this corpus is built from the field and its first derivative only. The corpus never states the theorem and never needs to: it is a structural reason for a structural fact, and the fact is that no density in the chain contains a second derivative of a field.</p>
+<p><strong>What is established.</strong> Four things. First, the construction: the extra canonical pair, the momentum that appears linearly, and the resulting state of unbounded energy. Second, the count: an $N$-th order density gives $2N$ pieces of canonical data, and half of the extra ones carry the wrong sign. Third, what the corpus's second-order <em>appearances</em> actually are — the Madelung transformation's $\nabla^{2}\varrho/\varrho$, the Korteweg stress, the quantum pressure — and that none of them is a higher-derivative term in an action. Fourth, the two escapes the theorem allows, degeneracy and effective-field-theory truncation, and which of the two each of the corpus's cases uses.</p>
+<p><strong>Why it belongs here.</strong> The section's other articles are apparatus the chain assumes; this one is a <em>prohibition</em> the chain obeys. <strong>It answers the question a careful reader will ask at the first gradient correction: why is $\nabla^{2}\varrho$ allowed in the pressure and not in the action?</strong></p>
+<p><strong>What is not new.</strong> The theorem is Ostrogradsky's, 1850, and its modern reading as an instability is a twentieth-century result. <strong>What the corpus adds is the audit</strong>: which of its own second-order quantities are genuine higher-derivative terms and which are not, and why its actions are all first-order bilinears.</p>
+<h2 id="the-theorem">The Theorem</h2>
+<p><strong>The construction, in three lines.</strong> Take a density $\mathcal L(q,\dot q,\ddot q)$ that depends on $\ddot q$ and is nondegenerate in it, and define the two momenta,</p>
+<p>$$
+p_2:=\frac{\partial\mathcal L}{\partial\ddot q},\qquad
+p_1:=\frac{\partial\mathcal L}{\partial\dot q}-\frac{d}{dt}p_2 .
+$$</p>
+<p><strong>Two momenta for one coordinate means that $\dot q$ has become an independent canonical variable</strong>, so the phase space is $(q,\dot q,p_1,p_2)$: four pieces of data where a second-order density would have two.</p>
+<p><strong>The Hamiltonian, and the linearity.</strong> Inverting $p_2=\partial\mathcal L/\partial\ddot q$ for $\ddot q$ and Legendre-transforming,</p>
+<p>$$
+H=p_1\dot q+p_2\ddot q-\mathcal L
+=p_1\dot q+\bigl[p_2\ddot q-\mathcal L\bigr]_{\ddot q=\ddot q(q,\dot q,p_2)} .
+$$</p>
+<p><strong>The first term is linear in $p_1$ with coefficient $\dot q$, and nothing else in $H$ depends on $p_1$.</strong> So $H$ is unbounded below: send $p_1\to-\infty$ at fixed $\dot q&gt;0$ and the energy falls without limit. <strong>That is the instability</strong>, and it is not a technicality of the Legendre transform — it is the statement that the extra canonical pair contributes a state whose energy can be made arbitrarily negative.</p>
+<p><strong>The count, stated generally.</strong> A density with derivatives up to order $N$ has canonical variables $q,\dot q,\dots,q^{(N-1)}$ and their $N$ momenta, hence $2N$ pieces of data. <strong>The ground state of the second-order theory has two; each additional order adds a pair, and each added pair is a ghost</strong> — a state with the wrong sign of energy that can be excited together with positive-energy states while conserving total energy.</p>
+<p><strong>Why the theorem is about nondegeneracy.</strong> If $\mathcal L$ is degenerate in the highest derivative — if $\partial^{2}\mathcal L/\partial\ddot q^{2}=0$, or if the highest derivative appears only linearly — the inversion fails, the extra momentum is a constraint rather than a coordinate, and the extra state can be removed. <strong>That is the escape the corpus's first-order densities use and the one the Dirac–Bergmann algorithm performs</strong>: a degenerate higher-derivative theory is a lower-order theory in disguise.</p>
+<h2 id="where-the-instability-lives-energy-norm-and-the-corpuss-scalar-part">Where the Instability Lives: Energy, Norm, and the Corpus's Scalar Part</h2>
+<p><strong>The standard reading.</strong> The ghost is a state of negative energy, so the vacuum is unstable: positive- and negative-energy states can be pair-produced while conserving total energy, and the decay rate is infinite without a cutoff.</p>
+<p><strong>The sharper reading in this corpus, and it is why the theorem is worth its own page here.</strong> Energies in the corpus are read as the scalar part of a Hermitian element — $T_{00}=\mathrm{Sc}(\tilde\Sigma_\Psi)=\mathcal H$ — and norms are read through the indefinite Hermitian form. <strong>A state with negative energy and a state with negative norm are therefore read in the same display</strong>: a ghost's scalar part is negative and its norm is negative together, so <strong>stability and unitarity fail as one failure rather than two</strong>. In a positive-definite formalism the two must be argued separately; here the algebra exhibits them at once.</p>
+<p><strong>What this does not mean.</strong> It does not mean that every negative-norm direction is a ghost: the indefinite form's spacelike directions are negative-norm and perfectly healthy, because their scalar part is not the energy. <strong>The identification is between the <em>scalar part of the energy element</em> and the norm, and only a state whose energy is that scalar part can be called a ghost by this route.</strong></p>
+<p><strong>The first-order case, which is the control.</strong> A density linear in $\dot q$ has a vanishing Hessian, so its "extra" momentum is a constraint and no ghost survives: the Dirac field is the corpus's example, and <a href="the-dirac-bergmann-algorithm-first-and-second-class-constraints.html">the Dirac–Bergmann article</a> shows the constraint doing the removing. <strong>So the ladder is not "higher order bad"; it is "nondegenerate higher order bad, degenerate higher order fine".</strong></p>
+<h2 id="why-the-corpuss-rungs-are-all-second-order">Why the Corpus's Rungs Are All Second Order</h2>
+<p><strong>One gradient, one bilinear.</strong> Every density in the chain is built from the field and its first derivative, because the algebra supplies one gradient operator $\nabla_\Phi$ and a rung's density is a bilinear in it. <strong>A second derivative would be a bilinear in a composition of gradients</strong>, which is a different object and appears in the corpus only as a correction. <strong>That is the structural reason</strong>, and it is why the prohibition is invisible: no one ever wrote the forbidden term.</p>
+<p><strong>The ladder, with the corpus's instances.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>highest derivative in the density</th>
+<th>canonical data</th>
+<th>is the energy bounded below?</th>
+<th>the corpus's instance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>none</td>
+<td>the field only</td>
+<td>no dynamics at all</td>
+<td>a potential term alone</td>
+</tr>
+<tr>
+<td>one, linear in $\dot q$</td>
+<td>the field, with a constraint</td>
+<td>yes, after the constraint</td>
+<td>the Dirac density</td>
+</tr>
+<tr>
+<td>one, quadratic in $\dot q$</td>
+<td>the field and its momentum</td>
+<td>yes, if the kinetic coefficient is positive</td>
+<td>every scalar, vector and matrix rung</td>
+</tr>
+<tr>
+<td>two</td>
+<td>the field, its first derivative, two momenta</td>
+<td><strong>no</strong></td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The corpus's rungs occupy the third row and its first-order density the second.</strong> The fourth row is empty, and the theorem is why.</p>
+<h3 id="the-second-order-equation-that-is-not-a-second-order-action">The Second-Order Equation That Is Not a Second-Order Action</h3>
+<p><strong>This is the point most easily missed, and it is the article's practical use.</strong> The polar reading of the wave equation produces</p>
+<p>$$
+p_{\mathrm{qnt}}\ \propto\ \frac{h^{2}}{4\pi^{2}}\,\frac{\nabla^{2}\varrho}{\varrho},
+$$</p>
+<p>a second derivative of the amplitude, and a reader may conclude that the fluid's equation has a higher-derivative origin. <strong>It does not.</strong> The quantum pressure comes from a gradient energy in the density,</p>
+<p>$$
+\mathcal E_{\mathrm{grad}}\propto|\vec\nabla_\Phi\varrho|^{2},
+$$</p>
+<p>which is <strong>first order in each factor</strong> — a bilinear in one gradient, exactly the third row of the table. <strong>The $\nabla^{2}\varrho$ appears when the first-order energy is varied</strong>, and a variation raises the order of the equation without raising the order of the action. <strong>So the Madelung transformation converts a second-order <em>equation</em> into a second-order <em>equation</em> written differently, and adds no canonical pair.</strong></p>
+<p><strong>The same reading applies to the Korteweg stress.</strong> Its gradient term is a gradient energy of a density, first order in the field's gradient and second order only after the divergence of the stress is taken. <strong>A gradient energy is not an Ostrogradsky term</strong>, and the corpus's own remark that the Korteweg stress is constitutive rather than bookkeeping — made in <a href="belinfante-rosenfeld-why-the-canonical-stress-tensor-is-not-symmetric.html">the Belinfante–Rosenfeld article</a> — is the same distinction read thermodynamically.</p>
+<p><strong>The test, in one line.</strong> Count the derivatives in the <em>density</em>, not in the equation. <strong>Second-order equations from first-order densities are the normal case</strong>; second-order densities are the pathological one.</p>
+<h2 id="the-two-escapes-and-which-the-corpus-uses">The Two Escapes, and Which the Corpus Uses</h2>
+<p><strong>Escape one: degeneracy.</strong> If the highest derivative's coefficient is a constraint, the extra pair is removed. The Dirac density is the corpus's case and $f(R)$ gravity is the standard one — a fourth-order-looking theory that is a scalar-tensor theory with no extra state. <strong>The corpus's first-order rungs are degenerate in exactly this sense</strong>, and the Dirac–Bergmann article is where the removal is performed.</p>
+<p><strong>Escape two: the cutoff.</strong> If the higher-derivative term is a correction rather than a fundamental term, the ghost's mass sits at the cutoff and the state is not in the low-energy theory. <strong>The corpus's $\frac{h^{2}}{4\pi^{2}}$ corrections are of this kind</strong>: they are what integrating out a scale produces, and the expansion is truncated where the ghost would appear. <strong>The corpus uses this escape every time it keeps a gradient correction and drops the next one</strong>, and the price is that the truncation must come with a power counting that says when the next term matters.</p>
+<p><strong>Neither is an evasion.</strong> The theorem forbids a nondegenerate higher-derivative <em>fundamental</em> density; it says nothing about a degenerate one or about an effective expansion. <strong>A reader who invokes Ostrogradsky to forbid every gradient correction has misread it</strong>, and a reader who keeps a gradient correction without a cutoff has misread the other half.</p>
+<p><strong>The discrete face of the same trade.</strong> On the lattice the derivative is a difference, and a higher-order difference operator produces extra low-energy states — the doublers — whose removal costs a term of the same order. <strong>The Wilson term is the lattice's Ostrogradsky price paid in advance</strong>, and <a href="the-discrete-lattice-and-the-thermal-circle.html">the discrete lattice article</a> is where the corpus's discreteness lives. The analogy is structural and is not a derivation.</p>
+<h2 id="what-it-does-not-give">What It Does Not Give</h2>
+<p><strong>It does not forbid a higher-derivative rung in principle.</strong> It says what such a rung would cost: an extra canonical pair with unbounded energy, removable only by degeneracy or by a cutoff. <strong>A future rung with four derivatives would be legitimate if it were degenerate or effective</strong>, and this article states the condition rather than a ban.</p>
+<p><strong>It does not establish that the corpus's truncation is controlled.</strong> That needs a power counting for $\frac{h}{2\pi}$ and a statement of which scale is integrated out; the corpus has the expansion and not the counting, and this article does not supply it.</p>
+<p><strong>It does not address the ghost's own quantisation.</strong> A ghost field's propagator has the wrong sign, and its treatment — indefinite metric, or a PT-symmetric reading, or a Lee–Wick contour — is a subject of its own. The corpus does not need it, because it has no ghost.</p>
+<p><strong>It does not explain why the potential has the depth it has.</strong> Stability against a ghost and stability of a vacuum are different questions; the second belongs to the field's potential and not to the order of its derivatives.</p>
+<h2 id="summary">Summary</h2>
+<p>A nondegenerate density with a second or higher derivative gives an extra canonical pair, and its Hamiltonian is linear in the extra momentum — hence unbounded. <strong>That is Ostrogradsky's theorem</strong>, and its count is $2N$ pieces of canonical data for a density of order $N$, with each pair beyond the first a ghost.</p>
+<p>In this corpus the ghost's scalar part is negative and its norm is negative together, because the energy is the scalar part of a Hermitian element and the norm is the indefinite form's. <strong>Stability and unitarity fail as one display</strong>, which is the theorem's sharpest form here.</p>
+<p>No rung goes past two derivatives because every density is a bilinear in one gradient. <strong>The second-order <em>appearances</em> are not second-order <em>actions</em></strong>: the quantum potential's $\nabla^{2}\varrho/\varrho$ and the Korteweg stress come from gradient energies that are first order in each factor, and a variation raises the equation's order without raising the density's. The test is to count derivatives in the density.</p>
+<p>Two escapes are available and the corpus uses both: degeneracy, which removes the pair as a constraint, and the cutoff, which puts the ghost's mass out of reach. Neither evades the theorem; both are what the theorem permits. The lattice's doublers are the discrete face of the same trade.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal L(q,\dot q,\ddot q)$</td>
+<td>A density with a second derivative; the theorem's subject</td>
+</tr>
+<tr>
+<td>$p_2=\partial\mathcal L/\partial\ddot q$</td>
+<td>The second momentum; its invertibility for $\ddot q$ is the nondegeneracy</td>
+</tr>
+<tr>
+<td>$p_1=\partial\mathcal L/\partial\dot q-\frac{d}{dt}p_2$</td>
+<td>The first momentum, shifted by the second's total derivative</td>
+</tr>
+<tr>
+<td>$H=p_1\dot q+p_2\ddot q-\mathcal L$</td>
+<td>The Ostrogradsky Hamiltonian; linear in $p_1$</td>
+</tr>
+<tr>
+<td>$2N$</td>
+<td>The canonical data of a density of order $N$; a ghost per pair beyond the first</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde\Sigma_\Psi)=\mathcal H$</td>
+<td>The energy as the scalar part; the display in which a ghost's sign is read</td>
+</tr>
+<tr>
+<td>$p_{\mathrm{qnt}}\propto\frac{h^{2}}{4\pi^{2}}\frac{\nabla^{2}\varrho}{\varrho}$</td>
+<td>The quantum pressure; second order in the equation, first order in the density</td>
+</tr>
+<tr>
+<td>$\mathcal E_{\mathrm{grad}}\propto|\vec\nabla_\Phi\varrho|^{2}$</td>
+<td>The gradient energy behind it; the third row of the ladder</td>
+</tr>
+<tr>
+<td>$\frac{h^{2}}{4\pi^{2}}$</td>
+<td>The expansion parameter of the gradient corrections; the cutoff's bookkeeping</td>
+</tr>
+<tr>
+<td>$f(R)$</td>
+<td>The degenerate higher-derivative case, a scalar-tensor theory with no extra state</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>M. Ostrogradsky, "Mémoires sur les équations différentielles, relatives au problème des isopérimètres," <em>Mémoires de l'Académie Impériale des Sciences de St. Pétersbourg</em> 6 (1850), 385–517, the original theorem.</li>
+<li>Richard P. Woodard, "Ostrogradsky's theorem on Hamiltonian instability," <em>Scholarpedia</em> 10 (2015), 32243, the modern statement and its use in higher-derivative gravity.</li>
+<li>Marc Henneaux and Claudio Teitelboim, <em>Quantization of Gauge Systems</em> (Princeton University Press, 1992), for degenerate higher-derivative systems and the constraint removal.</li>
+<li>Thomas P. Sotiriou and Valerio Faraoni, "<em>f(R)</em> theories of gravity," <em>Reviews of Modern Physics</em> 82 (2010), 451–497, for the degenerate case and the equivalent scalar-tensor reading.</li>
+<li>Kenneth G. Wilson, "Confinement of quarks," <em>Physical Review D</em> 10 (1974), 2445–2459, and the lattice literature, for the doubler problem and the Wilson term.</li>
+<li><a href="the-dirac-bergmann-algorithm-first-and-second-class-constraints.html">The Dirac–Bergmann Algorithm: First- and Second-Class Constraints</a>, for the constraint that removes the degenerate pair.</li>
+<li><a href="belinfante-rosenfeld-why-the-canonical-stress-tensor-is-not-symmetric.html">Belinfante–Rosenfeld: Why the Canonical Stress Tensor Is Not Symmetric</a>, for the Korteweg stress as constitutive rather than bookkeeping.</li>
+<li><a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a>, for a second-order appearance in the equations that is not one in the density.</li>
+<li><a href="the-three-scales-c-hbar-and-k-b-as-the-three-continuations.html">The Three Scales: $c$, $\hbar$ and $k_B$ as the Three Continuations</a>, the section's other result about the shape of the chain.</li>
+<li><a href="the-discrete-lattice-and-the-thermal-circle.html">The Discrete Lattice and the Thermal Circle</a>, for the corpus's discreteness and the doublers' home.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

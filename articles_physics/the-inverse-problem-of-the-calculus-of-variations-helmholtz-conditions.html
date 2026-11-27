@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Inverse Problem of the Calculus of Variations: Helmholtz&#x27;s Conditions — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Not every equation is some action&#x27;s Euler–Lagrange equation, and the test that decides is a finite list of algebraic and differential…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-inverse-problem-of-the-calculus-of-variations-helmholtzs-conditions"><strong>The Inverse Problem of the Calculus of Variations: Helmholtz's Conditions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Not every equation is some action's Euler–Lagrange equation, and the test that decides is a finite list of algebraic and differential identities on the equation itself. They are Helmholtz's conditions, and in this corpus they do two jobs. They make the phrase <em>the viscous term has no action</em> a theorem rather than a remark, and they grade <a href="criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation.html">the criterion</a>, which asks of one polar coordinate the question Helmholtz asks of a whole system.</p>
+<p><strong>What is established.</strong> Four things. First, the test is self-adjointness of the equation's linearisation, and for a second-order equation it is three conditions that can be checked by differentiation. Second, the linear damped oscillator fails the second condition exactly when its damping is nonzero, so the failure is arithmetic and not a matter of taste. Third, a multiplier repairs the failure only when the damping is algebraic in the velocity and carries no spatial derivative; the Caldirola–Kanai Lagrangian is written out, and the reason the corpus does not use it is stated. Fourth, the corpus's criterion is Helmholtz's test with the multiplier fixed at one and the equation fixed at one coordinate — stricter than Helmholtz, and the difference is exactly where the criterion earns its keep.</p>
+<p><strong>What the corpus adds.</strong> Nothing to the theorem, which is Helmholtz's of 1887 and is standard. What it adds is the ordering and the application: the theorem is stated <em>before</em> the criterion that uses it, the criterion is graded against it in one table, and the corpus's repeated sentence about the viscous term is replaced by the condition that actually fails. The three places that said the sentence were right about the conclusion and silent about the reason.</p>
+<p><strong>Why it comes here.</strong> The section this article sits in builds actions and varies them. This is the reverse direction — from an equation back to an action — and it is the only article in the block that runs that way. A reader who has the forward map and not the inverse will accept <em>this equation is not variational</em> as an assertion about the corpus's preferences; with the inverse map in hand it is a computation.</p>
+<h2 id="the-problem">The Problem</h2>
+<p><strong>Stated once.</strong> Given a system of equations</p>
+<p>$$
+E_a\bigl(\xi,\partial_\imath\xi,\partial_\imath\partial_\jmath\xi\bigr)=0,\qquad a=1,\dots,N,
+$$</p>
+<p>decide whether there is a density $\mathcal L$ with</p>
+<p>$$
+E_a=\frac{\delta S}{\delta\xi_a},\qquad S=\int d^4r\;\mathcal L ,
+$$</p>
+<p>where $\delta/\delta\xi_a$ is the variational derivative. <strong>The question is not whether a solution can be found</strong> — every equation has solutions — <strong>but whether the equation is the stationarity condition of a functional.</strong></p>
+<p><strong>Why it is a question with a definite answer.</strong> The variational derivative is not an arbitrary operation. Its linearisation is self-adjoint by construction, because it is the second variation of a number and mixed partials commute. <strong>So an equation that is a variational derivative inherits a symmetry of its own linearisation</strong>, and that symmetry is testable without knowing $\mathcal L$. This is the whole content of the theorem: the symmetry is necessary, and Helmholtz proved it sufficient.</p>
+<p><strong>Why a reader of this corpus meets it early.</strong> Every rung of the ladder is obtained by varying an action, so the forward direction is used everywhere and never questioned. The reverse direction is used in exactly one claim, and the claim is quoted in three sectors: <em>the viscous term has no action</em>. <strong>That claim is the theorem's contrapositive</strong>, and until the theorem is stated the claim is a report of what the corpus has failed to find.</p>
+<h2 id="the-test">The Test</h2>
+<p><strong>The linearisation, and the pairing it must respect.</strong> Let $u_a$ be a variation and let $DE$ be the linearisation of $E$ at a configuration,</p>
+<p>$$
+(DE\,u)_a=\sum_b\Bigl(\frac{\partial E_a}{\partial\xi_b}u_b+\frac{\partial E_a}{\partial(\partial_\imath\xi_b)}\partial_\imath u_b+\frac{\partial E_a}{\partial(\partial_\imath\partial_\jmath\xi_b)}\partial_\imath\partial_\jmath u_b\Bigr),
+$$</p>
+<p>and pair two variations by $\langle u,v\rangle=\int d^4r\,\sum_a u_a v_a$. <strong>The test is</strong></p>
+<p>$$
+\boxed{\;E\text{ is variational at unit multiplier}\iff DE=(DE)^{\dagger}\;}
+$$</p>
+<p>with the adjoint taken in that pairing: $\langle u,DE\,v\rangle=\langle(DE)^\dagger u,v\rangle$ for all $u,v$ of compact support. The adjoint moves every derivative by integration by parts and changes its sign once per derivative, which is why the conditions below are differential identities and not algebraic ones.</p>
+<p><strong>Why self-adjointness is the right statement.</strong> If $E=\delta S/\delta\xi$ then $DE$ is the Hessian of $S$ at the configuration, and a Hessian is symmetric: $\langle u,DE\,v\rangle$ is the mixed second variation $\delta^2S/\delta\xi_a\delta\xi_b\,u_av_b$, and exchanging $u$ and $v$ exchanges the order of two derivatives of one number. <strong>The converse is Helmholtz's theorem</strong>, and it is the direction that is not obvious: a self-adjoint linearisation can be integrated, first along a path in field space to give $S$, and the integrability of that path integral is exactly the self-adjointness.</p>
+<p><strong>A remark on locality.</strong> The theorem holds for local equations, and it produces a local density when the equation is local and the multiplier is a function of the fields. A nonlocal equation may be variational with a nonlocal action, and the test still applies with the pairing over the nonlocal space; the corpus uses only the local case, and the word <em>action</em> in the corpus's sentences means a local density.</p>
+<h2 id="the-three-conditions-for-a-second-order-system">The Three Conditions for a Second-Order System</h2>
+<p><strong>Written out, because they are checkable and the corpus checks one of them.</strong> For a system second order in the derivatives, define the <strong>mass matrix</strong> and two derived matrices,</p>
+<p>$$
+\Lambda_{ab}:=\frac{\partial E_a}{\partial(\partial_\imath\partial_\jmath\xi_b)}\quad(\text{symmetrised in }\imath,\jmath),\qquad
+A_{ab}:=\frac{\partial E_a}{\partial(\partial_\imath\xi_b)},\qquad
+B_{ab}:=\frac{\partial E_a}{\partial\xi_b}.
+$$</p>
+<p>Then $E$ is variational at unit multiplier exactly when, for every $a,b$ and every direction $\imath$,</p>
+<ol>
+<li><strong>symmetry of the mass matrix</strong>, $\Lambda_{ab}=\Lambda_{ba}$;</li>
+<li><strong>the damping condition</strong>, $A_{ab}+A_{ba}=2\,\partial_\imath\Lambda_{ab}$;</li>
+<li><strong>the curl condition</strong>, $B_{ab}-B_{ba}=\tfrac12\,\partial_\imath\bigl(A_{ab}-A_{ba}\bigr)$.</li>
+</ol>
+<p><strong>Each condition has a one-line reading.</strong> The first says the second variation has a symmetric coefficient of the highest derivative, which is what a Hessian has. The second says the part of the equation that is first order in the velocity is the total derivative of the mass matrix — a term that can be removed by a total derivative in the density and cannot survive as a genuine damping. The third says the part that is algebraic in the field is a gradient, up to the antisymmetric piece that the first-order part is allowed to carry.</p>
+<p><strong>What the conditions are not.</strong> They are not equations of motion and they constrain no solution. They constrain the <em>form</em> of the equation, and a single counterexample to any of them settles the question for that equation with no search over candidate Lagrangians. That is the practical value: <strong>the test is finite, and it is a differentiation.</strong></p>
+<p><strong>In the field case the derivative is a divergence.</strong> Replace $d/dt$ by $\partial_\imath$ and sum over the four directions; the conditions are unchanged in form, and the total derivative in condition 2 becomes a four-divergence. Nothing in the theorem depends on there being one independent variable. <strong>A field equation and a mechanical equation are graded by the same list</strong>, which is why the corpus can apply the theorem to a fluid equation and to an oscillator with the same sentence.</p>
+<h2 id="the-failure-the-corpus-quotes-damping">The Failure the Corpus Quotes: Damping</h2>
+<p><strong>The damped oscillator, and the condition that fails.</strong> Take</p>
+<p>$$
+E:=m\ddot\xi+\gamma\dot\xi+k\xi=0,\qquad m,k&gt;0,\ \gamma\ge0 .
+$$</p>
+<p>The mass matrix is $\Lambda=m$, symmetric, so condition 1 holds. The damping matrix is $A=\gamma$, so condition 2 reads</p>
+<p>$$
+\gamma+\gamma=2\frac{d}{dt}m=0 ,
+$$</p>
+<p>which fails for every $\gamma\ne0$. <strong>The failure is one line, it is exact, and it is the whole of <em>the viscous term has no action</em> at the mechanical rung.</strong> The term that makes the equation dissipative is precisely the term the condition excludes.</p>
+<p><strong>Why the condition excludes it, in words.</strong> A first-order term in the equation comes from a first-order term in the density, and a first-order term in a density is a total derivative unless it is contracted with something that breaks the integration by parts. In one variable there is nothing to contract with, so the term integrates away; <strong>a damping that survives the integration by parts is therefore not the variation of anything.</strong></p>
+<p><strong>The escape, written out honestly.</strong> Multiply the equation by a nowhere-zero function $\mu(t)$ and ask whether $\mu E$ is variational. Condition 2 now reads $2\mu\gamma=2\dot\mu m$, so $\dot\mu=(\gamma/m)\mu$ and $\mu=e^{\gamma t/m}$. The Lagrangian is the Caldirola–Kanai one,</p>
+<p>$$
+\mathcal L=\tfrac12 e^{\gamma t/m}\bigl(m\dot\xi^2-k\xi^2\bigr),
+$$</p>
+<p>whose Euler–Lagrange equation is $e^{\gamma t/m}(m\ddot\xi+\gamma\dot\xi+k\xi)=0$, which is the damped equation. <strong>So a multiplier exists, and the multiplier is a function of the time alone.</strong></p>
+<p><strong>Why the corpus does not take the escape.</strong> Three reasons, and only the third is decisive. The Lagrangian is explicitly time-dependent, so the energy it defines is not conserved and the Hamiltonian is not the physical energy. The multiplier depends on the absolute time and not on the state, so the action is not a functional of a history in the way the corpus's actions are. And <strong>the escape does not survive the field case</strong>: when the damping is a spatial operator rather than a number, the multiplier that condition 2 demands is</p>
+<p>$$
+\hat\mu=\exp\Bigl(\frac{1}{m}\int^{t}\hat\gamma\,dt'\Bigr)
+$$</p>
+<p>with $\hat\gamma$ an operator on the spatial dependence, which is not a function of the event and is not local. <strong>A multiplier that is nonlocal in space repairs the equation only by an action that is nonlocal in space</strong>, and the corpus's actions are densities.</p>
+<p><strong>This is the distinction the corpus needs and did not have.</strong> A damping that is algebraic in the velocity — Rayleigh's $\mathcal R=\tfrac12\gamma\dot\xi^2$, whose force is $\partial\mathcal R/\partial\dot\xi$ — can be absorbed by a time-only multiplier. A damping that is a spatial operator — the $\nu\nabla^2\vec v$ of viscosity — cannot be absorbed by any local multiplier, because the operator it must invert is the Laplacian. <strong>Rayleigh's function and viscosity are two different objects, and the theorem is what separates them.</strong> <a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a> writes the function; this article says why it cannot be a density.</p>
+<h2 id="the-multiplier-and-what-the-criterion-adds">The Multiplier, and What the Criterion Adds</h2>
+<p><strong>Helmholtz allows a multiplier and the corpus's criterion does not.</strong> The general statement is: $E$ is variational <em>up to a multiplier</em> when there is an invertible matrix $M_{ab}$ of functions on the jet with</p>
+<p>$$
+M_{ab}E_b=\frac{\delta S}{\delta\xi_a}.
+$$</p>
+<p><strong>The multiplier is an integrating factor, and it is where the two statements part.</strong> The criterion of the fluid block asks a strictly narrower question:</p>
+<blockquote>
+<p>Is this equation the Euler–Lagrange equation of <em>this</em> coordinate, at multiplier one?</p>
+</blockquote>
+<p><strong>Three grades, and the corpus uses all three.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>grade</th>
+<th>what holds</th>
+<th>what it means in the corpus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unit multiplier, named coordinate</td>
+<td>$E_a=\delta S/\delta\xi_a$ for the coordinate in question</td>
+<td>the criterion passes: the equation is that coordinate's momentum balance</td>
+</tr>
+<tr>
+<td>nonzero multiplier</td>
+<td>$M_{ab}E_b=\delta S/\delta\xi_a$ with $M\ne1$</td>
+<td>Helmholtz passes, the criterion fails: variational, but not as that coordinate's momentum, so it carries no conjugate charge</td>
+</tr>
+<tr>
+<td>no multiplier</td>
+<td>no $M$ and no $S$</td>
+<td>neither passes: the equation is not a stationarity condition at all</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The middle grade is the interesting one and the corpus meets it twice.</strong> The Caldirola–Kanai oscillator is the mechanical case: the damped equation is variational, and its multiplier is not the identity, so the equation is nobody's momentum balance. The <strong>combination</strong> of the criterion article is the field case: the real part of the field equation multiplied by the conjugate is a genuine equation and is not one coordinate's variation, which is why the criterion calls it a consequence of two coordinate equations rather than a fluid equation. <strong>Helmholtz tells you that such an object may still be variational; the criterion tells you that being variational is not enough.</strong></p>
+<p><strong>Why the narrower question is the right one for a fluid.</strong> A fluid equation is a statement about a current: continuity is the divergence of a momentum. A multiplier destroys that reading, because it multiplies the current by a matrix that is not the identity, so the object whose divergence vanishes is no longer the momentum of the named coordinate. <strong>At multiplier one the equation's own left side is the divergence; at any other multiplier it is a linear combination of divergences</strong>, and the charge a shift symmetry would give it is a combination too.</p>
+<h2 id="what-the-theorem-grades-and-what-it-does-not">What the Theorem Grades, and What It Does Not</h2>
+<p><strong>It grades the criterion, and it does so in one direction.</strong> The criterion implies Helmholtz at unit multiplier: an equation that is one coordinate's Euler–Lagrange equation has a self-adjoint linearisation. <strong>The converse fails</strong>, and the failing case is the middle grade of the table above. So the criterion is strictly stronger, and every failure of Helmholtz is a failure of the criterion while not every failure of the criterion is a failure of Helmholtz.</p>
+<p><strong>It makes one of the corpus's sentences exact, and the sentence was already right.</strong> <em>The viscous term has no action</em> becomes: the viscous term's equation fails Helmholtz's condition 2 at every multiplier that is a local function of the event. The three places that state the sentence can now cite the condition instead of the conclusion.</p>
+<p><strong>It does not decide four things.</strong></p>
+<ul>
+<li><em>The sign and the normalisation.</em> A variational equation has infinitely many actions, differing by a constant, a total derivative and a positive factor. The theorem produces one and fixes none.</li>
+<li><em>Stability.</em> A variational equation may have an energy unbounded below; that is a separate test, and <a href="ostrogradsky-or-why-no-rung-goes-past-two-derivatives.html">Ostrogradsky's</a> is its statement.</li>
+<li><em>A single history.</em> Dissipation has no action on one history; it has an action on two branches, which <a href="the-closed-time-path-action-one-action-on-two-branches.html">the closed-time-path article</a> writes. <strong>The two statements are not in conflict</strong>: the doubled action's variation gives the dissipative equation together with its noise, and the price is a field doubled and a history given up.</li>
+<li><em>Uniqueness of the multiplier.</em> When a multiplier exists it is not unique, because any constant multiple of an admissible multiplier is admissible. <strong>The multiplier is a gauge choice of the inverse problem</strong>, and the corpus's criterion fixes the gauge by fixing the multiplier at one.</li>
+</ul>
+<p><strong>A last caution, and it is the one a reader is most likely to need.</strong> Helmholtz's conditions are <em>local</em> integrability conditions, and a system can satisfy them locally and fail to have a global action — the same distinction as a closed form that is not exact. <strong>The corpus's actions are global by construction</strong>, written down and integrated, so the local theorem is enough for every use here; a reader who applies the theorem to a patched object, such as a connection on a nontrivial bundle, must state which patch.</p>
+<h2 id="summary">Summary</h2>
+<p>An equation is some action's Euler–Lagrange equation exactly when its linearisation is self-adjoint in the pairing of the fields, and for a second-order system that is three conditions on the coefficients: the mass matrix is symmetric, the first-order part is the total derivative of the mass matrix, and the algebraic part is a gradient up to the antisymmetric piece the first-order part may carry. <strong>The test is finite, local and checkable by differentiation.</strong></p>
+<p>The damped oscillator fails the second condition for every nonzero damping, which is the exact content of <em>the viscous term has no action</em>. A multiplier $e^{\gamma t/m}$ repairs the algebraic damping and produces the Caldirola–Kanai Lagrangian at the price of an explicit time dependence and a non-conserved energy; a damping that is a spatial operator, such as $\nu\nabla^2\vec v$, demands a multiplier that is an operator on space and therefore a nonlocal action. <strong>Rayleigh's function and viscosity are separated by exactly this difference.</strong></p>
+<p>The corpus's criterion is Helmholtz's test at multiplier one and at one named coordinate. Three grades follow — unit multiplier, nonzero multiplier, no multiplier — and the middle grade, variational but not as that coordinate's momentum, is the one the criterion exists to exclude. <strong>The criterion is strictly stronger than the theorem, and the theorem is what makes the criterion's failures meaningful.</strong></p>
+<p>The theorem fixes no sign, no normalisation, no stability and no single-history reading of dissipation. It fixes which equations can be varied, and that is the question the corpus's criterion asks.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_a=0$</td>
+<td>The system of equations, second order in the derivatives, indexed by $a=1,\dots,N$</td>
+</tr>
+<tr>
+<td>$\xi_a$</td>
+<td>The field or coordinate the system is written in</td>
+</tr>
+<tr>
+<td>$S=\int d^4r\,\mathcal L$</td>
+<td>The action, when it exists</td>
+</tr>
+<tr>
+<td>$\delta S/\delta\xi_a$</td>
+<td>The variational derivative; the equation is variational when $E_a$ equals it</td>
+</tr>
+<tr>
+<td>$DE$</td>
+<td>The linearisation of $E$ at a configuration, the Fréchet derivative</td>
+</tr>
+<tr>
+<td>$(DE)^\dagger$</td>
+<td>Its adjoint in the pairing $\langle u,v\rangle=\int d^4r\,\sum_a u_av_a$</td>
+</tr>
+<tr>
+<td>$\Lambda_{ab}$</td>
+<td>The mass matrix, $\partial E_a/\partial(\partial_\imath\partial_\jmath\xi_b)$ symmetrised</td>
+</tr>
+<tr>
+<td>$A_{ab}$</td>
+<td>$\partial E_a/\partial(\partial_\imath\xi_b)$, the first-order coefficient</td>
+</tr>
+<tr>
+<td>$B_{ab}$</td>
+<td>$\partial E_a/\partial\xi_b$, the algebraic coefficient</td>
+</tr>
+<tr>
+<td>$M_{ab}$</td>
+<td>The multiplier, an invertible matrix of functions on the jet; the identity at unit multiplier</td>
+</tr>
+<tr>
+<td>$\mu(t)=e^{\gamma t/m}$</td>
+<td>The Caldirola–Kanai multiplier of the damped oscillator</td>
+</tr>
+<tr>
+<td>$\mathcal R=\tfrac12\gamma\dot\xi^2$</td>
+<td>Rayleigh's dissipation function; its force is $\partial\mathcal R/\partial\dot\xi$</td>
+</tr>
+<tr>
+<td>$\hat\gamma$, $\hat\mu$</td>
+<td>A damping that is a spatial operator and the nonlocal multiplier it would demand</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Hermann von Helmholtz, "Über die physikalische Bedeutung des Prinzips der kleinsten Wirkung," <em>Journal für die reine und angewandte Mathematik</em> 100 (1887), 137–166, the original statement of the conditions.</li>
+<li>Peter J. Olver, <em>Applications of Lie Groups to Differential Equations</em> (2nd ed., Springer, 1993), Chapter 5, for the variational bicomplex, the self-adjointness test and the global obstruction stated as a cohomology.</li>
+<li>Ian M. Anderson, <em>The Variational Bicomplex</em> (technical report, Utah State University, 1989), for the field-theoretic form of the conditions and the multiplier.</li>
+<li>Ruggero Maria Santilli, <em>Foundations of Theoretical Mechanics I: The Inverse Problem in Newtonian Mechanics</em> (Springer, 1978), for the multiplier as an integrating factor and the classification of admissible dampings.</li>
+<li>P. Caldirola, "Forze non conservative nella meccanica quantistica," <em>Il Nuovo Cimento</em> 18 (1941), 393–400, and E. Kanai, "On the quantization of the dissipative systems," <em>Progress of Theoretical Physics</em> 3 (1948), 440–442, for the time-dependent Lagrangian of the damped oscillator.</li>
+<li>Herbert Goldstein, Charles P. Poole and John L. Safko, <em>Classical Mechanics</em> (3rd ed., Addison-Wesley, 2002), for Rayleigh's dissipation function and its place beside the Lagrangian.</li>
+<li><a href="criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation.html">Criterion for a Fluid Equation</a>, the criterion this theorem grades.</li>
+<li><a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a>, the dissipation function the theorem separates from a density.</li>
+<li><a href="the-closed-time-path-action-one-action-on-two-branches.html">The Closed-Time-Path Action: One Action on Two Branches</a>, where a dissipative equation acquires an action by being doubled.</li>
+<li><a href="ostrogradsky-or-why-no-rung-goes-past-two-derivatives.html">Ostrogradsky, or Why No Rung Goes Past Two Derivatives</a>, the stability test that the existence of an action does not supply.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

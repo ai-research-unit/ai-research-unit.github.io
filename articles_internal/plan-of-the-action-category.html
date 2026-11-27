@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan of the Category Biquaternion Universe Action — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. The eight articles the category names and does not have, written down so that a writing pass does not have to rediscover them. Each…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="plan-of-the-category-biquaternion-universe-action"><strong>Plan of the Category Biquaternion Universe Action</strong></h1>
+<p><strong>What this file is.</strong> The eight articles the category names and does not have, written down so that a writing pass does
+not have to rediscover them. Each entry gives the title, the section it belongs to, the object, the claim, and the
+warrant the claim needs. Nothing here is an article: the menu states each of these in the comment of its section, in one
+sentence, and no entry of the menu links to them, because a link to a file that does not exist is a broken link and the
+build reads <code>physics.md</code> for its sitemap.</p>
+<p><strong>The rule these titles obey.</strong> The title names the object and the result. A reader who has not read the abstract must be
+able to say what is studied. One colon at most, left of it the object, right of it the construction or the result.</p>
+<h2 id="the-category-as-it-stands">The Category as It Stands</h2>
+<p>Sixty articles in six sections and a catch-all, after the moves of 27 November 2026:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Section</th>
+<th>N</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>The Lagrangian</em></td>
+<td>3</td>
+<td>the object, its two charts, and the two extensions the charts imply</td>
+</tr>
+<tr>
+<td><em>From the Action to the Field Equation</em></td>
+<td>8</td>
+<td>the first arrow: variation, symmetry, connection</td>
+</tr>
+<tr>
+<td><em>From the Field Equation to the Fluid</em></td>
+<td>4</td>
+<td>the criterion and the five-step skeleton</td>
+</tr>
+<tr>
+<td><em>From the Fluid Equations to Thermodynamics Equations</em></td>
+<td>17</td>
+<td>the closure of a fluid into a substance</td>
+</tr>
+<tr>
+<td><em>From the Fluid to the Force</em></td>
+<td>2</td>
+<td>the force side of the last two steps</td>
+</tr>
+<tr>
+<td><em>From the Field Equation to the Quantum Field</em></td>
+<td>25</td>
+<td>the second continuation</td>
+</tr>
+<tr>
+<td><em>Other aspects</em></td>
+<td>1</td>
+<td>apparatus the chain assumes and does not own</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-chain-completing-four">The Chain-Completing Four</h2>
+<p>These do not add physics. They fill a place the chain already uses.</p>
+<h3 id="1-the-inverse-problem-of-the-calculus-of-variations-helmholtzs-conditions-and-which-equations-have-an-action">1. The Inverse Problem of the Calculus of Variations: Helmholtz's Conditions and Which Equations Have an Action</h3>
+<p><strong>Section.</strong> <em>The Lagrangian</em>, as the second entry, after <em>The Invariant Density</em>.</p>
+<p><strong>Object.</strong> A second-order system of equations and the question whether it is <em>some</em> Lagrangian's Euler–Lagrange system.</p>
+<p><strong>Claim.</strong> Helmholtz's conditions, stated and proved for the four-dimensional case and then read on the corpus's own
+equations: the integrability conditions on the variational derivative are necessary and locally sufficient, and they fail
+for exactly the equations the corpus says have no action. That makes "the viscous term has no action" a theorem instead
+of an assertion, and it grades the fluid criterion, which asks the same question of one polar coordinate that Helmholtz
+asks of the system.</p>
+<p><strong>Warrant.</strong> The Helmholtz conditions written out; the check on the damped oscillator and on the Navier–Stokes viscous
+term, both failing; the check on Klein–Gordon, passing. The criterion's article is the cross-reference, not the
+duplicate.</p>
+<p><strong>Why it is worth writing.</strong> Three sections assert the absence of an action and none cites the theorem. A criterion that
+grades equations should rest on the theorem that grades them.</p>
+<h3 id="2-the-diracbergmann-algorithm-first-and-second-class-constraints-and-which-of-the-algebras-actions-are-singular">2. The Dirac–Bergmann Algorithm: First- and Second-Class Constraints and Which of the Algebra's Actions Are Singular</h3>
+<p><strong>Section.</strong> <em>The Lagrangian</em>, last entry, after <em>Hamiltonian Field Theory</em>, whose irregular case it supplies.</p>
+<p><strong>Object.</strong> A Lagrangian whose Legendre transform is not regular, and the constraint algorithm that replaces it.</p>
+<p><strong>Claim.</strong> The algorithm in four steps — primary constraints, the consistency condition, the classification into first and
+second class, the Dirac bracket — and then the corpus's own actions classified: which have a singular Hessian, which
+constraints are first class, and what the gauge freedom of each is. The Gauss law of the electromagnetic action is the
+worked case, since the corpus already states it as a constraint rather than a choice of representative.</p>
+<p><strong>Warrant.</strong> The Hessian computed for the scalar, the Proca and the connection actions; the constraint count matching the
+degrees-of-freedom count the corpus states elsewhere; the Dirac bracket's Jacobi identity checked.</p>
+<p><strong>Why it is worth writing.</strong> The Hamiltonian article calls the Legendre transform regular and the corpus states
+constraints in five separate places. The general statement is missing, and it is the one that makes the five consistent.</p>
+<h3 id="3-belinfanterosenfeld-why-the-canonical-stress-tensor-is-not-symmetric-and-what-the-improvement-adds">3. Belinfante–Rosenfeld: Why the Canonical Stress Tensor Is Not Symmetric and What the Improvement Adds</h3>
+<p><strong>Section.</strong> <em>From the Action to the Field Equation</em>, immediately after <em>Stress–Energy, Conservation Laws and the Field
+Action</em>.</p>
+<p><strong>Object.</strong> The canonical Noether tensor, its antisymmetric part, and the improvement term built from the spin density.</p>
+<p><strong>Claim.</strong> The canonical tensor is conserved but not symmetric, and it is not symmetric in proportion to the spin the
+field carries. The improvement term makes it symmetric without changing the conserved charges, and the symmetric tensor
+is the one whose spatial block is a stress — which is the object the fluid's closure imports as $p\,\delta_{ij}$ plus a
+shear. The corpus's Frenkel condition and its spin-half tensor are the two instances.</p>
+<p><strong>Warrant.</strong> The improvement term constructed for the Dirac field and for the Proca field; the conservation of the
+improved tensor checked; the charges shown unchanged; the spin-half article's tensor recovered as the instance.</p>
+<p><strong>Why it is worth writing.</strong> The stress–energy article gives $T_{tt}$ and $T_{j\imath}$ for a scalar, and the closure
+takes a pressure. For a field with spin the two are not the same object, and nothing in the corpus says so.</p>
+<h3 id="4-the-chemical-potential-is-the-phases-frequency-math4-and-the-charge-it-is-conjugate-to">4. The Chemical Potential Is the Phase's Frequency: $\mu=-\partial_t\varphi$ and the Charge It Is Conjugate To</h3>
+<p><strong>Section.</strong> <em>From the Fluid Equations to Thermodynamics Equations</em>, in <em>The Local Thermal State and the Three Tests</em>,
+after <em>Covariant Local Equilibrium and Tolman Temperature</em>.</p>
+<p><strong>Object.</strong> The chemical potential, which the closure writes and never derives.</p>
+<p><strong>Claim.</strong> In this framework $\mu$ is not a new parameter. The phase of the polar word is the action, $-\partial_t\varphi$
+is its energy, and the Noether charge of the central phase symmetry is the particle number the potential is conjugate to.
+The Gibbs–Duhem relation the closure's consistency test needs then holds identically, and the sign that the test is
+sensitive to is the sign of $\partial_t\varphi$ and nothing else.</p>
+<p><strong>Warrant.</strong> The identification made on the charged scalar and on the Dirac field, where the phase symmetry is already
+stated; the Gibbs–Duhem relation derived rather than assumed; the sign checked against the Tolman article.</p>
+<p><strong>Why it is worth writing.</strong> The three tests have a parameter they take as given. One of them, consistency, is about the
+relation between the two. Deriving $\mu$ turns the test into a check.</p>
+<h2 id="the-four-new-statements">The Four New Statements</h2>
+<p>These are not missing steps. They are results the category's own material makes available and no article states.</p>
+<h3 id="5-the-free-energy-functional-at-finite-temperature-the-effective-potential-whose-minimum-is-the-state">5. The Free-Energy Functional at Finite Temperature: The Effective Potential Whose Minimum Is the State</h3>
+<p><strong>Section.</strong> <em>From the Fluid Equations to Thermodynamics Equations</em>, in <em>The State and Its Functionals</em>, after <em>The
+Partition Function</em>.</p>
+<p><strong>Object.</strong> The effective potential at $T\neq0$, and the statement that its minimum is the equilibrium state.</p>
+<p><strong>Claim.</strong> The zero-temperature Coleman–Weinberg potential exists in the corpus, in the electroweak sector. At finite
+temperature the same construction with the thermal propagator gives a potential whose minimum is the state the partition
+function selects, and whose curvature is the mass. That turns the closure's equation of state from a stipulation into a
+variation: the pressure is the potential's value at the minimum, not an input.</p>
+<p><strong>Warrant.</strong> The one-loop thermal potential computed for the scalar quartic; the minimum located; the pressure and the
+entropy density read off the potential and compared with the closure's own expressions; the high-temperature expansion
+checked against the standard $T^4$ behaviour.</p>
+<p><strong>Why it is worth writing.</strong> Without it the closure assumes its equation of state. With it the closure has a variational
+principle, and the category has one variational principle per arrow.</p>
+<h3 id="6-the-closed-time-path-action-one-action-on-two-branches-and-why-dissipation-needs-it">6. The Closed-Time-Path Action: One Action on Two Branches and Why Dissipation Needs It</h3>
+<p><strong>Section.</strong> <em>From the Fluid Equations to Thermodynamics Equations</em>, opening <em>The Departures from Equilibrium</em>.</p>
+<p><strong>Object.</strong> The in-in action on the Schwinger–Keldysh contour.</p>
+<p><strong>Claim.</strong> A dissipative flow does have an action — on a contour that runs forward and back — and the dissipation is the
+imaginary part of the effective action. That resolves a contradiction the corpus states in three places: the viscous term
+has no action (Rayleigh, the criterion), and the Schwinger–Keldysh formalism keeps a real-time history. Both are true, and
+the object that makes them compatible is the doubled action.</p>
+<p><strong>Warrant.</strong> The doubled action written for the scalar; the influence functional obtained by integrating out the
+environment; its imaginary part shown positive and identified with the Rayleigh dissipation function; the Israel–Stewart
+relaxation time recovered as the coefficient of the quadratic term.</p>
+<p><strong>Why it is worth writing.</strong> It is the only addition that converts the departures from a list into a derivation, and it
+removes a contradiction rather than adding a topic.</p>
+<h3 id="7-the-three-scales-math11-math12-and-math13-as-the-three-continuations">7. The Three Scales: $c$, $\hbar$ and $k_B$ as the Three Continuations</h3>
+<p><strong>Section.</strong> <em>Other aspects</em>.</p>
+<p><strong>Object.</strong> The category's own shape, stated as a result.</p>
+<p><strong>Claim.</strong> Each of the three constants is one continuation of the single premise, and each belongs to one arrow:
+$c$ to the relativistic structure, which is the algebra's own signature; $\hbar$ to the promotion, where the bracket
+becomes a commutator and $k_m=mc/\hbar$ appears; $k_B$ to the thermal closure, where the inverse temperature is a rapidity
+of the modular flow. The three are independent because no two of them compose, which is why the corpus has three arrows
+and not one, and why the non-quantum and non-relativistic limits are different operations.</p>
+<p><strong>Warrant.</strong> The three appearances of each constant collected from the articles that state them; the claim that no pair
+composes argued from the failure of the corresponding limits to commute, which two articles already record; the map from
+constant to arrow drawn once.</p>
+<p><strong>Why it is worth writing.</strong> The category's shape is currently a layout. This makes it a result, and it is the natural
+closing article.</p>
+<h3 id="8-ostrogradsky-or-why-no-rung-goes-past-two-derivatives">8. Ostrogradsky, or Why No Rung Goes Past Two Derivatives</h3>
+<p><strong>Section.</strong> <em>Other aspects</em>.</p>
+<p><strong>Object.</strong> Higher-derivative Lagrangians and the instability they carry.</p>
+<p><strong>Claim.</strong> Every rung's action is second order in the field, and the fluid's Korteweg stress is second order in the
+density. A third derivative buys a ghost, by Ostrogradsky's theorem, and in this algebra the ghost is sharper than usual:
+the Hermitian form is indefinite, so the negative-norm mode is not a technicality but a state the corpus already carries.
+The second variation, read as Legendre–Hadamard, then says which of the corpus's stationary points are minima.</p>
+<p><strong>Warrant.</strong> Ostrogradsky's construction in the two-derivative-plus case; the ghost's energy computed; the indefinite form
+shown to make the ghost a negative-norm state; the second variation of the scalar action's stationary points classified.</p>
+<p><strong>Why it is worth writing.</strong> It explains a uniformity the corpus exhibits everywhere and never justifies, and it gives the
+stability question a home.</p>
+<h2 id="what-this-plan-does-not-do">What This Plan Does Not Do</h2>
+<p>It does not decide the order of writing beyond the section each article joins. It does not restate the corpus's
+conventions: an article written from this plan follows the template, reads its section's neighbours, and cites them. It
+does not create menu entries: when one of these is written, its entry goes into the section named above, with its comment,
+in the position named above.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

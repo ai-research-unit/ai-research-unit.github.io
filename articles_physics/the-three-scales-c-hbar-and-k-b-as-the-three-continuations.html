@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Three Scales: $c$, $\hbar$ and $k_B$ as the Three Continuations — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The corpus&#x27;s chain of arrows crosses a change of unit exactly three times, and it carries exactly three constants for the crossing: between…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-three-scales-math0-math1-and-math2-as-the-three-continuations"><strong>The Three Scales: $c$, $\hbar$ and $k_B$ as the Three Continuations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The corpus's chain of arrows crosses a change of unit exactly three times, and it carries exactly three constants for the crossing: $c$ between space and time, $\frac{h}{2\pi}$ between action and phase, $k_B$ between energy and temperature. <strong>Each is an exchange rate between two quantities that the algebra itself does not distinguish</strong>, and each marks one of the three continuations — the causal, the quantum and the thermal — that turn a Lagrangian's solutions into a physical world.</p>
+<p><strong>What is established.</strong> Four things. First, what a constant of this kind <em>is</em> here: not a parameter of the algebra, but a rate between two of the reading's labels, and setting it to one is a choice of chart and not a physical statement. Second, the three, each with its arrow, its combination in the corpus's letters, and its limit. Third, the sharp asymmetry: <strong>two of the three carry a physical limit and one does not</strong> — $c$ and $\hbar$ mark regimes, and $k_B$ marks none, because a temperature is a rate and not a scale. Fourth, the one combination that carries all three, $c\beta=\frac{hc}{2\pi k_BT}$, which is the circumference of the thermal circle measured in the spacetime's own length.</p>
+<p><strong>What is not new.</strong> That these are the constants of relativity, quantum mechanics and thermodynamics is not a claim. <strong>What the corpus adds is the count</strong>: why three and not four, what each converts, which arrow each belongs to, and the observation that the corpus's own symbols already exhibit the exchange rates without ever saying so.</p>
+<p><strong>Why this belongs in the catch-all.</strong> It is a result about the <em>shape</em> of the chain rather than a step in it: it says that the arrows of the sections above are three because the algebra's unit structure leaves three exchanges to make. <strong>A reader who has followed the chain will have seen each constant used and none of them accounted for</strong>, and this article is the accounting.</p>
+<h2 id="what-a-continuation-is-here">What a Continuation Is Here</h2>
+<p><strong>The algebra has no unit.</strong> Every element of $\mathbb{B}$ is a number: the basis $e_\imath$ is fixed by $e_0^{2}=-1$ and the metric $\mathrm{U}(1,3)$, the imaginary unit $i$ is the algebra's own, and no display in the algebra carries a dimension. <strong>Every dimension in this corpus belongs to the physical reading</strong> — to the labelling of a coefficient as a length, an energy or a period.</p>
+<p><strong>So a constant is an exchange rate between two labels.</strong> If the reading labels one quantity in metres and another in seconds, and the algebra relates the two coefficients as if they were one number, then the reading must supply the rate. <strong>That rate is the constant</strong>, and setting it to one is the statement that the two labels are the same unit. <strong>Nothing physical changes</strong>: a chart of units is a chart, and the corpus's rule that a display carries its whole dimension or none is the rule that keeps the choice visible.</p>
+<p><strong>The test of whether a constant is of this kind.</strong> Ask whether the algebra's statements remain true when the constant is varied. <strong>For all three of these the answer is yes</strong>: the biquaternion equations hold for any $c$, the phase-action relation for any $\frac{h}{2\pi}$, the Gibbs exponent for any $k_B$. <strong>A constant that failed the test would be a parameter of the dynamics</strong>, and the corpus's mass, coupling and $\nu_m$ are of that kind instead.</p>
+<h2 id="math19-space-and-time">$c$: Space and Time</h2>
+<p><strong>Where it enters.</strong> The reading labels one coordinate as a length and one as a time, and the algebra's temporal coordinate is a length:</p>
+<p>$$
+r'_t:=c\,t ,\qquad \partial_{t'}=c\,\partial_{r'_t} .
+$$</p>
+<p><strong>The element's components then carry $c$ explicitly</strong>: the anti-Hermitian sector's electric part enters as $i\vec E/c$ and its magnetic part as $ic\vec B$, and the invariant $\tilde F\tilde F^{*}$ splits into $\vec B^{2}-\vec E^{2}/c^{2}$ and $\vec E\cdot\vec B/c$. <strong>The $c$'s in those displays are not decoration</strong>: they are what makes the two three-vectors commensurable inside one bivector.</p>
+<p><strong>What $c$ is a rate between.</strong> The two things the algebra refuses to distinguish are the temporal and the spatial coefficients of one bivector; the reading distinguishes them as seconds and metres; $c$ is the rate. <strong>The light cone is the algebra's metric read through that rate</strong>, which is why the corpus can say that the signature is given and the speed of light is a labelling.</p>
+<p><strong>Its limit, and this is the corpus's cleanest example of a continuation.</strong> $c\to\infty$ at fixed time sends $r'_t\to\infty$, and the displays above lose their magnetic-electric asymmetry: the Galilean structure is the $c\to\infty$ limit of the bivector. <strong>So $c$ is a continuation parameter in the strict sense</strong> — the relativistic theory is a one-parameter family whose endpoint is the Galilean one, and this is the sense in which the corpus's phrase <em>the three continuations</em> is meant.</p>
+<p><strong>What is not claimed.</strong> That $c$ is derived. It is the rate the reading supplies, and the corpus's metric does not produce it: $\mathrm{U}(1,3)$ fixes the signature and not the exchange rate.</p>
+<h2 id="math36-action-and-phase">$\hbar$: Action and Phase</h2>
+<p><strong>Where it enters.</strong> The polar word's exponent is a phase, and the phase is the action divided by the quantum:</p>
+<p>$$
+\tilde\Xi=n_{\mathrm{num}}\,e^{\frac{2\pi iS}{h}},
+\qquad
+\frac{h}{2\pi}=\hbar .
+$$</p>
+<p><strong>The constant appears as $\frac{h}{2\pi}$ and not as $h$</strong> because the exponent must be an angle and one turn is $2\pi$; <strong>the corpus writes $\hbar$ where it writes a derivative and $\frac{h}{2\pi}$ where it writes a turn.</strong> <a href="the-chemical-potential-is-the-phases-frequency.html">The chemical potential article</a> is the place where the two writings meet: $\mu_{\mathrm{chm}}=-\partial_{t'}S=\frac{h}{2\pi}\omega_\mu$.</p>
+<p><strong>Its other entrance, and it is the same rate.</strong> The canonical bracket's $i\hbar$ and the commutator's $i$ are the statement that the algebra's non-commutativity, read as a physical commutator, has the units of action. <strong>So $\frac{h}{2\pi}$ is the rate between the algebra's angle and the reading's action</strong>, exactly as $c$ is the rate between the algebra's temporal coefficient and the reading's second.</p>
+<p><strong>Its limit.</strong> $\hbar\to0$ at fixed action is the ray limit: the phase oscillates without limit, the polar word's interference terms average away, and the fluid's guidance relation becomes the classical one. <strong>This is the second continuation</strong>, and the corpus's reverse-Madelung map is its exact statement: the fluid is what the wave becomes when the phase's rate is large compared to the action scale.</p>
+<p><strong>The trap the corpus avoids and a reader may not.</strong> Writing $\hbar=1$ is a chart choice, and it hides the fact that the phase and the action are different labels. <strong>A display that sets $\hbar=1$ and then claims a dimension is a display that has forgotten which chart it is in</strong>; the corpus's rule that a display carries its whole dimension or none is the guard, and it is why the exponent in the polar word is written $\frac{2\pi S}{h}$ and not $S$.</p>
+<h2 id="math53-energy-and-period">$k_B$: Energy and Period</h2>
+<p><strong>Where it enters.</strong> The temperature is a scale of energy per degree, and it enters the corpus in its inverse, as a period:</p>
+<p>$$
+\beta=\frac{h}{2\pi k_BT},\qquad
+\text{a time};\qquad
+\beta\omega_\mu=\frac{\mu_{\mathrm{chm}}}{k_BT},\ \text{a number}.
+$$</p>
+<p><strong>The corpus's $\beta$ is a period and not a reciprocal temperature</strong>, which is why it can be the circumference of the imaginary-time circle and why the fugacity is a number of turns. <strong>The constant $k_B$ is what converts the period back to a temperature</strong>, and $\frac{h}{2\pi}$ enters with it because a period and an energy are related through the action quantum.</p>
+<p><strong>So $k_B$ is the one of the three whose combination already contains another.</strong> $\beta$ carries $\frac{h}{2\pi}$ and $k_B$ together, and that is not an accident: <strong>a thermal period is a statement about both the quantum and the degree</strong>, since a temperature is a rate of energy per degree and an energy is a rate of phase.</p>
+<p><strong>Its limit, and the asymmetry.</strong> There is no independent $k_B\to0$ or $k_B\to\infty$ limit: at fixed $T$ the constant is a unit conversion, and the limit that matters is $T\to0$, which is $\beta\to\infty$. <strong>A temperature is not a regime in the way a velocity or an action is</strong>; it is a rate on the same footing as a frequency, which is why the fourth article of this subsection can identify a chemical potential with a frequency and a temperature with a period. <strong>Two of the three constants mark a regime and one marks a unit.</strong> A reader who expects a third continuation in the sense of the first two will look for it and not find it, and this is why.</p>
+<p><strong>What this does not weaken.</strong> The thermal structure is still a continuation in the corpus's sense: the Euclidean rotation $r'_t\mapsto-i\tau$ is the step, and it is a continuation of the <em>coordinate</em> and not of the constant. <strong>So the three continuations are the light cone, the phase and the thermal circle</strong>, and the three constants are their exchange rates; the third arrow's continuation parameter is $\beta$, and $k_B$ is what names it.</p>
+<h2 id="the-combination-that-carries-all-three">The Combination That Carries All Three</h2>
+<p><strong>One length contains all three constants, and it is the thermal circle's circumference.</strong></p>
+<p>$$
+L_\beta:=c\,\beta=\frac{hc}{2\pi k_BT} .
+$$</p>
+<p><strong>The first writing is the geometric one</strong>: the thermal circle has circumference $\beta$ in the time coordinate and $c\beta$ in the spatial coordinates, so $L_\beta$ is the size of the circle measured in the length the spacetime uses. <strong>The second writing is the constant-counting one</strong>: $h$, $c$ and $k_B$ appear, each once, and nothing else does.</p>
+<p><strong>What it is a length for.</strong> It is the <strong>relativistic thermal wavelength</strong>: at distances shorter than $L_\beta$ the thermal ensemble's typical mode is relativistic, and at longer distances it is not. <strong>So the combination is not a curiosity of units; it is the boundary of the regime where all three structures are simultaneously relevant</strong>, and a fluid whose gradients are shorter than $L_\beta$ needs the relativistic thermal treatment while one whose gradients are longer may not.</p>
+<p><strong>The rest of the table, so that the count is visible.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>the constants it carries</th>
+<th>what is missing, and why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_\beta=c\beta=\frac{hc}{2\pi k_BT}$</td>
+<td>$c$, $\frac{h}{2\pi}$, $k_B$</td>
+<td>nothing; the meeting point</td>
+</tr>
+<tr>
+<td>$\lambda_T=\frac{h}{\sqrt{2\pi m k_BT}}$</td>
+<td>$\frac{h}{2\pi}$, $k_B$, the mass</td>
+<td>$c$, because it is the non-relativistic limit</td>
+</tr>
+<tr>
+<td>$\frac{\mu_{\mathrm{chm}}}{k_BT}=\beta\omega_\mu$</td>
+<td>$\frac{h}{2\pi}$, $k_B$</td>
+<td>$c$, because it is a ratio of rates</td>
+</tr>
+<tr>
+<td>$mc^{2}$</td>
+<td>$c$, the mass</td>
+<td>$\frac{h}{2\pi}$ and $k_B$, because it is a rest energy</td>
+</tr>
+<tr>
+<td>$\frac{2\pi S}{h}$</td>
+<td>$\frac{h}{2\pi}$</td>
+<td>$c$ and $k_B$, because it is a phase</td>
+</tr>
+<tr>
+<td>$\frac{mc}{\hbar}=2\pi\nu_m$</td>
+<td>$c$, $\frac{h}{2\pi}$, the mass</td>
+<td>$k_B$, because it is a zero-temperature rate</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Each row is a statement about which structure the object is blind to</strong>, and the corpus's articles sit in rows: the fluid articles in the third, the quantisation articles in the fifth, the mass articles in the sixth.</p>
+<h2 id="why-exactly-three">Why Exactly Three</h2>
+<p><strong>One constant per arrow that crosses a unit.</strong> The chain has three arrows that do: from the algebra's element to spacetime ($c$), from the field's configuration to its amplitude and phase ($\frac{h}{2\pi}$), and from the configuration's rate to a thermal weight ($k_B$). <strong>The other arrows do not cross a unit</strong>: the variation, the Legendre transform, the Noether construction and the Hamiltonian transcription are all unit-preserving operations on displays that already carry their dimensions.</p>
+<p><strong>What a fourth would be, and why it is absent.</strong> Newton's $G$ is the exchange rate between a mass and a length — the one the corpus does not carry, because <strong>gravity is not one of the arrows</strong>: the corpus's metric is given and not generated, and its curvature is a curvature of a connection and not of spacetime. <strong>So the absence of $G$ from the three is the same statement as the absence of a gravitational rung from the chain</strong>, and a reader who adds $G$ to the list should also add the arrow it belongs to.</p>
+<p><strong>The count, stated as the result it is.</strong> <em>Three constants, three arrows, and no fourth</em> is not an accident of the corpus's choice of subjects; it is the statement that the chain converts units exactly three times. <strong>That is the shape this category's comment promised to state as a result rather than leave as a layout</strong>, and it is the reason the three constants are worth an article rather than a table.</p>
+<h2 id="what-it-does-not-give">What It Does Not Give</h2>
+<p><strong>It does not give the values.</strong> The corpus does not derive $c$, $\frac{h}{2\pi}$ or $k_B$ from the algebra, and nothing here suggests it could: they are the reading's rates, and a rate is supplied and not computed.</p>
+<p><strong>It does not claim the constants are unreal or that setting them to one is wrong.</strong> Setting them to one is the correct chart for many computations; <strong>the claim is only that the choice must be visible</strong>, which is the corpus's rule for displays.</p>
+<p><strong>It does not address varying constants.</strong> A constant that varied would be a field, and a field of this kind would be a dynamical parameter of the reading; the corpus has no such object and this article does not propose one.</p>
+<p><strong>It does not rank the three.</strong> The order $c$, $\frac{h}{2\pi}$, $k_B$ is the order of the arrows, not of importance, and the third's lack of a limit is a fact about temperature rather than a demotion.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra carries no unit, so every dimension belongs to the physical reading, and each of the corpus's three constants is an exchange rate between two of the reading's labels: $c$ between the temporal and spatial coefficients of a bivector, $\frac{h}{2\pi}$ between the algebra's angle and the reading's action, and $k_B$ between a period and a temperature.</p>
+<p>Two of the three mark regimes — $c\to\infty$ is the Galilean limit and $\hbar\to0$ the ray limit — and the third does not, because <strong>a temperature is a rate and not a scale</strong>. The third continuation's parameter is therefore $\beta$, the thermal circle's circumference, and $k_B$ is what names its inverse.</p>
+<p>The one combination that carries all three is $c\beta=\frac{hc}{2\pi k_BT}$, the thermal circle's circumference in the spacetime's own length and the relativistic thermal wavelength: the length at which the causal, quantum and thermal structures are simultaneously relevant. <strong>Its presence in the list of standard objects makes the count visible</strong>, since each other object is blind to one of the three.</p>
+<p>Three constants because the chain crosses a unit exactly three times, and no fourth because gravity is not an arrow. The constants are supplied and not derived, the chart choice is a choice, and the count is the result.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c$</td>
+<td>The rate between the temporal and spatial labels; $r'_t=ct$</td>
+</tr>
+<tr>
+<td>$r'_t$, $\partial_{t'}=c\,\partial_{r'_t}$</td>
+<td>The temporal coordinate in length units and its derivative</td>
+</tr>
+<tr>
+<td>$\frac{h}{2\pi}=\hbar$</td>
+<td>The rate between the algebra's angle and the reading's action</td>
+</tr>
+<tr>
+<td>$\tilde\Xi=n_{\mathrm{num}}e^{\frac{2\pi iS}{h}}$</td>
+<td>The polar word, whose exponent is a number of turns</td>
+</tr>
+<tr>
+<td>$k_B$</td>
+<td>The rate between a temperature and an energy per degree</td>
+</tr>
+<tr>
+<td>$\beta=\frac{h}{2\pi k_BT}$</td>
+<td>The thermal period; the circumference of the imaginary-time circle</td>
+</tr>
+<tr>
+<td>$\beta\omega_\mu=\frac{\mu_{\mathrm{chm}}}{k_BT}$</td>
+<td>The twist; carries $\frac{h}{2\pi}$ and $k_B$ and not $c$</td>
+</tr>
+<tr>
+<td>$L_\beta=c\beta=\frac{hc}{2\pi k_BT}$</td>
+<td>The thermal circle's circumference in length; the relativistic thermal wavelength</td>
+</tr>
+<tr>
+<td>$\lambda_T=\frac{h}{\sqrt{2\pi mk_BT}}$</td>
+<td>The non-relativistic thermal wavelength; the $c$-blind limit of $L_\beta$</td>
+</tr>
+<tr>
+<td>$2\pi\nu_m=\frac{mc}{\hbar}$</td>
+<td>The mass rate; the rest-energy zero of the chemical potential</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1,3)$</td>
+<td>The metric; it fixes the signature and not the exchange rates</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>L. D. Landau and E. M. Lifshitz, <em>The Classical Theory of Fields</em> (4th ed., Pergamon, 1975), for $c$ in the electromagnetic invariants and the Galilean limit.</li>
+<li>Lev D. Landau and Evgeny M. Lifshitz, <em>Quantum Mechanics: Non-Relativistic Theory</em> (3rd ed., Pergamon, 1977), §1–6, for the action quantum, the phase and the classical limit.</li>
+<li>L. D. Landau and E. M. Lifshitz, <em>Statistical Physics, Part 1</em> (3rd ed., Pergamon, 1980), §44, for the thermal wavelength and the relativistic thermal scale.</li>
+<li>John David Jackson, <em>Classical Electrodynamics</em> (3rd ed., Wiley, 1999), for the Gaussian and SI writings of $c$ in the field invariants.</li>
+<li>Michael E. Peskin and Daniel V. Schroeder, <em>An Introduction to Quantum Field Theory</em> (Addison-Wesley, 1995), §2 and its units discussion, for the natural-unit chart and what setting $\hbar=c=1$ hides.</li>
+<li><a href="physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a>, for the corpus's own rule that a display carries its whole dimension or none.</li>
+<li><a href="the-chemical-potential-is-the-phases-frequency.html">The Chemical Potential Is the Phase's Frequency</a>, where $\frac{h}{2\pi}$ and $k_B$ meet in the twist of the thermal circle.</li>
+<li><a href="the-fluid-wave-correspondence-which-constant-each-field-carries.html">The Fluid–Wave Correspondence: Which Constant Each Field Carries</a>, for the same bookkeeping applied to the reverse map's slots.</li>
+<li><a href="the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a>, the section's other entry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

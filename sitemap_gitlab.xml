@@ -581,8 +581,28 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-dirac-bergmann-algorithm-first-and-second-class-constraints.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/noethers-theorem-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/belinfante-rosenfeld-why-the-canonical-stress-tensor-is-not-symmetric.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-minimal-coupling-in-biquaternionic-form.html</loc>
@@ -605,15 +625,7 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-renormalization-group-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/particle-spins-in-the-biquaternion-algebra-three-carriers-their-meaning-and-their-order.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -635,6 +647,10 @@
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-partition-function-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-free-energy-functional-at-finite-temperature.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/quantum-thermodynamics-in-biquaternionic-form.html</loc>
@@ -669,6 +685,10 @@
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-chemical-potential-is-the-phases-frequency.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-equation-of-state-in-biquaternion-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -678,6 +698,10 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/covariant-local-equilibrium-and-tolman-temperature.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-closed-time-path-action-one-action-on-two-branches.html</loc>
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
@@ -781,6 +805,10 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-renormalization-group-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -803,6 +831,18 @@
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/redundancy-and-the-information-in-the-orbit-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-three-scales-c-hbar-and-k-b-as-the-three-continuations.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/ostrogradsky-or-why-no-rung-goes-past-two-derivatives.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-su4-model-four-lines-fifteen-generators-one-declaration.html</loc>
@@ -2550,14 +2590,6 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-null-four-momentum.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>

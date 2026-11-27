@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Closed-Time-Path Action: One Action on Two Branches — Biquaternion Universe</title>
+  <meta name="description" content="The claim. A dissipative equation has no action on one history — that is Helmholtz&#x27;s theorem, and it is exact. It has an action on two histories: one…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-closed-time-path-action-one-action-on-two-branches"><strong>The Closed-Time-Path Action: One Action on Two Branches</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> A dissipative equation has no action on one history — that is <a href="the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html">Helmholtz's theorem</a>, and it is exact. It has an action on <strong>two</strong> histories: one forward along the contour and one backward, with the two branches identified at the final time. <strong>The closed-time-path action is that object</strong>, and it is how the corpus's dissipative fluid acquires a variational origin without pretending that the theorem does not hold.</p>
+<p><strong>What is established.</strong> Four things. First, the contour and the doubled field, and the normalisation identity that makes the doubling a bookkeeping device and not a second theory. Second, the variation on each branch, and the Keldysh rotation that turns the pair into a retarded, an advanced and a noise component. Third, where the dissipation went: into a branch-coupling term, the <strong>influence functional</strong>, whose real part is the Rayleigh function and whose imaginary part is the noise, related by the fluctuation–dissipation theorem. Fourth, what the theorem's price is: a doubled field, a pair of histories in place of one, and a noise that cannot be switched off while the dissipation is kept.</p>
+<p><strong>Why it belongs in the departures.</strong> The subsection's other articles write the constitutive form of a dissipative fluid — the relaxation times, the entropy production, the causal correction to the equation of state. <strong>Those are the macroscopic face; this is the microscopic one</strong>, and the relation between them is that the coefficients the hydrodynamic articles carry as parameters are the moments of the influence functional this article writes.</p>
+<p><strong>What the algebra does and does not do.</strong> The corpus is already a doubled object — two sectors, $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ — and the temptation to identify that doubling with this one is the article's main warning. <strong>They are different doublings with different meanings</strong>, and §<em>Two Doublings That Are Not the Same</em> separates them.</p>
+<h2 id="the-contour-and-the-doubled-field">The Contour and the Doubled Field</h2>
+<p><strong>The contour.</strong> Take the time axis from an initial time to $t_f$ and back. The field takes a value on the forward branch and a value on the backward branch, and the two agree at $t_f$ where the contour turns:</p>
+<p>$$
+\tilde\Xi_+(t_f)=\tilde\Xi_-(t_f).
+$$</p>
+<p><strong>The initial condition is not paired</strong>: the state at the initial time is the density matrix, and the two branches leave it in opposite directions. <strong>The contour is a closed loop with one open end</strong>, which is exactly the structure a density matrix's evolution has.</p>
+<p><strong>The generating functional.</strong></p>
+<p>$$
+Z[J_+,J_-]=\int\mathcal D\tilde\Xi_+\,\mathcal D\tilde\Xi_-\;
+\exp\Bigl(iS[\tilde\Xi_+]-iS[\tilde\Xi_-]+i\!\int\!J_+\tilde\Xi_+-i\!\int\!J_-\tilde\Xi_-\Bigr),
+$$</p>
+<p>with $S$ in the units of the action quantum, as <a href="the-functional-integral-in-biquaternionic-form.html">the functional-integral article</a> writes it. <strong>The action is the difference of the branches' actions</strong> — the forward evolution minus the backward one, which is what a trace over a density matrix produces.</p>
+<p><strong>The identity that makes it a bookkeeping device.</strong> Set $J_+=J_-=J$. Then the two branches' contributions cancel exactly, the contour closes, and</p>
+<p>$$
+Z[J,J]=1 .
+$$</p>
+<p><strong>A generating functional that equals one at coincident sources generates only connected correlations between different times</strong>, which is the statement that the doubling has introduced no new dynamics: it has introduced a <em>bookkeeping</em> for the two ends of a correlation function. <strong>That identity is the reason the formalism is safe</strong>, and a reader who checks one equation in this article should check that one.</p>
+<p><strong>The physical sources.</strong> Write the combinations</p>
+<p>$$
+J_{\mathrm{cl}}=\tfrac12(J_++J_-),\qquad J_{\mathrm{q}}=J_+-J_- ,
+$$</p>
+<p>the mean source and the difference. <strong>The difference is the one that couples to the quantum component</strong>, and it is the one that is set to zero at the end: $J_{\mathrm{q}}=0$ is the statement that the two branches are treated alike, which is the statement that the evolution is unitary.</p>
+<h2 id="the-variation-on-each-branch">The Variation on Each Branch</h2>
+<p><strong>Two variations, two equations.</strong> Varying $Z$ with respect to $\tilde\Xi_+$ and $\tilde\Xi_-$ gives</p>
+<p>$$
+\frac{\delta S}{\delta\tilde\Xi_+}=J_+,\qquad
+\frac{\delta S}{\delta\tilde\Xi_-}=J_- ,
+$$</p>
+<p>the field equation on each branch. <strong>For a closed system these are two copies of one equation</strong>, and the branches are coupled only through the final-time identification; nothing dissipative has appeared, and nothing should have.</p>
+<p><strong>Where a dissipative equation comes from, stated precisely.</strong> Couple the field to an environment and integrate the environment out. The result is an extra term in the exponent that depends on both branches,</p>
+<p>$$
+\exp\bigl(iS[\tilde\Xi_+]-iS[\tilde\Xi_-]\bigr)\;\longrightarrow\;
+\exp\bigl(iS[\tilde\Xi_+]-iS[\tilde\Xi_-]\bigr)\;\mathcal F[\tilde\Xi_+,\tilde\Xi_-],
+$$</p>
+<p>with $\mathcal F$ the <strong>influence functional</strong>. <strong>It is nonlocal in time, it is not a difference of two single-branch actions, and it is where every dissipative term in the corpus ultimately lives.</strong> A reader who wants the origin of a transport coefficient should look here; a reader who wants its constitutive form should look in the hydrodynamic articles.</p>
+<p><strong>The classical limit, and the equation it gives.</strong> In the limit where the contour's width is small and the field is near-classical, the influence functional's variation with respect to the quantum component produces a <strong>Langevin equation</strong>: the deterministic part is the classical equation with a frictional term, and the stochastic part is a source whose correlation is fixed by the functional's imaginary part. <strong>One action, two branches, and a stochastic equation as the classical limit</strong> — the noise is not added, it is what remains of the other branch.</p>
+<h2 id="the-keldysh-rotation-and-the-three-equations">The Keldysh Rotation, and the Three Equations</h2>
+<p><strong>Rotate to the physical combinations.</strong> Define</p>
+<p>$$
+\tilde\Xi_{\mathrm{cl}}=\tfrac12\bigl(\tilde\Xi_++\tilde\Xi_-\bigr),\qquad
+\tilde\Xi_{\mathrm{q}}=\tilde\Xi_+-\tilde\Xi_- ,
+$$</p>
+<p>the mean field and the difference. <strong>The quadratic part of the doubled action then takes the standard form</strong></p>
+<p>$$
+S_{\mathrm{CTP}}^{(2)}=\int \tilde\Xi_{\mathrm{q}}\,\hat K_{\mathrm{adv}}\,\tilde\Xi_{\mathrm{cl}}
++\int \tilde\Xi_{\mathrm{cl}}\,\hat K_{\mathrm{ret}}\,\tilde\Xi_{\mathrm{q}}
++\int \tilde\Xi_{\mathrm{q}}\,\hat K_{\mathrm{K}}\,\tilde\Xi_{\mathrm{q}} ,
+$$</p>
+<p>with $\hat K_{\mathrm{ret}}$ and $\hat K_{\mathrm{adv}}$ the retarded and advanced kernels and $\hat K_{\mathrm{K}}$ the Keldysh one. <strong>Three components, and each has a name and a role.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>component</th>
+<th>what it multiplies</th>
+<th>what its variation gives</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi_{\mathrm{q}}\hat K_{\mathrm{adv}}\tilde\Xi_{\mathrm{cl}}$</td>
+<td>mean field × difference</td>
+<td>the mean field's equation, with the Keldysh term as its source</td>
+<td>the <strong>retarded</strong> response</td>
+</tr>
+<tr>
+<td>$\tilde\Xi_{\mathrm{cl}}\hat K_{\mathrm{ret}}\tilde\Xi_{\mathrm{q}}$</td>
+<td>difference × mean field</td>
+<td>the difference's equation</td>
+<td>the <strong>advanced</strong> response</td>
+</tr>
+<tr>
+<td>$\tilde\Xi_{\mathrm{q}}\hat K_{\mathrm{K}}\tilde\Xi_{\mathrm{q}}$</td>
+<td>difference squared</td>
+<td>the noise's correlation</td>
+<td>the <strong>Keldysh</strong> component, the fluctuation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The structure is the content.</strong> The first two components are the two orderings of one kernel, which is why the retarded and advanced responses are transposes of one another; the third is symmetric and quadratic in the difference, which is why <strong>it is the only term that survives when the mean field is zero</strong> — it is the fluctuation spectrum. <strong>A single-branch action has no place for the third term</strong>, because a single branch has no difference.</p>
+<p><strong>The equations, read in the fluid's language.</strong> Varying $\tilde\Xi_{\mathrm{q}}$ gives the mean field's transport equation with the influence functional's real part as a friction and its imaginary part as a source. Varying $\tilde\Xi_{\mathrm{cl}}$ gives the response equation. <strong>The first is the fluid's equation of motion; the second is its linear response.</strong> They are the two halves of one variation, and the corpus's linear-response articles use the second without naming the first.</p>
+<p><strong>The fluctuation–dissipation theorem, as one sentence about the kernel.</strong> The real and imaginary parts of $\hat K_{\mathrm{K}}$ are not independent: the symmetric part of the kernel is fixed by the antisymmetric part and the temperature. <strong>That relation is the content of the Keldysh component</strong>, and it is why a dissipative coefficient and a noise correlation are one number at a given temperature. A reader who wants the theorem should be told that it is the statement that $\hat K_{\mathrm{K}}$ comes from one kernel and not two.</p>
+<h2 id="where-the-dissipation-went">Where the Dissipation Went</h2>
+<p><strong>The Rayleigh function, and its place in this structure.</strong> <a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a> writes $\mathcal R=\tfrac12\gamma\dot\xi^{2}$, whose force $\partial\mathcal R/\partial\dot\xi$ enters the equation beside the conservative force. <strong>In the doubled action $\mathcal R$ is the real part of the influence functional's kernel</strong>, and the noise is its imaginary part: one kernel, two readings, and the reading is fixed by whether it multiplies $\tilde\Xi_{\mathrm{cl}}\tilde\Xi_{\mathrm{q}}$ or $\tilde\Xi_{\mathrm{q}}^{2}$.</p>
+<p><strong>Why Helmholtz's theorem is not violated.</strong> The theorem says there is no $\mathcal L(\xi,\dot\xi)$ whose variation gives the damped equation at a local multiplier. <strong>It says nothing about a functional of two fields.</strong> The doubled action's variation gives the damped equation only after the environment has been integrated out, and the equation so obtained is stochastic: <strong>the deterministic damped equation is the mean of a Langevin equation, and it is not the variation of anything on one branch.</strong> The theorem stands, and the CTP action is the object that lives beside it rather than against it.</p>
+<p><strong>What the corpus's three sentences about the viscous term should now say.</strong> <em>The viscous term has no action</em> is exactly right on one branch, and it is the reason the dissipative articles need a formalism of their own. <strong>The corrected sentence is: the viscous term has no action on one history, and its action on two histories is the influence functional.</strong> That is not a weakening of the claim; it is the claim plus its location.</p>
+<p><strong>The price, in three parts.</strong></p>
+<ul>
+<li><strong>The field is doubled.</strong> Every correlation function is a matrix of four components, and the physical one is an off-diagonal entry.</li>
+<li><strong>The object is a pair of histories, not a history.</strong> A single path has no action; the pair does.</li>
+<li><strong>The noise is irreducible.</strong> Setting the Keldysh component to zero while keeping the friction violates the fluctuation–dissipation theorem, so a "purely dissipative" CTP action is not a consistent truncation. <strong>This is the formalism's honest statement that dissipation and fluctuation are one thing.</strong></li>
+</ul>
+<h2 id="two-doublings-that-are-not-the-same">Two Doublings That Are Not the Same</h2>
+<p><strong>The corpus doubles in more than one place, and the doublings must not be conflated.</strong> The algebra has two sectors; the CTP has two branches; the spinor has two chiralities. <strong>Three doublings, three meanings</strong>, and a table is the shortest way to keep them apart.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>doubling</th>
+<th>what is doubled</th>
+<th>the pairing that relates the copies</th>
+<th>what the second copy means</th>
+<th>the category error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sectors</td>
+<td>the reality type: $\mathbb{B}_{\Phi}$ anti-Hermitian, $\mathbb{B}_{\Psi}$ Hermitian</td>
+<td>the Hermitian form</td>
+<td>the informational reading of the same element</td>
+<td>reading a sector as a history</td>
+</tr>
+<tr>
+<td>the closed time path</td>
+<td>the history: forward and backward branches</td>
+<td>the final-time identification and the influence functional</td>
+<td>the other end of a correlation</td>
+<td>reading a branch as a sector</td>
+</tr>
+<tr>
+<td>the chirality</td>
+<td>the spinor's two hands</td>
+<td>the gamma structure</td>
+<td>the other half of the representation</td>
+<td>reading a chirality as a branch</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the warning is needed.</strong> The Schwinger–Keldysh article says that the branch doubling is <em>not</em> the algebra's doubling, and the sentence is easy to read past. <strong>A reader who identifies them will expect the Keldysh component to be a sector projection</strong>, which it is not: the Keldysh component is a correlation and the sector split is a reality type. <strong>The test is one line</strong>: a sector split is fixed by the field's Hermiticity and does not depend on the state; a branch split is fixed by the contour and the state's initial condition.</p>
+<p><strong>The one honest overlap.</strong> The algebra's doubling does supply a convenient place to put the doubled field: the pair $(\tilde\Xi_+,\tilde\Xi_-)$ can be carried in the two sectors' directions, and the corpus's path-integral article uses exactly that. <strong>The overlap is a convenience of storage and not an identity of meaning</strong>, which is the distinction the table's last column records.</p>
+<h2 id="what-it-does-not-give">What It Does Not Give</h2>
+<p><strong>It does not give an action on one history.</strong> That is impossible by Helmholtz, and this article does not claim otherwise.</p>
+<p><strong>It does not give the transport coefficients in closed form.</strong> It gives their origin as moments of the influence functional; the values require a model of the environment and a computation.</p>
+<p><strong>It does not remove the noise.</strong> A truncated CTP action with friction and no noise is inconsistent, and the corpus's dissipative articles must either carry both or state which limit they take.</p>
+<p><strong>It does not settle the initial condition.</strong> The contour's open end carries the density matrix, and a full treatment needs its specification. <strong>The corpus's equilibrium articles take it thermal</strong>, which is what makes the fluctuation–dissipation theorem applicable; a non-equilibrium initial state needs its own statement and this article does not supply one.</p>
+<h2 id="summary">Summary</h2>
+<p>A dissipative equation has no action on one history and has one on two. The closed-time-path action is the difference of the branches' actions plus an influence functional, its generating functional equals one at coincident sources, and its variation gives the field equation on each branch. <strong>For a closed system nothing dissipative appears</strong>; the dissipation is what an environment leaves behind, and it is nonlocal in time.</p>
+<p>The Keldysh rotation splits the quadratic action into a retarded, an advanced and a noise component. The first two are one kernel's two orderings, the third is the fluctuation spectrum, and the fluctuation–dissipation theorem is the statement that the third is fixed by the first two and the temperature. <strong>A single-branch action has no place for the third term</strong>, which is exactly why the theorem of no-action-on-one-history holds.</p>
+<p>The Rayleigh function is the real part of the influence functional's kernel and the noise is its imaginary part. <strong>The corpus's sentence about the viscous term is therefore exact and incomplete</strong>: exact on one branch, and located on two. The price is a doubled field, a pair of histories and an irreducible noise.</p>
+<p>The corpus's own doubling — the two sectors — is a doubling of reality type and not of history, and the two must not be identified. The overlap is a place to store the pair, not a meaning.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi_+,\tilde\Xi_-$</td>
+<td>The field on the forward and backward branches of the contour</td>
+</tr>
+<tr>
+<td>$\tilde\Xi_+(t_f)=\tilde\Xi_-(t_f)$</td>
+<td>The identification at the turning point; the initial end is left open</td>
+</tr>
+<tr>
+<td>$Z[J_+,J_-]$</td>
+<td>The closed-time-path generating functional; $Z[J,J]=1$</td>
+</tr>
+<tr>
+<td>$J_{\mathrm{cl}}=\tfrac12(J_++J_-)$, $J_{\mathrm{q}}=J_+-J_-$</td>
+<td>The mean and difference sources; $J_{\mathrm{q}}=0$ is unitarity</td>
+</tr>
+<tr>
+<td>$\mathcal F[\tilde\Xi_+,\tilde\Xi_-]$</td>
+<td>The influence functional, nonlocal in time, the trace of the environment</td>
+</tr>
+<tr>
+<td>$\tilde\Xi_{\mathrm{cl}}=\tfrac12(\tilde\Xi_++\tilde\Xi_-)$</td>
+<td>The mean field, the physical component</td>
+</tr>
+<tr>
+<td>$\tilde\Xi_{\mathrm{q}}=\tilde\Xi_+-\tilde\Xi_-$</td>
+<td>The difference, the quantum component</td>
+</tr>
+<tr>
+<td>$\hat K_{\mathrm{ret}},\hat K_{\mathrm{adv}}$</td>
+<td>The retarded and advanced kernels, one kernel's two orderings</td>
+</tr>
+<tr>
+<td>$\hat K_{\mathrm{K}}$</td>
+<td>The Keldysh kernel, the noise; its real and imaginary parts are related by the fluctuation–dissipation theorem</td>
+</tr>
+<tr>
+<td>$\mathcal R=\tfrac12\gamma\dot\xi^{2}$</td>
+<td>Rayleigh's function, the real part of the influence functional's kernel</td>
+</tr>
+<tr>
+<td>$\exp(iS)$</td>
+<td>The weight, with $S$ in units of the action quantum</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Julian Schwinger, "Brownian motion of a quantum oscillator," <em>Journal of Mathematical Physics</em> 2 (1961), 407–432, the contour's origin.</li>
+<li>Leonid V. Keldysh, "Diagram technique for nonequilibrium processes," <em>Soviet Physics JETP</em> 20 (1965), 1018–1026, the rotation and the three-component structure.</li>
+<li>Richard P. Feynman and Frank L. Vernon, "The theory of a general quantum system interacting with a linear dissipative system," <em>Annals of Physics</em> 24 (1963), 118–173, the influence functional and its real and imaginary parts.</li>
+<li>Alex Kamenev, <em>Field Theory of Non-Equilibrium Systems</em> (Cambridge University Press, 2011), for the modern formulation, the Keldysh rotation and the fluctuation–dissipation theorem.</li>
+<li>Esteban A. Calzetta and Bei-Lok B. Hu, <em>Nonequilibrium Quantum Field Theory</em> (Cambridge University Press, 2008), for the Kadanoff–Baym equations and the classical limit.</li>
+<li><a href="the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a>, the corpus's own treatment of the contour and the rotation.</li>
+<li><a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a>, the dissipation function this article places in the influence functional.</li>
+<li><a href="the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html">The Inverse Problem of the Calculus of Variations: Helmholtz's Conditions</a>, the theorem that forbids a single-branch action and which the doubling does not violate.</li>
+<li><a href="causal-dissipative-fluid-physics-in-biquaternionic-form.html">Causal Dissipative Fluid Physics in Biquaternionic Form</a>, the macroscopic face whose coefficients this article's functional generates.</li>
+<li><a href="the-free-energy-functional-at-finite-temperature.html">The Free-Energy Functional at Finite Temperature</a>, the imaginary-time face of the same $Z$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

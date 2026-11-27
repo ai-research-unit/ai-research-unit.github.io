@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dirac–Bergmann Algorithm: First- and Second-Class Constraints — Biquaternion Universe</title>
+  <meta name="description" content="The claim. When a Legendre transform is singular, the Hamiltonian formulation does not fail: it gains constraints, and the constraints carry the whole of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-diracbergmann-algorithm-first-and-second-class-constraints"><strong>The Dirac–Bergmann Algorithm: First- and Second-Class Constraints</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> When a Legendre transform is singular, the Hamiltonian formulation does not fail: it gains constraints, and the constraints carry the whole of the gauge structure. The algorithm that extracts them — primary, then secondary by a consistency condition, then the split into first and second class, then the bracket that replaces the Poisson bracket — is Dirac's and Bergmann's, and in this corpus it does two jobs. It supplies the numbers that the fluid block's closure test has been quoting in components, and it distinguishes the polar frame from the gauge transformation, which is the distinction the criterion article could name but not derive.</p>
+<p><strong>What is established.</strong> Four things. First, a singular Hessian produces primary constraints, and the consistency condition produces the secondary ones, with a definite stopping rule. Second, first-class constraints generate a redundancy and second-class ones do not, and the difference is one bracket. Third, the second-class set replaces the Poisson bracket by the Dirac bracket, which is the operation that makes the algebra of gauge-invariant quantities well defined. Fourth, the count of degrees of freedom is a formula, and the corpus's three quoted counts — two polarizations at the Maxwell rung, three at the Proca rung, thirty of sixty at the primordial one — are its values.</p>
+<p><strong>What is not new.</strong> Every step is in Dirac's 1950 lectures and in Bergmann's papers of the same years, and the modern formulation is Henneaux and Teitelboim. <strong>What the corpus adds is the reading of its own numbers</strong>: the fluid block's <em>corank</em>, its <em>family of fluids</em>, and its <em>state slot</em> are the constraint count, the gauge orbit and the secondary constraint, and the block has been using those words without the machinery behind them.</p>
+<p><strong>Why it comes after the Hamiltonian.</strong> <a href="hamiltonian-field-theory-in-biquaternionic-form.html">The Hamiltonian article</a> establishes that the scalar field's Legendre transform is regular, and it names the two fields for which it is not: the Dirac field, with a second-class constraint, and the Maxwell field, with two first-class ones. <strong>This article is what happens when that regularity is absent</strong>, and it is why the Hamiltonian article's remark about the scalar case is a remark about a case and not about the formalism.</p>
+<h2 id="the-singular-hessian">The Singular Hessian</h2>
+<p><strong>The Hessian, and what its rank decides.</strong> Write the density in first-order form, with $\dot\xi_a=\partial\xi_a/\partial r'_t$, and define</p>
+<p>$$
+W_{ab}:=\frac{\partial^2\mathcal L}{\partial\dot\xi_a\,\partial\dot\xi_b}.
+$$</p>
+<p>The Legendre transform $\pi_a=\partial\mathcal L/\partial\dot\xi_a$ is invertible exactly when $W$ is invertible. <strong>When $W$ is singular the velocities are not determined by the momenta</strong>, and the directions in its kernel are the theory's primary constraints.</p>
+<p><strong>Why a kernel direction is a constraint and not a variable.</strong> Let $v_a$ lie in the kernel, $W_{ab}v_b=0$. Then $\pi_av_a=\partial\mathcal L/\partial\dot\xi_a\,v_a$ is independent of $\dot\xi$ along $v$, so the combination $\pi_av_a$ is a function of the fields and not of the velocities. <strong>That function is a constraint</strong>: the phase-space point must lie on its zero set, because no velocity would otherwise produce that momentum.</p>
+<p><strong>The two cases the corpus meets.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>Hessian</th>
+<th>primary constraints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>central scalar, Klein–Gordon</td>
+<td>$W=1$, invertible</td>
+<td>none; the transform is regular</td>
+</tr>
+<tr>
+<td>Dirac spinor</td>
+<td>first order in the time derivative, so $W=0$ in the spinor indices</td>
+<td>$\pi-i\tilde\Xi^{\dagger}\approx0$, one per spinor component</td>
+</tr>
+<tr>
+<td>Maxwell connection</td>
+<td>$W^{\imath\jmath}$ has the temporal row and column zero, because $F_{\imath\jmath}$ carries no $\dot A_t$</td>
+<td>$\pi^0\approx0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Dirac field is the extreme case and it is worth naming.</strong> Its density is first order in the time derivative, so the Hessian vanishes identically and the momentum is not an independent variable at all: it is fixed by the field. <strong>A first-order density has no velocity to invert</strong>, which is why its constraint is not a restriction on a pair but the statement that the pair has half the components one expected.</p>
+<p><strong>The Maxwell case is the geometric one.</strong> $\pi^0=0$ because the temporal component of the connection has no conjugate momentum: the curvature contains $\partial_tA_{\imath}$ only through the spatial components. <strong>The constraint is the statement that $A_t$ is not a dynamical variable</strong>, and every consequence of gauge theory follows from taking it seriously.</p>
+<h2 id="the-consistency-condition">The Consistency Condition</h2>
+<p><strong>A constraint must hold at every time, and that is a new equation.</strong> If $\phi_a\approx0$ holds on the constraint surface, then its time derivative must vanish there too:</p>
+<p>$$
+\dot\phi_a=\{\phi_a,H_T\}+\frac{\partial\phi_a}{\partial r'_t}\approx0 ,
+$$</p>
+<p>with $H_T$ the total Hamiltonian — the canonical Hamiltonian plus a combination of the primary constraints with arbitrary multipliers. <strong>This is the consistency condition</strong>, and it has three outcomes:</p>
+<ol>
+<li>it is satisfied identically, and $\phi_a$ is a constraint and nothing more;</li>
+<li>it determines one of the arbitrary multipliers, and the constraint is <em>second class</em> in embryo;</li>
+<li>it produces a new function of the fields, which must vanish, and that function is a <strong>secondary constraint</strong>.</li>
+</ol>
+<p><strong>Iterate until the list closes.</strong> Each new constraint is fed back into the consistency condition, and the process terminates for the theories the corpus uses. <strong>The termination is the statement that the constraint surface is stable</strong>, and a theory in which it does not terminate has an inconsistency rather than a constraint.</p>
+<p><strong>The secondary constraint is where the physics is.</strong> For the Maxwell field, the consistency of $\pi^0\approx0$ gives</p>
+<p>$$
+\{\pi^0,H_T\}=\mathrm{div}\,\vec\pi\approx0 ,
+$$</p>
+<p>which is Gauss's law. <strong>It is secondary because it is not a restriction on the initial data of the transform but a consequence of the dynamics</strong>, and it is the constraint that says the charge density is the divergence of the field momentum. For the Proca field the same step gives</p>
+<p>$$
+\mathrm{div}\,\vec\pi+m^{2}A_t\approx0 ,
+$$</p>
+<p>the massive version, in which the constraint <em>determines</em> $A^0$ instead of restricting it. <strong>The mass turns the constraint from a restriction into a solution</strong>, and that is the linear shadow of the statement that a massive vector has one more state than a massless one.</p>
+<p><strong>A secondary constraint is not a weaker statement than a primary one.</strong> Both hold on the constraint surface and both remove components. The difference is provenance — one from the Hessian, one from the dynamics — and the difference matters for the count only through the class, which is next.</p>
+<h2 id="first-class-and-second-class">First Class and Second Class</h2>
+<p><strong>One bracket decides.</strong> A constraint $\phi_a$ is <strong>first class</strong> when its bracket with every constraint vanishes on the constraint surface,</p>
+<p>$$
+\{\phi_a,\phi_b\}\approx0\quad\text{for all }b ,
+$$</p>
+<p>and <strong>second class</strong> otherwise. <strong>The definition is a statement about the constraint set and not about the constraint alone</strong>: a function that is first class against one set may be second class against a larger one, which is why the split is performed after the list has closed.</p>
+<p><strong>What first class means.</strong> A first-class constraint generates a transformation of the phase-space variables that leaves the constraint surface and the Hamiltonian invariant: it is a <strong>redundancy of the description</strong>, not a restriction on the physics. The Maxwell pair $\pi^0$ and $\partial_\imath\pi^{\imath}$ is first class, and together they generate the gauge transformation of $A_\imath$. <strong>First class is gauge symmetry, stated in one bracket.</strong></p>
+<p><strong>What second class means.</strong> A second-class constraint does not generate a redundancy; it removes a pair of phase-space directions and leaves a bracket that must be modified. The Proca pair is second class, and so is the Dirac constraint. <strong>Second class is a genuine restriction</strong>, and the restriction is that the canonical pair is not canonical.</p>
+<p><strong>Why the split is stable under the dynamics.</strong> The bracket of two first-class constraints is first class by the Jacobi identity, so the first-class set is closed; the second-class set is not closed in the same sense, which is exactly why it needs its own bracket. <strong>The asymmetry is not a defect of the classification; it is the classification.</strong></p>
+<p><strong>The corpus's own pair, in its own letters.</strong> The criterion article separates two objects that both look like transformations: $U_{\mathrm{frm}}$, the polar frame of $\Xi=U_{\mathrm{frm}}PU_{\mathrm{frm}}^{\dagger}$, which is a decomposition with twelve physical parameters and is <em>absent</em> from the covariant derivative; and $U_{\mathrm{gau}}(x)$, the local gauge transformation against which $D_\imath$ covariantises. <strong>The Dirac–Bergmann split is what makes the sentence exact</strong>: $U_{\mathrm{gau}}$ is generated by first-class constraints and is a redundancy; $U_{\mathrm{frm}}$ is a change of variables on the physical configuration and is not. A reader who conflates them will count the frame's twelve parameters as gauge and lose them from the fluid.</p>
+<h2 id="the-dirac-bracket">The Dirac Bracket</h2>
+<p><strong>The problem the second-class set creates.</strong> If $\phi_a$ are second class, the matrix $C_{ab}:=\{\phi_a,\phi_b\}$ is invertible on the constraint surface, and the ordinary Poisson bracket is inconsistent with the constraints: $\{\phi_a,\text{anything}\}$ need not vanish, so a bracket computed on the constraint surface differs from the bracket computed off it and then restricted. <strong>The Dirac bracket is the repair</strong>:</p>
+<p>$$
+\{A,B\}_{\mathrm D}:=\{A,B\}-\sum_{a,b}\{A,\phi_a\}\,(C^{-1})_{ab}\,\{\phi_b,B\},
+\qquad \sum_b C_{ab}(C^{-1})_{bc}=\delta_{ac} ,
+$$</p>
+<p>with the sum over the second-class set. <strong>It is the Poisson bracket projected onto the constraint surface</strong>, and it is the unique bracket that (i) agrees with the Poisson bracket for first-class quantities, (ii) annihilates the second-class constraints, and (iii) satisfies the Jacobi identity.</p>
+<p><strong>What it buys.</strong> The Dirac bracket is the classical bracket of the physical variables. Quantising the Dirac bracket gives the commutators of the constrained theory directly, with no need to fix a gauge; <strong>this is the route by which the Dirac field's anticommutators and the Maxwell field's physical commutators are obtained</strong> in the corpus's quantisation articles.</p>
+<p><strong>What it costs.</strong> The bracket is nonlocal in the fields whenever $C^{-1}$ is, and for the Dirac field $C^{-1}$ is the inverse of the equal-time anticommutator, which is a delta function — so the bracket stays local but changes sign structure. <strong>For a gauge theory whose second-class set arises from gauge fixing, $C^{-1}$ is the Green's function of the gauge condition</strong>, and the bracket becomes nonlocal in exactly the way a gauge-fixed propagator does.</p>
+<p><strong>The alternative, and why the corpus does not use it as the primary route.</strong> One can fix the gauge first — impose $2\times(\text{first class})$ conditions and treat the reduced phase space — which is Bergmann's <em>coordinate conditions</em>. <strong>The two routes are equivalent and not identical</strong>: gauge fixing breaks the redundancy explicitly and makes the bracket nonlocal; the Dirac bracket keeps the redundancy and makes the algebra of invariants well defined. The corpus needs the second because its fluid reading is a reading of invariants: a divergence, a vorticity and a density are gauge-invariant objects, and the bracket they obey is the Dirac bracket.</p>
+<h2 id="the-count">The Count</h2>
+<p><strong>One formula, four numbers.</strong> On the constraint surface, with $f$ first-class and $s$ second-class constraints per point, the number of physical degrees of freedom per point is</p>
+<p>$$
+\boxed{\;N_{\mathrm{dof}}=\tfrac12\Bigl(N_{\mathrm{phase}}-2f-s\Bigr)\;}
+$$</p>
+<p>where $N_{\mathrm{phase}}$ is the number of phase-space components per point. <strong>Each first-class constraint removes two components</strong> — the constraint and the gauge direction it generates — and <strong>each second-class removes one pair</strong>, which is two components and one degree of freedom.</p>
+<p><strong>The corpus's rungs, in the formula's terms.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>$N_{\mathrm{phase}}$</th>
+<th>primary</th>
+<th>secondary</th>
+<th>first class $f$</th>
+<th>second class $s$</th>
+<th>$N_{\mathrm{dof}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>central scalar</td>
+<td>$2$ (real $\xi$, $\pi$)</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>Maxwell</td>
+<td>$8$ ($A_\imath$, $\vec\pi$)</td>
+<td>$1$: $\pi^0$</td>
+<td>$1$: $\mathrm{div}\,\vec\pi$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Proca</td>
+<td>$8$</td>
+<td>$1$: $\pi^0$</td>
+<td>$1$: $\mathrm{div}\,\vec\pi+m^2A_t$</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Dirac</td>
+<td>$16$ (four complex $\xi$, four $\pi$)</td>
+<td>$8$ real: $\pi-i\tilde\Xi^{\dagger}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$8$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>primordial</td>
+<td>$60$</td>
+<td>$15$: the Gauss laws' primary halves</td>
+<td>$15$: the Gauss laws</td>
+<td>$15$</td>
+<td>$0$</td>
+<td>$15$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three of these numbers are the corpus's own sentences.</strong> The Maxwell rung's two polarizations, the Proca rung's three states, and the primordial rung's closure on thirty of sixty after fifteen first-class constraints remove thirty. <strong>The fourth row corrects a reading the criterion article had to relabel</strong>: "closes on fifteen" is the number of <em>degrees of freedom</em> after the count, and the thirty is the number of remaining phase-space components. Both are the formula's values at different stages.</p>
+<p><strong>The Proca row is the one worth pausing on.</strong> Its two constraints are second class, so it has one more degree of freedom than Maxwell's two: the longitudinal mode. <strong>The mass converts a first-class pair into a second-class pair and the count rises by one</strong>, which is the linear statement of the mechanism by which a would-be Goldstone mode becomes the third polarization of a massive vector.</p>
+<p><strong>The Dirac row is the one the fluid block calls degenerate.</strong> The corpus's corank four at the spinor rung is the second-class count read in complex components; the algorithm says the same thing in real components and says <em>why</em>: the momentum is not independent, so half the phase space is a constraint surface.</p>
+<h2 id="what-the-fluid-calls-these">What the Fluid Calls These</h2>
+<p><strong>The closure test is the count.</strong> <a href="criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation.html">The criterion article</a> distinguishes count closure — equations enough for coordinates — from rank closure — rates determined. <strong>Rank closure is the nondegeneracy of the Hessian, and its failure is a constraint.</strong> So the two closures are the regular and the singular case of one transform, and the Dirac–Bergmann algorithm is the singular case's bookkeeping.</p>
+<p><strong>The "family of fluids" is the gauge orbit.</strong> The criterion article says an under-determined set is a family of fluids and not a fluid. <strong>The family is the orbit of the redundancy</strong>, and its dimension is $2f$ per point in the formula above. A reader who wants a single fluid must fix the gauge, which is choosing one representative per orbit; a reader who wants the physics must take the invariants, which is the Dirac bracket's algebra.</p>
+<p><strong>The state slot is the secondary constraint, solved.</strong> The fluid's sixth slot is an algebraic relation between pressure, density and temperature. <strong>At the Maxwell rung the secondary constraint is an algebraic relation between the charge density and the field momentum</strong>, which is a constitutive statement of exactly that kind: it fixes one datum in terms of the others rather than transporting it. <strong>A constraint is a state equation's field-theoretic form</strong>, and that is why the corpus's <em>state</em> slot is the one slot that is never a transport law.</p>
+<p><strong>The frame-gauge split is the class split.</strong> Stated above and worth repeating as a summary: <strong>first-class constraints are the redundancy the frame article calls $U_{\mathrm{gau}}$; the physical frame $U_{\mathrm{frm}}$ is what remains after the count.</strong> The corpus's fluid has twelve frame parameters at the primordial rung because thirty of sixty components survive fifteen first-class removals, and twelve is the frame's share of the thirty.</p>
+<h2 id="what-the-algorithm-does-not-give">What the Algorithm Does Not Give</h2>
+<p><strong>It does not give the transport equations.</strong> The algorithm produces the arena — which variables are independent, which brackets they obey — and says nothing about the constitutive relations that close the fluid's system. <strong>A constraint is not a conservation law</strong>, and the count is not a solution.</p>
+<p><strong>It does not fix the gauge.</strong> Bergmann's coordinate conditions are a choice, and different choices give different nonlocal brackets. <strong>The corpus's invariants are the objects that do not depend on the choice</strong>, and that is why it can afford to leave the choice open.</p>
+<p><strong>It does not settle the global questions.</strong> The split into first and second class is local; on a nontrivial bundle the constraint surface can have several sheets, and the gauge orbit can be of non-constant dimension — Gribov's problem. <strong>The corpus's patched objects, such as the vorticity potential at the primordial rung, meet this limit</strong>, and the algorithm is silent about it.</p>
+<p><strong>It does not quantise.</strong> The Dirac bracket is the classical input to a quantisation, and the quantisation of a constrained system has its own ordering and anomaly questions. <strong>The corpus's promotion article takes the Dirac bracket over and does not re-derive it</strong>, which is the correct division: the bracket is classical and the promotion is the postulate.</p>
+<h2 id="summary">Summary</h2>
+<p>A singular Hessian produces primary constraints; the consistency condition produces secondary ones and terminates; the bracket with the constraint set splits them into first class, which generates a redundancy, and second class, which restricts. <strong>The first-class count is gauge symmetry and the second-class count is a genuine reduction</strong>, and the Dirac bracket is the Poisson bracket projected onto the second-class surface, the classical algebra of the physical variables.</p>
+<p>The count is one formula, $N_{\mathrm{dof}}=\tfrac12(N_{\mathrm{phase}}-2f-s)$, and the corpus's numbers are its values: two polarizations at Maxwell, three at Proca, four at Dirac, fifteen at the primordial rung after fifteen first-class constraints remove thirty of sixty components. <strong>The Proca row is the mass converting a first-class pair into a second-class pair</strong>, the Dirac row is the first-order density that leaves the momentum no independent life, and the primordial row is Gauss's law fifteen times over.</p>
+<p>In the fluid's language the closure test is the count, the <em>family of fluids</em> is the gauge orbit, the <em>state</em> slot is a secondary constraint solved for one datum, and the frame–gauge split is the class split. <strong>The algorithm supplies the words the fluid block had been using and the numbers it had been quoting.</strong></p>
+<p>It gives no transport equation, no gauge choice, no global statement and no quantisation. It gives the arena, and the arena is what the fluid's rank test was measuring.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\xi_a$, $\pi_a$</td>
+<td>The configuration variables and their conjugate momenta, one pair per component</td>
+</tr>
+<tr>
+<td>$W_{ab}=\partial^2\mathcal L/\partial\dot\xi_a\partial\dot\xi_b$</td>
+<td>The Hessian of the density in the velocities; its singularity is the source of primary constraints</td>
+</tr>
+<tr>
+<td>$\phi_a\approx0$</td>
+<td>A constraint; $\approx$ is weak equality, on the constraint surface</td>
+</tr>
+<tr>
+<td>$H_T$</td>
+<td>The total Hamiltonian, the canonical one plus primary constraints with multipliers</td>
+</tr>
+<tr>
+<td>$\{\cdot,\cdot\}$</td>
+<td>The Poisson bracket, and $\{\cdot,\cdot\}_{\mathrm D}$ the Dirac bracket</td>
+</tr>
+<tr>
+<td>$C_{ab}=\{\phi_a,\phi_b\}$</td>
+<td>The second-class matrix, invertible on the constraint surface</td>
+</tr>
+<tr>
+<td>$f$, $s$</td>
+<td>The numbers of first-class and second-class constraints per point</td>
+</tr>
+<tr>
+<td>$N_{\mathrm{phase}}$</td>
+<td>Phase-space components per point; $N_{\mathrm{dof}}=\tfrac12(N_{\mathrm{phase}}-2f-s)$</td>
+</tr>
+<tr>
+<td>$\pi^0\approx0$</td>
+<td>The Maxwell primary constraint; the secondary is $\mathrm{div}\,\vec\pi\approx0$</td>
+</tr>
+<tr>
+<td>$\mathrm{div}\,\vec\pi+m^2A_t\approx0$</td>
+<td>The Proca secondary constraint, which determines $A_t$</td>
+</tr>
+<tr>
+<td>$\pi-i\tilde\Xi^{\dagger}\approx0$</td>
+<td>The Dirac field's second-class constraint, one per spinor component</td>
+</tr>
+<tr>
+<td>$U_{\mathrm{frm}}$, $U_{\mathrm{gau}}$</td>
+<td>The polar frame, physical and twelve-parameter; the gauge transformation, the redundancy</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul A. M. Dirac, <em>Lectures on Quantum Mechanics</em> (Yeshiva University, 1964), the original algorithm, the class split and the bracket.</li>
+<li>Peter G. Bergmann, "Non-linear field theories," <em>Physical Review</em> 75 (1949), 680–685, and <em>Helvetica Physica Acta</em> Supplement 4 (1956), for the consistency condition and the coordinate conditions.</li>
+<li>Marc Henneaux and Claudio Teitelboim, <em>Quantization of Gauge Systems</em> (Princeton University Press, 1992), for the modern formulation, the count and the global questions.</li>
+<li>Kurt Sundermeyer, <em>Constrained Dynamics</em> (Springer, 1982), for the worked examples and the multiplier structure of the total Hamiltonian.</li>
+<li>Steven Weinberg, <em>The Quantum Theory of Fields</em>, vol. I (Cambridge University Press, 1995), §5.9, for the Proca field, its constraint structure and the third polarization that the mass restores.</li>
+<li><a href="hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a>, for the regular transform and the two constrained fields this article takes up.</li>
+<li><a href="criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation.html">Criterion for a Fluid Equation</a>, for the closure test, the corank and the family of fluids that this article identifies with the count and the orbit.</li>
+<li><a href="the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html">The Inverse Problem of the Calculus of Variations: Helmholtz's Conditions</a>, for the question of an action, which is prior to the question of its constraints.</li>
+<li><a href="canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a>, for the quantisation that imports the Dirac bracket.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
