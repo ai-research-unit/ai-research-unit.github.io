@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Five Steps from a Lagrangian to Fluid Equations: A Derivation Common to Scalar, Spinor, Vector and Matrix Fields — Biquaternion Universe</title>
+  <meta name="description" content="The corpus reads five fields as fluids, and the readings were made one at a time. The Schrödinger field was read in The Schrödinger Fluid, the scalar in…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="five-steps-from-a-lagrangian-to-fluid-equations-a-derivation-common-to-scalar-spinor-vector-and-matrix-fields"><strong>Five Steps from a Lagrangian to Fluid Equations: A Derivation Common to Scalar, Spinor, Vector and Matrix Fields</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The corpus reads five fields as fluids, and the readings were made one at a time. The Schrödinger field was read in <a href="the-schrodinger-fluid.html">The Schrödinger Fluid</a>, the scalar in <a href="the-spin-zero-fluid.html">The Spin-Zero Fluid</a>, the spinor in <a href="the-spin-half-fluid-of-the-biquaternion-dirac-field.html">The Spin-Half Fluid of the Biquaternion Dirac Field</a>, the vector in <a href="the-spin-one-fluid.html">The Spin-One Fluid</a>, the matrix in <a href="su4-fluid-equations-from-the-primordial-action.html">The SU(4) Fluid Equations from the Primordial Action</a>. Each article states its own derivation, and each derivation was written without the others in view.</p>
+<p><strong>This article states the derivation once, and the claim is that the five derivations are one derivation.</strong> Not that they resemble one another: that the same five steps, in the same order, produce the fluid equations at every rung, and that the differences between the rungs sit in <em>one</em> of the five steps and nowhere else. The claim is falsifiable in a way a resemblance is not. Run the five steps on a field and see whether the equations come out. If they do not, the article says which step failed.</p>
+<p><strong>The warrant is that the skeleton was found and not imposed.</strong> The five steps were extracted from the five finished articles, which were written independently and by different routes. That is the sense in which the skeleton is a derivation: it is the common part of five derivations that did not know they had one, and a sixth derivation that walks it is evidence for it rather than an application of it. What the extraction added is the ordering — the fact that step four is a step, and that step five is a test rather than a computation.</p>
+<p><strong>Position.</strong> A methodological article of the category <em>Biquaternion Universe Action</em>, in the section <em>From the Field Equation to the Fluid</em>. Its subject is the middle arrow of the category's chain. The apparatus the arrow needs — the action, the pairing it can integrate, the connection, the curvature — is <a href="the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle.html">the section above</a>, and is not restated. The arrow's output, once it exists, is the subject of <a href="differentiating-a-first-order-transport-law-force-transport-and-product-rule-terms.html">the section below</a>. The criterion that decides <em>which</em> of the equations a rung produces deserve to be called fluid equations is <a href="criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation.html">Criterion for a Fluid Equation: One Polar Coordinate's Euler–Lagrange Equation, Not a Combination</a>, and this article uses that criterion without re-arguing it.</p>
+<p><strong>The five steps, stated before they are argued.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>the claim</th>
+<th>what it supplies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>the action is a pairing of logarithmic derivatives against itself, plus one algebraic term</td>
+<td>the two terms every slot is read from</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>the polar word factorises the field into real parameters, and the factorisation is a bijection on the invertibles</td>
+<td>the coordinates</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>the parts of the logarithmic derivative have distinct algebraic types, and the pairing is diagonal on them; one variation per coordinate then fills one slot per type</td>
+<td>the slots</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>the phase and the frame enter only through their derivatives, so their equations are one order lower and leave a derivative available; the acceleration law is manufactured from them and never varied</td>
+<td>the force term</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>whether the fluid's velocity is a section of the base's tangent bundle decides whether S4 yields a force law or a momentum balance</td>
+<td>the sorting</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two of the five steps are the ones a reader will not have seen stated.</strong> S3 is usually presented as one step, the polar substitution, and it is two: a statement about the action (the pairing does not mix types) and a statement about the variation (the type of a term decides which slot its equation fills). S4 is usually not presented at all, because at the scalar rungs it is performed without comment: "Euler is not varied, it is differentiated" is a remark inside a derivation, not a step. It is a step, it is the reason a force exists at every rung, and its content is that the second derivative of the fast coordinate lives in the force slot and nowhere else.</p>
+<p><strong>What the article does not do.</strong> It does not add an equation to any rung and it does not claim that the fluid chart is more than a chart. Every equation it displays is a sibling article's, reached by the same route. The claim is about the <em>order</em> of the derivation and the <em>location</em> of its failures.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra, the element, the four conjugations and the six subspaces are <a href="the-algebraic-vocabulary-element-conjugations-six-subspaces-and-two-ledgers.html">The Algebraic Vocabulary</a>; the two sectors and the four bridges are <a href="the-two-sectors-the-hermitian-split-and-the-four-bridges.html">The Two Sectors</a>. This article uses four symbols and no others.</p>
+<p>The <strong>field</strong> is $\tilde\Xi$, an element of $\mathbb{B}$ or of a module over it, at each event of the material sector. The <strong>gradient</strong> is $\partial_{\imath}$, the material sector's, with $\imath\in\{t,x,y,z\}$. The <strong>logarithmic derivative</strong> is</p>
+<p>$$
+\mathcal A_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi ,
+$$</p>
+<p>and it is the article's central object: one element of the algebra per direction, defined wherever $\tilde\Xi$ is invertible. The <strong>scalar pairing</strong> is the one the action integrates, $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}$ or its trace form at the matrix rung; <a href="the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density</a> states which pairing and why, and this article takes the answer.</p>
+<p><strong>The four types.</strong> The algebra splits into four invariant subspaces, and the split is the one the four factors of the word correspond to.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>type</th>
+<th>dimension</th>
+<th>what it is</th>
+<th>the word's factor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real central</td>
+<td>$1$</td>
+<td>the real line $\mathbb{R}e_t$</td>
+<td>the scale $\varrho$</td>
+</tr>
+<tr>
+<td>central imaginary</td>
+<td>$1$</td>
+<td>the line $\mathbb{R}(ie_t)$</td>
+<td>the phase $e^{i\theta_{\mathrm{pha}}}$</td>
+</tr>
+<tr>
+<td>Hermitian traceless</td>
+<td>$3$</td>
+<td>the boost's space</td>
+<td>the boost $\tilde U_{\Psi,\mathrm b}$</td>
+</tr>
+<tr>
+<td>real traceless</td>
+<td>$3$</td>
+<td>the rotor's space</td>
+<td>the rotor $\tilde u_{\mathrm r}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four dimensions add to eight, and the addition is a theorem.</strong> $1+1+3+3=8$ is the real dimension of $\mathbb{B}$, and the four types are the four factors' parameter spaces. That is why the word is a chart and not a parametrisation with slack: the parameters and the data have the same count, and S2's bijection is what turns the count into an identification.</p>
+<p>One further convention, used from S4 onward. The <strong>order</strong> of an equation is the order of its highest derivative of the field's data. The field equations of this corpus are second order — Klein–Gordon, Proca, Dirac and Yang–Mills alike — with one exception stated where it occurs, the first-order Schrödinger action. Order is the quantity S4 is about, and it is a property of the coordinate and not of the field.</p>
+<h2 id="s1-the-action-is-a-pairing-plus-one-algebraic-term">S1: The Action Is a Pairing plus One Algebraic Term</h2>
+<p><strong>Every rung's action has two terms.</strong> A kinetic term that pairs the logarithmic derivative with itself, and an algebraic term that is a function of the field with no derivative at all.</p>
+<p>$$
+S=\int d^{4}r\;\Bigl[\;\kappa\,\bigl\langle\,\textstyle\sum_{\imath}\mathcal A_{\imath}\mathcal A_{\imath}\bigr\rangle_{\natural}\;-\;V(\tilde\Xi)\;\Bigr],
+$$</p>
+<p>with $\kappa$ a constant carrying the units and the sign, and $V$ a scalar function of the field. The display is schematic in one respect that matters: the sum over $\imath$ carries the metric's signs, and at the matrix rung the pairing is a trace rather than the quaternionic norm. Neither changes the structure, which is that there are two terms and they are of two kinds.</p>
+<p><strong>The kinetic term is built from $\mathcal A_{\imath}$ and not from $\partial_{\imath}\tilde\Xi$, and the difference is the whole of the mechanism.</strong> A kinetic term $\langle\sum_{\imath}\partial_{\imath}\tilde\Xi\,\partial_{\imath}\tilde\Xi\rangle_{\natural}$ is invariant under the <em>global</em> multiplication of the field by a constant element, and under nothing else. The logarithmic form is invariant under $\tilde\Xi\mapsto\tilde\Xi\,\tilde G$ for a constant invertible $\tilde G$ — a much larger group, because $\mathcal A_{\imath}$ is unchanged by a right multiplication — and it is the reason the field's <em>internal frame</em> is a coordinate rather than a fixed gauge choice. <strong>The logarithm is what makes the frame an object the fluid can carry.</strong></p>
+<p><strong>The algebraic term is a function of the field's invariants and of nothing else.</strong> It cannot depend on $\mathcal A_{\imath}$ without becoming part of the kinetic term, and it cannot depend on the direction without breaking the invariance the kinetic term has. Two consequences follow, and both are used later. The algebraic term is where the <em>pressure</em> comes from, because it is the only term that is not a derivative and a pressure is what a fluid has when it resists compression rather than acceleration. And the algebraic term is where a <em>mass</em> comes from, because a mass term is quadratic in the field and carries no derivative.</p>
+<p><strong>The two terms are the whole input, and the claim is that the fluid's six slots are read from them.</strong> This is worth stating as a discipline rather than an observation. A derivation that needs a third term to reach a fluid slot is not a declension of this skeleton; it is a different construction, and the corpus's one such block says so. <a href="causal-dissipative-fluid-physics-in-biquaternionic-form.html">Causal Dissipative Fluid Physics</a> has no action behind it, because a dissipative term is not the variation of anything. That block is outside the skeleton, and the exclusion is a feature: the skeleton covers the Lagrangian fluids, and the boundary of that class is exactly the existence of S1.</p>
+<p><strong>One subtlety, stated because it recurs.</strong> The pairing must be <em>scalar</em>, in the sense of returning an element of the centre with the invariance the action needs. <a href="the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density</a> derives the three requirements — cyclicity, reality, positivity as a Euclidean statement — and shows that at $2\times2$ the element pairing and the trace are one functional, so the obstruction on $\mathbb{C}^{4}$ is dimension and not symmetry. The consequence for this article is narrow: the pairing is <em>diagonal on the types</em>, which is S3a, and it is diagonal because it is scalar and the types are distinct invariant subspaces. S1 and S3a are therefore not independent, and the article states them separately because the derivation uses them separately.</p>
+<h2 id="s2-the-polar-word-is-a-bijection-on-the-invertibles">S2: The Polar Word Is a Bijection on the Invertibles</h2>
+<p><strong>The word is a factorisation of the field into real parameters.</strong> At the spinor rung,</p>
+<p>$$
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+$$</p>
+<p>with $\varrho&gt;0$ the scale, $\theta_{\mathrm{pha}}$ the phase, $\tilde U_{\Psi,\mathrm b}$ a Hermitian positive unit element carrying a rapidity and a real unit axis, and $\tilde u_{\mathrm r}$ a real unit quaternion carrying an angle and a real unit axis. The four factors are the four types of the conventions table, and the parameters are real.</p>
+<p><strong>The word is a bijection, and the bijection is the requirement.</strong> On the invertible elements, and with the phase taken modulo $2\pi$ and the rotor's angle modulo $4\pi$, the map from parameters to field is one-to-one and onto. That is the statement $1+1+3+3=8$ upgraded from a count to an identification: the parameters <em>are</em> the field's real data, not a redundant description of them.</p>
+<p><strong>Where the bijection fails, and the failure is part of the definition.</strong> Three loci, and they are the corpus's three singular sets.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>the singular set</th>
+<th>what fails there</th>
+<th>where it is stated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spinor, scalar</td>
+<td>the zero-divisor cone $N(\tilde\Xi)=0$</td>
+<td>no polar decomposition exists; the field has no density</td>
+<td><a href="the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone.html">The Domain of the Polar Decomposition</a></td>
+</tr>
+<tr>
+<td>scalar, Schrödinger</td>
+<td>the nodal set $\varrho=0$</td>
+<td>the phase is undefined, the velocity diverges</td>
+<td><a href="the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a></td>
+</tr>
+<tr>
+<td>matrix, $\mathrm{SU}(4)$</td>
+<td>the crossings $\rho_{k}=\rho_{l}$</td>
+<td>the pair's guidance entry is $0/0$</td>
+<td><a href="su4-fluid-equations-from-the-primordial-action.html">The SU(4) Fluid Equations</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three are one phenomenon at three rungs, and the article says so because a reader will otherwise read them as three defects.</strong> In each case the word's map ceases to be a bijection: at the cone the field is not invertible and the word does not exist; at the node the scale vanishes and the phase's coordinate degenerates; at the crossing two eigenvalues coincide and the frame's action on the pair is undefined. <strong>The fluid chart is a chart, and a chart has a singular locus.</strong> The field equations survive where the chart does not, and that asymmetry is the subject of the third of this article's equivalences.</p>
+<p><strong>The matrix rung's word is the same word, one group up.</strong> There the field is $\Xi=U_{\mathrm{frm}}PU_{\mathrm{frm}}^{\dagger}$ with $P=\mathrm{diag}(\rho_{1},\dots,\rho_{4})$, the parameters are four eigenvalues and a twelve-parameter frame, and the count is $4+12=16$ against the sixteen real components of a Hermitian matrix. <strong>The redundancy is $\mathrm{U}(1)^{4}$, the subgroup that commutes with $P$</strong>, and it is the reason the frame contributes twelve and not sixteen. The word is again a bijection, now onto the orbits of that subgroup, and the singular locus is the crossing.</p>
+<p><strong>Two things S2 supplies and nothing else does.</strong> The coordinates — the derivation has nothing to vary until the word exists. And the <em>order separation</em>, which the article postpones to S4 because it is the payoff: the word does not merely rename the field's data, it puts the phase and the frame at one order below the scale, and that spare derivative is what the force will be made of.</p>
+<h2 id="s3-the-type-decomposition-and-one-equation-per-coordinate">S3: The Type Decomposition, and One Equation per Coordinate</h2>
+<p>Step three is two statements, and the article keeps them apart because a derivation uses them in order.</p>
+<h3 id="s3a-the-pairing-does-not-mix-the-types">S3a: The Pairing Does Not Mix the Types</h3>
+<p><strong>The logarithmic derivative has four parts, and they are of four different types.</strong> Differentiating $\tilde\Xi=\varrho\,e^{i\theta}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and multiplying by $\tilde\Xi^{-1}$,</p>
+<p>$$
+\mathcal A_{\imath}
+=\underbrace{\partial_{\imath}\ln\varrho}_{\text{real central}}
++\underbrace{i\,\partial_{\imath}\theta_{\mathrm{pha}}}_{\text{central imaginary}}
++\underbrace{\tilde U_{\Psi,\mathrm b}^{-1}\partial_{\imath}\tilde U_{\Psi,\mathrm b}}_{\text{Hermitian traceless}}
++\underbrace{\tilde u_{\mathrm r}^{-1}\partial_{\imath}\tilde u_{\mathrm r}}_{\text{real traceless}} .
+$$</p>
+<p>The four terms are not four approximations to one object. They lie in four invariant subspaces of the algebra, and each is closed under the operations the other three are built from.</p>
+<p><strong>The scalar pairing is diagonal on those subspaces, so the kinetic term is a sum of four squares with no cross term.</strong> This is the step that is usually compressed into "substitute and expand". It is not an algebraic accident: the pairing returns a central element, the four types are distinct subspaces of the algebra, and a scalar pairing of two elements of different types vanishes identically. <strong>The kinetic term is therefore four independent squares, and the action is four theories that share a field.</strong> The corpus states it once for the collapse — "the two squares are separate because the bracket's real and imaginary parts are of different types and do not mix under the scalar pairing" — and the statement is the general one.</p>
+<p><strong>What S3a buys, and what its failure would cost.</strong> Because the squares do not mix, each coordinate's equation is a statement about one type and can be read alone. A pairing that mixed types would produce cross terms, and a cross term is a coupling in the <em>kinetic</em> term — a kinetic mixing that turns two coordinates' equations into one system and destroys the slot assignment of S3b. <strong>The corpus has a worked example of the failure</strong>: the matrix rung's trace pairing mixes nothing, but the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is not cyclic and would cost the invariance of the Yang–Mills action, which <a href="the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation</a> states as the reason the trace is used there.</p>
+<p><strong>The class this excludes.</strong> S3a is where a theory with derivative cross-coupling — a Chern–Simons term, a Pauli term with an arbitrary coefficient, a non-minimal coupling — leaves the skeleton. It is not that such theories have no fluid; it is that their kinetic term is not four squares, so the type-to-slot map does not exist and the derivation must be redone by hand. The skeleton is a statement about actions of the S1 form.</p>
+<h3 id="s3b-the-type-of-a-term-decides-which-slot-its-equation-fills">S3b: The Type of a Term Decides Which Slot Its Equation Fills</h3>
+<p><strong>Varying one coordinate gives one equation, and the equation inherits the type of the term the coordinate appears in.</strong> This is the claim, and its content is easiest to see as a table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coordinate</th>
+<th>its type</th>
+<th>its equation's type</th>
+<th>the slot it fills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varrho$</td>
+<td>real central</td>
+<td>a real scalar, second order</td>
+<td>the density's transport</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}$</td>
+<td>central imaginary</td>
+<td>a divergence, first order</td>
+<td>continuity</td>
+</tr>
+<tr>
+<td>$\tilde U_{\Psi,\mathrm b}$</td>
+<td>Hermitian traceless</td>
+<td>a vector-valued transport</td>
+<td>the boost's transport</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}$</td>
+<td>real traceless</td>
+<td>a vector-valued transport</td>
+<td>the rotor's transport</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The equations come out in the type's shape and in no other.</strong> A real central coordinate's variation yields a real scalar equation because the coordinate is central and real; a central imaginary coordinate appears in the action only through $\partial_{\imath}\theta$, so its Euler–Lagrange equation is the vanishing of a divergence, and a divergence is continuity. <strong>No rung can produce a spin equation from a scalar action</strong>, because the type is not there to vary — and that is a stronger statement than "the action does not contain spin": it says that the slot list is a function of the type list, and a missing type is a missing slot.</p>
+<p><strong>The honesty, because the map is not onto the six slots.</strong> Two of a fluid's six slots are coordinate equations at the gradient rungs — continuity and the density's transport — and the other four are read from the same two terms rather than varied. The acceleration slot is the derivative of the density's equation, not an independent variation; the vorticity is a function of the velocity; the equation of state is the algebraic term's contribution to the stress. <a href="criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation.html">Criterion for a Fluid Equation</a> says this in the vocabulary of warrants, and the statement here is its complement: <strong>S3b assigns the slots that <em>can</em> be coordinate equations, and says of the others that they are read.</strong> The two statements agree, and the ladder's count is the same in both.</p>
+<p><strong>At the matrix rung the same statement is the guidance equation, and it is algebraic rather than a divergence.</strong> The frame's coordinate is the entry $U_{\mathrm{frm},kl}$, and its variation gives $\Omega_{\imath,kl}=M_{kl}/q_{kl}$ — an algebraic relation, because at that rung the frame enters the action through a first-order covariant derivative and not through a phase gradient. <strong>The type is the same — Hermitian traceless, the frame's — and the equation's shape is not</strong>, because the rung's action is first order in the frame. That is the one place in the ladder where S3b's output does not look like its siblings', and it is the reason S4 exists as a separate step rather than as a remark.</p>
+<h2 id="s4-the-acceleration-law-is-manufactured-not-varied">S4: The Acceleration Law Is Manufactured, Not Varied</h2>
+<p><strong>This is the step the corpus performs without naming, and it is the step that produces the force at every rung.</strong> The statement has three parts, and the third is the one usually written as a remark.</p>
+<p><em>First, the word separates the coordinates by order.</em> The scale appears in the algebraic term undifferentiated, so its variation carries a $\partial V/\partial\varrho$ piece and its equation has the field equation's order. The phase appears only as $\partial_{\imath}\theta_{\mathrm{pha}}$, so its variation is the vanishing of a divergence, and it is <strong>one order lower</strong>. The frame appears only as $\tilde U^{-1}\partial_{\imath}\tilde U$, so its equation is one order lower too — a transport, or at the matrix rung an algebraic relation.</p>
+<p><em>Second, the rung therefore carries a first-order relation that defines the velocity.</em> At the scalar rungs it is the guidance equation, $\partial_{\imath}S=m v_{\imath}$ together with the statement that fixes the zero of $S$; at the matrix rung it is $\Omega_{\imath,kl}=M_{kl}/q_{kl}$. <strong>A defining relation that is first order leaves exactly one derivative available</strong>, and that derivative is what the acceleration law is made of.</p>
+<p><em>Third, the acceleration law is obtained from a coordinate's equation rather than varied.</em> The corpus's sentence is exact and it is the general one: <strong>Euler is not varied; it is differentiated.</strong> Differentiating the guidance relation consumes the available derivative, and the result relates the velocity's own derivative to the other terms — which is what a force is. <strong>The second derivative of the phase appears nowhere else in the system.</strong> Continuity has only first derivatives; the quantum Hamilton–Jacobi equation has only first derivatives of the phase; the acceleration law is the only place the phase's second derivative lives, and it gets there by differentiation. That is the sharpest statement of what S4 is.</p>
+<p><strong>The honesty about the frame rungs, because the word "differentiated" does not cover them.</strong> At the Proca and Dirac rungs the frame's equation is already second order, and the fluid's acceleration law is its component <em>transverse to the flow</em> — a projection, not a differentiation. <strong>The general statement is therefore not "differentiate" but "manufacture from a coordinate's equation", and the manufacturing is a differentiation where the velocity is a gradient, a projection where it is a direction, and a derivative of the algebraic guidance relation at the matrix rung.</strong> Three operations, one claim: the acceleration law is never an independent variation.</p>
+<p><strong>Three kinds of term come out of the manufacturing, and the article insists on keeping them apart.</strong> Differentiating a product produces the genuine second derivative — the acceleration; the transport of the quantity being carried; and a product-rule term from the fact that both the quantity and the flow vary. At the scalar rungs the three are the acceleration $\partial_{t'}\vec v$, the convective term $(\vec v\cdot\vec\nabla)\vec v$, and the gradient of the quantum potential. <strong>The product-rule term is never the force term</strong>, and the corpus's error log contains a display that merged them. <a href="differentiating-a-first-order-transport-law-force-transport-and-product-rule-terms.html">Differentiating a First-Order Transport Law</a> states the three in full.</p>
+<p><strong>Why this is not new physics, stated plainly.</strong> The manufactured equation is a consequence of an equation already in the rung: differentiate the guidance relation and use the field equation, and the acceleration law follows. It adds no term to the action and no equation to the system. <strong>What S4 changes is the reading</strong> — the same content appears once as a transport law and once as an acceleration law, and the corpus keeps both because they answer different questions. <strong>What S4 adds is the location</strong>: the second derivative of the fast coordinate lives in the force slot and nowhere else, and that is why a force slot exists at every rung.</p>
+<p><strong>At the matrix rung S4 manufactures a balance and not a law, and the reason is S5.</strong> The guidance relation there is algebraic in $\Omega_{\imath}$, and its derivative gives $\partial_{\jmath}\Pi_{\imath}=\dots$ — a divergence of a matrix-valued momentum. There is no $v^{\imath}\partial_{\imath}$ anywhere in it, because $\Omega_{\imath}$ is internal, and no material derivative means no worldline, which means no $F=ma$. <strong>That is not a defect of the manufacturing; it is the manufacturing reporting a fact about the rung.</strong> Which brings the article to the fifth step.</p>
+<h2 id="s5-base-valued-or-internal-the-test-that-sorts-the-output">S5: Base-Valued or Internal — the Test That Sorts the Output</h2>
+<p><strong>The question is one line: is the fluid's velocity a section of the base's own tangent bundle?</strong> The base is the material sector $\mathbb{B}_{\Phi}$ at every rung; the fibre is what changes. The velocity is a frame element at the spinor and vector rungs and an algebra element at the matrix rung, and the test asks whether the first is an element of $\mathbb{B}_{\Phi}$ at each point and the second is not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>the velocity</th>
+<th>in the base, or on it?</th>
+<th>what S4 produces</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger, Klein–Gordon</td>
+<td>$\vec\nabla_{\Phi}S/m$, $\partial_{\imath}S/m$: a gradient</td>
+<td><strong>in</strong></td>
+<td>a force law, by differentiating the transport</td>
+</tr>
+<tr>
+<td>Dirac, Proca</td>
+<td>$ic\tilde U_{\Psi,\mathrm b}^{-2}$; $A_{\imath}/\varrho$: a direction</td>
+<td><strong>in</strong></td>
+<td>a force law, by projecting the frame's equation</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>$\Omega_{\imath}=U_{\mathrm{frm}}^{\dagger}D_{\imath}U_{\mathrm{frm}}\in\mathfrak{u}(4)$</td>
+<td><strong>on</strong></td>
+<td>a momentum balance, no material derivative</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three ways of filling one slot, and the three are what the test sorts.</strong> At the gradient rungs the transport law is a divergence of a current, and differentiating it gives the acceleration of a worldline: Euler. At the frame rungs the frame's equation is vector-valued and the fluid's acceleration is its component along the flow, so the slot is filled by a <em>projection</em> — defined only where the frame exists and only along the directions the flow selects. At the matrix rung the velocity is internal, the transport is a parallel transport in $\mathfrak{u}(4)$, and the slot is filled by the field equation itself, whose subject happens to be the vorticity.</p>
+<p><strong>Why the internal case cannot produce a law, in one paragraph.</strong> A force law is an equation for the acceleration of a trajectory. A trajectory needs a tangent vector that is an element of the base at each point, and a derivative along it. An internal velocity supplies neither: $\Omega_{\imath}$ is a connection on a bundle whose base is the event manifold, but its values are in $\mathfrak{u}(4)$ and its "derivative along the flow" is a covariant derivative on the <em>fibre</em>. The object that would play the role of $v^{\imath}\partial_{\imath}$ does not exist. <strong>So the equation is a balance among fibre-valued objects, and a balance is not less than a law — it is a law of a different kind, one that relates a momentum's divergence to a curvature rather than an acceleration to a force.</strong></p>
+<p><strong>The test is not "abelian versus non-abelian", and the article states this because the confusion is natural.</strong> A non-abelian <em>base-valued</em> velocity — a fluid of charged particles with an $\mathrm{SU}(2)$ charge, say — has a material derivative and obeys Wong's equations, which are a force law with a non-abelian charge. An <em>internal</em> $\mathrm{U}(1)$ velocity would have none. The discriminator is where the velocity lives, not what group it takes values in. Wong's own equations are the proof: they are non-abelian and they are a law, because the probe moves on the base and only its charge is internal.</p>
+<h2 id="the-five-steps-run-on-five-fields">The Five Steps Run on Five Fields</h2>
+<p><strong>The claim is that the five steps produce each rung's fluid, and the check is to run them and compare.</strong> The matrix below is the article's centrepiece. Read down a column and it is one rung's derivation; read across a row and it is one step's version at five rungs.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Schrödinger</th>
+<th>Klein–Gordon</th>
+<th>Dirac</th>
+<th>Proca</th>
+<th>$\mathrm{SU}(4)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S1 the action</strong></td>
+<td>first order in time, kinetic $+\tfrac{h^{2}}{8\pi^{2}m}\lvert\nabla\tilde\Xi\rvert^{2}$, potential $V$</td>
+<td>second order, kinetic $+$ mass</td>
+<td>first order, the Dirac kinetic term with the bispinor ideal</td>
+<td>second order, kinetic $+\tfrac12m^{2}A^{2}$</td>
+<td>second order, $\mathrm{Tr}(D_{\imath}PD_{\imath}P)$ plus the eigenvalue potential</td>
+</tr>
+<tr>
+<td><strong>S2 the word</strong></td>
+<td>$\varrho e^{i\theta}\varepsilon e_t$, $2+1$ data</td>
+<td>$\varrho e^{i\theta}\varepsilon e_t$</td>
+<td>$\varrho e^{i\theta}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, $1+1+3+3$</td>
+<td>$\varepsilon i\varrho\tilde U_{\Psi,\mathrm b}$</td>
+<td>$U_{\mathrm{frm}}PU_{\mathrm{frm}}^{\dagger}$, $4+12$</td>
+</tr>
+<tr>
+<td><strong>S3 the types</strong></td>
+<td>real central, central imaginary</td>
+<td>same</td>
+<td>four types</td>
+<td>real central, Hermitian traceless</td>
+<td>four eigenvalues, frame's twelve</td>
+</tr>
+<tr>
+<td><strong>S4 the order</strong></td>
+<td>phase first order, scale second</td>
+<td>phase first order, scale second</td>
+<td>phase first order, frame's</td>
+<td>frame first order, scale second</td>
+<td>frame's guidance algebraic, density second</td>
+</tr>
+<tr>
+<td><strong>S5 the sort</strong></td>
+<td>velocity is a gradient, <strong>in</strong></td>
+<td>velocity a four-gradient, <strong>in</strong></td>
+<td>velocity a direction, <strong>in</strong></td>
+<td>velocity a direction, <strong>in</strong></td>
+<td>velocity internal, <strong>on</strong></td>
+</tr>
+<tr>
+<td><strong>the output</strong></td>
+<td>Euler with the quantum force</td>
+<td>Euler with $\gamma^{-1}$</td>
+<td>the spin fluid's acceleration</td>
+<td>Euler, projected</td>
+<td>the momentum balance</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two readings of the matrix, and both are the article's point.</strong> The columns differ — the words differ, the orders differ, the sorts differ — and the rows are the same operation. <strong>The skeleton is the rows; the declension is the column.</strong> A new Lagrangian is a new column, and the question of whether it is a fluid is the question of whether its column can be filled.</p>
+<p><strong>The two ends of the table are the two hard cases, and they are hard for opposite reasons.</strong> The Schrödinger rung is the one whose action is <em>first</em> order, so its Hessian vanishes and S4's language must be the kinetic matrix rather than the second variation; that is a fact about the rung and not a failure of the step. The $\mathrm{SU}(4)$ rung is the one whose velocity is internal, so S5 sends it to a balance; that is a fact about the rung too, and the corpus's own statement — "a fluid <em>on</em> the material sector and not <em>in</em> it" — is S5's output in the corpus's words.</p>
+<p><strong>The middle three rungs are where the skeleton does the most work and gets the least credit.</strong> At the Klein–Gordon rung S4 produces Euler with a $\gamma^{-1}$ factor, and the factor is the rung's signature: the velocity's magnitude is not free, so the acceleration law carries the price of the constraint. At the Dirac rung S4 produces the acceleration of a spin fluid, and the spin's contribution enters through the same type-slot map — the rotor's transport is the spin's equation, and it is a <em>transport</em> and not an acceleration, because the rotor is a coordinate whose equation is first order. At the Proca rung S4's output is a projection, and the projection is why the fluid's Euler equation is two of the frame's components and not all four.</p>
+<p><strong>What the matrix does not show, and the honesty requires saying it.</strong> The entries are stated at the level of what kind of object each step produces, not at the level of the formula. A reader who wants the formulas reads the five articles, and this matrix is an index to them. <strong>The claim it supports is structural and not numerical</strong>: that the five columns are the same five operations. The claim it does not support is that the equations are equal — they are not, and the differences are the rungs' physics.</p>
+<h2 id="the-protocol-running-the-five-steps-on-a-lagrangian-the-corpus-has-not-treated">The Protocol: Running the Five Steps on a Lagrangian the Corpus Has Not Treated</h2>
+<p><strong>The skeleton is only an approach if it can be run on something new.</strong> This section states the run as five questions, and the point of the questions is that each has a <em>failure mode</em>. A new Lagrangian either passes the five or names the step it breaks, and a broken step is a result.</p>
+<h3 id="the-five-questions">The Five Questions</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>the question</th>
+<th>the answer that passes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>is the action a pairing of logarithmic derivatives plus one algebraic term?</td>
+<td>the two terms exist and the pairing is scalar</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>is the field invertible, and is the word a bijection onto its real parameters?</td>
+<td>the count closes, $1+1+3+3=8$ or its rung's analogue</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>are the parts of $\mathcal A_{\imath}$ of distinct types, and does the pairing leave them unmixed?</td>
+<td>the kinetic term is a sum of squares with no cross term</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>is a derivative available — is some coordinate's equation one order below the field equation's?</td>
+<td>the guidance relation is first order, and the acceleration law can be manufactured from it</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>is the velocity a section of the base?</td>
+<td>answered either way; the answer sorts the output, it does not fail the rung</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>S5 is the odd one out and the article marks it.</strong> The first four are pass-or-fail; the fifth is a branch. A rung that passes S1 to S4 and reports "internal" at S5 has not failed — it has produced a balance, which is what its physics is. <strong>The test does not grade a rung; it tells you what the rung's force equation will be.</strong></p>
+<h3 id="the-five-failure-modes">The Five Failure Modes</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>how it fails</th>
+<th>what the failure means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>there is no action</td>
+<td>a dissipative or phenomenological fluid; the skeleton does not apply</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>the field is constrained, or the word is not a bijection</td>
+<td>the coordinates do not exist; the count does not close</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>the pairing mixes types</td>
+<td>cross terms in the kinetic energy; the slot map is a system, not a list</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>every coordinate's equation is the field equation's order</td>
+<td>no guidance relation to differentiate or project; there is no force slot to fill</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>— (a branch, not a failure)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first failure mode is the corpus's own boundary, and it names a block.</strong> <a href="causal-dissipative-fluid-physics-in-biquaternionic-form.html">Causal Dissipative Fluid Physics</a> is a fluid with no action: its Israel–Stewart equations are a relaxation of a first-order constitutive law, and no Lagrangian produces them. The skeleton's first question excludes it at once, and the exclusion is honest — the block is a fluid and not a Lagrangian fluid, and the two classes are different.</p>
+<p><strong>The second failure mode is a real class and the corpus has its members.</strong> A pure spinor has no density: $\varrho=0$ identically, the word degenerates, and the count does not close. A constrained field — a field on a constraint surface — has fewer coordinates than the word would give it. <strong>The failure is not a defect of the field; it is the word telling you the field is not of the class.</strong> The corpus's massless fluid is the sharpest case: at $N(\tilde\Xi)=0$ the label chart and the value chart both fail, and the failure is proved rather than observed.</p>
+<p><strong>The third failure mode is the one a new Lagrangian is most likely to hit, and the article names the culprits.</strong> Any term with two derivatives and two different types in it — a mixed Chern–Simons, a non-minimal coupling, a Pauli term with arbitrary coefficient — puts a cross term in the kinetic energy. The rung then has no slot list, and the derivation must be done by hand. <strong>This is not a prohibition on such theories; it is a statement that the skeleton's shortcut does not apply to them.</strong></p>
+<p><strong>The fourth failure mode is the one to watch for, because it looks like success.</strong> A rung whose every coordinate's equation is second order has fluid slots and no force slot: it has a continuity-like equation for each coordinate and no transport to differentiate. <strong>It is a set of coupled wave equations wearing a fluid's names</strong>, and S4 is the step that tells them apart. The Dirac rung is the near miss: its equations are first order in time, so it has a transport, and it is the rung whose <em>rank</em> fails rather than whose order does — a difference the next subsection states.</p>
+<h3 id="the-two-ways-a-rung-can-be-ill-defined-and-only-one-is-s4s">The Two Ways a Rung Can Be Ill-Defined, and Only One Is S4's</h3>
+<p><strong>A rung can fail to close for want of order, and it can fail to close for want of rank.</strong> S4 detects the first: no first-order equation, no force. The second is a different test, and <a href="criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation.html">Criterion for a Fluid Equation</a> owns it: the highest-derivative form must be nondegenerate on the physical subspace, and the Dirac rung's four vanishing momenta are the corpus's example of a rung that passes the count and fails the rank. <strong>The skeleton's five steps do not include the rank test, and the article says so rather than pretending they do.</strong> The five steps produce the slots; the rank test decides whether the slots are filled by equations that determine rates. A complete declension runs both, and the corpus's ladder table is the one place both verdicts are recorded side by side.</p>
+<h2 id="the-three-equivalences-stated-separately">The Three Equivalences, Stated Separately</h2>
+<p><strong>The word "equivalent" is doing three jobs in this literature, and the article separates them because the skeleton depends on the separation.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>the answer</th>
+<th>why it matters here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>same <strong>content</strong>?</td>
+<td><strong>yes</strong>: the word is a bijection, so the two descriptions have the same solution set</td>
+<td>S2's bijection is what makes the fluid chart lossless</td>
+</tr>
+<tr>
+<td>same <strong>warrant</strong>?</td>
+<td><strong>no</strong>: a fluid equation is a coordinate's Euler–Lagrange equation; the equation route's output is a combination on the field equation</td>
+<td>S3b's slot assignment is what the criterion grades</td>
+</tr>
+<tr>
+<td>same <strong>domain</strong>?</td>
+<td><strong>no</strong>: the word is a bijection on the invertibles only, so the chart has a singular locus</td>
+<td>S2's failure table is the chart's boundary</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first equivalence is the one that licenses the reading, and it is exact.</strong> Because the map is one-to-one and onto, every solution of the field equation is a solution of the fluid equations and back. The fluid chart adds nothing and loses nothing. <strong>A reader who suspects the corpus of substituting a different theory at each rung can be answered with the bijection</strong>: the same solutions, re-coordinatised.</p>
+<p><strong>The second equivalence is the one that makes the criterion a criterion, and it is where the corpus's methodological claim lives.</strong> The equation route — multiply by $\tilde\Xi^{*}$, take the parts — produces continuity, an energy equation and a vorticity identity together, and it cannot say which of them to keep. <strong>The action route can</strong>, because only a coordinate's variation gives that coordinate's equation. The content is the same; the <em>selection</em> is not, and the selection is what a fluid reading needs.</p>
+<p><strong>The third equivalence is the one that keeps the corpus honest, and it is asymmetric.</strong> The field equation survives where the chart does not: at the zero-divisor cone, at the node, at the crossing. <strong>The fluid is a chart with a singular locus, and the physics continues past it.</strong> That asymmetry is why the corpus states its singular sets one by one rather than treating them as technicalities, and why a claim that "the fluid equations are the field equation" is true on the chart's domain and only there.</p>
+<p><strong>The three, in one sentence.</strong> <em>Same solutions, different warrant, smaller domain</em> — and a derivation that confuses them will claim either too much (that the fluid is a new theory) or too little (that it is only a rewriting).</p>
+<h2 id="what-this-article-does-not-claim">What This Article Does Not Claim</h2>
+<p><strong>That the skeleton is a theorem.</strong> It is an extraction, and its warrant is that five independent derivations share it. A sixth field could walk the five steps and fail at a step for a reason the article does not anticipate, and that would be a result rather than a refutation. <strong>The skeleton is a protocol with a stated boundary, not a law about fields.</strong></p>
+<p><strong>That a fluid equation is a <em>better</em> equation than the field equation.</strong> They are the same equation on the chart's domain, and the field equation is the one that survives where the chart does not. <strong>The fluid reading is a reading</strong>, and the article's claim is about which reading a slot belongs to, not about which is true.</p>
+<p><strong>That the five steps derive the fluid equations from nothing.</strong> Each rung's equations were already there. The derivation re-<em>derives</em> them by the action route so that the warrant is a variation and not a construction, and the content is unchanged. <strong>A reader looking for a new prediction will not find one here</strong>, and the corpus's honest position is that the fluid chart predicts nothing the field equation does not.</p>
+<p><strong>That S4 is original to this article.</strong> The sentence "Euler is not varied, it is differentiated" is the corpus's, and every rung that has a force slot performed S4 before this article named it. <strong>What the article adds is that S4 is one claim at every rung — the acceleration law is never varied — that the second derivative of the fast coordinate lives in the force slot and nowhere else, and that S4's three kinds of term are not interchangeable.</strong> The naming is the contribution; the mathematics is the rungs'.</p>
+<p><strong>That the ladder closes uniformly.</strong> It does not. Continuity's warrant degrades monotonically on the way up, and the top rung's continuity is an identity that fails in a stated sense. <strong>The skeleton produces the slots at every rung; it does not promise that every slot is filled by a conservation law at every rung.</strong> The ladder table records what each rung actually gets.</p>
+<p><strong>That "fluid" is a claim about a medium.</strong> Nothing here says the field <em>is</em> a material substance. The word names a chart in which certain quantities play the roles of density, flow, vorticity and pressure, and the corpus's discipline is to say which role each object plays and what would falsify the assignment. <strong>The strongest statement the article makes is that five fields admit the same chart, not that any of them is made of anything.</strong></p>
+<p><strong>That the protocol's failure modes are exhaustive.</strong> They cover the failure modes the corpus has met: no action, no bijection, mixed types, no order reduction. A fifth kind could exist, and the protocol would then be incomplete rather than wrong.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>Does the skeleton extend to a constrained system with a first-class algebra that is not a gauge theory?</strong> The $\mathrm{SU}(4)$ rung's fifteen Gauss laws are first class and its counting is $60-2\times15=30$. A system whose constraints are second class would close differently, and S4's language — which coordinate's equation is first order — would need the Dirac bracket. Whether the five steps survive the replacement is not settled.</p>
+<p><strong>Is S3a's diagonal pairing a consequence of the types or of the scalar pairing, and could a non-scalar pairing keep the slot map?</strong> If the slot map survives a pairing that is not scalar, then S3a is weaker than the article states. The corpus has one test case — the informational reduction that is not cyclic — and it is a failure of invariance rather than of the slot map, so the question is open.</p>
+<p><strong>What is the fluid of a field with a fermionic condensate?</strong> The spinor rung's word is bosonic; a Grassmann-valued field has no $\varrho&gt;0$. The corpus treats the spinor's fluid as a bilinear reading, and whether that is S2 or a different step is not settled.</p>
+<p><strong>Does the order reduction of S4 have a gravitational analogue, where the "scale" is the conformal factor and the "phase" the frame?</strong> The corpus's gravity category states a frame and a connection; whether the conformal factor's equation is the one whose order matches and the frame's is the one that is one low is not stated anywhere. If it were true, S4 would be a statement about any field theory with a polar decomposition, and the skeleton would be wider than the Lagrangian fluids.</p>
+<p><strong>Can the protocol be mechanised?</strong> The five questions are decidable on an action of the S1 form — the types are computable, the count closes or not, the orders are readable. A script that takes an action and returns the five answers would turn the protocol into a check, and the corpus's verification directory is where such a script would live.</p>
+<h2 id="what-this-article-adds-and-what-it-relabels">What This Article Adds and What It Relabels</h2>
+<p><strong>Adds.</strong> The five-step skeleton as one statement, extracted from five independent derivations; <strong>S4 as a named step</strong>, with its content that the acceleration law is manufactured from a first-order guidance relation and never varied, that the second derivative of the fast coordinate lives in the force slot alone, and that the manufacturing is a differentiation at the gradient and matrix rungs and a projection at the frame rungs; <strong>S5 as a branch</strong> rather than a computation, with the base-versus-internal test that sorts a law from a balance and the explicit answer that the discriminator is where the velocity lives and not which group it takes values in; the <strong>five-by-five matrix</strong> that runs the steps on the five fields; the <strong>protocol</strong> — five questions with five failure modes, including the fourth that looks like success; and the <strong>separation of the three equivalences</strong>, with the third's asymmetry named.</p>
+<p><strong>Does not add.</strong> No new action, no new solution, no new equation at any rung. Every display is a sibling's, and the matrix is an index to the five articles rather than a computation.</p>
+<p><strong>Relabels three phrases.</strong> <em>"The polar substitution gives the fluid variables"</em> — it gives the coordinates, and the slots come from the types of their terms, which is S3b and not S2. <em>"The fluid equations are the field equation rewritten"</em> — same content, different warrant, and a smaller domain; the three are separate questions. <em>"The primordial fluid is a different kind of fluid"</em> — it is the same five steps, with an internal velocity, and S5 is the step that says so.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>An equation is a fluid equation when it is one coordinate's Euler–Lagrange equation in the polar chart, and this article states the derivation that produces those equations at five rungs.</strong> The derivation has five steps. The action is a pairing of logarithmic derivatives plus one algebraic term (S1). The polar word factorises the field into real parameters and is a bijection on the invertibles (S2). The parts of the logarithmic derivative have distinct types, the pairing is diagonal on them so the kinetic term is a sum of squares, and one variation per coordinate fills one slot per type (S3). The phase and the frame enter only through derivatives, so their equations are one order lower and leave a derivative available; the acceleration law is manufactured from them — differentiated where the velocity is a gradient, projected where it is a direction — and never varied (S4). And whether the velocity is a section of the base decides whether that slot holds a law or a balance (S5).</p>
+<p><strong>Step three is two steps and step four is the one usually left out.</strong> S3a is a statement about the action; S3b is a statement about the variation. S4 is the inverse of S2's order reduction, and it is the reason a force exists at every rung without a third term in the action. <strong>The five steps are the skeleton; the rung is the column.</strong></p>
+<p><strong>The skeleton is falsifiable and the article states the failures.</strong> No action excludes the dissipative block. No bijection excludes the pure spinor and the constrained field. Mixed types cost the slot map. All-second-order equations give slots and no force. <strong>Each failure names the step, and a named step is a result.</strong></p>
+<p><strong>The three equivalences are separate.</strong> Same solutions, different warrant, smaller domain. A derivation that merges them claims either that the fluid is a new theory or that it is only a rewriting, and it is neither.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi$</td>
+<td>the field, an element of $\mathbb{B}$ or of a module over it</td>
+</tr>
+<tr>
+<td>$\partial_{\imath}$</td>
+<td>the material sector's gradient, $\imath\in\{t,x,y,z\}$</td>
+</tr>
+<tr>
+<td>$\mathcal A_{\imath}=\tilde\Xi^{-1}\partial_{\imath}\tilde\Xi$</td>
+<td>the logarithmic derivative, one algebra element per direction</td>
+</tr>
+<tr>
+<td>$\varrho$, $\theta_{\mathrm{pha}}$</td>
+<td>the scale and the phase: the two central coordinates</td>
+</tr>
+<tr>
+<td>$\tilde U_{\Psi,\mathrm b}$, $\tilde u_{\mathrm r}$</td>
+<td>the boost and the rotor: the two frame coordinates</td>
+</tr>
+<tr>
+<td>$\langle\cdot\rangle_{\natural}$</td>
+<td>the quaternionic (scalar) pairing the action integrates</td>
+</tr>
+<tr>
+<td>$P=\mathrm{diag}(\rho_{1},\dots,\rho_{4})$, $U_{\mathrm{frm}}$</td>
+<td>the matrix rung's densities and frame</td>
+</tr>
+<tr>
+<td>$\Omega_{\imath}=U_{\mathrm{frm}}^{\dagger}D_{\imath}U_{\mathrm{frm}}$</td>
+<td>the matrix rung's internal velocity</td>
+</tr>
+<tr>
+<td>S1–S5</td>
+<td>the five steps of the skeleton</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>the material sector, the base at every rung</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation.html">Criterion for a Fluid Equation: One Polar Coordinate's Euler–Lagrange Equation, Not a Combination</a>, the criterion this article's S3b serves, and the ladder table where both closure tests are recorded.</li>
+<li><a href="the-relativistic-quantum-space-as-a-fluid.html">The Relativistic Quantum Space as a Fluid</a>, the object the skeleton is applied to, read before any state is put on it.</li>
+<li><a href="the-euler-and-continuity-equations-in-biquaternionic-form.html">The Euler and Continuity Equations in Biquaternionic Form</a>, the classical layer's five data and three equations, against which the six slots are counted.</li>
+<li><a href="the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a>, S1's pairing and the reason it is scalar.</li>
+<li><a href="the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone.html">The Domain of the Polar Decomposition: Invertible Elements and the Zero-Divisor Cone</a>, S2's singular locus at the spinor and scalar rungs.</li>
+<li><a href="differentiating-a-first-order-transport-law-force-transport-and-product-rule-terms.html">Differentiating a First-Order Transport Law: Force, Transport and Product-Rule Terms</a>, S4's three kinds of term, and the prohibition that the product-rule term is never a force.</li>
+<li><a href="base-valued-versus-internal-flow-velocity-a-test-separating-force-laws-from-momentum-balances.html">Base-Valued versus Internal Flow Velocity: A Test Separating Force Laws from Momentum Balances</a>, S5 as its own subject.</li>
+<li><a href="su4-fluid-equations-from-the-primordial-action.html">The SU(4) Fluid Equations from the Primordial Action</a>, the matrix rung where S4 produces a balance.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

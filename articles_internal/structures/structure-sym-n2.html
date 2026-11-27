@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$\mathcal N=2$ Super Yang–Mills: The Prepotential and the Seiberg–Witten Solution — Biquaternion Universe</title>
+  <meta name="description" content="The question. What is the exact low-energy content of four-dimensional super Yang–Mills, and what precisely does the Seiberg–Witten solution solve? The…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-super-yangmills-the-prepotential-and-the-seibergwitten-solution"><strong>$\mathcal N=2$ Super Yang–Mills: The Prepotential and the Seiberg–Witten Solution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> What is the exact low-energy content of four-dimensional
+$\mathcal N=2$ super Yang–Mills, and what precisely does the Seiberg–Witten
+solution solve? The theory is the first extended case that is genuinely distinct:
+$\mathcal N=3$ collapses to $\mathcal N=4$, but $\mathcal N=2$ has its own moduli
+space, its own dynamics, and an exact solution of its Coulomb branch. This note
+writes the multiplet, the Lagrangian determined by a single holomorphic function,
+the special Kähler geometry, the curve, the periods, and the duality action, and
+then says which of those statements is exact and which is a convention.</p>
+<p><strong>The answer in one line.</strong></p>
+<p>$$
+\boxed{\;
+\mathcal L_{\mathcal N=2}
+=\operatorname{Im}\Bigl[
+\int d^{2}\theta\;\tfrac14\,\mathcal F''(\Phi)\,W^{\alpha}W_\alpha
++\int d^{4}\theta\;\bar\Phi\,\mathcal F'(\Phi)\Bigr],
+\qquad
+\tau(\Phi)=\mathcal F''(\Phi),\quad
+K=\operatorname{Im}\bigl(\bar\Phi\,\mathcal F'(\Phi)\bigr)
+\;}
+$$</p>
+<p>so the whole theory is a holomorphic function $\mathcal F$ of one adjoint chiral
+superfield, and on the Coulomb branch the exact $\mathcal F$ is fixed by the
+periods of a meromorphic differential on an elliptic curve.</p>
+<p><strong>What is claimed, and what is not.</strong> Claimed: the field content, the superspace
+form, the one-loop exactness of the <em>perturbative</em> prepotential, the curve and
+differential for pure $SU(2)$ (in a stated normalization), the exact BPS mass
+formula $M=|n_e a+n_m a_D|$, and the $SL(2,\mathbb Z)$ action on the period
+vector. Not claimed: an exact solution of the full short-distance theory, of the
+Higgs branch, or of the non-BPS spectrum. The solution is exact in the infrared,
+on the Coulomb branch, for the quantities just listed.</p>
+<h2 id="field-content">Field Content</h2>
+<p>The on-shell $\mathcal N=2$ vector multiplet, all in the adjoint of $G$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>description</th>
+<th>$SU(2)_R$</th>
+<th>$U(1)_R$</th>
+<th>d.o.f.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_\mu$</td>
+<td>gauge boson</td>
+<td>$\mathbf 1$</td>
+<td>$0$</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\lambda^{i}$, $i=1,2$</td>
+<td>two Weyl gaugini</td>
+<td>$\mathbf 2$</td>
+<td>$+1$</td>
+<td>4</td>
+</tr>
+<tr>
+<td>$\phi$</td>
+<td>one complex scalar</td>
+<td>$\mathbf 1$</td>
+<td>$+2$</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two charges shown are the <em>classical</em> ones. The algebra has a
+$U(2)_R=SU(2)_R\times U(1)_R$ automorphism, and $SU(2)_R$ is an exact symmetry,
+but $U(1)_R$ is anomalous in the asymptotically free theory: the mixed
+gauge–$R$ anomaly with $T(\text{adj})=2N_c$ acting on two gaugini of charge $+1$
+breaks it to $\mathbb Z_{4N_c}$, twice the $\mathbb Z_{2N_c}$ of $\mathcal N=1$
+because there are twice as many gaugini. The $U(1)_R$ survives intact only when
+the matter content cancels the anomaly, as at $N_f=2N_c$, where it becomes the
+$R$-symmetry of the superconformal algebra $SU(2,2\vert 2)$.</p>
+<p>Bosons $2+2=4$, fermions $4$: balanced. Off shell one needs a whole
+$\mathcal N=2$ supermultiplet of auxiliary fields; the practical route is the
+$\mathcal N=1$ decomposition</p>
+<p>$$
+\mathcal N=2\ \text{vector}
+=\underbrace{(A_\mu,\lambda)}_{\mathcal N=1\ \text{vector}}
+\;\oplus\;
+\underbrace{(\phi,\psi)}_{\mathcal N=1\ \text{chiral}\ \Phi},
+$$</p>
+<p>with $\psi$ the second gaugino. The two gaugini are rotated into each other by
+the second supersymmetry; the scalar $\phi$ is the partner of the chiral
+multiplet's auxiliary field.</p>
+<p><strong>Matter.</strong> A hypermultiplet is, in $\mathcal N=1$ language, a pair of chiral
+multiplets $Q,\tilde Q$ (or a pseudoreal pair), carrying four real scalars and two
+Weyl fermions. It must sit in a real or pseudoreal representation, or in a
+conjugate pair, because it is CPT self-conjugate. This is a genuine restriction
+relative to $\mathcal N=1$, where any complex representation is allowed.</p>
+<h2 id="the-lagrangian-and-the-prepotential">The Lagrangian and the Prepotential</h2>
+<p><strong>Non-Abelian caveat.</strong> The superspace formula above is exact for an Abelian
+vector multiplet. For non-Abelian $G$ the prepotential is a gauge-invariant
+function of the adjoint $\Phi$ (typically through $\operatorname{Tr}\Phi^{k}$),
+and the formula is understood on the Coulomb branch, where $\Phi$ lies in the
+Cartan subalgebra and the theory reduces to $r=\operatorname{rank}G$ Abelian
+multiplets. This is the setting in which the Seiberg–Witten solution lives.</p>
+<p><strong>Pure theory.</strong> With $\mathcal F(\Phi)=\tfrac12\tau_0\Phi^{2}$,</p>
+<p>$$
+\tau=\tau_0,\qquad K=\operatorname{Im}(\tau_0)|\Phi|^{2},
+$$</p>
+<p>canonical kinetic terms and a constant coupling at tree level.</p>
+<p><strong>Components.</strong> With the scalar kinetic term normalized with an overall
+$1/g^{2}$,</p>
+<p>$$
+\mathcal L=\frac{1}{g^{2}}\operatorname{Tr}\Bigl[
+-\tfrac14F_{\mu\nu}F^{\mu\nu}
++i\bar\lambda\bar\sigma^{\mu}D_\mu\lambda
++i\bar\psi\bar\sigma^{\mu}D_\mu\psi
++D_\mu\bar\phi\,D^{\mu}\phi
+-\tfrac12[\phi,\bar\phi]^{2}
+-i\sqrt2\,\lambda[\psi,\phi]+\text{h.c.}\Bigr].
+$$</p>
+<p>The scalar potential is a single D-term,</p>
+<p>$$
+V=\frac{1}{2g^{2}}\operatorname{Tr}\bigl([\phi,\bar\phi]^{2}\bigr),
+$$</p>
+<p>which vanishes exactly where $[\phi,\bar\phi]=0$: the Coulomb branch. In the
+canonical normalization $V=\frac{g^{2}}{8}\operatorname{Tr}([\phi,\bar\phi]^{2})$;
+the two differ by $\phi\to g\phi$ and describe the same physics. The Yukawa
+coupling $-i\sqrt2\,\lambda[\psi,\phi]$ is fixed by $\mathcal N=2$; its sign and
+the factor $\sqrt2$ are convention.</p>
+<p><strong>Special Kähler geometry.</strong> The Kähler potential is not arbitrary:</p>
+<p>$$
+K=\operatorname{Im}\bigl(\bar\Phi\,\mathcal F'(\Phi)\bigr),
+\qquad
+g_{\Phi\bar\Phi}=\partial_\Phi\partial_{\bar\Phi}K=\operatorname{Im}\tau(\Phi).
+$$</p>
+<p>This is the rigid special Kähler condition: the metric is the imaginary part of
+the second derivative of a holomorphic prepotential. Equivalently, the geometry
+is described by a period vector of a holomorphic one-form, which is exactly what
+the curve supplies.</p>
+<h2 id="the-math65-function-and-perturbative-exactness">The $\beta$-Function and Perturbative Exactness</h2>
+<p>For $SU(N_c)$ with $N_f$ fundamental hypermultiplets,</p>
+<p>$$
+\beta(g)=-\frac{(2N_c-N_f)\,g^{3}}{16\pi^{2}},
+$$</p>
+<p>one-loop exact: the perturbative prepotential receives only a one-loop
+correction,</p>
+<p>$$
+\mathcal F_{\text{pert}}=\mathcal F_{\text{tree}}+\mathcal F_{1\text{-loop}},
+\qquad
+\mathcal F_{1\text{-loop}}
+=c_1\sum_{\text{roots}}(\Phi\cdot\alpha)^{2}
+\log\frac{(\Phi\cdot\alpha)^{2}}{\Lambda^{2}},
+$$</p>
+<p>with $c_1$ normalization-dependent. There are no higher-loop perturbative
+corrections; there <em>are</em> non-perturbative instanton corrections, and those are
+what the curve encodes. The two statements must be kept apart: the
+$\mathcal N=2$ prepotential is not one-loop exact, only its perturbative part is.</p>
+<h2 id="the-seibergwitten-curve">The Seiberg–Witten Curve</h2>
+<p><strong>Pure $SU(2)$.</strong> The Coulomb branch is parameterized by
+$u=\langle\operatorname{Tr}\phi^{2}\rangle$. The curve is</p>
+<p>$$
+\boxed{\;y^{2}=x^{3}-u\,x^{2}+\frac{\Lambda^{4}}{4}\,x\;}
+$$</p>
+<p>with the differential</p>
+<p>$$
+\lambda_{\text{SW}}=\frac{\sqrt2}{8\pi}\,\frac{2x-u}{y}\,dx .
+$$</p>
+<p>Both are normalization choices. The essential, convention-independent data are
+the location of the singularities and the monodromy; the overall scale of $x$ and
+the coefficient of the $\Lambda^{4}x$ term can be rescaled, and many papers write
+$y^{2}=x^{3}-ux^{2}+\Lambda^{4}x$, which shifts the singular points from
+$u=\pm\Lambda^{2}$ to $u=\pm2\Lambda^{2}$. Any statement about “$\pm\Lambda^{2}$”
+must therefore be read together with the curve it came from.</p>
+<p><strong>Singularities.</strong> With the curve as written, the roots of the cubic degenerate at</p>
+<p>$$
+u=\pm\Lambda^{2}.
+$$</p>
+<p>At $u=+\Lambda^{2}$ a magnetic monopole becomes massless; at $u=-\Lambda^{2}$ a
+dyon does. These are the points where the $U(1)$ description fails and a dual
+description is weakly coupled.</p>
+<p><strong>Periods.</strong> Define</p>
+<p>$$
+a=\oint_{A}\lambda_{\text{SW}},
+\qquad
+a_D=\oint_{B}\lambda_{\text{SW}},
+\qquad
+\tau(a)=\frac{\partial a_D}{\partial a}.
+$$</p>
+<p>At weak coupling, $a\simeq\sqrt{2u}$ (in this normalization), matching the
+classical relation between the scalar VEV and the modulus. The prepotential is
+recovered from $a_D=\partial\mathcal F/\partial a$; equivalently,</p>
+<p>$$
+\mathcal F(a)=\frac{i}{2\pi}a^{2}\log\frac{a^{2}}{\Lambda^{2}}
++\sum_{k\ge1}\mathcal F_k\Bigl(\frac{\Lambda}{a}\Bigr)^{4k}a^{2}.
+$$</p>
+<p>The first term is the one-loop piece; the sum is the instanton expansion, with
+$\mathcal F_k$ determined by the curve (or, independently, by instanton counting).
+The numerical coefficient $i/2\pi$ depends on the normalization of $a$; here it
+goes with $a=\sqrt{2u}$.</p>
+<p><strong>Monodromy.</strong> Continuing the periods around a singularity acts on the vector
+$(a_D,a)$ by an element of $SL(2,\mathbb Z)$. Around infinity the monodromy is</p>
+<p>$$
+M_\infty=-T^{2},
+\qquad
+T=\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix},
+$$</p>
+<p>i.e. $a_D\to a_D+a$, $a\to-a$ with the minus sign from $M_\infty=-T^{2}$. Around
+a singular point where a state of charge $(n_e,n_m)$ becomes massless, the
+monodromy is a shear in the direction of that charge vector in the $(a_D,a)$
+plane. The three monodromies multiply to the identity for a contour enclosing all
+singularities; the group they generate is the congruence subgroup $\Gamma(2)$ of
+$SL(2,\mathbb Z)$, up to the $\pm1$ that acts trivially on $\tau$.</p>
+<p><strong>Matter.</strong> For $SU(N_c)$ with $N_f$ fundamental hypermultiplets of masses $m_i$,</p>
+<p>$$
+y^{2}=P(x)^{2}-4\Lambda^{2N_c-N_f}\prod_{i=1}^{N_f}(x-m_i),
+\qquad
+P(x)=\prod_{j=1}^{N_c}(x-\phi_j),\quad \sum_j\phi_j=0,
+$$</p>
+<p>and the differential is the natural generalization of the $SU(2)$ one. At
+$N_f=2N_c$ the $\Lambda$-exponent vanishes and the theory is a candidate
+$\mathcal N=2$ superconformal field theory with exactly marginal gauge coupling.</p>
+<h2 id="bps-states-and-the-central-charge">BPS States and the Central Charge</h2>
+<p>The $\mathcal N=2$ algebra has one complex central charge $Z$ in the vector
+sector. For a state of electric charge $n_e$ and magnetic charge $n_m$,</p>
+<p>$$
+Z=n_e\,a+n_m\,a_D,
+\qquad
+M\ge|Z| .
+$$</p>
+<p>States saturating the bound are BPS; their masses are exact functions of the
+moduli. The W boson (charge $(1,0)$), the monopole $(0,1)$, and the dyons
+$(n_e,1)$ are BPS. Across walls of marginal stability the BPS spectrum can jump,
+because the central charges of two states can become aligned; this is a genuine
+strong-coupling phenomenon, not a calculational artifact.</p>
+<p><strong>Why this is the real content of the solution.</strong> The effective action is a
+statement about a $U(1)$ gauge theory with a complicated kinetic function. The
+BPS mass formula is a statement about the spectrum, and it is what makes the
+solution predictive: it gives exact masses in a regime where perturbation theory
+is useless.</p>
+<h2 id="duality">Duality</h2>
+<p>With $\tau=\theta/2\pi+4\pi i/g^{2}$, the solution exhibits</p>
+<p>$$
+\tau\longrightarrow\frac{a\tau+b}{c\tau+d},
+\qquad
+\begin{pmatrix}a_D\\a\end{pmatrix}
+\longrightarrow
+\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}
+\begin{pmatrix}a_D\\a\end{pmatrix},
+\qquad ad-bc=1 .
+$$</p>
+<p>The generator $\tau\to-1/\tau$ exchanges electric and magnetic descriptions. Near
+$u=\Lambda^{2}$ the monopole is light and the dual $U(1)$ is weakly coupled; near
+$u=-\Lambda^{2}$ the dyon is. The $SL(2,\mathbb Z)$ here is an exact statement
+about the low-energy theory on the Coulomb branch; it is the prototype for the
+Montonen–Olive duality of $\mathcal N=4$, where it is conjectured to hold for the
+full theory rather than only in the infrared.</p>
+<h2 id="math131-and-math132-as-corners">$\mathcal N=4$ and $\mathcal N=2^{*}$ as Corners</h2>
+<p><strong>$\mathcal N=4$ inside $\mathcal N=2$.</strong> Decompose</p>
+<p>$$
+\mathcal N=4\ \text{vector}
+=\mathcal N=2\ \text{vector}\;\oplus\;
+\mathcal N=2\ \text{hypermultiplet in the adjoint},
+$$</p>
+<p>set the hypermultiplet mass to zero, and take
+$\mathcal F=\tfrac12\tau_0\Phi^{2}$ with no corrections. Then $\beta=0$
+identically and the curve degenerates to a constant-$\tau$ family. In this sense
+$\mathcal N=4$ is the conformally invariant corner of the $\mathcal N=2$
+landscape.</p>
+<p><strong>Interpolation.</strong> Giving the adjoint hypermultiplet a mass $m$ gives the
+$\mathcal N=2^{*}$ theory: $m=0$ is $\mathcal N=4$, $m\to\infty$ decouples the
+adjoint and gives pure $\mathcal N=2$. The $\mathcal N=2^{*}$ curve is the
+standard testing ground for instanton counting and for the interpolation between
+the two limits.</p>
+<p><strong>Argyres–Douglas points.</strong> At special points of the Coulomb branch, mutually
+non-local BPS states become massless simultaneously and the low-energy theory is
+an interacting $\mathcal N=2$ SCFT with no vector-multiplet Lagrangian
+description. This is the sharpest reminder that “the Seiberg–Witten solution”
+describes a family of theories whose singular loci are themselves new theories.</p>
+<h2 id="what-the-solution-does-and-does-not-solve">What the Solution Does and Does Not Solve</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>answered by Seiberg–Witten?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>low-energy effective action on the Coulomb branch</td>
+<td>yes, exactly</td>
+</tr>
+<tr>
+<td>masses of BPS states</td>
+<td>yes, exactly</td>
+</tr>
+<tr>
+<td>$SL(2,\mathbb Z)$ action on the period vector</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>location and monodromy of singularities</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>full short-distance theory</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Higgs-branch dynamics in matter theories</td>
+<td>no</td>
+</tr>
+<tr>
+<td>non-BPS spectrum</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="symbols">Symbols</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Phi$</td>
+<td>adjoint chiral superfield containing $\phi,\psi$</td>
+</tr>
+<tr>
+<td>$\mathcal F(\Phi)$</td>
+<td>holomorphic prepotential</td>
+</tr>
+<tr>
+<td>$\tau=\mathcal F''$</td>
+<td>complexified gauge coupling</td>
+</tr>
+<tr>
+<td>$K=\operatorname{Im}(\bar\Phi\mathcal F')$</td>
+<td>special Kähler potential</td>
+</tr>
+<tr>
+<td>$u=\langle\operatorname{Tr}\phi^{2}\rangle$</td>
+<td>Coulomb-branch modulus, pure $SU(2)$</td>
+</tr>
+<tr>
+<td>$a,a_D$</td>
+<td>electric and magnetic periods</td>
+</tr>
+<tr>
+<td>$\lambda_{\text{SW}}$</td>
+<td>Seiberg–Witten differential</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>dynamical scale</td>
+</tr>
+<tr>
+<td>$Z=n_ea+n_ma_D$</td>
+<td>central charge, BPS mass</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>N. Seiberg and E. Witten, “Electric–magnetic duality, monopole condensation, and confinement in $\mathcal N=2$ supersymmetric Yang–Mills theory” — the curve, the periods, the singularities.</li>
+<li>N. Seiberg and E. Witten, “Monopoles, duality and chiral symmetry breaking in $\mathcal N=2$ supersymmetric QCD” — matter and the $N_f$ dependence.</li>
+<li>P. Argyres and M. Douglas, “New phenomena in $SU(3)$ supersymmetric gauge theory” — the Argyres–Douglas points.</li>
+<li>N. Nekrasov, “Seiberg–Witten prepotential from instanton counting” — the instanton expansion.</li>
+<li>K. Intriligator and N. Seiberg, <em>Lectures on Supersymmetric Gauge Theories</em> — the review-level treatment of special Kähler geometry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

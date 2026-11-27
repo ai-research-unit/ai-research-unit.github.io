@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$\mathcal N=4$ Super Yang–Mills: The Maximal Rigid Gauge Theory — Biquaternion Universe</title>
+  <meta name="description" content="The question. What is the maximal super Yang–Mills theory in four dimensions, what makes it exactly solvable in the ways it is, and where does the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-super-yangmills-the-maximal-rigid-gauge-theory"><strong>$\mathcal N=4$ Super Yang–Mills: The Maximal Rigid Gauge Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> What is the maximal super Yang–Mills theory in four dimensions,
+what makes it exactly solvable in the ways it is, and where does the exactness
+stop? $\mathcal N=4$ is the unique case with sixteen supercharges: one gauge
+boson, four Weyl gaugini, six real scalars, all in the adjoint, with a vanishing
+beta function and an $SL(2,\mathbb Z)$ strong–weak duality. It is also the
+prototype of the AdS/CFT correspondence and the main laboratory of planar
+integrability.</p>
+<p><strong>The answer in one line.</strong></p>
+<p>$$
+\boxed{\;
+\mathcal L_{\mathcal N=4}
+=\frac{1}{g^{2}}\operatorname{Tr}\Bigl[
+-\tfrac14F_{\mu\nu}F^{\mu\nu}
++i\bar\lambda^{A}\bar\sigma^{\mu}D_\mu\lambda^{A}
++\tfrac12D_\mu X^{I}D^{\mu}X^{I}
++\tfrac{g^{2}}{4}[X^{I},X^{J}]^{2}
+\Bigr]
++\text{(Yukawa)}
++\frac{\theta}{32\pi^{2}}F^{a}_{\mu\nu}\tilde F^{a\mu\nu}
+\;}
+$$</p>
+<p>with $A=1,\dots,4$, $I=1,\dots,6$, and an R-symmetry
+$SU(4)_R\cong SO(6)_R$ acting on the gaugini as $\mathbf 4$ and on the scalars as
+$\mathbf 6$. The beta function vanishes to all orders, so the two parameters
+$g,\theta$ are exactly marginal.</p>
+<p><strong>What is claimed, and what is not.</strong> Claimed: the field content and Lagrangian,
+exact conformal invariance, the anomaly coefficients
+$a=c=(N^{2}-1)/4$ for $SU(N)$, the Coulomb branch $(\mathbb R^{6})^{N-1}/S_N$, and
+the status of S-duality as a well-tested conjecture. Not claimed: that S-duality
+is a theorem, that the finite-$N$ spectrum is known, or that integrability is
+established beyond the planar limit.</p>
+<h2 id="field-content-and-math14-symmetry">Field Content and $R$-Symmetry</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>description</th>
+<th>$SU(4)_R\cong SO(6)_R$</th>
+<th>on-shell d.o.f.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_\mu$</td>
+<td>gauge boson</td>
+<td>$\mathbf 1$</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\lambda^{A}$</td>
+<td>four Weyl gaugini</td>
+<td>$\mathbf 4$</td>
+<td>$2\times4=8$</td>
+</tr>
+<tr>
+<td>$X^{I}$</td>
+<td>six real scalars</td>
+<td>$\mathbf 6$</td>
+<td>6</td>
+</tr>
+</tbody>
+</table></div>
+<p>Bosons $2+6=8$, fermions $8$: balanced. All fields are in the adjoint, so the
+gauge group $G$ can be any Lie group and is an independent input.</p>
+<p><strong>Why $SU(4)_R$ and not $U(4)_R$.</strong> The algebra has a $U(4)_R$ automorphism, but
+the extra $U(1)$ is not a symmetry of the quantum theory: it is anomalous, and
+correspondingly it is absent from the superconformal algebra $SU(2,2\vert 4)$,
+which contains only $SU(4)_R$. So $SU(4)_R$ is exact, the $U(1)$ is not. In
+$SO(6)_R$ language the six scalars are the vector of $SO(6)$ and the four gaugini
+are the two chiral spinors, which is the form in which the ten-dimensional origin
+is manifest.</p>
+<p><strong>What the symmetry fixes.</strong> $SU(4)_R$ acts on the fields as a global internal
+transformation, commuting with the gauge group:
+$\lambda^{A}\to U^{A}{}_{B}\lambda^{B}$,
+$X^{I}\to O^{I}{}_{J}X^{J}$ with $O\in SO(6)$ the image of $U$. The fields carry
+two independent internal indices, $\lambda_{\alpha}{}^{aA}$: the colour slot $a$,
+acted on locally by the gauge group, and the $R$ slot $A$, acted on globally by
+$SU(4)_R$. The covariant derivative contains a connection for the first and none
+for the second,</p>
+<p>$$
+D_\mu\lambda^{aA}=\partial_\mu\lambda^{aA}+g\,f^{abc}A_\mu^{b}\lambda^{cA},
+$$</p>
+<p>which is the precise sense in which $SU(4)_R$ is a symmetry and not a gauge
+symmetry: it has a constant parameter, so it passes through $\partial_\mu$
+untouched and requires no gauge field. The Lagrangian is
+invariant term by term: the kinetic terms because $U$, $O$ are constant and
+orthogonal, the scalar potential because it is contracted with $\delta_{IJ}$, and
+the Yukawa coupling because $\Gamma^{I}_{AB}$ is the unique invariant tensor of
+$SU(4)$ in $\mathbf 4\otimes\mathbf 4\otimes\mathbf 6$. That uniqueness is the
+reason the theory has a single coupling: $SU(4)_R$ together with supersymmetry
+leaves no room for a second invariant Yukawa structure, and no gauge-invariant
+mass term for the gaugini exists (a mass would need $\epsilon_{AB}$, but
+$\lambda^{A}\lambda^{B}$ is symmetric in $A,B$).</p>
+<p><strong>Decomposition into $\mathcal N=1$.</strong> One vector multiplet plus three adjoint
+chiral multiplets $\Phi_i$ with</p>
+<p>$$
+W=\frac{g}{3!}\epsilon^{ijk}f^{abc}\Phi_i^{a}\Phi_j^{b}\Phi_k^{c}
+\qquad(\text{up to an }i),
+$$</p>
+<p>so the $\mathcal N=1$ one-loop coefficient is
+$b=3N_c-N_f=3N_c-3N_c=0$. The superpotential is exactly marginal; the three
+$\Phi_i$ are the $\mathbf 3$ of an $SU(3)\subset SU(4)_R$.</p>
+<p><strong>Decomposition into $\mathcal N=2$.</strong> One vector multiplet plus one adjoint
+hypermultiplet, with</p>
+<p>$$
+\mathcal F(\Phi)=\tfrac12\tau_0\Phi^{2}
+$$</p>
+<p>and no corrections, so $b=2N_c-N_f=0$ with $N_f=2N_c$. This is the corner of the
+$\mathcal N=2$ landscape described in the companion note.</p>
+<h2 id="the-lagrangian">The Lagrangian</h2>
+<p><strong>Scalar potential.</strong> The only potential is</p>
+<p>$$
+V=\frac{g^{2}}{4}\operatorname{Tr}\bigl([X^{I},X^{J}]^{2}\bigr),
+$$</p>
+<p>a sum of squares that vanishes exactly when all six scalars commute:</p>
+<p>$$
+V=0\iff[X^{I},X^{J}]=0\ \ \forall I,J .
+$$</p>
+<p>This is the Coulomb branch condition, and it is the reason the moduli space is
+what it is.</p>
+<p><strong>Yukawa coupling.</strong> The fermion-scalar coupling is fixed by $\mathcal N=4$:</p>
+<p>$$
+\mathcal L\supset g\,\bar\lambda^{A}\,X^{I}(\Gamma^{I})^{A}{}_{B}\,\lambda^{B}
++\text{h.c.},
+$$</p>
+<p>where $\Gamma^{I}$ are the $4\times4$ gamma matrices of $SO(6)$ (the chiral
+projection of the $SO(6)$ Clifford algebra). With the trace normalization
+$\operatorname{Tr}(T^{a}T^{b})=\tfrac12\delta^{ab}$ the commutator form is
+$\bar\lambda^{A}\Gamma^{I}_{AB}[X^{I},\lambda^{B}]$; the two writings differ by a
+rescaling of the coupling and of the fields.</p>
+<p><strong>Dimensional reduction.</strong> The cleanest derivation of the field content is</p>
+<p>$$
+\text{10D }\mathcal N=1\ \text{SYM}
+\;\xrightarrow{\ \text{reduce on }T^{6}\ }\;
+\text{4D }\mathcal N=4\ \text{SYM}.
+$$</p>
+<p>The ten-dimensional gauge field $A_M$, $M=0,\dots,9$, splits into $A_\mu$
+($\mu=0,\dots,3$) and six scalars $X^{I}=A_{3+I}$; the ten-dimensional
+Majorana–Weyl gaugino splits into four four-dimensional Weyl gaugini. The
+ten-dimensional coupling and the four-dimensional one differ by the torus volume.
+Nothing about the multiplet needs to be guessed.</p>
+<h2 id="exact-conformal-invariance">Exact Conformal Invariance</h2>
+<p><strong>Vanishing beta function.</strong> $\beta(g)=0$ to all orders, so</p>
+<p>$$
+\tau=\frac{\theta}{2\pi}+\frac{4\pi i}{g^{2}}
+$$</p>
+<p>is a genuine exactly marginal parameter, not a running coupling. The $\theta$
+angle is also exactly marginal: it is a total derivative perturbatively, but it
+weights instanton sectors and is part of the conformal manifold.</p>
+<p><strong>Superconformal algebra.</strong> The symmetry algebra is $SU(2,2|4)$, containing the
+conformal algebra $SO(2,4)$, the R-symmetry $SU(4)_R$, sixteen Poincaré
+supercharges, and sixteen superconformal charges. This is the largest
+superconformal algebra in four dimensions with a non-gravitational stress tensor.</p>
+<p><strong>Anomalies.</strong> For $SU(N)$,</p>
+<p>$$
+a=c=\frac{N^{2}-1}{4}.
+$$</p>
+<p>The equality is a consequence of $\mathcal N=4$ supersymmetry. The $SU(4)_R$
+current is anomaly-free; the $U(1)$ of $U(4)_R$ is not.</p>
+<p><strong>What conformal invariance forbids.</strong> No mass term for any field, no
+dimensionful coupling, no scale. Every correlation function is fixed up to
+constants by the algebra; the nontrivial content is in the coefficients, which is
+where the dynamics lives.</p>
+<h2 id="montonenolive-s-duality">Montonen–Olive S-Duality</h2>
+<p>The conjectured duality is</p>
+<p>$$
+\tau\longrightarrow-\frac{1}{\tau},
+\qquad
+g\longrightarrow\frac{4\pi}{g},
+\qquad
+\theta\longrightarrow-\theta,
+$$</p>
+<p>and more generally</p>
+<p>$$
+\tau\longrightarrow\frac{a\tau+b}{c\tau+d},
+\qquad
+\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}\in SL(2,\mathbb Z).
+$$</p>
+<p>It exchanges electric and magnetic charges, W bosons and monopoles, and weak and
+strong coupling. For simply-laced $G$ the dual algebra is the same; for
+non-simply-laced $G$ the Langlands dual $G^{\vee}$ appears. The evidence is
+substantial: the BPS spectrum, the $S^{4}$ partition function as a function of
+$\tau$, and the string-theory realization all transform correctly.</p>
+<p><strong>Status.</strong> S-duality is a conjecture. It is the $\mathcal N=4$ analogue of the
+Seiberg–Witten $SL(2,\mathbb Z)$ action, but stronger: in $\mathcal N=2$ the
+duality is a statement about the low-energy theory on the Coulomb branch; in
+$\mathcal N=4$ it is conjectured to hold for the full theory at all scales.</p>
+<h2 id="coulomb-branch-and-bps-states">Coulomb Branch and BPS States</h2>
+<p><strong>Moduli space.</strong> The classical vacua are commuting scalar VEVs. For $SU(N)$ a
+generic point breaks $G\to U(1)^{N-1}$, and</p>
+<p>$$
+\mathcal M_{\text{Coulomb}}
+=\frac{(\mathbb R^{6})^{N-1}}{S_{N}},
+\qquad
+\dim_{\mathbb R}=6(N-1),
+$$</p>
+<p>with $S_N$ the Weyl group and the centre-of-mass $\mathbb R^{6}$ removed by
+tracelessness. The metric is flat because at a generic point the theory is free
+$U(1)^{N-1}$ gauge theory; the $SO(6)_R$ acts by rotations of the six directions.</p>
+<p><strong>BPS fractions.</strong> Massive representations carry central charges and preserve a
+fraction of the supersymmetry:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>type</th>
+<th>supercharges preserved</th>
+<th>examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tfrac12$ BPS</td>
+<td>8</td>
+<td>W bosons, monopoles, dyons</td>
+</tr>
+<tr>
+<td>$\tfrac14$ BPS</td>
+<td>4</td>
+<td>various dyonic and string-like states</td>
+</tr>
+<tr>
+<td>$\tfrac18$ BPS</td>
+<td>2</td>
+<td>special multi-charge states</td>
+</tr>
+</tbody>
+</table></div>
+<p>The mass bound is $M\ge|Z|$ with $Z$ linear in the electric and magnetic charges;
+S-duality maps BPS states to BPS states and exchanges the charge lattice.</p>
+<h2 id="adscft">AdS/CFT</h2>
+<p><strong>The duality.</strong></p>
+<p>$$
+\mathcal N=4\ SU(N)\ \text{SYM}
+\quad\longleftrightarrow\quad
+\text{Type IIB on }AdS_5\times S^{5},
+$$</p>
+<p>with</p>
+<p>$$
+\lambda=g^{2}N,\qquad g_s=\frac{g^{2}}{4\pi},\qquad
+\frac{R^{4}}{\alpha'^{2}}=\lambda,
+$$</p>
+<p>and $N$ units of five-form flux through $S^{5}$. The ’t Hooft limit
+$N\to\infty$ with $\lambda$ fixed makes the gauge theory planar and the string
+theory classical; $\lambda\gg1$ makes the $AdS_5\times S^{5}$ curvature small and
+supergravity reliable, while $\lambda\ll1$ is the perturbative gauge regime. The
+duality is therefore a strong–weak statement, not a change of variables.</p>
+<p><strong>Where it is used.</strong> Strong-coupling observables, finite-temperature plasmas and
+transport, black-hole microstate counting, and the geometric interpretation of
+gauge-theory integrability.</p>
+<h2 id="planar-integrability">Planar Integrability</h2>
+<p><strong>The spin chain.</strong> In the planar limit the dilatation operator restricted to the
+$SU(2)$ sector is the Hamiltonian of the Heisenberg spin chain; the anomalous
+dimensions are the energies of its states. The full planar theory is believed
+integrable, with a Bethe-ansatz description of the spectrum, and the string sigma
+model on $AdS_5\times S^{5}$ is integrable as well. This is the main reason
+$\mathcal N=4$ is called exactly solvable: solvable in the planar limit, not for
+finite $N$.</p>
+<p><strong>Amplitudes.</strong> The planar scattering amplitudes have a structure of their own:</p>
+<ul>
+<li>MHV amplitudes have a compact closed form;</li>
+<li>BCFW recursion builds higher-point amplitudes from lower-point ones;</li>
+<li>dual conformal symmetry and the Yangian organize the planar sector;</li>
+<li>the Grassmannian formulation connects amplitudes to algebraic geometry;</li>
+<li>amplitudes are dual to Wilson loops, revealing a hidden polygon geometry.</li>
+</ul>
+<p>These results were obtained in $\mathcal N=4$ and then exported to general gauge
+theories; they are the theory's most visible legacy outside supersymmetry.</p>
+<h2 id="localization-and-exact-results">Localization and Exact Results</h2>
+<p><strong>Pestun's $S^{4}$ partition function.</strong> Placing the theory on $S^{4}$ while
+preserving supersymmetry reduces the path integral to a finite-dimensional matrix
+integral,</p>
+<p>$$
+Z_{S^{4}}=\int d\mathbf a\;e^{-S_{\text{cl}}(\mathbf a)}\,
+\bigl|Z_{\text{inst}}(\mathbf a)\bigr|^{2}\,
+\bigl|\mathcal Z_{1\text{-loop}}(\mathbf a)\bigr|^{2},
+$$</p>
+<p>a function of $\tau$ and the sphere radius that interpolates between weak and
+strong coupling and tests S-duality quantitatively.</p>
+<p><strong>Instanton counting.</strong> The Nekrasov partition function gives the instanton
+expansion of the $\mathcal N=2$ prepotential in the $\Omega$-background;
+$\mathcal N=4$ arises as the $\mathcal N=2^{*}$ limit with vanishing adjoint mass.
+The AGT correspondence relates these objects to conformal blocks of
+Liouville/Toda theory, with $\mathcal N=4$ at a special point.</p>
+<h2 id="maximality">Maximality</h2>
+<p><strong>The helicity argument.</strong> Build a tower on $|h=1\rangle$ with $k$ supercharges;
+the state at helicity $1-k/2$ has multiplicity $\binom{\mathcal N}{k}$, and CPT
+requires the conjugate tower on $|h=-1\rangle$. For $\mathcal N=5$ the conjugate
+tower contains</p>
+<p>$$
+h=-1+\frac{5}{2}=+\frac32,
+$$</p>
+<p>a massless spin-$\tfrac32$ state. A consistent interacting theory with such a state
+requires local supersymmetry, i.e. supergravity. Hence rigid SYM stops at
+$\mathcal N=4$; for $\mathcal N=4$ the top of the conjugate tower is
+$h=-1+2=+1$, the gauge boson itself.</p>
+<p><strong>The higher-dimensional series.</strong> Sixteen supercharges in other dimensions:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$D$</th>
+<th>theory</th>
+<th>relation to $4D$ $\mathcal N=4$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>$\mathcal N=1$ SYM</td>
+<td>reduces on $T^{6}$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\mathcal N=(1,1)$ SYM</td>
+<td>reduces on $T^{2}$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\mathcal N=2$ SYM</td>
+<td>reduces on $S^{1}$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\mathcal N=4$ SYM</td>
+<td>—</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$\mathcal N=8$ SYM</td>
+<td>reduction of the 4D theory</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-is-open">What Is Open</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exact finite-$N$ spectrum</td>
+<td>open; integrability is planar</td>
+</tr>
+<tr>
+<td>non-BPS strong-coupling data</td>
+<td>open beyond BPS and localization</td>
+</tr>
+<tr>
+<td>S-duality</td>
+<td>conjecture, heavily tested</td>
+</tr>
+<tr>
+<td>AdS/CFT</td>
+<td>conjecture, heavily tested</td>
+</tr>
+<tr>
+<td>relation to black-hole microstates</td>
+<td>active research</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="symbols">Symbols</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lambda^{A}$, $A=1,\dots,4$</td>
+<td>gaugini, $\mathbf 4$ of $SU(4)_R$</td>
+</tr>
+<tr>
+<td>$X^{I}$, $I=1,\dots,6$</td>
+<td>real scalars, $\mathbf 6$</td>
+</tr>
+<tr>
+<td>$\Gamma^{I}$</td>
+<td>$SO(6)$ gamma matrices in the $\mathbf 4$</td>
+</tr>
+<tr>
+<td>$\tau=\theta/2\pi+4\pi i/g^{2}$</td>
+<td>exactly marginal coupling</td>
+</tr>
+<tr>
+<td>$a,c$</td>
+<td>trace anomalies, $a=c=(N^{2}-1)/4$</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>$AdS_5$ and $S^{5}$ radius, $R^{4}/\alpha'^{2}=\lambda$</td>
+</tr>
+<tr>
+<td>$\lambda=g^{2}N$</td>
+<td>’t Hooft coupling</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. Maldacena, “The large $N$ limit of superconformal field theories and supergravity” — the duality.</li>
+<li>O. Aharony, S. Gubser, J. Maldacena, H. Ooguri, Y. Oz, “Large $N$ field theories, string theory and gravity” — the standard review.</li>
+<li>V. Pestun, “Localization of gauge theory on a four-sphere” — the $S^{4}$ partition function.</li>
+<li>N. Beisert et al., “Review of AdS/CFT integrability” — the planar spectrum.</li>
+<li>J. Minahan and K. Zarembo, “The Bethe-ansatz for $\mathcal N=4$ super Yang–Mills” — the spin-chain correspondence.</li>
+<li>L. Brink, J. Schwarz, J. Scherk, “Supersymmetric Yang–Mills theories” — the early construction of the extended multiplets.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

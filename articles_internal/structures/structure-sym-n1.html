@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$\mathcal N=1$ Super Yang–Mills: The Minimal Supersymmetric Gauge Theory — Biquaternion Universe</title>
+  <meta name="description" content="The question. What is fixed, and what is free, in the four-dimensional super Yang–Mills theory with gauge group ? The name is used loosely in the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-super-yangmills-the-minimal-supersymmetric-gauge-theory"><strong>$\mathcal N=1$ Super Yang–Mills: The Minimal Supersymmetric Gauge Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> What is fixed, and what is free, in the four-dimensional
+$\mathcal N=1$ super Yang–Mills theory with gauge group $G$? The name is used
+loosely in the literature: sometimes it means the pure gauge theory
+$(A_\mu,\lambda)$ with no matter, sometimes SQCD with chiral multiplets. This
+note separates the two, writes the component Lagrangian once and for all,
+and lists which statements about the theory are exact, which are perturbative,
+and which are conjectural.</p>
+<p><strong>The answer in one line.</strong></p>
+<p>$$
+\boxed{\;
+\mathcal L_{\mathcal N=1}
+=-\frac{1}{4g^{2}}F^{a}_{\mu\nu}F^{a\mu\nu}
++\frac{i}{2g^{2}}\bar\lambda^{a}\bar\sigma^{\mu}D_\mu\lambda^{a}
++\frac{1}{2g^{2}}D^{a}D^{a}
++\frac{\theta}{32\pi^{2}}F^{a}_{\mu\nu}\tilde F^{a\mu\nu}
+\;+\;\mathcal L_{\text{matter}}
+\;}
+$$</p>
+<p>with one gaugino $\lambda^{a}$ in the adjoint, one real auxiliary field $D^{a}$,
+and — if matter is present — chiral multiplets $(\phi_i,\psi_i,F_i)$ in
+representations $R_i$. There are exactly two continuous parameters in the pure
+theory, $g$ and $\theta$, or one complex parameter
+$\tau=\theta/2\pi+4\pi i/g^{2}$. Everything else is fixed by gauge invariance and
+supersymmetry.</p>
+<p><strong>What is claimed, and what is not.</strong> Claimed: the component Lagrangian above,
+the on-shell algebra, the one-loop coefficient $b=3N_c-N_f$, the NSVZ form of
+$\beta$, the $N_c$-fold vacuum structure of pure $SU(N_c)$ and the Witten index
+$N_c$. Not claimed: any statement that the Kähler potential is protected (it is
+not), that the theory is exactly solvable in general (it is not), or that
+Seiberg duality is a symmetry (it is an infrared duality between two different
+theories).</p>
+<p><strong>Why the qualification matters.</strong> “$\mathcal N=1$” counts supersymmetries, not
+colour. $SU(4)$ with $\mathcal N=1$ and $SU(4)$ with $\mathcal N=4$ are different
+theories with the same gauge group; $SU(N_c)$ with $\mathcal N=4$ and
+$SU(N_c)$ with $\mathcal N=1$ have the same gauge group and different field
+content. The symbol $\mathcal N$ never refers to the rank of the gauge algebra.</p>
+<h2 id="field-content-and-degree-of-freedom-counting">Field Content and Degree-of-Freedom Counting</h2>
+<p><strong>The vector multiplet.</strong> On shell, one vector multiplet contains</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>spin</th>
+<th>gauge rep</th>
+<th>$U(1)_R$</th>
+<th>on-shell d.o.f.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_\mu^{a}$</td>
+<td>1</td>
+<td>adjoint</td>
+<td>$0$</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\lambda^{a}$</td>
+<td>$\tfrac12$</td>
+<td>adjoint</td>
+<td>$+1$</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<p>The physical counting is balanced: $2=2$. Off shell one uses the real vector
+superfield $V$, whose Wess–Zumino-gauge components are</p>
+<p>$$
+V=\theta\sigma^{\mu}\bar\theta\,A_\mu+\theta^{2}\bar\theta^{2}D+\cdots,
+$$</p>
+<p>i.e. the four-component gauge field, the four-component Weyl gaugino, and one
+real auxiliary scalar $D^{a}$ with no kinetic term. Counting <em>components</em>:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>components</th>
+<th>physical</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_\mu^{a}$</td>
+<td>4</td>
+<td>2 (longitudinal mode removed by gauge invariance)</td>
+</tr>
+<tr>
+<td>$\lambda^{a}$</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$D^{a}$</td>
+<td>1</td>
+<td>0 (auxiliary)</td>
+</tr>
+<tr>
+<td>off-shell total</td>
+<td>$5$ bosonic vs $4$ fermionic</td>
+<td>—</td>
+</tr>
+<tr>
+<td>on-shell total</td>
+<td>$2$ bosonic vs $2$ fermionic</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>The off-shell multiplet has <em>unequal</em> numbers of bosonic and fermionic
+components, and this is allowed: auxiliary fields are non-propagating, so they do
+not count as degrees of freedom. The $D^{a}$ field is exactly what makes the
+supersymmetry algebra close off shell on the physical fields (up to gauge
+transformations); on shell it is eliminated by its equation of motion, the
+longitudinal mode of $A_\mu$ is removed by gauge invariance, and the counts
+match. There is no deficiency in the formulation — the $D$ field is a finite,
+manifestly supersymmetric auxiliary sector. (The minimal multiplet does not admit
+an off-shell formulation with <em>equal</em> bosonic and fermionic component counts;
+that is a separate statement, not a statement about the existence of the
+$D$-field.)</p>
+<p><strong>The chiral multiplet.</strong> Matter sits in chiral multiplets
+$(\phi_i,\psi_i,F_i)$ with one complex scalar, one Weyl fermion, and one complex
+auxiliary field. In the fundamental of $SU(N_c)$ each flavour contributes
+$2$ bosonic and $2$ fermionic degrees of freedom. There is no constraint on the
+representation: $\mathcal N=1$ admits chiral matter in complex representations,
+which is why it is the language of model building.</p>
+<h2 id="the-lagrangian">The Lagrangian</h2>
+<p><strong>Pure sector.</strong> With $A_\mu=A_\mu^{a}T^{a}$, $D_\mu=\partial_\mu-igA_\mu$, and</p>
+<p>$$
+F^{a}_{\mu\nu}=\partial_\mu A^{a}_\nu-\partial_\nu A^{a}_\mu
++g f^{abc}A^{b}_\mu A^{c}_\nu,
+\qquad
+D_\mu\lambda^{a}=\partial_\mu\lambda^{a}+g f^{abc}A^{b}_\mu\lambda^{c},
+$$</p>
+<p>the pure Lagrangian is the boxed expression of the introduction. The terms have a
+common origin. Expanding
+$\frac{1}{4g^{2}}\int d^{2}\theta\,W^{\alpha}W_\alpha+\text{h.c.}$ in components,
+the $\theta$-term of $W^{\alpha}W_\alpha$ produces the gauge kinetic term and the
+gaugino kinetic term with a common coefficient, and the $\theta^{2}\bar\theta^{2}$
+term produces $\frac{1}{2g^{2}}D^{a}D^{a}$. The $\tfrac12$ and the $1/g^{2}$ are
+therefore not independent choices: they are the same normalization that fixes the
+gauge kinetic term, and they must be kept when matching the pure sector to the
+matter couplings. Eliminating $D^{a}$ by its algebraic equation of motion then
+gives $D^{a}=0$ in the pure theory (and $D^{a}=-g\phi_i^{\dagger}T^{a}\phi_i$ in
+the presence of matter).</p>
+<p><strong>Superspace form.</strong> With $V$ a real vector superfield and</p>
+<p>$$
+W_\alpha=-\frac14\bar D^{2}D_\alpha V
+\ \ (\text{Abelian}),
+\qquad
+W_\alpha=-\frac14\bar D^{2}\bigl(e^{-V}D_\alpha e^{V}\bigr)
+\ \ (\text{non-Abelian}),
+$$</p>
+<p>the gauge sector is</p>
+<p>$$
+\mathcal L_{\text{gauge}}
+=\frac{1}{4g^{2}}\int d^{2}\theta\,W^{\alpha}W_\alpha
++\text{h.c.},
+$$</p>
+<p>the $\theta$ angle being absorbed into the complexified coupling. In Wess–Zumino
+gauge $V=\theta\sigma^{\mu}\bar\theta A_\mu+\theta^{2}\bar\theta^{2}D+\cdots$,
+and the residual gauge freedom is the ordinary one.</p>
+<p><strong>Matter sector.</strong> For chiral superfields $\Phi_i$ with Kähler potential $K$ and
+superpotential $W$,</p>
+<p>$$
+\mathcal L_{\text{matter}}
+=\int d^{4}\theta\,K(\Phi,\bar\Phi)
++\Bigl(\int d^{2}\theta\,W(\Phi)+\text{h.c.}\Bigr),
+$$</p>
+<p>and in components the couplings to the gauge sector are fixed:</p>
+<p>$$
+\mathcal L
+\supset
+D_\mu\bar\phi_i D^{\mu}\phi_i
++i\bar\psi_i\bar\sigma^{\mu}D_\mu\psi_i
+-\bigl(\tfrac12 W_{ij}\psi^{i}\psi^{j}+\text{h.c.}\bigr)
+-\;V_F-V_D ,
+$$</p>
+<p>$$
+V_F=\sum_i|F_i|^{2}=\sum_i\Bigl|\frac{\partial W}{\partial\phi_i}\Bigr|^{2},
+\qquad
+V_D=\frac{g^{2}}{2}\bigl(\phi_i^{\dagger}T^{a}\phi_i\bigr)^{2},
+\qquad
+F_i=-\frac{\partial \bar W}{\partial\bar\phi_i},\quad
+D^{a}=-g\,\phi_i^{\dagger}T^{a}\phi_i .
+$$</p>
+<p>Two points are worth stating precisely. First, the scalar potential is a sum of
+squares, so $V\ge0$ and supersymmetric vacua are its zeros. Second, $D^{a}$ is
+<em>not</em> zero once matter is present; only in the pure theory does $D^{a}=0$
+follow.</p>
+<h2 id="supersymmetry-transformations-and-the-algebra">Supersymmetry Transformations and the Algebra</h2>
+<p>Up to conventional signs, the on-shell variations are</p>
+<p>$$
+\delta A_\mu=i\bigl(\xi\sigma_\mu\bar\lambda-\lambda\sigma_\mu\bar\xi\bigr),
+\qquad
+\delta\lambda=\sigma^{\mu\nu}F_{\mu\nu}\xi+iD\xi,
+\qquad
+\delta D=-i\,\xi\sigma^{\mu}D_\mu\bar\lambda+\text{h.c.}
+$$</p>
+<p>The anticommutators are</p>
+<p>$$
+\{Q_\alpha,\bar Q_{\dot\beta}\}=2\sigma^{\mu}_{\alpha\dot\beta}P_\mu,
+\qquad
+\{Q_\alpha,Q_\beta\}=0,
+\qquad
+\{\bar Q_{\dot\alpha},\bar Q_{\dot\beta}\}=0 .
+$$</p>
+<p>There is no central charge in this algebra. Central charges require
+$\mathcal N\ge2$; that is the structural reason $\mathcal N=1$ has no BPS bound
+in the gauge sector, while $\mathcal N=2$ does.</p>
+<p><strong>Off-shell versus on-shell closure.</strong> The variations written above are the
+on-shell ones: they use the gaugino equation of motion, so the commutator of two
+variations reproduces a translation plus a gauge transformation only after the
+fermion equation of motion is imposed. Off shell the algebra closes as well, but
+with the auxiliary $D^{a}$ kept: its variation $\delta D=-i\xi\sigma^{\mu}D_\mu\bar\lambda+\text{h.c.}$
+supplies precisely the term that the gaugino variation would otherwise miss. This
+is the standard role of the auxiliary sector and not a defect.</p>
+<p>The $\mathcal N=3\to\mathcal N=4$ enhancement is a <em>different</em> and stronger
+statement and should not be conflated with it. There, closing the algebra on the
+vector multiplet <em>generates a new fermionic transformation</em>, because the
+multiplet contains the singlet gaugino that the fourth supercharge needs; the
+number of supersymmetries grows. At $\mathcal N=1$ nothing of the kind happens:
+there is one supercharge, the anticommutator $\{Q_\alpha,\bar Q_{\dot\beta}\}$ is
+proportional to $P_\mu$ and nothing else, and no new fermionic generator appears.
+Closure is closure; only at $\mathcal N=3$ does closure on a sufficiently large
+multiplet amount to an enlargement of the algebra.</p>
+<h2 id="r-symmetry-the-anomaly-and-the-math92-angle">R-Symmetry, the Anomaly, and the $\theta$ Angle</h2>
+<p><strong>The classical $U(1)_R$.</strong> The classical theory is invariant under</p>
+<p>$$
+\lambda\to e^{i\alpha}\lambda,\qquad
+\theta_{\text{super}}\to e^{i\alpha}\theta_{\text{super}},\qquad
+W_\alpha\to e^{i\alpha}W_\alpha ,
+$$</p>
+<p>so the gaugino has $R=+1$, the superspace coordinate has $R=+1$, $d^{2}\theta$
+has $R=-2$, and a superpotential has $R=+2$ (a classical statement: the anomaly
+discussed below can break it, which is why the $R$-charge of $W$ is used
+to restrict the classical superpotential rather than asserted as a symmetry of the
+quantum theory). The gauge kinetic term is invariant
+because $W^{2}$ carries $R=+2$ and is integrated with $d^{2}\theta$.</p>
+<p><strong>The anomaly.</strong> The axial current is not conserved:</p>
+<p>$$
+\partial_\mu j_R^{\mu}
+=\frac{g^{2}}{16\pi^{2}}\,T(\text{adj})\,F^{a}_{\mu\nu}\tilde F^{a\mu\nu},
+\qquad
+T(\text{adj})=2N_c\ \ \text{for }SU(N_c),
+$$</p>
+<p>in the normalization $T(\text{fund})=\tfrac12$. The coefficient is thus
+$g^{2}N_c/8\pi^{2}$, and it is the <em>ratio</em> of this coefficient to the
+$\theta$-term coefficient $\theta/32\pi^{2}$ that fixes the physics: a gaugino
+rotation by $\alpha$ acts on the vacuum angle as</p>
+<p>$$
+\theta\longrightarrow\theta+2N_c\,\alpha ,
+$$</p>
+<p>with the integer $2N_c$ read off from the anomaly coefficient. (Rescaling the
+gauge field moves a factor of $g^{2}$ between the two coefficients but leaves
+$2N_c$ unchanged, which is why the integer is convention-independent even though
+the displayed formula for $\partial_\mu j_R^{\mu}$ is not.) Invariance of
+$e^{i\theta Q}$ for every instanton number $Q$ then requires
+$2N_c\alpha\in2\pi\mathbb Z$, i.e.</p>
+<p>$$
+U(1)_R\longrightarrow\mathbb Z_{2N_c},
+\qquad
+\alpha=\frac{\pi k}{N_c},\quad k=0,\dots,2N_c-1 .
+$$</p>
+<p>The factor $2N_c$ has two ingredients: the anomaly coefficient $T(\text{adj})=2N_c$
+and the $2\pi$ periodicity of $\theta$. With $N_f$ flavours in the fundamental the
+coefficient becomes $2N_c-N_f$, so the anomaly allows $\mathbb Z_{2N_c-N_f}$ (at
+$2N_c-N_f=0$ the $U(1)_R$ is anomaly-free, as it must be in the conformal case);
+the true chiral symmetry is further reduced by the classical flavour symmetry.</p>
+<p><strong>The $\theta$ angle.</strong> In perturbation theory $\theta$ is a total derivative;
+non-perturbatively it weights each instanton sector by $e^{i\theta Q}$ with</p>
+<p>$$
+Q=\frac{1}{32\pi^{2}}\int d^{4}x\,F^{a}_{\mu\nu}\tilde F^{a\mu\nu}\in\mathbb Z .
+$$</p>
+<p>Physics is $2\pi$-periodic in $\theta$, and the $N_c$ vacua are permuted by
+$\theta\to\theta+2\pi$. This is why $\theta$ and the discrete chiral symmetry are
+two descriptions of the same thing in the pure theory.</p>
+<h2 id="the-math138-function">The $\beta$-Function</h2>
+<p><strong>Pure theory.</strong> The NSVZ beta function is</p>
+<p>$$
+\beta(g)=-\frac{3N_c\,g^{3}}{16\pi^{2}}\,
+\frac{1}{1-\dfrac{g^{2}N_c}{8\pi^{2}}},
+$$</p>
+<p>which expands to $-\bigl(3N_c g^{3}/16\pi^{2}\bigr)\bigl(1+g^{2}N_c/8\pi^{2}+\cdots\bigr)$.
+The one-loop coefficient is $b=3N_c&gt;0$: asymptotically free.</p>
+<p><strong>What “exact” means here.</strong> The NSVZ formula is exact in the <em>holomorphic</em>
+scheme: the gauge coupling is defined so that the gauge kinetic term is
+$\frac{1}{4g^{2}}\int d^{2}\theta\,W^{\alpha}W_\alpha$ with no wavefunction
+renormalization of the vector superfield $V$. In a scheme where $V$ is
+renormalized (for example canonical normalization of the gauge field), the
+beta function acquires an extra factor built from the anomalous dimension of the
+vector superfield, and the numerical series differs. This is why the NSVZ
+formula should not be quoted as “the” beta function without the scheme; what is
+scheme-independent is the one-loop coefficient, the existence and location of
+fixed points, and the vacuum structure.</p>
+<p><strong>With matter.</strong> For $N_f$ flavours in the fundamental,</p>
+<p>$$
+\beta(g)=-\frac{g^{3}}{16\pi^{2}}\,
+\frac{3N_c-N_f\bigl(1-\gamma(g^{2})\bigr)}{1-\dfrac{g^{2}N_c}{8\pi^{2}}},
+$$</p>
+<p>so $b=3N_c-N_f$ at one loop.</p>
+<p><strong>Regimes, stated carefully.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition</th>
+<th>behaviour</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N_f&lt;3N_c$</td>
+<td>asymptotically free</td>
+<td>exact (one-loop sign)</td>
+</tr>
+<tr>
+<td>$N_f=3N_c$</td>
+<td>Banks–Zaks fixed point at small coupling</td>
+<td>perturbative</td>
+</tr>
+<tr>
+<td>$3N_c/2&lt;N_f&lt;3N_c$</td>
+<td>interacting conformal window</td>
+<td>Seiberg, strong-coupling statement</td>
+</tr>
+<tr>
+<td>$N_f=N_c+1$</td>
+<td>s-confinement</td>
+<td>exact (Seiberg)</td>
+</tr>
+<tr>
+<td>$N_f=N_c$</td>
+<td>confinement without chiral symmetry breaking</td>
+<td>exact (Seiberg)</td>
+</tr>
+<tr>
+<td>$N_f&lt;N_c$</td>
+<td>ADS superpotential, runaway</td>
+<td>exact (holomorphy)</td>
+</tr>
+</tbody>
+</table></div>
+<p>The NSVZ formula is scheme-dependent: “exact” refers to a holomorphic
+normalization of the coupling. Scheme-independent statements are about the
+existence of fixed points, the conformal window, and the vacuum structure, not
+about the numerical value of $\beta$ at intermediate scales.</p>
+<h2 id="vacua-condensates-and-the-witten-index">Vacua, Condensates, and the Witten Index</h2>
+<p><strong>Classical vacua.</strong> For pure SYM, $V=\tfrac{1}{2g^{2}}D^{a}D^{a}$ vanishes only
+at $D^{a}=0$, and there is no scalar modulus: the classical vacuum is unique up
+to gauge transformations and $\theta$. With matter the classical moduli space may
+have a Coulomb branch (scalar VEVs in the Cartan) and a Higgs branch (matter VEVs).</p>
+<p><strong>Gaugino condensation.</strong> At strong coupling</p>
+<p>$$
+\langle\lambda\lambda\rangle=\Lambda^{3},
+\qquad
+\Lambda^{3}=\mu^{3}e^{-8\pi^{2}/(N_cg^{2}(\mu))},
+$$</p>
+<p>up to scheme factors, and the $N_c$ vacua are</p>
+<p>$$
+\langle\lambda\lambda\rangle_k
+=\Lambda^{3}e^{2\pi i k/N_c},
+\qquad k=0,\dots,N_c-1 .
+$$</p>
+<p>The effective superpotential of the pure theory is $W_{\text{eff}}=N_c\Lambda^{3}$,
+again up to scheme-dependent constants; the physically meaningful statement is
+the $k$-dependence and its relation to $\theta$.</p>
+<p><strong>Witten index.</strong> $\operatorname{Tr}(-1)^{F}=N_c$ for pure $SU(N_c)$. The index
+counts <em>supersymmetric vacua</em>: each bosonic zero-energy state contributes $+1$,
+each fermionic one $-1$, and because non-zero-energy states cancel in
+bose–fermi pairs the trace reduces to a signed count of ground states. Two
+properties make the count robust. First, it is invariant under any deformation
+that preserves supersymmetry and does not change the asymptotic behaviour of the
+potential, so the $N_c$ vacua found at strong coupling cannot disappear as the
+theory is deformed. Second, it is computed in a finite-volume regularization
+(making the spectrum discrete); the result $N_c$ is therefore a non-perturbative
+statement, not a semiclassical one. The index is an integer, and it agrees with
+the $N_c$-fold structure obtained independently from the anomaly and holomorphy.</p>
+<p><strong>Domain walls.</strong> Because the discrete chiral symmetry is spontaneously broken,
+BPS walls interpolate between adjacent vacua with tension
+$|\Delta W|=|W_{k+1}-W_k|$. The spectrum of walls is one of the cleanest checks of
+the holomorphic picture.</p>
+<h2 id="holomorphy-and-what-it-buys">Holomorphy and What It Buys</h2>
+<p><strong>Statement.</strong> The Wilsonian superpotential $W_{\text{eff}}$ is a holomorphic
+function of the chiral superfields and of the holomorphic couplings (including
+$\tau$), and it receives no perturbative corrections. The gauge kinetic function
+$f_{ab}(\Phi)$ is holomorphic, with $\operatorname{Im}f$ containing the $\theta$
+angle. The Kähler potential is real and is <em>not</em> protected.</p>
+<p><strong>Consequences.</strong> Holomorphy plus symmetries plus the weak-coupling limit
+determines $W_{\text{eff}}$ in many cases:</p>
+<ul>
+<li>the ADS superpotential for $N_f&lt;N_c$,
+  $W_{\text{ADS}}=(N_c-N_f)\bigl(\Lambda^{3N_c-N_f}/\det M\bigr)^{1/(N_c-N_f)}$;</li>
+<li>the quantum moduli space at $N_f=N_c$, with confinement and no chiral symmetry
+  breaking;</li>
+<li>the s-confining description at $N_f=N_c+1$.</li>
+</ul>
+<p><strong>Seiberg duality.</strong> For $N_f&gt;N_c$ in the conformal window the electric theory
+$SU(N_c)$ with $N_f$ flavours is dual to a magnetic $SU(N_f-N_c)$ theory with
+$N_f$ flavours $q,\tilde q$ and a singlet meson $M^{i}{}_{j}=Q^{i}\tilde Q_j$,</p>
+<p>$$
+W_{\text{mag}}=\frac{1}{\Lambda}M^{i}{}_{j}q_i\tilde q^{j}.
+$$</p>
+<p>This is an infrared duality between two different microscopic theories flowing to
+the same fixed point; it is not a symmetry of either.</p>
+<h2 id="what-is-fixed-and-what-is-free">What Is Fixed and What Is Free</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>status</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gauge group $G$</td>
+<td>free input</td>
+<td>any compact Lie group; $SU(N_c)$ the standard example</td>
+</tr>
+<tr>
+<td>matter representations $R_i$</td>
+<td>free input</td>
+<td>$\mathcal N=1$ allows complex reps, unlike $\mathcal N=2,4$</td>
+</tr>
+<tr>
+<td>$g$, $\theta$</td>
+<td>free continuous parameters</td>
+<td>or one complex $\tau=\theta/2\pi+4\pi i/g^{2}$</td>
+</tr>
+<tr>
+<td>superpotential $W$</td>
+<td>free holomorphic input</td>
+<td>constrained by $R$-symmetry and gauge invariance; not renormalized perturbatively</td>
+</tr>
+<tr>
+<td>Kähler potential</td>
+<td>free at tree level</td>
+<td>corrected at all orders; not protected</td>
+</tr>
+<tr>
+<td>coefficient of $\sigma^{\mu\nu}F_{\mu\nu}\xi$ in $\delta\lambda$</td>
+<td>fixed by gauge invariance</td>
+<td>the $\sigma^{\mu\nu}$ structure is dictated by the algebra</td>
+</tr>
+<tr>
+<td>relative coefficient of gauge and gaugino kinetic terms</td>
+<td>fixed by supersymmetry</td>
+<td>both from $W^{\alpha}W_\alpha$</td>
+</tr>
+<tr>
+<td>one-loop $b=3N_c-N_f$</td>
+<td>fixed by the spectrum</td>
+<td>scheme-independent</td>
+</tr>
+<tr>
+<td>$N_c$ vacua of pure $SU(N_c)$</td>
+<td>fixed by anomaly and holomorphy</td>
+<td>robust under supersymmetry-preserving deformations</td>
+</tr>
+<tr>
+<td>NSVZ $\beta$-function</td>
+<td>exact in the holomorphic scheme</td>
+<td>scheme-dependent otherwise</td>
+</tr>
+<tr>
+<td>Seiberg duality</td>
+<td>conjectural</td>
+<td>strong evidence (anomaly matching, index), not proven</td>
+</tr>
+<tr>
+<td>conformal window $3N_c/2&lt;N_f&lt;3N_c$</td>
+<td>strong-coupling statement</td>
+<td>supported by duality and index computations</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="symbols">Symbols</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V=(A_\mu,\lambda,D)$</td>
+<td>the vector multiplet, on and off shell</td>
+</tr>
+<tr>
+<td>$\Phi=(\phi,\psi,F)$</td>
+<td>the chiral multiplet</td>
+</tr>
+<tr>
+<td>$W_\alpha$</td>
+<td>the chiral field strength, $R=+1$</td>
+</tr>
+<tr>
+<td>$W(\Phi)$</td>
+<td>the superpotential, $R=+2$</td>
+</tr>
+<tr>
+<td>$K(\Phi,\bar\Phi)$</td>
+<td>the Kähler potential, unprotected</td>
+</tr>
+<tr>
+<td>$\tau=\theta/2\pi+4\pi i/g^{2}$</td>
+<td>the complexified coupling</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>the dynamical scale</td>
+</tr>
+<tr>
+<td>$b=3N_c-N_f$</td>
+<td>the one-loop beta coefficient</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>the matter anomalous dimension</td>
+</tr>
+<tr>
+<td>$Q\in\mathbb Z$</td>
+<td>the instanton number</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. Wess and J. Bagger, <em>Supersymmetry and Supergravity</em> — superspace, $W_\alpha$, the non-renormalization theorems.</li>
+<li>S. Weinberg, <em>The Quantum Theory of Fields III</em> — the component Lagrangian and its renormalization.</li>
+<li>J. Terning, <em>Modern Supersymmetry</em> — holomorphy, the ADS superpotential, Seiberg duality.</li>
+<li>K. Intriligator and N. Seiberg, <em>Lectures on Supersymmetric Gauge Theories and Electric–Magnetic Duality</em> — the conformal window and the duality web.</li>
+<li>V. Novikov, M. Shifman, A. Vainshtein, V. Zakharov, “Exact Gell-Mann–Low function…” — the NSVZ beta function.</li>
+<li>E. Witten, “Constraints on supersymmetry breaking” — the index and the vacuum count.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

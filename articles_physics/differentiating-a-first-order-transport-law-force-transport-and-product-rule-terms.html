@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Differentiating a First-Order Transport Law: Force, Transport and Product-Rule Terms — Biquaternion Universe</title>
+  <meta name="description" content="A transport law is first order, and every force in this corpus is obtained by differentiating one. That sentence is the whole of the corpus&#x27;s route from a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="differentiating-a-first-order-transport-law-force-transport-and-product-rule-terms"><strong>Differentiating a First-Order Transport Law: Force, Transport and Product-Rule Terms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A transport law is first order, and every force in this corpus is obtained by differentiating one.</strong> That sentence is the whole of the corpus's route from a conservation law to an acceleration law, and it is where the corpus has made its one recorded error. The error was not in the derivation. It was in the <em>naming</em>: a display called a product-rule term a force term, and the display had to be repaired.</p>
+<p><strong>The article's subject is the repair, stated as a general procedure.</strong> Differentiate a first-order transport law and three kinds of term appear. One is the acceleration — the second derivative of the transported quantity. One is the transport — the quantity being carried along a flow that changes. One is the product rule — a term that exists because the differentiation was applied to a product and both factors vary. <strong>The third kind is the one that gets mislabelled, and this article states three tests that separate it from the first, gives the corpus's own case, and states the prohibition.</strong></p>
+<p><strong>Why an article on a product rule.</strong> Because the corpus's fluids are all built this way, and the mistake is not an arithmetic slip but a conceptual one: a term that looks like a force because it sits where a force would sit. <strong>A reader who has seen the three kinds once, with the tests that separate them, will not repeat the error; a reader who has only seen the finished balances will not know there was an error to avoid.</strong></p>
+<p><strong>The article's scope, stated so that it is not over-read.</strong> It is about differentiating transport laws of the form "a divergence equals a source", which is the form every rung's first-order equation takes. It is not about differentiating arbitrary equations, and the three kinds are the kinds a transport law of that form produces. <strong>The article says where the classification stops.</strong></p>
+<h2 id="conventions">Conventions</h2>
+<p>The material sector is $\mathbb{B}_{\Phi}$ with gradient $\partial_{\imath}$, and the flow velocity is $u^{\imath}$ where the rung supplies one. The transport law of a quantity $\mathcal Q$ is</p>
+<p>$$
+\partial_{t'}\mathcal Q+\partial_{\imath}\bigl(\mathcal Q\,u^{\imath}\bigr)=\mathcal S ,
+$$</p>
+<p>with $\mathcal S$ the source, zero where the rung's law is a strict conservation. <strong>The left side is a divergence; the equation is first order in $\mathcal Q$; and differentiating it once produces the three kinds.</strong></p>
+<p><strong>The two derivatives that matter, and why they are different.</strong> A <em>partial</em> derivative $\partial_{t'}$ differentiates at fixed position; a <em>material</em> derivative</p>
+<p>$$
+\frac{\mathrm{D}}{\mathrm{D}t}=\partial_{t'}+u^{\imath}\partial_{\imath}
+$$</p>
+<p>differentiates along the flow. <strong>The convective term $u^{\imath}\partial_{\imath}$ is the difference between the two, and it is where the second kind of term is born.</strong> The corpus's notation is <a href="the-euler-and-continuity-equations-in-biquaternionic-form.html">The Euler and Continuity Equations'</a>.</p>
+<p><strong>The matrix rung's notation, because the article's sharpest case is there.</strong> The pair momentum is $M_{kl}$, the inertia is $q_{kl}=\rho_{k}-\rho_{l}$, the internal velocity is $\Omega_{\imath,kl}=U_{\mathrm{frm}}^{\dagger}D_{\imath}U_{\mathrm{frm}}$, and the guidance relation is $\Omega_{\imath,kl}=M_{kl}/q_{kl}$. <strong>The three kinds appear there with names, and the correspondence to the scalar case is exact</strong>; the last section before the summary states it.</p>
+<h2 id="differentiating-the-transport-law-the-three-kinds">Differentiating the Transport Law: The Three Kinds</h2>
+<p><strong>One differentiation, three kinds of term, and the split is forced by the product rule.</strong> Differentiate the transport law once with respect to $t'$ and use the flow's own equation to eliminate $\partial_{t'}\mathcal Q$; the product rule produces</p>
+<p>$$
+\partial^{2}_{t'}\mathcal Q
++\partial_{\imath}\bigl(\partial_{t'}\mathcal Q\,u^{\imath}\bigr)
++\partial_{\imath}\bigl(\mathcal Q\,\partial_{t'}u^{\imath}\bigr)
+=\partial_{t'}\mathcal S ,
+$$</p>
+<p>and the middle two terms are of different kinds even though they look alike.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>kind</th>
+<th>where it comes from</th>
+<th>its content</th>
+<th>the corpus's name for it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>acceleration</strong></td>
+<td>the second derivative of $\mathcal Q$</td>
+<td>the rate of the rate</td>
+<td>the acceleration term</td>
+</tr>
+<tr>
+<td><strong>transport</strong></td>
+<td>$\partial_{\imath}(\partial_{t'}\mathcal Q\,u^{\imath})$</td>
+<td>the quantity's rate carried by the flow</td>
+<td>the transport term; at the matrix rung the commutator</td>
+</tr>
+<tr>
+<td><strong>product rule</strong></td>
+<td>$\partial_{\imath}(\mathcal Q\,\partial_{t'}u^{\imath})$</td>
+<td>the flow's own variation, multiplied by the quantity</td>
+<td>the product-rule term; at the matrix rung $\Omega_{kl}\partial_{\imath}q_{kl}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The acceleration term is the one that makes the equation second order, and it is the only one that does.</strong> It is the second derivative of the transported quantity, so it is the term that turns a first-order transport law into a second-order equation. <strong>Nothing else in the display is second order in $\mathcal Q$</strong>, and that is the first thing to check when classifying: a term that is not second order in the quantity is not the acceleration.</p>
+<p><strong>The transport term is the flow carrying the quantity, and it is a genuine dynamical term.</strong> It vanishes when the quantity's rate is uniform in space, and it does not vanish when the flow is uniform — because the flow's <em>carrying</em> is what the term records. <strong>At the matrix rung it is the commutator $[\Omega,\Pi]$, and the commutator is the exact form the transport takes when the quantity is matrix-valued and the chart is non-abelian</strong>: the flow carries the momentum and rotates it as it carries, and the rotation is the commutator.</p>
+<p><strong>The product-rule term is the one that must be named carefully, and the article names it by its origin rather than by its appearance.</strong> It arises because the differentiation was applied to $\mathcal Q\,\partial_{t'}u^{\imath}$ — a product of two factors — and both factors vary. <strong>Its size is set by how fast the flow's own derivative changes, multiplied by the quantity being carried.</strong> In a chart where the flow's derivative is uniform, the term is a total derivative and integrates away; in a chart where it is not, the term is nonzero and carries no dynamical information about $\mathcal Q$ at all.</p>
+<h2 id="the-three-tests">The Three Tests</h2>
+<p><strong>A term that sits on the left-hand side where a force could sit is not thereby a force.</strong> The article gives three tests, each of which a genuine force term passes and the product-rule term fails. <strong>They are independent, and a term that passes all three is a force for the purposes of this corpus.</strong></p>
+<h3 id="test-one-the-vanishing-test">Test One: The Vanishing Test</h3>
+<p><strong>Set the field's source to zero and ask whether the term survives.</strong> A force term is built from the source — the field strength, the potential's gradient, the curvature — so it vanishes when the source does. <strong>The product-rule term is built from the transported quantity and the flow's variation, and neither of those is the source.</strong> So at a configuration with no source and a non-uniform flow, the product-rule term is nonzero and the force is zero.</p>
+<p><strong>The test is the cleanest of the three and it is the one the corpus's error failed.</strong> A display had assigned the product-rule term to the force side; the test would have caught it immediately, because the display's own equation holds with a vanishing source and a nonzero product-rule term. <strong>A reader who applies only this test will catch the common case.</strong></p>
+<p><strong>Its limitation, stated so the test is not over-trusted.</strong> The test requires a configuration with a vanishing source and a non-uniform flow, and at some rungs such a configuration may not exist — a rung whose flow is necessarily uniform, or whose source never vanishes. <strong>Where the test cannot be run, the other two still apply.</strong></p>
+<h3 id="test-two-the-uniform-inertia-test">Test Two: The Uniform-Inertia Test</h3>
+<p><strong>Set the inertia uniform and ask whether the term survives.</strong> At the matrix rung the product-rule term is $\Omega_{kl}\,\partial_{\imath}q_{kl}$, with $q_{kl}=\rho_{k}-\rho_{l}$ the pair's inertia. <strong>If the four densities are equal, $q_{kl}=0$ for every pair and the term vanishes identically</strong> — and so does the guidance relation's denominator, which is the rung's singular locus and a separate matter. If the densities differ but their <em>differences are uniform</em>, $\partial_{\imath}q_{kl}=0$ and the term vanishes while the force need not.</p>
+<p><strong>The test's content is that the term is a derivative of the inertia and not of the state.</strong> A force does not vanish because the inertia is uniform; a product-rule term does, because the inertia's variation is the whole of its content. <strong>At the scalar rungs the same test reads: set the density uniform and ask whether the term survives.</strong> The product-rule term does not, and the force — the potential's gradient — need not be uniform at all.</p>
+<p><strong>Why this test is the definitional one.</strong> The product-rule term is, by construction, the term that appears when the differentiation is applied to a product in which one factor is <em>not</em> the transported quantity. <strong>The uniform-inertia test is that statement made operational</strong>: uniform inertia removes the factor's variation and the term with it.</p>
+<h3 id="test-three-the-uniform-flow-test">Test Three: The Uniform-Flow Test</h3>
+<p><strong>Set the flow uniform — constant in space and time — and ask whether the term survives.</strong> In a chart with a uniform flow, the convective term vanishes and the product-rule term vanishes with it, because both are built from derivatives of $u$. <strong>A force term does not vanish in a uniform flow</strong>: a charged particle in a uniform electric field accelerates, and the field is as uniform as the flow.</p>
+<p><strong>The test distinguishes the transport term from the force as well, and that is its second use.</strong> The transport term $[\Omega,\Pi]$ does not vanish in a uniform flow — the flow carries and rotates — while the convective part of the acceleration does. <strong>So the test separates the three kinds pairwise</strong>: acceleration (survives uniform flow, is second order in $\mathcal Q$), transport (survives uniform flow, is first order), product rule (vanishes in uniform flow).</p>
+<h3 id="what-a-fourth-test-would-fail-to-do-and-why-the-article-does-not-give-one">What a Fourth Test Would Fail to Do, and Why the Article Does Not Give One</h3>
+<p><strong>The natural fourth test is gauge invariance: a force term must be invariant under a relabelling of the frame, and the product-rule term might not be.</strong> The test does not discriminate, and the corpus's verification is what shows it. <strong>The connection $\Omega_{\imath}$ is gauge-covariant under the frame's relabelling</strong> — a check in the corpus's verification directory tests exactly this and finds the connection unchanged to $10^{-8}$ — <strong>so $\Omega_{kl}\partial_{\imath}q_{kl}$ is as gauge-invariant as the curvature term beside it.</strong> The test would pass both and separate neither.</p>
+<p><strong>The article states this because a reader will expect a fourth test and will be right to expect that invariance arguments are the usual tool.</strong> The invariance argument fails here for a structural reason: the product-rule term is built from gauge-covariant objects, so no gauge argument can distinguish it. <strong>The three tests that do distinguish it are the three that use the term's <em>origin</em> rather than its transformation.</strong></p>
+<h2 id="the-matrix-rungs-correspondence">The Matrix Rung's Correspondence</h2>
+<p><strong>The corpus's sharpest case is the matrix rung, and the three kinds appear there with names that a reader of the literature will recognize.</strong> The balance is</p>
+<p>$$
+\partial_{\jmath}\Pi_{\imath,kl}
++\bigl[\Omega_{\jmath},\Pi_{\imath}\bigr]_{kl}
++\Omega_{\jmath,kl}\,\partial_{\imath}q_{kl}
+=-\bigl[U_{\mathrm{frm}}\,D_{\jmath}D_{\imath}\Xi\,U_{\mathrm{frm}}^{\dagger}\bigr]_{kl},
+$$</p>
+<p>and each term is one of the three kinds.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the term</th>
+<th>its kind</th>
+<th>the test it passes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\partial_{\jmath}\Pi_{\imath,kl}$</td>
+<td>the acceleration</td>
+<td>second order in the pair momentum; survives uniform inertia and uniform flow</td>
+</tr>
+<tr>
+<td>$[\Omega_{\jmath},\Pi_{\imath}]_{kl}$</td>
+<td>the transport</td>
+<td>first order; survives uniform flow; vanishes when the momentum commutes with the connection</td>
+</tr>
+<tr>
+<td>$\Omega_{\jmath,kl}\,\partial_{\imath}q_{kl}$</td>
+<td>the product rule</td>
+<td>vanishes at uniform inertia</td>
+</tr>
+<tr>
+<td>$-[U D_{\jmath}D_{\imath}\Xi U^{\dagger}]_{kl}$</td>
+<td>the force</td>
+<td>vanishes when the field's second covariant derivative vanishes</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The transport term's commutator form is not an accident of the rung; it is what the transport term becomes when the quantity is matrix-valued.</strong> The flow carries the momentum and, in a non-abelian chart, rotates it as it carries; the rotation is the commutator. <strong>In an abelian chart the commutator vanishes and the transport term reduces to the scalar case's $\partial_{\imath}(\mathcal Q u^{\imath})$.</strong> So the commutator is the general form and the scalar case is its abelian limit.</p>
+<p><strong>The product-rule term's form, $\Omega_{\jmath,kl}\partial_{\imath}q_{kl}$, is the general form of "the flow's variation times the quantity" for a pair.</strong> The quantity is the pair's inertia $q_{kl}$; the flow's variation is $\Omega_{\jmath,kl}$; and the term is their product. <strong>It is exactly the term a reader would write down if asked to "differentiate the pair's momentum and keep everything", and it is exactly the term that is not a force.</strong></p>
+<p><strong>The force term, $-[\dots]$, is the field's second covariant derivative in the frame's basis.</strong> It vanishes when the field is covariantly constant, it carries the field's curvature, and it is the only term in the display built from the field rather than from the pair. <strong>That is the vanishing test's statement at this rung</strong>: set the field flat, and three of the four terms remain and the fourth does not.</p>
+<p><strong>Why this table is the article's centrepiece.</strong> Because the correspondence is exact — the three kinds at the matrix rung are the three kinds of the scalar transport law under the replacements $\mathcal Q\to\Pi$, $u\to\Omega$, and $\partial\to D$ — and because it shows the classification is not a scalar-only device. <strong>A reader who wants to know whether a display's term is a force term can find its rung in the table and read the verdict off.</strong></p>
+<h2 id="the-corpuss-case-and-what-went-wrong">The Corpus's Case, and What Went Wrong</h2>
+<p><strong>The corpus's error is worth recounting exactly, because it is a textbook case of a classification slip and it is the reason this article exists.</strong> The primordial force law's derivation had reached the pair's balance and had produced a display with four terms. Three of the four were assigned correctly — the derivative of the pair momentum, the commutator, and the curvature — and the fourth, the product-rule term, was displayed on the same side as the force and read as part of it.</p>
+<p><strong>Why the display looked right, which is the instructive part.</strong> The product-rule term is nonzero in exactly the configurations where the force is nonzero: a field with a spatially varying eigenvalue splitting also has a spatially varying inertia, so the two terms appear together and their sum looks like a single force. <strong>The error was not visible in any one configuration; it was visible in the classification.</strong> A reader checking the display against a solution would find agreement; a reader checking the <em>kind</em> of each term would find the misassignment.</p>
+<p><strong>How it was caught.</strong> By the three tests, applied in the order the previous section states. <strong>The vanishing test</strong>: the display's own equation holds with the curvature set to zero and the product-rule term nonzero, so the product-rule term cannot be part of the force. <strong>The uniform-inertia test</strong>: with $\partial_{\imath}q_{kl}=0$ the term vanishes and the force does not, so the term is a function of the inertia's variation. <strong>The uniform-flow test</strong>: the term vanishes in a chart where $\Omega$ is uniform, and the force does not.</p>
+<p><strong>The repair, stated as the corpus now states it.</strong> The product-rule term is on the left, with the acceleration and the transport, and the force is alone on the right. <strong>The corpus's verification check F is the repaired display's numerical witness</strong> — a residual of $4.5\times10^{-8}$ on data of order $0.6$ for the balance with the term on the left, and no such agreement with it on the right. <strong>The check is not what caught the error</strong> — the check was written after — <strong>but it is what keeps the repair from regressing</strong>, and the article says so rather than implying the numerical test found the mistake.</p>
+<p><strong>The general lesson, in one sentence, and it is the article's thesis.</strong> <em>A term's position in a display is a claim about its kind, and a claim about its kind is testable independently of any solution.</em> The three tests are that independent test; the displays are the claims; and the corpus's rule is that a display introducing a new term must state which of the three kinds it is.</p>
+<h2 id="a-checklist-for-a-new-display">A Checklist for a New Display</h2>
+<p><strong>The article's practical content is a checklist, and the checklist is meant to be applied before a display is written rather than after.</strong> It has five lines, and the fifth is the one the corpus's error skipped.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>the question</th>
+<th>the failure it prevents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>which term is second order in the transported quantity?</td>
+<td>calling a first-order term the acceleration</td>
+</tr>
+<tr>
+<td>2</td>
+<td>which term vanishes when the source vanishes?</td>
+<td>calling the force something that is not the force</td>
+</tr>
+<tr>
+<td>3</td>
+<td>which term vanishes at uniform inertia?</td>
+<td><strong>calling the product-rule term a force</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>which term vanishes at uniform flow?</td>
+<td>confusing the transport with the product rule</td>
+</tr>
+<tr>
+<td>5</td>
+<td>has each term's kind been <em>stated</em>, and not only its position?</td>
+<td>the corpus's error</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Line 5 is the methodological rule and it is worth more than the other four.</strong> A display that puts a term somewhere has made an implicit claim; a display that labels it has made an explicit one and can be checked. <strong>The corpus's house style asks for the labels, and this article is why.</strong></p>
+<p><strong>The checklist applied to a scalar case, so that it is not abstract.</strong> Take the Schrödinger rung's transport law $\partial_{t}\varrho+\vec\nabla\cdot(\varrho\vec v)=0$ and differentiate it. <strong>Line 1</strong>: the second derivative of $\varrho$ is the acceleration term, and it is the only term second order in $\varrho$. <strong>Line 2</strong>: no term vanishes when the potential vanishes, because this transport law has no source — so the checklist must be applied one level up, to the acceleration law the transport law generates. <strong>Line 3</strong>: with $\varrho$ uniform, the product-rule term $\vec v\cdot\vec\nabla\varrho$... vanishes, and the force does not. <strong>Line 4</strong>: with $\vec v$ uniform, the convective term vanishes and the potential's gradient does not. <strong>The four lines, applied in order, produce the classification the fluid articles display</strong> — and the fifth line is what makes the classification visible in the article rather than in the reader's head.</p>
+<p><strong>What the checklist does not do.</strong> It does not tell you whether the display is <em>correct</em> — only whether its terms are correctly classified. <strong>A display can classify every term correctly and still be wrong</strong>, and the corpus's numerical checks are for that. The checklist and the checks are complementary, and the article says so because a reader might take the checklist as a substitute for verification.</p>
+<h2 id="where-the-classification-stops">Where the Classification Stops</h2>
+<p><strong>The three kinds are the kinds a transport law of the divergence form produces, and a transport law of another form produces others.</strong> The article states the boundary so that the classification is not applied where it does not hold.</p>
+<p><strong>A transport law with a source produces a source term under differentiation, and the source term is a fourth kind.</strong> Differentiating $\partial_{t'}\mathcal Q+\partial_{\imath}(\mathcal Q u^{\imath})=\mathcal S$ gives $\partial_{t'}\mathcal S$ on the right, and that term is neither acceleration, transport nor product rule: it is the rate of the source. <strong>The corpus's rungs with sources — the massive rungs' eigenvalues, the coupled rungs — therefore have four kinds and not three</strong>, and the article's table should be read as the sourceless case.</p>
+<p><strong>A transport law that is nonlinear in the flow produces a term of mixed kind.</strong> If the flow's own equation is nonlinear, the term $\partial_{\imath}(\mathcal Q\partial_{t'}u^{\imath})$ contains the flow's nonlinearity as well as its variation, and the term is neither purely transport nor purely product rule. <strong>The corpus's non-abelian rungs are of this kind</strong>, and the commutator is how the mixing appears: $[\Omega,\Pi]$ carries both the carrying and the rotating.</p>
+<p><strong>A constrained flow produces no new kind but a different equation for the flow</strong>, and the differentiation must use the constraint rather than the unconstrained equation. <strong>The corpus's Proca rung is the case</strong>, and its Euler equation is obtained by projecting the constrained equation rather than by differentiating an unconstrained transport. <strong>The classification survives — three kinds still appear — but the differentiation is a projection</strong>, which is <a href="the-spare-derivative-in-the-polar-chart.html">the spare derivative's</a> subject.</p>
+<p><strong>The honest summary of the boundary.</strong> The three kinds are general for sourceless transport laws linear in the flow. Outside that class, the classification is a starting point and the article does not claim more. <strong>A reader who applies the three tests to a term of an unfamiliar kind will learn which of the three it most resembles, and that is useful even when it is not decisive.</strong></p>
+<h2 id="what-this-article-does-not-claim">What This Article Does Not Claim</h2>
+<p><strong>That the three kinds are exhaustive for every transport law.</strong> They are exhaustive for the sourceless linear class, and the previous section states the exceptions. <strong>A fourth kind — the source's rate — is named and not developed.</strong></p>
+<p><strong>That the three tests are independent in every case.</strong> They are independent in the cases the article applies them to, and the uniform-inertia test presupposes an inertia. <strong>A rung with no inertia — the scalar rungs before the pair structure appears — cannot run test two as stated</strong>; the article gives the scalar reading (uniform density) and says it is a reading.</p>
+<p><strong>That the product-rule term is negligible.</strong> It is not negligible; it is nonzero and it matters. <strong>The claim is that it is not a force term</strong>, and a balance that omits it is wrong. <strong>The corpus's error was not omitting it but mislabelling it</strong>, and the distinction matters: an omitted term breaks the equation, a mislabelled one breaks the reading.</p>
+<p><strong>That the numerical check F caught the error.</strong> It did not; the classification tests did, and the numerical check was written afterwards to prevent regression. <strong>The article states this because the corpus's honesty rules require distinguishing what a check proves from what a derivation established.</strong></p>
+<p><strong>That the commutator is the only form the transport term takes in a non-abelian chart.</strong> It is the form for a matrix-valued quantity carried by a connection. <strong>A quantity carried by a different transport — a spinor's, a density matrix's — takes the covariant derivative's form, which reduces to the commutator in the adjoint representation.</strong> The article states the commutator's case and not the general one.</p>
+<p><strong>That a force term is always algebraic in the field.</strong> The matrix rung's force term carries two covariant derivatives, and the scalar rungs' carries one gradient. <strong>What is true is that the force term is built from the source and vanishes with it</strong>, which is test one, and the article does not claim an order for it.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>Is there a term that passes all three tests and is not a force?</strong> The article knows of none, and the three tests are stated as a sufficient condition within the corpus. <strong>A term built from the source but multiplied by a function of the state — a state-dependent coupling — passes test one only if the function vanishes with the source</strong>, which it need not. <strong>Such a term is a force with a state-dependent coefficient</strong>, and whether the corpus's classification should name it a fourth kind is open.</p>
+<p><strong>Can the three kinds be derived rather than classified?</strong> The kinds are what the product rule produces; a derivation would exhibit them as the components of a single object — the derivative of a divergence — under a decomposition. <strong>The article does not have the decomposition</strong>, and it suspects the decomposition is the Hodge decomposition of the differentiated current, which would make the three kinds the exact, coexact and harmonic parts. <strong>That is a conjecture and it is labelled as one.</strong></p>
+<p><strong>Does the classification survive the passage to a distributional chart?</strong> At the singular locus the derivatives are distributional and the product rule acquires delta terms. <strong>Whether the delta terms are a fourth kind or a limit of the product-rule kind is not settled</strong>, and the corpus's singular sets are where the question would be asked.</p>
+<p><strong>Is there a rung where the product-rule term is the only term?</strong> That would be a configuration with a stationary quantity, a uniform flow and a varying inertia. <strong>If such a configuration exists at the matrix rung</strong>, its balance would be a statement about the inertia's variation alone, and the article does not know whether the rung admits it.</p>
+<h2 id="what-this-article-adds-and-what-it-relabels">What This Article Adds and What It Relabels</h2>
+<p><strong>Adds.</strong> The <strong>three kinds of term</strong> named by origin rather than by appearance, with the table of what each is and what it is not; the <strong>three tests</strong> — vanishing, uniform inertia, uniform flow — with the explicit statement that a fourth, gauge invariance, does <em>not</em> discriminate and the verification that shows why; the <strong>matrix-rung correspondence</strong>, exact under $\mathcal Q\to\Pi$, $u\to\Omega$, $\partial\to D$, with the commutator as the transport term's general form and the scalar case as its abelian limit; the <strong>corpus's error recounted</strong> with what made it invisible and what caught it; the <strong>five-line checklist</strong>, of which the fifth — state the kind, not only the position — is the methodological rule; and the <strong>boundary</strong> of the classification, with the source's rate named as a fourth kind outside it.</p>
+<p><strong>Repeats, and says so.</strong> The table of the three kinds appears twice in the corpus: here, and in <a href="the-spare-derivative-in-the-polar-chart.html">The Spare Derivative in the Polar Chart</a>, where it is a step in the manufacturing rather than a subject. <strong>The repetition is deliberate</strong> — a reader who meets the prohibition while learning the manufacturing should not have to follow a link to learn why it is a prohibition — <strong>and the two statements must not diverge:</strong> if either article's table changes, the other's changes with it. What is this article's and not the other's is the tests, the checklist and the corpus's case.</p>
+<p><strong>Does not add.</strong> No new equation. The balance is <a href="the-primordial-force-law-and-the-two-wong-terms.html">The Primordial Force Law's</a>; the tests are this article's; the correspondence is a reading of a display that already existed.</p>
+<p><strong>Relabels.</strong> <em>"The force has three parts"</em> — the force has one part, and the left side of the balance has three. <em>"The quantum potential is a force"</em> — it is, and the convective term beside it is not, and the distinction is test three. <em>"The product-rule term is small"</em> — it is not small; it is not a force.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>A first-order transport law, differentiated once, produces three kinds of term: the acceleration, the transport and the product rule.</strong> The acceleration is the second derivative of the transported quantity and the only term that makes the equation second order. The transport is the flow carrying the quantity, and it takes the commutator's form when the quantity is matrix-valued. <strong>The product rule is what the differentiation produces because it was applied to a product whose factors both vary, and it is never a force term.</strong></p>
+<p><strong>Three tests separate them, and each is a configuration in which one kind vanishes and the others do not.</strong> The vanishing test sets the source to zero. The uniform-inertia test sets the inertia's variation to zero. The uniform-flow test sets the flow's variation to zero. <strong>A fourth test — gauge invariance — does not discriminate, because the product-rule term is built from gauge-covariant objects, and the article says so rather than leaving the gap.</strong></p>
+<p><strong>The corpus's one recorded error was a product-rule term displayed as a force term, and it was caught by the tests and not by the numerical check.</strong> The check was written afterwards and now prevents regression. <strong>The check's residual is $4.5\times10^{-8}$ on data of order $0.6$, and the article says plainly that the check did not find the mistake.</strong></p>
+<p><strong>The classification is a claim about kinds, and a claim about kinds is testable independently of any solution.</strong> That is the article's thesis, and the five-line checklist is its operational form: the fifth line asks that a display state each term's kind and not only its position.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal Q$</td>
+<td>the transported quantity</td>
+</tr>
+<tr>
+<td>$u^{\imath}$, $\Omega_{\imath}$</td>
+<td>the flow velocity: base-valued, or the internal connection</td>
+</tr>
+<tr>
+<td>$\mathcal S$</td>
+<td>the transport law's source</td>
+</tr>
+<tr>
+<td>$\mathrm{D}/\mathrm{D}t=\partial_{t'}+u^{\imath}\partial_{\imath}$</td>
+<td>the material derivative</td>
+</tr>
+<tr>
+<td>$\Pi_{\imath,kl}$, $M_{kl}$, $q_{kl}$</td>
+<td>the matrix rung's momentum flux, pair momentum and inertia</td>
+</tr>
+<tr>
+<td>acceleration / transport / product rule</td>
+<td>the three kinds; second order in $\mathcal Q$, first order, and the inertia's variation</td>
+</tr>
+<tr>
+<td>the vanishing test</td>
+<td>set the source to zero</td>
+</tr>
+<tr>
+<td>the uniform-inertia test</td>
+<td>set $\partial q=0$</td>
+</tr>
+<tr>
+<td>the uniform-flow test</td>
+<td>set $\partial u=0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-primordial-force-law-and-the-two-wong-terms.html">The Primordial Force Law and the Two Wong Terms</a>, where the balance is derived and the error is repaired.</li>
+<li><a href="the-spare-derivative-in-the-polar-chart.html">The Spare Derivative in the Polar Chart</a>, the step that produces the transport law this article differentiates.</li>
+<li><a href="the-euler-and-continuity-equations-in-biquaternionic-form.html">The Euler and Continuity Equations in Biquaternionic Form</a>, the scalar case's acceleration and convective terms.</li>
+<li><a href="five-steps-from-a-lagrangian-to-fluid-equations.html">Five Steps from a Lagrangian to Fluid Equations</a>, where this article is the detail behind S4's third part.</li>
+<li><a href="base-valued-versus-internal-flow-velocity-a-test-separating-force-laws-from-momentum-balances.html">Base-Valued versus Internal Flow Velocity</a>, the test that decides whether the manufactured equation is a law or a balance.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

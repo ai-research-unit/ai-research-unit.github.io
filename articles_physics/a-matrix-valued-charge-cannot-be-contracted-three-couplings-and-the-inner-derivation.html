@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Matrix-Valued Charge Cannot Be Contracted: Three Couplings and the Operation the Matrix Rung Uses Instead — Biquaternion Universe</title>
+  <meta name="description" content="Three couplings of a particle to a field appear in the corpus and in the literature around it, and all three are usually written as contractions. Wong&#x27;s…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-matrix-valued-charge-cannot-be-contracted-three-couplings-and-the-operation-the-matrix-rung-uses-instead"><strong>A Matrix-Valued Charge Cannot Be Contracted: Three Couplings and the Operation the Matrix Rung Uses Instead</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Three couplings of a particle to a field appear in the corpus and in the literature around it, and all three are usually written as contractions.</strong> Wong's equations contract an algebraic charge with an algebra-valued field strength and get a force. The classical spinning-particle literature contracts an internal two-form with the field's two-form and gets a coupling. <strong>The corpus's matrix rung does neither, and this article's claim is that it cannot: at that rung there is no charge to contract, and what appears in place of a contraction is a commutator.</strong></p>
+<p><strong>Why a contraction is unavailable, in one sentence.</strong> A contraction consumes an index — it takes two objects and returns one with fewer indices — and at the matrix rung the object the field acts on is the pair momentum, which must come back matrix-valued. <strong>An operation that consumes the matrix index cannot return a matrix</strong>, so the rung needs an operation that <em>acts on</em> an algebra element and returns one, and the only such operation the algebra supplies is its own commutator.</p>
+<p><strong>The article's second subject, and the reason it is not a footnote.</strong> The matrix rung has <em>two</em> eigenvalue splittings, and confusing them is the error this article is written to prevent. The pair's inertia is $q_{kl}=\rho_{k}-\rho_{l}$, the difference of two <em>density</em> eigenvalues; the force weight is $f_{k}-f_{l}$, the difference of two <em>field</em> eigenvalues. <strong>They enter different places in the balance, they are computed from different objects, and one of them divides where the other does not.</strong></p>
+<p><strong>What the article is not.</strong> It is not a claim that Wong's equations are wrong, or that the trace pairing is illegitimate. <strong>Wong's equations are correct and the trace pairing is the right contraction where a contraction exists.</strong> The article's claim is about the rung where no contraction exists, and the trichotomy is what makes the claim precise.</p>
+<p><strong>The article's place in the chain.</strong> It is one of the two articles in <em>From the Fluid to the Force</em> that state the general form of a force block, and it is the one that carries the matrix-valued case. <a href="five-steps-from-a-lagrangian-to-fluid-equations.html">Five Steps from a Lagrangian to Fluid Equations</a> states the skeleton; this article states what the matrix rung's force slot is filled by.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra is $\mathbb{B}$ with its commutator, and at the matrix rung the field is $\Xi=U_{\mathrm{frm}}PU_{\mathrm{frm}}^{\dagger}$ with $P=\mathrm{diag}(\rho_{1},\dots,\rho_{4})$ and $U_{\mathrm{frm}}\in\mathrm{SU}(4)$. The field strength is $\mathbb{F}$, a Hermitian element of the algebra — <strong>Hermitian, with real eigenvalues, in the corpus's convention</strong>, and this is stated because the sign of every subsequent difference depends on it.</p>
+<p><strong>The conventions that matter and where they come from.</strong> <a href="the-algebraic-vocabulary-element-conjugations-six-subspaces-and-two-ledgers.html">The Algebraic Vocabulary</a> fixes the commutator and the two pairings; <a href="the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation</a> fixes why the trace pairing is used there; <a href="the-primordial-force-law-and-the-two-wong-terms.html">The Primordial Force Law</a> fixes the balance this article's operation appears in.</p>
+<p><strong>The pair basis, which is the article's working chart.</strong> For a diagonal $P$, the pair basis consists of the off-diagonal entries $kl$ with $k\neq l$, and in that basis a commutator with a diagonal element is diagonal:</p>
+<p>$$
+\bigl[\mathbb{F},\Xi\bigr]_{kl}=\bigl(f_{k}-f_{l}\bigr)\Xi_{kl},
+$$</p>
+<p>where $f_{k}$ are $\mathbb{F}$'s eigenvalues. <strong>This identity is the article's technical centrepiece</strong>, and the corpus's verification check H tests it directly: the residual is $9.2\times10^{-16}$ on data of order unity, which is round-off. <strong>The identity is exact and the check confirms the implementation, not the mathematics</strong> — the article says which, because the distinction is the corpus's rule.</p>
+<p><strong>The three residual numbers the article quotes, so that they are not confused.</strong> Check C: $\lVert M-(\mathrm{diag}\,dP+\Omega_{kl}(\rho_{l}-\rho_{k}))\rVert=3.7\times10^{-8}$. Check H: the commutator's eigenvalue-difference identity to $9.2\times10^{-16}$. Check I: $\mathbb{F}$'s Hermiticity, $\lVert F-F^{\dagger}\rVert=0$ and $\max\lvert\mathrm{Im}\,f\rvert=0$. <strong>Each is a witness to one mathematical statement and none to another</strong>, and the article assigns them one by one.</p>
+<h2 id="three-couplings-and-what-each-contracts">Three Couplings and What Each Contracts</h2>
+<p><strong>The trichotomy is the article's frame, and the three couplings differ in what they consume.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coupling</th>
+<th>the object acted on</th>
+<th>the operation</th>
+<th>what it consumes</th>
+<th>the result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wong's equations</td>
+<td>a charge $Q$ in the algebra</td>
+<td>$\langle Q,\mathbb F(u)\rangle$ — the trace pairing</td>
+<td>one algebra index from each factor</td>
+<td>a covector force</td>
+</tr>
+<tr>
+<td>the classical spinning particle</td>
+<td>an internal two-form $S^{\mu\nu}$</td>
+<td>$\tfrac12 S^{\mu\nu}\mathbb F_{\mu\nu}$</td>
+<td>two spacetime indices from each factor</td>
+<td>a scalar coupling</td>
+</tr>
+<tr>
+<td>the matrix rung</td>
+<td>the pair momentum $\Pi_{\imath}$</td>
+<td>$[\mathbb F,\Pi_{\imath}]$</td>
+<td><strong>nothing</strong></td>
+<td>a matrix-valued source</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Wong's contraction consumes an algebra index and returns a covector, and that is exactly what a force law needs.</strong> The left side of $\mathrm{D}u^{\imath}/\mathrm{D}\tau=g\langle Q,\mathbb F^{\imath}{}_{\jmath}\rangle u^{\jmath}$ is a covector; the right side must be one; and the trace pairing is the operation that produces a covector from two algebra elements and a base vector. <strong>The contraction and the force law's form match, and that match is why Wong's equations look the way they do.</strong></p>
+<p><strong>The spinning particle's contraction consumes spacetime indices and returns a scalar, and that is exactly what a Lagrangian coupling needs.</strong> $\tfrac12 S^{\mu\nu}\mathbb F_{\mu\nu}$ is a scalar density, it can be added to an action, and its variation produces the spin's equation. <strong>No algebra index is consumed, because the spin is a spacetime two-form and not an algebra element</strong> — and the corpus's spin-half and spin-one rungs' spin currents are of this kind.</p>
+<p><strong>The matrix rung's operation consumes nothing and returns a matrix, and that is exactly what a balance needs.</strong> The balance's left side is matrix-valued — it carries the pair index $kl$ — and its right side must be too. <strong>Any operation that consumed the pair index would produce a scalar or a covector and could not stand where the source stands.</strong> That is the article's first claim, and it is a claim about index counting rather than about groups.</p>
+<h2 id="why-the-trace-pairing-needs-cyclicity">Why the Trace Pairing Needs Cyclicity</h2>
+<p><strong>Wong's contraction is not "multiply the two matrices"; it is "pair them with an invariant form", and the invariance is a condition the form must satisfy.</strong> The force is $g\langle Q,\mathbb F^{\imath}{}_{\jmath}\rangle u^{\jmath}$, and for the force to be gauge-covariant the pairing must be invariant under the gauge group's action on both factors:</p>
+<p>$$
+\bigl\langle [A,Q],\mathbb F\bigr\rangle+\bigl\langle Q,[A,\mathbb F]\bigr\rangle=0 .
+$$</p>
+<p><strong>For the trace pairing this is cyclicity</strong>, $\mathrm{tr}([A,Q]\mathbb F)+\mathrm{tr}(Q[A,\mathbb F])=0$, and cyclicity is what makes the two terms cancel. <strong>A pairing that is not cyclic does not give a gauge-covariant force</strong>, and that is the whole of the requirement.</p>
+<p><strong>The corpus has one pairing that fails cyclicity and the failure is recorded.</strong> The informational scalar $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a pairing on the algebra, and it is not cyclic. <strong>The Yang–Mills action therefore cannot be written with it</strong> — the action's invariance would fail — and <a href="the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation</a> states the trace as the pairing chosen for exactly this reason. <strong>The article's point is not that the informational scalar is defective; it is that the cyclicity condition is a real constraint that a pairing can fail, and the corpus has the case.</strong></p>
+<p><strong>Three consequences, and the article states all three because they are often conflated.</strong> <em>First</em>, the trace pairing is legitimate at any rung whose group is finite-dimensional and whose action is invariant under it. <em>Second</em>, the informational scalar is not, for the Yang–Mills action. <em>Third</em> — and this is the article's subject — <strong>at the matrix rung the question does not arise</strong>, because no pairing is used at all: the operation is a commutator, and a commutator is gauge-covariant by construction, for every gauge group, without any cyclicity condition.</p>
+<p><strong>Why the commutator is automatically covariant, in one line.</strong> Under $Q\to gQg^{-1}$ and $\mathbb F\to g\mathbb F g^{-1}$, the commutator transforms as $[\mathbb F,\Pi]\to g[\mathbb F,\Pi]g^{-1}$. <strong>The conjugation cancels because the commutator is built from the algebra's own product and its reverse</strong>, and the cancellation requires no invariant form. <strong>That is why the matrix rung can do without the trace where the Yang–Mills action cannot.</strong></p>
+<p><strong>The asymmetry, stated so it is not read as a defect of the trace.</strong> The Yang–Mills action integrates a <em>scalar</em>, so it needs a pairing that produces one and an invariant form to make the scalar invariant. <strong>The matrix rung's balance equates a matrix to a matrix</strong>, so it needs no scalar and no invariant form. <strong>Different objects, different requirements, and the trace's cyclicity is a requirement of the first and not of the second.</strong></p>
+<h2 id="what-the-commutator-is-and-why-it-is-the-only-candidate">What the Commutator Is, and Why It Is the Only Candidate</h2>
+<p><strong>The algebra supplies one bilinear operation that takes two elements and returns one: its product. The commutator is the antisymmetric part of that product.</strong> The article's claim is that this makes the commutator the unique candidate for an operation acting on the pair momentum, and the claim is worth stating precisely.</p>
+<p><strong>A bilinear operation $B(\mathbb F,\Pi)$ that takes two algebra elements and returns an algebra element, and that is derivable from the algebra's own structure, must be built from the product.</strong> The product $\mathbb F\Pi$ is one such operation and it is not antisymmetric; $\Pi\mathbb F$ is another. <strong>Their difference is the commutator, their sum is the anticommutator, and the algebra's derivations are generated by the commutator</strong> — an <em>inner derivation</em> is $D_{\mathbb F}\Pi=[\mathbb F,\Pi]$, and it is the algebra acting on itself.</p>
+<p><strong>Why the derivation and not the product is the right operation, and the reason is the balance's meaning.</strong> The commutator is the algebra's action on itself — the infinitesimal transformation $\Pi\to\Pi+\epsilon[\mathbb F,\Pi]$ is what a gauge transformation does to the momentum. <strong>The force term in the balance should be the momentum's change under the field's transformation</strong>, and that change is the commutator. <strong>The product $\mathbb F\Pi$ would be a change under multiplication, which is not a transformation of the algebra into itself.</strong></p>
+<p><strong>The anticommutator's exclusion, stated because a reader will ask.</strong> $\{\mathbb F,\Pi\}$ is also bilinear and returns an algebra element. <strong>It is not a derivation</strong>: it does not satisfy the Leibniz rule, so it does not generate a transformation, and the balance's source must generate the field's action on the momentum. <strong>The commutator is the antisymmetric combination precisely because transformations are generated by the antisymmetric part of the algebra's product.</strong></p>
+<p><strong>The commutator's action in the pair basis, which is the identity the article opened with.</strong> With $\mathbb F$ diagonal in the pair basis, $[\mathbb F,\Xi]_{kl}=(f_{k}-f_{l})\Xi_{kl}$. <strong>The derivation acts diagonally, with an eigenvalue that is the difference of the two field eigenvalues</strong>, and each pair is transported by its own weight. <strong>The corpus's check H confirms the identity to round-off</strong>, and the article's reading of the identity is the subject of the next section.</p>
+<p><strong>The abelian limit, and it is the trichotomy's closure.</strong> In a commutative algebra the commutator vanishes identically, so the matrix rung's operation reduces to zero and the balance loses its source. <strong>That is the statement that a commutative algebra has no inner derivations</strong>, and it is why the matrix rung cannot be abelian: an abelian matrix rung would have no force term at all. <strong>The corpus's non-abelian structure is not an embellishment at this rung; it is what makes the force term nonzero.</strong></p>
+<h2 id="two-eigenvalue-splittings-and-why-they-are-not-the-same">Two Eigenvalue Splittings, and Why They Are Not the Same</h2>
+<p><strong>The matrix rung's balance contains two differences of eigenvalues, and they are computed from different matrices and play different roles.</strong> The article states both with the corpus's symbols and then states what each is for.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the splitting</th>
+<th>from which matrix</th>
+<th>its value</th>
+<th>its role</th>
+<th>where it appears</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inertia</td>
+<td>the density $P=\mathrm{diag}(\rho_{k})$</td>
+<td>$q_{kl}=\rho_{k}-\rho_{l}$</td>
+<td>the guidance relation's denominator; the pair's inertia</td>
+<td>$\Omega_{kl}=M_{kl}/q_{kl}$; the product-rule term $\Omega_{kl}\partial_{\imath}q_{kl}$</td>
+</tr>
+<tr>
+<td>force weight</td>
+<td>the field strength $\mathbb F$</td>
+<td>$f_{k}-f_{l}$</td>
+<td>the commutator's eigenvalue; the weight the field applies to the pair</td>
+<td>the source $[\mathbb F,\Pi]_{kl}=(f_{k}-f_{l})\Pi_{kl}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The inertia is a difference of densities and it divides; the force weight is a difference of field eigenvalues and it multiplies.</strong> That sentence is the article's second claim, and it is worth dwelling on because the two splittings look alike and behave oppositely. <strong>The guidance relation divides by the inertia because the inertia is what resists motion; the commutator multiplies by the force weight because the weight is what the field applies.</strong> <strong>A reader who swaps them gets a guidance relation that multiplies and a source that divides, and both are wrong.</strong></p>
+<p><strong>Why the two cannot coincide, stated as a structural fact.</strong> The densities $\rho_{k}$ are the field's eigenvalues at the matrix rung — the field is $\Xi=UPU^{\dagger}$ — and the field strength $\mathbb F$ is a <em>different</em> matrix, built from the connection's curvature and not from $\Xi$'s eigenvalues. <strong>So $q_{kl}$ and $f_{k}-f_{l}$ are differences of eigenvalues of two different Hermitian matrices</strong>, and there is no reason for them to be equal. <strong>In a configuration where $\mathbb F$ happens to be diagonal in the same basis as $P$, the two splittings are two different functions of the same four labels</strong>, and the article says so because it is the configuration in which a reader is most likely to conflate them.</p>
+<p><strong>The corpus's check C witnesses the first splitting, and it is the one that involves no commutator.</strong> The check tests $\lVert M-(\mathrm{diag}\,dP+\Omega_{kl}(\rho_{l}-\rho_{k}))\rVert=3.7\times10^{-8}$, i.e., that the pair momentum's variation is the diagonal part plus the inertia-weighted guidance. <strong>The check involves the density's eigenvalues and the connection, and no field strength.</strong> So check C is a witness to the <em>inertia</em> splitting and check H is a witness to the <em>force weight</em> splitting, and the article assigns them accordingly. <strong>Neither check tests the other, and a reader who treats them as one verification has conflated the two splittings the article exists to separate.</strong></p>
+<p><strong>The signs, which the with-convention statement fixes.</strong> $q_{kl}=\rho_{k}-\rho_{l}$ appears in check C as $(\rho_{l}-\rho_{k})$ with the opposite sign, because the check's display has the guidance's term on the momentum's side. <strong>The article does not attempt to reconcile the signs in one display</strong> — the corpus's displays are the authority for their own signs, and the article's claim is only that the two splittings are different objects, not that they appear with a particular sign. <strong>The convention's Hermiticity of $\mathbb{F}$ is what makes $f_{k}-f_{l}$ real</strong>, and check I confirms that $\mathbb F$ is Hermitian with $\lVert F-F^{\dagger}\rVert=0$ and no imaginary eigenvalue.</p>
+<h2 id="the-four-differences-from-wong-tabulated">The Four Differences from Wong, Tabulated</h2>
+<p><strong>The corpus's comparison with Wong's equations is four statements, and the article states them in one place because they are usually scattered.</strong> The comparison is not a ranking; it is a list of what changes when the charge stops being a separate object.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Wong's equations</th>
+<th>the matrix rung's balance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>the charge</strong></td>
+<td>a separate algebra element $Q$, carried by the particle</td>
+<td><strong>none</strong>; the field's own matrix structure supplies the pair index</td>
+</tr>
+<tr>
+<td><strong>the operation</strong></td>
+<td>the trace pairing $\langle Q,\mathbb F(u)\rangle$</td>
+<td>the commutator $[\mathbb F,\Pi]$, the algebra's inner derivation</td>
+</tr>
+<tr>
+<td><strong>the output</strong></td>
+<td>a covector force, equated to an acceleration</td>
+<td>a matrix-valued source, equated to a divergence</td>
+</tr>
+<tr>
+<td><strong>the cyclicity requirement</strong></td>
+<td>needed, and failed by the informational scalar</td>
+<td><strong>not needed</strong>; the commutator is covariant without an invariant form</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first difference is the deepest, and it is the one the article's title names.</strong> Wong's particle carries a charge that is <em>not</em> the field; the matrix rung's fluid carries no charge because its "charge" is the field's own basis. <strong>A charge that is the field's basis cannot be contracted with the field</strong>, and the article's claim is that this is a statement about the rung's structure and not about a choice of variables.</p>
+<p><strong>The second difference follows from the first and not the other way round.</strong> If there is no separate charge, there is nothing to pair; what remains is the field acting on the momentum, and the field's action on an algebra element is its commutator. <strong>The article states the logical order because a reader might think the commutator was chosen for convenience. It was forced.</strong></p>
+<p><strong>The third difference is a consequence of the index counting, and it is why the matrix rung's equation is a balance.</strong> Wong's output is a covector because its left side is a covector; the matrix rung's output is a matrix because its left side is a matrix. <strong>Nothing about the group's size or the algebra's structure enters the argument; only the index count does.</strong></p>
+<p><strong>The fourth difference is the one that makes the matrix rung self-sufficient.</strong> Wong's equations need the trace's cyclicity to be gauge-covariant; the matrix rung needs nothing, because the commutator's conjugation cancels. <strong>So the matrix rung does not inherit the Yang–Mills action's pairing problem</strong>, and <a href="the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation's</a> discussion of the trace is not a premise of this article.</p>
+<h2 id="what-a-force-block-owes-its-reader">What a Force Block Owes Its Reader</h2>
+<p><strong>The article's second half is an inventory, and it is written for the corpus's authors rather than for its readers.</strong> Every sector block in the corpus — strong, electroweak, electromagnetism — ends in a force article, and each force article owes the reader the same six statements. <strong>The inventory is the general form of a force block, and the matrix rung's case is one instantiation of it.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what the force article owes</th>
+<th>the question it answers</th>
+<th>the matrix rung's answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>the object</strong></td>
+<td>what does the force act on?</td>
+<td>the pair momentum $\Pi_{\imath,kl}$</td>
+</tr>
+<tr>
+<td><strong>the source</strong></td>
+<td>what produces the force?</td>
+<td>the commutator with the field strength, $[\mathbb F,\Pi]$</td>
+</tr>
+<tr>
+<td><strong>the operation</strong></td>
+<td>how are the two combined?</td>
+<td>a commutator; a contraction where a charge exists</td>
+</tr>
+<tr>
+<td><strong>the weights</strong></td>
+<td>what multiplies what?</td>
+<td>inertia $q_{kl}$ divides, force weight $f_{k}-f_{l}$ multiplies</td>
+</tr>
+<tr>
+<td><strong>the singular set</strong></td>
+<td>where does the force law fail?</td>
+<td>where $q_{kl}=0$: equal densities, the eigenvalue crossing</td>
+</tr>
+<tr>
+<td><strong>the verdict</strong></td>
+<td>is it a law or a balance?</td>
+<td>a balance; the velocity is internal</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first three lines are the trichotomy's, and the fourth is the article's two-splittings section.</strong> The fifth is the corpus's obligation to state where its charts fail, and at the matrix rung the failure is the eigenvalue crossing — $q_{kl}=0$, the guidance relation's denominator, the point where the pair's inertia vanishes and the whole pair description degenerates. <strong>The sixth is <a href="base-valued-versus-internal-flow-velocity-a-test-separating-force-laws-from-momentum-balances.html">S5's</a></strong>, and it is last because it is a verdict on the other five rather than a sixth object.</p>
+<p><strong>Why an inventory and not a template.</strong> A template would be filled in mechanically and would produce force articles that state the six lines without deriving them. <strong>An inventory states what must be <em>derivable</em>, and the corpus's rule is that each line be obtained from the rung's action and not asserted.</strong> The matrix rung's six lines are all obtained: the object and source from the balance, the operation from the algebra, the weights from the two eigenvalue splittings, the singular set from the guidance relation, and the verdict from the velocity's type.</p>
+<p><strong>The sixth line's honesty, which the article states plainly.</strong> "A balance" is a verdict and not a demotion, and a force article that ends with it has completed its obligation. <strong>The corpus's ladder table records the verdict for every rung, and a reader comparing rows should not read the matrix rung's row as an unfinished entry.</strong> It is a finished entry with a different verdict.</p>
+<h2 id="the-honest-limitations-of-the-trichotomy">The Honest Limitations of the Trichotomy</h2>
+<p><strong>The trichotomy is a frame and not a theorem, and the article says where it is thin.</strong> Three couplings are named; a fourth is not excluded; and the frame's content is that the three differ in what they consume.</p>
+<p><strong>The spinning-particle coupling is the frame's weakest entry.</strong> It couples two spacetime two-forms and produces a scalar, and its relation to the algebra-valued cases is a relation of analogy rather than of structure. <strong>The article includes it because it is the literature's other standard coupling and because its contraction is genuinely different — spacetime indices rather than algebra indices — but it does not claim the three are three instances of one operation.</strong> They are three operations with one thing in common: two are contractions and the third is not.</p>
+<p><strong>The frame does not cover a coupling to a background that is itself an algebra element times a two-form.</strong> Such a coupling would contract an algebra index and a spacetime index at once — a "twisted" contraction — and the corpus does not have one. <strong>Whether it would behave like Wong's case or like the matrix rung's is not stated</strong>, and the article flags the possibility rather than resolving it.</p>
+<p><strong>The frame's claim about the matrix rung is strong and narrow.</strong> It is strong: no contraction is available, and the commutator is forced. <strong>It is narrow: it holds at the matrix rung's object — a matrix-valued momentum acted on by a matrix-valued field — and it says nothing about a rung whose momentum is scalar-valued and whose field is matrix-valued.</strong> At such a rung a contraction would exist and the frame would predict Wong's case. <strong>The corpus has no such rung, and the prediction is untested.</strong></p>
+<h2 id="what-this-article-does-not-claim">What This Article Does Not Claim</h2>
+<p><strong>That the commutator is a force.</strong> It is the balance's <em>source</em>, and the corpus's shorthand calls the source the force. <strong>The article keeps the shorthand and states its limit</strong>: at the matrix rung there is no trajectory to accelerate, so "force" names the momentum's rate of change and not a mass times an acceleration. <strong>Calling it a force is a continuation of the classical vocabulary by analogy, and the analogy is exact in form and not in content.</strong></p>
+<p><strong>That the trace pairing is unavailable in the algebra.</strong> It is available, it is cyclic, and it is the right pairing for the Yang–Mills action. <strong>The claim is that the matrix rung does not use it, because the matrix rung has nothing to pair.</strong> A reader who concludes the article is arguing against the trace has misread it.</p>
+<p><strong>That the two eigenvalue splittings are unrelated.</strong> They are both differences of eigenvalues of Hermitian matrices, and in configurations where the two matrices are simultaneously diagonal the splittings are two functions of the same four labels. <strong>What the article claims is that they are different functions with opposite roles</strong>, not that they are unrelated.</p>
+<p><strong>That the four differences from Wong are independent.</strong> The first forces the second, the second produces the third, and the fourth follows from the second. <strong>The table is a logical chain and not a list of four independent observations</strong>, and the article's ordering of it is the chain's order.</p>
+<p><strong>That the inventory is exhaustive for every sector block.</strong> It is the inventory of a <em>force</em> article, and a sector block's other articles owe other things. <strong>A block whose force article answers the six lines has discharged this article's requirement and not the block's.</strong></p>
+<p><strong>That the numerics establish the mathematics.</strong> Check C, check H and check I are witnesses to implementations of statements that are exact. <strong>The article says which is which for each</strong>, because a residual of $10^{-16}$ that confirms an identity is a different kind of evidence from a residual of $10^{-8}$ that confirms a finite-difference scheme.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>Is there an operation other than the commutator that acts on an algebra element, returns one, and is derivable from the algebra's product?</strong> The commutator and the anticommutator are the product's antisymmetric and symmetric parts, and both return algebra elements. <strong>The article excludes the anticommutator by the derivation requirement</strong>, which is a requirement the balance's meaning imposes and not one the algebra imposes. <strong>Whether a balance could be written with an anticommutator source — and what it would describe — is not settled.</strong></p>
+<p><strong>What replaces the commutator when the momentum is not in the algebra but in a module?</strong> A spinor's momentum lives in a module over the algebra, and the algebra acts on it by multiplication rather than by commutation. <strong>The corpus's spinor rung has a transport whose form is the covariant derivative's</strong>, and whether that is the module's version of the same operation is a question the article does not answer.</p>
+<p><strong>Does the guidance relation's denominator vanishing have a physical reading at the matrix rung?</strong> $q_{kl}=0$ means equal densities, and the guidance relation diverges. <strong>The corpus's singular sets are stated one by one, and the matrix rung's is the eigenvalue crossing</strong>; whether the crossing is a genuine physical degeneration or a chart artefact of the pair description is not settled. <strong>The article notes that the field equation survives the crossing</strong> — it is the pair chart that fails — <strong>and leaves the reading open.</strong></p>
+<p><strong>Can the two splittings be related by a single object?</strong> A matrix that is diagonal in the pair basis with entries $f_{k}-f_{l}$ is the commutator's action; a matrix with entries $\rho_{k}-\rho_{l}$ is the inertia. <strong>Both are of the form "difference of eigenvalues", and a single map from diagonal matrices to pair-indexed matrices would produce both.</strong> Whether such a map has a name and a use in the corpus is open.</p>
+<h2 id="what-this-article-adds-and-what-it-relabels">What This Article Adds and What It Relabels</h2>
+<p><strong>Adds.</strong> The <strong>trichotomy of couplings</strong> by what each consumes — an algebra index, two spacetime indices, or nothing — with the index count as the discriminator; the <strong>index-counting argument</strong> that a contraction cannot return a matrix and therefore cannot stand where the balance's source stands; the <strong>commutator as the unique candidate</strong> among operations acting on an algebra element and returning one, with the anticommutator excluded by the derivation requirement and the abelian limit stated; the <strong>cyclicity requirement</strong> on the trace pairing, with the informational scalar's failure recorded and the commutator's automatic covariance as the contrast; the <strong>two eigenvalue splittings</strong> with the "inertia divides, force weight multiplies" rule and the explicit assignment of check C to one and check H to the other; the <strong>four differences from Wong</strong> as a logical chain; and the <strong>six-line inventory</strong> that a force block owes its reader.</p>
+<p><strong>Does not add.</strong> No new equation and no new residual. Checks C, H and I are the corpus's, and their assignments to statements are this article's reading.</p>
+<p><strong>Relabels.</strong> <em>"The matrix rung's force is a commutator with the field strength"</em> — it is a <em>source</em> in a balance, and "force" is the classical vocabulary continued by analogy. <em>"The charge is matrix-valued"</em> — there is no charge; the field's basis is the pair index, and that is why nothing can be contracted. <em>"The guidance weight and the force weight are the same splitting"</em> — one is the density's difference and divides, the other is the field's difference and multiplies.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Three couplings appear in and around the corpus, and they differ in what they consume.</strong> Wong's equations contract an algebraic charge with the field strength by the trace pairing and get a covector force; the classical spinning particle contracts an internal two-form with the field's two-form and gets a scalar coupling; <strong>the matrix rung contracts nothing, because its "charge" is the field's own basis, and what it uses instead is the commutator.</strong></p>
+<p><strong>The contraction is unavailable for an index-counting reason.</strong> The balance's source must be matrix-valued, and an operation that consumes the pair index cannot return a matrix. <strong>The commutator consumes nothing: it takes two algebra elements and returns one, it is the algebra's inner derivation, and it is the only such operation the algebra supplies.</strong> Its abelian limit is zero, which is why the matrix rung must be non-abelian for its source to be nonzero.</p>
+<p><strong>The trace pairing's cyclicity is a real constraint, and the matrix rung does not face it.</strong> Wong's force is covariant only if the pairing is invariant; the informational scalar fails and the Yang–Mills action therefore uses the trace; <strong>the commutator is covariant by construction, because conjugation cancels in the product and its reverse.</strong></p>
+<p><strong>Two eigenvalue splittings appear at the matrix rung, and they are not the same.</strong> The inertia $q_{kl}=\rho_{k}-\rho_{l}$ is the density's difference and it divides; the force weight $f_{k}-f_{l}$ is the field's difference and it multiplies. <strong>Check C witnesses the first and check H the second, and neither check tests the other.</strong></p>
+<p><strong>The four differences from Wong form a chain — no charge, therefore no pairing, therefore a matrix source, therefore no cyclicity requirement — and the six-line inventory is what a force block owes its reader.</strong> The matrix rung answers all six, and its verdict is a balance.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q$</td>
+<td>Wong's charge: a separate algebra element carried by the particle</td>
+</tr>
+<tr>
+<td>$\mathbb F$, $f_{k}$</td>
+<td>the field strength, Hermitian, and its real eigenvalues</td>
+</tr>
+<tr>
+<td>$\Xi=U_{\mathrm{frm}}PU_{\mathrm{frm}}^{\dagger}$, $P=\mathrm{diag}(\rho_{k})$</td>
+<td>the matrix rung's field and its density eigenvalues</td>
+</tr>
+<tr>
+<td>$q_{kl}=\rho_{k}-\rho_{l}$</td>
+<td>the pair's inertia; the guidance relation's denominator</td>
+</tr>
+<tr>
+<td>$f_{k}-f_{l}$</td>
+<td>the force weight; the commutator's eigenvalue</td>
+</tr>
+<tr>
+<td>$[\mathbb F,\Pi]_{kl}=(f_{k}-f_{l})\Pi_{kl}$</td>
+<td>the inner derivation acting in the pair basis</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>a pairing; the trace where cyclicity is required</td>
+</tr>
+<tr>
+<td>$S^{\mu\nu}$</td>
+<td>a classical spinning particle's internal two-form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-primordial-force-law-and-the-two-wong-terms.html">The Primordial Force Law and the Two Wong Terms</a>, where the balance is derived and the four differences are first stated.</li>
+<li><a href="the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a>, the trace pairing and why the informational scalar is not cyclic.</li>
+<li><a href="the-algebraic-vocabulary-element-conjugations-six-subspaces-and-two-ledgers.html">The Algebraic Vocabulary</a>, the commutator and the two pairings.</li>
+<li><a href="differentiating-a-first-order-transport-law-force-transport-and-product-rule-terms.html">Differentiating a First-Order Transport Law</a>, where the commutator is identified as the transport term's general form.</li>
+<li><a href="base-valued-versus-internal-flow-velocity-a-test-separating-force-laws-from-momentum-balances.html">Base-Valued versus Internal Flow Velocity</a>, the verdict that makes the matrix rung's equation a balance and not a law.</li>
+<li><a href="five-steps-from-a-lagrangian-to-fluid-equations.html">Five Steps from a Lagrangian to Fluid Equations</a>, where this article's operation fills S4's force slot at the matrix rung.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

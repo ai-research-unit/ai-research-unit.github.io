@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$\mathcal N=3$ Super Yang–Mills: The Degenerate Case — Biquaternion Universe</title>
+  <meta name="description" content="The question. Is there a four-dimensional super Yang–Mills theory distinct from ? The answer is no for the Lagrangian theory, and yes for a class of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-super-yangmills-the-degenerate-case"><strong>$\mathcal N=3$ Super Yang–Mills: The Degenerate Case</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Is there a four-dimensional $\mathcal N=3$ super Yang–Mills
+theory distinct from $\mathcal N=4$? The answer is no for the Lagrangian theory,
+and yes for a class of non-Lagrangian superconformal field theories. The two
+answers are often conflated. This note separates them, states exactly what forces
+the enhancement, and lists what a genuine $\mathcal N=3$ theory must look like.</p>
+<p><strong>The answer in one line.</strong></p>
+<p>$$
+\boxed{\;
+\text{any }\mathcal N=3\text{ invariant Lagrangian gauge theory in }4D
+\;\Longrightarrow\;
+\mathcal N=4\ \text{SYM},
+\qquad
+\text{but genuine }\mathcal N=3\ \text{SCFTs exist and are non-Lagrangian}
+\;}
+$$</p>
+<p><strong>What is claimed, and what is not.</strong> Claimed: the $\mathcal N=3$ vector
+multiplet has the same components as the $\mathcal N=4$ one; the fourth
+supersymmetry closes on shell on that multiplet; the $\mathcal N=3$ constraint
+forces the $\mathcal N=2$ prepotential to be free; the $\beta$-function vanishes;
+genuine $\mathcal N=3$ SCFTs retain $U(3)_R$ and satisfy $a=c$. Not claimed: that
+every theory with an $SU(3)_R$ symmetry is $\mathcal N=4$; that $\mathcal N=3$
+SCFTs have a Yang–Mills description; that the enhancement is a statement about
+arbitrary matter content.</p>
+<h2 id="the-math16-algebra-and-its-math17-symmetry">The $\mathcal N=3$ Algebra and Its $R$-Symmetry</h2>
+<p>The algebra has three Weyl supercharges $Q_\alpha^{i}$, $i=1,2,3$:</p>
+<p>$$
+\{Q_\alpha^{i},\bar Q_{\dot\beta j}\}=2\sigma^{\mu}_{\alpha\dot\beta}P_\mu\,\delta^{i}{}_{j},
+\qquad
+\{Q_\alpha^{i},Q_\beta^{j}\}=\epsilon_{\alpha\beta}Z^{ij},
+\qquad
+Z^{ij}=-Z^{ji}.
+$$</p>
+<p>The central-charge matrix is antisymmetric in the $\mathbf 3$ of $SU(3)_R$:
+three independent complex entries. The automorphism group is</p>
+<p>$$
+U(3)_R=SU(3)_R\times U(1)_R,
+\qquad
+Q_\alpha^{i}\in\mathbf 3 .
+$$</p>
+<p>The $U(1)_R$ charge of $Q$ is conventionally $+1$. For a Lagrangian theory the
+exact symmetry is larger, $SU(4)_R$, precisely because the theory is $\mathcal N=4$;
+for a genuine $\mathcal N=3$ SCFT it is $U(3)_R$ and not more.</p>
+<p><strong>Group-theoretic seed of the enhancement.</strong></p>
+<p>$$
+U(3)_R\subset SU(4)_R,
+\qquad
+\mathbf 4_{SU(4)}=\mathbf 3_{SU(3)}\oplus\mathbf 1 .
+$$</p>
+<p>The singlet in the decomposition is the state that the fourth supercharge needs;
+its presence in the $\mathcal N=3$ multiplet is what makes the enhancement
+possible.</p>
+<h2 id="field-content">Field Content</h2>
+<p><strong>The vector multiplet.</strong> On shell,</p>
+<p>$$
+V_{\mathcal N=3}=\bigl(A_\mu,\;\lambda^{A}\ (A=1,\dots,4),\;
+z^{A}\ (A=1,2,3)\bigr),
+$$</p>
+<p>all in the adjoint. Under $SU(3)_R$,</p>
+<p>$$
+\mathbf 4_{\text{gaugini}}=\mathbf 3\oplus\mathbf 1,
+\qquad
+\mathbf 6_{\text{real scalars}}=\mathbf 3\oplus\bar{\mathbf 3},
+$$</p>
+<p>i.e. three complex scalars $z^{A}$ and their conjugates. Degrees of freedom:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_\mu$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>four Weyl gaugini</td>
+<td>$2\times4=8$</td>
+</tr>
+<tr>
+<td>three complex scalars</td>
+<td>$2\times3=6$</td>
+</tr>
+<tr>
+<td>total bosonic</td>
+<td>$2+6=8$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Balanced. The content is <em>identical</em> to the $\mathcal N=4$ vector multiplet; only
+the organizing symmetry and the number of supersymmetries are stated differently.</p>
+<p><strong>Helicity table.</strong> Building the multiplet from $|h=1\rangle$ by acting with $k$
+supercharges of the $\mathcal N=3$ algebra and CPT-completing gives</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$h$</th>
+<th>$+1$</th>
+<th>$+\tfrac12$</th>
+<th>$0$</th>
+<th>$-\tfrac12$</th>
+<th>$-1$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>multiplicity</td>
+<td>1</td>
+<td>4</td>
+<td>6</td>
+<td>4</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p>which is the $\mathcal N=4$ table. The reason is that CPT completion restores the
+missing states: three supercharges alone would give a smaller tower, but the
+conjugate tower supplies the rest, and the two together are the $\mathcal N=4$
+tower.</p>
+<p><strong>Decomposition into $\mathcal N=2$ multiplets.</strong></p>
+<p>$$
+\mathcal N=3\ \text{vector}
+=\mathcal N=2\ \text{vector}\;\oplus\;
+\mathcal N=2\ \text{hypermultiplet in the adjoint}.
+$$</p>
+<p>The $\mathcal N=2$ vector gives $(A_\mu,\lambda^{i},\phi)$; the adjoint
+hypermultiplet gives the remaining two Weyl fermions and two complex scalars.
+This is the decomposition that makes the enhancement argument concrete, because
+the $\mathcal N=2$ technology of the prepotential is available.</p>
+<h2 id="why-the-fourth-supersymmetry-is-not-optional">Why the Fourth Supersymmetry Is Not Optional</h2>
+<p>There are three independent arguments; they agree.</p>
+<p><strong>1. On-shell closure.</strong> The $\mathcal N=3$ algebra closes on the vector
+multiplet only with the equations of motion. Commuting three supercharges on the
+fields produces the field strength and the fermion bilinears that constitute a
+fourth transformation. Hence any action invariant under the three is invariant
+under the fourth. The fourth generator is composite on the physical states; there
+is no independent fourth charge that could be switched off while keeping the
+three.</p>
+<p><strong>2. Field-content comparison.</strong> The multiplets coincide (previous section), and
+the $\mathcal N=3$ transformation rules are the restriction of the $\mathcal N=4$
+ones to a subalgebra. Since the field content and the algebra action agree, the
+most general renormalizable invariant Lagrangian agrees.</p>
+<p><strong>3. Prepotential rigidity.</strong> In $\mathcal N=2$ language the $\mathcal N=3$
+constraint forbids any prepotential correction:</p>
+<p>$$
+\mathcal F(\Phi)=\tfrac12\tau_0\Phi^{2},
+$$</p>
+<p>because a correction would require a second $U(1)$ phase acting on $\Phi$ that
+the $U(1)_R\subset U(3)_R$ does not provide. The free prepotential is exactly the
+$\mathcal N=4$ one, the adjoint hypermultiplet must be massless, and the
+$SU(2)_R\times U(1)_R$ of $\mathcal N=2$ combines with the extra generators into
+$U(3)_R$.</p>
+<p><strong>In components.</strong> The would-be $\mathcal N=3$ Lagrangian is</p>
+<p>$$
+\mathcal L_{\mathcal N=3}
+=\mathcal L_{\mathcal N=4}\big|_{\text{fields reorganized under }U(3)_R},
+$$</p>
+<p>with only $g$ and $\theta$ as parameters, and with $\beta(g)=0$.</p>
+<h2 id="the-math77-rewriting-explicitly">The $\mathcal N=4$ Rewriting, Explicitly</h2>
+<p>In $\mathcal N=1$ language the $\mathcal N=4$ vector multiplet is one vector
+multiplet plus three adjoint chiral multiplets $\Phi_i$, $i=1,2,3$, with</p>
+<p>$$
+W=\frac{g}{3!}\epsilon^{ijk}f^{abc}\Phi_i^{a}\Phi_j^{b}\Phi_k^{c}
+\qquad(\text{up to an }i),
+$$</p>
+<p>and the three $\Phi_i$ are the $\mathbf 3$ of the $SU(3)$ inside $SU(4)_R$. The
+$\mathcal N=3$ subalgebra rotates the three chiral multiplets among themselves and
+mixes them with the $\mathcal N=1$ gaugino; the extra singlet gaugino that
+completes the $\mathbf 4$ is precisely the state the fourth supercharge needs.</p>
+<p>The one-loop check is immediate: three adjoint chirals contribute $3N_c$ to
+$b=3N_c-N_f$, so $b=0$. In $\mathcal N=2$ language the same statement is
+$N_f=2N_c$ and $b=2N_c-N_f=0$. The two computations agree, as they must.</p>
+<h2 id="genuine-math96-superconformal-field-theories">Genuine $\mathcal N=3$ Superconformal Field Theories</h2>
+<p><strong>What they are not.</strong> They are not weakly coupled Yang–Mills theories. The
+enhancement argument applies to Lagrangians built from the standard vector
+multiplet; a non-Lagrangian SCFT is outside its hypothesis.</p>
+<p><strong>What they are.</strong> Four-dimensional SCFTs with</p>
+<ul>
+<li>R-symmetry exactly $U(3)_R=SU(3)_R\times U(1)_R$;</li>
+<li>superconformal algebra $SU(2,2|3)$;</li>
+<li>$a=c$ (a hallmark of $\mathcal N\ge3$);</li>
+<li>no exactly marginal coupling in the usual sense;</li>
+<li>typically a construction by discrete twisting of an $\mathcal N=4$ theory.</li>
+</ul>
+<p><strong>The $a=c$ statement.</strong> For $\mathcal N=3$ the superconformal algebra forces the
+two trace-anomaly coefficients to coincide. In $\mathcal N=2$ they generally
+differ; in $\mathcal N=4$ they coincide and, for $SU(N)$,
+$a=c=(N^{2}-1)/4$. A genuine $\mathcal N=3$ theory is therefore distinguishable
+from a generic $\mathcal N=2$ SCFT by its anomaly coefficients and its R-symmetry,
+even before any spectrum is computed.</p>
+<p><strong>S-folds.</strong> The standard construction starts from an $\mathcal N=4$ theory and
+gauges a discrete symmetry that combines a rotation of the internal space with an
+S-duality transformation. For the appropriate discrete choice the result preserves
+only $\mathcal N=3$. These theories are strongly coupled and have no
+Yang–Mills description; they are the reason the $\mathcal N=3$ label is not
+vacuous.</p>
+<p><strong>What the existence of these theories does not do.</strong> It does not reopen the
+Lagrangian question. The two statements coexist:</p>
+<ul>
+<li>$\mathcal N=3$ <em>Lagrangian</em> gauge theory $\Rightarrow$ $\mathcal N=4$;</li>
+<li>$\mathcal N=3$ <em>SCFT</em> $\not\Rightarrow$ $\mathcal N=4$, but also
+  $\not\Rightarrow$ Lagrangian.</li>
+</ul>
+<h2 id="other-dimensions">Other Dimensions</h2>
+<p>The degeneracy is a four-dimensional Yang–Mills statement. It should not be
+transported.</p>
+<ul>
+<li><strong>Three dimensions.</strong> $\mathcal N=3$ Chern–Simons–matter theories are genuine,
+  well studied, and appear in higher-spin and holographic contexts. They are not
+  four-dimensional SYM and the counting of supercharges is different.</li>
+<li><strong>Five and six dimensions.</strong> Extended supersymmetry has its own multiplet
+  classification; the four-dimensional helicity argument that forces the
+  $\mathcal N=3\to\mathcal N=4$ enhancement does not apply unchanged.</li>
+</ul>
+<p>Whenever “$\mathcal N=3$” appears, the dimension and the Lagrangian/non-Lagrangian
+status must be checked first.</p>
+<h2 id="comparison">Comparison</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>property</th>
+<th>$\mathcal N=2$</th>
+<th>$\mathcal N=3$</th>
+<th>$\mathcal N=4$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>supercharges</td>
+<td>8</td>
+<td>12</td>
+<td>16</td>
+</tr>
+<tr>
+<td>vector multiplet</td>
+<td>$A_\mu,2\lambda,\phi$</td>
+<td>$A_\mu,4\lambda,3\phi$</td>
+<td>$A_\mu,4\lambda,3\phi$</td>
+</tr>
+<tr>
+<td>exact $R$-symmetry</td>
+<td>$SU(2)_R$ ($U(1)_R$ only when conformal)</td>
+<td>$U(3)$</td>
+<td>$SU(4)$</td>
+</tr>
+<tr>
+<td>independent Lagrangian</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>one-loop exact</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$a=c$</td>
+<td>generally no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>exact solution</td>
+<td>Seiberg–Witten</td>
+<td>none needed</td>
+<td>S-duality, integrability</td>
+</tr>
+<tr>
+<td>genuine SCFTs</td>
+<td>many</td>
+<td>non-Lagrangian</td>
+<td>many</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="common-misconceptions">Common Misconceptions</h2>
+<ol>
+<li><strong>“$\mathcal N=3$ means three gaugini.”</strong> The CPT-completed vector multiplet has
+   four, in the $\mathbf 3\oplus\mathbf 1$ of $SU(3)_R$. Three would not balance
+   the eight bosonic degrees of freedom.</li>
+<li><strong>“$\mathcal N=3$ sits between $\mathcal N=2$ and $\mathcal N=4$ as a separate
+   Lagrangian theory.”</strong> The genuinely intermediate Lagrangian theory is
+   $\mathcal N=2$; $\mathcal N=3$ collapses upward.</li>
+<li><strong>“$\mathcal N=3$ has a nonzero beta function.”</strong> It vanishes, inherited from
+   $\mathcal N=4$.</li>
+<li><strong>“$\mathcal N=3$ means gauge group $SU(3)$.”</strong> $\mathcal N$ counts
+   supersymmetries. $SU(3)$ with $\mathcal N=4$ is a perfectly ordinary theory.</li>
+<li><strong>“Genuine $\mathcal N=3$ SCFTs cannot exist.”</strong> They exist; they are simply not
+   Lagrangian.</li>
+</ol>
+<h2 id="symbols">Symbols</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q_\alpha^{i}$, $i=1,2,3$</td>
+<td>the three supercharges, $\mathbf 3$ of $SU(3)_R$</td>
+</tr>
+<tr>
+<td>$Z^{ij}$</td>
+<td>antisymmetric central-charge matrix, $\bar{\mathbf 3}$</td>
+</tr>
+<tr>
+<td>$\lambda^{A}$, $A=1,\dots,4$</td>
+<td>the four gaugini, $\mathbf 3\oplus\mathbf 1$</td>
+</tr>
+<tr>
+<td>$z^{A}$</td>
+<td>three complex scalars, $\mathbf 3$</td>
+</tr>
+<tr>
+<td>$U(3)_R$</td>
+<td>R-symmetry of the algebra and of genuine SCFTs</td>
+</tr>
+<tr>
+<td>$SU(4)_R$</td>
+<td>R-symmetry of the $\mathcal N=4$ theory it enhances to</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. Wess and J. Bagger, <em>Supersymmetry and Supergravity</em> — multiplet structure and on-shell closure.</li>
+<li>K. Intriligator and N. Seiberg, <em>Lectures on Supersymmetric Gauge Theories</em> — multiplets and the enhancement statement.</li>
+<li>I. García-Etxebarria and D. Regalado, “$\mathcal N=3$ four dimensional field theories” — the construction of genuine $\mathcal N=3$ SCFTs.</li>
+<li>O. Aharony and Y. Tachikawa, “S-folds and $\mathcal N=3$ superconformal field theories” — the $U(3)_R$ structure and $a=c$.</li>
+<li>The companion notes in this folder on $\mathcal N=2$ and $\mathcal N=4$ — the prepotential rigidity and the maximal theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
