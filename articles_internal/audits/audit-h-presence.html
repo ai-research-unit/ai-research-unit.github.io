@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit: The Presence of the Planck Constant — Three Claims, Measured — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. Internal note, measured 2026-11-27, not an article. It is not in a menu, it is not built and it is not published: articles_internal/…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="audit-the-presence-of-the-planck-constant-three-claims-measured"><strong>Audit: The Presence of the Planck Constant — Three Claims, Measured</strong></h1>
+<p><em>Status of this file.</em> <strong>Internal note, measured 2026-11-27, not an article.</strong> It is not in a menu, it is not built and it is not published: <code>articles_internal/</code> sits outside the build and outside git. It exists so that the three claims about the constant can be re-measured in one command instead of re-argued, and so that the next writer who has to move a constant knows which sites are evidence and which are decoration. The measurement is <code>python3 _reserve/py/audit-h-presence.py</code>; the site-by-site inventory is its own §8; the method that produced the present state is the one recorded in <code>audit-purge-method.md</code>, applied display by display.</p>
+<p><em>The three claims.</em></p>
+<p><strong>A.</strong> No Planck constant anywhere in <em>Biquaternion Universe Relativity</em> — no site and no mention.
+<strong>B.</strong> No Planck constant anywhere in <em>Biquaternion Universe Action</em> before the quantisation section.
+<strong>C.</strong> In the reading path the constant first appears exactly in the article that declares the promotion — the one that turns the classical bracket into a commutator.</p>
+<p><em>The reader's contract, in six lines.</em></p>
+<ol>
+<li><strong>One site is one occurrence inside a math span.</strong> Prose, slugs, file names and menu text are not sites. A title is counted once at its source, and the build prints a title twice.</li>
+<li><strong>The letter h is overloaded six ways.</strong> A bare h is never counted as the constant: it is classified by construction, and every instance inside the two blocks that must be free is read by hand and listed in §3 and §7.</li>
+<li><strong>A claim is stated with its scope.</strong> The absolute form of Claim C is false, and the scope that makes it true is named with its count in §5. A claim with a hidden exception is not a claim.</li>
+<li><strong>The declaration is not a use.</strong> A units table that defines the constant is a dictionary entry, and a dictionary is not a chapter.</li>
+<li><strong>The rendered page must agree with the source.</strong> Where it does not, the difference is explained, not tolerated.</li>
+<li><strong>Numbers are re-measured, never remembered.</strong> A count that drifts by more than a handful means an article moved; re-run before writing.</li>
+</ol>
+<h2 id="1-the-verdicts">1. The verdicts</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>scope</th>
+<th>measurement</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>the 93 articles of <em>Relativity</em></td>
+<td>0 sites, 0 mentions, 123 occurrences of the letter in five other roles</td>
+<td>holds</td>
+</tr>
+<tr>
+<td>B</td>
+<td>the 22 articles of <em>Action</em> before the quantisation section</td>
+<td>0 sites; all 172 sites of the category begin at the promotion article</td>
+<td>holds</td>
+</tr>
+<tr>
+<td>C</td>
+<td>the physics chain: Relativity, Action, Fluid, the particular forces</td>
+<td>first site in the chain is line 21 of <code>the-lagrangian-and-the-second-quantisation</code></td>
+<td>holds in the chain; the front matter is excluded by name, §5</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-the-corpus-in-menu-order">2. The corpus, in menu order</h2>
+<p>The count is one per occurrence of the constant inside a math span, in seven written forms: <code>h/2pi</code> for a bare $\frac{h}{2\pi}$ or its inverse, <code>.../h</code> for any fraction with $h$ in the denominator, <code>h/...</code> for any fraction with $h$ in the numerator, <code>mc/h</code> for the mass wave number, <code>hc</code> for the action's energy-length product, <code>h^2</code>, and <code>barred</code> for the forbidden $\hbar$. The rows are the menu, so the table is also the reading order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>category</th>
+<th style="text-align: right;">articles</th>
+<th style="text-align: right;">sites</th>
+<th style="text-align: right;">articles &gt; 0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B.U.</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">207</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>B.U. Relativity</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>B.U. Action</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">172</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td>B.U. Fluid Physics and Thermodynamics</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">224</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td>B.U. Free of Force</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">701</td>
+<td style="text-align: right;">61</td>
+</tr>
+<tr>
+<td>B.U. Primordial Force</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>B.U. Symmetry Breaking</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>B.U. Strong Force</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td>B.U. Electroweak Force</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td>B.U. The Standard Model Assembly</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>B.U. Electromagnetism</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>B.U. Relativistic Quantum Theory</td>
+<td style="text-align: right;">129</td>
+<td style="text-align: right;">1565</td>
+<td style="text-align: right;">105</td>
+</tr>
+<tr>
+<td>B.U. Non Relativistic Approximation of Quantum Theory</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">1463</td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr>
+<td>B.U. Relativistic Non Quantum Approximation</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">226</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td>B.U. Non Relativistic Non Quantum Approximation</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">167</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>B.U. Gravity and Cosmology</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td style="text-align: right;"><strong>745</strong></td>
+<td style="text-align: right;"><strong>5028</strong></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>745 articles, 5028 sites.</strong> Relativity is the only category at zero. The front matter is the only category above Relativity, and it is where the constant is declared (§5).</p>
+<h2 id="3-claim-a-relativity-carries-no-constant">3. Claim A: Relativity carries no constant</h2>
+<p><strong>Measured: 0 sites in 93 articles, and 0 mentions of the constant by name or by the words <em>Planck</em> and <em>quantum of action</em>; the rendered HTML agrees, 0 in 0 articles.</strong></p>
+<p>What Relativity does carry is the letter: <strong>123 occurrences inside math spans</strong>, of which 94 are classified mechanically (the scripted components $h_t$, $h'$, $\vec h$; the Hermitian form $h(\cdot,\cdot)$; the coordinate $(0,h)$) and 29 were read by hand into five roles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th style="text-align: right;">count</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the helicity, a label of the little group</td>
+<td style="text-align: right;">21</td>
+<td>$\tilde W_{\imath}=h\,\tilde P_{\imath}$</td>
+</tr>
+<tr>
+<td>the Hermitian form on the spinor module</td>
+<td style="text-align: right;">5</td>
+<td>$h(\tilde X,\tilde Y)=2\,\mathrm{Sc}(\tilde X^{*}\tilde Y)$</td>
+</tr>
+<tr>
+<td>the radial scalar field</td>
+<td style="text-align: right;">1</td>
+<td>$\xi=\tfrac{1}{\sqrt2}(v+h)\,e^{i\vartheta}$</td>
+</tr>
+<tr>
+<td>a metric factor of the Bloch ball</td>
+<td style="text-align: right;">2</td>
+<td>$h\!\left(\tfrac{1+\cos\theta}{2}\right)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why kinematics cannot need it.</strong> The constant is a conversion, and it converts between two writings of one dimension: an action and a rate, a momentum and a wave number, a mass and an inverse length. It appears only where a sentence writes both at once. Relativity writes one at a time — the interval, the four-velocity, the four-momentum, the boost, the little group, the labels — and the one place in the older text that did write both, the mass-length boilerplate, was removed and replaced by a mass $m_0$ and a wave number $\nu_m$ defined independently of each other. That removal is why the count is zero and not small.</p>
+<p>The two relations a reader expects to find here are not missing, they are later: the de Broglie and Compton lengths are in <em>Free of Force</em>, in <code>the-three-wavenumbers-of-a-particle</code> (77 sites), which is a particular category and therefore stands after the promotion.</p>
+<h2 id="4-claim-b-action-carries-no-constant-before-the-quantisation-section">4. Claim B: Action carries no constant before the quantisation section</h2>
+<p><strong>Measured: 0 sites in the 24 articles that precede the promotion, and 172 sites in the 28 that follow it.</strong> The boundary is the article <code>the-lagrangian-and-the-second-quantisation</code>, the first entry of <em>From the Field Equation to the Quantum Field</em>. The 24 articles, with their menu lines, are these:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">menu line</th>
+<th>article</th>
+<th>section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">528</td>
+<td><code>the-invariant-density-which-pairing-the-action-can-integrate</code></td>
+<td>What May Be an Integrand</td>
+</tr>
+<tr>
+<td style="text-align: right;">531</td>
+<td><code>the-carrier-roster-three-spins-and-no-fourth</code></td>
+<td>What May Be an Integrand</td>
+</tr>
+<tr>
+<td style="text-align: right;">534</td>
+<td><code>what-a-group-can-accept-a-carrier-must-transform-in-a-representation</code></td>
+<td>What May Be an Integrand</td>
+</tr>
+<tr>
+<td style="text-align: right;">537</td>
+<td><code>which-terms-survive-invariance-as-a-linear-condition-on-a-density</code></td>
+<td>What May Be an Integrand</td>
+</tr>
+<tr>
+<td style="text-align: right;">540</td>
+<td><code>one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted</code></td>
+<td>What May Be an Integrand</td>
+</tr>
+<tr>
+<td style="text-align: right;">543</td>
+<td><code>the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search</code></td>
+<td>What May Be an Integrand</td>
+</tr>
+<tr>
+<td style="text-align: right;">546</td>
+<td><code>what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations</code></td>
+<td>What May Be an Integrand</td>
+</tr>
+<tr>
+<td style="text-align: right;">549</td>
+<td><code>the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions</code></td>
+<td>What May Be an Integrand</td>
+</tr>
+<tr>
+<td style="text-align: right;">552</td>
+<td><code>two-filters-that-never-meet-invariance-and-helmholtz</code></td>
+<td>What May Be an Integrand</td>
+</tr>
+<tr>
+<td style="text-align: right;">587</td>
+<td><code>the-rung-dictionary-what-the-general-symbols-mean-at-each-rung</code></td>
+<td>The Lagrangian</td>
+</tr>
+<tr>
+<td style="text-align: right;">590</td>
+<td><code>the-relativistic-particle-and-the-lagrangian-the-stationary-action-principle</code></td>
+<td>The Lagrangian</td>
+</tr>
+<tr>
+<td style="text-align: right;">593</td>
+<td><code>hamiltonian-field-theory-in-biquaternionic-form</code></td>
+<td>The Lagrangian</td>
+</tr>
+<tr>
+<td style="text-align: right;">596</td>
+<td><code>the-dirac-bergmann-algorithm-first-and-second-class-constraints</code></td>
+<td>The Lagrangian</td>
+</tr>
+<tr>
+<td style="text-align: right;">620</td>
+<td><code>noethers-theorem-in-biquaternionic-form</code></td>
+<td>From the Action to the Field Equation</td>
+</tr>
+<tr>
+<td style="text-align: right;">623</td>
+<td><code>stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form</code></td>
+<td>From the Action to the Field Equation</td>
+</tr>
+<tr>
+<td style="text-align: right;">626</td>
+<td><code>belinfante-rosenfeld-why-the-canonical-stress-tensor-is-not-symmetric</code></td>
+<td>From the Action to the Field Equation</td>
+</tr>
+<tr>
+<td style="text-align: right;">629</td>
+<td><code>the-minimal-coupling-in-biquaternionic-form</code></td>
+<td>From the Action to the Field Equation</td>
+</tr>
+<tr>
+<td style="text-align: right;">632</td>
+<td><code>the-covariant-derivative-and-connection-in-biquaternionic-form</code></td>
+<td>From the Action to the Field Equation</td>
+</tr>
+<tr>
+<td style="text-align: right;">635</td>
+<td><code>connection-curvature-and-the-bianchi-identity-in-biquaternionic-form</code></td>
+<td>From the Action to the Field Equation</td>
+</tr>
+<tr>
+<td style="text-align: right;">638</td>
+<td><code>non-abelian-connections-in-biquaternionic-form</code></td>
+<td>From the Action to the Field Equation</td>
+</tr>
+<tr>
+<td style="text-align: right;">641</td>
+<td><code>the-yang-mills-equation-in-biquaternionic-form</code></td>
+<td>From the Action to the Field Equation</td>
+</tr>
+<tr>
+<td style="text-align: right;">644</td>
+<td><code>particle-spins-in-the-biquaternion-algebra-three-carriers-their-meaning-and-their-order</code></td>
+<td>From the Action to the Field Equation</td>
+</tr>
+<tr>
+<td style="text-align: right;">659</td>
+<td><code>differentiating-a-first-order-transport-law-force-transport-and-product-rule-terms</code></td>
+<td>From the Field Equation to the Force</td>
+</tr>
+<tr>
+<td style="text-align: right;">668</td>
+<td><code>a-matrix-valued-charge-cannot-be-contracted-three-couplings-and-the-inner-derivation</code></td>
+<td>From the Field Equation to the Force</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four sections, four reasons.</strong> <em>What May Be an Integrand</em> (9 articles) checks a dimension, a pairing, a linear invariance condition, the closure of a term list, and the Helmholtz conditions. A density of dimension four and a differential condition on an operator are not conversions; none of them names a unit. <em>The Lagrangian</em> (4) states the density, its variation, the rung dictionary, the Hamiltonian and the Dirac–Bergmann algorithm; the overall normalisation of a density is not observable, because a stationary point is unchanged when the functional is multiplied, so the normalisation stays a letter. <em>From the Action to the Field Equation</em> (9) derives the currents, the stress–energy, the connection, the curvature, the Bianchi identity, the non-abelian case and the Yang–Mills equation; the coupling is one letter, $\kappa$, and the conversion from a charge to a coupling is a dictionary entry, not a derivation. <em>The three carriers</em> closes the block by naming the spins. None of the four needs the constant, and the measurement says none of them contains it.</p>
+<p><strong>What was removed, and what replaced it.</strong> The sites were not deleted; each was replaced by the classical object it was hiding.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>site</th>
+<th>before</th>
+<th>after</th>
+<th>why the constant was unnecessary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mass wave number</td>
+<td>$\nu_m=\frac{mc}{h}$</td>
+<td>$m_0:=mc$, $2\pi\nu_m=m_0$</td>
+<td>$m_0$ is the mass in the units of the box operator; $h$ only fixes its numerical value once units are fixed</td>
+</tr>
+<tr>
+<td>canonical momentum</td>
+<td>$i\frac{h}{2\pi}\tilde\Xi^{*}$</td>
+<td>$i\tilde\Xi^{*}$</td>
+<td>the conjugate momentum is defined by the density, not by the unit of action</td>
+</tr>
+<tr>
+<td>phase gradient</td>
+<td>$\frac{h}{2\pi}\nabla$</td>
+<td>$\nabla$</td>
+<td>same: a gradient is a gradient</td>
+</tr>
+<tr>
+<td>Dirac normalisation</td>
+<td>$\frac{hc}{4\pi}$</td>
+<td>$\mathcal{N}$</td>
+<td>an overall factor of a density multiplies the action and not the equation</td>
+</tr>
+<tr>
+<td>gauge coupling</td>
+<td>$\frac{2\pi i\varkappa}{h}\tilde A$</td>
+<td>$i\kappa\tilde A$</td>
+<td>one coupling letter; the bridge $\kappa=2\pi\varkappa/h$ is stated once, at the promotion</td>
+</tr>
+<tr>
+<td>dimension counting</td>
+<td>$\hbar=c=1$</td>
+<td>$c=1$, the action dimensionless</td>
+<td>a statement about the measure, not about a value</td>
+</tr>
+</tbody>
+</table></div>
+<p>The gauge row accounts for about 85 sites in five articles — minimal coupling, the covariant derivative, curvature and Bianchi, the non-abelian connection, Yang–Mills — and it is the only one where the replacement changes what a display <em>looks</em> like. It does not change what it asserts: $\kappa$ was already the corpus's second spelling for the same object, recorded in <em>Operator and Calculus Conventions</em>, and the non-abelian article already used it.</p>
+<p><strong>The residue the tool found and the eye did not.</strong> After the hand pass reported zero, a grep for <code>{h}</code> still returned zero while the constant was present once, in the Dirac action of <em>The Relativistic Particle and the Lagrangian</em>: the numerator was written <code>h c</code>, with a space, so it matched neither <code>\frac{h}{</code> nor <code>hc</code>. It is now $\mathcal{N}$. That is the whole argument for keeping a measurement script instead of a habit.</p>
+<h2 id="5-claim-c-the-first-appearance-is-the-promotion-article">5. Claim C: the first appearance is the promotion article</h2>
+<p><strong>Measured.</strong> The first site in the chain is at line 21 of <code>the-lagrangian-and-the-second-quantisation</code>:</p>
+<blockquote>
+<p>The conventions are the family's, and one more. … $\frac{h}{2\pi}$ is the constant that converts an action's units into a rate; $\nu_m=\frac{mc}{h}$ …</p>
+</blockquote>
+<p>and four lines later it is the promotion itself:</p>
+<blockquote>
+<p><strong>One symbol is a postulate and is marked.</strong> The promotion's symbol is $\frac{1}{i\frac{h}{2\pi}}[\,,\,]$. Everything to its left is classical and derivable from the actions the corpus has; everything to its right is the postulate.</p>
+</blockquote>
+<p>The article is the first entry of <em>The Postulate and the Ledger</em> (<code>physics.md:691</code>), the first subsection of <em>From the Field Equation to the Quantum Field</em> (<code>physics.md:677</code>), and that section is the fifth and last of <em>Action</em> (<code>physics.md:432</code>). Its own line in the menu is <code>physics.md:708</code>.</p>
+<p><strong>The exception, named.</strong> In the document as a whole the constant appears earlier: <strong>207 sites in 13 articles of the front matter</strong>, of which 105 are in <code>physics-units-and-common-elements-conventions</code> — the table that fixes the constant as a defining constant — and 38 more in the other four conventions articles. The remaining 64 are the programme essays (29), the limits essays (15) and <em>Energy and Information</em> (20). The first of all is <code>ai-physics-review</code>, line 394, where $\nu_m=mc/h$ is quoted while the programme's notation is introduced.</p>
+<p>This is not a hole in the claim, it is the claim's scope. A corpus that never names the constant cannot define its units, and a definition that cannot be found is worse than one that is: the front matter is the dictionary, and a dictionary entry is not a chapter. The claim that is true, and the one this audit certifies, is: <strong>in the chain that develops physics — Relativity, Action, Fluid, then the particular forces — the constant first appears in the article that declares the promotion, and in no article before it.</strong></p>
+<h2 id="6-why-the-next-category-is-fluid-measured">6. Why the next category is Fluid, measured</h2>
+<p><em>Fluid Physics and Thermodynamics</em> carries 224 sites in 27 of its 43 articles. 16 articles carry none, and they are the chart articles — the eight variables, the five steps, the criteria that grade an equation as a fluid's. The load is concentrated where the physics is thermal: <code>relativistic-wigner-function-and-quantum-kinetics</code> (35), <code>the-wigner-function-in-biquaternionic-form</code> (31), <code>the-local-thermal-structure-kb-as-the-scale-of-imaginary-time</code> (21), <code>the-chemical-potential-is-the-phases-frequency</code> (21), <code>equilibrium-partition-function-in-a-moving-frame</code> (17).</p>
+<p>The forms are the argument: <code>h/2pi</code> 81, <code>h/...</code> 56, <code>.../h</code> 39, <code>hc</code> 34, <code>mc/h</code> 7, <code>barred</code> 7. Every one of them is a conversion that a thermal statement performs — imaginary time is $\frac{h}{2\pi}/k_BT$, a Matsubara frequency is a multiple of it, a Wigner function is a Fourier transform on the quantum scale. A thermal state is a density operator; there is no density operator without the commutator; so the category cannot precede the promotion, and it does not.</p>
+<h2 id="7-what-the-audit-found-that-is-not-about-the-ordering">7. What the audit found that is not about the ordering</h2>
+<p><strong>The barred letter is used thirty times.</strong> The conventions forbid it: <em>"The Planck constant is written $h$, and the barred letter is never used."</em> Thirty sites in eleven articles still write it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">sites</th>
+<th>article</th>
+<th>lines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>physics-units-and-common-elements-conventions</code></td>
+<td>82, 82</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><code>the-three-scales-c-hbar-and-k-b-as-the-three-continuations</code></td>
+<td>1, 7, 37, 44, 47, 49, 51, 53, 53, 94, 120, 132, 139, 148</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>ostrogradsky-or-why-no-rung-goes-past-two-derivatives</code></td>
+<td>137</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation</code></td>
+<td>381</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>base-valued-versus-internal-flow-velocity-a-test-separating-force-laws-from-momentum-balances</code></td>
+<td>153</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>relativistic-wigner-function-and-quantum-kinetics</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>the-chemical-potential-is-the-phases-frequency</code></td>
+<td>11, 105, 144, 150</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-machinery-under-the-primordial-action-trace-curvature-ghosts-and-one-loop</code></td>
+<td>260</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components</code></td>
+<td>39</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>asymptotic-freedom-and-the-running-of-the-strong-coupling</code></td>
+<td>152, 305</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>the-pmns-matrix-and-lepton-mixing</code></td>
+<td>129, 134</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>30</strong></td>
+<td><strong>11 articles</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>Two of the thirty are the rule itself and its example, in <code>physics-units-and-common-elements-conventions:82</code>. The fourteen in <code>the-three-scales-c-hbar-and-k-b-as-the-three-continuations</code> are substantive: that article introduces $c$, $\hbar$ and $k_B$ by name, and the replacement is one substitution repeated. The remaining fourteen are one to four per article, and none of them is load-bearing. This is a convention violation, not an ordering violation: $\hbar$ is $\frac{h}{2\pi}$ under another name, so no new constant enters.</p>
+<p><strong>The rendered page adds one site in two articles.</strong> <code>the-three-scales-c-hbar-and-k-b-as-the-three-continuations</code> renders 50 against 49, and <code>relativistic-wigner-function-and-quantum-kinetics</code> 36 against 35, because the build prints the title in the <code>&lt;title&gt;</code> tag and again in the <code>&lt;h1&gt;</code>, and both titles contain a constant. Relativity renders 0 in 0 articles, and <em>Action</em> before the promotion renders 0.</p>
+<p><strong>A naive grep is wrong in both directions.</strong> It finds $h$ inside $\tanh$, $\cosh$ and $\sinh$ (2 340 occurrences), the vector part of a state (985), the Cartan subalgebra $\mathfrak{h}$ (12), and a finite-difference step $O(h^2)$ (2) — and it misses a constant written <code>h c</code> with a space. The masker in the script removes the first five by construction; the sixth had to be found by hand and is the reason §4 ends with a residue.</p>
+<p><strong>The two free blocks are clean of the letter in any Planck role.</strong> Relativity has 123 occurrences and the pre-promotion Action 48; all 48 of the latter were read, and all 29 of the former's unclassified residue were read. They are the helicity, the Hermitian form, the radial scalar field and a Bloch-ball metric factor in Relativity, and a finite-difference grid step in the pre-promotion Action — five roles, none of them the constant.</p>
+<h2 id="8-the-inventory-article-by-article">8. The inventory, article by article</h2>
+<p>The verdicts above are counts; this section is the evidence under them, one row per article, so that a re-run can be compared row by row and not only in total. <strong>A row exists only where a site exists</strong>: an article with no site is absent, not listed with a zero, except in §4 where the zero is the finding.</p>
+<p>The forms are disjoint and each occurrence is counted once, under the most specific form that matches: <code>h/2pi</code> is a bare $\frac{h}{2\pi}$ or its inverse; <code>.../h</code> any fraction with $h$ in the denominator; <code>h/...</code> any fraction with $h$ in the numerator; <code>mc/h</code> the mass wave number; <code>hc</code> the energy-length product; <code>barred</code> the forbidden $\hbar$. The section column is the menu's subsection, not the article's own headings.</p>
+<h3 id="81-the-front-matter-207-sites-in-13-articles">8.1 The front matter: 207 sites in 13 articles</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">sites</th>
+<th>article</th>
+<th>section</th>
+<th>forms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>ai-physics-review</code></td>
+<td>Programme &amp; Motivation</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><code>why-biquaternions</code></td>
+<td>Programme &amp; Motivation</td>
+<td>h/2pi×4, mc/h×2, hc×1, h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>the-quantum-relativity-tension-and-the-biquaternion-framework</code></td>
+<td>Programme &amp; Motivation</td>
+<td>.../h×4, mc/h×1, h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><code>the-biquaternion-universe-as-an-improvement-of-the-quaternionic-quantum-theory</code></td>
+<td>Programme &amp; Motivation</td>
+<td>h/...×4, h/2pi×4</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>a-brief-history-of-biquaternions-in-physics</code></td>
+<td>Programme &amp; Motivation</td>
+<td>h/2pi×6</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td><code>energy-and-information-four-conservation-laws-from-one-identity</code></td>
+<td>Structural &amp; Algebraic Results</td>
+<td>h/2pi×13, .../h×4, hc×3</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions</code></td>
+<td>Limits, Cost &amp; Empirical Status</td>
+<td>hc×4, h/2pi×3</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><code>the-empirical-status-of-the-biquaternion-framework</code></td>
+<td>Limits, Cost &amp; Empirical Status</td>
+<td>h/2pi×4, hc×2, mc/h×1, .../h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>algebra-and-element-conventions</code></td>
+<td>Conventions &amp; Notations</td>
+<td>h/2pi×3, h/...×1, .../h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>special-element-conventions</code></td>
+<td>Conventions &amp; Notations</td>
+<td>h/2pi×6, h/...×2, .../h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><code>operator-and-calculus-conventions</code></td>
+<td>Conventions &amp; Notations</td>
+<td>.../h×17, h/2pi×3, h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>index-and-notation-conventions</code></td>
+<td>Conventions &amp; Notations</td>
+<td>h/2pi×2, h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">105</td>
+<td><code>physics-units-and-common-elements-conventions</code></td>
+<td>Conventions &amp; Notations</td>
+<td>h/2pi×39, .../h×33, hc×16, h/...×15, barred×2</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th style="text-align: right;">count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>h/2pi</code></td>
+<td style="text-align: right;">88</td>
+</tr>
+<tr>
+<td><code>.../h</code></td>
+<td style="text-align: right;">61</td>
+</tr>
+<tr>
+<td><code>h/...</code></td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td><code>mc/h</code></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><code>hc</code></td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td><code>barred</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td style="text-align: right;"><strong>207</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>This is the declaration, not a use: §5. The two <code>barred</code> are the rule and its example, on one line of the units table.</p>
+<h3 id="82-action-after-the-promotion-172-sites-in-21-articles">8.2 Action after the promotion: 172 sites in 21 articles</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">sites</th>
+<th>article</th>
+<th>section</th>
+<th>forms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">10</td>
+<td><code>the-lagrangian-and-the-second-quantisation</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>h/2pi×7, .../h×2, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-quantisation-hub-the-sixteen-articles-that-import-the-promotion</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>fock-space-and-creation-annihilation-operators-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>h/2pi×3, hc×1, .../h×1, h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-wick-theorem-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>the-functional-integral-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>.../h×2, mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>the-functional-determinant-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><code>the-generating-functional-and-the-effective-action-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>h/2pi×9, .../h×4, h/...×3, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><code>the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>.../h×8, h/2pi×7, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td><code>the-s-matrix-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>h/2pi×9, .../h×5, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>the-lsz-reduction-formula-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>.../h×1, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td><code>the-spin-statistics-theorem-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>.../h×16, h/...×4, h/2pi×2, hc×2, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>interpretation-of-the-wick-rotation-in-the-biquaternion-universe</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>.../h×2, h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>the-conformal-anomaly-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>the-connection-path-integral-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>.../h×4, hc×2, h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>redundancy-and-the-information-in-the-orbit-in-biquaternionic-form</code></td>
+<td>From the Field Equation to the Quantum Field</td>
+<td>.../h×5</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-spectral-triple-of-the-biquaternion-algebra</code></td>
+<td>Other aspects</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>bosonization-in-biquaternionic-form</code></td>
+<td>Other aspects</td>
+<td>mc/h×1, h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">49</td>
+<td><code>the-three-scales-c-hbar-and-k-b-as-the-three-continuations</code></td>
+<td>Other aspects</td>
+<td>h/2pi×22, barred×14, hc×5, .../h×4, h/...×4</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>ostrogradsky-or-why-no-rung-goes-past-two-derivatives</code></td>
+<td>Other aspects</td>
+<td>h/2pi×1, barred×1</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th style="text-align: right;">count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>h/2pi</code></td>
+<td style="text-align: right;">64</td>
+</tr>
+<tr>
+<td><code>.../h</code></td>
+<td style="text-align: right;">54</td>
+</tr>
+<tr>
+<td><code>h/...</code></td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><code>mc/h</code></td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td><code>hc</code></td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><code>barred</code></td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td style="text-align: right;"><strong>172</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The concentration is the quantisation's own apparatus: the generating functional (17), the Schwinger–Dyson identities (16), the S-matrix (15), the spin–statistics theorem (25) and the three-scales article (49, with 14 of the corpus's 30 barred sites).</p>
+<h3 id="83-fluid-physics-and-thermodynamics-224-sites-in-27-articles">8.3 Fluid Physics and Thermodynamics: 224 sites in 27 articles</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">sites</th>
+<th>article</th>
+<th>section</th>
+<th>forms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>the-relativistic-quantum-space-as-a-fluid</code></td>
+<td>From the Element to the Fluid Equations</td>
+<td>h/2pi×5, mc/h×3, h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>the-current-algebra</code></td>
+<td>From the Element to the Fluid Equations</td>
+<td>h/...×4, .../h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-non-uniqueness-of-the-spin-half-fluid</code></td>
+<td>From the Element to the Fluid Equations</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size</code></td>
+<td>From the Element to the Fluid Equations</td>
+<td>hc×7</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-massless-fluid-where-the-label-and-value-charts-both-fail</code></td>
+<td>From the Element to the Fluid Equations</td>
+<td>hc×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>criterion-for-a-fluid-equation-one-polar-coordinates-euler-lagrange-equation</code></td>
+<td>From the Element to the Fluid Equations</td>
+<td>h/2pi×2, barred×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-spare-derivative-in-the-polar-chart</code></td>
+<td>From the Element to the Fluid Equations</td>
+<td>h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>base-valued-versus-internal-flow-velocity-a-test-separating-force-laws-from-momentum-balances</code></td>
+<td>From the Element to the Fluid Equations</td>
+<td>barred×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><code>the-thermal-circle-inverse-temperature-is-an-inverse-time</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/2pi×10</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>the-kms-condition-and-the-biquaternion-framework</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/...×4, h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><code>the-local-thermal-structure-kb-as-the-scale-of-imaginary-time</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/...×10, hc×10, h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-free-energy-functional-at-finite-temperature</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>the-matsubara-thermal-formalism-in-biquaternionic-form</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/...×4</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><code>equilibrium-partition-function-in-a-moving-frame</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/2pi×10, h/...×4, .../h×3</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>the-schwinger-keldysh-formalism-in-biquaternionic-form</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/2pi×4, h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-discrete-lattice-and-the-thermal-circle</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">31</td>
+<td><code>the-wigner-function-in-biquaternionic-form</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>.../h×13, h/2pi×11, h/...×5, hc×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">35</td>
+<td><code>relativistic-wigner-function-and-quantum-kinetics</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/2pi×15, .../h×11, h/...×6, hc×2, barred×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>the-local-thermal-state-of-a-fluid</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>hc×3, h/...×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><code>the-chemical-potential-is-the-phases-frequency</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/2pi×8, .../h×5, h/...×4, barred×4</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><code>the-equation-of-state-in-biquaternion-form</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>hc×7, h/2pi×3, h/...×2, .../h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>covariant-local-equilibrium-and-tolman-temperature</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>hc×2, h/2pi×2, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>causal-dissipative-fluid-physics-in-biquaternionic-form</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>spin-fluid-physics-in-biquaternionic-form</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/...×2, h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>spin-conservation-and-the-frenkel-condition</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/...×5, h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>the-two-fluid-model-in-biquaternionic-form</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>.../h×4, h/2pi×3</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation</code></td>
+<td>From the Fluid Equations to the Thermodynamic Equations</td>
+<td>h/2pi×2, mc/h×2, .../h×1</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th style="text-align: right;">count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>h/2pi</code></td>
+<td style="text-align: right;">81</td>
+</tr>
+<tr>
+<td><code>.../h</code></td>
+<td style="text-align: right;">39</td>
+</tr>
+<tr>
+<td><code>h/...</code></td>
+<td style="text-align: right;">56</td>
+</tr>
+<tr>
+<td><code>mc/h</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>hc</code></td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr>
+<td><code>barred</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td style="text-align: right;"><strong>224</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>16 of the 43 carry nothing, and they are the chart articles. The heavy rows are the thermal and phase-space ones, as §6 argues.</p>
+<h3 id="84-free-of-force-701-sites-in-all-61-articles">8.4 Free of Force: 701 sites in all 61 articles</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">sites</th>
+<th>article</th>
+<th>section</th>
+<th>forms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">17</td>
+<td><code>wave-particle-duality-and-the-fourier-transform</code></td>
+<td>Generalities</td>
+<td>h/2pi×6, hc×6, .../h×5</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>the-differentiable-field-one-primary-equation-and-the-linear-sector</code></td>
+<td>Generalities</td>
+<td>h/2pi×3</td>
+</tr>
+<tr>
+<td style="text-align: right;">77</td>
+<td><code>the-three-wavenumbers-of-a-particle</code></td>
+<td>Generalities</td>
+<td>.../h×33, hc×30, h/...×9, h/2pi×5</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>the-biquaternion-dalembertian-and-its-greens-functions</code></td>
+<td>Generalities</td>
+<td>mc/h×3, h/2pi×1, h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">32</td>
+<td><code>helicity-in-biquaternionic-form</code></td>
+<td>Generalities</td>
+<td>h/2pi×18, h/...×14</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>conformal-invariance-and-the-massless-limit-in-biquaternionic-form</code></td>
+<td>Generalities</td>
+<td>mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>the-lagrangian-and-the-proca-equation</code></td>
+<td>Spin 1</td>
+<td>mc/h×3</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>the-lagrangian-and-the-proca-equation-in-polar-variables</code></td>
+<td>Spin 1</td>
+<td>mc/h×3</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-lagrangian-and-the-proca-equation-in-momentum-space</code></td>
+<td>Spin 1</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>the-lagrangian-and-the-spin-one-fluid</code></td>
+<td>Spin 1</td>
+<td>h/2pi×4, mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>the-proca-equation-massive-spin-1-in-biquaternionic-form</code></td>
+<td>Spin 1</td>
+<td>.../h×6</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>the-proca-equation-in-biquaternionic-polar-variables</code></td>
+<td>Spin 1</td>
+<td>mc/h×2, h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>degenerate-solutions-of-the-biquaternionic-proca-equation</code></td>
+<td>Spin 1</td>
+<td>mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength</code></td>
+<td>Spin 1</td>
+<td>mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>wave-particle-duality-and-the-count-of-degrees-of-freedom</code></td>
+<td>Spin 1</td>
+<td>hc×2, .../h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>spin-one-fluid-equations-from-the-proca-polar-action</code></td>
+<td>Spin 1</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-spin-one-fluid</code></td>
+<td>Spin 1</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><code>the-path-integral-and-the-proca-equation-in-biquaternionic-form</code></td>
+<td>Spin 1</td>
+<td>h/2pi×3, .../h×2, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>the-path-integral-and-the-proca-equation-in-biquaternionic-polar-variables</code></td>
+<td>Spin 1</td>
+<td>h/2pi×4, .../h×3</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-fourier-transform-and-the-proca-equation-in-biquaternionic-form</code></td>
+<td>Spin 1</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-fourier-transform-and-the-proca-equation-in-biquaternionic-polar-variables</code></td>
+<td>Spin 1</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form</code></td>
+<td>Spin 1/2</td>
+<td>.../h×2, mc/h×1, h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>kramers-degeneracy-and-antiunitary-symmetry-in-biquaternionic-form</code></td>
+<td>Spin 1/2</td>
+<td>h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td><code>the-lagrangian-and-the-dirac-equation</code></td>
+<td>Spin 1/2</td>
+<td>h/2pi×17, hc×6, mc/h×3</td>
+</tr>
+<tr>
+<td style="text-align: right;">46</td>
+<td><code>the-lagrangian-and-the-dirac-equation-in-polar-variables</code></td>
+<td>Spin 1/2</td>
+<td>h/2pi×43, hc×2, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><code>the-lagrangian-and-the-dirac-equation-in-momentum-space</code></td>
+<td>Spin 1/2</td>
+<td>hc×4, h/2pi×2, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td><code>the-lagrangian-and-the-spin-half-fluid</code></td>
+<td>Spin 1/2</td>
+<td>h/2pi×13, hc×1, h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><code>the-dirac-equation-in-biquaternionic-form</code></td>
+<td>Spin 1/2</td>
+<td>h/2pi×5, mc/h×4, h/...×2, .../h×2, hc×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><code>the-dirac-equation-in-biquaternionic-polar-variables</code></td>
+<td>Spin 1/2</td>
+<td>h/2pi×7, .../h×5, h/...×2, hc×2, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><code>klein-gordon-from-the-dirac-square-in-biquaternionic-form</code></td>
+<td>Spin 1/2</td>
+<td>.../h×5, h/2pi×3</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>explicit-solutions-of-the-biquaternionic-dirac-equation</code></td>
+<td>Spin 1/2</td>
+<td>.../h×2, h/2pi×1, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>degenerate-solutions-of-the-biquaternionic-dirac-equation</code></td>
+<td>Spin 1/2</td>
+<td>mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><code>the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit</code></td>
+<td>Spin 1/2</td>
+<td>h/2pi×6, h/...×4, .../h×3, hc×2, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation</code></td>
+<td>Spin 1/2</td>
+<td>.../h×3, h/2pi×1, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">74</td>
+<td><code>exercise-the-non-relativistic-limit-and-the-pauli-equation</code></td>
+<td>Spin 1/2</td>
+<td>h/2pi×53, h/...×12, .../h×8, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><code>spin-half-fluid-equations-from-the-dirac-polar-action</code></td>
+<td>Spin 1/2</td>
+<td>h/2pi×9, hc×2, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>the-spin-half-fluid-and-the-takabayasi-correspondence</code></td>
+<td>Spin 1/2</td>
+<td>h/...×4, h/2pi×3, mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>the-spin-half-fluid-of-the-biquaternion-dirac-field</code></td>
+<td>Spin 1/2</td>
+<td>h/...×6, .../h×2, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>the-spin-half-energy-momentum-tensor</code></td>
+<td>Spin 1/2</td>
+<td>h/2pi×1, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><code>the-path-integral-and-the-dirac-equation-in-biquaternionic-form</code></td>
+<td>Spin 1/2</td>
+<td>.../h×9, h/2pi×9, mc/h×2, hc×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td><code>the-path-integral-and-the-dirac-equation-in-biquaternionic-polar-variables</code></td>
+<td>Spin 1/2</td>
+<td>.../h×9, h/2pi×7, mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>the-fourier-transform-and-the-dirac-equation-in-biquaternionic-form</code></td>
+<td>Spin 1/2</td>
+<td>.../h×3</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables</code></td>
+<td>Spin 1/2</td>
+<td>h/2pi×8, hc×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><code>spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module</code></td>
+<td>Spin 0</td>
+<td>h/2pi×2, .../h×2, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><code>the-first-order-root-of-the-biquaternion-klein-gordon-operator</code></td>
+<td>Spin 0</td>
+<td>.../h×3, mc/h×2, h/2pi×2, hc×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><code>the-lagrangian-and-the-klein-gordon-equation</code></td>
+<td>Spin 0</td>
+<td>mc/h×2, .../h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><code>the-lagrangian-and-the-klein-gordon-equation-in-polar-variables</code></td>
+<td>Spin 0</td>
+<td>h/2pi×5, mc/h×2, .../h×2, hc×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><code>the-lagrangian-and-the-klein-gordon-equation-in-momentum-space</code></td>
+<td>Spin 0</td>
+<td>mc/h×1, h/2pi×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><code>the-lagrangian-and-the-spin-zero-fluid</code></td>
+<td>Spin 0</td>
+<td>hc×7, h/2pi×2, mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td><code>the-klein-gordon-equation-in-biquaternionic-form</code></td>
+<td>Spin 0</td>
+<td>.../h×14, hc×5, h/2pi×4</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td><code>the-klein-gordon-equation-in-biquaternionic-polar-variables</code></td>
+<td>Spin 0</td>
+<td>.../h×13, h/2pi×6, hc×6, mc/h×2, h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form</code></td>
+<td>Spin 0</td>
+<td>mc/h×4, h/2pi×3, .../h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><code>wave-particle-duality-and-the-three-positions-of-one-zero</code></td>
+<td>Spin 0</td>
+<td>h/2pi×10, hc×6, .../h×4, h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>wave-particle-duality-and-the-weight-of-a-level-set</code></td>
+<td>Spin 0</td>
+<td>hc×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><code>klein-gordon-fluid-equations-from-the-polar-action</code></td>
+<td>Spin 0</td>
+<td>h/2pi×2, mc/h×1, hc×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><code>the-spin-zero-fluid</code></td>
+<td>Spin 0</td>
+<td>h/2pi×5, .../h×4, hc×3, mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td><code>the-nodal-set-and-quantized-circulation</code></td>
+<td>Spin 0</td>
+<td>h/2pi×10, .../h×4, hc×4, mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><code>the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form</code></td>
+<td>Spin 0</td>
+<td>.../h×6, h/2pi×4, mc/h×2</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><code>the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-polar-variables</code></td>
+<td>Spin 0</td>
+<td>h/2pi×4, .../h×3, h/...×1, mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-fourier-transform-and-the-klein-gordon-equation-in-biquaternionic-form</code></td>
+<td>Spin 0</td>
+<td>mc/h×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><code>the-fourier-transform-and-the-klein-gordon-equation-in-biquaternionic-polar-variables</code></td>
+<td>Spin 0</td>
+<td>.../h×12, h/2pi×3, mc/h×1</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th style="text-align: right;">count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>h/2pi</code></td>
+<td style="text-align: right;">297</td>
+</tr>
+<tr>
+<td><code>.../h</code></td>
+<td style="text-align: right;">173</td>
+</tr>
+<tr>
+<td><code>h/...</code></td>
+<td style="text-align: right;">59</td>
+</tr>
+<tr>
+<td><code>mc/h</code></td>
+<td style="text-align: right;">77</td>
+</tr>
+<tr>
+<td><code>hc</code></td>
+<td style="text-align: right;">95</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td style="text-align: right;"><strong>701</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Every article of this category carries at least one site, which is what a category built on the free equations and their quantum apparatus must look like. The extremes are <code>the-three-wavenumbers-of-a-particle</code> (77, the three wave numbers themselves) and single-site articles such as <code>the-fourier-transform-and-the-proca-equation-in-biquaternionic-polar-variables</code> (1, the mass wave number).</p>
+<h3 id="85-the-particular-forces-after-free-of-force">8.5 The particular forces after Free of Force</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>category</th>
+<th style="text-align: right;">articles</th>
+<th style="text-align: right;">sites</th>
+<th style="text-align: right;">articles &gt; 0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primordial Force</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>Symmetry Breaking</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>Strong Force</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td>Electroweak Force</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td>The Standard Model Assembly</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Electromagnetism</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table></div>
+<p>Primordial Force in full, because three sites in twenty-nine articles is the smallest load in the corpus and the sharpest evidence that a particular force can be stated almost without the constant:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">sites</th>
+<th>article</th>
+<th>section</th>
+<th>forms</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-machinery-under-the-primordial-action-trace-curvature-ghosts-and-one-loop</code></td>
+<td>Generalities</td>
+<td>barred×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>an-introduction-to-flavour</code></td>
+<td>Generalities</td>
+<td>h/...×1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td><code>the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components</code></td>
+<td>Spin 0</td>
+<td>barred×1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="86-the-letter-that-is-not-the-constant">8.6 The letter that is not the constant</h3>
+<p>A naive grep over the corpus returns <strong>13,470</strong> occurrences of the letter $h$, of which 5,028 are the constant. The rest are five masked objects and two classes of bare letter:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th style="text-align: right;">occurrences</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hyperbolic</code></td>
+<td style="text-align: right;">2340</td>
+<td>the letter inside $\tanh$, $\cosh$, $\sinh$, $\coth$</td>
+</tr>
+<tr>
+<td><code>scripted</code></td>
+<td style="text-align: right;">2456</td>
+<td>a subscripted or primed $h$: $h_t$, $h'$, $h_x$, $h^{2}$ of a helicity</td>
+</tr>
+<tr>
+<td><code>vector</code></td>
+<td style="text-align: right;">985</td>
+<td>$\vec h$, the vector part of a state or a Bloch vector</td>
+</tr>
+<tr>
+<td><code>Cartan</code></td>
+<td style="text-align: right;">12</td>
+<td>$\mathfrak{h}$, the Cartan subalgebra</td>
+</tr>
+<tr>
+<td><code>step</code></td>
+<td style="text-align: right;">2</td>
+<td>$O(h^2)$, the step of a finite difference</td>
+</tr>
+<tr>
+<td>bare, classified</td>
+<td style="text-align: right;">1373</td>
+<td>$h(\cdot,\cdot)$ the Hermitian form, $(0,h)$ a coordinate, a scripted component written without a brace</td>
+</tr>
+<tr>
+<td>bare, unread</td>
+<td style="text-align: right;">1274</td>
+<td>residue, all outside the two free blocks</td>
+</tr>
+</tbody>
+</table></div>
+<p>Inside the two free blocks the residue was read in full: Relativity's 29 bare occurrences are 21 helicity, 5 the Hermitian form, 2 a Bloch-ball metric factor and 1 the radial scalar field; the pre-promotion Action's 2 are the grid step of the convergence table in <em>The Relativistic Particle and the Lagrangian</em>. None is the constant and none is a site.</p>
+<h2 id="9-re-running-and-what-failure-looks-like">9. Re-running, and what failure looks like</h2>
+<pre><code>python3 _reserve/py/audit-h-presence.py            # the structural table
+python3 _reserve/py/audit-h-presence.py --fine     # every site with its line
+python3 _reserve/py/audit-h-presence.py --rendered # the deployed HTML
+</code></pre>
+<p>A run is green when it prints <code>Biquaternion Universe Relativity 93 0 0</code>, <code>Action before the promotion: 24 articles, 0 sites</code>, and <code>first article in reading order with a site: ai-physics-review</code>. It is red when any of three things happens: a site appears in Relativity; a site appears before the promotion; the first site moves to an article that is not the promotion article within the chain. A fourth red is quieter and worth naming: the pre-promotion count stays zero while an article <em>before</em> the promotion quietly acquires a $\kappa$ that no longer matches the bridge — the site count cannot see a substitution done twice, so the gauge articles are read, not only counted.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
