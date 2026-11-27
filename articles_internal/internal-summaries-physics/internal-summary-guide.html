@@ -155,7 +155,7 @@
 <li><strong>The one-sentence version.</strong> One sentence, no display. What the agent quotes when it has room for one line.</li>
 <li><strong>How to use it.</strong> Optional, and only when the reading order matters. The universe summary names the sections to read first and the section of traps to read before writing.</li>
 </ul>
-<p><strong>Add the subsection table when the menu has subsections.</strong> Two columns, the subsection and what it settles. Thirteen of the fifteen summaries carry one, nine in that two-column form and four with an article count added; the two that omit it keep their sections in menu order. The table is cheap and it doubles as the skeleton.</p>
+<p><strong>Add the subsection table when the menu has subsections.</strong> Two columns, the subsection and what it settles. Thirteen of the fifteen summaries carry one, eight in that two-column form and five with an article count added; one of the two that omit it repeats the menu's subsection names as section titles, and the other is the exception named in §13. The table is cheap and it doubles as the skeleton.</p>
 <p><strong>Add three optional leads, and only when true.</strong> <em>The price</em>, when the category buys its result with an obstruction. <em>The discipline of the category</em>, when the classification of claims is the content, as in gravity. <em>A defect to record</em>, when the menu or the corpus is incomplete.</p>
 <h2 id="6-the-sections">6. The Sections</h2>
 <p><strong>The per-item grammar.</strong> Four moves, in this order, for every item that carries an irrecoverable line:</p>
@@ -231,7 +231,7 @@ model would not produce, and what it costs.
 </ul>
 <p><strong>What looks like content and is not.</strong> A boxed identity that restates a definition. A table of symbols already defined in the body. A paragraph whose only verb is <em>is</em>. Each costs the tokens of a sharp claim and buys nothing.</p>
 <h2 id="11-length-density-and-the-budget">11. Length, Density and the Budget</h2>
-<p><strong>Measured on the eighteen existing files.</strong> Sizes run from 15 KB to 72 KB, lines from 229 to 1000, numbered sections from 4 to 22, non-trivial claims from 4 to 77, boxed displays from 1 to 14, citation blocks from 4 to 22, total 7,318 lines.</p>
+<p><strong>Measured on the eighteen existing files.</strong> Sizes run from 15 KB to 72 KB, lines from 229 to 1000, numbered sections from 4 to 22, non-trivial claims from 4 to 77, boxed displays from 1 to 14, citation blocks from 4 to 22, total 7,342 lines.</p>
 <p><strong>Density is claim density, not article density.</strong> The electromagnetism summary gives every item a block and boxes eight displays for twenty-eight articles. The relativity summary gives the spine a block and the enumerations a table, at one hundred and one articles. The universe summary boxes nothing and carries sixteen sections of structure. Each is right for its claim count.</p>
 <p><strong>Budget rule.</strong> One block per irrecoverable claim, one line per article that carries no claim, one table per enumeration of more than four objects. Nothing else. A section that exceeds it is either over-written or is really two sections.</p>
 <p><strong>The floor is the acceptance test.</strong> A file that fails the test is too short, whatever its length. A file that repeats itself is too long, whatever its length.</p>
@@ -240,7 +240,7 @@ model would not produce, and what it costs.
 <ul>
 <li><strong>The trap of the abstract.</strong> Summarising the aim instead of the result. <em>Fix:</em> quote the result equation, then state the claim.</li>
 <li><strong>The trap of the pedagogic line.</strong> Writing for a human who needs easing. <em>Fix:</em> delete the easing, keep the claim.</li>
-<li><strong>The trap of the drift count.</strong> Trusting a stated number. <em>Fix:</em> recompute from the anchors or the file system.</li>
+<li><strong>The trap of the drift count.</strong> Trusting a stated number, or a remembered category. <em>Fix:</em> recompute — the count from the anchors, the category from the menu's <code>##</code> headings, and both at the time of writing. §13 is the check; a number or a title inherited from the last audit is not evidence.</li>
 <li><strong>The trap of the sample.</strong> Mapping a third of the boundary and claiming the category. <em>Fix:</em> the coverage grep, plus a sentence naming what is only a list and why.</li>
 <li><strong>The trap of the new proof.</strong> Adding a derivation not in the corpus. <em>Fix:</em> delete it, name the gap.</li>
 <li><strong>The trap of the promotion.</strong> Writing a transcribed result as derived. <em>Fix:</em> the claim ledger, line by line.</li>
@@ -257,7 +257,7 @@ model would not produce, and what it costs.
 <pre><code>awk '/^## /{sec=substr($0,4)} sec=="&lt;Category&gt;" &amp;&amp; /&lt;a href=/{print}' physics.md
 </code></pre>
 <p><strong>Step 2: count, and make the counts add.</strong> The article count is the number of anchors, written in words in the Introduction. The subsection counts must sum to it; a subsection that is empty of anchors is still named, and a category whose anchors sit above its first <code>###</code> is stated as such rather than folded into a subsection. Recompute at every write, never from the previous file, and recompute by subtraction as well: a residual "and the rest" is a number nobody has looked at.</p>
-<p><strong>Step 3: map the file onto the category, in one of two shapes.</strong> Default: the numbered sections follow the menu's subsections, one section per subsection, in menu order. Alternative, when the claims do not partition that way: cut the sections by claim, and put the alignment in the Introduction as a table — subsection, article count, the sections that serve it. The strong and electroweak files are cut that way; every subsection appears in their table, including the ones served by a single section, and a section that serves two subsections appears in two rows. The table is not decoration: it is the only sentence in the file that asserts the alignment, so it carries the menu's own counts and can be checked against step 2.</p>
+<p><strong>Step 3: the alignment is asserted, never left implied.</strong> Three forms, in descending order of strength. A table in the Introduction — subsection, article count, the sections that serve it — which is the norm, thirteen of the fifteen files; every subsection of the category appears in it, including the ones served by a single section, and a section that serves two subsections appears in two rows. Section titles that repeat the menu's subsection names in menu order, which is how the thermodynamics file carries all four of its subsections. Or menu order alone, acceptable only where the sections really are one per subsection. The table is not decoration: it is the only sentence in the file that asserts the correspondence, so it carries the menu's own counts and can be checked against step 2. A file cut by object, with no table and no ordered titles, has asserted nothing — the universe file is in that state, and its alignment is the one thing a reader cannot check.</p>
 <p><strong>Step 4: cover, and know what counts as a citation.</strong> A member is cited when its slug appears as <code>articles_physics/&lt;slug&gt;.md</code> or as a backticked bare slug. Prose mention without backticks does not count, because the grep is the reader and the grep cannot see it. Coverage is claim-optional and citation-mandatory: an article with no irrecoverable line belongs in a one-line list, and the list is a citation.</p>
 <p><strong>Step 5: diff in both directions, and read the two lists differently.</strong> <code>MISSING</code> is a hard failure: the file falls short of its category. Zero is the acceptance condition, and a non-zero count is a list to close, never a sentence to soften. <code>OUTSIDE</code> is a <em>report</em>, not a failure, and it is expected to be non-zero — a summary that records a cross-reference or a recorded exception has to name the article, and the family's current total is fifty-three. What is illegitimate is an <em>unclassified</em> reach: a slug outside the category that is neither an explicit cross-reference nor an exception recorded in the Introduction. Classify each line of the report; the count of outside entries is not a metric and must never be quoted as one.</p>
 <p>With a <code>map.txt</code> holding one <code>file&lt;TAB&gt;category</code> pair per line — a tab, because the category names carry spaces — the whole audit is one run:</p>
@@ -374,9 +374,9 @@ Biquaternion Universe Symmetry Breaking    BOUNDARY   34 CITED   34 MISSING   0 
 <td><code>…-non-relativistic-non-quantum-approximation.md</code></td>
 </tr>
 <tr>
-<td>Biquaternion Universe Relativistic Quantum Fluid Mechanics</td>
+<td>Biquaternion Universe Relativistic Quantum Fluid Physics</td>
 <td>45</td>
-<td><code>…-relativistic-quantum-fluid-mechanics.md</code></td>
+<td><code>…-relativistic-quantum-fluid-physics.md</code></td>
 </tr>
 <tr>
 <td>Biquaternion Universe Quantum Fields</td>
@@ -475,7 +475,7 @@ awk '{n=gsub(/\$/,"&amp;"); if (n%2) print NR": odd number of dollars"}' &lt;fil
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
-<p>For the genre: <code>internal-summary-of-the-biquaternion-electromagnetism</code> for the item grammar and the Source lines; <code>internal-summary-of-biquaternion-universe-relativity</code> for the closing three and the sharp claims; <code>internal-summary-physics-of-the-symmetry-breaking</code> for the cut and the subsection table; <code>internal-summary-of-the-biquaternion-universe-gravity-and-cosmology</code> for the claim ledger and the defect. For the prose and the conventions the summaries inherit: <code>conceptual-conventions</code> in this folder, then <code>product-and-form-conventions</code> and <code>index-and-notation-conventions</code> in <code>articles_physics</code>.</p>
+<p>For the genre: <code>internal-summary-of-the-biquaternion-electromagnetism</code> for the item grammar and the Source lines; <code>internal-summary-of-biquaternion-universe-relativity</code> for the closing three and the sharp claims; <code>internal-summary-physics-of-the-symmetry-breaking</code> for the cut and the subsection table; <code>internal-summary-of-the-biquaternion-universe-gravity-and-cosmology</code> for the claim ledger and the defect. For the boundary procedure itself: §13, whose run and failure lines are copied from the audit that closed the last re-cut. For the prose and the conventions the summaries inherit: <code>conceptual-conventions</code> in this folder, then <code>product-and-form-conventions</code> and <code>index-and-notation-conventions</code> in <code>articles_physics</code>.</p>
       </div>
     </main>
   </div>

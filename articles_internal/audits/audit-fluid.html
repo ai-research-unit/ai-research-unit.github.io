@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applied Migration: the Fluid Block and Its Two Articles Now Say &quot;Fluid Physics&quot; — Biquaternion Universe</title>
+  <meta name="description" content="Status of this file. APPLIED on 2026-11-27. The tree at dc73e8ae7 was read, measured, and then edited: 213 occurrences replaced, 3 files renamed, 3…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="applied-migration-the-fluid-block-and-its-two-articles-now-say-fluid-physics"><strong>Applied Migration: the Fluid Block and Its Two Articles Now Say "Fluid Physics"</strong></h1>
+<p><em>Status of this file.</em> <strong>APPLIED on 2026-11-27.</strong> The tree at <code>dc73e8ae7</code> was read, measured, and then edited: 213 occurrences replaced, 3 files renamed, 3 sitemaps rewritten. Nothing is committed, and the deploy folder has not been rebuilt. The corpus — <code>physics.md</code>, <code>maths.md</code>, <code>index.md</code>, <code>articles_physics/</code>, <code>articles_internal/</code>, <code>articles_maths/</code> — now contains <strong>zero</strong> occurrences of the old term outside citations of further readings.</p>
+<p><em>What this file is for.</em> It records what changed, in what order, with what evidence, so the change can be verified, reviewed, or reversed. It replaces the earlier review-mode audit, whose recommendation (label only) the author overrode in favour of the maximum migration.</p>
+<p><em>The decision, in five lines.</em></p>
+<ol>
+<li><strong>Maximum migration was instructed.</strong> Every section heading, category name, article title, slug, and body sentence was renamed; only cited works were left alone.</li>
+<li><strong>Three files were renamed</strong>, so two published URLs changed.</li>
+<li><strong>Thirteen citations and three verbatim quotations were preserved</strong> — a rename may not rewrite a book's title or another author's sentence.</li>
+<li><strong>The two dated-audit exceptions of the earlier plan were withdrawn</strong> by the same instruction; the audits now carry the new vocabulary.</li>
+<li><strong>One file still spells the old term: this one</strong>, in the reversal key at the end. A migration record that cannot name what it replaced cannot be undone.</li>
+</ol>
+<h2 id="1-what-the-instruction-changed">1. What the Instruction Changed</h2>
+<p>The earlier audit proposed three scopes and recommended the narrowest. The author chose the widest: no occurrence of the old discipline name anywhere in the physics and maths corpus, in article bodies as well as labels, with citations of further readings as the only exception. That turned the two open questions of the earlier plan — titles and slugs — from "keep" to "rename", and withdrew the rule that dated audits keep their date's vocabulary.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Question the author asked</th>
+<th>Answer applied</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rename sections?</td>
+<td><strong>Yes.</strong> The block heading and the <code>Ordinary Fluid Mechanics</code> subheading in <code>physics.md</code>, and the <code>Fluid Mechanics: The Observable With No Mode</code> heading in an internal note.</td>
+</tr>
+<tr>
+<td>Rename categories?</td>
+<td><strong>Yes.</strong> The menu block <em>Biquaternion Universe Relativistic Quantum Fluid Mechanics</em> became <em>… Fluid Physics</em>, and every reference and gloss to it followed.</td>
+</tr>
+<tr>
+<td>Rename article titles?</td>
+<td><strong>Yes.</strong> <em>Spin Fluid Mechanics in Biquaternionic Form</em> and <em>Causal Dissipative Fluid Mechanics in Biquaternionic Form</em>.</td>
+</tr>
+<tr>
+<td>Rename slugs?</td>
+<td><strong>Yes</strong>, because the corpus rule binds a title to its file name: <code>spin-fluid-physics-in-biquaternionic-form</code>, <code>causal-dissipative-fluid-physics-in-biquaternionic-form</code>.</td>
+</tr>
+<tr>
+<td>Rename article content?</td>
+<td><strong>Yes.</strong> Every body sentence, comment, table row, and cross-reference; plus the adjectives (<code>fluid-mechanical</code> to <code>fluid-physical</code>).</td>
+</tr>
+<tr>
+<td>Keep citations?</td>
+<td><strong>Yes.</strong> Nine Landau–Lifshitz <em>Fluid Mechanics</em> entries, Geisbauer's paper title, and three verbatim quotations from Visser's papers.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-the-counts">2. The Counts</h2>
+<p><strong>Before.</strong> 300 occurrences of the old term across 5,040 markdown files:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th style="text-align: right;">Occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_physics/</code></td>
+<td style="text-align: right;">133</td>
+</tr>
+<tr>
+<td><code>articles_internal/</code> (77 of them in the old audit)</td>
+<td style="text-align: right;">116</td>
+</tr>
+<tr>
+<td><code>articles_external/</code></td>
+<td style="text-align: right;">41</td>
+</tr>
+<tr>
+<td><code>physics.md</code></td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><code>articles_maths/</code>, <code>maths.md</code>, <code>index.md</code></td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td style="text-align: right;"><strong>300</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>After.</strong> 13 occurrences remain, all of them citations or quotations:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Where</th>
+<th style="text-align: right;">Occurrences</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_physics/</code> — nine Further Reading entries</td>
+<td style="text-align: right;">9</td>
+<td>Landau and Lifshitz, <em>Fluid Mechanics</em> (Pergamon, 1987)</td>
+</tr>
+<tr>
+<td><code>articles_external/Geisbauer/…</code></td>
+<td style="text-align: right;">1</td>
+<td>the paper's own title, <em>Inverted Relativistic Phase-Fluid Mechanics on Curved Spacetime</em></td>
+</tr>
+<tr>
+<td><code>articles_external/Visser Matt/</code> — three files</td>
+<td style="text-align: right;">3</td>
+<td>verbatim sentences quoted from the papers</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td style="text-align: right;"><strong>13</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Replaced: 213.</strong> Corpus 176, external cross-references 34, two adjectives, one editorial sentence in an external note. Plus 3 file renames and 6 sitemap URLs.</p>
+<p><strong>Files touched.</strong> 34 tracked source files modified (30 articles, <code>physics.md</code>, three sitemaps), 2 tracked articles renamed, the build stamp <code>build_state</code> rewritten, and 13 gitignored files in <code>articles_internal/</code> and <code>articles_external/</code> edited in place.</p>
+<h2 id="3-the-renames">3. The Renames</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>block, <code>physics.md:1919</code></td>
+<td><code>## Biquaternion Universe Relativistic Quantum Fluid Mechanics</code></td>
+<td><code>## Biquaternion Universe Relativistic Quantum Fluid Physics</code></td>
+</tr>
+<tr>
+<td>subheading, <code>physics.md</code></td>
+<td><code>### The Fluid Layer: Ordinary Fluid Mechanics</code></td>
+<td><code>### The Fluid Layer: Ordinary Fluid Physics</code></td>
+</tr>
+<tr>
+<td>article file</td>
+<td><code>spin-fluid-mechanics-in-biquaternionic-form.md</code></td>
+<td><code>spin-fluid-physics-in-biquaternionic-form.md</code></td>
+</tr>
+<tr>
+<td>article file</td>
+<td><code>causal-dissipative-fluid-mechanics-in-biquaternionic-form.md</code></td>
+<td><code>causal-dissipative-fluid-physics-in-biquaternionic-form.md</code></td>
+</tr>
+<tr>
+<td>summary file</td>
+<td><code>…-relativistic-quantum-fluid-mechanics.md</code></td>
+<td><code>…-relativistic-quantum-fluid-physics.md</code></td>
+</tr>
+<tr>
+<td>H1 of the spin article</td>
+<td><code># __Spin Fluid Mechanics in Biquaternionic Form__</code></td>
+<td><code># __Spin Fluid Physics in Biquaternionic Form__</code></td>
+</tr>
+<tr>
+<td>H1 of the dissipative article</td>
+<td><code># __Causal Dissipative Fluid Mechanics in Biquaternionic Form__</code></td>
+<td><code># __Causal Dissipative Fluid Physics in Biquaternionic Form__</code></td>
+</tr>
+<tr>
+<td>sitemaps, three files</td>
+<td>2 URLs each</td>
+<td>2 URLs each, renamed</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Web addresses changed:</strong></p>
+<pre><code>/articles_physics/spin-fluid-mechanics-in-biquaternionic-form.html
+  → /articles_physics/spin-fluid-physics-in-biquaternionic-form.html
+/articles_physics/causal-dissipative-fluid-mechanics-in-biquaternionic-form.html
+  → /articles_physics/causal-dissipative-fluid-physics-in-biquaternionic-form.html
+</code></pre>
+<h2 id="4-what-was-deliberately-not-changed">4. What Was Deliberately Not Changed</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Kept</th>
+<th style="text-align: right;">Count</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>*Fluid Mechanics*</code> in Further Reading</td>
+<td style="text-align: right;">9</td>
+<td>a book's title; renaming it would falsify the citation</td>
+</tr>
+<tr>
+<td>Geisbauer, <em>Inverted Relativistic Phase-Fluid Mechanics…</em></td>
+<td style="text-align: right;">1</td>
+<td>a paper's title</td>
+</tr>
+<tr>
+<td>Three Visser quotations</td>
+<td style="text-align: right;">3</td>
+<td>another author's sentences, quoted between quotation marks</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two neighbouring terms were left alone because they are not the term the instruction named: <strong><code>fluid dynamics</code></strong> (22 occurrences, almost all inside quoted paper titles such as <em>Relativistic fluid dynamics with spin</em>), and <strong><code>hydrodynamics</code></strong>, which appears in the filenames and titles of the external papers.</p>
+<h2 id="5-consequences-that-need-a-follow-up">5. Consequences That Need a Follow-Up</h2>
+<ol>
+<li><strong>Two URLs now 404.</strong> <code>build.py</code>'s <code>prune_orphans()</code> deletes any deployed page whose source has gone, and it has no redirect mechanism (verified: no redirect code in <code>build.py</code>). Host-level redirects for the two old paths are the only way to keep inbound links alive. This is the same unpaid debt the 2026-11-25 record logged.</li>
+<li><strong>The deploy folder is stale.</strong> It still holds the two old pages and the old wording on 34 pages. <code>build_diff.py</code> is the incremental route: it rebuilds only pages whose <code>.md</code> is newer, and prunes the two orphans.</li>
+<li><strong>Third-party quotations in <code>articles_external/</code> are unchanged.</strong> That folder records other people's papers; their sentences stay as written. Only our own cross-references into it were updated.</li>
+<li><strong>Inbound links from outside the corpus are unmeasurable from this tree.</strong></li>
+</ol>
+<h2 id="6-verification">6. Verification</h2>
+<p>Measured after the edit, over <code>physics.md</code>, <code>maths.md</code>, <code>index.md</code>, <code>articles_physics/</code>, <code>articles_internal/</code>, <code>articles_maths/</code>, excluding this file:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>occurrences of the old term in the corpus</td>
+<td>9 — the Landau–Lifshitz entries only</td>
+</tr>
+<tr>
+<td><code>fluid physics</code> in the block heading</td>
+<td>1</td>
+</tr>
+<tr>
+<td>block categories in <code>physics.md</code></td>
+<td>15 (unchanged)</td>
+</tr>
+<tr>
+<td>menu links into <code>articles_physics/</code></td>
+<td>727 (unchanged)</td>
+</tr>
+<tr>
+<td>links to the two renamed slugs, markdown and HTML</td>
+<td>33, all resolving</td>
+</tr>
+<tr>
+<td>links to the two old slugs</td>
+<td>0</td>
+</tr>
+<tr>
+<td>title and file name agree, both renamed articles</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>summary file renamed</td>
+<td>yes; no reference to the old name outside this file</td>
+</tr>
+<tr>
+<td>sitemap URLs updated</td>
+<td>6 of 6</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="7-reversal-key">7. Reversal Key</h2>
+<p>To undo, reverse each rule in this order. The old spellings appear here and nowhere else in the corpus.</p>
+<pre><code>fluid-physics-in-biquaternionic-form      → fluid-mechanics-in-biquaternionic-form
+Spin Fluid Physics in Biquaternionic Form → Spin Fluid Mechanics in Biquaternionic Form
+Causal Dissipative Fluid Physics in Biquaternionic Form → Causal Dissipative Fluid Mechanics in Biquaternionic Form
+Biquaternion Universe Relativistic Quantum Fluid Physics → Biquaternion Universe Relativistic Quantum Fluid Mechanics
+Fluid Physics: The Observable With No Mode → Fluid Mechanics: The Observable With No Mode
+The Fluid Layer: Ordinary Fluid Physics   → The Fluid Layer: Ordinary Fluid Mechanics
+fluid-physical                            → fluid-mechanical
+fluid physics                             → fluid mechanics
+Fluid Physics                             → Fluid Mechanics
+</code></pre>
+<p>Then rename the three files back and reverse the six sitemap URLs. The nine <code>*Fluid Mechanics*</code> citations and the Geisbauer title are untouched and need no rule.</p>
+<h2 id="8-summary-of-notation">8. Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>term</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the migration</td>
+<td>the 213 replacements, 3 renames, and 6 sitemap URLs of 2026-11-27</td>
+</tr>
+<tr>
+<td>the preserved citations</td>
+<td>nine Landau–Lifshitz entries, one Geisbauer title, three Visser quotations: 13 occurrences</td>
+</tr>
+<tr>
+<td>the corpus</td>
+<td><code>physics.md</code>, <code>maths.md</code>, <code>index.md</code>, <code>articles_physics/</code>, <code>articles_internal/</code>, <code>articles_maths/</code></td>
+</tr>
+<tr>
+<td>the reversal key</td>
+<td>§7: the only place in the corpus where the old spelling survives</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="files-changed">Files Changed</h2>
+<ul>
+<li><code>physics.md</code> — the block heading, the subheading, the two article links, the block glosses, and the comments.</li>
+<li><code>articles_physics/</code> — 30 modified files; 2 renamed; 9 citations untouched.</li>
+<li><code>articles_internal/</code> — the overview, the guide, two summaries, the quantum-field-theory note, five audits, three working notes; 1 summary file renamed.</li>
+<li><code>articles_external/</code> — 16 conversion files: our cross-references updated, third-party quotations preserved.</li>
+<li><code>sitemap_github.xml</code>, <code>sitemap_gitlab.xml</code>, <code>sitemap_codeberg.xml</code> — 2 URLs each.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
