@@ -4,9 +4,13 @@
 
 **What this page is.** The sixteen articles that turn the corpus's classical actions into a quantum field theory, in the order in which the operation is performed. Each of them imports the standard quantisation and applies it to the biquaternion form; none of them derives it. The page exists so that the import is visible as a list and not read as a derivation.
 
+**The sixteen are not a block.** They are distributed, because an import is bound to what it imports: the six canonical quantisations sit in the band of the field each one quantises, the ladder and the objects sit together at no particular carrier, and the group flow sits with the classical apparatus it continues. This page is the index of that distribution — the one place where the sixteen can be read in order — and every link below leads to the section that owns the article. A reader who wants the promotion as a section of the corpus starts at *From the Field Equation to the Quantum Field*, the last section but one of *Biquaternion Universe Action*.
+
 **The order matters.** The bracket comes first, then the ladder, then the vacuum and the state space, then the objects built on them: the Wick theorem, the functional integral, the generating functional, the determinant, the S-matrix, LSZ, the spin–statistics theorem and the group flow. A reader who starts at the S-matrix will not know which of the sixteen carries the postulate.
 
 **Where the postulate sits.** In the six canonical-quantisation articles, and nowhere else. They write $[\hat\xi_{\mathrm{pot}},\hat\pi]=i \frac{h}{2\pi}\delta$, and the other ten use the result. The classical half of that equation is the family's, and [The Lagrangian and the Second Quantisation](the-lagrangian-and-the-second-quantisation.html) derives it from the action.
+
+**Where each of the sixteen sits.** The six quantisations are in the spin band of their carrier: Maxwell and Proca in *Biquaternion Universe Electromagnetism* and *Biquaternion Universe Relativistic Quantum Theory*, Dirac and Klein–Gordon in *Biquaternion Universe Relativistic Quantum Theory*, Rarita–Schwinger there too, the graviton in *Biquaternion Universe Gravity and Cosmology*. The ladder — vacuum, Fock space — and the objects — Wick, the functional integral, the determinant, the generating functional, the S-matrix and LSZ — are in *From the Field Equation to the Quantum Field*. The spin–statistics theorem is there as well, because it is a statement about the bracket and not about a field. The renormalization group is in *From the Action to the Field Equation*, where the running of a coupling is a classical continuation.
 
 ## The Six Quantisations
 
@@ -43,7 +47,7 @@
 
 ## Summary
 
-Sixteen articles, four groups. The six quantisations carry the postulate; two build the ladder and the state space; eight build the objects every computation uses. The corpus quantises by import, and the page states the import rather than concealing it.
+Sixteen articles, four groups, five sections of the corpus. The six quantisations carry the postulate and each sits with its carrier; two build the ladder and the state space; eight build the objects every computation uses, seven of them stated once at no particular carrier. The corpus quantises by import, and the page states the import rather than concealing it.
 
 ## Summary of Notation
 

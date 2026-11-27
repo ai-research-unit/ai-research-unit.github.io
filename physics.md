@@ -469,6 +469,15 @@
 
 #### Thermality
 
+<!-- the parameter, stated twice because there are two ways to state it. Geometrically it is the radius of the
+     ball and the rapidity of a boost; algebraically it is the period of the modular flow, the Tomita–Takesaki
+     generator being the Hamiltonian the Gibbs weight is built from. The two statements are one object, and the
+     corpus keeps them here together rather than splitting them, because a reader who has only the geometric
+     one cannot say why the temperature is a period and a reader who has only the algebraic one cannot say
+     which boost. The five articles after the geometric five are the algebraic statement: the KMS condition that
+     fixes the period, the $k_B$ that converts it into a time, the modular theory that produces the flow, the
+     modular Hamiltonian that generates it, and the hypothesis that the flow is the time. -->
+
 <a href="articles_physics/impurity-in-a-boosted-frame.html">Impurity in a Boosted Frame: The Invariant and the Read Value</a>
 <!-- the congruence as an action on the cone and not on the slice, with $t'=\cosh\theta+s_{\parallel}\sinh\theta$ to $1.3\times10^{-13}$; $N$ of the element invariant to $4.1\times10^{-15}$ as the exact mirror of $m^{2}$; the read impurity $N'=N/t'^{2}$ to $2.5\times10^{-16}$; the closed form $\tfrac14\operatorname{sech}^{2}(\Theta-\theta)$ along the axis, maximised at $\theta=\Theta$ where it is $\tfrac14$ exactly; the bound $N'\le\tfrac14$ with equality only at the centre; the Möbius law $z'=(z+t)/(1+zt)$ and its failure off the axis, where the formula nonetheless holds; no boost purifies the object while every strong boost purifies the reading. -->
 
@@ -483,6 +492,21 @@
 
 <a href="articles_physics/the-thermal-circle-inverse-temperature-is-an-inverse-time.html">The Thermal Circle: Inverse Temperature Is an Inverse Time</a>
 <!-- the thermal state as the congruence of the centre by $e^{-\beta\tilde H/2}$, the Gibbs path as the radial segment from the maximally mixed state to a pure one, and the semigroup that generates it; the continuation $\beta\mapsto i\tau$, the $*$-unitary flow it produces, its period $2\pi/\omega$ and the thermal circle of circumference $\beta$; inverse temperature as an inverse time; the two limits as the two exceptional loci; the absence of the circle on the material slice, where the flow is a boost. -->
+
+<a href="articles_physics/the-kms-condition-and-the-biquaternion-framework.html">The KMS Condition and the Biquaternion Framework</a>
+<!-- the KMS condition; the material sector and its intrinsic imaginary time; the KMS condition in the biquaternion framework; directions for future work. -->
+
+<a href="articles_physics/the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: k_B as the Scale of Imaginary Time</a>
+<!-- answers the question "Is $k_B$ a scale of the same kind as $c$?"; the local complex structure recalled as a fixed algebraic direction with one real positive local scale $c$, so $c$ is required by the algebra to give the norm a length; the thermal structure read on the same direction with the scale $\beta=\hbar/(k_BT)$, pointwise as $\beta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, global only in equilibrium, with the exact identity $c\beta=\hbar c/(k_BT)$; the parallel (a fixed direction with one local real scale) and the disanalogy (an algebra scale against a state scale), the verdict being that a local thermal structure exists on the field of states and not on the manifold — a pointwise period, not a pointwise metric; the checkable consequence, Tolman's law $T\sqrt{-g_{00}}=\text{const}$ on the framework's $g_{00}=-c^2$, giving $Tc=\text{const}$ and $T\propto1/c\propto n$, so the local temperature tracks the local light speed; the Unruh and Hawking temperatures as the corpus's two established local temperatures and the thermal circle with the Matsubara frequencies as the spectrum of the same algebraic direction read with the state's scale; the relation to the Wick rotation; what is established, what is interpretation, what is open. physical readings. -->
+
+<a href="articles_physics/the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html">The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework</a>
+<!-- the Tomita–Takesaki construction; why the hypotheses are load-bearing; the modular flow as the KMS flow; the finite-dimensional realisation in the biquaternion algebra; the biquaternion candidate for $S$; the type of the algebra and inner versus outer modular flow. -->
+
+<a href="articles_physics/the-modular-hamiltonian-in-biquaternionic-form.html">The Modular Hamiltonian in Biquaternionic Form</a>
+<!-- the generator of the modular flow; the modular Hamiltonian in the biquaternion algebra; verification that $\tilde K$ generates the modular flow; the trace formula and the Gibbs form; whether the modular Hamiltonian is local. -->
+
+<a href="articles_physics/thermal-time-and-the-modular-flow-in-the-biquaternion-framework.html">Thermal Time and the Modular Flow in the Biquaternion Framework</a>
+<!-- the modular flow; the thermal time hypothesis; the modular flow of a biquaternion state; thermal time in the framework; the field case. -->
 
 #### The comparison and the open programme
 
@@ -506,21 +530,33 @@
      then performs the five-step derivation under it, once, at no particular group: the action, the polar word, the type
      decomposition with one equation per coordinate, the order reduction that puts a force in the derivatives of the
      phase's equation, and the base-versus-internal test that decides whether the result is a law or a balance. *From the
+     Fluid Equations to Thermodynamics Equations* then closes that fluid into a substance: the thermal parameter and the
+     state it selects, the three tests that decide whether the closure is local — determinacy, consistency and
+     integrability — and the departures when a test fails. It changes no band's equation; it reads the band's fluid
+     thermally, which is why its rung follows the fluid slot and is empty until that slot is filled. *From the
      Fluid to the Force* takes the last two steps and states them as their own subject: what differentiating a first-order
      transport law produces, why a matrix-valued charge forces a commutator in place of a pairing, and what a force block
-     owes in inventory. **The Lagrangian is the premise, the criterion is what grades the result, the skeleton section is
-     the method, and the section on the other side is its output.** Every sector below — primordial, strong, electroweak,
-     electromagnetic — is a declension of that skeleton, and a declension either passes all five steps or names the step it
-     breaks.
+     owes in inventory. *From the Field Equation to the Quantum Field* is the second continuation of the same equation and
+     is independent of the fluid one: the promotion of the bracket to a commutator, stated as a postulate imported once
+     and used afterwards, then the ladder the postulate needs, the objects built on the ladder, the three results read off
+     the measure, and the promotion applied to the connection. It carries no carrier of its own; the six canonical
+     quantisations sit in the band of the field each one quantises, in *Biquaternion Universe Relativistic Quantum Theory*
+     and in the sectors, and the section's hub article is the index that says which carrier took which. **The Lagrangian is
+     the premise, the criterion is what grades the result, the skeleton section is the method, the section on the other
+     side is its output, the thermodynamics is what turns that output into a substance, and the promotion is what every
+     sector's quantum apparatus imports.** Every sector below — primordial, strong, electroweak, electromagnetic — is a
+     declension of that skeleton, and a declension either passes all five steps or names the step it breaks.
 
      The chain is stated at no particular group so that it specialises to the $\mathrm{SU}(4)$ instance below and not away
      from it. A reader who meets the apparatus inside a sector reads it with that sector's notation already doing work; the
      generic sections are read first for that reason.
 
-     The quantum apparatus this chain needs is not here. The functional integral, its determinant, the index count, the
-     orbit read as redundancy, and the Yang–Mills path integral with Faddeev–Popov sit in *Quantum Fields*; the classical
-     chain does not depend on any of them, and the dependency runs the other way. The $\mathrm{SU}(4)$ instance of the same
-     machinery — the trace, the curvature and the ghosts — is stated once in *The Machinery Under the Primordial Action*,
+     The quantum apparatus this chain needs is a section of its own, the second continuation, and it is not part of any
+     of the arrows above. The functional integral, its determinant, the index count and the orbit read as redundancy sit
+     in *From the Field Equation to the Quantum Field* below, and the Yang–Mills path integral with Faddeev–Popov sits in
+     the strong sector, where the procedure is instantiated; the classical chain does not depend on any of them, and the
+     dependency runs the other way. The $\mathrm{SU}(4)$ instance of the same machinery — the trace, the curvature and the
+     ghosts — is stated once in *The Machinery Under the Primordial Action*,
      in the category *Biquaternion Universe Primordial Force*, and is not repeated here. -->
 
 ### The Lagrangian
@@ -584,6 +620,9 @@
 <a href="articles_physics/particle-spins-in-the-biquaternion-algebra-three-carriers-their-meaning-and-their-order.html">Particle Spins in the Biquaternion Algebra: Three Carriers, Their Meaning and Their Order</a>
 <!-- the three carriers and the criterion of cost; the real vector part as the seat of the algebra's non-commutativity, with the commutator closing on it and the product failing, and its adjoint rotation of weights $+1$, $0$, $-1$; the ideal as a frame, irreducible, four real dimensions, and moved by conjugation to a distinct ideal; the centre as the commutant, fixed pointwise; then the same order read on the particles, bosons on the vector part, fermions on the ideal, scalars as an invariant or a rotor, with the third polarization, the count $4=4$ and the graviton's symmetric square; and the limits, including the menu's $67$, $115$, $110$ and $15$ entries. -->
 
+<a href="articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a>
+<!-- spectral triples and their axioms; the biquaternion candidate in cells; the order of the gradient commutator, the first-order condition and the grading; the real structure and the KO-dimension; the spectral dimension and the heat kernel; the distance formula and the metric as output; inner fluctuations, connection fields and the spectral action; the almost-commutative triple and the finite geometry; what is established and what is interpretation; the gamma formulation. -->
+
 ### From the Field Equation to the Fluid
 
 <!-- the skeleton itself, stated once at no particular group and then taken apart step by step. The first entry is the test
@@ -621,14 +660,126 @@
 <a href="articles_physics/base-valued-versus-internal-flow-velocity-a-test-separating-force-laws-from-momentum-balances.html">Base-Valued versus Internal Flow Velocity: A Test Separating Force Laws from Momentum Balances</a>
 <!-- S5 as its own subject: the one-line test — is the velocity a section of the base's own tangent bundle — and the three ways a force slot is then filled, differentiated at the gradient rungs, projected at the frame rungs, read off the field equation at the matrix rung; why an internal velocity has no material derivative, hence no worldline, hence no $F=ma$, and why the result is a balance and not a weaker law; and the explicit warning that the discriminator is where the velocity lives and not whether the group is abelian, Wong's own non-abelian equations being the proof. -->
 
+### From the Fluid Equations to Thermodynamics Equations
+
+<!-- the closure of a fluid into a substance, stated once and applied in each band's fluid slot. The input is
+     the band's own fluid data — a density, a frame and whatever pressure its action supplies — together with the
+     thermal parameter $\Theta=\beta\lvert\vec h_\Psi\rvert$; the output is the local thermal state and the
+     identities that make it one. The test is the fluid criterion's thermal twin, three requirements that can each
+     fail: determinacy, which holds exactly for a rigid flow and to zeroth order in the expansion otherwise;
+     consistency, which needs Euler's and Gibbs–Duhem's relations at the event and in the corpus's variable $\beta$,
+     where the sign of the derivative is the one a reader gets wrong; and integrability, which needs one potential
+     per proper volume and is what a fitted equation of state violates. The definition of thermality is not
+     restated here: the parameter, the rapidity, the bound and the circle are `#### Thermality` in *Biquaternion
+     Universe Relativity*, and this section cites them. What the general theory contributes is two results of its
+     own — the count of independent local data, which is the standard one only because the entropy is not a field,
+     and the quantum part of the pressure, which fails determinacy in a stated way at a stated order, the failure
+     being the content rather than the defect. The band's slot follows its fluid slot and carries the instance; it
+     is emitted in the six bands that have fluid equations and will be emitted in the others as they acquire them.
+     The order is the order of the closure: the state, the bridge that makes it local data, the closure and its
+     tests, the departures when the tests fail, and the ledger. -->
+
+#### The State and Its Functionals
+
+<!-- the thermal state as an object, before it is a fluid: the partition function as a trace and what the
+     trace discards; the Gibbs state, its convergence and its relation to the equilibrium thermodynamics; the
+     Matsubara circle, where imaginary time has period $\beta$ and the lattice discretises the circle; the same
+     trace taken in a moving frame; and the Schwinger–Keldysh contour, the one formalism here that keeps a real-time
+     history and is therefore the one that can be read kinetically. What the algebra supplies is the central scalar
+     and the direction of the trace; what it does not supply is a spectrum, and no temperature is derived in this
+     subsection. -->
+
+<a href="articles_physics/the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>
+<!-- the partition function and the thermal state; the trace as a scalar extraction; the thermal operator and the partition function; what the trace discards; imaginary time and where the material sector enters; whether there is a genuine modification.  The logarithm of the norm is read as a chemical potential, the total potential being $\log\lvert N\rvert+V$. -->
+
+<a href="articles_physics/quantum-thermodynamics-in-biquaternionic-form.html">Quantum Thermodynamics in Biquaternionic Form</a>
+<!-- the Gibbs state and the convergence of $Z$; thermodynamic quantities as functionals of the state; the variational characterisation; Legendre structure and thermodynamic identities; low- and high-temperature limits; the KMS condition as the characterisation of the same state. -->
+
+<a href="articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a>
+<!-- material time and the thermal circle; the Matsubara frequencies and the thermal propagator; the partition function and the free energy; Matsubara sums and thermal factors; the Matsubara Green's function and its continuation; finite-temperature Feynman rules.  The computation is done in the material sector: the wave biquaternion is $i\omega_ne_0+\mathbf p\in\mathbb{B}_{\Phi}$, the mass-shell operator is the Hermitian form of that element (positive) and not the biquaternion norm (indefinite), and the thermal correlator's positivity is the Bochner theorem at the central root $\rho=i$, the root of the kernel $e^{i\omega_n\tau}$. physical readings. -->
+
+<a href="articles_physics/equilibrium-partition-function-in-a-moving-frame.html">Equilibrium Partition Function in a Moving Frame</a>
+<!-- the thermal state read in a frame where $\tilde V_\Phi=\gamma(ic\,e_t+\vec v)$; what the boost does to $Z$ and to the temperature; the rest-frame object of the partition-function article as the special case; transcription. -->
+
+<a href="articles_physics/the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a>
+<!-- the closed-time-path contour and the doubled fields; the branch doubling and the algebra's doubling; the Keldysh rotation and the matrix of Green's functions; equilibrium and the fluctuation–dissipation relation; the Kadanoff–Baym equations; the contour generating functional. -->
+
+<a href="articles_physics/the-discrete-lattice-and-the-thermal-circle.html">The Discrete Lattice and the Thermal Circle</a>
+<!-- the comparison of the corpus's two disciplines of discreteness: the algebraic lattice of orders and finite groups of invertibles inside the compact real unit sphere $Sp(1)$, and the thermal lattice of Matsubara frequencies $\omega_n=2\pi n/\beta$ dual to the compact imaginary-time circle. The one principle: every discreteness in the corpus is the Pontryagin dual of a compactness, tabled in four instances — the compact central phase (integer charge), the compact internal group $U(2)$ (internal labels), the compact thermal circle (the Matsubara spectrum) and the compact unit sphere (the finite groups of invertibles and the orders). The meeting point: the thermal circle is the central phase compactified, so the discrete thermal spectrum and the discrete charge are two characters of one compact phase; the difference: the algebraic lattice is a finite *subgroup*, the thermal lattice an infinite *character group*, stated side by side and not conflated; and the named gap, a thermal reading of the orders, recorded as open and not proposed as a formula. physical readings. -->
+
+#### The Kinetic Bridge
+
+<!-- the two articles that turn a state into something a fluid can be read from: the Wigner object, whose
+     marginals are the density and the current, and the $\hbar$-expansion of the same object, whose classical drift
+     is a transport law and whose order-$\hbar^{2}$ corrections are the quantum force. The bridge is placed before
+     the closure because the closure's input is exactly these marginals, and because the quantum pressure of the
+     band slots is the same object seen at a point. -->
+
+<a href="articles_physics/the-wigner-function-in-biquaternionic-form.html">The Wigner Function in Biquaternionic Form</a>
+<!-- the biquaternionic $W$ defined against the standard $x$-$p$ Wigner function; the marginals as density and current; what the algebra supplies and what is imported. -->
+
+<a href="articles_physics/relativistic-wigner-function-and-quantum-kinetics.html">Relativistic Wigner Function and Quantum Kinetics</a>
+<!-- the $\hbar$-expansion of the Wigner object; the classical drift and the corrections at order $\hbar^{2}$; the kinetic equation cited from the Schwinger-Keldysh article rather than repeated. -->
+
+#### The Local Thermal State and the Three Tests
+
+<!-- the closure itself: the local state as a triple with the temperature that selects it, and the count
+     that says the entropy and the chemical potential are not independent fields; the split of the pressure into a
+     thermal part that obeys the identities and a quantum part that does not; the three tests, each stated so that
+     it can fail; Gibbs–Duhem's relation in the corpus's variable with its sign; the potential behind the response
+     functions, whose absence is what a fitted equation of state hides; and Tolman's law, which is the statement
+     that the temperature is a field and that in equilibrium it trades against the local light speed. -->
+
+<a href="articles_physics/the-local-thermal-state-of-a-fluid.html">The Local Thermal State of a Fluid</a>
+<!-- $\rho_{\mathrm{num}}(x)$, $p_{\mathrm{th}}(x)$ and $\tilde V_\Phi(x)$ at the pointwise temperature; the flow written as the element, low index; what a local equation of state requires. -->
+
+<a href="articles_physics/the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>
+<!-- $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ in the proper density and $\beta$; $\beta$ as the circumference of the imaginary-time circle, a length; the gradient correction to the pressure. -->
+
+<a href="articles_physics/the-local-entropy-current.html">The Local Entropy Current</a>
+<!-- $\tilde J_{\Phi,\mathrm{ent}}$, declared Hermitian; the entropy production $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}})\ge0$; the second law as one divergence. -->
+
+<a href="articles_physics/covariant-local-equilibrium-and-tolman-temperature.html">Covariant Local Equilibrium and Tolman Temperature</a>
+<!-- the rigidity condition on the velocity components, $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0$; the pointwise temperature of the local-thermal-structure article shown to satisfy it; Tolman's law quoted, not re-derived. -->
+
+#### The Departures from Equilibrium
+
+<!-- what the closure costs when its assumptions are dropped: the Israel–Stewart corrections and the
+     causal propagation they buy; the spin polarization as a second thermodynamic variable with its own conjugate
+     potential, and the conjugate relation that fails off equilibrium; the Frenkel and Weyssenhoff conditions as the
+     statement of which spin current is the physical one; and the two-fluid model, where one substance has two
+     velocities and a mutual friction. None of these is a new law: each is the first-order correction of a closure
+     written without it, which is why they sit after it and not in it. -->
+
+<a href="articles_physics/causal-dissipative-fluid-physics-in-biquaternionic-form.html">Causal Dissipative Fluid Physics in Biquaternionic Form</a>
+<!-- Israel-Stewart-type corrections; the relaxation time and causal propagation; positivity and stability as the closing section; transcription. -->
+
+<a href="articles_physics/spin-fluid-physics-in-biquaternionic-form.html">Spin Fluid Physics in Biquaternionic Form</a>
+<!-- the spin polarization tensor and $\mu_{\mathrm{spn}}$; rotational flow and spin gradients coupled; spin diffusion and relaxation; the warning that $\partial p/\partial\omega_{\lambda\nu}\neq S^{\mu\nu}$. -->
+
+<a href="articles_physics/spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a>
+<!-- the spin tensor's conservation law from the rotor's own equation of motion; the Frenkel and Weyssenhoff conditions; what the algebra supplies that the tensor form does not; framework content, not transcription. -->
+
+<a href="articles_physics/the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a>
+<!-- $\tilde V_{\Phi,\mathrm{sup}}$ and $\tilde V_{\Phi,\mathrm{nrm}}$; the condensate that carries no entropy and the normal component that does; mutual friction; the zero-temperature limit as the pure-state fluid. -->
+
+#### The Ledger
+
+<!-- what the section derives and what it assumes: which identities are theorems here and which are
+     quoted; the quantum part's failure of determinacy, kept as content; what each of the six bands with a fluid
+     slot owes at its own rung; and the questions left open, so that the next article need not re-argue where this
+     one stopped. -->
+
+<a href="articles_physics/the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.html">The Thermodynamics of a Quantum Fluid: Status of the Derivation</a>
+<!-- the ledger; framework content against the four transcription articles — the moving-frame partition function, the curved-spacetime KMS, the Tolman temperature and the causal dissipative fluid — which carry their source's argument and not this section's; the two modular-Hamiltonian articles, now one geometric and one gravitational, still unmerged; the questions the section leaves open, and why it stops where it does. -->
 
 ### From the Fluid to the Force
 
 <!-- the last two steps of the skeleton taken as their own subject, because the force is what every sector
      below is named for and the general form is nowhere stated as a generality. The balance and its three
      terms, the operation that a matrix-valued charge forces in place of a pairing, and the inventory a force
-     block owes. Read after the five steps and before any sector, because a sector's force article assumes
-     all three. -->
+     block owes. Read after the five steps and after the thermodynamic closure, and before any sector, because a
+     sector's force article assumes all three. -->
 
 <a href="articles_physics/differentiating-a-first-order-transport-law-force-transport-and-product-rule-terms.html">Differentiating a First-Order Transport Law: Force, Transport and Product-Rule Terms</a>
 <!-- the second arrow's general form: differentiate a first-order transport law once and exactly three kinds of term appear — the acceleration (second order in the transported quantity), the transport (the flow carrying, which becomes the commutator when the quantity is matrix-valued), and the product rule (the flow's own variation times the quantity); the three tests that separate them — the vanishing test, the uniform-inertia test, the uniform-flow test — and the honest statement that a fourth, gauge invariance, does not discriminate because the product-rule term is built from gauge-covariant objects; the corpus's one recorded error, a product-rule term displayed as a force term, with what made it invisible in every configuration and what caught it; the five-line checklist whose fifth line asks that a display state each term's kind and not only its position; and the boundary of the classification, with the source's rate named as a fourth kind outside it. -->
@@ -638,15 +789,161 @@
 ho_k-
 ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from Wong as a logical chain; and the six-line inventory a force block owes its reader, ending with the verdict. -->
 
+### From the Field Equation to the Quantum Field
+
+<!-- the second continuation of the field equation, beside the fluid one: where *From the Field Equation to the Fluid*
+     reads the equation as five fluid data and the obstructions to a wave reading, this section reads the same
+     element as a field operator and states the promotion that makes it one. The two continuations are independent —
+     neither presupposes the other — and both presuppose the same premise, the action of the section above. The
+     order of the section is the order of the operation: the postulate and its ledger, the ladder the postulate
+     needs, the objects built on the ladder, the three results read off the measure, and the promotion applied to the
+     connection. The deposit is deliberate: the algebra supplies the module, the grading and the direction of every
+     import, and supplies no ladder, no vertex and no Standard Model; each subsection names its own residue. The six
+     canonical quantisations are not here — they sit in the band of the carrier they quantise, in *Biquaternion
+     Universe Relativistic Quantum Theory* and in the sectors — and the hub below is the index that says which
+     carrier took which. -->
+
+#### The Postulate and the Ledger
+
+<!-- the promotion, stated as what it is: a postulate imported once and used afterwards. The four steps of a
+     second quantisation — the Peierls bracket from the Green functions, the Dirac bracket where the system is
+     constrained, the promotion of that bracket to a commutator, and the representation of the resulting algebra on
+     a Fock space — are written out in order, and the ledger records which of the four the corpus performs and
+     which it assumes. The hub is the index of the operation: the six canonical quantisations that carry the
+     postulate, the two ladder articles, and the eight objects every later computation uses. It is an index and
+     not a category: of its sixteen, ten are here — the two ladder articles and seven of the objects in this
+     section, the renormalization group in the section above — and six sit in the band of their carrier. The hub
+     says where each one went. Nothing here is derived from the algebra, and the section states the import
+     rather than concealing it; what the algebra does supply is the direction of every promotion, and that is the
+     one thing a generic quantum field theory cannot state. -->
+
+<a href="articles_physics/the-lagrangian-and-the-second-quantisation.html">The Lagrangian and the Second Quantisation: From the Action to the Commutator</a>
+<!-- the four steps, Peierls bracket from the Green functions, Dirac bracket for the constrained cases, promotion to a commutator, representation on a Fock space; which step the corpus takes and which it does not; the promotion as a postulate and not a theorem; the item-by-item ledger of what a quantised theory would add. -->
+
+<a href="articles_physics/the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html">The Quantisation Hub: The Sixteen Articles That Import the Promotion</a>
+<!-- the sixteen articles that turn the classical actions into a quantum field theory, in the order the operation is performed; the six canonical quantisations carry the postulate and the other ten use it; no native ladder, no native vertex, no derivation of the Standard Model. -->
+
+#### The Ladder and the State Space
+
+<!-- the ladder the promotion needs and the algebra does not have: no pair in $\mathbb{B}$ closes on $e_t$,
+     because the scalar part of a commutator vanishes, so the canonical ladder is imported and acts on a module.
+     What the algebra supplies instead is the module: the vacuum as a minimal idempotent, the one-particle space as
+     the minimal left ideal it defines, and the vacuum manifold as the set of idempotents the algebra admits. The
+     grading is intrinsic — the ambient Clifford algebra splits into even and odd, and the parity is a scalar sign
+     and never a factor of an operator — so the fermionic mode is one-dimensional and lives inside the algebra while
+     the bosonic tower is imported. The GNS construction is stated in its Hermitian form, because the bilinear the
+     algebra carries is not positive and the modular structure is what replaces positivity. Bogoliubov
+     transformations close the section: the one-mode group is algebraic and the many-mode coset is not, which is the
+     exact shape of the import elsewhere. -->
+
+<a href="articles_physics/the-biquaternion-vacuum-as-a-minimal-idempotent.html">The Biquaternion Vacuum as a Minimal Idempotent</a>
+<!-- the vacuum as a state; idempotents and minimality; the one-mode vacuum; the vacuum is a zero divisor; the minimal left ideal and the one-particle module; the vacuum manifold; the field vacuum is not an idempotent. -->
+
+<a href="articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html">Fock Space and Creation/Annihilation Operators in Biquaternionic Form</a>
+<!-- Fock space and its operator algebra; the one-particle space and the field expansions; creation and annihilation operators from the two quantizations; the number operator and the Born rule; three gradings; one fermionic mode inside the algebra; what its creator creates, and the three conventions that name it; the bosonic case. -->
+
+<a href="articles_physics/the-grading-fermion-parity-and-the-two-sectors-in-biquaternionic-form.html">The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</a>
+<!-- the ambient Clifford algebra $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ as the bosonic/fermionic grading, with $\mathbb{B}=\mathrm{Cl}^0$ the bosonic sector; the parity as a scalar sign $\varepsilon_x=(-1)^{|x|}$ and never a factor of the operator; the twist as the conjugation by the volume element, $\alpha(x)=\Omega x\Omega^{-1}=\varepsilon_x x$; the dagger as an even anti-involution and the sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ as its fixed and anti-fixed loci; the odd slot as a coset, $\mathrm{Cl}^1=\mathbb{B}\gamma$; the reflection read in the Hermitian pairing, $\Theta_a=q(a)\rho_a$; two fermionic steps composing to a bosonic one, $\Theta_x\Theta_z=\Theta_{xz}$; the list of the corpus's distinct $\mathbb{Z}/2$s; $(-1)^F=ie_3$ as an even Hermitian element. -->
+
+<a href="articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html">The Superalgebra Reading and the Odd Extension in Biquaternionic Form</a>
+<!-- the graded commutator and the Lie superalgebra; the dagger as an even anti-involution, and the adjoint of the graded bracket up to the parity sign; the Koszul-signed super-* that the corpus does not use; the supercharge paired with its adjoint, $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H$; the supercharge in the module $\mathrm{Cl}^1=\mathbb{B}\gamma$; the Grassmann envelope and the one fermionic mode; one graded algebra and one odd generator. -->
+
+<a href="articles_physics/the-hermitian-gns-construction-in-the-biquaternion-framework.html">The Hermitian GNS Construction in the Biquaternion Framework</a>
+<!-- the GNS theorem; the states of the biquaternion algebra; the GNS data of a state of $\mathbb{B}$; the Hermitian modular structure; the trace state and the canonical state of the algebra; a state from a measure and the Fourier route, with the failure of the biquaternion norm positivity and the Hermitian pairing that replaces it. -->
+
+<a href="articles_physics/bogoliubov-transformations-in-biquaternionic-form.html">Bogoliubov Transformations in Biquaternionic Form</a>
+<!-- the standard Bogoliubov transformation; the one-mode transformation inside the algebra; the one-mode canonical group; what the surviving transformations do; the many-mode case and the coset; thermal Bogoliubov and the Unruh and Hawking connection; quadratic Hamiltonians. -->
+
+<a href="articles_physics/the-reeh-schlieder-theorem-under-the-biquaternion-framework.html">The Reeh–Schlieder Theorem under the Biquaternion Framework</a>
+<!-- the Reeh–Schlieder theorem; cyclicity and separating in the Hermitian GNS construction; the biquaternion vacuum; a finite model of the hypothesis; the Reeh–Schlieder lemma; from the single mode to the field algebra. -->
+
+#### The Objects Built on the Ladder
+
+<!-- the objects every later computation uses — the hub's eight, one of which the section above carries, and
+     bosonization beside them — each stated in the algebra's own chart: Wick's theorem and
+     the contraction as the propagator, with the fermionic sign carried by the grading; the functional integral and
+     its measure; the functional determinant, with the phase of the fermionic case; the generating functional, the
+     Legendre transform and the effective action; the Schwinger–Dyson equations and the Ward–Takahashi identities as
+     the total-derivative argument applied to the invariance of the measure; the S-matrix, with the two notions of
+     unitary the algebra admits; the LSZ reduction, with amputation as the inverse mass-shell operator; and the
+     spin–statistics theorem, which is the one place where the choice of bracket is itself the content. Bosonization
+     closes the list: a two-dimensional equivalence that needs no carrier of its own and whose mass term is a central
+     phase. The section is a list of imports, each with its residue stated. -->
+
+<a href="articles_physics/the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a>
+<!-- the Wick theorem in the standard theory; normal ordering and contraction; the one-mode subalgebra; the one-mode Wick identity; the contraction is the propagator; the fermionic sign and the grading. -->
+
+<a href="articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a>
+<!-- the functional integral and the path integral; the field and the central-scalar action; the Gaussian functional integral; sector factorization; the free scalar field; the Euclidean rotation; localisation to a causally complete region; the measure and the gap. -->
+
+<a href="articles_physics/the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a>
+<!-- the determinant of a module operator; the fundamental determinant and the biquaternion norm; the determinant in the Gaussian integral; regularisation; the fermionic determinant and its phase; the conformal variation of the determinant. -->
+
+<a href="articles_physics/the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action in Biquaternionic Form</a>
+<!-- the connected generating functional; the classical field and the Legendre transform; the effective action and the loop expansion; sector factorization of the effective action; the effective potential and the vacuum; the one-loop term and the determinant. -->
+
+<a href="articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html">The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</a>
+<!-- the total-derivative argument; the Schwinger–Dyson equations from the invariance of the functional integral; the equations in the framework's scalar, spinor and connection theories; the Ward–Takahashi identities and the photon self-energy; what the algebra supplies, what it imports, and what it does not supply. -->
+
+<a href="articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a>
+<!-- the S-matrix in the interaction picture; two notions of unitary in the algebra; the one-mode S-matrix; the S-matrix element and the Born rule; unitarity, the optical theorem and the algebra; the Dyson series, the propagator and the contour.  The amplitude is read on the polar word as scale, phase, velocity and spin-rotation moduli. -->
+
+<a href="articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a>
+<!-- the LSZ formula; amputation as the inverse mass-shell operator; the external wavefunctions; wave-function renormalization as a residue; the scalar and spin reductions, with the two Dirac equations and the two values of the chirality; the one-mode truncation and the gap; the reduction from the functional integral; the spectral representation and the residue. -->
+
+<a href="articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem in Biquaternionic Form</a>
+<!-- the theorem and its ingredients; spin as a representation of $SU(2)$; the sign of the two-pi rotation; the algebra's own one fermionic mode; microcausality and the equal-time brackets; the energy and the norm; the four quantizations. -->
+
+<a href="articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a>
+<!-- the two-dimensional arena; the abelian bosonization dictionary; the module–centre correspondence; the mass term and the central phase; the anomaly and the central-charge matching; vertex operators and the current algebra; the non-abelian case and the Wess–Zumino term; the gamma formulation. -->
+
+#### The Euclidean Reading, the Anomaly and the Index
+
+<!-- the three results that are read off a determinant rather than a commutator, and that therefore belong beside
+     the action and not beside any one carrier. The Wick rotation as a coefficient map on the algebra, with the two
+     reality conditions it induces and the square root of the time reflection it is; the conformal anomaly as the
+     variation of the determinant, with the multiplicity of the fibre and the heat-kernel coefficients; and the
+     index theorem with its zero-mode count, where the rank-two limitation of the algebra is stated rather than
+     hidden. Each is a statement about the measure, and the measure is the action's own object, which is why the
+     three sit here and not with a field. -->
+
+<a href="articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a>
+<!-- the three subspaces of $\mathbb{B}$; the standard Wick rotation as the coefficient map $W=\mathrm{diag}(-i,1,1,1)$; the two reality conditions on one algebra, $\flat=\bar{\cdot}\circ T$ with $W^{2}=T$ and $W$ a square root of the time reflection; why the compact slice is easier, the six rows of the table being one property under five names; why the change sometimes fails, by the analyticity of the continued quantity in the strip; the split of applications that transfer and those that resist, with the thermal objection answered; what is established and what is interpretation. -->
+
+<a href="articles_physics/the-conformal-anomaly-in-biquaternionic-form.html">The Conformal Anomaly in Biquaternionic Form</a>
+<!-- the arena metric declared once and the one metric of the series; the conformal response as a diagonal sum of the matrix of components; its classical vanishing and the improvement term; the quantum response as the variation of the determinant; the spectral sum and the heat-kernel coefficient; the multiplicity of the fibre, four complex and eight real; the coefficients in two and four dimensions and the weights; the rescaling at the three levels; the anomaly and the renormalisation group; the chiral pair, the mass and the non-central determinant; the proper-time representation. -->
+
+<a href="articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a>
+<!-- the Dirac operator and its index; the Atiyah–Singer theorem; the density, the charge and the total derivative; a worked case, the abelian index and the charge-$n$ zero modes; the index and the instanton moduli; the biquaternion reading and the rank-two limitation. -->
+
+#### The Gauge Promotion
+
+<!-- the promotion applied to the connection, which is the one case where the redundancy is itself the object.
+     BRST symmetry as the cohomological replacement for the gauge slice; the connection path integral, where the
+     integral runs over connections modulo the orbit and the measure is the one the classical chain already fixed;
+     and the orbit read as redundancy, which states what the information in a gauge orbit is and why the physical
+     content is the quotient. The three are the general form of the Faddeev–Popov procedure, which the strong
+     sector then instantiates; the instantiation is not repeated here. -->
+
+<a href="articles_physics/brst-symmetry-in-biquaternionic-form.html">BRST Symmetry in Biquaternionic Form</a>
+<!-- the fixing problem and the ghost fields; the BRST transformation; the fixing fermion and the BRST-exact Lagrangian; ghost number, the BRST charge and cohomology; the massive case as a control. -->
+
+<a href="articles_physics/the-connection-path-integral-in-biquaternionic-form.html">The Connection Path Integral in Biquaternionic Form</a>
+<!-- the functional integral for a connection field; fixing and the Faddeev–Popov construction; the Gaussian integral and the propagator; the measure, the ghosts and what is being summed over. -->
+
+<a href="articles_physics/redundancy-and-the-information-in-the-orbit-in-biquaternionic-form.html">Redundancy and the Information in the Orbit in Biquaternionic Form</a>
+<!-- the orbit as a torsor; the orbit as the fibre of the curvature map; what the orbit carries, redundancy not state; information-theoretic invariance of the orbit; the global information of the orbit, holonomy; redundancy and loss, three operations compared. -->
+
 ### Other aspects
 
 <!-- a catch-all, and empty by design until something belongs in it. What would go here: apparatus that the
-     three arrows above assume but do not own — a result about the algebra or the density that every arrow uses
+     four arrows above assume but do not own — a result about the algebra or the density that every arrow uses
      and none of them derives, a construction that cuts across the rungs instead of sitting at one of them, or
      an external programme the corpus borrows from without yet having absorbed. What would not go here: a
      sector's instance of the chain, which belongs in that sector below; a step of the skeleton, which belongs
-     in *From the Field Equation to the Fluid*; and anything belonging to *Quantum Fields*, where the functional
-     integral, the determinant, the index count and the Faddeev–Popov procedure sit. **The section stays empty
+     in *From the Field Equation to the Fluid*, or to *From the Field Equation to the Quantum Field*, where the
+     functional integral, the determinant and the index count sit, or to the sector that instantiates a procedure, where
+     the Faddeev–Popov one does. **The section stays empty
      rather than being filled to look complete**: an entry here should be a statement that has no better home,
      and the corpus does not have one of those yet. -->
 
@@ -750,6 +1047,14 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/su4-fluid-equations-from-the-primordial-action.html">The $\mathrm{SU}(4)$ Fluid Equations from the Primordial Action: Fifteen Vorticities, a Four-Component Condensate and One Covariant Continuity</a>
 <!-- the primordial action read as a fluid, the block's missing hydrodynamics: the four densities are the scalar matrix's eigenvalues and the velocity is its frame's covariant logarithmic derivative $\Omega_{\imath}=U_{\mathrm{frm}}^{\dagger}D_{\imath}U_{\mathrm{frm}}$, so the kinetic term decouples into the four densities' gradients plus the frame's rotation weighted by $(\rho_{k}-\rho_{l})^{2}$ — the connection reaching the frame and never the densities, and the $\mathrm{U}(1)$ direction invisible to a Hermitian condensate; the vorticity is the fifteen connections' curvature, a fundamental field with its own equation rather than the derived object it was at all eight matter rungs; continuity and Helmholtz covariant with the ordinary versions failing by one and the same term, the connection contracted with the field it transports, and no combination of the fifteen ordinarily conserved because a closed combination would be a central element of a simple algebra; the Gauss law as the constraint in place of an incompressibility, since the fifteen have no mass term; the six heavy vectors as the six frame directions the vacuum's eigenvalue splitting singles out, with mass $g_{4}^{2}(\rho_{k}-\rho_{l})^{2}$, the Higgs mechanism read as the frame's inertia against a density difference; $\theta_{4}$ as the flow's helicity, a total derivative absent from the equations -->
+
+#### The fluid's thermodynamic equations and their solutions
+
+<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
+     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
+     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
+     *From the Fluid Equations to Thermodynamics Equations* under *Biquaternion Universe Action*, and are not
+     restated here. -->
 
 #### The quantum apparatus
 
@@ -943,6 +1248,19 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html">Three Diagrams of the $\mathrm{SU}(4)$ Model: The Kaon, the Proton Chain, and a Gluon Exchange</a>
 <!-- three diagrams, each exercising one part of the rules and each yielding a different kind of answer: **$K_L\to\mu e$** at tree level, two mixed-plane vertices joined by one heavy propagator, $d^{a}\to e^{-}$ and $s^{a}\to\mu^{-}$ on the same spatial line, hence the group factor one and not three because the propagator is diagonal in the triplet index and there is no sum to make, the rate $3.5\times10^{-12}$ at $M_X=4.01\times10^{-5}$ J against the measured $4.7\times10^{-12}$, with the assumption about the generation matrix named and not hidden; **the proton chain**, three mixed-plane vertices on three distinct spatial lines contracted with $\epsilon_{abc}$, no diquark coupling because the fifteen's triplets carry $\pm\tfrac43$ and a $qq$ pair carries $+\tfrac23$, the power $M_X^{-10}$ from the dimension-nine operator against $M_X^{-4}$ for dimension six, and the conclusion that the connection sector is not bounded by proton stability; **the gluon exchange**, the eight corner arrays, the one Gram-matrix rotation $c_{2}=d_{2}+d_{3}$ and $c_{3}=d_{2}-d_{3}$, the sum of squares $-\tfrac43$, the completeness relation and $C_F=\tfrac43$ computed from the printed matrices rather than quoted; one coupling, so no ratio of couplings enters anywhere, and the only mass scale is $M_X^{2}=8g_4^{2}v^{2}$; fifteen checks. -->
 
+### The Goldstone Mode
+
+<!-- the one theorem the breaking is measured by, stated where the breaking is: the symmetry and its spontaneous
+     failure, the potential and the vacuum manifold, the order parameter, and the count of massless modes as the
+     dimension of the manifold minus the dimension of the surviving group. The sector counts the modes it needs —
+     three eaten by the weak pair and the photon, one left over — and this section states the theorem those counts
+     are instances of. The effective action of the same mode sits with the scalar field it belongs to, in
+     *Biquaternion Universe Relativistic Quantum Theory*; the theorem sits here because what it governs is the
+     breaking. -->
+
+<a href="articles_physics/goldstones-theorem-in-biquaternionic-form.html">Goldstone's Theorem in Biquaternionic Form</a>
+<!-- the symmetry and its spontaneous breaking; the potential, the vacuum manifold and the order parameter; the Goldstone mode and the mass matrix; the Goldstone current and the decay constant; the theorem and its proof; counting the Goldstone bosons and the coset; the effective Lagrangian and the soft limit. -->
+
 ## Biquaternion Universe Strong Force
 
 <!-- the strong sector as the residual of the group above $M_C$, and the sector where the algebra meets
@@ -978,6 +1296,9 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/quantum-chromodynamics-as-the-residual-of-su4.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated</a>
 <!-- what the framework already reaches; the strong group and why nothing derives a three; confinement and the absent mechanism; the chiral-fermion issue; the running strength and asymptotic freedom, as data; the ledger; the object each row needs. -->
 
+<a href="articles_physics/the-theta-vacuum-in-biquaternionic-form.html">The Theta Vacuum in Biquaternionic Form</a>
+<!-- the topological charge and the $\theta$ term; the $\theta$ vacuum and the central phase; the angle as the phase of a determinant; periodicity and the parity reading; the index, the eta invariant and the central integer; the partition function and the topological susceptibility. -->
+
 ### Particles of spin 1
 
 #### The content
@@ -1001,6 +1322,15 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 #### The fluid's equations and their solutions
 
 #### The quantum apparatus
+
+<a href="articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a>
+<!-- the non-abelian action and its orbit; fixing and the Faddeev–Popov determinant; the ghost fields and the Grassmann envelope; the propagator and representative-parameter independence; the quantum Yang–Mills equation; representative slicing and the Gribov ambiguity. -->
+
+<a href="articles_physics/lattice-connection-theory-and-the-biquaternion-path-integral.html">Lattice Connection Theory and the Biquaternion Path Integral</a>
+<!-- why a regulator; the lattice carrier; the plaquette and the Wilson action; the lattice path integral; strong coupling, the area law and confinement; the continuum limit and the running coupling.  The algebra's own orders are read as a discrete spacetime lattice, the real slice Euclidean and the complex order lightlike. -->
+
+<a href="articles_physics/wilson-loops-in-biquaternionic-form.html">Wilson Loops in Biquaternionic Form</a>
+<!-- the holonomy of the connection; local invariance and Stokes' theorem; the small loop and the field strength; the Gaussian average of the loop; the Aharonov–Bohm phase; the non-abelian loop and the surface; the loop as an observable; the loop equation. -->
 
 #### The applications
 
@@ -1287,6 +1617,12 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/exercise-the-electromagnetic-field-of-a-uniformly-moving-charge.html">Exercise: The Electromagnetic Field of a Uniformly Moving Charge</a>
 <!-- six problems: the retarded position in closed form; the field in closed form and the Heaviside ellipsoid; the non-relativistic limit must reduce to Coulomb; the ultrarelativistic transverse pancake; the boost rotor and the boosted Coulomb field; independent checks and the invariants. -->
 
+<a href="articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a>
+<!-- the natural variable and why it is not canonical; representative freedom and the two formulations; the constraint structure; the constraints in biquaternion notation; Gupta–Bleuler quantization; comparison with the scalar field and with the Dirac case. -->
+
+<a href="articles_physics/the-photon-in-biquaternionic-form.html">The Photon in Biquaternionic Form</a>
+<!-- the photon as the quantum of the biquaternion Maxwell field; the polarization space as the material sector; circular polarization and the complex structure of the propagation direction; helicity as an observable in the informational sector; helicity and the self-dual split of the field strength; derived, represented, outside. -->
+
 ### Null Fields, Radiation and Congruences
 
 <a href="articles_physics/null-electromagnetic-fields-and-the-shear-free-congruence.html">Null Electromagnetic Fields and the Shear-Free Congruence</a>
@@ -1326,6 +1662,9 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/maxwells-equations-in-chiral-media-the-quaternionic-reformulation.html">Maxwell's Equations in Chiral Media: The Quaternionic Reformulation</a>
 <!-- the Drude–Born–Fedorov constitutive relations and the magnetoelectric coupling; the diagonalisation into the two circularly polarised combinations; the two chiral wavenumbers and optical activity; the Helmholtz–Dirac function theory (kernel, Borel–Pompeiu, Cauchy, Plemelj–Sokhotski); integral representations and the extendability problem; the quaternionic Helmholtz radiation condition and its Sommerfeld and vector reductions; the collocation numerical method built on the fundamental solutions, recorded from its primary paper, with its completeness theorems (Kupradze's theorem and the Sobolev lift), its identification of the basis with the shifted Cauchy kernels, and two convergence tables; the obstruction to the classical proof for complex-quaternionic functions; the energy balance; inhomogeneous and stratified chiral media; the sign discrepancy between the source's (32) and (43,44). -->
+
+<a href="articles_physics/scattering-for-the-quaternionic-dirac-operator-the-lippmann-schwinger-equation-the-radiation-condition-and-faddeevs-greens-function.html">Scattering for the Quaternionic Dirac Operator: The Lippmann–Schwinger Equation, the Radiation Condition and Faddeev's Green's Function</a>
+<!--the direct-versus-inverse problem for the quaternionic operator: the three-dimensional scattering theory of $D_3+M_k$ with a compactly supported quaternionic potential $m(x)$, read from Bernstein's *Seeing the Invisible and Maxwell's Equations* and motivated by optical coherence tomography; the two one-sided multiplications as the notational pivot; Maxwell's equations as a Dirac-type system in a medium and the force-free case; the two factorisations of the Helmholtz equation, by a scalar shift and by a vector one; the outgoing fundamental solution and the radiation condition, and Faddeev's Green's function for the anisotropic case; the Lippmann–Schwinger equation, its iterated series and the Born approximation; uniqueness and existence; what is transcribed from the source and what is recomputed here, kept apart in the ledger; the open questions the article leaves visible, the inverse problem itself, the isotropic case and the four-variable theory for $\tilde\nabla$. The conventions are those of *Algebra and Element Conventions* and *Introduction to the Biquaternion Universe*, and the direct theory is *Biquaternion Regular Functions*, cited.-->
 
 ### Deformations, Speculative Sectors and External Programmes
 
@@ -1393,11 +1732,11 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 ### Particles of spin 1
 
-<!-- the seven rungs of the ladder, emitted in full and empty where this section has nothing for them; it fills five, and
+<!-- the eight rungs of the ladder, emitted in full and empty where this section has nothing for them; it fills five, and
      rung one is empty because the content is the carrier, stated in *Introduction to the Spin-One Anti-Hermitian Subspace*
      in another category and not re-derived here; then the action, the field equation with its own solutions and their
-     degree count, the fluid's equations and their solutions, the quantum apparatus that integrates over the action, and
-     the applications. A reader who knows the ladder can find the same rung in the same place, empty or not, in every
+     degree count, the fluid's equations and their solutions, the thermodynamic closure of those equations, the
+     quantum apparatus that integrates over the action, and the applications. A reader who knows the ladder can find the same rung in the same place, empty or not, in every
      section of the corpus. **The action precedes the equation because the equation is what its variation gives**, and each
      object carries its own results rather than a single rung collecting them at the end: which is why the Proca equation's
      articles and their solutions sit together, below the Lagrangians that produce them. -->
@@ -1473,6 +1812,14 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/the-charged-spin-one-fluid.html">The Charged Spin-One Fluid: Three Currents and a Compressibility</a>
 <!-- the covariant Proca equation read as a self-acting compressible medium, the case where the coupling changes most because the free fluid *was* its field: the carrier doubles to the eight-parameter word and the free word is its real slice $\theta_{\mathrm{pha}}\in\{0,\pi\}$ with the rotor trivial; the domain shrinks from the lightlike wall to $r=0$, so the free article's hypersurface of failure becomes an ordinary origin; the density is not the field's norm, since $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ is complex and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial, checked to machine precision, so $r$ is an amplitude and not a density; three currents where the free article had one — the response $m^{2}\tilde A$, the direction $\tilde A/r$ and the conserved charge bilinear that vanishes on the real slice; the Lorenz condition no longer continuity but a constraint, the ordinary divergence fixed on it by the identity $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\theta_{\mathrm{pha}}}$, with real part $\frac{ϙ}{\hbar}r^{2}\sin2\theta_{\mathrm{pha}}$ and imaginary part $-\frac{ϙ}{\hbar}r^{2}\cos2\theta_{\mathrm{pha}}$, so the free incompressibility was the mass's gift and the charged fluid's expansion is its amplitude; the stiff equation of state surviving as a formula on the $F=0$ sector and dying as a law; the field's own stress inside the fluid's stress, with the self-interaction term in the covariant field strength; and the massless limit keeping the current and losing the constraint, which locates the free article's "the photon has no fluid" at the constraint and not at the spin. -->
 
+#### The fluid's thermodynamic equations and their solutions
+
+<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
+     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
+     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
+     *From the Fluid Equations to Thermodynamics Equations* under *Biquaternion Universe Action*, and are not
+     restated here. -->
+
 #### The quantum apparatus
 
 <a href="articles_physics/the-path-integral-and-the-proca-equation-in-biquaternionic-form.html">The Path Integral and the Proca Equation in Biquaternionic Form</a>
@@ -1505,6 +1852,15 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/the-fourier-transform-and-the-charged-spin-one-fluid.html">The Fourier Transform and the Charged Spin-One Fluid: The Constraint Is the Amplitude</a>
 <!-- the coupled constraint has two halves of different shapes in the momentum space: the covariant half is a multiplier, a linear condition at each label, while the ordinary half fixes its multiplier to a product and so to a correlation of the amplitude with its own conjugate, with $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\theta_{\mathrm{pha}}}$ on the right — **the only constraint in the block that cannot be solved label by label**; at $ϙ=0$ the right-hand side vanishes and the constraint becomes a multiplier on both sides, so the free incompressibility is a locality in the momentum space and the gift of the mass is exactly that; the scale of the chart is not the norm of the field, $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ being complex, so the mode basis is a basis of the description and not of the field, the only rung of the five in which the transform does not see the field; conservation is a divergence and therefore a diagonal statement, so the mode basis sees the response $m^{2}\tilde A$ and cannot see which current is conserved; and the closing diagnostic of the eight articles, that an object built from a single label is visible to the transform and one that cannot be is not, the invisible object being always a product of two modes or a derivative of a structure a mode holds constant. -->
 
+<a href="articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a>
+<!-- the Proca field in biquaternionic form; the Legendre transform and the constraint structure; canonical quantization; the propagator and the polarization projector; the massless limit and the change of constraint class. -->
+
+<a href="articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html">Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form</a>
+<!-- the rotation algebra as inner derivations; the spin-one multiplet and its weight basis; the internal and orbital parts of angular momentum; general integer spin; quantization of integer-spin fields. -->
+
+<a href="articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.html">The Vacuum State and the Casimir Effect in Biquaternionic Form</a>
+<!-- the vacuum state in the framework; the zero-point energy and the trace part; the parallel-plate configuration and the divergent sum; the spectral zeta function route; the heat kernel and the modular relation; the polarizations and the factor of two; the Casimir force and its verifications. -->
+
 #### The applications
 
 #### Neighbouring objects
@@ -1521,6 +1877,9 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</a>
 <!-- what antilinear means here; why a mass is a pairing with a conjugate; the two conjugates and the two masses, the Dirac pair split into two equations; two real structures on two different spaces; the four levels of the name charge conjugation, tabulated — the algebra's real structure $\flat$, the Clifford pseudoautomorphism $\bar A=\Pi A^{*}\Pi^{-1}$, the module operation $\mathcal{C}[\psi]=\eta_C\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ and the module real structure $\bar{\cdot}$ — with the name reserved for the module operation; charge conjugation, the $\mathrm{Spin}^c$ structure and the neutral spinors; the retired equation, its dispersion and the four involutions; what the antilinear structure is for; the gamma formulation. -->
+
+<a href="articles_physics/kramers-degeneracy-and-antiunitary-symmetry-in-biquaternionic-form.html">Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form</a>
+<!-- antiunitary maps and the two spaces; time reversal on the spinor module; Kramers degeneracy; verification; the quaternionic structure; the three symmetry classes; what breaks the symmetry. -->
 
 #### The action
 
@@ -1615,6 +1974,14 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/the-spin-half-energy-momentum-tensor.html">The Spin-Half Energy-Momentum Tensor</a>
 <!-- the stress of the Dirac field and the antisymmetric part that carries the spin; the count sixteen, ten and six against the element's eight and its four usable slots, and why the count is not a defeat, the antisymmetric part being the divergence of the spin tensor and carrying no charge; the spin tensor's twenty-four components cut to twelve by the Frenkel condition and to three at an event, one Hermitian element with a vanishing scalar slot; the pair of conservation laws, the spin current's divergence read off the rotor's own equation with a torque that vanishes when the connection turns about the spin; the Gordon spin term as a bound current distinguished from the vorticity; and the Frenkel condition as the vanishing of the scalar part. -->
 
+#### The fluid's thermodynamic equations and their solutions
+
+<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
+     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
+     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
+     *From the Fluid Equations to Thermodynamics Equations* under *Biquaternion Universe Action*, and are not
+     restated here. -->
+
 #### The quantum apparatus
 
 <a href="articles_physics/the-path-integral-and-the-dirac-equation-in-biquaternionic-form.html">The Path Integral and the Dirac Equation in Biquaternionic Form</a>
@@ -1646,6 +2013,27 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/the-fourier-transform-and-the-charged-spin-half-fluid.html">The Fourier Transform and the Charged Spin-Half Fluid: A Phase Cannot Rotate a Rotor</a>
 <!-- the covariant label of a mode is $ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, four numbers of fixed norm equal to the boost up to the mass wave number, so **the label has room for the momentum and the frame and no room for the rotor**, and a representative acting on the label cannot turn the spin — a counting form of the type argument of the companion that holds for every profile and not only the constant one; the loop invariant is a Lorentz transformation times a phase, and at a mode the frame is constant so the Lorentz factor is the identity and the invariant is $\exp(iϙ\Phi_B/\hbar)$ alone, the frozen-frame sector being exactly the set of modes and the product $\mathbb{C}^{\ast}\times SL(2,\mathbb{C})$ therefore an inter-mode object with one factor on the diagonal; both slots of the connection are translations at a mode, so the velocity is constant, the acceleration zero and the Lorentz force vanishes identically, the force being inter-mode; the vorticity is $ϙF/m$ and a constant connection has no curvature, so a mode is irrotational; and across the four charged rungs the only locally invariant object of the reading is the curvature, the spinor rung being the one whose label is exactly the frame. -->
+
+<a href="articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a>
+<!-- the classical field and its conjugate momentum; equal-time anticommutation relations; the field expansion in the plane-wave solutions; anticommutators of the mode operators; the Hamiltonian and the normal-ordering constant; spin and statistics; the relation to the KMS thermal framework. -->
+
+<a href="articles_physics/the-dirac-sea-hole-theory-and-antimatter-in-biquaternionic-form.html">The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form</a>
+<!-- the negative-energy branch and Dirac's hole theory; the prediction and discovery of the positron; the objections to the filled sea; the modern reinterpretation and the Fock vacuum; vacuum polarization; the condensed-matter Dirac sea; the biquaternion reading, the mode-algebra reinterpretation, the normal-ordering constant and charge conjugation, and the honest limits. -->
+
+<a href="articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a>
+<!-- the operator-valued field; the field as the odd generator; the operator-valued observables; the two-point function; what is standard and what is the algebra's. -->
+
+<a href="articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html">The Fermionic Fock Space in Biquaternionic Form</a>
+<!-- the one-particle space; the exterior algebra; the Lorentz content of the Fock space; the functor $\Gamma$, the grading and the parity; the inner product, states and the trace pairing. -->
+
+<a href="articles_physics/grassmann-coherent-states-in-biquaternionic-form.html">Grassmann Coherent States in Biquaternionic Form</a>
+<!-- the Grassmann algebra as the odd extension; the coherent states; the analytic representation; the biquaternion reading; the thermal kernel. -->
+
+<a href="articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a>
+<!-- the two-point function of the quantized Dirac field; the pole structure and the contour; Feynman, retarded and advanced, and what selects the contour; the biquaternion form of the prescription; the propagator as a distribution; the relation to the thermal two-point function; what the algebra adds and what it does not. -->
+
+<a href="articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a>
+<!-- the action in biquaternion form; the Berezin measure; the Gaussian integral and the determinant; the Pfaffian and the real structure; the Euclidean integral and the boundary conditions; parity sectors, the phase and the sign problem. -->
 
 #### The applications
 
@@ -1691,6 +2079,9 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/bhabha-scattering-in-biquaternionic-form.html">Bhabha Scattering in Biquaternionic Form</a>
 <!-- electron-positron scattering; the exchange and annihilation channels and their relative sign; the cross section and the small-angle luminosity monitoring; crossing symmetry with Møller and its numerical check; the biquaternion reading, the annihilation current and the framework's charge conjugation; positronium as the open bound-state case. -->
 
+<a href="articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a>
+<!-- the vertex function and the form factors; the biquaternion transcription; the one-loop correction; what the algebra supplies here; verification. -->
+
 #### Neighbouring objects
 
 <a href="articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a>
@@ -1716,6 +2107,12 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a>
 <!-- seven problems: the chiral projectors; the two Weyl halves and the mass term; a boost and a rotation of each half; the invariant symplectic pairing; the spinor bilinear and the four-vector; the double cover on a concrete rotation; the spinor action and rotor conjugation. -->
+
+<a href="articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a>
+<!-- the discrete operations and the algebra; the three operations built explicitly; each operation preserves the free equation; the algebra's conjugations are not the discrete operations; the composition CPT checked as a composition. -->
+
+<a href="articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a>
+<!-- the three conjugations of the spinor module and the division ring $\mathrm{F}=\mathbb{R},\mathbb{C},\mathbb{H}$; the pseudo-automorphism of the complex Clifford algebra and the discrete symmetry group $\{\mathrm{Id},\star,e,e\star\}$; particles and antiparticles as the two summands of $\Delta=S\oplus\bar{S}$; the charge states $+1,0,\bar{0}$ and the truly neutral particle; $C$, $P$, $T$ as elements of the symmetry group and the CPT composition; the division-ring obstruction to a uniform charge-conjugation operator; what the algebra supplies and does not. -->
 
 ### Particles of spin 0
 
@@ -1761,6 +2158,9 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/the-lagrangian-and-the-charged-schrodinger-fluid.html">The Lagrangian and the Charged Schrödinger Fluid</a>
 <!-- the same action with the connection, which enters as one substitution in one variable, $\nabla S\to\nabla S+ϙ\vec A$ and $\partial_{t'}S\to\partial_{t'}S-ϙ\varphi$, so that the action's second argument is the locally invariant mechanical momentum and the first, the density, is untouched; the free action's bracket pairing of the phase's time derivative with the scalar potential survives as the pairing inside one vector, and the local invariance is therefore structural rather than checked term by term; the continuity the phase's variation returns is the mechanical current's, $\vec j=\rho_{\mathrm{num}}\vec\pi/m$, so the charge current $ϙ\vec j$ carries the connection in its spatial part while its conservation carries none, and the density is untouched because the coupling reaches the phase alone; the vorticity is now a potential's, $\vec v=\nabla S/m+ϙ\vec A/m$ with $\nabla\times\vec v=ϙ\vec B/m$, so it is no longer a gradient's curl and the theorem that a gradient velocity has zero helicity does not apply, the rank being two because a three-vector potential cannot make a four-dimensional two-form; the Lorentz force's sign is fixed by the time slot's substitution and agrees with the free companion's independent derivation; and the charge does not reach the quantum sector, since the gradient energy carries the amplitude and the connection carries the phase. -->
+
+<a href="articles_physics/the-lagrangian-and-the-goldstone-effective-action.html">The Lagrangian and the Goldstone Effective Action</a>
+<!-- the derivative-only effective action, $\tfrac12(\partial\vartheta)^2+c_4(\partial\vartheta)^4/f^4+\cdots$, whose shape is the theorem; the variation giving $\Box_\Phi\vartheta=0$ at leading order; the absence of a non-derivative term as the masslessness, the shift the selection rule; no constraint, because the symmetry is nonlinearly realized and not made local; the Adler zero as a per-vertex derivative count and the universality that follows from it; the shift current $j_\mu=f\partial_\mu\vartheta$ with $f$ the normalization and the expansion scale at once; and the boundary, the coefficients and the decay constant imported. -->
 
 #### The field equation and its solutions
 
@@ -1814,6 +2214,14 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a>
 <!-- the nodal set as the zero-divisor cone, where the phase is undefined and the flow is no longer irrotational; what the winding of the phase around a nodal line carries, and whether a circulation is quantized; the algebra rather than the phase as the carrier of the charge; closes open question 2 of the scalar polar form; and the scalar exception, that the identification of the nodal set with the chart's boundary does not survive to the spinor case. -->
 
+#### The fluid's thermodynamic equations and their solutions
+
+<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
+     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
+     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
+     *From the Fluid Equations to Thermodynamics Equations* under *Biquaternion Universe Action*, and are not
+     restated here. -->
+
 #### The quantum apparatus
 
 <a href="articles_physics/the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form.html">The Path Integral and the Klein–Gordon Equation in Biquaternionic Form</a>
@@ -1852,7 +2260,22 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/the-fourier-transform-and-the-charged-schrodinger-fluid.html">The Fourier Transform and the Charged Schrödinger Fluid: The Vorticity Is the Curvature</a>
 <!-- a constant connection is a multiplier, carries no curvature, mixes no modes and is a pure gradient, so a mode of a flat connection is a free mode with a translated label and zero vorticity, checked at $2.5\times10^{-16}$; a connection with curvature is not a multiplier, its transform is the derivative of a delta for a linear profile and the coupling then falls as the inverse of the separation, which is the momentum-space face of a constant field strength, the residual of $\nabla\times\vec v=ϙ\vec B/m$ being $5.0\times10^{-16}$; **so the mode basis is the mode basis of the flat connections and the vorticity is exactly what it cannot carry**, the curvature being the one locally invariant object of the reading; a mode carries the flux quantum and not the winding quantum, its circulation $ϙ\Phi_B$ rather than $2\pi\hbar n+ϙ\Phi_B$, because a mode has no node; and the field has two supports, the free shell in the canonical variable and the translated one in the kinetic, the velocity being read from the kinetic label. -->
 
+<a href="articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a>
+<!-- the classical field and its conjugate momentum; the field as a central-valued object; equal-time commutation relations; the mode expansion; the mode algebra and the Fock space; the Hamiltonian, momentum and charge; microcausality and the commutator function. -->
+
+<a href="articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html">The Quantized Scalar Field in Biquaternionic Form</a>
+<!-- the field operator and its value space; the positive- and negative-frequency parts; real and complex scalar fields; the field algebra and commutators as c-numbers; the two-point functions and the propagator; transformation of the field operator; the Schrödinger functional and the field basis. -->
+
+<a href="articles_physics/the-scalar-fock-space-in-biquaternionic-form.html">The Scalar Fock Space in Biquaternionic Form</a>
+<!-- the one-particle space and its module structure; the little group and one state per momentum; the symmetric algebra and the occupation basis; the vacuum state; the number operator and the two gradings; why there is no scalar Fock space inside biquaternions; coherent states and the central phase. -->
+
+<a href="articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html">The Scalar Field Path Integral in Biquaternionic Form</a>
+<!-- from the operator formalism to the functional integral; the phase-space form and the semiclassical kernel; the generating functional and the free Gaussian; equivalence with the operator formalism; the Euclidean formulation and the lattice determinant; the vacuum persistence amplitude and pair creation; interactions and the loop expansion. -->
+
 #### The applications
+
+<a href="articles_physics/scalar-pair-creation-in-biquaternionic-form.html">Scalar Pair Creation in Biquaternionic Form</a>
+<!-- the background and the mode equation; in and out regions and the Bogoliubov transformation; the number of created pairs and the vacuum persistence amplitude; an exactly solvable case, the sudden quench; the biquaternion reading. -->
 
 ### Particles of other spins
 
@@ -1871,6 +2294,9 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 #### The fluid's equations and their solutions
 
 #### The quantum apparatus
+
+<a href="articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a>
+<!-- the field, its constraint and transversality; connection structure, massless and massive; canonical quantization; the propagator and its fixing; consistency of the coupled theory; the pattern across the spins. -->
 
 #### The applications
 
@@ -1904,6 +2330,21 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <!-- the entangled subsystem in the biquaternion language; the singlet as one whole and the division rule that selects the admissible divisions; the five debates revisited; what the reformulation makes visible and what it does not claim. -->
 <a href="articles_physics/quantum-teleportation-in-biquaternionic-form.html">Quantum Teleportation in Biquaternionic Form</a>
 <!-- the three-qubit arena and the objects of the protocol; the resource and the Bell measurement; the teleportation identity; the correction gates; no-signalling and why there is no copy; the protocol as a channel. -->
+
+<a href="articles_physics/relative-entropy-and-the-biquaternion-framework.html">Relative Entropy and the Biquaternion Framework</a>
+<!-- relative entropy, the standard quantity; the states of the biquaternion algebra; the relative entropy of two biquaternion states; Araki's relative modular operator; relative entropy in quantum field theory. -->
+
+<a href="articles_physics/strong-subadditivity-in-the-biquaternion-framework.html">Strong Subadditivity in the Biquaternion Framework</a>
+<!-- the inequality; the biquaternion tensor product; strong subadditivity from monotonicity of relative entropy; three tripartite states; the equality condition; strong subadditivity in quantum field theory. -->
+
+<a href="articles_physics/excitation-mode-function-and-the-informational-sector.html">Excitation, Mode Function, and the Informational Sector</a>
+<!-- the mode function as a definite solution; the excitation as an occupation; three objects, three homes; what is asserted to lie in $\mathbb{B}_{\Psi}$ and its verification; in what sense $\mathbb{B}_{\Psi}$ is a Hilbert space; counting the degrees of freedom. -->
+
+<a href="articles_physics/entanglement-entropy-and-the-replica-trick-in-biquaternionic-form.html">Entanglement Entropy and the Replica Trick in Biquaternionic Form</a>
+<!-- entanglement entropy and Rényi entropies; the replica trick; the replica structure of the biquaternion tensor power; the Schmidt decomposition and the entanglement spectrum; a worked two-qubit example. -->
+
+<a href="articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.html">The Area Law of Entanglement Entropy in Biquaternionic Form</a>
+<!-- the area law; why locality gives an area law; the discrete area law in the biquaternion chain; the area law in the field; the volume law and its suppression; the area law and strong subadditivity. -->
 
 ## Biquaternion Universe Non Relativistic Approximation of Quantum Theory
 
@@ -1998,6 +2439,15 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html">Spin Squeezing and the Tavis–Cummings Model in Biquaternionic Form</a>
 <!-- the collective spin; the Tavis–Cummings model; the Holstein–Primakoff linearisation; spin squeezing; the biquaternion reading. -->
 
+<a href="articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a>
+<!-- the naive lattice action and the sixteen tastes; the taste-exchange symmetry; the Nielsen–Ninomiya no-go theorem and its Poincaré–Hopf index count on the Brillouin-zone torus; the resolutions and the hypothesis each violates; the biquaternion reading, the discretized gradient, the honest negative result, and the proximity to the Dirac–Kähler and staggered constructions. -->
+
+<a href="articles_physics/dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.html">Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form</a>
+<!-- the honeycomb lattice and the Dirac cones; the two isospins against the framework's two minimal ideals and the counting caution; the gap as the chirality-mixing mass; topological insulators, the $\mathbb{Z}_2$ invariant and the helical edge; the three-dimensional surface Dirac cone; Klein tunnelling in graphene $p$–$n$ junctions; the biquaternion reading and the limits of the transcription. -->
+
+<a href="articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a>
+<!-- the one-site case; the many-site map; the map as an algebra isomorphism and its grading; consequences for the chain. -->
+
 ### Particles of spin 0
 
 #### The content
@@ -2058,6 +2508,14 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/charged-schrodinger-fluid-equations-from-the-polar-action.html">The Charged Schrödinger Fluid from the Polar Action: The Connection Shifts the Potential and Not the Continuity</a>
 <!-- the coupled polar action varied; the connection as a central imaginary addition that joins the phase's bracket and no other, so continuity survives with the mechanical momentum as the velocity and Madelung's quantum potential is charge-blind; the vorticity as an identity of the chart rather than of the equation, $\vec\omega=\varkappa\vec B/m$ because the curl of a gradient vanishes; the quadratic term in $A$ as the interaction and the reason the stress is gauge-invariant; the chart's redundant direction as the phase, whose conjugate momentum is the charge; the four vanishing momenta unchanged -->
+
+#### The fluid's thermodynamic equations and their solutions
+
+<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
+     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
+     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
+     *From the Fluid Equations to Thermodynamics Equations* under *Biquaternion Universe Action*, and are not
+     restated here. -->
 
 #### The quantum apparatus
 
@@ -2141,6 +2599,9 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/two-spin-half-particles-in-biquaternionic-form.html">Two Spin-Half Particles in Biquaternionic Form</a>
 <!-- the two-qubit algebra; the total spin operators; the coupling term and the coupled projectors; the four coupled states as idempotents; the exchange operator and the antisymmetry of the singlet; the Heisenberg coupling; partial traces and reduced states; the relation to the Bell basis; the observation that a single quaternion is a product state and not a singlet. -->
+
+<a href="articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.html">Anyons and Braid Statistics in Biquaternionic Form</a>
+<!-- the braid group and the failure of the permutation group; the flux–charge composite and the Aharonov–Bohm phase; the Chern–Simons origin of fractional statistics; non-abelian anyons; the two-sector statement. -->
 
 ### Focus on informational aspects
 
@@ -2471,6 +2932,16 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map.html">Superfluids and BECs: The Gross–Pitaevskii Equation as the Nonlinear Reverse Map</a>
 <!-- the one physical case in which the nonlinear reverse map is written down and measured: the order parameter, its Madelung pair with the contact pressure $p_{\mathrm{th}}=\tfrac12g\rho_{\mathrm{num}}^{2}$ and $g=4\pi\hbar^{2}a_{\mathrm{sc}}/m$; the exact solutions, the uniform state with $\mu_{\mathrm{chm}}=g\rho_0$, the sound speed $\sqrt{g\rho_0/m}$, the healing length $\hbar/(\sqrt2\,mc_{\mathrm{s}})$, the Thomas–Fermi radius and the bright soliton whose amplitude and width are both fixed by $\mu_{\mathrm{chm}}$; the linear Schrödinger equation as the $g=0$ limit, in which the fluid's pressure also vanishes; the direction as the order parameter to the fluid, with the two-fluid model of helium as the historical case and the same $h/m$; and the reading's denial restated, the sharing being of formulas and not of objects, with the healing length as the formula where the two part company. -->
+#### The fluid's thermodynamic equations and their solutions
+
+<!-- the band's fluid equations closed into thermodynamic ones: for an ordinary fluid the closure is one of the
+     equations, and this band states it in its fluid slot — *The Equation of State and the Barotropic Condition* and
+     *Viscosity and the Rayleigh Dissipation Function* — so the rung is empty of new articles and names the two that
+     already carry it. What the band does not have is a state: it has a density and an action, not a density operator,
+     and the thermal parameter that would make the closure a thermodynamics is the missing input. The rung and its
+     three tests are stated once, in *From the Fluid Equations to Thermodynamics Equations* under *Biquaternion
+     Universe Action*. -->
+
 #### The quantum apparatus
 
 #### The applications
@@ -2532,356 +3003,6 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/maxwells-demon-and-the-informational-sector-in-biquaternionic-form.html">Maxwell's Demon and the Informational Sector in Biquaternionic Form</a>
 <!-- the demon's cycle in two sectors; measurement, correlation and the idempotent projection; extractable work; erasure and the closing of the cycle; where the demon fails. -->
-
-## Biquaternion Universe Quantum Fields
-
-<!-- the quantized field: sixty-nine articles that second-quantize the same element the two neighbouring blocks read, with the vacuum as a minimal idempotent and the one-particle module as the minimal left ideal, then the general formalism, then spin zero, spin one half, spin one and above, and finally the informational aspects; the block sits between the fluid reading, which is single-particle and whose variables are the field's own, and the thermal state, whose density operator is a trace over this block's Fock space; the ordering of the three is the dependency and not a preference: the reading is a re-coordinatisation of one element, the field is that element's quantization, and the state is a trace over the quantized field, so that no article of the third block can be written before the second's Fock space exists; an entry is uncommented when its article exists; the one exception to the dependency is the modular structure of the third block, which is algebraic and could in principle precede this block, and that exception is stated there. -->
-
-### Generalities
-
-<!-- second quantisation and the field-theory apparatus, twenty-nine articles: the vacuum as a minimal idempotent; Fock space; the grading and the superalgebra reading; the GNS construction; Wick's theorem; Bogoliubov transformations; the Wick rotation; the functional integral and its determinant; the index theorem and its zero-mode count; the generating functional and the effective action; Schwinger–Dyson and Ward–Takahashi; the S-matrix and the LSZ reduction; the spin–statistics and CPT theorems; charge conjugation; the lattice and the thermal circle; the Unruh and Hawking effects; the conformal anomaly; the theta vacuum; bosonisation; the spectral triple; and the quantisation hub that indexes the group. -->
-<a href="articles_physics/the-biquaternion-vacuum-as-a-minimal-idempotent.html">The Biquaternion Vacuum as a Minimal Idempotent</a>
-<!-- the vacuum as a state; idempotents and minimality; the one-mode vacuum; the vacuum is a zero divisor; the minimal left ideal and the one-particle module; the vacuum manifold; the field vacuum is not an idempotent. -->
-
-<a href="articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html">Fock Space and Creation/Annihilation Operators in Biquaternionic Form</a>
-<!-- Fock space and its operator algebra; the one-particle space and the field expansions; creation and annihilation operators from the two quantizations; the number operator and the Born rule; three gradings; one fermionic mode inside the algebra; what its creator creates, and the three conventions that name it; the bosonic case. -->
-
-<a href="articles_physics/the-grading-fermion-parity-and-the-two-sectors-in-biquaternionic-form.html">The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</a>
-<!-- the ambient Clifford algebra $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ as the bosonic/fermionic grading, with $\mathbb{B}=\mathrm{Cl}^0$ the bosonic sector; the parity as a scalar sign $\varepsilon_x=(-1)^{|x|}$ and never a factor of the operator; the twist as the conjugation by the volume element, $\alpha(x)=\Omega x\Omega^{-1}=\varepsilon_x x$; the dagger as an even anti-involution and the sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ as its fixed and anti-fixed loci; the odd slot as a coset, $\mathrm{Cl}^1=\mathbb{B}\gamma$; the reflection read in the Hermitian pairing, $\Theta_a=q(a)\rho_a$; two fermionic steps composing to a bosonic one, $\Theta_x\Theta_z=\Theta_{xz}$; the list of the corpus's distinct $\mathbb{Z}/2$s; $(-1)^F=ie_3$ as an even Hermitian element. -->
-
-<a href="articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html">The Superalgebra Reading and the Odd Extension in Biquaternionic Form</a>
-<!-- the graded commutator and the Lie superalgebra; the dagger as an even anti-involution, and the adjoint of the graded bracket up to the parity sign; the Koszul-signed super-* that the corpus does not use; the supercharge paired with its adjoint, $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H$; the supercharge in the module $\mathrm{Cl}^1=\mathbb{B}\gamma$; the Grassmann envelope and the one fermionic mode; one graded algebra and one odd generator. -->
-
-<a href="articles_physics/the-hermitian-gns-construction-in-the-biquaternion-framework.html">The Hermitian GNS Construction in the Biquaternion Framework</a>
-<!-- the GNS theorem; the states of the biquaternion algebra; the GNS data of a state of $\mathbb{B}$; the Hermitian modular structure; the trace state and the canonical state of the algebra; a state from a measure and the Fourier route, with the failure of the biquaternion norm positivity and the Hermitian pairing that replaces it. -->
-
-<a href="articles_physics/the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a>
-<!-- the Wick theorem in the standard theory; normal ordering and contraction; the one-mode subalgebra; the one-mode Wick identity; the contraction is the propagator; the fermionic sign and the grading. -->
-
-<a href="articles_physics/bogoliubov-transformations-in-biquaternionic-form.html">Bogoliubov Transformations in Biquaternionic Form</a>
-<!-- the standard Bogoliubov transformation; the one-mode transformation inside the algebra; the one-mode canonical group; what the surviving transformations do; the many-mode case and the coset; thermal Bogoliubov and the Unruh and Hawking connection; quadratic Hamiltonians. -->
-
-<a href="articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a>
-<!-- the three subspaces of $\mathbb{B}$; the standard Wick rotation as the coefficient map $W=\mathrm{diag}(-i,1,1,1)$; the two reality conditions on one algebra, $\flat=\bar{\cdot}\circ T$ with $W^{2}=T$ and $W$ a square root of the time reflection; why the compact slice is easier, the six rows of the table being one property under five names; why the change sometimes fails, by the analyticity of the continued quantity in the strip; the split of applications that transfer and those that resist, with the thermal objection answered; what is established and what is interpretation. -->
-
-<a href="articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a>
-<!-- the functional integral and the path integral; the field and the central-scalar action; the Gaussian functional integral; sector factorization; the free scalar field; the Euclidean rotation; localisation to a causally complete region; the measure and the gap. -->
-
-<a href="articles_physics/the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a>
-<!-- the determinant of a module operator; the fundamental determinant and the biquaternion norm; the determinant in the Gaussian integral; regularisation; the fermionic determinant and its phase; the conformal variation of the determinant. -->
-
-<a href="articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a>
-<!-- the Dirac operator and its index; the Atiyah–Singer theorem; the density, the charge and the total derivative; a worked case, the abelian index and the charge-$n$ zero modes; the index and the instanton moduli; the biquaternion reading and the rank-two limitation. -->
-
-<a href="articles_physics/the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action in Biquaternionic Form</a>
-<!-- the connected generating functional; the classical field and the Legendre transform; the effective action and the loop expansion; sector factorization of the effective action; the effective potential and the vacuum; the one-loop term and the determinant. -->
-
-<a href="articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html">The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</a>
-<!-- the total-derivative argument; the Schwinger–Dyson equations from the invariance of the functional integral; the equations in the framework's scalar, spinor and connection theories; the Ward–Takahashi identities and the photon self-energy; what the algebra supplies, what it imports, and what it does not supply. -->
-
-<a href="articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a>
-<!-- the S-matrix in the interaction picture; two notions of unitary in the algebra; the one-mode S-matrix; the S-matrix element and the Born rule; unitarity, the optical theorem and the algebra; the Dyson series, the propagator and the contour.  The amplitude is read on the polar word as scale, phase, velocity and spin-rotation moduli. -->
-
-<a href="articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a>
-<!-- the LSZ formula; amputation as the inverse mass-shell operator; the external wavefunctions; wave-function renormalization as a residue; the scalar and spin reductions, with the two Dirac equations and the two values of the chirality; the one-mode truncation and the gap; the reduction from the functional integral; the spectral representation and the residue. -->
-
-<a href="articles_physics/scattering-for-the-quaternionic-dirac-operator-the-lippmann-schwinger-equation-the-radiation-condition-and-faddeevs-greens-function.html">Scattering for the Quaternionic Dirac Operator: The Lippmann–Schwinger Equation, the Radiation Condition and Faddeev's Green's Function</a>
-<!--the direct-versus-inverse problem for the quaternionic operator: the three-dimensional scattering theory of $D_3+M_k$ with a compactly supported quaternionic potential $m(x)$, read from Bernstein's *Seeing the Invisible and Maxwell's Equations* and motivated by optical coherence tomography; the two one-sided multiplications as the notational pivot; Maxwell's equations as a Dirac-type system in a medium and the force-free case; the two factorisations of the Helmholtz equation, by a scalar shift and by a vector one; the outgoing fundamental solution and the radiation condition, and Faddeev's Green's function for the anisotropic case; the Lippmann–Schwinger equation, its iterated series and the Born approximation; uniqueness and existence; what is transcribed from the source and what is recomputed here, kept apart in the ledger; the open questions the article leaves visible, the inverse problem itself, the isotropic case and the four-variable theory for $\tilde\nabla$. The conventions are those of *Algebra and Element Conventions* and *Introduction to the Biquaternion Universe*, and the direct theory is *Biquaternion Regular Functions*, cited.-->
-
-<a href="articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem in Biquaternionic Form</a>
-<!-- the theorem and its ingredients; spin as a representation of $SU(2)$; the sign of the two-pi rotation; the algebra's own one fermionic mode; microcausality and the equal-time brackets; the energy and the norm; the four quantizations. -->
-
-<a href="articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a>
-<!-- the discrete operations and the algebra; the three operations built explicitly; each operation preserves the free equation; the algebra's conjugations are not the discrete operations; the composition CPT checked as a composition. -->
-
-<a href="articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a>
-<!-- the three conjugations of the spinor module and the division ring $\mathrm{F}=\mathbb{R},\mathbb{C},\mathbb{H}$; the pseudo-automorphism of the complex Clifford algebra and the discrete symmetry group $\{\mathrm{Id},\star,e,e\star\}$; particles and antiparticles as the two summands of $\Delta=S\oplus\bar{S}$; the charge states $+1,0,\bar{0}$ and the truly neutral particle; $C$, $P$, $T$ as elements of the symmetry group and the CPT composition; the division-ring obstruction to a uniform charge-conjugation operator; what the algebra supplies and does not. -->
-
-<a href="articles_physics/the-discrete-lattice-and-the-thermal-circle.html">The Discrete Lattice and the Thermal Circle</a>
-<!-- the comparison of the corpus's two disciplines of discreteness: the algebraic lattice of orders and finite groups of invertibles inside the compact real unit sphere $Sp(1)$, and the thermal lattice of Matsubara frequencies $\omega_n=2\pi n/\beta$ dual to the compact imaginary-time circle. The one principle: every discreteness in the corpus is the Pontryagin dual of a compactness, tabled in four instances — the compact central phase (integer charge), the compact internal group $U(2)$ (internal labels), the compact thermal circle (the Matsubara spectrum) and the compact unit sphere (the finite groups of invertibles and the orders). The meeting point: the thermal circle is the central phase compactified, so the discrete thermal spectrum and the discrete charge are two characters of one compact phase; the difference: the algebraic lattice is a finite *subgroup*, the thermal lattice an infinite *character group*, stated side by side and not conflated; and the named gap, a thermal reading of the orders, recorded as open and not proposed as a formula. physical readings. -->
-
-<a href="articles_physics/the-unruh-effect-in-biquaternionic-form.html">The Unruh Effect in Biquaternionic Form</a>
-<!-- the Rindler wedge and the boost; the boost as the modular Hamiltonian; the two-point function and the analyticity strip; the temperature from the imaginary-time period and from the surface gravity; the statistics; what the framework adds and what it transcribes. -->
-
-<a href="articles_physics/hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a>
-<!-- the Schwarzschild horizon and its surface gravity; the near-horizon region and the Unruh identification; Bogoliubov coefficients and the in and out vacua; from mode mixing to the Planck spectrum; the Hawking temperature; what the framework carries and what it imports. -->
-
-<a href="articles_physics/the-conformal-anomaly-in-biquaternionic-form.html">The Conformal Anomaly in Biquaternionic Form</a>
-<!-- the arena metric declared once and the one metric of the series; the conformal response as a diagonal sum of the matrix of components; its classical vanishing and the improvement term; the quantum response as the variation of the determinant; the spectral sum and the heat-kernel coefficient; the multiplicity of the fibre, four complex and eight real; the coefficients in two and four dimensions and the weights; the rescaling at the three levels; the anomaly and the renormalisation group; the chiral pair, the mass and the non-central determinant; the proper-time representation. -->
-
-<a href="articles_physics/the-theta-vacuum-in-biquaternionic-form.html">The Theta Vacuum in Biquaternionic Form</a>
-<!-- the topological charge and the $\theta$ term; the $\theta$ vacuum and the central phase; the angle as the phase of a determinant; periodicity and the parity reading; the index, the eta invariant and the central integer; the partition function and the topological susceptibility. -->
-
-<a href="articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a>
-<!-- the two-dimensional arena; the abelian bosonization dictionary; the module–centre correspondence; the mass term and the central phase; the anomaly and the central-charge matching; vertex operators and the current algebra; the non-abelian case and the Wess–Zumino term; the gamma formulation. -->
-
-<a href="articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a>
-<!-- spectral triples and their axioms; the biquaternion candidate in cells; the order of the gradient commutator, the first-order condition and the grading; the real structure and the KO-dimension; the spectral dimension and the heat kernel; the distance formula and the metric as output; inner fluctuations, connection fields and the spectral action; the almost-commutative triple and the finite geometry; what is established and what is interpretation; the gamma formulation. -->
-
-<a href="articles_physics/excitation-mode-function-and-the-informational-sector.html">Excitation, Mode Function, and the Informational Sector</a>
-<!-- the mode function as a definite solution; the excitation as an occupation; three objects, three homes; what is asserted to lie in $\mathbb{B}_{\Psi}$ and its verification; in what sense $\mathbb{B}_{\Psi}$ is a Hilbert space; counting the degrees of freedom. -->
-<a href="articles_physics/the-lagrangian-and-the-second-quantisation.html">The Lagrangian and the Second Quantisation: From the Action to the Commutator</a>
-<!-- the four steps, Peierls bracket from the Green functions, Dirac bracket for the constrained cases, promotion to a commutator, representation on a Fock space; which step the corpus takes and which it does not; the promotion as a postulate and not a theorem; the item-by-item ledger of what a quantised theory would add. -->
-
-<a href="articles_physics/the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html">The Quantisation Hub: The Sixteen Articles That Import the Promotion</a>
-<!-- the sixteen articles that turn the classical actions into a quantum field theory, in the order the operation is performed; the six canonical quantisations carry the postulate and the other ten use it; no native ladder, no native vertex, no derivation of the Standard Model. -->
-
-### Particles of spin 1
-
-#### The content
-
-#### The action
-
-#### The field equation and its solutions
-
-#### The fluid's equations and their solutions
-
-#### The quantum apparatus
-
-<a href="articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a>
-<!-- the natural variable and why it is not canonical; representative freedom and the two formulations; the constraint structure; the constraints in biquaternion notation; Gupta–Bleuler quantization; comparison with the scalar field and with the Dirac case. -->
-
-<a href="articles_physics/the-photon-in-biquaternionic-form.html">The Photon in Biquaternionic Form</a>
-<!-- the photon as the quantum of the biquaternion Maxwell field; the polarization space as the material sector; circular polarization and the complex structure of the propagation direction; helicity as an observable in the informational sector; helicity and the self-dual split of the field strength; derived, represented, outside. -->
-
-<a href="articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a>
-<!-- the Proca field in biquaternionic form; the Legendre transform and the constraint structure; canonical quantization; the propagator and the polarization projector; the massless limit and the change of constraint class. -->
-
-<a href="articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html">Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form</a>
-<!-- the rotation algebra as inner derivations; the spin-one multiplet and its weight basis; the internal and orbital parts of angular momentum; general integer spin; quantization of integer-spin fields. -->
-
-<a href="articles_physics/brst-symmetry-in-biquaternionic-form.html">BRST Symmetry in Biquaternionic Form</a>
-<!-- the fixing problem and the ghost fields; the BRST transformation; the fixing fermion and the BRST-exact Lagrangian; ghost number, the BRST charge and cohomology; the massive case as a control. -->
-
-<a href="articles_physics/the-connection-path-integral-in-biquaternionic-form.html">The Connection Path Integral in Biquaternionic Form</a>
-<!-- the functional integral for a connection field; fixing and the Faddeev–Popov construction; the Gaussian integral and the propagator; the measure, the ghosts and what is being summed over. -->
-
-<a href="articles_physics/redundancy-and-the-information-in-the-orbit-in-biquaternionic-form.html">Redundancy and the Information in the Orbit in Biquaternionic Form</a>
-<!-- the orbit as a torsor; the orbit as the fibre of the curvature map; what the orbit carries, redundancy not state; information-theoretic invariance of the orbit; the global information of the orbit, holonomy; redundancy and loss, three operations compared. -->
-
-<a href="articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a>
-<!-- the non-abelian action and its orbit; fixing and the Faddeev–Popov determinant; the ghost fields and the Grassmann envelope; the propagator and representative-parameter independence; the quantum Yang–Mills equation; representative slicing and the Gribov ambiguity. -->
-
-<a href="articles_physics/lattice-connection-theory-and-the-biquaternion-path-integral.html">Lattice Connection Theory and the Biquaternion Path Integral</a>
-<!-- why a regulator; the lattice carrier; the plaquette and the Wilson action; the lattice path integral; strong coupling, the area law and confinement; the continuum limit and the running coupling.  The algebra's own orders are read as a discrete spacetime lattice, the real slice Euclidean and the complex order lightlike. -->
-
-<a href="articles_physics/wilson-loops-in-biquaternionic-form.html">Wilson Loops in Biquaternionic Form</a>
-<!-- the holonomy of the connection; local invariance and Stokes' theorem; the small loop and the field strength; the Gaussian average of the loop; the Aharonov–Bohm phase; the non-abelian loop and the surface; the loop as an observable; the loop equation. -->
-
-#### The applications
-
-<a href="articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.html">The Vacuum State and the Casimir Effect in Biquaternionic Form</a>
-<!-- the vacuum state in the framework; the zero-point energy and the trace part; the parallel-plate configuration and the divergent sum; the spectral zeta function route; the heat kernel and the modular relation; the polarizations and the factor of two; the Casimir force and its verifications. -->
-
-### Particles of spin 1/2
-
-#### The content
-
-#### The action
-
-#### The field equation and its solutions
-
-#### The fluid's equations and their solutions
-
-#### The quantum apparatus
-
-<a href="articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a>
-<!-- the classical field and its conjugate momentum; equal-time anticommutation relations; the field expansion in the plane-wave solutions; anticommutators of the mode operators; the Hamiltonian and the normal-ordering constant; spin and statistics; the relation to the KMS thermal framework. -->
-
-<a href="articles_physics/the-dirac-sea-hole-theory-and-antimatter-in-biquaternionic-form.html">The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form</a>
-<!-- the negative-energy branch and Dirac's hole theory; the prediction and discovery of the positron; the objections to the filled sea; the modern reinterpretation and the Fock vacuum; vacuum polarization; the condensed-matter Dirac sea; the biquaternion reading, the mode-algebra reinterpretation, the normal-ordering constant and charge conjugation, and the honest limits. -->
-
-<a href="articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a>
-<!-- the operator-valued field; the field as the odd generator; the operator-valued observables; the two-point function; what is standard and what is the algebra's. -->
-
-<a href="articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html">The Fermionic Fock Space in Biquaternionic Form</a>
-<!-- the one-particle space; the exterior algebra; the Lorentz content of the Fock space; the functor $\Gamma$, the grading and the parity; the inner product, states and the trace pairing. -->
-
-<a href="articles_physics/grassmann-coherent-states-in-biquaternionic-form.html">Grassmann Coherent States in Biquaternionic Form</a>
-<!-- the Grassmann algebra as the odd extension; the coherent states; the analytic representation; the biquaternion reading; the thermal kernel. -->
-
-<a href="articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a>
-<!-- the two-point function of the quantized Dirac field; the pole structure and the contour; Feynman, retarded and advanced, and what selects the contour; the biquaternion form of the prescription; the propagator as a distribution; the relation to the thermal two-point function; what the algebra adds and what it does not. -->
-
-<a href="articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a>
-<!-- the action in biquaternion form; the Berezin measure; the Gaussian integral and the determinant; the Pfaffian and the real structure; the Euclidean integral and the boundary conditions; parity sectors, the phase and the sign problem. -->
-
-#### The applications
-
-<a href="articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a>
-<!-- the naive lattice action and the sixteen tastes; the taste-exchange symmetry; the Nielsen–Ninomiya no-go theorem and its Poincaré–Hopf index count on the Brillouin-zone torus; the resolutions and the hypothesis each violates; the biquaternion reading, the discretized gradient, the honest negative result, and the proximity to the Dirac–Kähler and staggered constructions. -->
-
-<a href="articles_physics/dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.html">Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form</a>
-<!-- the honeycomb lattice and the Dirac cones; the two isospins against the framework's two minimal ideals and the counting caution; the gap as the chirality-mixing mass; topological insulators, the $\mathbb{Z}_2$ invariant and the helical edge; the three-dimensional surface Dirac cone; Klein tunnelling in graphene $p$–$n$ junctions; the biquaternion reading and the limits of the transcription. -->
-
-<a href="articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a>
-<!-- the one-site case; the many-site map; the map as an algebra isomorphism and its grading; consequences for the chain. -->
-
-<a href="articles_physics/kramers-degeneracy-and-antiunitary-symmetry-in-biquaternionic-form.html">Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form</a>
-<!-- antiunitary maps and the two spaces; time reversal on the spinor module; Kramers degeneracy; verification; the quaternionic structure; the three symmetry classes; what breaks the symmetry. -->
-
-<a href="articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a>
-<!-- the vertex function and the form factors; the biquaternion transcription; the one-loop correction; what the algebra supplies here; verification. -->
-
-### Particles of spin 0
-
-#### The content
-
-#### The action
-
-<a href="articles_physics/the-lagrangian-and-the-goldstone-effective-action.html">The Lagrangian and the Goldstone Effective Action</a>
-<!-- the derivative-only effective action, $\tfrac12(\partial\vartheta)^2+c_4(\partial\vartheta)^4/f^4+\cdots$, whose shape is the theorem; the variation giving $\Box_\Phi\vartheta=0$ at leading order; the absence of a non-derivative term as the masslessness, the shift the selection rule; no constraint, because the symmetry is nonlinearly realized and not made local; the Adler zero as a per-vertex derivative count and the universality that follows from it; the shift current $j_\mu=f\partial_\mu\vartheta$ with $f$ the normalization and the expansion scale at once; and the boundary, the coefficients and the decay constant imported. -->
-
-#### The field equation and its solutions
-
-#### The fluid's equations and their solutions
-
-#### The quantum apparatus
-
-<a href="articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a>
-<!-- the classical field and its conjugate momentum; the field as a central-valued object; equal-time commutation relations; the mode expansion; the mode algebra and the Fock space; the Hamiltonian, momentum and charge; microcausality and the commutator function. -->
-
-<a href="articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html">The Quantized Scalar Field in Biquaternionic Form</a>
-<!-- the field operator and its value space; the positive- and negative-frequency parts; real and complex scalar fields; the field algebra and commutators as c-numbers; the two-point functions and the propagator; transformation of the field operator; the Schrödinger functional and the field basis. -->
-
-<a href="articles_physics/the-scalar-fock-space-in-biquaternionic-form.html">The Scalar Fock Space in Biquaternionic Form</a>
-<!-- the one-particle space and its module structure; the little group and one state per momentum; the symmetric algebra and the occupation basis; the vacuum state; the number operator and the two gradings; why there is no scalar Fock space inside biquaternions; coherent states and the central phase. -->
-
-<a href="articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html">The Scalar Field Path Integral in Biquaternionic Form</a>
-<!-- from the operator formalism to the functional integral; the phase-space form and the semiclassical kernel; the generating functional and the free Gaussian; equivalence with the operator formalism; the Euclidean formulation and the lattice determinant; the vacuum persistence amplitude and pair creation; interactions and the loop expansion. -->
-
-#### The applications
-
-<a href="articles_physics/scalar-pair-creation-in-biquaternionic-form.html">Scalar Pair Creation in Biquaternionic Form</a>
-<!-- the background and the mode equation; in and out regions and the Bogoliubov transformation; the number of created pairs and the vacuum persistence amplitude; an exactly solvable case, the sudden quench; the biquaternion reading. -->
-
-<a href="articles_physics/goldstones-theorem-in-biquaternionic-form.html">Goldstone's Theorem in Biquaternionic Form</a>
-<!-- the symmetry and its spontaneous breaking; the potential, the vacuum manifold and the order parameter; the Goldstone mode and the mass matrix; the Goldstone current and the decay constant; the theorem and its proof; counting the Goldstone bosons and the coset; the effective Lagrangian and the soft limit. -->
-
-### Particles of other spins
-
-#### The content
-
-#### The action
-
-#### The field equation and its solutions
-
-#### The fluid's equations and their solutions
-
-#### The quantum apparatus
-
-<a href="articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a>
-<!-- the field, its constraint and transversality; connection structure, massless and massive; canonical quantization; the propagator and its fixing; consistency of the coupled theory; the pattern across the spins. -->
-
-<a href="articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html">Canonical Quantization of the Biquaternion Graviton Field</a>
-<!-- the linearized field and its local symmetry; the count of degrees of freedom; helicity and the massless little group; canonical quantization; the propagator and the coupled theory. -->
-
-#### The applications
-
-<a href="articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.html">Anyons and Braid Statistics in Biquaternionic Form</a>
-<!-- the braid group and the failure of the permutation group; the flux–charge composite and the Aharonov–Bohm phase; the Chern–Simons origin of fractional statistics; non-abelian anyons; the two-sector statement. -->
-
-### Focus on informational aspects
-
-<a href="articles_physics/relative-entropy-and-the-biquaternion-framework.html">Relative Entropy and the Biquaternion Framework</a>
-<!-- relative entropy, the standard quantity; the states of the biquaternion algebra; the relative entropy of two biquaternion states; Araki's relative modular operator; relative entropy in quantum field theory. -->
-
-<a href="articles_physics/strong-subadditivity-in-the-biquaternion-framework.html">Strong Subadditivity in the Biquaternion Framework</a>
-<!-- the inequality; the biquaternion tensor product; strong subadditivity from monotonicity of relative entropy; three tripartite states; the equality condition; strong subadditivity in quantum field theory. -->
-
-<a href="articles_physics/the-reeh-schlieder-theorem-under-the-biquaternion-framework.html">The Reeh–Schlieder Theorem under the Biquaternion Framework</a>
-<!-- the Reeh–Schlieder theorem; cyclicity and separating in the Hermitian GNS construction; the biquaternion vacuum; a finite model of the hypothesis; the Reeh–Schlieder lemma; from the single mode to the field algebra. -->
-
-<a href="articles_physics/the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html">The Bisognano–Wichmann Theorem under the Biquaternion Framework</a>
-<!-- the theorem; the meeting point of the modular and thermal-time articles; why the wedge and not a general region; the boost generator on the wedge; the modular flow reproduces the boost; the modular conjugation as PCT and reflection; the biquaternion boost rotor and the modular generator. -->
-
-<a href="articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.html">The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form</a>
-<!-- the modular Hamiltonian; the first law of entanglement; the relative modular Hamiltonian; the entanglement Hamiltonian of a qubit; why the law is exact to first order; the entanglement Hamiltonian of a subsystem; applications. -->
-
-<a href="articles_physics/entanglement-entropy-and-the-replica-trick-in-biquaternionic-form.html">Entanglement Entropy and the Replica Trick in Biquaternionic Form</a>
-<!-- entanglement entropy and Rényi entropies; the replica trick; the replica structure of the biquaternion tensor power; the Schmidt decomposition and the entanglement spectrum; a worked two-qubit example. -->
-
-<a href="articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.html">The Area Law of Entanglement Entropy in Biquaternionic Form</a>
-<!-- the area law; why locality gives an area law; the discrete area law in the biquaternion chain; the area law in the field; the volume law and its suppression; the area law and strong subadditivity. -->
-
-## Biquaternion Universe Relativistic Quantum Thermodynamics
-
-<!-- the thermal state and its fluid limit: twenty-two articles put a density operator on the field and take the fluid limit of the result, in three layers and a ledger — the state (1 to 7), locality and the modular structure (8 to 14), the fluid at a point and transport (15 to 21), and the ledger (22); the four transcriptions are 6, 13, 14 and 21; the twelve-article field layer that opened the category until the split is dissolved, its general equations in *From the Field Equation to the Fluid* under *Biquaternion Universe Action* and its reading of the element under *The Biquaternion Universe and Its Objects* in *Biquaternion Universe Relativity*, and the quantized field the trace is taken over is the *Biquaternion Universe Quantum Fields* block that immediately precedes this one, so that the state layer begins where the field's triple is a triple of functions and not a state and the trace has a Fock space to run over; layer 3b opens with the KMS condition, the structural statement, and the local thermal structure applies it; an entry is uncommented when its article exists. -->
-
-### Temperature and the State
-
-<!-- temperature and the state: the Wigner function and its relativistic extension into quantum kinetics; the partition function, quantum thermodynamics and the Matsubara formalism; the equilibrium partition function in a moving frame; and the Schwinger–Keldysh formalism. -->
-<a href="articles_physics/the-wigner-function-in-biquaternionic-form.html">The Wigner Function in Biquaternionic Form</a>
-<!-- the biquaternionic $W$ defined against the standard $x$-$p$ Wigner function; the marginals as density and current; what the algebra supplies and what is imported. -->
-
-<a href="articles_physics/relativistic-wigner-function-and-quantum-kinetics.html">Relativistic Wigner Function and Quantum Kinetics</a>
-<!-- the $\hbar$-expansion of the Wigner object; the classical drift and the corrections at order $\hbar^{2}$; the kinetic equation cited from the Schwinger-Keldysh article rather than repeated. -->
-
-<a href="articles_physics/the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>
-<!-- the partition function and the thermal state; the trace as a scalar extraction; the thermal operator and the partition function; what the trace discards; imaginary time and where the material sector enters; whether there is a genuine modification.  The logarithm of the norm is read as a chemical potential, the total potential being $\log\lvert N\rvert+V$. -->
-
-<a href="articles_physics/quantum-thermodynamics-in-biquaternionic-form.html">Quantum Thermodynamics in Biquaternionic Form</a>
-<!-- the Gibbs state and the convergence of $Z$; thermodynamic quantities as functionals of the state; the variational characterisation; Legendre structure and thermodynamic identities; low- and high-temperature limits; the KMS condition as the characterisation of the same state. -->
-
-<a href="articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a>
-<!-- material time and the thermal circle; the Matsubara frequencies and the thermal propagator; the partition function and the free energy; Matsubara sums and thermal factors; the Matsubara Green's function and its continuation; finite-temperature Feynman rules.  The computation is done in the material sector: the wave biquaternion is $i\omega_ne_0+\mathbf p\in\mathbb{B}_{\Phi}$, the mass-shell operator is the Hermitian form of that element (positive) and not the biquaternion norm (indefinite), and the thermal correlator's positivity is the Bochner theorem at the central root $\rho=i$, the root of the kernel $e^{i\omega_n\tau}$. physical readings. -->
-
-<a href="articles_physics/equilibrium-partition-function-in-a-moving-frame.html">Equilibrium Partition Function in a Moving Frame</a>
-<!-- the thermal state read in a frame where $\tilde V_\Phi=\gamma(ic\,e_t+\vec v)$; what the boost does to $Z$ and to the temperature; the rest-frame object of the partition-function article as the special case; transcription. -->
-
-<a href="articles_physics/the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a>
-<!-- the closed-time-path contour and the doubled fields; the branch doubling and the algebra's doubling; the Keldysh rotation and the matrix of Green's functions; equilibrium and the fluctuation–dissipation relation; the Kadanoff–Baym equations; the contour generating functional. -->
-
-### Locality and the Modular Structure
-
-<a href="articles_physics/the-kms-condition-and-the-biquaternion-framework.html">The KMS Condition and the Biquaternion Framework</a>
-<!-- the KMS condition; the material sector and its intrinsic imaginary time; the KMS condition in the biquaternion framework; directions for future work. -->
-
-<a href="articles_physics/the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: k_B as the Scale of Imaginary Time</a>
-<!-- answers the question "Is $k_B$ a scale of the same kind as $c$?"; the local complex structure recalled as a fixed algebraic direction with one real positive local scale $c$, so $c$ is required by the algebra to give the norm a length; the thermal structure read on the same direction with the scale $\beta=\hbar/(k_BT)$, pointwise as $\beta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, global only in equilibrium, with the exact identity $c\beta=\hbar c/(k_BT)$; the parallel (a fixed direction with one local real scale) and the disanalogy (an algebra scale against a state scale), the verdict being that a local thermal structure exists on the field of states and not on the manifold — a pointwise period, not a pointwise metric; the checkable consequence, Tolman's law $T\sqrt{-g_{00}}=\text{const}$ on the framework's $g_{00}=-c^2$, giving $Tc=\text{const}$ and $T\propto1/c\propto n$, so the local temperature tracks the local light speed; the Unruh and Hawking temperatures as the corpus's two established local temperatures and the thermal circle with the Matsubara frequencies as the spectrum of the same algebraic direction read with the state's scale; the relation to the Wick rotation; what is established, what is interpretation, what is open. physical readings. -->
-
-<a href="articles_physics/the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html">The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework</a>
-<!-- the Tomita–Takesaki construction; why the hypotheses are load-bearing; the modular flow as the KMS flow; the finite-dimensional realisation in the biquaternion algebra; the biquaternion candidate for $S$; the type of the algebra and inner versus outer modular flow. -->
-
-<a href="articles_physics/the-modular-hamiltonian-in-biquaternionic-form.html">The Modular Hamiltonian in Biquaternionic Form</a>
-<!-- the generator of the modular flow; the modular Hamiltonian in the biquaternion algebra; verification that $\tilde K$ generates the modular flow; the trace formula and the Gibbs form; whether the modular Hamiltonian is local. -->
-
-<a href="articles_physics/thermal-time-and-the-modular-flow-in-the-biquaternion-framework.html">Thermal Time and the Modular Flow in the Biquaternion Framework</a>
-<!-- the modular flow; the thermal time hypothesis; the modular flow of a biquaternion state; thermal time in the framework; the field case. -->
-
-<a href="articles_physics/curved-spacetime-kms-and-modular-flow.html">Curved-Spacetime KMS and Modular Flow</a>
-<!-- the covariant statement $\beta=\beta(x)$ on a Killing horizon; Bisognano-Wichmann, Unruh and Hawking cited as the flat and near-horizon cases; nothing re-derived; transcription. -->
-
-<a href="articles_physics/covariant-local-equilibrium-and-tolman-temperature.html">Covariant Local Equilibrium and Tolman Temperature</a>
-<!-- the rigidity condition on the velocity components, $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0$; the pointwise temperature of the local-thermal-structure article shown to satisfy it; Tolman's law quoted, not re-derived. -->
-
-### The Fluid at a Point, and Transport
-
-<a href="articles_physics/the-local-thermal-state-of-a-fluid.html">The Local Thermal State of a Fluid</a>
-<!-- $\rho_{\mathrm{num}}(x)$, $p_{\mathrm{th}}(x)$ and $\tilde V_\Phi(x)$ at the pointwise temperature; the flow written as the element, low index; what a local equation of state requires. -->
-
-<a href="articles_physics/the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>
-<!-- $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ in the proper density and $\beta$; $\beta$ as the circumference of the imaginary-time circle, a length; the gradient correction to the pressure. -->
-
-<a href="articles_physics/the-local-entropy-current.html">The Local Entropy Current</a>
-<!-- $\tilde J_{\Phi,\mathrm{ent}}$, declared Hermitian; the entropy production $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}})\ge0$; the second law as one divergence. -->
-
-<a href="articles_physics/the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a>
-<!-- $\tilde V_{\Phi,\mathrm{sup}}$ and $\tilde V_{\Phi,\mathrm{nrm}}$; the condensate that carries no entropy and the normal component that does; mutual friction; the zero-temperature limit as the pure-state fluid. -->
-
-<a href="articles_physics/spin-fluid-physics-in-biquaternionic-form.html">Spin Fluid Physics in Biquaternionic Form</a>
-<!-- the spin polarization tensor and $\mu_{\mathrm{spn}}$; rotational flow and spin gradients coupled; spin diffusion and relaxation; the warning that $\partial p/\partial\omega_{\lambda\nu}\neq S^{\mu\nu}$. -->
-
-<a href="articles_physics/spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a>
-<!-- the spin tensor's conservation law from the rotor's own equation of motion; the Frenkel and Weyssenhoff conditions; what the algebra supplies that the tensor form does not; framework content, not transcription. -->
-
-<a href="articles_physics/causal-dissipative-fluid-physics-in-biquaternionic-form.html">Causal Dissipative Fluid Physics in Biquaternionic Form</a>
-<!-- Israel-Stewart-type corrections; the relaxation time and causal propagation; positivity and stability as the closing section; transcription. -->
-
-### The Ledger
-
-<a href="articles_physics/the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.html">The Thermodynamics of a Quantum Fluid: Status of the Derivation</a>
-<!-- the ledger; framework content against the transcription articles 6, 13, 14 and 21; the second modular-Hamiltonian article still in Biquaternion Universe Quantum Fields, unmerged; the questions the category leaves open, and why it stops where it does. -->
 
 ## Biquaternion Universe Gravity and Cosmology
 
@@ -2958,6 +3079,9 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 <a href="articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.html">Quantum Gravity in the Biquaternion Framework: The Two-Sided Obstruction and the Modular Temperature</a>
 <!-- what quantisation of the gravitational sector would require; why the representative quantisation does not transfer, one-sided against two-sided; established, what the quantisation programme can build on; obstacles with a known route; obstacles with no route yet; the modular route to a horizon temperature; the ledger; the gaps in order. -->
 
+<a href="articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html">Canonical Quantization of the Biquaternion Graviton Field</a>
+<!-- the linearized field and its local symmetry; the count of degrees of freedom; helicity and the massless little group; canonical quantization; the propagator and the coupled theory. -->
+
 ### The Source: Matter Into the Frame
 
 <a href="articles_physics/matter-into-the-frame-the-variation-that-defines-the-source.html">Matter Into the Frame: The Variation That Defines the Source</a>
@@ -2985,6 +3109,21 @@ ho_l$ divides, the force weight $f_k-f_l$ multiplies; the four differences from 
 
 <a href="articles_physics/black-hole-thermodynamics-in-biquaternionic-form.html">Black Hole Thermodynamics in Biquaternionic Form</a>
 <!-- conventions and units; the horizon as a thermodynamic system; the temperature from the Hawking article; the entropy as the horizon area; the first law, term by term; the Smarr relation by scaling; beyond the asymptotically flat case. -->
+
+<a href="articles_physics/hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a>
+<!-- the Schwarzschild horizon and its surface gravity; the near-horizon region and the Unruh identification; Bogoliubov coefficients and the in and out vacua; from mode mixing to the Planck spectrum; the Hawking temperature; what the framework carries and what it imports. -->
+
+<a href="articles_physics/curved-spacetime-kms-and-modular-flow.html">Curved-Spacetime KMS and Modular Flow</a>
+<!-- the covariant statement $\beta=\beta(x)$ on a Killing horizon; Bisognano-Wichmann, Unruh and Hawking cited as the flat and near-horizon cases; nothing re-derived; transcription. -->
+
+<a href="articles_physics/the-unruh-effect-in-biquaternionic-form.html">The Unruh Effect in Biquaternionic Form</a>
+<!-- the Rindler wedge and the boost; the boost as the modular Hamiltonian; the two-point function and the analyticity strip; the temperature from the imaginary-time period and from the surface gravity; the statistics; what the framework adds and what it transcribes. -->
+
+<a href="articles_physics/the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html">The Bisognano–Wichmann Theorem under the Biquaternion Framework</a>
+<!-- the theorem; the meeting point of the modular and thermal-time articles; why the wedge and not a general region; the boost generator on the wedge; the modular flow reproduces the boost; the modular conjugation as PCT and reflection; the biquaternion boost rotor and the modular generator. -->
+
+<a href="articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.html">The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form</a>
+<!-- the modular Hamiltonian; the first law of entanglement; the relative modular Hamiltonian; the entanglement Hamiltonian of a qubit; why the law is exact to first order; the entanglement Hamiltonian of a subsystem; applications. -->
 
 ### Cosmology
 

@@ -1,5 +1,16 @@
 # __The Thermodynamics of a Quantum Fluid: Status of the Derivation__
 
+**Status, 2026-11-27.** The category this article audits is dissolved. Seventeen of its articles are now the section
+`### From the Fluid Equations to Thermodynamics Equations` in *Biquaternion Universe Action* — the state and its
+functionals, the kinetic bridge, the local thermal state and the three tests, the departures from equilibrium, and this
+ledger; five are in `#### Thermality` under *Biquaternion Universe Relativity*, where the parameter is defined
+geometrically and algebraically; four are in *Horizons and Their Thermodynamics* under *Biquaternion Universe Gravity and
+Cosmology*; and one, the Reeh–Schlieder theorem, is with the state space in *The Ladder and the State Space*. The audit
+below keeps the numbering of the former category, which counts twenty-two rows because it was written before the last
+five articles were added: the counts are the record's, not the section's, and no argument here depends on either the
+dissolution or the five.
+
+
 ## Introduction
 
 The category's question is whether a quantum field has a thermodynamics, and its answer is a ledger: four of its twenty-two articles transcribe standard relativistic thermodynamics into the corpus's letters, and the remaining eighteen add something the letters make available and the standard formulation does not.
@@ -112,9 +123,9 @@ Why the four transcriptions are the category's spine. Each is the point at which
 
 ## The Modular Sector, and the Unmerged Second Article
 
-The category holds one modular-Hamiltonian article, and a second remains in *Biquaternion Universe Quantum Fields*.
+The category holds two modular-Hamiltonian articles, and since the dissolution of the field block they stand adjacent in one section.
 
-[The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html) is the category's article: the generator of the modular flow, its verification in the algebra, the pairing formula and the Gibbs form. The second, [The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form](the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.html), sits in the neighbouring section and has not been merged into this one. The ledger states the fact and does not move the article: moving an entry is a menu decision and this article does not make menu decisions.
+[The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html) is the category's article: the generator of the modular flow, its verification in the algebra, the pairing formula and the Gibbs form. The second, [The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form](the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.html), stands beside it in the same section and has not been merged into this one. The ledger states the fact; the menu decision that put the two together was taken on 2026-11-27, and it merged neither.
 
 The first law of entanglement is the thermal statement closest to the fluid layer's Gibbs–Duhem relation, and a reader who follows the category's chain from the modular Hamiltonian to the equation of state will not find it. The gap is a shelf arrangement and not a mathematical one, and the ledger records it as the category's one structural debt.
 
@@ -193,7 +204,10 @@ $\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546
 
 One Hermiticity declaration, made in [The Local Entropy Current](the-local-entropy-current.html) and inherited by every later inequality. No inequality in the category writes $\mathrm{Re}$ after it, and a reader who checks that single fact has checked the category's thermodynamic consistency.
 
-The second modular-Hamiltonian article remains in *Biquaternion Universe Quantum Fields*. The ledger records it and does not move it.
+The second modular-Hamiltonian article stands beside the first no longer: the geometric one, which generates a Gibbs
+weight, sits in `#### Thermality` under *Biquaternion Universe Relativity*, and the gravitational one, which is the
+entanglement Hamiltonian of a wedge, sits in *Horizons and Their Thermodynamics* under *Biquaternion Universe Gravity and
+Cosmology*. The ledger records the separation and does not merge the two.
 
 Ten questions are open, and the ledger names them so that the next article need not re-argue where the last one stopped.
 

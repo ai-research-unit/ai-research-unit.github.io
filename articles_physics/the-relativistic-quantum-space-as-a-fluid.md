@@ -143,16 +143,20 @@ The domain restriction is not an approximation. Nothing in the reading is expand
 ### Not second quantization
 
 One element is not a field operator. The reading has no Fock space, no creation or annihilation operator, no vacuum, no Wick theorem and no S-matrix. The quantized
-field, with its grading, its GNS construction and its scattering theory, is *Biquaternion Universe Quantum Fields*, which opens with [The Biquaternion Vacuum as a Minimal
-Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), and no result of that block is used here.
+field, with its grading, its GNS construction and its scattering theory, is *From the Field Equation to the Quantum Field* in *Biquaternion Universe
+Action*, whose ladder begins with [The Biquaternion Vacuum as a Minimal Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), and no result of that
+section is used here.
 
 The word is a statement about single elements, not about operators. The polar decomposition applies to the field operator's classical values, and that extension is not made here. The fluid of this reading is the fluid of a classical element obeying a quantum-mechanical wave equation.
 
 ### Not thermodynamics
 
 A density and a velocity are not a thermal state. The reading has no temperature, no entropy, no partition function and no equation of state at a point. A fluid needs
-a state as well as a kinematics, and the state is the subject of *Biquaternion Universe Relativistic Quantum Thermodynamics*, which puts a density operator on the same field —
-the construction is [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) — and takes the fluid limit of the result.
+a state as well as a kinematics, and the state is the subject of *From the Fluid Equations to Thermodynamics Equations*, in
+*Biquaternion Universe Action*, which puts a density operator on the same field — the construction is [The Local Thermal
+State of a Fluid](the-local-thermal-state-of-a-fluid.html) — and takes the fluid limit of the result. The band's own rung,
+`The fluid's thermodynamic equations and their solutions`, follows its fluid slot and is empty for this carrier like the
+other five.
 
 The reading and the thermal block meet at one object and nowhere else. The stress tensor of the scalar field is an article of this reading and it is also the object the thermal block's equation of state is built on. The meeting is recorded in both articles and is not a dependency of this one.
 

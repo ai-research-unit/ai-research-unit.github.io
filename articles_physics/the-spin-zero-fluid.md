@@ -162,7 +162,8 @@ What does exist is a stress, and the stress is not a pressure. The quantum force
 
 The reader's check is the order of the derivatives. A barotropic pressure makes the force density $-\vec\nabla_\Phi p(\rho_{\mathrm{num}})=-p'(\rho_{\mathrm{num}})\vec\nabla_\Phi\rho_{\mathrm{num}}$, a term along the density's gradient and first order in it. The force density here is $\rho_{\mathrm{num}}\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and $Q_{\mathrm{qnt}}$ already carries two derivatives of $\ln\rho_{\mathrm{num}}$, so the force is third order. No function of the density's value can turn two derivatives into none.
 
-A thermal fluid at a point has an equation of state, because its state is a density operator with a temperature and the pressure is a functional of that state. The scalar fluid of this block has no temperature and no state; it has a density and an action. The equation of state appears in *Biquaternion Universe Relativistic Quantum Thermodynamics* and it is not anticipated here.
+A thermal fluid at a point has an equation of state, because its state is a density operator with a temperature and the pressure is a functional of that state. The scalar fluid of this block has no temperature and no state; it has a density and an action. The equation of state appears in *From the Fluid Equations to Thermodynamics Equations*, in *Biquaternion Universe Action*,
+and it is not anticipated here.
 
 ## The Criterion Applied
 
