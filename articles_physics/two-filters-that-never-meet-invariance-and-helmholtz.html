@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Filters That Never Meet: Invariance and Helmholtz — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The section&#x27;s fourth filter asks is this term allowed inside the density, and the sixth asks does this equation come from any density at all.…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="two-filters-that-never-meet-invariance-and-helmholtz"><strong>Two Filters That Never Meet: Invariance and Helmholtz</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The section's fourth filter asks <em>is this term allowed inside the density</em>, and the sixth asks <em>does this equation come from any density at all</em>. <strong>The two questions are about different objects — a term and an equation — they are decided by different kinds of mathematics, and neither constrains the other.</strong> This article states the non-interference explicitly, because the corpus's most-quoted sentence is the second filter's and its most-used sentence is the first's, and they are routinely read as one.</p>
+<p><strong>Why the confusion is natural and why it must be broken.</strong> Both filters produce the phrase <em>there is no action for that</em>. <strong>But one means <em>the density cannot contain this term</em> and the other means <em>the equation cannot be the variation of any density</em></strong>, and the difference shows in the corpus's own cleanest case: <strong>a viscous fluid has no gauge group at all</strong>, so the phrase as applied to viscosity cannot be the first filter's at any group.</p>
+<p><strong>What the article has to do.</strong> State the two questions side by side and show they are about different objects; show the second to be group-blind; show that a group cannot manufacture a density that Helmholtz forbids; show that passing Helmholtz does not mean an admitted term exists; and then separate the four grades the corpus actually uses, of which two are routinely conflated.</p>
+<h2 id="the-two-questions-side-by-side">The Two Questions, Side by Side</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>invariance</th>
+<th>Helmholtz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>about</strong></td>
+<td>a term $T$ in a density</td>
+<td>an equation $E$</td>
+</tr>
+<tr>
+<td><strong>asks</strong></td>
+<td>does $\delta_\alpha T=0$ for every generator?</td>
+<td>is $DE=(DE)^\dagger$ in the $L^2$ pairing?</td>
+</tr>
+<tr>
+<td><strong>mathematics</strong></td>
+<td>linear algebra on the candidate space</td>
+<td>differential identities on the linearisation</td>
+</tr>
+<tr>
+<td><strong>depends on the group</strong></td>
+<td><strong>yes</strong>, essentially</td>
+<td><strong>no</strong>, not at all</td>
+</tr>
+<tr>
+<td><strong>answer</strong></td>
+<td>admitted, not admitted, admitted after breaking</td>
+<td>variational at unit multiplier, at a multiplier, not at all</td>
+</tr>
+<tr>
+<td><strong>failure means</strong></td>
+<td>the term is absent</td>
+<td>no density produces this equation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rows that matter are the fourth and the last.</strong> The fourth says the second filter has no group in it; the last says the two failures mean different things. <strong>A term's absence and an equation's non-existence are not the same absence</strong>, and the corpus's shorthand uses one phrase for both.</p>
+<h2 id="the-second-filter-is-group-blind">The Second Filter Is Group-Blind</h2>
+<p><strong>The theorem's hypothesis mentions no group.</strong> Helmholtz's test is the self-adjointness of the equation's linearisation with respect to the $L^2$ pairing; the adjoint moves derivatives by integration by parts and flips signs, and <strong>nothing in that operation refers to a symmetry</strong>. The theorem holds for a mechanical equation in one variable and for a field equation in four, as <a href="the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html">the Helmholtz article</a> states: "a field equation and a mechanical equation are graded by the same list."</p>
+<p><strong>The corpus's proof of blindness is its own quoted failure.</strong> The damped oscillator fails condition 2 for every nonzero damping, and <strong>the viscous fluid is the field version of the same failure</strong> — one line, exact, and with no group anywhere in the neighbourhood. <strong>If a group were what decides existence, a viscous fluid would have to be described by some group's theory and would fail for a group reason. It is not, and it does not.</strong></p>
+<p><strong>The converse blindness is the sharper one.</strong> The same theorem passes for <strong>every carrier the corpus uses</strong> — spin $0$, $\tfrac12$ and $1$ at unit or at a constant local multiplier — <strong>and it passes regardless of which group, if any, gauges them.</strong> <a href="the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html">The Helmholtz article</a> records the reason: the Dirac operator is not self-adjoint in the ordinary pairing and becomes so in the one weighted by $\gamma^0$, which is the $\bar\psi$ of the Dirac density. <strong>The $\gamma^0$ is a multiplier, and a multiplier knows nothing about $\mathrm{SU}(3)$.</strong></p>
+<p><strong>So the second filter's output is one binary answer per equation, and the answer is the same across groups.</strong> That is the sense in which it "does not know about groups" — not that it is ignorant of symmetry, but that a change of group cannot change its verdict.</p>
+<h2 id="a-group-cannot-manufacture-a-density">A Group Cannot Manufacture a Density</h2>
+<p><strong>The direction that does hold, and it is one-way.</strong> Invariance operates on candidates that are already densities. <strong>If no density's variation produces the equation — if the linearisation is not self-adjoint — then no group's invariance requirement can create one</strong>, because invariance is a condition <em>on</em> a density and not a construction <em>of</em> one.</p>
+<p><strong>Stated as a containment.</strong> Let $\mathcal D$ be the densities and $\mathcal E$ the equations. The variation map $\delta S/\delta$ takes $\mathcal D$ onto the variational equations. <strong>Invariance selects a subspace of $\mathcal D$; Helmholtz characterises the image.</strong> Narrowing the domain cannot enlarge the image, so <strong>the second filter's veto survives every choice of group</strong>: a non-variational equation is non-variational in every sector, and the sectors' groups are irrelevant to it.</p>
+<p><strong>That is the whole of the positive interaction, and it is asymmetric.</strong> Helmholtz bounds what any group can achieve; the group does not bound what Helmholtz can accept.</p>
+<h2 id="passing-helmholtz-does-not-mean-an-admitted-term-exists">Passing Helmholtz Does Not Mean an Admitted Term Exists</h2>
+<p><strong>The converse error, and it is the one the corpus is more likely to make.</strong> A carrier can pass the second filter and carry no admitted term. <strong>The cleanest case is a massless abelian vector before gauge fixing</strong>: its quadratic kernel satisfies Helmholtz, and the kernel is not invertible — the gauge orbit is a flat direction. <strong>Non-invertibility is not non-existence of an action</strong>; it is the absence of a propagator, and the two are different diagnoses with different repairs.</p>
+<p><strong>The repairs are different, which is the test of the distinction.</strong></p>
+<ul>
+<li><strong>A non-invertible kernel is repaired by a term</strong> — a gauge-fixing term, or ghosts — <strong>added to an action that exists.</strong></li>
+<li><strong>A non-variational equation is repaired by nothing</strong> — no term restores self-adjointness, because the obstruction is in the equation's structure. (A multiplier repairs only the case where a local multiplier exists, and the viscous case is where none does.)</li>
+</ul>
+<p><strong>So the grades must be kept apart, and the corpus uses four.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>grade</th>
+<th>statement</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>variational at unit multiplier, invertible</strong></td>
+<td>a density exists and propagates</td>
+<td>Klein–Gordon, Proca</td>
+</tr>
+<tr>
+<td><strong>variational, not invertible</strong></td>
+<td>a density exists and does not propagate without a fixing</td>
+<td>Maxwell, Yang–Mills</td>
+</tr>
+<tr>
+<td><strong>variational at a constant local multiplier</strong></td>
+<td>a density exists; the pairing is weighted</td>
+<td>Dirac, with $\gamma^0$</td>
+</tr>
+<tr>
+<td><strong>not variational at any local multiplier</strong></td>
+<td>no local density at all</td>
+<td>the viscous term</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only the fourth is Helmholtz's veto.</strong> The second is gauge degeneracy, the third is a change of pairing, and the first is the ordinary case. <strong>Reading the second as the fourth is the error this table exists to prevent</strong>, and it is why gauge fixing must not be described as <em>repairing a missing action</em>.</p>
+<h2 id="what-each-filter-decides-in-one-line-each">What Each Filter Decides, in One Line Each</h2>
+<p><strong>Invariance decides which terms a density may contain.</strong> Its domain is finite by <a href="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">the closure count</a>, its verdict is per term, and its output is a subspace — never a point, which is <a href="what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html">the residue</a>.</p>
+<p><strong>Helmholtz decides whether a given equation has a density behind it at all.</strong> Its domain is one equation, its verdict is binary plus a multiplier grade, and its output is a theorem about the equation's structure.</p>
+<p><strong>The composition, in the order the section runs.</strong> The carrier bounds what fields exist; the pairing makes products into numbers; the count bounds the candidate list; invariance selects inside it; the residue is declared; and Helmholtz then asks, of the equation the selected density produces, whether any density could have produced it — <strong>a question that is answered after the fact and independently of every choice above it.</strong></p>
+<p><strong>Why the order is not arbitrary.</strong> Each filter's domain is supplied by the one before it, and the last one's question is asked of the <em>output</em> rather than of the input. <strong>That is why Helmholtz sits at the end of the section and not at its beginning</strong>, even though its subject — existence — sounds like the first question a reader would ask.</p>
+<h2 id="what-this-article-does-not-claim">What This Article Does Not Claim</h2>
+<p><strong>It does not claim the filters are unrelated in practice.</strong> A term that fails invariance is absent from the density, and the equation that results is the one Helmholtz then grades. <strong>The filters are sequential in the corpus's construction and independent in their verdicts</strong>, and both halves of that sentence are needed.</p>
+<p><strong>It does not claim Helmholtz is always the tighter filter.</strong> In the corpus it vetoes exactly one thing — the viscous term — and passes every carrier the corpus uses. <strong>Invariance excludes far more</strong>: every gauge mass, every non-invariant contraction, every term of the wrong reality type. <strong>A reader who takes this article as saying Helmholtz is the deep filter and invariance the shallow one has the emphasis backwards</strong>; the correct statement is that they answer different questions and the corpus needs both.</p>
+<p><strong>And it does not settle whether the viscous equations might become variational in some enlarged setting.</strong> A nonlocal action, a multiplier that is an operator, an effective description with hidden degrees of freedom — all are outside the corpus's definition of <em>action</em> as a local density, and this article's claim is about that definition.</p>
+<h2 id="summary">Summary</h2>
+<p>Invariance asks whether a term is allowed inside a density; Helmholtz asks whether an equation comes from any density at all. <strong>Different objects, different mathematics, different verdicts, and no constraint of either on the other.</strong></p>
+<p>Helmholtz is <strong>group-blind</strong>: its hypothesis mentions no symmetry, its quoted failure — the damped oscillator and the viscous fluid — has no group in it, and its verdict is the same for every carrier the corpus uses, with the Dirac case passing at a constant local multiplier that is $\gamma^0$. <strong>One interaction exists and is one-way</strong>: invariance selects a subspace of densities, Helmholtz characterises their image, and narrowing the domain cannot enlarge the image — so a non-variational equation is non-variational in every sector.</p>
+<p>Passing Helmholtz does not mean an admitted term exists. <strong>A massless abelian vector passes and its kernel is non-invertible</strong>; that is gauge degeneracy, repaired by adding a term, where a non-variational equation is repaired by nothing. <strong>The four grades — unit multiplier invertible, variational-not-invertible, constant multiplier, not variational — must be kept apart</strong>, and only the last is Helmholtz's veto.</p>
+<p><strong>The composition runs: carrier, pairing, count, invariance, residue, Helmholtz.</strong> Each filter's domain is supplied by the one before, and the last asks its question of the output — which is why existence, which sounds like the first question, is asked last.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal D$, $\mathcal E$</td>
+<td>The densities and the equations; $\delta S/\delta$ maps the first onto the variational part of the second</td>
+</tr>
+<tr>
+<td>$DE=(DE)^\dagger$</td>
+<td>Helmholtz's test: self-adjointness of the linearisation</td>
+</tr>
+<tr>
+<td>$\gamma^0$</td>
+<td>The Dirac multiplier; $\psi^\dagger\gamma^0=\bar\psi$</td>
+</tr>
+<tr>
+<td>$\delta_\alpha T$</td>
+<td>The invariance variation of a candidate term</td>
+</tr>
+<tr>
+<td>The four grades</td>
+<td>unit multiplier invertible; variational not invertible; constant multiplier; not variational</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html">The Inverse Problem of the Calculus of Variations: Helmholtz's Conditions</a> — the theorem, the three conditions, the damped oscillator and the multiplier.</li>
+<li><a href="which-terms-survive-invariance-as-a-linear-condition-on-a-density.html">Which Terms Survive: Invariance as a Linear Condition on a Density</a> — the first of the two filters.</li>
+<li><a href="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">The Closure of the Term List: Dimension, Locality and the Count That Ends the Search</a> — the finite domain invariance runs on.</li>
+<li><a href="the-dirac-bergmann-algorithm-first-and-second-class-constraints.html">The Dirac–Bergmann Algorithm: First- and Second-Class Constraints</a> — the singular Hessian: non-invertibility as a constraint and not as a non-existence.</li>
+<li><a href="the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a> — the section's hub and the pairing the adjoint is taken in.</li>
+<li><a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a> — the case with no group at all.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

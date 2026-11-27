@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Closure of the Term List: Dimension, Locality and the Count That Ends the Search — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The list of terms in a density closes because locality bounds the derivative count, dimension bounds the total degree, and the carrier bounds…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search"><strong>The Closure of the Term List: Dimension, Locality and the Count That Ends the Search</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The list of terms in a density closes because <strong>locality bounds the derivative count, dimension bounds the total degree, and the carrier bounds the available contractions</strong> — and at each dimension the number of ways to contract is finite. The search for terms therefore ends, and it ends by counting. <strong>This is what makes "the only dimension-four invariant" a conclusion and not a boast.</strong></p>
+<p><strong>What this article is not.</strong> The hub's <a href="the-invariant-density-which-pairing-the-action-can-integrate.html">why the quadratic and nothing else</a> is this count applied to the <strong>curvature alone</strong>, and it closes on dimension four. <a href="which-terms-survive-invariance-as-a-linear-condition-on-a-density.html">The invariance filter</a> is what decides, term by term, which of the counted candidates survive. <strong>This article does the count for the whole density</strong> — connection, fermion and scalar at once — and states the three things the count does <em>not</em> close, because a closure claim that hides its exceptions is not a closure claim.</p>
+<h2 id="the-three-bounds">The Three Bounds</h2>
+<p><strong>Locality.</strong> The density at a point depends on the fields and finitely many of their derivatives. <strong>This is what makes the candidate set finite at each degree</strong>: without it, a term could carry any number of derivatives and the list would not close.</p>
+<p><strong>Dimension.</strong> With $\hbar=c=1$, a derivative has dimension one, a vector field one, a scalar one, a fermion $\tfrac32$, and the density must have dimension four. <strong>A term's dimension is the sum over its factors</strong>, so</p>
+<p>$$
+d=k+\sum_i p_i\,\delta_i ,
+$$</p>
+<p>with $k$ the derivative count, $p_i$ the number of fields of type $i$, and $\delta_i$ their dimensions. <strong>Since $d=4$ and every $\delta_i&gt;0$, the number of fields is bounded above</strong>, and with it the number of derivatives. That is the closure, and it is arithmetic.</p>
+<p><strong>The carrier's contractions.</strong> At a given dimension and field content, the number of ways to contract the indices is finite because the carrier's invariant tensors are finitely many. <strong>The trace, the scalar part, the Hermitian form, $\varepsilon_{\imath\jmath\kappa\lambda}$ and the generators' symmetric and antisymmetric invariant tensors</strong> are the whole list used in this corpus. A term is a choice among these contractions, and there are finitely many choices.</p>
+<p><strong>One sentence for the three.</strong> <strong>Locality bounds the derivatives, dimension bounds the fields, and the carrier bounds the contractions</strong> — so the candidate space at dimension four is finite, and the filter's job is to run over a finite list rather than to invent one.</p>
+<h2 id="the-count-for-the-whole-density">The Count, for the Whole Density</h2>
+<p><strong>With one connection, one fermion and one scalar, the dimension-four candidates are these and no others:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>candidate</th>
+<th>dimension</th>
+<th>admitted?</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{tr}\sum F_{\imath\jmath}F_{\imath\jmath}$</td>
+<td>$4$</td>
+<td><strong>yes</strong></td>
+<td>the gauge kinetic term</td>
+</tr>
+<tr>
+<td>$\bar\Xi\,\gamma^\imath D_\imath\Xi$</td>
+<td>$4$</td>
+<td><strong>yes</strong></td>
+<td>the fermion kinetic term</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\bigl(D_\imath\Xi\bigr)^{\dagger}\bigl(D^\imath\Xi\bigr)$</td>
+<td>$4$</td>
+<td><strong>yes</strong></td>
+<td>the scalar kinetic term</td>
+</tr>
+<tr>
+<td>$(\operatorname{tr}\Xi^2)^2$ and the other quartics</td>
+<td>$4$</td>
+<td><strong>yes</strong></td>
+<td>all admitted; none selected — <a href="what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html">the residue</a></td>
+</tr>
+<tr>
+<td>$\bar\Xi\,\Xi\,\Xi$ (Yukawa)</td>
+<td>$4$</td>
+<td><strong>yes</strong></td>
+<td>with the scalar insertion</td>
+</tr>
+<tr>
+<td>$\varepsilon^{\imath\jmath\kappa\lambda}\operatorname{tr}F_{\imath\jmath}F_{\kappa\lambda}$</td>
+<td>$4$</td>
+<td><strong>yes, and inert</strong></td>
+<td>a total derivative</td>
+</tr>
+<tr>
+<td>$m^2\sum A_\imath A_\imath$</td>
+<td>$4$</td>
+<td><strong>no</strong></td>
+<td><a href="one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html">the gauge mass</a></td>
+</tr>
+<tr>
+<td>$\operatorname{tr}F^3$</td>
+<td>$6$</td>
+<td>out of range at $d=4$</td>
+<td>excluded by dimension <strong>here</strong>; at $d=6$ <strong>the group decides</strong> — $d_{abc}=0$ for $\mathrm{SU}(2)$ only</td>
+</tr>
+<tr>
+<td>$\bar\Xi\sigma^{\imath\jmath}F_{\imath\jmath}\Xi$</td>
+<td>$5$</td>
+<td>out of range</td>
+<td>the Pauli term; non-renormalisable</td>
+</tr>
+<tr>
+<td>$(\bar\Xi\Xi)^2$</td>
+<td>$6$</td>
+<td>out of range</td>
+<td>a four-fermion term</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the table as three verdicts per row</strong>: <em>there is such a term</em>, <em>it is invariant or not</em>, and <em>its dimension is admissible or not</em>. <strong>The first is the count's, the second is the filter's, the third is the closure's</strong>, and a row can fail any of the three for a different reason. That is why the corpus's sentences about excluded terms should say which of the three they are using; the $F^3$ exclusion is dimensional and the gauge-mass exclusion is invariance, and the two are not the same argument. <strong>And the $d_{abc}$ question is a third question again, not an idle one: at dimension four it does not arise, and at dimension six it decides $\operatorname{tr}F^3$ — and decides it by group.</strong> A closure that reported <em>the cubic is excluded because $d_{abc}$ vanishes</em> would be answering at the wrong dimension; a closure that reported <em>the cubic is excluded, full stop</em> would be hiding a survivor that exists for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ and not for $\mathrm{SU}(2)$.</p>
+<p><strong>The table is short because the field content is short.</strong> Add a second scalar and $\Xi_1^\dagger\Xi_2$ appears; add a second fermion and a mixing Yukawa appears. <strong>The count does not say the list is short in general; it says the list is finite for a given content</strong>, which is the only thing a closure claim can honestly be.</p>
+<h2 id="where-the-count-does-not-close-and-must-not-pretend-to">Where the Count Does Not Close, and Must Not Pretend To</h2>
+<p><strong>Three exceptions, and each is a real part of the corpus rather than a defect.</strong></p>
+<p><strong>First, lower-dimension terms are not excluded by dimension, only by symmetry.</strong> A scalar mass $\operatorname{tr}\Xi^2$ has dimension two, a fermion mass $\bar\Xi\Xi$ dimension three, a cubic $\operatorname{tr}\Xi^2\operatorname{tr}\Xi$ dimension three. <strong>A dimension-four count does not forbid them and never claimed to</strong> — it forbids dimension five and above. Whether they appear is decided by the symmetry the corpus chooses to impose. The primordial potential writes two cubics, which is exactly this: <strong>no $\Xi\mapsto-\Xi$ symmetry is imposed on that matrix, so the cubics are admitted and written.</strong> A potential that "has only quartics" is a potential with a discrete symmetry, and the symmetry is a choice.</p>
+<p><strong>Second, the topological term is admitted, dimension-four and inert.</strong> $\varepsilon\operatorname{tr}FF$ is the one further invariant at dimension four, its integral is quantised, and its coefficient is a free parameter — the primordial article says so and calls $\theta_4$ "a free parameter of the Lagrangian and not a function of the group". <strong>The count finds it and invariance admits it; nothing in either excludes it.</strong> Its coefficient is <a href="what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html">the residue</a>, and its physical status is a separate question.</p>
+<p><strong>Third, the count is silent about terms built from objects the corpus has not introduced.</strong> A term with a dual curvature, a term with a second connection, a term with a torsion — each is dimension-four or not, and none is in the table because the object is not in the theory. <strong>The closure is relative to the field content, and the field content is the corpus's choice.</strong> That is the honest form of the claim, and it is weaker than <em>nothing else can be written</em> and stronger than <em>these are the terms we happen to use</em>.</p>
+<h2 id="why-the-count-is-what-ends-the-search">Why the Count Is What Ends the Search</h2>
+<p><strong>Because a filter without a finite domain is not a procedure.</strong> The invariance test is linear and computable, but <em>computable over what</em> has to be answered first. <strong>The count answers it</strong>: the candidate space is finite at dimension four, so the filter runs to completion, and the short list of admitted terms is a result rather than an impression.</p>
+<p><strong>This is the sense in which the two filters are ordered.</strong> The count and the carrier fix the domain; invariance selects inside it. <strong>Neither can substitute for the other</strong>: a count without invariance gives every admissible-dimension contraction, and invariance without a count has nothing finite to run on. <strong>The corpus's <em>one action per force</em> is the composition of the two</strong>, and it is why four sectors with four groups arrive at the same short list — the domain is the same, and the selection is the same.</p>
+<p><strong>And the honest ceiling.</strong> The count proves finiteness and not uniqueness. <strong>Several admitted terms of the same dimension remain, and their coefficients are declared</strong> — which is the next article's subject, and the reason this article's title says <em>the count that ends the search</em> and not <em>the count that fixes the answer</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The term list closes on three bounds: <strong>locality</strong> bounds the derivative count, <strong>dimension</strong> bounds the total field content, and <strong>the carrier</strong> bounds the contractions. At dimension four with one connection, one fermion and one scalar the candidates are the curvature square, the two kinetic terms, the potential's quartics, the Yukawa and the topological density; the gauge mass is a candidate and fails invariance; $F^3$, the Pauli term and the four-fermion term fail dimension.</p>
+<p><strong>Each row fails for one of three different reasons — no such term, not invariant, out of range — and the corpus should name which.</strong> The $F^3$ exclusion is dimensional <em>at dimension four</em>, the gauge-mass exclusion is invariance, and treating them as one argument is the error this article exists to prevent. <strong>The $d_{abc}$ question is a third and it is where the group enters the count: at dimension six, $\operatorname{tr}F^3$ is admitted by $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ and forbidden by $\mathrm{SU}(2)$ — the same candidate, the same dimension, a group-dependent verdict.</strong> That is the section's first claim appearing inside the closure, and the count must leave room for it.</p>
+<p>The count does not close everything and does not claim to. <strong>Lower-dimension terms are excluded by symmetry and not by dimension</strong>, which is why the primordial potential writes two cubics — no discrete symmetry is imposed there. <strong>The topological term is admitted and inert</strong>, its coefficient a free parameter. <strong>And the closure is relative to the field content</strong>, which is the corpus's choice.</p>
+<p><strong>The count's job is to make the invariance filter runnable</strong>: it supplies the finite domain, invariance selects inside it, and their composition is the short list the sectors share. <strong>The count proves finiteness; it does not prove uniqueness</strong> — the residue is declared, and that is the next article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>The derivative count of a term</td>
+</tr>
+<tr>
+<td>$p_i$, $\delta_i$</td>
+<td>The number of fields of type $i$, and that type's dimension</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>Field dimensions: $1$ (scalar, vector), $\tfrac32$ (fermion)</td>
+</tr>
+<tr>
+<td>$\varepsilon^{\imath\jmath\kappa\lambda}$</td>
+<td>The Levi-Civita symbol, the fourth invariant tensor used</td>
+</tr>
+<tr>
+<td>$\theta_4$</td>
+<td>The topological term's coefficient; a free parameter, not a function of the group</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\Xi^2\operatorname{tr}\Xi$</td>
+<td>A dimension-three cubic; admitted where no discrete symmetry excludes it</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a> — the same count for the curvature alone, and why the cubic is excluded by dimension <em>at $d=4$</em> and not by $d_{abc}$ — with $d_{abc}$ deferred to dimension six, where it does decide.</li>
+<li><a href="which-terms-survive-invariance-as-a-linear-condition-on-a-density.html">Which Terms Survive: Invariance as a Linear Condition on a Density</a> — the filter that runs on the counted list.</li>
+<li><a href="one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html">One Obstruction, Four Groups: The Gauge Mass That Is Never Admitted</a> — the exclusion that is invariance and not dimension.</li>
+<li><a href="what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html">What Invariance Cannot Decide: Declared Coefficients, Signs and Normalisations</a> — the residue the count leaves.</li>
+<li><a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a> — the potential with cubics, and $\theta_4$ as a free parameter.</li>
+<li><a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html">The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules</a> — "the square shown to be the only dimension-four invariant".</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

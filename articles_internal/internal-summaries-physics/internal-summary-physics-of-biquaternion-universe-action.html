@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Action Category — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the menu section Biquaternion Universe Action, in its state after the section What May Be an Integrand was placed…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-action-category"><strong>Internal Summary of the Action Category</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the menu section <em>Biquaternion Universe Action</em>, in its state after the section <em>What May Be an Integrand</em> was placed ahead of <em>The Lagrangian</em>. It gives the objects, the boxed statements and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
+<p><strong>The eight menu subsections.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Job</th>
+<th>Where it lands</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What May Be an Integrand</td>
+<td>the six filters that precede a density</td>
+<td>§§1–7</td>
+</tr>
+<tr>
+<td>The Lagrangian</td>
+<td>the object, the rung dictionary, the Hamiltonian</td>
+<td>§§2, 8</td>
+</tr>
+<tr>
+<td>From the Action to the Field Equation</td>
+<td>Noether, connection, curvature, Yang–Mills</td>
+<td>§9</td>
+</tr>
+<tr>
+<td>From the Field Equation to the Fluid</td>
+<td>the criterion, the five steps</td>
+<td>§10</td>
+</tr>
+<tr>
+<td>From the Fluid Equations to Thermodynamics</td>
+<td>closure tests: determinacy, consistency, integrability</td>
+<td>§10</td>
+</tr>
+<tr>
+<td>From the Fluid to the Force</td>
+<td>force transport, the commutator</td>
+<td>§10</td>
+</tr>
+<tr>
+<td>From the Field Equation to the Quantum Field</td>
+<td>promotion of the bracket; the measure</td>
+<td>§11</td>
+</tr>
+<tr>
+<td>Other aspects</td>
+<td>miscellany</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the category does.</strong> It states one chain and then specialises it: <strong>what may be an integrand → the density → the field equation → the fluid → the thermodynamics → the force → the quantum field.</strong> Every sector is a declension of that skeleton, and a declension either passes all steps or names the step it breaks.</p>
+<p><strong>The single structural fact.</strong></p>
+<p>$$
+\boxed{\;\text{a term in the density is decided by four independent filters, in this order: roster}\to\text{acceptance}\to\text{closure}\to\text{invariance; the pairing is orthogonal to all of them, and Helmholtz is asked afterwards of the equation.}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The order is not exposition. Each filter's <em>domain</em> is supplied by the one before it, so a violation reported at filter $n$ cannot be repaired at filter $n+1$. <strong>Two claims run through the section and must not be merged.</strong> (i) <strong>The group decides which carriers exist for it and which terms survive invariance</strong>: the bound of three is the algebra's, the content inside it is the group's — $\mathrm{SU}(3)$ has no scalar, $\mathrm{U}(1)$ has only the vector, $d_{abc}$ gives $\mathrm{SU}(3)$ a cubic that $\mathrm{SU}(2)$ lacks. The four sectors' actions coincide <strong>at dimension four only</strong>, and that coincidence is a fact about dimension and not about groups. (ii) <strong>Helmholtz decides whether any Lagrangian exists, and knows nothing of groups</strong>: the viscous term has no group at all.</p>
+<p><strong>The one-sentence version.</strong> The group decides which carriers exist and which terms survive; Helmholtz, which knows no group, decides whether an action exists at all.</p>
+<h2 id="1-the-six-filters-in-order">1. The Six Filters, in Order</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>filter</th>
+<th>the question</th>
+<th>failure means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>carrier roster</td>
+<td>which fields exist at all</td>
+<td>no such object, in any sector</td>
+</tr>
+<tr>
+<td>2</td>
+<td>group acceptance</td>
+<td>can this force carry this carrier</td>
+<td>no field of that spin for this force</td>
+</tr>
+<tr>
+<td>3</td>
+<td>pairing</td>
+<td>can products be integrated</td>
+<td>no invariant square to offer</td>
+</tr>
+<tr>
+<td>4</td>
+<td>closure of the term list</td>
+<td>which candidates exist</td>
+<td>nothing to test</td>
+</tr>
+<tr>
+<td>5</td>
+<td>invariance</td>
+<td>which candidates survive</td>
+<td>the term is absent</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Helmholtz (on the equation)</td>
+<td>does a density produce this equation</td>
+<td>no local action at all</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Filter 3 is orthogonal and is the section's hub.</strong> It answers <em>is this a scalar</em>, not <em>is this allowed</em>.</p>
+<p><strong>The section is placed before <em>The Lagrangian</em></strong> because every filter is a precondition of writing one. Its hub article, <code>the-invariant-density-which-pairing-the-action-can-integrate</code>, was the first entry inside <em>The Lagrangian</em> before the section existed; its content did not change, only its position and a hub section listing the six filters.</p>
+<h2 id="2-the-carrier-roster">2. The Carrier Roster</h2>
+<p>$$
+\boxed{\;\mathbb{B}_C:\ \dim 1,\ \text{spin }0,\ \text{conjugation};\qquad \text{ideals } \mathbb{B}_\Psi:\ \dim 2,\ \text{spin }\tfrac12,\ \text{left multiplication};\qquad \mathbb{B}_\Phi\ \text{scalar-free}:\ \dim 3,\ \text{spin }1,\ \text{conjugation.}\;}
+$$</p>
+<p><strong>Complete, and fixed by the algebra alone.</strong> No group is consulted, so no group can extend it. A sector may decline a carrier; it cannot add one.</p>
+<p><strong>The three arguments for no fourth</strong>: tensor products close on the three plus the symmetric square of the vector; the dimension count at $M_2(\mathbb{C})$ offers no fourth irreducible piece; and the boundary is the <em>object's</em>, which is why the Rarita–Schwinger action is <strong>named</strong> and not derived.</p>
+<p><strong>Trap.</strong> The absent carrier is <em>fundamental</em>. The symmetric square — where the linearised graviton sits — is a <strong>composite</strong>, and a composite is not a carrier. The graviton does not violate the count.</p>
+<h2 id="3-group-acceptance">3. Group Acceptance</h2>
+<p>$$
+\boxed{\;\text{carrier becomes a field}\iff \exists\,\rho: G\to GL(n)\ \text{with}\ n\in\{1,2,3\}\ \text{and the carrier's reality type.}\;}
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>force</th>
+<th>spin 0</th>
+<th>spin ½</th>
+<th>spin 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>matrix scalar</td>
+<td>fundamental</td>
+<td>adjoint</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)$</td>
+<td><strong>declined</strong></td>
+<td>triplet</td>
+<td>octet</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)\times\mathrm{U}(1)$</td>
+<td>doublet</td>
+<td>doublet, <strong>chiral</strong></td>
+<td>adjoint + singlet</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)$</td>
+<td><strong>declined</strong></td>
+<td><strong>declined</strong> in the sector's own right</td>
+<td>the whole roster</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four causes of an empty slot, only the first of which is this filter:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>cause</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>group declines</td>
+<td>no scalar gluon</td>
+</tr>
+<tr>
+<td>term not admitted</td>
+<td>gluon mass, photon mass</td>
+</tr>
+<tr>
+<td>cannot be written natively</td>
+<td>chiral fermion of electroweak</td>
+</tr>
+<tr>
+<td>not needed as a separate display</td>
+<td>the quark, inside QCD</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The asymmetry to keep.</strong> The group can only decline. Acceptance is necessary and <strong>not sufficient</strong>: the electroweak fermion is accepted and has only a named term.</p>
+<h2 id="4-invariance-as-a-linear-condition">4. Invariance, as a Linear Condition</h2>
+<p><strong>The candidate space</strong> is graded by dimension $d=k+\sum_i p_i\delta_i$ and taken <strong>modulo total derivatives</strong> ($\delta_i$: scalar/vector $1$, fermion $\tfrac32$).</p>
+<p>$$
+\boxed{\;T\ \text{admitted}\iff \delta_\alpha T=0\ \ \forall\alpha \iff T\in\ker\bigl(T\mapsto(\delta_\alpha T)_\alpha\bigr).\;}
+$$</p>
+<p><strong>Linear, therefore a subspace</strong>, therefore computable, therefore runnable term by term.</p>
+<p><strong>Four classes with the corpus's canonical examples:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>admitted</td>
+<td>$-\tfrac12\operatorname{tr}\sum FF$ (cyclicity); $\bar\Xi(i\gamma D-m)\Xi$ (conjugate rep)</td>
+</tr>
+<tr>
+<td>not admitted</td>
+<td>$m^2\sum A_\imath A_\imath$ for a <strong>connection</strong></td>
+</tr>
+<tr>
+<td>admitted only after a change of status</td>
+<td>the same mass term under Stueckelberg shift or Higgs insertion</td>
+</tr>
+<tr>
+<td>admitted and inert</td>
+<td>$\theta\sum F\tilde F$ — invariant, a total derivative</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-one-obstruction-four-groups">5. One Obstruction, Four Groups</h2>
+<p>$$
+\delta\bigl(m^2\textstyle\sum A_\imath A_\imath\bigr)=2m^2\sum A_\imath\bigl([A_\imath,\alpha]+\partial_\imath\alpha\bigr)\;\ne 0\ \ \text{unless } m=0 .
+$$</p>
+<p><strong>Identical in $\mathrm{U}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$; only the index range differs: $1,3,8,15$.</strong> The group's dimension never enters <strong>this</strong> verdict — the mass term is excluded by the form of the transformation law, which all four share. <strong>This is the one place the four groups agree; it is not evidence that the group decides nothing.</strong> What the group decides is the <em>rest</em> of the survivor set: the invariant ring is $\operatorname{tr}F^k$, $k=2,\dots,N$, so $\mathrm{SU}(2)$ has no cubic ($d_{abc}\equiv0$) and $\mathrm{SU}(3)$, $\mathrm{SU}(4)$ do — at $d=6$ the group decides $\operatorname{tr}F^3$ outright.</p>
+<p><strong>Verbatim, three of the corpus's four sentences:</strong></p>
+<blockquote>
+<p>"the gluon is therefore massless by what the action permits and not because its mass happens to be small"</p>
+<p>"<strong>No mass for the fifteen.</strong> A mass term $\tfrac12m^{2}\sum_{a,\imath}A_{a,\imath}A_{a,\imath}$ is not invariant, and none is written. The masses come from $\langle\Xi\rangle$ and are the transition's."</p>
+<p>"<strong>That is a declared choice of coefficients and not a symmetry the group supplies</strong>"</p>
+</blockquote>
+<p><strong>The contrast that defines the obstruction: Proca.</strong> Same carrier, same mass term, <strong>admitted</strong> — because a Proca field is a <em>tensor</em> and not a connection. The mass term there also yields $m^2\partial_\imath A_\imath=0$, i.e. the Lorenz condition as a consequence, not a gauge fixing. <strong>The Proca action is the anti-gauge action</strong>: its mass is exactly the candidate the gauge filter rejects, which is why a massive vector needs broken symmetry.</p>
+<p><strong>Scope limit to preserve.</strong> The obstruction is the <em>inhomogeneous term</em>, not the mass; and it needs a <strong>local</strong> symmetry — a global one forbids nothing.</p>
+<h2 id="6-closure-of-the-term-list">6. Closure of the Term List</h2>
+<p><strong>Three bounds: locality bounds derivatives, dimension bounds fields, the carrier bounds contractions.</strong> Hence the candidate list is finite.</p>
+<p><strong>At $d=4$ with one connection, one fermion, one scalar:</strong> $F^2$; $\bar\Xi\gamma D\Xi$; $(D\Xi)^\dagger D\Xi$; the quartics; the Yukawa; $\varepsilon FF$ (admitted, inert); $m^2A^2$ (candidate, fails invariance). <strong>Out of range:</strong> $\operatorname{tr}F^3$ ($d=6$), $\bar\Xi\sigma F\Xi$ ($d=5$), $(\bar\Xi\Xi)^2$ ($d=6$).</p>
+<p><strong>Each row fails for one of three unrelated reasons — no such term / not invariant / out of range.</strong> Naming which is part of the claim. <strong>$F^3$ is excluded by dimension and not by $d_{abc}$</strong> (which vanishes only for $\mathrm{SU}(2)$).</p>
+<p><strong>Three exceptions, stated as part of the claim:</strong>
+- <strong>lower-dimension terms are excluded by symmetry, not dimension</strong> — which is why the primordial potential carries <strong>one quadratic, two cubics, three quartics</strong>; no $\Xi\to-\Xi$ is imposed there.
+- the topological term is admitted, $d=4$ and inert; $\theta_4$ is "a free parameter of the Lagrangian and not a function of the group".
+- closure is <strong>relative to the field content</strong>, which is the corpus's choice.</p>
+<h2 id="7-the-residue-and-the-rule">7. The Residue, and the Rule</h2>
+<p><strong>Three sources of a coefficient, never interchangeable:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>source</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>basis</strong></td>
+<td>$\tfrac12$ (element) and $\tfrac14$ (component), from $\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$; $n_a=2$ on the fourteen, $12$ on the corner, factor six</td>
+</tr>
+<tr>
+<td><strong>requirement outside invariance</strong></td>
+<td>the overall sign, fixed by positivity (Euclidean)</td>
+</tr>
+<tr>
+<td><strong>declaration</strong></td>
+<td>four of five quartics written; $\operatorname{tr}\Xi^3\operatorname{tr}\Xi$ set to zero</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rule:</strong> forced → reported with its basis; required → reported with its requirement; declared → reported with <strong>the count that shows it is a choice</strong>; <strong>none</strong> with no source at all.</p>
+<p><strong>Why it is not style.</strong> A coefficient with no source makes a disagreement with observation unattributable — framework failure or convention error. The labelling is what makes the physics part falsifiable.</p>
+<p><strong>Trap.</strong> Normalisation moves numbers; it does not move the count of objects. "No normalisation can repair a count" (sixteen arrays, fifteen generators).</p>
+<h2 id="8-the-five-rungs-rung-dictionary-one-row">8. The Five Rungs (rung dictionary, one row)</h2>
+<p><strong>Only two things change across the rungs: the order of the kinetic term</strong> (first at Schrödinger; second at Klein–Gordon, Proca and the matrix) <strong>and the content of the algebraic term</strong> (potential, mass, quartic). <strong>Nothing else does</strong>, which is why the same five steps run on all five.</p>
+<p><strong>Trap.</strong> The overall sign and the normalisation are conventions the corpus <em>fixes rather than derives</em>.</p>
+<h2 id="9-the-chain-stated-once">9. The Chain, Stated Once</h2>
+<p><strong>Noether</strong> → the connection forced by a local symmetry → curvature and Bianchi → the same non-abelian → the Yang–Mills equation. <strong>Three carriers cut the spin bands. The renormalisation group is a measure object and sits with the Euclidean reading, the anomaly and the index.</strong></p>
+<h2 id="10-the-criterion-the-five-steps-and-the-rungs-above">10. The Criterion, the Five Steps, and the Rungs Above</h2>
+<p><strong>The criterion</strong>: one coordinate's Euler–Lagrange equation in the polar chart — <em>of warrant and not of content</em>. <strong>The five steps</strong>: action → polar word → type decomposition → order reduction → base-versus-internal. <strong>Then thermodynamics</strong> (determinacy, consistency, integrability) and <strong>the force side</strong> (transport differentiated; a matrix charge forces a commutator in place of a pairing).</p>
+<p><strong>Trap.</strong> <em>The viscous term has no action</em> is a <strong>theorem</strong>, not a report of failure to find one; and the criterion is Helmholtz at <strong>unit multiplier and one named coordinate</strong> — strictly narrower.</p>
+<h2 id="11-the-quantum-continuation">11. The Quantum Continuation</h2>
+<p><strong>One postulate imported</strong>: bracket → commutator. Then the ladder, the objects, the four measure results, and the promotion applied to the connection. <strong>The six canonical quantisations sit in the band of the field each quantises</strong>; the section carries no carrier of its own.</p>
+<h2 id="12-helmholtz-and-the-non-interference">12. Helmholtz and the Non-Interference</h2>
+<p>$$
+\boxed{\;E\ \text{variational at unit multiplier}\iff DE=(DE)^\dagger\ \text{in } L^2.\;}
+$$</p>
+<p><strong>Three conditions</strong> for second order: $\Lambda_{ab}=\Lambda_{ba}$; $A_{ab}+A_{ba}=2\partial_\imath\Lambda_{ab}$; $B_{ab}-B_{ba}=\tfrac12\partial_\imath(A_{ab}-A_{ba})$. <strong>The damped oscillator fails the second for every $\gamma\ne0$.</strong></p>
+<p><strong>The four grades — keep apart:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>grade</th>
+<th>example</th>
+<th>repair</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unit multiplier, invertible</td>
+<td>Klein–Gordon, Proca</td>
+<td>—</td>
+</tr>
+<tr>
+<td>variational, <strong>not invertible</strong></td>
+<td>Maxwell, Yang–Mills</td>
+<td>add a fixing term / ghosts</td>
+</tr>
+<tr>
+<td><strong>constant local multiplier</strong></td>
+<td>Dirac, multiplier $\gamma^0$; $\psi^\dagger\gamma^0=\bar\psi$</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>not variational at any local multiplier</strong></td>
+<td>the viscous term</td>
+<td><strong>none</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only the fourth is Helmholtz's veto.</strong> Gauge degeneracy is the second and must never be reported as a missing action.</p>
+<p><strong>The one interaction, one-way:</strong> invariance selects a subspace of densities; Helmholtz characterises their image; <strong>narrowing the domain cannot enlarge the image</strong>. So a non-variational equation is non-variational in every sector.</p>
+<p><strong>Blindness, twice:</strong> the viscous term has <strong>no group at all</strong>; and the verdict does not move when the group changes.</p>
+<p><strong>Emphasis trap.</strong> In this corpus Helmholtz vetoes <strong>one</strong> object (viscosity) and passes every carrier used; invariance excludes far more. Helmholtz is not the deep filter and invariance the shallow one — they answer different questions.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Filters in order: <strong>roster → acceptance → (pairing) → closure → invariance → Helmholtz</strong>. Each supplies the next one's domain.</li>
+<li>Roster: $1,2,3$ and no fourth; composites do not count.</li>
+<li>Invariance: $\delta_\alpha T=0$; a kernel, hence a subspace, hence no scale, no sign, no choice.</li>
+<li>One obstruction, four groups: index ranges $1,3,8,15$. <strong>The mass term's exclusion is group-blind — the one place four groups agree. The survivor set is not: $\operatorname{tr}F^k$, $k\le N$, gives $\mathrm{SU}(2)$ no cubic, $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ one. At $d=6$ the group decides $\operatorname{tr}F^3$.</strong></li>
+<li>Closure: finite at $d=4$; three bounds; exceptions stated (cubics, $\theta$, field content).</li>
+<li>Residue: forced / required / <strong>declared with its count</strong>.</li>
+<li>Helmholtz: group-blind; four grades; only "not variational at any local multiplier" is a veto.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_C,\mathbb{B}_\Psi,\mathbb{B}_\Phi$</td>
+<td>centre, ideals, material sector; dims $1,2,3$</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>carrier dimension; also the array trace norm where subscripted $n_a$</td>
+</tr>
+<tr>
+<td>$\delta_\alpha T$</td>
+<td>invariance variation of a candidate term</td>
+</tr>
+<tr>
+<td>$d=k+\sum p_i\delta_i$</td>
+<td>dimension of a term</td>
+</tr>
+<tr>
+<td>$DE=(DE)^\dagger$</td>
+<td>Helmholtz self-adjointness test</td>
+</tr>
+<tr>
+<td>$\gamma^0$</td>
+<td>the Dirac multiplier; $\bar\psi=\psi^\dagger\gamma^0$</td>
+</tr>
+<tr>
+<td>$t_a$</td>
+<td>normalised generators, $\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$</td>
+</tr>
+<tr>
+<td>$\theta_4$</td>
+<td>declared topological coefficient, $d=4$, inert</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ol>
+<li><code>the-invariant-density-which-pairing-the-action-can-integrate</code> — the hub; read first.</li>
+<li><code>the-carrier-roster-three-spins-and-no-fourth</code>, then <code>what-a-group-can-accept-a-carrier-must-transform-in-a-representation</code>.</li>
+<li><code>the-closure-of-the-term-list-...</code>, then <code>which-terms-survive-...</code>, then <code>one-obstruction-four-groups-...</code>.</li>
+<li><code>what-invariance-cannot-decide-...</code>.</li>
+<li><code>the-inverse-problem-...-helmholtz-conditions</code>, then <code>two-filters-that-never-meet-invariance-and-helmholtz</code>.</li>
+</ol>
+<p><strong>Traps.</strong> <em>No action</em> has two meanings (term absent vs no density at all). Gauge degeneracy is not non-existence. Acceptance is not sufficiency. The graviton is a composite, not a carrier. $F^3$ fails by dimension, not by $d_{abc}$. Normalisation does not repair a count.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

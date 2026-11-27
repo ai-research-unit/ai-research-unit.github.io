@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What a Group Can Accept: A Carrier Must Transform in a Representation — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Each group decides which of the three carriers exist for it. The algebra fixes the bound — three spins and no fourth — and the group fixes the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="what-a-group-can-accept-a-carrier-must-transform-in-a-representation"><strong>What a Group Can Accept: A Carrier Must Transform in a Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> <strong>Each group decides which of the three carriers exist for it.</strong> The algebra fixes the bound — three spins and no fourth — and the group fixes the content inside that bound: $\mathrm{SU}(3)$ has a spinor and a vector and <strong>no scalar</strong>, $\mathrm{U}(1)$ has a vector and <strong>nothing else</strong>, $\mathrm{SU}(2)\times\mathrm{U}(1)$ has <strong>all three</strong>. <strong>A sector's spin roster is therefore a fact about its group, not a slice of a universal list.</strong> The mechanism is a matching condition — the group must have a representation of the carrier's dimension and reality type — but the output is the sector's carrier content, and that content is what this article exists to state.</p>
+<p><strong>Why it needs stating at all.</strong> Each of the four sectors states this in its own words. The strong sector says it has no scalar gluon; the electromagnetic sector says its roster is the photon alone; the electroweak sector says the fermion is a chiral doublet and that the wall is there; the primordial sector says its scalar is a matrix and not a quartet. <strong>Four sentences, one condition.</strong> This article states the condition once and then reads the four sectors off it.</p>
+<p><strong>What the condition is and is not, stated exactly.</strong> The group does not extend the roster: there are three carriers and no group invents a fourth — that is <a href="the-carrier-roster-three-spins-and-no-fourth.html">the previous article</a>'s bound, and it holds for every force alike. <strong>What the group decides is which of the three exist in its sector</strong>, and the difference between the two statements is the whole article. The bound is algebra, identical everywhere. The content is the group's, and it differs at every force. <strong>A sector's answer is a subset of three, and which subset is the group's decision</strong> — which is why the table below is not one table but four, and why a sector's spin roster cannot be read off another's.</p>
+<h2 id="the-condition">The Condition</h2>
+<p><strong>A field is a section of a bundle associated to a representation.</strong> Concretely, the carrier has dimension $n$, the force's group $G$ has a representation $\rho$ of dimension $n$, and the field is a map into that representation's space. <strong>If no such $\rho$ exists, there is no field</strong>, and the sector has no action at that spin — not a missing action, an absent object.</p>
+<p><strong>Two things must match, and they are independent.</strong></p>
+<ul>
+<li><strong>The dimension.</strong> The carrier's representation-space dimension is $1$, $2$ or $3$. A group with no $n$-dimensional representation cannot accept that carrier.</li>
+<li><strong>The reality type.</strong> The carrier is anti-Hermitian, Hermitian, or an ideal. The representation must respect that: a real carrier needs a real or pseudo-real representation, and a complex one needs a complex representation. <strong>The corpus's anti-Hermitian material sector is why its connections are anti-Hermitian</strong>, and a group whose generators cannot be taken anti-Hermitian in that module is not admissible however right its dimension.</li>
+</ul>
+<p><strong>The consequence is a finite table, and the table is the sector's spin content.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>force</th>
+<th>group</th>
+<th>$n=1$ (spin $0$)</th>
+<th>$n=2$ (spin $\tfrac12$)</th>
+<th>$n=3$ (spin $1$)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>primordial</td>
+<td>$\mathrm{SU}(4)$</td>
+<td>accepted, as a <strong>matrix</strong></td>
+<td>accepted, fundamental</td>
+<td>accepted, adjoint</td>
+</tr>
+<tr>
+<td>strong</td>
+<td>$\mathrm{SU}(3)$</td>
+<td><strong>declined</strong> — no fundamental singlet</td>
+<td>accepted, triplet</td>
+<td>accepted, octet</td>
+</tr>
+<tr>
+<td>electroweak</td>
+<td>$\mathrm{SU}(2)\times\mathrm{U}(1)$</td>
+<td>accepted, doublet</td>
+<td>accepted, but <strong>chiral</strong></td>
+<td>accepted</td>
+</tr>
+<tr>
+<td>electromagnetic</td>
+<td>$\mathrm{U}(1)$</td>
+<td><strong>declined</strong></td>
+<td><strong>declined</strong> in the sector's own right</td>
+<td>accepted</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Gravity is not in the table.</strong> Whether it is a force at all is a separate question; if it is read as one, its carrier is the frame and not an element, and the roster of this section does not apply to it. The table is a table of the four sectors that act on elements.</p>
+<h2 id="the-four-cases-read-off-the-condition">The Four Cases, Read Off the Condition</h2>
+<p><strong>Strong, $\mathrm{SU}(3)$: the scalar is declined and the spinor is inside the sector action.</strong> The colour group's fundamental is the triplet, dimension $3$; the adjoint is the octet, dimension $8$; the singlet is dimension $1$. <strong>A colour-singlet scalar is not a coloured object at all</strong>, so there is no scalar gluon and the sector cannot carry a fundamental spin-$0$ field. Its four spin-$0$ actions are therefore <em>effective</em>: the chiral field is a unit element and not a linear scalar, and a linear scalar cannot be coloured. <strong>The spin-$\tfrac12$ slot is not declined</strong> — the triplet accepts it — and the slot is empty for a filing reason only: the quark term is written inside the QCD display, $\sum_f\bar\Xi_f(i\gamma D-m_f)\Xi_f$, and needed no separate article.</p>
+<p><strong>Electromagnetic, $\mathrm{U}(1)$: one carrier, and it is the vector.</strong> The group is abelian and one-dimensional; its only representation that matters here is the one-dimensional one, carrying the connection. <strong>The photon is the sector's whole roster.</strong> Its matter — spin $0$ and spin $\tfrac12$ — is not declined, it is <em>external</em>: the charged scalar and the electron are other sectors' carriers carrying a $\mathrm{U}(1)$ charge, which is why the corpus's electromagnetic sector has one free action and sixteen coupled ones and no free matter action of its own.</p>
+<p><strong>Electroweak, $\mathrm{SU}(2)\times\mathrm{U}(1)$: all three accepted, and the fermion is the problem.</strong> The doublet accepts the spinor, the adjoint and the singlet accept the vector, the doublet accepts the scalar. <strong>Nothing is declined — and the sector is still incomplete</strong>, because the spinor it accepts is a <em>chiral</em> doublet and the algebra's connection is one-sided. That is the chiral wall, and it is a different obstruction from this article's: the representation exists, and the action for it cannot be written natively. <strong>A sector can pass the acceptance filter and fail the next one</strong>, and this is the case that shows the filters are independent.</p>
+<p><strong>Primordial, $\mathrm{SU}(4)$: all three accepted, the scalar as a matrix.</strong> The fifteen generators carry the adjoint; the fundamental carries the fermion; the scalar is taken as <strong>the whole matrix</strong> and not as a quartet. The corpus's own reason is a count: "<strong>A vector cannot tell the two apart</strong>", and the matrix's quartics are more numerous than the quartet's. <strong>That is a choice of representation within an accepted carrier</strong>, and it is the one place this filter's output is a choice and not a verdict.</p>
+<h2 id="two-obstructions-this-filter-does-not-explain">Two Obstructions This Filter Does Not Explain</h2>
+<p><strong>The distinction the article exists to draw.</strong> An empty spin slot in a sector menu has four possible causes, and only one of them is this article's.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>cause</th>
+<th>example</th>
+<th>what it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>the group declines</strong></td>
+<td>no scalar gluon</td>
+<td>there is no such field, whatever one writes</td>
+</tr>
+<tr>
+<td><strong>the term is not admitted</strong></td>
+<td>gluon mass, photon mass</td>
+<td>the field exists and the term is forbidden</td>
+</tr>
+<tr>
+<td><strong>the write cannot be made</strong></td>
+<td>the chiral fermion of electroweak</td>
+<td>the field and the term exist, and the algebra cannot state them</td>
+</tr>
+<tr>
+<td><strong>the filing was not needed</strong></td>
+<td>the quark, inside QCD</td>
+<td>the field exists and is written elsewhere</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only the first is acceptance.</strong> The second is <a href="which-terms-survive-invariance-as-a-linear-condition-on-a-density.html">which terms survive</a>; the third is the corpus's reach; the fourth is editorial. <strong>A reader who conflates them will take a boundary of the algebra for a boundary of the method, or the reverse</strong> — the error the sector hub is written to prevent.</p>
+<p><strong>And the converse, stated because it is easy to overreach.</strong> Acceptance is necessary and not sufficient. <strong>A group accepting a carrier does not mean the sector has an action for it</strong>: the electroweak spinor is accepted and has only a <em>named</em> term, $\mathcal L_{\mathrm{matter}}$, and no display. The filter admits the object; it does not write it.</p>
+<h2 id="what-the-group-does-not-decide">What the Group Does Not Decide</h2>
+<p><strong>It decides acceptance and admission, and nothing about values.</strong> Four statements it does not make.</p>
+<ul>
+<li><em>It does not fix the coupling.</em> That the triplet accepts the quark says nothing about $g_s$; the value is a measurement, and its running is a one-loop object.</li>
+<li><em>It does not fix the mass.</em> Whether a mass term is admitted is the invariance filter's business, and the answer is the same for every group that gauges the carrier.</li>
+<li><em>It does not fix the potential's coefficients.</em> $\mathrm{SU}(4)$ accepts a matrix scalar; the potential's four written quartics and the fifth set to zero are <a href="what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html">a declared choice</a>.</li>
+<li><em>It does not fix the number of generations.</em> A representation that can be repeated admits any number of copies, and the corpus does not derive three.</li>
+</ul>
+<p><strong>What it does decide, and this is the article's one structural claim.</strong> The sector menus' three filled bands and one named-only band are this filter's output read as a layout. <strong>Three carriers, four groups, and the pattern of which cell is filled is the acceptance table</strong> — which is why the pattern differs per sector and the roster does not.</p>
+<h2 id="summary">Summary</h2>
+<p>A carrier becomes a field only when the force's group has a representation of the carrier's dimension and reality type. <strong>The algebra supplies three carriers — dimension $1$, $2$, $3$ — and the group can only decline.</strong> That asymmetry is what makes a sector's spin content a subset of three rather than an open list.</p>
+<p>Read off the condition, the four sectors are: $\mathrm{SU}(3)$ declines the scalar and accepts the spinor and the vector, with its spin-$0$ actions effective because the chiral field is not a linear scalar; $\mathrm{U}(1)$ carries the vector alone, its matter being other sectors' fields with a charge; $\mathrm{SU}(2)\times\mathrm{U}(1)$ accepts all three and fails on the chiral fermion <em>after</em> acceptance; $\mathrm{SU}(4)$ accepts all three and takes its scalar as a matrix by a count.</p>
+<p><strong>An empty slot has four causes and only one is this filter's.</strong> Declined by the group, not admitted by invariance, not writable in the algebra, or not needed as a separate display. Conflating them turns a boundary of the algebra into a boundary of the method.</p>
+<p><strong>The group decides acceptance; it decides no coupling, no mass, no coefficient and no generation count.</strong> The three filled bands and one named-only band of the sector menus are this table read as a layout.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$n$</td>
+<td>The carrier's representation-space dimension: $1$, $2$ or $3$</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>A representation of the force's group on an $n$-dimensional space</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>The force's group: $\mathrm{SU}(4)$, $\mathrm{SU}(3)$, $\mathrm{SU}(2)\times\mathrm{U}(1)$, $\mathrm{U}(1)$</td>
+</tr>
+<tr>
+<td>$\mathcal L_{\mathrm{matter}}$</td>
+<td>The electroweak fermion term, named and not expanded</td>
+</tr>
+<tr>
+<td>$g_s$</td>
+<td>The strong coupling, a measurement and not a representation-theoretic datum</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Phi$</td>
+<td>The material sector, anti-Hermitian; the reality type a representation must respect</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-carrier-roster-three-spins-and-no-fourth.html">The Carrier Roster: Three Spins and No Fourth, Fixed Before Any Group Acts</a> — the first filter.</li>
+<li><a href="representation-is-a-function-of-spin.html">Representation Is a Function of Spin</a> — the same claim from the spin side, inside <em>Electroweak Force</em>.</li>
+<li><a href="the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Algebras of the Two Sectors: The Strong Group on Three Dimensions, Weak Isospin on Two, the Photon on One</a> — the three groups' dimensions side by side.</li>
+<li><a href="which-terms-survive-invariance-as-a-linear-condition-on-a-density.html">Which Terms Survive: Invariance as a Linear Condition on a Density</a> — the filter that decides admissibility once acceptance is granted.</li>
+<li><a href="electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html">Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall</a> — the sector that passes acceptance and fails the write.</li>
+<li><a href="the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html">The Sector Hub: What the Lagrangian Family Reaches in Each Sector</a> — the four sector answers compared.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Obstruction, Four Groups: The Gauge Mass That Is Never Admitted — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The argument that forbids a mass term for the gluon forbids one identically for the photon, for the and the before breaking, and for the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted"><strong>One Obstruction, Four Groups: The Gauge Mass That Is Never Admitted</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The argument that forbids a mass term for the gluon forbids one identically for the photon, for the $W$ and the $Z$ before breaking, and for the fifteen generators of $\mathrm{SU}(4)$. <strong>It is one argument with four instantiations, and the corpus states it four times without ever saying so.</strong> This article states it once.</p>
+<p><strong>Why the count matters.</strong> An audit of the corpus's actions finds one genuine action per force, and the reason is not that the forces are similar. It is that <strong>the same filter admits the same two candidates and rejects the same one</strong>, so four sectors reach the same short list. A reader who takes the four sector sentences as four discoveries will look for the common cause and find, correctly, that the group is not it — the <em>invariance requirement</em> is. <strong>This article is the evidence for that claim.</strong></p>
+<p><strong>The shape of the article.</strong> The argument once, in the invariants; then the four cases with their different indices; then the contrast that makes it sharp — Proca, where the same mass term <em>is</em> admitted; then the conclusion about what a mass term does to a connection that a mass term does not do to a field.</p>
+<h2 id="the-argument-once">The Argument, Once</h2>
+<p><strong>A connection transforms inhomogeneously.</strong> For $\tilde g$ a local group element,</p>
+<p>$$
+A_\imath\longmapsto A_\imath^{\tilde g}=\tilde gA_\imath\tilde g^{-1}+\tilde g\,\partial_\imath\tilde g^{-1},
+$$</p>
+<p>and the second term is the whole of the difference between a connection and a <strong>tensor</strong>. <strong>A mass term is quadratic in $A$ with no derivative</strong>, so it is a tensor built from a connection, and it cannot be invariant for the same reason a coordinate cannot be a vector:</p>
+<p>$$
+m^2\sum_{\imath}A_\imath^{\tilde g}A_\imath^{\tilde g}=m^2\sum_\imath\Bigl(\tilde gA_\imath\tilde g^{-1}+\tilde g\partial_\imath\tilde g^{-1}\Bigr)\Bigl(\tilde gA_\imath\tilde g^{-1}+\tilde g\partial_\imath\tilde g^{-1}\Bigr).
+$$</p>
+<p><strong>Expand and the cross term survives.</strong> The conjugation part gives back $m^2\sum A_\imath A_\imath$ by cyclicity of the trace; the derivative part gives a positive-definite contribution; and the cross term, linear in $\partial\tilde g^{-1}$, is nonzero whenever $\tilde g$ varies. <strong>The failure is not a cancellation gone wrong — it is that the cross term has no partner</strong>, because there is no second term in a mass term that could cancel it.</p>
+<p><strong>The same statement in the infinitesimal form, which is what this section's filter actually runs.</strong> With $\tilde g=e^{\alpha^a\tau_a}$ and $\tau_a$ anti-Hermitian, the infinitesimal variation is $\delta A_\imath=[A_\imath,\alpha]+\partial_\imath\alpha$, and the variation of the mass term is</p>
+<p>$$
+\delta\Bigl(m^2\sum_\imath A_\imath A_\imath\Bigr)=2m^2\sum_\imath A_\imath\bigl([A_\imath,\alpha]+\partial_\imath\alpha\bigr),
+$$</p>
+<p><strong>which vanishes for every $\alpha$ only if $m=0$.</strong> That is <a href="which-terms-survive-invariance-as-a-linear-condition-on-a-density.html">the invariance filter</a> applied to this candidate; the answer is the same in every group, and this is the point.</p>
+<p><strong>One qualification, and it is the reason the argument is about a <em>connection</em> and not about a <em>vector</em>.</strong> If $A$ were a tensor, the mass term would be admitted — that is Proca. <strong>The obstruction is not the mass; it is the inhomogeneous term in the transformation.</strong> Everything below is that sentence in four notations.</p>
+<h2 id="the-four-cases">The Four Cases</h2>
+<p><strong>U(1), the photon.</strong> $\tilde g=e^{i\lambda}$ is abelian, so $[A,\alpha]=0$ and the variation reduces to $\delta A_\imath=\partial_\imath\lambda$. The mass term's variation is $2m^2A_\imath\partial_\imath\lambda$, which is a total derivative only when $\partial_\imath\lambda$ is constant — that is, never for a local $\lambda$. <strong>So the photon's mass is forbidden by the abelian case of the same argument.</strong> The abelian case is the <em>weakest</em> form: no commutator, and the obstruction survives on the derivative term alone.</p>
+<p><strong>SU(2), the $W$ and the $Z$.</strong> The variation has both pieces, and the commutator makes the failure worse and not better: $[A_\imath,\alpha]$ is generically nonzero, so even a constant $\alpha$ fails. <strong>This is why the electroweak vector masses must come from a scalar's expectation and not from a mass term</strong>, and why "spontaneous symmetry breaking" is not decoration: the mass term is not admitted, and the only route to a massive vector is a term that <em>is</em> admitted and produces an effective mass — the scalar's kinetic term with $\langle\Xi\rangle\neq0$.</p>
+<p><strong>SU(3), the gluon.</strong> The same computation with the eight Gell-Mann generators. <strong>The corpus's sentence is the audit's cleanest quote</strong>: "A mass term $m^2\sum_a\sum_\imath G_{a,\imath}G_{a,\imath}$ is not admitted, because it is not invariant; the gluon is therefore massless by what the action permits and not because its mass happens to be small." <strong>Note what the sentence does and does not say.</strong> It does not say the gluon's mass is unobserved; it says the action has no place to put one. That is the difference between a measurement and a theorem about the candidate space.</p>
+<p><strong>SU(4), the fifteen.</strong> The primordial sector states it in a single line of its own inventory: "<strong>No mass for the fifteen.</strong> A mass term $\tfrac12m^2\sum_{a,\imath}A_{a,\imath}A_{a,\imath}$ is not invariant, and none is written. The masses come from $\langle\Xi\rangle$ and are the transition's." <strong>Four sectors, four sentences, one computation, and the group's dimension never enters it.</strong> The $\mathrm{SU}(4)$ case is the one that makes it visible: fifteen generators, sixteen arrays, and the count of either is irrelevant to whether the mass term survives.</p>
+<p><strong>What changes across the four.</strong> Only the index range: $1$, $3$, $8$, $15$. <strong>What does not change</strong>: the inhomogeneous term, the cross term it produces, and the verdict. <strong>This is the one place where four groups agree, and the agreement must be stated precisely, because it is not the claim that the group is irrelevant.</strong> The mass term is excluded by the <em>form</em> of the transformation law, which $\mathrm{U}(1)$ and every non-abelian group share. <strong>What the group decides is everything else in the density</strong>, and the next section states where.</p>
+<h2 id="the-contrast-that-makes-it-sharp-proca">The Contrast That Makes It Sharp: Proca</h2>
+<p><strong>The Proca field carries the same carrier and admits the mass term.</strong> That is not a contradiction; it is the definition of the difference.</p>
+<p><strong>A Proca field is not a connection.</strong> It is a vector field transforming as a tensor — no inhomogeneous term — so the mass term is invariant under the only transformations the field has, and the Proca density is</p>
+<p>$$
+\mathcal L_{\mathrm{Proca}}=-\tfrac14\sum F_{\imath\jmath}F_{\imath\jmath}+\tfrac12m^2\sum_\imath A_\imath A_\imath ,
+$$</p>
+<p>with both terms admitted. <strong>The same symbol $A$, the same carrier, the same dimension, and the opposite verdict</strong> — because the transformation law differs.</p>
+<p><strong>And the mass term does two jobs there, which is why the Proca field needs no gauge fixing.</strong> Varying the mass term produces $m^2\partial_\imath A_\imath=0$ as part of the field equation, so <strong>the Lorenz condition is a consequence of the action and not an extra constraint</strong>. In the gauge theory the same role is played by the gauge choice, imposed by hand because no admitted term imposes it. <strong>One term, admitted in one theory and forbidden in the other, carries the constraint in the one and cannot in the other.</strong></p>
+<p><strong>The corollary the audit's count rests on.</strong> <strong>The Proca action is the anti-gauge action</strong>: its mass is precisely the candidate the gauge filter rejects. That is why a massive vector and a gauge field cannot be the same object, why the electroweak vector masses require breaking, and why the corpus can present Proca and Maxwell as two actions on one carrier without either being a mistake.</p>
+<h2 id="what-the-groups-do-decide">What the Groups Do Decide</h2>
+<p><strong>The exclusion is group-blind; the survivor set is not.</strong> Having established that the mass term is gone for all four, the sharper fact is that <strong>the remaining terms are group-specific, and the mechanism is the group's invariant ring.</strong> This is the section's first claim, and it is visible here because the mass term is the one candidate the four groups agree on.</p>
+<p><strong>The invariant polynomials of the adjoint are generated by $\operatorname{tr}F^k$ for $k=2,\dots,N$</strong>, with $N$ the size of the defining representation. <strong>$\mathrm{SU}(2)$ has no cubic: $d_{abc}\equiv0$, so $\operatorname{tr}F^3\equiv0$ identically.</strong> $\mathrm{SU}(3)$ has a nonzero cubic, generated by $d_{abc}$; $\mathrm{SU}(4)$ has the cubic and a quartic. <strong>The number of admissible terms at a given dimension is therefore a function of the group, and the function is the rank.</strong></p>
+<p><strong>Where that bites, and where it does not.</strong> At dimension four it does not bite: $\operatorname{tr}F^3$ has dimension six and the Pauli term dimension five, so the four groups' dimension-four lists coincide and the corpus's <em>one action per force</em> is a fact about dimension four and not about groups. <strong>At dimension six — where a higher-derivative theory would place $\operatorname{tr}F^3$ — the term is admitted by $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ and forbidden by $\mathrm{SU}(2)$</strong>, with the carrier, the transformation law and the dimension all unchanged. <strong>That verdict is the group's and no other filter's.</strong></p>
+<p><strong>Two further facts that are the group's.</strong> <strong>The reality type of the fundamental</strong>: $\mathrm{SU}(2)$'s is pseudo-real, so a single doublet admits a Majorana mass; $\mathrm{SU}(3)$'s is complex, so a triplet alone does not, and the term requires a triplet–antitriplet pair. <strong>And the Casimir</strong>, which fixes the normalisation the group assigns to a term the group admits: the same $\operatorname{tr}F^2$ carries a different coefficient at each force, and the coefficient is not a convention — it is the group's index.</p>
+<p><strong>So the correct pair of statements, and they must be held together.</strong> The <em>gauge-mass obstruction</em> is group-blind, which is why four sectors state it identically. <strong>The <em>survivor set</em> is group-specific</strong>, which is why the four sectors' actions are not one action with a different index range. <strong>A reader who takes this article as saying the group never decides has half the fact</strong>: the group does not decide whether a mass term is admitted, and it decides essentially everything else.</p>
+<h2 id="what-this-article-does-not-claim">What This Article Does Not Claim</h2>
+<p><strong>It does not claim that every group forbids every mass.</strong> A group acting on a field that is a tensor forbids nothing, and a <em>global</em> symmetry forbids nothing either — the whole of the argument is the locality of the transformation. <strong>A mass term is forbidden by a local symmetry, not by a symmetry.</strong></p>
+<p><strong>It does not claim the obstruction is dynamical.</strong> Nothing here says a massive gluon is unstable or inconsistent; it says the density cannot contain the term. <strong>Whether the resulting theory is healthy is a separate question and is not asked here.</strong></p>
+<p><strong>It does not explain the masses that do occur.</strong> The $W$'s, the $Z$'s and the fifteen's come from a scalar's expectation, which is a different mechanism and a different article. <strong>This article explains the absence and only the absence.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>A connection transforms with an inhomogeneous derivative term, so a mass term built from it cannot be invariant: the cross term produced by the derivative part has no partner to cancel it. <strong>In the infinitesimal form the variation of $m^2\sum A_\imath A_\imath$ vanishes for every generator only when $m=0$</strong> — the same computation in $\mathrm{U}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$, differing only in the index range $1$, $3$, $8$, $15$.</p>
+<p>The abelian case is the weakest form and the obstruction survives on the derivative term alone; the non-abelian cases fail on the commutator as well. The corpus states the result four times — the photon's mass, the $W$'s before breaking, "the gluon is therefore massless by what the action permits and not because its mass happens to be small", and "<strong>No mass for the fifteen</strong>" — and never says it is one argument. <strong>The group's dimension never enters the mass-term verdict — which shows that this one verdict is invariance's and not the group's, and is not a claim that the group decides nothing: the survivor set outside the mass term is group-specific, and §<em>What the Groups Do Decide</em> states how.</strong></p>
+<p>Proca is the contrast that makes it sharp: the same carrier, the same mass term, admitted — because a Proca field is a tensor and not a connection, and the mass term there also imposes the Lorenz condition, which in the gauge theory must be imposed by hand. <strong>The Proca action is the anti-gauge action</strong>, and that is why a massive vector needs a broken symmetry to exist.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_\imath$</td>
+<td>A connection; transforms inhomogeneously</td>
+</tr>
+<tr>
+<td>$\tilde g$, $\alpha$, $\tau_a$</td>
+<td>A local group element, its infinitesimal parameter and generator</td>
+</tr>
+<tr>
+<td>$m^2\sum A_\imath A_\imath$</td>
+<td>The mass term; the candidate the filter rejects</td>
+</tr>
+<tr>
+<td>$a$</td>
+<td>The generator index: $1$, $3$, $8$, $15$ for $\mathrm{U}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>$\mathcal L_{\mathrm{Proca}}$</td>
+<td>The Proca density; both terms admitted</td>
+</tr>
+<tr>
+<td>$\langle\Xi\rangle$</td>
+<td>The scalar's expectation; where the electroweak and primordial masses come from</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="which-terms-survive-invariance-as-a-linear-condition-on-a-density.html">Which Terms Survive: Invariance as a Linear Condition on a Density</a> — the filter this article instantiates four times.</li>
+<li><a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html">The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules</a> — the gluon sentence.</li>
+<li><a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a> — "No mass for the fifteen."</li>
+<li><a href="the-lagrangian-and-the-proca-equation.html">The Lagrangian and the Proca Equation</a> — the contrast: a tensor, not a connection.</li>
+<li><a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html">Electroweak Symmetry Breaking: The Doublet, the Potential and the Vector Boson Masses</a> — the route to a massive vector once the mass term is excluded.</li>
+<li><a href="two-filters-that-never-meet-invariance-and-helmholtz.html">Two Filters That Never Meet: Invariance and Helmholtz</a> — why this exclusion is not a statement about the existence of an action.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

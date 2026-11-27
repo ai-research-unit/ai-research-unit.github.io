@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Carrier Roster: Three Spins and No Fourth, Fixed Before Any Group Acts — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The biquaternion algebra carries exactly three carriers — the centre, the minimal left ideals, and the material sector — and their…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-carrier-roster-three-spins-and-no-fourth-fixed-before-any-group-acts"><strong>The Carrier Roster: Three Spins and No Fourth, Fixed Before Any Group Acts</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The biquaternion algebra carries exactly three carriers — the centre, the minimal left ideals, and the material sector — and their representation-space dimensions are $1$, $2$ and $3$. That roster is complete, and it is fixed by the algebra alone. <strong>No force is named in its derivation, and no group can extend it.</strong> A sector may decline to use a carrier, and a sector may fail to reach one; neither can add a fourth.</p>
+<p><strong>Why the roster comes before the groups.</strong> A reader who meets the carrier list inside a sector — where the sector's own indices are already doing work — has to accept it as a fact about that sector. It is not. It is a fact about $\mathbb{B}$, and it is what makes the phrase <em>this force has no scalar</em> or <em>this force has no spinor</em> a statement with content: the roster says what is available, and the sector's group says what it can accept. <strong>Those are two different filters, and the corpus has been running them as one.</strong></p>
+<p><strong>What this article does, and what it does not.</strong> It states the roster at no rung, states why it is complete, and states the sense in which the completion is a boundary of the algebra rather than a gap in the corpus. It does not classify the particles — that is <a href="the-determination-of-the-possible-spins-in-biquaternionic-form.html">the determination of the possible spins</a>, which reads the same three carriers as the scalar, the spinor and the vector — and it does not derive the tensor-product closure, which is <a href="higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html">higher spin from tensor products</a>. <strong>The division of labour is deliberate</strong>: those two articles sit inside <em>Relativistic Quantum Theory</em> and state the roster at that rung. This one states it as the first filter on any integrand, before any rung exists.</p>
+<h2 id="the-three-carriers">The Three Carriers</h2>
+<p><strong>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, and its regular module decomposes into three pieces under the two actions that matter.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>subspace</th>
+<th>dimension</th>
+<th>spin</th>
+<th>invariant that fixes it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the centre</td>
+<td>$\mathbb{B}_C=\mathbb{C}e_t$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>the norm $N$</td>
+</tr>
+<tr>
+<td>the minimal left ideals</td>
+<td>$\mathbb{B}_\Psi$ pairs</td>
+<td>$2$</td>
+<td>$\tfrac12$</td>
+<td>the ideal's own frame</td>
+</tr>
+<tr>
+<td>the material sector</td>
+<td>$\mathbb{B}_\Phi$, scalar-free part</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>$B^2$, the bivector's square</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two actions are not the same action, and that is why the count is three and not one.</strong> The centre and the traceless part of the material sector are read under <strong>conjugation</strong>, $\tilde Q\mapsto\tilde g\tilde Q\tilde g^{-1}$; the ideals are read under <strong>left multiplication</strong>, $\tilde\Xi\mapsto\tilde g\tilde\Xi$. A carrier is a subspace together with the action that moves it, and the roster is the list of pairs. <strong>Counted as spaces alone the algebra is one eight-dimensional thing; counted as carriers it is three.</strong></p>
+<p><strong>The dimensions are representation-space dimensions, and they are the numbers a group must match.</strong> $1$ for the scalar, $2$ for the spinor, $3$ for the vector. This is the whole content of the sentence <em>the representation is a function of the spin</em>: the carrier's dimension is fixed by the algebra, so the spin is fixed by the carrier, so a field cannot be assigned a spin and then fitted to a representation. <strong>The order runs from the algebra outward.</strong></p>
+<h2 id="why-there-is-no-fourth">Why There Is No Fourth</h2>
+<p><strong>Three arguments, and they close on the same boundary.</strong></p>
+<p><strong>First, the closure of the tensor products.</strong> The corpus's tensor-product article takes the three carriers and forms their products: $\tfrac12\otimes\tfrac12=0\oplus1$, $1\otimes1=0\oplus1\oplus2$, and so on. <strong>The products return the three carriers and, beyond them, only the symmetric square of the vector carrier</strong> — which is where a spin-$2$ object would live. Nothing else appears, and the products of the composites stay inside the same list. <strong>Spin $\tfrac32$ is not in it</strong>, and the corpus's own Rarita–Schwinger article states the consequence: the spin-$\tfrac32$ field is written in the literature's notation and named, not derived, because the algebra does not carry it.</p>
+<p><strong>Second, the dimension count at the algebra's size.</strong> $\mathbb{B}\cong M_2(\mathbb{C})$ acts on a two-dimensional complex module. The carriers are the pieces of the algebra's action on that module and its conjugate, so the available dimensions are those of the irreducible pieces of $M_2(\mathbb{C})$ under the two actions: $1$, $2$ and $3$. <strong>A carrier of dimension $4$ would need a module the algebra does not have</strong>, and the corpus's own $4=4$ count is a count of the four real dimensions of one ideal read two ways, not a fourth carrier.</p>
+<p><strong>Third, the boundary is the algebra's and not the corpus's.</strong> The distinction matters for how the absence is reported. <strong>The corpus does not lack a spin-$\tfrac32$ article because nobody wrote one; it lacks a spin-$\tfrac32$ carrier, and the article it does have says so.</strong> That is the difference between a ceiling of reach and a ceiling of the object — the same distinction the sector hub draws between the sectors that differ by what the algebra carries and the one that differs by what the method reaches.</p>
+<p><strong>One caution about the word <em>no fourth</em>.</strong> The absence is of a <strong>fundamental</strong> carrier. A spin-$2$ object exists as the symmetric square of the vector carrier, and that is where the corpus's linearised graviton sits: a composite, written on the frame and not on an element. <strong>A composite is not a carrier</strong>, and the roster is a list of carriers. The graviton's presence in the corpus is therefore not a counter-example to the count; it is the count being used correctly.</p>
+<h2 id="why-the-roster-is-the-first-filter">Why the Roster Is the First Filter</h2>
+<p><strong>Because it is the only filter that can be applied before a group is chosen.</strong> Three consequences, and each is a sentence the sectors currently write for themselves.</p>
+<ul>
+<li><strong>A sector cannot carry what the algebra does not have.</strong> No sector can be a spin-$\tfrac32$ theory, whatever its group. That is a stronger statement than any group-theoretic obstruction, and it is what makes the corpus's use of a <em>named</em> Rarita–Schwinger action consistent rather than lazy.</li>
+<li><strong>Every sector draws from the same three, and the differences between sectors are in the acceptance and not the roster.</strong> The primordial, strong, electroweak and electromagnetic sectors all have access to $1$, $2$ and $3$. Where they differ is which of the three they can put a field on — <a href="what-a-group-can-accept-a-carrier-must-transform-in-a-representation.html">the next article</a>.</li>
+<li><strong>The roster is why the phrase <em>fixed by the spin</em> is not circular.</strong> The representation is a function of the spin because the carrier is fixed first, and the spin is read off the carrier's dimension. <strong>A field does not have a spin and then a representation; it has a carrier, and both follow.</strong></li>
+</ul>
+<p><strong>The order of the two filters is not a matter of exposition.</strong> If the roster is applied first, the question <em>which spins can this force carry</em> has a finite answer set — three — and the sector's answer is a subset. If the group is applied first, the question has no bound and a sector can look as though it might carry anything. <strong>The bound is what makes the sector table in <a href="what-a-group-can-accept-a-carrier-must-transform-in-a-representation.html">what a group can accept</a> a table and not a list.</strong></p>
+<h2 id="what-the-roster-does-not-decide">What the Roster Does Not Decide</h2>
+<p><strong>It fixes availability and nothing else.</strong> Four statements it does not make.</p>
+<ul>
+<li><em>It does not fix which of the three a given force uses.</em> That is the group's business, and a group may fail to accept a carrier the algebra offers — the electromagnetic sector's roster is spin $1$ alone, and the reason is its group and not the roster.</li>
+<li><em>It does not fix the action.</em> A carrier of dimension $3$ can be a Proca field, a Maxwell field or a connection; the roster says <em>vector</em>, not <em>which vector action</em>.</li>
+<li><em>It does not fix a mass.</em> Whether a carrier's field is massive is a question about which terms are admitted, and the admitting is done by invariance.</li>
+<li><em>It does not fix a coupling.</em> A carrier is a carrier whether or not it is gauged, and the free actions of <a href="../physics.html">the relativistic quantum theory</a> are the roster used without a group.</li>
+</ul>
+<p><strong>What it does fix, and this is the article's one claim about the corpus's structure.</strong> The roster is the reason the spin bands of the sector categories can exist as bands at all. <strong>A band is a slot for a carrier, and there are three of them because there are three carriers</strong> — which is why the sectors' menus run spin $1$, spin $\tfrac12$, spin $0$ and then stop, and why the band for other spins is a band with a content article, an equation article and a named action, and no derived density.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra carries exactly three carriers: the centre at dimension $1$ and spin $0$, the minimal left ideals at dimension $2$ and spin $\tfrac12$, and the material sector at dimension $3$ and spin $1$. <strong>The roster is fixed by the algebra before any force is named, it is complete, and no group can extend it.</strong></p>
+<p>The completion is argued three ways: the tensor products close on the three plus the symmetric square of the vector; the dimension count at $M_2(\mathbb{C})$ offers no fourth irreducible piece; and the boundary is the object's and not the method's — the corpus has a <em>named</em> Rarita–Schwinger action because there is no spin-$\tfrac32$ carrier, not because no one derived one.</p>
+<p>The absence is of a fundamental carrier. <strong>A composite such as the symmetric square is not a carrier</strong>, which is why the linearised graviton does not violate the count.</p>
+<p><strong>The roster is the first filter on an integrand because it is the only one that can be applied before a group is chosen.</strong> It fixes availability, not use, not action, not mass and not coupling; and it is the reason the sector menus are bands with three filled slots and a named-only fourth.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$</td>
+<td>The biquaternion algebra, $\cong M_2(\mathbb C)$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_C$</td>
+<td>The centre, $\mathbb{C}e_t$; dimension $1$; spin $0$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Psi$</td>
+<td>The informational sector, the minimal left ideals; dimension $2$; spin $\tfrac12$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Phi$</td>
+<td>The material sector, anti-Hermitian; scalar-free part of dimension $3$; spin $1$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>The norm of the centre, the invariant that fixes the scalar carrier</td>
+</tr>
+<tr>
+<td>$B^2$</td>
+<td>The square of the bivector, the invariant that fixes the vector carrier</td>
+</tr>
+<tr>
+<td>$e_t$</td>
+<td>The identity of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\tilde g$</td>
+<td>A unit element acting by conjugation or by left multiplication</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-determination-of-the-possible-spins-in-biquaternionic-form.html">The Determination of the Possible Spins in Biquaternionic Form</a> — the same roster read as the scalar, the spinor and the vector, inside <em>Relativistic Quantum Theory</em>.</li>
+<li><a href="higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html">Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</a> — the tensor-product closure and the symmetric square.</li>
+<li><a href="particle-spins-in-the-biquaternion-algebra-three-carriers-their-meaning-and-their-order.html">Particle Spins in the Biquaternion Algebra: Three Carriers, Their Meaning and Their Order</a> — the criterion of cost and the $4=4$ count.</li>
+<li><a href="what-a-group-can-accept-a-carrier-must-transform-in-a-representation.html">What a Group Can Accept: A Carrier Must Transform in a Representation</a> — the second filter.</li>
+<li><a href="the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a> — the third filter, and the section's hub.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

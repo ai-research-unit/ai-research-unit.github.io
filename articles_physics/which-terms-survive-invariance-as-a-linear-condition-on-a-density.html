@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which Terms Survive: Invariance as a Linear Condition on a Density — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Once a carrier is accepted and a pairing is chosen, the set of candidate terms is fixed by the carrier, and the subset that survives is fixed…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="which-terms-survive-invariance-as-a-linear-condition-on-a-density"><strong>Which Terms Survive: Invariance as a Linear Condition on a Density</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Once a carrier is accepted and a pairing is chosen, the set of candidate terms is fixed by the carrier, and the <em>subset</em> that survives is fixed by invariance. <strong>Admissibility is therefore a computation and not a preference</strong>: for each candidate term the group's infinitesimal action is applied to it, and the term is kept exactly when the result vanishes. There is no third step and no judgement call.</p>
+<p><strong>Why the corpus needs this stated once.</strong> The strong sector says of the gluon mass that it is "not admitted, because it is not invariant". The primordial sector says of a quartic that it is "a declared choice of coefficients and not a symmetry the group supplies". <strong>Those two sentences are the same filter, used in opposite directions</strong> — one to exclude a term, one to exclude a claim about a term. Neither sector states the filter; each states its own use of it. This article states it.</p>
+<p><strong>What it inherits.</strong> The pairing and the trace are settled in <a href="the-invariant-density-which-pairing-the-action-can-integrate.html">the section's hub</a>, and the hub's own "why the quadratic and nothing else" is this filter applied to the curvature alone, closing on dimension. <strong>This article generalises the filter to any term and leaves the counting to <a href="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">the closure article</a>.</strong> What is here is the condition itself, its three verdicts, and the sentence the corpus has been writing in sector-sized pieces.</p>
+<h2 id="the-candidate-space">The Candidate Space</h2>
+<p><strong>A candidate term is built from the field and its derivatives, contracted with the invariants of the carrier and the pairing.</strong> Three ingredients and no others:</p>
+<ul>
+<li><strong>the field and its derivatives</strong>, in the carrier's own tensor algebra;</li>
+<li><strong>the pairing</strong>, which is what turns a product of fields into a number — the trace for a matrix-valued field, the scalar part or the Hermitian form for an element, per the hub;</li>
+<li><strong>the group's invariants</strong>, which is where the contraction is chosen among the possible ones.</li>
+</ul>
+<p><strong>The group enters twice, and both entries are its own.</strong> <strong>First in the candidate space</strong>: $d_{abc}$ exists for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ and vanishes for $\mathrm{SU}(2)$, so $\operatorname{tr}F^3$ is a candidate for one group and not another, with no change to the carrier. <strong>Then in the condition</strong>: the transformation law whose action is tested is the group's, so the verdict is the group's too. <strong>A group therefore decides both which terms are put to the test and which of them pass</strong> — which is the sense in which invariance is the group's filter and not a filter the group merely happens to satisfy.</p>
+<p><strong>The candidates are graded by dimension and by derivative order, and both gradings are finite at each degree.</strong> A term of dimension $d$ with $k$ derivatives and $p$ fields satisfies $d=k+p\,\delta$, where $\delta$ is the field's dimension. <strong>The grading is what makes the candidate set a set and not a stream</strong>: at each dimension there are finitely many ways to contract the available objects, and the list can be written down and closed. The closing is the next article's subject; the existence of a finite list is this one's premise.</p>
+<p><strong>Two terms that differ by a total derivative are one term.</strong> The action of a total divergence is a boundary term and does not vary; the corpus's actions are densities on a domain with the boundary term dropped. <strong>So the candidate space is the space of densities modulo total derivatives</strong>, and a term that is a total derivative is a candidate of dimension $d$ with no content. This is why the $\theta$ term survives as a term and does nothing classically, and it is the same fact that condition 2 of <a href="the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html">Helmholtz</a> reports from the equation side.</p>
+<h2 id="the-condition">The Condition</h2>
+<p><strong>Let $T$ be a candidate and let $\tilde g(\alpha)$ be a one-parameter family in the group, with generator $\tau_\alpha$.</strong> The infinitesimal action on $T$ is a derivation, and the condition is</p>
+<p>$$
+\delta_\alpha T=0\quad\text{for every }\alpha .
+$$</p>
+<p><strong>Nothing more.</strong> The term is admitted when its variation under every generator vanishes, and rejected when one generator's variation is nonzero. <strong>The test is linear in $T$</strong>, which is why it can be run term by term and why a sum of admitted terms is admitted: the condition is a set of linear equations on the coefficients of the candidate space, and the admitted terms are its kernel.</p>
+<p><strong>Read as a subspace statement.</strong> The variations $\delta_\alpha$ span a subspace $V$ of the space of candidates' images; the admitted terms are those annihilated by all of $V$ — the kernel of the map $T\mapsto(\delta_\alpha T)_\alpha$. <strong>Admissible terms form a linear subspace</strong>, and the practical question <em>which terms may I write</em> becomes <em>what is the kernel of this finite matrix of linear conditions</em>. The matrix's rank is the obstruction, and it is computable.</p>
+<p><strong>Why invariance is the right condition, in one line.</strong> A local transformation is a redundancy and not a change — the hub's argument — so a density that moved under it would make the action depend on the description, and the stationarity condition would select a representative rather than a field. <strong>The condition on the density is the exact shadow of that requirement.</strong></p>
+<h2 id="three-verdicts-and-the-corpuss-standard-examples">Three Verdicts, and the Corpus's Standard Examples</h2>
+<p><strong>Every candidate falls in one of three classes, and the corpus has a canonical example of each.</strong></p>
+<p><strong>Admitted.</strong> The curvature's square, $-\tfrac12\operatorname{tr}\sum_{\imath\jmath}F_{\imath\jmath}F_{\imath\jmath}$, is invariant because the trace is cyclic — the hub's one-line computation. The Dirac pair, $\bar\Xi(i\gamma^\imath D_\imath-m)\Xi$, is invariant because $\bar\Xi$ carries the conjugate representation and the two factors' transformations cancel. <strong>Both are admitted at unit or at a constant local multiplier</strong>, the distinction being <a href="the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html">Helmholtz's</a>.</p>
+<p><strong>Not admitted.</strong> A mass term for a connection,</p>
+<p>$$
+m^2\sum_a\sum_\imath A_{a,\imath}A_{a,\imath},
+$$</p>
+<p>fails: the inhomogeneous part of $A\mapsto\tilde gA\tilde g^{-1}+\tilde g\partial\tilde g^{-1}$ makes the variation nonzero. <strong>The corpus's sentence is exact and its consequence is a measurement</strong>: "the gluon is therefore massless by what the action permits and not because its mass happens to be small." <a href="one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html">The next article</a> shows the argument is one argument and not four.</p>
+<p><strong>Admitted only after a change of the field's status.</strong> The same mass term becomes admissible when the symmetry is broken or when the field is shifted: the Stueckelberg shift $A_\imath\mapsto A_\imath-\tfrac1g\partial_\imath\vartheta$ restores a symmetry that the mass term alone destroys, and the Higgs insertion gives the mass through a scalar's expectation. <strong>The verdict is not reversed; the candidate is changed</strong>, and the change is what the corpus means by <em>symmetry breaking</em>.</p>
+<p><strong>And one candidate that is admitted and does nothing.</strong> The $\theta$-term $\theta\sum F\tilde F$ is invariant, since $\tilde F$ transforms as $F$ does and the contraction is a singlet; it is a total derivative, so it is admitted with no classical effect. <strong>Admitted and inert is a fourth class</strong>, and it is the one that makes the distinction between <em>allowed</em> and <em>doing something</em> necessary.</p>
+<h2 id="what-the-filter-does-not-reach">What the Filter Does Not Reach</h2>
+<p><strong>Four things invariance cannot decide, and each must be handed to another article.</strong></p>
+<ul>
+<li><strong>The overall coefficient.</strong> Invariance is linear, so it fixes the <em>ratio</em> structure of the admitted space and never the scale: if $T$ is admitted, so is $cT$ for any $c$. The scale is fixed by normalisation — the hub's $\tfrac12$ and $\tfrac14$ — or by a measurement.</li>
+<li><strong>The sign.</strong> $T$ and $-T$ are both admitted; the sign is fixed by positivity, which is a Euclidean statement and not an invariance statement.</li>
+<li><strong>The choice among admitted terms of different content.</strong> When several invariants survive at one dimension, invariance admits all of them and selects none. <strong>That is exactly the SU(4) potential</strong>: four quartics written, the fifth set to zero, of which the sector's own article says it is "a declared choice of coefficients and not a symmetry the group supplies". <a href="what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html">The declared-coefficient article</a> is where that is handled.</li>
+<li><strong>Whether an action exists at all.</strong> The filter runs on candidates that are already densities. Whether the resulting <em>equation</em> comes from a density is <a href="two-filters-that-never-meet-invariance-and-helmholtz.html">Helmholtz's question</a>, and it is asked of the equation and not of the term.</li>
+</ul>
+<p><strong>The boundary stated once.</strong> <strong>Invariance is a filter on a space of candidates and not a generator of that space.</strong> It can say no; it cannot say <em>and there is nothing else</em>. The space is the carrier's and the pairing's, and the filter is the group's — three different sources for the three different parts of the sentence <em>this term may appear</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>With a carrier accepted and a pairing chosen, the candidate terms are graded finitely by dimension and derivative order, and pairs differing by a total derivative are one term. <strong>A candidate is admitted exactly when its variation under every generator vanishes</strong> — a set of linear conditions, so the admitted terms form a subspace, its rank is the obstruction, and admissibility is a computation.</p>
+<p>The corpus's standard examples fill the classes. <strong>Admitted</strong>: the curvature's square, by cyclicity; the Dirac pair, by the conjugate representation. <strong>Not admitted</strong>: a connection's mass term, by the inhomogeneous part of the transformation — which is why the gluon's masslessness is a consequence of the action and not a measurement. <strong>Admitted only after a change of status</strong>: the same mass term under the Stueckelberg shift or the Higgs insertion — the candidate changes and the verdict is not reversed. <strong>Admitted and inert</strong>: $\theta\sum F\tilde F$, invariant and a total derivative.</p>
+<p>Invariance fixes the ratio structure of the admitted space and not its scale, not its sign, and not the choice among several surviving invariants. <strong>It is a filter and not a generator</strong>: it can exclude, and it cannot assert that nothing else exists, because the candidate space is the carrier's and the pairing's and not the group's.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T$</td>
+<td>A candidate term in the density</td>
+</tr>
+<tr>
+<td>$\tilde g(\alpha)$, $\tau_\alpha$</td>
+<td>A one-parameter group element and its generator</td>
+</tr>
+<tr>
+<td>$\delta_\alpha T$</td>
+<td>The infinitesimal variation of the candidate under $\tau_\alpha$</td>
+</tr>
+<tr>
+<td>$d$, $k$, $p$</td>
+<td>Dimension, derivative count and field count of a candidate</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>The field's dimension</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>The span of the variations; the admitted terms are its kernel</td>
+</tr>
+<tr>
+<td>$\theta\sum F\tilde F$</td>
+<td>The admitted, inert topological term</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a> — the pairing, and this filter applied to the curvature alone.</li>
+<li><a href="one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html">One Obstruction, Four Groups: The Gauge Mass That Is Never Admitted</a> — the exclusion, stated once for four sectors.</li>
+<li><a href="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">The Closure of the Term List: Dimension, Locality and the Count That Ends the Search</a> — where the finite candidate list is shown to close.</li>
+<li><a href="what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html">What Invariance Cannot Decide: Declared Coefficients, Signs and Normalisations</a> — the residue.</li>
+<li><a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html">The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules</a> — the sector sentence this article generalises.</li>
+<li><a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a> — the declared coefficient that bounds this filter from the other side.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

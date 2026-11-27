@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Physics — Biquaternion Universe</title>
-  <meta name="description" content="AI Physics — index of 748 articles in the Biquaternion Universe corpus.">
+  <meta name="description" content="AI Physics — index of 755 articles in the Biquaternion Universe corpus.">
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/article.css">
@@ -552,8 +552,12 @@
 <!-- the two projections onto the Hermitian and anti-Hermitian slices, and the non-additivity of the product; the map $J(\tilde Q)=i\tilde Q$, its square $-e_t$, its commutation with the congruence, its reversal of the product and the proof that no rescaling makes it a homomorphism; the sign flip of the natural norm and the preservation of the Hermitian form; the coordinate dictionary $i r'_t e_t+\vec r\mapsto-r'_t e_t+i\vec r$ and the two inertias; what the map does not carry, a four-vector not being a state and a composition needing a sign. -->
 
 <h2 id="biquaternion-universe-action">Biquaternion Universe Action</h2>
-<!-- one chain, and the category is read downwards: the object first, then the arrows that use it. *The Lagrangian* states
-     the object itself — one real scalar density, the pairing that makes it real, the stationary-action principle that
+<!-- one chain, and the category is read downwards: first what may be an integrand, then the object, then the arrows that
+     use it. *What May Be an Integrand* runs the filters that precede any density — the carrier roster, the group's
+     acceptance, the pairing, the closure of the term list, invariance and the residue it leaves, and Helmholtz's inverse
+     problem asked of the equation — and stands first because each of its claims is a precondition of writing one.
+     *The Lagrangian* states
+     the object itself — one real scalar density, the stationary-action principle that
      turns the density into an equation, the general shape every rung's Lagrangian has, and the one claim that shape buys:
      across the five rungs only the kinetic term's order and the algebraic term's content change, and nothing else does.
      *From the Action to the Field Equation* gives the classical apparatus every force block applies — Noether's theorem
@@ -597,11 +601,77 @@
      ghosts — is stated once in *The Machinery Under the Primordial Action*,
      in the category *Biquaternion Universe Primordial Force*, and is not repeated here. -->
 
+<h3 id="what-may-be-an-integrand">What May Be an Integrand</h3>
+<!-- **The section exists to state two things, and every article in it serves one of them.** FIRST: **each symmetry group
+     decides which spin carriers exist for it and which terms survive invariance.** The bound of three is the algebra's and
+     is the same everywhere; the content inside that bound is the group's, so a sector's spin roster and its surviving
+     terms are group-specific facts and not slices of a universal list — $\mathrm{SU}(3)$ has no scalar, $\mathrm{U}(1)$
+     has only the vector, $\mathrm{SU}(2)\times\mathrm{U}(1)$ has all three, and $d_{abc}$ admits a cubic for
+     $\mathrm{SU}(3)$ that vanishes identically for $\mathrm{SU}(2)$. SECOND: **whether a Lagrangian exists at all for a
+     given carrier is decided by Helmholtz's conditions, which do not know about groups.** A non-variational equation is
+     non-variational in every sector, and the viscous term — which has no group anywhere near it — is the proof. **The two
+     claims are independent and the section keeps them apart**: entries 2 to 5 answer the first, entries 8 and 9 answer the
+     second, and 6 and 7 supply the machinery that links them. Neither claim is a preface to the other, and a reader who
+     takes the section as one argument has missed the point of it.
+     The filters then run before a density is written, in the order each one's domain is supplied by the one before it.
+     *The Invariant Density* is the hub and the third filter: the three requirements on a density, cyclicity as the whole
+     of the invariance of a square, and the pairing read off the transformation law of the field rather than chosen.
+     *The Carrier Roster* is the first filter and the only one that can be applied before a group is chosen: three
+     carriers, dimensions $1$, $2$, $3$, and no fourth, complete before any force is named. *What a Group Can Accept* is
+     the second, and the one that makes the first claim concrete: a carrier becomes a field only when the group has a
+     representation of its dimension and reality type, so each group picks its own subset of the three — a sector's spin
+     roster is the group's decision inside the algebra's bound — and an empty slot in a sector menu has four causes of
+     which only one is this filter's. *Which Terms Survive* is the fourth, invariance as a set of linear
+     conditions on a finite candidate space, with its verdicts read off the corpus's own examples. *One Obstruction, Four
+     Groups* is that filter's sharpest instance: the argument that forbids a gluon mass forbids the photon's, the $W$'s
+     and the fifteen's identically, and Proca is the contrast that shows the obstruction is the inhomogeneous term and
+     not the mass — the article that most needs the group's second role stated beside it, and does state it: the exclusion
+     is group-blind, the survivor set is not, and at dimension six $d_{abc}$ decides $\operatorname{tr}F^3$. *The Closure of the Term List* supplies the finite domain the filter runs on — locality bounds the
+     derivatives, dimension the fields, the carrier the contractions — and states the three things the count does not
+     close. *What Invariance Cannot Decide* is the residue: every coefficient is forced by the basis, required from
+     outside invariance, or declared, and the third must be labelled with the count that shows it is a choice.
+     *The Inverse Problem of the Calculus of Variations* is the sixth filter and the one that does not meet the others:
+     Helmholtz asks of the equation what invariance asks of the term, its hypothesis mentions no group, and *Two Filters
+     That Never Meet* states the non-interference and the four grades — unit multiplier invertible, variational and not
+     invertible, constant local multiplier, not variational at all — of which only the last is Helmholtz's veto. **The
+     section stands before *The Lagrangian* because every claim in it is a precondition of writing one**, and because
+     the question it answers is asked of a density that does not yet exist. The carrier roster is stated at no rung
+     here and at its own rung in *Relativistic Quantum Theory* and *Electroweak Force*; those two articles are
+     cross-referenced and not moved, because a filter article must state its subject before any rung exists. -->
+
+<p><a href="articles_physics/the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a></p>
+<!-- the three requirements on a density; cyclicity as the whole of the invariance, with a pairing that fails written out; reality and the sign as one statement with the Hermiticity type; positivity as a Euclidean statement; the element pairing and the trace as one functional at $2\times2$, so the obstruction on $\mathbb{C}^4$ is dimension and not symmetry; the $\tfrac12$, the $\tfrac14$ and the factor six the normalisation forces; the left action, where the trace is unavailable and the Hermitian form is the density; the hub paragraph that places the section's six filters and hands the admissibility question forward. -->
+
+<p><a href="articles_physics/the-carrier-roster-three-spins-and-no-fourth.html">The Carrier Roster: Three Spins and No Fourth, Fixed Before Any Group Acts</a></p>
+<!-- the three carriers named before any force exists — the centre at dimension $1$ and spin $0$ under conjugation, the minimal left ideals at dimension $2$ and spin $\tfrac12$ under left multiplication, the material sector at dimension $3$ and spin $1$; the completion argued three ways, the tensor products closing on the three plus the symmetric square, the dimension count at $M_2(\mathbb{C})$, and the boundary being the object's rather than the method's; the caution that a composite is not a carrier, which is why the linearised graviton does not violate the count; why the roster is the first filter and why its order before the group is what makes a sector's spin content a subset of three; what it fixes and what it hands forward, availability and not use, action, mass or coupling. -->
+
+<p><a href="articles_physics/what-a-group-can-accept-a-carrier-must-transform-in-a-representation.html">What a Group Can Accept: A Carrier Must Transform in a Representation</a></p>
+<!-- the matching condition, dimension and reality type, and the table of four forces against three carriers with gravity set aside; the four cases read off it, the strong group declining the scalar and accepting the spinor inside the QCD display, the photon as the electromagnetic sector's whole roster with its matter external, the electroweak group accepting all three and failing on the chiral fermion after acceptance, the primordial group taking its scalar as a matrix by a count; the four causes of an empty slot of which only the first is acceptance; what the group does not decide, no coupling, no mass, no coefficient, no generation count. -->
+
+<p><a href="articles_physics/which-terms-survive-invariance-as-a-linear-condition-on-a-density.html">Which Terms Survive: Invariance as a Linear Condition on a Density</a></p>
+<!-- the candidate space graded by dimension and derivative order and taken modulo total derivatives; the condition as linear equations whose kernel is the admitted set; the four classes read off the corpus's examples — the curvature square and the Dirac pair admitted, the connection's mass term not admitted, the same term admitted after a Stueckelberg shift or a Higgs insertion, and the topological density admitted and inert; what the filter does not reach, scale, sign, the choice among surviving invariants, and existence itself. -->
+
+<p><a href="articles_physics/one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html">One Obstruction, Four Groups: The Gauge Mass That Is Never Admitted</a></p>
+<!-- the argument once, in the invariants, the cross term of the inhomogeneous transformation having no partner; the infinitesimal form whose variation vanishes only at zero mass; the four cases with their index ranges $1$, $3$, $8$, $15$ and the corpus's four sentences including the gluon's masslessness as a consequence of the action and "No mass for the fifteen"; Proca as the contrast, a tensor rather than a connection, its mass term admitted and imposing the Lorenz condition, so that the Proca action is the anti-gauge action. -->
+
+<p><a href="articles_physics/the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">The Closure of the Term List: Dimension, Locality and the Count That Ends the Search</a></p>
+<!-- the three bounds and the dimension formula; the table of dimension-four candidates for one connection, one fermion and one scalar, with each row failing one of three different reasons — no such term, not invariant, out of range; the three exceptions stated as part of the claim, lower-dimension terms excluded by symmetry and not by dimension, which is why the primordial potential writes two cubics, the topological term admitted and inert, and the closure being relative to the field content; why the count is what makes the invariance filter runnable, and that it proves finiteness and not uniqueness. -->
+
+<p><a href="articles_physics/what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html">What Invariance Cannot Decide: Declared Coefficients, Signs and Normalisations</a></p>
+<!-- the three sources of a coefficient, the basis that forces $\tfrac12$ and $\tfrac14$, the requirement outside invariance that fixes the sign through positivity, and the declaration; the primordial potential as the case that sets the standard, four of five quartics written and the odd-power one set to zero, with the sentence that calls it a declared choice and not a symmetry; the sign as one statement with Hermiticity and the normalisation that fails by being carried across bases; the four-clause rule and why unclassified coefficients make the corpus unfalsifiable in the part where it is physics. -->
+
+<p><a href="articles_physics/the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html">The Inverse Problem of the Calculus of Variations: Helmholtz's Conditions</a></p>
+<!-- the inverse question stated before the test; self-adjointness of the linearisation as the whole of the criterion; the three conditions for a second-order system, each read in one line; the damped oscillator failing the damping condition for every nonzero damping; the Caldirola–Kanai multiplier, and why an algebraic damping is repairable where a viscous one is not; the three grades of the inverse problem, the criterion as Helmholtz at unit multiplier and one named coordinate, and what the theorem does not decide — sign, stability, and the single-history reading of dissipation. -->
+
+<p><a href="articles_physics/two-filters-that-never-meet-invariance-and-helmholtz.html">Two Filters That Never Meet: Invariance and Helmholtz</a></p>
+<!-- the two questions side by side, a term in a density against an equation, and the row that says the second filter has no group in it; the blindness shown twice, by the viscous term that has no group at all and by a verdict that no change of group can move; the one interaction there is and its asymmetry, invariance selecting a subspace of densities and Helmholtz characterising their image, so narrowing the domain cannot enlarge it; passing Helmholtz read as something other than carrying an admitted term, with the four grades kept apart and gauge degeneracy named as the second and not the fourth; the composition of the section in order and why existence is asked last. -->
+
 <h3 id="the-lagrangian">The Lagrangian</h3>
-<!-- the object, stated before the arrows that use it, because every arrow below starts from it and none of them
-     re-derives it. What a Lagrangian is here: one real scalar density, and the reason "real" and "scalar" are
-     requirements rather than conveniences — a biquaternion-valued expression is not a scalar until it is
-     paired, so the choice of pairing is part of the definition of the Lagrangian and not a later convention.
+<!-- the object, stated after the section that says what may be an integrand and before the arrows that use it, because
+     every arrow below starts from it and none of them re-derives it. What a Lagrangian is here: one real scalar density.
+     Why "real" and "scalar" are requirements, and why the pairing that supplies both is read off the transformation law
+     of the field, is *The Invariant Density* in the section above; what is here is the Lagrangian the corpus writes on
+     that pairing, and the pairing is inherited and not re-argued.
      Its general shape at every rung: the pairing of the field's derivatives against itself, minus one
      algebraic term — the kinetic pairing and the potential, with the sign convention fixed once and inherited
      by every rung. What that shape buys, and it is this section's one claim: across the five rungs only two
@@ -619,16 +689,13 @@
      Biquaternionic Form* gives the conjugate momentum and the regularity of the Legendre transform in general —
      the momentum as an element of the dual module, the Hessian, and the five columns tabled — and then in full
      for the central scalar, with the field Poisson bracket. The scalar column is what three later sections take
-     as given — the thermal state, the promotion's postulate and the fluid's energy — and none of them derives it. **The two that continue the chart the Hamiltonian closes are
-     both written now.** *The Inverse Problem of the Calculus of Variations: Helmholtz's Conditions* runs the arrow
-     backwards — from an equation to the action it must have come from — and is why the corpus's sentence that the
-     viscous term has no action is a theorem: the criterion of the fluid block asks of one polar coordinate what
-     Helmholtz asks of a whole system. And *The Dirac–Bergmann Algorithm* is the property the Hamiltonian article's
-     regularity supplies when it fails: the primary and secondary constraints, the first- and second-class split, the
-     Dirac bracket, and the count that the fluid's closure test has been quoting in components. -->
-
-<p><a href="articles_physics/the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density: Which Pairing the Action Can Integrate</a></p>
-<!-- the three requirements on a density; cyclicity as the whole of the invariance, with a pairing that fails written out; reality and the sign as one statement with the Hermiticity type; positivity as a Euclidean statement; the element pairing and the trace as one functional at $2\times2$, so the obstruction on $\mathbb{C}^4$ is dimension and not symmetry; the $\tfrac12$, the $\tfrac14$ and the factor six the normalisation forces; the left action, where the trace is unavailable and the Hermitian form is the density. -->
+     as given — the thermal state, the promotion's postulate and the fluid's energy — and none of them derives it. **One article continues the chart the Hamiltonian closes, and one has moved above.**
+     *The Dirac–Bergmann Algorithm* is the property the Hamiltonian article's regularity supplies when it fails: the
+     primary and secondary constraints, the first- and second-class split, the Dirac bracket, and the count that the
+     fluid's closure test has been quoting in components. *The Inverse Problem of
+     the Calculus of Variations: Helmholtz's Conditions* runs the arrow backwards — from an equation to the action it
+     must have come from — and now stands at the head of the category in *What May Be an Integrand*, where it is the last
+     filter on an integrand rather than a remark on this chart. -->
 
 <p><a href="articles_physics/the-rung-dictionary-what-the-general-symbols-mean-at-each-rung.html">The Rung Dictionary: What the General Symbols Mean at Each Rung</a></p>
 <!-- one table and the rule for reading it: the object side of the five-by-five matrix that *Five Steps* gives on the fluid side. Twelve rows — the word, the invariant density, the flow, the conjugate momentum, the Legendre transform, the constraint count, the bracket, the pressure, the chemical potential, the independent thermal data, the force slot and the pairing — and five columns, Schrödinger, Klein–Gordon, Dirac, Proca and $\mathrm{SU}(4)$, with the article that computes each column named in the last row. Its three uses: the scope sentence that a one-carrier article can now write, the substitution test that names the object a rung does not have, and the placement of a new column; its three limits: the matrix rung's thermodynamics, the two distinct spin representations, and the group-content question. The systemic fix for the category's scalar default: the default becomes a visible column and every band slot gets a common target. -->
@@ -638,9 +705,6 @@
 
 <p><a href="articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a></p>
 <!-- the generic case first: the field as a section of a module, the conjugate momentum as an element of the dual module, the Legendre transform, and the Hessian whose invertibility is what "regular" means; the regularity table at the five rungs — regular at Klein–Gordon, vanishing at Schrödinger and Dirac, rank three of four at Proca, singular on the fifteen gauge directions at $\mathrm{SU}(4)$ — with the constraint count as the kernel; the bracket as the inverse Hessian, the Dirac bracket where the Hessian fails, and the warning that the bracket is not the commutator; then the Klein–Gordon column in full: the conjugate momentum field, the Hamiltonian density and its equality with the energy density, the Hamiltonian field equations, the field Poisson bracket and its local Jacobi identity, the continuity equation and the energy flux, the density and flux as one Hermitian biquaternion, the sector reading of the density and the energy–charge contrast; the other four columns named with the article that computes each, including the recorded gap that the $\mathrm{SU}(4)$ Hamiltonian is not written; the point of contact with the covariant (De Donder–Weyl) formalism; what the transcription does and does not give, column by column. -->
-
-<p><a href="articles_physics/the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.html">The Inverse Problem of the Calculus of Variations: Helmholtz's Conditions</a></p>
-<!-- the inverse question stated before the test; self-adjointness of the linearisation as the whole of the criterion; the three conditions for a second-order system, each read in one line; the damped oscillator failing the damping condition for every nonzero damping; the Caldirola–Kanai multiplier, and why an algebraic damping is repairable where a viscous one is not; the three grades of the inverse problem, the criterion as Helmholtz at unit multiplier and one named coordinate, and what the theorem does not decide — sign, stability, and the single-history reading of dissipation. -->
 
 <p><a href="articles_physics/the-dirac-bergmann-algorithm-first-and-second-class-constraints.html">The Dirac–Bergmann Algorithm: First- and Second-Class Constraints</a></p>
 <!-- the singular Hessian and where each field's primary constraint comes from; the consistency condition, its three outcomes and the stopping rule; first class as redundancy and second class as restriction, in one bracket; the Dirac bracket as the Poisson bracket projected on the constraint surface, and what it buys and costs; the count $N_{\mathrm{dof}}=(N_{\mathrm{phase}}-2f-s)/2$ with the corpus's five rungs as its values, the Proca mass converting a first-class pair into a second-class one; what the fluid calls these — the closure test as the count, the family of fluids as the orbit, the state slot as the secondary constraint solved, the frame–gauge split as the class split. -->
