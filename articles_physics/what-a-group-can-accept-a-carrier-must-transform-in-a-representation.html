@@ -78,18 +78,19 @@
 <p><strong>A field is a section of a bundle associated to a representation.</strong> Concretely, the carrier has dimension $n$, the force's group $G$ has a representation $\rho$ of dimension $n$, and the field is a map into that representation's space. <strong>If no such $\rho$ exists, there is no field</strong>, and the sector has no action at that spin — not a missing action, an absent object.</p>
 <p><strong>Two things must match, and they are independent.</strong></p>
 <ul>
-<li><strong>The dimension.</strong> The carrier's representation-space dimension is $1$, $2$ or $3$. A group with no $n$-dimensional representation cannot accept that carrier.</li>
-<li><strong>The reality type.</strong> The carrier is anti-Hermitian, Hermitian, or an ideal. The representation must respect that: a real carrier needs a real or pseudo-real representation, and a complex one needs a complex representation. <strong>The corpus's anti-Hermitian material sector is why its connections are anti-Hermitian</strong>, and a group whose generators cannot be taken anti-Hermitian in that module is not admissible however right its dimension.</li>
+<li><strong>The dimension.</strong> The carrier's representation-space dimension is $1$, $2$ or $3$ — $1$ for the line $\mathbb{R}e_t$, $2$ for the plane $\Sigma(\vec u)$, $3$ for the vector part $\mathfrak{k}$. A group with no $n$-dimensional representation cannot accept that carrier.</li>
+<li><strong>The reality type, read off the carrier's own sector.</strong> The three carriers do not sit in one algebra-element type, so there is no single "reality type of a carrier" to match. <strong>Each carrier is read in the sector that defines it</strong>, and that is what the representation must respect: the vector part $\mathfrak{k}$ lies in the material sector $\mathbb{B}_\Phi$, which is anti-Hermitian, so its representation must admit anti-Hermitian generators — <strong>the corpus's anti-Hermitian material sector is why its connections are anti-Hermitian</strong>; the plane $\Sigma$ lies inside the informational sector $\mathbb{B}_\Psi$, so its representation is the one-sided left action and its reality type is the one a left ideal carries, which is what makes the electroweak fermion's chirality a problem rather than a choice; the line is the trivial carrier, so its representation is the trivial one.</li>
 </ul>
+<p><strong>A caution, and it is the naming caught in a trap.</strong> The carriers are <strong>the line, the plane and the vector part</strong> — the names <em>Biquaternion Universe Relativity</em> defines, with their closures being the centre, the spinor space and the material sector. <strong>The three closure spaces are not the three carriers and do not have the carriers' dimensions</strong> ($2$, $4$ and $4$, against the carriers' $1$, $2$ and $3$). A table that writes "the material sector, dimension $3$" has put a closure's name on a carrier's dimension, and the sector table below would then be matching groups against the wrong numbers.</p>
 <p><strong>The consequence is a finite table, and the table is the sector's spin content.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>force</th>
 <th>group</th>
-<th>$n=1$ (spin $0$)</th>
-<th>$n=2$ (spin $\tfrac12$)</th>
-<th>$n=3$ (spin $1$)</th>
+<th>$n=1$: the line (spin $0$)</th>
+<th>$n=2$: the plane (spin $\tfrac12$)</th>
+<th>$n=3$: the vector part (spin $1$)</th>
 </tr>
 </thead>
 <tbody>
@@ -208,8 +209,12 @@
 <td>The strong coupling, a measurement and not a representation-theoretic datum</td>
 </tr>
 <tr>
-<td>$\mathbb{B}_\Phi$</td>
-<td>The material sector, anti-Hermitian; the reality type a representation must respect</td>
+<td>$\mathbb{R}e_t$, $\Sigma(\vec u)$, $\mathfrak{k}$</td>
+<td>The three carriers: line, plane, vector part; dimensions $1$, $2$, $3$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Psi$, $\mathbb{B}_\Phi$</td>
+<td>The sectors the plane and the vector part lie in; the reality type a representation must respect</td>
 </tr>
 </tbody>
 </table></div>
